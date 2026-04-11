@@ -3,6 +3,39 @@ import { useGetArticle } from "@workspace/api-client-react";
 import { Skeleton } from "@/components/ui/skeleton";
 import { ArrowLeft, Clock } from "lucide-react";
 
+function renderContent(content: string): string {
+  const lines = content.split("\n");
+  const htmlParts: string[] = [];
+  let paragraphLines: string[] = [];
+
+  const flushParagraph = () => {
+    if (paragraphLines.length > 0) {
+      const text = paragraphLines.join("<br>");
+      if (text.trim()) {
+        htmlParts.push(`<p>${text}</p>`);
+      }
+      paragraphLines = [];
+    }
+  };
+
+  for (const line of lines) {
+    if (line.startsWith("### ")) {
+      flushParagraph();
+      htmlParts.push(`<h3>${line.slice(4)}</h3>`);
+    } else if (line.startsWith("## ")) {
+      flushParagraph();
+      htmlParts.push(`<h2>${line.slice(3)}</h2>`);
+    } else if (line === "") {
+      flushParagraph();
+    } else {
+      paragraphLines.push(line);
+    }
+  }
+  flushParagraph();
+
+  return htmlParts.join("\n");
+}
+
 export default function ArticlePage() {
   const { slug } = useParams<{ slug: string }>();
   const { data: article, isLoading } = useGetArticle(slug ?? "");
@@ -50,7 +83,7 @@ export default function ArticlePage() {
       </div>
 
       <div className="prose prose-neutral max-w-none text-foreground">
-        <div dangerouslySetInnerHTML={{ __html: article.content.replace(/\n\n/g, '</p><p>').replace(/\n/g, '<br>').replace(/^/, '<p>').replace(/$/, '</p>') }} />
+        <div dangerouslySetInnerHTML={{ __html: renderContent(article.content) }} />
       </div>
 
       <div className="mt-12 p-4 bg-muted rounded-lg text-sm text-muted-foreground">
