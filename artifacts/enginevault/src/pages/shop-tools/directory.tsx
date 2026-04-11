@@ -1,4 +1,5 @@
 import { useState } from "react";
+import { useQueryClient } from "@tanstack/react-query";
 import { useGetShops, useSubmitShop, useSubmitShopRating } from "@workspace/api-client-react";
 import { Skeleton } from "@/components/ui/skeleton";
 import { Input } from "@/components/ui/input";
@@ -6,6 +7,14 @@ import { Label } from "@/components/ui/label";
 import { Button } from "@/components/ui/button";
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 import { Select, SelectContent, SelectItem, SelectTrigger, SelectValue } from "@/components/ui/select";
+import {
+  Dialog,
+  DialogContent,
+  DialogHeader,
+  DialogTitle,
+  DialogTrigger,
+} from "@/components/ui/dialog";
+import { useToast } from "@/hooks/use-toast";
 import { Search, Star, Phone, Globe } from "lucide-react";
 
 const specialtyOptions = ["LS", "SBC", "BBC", "Ford", "Mopar", "Import", "Diesel", "Balancing", "Full Engine Assembly"];
@@ -20,6 +29,110 @@ function Stars({ rating, count }: { rating: number | null; count: number }) {
       ))}
       <span className="text-muted-foreground">{rating.toFixed(1)} ({count})</span>
     </span>
+  );
+}
+
+function StarRatingInput({ value, onChange }: { value: number; onChange: (v: number) => void }) {
+  const [hovered, setHovered] = useState(0);
+  return (
+    <div className="flex gap-1" onMouseLeave={() => setHovered(0)}>
+      {Array.from({ length: 5 }).map((_, i) => {
+        const star = i + 1;
+        const filled = star <= (hovered || value);
+        return (
+          <button
+            key={star}
+            type="button"
+            aria-label={`Rate ${star} star${star !== 1 ? "s" : ""}`}
+            onMouseEnter={() => setHovered(star)}
+            onClick={() => onChange(star)}
+            className="focus:outline-none"
+          >
+            <Star
+              className={`w-7 h-7 transition-colors ${
+                filled ? "text-amber-400 fill-amber-400" : "text-muted-foreground"
+              }`}
+            />
+          </button>
+        );
+      })}
+    </div>
+  );
+}
+
+function RateShopDialog({ shopId, shopName }: { shopId: number; shopName: string }) {
+  const [open, setOpen] = useState(false);
+  const [rating, setRating] = useState(0);
+  const [comment, setComment] = useState("");
+  const { toast } = useToast();
+  const queryClient = useQueryClient();
+
+  const ratingMutation = useSubmitShopRating({
+    mutation: {
+      onSuccess: () => {
+        queryClient.invalidateQueries({ queryKey: ["/api/directory/shops"] });
+        toast({ title: "Rating submitted!", description: "Thank you for your feedback." });
+        setOpen(false);
+        setRating(0);
+        setComment("");
+      },
+      onError: () => {
+        toast({ title: "Failed to submit rating", description: "Please try again.", variant: "destructive" });
+      },
+    },
+  });
+
+  const handleSubmit = (e: React.FormEvent) => {
+    e.preventDefault();
+    if (rating === 0) return;
+    ratingMutation.mutate({ id: shopId, data: { rating, comment: comment || undefined } });
+  };
+
+  return (
+    <Dialog open={open} onOpenChange={setOpen}>
+      <DialogTrigger asChild>
+        <Button variant="outline" size="sm" className="mt-2 text-xs h-7">
+          Rate this shop
+        </Button>
+      </DialogTrigger>
+      <DialogContent className="sm:max-w-sm">
+        <DialogHeader>
+          <DialogTitle>Rate {shopName}</DialogTitle>
+        </DialogHeader>
+        <form onSubmit={handleSubmit} className="space-y-4 pt-2">
+          <div className="space-y-2">
+            <Label>Your rating *</Label>
+            <StarRatingInput value={rating} onChange={setRating} />
+            {rating > 0 && (
+              <p className="text-xs text-muted-foreground">
+                {["", "Poor", "Fair", "Good", "Very good", "Excellent"][rating]}
+              </p>
+            )}
+          </div>
+          <div className="space-y-1">
+            <Label>Comment <span className="text-muted-foreground font-normal">(optional)</span></Label>
+            <textarea
+              value={comment}
+              onChange={e => setComment(e.target.value)}
+              className="w-full p-3 border rounded-lg text-sm resize-none bg-background h-20"
+              placeholder="Share your experience with this shop..."
+            />
+          </div>
+          <div className="flex gap-2 justify-end">
+            <Button type="button" variant="outline" size="sm" onClick={() => setOpen(false)}>
+              Cancel
+            </Button>
+            <Button
+              type="submit"
+              size="sm"
+              disabled={rating === 0 || ratingMutation.isPending}
+            >
+              {ratingMutation.isPending ? "Submitting..." : "Submit Rating"}
+            </Button>
+          </div>
+        </form>
+      </DialogContent>
+    </Dialog>
   );
 }
 
@@ -114,9 +227,10 @@ export default function ShopDirectory() {
                 {shop.specialties.map(s => <span key={s} className="text-xs bg-primary/10 text-primary px-2 py-0.5 rounded-full">{s}</span>)}
               </div>
               {shop.description && <p className="text-sm text-muted-foreground mb-2">{shop.description}</p>}
-              <div className="flex gap-4 text-sm text-muted-foreground">
+              <div className="flex flex-wrap items-center gap-4 text-sm text-muted-foreground">
                 {shop.phone && <a href={`tel:${shop.phone}`} className="flex items-center gap-1 hover:text-primary"><Phone className="w-3 h-3" />{shop.phone}</a>}
                 {shop.website && <a href={shop.website} target="_blank" rel="noopener noreferrer" className="flex items-center gap-1 hover:text-primary"><Globe className="w-3 h-3" />Website</a>}
+                <RateShopDialog shopId={shop.id} shopName={shop.name} />
               </div>
             </div>
           ))}
