@@ -1,0 +1,31 @@
+kind = "web"
+previewPath = "/"
+title = "EngineVault"
+version = "1.0.0"
+id = "artifacts/enginevault"
+router = "path"
+
+[[integratedSkills]]
+name = "react-vite"
+version = "1.0.0"
+
+[[services]]
+name = "web"
+paths = [ "/" ]
+localPort = 8080
+
+[services.development]
+run = "echo 'EngineVault is served by the API Server on port 8080'"
+
+[services.production]
+build = [ "pnpm", "--filter", "@workspace/enginevault", "run", "build" ]
+publicDir = "artifacts/enginevault/dist/public"
+serve = "static"
+
+[[services.production.rewrites]]
+from = "/*"
+to = "/index.html"
+
+[services.env]
+PORT = "8099"
+BASE_PATH = "/"

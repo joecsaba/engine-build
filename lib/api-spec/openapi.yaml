@@ -3,20 +3,30 @@ info:
   # Do not change the title, if the title changes, the import paths will be broken
   title: Api
   version: 0.1.0
-  description: API specification
+  description: EngineVault API specification
 servers:
   - url: /api
     description: Base API path
 tags:
   - name: health
     description: Health operations
+  - name: specs
+    description: Engine specifications database
+  - name: articles
+    description: Blog articles
+  - name: torque
+    description: Torque specs quick lookup
+  - name: directory
+    description: Machine shop directory
+  - name: search
+    description: Search operations
+
 paths:
   /healthz:
     get:
       operationId: healthCheck
       tags: [health]
       summary: Health check
-      description: Returns server health status
       responses:
         "200":
           description: Healthy
@@ -24,6 +34,281 @@ paths:
             application/json:
               schema:
                 $ref: "#/components/schemas/HealthStatus"
+
+  /specs/families:
+    get:
+      operationId: getEngineFamilies
+      tags: [specs]
+      summary: Get all engine families
+      responses:
+        "200":
+          description: List of engine families
+          content:
+            application/json:
+              schema:
+                type: array
+                items:
+                  $ref: "#/components/schemas/EngineFamily"
+
+  /specs/families/{slug}:
+    get:
+      operationId: getEngineFamily
+      tags: [specs]
+      summary: Get engine family by slug
+      parameters:
+        - name: slug
+          in: path
+          required: true
+          schema:
+            type: string
+      responses:
+        "200":
+          description: Engine family with engines
+          content:
+            application/json:
+              schema:
+                $ref: "#/components/schemas/EngineFamilyDetail"
+        "404":
+          description: Not found
+
+  /specs/engines/{id}:
+    get:
+      operationId: getEngineSpec
+      tags: [specs]
+      summary: Get detailed engine spec
+      parameters:
+        - name: id
+          in: path
+          required: true
+          schema:
+            type: integer
+      responses:
+        "200":
+          description: Full engine spec with all tabs
+          content:
+            application/json:
+              schema:
+                $ref: "#/components/schemas/EngineSpec"
+        "404":
+          description: Not found
+
+  /torque-specs/search:
+    get:
+      operationId: searchTorqueSpecs
+      tags: [torque]
+      summary: Search torque specs
+      parameters:
+        - name: q
+          in: query
+          required: true
+          schema:
+            type: string
+        - name: limit
+          in: query
+          schema:
+            type: integer
+            default: 20
+      responses:
+        "200":
+          description: Torque spec results
+          content:
+            application/json:
+              schema:
+                type: array
+                items:
+                  $ref: "#/components/schemas/TorqueSpec"
+
+  /articles:
+    get:
+      operationId: getArticles
+      tags: [articles]
+      summary: Get articles list
+      parameters:
+        - name: limit
+          in: query
+          schema:
+            type: integer
+            default: 10
+        - name: offset
+          in: query
+          schema:
+            type: integer
+            default: 0
+        - name: category
+          in: query
+          schema:
+            type: string
+      responses:
+        "200":
+          description: Articles list
+          content:
+            application/json:
+              schema:
+                type: array
+                items:
+                  $ref: "#/components/schemas/ArticleSummary"
+
+  /articles/{slug}:
+    get:
+      operationId: getArticle
+      tags: [articles]
+      summary: Get article by slug
+      parameters:
+        - name: slug
+          in: path
+          required: true
+          schema:
+            type: string
+      responses:
+        "200":
+          description: Full article
+          content:
+            application/json:
+              schema:
+                $ref: "#/components/schemas/Article"
+        "404":
+          description: Not found
+
+  /directory/shops:
+    get:
+      operationId: getShops
+      tags: [directory]
+      summary: Get machine shops list
+      parameters:
+        - name: search
+          in: query
+          schema:
+            type: string
+        - name: state
+          in: query
+          schema:
+            type: string
+        - name: specialty
+          in: query
+          schema:
+            type: string
+      responses:
+        "200":
+          description: Shops list
+          content:
+            application/json:
+              schema:
+                type: array
+                items:
+                  $ref: "#/components/schemas/Shop"
+
+  /directory/shops/submit:
+    post:
+      operationId: submitShop
+      tags: [directory]
+      summary: Submit a new shop listing
+      requestBody:
+        required: true
+        content:
+          application/json:
+            schema:
+              $ref: "#/components/schemas/ShopSubmission"
+      responses:
+        "201":
+          description: Shop submitted for review
+          content:
+            application/json:
+              schema:
+                $ref: "#/components/schemas/ShopSubmitResult"
+
+  /directory/shops/{id}/ratings:
+    post:
+      operationId: submitShopRating
+      tags: [directory]
+      summary: Submit rating for a shop
+      parameters:
+        - name: id
+          in: path
+          required: true
+          schema:
+            type: integer
+      requestBody:
+        required: true
+        content:
+          application/json:
+            schema:
+              $ref: "#/components/schemas/RatingSubmission"
+      responses:
+        "201":
+          description: Rating submitted
+          content:
+            application/json:
+              schema:
+                $ref: "#/components/schemas/RatingResult"
+
+  /search:
+    get:
+      operationId: globalSearch
+      tags: [search]
+      summary: Global search across specs and articles
+      parameters:
+        - name: q
+          in: query
+          required: true
+          schema:
+            type: string
+      responses:
+        "200":
+          description: Search results
+          content:
+            application/json:
+              schema:
+                $ref: "#/components/schemas/SearchResults"
+
+  /specs/popular:
+    get:
+      operationId: getPopularEngines
+      tags: [specs]
+      summary: Get most popular/searched engines
+      responses:
+        "200":
+          description: Popular engines
+          content:
+            application/json:
+              schema:
+                type: array
+                items:
+                  $ref: "#/components/schemas/PopularEngine"
+
+  /shop-pricing:
+    get:
+      operationId: getShopPricing
+      tags: [directory]
+      summary: Get machine shop pricing benchmarks
+      responses:
+        "200":
+          description: Pricing data
+          content:
+            application/json:
+              schema:
+                type: array
+                items:
+                  $ref: "#/components/schemas/PricingBenchmark"
+
+  /shop-pricing/submit:
+    post:
+      operationId: submitShopPricing
+      tags: [directory]
+      summary: Submit pricing data
+      requestBody:
+        required: true
+        content:
+          application/json:
+            schema:
+              $ref: "#/components/schemas/PricingSubmission"
+      responses:
+        "201":
+          description: Submitted
+          content:
+            application/json:
+              schema:
+                $ref: "#/components/schemas/SubmitResult"
+
 components:
   schemas:
     HealthStatus:
@@ -34,3 +319,479 @@ components:
       required:
         - status
 
+    EngineFamily:
+      type: object
+      properties:
+        id:
+          type: integer
+        slug:
+          type: string
+        name:
+          type: string
+        manufacturer:
+          type: string
+        description:
+          type: string
+        engineCount:
+          type: integer
+        imageUrl:
+          type: ["string", "null"]
+      required:
+        - id
+        - slug
+        - name
+        - manufacturer
+        - description
+        - engineCount
+
+    EngineFamilyDetail:
+      type: object
+      properties:
+        id:
+          type: integer
+        slug:
+          type: string
+        name:
+          type: string
+        manufacturer:
+          type: string
+        description:
+          type: string
+        engines:
+          type: array
+          items:
+            $ref: "#/components/schemas/EngineSummary"
+      required:
+        - id
+        - slug
+        - name
+        - manufacturer
+        - description
+        - engines
+
+    EngineSummary:
+      type: object
+      properties:
+        id:
+          type: integer
+        name:
+          type: string
+        years:
+          type: string
+        displacement:
+          type: string
+        horsepower:
+          type: string
+        applications:
+          type: string
+      required:
+        - id
+        - name
+        - years
+        - displacement
+
+    EngineSpec:
+      type: object
+      properties:
+        id:
+          type: integer
+        name:
+          type: string
+        familyName:
+          type: string
+        familySlug:
+          type: string
+        years:
+          type: string
+        displacement:
+          type: string
+        bore:
+          type: string
+        stroke:
+          type: string
+        compression:
+          type: string
+        horsepower:
+          type: string
+        torque:
+          type: string
+        firingOrder:
+          type: string
+        rodLength:
+          type: string
+        rodRatio:
+          type: string
+        deckHeight:
+          type: string
+        applications:
+          type: string
+        torqueSpecs:
+          type: array
+          items:
+            $ref: "#/components/schemas/TorqueSpecItem"
+        clearanceSpecs:
+          type: array
+          items:
+            $ref: "#/components/schemas/ClearanceSpec"
+        castingNumbers:
+          type: array
+          items:
+            $ref: "#/components/schemas/CastingNumber"
+      required:
+        - id
+        - name
+        - familyName
+        - familySlug
+        - years
+        - displacement
+        - torqueSpecs
+        - clearanceSpecs
+        - castingNumbers
+
+    TorqueSpecItem:
+      type: object
+      properties:
+        fastener:
+          type: string
+        ftLbs:
+          type: string
+        nm:
+          type: string
+        sequence:
+          type: ["string", "null"]
+        lubricant:
+          type: string
+        torqueToYield:
+          type: boolean
+      required:
+        - fastener
+        - ftLbs
+        - nm
+        - lubricant
+        - torqueToYield
+
+    ClearanceSpec:
+      type: object
+      properties:
+        name:
+          type: string
+        factoryMin:
+          type: string
+        factoryMax:
+          type: string
+        performanceMin:
+          type: ["string", "null"]
+        performanceMax:
+          type: ["string", "null"]
+        unit:
+          type: string
+      required:
+        - name
+        - factoryMin
+        - factoryMax
+        - unit
+
+    CastingNumber:
+      type: object
+      properties:
+        casting:
+          type: string
+        description:
+          type: string
+        years:
+          type: string
+        type:
+          type: string
+      required:
+        - casting
+        - description
+        - years
+        - type
+
+    TorqueSpec:
+      type: object
+      properties:
+        id:
+          type: integer
+        engine:
+          type: string
+        engineId:
+          type: integer
+        familySlug:
+          type: string
+        fastener:
+          type: string
+        ftLbs:
+          type: string
+        nm:
+          type: string
+        sequence:
+          type: ["string", "null"]
+        lubricant:
+          type: string
+        torqueToYield:
+          type: boolean
+      required:
+        - id
+        - engine
+        - engineId
+        - familySlug
+        - fastener
+        - ftLbs
+        - nm
+        - lubricant
+        - torqueToYield
+
+    ArticleSummary:
+      type: object
+      properties:
+        id:
+          type: integer
+        slug:
+          type: string
+        title:
+          type: string
+        excerpt:
+          type: string
+        category:
+          type: string
+        publishedAt:
+          type: string
+        readTime:
+          type: integer
+        imageUrl:
+          type: ["string", "null"]
+      required:
+        - id
+        - slug
+        - title
+        - excerpt
+        - category
+        - publishedAt
+        - readTime
+
+    Article:
+      type: object
+      properties:
+        id:
+          type: integer
+        slug:
+          type: string
+        title:
+          type: string
+        excerpt:
+          type: string
+        category:
+          type: string
+        publishedAt:
+          type: string
+        readTime:
+          type: integer
+        imageUrl:
+          type: ["string", "null"]
+        content:
+          type: string
+        tags:
+          type: array
+          items:
+            type: string
+      required:
+        - id
+        - slug
+        - title
+        - excerpt
+        - category
+        - publishedAt
+        - readTime
+        - content
+        - tags
+
+    Shop:
+      type: object
+      properties:
+        id:
+          type: integer
+        name:
+          type: string
+        city:
+          type: string
+        state:
+          type: string
+        specialties:
+          type: array
+          items:
+            type: string
+        turnaroundTime:
+          type: string
+        avgRating:
+          type: ["number", "null"]
+        ratingCount:
+          type: integer
+        phone:
+          type: ["string", "null"]
+        website:
+          type: ["string", "null"]
+        description:
+          type: ["string", "null"]
+      required:
+        - id
+        - name
+        - city
+        - state
+        - specialties
+        - turnaroundTime
+        - ratingCount
+
+    ShopSubmission:
+      type: object
+      properties:
+        name:
+          type: string
+        city:
+          type: string
+        state:
+          type: string
+        specialties:
+          type: array
+          items:
+            type: string
+        turnaroundTime:
+          type: string
+        phone:
+          type: string
+        website:
+          type: string
+        description:
+          type: string
+      required:
+        - name
+        - city
+        - state
+        - specialties
+        - turnaroundTime
+
+    ShopSubmitResult:
+      type: object
+      properties:
+        success:
+          type: boolean
+        message:
+          type: string
+      required:
+        - success
+        - message
+
+    RatingSubmission:
+      type: object
+      properties:
+        rating:
+          type: integer
+        comment:
+          type: string
+      required:
+        - rating
+
+    RatingResult:
+      type: object
+      properties:
+        success:
+          type: boolean
+        message:
+          type: string
+      required:
+        - success
+        - message
+
+    SearchResults:
+      type: object
+      properties:
+        engines:
+          type: array
+          items:
+            $ref: "#/components/schemas/EngineSummary"
+        articles:
+          type: array
+          items:
+            $ref: "#/components/schemas/ArticleSummary"
+        torqueSpecs:
+          type: array
+          items:
+            $ref: "#/components/schemas/TorqueSpec"
+      required:
+        - engines
+        - articles
+        - torqueSpecs
+
+    PopularEngine:
+      type: object
+      properties:
+        id:
+          type: integer
+        name:
+          type: string
+        familySlug:
+          type: string
+        displacement:
+          type: string
+        applications:
+          type: string
+      required:
+        - id
+        - name
+        - familySlug
+        - displacement
+
+    PricingBenchmark:
+      type: object
+      properties:
+        id:
+          type: integer
+        service:
+          type: string
+        category:
+          type: string
+        lowPrice:
+          type: integer
+        avgPrice:
+          type: integer
+        highPrice:
+          type: integer
+        unit:
+          type: string
+        notes:
+          type: ["string", "null"]
+      required:
+        - id
+        - service
+        - category
+        - lowPrice
+        - avgPrice
+        - highPrice
+        - unit
+
+    PricingSubmission:
+      type: object
+      properties:
+        service:
+          type: string
+        price:
+          type: integer
+        region:
+          type: string
+        shopName:
+          type: string
+      required:
+        - service
+        - price
+        - region
+
+    SubmitResult:
+      type: object
+      properties:
+        success:
+          type: boolean
+        message:
+          type: string
+      required:
+        - success
+        - message

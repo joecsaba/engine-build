@@ -1,0 +1,221 @@
+Build a full-stack website called "EngineVault" — the ultimate online resource for automotive engine builders. This is a high-traffic content and tools platform targeting both DIY hobbyists and professional engine builders/machine shops. The goal is maximum organic search traffic and ad revenue.
+
+---
+
+TECH STACK
+- Frontend: React (Vite) with React Router for multi-page navigation
+- Backend: Node.js + Express API server
+- Database: SQLite (via better-sqlite3) for specs database and user submissions
+- Styling: Plain CSS with CSS variables (no Tailwind) — clean, dark-capable, professional automotive aesthetic
+- No authentication required for v1 — all tools are free and open
+- Mobile-first responsive design
+
+---
+
+DESIGN SYSTEM
+- Color palette: Deep charcoal (#1a1a1a) headers/nav, white content areas, orange accent (#E85D04) for CTAs and highlights — feels like a performance shop, not a generic blog
+- Typography: System font stack — clean and fast-loading
+- Navigation: Sticky top nav with logo, main sections dropdown, and a persistent "Calculators" button in orange
+- Footer: Links to all major sections, brief "About EngineVault" blurb, disclaimer that all specs should be verified against factory service manuals
+
+---
+
+SITE SECTIONS (build all of these as separate routes)
+
+1. HOME PAGE (/home)
+   - Hero section: "Everything an engine builder needs. One place." with subheadline: "Specs, calculators, build guides, and machine shop tools — all free."
+   - Featured tools grid (6 cards linking to the main calculators)
+   - Latest articles section (3 most recent blog posts)
+   - "Most searched engines" quick-links: LS Series, Small Block Chevy, Ford 302/351W, Big Block Chevy, Coyote 5.0, 2JZ
+   - Search bar at top that searches across specs database and articles
+
+2. ENGINE SPECS DATABASE (/specs)
+   - Landing page shows a grid of engine families: GM LS Series, GM Small Block (SBC), GM Big Block (BBC), Ford Small Block, Ford Big Block, Ford Coyote/Modular, Mopar Small Block, Mopar Big Block, Toyota 2JZ, Honda B/K Series
+   - Each engine family has its own page (/specs/ls-series, /specs/sbc, etc.)
+   - Each engine page contains a tabbed layout with these data sections:
+     a) TORQUE SPECS — bolt-by-bolt table: fastener location, torque value (ft-lbs AND Nm), sequence notes, thread lubricant notes (dry/ARP lube/motor oil), whether it's a torque-to-yield bolt
+     b) CLEARANCE SPECS — main bearing clearance, rod bearing clearance, piston-to-wall clearance, ring end gap (top/second/oil), valve stem-to-guide clearance, camshaft bearing clearance — shown as factory spec range AND performance build range
+     c) DIMENSIONS — bore, stroke, displacement, rod length, rod ratio, compression height, deck height, firing order, cam journal diameter
+     d) IDENTIFICATION — casting number lookup table (block castings, head castings), VIN decoder guide, date code explanation
+   - Specs data is stored in SQLite. Pre-populate with complete data for at minimum: LS1, LS2, LS3, LS6, LS7, LQ4, LQ9 (Gen III/IV LS family), Chevy 350 (all variants), Chevy 454, Ford 302 Windsor, Ford 351 Windsor, Ford 5.0 Coyote
+   - Each spec page has a "Print / Save as PDF" button for shop use
+   - Each page has a clear disclaimer: "Always verify specs against your factory service manual. Specs may vary by production year, casting, and application."
+
+3. CALCULATOR SUITE (/calculators)
+   - Landing page grid showing all 8 calculators with description cards
+   - Build each calculator as its own page with real-time calculation (updates as user types)
+
+   CALCULATOR 1: Engine Displacement (/calculators/displacement)
+   - Inputs: bore (inches or mm toggle), stroke (inches or mm), number of cylinders
+   - Outputs: displacement in cubic inches AND liters AND cc, with visual cylinder diagram
+   - Also show: piston speed at a user-entered RPM, mean piston speed
+   - Bonus: "What common engine is this close to?" — match against a lookup table
+
+   CALCULATOR 2: Compression Ratio — Static AND Dynamic (/calculators/compression-ratio)
+   - STATIC inputs: bore, stroke, gasket bore, gasket thickness, deck height, piston dish/dome volume (cc), head chamber volume (cc)
+   - STATIC output: compression ratio with color-coded fuel octane recommendation
+   - DYNAMIC inputs: add intake valve closing point (degrees ABDC), atmospheric pressure
+   - DYNAMIC output: dynamic compression ratio with explanation of why this matters
+   - Side-by-side static vs dynamic comparison panel
+   - Explain in plain English how dynamic CR is what actually causes detonation
+
+   CALCULATOR 3: Piston Ring End Gap (/calculators/ring-gap)
+   - Inputs: bore size, ring type (top compression, second compression, oil), application type (naturally aspirated street, NA performance, forced induction street, full race)
+   - Output: recommended gap range in both inches and mm with color-coded OK/too-tight/too-loose zones
+   - Bonus: shows what happens if gap is too small (land damage from heat expansion) vs. too large (blowby, oil consumption)
+
+   CALCULATOR 4: Camshaft Duration Converter (/calculators/cam-duration)
+   - Inputs: duration at advertised (with user-entered checking clearance), duration at .050", lift at the valve, rocker arm ratio
+   - Outputs: duration at .004" (advertised), at .050", at .200" — all converted
+   - Also: lobe lift from valve lift + rocker ratio, gross valve lift from lobe lift + rocker ratio
+   - Explanatory text about why cam manufacturers measure differently and how to compare specs
+
+   CALCULATOR 5: Connecting Rod Ratio (/calculators/rod-ratio)
+   - Inputs: stroke, rod length
+   - Output: rod ratio with a gauge showing where it falls on a spectrum (low 1.4 — ideal 1.7-1.8 — high 2.0+)
+   - Explain what rod ratio affects: piston dwell, side loading, piston speed, friction
+   - Compare common engine rod ratios in a table (e.g., Chevy 350 = 1.68, LS1 = 1.70, Honda B16 = 1.70)
+
+   CALCULATOR 6: Torque & Horsepower Converter (/calculators/hp-torque)
+   - Bidirectional: enter HP + RPM → get torque. Enter torque + RPM → get HP
+   - Formula explanation: HP = (Torque × RPM) / 5252
+   - Show crossover point at 5252 RPM on a visual chart
+   - Unit conversion: ft-lbs ↔ Nm ↔ kg-m
+
+   CALCULATOR 7: Engine Build Cost Estimator (/calculators/build-cost)
+   - User selects engine platform (dropdown: LS swap, SBC 350, SBC 383 stroker, Ford 302, Ford 351, 2JZ, Honda K-series)
+   - User selects build level: Stock Rebuild / Mild Street Performance / Aggressive Street / Full Race
+   - User selects: New vs Remanufactured vs Core/Junkyard starting point
+   - Output: itemized cost breakdown table with low/high ranges for:
+     * Core engine / junkyard donor
+     * Machine shop work (bore/hone, deck, crank grind, valve job, balance, assembly)
+     * Pistons & rings
+     * Bearings (main, rod, cam)
+     * Gasket set
+     * Timing kit
+     * Camshaft & lifters (if applicable)
+     * Oil pump
+     * Bolts/studs
+     * Assembly lube & supplies
+   - Total range at bottom: "Estimated total parts + machine work: $X,XXX – $X,XXX"
+   - Note: "Labor for removal/installation not included. Machine shop prices vary significantly by region."
+
+   CALCULATOR 8: Piston Speed Calculator (/calculators/piston-speed)
+   - Inputs: stroke (inches), RPM
+   - Outputs: mean piston speed (ft/min), peak piston speed (ft/min)
+   - Color coded: green (safe), yellow (caution), red (extreme — race only)
+   - Reference table: common engine redlines and their piston speeds
+
+4. CAMSHAFT SELECTION GUIDE (/cam-guide)
+   - This is the most complex and valuable page — it does NOT pick a cam for the user, but walks them through every decision systematically with explanatory text and a filtering/comparison tool
+   - Section 1: "Understanding cam specs" — explain duration, lift, LSA, ICL, overlap in plain English with visual diagrams
+   - Section 2: Interactive cam profile comparison — user enters two cam specs (duration at .050, LSA, lift) and the page shows how they compare on a lobeprofile-style visual and explains trade-offs
+   - Section 3: "Cam Selection Checklist" — interactive checklist form:
+     * Displacement
+     * Compression ratio
+     * Head flow rating (CFM)
+     * Intended RPM range (idle to redline)
+     * Transmission type (manual/auto)
+     * Torque converter stall (if auto)
+     * Vehicle weight
+     * Rear axle gear ratio
+     * Aspiration (NA/turbo/supercharged)
+     * Primary use (daily driver/weekend cruise/drag/road race)
+   - Output: recommended duration range at .050", LSA range, and lift range — with a plain-English explanation of WHY those numbers fit the combo
+   - Section 4: "Common mistakes" — top 10 cam selection errors with explanations
+   - Section 5: Flat-tappet vs. roller cam comparison — durability, cost, break-in requirements, ZDDP oil requirements
+
+5. BUILD GUIDES (/guides)
+   - Index page with guide cards organized by skill level (Beginner / Intermediate / Advanced)
+   - Each guide is a long-form article page with a sticky table of contents on the left (desktop) or collapsible (mobile)
+   - Build these guides as real pages with full content (not placeholders):
+
+   GUIDE 1: How to Check Bearing Clearance (/guides/bearing-clearance)
+   - Complete step-by-step: what Plastigage is, how to use it, how to read it, what to do if clearance is wrong
+   - Includes spec table for common engines
+   - Photos described with detailed alt text (use SVG illustrations in place of actual photos)
+
+   GUIDE 2: How to Set Piston Ring End Gap (/guides/ring-gap)
+   - File selection, proper filing technique, stagger positioning, oil rail directions
+   
+   GUIDE 3: How to Degree a Camshaft (/guides/degree-cam)
+   - Full procedure: finding TDC, using degree wheel, checking intake centerline, checking lobe separation
+   
+   GUIDE 4: Engine Break-In Procedure (/guides/break-in)
+   - Covers both flat-tappet AND roller cam break-in
+   - The flat-tappet controversy: ZDDP requirements, which oils to use, the 20-minute 2000 RPM procedure — explained thoroughly
+   - What to listen for, what to watch on gauges
+
+   GUIDE 5: Blueprinting an Engine — What It Means and How to Do It (/guides/blueprinting)
+   - Definition, what gets blueprinted, why it matters, cost vs. benefit analysis
+
+   GUIDE 6: How to Evaluate Machine Shop Work (/guides/machine-shop-quality)
+   - What to look for when you get your block back, how to verify the work was done correctly, red flags, questions to ask
+
+6. MACHINE SHOP TOOLS (/shop-tools)
+   - A section specifically for professional engine builders and machine shop owners
+   - Sub-pages:
+     a) PRICING GUIDE (/shop-tools/pricing) — crowdsourced regional price benchmarks for common machine work: bore and hone, deck surfacing, crank grind/polish, valve job (3-angle, multi-angle), align bore/hone, cam bearing installation, short block assembly, long block assembly, balancing. Show as a table with Low / Average / High columns and note that data is community-submitted and verified annually. Include a simple form at the bottom for shops to submit their prices.
+     b) BUILD RECORD SHEET (/shop-tools/build-sheet) — a printable/downloadable engine build documentation form that records: date, engine platform, block casting #, bore size, piston brand/part#, ring brand/part#, main bearing clearance per journal (1 through 5), rod bearing clearance per journal, piston-to-wall per cylinder, deck height, head gasket thickness, static CR, cam card info, valve spring installed heights per cylinder, notes. Has a "Print" button that opens a clean print view. Also has "Export as PDF" that generates a formatted PDF via browser print dialog.
+     c) SHOP DIRECTORY (/shop-tools/directory) — machine shop directory with SQLite-backed database. Display shops in a searchable list. Each listing shows: shop name, city/state, specialties (dropdown tags: LS, SBC, BBC, Ford, Mopar, Import, Diesel, Balancing, Full Engine Assembly), turnaround time, and user-submitted ratings (1-5 stars with comment). Include a "Submit Your Shop" form that stores to SQLite pending review. Map view using a simple embedded Google Maps iframe (no API key needed for basic embed).
+
+7. TORQUE SPECS QUICK LOOKUP (/torque-specs)
+   - A fast, searchable reference page optimized for people in the shop looking something up quickly
+   - Large search bar at top: "Search by engine or fastener (e.g. 'LS main cap bolts' or 'Chevy 350 head bolts')"
+   - Results show instantly from SQLite as user types
+   - Each result shows: engine, fastener, torque value, sequence, lube notes
+   - Mobile-optimized — big text, easy to read with greasy hands
+   - "Bookmark this page" prompt at top for repeat visitors
+
+8. BLOG / ARTICLES (/articles)
+   - Article index with category filters: Engine Builds, Tech Explained, Product Reviews, Machine Shop, Build on a Budget, Race Engines
+   - Pre-build 5 full SEO-optimized articles with real content:
+     1. "LS Engine Family Guide: Every LS Engine Explained (LS1 through LT1)"
+     2. "Flat-Tappet vs Roller Cams: Which Is Right for Your Build?"
+     3. "How Much Does an Engine Rebuild Cost in 2025? A Real Breakdown"
+     4. "SBC vs LS Swap: Which Makes More Sense for Your Project Car?"
+     5. "The Complete Guide to Piston Ring Gaps: What the Numbers Mean"
+   - Each article has: estimated read time, date, category badge, table of contents, related calculators sidebar, and "related articles" at the bottom
+
+9. SEARCH (/search)
+   - Global search page that queries across: engine specs database, calculator descriptions, guide titles/content, and article titles/content
+   - Returns results grouped by type (Specs / Calculators / Guides / Articles)
+   - Powered by SQLite full-text search (FTS5)
+
+---
+
+DATABASE SCHEMA
+Create these SQLite tables:
+
+engines: id, family, name, slug, displacement_ci, displacement_l, cylinders, bore_in, stroke_in, rod_length_in, rod_ratio, firing_order, notes
+
+torque_specs: id, engine_id, fastener_name, torque_ftlb, torque_nm, sequence_notes, lube_notes, is_torque_to_yield
+
+clearance_specs: id, engine_id, spec_name, factory_min, factory_max, performance_min, performance_max, unit, notes
+
+articles: id, title, slug, category, content, excerpt, read_time_min, published_date, is_published
+
+machine_shops: id, name, city, state, specialties, turnaround_days, rating_avg, rating_count, submitted_at, is_approved
+
+shop_ratings: id, shop_id, rating, comment, submitted_at
+
+shop_pricing_submissions: id, city, state, service_name, price_low, price_high, shop_name, submitted_at, is_verified
+
+---
+
+API ROUTES (Express)
+GET /api/engines — list all engine families
+GET /api/engines/:slug — get full engine data + all specs
+GET /api/torque-specs/search?q= — full-text search torque specs
+GET /api/articles — list articles
+GET /api/articles/:slug — single article
+GET /api/shops — list approved shops, filterable by state and specialty
+POST /api/shops/submit — submit a shop for review
+POST /api/shops/:id/rate — submit a rating
+POST /api/pricing/submit — submit pricing data
+GET /api/search?q= — global search across all content
+
+---
+
+SEO REQUIREMENTS
+- Every page has a unique 
