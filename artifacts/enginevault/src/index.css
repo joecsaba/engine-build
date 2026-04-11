@@ -175,3 +175,33 @@
     @apply font-sans antialiased bg-background text-foreground;
   }
 }
+
+@media print {
+  header,
+  nav,
+  .no-print {
+    display: none !important;
+  }
+
+  body {
+    background: #fff !important;
+    color: #000 !important;
+    font-size: 11pt;
+  }
+
+  .print\:hidden {
+    display: none !important;
+  }
+
+  div[style*="background: \"#1C1C1E\""],
+  div[style*='background: "#1C1C1E"'] {
+    background: #1a1a1a !important;
+    -webkit-print-color-adjust: exact;
+    print-color-adjust: exact;
+  }
+
+  input, textarea, select {
+    border: 1px solid #ccc !important;
+    background: #fff !important;
+  }
+}

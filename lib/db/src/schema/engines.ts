@@ -5,6 +5,7 @@ import { z } from "zod/v4";
 export const enginesTable = pgTable("engines", {
   id: serial("id").primaryKey(),
   familyId: integer("family_id").notNull(),
+  slug: text("slug"),
   name: text("name").notNull(),
   years: text("years").notNull(),
   displacement: text("displacement").notNull(),
