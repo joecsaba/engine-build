@@ -1,5 +1,6 @@
 import { Link } from "wouter";
 import { Calculator } from "lucide-react";
+import { PageHeader } from "@/components/layout/PageHeader";
 
 const calculators = [
   {
@@ -54,35 +55,36 @@ const calculators = [
 
 export default function CalculatorsIndex() {
   return (
-    <div className="container mx-auto max-w-6xl py-10 px-4">
-      <div className="mb-10">
-        <h1 className="text-4xl font-bold tracking-tight mb-3">Calculator Suite</h1>
-        <p className="text-muted-foreground text-lg">
-          Professional engine building calculators with real-time results. All calculations update instantly as you type.
-        </p>
-      </div>
+    <div>
+      <PageHeader
+        eyebrow="Tools"
+        title="Calculator Suite"
+        subtitle="Professional engine building calculators with real-time results. All calculations update instantly as you type."
+      />
 
-      <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-2 gap-6">
-        {calculators.map((calc) => (
-          <Link key={calc.href} href={calc.href}>
-            <div className="group block p-6 rounded-lg border bg-card hover:border-primary/60 hover:shadow-md transition-all cursor-pointer h-full">
-              <div className="flex items-start gap-4">
-                <div className="w-10 h-10 rounded-lg bg-primary/10 flex items-center justify-center text-primary shrink-0 group-hover:bg-primary group-hover:text-white transition-all">
-                  <Calculator className="w-5 h-5" />
-                </div>
-                <div className="flex-1 min-w-0">
-                  <h2 className="text-xl font-bold mb-1 group-hover:text-primary transition-colors">{calc.title}</h2>
-                  <p className="text-sm text-muted-foreground mb-3">{calc.desc}</p>
-                  <div className="flex flex-wrap gap-1">
-                    {calc.tags.map(tag => (
-                      <span key={tag} className="text-xs bg-muted px-2 py-0.5 rounded-full text-muted-foreground">{tag}</span>
-                    ))}
+      <div className="container mx-auto max-w-6xl px-4 py-10">
+        <div className="grid grid-cols-1 sm:grid-cols-2 gap-6">
+          {calculators.map((calc) => (
+            <Link key={calc.href} href={calc.href}>
+              <div className="group block p-6 rounded-lg border border-gray-200 bg-white hover:border-[#E85D04] hover:shadow-md transition-all cursor-pointer h-full">
+                <div className="flex items-start gap-4">
+                  <div className="w-10 h-10 rounded-lg bg-[#E85D04]/10 flex items-center justify-center text-[#E85D04] shrink-0 group-hover:bg-[#E85D04] group-hover:text-white transition-all">
+                    <Calculator className="w-5 h-5" />
+                  </div>
+                  <div className="flex-1 min-w-0">
+                    <h2 className="text-xl font-bold mb-1 group-hover:text-[#E85D04] transition-colors">{calc.title}</h2>
+                    <p className="text-sm text-gray-500 mb-3">{calc.desc}</p>
+                    <div className="flex flex-wrap gap-1">
+                      {calc.tags.map(tag => (
+                        <span key={tag} className="text-xs bg-gray-100 px-2 py-0.5 rounded-full text-gray-500 font-medium">{tag}</span>
+                      ))}
+                    </div>
                   </div>
                 </div>
               </div>
-            </div>
-          </Link>
-        ))}
+            </Link>
+          ))}
+        </div>
       </div>
     </div>
   );

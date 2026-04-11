@@ -37,36 +37,40 @@ export default function EngineDetail() {
   const clearanceByCategory = groupByCategory(engine.clearanceSpecs ?? []);
 
   return (
-    <div className="container mx-auto max-w-5xl py-10 px-4">
-      <div className="mb-6">
-        <Link href={`/specs/${slug}`} className="text-sm text-muted-foreground hover:text-primary flex items-center gap-1 mb-4">
-          <ArrowLeft className="w-4 h-4" /> {engine.familyName}
-        </Link>
-        <div className="flex items-start justify-between flex-wrap gap-4">
-          <div>
-            <h1 className="text-4xl font-bold tracking-tight">{engine.name}</h1>
-            <p className="text-muted-foreground mt-1">{engine.years} {engine.applications && `· ${engine.applications}`}</p>
+    <div>
+      {/* Charcoal header with engine stats */}
+      <div className="bg-[#1a1a1a] text-white print:bg-white print:text-black">
+        <div className="container mx-auto max-w-5xl px-4 pt-6 pb-10">
+          <Link href={`/specs/${slug}`} className="text-sm text-gray-400 hover:text-[#E85D04] flex items-center gap-1 mb-5 print:hidden transition-colors">
+            <ArrowLeft className="w-4 h-4" /> {engine.familyName}
+          </Link>
+          <div className="flex items-start justify-between flex-wrap gap-4 mb-8">
+            <div>
+              <h1 className="text-4xl font-bold tracking-tight">{engine.name}</h1>
+              <p className="text-gray-400 mt-1">{engine.years} {engine.applications && `· ${engine.applications}`}</p>
+            </div>
+            <Button variant="outline" onClick={handlePrint} className="print:hidden border-white/20 text-white hover:bg-white/10 hover:text-white">
+              <Printer className="w-4 h-4 mr-2" />Print / Save PDF
+            </Button>
           </div>
-          <Button variant="outline" onClick={handlePrint} className="print:hidden">
-            <Printer className="w-4 h-4 mr-2" />Print / Save PDF
-          </Button>
-        </div>
 
-        <div className="grid grid-cols-2 sm:grid-cols-4 gap-4 mt-6">
-          {engine.displacement && <StatBox label="Displacement" value={engine.displacement} />}
-          {engine.bore && <StatBox label="Bore" value={engine.bore} />}
-          {engine.stroke && <StatBox label="Stroke" value={engine.stroke} />}
-          {engine.compression && <StatBox label="Compression" value={engine.compression} />}
-          {engine.horsepower && <StatBox label="Horsepower" value={engine.horsepower + " hp"} />}
-          {engine.torque && <StatBox label="Torque" value={engine.torque + " lb-ft"} />}
-          {engine.firingOrder && <StatBox label="Firing Order" value={engine.firingOrder} />}
-          {engine.rodRatio && <StatBox label="Rod Ratio" value={engine.rodRatio} />}
+          <div className="grid grid-cols-2 sm:grid-cols-4 gap-3">
+            {engine.displacement && <StatBox label="Displacement" value={engine.displacement} />}
+            {engine.bore && <StatBox label="Bore" value={engine.bore} />}
+            {engine.stroke && <StatBox label="Stroke" value={engine.stroke} />}
+            {engine.compression && <StatBox label="Compression" value={engine.compression} />}
+            {engine.horsepower && <StatBox label="Horsepower" value={engine.horsepower + " hp"} />}
+            {engine.torque && <StatBox label="Torque" value={engine.torque + " lb-ft"} />}
+            {engine.firingOrder && <StatBox label="Firing Order" value={engine.firingOrder} />}
+            {engine.rodRatio && <StatBox label="Rod Ratio" value={engine.rodRatio} />}
+          </div>
         </div>
       </div>
 
-      <div className="mb-6 p-4 bg-amber-50 border border-amber-200 rounded-lg text-sm text-amber-800">
-        <strong>Disclaimer:</strong> Always verify specifications against your factory service manual. Specs may vary by production year, casting, and application.
-      </div>
+      <div className="container mx-auto max-w-5xl px-4 py-8">
+        <div className="mb-6 p-4 bg-amber-50 border border-amber-200 rounded-lg text-sm text-amber-800">
+          <strong>Disclaimer:</strong> Always verify specifications against your factory service manual. Specs may vary by production year, casting, and application.
+        </div>
 
       <Tabs defaultValue="torque">
         <TabsList className="mb-6 w-full justify-start overflow-x-auto">
@@ -93,13 +97,13 @@ export default function EngineDetail() {
                   <div className="overflow-x-auto">
                     <table className="w-full text-sm border-collapse">
                       <thead>
-                        <tr className="bg-muted">
-                          <th className="text-left p-3 border font-semibold">Fastener</th>
-                          <th className="text-left p-3 border font-semibold w-20">ft-lbs</th>
-                          <th className="text-left p-3 border font-semibold w-20">Nm</th>
-                          <th className="text-left p-3 border font-semibold w-32">Lubricant</th>
-                          <th className="text-left p-3 border font-semibold">Sequence / Notes</th>
-                          <th className="text-left p-3 border font-semibold w-14">TTY</th>
+                        <tr className="bg-[#1a1a1a] text-white">
+                          <th className="text-left p-3 border border-[#333] font-semibold">Fastener</th>
+                          <th className="text-left p-3 border border-[#333] font-semibold w-20">ft-lbs</th>
+                          <th className="text-left p-3 border border-[#333] font-semibold w-20">Nm</th>
+                          <th className="text-left p-3 border border-[#333] font-semibold w-32">Lubricant</th>
+                          <th className="text-left p-3 border border-[#333] font-semibold">Sequence / Notes</th>
+                          <th className="text-left p-3 border border-[#333] font-semibold w-14">TTY</th>
                         </tr>
                       </thead>
                       <tbody>
@@ -144,14 +148,14 @@ export default function EngineDetail() {
                   <div className="overflow-x-auto">
                     <table className="w-full text-sm border-collapse">
                       <thead>
-                        <tr className="bg-muted">
-                          <th className="text-left p-3 border font-semibold">Measurement</th>
-                          <th className="text-left p-3 border font-semibold">Factory Min</th>
-                          <th className="text-left p-3 border font-semibold">Factory Max</th>
-                          <th className="text-left p-3 border font-semibold">Perf. Min</th>
-                          <th className="text-left p-3 border font-semibold">Perf. Max</th>
-                          <th className="text-left p-3 border font-semibold w-20">Unit</th>
-                          <th className="text-left p-3 border font-semibold">Notes</th>
+                        <tr className="bg-[#1a1a1a] text-white">
+                          <th className="text-left p-3 border border-[#333] font-semibold">Measurement</th>
+                          <th className="text-left p-3 border border-[#333] font-semibold">Factory Min</th>
+                          <th className="text-left p-3 border border-[#333] font-semibold">Factory Max</th>
+                          <th className="text-left p-3 border border-[#333] font-semibold">Perf. Min</th>
+                          <th className="text-left p-3 border border-[#333] font-semibold">Perf. Max</th>
+                          <th className="text-left p-3 border border-[#333] font-semibold w-20">Unit</th>
+                          <th className="text-left p-3 border border-[#333] font-semibold">Notes</th>
                         </tr>
                       </thead>
                       <tbody>
@@ -198,11 +202,11 @@ export default function EngineDetail() {
             <div className="overflow-x-auto">
               <table className="w-full text-sm border-collapse">
                 <thead>
-                  <tr className="bg-muted">
-                    <th className="text-left p-3 border font-semibold">Casting #</th>
-                    <th className="text-left p-3 border font-semibold">Type</th>
-                    <th className="text-left p-3 border font-semibold">Years</th>
-                    <th className="text-left p-3 border font-semibold">Description</th>
+                  <tr className="bg-[#1a1a1a] text-white">
+                    <th className="text-left p-3 border border-[#333] font-semibold">Casting #</th>
+                    <th className="text-left p-3 border border-[#333] font-semibold">Type</th>
+                    <th className="text-left p-3 border border-[#333] font-semibold">Years</th>
+                    <th className="text-left p-3 border border-[#333] font-semibold">Description</th>
                   </tr>
                 </thead>
                 <tbody>
@@ -220,6 +224,7 @@ export default function EngineDetail() {
           )}
         </TabsContent>
       </Tabs>
+      </div>
     </div>
   );
 }
@@ -236,9 +241,9 @@ function groupByCategory<T extends { category?: string | null }>(items: T[]): Re
 
 function StatBox({ label, value }: { label: string; value: string }) {
   return (
-    <div className="p-4 rounded-lg border bg-card">
-      <p className="text-xs text-muted-foreground uppercase tracking-wide mb-1">{label}</p>
-      <p className="font-bold text-lg">{value}</p>
+    <div className="p-4 rounded-lg border border-[#2a2a2a] bg-[#242424]">
+      <p className="text-xs text-gray-400 uppercase tracking-widest mb-1">{label}</p>
+      <p className="font-bold text-lg text-white">{value}</p>
     </div>
   );
 }

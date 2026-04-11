@@ -1,0 +1,19 @@
+I'm attaching a React component file called buildsheet.jsx. This is an interactive engine build sheet for a website called EngineVault. Please integrate it into the existing project as follows:
+
+1. ADD THE ROUTE — Mount the component at /build-sheets in React Router. Add "Build Sheets" to the main navigation.
+
+2. SPLIT INTO PROPER FILES — The component imports from "react" only. Move the ENGINE_DB spec data into /src/data/engineSpecs.js and import it. Keep the main component in /src/pages/BuildSheets.jsx.
+
+3. WIRE THE DATABASE — The ENGINE_DB object in the file currently holds static spec data. Replace it with a fetch call to the existing Express API at GET /api/engines/:slug so specs load from SQLite. The slug format is "ls1", "sbc350", "coyote50" — match what's already in the database.
+
+4. ADD USER AUTH TO COLLABORATIVE FIELDS — The component has a COLLABORATORS array hardcoded. Replace this with the logged-in user from session/context. For the Shop and Enterprise plan tiers, each field write should POST to a new API endpoint: POST /api/builds/:buildId/fields with body { fieldKey, value, userId }. Store in a new SQLite table: field_entries (id, build_id, field_key, value, user_id, updated_at).
+
+5. ADD SAVE/LOAD — Add a "Save Build" button that POSTs the full build state to POST /api/builds. Add GET /api/builds/:id to reload a saved build. Store builds in SQLite table: builds (id, name, engine_slug, user_id, plan_tier, created_at, updated_at).
+
+6. PDF EXPORT — The "Export PDF" button currently does nothing. Wire it to window.print() for now with a clean print stylesheet that hides the nav and demo controls. Flag for later upgrade to a server-side PDF generator.
+
+7. KEEP ALL EXISTING LOGIC — Do not change the clearance color-coding logic, the per-cylinder grids, the enterprise custom spec modal, the tab structure, or the plan-tier feature gating. That all stays exactly as-is.
+
+8. STYLING — The component uses inline styles throughout. Do not refactor to CSS modules or Tailwind. Leave inline styles as-is.
+
+The attached buildsheet.jsx is the complete, working component — do not rewrite it, only integrate it.

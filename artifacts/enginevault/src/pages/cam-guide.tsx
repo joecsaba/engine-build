@@ -4,6 +4,7 @@ import { Input } from "@/components/ui/input";
 import { Label } from "@/components/ui/label";
 import { Select, SelectContent, SelectItem, SelectTrigger, SelectValue } from "@/components/ui/select";
 import { Checkbox } from "@/components/ui/checkbox";
+import { PageHeader } from "@/components/layout/PageHeader";
 
 const mistakes = [
   { num: 1, title: "Choosing cam by LSA alone", desc: "LSA is just one factor. Duration, lift, and your specific combo all matter more." },
@@ -78,10 +79,14 @@ export default function CamGuide() {
   const lsa2 = parseFloat(cam2.lsa) || 0;
 
   return (
-    <div className="container mx-auto max-w-4xl py-10 px-4">
-      <h1 className="text-4xl font-bold mb-3">Camshaft Selection Guide</h1>
-      <p className="text-muted-foreground text-lg mb-10">The systematic approach to selecting the right cam for your combo. Not a magic cam picker — a real guide to understanding the decision.</p>
+    <div>
+      <PageHeader
+        eyebrow="Camshaft"
+        title="Camshaft Selection Guide"
+        subtitle="The systematic approach to selecting the right cam for your combo. Not a magic cam picker — a real guide to understanding the decision."
+      />
 
+      <div className="container mx-auto max-w-4xl px-4 py-10">
       {/* Section 1: Understanding Cam Specs */}
       <section className="mb-12">
         <h2 className="text-2xl font-bold mb-6 pb-2 border-b">Section 1: Understanding Cam Specs</h2>
@@ -267,6 +272,7 @@ export default function CamGuide() {
           <strong>ZDDP Warning for Flat Tappet Cams:</strong> Modern API SM and SN engine oils have reduced zinc dialkyldithiophosphate (ZDDP) to protect catalytic converters. This is fatal for flat tappet cams. Use Driven HR3, Valvoline VR1, or add a ZDDP supplement (COMP Cams, ZDDPlus) for the first 1,000 miles minimum.
         </div>
       </section>
+      </div>
     </div>
   );
 }

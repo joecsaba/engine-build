@@ -86,20 +86,18 @@ export default function Home() {
       </section>
 
       {/* Main Features Grid */}
-      <section className="py-16 px-4 bg-gray-50 dark:bg-[#111]">
+      <section className="py-16 px-4 bg-[#1a1a1a]">
         <div className="container mx-auto max-w-6xl">
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
             {features.map((feature) => (
               <Link key={feature.title} href={feature.href}>
-                <Card className="h-full hover:shadow-md transition-shadow cursor-pointer border-border/50 group">
-                  <CardContent className="p-6 flex flex-col items-center text-center space-y-4">
-                    <div className="w-12 h-12 rounded-lg bg-primary/10 flex items-center justify-center text-primary group-hover:scale-110 transition-transform">
-                      <feature.icon className="w-6 h-6" />
-                    </div>
-                    <h3 className="font-bold text-lg">{feature.title}</h3>
-                    <p className="text-muted-foreground text-sm">{feature.desc}</p>
-                  </CardContent>
-                </Card>
+                <div className="group h-full p-6 rounded-xl border border-[#2a2a2a] bg-[#242424] hover:border-[#E85D04] hover:shadow-lg hover:shadow-[#E85D04]/10 transition-all cursor-pointer flex flex-col items-center text-center space-y-4">
+                  <div className="w-12 h-12 rounded-lg bg-[#E85D04]/10 flex items-center justify-center text-[#E85D04] group-hover:bg-[#E85D04] group-hover:text-white transition-all">
+                    <feature.icon className="w-6 h-6" />
+                  </div>
+                  <h3 className="font-bold text-lg text-white">{feature.title}</h3>
+                  <p className="text-gray-400 text-sm">{feature.desc}</p>
+                </div>
               </Link>
             ))}
           </div>
@@ -107,24 +105,25 @@ export default function Home() {
       </section>
 
       {/* Featured Calculators */}
-      <section className="py-16 px-4">
+      <section className="py-16 px-4 bg-white">
         <div className="container mx-auto max-w-6xl">
           <div className="flex justify-between items-end mb-8">
             <div>
+              <p className="text-[#E85D04] text-sm font-semibold uppercase tracking-widest mb-1">Tools</p>
               <h2 className="text-3xl font-bold tracking-tight">Essential Calculators</h2>
-              <p className="text-muted-foreground mt-2">Math for the machine shop.</p>
+              <p className="text-gray-500 mt-1">Math for the machine shop.</p>
             </div>
             <Link href="/calculators">
-              <Button variant="outline" className="hidden sm:flex">View All Calculators</Button>
+              <Button variant="outline" className="hidden sm:flex border-[#1a1a1a] text-[#1a1a1a] hover:bg-[#1a1a1a] hover:text-white">View All Calculators</Button>
             </Link>
           </div>
           
           <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4">
             {calculators.map(calc => (
               <Link key={calc.title} href={calc.href} className="block group">
-                <div className="p-5 rounded-lg border bg-card hover:border-primary/50 transition-colors h-full flex flex-col">
-                  <h3 className="font-semibold text-lg group-hover:text-primary transition-colors">{calc.title}</h3>
-                  <p className="text-sm text-muted-foreground mt-1">{calc.desc}</p>
+                <div className="p-5 rounded-lg border border-gray-200 bg-white hover:border-[#E85D04] hover:shadow-sm transition-all h-full flex flex-col">
+                  <h3 className="font-semibold text-lg group-hover:text-[#E85D04] transition-colors">{calc.title}</h3>
+                  <p className="text-sm text-gray-500 mt-1">{calc.desc}</p>
                 </div>
               </Link>
             ))}

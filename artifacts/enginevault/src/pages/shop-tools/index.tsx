@@ -1,5 +1,6 @@
 import { Link } from "wouter";
 import { DollarSign, FileText, MapPin, ChevronRight } from "lucide-react";
+import { PageHeader } from "@/components/layout/PageHeader";
 
 const tools = [
   {
@@ -27,30 +28,33 @@ const tools = [
 
 export default function ShopToolsIndex() {
   return (
-    <div className="container mx-auto max-w-4xl py-10 px-4">
-      <div className="mb-10">
-        <h1 className="text-4xl font-bold tracking-tight mb-3">Shop Tools</h1>
-        <p className="text-muted-foreground text-lg">Professional resources for machine shops and serious engine builders.</p>
-      </div>
+    <div>
+      <PageHeader
+        eyebrow="Professional Resources"
+        title="Shop Tools"
+        subtitle="Professional resources for machine shops and serious engine builders."
+      />
 
-      <div className="space-y-4">
-        {tools.map(({ icon: Icon, title, href, desc, tags }) => (
-          <Link key={href} href={href}>
-            <div className="group flex items-start gap-5 p-6 rounded-lg border bg-card hover:border-primary/60 hover:shadow-md transition-all cursor-pointer">
-              <div className="w-12 h-12 rounded-xl bg-primary/10 text-primary flex items-center justify-center shrink-0 group-hover:bg-primary group-hover:text-white transition-all">
-                <Icon className="w-6 h-6" />
-              </div>
-              <div className="flex-1 min-w-0">
-                <h2 className="text-xl font-bold mb-1 group-hover:text-primary transition-colors">{title}</h2>
-                <p className="text-muted-foreground text-sm mb-3">{desc}</p>
-                <div className="flex flex-wrap gap-2">
-                  {tags.map(tag => <span key={tag} className="text-xs bg-muted px-2 py-0.5 rounded-full text-muted-foreground">{tag}</span>)}
+      <div className="container mx-auto max-w-4xl px-4 py-10">
+        <div className="space-y-4">
+          {tools.map(({ icon: Icon, title, href, desc, tags }) => (
+            <Link key={href} href={href}>
+              <div className="group flex items-start gap-5 p-6 rounded-lg border border-gray-200 bg-white hover:border-[#E85D04] hover:shadow-md transition-all cursor-pointer">
+                <div className="w-12 h-12 rounded-xl bg-[#E85D04]/10 text-[#E85D04] flex items-center justify-center shrink-0 group-hover:bg-[#E85D04] group-hover:text-white transition-all">
+                  <Icon className="w-6 h-6" />
                 </div>
+                <div className="flex-1 min-w-0">
+                  <h2 className="text-xl font-bold mb-1 group-hover:text-[#E85D04] transition-colors">{title}</h2>
+                  <p className="text-gray-500 text-sm mb-3">{desc}</p>
+                  <div className="flex flex-wrap gap-2">
+                    {tags.map(tag => <span key={tag} className="text-xs bg-gray-100 px-2 py-0.5 rounded-full text-gray-500 font-medium">{tag}</span>)}
+                  </div>
+                </div>
+                <ChevronRight className="w-5 h-5 text-gray-400 group-hover:text-[#E85D04] transition-colors shrink-0 mt-1" />
               </div>
-              <ChevronRight className="w-5 h-5 text-muted-foreground group-hover:text-primary transition-colors shrink-0 mt-1" />
-            </div>
-          </Link>
-        ))}
+            </Link>
+          ))}
+        </div>
       </div>
     </div>
   );
