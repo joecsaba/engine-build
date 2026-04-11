@@ -5,6 +5,7 @@ import { z } from "zod/v4";
 export const torqueSpecsTable = pgTable("torque_specs", {
   id: serial("id").primaryKey(),
   engineId: integer("engine_id").notNull(),
+  category: text("category").notNull().default("General"),
   fastener: text("fastener").notNull(),
   ftLbs: text("ft_lbs").notNull(),
   nm: text("nm").notNull(),

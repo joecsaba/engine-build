@@ -33,6 +33,9 @@ export default function EngineDetail() {
     );
   }
 
+  const torqueByCategory = groupByCategory(engine.torqueSpecs ?? []);
+  const clearanceByCategory = groupByCategory(engine.clearanceSpecs ?? []);
+
   return (
     <div className="container mx-auto max-w-5xl py-10 px-4">
       <div className="mb-6">
@@ -74,72 +77,103 @@ export default function EngineDetail() {
         </TabsList>
 
         <TabsContent value="torque">
-          <h2 className="text-xl font-bold mb-4">Torque Specifications</h2>
+          <h2 className="text-xl font-bold mb-1">Torque Specifications</h2>
+          <p className="text-sm text-muted-foreground mb-5">
+            {engine.torqueSpecs.length} fasteners across {Object.keys(torqueByCategory).length} categories
+          </p>
           {engine.torqueSpecs.length === 0 ? (
             <p className="text-muted-foreground">No torque specs available for this engine yet.</p>
           ) : (
-            <div className="overflow-x-auto">
-              <table className="w-full text-sm border-collapse">
-                <thead>
-                  <tr className="bg-muted">
-                    <th className="text-left p-3 border font-semibold">Fastener</th>
-                    <th className="text-left p-3 border font-semibold">ft-lbs</th>
-                    <th className="text-left p-3 border font-semibold">Nm</th>
-                    <th className="text-left p-3 border font-semibold">Lubricant</th>
-                    <th className="text-left p-3 border font-semibold">Sequence/Notes</th>
-                    <th className="text-left p-3 border font-semibold">TTY</th>
-                  </tr>
-                </thead>
-                <tbody>
-                  {engine.torqueSpecs.map((spec, i) => (
-                    <tr key={i} className={i % 2 === 0 ? "" : "bg-muted/30"}>
-                      <td className="p-3 border font-medium">{spec.fastener}</td>
-                      <td className="p-3 border">{spec.ftLbs}</td>
-                      <td className="p-3 border">{spec.nm}</td>
-                      <td className="p-3 border">{spec.lubricant}</td>
-                      <td className="p-3 border text-muted-foreground">{spec.sequence ?? "—"}</td>
-                      <td className="p-3 border">{spec.torqueToYield ? <span className="text-amber-600 font-semibold">TTY</span> : "No"}</td>
-                    </tr>
-                  ))}
-                </tbody>
-              </table>
+            <div className="space-y-6">
+              {Object.entries(torqueByCategory).map(([category, specs]) => (
+                <div key={category}>
+                  <h3 className="text-sm font-semibold uppercase tracking-wider text-[#E85D04] mb-2 pb-1 border-b border-orange-100">
+                    {category}
+                  </h3>
+                  <div className="overflow-x-auto">
+                    <table className="w-full text-sm border-collapse">
+                      <thead>
+                        <tr className="bg-muted">
+                          <th className="text-left p-3 border font-semibold">Fastener</th>
+                          <th className="text-left p-3 border font-semibold w-20">ft-lbs</th>
+                          <th className="text-left p-3 border font-semibold w-20">Nm</th>
+                          <th className="text-left p-3 border font-semibold w-32">Lubricant</th>
+                          <th className="text-left p-3 border font-semibold">Sequence / Notes</th>
+                          <th className="text-left p-3 border font-semibold w-14">TTY</th>
+                        </tr>
+                      </thead>
+                      <tbody>
+                        {specs.map((spec, i) => (
+                          <tr key={i} className={i % 2 === 0 ? "" : "bg-muted/30"}>
+                            <td className="p-3 border font-medium">{spec.fastener}</td>
+                            <td className="p-3 border font-mono">{spec.ftLbs}</td>
+                            <td className="p-3 border font-mono">{spec.nm}</td>
+                            <td className="p-3 border text-sm">{spec.lubricant}</td>
+                            <td className="p-3 border text-muted-foreground text-sm">{spec.sequence ?? "—"}</td>
+                            <td className="p-3 border text-center">
+                              {spec.torqueToYield
+                                ? <span className="text-amber-600 font-semibold text-xs">TTY</span>
+                                : <span className="text-muted-foreground text-xs">No</span>}
+                            </td>
+                          </tr>
+                        ))}
+                      </tbody>
+                    </table>
+                  </div>
+                </div>
+              ))}
             </div>
           )}
-          <p className="text-xs text-muted-foreground mt-4">TTY = Torque-to-Yield bolt (one-time use, must be replaced)</p>
+          <p className="text-xs text-muted-foreground mt-6">TTY = Torque-to-Yield bolt (single-use — must be replaced after removal)</p>
         </TabsContent>
 
         <TabsContent value="clearance">
-          <h2 className="text-xl font-bold mb-4">Clearance Specifications</h2>
+          <h2 className="text-xl font-bold mb-1">Clearance Specifications</h2>
+          <p className="text-sm text-muted-foreground mb-5">
+            {engine.clearanceSpecs.length} measurements across {Object.keys(clearanceByCategory).length} categories
+          </p>
           {engine.clearanceSpecs.length === 0 ? (
             <p className="text-muted-foreground">No clearance specs available for this engine yet.</p>
           ) : (
-            <div className="overflow-x-auto">
-              <table className="w-full text-sm border-collapse">
-                <thead>
-                  <tr className="bg-muted">
-                    <th className="text-left p-3 border font-semibold">Measurement</th>
-                    <th className="text-left p-3 border font-semibold">Factory Min</th>
-                    <th className="text-left p-3 border font-semibold">Factory Max</th>
-                    <th className="text-left p-3 border font-semibold">Performance Min</th>
-                    <th className="text-left p-3 border font-semibold">Performance Max</th>
-                    <th className="text-left p-3 border font-semibold">Unit</th>
-                  </tr>
-                </thead>
-                <tbody>
-                  {engine.clearanceSpecs.map((spec, i) => (
-                    <tr key={i} className={i % 2 === 0 ? "" : "bg-muted/30"}>
-                      <td className="p-3 border font-medium">{spec.name}</td>
-                      <td className="p-3 border">{spec.factoryMin}</td>
-                      <td className="p-3 border">{spec.factoryMax}</td>
-                      <td className="p-3 border">{spec.performanceMin ?? "—"}</td>
-                      <td className="p-3 border">{spec.performanceMax ?? "—"}</td>
-                      <td className="p-3 border text-muted-foreground">{spec.unit}</td>
-                    </tr>
-                  ))}
-                </tbody>
-              </table>
+            <div className="space-y-6">
+              {Object.entries(clearanceByCategory).map(([category, specs]) => (
+                <div key={category}>
+                  <h3 className="text-sm font-semibold uppercase tracking-wider text-[#E85D04] mb-2 pb-1 border-b border-orange-100">
+                    {category}
+                  </h3>
+                  <div className="overflow-x-auto">
+                    <table className="w-full text-sm border-collapse">
+                      <thead>
+                        <tr className="bg-muted">
+                          <th className="text-left p-3 border font-semibold">Measurement</th>
+                          <th className="text-left p-3 border font-semibold">Factory Min</th>
+                          <th className="text-left p-3 border font-semibold">Factory Max</th>
+                          <th className="text-left p-3 border font-semibold">Perf. Min</th>
+                          <th className="text-left p-3 border font-semibold">Perf. Max</th>
+                          <th className="text-left p-3 border font-semibold w-20">Unit</th>
+                          <th className="text-left p-3 border font-semibold">Notes</th>
+                        </tr>
+                      </thead>
+                      <tbody>
+                        {specs.map((spec, i) => (
+                          <tr key={i} className={i % 2 === 0 ? "" : "bg-muted/30"}>
+                            <td className="p-3 border font-medium">{spec.name}</td>
+                            <td className="p-3 border font-mono">{spec.factoryMin}</td>
+                            <td className="p-3 border font-mono">{spec.factoryMax}</td>
+                            <td className="p-3 border font-mono text-blue-700">{spec.performanceMin ?? "—"}</td>
+                            <td className="p-3 border font-mono text-blue-700">{spec.performanceMax ?? "—"}</td>
+                            <td className="p-3 border text-muted-foreground text-xs">{spec.unit}</td>
+                            <td className="p-3 border text-muted-foreground text-xs max-w-xs">{spec.notes ?? "—"}</td>
+                          </tr>
+                        ))}
+                      </tbody>
+                    </table>
+                  </div>
+                </div>
+              ))}
             </div>
           )}
+          <p className="text-xs text-muted-foreground mt-6">Blue values indicate typical performance/race clearances — always consult your machinist.</p>
         </TabsContent>
 
         <TabsContent value="dimensions">
@@ -188,6 +222,16 @@ export default function EngineDetail() {
       </Tabs>
     </div>
   );
+}
+
+function groupByCategory<T extends { category?: string | null }>(items: T[]): Record<string, T[]> {
+  const result: Record<string, T[]> = {};
+  for (const item of items) {
+    const cat = item.category ?? "General";
+    if (!result[cat]) result[cat] = [];
+    result[cat].push(item);
+  }
+  return result;
 }
 
 function StatBox({ label, value }: { label: string; value: string }) {

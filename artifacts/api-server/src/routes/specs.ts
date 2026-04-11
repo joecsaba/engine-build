@@ -93,6 +93,7 @@ router.get("/specs/engines/:id", async (req, res): Promise<void> => {
     deckHeight: engine.deckHeight,
     applications: engine.applications,
     torqueSpecs: torqueSpecs.map(t => ({
+      category: t.category,
       fastener: t.fastener,
       ftLbs: t.ftLbs,
       nm: t.nm,
@@ -101,12 +102,14 @@ router.get("/specs/engines/:id", async (req, res): Promise<void> => {
       torqueToYield: t.torqueToYield,
     })),
     clearanceSpecs: clearanceSpecs.map(c => ({
+      category: c.category,
       name: c.name,
       factoryMin: c.factoryMin,
       factoryMax: c.factoryMax,
       performanceMin: c.performanceMin,
       performanceMax: c.performanceMax,
       unit: c.unit,
+      notes: c.notes,
     })),
     castingNumbers: castingNumbers.map(c => ({
       casting: c.casting,
