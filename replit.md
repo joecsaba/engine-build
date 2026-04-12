@@ -26,28 +26,41 @@ pnpm workspace monorepo using TypeScript. Each package manages its own dependenc
 
 See the `pnpm-workspace` skill for workspace structure, TypeScript setup, and package details.
 
+## EngineVault Application
+
+**Artifact:** `artifacts/enginevault` (frontend) + `artifacts/api-server` (backend, port 8080)
+
+### Routes
+- `/` — Home
+- `/specs`, `/specs/:slug`, `/specs/:slug/:id` — Engine specs database
+- `/calculators/*` — 8 calculators
+- `/cam-guide` — Camshaft selection guide
+- `/torque-specs` — Torque specs quick lookup
+- `/build-sheets` — Build Sheets index
+- `/build-sheets/planner` — Build Planner (new)
+- `/build-sheets/record` — Engine Record Sheet
+
+### Design System
+- Charcoal `#1a1a1a` — nav, page header banners, dark section backgrounds
+- Orange `#E85D04` — accent, CTAs, eyebrow text (`text-primary`)
+- White — content area backgrounds
+- `PageHeader` component: `artifacts/enginevault/src/components/layout/PageHeader.tsx`
+
+### Key Data Files
+- `artifacts/enginevault/src/data/buildParts.ts` — Build Planner parts catalog (LS1, LS3, SBC350, Ford 302)
+- `lib/db/src/seed.ts` — Database seed
+- `lib/db/src/seed-ls-sbc.ts` — LS/SBC supplemental seed
+
+### Build Command (after frontend changes)
+```
+cd artifacts/enginevault && PORT=8099 BASE_PATH=/ pnpm run build
+```
+
 ## EngineVault Build Sheet
 
-The interactive build sheet at `/shop-tools/build-sheet` (`artifacts/enginevault/src/pages/shop-tools/build-sheet.tsx`) provides:
-- Engine selector (LS1, SBC 350, Coyote 5.0) with specs loaded from `GET /api/engines/:slug`
-- Color-coded clearance fields (green=OK, yellow=WARN, red=LOW/HIGH)
-- Per-cylinder grids for ring gap and piston-to-wall
-- Camshaft, Parts List, Torque Specs, and Notes tabs
-- Plan-tier gating (Free/Builder/Shop/Enterprise)
-- Enterprise spec-override modal
-- Save Build (`POST /api/builds`) with build ID returned, Load Build (`GET /api/builds/:id`)
-- Per-field writes (`POST /api/builds/:buildId/fields`) for Shop/Enterprise tiers
-- Export PDF via `window.print()` with print stylesheet hiding nav/controls
-
-### DB Tables Added
-- `builds` — id, name, engine_slug, user_id, plan_tier, state_json, created_at, updated_at
-- `field_entries` — id, build_id, field_key, value, user_id, updated_at
-
-### Engine Slug Column
-- `engines.slug` column added (nullable); populated for LS1 (`ls1`), SBC 350 4-bolt (`sbc350`), Coyote 5.0 (`coyote50`)
-
-### New API Routes (in `artifacts/api-server/src/routes/builds.ts`)
-- `GET /api/engines/:slug`
-- `POST /api/builds`
-- `GET /api/builds/:id`
-- `POST /api/builds/:buildId/fields`
+### Engine Record Sheet (`/build-sheets/record`)
+File: `artifacts/enginevault/src/pages/shop-tools/build-sheet.tsx`
+- Engine selector (LS1, SBC 350, Coyote 5.0) via `GET /api/engines/:slug`
+- Color-coded clearance fields, plan-tier gating, save/load builds
+- API routes: `GET /api/engines/:slug`, `POST /api/builds`, `GET /api/builds/:id`, `POST /api/builds/:buildId/fields`
+- DB tables: `builds`, `field_entries`; `engines.slug` column populated for ls1/sbc350/coyote50

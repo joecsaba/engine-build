@@ -8,9 +8,7 @@ export function Navbar() {
     { href: "/specs", label: "Specs" },
     { href: "/calculators", label: "Calculators" },
     { href: "/cam-guide", label: "Cam Guide" },
-    { href: "/guides", label: "Guides" },
-    { href: "/shop-tools", label: "Shop Tools" },
-    { href: "/articles", label: "Articles" },
+    { href: "/build-sheets", label: "Build Sheets" },
   ];
 
   return (
@@ -28,9 +26,9 @@ export function Navbar() {
               {link.label}
             </Link>
           ))}
-          <Link href="/calculators">
+          <Link href="/build-sheets/planner">
             <Button className="bg-primary hover:bg-primary/90 text-white font-semibold">
-              Calculators
+              Build Planner
             </Button>
           </Link>
         </nav>
@@ -51,9 +49,9 @@ export function Navbar() {
                   </Link>
                 ))}
                 <div className="pt-4 mt-4 border-t border-[#2a2a2a]">
-                  <Link href="/calculators" className="block w-full">
+                  <Link href="/build-sheets/planner" className="block w-full">
                     <Button className="w-full bg-primary hover:bg-primary/90 text-white">
-                      Calculators
+                      Build Planner
                     </Button>
                   </Link>
                 </div>

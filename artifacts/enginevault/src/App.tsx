@@ -24,21 +24,9 @@ import PistonSpeedCalculator from "@/pages/calculators/piston-speed";
 import CamGuide from "@/pages/cam-guide";
 import TorqueSpecs from "@/pages/torque-specs";
 
-import ArticlesIndex from "@/pages/articles/index";
-import ArticlePage from "@/pages/articles/article";
-
-import GuidesIndex from "@/pages/guides/index";
-import BearingClearanceGuide from "@/pages/guides/bearing-clearance";
-import RingGapGuide from "@/pages/guides/ring-gap";
-import BreakInGuide from "@/pages/guides/break-in";
-import DegreeCamGuide from "@/pages/guides/degree-cam";
-import BlueprintingGuide from "@/pages/guides/blueprinting";
-import MachineShopQualityGuide from "@/pages/guides/machine-shop-quality";
-
-import ShopToolsIndex from "@/pages/shop-tools/index";
-import ShopPricing from "@/pages/shop-tools/pricing";
+import BuildSheetsIndex from "@/pages/build-sheets/index";
+import BuildPlanner from "@/pages/build-sheets/planner";
 import BuildSheet from "@/pages/shop-tools/build-sheet";
-import ShopDirectory from "@/pages/shop-tools/directory";
 
 const queryClient = new QueryClient({
   defaultOptions: {
@@ -72,21 +60,9 @@ function Router() {
         <Route path="/cam-guide" component={CamGuide} />
         <Route path="/torque-specs" component={TorqueSpecs} />
 
-        <Route path="/articles" component={ArticlesIndex} />
-        <Route path="/articles/:slug" component={ArticlePage} />
-
-        <Route path="/guides" component={GuidesIndex} />
-        <Route path="/guides/bearing-clearance" component={BearingClearanceGuide} />
-        <Route path="/guides/ring-gap" component={RingGapGuide} />
-        <Route path="/guides/break-in" component={BreakInGuide} />
-        <Route path="/guides/degree-cam" component={DegreeCamGuide} />
-        <Route path="/guides/blueprinting" component={BlueprintingGuide} />
-        <Route path="/guides/machine-shop-quality" component={MachineShopQualityGuide} />
-
-        <Route path="/shop-tools" component={ShopToolsIndex} />
-        <Route path="/shop-tools/pricing" component={ShopPricing} />
-        <Route path="/shop-tools/build-sheet" component={BuildSheet} />
-        <Route path="/shop-tools/directory" component={ShopDirectory} />
+        <Route path="/build-sheets" component={BuildSheetsIndex} />
+        <Route path="/build-sheets/planner" component={BuildPlanner} />
+        <Route path="/build-sheets/record" component={BuildSheet} />
 
         <Route component={NotFound} />
       </Switch>

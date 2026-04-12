@@ -1,8 +1,7 @@
 import { Link } from "wouter";
 import { Button } from "@/components/ui/button";
-import { Card, CardContent } from "@/components/ui/card";
 import { Input } from "@/components/ui/input";
-import { Search, Calculator, BookOpen, Database, Wrench } from "lucide-react";
+import { Search, Calculator, Database, Wrench, Settings2 } from "lucide-react";
 import { useState } from "react";
 
 export default function Home() {
@@ -18,10 +17,10 @@ export default function Home() {
   ];
 
   const features = [
-    { title: "Engine Specs", desc: "Detailed clearance & torque specs for popular platforms", icon: Database, href: "/specs" },
+    { title: "Engine Specs", desc: "Clearance & torque specs for popular platforms", icon: Database, href: "/specs" },
     { title: "Calculators", desc: "Displacement, compression ratio, rod ratio & more", icon: Calculator, href: "/calculators" },
-    { title: "Build Guides", desc: "Professional procedures for blueprinting & assembly", icon: BookOpen, href: "/guides" },
-    { title: "Shop Tools", desc: "Pricing benchmarks, build sheets & shop directory", icon: Wrench, href: "/shop-tools" },
+    { title: "Cam Guide", desc: "Systematic approach to selecting the right camshaft", icon: Settings2, href: "/cam-guide" },
+    { title: "Build Planner", desc: "Select components, get pricing & a shopping list", icon: Wrench, href: "/build-sheets/planner" },
   ];
 
   const calculators = [
@@ -36,7 +35,6 @@ export default function Home() {
   const handleSearch = (e: React.FormEvent) => {
     e.preventDefault();
     if (searchQuery.trim()) {
-      // Typically would push to search route
       console.log("Searching for:", searchQuery);
     }
   };
@@ -45,7 +43,6 @@ export default function Home() {
     <div className="flex flex-col min-h-screen">
       {/* Hero Section */}
       <section className="bg-[#1a1a1a] text-white py-20 px-4 relative overflow-hidden">
-        {/* Abstract engine-like background pattern */}
         <div className="absolute inset-0 opacity-5 pointer-events-none" 
              style={{ backgroundImage: 'radial-gradient(circle at 2px 2px, white 1px, transparent 0)', backgroundSize: '32px 32px' }} />
         
@@ -55,7 +52,7 @@ export default function Home() {
               Everything an engine builder needs. <span className="text-primary">One place.</span>
             </h1>
             <p className="text-lg md:text-xl text-gray-400 max-w-2xl mx-auto">
-              The professional reference for engine specifications, calculators, and blueprinting procedures.
+              Specs, calculators, cam selection, and a full build planner with parts pricing.
             </p>
             
             <form onSubmit={handleSearch} className="max-w-2xl mx-auto mt-8 relative">
@@ -64,7 +61,7 @@ export default function Home() {
                 <Input 
                   value={searchQuery}
                   onChange={(e) => setSearchQuery(e.target.value)}
-                  placeholder="Search engines, torque specs, articles..." 
+                  placeholder="Search engines, specs, torque values..." 
                   className="w-full pl-12 pr-4 py-6 text-lg rounded-full bg-white/10 border-white/20 text-white placeholder:text-gray-500 focus-visible:ring-primary"
                 />
                 <Button type="submit" className="absolute right-2 rounded-full bg-primary hover:bg-primary/90 text-white px-6">
@@ -136,6 +133,21 @@ export default function Home() {
         </div>
       </section>
 
+      {/* Build Planner CTA */}
+      <section className="py-16 px-4 bg-[#1a1a1a]">
+        <div className="container mx-auto max-w-4xl text-center">
+          <p className="text-[#E85D04] text-sm font-semibold uppercase tracking-widest mb-3">New</p>
+          <h2 className="text-3xl md:text-4xl font-bold text-white mb-4">Build Planner</h2>
+          <p className="text-gray-400 text-lg max-w-2xl mx-auto mb-8">
+            Select your engine platform, pick components category by category, and get a complete shopping list with realistic parts pricing from Summit Racing and Jegs.
+          </p>
+          <Link href="/build-sheets/planner">
+            <Button className="bg-primary hover:bg-primary/90 text-white font-bold text-lg px-8 py-6">
+              Start Planning Your Build
+            </Button>
+          </Link>
+        </div>
+      </section>
     </div>
   );
 }

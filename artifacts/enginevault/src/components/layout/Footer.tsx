@@ -9,15 +9,15 @@ export function Footer() {
         { href: "/specs", label: "Engine Specs Database" },
         { href: "/calculators", label: "Calculators" },
         { href: "/torque-specs", label: "Torque Specs" },
-        { href: "/shop-tools", label: "Shop Tools" },
+        { href: "/cam-guide", label: "Cam Selection Guide" },
       ],
     },
     {
-      title: "Guides & Articles",
+      title: "Build Sheets",
       links: [
-        { href: "/guides", label: "Build Guides" },
-        { href: "/cam-guide", label: "Camshaft Selection" },
-        { href: "/articles", label: "Articles" },
+        { href: "/build-sheets", label: "Build Sheets Home" },
+        { href: "/build-sheets/planner", label: "Build Planner" },
+        { href: "/build-sheets/record", label: "Engine Record Sheet" },
       ],
     },
   ];
@@ -32,7 +32,7 @@ export function Footer() {
               <span>Engine<span className="text-primary">Vault</span></span>
             </Link>
             <p className="text-sm max-w-sm">
-              The online authority for engine builders. Precision data, professional tools, and complete guides for hobbyists and performance shops alike.
+              The professional reference for engine builders. Specs, calculators, cam selection, and build planning tools — all in one place.
             </p>
           </div>
           
@@ -55,7 +55,7 @@ export function Footer() {
         <div className="mt-12 pt-8 border-t border-[#222] text-xs text-center md:text-left flex flex-col md:flex-row justify-between items-center gap-4">
           <p>&copy; {new Date().getFullYear()} EngineVault. All rights reserved.</p>
           <div className="max-w-xl text-gray-500">
-            <p><strong>Disclaimer:</strong> All specifications and torque values provided are for reference only. Always verify against factory service manuals before assembly. EngineVault is not responsible for engine damage.</p>
+            <p><strong>Disclaimer:</strong> All specifications, torque values, and part prices are for reference only. Always verify against factory service manuals before assembly. Part prices are approximate and may vary. EngineVault is not responsible for engine damage.</p>
           </div>
         </div>
       </div>
