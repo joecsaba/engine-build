@@ -1,7 +1,51 @@
 import { Link } from "wouter";
 import { Button } from "@/components/ui/button";
-import { Menu, Wrench } from "lucide-react";
+import { Menu, Wrench, LogIn, LogOut, User } from "lucide-react";
 import { Sheet, SheetContent, SheetTrigger } from "@/components/ui/sheet";
+import { useUser, useClerk } from "@clerk/react";
+
+function AuthButtons({ mobile = false }: { mobile?: boolean }) {
+  const { user, isLoaded } = useUser();
+  const { signOut } = useClerk();
+
+  if (!isLoaded) return null;
+
+  if (user) {
+    return (
+      <div className={`flex items-center gap-3 ${mobile ? "flex-col items-start" : ""}`}>
+        <div className="flex items-center gap-2 text-sm text-gray-300">
+          <User className="w-4 h-4 text-[#E85D04]" />
+          <span className="truncate max-w-[160px]">
+            {user.firstName ?? user.primaryEmailAddress?.emailAddress?.split("@")[0]}
+          </span>
+        </div>
+        <button
+          onClick={() => signOut()}
+          className="flex items-center gap-1 text-sm text-gray-400 hover:text-white transition-colors"
+        >
+          <LogOut className="w-4 h-4" />
+          <span>Sign Out</span>
+        </button>
+      </div>
+    );
+  }
+
+  return (
+    <div className={`flex items-center gap-2 ${mobile ? "flex-col items-start" : ""}`}>
+      <Link href="/sign-in">
+        <button className="flex items-center gap-1 text-sm text-gray-300 hover:text-white transition-colors">
+          <LogIn className="w-4 h-4" />
+          <span>Sign In</span>
+        </button>
+      </Link>
+      <Link href="/sign-up">
+        <Button size="sm" className="bg-white/10 hover:bg-white/20 text-white border border-white/20 text-xs">
+          Create Account
+        </Button>
+      </Link>
+    </div>
+  );
+}
 
 export function Navbar() {
   const links = [
@@ -31,6 +75,9 @@ export function Navbar() {
               Build Planner
             </Button>
           </Link>
+          <div className="border-l border-[#2a2a2a] pl-4">
+            <AuthButtons />
+          </div>
         </nav>
 
         {/* Mobile Nav */}
@@ -49,11 +96,12 @@ export function Navbar() {
                   </Link>
                 ))}
                 <div className="pt-4 mt-4 border-t border-[#2a2a2a]">
-                  <Link href="/build-sheets/planner" className="block w-full">
+                  <Link href="/build-sheets/planner" className="block w-full mb-4">
                     <Button className="w-full bg-primary hover:bg-primary/90 text-white">
                       Build Planner
                     </Button>
                   </Link>
+                  <AuthButtons mobile />
                 </div>
               </nav>
             </SheetContent>

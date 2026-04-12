@@ -1,6 +1,7 @@
 import { useState, useMemo } from "react";
 import { Link } from "wouter";
-import { ChevronDown, ShoppingCart, Printer, ArrowLeft, Info, Check } from "lucide-react";
+import { ChevronDown, ShoppingCart, Printer, ArrowLeft, Info, Check, BookOpen, X } from "lucide-react";
+import { useBuildContext } from "@/context/BuildContext";
 import { Button } from "@/components/ui/button";
 import { PageHeader } from "@/components/layout/PageHeader";
 import {
@@ -249,10 +250,14 @@ function ShoppingListModal({ platform, selections, total, onClose }: {
   );
 }
 
+const DIESEL_PLATFORM_IDS = new Set(["cummins12v", "cummins67", "ford73ps", "ford60ps", "ford67ps", "duramax66"]);
+
 export default function BuildPlanner() {
   const [selectedPlatformId, setSelectedPlatformId] = useState<string | null>(null);
   const [selections, setSelections] = useState<SelectionMap>({});
   const [showList, setShowList] = useState(false);
+  const { camRecommendation, clearCamRecommendation } = useBuildContext();
+  const isDiesel = selectedPlatformId ? DIESEL_PLATFORM_IDS.has(selectedPlatformId) : false;
 
   const platform = PLATFORMS.find(p => p.id === selectedPlatformId) ?? null;
 
@@ -307,8 +312,8 @@ export default function BuildPlanner() {
         {/* Platform Selection */}
         <div className="mb-10">
           <h2 className="text-lg font-bold mb-1">1. Select Engine Platform</h2>
-          <p className="text-sm text-gray-500 mb-4">Choose the engine you are building. More platforms coming soon.</p>
-          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-3">
+          <p className="text-sm text-gray-500 mb-4">Select a gas or diesel platform to start planning your build.</p>
+          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-5 gap-3">
             {PLATFORMS.map(p => (
               <PlatformCard
                 key={p.id}
@@ -347,6 +352,43 @@ export default function BuildPlanner() {
                 </Button>
               </div>
             </div>
+
+            {/* Cam recommendation banner (gas engines only) */}
+            {camRecommendation && !isDiesel && (
+              <div className="mb-6 p-4 rounded-lg border border-[#E85D04]/40 bg-[#E85D04]/5 flex items-start gap-3">
+                <BookOpen className="w-5 h-5 text-[#E85D04] shrink-0 mt-0.5" />
+                <div className="flex-1 min-w-0">
+                  <div className="text-sm font-semibold text-[#E85D04] mb-0.5">Cam Recommendation from Cam Guide</div>
+                  <div className="text-sm text-gray-700">
+                    <span className="font-medium">Duration:</span> {camRecommendation.durationRange} &nbsp;·&nbsp;
+                    <span className="font-medium">LSA:</span> {camRecommendation.lsaRange} &nbsp;·&nbsp;
+                    <span className="font-medium">Lift:</span> {camRecommendation.liftRange}
+                  </div>
+                  <div className="text-xs text-gray-500 mt-1">Use these specs to compare against camshafts in your parts selection below.</div>
+                </div>
+                <button onClick={clearCamRecommendation} className="text-gray-400 hover:text-gray-600 shrink-0">
+                  <X className="w-4 h-4" />
+                </button>
+              </div>
+            )}
+
+            {/* Cam guide prompt (gas engines only, no recommendation yet) */}
+            {!camRecommendation && !isDiesel && (
+              <div className="mb-6 p-3 rounded-lg border border-gray-200 bg-gray-50 flex items-center justify-between gap-3">
+                <div className="text-sm text-gray-500">
+                  Not sure which camshaft to run?{" "}
+                  <Link href="/cam-guide" className="text-[#E85D04] hover:underline font-medium">
+                    Use the Cam Guide to get a recommendation
+                  </Link>{" "}
+                  — then save it here.
+                </div>
+                <Link href="/cam-guide">
+                  <Button size="sm" variant="outline" className="shrink-0 flex items-center gap-1 text-xs">
+                    <BookOpen className="w-3 h-3" /> Cam Guide
+                  </Button>
+                </Link>
+              </div>
+            )}
 
             {/* Parts Categories */}
             <h2 className="text-lg font-bold mb-6">2. Select Components</h2>

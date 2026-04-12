@@ -46,8 +46,21 @@ See the `pnpm-workspace` skill for workspace structure, TypeScript setup, and pa
 - White — content area backgrounds
 - `PageHeader` component: `artifacts/enginevault/src/components/layout/PageHeader.tsx`
 
+### Authentication
+- Clerk auth integrated (provisioned via `setupClerkWhitelabelAuth`)
+- Server: `@clerk/express` clerkMiddleware in `app.ts`, proxy at `/__clerk`
+- Client: `ClerkProvider` in `App.tsx` wrapping `WouterRouter` content
+- Sign-in page: `/sign-in`, Sign-up page: `/sign-up`
+- Navbar shows "Sign In" / "Create Account" when logged out; user name + "Sign Out" when logged in
+
+### Cross-Tool State
+- `BuildContext` (`artifacts/enginevault/src/context/BuildContext.tsx`) — persists cam recommendation across pages via `localStorage` key `enginevault_build_v1`
+- Cam Guide Section 3 "Recommender" → "Save to Build Planner" button saves structured cam spec
+- Build Planner shows cam recommendation banner when one is saved (gas platforms only)
+
 ### Key Data Files
-- `artifacts/enginevault/src/data/buildParts.ts` — Build Planner parts catalog (LS1, LS3, SBC350, Ford 302)
+- `artifacts/enginevault/src/data/buildParts.ts` — Build Planner parts catalog (imports diesel from dieselParts.ts)
+- `artifacts/enginevault/src/data/dieselParts.ts` — Diesel platforms: Cummins 12V, Cummins 6.7L, Ford PS 7.3L, Ford PS 6.0L, Ford PS 6.7L, Duramax 6.6L
 - `lib/db/src/seed.ts` — Database seed
 - `lib/db/src/seed-ls-sbc.ts` — LS/SBC supplemental seed
 

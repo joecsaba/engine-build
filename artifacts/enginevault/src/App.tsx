@@ -1,9 +1,13 @@
-import { Switch, Route, Router as WouterRouter } from "wouter";
+import { Switch, Route, Router as WouterRouter, useLocation } from "wouter";
 import { QueryClient, QueryClientProvider } from "@tanstack/react-query";
 import { Toaster } from "@/components/ui/toaster";
 import { TooltipProvider } from "@/components/ui/tooltip";
 import { AppLayout } from "@/components/layout/AppLayout";
+import { ClerkProvider } from "@clerk/react";
+import { BuildContextProvider } from "@/context/BuildContext";
 import NotFound from "@/pages/not-found";
+import SignInPage from "@/pages/sign-in";
+import SignUpPage from "@/pages/sign-up";
 
 import Home from "@/pages/home";
 
@@ -37,6 +41,30 @@ const queryClient = new QueryClient({
   },
 });
 
+const basePath = import.meta.env.BASE_URL.replace(/\/$/, "");
+const clerkPubKey = import.meta.env.VITE_CLERK_PUBLISHABLE_KEY;
+const clerkProxyUrl = import.meta.env.VITE_CLERK_PROXY_URL;
+
+function stripBase(path: string): string {
+  return basePath && path.startsWith(basePath)
+    ? path.slice(basePath.length) || "/"
+    : path;
+}
+
+function ClerkProviderWithRouter({ children }: { children: React.ReactNode }) {
+  const [, setLocation] = useLocation();
+  return (
+    <ClerkProvider
+      publishableKey={clerkPubKey ?? ""}
+      proxyUrl={clerkProxyUrl}
+      routerPush={(to) => setLocation(stripBase(to))}
+      routerReplace={(to) => setLocation(stripBase(to), { replace: true })}
+    >
+      {children}
+    </ClerkProvider>
+  );
+}
+
 function Router() {
   return (
     <AppLayout>
@@ -64,6 +92,9 @@ function Router() {
         <Route path="/build-sheets/planner" component={BuildPlanner} />
         <Route path="/build-sheets/record" component={BuildSheet} />
 
+        <Route path="/sign-in/*?" component={SignInPage} />
+        <Route path="/sign-up/*?" component={SignUpPage} />
+
         <Route component={NotFound} />
       </Switch>
     </AppLayout>
@@ -74,8 +105,12 @@ function App() {
   return (
     <QueryClientProvider client={queryClient}>
       <TooltipProvider>
-        <WouterRouter base={import.meta.env.BASE_URL.replace(/\/$/, "")}>
-          <Router />
+        <WouterRouter base={basePath}>
+          <ClerkProviderWithRouter>
+            <BuildContextProvider>
+              <Router />
+            </BuildContextProvider>
+          </ClerkProviderWithRouter>
         </WouterRouter>
         <Toaster />
       </TooltipProvider>

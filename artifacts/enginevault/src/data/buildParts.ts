@@ -1,3 +1,12 @@
+import {
+  CUMMINS_12V_PLATFORM,
+  CUMMINS_67_PLATFORM,
+  FORD_73_PLATFORM,
+  FORD_60_PLATFORM,
+  FORD_67_PLATFORM,
+  DURAMAX_PLATFORM,
+} from "./dieselParts";
+
 export type PartTier = "budget" | "mid" | "premium" | "race";
 
 export type Part = {
@@ -767,11 +776,18 @@ export const FORD302_PLATFORM: EnginePlatform = {
   ],
 };
 
+
 export const PLATFORMS: EnginePlatform[] = [
   LS1_PLATFORM,
   LS3_PLATFORM,
   SBC350_PLATFORM,
   FORD302_PLATFORM,
+  CUMMINS_12V_PLATFORM,
+  CUMMINS_67_PLATFORM,
+  FORD_73_PLATFORM,
+  FORD_60_PLATFORM,
+  FORD_67_PLATFORM,
+  DURAMAX_PLATFORM,
 ];
 
 export const TIER_LABELS: Record<PartTier, string> = {

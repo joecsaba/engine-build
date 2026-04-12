@@ -1,10 +1,13 @@
 import { useState } from "react";
+import { Link } from "wouter";
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 import { Input } from "@/components/ui/input";
 import { Label } from "@/components/ui/label";
 import { Select, SelectContent, SelectItem, SelectTrigger, SelectValue } from "@/components/ui/select";
-import { Checkbox } from "@/components/ui/checkbox";
 import { PageHeader } from "@/components/layout/PageHeader";
+import { Check, ArrowRight } from "lucide-react";
+import { Button } from "@/components/ui/button";
+import { useBuildContext, type CamRecommendation } from "@/context/BuildContext";
 
 const mistakes = [
   { num: 1, title: "Choosing cam by LSA alone", desc: "LSA is just one factor. Duration, lift, and your specific combo all matter more." },
@@ -19,7 +22,12 @@ const mistakes = [
   { num: 10, title: "Assuming advertised specs are comparable between manufacturers", desc: "Advertised duration is measured at different checking clearances. Always compare at 0.050\" lift." },
 ];
 
-function calcRecommended(inputs: Record<string, string>): string | null {
+type CalcResult = {
+  text: string;
+  structured: CamRecommendation;
+};
+
+function calcRecommended(inputs: Record<string, string>): CalcResult | null {
   const disp = parseFloat(inputs.displacement);
   const cr = parseFloat(inputs.compressionRatio);
   const cfm = parseFloat(inputs.headFlow);
@@ -50,7 +58,7 @@ function calcRecommended(inputs: Record<string, string>): string | null {
 
   if (cfm > 250) { minDuration += 5; maxDuration += 5; liftRange = "0.520\"–0.580\""; }
 
-  return `Based on your combination, the recommended camshaft is approximately:
+  const text = `Based on your combination, the recommended camshaft is approximately:
 
 • Duration at 0.050": ${minDuration}°–${maxDuration}°
 • LSA: ${lsaMin}°–${lsaMax}°  
@@ -58,20 +66,43 @@ function calcRecommended(inputs: Record<string, string>): string | null {
 
 WHY THESE NUMBERS:
 ${rpmPeak > 5500 ? `• Your ${rpmPeak} RPM target requires the longer duration (${minDuration}–${maxDuration}°) to keep the valves open long enough to fill the cylinders at speed. ` : `• Your ${rpmPeak} RPM target favors shorter duration for better low-end torque and drivability. `}${cr > 10.5 ? `• Your ${cr}:1 compression ratio benefits from a slightly wider LSA (${lsaMin}°–${lsaMax}°) to reduce cylinder pressure at low RPM and prevent detonation on pump gas. ` : ""}${asp !== "na" ? `• Forced induction application calls for a wider LSA — boost already fills the cylinders, and more overlap bleeds pressure. Less duration is often better for boosted engines. ` : ""}${use === "daily" ? `• Daily driver use favors shorter duration and wider LSA for better idle quality, lower RPM torque, and drivability. ` : ""}${trans === "auto" && stall < 2500 ? `• With an automatic and low stall converter (<2500 RPM), keep duration modest — a big cam with a stock converter feels like driving in sand. ` : ""}`;
+
+  return {
+    text,
+    structured: {
+      durationRange: `${minDuration}°–${maxDuration}°`,
+      lsaRange: `${lsaMin}°–${lsaMax}°`,
+      liftRange,
+      summary: `${minDuration}°–${maxDuration}° dur · ${lsaMin}°–${lsaMax}° LSA · ${liftRange} lift`,
+      savedAt: Date.now(),
+    },
+  };
 }
 
 export default function CamGuide() {
+  const { saveCamRecommendation, camRecommendation, clearCamRecommendation } = useBuildContext();
   const [cam1, setCam1] = useState({ duration: "218", lsa: "112", lift: "0.520" });
   const [cam2, setCam2] = useState({ duration: "232", lsa: "108", lift: "0.580" });
   const [inputs, setInputs] = useState<Record<string, string>>({
     displacement: "", compressionRatio: "", headFlow: "", rpmIdle: "", rpmPeak: "",
     transmission: "manual", stall: "", weight: "", gear: "", aspiration: "na", use: "weekend"
   });
-  const [result, setResult] = useState<string | null>(null);
+  const [result, setResult] = useState<CalcResult | null>(null);
+  const [saved, setSaved] = useState(false);
 
   const setInput = (key: string, val: string) => setInputs(prev => ({ ...prev, [key]: val }));
 
-  const handleCalc = () => setResult(calcRecommended(inputs));
+  const handleCalc = () => {
+    const r = calcRecommended(inputs);
+    setResult(r);
+    setSaved(false);
+  };
+
+  const handleSaveToPlanner = () => {
+    if (!result) return;
+    saveCamRecommendation(result.structured);
+    setSaved(true);
+  };
 
   const dur1 = parseFloat(cam1.duration) || 0;
   const dur2 = parseFloat(cam2.duration) || 0;
@@ -87,6 +118,27 @@ export default function CamGuide() {
       />
 
       <div className="container mx-auto max-w-4xl px-4 py-10">
+
+      {/* Build Planner link banner */}
+      <div className="mb-8 p-4 rounded-lg border border-[#E85D04]/30 bg-[#E85D04]/5 flex items-center justify-between gap-4">
+        <div className="text-sm">
+          <span className="font-semibold text-[#E85D04]">Build Planner integration:</span>{" "}
+          {camRecommendation ? (
+            <span className="text-gray-700">
+              You have a saved cam recommendation ({camRecommendation.summary}).{" "}
+              <button onClick={clearCamRecommendation} className="text-gray-400 hover:text-gray-600 underline text-xs">Clear</button>
+            </span>
+          ) : (
+            <span className="text-gray-600">Use the recommender below and save your result to the Build Planner.</span>
+          )}
+        </div>
+        <Link href="/build-sheets/planner">
+          <Button size="sm" className="bg-[#E85D04] hover:bg-[#d04f00] text-white flex items-center gap-1 shrink-0">
+            Open Build Planner <ArrowRight className="w-3 h-3" />
+          </Button>
+        </Link>
+      </div>
+
       {/* Section 1: Understanding Cam Specs */}
       <section className="mb-12">
         <h2 className="text-2xl font-bold mb-6 pb-2 border-b">Section 1: Understanding Cam Specs</h2>
@@ -142,9 +194,9 @@ export default function CamGuide() {
         </Card>
       </section>
 
-      {/* Section 3: Cam Selection Checklist */}
+      {/* Section 3: Cam Recommender */}
       <section className="mb-12">
-        <h2 className="text-2xl font-bold mb-6 pb-2 border-b">Section 3: Cam Selection Checklist</h2>
+        <h2 className="text-2xl font-bold mb-6 pb-2 border-b">Section 3: Cam Selection Recommender</h2>
         <Card className="mb-6">
           <CardHeader><CardTitle>Your Combo</CardTitle></CardHeader>
           <CardContent className="grid grid-cols-1 sm:grid-cols-2 gap-4">
@@ -212,9 +264,32 @@ export default function CamGuide() {
 
         {result && (
           <Card className="bg-[#1a1a1a] text-white">
-            <CardHeader><CardTitle>Recommendation</CardTitle></CardHeader>
+            <CardHeader>
+              <CardTitle>Recommendation</CardTitle>
+            </CardHeader>
             <CardContent>
-              <pre className="whitespace-pre-wrap text-sm text-gray-200 font-sans leading-relaxed">{result}</pre>
+              <pre className="whitespace-pre-wrap text-sm text-gray-200 font-sans leading-relaxed mb-6">{result.text}</pre>
+              <div className="border-t border-[#2a2a2a] pt-4 flex flex-col sm:flex-row items-start sm:items-center gap-3">
+                <div className="flex-1 text-sm text-gray-400">
+                  Save this recommendation to your Build Planner so you can compare it against available camshafts.
+                </div>
+                {saved ? (
+                  <div className="flex items-center gap-2">
+                    <div className="flex items-center gap-2 text-green-400 text-sm font-medium">
+                      <Check className="w-4 h-4" /> Saved to Build Planner
+                    </div>
+                    <Link href="/build-sheets/planner">
+                      <Button size="sm" className="bg-[#E85D04] hover:bg-[#d04f00] text-white flex items-center gap-1">
+                        Open Planner <ArrowRight className="w-3 h-3" />
+                      </Button>
+                    </Link>
+                  </div>
+                ) : (
+                  <Button onClick={handleSaveToPlanner} className="bg-[#E85D04] hover:bg-[#d04f00] text-white shrink-0">
+                    Save to Build Planner
+                  </Button>
+                )}
+              </div>
             </CardContent>
           </Card>
         )}
