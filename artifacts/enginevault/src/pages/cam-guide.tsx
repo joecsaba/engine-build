@@ -126,8 +126,10 @@ ${rpmPeak > 5500 ? `• Your ${rpmPeak} RPM target requires the longer duration 
 
 export default function CamGuide() {
   const { saveCamRecommendation, camRecommendation, clearCamRecommendation } = useBuildContext();
-  const [cam1, setCam1] = useState({ duration: "218", lsa: "112", lift: "0.520" });
-  const [cam2, setCam2] = useState({ duration: "232", lsa: "108", lift: "0.580" });
+  const [cam1, setCam1] = useState({ duration: "218", lsa: "112", lift: "0.520", intDuration: "218", exhDuration: "224", intLift: "0.520", exhLift: "0.500" });
+  const [cam2, setCam2] = useState({ duration: "232", lsa: "108", lift: "0.580", intDuration: "232", exhDuration: "240", intLift: "0.580", exhLift: "0.560" });
+  const [dual1, setDual1] = useState(false);
+  const [dual2, setDual2] = useState(false);
   const [inputs, setInputs] = useState<Record<string, string>>({
     displacement: "", compressionRatio: "", headFlow: "", rpmIdle: "", rpmPeak: "",
     transmission: "manual", stall: "", weight: "", gear: "", aspiration: "na", use: "weekend"
@@ -158,10 +160,16 @@ export default function CamGuide() {
     setSaved(true);
   };
 
-  const dur1 = parseFloat(cam1.duration) || 0;
-  const dur2 = parseFloat(cam2.duration) || 0;
+  const intDur1 = parseFloat(dual1 ? cam1.intDuration : cam1.duration) || 0;
+  const exhDur1 = parseFloat(dual1 ? cam1.exhDuration : cam1.duration) || 0;
+  const intDur2 = parseFloat(dual2 ? cam2.intDuration : cam2.duration) || 0;
+  const exhDur2 = parseFloat(dual2 ? cam2.exhDuration : cam2.duration) || 0;
+  const dur1 = (intDur1 + exhDur1) / 2;
+  const dur2 = (intDur2 + exhDur2) / 2;
   const lsa1 = parseFloat(cam1.lsa) || 0;
   const lsa2 = parseFloat(cam2.lsa) || 0;
+  const maxLift1 = dual1 ? Math.max(parseFloat(cam1.intLift) || 0, parseFloat(cam1.exhLift) || 0) : parseFloat(cam1.lift) || 0;
+  const maxLift2 = dual2 ? Math.max(parseFloat(cam2.intLift) || 0, parseFloat(cam2.exhLift) || 0) : parseFloat(cam2.lift) || 0;
 
   return (
     <div>
@@ -217,22 +225,72 @@ export default function CamGuide() {
       <section className="mb-12">
         <h2 className="text-2xl font-bold mb-6 pb-2 border-b">Section 2: Cam Profile Comparison</h2>
         <div className="grid grid-cols-1 md:grid-cols-2 gap-6 mb-6">
-          {[{ label: "Cam A", data: cam1, set: setCam1 }, { label: "Cam B", data: cam2, set: setCam2 }].map(({ label, data, set }) => (
+          {([
+            { label: "Cam A", data: cam1, set: setCam1, dual: dual1, setDual: setDual1 },
+            { label: "Cam B", data: cam2, set: setCam2, dual: dual2, setDual: setDual2 },
+          ] as const).map(({ label, data, set, dual, setDual }) => (
             <Card key={label}>
-              <CardHeader><CardTitle>{label}</CardTitle></CardHeader>
+              <CardHeader>
+                <div className="flex items-center justify-between">
+                  <CardTitle>{label}</CardTitle>
+                  <label className="flex items-center gap-2 cursor-pointer select-none">
+                    <button
+                      onClick={() => setDual(!dual)}
+                      className={`relative w-9 h-5 rounded-full transition-colors shrink-0 ${dual ? "bg-[#E85D04]" : "bg-gray-300"}`}
+                    >
+                      <span className={`absolute top-0.5 w-4 h-4 rounded-full bg-white shadow transition-transform ${dual ? "left-[18px]" : "left-0.5"}`} />
+                    </button>
+                    <span className="text-xs text-muted-foreground">Dual Pattern</span>
+                  </label>
+                </div>
+              </CardHeader>
               <CardContent className="space-y-3">
-                <div className="space-y-1">
-                  <Label>Duration at 0.050" (degrees)</Label>
-                  <Input type="number" value={data.duration} onChange={e => set(p => ({ ...p, duration: e.target.value }))} />
-                </div>
-                <div className="space-y-1">
-                  <Label>LSA (degrees)</Label>
-                  <Input type="number" value={data.lsa} onChange={e => set(p => ({ ...p, lsa: e.target.value }))} />
-                </div>
-                <div className="space-y-1">
-                  <Label>Lift at valve (inches)</Label>
-                  <Input type="number" step="0.001" value={data.lift} onChange={e => set(p => ({ ...p, lift: e.target.value }))} />
-                </div>
+                {!dual ? (
+                  <>
+                    <div className="space-y-1">
+                      <Label>Duration at 0.050" (degrees)</Label>
+                      <Input type="number" value={data.duration} onChange={e => set(p => ({ ...p, duration: e.target.value }))} />
+                    </div>
+                    <div className="space-y-1">
+                      <Label>LSA (degrees)</Label>
+                      <Input type="number" value={data.lsa} onChange={e => set(p => ({ ...p, lsa: e.target.value }))} />
+                    </div>
+                    <div className="space-y-1">
+                      <Label>Lift at valve (inches)</Label>
+                      <Input type="number" step="0.001" value={data.lift} onChange={e => set(p => ({ ...p, lift: e.target.value }))} />
+                    </div>
+                  </>
+                ) : (
+                  <>
+                    <div className="grid grid-cols-2 gap-3">
+                      <div className="space-y-1">
+                        <Label className="text-[#E85D04] font-semibold text-xs uppercase tracking-wide">Intake Dur @0.050"</Label>
+                        <Input type="number" value={data.intDuration} onChange={e => set(p => ({ ...p, intDuration: e.target.value }))} />
+                      </div>
+                      <div className="space-y-1">
+                        <Label className="text-blue-600 font-semibold text-xs uppercase tracking-wide">Exhaust Dur @0.050"</Label>
+                        <Input type="number" value={data.exhDuration} onChange={e => set(p => ({ ...p, exhDuration: e.target.value }))} />
+                      </div>
+                    </div>
+                    <div className="space-y-1">
+                      <Label>LSA (degrees)</Label>
+                      <Input type="number" value={data.lsa} onChange={e => set(p => ({ ...p, lsa: e.target.value }))} />
+                    </div>
+                    <div className="grid grid-cols-2 gap-3">
+                      <div className="space-y-1">
+                        <Label className="text-[#E85D04] font-semibold text-xs uppercase tracking-wide">Intake Lift (in)</Label>
+                        <Input type="number" step="0.001" value={data.intLift} onChange={e => set(p => ({ ...p, intLift: e.target.value }))} />
+                      </div>
+                      <div className="space-y-1">
+                        <Label className="text-blue-600 font-semibold text-xs uppercase tracking-wide">Exhaust Lift (in)</Label>
+                        <Input type="number" step="0.001" value={data.exhLift} onChange={e => set(p => ({ ...p, exhLift: e.target.value }))} />
+                      </div>
+                    </div>
+                    <p className="text-xs text-muted-foreground pt-1 italic">
+                      Dual pattern: Int {data.intDuration}° / Exh {data.exhDuration}° · Int {data.intLift}" / Exh {data.exhLift}"
+                    </p>
+                  </>
+                )}
               </CardContent>
             </Card>
           ))}
@@ -259,11 +317,14 @@ export default function CamGuide() {
                 );
               })}
             </div>
-            <p className="text-xs text-gray-500 italic">Overlap = Duration@0.050 − (2 × LSA). Positive means both valves open simultaneously for that many crankshaft degrees.</p>
+            <p className="text-xs text-gray-500 italic">
+              {(dual1 || dual2) ? "Dual pattern: Overlap = (Int dur + Exh dur) ÷ 2 − (2 × LSA)." : "Overlap = Duration@0.050 − (2 × LSA)."}{" "}
+              Positive means both valves open simultaneously for that many crankshaft degrees.
+            </p>
             <div className="border-t pt-3 space-y-2">
               <p><strong>Duration:</strong> Cam B is {Math.abs(dur2 - dur1)}° {dur2 > dur1 ? "longer" : "shorter"}. {dur2 > dur1 ? "Cam B will need more RPM to make power and will idle rougher." : "Cam A will make more low-end torque and idle better."}</p>
               <p><strong>LSA:</strong> Cam {lsa1 < lsa2 ? "A" : "B"} has the tighter LSA ({Math.min(lsa1, lsa2)}°), giving it {Math.abs((dur1 - 2 * lsa1) - (dur2 - 2 * lsa2)).toFixed(0)}° more overlap — rougher idle, lower vacuum, narrower but potentially higher power peak.</p>
-              <p><strong>Lift:</strong> {parseFloat(cam2.lift) > parseFloat(cam1.lift) ? `Cam B has ${((parseFloat(cam2.lift) - parseFloat(cam1.lift)) * 1000).toFixed(0)} thou more lift. Verify valve springs can handle ${cam2.lift}" without coil bind.` : `Cam A has higher lift. Both require adequate spring rate and retainer-to-seal clearance check.`}</p>
+              <p><strong>Lift:</strong> {maxLift2 > maxLift1 ? `Cam B has ${((maxLift2 - maxLift1) * 1000).toFixed(0)} thou more lift. Verify valve springs can handle ${maxLift2.toFixed(3)}" without coil bind.` : maxLift1 > maxLift2 ? `Cam A has ${((maxLift1 - maxLift2) * 1000).toFixed(0)} thou more lift. Verify springs can handle ${maxLift1.toFixed(3)}" without coil bind.` : `Both cams have equal maximum lift (${maxLift1.toFixed(3)}"). Check retainer-to-seal clearance at full lift.`}</p>
             </div>
           </CardContent>
         </Card>
