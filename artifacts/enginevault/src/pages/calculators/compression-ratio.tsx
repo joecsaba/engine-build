@@ -34,7 +34,9 @@ export default function CompressionRatioCalculator() {
   const cylinderVol = (b / 2) ** 2 * Math.PI * s * 16.387064;
   const gasketVol = (gb / 2) ** 2 * Math.PI * gt * 16.387064;
   const deckVol = (b / 2) ** 2 * Math.PI * dh * 16.387064;
-  const totalClearance = cv + gasketVol + deckVol + pv;
+  // Dish volume (negative) adds to clearance → lowers CR
+  // Dome volume (positive) subtracts from clearance → raises CR
+  const totalClearance = cv + gasketVol + deckVol - pv;
   const staticCR = totalClearance > 0 ? (cylinderVol + totalClearance) / totalClearance : 0;
 
   const ivcFactor = 1 - (Math.cos((ivcDeg * Math.PI) / 180) + 1) / 2;
@@ -57,7 +59,7 @@ export default function CompressionRatioCalculator() {
               <Field label="Bore (inches)" value={bore} onChange={setBore} step="0.001" />
               <Field label="Stroke (inches)" value={stroke} onChange={setStroke} step="0.001" />
               <Field label="Head Chamber Volume (cc)" value={chamberVolume} onChange={setChamberVolume} step="0.1" />
-              <Field label="Piston Dish/Dome Volume (cc, negative=dish)" value={pistonVolume} onChange={setPistonVolume} step="0.1" />
+              <Field label="Piston Dish/Dome Volume (cc — dome = positive, dish = negative)" value={pistonVolume} onChange={setPistonVolume} step="0.1" />
               <Field label="Gasket Bore (inches)" value={gasketBore} onChange={setGasketBore} step="0.001" />
               <Field label="Gasket Thickness (inches)" value={gasketThick} onChange={setGasketThick} step="0.001" />
               <Field label="Deck Height (inches, positive=piston below deck)" value={deckHeight} onChange={setDeckHeight} step="0.001" />

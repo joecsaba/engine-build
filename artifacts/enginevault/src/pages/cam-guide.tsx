@@ -5,9 +5,50 @@ import { Input } from "@/components/ui/input";
 import { Label } from "@/components/ui/label";
 import { Select, SelectContent, SelectItem, SelectTrigger, SelectValue } from "@/components/ui/select";
 import { PageHeader } from "@/components/layout/PageHeader";
-import { Check, ArrowRight } from "lucide-react";
+import { Check, ArrowRight, AlertTriangle, CheckCircle2 } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { useBuildContext, type CamRecommendation } from "@/context/BuildContext";
+
+type CamTypeKey = "hydraulic_flat" | "hydraulic_roller" | "solid_flat" | "solid_roller";
+
+const CAM_SPRING_SPECS: Record<CamTypeKey, {
+  name: string;
+  minSeat: number;
+  maxSeat: number;
+  rpmFactor: number;
+  baseOpen: number;
+  springType: string;
+  note: string;
+}> = {
+  hydraulic_flat: {
+    name: "Hydraulic Flat Tappet",
+    minSeat: 90, maxSeat: 120,
+    rpmFactor: 0.038, baseOpen: 240,
+    springType: "Single with damper",
+    note: "Flat tappet lobe is limited by lobe radius. High seat pressure can cause premature lobe wear. Keep seat load in the 90–120 lb range and use a ZDDP-fortified oil.",
+  },
+  hydraulic_roller: {
+    name: "Hydraulic Roller",
+    minSeat: 110, maxSeat: 145,
+    rpmFactor: 0.045, baseOpen: 280,
+    springType: "Dual-wound (over 0.540\" lift)",
+    note: "Most common performance street cam. Open pressure requirement climbs with RPM. Above 0.560\" lift a quality dual spring is strongly recommended.",
+  },
+  solid_flat: {
+    name: "Solid Flat Tappet",
+    minSeat: 130, maxSeat: 165,
+    rpmFactor: 0.055, baseOpen: 340,
+    springType: "Dual-wound",
+    note: "No hydraulic preload — the spring must control lash ramp precisely. Higher seat pressure prevents lash chatter and float on the closing ramp at rpm.",
+  },
+  solid_roller: {
+    name: "Solid Roller",
+    minSeat: 160, maxSeat: 220,
+    rpmFactor: 0.070, baseOpen: 480,
+    springType: "Dual or triple with Ti retainers",
+    note: "Aggressive lobe profiles demand the most from valve springs. Inadequate open pressure on a solid roller will cause valve float that destroys the engine at high RPM.",
+  },
+};
 
 const mistakes = [
   { num: 1, title: "Choosing cam by LSA alone", desc: "LSA is just one factor. Duration, lift, and your specific combo all matter more." },
@@ -58,11 +99,15 @@ function calcRecommended(inputs: Record<string, string>): CalcResult | null {
 
   if (cfm > 250) { minDuration += 5; maxDuration += 5; liftRange = "0.520\"–0.580\""; }
 
+  const overlapMin = minDuration - 2 * lsaMax;
+  const overlapMax = maxDuration - 2 * lsaMin;
+
   const text = `Based on your combination, the recommended camshaft is approximately:
 
 • Duration at 0.050": ${minDuration}°–${maxDuration}°
 • LSA: ${lsaMin}°–${lsaMax}°  
 • Valve Lift: ${liftRange}
+• Estimated Overlap: ${overlapMin}°–${overlapMax}°
 
 WHY THESE NUMBERS:
 ${rpmPeak > 5500 ? `• Your ${rpmPeak} RPM target requires the longer duration (${minDuration}–${maxDuration}°) to keep the valves open long enough to fill the cylinders at speed. ` : `• Your ${rpmPeak} RPM target favors shorter duration for better low-end torque and drivability. `}${cr > 10.5 ? `• Your ${cr}:1 compression ratio benefits from a slightly wider LSA (${lsaMin}°–${lsaMax}°) to reduce cylinder pressure at low RPM and prevent detonation on pump gas. ` : ""}${asp !== "na" ? `• Forced induction application calls for a wider LSA — boost already fills the cylinders, and more overlap bleeds pressure. Less duration is often better for boosted engines. ` : ""}${use === "daily" ? `• Daily driver use favors shorter duration and wider LSA for better idle quality, lower RPM torque, and drivability. ` : ""}${trans === "auto" && stall < 2500 ? `• With an automatic and low stall converter (<2500 RPM), keep duration modest — a big cam with a stock converter feels like driving in sand. ` : ""}`;
@@ -73,7 +118,7 @@ ${rpmPeak > 5500 ? `• Your ${rpmPeak} RPM target requires the longer duration 
       durationRange: `${minDuration}°–${maxDuration}°`,
       lsaRange: `${lsaMin}°–${lsaMax}°`,
       liftRange,
-      summary: `${minDuration}°–${maxDuration}° dur · ${lsaMin}°–${lsaMax}° LSA · ${liftRange} lift`,
+      summary: `${minDuration}°–${maxDuration}° dur · ${lsaMin}°–${lsaMax}° LSA · ${liftRange} lift · ~${overlapMin}–${overlapMax}° overlap`,
       savedAt: Date.now(),
     },
   };
@@ -89,6 +134,15 @@ export default function CamGuide() {
   });
   const [result, setResult] = useState<CalcResult | null>(null);
   const [saved, setSaved] = useState(false);
+
+  // Valve spring calculator state
+  const [springCamType, setSpringCamType] = useState<CamTypeKey>("hydraulic_roller");
+  const [springRpm, setSpringRpm] = useState("6500");
+  const [springLift, setSpringLift] = useState("");
+  const [showSpringValidation, setShowSpringValidation] = useState(false);
+  const [springValidation, setSpringValidation] = useState({
+    installedHeight: "", seatPressure: "", springRate: "", coilBindHeight: "",
+  });
 
   const setInput = (key: string, val: string) => setInputs(prev => ({ ...prev, [key]: val }));
 
@@ -186,10 +240,31 @@ export default function CamGuide() {
 
         <Card>
           <CardHeader><CardTitle>Comparison Analysis</CardTitle></CardHeader>
-          <CardContent className="text-sm space-y-2">
-            <p><strong>Duration difference:</strong> Cam B is {Math.abs(dur2 - dur1)}° {dur2 > dur1 ? "longer" : "shorter"}. {dur2 > dur1 ? "Cam B will need more RPM to make power. It will idle rougher and likely need a higher stall converter if using an automatic." : "Cam A will make more low-end torque and idle better, while Cam B peaks higher in the RPM range."}</p>
-            <p><strong>LSA difference:</strong> Cam {lsa1 < lsa2 ? "A" : "B"} has the tighter LSA ({Math.min(lsa1, lsa2)}°). The tighter-LSA cam will have {Math.abs(lsa2 - lsa1) * 2}° more overlap, resulting in a rougher idle, lower engine vacuum, and a narrower (but potentially higher) power peak.</p>
-            <p><strong>Lift difference:</strong> {parseFloat(cam2.lift) > parseFloat(cam1.lift) ? `Cam B has ${((parseFloat(cam2.lift) - parseFloat(cam1.lift)) * 1000).toFixed(0)} thou more lift. Verify your valve springs can handle ${cam2.lift}" lift without coil bind.` : `Cam A has higher lift. Both require adequate spring rate and geometry check.`}</p>
+          <CardContent className="text-sm space-y-3">
+            {/* Overlap display */}
+            <div className="grid grid-cols-2 gap-3 mb-2">
+              {[
+                { label: "Cam A Overlap", dur: dur1, lsa: lsa1 },
+                { label: "Cam B Overlap", dur: dur2, lsa: lsa2 },
+              ].map(({ label, dur, lsa }) => {
+                const ov = dur - 2 * lsa;
+                const color = ov > 50 ? "text-red-600" : ov > 25 ? "text-orange-600" : ov > 0 ? "text-green-700" : "text-blue-600";
+                const note = ov > 50 ? "Race level" : ov > 25 ? "Performance" : ov > 0 ? "Street perf" : "Neg. overlap";
+                return (
+                  <div key={label} className="p-3 rounded-lg bg-gray-50 border text-center">
+                    <div className="text-xs text-gray-500 mb-1">{label}</div>
+                    <div className={`text-2xl font-bold ${color}`}>{ov > 0 ? `${ov.toFixed(0)}°` : `${ov.toFixed(0)}°`}</div>
+                    <div className="text-xs text-gray-500 mt-0.5">{note}</div>
+                  </div>
+                );
+              })}
+            </div>
+            <p className="text-xs text-gray-500 italic">Overlap = Duration@0.050 − (2 × LSA). Positive means both valves open simultaneously for that many crankshaft degrees.</p>
+            <div className="border-t pt-3 space-y-2">
+              <p><strong>Duration:</strong> Cam B is {Math.abs(dur2 - dur1)}° {dur2 > dur1 ? "longer" : "shorter"}. {dur2 > dur1 ? "Cam B will need more RPM to make power and will idle rougher." : "Cam A will make more low-end torque and idle better."}</p>
+              <p><strong>LSA:</strong> Cam {lsa1 < lsa2 ? "A" : "B"} has the tighter LSA ({Math.min(lsa1, lsa2)}°), giving it {Math.abs((dur1 - 2 * lsa1) - (dur2 - 2 * lsa2)).toFixed(0)}° more overlap — rougher idle, lower vacuum, narrower but potentially higher power peak.</p>
+              <p><strong>Lift:</strong> {parseFloat(cam2.lift) > parseFloat(cam1.lift) ? `Cam B has ${((parseFloat(cam2.lift) - parseFloat(cam1.lift)) * 1000).toFixed(0)} thou more lift. Verify valve springs can handle ${cam2.lift}" without coil bind.` : `Cam A has higher lift. Both require adequate spring rate and retainer-to-seal clearance check.`}</p>
+            </div>
           </CardContent>
         </Card>
       </section>
@@ -295,9 +370,230 @@ export default function CamGuide() {
         )}
       </section>
 
-      {/* Section 4: Common Mistakes */}
+      {/* Section 4: Valve Spring Requirements */}
       <section className="mb-12">
-        <h2 className="text-2xl font-bold mb-6 pb-2 border-b">Section 4: Top 10 Cam Selection Mistakes</h2>
+        <h2 className="text-2xl font-bold mb-6 pb-2 border-b">Section 4: Valve Spring Requirements</h2>
+        <p className="text-sm text-muted-foreground mb-6">
+          The cam dictates how hard the valve spring must work. Inadequate spring pressure causes valve float — the valve can't follow the closing ramp and bounces. At worst, it contacts the piston. Use this tool to find the minimum spring requirements for your cam and verify that your chosen spring has the right specs.
+        </p>
+
+        {(() => {
+          const spec = CAM_SPRING_SPECS[springCamType];
+          const rpm = parseFloat(springRpm) || 0;
+          const lift = parseFloat(springLift) || 0;
+          const minOpenReq = Math.max(spec.baseOpen, rpm * spec.rpmFactor);
+
+          const svInst = parseFloat(springValidation.installedHeight);
+          const svSeat = parseFloat(springValidation.seatPressure);
+          const svRate = parseFloat(springValidation.springRate);
+          const svCBH = parseFloat(springValidation.coilBindHeight);
+
+          const hasValidationInputs = svInst > 0 && svSeat > 0 && svRate > 0;
+          const calcOpenPressure = hasValidationInputs ? svSeat + (lift * svRate) : null;
+          const coilBindClear = (svInst > 0 && lift > 0 && svCBH > 0) ? svInst - lift - svCBH : null;
+
+          const openPressureOk = calcOpenPressure !== null ? calcOpenPressure >= minOpenReq : null;
+          const coilBindOk = coilBindClear !== null ? coilBindClear >= 0.060 : null;
+          const seatPressureOk = svSeat > 0 ? (svSeat >= spec.minSeat && svSeat <= spec.maxSeat + 20) : null;
+
+          return (
+            <>
+              <div className="grid grid-cols-1 md:grid-cols-2 gap-6 mb-6">
+                <Card>
+                  <CardHeader><CardTitle>Your Cam Setup</CardTitle></CardHeader>
+                  <CardContent className="space-y-4">
+                    <div className="space-y-1">
+                      <Label>Cam Type</Label>
+                      <Select value={springCamType} onValueChange={v => setSpringCamType(v as CamTypeKey)}>
+                        <SelectTrigger><SelectValue /></SelectTrigger>
+                        <SelectContent>
+                          <SelectItem value="hydraulic_flat">Hydraulic Flat Tappet</SelectItem>
+                          <SelectItem value="hydraulic_roller">Hydraulic Roller</SelectItem>
+                          <SelectItem value="solid_flat">Solid Flat Tappet</SelectItem>
+                          <SelectItem value="solid_roller">Solid Roller</SelectItem>
+                        </SelectContent>
+                      </Select>
+                    </div>
+                    <div className="space-y-1">
+                      <Label>Max RPM</Label>
+                      <Input type="number" step="100" placeholder="e.g. 6500" value={springRpm} onChange={e => setSpringRpm(e.target.value)} />
+                    </div>
+                    <div className="space-y-1">
+                      <Label>Valve Lift (inches)</Label>
+                      <Input type="number" step="0.001" placeholder="e.g. 0.540" value={springLift} onChange={e => setSpringLift(e.target.value)} />
+                      {result && !springLift && (
+                        <p className="text-xs text-[#E85D04]">
+                          Tip: Your recommender result has lift {result.structured.liftRange} — use the mid-point.
+                        </p>
+                      )}
+                    </div>
+                  </CardContent>
+                </Card>
+
+                <Card className="bg-[#1a1a1a] text-white">
+                  <CardHeader><CardTitle>Required Spring Specs</CardTitle></CardHeader>
+                  <CardContent className="space-y-4">
+                    <div>
+                      <div className="text-xs text-gray-400 mb-1">Cam Type</div>
+                      <div className="text-lg font-bold text-[#E85D04]">{spec.name}</div>
+                    </div>
+                    <div className="grid grid-cols-2 gap-4">
+                      <div>
+                        <div className="text-xs text-gray-400">Seat Pressure</div>
+                        <div className="text-2xl font-bold text-white">{spec.minSeat}–{spec.maxSeat} lb</div>
+                        <div className="text-xs text-gray-400">at installed height</div>
+                      </div>
+                      <div>
+                        <div className="text-xs text-gray-400">Min Open Pressure</div>
+                        <div className="text-2xl font-bold text-[#E85D04]">
+                          {rpm > 0 ? `${Math.round(minOpenReq)} lb` : "—"}
+                        </div>
+                        <div className="text-xs text-gray-400">at full lift{rpm > 0 ? ` @ ${rpm.toLocaleString()} RPM` : ""}</div>
+                      </div>
+                    </div>
+                    <div className="border-t border-white/10 pt-3">
+                      <div className="text-xs text-gray-400 mb-1">Recommended Spring Type</div>
+                      <div className="text-sm font-medium">{spec.springType}</div>
+                    </div>
+                  </CardContent>
+                </Card>
+              </div>
+
+              <div className="p-4 bg-amber-50 border border-amber-200 rounded-lg text-sm text-amber-800 mb-6">
+                <strong>Note:</strong> {spec.note}
+              </div>
+
+              {/* Coil Bind / Open Pressure Explainer */}
+              <Card className="mb-6">
+                <CardHeader><CardTitle>Understanding the Limits</CardTitle></CardHeader>
+                <CardContent className="grid grid-cols-1 sm:grid-cols-3 gap-4 text-sm">
+                  <div className="p-3 rounded-lg bg-gray-50 border">
+                    <div className="font-bold mb-1 text-[#E85D04]">Seat Pressure</div>
+                    <p className="text-muted-foreground text-xs">Force keeping the valve closed at rest. Too low = valve bounces open at idle. Too high = premature lobe wear (flat tappet) or excessive valvetrain load.</p>
+                  </div>
+                  <div className="p-3 rounded-lg bg-gray-50 border">
+                    <div className="font-bold mb-1 text-[#E85D04]">Open Pressure</div>
+                    <p className="text-muted-foreground text-xs">Force at full valve lift = Seat pressure + (Lift × Spring rate). Must be high enough to decelerate the valve on the closing ramp and prevent float at max RPM.</p>
+                  </div>
+                  <div className="p-3 rounded-lg bg-gray-50 border">
+                    <div className="font-bold mb-1 text-[#E85D04]">Coil Bind Clearance</div>
+                    <p className="text-muted-foreground text-xs">Gap between coils at full lift = Installed height − Valve lift − Coil bind height. Minimum 0.060" required. Coil bind at full lift destroys the engine immediately.</p>
+                  </div>
+                </CardContent>
+              </Card>
+
+              {/* Spring Validation Tool */}
+              <Card>
+                <CardHeader>
+                  <div className="flex items-center justify-between">
+                    <CardTitle>Validate Your Spring</CardTitle>
+                    <button
+                      onClick={() => setShowSpringValidation(!showSpringValidation)}
+                      className="text-sm text-[#E85D04] hover:underline"
+                    >
+                      {showSpringValidation ? "Hide" : "Enter spring specs →"}
+                    </button>
+                  </div>
+                </CardHeader>
+                {showSpringValidation && (
+                  <CardContent className="space-y-4">
+                    <p className="text-sm text-muted-foreground">Enter your spring's specs to check if they meet the requirements above.</p>
+                    <div className="grid grid-cols-2 gap-4">
+                      <div className="space-y-1">
+                        <Label>Installed Height (inches)</Label>
+                        <Input type="number" step="0.001" placeholder="e.g. 1.800"
+                          value={springValidation.installedHeight}
+                          onChange={e => setSpringValidation(p => ({ ...p, installedHeight: e.target.value }))} />
+                        <p className="text-xs text-muted-foreground">Spring length from seat to retainer at zero lift</p>
+                      </div>
+                      <div className="space-y-1">
+                        <Label>Seat Pressure (lb)</Label>
+                        <Input type="number" step="1" placeholder="e.g. 130"
+                          value={springValidation.seatPressure}
+                          onChange={e => setSpringValidation(p => ({ ...p, seatPressure: e.target.value }))} />
+                        <p className="text-xs text-muted-foreground">Spring load at installed height (from spring card)</p>
+                      </div>
+                      <div className="space-y-1">
+                        <Label>Spring Rate (lb/inch)</Label>
+                        <Input type="number" step="1" placeholder="e.g. 380"
+                          value={springValidation.springRate}
+                          onChange={e => setSpringValidation(p => ({ ...p, springRate: e.target.value }))} />
+                        <p className="text-xs text-muted-foreground">lb of force per inch of compression</p>
+                      </div>
+                      <div className="space-y-1">
+                        <Label>Coil Bind Height (inches)</Label>
+                        <Input type="number" step="0.001" placeholder="e.g. 1.150"
+                          value={springValidation.coilBindHeight}
+                          onChange={e => setSpringValidation(p => ({ ...p, coilBindHeight: e.target.value }))} />
+                        <p className="text-xs text-muted-foreground">Spring length when fully compressed (all coils touching)</p>
+                      </div>
+                    </div>
+
+                    {hasValidationInputs && lift > 0 && (
+                      <div className="mt-4 space-y-3 border-t pt-4">
+                        <h4 className="font-bold">Validation Results</h4>
+
+                        {/* Open pressure check */}
+                        <div className={`flex items-start gap-3 p-3 rounded-lg border ${openPressureOk ? "bg-green-50 border-green-200" : "bg-red-50 border-red-200"}`}>
+                          {openPressureOk
+                            ? <CheckCircle2 className="w-5 h-5 text-green-600 shrink-0 mt-0.5" />
+                            : <AlertTriangle className="w-5 h-5 text-red-600 shrink-0 mt-0.5" />
+                          }
+                          <div>
+                            <div className={`font-semibold text-sm ${openPressureOk ? "text-green-800" : "text-red-800"}`}>
+                              Open Pressure: {calcOpenPressure?.toFixed(0)} lb {openPressureOk ? "✓ Adequate" : `✗ Too low (need ≥ ${Math.round(minOpenReq)} lb)`}
+                            </div>
+                            <div className="text-xs text-gray-600 mt-0.5">
+                              {svSeat} lb seat + ({lift}" × {svRate} lb/in) = {calcOpenPressure?.toFixed(0)} lb open
+                            </div>
+                          </div>
+                        </div>
+
+                        {/* Seat pressure check */}
+                        {svSeat > 0 && (
+                          <div className={`flex items-start gap-3 p-3 rounded-lg border ${seatPressureOk ? "bg-green-50 border-green-200" : "bg-yellow-50 border-yellow-200"}`}>
+                            {seatPressureOk
+                              ? <CheckCircle2 className="w-5 h-5 text-green-600 shrink-0 mt-0.5" />
+                              : <AlertTriangle className="w-5 h-5 text-yellow-600 shrink-0 mt-0.5" />
+                            }
+                            <div>
+                              <div className={`font-semibold text-sm ${seatPressureOk ? "text-green-800" : "text-yellow-800"}`}>
+                                Seat Pressure: {svSeat} lb {seatPressureOk ? `✓ In range (${spec.minSeat}–${spec.maxSeat} lb)` : `⚠ Outside typical range (${spec.minSeat}–${spec.maxSeat} lb)`}
+                              </div>
+                            </div>
+                          </div>
+                        )}
+
+                        {/* Coil bind check */}
+                        {coilBindClear !== null && (
+                          <div className={`flex items-start gap-3 p-3 rounded-lg border ${coilBindOk ? "bg-green-50 border-green-200" : "bg-red-50 border-red-200"}`}>
+                            {coilBindOk
+                              ? <CheckCircle2 className="w-5 h-5 text-green-600 shrink-0 mt-0.5" />
+                              : <AlertTriangle className="w-5 h-5 text-red-600 shrink-0 mt-0.5" />
+                            }
+                            <div>
+                              <div className={`font-semibold text-sm ${coilBindOk ? "text-green-800" : "text-red-800"}`}>
+                                Coil Bind Clearance: {coilBindClear.toFixed(3)}" {coilBindOk ? "✓ Safe (≥ 0.060\")" : "✗ DANGER — coil bind at full lift!"}
+                              </div>
+                              <div className="text-xs text-gray-600 mt-0.5">
+                                {svInst}" installed − {lift}" lift − {svCBH}" coil bind = {coilBindClear.toFixed(3)}"
+                              </div>
+                            </div>
+                          </div>
+                        )}
+                      </div>
+                    )}
+                  </CardContent>
+                )}
+              </Card>
+            </>
+          );
+        })()}
+      </section>
+
+      {/* Section 5: Common Mistakes */}
+      <section className="mb-12">
+        <h2 className="text-2xl font-bold mb-6 pb-2 border-b">Section 5: Top 10 Cam Selection Mistakes</h2>
         <div className="space-y-3">
           {mistakes.map(m => (
             <div key={m.num} className="flex gap-4 p-4 rounded-lg border bg-card">
@@ -313,7 +609,7 @@ export default function CamGuide() {
 
       {/* Section 5: Flat Tappet vs Roller */}
       <section className="mb-12">
-        <h2 className="text-2xl font-bold mb-6 pb-2 border-b">Section 5: Flat Tappet vs. Roller Cam</h2>
+        <h2 className="text-2xl font-bold mb-6 pb-2 border-b">Section 6: Flat Tappet vs. Roller Cam</h2>
         <div className="overflow-x-auto">
           <table className="w-full text-sm border-collapse">
             <thead>

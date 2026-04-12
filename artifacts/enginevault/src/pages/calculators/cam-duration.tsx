@@ -22,6 +22,7 @@ export default function CamDurationCalculator() {
   const liftAtLobe = lav / rr;
   const grossLift = liftAtLobe * rr;
   const lsaEstimate = (adv - d050) / 2 + 110;
+  const overlapEstimate = d050 - 2 * lsaEstimate;
 
   return (
     <div className="container mx-auto py-8 px-4 max-w-5xl">
@@ -67,6 +68,11 @@ export default function CamDurationCalculator() {
               <ResultRow label="Lobe Lift" value={`${liftAtLobe.toFixed(4)}"`} />
               <ResultRow label="Gross Valve Lift" value={`${grossLift.toFixed(4)}"`} />
               <ResultRow label="Est. LSA" value={`~${lsaEstimate.toFixed(0)}°`} />
+              <ResultRow
+                label={`Est. Overlap @ 0.050"`}
+                value={overlapEstimate >= 0 ? `~${overlapEstimate.toFixed(0)}°` : `${overlapEstimate.toFixed(0)}° (neg. overlap)`}
+                highlight={overlapEstimate > 0}
+              />
             </CardContent>
           </Card>
 
@@ -85,11 +91,11 @@ export default function CamDurationCalculator() {
   );
 }
 
-function ResultRow({ label, value }: { label: string; value: string }) {
+function ResultRow({ label, value, highlight }: { label: string; value: string; highlight?: boolean }) {
   return (
     <div className="flex justify-between items-center border-b border-white/10 pb-2">
       <span className="text-gray-400 text-sm">{label}</span>
-      <span className="font-bold text-primary">{value}</span>
+      <span className={`font-bold ${highlight ? "text-[#E85D04]" : "text-primary"}`}>{value}</span>
     </div>
   );
 }
