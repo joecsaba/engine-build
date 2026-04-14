@@ -21,7 +21,6 @@ const calculators = [
   { title: "Cam Duration", href: "/calculators/cam-duration", desc: "Advertised to .050\" conversion + overlap" },
   { title: "Rod Ratio", href: "/calculators/rod-ratio", desc: "Stroke to rod length math" },
   { title: "HP / Torque", href: "/calculators/hp-torque", desc: "Power and torque conversion" },
-  { title: "Build Cost", href: "/calculators/build-cost", desc: "Rough cost estimate for a build" },
   { title: "Piston Speed", href: "/calculators/piston-speed", desc: "Mean and peak piston velocity" },
 ];
 

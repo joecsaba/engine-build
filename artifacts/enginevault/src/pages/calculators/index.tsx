@@ -40,12 +40,6 @@ const calculators = [
     tags: ["HP", "Torque", "RPM"],
   },
   {
-    title: "Build Cost Estimator",
-    href: "/calculators/build-cost",
-    desc: "Itemized cost estimate for rebuilding any popular engine platform. Customize by build level and starting condition.",
-    tags: ["LS", "SBC", "Ford", "Budget"],
-  },
-  {
     title: "Piston Speed",
     href: "/calculators/piston-speed",
     desc: "Mean and peak piston speed with color-coded safety zones. Reference table of common engine redlines.",

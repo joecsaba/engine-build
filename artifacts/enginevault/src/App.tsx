@@ -19,7 +19,6 @@ import RingGapCalculator from "@/pages/calculators/ring-gap";
 import CamDurationCalculator from "@/pages/calculators/cam-duration";
 import RodRatioCalculator from "@/pages/calculators/rod-ratio";
 import HpTorqueCalculator from "@/pages/calculators/hp-torque";
-import BuildCostCalculator from "@/pages/calculators/build-cost";
 import PistonSpeedCalculator from "@/pages/calculators/piston-speed";
 
 import CamGuide from "@/pages/cam-guide";
@@ -78,7 +77,6 @@ function Router() {
         <Route path="/calculators/cam-duration" component={CamDurationCalculator} />
         <Route path="/calculators/rod-ratio" component={RodRatioCalculator} />
         <Route path="/calculators/hp-torque" component={HpTorqueCalculator} />
-        <Route path="/calculators/build-cost" component={BuildCostCalculator} />
         <Route path="/calculators/piston-speed" component={PistonSpeedCalculator} />
 
         <Route path="/cam-guide" component={CamGuide} />
