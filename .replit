@@ -30,3 +30,8 @@ externalPort = 80
 [[ports]]
 localPort = 8082
 externalPort = 3002
+
+[userenv]
+
+[userenv.shared]
+FEEDBACK_EMAIL = "joe@engine-build.com"
