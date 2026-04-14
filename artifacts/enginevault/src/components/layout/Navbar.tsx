@@ -49,7 +49,7 @@ function AuthButtons({ mobile = false }: { mobile?: boolean }) {
 
 export function Navbar() {
   const links = [
-    { href: "/specs", label: "Specs" },
+    { href: "/specs", label: "Torque Specs" },
     { href: "/calculators", label: "Calculators" },
     { href: "/cam-guide", label: "Cam Guide" },
     { href: "/build-sheets", label: "Build Sheets" },
@@ -59,8 +59,8 @@ export function Navbar() {
     <header className="sticky top-0 z-50 w-full bg-[#1a1a1a] text-white border-b border-[#2a2a2a]">
       <div className="container mx-auto px-4 h-16 flex items-center justify-between">
         <Link href="/" className="flex items-center gap-2 text-xl font-bold tracking-tight text-white hover:text-white/90">
-          <Wrench className="w-6 h-6 text-primary" />
-          <span>Engine<span className="text-primary">Vault</span></span>
+          <Wrench className="w-6 h-6 text-[#E85D04]" />
+          <span>Engine-<span className="text-[#E85D04]">build</span>.com</span>
         </Link>
 
         {/* Desktop Nav */}
@@ -70,11 +70,6 @@ export function Navbar() {
               {link.label}
             </Link>
           ))}
-          <Link href="/build-sheets/planner">
-            <Button className="bg-primary hover:bg-primary/90 text-white font-semibold">
-              Build Planner
-            </Button>
-          </Link>
           <div className="border-l border-[#2a2a2a] pl-4">
             <AuthButtons />
           </div>
@@ -96,11 +91,6 @@ export function Navbar() {
                   </Link>
                 ))}
                 <div className="pt-4 mt-4 border-t border-[#2a2a2a]">
-                  <Link href="/build-sheets/planner" className="block w-full mb-4">
-                    <Button className="w-full bg-primary hover:bg-primary/90 text-white">
-                      Build Planner
-                    </Button>
-                  </Link>
                   <AuthButtons mobile />
                 </div>
               </nav>

@@ -8,12 +8,9 @@ import { BuildContextProvider } from "@/context/BuildContext";
 import NotFound from "@/pages/not-found";
 import SignInPage from "@/pages/sign-in";
 import SignUpPage from "@/pages/sign-up";
+import ComingSoon from "@/pages/coming-soon";
 
 import Home from "@/pages/home";
-
-import SpecsIndex from "@/pages/specs/index";
-import EngineFamily from "@/pages/specs/family";
-import EngineDetail from "@/pages/specs/engine";
 
 import CalculatorsIndex from "@/pages/calculators/index";
 import DisplacementCalculator from "@/pages/calculators/displacement";
@@ -26,11 +23,6 @@ import BuildCostCalculator from "@/pages/calculators/build-cost";
 import PistonSpeedCalculator from "@/pages/calculators/piston-speed";
 
 import CamGuide from "@/pages/cam-guide";
-import TorqueSpecs from "@/pages/torque-specs";
-
-import BuildSheetsIndex from "@/pages/build-sheets/index";
-import BuildPlanner from "@/pages/build-sheets/planner";
-import BuildSheet from "@/pages/shop-tools/build-sheet";
 
 const queryClient = new QueryClient({
   defaultOptions: {
@@ -71,10 +63,14 @@ function Router() {
       <Switch>
         <Route path="/" component={Home} />
 
-        <Route path="/specs" component={SpecsIndex} />
-        <Route path="/specs/:slug" component={EngineFamily} />
-        <Route path="/specs/:slug/:id" component={EngineDetail} />
+        {/* Coming Soon sections */}
+        <Route path="/specs" component={ComingSoon} />
+        <Route path="/specs/:rest*" component={ComingSoon} />
+        <Route path="/torque-specs" component={ComingSoon} />
+        <Route path="/build-sheets" component={ComingSoon} />
+        <Route path="/build-sheets/:rest*" component={ComingSoon} />
 
+        {/* Live calculators */}
         <Route path="/calculators" component={CalculatorsIndex} />
         <Route path="/calculators/displacement" component={DisplacementCalculator} />
         <Route path="/calculators/compression-ratio" component={CompressionRatioCalculator} />
@@ -86,11 +82,6 @@ function Router() {
         <Route path="/calculators/piston-speed" component={PistonSpeedCalculator} />
 
         <Route path="/cam-guide" component={CamGuide} />
-        <Route path="/torque-specs" component={TorqueSpecs} />
-
-        <Route path="/build-sheets" component={BuildSheetsIndex} />
-        <Route path="/build-sheets/planner" component={BuildPlanner} />
-        <Route path="/build-sheets/record" component={BuildSheet} />
 
         <Route path="/sign-in/*?" component={SignInPage} />
         <Route path="/sign-up/*?" component={SignUpPage} />
