@@ -113,7 +113,7 @@ export default function Home() {
             <div>
               <p className="text-[#E85D04] text-sm font-semibold uppercase tracking-widest mb-1">Live Now</p>
               <h2 className="text-3xl font-bold tracking-tight">Essential Calculators</h2>
-              <p className="text-gray-500 mt-1">Math for the machine shop.</p>
+              <p className="text-gray-500 mt-1">Built for engine builders, by engine builders.</p>
             </div>
             <Link href="/calculators">
               <Button variant="outline" className="hidden sm:flex border-[#1a1a1a] text-[#1a1a1a] hover:bg-[#1a1a1a] hover:text-white">View All</Button>

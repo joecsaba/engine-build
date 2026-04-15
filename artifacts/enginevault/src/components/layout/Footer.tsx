@@ -34,7 +34,7 @@ export function Footer() {
               <span>Engine-<span className="text-[#E85D04]">build</span>.com</span>
             </Link>
             <p className="text-sm max-w-sm">
-              Free engine builder calculators. Displacement, compression, cam specs, ring gap, rod ratio — all the math you need for the machine shop.
+              The reference tool for serious engine builders. Displacement, compression, cam specs, ring gap, rod ratio — everything you need to build it right.
             </p>
           </div>
           
