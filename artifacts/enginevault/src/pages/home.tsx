@@ -4,6 +4,7 @@ import { Input } from "@/components/ui/input";
 import { Textarea } from "@/components/ui/textarea";
 import { Calculator, Settings2, Clock, Send, CheckCircle2 } from "lucide-react";
 import { useState } from "react";
+import { AdBanner } from "@/components/ads/AdBanner";
 
 const BASE = import.meta.env.BASE_URL.replace(/\/$/, "");
 
@@ -134,6 +135,13 @@ export default function Home() {
               <Button variant="outline" className="w-full">View All Calculators</Button>
             </Link>
           </div>
+        </div>
+      </section>
+
+      {/* Mid-page ad */}
+      <section className="py-6 px-4 bg-gray-50 border-t border-gray-100">
+        <div className="container mx-auto max-w-6xl">
+          <AdBanner slot="2222222222" format="horizontal" />
         </div>
       </section>
 

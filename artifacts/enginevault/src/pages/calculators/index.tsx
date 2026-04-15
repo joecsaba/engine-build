@@ -1,6 +1,7 @@
 import { Link } from "wouter";
 import { Calculator } from "lucide-react";
 import { PageHeader } from "@/components/layout/PageHeader";
+import { AdBanner } from "@/components/ads/AdBanner";
 
 const calculators = [
   {
@@ -78,6 +79,9 @@ export default function CalculatorsIndex() {
               </div>
             </Link>
           ))}
+        </div>
+        <div className="mt-10">
+          <AdBanner slot="3333333333" format="horizontal" />
         </div>
       </div>
     </div>

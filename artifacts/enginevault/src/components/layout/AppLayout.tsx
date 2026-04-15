@@ -1,5 +1,6 @@
 import { Navbar } from "./Navbar";
 import { Footer } from "./Footer";
+import { AdBanner } from "@/components/ads/AdBanner";
 
 export function AppLayout({ children }: { children: React.ReactNode }) {
   return (
@@ -11,6 +12,11 @@ export function AppLayout({ children }: { children: React.ReactNode }) {
         {children}
       </main>
       <div className="print:hidden">
+        <div className="bg-white border-t border-gray-100 py-4 px-4">
+          <div className="container mx-auto max-w-6xl">
+            <AdBanner slot="1111111111" format="horizontal" />
+          </div>
+        </div>
         <Footer />
       </div>
     </div>
