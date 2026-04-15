@@ -4,7 +4,6 @@ import { Toaster } from "@/components/ui/toaster";
 import { TooltipProvider } from "@/components/ui/tooltip";
 import { AppLayout } from "@/components/layout/AppLayout";
 import { ClerkProvider } from "@clerk/react";
-import { HelmetProvider } from "react-helmet-async";
 import { BuildContextProvider } from "@/context/BuildContext";
 import { ErrorBoundary } from "@/components/ErrorBoundary";
 import NotFound from "@/pages/not-found";
@@ -118,9 +117,7 @@ function AppInner() {
 function App() {
   return (
     <ErrorBoundary>
-      <HelmetProvider>
-        <AppInner />
-      </HelmetProvider>
+      <AppInner />
     </ErrorBoundary>
   );
 }

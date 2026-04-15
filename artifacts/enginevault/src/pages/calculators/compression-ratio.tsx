@@ -2,7 +2,6 @@ import { useState } from "react";
 import { Input } from "@/components/ui/input";
 import { Label } from "@/components/ui/label";
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
-import { SEOHead } from "@/components/SEOHead";
 
 function getOctaneRec(cr: number): { label: string; color: string; bg: string } {
   if (cr <= 9.5) return { label: "Regular 87 octane", color: "text-green-700", bg: "bg-green-50 border-green-200" };
@@ -49,12 +48,6 @@ export default function CompressionRatioCalculator() {
 
   return (
     <div className="container mx-auto py-8 px-4 max-w-5xl">
-      <SEOHead
-        title="Compression Ratio Calculator"
-        description="Calculate static and dynamic compression ratio for any engine. Includes octane recommendations, detonation risk zones, and side-by-side comparison. Free engine builder tool."
-        canonical="/calculators/compression-ratio"
-        keywords="compression ratio calculator, static compression ratio, dynamic compression ratio, octane calculator, engine detonation, engine builder"
-      />
       <h1 className="text-3xl font-bold mb-2">Compression Ratio Calculator</h1>
       <p className="text-muted-foreground mb-8">Static and dynamic compression ratio with octane recommendations.</p>
 

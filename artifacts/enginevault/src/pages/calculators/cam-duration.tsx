@@ -2,7 +2,6 @@ import { useState } from "react";
 import { Input } from "@/components/ui/input";
 import { Label } from "@/components/ui/label";
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
-import { SEOHead } from "@/components/SEOHead";
 
 interface CamProfile {
   adv: string;
@@ -101,12 +100,6 @@ export default function CamDurationCalculator() {
 
   return (
     <div className="container mx-auto py-8 px-4 max-w-5xl">
-      <SEOHead
-        title="Camshaft Duration Calculator"
-        description="Convert camshaft advertised duration to .050 and .200 duration. Calculate lobe lift, gross valve lift, and cam overlap. Supports dual pattern cams."
-        canonical="/calculators/cam-duration"
-        keywords="camshaft duration calculator, cam duration at 050, advertised duration, cam overlap calculator, lobe lift calculator, gross valve lift"
-      />
       <h1 className="text-3xl font-bold mb-2">Camshaft Duration Converter</h1>
       <p className="text-muted-foreground mb-6">Convert between advertised, 0.050", and 0.200" duration. Calculate lobe and valve lift from rocker ratio.</p>
 

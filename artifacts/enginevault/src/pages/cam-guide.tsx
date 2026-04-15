@@ -8,7 +8,6 @@ import { PageHeader } from "@/components/layout/PageHeader";
 import { Check, ArrowRight, AlertTriangle, CheckCircle2 } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { useBuildContext, type CamRecommendation } from "@/context/BuildContext";
-import { SEOHead } from "@/components/SEOHead";
 
 type CamTypeKey = "hydraulic_flat" | "hydraulic_roller" | "solid_flat" | "solid_roller";
 
@@ -174,12 +173,6 @@ export default function CamGuide() {
 
   return (
     <div>
-      <SEOHead
-        title="Camshaft Selection Guide for Engine Builders"
-        description="A complete guide to selecting the right camshaft for your engine build. Understand cam specs, duration, lift, LSA, overlap, and valve spring requirements. Includes a cam recommender tool."
-        canonical="/cam-guide"
-        keywords="camshaft selection guide, how to choose a camshaft, cam specs explained, cam duration guide, LSA lobe separation angle, camshaft overlap, hydraulic vs solid roller cam"
-      />
       <PageHeader
         eyebrow="Camshaft"
         title="Camshaft Selection Guide"

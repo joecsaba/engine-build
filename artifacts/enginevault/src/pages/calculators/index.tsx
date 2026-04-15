@@ -51,12 +51,6 @@ const calculators = [
 export default function CalculatorsIndex() {
   return (
     <div>
-      <SEOHead
-        title="Engine Builder Calculator Suite"
-        description="All engine building calculators in one place. Compression ratio, displacement, cam duration, piston ring gap, connecting rod ratio, HP/torque, and piston speed. Free, fast, and accurate."
-        canonical="/calculators"
-        keywords="engine calculators, compression ratio calculator, displacement calculator, cam duration, ring gap, rod ratio, horsepower calculator, engine builder tools"
-      />
       <PageHeader
         eyebrow="Tools"
         title="Calculator Suite"
