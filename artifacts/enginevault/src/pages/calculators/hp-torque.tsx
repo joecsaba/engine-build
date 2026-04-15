@@ -2,6 +2,7 @@ import { useState } from "react";
 import { Input } from "@/components/ui/input";
 import { Label } from "@/components/ui/label";
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
+import { SEOHead } from "@/components/SEOHead";
 
 export default function HpTorqueCalculator() {
   const [hp, setHp] = useState("400");
@@ -31,6 +32,12 @@ export default function HpTorqueCalculator() {
 
   return (
     <div className="container mx-auto py-8 px-4 max-w-4xl">
+      <SEOHead
+        title="Horsepower & Torque Converter"
+        description="Bidirectional HP to torque calculator. Convert horsepower to torque or torque to horsepower at any RPM. Shows the 5252 crossover point and unit conversions."
+        canonical="/calculators/hp-torque"
+        keywords="horsepower torque calculator, HP to torque, torque to horsepower, 5252 crossover, engine power calculator, dyno math"
+      />
       <h1 className="text-3xl font-bold mb-2">Horsepower &amp; Torque Converter</h1>
       <p className="text-muted-foreground mb-8">Bidirectional HP↔Torque conversion with unit conversions. Enter HP or Torque — leave the other blank to calculate it.</p>
 

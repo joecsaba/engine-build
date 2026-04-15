@@ -2,6 +2,7 @@ import { useState } from "react";
 import { Input } from "@/components/ui/input";
 import { Label } from "@/components/ui/label";
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
+import { SEOHead } from "@/components/SEOHead";
 
 const commonEngines = [
   { name: "Chevy 350 (SBC)", stroke: "3.480", rod: "5.700", ratio: 1.638 },
@@ -37,6 +38,12 @@ export default function RodRatioCalculator() {
 
   return (
     <div className="container mx-auto py-8 px-4 max-w-5xl">
+      <SEOHead
+        title="Connecting Rod Ratio Calculator"
+        description="Calculate connecting rod ratio from stroke and rod length. Visual gauge, comparison against popular engines, and explanation of piston dwell effects on power and wear."
+        canonical="/calculators/rod-ratio"
+        keywords="connecting rod ratio calculator, rod ratio, piston dwell, rod length stroke ratio, engine rod ratio"
+      />
       <h1 className="text-3xl font-bold mb-2">Connecting Rod Ratio Calculator</h1>
       <p className="text-muted-foreground mb-8">Calculate your connecting rod ratio and see where it falls in the performance spectrum.</p>
 

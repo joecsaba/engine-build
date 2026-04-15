@@ -2,6 +2,7 @@ import { useState } from "react";
 import { Input } from "@/components/ui/input";
 import { Label } from "@/components/ui/label";
 import { Card, CardContent, CardHeader, CardTitle, CardDescription } from "@/components/ui/card";
+import { SEOHead } from "@/components/SEOHead";
 
 export default function DisplacementCalculator() {
   const [bore, setBore] = useState("4.000");
@@ -19,6 +20,12 @@ export default function DisplacementCalculator() {
 
   return (
     <div className="container mx-auto py-8 px-4 max-w-3xl">
+      <SEOHead
+        title="Engine Displacement Calculator"
+        description="Calculate engine displacement in cubic inches, liters, and CC from bore, stroke, and cylinder count. Free engine builder calculator with piston speed and engine lookup."
+        canonical="/calculators/displacement"
+        keywords="engine displacement calculator, cubic inch calculator, bore stroke calculator, engine CC calculator, engine liters calculator"
+      />
       <h1 className="text-3xl font-bold mb-2">Engine Displacement Calculator</h1>
       <p className="text-muted-foreground mb-8">Calculate engine displacement in cubic inches, CCs, and liters.</p>
 

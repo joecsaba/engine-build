@@ -4,6 +4,7 @@ import { Toaster } from "@/components/ui/toaster";
 import { TooltipProvider } from "@/components/ui/tooltip";
 import { AppLayout } from "@/components/layout/AppLayout";
 import { ClerkProvider } from "@clerk/react";
+import { HelmetProvider } from "react-helmet-async";
 import { BuildContextProvider } from "@/context/BuildContext";
 import NotFound from "@/pages/not-found";
 import SignInPage from "@/pages/sign-in";
@@ -92,18 +93,20 @@ function Router() {
 
 function App() {
   return (
-    <QueryClientProvider client={queryClient}>
-      <TooltipProvider>
-        <WouterRouter base={basePath}>
-          <ClerkProviderWithRouter>
-            <BuildContextProvider>
-              <Router />
-            </BuildContextProvider>
-          </ClerkProviderWithRouter>
-        </WouterRouter>
-        <Toaster />
-      </TooltipProvider>
-    </QueryClientProvider>
+    <HelmetProvider>
+      <QueryClientProvider client={queryClient}>
+        <TooltipProvider>
+          <WouterRouter base={basePath}>
+            <ClerkProviderWithRouter>
+              <BuildContextProvider>
+                <Router />
+              </BuildContextProvider>
+            </ClerkProviderWithRouter>
+          </WouterRouter>
+          <Toaster />
+        </TooltipProvider>
+      </QueryClientProvider>
+    </HelmetProvider>
   );
 }
 

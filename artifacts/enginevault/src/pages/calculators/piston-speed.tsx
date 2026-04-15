@@ -2,6 +2,7 @@ import { useState } from "react";
 import { Input } from "@/components/ui/input";
 import { Label } from "@/components/ui/label";
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
+import { SEOHead } from "@/components/SEOHead";
 
 const refEngines = [
   { name: "Stock SBC 350 (5500 RPM redline)", stroke: 3.48, rpm: 5500, meanFpm: 3190 },
@@ -35,6 +36,12 @@ export default function PistonSpeedCalculator() {
 
   return (
     <div className="container mx-auto py-8 px-4 max-w-4xl">
+      <SEOHead
+        title="Piston Speed Calculator"
+        description="Calculate mean and peak piston speed in feet per minute. Color-coded safety zones for street and race applications. Reference table of common engine redlines."
+        canonical="/calculators/piston-speed"
+        keywords="piston speed calculator, mean piston speed, peak piston speed, feet per minute, engine RPM limit, safe piston speed"
+      />
       <h1 className="text-3xl font-bold mb-2">Piston Speed Calculator</h1>
       <p className="text-muted-foreground mb-8">Calculate mean and peak piston speed in feet per minute. Color-coded safety zones for street and race applications.</p>
 

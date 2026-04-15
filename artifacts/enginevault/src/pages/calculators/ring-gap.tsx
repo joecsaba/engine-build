@@ -3,6 +3,7 @@ import { Input } from "@/components/ui/input";
 import { Label } from "@/components/ui/label";
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 import { Select, SelectContent, SelectItem, SelectTrigger, SelectValue } from "@/components/ui/select";
+import { SEOHead } from "@/components/SEOHead";
 
 type RingType = "top" | "second" | "oil";
 type AppType = "na-street" | "na-perf" | "fi-street" | "full-race";
@@ -38,6 +39,12 @@ export default function RingGapCalculator() {
 
   return (
     <div className="container mx-auto py-8 px-4 max-w-4xl">
+      <SEOHead
+        title="Piston Ring End Gap Calculator"
+        description="Calculate recommended piston ring end gap by bore size, ring type, and application. Color-coded OK/too tight/too loose zones for street, performance, and race engines."
+        canonical="/calculators/ring-gap"
+        keywords="piston ring gap calculator, ring end gap, top ring gap, second ring gap, oil ring gap, bore size ring gap"
+      />
       <h1 className="text-3xl font-bold mb-2">Piston Ring End Gap Calculator</h1>
       <p className="text-muted-foreground mb-8">Application-specific ring gap recommendations with color-coded zones.</p>
 

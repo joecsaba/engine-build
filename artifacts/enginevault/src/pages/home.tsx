@@ -56,6 +56,12 @@ export default function Home() {
 
   return (
     <div className="flex flex-col min-h-screen">
+      <SEOHead
+        title="Free Engine Builder Calculators"
+        description="Free engine builder calculators for compression ratio, displacement, cam duration, piston ring gap, rod ratio, HP/torque, and piston speed. Built for serious engine builders."
+        canonical="/"
+        keywords="engine builder calculators, compression ratio, engine displacement, cam duration, piston ring gap, rod ratio, horsepower torque, engine build tools"
+      />
       {/* Hero */}
       <section className="bg-[#1a1a1a] text-white py-20 px-4 relative overflow-hidden">
         <div className="absolute inset-0 opacity-5 pointer-events-none"
