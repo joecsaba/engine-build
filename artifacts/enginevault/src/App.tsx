@@ -6,6 +6,7 @@ import { AppLayout } from "@/components/layout/AppLayout";
 import { ClerkProvider } from "@clerk/react";
 import { HelmetProvider } from "react-helmet-async";
 import { BuildContextProvider } from "@/context/BuildContext";
+import { ErrorBoundary } from "@/components/ErrorBoundary";
 import NotFound from "@/pages/not-found";
 import SignInPage from "@/pages/sign-in";
 import SignUpPage from "@/pages/sign-up";
@@ -34,8 +35,8 @@ const queryClient = new QueryClient({
 });
 
 const basePath = import.meta.env.BASE_URL.replace(/\/$/, "");
-const clerkPubKey = import.meta.env.VITE_CLERK_PUBLISHABLE_KEY;
-const clerkProxyUrl = import.meta.env.VITE_CLERK_PROXY_URL;
+const clerkPubKey = import.meta.env.VITE_CLERK_PUBLISHABLE_KEY as string | undefined;
+const clerkProxyUrl = import.meta.env.VITE_CLERK_PROXY_URL as string | undefined;
 
 function stripBase(path: string): string {
   return basePath && path.startsWith(basePath)
@@ -47,7 +48,7 @@ function ClerkProviderWithRouter({ children }: { children: React.ReactNode }) {
   const [, setLocation] = useLocation();
   return (
     <ClerkProvider
-      publishableKey={clerkPubKey ?? ""}
+      publishableKey={clerkPubKey!}
       proxyUrl={clerkProxyUrl}
       routerPush={(to) => setLocation(stripBase(to))}
       routerReplace={(to) => setLocation(stripBase(to), { replace: true })}
@@ -91,22 +92,36 @@ function Router() {
   );
 }
 
-function App() {
+function AppInner() {
   return (
-    <HelmetProvider>
-      <QueryClientProvider client={queryClient}>
-        <TooltipProvider>
-          <WouterRouter base={basePath}>
+    <QueryClientProvider client={queryClient}>
+      <TooltipProvider>
+        <WouterRouter base={basePath}>
+          {clerkPubKey ? (
             <ClerkProviderWithRouter>
               <BuildContextProvider>
                 <Router />
               </BuildContextProvider>
             </ClerkProviderWithRouter>
-          </WouterRouter>
-          <Toaster />
-        </TooltipProvider>
-      </QueryClientProvider>
-    </HelmetProvider>
+          ) : (
+            <BuildContextProvider>
+              <Router />
+            </BuildContextProvider>
+          )}
+        </WouterRouter>
+        <Toaster />
+      </TooltipProvider>
+    </QueryClientProvider>
+  );
+}
+
+function App() {
+  return (
+    <ErrorBoundary>
+      <HelmetProvider>
+        <AppInner />
+      </HelmetProvider>
+    </ErrorBoundary>
   );
 }
 
