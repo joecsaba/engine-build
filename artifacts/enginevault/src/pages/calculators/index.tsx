@@ -23,10 +23,10 @@ const calculators = [
     tags: ["Bore Size", "Application", "Ring Type"],
   },
   {
-    title: "Camshaft Duration",
+    title: "Vizard Cam Timing Calculator",
     href: "/calculators/cam-duration",
-    desc: "Convert between advertised, 0.050\", and 0.200\" duration. Calculate lobe lift and gross valve lift.",
-    tags: ["Duration", "Lift", "Rocker Ratio"],
+    desc: "Full cam analysis using David Vizard's methodology — valve events, overlap, recommended LCA, and dynamic compression ratio.",
+    tags: ["Cam Timing", "Overlap", "LCA", "Dynamic CR"],
   },
   {
     title: "Connecting Rod Ratio",

@@ -1,0 +1,219 @@
+Build a React web application called "Vizard Cam Timing Calculator" — a 
+professional-grade cam selection and analysis tool for performance engine 
+builders, based on the methodology from David Vizard's book 
+"How to Build Horsepower."
+
+---
+
+TECH STACK:
+- React (functional components, hooks)
+- Tailwind CSS for styling
+- No backend required — all calculations run in the browser
+- Clean, dark-themed UI (dark gray background, orange/amber accent colors to 
+  evoke motorsport/performance feel)
+
+---
+
+SECTIONS & FEATURES:
+
+=== SECTION 1: CAMSHAFT INPUTS ===
+Allow the user to enter:
+- Advertised intake duration (degrees)
+- Advertised exhaust duration (degrees)
+- Duration at 0.050" lift — intake (degrees)
+- Duration at 0.050" lift — exhaust (degrees)
+- Intake lobe centerline angle (LCA) (degrees)
+- Exhaust lobe centerline angle (degrees) [can be same as intake for 
+  single-pattern]
+- Lobe separation angle (LSA) (degrees) — auto-calculate from LCA if user 
+  prefers, or enter manually
+- Cam lift — intake (inches)
+- Cam lift — exhaust (inches)
+- Lifter type: Hydraulic flat tappet / Solid flat tappet / Hydraulic roller / 
+  Solid roller
+- Valve lash (inches) — auto-populate based on lifter type:
+    - Hydraulic: 0.000" (note: lash point for duration is 0.006")
+    - Solid: 0.020"
+    - Roller hydraulic: 0.000"
+    - Roller solid: user-defined
+
+=== SECTION 2: ROCKER ARM / VALVE LIFT ===
+Label this section: "OEM Rocker Ratio & Valve Lift"
+- OEM/Stock rocker ratio (default 1.5:1) — label it "OEM Rocker Ratio"
+- Custom rocker ratio 1 (user-defined)
+- Custom rocker ratio 2 (user-defined)
+
+Calculate and display a table showing:
+| Rocker Ratio | Intake Valve Lift | Exhaust Valve Lift |
+for all three rocker ratios (OEM + both custom).
+
+Show a note: "Higher rocker ratios increase valve lift without changing cam 
+duration. This can be an economical way to improve airflow on a budget."
+
+=== SECTION 3: VALVE EVENT TIMING ===
+From the intake duration and lobe centerline angle, calculate:
+- Intake Opens (degrees Before TDC)
+- Intake Closes (degrees After BDC)  
+- Exhaust Opens (degrees Before BDC)
+- Exhaust Closes (degrees After TDC)
+
+Formulas:
+- Intake Centerline = LSA + advance (if cam is advanced) or LSA - retard
+- Intake Opens BTDC = (Intake Duration / 2) - Intake Centerline
+- Intake Closes ABDC = Intake Duration - Intake Opens BTDC - 180
+  (or equivalently: (Intake Duration / 2) - (180 - Intake Centerline))
+- Exhaust Centerline = LSA - (cam advance or + retard)
+- Exhaust Opens BBDC = (Exhaust Duration / 2) - Exhaust Centerline  
+- Exhaust Closes ATDC = Exhaust Duration - Exhaust Opens BBDC - 180
+
+Add a field: "Cam Advance/Retard" (degrees, default 0 — positive = advance, 
+negative = retard)
+
+Display: "Intake Valve Closes at X° ABDC (X° at the crankshaft)"
+Note below: "This value is calculated based on an intake centerline of X°. 
+Advancing or retarding the cam changes this number."
+
+=== SECTION 4: OVERLAP CALCULATOR ===
+Calculate:
+- Overlap = Intake Opens BTDC + Exhaust Closes ATDC (in degrees at the cam, 
+  displayed as crankshaft degrees)
+
+Display overlap value prominently with a color-coded badge:
+- < 25°: "Very mild / Towing" (green)
+- 25–45°: "Mild street / Torque" (green)
+- 45–65°: "Street performance" (yellow)
+- 65–85°: "Street/Strip" (orange)
+- 85–115°: "Race only" (red)
+
+Show a note: "Per David Vizard's research, overlap is the single most 
+important cam event. Getting it right for your RPM range and engine 
+combination is more critical than duration alone."
+
+=== SECTION 5: DAVID VIZARD'S LCA RECOMMENDATION FORMULA ===
+Display a prominent header: 
+"Vizard's Recommended LCA Formula"
+With a credit line: 
+"Formula and methodology from David Vizard's 'How to Build Horsepower.' 
+To learn more, read his book."
+
+Inputs needed for this section:
+- Engine displacement (cubic inches)
+- Number of cylinders
+- Intake valve diameter (inches)
+- Number of valves per cylinder (2 or 4)
+- Compression ratio
+- Valve angle (parallel = 0, angled = degrees of included valve angle — 
+  e.g., BBC is ~26°, use 0 for parallel)
+- Intake manifold type: Single plane / Dual plane / Tunnel ram / TBI/Stock
+
+Calculations:
+1. Displacement per cylinder = Total displacement / Number of cylinders
+2. Intake valve area = π × (intake valve diameter / 2)²  
+   [for 4-valve: multiply by 2 and use smaller valve diameter]
+3. Cubes per square inch of valve area = 
+   Displacement per cylinder / Intake valve area
+4. Base LCA — use a stepped lookup table based on cubes/in² of valve:
+   - < 15 cubes/in²: Base LCA = 100°  (4-valve or very large valve)
+   - 15–18: Base LCA = 104°
+   - 18–21: Base LCA = 106°
+   - 21–24: Base LCA = 108°
+   - 24–27: Base LCA = 110°
+   - 27–30: Base LCA = 112°
+   - > 30 cubes/in²: Base LCA = 114°
+5. Compression ratio adjustment:
+   - CR < 9.5: Add 2°
+   - CR 9.5–10.5: Add 0°
+   - CR 10.5–12: Subtract 1°
+   - CR > 12: Subtract 2°
+6. Valve angle adjustment (for angled valves like BBC):
+   - Valve angle > 10°: Add 2°
+7. Manifold adjustment:
+   - Single plane: Subtract 1°
+   - Tunnel ram: Subtract 2°
+   - TBI/Stock: Add 2°
+   - Dual plane: Add 0°
+8. Final Recommended LCA = Base LCA + all adjustments
+
+Display the recommended LCA prominently and compare it to the user's entered 
+LCA, showing if they're wider, narrower, or on target. If off by more than 
+3°, show a suggestion.
+
+=== SECTION 6: DYNAMIC COMPRESSION RATIO ===
+Display header: "Dynamic Compression Ratio"
+Explain: "Static compression ratio doesn't tell the full story. Because the 
+intake valve closes after BDC, the effective stroke is shorter than the 
+piston's full travel. This gives you the 'dynamic' compression — what the 
+engine actually sees."
+
+Inputs (pull from previous sections):
+- Static compression ratio (from LCA section)
+- Intake closes ABDC (calculated from Section 3)
+- Stroke (inches)
+- Rod length (inches)
+- Bore (inches) [optional — for reference]
+
+Dynamic compression calculation (simplified Vizard-friendly method):
+1. Effective stroke ratio = (IVC in degrees from BDC) 
+   — convert IVC angle to piston position using: 
+   piston_position_from_BDC = (stroke/2) × (1 - cos(IVC°)) 
+   (simplified: for small angles, use geometric approximation)
+2. Effective compression ratio = Static CR × 
+   ((stroke - piston_rise_at_IVC) / stroke) ^ gamma
+   [Use gamma = 1.3 as a reasonable approximation]
+3. Display Dynamic CR
+
+Color-code the result:
+- < 7.5:1 — "Too low for performance, detonation resistance is high" (blue)
+- 7.5–8.5:1 — "Mild, good for pump gas / boost" (green)
+- 8.5–9.5:1 — "Ideal street performance on 91–93 octane" (green)
+- 9.5–10.5:1 — "Aggressive — requires premium fuel" (yellow)
+- > 10.5:1 — "Race fuel territory" (red)
+
+=== SECTION 7: SUMMARY CARD ===
+At the bottom, generate a clean printable "Build Sheet" summary card showing:
+- All cam specs entered
+- Calculated valve events
+- Overlap value + category
+- Recommended LCA vs. actual LCA
+- Dynamic compression ratio
+- Valve lift table for all rocker ratios
+- A "Copy to Clipboard" button and a "Print" button
+
+---
+
+GENERAL UI REQUIREMENTS:
+- All inputs should have helpful tooltips or small gray hint text explaining 
+  what the value means (e.g., "LSA: The angle in degrees between the intake 
+  and exhaust lobe centerlines, ground into the cam")
+- All calculated outputs update in real time as the user types (no submit 
+  button needed for calculations)
+- Group sections with collapsible accordions so the page isn't overwhelming
+- At the very top of the page, show: 
+  "Based on David Vizard's methodology from 'How to Build Horsepower'" 
+  in small italic text
+- Mobile responsive
+
+---
+
+DEFAULT VALUES TO PREFILL (makes it easy to see the calculator working):
+- Intake duration: 270°
+- Exhaust duration: 276°
+- Intake @ 0.050: 224°
+- Exhaust @ 0.050: 230°
+- LSA: 112°
+- Cam advance: 4°
+- Cam lift intake: 0.360"
+- Cam lift exhaust: 0.370"
+- Lifter type: Hydraulic flat tappet
+- OEM rocker ratio: 1.5:1
+- Custom ratio 1: 1.6:1
+- Custom ratio 2: 1.7:1
+- Engine displacement: 350 ci
+- Cylinders: 8
+- Intake valve diameter: 2.02"
+- Valves per cylinder: 2
+- Compression ratio: 10.0:1
+- Stroke: 3.48"
+- Rod length: 5.7"
+- Valve angle: 0° (parallel)
+- Manifold: Dual plane
