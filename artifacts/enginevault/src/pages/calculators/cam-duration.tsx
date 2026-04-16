@@ -271,19 +271,37 @@ export default function CamDurationCalculator() {
   const handlePrint = () => window.print();
 
   return (
-    <div className="container mx-auto py-8 px-4 max-w-4xl space-y-5">
+    <div className="max-w-4xl mx-auto">
+      {/* Prominent book banner */}
+      <div className="bg-[#1a1a1a] text-white rounded-xl mb-6 overflow-hidden">
+        <div className="px-6 py-8 flex flex-col sm:flex-row items-center gap-6">
+          <div className="text-5xl shrink-0">📖</div>
+          <div className="flex-1 text-center sm:text-left">
+            <p className="text-xs uppercase tracking-widest text-[#E85D04] font-semibold mb-1">Inspired by</p>
+            <h2 className="text-xl sm:text-2xl font-black mb-2">
+              David Vizard's <em className="not-italic text-[#E85D04]">How to Build Horsepower</em>
+            </h2>
+            <p className="text-gray-300 text-sm mb-4 max-w-lg">
+              The formulas and methodology in this calculator come directly from David Vizard's landmark book — one of the most thorough technical references ever written on building performance engines.
+            </p>
+            <a
+              href="https://www.amazon.com/dp/0879384557?tag=YOUR-TAG-HERE"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="inline-flex items-center gap-2 bg-[#E85D04] hover:bg-[#d04f00] text-white font-bold px-5 py-2.5 rounded-lg transition-colors text-sm"
+            >
+              Get the Book on Amazon →
+            </a>
+            <p className="text-xs text-gray-500 mt-2">Affiliate link — we may earn a small commission at no extra cost to you</p>
+          </div>
+        </div>
+      </div>
+
+      <div className="px-4 space-y-5">
       <div>
         <h1 className="text-3xl font-bold mb-1">Vizard Cam Timing Calculator</h1>
-        <p className="text-sm italic text-muted-foreground">
-          Based on David Vizard's methodology from{" "}
-          <a
-            href="https://www.amazon.com/dp/0879384557?tag=YOUR-TAG-HERE"
-            target="_blank"
-            rel="noopener noreferrer"
-            className="underline hover:text-[#E85D04] transition-colors"
-          >
-            <em>How to Build Horsepower</em>
-          </a>
+        <p className="text-sm text-muted-foreground">
+          Full cam analysis: valve events, overlap, LCA recommendations, dynamic compression ratio, and rocker lift table.
         </p>
       </div>
 
@@ -717,6 +735,7 @@ export default function CamDurationCalculator() {
           </p>
         </div>
       </Section>
+      </div>
     </div>
   );
 }

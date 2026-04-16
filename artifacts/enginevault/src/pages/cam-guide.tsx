@@ -8,6 +8,7 @@ import { PageHeader } from "@/components/layout/PageHeader";
 import { Check, ArrowRight, AlertTriangle, CheckCircle2 } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { useBuildContext, type CamRecommendation } from "@/context/BuildContext";
+import VizardCamCalculator from "@/pages/calculators/cam-duration";
 
 type CamTypeKey = "hydraulic_flat" | "hydraulic_roller" | "solid_flat" | "solid_roller";
 
@@ -124,8 +125,153 @@ ${rpmPeak > 5500 ? `• Your ${rpmPeak} RPM target requires the longer duration 
   };
 }
 
+// ── Simple Cam Timing Calculator ──────────────────────────────────────────────
+
+function overlapBadge(ov: number) {
+  if (ov < 25)  return { label: "Very Mild / Towing",       bg: "bg-green-50  border-green-300",  text: "text-green-700"  };
+  if (ov < 45)  return { label: "Mild Street / Torque",     bg: "bg-green-50  border-green-300",  text: "text-green-700"  };
+  if (ov < 65)  return { label: "Street Performance",       bg: "bg-yellow-50 border-yellow-300", text: "text-yellow-700" };
+  if (ov < 85)  return { label: "Street / Strip",           bg: "bg-orange-50 border-orange-300", text: "text-orange-700" };
+  return              { label: "Race Only",                  bg: "bg-red-50    border-red-300",    text: "text-red-700"    };
+}
+
+function SimpleCamTiming() {
+  const [intAdv,  setIntAdv]  = useState("270");
+  const [exhAdv,  setExhAdv]  = useState("276");
+  const [intLCA,  setIntLCA]  = useState("108");
+  const [exhLCA,  setExhLCA]  = useState("116");
+  const [advance, setAdv]     = useState("4");
+
+  const n = (v: string) => parseFloat(v) || 0;
+  const iC  = n(intLCA)  - n(advance);
+  const eC  = n(exhLCA)  + n(advance);
+  const IO  = n(intAdv) / 2 - iC;
+  const IC  = n(intAdv) / 2 - (180 - iC);
+  const EO  = n(exhAdv) / 2 - eC;
+  const EC  = n(exhAdv) / 2 - (180 - eC);
+  const ov  = IO + EC;
+  const cat = overlapBadge(ov);
+
+  const fieldCls = "w-full border rounded-md px-3 py-2 text-sm focus:outline-none focus:ring-2 focus:ring-[#E85D04]";
+
+  return (
+    <div className="container mx-auto max-w-3xl px-4 py-10">
+      <h2 className="text-2xl font-bold mb-1">Simple Cam Timing Calculator</h2>
+      <p className="text-sm text-muted-foreground mb-8">
+        Enter your cam's duration and lobe centerline angles to instantly see valve events and overlap.
+      </p>
+
+      <div className="grid grid-cols-1 sm:grid-cols-2 gap-6 mb-8">
+        {/* Inputs */}
+        <div className="space-y-4">
+          <p className="text-xs font-semibold text-[#E85D04] uppercase tracking-wider">Duration (advertised)</p>
+          {[
+            { label: "Intake Duration (°)", val: intAdv, set: setIntAdv },
+            { label: "Exhaust Duration (°)", val: exhAdv, set: setExhAdv },
+          ].map(({ label, val, set }) => (
+            <div key={label} className="space-y-1">
+              <Label>{label}</Label>
+              <input type="number" className={fieldCls} step="1" value={val} onChange={e => set(e.target.value)} />
+            </div>
+          ))}
+
+          <p className="text-xs font-semibold text-[#E85D04] uppercase tracking-wider pt-2">Lobe Centerline Angles</p>
+          {[
+            { label: "Intake LCA (°)", val: intLCA, set: setIntLCA, hint: "Degrees ATDC of peak intake lift" },
+            { label: "Exhaust LCA (°)", val: exhLCA, set: setExhLCA, hint: "Degrees BTDC of peak exhaust lift" },
+            { label: "Cam Advance / Retard (°)", val: advance, set: setAdv, hint: "Positive = advanced. 0 = straight-up." },
+          ].map(({ label, val, set, hint }) => (
+            <div key={label} className="space-y-1">
+              <Label>{label}</Label>
+              <input type="number" className={fieldCls} step="0.5" value={val} onChange={e => set(e.target.value)} />
+              <p className="text-xs text-muted-foreground">{hint}</p>
+            </div>
+          ))}
+        </div>
+
+        {/* Results */}
+        <div className="space-y-4">
+          <p className="text-xs font-semibold text-[#E85D04] uppercase tracking-wider">Valve Events</p>
+          <div className="grid grid-cols-2 gap-3">
+            {[
+              { label: "Intake Opens",   value: IO.toFixed(1), unit: "° BTDC" },
+              { label: "Intake Closes",  value: IC.toFixed(1), unit: "° ABDC" },
+              { label: "Exhaust Opens",  value: EO.toFixed(1), unit: "° BBDC" },
+              { label: "Exhaust Closes", value: EC.toFixed(1), unit: "° ATDC" },
+            ].map(({ label, value, unit }) => (
+              <div key={label} className="rounded-lg border bg-gray-50 p-3 text-center">
+                <div className="text-xs text-gray-500 mb-1">{label}</div>
+                <div className="text-xl font-bold text-[#E85D04]">{value}</div>
+                <div className="text-xs text-gray-500">{unit}</div>
+              </div>
+            ))}
+          </div>
+
+          <div className={`rounded-xl border-2 p-5 text-center mt-4 ${cat.bg}`}>
+            <div className="text-xs uppercase tracking-widest text-gray-500 mb-1">Valve Overlap</div>
+            <div className={`text-5xl font-black mb-1 ${cat.text}`}>{ov.toFixed(1)}°</div>
+            <div className={`text-sm font-semibold ${cat.text}`}>{cat.label}</div>
+            <div className="text-xs text-gray-500 mt-2">IO {IO.toFixed(1)}° + EC {EC.toFixed(1)}° = {ov.toFixed(1)}°</div>
+          </div>
+
+          <div className="text-xs text-muted-foreground border-t pt-3 space-y-0.5">
+            <p>Intake centerline (adjusted): {iC.toFixed(1)}°</p>
+            <p>Exhaust centerline (adjusted): {eC.toFixed(1)}°</p>
+          </div>
+
+          <div className="p-3 bg-amber-50 border border-amber-200 rounded-lg text-xs text-amber-900">
+            Want the full analysis — LCA recommendations, dynamic compression, and rocker lift table?{" "}
+            <button className="underline font-semibold" onClick={() => {}}>Switch to David Vizard Cam Timing above.</button>
+          </div>
+        </div>
+      </div>
+    </div>
+  );
+}
+
+// ── Vizard Tab (with prominent book banner) ────────────────────────────────────
+
+function VizardTab() {
+  return (
+    <div>
+      {/* Prominent book banner */}
+      <div className="bg-[#1a1a1a] text-white">
+        <div className="container mx-auto max-w-4xl px-4 py-10 flex flex-col sm:flex-row items-center gap-8">
+          <div className="text-6xl shrink-0">📖</div>
+          <div className="flex-1 text-center sm:text-left">
+            <p className="text-xs uppercase tracking-widest text-[#E85D04] font-semibold mb-1">Inspired by</p>
+            <h2 className="text-2xl sm:text-3xl font-black mb-2">
+              David Vizard's <em className="not-italic text-[#E85D04]">How to Build Horsepower</em>
+            </h2>
+            <p className="text-gray-300 text-sm mb-5 max-w-xl">
+              The formulas and methodology in this calculator come directly from David Vizard's landmark book — one of the most thorough technical references ever written on building performance engines. If you're serious about engine building, it belongs on your shelf.
+            </p>
+            <a
+              href="https://www.amazon.com/dp/0879384557?tag=YOUR-TAG-HERE"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="inline-flex items-center gap-2 bg-[#E85D04] hover:bg-[#d04f00] text-white font-bold px-6 py-3 rounded-lg transition-colors text-sm"
+            >
+              Get the Book on Amazon →
+            </a>
+            <p className="text-xs text-gray-500 mt-3">
+              Affiliate link — we may earn a small commission at no extra cost to you
+            </p>
+          </div>
+        </div>
+      </div>
+
+      {/* Full Vizard calculator */}
+      <VizardCamCalculator />
+    </div>
+  );
+}
+
+// ── Cam Guide ─────────────────────────────────────────────────────────────────
+
 export default function CamGuide() {
   const { saveCamRecommendation, camRecommendation, clearCamRecommendation } = useBuildContext();
+  const [activeTab, setActiveTab] = useState<"guide" | "simple" | "vizard">("guide");
   const [cam1, setCam1] = useState({ duration: "218", lsa: "112", lift: "0.520", intDuration: "218", exhDuration: "224", intLift: "0.520", exhLift: "0.500" });
   const [cam2, setCam2] = useState({ duration: "232", lsa: "108", lift: "0.580", intDuration: "232", exhDuration: "240", intLift: "0.580", exhLift: "0.560" });
   const [dual1, setDual1] = useState(false);
@@ -171,15 +317,49 @@ export default function CamGuide() {
   const maxLift1 = dual1 ? Math.max(parseFloat(cam1.intLift) || 0, parseFloat(cam1.exhLift) || 0) : parseFloat(cam1.lift) || 0;
   const maxLift2 = dual2 ? Math.max(parseFloat(cam2.intLift) || 0, parseFloat(cam2.exhLift) || 0) : parseFloat(cam2.lift) || 0;
 
+  const TABS = [
+    { id: "guide",   label: "Cam Selection Guide" },
+    { id: "simple",  label: "Simple Cam Timing" },
+    { id: "vizard",  label: "David Vizard Cam Timing" },
+  ] as const;
+
   return (
     <div>
       <PageHeader
         eyebrow="Camshaft"
-        title="Camshaft Selection Guide"
-        subtitle="The systematic approach to selecting the right cam for your combo. Not a magic cam picker — a real guide to understanding the decision."
+        title="Cam Selection Tool"
+        subtitle="Everything you need to choose, analyze, and time a camshaft — from basic valve events to the full David Vizard methodology."
       />
 
-      <div className="container mx-auto max-w-4xl px-4 py-10">
+      {/* Tab navigation */}
+      <div className="border-b bg-white sticky top-0 z-20 shadow-sm">
+        <div className="container mx-auto max-w-4xl px-4">
+          <div className="flex overflow-x-auto">
+            {TABS.map(tab => (
+              <button
+                key={tab.id}
+                onClick={() => setActiveTab(tab.id)}
+                className={`px-5 py-3.5 text-sm font-semibold whitespace-nowrap border-b-2 transition-colors ${
+                  activeTab === tab.id
+                    ? "border-[#E85D04] text-[#E85D04]"
+                    : "border-transparent text-gray-500 hover:text-gray-800"
+                }`}
+              >
+                {tab.label}
+              </button>
+            ))}
+          </div>
+        </div>
+      </div>
+
+      {/* Simple cam timing tab */}
+      {activeTab === "simple" && <SimpleCamTiming />}
+
+      {/* David Vizard cam timing tab */}
+      {activeTab === "vizard" && <VizardTab />}
+
+      {/* Cam Selection Guide tab */}
+      {activeTab === "guide" && <div className="container mx-auto max-w-4xl px-4 py-10">
 
       {/* Build Planner link banner */}
       <div className="mb-8 p-4 rounded-lg border border-[#E85D04]/30 bg-[#E85D04]/5 flex items-center justify-between gap-4">
@@ -704,7 +884,7 @@ export default function CamGuide() {
           <strong>ZDDP Warning for Flat Tappet Cams:</strong> Modern API SM and SN engine oils have reduced zinc dialkyldithiophosphate (ZDDP) to protect catalytic converters. This is fatal for flat tappet cams. Use Driven HR3, Valvoline VR1, or add a ZDDP supplement (COMP Cams, ZDDPlus) for the first 1,000 miles minimum.
         </div>
       </section>
-      </div>
+      </div>}
     </div>
   );
 }
