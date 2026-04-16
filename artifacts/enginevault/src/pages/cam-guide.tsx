@@ -247,7 +247,7 @@ function VizardTab() {
               The formulas and methodology in this calculator come directly from David Vizard's landmark book — one of the most thorough technical references ever written on building performance engines. If you're serious about engine building, it belongs on your shelf.
             </p>
             <a
-              href="https://www.amazon.com/dp/0879384557?tag=YOUR-TAG-HERE"
+              href="https://amzn.to/4cMoisN"
               target="_blank"
               rel="noopener noreferrer"
               className="inline-flex items-center gap-2 bg-[#E85D04] hover:bg-[#d04f00] text-white font-bold px-6 py-3 rounded-lg transition-colors text-sm"
@@ -261,8 +261,8 @@ function VizardTab() {
         </div>
       </div>
 
-      {/* Full Vizard calculator */}
-      <VizardCamCalculator />
+      {/* Full Vizard calculator — banner already shown above, so hide the one inside */}
+      <VizardCamCalculator showBanner={false} />
     </div>
   );
 }

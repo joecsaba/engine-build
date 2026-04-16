@@ -210,7 +210,7 @@ function Section({ title, defaultOpen = true, children }: {
 
 // ── Main Component ─────────────────────────────────────────────────────────────
 
-export default function CamDurationCalculator() {
+export default function CamDurationCalculator({ showBanner = true }: { showBanner?: boolean }) {
   const [s, setS] = useState<State>(DEFAULT);
   const [copied, setCopied] = useState(false);
 
@@ -272,7 +272,8 @@ export default function CamDurationCalculator() {
 
   return (
     <div className="max-w-4xl mx-auto">
-      {/* Prominent book banner */}
+      {/* Prominent book banner — hidden when embedded inside the cam guide tab */}
+      {showBanner && (
       <div className="bg-[#1a1a1a] text-white rounded-xl mb-6 overflow-hidden">
         <div className="px-6 py-8 flex flex-col sm:flex-row items-center gap-6">
           <div className="text-5xl shrink-0">📖</div>
@@ -285,7 +286,7 @@ export default function CamDurationCalculator() {
               The formulas and methodology in this calculator come directly from David Vizard's landmark book — one of the most thorough technical references ever written on building performance engines.
             </p>
             <a
-              href="https://www.amazon.com/dp/0879384557?tag=YOUR-TAG-HERE"
+              href="https://amzn.to/4cMoisN"
               target="_blank"
               rel="noopener noreferrer"
               className="inline-flex items-center gap-2 bg-[#E85D04] hover:bg-[#d04f00] text-white font-bold px-5 py-2.5 rounded-lg transition-colors text-sm"
@@ -296,6 +297,7 @@ export default function CamDurationCalculator() {
           </div>
         </div>
       </div>
+      )}
 
       <div className="px-4 space-y-5">
       <div>
@@ -483,7 +485,7 @@ export default function CamDurationCalculator() {
           <div className="text-xs italic text-muted-foreground border-b pb-3">
             Formula and methodology from David Vizard's{" "}
             <a
-              href="https://www.amazon.com/dp/0879384557?tag=YOUR-TAG-HERE"
+              href="https://amzn.to/4cMoisN"
               target="_blank"
               rel="noopener noreferrer"
               className="underline hover:text-[#E85D04] transition-colors"
@@ -492,7 +494,7 @@ export default function CamDurationCalculator() {
             </a>
             . To learn more,{" "}
             <a
-              href="https://www.amazon.com/dp/0879384557?tag=YOUR-TAG-HERE"
+              href="https://amzn.to/4cMoisN"
               target="_blank"
               rel="noopener noreferrer"
               className="underline font-semibold hover:text-[#E85D04] transition-colors"
