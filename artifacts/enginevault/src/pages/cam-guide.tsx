@@ -320,7 +320,7 @@ export default function CamGuide() {
   const TABS = [
     { id: "guide",   label: "Cam Selection Guide" },
     { id: "simple",  label: "Simple Cam Timing" },
-    { id: "vizard",  label: "David Vizard Cam Timing" },
+    { id: "vizard",  label: "Advanced" },
   ] as const;
 
   return (
@@ -332,17 +332,17 @@ export default function CamGuide() {
       />
 
       {/* Tab navigation */}
-      <div className="border-b bg-white sticky top-0 z-20 shadow-sm">
+      <div className="bg-[#1a1a1a] sticky top-0 z-20">
         <div className="container mx-auto max-w-4xl px-4">
-          <div className="flex overflow-x-auto">
+          <div className="flex gap-2 py-3 overflow-x-auto">
             {TABS.map(tab => (
               <button
                 key={tab.id}
                 onClick={() => setActiveTab(tab.id)}
-                className={`px-5 py-3.5 text-sm font-semibold whitespace-nowrap border-b-2 transition-colors ${
+                className={`px-5 py-2.5 rounded-lg text-sm font-bold whitespace-nowrap transition-colors ${
                   activeTab === tab.id
-                    ? "border-[#E85D04] text-[#E85D04]"
-                    : "border-transparent text-gray-500 hover:text-gray-800"
+                    ? "bg-[#E85D04] text-white shadow"
+                    : "bg-white/10 text-gray-300 hover:bg-white/20 hover:text-white"
                 }`}
               >
                 {tab.label}

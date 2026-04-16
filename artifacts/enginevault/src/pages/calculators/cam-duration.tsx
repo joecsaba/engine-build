@@ -722,16 +722,7 @@ export default function CamDurationCalculator() {
           </div>
 
           <p className="text-xs text-center text-muted-foreground">
-            Based on David Vizard's{" "}
-            <a
-              href="https://www.amazon.com/dp/0879384557?tag=YOUR-TAG-HERE"
-              target="_blank"
-              rel="noopener noreferrer"
-              className="underline hover:text-[#E85D04] transition-colors"
-            >
-              <em>How to Build Horsepower</em>
-            </a>{" "}
-            — engine-build.com
+            engine-build.com
           </p>
         </div>
       </Section>
