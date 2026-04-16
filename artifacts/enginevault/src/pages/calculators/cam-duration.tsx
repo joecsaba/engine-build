@@ -275,7 +275,15 @@ export default function CamDurationCalculator() {
       <div>
         <h1 className="text-3xl font-bold mb-1">Vizard Cam Timing Calculator</h1>
         <p className="text-sm italic text-muted-foreground">
-          Based on David Vizard's methodology from <em>How to Build Horsepower</em>
+          Based on David Vizard's methodology from{" "}
+          <a
+            href="https://www.amazon.com/dp/0879384557?tag=YOUR-TAG-HERE"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="underline hover:text-[#E85D04] transition-colors"
+          >
+            <em>How to Build Horsepower</em>
+          </a>
         </p>
       </div>
 
@@ -455,7 +463,24 @@ export default function CamDurationCalculator() {
       <Section title="5 — Vizard's Recommended LCA Formula">
         <div className="space-y-5">
           <div className="text-xs italic text-muted-foreground border-b pb-3">
-            Formula and methodology from David Vizard's <em>How to Build Horsepower</em>. To learn more, read his book.
+            Formula and methodology from David Vizard's{" "}
+            <a
+              href="https://www.amazon.com/dp/0879384557?tag=YOUR-TAG-HERE"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="underline hover:text-[#E85D04] transition-colors"
+            >
+              <em>How to Build Horsepower</em>
+            </a>
+            . To learn more,{" "}
+            <a
+              href="https://www.amazon.com/dp/0879384557?tag=YOUR-TAG-HERE"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="underline font-semibold hover:text-[#E85D04] transition-colors"
+            >
+              get the book on Amazon →
+            </a>
           </div>
 
           <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
@@ -679,7 +704,16 @@ export default function CamDurationCalculator() {
           </div>
 
           <p className="text-xs text-center text-muted-foreground">
-            Based on David Vizard's <em>How to Build Horsepower</em> — engine-build.com
+            Based on David Vizard's{" "}
+            <a
+              href="https://www.amazon.com/dp/0879384557?tag=YOUR-TAG-HERE"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="underline hover:text-[#E85D04] transition-colors"
+            >
+              <em>How to Build Horsepower</em>
+            </a>{" "}
+            — engine-build.com
           </p>
         </div>
       </Section>
