@@ -21,8 +21,12 @@ import CamDurationCalculator from "@/pages/calculators/cam-duration";
 import RodRatioCalculator from "@/pages/calculators/rod-ratio";
 import HpTorqueCalculator from "@/pages/calculators/hp-torque";
 import PistonSpeedCalculator from "@/pages/calculators/piston-speed";
+import AfrLambdaCalculator from "@/pages/calculators/afr-lambda";
 
 import CamGuide from "@/pages/cam-guide";
+import TorqueSpecs from "@/pages/torque-specs";
+import Privacy from "@/pages/privacy";
+import Terms from "@/pages/terms";
 
 const queryClient = new QueryClient({
   defaultOptions: {
@@ -63,12 +67,17 @@ function Router() {
       <Switch>
         <Route path="/" component={Home} />
 
-        {/* Coming Soon sections */}
-        <Route path="/specs" component={ComingSoon} />
-        <Route path="/specs/:rest*" component={ComingSoon} />
-        <Route path="/torque-specs" component={ComingSoon} />
+        {/* Coming Soon sections (v2) */}
+        <Route path="/engine-data" component={TorqueSpecs} />
+        <Route path="/torque-specs" component={TorqueSpecs} />
+        <Route path="/specs" component={TorqueSpecs} />
+        <Route path="/specs/:rest*" component={TorqueSpecs} />
         <Route path="/build-sheets" component={ComingSoon} />
         <Route path="/build-sheets/:rest*" component={ComingSoon} />
+        <Route path="/articles" component={ComingSoon} />
+        <Route path="/articles/:rest*" component={ComingSoon} />
+        <Route path="/sign-in/*?" component={ComingSoon} />
+        <Route path="/sign-up/*?" component={ComingSoon} />
 
         {/* Live calculators */}
         <Route path="/calculators" component={CalculatorsIndex} />
@@ -79,11 +88,13 @@ function Router() {
         <Route path="/calculators/rod-ratio" component={RodRatioCalculator} />
         <Route path="/calculators/hp-torque" component={HpTorqueCalculator} />
         <Route path="/calculators/piston-speed" component={PistonSpeedCalculator} />
+        <Route path="/calculators/afr-lambda" component={AfrLambdaCalculator} />
 
         <Route path="/cam-guide" component={CamGuide} />
 
-        <Route path="/sign-in/*?" component={SignInPage} />
-        <Route path="/sign-up/*?" component={SignUpPage} />
+        {/* Legal */}
+        <Route path="/privacy" component={Privacy} />
+        <Route path="/terms" component={Terms} />
 
         <Route component={NotFound} />
       </Switch>

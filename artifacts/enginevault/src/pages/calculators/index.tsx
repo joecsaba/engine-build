@@ -23,10 +23,10 @@ const calculators = [
     tags: ["Bore Size", "Application", "Ring Type"],
   },
   {
-    title: "Vizard Cam Timing Calculator",
+    title: "Advanced Cam Calculator",
     href: "/calculators/cam-duration",
-    desc: "Full cam analysis using David Vizard's methodology — valve events, overlap, recommended LCA, and dynamic compression ratio.",
-    tags: ["Cam Timing", "Overlap", "LCA", "Dynamic CR"],
+    desc: "Full cam analysis — valve events, overlap, recommended LSA, dynamic compression ratio, and rocker lift table.",
+    tags: ["Cam Timing", "Overlap", "LSA", "Dynamic CR"],
   },
   {
     title: "Connecting Rod Ratio",
@@ -45,6 +45,12 @@ const calculators = [
     href: "/calculators/piston-speed",
     desc: "Mean and peak piston speed with color-coded safety zones. Reference table of common engine redlines.",
     tags: ["Stroke", "RPM", "FPM"],
+  },
+  {
+    title: "AFR / Lambda Converter",
+    href: "/calculators/afr-lambda",
+    desc: "Convert between Lambda, actual AFR, and gas-scale wideband AFR for any fuel. Variable E85 ethanol slider and injector sizing math.",
+    tags: ["Lambda", "AFR", "E85", "Wideband"],
   },
 ];
 
