@@ -23,6 +23,12 @@ const calculators = [
     tags: ["Bore Size", "Application", "Ring Type"],
   },
   {
+    title: "Advanced Ring Gap Calculator",
+    href: "/calculators/ring-gap-advanced",
+    desc: "Application-specific ring gap for NA, nitrous, turbo, supercharged, and diesel. Per-ring outputs, material warnings, and file-gap workflow.",
+    tags: ["Nitrous", "Turbo", "Diesel", "Material", "Per-Ring"],
+  },
+  {
     title: "Advanced Cam Calculator",
     href: "/calculators/cam-duration",
     desc: "Full cam analysis — valve events, overlap, recommended LSA, dynamic compression ratio, and rocker lift table.",
@@ -57,6 +63,24 @@ const calculators = [
     href: "/calculators/quench-deck-height",
     desc: "Calculate piston-to-deck clearance, quench distance, and compression ratio simultaneously. Gasket quick-picker updates everything live.",
     tags: ["Quench", "Deck Height", "Gasket", "CR"],
+  },
+  {
+    title: "Pushrod Length Calculator",
+    href: "/calculators/pushrod-length",
+    desc: "Determine correct pushrod length after head milling, cam swaps, or rocker changes. Stock lengths for SBC, BBC, LS, SBF, and Hemi platforms.",
+    tags: ["Pushrod", "Valvetrain", "Rocker Geometry"],
+  },
+  {
+    title: "Cam Degreeing",
+    href: "/calculators/cam-degreeing",
+    desc: "Step-by-step cam degreeing guide with intake centerline verification, advance/retard calculation, and dial indicator math.",
+    tags: ["Cam Degreeing", "Intake Centerline", "Dial Indicator"],
+  },
+  {
+    title: "Piston-to-Valve Clearance",
+    href: "/calculators/piston-to-valve",
+    desc: "Kinematic P2V simulation across the overlap region. Engine platform presets, live cam advance slider, clearance chart, and interference warnings.",
+    tags: ["P2V", "Cam Advance", "Valve Relief", "Interference"],
   },
 ];
 

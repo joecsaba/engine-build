@@ -26,6 +26,8 @@ import QuenchDeckHeightCalculator from "@/pages/calculators/quench-deck-height";
 import PushrodLengthCalculator from "@/pages/calculators/pushrod-length";
 import PistonToValveCalculator from "@/pages/calculators/piston-to-valve";
 import CamDegreeingCalculator from "@/pages/calculators/cam-degreeing";
+import ValveSpringCalculator from "@/pages/calculators/valve-spring";
+import RingGapAdvancedCalculator from "@/pages/calculators/ring-gap-advanced";
 
 import CamGuide from "@/pages/cam-guide";
 import TorqueSpecs from "@/pages/torque-specs";
@@ -88,6 +90,7 @@ function Router() {
         <Route path="/calculators/displacement" component={DisplacementCalculator} />
         <Route path="/calculators/compression-ratio" component={CompressionRatioCalculator} />
         <Route path="/calculators/ring-gap" component={RingGapCalculator} />
+        <Route path="/calculators/ring-gap-advanced" component={RingGapAdvancedCalculator} />
         <Route path="/calculators/cam-duration" component={CamDurationCalculator} />
         <Route path="/calculators/rod-ratio" component={RodRatioCalculator} />
         <Route path="/calculators/hp-torque" component={HpTorqueCalculator} />
@@ -97,6 +100,7 @@ function Router() {
         <Route path="/calculators/pushrod-length" component={PushrodLengthCalculator} />
         <Route path="/calculators/piston-to-valve" component={PistonToValveCalculator} />
         <Route path="/calculators/cam-degreeing" component={CamDegreeingCalculator} />
+        <Route path="/calculators/valve-spring" component={ValveSpringCalculator} />
 
         <Route path="/cam-guide" component={CamGuide} />
 

@@ -1,4 +1,5 @@
 import { useState } from "react";
+import { Link } from "wouter";
 import { SEOHead } from "@/components/SEOHead";
 import { Input } from "@/components/ui/input";
 import { Label } from "@/components/ui/label";
@@ -46,7 +47,15 @@ export default function RingGapCalculator() {
         keywords="piston ring gap calculator, ring end gap, piston ring clearance, ring gap chart, engine ring gap specs"
       />
       <h1 className="text-3xl font-bold mb-2">Piston Ring End Gap Calculator</h1>
-      <p className="text-muted-foreground mb-8">Application-specific ring gap recommendations with color-coded zones.</p>
+      <p className="text-muted-foreground mb-4">Application-specific ring gap recommendations with color-coded zones.</p>
+      <div className="p-3 rounded-lg border border-[#E85D04]/30 bg-[#E85D04]/5 mb-8">
+        <p className="text-sm">
+          <Link href="/calculators/ring-gap-advanced" className="text-[#E85D04] font-medium hover:underline">
+            See our upgraded version with application-specific recommendations
+          </Link>
+          {" "}&mdash; per-ring outputs for NA, nitrous, turbo, supercharged & diesel builds with material warnings.
+        </p>
+      </div>
 
       <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
         <Card>
