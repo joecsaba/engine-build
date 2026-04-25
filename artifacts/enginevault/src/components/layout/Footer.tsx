@@ -12,6 +12,7 @@ export function Footer() {
         { href: "/calculators/cam-duration", label: "Cam Duration" },
         { href: "/calculators/rod-ratio", label: "Rod Ratio" },
         { href: "/calculators/hp-torque", label: "HP / Torque" },
+        { href: "/calculators/cam-degreeing", label: "Cam Degreeing" },
       ],
     },
     {
