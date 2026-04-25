@@ -121,19 +121,19 @@ function getHardwareRec(diff: number): { text: string; color: string; bg: string
   if (absDiff <= 1) return null;
 
   if (absDiff <= 4) return {
-    text: `Cloyes Hex-A-Just or similar multi-position timing gear. Install at the ${absDiff.toFixed(0)}\u00b0 ${direction} position to ${targetICL}.`,
+    text: `Cloyes Hex-A-Just or similar multi-position timing gear. Install at the ${absDiff.toFixed(0)}° ${direction} position to ${targetICL}.`,
     color: "text-gray-900",
     bg: "bg-white border-gray-200",
   };
 
   if (absDiff <= 8) return {
-    text: `Offset bushing. Use a ${Math.round(absDiff)}\u00b0 ${direction} bushing to shift cam timing by the required amount. Comp Cams offset bushings come in 2\u00b0, 4\u00b0, 6\u00b0, 8\u00b0 sizes. Pick the one matching the correction needed.`,
+    text: `Offset bushing. Use a ${Math.round(absDiff)}° ${direction} bushing to shift cam timing by the required amount. Comp Cams offset bushings come in 2°, 4°, 6°, 8° sizes. Pick the one matching the correction needed.`,
     color: "text-gray-900",
     bg: "bg-white border-gray-200",
   };
 
   return {
-    text: "This is likely a TDC measurement error, not a real cam offset. Re-do Step 2 with a fresh piston stop installation. If the error persists, check for: slipping degree wheel, wrong timing gear installation (dot-to-dot?), cam installed 180\u00b0 out (exhaust lobe being measured as intake).",
+    text: "This is likely a TDC measurement error, not a real cam offset. Re-do Step 2 with a fresh piston stop installation. If the error persists, check for: slipping degree wheel, wrong timing gear installation (dot-to-dot?), cam installed 180° out (exhaust lobe being measured as intake).",
     color: "text-red-700",
     bg: "bg-red-50 border-red-200",
   };
@@ -206,26 +206,26 @@ export default function CamDegreeingCalculator() {
       "=== CAM DEGREEING — BUILD SHEET ===",
       "",
       "CAM CARD SPECS",
-      `Intake Duration at 0.050": ${s.intDuration050}\u00b0`,
-      `Exhaust Duration at 0.050": ${s.exhDuration050}\u00b0`,
+      `Intake Duration at 0.050": ${s.intDuration050}°`,
+      `Exhaust Duration at 0.050": ${s.exhDuration050}°`,
       `Intake Max Lift: ${s.intMaxLift}"`,
       `Exhaust Max Lift: ${s.exhMaxLift}"`,
-      `LSA: ${s.lsa}\u00b0`,
-      `Card ICL: ${s.cardICL}\u00b0 ATDC`,
-      `Card Exhaust CL: ${C.cardExhCL.toFixed(1)}\u00b0 BTDC`,
+      `LSA: ${s.lsa}°`,
+      `Card ICL: ${s.cardICL}° ATDC`,
+      `Card Exhaust CL: ${C.cardExhCL.toFixed(1)}° BTDC`,
       "",
       "TDC VERIFICATION",
-      `Reading CW: ${s.tdcReadingCW}\u00b0  |  Reading CCW: ${s.tdcReadingCCW}\u00b0`,
-      `TDC Offset: ${C.tdcOffset >= 0 ? "+" : ""}${C.tdcOffset.toFixed(1)}\u00b0`,
+      `Reading CW: ${s.tdcReadingCW}°  |  Reading CCW: ${s.tdcReadingCCW}°`,
+      `TDC Offset: ${C.tdcOffset >= 0 ? "+" : ""}${C.tdcOffset.toFixed(1)}°`,
       "",
       "MEASURED VALVE EVENTS (at 0.050\")",
-      `IVO: ${s.ivoMeasured}\u00b0 BTDC  |  IVC: ${s.ivcMeasured}\u00b0 ABDC`,
-      `Measured Duration: ${C.measuredDuration}\u00b0 (card: ${s.intDuration050}\u00b0)`,
+      `IVO: ${s.ivoMeasured}° BTDC  |  IVC: ${s.ivcMeasured}° ABDC`,
+      `Measured Duration: ${C.measuredDuration}° (card: ${s.intDuration050}°)`,
       "",
       "INTAKE CENTERLINE COMPARISON",
-      `Measured ICL: ${C.measuredICL.toFixed(1)}\u00b0 ATDC`,
-      `Card ICL: ${C.cardICL}\u00b0 ATDC`,
-      `Difference: ${C.iclDifference >= 0 ? "+" : ""}${C.iclDifference.toFixed(1)}\u00b0 (${C.iclDifference > 0 ? "retarded" : C.iclDifference < 0 ? "advanced" : "on spec"})`,
+      `Measured ICL: ${C.measuredICL.toFixed(1)}° ATDC`,
+      `Card ICL: ${C.cardICL}° ATDC`,
+      `Difference: ${C.iclDifference >= 0 ? "+" : ""}${C.iclDifference.toFixed(1)}° (${C.iclDifference > 0 ? "retarded" : C.iclDifference < 0 ? "advanced" : "on spec"})`,
       `Status: ${iclStatus.label}`,
     ];
 
@@ -233,8 +233,8 @@ export default function CamDegreeingCalculator() {
       lines.push(
         "",
         "PEAK-LIFT VERIFICATION",
-        `Peak Lift ICL: ${C.peakAngle.toFixed(1)}\u00b0 ATDC`,
-        `Variance from 0.050" ICL: ${C.peakLiftVariance!.toFixed(1)}\u00b0`,
+        `Peak Lift ICL: ${C.peakAngle.toFixed(1)}° ATDC`,
+        `Variance from 0.050" ICL: ${C.peakLiftVariance!.toFixed(1)}°`,
       );
     }
 
@@ -307,12 +307,12 @@ export default function CamDegreeingCalculator() {
               <div className="grid grid-cols-2 gap-3 text-center">
                 <div className="bg-white/10 rounded p-3">
                   <div className="text-xs text-gray-400">Card ICL (target)</div>
-                  <div className="text-2xl font-bold text-[#E85D04] mt-1">{C.cardICL}\u00b0 ATDC</div>
+                  <div className="text-2xl font-bold text-[#E85D04] mt-1">{C.cardICL}° ATDC</div>
                 </div>
                 <div className="bg-white/10 rounded p-3">
                   <div className="text-xs text-gray-400">Card Exhaust CL</div>
-                  <div className="text-2xl font-bold text-white mt-1">{C.cardExhCL.toFixed(1)}\u00b0 BTDC</div>
-                  <div className="text-xs text-gray-500 mt-0.5">2 \u00d7 LSA \u2212 ICL = {(2 * C.lsa).toFixed(0)} \u2212 {C.cardICL} = {C.cardExhCL.toFixed(1)}</div>
+                  <div className="text-2xl font-bold text-white mt-1">{C.cardExhCL.toFixed(1)}° BTDC</div>
+                  <div className="text-xs text-gray-500 mt-0.5">2 × LSA − ICL = {(2 * C.lsa).toFixed(0)} − {C.cardICL} = {C.cardExhCL.toFixed(1)}</div>
                 </div>
               </div>
             </div>
@@ -324,7 +324,7 @@ export default function CamDegreeingCalculator() {
           <div className="space-y-5">
             <div className="bg-gray-50 border rounded-lg p-4 text-sm text-muted-foreground space-y-2">
               <p>
-                The timing pointer on your damper is usually off by 1\u20133 degrees. Before degreeing your cam, establish true TDC using a piston stop.
+                The timing pointer on your damper is usually off by 1–3 degrees. Before degreeing your cam, establish true TDC using a piston stop.
               </p>
               <p>
                 Install a piston stop (a bolt that sticks down into the spark plug hole to prevent the piston from reaching TDC). Rotate the crank <strong>clockwise</strong> until the piston hits the stop. Note the degree. Then rotate <strong>counter-clockwise</strong> past the other side until the piston hits again. Note that degree too. True TDC is exactly halfway between the two readings.
@@ -345,28 +345,28 @@ export default function CamDegreeingCalculator() {
               <div className="grid grid-cols-1 sm:grid-cols-3 gap-3 text-center">
                 <div className="bg-white/10 rounded p-3">
                   <div className="text-xs text-gray-400">Average of Readings</div>
-                  <div className="text-2xl font-bold mt-1">{C.tdcAverage.toFixed(1)}\u00b0</div>
+                  <div className="text-2xl font-bold mt-1">{C.tdcAverage.toFixed(1)}°</div>
                 </div>
                 <div className="bg-white/10 rounded p-3">
                   <div className="text-xs text-gray-400">TDC Offset from Pointer</div>
-                  <div className="text-2xl font-bold text-[#E85D04] mt-1">{Math.abs(C.tdcOffset).toFixed(1)}\u00b0</div>
+                  <div className="text-2xl font-bold text-[#E85D04] mt-1">{Math.abs(C.tdcOffset).toFixed(1)}°</div>
                 </div>
                 <div className="bg-white/10 rounded p-3">
                   <div className="text-xs text-gray-400">Rotate Pointer</div>
                   <div className="text-2xl font-bold mt-1">
-                    {C.tdcOffset === 0 ? "No correction" : `${Math.abs(C.tdcOffset).toFixed(1)}\u00b0 ${C.tdcOffset > 0 ? "CW" : "CCW"}`}
+                    {C.tdcOffset === 0 ? "No correction" : `${Math.abs(C.tdcOffset).toFixed(1)}° ${C.tdcOffset > 0 ? "CW" : "CCW"}`}
                   </div>
                 </div>
               </div>
               <div className="text-xs text-gray-500 text-center">
-                TDC offset = (CW \u2212 CCW) / 2 = ({C.readCW} \u2212 {C.readCCW}) / 2 = {C.tdcOffset >= 0 ? "+" : ""}{C.tdcOffset.toFixed(1)}\u00b0
+                TDC offset = (CW − CCW) / 2 = ({C.readCW} − {C.readCCW}) / 2 = {C.tdcOffset >= 0 ? "+" : ""}{C.tdcOffset.toFixed(1)}°
               </div>
             </div>
 
             {/* TDC Warning */}
             {C.tdcReadingsDiff > 3 && (
               <div className="p-4 rounded-lg border bg-yellow-50 border-yellow-200">
-                <p className="font-bold text-yellow-700">Readings differ significantly ({C.tdcReadingsDiff.toFixed(1)}\u00b0 apart)</p>
+                <p className="font-bold text-yellow-700">Readings differ significantly ({C.tdcReadingsDiff.toFixed(1)}° apart)</p>
                 <p className="text-sm mt-1 text-muted-foreground">
                   This usually means the degree wheel is slipping. Re-verify that the wheel is securely mounted to the crank snout.
                 </p>
@@ -401,19 +401,19 @@ export default function CamDegreeingCalculator() {
               <div className="flex justify-between items-center">
                 <div>
                   <div className="text-xs text-gray-400">Measured Intake Duration at 0.050"</div>
-                  <div className="text-3xl font-bold text-[#E85D04] mt-1">{C.measuredDuration}\u00b0</div>
-                  <div className="text-xs text-gray-500 mt-0.5">IVO + 180 + IVC = {C.ivoMeasured} + 180 + {C.ivcMeasured} = {C.measuredDuration}\u00b0</div>
+                  <div className="text-3xl font-bold text-[#E85D04] mt-1">{C.measuredDuration}°</div>
+                  <div className="text-xs text-gray-500 mt-0.5">IVO + 180 + IVC = {C.ivoMeasured} + 180 + {C.ivcMeasured} = {C.measuredDuration}°</div>
                 </div>
                 <div className="text-right">
                   <div className="text-xs text-gray-400">Card Duration</div>
-                  <div className="text-3xl font-bold text-white mt-1">{C.intDur050}\u00b0</div>
+                  <div className="text-3xl font-bold text-white mt-1">{C.intDur050}°</div>
                 </div>
               </div>
             </div>
 
             {C.durationDiff > 5 && (
               <div className="p-4 rounded-lg border bg-yellow-50 border-yellow-200">
-                <p className="font-bold text-yellow-700">Measured duration differs from cam card by {C.durationDiff.toFixed(0)}\u00b0</p>
+                <p className="font-bold text-yellow-700">Measured duration differs from cam card by {C.durationDiff.toFixed(0)}°</p>
                 <p className="text-sm mt-1 text-muted-foreground">
                   Double-check your dial indicator calibration and make sure you're reading at exactly 0.050 inch lift. A large discrepancy usually means the indicator isn't zeroed on the base circle or is measuring at the wrong lift point.
                 </p>
@@ -428,17 +428,17 @@ export default function CamDegreeingCalculator() {
             <div className="grid grid-cols-2 sm:grid-cols-4 gap-3">
               <div className="rounded-lg border bg-gray-50 p-3 text-center">
                 <div className="text-xs text-gray-500 mb-1">Measured ICL</div>
-                <div className="text-3xl font-bold text-[#E85D04]">{C.measuredICL.toFixed(1)}\u00b0</div>
+                <div className="text-3xl font-bold text-[#E85D04]">{C.measuredICL.toFixed(1)}°</div>
                 <div className="text-xs text-gray-500">ATDC</div>
               </div>
               <div className="rounded-lg border bg-gray-50 p-3 text-center">
                 <div className="text-xs text-gray-500 mb-1">Card ICL</div>
-                <div className="text-3xl font-bold text-gray-900">{C.cardICL}\u00b0</div>
+                <div className="text-3xl font-bold text-gray-900">{C.cardICL}°</div>
                 <div className="text-xs text-gray-500">ATDC</div>
               </div>
               <div className="rounded-lg border bg-gray-50 p-3 text-center sm:col-span-2">
                 <div className="text-xs text-gray-500 mb-1">Difference</div>
-                <div className="text-3xl font-bold text-[#E85D04]">{C.iclDifference >= 0 ? "+" : ""}{C.iclDifference.toFixed(1)}\u00b0</div>
+                <div className="text-3xl font-bold text-[#E85D04]">{C.iclDifference >= 0 ? "+" : ""}{C.iclDifference.toFixed(1)}°</div>
                 <div className="text-xs text-gray-500">
                   {C.iclDifference > 0 ? "cam is retarded" : C.iclDifference < 0 ? "cam is advanced" : "on spec"}
                 </div>
@@ -446,8 +446,8 @@ export default function CamDegreeingCalculator() {
             </div>
 
             <div className="bg-gray-50 border rounded-lg p-4 space-y-1 text-xs text-muted-foreground">
-              <p>Measured ICL = (IVC + 180 \u2212 IVO) / 2 = ({C.ivcMeasured} + 180 \u2212 {C.ivoMeasured}) / 2 = {C.measuredICL.toFixed(1)}\u00b0</p>
-              <p>Difference = Measured ICL \u2212 Card ICL = {C.measuredICL.toFixed(1)} \u2212 {C.cardICL} = {C.iclDifference >= 0 ? "+" : ""}{C.iclDifference.toFixed(1)}\u00b0</p>
+              <p>Measured ICL = (IVC + 180 − IVO) / 2 = ({C.ivcMeasured} + 180 − {C.ivoMeasured}) / 2 = {C.measuredICL.toFixed(1)}°</p>
+              <p>Difference = Measured ICL − Card ICL = {C.measuredICL.toFixed(1)} − {C.cardICL} = {C.iclDifference >= 0 ? "+" : ""}{C.iclDifference.toFixed(1)}°</p>
             </div>
 
             {/* Status badge */}
@@ -465,20 +465,20 @@ export default function CamDegreeingCalculator() {
               <div className="p-4 rounded-lg border bg-green-50 border-green-200">
                 <p className="font-bold text-green-700">No correction needed</p>
                 <p className="text-sm mt-1 text-muted-foreground">
-                  Your cam is installed within 1\u00b0 of the cam card spec. This is within measurement precision — don't install an offset bushing for a 1\u00b0 difference, you'll just introduce different tolerance errors.
+                  Your cam is installed within 1° of the cam card spec. This is within measurement precision — don't install an offset bushing for a 1° difference, you'll just introduce different tolerance errors.
                 </p>
               </div>
             ) : hwRec && (
               <div className={`p-4 rounded-lg border ${hwRec.bg}`}>
                 <p className={`font-bold ${hwRec.color}`}>
-                  {Math.abs(C.iclDifference) > 8 ? "Re-verify TDC first" : `Recommended: ${Math.abs(C.iclDifference).toFixed(0)}\u00b0 ${C.iclDifference > 0 ? "advance" : "retard"} correction`}
+                  {Math.abs(C.iclDifference) > 8 ? "Re-verify TDC first" : `Recommended: ${Math.abs(C.iclDifference).toFixed(0)}° ${C.iclDifference > 0 ? "advance" : "retard"} correction`}
                 </p>
                 <p className="text-sm mt-2 text-muted-foreground">{hwRec.text}</p>
               </div>
             )}
 
             <div className="bg-gray-50 border rounded-lg p-4 text-sm text-muted-foreground space-y-2">
-              <p><strong>Why "advance" corrects a retarded cam:</strong> If the measured ICL is higher than the card spec (e.g., 110\u00b0 vs 106\u00b0), valve events happen later in crank rotation than designed. An advance bushing or gear position shifts events earlier, bringing the ICL back down to the target.</p>
+              <p><strong>Why "advance" corrects a retarded cam:</strong> If the measured ICL is higher than the card spec (e.g., 110° vs 106°), valve events happen later in crank rotation than designed. An advance bushing or gear position shifts events earlier, bringing the ICL back down to the target.</p>
             </div>
           </div>
         </Section>
@@ -505,22 +505,22 @@ export default function CamDegreeingCalculator() {
                   <div className="grid grid-cols-1 sm:grid-cols-3 gap-3 text-center">
                     <div className="bg-white/10 rounded p-3">
                       <div className="text-xs text-gray-400">Peak-Lift ICL</div>
-                      <div className="text-2xl font-bold text-[#E85D04] mt-1">{C.peakAngle.toFixed(1)}\u00b0 ATDC</div>
+                      <div className="text-2xl font-bold text-[#E85D04] mt-1">{C.peakAngle.toFixed(1)}° ATDC</div>
                     </div>
                     <div className="bg-white/10 rounded p-3">
                       <div className="text-xs text-gray-400">0.050" ICL (Step 4)</div>
-                      <div className="text-2xl font-bold text-white mt-1">{C.measuredICL.toFixed(1)}\u00b0 ATDC</div>
+                      <div className="text-2xl font-bold text-white mt-1">{C.measuredICL.toFixed(1)}° ATDC</div>
                     </div>
                     <div className="bg-white/10 rounded p-3">
                       <div className="text-xs text-gray-400">Variance</div>
-                      <div className="text-2xl font-bold text-white mt-1">{C.peakLiftVariance!.toFixed(1)}\u00b0</div>
+                      <div className="text-2xl font-bold text-white mt-1">{C.peakLiftVariance!.toFixed(1)}°</div>
                     </div>
                   </div>
                 </div>
 
                 {C.peakLiftVariance! > 2 && (
                   <div className="p-4 rounded-lg border bg-yellow-50 border-yellow-200">
-                    <p className="font-bold text-yellow-700">Lobe appears asymmetric ({C.peakLiftVariance!.toFixed(1)}\u00b0 variance)</p>
+                    <p className="font-bold text-yellow-700">Lobe appears asymmetric ({C.peakLiftVariance!.toFixed(1)}° variance)</p>
                     <p className="text-sm mt-1 text-muted-foreground">
                       For cams near P2V limits or near race-level RPM, peak-lift ICL is more reliable than 0.050 inch ICL for valve event timing decisions.
                     </p>
@@ -538,25 +538,25 @@ export default function CamDegreeingCalculator() {
               <Card>
                 <CardHeader><CardTitle className="text-base">Cam Card Specs</CardTitle></CardHeader>
                 <CardContent className="space-y-0.5">
-                  <ResultRow label='Intake Duration at 0.050"' value={`${s.intDuration050}\u00b0`} />
-                  <ResultRow label='Exhaust Duration at 0.050"' value={`${s.exhDuration050}\u00b0`} />
+                  <ResultRow label='Intake Duration at 0.050"' value={`${s.intDuration050}°`} />
+                  <ResultRow label='Exhaust Duration at 0.050"' value={`${s.exhDuration050}°`} />
                   <ResultRow label="Intake Max Lift" value={`${s.intMaxLift}"`} />
                   <ResultRow label="Exhaust Max Lift" value={`${s.exhMaxLift}"`} />
-                  <ResultRow label="LSA" value={`${s.lsa}\u00b0`} />
-                  <ResultRow label="Card ICL" value={`${s.cardICL}\u00b0 ATDC`} />
-                  <ResultRow label="Card Exhaust CL" value={`${C.cardExhCL.toFixed(1)}\u00b0 BTDC`} />
+                  <ResultRow label="LSA" value={`${s.lsa}°`} />
+                  <ResultRow label="Card ICL" value={`${s.cardICL}° ATDC`} />
+                  <ResultRow label="Card Exhaust CL" value={`${C.cardExhCL.toFixed(1)}° BTDC`} />
                 </CardContent>
               </Card>
 
               <Card>
                 <CardHeader><CardTitle className="text-base">Measurements & Results</CardTitle></CardHeader>
                 <CardContent className="space-y-0.5">
-                  <ResultRow label="TDC Offset" value={`${C.tdcOffset === 0 ? "0" : (C.tdcOffset >= 0 ? "+" : "") + C.tdcOffset.toFixed(1)}\u00b0`} sub={C.tdcOffset === 0 ? "Pointer is accurate" : `Rotate pointer ${Math.abs(C.tdcOffset).toFixed(1)}\u00b0 ${C.tdcOffset > 0 ? "CW" : "CCW"}`} />
-                  <ResultRow label='IVO at 0.050"' value={`${s.ivoMeasured}\u00b0 BTDC`} />
-                  <ResultRow label='IVC at 0.050"' value={`${s.ivcMeasured}\u00b0 ABDC`} />
-                  <ResultRow label="Measured Duration" value={`${C.measuredDuration}\u00b0`} sub={`Card: ${s.intDuration050}\u00b0`} />
-                  <ResultRow label="Measured ICL" value={`${C.measuredICL.toFixed(1)}\u00b0 ATDC`} />
-                  <ResultRow label="Difference from Card" value={`${C.iclDifference >= 0 ? "+" : ""}${C.iclDifference.toFixed(1)}\u00b0`} sub={iclStatus.label} />
+                  <ResultRow label="TDC Offset" value={`${C.tdcOffset === 0 ? "0" : (C.tdcOffset >= 0 ? "+" : "") + C.tdcOffset.toFixed(1)}°`} sub={C.tdcOffset === 0 ? "Pointer is accurate" : `Rotate pointer ${Math.abs(C.tdcOffset).toFixed(1)}° ${C.tdcOffset > 0 ? "CW" : "CCW"}`} />
+                  <ResultRow label='IVO at 0.050"' value={`${s.ivoMeasured}° BTDC`} />
+                  <ResultRow label='IVC at 0.050"' value={`${s.ivcMeasured}° ABDC`} />
+                  <ResultRow label="Measured Duration" value={`${C.measuredDuration}°`} sub={`Card: ${s.intDuration050}°`} />
+                  <ResultRow label="Measured ICL" value={`${C.measuredICL.toFixed(1)}° ATDC`} />
+                  <ResultRow label="Difference from Card" value={`${C.iclDifference >= 0 ? "+" : ""}${C.iclDifference.toFixed(1)}°`} sub={iclStatus.label} />
                 </CardContent>
               </Card>
             </div>
@@ -589,23 +589,23 @@ export default function CamDegreeingCalculator() {
           </CardHeader>
           <CardContent className="prose prose-sm max-w-none text-muted-foreground space-y-3">
             <p>
-              Manufacturing tolerances in cam blanks, keyways, and timing chains can stack to 2\u20136\u00b0 of error even on a brand-new timing set. Degreeing verifies the cam is actually installed where the cam card says it should be. This is usually the difference between a dog of an engine and a strong one \u2014 or, in extreme cases, between a safe build and a bent-valve event.
+              Manufacturing tolerances in cam blanks, keyways, and timing chains can stack to 2–6° of error even on a brand-new timing set. Degreeing verifies the cam is actually installed where the cam card says it should be. This is usually the difference between a dog of an engine and a strong one — or, in extreme cases, between a safe build and a bent-valve event.
             </p>
             <h3 className="text-sm font-semibold text-foreground mt-4">Advance vs. Retard Effects</h3>
             <p>
-              Advancing the cam by 4\u00b0 typically gains 4\u20136 ft-lb of peak torque at low RPM and loses 3\u20135 HP at peak HP. Retarding does the opposite. This trade-off is why some cam grinders sell the same lobe at different ICLs depending on application.
+              Advancing the cam by 4° typically gains 4–6 ft-lb of peak torque at low RPM and loses 3–5 HP at peak HP. Retarding does the opposite. This trade-off is why some cam grinders sell the same lobe at different ICLs depending on application.
             </p>
             <h3 className="text-sm font-semibold text-foreground mt-4">Why Most Street Engines Benefit from Some Advance</h3>
             <p>
-              Factory cams are usually ground with the ICL advanced 2\u20134\u00b0 from the design spec to favor low-RPM torque. Builders who install the cam "straight up" (exactly per card) often feel the engine is lazy at low RPM vs factory feel.
+              Factory cams are usually ground with the ICL advanced 2–4° from the design spec to favor low-RPM torque. Builders who install the cam "straight up" (exactly per card) often feel the engine is lazy at low RPM vs factory feel.
             </p>
             <h3 className="text-sm font-semibold text-foreground mt-4">The Two Most Common Degreeing Errors</h3>
             <p>
-              Not establishing true TDC with a piston stop (the damper pointer can be off 1\u20133\u00b0). Not removing all slack from the degree wheel before reading (backlash adds 0.5\u20131\u00b0 of error on every reading).
+              Not establishing true TDC with a piston stop (the damper pointer can be off 1–3°). Not removing all slack from the degree wheel before reading (backlash adds 0.5–1° of error on every reading).
             </p>
             <h3 className="text-sm font-semibold text-foreground mt-4">When to Stop Chasing Perfection</h3>
             <p>
-              A 1\u00b0 difference from card spec is within measurement precision. Don't install an offset bushing for 1\u00b0 \u2014 you'll just introduce different tolerance errors. 3\u00b0 of difference is worth correcting on a race engine; 2\u00b0 is the threshold on a street build.
+              A 1° difference from card spec is within measurement precision. Don't install an offset bushing for 1° — you'll just introduce different tolerance errors. 3° of difference is worth correcting on a race engine; 2° is the threshold on a street build.
             </p>
           </CardContent>
         </Card>
