@@ -1,4 +1,5 @@
 import { useState, useCallback } from "react";
+import { SEOHead } from "@/components/SEOHead";
 import { Input } from "@/components/ui/input";
 import { Label } from "@/components/ui/label";
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
@@ -8,35 +9,31 @@ import { ChevronDown, Printer, Clipboard, Check } from "lucide-react";
 // ── Types ──────────────────────────────────────────────────────────────────────
 
 type LifterType = "hydraulic_flat" | "hydraulic_roller" | "solid_flat" | "solid_roller";
-type ManifoldType = "dual_plane" | "single_plane" | "tunnel_ram" | "tbi_stock";
-
 interface State {
   intAdv: string; exhAdv: string;
   int050: string; exh050: string;
-  intLCA: string; exhLCA: string;
+  lsa: string;
   advance: string;
   intLift: string; exhLift: string;
   lifterType: LifterType; valveLash: string;
   oemRocker: string; custom1Rocker: string; custom2Rocker: string;
   displacement: string; cylinders: string;
   intakeValveDia: string; valvesPerCyl: string;
-  compressionRatio: string; valveAngle: string;
-  manifold: ManifoldType;
+  compressionRatio: string;
   stroke: string; rodLength: string; bore: string;
 }
 
 const DEFAULT: State = {
   intAdv: "270", exhAdv: "276",
   int050: "224", exh050: "230",
-  intLCA: "108", exhLCA: "116",
+  lsa: "112",
   advance: "4",
-  intLift: "0.360", exhLift: "0.370",
+  intLift: "0.540", exhLift: "0.555",
   lifterType: "hydraulic_flat", valveLash: "0.000",
   oemRocker: "1.5", custom1Rocker: "1.6", custom2Rocker: "1.7",
   displacement: "350", cylinders: "8",
   intakeValveDia: "2.02", valvesPerCyl: "2",
-  compressionRatio: "10.0", valveAngle: "0",
-  manifold: "dual_plane",
+  compressionRatio: "10.0",
   stroke: "3.48", rodLength: "5.7", bore: "4.00",
 };
 
@@ -52,35 +49,31 @@ const LIFTER_LABELS: Record<LifterType, string> = {
   solid_roller: "Solid Roller",
 };
 
-const MANIFOLD_LABELS: Record<ManifoldType, string> = {
-  dual_plane: "Dual Plane", single_plane: "Single Plane",
-  tunnel_ram: "Tunnel Ram", tbi_stock: "TBI / Stock",
-};
-
 // ── Calculations ───────────────────────────────────────────────────────────────
 
 function calc(s: State) {
   const n = (v: string) => parseFloat(v) || 0;
   const intAdv = n(s.intAdv), exhAdv = n(s.exhAdv);
   const int050 = n(s.int050), exh050 = n(s.exh050);
-  const intLCA = n(s.intLCA), exhLCA = n(s.exhLCA);
+  const lsa = n(s.lsa);
   const advance = n(s.advance);
-  const intLift = n(s.intLift), exhLift = n(s.exhLift);
+  const intValveLift = n(s.intLift), exhValveLift = n(s.exhLift);
   const oemR = n(s.oemRocker), c1R = n(s.custom1Rocker), c2R = n(s.custom2Rocker);
+  const intLift = oemR > 0 ? intValveLift / oemR : 0;
+  const exhLift = oemR > 0 ? exhValveLift / oemR : 0;
   const disp = n(s.displacement), cyls = n(s.cylinders);
-  const valveDia = n(s.intakeValveDia), vpCyl = n(s.valvesPerCyl);
-  const cr = n(s.compressionRatio), vAngle = n(s.valveAngle);
+  const valveDia = n(s.intakeValveDia);
+  const cr = n(s.compressionRatio);
   const stroke = n(s.stroke), rodLen = n(s.rodLength);
 
-  // Intake centerline adjusted for advance/retard
-  const intCenter = intLCA - advance;
-  const exhCenter = exhLCA + advance;
+  const intCenter = lsa - advance;
+  const exhCenter = lsa + advance;
 
   // Valve events
   const IO_BTDC = intAdv / 2 - intCenter;
   const IC_ABDC = intAdv / 2 - (180 - intCenter);
-  const EO_BBDC = exhAdv / 2 - exhCenter;
-  const EC_ATDC = exhAdv / 2 - (180 - exhCenter);
+  const EO_BBDC = exhAdv / 2 - (180 - exhCenter);
+  const EC_ATDC = exhAdv / 2 - exhCenter;
   const overlap = IO_BTDC + EC_ATDC;
 
   // Rocker lift table
@@ -90,56 +83,42 @@ function calc(s: State) {
     exhValveLift: exhLift * r,
   });
 
-  // Vizard LCA formula
+  // Vizard LSA formula — cubes per inch of valve diameter (Ch. 10, p107)
   const dispPerCyl = cyls > 0 ? disp / cyls : 0;
-  const valveRadius = valveDia / 2;
-  const valveArea = Math.PI * valveRadius * valveRadius * (vpCyl >= 4 ? 2 : 1);
-  const cubesPerIn2 = valveArea > 0 ? dispPerCyl / valveArea : 0;
+  const cubesPerIn = valveDia > 0 ? dispPerCyl / valveDia : 0;
 
-  let baseLCA = 110;
-  if (cubesPerIn2 < 15) baseLCA = 100;
-  else if (cubesPerIn2 < 18) baseLCA = 104;
-  else if (cubesPerIn2 < 21) baseLCA = 106;
-  else if (cubesPerIn2 < 24) baseLCA = 108;
-  else if (cubesPerIn2 < 27) baseLCA = 110;
-  else if (cubesPerIn2 < 30) baseLCA = 112;
-  else baseLCA = 114;
+  // LSA from Vizard's dyno-derived chart
+  // Verified: 302→111°, 350→108°, 383→106°
+  const baseLCA = Math.round(Math.max(100, Math.min(116, 108 - (cubesPerIn - 21.66))));
 
-  let crAdj = 0;
-  if (cr < 9.5) crAdj = 2;
-  else if (cr <= 10.5) crAdj = 0;
-  else if (cr <= 12) crAdj = -1;
-  else crAdj = -2;
+  // CR adjustment: +0.75° per ratio above 10.5:1 (Vizard Ch. 10, p106)
+  const crAdj = cr > 10.5 ? Math.round((cr - 10.5) * 0.75) : 0;
 
-  const vaAdj = vAngle > 10 ? 2 : 0;
+  const recommendedLSA = baseLCA + crAdj;
+  const lsaDiff = lsa - recommendedLSA;
 
-  let manifoldAdj = 0;
-  if (s.manifold === "single_plane") manifoldAdj = -1;
-  else if (s.manifold === "tunnel_ram") manifoldAdj = -2;
-  else if (s.manifold === "tbi_stock") manifoldAdj = 2;
-
-  const recommendedLCA = baseLCA + crAdj + vaAdj + manifoldAdj;
-  const lcaDiff = intLCA - recommendedLCA;
-
-  // Dynamic compression ratio
-  // IVC_deg = degrees after BDC the intake closes (IC_ABDC)
+  // Dynamic compression ratio (Pat Kelley algorithm with rod length)
   const ivcDeg = IC_ABDC;
   const ivcRad = (ivcDeg * Math.PI) / 180;
-  // piston rise from BDC = (stroke/2) × (1 - cos(IVC))
-  const pistonRise = stroke > 0 ? (stroke / 2) * (1 - Math.cos(ivcRad)) : 0;
-  const effectiveStroke = stroke - pistonRise;
-  const gamma = 1.3;
-  const dynamicCR = stroke > 0 ? cr * Math.pow(effectiveStroke / stroke, gamma) : 0;
+  const halfStroke = stroke / 2;
+  const rd = halfStroke * Math.sin(ivcRad);
+  const rr = halfStroke * Math.cos(ivcRad);
+  const pr1 = rodLen > 0 ? Math.sqrt(rodLen * rodLen - rd * rd) : 0;
+  const pr2 = pr1 - rr;
+  const effectiveStroke = halfStroke + rodLen - pr2;
+  const pistonRise = stroke - effectiveStroke;
+  const dynamicCR = stroke > 0 ? cr * Math.pow(effectiveStroke / stroke, 1.3) : 0;
 
   return {
     intCenter, exhCenter,
     IO_BTDC, IC_ABDC, EO_BBDC, EC_ATDC, overlap,
     rockers: [rockerRow(oemR), rockerRow(c1R), rockerRow(c2R)],
-    dispPerCyl, valveArea, cubesPerIn2,
-    baseLCA, crAdj, vaAdj, manifoldAdj, recommendedLCA, lcaDiff,
+    dispPerCyl, cubesPerIn,
+    baseLCA, crAdj, recommendedLSA, lsaDiff,
     pistonRise, effectiveStroke, dynamicCR,
-    intLift, exhLift, int050, exh050, intAdv, exhAdv,
-    intLCA, exhLCA, advance, cr,
+    intLift, exhLift, intValveLift, exhValveLift,
+    int050, exh050, intAdv, exhAdv,
+    lsa, advance, cr,
     oemR, c1R, c2R,
   };
 }
@@ -210,7 +189,7 @@ function Section({ title, defaultOpen = true, children }: {
 
 // ── Main Component ─────────────────────────────────────────────────────────────
 
-export default function CamDurationCalculator({ showBanner = true }: { showBanner?: boolean }) {
+export default function CamDurationCalculator() {
   const [s, setS] = useState<State>(DEFAULT);
   const [copied, setCopied] = useState(false);
 
@@ -232,7 +211,7 @@ export default function CamDurationCalculator({ showBanner = true }: { showBanne
       "CAMSHAFT SPECS",
       `Intake Duration (Adv/0.050): ${s.intAdv}° / ${s.int050}°`,
       `Exhaust Duration (Adv/0.050): ${s.exhAdv}° / ${s.exh050}°`,
-      `Intake LCA / Exhaust LCA: ${s.intLCA}° / ${s.exhLCA}°`,
+      `LSA: ${s.lsa}°`,
       `Cam Advance/Retard: ${s.advance}°`,
       `Intake / Exhaust Lift: ${s.intLift}" / ${s.exhLift}"`,
       `Lifter Type: ${LIFTER_LABELS[s.lifterType]}`,
@@ -244,8 +223,8 @@ export default function CamDurationCalculator({ showBanner = true }: { showBanne
       `Exhaust Closes: ${C.EC_ATDC.toFixed(1)}° ATDC`,
       `Overlap: ${C.overlap.toFixed(1)}° — ${ovCat.label}`,
       "",
-      "VIZARD RECOMMENDED LCA",
-      `Recommended: ${C.recommendedLCA}°  |  Actual: ${s.intLCA}°  |  Diff: ${C.lcaDiff > 0 ? "+" : ""}${C.lcaDiff.toFixed(1)}°`,
+      "VIZARD RECOMMENDED LSA",
+      `Recommended: ${C.recommendedLSA}°  |  Actual: ${s.lsa}°  |  Diff: ${C.lsaDiff > 0 ? "+" : ""}${C.lsaDiff.toFixed(1)}°`,
       "",
       "DYNAMIC COMPRESSION",
       `Static CR: ${s.compressionRatio}:1  |  Dynamic CR: ${C.dynamicCR.toFixed(2)}:1`,
@@ -256,7 +235,7 @@ export default function CamDurationCalculator({ showBanner = true }: { showBanne
       `Custom ${s.custom1Rocker}:1 — Int ${(C.intLift * C.c1R).toFixed(4)}" / Exh ${(C.exhLift * C.c1R).toFixed(4)}"`,
       `Custom ${s.custom2Rocker}:1 — Int ${(C.intLift * C.c2R).toFixed(4)}" / Exh ${(C.exhLift * C.c2R).toFixed(4)}"`,
       "",
-      "Based on David Vizard's 'How to Build Horsepower'",
+      "Generated by Engine-build.com Advanced Cam Calculator",
       "engine-build.com",
     ].join("\n");
   };
@@ -272,38 +251,17 @@ export default function CamDurationCalculator({ showBanner = true }: { showBanne
 
   return (
     <div className="max-w-4xl mx-auto">
-      {/* Prominent book banner — hidden when embedded inside the cam guide tab */}
-      {showBanner && (
-      <div className="bg-[#1a1a1a] text-white rounded-xl mb-6 overflow-hidden">
-        <div className="px-6 py-8 flex flex-col sm:flex-row items-center gap-6">
-          <div className="text-5xl shrink-0">📖</div>
-          <div className="flex-1 text-center sm:text-left">
-            <p className="text-xs uppercase tracking-widest text-[#E85D04] font-semibold mb-1">Inspired by</p>
-            <h2 className="text-xl sm:text-2xl font-black mb-2">
-              David Vizard's <em className="not-italic text-[#E85D04]">How to Build Horsepower</em>
-            </h2>
-            <p className="text-gray-300 text-sm mb-4 max-w-lg">
-              The formulas and methodology in this calculator come directly from David Vizard's landmark book — one of the most thorough technical references ever written on building performance engines.
-            </p>
-            <a
-              href="https://amzn.to/4cMoisN"
-              target="_blank"
-              rel="noopener noreferrer"
-              className="inline-flex items-center gap-2 bg-[#E85D04] hover:bg-[#d04f00] text-white font-bold px-5 py-2.5 rounded-lg transition-colors text-sm"
-            >
-              Get the Book on Amazon →
-            </a>
-            <p className="text-xs text-gray-500 mt-2">Affiliate link — we may earn a small commission at no extra cost to you</p>
-          </div>
-        </div>
-      </div>
-      )}
-
       <div className="px-4 space-y-5">
       <div>
-        <h1 className="text-3xl font-bold mb-1">Vizard Cam Timing Calculator</h1>
+        <SEOHead
+          title="Advanced Cam Calculator"
+          description="Full camshaft analysis: valve events, overlap, LSA recommendations, dynamic compression ratio, and rocker lift table. Free cam calculator for engine builders."
+          canonical="/calculators/cam-duration"
+          keywords="cam duration calculator, cam timing calculator, valve overlap calculator, LSA calculator, camshaft calculator, advanced cam calculator"
+        />
+        <h1 className="text-3xl font-bold mb-1">Advanced Cam Calculator</h1>
         <p className="text-sm text-muted-foreground">
-          Full cam analysis: valve events, overlap, LCA recommendations, dynamic compression ratio, and rocker lift table.
+          Full cam analysis: valve events, overlap, LSA recommendations, dynamic compression ratio, and rocker lift table.
         </p>
       </div>
 
@@ -328,20 +286,17 @@ export default function CamDurationCalculator({ showBanner = true }: { showBanne
 
           <div className="space-y-4">
             <p className="text-xs font-semibold text-[#E85D04] uppercase tracking-wider">Timing & Lift</p>
-            <Field label="Intake Lobe Centerline Angle (°)" hint="Degrees after TDC where the intake lobe reaches peak lift">
-              <Input type="number" step="0.5" value={s.intLCA} onChange={set("intLCA")} />
-            </Field>
-            <Field label="Exhaust Lobe Centerline Angle (°)" hint="Often the same as intake for symmetric cams">
-              <Input type="number" step="0.5" value={s.exhLCA} onChange={set("exhLCA")} />
+            <Field label="Lobe Separation Angle — LSA (°)" hint="Angle between intake and exhaust lobe centerlines. Found on your cam card.">
+              <Input type="number" step="0.5" value={s.lsa} onChange={set("lsa")} />
             </Field>
             <Field label="Cam Advance / Retard (°)" hint="Positive = advanced (more timing area at low RPM). Default 0.">
               <Input type="number" step="0.5" value={s.advance} onChange={set("advance")} />
             </Field>
             <div className="grid grid-cols-2 gap-3">
-              <Field label="Intake Lift (in)">
+              <Field label="Intake Valve Lift (in)" hint="Valve lift with stock rocker ratio">
                 <Input type="number" step="0.001" value={s.intLift} onChange={set("intLift")} />
               </Field>
-              <Field label="Exhaust Lift (in)">
+              <Field label="Exhaust Valve Lift (in)" hint="Valve lift with stock rocker ratio">
                 <Input type="number" step="0.001" value={s.exhLift} onChange={set("exhLift")} />
               </Field>
             </div>
@@ -392,6 +347,7 @@ export default function CamDurationCalculator({ showBanner = true }: { showBanne
                 </tr>
               </thead>
               <tbody>
+                <tr className="bg-amber-50 border-b border-amber-200"><td className="p-3 font-semibold">Cam Lobe Lift</td><td className="p-3 text-center font-mono">{C.intLift.toFixed(4)}"</td><td className="p-3 text-center font-mono">{C.exhLift.toFixed(4)}"</td></tr>
                 {C.rockers.map((r, i) => (
                   <tr key={i} className={i % 2 === 0 ? "bg-gray-50" : "bg-white"}>
                     <td className="p-3 font-semibold">{r.ratio.toFixed(2)}:1{i === 0 ? " (OEM)" : ` (Custom ${i})`}</td>
@@ -401,10 +357,6 @@ export default function CamDurationCalculator({ showBanner = true }: { showBanne
                 ))}
               </tbody>
             </table>
-          </div>
-
-          <div className="bg-blue-50 border border-blue-200 rounded-lg p-4 text-sm text-blue-800">
-            <strong>Note:</strong> Higher rocker ratios increase valve lift without changing cam duration. This can be an economical way to improve airflow on a budget.
           </div>
         </div>
       </Section>
@@ -418,6 +370,8 @@ export default function CamDurationCalculator({ showBanner = true }: { showBanne
               { label: "Intake Closes", value: C.IC_ABDC.toFixed(1), unit: "° ABDC" },
               { label: "Exhaust Opens", value: C.EO_BBDC.toFixed(1), unit: "° BBDC" },
               { label: "Exhaust Closes", value: C.EC_ATDC.toFixed(1), unit: "° ATDC" },
+              { label: "Intake Centerline", value: C.intCenter.toFixed(1), unit: "° ATDC" },
+              { label: "Exhaust Centerline", value: C.exhCenter.toFixed(1), unit: "° BTDC" },
             ].map(({ label, value, unit }) => (
               <div key={label} className="rounded-lg border bg-gray-50 p-3 text-center">
                 <div className="text-xs text-gray-500 mb-1">{label}</div>
@@ -433,7 +387,7 @@ export default function CamDurationCalculator({ showBanner = true }: { showBanne
               (based on intake centerline of {C.intCenter.toFixed(1)}°).
             </p>
             <p className="text-muted-foreground text-xs">
-              Advancing or retarding the cam changes all these events. A {s.advance}° advance moves the intake centerline from {s.intLCA}° to {C.intCenter.toFixed(1)}°.
+              Advancing or retarding the cam changes all these events. A {s.advance}° advance moves the intake centerline from {s.lsa}° to {C.intCenter.toFixed(1)}°.
             </p>
           </div>
 
@@ -473,14 +427,11 @@ export default function CamDurationCalculator({ showBanner = true }: { showBanne
             ))}
           </div>
 
-          <div className="bg-amber-50 border border-amber-200 rounded-lg p-4 text-sm text-amber-900">
-            <strong>David Vizard:</strong> Overlap is the single most important cam event. Getting it right for your RPM range and engine combination is more critical than duration alone.
-          </div>
         </div>
       </Section>
 
-      {/* ── SECTION 5: Vizard LCA Formula ────────────────── */}
-      <Section title="5 — Vizard's Recommended LCA Formula">
+      {/* ── SECTION 5: Vizard LSA Formula ────────────────── */}
+      <Section title="5 — Vizard's Recommended LSA Formula">
         <div className="space-y-5">
           <div className="text-xs italic text-muted-foreground border-b pb-3">
             Formula and methodology from David Vizard's{" "}
@@ -525,58 +476,56 @@ export default function CamDurationCalculator({ showBanner = true }: { showBanne
             <Field label="Compression Ratio" hint="Static compression ratio from your build spec">
               <Input type="number" step="0.1" value={s.compressionRatio} onChange={set("compressionRatio")} />
             </Field>
-            <Field label="Valve Angle (°)" hint="Included valve angle. Parallel = 0. BBC ≈ 26°. Most SBC = 23°.">
-              <Input type="number" step="1" value={s.valveAngle} onChange={set("valveAngle")} />
-            </Field>
-            <Field label="Intake Manifold Type" hint="Affects idle quality and RPM range — Vizard adjusts LCA for manifold type">
-              <Select value={s.manifold} onValueChange={v => setS(prev => ({ ...prev, manifold: v as ManifoldType }))}>
-                <SelectTrigger><SelectValue /></SelectTrigger>
-                <SelectContent>
-                  {(Object.keys(MANIFOLD_LABELS) as ManifoldType[]).map(k => (
-                    <SelectItem key={k} value={k}>{MANIFOLD_LABELS[k]}</SelectItem>
-                  ))}
-                </SelectContent>
-              </Select>
-            </Field>
           </div>
 
           <div className="bg-[#1a1a1a] text-white rounded-xl p-5 space-y-3">
-            <div className="grid grid-cols-2 sm:grid-cols-4 gap-3 text-center text-xs">
+            <div className="grid grid-cols-2 sm:grid-cols-3 gap-3 text-center text-xs">
               <div className="bg-white/10 rounded p-2">
                 <div className="text-gray-400">Disp / Cylinder</div>
                 <div className="font-bold mt-0.5">{C.dispPerCyl.toFixed(1)} ci</div>
               </div>
               <div className="bg-white/10 rounded p-2">
-                <div className="text-gray-400">Intake Valve Area</div>
-                <div className="font-bold mt-0.5">{C.valveArea.toFixed(3)} in²</div>
+                <div className="text-gray-400">Cubes / in Valve Dia</div>
+                <div className="font-bold mt-0.5">{C.cubesPerIn.toFixed(1)}</div>
               </div>
               <div className="bg-white/10 rounded p-2">
-                <div className="text-gray-400">Cubes / in² Valve</div>
-                <div className="font-bold mt-0.5">{C.cubesPerIn2.toFixed(1)}</div>
-              </div>
-              <div className="bg-white/10 rounded p-2">
-                <div className="text-gray-400">Base LCA</div>
+                <div className="text-gray-400">Base LSA</div>
                 <div className="font-bold mt-0.5">{C.baseLCA}°</div>
               </div>
             </div>
 
             <div className="space-y-1 text-sm border-t border-white/20 pt-3">
-              <ResultRowDark label="Base LCA (from lookup)" value={`${C.baseLCA}°`} />
+              <ResultRowDark label="Base LSA (from chart)" value={`${C.baseLCA}°`} />
               <ResultRowDark label={`CR adjustment (CR = ${s.compressionRatio})`} value={`${C.crAdj >= 0 ? "+" : ""}${C.crAdj}°`} />
-              <ResultRowDark label={`Valve angle adjustment (${s.valveAngle}°)`} value={`+${C.vaAdj}°`} />
-              <ResultRowDark label={`Manifold adjustment (${MANIFOLD_LABELS[s.manifold]})`} value={`${C.manifoldAdj >= 0 ? "+" : ""}${C.manifoldAdj}°`} />
             </div>
 
             <div className="border-t border-white/20 pt-3 text-center">
-              <div className="text-xs text-gray-400 uppercase tracking-wider">Vizard Recommended LCA</div>
-              <div className="text-5xl font-black text-[#E85D04] my-1">{C.recommendedLCA}°</div>
-              <div className={`text-sm font-semibold ${Math.abs(C.lcaDiff) <= 2 ? "text-green-400" : "text-amber-400"}`}>
-                {Math.abs(C.lcaDiff) <= 2
-                  ? `✓ Your LCA of ${s.intLCA}° is on target`
-                  : C.lcaDiff > 0
-                    ? `Your LCA (${s.intLCA}°) is ${C.lcaDiff.toFixed(1)}° wider than recommended — cam will have less overlap`
-                    : `Your LCA (${s.intLCA}°) is ${Math.abs(C.lcaDiff).toFixed(1)}° tighter than recommended — cam will have more overlap`}
+              <div className="text-xs text-gray-400 uppercase tracking-wider">Vizard Recommended LSA</div>
+              <div className="text-5xl font-black text-[#E85D04] my-1">{C.recommendedLSA}°</div>
+              <div className={`text-sm font-semibold ${Math.abs(C.lsaDiff) <= 2 ? "text-green-400" : "text-amber-400"}`}>
+                {Math.abs(C.lsaDiff) <= 2
+                  ? `✓ Your LSA of ${s.lsa}° is on target`
+                  : C.lsaDiff > 0
+                    ? `Your LSA (${s.lsa}°) is ${C.lsaDiff.toFixed(1)}° wider than recommended — cam will have less overlap`
+                    : `Your LSA (${s.lsa}°) is ${Math.abs(C.lsaDiff).toFixed(1)}° tighter than recommended — cam will have more overlap`}
               </div>
+            </div>
+          </div>
+
+          <div className="bg-[#1a1a1a] text-white rounded-xl p-5 flex flex-col sm:flex-row items-center gap-4">
+            <div className="flex-1 text-center sm:text-left">
+              <p className="text-sm text-gray-300 mb-2">
+                The LSA recommendation formula above is from David Vizard's <em className="text-[#E85D04]">How to Build Horsepower</em> — one of the most thorough technical references on building performance engines.
+              </p>
+              <a
+                href="https://amzn.to/4cMoisN"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="inline-flex items-center gap-2 bg-[#E85D04] hover:bg-[#d04f00] text-white font-bold px-4 py-2 rounded-lg transition-colors text-sm"
+              >
+                Get the Book on Amazon →
+              </a>
+              <p className="text-xs text-gray-500 mt-1">Affiliate link — we may earn a small commission at no extra cost to you</p>
             </div>
           </div>
         </div>
@@ -603,9 +552,9 @@ export default function CamDurationCalculator({ showBanner = true }: { showBanne
 
           <div className="bg-gray-50 border rounded-lg p-4 space-y-2 text-xs text-muted-foreground">
             <p>IVC angle (from BDC) = {C.IC_ABDC.toFixed(1)}°  →  calculated in Section 3 from your cam timing</p>
-            <p>Piston rise at IVC = (stroke/2) × (1 − cos {C.IC_ABDC.toFixed(1)}°) = {C.pistonRise.toFixed(4)}"</p>
+            <p>Piston rise at IVC = {C.pistonRise.toFixed(4)}" (Pat Kelley algorithm using {s.rodLength}" rod length)</p>
             <p>Effective stroke = {parseFloat(s.stroke).toFixed(3)}" − {C.pistonRise.toFixed(4)}" = {C.effectiveStroke.toFixed(4)}"</p>
-            <p>Dynamic CR = Static CR × (Effective Stroke / Stroke)^1.3 = {s.compressionRatio} × ({C.effectiveStroke.toFixed(4)} / {s.stroke})^1.3</p>
+            <p>Dynamic CR = {s.compressionRatio} × ({C.effectiveStroke.toFixed(4)} / {s.stroke})^1.3 = {C.dynamicCR.toFixed(2)}:1</p>
           </div>
 
           <div className={`rounded-xl border-2 p-6 text-center ${dcrCat.bg}`}>
@@ -640,9 +589,12 @@ export default function CamDurationCalculator({ showBanner = true }: { showBanne
               <CardContent className="space-y-0.5">
                 <ResultRow label="Intake Duration (Adv / 0.050)" value={`${s.intAdv}° / ${s.int050}°`} />
                 <ResultRow label="Exhaust Duration (Adv / 0.050)" value={`${s.exhAdv}° / ${s.exh050}°`} />
-                <ResultRow label="Intake / Exhaust LCA" value={`${s.intLCA}° / ${s.exhLCA}°`} />
+                <ResultRow label="LSA (Lobe Separation Angle)" value={`${s.lsa}°`} />
+                <ResultRow label="Intake Lobe Centerline" value={`${C.intCenter.toFixed(1)}° ATDC`} sub={`LSA (${s.lsa}°) − Advance (${s.advance}°)`} />
+                <ResultRow label="Exhaust Lobe Centerline" value={`${C.exhCenter.toFixed(1)}° BTDC`} sub={`LSA (${s.lsa}°) + Advance (${s.advance}°)`} />
                 <ResultRow label="Cam Advance/Retard" value={`${s.advance}°`} />
                 <ResultRow label="Intake / Exhaust Lift" value={`${s.intLift}" / ${s.exhLift}"`} />
+                <ResultRow label="Cam Lobe Lift (Int / Exh)" value={`${C.intLift.toFixed(4)}" / ${C.exhLift.toFixed(4)}"`} />
                 <ResultRow label="Lifter Type" value={LIFTER_LABELS[s.lifterType]} />
               </CardContent>
             </Card>
@@ -659,14 +611,14 @@ export default function CamDurationCalculator({ showBanner = true }: { showBanne
             </Card>
 
             <Card>
-              <CardHeader><CardTitle className="text-base">LCA Analysis</CardTitle></CardHeader>
+              <CardHeader><CardTitle className="text-base">LSA Analysis</CardTitle></CardHeader>
               <CardContent className="space-y-0.5">
-                <ResultRow label="Vizard Recommended LCA" value={`${C.recommendedLCA}°`} />
-                <ResultRow label="Your Intake LCA" value={`${s.intLCA}°`} />
+                <ResultRow label="Vizard Recommended LSA" value={`${C.recommendedLSA}°`} />
+                <ResultRow label="Your LSA" value={`${s.lsa}°`} />
                 <ResultRow
                   label="Difference"
-                  value={`${C.lcaDiff > 0 ? "+" : ""}${C.lcaDiff.toFixed(1)}°`}
-                  sub={Math.abs(C.lcaDiff) <= 2 ? "On target" : C.lcaDiff > 0 ? "Wider (less overlap)" : "Tighter (more overlap)"}
+                  value={`${C.lsaDiff > 0 ? "+" : ""}${C.lsaDiff.toFixed(1)}°`}
+                  sub={Math.abs(C.lsaDiff) <= 2 ? "On target" : C.lsaDiff > 0 ? "Wider (less overlap)" : "Tighter (more overlap)"}
                 />
               </CardContent>
             </Card>
@@ -728,6 +680,23 @@ export default function CamDurationCalculator({ showBanner = true }: { showBanne
           </p>
         </div>
       </Section>
+      <Card className="mt-8 mx-4">
+        <CardHeader>
+          <CardTitle className="text-lg">Understanding Camshaft Timing</CardTitle>
+        </CardHeader>
+        <CardContent className="prose prose-sm max-w-none text-muted-foreground space-y-3">
+          <p>
+            This calculator provides a complete cam timing analysis including valve events, overlap, lobe centerlines, dynamic compression ratio, and LSA recommendations. The LSA recommendation in Section 5 uses a formula from David Vizard's <em>How to Build Horsepower</em> that determines the optimal lobe separation angle based on the ratio of per-cylinder displacement to intake valve diameter — a relationship that reflects how efficiently the engine can fill each cylinder.
+          </p>
+          <p>
+            Overlap is the period when both intake and exhaust valves are open simultaneously, measured in crankshaft degrees. More overlap improves high-RPM scavenging but kills idle quality and low-speed vacuum. Duration at 0.050" lift is the industry-standard comparison point — advertised duration numbers vary between manufacturers and are not reliable for comparing cams across brands. The lobe separation angle is ground into the camshaft and cannot be changed after manufacturing, making it the most critical spec to get right when ordering a cam.
+          </p>
+          <h3 className="text-sm font-semibold text-foreground mt-4">Common Camshaft Specifications</h3>
+          <p>
+            COMP Cams XE274H: 274/286 advertised duration, 224/230 at 0.050", 110 degree LSA, approximately 60 degrees of overlap — a classic street/strip small block cam. Milder street cams like the XE262H run 212/218 at 0.050" on a 110 LSA with around 38 degrees of overlap and good idle quality. For a 350ci SBC with 2.02" intake valves, the Vizard formula recommends approximately 108 degrees LSA. For a 302ci Ford with 1.94" valves, it recommends roughly 111 degrees.
+          </p>
+        </CardContent>
+      </Card>
       </div>
     </div>
   );

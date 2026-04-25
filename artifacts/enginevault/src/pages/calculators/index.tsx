@@ -52,6 +52,12 @@ const calculators = [
     desc: "Convert between Lambda, actual AFR, and gas-scale wideband AFR for any fuel. Variable E85 ethanol slider and injector sizing math.",
     tags: ["Lambda", "AFR", "E85", "Wideband"],
   },
+  {
+    title: "Quench & Deck Height",
+    href: "/calculators/quench-deck-height",
+    desc: "Calculate piston-to-deck clearance, quench distance, and compression ratio simultaneously. Gasket quick-picker updates everything live.",
+    tags: ["Quench", "Deck Height", "Gasket", "CR"],
+  },
 ];
 
 export default function CalculatorsIndex() {

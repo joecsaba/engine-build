@@ -1,13 +1,11 @@
 import { useState } from "react";
-import { Link } from "wouter";
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 import { Input } from "@/components/ui/input";
 import { Label } from "@/components/ui/label";
 import { Select, SelectContent, SelectItem, SelectTrigger, SelectValue } from "@/components/ui/select";
 import { PageHeader } from "@/components/layout/PageHeader";
-import { Check, ArrowRight, AlertTriangle, CheckCircle2 } from "lucide-react";
-import { Button } from "@/components/ui/button";
-import { useBuildContext, type CamRecommendation } from "@/context/BuildContext";
+import { AlertTriangle, CheckCircle2 } from "lucide-react";
+import type { CamRecommendation } from "@/context/BuildContext";
 import VizardCamCalculator from "@/pages/calculators/cam-duration";
 
 type CamTypeKey = "hydraulic_flat" | "hydraulic_roller" | "solid_flat" | "solid_roller";
@@ -51,18 +49,6 @@ const CAM_SPRING_SPECS: Record<CamTypeKey, {
   },
 };
 
-const mistakes = [
-  { num: 1, title: "Choosing cam by LSA alone", desc: "LSA is just one factor. Duration, lift, and your specific combo all matter more." },
-  { num: 2, title: "Too much cam for the compression ratio", desc: "High-overlap cams bleed cylinder pressure at low RPM. If your CR is under 9:1, a big cam won't make power." },
-  { num: 3, title: "Ignoring torque converter stall speed (auto trans)", desc: "Your converter must stall at or above your cam's power band. A big cam with a stock 1400 RPM stall = sluggish." },
-  { num: 4, title: "Not matching cam to heads and intake", desc: "A cam that flows 750+ CFM heads into a stock intake is waste. Match all three." },
-  { num: 5, title: "Skipping the cam break-in procedure (flat tappet)", desc: "Flat tappet cams require an immediate 2000 RPM 20-minute break-in. Skip it and you'll wipe the lobes." },
-  { num: 6, title: "Installing a cam without degreeing it", desc: "Even cams marked 'straight up' can be off by 2-4 degrees from the grinder. Degree it." },
-  { num: 7, title: "Using wrong oil for flat tappet cams", desc: "Modern API SM/SN oil has insufficient ZDDP. Use cam break-in additive or purpose-built break-in oil." },
-  { num: 8, title: "Neglecting valve spring specs", desc: "A cam with higher lift often needs stiffer springs. Coil bind or spring float kills power and destroys valvetrain." },
-  { num: 9, title: "Matching cam to RPM peak instead of RPM range", desc: "You don't live at peak power. Choose cam that makes the car fun to drive at your typical driving RPM." },
-  { num: 10, title: "Assuming advertised specs are comparable between manufacturers", desc: "Advertised duration is measured at different checking clearances. Always compare at 0.050\" lift." },
-];
 
 type CalcResult = {
   text: string;
@@ -220,8 +206,8 @@ function SimpleCamTiming() {
           </div>
 
           <div className="p-3 bg-amber-50 border border-amber-200 rounded-lg text-xs text-amber-900">
-            Want the full analysis — LCA recommendations, dynamic compression, and rocker lift table?{" "}
-            <button className="underline font-semibold" onClick={() => {}}>Switch to David Vizard Cam Timing above.</button>
+            Want the full analysis — LSA recommendations, dynamic compression, and rocker lift table?{" "}
+            <button className="underline font-semibold" onClick={() => {}}>Switch to Advanced Cam Calculator above.</button>
           </div>
         </div>
       </div>
@@ -229,40 +215,10 @@ function SimpleCamTiming() {
   );
 }
 
-// ── Vizard Tab (with prominent book banner) ────────────────────────────────────
-
 function VizardTab() {
   return (
     <div>
-      {/* Prominent book banner */}
-      <div className="bg-[#1a1a1a] text-white">
-        <div className="container mx-auto max-w-4xl px-4 py-10 flex flex-col sm:flex-row items-center gap-8">
-          <div className="text-6xl shrink-0">📖</div>
-          <div className="flex-1 text-center sm:text-left">
-            <p className="text-xs uppercase tracking-widest text-[#E85D04] font-semibold mb-1">Inspired by</p>
-            <h2 className="text-2xl sm:text-3xl font-black mb-2">
-              David Vizard's <em className="not-italic text-[#E85D04]">How to Build Horsepower</em>
-            </h2>
-            <p className="text-gray-300 text-sm mb-5 max-w-xl">
-              The formulas and methodology in this calculator come directly from David Vizard's landmark book — one of the most thorough technical references ever written on building performance engines. If you're serious about engine building, it belongs on your shelf.
-            </p>
-            <a
-              href="https://amzn.to/4cMoisN"
-              target="_blank"
-              rel="noopener noreferrer"
-              className="inline-flex items-center gap-2 bg-[#E85D04] hover:bg-[#d04f00] text-white font-bold px-6 py-3 rounded-lg transition-colors text-sm"
-            >
-              Get the Book on Amazon →
-            </a>
-            <p className="text-xs text-gray-500 mt-3">
-              Affiliate link — we may earn a small commission at no extra cost to you
-            </p>
-          </div>
-        </div>
-      </div>
-
-      {/* Full Vizard calculator — banner already shown above, so hide the one inside */}
-      <VizardCamCalculator showBanner={false} />
+      <VizardCamCalculator />
     </div>
   );
 }
@@ -270,7 +226,6 @@ function VizardTab() {
 // ── Cam Guide ─────────────────────────────────────────────────────────────────
 
 export default function CamGuide() {
-  const { saveCamRecommendation, camRecommendation, clearCamRecommendation } = useBuildContext();
   const [activeTab, setActiveTab] = useState<"guide" | "simple" | "vizard">("guide");
   const [cam1, setCam1] = useState({ duration: "218", lsa: "112", lift: "0.520", intDuration: "218", exhDuration: "224", intLift: "0.520", exhLift: "0.500" });
   const [cam2, setCam2] = useState({ duration: "232", lsa: "108", lift: "0.580", intDuration: "232", exhDuration: "240", intLift: "0.580", exhLift: "0.560" });
@@ -281,7 +236,6 @@ export default function CamGuide() {
     transmission: "manual", stall: "", weight: "", gear: "", aspiration: "na", use: "weekend"
   });
   const [result, setResult] = useState<CalcResult | null>(null);
-  const [saved, setSaved] = useState(false);
 
   // Valve spring calculator state
   const [springCamType, setSpringCamType] = useState<CamTypeKey>("hydraulic_roller");
@@ -297,13 +251,6 @@ export default function CamGuide() {
   const handleCalc = () => {
     const r = calcRecommended(inputs);
     setResult(r);
-    setSaved(false);
-  };
-
-  const handleSaveToPlanner = () => {
-    if (!result) return;
-    saveCamRecommendation(result.structured);
-    setSaved(true);
   };
 
   const intDur1 = parseFloat(dual1 ? cam1.intDuration : cam1.duration) || 0;
@@ -328,7 +275,7 @@ export default function CamGuide() {
       <PageHeader
         eyebrow="Camshaft"
         title="Cam Selection Tool"
-        subtitle="Everything you need to choose, analyze, and time a camshaft — from basic valve events to the full David Vizard methodology."
+        subtitle="Everything you need to choose, analyze, and time a camshaft — from basic valve events to full advanced cam analysis."
       />
 
       {/* Tab navigation */}
@@ -355,31 +302,11 @@ export default function CamGuide() {
       {/* Simple cam timing tab */}
       {activeTab === "simple" && <SimpleCamTiming />}
 
-      {/* David Vizard cam timing tab */}
+      {/* Advanced cam calculator tab */}
       {activeTab === "vizard" && <VizardTab />}
 
       {/* Cam Selection Guide tab */}
       {activeTab === "guide" && <div className="container mx-auto max-w-4xl px-4 py-10">
-
-      {/* Build Planner link banner */}
-      <div className="mb-8 p-4 rounded-lg border border-[#E85D04]/30 bg-[#E85D04]/5 flex items-center justify-between gap-4">
-        <div className="text-sm">
-          <span className="font-semibold text-[#E85D04]">Build Planner integration:</span>{" "}
-          {camRecommendation ? (
-            <span className="text-gray-700">
-              You have a saved cam recommendation ({camRecommendation.summary}).{" "}
-              <button onClick={clearCamRecommendation} className="text-gray-400 hover:text-gray-600 underline text-xs">Clear</button>
-            </span>
-          ) : (
-            <span className="text-gray-600">Use the recommender below and save your result to the Build Planner.</span>
-          )}
-        </div>
-        <Link href="/build-sheets/planner">
-          <Button size="sm" className="bg-[#E85D04] hover:bg-[#d04f00] text-white flex items-center gap-1 shrink-0">
-            Open Build Planner <ArrowRight className="w-3 h-3" />
-          </Button>
-        </Link>
-      </div>
 
       {/* Section 1: Understanding Cam Specs */}
       <section className="mb-12">
@@ -584,28 +511,7 @@ export default function CamGuide() {
               <CardTitle>Recommendation</CardTitle>
             </CardHeader>
             <CardContent>
-              <pre className="whitespace-pre-wrap text-sm text-gray-200 font-sans leading-relaxed mb-6">{result.text}</pre>
-              <div className="border-t border-[#2a2a2a] pt-4 flex flex-col sm:flex-row items-start sm:items-center gap-3">
-                <div className="flex-1 text-sm text-gray-400">
-                  Save this recommendation to your Build Planner so you can compare it against available camshafts.
-                </div>
-                {saved ? (
-                  <div className="flex items-center gap-2">
-                    <div className="flex items-center gap-2 text-green-400 text-sm font-medium">
-                      <Check className="w-4 h-4" /> Saved to Build Planner
-                    </div>
-                    <Link href="/build-sheets/planner">
-                      <Button size="sm" className="bg-[#E85D04] hover:bg-[#d04f00] text-white flex items-center gap-1">
-                        Open Planner <ArrowRight className="w-3 h-3" />
-                      </Button>
-                    </Link>
-                  </div>
-                ) : (
-                  <Button onClick={handleSaveToPlanner} className="bg-[#E85D04] hover:bg-[#d04f00] text-white shrink-0">
-                    Save to Build Planner
-                  </Button>
-                )}
-              </div>
+              <pre className="whitespace-pre-wrap text-sm text-gray-200 font-sans leading-relaxed">{result.text}</pre>
             </CardContent>
           </Card>
         )}
@@ -832,58 +738,6 @@ export default function CamGuide() {
         })()}
       </section>
 
-      {/* Section 5: Common Mistakes */}
-      <section className="mb-12">
-        <h2 className="text-2xl font-bold mb-6 pb-2 border-b">Section 5: Top 10 Cam Selection Mistakes</h2>
-        <div className="space-y-3">
-          {mistakes.map(m => (
-            <div key={m.num} className="flex gap-4 p-4 rounded-lg border bg-card">
-              <div className="w-8 h-8 rounded-full bg-primary/10 text-primary font-bold flex items-center justify-center shrink-0 text-sm">{m.num}</div>
-              <div>
-                <p className="font-bold">{m.title}</p>
-                <p className="text-sm text-muted-foreground">{m.desc}</p>
-              </div>
-            </div>
-          ))}
-        </div>
-      </section>
-
-      {/* Section 5: Flat Tappet vs Roller */}
-      <section className="mb-12">
-        <h2 className="text-2xl font-bold mb-6 pb-2 border-b">Section 6: Flat Tappet vs. Roller Cam</h2>
-        <div className="overflow-x-auto">
-          <table className="w-full text-sm border-collapse">
-            <thead>
-              <tr className="bg-muted">
-                <th className="text-left p-3 border">Factor</th>
-                <th className="text-left p-3 border">Flat Tappet (Hydraulic)</th>
-                <th className="text-left p-3 border">Hydraulic Roller</th>
-                <th className="text-left p-3 border">Solid Roller</th>
-              </tr>
-            </thead>
-            <tbody>
-              {[
-                ["Cost", "$100–$400", "$400–$1,000", "$800–$2,500"],
-                ["Durability", "Good (with proper oil)", "Excellent", "Excellent (with maintenance)"],
-                ["Break-in required", "Yes — critical 20-min 2000 RPM", "No", "No"],
-                ["ZDDP oil required", "Yes — API SM/SN is insufficient", "No", "No"],
-                ["Max RPM", "~6,500 (typical street)", "~7,000+", "8,000+ (race)"],
-                ["Lift rate", "Limited by lobe radius constraints", "Aggressive — faster lift possible", "Most aggressive"],
-                ["Adjustability", "Non-adjustable (hydraulic)", "Non-adjustable", "Regular lash adjustment needed"],
-                ["Best for", "Budget builds, stock replacement, vintage", "Most performance street builds", "Race engines, high-RPM builds"],
-              ].map(([factor, ...vals], i) => (
-                <tr key={i} className={i % 2 === 0 ? "" : "bg-muted/30"}>
-                  <td className="p-3 border font-medium">{factor}</td>
-                  {vals.map((v, j) => <td key={j} className="p-3 border">{v}</td>)}
-                </tr>
-              ))}
-            </tbody>
-          </table>
-        </div>
-        <div className="mt-4 p-4 bg-amber-50 border border-amber-200 rounded-lg text-sm text-amber-800">
-          <strong>ZDDP Warning for Flat Tappet Cams:</strong> Modern API SM and SN engine oils have reduced zinc dialkyldithiophosphate (ZDDP) to protect catalytic converters. This is fatal for flat tappet cams. Use Driven HR3, Valvoline VR1, or add a ZDDP supplement (COMP Cams, ZDDPlus) for the first 1,000 miles minimum.
-        </div>
-      </section>
       </div>}
     </div>
   );

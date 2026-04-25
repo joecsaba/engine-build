@@ -1,6 +1,6 @@
 import { useEffect, useRef } from "react";
 
-const PUBLISHER_ID = "ca-pub-XXXXXXXXXXXXXXXX";
+const PUBLISHER_ID = "ca-pub-6597333894163422";
 
 interface AdBannerProps {
   slot: string;

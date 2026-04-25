@@ -15,11 +15,11 @@ export function Footer() {
       ],
     },
     {
-      title: "Coming Soon",
+      title: "Reference",
       links: [
-        { href: "/specs", label: "Torque Specs" },
-        { href: "/build-sheets", label: "Build Sheets" },
-        { href: "/build-sheets", label: "Build Planner" },
+        { href: "/engine-data", label: "Engine Data" },
+        { href: "/cam-guide", label: "Cam Guide" },
+        { href: "/build-sheets", label: "Build Sheets (Coming Soon)" },
       ],
     },
   ];
@@ -59,6 +59,16 @@ export function Footer() {
           <div className="max-w-xl text-gray-500">
             <p><strong>Disclaimer:</strong> All specifications and calculated values are for reference only. Always verify against factory service manuals before assembly. Engine-build.com is not responsible for engine damage resulting from use of this tool.</p>
           </div>
+        </div>
+
+        <div className="mt-4 text-xs text-center text-gray-500 flex justify-center gap-4">
+          <Link href="/privacy" className="hover:text-[#E85D04] transition-colors">
+            Privacy Policy
+          </Link>
+          <span className="text-gray-600">|</span>
+          <Link href="/terms" className="hover:text-[#E85D04] transition-colors">
+            Terms of Service
+          </Link>
         </div>
       </div>
     </footer>

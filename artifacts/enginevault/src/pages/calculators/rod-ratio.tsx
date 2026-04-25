@@ -1,4 +1,5 @@
 import { useState } from "react";
+import { SEOHead } from "@/components/SEOHead";
 import { Input } from "@/components/ui/input";
 import { Label } from "@/components/ui/label";
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
@@ -32,11 +33,17 @@ export default function RodRatioCalculator() {
 
   const s = parseFloat(stroke) || 0;
   const r = parseFloat(rodLength) || 1;
-  const ratio = s > 0 ? r / (s / 2) : 0;
+  const ratio = s > 0 ? r / s : 0;
   const zone = getRatioZone(ratio);
 
   return (
     <div className="container mx-auto py-8 px-4 max-w-5xl">
+      <SEOHead
+        title="Connecting Rod Ratio Calculator"
+        description="Calculate your connecting rod ratio (L/S) and see where it falls in the performance spectrum. Compare against common engines like SBC 350, LS1, Ford 302, 2JZ."
+        canonical="/calculators/rod-ratio"
+        keywords="rod ratio calculator, connecting rod ratio, rod length stroke ratio, engine rod ratio, L/S ratio calculator"
+      />
       <h1 className="text-3xl font-bold mb-2">Connecting Rod Ratio Calculator</h1>
       <p className="text-muted-foreground mb-8">Calculate your connecting rod ratio and see where it falls in the performance spectrum.</p>
 
@@ -127,6 +134,24 @@ export default function RodRatioCalculator() {
               </tbody>
             </table>
           </div>
+        </CardContent>
+      </Card>
+
+      <Card className="mt-8">
+        <CardHeader>
+          <CardTitle className="text-lg">Connecting Rod Ratio Explained</CardTitle>
+        </CardHeader>
+        <CardContent className="prose prose-sm max-w-none text-muted-foreground space-y-3">
+          <p>
+            Rod ratio (or L/S ratio) is the connecting rod center-to-center length divided by the crankshaft stroke. This ratio affects three critical aspects of engine operation: piston dwell time at top dead center, piston side loading against the cylinder wall, and the rate of piston acceleration through the stroke. A higher rod ratio means the piston spends more time near TDC, giving combustion pressure more time to push the piston down during the power stroke. It also reduces the rod angle relative to the cylinder bore, which lowers side thrust on the piston skirt and reduces friction.
+          </p>
+          <p>
+            However, a higher rod ratio is not automatically better. Longer rods require either a taller deck height (bigger block), a shorter piston compression height, or both. Short compression-height pistons are weaker and more expensive to manufacture. There are also diminishing returns above about 1.8:1 — the gains in dwell time and reduced side loading become marginal while the packaging challenges become significant. Most successful performance engines fall in the 1.6 to 1.8 range.
+          </p>
+          <h3 className="text-sm font-semibold text-foreground mt-4">Rod Ratio by Engine Family</h3>
+          <p>
+            The Chevy small block 350 runs a 5.700" rod on a 3.480" stroke for a 1.638:1 ratio — on the low end by modern standards. The GM LS1 improved this to 1.684:1 with a 6.098" rod and 3.622" stroke. Ford's 302 Windsor achieves 1.697:1 with a 5.090" rod and 3.000" stroke. The Honda K24A reaches 1.705:1, and the Toyota 2JZ sits at 1.687:1. When building a stroker engine, always recalculate rod ratio — a 383 SBC stroker with stock 5.700" rods drops to 1.520:1, which is why many builders upgrade to 6.000" rods.
+          </p>
         </CardContent>
       </Card>
     </div>

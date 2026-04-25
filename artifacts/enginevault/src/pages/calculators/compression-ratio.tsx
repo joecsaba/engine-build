@@ -1,4 +1,5 @@
 import { useState } from "react";
+import { SEOHead } from "@/components/SEOHead";
 import { Input } from "@/components/ui/input";
 import { Label } from "@/components/ui/label";
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
@@ -11,15 +12,15 @@ function getOctaneRec(cr: number): { label: string; color: string; bg: string } 
 }
 
 export default function CompressionRatioCalculator() {
-  const [bore, setBore] = useState("4.030");
+  const [bore, setBore] = useState("4.000");
   const [stroke, setStroke] = useState("3.480");
   const [gasketBore, setGasketBore] = useState("4.100");
-  const [gasketThick, setGasketThick] = useState("0.051");
-  const [deckHeight, setDeckHeight] = useState("0.010");
-  const [pistonVolume, setPistonVolume] = useState("-5.0");
+  const [gasketThick, setGasketThick] = useState("0.041");
+  const [deckHeight, setDeckHeight] = useState("0.000");
+  const [pistonVolume, setPistonVolume] = useState("0");
   const [chamberVolume, setChamberVolume] = useState("64");
-  const [ivc, setIvc] = useState("60");
-  const [atmPressure, setAtmPressure] = useState("14.7");
+  const [ivc, setIvc] = useState("63");
+  const [rodLength, setRodLength] = useState("5.700");
 
   const b = parseFloat(bore) || 0;
   const s = parseFloat(stroke) || 0;
@@ -29,25 +30,34 @@ export default function CompressionRatioCalculator() {
   const pv = parseFloat(pistonVolume) || 0;
   const cv = parseFloat(chamberVolume) || 0;
   const ivcDeg = parseFloat(ivc) || 0;
-  const atm = parseFloat(atmPressure) || 14.7;
+  const rl = parseFloat(rodLength) || 0;
 
   const cylinderVol = (b / 2) ** 2 * Math.PI * s * 16.387064;
   const gasketVol = (gb / 2) ** 2 * Math.PI * gt * 16.387064;
   const deckVol = (b / 2) ** 2 * Math.PI * dh * 16.387064;
-  // Dish volume (negative) adds to clearance → lowers CR
-  // Dome volume (positive) subtracts from clearance → raises CR
   const totalClearance = cv + gasketVol + deckVol - pv;
   const staticCR = totalClearance > 0 ? (cylinderVol + totalClearance) / totalClearance : 0;
 
-  const ivcFactor = 1 - (Math.cos((ivcDeg * Math.PI) / 180) + 1) / 2;
-  const effectiveStroke = s * (1 - ivcFactor * 0.5);
-  const dynamicDisp = (b / 2) ** 2 * Math.PI * effectiveStroke * 16.387064;
-  const dynamicCR = totalClearance > 0 ? (dynamicDisp + totalClearance) / totalClearance : 0;
+  // Pat Kelley dynamic CR algorithm with rod length
+  const ivcRad = (ivcDeg * Math.PI) / 180;
+  const halfStroke = s / 2;
+  const rd = halfStroke * Math.sin(ivcRad);
+  const rr = halfStroke * Math.cos(ivcRad);
+  const pr1 = rl > 0 ? Math.sqrt(rl * rl - rd * rd) : 0;
+  const pr2 = pr1 - rr;
+  const effectiveStroke = halfStroke + rl - pr2;
+  const dynamicCR = s > 0 ? staticCR * Math.pow(effectiveStroke / s, 1.3) : 0;
 
   const octane = getOctaneRec(staticCR);
 
   return (
     <div className="container mx-auto py-8 px-4 max-w-5xl">
+      <SEOHead
+        title="Compression Ratio Calculator"
+        description="Calculate static and dynamic compression ratio with octane recommendations. Enter bore, stroke, chamber volume, and piston dish. Free engine builder tool."
+        canonical="/calculators/compression-ratio"
+        keywords="compression ratio calculator, static compression ratio, dynamic compression ratio, engine compression calculator, chamber volume calculator"
+      />
       <h1 className="text-3xl font-bold mb-2">Compression Ratio Calculator</h1>
       <p className="text-muted-foreground mb-8">Static and dynamic compression ratio with octane recommendations.</p>
 
@@ -70,7 +80,7 @@ export default function CompressionRatioCalculator() {
             <CardHeader><CardTitle>Dynamic CR Inputs</CardTitle></CardHeader>
             <CardContent className="space-y-3">
               <Field label="Intake Valve Closing (degrees ABDC)" value={ivc} onChange={setIvc} step="1" />
-              <Field label="Atmospheric Pressure (PSI)" value={atmPressure} onChange={setAtmPressure} step="0.1" />
+              <Field label="Connecting Rod Length (inches)" value={rodLength} onChange={setRodLength} step="0.001" />
             </CardContent>
           </Card>
         </div>
@@ -135,6 +145,24 @@ export default function CompressionRatioCalculator() {
           </Card>
         </div>
       </div>
+
+      <Card className="mt-8">
+        <CardHeader>
+          <CardTitle className="text-lg">Compression Ratio: What Engine Builders Need to Know</CardTitle>
+        </CardHeader>
+        <CardContent className="prose prose-sm max-w-none text-muted-foreground space-y-3">
+          <p>
+            Compression ratio is the relationship between the total cylinder volume at bottom dead center and the remaining clearance volume at top dead center. Static compression ratio is calculated from fixed dimensions — bore, stroke, head chamber volume, gasket thickness, piston dome or dish volume, and deck clearance. But it is the dynamic compression ratio that actually determines whether your engine will detonate on a given fuel, because it accounts for how late the intake valve closes and how much charge escapes before the cylinder is truly sealed.
+          </p>
+          <p>
+            A stock small block Chevy 350 with 64cc chamber heads and flat-top pistons runs approximately 10.8:1 static compression — too high for 87-octane pump gas without a cam that closes the intake valve late enough to bleed off effective pressure. Swapping to 76cc Vortec heads drops that same engine to roughly 8.5:1 static, which is safe on regular fuel with almost any cam. Chamber volume has the single largest effect on compression ratio, followed by piston dish/dome volume and gasket thickness. A difference of just 0.010" in compressed gasket thickness can shift CR by 0.1 to 0.2 points.
+          </p>
+          <h3 className="text-sm font-semibold text-foreground mt-4">Pump Gas Compression Limits</h3>
+          <p>
+            For 87-octane fuel, keep static CR below 9.5:1. For 91-octane premium, 10.5:1 is generally safe with a street cam. With 93-octane and a performance cam that closes the intake valve past 60 degrees ABDC, many builders safely run 11:1 or higher static CR because the dynamic CR stays in the 7.5-8.5:1 range. Always calculate dynamic CR before finalizing your head gasket and piston combination.
+          </p>
+        </CardContent>
+      </Card>
     </div>
   );
 }

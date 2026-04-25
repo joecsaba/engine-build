@@ -1,4 +1,5 @@
 import { useState } from "react";
+import { SEOHead } from "@/components/SEOHead";
 import { Input } from "@/components/ui/input";
 import { Label } from "@/components/ui/label";
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
@@ -38,6 +39,12 @@ export default function RingGapCalculator() {
 
   return (
     <div className="container mx-auto py-8 px-4 max-w-4xl">
+      <SEOHead
+        title="Piston Ring End Gap Calculator"
+        description="Calculate correct piston ring end gap for your bore size and application. Covers NA street, NA performance, forced induction, and race builds."
+        canonical="/calculators/ring-gap"
+        keywords="piston ring gap calculator, ring end gap, piston ring clearance, ring gap chart, engine ring gap specs"
+      />
       <h1 className="text-3xl font-bold mb-2">Piston Ring End Gap Calculator</h1>
       <p className="text-muted-foreground mb-8">Application-specific ring gap recommendations with color-coded zones.</p>
 
@@ -111,6 +118,24 @@ export default function RingGapCalculator() {
           </Card>
         </div>
       </div>
+
+      <Card className="mt-8">
+        <CardHeader>
+          <CardTitle className="text-lg">Piston Ring End Gap Specifications</CardTitle>
+        </CardHeader>
+        <CardContent className="prose prose-sm max-w-none text-muted-foreground space-y-3">
+          <p>
+            Piston ring end gap is the clearance between the two ends of a piston ring when it is seated in the cylinder bore. This gap must be precisely set because piston rings expand as the engine reaches operating temperature. If the gap is too tight, the ring ends butt together and the ring has nowhere to go — it breaks the ring land off the piston, scores the cylinder wall, and can destroy the entire short block in seconds. This is one of the most common causes of catastrophic engine failure in fresh builds.
+          </p>
+          <p>
+            The general rule for naturally aspirated street engines is 0.004" of gap per inch of bore diameter for the top compression ring. On a 4.000" bore, that works out to 0.016" minimum. Most ring manufacturers recommend 0.004" to 0.005" per inch for the top ring on NA applications, giving a range of 0.016" to 0.020" on a standard 4.000" bore. Forced induction engines run significantly more gap — typically 0.006" to 0.007" per inch for the top ring — because turbo and supercharged engines generate far more cylinder heat, causing greater ring expansion. On that same 4.000" bore with a turbo, you would gap the top ring at 0.024" to 0.028".
+          </p>
+          <h3 className="text-sm font-semibold text-foreground mt-4">Ring Gap Quick Reference</h3>
+          <p>
+            For a common 4.030" overbored SBC: NA street top ring = 0.016"-0.020", NA performance = 0.020"-0.024", forced induction street = 0.024"-0.028", full race = 0.028"-0.036". The second ring typically runs the same or slightly tighter than the top ring. Always file-fit rings to your actual bore measurement — never trust the gap straight out of the box.
+          </p>
+        </CardContent>
+      </Card>
     </div>
   );
 }

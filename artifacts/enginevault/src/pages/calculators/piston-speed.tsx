@@ -1,4 +1,5 @@
 import { useState } from "react";
+import { SEOHead } from "@/components/SEOHead";
 import { Input } from "@/components/ui/input";
 import { Label } from "@/components/ui/label";
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
@@ -35,6 +36,12 @@ export default function PistonSpeedCalculator() {
 
   return (
     <div className="container mx-auto py-8 px-4 max-w-4xl">
+      <SEOHead
+        title="Piston Speed Calculator"
+        description="Calculate mean and peak piston speed in feet per minute. Color-coded safety zones for street and race engines. Free tool for engine builders."
+        canonical="/calculators/piston-speed"
+        keywords="piston speed calculator, mean piston speed, peak piston speed, engine RPM limit calculator, piston velocity calculator"
+      />
       <h1 className="text-3xl font-bold mb-2">Piston Speed Calculator</h1>
       <p className="text-muted-foreground mb-8">Calculate mean and peak piston speed in feet per minute. Color-coded safety zones for street and race applications.</p>
 
@@ -104,6 +111,24 @@ export default function PistonSpeedCalculator() {
               </tbody>
             </table>
           </div>
+        </CardContent>
+      </Card>
+
+      <Card className="mt-8">
+        <CardHeader>
+          <CardTitle className="text-lg">Mean Piston Speed and Engine RPM Limits</CardTitle>
+        </CardHeader>
+        <CardContent className="prose prose-sm max-w-none text-muted-foreground space-y-3">
+          <p>
+            Mean piston speed is the average velocity of the piston traveling up and down the bore, measured in feet per minute (FPM). It is calculated as 2 times stroke (in inches) times RPM, divided by 12. This number matters because it directly correlates with the mechanical stress on connecting rod bearings, piston rings, and the piston itself. As piston speed increases, rod bearing oil film thickness decreases, ring flutter becomes a risk, and inertial loads on the wrist pin and rod bolts climb dramatically. Mean piston speed is the real-world RPM limiter for any engine — not the valve train, not the heads, but the rotating assembly.
+          </p>
+          <p>
+            For street engines with cast pistons and stock rods, most engine builders consider 3,500 FPM a safe upper limit for sustained operation. Between 3,500 and 4,500 FPM is performance territory that demands forged pistons, quality rod bolts, and proper balancing. Above 4,500 FPM, you are in race-engine territory requiring premium components, frequent inspection intervals, and purpose-built rotating assemblies. NASCAR Cup engines routinely exceed 5,000 FPM, but those are rebuilt after every race.
+          </p>
+          <h3 className="text-sm font-semibold text-foreground mt-4">Piston Speed by Engine and RPM</h3>
+          <p>
+            A small block Chevy 350 with its 3.480" stroke hits 3,480 FPM at 6,000 RPM — right at the edge of the safe zone. At 7,000 RPM it reaches 4,060 FPM, firmly in the performance zone. The LS1 with a 3.622" stroke reaches 3,924 FPM at its 6,500 RPM redline. Short-stroke engines can safely rev higher: the Ford 302 Windsor with a 3.000" stroke only hits 3,250 FPM at 6,500 RPM. This is why short-stroke, big-bore combinations are preferred for high-RPM applications.
+          </p>
         </CardContent>
       </Card>
     </div>

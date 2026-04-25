@@ -22,6 +22,7 @@ import RodRatioCalculator from "@/pages/calculators/rod-ratio";
 import HpTorqueCalculator from "@/pages/calculators/hp-torque";
 import PistonSpeedCalculator from "@/pages/calculators/piston-speed";
 import AfrLambdaCalculator from "@/pages/calculators/afr-lambda";
+import QuenchDeckHeightCalculator from "@/pages/calculators/quench-deck-height";
 
 import CamGuide from "@/pages/cam-guide";
 import TorqueSpecs from "@/pages/torque-specs";
@@ -89,6 +90,7 @@ function Router() {
         <Route path="/calculators/hp-torque" component={HpTorqueCalculator} />
         <Route path="/calculators/piston-speed" component={PistonSpeedCalculator} />
         <Route path="/calculators/afr-lambda" component={AfrLambdaCalculator} />
+        <Route path="/calculators/quench-deck-height" component={QuenchDeckHeightCalculator} />
 
         <Route path="/cam-guide" component={CamGuide} />
 

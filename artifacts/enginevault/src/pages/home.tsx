@@ -11,7 +11,7 @@ const BASE = import.meta.env.BASE_URL.replace(/\/$/, "");
 const features = [
   { title: "Calculators", desc: "Displacement, compression ratio, ring gap, rod ratio, cam duration & more", icon: Calculator, href: "/calculators", live: true },
   { title: "Cam Guide", desc: "Systematic approach to selecting the right camshaft for your combo", icon: Settings2, href: "/cam-guide", live: true },
-  { title: "Torque Specs", desc: "OEM clearance & torque specs for popular engine platforms", icon: Clock, href: "/specs", live: false },
+  { title: "Engine Data", desc: "Engine specs, head data, and torque specifications for 2,400+ engines", icon: Clock, href: "/engine-data", live: true },
   { title: "Build Sheets", desc: "Component selection, parts pricing, and a full build planner", icon: Clock, href: "/build-sheets", live: false },
 ];
 
@@ -39,9 +39,9 @@ export default function Home() {
     setSubmitting(true);
     setError("");
     try {
-      const res = await fetch(`${BASE}/api/feedback`, {
+      const res = await fetch("https://formspree.io/f/xvzdknrj", {
         method: "POST",
-        headers: { "Content-Type": "application/json" },
+        headers: { "Content-Type": "application/json", "Accept": "application/json" },
         body: JSON.stringify({ name, email, message }),
       });
       if (!res.ok) throw new Error("Failed");
