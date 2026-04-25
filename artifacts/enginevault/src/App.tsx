@@ -89,7 +89,7 @@ function Router() {
         <Route path="/calculators" component={CalculatorsIndex} />
         <Route path="/calculators/displacement" component={DisplacementCalculator} />
         <Route path="/calculators/compression-ratio" component={CompressionRatioCalculator} />
-        <Route path="/calculators/ring-gap" component={RingGapCalculator} />
+        <Route path="/calculators/ring-gap" component={RingGapAdvancedCalculator} />
         <Route path="/calculators/ring-gap-advanced" component={RingGapAdvancedCalculator} />
         <Route path="/calculators/cam-duration" component={CamDurationCalculator} />
         <Route path="/calculators/rod-ratio" component={RodRatioCalculator} />
