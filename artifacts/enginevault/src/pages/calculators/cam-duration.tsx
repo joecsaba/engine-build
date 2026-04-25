@@ -1,4 +1,5 @@
 import { useState, useCallback } from "react";
+import { Link } from "wouter";
 import { SEOHead } from "@/components/SEOHead";
 import { Input } from "@/components/ui/input";
 import { Label } from "@/components/ui/label";
@@ -98,7 +99,14 @@ function calc(s: State) {
   const lsaDiff = lsa - recommendedLSA;
 
   // Dynamic compression ratio (Pat Kelley algorithm with rod length)
-  const ivcDeg = IC_ABDC;
+  // Use IVC from 0.050" duration (not advertised) + lash ramp correction
+  // to estimate the actual seat-closing point where compression begins.
+  // Hydraulic lifters: +15° ramp, solid lifters: +5° ramp.
+  const isHydraulic = s.lifterType.startsWith("hydraulic");
+  const lashAdj = isHydraulic ? 15 : 5;
+  const intCenter050 = lsa - advance;
+  const IC_ABDC_050 = int050 / 2 - (180 - intCenter050);
+  const ivcDeg = IC_ABDC_050 + lashAdj;
   const ivcRad = (ivcDeg * Math.PI) / 180;
   const halfStroke = stroke / 2;
   const rd = halfStroke * Math.sin(ivcRad);
@@ -120,6 +128,7 @@ function calc(s: State) {
     int050, exh050, intAdv, exhAdv,
     lsa, advance, cr,
     oemR, c1R, c2R,
+    IC_ABDC_050, ivcDeg, isHydraulic,
   };
 }
 
@@ -228,6 +237,7 @@ export default function CamDurationCalculator() {
       "",
       "DYNAMIC COMPRESSION",
       `Static CR: ${s.compressionRatio}:1  |  Dynamic CR: ${C.dynamicCR.toFixed(2)}:1`,
+      `IVC at 0.050": ${C.IC_ABDC_050.toFixed(1)}° ABDC  |  Seat IVC: ${C.ivcDeg.toFixed(1)}° ABDC (${C.isHydraulic ? "hydraulic +15°" : "solid +5°"})`,
       `Rating: ${dcrCat.label}`,
       "",
       "VALVE LIFT TABLE",
@@ -263,6 +273,15 @@ export default function CamDurationCalculator() {
         <p className="text-sm text-muted-foreground">
           Full cam analysis: valve events, overlap, LSA recommendations, dynamic compression ratio, and rocker lift table.
         </p>
+        <div className="p-3 rounded-lg border border-[#E85D04]/30 bg-[#E85D04]/5">
+          <p className="text-sm">
+            <strong>Already installed the cam?</strong>{" "}
+            <Link href="/calculators/cam-degreeing" className="text-[#E85D04] font-medium hover:underline">
+              Use the Cam Degreeing Calculator
+            </Link>
+            {" "}to verify your intake centerline with a degree wheel and get offset bushing recommendations.
+          </p>
+        </div>
       </div>
 
       {/* ── SECTION 1: Cam Inputs ─────────────────────────── */}
@@ -551,7 +570,7 @@ export default function CamDurationCalculator() {
           </div>
 
           <div className="bg-gray-50 border rounded-lg p-4 space-y-2 text-xs text-muted-foreground">
-            <p>IVC angle (from BDC) = {C.IC_ABDC.toFixed(1)}°  →  calculated in Section 3 from your cam timing</p>
+            <p>IVC at 0.050" = {C.IC_ABDC_050.toFixed(1)}° ABDC  →  lash ramp ({C.isHydraulic ? "+15° hydraulic" : "+5° solid"})  →  seat IVC = {C.ivcDeg.toFixed(1)}° ABDC</p>
             <p>Piston rise at IVC = {C.pistonRise.toFixed(4)}" (Pat Kelley algorithm using {s.rodLength}" rod length)</p>
             <p>Effective stroke = {parseFloat(s.stroke).toFixed(3)}" − {C.pistonRise.toFixed(4)}" = {C.effectiveStroke.toFixed(4)}"</p>
             <p>Dynamic CR = {s.compressionRatio} × ({C.effectiveStroke.toFixed(4)} / {s.stroke})^1.3 = {C.dynamicCR.toFixed(2)}:1</p>

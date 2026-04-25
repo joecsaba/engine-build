@@ -221,7 +221,7 @@ export default function RingGapAdvancedCalculator() {
       <SEOHead
         title="Piston Ring Gap Calculator"
         description="Application-specific piston ring end gap calculator for NA, nitrous, turbo, supercharged, and diesel builds. Per-ring outputs, material warnings, and file-gap workflow."
-        canonical="/calculators/ring-gap"
+        canonical="/calculators/ring-gap-advanced"
         keywords="piston ring gap calculator, advanced ring gap, turbo ring gap, nitrous ring gap, diesel ring gap, ring material, file ring gap"
       />
 

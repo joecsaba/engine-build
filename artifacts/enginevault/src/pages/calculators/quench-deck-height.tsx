@@ -83,7 +83,7 @@ function calcFromPtd(
   const quench = ptd + gasketThick;
   const gasketCC = Math.PI * (gasketDia / 2) ** 2 * gasketThick * CU_IN_TO_CC;
   const deckCC = Math.PI * (bore / 2) ** 2 * ptd * CU_IN_TO_CC;
-  const totalChamberCC = chamberCC + gasketCC + deckCC + pistonCC;
+  const totalChamberCC = chamberCC + gasketCC + deckCC - pistonCC;
   const dispPerCylCC = Math.PI * (bore / 2) ** 2 * stroke * CU_IN_TO_CC;
   const cr = totalChamberCC > 0 ? (dispPerCylCC + totalChamberCC) / totalChamberCC : 0;
 
@@ -113,7 +113,7 @@ export default function QuenchDeckHeightCalculator() {
 
   // Shared inputs
   const [chamberVol, setChamberVol] = useState("64");
-  const [pistonVol, setPistonVol] = useState("-5");
+  const [pistonVol, setPistonVol] = useState("0");
   const [gasketDia, setGasketDia] = useState("4.100");
   const [gasketThick, setGasketThick] = useState("0.041");
   const [rodMaterial, setRodMaterial] = useState<RodMaterial>("steel");
@@ -360,7 +360,7 @@ export default function QuenchDeckHeightCalculator() {
             <Field label="Head Chamber Volume (cc)">
               <Input type="number" step="0.1" value={chamberVol} onChange={e => setChamberVol(e.target.value)} />
             </Field>
-            <Field label="Piston Volume (cc — positive = dish, negative = dome/reliefs)" hint="Flat-tops with valve reliefs are usually -2 to -8 cc">
+            <Field label="Piston Dish/Dome Volume (cc — dome = positive, dish = negative)" hint="Dome reduces clearance (positive), dish adds clearance (negative). Flat-tops with valve reliefs: enter negative (-2 to -8 cc).">
               <Input type="number" step="0.1" value={pistonVol} onChange={e => setPistonVol(e.target.value)} />
             </Field>
             <Field label="Gasket Fire-Ring Diameter (inches)">
@@ -447,7 +447,7 @@ export default function QuenchDeckHeightCalculator() {
               </div>
               <div className="flex justify-between border-b border-white/10 pb-1.5">
                 <span className="text-gray-400">Piston volume</span>
-                <span className="font-mono">{pv >= 0 ? "+" : ""}{pv.toFixed(2)} cc</span>
+                <span className="font-mono">{-pv >= 0 ? "+" : ""}{(-pv).toFixed(2)} cc</span>
               </div>
               <div className="flex justify-between border-b border-white/10 pb-1.5 pt-1">
                 <span className="text-gray-400 font-semibold">Total clearance volume</span>

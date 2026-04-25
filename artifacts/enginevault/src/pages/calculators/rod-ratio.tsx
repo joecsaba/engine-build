@@ -65,7 +65,7 @@ export default function RodRatioCalculator() {
         <Card className="bg-[#1a1a1a] text-white">
           <CardHeader><CardTitle>Result</CardTitle></CardHeader>
           <CardContent>
-            <p className="text-gray-400 text-sm mb-1">Rod Ratio (L/R)</p>
+            <p className="text-gray-400 text-sm mb-1">Rod Ratio (L/S)</p>
             <p className="text-6xl font-bold text-primary mb-4">{ratio.toFixed(3)}</p>
             
             <div className="mb-4">

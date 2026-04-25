@@ -1,4 +1,5 @@
 import { useState, useCallback } from "react";
+import { Link } from "wouter";
 import { SEOHead } from "@/components/SEOHead";
 import { Input } from "@/components/ui/input";
 import { Label } from "@/components/ui/label";
@@ -362,6 +363,15 @@ export default function CamDegreeingCalculator() {
           <p className="text-sm text-muted-foreground">
             Step-by-step workflow: verify TDC, measure valve events, compare to cam card, and get correction recommendations.
           </p>
+          <div className="p-3 rounded-lg border border-[#E85D04]/30 bg-[#E85D04]/5">
+            <p className="text-sm">
+              <strong>Still choosing a cam?</strong>{" "}
+              <Link href="/calculators/cam-duration" className="text-[#E85D04] font-medium hover:underline">
+                Use the Advanced Cam Calculator
+              </Link>
+              {" "}to analyze valve events, overlap, LSA recommendations, and dynamic compression ratio before you buy.
+            </p>
+          </div>
         </div>
 
         {/* ── STEP 1: Cam Card Specs ─────────────────────────── */}
