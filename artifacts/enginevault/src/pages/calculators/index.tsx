@@ -1,86 +1,110 @@
 import { Link } from "wouter";
-import { Calculator } from "lucide-react";
+import {
+  Cylinder, Gauge, Circle, Settings2, ArrowDownUp,
+  Zap, Timer, Flame, Ruler, MoveVertical,
+  RotateCcw, ShieldAlert, Codesandbox, type LucideIcon,
+} from "lucide-react";
 import { PageHeader } from "@/components/layout/PageHeader";
 import { AdBanner } from "@/components/ads/AdBanner";
 
-const calculators = [
+const calculators: { title: string; href: string; desc: string; tags: string[]; icon: LucideIcon }[] = [
   {
     title: "Engine Displacement",
     href: "/calculators/displacement",
     desc: "Calculate displacement in cubic inches, liters, and CC. Includes piston speed and engine match lookup.",
     tags: ["Bore", "Stroke", "Cylinders"],
+    icon: Cylinder,
   },
   {
     title: "Compression Ratio",
     href: "/calculators/compression-ratio",
     desc: "Static AND dynamic compression ratio with octane recommendations. Side-by-side comparison with detonation explanation.",
     tags: ["Static", "Dynamic", "Octane"],
+    icon: Gauge,
   },
   {
-    title: "Piston Ring End Gap",
-    href: "/calculators/ring-gap",
-    desc: "Recommended ring gap for any bore size, ring type, and application. Color-coded OK/too tight/too loose zones.",
-    tags: ["Bore Size", "Application", "Ring Type"],
-  },
-  {
-    title: "Advanced Ring Gap Calculator",
+    title: "Piston Ring Gap Calculator",
     href: "/calculators/ring-gap-advanced",
     desc: "Application-specific ring gap for NA, nitrous, turbo, supercharged, and diesel. Per-ring outputs, material warnings, and file-gap workflow.",
-    tags: ["Nitrous", "Turbo", "Diesel", "Material", "Per-Ring"],
+    tags: ["Bore Size", "Application", "Ring Type", "Per-Ring"],
+    icon: Circle,
   },
   {
     title: "Advanced Cam Calculator",
     href: "/calculators/cam-duration",
     desc: "Full cam analysis — valve events, overlap, recommended LSA, dynamic compression ratio, and rocker lift table.",
     tags: ["Cam Timing", "Overlap", "LSA", "Dynamic CR"],
+    icon: Settings2,
   },
   {
     title: "Connecting Rod Ratio",
     href: "/calculators/rod-ratio",
     desc: "Calculate rod ratio with visual gauge. Compare against common engines. Explains piston dwell and friction.",
     tags: ["Stroke", "Rod Length"],
+    icon: ArrowDownUp,
   },
   {
     title: "HP & Torque",
     href: "/calculators/hp-torque",
     desc: "Bidirectional HP↔Torque converter. Shows the formula, the 5252 crossover point, and unit conversions.",
     tags: ["HP", "Torque", "RPM"],
+    icon: Zap,
   },
   {
     title: "Piston Speed",
     href: "/calculators/piston-speed",
     desc: "Mean and peak piston speed with color-coded safety zones. Reference table of common engine redlines.",
     tags: ["Stroke", "RPM", "FPM"],
+    icon: Timer,
   },
   {
     title: "AFR / Lambda Converter",
     href: "/calculators/afr-lambda",
     desc: "Convert between Lambda, actual AFR, and gas-scale wideband AFR for any fuel. Variable E85 ethanol slider and injector sizing math.",
     tags: ["Lambda", "AFR", "E85", "Wideband"],
+    icon: Flame,
   },
   {
     title: "Quench & Deck Height",
     href: "/calculators/quench-deck-height",
     desc: "Calculate piston-to-deck clearance, quench distance, and compression ratio simultaneously. Gasket quick-picker updates everything live.",
     tags: ["Quench", "Deck Height", "Gasket", "CR"],
+    icon: Ruler,
   },
   {
     title: "Pushrod Length Calculator",
     href: "/calculators/pushrod-length",
     desc: "Determine correct pushrod length after head milling, cam swaps, or rocker changes. Stock lengths for SBC, BBC, LS, SBF, and Hemi platforms.",
     tags: ["Pushrod", "Valvetrain", "Rocker Geometry"],
+    icon: MoveVertical,
   },
   {
     title: "Cam Degreeing",
     href: "/calculators/cam-degreeing",
     desc: "Step-by-step cam degreeing guide with intake centerline verification, advance/retard calculation, and dial indicator math.",
     tags: ["Cam Degreeing", "Intake Centerline", "Dial Indicator"],
+    icon: RotateCcw,
   },
   {
     title: "Piston-to-Valve Clearance",
     href: "/calculators/piston-to-valve",
     desc: "Kinematic P2V simulation across the overlap region. Engine platform presets, live cam advance slider, clearance chart, and interference warnings.",
     tags: ["P2V", "Cam Advance", "Valve Relief", "Interference"],
+    icon: ShieldAlert,
+  },
+  {
+    title: "Valve Spring Calculator",
+    href: "/calculators/valve-spring",
+    desc: "Validate valve spring specs for your cam profile. Seat pressure, open pressure, coil bind clearance, and spring rate analysis.",
+    tags: ["Valve Springs", "Seat Pressure", "Coil Bind", "Spring Rate"],
+    icon: Codesandbox,
+  },
+  {
+    title: "Compression Ratio Calculator v2",
+    href: "/calculators/dynamic-compression-ratio-v2",
+    desc: "Static CR from your parts + dynamic CR from your cam + octane recommendation — all in one tool. Three IVC input methods, cranking pressure, reverse-solve mode, and cam advance slider.",
+    tags: ["Static CR", "Dynamic CR", "Octane", "Reverse Solve", "Cranking PSI"],
+    icon: Gauge,
   },
 ];
 
@@ -100,7 +124,7 @@ export default function CalculatorsIndex() {
               <div className="group block p-6 rounded-lg border border-gray-200 bg-white hover:border-[#E85D04] hover:shadow-md transition-all cursor-pointer h-full">
                 <div className="flex items-start gap-4">
                   <div className="w-10 h-10 rounded-lg bg-[#E85D04]/10 flex items-center justify-center text-[#E85D04] shrink-0 group-hover:bg-[#E85D04] group-hover:text-white transition-all">
-                    <Calculator className="w-5 h-5" />
+                    <calc.icon className="w-5 h-5" />
                   </div>
                   <div className="flex-1 min-w-0">
                     <h2 className="text-xl font-bold mb-1 group-hover:text-[#E85D04] transition-colors">{calc.title}</h2>

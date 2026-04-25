@@ -12,7 +12,7 @@ type FuelId =
   | "gas-pure" | "gas-e10" | "gas-e15"
   | "e85" | "e98" | "e100"
   | "methanol" | "nitromethane"
-  | "diesel" | "propane" | "cng" | "custom";
+  | "propane" | "cng" | "custom";
 
 type InputMode = "lambda" | "afr" | "gasscale";
 
@@ -28,12 +28,11 @@ const FUELS: Record<Exclude<FuelId, "e85" | "custom">, FuelDef> = {
   "e100":         { label: "E100 pure ethanol",              short: "E100",      stoich: 9.008 },
   "methanol":     { label: "Methanol (M100)",                short: "Methanol",  stoich: 6.47  },
   "nitromethane": { label: "Nitromethane",                   short: "Nitro",     stoich: 1.70  },
-  "diesel":       { label: "Diesel",                         short: "Diesel",    stoich: 14.50 },
   "propane":      { label: "Propane (LPG)",                  short: "Propane",   stoich: 15.67 },
   "cng":          { label: "Natural Gas (CNG)",              short: "CNG",       stoich: 17.20 },
 };
 
-const PRIMARY: FuelId[] = ["gas-e10", "e85", "methanol", "diesel"];
+const PRIMARY: FuelId[] = ["gas-e10", "e85", "methanol"];
 const OTHER: FuelId[] = ["gas-pure", "gas-e15", "e98", "e100", "nitromethane", "propane", "cng", "custom"];
 
 // ── Helpers ─────────────────────────────────────────────────────────────────────

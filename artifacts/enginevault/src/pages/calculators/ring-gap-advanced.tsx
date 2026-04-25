@@ -143,6 +143,7 @@ const workflowSteps = [
 export default function RingGapAdvancedCalculator() {
   const [bore, setBore] = useState("4.030");
   const [boreMm, setBoreMm] = useState("");
+  const [boreUnits, setBoreUnits] = useState<"in" | "mm">("in");
   const [app, setApp] = useState<Application>("perf-na");
   const [material, setMaterial] = useState<RingMaterial>("moly");
   const [advancedOpen, setAdvancedOpen] = useState(false);
@@ -218,13 +219,13 @@ export default function RingGapAdvancedCalculator() {
   return (
     <div className="container mx-auto py-8 px-4 max-w-6xl">
       <SEOHead
-        title="Advanced Piston Ring Gap Calculator"
+        title="Piston Ring Gap Calculator"
         description="Application-specific piston ring end gap calculator for NA, nitrous, turbo, supercharged, and diesel builds. Per-ring outputs, material warnings, and file-gap workflow."
-        canonical="/calculators/ring-gap-advanced"
+        canonical="/calculators/ring-gap"
         keywords="piston ring gap calculator, advanced ring gap, turbo ring gap, nitrous ring gap, diesel ring gap, ring material, file ring gap"
       />
 
-      <h1 className="text-3xl font-bold mb-1">Advanced Piston Ring Gap Calculator</h1>
+      <h1 className="text-3xl font-bold mb-1">Piston Ring Gap Calculator</h1>
       <p className="text-muted-foreground mb-8">
         Application-specific ring gap for every ring position. Covers NA, nitrous, turbo, supercharged, and diesel builds with material compatibility warnings.
       </p>
@@ -234,14 +235,30 @@ export default function RingGapAdvancedCalculator() {
         <Card className="lg:col-span-1">
           <CardHeader><CardTitle>Inputs</CardTitle></CardHeader>
           <CardContent className="space-y-4">
-            {/* Bore */}
+            {/* Bore with unit toggle */}
             <div className="space-y-1">
-              <Label>Bore Size (inches)</Label>
-              <Input type="number" step="0.001" value={bore} onChange={e => handleBoreChange(e.target.value)} />
-            </div>
-            <div className="space-y-1">
-              <Label>Bore Size (mm)</Label>
-              <Input type="number" step="0.01" value={boreMm} placeholder="e.g. 102.36" onChange={e => handleBoreMmChange(e.target.value)} />
+              <div className="flex items-center justify-between">
+                <Label>Bore Size</Label>
+                <div className="flex items-center gap-1 bg-muted rounded-lg p-0.5 text-xs">
+                  <button
+                    onClick={() => setBoreUnits("in")}
+                    className={`px-2.5 py-1 rounded-md font-medium transition-colors ${boreUnits === "in" ? "bg-white text-[#1a1a1a] shadow-sm" : "text-muted-foreground hover:text-[#1a1a1a]"}`}
+                  >
+                    inches
+                  </button>
+                  <button
+                    onClick={() => setBoreUnits("mm")}
+                    className={`px-2.5 py-1 rounded-md font-medium transition-colors ${boreUnits === "mm" ? "bg-white text-[#1a1a1a] shadow-sm" : "text-muted-foreground hover:text-[#1a1a1a]"}`}
+                  >
+                    mm
+                  </button>
+                </div>
+              </div>
+              {boreUnits === "in" ? (
+                <Input type="number" step="0.001" value={bore} onChange={e => handleBoreChange(e.target.value)} />
+              ) : (
+                <Input type="number" step="0.01" value={boreMm} placeholder="e.g. 102.36" onChange={e => handleBoreMmChange(e.target.value)} />
+              )}
             </div>
 
             {/* Application */}
@@ -328,9 +345,14 @@ export default function RingGapAdvancedCalculator() {
               <CardTitle className="text-sm text-gray-400 font-medium">Top Ring Gap</CardTitle>
             </CardHeader>
             <CardContent>
-              <p className="text-5xl font-bold text-[#E85D04] tabular-nums">{formatThousandths(topGap)}</p>
-              <p className="text-sm text-gray-400 mt-1">thousandths ({formatInches(topGap)}")</p>
-              <p className="text-xs text-gray-500 mt-2">{(topGap * 25.4).toFixed(2)} mm</p>
+              {boreUnits === "in" ? (
+                <>
+                  <p className="text-5xl font-bold text-[#E85D04] tabular-nums">{formatThousandths(topGap)}</p>
+                  <p className="text-sm text-gray-400 mt-1">thousandths ({formatInches(topGap)}")</p>
+                </>
+              ) : (
+                <p className="text-5xl font-bold text-[#E85D04] tabular-nums">{(topGap * 25.4).toFixed(2)} mm</p>
+              )}
             </CardContent>
           </Card>
 
@@ -340,9 +362,14 @@ export default function RingGapAdvancedCalculator() {
               <CardTitle className="text-sm text-gray-400 font-medium">Second Ring Gap</CardTitle>
             </CardHeader>
             <CardContent>
-              <p className="text-5xl font-bold text-[#E85D04] tabular-nums">{formatThousandths(secondGap)}</p>
-              <p className="text-sm text-gray-400 mt-1">thousandths ({formatInches(secondGap)}")</p>
-              <p className="text-xs text-gray-500 mt-2">{(secondGap * 25.4).toFixed(2)} mm</p>
+              {boreUnits === "in" ? (
+                <>
+                  <p className="text-5xl font-bold text-[#E85D04] tabular-nums">{formatThousandths(secondGap)}</p>
+                  <p className="text-sm text-gray-400 mt-1">thousandths ({formatInches(secondGap)}")</p>
+                </>
+              ) : (
+                <p className="text-5xl font-bold text-[#E85D04] tabular-nums">{(secondGap * 25.4).toFixed(2)} mm</p>
+              )}
             </CardContent>
           </Card>
 
@@ -352,10 +379,18 @@ export default function RingGapAdvancedCalculator() {
               <CardTitle className="text-sm text-gray-400 font-medium">Oil Rail Gap</CardTitle>
             </CardHeader>
             <CardContent>
-              <p className="text-4xl font-bold text-[#E85D04] tabular-nums">
-                {formatThousandths(oilGapMin)}<span className="text-2xl text-gray-500"> – </span>{formatThousandths(oilGapMax)}
-              </p>
-              <p className="text-sm text-gray-400 mt-1">thousandths ({formatInches(oilGapMin)}" – {formatInches(oilGapMax)}")</p>
+              {boreUnits === "in" ? (
+                <>
+                  <p className="text-4xl font-bold text-[#E85D04] tabular-nums">
+                    {formatThousandths(oilGapMin)}<span className="text-2xl text-gray-500"> – </span>{formatThousandths(oilGapMax)}
+                  </p>
+                  <p className="text-sm text-gray-400 mt-1">thousandths ({formatInches(oilGapMin)}" – {formatInches(oilGapMax)}")</p>
+                </>
+              ) : (
+                <p className="text-4xl font-bold text-[#E85D04] tabular-nums">
+                  {(oilGapMin * 25.4).toFixed(2)}<span className="text-2xl text-gray-500"> – </span>{(oilGapMax * 25.4).toFixed(2)} mm
+                </p>
+              )}
               <p className="text-xs text-gray-500 mt-2">File to within this range</p>
             </CardContent>
           </Card>
@@ -464,10 +499,6 @@ export default function RingGapAdvancedCalculator() {
         </CardContent>
       </Card>
 
-      {/* ── Link to basic calculator ───────────────────────────────────────── */}
-      <p className="text-sm text-muted-foreground mt-6 text-center">
-        Looking for the simpler version? <Link href="/calculators/ring-gap" className="text-[#E85D04] hover:underline">Basic Ring Gap Calculator</Link>
-      </p>
     </div>
   );
 }

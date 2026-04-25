@@ -9,23 +9,23 @@ import { Tabs, TabsContent, TabsList, TabsTrigger } from "@/components/ui/tabs";
 /* ── Platform data ──────────────────────────────────────────────── */
 
 const platforms = [
-  { value: "sbc350",      label: "SBC 350",                        stock: 7.794 },
-  { value: "bbc454-int",  label: "BBC 454 (intake)",               stock: 8.280 },
-  { value: "bbc454-exh",  label: "BBC 454 (exhaust)",              stock: 9.252 },
-  { value: "ls1",         label: "LS1 / LS6",                      stock: 7.400 },
-  { value: "ls2",         label: "LS2 / LS3",                      stock: 7.400 },
-  { value: "ls7",         label: "LS7",                            stock: 7.800 },
-  { value: "lsa",         label: "LSA / LS9",                      stock: 7.400 },
-  { value: "lsx",         label: "LSX / Gen 4 Truck",              stock: 7.400 },
-  { value: "sbf302",      label: "SBF 302 (roller cam)",           stock: 6.272 },
-  { value: "sbf302ft",    label: "SBF 302 (flat tappet)",          stock: 6.905 },
-  { value: "sbf351w-ft",  label: "SBF 351W (flat tappet)",         stock: 8.150 },
-  { value: "sbf351w-rl",  label: "SBF 351W (roller, '94–'97)",     stock: 7.567 },
-  { value: "hemi57-int",  label: "Gen III Hemi 5.7 (intake)",      stock: 6.610 },
-  { value: "hemi57-exh",  label: "Gen III Hemi 5.7 (exhaust)",     stock: 7.840 },
-  { value: "hemi57v-int", label: "Gen III Hemi 5.7 VVT (intake)",  stock: 6.800 },
-  { value: "hemi57v-exh", label: "Gen III Hemi 5.7 VVT (exhaust)", stock: 8.100 },
-  { value: "custom",      label: "Custom",                         stock: 0 },
+  { value: "sbc350",      label: "SBC 350",                        stock: 7.794, baseCircle: 1.168 },
+  { value: "bbc454-int",  label: "BBC 454 (intake)",               stock: 8.280, baseCircle: 1.168 },
+  { value: "bbc454-exh",  label: "BBC 454 (exhaust)",              stock: 9.252, baseCircle: 1.168 },
+  { value: "ls1",         label: "LS1 / LS6",                      stock: 7.400, baseCircle: 1.310 },
+  { value: "ls2",         label: "LS2 / LS3",                      stock: 7.400, baseCircle: 1.310 },
+  { value: "ls7",         label: "LS7",                            stock: 7.800, baseCircle: 1.310 },
+  { value: "lsa",         label: "LSA / LS9",                      stock: 7.400, baseCircle: 1.310 },
+  { value: "lsx",         label: "LSX / Gen 4 Truck",              stock: 7.400, baseCircle: 1.310 },
+  { value: "sbf302",      label: "SBF 302 (roller cam)",           stock: 6.272, baseCircle: 1.181 },
+  { value: "sbf302ft",    label: "SBF 302 (flat tappet)",          stock: 6.905, baseCircle: 1.181 },
+  { value: "sbf351w-ft",  label: "SBF 351W (flat tappet)",         stock: 8.150, baseCircle: 1.181 },
+  { value: "sbf351w-rl",  label: "SBF 351W (roller, '94–'97)",     stock: 7.567, baseCircle: 1.181 },
+  { value: "hemi57-int",  label: "Gen III Hemi 5.7 (intake)",      stock: 6.610, baseCircle: 1.400 },
+  { value: "hemi57-exh",  label: "Gen III Hemi 5.7 (exhaust)",     stock: 7.840, baseCircle: 1.400 },
+  { value: "hemi57v-int", label: "Gen III Hemi 5.7 VVT (intake)",  stock: 6.800, baseCircle: 1.400 },
+  { value: "hemi57v-exh", label: "Gen III Hemi 5.7 VVT (exhaust)", stock: 8.100, baseCircle: 1.400 },
+  { value: "custom",      label: "Custom",                         stock: 0,     baseCircle: 0 },
 ];
 
 const lsPlatforms = [
@@ -97,7 +97,8 @@ export default function PushrodLengthCalculator() {
   const [headMill, setHeadMill] = useState("0");
   const [blockMill, setBlockMill] = useState("0");
   const [gasketChange, setGasketChange] = useState("0");
-  const [camReduction, setCamReduction] = useState("0");
+  const [newBaseCircle, setNewBaseCircle] = useState("");
+  const [customStockBC, setCustomStockBC] = useState("");
 
   /* Tab 2 state */
   const [checkerLength, setCheckerLength] = useState("");
@@ -111,7 +112,7 @@ export default function PushrodLengthCalculator() {
   const [lsHeadMill, setLsHeadMill] = useState("0");
   const [lsBlockMill, setLsBlockMill] = useState("0");
   const [lsGasketChange, setLsGasketChange] = useState("0");
-  const [lsCamReduction, setLsCamReduction] = useState("0");
+  const [lsNewBaseCircle, setLsNewBaseCircle] = useState("");
 
   /* ── Tab 1 calculations ─────────────────────────────────────── */
   const stockLength = platform === "custom"
@@ -121,7 +122,10 @@ export default function PushrodLengthCalculator() {
   const hm = parseFloat(headMill) || 0;
   const bm = parseFloat(blockMill) || 0;
   const gc = parseFloat(gasketChange) || 0;
-  const cr = parseFloat(camReduction) || 0;
+  const selectedPlat = platforms.find(p => p.value === platform);
+  const stockBC = (selectedPlat && selectedPlat.baseCircle > 0) ? selectedPlat.baseCircle : (parseFloat(customStockBC) || 0);
+  const newBC = parseFloat(newBaseCircle) || 0;
+  const cr = (stockBC > 0 && newBC > 0) ? stockBC - newBC : 0;
 
   const newLength = stockLength - hm - bm + gc + cr;
   const delta = newLength - stockLength;
@@ -143,7 +147,9 @@ export default function PushrodLengthCalculator() {
   const lsHm = parseFloat(lsHeadMill) || 0;
   const lsBm = parseFloat(lsBlockMill) || 0;
   const lsGc = parseFloat(lsGasketChange) || 0;
-  const lsCr = parseFloat(lsCamReduction) || 0;
+  const lsStockBC = 1.310; // All LS engines use 1.310" stock base circle
+  const lsNewBC = parseFloat(lsNewBaseCircle) || 0;
+  const lsCr = (lsStockBC > 0 && lsNewBC > 0) ? lsStockBC - lsNewBC : 0;
 
   const lsHydraulic = lsStock - lsHm - lsBm + lsGc + lsCr;
   const lsSolid = lsHydraulic - 0.050;
@@ -275,10 +281,30 @@ export default function PushrodLengthCalculator() {
                   <Hint>Positive = thicker than stock. Thicker gasket makes pushrod longer.</Hint>
                 </div>
 
-                <div className="space-y-1">
-                  <Label>Cam Base Circle Reduction from Stock (inches)</Label>
-                  <Input type="number" step="0.001" value={camReduction} onChange={e => setCamReduction(e.target.value)} />
-                  <Hint>Positive = new cam has smaller base circle. Smaller base circle = lifter sits lower = LONGER pushrod needed. Most aftermarket cams have a smaller base circle than stock.</Hint>
+                <div className="space-y-3 p-3 bg-gray-50 rounded-lg border">
+                  <p className="text-xs font-semibold text-[#E85D04] uppercase tracking-wider">Cam Base Circle Calculator</p>
+                  {stockBC > 0 ? (
+                    <div className="space-y-1">
+                      <Label className="text-xs text-muted-foreground">Stock Base Circle (auto-filled)</Label>
+                      <div className="text-sm font-mono font-semibold bg-white border rounded px-3 py-2">{stockBC.toFixed(3)}"</div>
+                    </div>
+                  ) : (
+                    <div className="space-y-1">
+                      <Label className="text-xs text-muted-foreground">Stock Cam Base Circle Diameter (inches)</Label>
+                      <Input type="number" step="0.001" placeholder="e.g. 1.168" value={customStockBC} onChange={e => setCustomStockBC(e.target.value)} />
+                      <Hint>Measure your stock cam or look up the OEM spec. Common: SBC = 1.168", LS = 1.310", SBF = 1.181"</Hint>
+                    </div>
+                  )}
+                  <div className="space-y-1">
+                    <Label className="text-xs text-muted-foreground">New Cam Base Circle Diameter (inches)</Label>
+                    <Input type="number" step="0.001" placeholder="e.g. 1.118" value={newBaseCircle} onChange={e => setNewBaseCircle(e.target.value)} />
+                    <Hint>From your new cam's specs, or measure with a micrometer. Leave blank if using the stock cam.</Hint>
+                  </div>
+                  {cr !== 0 && (
+                    <div className={`text-sm font-medium p-2 rounded ${cr > 0 ? "bg-amber-50 text-amber-800 border border-amber-200" : "bg-blue-50 text-blue-800 border border-blue-200"}`}>
+                      Base circle reduction: {cr > 0 ? "" : "+"}{cr.toFixed(3)}" → pushrod needs to be {cr > 0 ? "longer" : "shorter"} by this amount
+                    </div>
+                  )}
                 </div>
               </CardContent>
             </Card>
@@ -603,10 +629,22 @@ export default function PushrodLengthCalculator() {
                   <Hint>Positive = thicker than stock gasket.</Hint>
                 </div>
 
-                <div className="space-y-1">
-                  <Label>Cam Base Circle Reduction from Stock (inches)</Label>
-                  <Input type="number" step="0.001" value={lsCamReduction} onChange={e => setLsCamReduction(e.target.value)} />
-                  <Hint>Positive = new cam has smaller base circle. Most aftermarket LS cams have a smaller base circle than stock — lifter sits lower, requiring a longer pushrod.</Hint>
+                <div className="space-y-3 p-3 bg-gray-50 rounded-lg border">
+                  <p className="text-xs font-semibold text-[#E85D04] uppercase tracking-wider">Cam Base Circle Calculator</p>
+                  <div className="space-y-1">
+                    <Label className="text-xs text-muted-foreground">Stock LS Base Circle</Label>
+                    <div className="text-sm font-mono font-semibold bg-white border rounded px-3 py-2">{lsStockBC.toFixed(3)}"</div>
+                  </div>
+                  <div className="space-y-1">
+                    <Label className="text-xs text-muted-foreground">New Cam Base Circle Diameter (inches)</Label>
+                    <Input type="number" step="0.001" placeholder="e.g. 1.260" value={lsNewBaseCircle} onChange={e => setLsNewBaseCircle(e.target.value)} />
+                    <Hint>From your new cam's specs. Leave blank if using the stock cam.</Hint>
+                  </div>
+                  {lsCr !== 0 && (
+                    <div className={`text-sm font-medium p-2 rounded ${lsCr > 0 ? "bg-amber-50 text-amber-800 border border-amber-200" : "bg-blue-50 text-blue-800 border border-blue-200"}`}>
+                      Base circle reduction: {lsCr > 0 ? "" : "+"}{lsCr.toFixed(3)}" → pushrod needs to be {lsCr > 0 ? "longer" : "shorter"} by this amount
+                    </div>
+                  )}
                 </div>
               </CardContent>
             </Card>

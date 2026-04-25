@@ -28,6 +28,7 @@ import PistonToValveCalculator from "@/pages/calculators/piston-to-valve";
 import CamDegreeingCalculator from "@/pages/calculators/cam-degreeing";
 import ValveSpringCalculator from "@/pages/calculators/valve-spring";
 import RingGapAdvancedCalculator from "@/pages/calculators/ring-gap-advanced";
+import DynamicCompressionRatioV2 from "@/pages/calculators/dynamic-compression-ratio-v2";
 
 import CamGuide from "@/pages/cam-guide";
 import TorqueSpecs from "@/pages/torque-specs";
@@ -101,6 +102,7 @@ function Router() {
         <Route path="/calculators/piston-to-valve" component={PistonToValveCalculator} />
         <Route path="/calculators/cam-degreeing" component={CamDegreeingCalculator} />
         <Route path="/calculators/valve-spring" component={ValveSpringCalculator} />
+        <Route path="/calculators/dynamic-compression-ratio-v2" component={DynamicCompressionRatioV2} />
 
         <Route path="/cam-guide" component={CamGuide} />
 
