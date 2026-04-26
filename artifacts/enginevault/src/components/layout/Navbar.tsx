@@ -1,9 +1,20 @@
 import { Link } from "wouter";
 import { Button } from "@/components/ui/button";
-import { Menu, Wrench } from "lucide-react";
+import { Menu, Wrench, LogIn, User } from "lucide-react";
 import { Sheet, SheetContent, SheetTrigger } from "@/components/ui/sheet";
+import { useUser, useClerk } from "@clerk/react";
+import {
+  DropdownMenu,
+  DropdownMenuContent,
+  DropdownMenuItem,
+  DropdownMenuTrigger,
+} from "@/components/ui/dropdown-menu";
+import { Avatar, AvatarFallback, AvatarImage } from "@/components/ui/avatar";
 
 export function Navbar() {
+  const { isSignedIn, user } = useUser();
+  const { signOut } = useClerk();
+
   const links = [
     { href: "/engine-data", label: "Engine Data" },
     { href: "/calculators", label: "Calculators" },
@@ -26,6 +37,41 @@ export function Navbar() {
               {link.label}
             </Link>
           ))}
+
+          {isSignedIn ? (
+            <DropdownMenu>
+              <DropdownMenuTrigger asChild>
+                <button className="flex items-center gap-2 rounded-full focus:outline-none focus:ring-2 focus:ring-[#E85D04] focus:ring-offset-2 focus:ring-offset-[#1a1a1a]">
+                  <Avatar className="h-8 w-8">
+                    <AvatarImage src={user.imageUrl} alt={user.firstName ?? "User"} />
+                    <AvatarFallback className="bg-[#E85D04] text-white text-xs">
+                      {user.firstName?.[0] ?? <User className="h-4 w-4" />}
+                    </AvatarFallback>
+                  </Avatar>
+                </button>
+              </DropdownMenuTrigger>
+              <DropdownMenuContent align="end" className="w-48">
+                <DropdownMenuItem asChild>
+                  <Link href="/build-sheets/my-builds" className="cursor-pointer">
+                    My Builds
+                  </Link>
+                </DropdownMenuItem>
+                <DropdownMenuItem
+                  className="cursor-pointer text-red-500 focus:text-red-500"
+                  onClick={() => signOut()}
+                >
+                  Sign Out
+                </DropdownMenuItem>
+              </DropdownMenuContent>
+            </DropdownMenu>
+          ) : (
+            <Link href="/sign-in">
+              <Button size="sm" className="bg-[#E85D04] hover:bg-[#E85D04]/90 text-white">
+                <LogIn className="w-4 h-4 mr-2" />
+                Sign In
+              </Button>
+            </Link>
+          )}
         </nav>
 
         {/* Mobile Nav */}
@@ -43,6 +89,35 @@ export function Navbar() {
                     {link.label}
                   </Link>
                 ))}
+
+                <div className="border-t border-[#2a2a2a] pt-4 mt-2">
+                  {isSignedIn ? (
+                    <>
+                      <div className="flex items-center gap-3 mb-4">
+                        <Avatar className="h-8 w-8">
+                          <AvatarImage src={user.imageUrl} alt={user.firstName ?? "User"} />
+                          <AvatarFallback className="bg-[#E85D04] text-white text-xs">
+                            {user.firstName?.[0] ?? <User className="h-4 w-4" />}
+                          </AvatarFallback>
+                        </Avatar>
+                        <span className="text-sm text-gray-300">{user.firstName ?? "User"}</span>
+                      </div>
+                      <Link href="/build-sheets/my-builds" className="text-lg font-medium text-gray-300 hover:text-white block mb-4">
+                        My Builds
+                      </Link>
+                      <button
+                        onClick={() => signOut()}
+                        className="text-lg font-medium text-red-400 hover:text-red-300"
+                      >
+                        Sign Out
+                      </button>
+                    </>
+                  ) : (
+                    <Link href="/sign-in" className="text-lg font-medium text-[#E85D04] hover:text-[#E85D04]/80">
+                      Sign In
+                    </Link>
+                  )}
+                </div>
               </nav>
             </SheetContent>
           </Sheet>

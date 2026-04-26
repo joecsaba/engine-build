@@ -1,4 +1,4 @@
-import { useState, useCallback } from "react";
+import { useState, useCallback, useEffect } from "react";
 import { Link } from "wouter";
 import { SEOHead } from "@/components/SEOHead";
 import { Input } from "@/components/ui/input";
@@ -6,6 +6,7 @@ import { Label } from "@/components/ui/label";
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 import { Select, SelectContent, SelectItem, SelectTrigger, SelectValue } from "@/components/ui/select";
 import { ChevronDown, Printer, Clipboard, Check } from "lucide-react";
+import { useBuildContext } from "@/context/BuildContext";
 
 // ── Types ──────────────────────────────────────────────────────────────────────
 
@@ -199,8 +200,36 @@ function Section({ title, defaultOpen = true, children }: {
 // ── Main Component ─────────────────────────────────────────────────────────────
 
 export default function CamDurationCalculator() {
+  const { activeBuild, getField, setField: setBuildField } = useBuildContext();
   const [s, setS] = useState<State>(DEFAULT);
   const [copied, setCopied] = useState(false);
+  const [buildSynced, setBuildSynced] = useState(false);
+
+  // Sync build fields → calculator state on mount
+  useEffect(() => {
+    if (!activeBuild || buildSynced) return;
+    const updates: Partial<State> = {};
+    const map: [keyof State, string][] = [
+      ["int050", "cam.durationInt"], ["exh050", "cam.durationExh"],
+      ["lsa", "cam.lsa"], ["intLift", "cam.liftInt"], ["exhLift", "cam.liftExh"],
+      ["advance", "cam.advance"], ["bore", "shortBlock.bore"],
+      ["stroke", "shortBlock.stroke"], ["rodLength", "rotatingAssembly.rodLength"],
+      ["displacement", "computed.displacement"], ["cylinders", "shortBlock.cylinders"],
+    ];
+    for (const [stateKey, buildKey] of map) {
+      const val = getField(buildKey);
+      if (val) updates[stateKey] = val;
+    }
+    const camType = getField("cam.type") as LifterType | undefined;
+    if (camType && LASH_DEFAULTS[camType]) {
+      updates.lifterType = camType;
+      updates.valveLash = LASH_DEFAULTS[camType];
+    }
+    if (Object.keys(updates).length > 0) {
+      setS(prev => ({ ...prev, ...updates }));
+    }
+    setBuildSynced(true);
+  }, [activeBuild?.id]);
 
   const set = useCallback(<K extends keyof State>(k: K) =>
     (e: React.ChangeEvent<HTMLInputElement>) => setS(prev => ({ ...prev, [k]: e.target.value })),

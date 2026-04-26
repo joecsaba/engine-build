@@ -1,4 +1,4 @@
-import { useState, useMemo } from "react";
+import { useState, useMemo, useEffect } from "react";
 import { Link } from "wouter";
 import { SEOHead } from "@/components/SEOHead";
 import { Input } from "@/components/ui/input";
@@ -7,6 +7,8 @@ import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 import { Select, SelectContent, SelectItem, SelectTrigger, SelectValue } from "@/components/ui/select";
 import { Slider } from "@/components/ui/slider";
 import { AlertTriangle, Copy, Check, ChevronDown, ChevronUp } from "lucide-react";
+import { useBuildField } from "@/hooks/useBuildField";
+import { useBuildContext } from "@/context/BuildContext";
 
 // ── Types ──────────────────────────────────────────────────────────────────────
 
@@ -141,7 +143,8 @@ const workflowSteps = [
 // ── Component ──────────────────────────────────────────────────────────────────
 
 export default function RingGapAdvancedCalculator() {
-  const [bore, setBore] = useState("4.030");
+  const [bore, setBore] = useBuildField("machineWork.finalBore", "4.030");
+  const { activeBuild, setField: setBuildField } = useBuildContext();
   const [boreMm, setBoreMm] = useState("");
   const [boreUnits, setBoreUnits] = useState<"in" | "mm">("in");
   const [app, setApp] = useState<Application>("perf-na");
@@ -181,6 +184,14 @@ export default function RingGapAdvancedCalculator() {
 
   // Small gap warning
   const smallGapWarning = topGap > 0 && topGap < minPracticalGap;
+
+  // Write computed ring gaps back to active build
+  useEffect(() => {
+    if (activeBuild && topGap > 0) {
+      setBuildField("computed.ringGapTop", topGap.toFixed(4));
+      setBuildField("computed.ringGapSecond", secondGap.toFixed(4));
+    }
+  }, [topGap, secondGap, activeBuild?.id]);
 
   const [copied, setCopied] = useState(false);
 

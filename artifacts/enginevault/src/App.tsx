@@ -13,6 +13,12 @@ import ComingSoon from "@/pages/coming-soon";
 
 import Home from "@/pages/home";
 
+import BuildSheetsIndex from "@/pages/build-sheets/index";
+import BuildPlanner from "@/pages/build-sheets/planner";
+import NewBuildPage from "@/pages/build-sheets/new";
+import BuildWizardPage from "@/pages/build-sheets/build";
+import MyBuildsPage from "@/pages/build-sheets/my-builds";
+
 import CalculatorsIndex from "@/pages/calculators/index";
 import DisplacementCalculator from "@/pages/calculators/displacement";
 import CompressionRatioCalculator from "@/pages/calculators/compression-ratio";
@@ -79,17 +85,22 @@ function Router() {
         <Route path="/torque-specs" component={TorqueSpecs} />
         <Route path="/specs" component={TorqueSpecs} />
         <Route path="/specs/:rest*" component={TorqueSpecs} />
-        <Route path="/build-sheets" component={ComingSoon} />
-        <Route path="/build-sheets/:rest*" component={ComingSoon} />
+        {/* Build Sheets — guided engine build wizard */}
+        <Route path="/build-sheets" component={BuildSheetsIndex} />
+        <Route path="/build-sheets/new" component={NewBuildPage} />
+        <Route path="/build-sheets/build/:buildId" component={BuildWizardPage} />
+        <Route path="/build-sheets/my-builds" component={MyBuildsPage} />
+        <Route path="/build-sheets/planner" component={BuildPlanner} />
+        <Route path="/build-sheets/record" component={ComingSoon} />
         <Route path="/articles" component={ComingSoon} />
         <Route path="/articles/:rest*" component={ComingSoon} />
-        <Route path="/sign-in/*?" component={ComingSoon} />
-        <Route path="/sign-up/*?" component={ComingSoon} />
+        <Route path="/sign-in/*?" component={SignInPage} />
+        <Route path="/sign-up/*?" component={SignUpPage} />
 
         {/* Live calculators */}
         <Route path="/calculators" component={CalculatorsIndex} />
         <Route path="/calculators/displacement" component={DisplacementCalculator} />
-        <Route path="/calculators/compression-ratio" component={CompressionRatioCalculator} />
+        <Route path="/calculators/compression-ratio" component={DynamicCompressionRatioV2} />
         <Route path="/calculators/ring-gap" component={RingGapAdvancedCalculator} />
         <Route path="/calculators/ring-gap-advanced" component={RingGapAdvancedCalculator} />
         <Route path="/calculators/cam-duration" component={CamDurationCalculator} />

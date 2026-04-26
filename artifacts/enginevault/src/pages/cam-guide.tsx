@@ -1,11 +1,14 @@
-import { useState } from "react";
+import { useState, useEffect } from "react";
+import { Link, useSearch } from "wouter";
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 import { Input } from "@/components/ui/input";
 import { Label } from "@/components/ui/label";
+import { Button } from "@/components/ui/button";
 import { Select, SelectContent, SelectItem, SelectTrigger, SelectValue } from "@/components/ui/select";
 import { PageHeader } from "@/components/layout/PageHeader";
-import { AlertTriangle, CheckCircle2 } from "lucide-react";
+import { AlertTriangle, CheckCircle2, ArrowLeft } from "lucide-react";
 import type { CamRecommendation } from "@/context/BuildContext";
+import { useBuildContext } from "@/context/BuildContext";
 import VizardCamCalculator from "@/pages/calculators/cam-duration";
 
 type CamTypeKey = "hydraulic_flat" | "hydraulic_roller" | "solid_flat" | "solid_roller";
@@ -226,6 +229,11 @@ function VizardTab() {
 // ── Cam Guide ─────────────────────────────────────────────────────────────────
 
 export default function CamGuide() {
+  const { activeBuild, getField, setField: setBuildField } = useBuildContext();
+  const searchString = useSearch();
+  const fromBuildParam = new URLSearchParams(searchString).get("fromBuild");
+  const fromBuildId = fromBuildParam ? parseInt(fromBuildParam, 10) : null;
+
   const [activeTab, setActiveTab] = useState<"guide" | "simple" | "vizard">("guide");
   const [cam1, setCam1] = useState({ duration: "218", lsa: "112", lift: "0.520", intDuration: "218", exhDuration: "224", intLift: "0.520", exhLift: "0.500" });
   const [cam2, setCam2] = useState({ duration: "232", lsa: "108", lift: "0.580", intDuration: "232", exhDuration: "240", intLift: "0.580", exhLift: "0.560" });
@@ -236,6 +244,29 @@ export default function CamGuide() {
     transmission: "manual", stall: "", weight: "", gear: "", aspiration: "na", use: "weekend"
   });
   const [result, setResult] = useState<CalcResult | null>(null);
+  const [buildPreFilled, setBuildPreFilled] = useState(false);
+
+  // Pre-fill recommender inputs from active build
+  useEffect(() => {
+    if (!activeBuild || buildPreFilled) return;
+    const prefill: Record<string, string> = {};
+    const disp = getField("computed.displacement");
+    if (disp) prefill.displacement = disp;
+    const cr = getField("computed.staticCR");
+    if (cr) prefill.compressionRatio = cr;
+    const cfm = getField("heads.portFlowCFM");
+    if (cfm) prefill.headFlow = cfm;
+    const rpm = getField("meta.targetRPM");
+    if (rpm) prefill.rpmPeak = rpm;
+    const asp = getField("meta.aspiration");
+    if (asp) prefill.aspiration = asp;
+    const use = getField("meta.intendedUse");
+    if (use) prefill.use = use;
+    if (Object.keys(prefill).length > 0) {
+      setInputs(prev => ({ ...prev, ...prefill }));
+    }
+    setBuildPreFilled(true);
+  }, [activeBuild?.id]);
 
   // Valve spring calculator state
   const [springCamType, setSpringCamType] = useState<CamTypeKey>("hydraulic_roller");
@@ -251,6 +282,23 @@ export default function CamGuide() {
   const handleCalc = () => {
     const r = calcRecommended(inputs);
     setResult(r);
+    // Write cam recommendation back to the active build
+    if (r && activeBuild) {
+      const dur = r.structured.durationRange;
+      const durMatch = dur.match(/(\d+)/);
+      if (durMatch) {
+        setBuildField("cam.durationInt", durMatch[1]);
+      }
+      const lsaMatch = r.structured.lsaRange.match(/(\d+)/);
+      if (lsaMatch) {
+        setBuildField("cam.lsa", lsaMatch[1]);
+      }
+      const liftMatch = r.structured.liftRange.match(/([\d.]+)/);
+      if (liftMatch) {
+        setBuildField("cam.liftInt", liftMatch[1]);
+        setBuildField("cam.liftExh", liftMatch[1]);
+      }
+    }
   };
 
   const intDur1 = parseFloat(dual1 ? cam1.intDuration : cam1.duration) || 0;
@@ -277,6 +325,23 @@ export default function CamGuide() {
         title="Cam Selection Tool"
         subtitle="Everything you need to choose, analyze, and time a camshaft — from basic valve events to full advanced cam analysis."
       />
+
+      {/* Return to Build banner */}
+      {fromBuildId && activeBuild && (
+        <div className="bg-[#E85D04]/10 border-b border-[#E85D04]/20">
+          <div className="container mx-auto max-w-4xl px-4 py-3 flex items-center justify-between">
+            <p className="text-sm text-[#E85D04] font-medium">
+              Choosing a cam for: <strong>{activeBuild.name}</strong>
+            </p>
+            <Link href={`/build-sheets/build/${fromBuildId}`}>
+              <Button variant="outline" size="sm" className="border-[#E85D04] text-[#E85D04] hover:bg-[#E85D04] hover:text-white">
+                <ArrowLeft className="w-4 h-4 mr-1.5" />
+                Return to Build
+              </Button>
+            </Link>
+          </div>
+        </div>
+      )}
 
       {/* Tab navigation */}
       <div className="bg-[#1a1a1a] sticky top-0 z-20">

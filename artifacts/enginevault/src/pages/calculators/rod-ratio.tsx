@@ -1,8 +1,10 @@
-import { useState } from "react";
+import { useState, useEffect } from "react";
 import { SEOHead } from "@/components/SEOHead";
 import { Input } from "@/components/ui/input";
 import { Label } from "@/components/ui/label";
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
+import { useBuildField } from "@/hooks/useBuildField";
+import { useBuildContext } from "@/context/BuildContext";
 
 const commonEngines = [
   { name: "Chevy 350 (SBC)", stroke: "3.480", rod: "5.700", ratio: 1.638 },
@@ -28,13 +30,20 @@ function getRatioZone(ratio: number): { label: string; color: string; position: 
 }
 
 export default function RodRatioCalculator() {
-  const [stroke, setStroke] = useState("3.622");
-  const [rodLength, setRodLength] = useState("6.098");
+  const [stroke, setStroke] = useBuildField("shortBlock.stroke", "3.622");
+  const [rodLength, setRodLength] = useBuildField("rotatingAssembly.rodLength", "6.098");
+  const { activeBuild, setField } = useBuildContext();
 
   const s = parseFloat(stroke) || 0;
   const r = parseFloat(rodLength) || 1;
   const ratio = s > 0 ? r / s : 0;
   const zone = getRatioZone(ratio);
+
+  useEffect(() => {
+    if (activeBuild && ratio > 0) {
+      setField("computed.rodRatio", ratio.toFixed(3));
+    }
+  }, [ratio, activeBuild?.id]);
 
   return (
     <div className="container mx-auto py-8 px-4 max-w-5xl">

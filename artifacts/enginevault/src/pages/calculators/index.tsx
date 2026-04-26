@@ -18,8 +18,8 @@ const calculators: { title: string; href: string; desc: string; tags: string[]; 
   {
     title: "Compression Ratio",
     href: "/calculators/compression-ratio",
-    desc: "Static AND dynamic compression ratio with octane recommendations. Side-by-side comparison with detonation explanation.",
-    tags: ["Static", "Dynamic", "Octane"],
+    desc: "Static CR from your parts + dynamic CR from your cam + octane recommendation — all in one tool. Three IVC input methods, cranking pressure, reverse-solve mode, and cam advance slider.",
+    tags: ["Static CR", "Dynamic CR", "Octane", "Cranking PSI"],
     icon: Gauge,
   },
   {
@@ -98,13 +98,6 @@ const calculators: { title: string; href: string; desc: string; tags: string[]; 
     desc: "Validate valve spring specs for your cam profile. Seat pressure, open pressure, coil bind clearance, and spring rate analysis.",
     tags: ["Valve Springs", "Seat Pressure", "Coil Bind", "Spring Rate"],
     icon: Codesandbox,
-  },
-  {
-    title: "Compression Ratio Calculator v2",
-    href: "/calculators/dynamic-compression-ratio-v2",
-    desc: "Static CR from your parts + dynamic CR from your cam + octane recommendation — all in one tool. Three IVC input methods, cranking pressure, reverse-solve mode, and cam advance slider.",
-    tags: ["Static CR", "Dynamic CR", "Octane", "Reverse Solve", "Cranking PSI"],
-    icon: Gauge,
   },
 ];
 

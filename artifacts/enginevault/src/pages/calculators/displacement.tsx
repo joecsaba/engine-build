@@ -1,13 +1,16 @@
-import { useState } from "react";
+import { useEffect } from "react";
 import { SEOHead } from "@/components/SEOHead";
 import { Input } from "@/components/ui/input";
 import { Label } from "@/components/ui/label";
 import { Card, CardContent, CardHeader, CardTitle, CardDescription } from "@/components/ui/card";
+import { useBuildField } from "@/hooks/useBuildField";
+import { useBuildContext } from "@/context/BuildContext";
 
 export default function DisplacementCalculator() {
-  const [bore, setBore] = useState("4.000");
-  const [stroke, setStroke] = useState("3.480");
-  const [cylinders, setCylinders] = useState("8");
+  const [bore, setBore] = useBuildField("shortBlock.bore", "4.000");
+  const [stroke, setStroke] = useBuildField("shortBlock.stroke", "3.480");
+  const [cylinders, setCylinders] = useBuildField("shortBlock.cylinders", "8");
+  const { activeBuild, setField } = useBuildContext();
 
   const b = parseFloat(bore) || 0;
   const s = parseFloat(stroke) || 0;
@@ -17,6 +20,13 @@ export default function DisplacementCalculator() {
   const cubicInches = (b * b * s * 0.7854) * c;
   const cc = cubicInches * 16.387064;
   const liters = cc / 1000;
+
+  // Write computed displacement back to active build
+  useEffect(() => {
+    if (activeBuild && cubicInches > 0) {
+      setField("computed.displacement", cubicInches.toFixed(1));
+    }
+  }, [cubicInches, activeBuild?.id]);
 
   return (
     <div className="container mx-auto py-8 px-4 max-w-3xl">

@@ -1,10 +1,12 @@
-import { useState, useMemo } from "react";
+import { useState, useMemo, useEffect } from "react";
 import { SEOHead } from "@/components/SEOHead";
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 import { Input } from "@/components/ui/input";
 import { Label } from "@/components/ui/label";
 import { Slider } from "@/components/ui/slider";
 import { AlertTriangle, Info, Fuel, Activity, Gauge, Calculator, ArrowRightLeft, HelpCircle } from "lucide-react";
+import { useBuildField } from "@/hooks/useBuildField";
+import { useBuildContext } from "@/context/BuildContext";
 
 /* ─── types ─── */
 type CalcMode = "forward" | "solve_chamber" | "solve_ivc";
@@ -54,20 +56,22 @@ function pistonPositionBelowTDC(thetaDeg: number, r: number, l: number): number 
    COMPONENT
    ═══════════════════════════════════════════════════════════════ */
 export default function DynamicCompressionRatioV2() {
+  const { activeBuild, setField: setBuildField } = useBuildContext();
+
   /* ─── Mode ─── */
   const [calcMode, setCalcMode] = useState<CalcMode>("forward");
 
   /* ─── Static CR input mode ─── */
   const [crInputMode, setCrInputMode] = useState<CrInputMode>("parts");
 
-  /* ─── Engine geometry (shared) ─── */
-  const [bore, setBore] = useState("4.030");
-  const [stroke, setStroke] = useState("3.480");
-  const [rodLength, setRodLength] = useState("5.700");
+  /* ─── Engine geometry (shared) — integrated with build ─── */
+  const [bore, setBore] = useBuildField("machineWork.finalBore", "4.030");
+  const [stroke, setStroke] = useBuildField("shortBlock.stroke", "3.480");
+  const [rodLength, setRodLength] = useBuildField("rotatingAssembly.rodLength", "5.700");
 
-  /* ─── Static CR from parts ─── */
-  const [chamberVolume, setChamberVolume] = useState("64");
-  const [pistonVolume, setPistonVolume] = useState("0");
+  /* ─── Static CR from parts — integrated with build ─── */
+  const [chamberVolume, setChamberVolume] = useBuildField("heads.chamberVolume", "64");
+  const [pistonVolume, setPistonVolume] = useBuildField("rotatingAssembly.pistonVolume", "0");
   const [gasketBore, setGasketBore] = useState("4.100");
   const [gasketThick, setGasketThick] = useState("0.041");
   const [deckClearance, setDeckClearance] = useState("0.000");
@@ -223,6 +227,16 @@ export default function DynamicCompressionRatioV2() {
       solvedChamberCC, solvedStaticCR, solvedIVC,
     };
   }, [bore, stroke, rodLength, crInputMode, chamberVolume, pistonVolume, gasketBore, gasketThick, deckClearance, knownStaticCR, ivcMethod, ivc0050, lashType, ivcSeat, intakeDuration, lsa, icl, camAdvanceInput, headType, camAdvanceSlider, targetDCR]);
+
+  // Write computed CR values back to active build
+  useEffect(() => {
+    if (activeBuild && results.staticCR > 0) {
+      setBuildField("computed.staticCR", results.staticCR.toFixed(2));
+      if (results.dcr > 0) {
+        setBuildField("computed.dynamicCR", results.dcr.toFixed(2));
+      }
+    }
+  }, [results.staticCR, results.dcr, activeBuild?.id]);
 
   const oct = octaneColor(results.octane);
 

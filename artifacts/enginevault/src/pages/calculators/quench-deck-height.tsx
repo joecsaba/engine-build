@@ -1,10 +1,12 @@
-import { useState } from "react";
+import { useState, useEffect } from "react";
 import { SEOHead } from "@/components/SEOHead";
 import { Input } from "@/components/ui/input";
 import { Label } from "@/components/ui/label";
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 import { Select, SelectContent, SelectItem, SelectTrigger, SelectValue } from "@/components/ui/select";
 import { ChevronDown } from "lucide-react";
+import { useBuildField } from "@/hooks/useBuildField";
+import { useBuildContext } from "@/context/BuildContext";
 
 // ── Types ─────────────────────────────────────────────────────────────────────
 
@@ -97,6 +99,8 @@ function calcPtdFromDims(stroke: number, rod: number, ch: number, deckHt: number
 // ── Main Component ────────────────────────────────────────────────────────────
 
 export default function QuenchDeckHeightCalculator() {
+  const { activeBuild, setField: setBuildField } = useBuildContext();
+
   // Input mode
   const [inputMode, setInputMode] = useState<InputMode>("measured");
 
@@ -104,16 +108,16 @@ export default function QuenchDeckHeightCalculator() {
   const [ptdValues, setPtdValues] = useState(["0.025"]);
   const [activeCylCount, setActiveCylCount] = useState("1");
 
-  // Calculated mode: engine dimensions
-  const [bore, setBore] = useState("4.030");
-  const [stroke, setStroke] = useState("3.480");
-  const [rod, setRod] = useState("5.700");
-  const [ch, setCh] = useState("1.560");
-  const [deckHt, setDeckHt] = useState("9.025");
+  // Calculated mode: engine dimensions — integrated with build
+  const [bore, setBore] = useBuildField("machineWork.finalBore", "4.030");
+  const [stroke, setStroke] = useBuildField("shortBlock.stroke", "3.480");
+  const [rod, setRod] = useBuildField("rotatingAssembly.rodLength", "5.700");
+  const [ch, setCh] = useBuildField("rotatingAssembly.compressionHeight", "1.560");
+  const [deckHt, setDeckHt] = useBuildField("shortBlock.deckHeight", "9.025");
 
   // Shared inputs
-  const [chamberVol, setChamberVol] = useState("64");
-  const [pistonVol, setPistonVol] = useState("0");
+  const [chamberVol, setChamberVol] = useBuildField("heads.chamberVolume", "64");
+  const [pistonVol, setPistonVol] = useBuildField("rotatingAssembly.pistonVolume", "0");
   const [gasketDia, setGasketDia] = useState("4.100");
   const [gasketThick, setGasketThick] = useState("0.041");
   const [rodMaterial, setRodMaterial] = useState<RodMaterial>("steel");
@@ -151,6 +155,13 @@ export default function QuenchDeckHeightCalculator() {
   const C = calcFromPtd(b, s, effectivePtd, cv, pv, gd, gt);
   const quenchZone = getQuenchZone(C.quench, rodMaterial);
   const ptdLabel = getPtdLabel(C.ptd);
+
+  // Write quench distance back to active build
+  useEffect(() => {
+    if (activeBuild && C.quench > 0) {
+      setBuildField("computed.quenchDistance", C.quench.toFixed(4));
+    }
+  }, [C.quench, activeBuild?.id]);
 
   // Stroke/rod ratio for warnings
   const strokeRodRatio = r > 0 ? s / r : 0;

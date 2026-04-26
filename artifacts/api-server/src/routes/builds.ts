@@ -1,8 +1,19 @@
 import { Router, type IRouter } from "express";
-import { eq, and } from "drizzle-orm";
+import { eq, and, desc } from "drizzle-orm";
+import { getAuth } from "@clerk/express";
 import { db, enginesTable, clearanceSpecsTable, torqueSpecsTable, buildsTable, fieldEntriesTable } from "@workspace/db";
 
 const router: IRouter = Router();
+
+// ─── Helper: extract userId from Clerk auth, fallback to "guest" ─────────────
+function getUserId(req: any): string {
+  try {
+    const auth = getAuth(req);
+    return auth?.userId ?? "guest";
+  } catch {
+    return "guest";
+  }
+}
 
 // ─── Spec key mapping: DB name patterns → component spec key ──────────────────
 // Each entry: [component key, label, category pattern, name pattern (partial match)]
@@ -196,7 +207,6 @@ router.get("/engines/:slug", async (req, res): Promise<void> => {
   const torque = buildTorqueFromDb(dbTorqueSpecs, slug);
 
   // Derive bore/stroke/displacement/firing order from engine row
-  // The enginesTable has these fields directly
   const cylinders = CYLINDER_COUNTS[slug] ?? 8;
 
   res.json({
@@ -211,10 +221,28 @@ router.get("/engines/:slug", async (req, res): Promise<void> => {
   });
 });
 
+// ─── GET /api/builds ─────────────────────────────────────────────────────────
+// List all builds for the authenticated user
+
+router.get("/builds", async (req, res): Promise<void> => {
+  const userId = getUserId(req);
+  if (userId === "guest") {
+    res.json([]);
+    return;
+  }
+  const builds = await db
+    .select()
+    .from(buildsTable)
+    .where(eq(buildsTable.userId, userId))
+    .orderBy(desc(buildsTable.updatedAt));
+  res.json(builds);
+});
+
 // ─── POST /api/builds ─────────────────────────────────────────────────────────
 
 router.post("/builds", async (req, res): Promise<void> => {
-  const { name, engineSlug, planTier, stateJson, userId } = req.body;
+  const userId = getUserId(req);
+  const { name, engineSlug, planTier, stateJson } = req.body;
   if (!engineSlug) {
     res.status(400).json({ error: "engineSlug is required" });
     return;
@@ -224,7 +252,7 @@ router.post("/builds", async (req, res): Promise<void> => {
     engineSlug,
     planTier: planTier ?? "free",
     stateJson: typeof stateJson === "string" ? stateJson : JSON.stringify(stateJson ?? {}),
-    userId: userId ?? "guest",
+    userId,
   }).returning();
   res.status(201).json(build);
 });
@@ -237,6 +265,17 @@ router.put("/builds/:id", async (req, res): Promise<void> => {
     res.status(400).json({ error: "Invalid build id" });
     return;
   }
+  const userId = getUserId(req);
+  const [existing] = await db.select().from(buildsTable).where(eq(buildsTable.id, id));
+  if (!existing) {
+    res.status(404).json({ error: "Build not found" });
+    return;
+  }
+  if (existing.userId !== "guest" && existing.userId !== userId) {
+    res.status(403).json({ error: "Not authorized" });
+    return;
+  }
+
   const { name, stateJson, planTier } = req.body;
   const [build] = await db
     .update(buildsTable)
@@ -248,10 +287,6 @@ router.put("/builds/:id", async (req, res): Promise<void> => {
     })
     .where(eq(buildsTable.id, id))
     .returning();
-  if (!build) {
-    res.status(404).json({ error: "Build not found" });
-    return;
-  }
   res.json(build);
 });
 
@@ -272,7 +307,32 @@ router.get("/builds/:id", async (req, res): Promise<void> => {
   res.json({ ...build, fields });
 });
 
+// ─── DELETE /api/builds/:id ──────────────────────────────────────────────────
+
+router.delete("/builds/:id", async (req, res): Promise<void> => {
+  const id = parseInt(req.params.id, 10);
+  if (isNaN(id)) {
+    res.status(400).json({ error: "Invalid build id" });
+    return;
+  }
+  const userId = getUserId(req);
+  const [existing] = await db.select().from(buildsTable).where(eq(buildsTable.id, id));
+  if (!existing) {
+    res.status(404).json({ error: "Build not found" });
+    return;
+  }
+  if (existing.userId !== "guest" && existing.userId !== userId) {
+    res.status(403).json({ error: "Not authorized" });
+    return;
+  }
+
+  await db.delete(fieldEntriesTable).where(eq(fieldEntriesTable.buildId, id));
+  await db.delete(buildsTable).where(eq(buildsTable.id, id));
+  res.json({ success: true });
+});
+
 // ─── POST /api/builds/:buildId/fields ────────────────────────────────────────
+// Single field upsert
 
 router.post("/builds/:buildId/fields", async (req, res): Promise<void> => {
   const buildId = parseInt(req.params.buildId, 10);
@@ -280,7 +340,8 @@ router.post("/builds/:buildId/fields", async (req, res): Promise<void> => {
     res.status(400).json({ error: "Invalid buildId" });
     return;
   }
-  const { fieldKey, value, userId } = req.body;
+  const userId = getUserId(req);
+  const { fieldKey, value } = req.body;
   if (!fieldKey || value === undefined) {
     res.status(400).json({ error: "fieldKey and value are required" });
     return;
@@ -292,7 +353,7 @@ router.post("/builds/:buildId/fields", async (req, res): Promise<void> => {
   let entry;
   if (existing.length > 0) {
     [entry] = await db.update(fieldEntriesTable)
-      .set({ value: String(value), userId: userId ?? "guest", updatedAt: new Date() })
+      .set({ value: String(value), userId, updatedAt: new Date() })
       .where(eq(fieldEntriesTable.id, existing[0].id))
       .returning();
   } else {
@@ -300,10 +361,52 @@ router.post("/builds/:buildId/fields", async (req, res): Promise<void> => {
       buildId,
       fieldKey,
       value: String(value),
-      userId: userId ?? "guest",
+      userId,
     }).returning();
   }
   res.status(201).json(entry);
+});
+
+// ─── POST /api/builds/:buildId/fields/batch ─────────────────────────────────
+// Batch upsert multiple fields at once
+
+router.post("/builds/:buildId/fields/batch", async (req, res): Promise<void> => {
+  const buildId = parseInt(req.params.buildId, 10);
+  if (isNaN(buildId)) {
+    res.status(400).json({ error: "Invalid buildId" });
+    return;
+  }
+  const userId = getUserId(req);
+  const { fields } = req.body as { fields: Record<string, string> };
+  if (!fields || typeof fields !== "object") {
+    res.status(400).json({ error: "fields object is required" });
+    return;
+  }
+
+  const results: any[] = [];
+  for (const [fieldKey, value] of Object.entries(fields)) {
+    const existing = await db.select({ id: fieldEntriesTable.id })
+      .from(fieldEntriesTable)
+      .where(and(eq(fieldEntriesTable.buildId, buildId), eq(fieldEntriesTable.fieldKey, fieldKey)));
+
+    let entry;
+    if (existing.length > 0) {
+      [entry] = await db.update(fieldEntriesTable)
+        .set({ value: String(value), userId, updatedAt: new Date() })
+        .where(eq(fieldEntriesTable.id, existing[0].id))
+        .returning();
+    } else {
+      [entry] = await db.insert(fieldEntriesTable).values({
+        buildId,
+        fieldKey,
+        value: String(value),
+        userId,
+      }).returning();
+    }
+    results.push(entry);
+  }
+
+  res.status(201).json(results);
 });
 
 export default router;
