@@ -9,11 +9,12 @@ import { Select, SelectContent, SelectItem, SelectTrigger, SelectValue } from "@
 type RingType = "top" | "second" | "oil";
 type AppType = "na-street" | "na-perf" | "fi-street" | "full-race";
 
-const gapMultipliers: Record<AppType, Record<RingType, [number, number]>> = {
-  "na-street":   { top: [0.004, 0.005], second: [0.004, 0.005], oil: [0.015, 0.030] },
-  "na-perf":     { top: [0.005, 0.006], second: [0.005, 0.006], oil: [0.015, 0.030] },
-  "fi-street":   { top: [0.006, 0.007], second: [0.005, 0.006], oil: [0.015, 0.030] },
-  "full-race":   { top: [0.007, 0.009], second: [0.006, 0.008], oil: [0.015, 0.030] },
+// Oil ring uses flat minimum gap (NOT per-inch multiplier) — see advanced calculator for details
+const gapMultipliers: Record<AppType, Record<RingType, { perInch: [number, number] } | { flat: [number, number] }>> = {
+  "na-street":   { top: { perInch: [0.004, 0.005] }, second: { perInch: [0.004, 0.005] }, oil: { flat: [0.015, 0.055] } },
+  "na-perf":     { top: { perInch: [0.005, 0.006] }, second: { perInch: [0.005, 0.006] }, oil: { flat: [0.015, 0.055] } },
+  "fi-street":   { top: { perInch: [0.006, 0.007] }, second: { perInch: [0.005, 0.006] }, oil: { flat: [0.015, 0.055] } },
+  "full-race":   { top: { perInch: [0.007, 0.009] }, second: { perInch: [0.006, 0.008] }, oil: { flat: [0.015, 0.055] } },
 };
 
 function getZone(actual: number, min: number, max: number): { label: string; color: string; bg: string } {
@@ -31,9 +32,11 @@ export default function RingGapCalculator() {
   const [actualGap, setActualGap] = useState("");
 
   const b = parseFloat(bore) || 0;
-  const [minMult, maxMult] = gapMultipliers[appType][ringType];
-  const minGap = b * minMult;
-  const maxGap = b * maxMult;
+  const entry = gapMultipliers[appType][ringType];
+  const isFlat = "flat" in entry;
+  const [minVal, maxVal] = isFlat ? entry.flat : entry.perInch;
+  const minGap = isFlat ? minVal : b * minVal;
+  const maxGap = isFlat ? maxVal : b * maxVal;
 
   const actualGapNum = parseFloat(actualGap);
   const zone = actualGap && !isNaN(actualGapNum) ? getZone(actualGapNum, minGap, maxGap) : null;
@@ -101,12 +104,23 @@ export default function RingGapCalculator() {
             <CardContent className="space-y-4">
               <div>
                 <p className="text-gray-400 text-sm">Inches</p>
-                <p className="text-4xl font-bold text-primary">{minGap.toFixed(3)}" – {maxGap.toFixed(3)}"</p>
+                {ringType === "oil" ? (
+                  <p className="text-4xl font-bold text-primary">{minGap.toFixed(3)}" minimum</p>
+                ) : (
+                  <p className="text-4xl font-bold text-primary">{minGap.toFixed(3)}" – {maxGap.toFixed(3)}"</p>
+                )}
               </div>
               <div>
                 <p className="text-gray-400 text-sm">Millimeters</p>
-                <p className="text-2xl font-bold">{(minGap * 25.4).toFixed(2)} – {(maxGap * 25.4).toFixed(2)} mm</p>
+                {ringType === "oil" ? (
+                  <p className="text-2xl font-bold">{(minGap * 25.4).toFixed(2)} mm minimum</p>
+                ) : (
+                  <p className="text-2xl font-bold">{(minGap * 25.4).toFixed(2)} – {(maxGap * 25.4).toFixed(2)} mm</p>
+                )}
               </div>
+              {ringType === "oil" && (
+                <p className="text-xs text-gray-400">Oil rail gap is a flat minimum — not calculated per inch of bore. Do not file the expander.</p>
+              )}
             </CardContent>
           </Card>
 

@@ -6,7 +6,7 @@ import { Label } from "@/components/ui/label";
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 import { Select, SelectContent, SelectItem, SelectTrigger, SelectValue } from "@/components/ui/select";
 import { Slider } from "@/components/ui/slider";
-import { AlertTriangle, Copy, Check, ChevronDown, ChevronUp } from "lucide-react";
+import { AlertTriangle, Copy, Check, ChevronDown, ChevronUp, Info } from "lucide-react";
 import { useBuildField } from "@/hooks/useBuildField";
 import { useBuildContext } from "@/context/BuildContext";
 
@@ -28,28 +28,118 @@ type Application =
 
 type RingMaterial = "cast-iron" | "moly" | "steel" | "stainless";
 
+type DieselEngine =
+  | "generic"
+  | "cummins-59-12v"
+  | "cummins-59-24v"
+  | "cummins-67"
+  | "powerstroke-73"
+  | "powerstroke-60"
+  | "powerstroke-64"
+  | "duramax-66";
+
 interface MultiplierRow {
   top: number;
   second: number;
-  oilMin: number;
-  oilMax: number;
+  oilMin: number; // flat minimum gap in inches (NOT per inch of bore)
 }
 
-// ── Multiplier Table ───────────────────────────────────────────────────────────
+// ── Diesel Engine Presets (absolute gap specs from OEM / aftermarket data) ────
+
+interface DieselPreset {
+  label: string;
+  bore: number;
+  topMin: number;
+  topMax: number;
+  secondMin: number;
+  secondMax: number;
+  oilMin: number;
+  oilMax: number;
+  notes: string;
+}
+
+const dieselPresets: Record<DieselEngine, DieselPreset> = {
+  "generic": {
+    label: "Generic diesel — use OEM specs if available",
+    bore: 0,
+    topMin: 0, topMax: 0,
+    secondMin: 0, secondMax: 0,
+    oilMin: 0, oilMax: 0,
+    notes: "Generic diesel multipliers applied. Diesel engines often have very different ring gap specs than gasoline engines — always check your service manual.",
+  },
+  "cummins-59-12v": {
+    label: "Cummins 5.9L 6BT (12-valve)",
+    bore: 4.016,
+    topMin: 0.010, topMax: 0.014,
+    secondMin: 0.033, secondMax: 0.045,
+    oilMin: 0.010, oilMax: 0.022,
+    notes: "The large second ring gap (0.033\u20130.045\") is intentional — Cummins uses a ~3:1 second-to-top ratio to equalize inter-ring pressures and aid oil control. Do NOT close the second ring gap to gasoline specs.",
+  },
+  "cummins-59-24v": {
+    label: "Cummins 5.9L ISB (24-valve)",
+    bore: 4.016,
+    topMin: 0.010, topMax: 0.014,
+    secondMin: 0.033, secondMax: 0.045,
+    oilMin: 0.010, oilMax: 0.022,
+    notes: "Same ring gap specs as the 12-valve 6BT. The 24V ISB uses identical bore and ring specifications. The massive second ring gap is by design.",
+  },
+  "cummins-67": {
+    label: "Cummins 6.7L ISB (2007.5+)",
+    bore: 4.210,
+    topMin: 0.012, topMax: 0.018,
+    secondMin: 0.035, secondMax: 0.049,
+    oilMin: 0.010, oilMax: 0.024,
+    notes: "Larger bore than the 5.9L but follows the same diesel ring gap philosophy with a very large second ring gap.",
+  },
+  "powerstroke-73": {
+    label: "Ford / Navistar 7.3L T444E Powerstroke",
+    bore: 4.110,
+    topMin: 0.014, topMax: 0.024,
+    secondMin: 0.062, secondMax: 0.072,
+    oilMin: 0.012, oilMax: 0.024,
+    notes: "The 7.3L has an extremely large second ring gap (0.062\u20130.072\"). This is one of the most extreme examples of the diesel second-ring philosophy. Navistar designed this to equalize land pressures.",
+  },
+  "powerstroke-60": {
+    label: "Ford 6.0L Powerstroke (VT365)",
+    bore: 3.740,
+    topMin: 0.011, topMax: 0.031,
+    secondMin: 0.056, secondMax: 0.076,
+    oilMin: 0.009, oilMax: 0.029,
+    notes: "Large second ring gap follows the International / Navistar diesel pattern. Always verify against your specific ring set — aftermarket sets may differ.",
+  },
+  "powerstroke-64": {
+    label: "Ford 6.4L Powerstroke",
+    bore: 3.876,
+    topMin: 0.012, topMax: 0.028,
+    secondMin: 0.055, secondMax: 0.075,
+    oilMin: 0.010, oilMax: 0.028,
+    notes: "Similar to other Powerstroke engines with a very large second ring gap. Ford/International spec — verify against your ring set.",
+  },
+  "duramax-66": {
+    label: "GM Duramax 6.6L (LBZ / LLY / LML / L5P)",
+    bore: 4.055,
+    topMin: 0.012, topMax: 0.020,
+    secondMin: 0.018, secondMax: 0.028,
+    oilMin: 0.010, oilMax: 0.020,
+    notes: "Duramax uses a smaller second ring gap than Cummins or Powerstroke, but it is still larger than the top ring. Check your specific generation — early and late Duramax have slightly different specs.",
+  },
+};
+
+// ── Multiplier Table (gasoline applications) ──────────────────────────────────
 
 const multiplierTable: Record<Application, MultiplierRow> = {
-  "stock":          { top: 0.0035, second: 0.0045, oilMin: 0.015, oilMax: 0.025 },
-  "perf-na":        { top: 0.0040, second: 0.0050, oilMin: 0.015, oilMax: 0.025 },
-  "high-na":        { top: 0.0045, second: 0.0050, oilMin: 0.015, oilMax: 0.025 },
-  "nitrous-50":     { top: 0.0055, second: 0.0060, oilMin: 0.015, oilMax: 0.025 },
-  "nitrous-150":    { top: 0.0060, second: 0.0065, oilMin: 0.015, oilMax: 0.025 },
-  "nitrous-250":    { top: 0.0070, second: 0.0075, oilMin: 0.020, oilMax: 0.030 },
-  "turbo-10":       { top: 0.0050, second: 0.0055, oilMin: 0.015, oilMax: 0.025 },
-  "turbo-20":       { top: 0.0055, second: 0.0060, oilMin: 0.015, oilMax: 0.025 },
-  "turbo-20plus":   { top: 0.0065, second: 0.0070, oilMin: 0.020, oilMax: 0.030 },
-  "sc-roots":       { top: 0.0055, second: 0.0060, oilMin: 0.015, oilMax: 0.025 },
-  "sc-centrifugal": { top: 0.0060, second: 0.0065, oilMin: 0.015, oilMax: 0.025 },
-  "diesel":         { top: 0.0075, second: 0.0080, oilMin: 0.020, oilMax: 0.030 },
+  "stock":          { top: 0.0035, second: 0.0045, oilMin: 0.015 },
+  "perf-na":        { top: 0.0040, second: 0.0050, oilMin: 0.015 },
+  "high-na":        { top: 0.0045, second: 0.0050, oilMin: 0.015 },
+  "nitrous-50":     { top: 0.0055, second: 0.0060, oilMin: 0.015 },
+  "nitrous-150":    { top: 0.0060, second: 0.0065, oilMin: 0.015 },
+  "nitrous-250":    { top: 0.0070, second: 0.0075, oilMin: 0.015 },
+  "turbo-10":       { top: 0.0050, second: 0.0055, oilMin: 0.015 },
+  "turbo-20":       { top: 0.0055, second: 0.0060, oilMin: 0.015 },
+  "turbo-20plus":   { top: 0.0065, second: 0.0070, oilMin: 0.015 },
+  "sc-roots":       { top: 0.0055, second: 0.0060, oilMin: 0.015 },
+  "sc-centrifugal": { top: 0.0060, second: 0.0065, oilMin: 0.015 },
+  "diesel":         { top: 0.0060, second: 0.0070, oilMin: 0.015 },
 };
 
 const applicationLabels: Record<Application, string> = {
@@ -64,7 +154,7 @@ const applicationLabels: Record<Application, string> = {
   "turbo-20plus":   "Turbo race (20+ psi)",
   "sc-roots":       "Supercharged (Roots / TVS / Whipple)",
   "sc-centrifugal": "Supercharged (Centrifugal)",
-  "diesel":         "Diesel / extreme boost (30+ psi)",
+  "diesel":         "Diesel (select engine below)",
 };
 
 const materialLabels: Record<RingMaterial, string> = {
@@ -81,7 +171,7 @@ interface Warning {
   message: string;
 }
 
-function getWarnings(app: Application, mat: RingMaterial, bore: number): Warning[] {
+function getWarnings(app: Application, mat: RingMaterial, bore: number, dieselEngine: DieselEngine): Warning[] {
   const warnings: Warning[] = [];
 
   // Moly + high nitrous
@@ -124,6 +214,14 @@ function getWarnings(app: Application, mat: RingMaterial, bore: number): Warning
     });
   }
 
+  // Diesel with generic preset
+  if (app === "diesel" && dieselEngine === "generic") {
+    warnings.push({
+      level: "yellow",
+      message: "Generic diesel multipliers are a rough guideline only. Diesel engines often have vastly different ring gap specs than gasoline engines \u2014 the second ring gap is typically 2\u20134x larger than the top ring. Always use your engine's OEM service manual specs.",
+    });
+  }
+
   return warnings;
 }
 
@@ -149,6 +247,7 @@ export default function RingGapAdvancedCalculator() {
   const [boreUnits, setBoreUnits] = useState<"in" | "mm">("in");
   const [app, setApp] = useState<Application>("perf-na");
   const [material, setMaterial] = useState<RingMaterial>("moly");
+  const [dieselEngine, setDieselEngine] = useState<DieselEngine>("generic");
   const [advancedOpen, setAdvancedOpen] = useState(false);
 
   // Advanced override sliders — initialized from the table
@@ -164,23 +263,57 @@ export default function RingGapAdvancedCalculator() {
     setSecondOverride(null);
   }
 
+  // Auto-fill bore when a specific diesel engine is selected
+  useEffect(() => {
+    if (app === "diesel" && dieselEngine !== "generic") {
+      const preset = dieselPresets[dieselEngine];
+      if (preset.bore > 0) {
+        setBore(preset.bore.toFixed(4));
+        setBoreMm((preset.bore * 25.4).toFixed(2));
+      }
+    }
+  }, [dieselEngine]);
+
   const b = parseFloat(bore) || 0;
 
-  const topMult = topOverride ?? defaults.top;
-  const secondMult = secondOverride ?? defaults.second;
+  // Determine if we're using a specific diesel preset with absolute specs
+  const isDieselPreset = app === "diesel" && dieselEngine !== "generic";
+  const activeDieselPreset = isDieselPreset ? dieselPresets[dieselEngine] : null;
 
-  // Assertion: second must always be >= top
-  const effectiveSecondMult = Math.max(secondMult, topMult);
+  // Calculate gaps
+  let topGap: number;
+  let secondGap: number;
+  let oilGapMin: number;
+  let topGapLabel: string;
+  let secondGapLabel: string;
+  let oilGapLabel: string;
 
-  const topGap = b * topMult;
-  const secondGap = b * effectiveSecondMult;
-  const oilGapMin = b * defaults.oilMin;
-  const oilGapMax = b * defaults.oilMax;
+  if (activeDieselPreset) {
+    // Diesel preset: use absolute OEM specs (not per-inch multipliers)
+    topGap = (activeDieselPreset.topMin + activeDieselPreset.topMax) / 2;
+    secondGap = (activeDieselPreset.secondMin + activeDieselPreset.secondMax) / 2;
+    oilGapMin = activeDieselPreset.oilMin;
+    topGapLabel = `${formatInches(activeDieselPreset.topMin)}" \u2013 ${formatInches(activeDieselPreset.topMax)}"`;
+    secondGapLabel = `${formatInches(activeDieselPreset.secondMin)}" \u2013 ${formatInches(activeDieselPreset.secondMax)}"`;
+    oilGapLabel = `${formatInches(activeDieselPreset.oilMin)}" \u2013 ${formatInches(activeDieselPreset.oilMax)}"`;
+  } else {
+    // Gasoline / generic diesel: use per-inch multipliers
+    const topMult = topOverride ?? defaults.top;
+    const secondMult = secondOverride ?? defaults.second;
+    const effectiveSecondMult = Math.max(secondMult, topMult);
+
+    topGap = b * topMult;
+    secondGap = b * effectiveSecondMult;
+    oilGapMin = defaults.oilMin; // flat minimum, NOT multiplied by bore
+    topGapLabel = "";
+    secondGapLabel = "";
+    oilGapLabel = "";
+  }
 
   // Enforce minimum practical gap
   const minPracticalGap = 0.010;
 
-  const warnings = useMemo(() => getWarnings(app, material, b), [app, material, b]);
+  const warnings = useMemo(() => getWarnings(app, material, b, dieselEngine), [app, material, b, dieselEngine]);
 
   // Small gap warning
   const smallGapWarning = topGap > 0 && topGap < minPracticalGap;
@@ -233,7 +366,7 @@ export default function RingGapAdvancedCalculator() {
         title="Piston Ring Gap Calculator"
         description="Application-specific piston ring end gap calculator for NA, nitrous, turbo, supercharged, and diesel builds. Per-ring outputs, material warnings, and file-gap workflow."
         canonical="/calculators/ring-gap-advanced"
-        keywords="piston ring gap calculator, advanced ring gap, turbo ring gap, nitrous ring gap, diesel ring gap, ring material, file ring gap"
+        keywords="piston ring gap calculator, advanced ring gap, turbo ring gap, nitrous ring gap, diesel ring gap, cummins ring gap, powerstroke ring gap, duramax ring gap, ring material, file ring gap"
       />
 
       <h1 className="text-3xl font-bold mb-1">Piston Ring Gap Calculator</h1>
@@ -285,6 +418,31 @@ export default function RingGapAdvancedCalculator() {
               </Select>
             </div>
 
+            {/* Diesel Engine Selector — only shown when diesel is selected */}
+            {app === "diesel" && (
+              <div className="space-y-1">
+                <Label>Diesel Engine</Label>
+                <Select value={dieselEngine} onValueChange={(v) => setDieselEngine(v as DieselEngine)}>
+                  <SelectTrigger><SelectValue /></SelectTrigger>
+                  <SelectContent>
+                    <SelectItem value="generic">Generic diesel (use multipliers)</SelectItem>
+                    <SelectItem value="cummins-59-12v">Cummins 5.9L 6BT (12-valve)</SelectItem>
+                    <SelectItem value="cummins-59-24v">Cummins 5.9L ISB (24-valve)</SelectItem>
+                    <SelectItem value="cummins-67">Cummins 6.7L ISB (2007.5+)</SelectItem>
+                    <SelectItem value="powerstroke-73">Ford 7.3L Powerstroke</SelectItem>
+                    <SelectItem value="powerstroke-60">Ford 6.0L Powerstroke</SelectItem>
+                    <SelectItem value="powerstroke-64">Ford 6.4L Powerstroke</SelectItem>
+                    <SelectItem value="duramax-66">GM Duramax 6.6L</SelectItem>
+                  </SelectContent>
+                </Select>
+                {activeDieselPreset && (
+                  <p className="text-xs text-muted-foreground mt-1">
+                    Standard bore: {activeDieselPreset.bore.toFixed(3)}" ({(activeDieselPreset.bore * 25.4).toFixed(1)} mm)
+                  </p>
+                )}
+              </div>
+            )}
+
             {/* Material */}
             <div className="space-y-1">
               <Label>Ring Material</Label>
@@ -298,52 +456,56 @@ export default function RingGapAdvancedCalculator() {
               </Select>
             </div>
 
-            {/* Advanced toggle */}
-            <button
-              onClick={() => setAdvancedOpen(!advancedOpen)}
-              className="flex items-center gap-1 text-sm font-medium text-[#E85D04] hover:underline mt-2"
-            >
-              {advancedOpen ? <ChevronUp className="w-4 h-4" /> : <ChevronDown className="w-4 h-4" />}
-              Advanced: Override multipliers
-            </button>
-
-            {advancedOpen && (
-              <div className="space-y-4 p-3 rounded-lg border border-dashed border-gray-300 bg-gray-50">
-                <div className="space-y-2">
-                  <div className="flex justify-between text-sm">
-                    <Label>Top Ring Multiplier</Label>
-                    <span className="font-mono text-[#E85D04] font-bold">{(topOverride ?? defaults.top).toFixed(4)}</span>
-                  </div>
-                  <Slider
-                    min={0.003}
-                    max={0.010}
-                    step={0.0005}
-                    value={[topOverride ?? defaults.top]}
-                    onValueChange={([v]) => setTopOverride(v)}
-                  />
-                  <p className="text-xs text-muted-foreground">Default for this application: {defaults.top.toFixed(4)}</p>
-                </div>
-                <div className="space-y-2">
-                  <div className="flex justify-between text-sm">
-                    <Label>Second Ring Multiplier</Label>
-                    <span className="font-mono text-[#E85D04] font-bold">{(secondOverride ?? defaults.second).toFixed(4)}</span>
-                  </div>
-                  <Slider
-                    min={0.003}
-                    max={0.010}
-                    step={0.0005}
-                    value={[secondOverride ?? defaults.second]}
-                    onValueChange={([v]) => setSecondOverride(v)}
-                  />
-                  <p className="text-xs text-muted-foreground">Default for this application: {defaults.second.toFixed(4)}</p>
-                </div>
+            {/* Advanced toggle — hidden for diesel presets since they use absolute specs */}
+            {!isDieselPreset && (
+              <>
                 <button
-                  onClick={() => { setTopOverride(null); setSecondOverride(null); }}
-                  className="text-xs text-muted-foreground hover:text-foreground underline"
+                  onClick={() => setAdvancedOpen(!advancedOpen)}
+                  className="flex items-center gap-1 text-sm font-medium text-[#E85D04] hover:underline mt-2"
                 >
-                  Reset to application defaults
+                  {advancedOpen ? <ChevronUp className="w-4 h-4" /> : <ChevronDown className="w-4 h-4" />}
+                  Advanced: Override multipliers
                 </button>
-              </div>
+
+                {advancedOpen && (
+                  <div className="space-y-4 p-3 rounded-lg border border-dashed border-gray-300 bg-gray-50">
+                    <div className="space-y-2">
+                      <div className="flex justify-between text-sm">
+                        <Label>Top Ring Multiplier</Label>
+                        <span className="font-mono text-[#E85D04] font-bold">{(topOverride ?? defaults.top).toFixed(4)}</span>
+                      </div>
+                      <Slider
+                        min={0.003}
+                        max={0.010}
+                        step={0.0005}
+                        value={[topOverride ?? defaults.top]}
+                        onValueChange={([v]) => setTopOverride(v)}
+                      />
+                      <p className="text-xs text-muted-foreground">Default for this application: {defaults.top.toFixed(4)}</p>
+                    </div>
+                    <div className="space-y-2">
+                      <div className="flex justify-between text-sm">
+                        <Label>Second Ring Multiplier</Label>
+                        <span className="font-mono text-[#E85D04] font-bold">{(secondOverride ?? defaults.second).toFixed(4)}</span>
+                      </div>
+                      <Slider
+                        min={0.003}
+                        max={0.010}
+                        step={0.0005}
+                        value={[secondOverride ?? defaults.second]}
+                        onValueChange={([v]) => setSecondOverride(v)}
+                      />
+                      <p className="text-xs text-muted-foreground">Default for this application: {defaults.second.toFixed(4)}</p>
+                    </div>
+                    <button
+                      onClick={() => { setTopOverride(null); setSecondOverride(null); }}
+                      className="text-xs text-muted-foreground hover:text-foreground underline"
+                    >
+                      Reset to application defaults
+                    </button>
+                  </div>
+                )}
+              </>
             )}
           </CardContent>
         </Card>
@@ -356,7 +518,12 @@ export default function RingGapAdvancedCalculator() {
               <CardTitle className="text-sm text-gray-400 font-medium">Top Ring Gap</CardTitle>
             </CardHeader>
             <CardContent>
-              {boreUnits === "in" ? (
+              {activeDieselPreset ? (
+                <>
+                  <p className="text-3xl font-bold text-[#E85D04] tabular-nums">{topGapLabel}</p>
+                  <p className="text-sm text-gray-400 mt-1">OEM spec</p>
+                </>
+              ) : boreUnits === "in" ? (
                 <>
                   <p className="text-5xl font-bold text-[#E85D04] tabular-nums">{formatThousandths(topGap)}</p>
                   <p className="text-sm text-gray-400 mt-1">thousandths ({formatInches(topGap)}")</p>
@@ -373,7 +540,12 @@ export default function RingGapAdvancedCalculator() {
               <CardTitle className="text-sm text-gray-400 font-medium">Second Ring Gap</CardTitle>
             </CardHeader>
             <CardContent>
-              {boreUnits === "in" ? (
+              {activeDieselPreset ? (
+                <>
+                  <p className="text-3xl font-bold text-[#E85D04] tabular-nums">{secondGapLabel}</p>
+                  <p className="text-sm text-gray-400 mt-1">OEM spec</p>
+                </>
+              ) : boreUnits === "in" ? (
                 <>
                   <p className="text-5xl font-bold text-[#E85D04] tabular-nums">{formatThousandths(secondGap)}</p>
                   <p className="text-sm text-gray-400 mt-1">thousandths ({formatInches(secondGap)}")</p>
@@ -390,23 +562,37 @@ export default function RingGapAdvancedCalculator() {
               <CardTitle className="text-sm text-gray-400 font-medium">Oil Rail Gap</CardTitle>
             </CardHeader>
             <CardContent>
-              {boreUnits === "in" ? (
+              {activeDieselPreset ? (
                 <>
-                  <p className="text-4xl font-bold text-[#E85D04] tabular-nums">
-                    {formatThousandths(oilGapMin)}<span className="text-2xl text-gray-500"> – </span>{formatThousandths(oilGapMax)}
-                  </p>
-                  <p className="text-sm text-gray-400 mt-1">thousandths ({formatInches(oilGapMin)}" – {formatInches(oilGapMax)}")</p>
+                  <p className="text-3xl font-bold text-[#E85D04] tabular-nums">{oilGapLabel}</p>
+                  <p className="text-sm text-gray-400 mt-1">OEM spec</p>
+                </>
+              ) : boreUnits === "in" ? (
+                <>
+                  <p className="text-5xl font-bold text-[#E85D04] tabular-nums">{formatThousandths(oilGapMin)}</p>
+                  <p className="text-sm text-gray-400 mt-1">minimum ({formatInches(oilGapMin)}")</p>
                 </>
               ) : (
-                <p className="text-4xl font-bold text-[#E85D04] tabular-nums">
-                  {(oilGapMin * 25.4).toFixed(2)}<span className="text-2xl text-gray-500"> – </span>{(oilGapMax * 25.4).toFixed(2)} mm
-                </p>
+                <p className="text-5xl font-bold text-[#E85D04] tabular-nums">{(oilGapMin * 25.4).toFixed(2)} mm</p>
               )}
-              <p className="text-xs text-gray-500 mt-2">File to within this range</p>
+              {!activeDieselPreset && (
+                <p className="text-xs text-gray-500 mt-2">Minimum gap — oil rails are less critical than compression rings. Do not file the expander.</p>
+              )}
             </CardContent>
           </Card>
         </div>
       </div>
+
+      {/* ── Diesel Preset Notes ────────────────────────────────────────────── */}
+      {activeDieselPreset && (
+        <div className="flex items-start gap-3 p-4 rounded-lg border border-blue-200 bg-blue-50 text-blue-900 mb-8">
+          <Info className="w-5 h-5 shrink-0 mt-0.5 text-blue-600" />
+          <div className="text-sm">
+            <p className="font-semibold mb-1">{activeDieselPreset.label}</p>
+            <p>{activeDieselPreset.notes}</p>
+          </div>
+        </div>
+      )}
 
       {/* ── Warnings ───────────────────────────────────────────────────────── */}
       {(warnings.length > 0 || smallGapWarning) && (
@@ -433,6 +619,47 @@ export default function RingGapAdvancedCalculator() {
             </div>
           )}
         </div>
+      )}
+
+      {/* ── Diesel Ring Gap Comparison Table ───────────────────────────────── */}
+      {app === "diesel" && (
+        <Card className="mb-8">
+          <CardHeader>
+            <CardTitle className="text-lg">Diesel Engine Ring Gap Comparison</CardTitle>
+          </CardHeader>
+          <CardContent className="overflow-x-auto">
+            <p className="text-sm text-muted-foreground mb-4">
+              Diesel engines use fundamentally different ring gap ratios than gasoline engines. Most diesels run a second ring gap 2&ndash;4x larger than the top ring to equalize inter-ring pressures and aid oil control. <strong>Do not apply gasoline ring gap formulas to diesel engines.</strong>
+            </p>
+            <table className="w-full text-sm">
+              <thead>
+                <tr className="border-b text-left">
+                  <th className="pb-2 pr-4 font-semibold">Engine</th>
+                  <th className="pb-2 pr-4 font-semibold">Bore</th>
+                  <th className="pb-2 pr-4 font-semibold text-right">Top Ring</th>
+                  <th className="pb-2 pr-4 font-semibold text-right">Second Ring</th>
+                  <th className="pb-2 font-semibold text-right">Oil Ring</th>
+                </tr>
+              </thead>
+              <tbody className="text-muted-foreground">
+                {(Object.keys(dieselPresets) as DieselEngine[]).filter(k => k !== "generic").map(key => {
+                  const p = dieselPresets[key];
+                  const isActive = key === dieselEngine;
+                  return (
+                    <tr key={key} className={`border-b last:border-0 cursor-pointer hover:bg-muted/50 ${isActive ? "bg-[#E85D04]/5 font-medium text-foreground" : ""}`}
+                        onClick={() => setDieselEngine(key)}>
+                      <td className="py-2 pr-4">{p.label}</td>
+                      <td className="py-2 pr-4 font-mono">{p.bore.toFixed(3)}"</td>
+                      <td className="py-2 pr-4 text-right font-mono">{p.topMin.toFixed(3)}\u2013{p.topMax.toFixed(3)}"</td>
+                      <td className="py-2 pr-4 text-right font-mono">{p.secondMin.toFixed(3)}\u2013{p.secondMax.toFixed(3)}"</td>
+                      <td className="py-2 text-right font-mono">{p.oilMin.toFixed(3)}\u2013{p.oilMax.toFixed(3)}"</td>
+                    </tr>
+                  );
+                })}
+              </tbody>
+            </table>
+          </CardContent>
+        </Card>
       )}
 
       {/* ── File-Gap Workflow ──────────────────────────────────────────────── */}
@@ -474,15 +701,31 @@ export default function RingGapAdvancedCalculator() {
           <p>
             Ring material matters because different metals respond to heat differently. Cast iron was the standard for decades — inexpensive and adequate for stock applications, but it warps under rapid thermal cycling and is brittle under high loads. Moly-faced (molybdenum-filled) rings improved durability and oil retention significantly, but the plasma-sprayed moly coating can delaminate under the thermal shock of high nitrous or extreme boost. Steel and stainless steel rings (gas-nitrided or tool steel like M2) are dimensionally stable even under extreme conditions — they cost more, but they hold their shape and survive where cast iron and moly cannot.
           </p>
+
+          <h3 className="text-sm font-semibold text-foreground mt-6">Oil Ring Rails vs. Compression Rings</h3>
+          <p>
+            Oil ring rails are responsible for scraping oil off the cylinder wall, not sealing combustion pressure. Their gap is far less critical than compression ring gaps. Most manufacturers (Mahle, Hastings, Wiseco, CP-Carrillo) specify oil rail gap as a flat <strong>0.015" minimum</strong> regardless of bore size — it is not calculated as a per-inch-of-bore multiplier like compression rings. Excessive oil ring gap slightly reduces oil scraping efficiency but does not cause compression loss. Too-tight oil ring gap can cause the same butting/seizure problems as compression rings. The oil ring expander (the wavy spring between the two thin rails) should never be filed — only the thin steel rails get gapped.
+          </p>
+
+          <h3 className="text-sm font-semibold text-foreground mt-6">Diesel Engines: A Different Animal</h3>
+          <p>
+            Diesel engines use fundamentally different ring gap ratios than gasoline engines. The standard gasoline formula of "0.004" per inch of bore" does <strong>not</strong> apply to most diesels. Diesel engines typically use a tight top ring and a very large second ring — roughly a 3:1 ratio of second-to-top ring gap. For example, the Cummins 5.9L 6BT specs a top ring of 0.010"–0.014" but a second ring of 0.033"–0.045". The Ford 7.3L Powerstroke is even more extreme: 0.062"–0.072" on the second ring.
+          </p>
+          <p>
+            This is a deliberate design choice. Diesel engines operate at higher compression ratios and temperatures. The large second ring gap equalizes inter-ring pressures, prevents the top ring from being destabilized by trapped pressure, and allows oil to reach the top ring for lubrication (diesel fuel provides no cylinder wall lubrication, unlike gasoline). Engine Professional magazine published a specific technical bulletin warning rebuilders about Cummins ring gaps, because machinists unfamiliar with diesel specs would assume the large second ring gap was an error and try to "correct" it — causing ring failure.
+          </p>
         </CardContent>
       </Card>
 
       {/* ── Multiplier Reference Table ─────────────────────────────────────── */}
       <Card className="mt-8">
         <CardHeader>
-          <CardTitle className="text-lg">Ring Gap Multiplier Reference</CardTitle>
+          <CardTitle className="text-lg">Gasoline Engine Ring Gap Multiplier Reference</CardTitle>
         </CardHeader>
         <CardContent className="overflow-x-auto">
+          <p className="text-sm text-muted-foreground mb-4">
+            Multiplied by bore diameter in inches. Oil rail gap is a flat minimum (not per inch of bore).
+          </p>
           <table className="w-full text-sm">
             <thead>
               <tr className="border-b text-left">
@@ -493,7 +736,7 @@ export default function RingGapAdvancedCalculator() {
               </tr>
             </thead>
             <tbody className="text-muted-foreground">
-              {(Object.keys(multiplierTable) as Application[]).map(key => {
+              {(Object.keys(multiplierTable) as Application[]).filter(k => k !== "diesel").map(key => {
                 const row = multiplierTable[key];
                 const isActive = key === app;
                 return (
@@ -501,7 +744,7 @@ export default function RingGapAdvancedCalculator() {
                     <td className="py-2 pr-4">{applicationLabels[key]}</td>
                     <td className="py-2 pr-4 text-right font-mono">{row.top.toFixed(4)}</td>
                     <td className="py-2 pr-4 text-right font-mono">{row.second.toFixed(4)}</td>
-                    <td className="py-2 text-right font-mono">{row.oilMin.toFixed(3)}–{row.oilMax.toFixed(3)}</td>
+                    <td className="py-2 text-right font-mono">{row.oilMin.toFixed(3)}" min</td>
                   </tr>
                 );
               })}
