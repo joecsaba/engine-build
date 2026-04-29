@@ -348,6 +348,142 @@ function RateCalculator({ onRateCalculated }: { onRateCalculated: (rate: string)
   );
 }
 
+/* ── Spring measurement diagram ──────────────────────────────── */
+
+function SpringMeasurementDiagram() {
+  // Spring geometry
+  const springTop = 30;
+  const springBot = 260;
+  const springH = springBot - springTop;
+  const cx = 180; // center x of spring
+  const coilODHalf = 65; // half of OD visual
+  const wireR = 7; // wire visual radius
+  const numCoils = 7; // visual coils (5.5 active + ~1.5 dead)
+  const coilSpacing = springH / (numCoils + 0.5);
+
+  // Build coil paths (sine-wave style cross section)
+  const coilPaths: string[] = [];
+  for (let i = 0; i <= numCoils; i++) {
+    const y = springTop + i * coilSpacing;
+    // Each coil is an arc from left to right
+    coilPaths.push(`M ${cx - coilODHalf} ${y} Q ${cx} ${y + coilSpacing * 0.5} ${cx + coilODHalf} ${y}`);
+    if (i < numCoils) {
+      coilPaths.push(`M ${cx + coilODHalf} ${y} Q ${cx} ${y + coilSpacing * 0.5} ${cx - coilODHalf} ${y + coilSpacing}`);
+    }
+  }
+
+  const deadCoilY1 = springBot - coilSpacing * 0.5;
+  const deadCoilY2 = springBot;
+
+  return (
+    <svg viewBox="0 0 420 310" className="w-full max-w-[420px] mx-auto" aria-label="Valve spring measurement diagram">
+      {/* Background plates (top and bottom) */}
+      <rect x={cx - coilODHalf - 15} y={springTop - 8} width={(coilODHalf + 15) * 2} height={8} rx={2} fill="#888" opacity={0.3} />
+      <rect x={cx - coilODHalf - 15} y={springBot} width={(coilODHalf + 15) * 2} height={8} rx={2} fill="#888" opacity={0.3} />
+
+      {/* Coil wire - draw as thick stroked paths */}
+      {coilPaths.map((d, i) => (
+        <path key={i} d={d} fill="none" stroke="#555" strokeWidth={wireR * 2} strokeLinecap="round" />
+      ))}
+      {/* Wire highlight for 3D effect */}
+      {coilPaths.map((d, i) => (
+        <path key={`h-${i}`} d={d} fill="none" stroke="#999" strokeWidth={wireR * 0.8} strokeLinecap="round" />
+      ))}
+
+      {/* Dead coils shading */}
+      <rect x={cx - coilODHalf - 5} y={deadCoilY1} width={(coilODHalf + 5) * 2} height={coilSpacing * 0.8} fill="#E85D04" opacity={0.12} rx={3} />
+      <text x={cx} y={deadCoilY1 + coilSpacing * 0.45} textAnchor="middle" className="fill-[#E85D04] text-[9px] font-semibold">dead coils</text>
+
+      {/* ── FREE LENGTH dimension (left side) ── */}
+      <line x1={55} y1={springTop} x2={55} y2={springBot} stroke="#E85D04" strokeWidth={1.5} markerStart="url(#arrowUp)" markerEnd="url(#arrowDown)" />
+      <line x1={50} y1={springTop} x2={cx - coilODHalf - 20} y2={springTop} stroke="#E85D04" strokeWidth={0.5} strokeDasharray="3,2" />
+      <line x1={50} y1={springBot} x2={cx - coilODHalf - 20} y2={springBot} stroke="#E85D04" strokeWidth={0.5} strokeDasharray="3,2" />
+      <text x={52} y={(springTop + springBot) / 2 - 6} textAnchor="middle" className="fill-[#E85D04] text-[11px] font-bold" transform={`rotate(-90, 52, ${(springTop + springBot) / 2})`}>
+        Free Length
+      </text>
+
+      {/* ── OD dimension (bottom) ── */}
+      <line x1={cx - coilODHalf} y1={springBot + 25} x2={cx + coilODHalf} y2={springBot + 25} stroke="#2563eb" strokeWidth={1.5} markerStart="url(#arrowLeft)" markerEnd="url(#arrowRight)" />
+      <line x1={cx - coilODHalf} y1={springBot + 8} x2={cx - coilODHalf} y2={springBot + 30} stroke="#2563eb" strokeWidth={0.5} strokeDasharray="3,2" />
+      <line x1={cx + coilODHalf} y1={springBot + 8} x2={cx + coilODHalf} y2={springBot + 30} stroke="#2563eb" strokeWidth={0.5} strokeDasharray="3,2" />
+      <text x={cx} y={springBot + 43} textAnchor="middle" className="fill-[#2563eb] text-[11px] font-bold">Outside Diameter (OD)</text>
+
+      {/* ── Wire diameter callout (right side, zoomed bubble) ── */}
+      {(() => {
+        const wireY = springTop + coilSpacing * 2;
+        const bubbleX = 330;
+        const bubbleY = 50;
+        return (
+          <>
+            {/* Leader line from coil to bubble */}
+            <line x1={cx + coilODHalf + 5} y1={wireY} x2={bubbleX - 28} y2={bubbleY + 20} stroke="#16a34a" strokeWidth={1} strokeDasharray="4,2" />
+            {/* Zoom bubble */}
+            <circle cx={bubbleX} cy={bubbleY + 20} r={28} fill="white" stroke="#16a34a" strokeWidth={1.5} />
+            {/* Wire cross-section inside bubble */}
+            <circle cx={bubbleX} cy={bubbleY + 20} r={12} fill="#888" opacity={0.4} />
+            <circle cx={bubbleX} cy={bubbleY + 20} r={12} fill="none" stroke="#16a34a" strokeWidth={1.5} />
+            {/* Diameter line across wire */}
+            <line x1={bubbleX - 12} y1={bubbleY + 20} x2={bubbleX + 12} y2={bubbleY + 20} stroke="#16a34a" strokeWidth={1.5} markerStart="url(#arrowLeftG)" markerEnd="url(#arrowRightG)" />
+            <text x={bubbleX} y={bubbleY + 60} textAnchor="middle" className="fill-[#16a34a] text-[10px] font-bold">Wire</text>
+            <text x={bubbleX} y={bubbleY + 71} textAnchor="middle" className="fill-[#16a34a] text-[10px] font-bold">Diameter</text>
+          </>
+        );
+      })()}
+
+      {/* ── Active coils callout (right side) ── */}
+      {(() => {
+        const acTop = springTop + coilSpacing * 0.3;
+        const acBot = deadCoilY1 - coilSpacing * 0.1;
+        const acX = cx + coilODHalf + 30;
+        return (
+          <>
+            <line x1={acX} y1={acTop} x2={acX} y2={acBot} stroke="#9333ea" strokeWidth={1.5} markerStart="url(#arrowUpP)" markerEnd="url(#arrowDownP)" />
+            <text x={acX + 4} y={(acTop + acBot) / 2 - 6} className="fill-[#9333ea] text-[10px] font-bold" transform={`rotate(-90, ${acX + 4}, ${(acTop + acBot) / 2})`} textAnchor="middle">
+              Active Coils
+            </text>
+            {/* Brace ticks */}
+            <line x1={acX - 4} y1={acTop} x2={acX + 4} y2={acTop} stroke="#9333ea" strokeWidth={1} />
+            <line x1={acX - 4} y1={acBot} x2={acX + 4} y2={acBot} stroke="#9333ea" strokeWidth={1} />
+          </>
+        );
+      })()}
+
+      {/* ── Coil bind callout (far left) ── */}
+      {(() => {
+        const bindH = springBot - (springH * 0.45); // visual bind height position
+        return (
+          <>
+            <line x1={25} y1={bindH} x2={25} y2={springBot} stroke="#dc2626" strokeWidth={1.5} markerStart="url(#arrowUpR)" markerEnd="url(#arrowDownR)" />
+            <line x1={20} y1={bindH} x2={45} y2={bindH} stroke="#dc2626" strokeWidth={0.5} strokeDasharray="3,2" />
+            <text x={22} y={(bindH + springBot) / 2 - 6} textAnchor="middle" className="fill-[#dc2626] text-[9px] font-bold" transform={`rotate(-90, 22, ${(bindH + springBot) / 2})`}>
+              Coil Bind
+            </text>
+          </>
+        );
+      })()}
+
+      {/* Arrow markers */}
+      <defs>
+        {/* Orange arrows (free length) */}
+        <marker id="arrowUp" viewBox="0 0 6 6" refX={3} refY={0} markerWidth={6} markerHeight={6} orient="auto"><path d="M0,6 L3,0 L6,6" fill="#E85D04" /></marker>
+        <marker id="arrowDown" viewBox="0 0 6 6" refX={3} refY={6} markerWidth={6} markerHeight={6} orient="auto"><path d="M0,0 L3,6 L6,0" fill="#E85D04" /></marker>
+        {/* Blue arrows (OD) */}
+        <marker id="arrowLeft" viewBox="0 0 6 6" refX={0} refY={3} markerWidth={6} markerHeight={6} orient="auto"><path d="M6,0 L0,3 L6,6" fill="#2563eb" /></marker>
+        <marker id="arrowRight" viewBox="0 0 6 6" refX={6} refY={3} markerWidth={6} markerHeight={6} orient="auto"><path d="M0,0 L6,3 L0,6" fill="#2563eb" /></marker>
+        {/* Green arrows (wire) */}
+        <marker id="arrowLeftG" viewBox="0 0 6 6" refX={0} refY={3} markerWidth={5} markerHeight={5} orient="auto"><path d="M6,0 L0,3 L6,6" fill="#16a34a" /></marker>
+        <marker id="arrowRightG" viewBox="0 0 6 6" refX={6} refY={3} markerWidth={5} markerHeight={5} orient="auto"><path d="M0,0 L6,3 L0,6" fill="#16a34a" /></marker>
+        {/* Purple arrows (active coils) */}
+        <marker id="arrowUpP" viewBox="0 0 6 6" refX={3} refY={0} markerWidth={5} markerHeight={5} orient="auto"><path d="M0,6 L3,0 L6,6" fill="#9333ea" /></marker>
+        <marker id="arrowDownP" viewBox="0 0 6 6" refX={3} refY={6} markerWidth={5} markerHeight={5} orient="auto"><path d="M0,0 L3,6 L6,0" fill="#9333ea" /></marker>
+        {/* Red arrows (coil bind) */}
+        <marker id="arrowUpR" viewBox="0 0 6 6" refX={3} refY={0} markerWidth={5} markerHeight={5} orient="auto"><path d="M0,6 L3,0 L6,6" fill="#dc2626" /></marker>
+        <marker id="arrowDownR" viewBox="0 0 6 6" refX={3} refY={6} markerWidth={5} markerHeight={5} orient="auto"><path d="M0,0 L3,6 L6,0" fill="#dc2626" /></marker>
+      </defs>
+    </svg>
+  );
+}
+
 /* ── Component ────────────────────────────────────────────────── */
 
 export default function ValveSpringCalculator() {
@@ -376,6 +512,18 @@ export default function ValveSpringCalculator() {
   /* Tab 5: Retainer-to-Seal */
   const [retainerToSeal, setRetainerToSeal] = useState("");
   const [retainerLift, setRetainerLift] = useState("0.480");
+
+  /* Tab 7: Spring ID */
+  const [sidFreeLength, setSidFreeLength] = useState("");
+  const [sidOD, setSidOD] = useState("");
+  const [sidWireDia, setSidWireDia] = useState("");
+  const [sidActiveCoils, setSidActiveCoils] = useState("");
+  const [sidStyle, setSidStyle] = useState<"single" | "dual" | "beehive">("single");
+  const [sidCoilBind, setSidCoilBind] = useState("");
+  const [sidPressure1, setSidPressure1] = useState("");
+  const [sidHeight1, setSidHeight1] = useState("");
+  const [sidPressure2, setSidPressure2] = useState("");
+  const [sidHeight2, setSidHeight2] = useState("");
 
   /* Tab 6: What-If Height */
   const [wiSpecHeight, setWiSpecHeight] = useState("1.800");
@@ -463,6 +611,77 @@ export default function ValveSpringCalculator() {
 
   const wiCombinedZone = getWiCombinedZone();
 
+  /* ── Tab 7 calculations ─────────────────────────────────────── */
+  const sidFL = parseFloat(sidFreeLength) || 0;
+  const sidODv = parseFloat(sidOD) || 0;
+  const sidWire = parseFloat(sidWireDia) || 0;
+  const sidCoils = parseFloat(sidActiveCoils) || 0;
+  const sidID = sidODv > 0 && sidWire > 0 ? sidODv - 2 * sidWire : 0;
+  const sidDeadCoils = 1.5; // typical closed-end ground springs
+  const sidEstBind = sidWire > 0 && sidCoils > 0 ? sidWire * (sidCoils + sidDeadCoils) : 0;
+  const sidActualBind = parseFloat(sidCoilBind) || 0;
+  const sidBindHeight = sidActualBind > 0 ? sidActualBind : sidEstBind;
+
+  // Rate derivation
+  const sidP1 = parseFloat(sidPressure1) || 0;
+  const sidH1 = parseFloat(sidHeight1) || 0;
+  const sidP2 = parseFloat(sidPressure2) || 0;
+  const sidH2 = parseFloat(sidHeight2) || 0;
+
+  let sidRate = 0;
+  let sidRateMethod = "";
+  if (sidP1 > 0 && sidH1 > 0 && sidP2 > 0 && sidH2 > 0 && sidH1 !== sidH2) {
+    // Two-point method: rate = pressure difference / height difference
+    sidRate = Math.abs(sidP2 - sidP1) / Math.abs(sidH1 - sidH2);
+    sidRateMethod = "two-point";
+  } else if (sidP1 > 0 && sidH1 > 0 && sidFL > 0 && sidH1 < sidFL) {
+    // One-point method: rate = pressure / deflection from free length
+    sidRate = sidP1 / (sidFL - sidH1);
+    sidRateMethod = "one-point";
+  }
+
+  // Common installed heights for the table
+  const sidHeights = [1.700, 1.750, 1.800, 1.850, 1.900, 1.950, 2.000, 2.050, 2.100];
+  const sidLifts = [0.400, 0.450, 0.500, 0.550, 0.600, 0.650];
+
+  function sidSeatAt(height: number): number | null {
+    if (sidRate <= 0 || sidFL <= 0) return null;
+    const deflection = sidFL - height;
+    if (deflection <= 0) return null;
+    return sidRate * deflection;
+  }
+
+  function sidOpenAt(height: number, lift: number): number | null {
+    const seatP = sidSeatAt(height);
+    if (seatP === null) return null;
+    return seatP + sidRate * lift;
+  }
+
+  function sidMatchCamTypes(seatP: number, openP: number): string[] {
+    const matches: string[] = [];
+    for (const [, c] of Object.entries(camTypes) as [CamType, typeof camTypes[CamType]][]) {
+      const seatOk = seatP >= c.seatMin * 0.85 && seatP <= c.seatMax * 1.15;
+      const openOk = openP >= c.openMin * 0.85 && openP <= c.openMax * 1.15;
+      if (seatOk && openOk) matches.push(c.label);
+    }
+    return matches;
+  }
+
+  // Retainer ID compatibility
+  function sidRetainerFit(id: number): string {
+    if (id <= 0) return "";
+    if (id >= 0.990 && id <= 1.070) return "Standard small-block Chevy (1.055\" locator ID)";
+    if (id >= 1.070 && id <= 1.130) return "Common aftermarket (1.100\" locator ID)";
+    if (id >= 1.200 && id <= 1.280) return "Large spring / Ford (1.250\" locator ID)";
+    if (id >= 1.280 && id <= 1.350) return "Oversized (1.300\" locator ID)";
+    if (id >= 1.390 && id <= 1.480) return "Large dual spring (1.437\" locator ID)";
+    if (id >= 1.480 && id <= 1.570) return "Extra large dual/triple (1.500\"+ locator ID)";
+    return "Non-standard — measure your retainer locator carefully";
+  }
+
+  const sidHasBasic = sidFL > 0 && sidODv > 0 && sidWire > 0;
+  const sidHasRate = sidRate > 0;
+
   return (
     <div className="container mx-auto py-8 px-4 max-w-5xl">
       <SEOHead
@@ -475,13 +694,14 @@ export default function ValveSpringCalculator() {
       <p className="text-muted-foreground mb-8">Coil bind check, max safe lift, shimming guide, pressure verification, and retainer-to-seal clearance for any cam type.</p>
 
       <Tabs defaultValue="bind" className="space-y-6">
-        <TabsList className="w-full grid grid-cols-6 h-auto">
+        <TabsList className="w-full grid grid-cols-7 h-auto">
           <TabsTrigger value="bind" className="text-xs sm:text-sm py-2">Coil Bind</TabsTrigger>
           <TabsTrigger value="max-lift" className="text-xs sm:text-sm py-2">Max Lift</TabsTrigger>
           <TabsTrigger value="shimming" className="text-xs sm:text-sm py-2">Shimming</TabsTrigger>
           <TabsTrigger value="pressure" className="text-xs sm:text-sm py-2">Pressure</TabsTrigger>
           <TabsTrigger value="retainer" className="text-xs sm:text-sm py-2">Retainer</TabsTrigger>
           <TabsTrigger value="what-if" className="text-xs sm:text-sm py-2">What If</TabsTrigger>
+          <TabsTrigger value="spring-id" className="text-xs sm:text-sm py-2">Spring ID</TabsTrigger>
         </TabsList>
 
         {/* ═══════════════════════════════════════════════════════ */}
@@ -1107,6 +1327,311 @@ export default function ValveSpringCalculator() {
                   <p className="font-medium text-foreground">This calculator assumes linear spring rate. Real springs are slightly progressive at deep compression, so actual open pressures at high lift may be 5–10% higher than calculated.</p>
                 </CardContent>
               </Card>
+            </div>
+          </div>
+        </TabsContent>
+        {/* ═══════════════════════════════════════════════════════ */}
+        {/*  TAB 7: SPRING ID                                      */}
+        {/* ═══════════════════════════════════════════════════════ */}
+        <TabsContent value="spring-id">
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
+            <div className="space-y-4">
+              <Card>
+                <CardHeader><CardTitle>Physical Measurements</CardTitle></CardHeader>
+                <CardContent className="space-y-4">
+                  <div className="space-y-1">
+                    <Label>Free Length (inches)</Label>
+                    <Input type="number" step="0.001" placeholder="e.g. 2.100" value={sidFreeLength} onChange={e => setSidFreeLength(e.target.value)} />
+                    <Hint>Overall height with no load — set the spring on a flat surface and measure with calipers</Hint>
+                  </div>
+                  <div className="space-y-1">
+                    <Label>Outside Diameter (inches)</Label>
+                    <Input type="number" step="0.001" placeholder="e.g. 1.550" value={sidOD} onChange={e => setSidOD(e.target.value)} />
+                    <Hint>Measure at the widest point of the coils with calipers</Hint>
+                  </div>
+                  <div className="space-y-1">
+                    <Label>Wire Diameter (inches)</Label>
+                    <Input type="number" step="0.001" placeholder="e.g. 0.177" value={sidWireDia} onChange={e => setSidWireDia(e.target.value)} />
+                    <Hint>Measure the thickness of the wire itself with calipers or a micrometer</Hint>
+                  </div>
+                  <div className="space-y-1">
+                    <Label>Active Coils (count)</Label>
+                    <Input type="number" step="0.5" placeholder="e.g. 5.5" value={sidActiveCoils} onChange={e => setSidActiveCoils(e.target.value)} />
+                    <Hint>Count the coils that are not touching the flat ends. The flat ground ends are "dead" coils.</Hint>
+                  </div>
+                  <div className="space-y-1">
+                    <Label>Spring Style</Label>
+                    <Select value={sidStyle} onValueChange={v => setSidStyle(v as "single" | "dual" | "beehive")}>
+                      <SelectTrigger><SelectValue /></SelectTrigger>
+                      <SelectContent>
+                        <SelectItem value="single">Single spring (one coil)</SelectItem>
+                        <SelectItem value="dual">Dual / nested (spring inside a spring)</SelectItem>
+                        <SelectItem value="beehive">Beehive (tapered — wider at bottom, narrower at top)</SelectItem>
+                      </SelectContent>
+                    </Select>
+                  </div>
+                  <div className="space-y-1">
+                    <Label>Coil Bind Height (inches) — optional</Label>
+                    <Input type="number" step="0.001" placeholder="Leave blank to estimate" value={sidCoilBind} onChange={e => setSidCoilBind(e.target.value)} />
+                    <Hint>If you can compress it to solid in a vise and measure, enter it here. Otherwise we'll estimate from wire diameter and coil count.</Hint>
+                  </div>
+                </CardContent>
+              </Card>
+
+              <Card>
+                <CardHeader><CardTitle>Where to Measure</CardTitle></CardHeader>
+                <CardContent>
+                  <SpringMeasurementDiagram />
+                  <div className="grid grid-cols-2 gap-x-4 gap-y-1 mt-3 text-xs">
+                    <p><span className="font-bold text-[#E85D04]">Free Length</span> — top to bottom, no load</p>
+                    <p><span className="font-bold text-[#2563eb]">OD</span> — widest point across the coils</p>
+                    <p><span className="font-bold text-[#16a34a]">Wire Diameter</span> — thickness of the wire itself</p>
+                    <p><span className="font-bold text-[#9333ea]">Active Coils</span> — count coils not touching the flat ends</p>
+                    <p><span className="font-bold text-[#dc2626]">Coil Bind</span> — height when fully compressed (optional)</p>
+                  </div>
+                </CardContent>
+              </Card>
+
+              <Card>
+                <CardHeader><CardTitle>Pressure Readings (optional)</CardTitle></CardHeader>
+                <CardContent className="space-y-4">
+                  <p className="text-xs text-muted-foreground">If you have access to a spring tester, enter one or two readings. Two readings give a more accurate rate. Without these, we can only report physical dimensions.</p>
+                  <div className="grid grid-cols-2 gap-3">
+                    <div className="space-y-1">
+                      <Label className="text-xs text-muted-foreground">Pressure Reading 1 (lb)</Label>
+                      <Input type="number" step="1" placeholder="e.g. 130" value={sidPressure1} onChange={e => setSidPressure1(e.target.value)} />
+                    </div>
+                    <div className="space-y-1">
+                      <Label className="text-xs text-muted-foreground">At Height 1 (inches)</Label>
+                      <Input type="number" step="0.001" placeholder="e.g. 1.800" value={sidHeight1} onChange={e => setSidHeight1(e.target.value)} />
+                    </div>
+                  </div>
+                  <div className="grid grid-cols-2 gap-3">
+                    <div className="space-y-1">
+                      <Label className="text-xs text-muted-foreground">Pressure Reading 2 (lb)</Label>
+                      <Input type="number" step="1" placeholder="e.g. 290" value={sidPressure2} onChange={e => setSidPressure2(e.target.value)} />
+                    </div>
+                    <div className="space-y-1">
+                      <Label className="text-xs text-muted-foreground">At Height 2 (inches)</Label>
+                      <Input type="number" step="0.001" placeholder="e.g. 1.300" value={sidHeight2} onChange={e => setSidHeight2(e.target.value)} />
+                    </div>
+                  </div>
+                  <Hint>One reading: rate is derived from free length deflection. Two readings: rate is derived directly from the pressure difference — more accurate.</Hint>
+                </CardContent>
+              </Card>
+            </div>
+
+            <div className="space-y-4">
+              {/* Physical profile */}
+              {sidHasBasic ? (
+                <Card className="bg-[#1a1a1a] text-white">
+                  <CardHeader><CardTitle>Spring Profile</CardTitle></CardHeader>
+                  <CardContent className="space-y-4">
+                    <div className="grid grid-cols-2 gap-4">
+                      <div>
+                        <p className="text-gray-400 text-sm">Free Length</p>
+                        <p className="text-2xl font-bold">{sidFL.toFixed(3)}"</p>
+                      </div>
+                      <div>
+                        <p className="text-gray-400 text-sm">Style</p>
+                        <p className="text-2xl font-bold capitalize">{sidStyle}</p>
+                      </div>
+                      <div>
+                        <p className="text-gray-400 text-sm">Outside Diameter</p>
+                        <p className="text-2xl font-bold">{sidODv.toFixed(3)}"</p>
+                      </div>
+                      <div>
+                        <p className="text-gray-400 text-sm">Inside Diameter</p>
+                        <p className="text-2xl font-bold">{sidID.toFixed(3)}"</p>
+                      </div>
+                      <div>
+                        <p className="text-gray-400 text-sm">Wire Diameter</p>
+                        <p className="text-2xl font-bold">{sidWire.toFixed(3)}"</p>
+                      </div>
+                      <div>
+                        <p className="text-gray-400 text-sm">Active Coils</p>
+                        <p className="text-2xl font-bold">{sidCoils}</p>
+                      </div>
+                    </div>
+
+                    <div className="border-t border-gray-700 pt-3">
+                      <p className="text-gray-400 text-sm">
+                        Coil Bind Height {sidActualBind > 0 ? "(measured)" : "(estimated)"}
+                      </p>
+                      <p className="text-3xl font-bold text-primary">{sidBindHeight.toFixed(3)}"</p>
+                      {sidActualBind <= 0 && (
+                        <p className="text-gray-400 text-xs mt-1">
+                          Estimated: {sidWire.toFixed(3)}" wire x {(sidCoils + sidDeadCoils).toFixed(1)} total coils = {sidEstBind.toFixed(3)}"
+                        </p>
+                      )}
+                    </div>
+
+                    <div className="border-t border-gray-700 pt-3">
+                      <p className="text-gray-400 text-sm">Available Travel (from free)</p>
+                      <p className="text-2xl font-bold">{(sidFL - sidBindHeight).toFixed(3)}"</p>
+                    </div>
+
+                    {sidID > 0 && (
+                      <div className="border-t border-gray-700 pt-3">
+                        <p className="text-gray-400 text-sm">Retainer Compatibility</p>
+                        <p className="text-lg font-bold">{sidRetainerFit(sidID)}</p>
+                      </div>
+                    )}
+
+                    {sidHasRate && (
+                      <div className="border-t border-gray-700 pt-3">
+                        <p className="text-gray-400 text-sm">
+                          Spring Rate ({sidRateMethod === "two-point" ? "from two readings" : "from one reading"})
+                        </p>
+                        <p className="text-3xl font-bold text-primary">{sidRate.toFixed(0)} lb/in</p>
+                        {sidRateMethod === "two-point" ? (
+                          <p className="text-gray-400 text-xs mt-1">
+                            ({sidP2.toFixed(0)} - {sidP1.toFixed(0)}) / ({sidH1.toFixed(3)} - {sidH2.toFixed(3)}) = {sidRate.toFixed(1)} lb/in
+                          </p>
+                        ) : (
+                          <p className="text-gray-400 text-xs mt-1">
+                            {sidP1.toFixed(0)} / ({sidFL.toFixed(3)} - {sidH1.toFixed(3)}) = {sidRate.toFixed(1)} lb/in
+                          </p>
+                        )}
+                      </div>
+                    )}
+                  </CardContent>
+                </Card>
+              ) : (
+                <Card>
+                  <CardContent className="pt-6">
+                    <p className="text-muted-foreground text-sm">Enter at least free length, outside diameter, and wire diameter to see your spring's profile. Add pressure readings from a spring tester for rate, pressure, and application matching.</p>
+                  </CardContent>
+                </Card>
+              )}
+
+              {/* Pressure table at common installed heights */}
+              {sidHasRate && (
+                <Card>
+                  <CardHeader><CardTitle>Seat Pressure at Common Heights</CardTitle></CardHeader>
+                  <CardContent>
+                    <div className="overflow-x-auto">
+                      <table className="w-full text-sm">
+                        <thead>
+                          <tr className="border-b bg-muted">
+                            <th className="text-left p-2">Installed Height</th>
+                            <th className="text-right p-2">Seat Pressure</th>
+                            <th className="text-right p-2">Bind Clearance</th>
+                            <th className="text-left p-2">Best Match</th>
+                          </tr>
+                        </thead>
+                        <tbody>
+                          {sidHeights.filter(h => h < sidFL).map((h, i) => {
+                            const seatP = sidSeatAt(h);
+                            if (seatP === null || seatP <= 0) return null;
+                            const openAt500 = sidOpenAt(h, 0.500);
+                            const matches = openAt500 !== null ? sidMatchCamTypes(seatP, openAt500) : [];
+                            const bindClear = h - sidBindHeight;
+                            const bindColor = bindClear < 0.060 ? "text-red-700" : bindClear < 0.080 ? "text-yellow-700" : "text-green-700";
+                            return (
+                              <tr key={h} className={i % 2 === 0 ? "border-b" : "bg-muted/30 border-b"}>
+                                <td className="p-2 font-mono">{h.toFixed(3)}"</td>
+                                <td className="text-right p-2 font-bold">{seatP.toFixed(0)} lb</td>
+                                <td className={`text-right p-2 font-bold ${bindColor}`}>{bindClear.toFixed(3)}"</td>
+                                <td className="p-2 text-xs text-muted-foreground">{matches.length > 0 ? matches[0] : "—"}</td>
+                              </tr>
+                            );
+                          })}
+                        </tbody>
+                      </table>
+                    </div>
+                    <p className="text-xs text-muted-foreground mt-2">Best match is based on seat + open pressure at 0.500" lift. Bind clearance is installed height minus coil bind — needs at least 0.060" for street use.</p>
+                  </CardContent>
+                </Card>
+              )}
+
+              {/* Open pressure grid */}
+              {sidHasRate && (
+                <Card>
+                  <CardHeader><CardTitle>Open Pressure Grid</CardTitle></CardHeader>
+                  <CardContent>
+                    <div className="overflow-x-auto">
+                      <table className="w-full text-sm">
+                        <thead>
+                          <tr className="border-b bg-muted">
+                            <th className="text-left p-2">Height</th>
+                            {sidLifts.map(l => (
+                              <th key={l} className="text-right p-2">{l.toFixed(3)}" lift</th>
+                            ))}
+                          </tr>
+                        </thead>
+                        <tbody>
+                          {sidHeights.filter(h => h < sidFL).map((h, i) => {
+                            const seatP = sidSeatAt(h);
+                            if (seatP === null || seatP <= 0) return null;
+                            return (
+                              <tr key={h} className={i % 2 === 0 ? "border-b" : "bg-muted/30 border-b"}>
+                                <td className="p-2 font-mono">{h.toFixed(3)}"</td>
+                                {sidLifts.map(l => {
+                                  const op = sidOpenAt(h, l);
+                                  const compH = h - l;
+                                  const tooClose = compH - sidBindHeight < 0.060;
+                                  return (
+                                    <td key={l} className={`text-right p-2 font-bold ${tooClose ? "text-red-700" : ""}`}>
+                                      {op !== null ? `${op.toFixed(0)}` : "—"}
+                                    </td>
+                                  );
+                                })}
+                              </tr>
+                            );
+                          })}
+                        </tbody>
+                      </table>
+                    </div>
+                    <p className="text-xs text-muted-foreground mt-2">Values in red exceed coil bind safety margin at that height/lift combination. All pressures in lb.</p>
+                  </CardContent>
+                </Card>
+              )}
+
+              {/* Max safe lift at each height */}
+              {sidHasBasic && sidBindHeight > 0 && (
+                <Card>
+                  <CardHeader><CardTitle>Max Safe Lift by Installed Height</CardTitle></CardHeader>
+                  <CardContent>
+                    <div className="overflow-x-auto">
+                      <table className="w-full text-sm">
+                        <thead>
+                          <tr className="border-b bg-muted">
+                            <th className="text-left p-2">Installed Height</th>
+                            <th className="text-right p-2">Max Lift (street)</th>
+                            <th className="text-right p-2">Max Lift (race)</th>
+                          </tr>
+                        </thead>
+                        <tbody>
+                          {sidHeights.filter(h => h < sidFL && h - sidBindHeight > 0).map((h, i) => {
+                            const streetLift = h - sidBindHeight - 0.060;
+                            const raceLift = h - sidBindHeight - 0.080;
+                            return (
+                              <tr key={h} className={i % 2 === 0 ? "border-b" : "bg-muted/30 border-b"}>
+                                <td className="p-2 font-mono">{h.toFixed(3)}"</td>
+                                <td className={`text-right p-2 font-bold ${streetLift < 0.400 ? "text-red-700" : streetLift < 0.500 ? "text-yellow-700" : "text-green-700"}`}>
+                                  {streetLift > 0 ? `${streetLift.toFixed(3)}"` : "—"}
+                                </td>
+                                <td className={`text-right p-2 font-bold ${raceLift < 0.400 ? "text-red-700" : raceLift < 0.500 ? "text-yellow-700" : "text-green-700"}`}>
+                                  {raceLift > 0 ? `${raceLift.toFixed(3)}"` : "—"}
+                                </td>
+                              </tr>
+                            );
+                          })}
+                        </tbody>
+                      </table>
+                    </div>
+                    <p className="text-xs text-muted-foreground mt-2">Street margin: 0.060". Race margin: 0.080". Red = under 0.400" lift, yellow = under 0.500".</p>
+                  </CardContent>
+                </Card>
+              )}
+
+              {!sidHasRate && sidHasBasic && (
+                <div className="p-4 rounded-lg border bg-blue-50 border-blue-200">
+                  <p className="font-bold text-blue-700">Add pressure readings for full analysis</p>
+                  <p className="text-sm mt-1 text-muted-foreground">Without at least one pressure reading from a spring tester, we can only show physical dimensions, coil bind, and max safe lift. With pressure data we can calculate the rate and show seat/open pressures at every installed height plus application matching.</p>
+                </div>
+              )}
             </div>
           </div>
         </TabsContent>
