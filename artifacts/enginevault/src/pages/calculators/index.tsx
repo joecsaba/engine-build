@@ -2,7 +2,7 @@ import { Link } from "wouter";
 import {
   Cylinder, Gauge, Circle, Settings2, ArrowDownUp,
   Zap, Timer, Flame, Ruler, MoveVertical,
-  RotateCcw, ShieldAlert, Codesandbox, type LucideIcon,
+  RotateCcw, ShieldAlert, Codesandbox, Wrench, type LucideIcon,
 } from "lucide-react";
 import { PageHeader } from "@/components/layout/PageHeader";
 import { AdBanner } from "@/components/ads/AdBanner";
@@ -98,6 +98,13 @@ const calculators: { title: string; href: string; desc: string; tags: string[]; 
     desc: "Validate valve spring specs for your cam profile. Seat pressure, open pressure, coil bind clearance, and spring rate analysis.",
     tags: ["Valve Springs", "Seat Pressure", "Coil Bind", "Spring Rate"],
     icon: Codesandbox,
+  },
+  {
+    title: "Torque Extension Calculator",
+    href: "/calculators/torque-extension",
+    desc: "Corrected torque wrench setting for crow's foot adapters, offset extensions, and wobble sockets. Interactive diagram shows how lever arm changes affect torque.",
+    tags: ["Torque Spec", "Crow's Foot", "Extension", "Wobble Socket"],
+    icon: Wrench,
   },
 ];
 
