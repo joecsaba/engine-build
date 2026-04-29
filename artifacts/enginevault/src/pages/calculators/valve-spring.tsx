@@ -377,6 +377,14 @@ export default function ValveSpringCalculator() {
   const [retainerToSeal, setRetainerToSeal] = useState("");
   const [retainerLift, setRetainerLift] = useState("0.480");
 
+  /* Tab 6: What-If Height */
+  const [wiSpecHeight, setWiSpecHeight] = useState("1.800");
+  const [wiSpecSeatPressure, setWiSpecSeatPressure] = useState("130");
+  const [wiSpringRate, setWiSpringRate] = useState("320");
+  const [wiCustomHeight, setWiCustomHeight] = useState("");
+  const [wiValveLift, setWiValveLift] = useState("0.500");
+  const [wiCamType, setWiCamType] = useState<CamType>("hyd-roller-street");
+
   /* ── Tab 1 calculations ─────────────────────────────────────── */
   const ih = parseFloat(installedHeight) || 0;
   const cbh = parseFloat(coilBindHeight) || 0;
@@ -426,6 +434,35 @@ export default function ValveSpringCalculator() {
   const retainerClearance = rts - rl;
   const retainerZone = getRetainerZone(retainerClearance);
 
+  /* ── Tab 6 calculations ─────────────────────────────────────── */
+  const wiSpecH = parseFloat(wiSpecHeight) || 0;
+  const wiSpecSeat = parseFloat(wiSpecSeatPressure) || 0;
+  const wiRate = parseFloat(wiSpringRate) || 0;
+  const wiCustomH = parseFloat(wiCustomHeight) || 0;
+  const wiLift = parseFloat(wiValveLift) || 0;
+  const wiCam = camTypes[wiCamType];
+
+  // Height change: shorter install = more preload = higher pressure
+  const wiHeightDelta = wiSpecH - wiCustomH; // positive = shorter = more pressure
+  const wiNewSeat = wiSpecSeat + wiRate * wiHeightDelta;
+  const wiNewOpen = wiNewSeat + wiRate * wiLift;
+  const wiHasResult = wiCustomH > 0 && wiSpecH > 0 && wiSpecSeat > 0 && wiRate > 0;
+
+  const wiSeatZone = wiHasResult ? getPressureZone(wiNewSeat, wiCam.seatMin, wiCam.seatMax) : null;
+  const wiOpenZone = wiHasResult && wiLift > 0 ? getPressureZone(wiNewOpen, wiCam.openMin, wiCam.openMax) : null;
+
+  function getWiCombinedZone(): { label: string; color: string; bg: string } | null {
+    if (!wiSeatZone) return null;
+    const zones = [wiSeatZone, wiOpenZone].filter(Boolean) as { label: string; color: string; bg: string }[];
+    const hasRed = zones.some(z => z.color === "text-red-700");
+    const hasYellow = zones.some(z => z.color === "text-yellow-700");
+    if (hasRed) return { label: "Outside recommended range", color: "text-red-700", bg: "bg-red-50 border-red-200" };
+    if (hasYellow) return { label: "Near edge of recommended range", color: "text-yellow-700", bg: "bg-yellow-50 border-yellow-200" };
+    return { label: "Within recommended range", color: "text-green-700", bg: "bg-green-50 border-green-200" };
+  }
+
+  const wiCombinedZone = getWiCombinedZone();
+
   return (
     <div className="container mx-auto py-8 px-4 max-w-5xl">
       <SEOHead
@@ -438,12 +475,13 @@ export default function ValveSpringCalculator() {
       <p className="text-muted-foreground mb-8">Coil bind check, max safe lift, shimming guide, pressure verification, and retainer-to-seal clearance for any cam type.</p>
 
       <Tabs defaultValue="bind" className="space-y-6">
-        <TabsList className="w-full grid grid-cols-5 h-auto">
+        <TabsList className="w-full grid grid-cols-6 h-auto">
           <TabsTrigger value="bind" className="text-xs sm:text-sm py-2">Coil Bind</TabsTrigger>
           <TabsTrigger value="max-lift" className="text-xs sm:text-sm py-2">Max Lift</TabsTrigger>
           <TabsTrigger value="shimming" className="text-xs sm:text-sm py-2">Shimming</TabsTrigger>
           <TabsTrigger value="pressure" className="text-xs sm:text-sm py-2">Pressure</TabsTrigger>
           <TabsTrigger value="retainer" className="text-xs sm:text-sm py-2">Retainer</TabsTrigger>
+          <TabsTrigger value="what-if" className="text-xs sm:text-sm py-2">What If</TabsTrigger>
         </TabsList>
 
         {/* ═══════════════════════════════════════════════════════ */}
@@ -902,6 +940,173 @@ export default function ValveSpringCalculator() {
               <div className="p-3 bg-muted rounded-lg text-sm">
                 <p className="font-mono font-medium">clearance = retainer_to_seal - lift = {rts.toFixed(3)} - {rl.toFixed(3)} = {retainerClearance.toFixed(3)}</p>
               </div>
+            </div>
+          </div>
+        </TabsContent>
+        {/* ═══════════════════════════════════════════════════════ */}
+        {/*  TAB 6: WHAT-IF HEIGHT                                 */}
+        {/* ═══════════════════════════════════════════════════════ */}
+        <TabsContent value="what-if">
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
+            <Card>
+              <CardHeader><CardTitle>Spring Specs</CardTitle></CardHeader>
+              <CardContent className="space-y-4">
+                <div className="space-y-1">
+                  <Label>Spec Installed Height (inches)</Label>
+                  <Input type="number" step="0.001" value={wiSpecHeight} onChange={e => setWiSpecHeight(e.target.value)} />
+                  <Hint>The installed height the manufacturer rates the spring at — from the spring spec card</Hint>
+                </div>
+                <div className="space-y-1">
+                  <Label>Seat Pressure at Spec Height (lb)</Label>
+                  <Input type="number" step="1" value={wiSpecSeatPressure} onChange={e => setWiSpecSeatPressure(e.target.value)} />
+                  <Hint>Seat pressure listed on the spring spec card at the spec installed height</Hint>
+                </div>
+                <div className="space-y-1">
+                  <Label>Spring Rate (lb/in)</Label>
+                  <Input type="number" step="1" value={wiSpringRate} onChange={e => setWiSpringRate(e.target.value)} />
+                  <Hint>From the spring spec card. If not listed, use the Pressure tab's rate calculator to derive it.</Hint>
+                </div>
+
+                <RateCalculator onRateCalculated={(r) => setWiSpringRate(r)} />
+
+                <div className="border-t pt-4 space-y-4">
+                  <p className="text-xs font-semibold text-[#E85D04] uppercase tracking-wider">Your Setup</p>
+
+                  <div className="space-y-1">
+                    <Label>Custom Installed Height (inches)</Label>
+                    <Input type="number" step="0.001" placeholder="e.g. 1.750" value={wiCustomHeight} onChange={e => setWiCustomHeight(e.target.value)} />
+                    <Hint>The height you want to install the spring at — shorter adds preload, taller removes it</Hint>
+                  </div>
+
+                  <div className="space-y-1">
+                    <Label>Max Valve Lift (inches)</Label>
+                    <Input type="number" step="0.001" value={wiValveLift} onChange={e => setWiValveLift(e.target.value)} />
+                    <Hint>At the valve, after rocker ratio. Used to calculate open pressure.</Hint>
+                  </div>
+
+                  {wiLift > 0 && wiLift < 0.350 && (
+                    <div className="p-3 rounded-lg border bg-yellow-50 border-yellow-200">
+                      <p className="text-yellow-700 text-sm font-bold">Did you enter cam lobe lift by mistake?</p>
+                      <p className="text-xs text-muted-foreground mt-1">A value under 0.350" is unusual for valve lift. If you entered your cam lobe lift, multiply it by your rocker ratio first, or use the converter below.</p>
+                    </div>
+                  )}
+
+                  <LiftConverter id="what-if" onLiftCalculated={setWiValveLift} />
+
+                  <div className="space-y-1">
+                    <Label>Cam Type</Label>
+                    <Select value={wiCamType} onValueChange={v => setWiCamType(v as CamType)}>
+                      <SelectTrigger><SelectValue /></SelectTrigger>
+                      <SelectContent>
+                        {(Object.entries(camTypes) as [CamType, typeof wiCam][]).map(([key, { label }]) => (
+                          <SelectItem key={key} value={key}>{label}</SelectItem>
+                        ))}
+                      </SelectContent>
+                    </Select>
+                    <Hint>Used to check if pressures fall within the recommended range</Hint>
+                  </div>
+                </div>
+              </CardContent>
+            </Card>
+
+            <div className="space-y-4">
+              {wiHasResult ? (
+                <>
+                  <Card className="bg-[#1a1a1a] text-white">
+                    <CardHeader><CardTitle>Pressures at {wiCustomH.toFixed(3)}" Installed Height</CardTitle></CardHeader>
+                    <CardContent className="space-y-4">
+                      <div>
+                        <p className="text-gray-400 text-sm">Seat Pressure</p>
+                        <p className="text-5xl font-bold text-primary">{wiNewSeat.toFixed(0)} lb</p>
+                        <p className="text-gray-400 text-xs mt-1">
+                          {wiHeightDelta > 0
+                            ? `+${(wiRate * wiHeightDelta).toFixed(0)} lb from installing ${wiHeightDelta.toFixed(3)}" shorter than spec`
+                            : wiHeightDelta < 0
+                            ? `${(wiRate * wiHeightDelta).toFixed(0)} lb from installing ${Math.abs(wiHeightDelta).toFixed(3)}" taller than spec`
+                            : "Same as spec height"}
+                        </p>
+                        <p className="text-gray-400 text-xs">Range for {wiCam.label}: {wiCam.seatMin}–{wiCam.seatMax} lb</p>
+                      </div>
+                      {wiLift > 0 && (
+                        <div>
+                          <p className="text-gray-400 text-sm">Open Pressure at {wiLift.toFixed(3)}" Lift</p>
+                          <p className="text-5xl font-bold text-primary">{wiNewOpen.toFixed(0)} lb</p>
+                          <p className="text-gray-400 text-xs mt-1">Range for {wiCam.label}: {wiCam.openMin}–{wiCam.openMax} lb</p>
+                        </div>
+                      )}
+                      <div className="border-t border-gray-700 pt-3">
+                        <p className="text-gray-400 text-sm">Original Spec</p>
+                        <p className="text-lg font-bold">{wiSpecSeat.toFixed(0)} lb seat @ {wiSpecH.toFixed(3)}"</p>
+                        {wiLift > 0 && (
+                          <p className="text-lg font-bold">{(wiSpecSeat + wiRate * wiLift).toFixed(0)} lb open @ {wiLift.toFixed(3)}" lift</p>
+                        )}
+                      </div>
+                    </CardContent>
+                  </Card>
+
+                  {wiCombinedZone && (
+                    <div className={`p-4 rounded-lg border ${wiCombinedZone.bg}`}>
+                      <p className={`font-bold text-lg ${wiCombinedZone.color}`}>{wiCombinedZone.label}</p>
+                      <div className="mt-2 space-y-1 text-sm">
+                        {wiSeatZone && <p className={wiSeatZone.color}>Seat pressure: {wiSeatZone.label} ({wiCam.seatMin}–{wiCam.seatMax} lb)</p>}
+                        {wiOpenZone && <p className={wiOpenZone.color}>Open pressure: {wiOpenZone.label} ({wiCam.openMin}–{wiCam.openMax} lb)</p>}
+                      </div>
+                    </div>
+                  )}
+
+                  {wiNewSeat < 0 && (
+                    <div className="p-4 rounded-lg border bg-red-50 border-red-200">
+                      <p className="font-bold text-red-700">Negative Seat Pressure</p>
+                      <p className="text-sm mt-1 text-muted-foreground">At this installed height the spring has no preload — it would be loose on the seat. The spring is too short for this height, or you need a longer free-length spring.</p>
+                    </div>
+                  )}
+
+                  {(wiCamType === "hyd-flat" || wiCamType === "hyd-roller-street" || wiCamType === "hyd-roller-perf") && wiOpenZone?.color === "text-red-700" && wiNewOpen > wiCam.openMax && (
+                    <div className="p-4 rounded-lg border bg-red-50 border-red-200">
+                      <p className="font-bold text-red-700">Over-sprung Warning</p>
+                      <p className="text-sm mt-1 text-muted-foreground">
+                        {wiCamType === "hyd-flat"
+                          ? "Hydraulic flat tappet cams are extremely sensitive to excessive spring pressure. Over-sprung flat tappet cams scuff and wipe lobes rapidly — often within the first 20 minutes of break-in."
+                          : "Excessive spring pressure on hydraulic lifters causes the lifter to collapse under load, losing lift at RPM."}
+                      </p>
+                    </div>
+                  )}
+
+                  <div className="p-3 bg-muted rounded-lg text-sm space-y-1">
+                    <p className="font-mono font-medium">height_change = spec - custom = {wiSpecH.toFixed(3)} - {wiCustomH.toFixed(3)} = {wiHeightDelta.toFixed(3)}</p>
+                    <p className="font-mono font-medium">new_seat = spec_seat + (rate × change) = {wiSpecSeat.toFixed(0)} + ({wiRate.toFixed(0)} × {wiHeightDelta.toFixed(3)}) = {wiNewSeat.toFixed(0)}</p>
+                    {wiLift > 0 && (
+                      <p className="font-mono font-medium">new_open = new_seat + (rate × lift) = {wiNewSeat.toFixed(0)} + ({wiRate.toFixed(0)} × {wiLift.toFixed(3)}) = {wiNewOpen.toFixed(0)}</p>
+                    )}
+                    <p className="text-xs text-muted-foreground mt-1">Assumes linear spring rate. Actual pressures may be 5–10% higher at deep compression due to progressive spring behavior.</p>
+                  </div>
+                </>
+              ) : (
+                <Card>
+                  <CardContent className="pt-6">
+                    <p className="text-muted-foreground text-sm">Enter your spring specs and a custom installed height to see what pressures you'd get. This lets you figure out if a spring will work at a height it wasn't designed for — like running a taller or shorter installed height than the manufacturer intended.</p>
+                    <div className="mt-4 space-y-2 text-sm text-muted-foreground">
+                      <p className="font-medium text-foreground">Common scenarios:</p>
+                      <ul className="list-disc list-inside space-y-1">
+                        <li>Machined heads or valve job changed your installed height</li>
+                        <li>Running a spring from a different application</li>
+                        <li>Want more seat pressure by shimming shorter</li>
+                        <li>Need to know if an available spring will work in your heads</li>
+                        <li>Checking pressures after a valve/retainer swap changed geometry</li>
+                      </ul>
+                    </div>
+                  </CardContent>
+                </Card>
+              )}
+
+              <Card>
+                <CardHeader><CardTitle>How This Works</CardTitle></CardHeader>
+                <CardContent className="text-sm text-muted-foreground space-y-2">
+                  <p>Valve springs are rated at a specific installed height. When you install them shorter (by shimming or machining), you compress the spring more at rest, which increases the preload — raising both seat and open pressure. Installing taller does the opposite.</p>
+                  <p>The math is straightforward: every 0.001" of height change multiplied by the spring rate gives you the pressure change. A 320 lb/in spring installed 0.050" shorter gains 16 lb of seat pressure and 16 lb of open pressure.</p>
+                  <p className="font-medium text-foreground">This calculator assumes linear spring rate. Real springs are slightly progressive at deep compression, so actual open pressures at high lift may be 5–10% higher than calculated.</p>
+                </CardContent>
+              </Card>
             </div>
           </div>
         </TabsContent>
