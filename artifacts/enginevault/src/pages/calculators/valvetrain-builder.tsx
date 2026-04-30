@@ -1,10 +1,10 @@
-import { useState, useMemo } from "react";
+import { useState, useMemo, useCallback } from "react";
 import { SEOHead } from "@/components/SEOHead";
 import { Input } from "@/components/ui/input";
 import { Label } from "@/components/ui/label";
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 import { Select, SelectContent, SelectItem, SelectTrigger, SelectValue } from "@/components/ui/select";
-import { ChevronDown, ArrowRightLeft } from "lucide-react";
+import { ChevronDown, ArrowRightLeft, Lock, Unlock } from "lucide-react";
 import {
   LineChart, Line, XAxis, YAxis, CartesianGrid, Tooltip, ReferenceLine,
   ResponsiveContainer, Area, ComposedChart,
@@ -16,7 +16,50 @@ import {
 
 type CalcMode = "cam-to-spring" | "spring-to-cam";
 
-type CamType = "hyd-flat" | "hyd-roller" | "solid-flat" | "solid-roller";
+type ValvetrainArch = "pushrod" | "sohc-rocker" | "dohc-direct" | "dohc-finger";
+
+interface ValvetrainArchSpec {
+  label: string;
+  description: string;
+  hasRocker: boolean;
+  hasPushrod: boolean;
+  hasLifter: boolean;
+  hasBucket: boolean;
+  hasFollower: boolean;
+  hasHLA: boolean;
+}
+
+const VALVETRAIN_ARCHS: Record<ValvetrainArch, ValvetrainArchSpec> = {
+  pushrod: {
+    label: "Pushrod + Rocker Arm",
+    description: "SBC, BBC, LS, SBF, Mopar, Pontiac, Olds, Buick, etc.",
+    hasRocker: true, hasPushrod: true, hasLifter: true,
+    hasBucket: false, hasFollower: false, hasHLA: false,
+  },
+  "sohc-rocker": {
+    label: "SOHC with Rocker Arm",
+    description: "Honda D-series, Ford 4.6/5.4 2V, many older OHC engines",
+    hasRocker: true, hasPushrod: false, hasLifter: false,
+    hasBucket: false, hasFollower: false, hasHLA: true,
+  },
+  "dohc-direct": {
+    label: "DOHC Direct-Acting (Bucket/Shim)",
+    description: "Toyota 2JZ, Honda B-series, BMW N54, Miata BP, etc.",
+    hasRocker: false, hasPushrod: false, hasLifter: false,
+    hasBucket: true, hasFollower: false, hasHLA: false,
+  },
+  "dohc-finger": {
+    label: "DOHC Finger Follower",
+    description: "Ford Coyote/Voodoo, BMW S-series, many modern engines",
+    hasRocker: false, hasPushrod: false, hasLifter: false,
+    hasBucket: false, hasFollower: true, hasHLA: true,
+  },
+};
+
+type CamType =
+  | "hyd-flat" | "hyd-roller" | "solid-flat" | "solid-roller"
+  | "ohc-bucket" | "ohc-finger-hyd" | "ohc-finger-solid"
+  | "sohc-rocker-hyd" | "sohc-rocker-solid";
 
 interface CamTypeSpec {
   label: string;
@@ -24,161 +67,44 @@ interface CamTypeSpec {
   seatMax: number;
   openMin: number;
   openMax: number;
-  maxSeatWarn: number;       // above this seat pressure, warn about lobe wear
-  typicalAggressiveness: number; // 0-1 scale, affects valve float estimate
+  maxSeatWarn: number;
+  typicalAggressiveness: number;
+  arch: ValvetrainArch[];
+  lashType: "hydraulic" | "solid";
 }
 
 const CAM_TYPES: Record<CamType, CamTypeSpec> = {
-  "hyd-flat":     { label: "Hydraulic flat tappet",   seatMin: 85,  seatMax: 115, openMin: 220, openMax: 280,  maxSeatWarn: 130, typicalAggressiveness: 0.35 },
-  "hyd-roller":   { label: "Hydraulic roller",        seatMin: 120, seatMax: 170, openMin: 260, openMax: 400,  maxSeatWarn: 999, typicalAggressiveness: 0.55 },
-  "solid-flat":   { label: "Solid flat tappet",       seatMin: 130, seatMax: 170, openMin: 280, openMax: 380,  maxSeatWarn: 180, typicalAggressiveness: 0.50 },
-  "solid-roller": { label: "Solid roller",            seatMin: 170, seatMax: 400, openMin: 350, openMax: 1000, maxSeatWarn: 999, typicalAggressiveness: 0.75 },
+  // Pushrod
+  "hyd-flat":          { label: "Hydraulic flat tappet",          seatMin: 85,  seatMax: 130, openMin: 220, openMax: 280,  maxSeatWarn: 130, typicalAggressiveness: 0.35, arch: ["pushrod"],      lashType: "hydraulic" },
+  "hyd-roller":        { label: "Hydraulic roller",               seatMin: 120, seatMax: 170, openMin: 260, openMax: 400,  maxSeatWarn: 999, typicalAggressiveness: 0.55, arch: ["pushrod"],      lashType: "hydraulic" },
+  "solid-flat":        { label: "Solid flat tappet",              seatMin: 130, seatMax: 170, openMin: 280, openMax: 380,  maxSeatWarn: 180, typicalAggressiveness: 0.50, arch: ["pushrod"],      lashType: "solid" },
+  "solid-roller":      { label: "Solid roller",                   seatMin: 170, seatMax: 400, openMin: 350, openMax: 1000, maxSeatWarn: 999, typicalAggressiveness: 0.75, arch: ["pushrod"],      lashType: "solid" },
+  // SOHC
+  "sohc-rocker-hyd":   { label: "SOHC hydraulic (rocker arm)",    seatMin: 40,  seatMax: 100, openMin: 120, openMax: 300,  maxSeatWarn: 999, typicalAggressiveness: 0.60, arch: ["sohc-rocker"], lashType: "hydraulic" },
+  "sohc-rocker-solid": { label: "SOHC solid (rocker arm)",        seatMin: 50,  seatMax: 120, openMin: 150, openMax: 350,  maxSeatWarn: 999, typicalAggressiveness: 0.65, arch: ["sohc-rocker"], lashType: "solid" },
+  // DOHC direct-acting
+  "ohc-bucket":        { label: "DOHC direct-acting (bucket/shim)", seatMin: 25, seatMax: 80,  openMin: 80,  openMax: 250,  maxSeatWarn: 999, typicalAggressiveness: 0.68, arch: ["dohc-direct"], lashType: "solid" },
+  // DOHC finger follower
+  "ohc-finger-hyd":    { label: "DOHC finger follower (hydraulic)", seatMin: 35, seatMax: 90,  openMin: 100, openMax: 300,  maxSeatWarn: 999, typicalAggressiveness: 0.78, arch: ["dohc-finger"], lashType: "hydraulic" },
+  "ohc-finger-solid":  { label: "DOHC finger follower (solid)",    seatMin: 40, seatMax: 100, openMin: 120, openMax: 350,  maxSeatWarn: 999, typicalAggressiveness: 0.82, arch: ["dohc-finger"], lashType: "solid" },
 };
 
-type SpringType = "single" | "single-beehive" | "dual" | "triple";
+type SpringType = "single-small" | "single" | "single-beehive" | "dual" | "triple";
 
 const SPRING_TYPE_LABELS: Record<SpringType, string> = {
-  "single":        "Single (OEM / mild street)",
+  "single-small":  "Single small (OHC 4-cyl stock)",
+  "single":        "Single (OHV stock / OHC V6-V8)",
   "single-beehive": "Beehive / Conical (street-performance)",
   "dual":          "Dual (performance / race)",
   "triple":        "Triple (extreme race)",
 };
 
-/* Typical effective mass at the valve (grams) by spring type.
-   These are average values for a typical V8 pushrod engine.
-   Real values depend on specific components. */
 const SPRING_MASS_GRAMS: Record<SpringType, number> = {
+  "single-small": 30,
   "single": 55,
-  "single-beehive": 45,
-  "dual": 85,
+  "single-beehive": 50,
+  "dual": 90,
   "triple": 120,
-};
-
-interface EnginePreset {
-  label: string;
-  valveWeightInt: number;   // intake valve weight, grams
-  valveWeightExh: number;   // exhaust valve weight, grams
-  retainerWeight: number;   // grams (per valve, steel)
-  lockWeight: number;       // grams (pair)
-  stockRockerRatio: number;
-  stockRockerWeight: number; // grams (steel stamped)
-  stemDiameter: string;
-  defaultSpringType: SpringType;
-}
-
-const ENGINE_PRESETS: Record<string, EnginePreset> = {
-  custom: {
-    label: "Custom / Enter manually",
-    valveWeightInt: 100, valveWeightExh: 85,
-    retainerWeight: 28, lockWeight: 8,
-    stockRockerRatio: 1.5, stockRockerWeight: 95,
-    stemDiameter: "11/32\"",
-    defaultSpringType: "single",
-  },
-  sbc: {
-    label: "Chevy Small Block (SBC 283-400)",
-    valveWeightInt: 105, valveWeightExh: 88,
-    retainerWeight: 28, lockWeight: 8,
-    stockRockerRatio: 1.5, stockRockerWeight: 95,
-    stemDiameter: "11/32\"",
-    defaultSpringType: "single",
-  },
-  bbc: {
-    label: "Chevy Big Block (BBC 396-454)",
-    valveWeightInt: 145, valveWeightExh: 125,
-    retainerWeight: 35, lockWeight: 10,
-    stockRockerRatio: 1.7, stockRockerWeight: 120,
-    stemDiameter: "3/8\"",
-    defaultSpringType: "dual",
-  },
-  ls: {
-    label: "GM LS / Gen III-IV (4.8-7.0L)",
-    valveWeightInt: 90, valveWeightExh: 78,
-    retainerWeight: 20, lockWeight: 6,
-    stockRockerRatio: 1.7, stockRockerWeight: 85,
-    stemDiameter: "8mm",
-    defaultSpringType: "single-beehive",
-  },
-  lt: {
-    label: "GM LT / Gen V (LT1, LT4, L86)",
-    valveWeightInt: 82, valveWeightExh: 70,
-    retainerWeight: 18, lockWeight: 6,
-    stockRockerRatio: 1.8, stockRockerWeight: 80,
-    stemDiameter: "8mm",
-    defaultSpringType: "single-beehive",
-  },
-  sbf: {
-    label: "Ford Small Block (SBF 260-351W)",
-    valveWeightInt: 110, valveWeightExh: 92,
-    retainerWeight: 30, lockWeight: 8,
-    stockRockerRatio: 1.6, stockRockerWeight: 100,
-    stemDiameter: "11/32\"",
-    defaultSpringType: "single",
-  },
-  bbf: {
-    label: "Ford Big Block (FE/385/460)",
-    valveWeightInt: 155, valveWeightExh: 135,
-    retainerWeight: 38, lockWeight: 10,
-    stockRockerRatio: 1.76, stockRockerWeight: 130,
-    stemDiameter: "3/8\"",
-    defaultSpringType: "dual",
-  },
-  coyote: {
-    label: "Ford 5.0 Coyote (DOHC)",
-    valveWeightInt: 72, valveWeightExh: 62,
-    retainerWeight: 16, lockWeight: 5,
-    stockRockerRatio: 1.0, stockRockerWeight: 0,
-    stemDiameter: "6mm",
-    defaultSpringType: "single-beehive",
-  },
-  moparLA: {
-    label: "Mopar LA (273-360)",
-    valveWeightInt: 112, valveWeightExh: 95,
-    retainerWeight: 30, lockWeight: 8,
-    stockRockerRatio: 1.5, stockRockerWeight: 100,
-    stemDiameter: "11/32\"",
-    defaultSpringType: "single",
-  },
-  moparRB: {
-    label: "Mopar B/RB (383-440)",
-    valveWeightInt: 150, valveWeightExh: 130,
-    retainerWeight: 36, lockWeight: 10,
-    stockRockerRatio: 1.5, stockRockerWeight: 115,
-    stemDiameter: "3/8\"",
-    defaultSpringType: "dual",
-  },
-  moparHemi: {
-    label: "Mopar 426 Hemi / Gen III Hemi",
-    valveWeightInt: 148, valveWeightExh: 128,
-    retainerWeight: 32, lockWeight: 9,
-    stockRockerRatio: 1.5, stockRockerWeight: 110,
-    stemDiameter: "3/8\"",
-    defaultSpringType: "dual",
-  },
-  pontiac: {
-    label: "Pontiac V8 (326-455)",
-    valveWeightInt: 128, valveWeightExh: 108,
-    retainerWeight: 32, lockWeight: 9,
-    stockRockerRatio: 1.5, stockRockerWeight: 105,
-    stemDiameter: "11/32\"",
-    defaultSpringType: "single",
-  },
-  buick: {
-    label: "Buick V8 (300-455)",
-    valveWeightInt: 125, valveWeightExh: 105,
-    retainerWeight: 30, lockWeight: 8,
-    stockRockerRatio: 1.55, stockRockerWeight: 100,
-    stemDiameter: "11/32\"",
-    defaultSpringType: "single",
-  },
-  olds: {
-    label: "Oldsmobile V8 (330-455)",
-    valveWeightInt: 130, valveWeightExh: 110,
-    retainerWeight: 32, lockWeight: 9,
-    stockRockerRatio: 1.5, stockRockerWeight: 105,
-    stemDiameter: "3/8\"",
-    defaultSpringType: "single",
-  },
 };
 
 type RetainerMaterial = "steel" | "chromoly" | "titanium";
@@ -199,6 +125,8 @@ const VALVE_MATERIAL_FACTOR: Record<ValveMaterial, { label: string; factor: numb
 
 const ROCKER_PRESETS = [
   { value: "1.000", label: "1.0:1 (DOHC / direct acting)" },
+  { value: "1.050", label: "1.05:1 (DOHC finger follower)" },
+  { value: "1.200", label: "1.2:1 (SOHC / finger follower)" },
   { value: "1.500", label: "1.5:1 (stock SBF, Mopar, Pontiac)" },
   { value: "1.550", label: "1.55:1 (stock Buick)" },
   { value: "1.600", label: "1.6:1 (stock SBC, common aftermarket)" },
@@ -209,6 +137,49 @@ const ROCKER_PRESETS = [
   { value: "1.800", label: "1.8:1 (high-ratio, stock LT)" },
   { value: "custom", label: "Custom ratio..." },
 ];
+
+/* Default component weights by architecture (grams) — used as placeholders */
+const ARCH_DEFAULTS: Record<ValvetrainArch, {
+  intakeValve: number; exhaustValve: number; retainer: number; lockWeight: number;
+  rockerWeight: number; rockerRatio: number;
+  pushrodWeight: number; lifterWeight: number;
+  bucketWeight: number; shimWeight: number;
+  followerWeight: number; hlaWeight: number;
+  defaultSpringType: SpringType;
+}> = {
+  pushrod: {
+    intakeValve: 105, exhaustValve: 88, retainer: 28, lockWeight: 8,
+    rockerWeight: 95, rockerRatio: 1.5,
+    pushrodWeight: 65, lifterWeight: 30,
+    bucketWeight: 0, shimWeight: 0,
+    followerWeight: 0, hlaWeight: 0,
+    defaultSpringType: "single",
+  },
+  "sohc-rocker": {
+    intakeValve: 70, exhaustValve: 58, retainer: 15, lockWeight: 6,
+    rockerWeight: 80, rockerRatio: 1.5,
+    pushrodWeight: 0, lifterWeight: 0,
+    bucketWeight: 0, shimWeight: 0,
+    followerWeight: 0, hlaWeight: 20,
+    defaultSpringType: "single",
+  },
+  "dohc-direct": {
+    intakeValve: 55, exhaustValve: 45, retainer: 10, lockWeight: 4,
+    rockerWeight: 0, rockerRatio: 1.0,
+    pushrodWeight: 0, lifterWeight: 0,
+    bucketWeight: 28, shimWeight: 4,
+    followerWeight: 0, hlaWeight: 0,
+    defaultSpringType: "single-small",
+  },
+  "dohc-finger": {
+    intakeValve: 72, exhaustValve: 60, retainer: 14, lockWeight: 5,
+    rockerWeight: 0, rockerRatio: 1.0,
+    pushrodWeight: 0, lifterWeight: 0,
+    bucketWeight: 0, shimWeight: 0,
+    followerWeight: 45, hlaWeight: 20,
+    defaultSpringType: "single-beehive",
+  },
+};
 
 /* ══════════════════════════════════════════════════════════════════
    CALCULATION FUNCTIONS
@@ -227,45 +198,81 @@ function requiredOpenPressure(
   durationAt050: number,
   aggressiveness: number,
 ): number {
-  // Simplified nose acceleration model:
-  //   acceleration ≈ (lift * (RPM * 6)^2) / (duration_seconds/2)^2
-  //   but we use a practical heuristic validated against published data.
-  //
-  // The key insight: inertia force = mass * accel, and accel ∝ RPM^2 * lift / duration^2
-  // We scale by aggressiveness (cam profile shape factor)
   const effectiveMassLbs = effectiveMassGrams / 453.6;
-  const omega = (maxRPM * 2 * Math.PI) / 60; // rad/s for one crank revolution
-  // Convert duration at 0.050 to approximate ramp duration in radians
-  // The nose region is roughly 40% of the total duration
+  const omega = (maxRPM * 2 * Math.PI) / 60;
   const durationRad = (durationAt050 * Math.PI) / 180;
   const noseRad = durationRad * 0.4;
-  // Peak acceleration at nose ≈ lift / (noseRad / omega)^2 * shape factor
-  const noseTime = noseRad / (omega / 2); // time for cam nose (divide omega by 2 since cam turns at half crank speed)
+  const noseTime = noseRad / (omega / 2);
   if (noseTime <= 0) return 0;
   const peakAccel = liftInches / (noseTime * noseTime) * (0.5 + aggressiveness * 0.8);
-  // Inertia force = mass * accel / 386.4 (gravity conversion for lbs-in system)
   const inertiaForce = effectiveMassLbs * peakAccel;
-  // Required spring force at nose = inertia force * safety factor (1.3)
   return inertiaForce * 1.3;
 }
 
-/** Effective valvetrain mass at the valve (grams) */
+/**
+ * Effective valvetrain mass at the valve (grams).
+ *
+ * Formulas by architecture:
+ *   Pushrod:     valve + retainer + locks + ⅓·spring + ⅓·rocker·R² + (lifter + ⅓·pushrod) / R²
+ *   SOHC rocker: valve + retainer + locks + ⅓·spring + ⅓·rocker·R² + HLA_moving / R²
+ *   DOHC direct: valve + retainer + locks + ⅓·spring + bucket + shim
+ *   DOHC finger: valve + retainer + locks + ⅓·spring + ⅓·follower·R² + HLA_moving / R²
+ *
+ * The ⅓ factor for springs, rockers, followers, and pushrods accounts for
+ * distributed mass — one end stationary, one end moving. Energy conservation
+ * shows ⅓ is more accurate than ½ (Tilden Technologies).
+ */
 function effectiveValvetrainMass(
+  arch: ValvetrainArch,
   valveWeight: number,
   retainerWeight: number,
   lockWeight: number,
   springMass: number,
   rockerWeight: number,
   rockerRatio: number,
+  pushrodWeight: number,
+  lifterWeight: number,
+  bucketWeight: number,
+  shimWeight: number,
+  followerWeight: number,
+  hlaWeight: number,
 ): number {
-  // Components at the valve side: valve + retainer + locks + 1/2 spring mass
-  // Rocker contribution: 1/3 of rocker mass * ratio^2 (reflected to valve side)
-  const valveSide = valveWeight + retainerWeight + lockWeight + springMass * 0.5;
-  const rockerContribution = rockerRatio > 0 ? rockerWeight * 0.33 * rockerRatio * rockerRatio : 0;
-  return valveSide + rockerContribution;
+  // Components at the valve side (always present)
+  const valveSide = valveWeight + retainerWeight + lockWeight + springMass * (1 / 3);
+
+  const R = rockerRatio > 0 ? rockerRatio : 1;
+  const R2 = R * R;
+
+  switch (arch) {
+    case "pushrod": {
+      const rockerContrib = rockerWeight * (1 / 3) * R2;
+      // Lifter moves at cam velocity = valve velocity / R. Pushrod is distributed (⅓).
+      const camSideContrib = (lifterWeight + pushrodWeight * (1 / 3)) / R2;
+      return valveSide + rockerContrib + camSideContrib;
+    }
+    case "sohc-rocker": {
+      const rockerContrib = rockerWeight * (1 / 3) * R2;
+      // HLA moving portion (~50% of total HLA mass) is at the pivot/cam side
+      const hlaMoving = hlaWeight * 0.5;
+      const hlaContrib = hlaMoving / R2;
+      return valveSide + rockerContrib + hlaContrib;
+    }
+    case "dohc-direct": {
+      // Bucket and shim move 1:1 with the valve — full mass
+      return valveSide + bucketWeight + shimWeight;
+    }
+    case "dohc-finger": {
+      // Finger follower is a lever like a rocker: ⅓ mass × R²
+      const followerContrib = followerWeight * (1 / 3) * R2;
+      // HLA is at the pivot end (cam side) — reflected mass
+      const hlaMoving = hlaWeight * 0.5;
+      const hlaContrib = hlaMoving / R2;
+      return valveSide + followerContrib + hlaContrib;
+    }
+  }
 }
 
-/** Estimated valve float RPM — the RPM at which spring force can no longer control the valve */
+/** Estimated valve float RPM */
 function estimateValveFloatRPM(
   openPressureLbs: number,
   effectiveMassGrams: number,
@@ -273,7 +280,6 @@ function estimateValveFloatRPM(
   durationAt050: number,
   aggressiveness: number,
 ): number {
-  // Binary search for the RPM where required open pressure equals available open pressure
   let lo = 2000;
   let hi = 15000;
   for (let i = 0; i < 50; i++) {
@@ -285,7 +291,7 @@ function estimateValveFloatRPM(
       hi = mid;
     }
   }
-  return Math.round((lo + hi) / 2 / 50) * 50; // round to nearest 50 RPM
+  return Math.round((lo + hi) / 2 / 50) * 50;
 }
 
 /** Generate spring force vs inertia force data across RPM range */
@@ -302,7 +308,7 @@ function generateForceVsRPMData(
   const data: { rpm: number; springForce: number; inertiaForce: number }[] = [];
   const step = 250;
   for (let rpm = 2000; rpm <= maxRPMRange; rpm += step) {
-    const inertiaForce = requiredOpenPressure(effectiveMassGrams, rpm, liftInches, durationAt050, aggressiveness) / 1.3; // remove safety factor for raw comparison
+    const inertiaForce = requiredOpenPressure(effectiveMassGrams, rpm, liftInches, durationAt050, aggressiveness) / 1.3;
     data.push({
       rpm,
       springForce: openPressure,
@@ -360,16 +366,64 @@ function ResultRow({ label, value, sub, color }: { label: string; value: string;
   );
 }
 
-function StatusBanner({ label, message, level }: { label: string; message: string; level: "green" | "yellow" | "red" }) {
-  const colors = {
-    green:  "bg-green-50 border-green-300 text-green-700",
-    yellow: "bg-yellow-50 border-yellow-300 text-yellow-700",
-    red:    "bg-red-50 border-red-300 text-red-700",
-  };
+/* ── Reactive Slider with Lock ────────────────────────────────── */
+
+function LockableSlider({
+  label,
+  value,
+  min,
+  max,
+  step,
+  unit,
+  locked,
+  onToggleLock,
+  onChange,
+  formatValue,
+}: {
+  label: string;
+  value: number;
+  min: number;
+  max: number;
+  step: number;
+  unit: string;
+  locked: boolean;
+  onToggleLock: () => void;
+  onChange: (v: number) => void;
+  formatValue?: (v: number) => string;
+}) {
+  const display = formatValue ? formatValue(value) : `${value}`;
   return (
-    <div className={`rounded-xl border-2 p-5 ${colors[level]}`}>
-      <div className="text-2xl font-black mb-1">{label}</div>
-      <div className="text-sm font-medium">{message}</div>
+    <div className={`p-3 rounded-lg border transition-colors ${locked ? "bg-gray-100 border-gray-300" : "bg-white border-[#E85D04]/30"}`}>
+      <div className="flex items-center justify-between mb-2">
+        <span className="text-xs font-medium text-gray-600">{label}</span>
+        <div className="flex items-center gap-2">
+          <span className={`text-sm font-bold ${locked ? "text-gray-500" : "text-[#E85D04]"}`}>
+            {display} {unit}
+          </span>
+          <button
+            type="button"
+            onClick={onToggleLock}
+            className={`p-1 rounded transition-colors ${locked ? "bg-gray-300 text-gray-600" : "bg-[#E85D04]/10 text-[#E85D04] hover:bg-[#E85D04]/20"}`}
+            title={locked ? "Unlock this parameter" : "Lock this parameter"}
+          >
+            {locked ? <Lock className="w-3.5 h-3.5" /> : <Unlock className="w-3.5 h-3.5" />}
+          </button>
+        </div>
+      </div>
+      <input
+        type="range"
+        min={min}
+        max={max}
+        step={step}
+        value={value}
+        disabled={locked}
+        onChange={e => onChange(parseFloat(e.target.value))}
+        className={`w-full h-2 rounded-lg appearance-none cursor-pointer ${locked ? "accent-gray-400 opacity-50" : "accent-[#E85D04]"}`}
+      />
+      <div className="flex justify-between text-[10px] text-gray-400 mt-0.5">
+        <span>{formatValue ? formatValue(min) : min}</span>
+        <span>{formatValue ? formatValue(max) : max}</span>
+      </div>
     </div>
   );
 }
@@ -382,11 +436,13 @@ export default function ValvetrainBuilderCalculator() {
   /* ── Mode ────────────────────────────────────────────────────── */
   const [mode, setMode] = useState<CalcMode>("cam-to-spring");
 
-  /* ── Engine platform ────────────────────────────────────────── */
-  const [platform, setPlatform] = useState("sbc");
-  const preset = ENGINE_PRESETS[platform] || ENGINE_PRESETS.custom;
+  /* ── Architecture ───────────────────────────────────────────── */
+  const [arch, setArch] = useState<ValvetrainArch>("pushrod");
+  const archSpec = VALVETRAIN_ARCHS[arch];
+  const defaults = ARCH_DEFAULTS[arch];
 
   /* ── Cam inputs ─────────────────────────────────────────────── */
+  const availableCamTypes = Object.entries(CAM_TYPES).filter(([, spec]) => spec.arch.includes(arch)) as [CamType, CamTypeSpec][];
   const [camType, setCamType] = useState<CamType>("hyd-flat");
   const [lobeLiftInt, setLobeLiftInt] = useState("0.300");
   const [lobeLiftExh, setLobeLiftExh] = useState("0.300");
@@ -395,28 +451,35 @@ export default function ValvetrainBuilderCalculator() {
   const [liftInputMode, setLiftInputMode] = useState<"lobe" | "valve">("lobe");
 
   /* ── Rocker ─────────────────────────────────────────────────── */
-  const [rockerPreset, setRockerPreset] = useState(preset.stockRockerRatio.toFixed(3));
-  const [customRatio, setCustomRatio] = useState(preset.stockRockerRatio.toFixed(3));
-  const [rockerWeightOverride, setRockerWeightOverride] = useState("");
+  const [rockerPreset, setRockerPreset] = useState(defaults.rockerRatio.toFixed(3));
+  const [customRatio, setCustomRatio] = useState(defaults.rockerRatio.toFixed(3));
+  const [rockerWeightInput, setRockerWeightInput] = useState("");
 
   /* ── Lifter type / lash ─────────────────────────────────────── */
-  const [lifterType, setLifterType] = useState<"hydraulic" | "solid">("hydraulic");
   const [lashInt, setLashInt] = useState("0.016");
   const [lashExh, setLashExh] = useState("0.020");
 
   /* ── Component weights ──────────────────────────────────────── */
   const [valveMaterial, setValveMaterial] = useState<ValveMaterial>("stainless");
   const [retainerMaterial, setRetainerMaterial] = useState<RetainerMaterial>("steel");
-  const [valveWeightIntOverride, setValveWeightIntOverride] = useState("");
-  const [valveWeightExhOverride, setValveWeightExhOverride] = useState("");
-  const [retainerWeightOverride, setRetainerWeightOverride] = useState("");
-  const [showWeightOverrides, setShowWeightOverrides] = useState(false);
+  const [valveWeightIntInput, setValveWeightIntInput] = useState("");
+  const [valveWeightExhInput, setValveWeightExhInput] = useState("");
+  const [retainerWeightInput, setRetainerWeightInput] = useState("");
+  const [lockWeightInput, setLockWeightInput] = useState("");
+
+  /* ── Architecture-specific weights ─────────────────────────── */
+  const [pushrodWeightInput, setPushrodWeightInput] = useState("");
+  const [lifterWeightInput, setLifterWeightInput] = useState("");
+  const [bucketWeightInput, setBucketWeightInput] = useState("");
+  const [shimWeightInput, setShimWeightInput] = useState("");
+  const [followerWeightInput, setFollowerWeightInput] = useState("");
+  const [hlaWeightInput, setHlaWeightInput] = useState("");
 
   /* ── Target RPM ─────────────────────────────────────────────── */
   const [targetRPM, setTargetRPM] = useState("6000");
 
   /* ── Spring type ────────────────────────────────────────────── */
-  const [springType, setSpringType] = useState<SpringType>(preset.defaultSpringType);
+  const [springType, setSpringType] = useState<SpringType>(defaults.defaultSpringType);
 
   /* ── Reverse mode: spring inputs ────────────────────────────── */
   const [revSeatPressure, setRevSeatPressure] = useState("130");
@@ -430,14 +493,69 @@ export default function ValvetrainBuilderCalculator() {
   const [springInstalledHeight, setSpringInstalledHeight] = useState("1.800");
   const [springCoilBindHeight, setSpringCoilBindHeight] = useState("1.150");
 
-  /* ── Derived values ─────────────────────────────────────────── */
-  const rockerRatio = rockerPreset === "custom"
-    ? (parseFloat(customRatio) || 1.5)
-    : (parseFloat(rockerPreset) || 1.5);
+  /* ── What-If slider locks ──────────────────────────────────── */
+  const [lockRPM, setLockRPM] = useState(false);
+  const [lockValveWeight, setLockValveWeight] = useState(false);
+  const [lockRockerRatio, setLockRockerRatio] = useState(false);
+  const [lockSpringPressure, setLockSpringPressure] = useState(false);
 
-  const rockerWeight = rockerWeightOverride
-    ? (parseFloat(rockerWeightOverride) || preset.stockRockerWeight)
-    : preset.stockRockerWeight;
+  /* Slider state for What-If panel */
+  const [sliderRPM, setSliderRPM] = useState(6000);
+  const [sliderValveWeight, setSliderValveWeight] = useState(100);
+  const [sliderRockerRatio, setSliderRockerRatio] = useState(1.5);
+  const [sliderSpringOpen, setSliderSpringOpen] = useState(300);
+
+  /* ── Apply architecture ─────────────────────────────────────── */
+  function applyArch(newArch: ValvetrainArch) {
+    setArch(newArch);
+    const d = ARCH_DEFAULTS[newArch];
+    // Set default cam type for this architecture
+    const firstCam = Object.entries(CAM_TYPES).find(([, spec]) => spec.arch.includes(newArch));
+    if (firstCam) setCamType(firstCam[0] as CamType);
+    setSpringType(d.defaultSpringType);
+
+    if (newArch === "dohc-direct") {
+      setRockerPreset("1.000");
+      setCustomRatio("1.000");
+      setLiftInputMode("valve");
+    } else if (newArch === "dohc-finger") {
+      setRockerPreset("1.050");
+      setCustomRatio("1.050");
+      setLiftInputMode("valve");
+    } else if (newArch === "sohc-rocker") {
+      setRockerPreset("1.500");
+      setCustomRatio("1.500");
+      setLiftInputMode("lobe");
+    } else {
+      setRockerPreset(d.rockerRatio.toFixed(3));
+      setCustomRatio(d.rockerRatio.toFixed(3));
+      setLiftInputMode("lobe");
+    }
+    // Clear all weight overrides
+    setRockerWeightInput("");
+    setValveWeightIntInput("");
+    setValveWeightExhInput("");
+    setRetainerWeightInput("");
+    setLockWeightInput("");
+    setPushrodWeightInput("");
+    setLifterWeightInput("");
+    setBucketWeightInput("");
+    setShimWeightInput("");
+    setFollowerWeightInput("");
+    setHlaWeightInput("");
+  }
+
+  /* ── Derived values ─────────────────────────────────────────── */
+  const camSpec = CAM_TYPES[camType];
+  const lifterType = camSpec.lashType;
+
+  const rockerRatio = archSpec.hasRocker || arch === "dohc-finger"
+    ? (rockerPreset === "custom" ? (parseFloat(customRatio) || 1.0) : (parseFloat(rockerPreset) || 1.0))
+    : 1.0;
+
+  const rockerWeight = rockerWeightInput
+    ? (parseFloat(rockerWeightInput) || defaults.rockerWeight)
+    : defaults.rockerWeight;
 
   const lashValInt = lifterType === "solid" ? (parseFloat(lashInt) || 0) : 0;
   const lashValExh = lifterType === "solid" ? (parseFloat(lashExh) || 0) : 0;
@@ -445,7 +563,6 @@ export default function ValvetrainBuilderCalculator() {
   const lobeLiftIntV = parseFloat(lobeLiftInt) || 0;
   const lobeLiftExhV = parseFloat(lobeLiftExh) || 0;
 
-  // Net valve lift
   const valveLiftInt = liftInputMode === "lobe"
     ? netValveLift(lobeLiftIntV, rockerRatio, lashValInt)
     : lobeLiftIntV - lashValInt;
@@ -466,24 +583,36 @@ export default function ValvetrainBuilderCalculator() {
   const valveFactorExh = valveMaterial === "inconel" ? VALVE_MATERIAL_FACTOR.inconel.factor : valveFactorInt;
   const retainerFactor = RETAINER_MATERIAL_FACTOR[retainerMaterial].factor;
 
-  const valveWtInt = valveWeightIntOverride
-    ? (parseFloat(valveWeightIntOverride) || preset.valveWeightInt)
-    : preset.valveWeightInt * valveFactorInt;
-  const valveWtExh = valveWeightExhOverride
-    ? (parseFloat(valveWeightExhOverride) || preset.valveWeightExh)
-    : preset.valveWeightExh * valveFactorExh;
-  const retainerWt = retainerWeightOverride
-    ? (parseFloat(retainerWeightOverride) || preset.retainerWeight)
-    : preset.retainerWeight * retainerFactor;
-  const lockWt = preset.lockWeight;
+  const valveWtInt = valveWeightIntInput
+    ? (parseFloat(valveWeightIntInput) || defaults.intakeValve)
+    : defaults.intakeValve * valveFactorInt;
+  const valveWtExh = valveWeightExhInput
+    ? (parseFloat(valveWeightExhInput) || defaults.exhaustValve)
+    : defaults.exhaustValve * valveFactorExh;
+  const retainerWt = retainerWeightInput
+    ? (parseFloat(retainerWeightInput) || defaults.retainer)
+    : defaults.retainer * retainerFactor;
+  const lockWt = lockWeightInput
+    ? (parseFloat(lockWeightInput) || defaults.lockWeight)
+    : defaults.lockWeight;
   const springMass = SPRING_MASS_GRAMS[springType];
+
+  // Architecture-specific weights
+  const pushrodWt = pushrodWeightInput ? (parseFloat(pushrodWeightInput) || defaults.pushrodWeight) : defaults.pushrodWeight;
+  const lifterWt = lifterWeightInput ? (parseFloat(lifterWeightInput) || defaults.lifterWeight) : defaults.lifterWeight;
+  const bucketWt = bucketWeightInput ? (parseFloat(bucketWeightInput) || defaults.bucketWeight) : defaults.bucketWeight;
+  const shimWt = shimWeightInput ? (parseFloat(shimWeightInput) || defaults.shimWeight) : defaults.shimWeight;
+  const followerWt = followerWeightInput ? (parseFloat(followerWeightInput) || defaults.followerWeight) : defaults.followerWeight;
+  const hlaWt = hlaWeightInput ? (parseFloat(hlaWeightInput) || defaults.hlaWeight) : defaults.hlaWeight;
 
   // Effective mass (use intake side — typically heavier valve)
   const effectiveMass = effectiveValvetrainMass(
-    valveWtInt, retainerWt, lockWt, springMass, rockerWeight, rockerRatio
+    arch, valveWtInt, retainerWt, lockWt, springMass,
+    rockerWeight, rockerRatio,
+    pushrodWt, lifterWt,
+    bucketWt, shimWt,
+    followerWt, hlaWt,
   );
-
-  const camSpec = CAM_TYPES[camType];
 
   /* ══════════════════════════════════════════════════════════════
      FORWARD MODE: cam → spring requirements
@@ -495,19 +624,14 @@ export default function ValvetrainBuilderCalculator() {
       effectiveMass, targetRPMv, maxValveLift, maxDuration, camSpec.typicalAggressiveness
     );
 
-    // Minimum open pressure: max of RPM-based requirement and cam type minimum
     const minOpen = Math.max(reqOpen, camSpec.openMin);
 
-    // Derive seat pressure: assume a typical spring rate to back-calculate
-    // Use a conservative approach: seat pressure should be within cam type range
     const targetSeatMin = camSpec.seatMin;
     const targetSeatMax = camSpec.seatMax;
     const targetSeatMid = (targetSeatMin + targetSeatMax) / 2;
 
-    // Required spring rate to achieve the open pressure from the seat pressure
     const reqRate = maxValveLift > 0 ? (minOpen - targetSeatMid) / maxValveLift : 0;
 
-    // Coil bind: recommend minimum installed height
     const safetyMargin = 0.060;
     const minSpringTravel = maxValveLift + safetyMargin;
 
@@ -518,8 +642,8 @@ export default function ValvetrainBuilderCalculator() {
       requiredSpringRate: Math.round(reqRate),
       minSpringTravel,
       effectiveMass: Math.round(effectiveMass),
-      valveLiftInt: valveLiftInt,
-      valveLiftExh: valveLiftExh,
+      valveLiftInt,
+      valveLiftExh,
     };
   }, [mode, maxValveLift, maxDuration, effectiveMass, targetRPMv, camSpec, valveLiftInt, valveLiftExh]);
 
@@ -540,17 +664,15 @@ export default function ValvetrainBuilderCalculator() {
       openP, effectiveMass, maxValveLift, maxDuration, camSpec.typicalAggressiveness
     );
 
-    // Pressure checks
     const seatOk = seat >= camSpec.seatMin && seat <= camSpec.seatMax;
     const openOk = openP >= (forwardResults?.requiredOpenPressure || camSpec.openMin);
     const bindOk = ih > 0 && cbh > 0 ? bindClearance >= 0.060 : true;
-    const rpmOk = floatRPM > targetRPMv * 1.1; // 10% safety margin above target
+    const rpmOk = floatRPM > targetRPMv * 1.1;
 
-    // RPM chart data
     const chartMax = Math.max(targetRPMv + 2000, floatRPM + 1500);
     const chartData = generateForceVsRPMData(
       seat, rate, maxValveLift, effectiveMass, maxDuration, camSpec.typicalAggressiveness,
-      Math.min(chartMax, 12000)
+      Math.min(chartMax, 15000)
     );
 
     return {
@@ -560,7 +682,7 @@ export default function ValvetrainBuilderCalculator() {
       floatRPM,
       seatOk, openOk, bindOk, rpmOk,
       chartData,
-      chartMax: Math.min(chartMax, 12000),
+      chartMax: Math.min(chartMax, 15000),
     };
   }, [mode, springSeatPressure, springRateInput, springInstalledHeight, springCoilBindHeight,
       maxValveLift, maxDuration, effectiveMass, camSpec, targetRPMv, forwardResults]);
@@ -577,29 +699,20 @@ export default function ValvetrainBuilderCalculator() {
 
     if (seat <= 0 || open <= 0) return null;
 
-    // Spring rate from seat/open and an assumed lift
-    // We need to determine what lift range these springs support
     const safetyMargin = 0.060;
     const maxLiftFromBind = ih > 0 && cbh > 0 ? ih - cbh - safetyMargin : 999;
 
-    // For each potential lift, what's the spring rate?
-    // We'll check lifts from 0.350 to 0.700 in 0.025 steps
     const liftEnvelope: { lift: number; rate: number; maxRPM: number; camTypes: string[] }[] = [];
 
-    for (let lift = 0.350; lift <= 0.700; lift += 0.025) {
+    for (let lift = 0.200; lift <= 0.700; lift += 0.025) {
       if (lift > maxLiftFromBind) break;
 
-      // At this lift, what's the actual rate needed?
       const rate = (open - seat) / lift;
-
-      // What RPM can this spring support at this lift?
-      // Test with common durations (210-260 at 0.050)
-      const testDuration = 220; // middle ground
+      const testDuration = 220;
       const floatRPM = estimateValveFloatRPM(
-        open, effectiveMass, lift, testDuration, 0.5
+        open, effectiveMass, lift, testDuration, camSpec.typicalAggressiveness
       );
 
-      // Which cam types match this pressure range?
       const matchingTypes: string[] = [];
       for (const [, spec] of Object.entries(CAM_TYPES)) {
         if (seat >= spec.seatMin * 0.85 && seat <= spec.seatMax * 1.15 &&
@@ -616,10 +729,8 @@ export default function ValvetrainBuilderCalculator() {
       });
     }
 
-    // Maximum safe lift from coil bind
     const maxSafeLift = Math.min(maxLiftFromBind, 0.700);
 
-    // Matching cam types based on pressure
     const matchingCamTypes: string[] = [];
     for (const [, spec] of Object.entries(CAM_TYPES)) {
       if (seat >= spec.seatMin * 0.85 && seat <= spec.seatMax * 1.15 &&
@@ -628,8 +739,7 @@ export default function ValvetrainBuilderCalculator() {
       }
     }
 
-    // Warning: over-sprung for flat tappet
-    const flatTappetWarn = seat > 130;
+    const flatTappetWarn = seat > 130 && arch === "pushrod";
 
     return {
       maxSafeLift: parseFloat(maxSafeLift.toFixed(3)),
@@ -639,33 +749,95 @@ export default function ValvetrainBuilderCalculator() {
       flatTappetWarn,
       springRate: maxSafeLift > 0 ? Math.round((open - seat) / maxSafeLift) : 0,
     };
-  }, [mode, revSeatPressure, revOpenPressure, revInstalledHeight, revCoilBindHeight, effectiveMass]);
+  }, [mode, revSeatPressure, revOpenPressure, revInstalledHeight, revCoilBindHeight, effectiveMass, camSpec, arch]);
+
+  /* ══════════════════════════════════════════════════════════════
+     WHAT-IF EXPLORER
+     ══════════════════════════════════════════════════════════════ */
+
+  // Sync sliders from main inputs whenever they change
+  const syncSliders = useCallback(() => {
+    setSliderRPM(targetRPMv);
+    setSliderValveWeight(Math.round(valveWtInt));
+    setSliderRockerRatio(rockerRatio);
+    if (forwardResults) {
+      setSliderSpringOpen(forwardResults.requiredOpenPressure);
+    }
+  }, [targetRPMv, valveWtInt, rockerRatio, forwardResults]);
+
+  // What-If computed results
+  const whatIfResults = useMemo(() => {
+    if (mode !== "cam-to-spring" || maxValveLift <= 0 || maxDuration <= 0) return null;
+
+    // Recalculate effective mass with slider valve weight and rocker ratio
+    const wiEffMass = effectiveValvetrainMass(
+      arch, sliderValveWeight, retainerWt, lockWt, springMass,
+      rockerWeight, sliderRockerRatio,
+      pushrodWt, lifterWt,
+      bucketWt, shimWt,
+      followerWt, hlaWt,
+    );
+
+    // Recalculate lift with slider rocker ratio
+    const wiLift = liftInputMode === "lobe"
+      ? netValveLift(lobeLiftIntV, sliderRockerRatio, lashValInt)
+      : lobeLiftIntV - lashValInt;
+    const wiLiftExh = liftInputMode === "lobe"
+      ? netValveLift(lobeLiftExhV, sliderRockerRatio, lashValExh)
+      : lobeLiftExhV - lashValExh;
+    const wiMaxLift = Math.max(wiLift, wiLiftExh);
+
+    if (wiMaxLift <= 0) return null;
+
+    const reqOpen = requiredOpenPressure(
+      wiEffMass, sliderRPM, wiMaxLift, maxDuration, camSpec.typicalAggressiveness
+    );
+    const minOpen = Math.max(reqOpen, camSpec.openMin);
+
+    const floatRPM = estimateValveFloatRPM(
+      sliderSpringOpen, wiEffMass, wiMaxLift, maxDuration, camSpec.typicalAggressiveness
+    );
+
+    const rpmMargin = sliderRPM > 0 ? ((floatRPM / sliderRPM) - 1) * 100 : 0;
+
+    return {
+      effectiveMass: Math.round(wiEffMass),
+      requiredOpenPressure: Math.round(minOpen),
+      valveLift: wiMaxLift,
+      floatRPM,
+      rpmMargin: Math.round(rpmMargin),
+      rpmSafe: rpmMargin >= 10,
+    };
+  }, [mode, arch, sliderRPM, sliderValveWeight, sliderRockerRatio, sliderSpringOpen,
+      maxValveLift, maxDuration, camSpec, liftInputMode, lobeLiftIntV, lobeLiftExhV,
+      lashValInt, lashValExh, retainerWt, lockWt, springMass, rockerWeight,
+      pushrodWt, lifterWt, bucketWt, shimWt, followerWt, hlaWt]);
 
   /* ── Warnings ───────────────────────────────────────────────── */
   const warnings: { text: string; level: "red" | "yellow" }[] = [];
 
   if (mode === "cam-to-spring" && forwardResults) {
-    if (camType === "hyd-flat" && forwardResults.requiredOpenPressure > 280) {
+    if ((camType === "hyd-flat" || camType === "solid-flat") && forwardResults.requiredOpenPressure > 280) {
       warnings.push({
-        text: "High open pressure for a hydraulic flat tappet cam. Spring pressures above ~280 lbs open will accelerate cam lobe wear. Consider switching to a roller cam or reducing RPM target.",
+        text: "High open pressure for a flat tappet cam. Spring pressures above ~280 lbs open will accelerate cam lobe wear. Consider switching to a roller cam or reducing RPM target.",
         level: "red",
       });
     }
     if (camType === "hyd-flat" && forwardResults.recommendedSeatMax > CAM_TYPES["hyd-flat"].maxSeatWarn) {
       warnings.push({
-        text: `Seat pressure above ${CAM_TYPES["hyd-flat"].maxSeatWarn} lbs on a flat tappet cam risks premature lobe wear. Use proper break-in oil (high ZDDP) and verify lifter preload.`,
+        text: `Seat pressure above ${CAM_TYPES["hyd-flat"].maxSeatWarn} lbs on a hydraulic flat tappet cam risks premature lobe wear. Use proper break-in oil (high ZDDP) and verify lifter preload.`,
         level: "yellow",
       });
     }
-    if (maxValveLift > 0.600 && springType === "single") {
+    if (maxValveLift > 0.600 && (springType === "single" || springType === "single-small")) {
       warnings.push({
         text: "Valve lift above 0.600\" typically requires dual springs for adequate control. Single springs may not have enough travel or rate at this lift.",
         level: "yellow",
       });
     }
-    if (targetRPMv > 7000 && (springType === "single" || springType === "single-beehive")) {
+    if (targetRPMv > 7000 && (springType === "single" || springType === "single-small" || springType === "single-beehive")) {
       warnings.push({
-        text: "RPM targets above 7000 generally require dual or triple springs for adequate valve control. Single/beehive springs may reach their rate limit.",
+        text: "RPM targets above 7000 generally require dual or triple springs for adequate valve control.",
         level: "yellow",
       });
     }
@@ -711,22 +883,39 @@ export default function ValvetrainBuilderCalculator() {
     }
   }
 
-  /* ── Apply engine preset ────────────────────────────────────── */
-  function applyPreset(key: string) {
-    setPlatform(key);
-    const p = ENGINE_PRESETS[key];
-    if (!p) return;
-    setRockerPreset(p.stockRockerRatio.toFixed(3));
-    setCustomRatio(p.stockRockerRatio.toFixed(3));
-    setRockerWeightOverride("");
-    setValveWeightIntOverride("");
-    setValveWeightExhOverride("");
-    setRetainerWeightOverride("");
-    setSpringType(p.defaultSpringType);
-    // Reset lifter type based on cam
-    if (camType === "hyd-flat" || camType === "hyd-roller") {
-      setLifterType("hydraulic");
+  /* ── Mass breakdown helper ─────────────────────────────────── */
+  function massBreakdownRows(): { label: string; value: number; detail?: string }[] {
+    const rows: { label: string; value: number; detail?: string }[] = [
+      { label: `Intake Valve (${VALVE_MATERIAL_FACTOR[valveMaterial].label})`, value: Math.round(valveWtInt) },
+      { label: `Retainer (${RETAINER_MATERIAL_FACTOR[retainerMaterial].label})`, value: Math.round(retainerWt) },
+      { label: "Locks (pair)", value: lockWt },
+      { label: "Spring mass (\u00D7\u2153)", value: Math.round(springMass * (1 / 3)), detail: `of ${springMass}g` },
+    ];
+
+    const R = rockerRatio;
+    const R2 = R * R;
+
+    switch (arch) {
+      case "pushrod":
+        rows.push({ label: `Rocker (\u00D7\u2153 \u00D7 ${R.toFixed(2)}\u00B2)`, value: Math.round(rockerWeight * (1 / 3) * R2), detail: `of ${rockerWeight}g` });
+        rows.push({ label: `Lifter (reflected \u00F7 ${R.toFixed(2)}\u00B2)`, value: Math.round(lifterWt / R2), detail: `of ${lifterWt}g` });
+        rows.push({ label: `Pushrod (\u00D7\u2153, reflected \u00F7 ${R.toFixed(2)}\u00B2)`, value: Math.round(pushrodWt * (1 / 3) / R2), detail: `of ${pushrodWt}g` });
+        break;
+      case "sohc-rocker":
+        rows.push({ label: `Rocker (\u00D7\u2153 \u00D7 ${R.toFixed(2)}\u00B2)`, value: Math.round(rockerWeight * (1 / 3) * R2), detail: `of ${rockerWeight}g` });
+        rows.push({ label: `HLA moving (\u00F7 ${R.toFixed(2)}\u00B2)`, value: Math.round(hlaWt * 0.5 / R2), detail: `of ${hlaWt}g total` });
+        break;
+      case "dohc-direct":
+        rows.push({ label: "Bucket tappet (1:1)", value: Math.round(bucketWt) });
+        rows.push({ label: "Shim (1:1)", value: Math.round(shimWt) });
+        break;
+      case "dohc-finger":
+        rows.push({ label: `Finger follower (\u00D7\u2153 \u00D7 ${R.toFixed(2)}\u00B2)`, value: Math.round(followerWt * (1 / 3) * R2), detail: `of ${followerWt}g` });
+        rows.push({ label: `HLA moving (\u00F7 ${R.toFixed(2)}\u00B2)`, value: Math.round(hlaWt * 0.5 / R2), detail: `of ${hlaWt}g total` });
+        break;
     }
+
+    return rows;
   }
 
   return (
@@ -735,14 +924,14 @@ export default function ValvetrainBuilderCalculator() {
         <div>
           <SEOHead
             title="Valvetrain RPM Builder Calculator"
-            description="Dynamic engine valvetrain calculator. Enter your cam, rockers, and target RPM to get valve spring requirements — or enter your springs to find what cams they support. Valve float estimation, coil bind check, pressure validation, and RPM safety graph."
+            description="Dynamic engine valvetrain calculator for pushrod, SOHC, and DOHC engines. Enter your cam, rockers, and target RPM to get valve spring requirements — or enter your springs to find what cams they support. Valve float estimation, coil bind check, pressure validation, and RPM safety graph."
             canonical="/calculators/valvetrain-builder"
-            keywords="valvetrain calculator, valve spring selector, cam spring match, valve float calculator, engine RPM calculator, rocker ratio calculator, valve spring pressure, coil bind, cam selection, engine build calculator"
+            keywords="valvetrain calculator, valve spring selector, cam spring match, valve float calculator, engine RPM calculator, rocker ratio calculator, valve spring pressure, coil bind, cam selection, engine build calculator, DOHC valvetrain, OHC spring calculator"
           />
           <h1 className="text-3xl font-bold mb-1">Valvetrain RPM Builder</h1>
           <p className="text-sm text-muted-foreground">
-            Match your cam, rockers, springs, and target RPM as a complete system.
-            Change any parameter and see how it ripples through the entire valvetrain.
+            Match your cam, springs, and target RPM as a complete system.
+            Works for pushrod, SOHC, and DOHC engines — change any parameter and see how it ripples through the entire valvetrain.
           </p>
         </div>
 
@@ -772,54 +961,48 @@ export default function ValvetrainBuilderCalculator() {
 
         {mode === "cam-to-spring" && (
           <div className="p-3 rounded-lg border bg-blue-50 border-blue-200 text-sm text-blue-800">
-            <strong>How it works:</strong> Enter your cam specs, rocker ratio, and target RPM. The calculator determines what spring pressures, rates, and travel your valvetrain needs — then validates a specific spring if you have one in mind.
+            <strong>How it works:</strong> Enter your cam specs, component weights, and target RPM. The calculator determines what spring pressures, rates, and travel your valvetrain needs — then validates a specific spring if you have one in mind.
           </div>
         )}
 
         {mode === "spring-to-cam" && (
           <div className="p-3 rounded-lg border bg-blue-50 border-blue-200 text-sm text-blue-800">
-            <strong>Reverse mode:</strong> Enter the springs you already have. The calculator shows what range of cam lift, duration, and RPM your springs can safely handle — and which cam types are compatible with your seat and open pressures.
+            <strong>Reverse mode:</strong> Enter the springs you already have. The calculator shows what range of cam lift, duration, and RPM your springs can safely handle — and which cam types are compatible.
           </div>
         )}
 
         {/* ══════════════════════════════════════════════════════
-            SECTION 1: Engine Platform
+            SECTION 1: Valvetrain Architecture
             ══════════════════════════════════════════════════════ */}
-        <Section title="1 — Engine Platform">
-          <Field label="Engine Family" hint="Auto-fills valve weights, retainer weights, rocker ratio, and stem diameter. You can override any value.">
-            <Select value={platform} onValueChange={applyPreset}>
+        <Section title="1 — Valvetrain Architecture">
+          <Field label="Valvetrain Type" hint="Determines which components are in the system and how mass is reflected to the valve.">
+            <Select value={arch} onValueChange={v => applyArch(v as ValvetrainArch)}>
               <SelectTrigger><SelectValue /></SelectTrigger>
               <SelectContent>
-                {Object.entries(ENGINE_PRESETS).map(([k, v]) => (
-                  <SelectItem key={k} value={k}>{v.label}</SelectItem>
+                {(Object.entries(VALVETRAIN_ARCHS) as [ValvetrainArch, ValvetrainArchSpec][]).map(([k, v]) => (
+                  <SelectItem key={k} value={k}>
+                    {v.label}
+                  </SelectItem>
                 ))}
               </SelectContent>
             </Select>
           </Field>
+          <div className="text-xs text-muted-foreground p-2 bg-gray-50 rounded-lg">
+            {archSpec.description}
+          </div>
+        </Section>
 
-          {platform !== "custom" && (
-            <div className="grid grid-cols-2 sm:grid-cols-4 gap-3 text-sm">
-              <div className="p-2 rounded border bg-gray-50 text-center">
-                <div className="text-xs text-gray-500">Intake Valve</div>
-                <div className="font-bold">{Math.round(preset.valveWeightInt * valveFactorInt)}g</div>
-              </div>
-              <div className="p-2 rounded border bg-gray-50 text-center">
-                <div className="text-xs text-gray-500">Exhaust Valve</div>
-                <div className="font-bold">{Math.round(preset.valveWeightExh * valveFactorExh)}g</div>
-              </div>
-              <div className="p-2 rounded border bg-gray-50 text-center">
-                <div className="text-xs text-gray-500">Retainer</div>
-                <div className="font-bold">{Math.round(preset.retainerWeight * retainerFactor)}g</div>
-              </div>
-              <div className="p-2 rounded border bg-gray-50 text-center">
-                <div className="text-xs text-gray-500">Stem</div>
-                <div className="font-bold">{preset.stemDiameter}</div>
-              </div>
-            </div>
-          )}
+        {/* ══════════════════════════════════════════════════════
+            SECTION 2: Component Weights
+            ══════════════════════════════════════════════════════ */}
+        <Section title="2 — Component Weights">
+          <p className="text-sm text-muted-foreground">
+            Weigh your actual parts if possible. Default values are typical starting points for this valvetrain type — your parts will vary.
+          </p>
 
+          {/* Valve & retainer materials */}
           <div className="grid grid-cols-1 sm:grid-cols-2 gap-5">
-            <Field label="Valve Material" hint="Affects valve weight. Titanium saves ~43% weight.">
+            <Field label="Valve Material" hint="Affects default valve weight. Titanium saves ~43%.">
               <Select value={valveMaterial} onValueChange={v => setValveMaterial(v as ValveMaterial)}>
                 <SelectTrigger><SelectValue /></SelectTrigger>
                 <SelectContent>
@@ -829,7 +1012,7 @@ export default function ValvetrainBuilderCalculator() {
                 </SelectContent>
               </Select>
             </Field>
-            <Field label="Retainer Material" hint="Affects retainer weight. Titanium saves ~55% weight.">
+            <Field label="Retainer Material" hint="Affects default retainer weight. Titanium saves ~55%.">
               <Select value={retainerMaterial} onValueChange={v => setRetainerMaterial(v as RetainerMaterial)}>
                 <SelectTrigger><SelectValue /></SelectTrigger>
                 <SelectContent>
@@ -841,7 +1024,24 @@ export default function ValvetrainBuilderCalculator() {
             </Field>
           </div>
 
-          <Field label="Spring Type" hint="Affects spring mass and typical pressure range.">
+          {/* Core weights — always shown */}
+          <div className="grid grid-cols-2 sm:grid-cols-4 gap-4">
+            <Field label="Intake Valve (g)" hint={`Default: ${Math.round(defaults.intakeValve * valveFactorInt)}g`}>
+              <Input type="number" step="1" placeholder={String(Math.round(defaults.intakeValve * valveFactorInt))} value={valveWeightIntInput} onChange={e => setValveWeightIntInput(e.target.value)} />
+            </Field>
+            <Field label="Exhaust Valve (g)" hint={`Default: ${Math.round(defaults.exhaustValve * valveFactorExh)}g`}>
+              <Input type="number" step="1" placeholder={String(Math.round(defaults.exhaustValve * valveFactorExh))} value={valveWeightExhInput} onChange={e => setValveWeightExhInput(e.target.value)} />
+            </Field>
+            <Field label="Retainer (g)" hint={`Default: ${Math.round(defaults.retainer * retainerFactor)}g`}>
+              <Input type="number" step="1" placeholder={String(Math.round(defaults.retainer * retainerFactor))} value={retainerWeightInput} onChange={e => setRetainerWeightInput(e.target.value)} />
+            </Field>
+            <Field label="Locks/Keepers (g)" hint={`Default: ${defaults.lockWeight}g (pair)`}>
+              <Input type="number" step="1" placeholder={String(defaults.lockWeight)} value={lockWeightInput} onChange={e => setLockWeightInput(e.target.value)} />
+            </Field>
+          </div>
+
+          {/* Spring type */}
+          <Field label="Spring Type" hint="Affects spring mass in the system.">
             <Select value={springType} onValueChange={v => setSpringType(v as SpringType)}>
               <SelectTrigger><SelectValue /></SelectTrigger>
               <SelectContent>
@@ -852,101 +1052,125 @@ export default function ValvetrainBuilderCalculator() {
             </Select>
           </Field>
 
-          {/* Weight overrides */}
-          <button
-            type="button"
-            className="text-xs text-primary hover:underline font-medium"
-            onClick={() => setShowWeightOverrides(o => !o)}
-          >
-            {showWeightOverrides ? "Hide weight overrides \u2191" : "Override component weights (if you've weighed your parts) \u2193"}
-          </button>
+          {/* Architecture-specific weights */}
+          {arch === "pushrod" && (
+            <div className="grid grid-cols-1 sm:grid-cols-3 gap-4 p-4 bg-amber-50/50 rounded-lg border border-amber-200">
+              <p className="col-span-full text-xs font-semibold text-[#E85D04] uppercase tracking-wider">Pushrod-Specific Components</p>
+              <Field label="Pushrod Weight (g)" hint={`Default: ${defaults.pushrodWeight}g. 5/16\u2033 chromoly ~50g, 3/8\u2033 ~65g`}>
+                <Input type="number" step="1" placeholder={String(defaults.pushrodWeight)} value={pushrodWeightInput} onChange={e => setPushrodWeightInput(e.target.value)} />
+              </Field>
+              <Field label="Lifter/Tappet Weight (g)" hint={`Default: ${defaults.lifterWeight}g. Hyd flat ~28g, hyd roller ~110g, solid roller ~90g`}>
+                <Input type="number" step="1" placeholder={String(defaults.lifterWeight)} value={lifterWeightInput} onChange={e => setLifterWeightInput(e.target.value)} />
+              </Field>
+              <Field label="Rocker Arm Weight (g)" hint={`Default: ${defaults.rockerWeight}g. Stamped ~95g, roller ~130g, shaft ~200g+`}>
+                <Input type="number" step="1" placeholder={String(defaults.rockerWeight)} value={rockerWeightInput} onChange={e => setRockerWeightInput(e.target.value)} />
+              </Field>
+            </div>
+          )}
 
-          {showWeightOverrides && (
-            <div className="grid grid-cols-1 sm:grid-cols-3 gap-4 p-4 bg-gray-50 rounded-lg border">
-              <Field label="Intake Valve (grams)" hint={`Default: ${Math.round(preset.valveWeightInt * valveFactorInt)}g`}>
-                <Input type="number" step="1" placeholder={String(Math.round(preset.valveWeightInt * valveFactorInt))} value={valveWeightIntOverride} onChange={e => setValveWeightIntOverride(e.target.value)} />
+          {arch === "sohc-rocker" && (
+            <div className="grid grid-cols-1 sm:grid-cols-2 gap-4 p-4 bg-amber-50/50 rounded-lg border border-amber-200">
+              <p className="col-span-full text-xs font-semibold text-[#E85D04] uppercase tracking-wider">SOHC-Specific Components</p>
+              <Field label="Rocker Arm Weight (g)" hint={`Default: ${defaults.rockerWeight}g`}>
+                <Input type="number" step="1" placeholder={String(defaults.rockerWeight)} value={rockerWeightInput} onChange={e => setRockerWeightInput(e.target.value)} />
               </Field>
-              <Field label="Exhaust Valve (grams)" hint={`Default: ${Math.round(preset.valveWeightExh * valveFactorExh)}g`}>
-                <Input type="number" step="1" placeholder={String(Math.round(preset.valveWeightExh * valveFactorExh))} value={valveWeightExhOverride} onChange={e => setValveWeightExhOverride(e.target.value)} />
+              <Field label="HLA Weight (g)" hint={`Default: ${defaults.hlaWeight}g total. ~50% is moving mass.`}>
+                <Input type="number" step="1" placeholder={String(defaults.hlaWeight)} value={hlaWeightInput} onChange={e => setHlaWeightInput(e.target.value)} />
               </Field>
-              <Field label="Retainer (grams)" hint={`Default: ${Math.round(preset.retainerWeight * retainerFactor)}g`}>
-                <Input type="number" step="1" placeholder={String(Math.round(preset.retainerWeight * retainerFactor))} value={retainerWeightOverride} onChange={e => setRetainerWeightOverride(e.target.value)} />
+            </div>
+          )}
+
+          {arch === "dohc-direct" && (
+            <div className="grid grid-cols-1 sm:grid-cols-2 gap-4 p-4 bg-amber-50/50 rounded-lg border border-amber-200">
+              <p className="col-span-full text-xs font-semibold text-[#E85D04] uppercase tracking-wider">Bucket Tappet Components</p>
+              <Field label="Bucket Weight (g)" hint={`Default: ${defaults.bucketWeight}g. Shimless ~28g, with shim pocket ~35g`}>
+                <Input type="number" step="1" placeholder={String(defaults.bucketWeight)} value={bucketWeightInput} onChange={e => setBucketWeightInput(e.target.value)} />
+              </Field>
+              <Field label="Shim Weight (g)" hint={`Default: ${defaults.shimWeight}g. 0 if shimless bucket`}>
+                <Input type="number" step="1" placeholder={String(defaults.shimWeight)} value={shimWeightInput} onChange={e => setShimWeightInput(e.target.value)} />
+              </Field>
+            </div>
+          )}
+
+          {arch === "dohc-finger" && (
+            <div className="grid grid-cols-1 sm:grid-cols-2 gap-4 p-4 bg-amber-50/50 rounded-lg border border-amber-200">
+              <p className="col-span-full text-xs font-semibold text-[#E85D04] uppercase tracking-wider">Finger Follower Components</p>
+              <Field label="Finger Follower Weight (g)" hint={`Default: ${defaults.followerWeight}g. Coyote ~51g, Voodoo ~44g, compact 4-cyl ~35g`}>
+                <Input type="number" step="1" placeholder={String(defaults.followerWeight)} value={followerWeightInput} onChange={e => setFollowerWeightInput(e.target.value)} />
+              </Field>
+              <Field label="HLA Weight (g)" hint={`Default: ${defaults.hlaWeight}g total. ~50% is moving mass.`}>
+                <Input type="number" step="1" placeholder={String(defaults.hlaWeight)} value={hlaWeightInput} onChange={e => setHlaWeightInput(e.target.value)} />
               </Field>
             </div>
           )}
         </Section>
 
         {/* ══════════════════════════════════════════════════════
-            SECTION 2: Rocker Arms
+            SECTION 3: Rocker/Ratio (if applicable)
             ══════════════════════════════════════════════════════ */}
-        <Section title="2 — Rocker Arms">
-          <div className="grid grid-cols-1 sm:grid-cols-2 gap-5">
-            <Field label="Rocker Ratio" hint="Higher ratio = more lift = more spring demand. Each 0.1 increase raises effective mass at the valve.">
-              <Select value={rockerPreset} onValueChange={v => { setRockerPreset(v); if (v !== "custom") setPlatform("custom"); }}>
-                <SelectTrigger><SelectValue /></SelectTrigger>
-                <SelectContent>
-                  {ROCKER_PRESETS.map(p => (
-                    <SelectItem key={p.value} value={p.value}>{p.label}</SelectItem>
-                  ))}
-                </SelectContent>
-              </Select>
-            </Field>
-            {rockerPreset === "custom" && (
-              <Field label="Custom Ratio">
-                <Input type="number" step="0.01" value={customRatio} onChange={e => setCustomRatio(e.target.value)} />
+        {(archSpec.hasRocker || arch === "dohc-finger") && (
+          <Section title={`3 — ${arch === "dohc-finger" ? "Finger Follower Ratio" : "Rocker Arms"}`}>
+            <div className="grid grid-cols-1 sm:grid-cols-2 gap-5">
+              <Field
+                label={arch === "dohc-finger" ? "Follower Ratio" : "Rocker Ratio"}
+                hint={arch === "dohc-finger"
+                  ? "Most finger followers are close to 1.0:1 — check your engine's spec. Higher ratio = more lift = more spring demand."
+                  : "Higher ratio = more lift = more spring demand. Each 0.1 increase raises effective mass at the valve."
+                }
+              >
+                <Select value={rockerPreset} onValueChange={v => setRockerPreset(v)}>
+                  <SelectTrigger><SelectValue /></SelectTrigger>
+                  <SelectContent>
+                    {ROCKER_PRESETS.map(p => (
+                      <SelectItem key={p.value} value={p.value}>{p.label}</SelectItem>
+                    ))}
+                  </SelectContent>
+                </Select>
               </Field>
-            )}
-            <Field label="Rocker Arm Weight (grams, optional)" hint={`Default: ${preset.stockRockerWeight}g (stock). Full roller = ~130-180g, shaft mount = ~200-280g`}>
-              <Input type="number" step="1" placeholder={String(preset.stockRockerWeight)} value={rockerWeightOverride} onChange={e => setRockerWeightOverride(e.target.value)} />
-            </Field>
-          </div>
-
-          {/* Rocker ratio impact display */}
-          {rockerRatio !== preset.stockRockerRatio && platform !== "custom" && (
-            <div className="p-3 rounded-lg border bg-yellow-50 border-yellow-200 text-sm text-yellow-800">
-              Changing rocker ratio from {preset.stockRockerRatio}:1 to {rockerRatio}:1 increases valve lift
-              by {((rockerRatio / preset.stockRockerRatio - 1) * 100).toFixed(1)}% and raises the effective
-              valvetrain mass at the valve by {((rockerRatio * rockerRatio / (preset.stockRockerRatio * preset.stockRockerRatio) - 1) * 100).toFixed(1)}% (ratio{"\u00B2"} effect on rocker contribution).
+              {rockerPreset === "custom" && (
+                <Field label="Custom Ratio">
+                  <Input type="number" step="0.01" value={customRatio} onChange={e => setCustomRatio(e.target.value)} />
+                </Field>
+              )}
             </div>
-          )}
-        </Section>
+          </Section>
+        )}
 
         {/* ══════════════════════════════════════════════════════
-            SECTION 3: Camshaft (forward mode) or Springs (reverse)
+            SECTION 4: Cam Specs (forward) or Springs (reverse)
             ══════════════════════════════════════════════════════ */}
         {mode === "cam-to-spring" ? (
           <>
-            <Section title="3 — Camshaft Specs">
+            <Section title={`${archSpec.hasRocker || arch === "dohc-finger" ? "4" : "3"} — Camshaft Specs`}>
               <div className="grid grid-cols-1 sm:grid-cols-2 gap-5">
-                <Field label="Cam Type" hint="Determines safe pressure ranges and lobe wear limits.">
-                  <Select value={camType} onValueChange={v => {
-                    setCamType(v as CamType);
-                    setLifterType(v.startsWith("hyd") ? "hydraulic" : "solid");
-                  }}>
+                <Field label="Cam Type" hint="Determines safe pressure ranges and aggressiveness.">
+                  <Select value={camType} onValueChange={v => setCamType(v as CamType)}>
                     <SelectTrigger><SelectValue /></SelectTrigger>
                     <SelectContent>
-                      {(Object.entries(CAM_TYPES) as [CamType, CamTypeSpec][]).map(([k, v]) => (
+                      {availableCamTypes.map(([k, v]) => (
                         <SelectItem key={k} value={k}>{v.label}</SelectItem>
                       ))}
                     </SelectContent>
                   </Select>
                 </Field>
-                <Field label="Lift values are listed as:">
-                  <Select value={liftInputMode} onValueChange={v => setLiftInputMode(v as "lobe" | "valve")}>
-                    <SelectTrigger><SelectValue /></SelectTrigger>
-                    <SelectContent>
-                      <SelectItem value="lobe">Cam lobe lift (will multiply by rocker ratio)</SelectItem>
-                      <SelectItem value="valve">Valve lift (already includes rocker ratio)</SelectItem>
-                    </SelectContent>
-                  </Select>
-                </Field>
+                {(archSpec.hasRocker || arch === "dohc-finger") && (
+                  <Field label="Lift values are listed as:">
+                    <Select value={liftInputMode} onValueChange={v => setLiftInputMode(v as "lobe" | "valve")}>
+                      <SelectTrigger><SelectValue /></SelectTrigger>
+                      <SelectContent>
+                        <SelectItem value="lobe">Cam lobe lift (will multiply by ratio)</SelectItem>
+                        <SelectItem value="valve">Valve lift (already includes ratio)</SelectItem>
+                      </SelectContent>
+                    </Select>
+                  </Field>
+                )}
               </div>
 
               <div className="grid grid-cols-1 sm:grid-cols-2 gap-5">
-                <Field label={liftInputMode === "lobe" ? "Intake Lobe Lift (inches)" : "Intake Valve Lift (inches)"} hint="From your cam card">
+                <Field label={liftInputMode === "lobe" && (archSpec.hasRocker || arch === "dohc-finger") ? "Intake Lobe Lift (inches)" : "Intake Valve Lift (inches)"} hint="From your cam card">
                   <Input type="number" step="0.001" value={lobeLiftInt} onChange={e => setLobeLiftInt(e.target.value)} />
                 </Field>
-                <Field label={liftInputMode === "lobe" ? "Exhaust Lobe Lift (inches)" : "Exhaust Valve Lift (inches)"} hint="From your cam card">
+                <Field label={liftInputMode === "lobe" && (archSpec.hasRocker || arch === "dohc-finger") ? "Exhaust Lobe Lift (inches)" : "Exhaust Valve Lift (inches)"} hint="From your cam card">
                   <Input type="number" step="0.001" value={lobeLiftExh} onChange={e => setLobeLiftExh(e.target.value)} />
                 </Field>
               </div>
@@ -962,10 +1186,10 @@ export default function ValvetrainBuilderCalculator() {
 
               {lifterType === "solid" && (
                 <div className="grid grid-cols-1 sm:grid-cols-2 gap-5">
-                  <Field label="Intake Valve Lash (inches)" hint="Hot lash from cam card. Typical: 0.012\u20130.024 in">
+                  <Field label="Intake Valve Lash (inches)" hint="Hot lash from cam card. Typical: 0.012\u20130.024\u2033">
                     <Input type="number" step="0.001" value={lashInt} onChange={e => setLashInt(e.target.value)} />
                   </Field>
-                  <Field label="Exhaust Valve Lash (inches)" hint="Typical: 0.016\u20130.028 in">
+                  <Field label="Exhaust Valve Lash (inches)" hint="Typical: 0.016\u20130.028\u2033">
                     <Input type="number" step="0.001" value={lashExh} onChange={e => setLashExh(e.target.value)} />
                   </Field>
                 </div>
@@ -977,7 +1201,7 @@ export default function ValvetrainBuilderCalculator() {
                   <div className="p-3 rounded-lg border bg-gray-50 text-center">
                     <div className="text-xs text-gray-500">Net Intake Valve Lift</div>
                     <div className="text-xl font-bold">{valveLiftInt.toFixed(3)}"</div>
-                    {liftInputMode === "lobe" && (
+                    {liftInputMode === "lobe" && (archSpec.hasRocker || arch === "dohc-finger") && (
                       <div className="text-xs text-muted-foreground font-mono mt-0.5">
                         {lobeLiftIntV.toFixed(3)} {"\u00D7"}{rockerRatio.toFixed(3)}{lashValInt > 0 ? ` - ${lashValInt.toFixed(3)}` : ""} = {valveLiftInt.toFixed(3)}
                       </div>
@@ -986,7 +1210,7 @@ export default function ValvetrainBuilderCalculator() {
                   <div className="p-3 rounded-lg border bg-gray-50 text-center">
                     <div className="text-xs text-gray-500">Net Exhaust Valve Lift</div>
                     <div className="text-xl font-bold">{valveLiftExh.toFixed(3)}"</div>
-                    {liftInputMode === "lobe" && (
+                    {liftInputMode === "lobe" && (archSpec.hasRocker || arch === "dohc-finger") && (
                       <div className="text-xs text-muted-foreground font-mono mt-0.5">
                         {lobeLiftExhV.toFixed(3)} {"\u00D7"}{rockerRatio.toFixed(3)}{lashValExh > 0 ? ` - ${lashValExh.toFixed(3)}` : ""} = {valveLiftExh.toFixed(3)}
                       </div>
@@ -997,7 +1221,7 @@ export default function ValvetrainBuilderCalculator() {
             </Section>
 
             {/* ── Target RPM ──────────────────────────────────── */}
-            <Section title="4 — Target RPM">
+            <Section title={`${archSpec.hasRocker || arch === "dohc-finger" ? "5" : "4"} — Target RPM`}>
               <Field label="Maximum Intended RPM" hint="The highest RPM you plan to spin the engine. The valvetrain must maintain control at this speed with a 10% safety margin.">
                 <Input type="number" step="100" value={targetRPM} onChange={e => setTargetRPM(e.target.value)} />
               </Field>
@@ -1005,6 +1229,11 @@ export default function ValvetrainBuilderCalculator() {
                 <div className="p-3 rounded-lg border bg-yellow-50 border-yellow-200 text-sm text-yellow-800">
                   RPM targets above 7500 require careful attention to every gram of valvetrain weight.
                   Titanium retainers, lightweight valves, and high-quality springs become critical.
+                </div>
+              )}
+              {targetRPMv > 9000 && arch === "pushrod" && (
+                <div className="p-3 rounded-lg border bg-red-50 border-red-300 text-sm text-red-700">
+                  9000+ RPM on a pushrod engine is extremely demanding. Pushrod flex and lifter mass become major limiting factors. Consider lightweight pushrods, reduced lifter mass, and very high-rate springs.
                 </div>
               )}
             </Section>
@@ -1052,7 +1281,7 @@ export default function ValvetrainBuilderCalculator() {
                 </Card>
 
                 {/* ── Validate a specific spring ──────────────── */}
-                <Section title="5 — Validate a Specific Spring (optional)">
+                <Section title={`${archSpec.hasRocker || arch === "dohc-finger" ? "6" : "5"} — Validate a Specific Spring (optional)`}>
                   <p className="text-sm text-muted-foreground mb-4">
                     Have a specific spring in mind? Enter its specs to see if it meets your requirements.
                   </p>
@@ -1180,6 +1409,108 @@ export default function ValvetrainBuilderCalculator() {
                     </div>
                   )}
                 </Section>
+
+                {/* ══════════════════════════════════════════════
+                    WHAT-IF EXPLORER
+                    ══════════════════════════════════════════════ */}
+                <Section title="What-If Explorer" defaultOpen={false}>
+                  <p className="text-sm text-muted-foreground mb-2">
+                    Lock the parameters you want to keep fixed, then slide the others to see how changes ripple through the system in real time.
+                  </p>
+                  <button
+                    type="button"
+                    onClick={syncSliders}
+                    className="text-xs text-[#E85D04] hover:underline font-semibold mb-4 block"
+                  >
+                    Sync sliders from current inputs above
+                  </button>
+
+                  <div className="grid grid-cols-1 sm:grid-cols-2 gap-3">
+                    <LockableSlider
+                      label="Target RPM"
+                      value={sliderRPM}
+                      min={3000}
+                      max={arch === "pushrod" ? 10000 : 12000}
+                      step={100}
+                      unit="RPM"
+                      locked={lockRPM}
+                      onToggleLock={() => setLockRPM(l => !l)}
+                      onChange={setSliderRPM}
+                      formatValue={v => v.toLocaleString()}
+                    />
+                    <LockableSlider
+                      label="Intake Valve Weight"
+                      value={sliderValveWeight}
+                      min={20}
+                      max={200}
+                      step={1}
+                      unit="g"
+                      locked={lockValveWeight}
+                      onToggleLock={() => setLockValveWeight(l => !l)}
+                      onChange={setSliderValveWeight}
+                    />
+                    {(archSpec.hasRocker || arch === "dohc-finger") && (
+                      <LockableSlider
+                        label={arch === "dohc-finger" ? "Follower Ratio" : "Rocker Ratio"}
+                        value={sliderRockerRatio}
+                        min={arch === "dohc-finger" ? 0.9 : 1.0}
+                        max={arch === "dohc-finger" ? 1.2 : 2.0}
+                        step={0.01}
+                        unit=":1"
+                        locked={lockRockerRatio}
+                        onToggleLock={() => setLockRockerRatio(l => !l)}
+                        onChange={setSliderRockerRatio}
+                        formatValue={v => v.toFixed(2)}
+                      />
+                    )}
+                    <LockableSlider
+                      label="Spring Open Pressure"
+                      value={sliderSpringOpen}
+                      min={arch === "dohc-direct" ? 60 : arch === "dohc-finger" ? 80 : 150}
+                      max={arch === "dohc-direct" ? 400 : 1000}
+                      step={5}
+                      unit="lbs"
+                      locked={lockSpringPressure}
+                      onToggleLock={() => setLockSpringPressure(l => !l)}
+                      onChange={setSliderSpringOpen}
+                    />
+                  </div>
+
+                  {/* What-If results */}
+                  {whatIfResults && (
+                    <div className="mt-4 space-y-3">
+                      <div className="grid grid-cols-2 sm:grid-cols-4 gap-3">
+                        <div className="p-3 rounded-lg border bg-gray-50 text-center">
+                          <div className="text-xs text-gray-500">Eff. Mass</div>
+                          <div className="text-lg font-bold">{whatIfResults.effectiveMass}g</div>
+                        </div>
+                        <div className="p-3 rounded-lg border bg-gray-50 text-center">
+                          <div className="text-xs text-gray-500">Valve Lift</div>
+                          <div className="text-lg font-bold">{whatIfResults.valveLift.toFixed(3)}"</div>
+                        </div>
+                        <div className="p-3 rounded-lg border bg-gray-50 text-center">
+                          <div className="text-xs text-gray-500">Required Open</div>
+                          <div className="text-lg font-bold text-[#E85D04]">{whatIfResults.requiredOpenPressure} lbs</div>
+                        </div>
+                        <div className={`p-3 rounded-lg border text-center ${whatIfResults.rpmSafe ? "bg-green-50 border-green-300" : "bg-red-50 border-red-300"}`}>
+                          <div className="text-xs text-gray-500">Float RPM</div>
+                          <div className={`text-lg font-bold ${whatIfResults.rpmSafe ? "text-green-700" : "text-red-700"}`}>
+                            {whatIfResults.floatRPM.toLocaleString()}
+                          </div>
+                          <div className={`text-xs font-semibold ${whatIfResults.rpmSafe ? "text-green-600" : "text-red-600"}`}>
+                            {whatIfResults.rpmMargin >= 0 ? `+${whatIfResults.rpmMargin}%` : `${whatIfResults.rpmMargin}%`} margin
+                          </div>
+                        </div>
+                      </div>
+
+                      {!whatIfResults.rpmSafe && (
+                        <div className="p-3 rounded-lg border bg-red-50 border-red-300 text-sm text-red-700">
+                          At these settings, valve float occurs before your target RPM. Reduce RPM, lighten components, or increase spring pressure.
+                        </div>
+                      )}
+                    </div>
+                  )}
+                </Section>
               </>
             )}
           </>
@@ -1207,7 +1538,6 @@ export default function ValvetrainBuilderCalculator() {
 
             {reverseResults && (
               <>
-                {/* ── Overall status ───────────────────────────── */}
                 <Card className="bg-[#1a1a1a] text-white">
                   <CardHeader>
                     <CardTitle className="flex items-center gap-2">
@@ -1243,7 +1573,6 @@ export default function ValvetrainBuilderCalculator() {
                   <CardContent>
                     <p className="text-xs text-muted-foreground mb-3">
                       For each potential valve lift, this shows the effective spring rate and estimated maximum RPM your springs can support.
-                      Cells are color-coded: green = good margin, yellow = marginal, red = unsafe.
                     </p>
                     <div className="overflow-x-auto -mx-2">
                       <table className="w-full text-sm">
@@ -1266,7 +1595,7 @@ export default function ValvetrainBuilderCalculator() {
                                   {row.maxRPM.toLocaleString()}
                                 </td>
                                 <td className="px-3 py-1.5 text-xs text-gray-500">
-                                  {row.camTypes.length > 0 ? row.camTypes.join(", ") : "—"}
+                                  {row.camTypes.length > 0 ? row.camTypes.join(", ") : "\u2014"}
                                 </td>
                               </tr>
                             );
@@ -1277,21 +1606,23 @@ export default function ValvetrainBuilderCalculator() {
                   </CardContent>
                 </Card>
 
-                {/* ── Reverse mode: what cam lobe lift does that translate to? ── */}
-                <div className="p-4 rounded-lg border bg-gray-50 text-sm space-y-2">
-                  <p className="font-semibold text-gray-700">Converting to Cam Lobe Lift</p>
-                  <p className="text-muted-foreground">
-                    Your max safe valve lift of <strong>{reverseResults.maxSafeLift.toFixed(3)}"</strong> with
-                    a <strong>{rockerRatio.toFixed(2)}:1</strong> rocker ratio means your cam lobe lift
-                    should not exceed <strong>{(reverseResults.maxSafeLift / rockerRatio).toFixed(3)}"</strong>.
-                  </p>
-                  {lifterType === "solid" && (
+                {/* ── Reverse mode: lobe lift conversion ── */}
+                {(archSpec.hasRocker || arch === "dohc-finger") && rockerRatio !== 1.0 && (
+                  <div className="p-4 rounded-lg border bg-gray-50 text-sm space-y-2">
+                    <p className="font-semibold text-gray-700">Converting to Cam Lobe Lift</p>
                     <p className="text-muted-foreground">
-                      Adding lash back ({lashValInt.toFixed(3)}" intake), the gross lobe lift limit
-                      is <strong>{((reverseResults.maxSafeLift + lashValInt) / rockerRatio).toFixed(3)}"</strong>.
+                      Your max safe valve lift of <strong>{reverseResults.maxSafeLift.toFixed(3)}"</strong> with
+                      a <strong>{rockerRatio.toFixed(2)}:1</strong> ratio means your cam lobe lift
+                      should not exceed <strong>{(reverseResults.maxSafeLift / rockerRatio).toFixed(3)}"</strong>.
                     </p>
-                  )}
-                </div>
+                    {lifterType === "solid" && (
+                      <p className="text-muted-foreground">
+                        Adding lash back ({lashValInt.toFixed(3)}" intake), the gross lobe lift limit
+                        is <strong>{((reverseResults.maxSafeLift + lashValInt) / rockerRatio).toFixed(3)}"</strong>.
+                      </p>
+                    )}
+                  </div>
+                )}
               </>
             )}
           </>
@@ -1317,44 +1648,17 @@ export default function ValvetrainBuilderCalculator() {
             Every gram matters at high RPM. Inertia forces increase with the <strong>square</strong> of engine speed — doubling RPM quadruples the force trying to throw the valve off the cam.
           </p>
           <div className="space-y-2">
-            <div className="flex justify-between py-1.5 border-b border-gray-100 text-sm">
-              <span className="text-gray-600">Intake Valve ({VALVE_MATERIAL_FACTOR[valveMaterial].label})</span>
-              <span className="font-bold">{Math.round(valveWtInt)}g</span>
-            </div>
-            <div className="flex justify-between py-1.5 border-b border-gray-100 text-sm">
-              <span className="text-gray-600">Retainer ({RETAINER_MATERIAL_FACTOR[retainerMaterial].label})</span>
-              <span className="font-bold">{Math.round(retainerWt)}g</span>
-            </div>
-            <div className="flex justify-between py-1.5 border-b border-gray-100 text-sm">
-              <span className="text-gray-600">Locks (pair)</span>
-              <span className="font-bold">{lockWt}g</span>
-            </div>
-            <div className="flex justify-between py-1.5 border-b border-gray-100 text-sm">
-              <span className="text-gray-600">Spring mass contribution ({"\u00D7"}0.5)</span>
-              <span className="font-bold">{Math.round(springMass * 0.5)}g <span className="text-xs text-gray-400">of {springMass}g</span></span>
-            </div>
-            <div className="flex justify-between py-1.5 border-b border-gray-100 text-sm">
-              <span className="text-gray-600">Rocker contribution ({"\u00D7"}0.33 {"\u00D7"} ratio{"\u00B2"})</span>
-              <span className="font-bold">{Math.round(rockerWeight * 0.33 * rockerRatio * rockerRatio)}g <span className="text-xs text-gray-400">of {rockerWeight}g</span></span>
-            </div>
+            {massBreakdownRows().map((row, i) => (
+              <div key={i} className="flex justify-between py-1.5 border-b border-gray-100 text-sm">
+                <span className="text-gray-600">{row.label}</span>
+                <span className="font-bold">{row.value}g {row.detail && <span className="text-xs text-gray-400">{row.detail}</span>}</span>
+              </div>
+            ))}
             <div className="flex justify-between py-2 text-sm border-t-2 border-gray-300">
               <span className="font-bold text-gray-900">Total Effective Mass at Valve</span>
               <span className="font-bold text-[#E85D04] text-lg">{Math.round(effectiveMass)}g <span className="text-sm text-gray-500">({(effectiveMass / 28.35).toFixed(1)} oz)</span></span>
             </div>
           </div>
-
-          {/* Weight savings comparison */}
-          {(valveMaterial !== "titanium" || retainerMaterial !== "titanium") && (
-            <div className="mt-4 p-3 rounded-lg bg-gray-50 border text-sm text-muted-foreground">
-              <p className="font-semibold text-gray-700 mb-1">What if you went lighter?</p>
-              {valveMaterial !== "titanium" && (
-                <p>Titanium valves would save ~{Math.round(valveWtInt - preset.valveWeightInt * VALVE_MATERIAL_FACTOR.titanium.factor)}g per valve ({Math.round((1 - VALVE_MATERIAL_FACTOR.titanium.factor / valveFactorInt) * 100)}% reduction)</p>
-              )}
-              {retainerMaterial !== "titanium" && (
-                <p>Titanium retainers would save ~{Math.round(retainerWt - preset.retainerWeight * RETAINER_MATERIAL_FACTOR.titanium.factor)}g per retainer ({Math.round((1 - RETAINER_MATERIAL_FACTOR.titanium.factor / retainerFactor) * 100)}% reduction)</p>
-              )}
-            </div>
-          )}
         </Section>
 
         {/* ── Educational section ──────────────────────────── */}
@@ -1367,9 +1671,26 @@ export default function ValvetrainBuilderCalculator() {
             <p>
               <strong>Why RPM matters so much:</strong> Inertia forces increase with the <em>square</em> of engine speed. An engine spinning 7,000 RPM generates 4{"\u00D7"} the valve inertia force of the same engine at 3,500 RPM. This is why springs that work fine at 5,500 RPM may cause valve float at 6,500 RPM — a modest 18% increase in RPM produces a 40% increase in inertia force.
             </p>
-            <p>
-              <strong>The rocker ratio trap:</strong> Upgrading from 1.5:1 to 1.7:1 rockers increases valve lift by 13%, which sounds great. But it also increases the effective mass at the valve by 28% (ratio squared effect), meaning your springs need to work significantly harder. Always recalculate spring requirements after a rocker ratio change.
-            </p>
+            {arch === "pushrod" && (
+              <p>
+                <strong>Pushrod compliance:</strong> In a pushrod engine, the pushrod itself flexes under load — it acts as a spring within the valvetrain. This compliance limits how aggressive the cam profile can be, because the valve doesn't perfectly follow the cam lobe. This is a key reason pushrod engines typically rev lower than OHC designs. Lighter, stiffer pushrods (smaller diameter, thicker wall chromoly) help, but the fundamental limitation remains.
+              </p>
+            )}
+            {(archSpec.hasRocker || arch === "dohc-finger") && (
+              <p>
+                <strong>The rocker ratio trap:</strong> Upgrading from 1.5:1 to 1.7:1 rockers increases valve lift by 13%, which sounds great. But it also increases the effective mass at the valve by 28% (ratio squared effect on the rocker/follower contribution), meaning your springs need to work significantly harder. Always recalculate spring requirements after a ratio change.
+              </p>
+            )}
+            {arch === "dohc-direct" && (
+              <p>
+                <strong>Direct-acting simplicity:</strong> With no rocker or follower lever, there's no ratio-squared mass amplification — every gram you save on the bucket, valve, or retainer translates directly to lower inertia force. This is why DOHC bucket engines can use much lighter springs and still rev safely to high RPM.
+              </p>
+            )}
+            {arch === "dohc-finger" && (
+              <p>
+                <strong>Finger follower advantage:</strong> Finger followers combine the best of both worlds — a small lever ratio for cam profile flexibility with very low mass. Roller-tip followers allow extremely aggressive cam profiles (fast opening/closing ramps) that would be impossible with direct-acting bucket tappets, which share the flat-tappet limitation of being constrained by bucket diameter.
+              </p>
+            )}
             <p>
               <strong>Too much spring is also dangerous:</strong> On flat tappet cams, excessive spring pressure accelerates cam lobe and lifter wear. The lifter face and cam lobe are in sliding contact with only an oil film between them. Above ~130 lbs seat pressure on a flat tappet, lobe wear becomes a real risk — especially with modern low-ZDDP oils.
             </p>
