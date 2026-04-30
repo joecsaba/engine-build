@@ -2,7 +2,7 @@ import { Link } from "wouter";
 import {
   Cylinder, Gauge, Circle, Settings2, ArrowDownUp,
   Zap, Timer, Flame, Ruler, MoveVertical,
-  RotateCcw, ShieldAlert, Codesandbox, Wrench, Wind, TrendingUp, ArrowRightLeft, type LucideIcon,
+  RotateCcw, ShieldAlert, Codesandbox, Wrench, ArrowRightLeft, type LucideIcon,
 } from "lucide-react";
 import { PageHeader } from "@/components/layout/PageHeader";
 import { AdBanner } from "@/components/ads/AdBanner";
@@ -49,13 +49,6 @@ const calculators: { title: string; href: string; desc: string; tags: string[]; 
     desc: "Calculate rod ratio with visual gauge. Compare against common engines. Explains piston dwell and friction.",
     tags: ["Stroke", "Rod Length"],
     icon: ArrowDownUp,
-  },
-  {
-    title: "HP & Torque Estimator",
-    href: "/calculators/hp-estimator",
-    desc: "Estimate horsepower and torque for your build. Pick your engine, heads, cam, intake, exhaust, and compression — get a data-backed estimate from real dyno results.",
-    tags: ["HP Estimate", "Build Combo", "Dyno Data", "Heads & Cam"],
-    icon: TrendingUp,
   },
   {
     title: "HP & Torque",
@@ -119,13 +112,6 @@ const calculators: { title: string; href: string; desc: string; tags: string[]; 
     desc: "Corrected torque wrench setting for crow's foot adapters, offset extensions, and wobble sockets. Interactive diagram shows how lever arm changes affect torque.",
     tags: ["Torque Spec", "Crow's Foot", "Extension", "Wobble Socket"],
     icon: Wrench,
-  },
-  {
-    title: "Turbo Finder & Sizing",
-    href: "/calculators/turbo-finder",
-    desc: "Find the right turbocharger for your engine. Calculates required airflow, boost pressure, compressor outlet temp, and matches against Garrett, BorgWarner, and Precision turbos with fuel system sizing.",
-    tags: ["Turbo Sizing", "CFM", "Boost", "Compressor Map", "A/R Ratio"],
-    icon: Wind,
   },
 ];
 

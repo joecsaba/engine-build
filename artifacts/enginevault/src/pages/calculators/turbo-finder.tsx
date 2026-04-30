@@ -20,16 +20,18 @@ interface FuelDef {
   stoichAfr: number;
   powerAfr: number;
   bsfc: number;        // lb/hp-hr for turbo applications
+  bsfcNa: number;      // lb/hp-hr for naturally aspirated (lower — better thermal efficiency)
+  powerAfrNa: number;  // NA power AFR (leaner than turbo — less detonation risk)
   maxSafeBoost: number; // rough PSI limit on pump-type fuel, 0 = no practical limit
 }
 
 const FUELS: Record<FuelType, FuelDef> = {
-  "pump93":   { label: "Pump Gas (93 octane)",  short: "93 Pump",   stoichAfr: 14.7,  powerAfr: 11.5, bsfc: 0.58, maxSafeBoost: 18 },
-  "pump91":   { label: "Pump Gas (91 octane)",  short: "91 Pump",   stoichAfr: 14.7,  powerAfr: 11.5, bsfc: 0.58, maxSafeBoost: 14 },
-  "e85":      { label: "E85 (flex fuel)",       short: "E85",       stoichAfr: 9.76,  powerAfr: 7.5,  bsfc: 0.85, maxSafeBoost: 30 },
-  "race":     { label: "Race Gas (100+ octane)", short: "Race Gas", stoichAfr: 14.7,  powerAfr: 12.0, bsfc: 0.55, maxSafeBoost: 25 },
-  "methanol": { label: "Methanol (M100)",       short: "Methanol",  stoichAfr: 6.47,  powerAfr: 4.5,  bsfc: 1.80, maxSafeBoost: 40 },
-  "diesel":   { label: "Diesel (#2)",           short: "Diesel",    stoichAfr: 14.6,  powerAfr: 22.0, bsfc: 0.40, maxSafeBoost: 50 },
+  "pump93":   { label: "Pump Gas (93 octane)",  short: "93 Pump",   stoichAfr: 14.7,  powerAfr: 11.5, bsfc: 0.58, bsfcNa: 0.47, powerAfrNa: 12.8, maxSafeBoost: 18 },
+  "pump91":   { label: "Pump Gas (91 octane)",  short: "91 Pump",   stoichAfr: 14.7,  powerAfr: 11.5, bsfc: 0.58, bsfcNa: 0.47, powerAfrNa: 12.8, maxSafeBoost: 14 },
+  "e85":      { label: "E85 (flex fuel)",       short: "E85",       stoichAfr: 9.76,  powerAfr: 7.5,  bsfc: 0.85, bsfcNa: 0.68, powerAfrNa: 8.2,  maxSafeBoost: 30 },
+  "race":     { label: "Race Gas (100+ octane)", short: "Race Gas", stoichAfr: 14.7,  powerAfr: 12.0, bsfc: 0.55, bsfcNa: 0.45, powerAfrNa: 12.8, maxSafeBoost: 25 },
+  "methanol": { label: "Methanol (M100)",       short: "Methanol",  stoichAfr: 6.47,  powerAfr: 4.5,  bsfc: 1.80, bsfcNa: 1.45, powerAfrNa: 5.0,  maxSafeBoost: 40 },
+  "diesel":   { label: "Diesel (#2)",           short: "Diesel",    stoichAfr: 14.6,  powerAfr: 22.0, bsfc: 0.40, bsfcNa: 0.36, powerAfrNa: 25.0, maxSafeBoost: 50 },
 };
 
 // ── Application data ────────────────────────────────────────────────────────────
@@ -106,14 +108,38 @@ const TURBO_DB: TurboDef[] = [
   { name: "Precision 9405",      frame: "94mm",  inducer: 94, minHp: 1600, maxHp: 2500, minFlow: 160, maxFlow: 250, bearing: "journal", arOptions: "1.32 / 1.53 / 1.78",             tier: "high",   approxPrice: "$2,500–3,500" },
 ];
 
-// ── VE defaults by valve count ──────────────────────────────────────────────────
+// ── VE estimation ──────────────────────────────────────────────────────────────
+// VE depends on head design quality more than valve count alone. A modern LS
+// (2-valve, 346ci, 8-cyl = 43ci/cyl) achieves ~87-95% VE, while a smog-era
+// SBC 350 (also 2-valve, 44ci/cyl) only manages ~68%. We use valve count as
+// the primary factor and displacement-per-cylinder as a secondary adjustment —
+// this captures the old-vs-modern pushrod gap without requiring the user to
+// know their VE.
 
-const VE_DEFAULTS: Record<string, number> = {
-  "2": 0.82,
+const VE_BASE: Record<string, number> = {
+  "2": 0.80,   // baseline for 2-valve (adjusted below by ci/cyl and RPM)
   "3": 0.88,
   "4": 0.92,
   "5": 0.95,
 };
+
+function estimateVe(valvesPerCyl: number, displacementCi: number, cylinders: number, peakRpm: number): number {
+  const base = VE_BASE[String(valvesPerCyl)] ?? 0.82;
+  if (valvesPerCyl > 2) return base; // multi-valve engines are already well-characterized
+
+  // For 2-valve engines: adjust based on how modern the engine likely is.
+  // Modern pushrod engines (LS, LT, Gen V Hemi) make peak power at higher RPM
+  // and have much better port designs than classic pushrod engines.
+  // Peak HP RPM is a strong proxy: stock SBC 350 peaks at ~4400, LS1 at ~5600.
+  // Higher RPM capability = better breathing = higher VE.
+  const rpmFactor = Math.min(1, Math.max(0, (peakRpm - 4000) / 3000)); // 0 at 4000, 1 at 7000
+  const veAdjust = rpmFactor * 0.12; // up to +12% VE for high-revving 2-valve engines
+
+  return Math.min(0.96, base + veAdjust);
+}
+
+// Keep a simple lookup for backward compatibility with code that reads VE_DEFAULTS
+const VE_DEFAULTS: Record<string, number> = VE_BASE;
 
 // ── Altitude pressure lookup ────────────────────────────────────────────────────
 
@@ -139,9 +165,12 @@ interface CalcResults {
   warnings: string[];
   atmosPsi: number;
   naAirflowCfm: number;
-  naHpEstimate: number;
+  naHpEstimate: number;      // gross — engine breathing potential, no accessory losses
+  naHpNet: number;            // net — after typical accessory and friction deductions
+  accessoryLoss: number;      // HP deducted for accessories
   effectiveVe: number;
   headFlowUsed: boolean;
+  camDurationUsed: boolean;
   exhaustFlowLbMin: number;
 }
 
@@ -164,6 +193,8 @@ function calculate(
   headTestPressure: number | null,
   exhaustHeaderSize: number | null,
   currentNaHp: number | null,
+  camDuration050: number | null,
+  compressionRatio: number | null,
 ): CalcResults {
   const f = FUELS[fuel];
   const warnings: string[] = [];
@@ -171,7 +202,20 @@ function calculate(
   // Resolve overridable values
   const bsfc = customBsfc ?? f.bsfc;
   const afr = customAfr ?? f.powerAfr;
-  let ve = customVe ?? (VE_DEFAULTS[String(valvesPerCyl)] ?? 0.85);
+  let ve = customVe ?? estimateVe(valvesPerCyl, displacementCi, cylinders, peakRpm);
+
+  // Cam duration adjusts VE: a bigger cam breathes better at peak RPM
+  if (camDuration050 && camDuration050 > 0 && !customVe) {
+    // Piecewise: stock 190° = 0%, mild 210° = +2%, mod 224° = +5%, hot 236° = +7%, race 252° = +10%
+    let camVeBonus = 0;
+    if (camDuration050 <= 190) camVeBonus = 0;
+    else if (camDuration050 <= 210) camVeBonus = ((camDuration050 - 190) / 20) * 0.02;
+    else if (camDuration050 <= 224) camVeBonus = 0.02 + ((camDuration050 - 210) / 14) * 0.03;
+    else if (camDuration050 <= 236) camVeBonus = 0.05 + ((camDuration050 - 224) / 12) * 0.02;
+    else if (camDuration050 <= 252) camVeBonus = 0.07 + ((camDuration050 - 236) / 16) * 0.03;
+    else camVeBonus = 0.10;
+    ve = Math.min(0.98, ve + camVeBonus);
+  }
 
   // Step 1: Required airflow (Garrett formula)
   const airflowLbMin = (targetHp * bsfc * afr) / 60;
@@ -236,7 +280,27 @@ function calculate(
   }
 
   const naLbMin = naCfm * 0.0765;
-  const naHp = naLbMin / (bsfc * afr / 60); // reverse the HP formula
+  // NA HP estimate for display only — use NA-specific BSFC and AFR which are
+  // more accurate for naturally aspirated engines (lower BSFC = better thermal
+  // efficiency without boost, leaner AFR = less detonation risk without boost).
+  // The turbo sizing math above uses turbo BSFC/AFR for airflow calculations,
+  // which is correct — this is just for the "Engine Baseline" display.
+  const bsfcNa = customBsfc ?? f.bsfcNa;
+  const afrNa = customAfr ?? f.powerAfrNa;
+  const naHp = naLbMin / (bsfcNa * afrNa / 60);
+
+  // Net HP: deduct typical accessory and friction losses.
+  // Real engines lose power to the water pump, oil pump, alternator, power steering,
+  // A/C compressor, and internal friction. This varies by era and equipment:
+  //   - Modern engines (LS, Coyote, Hemi): ~4-6% loss (electric fans, efficient accessories)
+  //   - Classic engines (SBC, BBC, SBF): ~7-9% loss (mechanical fan, heavy accessories)
+  // We use peak RPM as a proxy for engine era (modern = higher peak RPM).
+  // These are conservative estimates — the VE and BSFC calibration already
+  // accounts for most real-world losses, so this is a small additional deduction.
+  const rpmProxy = Math.min(1, Math.max(0, (peakRpm - 4000) / 3000));
+  const accessoryPct = 0.09 - rpmProxy * 0.05; // 9% at 4000 RPM, 4% at 7000 RPM
+  const accessoryLoss = naHp * accessoryPct;
+  const naHpNet = naHp - accessoryLoss;
 
   // Boost required: rearrange MAP relationship
   // Target MAP = atmosPsi * (airflowLbMin / naLbMin)
@@ -333,6 +397,35 @@ function calculate(
     warnings.push(`Derived VE of ${(ve * 100).toFixed(0)}% from head flow data is very high. Verify your flow bench number is per-port (not combined) and at the correct test pressure.`);
   }
 
+  // Compression ratio vs boost safety
+  if (compressionRatio && compressionRatio > 0 && boostPsi > 0) {
+    // Safe boost limits (PSI) by CR and fuel type
+    const safeBoostTable: Record<string, [number, number][]> = {
+      // [CR threshold, max safe PSI] pairs — interpolated
+      "pump93":   [[8.0, 22], [8.5, 20], [9.0, 16], [9.5, 14], [10.0, 10], [10.5, 8], [11.0, 5], [12.0, 3]],
+      "pump91":   [[8.0, 18], [8.5, 16], [9.0, 12], [9.5, 10], [10.0, 7],  [10.5, 6], [11.0, 3], [12.0, 2]],
+      "e85":      [[8.0, 35], [8.5, 30], [9.0, 28], [9.5, 25], [10.0, 20], [10.5, 18], [11.0, 12], [12.0, 8]],
+      "race":     [[8.0, 30], [8.5, 28], [9.0, 25], [9.5, 22], [10.0, 18], [10.5, 15], [11.0, 10], [12.0, 7]],
+      "methanol": [[8.0, 45], [8.5, 40], [9.0, 38], [9.5, 35], [10.0, 30], [10.5, 25], [11.0, 20], [12.0, 15]],
+      "diesel":   [[15.0, 50], [16.0, 45], [17.0, 40], [18.0, 35], [20.0, 25]],
+    };
+    const table = safeBoostTable[fuel] ?? safeBoostTable["pump93"];
+    // Interpolate safe boost for this CR
+    let safeBoost = table[table.length - 1][1];
+    for (let i = 0; i < table.length - 1; i++) {
+      const [cr0, b0] = table[i], [cr1, b1] = table[i + 1];
+      if (compressionRatio >= cr0 && compressionRatio <= cr1) {
+        const t = (compressionRatio - cr0) / (cr1 - cr0);
+        safeBoost = b0 + t * (b1 - b0);
+        break;
+      }
+      if (compressionRatio < cr0) { safeBoost = b0; break; }
+    }
+    if (boostPsi > safeBoost) {
+      warnings.push(`At ${compressionRatio.toFixed(1)}:1 compression on ${f.short}, safe boost is ~${safeBoost.toFixed(0)} PSI. Your target requires ${boostPsi.toFixed(0)} PSI — risk of detonation. Lower compression, switch to ${fuel.startsWith("pump") ? "E85 or race fuel" : "a higher-octane fuel"}, or reduce your HP target.`);
+    }
+  }
+
   return {
     airflowLbMin,
     airflowPerTurbo,
@@ -350,8 +443,11 @@ function calculate(
     atmosPsi,
     naAirflowCfm: naCfm,
     naHpEstimate: naHp,
+    naHpNet,
+    accessoryLoss,
     effectiveVe: ve,
     headFlowUsed,
+    camDurationUsed: !!(camDuration050 && camDuration050 > 0),
     exhaustFlowLbMin,
   };
 }
@@ -409,6 +505,8 @@ export default function TurboFinderCalculator() {
   const [headTestPressureStr, setHeadTestPressureStr] = useState("28");
   const [exhaustHeaderStr, setExhaustHeaderStr] = useState("");
   const [currentNaHpStr, setCurrentNaHpStr] = useState("");
+  const [camDuration050Str, setCamDuration050Str] = useState("");
+  const [compressionRatioStr, setCompressionRatioStr] = useState("");
   const [knownDataOpen, setKnownDataOpen] = useState(false);
 
   // Mode: "target" = I want X HP, what turbo? | "explore" = I have this setup, what fits?
@@ -428,6 +526,7 @@ export default function TurboFinderCalculator() {
   const [formulasOpen, setFormulasOpen] = useState(false);
   const [fuelSystemOpen, setFuelSystemOpen] = useState(false);
   const [turboSizeRefOpen, setTurboSizeRefOpen] = useState(false);
+  const [naDisplayMode, setNaDisplayMode] = useState<"net" | "gross">("net");
 
   // Parse inputs
   const disp = parseFloat(displacement) || 0;
@@ -445,12 +544,14 @@ export default function TurboFinderCalculator() {
   const headTestPressure = headTestPressureStr ? parseFloat(headTestPressureStr) : null;
   const exhaustHeader = exhaustHeaderStr ? parseFloat(exhaustHeaderStr) : null;
   const currentNaHp = currentNaHpStr ? parseFloat(currentNaHpStr) : null;
+  const camDuration050 = camDuration050Str ? parseFloat(camDuration050Str) : null;
+  const compressionRatio = compressionRatioStr ? parseFloat(compressionRatioStr) : null;
 
   // In "explore" mode, derive HP target from displacement + boost target
   let hp: number;
   if (mode === "explore") {
     // Estimate HP from displacement, boost, and VE
-    const veEst = customVe ?? (VE_DEFAULTS[String(vpc)] ?? 0.85);
+    const veEst = customVe ?? estimateVe(vpc, dispCi, cyl, rpm);
     const boost = parseFloat(boostTarget) || 8;
     const atmosEst = getAtmosphericPressure(alt);
     // NA airflow
@@ -470,7 +571,7 @@ export default function TurboFinderCalculator() {
   // Calculate
   const valid = hp > 0 && dispCi > 0 && rpm > 0;
   const results = valid
-    ? calculate(hp, dispCi, turbos, fuel, application, rpm, intercooler, alt, temp, cyl, vpc, customVe, customBsfc, customAfr, headFlowCfm, headTestPressure, exhaustHeader, currentNaHp)
+    ? calculate(hp, dispCi, turbos, fuel, application, rpm, intercooler, alt, temp, cyl, vpc, customVe, customBsfc, customAfr, headFlowCfm, headTestPressure, exhaustHeader, currentNaHp, camDuration050, compressionRatio)
     : null;
 
   const f = FUELS[fuel];
@@ -755,7 +856,22 @@ export default function TurboFinderCalculator() {
                   </div>
                 </div>
 
-                {/* Show derived VE if head flow is entered */}
+                <div className="grid grid-cols-2 gap-3">
+                  <div className="space-y-1">
+                    <Label className="text-xs">Cam Duration @ .050" (intake)</Label>
+                    <Input type="number" step="2" min="170" max="280" placeholder="e.g. 224" value={camDuration050Str} onChange={(e) => setCamDuration050Str(e.target.value)} />
+                    <p className="text-xs text-muted-foreground">Duration at .050" lift from your cam card — adjusts VE and spool estimate</p>
+                  </div>
+                  <div className="space-y-1">
+                    <Label className="text-xs">Compression Ratio</Label>
+                    <Input type="number" step="0.1" min="7" max="14" placeholder="e.g. 9.5" value={compressionRatioStr} onChange={(e) => setCompressionRatioStr(e.target.value)} />
+                    <p className="text-xs text-muted-foreground">
+                      Static CR — determines safe boost. <a href="/calculators/compression-ratio" className="text-primary underline">Calculate CR</a>
+                    </p>
+                  </div>
+                </div>
+
+                {/* Show derived data when specs are entered */}
                 {results && results.headFlowUsed && (
                   <div className="p-3 rounded-lg bg-green-50 border border-green-200 text-sm text-green-800">
                     Head flow data applied. Derived VE: <strong>{(results.effectiveVe * 100).toFixed(1)}%</strong> · Estimated NA HP: <strong>{results.naHpEstimate.toFixed(0)}</strong> · NA airflow: <strong>{results.naAirflowCfm.toFixed(0)} CFM</strong>
@@ -764,6 +880,24 @@ export default function TurboFinderCalculator() {
                 {results && !results.headFlowUsed && currentNaHp && (
                   <div className="p-3 rounded-lg bg-green-50 border border-green-200 text-sm text-green-800">
                     Using your dyno data. Derived VE: <strong>{(results.effectiveVe * 100).toFixed(1)}%</strong> · NA airflow: <strong>{results.naAirflowCfm.toFixed(0)} CFM</strong>
+                  </div>
+                )}
+                {results && results.camDurationUsed && !results.headFlowUsed && !currentNaHp && (
+                  <div className="p-3 rounded-lg bg-green-50 border border-green-200 text-sm text-green-800">
+                    Cam data applied. Adjusted VE: <strong>{(results.effectiveVe * 100).toFixed(1)}%</strong> · This cam favors a turbo that spools by ~{Math.round((rpm - 1500) / 100) * 100} RPM
+                  </div>
+                )}
+                {compressionRatio && results && results.boostPsi > 0 && (
+                  <div className={`p-3 rounded-lg border text-sm ${
+                    results.warnings.some((w) => w.includes("compression"))
+                      ? "bg-red-50 border-red-200 text-red-800"
+                      : "bg-green-50 border-green-200 text-green-800"
+                  }`}>
+                    At <strong>{compressionRatio.toFixed(1)}:1</strong> on {f.short}, your target needs <strong>{results.boostPsi.toFixed(0)} PSI</strong>.
+                    {results.warnings.some((w) => w.includes("compression"))
+                      ? " — exceeds safe limit for this CR/fuel combo."
+                      : " — within safe range for this CR and fuel."
+                    }
                   </div>
                 )}
               </div>
@@ -784,8 +918,8 @@ export default function TurboFinderCalculator() {
                 <p className="text-xs text-muted-foreground">Leave blank to use defaults for your configuration. Only override if you know your specific values.</p>
                 <div className="grid grid-cols-3 gap-3">
                   <div className="space-y-1">
-                    <Label className="text-xs">VE % (default: {((customVe ?? (VE_DEFAULTS[String(vpc)] ?? 0.85)) * 100).toFixed(0)}%)</Label>
-                    <Input type="number" step="1" min="50" max="100" placeholder={((VE_DEFAULTS[String(vpc)] ?? 0.85) * 100).toFixed(0)} value={customVeStr} onChange={(e) => setCustomVeStr(e.target.value)} />
+                    <Label className="text-xs">VE % (default: {((customVe ?? estimateVe(vpc, dispCi, cyl, rpm)) * 100).toFixed(0)}%)</Label>
+                    <Input type="number" step="1" min="50" max="100" placeholder={(estimateVe(vpc, dispCi, cyl, rpm) * 100).toFixed(0)} value={customVeStr} onChange={(e) => setCustomVeStr(e.target.value)} />
                   </div>
                   <div className="space-y-1">
                     <Label className="text-xs">BSFC (default: {f.bsfc})</Label>
@@ -1017,12 +1151,49 @@ export default function TurboFinderCalculator() {
 
               {/* NA Baseline & Exhaust Data */}
               <Card>
-                <CardHeader><CardTitle>Engine Baseline</CardTitle></CardHeader>
+                <CardHeader>
+                  <div className="flex items-center justify-between">
+                    <CardTitle>Engine Baseline</CardTitle>
+                    <div className="flex rounded-lg border overflow-hidden text-xs">
+                      <button
+                        className={`px-3 py-1.5 font-medium transition-colors ${
+                          naDisplayMode === "net"
+                            ? "bg-[#1a1a1a] text-white"
+                            : "bg-white text-muted-foreground hover:bg-muted"
+                        }`}
+                        onClick={() => setNaDisplayMode("net")}
+                      >
+                        Net (at crank)
+                      </button>
+                      <button
+                        className={`px-3 py-1.5 font-medium transition-colors ${
+                          naDisplayMode === "gross"
+                            ? "bg-[#1a1a1a] text-white"
+                            : "bg-white text-muted-foreground hover:bg-muted"
+                        }`}
+                        onClick={() => setNaDisplayMode("gross")}
+                      >
+                        Gross (engine only)
+                      </button>
+                    </div>
+                  </div>
+                </CardHeader>
                 <CardContent>
                   <div className="grid grid-cols-3 gap-3">
                     <div className="p-2 rounded bg-muted/30 text-center">
-                      <p className="text-[10px] text-muted-foreground">Est. NA Power</p>
-                      <p className="text-lg font-bold">{fmt(results.naHpEstimate, 0)} hp</p>
+                      <p className="text-[10px] text-muted-foreground">
+                        {naDisplayMode === "net" ? "Est. NA Power (net)" : "Est. NA Power (gross)"}
+                      </p>
+                      <p className="text-lg font-bold">
+                        {naDisplayMode === "net"
+                          ? fmt(results.naHpNet, 0)
+                          : fmt(results.naHpEstimate, 0)} hp
+                      </p>
+                      {naDisplayMode === "net" && (
+                        <p className="text-[10px] text-muted-foreground">
+                          ~{fmt(results.accessoryLoss, 0)} hp accessory loss
+                        </p>
+                      )}
                     </div>
                     <div className="p-2 rounded bg-muted/30 text-center">
                       <p className="text-[10px] text-muted-foreground">NA Airflow</p>
@@ -1040,8 +1211,14 @@ export default function TurboFinderCalculator() {
                     </div>
                     <div className="p-2 rounded bg-muted/30 text-center">
                       <p className="text-[10px] text-muted-foreground">Power Multiplier</p>
-                      <p className="text-lg font-bold">{results.naHpEstimate > 0 ? fmt(hp / results.naHpEstimate, 2) : "—"}×</p>
+                      <p className="text-lg font-bold">{results.naHpNet > 0 ? fmt(hp / (naDisplayMode === "net" ? results.naHpNet : results.naHpEstimate), 2) : "—"}×</p>
                     </div>
+                  </div>
+                  <div className="mt-3 p-2 rounded-lg bg-muted/30 text-xs text-muted-foreground">
+                    {naDisplayMode === "net"
+                      ? <><strong>Net power</strong> deducts typical accessory losses (water pump, oil pump, alternator, A/C, power steering). This matches factory crank HP ratings and the HP Estimator tool.</>
+                      : <><strong>Gross power</strong> is the engine's raw breathing potential before accessory and friction losses. Use this when comparing to engine dyno pulls with accessories removed.</>
+                    }
                   </div>
                   {results.headFlowUsed && (
                     <p className="text-xs text-muted-foreground mt-2">VE derived from head flow bench data — more accurate than default estimates.</p>
