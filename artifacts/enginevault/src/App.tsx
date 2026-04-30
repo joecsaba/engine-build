@@ -1,9 +1,9 @@
-import { Switch, Route, Router as WouterRouter, useLocation } from "wouter";
+import { Switch, Route, Router as WouterRouter } from "wouter";
 import { QueryClient, QueryClientProvider } from "@tanstack/react-query";
 import { Toaster } from "@/components/ui/toaster";
 import { TooltipProvider } from "@/components/ui/tooltip";
 import { AppLayout } from "@/components/layout/AppLayout";
-import { ClerkProvider } from "@clerk/react";
+import { AuthProvider } from "@/context/AuthContext";
 import { BuildContextProvider } from "@/context/BuildContext";
 import { ErrorBoundary } from "@/components/ErrorBoundary";
 import NotFound from "@/pages/not-found";
@@ -35,6 +35,10 @@ import CamDegreeingCalculator from "@/pages/calculators/cam-degreeing";
 import ValveSpringCalculator from "@/pages/calculators/valve-spring";
 import RingGapAdvancedCalculator from "@/pages/calculators/ring-gap-advanced";
 import DynamicCompressionRatioV2 from "@/pages/calculators/dynamic-compression-ratio-v2";
+import TorqueExtensionCalculator from "@/pages/calculators/torque-extension";
+import HpEstimator from "@/pages/calculators/hp-estimator";
+import ValvetrainBuilderCalculator from "@/pages/calculators/valvetrain-builder";
+import TurboFinderCalculator from "@/pages/calculators/turbo-finder";
 
 import CamGuide from "@/pages/cam-guide";
 import TorqueSpecs from "@/pages/torque-specs";
@@ -51,28 +55,6 @@ const queryClient = new QueryClient({
 });
 
 const basePath = import.meta.env.BASE_URL.replace(/\/$/, "");
-const clerkPubKey = import.meta.env.VITE_CLERK_PUBLISHABLE_KEY as string | undefined;
-const clerkProxyUrl = import.meta.env.VITE_CLERK_PROXY_URL as string | undefined;
-
-function stripBase(path: string): string {
-  return basePath && path.startsWith(basePath)
-    ? path.slice(basePath.length) || "/"
-    : path;
-}
-
-function ClerkProviderWithRouter({ children }: { children: React.ReactNode }) {
-  const [, setLocation] = useLocation();
-  return (
-    <ClerkProvider
-      publishableKey={clerkPubKey!}
-      proxyUrl={clerkProxyUrl}
-      routerPush={(to) => setLocation(stripBase(to))}
-      routerReplace={(to) => setLocation(stripBase(to), { replace: true })}
-    >
-      {children}
-    </ClerkProvider>
-  );
-}
 
 function Router() {
   return (
@@ -82,9 +64,9 @@ function Router() {
 
         {/* Coming Soon sections (v2) */}
         <Route path="/engine-data" component={TorqueSpecs} />
-        <Route path="/torque-specs" component={TorqueSpecs} />
-        <Route path="/specs" component={TorqueSpecs} />
-        <Route path="/specs/:rest*" component={TorqueSpecs} />
+        <Route path="/torque-specs">{() => { window.location.replace("/engine-data"); return null; }}</Route>
+        <Route path="/specs">{() => { window.location.replace("/engine-data"); return null; }}</Route>
+        <Route path="/specs/:rest*">{() => { window.location.replace("/engine-data"); return null; }}</Route>
         {/* Build Sheets — guided engine build wizard */}
         <Route path="/build-sheets" component={BuildSheetsIndex} />
         <Route path="/build-sheets/new" component={NewBuildPage} />
@@ -114,6 +96,10 @@ function Router() {
         <Route path="/calculators/cam-degreeing" component={CamDegreeingCalculator} />
         <Route path="/calculators/valve-spring" component={ValveSpringCalculator} />
         <Route path="/calculators/dynamic-compression-ratio-v2" component={DynamicCompressionRatioV2} />
+        <Route path="/calculators/torque-extension" component={TorqueExtensionCalculator} />
+        <Route path="/calculators/hp-estimator" component={HpEstimator} />
+        <Route path="/calculators/valvetrain-builder" component={ValvetrainBuilderCalculator} />
+        <Route path="/calculators/turbo-finder" component={TurboFinderCalculator} />
 
         <Route path="/cam-guide" component={CamGuide} />
 
@@ -132,17 +118,11 @@ function AppInner() {
     <QueryClientProvider client={queryClient}>
       <TooltipProvider>
         <WouterRouter base={basePath}>
-          {clerkPubKey ? (
-            <ClerkProviderWithRouter>
-              <BuildContextProvider>
-                <Router />
-              </BuildContextProvider>
-            </ClerkProviderWithRouter>
-          ) : (
+          <AuthProvider>
             <BuildContextProvider>
               <Router />
             </BuildContextProvider>
-          )}
+          </AuthProvider>
         </WouterRouter>
         <Toaster />
       </TooltipProvider>

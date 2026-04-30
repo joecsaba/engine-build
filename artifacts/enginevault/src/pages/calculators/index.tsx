@@ -2,7 +2,7 @@ import { Link } from "wouter";
 import {
   Cylinder, Gauge, Circle, Settings2, ArrowDownUp,
   Zap, Timer, Flame, Ruler, MoveVertical,
-  RotateCcw, ShieldAlert, Codesandbox, type LucideIcon,
+  RotateCcw, ShieldAlert, Codesandbox, Wrench, Wind, TrendingUp, ArrowRightLeft, type LucideIcon,
 } from "lucide-react";
 import { PageHeader } from "@/components/layout/PageHeader";
 import { AdBanner } from "@/components/ads/AdBanner";
@@ -37,11 +37,25 @@ const calculators: { title: string; href: string; desc: string; tags: string[]; 
     icon: Settings2,
   },
   {
+    title: "Valvetrain RPM Builder",
+    href: "/calculators/valvetrain-builder",
+    desc: "Match cam, rockers, springs, and target RPM as a complete system. Enter your cam to find spring requirements — or enter your springs to find what cams they support. Valve float estimation, RPM safety graph, and cascade warnings.",
+    tags: ["Cam + Springs", "Valve Float", "RPM Match", "Bidirectional"],
+    icon: ArrowRightLeft,
+  },
+  {
     title: "Connecting Rod Ratio",
     href: "/calculators/rod-ratio",
     desc: "Calculate rod ratio with visual gauge. Compare against common engines. Explains piston dwell and friction.",
     tags: ["Stroke", "Rod Length"],
     icon: ArrowDownUp,
+  },
+  {
+    title: "HP & Torque Estimator",
+    href: "/calculators/hp-estimator",
+    desc: "Estimate horsepower and torque for your build. Pick your engine, heads, cam, intake, exhaust, and compression — get a data-backed estimate from real dyno results.",
+    tags: ["HP Estimate", "Build Combo", "Dyno Data", "Heads & Cam"],
+    icon: TrendingUp,
   },
   {
     title: "HP & Torque",
@@ -98,6 +112,20 @@ const calculators: { title: string; href: string; desc: string; tags: string[]; 
     desc: "Validate valve spring specs for your cam profile. Seat pressure, open pressure, coil bind clearance, and spring rate analysis.",
     tags: ["Valve Springs", "Seat Pressure", "Coil Bind", "Spring Rate"],
     icon: Codesandbox,
+  },
+  {
+    title: "Torque Extension Calculator",
+    href: "/calculators/torque-extension",
+    desc: "Corrected torque wrench setting for crow's foot adapters, offset extensions, and wobble sockets. Interactive diagram shows how lever arm changes affect torque.",
+    tags: ["Torque Spec", "Crow's Foot", "Extension", "Wobble Socket"],
+    icon: Wrench,
+  },
+  {
+    title: "Turbo Finder & Sizing",
+    href: "/calculators/turbo-finder",
+    desc: "Find the right turbocharger for your engine. Calculates required airflow, boost pressure, compressor outlet temp, and matches against Garrett, BorgWarner, and Precision turbos with fuel system sizing.",
+    tags: ["Turbo Sizing", "CFM", "Boost", "Compressor Map", "A/R Ratio"],
+    icon: Wind,
   },
 ];
 
