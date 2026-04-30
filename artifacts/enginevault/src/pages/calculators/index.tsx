@@ -2,7 +2,7 @@ import { Link } from "wouter";
 import {
   Cylinder, Gauge, Circle, Settings2, ArrowDownUp,
   Zap, Timer, Flame, Ruler, MoveVertical,
-  RotateCcw, ShieldAlert, Codesandbox, Wrench, ArrowRightLeft, Wind, Target, Droplet, Activity, type LucideIcon,
+  RotateCcw, ShieldAlert, Codesandbox, Wrench, ArrowRightLeft, Wind, Target, Droplet, Activity, Cog, type LucideIcon,
 } from "lucide-react";
 import { PageHeader } from "@/components/layout/PageHeader";
 import { AdBanner } from "@/components/ads/AdBanner";
@@ -147,6 +147,13 @@ const calculators: { title: string; href: string; desc: string; tags: string[]; 
     desc: "Find the right turbocharger for your engine. Calculates required airflow, boost pressure, compressor outlet temp, and matches against Garrett, BorgWarner, and Precision turbos with fuel system sizing.",
     tags: ["Turbo Sizing", "CFM", "Boost", "Compressor Map", "A/R Ratio"],
     icon: Flame,
+  },
+  {
+    title: "Gear Ratio / Final Drive",
+    href: "/calculators/gear-ratio",
+    desc: "Calculate RPM at speed for any axle ratio, tire size, and transmission. Compare gear ratios side by side, see highway cruise RPM, and find the right gears for your build.",
+    tags: ["Axle Ratio", "Tire Size", "Transmission", "RPM vs Speed"],
+    icon: Cog,
   },
   {
     title: "Bearing Clearance Calculator",
