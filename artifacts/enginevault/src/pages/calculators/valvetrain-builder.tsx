@@ -198,15 +198,25 @@ function requiredOpenPressure(
   durationAt050: number,
   aggressiveness: number,
 ): number {
-  const effectiveMassLbs = effectiveMassGrams / 453.6;
-  const omega = (maxRPM * 2 * Math.PI) / 60;
-  const durationRad = (durationAt050 * Math.PI) / 180;
-  const noseRad = durationRad * 0.4;
-  const noseTime = noseRad / (omega / 2);
+  // Work in SI (kg, meters, seconds) to avoid lbs-mass vs lbs-force confusion.
+  const massKg = effectiveMassGrams / 1000;
+  const liftM = liftInches * 0.0254;
+  const omega = (maxRPM * 2 * Math.PI) / 60;         // crank rad/s
+  const camOmega = omega / 2;                          // cam turns at half crank speed
+  const durationRad = (durationAt050 * Math.PI) / 180; // duration in cam radians
+  const noseRad = durationRad * 0.4;                   // nose region ≈ 40% of duration
+  const noseTime = noseRad / camOmega;                  // time to traverse nose (seconds)
   if (noseTime <= 0) return 0;
-  const peakAccel = liftInches / (noseTime * noseTime) * (0.5 + aggressiveness * 0.8);
-  const inertiaForce = effectiveMassLbs * peakAccel;
-  return inertiaForce * 1.3;
+  // Sinusoidal nose model: peak deceleration = lift × (π / noseTime)²
+  // Real cam profiles don't reach pure sinusoidal peak acceleration.
+  // The base factor ~0.50 represents this reduction. Aggressiveness adds a
+  // small correction (0.15 range) — more aggressive lobe profiles produce
+  // slightly higher peak acceleration, but most of the real-world variation
+  // comes from RPM, lift, mass, and duration, not profile shape.
+  const peakAccel = liftM * Math.pow(Math.PI / noseTime, 2) * (0.50 + aggressiveness * 0.15);
+  const forceN = massKg * peakAccel;                    // F = ma (Newtons)
+  const forceLbs = forceN / 4.448;                      // convert N → lbs
+  return forceLbs * 1.3;                                // 1.3× safety factor
 }
 
 /**
