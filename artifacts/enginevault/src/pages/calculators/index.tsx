@@ -2,7 +2,7 @@ import { Link } from "wouter";
 import {
   Cylinder, Gauge, Circle, Settings2, ArrowDownUp,
   Zap, Timer, Flame, Ruler, MoveVertical,
-  RotateCcw, ShieldAlert, Codesandbox, Wrench, ArrowRightLeft, type LucideIcon,
+  RotateCcw, ShieldAlert, Codesandbox, Wrench, ArrowRightLeft, Wind, Target, Droplet, Activity, type LucideIcon,
 } from "lucide-react";
 import { PageHeader } from "@/components/layout/PageHeader";
 import { AdBanner } from "@/components/ads/AdBanner";
@@ -112,6 +112,48 @@ const calculators: { title: string; href: string; desc: string; tags: string[]; 
     desc: "Corrected torque wrench setting for crow's foot adapters, offset extensions, and wobble sockets. Interactive diagram shows how lever arm changes affect torque.",
     tags: ["Torque Spec", "Crow's Foot", "Extension", "Wobble Socket"],
     icon: Wrench,
+  },
+  {
+    title: "HP & Torque Estimator",
+    href: "/calculators/hp-estimator",
+    desc: "Estimate horsepower and torque for your build. Pick your engine, heads, cam, intake, exhaust, and compression — get a data-backed estimate from real dyno results.",
+    tags: ["HP Estimate", "Build Combo", "Dyno Data", "Heads & Cam"],
+    icon: Zap,
+  },
+  {
+    title: "Carburetor / CFM Sizing",
+    href: "/calculators/carb-cfm-sizing",
+    desc: "Calculate the right carburetor size for your engine. Uses the standard CFM formula with real carb sizes from Holley and Edelbrock. Street and race recommendations with overcarburetion warnings.",
+    tags: ["CID", "RPM", "CFM", "Carb Size"],
+    icon: Wind,
+  },
+  {
+    title: "Fuel Injector Sizing",
+    href: "/calculators/fuel-injector-sizing",
+    desc: "Calculate what size fuel injectors you need based on target HP, fuel type, and aspiration. Duty cycle analysis, fuel pump sizing, and real injector size matching.",
+    tags: ["Target HP", "Fuel Type", "Injector Size", "Duty Cycle"],
+    icon: Droplet,
+  },
+  {
+    title: "Cylinder Head Flow / CFM to HP",
+    href: "/calculators/head-flow",
+    desc: "Convert flow bench CFM to horsepower potential. Flow coefficient, intake/exhaust ratio, port velocity, full flow curve analysis, and comparison against 14 popular SBC, LS, BBC, and Ford heads.",
+    tags: ["Intake CFM", "Exhaust CFM", "HP Potential", "Flow Coefficient"],
+    icon: Activity,
+  },
+  {
+    title: "Turbo Finder & Sizing",
+    href: "/calculators/turbo-finder",
+    desc: "Find the right turbocharger for your engine. Calculates required airflow, boost pressure, compressor outlet temp, and matches against Garrett, BorgWarner, and Precision turbos with fuel system sizing.",
+    tags: ["Turbo Sizing", "CFM", "Boost", "Compressor Map", "A/R Ratio"],
+    icon: Flame,
+  },
+  {
+    title: "Bearing Clearance Calculator",
+    href: "/calculators/bearing-clearance",
+    desc: "Calculate main and rod bearing oil clearance from measurements or Plastigage. Engine platform specs, per-bearing tables, oil viscosity recommendations, and clearance assessment.",
+    tags: ["Journal OD", "Bearing Clearance", "Oil Viscosity", "Block Material"],
+    icon: Target,
   },
 ];
 
