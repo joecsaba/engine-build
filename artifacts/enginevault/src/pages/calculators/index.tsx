@@ -193,6 +193,13 @@ const dieselCalculators: { title: string; href: string; desc: string; tags: stri
     tags: ["EGT", "Drive Pressure", "Pyrometer", "Turbo Health"],
     icon: Thermometer,
   },
+  {
+    title: "Diesel Nozzle & Pop Pressure",
+    href: "/calculators/diesel-injector-nozzle-pop-pressure",
+    desc: "Size mechanical diesel nozzles for Cummins P-pump, VE, and VP44 engines. Nozzle flow area, pop pressure recommendation, shim sizing, air/fuel match assessment, and common rail injector reference table.",
+    tags: ["Nozzle Size", "Pop Pressure", "Cummins Injector", "Flow Area"],
+    icon: Target,
+  },
 ];
 
 export default function CalculatorsIndex() {

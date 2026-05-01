@@ -48,6 +48,7 @@ import HeadFlowCalculator from "@/pages/calculators/head-flow";
 import GearRatioCalculator from "@/pages/calculators/gear-ratio";
 import DieselLiftPumpCalculator from "@/pages/calculators/diesel-lift-pump";
 import DieselEgtDrivePressureCalculator from "@/pages/calculators/diesel-egt-drive-pressure";
+import DieselInjectorNozzlePopPressureCalculator from "@/pages/calculators/diesel-injector-nozzle-pop-pressure";
 
 import CamGuide from "@/pages/cam-guide";
 import TorqueSpecs from "@/pages/torque-specs";
@@ -118,6 +119,7 @@ function Router() {
         <Route path="/calculators/gear-ratio" component={GearRatioCalculator} />
         <Route path="/calculators/diesel-lift-pump" component={DieselLiftPumpCalculator} />
         <Route path="/calculators/diesel-egt-drive-pressure" component={DieselEgtDrivePressureCalculator} />
+        <Route path="/calculators/diesel-injector-nozzle-pop-pressure" component={DieselInjectorNozzlePopPressureCalculator} />
 
         <Route path="/cam-guide" component={CamGuide} />
 
