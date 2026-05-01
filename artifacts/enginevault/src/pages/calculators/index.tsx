@@ -149,6 +149,23 @@ const calculators: { title: string; href: string; desc: string; tags: string[]; 
     icon: Flame,
   },
   {
+    title: "Gear Ratio / Final Drive",
+    href: "/calculators/gear-ratio",
+    desc: "Calculate RPM at speed for any axle ratio, tire size, and transmission. Compare gear ratios side by side, see highway cruise RPM, and find the right gears for your build.",
+    tags: ["Axle Ratio", "Tire Size", "Transmission", "RPM vs Speed"],
+    icon: Cog,
+  },
+  {
+    title: "Bearing Clearance Calculator",
+    href: "/calculators/bearing-clearance",
+    desc: "Calculate main and rod bearing oil clearance from measurements or Plastigage. Engine platform specs, per-bearing tables, oil viscosity recommendations, and clearance assessment.",
+    tags: ["Journal OD", "Bearing Clearance", "Oil Viscosity", "Block Material"],
+    icon: Target,
+  },
+];
+
+const dieselCalculators: { title: string; href: string; desc: string; tags: string[]; icon: LucideIcon }[] = [
+  {
     title: "Diesel Single Turbo Finder",
     href: "/calculators/diesel-single-turbo",
     desc: "Find the right single turbo upgrade for your diesel. Match Holset, BorgWarner S-series, Garrett, and aftermarket turbos for Cummins, Duramax, and Powerstroke with airflow, EGT, and drive pressure calculations.",
@@ -163,18 +180,11 @@ const calculators: { title: string; href: string; desc: string; tags: string[]; 
     icon: Wind,
   },
   {
-    title: "Gear Ratio / Final Drive",
-    href: "/calculators/gear-ratio",
-    desc: "Calculate RPM at speed for any axle ratio, tire size, and transmission. Compare gear ratios side by side, see highway cruise RPM, and find the right gears for your build.",
-    tags: ["Axle Ratio", "Tire Size", "Transmission", "RPM vs Speed"],
-    icon: Cog,
-  },
-  {
-    title: "Bearing Clearance Calculator",
-    href: "/calculators/bearing-clearance",
-    desc: "Calculate main and rod bearing oil clearance from measurements or Plastigage. Engine platform specs, per-bearing tables, oil viscosity recommendations, and clearance assessment.",
-    tags: ["Journal OD", "Bearing Clearance", "Oil Viscosity", "Block Material"],
-    icon: Target,
+    title: "Diesel Lift Pump & Fuel System",
+    href: "/calculators/diesel-lift-pump",
+    desc: "Calculate the right lift pump for your diesel. FASS and AirDog sizing based on target HP, platform-specific warnings for VP44 and CP4 trucks, fuel line sizing, and air separation guidance.",
+    tags: ["Diesel Fuel System", "Lift Pump GPH", "FASS", "AirDog"],
+    icon: Droplet,
   },
 ];
 
@@ -210,6 +220,37 @@ export default function CalculatorsIndex() {
             </Link>
           ))}
         </div>
+
+        {/* Diesel Section */}
+        <div className="mt-12 mb-6 flex items-center gap-4">
+          <div className="h-px flex-1 bg-gray-300" />
+          <h2 className="text-lg font-bold text-[#1a1a1a] uppercase tracking-wide shrink-0">Diesel Calculators</h2>
+          <div className="h-px flex-1 bg-gray-300" />
+        </div>
+
+        <div className="grid grid-cols-1 sm:grid-cols-2 gap-6">
+          {dieselCalculators.map((calc) => (
+            <Link key={calc.href} href={calc.href}>
+              <div className="group block p-6 rounded-lg border border-gray-200 bg-white hover:border-[#E85D04] hover:shadow-md transition-all cursor-pointer h-full">
+                <div className="flex items-start gap-4">
+                  <div className="w-10 h-10 rounded-lg bg-[#E85D04]/10 flex items-center justify-center text-[#E85D04] shrink-0 group-hover:bg-[#E85D04] group-hover:text-white transition-all">
+                    <calc.icon className="w-5 h-5" />
+                  </div>
+                  <div className="flex-1 min-w-0">
+                    <h2 className="text-xl font-bold mb-1 group-hover:text-[#E85D04] transition-colors">{calc.title}</h2>
+                    <p className="text-sm text-gray-500 mb-3">{calc.desc}</p>
+                    <div className="flex flex-wrap gap-1">
+                      {calc.tags.map(tag => (
+                        <span key={tag} className="text-xs bg-gray-100 px-2 py-0.5 rounded-full text-gray-500 font-medium">{tag}</span>
+                      ))}
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </Link>
+          ))}
+        </div>
+
         <div className="mt-10">
           <AdBanner slot="3333333333" format="horizontal" />
         </div>

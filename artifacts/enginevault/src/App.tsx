@@ -46,6 +46,7 @@ import BearingClearanceCalculator from "@/pages/calculators/bearing-clearance";
 import FuelInjectorSizingCalculator from "@/pages/calculators/fuel-injector-sizing";
 import HeadFlowCalculator from "@/pages/calculators/head-flow";
 import GearRatioCalculator from "@/pages/calculators/gear-ratio";
+import DieselLiftPumpCalculator from "@/pages/calculators/diesel-lift-pump";
 
 import CamGuide from "@/pages/cam-guide";
 import TorqueSpecs from "@/pages/torque-specs";
@@ -114,6 +115,7 @@ function Router() {
         <Route path="/calculators/fuel-injector-sizing" component={FuelInjectorSizingCalculator} />
         <Route path="/calculators/head-flow" component={HeadFlowCalculator} />
         <Route path="/calculators/gear-ratio" component={GearRatioCalculator} />
+        <Route path="/calculators/diesel-lift-pump" component={DieselLiftPumpCalculator} />
 
         <Route path="/cam-guide" component={CamGuide} />
 
