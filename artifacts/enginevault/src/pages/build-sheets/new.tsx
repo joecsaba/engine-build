@@ -6,7 +6,7 @@ import { Button } from "@/components/ui/button";
 import { Input } from "@/components/ui/input";
 import { Label } from "@/components/ui/label";
 import { CheckCircle2, Loader2 } from "lucide-react";
-import { useUser } from "@clerk/react";
+import { useAuth } from "@/context/AuthContext";
 import { useBuildContext } from "@/context/BuildContext";
 
 const ENGINES = [
@@ -28,7 +28,7 @@ const ENGINES = [
 
 export default function NewBuildPage() {
   const [, setLocation] = useLocation();
-  const { isSignedIn } = useUser();
+  const { isSignedIn } = useAuth();
   const { loadBuild } = useBuildContext();
   const [selectedEngine, setSelectedEngine] = useState<string | null>(null);
   const [buildName, setBuildName] = useState("");

@@ -229,7 +229,7 @@ function ShoppingListModal({ platform, selections, total, onClose }: {
           </div>
 
           <div className="bg-amber-50 border border-amber-200 rounded-lg p-4 text-xs text-amber-800">
-            <strong>Price Disclaimer:</strong> All prices are reference values. Verify current pricing at Summit Racing and Jegs before ordering. Prices may vary. EngineVault is not affiliated with any retailer.
+            <strong>Price Disclaimer:</strong> All prices are reference values. Verify current pricing at Summit Racing and Jegs before ordering. Prices may vary. Engine-build.com is not affiliated with any retailer.
           </div>
         </div>
 

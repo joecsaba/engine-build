@@ -1,6 +1,6 @@
 import { createContext, useContext, useState, useCallback, useRef, useEffect } from "react";
 
-const STORAGE_KEY = "enginevault_build_v1";
+const STORAGE_KEY = "enginebuild_data_v1";
 const SYNC_DEBOUNCE_MS = 800;
 
 // ─── Types ───────────────────────────────────────────────────────────────────

@@ -2,18 +2,20 @@ import { Link } from "wouter";
 import { Button } from "@/components/ui/button";
 import { Menu, Wrench, LogIn, User } from "lucide-react";
 import { Sheet, SheetContent, SheetTrigger } from "@/components/ui/sheet";
-import { useUser, useClerk } from "@clerk/react";
+import { useAuth } from "@/context/AuthContext";
 import {
   DropdownMenu,
   DropdownMenuContent,
   DropdownMenuItem,
   DropdownMenuTrigger,
 } from "@/components/ui/dropdown-menu";
-import { Avatar, AvatarFallback, AvatarImage } from "@/components/ui/avatar";
+import { Avatar, AvatarFallback } from "@/components/ui/avatar";
 
 export function Navbar() {
-  const { isSignedIn, user } = useUser();
-  const { signOut } = useClerk();
+  const { isSignedIn, user, signOut } = useAuth();
+
+  const displayName = user?.name || user?.email || "User";
+  const initial = displayName[0]?.toUpperCase();
 
   const links = [
     { href: "/engine-data", label: "Engine Data" },
@@ -43,9 +45,8 @@ export function Navbar() {
               <DropdownMenuTrigger asChild>
                 <button className="flex items-center gap-2 rounded-full focus:outline-none focus:ring-2 focus:ring-[#E85D04] focus:ring-offset-2 focus:ring-offset-[#1a1a1a]">
                   <Avatar className="h-8 w-8">
-                    <AvatarImage src={user.imageUrl} alt={user.firstName ?? "User"} />
                     <AvatarFallback className="bg-[#E85D04] text-white text-xs">
-                      {user.firstName?.[0] ?? <User className="h-4 w-4" />}
+                      {initial ?? <User className="h-4 w-4" />}
                     </AvatarFallback>
                   </Avatar>
                 </button>
@@ -95,12 +96,11 @@ export function Navbar() {
                     <>
                       <div className="flex items-center gap-3 mb-4">
                         <Avatar className="h-8 w-8">
-                          <AvatarImage src={user.imageUrl} alt={user.firstName ?? "User"} />
                           <AvatarFallback className="bg-[#E85D04] text-white text-xs">
-                            {user.firstName?.[0] ?? <User className="h-4 w-4" />}
+                            {initial ?? <User className="h-4 w-4" />}
                           </AvatarFallback>
                         </Avatar>
-                        <span className="text-sm text-gray-300">{user.firstName ?? "User"}</span>
+                        <span className="text-sm text-gray-300">{displayName}</span>
                       </div>
                       <Link href="/build-sheets/my-builds" className="text-lg font-medium text-gray-300 hover:text-white block mb-4">
                         My Builds

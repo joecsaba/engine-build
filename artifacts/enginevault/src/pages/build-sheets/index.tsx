@@ -1,7 +1,7 @@
 import { Link } from "wouter";
 import { ClipboardList, ShoppingCart, ChevronRight, Wrench, PlusCircle } from "lucide-react";
 import { PageHeader } from "@/components/layout/PageHeader";
-import { useUser } from "@clerk/react";
+import { useAuth } from "@/context/AuthContext";
 
 const tools = [
   {
@@ -34,7 +34,7 @@ const tools = [
 ];
 
 export default function BuildSheetsIndex() {
-  const { isSignedIn } = useUser();
+  const { isSignedIn } = useAuth();
 
   return (
     <div>
@@ -94,7 +94,7 @@ export default function BuildSheetsIndex() {
         <div className="mt-10 p-6 rounded-lg bg-gray-50 border border-gray-200">
           <h3 className="font-semibold text-lg mb-2">About Part Pricing</h3>
           <p className="text-sm text-gray-600">
-            Part prices shown in the Build Planner are reference values sourced from Summit Racing and Jegs catalogs. Prices fluctuate — always verify current pricing before ordering. Part numbers are listed so you can search directly. EngineVault is not affiliated with any retailer.
+            Part prices shown in the Build Planner are reference values sourced from Summit Racing and Jegs catalogs. Prices fluctuate — always verify current pricing before ordering. Part numbers are listed so you can search directly. Engine-build.com is not affiliated with any retailer.
           </p>
         </div>
       </div>

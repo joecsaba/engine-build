@@ -200,6 +200,13 @@ const dieselCalculators: { title: string; href: string; desc: string; tags: stri
     tags: ["Nozzle Size", "Pop Pressure", "Cummins Injector", "Flow Area"],
     icon: Target,
   },
+  {
+    title: "Diesel Smoke Limit / Lambda Calculator",
+    href: "/calculators/diesel-smoke-lambda",
+    desc: "Diesel-specific lambda and AFR calculator with smoke prediction, boost-to-fuel balance analysis, and operating range assessment for Cummins, Duramax, and Powerstroke. Three modes: assess your wideband reading, predict smoke from boost and fuel delivery, or find your air/fuel bottleneck.",
+    tags: ["Diesel Lambda", "Smoke Limit", "Boost-to-Fuel", "Diesel AFR"],
+    icon: Flame,
+  },
 ];
 
 export default function CalculatorsIndex() {

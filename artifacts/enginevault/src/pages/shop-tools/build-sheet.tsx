@@ -447,7 +447,7 @@ export default function BuildSheetApp() {
                 }}>{planColor.label}</span>
               </div>
               <div style={{ fontSize: 12, color: "#71717A" }}>
-                {mode === "diy" ? "DIY Rebuild Sheet" : "Professional Build Sheet"} · EngineVault
+                {mode === "diy" ? "DIY Rebuild Sheet" : "Professional Build Sheet"} · Engine-build.com
               </div>
             </div>
 
