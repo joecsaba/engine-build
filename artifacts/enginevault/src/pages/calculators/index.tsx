@@ -149,6 +149,20 @@ const calculators: { title: string; href: string; desc: string; tags: string[]; 
     icon: Flame,
   },
   {
+    title: "Diesel Single Turbo Finder",
+    href: "/calculators/diesel-single-turbo",
+    desc: "Find the right single turbo upgrade for your diesel. Match Holset, BorgWarner S-series, Garrett, and aftermarket turbos for Cummins, Duramax, and Powerstroke with airflow, EGT, and drive pressure calculations.",
+    tags: ["Diesel Turbo", "Holset", "S300", "EGT", "Single Turbo"],
+    icon: Wind,
+  },
+  {
+    title: "Diesel Compound Turbo Sizing",
+    href: "/calculators/diesel-compound-turbo",
+    desc: "Size compound (twin) turbo setups for diesel engines. Match BorgWarner S300/S400 and Holset turbos with pressure ratio split, drive pressure, and intercooler calculations for Cummins, Duramax, and Powerstroke.",
+    tags: ["Compound Turbo", "S300/S400", "Diesel Boost", "Drive Pressure"],
+    icon: Wind,
+  },
+  {
     title: "Gear Ratio / Final Drive",
     href: "/calculators/gear-ratio",
     desc: "Calculate RPM at speed for any axle ratio, tire size, and transmission. Compare gear ratios side by side, see highway cruise RPM, and find the right gears for your build.",

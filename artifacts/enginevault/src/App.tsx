@@ -39,6 +39,8 @@ import TorqueExtensionCalculator from "@/pages/calculators/torque-extension";
 import HpEstimator from "@/pages/calculators/hp-estimator";
 import ValvetrainBuilderCalculator from "@/pages/calculators/valvetrain-builder";
 import TurboFinderCalculator from "@/pages/calculators/turbo-finder";
+import DieselCompoundTurboCalculator from "@/pages/calculators/diesel-compound-turbo";
+import DieselSingleTurboCalculator from "@/pages/calculators/diesel-single-turbo";
 import CarbCfmSizingCalculator from "@/pages/calculators/carb-cfm-sizing";
 import BearingClearanceCalculator from "@/pages/calculators/bearing-clearance";
 import FuelInjectorSizingCalculator from "@/pages/calculators/fuel-injector-sizing";
@@ -105,6 +107,8 @@ function Router() {
         <Route path="/calculators/hp-estimator" component={HpEstimator} />
         <Route path="/calculators/valvetrain-builder" component={ValvetrainBuilderCalculator} />
         <Route path="/calculators/turbo-finder" component={TurboFinderCalculator} />
+        <Route path="/calculators/diesel-compound-turbo" component={DieselCompoundTurboCalculator} />
+        <Route path="/calculators/diesel-single-turbo" component={DieselSingleTurboCalculator} />
         <Route path="/calculators/carb-cfm-sizing" component={CarbCfmSizingCalculator} />
         <Route path="/calculators/bearing-clearance" component={BearingClearanceCalculator} />
         <Route path="/calculators/fuel-injector-sizing" component={FuelInjectorSizingCalculator} />
