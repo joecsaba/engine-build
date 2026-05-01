@@ -2,7 +2,7 @@ import { Link } from "wouter";
 import {
   Cylinder, Gauge, Circle, Settings2, ArrowDownUp,
   Zap, Timer, Flame, Ruler, MoveVertical,
-  RotateCcw, ShieldAlert, Codesandbox, Wrench, ArrowRightLeft, Wind, Target, Droplet, Activity, Cog, type LucideIcon,
+  RotateCcw, ShieldAlert, Codesandbox, Wrench, ArrowRightLeft, Wind, Target, Droplet, Activity, Cog, Thermometer, type LucideIcon,
 } from "lucide-react";
 import { PageHeader } from "@/components/layout/PageHeader";
 import { AdBanner } from "@/components/ads/AdBanner";
@@ -185,6 +185,13 @@ const dieselCalculators: { title: string; href: string; desc: string; tags: stri
     desc: "Calculate the right lift pump for your diesel. FASS and AirDog sizing based on target HP, platform-specific warnings for VP44 and CP4 trucks, fuel line sizing, and air separation guidance.",
     tags: ["Diesel Fuel System", "Lift Pump GPH", "FASS", "AirDog"],
     icon: Droplet,
+  },
+  {
+    title: "Diesel EGT & Drive Pressure",
+    href: "/calculators/diesel-egt-drive-pressure",
+    desc: "Check your pyrometer readings against safe limits, estimate EGTs for your setup, or analyze drive pressure ratio. Pre-turbo vs post-turbo correction with platform-specific thresholds for Cummins, Duramax, and Powerstroke.",
+    tags: ["EGT", "Drive Pressure", "Pyrometer", "Turbo Health"],
+    icon: Thermometer,
   },
 ];
 
