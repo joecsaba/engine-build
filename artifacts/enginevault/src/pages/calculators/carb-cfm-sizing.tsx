@@ -7,15 +7,63 @@ import { Select, SelectContent, SelectItem, SelectTrigger, SelectValue } from "@
 import { Slider } from "@/components/ui/slider";
 import { useBuildField } from "@/hooks/useBuildField";
 import { useBuildContext } from "@/context/BuildContext";
-import { ChevronDown, AlertTriangle, Info, Lightbulb, Gauge } from "lucide-react";
+import { ChevronDown, AlertTriangle, Info, Lightbulb, Gauge, Calculator } from "lucide-react";
 
 // ── Available carb sizes (real Holley / Edelbrock catalog sizes) ──────
 // Verified against current Holley, Edelbrock, and Demon catalogs.
 // 735 removed (no real product). 770, 870, 1150 added (Holley Street Avenger / Dominator).
 const CARB_SIZES = [390, 450, 500, 525, 570, 600, 650, 670, 700, 750, 770, 780, 800, 830, 850, 870, 950, 1050, 1150];
 
+// ── Vizard Correction Factor data ────────────────────────────────────
+// Calibrated from David Vizard's published worked examples in
+// "How to Super Tune and Modify Holley Carburetors":
+//   - 482ci, race-ported heads, 248° cam → CF=1.065
+//   - 306ci, race-ported heads, 258° cam → CF=1.07
+// Other head categories are scaled proportionally above/below the race baseline.
+type VizardHeadType = "stock" | "pocket" | "street" | "race" | "toprace" | "prostock";
+
+const VIZARD_HEAD_LABELS: Record<VizardHeadType, { label: string; desc: string }> = {
+  stock:    { label: "Stock OE (pre-1990 design)",           desc: "Factory cast iron heads, no port work" },
+  pocket:   { label: "Pocket-ported / Vortec / Aftermarket", desc: "Pocket-ported pre-1990 or stock Vortec/aftermarket aluminum heads" },
+  street:   { label: "Street-ported heads",                  desc: "Professional street port job, good bowl work" },
+  race:     { label: "Race-ported conventional heads",       desc: "Full race port — Dart Iron Eagle, AFR, similar" },
+  toprace:  { label: "Top-of-the-line race-ported",          desc: "Best available race port — Dart Pro 1, Brodix Race-Rite, etc." },
+  prostock: { label: "ProStock / NASCAR Cup heads",          desc: "Purpose-built pro-level castings — ProStock, Cup Car, etc." },
+};
+
+// CF = base + (camDuration - 220) * slope
+// Derived by solving the two Vizard book examples simultaneously for "race" heads,
+// then spacing other head types at proportional offsets.
+const VIZARD_CF_DATA: Record<VizardHeadType, { base: number; slope: number }> = (() => {
+  // From Vizard's book: race heads at 248° → CF=1.065, race heads at 258° → CF=1.07
+  // Solving: base + 28*slope = 1.065, base + 38*slope = 1.07 → slope=0.0005, base=1.051
+  const raceBase = 1.051;
+  const raceSlope = 0.0005;
+  return {
+    stock:    { base: raceBase - 0.18, slope: raceSlope * 0.7 },
+    pocket:   { base: raceBase - 0.12, slope: raceSlope * 0.8 },
+    street:   { base: raceBase - 0.06, slope: raceSlope * 0.9 },
+    race:     { base: raceBase,        slope: raceSlope },
+    toprace:  { base: raceBase + 0.06, slope: raceSlope * 1.1 },
+    prostock: { base: raceBase + 0.12, slope: raceSlope * 1.2 },
+  };
+})();
+
+function vizardCorrectionFactor(camDuration050: number, headType: VizardHeadType): number {
+  const data = VIZARD_CF_DATA[headType];
+  const cf = data.base + (camDuration050 - 220) * data.slope;
+  return Math.max(0.75, Math.min(1.20, cf));
+}
+
+function vizardCfmCalc(cid: number, peakPowerRpm: number, camDuration050: number, headType: VizardHeadType) {
+  const rpm = peakPowerRpm + 200; // Vizard's rule: use peak power RPM + 200
+  const cf = vizardCorrectionFactor(camDuration050, headType);
+  const cfm = (cid * rpm * cf) / 3456;
+  return { cfm, cf, rpm };
+}
+
 // ── Types ────────────────────────────────────────────────────────────
-type VeMode = "preset" | "advanced";
+type VeMode = "vizard" | "preset" | "advanced";
 type BuildLevel = "stock" | "mild" | "hot" | "race" | "custom";
 type IntakeStyle = "single4" | "dualquad" | "single2";
 type IntendedUse = "street" | "streetstrip" | "race";
@@ -173,7 +221,11 @@ export default function CarbCfmSizingCalculator() {
   const [intendedUse, setIntendedUse] = useState<IntendedUse>("street");
 
   // ── VE mode toggle ─────────────────────────────────────────────────
-  const [veMode, setVeMode] = useState<VeMode>("preset");
+  const [veMode, setVeMode] = useState<VeMode>("vizard");
+
+  // ── Vizard mode inputs ─────────────────────────────────────────────
+  const [vizardCam, setVizardCam] = useState("");
+  const [vizardHeadType, setVizardHeadType] = useState<VizardHeadType>("race");
 
   // Preset mode
   const [buildLevel, setBuildLevel] = useState<BuildLevel>("mild");
@@ -300,9 +352,17 @@ export default function CarbCfmSizingCalculator() {
 
   const ve = veBreakdown.final;
 
+  // ── Vizard mode calculation ────────────────────────────────────────
+  const vizardCamVal = vizardCam ? parseFloat(vizardCam) : 0;
+  const vizardResult = vizardCamVal > 0 && cid > 0 && rpmVal > 0
+    ? vizardCfmCalc(cid, rpmVal, vizardCamVal, vizardHeadType)
+    : null;
+
   // ── CFM Calculation ────────────────────────────────────────────────
   // CFM = (CID x RPM x VE) / 3456
-  const calculatedCfm = (cid * rpmVal * ve) / 3456;
+  const calculatedCfm = veMode === "vizard"
+    ? (vizardResult?.cfm ?? 0)
+    : (cid * rpmVal * ve) / 3456;
 
   // Altitude correction: thinner air means the engine breathes less,
   // so the carb should be sized for actual air density, not sea level.
@@ -341,7 +401,7 @@ export default function CarbCfmSizingCalculator() {
   }
 
   const streetAlternative = getNextSizeDown(recommendedSize);
-  const valid = cid > 0 && rpmVal > 0;
+  const valid = cid > 0 && rpmVal > 0 && (veMode !== "vizard" || vizardCamVal > 0);
 
   // Head flow per cylinder demand — useful sanity check
   const cfmPerCyl = valid ? effectiveCalculatedCfm / cylVal : 0;
@@ -356,7 +416,7 @@ export default function CarbCfmSizingCalculator() {
   return (
     <div className="container mx-auto py-8 px-4 max-w-5xl">
       <SEOHead
-        title="Carburetor CFM Sizing Calculator"
+        title="Carburetor CFM Calculator | What Size Carb Do I Need?"
         description="Calculate the right carburetor size for your engine. Estimates VE from cam duration, head flow, intake, and exhaust data. Real carb sizes from Holley and Edelbrock."
         canonical="/calculators/carb-cfm-sizing"
         keywords="carburetor sizing calculator, carb CFM calculator, what size carb do I need, Holley carburetor size, 4 barrel carb calculator, carb sizing from cam specs"
@@ -364,19 +424,27 @@ export default function CarbCfmSizingCalculator() {
 
       <h1 className="text-3xl font-bold mb-2">Carburetor / CFM Sizing Calculator</h1>
       <p className="text-muted-foreground mb-6">
-        Size your carburetor from the standard CFM formula. Use Quick mode for a fast estimate, or
-        Advanced mode to calculate VE from your actual cam, heads, intake, and exhaust specs.
+        Size your carburetor using David Vizard's correction-factor method (simplest — just needs cam
+        duration and head type), a quick build-level estimate, or the advanced parts-based VE calculator.
       </p>
 
       {/* ── VE Mode Toggle ─────────────────────────────────────────── */}
       <div className="flex rounded-lg border overflow-hidden mb-8">
         <button
           className={`flex-1 px-4 py-2.5 text-sm font-medium transition-colors ${
+            veMode === "vizard" ? "bg-[#E85D04] text-white" : "bg-white text-gray-600 hover:bg-gray-50"
+          }`}
+          onClick={() => setVeMode("vizard")}
+        >
+          Simple — Vizard Method
+        </button>
+        <button
+          className={`flex-1 px-4 py-2.5 text-sm font-medium transition-colors ${
             veMode === "preset" ? "bg-[#E85D04] text-white" : "bg-white text-gray-600 hover:bg-gray-50"
           }`}
           onClick={() => setVeMode("preset")}
         >
-          Quick — Pick a Build Level
+          Quick — Build Level
         </button>
         <button
           className={`flex-1 px-4 py-2.5 text-sm font-medium transition-colors ${
@@ -384,7 +452,7 @@ export default function CarbCfmSizingCalculator() {
           }`}
           onClick={() => setVeMode("advanced")}
         >
-          Advanced — Enter Your Parts
+          Advanced — Parts
         </button>
       </div>
 
@@ -440,7 +508,7 @@ export default function CarbCfmSizingCalculator() {
 
               {/* RPM */}
               <div className="space-y-2">
-                <Label>Peak RPM (where you want max power)</Label>
+                <Label>Peak Power RPM</Label>
                 <Input
                   type="number"
                   step="100"
@@ -449,7 +517,9 @@ export default function CarbCfmSizingCalculator() {
                   placeholder="5500"
                 />
                 <p className="text-xs text-muted-foreground">
-                  Your target power peak, not your redline.
+                  {veMode === "vizard"
+                    ? "Your target power peak — Vizard's method adds +200 RPM automatically."
+                    : "Your target power peak, not your redline."}
                 </p>
               </div>
 
@@ -469,6 +539,68 @@ export default function CarbCfmSizingCalculator() {
               </div>
             </CardContent>
           </Card>
+
+          {/* ── Vizard Mode ────────────────────────────────────────── */}
+          {veMode === "vizard" && (
+            <Card>
+              <CardHeader>
+                <CardTitle className="flex items-center gap-2">
+                  <Calculator className="w-4 h-4" />
+                  Vizard Correction Factor
+                </CardTitle>
+                <CardDescription>
+                  David Vizard's method uses cam duration and cylinder head quality to determine a
+                  single correction factor (CF) — no guessing at VE%. From his book
+                  "How to Super Tune and Modify Holley Carburetors".
+                </CardDescription>
+              </CardHeader>
+              <CardContent className="space-y-4">
+                <div className="rounded-md bg-muted/50 px-4 py-3 text-center font-mono text-sm">
+                  CFM = (CID &times; (Peak RPM + 200) &times; CF) &divide; 3,456
+                </div>
+                <div className="space-y-2">
+                  <Label>Cam Duration at .050" Lift (degrees)</Label>
+                  <Input
+                    type="number"
+                    step="2"
+                    min="180"
+                    max="280"
+                    placeholder="e.g. 224"
+                    value={vizardCam}
+                    onChange={(e) => setVizardCam(e.target.value)}
+                  />
+                  <p className="text-xs text-muted-foreground">
+                    From your cam card — stock ~190°, mild street ~210°, hot street ~230°, race ~248°+
+                  </p>
+                </div>
+                <div className="space-y-2">
+                  <Label>Cylinder Head Type</Label>
+                  <Select value={vizardHeadType} onValueChange={(v) => setVizardHeadType(v as VizardHeadType)}>
+                    <SelectTrigger><SelectValue /></SelectTrigger>
+                    <SelectContent>
+                      {(Object.entries(VIZARD_HEAD_LABELS) as [VizardHeadType, { label: string; desc: string }][]).map(([key, val]) => (
+                        <SelectItem key={key} value={key}>{val.label}</SelectItem>
+                      ))}
+                    </SelectContent>
+                  </Select>
+                  <p className="text-xs text-muted-foreground">
+                    {VIZARD_HEAD_LABELS[vizardHeadType].desc}
+                  </p>
+                </div>
+                {vizardCam && parseFloat(vizardCam) > 0 && (
+                  <div className="rounded-md border bg-muted/30 px-4 py-3">
+                    <p className="text-xs text-muted-foreground mb-1">Correction Factor (CF)</p>
+                    <p className="text-2xl font-bold">
+                      {vizardCorrectionFactor(parseFloat(vizardCam), vizardHeadType).toFixed(4)}
+                    </p>
+                    <p className="text-xs text-muted-foreground mt-1">
+                      Based on {vizardCam}° cam with {VIZARD_HEAD_LABELS[vizardHeadType].label.toLowerCase()}
+                    </p>
+                  </div>
+                )}
+              </CardContent>
+            </Card>
+          )}
 
           {/* ── VE: Preset Mode ──────────────────────────────────── */}
           {veMode === "preset" && (
@@ -774,9 +906,16 @@ export default function CarbCfmSizingCalculator() {
                     <p className="text-sm font-medium opacity-80">Calculated CFM</p>
                     <p className="text-4xl font-bold">{effectiveCalculatedCfm.toFixed(0)}</p>
                     <p className="text-xs opacity-70 mt-1">
-                      ({cid.toFixed(0)} CID x {rpmVal} RPM x {pct(ve)} VE) / 3456
-                      {useAltCorrection && ` x ${(densityRatio * 100).toFixed(1)}% density`}
+                      {veMode === "vizard" && vizardResult
+                        ? `(${cid.toFixed(0)} CID × ${vizardResult.rpm} RPM × ${vizardResult.cf.toFixed(4)} CF) / 3456`
+                        : `(${cid.toFixed(0)} CID × ${rpmVal} RPM × ${pct(ve)} VE) / 3456`}
+                      {useAltCorrection && ` × ${(densityRatio * 100).toFixed(1)}% density`}
                     </p>
+                    {veMode === "vizard" && vizardResult && (
+                      <p className="text-xs opacity-70 mt-0.5">
+                        Vizard method: Peak RPM + 200 = {vizardResult.rpm} · CF = {vizardResult.cf.toFixed(4)}
+                      </p>
+                    )}
                   </div>
 
                   <div>
@@ -909,9 +1048,13 @@ export default function CarbCfmSizingCalculator() {
                       <p className="text-xs text-muted-foreground">({cylVal} cylinders)</p>
                     </div>
                     <div>
-                      <p className="text-xs text-muted-foreground">VE Used</p>
-                      <p className="text-lg font-bold">{pct(ve)}</p>
-                      <p className="text-xs text-muted-foreground">{veMode === "advanced" ? "from parts data" : "from build level"}</p>
+                      <p className="text-xs text-muted-foreground">{veMode === "vizard" ? "Correction Factor" : "VE Used"}</p>
+                      <p className="text-lg font-bold">
+                        {veMode === "vizard" && vizardResult ? vizardResult.cf.toFixed(4) : pct(ve)}
+                      </p>
+                      <p className="text-xs text-muted-foreground">
+                        {veMode === "vizard" ? "Vizard CF method" : veMode === "advanced" ? "from parts data" : "from build level"}
+                      </p>
                     </div>
                   </div>
 
