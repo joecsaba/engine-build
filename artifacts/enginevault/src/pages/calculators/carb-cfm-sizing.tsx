@@ -598,6 +598,19 @@ export default function CarbCfmSizingCalculator() {
                     </p>
                   </div>
                 )}
+                <div className="rounded-md border-t pt-4 mt-2">
+                  <p className="text-xs text-muted-foreground leading-relaxed">
+                    <strong className="text-foreground">About this method:</strong> This calculator is based on
+                    the carburetor sizing formula developed by David Vizard, one of the most respected engine
+                    builders and automotive writers in the performance world. The correction factor approach and
+                    head-type/cam-duration graph come from his book{" "}
+                    <em>"David Vizard's How to Super Tune and Modify Holley Carburetors"</em> (SA Design, 2013).
+                    Vizard's method eliminates the guesswork of estimating volumetric efficiency by anchoring the
+                    calculation to real dyno-tested engine combinations. For the full theory including brake
+                    specific air consumption (BSAC) and advanced tuning, we highly recommend picking up a copy
+                    of his book.
+                  </p>
+                </div>
               </CardContent>
             </Card>
           )}
