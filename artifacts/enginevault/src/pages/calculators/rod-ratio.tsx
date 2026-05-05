@@ -5,6 +5,7 @@ import { Label } from "@/components/ui/label";
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 import { useBuildField } from "@/hooks/useBuildField";
 import { useBuildContext } from "@/context/BuildContext";
+import { BuildBanner } from "@/components/BuildBanner";
 
 const commonEngines = [
   { name: "Chevy 350 (SBC)", stroke: "3.480", rod: "5.700", ratio: 1.638 },
@@ -48,11 +49,14 @@ export default function RodRatioCalculator() {
   return (
     <div className="container mx-auto py-8 px-4 max-w-5xl">
       <SEOHead
-        title="Connecting Rod Ratio Calculator"
+        title="Rod Ratio Calculator | Connecting Rod to Stroke"
         description="Calculate your connecting rod ratio (L/S) and see where it falls in the performance spectrum. Compare against common engines like SBC 350, LS1, Ford 302, 2JZ."
         canonical="/calculators/rod-ratio"
         keywords="rod ratio calculator, connecting rod ratio, rod length stroke ratio, engine rod ratio, L/S ratio calculator"
       />
+      <BuildBanner savedFields={[
+        { label: "Rod Ratio", key: "computed.rodRatio", value: ratio > 0 ? ratio.toFixed(3) : "" },
+      ]} />
       <h1 className="text-3xl font-bold mb-2">Connecting Rod Ratio Calculator</h1>
       <p className="text-muted-foreground mb-8">Calculate your connecting rod ratio and see where it falls in the performance spectrum.</p>
 

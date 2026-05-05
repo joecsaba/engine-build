@@ -1,4 +1,5 @@
 import { createContext, useContext, useState, useCallback, useRef, useEffect } from "react";
+import { authFetch } from "@/lib/authFetch";
 
 const STORAGE_KEY = "enginebuild_data_v1";
 const SYNC_DEBOUNCE_MS = 800;
@@ -114,11 +115,14 @@ export function BuildContextProvider({ children }: { children: React.ReactNode }
     setIsSyncing(true);
 
     try {
-      await fetch(`/api/builds/${id}/fields/batch`, {
+      const res = await authFetch(`/api/builds/${id}/fields/batch`, {
         method: "POST",
-        headers: { "Content-Type": "application/json" },
         body: JSON.stringify({ fields }),
       });
+      if (!res.ok) {
+        throw new Error(`Sync failed: ${res.status}`);
+      }
+      console.log(`[Build] Saved ${Object.keys(fields).length} fields to build ${id}`);
       setActiveBuild((prev) =>
         prev ? { ...prev, isDirty: false, lastSyncedAt: Date.now() } : prev,
       );
@@ -158,7 +162,7 @@ export function BuildContextProvider({ children }: { children: React.ReactNode }
 
   const loadBuild = useCallback(async (buildId: number) => {
     try {
-      const res = await fetch(`/api/builds/${buildId}`);
+      const res = await authFetch(`/api/builds/${buildId}`);
       if (!res.ok) throw new Error("Failed to load build");
       const data = await res.json();
 

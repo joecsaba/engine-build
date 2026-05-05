@@ -1,10 +1,12 @@
-import { useState } from "react";
+import { useState, useEffect } from "react";
 import { SEOHead } from "@/components/SEOHead";
 import { Input } from "@/components/ui/input";
 import { Label } from "@/components/ui/label";
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 import { Select, SelectContent, SelectItem, SelectTrigger, SelectValue } from "@/components/ui/select";
 import { Tabs, TabsContent, TabsList, TabsTrigger } from "@/components/ui/tabs";
+import { useBuildContext } from "@/context/BuildContext";
+import { BuildBanner } from "@/components/BuildBanner";
 
 /* ── Platform data ──────────────────────────────────────────────── */
 
@@ -91,6 +93,8 @@ function ResultRow({ label, value, sub }: { label: string; value: string; sub?: 
 /* ── Component ──────────────────────────────────────────────────── */
 
 export default function PushrodLengthCalculator() {
+  const { activeBuild, getField, setField: setBuildField } = useBuildContext();
+
   /* Tab 1 state */
   const [platform, setPlatform] = useState("ls1");
   const [customStock, setCustomStock] = useState("7.400");
@@ -131,6 +135,48 @@ export default function PushrodLengthCalculator() {
   const delta = newLength - stockLength;
   const recommended = roundToNearest(newLength, 0.025);
   const nearby = nearestStockLengths(newLength, 3);
+
+  // Pre-fill from build when fields are available
+  const buildFields = activeBuild?.fields;
+  const [buildSynced, setBuildSynced] = useState(false);
+  useEffect(() => {
+    if (!activeBuild || !buildFields || buildSynced) return;
+    const hasFields = Object.keys(buildFields).length > 0;
+    if (!hasFields) return;
+
+    // Block mill from deck cut
+    const deckCut = buildFields["machineWork.deckCutAmount"];
+    if (deckCut && parseFloat(deckCut) > 0) setBlockMill(deckCut);
+
+    // Try to match engine platform from build slug
+    const slug = activeBuild.engineSlug;
+    if (slug.includes("ls") || slug === "chevrolet_ls1" || slug === "chevrolet_ls3") {
+      setPlatform("ls1");
+    } else if (slug === "sbc350" || slug.includes("sbc")) {
+      setPlatform("sbc350");
+    } else if (slug.includes("ford_302") || slug.includes("sbf")) {
+      setPlatform("sbf302");
+    } else if (slug.includes("ford_351")) {
+      setPlatform("sbf351w-ft");
+    } else if (slug.includes("hemi")) {
+      setPlatform("hemi57-int");
+    }
+
+    // Existing pushrod length from build
+    const existingPushrod = buildFields["valvetrain.pushrodLength"];
+    if (existingPushrod && parseFloat(existingPushrod) > 0) {
+      setCustomStock(existingPushrod);
+    }
+
+    setBuildSynced(true);
+  }, [activeBuild?.id, buildFields]);
+
+  // Write result back to build
+  useEffect(() => {
+    if (activeBuild && newLength > 0 && delta !== 0) {
+      setBuildField("computed.pushrodLength", recommended.toFixed(3));
+    }
+  }, [recommended, activeBuild?.id]);
 
   /* ── Tab 2 calculations ─────────────────────────────────────── */
   const cl = parseFloat(checkerLength) || 0;
@@ -219,6 +265,9 @@ export default function PushrodLengthCalculator() {
         canonical="/calculators/pushrod-length"
         keywords="pushrod length calculator, LS pushrod length, SBC pushrod length, checker pushrod, pushrod preload, rocker geometry, hydraulic lifter preload"
       />
+      <BuildBanner savedFields={[
+        { label: "Pushrod Length", key: "computed.pushrodLength", value: recommended > 0 && delta !== 0 ? recommended.toFixed(3) : "", suffix: "\"" },
+      ]} />
       <h1 className="text-3xl font-bold mb-2">Pushrod Length Calculator</h1>
       <p className="text-muted-foreground mb-8">Calculate the correct pushrod length for your engine combination using delta-from-stock or checker pushrod methods.</p>
 

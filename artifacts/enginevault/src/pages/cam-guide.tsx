@@ -1,5 +1,6 @@
 import { useState, useEffect } from "react";
 import { Link, useSearch } from "wouter";
+import { SEOHead } from "@/components/SEOHead";
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 import { Input } from "@/components/ui/input";
 import { Label } from "@/components/ui/label";
@@ -9,7 +10,9 @@ import { PageHeader } from "@/components/layout/PageHeader";
 import { AlertTriangle, CheckCircle2, ArrowLeft } from "lucide-react";
 import type { CamRecommendation } from "@/context/BuildContext";
 import { useBuildContext } from "@/context/BuildContext";
+import { BuildBanner } from "@/components/BuildBanner";
 import VizardCamCalculator from "@/pages/calculators/cam-duration";
+import ValvetrainBuilder from "@/pages/calculators/valvetrain-builder";
 
 type CamTypeKey = "hydraulic_flat" | "hydraulic_roller" | "solid_flat" | "solid_roller";
 
@@ -234,7 +237,7 @@ export default function CamGuide() {
   const fromBuildParam = new URLSearchParams(searchString).get("fromBuild");
   const fromBuildId = fromBuildParam ? parseInt(fromBuildParam, 10) : null;
 
-  const [activeTab, setActiveTab] = useState<"guide" | "simple" | "vizard">("guide");
+  const [activeTab, setActiveTab] = useState<"guide" | "simple" | "vizard" | "valvetrain">("guide");
   const [cam1, setCam1] = useState({ duration: "218", lsa: "112", lift: "0.520", intDuration: "218", exhDuration: "224", intLift: "0.520", exhLift: "0.500" });
   const [cam2, setCam2] = useState({ duration: "232", lsa: "108", lift: "0.580", intDuration: "232", exhDuration: "240", intLift: "0.580", exhLift: "0.560" });
   const [dual1, setDual1] = useState(false);
@@ -247,26 +250,31 @@ export default function CamGuide() {
   const [buildPreFilled, setBuildPreFilled] = useState(false);
 
   // Pre-fill recommender inputs from active build
+  const buildFields = activeBuild?.fields;
   useEffect(() => {
-    if (!activeBuild || buildPreFilled) return;
+    if (!activeBuild || !buildFields || buildPreFilled) return;
+    // Wait until fields are actually loaded
+    const hasFields = Object.keys(buildFields).length > 0;
+    if (!hasFields) return;
+
     const prefill: Record<string, string> = {};
-    const disp = getField("computed.displacement");
+    const disp = buildFields["computed.displacement"];
     if (disp) prefill.displacement = disp;
-    const cr = getField("computed.staticCR");
+    const cr = buildFields["computed.staticCR"];
     if (cr) prefill.compressionRatio = cr;
-    const cfm = getField("heads.portFlowCFM");
+    const cfm = buildFields["heads.portFlowCFM"];
     if (cfm) prefill.headFlow = cfm;
-    const rpm = getField("meta.targetRPM");
+    const rpm = buildFields["meta.targetRPM"];
     if (rpm) prefill.rpmPeak = rpm;
-    const asp = getField("meta.aspiration");
+    const asp = buildFields["meta.aspiration"];
     if (asp) prefill.aspiration = asp;
-    const use = getField("meta.intendedUse");
+    const use = buildFields["meta.intendedUse"];
     if (use) prefill.use = use;
     if (Object.keys(prefill).length > 0) {
       setInputs(prev => ({ ...prev, ...prefill }));
     }
     setBuildPreFilled(true);
-  }, [activeBuild?.id]);
+  }, [activeBuild?.id, buildFields]);
 
   // Valve spring calculator state
   const [springCamType, setSpringCamType] = useState<CamTypeKey>("hydraulic_roller");
@@ -313,33 +321,36 @@ export default function CamGuide() {
   const maxLift2 = dual2 ? Math.max(parseFloat(cam2.intLift) || 0, parseFloat(cam2.exhLift) || 0) : parseFloat(cam2.lift) || 0;
 
   const TABS = [
-    { id: "guide",   label: "Cam Selection Guide" },
-    { id: "simple",  label: "Simple Cam Timing" },
-    { id: "vizard",  label: "Advanced" },
+    { id: "guide",      label: "Cam Selection Guide" },
+    { id: "simple",     label: "Simple Cam Timing" },
+    { id: "vizard",     label: "Advanced" },
+    { id: "valvetrain", label: "Valvetrain RPM" },
   ] as const;
 
   return (
     <div>
+      <SEOHead
+        title="Cam Selection Guide | How to Choose a Camshaft"
+        description="Systematic camshaft selection guide for street and performance engines. Choose the right cam based on your heads, intake, RPM range, and compression."
+        canonical="/cam-guide"
+        keywords="cam selection guide, how to choose a camshaft, camshaft selection, cam for my engine, what cam should I run"
+      />
       <PageHeader
         eyebrow="Camshaft"
         title="Cam Selection Tool"
         subtitle="Everything you need to choose, analyze, and time a camshaft — from basic valve events to full advanced cam analysis."
       />
 
-      {/* Return to Build banner */}
-      {fromBuildId && activeBuild && (
-        <div className="bg-[#E85D04]/10 border-b border-[#E85D04]/20">
-          <div className="container mx-auto max-w-4xl px-4 py-3 flex items-center justify-between">
-            <p className="text-sm text-[#E85D04] font-medium">
-              Choosing a cam for: <strong>{activeBuild.name}</strong>
-            </p>
-            <Link href={`/build-sheets/build/${fromBuildId}`}>
-              <Button variant="outline" size="sm" className="border-[#E85D04] text-[#E85D04] hover:bg-[#E85D04] hover:text-white">
-                <ArrowLeft className="w-4 h-4 mr-1.5" />
-                Return to Build
-              </Button>
-            </Link>
-          </div>
+      {/* Build context banner */}
+      {activeBuild && (
+        <div className="container mx-auto max-w-4xl px-4 pt-4">
+          <BuildBanner savedFields={[
+            { label: "Displacement", key: "computed.displacement", value: buildFields?.["computed.displacement"] ?? "", suffix: " ci" },
+            { label: "CR", key: "computed.staticCR", value: buildFields?.["computed.staticCR"] ?? "", suffix: ":1" },
+            { label: "Target RPM", key: "meta.targetRPM", value: buildFields?.["meta.targetRPM"] ?? "" },
+            { label: "Bore", key: "shortBlock.bore", value: buildFields?.["shortBlock.bore"] ?? "", suffix: "\"" },
+            { label: "Stroke", key: "shortBlock.stroke", value: buildFields?.["shortBlock.stroke"] ?? "", suffix: "\"" },
+          ]} />
         </div>
       )}
 
@@ -369,6 +380,13 @@ export default function CamGuide() {
 
       {/* Advanced cam calculator tab */}
       {activeTab === "vizard" && <VizardTab />}
+
+      {/* Valvetrain RPM Builder tab */}
+      {activeTab === "valvetrain" && (
+        <div className="container mx-auto max-w-4xl px-4 py-6">
+          <ValvetrainBuilder />
+        </div>
+      )}
 
       {/* Cam Selection Guide tab */}
       {activeTab === "guide" && <div className="container mx-auto max-w-4xl px-4 py-10">

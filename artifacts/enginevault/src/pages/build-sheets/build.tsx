@@ -1,7 +1,17 @@
 import { useEffect, useState } from "react";
 import { useRoute, Link, useLocation } from "wouter";
 import { useBuildContext } from "@/context/BuildContext";
-import { BUILD_SECTIONS, ENGINE_DEFAULTS, isSectionComplete, type FieldDef } from "@/data/buildFieldDefs";
+import {
+  BUILD_TABS,
+  BUILD_SECTIONS,
+  BUILD_SHEET_GROUPS,
+  ENGINE_DEFAULTS,
+  isSectionComplete,
+  getTabCompletion,
+  type FieldDef,
+  type SectionDef,
+  type TabDef,
+} from "@/data/buildFieldDefs";
 import { PageHeader } from "@/components/layout/PageHeader";
 import { Input } from "@/components/ui/input";
 import { Label } from "@/components/ui/label";
@@ -9,28 +19,35 @@ import { Textarea } from "@/components/ui/textarea";
 import { Select, SelectContent, SelectItem, SelectTrigger, SelectValue } from "@/components/ui/select";
 import { Button } from "@/components/ui/button";
 import { Progress } from "@/components/ui/progress";
-import { Accordion, AccordionContent, AccordionItem, AccordionTrigger } from "@/components/ui/accordion";
 import {
   CheckCircle2,
-  Circle,
   ExternalLink,
   Loader2,
   Save,
   HelpCircle,
-  Box,
-  Factory,
-  RotateCw,
-  Gauge,
-  Layers,
-  ArrowUpDown,
-  Wind,
-  Target,
+  ChevronRight,
+  ChevronLeft,
+  Printer,
+  ClipboardList,
 } from "lucide-react";
 
-// Map section icon names to actual components
-const ICON_MAP: Record<string, React.FC<{ className?: string }>> = {
-  Box, Factory, RotateCw, Gauge, Layers, ArrowUpDown, Wind, Target,
+// ─── Engine label lookup ─────────────────────────────────────────────────────
+
+const ENGINE_LABELS: Record<string, string> = {
+  sbc350: "Small Block Chevy 350",
+  ls1: "LS1 5.7L",
+  coyote50: "Coyote 5.0",
+  custom: "Custom Engine",
 };
+
+function formatEngineSlug(slug: string): string {
+  if (ENGINE_LABELS[slug]) return ENGINE_LABELS[slug];
+  // Format database slugs like "chevrolet_ls1" → "Chevrolet LS1"
+  return slug
+    .split("_")
+    .map((part) => part.charAt(0).toUpperCase() + part.slice(1))
+    .join(" ");
+}
 
 // ─── Field renderer ──────────────────────────────────────────────────────────
 
@@ -57,6 +74,7 @@ function BuildField({
           placeholder={field.placeholder}
           rows={3}
         />
+        {field.hint && <p className="text-xs text-gray-400 mt-1">{field.hint}</p>}
       </div>
     );
   }
@@ -80,11 +98,11 @@ function BuildField({
             ))}
           </SelectContent>
         </Select>
+        {field.hint && <p className="text-xs text-gray-400 mt-1">{field.hint}</p>}
       </div>
     );
   }
 
-  // Number or text input
   return (
     <div>
       <Label htmlFor={field.key} className="text-sm font-medium mb-1.5 block">
@@ -94,7 +112,7 @@ function BuildField({
       <div className="relative">
         <Input
           id={field.key}
-          type={field.type === "number" ? "text" : "text"}
+          type="text"
           inputMode={field.type === "number" ? "decimal" : "text"}
           value={value}
           onChange={(e) => onChange(e.target.value)}
@@ -107,6 +125,96 @@ function BuildField({
           </span>
         )}
       </div>
+      {field.hint && <p className="text-xs text-gray-400 mt-1">{field.hint}</p>}
+    </div>
+  );
+}
+
+// ─── Section card ────────────────────────────────────────────────────────────
+
+function SectionCard({
+  section,
+  fields,
+  getField,
+  setField,
+  buildId,
+}: {
+  section: SectionDef;
+  fields: Record<string, string>;
+  getField: (key: string) => string | undefined;
+  setField: (key: string, value: string) => void;
+  buildId: number;
+}) {
+  const isComplete = isSectionComplete(section.id, fields);
+
+  return (
+    <div className="rounded-xl border border-gray-200 bg-white overflow-hidden">
+      {/* Section header */}
+      <div className="px-5 py-4 border-b border-gray-100 flex items-center justify-between">
+        <div>
+          <div className="flex items-center gap-2">
+            <h3 className="text-base font-bold">{section.title}</h3>
+            {isComplete && <CheckCircle2 className="w-4 h-4 text-green-500" />}
+          </div>
+          <p className="text-xs text-gray-500 mt-0.5">{section.description}</p>
+        </div>
+      </div>
+
+      {/* Fields */}
+      <div className="p-5">
+        <div className="grid gap-4 sm:grid-cols-2">
+          {section.fields.map((field) => (
+            <div key={field.key} className={field.type === "textarea" ? "sm:col-span-2" : ""}>
+              <BuildField
+                field={field}
+                value={getField(field.key) ?? ""}
+                onChange={(val) => setField(field.key, val)}
+              />
+            </div>
+          ))}
+        </div>
+
+        {/* Help me choose */}
+        {section.helpChoose && (
+          <div className="mt-5 p-3 rounded-lg bg-[#E85D04]/5 border border-[#E85D04]/20 flex items-start gap-3">
+            <HelpCircle className="w-5 h-5 text-[#E85D04] shrink-0 mt-0.5" />
+            <div>
+              <Link href={`${section.helpChoose.href}?fromBuild=${buildId}`}>
+                <Button
+                  variant="outline"
+                  size="sm"
+                  className="border-[#E85D04] text-[#E85D04] hover:bg-[#E85D04] hover:text-white mb-1"
+                >
+                  {section.helpChoose.label}
+                </Button>
+              </Link>
+              <p className="text-xs text-gray-500">{section.helpChoose.description}</p>
+            </div>
+          </div>
+        )}
+
+        {/* Calculator links */}
+        {section.calculatorLinks && section.calculatorLinks.length > 0 && (
+          <div className="mt-5 pt-4 border-t border-gray-200">
+            <p className="text-xs font-semibold text-gray-500 uppercase tracking-wider mb-2">Run Calculators</p>
+            <p className="text-xs text-gray-400 mb-3">Your build data auto-fills these calculators. Results save back to this build.</p>
+            <div className="flex flex-wrap gap-2">
+              {section.calculatorLinks.map((link) => (
+                <Link key={link.href} href={link.href}>
+                  <Button
+                    variant="outline"
+                    size="sm"
+                    className="border-[#E85D04]/30 text-[#E85D04] hover:bg-[#E85D04] hover:text-white hover:border-[#E85D04] font-semibold gap-1.5"
+                  >
+                    <ExternalLink className="w-3.5 h-3.5" />
+                    {link.label}
+                  </Button>
+                </Link>
+              ))}
+            </div>
+          </div>
+        )}
+      </div>
     </div>
   );
 }
@@ -117,7 +225,6 @@ function useAutoCompute(
   fields: Record<string, string>,
   setField: (key: string, value: string) => void,
 ) {
-  // Auto-compute finalBore from bore + overbore
   useEffect(() => {
     const bore = parseFloat(fields["shortBlock.bore"] || "0");
     const overbore = parseFloat(fields["machineWork.overboreAmount"] || "0");
@@ -129,7 +236,6 @@ function useAutoCompute(
     }
   }, [fields["shortBlock.bore"], fields["machineWork.overboreAmount"]]);
 
-  // Auto-compute finalDeckHeight from deckHeight - deckCut
   useEffect(() => {
     const deckHeight = parseFloat(fields["shortBlock.deckHeight"] || "0");
     const deckCut = parseFloat(fields["machineWork.deckCutAmount"] || "0");
@@ -159,7 +265,16 @@ export default function BuildWizardPage() {
 
   const [isLoading, setIsLoading] = useState(true);
   const [error, setError] = useState<string | null>(null);
-  const [openSections, setOpenSections] = useState<string[]>(["shortBlock"]);
+  const [activeTab, setActiveTabRaw] = useState(() => {
+    try {
+      const saved = sessionStorage.getItem("buildWizardTab");
+      return saved ? parseInt(saved, 10) : 0;
+    } catch { return 0; }
+  });
+  const setActiveTab = (tab: number) => {
+    setActiveTabRaw(tab);
+    try { sessionStorage.setItem("buildWizardTab", String(tab)); } catch {}
+  };
 
   const buildId = params?.buildId ? parseInt(params.buildId, 10) : null;
 
@@ -170,13 +285,10 @@ export default function BuildWizardPage() {
       setIsLoading(false);
       return;
     }
-
-    // If already loaded, skip
     if (activeBuild?.id === buildId) {
       setIsLoading(false);
       return;
     }
-
     loadBuild(buildId)
       .then(() => setIsLoading(false))
       .catch(() => {
@@ -188,30 +300,59 @@ export default function BuildWizardPage() {
   // Auto-fill engine defaults on first load when fields are empty
   useEffect(() => {
     if (!activeBuild || isLoading) return;
-    const defaults = ENGINE_DEFAULTS[activeBuild.engineSlug];
-    if (!defaults) return;
-
-    // Only fill if the build has no fields yet (fresh build)
     const hasAnyFields = Object.keys(activeBuild.fields).length > 0;
     if (hasAnyFields) return;
 
-    setFields(defaults);
+    // Check hardcoded defaults first
+    const defaults = ENGINE_DEFAULTS[activeBuild.engineSlug];
+    if (defaults && Object.keys(defaults).length > 0) {
+      setFields(defaults);
+      return;
+    }
+
+    // For database engines (slug like "chevrolet_ls1"), try to load specs from JSON
+    const slug = activeBuild.engineSlug;
+    if (slug && slug !== "custom" && slug.includes("_")) {
+      const mfr = slug.split("_")[0];
+      // Try to find this engine in our static JSON data
+      fetch(`${import.meta.env.BASE_URL.replace(/\/$/, "")}/data/families.json`)
+        .then((r) => r.json())
+        .then((families: { family_slug: string; manufacturer_slug: string }[]) => {
+          const family = families.find((f) => f.manufacturer_slug === mfr && slug.startsWith(mfr));
+          if (!family) return;
+          return fetch(`${import.meta.env.BASE_URL.replace(/\/$/, "")}/data/engines/${mfr}/${family.family_slug}.json`);
+        })
+        .then((r) => r?.json())
+        .then((data) => {
+          if (!data?.engines) return;
+          const eng = data.engines.find((e: any) => e.engine_id === slug);
+          if (!eng) return;
+          const dbDefaults: Record<string, string> = {};
+          if (eng.bore_in) dbDefaults["shortBlock.bore"] = String(eng.bore_in);
+          if (eng.stroke_in) dbDefaults["shortBlock.stroke"] = String(eng.stroke_in);
+          if (eng.deck_height_in) dbDefaults["shortBlock.deckHeight"] = String(eng.deck_height_in);
+          if (eng.num_cylinders) dbDefaults["shortBlock.cylinders"] = String(eng.num_cylinders);
+          if (eng.rod_length_in) dbDefaults["shortBlock.rodLength"] = String(eng.rod_length_in);
+          if (eng.rod_length_in) dbDefaults["rotatingAssembly.rodLength"] = String(eng.rod_length_in);
+          if (eng.stroke_in) dbDefaults["rotatingAssembly.crankStroke"] = String(eng.stroke_in);
+          if (Object.keys(dbDefaults).length > 0) setFields(dbDefaults);
+        })
+        .catch(() => {}); // silent fail — custom engines just start empty
+    }
   }, [activeBuild?.id, isLoading]);
 
   // Auto-compute derived fields
   useAutoCompute(activeBuild?.fields ?? {}, setField);
 
-  // Engine label
-  const engineLabel = activeBuild?.engineSlug === "sbc350"
-    ? "Small Block Chevy 350"
-    : activeBuild?.engineSlug === "ls1"
-    ? "LS1 5.7L"
-    : activeBuild?.engineSlug ?? "";
-
-  // Section completion tracking
   const fields = activeBuild?.fields ?? {};
-  const completedCount = BUILD_SECTIONS.filter((s) => isSectionComplete(s.id, fields)).length;
-  const progressPercent = Math.round((completedCount / BUILD_SECTIONS.length) * 100);
+  const engineLabel = formatEngineSlug(activeBuild?.engineSlug ?? "");
+
+  // Overall progress
+  const totalSections = BUILD_SECTIONS.length;
+  const completedSections = BUILD_SECTIONS.filter((s) => isSectionComplete(s.id, fields)).length;
+  const progressPercent = Math.round((completedSections / totalSections) * 100);
+
+  const currentTab = BUILD_TABS[activeTab];
 
   if (isLoading) {
     return (
@@ -238,17 +379,44 @@ export default function BuildWizardPage() {
       <PageHeader
         eyebrow={engineLabel}
         title={activeBuild.name}
-        subtitle="Fill in your build specs section by section. Data you enter here auto-populates the calculators."
+        subtitle="Fill in your build specs — data you enter here auto-populates the calculators."
       />
 
-      <div className="container mx-auto max-w-4xl px-4 py-8">
-        {/* Progress bar */}
-        <div className="mb-8 p-4 rounded-lg bg-white border border-gray-200">
-          <div className="flex items-center justify-between mb-2">
-            <span className="text-sm font-medium text-gray-600">
-              {completedCount} of {BUILD_SECTIONS.length} sections filled in
-            </span>
-            <div className="flex items-center gap-2">
+      {/* Tab navigation — sticky */}
+      <div className="bg-[#1a1a1a] sticky top-16 z-30 border-b border-[#2a2a2a]">
+        <div className="container mx-auto max-w-4xl px-4">
+          <div className="flex items-center justify-between">
+            <div className="flex gap-1 py-2 overflow-x-auto">
+              {BUILD_TABS.map((tab, idx) => {
+                const { completed, total } = getTabCompletion(tab.id, fields);
+                return (
+                  <button
+                    key={tab.id}
+                    onClick={() => setActiveTab(idx)}
+                    className={`px-4 py-2.5 rounded-lg text-sm font-bold whitespace-nowrap transition-colors flex items-center gap-2 ${
+                      activeTab === idx
+                        ? "bg-[#E85D04] text-white shadow"
+                        : "bg-white/10 text-gray-300 hover:bg-white/20 hover:text-white"
+                    }`}
+                  >
+                    {tab.id === "build-sheet" && <ClipboardList className="w-3.5 h-3.5" />}
+                    {tab.label}
+                    {tab.id !== "build-sheet" && completed > 0 && (
+                      <span className={`text-xs px-1.5 py-0.5 rounded-full ${
+                        activeTab === idx
+                          ? "bg-white/20"
+                          : completed === total ? "bg-green-500/20 text-green-300" : "bg-white/10"
+                      }`}>
+                        {completed}/{total}
+                      </span>
+                    )}
+                  </button>
+                );
+              })}
+            </div>
+
+            {/* Save indicator */}
+            <div className="flex items-center gap-2 shrink-0 ml-4">
               {isSyncing && (
                 <span className="flex items-center gap-1 text-xs text-gray-400">
                   <Loader2 className="w-3 h-3 animate-spin" />
@@ -256,152 +424,135 @@ export default function BuildWizardPage() {
                 </span>
               )}
               <Button
-                variant="outline"
+                variant="ghost"
                 size="sm"
                 onClick={() => syncNow()}
                 disabled={isSyncing}
+                className="text-gray-300 hover:text-white hover:bg-white/10 h-8"
               >
                 <Save className="w-3.5 h-3.5 mr-1.5" />
-                Save Now
+                Save
               </Button>
             </div>
           </div>
-          <Progress value={progressPercent} className="h-2" />
+        </div>
+      </div>
+
+      <div className="container mx-auto max-w-4xl px-4 py-6">
+        {/* Overall progress */}
+        <div className="mb-6 flex items-center gap-3">
+          <Progress value={progressPercent} className="h-1.5 flex-1" />
+          <span className="text-xs text-gray-400 shrink-0">
+            {completedSections}/{totalSections} sections
+          </span>
         </div>
 
-        {/* Accordion sections */}
-        <Accordion
-          type="multiple"
-          value={openSections}
-          onValueChange={setOpenSections}
-          className="space-y-3"
-        >
-          {BUILD_SECTIONS.map((section) => {
-            const Icon = ICON_MAP[section.icon] ?? Box;
-            const isComplete = isSectionComplete(section.id, fields);
-
-            return (
-              <AccordionItem
-                key={section.id}
-                value={section.id}
-                className="border border-gray-200 rounded-lg bg-white overflow-hidden"
+        {/* Tab content */}
+        {currentTab.id === "build-sheet" ? (
+          /* ── Build Sheet tab ──────────────────────────────────────── */
+          <div>
+            <div className="flex items-center justify-between mb-6">
+              <div>
+                <h2 className="text-lg font-bold">Build Reference Sheet</h2>
+                <p className="text-sm text-gray-500">All your specs and calculated values in one place. Print this and bring it to the shop.</p>
+              </div>
+              <Button
+                variant="outline"
+                size="sm"
+                onClick={() => window.print()}
+                className="gap-2 print:hidden"
               >
-                <AccordionTrigger className="px-5 py-4 hover:no-underline hover:bg-gray-50 [&[data-state=open]]:bg-gray-50">
-                  <div className="flex items-center gap-3 text-left">
-                    <div className={`w-9 h-9 rounded-lg flex items-center justify-center shrink-0 ${
-                      isComplete
-                        ? "bg-green-100 text-green-600"
-                        : "bg-[#E85D04]/10 text-[#E85D04]"
-                    }`}>
-                      {isComplete ? (
-                        <CheckCircle2 className="w-5 h-5" />
-                      ) : (
-                        <Icon className="w-5 h-5" />
-                      )}
+                <Printer className="w-4 h-4" />
+                Print
+              </Button>
+            </div>
+
+            <div className="space-y-4 print:space-y-2">
+              {BUILD_SHEET_GROUPS.map((group) => {
+                const hasData = group.rows.some((r) => fields[r.key] && fields[r.key].trim());
+                if (!hasData) return null;
+                return (
+                  <div key={group.title} className="rounded-xl border border-gray-200 bg-white overflow-hidden print:rounded-none print:border-gray-300">
+                    <div className="px-4 py-2.5 bg-gray-50 border-b border-gray-200 print:bg-gray-100">
+                      <h3 className="text-sm font-bold uppercase tracking-wider text-gray-600">{group.title}</h3>
                     </div>
-                    <div>
-                      <h3 className="text-base font-semibold">{section.title}</h3>
-                      <p className="text-xs text-gray-500">{section.description}</p>
+                    <div className="divide-y divide-gray-100">
+                      {group.rows.map((row) => {
+                        const val = fields[row.key];
+                        if (!val || !val.trim()) return null;
+                        return (
+                          <div key={row.key} className="flex items-center justify-between px-4 py-2.5 hover:bg-gray-50">
+                            <span className="text-sm text-gray-600">{row.label}</span>
+                            <span className={`text-sm font-mono font-semibold ${row.computed ? "text-[#E85D04]" : "text-gray-900"}`}>
+                              {val}{row.suffix ?? ""}
+                            </span>
+                          </div>
+                        );
+                      })}
                     </div>
                   </div>
-                </AccordionTrigger>
-                <AccordionContent className="px-5 pb-5">
-                  {/* Fields grid */}
-                  <div className="grid gap-4 sm:grid-cols-2 mt-2">
-                    {section.fields.map((field) => (
-                      <div key={field.key} className={field.type === "textarea" ? "sm:col-span-2" : ""}>
-                        <BuildField
-                          field={field}
-                          value={getField(field.key) ?? ""}
-                          onChange={(val) => setField(field.key, val)}
-                        />
-                      </div>
-                    ))}
-                  </div>
+                );
+              })}
 
-                  {/* "Help me choose" for cam section */}
-                  {section.id === "cam" && (
-                    <div className="mt-4 p-3 rounded-lg bg-[#E85D04]/5 border border-[#E85D04]/20">
-                      <Link href={`/cam-guide?fromBuild=${activeBuild.id}`}>
-                        <Button
-                          variant="outline"
-                          size="sm"
-                          className="border-[#E85D04] text-[#E85D04] hover:bg-[#E85D04] hover:text-white"
-                        >
-                          <HelpCircle className="w-4 h-4 mr-2" />
-                          Help Me Choose a Cam
-                        </Button>
-                      </Link>
-                      <p className="text-xs text-gray-500 mt-2">
-                        Our cam guide will recommend duration, LSA, and lift ranges based on your build goals.
-                      </p>
-                    </div>
-                  )}
-
-                  {/* Calculator links */}
-                  {section.calculatorLinks && section.calculatorLinks.length > 0 && (
-                    <div className="mt-4 pt-3 border-t border-gray-100">
-                      <p className="text-xs text-gray-400 mb-2 font-medium uppercase tracking-wide">
-                        Related Calculators
-                      </p>
-                      <div className="flex flex-wrap gap-2">
-                        {section.calculatorLinks.map((link) => (
-                          <Link key={link.href} href={link.href}>
-                            <Button variant="ghost" size="sm" className="text-xs text-gray-500 hover:text-[#E85D04] h-7 px-2">
-                              <ExternalLink className="w-3 h-3 mr-1" />
-                              {link.label}
-                            </Button>
-                          </Link>
-                        ))}
-                      </div>
-                    </div>
-                  )}
-                </AccordionContent>
-              </AccordionItem>
-            );
-          })}
-        </Accordion>
-
-        {/* Computed values summary */}
-        {(fields["computed.displacement"] || fields["computed.staticCR"] || fields["computed.rodRatio"]) && (
-          <div className="mt-8 p-5 rounded-lg bg-gray-50 border border-gray-200">
-            <h3 className="font-semibold text-sm text-gray-600 mb-3 uppercase tracking-wide">Calculated Values</h3>
-            <div className="grid gap-3 sm:grid-cols-3">
-              {fields["computed.displacement"] && (
-                <div>
-                  <p className="text-xs text-gray-400">Displacement</p>
-                  <p className="text-lg font-bold">{fields["computed.displacement"]} ci</p>
-                </div>
-              )}
-              {fields["computed.staticCR"] && (
-                <div>
-                  <p className="text-xs text-gray-400">Static CR</p>
-                  <p className="text-lg font-bold">{fields["computed.staticCR"]}:1</p>
-                </div>
-              )}
-              {fields["computed.dynamicCR"] && (
-                <div>
-                  <p className="text-xs text-gray-400">Dynamic CR</p>
-                  <p className="text-lg font-bold">{fields["computed.dynamicCR"]}:1</p>
-                </div>
-              )}
-              {fields["computed.rodRatio"] && (
-                <div>
-                  <p className="text-xs text-gray-400">Rod Ratio</p>
-                  <p className="text-lg font-bold">{fields["computed.rodRatio"]}</p>
-                </div>
-              )}
-              {fields["computed.quenchDistance"] && (
-                <div>
-                  <p className="text-xs text-gray-400">Quench Distance</p>
-                  <p className="text-lg font-bold">{fields["computed.quenchDistance"]}"</p>
+              {/* Empty state */}
+              {BUILD_SHEET_GROUPS.every((g) => !g.rows.some((r) => fields[r.key]?.trim())) && (
+                <div className="text-center py-16">
+                  <ClipboardList className="w-12 h-12 text-gray-300 mx-auto mb-4" />
+                  <h3 className="text-lg font-semibold text-gray-600 mb-1">No data yet</h3>
+                  <p className="text-gray-400 mb-4">Start filling in your build specs on the other tabs.</p>
+                  <Button onClick={() => setActiveTab(0)} className="bg-[#E85D04] hover:bg-[#E85D04]/90 text-white">
+                    Go to Bottom End
+                  </Button>
                 </div>
               )}
             </div>
           </div>
+        ) : (
+          /* ── Normal section tabs ──────────────────────────────────── */
+          <>
+            <div className="space-y-5">
+              {currentTab.sections.map((section) => (
+                <SectionCard
+                  key={section.id}
+                  section={section}
+                  fields={fields}
+                  getField={getField}
+                  setField={setField}
+                  buildId={activeBuild.id}
+                />
+              ))}
+            </div>
+
+            {/* Tab navigation buttons */}
+            <div className="flex items-center justify-between mt-8 pt-6 border-t border-gray-200">
+              <Button
+                variant="outline"
+                onClick={() => setActiveTab(activeTab - 1)}
+                disabled={activeTab === 0}
+                className="gap-2"
+              >
+                <ChevronLeft className="w-4 h-4" />
+                {activeTab > 0 ? BUILD_TABS[activeTab - 1].label : ""}
+              </Button>
+
+              {activeTab < BUILD_TABS.length - 1 ? (
+                <Button
+                  onClick={() => setActiveTab(activeTab + 1)}
+                  className="bg-[#E85D04] hover:bg-[#E85D04]/90 text-white gap-2"
+                >
+                  {BUILD_TABS[activeTab + 1].label}
+                  <ChevronRight className="w-4 h-4" />
+                </Button>
+              ) : (
+                <div className="text-sm text-gray-500 flex items-center gap-2">
+                  <CheckCircle2 className="w-4 h-4 text-green-500" />
+                  All sections available
+                </div>
+              )}
+            </div>
+          </>
         )}
       </div>
     </div>
   );
 }
-

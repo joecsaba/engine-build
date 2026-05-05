@@ -1,6 +1,7 @@
 import { useEffect, useState } from "react";
 import { Link, useLocation } from "wouter";
 import { useAuth } from "@/context/AuthContext";
+import { authFetch } from "@/lib/authFetch";
 import { PageHeader } from "@/components/layout/PageHeader";
 import { Card, CardContent } from "@/components/ui/card";
 import { Button } from "@/components/ui/button";
@@ -42,7 +43,7 @@ export default function MyBuildsPage() {
 
   async function fetchBuilds() {
     try {
-      const res = await fetch("/api/builds");
+      const res = await authFetch("/api/builds");
       if (res.ok) {
         const data = await res.json();
         setBuilds(data);
@@ -58,7 +59,7 @@ export default function MyBuildsPage() {
     if (!confirm("Delete this build? This cannot be undone.")) return;
     setDeletingId(id);
     try {
-      const res = await fetch(`/api/builds/${id}`, { method: "DELETE" });
+      const res = await authFetch(`/api/builds/${id}`, { method: "DELETE" });
       if (res.ok) {
         setBuilds((prev) => prev.filter((b) => b.id !== id));
       }

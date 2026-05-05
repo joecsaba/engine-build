@@ -7,6 +7,7 @@ import { Slider } from "@/components/ui/slider";
 import { AlertTriangle, Info, Fuel, Activity, Gauge, Calculator, ArrowRightLeft, HelpCircle } from "lucide-react";
 import { useBuildField } from "@/hooks/useBuildField";
 import { useBuildContext } from "@/context/BuildContext";
+import { BuildBanner } from "@/components/BuildBanner";
 
 /* ─── types ─── */
 type CalcMode = "forward" | "solve_chamber" | "solve_ivc";
@@ -246,12 +247,17 @@ export default function DynamicCompressionRatioV2() {
   return (
     <div className="container mx-auto py-8 px-4 max-w-5xl">
       <SEOHead
-        title="Compression Ratio Calculator — Static & Dynamic CR with Octane Recommendations"
-        description="Calculate static and dynamic compression ratio from your parts or cam card. Three IVC input methods, cranking pressure prediction, octane recommendations by head type, reverse-solve mode, and interactive cam advance slider."
+        title="Compression Ratio Calculator | Static & Dynamic CR"
+        description="Calculate static and dynamic compression ratio with octane recommendations. Three IVC methods, cranking pressure, reverse-solve mode, and cam advance slider."
         canonical="/calculators/dynamic-compression-ratio-v2"
         keywords="compression ratio calculator, dynamic compression ratio, static compression ratio, DCR calculator, cranking pressure, intake valve closing, cam timing compression, octane recommendation, chamber volume calculator"
       />
 
+      <BuildBanner savedFields={[
+        { label: "Static CR", key: "computed.staticCR", value: results.staticCR > 0 ? results.staticCR.toFixed(2) : "", suffix: ":1" },
+        { label: "Dynamic CR", key: "computed.dynamicCR", value: results.dcr > 0 ? results.dcr.toFixed(2) : "", suffix: ":1" },
+        { label: "Octane Req", key: "computed.octane", value: results.octane > 0 ? String(results.octane) : "" },
+      ]} />
       <h1 className="text-3xl font-bold mb-2">Compression Ratio Calculator</h1>
       <p className="text-muted-foreground mb-6">
         Static CR from your parts, dynamic CR from your cam, cranking pressure, and octane recommendations — all in one place.

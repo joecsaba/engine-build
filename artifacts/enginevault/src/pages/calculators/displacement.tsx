@@ -5,6 +5,7 @@ import { Label } from "@/components/ui/label";
 import { Card, CardContent, CardHeader, CardTitle, CardDescription } from "@/components/ui/card";
 import { useBuildField } from "@/hooks/useBuildField";
 import { useBuildContext } from "@/context/BuildContext";
+import { BuildBanner } from "@/components/BuildBanner";
 
 export default function DisplacementCalculator() {
   const [bore, setBore] = useBuildField("shortBlock.bore", "4.000");
@@ -31,11 +32,15 @@ export default function DisplacementCalculator() {
   return (
     <div className="container mx-auto py-8 px-4 max-w-3xl">
       <SEOHead
-        title="Engine Displacement Calculator"
+        title="Engine Displacement Calculator | Cubic Inches, CC & Liters"
         description="Calculate engine displacement in cubic inches, CCs, and liters from bore, stroke, and cylinder count. Free tool for engine builders."
         canonical="/calculators/displacement"
         keywords="engine displacement calculator, cubic inch calculator, bore stroke calculator, engine size calculator, CID calculator"
       />
+      <BuildBanner savedFields={[
+        { label: "Displacement", key: "computed.displacement", value: cubicInches > 0 ? cubicInches.toFixed(1) : "", suffix: " ci" },
+        { label: "Liters", key: "computed.displacementL", value: liters > 0 ? liters.toFixed(2) : "", suffix: "L" },
+      ]} />
       <h1 className="text-3xl font-bold mb-2">Engine Displacement Calculator</h1>
       <p className="text-muted-foreground mb-8">Calculate engine displacement in cubic inches, CCs, and liters.</p>
 

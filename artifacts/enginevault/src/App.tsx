@@ -1,4 +1,5 @@
-import { Switch, Route, Router as WouterRouter } from "wouter";
+import { Switch, Route, Router as WouterRouter, useLocation } from "wouter";
+import { useEffect } from "react";
 import { QueryClient, QueryClientProvider } from "@tanstack/react-query";
 import { Toaster } from "@/components/ui/toaster";
 import { TooltipProvider } from "@/components/ui/tooltip";
@@ -51,6 +52,12 @@ import DieselEgtDrivePressureCalculator from "@/pages/calculators/diesel-egt-dri
 import DieselInjectorNozzlePopPressureCalculator from "@/pages/calculators/diesel-injector-nozzle-pop-pressure";
 import DieselSmokeLambdaCalculator from "@/pages/calculators/diesel-smoke-lambda";
 
+import CategoryShortBlock from "@/pages/calculators/category-short-block";
+import CategoryCamValvetrain from "@/pages/calculators/category-cam-valvetrain";
+import CategoryPowerFuel from "@/pages/calculators/category-power-fuel";
+import CategoryDrivetrainShop from "@/pages/calculators/category-drivetrain-shop";
+import CategoryDiesel from "@/pages/calculators/category-diesel";
+
 import CamGuide from "@/pages/cam-guide";
 import TorqueSpecs from "@/pages/torque-specs";
 import Privacy from "@/pages/privacy";
@@ -67,9 +74,18 @@ const queryClient = new QueryClient({
 
 const basePath = import.meta.env.BASE_URL.replace(/\/$/, "");
 
+function ScrollToTop() {
+  const [location] = useLocation();
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  }, [location]);
+  return null;
+}
+
 function Router() {
   return (
     <AppLayout>
+      <ScrollToTop />
       <Switch>
         <Route path="/" component={Home} />
 
@@ -92,6 +108,11 @@ function Router() {
 
         {/* Live calculators */}
         <Route path="/calculators" component={CalculatorsIndex} />
+        <Route path="/calculators/short-block" component={CategoryShortBlock} />
+        <Route path="/calculators/cam-valvetrain" component={CategoryCamValvetrain} />
+        <Route path="/calculators/power-fuel" component={CategoryPowerFuel} />
+        <Route path="/calculators/drivetrain-shop" component={CategoryDrivetrainShop} />
+        <Route path="/calculators/diesel" component={CategoryDiesel} />
         <Route path="/calculators/displacement" component={DisplacementCalculator} />
         <Route path="/calculators/compression-ratio" component={DynamicCompressionRatioV2} />
         <Route path="/calculators/ring-gap" component={RingGapAdvancedCalculator} />

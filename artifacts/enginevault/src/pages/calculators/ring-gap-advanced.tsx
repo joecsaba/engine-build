@@ -9,6 +9,7 @@ import { Slider } from "@/components/ui/slider";
 import { AlertTriangle, Copy, Check, ChevronDown, ChevronUp, Info } from "lucide-react";
 import { useBuildField } from "@/hooks/useBuildField";
 import { useBuildContext } from "@/context/BuildContext";
+import { BuildBanner } from "@/components/BuildBanner";
 
 // ── Types ──────────────────────────────────────────────────────────────────────
 
@@ -369,6 +370,10 @@ export default function RingGapAdvancedCalculator() {
         keywords="piston ring gap calculator, advanced ring gap, turbo ring gap, nitrous ring gap, diesel ring gap, cummins ring gap, powerstroke ring gap, duramax ring gap, ring material, file ring gap"
       />
 
+      <BuildBanner savedFields={[
+        { label: "Top Ring Gap", key: "computed.ringGapTop", value: topGap > 0 ? topGap.toFixed(4) : "", suffix: "\"" },
+        { label: "Second Ring Gap", key: "computed.ringGapSecond", value: secondGap > 0 ? secondGap.toFixed(4) : "", suffix: "\"" },
+      ]} />
       <h1 className="text-3xl font-bold mb-1">Piston Ring Gap Calculator</h1>
       <p className="text-muted-foreground mb-8">
         Application-specific ring gap for every ring position. Covers NA, nitrous, turbo, supercharged, and diesel builds with material compatibility warnings.

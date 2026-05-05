@@ -1,10 +1,11 @@
-import { useState } from "react";
+import { useState, useEffect } from "react";
 import { SEOHead } from "@/components/SEOHead";
 import { Input } from "@/components/ui/input";
 import { Label } from "@/components/ui/label";
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 import { Select, SelectContent, SelectItem, SelectTrigger, SelectValue } from "@/components/ui/select";
 import { Tabs, TabsContent, TabsList, TabsTrigger } from "@/components/ui/tabs";
+import { useBuildContext } from "@/context/BuildContext";
 
 /* ── Application safety margins ───────────────────────────────── */
 
@@ -20,12 +21,14 @@ const appMargins: Record<AppType, { label: string; margin: number }> = {
 /* ── Common rocker ratios ─────────────────────────────────────── */
 
 const rockerPresets = [
-  { value: "1.500", label: "1.5:1 (stock SBF, some BBC exhaust)" },
-  { value: "1.600", label: "1.6:1 (stock SBC, common aftermarket)" },
-  { value: "1.650", label: "1.65:1 (common LS, performance SBC)" },
-  { value: "1.700", label: "1.7:1 (performance SBC/LS, stock BBC intake)" },
-  { value: "1.750", label: "1.75:1 (Pro SBC/LS)" },
-  { value: "1.800", label: "1.8:1 (high-ratio SBC/LS, Hemi)" },
+  { value: "1.500", label: "1.5:1 (SBC, Pontiac, Mopar LA/B/RB/Hemi)" },
+  { value: "1.550", label: "1.55:1 (Buick 350/455)" },
+  { value: "1.600", label: "1.6:1 (SBF Windsor, Olds SB, Buick, AMC, Gen III Hemi)" },
+  { value: "1.650", label: "1.65:1 (Cadillac 472/500, Pontiac SD)" },
+  { value: "1.700", label: "1.7:1 (BBC, LS1/LS2/LS3/LS6)" },
+  { value: "1.730", label: "1.73:1 (Ford Cleveland/FE 390/428)" },
+  { value: "1.760", label: "1.76:1 (Ford FE 352/427)" },
+  { value: "1.800", label: "1.8:1 (LS7/LS9, Olds Rocket BB)" },
   { value: "custom", label: "Custom ratio..." },
 ];
 
@@ -487,6 +490,8 @@ function SpringMeasurementDiagram() {
 /* ── Component ────────────────────────────────────────────────── */
 
 export default function ValveSpringCalculator() {
+  const { activeBuild, getField, setField: setBuildField } = useBuildContext();
+
   /* Tab 1: Coil Bind Check */
   const [installedHeight, setInstalledHeight] = useState("1.800");
   const [coilBindHeight, setCoilBindHeight] = useState("1.150");
@@ -532,6 +537,31 @@ export default function ValveSpringCalculator() {
   const [wiCustomHeight, setWiCustomHeight] = useState("");
   const [wiValveLift, setWiValveLift] = useState("0.500");
   const [wiCamType, setWiCamType] = useState<CamType>("hyd-roller-street");
+
+  // Pre-fill from build data
+  useEffect(() => {
+    if (!activeBuild) return;
+    const liftInt = getField("cam.liftInt");
+    const rockerRatio = getField("valvetrain.rockerRatio");
+    if (liftInt && rockerRatio) {
+      const valveLift = (parseFloat(liftInt) * parseFloat(rockerRatio)).toFixed(3);
+      setMaxLift(valveLift);
+      setPressureLift(valveLift);
+      setRetainerLift(valveLift);
+      setWiValveLift(valveLift);
+    } else if (liftInt) {
+      setMaxLift(liftInt);
+      setPressureLift(liftInt);
+      setRetainerLift(liftInt);
+    }
+    const seatP = getField("valvetrain.springSeatPressure");
+    if (seatP) {
+      setSeatPressure(seatP);
+      setWiSpecSeatPressure(seatP);
+    }
+    const openP = getField("valvetrain.springOpenPressure");
+    if (openP) setSpringRate(openP); // approximate
+  }, [activeBuild?.id]);
 
   /* ── Tab 1 calculations ─────────────────────────────────────── */
   const ih = parseFloat(installedHeight) || 0;
@@ -685,7 +715,7 @@ export default function ValveSpringCalculator() {
   return (
     <div className="container mx-auto py-8 px-4 max-w-5xl">
       <SEOHead
-        title="Valve Spring Calculator"
+        title="Valve Spring Calculator | Coil Bind, Pressure & Shims"
         description="Check coil bind clearance, calculate max safe valve lift, figure shim combinations, verify seat and open pressures, and check retainer-to-seal clearance. Free engine builder tool."
         canonical="/calculators/valve-spring"
         keywords="valve spring calculator, coil bind calculator, valve spring pressure, valve spring shim calculator, max valve lift, seat pressure, open pressure, spring rate calculator, retainer to seal clearance"

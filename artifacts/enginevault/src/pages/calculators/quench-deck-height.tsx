@@ -7,6 +7,7 @@ import { Select, SelectContent, SelectItem, SelectTrigger, SelectValue } from "@
 import { ChevronDown } from "lucide-react";
 import { useBuildField } from "@/hooks/useBuildField";
 import { useBuildContext } from "@/context/BuildContext";
+import { BuildBanner } from "@/components/BuildBanner";
 
 // ── Types ─────────────────────────────────────────────────────────────────────
 
@@ -201,11 +202,15 @@ export default function QuenchDeckHeightCalculator() {
   return (
     <div className="container mx-auto py-8 px-4 max-w-5xl">
       <SEOHead
-        title="Quench & Deck Height Calculator"
+        title="Quench & Deck Height Calculator | Squish Distance"
         description="Calculate piston-to-deck clearance, quench distance, and compression ratio simultaneously. Compare gasket thicknesses side by side. Free engine builder tool."
         canonical="/calculators/quench-deck-height"
         keywords="quench calculator, deck height calculator, piston to deck clearance, squish calculator, quench distance, compression ratio calculator, engine quench"
       />
+      <BuildBanner savedFields={[
+        { label: "Quench", key: "computed.quenchDistance", value: C.quench > 0 ? C.quench.toFixed(4) : "", suffix: "\"" },
+        { label: "Static CR", key: "computed.staticCR", value: C.cr > 0 ? C.cr.toFixed(2) : "", suffix: ":1" },
+      ]} />
       <h1 className="text-3xl font-bold mb-2">Quench &amp; Deck Height Calculator</h1>
       <p className="text-muted-foreground mb-8">Pick the right gasket: see quench and compression ratio update together as you change thickness.</p>
 

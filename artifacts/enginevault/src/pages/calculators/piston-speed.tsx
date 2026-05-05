@@ -1,8 +1,11 @@
-import { useState } from "react";
+import { useState, useEffect } from "react";
 import { SEOHead } from "@/components/SEOHead";
 import { Input } from "@/components/ui/input";
 import { Label } from "@/components/ui/label";
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
+import { useBuildField } from "@/hooks/useBuildField";
+import { useBuildContext } from "@/context/BuildContext";
+import { BuildBanner } from "@/components/BuildBanner";
 
 const refEngines = [
   { name: "Stock SBC 350 (5500 RPM redline)", stroke: 3.48, rpm: 5500, meanFpm: 3190 },
@@ -23,8 +26,9 @@ function getSpeedZone(fpm: number): { label: string; color: string; bg: string }
 }
 
 export default function PistonSpeedCalculator() {
-  const [stroke, setStroke] = useState("3.622");
-  const [rpm, setRpm] = useState("6500");
+  const [stroke, setStroke] = useBuildField("shortBlock.stroke", "3.622");
+  const [rpm, setRpm] = useBuildField("meta.targetRPM", "6500");
+  const { activeBuild, setField: setBuildField } = useBuildContext();
 
   const s = parseFloat(stroke) || 0;
   const r = parseFloat(rpm) || 0;
@@ -34,14 +38,26 @@ export default function PistonSpeedCalculator() {
 
   const zone = getSpeedZone(meanFpm);
 
+  // Write results back to build
+  useEffect(() => {
+    if (activeBuild && meanFpm > 0) {
+      setBuildField("computed.pistonSpeedMean", meanFpm.toFixed(0));
+      setBuildField("computed.pistonSpeedPeak", peakFpm.toFixed(0));
+    }
+  }, [meanFpm, activeBuild?.id]);
+
   return (
     <div className="container mx-auto py-8 px-4 max-w-4xl">
       <SEOHead
-        title="Piston Speed Calculator"
+        title="Piston Speed Calculator | Mean & Peak FPM"
         description="Calculate mean and peak piston speed in feet per minute. Color-coded safety zones for street and race engines. Free tool for engine builders."
         canonical="/calculators/piston-speed"
         keywords="piston speed calculator, mean piston speed, peak piston speed, engine RPM limit calculator, piston velocity calculator"
       />
+      <BuildBanner savedFields={[
+        { label: "Mean Speed", key: "computed.pistonSpeedMean", value: meanFpm > 0 ? meanFpm.toFixed(0) : "", suffix: " FPM" },
+        { label: "Peak Speed", key: "computed.pistonSpeedPeak", value: peakFpm > 0 ? peakFpm.toFixed(0) : "", suffix: " FPM" },
+      ]} />
       <h1 className="text-3xl font-bold mb-2">Piston Speed Calculator</h1>
       <p className="text-muted-foreground mb-8">Calculate mean and peak piston speed in feet per minute. Color-coded safety zones for street and race applications.</p>
 

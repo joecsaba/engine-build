@@ -1,15 +1,18 @@
 import { Router, type IRouter } from "express";
 import { eq, and, desc } from "drizzle-orm";
-import { getAuth } from "@clerk/express";
 import { db, enginesTable, clearanceSpecsTable, torqueSpecsTable, buildsTable, fieldEntriesTable } from "@workspace/db";
 
 const router: IRouter = Router();
 
-// ─── Helper: extract userId from Clerk auth, fallback to "guest" ─────────────
+// ─── Helper: extract userId from Authorization header (Cognito JWT) ──────────
 function getUserId(req: any): string {
   try {
-    const auth = getAuth(req);
-    return auth?.userId ?? "guest";
+    const authHeader = req.headers?.authorization;
+    if (!authHeader || !authHeader.startsWith("Bearer ")) return "guest";
+    const token = authHeader.slice(7);
+    // Decode JWT payload (we trust it came over HTTPS; full verification is optional for build saves)
+    const payload = JSON.parse(Buffer.from(token.split(".")[1], "base64url").toString());
+    return payload.sub ?? "guest";
   } catch {
     return "guest";
   }

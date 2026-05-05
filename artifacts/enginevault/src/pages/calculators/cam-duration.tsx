@@ -7,6 +7,7 @@ import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 import { Select, SelectContent, SelectItem, SelectTrigger, SelectValue } from "@/components/ui/select";
 import { ChevronDown, Printer, Clipboard, Check } from "lucide-react";
 import { useBuildContext } from "@/context/BuildContext";
+import { BuildBanner } from "@/components/BuildBanner";
 
 // ── Types ──────────────────────────────────────────────────────────────────────
 
@@ -205,9 +206,14 @@ export default function CamDurationCalculator() {
   const [copied, setCopied] = useState(false);
   const [buildSynced, setBuildSynced] = useState(false);
 
-  // Sync build fields → calculator state on mount
+  // Sync build fields → calculator state when build data is available
+  const buildFields = activeBuild?.fields;
   useEffect(() => {
-    if (!activeBuild || buildSynced) return;
+    if (!activeBuild || !buildFields || buildSynced) return;
+    // Wait until fields are actually loaded (not just empty shell from localStorage)
+    const hasFields = Object.keys(buildFields).length > 0;
+    if (!hasFields) return;
+
     const updates: Partial<State> = {};
     const map: [keyof State, string][] = [
       ["int050", "cam.durationInt"], ["exh050", "cam.durationExh"],
@@ -217,10 +223,10 @@ export default function CamDurationCalculator() {
       ["displacement", "computed.displacement"], ["cylinders", "shortBlock.cylinders"],
     ];
     for (const [stateKey, buildKey] of map) {
-      const val = getField(buildKey);
-      if (val) updates[stateKey] = val;
+      const val = buildFields[buildKey];
+      if (val) (updates as Record<string, string>)[stateKey] = val;
     }
-    const camType = getField("cam.type") as LifterType | undefined;
+    const camType = buildFields["cam.type"] as LifterType | undefined;
     if (camType && LASH_DEFAULTS[camType]) {
       updates.lifterType = camType;
       updates.valveLash = LASH_DEFAULTS[camType];
@@ -229,7 +235,7 @@ export default function CamDurationCalculator() {
       setS(prev => ({ ...prev, ...updates }));
     }
     setBuildSynced(true);
-  }, [activeBuild?.id]);
+  }, [activeBuild?.id, buildFields]);
 
   const set = useCallback(<K extends keyof State>(k: K) =>
     (e: React.ChangeEvent<HTMLInputElement>) => setS(prev => ({ ...prev, [k]: e.target.value })),
@@ -293,11 +299,15 @@ export default function CamDurationCalculator() {
       <div className="px-4 space-y-5">
       <div>
         <SEOHead
-          title="Advanced Cam Calculator"
-          description="Full camshaft analysis: valve events, overlap, LSA recommendations, dynamic compression ratio, and rocker lift table. Free cam calculator for engine builders."
+          title="Cam Duration & Timing Calculator | Overlap, LSA, DCR"
+          description="Cam timing calculator with valve events, overlap, LSA recommendations, dynamic compression ratio, and rocker lift table. Free camshaft timing calculator."
           canonical="/calculators/cam-duration"
-          keywords="cam duration calculator, cam timing calculator, valve overlap calculator, LSA calculator, camshaft calculator, advanced cam calculator"
+          keywords="cam duration calculator, cam timing calculator, valve overlap calculator, LSA calculator, camshaft calculator, advanced cam calculator, camshaft timing calculator, valve event calculator, cam overlap calculator"
         />
+        <BuildBanner savedFields={[
+          { label: "Overlap", key: "computed.camOverlap", value: C.overlap > 0 ? C.overlap.toFixed(1) : "", suffix: "\u00B0" },
+          { label: "Dynamic CR", key: "computed.dynamicCR", value: C.dynamicCR > 0 ? C.dynamicCR.toFixed(2) : "", suffix: ":1" },
+        ]} />
         <h1 className="text-3xl font-bold mb-1">Advanced Cam Calculator</h1>
         <p className="text-sm text-muted-foreground">
           Full cam analysis: valve events, overlap, LSA recommendations, dynamic compression ratio, and rocker lift table.
@@ -374,7 +384,7 @@ export default function CamDurationCalculator() {
       <Section title="2 — OEM Rocker Ratio & Valve Lift">
         <div className="space-y-5">
           <div className="grid grid-cols-1 sm:grid-cols-3 gap-4">
-            <Field label="OEM Rocker Ratio" hint="Stock ratio (e.g. 1.5:1 for small block Chevy)">
+            <Field label="OEM Rocker Ratio" hint="Stock ratio (e.g. 1.5 SBC/Pontiac/Mopar, 1.6 SBF/Olds/AMC, 1.7 BBC/LS)">
               <Input type="number" step="0.01" value={s.oemRocker} onChange={set("oemRocker")} />
             </Field>
             <Field label="Custom Ratio 1">
