@@ -1,0 +1,1650 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Engine Build Calculator</title>
+<style>
+  :root {
+    --bg: #0f1117;
+    --surface: #1a1d27;
+    --surface2: #242837;
+    --border: #2e3348;
+    --text: #e4e6ef;
+    --text-dim: #8b8fa3;
+    --accent: #4f8cff;
+    --accent2: #36d399;
+    --warn: #f5a623;
+    --error: #ef4444;
+    --green: #22c55e;
+  }
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+  body {
+    font-family: 'Segoe UI', system-ui, -apple-system, sans-serif;
+    background: var(--bg);
+    color: var(--text);
+    line-height: 1.5;
+    min-height: 100vh;
+  }
+  .header {
+    background: var(--surface);
+    border-bottom: 1px solid var(--border);
+    padding: 16px 24px;
+    display: flex;
+    align-items: center;
+    gap: 16px;
+  }
+  .header h1 { font-size: 20px; font-weight: 600; }
+  .header .subtitle { color: var(--text-dim); font-size: 13px; }
+
+  .container {
+    max-width: 1440px;
+    margin: 0 auto;
+    padding: 24px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 24px;
+  }
+  .container.wide { grid-template-columns: 1fr; }
+  @media (max-width: 1000px) { .container { grid-template-columns: 1fr; } }
+
+  .panel {
+    background: var(--surface);
+    border: 1px solid var(--border);
+    border-radius: 8px;
+    overflow: hidden;
+  }
+  .panel-header {
+    padding: 12px 16px;
+    background: var(--surface2);
+    border-bottom: 1px solid var(--border);
+    font-weight: 600;
+    font-size: 14px;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+  }
+  .panel-body { padding: 16px; }
+
+  .tabs {
+    display: flex;
+    gap: 0;
+    border-bottom: 1px solid var(--border);
+    background: var(--surface2);
+  }
+  .tab {
+    padding: 10px 20px;
+    font-size: 13px;
+    cursor: pointer;
+    border-bottom: 2px solid transparent;
+    color: var(--text-dim);
+    transition: all 0.15s;
+    background: none;
+    border-top: none; border-left: none; border-right: none;
+  }
+  .tab:hover { color: var(--text); }
+  .tab.active { color: var(--accent); border-bottom-color: var(--accent); }
+  .tab-content { display: none; }
+  .tab-content.active { display: block; }
+
+  .form-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 12px;
+  }
+  .form-group { display: flex; flex-direction: column; gap: 4px; }
+  .form-group.full { grid-column: 1 / -1; }
+  label {
+    font-size: 12px;
+    color: var(--text-dim);
+    font-weight: 500;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+  }
+  input, select {
+    background: var(--bg);
+    border: 1px solid var(--border);
+    border-radius: 4px;
+    padding: 8px 10px;
+    color: var(--text);
+    font-size: 14px;
+    outline: none;
+    transition: border-color 0.15s;
+  }
+  input:focus, select:focus { border-color: var(--accent); }
+  input::placeholder { color: var(--text-dim); opacity: 0.5; }
+  select { cursor: pointer; }
+  select option { background: var(--surface); }
+
+  .btn {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    gap: 6px;
+    padding: 10px 20px;
+    border-radius: 6px;
+    border: none;
+    font-size: 14px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: all 0.15s;
+  }
+  .btn-primary { background: var(--accent); color: #fff; }
+  .btn-primary:hover { background: #3a7aee; }
+  .btn-secondary { background: var(--surface2); color: var(--text); border: 1px solid var(--border); }
+  .btn-secondary:hover { background: var(--border); }
+  .btn-sm { padding: 5px 12px; font-size: 12px; }
+
+  .result-hero {
+    text-align: center;
+    padding: 24px;
+    background: linear-gradient(135deg, #1a2744, #1a1d27);
+    border-radius: 8px;
+    margin-bottom: 16px;
+  }
+  .result-hero .hp-number {
+    font-size: 64px;
+    font-weight: 800;
+    background: linear-gradient(135deg, var(--accent), var(--accent2));
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    line-height: 1;
+  }
+  .result-hero .hp-label { font-size: 14px; color: var(--text-dim); margin-top: 4px; }
+  .confidence { display: inline-block; margin-top: 8px; padding: 3px 10px; border-radius: 12px; font-size: 11px; font-weight: 600; text-transform: uppercase; }
+  .confidence-high { background: rgba(34,197,94,0.15); color: var(--green); }
+  .confidence-medium { background: rgba(245,166,35,0.15); color: var(--warn); }
+  .confidence-low { background: rgba(239,68,68,0.15); color: var(--error); }
+
+  .stat-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 12px; margin-bottom: 16px; }
+  .stat { background: var(--surface2); border-radius: 6px; padding: 12px; text-align: center; }
+  .stat-value { font-size: 22px; font-weight: 700; color: var(--accent); }
+  .stat-label { font-size: 11px; color: var(--text-dim); margin-top: 2px; }
+
+  .validation-list { display: flex; flex-direction: column; gap: 6px; }
+  .validation-item { display: flex; align-items: flex-start; gap: 8px; padding: 8px 12px; border-radius: 6px; font-size: 13px; }
+  .validation-item.pass { background: rgba(34,197,94,0.08); }
+  .validation-item.warn { background: rgba(245,166,35,0.08); }
+  .validation-item.fail { background: rgba(239,68,68,0.08); }
+  .validation-item .icon { font-size: 14px; flex-shrink: 0; margin-top: 1px; }
+  .validation-item.pass .icon { color: var(--green); }
+  .validation-item.warn .icon { color: var(--warn); }
+  .validation-item.fail .icon { color: var(--error); }
+
+  .method-compare { display: grid; grid-template-columns: 1fr 1fr; gap: 12px; margin-bottom: 16px; }
+  .method-box { background: var(--surface2); border-radius: 6px; padding: 12px; }
+  .method-box .method-name { font-size: 11px; color: var(--text-dim); text-transform: uppercase; }
+  .method-box .method-value { font-size: 24px; font-weight: 700; margin-top: 2px; }
+  .method-box .method-desc { font-size: 11px; color: var(--text-dim); margin-top: 4px; }
+
+  .cr-calc { background: var(--surface2); border-radius: 6px; padding: 12px; margin-top: 12px; }
+  .cr-result { font-size: 28px; font-weight: 700; color: var(--accent2); text-align: center; padding: 8px; }
+
+  .hidden { display: none !important; }
+
+  .section-title {
+    font-size: 13px; font-weight: 600; color: var(--text-dim);
+    text-transform: uppercase; letter-spacing: 0.5px; margin: 16px 0 8px;
+  }
+  .section-title:first-child { margin-top: 0; }
+
+  .quick-presets { display: flex; gap: 6px; flex-wrap: wrap; margin-bottom: 12px; }
+  .preset-btn {
+    padding: 5px 10px; border-radius: 4px; font-size: 11px; cursor: pointer;
+    background: var(--surface2); border: 1px solid var(--border); color: var(--text-dim); transition: all 0.15s;
+  }
+  .preset-btn:hover { border-color: var(--accent); color: var(--text); }
+
+  /* ======== INTERACTIVE ADVISOR STYLES ======== */
+  .advisor-layout {
+    display: grid;
+    grid-template-columns: 1fr 380px;
+    gap: 24px;
+    min-height: 600px;
+  }
+  @media (max-width: 1100px) { .advisor-layout { grid-template-columns: 1fr; } }
+
+  .slider-group {
+    margin-bottom: 16px;
+    padding: 12px 14px;
+    background: var(--surface2);
+    border-radius: 8px;
+    border: 1px solid var(--border);
+    transition: border-color 0.3s, box-shadow 0.3s;
+  }
+  .slider-group.changed {
+    border-color: var(--accent);
+    box-shadow: 0 0 0 1px rgba(79,140,255,0.15);
+  }
+  .slider-group.deficit {
+    border-color: var(--warn);
+    box-shadow: 0 0 0 1px rgba(245,166,35,0.15);
+  }
+  .slider-group.suggest {
+    border-color: var(--accent2);
+    box-shadow: 0 0 8px rgba(54,211,153,0.15);
+    animation: pulse-suggest 2s ease-in-out infinite;
+  }
+  @keyframes pulse-suggest {
+    0%, 100% { box-shadow: 0 0 8px rgba(54,211,153,0.1); }
+    50% { box-shadow: 0 0 16px rgba(54,211,153,0.25); }
+  }
+
+  .slider-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 6px;
+  }
+  .slider-label { font-size: 12px; font-weight: 600; color: var(--text); text-transform: uppercase; letter-spacing: 0.5px; }
+  .slider-value-display {
+    font-size: 16px;
+    font-weight: 700;
+    color: var(--accent);
+    min-width: 80px;
+    text-align: right;
+  }
+  .slider-value-display .delta {
+    font-size: 11px;
+    font-weight: 600;
+    margin-left: 4px;
+  }
+  .delta-up { color: var(--green); }
+  .delta-down { color: var(--error); }
+  .delta-neutral { color: var(--text-dim); }
+
+  .slider-track {
+    position: relative;
+    width: 100%;
+    height: 32px;
+    display: flex;
+    align-items: center;
+  }
+  .slider-track input[type="range"] {
+    -webkit-appearance: none;
+    appearance: none;
+    width: 100%;
+    height: 6px;
+    border-radius: 3px;
+    background: var(--border);
+    outline: none;
+    border: none;
+    padding: 0;
+    cursor: pointer;
+  }
+  .slider-track input[type="range"]::-webkit-slider-thumb {
+    -webkit-appearance: none;
+    appearance: none;
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    background: var(--accent);
+    cursor: grab;
+    border: 2px solid var(--bg);
+    box-shadow: 0 2px 6px rgba(0,0,0,0.4);
+    transition: transform 0.1s;
+  }
+  .slider-track input[type="range"]::-webkit-slider-thumb:active { cursor: grabbing; transform: scale(1.15); }
+  .slider-track input[type="range"]::-moz-range-thumb {
+    width: 20px; height: 20px; border-radius: 50%;
+    background: var(--accent); cursor: grab; border: 2px solid var(--bg);
+  }
+
+  .slider-range-labels {
+    display: flex;
+    justify-content: space-between;
+    font-size: 10px;
+    color: var(--text-dim);
+    margin-top: 2px;
+  }
+  .slider-note {
+    font-size: 11px;
+    color: var(--text-dim);
+    margin-top: 4px;
+    font-style: italic;
+  }
+
+  .option-bar {
+    display: flex;
+    gap: 4px;
+    margin-top: 4px;
+  }
+  .option-btn {
+    flex: 1;
+    padding: 6px 4px;
+    border-radius: 4px;
+    font-size: 11px;
+    cursor: pointer;
+    background: var(--bg);
+    border: 1px solid var(--border);
+    color: var(--text-dim);
+    transition: all 0.15s;
+    text-align: center;
+    white-space: nowrap;
+  }
+  .option-btn:hover { border-color: var(--accent); color: var(--text); }
+  .option-btn.active { background: var(--accent); border-color: var(--accent); color: #fff; }
+  .option-btn.active-warn { background: var(--warn); border-color: var(--warn); color: #000; }
+
+  /* Live HP gauge */
+  .hp-gauge {
+    position: sticky;
+    top: 24px;
+  }
+  .gauge-ring {
+    width: 200px;
+    height: 200px;
+    margin: 0 auto 16px;
+    position: relative;
+  }
+  .gauge-ring svg { width: 100%; height: 100%; transform: rotate(-90deg); }
+  .gauge-bg { fill: none; stroke: var(--border); stroke-width: 8; }
+  .gauge-fill { fill: none; stroke-width: 8; stroke-linecap: round; transition: stroke-dashoffset 0.4s ease, stroke 0.3s; }
+  .gauge-center {
+    position: absolute;
+    top: 50%; left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+  }
+  .gauge-hp { font-size: 42px; font-weight: 800; line-height: 1; }
+  .gauge-sub { font-size: 12px; color: var(--text-dim); }
+
+  .target-badge {
+    text-align: center;
+    padding: 6px 16px;
+    border-radius: 6px;
+    font-size: 13px;
+    font-weight: 600;
+    margin-bottom: 12px;
+  }
+  .target-hit { background: rgba(34,197,94,0.12); color: var(--green); border: 1px solid rgba(34,197,94,0.25); }
+  .target-over { background: rgba(79,140,255,0.12); color: var(--accent); border: 1px solid rgba(79,140,255,0.25); }
+  .target-under { background: rgba(239,68,68,0.12); color: var(--error); border: 1px solid rgba(239,68,68,0.25); }
+
+  .impact-list { display: flex; flex-direction: column; gap: 4px; }
+  .impact-row {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 6px 10px;
+    border-radius: 4px;
+    font-size: 12px;
+    background: var(--surface2);
+  }
+  .impact-bar-wrap { width: 100px; height: 6px; background: var(--border); border-radius: 3px; overflow: hidden; }
+  .impact-bar { height: 100%; border-radius: 3px; transition: width 0.3s; }
+
+  .compensation-box {
+    background: rgba(54,211,153,0.06);
+    border: 1px solid rgba(54,211,153,0.2);
+    border-radius: 8px;
+    padding: 12px;
+    margin-top: 12px;
+  }
+  .compensation-box h4 { font-size: 12px; color: var(--accent2); text-transform: uppercase; margin-bottom: 8px; }
+  .comp-option {
+    display: flex; justify-content: space-between; align-items: center;
+    padding: 6px 0; border-bottom: 1px solid rgba(54,211,153,0.1); font-size: 12px;
+  }
+  .comp-option:last-child { border-bottom: none; }
+  .comp-option .comp-action { color: var(--accent2); font-weight: 600; cursor: pointer; }
+  .comp-option .comp-action:hover { text-decoration: underline; }
+
+  .warning-list { margin-top: 12px; }
+  .warning-item {
+    display: flex; gap: 6px; align-items: flex-start;
+    padding: 6px 10px; border-radius: 4px; font-size: 12px; margin-bottom: 4px;
+  }
+  .warning-item.warn-bg { background: rgba(245,166,35,0.08); }
+  .warning-item.error-bg { background: rgba(239,68,68,0.08); }
+</style>
+</head>
+<body>
+
+<div class="header">
+  <div>
+    <h1>Engine Build Calculator</h1>
+    <div class="subtitle">HP Estimation &bull; Build Validation &bull; Interactive Build Advisor &bull; Tools</div>
+  </div>
+</div>
+
+<!-- TAB BAR (outside container for full-width) -->
+<div style="background: var(--surface); border-bottom: 1px solid var(--border);">
+  <div style="max-width: 1440px; margin: 0 auto;">
+    <div class="tabs">
+      <button class="tab" onclick="switchTab('estimate', this)">HP Estimator</button>
+      <button class="tab active" onclick="switchTab('advisor', this)">Build Advisor</button>
+      <button class="tab" onclick="switchTab('validate', this)">Validate Build</button>
+      <button class="tab" onclick="switchTab('tools', this)">Tools</button>
+    </div>
+  </div>
+</div>
+
+<!-- ================================================================ -->
+<!-- BUILD ADVISOR (Interactive) -->
+<!-- ================================================================ -->
+<div id="tab-advisor" class="tab-content active">
+<div style="max-width: 1440px; margin: 0 auto; padding: 24px;">
+  <!-- Top bar: Target HP + Platform -->
+  <div class="panel" style="margin-bottom: 24px;">
+    <div class="panel-body">
+      <div style="display: flex; gap: 16px; align-items: end; flex-wrap: wrap;">
+        <div class="form-group">
+          <label>Target Horsepower</label>
+          <input type="number" id="adv-target-hp" value="500" step="25" min="100" max="3000"
+                 style="font-size:24px; font-weight:700; width:140px; text-align:center; color:var(--accent);"
+                 oninput="onTargetChange()">
+        </div>
+        <div class="form-group">
+          <label>Engine Family</label>
+          <select id="adv-family" onchange="onAdvisorPlatformChange()" style="min-width: 180px;">
+            <option value="sbc">Small Block Chevy</option>
+            <option value="ls">LS-Series</option>
+            <option value="bbc" selected>Big Block Chevy</option>
+            <option value="sbf">Small Block Ford</option>
+            <option value="coyote">Coyote 5.0</option>
+            <option value="fe">Ford FE</option>
+            <option value="mopar_rb">Mopar RB (440)</option>
+            <option value="mopar_hemi">426 Hemi</option>
+            <option value="pontiac">Pontiac V8</option>
+            <option value="2jz">Toyota 2JZ</option>
+            <option value="rb26">Nissan RB26</option>
+            <option value="k_series">Honda K-Series</option>
+          </select>
+        </div>
+        <div class="form-group">
+          <label>Fuel</label>
+          <select id="adv-fuel" onchange="onAdvisorInputChange()" style="min-width: 140px;">
+            <option value="pump_gas">Pump Gas (91-93)</option>
+            <option value="e85">E85</option>
+            <option value="race_gas">Race Gas (100+)</option>
+          </select>
+        </div>
+        <button class="btn btn-secondary btn-sm" onclick="resetToBaseline()" title="Reset all sliders to recommended baseline">Reset to Baseline</button>
+        <button class="btn btn-secondary btn-sm" onclick="autoSolve()" title="Auto-adjust specs to hit target HP">Auto-Solve</button>
+      </div>
+    </div>
+  </div>
+
+  <div class="advisor-layout">
+    <!-- LEFT: Interactive Sliders -->
+    <div>
+      <!-- Short Block: Bore & Stroke -->
+      <div class="slider-group" id="sg-displacement">
+        <div class="slider-header">
+          <span class="slider-label">Short Block</span>
+          <span class="slider-value-display" id="sv-displacement">454 CI</span>
+        </div>
+        <div class="form-grid" style="gap:8px; margin-top: 4px;">
+          <div class="form-group">
+            <label>Bore (inches)</label>
+            <div style="display:flex;gap:6px;align-items:center;">
+              <input type="number" id="adv-bore" value="4.250" step="0.005" min="3.000" max="5.000"
+                     style="width:90px;text-align:center" oninput="onBoreStrokeChange()">
+              <div class="option-bar" style="margin:0;flex:1">
+                <button class="option-btn btn-sm active" onclick="setBore('stock',this)" title="Stock bore">Stock</button>
+                <button class="option-btn btn-sm" onclick="setBore('030',this)" title="+.030 overbore">+.030</button>
+                <button class="option-btn btn-sm" onclick="setBore('060',this)" title="+.060 overbore">+.060</button>
+                <button class="option-btn btn-sm" onclick="setBore('custom',this)" title="Type your own">Custom</button>
+              </div>
+            </div>
+          </div>
+          <div class="form-group">
+            <label>Stroke (inches)</label>
+            <div style="display:flex;gap:6px;align-items:center;">
+              <input type="number" id="adv-stroke" value="4.000" step="0.005" min="2.500" max="5.500"
+                     style="width:90px;text-align:center" oninput="onBoreStrokeChange()">
+              <div class="option-bar" style="margin:0;flex:1" id="stroke-options">
+                <!-- Populated dynamically per platform -->
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="slider-note" id="disp-note" style="margin-top:6px">4.250" x 4.000" = 454.0 CI (stock bore)</div>
+      </div>
+
+      <!-- Cylinder Heads CFM -->
+      <div class="slider-group" id="sg-headcfm">
+        <div class="slider-header">
+          <span class="slider-label">Head Flow (CFM per port @ 28")</span>
+          <span class="slider-value-display" id="sv-headcfm">280</span>
+        </div>
+        <div class="slider-track">
+          <input type="range" id="sl-headcfm" min="120" max="500" step="5" value="280" oninput="onSliderChange()">
+        </div>
+        <div class="slider-range-labels"><span>120 (stock)</span><span>300</span><span>500 (race)</span></div>
+      </div>
+
+      <!-- Cam Duration -->
+      <div class="slider-group" id="sg-camduration">
+        <div class="slider-header">
+          <span class="slider-label">Cam Duration @ .050" (intake)</span>
+          <span class="slider-value-display" id="sv-camduration">236</span>
+        </div>
+        <div class="slider-track">
+          <input type="range" id="sl-camduration" min="190" max="290" step="1" value="236" oninput="onSliderChange()">
+        </div>
+        <div class="slider-range-labels"><span>190 (stock)</span><span>230 (street)</span><span>260 (race)</span><span>290</span></div>
+        <div class="slider-note" id="cam-note">Hydraulic roller &bull; Est. peak HP ~6200 RPM</div>
+      </div>
+
+      <!-- Cam Lift -->
+      <div class="slider-group" id="sg-camlift">
+        <div class="slider-header">
+          <span class="slider-label">Cam Gross Lift (intake, inches)</span>
+          <span class="slider-value-display" id="sv-camlift">.520</span>
+        </div>
+        <div class="slider-track">
+          <input type="range" id="sl-camlift" min="0.350" max="0.800" step="0.005" value="0.520" oninput="onSliderChange()">
+        </div>
+        <div class="slider-range-labels"><span>.350"</span><span>.500"</span><span>.650"</span><span>.800"</span></div>
+      </div>
+
+      <!-- Compression Ratio -->
+      <div class="slider-group" id="sg-cr">
+        <div class="slider-header">
+          <span class="slider-label">Compression Ratio</span>
+          <span class="slider-value-display" id="sv-cr">10.0:1</span>
+        </div>
+        <div class="slider-track">
+          <input type="range" id="sl-cr" min="7.0" max="15.0" step="0.1" value="10.0" oninput="onSliderChange()">
+        </div>
+        <div class="slider-range-labels"><span>7.0 (boost)</span><span>9.5</span><span>11.5 (pump)</span><span>15.0 (race)</span></div>
+      </div>
+
+      <!-- Aspiration + Boost -->
+      <div class="slider-group" id="sg-boost">
+        <div class="slider-header">
+          <span class="slider-label">Forced Induction</span>
+          <span class="slider-value-display" id="sv-boost">N/A</span>
+        </div>
+        <div class="option-bar" id="aspiration-bar">
+          <button class="option-btn active" onclick="setAspiration('na', this)">N/A</button>
+          <button class="option-btn" onclick="setAspiration('turbo', this)">Turbo</button>
+          <button class="option-btn" onclick="setAspiration('supercharged', this)">Supercharger</button>
+        </div>
+        <div id="boost-slider-wrap" class="hidden" style="margin-top: 8px;">
+          <div class="slider-track">
+            <input type="range" id="sl-boost" min="0" max="40" step="1" value="0" oninput="onSliderChange()">
+          </div>
+          <div class="slider-range-labels"><span>0 PSI</span><span>15</span><span>30</span><span>40</span></div>
+        </div>
+      </div>
+
+      <!-- Intake Manifold -->
+      <div class="slider-group" id="sg-intake">
+        <div class="slider-header">
+          <span class="slider-label">Intake Manifold</span>
+          <span class="slider-value-display" id="sv-intake" style="font-size: 12px;">Single Plane</span>
+        </div>
+        <div class="option-bar">
+          <button class="option-btn" onclick="setOption('intake','stock',this)">Stock</button>
+          <button class="option-btn" onclick="setOption('intake','dual_plane',this)">Dual Plane</button>
+          <button class="option-btn active" onclick="setOption('intake','single_plane',this)">Single Plane</button>
+          <button class="option-btn" onclick="setOption('intake','tunnel_ram',this)">Tunnel Ram</button>
+          <button class="option-btn" onclick="setOption('intake','ir',this)">IR / ITB</button>
+        </div>
+      </div>
+
+      <!-- Exhaust -->
+      <div class="slider-group" id="sg-exhaust">
+        <div class="slider-header">
+          <span class="slider-label">Exhaust</span>
+          <span class="slider-value-display" id="sv-exhaust" style="font-size: 12px;">Long-Tube Headers</span>
+        </div>
+        <div class="option-bar">
+          <button class="option-btn" onclick="setOption('exhaust','stock',this)">Stock</button>
+          <button class="option-btn" onclick="setOption('exhaust','manifolds',this)">Cast Manifolds</button>
+          <button class="option-btn active" onclick="setOption('exhaust','headers',this)">Headers</button>
+          <button class="option-btn" onclick="setOption('exhaust','headers_tuned',this)">Tuned Headers</button>
+        </div>
+      </div>
+
+      <!-- Fuel System -->
+      <div class="slider-group" id="sg-fuelsys">
+        <div class="slider-header">
+          <span class="slider-label">Fuel System</span>
+          <span class="slider-value-display" id="sv-fuelsys" style="font-size: 12px;">Carburetor</span>
+        </div>
+        <div class="option-bar">
+          <button class="option-btn" onclick="setOption('fuelsys','carb_stock',this)">Stock Carb</button>
+          <button class="option-btn active" onclick="setOption('fuelsys','carb',this)">Carb (tuned)</button>
+          <button class="option-btn" onclick="setOption('fuelsys','efi',this)">EFI</button>
+          <button class="option-btn" onclick="setOption('fuelsys','mechanical_injection',this)">Mech Injection</button>
+        </div>
+      </div>
+
+      <!-- Head Material -->
+      <div class="slider-group" id="sg-headmat">
+        <div class="slider-header">
+          <span class="slider-label">Head Material</span>
+          <span class="slider-value-display" id="sv-headmat" style="font-size: 12px;">Aluminum</span>
+        </div>
+        <div class="option-bar">
+          <button class="option-btn" onclick="setOption('headmat','iron',this)">Iron</button>
+          <button class="option-btn active" onclick="setOption('headmat','aluminum',this)">Aluminum</button>
+        </div>
+      </div>
+    </div>
+
+    <!-- RIGHT: Live Results Gauge -->
+    <div class="hp-gauge">
+      <!-- HP Gauge -->
+      <div class="gauge-ring">
+        <svg viewBox="0 0 120 120">
+          <circle class="gauge-bg" cx="60" cy="60" r="52"/>
+          <circle class="gauge-fill" id="gauge-arc" cx="60" cy="60" r="52"
+                  stroke-dasharray="326.73" stroke-dashoffset="326.73"/>
+        </svg>
+        <div class="gauge-center">
+          <div class="gauge-hp" id="gauge-hp">--</div>
+          <div class="gauge-sub">estimated HP</div>
+        </div>
+      </div>
+
+      <!-- Target status -->
+      <div id="target-status" class="target-badge target-hit">On Target</div>
+
+      <!-- Key stats -->
+      <div class="stat-grid" style="grid-template-columns: 1fr 1fr; margin-bottom: 12px;">
+        <div class="stat">
+          <div class="stat-value" id="gauge-torque">--</div>
+          <div class="stat-label">Torque (lb-ft)</div>
+        </div>
+        <div class="stat">
+          <div class="stat-value" id="gauge-rpm">--</div>
+          <div class="stat-label">Peak HP RPM</div>
+        </div>
+      </div>
+
+      <!-- HP Impact Breakdown -->
+      <div class="section-title">HP Impact by Component</div>
+      <div class="impact-list" id="impact-list"></div>
+
+      <!-- Compensation suggestions -->
+      <div id="compensation-box" class="compensation-box hidden">
+        <h4>To hit your target, try:</h4>
+        <div id="compensation-options"></div>
+      </div>
+
+      <!-- Warnings -->
+      <div id="warnings-box" class="warning-list"></div>
+    </div>
+  </div>
+</div>
+</div>
+
+<!-- ================================================================ -->
+<!-- HP ESTIMATOR (kept from original) -->
+<!-- ================================================================ -->
+<div id="tab-estimate" class="tab-content">
+<div class="container">
+  <div class="panel">
+    <div class="panel-header">Engine Specs</div>
+    <div class="panel-body">
+      <div class="quick-presets">
+        <button class="preset-btn" onclick="loadPreset('sbc350')">SBC 350</button>
+        <button class="preset-btn" onclick="loadPreset('sbc383')">SBC 383</button>
+        <button class="preset-btn" onclick="loadPreset('ls3')">LS3 6.2</button>
+        <button class="preset-btn" onclick="loadPreset('bbc454')">BBC 454</button>
+        <button class="preset-btn" onclick="loadPreset('bbc496')">BBC 496</button>
+        <button class="preset-btn" onclick="loadPreset('sbf302')">SBF 302</button>
+        <button class="preset-btn" onclick="loadPreset('sbf351w')">SBF 351W</button>
+        <button class="preset-btn" onclick="loadPreset('mopar440')">Mopar 440</button>
+        <button class="preset-btn" onclick="loadPreset('coyote')">Coyote 5.0</button>
+        <button class="preset-btn" onclick="loadPreset('2jz')">2JZ-GTE</button>
+      </div>
+      <div class="section-title">Engine</div>
+      <div class="form-grid">
+        <div class="form-group"><label>Displacement (CI)</label><input type="number" id="est-displacement" value="383" step="1"></div>
+        <div class="form-group"><label>Cylinders</label><select id="est-cylinders"><option value="4">4</option><option value="6">6</option><option value="8" selected>8</option></select></div>
+        <div class="form-group"><label>Compression Ratio</label><input type="number" id="est-cr" value="10.0" step="0.1"></div>
+        <div class="form-group"><label>Aspiration</label><select id="est-aspiration" onchange="document.getElementById('est-boost-g').classList.toggle('hidden',this.value==='na')"><option value="na">NA</option><option value="turbo">Turbo</option><option value="supercharged">Supercharged</option></select></div>
+        <div class="form-group hidden" id="est-boost-g"><label>Boost PSI</label><input type="number" id="est-boost" value="0" step="1"></div>
+      </div>
+      <div class="section-title">Heads</div>
+      <div class="form-grid">
+        <div class="form-group"><label>Peak Intake CFM</label><input type="number" id="est-headcfm" value="270" step="5"></div>
+        <div class="form-group"><label>Head Material</label><select id="est-headmaterial"><option value="aluminum">Aluminum</option><option value="iron">Iron</option></select></div>
+      </div>
+      <div class="section-title">Cam</div>
+      <div class="form-grid">
+        <div class="form-group"><label>Duration @ .050" (intake)</label><input type="number" id="est-camduration" value="232" step="1"></div>
+        <div class="form-group"><label>Gross Lift (intake)</label><input type="number" id="est-camlift" value="0.488" step="0.005"></div>
+      </div>
+      <div class="section-title">Supporting</div>
+      <div class="form-grid">
+        <div class="form-group"><label>Intake</label><select id="est-intake"><option value="single_plane">Single Plane</option><option value="dual_plane">Dual Plane</option><option value="tunnel_ram">Tunnel Ram</option><option value="ir">IR/ITB</option><option value="stock">Stock</option></select></div>
+        <div class="form-group"><label>Exhaust</label><select id="est-exhaust"><option value="headers_tuned">Tuned Headers</option><option value="headers" selected>Headers</option><option value="manifolds">Manifolds</option><option value="stock">Stock</option></select></div>
+        <div class="form-group"><label>Fuel System</label><select id="est-fuel"><option value="efi">EFI</option><option value="carb" selected>Carb</option><option value="carb_stock">Stock Carb</option><option value="mechanical_injection">Mech Injection</option></select></div>
+        <div class="form-group"><label>Fuel Type</label><select id="est-fueltype"><option value="pump_gas" selected>Pump Gas</option><option value="e85">E85</option><option value="race_gas">Race Gas</option></select></div>
+      </div>
+      <div style="margin-top:16px"><button class="btn btn-primary" onclick="runEstimate()">Calculate HP</button></div>
+    </div>
+  </div>
+  <div class="panel"><div class="panel-header">Results</div><div class="panel-body" id="est-results"><div style="text-align:center;padding:40px;color:var(--text-dim)">Enter specs and click Calculate.</div></div></div>
+</div>
+</div>
+
+<!-- ================================================================ -->
+<!-- VALIDATE BUILD -->
+<!-- ================================================================ -->
+<div id="tab-validate" class="tab-content">
+<div class="container">
+  <div class="panel">
+    <div class="panel-header">Build Claim</div>
+    <div class="panel-body">
+      <div class="form-grid">
+        <div class="form-group"><label>Claimed HP</label><input type="number" id="val-claimedHP" value="450"></div>
+        <div class="form-group"><label>Claimed HP RPM</label><input type="number" id="val-claimedRPM" value="5800"></div>
+        <div class="form-group"><label>Displacement CI</label><input type="number" id="val-displacement" value="383"></div>
+        <div class="form-group"><label>Cylinders</label><select id="val-cylinders"><option value="4">4</option><option value="6">6</option><option value="8" selected>8</option></select></div>
+        <div class="form-group"><label>Aspiration</label><select id="val-aspiration" onchange="document.getElementById('val-boost-g').classList.toggle('hidden',this.value==='na')"><option value="na">NA</option><option value="turbo">Turbo</option><option value="supercharged">SC</option></select></div>
+        <div class="form-group hidden" id="val-boost-g"><label>Boost PSI</label><input type="number" id="val-boost" value="0"></div>
+        <div class="form-group"><label>Head Peak CFM</label><input type="number" id="val-headcfm" value="200"></div>
+        <div class="form-group"><label>Head Material</label><select id="val-headmaterial"><option value="aluminum">Aluminum</option><option value="iron" selected>Iron</option></select></div>
+        <div class="form-group"><label>Cam Dur .050"</label><input type="number" id="val-camduration" value="224"></div>
+        <div class="form-group"><label>Cam Lift</label><input type="number" id="val-camlift" value="0.450" step="0.005"></div>
+        <div class="form-group"><label>Head Peak Flow Lift</label><input type="number" id="val-headpeaklift" value="0.400" step="0.005"></div>
+        <div class="form-group"><label>Compression Ratio</label><input type="number" id="val-cr" value="10.0" step="0.1"></div>
+        <div class="form-group"><label>Fuel Type</label><select id="val-fueltype"><option value="pump_gas">Pump Gas</option><option value="e85">E85</option><option value="race_gas">Race Gas</option></select></div>
+        <div class="form-group"><label>Intake Type</label><select id="val-intake"><option value="dual_plane">Dual Plane</option><option value="single_plane">Single Plane</option><option value="stock">Stock</option></select></div>
+        <div class="form-group"><label>Carb CFM</label><input type="number" id="val-carbcfm" value="750" placeholder="Optional"></div>
+        <div class="form-group"><label>1/4 Mile ET</label><input type="number" id="val-et" value="" step="0.01" placeholder="Optional"></div>
+        <div class="form-group"><label>Vehicle Weight</label><input type="number" id="val-weight" value="" placeholder="Optional"></div>
+      </div>
+      <div style="margin-top:16px"><button class="btn btn-primary" onclick="runValidation()">Validate Build</button></div>
+    </div>
+  </div>
+  <div class="panel"><div class="panel-header">Validation Results</div><div class="panel-body" id="val-results"><div style="text-align:center;padding:40px;color:var(--text-dim)">Enter a build claim and click Validate.</div></div></div>
+</div>
+</div>
+
+<!-- ================================================================ -->
+<!-- TOOLS -->
+<!-- ================================================================ -->
+<div id="tab-tools" class="tab-content">
+<div class="container">
+  <div class="panel">
+    <div class="panel-header">Compression Ratio Calculator</div>
+    <div class="panel-body">
+      <div class="form-grid">
+        <div class="form-group"><label>Bore (in)</label><input type="number" id="cr-bore" value="4.030" step="0.005"></div>
+        <div class="form-group"><label>Stroke (in)</label><input type="number" id="cr-stroke" value="3.750" step="0.005"></div>
+        <div class="form-group"><label>Chamber CC</label><input type="number" id="cr-chamber" value="64" step="1"></div>
+        <div class="form-group"><label>Dome/Dish CC</label><input type="number" id="cr-dome" value="-6" step="1"></div>
+        <div class="form-group"><label>Gasket Bore</label><input type="number" id="cr-gbore" value="4.100" step="0.005"></div>
+        <div class="form-group"><label>Gasket Thick</label><input type="number" id="cr-gthick" value="0.040" step="0.005"></div>
+        <div class="form-group"><label>Deck Clearance</label><input type="number" id="cr-deck" value="0.005" step="0.001"></div>
+      </div>
+      <div class="cr-calc"><div style="text-align:center;font-size:12px;color:var(--text-dim)">COMPRESSION RATIO</div><div class="cr-result" id="cr-result">--</div></div>
+      <div style="margin-top:12px"><button class="btn btn-primary" onclick="calcCR()">Calculate</button></div>
+    </div>
+  </div>
+  <div>
+    <div class="panel" style="margin-bottom:24px">
+      <div class="panel-header">Time Slip HP Calculator</div>
+      <div class="panel-body">
+        <div class="form-grid">
+          <div class="form-group"><label>1/4 Mile ET</label><input type="number" id="ts-et" value="11.50" step="0.01"></div>
+          <div class="form-group"><label>Weight (lbs)</label><input type="number" id="ts-weight" value="3400" step="50"></div>
+        </div>
+        <div class="cr-calc"><div style="text-align:center;font-size:12px;color:var(--text-dim)">ESTIMATED HP</div><div class="cr-result" id="ts-result">--</div></div>
+        <div style="margin-top:12px"><button class="btn btn-primary" onclick="calcTimeslip()">Calculate</button></div>
+      </div>
+    </div>
+    <div class="panel">
+      <div class="panel-header">Header Primary Sizing</div>
+      <div class="panel-body">
+        <div class="form-grid">
+          <div class="form-group"><label>Displacement CI</label><input type="number" id="hdr-disp" value="383"></div>
+          <div class="form-group"><label>Cylinders</label><input type="number" id="hdr-cyl" value="8"></div>
+          <div class="form-group"><label>Peak Torque RPM</label><input type="number" id="hdr-rpm" value="4500"></div>
+        </div>
+        <div class="cr-calc"><div style="text-align:center;font-size:12px;color:var(--text-dim)">PRIMARY TUBE SIZE</div><div class="cr-result" id="hdr-result">--</div></div>
+        <div style="margin-top:12px"><button class="btn btn-primary" onclick="calcHeaders()">Calculate</button></div>
+      </div>
+    </div>
+  </div>
+</div>
+</div>
+
+<script>
+// ================================================================
+// SHARED ENGINE: HP ESTIMATION (same formulas as SQL functions)
+// ================================================================
+const FAMILY_INFO = {
+  sbc: {
+    name:'Small Block Chevy', cyl:8,
+    stockBore:4.000, defCFM:270, defDur:232, defLift:0.488, defCR:10.0,
+    strokes: [
+      { label:'Stock 350', stroke:3.480, bore:4.000 },
+      { label:'383 Stroker', stroke:3.750, bore:4.030 },
+      { label:'400', stroke:3.750, bore:4.125 },
+      { label:'406 Stroker', stroke:3.875, bore:4.030 },
+    ]
+  },
+  ls: {
+    name:'LS-Series', cyl:8,
+    stockBore:3.898, defCFM:300, defDur:220, defLift:0.525, defCR:10.7,
+    strokes: [
+      { label:'5.3 (LM7)', stroke:3.622, bore:3.780 },
+      { label:'6.0 (LQ4)', stroke:3.622, bore:4.000 },
+      { label:'6.2 (LS3)', stroke:3.622, bore:4.065 },
+      { label:'LS7 7.0', stroke:4.000, bore:4.125 },
+      { label:'408 Stroker', stroke:4.000, bore:4.065 },
+    ]
+  },
+  bbc: {
+    name:'Big Block Chevy', cyl:8,
+    stockBore:4.250, defCFM:280, defDur:236, defLift:0.520, defCR:10.0,
+    strokes: [
+      { label:'396', stroke:3.760, bore:4.094 },
+      { label:'427', stroke:3.760, bore:4.250 },
+      { label:'454', stroke:4.000, bore:4.250 },
+      { label:'496 Stroker', stroke:4.250, bore:4.310 },
+      { label:'540 Stroker', stroke:4.500, bore:4.310 },
+      { label:'572 Stroker', stroke:4.500, bore:4.500 },
+    ]
+  },
+  sbf: {
+    name:'Small Block Ford', cyl:8,
+    stockBore:4.000, defCFM:225, defDur:224, defLift:0.480, defCR:9.5,
+    strokes: [
+      { label:'302', stroke:3.000, bore:4.000 },
+      { label:'331 Stroker', stroke:3.250, bore:4.030 },
+      { label:'347 Stroker', stroke:3.400, bore:4.030 },
+      { label:'351W', stroke:3.500, bore:4.000 },
+      { label:'408W Stroker', stroke:4.000, bore:4.030 },
+    ]
+  },
+  coyote: {
+    name:'Coyote 5.0', cyl:8,
+    stockBore:3.630, defCFM:280, defDur:210, defLift:0.472, defCR:11.0,
+    strokes: [
+      { label:'Stock 5.0', stroke:3.650, bore:3.630 },
+      { label:'5.2 Voodoo', stroke:3.650, bore:3.701 },
+    ]
+  },
+  fe: {
+    name:'Ford FE', cyl:8,
+    stockBore:4.050, defCFM:250, defDur:228, defLift:0.500, defCR:10.0,
+    strokes: [
+      { label:'390', stroke:3.780, bore:4.050 },
+      { label:'427', stroke:3.780, bore:4.233 },
+      { label:'428', stroke:3.984, bore:4.133 },
+    ]
+  },
+  mopar_rb: {
+    name:'Mopar RB (440)', cyl:8,
+    stockBore:4.320, defCFM:260, defDur:230, defLift:0.510, defCR:10.0,
+    strokes: [
+      { label:'413', stroke:3.750, bore:4.188 },
+      { label:'440', stroke:3.750, bore:4.320 },
+      { label:'493 Stroker', stroke:4.150, bore:4.350 },
+      { label:'500+ Stroker', stroke:4.250, bore:4.350 },
+    ]
+  },
+  mopar_hemi: {
+    name:'426 Hemi', cyl:8,
+    stockBore:4.250, defCFM:320, defDur:240, defLift:0.560, defCR:10.5,
+    strokes: [
+      { label:'426 Hemi', stroke:3.750, bore:4.250 },
+      { label:'528 Stroker', stroke:4.250, bore:4.310 },
+    ]
+  },
+  pontiac: {
+    name:'Pontiac V8', cyl:8,
+    stockBore:4.120, defCFM:230, defDur:224, defLift:0.480, defCR:9.5,
+    strokes: [
+      { label:'400', stroke:3.750, bore:4.120 },
+      { label:'455', stroke:4.210, bore:4.152 },
+      { label:'461 Stroker', stroke:4.250, bore:4.152 },
+    ]
+  },
+  '2jz': {
+    name:'Toyota 2JZ', cyl:6,
+    stockBore:3.386, defCFM:200, defDur:224, defLift:0.430, defCR:8.5,
+    strokes: [
+      { label:'Stock 3.0', stroke:3.386, bore:3.386 },
+      { label:'3.2 Stroker', stroke:3.543, bore:3.406 },
+      { label:'3.4 Stroker', stroke:3.693, bore:3.425 },
+    ]
+  },
+  rb26: {
+    name:'Nissan RB26', cyl:6,
+    stockBore:3.386, defCFM:190, defDur:220, defLift:0.420, defCR:8.5,
+    strokes: [
+      { label:'Stock 2.6', stroke:2.894, bore:3.386 },
+      { label:'RB30 3.0', stroke:3.386, bore:3.386 },
+    ]
+  },
+  k_series: {
+    name:'Honda K-Series', cyl:4,
+    stockBore:3.425, defCFM:220, defDur:218, defLift:0.450, defCR:11.0,
+    strokes: [
+      { label:'K20 2.0', stroke:3.386, bore:3.425 },
+      { label:'K24 2.4', stroke:3.898, bore:3.425 },
+      { label:'K24 Sleeved', stroke:3.898, bore:3.504 },
+    ]
+  },
+};
+
+function estimateHP(p) {
+  const { displacement, cylinders, cr, headCFM, camDuration, camLift,
+          aspiration, boostPSI, intakeType, exhaustType, fuelSystem, fuelType, headMaterial } = p;
+
+  const delta = camDuration - 200;
+  let peakTorqueRPM = Math.round(2000 + 100*delta - 0.5*delta*delta/10);
+  let peakHPRPM = Math.round(peakTorqueRPM + 1700 + 8*delta);
+  peakTorqueRPM = Math.max(2500, Math.min(peakTorqueRPM, 9000));
+  peakHPRPM = Math.max(4000, Math.min(peakHPRPM, 10500));
+
+  let baseVE;
+  if (camDuration < 210) baseVE = 0.82;
+  else if (camDuration < 220) baseVE = 0.87;
+  else if (camDuration < 235) baseVE = 0.92;
+  else if (camDuration < 250) baseVE = 0.96;
+  else if (camDuration < 265) baseVE = 1.00;
+  else baseVE = 1.05;
+
+  let boostFactor = 1.0;
+  if (aspiration !== 'na' && boostPSI > 0) boostFactor = (14.7 + boostPSI) / 14.7 * 0.85;
+  const effectiveVE = baseVE * boostFactor;
+
+  const theorCFM = (displacement * peakHPRPM) / 3456;
+  let actualCFM = theorCFM * effectiveVE;
+
+  let headLimited = false, methodA;
+  if (headCFM && headCFM > 0) {
+    let dfr;
+    if (camDuration < 220) dfr = 0.52;
+    else if (camDuration < 240) dfr = 0.57;
+    else if (camDuration < 260) dfr = 0.62;
+    else if (camDuration < 275) dfr = 0.67;
+    else dfr = 0.70;
+    const headEff = headCFM * dfr * cylinders;
+    if (actualCFM > headEff) { actualCFM = headEff; headLimited = true; }
+    methodA = headCFM * 0.2575 * cylinders;
+    if (!headLimited) methodA *= (actualCFM / headEff);
+  } else { methodA = actualCFM / 1.5; }
+
+  let tpci;
+  if (camDuration < 215) tpci = 0.95;
+  else if (camDuration < 230) tpci = 1.05;
+  else if (camDuration < 245) tpci = 1.15;
+  else if (camDuration < 260) tpci = 1.25;
+  else tpci = 1.35;
+  const torqueB = displacement * tpci;
+  const bmep = 150.8 * tpci;
+  const methodB = (torqueB * peakHPRPM) / 5252;
+
+  const crFactor = (1 - 1/Math.pow(cr, 0.3)) / (1 - 1/Math.pow(9.5, 0.3));
+  const intakeFactor = {tunnel_ram:1.03, ir:1.03, single_plane:1.00, dual_plane:0.95, stock:0.90}[intakeType]||1;
+  const exhaustFactor = {headers_tuned:1.02, headers:1.00, manifolds:0.88, stock:0.85}[exhaustType]||1;
+  const fuelFactor = {mechanical_injection:1.02, efi:1.00, carb:0.98, carb_stock:0.93}[fuelSystem]||1;
+
+  let finalHP = headCFM > 0 ? methodA * 0.6 + methodB * 0.4 : methodB;
+  const confidence = headCFM > 0 ? (aspiration === 'na' ? 'high' : 'medium') : 'low';
+  finalHP *= crFactor * intakeFactor * exhaustFactor * fuelFactor;
+  if (aspiration !== 'na') finalHP *= boostFactor;
+  const finalTorque = (finalHP * 5252) / peakHPRPM;
+
+  return { hp: Math.round(finalHP), torque: Math.round(finalTorque), peakHPRPM, peakTorqueRPM,
+           methodA: Math.round(methodA), methodB: Math.round(methodB), ve: effectiveVE, bmep: Math.round(bmep),
+           headLimited, confidence, crFactor, intakeFactor, exhaustFactor, fuelFactor, boostFactor };
+}
+
+// ================================================================
+// TAB SWITCHING
+// ================================================================
+function switchTab(name, el) {
+  document.querySelectorAll('.tab').forEach(t => t.classList.remove('active'));
+  document.querySelectorAll('.tab-content').forEach(t => t.classList.remove('active'));
+  el.classList.add('active');
+  document.getElementById('tab-' + name).classList.add('active');
+}
+
+// ================================================================
+// INTERACTIVE BUILD ADVISOR
+// ================================================================
+let advState = {
+  aspiration: 'na',
+  intake: 'single_plane',
+  exhaust: 'headers',
+  fuelsys: 'carb',
+  headmat: 'aluminum',
+};
+let baseline = {}; // stored baseline for delta display
+
+function calcDisplacement(bore, stroke, cyl) {
+  return Math.round(Math.PI * Math.pow(bore / 2, 2) * stroke * cyl * 10) / 10;  // in CI (bore/stroke in inches)
+}
+
+function getAdvisorParams() {
+  const fam = FAMILY_INFO[document.getElementById('adv-family').value] || FAMILY_INFO.bbc;
+  const bore = +document.getElementById('adv-bore').value;
+  const stroke = +document.getElementById('adv-stroke').value;
+  return {
+    displacement: calcDisplacement(bore, stroke, fam.cyl),
+    bore, stroke,
+    cylinders: fam.cyl,
+    cr: +document.getElementById('sl-cr').value,
+    headCFM: +document.getElementById('sl-headcfm').value,
+    camDuration: +document.getElementById('sl-camduration').value,
+    camLift: +document.getElementById('sl-camlift').value,
+    aspiration: advState.aspiration,
+    boostPSI: advState.aspiration !== 'na' ? +document.getElementById('sl-boost').value : 0,
+    intakeType: advState.intake,
+    exhaustType: advState.exhaust,
+    fuelSystem: advState.fuelsys,
+    fuelType: document.getElementById('adv-fuel').value,
+    headMaterial: advState.headmat,
+  };
+}
+
+function computeBaseline(targetHP) {
+  const famKey = document.getElementById('adv-family').value;
+  const fam = FAMILY_INFO[famKey] || FAMILY_INFO.bbc;
+  const fuel = document.getElementById('adv-fuel').value;
+
+  const hpPerCyl = targetHP / fam.cyl;
+  let cfm = Math.round(targetHP / (0.2575 * fam.cyl));
+  let dur, lift, cr;
+
+  if (hpPerCyl < 50)  { dur = 215; lift = 0.450; }
+  else if (hpPerCyl < 65)  { dur = 225; lift = 0.490; }
+  else if (hpPerCyl < 80)  { dur = 236; lift = 0.530; }
+  else if (hpPerCyl < 100) { dur = 248; lift = 0.570; }
+  else if (hpPerCyl < 120) { dur = 258; lift = 0.620; }
+  else { dur = 270; lift = 0.680; }
+
+  if (fuel === 'pump_gas') cr = Math.min(11.5, 9.5 + hpPerCyl / 80);
+  else if (fuel === 'e85') cr = Math.min(13.0, 10.5 + hpPerCyl / 80);
+  else cr = Math.min(14.5, 11.0 + hpPerCyl / 60);
+
+  // Pick the best stroke option for the target — use the largest common combo
+  const defStroke = fam.strokes[fam.strokes.length > 1 ? 1 : 0]; // second option is usually the popular stroker
+  const bore = defStroke.bore;
+  const stroke = defStroke.stroke;
+
+  return { bore, stroke, headCFM: cfm, camDuration: dur, camLift: lift, cr: Math.round(cr * 10) / 10,
+           aspiration: 'na', boostPSI: 0, intake: 'single_plane', exhaust: 'headers', fuelsys: 'carb', headmat: 'aluminum' };
+}
+
+// Bore / stroke UI helpers
+function setBore(option, el) {
+  const fam = FAMILY_INFO[document.getElementById('adv-family').value] || FAMILY_INFO.bbc;
+  const boreInput = document.getElementById('adv-bore');
+  el.parentElement.querySelectorAll('.option-btn').forEach(b => b.classList.remove('active'));
+  el.classList.add('active');
+  if (option === 'stock') boreInput.value = fam.stockBore.toFixed(3);
+  else if (option === '030') boreInput.value = (fam.stockBore + 0.030).toFixed(3);
+  else if (option === '060') boreInput.value = (fam.stockBore + 0.060).toFixed(3);
+  // 'custom' just leaves the current value for the user to type
+  onBoreStrokeChange();
+}
+
+function setStroke(stroke, bore, el) {
+  document.getElementById('adv-stroke').value = stroke.toFixed(3);
+  if (bore) document.getElementById('adv-bore').value = bore.toFixed(3);
+  el.parentElement.querySelectorAll('.option-btn').forEach(b => b.classList.remove('active'));
+  el.classList.add('active');
+  // Reset bore option buttons since we may have changed bore
+  document.querySelectorAll('#sg-displacement .option-bar')[0]?.querySelectorAll('.option-btn').forEach(b => b.classList.remove('active'));
+  onBoreStrokeChange();
+}
+
+function populateStrokeOptions(famKey) {
+  const fam = FAMILY_INFO[famKey] || FAMILY_INFO.bbc;
+  const container = document.getElementById('stroke-options');
+  container.innerHTML = fam.strokes.map((s, i) =>
+    `<button class="option-btn btn-sm${i === 0 ? ' active' : ''}" onclick="setStroke(${s.stroke},${s.bore},this)" title="${s.label}">${s.label}</button>`
+  ).join('');
+}
+
+function onBoreStrokeChange() {
+  const fam = FAMILY_INFO[document.getElementById('adv-family').value] || FAMILY_INFO.bbc;
+  const bore = +document.getElementById('adv-bore').value;
+  const stroke = +document.getElementById('adv-stroke').value;
+  const disp = calcDisplacement(bore, stroke, fam.cyl);
+  const overbore = bore - fam.stockBore;
+  let boreNote = '';
+  if (Math.abs(overbore) < 0.002) boreNote = 'stock bore';
+  else if (overbore > 0) boreNote = `+.${String(Math.round(overbore * 1000)).padStart(3,'0')}" overbore`;
+  document.getElementById('disp-note').textContent = `${bore.toFixed(3)}" x ${stroke.toFixed(3)}" = ${disp.toFixed(1)} CI${boreNote ? ' (' + boreNote + ')' : ''}`;
+  onSliderChange();
+}
+
+function setSliders(b) {
+  if (b.bore) document.getElementById('adv-bore').value = b.bore.toFixed(3);
+  if (b.stroke) document.getElementById('adv-stroke').value = b.stroke.toFixed(3);
+  document.getElementById('sl-headcfm').value = b.headCFM;
+  document.getElementById('sl-camduration').value = b.camDuration;
+  document.getElementById('sl-camlift').value = b.camLift;
+  document.getElementById('sl-cr').value = b.cr;
+  document.getElementById('sl-boost').value = b.boostPSI;
+  advState.aspiration = b.aspiration;
+  advState.intake = b.intake;
+  advState.exhaust = b.exhaust;
+  advState.fuelsys = b.fuelsys;
+  advState.headmat = b.headmat;
+  // Update option bar visuals
+  updateOptionBars();
+  updateAspirationBar();
+}
+
+function updateOptionBars() {
+  ['intake', 'exhaust', 'fuelsys', 'headmat'].forEach(key => {
+    const parent = document.getElementById('sg-' + key);
+    parent.querySelectorAll('.option-btn').forEach(btn => {
+      const val = btn.getAttribute('onclick').match(/'([^']+)'/g);
+      if (val && val[1]) {
+        const v = val[1].replace(/'/g, '');
+        btn.classList.toggle('active', v === advState[key]);
+      }
+    });
+  });
+}
+
+function updateAspirationBar() {
+  document.querySelectorAll('#aspiration-bar .option-btn').forEach(btn => {
+    const val = btn.getAttribute('onclick').match(/'([^']+)'/);
+    if (val) btn.classList.toggle('active', val[1] === advState.aspiration);
+  });
+  document.getElementById('boost-slider-wrap').classList.toggle('hidden', advState.aspiration === 'na');
+}
+
+function setAspiration(val, el) {
+  advState.aspiration = val;
+  document.querySelectorAll('#aspiration-bar .option-btn').forEach(b => b.classList.remove('active'));
+  el.classList.add('active');
+  document.getElementById('boost-slider-wrap').classList.toggle('hidden', val === 'na');
+  if (val !== 'na' && +document.getElementById('sl-boost').value === 0) {
+    document.getElementById('sl-boost').value = 10;
+  }
+  onSliderChange();
+}
+
+function setOption(key, val, el) {
+  advState[key] = val;
+  el.parentElement.querySelectorAll('.option-btn').forEach(b => b.classList.remove('active'));
+  el.classList.add('active');
+  onSliderChange();
+}
+
+function onTargetChange() { updateAdvisor(); }
+function onAdvisorInputChange() { updateAdvisor(); }
+function onAdvisorPlatformChange() {
+  const famKey = document.getElementById('adv-family').value;
+  populateStrokeOptions(famKey);
+  // Update stock bore buttons for the new platform
+  const fam = FAMILY_INFO[famKey] || FAMILY_INFO.bbc;
+  document.getElementById('adv-bore').value = fam.stockBore.toFixed(3);
+  const targetHP = +document.getElementById('adv-target-hp').value;
+  baseline = computeBaseline(targetHP);
+  setSliders(baseline);
+  onBoreStrokeChange();
+  updateAdvisor();
+}
+
+function resetToBaseline() {
+  const targetHP = +document.getElementById('adv-target-hp').value;
+  baseline = computeBaseline(targetHP);
+  setSliders(baseline);
+  updateAdvisor();
+}
+
+function onSliderChange() { updateAdvisor(); }
+
+function updateAdvisor() {
+  const targetHP = +document.getElementById('adv-target-hp').value;
+  const params = getAdvisorParams();
+  const result = estimateHP(params);
+
+  // Update value displays
+  document.getElementById('sv-displacement').textContent = params.displacement.toFixed(1) + ' CI';
+  document.getElementById('sv-headcfm').textContent = params.headCFM;
+  document.getElementById('sv-camduration').textContent = params.camDuration;
+  document.getElementById('sv-camlift').textContent = '.' + String(Math.round(params.camLift * 1000)).padStart(3, '0') + '"';
+  document.getElementById('sv-cr').textContent = (+params.cr).toFixed(1) + ':1';
+  document.getElementById('sv-boost').textContent = advState.aspiration === 'na' ? 'N/A' : params.boostPSI + ' PSI';
+  const intakeLabels = {stock:'Stock',dual_plane:'Dual Plane',single_plane:'Single Plane',tunnel_ram:'Tunnel Ram',ir:'IR / ITB'};
+  const exhaustLabels = {stock:'Stock',manifolds:'Cast Manifolds',headers:'Headers',headers_tuned:'Tuned Headers'};
+  const fuelLabels = {carb_stock:'Stock Carb',carb:'Carb (tuned)',efi:'EFI',mechanical_injection:'Mech Injection'};
+  document.getElementById('sv-intake').textContent = intakeLabels[advState.intake] || advState.intake;
+  document.getElementById('sv-exhaust').textContent = exhaustLabels[advState.exhaust] || advState.exhaust;
+  document.getElementById('sv-fuelsys').textContent = fuelLabels[advState.fuelsys] || advState.fuelsys;
+  document.getElementById('sv-headmat').textContent = advState.headmat === 'aluminum' ? 'Aluminum' : 'Iron';
+
+  // Cam note
+  const camDur = +params.camDuration;
+  const camType = camDur >= 250 ? 'Solid roller' : camDur >= 230 ? 'Hyd roller or solid' : 'Hydraulic roller';
+  document.getElementById('cam-note').textContent = camType + ' \u2022 Est. peak HP ~' + result.peakHPRPM.toLocaleString() + ' RPM';
+
+  // Gauge
+  const gaugeHP = result.hp;
+  document.getElementById('gauge-hp').textContent = gaugeHP;
+  document.getElementById('gauge-torque').textContent = result.torque;
+  document.getElementById('gauge-rpm').textContent = result.peakHPRPM.toLocaleString();
+
+  const maxGauge = Math.max(targetHP * 1.5, 1000);
+  const pct = Math.min(gaugeHP / maxGauge, 1);
+  const circumference = 2 * Math.PI * 52;
+  document.getElementById('gauge-arc').style.strokeDashoffset = circumference * (1 - pct);
+
+  const diff = gaugeHP - targetHP;
+  const diffPct = targetHP > 0 ? Math.round((diff / targetHP) * 100) : 0;
+  let gaugeColor, statusClass, statusText;
+  if (Math.abs(diffPct) <= 5) {
+    gaugeColor = 'var(--green)'; statusClass = 'target-hit'; statusText = `On Target (${gaugeHP} HP)`;
+  } else if (diff > 0) {
+    gaugeColor = 'var(--accent)'; statusClass = 'target-over'; statusText = `+${diff} HP over target (+${diffPct}%)`;
+  } else {
+    gaugeColor = 'var(--error)'; statusClass = 'target-under'; statusText = `${diff} HP under target (${diffPct}%)`;
+  }
+  document.getElementById('gauge-arc').style.stroke = gaugeColor;
+  document.getElementById('gauge-hp').style.color = gaugeColor;
+  const ts = document.getElementById('target-status');
+  ts.className = 'target-badge ' + statusClass;
+  ts.textContent = statusText;
+
+  // HP Impact breakdown — show how each factor contributes
+  const factors = [
+    { name: 'Short Block (' + params.displacement.toFixed(0) + ' CI)',  factor: params.displacement / 350,   color: '#4f8cff' },
+    { name: 'Head Flow',      factor: params.headCFM / 250,        color: '#36d399' },
+    { name: 'Cam Duration',   factor: (params.camDuration - 190) / 80, color: '#f59e0b' },
+    { name: 'Compression',    factor: result.crFactor,             color: '#8b5cf6' },
+    { name: 'Intake',         factor: result.intakeFactor,         color: '#ec4899' },
+    { name: 'Exhaust',        factor: result.exhaustFactor,        color: '#ef4444' },
+    { name: 'Fuel System',    factor: result.fuelFactor,           color: '#06b6d4' },
+  ];
+  if (advState.aspiration !== 'na') {
+    factors.push({ name: 'Boost', factor: result.boostFactor, color: '#f97316' });
+  }
+  const maxFactor = Math.max(...factors.map(f => f.factor));
+
+  document.getElementById('impact-list').innerHTML = factors.map(f => {
+    const barW = Math.max(5, (f.factor / maxFactor) * 100);
+    return `<div class="impact-row">
+      <span>${f.name}</span>
+      <div style="display:flex;align-items:center;gap:8px;">
+        <span style="font-weight:600;min-width:40px;text-align:right;">${f.factor.toFixed(2)}x</span>
+        <div class="impact-bar-wrap"><div class="impact-bar" style="width:${barW}%;background:${f.color}"></div></div>
+      </div>
+    </div>`;
+  }).join('');
+
+  // Compensation suggestions if under target
+  const compBox = document.getElementById('compensation-box');
+  const compOpts = document.getElementById('compensation-options');
+  if (diff < -10) {
+    compBox.classList.remove('hidden');
+    const deficit = -diff;
+    const suggestions = [];
+
+    // Try more head flow
+    const moreCFM = Math.ceil((targetHP / (0.2575 * params.cylinders)) - params.headCFM);
+    if (moreCFM > 0 && moreCFM < 200) {
+      suggestions.push({ text: `Increase head flow by +${moreCFM} CFM (to ${params.headCFM + moreCFM} CFM)`,
+        action: () => { document.getElementById('sl-headcfm').value = Math.min(500, params.headCFM + moreCFM); onSliderChange(); } });
+    }
+
+    // Try stroker / overbore options
+    const famKey = document.getElementById('adv-family').value;
+    const fam = FAMILY_INFO[famKey] || FAMILY_INFO.bbc;
+    const currentDisp = params.displacement;
+    // Find stroke options that give more displacement
+    const biggerCombos = fam.strokes
+      .map(s => ({ ...s, disp: calcDisplacement(s.bore, s.stroke, fam.cyl) }))
+      .filter(s => s.disp > currentDisp + 10)
+      .sort((a, b) => a.disp - b.disp);
+    if (biggerCombos.length > 0) {
+      const best = biggerCombos[0];
+      const gain = Math.round((best.disp / currentDisp - 1) * gaugeHP);
+      suggestions.push({ text: `Go to ${best.label} (${best.disp.toFixed(0)} CI, +~${gain} HP)`,
+        action: () => {
+          document.getElementById('adv-bore').value = best.bore.toFixed(3);
+          document.getElementById('adv-stroke').value = best.stroke.toFixed(3);
+          onBoreStrokeChange();
+        }
+      });
+    }
+    // Suggest overbore if not already at +.060
+    const currentBore = +document.getElementById('adv-bore').value;
+    if (currentBore < fam.stockBore + 0.055) {
+      const newBore = fam.stockBore + 0.060;
+      const newDisp = calcDisplacement(newBore, params.stroke, fam.cyl);
+      const dispGain = newDisp - currentDisp;
+      if (dispGain > 3) {
+        suggestions.push({ text: `Bore to +.060" (${newBore.toFixed(3)}", adds ${dispGain.toFixed(0)} CI)`,
+          action: () => { document.getElementById('adv-bore').value = newBore.toFixed(3); setBore('060', document.querySelectorAll('#sg-displacement .option-bar')[0]?.querySelectorAll('.option-btn')[2]); }
+        });
+      }
+    }
+
+    // Try more cam
+    const moreDur = Math.min(20, Math.ceil(deficit / 8));
+    if (moreDur > 0 && params.camDuration + moreDur <= 290) {
+      suggestions.push({ text: `Add +${moreDur} degrees cam duration (to ${params.camDuration + moreDur})`,
+        action: () => { document.getElementById('sl-camduration').value = params.camDuration + moreDur; onSliderChange(); } });
+    }
+
+    // Try better exhaust
+    if (advState.exhaust !== 'headers_tuned') {
+      const exhGain = Math.round(gaugeHP * (({headers_tuned:1.02}[advState.exhaust] || 1.02) / result.exhaustFactor - 1));
+      suggestions.push({ text: `Upgrade exhaust to tuned headers (+~${exhGain} HP)`,
+        action: () => { setOption('exhaust', 'headers_tuned', document.querySelector('#sg-exhaust .option-btn:last-child')); } });
+    }
+
+    // Try better intake
+    if (advState.intake === 'stock' || advState.intake === 'dual_plane') {
+      const intGain = Math.round(gaugeHP * (1.00 / result.intakeFactor - 1));
+      suggestions.push({ text: `Upgrade intake to single-plane (+~${intGain} HP)`,
+        action: () => { setOption('intake', 'single_plane', document.querySelectorAll('#sg-intake .option-btn')[2]); } });
+    }
+
+    // Try higher CR
+    if (params.cr < 11.0 && params.fuelType !== 'pump_gas' || params.cr < 10.5) {
+      const crNow = params.cr;
+      const crNew = Math.min(11.5, crNow + 1.0);
+      const crGain = Math.round(gaugeHP * ((1 - 1/Math.pow(crNew,0.3))/(1 - 1/Math.pow(crNow,0.3)) - 1));
+      suggestions.push({ text: `Raise compression to ${crNew.toFixed(1)}:1 (+~${crGain} HP)`,
+        action: () => { document.getElementById('sl-cr').value = crNew; onSliderChange(); } });
+    }
+
+    // Try boost if NA
+    if (advState.aspiration === 'na') {
+      const boostNeeded = Math.ceil(14.7 * (targetHP / gaugeHP - 1) / 0.85);
+      if (boostNeeded > 0 && boostNeeded <= 30) {
+        suggestions.push({ text: `Add turbo at ${boostNeeded} PSI (keeps current parts)`,
+          action: () => { setAspiration('turbo', document.querySelectorAll('#aspiration-bar .option-btn')[1]); document.getElementById('sl-boost').value = boostNeeded; onSliderChange(); } });
+      }
+    }
+
+    compOpts.innerHTML = suggestions.map((s, i) => `
+      <div class="comp-option">
+        <span>${s.text}</span>
+        <span class="comp-action" onclick="window._compActions[${i}]()">Apply</span>
+      </div>
+    `).join('');
+    window._compActions = suggestions.map(s => s.action);
+  } else {
+    compBox.classList.add('hidden');
+  }
+
+  // Warnings
+  const warnings = [];
+  const fuel = document.getElementById('adv-fuel').value;
+  const maxCR_pump = advState.headmat === 'iron' ? 10.5 : 11.5;
+  const maxCR_fuel = fuel === 'pump_gas' ? maxCR_pump : fuel === 'e85' ? maxCR_pump + 1.5 : 14.5;
+
+  if (params.cr > maxCR_fuel) {
+    warnings.push({ level: 'error', text: `CR ${params.cr}:1 exceeds safe limit of ${maxCR_fuel}:1 for ${fuel.replace('_',' ')} with ${advState.headmat} heads` });
+  }
+  if (advState.aspiration !== 'na' && params.boostPSI > 0) {
+    const maxBCR = Math.max(7.5, 10.5 - params.boostPSI / 7);
+    if (fuel === 'pump_gas' && params.cr > maxBCR) {
+      warnings.push({ level: 'error', text: `CR ${params.cr}:1 too high for ${params.boostPSI} PSI boost on pump gas (max ${maxBCR.toFixed(1)}:1)` });
+    }
+  }
+  if (result.headLimited) {
+    warnings.push({ level: 'warn', text: `Heads are the bottleneck at ${params.headCFM} CFM — more cam/displacement won't help until you upgrade heads` });
+  }
+  if (camDur >= 250 && advState.intake === 'dual_plane') {
+    warnings.push({ level: 'warn', text: `${camDur} degree cam with dual-plane intake — switch to single-plane for this RPM range` });
+  }
+  if (camDur < 215 && advState.intake === 'single_plane') {
+    warnings.push({ level: 'warn', text: `Mild cam (${camDur}) with single-plane intake — dual-plane would make more torque` });
+  }
+
+  document.getElementById('warnings-box').innerHTML = warnings.map(w =>
+    `<div class="warning-item ${w.level === 'error' ? 'error-bg' : 'warn-bg'}">
+      <span style="color:${w.level === 'error' ? 'var(--error)' : 'var(--warn)'}">${w.level === 'error' ? '\u2717' : '\u26A0'}</span>
+      <span>${w.text}</span>
+    </div>`
+  ).join('');
+
+  // Highlight changed sliders
+  if (baseline.bore) {
+    // Check bore/stroke changes
+    const curBore = +document.getElementById('adv-bore').value;
+    const curStroke = +document.getElementById('adv-stroke').value;
+    const sgDisp = document.getElementById('sg-displacement');
+    sgDisp.classList.toggle('changed', Math.abs(curBore - baseline.bore) > 0.002 || Math.abs(curStroke - baseline.stroke) > 0.002);
+
+    const sliderIds = ['headcfm', 'camduration', 'camlift', 'cr'];
+    const sliderBvals = [baseline.headCFM, baseline.camDuration, baseline.camLift, baseline.cr];
+    sliderIds.forEach((id, i) => {
+      const cur = +document.getElementById('sl-' + id).value;
+      const sg = document.getElementById('sg-' + id);
+      sg.classList.toggle('changed', Math.abs(cur - sliderBvals[i]) > 0.001);
+    });
+    ['intake', 'exhaust', 'fuelsys', 'headmat'].forEach(key => {
+      const sg = document.getElementById('sg-' + key);
+      sg.classList.toggle('changed', advState[key] !== baseline[key]);
+    });
+  }
+}
+
+function autoSolve() {
+  // Iteratively adjust specs to hit target HP (doesn't touch bore/stroke — that's the builder's choice)
+  const targetHP = +document.getElementById('adv-target-hp').value;
+
+  let iterations = 0;
+  while (iterations < 50) {
+    const params = getAdvisorParams();
+    const result = estimateHP(params);
+    const diff = targetHP - result.hp;
+
+    if (Math.abs(diff) <= targetHP * 0.03) break; // within 3%
+
+    if (diff > 0) {
+      // Need more HP — prioritize: head flow > cam > CR > exhaust > intake
+      const headCFM = +document.getElementById('sl-headcfm').value;
+      const dur = +document.getElementById('sl-camduration').value;
+      const cr = +document.getElementById('sl-cr').value;
+
+      if (headCFM < 480) {
+        document.getElementById('sl-headcfm').value = Math.min(500, headCFM + Math.max(5, Math.ceil(diff / 15)));
+      } else if (dur < 275) {
+        document.getElementById('sl-camduration').value = Math.min(280, dur + Math.max(1, Math.ceil(diff / 20)));
+      } else if (cr < 14.0) {
+        document.getElementById('sl-cr').value = Math.min(14.5, cr + 0.5);
+      } else if (advState.exhaust !== 'headers_tuned') {
+        advState.exhaust = 'headers_tuned';
+      } else if (advState.intake !== 'tunnel_ram') {
+        advState.intake = 'single_plane';
+      } else break;
+    } else {
+      // Too much HP — back off: head flow > cam > CR
+      const headCFM = +document.getElementById('sl-headcfm').value;
+      const dur = +document.getElementById('sl-camduration').value;
+
+      if (headCFM > 140) {
+        document.getElementById('sl-headcfm').value = Math.max(120, headCFM - Math.max(5, Math.ceil(-diff / 15)));
+      } else if (dur > 200) {
+        document.getElementById('sl-camduration').value = Math.max(195, dur - Math.max(1, Math.ceil(-diff / 20)));
+      } else break;
+    }
+    iterations++;
+  }
+  updateOptionBars();
+  updateAspirationBar();
+  updateAdvisor();
+}
+
+// ================================================================
+// HP ESTIMATOR TAB
+// ================================================================
+const PRESETS = {
+  sbc350:   { disp:350, cyl:8, cr:9.5,  cfm:200, dur:214, lift:0.420, intake:'dual_plane',   exhaust:'headers', fuel:'carb', fueltype:'pump_gas', head:'iron', asp:'na' },
+  sbc383:   { disp:383, cyl:8, cr:10.0, cfm:270, dur:232, lift:0.488, intake:'single_plane', exhaust:'headers', fuel:'carb', fueltype:'pump_gas', head:'aluminum', asp:'na' },
+  ls3:      { disp:376, cyl:8, cr:10.7, cfm:300, dur:204, lift:0.551, intake:'stock',        exhaust:'headers', fuel:'efi',  fueltype:'pump_gas', head:'aluminum', asp:'na' },
+  bbc454:   { disp:454, cyl:8, cr:10.0, cfm:280, dur:236, lift:0.520, intake:'single_plane', exhaust:'headers', fuel:'carb', fueltype:'pump_gas', head:'iron', asp:'na' },
+  bbc496:   { disp:496, cyl:8, cr:10.5, cfm:360, dur:248, lift:0.600, intake:'single_plane', exhaust:'headers_tuned', fuel:'carb', fueltype:'race_gas', head:'aluminum', asp:'na' },
+  sbf302:   { disp:302, cyl:8, cr:9.0,  cfm:190, dur:218, lift:0.450, intake:'dual_plane',   exhaust:'headers', fuel:'carb', fueltype:'pump_gas', head:'iron', asp:'na' },
+  sbf351w:  { disp:351, cyl:8, cr:9.5,  cfm:225, dur:224, lift:0.480, intake:'single_plane', exhaust:'headers', fuel:'carb', fueltype:'pump_gas', head:'aluminum', asp:'na' },
+  mopar440: { disp:440, cyl:8, cr:10.0, cfm:260, dur:230, lift:0.510, intake:'single_plane', exhaust:'headers', fuel:'carb', fueltype:'pump_gas', head:'iron', asp:'na' },
+  coyote:   { disp:302, cyl:8, cr:11.0, cfm:280, dur:210, lift:0.472, intake:'ir',           exhaust:'headers', fuel:'efi',  fueltype:'pump_gas', head:'aluminum', asp:'na' },
+  '2jz':    { disp:183, cyl:6, cr:8.5,  cfm:200, dur:224, lift:0.430, intake:'stock',        exhaust:'headers', fuel:'efi',  fueltype:'pump_gas', head:'aluminum', asp:'turbo', boost:15 },
+};
+
+function loadPreset(name) {
+  const p = PRESETS[name];
+  document.getElementById('est-displacement').value = p.disp;
+  document.getElementById('est-cylinders').value = p.cyl;
+  document.getElementById('est-cr').value = p.cr;
+  document.getElementById('est-headcfm').value = p.cfm;
+  document.getElementById('est-camduration').value = p.dur;
+  document.getElementById('est-camlift').value = p.lift;
+  document.getElementById('est-intake').value = p.intake;
+  document.getElementById('est-exhaust').value = p.exhaust;
+  document.getElementById('est-fuel').value = p.fuel;
+  document.getElementById('est-fueltype').value = p.fueltype;
+  document.getElementById('est-headmaterial').value = p.head;
+  document.getElementById('est-aspiration').value = p.asp;
+  document.getElementById('est-boost-g').classList.toggle('hidden', p.asp === 'na');
+  if (p.boost) document.getElementById('est-boost').value = p.boost;
+  runEstimate();
+}
+
+function runEstimate() {
+  const p = {
+    displacement: +document.getElementById('est-displacement').value,
+    cylinders: +document.getElementById('est-cylinders').value,
+    cr: +document.getElementById('est-cr').value,
+    headCFM: +document.getElementById('est-headcfm').value || null,
+    camDuration: +document.getElementById('est-camduration').value,
+    camLift: +document.getElementById('est-camlift').value,
+    aspiration: document.getElementById('est-aspiration').value,
+    boostPSI: +document.getElementById('est-boost')?.value || 0,
+    intakeType: document.getElementById('est-intake').value,
+    exhaustType: document.getElementById('est-exhaust').value,
+    fuelSystem: document.getElementById('est-fuel').value,
+    fuelType: document.getElementById('est-fueltype').value,
+    headMaterial: document.getElementById('est-headmaterial').value,
+  };
+  const r = estimateHP(p);
+  const cc = {high:'confidence-high',medium:'confidence-medium',low:'confidence-low'}[r.confidence];
+  document.getElementById('est-results').innerHTML = `
+    <div class="result-hero"><div class="hp-number">${r.hp}</div><div class="hp-label">Estimated Horsepower</div><div class="confidence ${cc}">${r.confidence} confidence</div></div>
+    <div class="stat-grid"><div class="stat"><div class="stat-value">${r.torque}</div><div class="stat-label">Torque (lb-ft)</div></div><div class="stat"><div class="stat-value">${r.peakHPRPM.toLocaleString()}</div><div class="stat-label">Peak HP RPM</div></div><div class="stat"><div class="stat-value">${r.peakTorqueRPM.toLocaleString()}</div><div class="stat-label">Peak Torque RPM</div></div></div>
+    <div class="section-title">Methods</div>
+    <div class="method-compare"><div class="method-box"><div class="method-name">CFM-Based</div><div class="method-value">${r.methodA} HP</div></div><div class="method-box"><div class="method-name">BMEP-Based</div><div class="method-value">${r.methodB} HP</div></div></div>
+    <div class="section-title">Parameters</div>
+    <div class="stat-grid"><div class="stat"><div class="stat-value">${(r.ve*100).toFixed(1)}%</div><div class="stat-label">VE</div></div><div class="stat"><div class="stat-value">${r.bmep}</div><div class="stat-label">BMEP</div></div><div class="stat"><div class="stat-value">${r.headLimited?'YES':'No'}</div><div class="stat-label">Head Limited</div></div></div>
+  `;
+}
+
+// ================================================================
+// VALIDATE BUILD TAB
+// ================================================================
+function runValidation() {
+  const claimedHP = +document.getElementById('val-claimedHP').value;
+  const claimedRPM = +document.getElementById('val-claimedRPM').value;
+  const displacement = +document.getElementById('val-displacement').value;
+  const cylinders = +document.getElementById('val-cylinders').value;
+  const aspiration = document.getElementById('val-aspiration').value;
+  const boostPSI = +document.getElementById('val-boost')?.value || 0;
+  const headCFM = +document.getElementById('val-headcfm').value;
+  const headMaterial = document.getElementById('val-headmaterial').value;
+  const camDuration = +document.getElementById('val-camduration').value;
+  const camLift = +document.getElementById('val-camlift').value;
+  const headPeakLift = +document.getElementById('val-headpeaklift').value;
+  const cr = +document.getElementById('val-cr').value;
+  const fuelType = document.getElementById('val-fueltype').value;
+  const intakeType = document.getElementById('val-intake').value;
+  const carbCFM = +document.getElementById('val-carbcfm').value || null;
+  const et = +document.getElementById('val-et').value || null;
+  const weight = +document.getElementById('val-weight').value || null;
+  const checks = [];
+
+  if (headCFM) {
+    let maxHP = headCFM * 0.2575 * cylinders;
+    if (aspiration !== 'na' && boostPSI > 0) maxHP *= (14.7 + boostPSI) / 14.7 * 0.85;
+    const p = claimedHP <= maxHP * 1.05;
+    checks.push({ name:'Head Flow Ceiling', passed:p, severity:p?'pass':'fail', msg:p?`OK (${Math.round(maxHP)} HP ceiling)`:`Claimed ${claimedHP} exceeds ${Math.round(maxHP)} HP ceiling` });
+  }
+  if (displacement && claimedRPM) {
+    const ve = (9487*claimedHP*0.45)/(displacement*claimedRPM);
+    const na = aspiration==='na';
+    checks.push({ name:'VE Sanity', passed:!na||ve<=1.15, severity:na&&ve>1.15?'fail':na&&ve>1?'warn':'pass', msg:`Required VE: ${(ve*100).toFixed(1)}%` });
+  }
+  if (camLift && headPeakLift) {
+    const p = camLift <= headPeakLift + 0.050;
+    checks.push({ name:'Cam/Head Match', passed:p, severity:p?'pass':'warn', msg:p?'Cam lift within head flow range':`Cam ${camLift}" exceeds head peak ${headPeakLift}"` });
+  }
+  if (cr) {
+    const mx = fuelType==='pump_gas'?(headMaterial==='iron'?10.5:11.5):fuelType==='e85'?(headMaterial==='iron'?12:13):14.5;
+    const p = cr <= mx;
+    checks.push({ name:'CR / Fuel', passed:p, severity:p?'pass':'warn', msg:`CR ${cr}:1 vs max ${mx}:1 for ${fuelType.replace('_',' ')}` });
+  }
+  if (aspiration!=='na'&&boostPSI>0&&cr) {
+    const mx = Math.max(7.5, 10.5 - boostPSI/7);
+    if (fuelType==='pump_gas') { const p=cr<=mx; checks.push({name:'Boost/CR',passed:p,severity:p?'pass':'warn',msg:`CR ${cr}:1 at ${boostPSI} PSI (max ${mx.toFixed(1)}:1)`}); }
+  }
+  if (carbCFM) {
+    const req = claimedHP*1.5;
+    const sm = carbCFM<req*0.85, bg = carbCFM>req*1.5;
+    checks.push({ name:'Carb CFM', passed:!sm&&!bg, severity:sm||bg?'warn':'pass', msg:`${carbCFM} CFM vs ~${Math.round(req)} needed` });
+  }
+  if (et && weight) {
+    const tsHP = Math.round(weight / Math.pow(et/5.825,3));
+    const d = Math.abs(tsHP-claimedHP)/claimedHP;
+    checks.push({ name:'Timeslip', passed:d<=0.15, severity:d>0.15?'warn':'pass', msg:`Timeslip: ${tsHP} HP vs claimed ${claimedHP} (${(d*100).toFixed(0)}% diff)` });
+  }
+
+  const est = estimateHP({ displacement, cylinders, cr, headCFM, camDuration, camLift, aspiration, boostPSI, intakeType, exhaustType:'headers', fuelSystem:'carb', fuelType, headMaterial });
+  const passC = checks.filter(c=>c.passed).length;
+  const score = checks.length>0 ? Math.round(100*passC/checks.length) : 0;
+  const estDiff = claimedHP>0 ? Math.round(((est.hp-claimedHP)/claimedHP)*100) : 0;
+
+  document.getElementById('val-results').innerHTML = `
+    <div class="result-hero" style="background:linear-gradient(135deg,${score>=80?'#1a3427':score>=50?'#2a2a17':'#2a1a1a'},#1a1d27)">
+      <div class="hp-number" style="font-size:48px;${score>=80?'':score>=50?'-webkit-text-fill-color:var(--warn)':'-webkit-text-fill-color:var(--error)'}">${score}%</div>
+      <div class="hp-label">${passC}/${checks.length} checks passed</div>
+    </div>
+    <div class="stat-grid"><div class="stat"><div class="stat-value">${claimedHP}</div><div class="stat-label">Claimed</div></div><div class="stat"><div class="stat-value">${est.hp}</div><div class="stat-label">Our Estimate</div></div><div class="stat"><div class="stat-value" style="color:${Math.abs(estDiff)<=10?'var(--green)':'var(--warn)'}">${estDiff>0?'+':''}${estDiff}%</div><div class="stat-label">Difference</div></div></div>
+    <div class="section-title">Checks</div>
+    <div class="validation-list">${checks.map(c=>`<div class="validation-item ${c.severity}"><span class="icon">${c.passed?'\u2713':c.severity==='warn'?'\u26A0':'\u2717'}</span><div><div style="font-weight:600">${c.name}</div><div style="color:var(--text-dim);font-size:12px">${c.msg}</div></div></div>`).join('')}</div>
+  `;
+}
+
+// ================================================================
+// TOOLS TAB
+// ================================================================
+function calcCR() {
+  const b=+document.getElementById('cr-bore').value, s=+document.getElementById('cr-stroke').value;
+  const ch=+document.getElementById('cr-chamber').value, d=+document.getElementById('cr-dome').value;
+  const gb=+document.getElementById('cr-gbore').value, gt=+document.getElementById('cr-gthick').value;
+  const dk=+document.getElementById('cr-deck').value;
+  const cv=Math.PI*Math.pow(b/2,2)*s*16.387;
+  const gv=Math.PI*Math.pow(gb/2,2)*gt*16.387;
+  const dv=Math.PI*Math.pow(b/2,2)*dk*16.387;
+  const cl=ch+gv+dv-d;
+  document.getElementById('cr-result').textContent=((cv+cl)/cl).toFixed(2)+':1';
+}
+function calcTimeslip() {
+  const et=+document.getElementById('ts-et').value, w=+document.getElementById('ts-weight').value;
+  document.getElementById('ts-result').textContent=Math.round(w/Math.pow(et/5.825,3))+' HP';
+}
+function calcHeaders() {
+  const d=+document.getElementById('hdr-disp').value, c=+document.getElementById('hdr-cyl').value, r=+document.getElementById('hdr-rpm').value;
+  const a=(d/c*r)/88200, dm=Math.sqrt(a*1.273);
+  document.getElementById('hdr-result').textContent=dm.toFixed(3)+'" primary | '+(1.9*dm).toFixed(3)+'" collector';
+}
+
+// ================================================================
+// INIT
+// ================================================================
+calcCR();
+// Initialize advisor
+populateStrokeOptions('bbc');
+baseline = computeBaseline(500);
+setSliders(baseline);
+onBoreStrokeChange();
+updateAdvisor();
+</script>
+</body>
+</html>

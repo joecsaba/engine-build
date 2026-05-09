@@ -2,13 +2,15 @@ import { Link } from "wouter";
 import { Button } from "@/components/ui/button";
 import { Input } from "@/components/ui/input";
 import { Textarea } from "@/components/ui/textarea";
-import { Calculator, Settings2, Clock, Send, CheckCircle2 } from "lucide-react";
+import { Calculator, Settings2, Clock, Send, CheckCircle2, Gauge } from "lucide-react";
 import { useState } from "react";
 import { AdBanner } from "@/components/ads/AdBanner";
+import { SEOHead } from "@/components/SEOHead";
 
 const BASE = import.meta.env.BASE_URL.replace(/\/$/, "");
 
 const features = [
+  { title: "Build Advisor", desc: "Set a target HP, pick your platform, and tune components with live sliders to plan your build", icon: Gauge, href: "/build-advisor", live: true },
   { title: "Calculators", desc: "Displacement, compression ratio, ring gap, rod ratio, cam duration & more", icon: Calculator, href: "/calculators", live: true },
   { title: "Cam Guide", desc: "Systematic approach to selecting the right camshaft for your combo", icon: Settings2, href: "/cam-guide", live: true },
   { title: "Engine Data", desc: "Engine specs, head data, and torque specifications for 2,400+ engines", icon: Clock, href: "/engine-data", live: true },
@@ -56,6 +58,12 @@ export default function Home() {
 
   return (
     <div className="flex flex-col min-h-screen">
+      <SEOHead
+        title="Free Engine Building Calculators & Specs"
+        description="Free engine building calculators, torque specs, and cam guides for machinists and DIY builders. Compression ratio, ring gap, turbo sizing, and 25+ tools."
+        canonical="/"
+        keywords="engine building calculators, engine build tools, engine specs database, compression ratio calculator, cam calculator, free engine tools"
+      />
       {/* Hero */}
       <section className="bg-[#1a1a1a] text-white py-20 px-4 relative overflow-hidden">
         <div className="absolute inset-0 opacity-5 pointer-events-none"
@@ -74,9 +82,9 @@ export default function Home() {
                 Open Calculators
               </Button>
             </Link>
-            <Link href="/cam-guide">
-              <Button variant="outline" className="border-white/20 text-white hover:bg-white/10 text-lg px-8 py-6">
-                Cam Selection Guide
+            <Link href="/build-advisor">
+              <Button variant="outline" className="border-[#E85D04]/40 text-[#E85D04] hover:bg-[#E85D04]/10 text-lg px-8 py-6">
+                Build Advisor
               </Button>
             </Link>
           </div>
@@ -86,7 +94,7 @@ export default function Home() {
       {/* Features grid */}
       <section className="py-16 px-4 bg-[#1a1a1a]">
         <div className="container mx-auto max-w-5xl">
-          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-5">
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-5 gap-5">
             {features.map((f) => (
               <Link key={f.title} href={f.href}>
                 <div className={`group h-full p-6 rounded-xl border transition-all cursor-pointer flex flex-col items-center text-center space-y-3 relative ${f.live ? "border-[#2a2a2a] bg-[#242424] hover:border-[#E85D04] hover:shadow-lg hover:shadow-[#E85D04]/10" : "border-[#2a2a2a] bg-[#1e1e1e] opacity-70 cursor-default"}`}>

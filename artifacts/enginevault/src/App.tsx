@@ -51,6 +51,7 @@ import DieselLiftPumpCalculator from "@/pages/calculators/diesel-lift-pump";
 import DieselEgtDrivePressureCalculator from "@/pages/calculators/diesel-egt-drive-pressure";
 import DieselInjectorNozzlePopPressureCalculator from "@/pages/calculators/diesel-injector-nozzle-pop-pressure";
 import DieselSmokeLambdaCalculator from "@/pages/calculators/diesel-smoke-lambda";
+import ValveShimCalculator from "@/pages/calculators/valve-shim";
 
 import CategoryShortBlock from "@/pages/calculators/category-short-block";
 import CategoryCamValvetrain from "@/pages/calculators/category-cam-valvetrain";
@@ -59,6 +60,7 @@ import CategoryDrivetrainShop from "@/pages/calculators/category-drivetrain-shop
 import CategoryDiesel from "@/pages/calculators/category-diesel";
 
 import CamGuide from "@/pages/cam-guide";
+import BuildAdvisor from "@/pages/build-advisor";
 import TorqueSpecs from "@/pages/torque-specs";
 import Privacy from "@/pages/privacy";
 import Terms from "@/pages/terms";
@@ -143,8 +145,10 @@ function Router() {
         <Route path="/calculators/diesel-egt-drive-pressure" component={DieselEgtDrivePressureCalculator} />
         <Route path="/calculators/diesel-injector-nozzle-pop-pressure" component={DieselInjectorNozzlePopPressureCalculator} />
         <Route path="/calculators/diesel-smoke-lambda" component={DieselSmokeLambdaCalculator} />
+        <Route path="/calculators/valve-shim" component={ValveShimCalculator} />
 
         <Route path="/cam-guide" component={CamGuide} />
+        <Route path="/build-advisor" component={BuildAdvisor} />
 
         {/* Legal */}
         <Route path="/privacy" component={Privacy} />
