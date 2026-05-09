@@ -52,6 +52,7 @@ import DieselEgtDrivePressureCalculator from "@/pages/calculators/diesel-egt-dri
 import DieselInjectorNozzlePopPressureCalculator from "@/pages/calculators/diesel-injector-nozzle-pop-pressure";
 import DieselSmokeLambdaCalculator from "@/pages/calculators/diesel-smoke-lambda";
 import ValveShimCalculator from "@/pages/calculators/valve-shim";
+import MmInchConverter from "@/pages/calculators/mm-inch-converter";
 
 import CategoryShortBlock from "@/pages/calculators/category-short-block";
 import CategoryCamValvetrain from "@/pages/calculators/category-cam-valvetrain";
@@ -146,6 +147,7 @@ function Router() {
         <Route path="/calculators/diesel-injector-nozzle-pop-pressure" component={DieselInjectorNozzlePopPressureCalculator} />
         <Route path="/calculators/diesel-smoke-lambda" component={DieselSmokeLambdaCalculator} />
         <Route path="/calculators/valve-shim" component={ValveShimCalculator} />
+        <Route path="/calculators/mm-inch-converter" component={MmInchConverter} />
 
         <Route path="/cam-guide" component={CamGuide} />
         <Route path="/build-advisor" component={BuildAdvisor} />

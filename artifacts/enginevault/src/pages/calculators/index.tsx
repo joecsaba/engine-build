@@ -162,6 +162,13 @@ const calculators: { title: string; href: string; desc: string; tags: string[]; 
     tags: ["Journal OD", "Bearing Clearance", "Oil Viscosity", "Block Material"],
     icon: Target,
   },
+  {
+    title: "MM ↔ Inch Converter",
+    href: "/calculators/mm-inch-converter",
+    desc: "High-precision millimeter to inch converter with selectable decimal places (1–8), fractional readout to 1/64\", and commonly used reference table. Bidirectional MM↔Inches.",
+    tags: ["MM", "Inches", "Precision", "Fractions"],
+    icon: Ruler,
+  },
 ];
 
 const dieselCalculators: { title: string; href: string; desc: string; tags: string[]; icon: LucideIcon }[] = [
