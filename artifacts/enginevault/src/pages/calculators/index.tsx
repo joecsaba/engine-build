@@ -208,6 +208,13 @@ const dieselCalculators: { title: string; href: string; desc: string; tags: stri
     icon: Target,
   },
   {
+    title: "Diesel Valve Relief Calculator",
+    href: "/calculators/diesel-valve-relief",
+    desc: "Determine if your Cummins needs valve reliefs when upgrading cams. Covers 5.9L 12V, 24V, 6.7L, and 4BT with Hamilton Cams and Industrial Injection profiles. Enter your piston protrusion and valve face depth for instant clearance analysis.",
+    tags: ["Valve Relief", "Cam Upgrade", "Piston Protrusion", "Cummins"],
+    icon: Wrench,
+  },
+  {
     title: "Diesel Smoke Limit / Lambda Calculator",
     href: "/calculators/diesel-smoke-lambda",
     desc: "Diesel-specific lambda and AFR calculator with smoke prediction, boost-to-fuel balance analysis, and operating range assessment for Cummins, Duramax, and Powerstroke. Three modes: assess your wideband reading, predict smoke from boost and fuel delivery, or find your air/fuel bottleneck.",
