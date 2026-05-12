@@ -28,31 +28,24 @@ const categories: Category[] = [
   },
   {
     title: "Power, Fuel & Forced Induction",
-    subtitle: "HP estimation, AFR/lambda tuning, carburetor and injector sizing, and turbo matching for your power goals.",
+    subtitle: "HP estimation, AFR/lambda tuning, carburetor and injector sizing, turbo matching, and boost analysis.",
     href: "/calculators/power-fuel",
-    count: 6,
-    calculators: "HP & Torque Converter, HP & Torque Estimator, AFR / Lambda Converter, Carburetor / CFM Sizing, Fuel Injector Sizing, Turbo Finder & Sizing",
+    count: 9,
+    calculators: "HP & Torque Converter, HP & Torque Estimator, AFR / Lambda Converter, Carburetor / CFM Sizing, Fuel Injector Sizing, Turbo Finder & Sizing, Boost / Effective CR, Octane Mix, Header Sizing",
   },
   {
     title: "Drivetrain & Shop Tools",
-    subtitle: "Gear ratio planning and torque wrench correction tools for the shop.",
+    subtitle: "Gear ratio planning, torque wrench correction, density altitude HP correction, converter stall speed, and precision conversion.",
     href: "/calculators/drivetrain-shop",
-    count: 2,
-    calculators: "Gear Ratio / Final Drive, Torque Extension Calculator",
+    count: 5,
+    calculators: "Gear Ratio / Final Drive, Torque Extension Calculator, MM to Inch Converter, Density Altitude / HP Correction, Torque Converter Stall Speed",
   },
   {
     title: "Diesel Calculators",
     subtitle: "Turbo sizing, compound setups, lift pump selection, EGT safety, nozzle sizing, and smoke/lambda analysis for diesel engines.",
     href: "/calculators/diesel",
-    count: 6,
-    calculators: "Diesel Single Turbo Finder, Diesel Compound Turbo Sizing, Diesel Lift Pump & Fuel System, Diesel EGT & Drive Pressure, Diesel Nozzle & Pop Pressure, Diesel Smoke Limit / Lambda",
-  },
-  {
-    title: "MM ↔ Inch Converter",
-    href: "/calculators/mm-inch-converter",
-    desc: "High-precision millimeter to inch converter with selectable decimal places (1–8), fractional readout to 1/64\", and commonly used reference table. Bidirectional MM↔Inches.",
-    tags: ["MM", "Inches", "Precision", "Fractions"],
-    icon: Ruler,
+    count: 7,
+    calculators: "Diesel Single Turbo Finder, Diesel Compound Turbo Sizing, Diesel Lift Pump & Fuel System, Diesel EGT & Drive Pressure, Diesel Nozzle & Pop Pressure, Diesel Smoke Limit / Lambda, Diesel Valve Relief",
   },
 ];
 
@@ -82,7 +75,7 @@ export default function CalculatorsIndex() {
   return (
     <div>
       <SEOHead
-        title="Engine Building Calculators | 28+ Free Tools"
+        title="Engine Building Calculators | 37+ Free Tools"
         description="Free engine building calculator suite: compression ratio, cam timing, ring gap, turbo sizing, bearing clearance, and 20+ more tools for machinists and builders."
         canonical="/calculators"
         keywords="engine building calculators, compression ratio calculator, cam timing calculator, piston ring gap calculator, turbo sizing calculator, engine build tools"

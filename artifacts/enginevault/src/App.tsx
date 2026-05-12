@@ -55,6 +55,11 @@ import ValveShimCalculator from "@/pages/calculators/valve-shim";
 import MmInchConverter from "@/pages/calculators/mm-inch-converter";
 import DieselValveReliefCalculator from "@/pages/calculators/diesel-valve-relief";
 import IntakeManifoldMillingCalculator from "@/pages/calculators/intake-manifold-milling";
+import BoostCompressionCalculator from "@/pages/calculators/boost-compression";
+import OctaneMixCalculator from "@/pages/calculators/octane-mix";
+import DensityAltitudeCalculator from "@/pages/calculators/density-altitude";
+import HeaderSizingCalculator from "@/pages/calculators/header-sizing";
+import TorqueConverterStallCalculator from "@/pages/calculators/torque-converter-stall";
 
 import CategoryShortBlock from "@/pages/calculators/category-short-block";
 import CategoryCamValvetrain from "@/pages/calculators/category-cam-valvetrain";
@@ -152,6 +157,11 @@ function Router() {
         <Route path="/calculators/mm-inch-converter" component={MmInchConverter} />
         <Route path="/calculators/diesel-valve-relief" component={DieselValveReliefCalculator} />
         <Route path="/calculators/intake-manifold-milling" component={IntakeManifoldMillingCalculator} />
+        <Route path="/calculators/boost-compression" component={BoostCompressionCalculator} />
+        <Route path="/calculators/octane-mix" component={OctaneMixCalculator} />
+        <Route path="/calculators/density-altitude" component={DensityAltitudeCalculator} />
+        <Route path="/calculators/header-sizing" component={HeaderSizingCalculator} />
+        <Route path="/calculators/torque-converter-stall" component={TorqueConverterStallCalculator} />
 
         <Route path="/cam-guide" component={CamGuide} />
         <Route path="/build-advisor" component={BuildAdvisor} />
