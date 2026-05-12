@@ -2,7 +2,7 @@ import { Link } from "wouter";
 import {
   Cylinder, Gauge, Circle, Settings2, ArrowDownUp,
   Zap, Timer, Flame, Ruler, MoveVertical,
-  RotateCcw, ShieldAlert, Codesandbox, Wrench, ArrowRightLeft, Wind, Target, Droplet, Activity, Cog, Thermometer, type LucideIcon,
+  RotateCcw, ShieldAlert, Codesandbox, Wrench, ArrowRightLeft, Wind, Target, Droplet, Activity, Cog, Thermometer, CloudSun, Fuel, Waves, type LucideIcon,
 } from "lucide-react";
 import { PageHeader } from "@/components/layout/PageHeader";
 import { AdBanner } from "@/components/ads/AdBanner";
@@ -168,6 +168,41 @@ const calculators: { title: string; href: string; desc: string; tags: string[]; 
     desc: "High-precision millimeter to inch converter with selectable decimal places (1–8), fractional readout to 1/64\", and commonly used reference table. Bidirectional MM↔Inches.",
     tags: ["MM", "Inches", "Precision", "Fractions"],
     icon: Ruler,
+  },
+  {
+    title: "Boost / Effective CR",
+    href: "/calculators/boost-compression",
+    desc: "Calculate effective compression ratio under boost. Altitude correction, fuel-specific safety limits, reverse-solve for max safe boost or CR, and optional dynamic CR from cam timing.",
+    tags: ["Boost", "ECR", "Turbo/SC", "Fuel Safety"],
+    icon: Gauge,
+  },
+  {
+    title: "Octane Mix Calculator",
+    href: "/calculators/octane-mix",
+    desc: "Blend two fuels to hit a target octane, or calculate E85/ethanol mix ratios with seasonal correction. Shows stoichiometric AFR, energy content, MPG impact, and fuel system warnings.",
+    tags: ["Octane Blend", "E85 Mix", "Ethanol %", "Fuel Cost"],
+    icon: Fuel,
+  },
+  {
+    title: "Density Altitude / HP Correction",
+    href: "/calculators/density-altitude",
+    desc: "Calculate density altitude, relative horsepower, and dyno correction factors for SAE J1349, J607, and DIN 70020. Supports dew point or relative humidity input for trackside accuracy.",
+    tags: ["Density Altitude", "HP Correction", "SAE J1349", "Weather"],
+    icon: CloudSun,
+  },
+  {
+    title: "Header Tube Length & Diameter",
+    href: "/calculators/header-sizing",
+    desc: "Size exhaust header primaries and collectors using acoustic harmonic tuning. Shows 2nd/3rd/4th harmonic lengths, flow-based tube diameter, snap-to-standard sizing, and collector dimensions for 4-1 and 4-2-1 configurations.",
+    tags: ["Header Sizing", "Primary Length", "Collector", "Exhaust"],
+    icon: Waves,
+  },
+  {
+    title: "Torque Converter Stall Speed",
+    href: "/calculators/torque-converter-stall",
+    desc: "Find the right converter stall speed for your build. Enter your cam, engine, and vehicle specs — get a recommended stall range, converter diameter, launch analysis, and cruise RPM. K-factor prediction and converter verification.",
+    tags: ["Stall Speed", "Converter", "Cam Match", "Launch"],
+    icon: Cog,
   },
 ];
 
