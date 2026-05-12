@@ -224,7 +224,7 @@ export default function FuelInjectorSizingCalculator() {
   // ── JSX ───────────────────────────────────────────────────────────────────────
 
   return (
-    <div className="container mx-auto py-8 px-4 max-w-5xl">
+    <div className="container mx-auto py-8 px-4 max-w-7xl">
       <SEOHead
         title="Fuel Injector Sizing Calculator"
         description="Calculate what size fuel injectors you need for your engine build. Supports gasoline, E85, and methanol with duty cycle analysis and fuel system recommendations."
@@ -233,6 +233,9 @@ export default function FuelInjectorSizingCalculator() {
       />
       <h1 className="text-3xl font-bold mb-2">Fuel Injector Sizing Calculator</h1>
       <p className="text-muted-foreground mb-8">Calculate the right injector size for your target horsepower, fuel type, and aspiration.</p>
+
+      <div className="flex flex-col xl:flex-row gap-8">
+      <div className="flex-1 min-w-0">
 
       <div className="grid grid-cols-1 lg:grid-cols-2 gap-8">
         {/* ──────────── LEFT COLUMN: INPUTS ──────────── */}
@@ -668,15 +671,58 @@ export default function FuelInjectorSizingCalculator() {
         </div>
       </Section>
 
-      {/* Sources */}
+      </div>{/* end left column */}
+
+      <aside className="xl:w-80 shrink-0 space-y-6">
+        <Card className="sticky top-20">
+          <CardHeader className="pb-3">
+            <CardTitle className="text-base flex items-center gap-2">
+              <Info className="w-4 h-4 text-[#E85D04]" />
+              Quick Reference
+            </CardTitle>
+          </CardHeader>
+          <CardContent className="text-sm text-muted-foreground space-y-4">
+            <div>
+              <h4 className="font-semibold text-foreground mb-1">The Formula</h4>
+              <p>Injector Size = (HP x BSFC) / (Cylinders x Max Duty Cycle). Target 80% duty cycle max for safety margin.</p>
+            </div>
+            <div>
+              <h4 className="font-semibold text-foreground mb-1">BSFC Values</h4>
+              <ul className="space-y-1 mt-1">
+                <li><span className="font-medium text-foreground">NA gasoline:</span> 0.45-0.50 lb/hr/hp</li>
+                <li><span className="font-medium text-foreground">Boosted gas:</span> 0.55-0.60</li>
+                <li><span className="font-medium text-foreground">E85:</span> 0.65-0.75</li>
+                <li><span className="font-medium text-foreground">Methanol:</span> 1.00-1.20</li>
+              </ul>
+            </div>
+            <div>
+              <h4 className="font-semibold text-foreground mb-1">Duty Cycle</h4>
+              <p>Max 80% for street, 85% for race. Above 85% the injector cannot cool between pulses and atomization degrades.</p>
+            </div>
+            <div className="border-t pt-3">
+              <h4 className="font-semibold text-foreground mb-1">Fuel Pressure Note</h4>
+              <p>Injector flow ratings are at a specific pressure (usually 43.5 psi). Higher pressure increases flow by square root of pressure ratio.</p>
+            </div>
+          </CardContent>
+        </Card>
+      </aside>
+
+      </div>{/* end flex row */}
+
       <Card className="mt-8">
-        <CardHeader><CardTitle className="text-lg">Sources and Methodology</CardTitle></CardHeader>
+        <CardHeader>
+          <CardTitle className="text-lg">Fuel Injector Sizing Fundamentals</CardTitle>
+        </CardHeader>
         <CardContent className="prose prose-sm max-w-none text-muted-foreground space-y-3">
           <p>
-            The primary sizing formula (HP × BSFC / Injectors × Duty Cycle) is the industry-standard method used by Fuel Injector Clinic, Injector Dynamics, DeatschWerks, HP Academy, and EFI University. BSFC values are sourced from HP Academy published data, Injector Dynamics tech articles, and EFI University course materials, using the conservative (high) end of each range to ensure adequate safety margin. The fuel pressure correction uses the standard square-root relationship derived from Bernoulli's equation, which is consistent across all major injector manufacturer documentation.
+            The fundamental injector sizing formula is: Injector Size (lb/hr) = (HP x BSFC) / (Cylinders x Max Duty Cycle). BSFC (brake specific fuel consumption) is typically 0.45-0.50 lb/hr per HP for naturally aspirated gasoline engines and 0.55-0.60 for boosted applications. Max duty cycle is the percentage of time the injector can remain open per engine cycle — 80% for street engines, 85% for dedicated race engines. Exceeding 85% duty cycle leaves no headroom for enrichment during transients or hot weather.
           </p>
           <p>
-            Available injector sizes are cross-referenced against current catalogs from DeatschWerks, Injector Dynamics (ID725, ID1050x, ID1300x, ID1700x, ID2600-XDS), and Fuel Injector Clinic. The unit conversion of 1 lb/hr = 10.5 cc/min is the standard industry conversion for gasoline-density test fluids. Stoichiometric AFR values are consistent with the fuel data used in the <Link href="/calculators/afr-lambda" className="text-[#E85D04] hover:underline">AFR/Lambda calculator</Link>.
+            Published injector flow ratings are "static" — measured at a fixed fuel pressure with the injector held wide open. In a running engine, injectors pulse open and closed rapidly, and their actual fuel delivery is affected by dead time (the lag between the electrical signal and mechanical opening), battery voltage, and fuel pressure. Lower voltage increases dead time, reducing effective flow. Higher fuel pressure increases flow — roughly 3-4% per PSI above the rated pressure.
+          </p>
+          <h3 className="text-sm font-semibold text-foreground mt-4">E85 and Alternative Fuel Sizing</h3>
+          <p>
+            E85 has a stoichiometric AFR of approximately 9.8:1 compared to gasoline's 14.7:1, meaning it requires roughly 30% more fuel by volume to achieve the same Lambda. If your engine needs 42 lb/hr injectors on gasoline, you need approximately 55 lb/hr on E85. Many builders size for E85 from the start — running gasoline just means lower duty cycles, which is perfectly fine. Undersized injectors on E85 max out at 100% duty cycle and go lean under load, which can destroy pistons and bearings in seconds.
           </p>
         </CardContent>
       </Card>

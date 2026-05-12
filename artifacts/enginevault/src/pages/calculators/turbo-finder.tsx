@@ -4,7 +4,7 @@ import { Input } from "@/components/ui/input";
 import { Label } from "@/components/ui/label";
 import { Card, CardContent, CardHeader, CardTitle, CardDescription } from "@/components/ui/card";
 import { Select, SelectContent, SelectItem, SelectTrigger, SelectValue } from "@/components/ui/select";
-import { ChevronDown } from "lucide-react";
+import { ChevronDown , Info } from "lucide-react";
 
 // ── Types ───────────────────────────────────────────────────────────────────────
 
@@ -578,7 +578,7 @@ export default function TurboFinderCalculator() {
   const appDef = APPLICATIONS[application];
 
   return (
-    <div className="container mx-auto py-8 px-4 max-w-6xl">
+    <div className="container mx-auto py-8 px-4 max-w-7xl">
       <SEOHead
         title="Turbo Finder & Sizing Calculator"
         description="Find the right turbocharger for your engine. Calculate required airflow, boost pressure, compressor sizing, fuel system requirements, and get specific turbo recommendations based on proven engineering formulas."
@@ -587,6 +587,9 @@ export default function TurboFinderCalculator() {
       />
       <h1 className="text-3xl font-bold mb-2">Turbo Finder & Sizing Calculator</h1>
       <p className="text-muted-foreground mb-8">Calculate your airflow requirements and get matched turbocharger recommendations based on Garrett's published sizing methodology.</p>
+
+      <div className="flex flex-col xl:flex-row gap-8">
+      <div className="flex-1 min-w-0">
 
       {/* Mode Toggle */}
       <div className="flex rounded-lg border overflow-hidden mb-8 max-w-lg">
@@ -1355,27 +1358,56 @@ export default function TurboFinderCalculator() {
         </div>
       </Section>
 
-      {/* ──────────── EDUCATIONAL ──────────── */}
+      </div>{/* end left column */}
+
+      <aside className="xl:w-80 shrink-0 space-y-6">
+        <Card className="sticky top-20">
+          <CardHeader className="pb-3">
+            <CardTitle className="text-base flex items-center gap-2">
+              <Info className="w-4 h-4 text-[#E85D04]" />
+              Quick Reference
+            </CardTitle>
+          </CardHeader>
+          <CardContent className="text-sm text-muted-foreground space-y-4">
+            <div>
+              <h4 className="font-semibold text-foreground mb-1">Sizing Basics</h4>
+              <p>Match compressor map to your target airflow (lb/min). Must operate in its efficiency island, not in surge or choke.</p>
+            </div>
+            <div>
+              <h4 className="font-semibold text-foreground mb-1">Pressure Ratio</h4>
+              <p>PR = (Boost + Atmospheric) / Atmospheric. At sea level: (14.7 + boost PSI) / 14.7. A 15 psi setup = 2.02 PR.</p>
+            </div>
+            <div>
+              <h4 className="font-semibold text-foreground mb-1">Surge vs Choke</h4>
+              <ul className="space-y-1 mt-1">
+                <li><span className="font-medium text-foreground">Surge:</span> Too little airflow for the PR</li>
+                <li><span className="font-medium text-foreground">Choke:</span> Too much flow for the wheel</li>
+              </ul>
+            </div>
+            <div className="border-t pt-3">
+              <h4 className="font-semibold text-foreground mb-1">Rule of Thumb</h4>
+              <p>~10 lb/min airflow per 100 HP on gasoline. A 600 HP target needs ~60 lb/min through the compressor.</p>
+            </div>
+          </CardContent>
+        </Card>
+      </aside>
+
+      </div>{/* end flex row */}
+
       <Card className="mt-8">
         <CardHeader>
-          <CardTitle className="text-lg">Understanding Turbo Sizing</CardTitle>
+          <CardTitle className="text-lg">Turbo Sizing Basics</CardTitle>
         </CardHeader>
         <CardContent className="prose prose-sm max-w-none text-muted-foreground space-y-3">
           <p>
-            Turbo sizing comes down to one question: how much air does your engine need to make your target power? The turbocharger's job is to compress ambient air to a higher density so the engine can burn more fuel per cycle. The required airflow is determined by your horsepower target, the fuel type's energy density (BSFC), and the air-fuel ratio. Once you know the airflow in lb/min, you match it against compressor maps — graphs published by turbo manufacturers that show each turbo's airflow capacity and efficiency at various pressure ratios.
+            The airflow a turbocharged engine requires is calculated as: CFM = (CID x RPM x VE x PR) / 3456, where PR is the pressure ratio (absolute boost pressure divided by atmospheric pressure). A 350ci engine at 6,000 RPM with 90% VE and 15 PSI boost (PR = 2.02) needs approximately 1,100 CFM. The turbo's compressor map must show an efficiency island that covers your operating range at this flow rate and pressure ratio.
           </p>
           <p>
-            The most common mistake in turbo selection is oversizing. A turbo that is too large will have terrible spool characteristics — the engine must produce enough exhaust energy to spin the turbine to operating speed, and a heavier, larger wheel requires more exhaust flow to get moving. For a street car, this means no boost until 4,000+ RPM, poor throttle response, and a lazy, on/off power delivery that makes the car difficult to drive. A slightly smaller turbo that operates in its peak efficiency island will make nearly the same peak power with dramatically better response and drivability.
+            Compressor efficiency is critical. Operating in the surge zone (left side of the map, too little flow for the pressure ratio) causes the compressor to stall and reverse flow — this creates violent oscillations that destroy the turbo shaft and bearings. Operating in the choke zone (right side, too much flow) means the compressor wheel cannot accelerate the air any further, so adding RPM produces no additional boost. The ideal operating point is in the center of the highest efficiency island on the compressor map.
           </p>
+          <h3 className="text-sm font-semibold text-foreground mt-4">A/R Ratio and Common Mistakes</h3>
           <p>
-            The pressure ratio — boost plus atmospheric divided by atmospheric — is what determines where your operating point sits on the compressor map's Y-axis. At sea level with 15 PSI of boost, your pressure ratio is about 2.0. At 5,000 feet elevation, the same 15 PSI of boost requires a pressure ratio of 2.2 because the atmosphere starts thinner. This is why turbo selection at altitude is different — the compressor must work harder and runs closer to its limits for the same gauge boost number.
-          </p>
-          <p>
-            The turbine housing A/R ratio controls spool speed versus top-end flow. A smaller A/R accelerates exhaust velocity across the turbine wheel for quicker spool, but creates more backpressure at high RPM that fights the engine's exhaust stroke. A larger A/R does the opposite — slower spool but better exhaust scavenging and more power potential up top. For street cars, err toward the smaller end. For drag racing where you launch above 5,000 RPM on a transbrake, the largest A/R maximizes peak power.
-          </p>
-          <h3 className="text-sm font-semibold text-foreground mt-4">Quick Rules of Thumb</h3>
-          <p>
-            Approximately 10 lb/min of airflow per 100 hp on gasoline. A stock small block Chevy 350 makes roughly 250 hp naturally aspirated — to hit 500 hp you need to roughly double the airflow, which requires about 8–10 PSI on a well-tuned setup. Each additional 100 hp on pump gas needs roughly 6–8 more PSI of boost depending on efficiency. E85 can safely run 30–50% more boost than pump gas due to its higher octane and charge-cooling properties, making it the fuel of choice for high-boost street builds.
+            The turbine housing A/R (area over radius) ratio controls spool characteristics. A smaller A/R (e.g., 0.63) increases exhaust gas velocity at the turbine wheel, spooling the turbo faster but restricting top-end flow. A larger A/R (e.g., 1.00) allows more exhaust flow at high RPM but spools slower. The most common turbo sizing mistake is choosing a turbo for maximum horsepower potential instead of the RPM range the engine will actually use. A street car spends 90% of its time below 5,000 RPM — sizing a turbo for 700 HP at 7,500 RPM means a laggy, unresponsive engine everywhere you actually drive it. Size for the RPM range you use, not the peak number on paper.
           </p>
         </CardContent>
       </Card>

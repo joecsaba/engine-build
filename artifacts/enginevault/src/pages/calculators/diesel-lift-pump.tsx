@@ -4,7 +4,7 @@ import { Input } from "@/components/ui/input";
 import { Label } from "@/components/ui/label";
 import { Card, CardContent, CardHeader, CardTitle, CardDescription } from "@/components/ui/card";
 import { Select, SelectContent, SelectItem, SelectTrigger, SelectValue } from "@/components/ui/select";
-import { ChevronDown } from "lucide-react";
+import { ChevronDown, Info } from "lucide-react";
 
 // ── Types ───────────────────────────────────────────────────────────────────────
 
@@ -536,7 +536,7 @@ export default function DieselLiftPumpCalculator() {
     : null;
 
   return (
-    <div className="container mx-auto py-8 px-4 max-w-6xl">
+    <div className="container mx-auto py-8 px-4 max-w-7xl">
       <SEOHead
         title="Diesel Lift Pump & Fuel System Sizing Calculator"
         description="Calculate the right diesel lift pump size for your Cummins, Duramax, or Powerstroke. FASS and AirDog sizing with GPH recommendations, fuel line sizing, and platform-specific warnings for VP44 and CP4 trucks."
@@ -545,6 +545,9 @@ export default function DieselLiftPumpCalculator() {
       />
       <h1 className="text-3xl font-bold mb-2">Diesel Lift Pump & Fuel System Sizing Calculator</h1>
       <p className="text-muted-foreground mb-8">Size a FASS or AirDog lift pump for your diesel truck. Pick your platform — we'll auto-fill the specs and warn you about known fuel system issues.</p>
+
+      <div className="flex flex-col xl:flex-row gap-8">
+      <div className="flex-1 min-w-0">
 
       <div className="grid grid-cols-1 lg:grid-cols-2 gap-8">
         {/* ──────────── LEFT COLUMN: INPUTS ──────────── */}
@@ -1031,6 +1034,70 @@ export default function DieselLiftPumpCalculator() {
           </div>
         </div>
       </Section>
+
+      </div>{/* end left column */}
+
+      <aside className="xl:w-80 shrink-0 space-y-6">
+        <Card className="sticky top-20">
+          <CardHeader className="pb-3">
+            <CardTitle className="text-base flex items-center gap-2">
+              <Info className="w-4 h-4 text-[#E85D04]" />
+              Quick Reference
+            </CardTitle>
+          </CardHeader>
+          <CardContent className="text-sm text-muted-foreground space-y-4">
+            <div>
+              <h4 className="font-semibold text-foreground mb-1">GPH Sizing Rule</h4>
+              <p>~10 HP per GPH is the quick rule. A 500 HP truck needs at least a 50 GPH pump. Always size 20-30% over actual demand.</p>
+            </div>
+            <div>
+              <h4 className="font-semibold text-foreground mb-1">VP44 Warning</h4>
+              <p>98.5-02 Cummins: factory lift pump fails silently. VP44 replacement costs $2,000-$3,000. A $700 lift pump is cheap insurance.</p>
+            </div>
+            <div>
+              <h4 className="font-semibold text-foreground mb-1">CP4 Catastrophic Failure</h4>
+              <p>Duramax LML/L5P and 6.7L Powerstroke: CP4 failure sends metal shrapnel through the entire fuel system. $8,000-$12,000 repair vs $700-$900 lift pump.</p>
+            </div>
+            <div className="border-t pt-3">
+              <h4 className="font-semibold text-foreground mb-1">FASS vs AirDog</h4>
+              <ul className="space-y-1 mt-1 text-xs">
+                <li className="flex justify-between"><span>FASS max:</span><span className="font-mono">290 GPH</span></li>
+                <li className="flex justify-between"><span>AirDog max:</span><span className="font-mono">220 GPH</span></li>
+                <li className="flex justify-between"><span>FASS type:</span><span className="font-mono">Gear-driven</span></li>
+                <li className="flex justify-between"><span>AirDog type:</span><span className="font-mono">Diaphragm</span></li>
+              </ul>
+            </div>
+            <div className="border-t pt-3">
+              <h4 className="font-semibold text-foreground mb-1">Supply Pressure Targets</h4>
+              <ul className="space-y-1 mt-1 text-xs">
+                <li className="flex justify-between"><span>Cummins:</span><span className="font-mono">8-12 PSI</span></li>
+                <li className="flex justify-between"><span>Duramax:</span><span className="font-mono">8-12 PSI</span></li>
+                <li className="flex justify-between"><span>HEUI (7.3/6.0):</span><span className="font-mono">45-65 PSI</span></li>
+              </ul>
+            </div>
+          </CardContent>
+        </Card>
+      </aside>
+
+      </div>{/* end flex row */}
+
+      <Card className="mt-8">
+        <CardHeader>
+          <CardTitle className="text-lg">Diesel Lift Pump and Fuel System Sizing</CardTitle>
+        </CardHeader>
+        <CardContent className="prose prose-sm max-w-none text-muted-foreground space-y-3">
+          <p>
+            A lift pump's job is to supply clean, air-free fuel at a consistent pressure to the injection pump (IP). The quick sizing rule is approximately 10 HP per gallon per hour (GPH) of flow — a 500 HP truck needs at least 50 GPH. Always size 20-30% over your actual demand to account for return fuel flow and to keep the pump from running at maximum capacity, which reduces pump life and increases heat in the fuel.
+          </p>
+          <p>
+            The two dominant aftermarket lift pump brands are FASS (gear-driven, up to 290 GPH) and AirDog (diaphragm-style, up to 220 GPH). Both include fuel filtration and air/vapor separation, which is arguably more important than the fuel delivery itself. Dissolved air and vapor in diesel fuel cause erratic injection timing, reduce power, and accelerate wear on precision injection pump components. A quality lift pump with a water separator and 2-micron filter extends the life of injectors and the injection pump significantly.
+          </p>
+          <h3 className="text-sm font-semibold text-foreground mt-4">Platform-Specific Considerations</h3>
+          <p>
+            On 1998.5-2002 Cummins trucks with the VP44 injection pump, the factory lift pump is the notorious weak point. When it fails — often silently — the VP44 runs dry and self-destructs, costing $2,000-$3,000 to replace. A $700 aftermarket lift pump is the cheapest insurance available. On 2011+ Duramax (LML/L5P) and 2011+ Powerstroke platforms with the CP4 injection pump, a lift pump failure can lead to catastrophic CP4 disintegration, sending metal debris through the entire fuel system. That repair runs $8,000-$12,000 with new injectors, lines, rails, and tank cleaning. Again, a lift pump is inexpensive insurance against a devastating failure.
+          </p>
+        </CardContent>
+      </Card>
     </div>
   );
 }

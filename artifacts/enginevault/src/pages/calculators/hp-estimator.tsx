@@ -10,7 +10,7 @@ import {
   SelectTrigger,
   SelectValue,
 } from "@/components/ui/select";
-import { ChevronDown } from "lucide-react";
+import { ChevronDown , Info } from "lucide-react";
 import {
   enginePlatforms,
   componentCategories,
@@ -24,6 +24,7 @@ import {
   type ComponentOption,
   type ReferenceBuild,
 } from "@/data/hpEstimatorData";
+import { useManufacturers, useFamilies, useFamilyEngines } from "@/hooks/useEngineData";
 
 // ── Estimation engine ──────────────────────────────────────────────────────────
 
@@ -313,6 +314,32 @@ function getSmogPenalty(platformId: string): SmogPenalty {
 }
 
 export default function HpEstimator() {
+  // Engine picker state (from database)
+  const [showPicker, setShowPicker] = useState(false);
+  const [pickerMfr, setPickerMfr] = useState("");
+  const [pickerFamily, setPickerFamily] = useState("");
+  const [pickerEngine, setPickerEngine] = useState("");
+  const { manufacturers } = useManufacturers();
+  const { families } = useFamilies();
+  const { familyData } = useFamilyEngines(pickerMfr, pickerFamily);
+  const filteredFamilies = families.filter(f => f.manufacturer_slug === pickerMfr);
+
+  const handlePickerEngine = (engineId: string) => {
+    setPickerEngine(engineId);
+    if (!familyData) return;
+    const eng = familyData.engines.find(e => e.engine_id === engineId);
+    if (!eng) return;
+    // Try to match to the closest platform by displacement
+    if (eng.displacement_ci) {
+      const closest = enginePlatforms.reduce((best, p) =>
+        Math.abs(p.displacement - (eng.displacement_ci || 0)) < Math.abs(best.displacement - (eng.displacement_ci || 0)) ? p : best
+      );
+      if (Math.abs(closest.displacement - eng.displacement_ci) < 50) {
+        setPlatformId(closest.id);
+      }
+    }
+  };
+
   const [platformId, setPlatformId] = useState<string>("sbc-350");
   const [selections, setSelections] = useState<Record<string, string>>({
     heads: "stock",
@@ -402,10 +429,10 @@ export default function HpEstimator() {
   const smogTqLoss = smogEquipped ? Math.round(rawEstimate.torque * smogPenalty.tqPct) : 0;
 
   return (
-    <div className="container mx-auto py-8 px-4 max-w-5xl">
+    <div className="container mx-auto py-8 px-4 max-w-7xl">
       <SEOHead
-        title="HP & Torque Estimator — Build Your Combo"
-        description="Estimate horsepower and torque for your engine build. Select your platform, heads, cam, intake, exhaust, and compression to get a data-backed HP estimate based on real dyno results."
+        title="Engine Horsepower Calculator | HP Estimator"
+        description="Estimate horsepower and torque for your engine build. Select heads, cam, intake, exhaust, and compression for a data-backed HP estimate."
         canonical="/calculators/hp-estimator"
         keywords="hp estimator, horsepower estimator, engine build hp calculator, dyno estimate, cam heads hp, engine power calculator, how much hp will I make"
       />
@@ -416,12 +443,63 @@ export default function HpEstimator() {
       </p>
 
       <div className="grid grid-cols-1 lg:grid-cols-3 gap-6">
+
+      <div className="flex flex-col xl:flex-row gap-8">
+      <div className="flex-1 min-w-0">
+
         {/* ── Left: Inputs ──────────────────────────────────────────────────── */}
         <div className="lg:col-span-2 space-y-4">
           {/* Platform selector */}
           <Card>
             <CardHeader><CardTitle>Engine Platform</CardTitle></CardHeader>
             <CardContent className="space-y-3">
+              <div className="mb-4 p-3 bg-gray-50 rounded-lg border">
+                <button
+                  onClick={() => setShowPicker(!showPicker)}
+                  className="text-sm font-medium text-[#E85D04] hover:underline"
+                >
+                  {showPicker ? "Hide engine picker \u2191" : "Auto-fill from engine database \u2193"}
+                </button>
+                {showPicker && (
+                  <div className="mt-3 grid grid-cols-1 sm:grid-cols-3 gap-3">
+                    <div className="space-y-1">
+                      <Label className="text-xs">Manufacturer</Label>
+                      <Select value={pickerMfr} onValueChange={v => { setPickerMfr(v); setPickerFamily(""); setPickerEngine(""); }}>
+                        <SelectTrigger><SelectValue placeholder="Select..." /></SelectTrigger>
+                        <SelectContent className="max-h-60 overflow-y-auto">
+                          {manufacturers.map(m => (
+                            <SelectItem key={m.slug} value={m.slug}>{m.name}</SelectItem>
+                          ))}
+                        </SelectContent>
+                      </Select>
+                    </div>
+                    <div className="space-y-1">
+                      <Label className="text-xs">Family</Label>
+                      <Select value={pickerFamily} onValueChange={v => { setPickerFamily(v); setPickerEngine(""); }} disabled={!pickerMfr}>
+                        <SelectTrigger><SelectValue placeholder="Select..." /></SelectTrigger>
+                        <SelectContent className="max-h-60 overflow-y-auto">
+                          {filteredFamilies.map(f => (
+                            <SelectItem key={f.family_slug} value={f.family_slug}>{f.family_name}</SelectItem>
+                          ))}
+                        </SelectContent>
+                      </Select>
+                    </div>
+                    <div className="space-y-1">
+                      <Label className="text-xs">Engine</Label>
+                      <Select value={pickerEngine} onValueChange={handlePickerEngine} disabled={!familyData}>
+                        <SelectTrigger><SelectValue placeholder="Select..." /></SelectTrigger>
+                        <SelectContent className="max-h-60 overflow-y-auto">
+                          {familyData?.engines.map(e => (
+                            <SelectItem key={e.engine_id} value={e.engine_id}>
+                              {e.displacement_ci ? `${e.displacement_ci}ci` : ""} {e.year || ""} {e.variants?.[0]?.code || e.engine_id}
+                            </SelectItem>
+                          ))}
+                        </SelectContent>
+                      </Select>
+                    </div>
+                  </div>
+                )}
+              </div>
               <div className="space-y-1">
                 <Label>Select your engine</Label>
                 <Select value={platformId} onValueChange={handlePlatformChange}>
@@ -595,12 +673,14 @@ export default function HpEstimator() {
                         <Select value={rockerRatio} onValueChange={setRockerRatio}>
                           <SelectTrigger className="h-9"><SelectValue /></SelectTrigger>
                           <SelectContent>
-                            <SelectItem value="1.5">1.5:1 (SBC stock)</SelectItem>
-                            <SelectItem value="1.6">1.6:1 (SBC roller)</SelectItem>
-                            <SelectItem value="1.65">1.65:1 (BBC stock)</SelectItem>
-                            <SelectItem value="1.7">1.7:1 (LS / SBF)</SelectItem>
-                            <SelectItem value="1.73">1.73:1 (Hemi)</SelectItem>
-                            <SelectItem value="1.8">1.8:1 (aftermarket)</SelectItem>
+                            <SelectItem value="1.5">1.5:1 (SBC, Pontiac, Mopar LA/B/RB/Hemi)</SelectItem>
+                            <SelectItem value="1.55">1.55:1 (Buick 350/455)</SelectItem>
+                            <SelectItem value="1.6">1.6:1 (SBF Windsor, Olds SB, Buick, AMC, Gen III Hemi)</SelectItem>
+                            <SelectItem value="1.65">1.65:1 (Cadillac 472/500, Pontiac SD)</SelectItem>
+                            <SelectItem value="1.7">1.7:1 (BBC, LS1/LS2/LS3/LS6)</SelectItem>
+                            <SelectItem value="1.73">1.73:1 (Ford Cleveland/FE 390/428)</SelectItem>
+                            <SelectItem value="1.76">1.76:1 (Ford FE 352/427)</SelectItem>
+                            <SelectItem value="1.8">1.8:1 (LS7/LS9, Olds Rocket BB)</SelectItem>
                           </SelectContent>
                         </Select>
                       </div>
@@ -763,22 +843,60 @@ export default function HpEstimator() {
         </div>
       </div>
 
-      {/* ── How it works ──────────────────────────────────────────────────────── */}
+      </div>{/* end left column */}
+
+      <aside className="xl:w-80 shrink-0 space-y-6">
+        <Card className="sticky top-20">
+          <CardHeader className="pb-3">
+            <CardTitle className="text-base flex items-center gap-2">
+              <Info className="w-4 h-4 text-[#E85D04]" />
+              Quick Reference
+            </CardTitle>
+          </CardHeader>
+          <CardContent className="text-sm text-muted-foreground space-y-4">
+            <div>
+              <h4 className="font-semibold text-foreground mb-1">How It Works</h4>
+              <p>Component-modifier model calibrated against published dyno results. Each upgrade applies a real-world multiplier that compounds.</p>
+            </div>
+            <div>
+              <h4 className="font-semibold text-foreground mb-1">Accuracy</h4>
+              <p>Realistic ballpark with +/- 8% range. Real output depends on tuning, builder skill, port work quality, and altitude.</p>
+            </div>
+            <div>
+              <h4 className="font-semibold text-foreground mb-1">Component Matching</h4>
+              <p>Engine is an air pump. Heads, cam, intake, and exhaust must match the same performance level. Mismatched parts leave power on the table.</p>
+            </div>
+            <div>
+              <h4 className="font-semibold text-foreground mb-1">Flywheel vs Wheels</h4>
+              <ul className="space-y-1 mt-1">
+                <li><span className="font-medium text-foreground">Manual trans:</span> -12-15% loss</li>
+                <li><span className="font-medium text-foreground">Auto trans:</span> -18-22% loss</li>
+              </ul>
+            </div>
+            <div className="border-t pt-3">
+              <h4 className="font-semibold text-foreground mb-1">Altitude Effect</h4>
+              <p>NA engines lose ~3% per 1,000 ft elevation. 400 HP at sea level = ~364 HP in Denver (5,280 ft).</p>
+            </div>
+          </CardContent>
+        </Card>
+      </aside>
+
+      </div>{/* end flex row */}
+
       <Card className="mt-8">
-        <CardHeader><CardTitle className="text-lg">How This Estimator Works</CardTitle></CardHeader>
+        <CardHeader>
+          <CardTitle className="text-lg">Estimating Engine Horsepower</CardTitle>
+        </CardHeader>
         <CardContent className="prose prose-sm max-w-none text-muted-foreground space-y-3">
           <p>
-            This tool uses a component-modifier model calibrated against published dyno results. Each engine platform starts with its known stock output, then each component upgrade applies a multiplier derived from real before/after dyno tests of that specific upgrade category. The multipliers compound — heads times cam times intake and so on — which mirrors how engine breathing works in practice.
+            Horsepower estimates from calculators are approximations based on airflow, displacement, and volumetric efficiency assumptions. Real-world output depends heavily on tuning quality, fuel system calibration, ignition timing, and exhaust design. A well-tuned engine can make 10-15% more power than a poorly calibrated one with identical parts. Use these estimates for planning purposes — the only way to know actual output is a chassis or engine dyno.
           </p>
           <p>
-            The estimate gives you a realistic ballpark, not a dyno-accurate number. Real output depends on tuning quality, builder skill, port work quality, the specific part numbers chosen, altitude, and dozens of other variables. The +/- 8% range reflects typical variation between builds using the same class of components.
+            Altitude significantly affects naturally aspirated power output. Engines lose approximately 3% of their power per 1,000 feet of elevation because air density decreases. An engine making 400 HP at sea level produces roughly 340 HP in Denver (5,280 feet). Forced induction engines are less affected because the turbo or supercharger compensates for thinner air — though intercooler efficiency suffers at altitude due to higher intake temperatures.
           </p>
-          <h3 className="text-sm font-semibold text-foreground mt-4">Why component matching matters</h3>
+          <h3 className="text-sm font-semibold text-foreground mt-4">Drivetrain Losses and Historical Ratings</h3>
           <p>
-            An engine is an air pump. The heads determine how much air can flow in, the cam determines when and how long the valves are open, and the intake and exhaust must keep up with the heads. An aggressive cam with restrictive heads wastes lift — the port can't flow any more air no matter how far the valve opens. Big heads with a stock cam leave CFM on the table because the valve isn't open long enough to use the port's potential. The best builds match all components to the same performance level.
-          </p>
-          <p>
-            The "Similar Real-World Builds" section shows actual dyno-verified combinations from magazine tests and builder logs that use similar components. These give you a reality check on what builders are actually making with setups like yours.
+            Chassis dyno numbers are always lower than engine dyno numbers because of drivetrain losses. A manual transmission typically absorbs about 15% of engine output, while an automatic loses 18-22% depending on the torque converter and transmission design. When comparing published ratings, remember that pre-1972 "gross" horsepower numbers were measured on a bare engine with no accessories, exhaust, or emissions equipment. Modern "net" ratings include all accessories and a full exhaust system, making them 15-25% lower for equivalent engines. A 1970 Chevelle rated at 450 gross HP likely made 360-380 net HP — still impressive, but not directly comparable to a modern crate engine rating.
           </p>
         </CardContent>
       </Card>

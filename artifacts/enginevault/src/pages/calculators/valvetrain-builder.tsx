@@ -4,7 +4,8 @@ import { Input } from "@/components/ui/input";
 import { Label } from "@/components/ui/label";
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 import { Select, SelectContent, SelectItem, SelectTrigger, SelectValue } from "@/components/ui/select";
-import { ChevronDown, ArrowRightLeft, Lock, Unlock } from "lucide-react";
+import { ChevronDown, ArrowRightLeft, Lock, Unlock, Info } from "lucide-react";
+import { useManufacturers, useFamilies, useFamilyEngines } from "@/hooks/useEngineData";
 import {
   LineChart, Line, XAxis, YAxis, CartesianGrid, Tooltip, ReferenceLine,
   ResponsiveContainer, Area, ComposedChart,
@@ -446,6 +447,16 @@ export default function ValvetrainBuilderCalculator() {
   /* ── Mode ────────────────────────────────────────────────────── */
   const [mode, setMode] = useState<CalcMode>("cam-to-spring");
 
+  /* ── Engine picker state (from database) ─────────────────────── */
+  const [showPicker, setShowPicker] = useState(false);
+  const [pickerMfr, setPickerMfr] = useState("");
+  const [pickerFamily, setPickerFamily] = useState("");
+  const [pickerEngine, setPickerEngine] = useState("");
+  const { manufacturers } = useManufacturers();
+  const { families } = useFamilies();
+  const { familyData } = useFamilyEngines(pickerMfr, pickerFamily);
+  const filteredFamilies = families.filter(f => f.manufacturer_slug === pickerMfr);
+
   /* ── Architecture ───────────────────────────────────────────── */
   const [arch, setArch] = useState<ValvetrainArch>("pushrod");
   const archSpec = VALVETRAIN_ARCHS[arch];
@@ -553,6 +564,36 @@ export default function ValvetrainBuilderCalculator() {
     setShimWeightInput("");
     setFollowerWeightInput("");
     setHlaWeightInput("");
+  }
+
+  /* ── Apply engine from database picker ─────────────────────── */
+  function handlePickerEngine(engineId: string) {
+    setPickerEngine(engineId);
+    if (!familyData) return;
+    const eng = familyData.engines.find(e => e.engine_id === engineId);
+    if (!eng) return;
+    // Auto-fill rocker ratio from head data
+    if (eng.head?.rocker_ratio) {
+      const rr = eng.head.rocker_ratio.toFixed(3);
+      setRockerPreset(rr);
+      setCustomRatio(rr);
+    }
+    // Auto-fill lifter type if available
+    if (eng.head?.lifter_type) {
+      const lt = eng.head.lifter_type.toLowerCase();
+      if (lt.includes("hydraulic") && lt.includes("roller")) setCamType("hyd-roller");
+      else if (lt.includes("hydraulic") && lt.includes("flat")) setCamType("hyd-flat");
+      else if (lt.includes("solid") && lt.includes("roller")) setCamType("solid-roller");
+      else if (lt.includes("solid") && lt.includes("flat")) setCamType("solid-flat");
+      else if (lt.includes("hydraulic")) setCamType("hyd-roller");
+    }
+    // Set architecture based on valvetrain type
+    if (eng.valvetrain) {
+      const vt = eng.valvetrain.toLowerCase();
+      if (vt.includes("ohv") || vt.includes("pushrod")) applyArch("pushrod");
+      else if (vt.includes("sohc")) applyArch("sohc-rocker");
+      else if (vt.includes("dohc")) applyArch("dohc-direct");
+    }
   }
 
   /* ── Derived values ─────────────────────────────────────────── */
@@ -929,7 +970,7 @@ export default function ValvetrainBuilderCalculator() {
   }
 
   return (
-    <div className="max-w-4xl mx-auto">
+    <div className="max-w-7xl mx-auto">
       <div className="px-4 space-y-5 pb-12">
         <div>
           <SEOHead
@@ -944,6 +985,9 @@ export default function ValvetrainBuilderCalculator() {
             Works for pushrod, SOHC, and DOHC engines — change any parameter and see how it ripples through the entire valvetrain.
           </p>
         </div>
+
+        <div className="flex flex-col xl:flex-row gap-8">
+        <div className="flex-1 min-w-0 space-y-5">
 
         {/* ── Mode Toggle ─────────────────────────────────────── */}
         <div className="flex gap-2">
@@ -980,6 +1024,55 @@ export default function ValvetrainBuilderCalculator() {
             <strong>Reverse mode:</strong> Enter the springs you already have. The calculator shows what range of cam lift, duration, and RPM your springs can safely handle — and which cam types are compatible.
           </div>
         )}
+
+        {/* ── Engine Picker from Database ──────────────────── */}
+        <div className="p-3 bg-gray-50 rounded-lg border">
+          <button
+            onClick={() => setShowPicker(!showPicker)}
+            className="text-sm font-medium text-[#E85D04] hover:underline"
+          >
+            {showPicker ? "Hide engine picker \u2191" : "Auto-fill from engine database \u2193"}
+          </button>
+          {showPicker && (
+            <div className="mt-3 grid grid-cols-1 sm:grid-cols-3 gap-3">
+              <div className="space-y-1">
+                <Label className="text-xs">Manufacturer</Label>
+                <Select value={pickerMfr} onValueChange={v => { setPickerMfr(v); setPickerFamily(""); setPickerEngine(""); }}>
+                  <SelectTrigger><SelectValue placeholder="Select..." /></SelectTrigger>
+                  <SelectContent className="max-h-60 overflow-y-auto">
+                    {manufacturers.map(m => (
+                      <SelectItem key={m.slug} value={m.slug}>{m.name}</SelectItem>
+                    ))}
+                  </SelectContent>
+                </Select>
+              </div>
+              <div className="space-y-1">
+                <Label className="text-xs">Family</Label>
+                <Select value={pickerFamily} onValueChange={v => { setPickerFamily(v); setPickerEngine(""); }} disabled={!pickerMfr}>
+                  <SelectTrigger><SelectValue placeholder="Select..." /></SelectTrigger>
+                  <SelectContent className="max-h-60 overflow-y-auto">
+                    {filteredFamilies.map(f => (
+                      <SelectItem key={f.family_slug} value={f.family_slug}>{f.family_name}</SelectItem>
+                    ))}
+                  </SelectContent>
+                </Select>
+              </div>
+              <div className="space-y-1">
+                <Label className="text-xs">Engine</Label>
+                <Select value={pickerEngine} onValueChange={handlePickerEngine} disabled={!familyData}>
+                  <SelectTrigger><SelectValue placeholder="Select..." /></SelectTrigger>
+                  <SelectContent className="max-h-60 overflow-y-auto">
+                    {familyData?.engines.map(e => (
+                      <SelectItem key={e.engine_id} value={e.engine_id}>
+                        {e.displacement_ci ? `${e.displacement_ci}ci` : ""} {e.year || ""} {e.variants?.[0]?.code || e.engine_id}
+                      </SelectItem>
+                    ))}
+                  </SelectContent>
+                </Select>
+              </div>
+            </div>
+          )}
+        </div>
 
         {/* ══════════════════════════════════════════════════════
             SECTION 1: Valvetrain Architecture
@@ -1671,41 +1764,67 @@ export default function ValvetrainBuilderCalculator() {
           </div>
         </Section>
 
-        {/* ── Educational section ──────────────────────────── */}
-        <Card>
-          <CardHeader><CardTitle>Understanding Valvetrain Dynamics</CardTitle></CardHeader>
-          <CardContent className="prose prose-sm max-w-none text-gray-700 space-y-3">
+        </div>{/* end left column */}
+
+        <aside className="xl:w-80 shrink-0 space-y-6">
+          <Card className="sticky top-20">
+            <CardHeader className="pb-3">
+              <CardTitle className="text-base flex items-center gap-2">
+                <Info className="w-4 h-4 text-[#E85D04]" />
+                Quick Reference
+              </CardTitle>
+            </CardHeader>
+            <CardContent className="text-sm text-muted-foreground space-y-4">
+              <div>
+                <h4 className="font-semibold text-foreground mb-1">Valve Float Causes</h4>
+                <p>Inertia force increases with RPM squared. 18% more RPM = 40% more inertia. Springs must overcome this force at the cam nose.</p>
+              </div>
+              <div>
+                <h4 className="font-semibold text-foreground mb-1">Rocker Ratio Trap</h4>
+                <p>1.5:1 to 1.7:1 = +13% lift but +28% effective mass at the valve (ratio squared). Always recalculate springs after a ratio change.</p>
+              </div>
+              <div>
+                <h4 className="font-semibold text-foreground mb-1">Flat Tappet Limit</h4>
+                <p>Above ~130 lbs seat pressure on flat tappet = accelerated lobe wear, especially with low-ZDDP oils. Roller cams have no practical spring limit.</p>
+              </div>
+              <div className="border-t pt-3">
+                <h4 className="font-semibold text-foreground mb-1">Spring Pressure Ranges</h4>
+                <ul className="space-y-1 mt-1 text-xs">
+                  <li className="flex justify-between"><span>Hyd flat tappet:</span><span className="font-mono">85-130 lbs seat</span></li>
+                  <li className="flex justify-between"><span>Hyd roller:</span><span className="font-mono">120-170 lbs seat</span></li>
+                  <li className="flex justify-between"><span>Solid flat:</span><span className="font-mono">130-170 lbs seat</span></li>
+                  <li className="flex justify-between"><span>Solid roller:</span><span className="font-mono">170-400 lbs seat</span></li>
+                </ul>
+              </div>
+              <div className="border-t pt-3">
+                <h4 className="font-semibold text-foreground mb-1">Mass Targets (per valve)</h4>
+                <ul className="space-y-1 mt-1 text-xs">
+                  <li className="flex justify-between"><span>Stock pushrod:</span><span className="font-mono">~105g intake</span></li>
+                  <li className="flex justify-between"><span>Ti valves:</span><span className="font-mono">~60g intake</span></li>
+                  <li className="flex justify-between"><span>DOHC bucket:</span><span className="font-mono">~55g intake</span></li>
+                  <li className="flex justify-between"><span>Ti retainers:</span><span className="font-mono">45% of steel</span></li>
+                </ul>
+              </div>
+            </CardContent>
+          </Card>
+        </aside>
+
+        </div>{/* end flex row */}
+
+        <Card className="mt-8">
+          <CardHeader>
+            <CardTitle className="text-lg">Valvetrain Geometry and Component Selection</CardTitle>
+          </CardHeader>
+          <CardContent className="prose prose-sm max-w-none text-muted-foreground space-y-3">
             <p>
-              The valvetrain is a system, not a collection of independent parts. Your cam profile determines how aggressively the valve opens and closes. The springs must generate enough force to keep the valve following the cam lobe through the entire RPM range — especially during the deceleration phase over the nose, where inertia tries to throw the valve away from the cam.
+              The valvetrain is a mechanical chain that transmits motion from the camshaft lobe to the valve. In a pushrod engine, this chain includes the cam lobe, lifter, pushrod, rocker arm, and valve. Every component in this chain affects the final valve motion — changing any one part requires verifying that the rest of the system still works correctly. The rocker arm ratio multiplies the cam lobe lift, so a 0.300" lobe lift with a 1.6:1 rocker produces 0.480" of valve lift. Switching to 1.7:1 rockers on the same cam jumps to 0.510" — a free lift increase, but one that requires checking valve spring capacity, retainer-to-seal clearance, and piston-to-valve clearance.
             </p>
             <p>
-              <strong>Why RPM matters so much:</strong> Inertia forces increase with the <em>square</em> of engine speed. An engine spinning 7,000 RPM generates 4{"\u00D7"} the valve inertia force of the same engine at 3,500 RPM. This is why springs that work fine at 5,500 RPM may cause valve float at 6,500 RPM — a modest 18% increase in RPM produces a 40% increase in inertia force.
+              Valve float occurs when the valve spring cannot close the valve fast enough to follow the cam's closing ramp at high RPM. The inertia forces acting on the valve increase with the square of engine speed — an 18% increase in RPM (from 5,500 to 6,500) increases the force on the valve by 40%. This is why high-RPM engines need progressively stiffer springs, lighter valves, and lighter retainers. Titanium retainers weigh 40-50% less than steel and can add 500-800 RPM of safe operating range on the same springs.
             </p>
-            {arch === "pushrod" && (
-              <p>
-                <strong>Pushrod compliance:</strong> In a pushrod engine, the pushrod itself flexes under load — it acts as a spring within the valvetrain. This compliance limits how aggressive the cam profile can be, because the valve doesn't perfectly follow the cam lobe. This is a key reason pushrod engines typically rev lower than OHC designs. Lighter, stiffer pushrods (smaller diameter, thicker wall chromoly) help, but the fundamental limitation remains.
-              </p>
-            )}
-            {(archSpec.hasRocker || arch === "dohc-finger") && (
-              <p>
-                <strong>The rocker ratio trap:</strong> Upgrading from 1.5:1 to 1.7:1 rockers increases valve lift by 13%, which sounds great. But it also increases the effective mass at the valve by 28% (ratio squared effect on the rocker/follower contribution), meaning your springs need to work significantly harder. Always recalculate spring requirements after a ratio change.
-              </p>
-            )}
-            {arch === "dohc-direct" && (
-              <p>
-                <strong>Direct-acting simplicity:</strong> With no rocker or follower lever, there's no ratio-squared mass amplification — every gram you save on the bucket, valve, or retainer translates directly to lower inertia force. This is why DOHC bucket engines can use much lighter springs and still rev safely to high RPM.
-              </p>
-            )}
-            {arch === "dohc-finger" && (
-              <p>
-                <strong>Finger follower advantage:</strong> Finger followers combine the best of both worlds — a small lever ratio for cam profile flexibility with very low mass. Roller-tip followers allow extremely aggressive cam profiles (fast opening/closing ramps) that would be impossible with direct-acting bucket tappets, which share the flat-tappet limitation of being constrained by bucket diameter.
-              </p>
-            )}
+            <h3 className="text-sm font-semibold text-foreground mt-4">Flat Tappet vs. Roller Cam Considerations</h3>
             <p>
-              <strong>Too much spring is also dangerous:</strong> On flat tappet cams, excessive spring pressure accelerates cam lobe and lifter wear. The lifter face and cam lobe are in sliding contact with only an oil film between them. Above ~130 lbs seat pressure on a flat tappet, lobe wear becomes a real risk — especially with modern low-ZDDP oils.
-            </p>
-            <p>
-              <strong>About this calculator's estimates:</strong> Valve float RPM is estimated using a simplified cam acceleration model. Real valve float depends on the exact cam lobe profile shape (acceleration ramps), which varies significantly between manufacturers. Aggressive profiles (fast opening rates) will float earlier than conservative profiles of the same lift and duration. Always verify with the cam manufacturer's spring recommendation as a baseline.
+              Flat tappet cams have a practical spring pressure limit of approximately 130 lbs on the seat. Above this, accelerated cam lobe wear becomes a serious concern, especially with modern low-ZDDP motor oils. Roller cams eliminate this friction concern entirely — the roller lifter rides on a needle bearing instead of sliding contact, allowing spring pressures of 170-400+ lbs on the seat without lobe wear. This is why roller cams dominate performance applications: they permit the aggressive lobe profiles and high spring pressures needed for serious RPM and power. If you are building a flat tappet engine, use a dedicated break-in oil with high ZDDP content and stay within the spring pressure limits recommended by the cam manufacturer.
             </p>
           </CardContent>
         </Card>

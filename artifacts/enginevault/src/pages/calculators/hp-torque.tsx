@@ -3,6 +3,7 @@ import { SEOHead } from "@/components/SEOHead";
 import { Input } from "@/components/ui/input";
 import { Label } from "@/components/ui/label";
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
+import { Info } from "lucide-react";
 
 export default function HpTorqueCalculator() {
   const [hp, setHp] = useState("400");
@@ -31,15 +32,18 @@ export default function HpTorqueCalculator() {
   const kgm = ftLbs * 0.138255;
 
   return (
-    <div className="container mx-auto py-8 px-4 max-w-4xl">
+    <div className="container mx-auto py-8 px-4 max-w-7xl">
       <SEOHead
-        title="Horsepower & Torque Converter"
-        description="Convert between horsepower and torque at any RPM. Bidirectional HP to torque calculator with Nm and kg-m conversions. Free engine builder tool."
+        title="HP to Torque Calculator | Horsepower & Torque Converter"
+        description="Convert between horsepower and torque at any RPM. Free HP to torque calculator with Nm and kg-m conversions for engine builders and tuners."
         canonical="/calculators/hp-torque"
         keywords="hp to torque calculator, torque to horsepower, horsepower calculator, torque converter calculator, engine power calculator"
       />
       <h1 className="text-3xl font-bold mb-2">Horsepower &amp; Torque Converter</h1>
       <p className="text-muted-foreground mb-8">Bidirectional HP↔Torque conversion with unit conversions. Enter HP or Torque — leave the other blank to calculate it.</p>
+
+      <div className="flex flex-col xl:flex-row gap-8">
+      <div className="flex-1 min-w-0">
 
       <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
         <Card>
@@ -110,20 +114,58 @@ export default function HpTorqueCalculator() {
         </div>
       </div>
 
+      </div>{/* end left column */}
+
+      <aside className="xl:w-80 shrink-0 space-y-6">
+        <Card className="sticky top-20">
+          <CardHeader className="pb-3">
+            <CardTitle className="text-base flex items-center gap-2">
+              <Info className="w-4 h-4 text-[#E85D04]" />
+              Quick Reference
+            </CardTitle>
+          </CardHeader>
+          <CardContent className="text-sm text-muted-foreground space-y-4">
+            <div>
+              <h4 className="font-semibold text-foreground mb-1">The Formula</h4>
+              <p>HP = (Torque x RPM) / 5,252. The constant comes from converting ft-lbs/min to horsepower (550 ft-lbs/sec x 60 / 2pi).</p>
+            </div>
+            <div>
+              <h4 className="font-semibold text-foreground mb-1">The 5,252 Crossover</h4>
+              <p>At exactly 5,252 RPM, HP and torque are always numerically equal. Below that, torque is higher; above it, HP is higher.</p>
+            </div>
+            <div>
+              <h4 className="font-semibold text-foreground mb-1">Torque vs HP</h4>
+              <p>Torque is the twisting force. Horsepower is the rate of work. High-revving engines make big HP from modest torque by delivering it faster.</p>
+            </div>
+            <div className="border-t pt-3">
+              <h4 className="font-semibold text-foreground mb-1">Reference Power Curves</h4>
+              <ul className="space-y-1 mt-1 text-xs">
+                <li className="flex justify-between"><span>LT-1 350 (1970):</span><span className="font-mono">370HP/380TQ</span></li>
+                <li className="flex justify-between"><span>LS3 6.2L:</span><span className="font-mono">430HP/424TQ</span></li>
+                <li className="flex justify-between"><span>400 ft-lbs @ 3000:</span><span className="font-mono">= 228 HP</span></li>
+                <li className="flex justify-between"><span>75 ft-lbs @ 12000:</span><span className="font-mono">= 171 HP</span></li>
+              </ul>
+            </div>
+          </CardContent>
+        </Card>
+      </aside>
+
+      </div>{/* end flex row */}
+
       <Card className="mt-8">
         <CardHeader>
           <CardTitle className="text-lg">Horsepower and Torque: The 5252 RPM Crossover</CardTitle>
         </CardHeader>
         <CardContent className="prose prose-sm max-w-none text-muted-foreground space-y-3">
           <p>
-            The relationship between horsepower and torque is defined by a single equation: HP = Torque (ft-lbs) times RPM divided by 5,252. This constant comes from the unit conversion between foot-pounds per minute and the definition of one horsepower (550 ft-lbs per second times 60 seconds, divided by 2 times pi). Because of this formula, every engine's horsepower and torque curves cross at exactly 5,252 RPM — at that speed, the two numbers are always equal. Below 5,252 RPM, torque is always numerically higher than horsepower. Above it, horsepower exceeds torque.
+            The relationship between horsepower and torque is defined by one formula: HP = Torque x RPM / 5252. The constant 5252 comes from 33,000 ft-lbs/min (James Watt's definition of one horsepower) divided by 2pi, which converts rotational speed to linear work. This is not an approximation — it is an exact mathematical relationship. Because of this formula, horsepower and torque are always numerically equal at exactly 5252 RPM, regardless of the engine.
           </p>
           <p>
-            For engine builders, this relationship matters when choosing components. Torque is what accelerates the vehicle — it is the twisting force at the crankshaft. Horsepower is the rate at which that torque is delivered over time, which is why high-revving engines can make big horsepower numbers despite modest torque. A truck engine making 400 lb-ft at 3,000 RPM produces 228 HP. A sport bike engine making 75 lb-ft at 12,000 RPM produces 171 HP from far less torque simply because it delivers it so quickly.
+            Below 5252 RPM, torque is always the larger number. Above 5252 RPM, horsepower is always larger. This is why torque determines how hard the engine pulls at low and mid-range RPM, while horsepower — which accounts for how fast the engine can spin — determines peak potential. An engine that makes big torque at low RPM but falls off early will feel strong off the line but run out of steam on top.
           </p>
-          <h3 className="text-sm font-semibold text-foreground mt-4">Classic Power Curves</h3>
+          <h3 className="text-sm font-semibold text-foreground mt-4">Real Engine Examples</h3>
           <p>
-            The 1970 Chevrolet LT-1 350 was rated at 370 HP at 6,000 RPM and 380 lb-ft at 4,000 RPM — a broad, usable power band. Working backward: 380 lb-ft at 4,000 RPM = 289 HP, and 370 HP at 6,000 RPM = 324 lb-ft. A modern LS3 makes 430 HP at 5,900 RPM and 424 lb-ft at 4,600 RPM. When comparing engines, always note the RPM — a torque number without an RPM is meaningless.
+            The 1970 LT-1 350 was rated at 370 HP at 6000 RPM. Plugging into the formula: 370 x 5252 / 6000 = 324 lb-ft at that RPM. Its peak torque of 380 lb-ft came at 4000 RPM, which equates to 289 HP at that RPM (380 x 4000 / 5252). A modern LS3 makes 430 HP at 5900 RPM and 424 lb-ft at 4600 RPM — more power at lower stress levels thanks to better breathing and combustion efficiency. Understanding these relationships helps you choose the right cam, heads, and intake combination for your intended RPM range.
           </p>
         </CardContent>
       </Card>

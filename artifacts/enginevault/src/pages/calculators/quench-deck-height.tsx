@@ -4,7 +4,7 @@ import { Input } from "@/components/ui/input";
 import { Label } from "@/components/ui/label";
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 import { Select, SelectContent, SelectItem, SelectTrigger, SelectValue } from "@/components/ui/select";
-import { ChevronDown } from "lucide-react";
+import { ChevronDown, Info } from "lucide-react";
 import { useBuildField } from "@/hooks/useBuildField";
 import { useBuildContext } from "@/context/BuildContext";
 import { BuildBanner } from "@/components/BuildBanner";
@@ -200,7 +200,7 @@ export default function QuenchDeckHeightCalculator() {
   const tightestCyl = perCylPtds.length > 1 ? perCylPtds.indexOf(Math.min(...perCylPtds)) + 1 : 1;
 
   return (
-    <div className="container mx-auto py-8 px-4 max-w-5xl">
+    <div className="container mx-auto py-8 px-4 max-w-7xl">
       <SEOHead
         title="Quench & Deck Height Calculator | Squish Distance"
         description="Calculate piston-to-deck clearance, quench distance, and compression ratio simultaneously. Compare gasket thicknesses side by side. Free engine builder tool."
@@ -213,6 +213,9 @@ export default function QuenchDeckHeightCalculator() {
       ]} />
       <h1 className="text-3xl font-bold mb-2">Quench &amp; Deck Height Calculator</h1>
       <p className="text-muted-foreground mb-8">Pick the right gasket: see quench and compression ratio update together as you change thickness.</p>
+
+      <div className="flex flex-col xl:flex-row gap-8">
+      <div className="flex-1 min-w-0">
 
       {/* ── Warnings ── */}
       {C.quench < 0.025 && (
@@ -688,20 +691,66 @@ export default function QuenchDeckHeightCalculator() {
         </Section>
       </div>
 
-      {/* ── Educational note ── */}
+      </div>{/* end left column */}
+
+      <aside className="xl:w-80 shrink-0 space-y-6">
+        <Card className="sticky top-20">
+          <CardHeader className="pb-3">
+            <CardTitle className="text-base flex items-center gap-2">
+              <Info className="w-4 h-4 text-[#E85D04]" />
+              Quick Reference
+            </CardTitle>
+          </CardHeader>
+          <CardContent className="text-sm text-muted-foreground space-y-4">
+            <div>
+              <h4 className="font-semibold text-foreground mb-1">What Is Quench?</h4>
+              <p>The clearance between piston crown flat and head flat at TDC. Creates high-velocity turbulence that reduces detonation and improves combustion.</p>
+            </div>
+            <div>
+              <h4 className="font-semibold text-foreground mb-1">Target Ranges</h4>
+              <ul className="space-y-1 mt-1">
+                <li><span className="font-medium text-foreground">Steel rods:</span> 0.035"–0.045"</li>
+                <li><span className="font-medium text-foreground">Aluminum rods:</span> 0.050"–0.060"</li>
+                <li><span className="font-medium text-foreground">Danger zone:</span> &lt; 0.025"</li>
+                <li><span className="font-medium text-foreground">Ineffective:</span> &gt; 0.060"</li>
+              </ul>
+            </div>
+            <div>
+              <h4 className="font-semibold text-foreground mb-1">Detonation Benefit</h4>
+              <p>Tightening quench from 0.070" to 0.040" reclaims 0.5–1.0 point of detonation resistance. That means more compression on the same fuel.</p>
+            </div>
+            <div>
+              <h4 className="font-semibold text-foreground mb-1">Measurement Tips</h4>
+              <p>Use dial indicator at assembly — piston heights vary 0.008"–0.025" across a set. The tightest cylinder is the one that matters. Use compressed gasket thickness.</p>
+            </div>
+            <div className="border-t pt-3">
+              <h4 className="font-semibold text-foreground mb-1">Thermal Growth</h4>
+              <ul className="space-y-1 mt-1 text-xs">
+                <li className="flex justify-between"><span>Steel rod (6"):</span><span className="font-mono">+0.006–0.010"</span></li>
+                <li className="flex justify-between"><span>Aluminum rod (6"):</span><span className="font-mono">+0.012–0.018"</span></li>
+                <li className="flex justify-between"><span>Per 0.001" deck:</span><span className="font-mono">+0.15–0.25 cc</span></li>
+              </ul>
+            </div>
+          </CardContent>
+        </Card>
+      </aside>
+
+      </div>{/* end flex row */}
+
       <Card className="mt-8">
         <CardHeader>
-          <CardTitle className="text-lg">Quench Explained: What Every Engine Builder Should Know</CardTitle>
+          <CardTitle className="text-lg">Quench Distance and Detonation Resistance</CardTitle>
         </CardHeader>
         <CardContent className="prose prose-sm max-w-none text-muted-foreground space-y-3">
           <p>
-            Quench — also called squish — is the clearance between the flat portion of the piston crown and the flat portion of the cylinder head at top dead center. When the piston reaches TDC, the narrow gap between these two flat surfaces creates a high-velocity jet that pushes the air-fuel mixture toward the spark plug and across the combustion chamber. This turbulence homogenizes the charge, promotes complete combustion, and dramatically reduces the tendency to detonate. Tighter quench is one of the simplest and most effective ways to make an engine more detonation-resistant without changing compression ratio.
+            The quench zone (also called the squish band) is the flat area of the piston top that comes very close to the flat area of the cylinder head at top dead center. When the piston approaches TDC, the air-fuel mixture trapped in this narrow gap is violently squeezed toward the combustion chamber, creating turbulence that promotes fast, even combustion. More importantly, the close proximity of the cool piston and head surfaces cools the end gas in the quench zone, preventing the uncontrolled detonation that destroys pistons and rings.
           </p>
           <p>
-            The ideal quench range for most street builds with steel connecting rods is 0.035" to 0.045". Aluminum rods expand more with heat and require 0.050" to 0.060" minimum clearance. Below 0.025" is dangerous regardless of rod material — the piston can physically contact the head, especially in stroker engines where the connecting rod angle creates lateral piston rock at TDC. Above 0.060", the quench effect is essentially gone because the gap is too large to generate useful turbulence. Most factory engines run 0.060" to 0.080" quench because it is cheaper to hold loose tolerances across a production line.
+            The optimal quench distance depends on connecting rod material. Steel rods stretch less under load, so 0.035"-0.045" is the target. Aluminum rods expand more with heat, so 0.050"-0.060" is recommended to prevent piston-to-head contact. Too tight and the piston can physically contact the head — especially at high RPM where rod stretch increases. Too loose (above 0.080") and the quench effect diminishes, offering little detonation resistance and poor combustion efficiency.
           </p>
+          <h3 className="text-sm font-semibold text-foreground mt-4">How Deck Height and Gasket Affect Quench</h3>
           <p>
-            Builders who tighten quench from a factory-typical 0.070" down to 0.040" typically reclaim 0.5 to 1.0 point of effective detonation resistance — meaning the engine can tolerate roughly that much more static compression ratio on the same fuel without knock. This is free power. The key is measuring actual piston-to-deck clearance with a dial indicator at assembly time, not relying on catalog numbers. Measure every cylinder — piston heights routinely vary 0.008" to 0.025" across a set, and the tightest cylinder is the one that matters. Gasket compressed thickness, not catalog (unloaded) thickness, determines the final quench dimension. This calculator uses compressed thickness for exactly that reason.
+            Quench distance is the sum of the deck clearance (distance from piston top to block deck surface at TDC) plus the compressed gasket thickness in the quench area. If the piston is 0.005" in the hole and the gasket compresses to 0.038", quench distance is 0.043". Milling the heads or block reduces the gasket's compressed thickness and changes quench — always recalculate after machine work. Zero-deck pistons (flush with the block) with a 0.040" compressed gasket are a common street target for good quench without contact risk.
           </p>
         </CardContent>
       </Card>

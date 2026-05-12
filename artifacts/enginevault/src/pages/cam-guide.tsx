@@ -383,7 +383,7 @@ export default function CamGuide() {
 
       {/* Valvetrain RPM Builder tab */}
       {activeTab === "valvetrain" && (
-        <div className="container mx-auto max-w-4xl px-4 py-6">
+        <div className="py-6">
           <ValvetrainBuilder />
         </div>
       )}

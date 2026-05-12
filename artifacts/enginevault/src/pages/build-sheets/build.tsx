@@ -143,7 +143,7 @@ function SectionCard({
   fields: Record<string, string>;
   getField: (key: string) => string | undefined;
   setField: (key: string, value: string) => void;
-  buildId: number;
+  buildId: string;
 }) {
   const isComplete = isSectionComplete(section.id, fields);
 
@@ -276,11 +276,11 @@ export default function BuildWizardPage() {
     try { sessionStorage.setItem("buildWizardTab", String(tab)); } catch {}
   };
 
-  const buildId = params?.buildId ? parseInt(params.buildId, 10) : null;
+  const buildId = params?.buildId || null;
 
   // Load the build on mount
   useEffect(() => {
-    if (!buildId || isNaN(buildId)) {
+    if (!buildId) {
       setError("Invalid build ID");
       setIsLoading(false);
       return;

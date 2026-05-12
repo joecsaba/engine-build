@@ -414,7 +414,7 @@ export default function CarbCfmSizingCalculator() {
   }, [effectiveCalculatedCfm, activeBuild?.id]);
 
   return (
-    <div className="container mx-auto py-8 px-4 max-w-5xl">
+    <div className="container mx-auto py-8 px-4 max-w-7xl">
       <SEOHead
         title="Carburetor CFM Calculator | What Size Carb Do I Need?"
         description="Calculate the right carburetor size for your engine. Estimates VE from cam duration, head flow, intake, and exhaust data. Real carb sizes from Holley and Edelbrock."
@@ -427,6 +427,9 @@ export default function CarbCfmSizingCalculator() {
         Size your carburetor using David Vizard's correction-factor method (simplest — just needs cam
         duration and head type), a quick build-level estimate, or the advanced parts-based VE calculator.
       </p>
+
+      <div className="flex flex-col xl:flex-row gap-8">
+      <div className="flex-1 min-w-0">
 
       {/* ── VE Mode Toggle ─────────────────────────────────────────── */}
       <div className="flex rounded-lg border overflow-hidden mb-8">
@@ -1400,6 +1403,72 @@ export default function CarbCfmSizingCalculator() {
           </p>
         </div>
       </Section>
+
+      </div>{/* end left column */}
+
+      <aside className="xl:w-80 shrink-0 space-y-6">
+        <Card className="sticky top-20">
+          <CardHeader className="pb-3">
+            <CardTitle className="text-base flex items-center gap-2">
+              <Info className="w-4 h-4 text-[#E85D04]" />
+              Quick Reference
+            </CardTitle>
+          </CardHeader>
+          <CardContent className="text-sm text-muted-foreground space-y-4">
+            <div>
+              <h4 className="font-semibold text-foreground mb-1">The CFM Formula</h4>
+              <p>CFM = (CID x RPM x VE) / 3456. The Vizard method adds a correction factor for cam/head quality.</p>
+            </div>
+            <div>
+              <h4 className="font-semibold text-foreground mb-1">Overcarburetion Rule</h4>
+              <p>Too big is worse than too small. An oversized carb kills low-RPM signal, hurts throttle response, and wastes fuel. Size for the 85-90% efficiency point.</p>
+            </div>
+            <div>
+              <h4 className="font-semibold text-foreground mb-1">Street vs Race Sizing</h4>
+              <p>Street: size for peak torque RPM. Race: size for peak HP RPM + 200. Street engines should bias one size down.</p>
+            </div>
+            <div className="border-t pt-3">
+              <h4 className="font-semibold text-foreground mb-1">Common Carb Sizes</h4>
+              <ul className="space-y-1 mt-1 text-xs">
+                <li className="flex justify-between"><span>Stock 305/350:</span><span className="font-mono">500-600 CFM</span></li>
+                <li className="flex justify-between"><span>Mild 350:</span><span className="font-mono">600-650 CFM</span></li>
+                <li className="flex justify-between"><span>Hot 350:</span><span className="font-mono">650-750 CFM</span></li>
+                <li className="flex justify-between"><span>383 Stroker:</span><span className="font-mono">700-780 CFM</span></li>
+                <li className="flex justify-between"><span>Race 400+ci:</span><span className="font-mono">830-1050 CFM</span></li>
+              </ul>
+            </div>
+            <div className="border-t pt-3">
+              <h4 className="font-semibold text-foreground mb-1">VE by Build Level</h4>
+              <ul className="space-y-1 mt-1 text-xs">
+                <li className="flex justify-between"><span>Stock:</span><span className="font-mono">80%</span></li>
+                <li className="flex justify-between"><span>Mild bolt-ons:</span><span className="font-mono">85%</span></li>
+                <li className="flex justify-between"><span>Heads & cam:</span><span className="font-mono">90%</span></li>
+                <li className="flex justify-between"><span>Full race:</span><span className="font-mono">95%</span></li>
+              </ul>
+            </div>
+          </CardContent>
+        </Card>
+      </aside>
+
+      </div>{/* end flex row */}
+
+      <Card className="mt-8">
+        <CardHeader>
+          <CardTitle className="text-lg">Carburetor CFM Sizing for Street and Race Engines</CardTitle>
+        </CardHeader>
+        <CardContent className="prose prose-sm max-w-none text-muted-foreground space-y-3">
+          <p>
+            The basic carburetor sizing formula is CFM = (CID x RPM x VE) / 3456, where VE (volumetric efficiency) accounts for how well the engine fills its cylinders. A stock 350 SBC with a mild cam runs about 80% VE, needing roughly 485 CFM at 5,500 RPM — a 500 CFM 2-barrel or small 4-barrel is ideal. Add heads and a cam and VE climbs to 85-90%, pushing the requirement to 550-600 CFM. A 383 stroker with aftermarket heads and a performance cam at 90% VE needs 700+ CFM.
+          </p>
+          <p>
+            Overcarburetion is the most common mistake in carbureted engine builds. An oversized carburetor kills throttle-plate signal (the pressure drop across the venturi that draws fuel from the circuits), which destroys low-RPM throttle response, causes hesitation, and wastes fuel. A 350 SBC with a stock cam and intake does not need an 850 CFM carb — it will stumble off idle and never see enough airflow to reach the carb's efficient operating range. Size for the 85-90% efficiency point of the carburetor, which means the engine at peak power should be pulling about 85-90% of the carb's rated CFM.
+          </p>
+          <h3 className="text-sm font-semibold text-foreground mt-4">Street vs. Race Sizing Strategy</h3>
+          <p>
+            Street engines should be sized for peak torque RPM, not peak power RPM, because that is where you spend most of your driving time. A mild 350 making peak torque at 3,500 RPM needs only about 400 CFM at that speed — a 600 CFM carb handles this perfectly while still having headroom for higher RPM pulls. Race engines should be sized for peak HP RPM plus a 200 RPM margin. When in doubt between two sizes, the street engine should always go with the smaller carb. Better signal, crisper throttle response, and cleaner part-throttle mixtures outweigh the theoretical peak-power advantage of a larger carb that the engine can never fully utilize on the street.
+          </p>
+        </CardContent>
+      </Card>
     </div>
   );
 }

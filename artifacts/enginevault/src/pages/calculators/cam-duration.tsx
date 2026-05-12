@@ -5,9 +5,10 @@ import { Input } from "@/components/ui/input";
 import { Label } from "@/components/ui/label";
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 import { Select, SelectContent, SelectItem, SelectTrigger, SelectValue } from "@/components/ui/select";
-import { ChevronDown, Printer, Clipboard, Check } from "lucide-react";
+import { ChevronDown, Printer, Clipboard, Check, Info } from "lucide-react";
 import { useBuildContext } from "@/context/BuildContext";
 import { BuildBanner } from "@/components/BuildBanner";
+import { useManufacturers, useFamilies, useFamilyEngines } from "@/hooks/useEngineData";
 
 // ── Types ──────────────────────────────────────────────────────────────────────
 
@@ -206,6 +207,36 @@ export default function CamDurationCalculator() {
   const [copied, setCopied] = useState(false);
   const [buildSynced, setBuildSynced] = useState(false);
 
+  // Engine picker state (for Vizard LSA section)
+  const [showPicker, setShowPicker] = useState(false);
+  const [pickerMfr, setPickerMfr] = useState("");
+  const [pickerFamily, setPickerFamily] = useState("");
+  const [pickerEngine, setPickerEngine] = useState("");
+  const { manufacturers } = useManufacturers();
+  const { families } = useFamilies();
+  const { familyData } = useFamilyEngines(pickerMfr, pickerFamily);
+  const filteredFamilies = families.filter(f => f.manufacturer_slug === pickerMfr);
+
+  const handlePickerEngine = (engineId: string) => {
+    setPickerEngine(engineId);
+    if (!familyData) return;
+    const eng = familyData.engines.find(e => e.engine_id === engineId);
+    if (!eng) return;
+    const updates: Partial<State> = {};
+    if (eng.displacement_ci) updates.displacement = String(eng.displacement_ci);
+    if (eng.num_cylinders) updates.cylinders = String(eng.num_cylinders);
+    if (eng.compression_ratio) updates.compressionRatio = eng.compression_ratio.toFixed(1);
+    if (eng.head?.intake_valve_dia) updates.intakeValveDia = eng.head.intake_valve_dia.toFixed(2);
+    if (eng.bore_in) updates.bore = eng.bore_in.toFixed(2);
+    if (eng.stroke_in) updates.stroke = eng.stroke_in.toFixed(2);
+    if (eng.rod_length_in) updates.rodLength = eng.rod_length_in.toFixed(1);
+    if (eng.head?.rocker_ratio) updates.oemRocker = eng.head.rocker_ratio.toFixed(1);
+    if (eng.valves_per_cylinder) updates.valvesPerCyl = String(eng.valves_per_cylinder);
+    if (Object.keys(updates).length > 0) {
+      setS(prev => ({ ...prev, ...updates }));
+    }
+  };
+
   // Sync build fields → calculator state when build data is available
   const buildFields = activeBuild?.fields;
   useEffect(() => {
@@ -295,7 +326,7 @@ export default function CamDurationCalculator() {
   const handlePrint = () => window.print();
 
   return (
-    <div className="max-w-4xl mx-auto">
+    <div className="max-w-7xl mx-auto">
       <div className="px-4 space-y-5">
       <div>
         <SEOHead
@@ -322,6 +353,9 @@ export default function CamDurationCalculator() {
           </p>
         </div>
       </div>
+
+      <div className="flex flex-col xl:flex-row gap-8">
+      <div className="flex-1 min-w-0">
 
       {/* ── SECTION 1: Cam Inputs ─────────────────────────── */}
       <Section title="1 — Camshaft Inputs">
@@ -510,6 +544,54 @@ export default function CamDurationCalculator() {
             >
               get the book on Amazon →
             </a>
+          </div>
+
+          <div className="mb-4 p-3 bg-gray-50 rounded-lg border">
+            <button
+              onClick={() => setShowPicker(!showPicker)}
+              className="text-sm font-medium text-[#E85D04] hover:underline"
+            >
+              {showPicker ? "Hide engine picker \u2191" : "Auto-fill from engine database \u2193"}
+            </button>
+            {showPicker && (
+              <div className="mt-3 grid grid-cols-1 sm:grid-cols-3 gap-3">
+                <div className="space-y-1">
+                  <Label className="text-xs">Manufacturer</Label>
+                  <Select value={pickerMfr} onValueChange={v => { setPickerMfr(v); setPickerFamily(""); setPickerEngine(""); }}>
+                    <SelectTrigger><SelectValue placeholder="Select..." /></SelectTrigger>
+                    <SelectContent className="max-h-60 overflow-y-auto">
+                      {manufacturers.map(m => (
+                        <SelectItem key={m.slug} value={m.slug}>{m.name}</SelectItem>
+                      ))}
+                    </SelectContent>
+                  </Select>
+                </div>
+                <div className="space-y-1">
+                  <Label className="text-xs">Family</Label>
+                  <Select value={pickerFamily} onValueChange={v => { setPickerFamily(v); setPickerEngine(""); }} disabled={!pickerMfr}>
+                    <SelectTrigger><SelectValue placeholder="Select..." /></SelectTrigger>
+                    <SelectContent className="max-h-60 overflow-y-auto">
+                      {filteredFamilies.map(f => (
+                        <SelectItem key={f.family_slug} value={f.family_slug}>{f.family_name}</SelectItem>
+                      ))}
+                    </SelectContent>
+                  </Select>
+                </div>
+                <div className="space-y-1">
+                  <Label className="text-xs">Engine</Label>
+                  <Select value={pickerEngine} onValueChange={handlePickerEngine} disabled={!familyData}>
+                    <SelectTrigger><SelectValue placeholder="Select..." /></SelectTrigger>
+                    <SelectContent className="max-h-60 overflow-y-auto">
+                      {familyData?.engines.map(e => (
+                        <SelectItem key={e.engine_id} value={e.engine_id}>
+                          {e.displacement_ci ? `${e.displacement_ci}ci` : ""} {e.year || ""} {e.variants?.[0]?.code || e.engine_id}
+                        </SelectItem>
+                      ))}
+                    </SelectContent>
+                  </Select>
+                </div>
+              </div>
+            )}
           </div>
 
           <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
@@ -738,20 +820,66 @@ export default function CamDurationCalculator() {
           </p>
         </div>
       </Section>
-      <Card className="mt-8 mx-4">
+      </div>{/* end left column */}
+
+      <aside className="xl:w-80 shrink-0 space-y-6">
+        <Card className="sticky top-20">
+          <CardHeader className="pb-3">
+            <CardTitle className="text-base flex items-center gap-2">
+              <Info className="w-4 h-4 text-[#E85D04]" />
+              Quick Reference
+            </CardTitle>
+          </CardHeader>
+          <CardContent className="text-sm text-muted-foreground space-y-4">
+            <div>
+              <h4 className="font-semibold text-foreground mb-1">Duration at 0.050"</h4>
+              <p>The industry-standard comparison point. Advertised duration varies by manufacturer and is unreliable for cross-brand comparisons.</p>
+            </div>
+            <div>
+              <h4 className="font-semibold text-foreground mb-1">Overlap</h4>
+              <p>Period when both valves are open simultaneously. More overlap = better high-RPM scavenging but worse idle quality and low-speed vacuum.</p>
+            </div>
+            <div>
+              <h4 className="font-semibold text-foreground mb-1">Lobe Separation Angle</h4>
+              <p>Ground into the cam — cannot be changed after manufacturing. The most critical spec when ordering a camshaft.</p>
+            </div>
+            <div>
+              <h4 className="font-semibold text-foreground mb-1">LSA Guidelines</h4>
+              <ul className="space-y-1 mt-1">
+                <li><span className="font-medium text-foreground">108°:</span> 350ci SBC w/ 2.02" valves</li>
+                <li><span className="font-medium text-foreground">110°:</span> General street/strip</li>
+                <li><span className="font-medium text-foreground">111°:</span> 302ci Ford w/ 1.94" valves</li>
+              </ul>
+            </div>
+            <div className="border-t pt-3">
+              <h4 className="font-semibold text-foreground mb-1">Common Cam Specs</h4>
+              <ul className="space-y-1 mt-1 text-xs">
+                <li className="flex justify-between"><span>XE274H (street/strip):</span><span className="font-mono">224/230 @.050</span></li>
+                <li className="flex justify-between"><span>XE262H (mild street):</span><span className="font-mono">212/218 @.050</span></li>
+                <li className="flex justify-between"><span>XE274H overlap:</span><span className="font-mono">~60°</span></li>
+                <li className="flex justify-between"><span>XE262H overlap:</span><span className="font-mono">~38°</span></li>
+              </ul>
+            </div>
+          </CardContent>
+        </Card>
+      </aside>
+
+      </div>{/* end flex row */}
+
+      <Card className="mt-8">
         <CardHeader>
           <CardTitle className="text-lg">Understanding Camshaft Timing</CardTitle>
         </CardHeader>
         <CardContent className="prose prose-sm max-w-none text-muted-foreground space-y-3">
           <p>
-            This calculator provides a complete cam timing analysis including valve events, overlap, lobe centerlines, dynamic compression ratio, and LSA recommendations. The LSA recommendation in Section 5 uses a formula from David Vizard's <em>How to Build Horsepower</em> that determines the optimal lobe separation angle based on the ratio of per-cylinder displacement to intake valve diameter — a relationship that reflects how efficiently the engine can fill each cylinder.
+            This calculator helps you evaluate camshaft timing events and lobe separation angle (LSA) recommendations based on your engine combination. The cam controls when valves open and close relative to piston position, and those timing events determine where in the RPM range the engine makes power. Duration at 0.050" lift is the industry-standard measurement — it ignores the slow opening and closing ramps and measures only the aggressive portion of the lobe profile.
           </p>
           <p>
-            Overlap is the period when both intake and exhaust valves are open simultaneously, measured in crankshaft degrees. More overlap improves high-RPM scavenging but kills idle quality and low-speed vacuum. Duration at 0.050" lift is the industry-standard comparison point — advertised duration numbers vary between manufacturers and are not reliable for comparing cams across brands. The lobe separation angle is ground into the camshaft and cannot be changed after manufacturing, making it the most critical spec to get right when ordering a cam.
+            Overlap is the period (measured in crankshaft degrees) when both intake and exhaust valves are open simultaneously. More overlap improves high-RPM scavenging but hurts idle quality and low-RPM vacuum. Lobe separation angle (LSA) is the angle in camshaft degrees between the intake and exhaust lobe centerlines. Tighter LSA (like 108°) increases overlap, builds a peaky power band, and hurts idle. Wider LSA (like 114°) reduces overlap, broadens the power band, and improves idle and vacuum.
           </p>
-          <h3 className="text-sm font-semibold text-foreground mt-4">Common Camshaft Specifications</h3>
+          <h3 className="text-sm font-semibold text-foreground mt-4">Real-World Cam Example</h3>
           <p>
-            COMP Cams XE274H: 274/286 advertised duration, 224/230 at 0.050", 110 degree LSA, approximately 60 degrees of overlap — a classic street/strip small block cam. Milder street cams like the XE262H run 212/218 at 0.050" on a 110 LSA with around 38 degrees of overlap and good idle quality. For a 350ci SBC with 2.02" intake valves, the Vizard formula recommends approximately 108 degrees LSA. For a 302ci Ford with 1.94" valves, it recommends roughly 111 degrees.
+            A popular street performance cam like the COMP Cams XE274H has 274°/286° advertised duration, approximately 224°/230° at 0.050", and a 110° LSA with roughly 60° of overlap. For a 350ci SBC with 2.02"/1.60" valves, a recommended LSA is approximately 108°-112° depending on whether the build favors low-end torque (wider) or top-end horsepower (tighter). The cam is only half the equation — it must be matched to the cylinder heads' flow capabilities and the engine's intended RPM range.
           </p>
         </CardContent>
       </Card>

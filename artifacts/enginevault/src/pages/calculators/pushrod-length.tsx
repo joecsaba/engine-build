@@ -7,6 +7,7 @@ import { Select, SelectContent, SelectItem, SelectTrigger, SelectValue } from "@
 import { Tabs, TabsContent, TabsList, TabsTrigger } from "@/components/ui/tabs";
 import { useBuildContext } from "@/context/BuildContext";
 import { BuildBanner } from "@/components/BuildBanner";
+import { Info } from "lucide-react";
 
 /* ── Platform data ──────────────────────────────────────────────── */
 
@@ -258,7 +259,7 @@ export default function PushrodLengthCalculator() {
   }
 
   return (
-    <div className="container mx-auto py-8 px-4 max-w-5xl">
+    <div className="container mx-auto py-8 px-4 max-w-7xl">
       <SEOHead
         title="Pushrod Length Calculator"
         description="Calculate correct pushrod length for LS, SBC, BBC, SBF, and Hemi engines. Delta-from-stock calculator, checker pushrod workflow, and LS non-adjustable rocker guide."
@@ -270,6 +271,9 @@ export default function PushrodLengthCalculator() {
       ]} />
       <h1 className="text-3xl font-bold mb-2">Pushrod Length Calculator</h1>
       <p className="text-muted-foreground mb-8">Calculate the correct pushrod length for your engine combination using delta-from-stock or checker pushrod methods.</p>
+
+      <div className="flex flex-col xl:flex-row gap-8">
+      <div className="flex-1 min-w-0">
 
       {/* Disclaimer */}
       <div className="bg-yellow-50 border border-yellow-200 rounded-lg p-4 mb-8">
@@ -752,25 +756,62 @@ export default function PushrodLengthCalculator() {
 
       {/* ═══════════════════════════════════════════════════════ */}
       {/*  EDUCATIONAL NOTE                                      */}
-      {/* ═══════════════════════════════════════════════════════ */}
+      </div>{/* end left column */}
+
+      <aside className="xl:w-80 shrink-0 space-y-6">
+        <Card className="sticky top-20">
+          <CardHeader className="pb-3">
+            <CardTitle className="text-base flex items-center gap-2">
+              <Info className="w-4 h-4 text-[#E85D04]" />
+              Quick Reference
+            </CardTitle>
+          </CardHeader>
+          <CardContent className="text-sm text-muted-foreground space-y-4">
+            <div>
+              <h4 className="font-semibold text-foreground mb-1">Purpose</h4>
+              <p>Correct pushrod length centers the rocker tip on the valve stem at half-lift and sets proper hydraulic lifter preload (or zero lash on solids).</p>
+            </div>
+            <div>
+              <h4 className="font-semibold text-foreground mb-1">Wrong Length Symptoms</h4>
+              <p>Off-center rocker tip sweep causes accelerated valve guide wear, oil consumption, rocker stud stress, and shortened engine life.</p>
+            </div>
+            <div>
+              <h4 className="font-semibold text-foreground mb-1">Checker Pushrod Method</h4>
+              <p>Mark valve tip with Sharpie, rotate engine 2 revolutions, read contact pattern. Should be centered and span 1/3 to 1/2 of tip width.</p>
+            </div>
+            <div>
+              <h4 className="font-semibold text-foreground mb-1">LS Engines</h4>
+              <p>Non-adjustable rockers mean the pushrod is the ONLY preload control. Any stack change (head mill, gasket, cam base circle) requires a new pushrod length.</p>
+            </div>
+            <div className="border-t pt-3">
+              <h4 className="font-semibold text-foreground mb-1">LS Preload Window</h4>
+              <ul className="space-y-1 mt-1 text-xs">
+                <li className="flex justify-between"><span>Factory spec:</span><span className="font-mono">0.030–0.070"</span></li>
+                <li className="flex justify-between"><span>Stock SBC 350:</span><span className="font-mono">7.794"</span></li>
+                <li className="flex justify-between"><span>Stock LS1/LS6:</span><span className="font-mono">7.400"</span></li>
+                <li className="flex justify-between"><span>Available increments:</span><span className="font-mono">0.025"</span></li>
+              </ul>
+            </div>
+          </CardContent>
+        </Card>
+      </aside>
+
+      </div>{/* end flex row */}
+
       <Card className="mt-8">
         <CardHeader>
-          <CardTitle className="text-lg">Understanding Pushrod Length</CardTitle>
+          <CardTitle className="text-lg">Why Pushrod Length Matters</CardTitle>
         </CardHeader>
         <CardContent className="prose prose-sm max-w-none text-muted-foreground space-y-3">
           <p>
-            Pushrod length determines where the rocker arm tip contacts the valve stem throughout the lift cycle. The correct length positions the roller tip (or stamped tip on OEM rockers) centered on the valve stem at approximately half-lift, maintaining proper rocker geometry. On engines with adjustable rockers, pushrod length also sets hydraulic lifter preload — the amount the lifter's internal plunger is compressed from its free position. On solid lifter setups, the correct pushrod length establishes zero lash at base circle.
+            The correct pushrod length ensures that the rocker arm tip contacts the valve stem at the proper location — centered on the valve tip at mid-lift. When the pushrod is the wrong length, the rocker tip sweeps too far to one side of the valve stem, causing uneven wear on the valve tip, accelerated valve guide wear, increased friction, and eventually oil consumption from worn guides. Getting this right is critical for valve train longevity and consistent valve motion.
           </p>
           <p>
-            Running the wrong pushrod length causes the rocker tip to sweep too far to one side of the valve stem. This creates a side load on the valve that accelerates guide wear, increases stem friction, and can lead to premature valve seal failure. On the rocker side, incorrect geometry increases stress on rocker studs and can cause studs to pull out of aluminum heads under high-RPM use. On race engines with aggressive cam profiles, a pushrod that's significantly too long or too short can bind the rocker, causing bent pushrods or broken rocker arms. None of these failures are immediately catastrophic, but all of them shorten engine life.
+            Any change to the geometry between the cam lobe and the valve tip requires checking pushrod length. This includes head milling (moves the rocker closer to the cam), block decking (same effect), different gasket thickness, a cam with a different base circle diameter, different rocker arm ratio, or switching from stock stamped to roller tip rockers. Each of these modifications shifts the geometric relationship, and the pushrod length must compensate.
           </p>
-          <h3 className="text-sm font-semibold text-foreground mt-4">Two Schools of Thought</h3>
+          <h3 className="text-sm font-semibold text-foreground mt-4">LS Engines: Pushrod Is Your Only Adjustment</h3>
           <p>
-            Some builders set pushrod length by marking the valve tip with a Sharpie and reading the witness pattern left by the rocker tip (the checker pushrod method). Others measure the rocker tip position relative to the valve stem at exactly half-lift, aiming for the roller tip to be at 90 degrees to the stem centerline. In practice, both methods produce nearly identical pushrod lengths — typically within 0.010" of each other on most rocker geometries. The witness pattern method is more accessible in a home shop because it doesn't require a degree wheel or dial indicator setup.
-          </p>
-          <h3 className="text-sm font-semibold text-foreground mt-4">LS-Specific Considerations</h3>
-          <p>
-            LS engines use non-adjustable net-lash rockers, which means the pushrod is the only component that controls lifter preload. There is no adjusting nut to turn. If anything in the valvetrain stack changes — head milling, block milling, gasket thickness, cam base circle, or lifter brand — the pushrod length must change to compensate. "Just use stock pushrods" doesn't work if anything in the stack has changed. Even a 0.010" head cut requires a different pushrod to maintain the factory 0.030–0.070" preload window. Custom-length pushrods are inexpensive and readily available in 0.025" increments from most performance parts suppliers.
+            LS engines use non-adjustable net-lash rocker arms with a fixed pivot point. Unlike traditional small blocks with adjustable poly-lock nuts, there is no way to set preload or lash at the rocker. The pushrod length is the sole means of controlling hydraulic lifter preload — typically targeting 0.030"-0.060" of preload (lifter plunger travel from the snap ring). If you install different heads, a different cam, or machine the block on an LS, you must determine the correct pushrod length using a checking pushrod before ordering your final set.
           </p>
         </CardContent>
       </Card>

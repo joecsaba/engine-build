@@ -8,6 +8,7 @@ import { Tabs, TabsList, TabsTrigger, TabsContent } from "@/components/ui/tabs";
 import { Button } from "@/components/ui/button";
 import { useBuildField } from "@/hooks/useBuildField";
 import { useBuildContext } from "@/context/BuildContext";
+import { Info } from "lucide-react";
 
 /* ─── Constants ─── */
 const SPEED_CONSTANT = 336.13; // 63360 / (60 × π)
@@ -435,7 +436,7 @@ export default function GearRatioCalculator() {
   }, [gears, tire, axle]);
 
   return (
-    <div className="container mx-auto py-8 px-4 max-w-5xl">
+    <div className="container mx-auto py-8 px-4 max-w-7xl">
       <SEOHead
         title="Gear Ratio / Final Drive Calculator"
         description="Calculate RPM at speed for any axle ratio, tire size, and transmission. Compare gear ratios, see highway cruise RPM, and find the right gears for your build."
@@ -444,6 +445,9 @@ export default function GearRatioCalculator() {
       />
       <h1 className="text-3xl font-bold mb-2">Gear Ratio / Final Drive Calculator</h1>
       <p className="text-muted-foreground mb-6">Calculate speed from RPM or RPM from speed for any axle ratio, tire size, and transmission combination.</p>
+
+      <div className="flex flex-col xl:flex-row gap-8">
+      <div className="flex-1 min-w-0">
 
       {/* ─── Mode Tabs ─── */}
       <Tabs value={mode} onValueChange={setMode} className="mb-6">
@@ -900,80 +904,57 @@ export default function GearRatioCalculator() {
         </div>
       </div>
 
-      {/* ─── Educational Section ─── */}
+      </div>{/* end left column */}
+
+      <aside className="xl:w-80 shrink-0 space-y-6">
+        <Card className="sticky top-20">
+          <CardHeader className="pb-3">
+            <CardTitle className="text-base flex items-center gap-2">
+              <Info className="w-4 h-4 text-[#E85D04]" />
+              Quick Reference
+            </CardTitle>
+          </CardHeader>
+          <CardContent className="text-sm text-muted-foreground space-y-4">
+            <div>
+              <h4 className="font-semibold text-foreground mb-1">The Formula</h4>
+              <p>MPH = (RPM x Tire Diameter) / (Gear Ratio x Axle Ratio x 336). Works for any combination.</p>
+            </div>
+            <div>
+              <h4 className="font-semibold text-foreground mb-1">Axle Ratio Effect</h4>
+              <p>Higher number = more multiplication = quicker acceleration but lower top speed and higher highway RPM.</p>
+            </div>
+            <div>
+              <h4 className="font-semibold text-foreground mb-1">Tire Size Impact</h4>
+              <p>Taller tires act like a lower gear ratio. A 2" taller tire is roughly equivalent to dropping 0.20 from the axle ratio.</p>
+            </div>
+            <div className="border-t pt-3">
+              <h4 className="font-semibold text-foreground mb-1">Common Axle Ratios</h4>
+              <ul className="space-y-1 mt-1 text-xs">
+                <li className="flex justify-between"><span>Highway cruise:</span><span className="font-mono">2.73-3.08</span></li>
+                <li className="flex justify-between"><span>Street/strip:</span><span className="font-mono">3.42-3.73</span></li>
+                <li className="flex justify-between"><span>Drag racing:</span><span className="font-mono">4.10-4.56</span></li>
+              </ul>
+            </div>
+          </CardContent>
+        </Card>
+      </aside>
+
+      </div>{/* end flex row */}
+
       <Card className="mt-8">
         <CardHeader>
-          <CardTitle className="text-lg">Understanding Gear Ratios and Final Drive</CardTitle>
+          <CardTitle className="text-lg">Gear Ratio and Final Drive Selection</CardTitle>
         </CardHeader>
-        <CardContent className="prose prose-sm max-w-none text-muted-foreground space-y-4">
-          <h3 className="text-sm font-semibold text-foreground mt-0">What Gear Ratio Means</h3>
+        <CardContent className="prose prose-sm max-w-none text-muted-foreground space-y-3">
           <p>
-            A rear axle gear ratio describes how many times the driveshaft must rotate to turn the axles one full revolution. A 4.10:1 gear means the driveshaft spins 4.10 times for every one wheel rotation. The terminology is deliberately confusing — a "numerically higher" ratio (4.10) is called a "lower gear" or "shorter gear" because it produces lower top speed but stronger acceleration. A "numerically lower" ratio (2.73) is a "taller" gear — less acceleration, higher top speed, and lower cruise RPM. When someone says "I need lower gears," they almost always mean a higher number (like going from 3.08 to 3.73).
-          </p>
-
-          <h3 className="text-sm font-semibold text-foreground">How to Choose a Gear Ratio</h3>
-          <p>
-            The tradeoff is always acceleration versus highway RPM. Street cars need the engine in its power band during acceleration but not screaming at cruise. Strip cars want maximum acceleration and do not care about fuel economy or highway noise. The key is your transmission's top gear: if you have an overdrive (like a 4L60E with 0.70 overdrive), you can run numerically higher axle gears (3.73 or 4.10) and still cruise at reasonable RPM. A three-speed automatic like a TH350 or TH400 has no overdrive — 1.00 is top gear — so you need taller axle gears (3.08–3.55) to keep cruise RPM livable.
+            Engine RPM at any given speed is determined by: RPM = (Speed x Gear Ratio x Axle Ratio x 336.13) / Tire Diameter. This relationship governs whether your engine is loafing on the highway or screaming at redline. The transmission gear ratio multiplied by the axle (ring and pinion) ratio gives the overall drive ratio, and the tire diameter acts as the final reduction — taller tires effectively lower the ratio, shorter tires raise it.
           </p>
           <p>
-            The effective gear ratio in any gear is axle ratio multiplied by the transmission ratio. In a 4L60E (4th gear = 0.70) with 4.10 axle gears, the effective top-gear ratio is 4.10 × 0.70 = 2.87 — similar to cruising in a TH350 with 2.73 axle gears. This is why overdrive transmissions unlocked the ability to run aggressive rear gears on street cars.
+            The classic street/strip dilemma is 3.73 versus 4.10 rear gears. With 3.73s and a 28" tire in a 1:1 top gear, 70 MPH puts the engine at about 2,650 RPM — comfortable for highway cruising, good fuel economy, and lower engine wear. Switch to 4.10s and that same 70 MPH is now 2,910 RPM — noticeably busier on the highway but significantly quicker off the line and through the gears because the engine stays closer to its torque peak during acceleration.
           </p>
-
-          <h3 className="text-sm font-semibold text-foreground">Common Combo Reference</h3>
-          <div className="overflow-x-auto">
-            <table className="w-full text-sm">
-              <thead>
-                <tr className="border-b">
-                  <th className="text-left py-2 pr-2 font-semibold text-foreground">Build</th>
-                  <th className="text-left py-2 px-2 font-semibold text-foreground">Trans</th>
-                  <th className="text-left py-2 px-2 font-semibold text-foreground">Gears</th>
-                  <th className="text-left py-2 px-2 font-semibold text-foreground">Tires</th>
-                  <th className="text-left py-2 pl-2 font-semibold text-foreground">Notes</th>
-                </tr>
-              </thead>
-              <tbody className="text-muted-foreground">
-                <tr className="border-b border-border/50">
-                  <td className="py-2 pr-2">Mild 350 SBC</td>
-                  <td className="py-2 px-2">TH350</td>
-                  <td className="py-2 px-2">3.73</td>
-                  <td className="py-2 px-2">26"</td>
-                  <td className="py-2 pl-2">Classic street combo, ~2,720 RPM at 70</td>
-                </tr>
-                <tr className="border-b border-border/50">
-                  <td className="py-2 pr-2">LS swap</td>
-                  <td className="py-2 px-2">T56</td>
-                  <td className="py-2 px-2">3.73</td>
-                  <td className="py-2 px-2">27"</td>
-                  <td className="py-2 pl-2">Perfect street/strip with 6th gear OD</td>
-                </tr>
-                <tr className="border-b border-border/50">
-                  <td className="py-2 pr-2">454 BBC</td>
-                  <td className="py-2 px-2">TH400</td>
-                  <td className="py-2 px-2">4.10</td>
-                  <td className="py-2 px-2">28"</td>
-                  <td className="py-2 pl-2">Classic muscle car, torque makes up for RPM</td>
-                </tr>
-                <tr className="border-b border-border/50">
-                  <td className="py-2 pr-2">Drag car</td>
-                  <td className="py-2 px-2">Powerglide</td>
-                  <td className="py-2 px-2">4.56</td>
-                  <td className="py-2 px-2">28"</td>
-                  <td className="py-2 pl-2">Bracket racing, maximum acceleration</td>
-                </tr>
-                <tr>
-                  <td className="py-2 pr-2">Street cruiser</td>
-                  <td className="py-2 px-2">4L60E</td>
-                  <td className="py-2 px-2">3.42</td>
-                  <td className="py-2 px-2">26"</td>
-                  <td className="py-2 pl-2">Mild setup, ~2,300 RPM at 70 in OD</td>
-                </tr>
-              </tbody>
-            </table>
-          </div>
-
-          <h3 className="text-sm font-semibold text-foreground">The Tire Size Wildcard</h3>
+          <h3 className="text-sm font-semibold text-foreground mt-4">Tire Size and Highway RPM</h3>
           <p>
-            Changing tire diameter has the same effect as changing gear ratio. Going from 26" to 28" tires (a 7.7% increase) reduces your effective gear ratio by the same percentage. With 3.73 gears, 26" tires give you the same RPM at speed as 3.46 gears with 28" tires. The math: 3.73 × (26 / 28) = 3.46. This is why drag racers running tall slicks (28") often choose numerically higher gears — the big tires "cancel out" part of the ratio. Conversely, if you downsize your tires without changing gears, your cruise RPM goes up. Every tire size change is effectively a gear ratio change.
+            Tire diameter changes your effective gear ratio without touching the ring and pinion. Going from a 26" tire to a 28" tire with 3.73 gears drops highway RPM by about 7% — equivalent to swapping from 3.73s to roughly 3.46s. This is why drag racers run small-diameter slicks (shorter tire = higher effective ratio for launch) and why tall off-road tires make trucks feel sluggish (lower effective ratio, engine below its torque peak). Always recalculate your cruise RPM when changing tire sizes, and consider a gear swap if you have moved more than 2" in tire diameter from stock.
           </p>
         </CardContent>
       </Card>

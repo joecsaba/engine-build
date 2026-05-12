@@ -8,6 +8,7 @@ import { Select, SelectContent, SelectItem, SelectTrigger, SelectValue } from "@
 import { AlertTriangle, Info, ChevronDown, ChevronUp } from "lucide-react";
 import { useBuildField } from "@/hooks/useBuildField";
 import { useBuildContext } from "@/context/BuildContext";
+import { useEnginesWithClearances } from "@/hooks/useEngineData";
 
 // ── Types ──────────────────────────────────────────────────────────────────────
 
@@ -113,6 +114,70 @@ const enginePlatforms: Record<string, EnginePlatform> = {
     mainClearanceFactory: [0.0009, 0.0019],
     rodClearanceFactory: [0.0010, 0.0025],
   },
+  "ford-coyote": {
+    label: "Ford 5.0L Coyote",
+    mainJournalMin: 2.6568, mainJournalMax: 2.6576,
+    rodJournalMin: 2.0862, rodJournalMax: 2.0870,
+    numMains: 5, numRods: 8, blockMaterial: "aluminum",
+    mainClearanceFactory: [0.0007, 0.0017],
+    rodClearanceFactory: [0.0009, 0.0022],
+  },
+  "ford-fe": {
+    label: "Ford FE (352–428)",
+    mainJournalMin: 2.7484, mainJournalMax: 2.7494,
+    rodJournalMin: 2.4378, rodJournalMax: 2.4388,
+    numMains: 5, numRods: 8, blockMaterial: "iron",
+    mainClearanceFactory: [0.0008, 0.0025],
+    rodClearanceFactory: [0.0008, 0.0025],
+  },
+  "mopar-brb": {
+    label: "Mopar B/RB (383–440)",
+    mainJournalMin: 2.6245, mainJournalMax: 2.6255,
+    rodJournalMin: 2.3748, rodJournalMax: 2.3758,
+    numMains: 5, numRods: 8, blockMaterial: "iron",
+    mainClearanceFactory: [0.0005, 0.0020],
+    rodClearanceFactory: [0.0005, 0.0020],
+  },
+  "mopar-hemi": {
+    label: "Mopar 426 Hemi",
+    mainJournalMin: 2.7495, mainJournalMax: 2.7505,
+    rodJournalMin: 2.3748, rodJournalMax: 2.3758,
+    numMains: 5, numRods: 8, blockMaterial: "iron",
+    mainClearanceFactory: [0.0015, 0.0025],
+    rodClearanceFactory: [0.0015, 0.0025],
+  },
+  "pontiac": {
+    label: "Pontiac V8 (326–455)",
+    mainJournalMin: 2.9990, mainJournalMax: 3.0000,
+    rodJournalMin: 2.2480, rodJournalMax: 2.2490,
+    numMains: 5, numRods: 8, blockMaterial: "iron",
+    mainClearanceFactory: [0.0005, 0.0021],
+    rodClearanceFactory: [0.0005, 0.0025],
+  },
+  "oldsmobile": {
+    label: "Oldsmobile V8 (260–455)",
+    mainJournalMin: 2.4988, mainJournalMax: 2.4998,
+    rodJournalMin: 2.1238, rodJournalMax: 2.1248,
+    numMains: 5, numRods: 8, blockMaterial: "iron",
+    mainClearanceFactory: [0.0005, 0.0021],
+    rodClearanceFactory: [0.0005, 0.0025],
+  },
+  "buick": {
+    label: "Buick V8 (300–455)",
+    mainJournalMin: 2.9990, mainJournalMax: 3.0000,
+    rodJournalMin: 2.2487, rodJournalMax: 2.2497,
+    numMains: 5, numRods: 8, blockMaterial: "iron",
+    mainClearanceFactory: [0.0004, 0.0020],
+    rodClearanceFactory: [0.0005, 0.0023],
+  },
+  "amc": {
+    label: "AMC V8 (290–401)",
+    mainJournalMin: 2.7474, mainJournalMax: 2.7484,
+    rodJournalMin: 2.0934, rodJournalMax: 2.0944,
+    numMains: 5, numRods: 8, blockMaterial: "iron",
+    mainClearanceFactory: [0.001, 0.003],
+    rodClearanceFactory: [0.001, 0.003],
+  },
 };
 
 // ── Clearance Recommendations by Build Level ───────────────────────────────────
@@ -207,6 +272,37 @@ export default function BearingClearanceCalculator() {
   const [cylinders] = useBuildField("shortBlock.cylinders", "8");
   const { activeBuild, setField: setBuildField } = useBuildContext();
 
+  // Load engine platforms from JSON data (supplements hardcoded presets)
+  const { platforms: jsonPlatforms, loading: jsonLoading } = useEnginesWithClearances();
+
+  // Merge JSON platforms into the hardcoded enginePlatforms
+  const allPlatforms = useMemo(() => {
+    const merged: Record<string, EnginePlatform> = { ...enginePlatforms };
+    for (const jp of jsonPlatforms) {
+      const key = `json-${jp.engineId}`;
+      if (merged[key]) continue;
+      // Skip if we already have a hardcoded entry for this family
+      const alreadyCovered = Object.values(merged).some(
+        p => Math.abs(p.mainJournalMin - jp.mainJournal) < 0.01 &&
+             Math.abs(p.rodJournalMin - jp.rodJournal) < 0.01
+      );
+      if (alreadyCovered) continue;
+      merged[key] = {
+        label: jp.label,
+        mainJournalMin: jp.mainJournal - 0.0005,
+        mainJournalMax: jp.mainJournal + 0.0005,
+        rodJournalMin: jp.rodJournal - 0.0005,
+        rodJournalMax: jp.rodJournal + 0.0005,
+        numMains: 5,
+        numRods: jp.numCylinders,
+        blockMaterial: (jp.blockMaterial?.toLowerCase().includes("alum") ? "aluminum" : "iron") as BlockMaterial,
+        mainClearanceFactory: [jp.mainClearanceMin, jp.mainClearanceMax],
+        rodClearanceFactory: [jp.rodClearanceMin, jp.rodClearanceMax],
+      };
+    }
+    return merged;
+  }, [jsonPlatforms]);
+
   // Mode
   const [mode, setMode] = useState<Mode>("measurements");
 
@@ -266,7 +362,7 @@ export default function BearingClearanceCalculator() {
   // Auto-fill from platform selection
   useEffect(() => {
     if (!platform) return;
-    const p = enginePlatforms[platform];
+    const p = allPlatforms[platform];
     if (!p) return;
     setBlockMaterial(p.blockMaterial);
     setNumMains(p.numMains);
@@ -444,7 +540,7 @@ export default function BearingClearanceCalculator() {
 
   // ── Lookup mode data ───────────────────────────────────────────────────────
 
-  const selectedPlatform = platform ? enginePlatforms[platform] : null;
+  const selectedPlatform = platform ? allPlatforms[platform] : null;
   const selectedSpec = clearanceSpecs[buildLevel];
 
   // ── Plastigage assessment ──────────────────────────────────────────────────
@@ -455,7 +551,7 @@ export default function BearingClearanceCalculator() {
     : null;
 
   return (
-    <div className="container mx-auto py-8 px-4 max-w-6xl">
+    <div className="container mx-auto py-8 px-4 max-w-7xl">
       <SEOHead
         title="Bearing Clearance Calculator"
         description="Calculate main and rod bearing clearance from journal and housing bore measurements. Plastigage checker, oil viscosity recommendations, and specs for SBC, BBC, LS, Ford, and Mopar engines."
@@ -467,6 +563,9 @@ export default function BearingClearanceCalculator() {
       <p className="text-muted-foreground mb-6">
         Calculate main and rod bearing oil clearance from your measurements, look up factory specs, or check a Plastigage reading.
       </p>
+
+      <div className="flex flex-col xl:flex-row gap-8">
+      <div className="flex-1 min-w-0">
 
       {/* ── Mode Toggle ───────────────────────────────────────────────────── */}
       <div className="flex items-center gap-1 bg-muted rounded-lg p-1 mb-8 w-fit">
@@ -509,7 +608,7 @@ export default function BearingClearanceCalculator() {
                       <Select value={platform} onValueChange={setPlatform}>
                         <SelectTrigger><SelectValue placeholder="Optional — auto-fills journals" /></SelectTrigger>
                         <SelectContent>
-                          {Object.entries(enginePlatforms).map(([key, p]) => (
+                          {Object.entries(allPlatforms).map(([key, p]) => (
                             <SelectItem key={key} value={key}>{p.label}</SelectItem>
                           ))}
                         </SelectContent>
@@ -849,7 +948,7 @@ export default function BearingClearanceCalculator() {
                 <Select value={platform} onValueChange={setPlatform}>
                   <SelectTrigger><SelectValue placeholder="Select engine..." /></SelectTrigger>
                   <SelectContent>
-                    {Object.entries(enginePlatforms).map(([key, p]) => (
+                    {Object.entries(allPlatforms).map(([key, p]) => (
                       <SelectItem key={key} value={key}>{p.label}</SelectItem>
                     ))}
                   </SelectContent>
@@ -1098,7 +1197,7 @@ export default function BearingClearanceCalculator() {
               </tr>
             </thead>
             <tbody className="text-muted-foreground">
-              {Object.entries(enginePlatforms).map(([key, p]) => {
+              {Object.entries(allPlatforms).map(([key, p]) => {
                 const isActive = key === platform;
                 return (
                   <tr key={key} className={`border-b last:border-0 cursor-pointer hover:bg-muted/50 ${isActive ? "bg-[#E85D04]/5 font-medium text-foreground" : ""}`}
@@ -1179,69 +1278,64 @@ export default function BearingClearanceCalculator() {
         </CardContent>
       </Card>
 
-      {/* ── Educational Content ────────────────────────────────────────────── */}
-      <Card className="mb-8">
+      </div>{/* end left column */}
+
+      <aside className="xl:w-80 shrink-0 space-y-6">
+        <Card className="sticky top-20">
+          <CardHeader className="pb-3">
+            <CardTitle className="text-base flex items-center gap-2">
+              <Info className="w-4 h-4 text-[#E85D04]" />
+              Quick Reference
+            </CardTitle>
+          </CardHeader>
+          <CardContent className="text-sm text-muted-foreground space-y-4">
+            <div>
+              <h4 className="font-semibold text-foreground mb-1">Oil Clearance</h4>
+              <p>Clearance = Housing bore - Journal diameter. Too tight starves the bearing; too loose drops oil pressure.</p>
+            </div>
+            <div>
+              <h4 className="font-semibold text-foreground mb-1">General Rule</h4>
+              <p>0.001" per inch of journal diameter is a good starting point. Mains slightly looser than rods.</p>
+            </div>
+            <div>
+              <h4 className="font-semibold text-foreground mb-1">Typical Clearances</h4>
+              <ul className="space-y-1 mt-1">
+                <li><span className="font-medium text-foreground">SBC mains:</span> 0.0020-0.0025"</li>
+                <li><span className="font-medium text-foreground">SBC rods:</span> 0.0018-0.0022"</li>
+                <li><span className="font-medium text-foreground">LS mains:</span> 0.0015-0.0021"</li>
+              </ul>
+            </div>
+            <div className="border-t pt-3">
+              <h4 className="font-semibold text-foreground mb-1">Plastigage Colors</h4>
+              <ul className="space-y-1 mt-1 text-xs">
+                <li className="flex justify-between"><span>Green:</span><span className="font-mono">0.001-0.003"</span></li>
+                <li className="flex justify-between"><span>Red:</span><span className="font-mono">0.002-0.006"</span></li>
+                <li className="flex justify-between"><span>Blue:</span><span className="font-mono">0.004-0.009"</span></li>
+              </ul>
+            </div>
+          </CardContent>
+        </Card>
+      </aside>
+
+      </div>{/* end flex row */}
+
+      <Card className="mt-8">
         <CardHeader>
-          <CardTitle className="text-lg">Understanding Bearing Clearance</CardTitle>
+          <CardTitle className="text-lg">Engine Bearing Clearance Fundamentals</CardTitle>
         </CardHeader>
-        <CardContent className="prose prose-sm max-w-none text-muted-foreground space-y-4">
-          <h3 className="text-sm font-semibold text-foreground">Why Clearance Matters</h3>
+        <CardContent className="prose prose-sm max-w-none text-muted-foreground space-y-3">
           <p>
-            Engine bearings don't actually touch the crankshaft journal in normal operation. The bearing rides on a pressurized oil film — a hydrodynamic wedge that forms as the journal rotates. The crankshaft sits slightly off-center in the bearing, and as it spins, oil is dragged into the converging gap between the journal and bearing surfaces. This creates a high-pressure oil film that supports the full load of combustion forces, connecting rod inertia, and crankshaft weight. The clearance between the bearing and journal determines the thickness of this oil film, which directly controls load capacity, operating temperature, and bearing life.
+            Bearing clearance is the difference between the housing bore inside diameter (with the bearing installed) and the crankshaft journal outside diameter. Despite what it might seem, the bearing shell never actually touches the crankshaft journal during normal operation. Instead, the journal rides on a pressurized film of oil that is maintained by the oil pump. This hydrodynamic oil film is what carries the load — the bearing shell simply provides the correct geometry and a sacrificial surface in case of oil film failure.
           </p>
           <p>
-            Too little clearance starves the bearing of oil flow — less oil passes through the bearing, so less heat is carried away. The oil film becomes dangerously thin, and any momentary overload (a detonation event, a missed shift) can break through the film and cause metal-to-metal contact. Too much clearance drops oil pressure because oil leaks out of the bearing faster than the pump can supply it. The oil film becomes too thin to support loads, the bearing overheats, and failure follows. Getting clearance right is one of the most critical measurements in any engine build.
+            Tighter clearances (smaller gap) result in higher oil pressure because the oil has less space to escape, and they provide better load-carrying capacity because the oil film is thinner and stiffer. Looser clearances allow more oil to flow through the bearing, which carries away more heat — important for high-output or sustained-load applications. The trade-off is that looser clearances reduce oil pressure and load capacity. The classic rule of thumb is "one thou per inch of journal diameter": a 2.100" journal gets approximately 0.0021" clearance.
           </p>
-
-          <h3 className="text-sm font-semibold text-foreground mt-6">How to Measure Correctly</h3>
+          <h3 className="text-sm font-semibold text-foreground mt-4">Block Material Matters</h3>
           <p>
-            The gold standard is a bore gauge and micrometer. Measure the housing bore with the bearing installed and the cap torqued to spec — this is your bearing inside diameter. Then measure the crankshaft journal with a micrometer. Subtract journal OD from bearing ID to get clearance. Measure at multiple points around the journal (0° and 90°) to check for out-of-round, and measure at both ends of the journal to check for taper. Out-of-round greater than 0.0005" means the crank needs grinding. Taper greater than 0.0005" end to end is also grounds for regrinding.
-          </p>
-          <p>
-            Plastigage is the DIY alternative. It's a thin strip of crushable plastic placed between the bearing and journal. When the cap is torqued down, the strip is crushed to a width proportional to the clearance. Compare the crushed width to the scale on the Plastigage package. It's accurate to about ±0.0005", which is adequate for most street builds. But for precision race work, or if you need to detect taper and out-of-round, a bore gauge and micrometer are essential. Real machine shops use Plastigage as a quick check, not as the primary measurement.
-          </p>
-
-          <h3 className="text-sm font-semibold text-foreground mt-6">Tight vs. Loose Tradeoffs</h3>
-          <p>
-            Tighter clearances produce higher oil pressure (less leakage), better load capacity (thicker oil film relative to the gap), and quieter operation. But they also mean less oil flow through the bearing, so less cooling. For a street engine that sees moderate loads and occasional spirited driving, tight clearances with quality thin oil (5W-30) produce the best combination of protection and longevity.
-          </p>
-          <p>
-            Looser clearances allow more oil to flow through the bearing, which carries away more heat — critical for race engines that sustain high RPM and high loads for extended periods. Race engines often use external oil coolers, high-volume oil pumps, and deep sumps to support the increased oil flow that wider clearances demand. The tradeoff is lower oil pressure and slightly more bearing noise at idle. For a dedicated race engine with proper oiling, wider clearances with heavier oil (15W-40 or 20W-50) are the right choice.
-          </p>
-
-          <h3 className="text-sm font-semibold text-foreground mt-6">Block Material Matters</h3>
-          <p>
-            Aluminum blocks expand significantly more than cast iron when heated. At operating temperature (~200°F), an aluminum block's main bearing bores will have grown roughly 0.0005"–0.001" more than an iron block. This means the bearing clearance at operating temperature is wider than what you measured on the assembly bench. Experienced builders set aluminum block clearances 0.0005" tighter during cold assembly to compensate — the clearance opens up to the desired range once the engine reaches operating temperature. A GM LS engine (aluminum block) assembled at 0.0020" cold clearance will run approximately 0.0025" at operating temperature.
-          </p>
-
-          <h3 className="text-sm font-semibold text-foreground mt-6">Bearing Crush</h3>
-          <p>
-            Bearing shells are manufactured slightly larger than the housing bore — typically 0.001"–0.002" of extra height at the parting line. When the bearing cap is torqued to spec, this extra material is compressed ("crushed"), which presses the bearing shell firmly against the housing bore. Crush is critical for two reasons: it prevents the bearing from spinning in the bore under load, and it ensures full contact between the bearing back and housing for efficient heat transfer. The bearing shell must conduct heat from its running surface through its steel back and into the engine block — any air gap from insufficient crush dramatically reduces cooling.
-          </p>
-          <p>
-            Never file or sand the parting line of a bearing shell to "improve fit." This removes crush height, which leads to a loose bearing that spins and destroys itself. Always torque bearing caps to the factory specification — the correct crush is engineered into the bearing dimensions at that specific torque value. If a bearing doesn't seat properly, the problem is with the housing bore, not the bearing.
-          </p>
-
-          <h3 className="text-sm font-semibold text-foreground mt-6">The "One Thousandth Per Inch" Rule</h3>
-          <p>
-            A common rule of thumb states that bearing clearance should be approximately 0.001" per inch of journal diameter — so a 2.100" journal gets 0.0021" clearance, a 2.500" journal gets 0.0025", and so on. This rule is a reasonable starting point for street engines but should not be followed blindly. Clevite's Jim Garrett (a leading bearing engineer) has noted that this rule works as a rough guideline, but actual clearance should be determined by the application, block material, oil system capacity, and operating conditions. A race engine with a large journal may need wider clearance than the rule suggests; a tight-tolerance street engine with quality modern bearings can run tighter. Use the rule as a sanity check, not as a specification.
+            Aluminum blocks expand significantly more than iron blocks as they reach operating temperature. This means aluminum block engines need tighter cold clearances to achieve the correct hot clearance. An iron block SBC might spec 0.0020"-0.0025" on the mains, while an aluminum LS block specs 0.0015"-0.0020" because the aluminum housing bore grows more as it heats up. Always measure clearances with the bearings torqued to spec using Plastigage or a bore gauge — never assume the bearing matches the published size.
           </p>
         </CardContent>
       </Card>
-
-      {/* ── Cross-links ───────────────────────────────────────────────────── */}
-      <div className="flex items-start gap-3 p-4 rounded-lg border border-blue-200 bg-blue-50 text-blue-900 mb-8">
-        <Info className="w-5 h-5 shrink-0 mt-0.5 text-blue-600" />
-        <div className="text-sm">
-          <p className="font-semibold mb-1">In the machine shop?</p>
-          <p>
-            If you're measuring bearing clearances, you're probably also checking other critical dimensions.{" "}
-            <Link href="/calculators/pushrod-length" className="underline font-medium">Pushrod Length Calculator</Link> — verify pushrod length after head or cam changes.{" "}
-            <Link href="/calculators/quench-deck-height" className="underline font-medium">Quench & Deck Height</Link> — check piston-to-deck clearance.{" "}
-            <Link href="/calculators/ring-gap-advanced" className="underline font-medium">Piston Ring Gap</Link> — set ring end gap for your application.
-          </p>
-        </div>
-      </div>
     </div>
   );
 }

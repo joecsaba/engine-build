@@ -4,7 +4,7 @@ import { Input } from "@/components/ui/input";
 import { Label } from "@/components/ui/label";
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 import { Select, SelectContent, SelectItem, SelectTrigger, SelectValue } from "@/components/ui/select";
-import { ChevronDown } from "lucide-react";
+import { ChevronDown, Info } from "lucide-react";
 
 // ── Types ───────────────────────────────────────────────────────────────────────
 
@@ -258,15 +258,18 @@ export default function AfrLambdaCalculator() {
   // ── JSX ───────────────────────────────────────────────────────────────────────
 
   return (
-    <div className="container mx-auto py-8 px-4 max-w-5xl">
+    <div className="container mx-auto py-8 px-4 max-w-7xl">
       <SEOHead
-        title="AFR Lambda Multi-Fuel Converter"
-        description="Convert between Lambda, actual AFR, and gas-scale wideband AFR for any fuel — gasoline, E85, methanol, nitromethane, CNG, and custom blends. Free real-time calculator for engine tuners."
+        title="AFR / Lambda Calculator | Air Fuel Ratio Converter"
+        description="Convert between Lambda, AFR, and gas-scale wideband readings for gasoline, E85, methanol, and custom fuel blends. Free air fuel ratio calculator."
         canonical="/calculators/afr-lambda"
         keywords="AFR calculator, lambda calculator, wideband AFR converter, E85 AFR, methanol AFR, gas scale AFR, stoichiometric AFR, air fuel ratio calculator, lambda to AFR"
       />
       <h1 className="text-3xl font-bold mb-2">AFR / Lambda Multi-Fuel Converter</h1>
       <p className="text-muted-foreground mb-8">Convert between Lambda, actual AFR, and gas-scale wideband AFR for any fuel.</p>
+
+      <div className="flex flex-col xl:flex-row gap-8">
+      <div className="flex-1 min-w-0">
 
       <div className="grid grid-cols-1 lg:grid-cols-2 gap-8">
         {/* ──────────── LEFT COLUMN: INPUTS ──────────── */}
@@ -662,34 +665,68 @@ export default function AfrLambdaCalculator() {
         </div>
       </Section>
 
-      {/* ──────────── EDUCATIONAL ──────────── */}
+      </div>{/* end left column */}
+
+      <aside className="xl:w-80 shrink-0 space-y-6">
+        <Card className="sticky top-20">
+          <CardHeader className="pb-3">
+            <CardTitle className="text-base flex items-center gap-2">
+              <Info className="w-4 h-4 text-[#E85D04]" />
+              Quick Reference
+            </CardTitle>
+          </CardHeader>
+          <CardContent className="text-sm text-muted-foreground space-y-4">
+            <div>
+              <h4 className="font-semibold text-foreground mb-1">Lambda vs AFR</h4>
+              <p>Lambda is fuel-agnostic. Lambda 1.0 = stoich on ANY fuel. Your wideband shows gas-scale (Lambda x 14.7) regardless of fuel type.</p>
+            </div>
+            <div>
+              <h4 className="font-semibold text-foreground mb-1">Why E85 Reads "Wrong"</h4>
+              <p>E85 at WOT shows ~12.5 on wideband because the gauge speaks gasoline units. Actual AFR is ~8.9:1 but Lambda is the same 0.85.</p>
+            </div>
+            <div>
+              <h4 className="font-semibold text-foreground mb-1">Key Rule</h4>
+              <p>When switching fuels, target the same Lambda, NOT the same AFR number. The engine cares about oxygen-to-fuel balance.</p>
+            </div>
+            <div className="border-t pt-3">
+              <h4 className="font-semibold text-foreground mb-1">Stoichiometric AFR</h4>
+              <ul className="space-y-1 mt-1 text-xs">
+                <li className="flex justify-between"><span>Gasoline:</span><span className="font-mono">14.7:1</span></li>
+                <li className="flex justify-between"><span>E85:</span><span className="font-mono">9.76:1</span></li>
+                <li className="flex justify-between"><span>Methanol:</span><span className="font-mono">6.47:1</span></li>
+                <li className="flex justify-between"><span>Propane:</span><span className="font-mono">15.67:1</span></li>
+                <li className="flex justify-between"><span>CNG:</span><span className="font-mono">17.2:1</span></li>
+              </ul>
+            </div>
+            <div className="border-t pt-3">
+              <h4 className="font-semibold text-foreground mb-1">Common Lambda Targets</h4>
+              <ul className="space-y-1 mt-1 text-xs">
+                <li className="flex justify-between"><span>NA peak power:</span><span className="font-mono">0.85-0.88</span></li>
+                <li className="flex justify-between"><span>Boosted WOT:</span><span className="font-mono">0.78-0.82</span></li>
+                <li className="flex justify-between"><span>Cruise/economy:</span><span className="font-mono">1.00-1.05</span></li>
+                <li className="flex justify-between"><span>Idle:</span><span className="font-mono">0.98-1.02</span></li>
+              </ul>
+            </div>
+          </CardContent>
+        </Card>
+      </aside>
+
+      </div>{/* end flex row */}
+
       <Card className="mt-8">
         <CardHeader>
           <CardTitle className="text-lg">Understanding Lambda, AFR, and Wideband Readings</CardTitle>
         </CardHeader>
         <CardContent className="prose prose-sm max-w-none text-muted-foreground space-y-3">
           <p>
-            A wideband O&#x2082; sensor measures the percentage of oxygen remaining in the exhaust stream and converts that into a Lambda value &mdash; the ratio of actual air-fuel mixture to the stoichiometric (chemically perfect) ratio for a given fuel. The controller then multiplies Lambda by 14.7 (gasoline&rsquo;s stoich) to display &ldquo;AFR&rdquo; on your gauge. This gas-scale reading is hardwired regardless of what fuel you are actually burning. That is why a guy running E85 sees 12.5 on his wideband at WOT instead of the 8&ndash;9:1 actual AFR he expects &mdash; the gauge is not wrong, it is simply speaking in gasoline units.
+            Wideband oxygen sensors measure the oxygen content in the exhaust and convert that measurement into a Lambda value. Lambda is a ratio of actual air-fuel ratio to the stoichiometric (chemically perfect) ratio for a given fuel. Lambda 1.000 always means stoichiometric, regardless of fuel type — this is what makes Lambda universal. The wideband controller then multiplies Lambda by the stoichiometric AFR of gasoline (14.7) to display the familiar "AFR" number on gas-scale gauges.
           </p>
           <p>
-            Lambda is the universal, fuel-agnostic way to express mixture richness. Lambda 1.000 means stoichiometric on any fuel &mdash; gasoline, E85, methanol, propane, anything. Lambda 0.85 means the mixture is 15% richer than stoich, again on any fuel. This is why professional tuners and OEM calibrators work in Lambda rather than AFR: it makes every target, every table, and every log directly comparable across fuels without conversion. A naturally aspirated engine making peak power at Lambda 0.85 does so whether it is burning gasoline (actual AFR 12.5:1) or methanol (actual AFR 5.5:1).
+            This gas-scale display creates confusion when tuning on alternative fuels. E85 has a stoichiometric AFR of approximately 9.8:1, not 14.7. When your wideband reads "12.5:1" on E85, it is not telling you the actual air-fuel ratio — it is showing Lambda 0.85 multiplied by 14.7. The actual AFR is approximately 8.3:1. This is why professional tuners work in Lambda rather than AFR: the target Lambda stays the same regardless of fuel, while the AFR number changes with every fuel blend.
           </p>
+          <h3 className="text-sm font-semibold text-foreground mt-4">Practical Tuning Targets</h3>
           <p>
-            The practical takeaway: when you switch fuels &mdash; gasoline to E85, E85 to methanol &mdash; do not target the same AFR number. Target the same Lambda. If your NA engine made peak power at Lambda 0.85 on gasoline (12.5:1 AFR), target Lambda 0.85 on E85 as well. Your wideband will still read 12.5 gas-scale, but the actual AFR will drop to roughly 8.9:1 because E85&rsquo;s stoich is so much lower. The engine does not care about the AFR number &mdash; it cares about the oxygen-to-fuel balance, which is exactly what Lambda describes.
-          </p>
-        </CardContent>
-      </Card>
-
-      <Card className="mt-8">
-        <CardHeader>
-          <CardTitle className="text-lg">Sources and Methodology</CardTitle>
-        </CardHeader>
-        <CardContent className="prose prose-sm max-w-none text-muted-foreground space-y-3">
-          <p>
-            The stoichiometric AFR values in this calculator are derived from balanced combustion stoichiometry (Heywood, <em>Internal Combustion Engine Fundamentals</em>, Ch. 3) and cross-referenced against published calibration data from COBB Tuning (Subaru DIT WRX CAN Flex Fuel Tuning Guide), ECMTuning (DSM E85 wiki), and HP Tuners. Ethanol-blend stoich is computed using the industry-standard linear interpolation by volume fraction between the selected E0 baseline ({gasBase === 14.64 ? "14.64" : "14.7"}:1) and E100 (9.008:1) &mdash; the same method used by COBB, MoTeC, Haltech, Holley EFI, and MaxxECU flex-fuel calibrations.
-          </p>
-          <p>
-            The linear volume-fraction blend introduces a ~0.5% systematic error versus a rigorous mass-fraction calculation (because ethanol at 0.789 g/mL is denser than gasoline at ~0.74 g/mL), but every major EFI manufacturer uses this same simplification because real-world pump-fuel ethanol content varies by &plusmn;10% seasonally (ASTM D5798 permits 51&ndash;83% ethanol in &ldquo;E85&rdquo;), which is 20&times; larger than the density-correction error. Lambda targets, condition zones, and the gas-scale AFR convention (&lambda; &times; 14.7) follow the definitions used by AEM, Innovate Motorsports, and HP Academy.
+            For gasoline, a typical power target is Lambda 0.85-0.88 (AFR 12.5-12.9), cruise is Lambda 1.00-1.05 (AFR 14.7-15.4), and idle is Lambda 0.95-1.00 (AFR 14.0-14.7). When switching from gasoline to E85, target the same Lambda values — not the same AFR numbers. E85 at Lambda 0.85 means the wideband still reads about 12.5 on a gas-scale display, but the actual mixture is roughly 8.3:1 by mass. This requires approximately 30% more fuel flow, which is why injector and fuel pump upgrades are essential for E85 conversions.
           </p>
         </CardContent>
       </Card>

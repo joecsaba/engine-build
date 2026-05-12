@@ -4,7 +4,7 @@ import { Input } from "@/components/ui/input";
 import { Label } from "@/components/ui/label";
 import { Card, CardContent, CardHeader, CardTitle, CardDescription } from "@/components/ui/card";
 import { Select, SelectContent, SelectItem, SelectTrigger, SelectValue } from "@/components/ui/select";
-import { ChevronDown } from "lucide-react";
+import { ChevronDown, Info } from "lucide-react";
 import { useBuildField } from "@/hooks/useBuildField";
 import { useBuildContext } from "@/context/BuildContext";
 
@@ -355,7 +355,7 @@ export default function HeadFlowCalculator() {
   };
 
   return (
-    <div className="container mx-auto py-8 px-4 max-w-6xl">
+    <div className="container mx-auto py-8 px-4 max-w-7xl">
       <SEOHead
         title="Cylinder Head Flow Calculator — CFM to HP"
         description="Calculate horsepower potential from cylinder head flow bench numbers. Converts CFM to HP, calculates flow coefficient, intake/exhaust ratio, and port velocity. Compare your heads against popular SBC, LS, BBC, and Ford heads."
@@ -364,6 +364,9 @@ export default function HeadFlowCalculator() {
       />
       <h1 className="text-3xl font-bold mb-2">Cylinder Head Flow Calculator</h1>
       <p className="text-muted-foreground mb-8">Convert flow bench CFM to horsepower potential. Analyze flow coefficient, exhaust ratio, and compare against popular heads.</p>
+
+      <div className="flex flex-col xl:flex-row gap-8">
+      <div className="flex-1 min-w-0">
 
       {/* Mode Toggle */}
       <div className="flex rounded-lg border overflow-hidden mb-8 max-w-lg">
@@ -875,6 +878,72 @@ export default function HeadFlowCalculator() {
           </div>
         )}
       </div>
+
+      </div>{/* end left column */}
+
+      <aside className="xl:w-80 shrink-0 space-y-6">
+        <Card className="sticky top-20">
+          <CardHeader className="pb-3">
+            <CardTitle className="text-base flex items-center gap-2">
+              <Info className="w-4 h-4 text-[#E85D04]" />
+              Quick Reference
+            </CardTitle>
+          </CardHeader>
+          <CardContent className="text-sm text-muted-foreground space-y-4">
+            <div>
+              <h4 className="font-semibold text-foreground mb-1">CFM to HP Formula</h4>
+              <p>HP = Peak CFM x 0.257 x Cylinders. This SuperFlow formula is well-validated for NA engines up to ~700 HP.</p>
+            </div>
+            <div>
+              <h4 className="font-semibold text-foreground mb-1">Exhaust-to-Intake Ratio</h4>
+              <p>Target 72-80% of intake flow. Below 65% = exhaust is the bottleneck. Consider exhaust port work or larger valves.</p>
+            </div>
+            <div>
+              <h4 className="font-semibold text-foreground mb-1">Port Velocity Targets</h4>
+              <p>Street: 180-220 ft/sec. Street/strip: 220-260 ft/sec. Race: 250-320 ft/sec. Too low = lazy throttle response.</p>
+            </div>
+            <div className="border-t pt-3">
+              <h4 className="font-semibold text-foreground mb-1">Flow Coefficient Grades</h4>
+              <ul className="space-y-1 mt-1 text-xs">
+                <li className="flex justify-between"><span>{"<"} 60%:</span><span>Room to improve</span></li>
+                <li className="flex justify-between"><span>60-75%:</span><span>Good street head</span></li>
+                <li className="flex justify-between"><span>75-85%:</span><span>Well-ported</span></li>
+                <li className="flex justify-between"><span>{">"} 85%:</span><span>Race-level</span></li>
+              </ul>
+            </div>
+            <div className="border-t pt-3">
+              <h4 className="font-semibold text-foreground mb-1">Good Peak Flow Numbers</h4>
+              <ul className="space-y-1 mt-1 text-xs">
+                <li className="flex justify-between"><span>Stock Vortec SBC:</span><span className="font-mono">218 CFM</span></li>
+                <li className="flex justify-between"><span>AFR 195 SBC:</span><span className="font-mono">270 CFM</span></li>
+                <li className="flex justify-between"><span>Stock LS3:</span><span className="font-mono">315 CFM</span></li>
+                <li className="flex justify-between"><span>Ported LS3:</span><span className="font-mono">370 CFM</span></li>
+                <li className="flex justify-between"><span>TFS Twisted Wedge:</span><span className="font-mono">250 CFM</span></li>
+              </ul>
+            </div>
+          </CardContent>
+        </Card>
+      </aside>
+
+      </div>{/* end flex row */}
+
+      <Card className="mt-8">
+        <CardHeader>
+          <CardTitle className="text-lg">Cylinder Head Airflow and Power Potential</CardTitle>
+        </CardHeader>
+        <CardContent className="prose prose-sm max-w-none text-muted-foreground space-y-3">
+          <p>
+            Cylinder head airflow is the single greatest determinant of an engine's power potential. The widely validated SuperFlow formula — HP = Peak CFM x 0.257 x Cylinders — gives a reliable estimate for naturally aspirated engines. A set of heads flowing 270 CFM per port on a V8 yields approximately 555 HP potential (270 x 0.257 x 8). Stock Vortec SBC heads flow about 218 CFM, limiting a 350 to roughly 448 HP. Aftermarket heads like the AFR 195 flow 270 CFM, and ported LS3 heads can exceed 370 CFM.
+          </p>
+          <p>
+            The exhaust-to-intake flow ratio is equally important. Target 72-80% of intake flow on the exhaust side. Below 65%, the exhaust port becomes the bottleneck — the cylinder cannot clear spent gases fast enough for the next intake charge. This shows up as poor scavenging, high exhaust temperatures, and a power plateau that no amount of intake porting will fix. Exhaust port work or larger exhaust valves are the solution.
+          </p>
+          <h3 className="text-sm font-semibold text-foreground mt-4">Match the Heads to the Cam</h3>
+          <p>
+            A head that flows 300 CFM at 0.600" lift is wasted if your cam only opens the valve 0.480". The head's peak flow potential is never reached because the valve never opens far enough. Look at the flow curve: if flow is still climbing at your cam's maximum lift, you are leaving power on the table and may benefit from a higher-lift cam or higher-ratio rockers. Conversely, if flow plateaus at 0.450" and your cam opens to 0.550", you are carrying the cost and complexity of a bigger cam profile with no airflow benefit. Port velocity matters too — target 180-220 ft/sec for street builds and 250-320 ft/sec for race applications.
+          </p>
+        </CardContent>
+      </Card>
     </div>
   );
 }

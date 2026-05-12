@@ -16,7 +16,6 @@ export default function BuildAdvisor() {
           src={`${BASE}/build-advisor-calc.html`}
           title="Engine Build Advisor"
           className="w-full h-full border-0"
-          style={{ minHeight: "800px" }}
         />
       </div>
     </>

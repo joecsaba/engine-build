@@ -645,7 +645,7 @@ export default function DieselEgtDrivePressureCalculator() {
   ];
 
   return (
-    <div className="container mx-auto py-8 px-4 max-w-6xl">
+    <div className="container mx-auto py-8 px-4 max-w-7xl">
       <SEOHead
         title="Diesel EGT & Drive Pressure Calculator"
         description="Check your diesel exhaust gas temperature against safe limits, estimate EGTs for your setup, and analyze drive pressure ratio. Pre-turbo vs post-turbo correction, platform-specific thresholds, and actionable recommendations for Cummins, Duramax, and Powerstroke."
@@ -658,6 +658,9 @@ export default function DieselEgtDrivePressureCalculator() {
         Check your pyrometer readings against safe limits, estimate EGTs for your setup, or analyze your drive pressure ratio.
         Thresholds based on Banks Power published research.
       </p>
+
+      <div className="flex flex-col xl:flex-row gap-8">
+      <div className="flex-1 min-w-0">
 
       {/* ── Mode toggle ── */}
       <div className="flex rounded-lg border overflow-hidden mb-8">
@@ -1394,6 +1397,70 @@ export default function DieselEgtDrivePressureCalculator() {
           <a href="/calculators/diesel-lift-pump" className="text-sm text-[#E85D04] hover:underline font-medium">Diesel Lift Pump &amp; Fuel System →</a>
         </div>
       </div>
+
+      </div>{/* end left column */}
+
+      <aside className="xl:w-80 shrink-0 space-y-6">
+        <Card className="sticky top-20">
+          <CardHeader className="pb-3">
+            <CardTitle className="text-base flex items-center gap-2">
+              <Info className="w-4 h-4 text-[#E85D04]" />
+              Quick Reference
+            </CardTitle>
+          </CardHeader>
+          <CardContent className="text-sm text-muted-foreground space-y-4">
+            <div>
+              <h4 className="font-semibold text-foreground mb-1">EGT Safe Zones</h4>
+              <p>Safe: {"<"}1,100°F. Caution: 1,100-1,200°F. Warning: 1,200-1,300°F. Danger: {">"}1,300°F (piston damage imminent).</p>
+            </div>
+            <div>
+              <h4 className="font-semibold text-foreground mb-1">Pre vs Post Turbo</h4>
+              <p>Post-turbo reads 200-400°F cooler than pre-turbo. Most pyro kits install post-turbo. Adjust thresholds accordingly.</p>
+            </div>
+            <div>
+              <h4 className="font-semibold text-foreground mb-1">Drive Pressure Ratio</h4>
+              <p>Exhaust backpressure / boost pressure. Ideal: {"<"}1:1. Acceptable: 1-1.5:1. Bad: {">"}2:1. High ratio = undersized turbine housing.</p>
+            </div>
+            <div className="border-t pt-3">
+              <h4 className="font-semibold text-foreground mb-1">EGT Failure Modes</h4>
+              <ul className="space-y-1 mt-1 text-xs">
+                <li className="flex justify-between"><span>1200-1300°F:</span><span>Valves glow, oil cokes</span></li>
+                <li className="flex justify-between"><span>1300-1400°F:</span><span>Piston crown yields</span></li>
+                <li className="flex justify-between"><span>1400°F+:</span><span>Catastrophic failure</span></li>
+              </ul>
+            </div>
+            <div className="border-t pt-3">
+              <h4 className="font-semibold text-foreground mb-1">EGT Reduction Methods</h4>
+              <ul className="space-y-1 mt-1 text-xs">
+                <li>Larger turbo: -100-200°F</li>
+                <li>Compounds: -200-300°F</li>
+                <li>Water-meth: -100-150°F</li>
+                <li>Reduce fuel: immediate</li>
+              </ul>
+            </div>
+          </CardContent>
+        </Card>
+      </aside>
+
+      </div>{/* end flex row */}
+
+      <Card className="mt-8">
+        <CardHeader>
+          <CardTitle className="text-lg">EGT and Drive Pressure: Monitoring Diesel Engine Health</CardTitle>
+        </CardHeader>
+        <CardContent className="prose prose-sm max-w-none text-muted-foreground space-y-3">
+          <p>
+            Exhaust gas temperature (EGT) is the single most important gauge on a performance diesel truck. It tells you whether the engine has enough air to burn the fuel you are commanding. Safe EGTs are below 1,100°F pre-turbo. Between 1,100-1,200°F the engine is working hard but within limits for short durations. At 1,200-1,300°F, exhaust valves begin to glow, oil cokes in the turbo bearing housing, and piston crowns approach their yield temperature. Above 1,300°F, piston failure is imminent — back off the throttle immediately.
+          </p>
+          <p>
+            Most aftermarket pyrometer kits install the probe post-turbo, which reads 200-400°F cooler than the actual pre-turbo temperature. This means a post-turbo reading of 1,000°F could represent 1,200-1,400°F at the exhaust manifold. Know where your probe is installed and adjust your mental thresholds accordingly. Pre-turbo is the more accurate and useful mounting location, but it requires drilling the exhaust manifold.
+          </p>
+          <h3 className="text-sm font-semibold text-foreground mt-4">Drive Pressure Ratio</h3>
+          <p>
+            Drive pressure ratio is exhaust backpressure divided by boost pressure. Ideally this ratio stays below 1:1, meaning the turbo produces more boost than the exhaust restriction it creates. A ratio above 1.5:1 means the engine is fighting against its own exhaust, reducing efficiency and increasing EGTs. A ratio above 2:1 indicates a seriously undersized turbine housing or an exhaust restriction. The fix is usually a larger turbine A/R ratio, a larger turbo, or stepping up to a compound system. Reducing drive pressure is one of the most effective ways to lower EGTs and improve fuel efficiency simultaneously.
+          </p>
+        </CardContent>
+      </Card>
     </div>
   );
 }

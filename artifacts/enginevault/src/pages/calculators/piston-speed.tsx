@@ -3,9 +3,12 @@ import { SEOHead } from "@/components/SEOHead";
 import { Input } from "@/components/ui/input";
 import { Label } from "@/components/ui/label";
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
+import { Select, SelectContent, SelectItem, SelectTrigger, SelectValue } from "@/components/ui/select";
 import { useBuildField } from "@/hooks/useBuildField";
 import { useBuildContext } from "@/context/BuildContext";
 import { BuildBanner } from "@/components/BuildBanner";
+import { Info } from "lucide-react";
+import { useManufacturers, useFamilies, useFamilyEngines } from "@/hooks/useEngineData";
 
 const refEngines = [
   { name: "Stock SBC 350 (5500 RPM redline)", stroke: 3.48, rpm: 5500, meanFpm: 3190 },
@@ -30,6 +33,25 @@ export default function PistonSpeedCalculator() {
   const [rpm, setRpm] = useBuildField("meta.targetRPM", "6500");
   const { activeBuild, setField: setBuildField } = useBuildContext();
 
+  // Engine picker state
+  const [showPicker, setShowPicker] = useState(false);
+  const [pickerMfr, setPickerMfr] = useState("");
+  const [pickerFamily, setPickerFamily] = useState("");
+  const [pickerEngine, setPickerEngine] = useState("");
+  const { manufacturers } = useManufacturers();
+  const { families } = useFamilies();
+  const { familyData } = useFamilyEngines(pickerMfr, pickerFamily);
+
+  const filteredFamilies = families.filter(f => f.manufacturer_slug === pickerMfr);
+
+  const handlePickerEngine = (engineId: string) => {
+    setPickerEngine(engineId);
+    if (!familyData) return;
+    const eng = familyData.engines.find(e => e.engine_id === engineId);
+    if (!eng) return;
+    if (eng.stroke_in) setStroke(eng.stroke_in.toFixed(3));
+  };
+
   const s = parseFloat(stroke) || 0;
   const r = parseFloat(rpm) || 0;
 
@@ -47,7 +69,7 @@ export default function PistonSpeedCalculator() {
   }, [meanFpm, activeBuild?.id]);
 
   return (
-    <div className="container mx-auto py-8 px-4 max-w-4xl">
+    <div className="container mx-auto py-8 px-4 max-w-7xl">
       <SEOHead
         title="Piston Speed Calculator | Mean & Peak FPM"
         description="Calculate mean and peak piston speed in feet per minute. Color-coded safety zones for street and race engines. Free tool for engine builders."
@@ -61,10 +83,60 @@ export default function PistonSpeedCalculator() {
       <h1 className="text-3xl font-bold mb-2">Piston Speed Calculator</h1>
       <p className="text-muted-foreground mb-8">Calculate mean and peak piston speed in feet per minute. Color-coded safety zones for street and race applications.</p>
 
+      <div className="flex flex-col xl:flex-row gap-8">
+      <div className="flex-1 min-w-0">
+
       <div className="grid grid-cols-1 md:grid-cols-2 gap-8 mb-8">
         <Card>
           <CardHeader><CardTitle>Inputs</CardTitle></CardHeader>
           <CardContent className="space-y-4">
+            <div className="mb-4 p-3 bg-gray-50 rounded-lg border">
+              <button
+                onClick={() => setShowPicker(!showPicker)}
+                className="text-sm font-medium text-[#E85D04] hover:underline"
+              >
+                {showPicker ? "Hide engine picker \u2191" : "Auto-fill from engine database \u2193"}
+              </button>
+              {showPicker && (
+                <div className="mt-3 grid grid-cols-1 sm:grid-cols-3 gap-3">
+                  <div className="space-y-1">
+                    <Label className="text-xs">Manufacturer</Label>
+                    <Select value={pickerMfr} onValueChange={v => { setPickerMfr(v); setPickerFamily(""); setPickerEngine(""); }}>
+                      <SelectTrigger><SelectValue placeholder="Select..." /></SelectTrigger>
+                      <SelectContent className="max-h-60 overflow-y-auto">
+                        {manufacturers.map(m => (
+                          <SelectItem key={m.slug} value={m.slug}>{m.name}</SelectItem>
+                        ))}
+                      </SelectContent>
+                    </Select>
+                  </div>
+                  <div className="space-y-1">
+                    <Label className="text-xs">Family</Label>
+                    <Select value={pickerFamily} onValueChange={v => { setPickerFamily(v); setPickerEngine(""); }} disabled={!pickerMfr}>
+                      <SelectTrigger><SelectValue placeholder="Select..." /></SelectTrigger>
+                      <SelectContent className="max-h-60 overflow-y-auto">
+                        {filteredFamilies.map(f => (
+                          <SelectItem key={f.family_slug} value={f.family_slug}>{f.family_name}</SelectItem>
+                        ))}
+                      </SelectContent>
+                    </Select>
+                  </div>
+                  <div className="space-y-1">
+                    <Label className="text-xs">Engine</Label>
+                    <Select value={pickerEngine} onValueChange={handlePickerEngine} disabled={!familyData}>
+                      <SelectTrigger><SelectValue placeholder="Select..." /></SelectTrigger>
+                      <SelectContent className="max-h-60 overflow-y-auto">
+                        {familyData?.engines.map(e => (
+                          <SelectItem key={e.engine_id} value={e.engine_id}>
+                            {e.displacement_ci ? `${e.displacement_ci}ci` : ""} {e.year || ""} {e.variants?.[0]?.code || e.engine_id}
+                          </SelectItem>
+                        ))}
+                      </SelectContent>
+                    </Select>
+                  </div>
+                </div>
+              )}
+            </div>
             <div className="space-y-1">
               <Label>Stroke (inches)</Label>
               <Input type="number" step="0.001" value={stroke} onChange={e => setStroke(e.target.value)} />
@@ -130,20 +202,63 @@ export default function PistonSpeedCalculator() {
         </CardContent>
       </Card>
 
+      </div>{/* end left column */}
+
+      <aside className="xl:w-80 shrink-0 space-y-6">
+        <Card className="sticky top-20">
+          <CardHeader className="pb-3">
+            <CardTitle className="text-base flex items-center gap-2">
+              <Info className="w-4 h-4 text-[#E85D04]" />
+              Quick Reference
+            </CardTitle>
+          </CardHeader>
+          <CardContent className="text-sm text-muted-foreground space-y-4">
+            <div>
+              <h4 className="font-semibold text-foreground mb-1">The Formula</h4>
+              <p>Mean FPM = (2 x Stroke x RPM) / 12. Peak speed is approximately 1.6x mean for typical rod ratios.</p>
+            </div>
+            <div>
+              <h4 className="font-semibold text-foreground mb-1">Safety Zones</h4>
+              <ul className="space-y-1 mt-1">
+                <li><span className="font-medium text-foreground">&lt; 3,500 FPM:</span> Safe for stock components</li>
+                <li><span className="font-medium text-foreground">3,500-4,500:</span> Forged pistons, quality rod bolts required</li>
+                <li><span className="font-medium text-foreground">&gt; 4,500:</span> Race-only, premium rotating assembly</li>
+              </ul>
+            </div>
+            <div>
+              <h4 className="font-semibold text-foreground mb-1">Why It Matters</h4>
+              <p>Piston speed is the real RPM limiter. Higher speed = thinner rod bearing oil film, ring flutter risk, and exponentially climbing inertial loads.</p>
+            </div>
+            <div className="border-t pt-3">
+              <h4 className="font-semibold text-foreground mb-1">Common Engines at Redline</h4>
+              <ul className="space-y-1 mt-1 text-xs">
+                <li className="flex justify-between"><span>SBC 350 @ 5500:</span><span className="font-mono">3,190 FPM</span></li>
+                <li className="flex justify-between"><span>LS1 @ 6500:</span><span className="font-mono">3,924 FPM</span></li>
+                <li className="flex justify-between"><span>LS7 @ 7100:</span><span className="font-mono">4,733 FPM</span></li>
+                <li className="flex justify-between"><span>Ford 302 @ 6500:</span><span className="font-mono">3,250 FPM</span></li>
+                <li className="flex justify-between"><span>Honda K20 @ 8000:</span><span className="font-mono">4,515 FPM</span></li>
+              </ul>
+            </div>
+          </CardContent>
+        </Card>
+      </aside>
+
+      </div>{/* end flex row */}
+
       <Card className="mt-8">
         <CardHeader>
           <CardTitle className="text-lg">Mean Piston Speed and Engine RPM Limits</CardTitle>
         </CardHeader>
         <CardContent className="prose prose-sm max-w-none text-muted-foreground space-y-3">
           <p>
-            Mean piston speed is the average velocity of the piston traveling up and down the bore, measured in feet per minute (FPM). It is calculated as 2 times stroke (in inches) times RPM, divided by 12. This number matters because it directly correlates with the mechanical stress on connecting rod bearings, piston rings, and the piston itself. As piston speed increases, rod bearing oil film thickness decreases, ring flutter becomes a risk, and inertial loads on the wrist pin and rod bolts climb dramatically. Mean piston speed is the real-world RPM limiter for any engine — not the valve train, not the heads, but the rotating assembly.
+            Mean piston speed (MPS) is the average velocity of the piston as it travels up and down the bore, calculated as (2 x Stroke x RPM) / 12, expressed in feet per minute. It is the primary factor limiting how fast an engine can safely rev. Pistons, rings, rod bearings, and wrist pins all have material limits, and exceeding safe piston speeds leads to ring flutter, bearing failure, and ultimately catastrophic connecting rod failure.
           </p>
           <p>
-            For street engines with cast pistons and stock rods, most engine builders consider 3,500 FPM a safe upper limit for sustained operation. Between 3,500 and 4,500 FPM is performance territory that demands forged pistons, quality rod bolts, and proper balancing. Above 4,500 FPM, you are in race-engine territory requiring premium components, frequent inspection intervals, and purpose-built rotating assemblies. NASCAR Cup engines routinely exceed 5,000 FPM, but those are rebuilt after every race.
+            Safe piston speed zones are well established: below 3,500 FPM is comfortable for street engines with standard components, 3,500-4,500 FPM is the performance range requiring quality forged components, and above 4,500 FPM is race-only territory demanding the best rods, pistons, and fasteners available. A Chevy 350 with its 3.480" stroke reaches 3,480 FPM at 6,000 RPM — right at the street limit. Push it to 7,000 RPM and you are at 4,060 FPM, firmly in performance territory.
           </p>
-          <h3 className="text-sm font-semibold text-foreground mt-4">Piston Speed by Engine and RPM</h3>
+          <h3 className="text-sm font-semibold text-foreground mt-4">Why Short Strokes Rev Higher</h3>
           <p>
-            A small block Chevy 350 with its 3.480" stroke hits 3,480 FPM at 6,000 RPM — right at the edge of the safe zone. At 7,000 RPM it reaches 4,060 FPM, firmly in the performance zone. The LS1 with a 3.622" stroke reaches 3,924 FPM at its 6,500 RPM redline. Short-stroke engines can safely rev higher: the Ford 302 Windsor with a 3.000" stroke only hits 3,250 FPM at 6,500 RPM. This is why short-stroke, big-bore combinations are preferred for high-RPM applications.
+            A shorter stroke means less piston travel per revolution, which directly reduces mean piston speed at any given RPM. The Ford 302 with its 3.000" stroke only reaches 3,250 FPM at 6,500 RPM — well within safe limits. This is why short-stroke engines like the 302, Honda B16, and Ferrari flat-plane V8s can safely rev to 7,000-9,000 RPM, while long-stroke torque motors like the BBC 454 (4.000" stroke) hit 4,000 FPM at just 6,000 RPM. When planning your rev limit, calculate MPS first and work backward to a safe RPM ceiling for your components.
           </p>
         </CardContent>
       </Card>

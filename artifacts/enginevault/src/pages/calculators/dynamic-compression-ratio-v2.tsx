@@ -3,11 +3,13 @@ import { SEOHead } from "@/components/SEOHead";
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 import { Input } from "@/components/ui/input";
 import { Label } from "@/components/ui/label";
+import { Select, SelectContent, SelectItem, SelectTrigger, SelectValue } from "@/components/ui/select";
 import { Slider } from "@/components/ui/slider";
 import { AlertTriangle, Info, Fuel, Activity, Gauge, Calculator, ArrowRightLeft, HelpCircle } from "lucide-react";
 import { useBuildField } from "@/hooks/useBuildField";
 import { useBuildContext } from "@/context/BuildContext";
 import { BuildBanner } from "@/components/BuildBanner";
+import { useManufacturers, useFamilies, useFamilyEngines } from "@/hooks/useEngineData";
 
 /* ─── types ─── */
 type CalcMode = "forward" | "solve_chamber" | "solve_ivc";
@@ -59,6 +61,16 @@ function pistonPositionBelowTDC(thetaDeg: number, r: number, l: number): number 
 export default function DynamicCompressionRatioV2() {
   const { activeBuild, setField: setBuildField } = useBuildContext();
 
+  // Engine picker state
+  const [showPicker, setShowPicker] = useState(false);
+  const [pickerMfr, setPickerMfr] = useState("");
+  const [pickerFamily, setPickerFamily] = useState("");
+  const [pickerEngine, setPickerEngine] = useState("");
+  const { manufacturers } = useManufacturers();
+  const { families: allFamilies } = useFamilies();
+  const { familyData } = useFamilyEngines(pickerMfr, pickerFamily);
+  const filteredFamilies = allFamilies.filter(f => f.manufacturer_slug === pickerMfr);
+
   /* ─── Mode ─── */
   const [calcMode, setCalcMode] = useState<CalcMode>("forward");
 
@@ -98,6 +110,20 @@ export default function DynamicCompressionRatioV2() {
 
   /* ─── Cam advance slider ─── */
   const [camAdvanceSlider, setCamAdvanceSlider] = useState(0);
+
+  /* ─── Engine picker handler ─── */
+  const handlePickerEngine = (engineId: string) => {
+    setPickerEngine(engineId);
+    if (!familyData) return;
+    const eng = familyData.engines.find(e => e.engine_id === engineId);
+    if (!eng) return;
+    if (eng.bore_in) setBore(eng.bore_in.toFixed(3));
+    if (eng.stroke_in) setStroke(eng.stroke_in.toFixed(3));
+    if (eng.rod_length_in) setRodLength(eng.rod_length_in.toFixed(3));
+    if (eng.head?.head_cc) setChamberVolume(String(eng.head.head_cc));
+    if (eng.head?.head_gasket_thickness) setGasketThick(eng.head.head_gasket_thickness.toFixed(3));
+    if (eng.compression_ratio) setKnownStaticCR(eng.compression_ratio.toFixed(1));
+  };
 
   /* ─── Reverse-solve target ─── */
   const [targetDCR, setTargetDCR] = useState("8.0");
@@ -245,7 +271,7 @@ export default function DynamicCompressionRatioV2() {
      RENDER
      ═══════════════════════════════════════════════════════════ */
   return (
-    <div className="container mx-auto py-8 px-4 max-w-5xl">
+    <div className="container mx-auto py-8 px-4 max-w-7xl">
       <SEOHead
         title="Compression Ratio Calculator | Static & Dynamic CR"
         description="Calculate static and dynamic compression ratio with octane recommendations. Three IVC methods, cranking pressure, reverse-solve mode, and cam advance slider."
@@ -262,6 +288,10 @@ export default function DynamicCompressionRatioV2() {
       <p className="text-muted-foreground mb-6">
         Static CR from your parts, dynamic CR from your cam, cranking pressure, and octane recommendations — all in one place.
       </p>
+
+      <div className="flex flex-col xl:flex-row gap-8">
+      {/* ─── Left column: Calculator ─── */}
+      <div className="flex-1 min-w-0">
 
       {/* ─── MODE SELECTOR ─── */}
       <div className="mb-6">
@@ -331,6 +361,53 @@ export default function DynamicCompressionRatioV2() {
           <Card>
             <CardHeader><CardTitle>Engine Dimensions</CardTitle></CardHeader>
             <CardContent className="space-y-3">
+              <div className="mb-4 p-3 bg-gray-50 rounded-lg border">
+                <button
+                  onClick={() => setShowPicker(!showPicker)}
+                  className="text-sm font-medium text-[#E85D04] hover:underline"
+                >
+                  {showPicker ? "Hide engine picker \u2191" : "Auto-fill from engine database \u2193"}
+                </button>
+                {showPicker && (
+                  <div className="mt-3 grid grid-cols-1 sm:grid-cols-3 gap-3">
+                    <div className="space-y-1">
+                      <Label className="text-xs">Manufacturer</Label>
+                      <Select value={pickerMfr} onValueChange={v => { setPickerMfr(v); setPickerFamily(""); setPickerEngine(""); }}>
+                        <SelectTrigger><SelectValue placeholder="Select..." /></SelectTrigger>
+                        <SelectContent className="max-h-60 overflow-y-auto">
+                          {manufacturers.map(m => (
+                            <SelectItem key={m.slug} value={m.slug}>{m.name}</SelectItem>
+                          ))}
+                        </SelectContent>
+                      </Select>
+                    </div>
+                    <div className="space-y-1">
+                      <Label className="text-xs">Family</Label>
+                      <Select value={pickerFamily} onValueChange={v => { setPickerFamily(v); setPickerEngine(""); }} disabled={!pickerMfr}>
+                        <SelectTrigger><SelectValue placeholder="Select..." /></SelectTrigger>
+                        <SelectContent className="max-h-60 overflow-y-auto">
+                          {filteredFamilies.map(f => (
+                            <SelectItem key={f.family_slug} value={f.family_slug}>{f.family_name}</SelectItem>
+                          ))}
+                        </SelectContent>
+                      </Select>
+                    </div>
+                    <div className="space-y-1">
+                      <Label className="text-xs">Engine</Label>
+                      <Select value={pickerEngine} onValueChange={handlePickerEngine} disabled={!familyData}>
+                        <SelectTrigger><SelectValue placeholder="Select..." /></SelectTrigger>
+                        <SelectContent className="max-h-60 overflow-y-auto">
+                          {familyData?.engines.map(e => (
+                            <SelectItem key={e.engine_id} value={e.engine_id}>
+                              {e.displacement_ci ? `${e.displacement_ci}ci` : ""} {e.year || ""} {e.variants?.[0]?.code || e.engine_id}
+                            </SelectItem>
+                          ))}
+                        </SelectContent>
+                      </Select>
+                    </div>
+                  </div>
+                )}
+              </div>
               <Field label="Bore (inches)" value={bore} onChange={setBore} step="0.001" hint="Measured or from piston box. Overbores: add to stock (e.g. 4.000 + 0.030 = 4.030)." />
               <Field label="Stroke (inches)" value={stroke} onChange={setStroke} step="0.001" hint="Stock or from crank specs. Common SBC: 3.480 (350), 3.750 (383)." />
               <Field label="Connecting Rod Length (inches)" value={rodLength} onChange={setRodLength} step="0.001" hint="Stock SBC: 5.700, LS: 6.098, SBF 302: 5.090, BBC: 6.135. On aftermarket rod box." />
@@ -699,28 +776,59 @@ export default function DynamicCompressionRatioV2() {
         </div>
       </div>
 
-      {/* ═══════════════════════════════════════════════
-         EDUCATIONAL SECTION
-         ═══════════════════════════════════════════════ */}
-      <Card className="mt-8">
-        <CardHeader>
-          <CardTitle className="text-lg">Understanding Static & Dynamic Compression Ratio</CardTitle>
-        </CardHeader>
-        <CardContent className="prose prose-sm max-w-none text-muted-foreground space-y-3">
-          <p>
-            Static compression ratio is a pure geometric calculation — the total cylinder volume at BDC divided by the clearance volume at TDC. It depends only on bore, stroke, chamber volume, gasket thickness, piston dome/dish, and deck clearance. Static CR tells you nothing about the camshaft. It's the number stamped on the spec sheet, and it's what most people mean when they say "compression ratio." But it's only half the story.
-          </p>
-          <p>
-            Dynamic compression ratio (DCR) accounts for the fact that the intake valve stays open past bottom dead center. As the piston begins its compression stroke, the valve is still off its seat — some of the intake charge flows back out through the open valve into the manifold. Compression doesn't truly begin until the valve seats. The bigger the cam (longer duration), the later the valve closes, and the more charge escapes. A cam with IVC at 80° ABDC loses significantly more charge than a mild cam closing at 55° ABDC. The effective stroke — the piston travel that actually compresses the mixture — can be 20–30% shorter than the physical stroke on a big cam.
-          </p>
-          <p>
-            This is why cam selection and compression ratio are inseparable decisions. A mild cam on a 10:1 static CR engine might produce a DCR around 8.5:1, requiring 93 octane. The same 10:1 engine with an aggressive cam drops to 7.5:1 DCR and runs safely on 87. Experienced builders exploit this intentionally — they pick aggressive cam profiles to shift DCR into the pump-gas-friendly range (7.5–8.5:1) while keeping static CR high for peak power. Cam advance and retard fine-tune it further: advancing the cam 4° raises DCR by roughly 0.2–0.3 points.
-          </p>
-          <p>
-            Everything above applies to naturally aspirated engines only. Under boost, DCR becomes unreliable because intake manifold pressure is no longer atmospheric. Even 10 PSI of boost can effectively double the cylinder pressure the engine sees at cranking speed. For boosted engines, detonation risk is dominated by manifold pressure, intake air temperature, and intercooler efficiency — not cam timing. Use effective-compression-vs-boost reference tables matched to your fuel octane and expected boost level.
-          </p>
-        </CardContent>
-      </Card>
+      </div>{/* end left column */}
+
+      {/* ─── Right column: Reference sidebar ─── */}
+      <aside className="xl:w-80 shrink-0 space-y-6">
+        <Card className="sticky top-20">
+          <CardHeader className="pb-3">
+            <CardTitle className="text-base flex items-center gap-2">
+              <Info className="w-4 h-4 text-[#E85D04]" />
+              Quick Reference
+            </CardTitle>
+          </CardHeader>
+          <CardContent className="text-sm text-muted-foreground space-y-4">
+            <div>
+              <h4 className="font-semibold text-foreground mb-1">Static vs Dynamic CR</h4>
+              <p>Static CR is geometry — bore, stroke, chamber volume. Dynamic CR accounts for when the intake valve actually closes. The cam determines how much charge stays in the cylinder.</p>
+            </div>
+            <div>
+              <h4 className="font-semibold text-foreground mb-1">Why DCR Matters More</h4>
+              <p>A 10:1 static CR engine with a big cam might only have 7.5:1 DCR — perfectly safe on 87 octane. The same 10:1 with a mild cam hits 8.5:1 DCR and needs 93. The cam is the variable.</p>
+            </div>
+            <div>
+              <h4 className="font-semibold text-foreground mb-1">Pump Gas DCR Targets</h4>
+              <ul className="space-y-1 mt-1">
+                <li className="flex justify-between"><span>87 octane:</span><span className="font-mono font-medium">≤ 7.5:1</span></li>
+                <li className="flex justify-between"><span>91 octane:</span><span className="font-mono font-medium">7.5–8.0:1</span></li>
+                <li className="flex justify-between"><span>93 octane:</span><span className="font-mono font-medium">8.0–8.5:1</span></li>
+                <li className="flex justify-between"><span>Race fuel:</span><span className="font-mono font-medium">8.5+</span></li>
+              </ul>
+            </div>
+            <div>
+              <h4 className="font-semibold text-foreground mb-1">Cam Advance Effect</h4>
+              <p>Advancing the cam 4° raises DCR by ~0.2–0.3 points. Retarding lowers it. This is why cam degreeing matters for detonation tuning.</p>
+            </div>
+            <div>
+              <h4 className="font-semibold text-foreground mb-1">Boosted Engines</h4>
+              <p>Under boost, DCR becomes less useful. Manifold pressure, intake temp, and intercooler efficiency dominate detonation risk — not cam timing.</p>
+            </div>
+            <div className="border-t pt-3">
+              <h4 className="font-semibold text-foreground mb-1">Common Static CR</h4>
+              <ul className="space-y-1 mt-1 text-xs">
+                <li className="flex justify-between"><span>Stock SBC 350 (76cc):</span><span className="font-mono">8.5:1</span></li>
+                <li className="flex justify-between"><span>Stock SBC 350 (64cc):</span><span className="font-mono">10.8:1</span></li>
+                <li className="flex justify-between"><span>LS1 5.7L:</span><span className="font-mono">10.1:1</span></li>
+                <li className="flex justify-between"><span>LS3 6.2L:</span><span className="font-mono">10.7:1</span></li>
+                <li className="flex justify-between"><span>Ford 302:</span><span className="font-mono">9.0:1</span></li>
+                <li className="flex justify-between"><span>383 Stroker (64cc):</span><span className="font-mono">10.5:1</span></li>
+              </ul>
+            </div>
+          </CardContent>
+        </Card>
+      </aside>
+
+      </div>{/* end flex row */}
     </div>
   );
 }

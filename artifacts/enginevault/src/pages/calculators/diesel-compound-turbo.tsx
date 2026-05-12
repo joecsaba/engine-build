@@ -4,7 +4,7 @@ import { Input } from "@/components/ui/input";
 import { Label } from "@/components/ui/label";
 import { Card, CardContent, CardHeader, CardTitle, CardDescription } from "@/components/ui/card";
 import { Select, SelectContent, SelectItem, SelectTrigger, SelectValue } from "@/components/ui/select";
-import { ChevronDown } from "lucide-react";
+import { ChevronDown, Info } from "lucide-react";
 
 // ── Types ───────────────────────────────────────────────────────────────────────
 
@@ -474,7 +474,7 @@ export default function DieselCompoundTurboCalculator() {
   const appDef = APPLICATIONS[application];
 
   return (
-    <div className="container mx-auto py-8 px-4 max-w-6xl">
+    <div className="container mx-auto py-8 px-4 max-w-7xl">
       <SEOHead
         title="Diesel Compound Turbo Sizing Calculator"
         description="Size compound (twin) turbo setups for diesel engines. Match BorgWarner S300/S400 and Holset turbos with pressure ratio split, drive pressure, and intercooler calculations for Cummins, Duramax, and Powerstroke platforms."
@@ -483,6 +483,9 @@ export default function DieselCompoundTurboCalculator() {
       />
       <h1 className="text-3xl font-bold mb-2">Diesel Compound Turbo Sizing Calculator</h1>
       <p className="text-muted-foreground mb-8">Size compound (twin) turbo setups for diesel engines. Match your primary and atmospheric turbos with real BorgWarner S-series and Holset compressor data.</p>
+
+      <div className="flex flex-col xl:flex-row gap-8">
+      <div className="flex-1 min-w-0">
 
       <div className="grid grid-cols-1 lg:grid-cols-2 gap-8">
         {/* ──────────── LEFT COLUMN: INPUTS ──────────── */}
@@ -1134,6 +1137,70 @@ export default function DieselCompoundTurboCalculator() {
         {" · "}
         <a href="/calculators/afr-lambda" className="text-primary underline hover:text-[#E85D04]">AFR / Lambda Converter</a>
       </div>
+
+      </div>{/* end left column */}
+
+      <aside className="xl:w-80 shrink-0 space-y-6">
+        <Card className="sticky top-20">
+          <CardHeader className="pb-3">
+            <CardTitle className="text-base flex items-center gap-2">
+              <Info className="w-4 h-4 text-[#E85D04]" />
+              Quick Reference
+            </CardTitle>
+          </CardHeader>
+          <CardContent className="text-sm text-muted-foreground space-y-4">
+            <div>
+              <h4 className="font-semibold text-foreground mb-1">How Compounds Work</h4>
+              <p>Two turbos in series: atmospheric (LP) compresses to mid-pressure, primary (HP) compresses to final boost. Each turbo runs a lower, more efficient pressure ratio.</p>
+            </div>
+            <div>
+              <h4 className="font-semibold text-foreground mb-1">Drive Pressure Ratio</h4>
+              <p>Ideal: {"<"}1:1 (exhaust BP vs boost). Acceptable: 1.0-1.5:1. Dangerous: {">"}2:1. Size up turbine housings if ratio is high.</p>
+            </div>
+            <div>
+              <h4 className="font-semibold text-foreground mb-1">S300/S400 Naming</h4>
+              <p>Last two digits = compressor inducer diameter in mm. S366 = 66mm wheel on S300 frame. S475 = 75mm wheel on S400 frame.</p>
+            </div>
+            <div className="border-t pt-3">
+              <h4 className="font-semibold text-foreground mb-1">Typical Compound Combos</h4>
+              <ul className="space-y-1 mt-1 text-xs">
+                <li className="flex justify-between"><span>500-650 HP:</span><span className="font-mono">S362 / S467</span></li>
+                <li className="flex justify-between"><span>650-800 HP:</span><span className="font-mono">S366 / S475</span></li>
+                <li className="flex justify-between"><span>800-1000 HP:</span><span className="font-mono">S369 / S480</span></li>
+                <li className="flex justify-between"><span>1000+ HP:</span><span className="font-mono">S372 / S488</span></li>
+              </ul>
+            </div>
+            <div className="border-t pt-3">
+              <h4 className="font-semibold text-foreground mb-1">Boost Ranges</h4>
+              <ul className="space-y-1 mt-1 text-xs">
+                <li className="flex justify-between"><span>Tow compound:</span><span className="font-mono">40-55 PSI</span></li>
+                <li className="flex justify-between"><span>Street perf:</span><span className="font-mono">55-70 PSI</span></li>
+                <li className="flex justify-between"><span>Race:</span><span className="font-mono">70-100+ PSI</span></li>
+              </ul>
+            </div>
+          </CardContent>
+        </Card>
+      </aside>
+
+      </div>{/* end flex row */}
+
+      <Card className="mt-8">
+        <CardHeader>
+          <CardTitle className="text-lg">Diesel Compound Turbo Systems</CardTitle>
+        </CardHeader>
+        <CardContent className="prose prose-sm max-w-none text-muted-foreground space-y-3">
+          <p>
+            Compound turbo systems use two turbochargers in series — a smaller high-pressure (HP) turbo feeds into a larger low-pressure (LP) atmospheric turbo. Atmospheric air enters the LP compressor first, gets partially compressed, then enters the HP compressor for final boost. This split arrangement means each turbo only needs to produce a fraction of the total pressure ratio, allowing both to operate in their most efficient zones on the compressor map. The result is faster spool than a single large turbo, higher total boost capability, and lower charge air temperatures.
+          </p>
+          <p>
+            The naming convention tells you the wheel sizes: an S362/S475 compound has a 62mm HP compressor wheel on an S300-frame turbo paired with a 75mm LP compressor wheel on an S400 frame. This combination supports 500-650 HP with excellent spool. For 650-800 HP, an S366/S475 is the common choice. Above 800 HP, S369/S480 or larger combinations are typical. The HP turbo does the heavy lifting at low RPM, and the LP turbo takes over as exhaust energy increases at higher RPM.
+          </p>
+          <h3 className="text-sm font-semibold text-foreground mt-4">Drive Pressure and Efficiency</h3>
+          <p>
+            Drive pressure ratio — exhaust backpressure divided by boost pressure — is the key efficiency metric for any turbo system. Compounds excel here because the exhaust energy passes through two turbine stages, extracting more work from the exhaust before it exits the tailpipe. A well-matched compound system maintains a drive pressure ratio below 1:1, meaning boost pressure exceeds exhaust backpressure. A single turbo at the same power level might show a 1.5:1 or 2:1 drive pressure ratio, which means the engine is working harder to push exhaust out than the turbo is pushing air in.
+          </p>
+        </CardContent>
+      </Card>
     </div>
   );
 }

@@ -4,7 +4,7 @@ import { Input } from "@/components/ui/input";
 import { Label } from "@/components/ui/label";
 import { Card, CardContent, CardHeader, CardTitle, CardDescription } from "@/components/ui/card";
 import { Select, SelectContent, SelectItem, SelectTrigger, SelectValue } from "@/components/ui/select";
-import { ChevronDown } from "lucide-react";
+import { ChevronDown, Info } from "lucide-react";
 
 // ── Types ───────────────────────────────────────────────────────────────────────
 
@@ -536,7 +536,7 @@ export default function DieselSmokeLambdaCalculator() {
   // ── JSX ───────────────────────────────────────────────────────────────────────
 
   return (
-    <div className="container mx-auto py-8 px-4 max-w-6xl">
+    <div className="container mx-auto py-8 px-4 max-w-7xl">
       <SEOHead
         title="Diesel Smoke Limit / AFR-Lambda Calculator"
         description="Diesel-specific lambda and AFR calculator with smoke prediction, boost-to-fuel balance analysis, and operating range assessment. For Cummins, Duramax, and Powerstroke diesel engines."
@@ -545,6 +545,9 @@ export default function DieselSmokeLambdaCalculator() {
       />
       <h1 className="text-3xl font-bold mb-2">Diesel Smoke Limit / AFR-Lambda Calculator</h1>
       <p className="text-muted-foreground mb-6">Diesel-specific lambda assessment, smoke prediction, and boost-to-fuel balance. Diesel is NOT gasoline \u2014 lambda 1.3 is a good power target, not 0.85.</p>
+
+      <div className="flex flex-col xl:flex-row gap-8">
+      <div className="flex-1 min-w-0">
 
       {/* ── Mode Toggle ── */}
       <div className="flex flex-col sm:flex-row rounded-lg border overflow-hidden mb-8">
@@ -1260,6 +1263,71 @@ export default function DieselSmokeLambdaCalculator() {
         {" \u00B7 "}
         <a href="/calculators/diesel-injector-nozzle-pop-pressure" className="text-primary underline hover:text-[#E85D04]">Diesel Nozzle & Pop Pressure</a>
       </div>
+
+      </div>{/* end left column */}
+
+      <aside className="xl:w-80 shrink-0 space-y-6">
+        <Card className="sticky top-20">
+          <CardHeader className="pb-3">
+            <CardTitle className="text-base flex items-center gap-2">
+              <Info className="w-4 h-4 text-[#E85D04]" />
+              Quick Reference
+            </CardTitle>
+          </CardHeader>
+          <CardContent className="text-sm text-muted-foreground space-y-4">
+            <div>
+              <h4 className="font-semibold text-foreground mb-1">Diesel vs Gas Lambda</h4>
+              <p>Diesel ALWAYS runs lean (excess air). Lambda 1.3 = good power. Lambda 0.85 (gas sweet spot) would destroy a diesel engine.</p>
+            </div>
+            <div>
+              <h4 className="font-semibold text-foreground mb-1">Smoke Threshold</h4>
+              <p>Visible smoke starts around lambda 1.2-1.3. Below 1.2 = heavy black smoke with no additional power. Below 1.0 = catastrophic over-fueling.</p>
+            </div>
+            <div>
+              <h4 className="font-semibold text-foreground mb-1">Wideband on Diesel</h4>
+              <p>Normal idle: lambda 3.0-6.0+. Useful data is under load: lambda 1.1-1.8. Most widebands read "Lean" or "---" at diesel idle.</p>
+            </div>
+            <div className="border-t pt-3">
+              <h4 className="font-semibold text-foreground mb-1">Diesel Lambda Zones</h4>
+              <ul className="space-y-1 mt-1 text-xs">
+                <li className="flex justify-between"><span>{">"} 2.0:</span><span>Cruise / light load</span></li>
+                <li className="flex justify-between"><span>1.5 - 2.0:</span><span>Moderate load</span></li>
+                <li className="flex justify-between"><span>1.3 - 1.5:</span><span>Full power, clean</span></li>
+                <li className="flex justify-between"><span>1.1 - 1.3:</span><span>Max power, light haze</span></li>
+                <li className="flex justify-between"><span>{"<"} 1.1:</span><span>Over-fueled, smoke</span></li>
+              </ul>
+            </div>
+            <div className="border-t pt-3">
+              <h4 className="font-semibold text-foreground mb-1">Diesel AFR Equivalents</h4>
+              <ul className="space-y-1 mt-1 text-xs">
+                <li className="flex justify-between"><span>Lambda 1.3:</span><span className="font-mono">AFR 18.9:1</span></li>
+                <li className="flex justify-between"><span>Lambda 1.5:</span><span className="font-mono">AFR 21.8:1</span></li>
+                <li className="flex justify-between"><span>Lambda 2.0:</span><span className="font-mono">AFR 29.0:1</span></li>
+              </ul>
+            </div>
+          </CardContent>
+        </Card>
+      </aside>
+
+      </div>{/* end flex row */}
+
+      <Card className="mt-8">
+        <CardHeader>
+          <CardTitle className="text-lg">Diesel Smoke, Lambda, and Air-Fuel Balance</CardTitle>
+        </CardHeader>
+        <CardContent className="prose prose-sm max-w-none text-muted-foreground space-y-3">
+          <p>
+            Diesel engines always run lean — they rely on excess air to prevent soot formation and control combustion temperatures. Unlike gasoline engines that target Lambda 1.0 (stoichiometric) at idle and cruise, a diesel at idle runs at Lambda 3.0-6.0 or higher, with useful tuning data only available under load where Lambda drops to the 1.1-1.8 range. A Lambda of 1.3 under full load represents clean, efficient combustion with maximum power and minimal smoke. Below Lambda 1.2, visible black smoke appears as the fuel overwhelms the available air supply.
+          </p>
+          <p>
+            Wideband oxygen sensors work the same on diesel as on gasoline — they measure exhaust oxygen and calculate Lambda. However, most wideband controllers display the reading on a gasoline AFR scale (Lambda x 14.7), which can be confusing. A wideband reading of "18.9:1" on a diesel does not mean the same thing as 18.9:1 on a gas engine. It means Lambda 1.3, which is optimal full-load diesel territory. The actual diesel AFR at Lambda 1.3 is approximately 18.9:1 using diesel's stoichiometric ratio of 14.5:1 — coincidentally close to the gas-scale number in this case.
+          </p>
+          <h3 className="text-sm font-semibold text-foreground mt-4">Smoke Is Wasted Power</h3>
+          <p>
+            Black smoke is unburned fuel — every particle of soot leaving the tailpipe is energy that was not converted to work. Below Lambda 1.1, adding more fuel produces only smoke, heat, and higher EGTs with zero additional power. The path to more diesel power is always more air first (bigger turbo, compounds, or better intercooling), then more fuel to match. Fuel without air is smoke. Air without fuel is a missed opportunity. The balance point — Lambda 1.2-1.3 under full load — is where diesel engines make clean, reliable, repeatable power.
+          </p>
+        </CardContent>
+      </Card>
     </div>
   );
 }

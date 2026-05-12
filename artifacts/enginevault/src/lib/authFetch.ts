@@ -17,7 +17,9 @@ function getAuthToken(): Promise<string | null> {
   });
 }
 
-/** Fetch wrapper that attaches the Cognito auth token. */
+const API_BASE = "https://uzgrsju1d1.execute-api.us-east-1.amazonaws.com";
+
+/** Fetch wrapper that attaches the Cognito auth token and routes /api/ calls to API Gateway. */
 export async function authFetch(url: string, init?: RequestInit): Promise<Response> {
   const token = await getAuthToken();
   const headers: Record<string, string> = {
@@ -27,5 +29,7 @@ export async function authFetch(url: string, init?: RequestInit): Promise<Respon
   if (token) {
     headers["Authorization"] = `Bearer ${token}`;
   }
-  return fetch(url, { ...init, headers });
+  // Route /api/ calls to API Gateway
+  const fullUrl = url.startsWith("/api/") ? `${API_BASE}${url}` : url;
+  return fetch(fullUrl, { ...init, headers });
 }

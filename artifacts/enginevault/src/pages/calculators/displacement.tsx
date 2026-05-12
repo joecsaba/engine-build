@@ -1,17 +1,41 @@
-import { useEffect } from "react";
+import { useState, useEffect } from "react";
 import { SEOHead } from "@/components/SEOHead";
 import { Input } from "@/components/ui/input";
 import { Label } from "@/components/ui/label";
 import { Card, CardContent, CardHeader, CardTitle, CardDescription } from "@/components/ui/card";
+import { Select, SelectContent, SelectItem, SelectTrigger, SelectValue } from "@/components/ui/select";
 import { useBuildField } from "@/hooks/useBuildField";
 import { useBuildContext } from "@/context/BuildContext";
 import { BuildBanner } from "@/components/BuildBanner";
+import { Info } from "lucide-react";
+import { useManufacturers, useFamilies, useFamilyEngines } from "@/hooks/useEngineData";
 
 export default function DisplacementCalculator() {
   const [bore, setBore] = useBuildField("shortBlock.bore", "4.000");
   const [stroke, setStroke] = useBuildField("shortBlock.stroke", "3.480");
   const [cylinders, setCylinders] = useBuildField("shortBlock.cylinders", "8");
   const { activeBuild, setField } = useBuildContext();
+
+  // Engine picker state
+  const [showPicker, setShowPicker] = useState(false);
+  const [pickerMfr, setPickerMfr] = useState("");
+  const [pickerFamily, setPickerFamily] = useState("");
+  const [pickerEngine, setPickerEngine] = useState("");
+  const { manufacturers } = useManufacturers();
+  const { families } = useFamilies();
+  const { familyData } = useFamilyEngines(pickerMfr, pickerFamily);
+
+  const filteredFamilies = families.filter(f => f.manufacturer_slug === pickerMfr);
+
+  const handlePickerEngine = (engineId: string) => {
+    setPickerEngine(engineId);
+    if (!familyData) return;
+    const eng = familyData.engines.find(e => e.engine_id === engineId);
+    if (!eng) return;
+    if (eng.bore_in) setBore(eng.bore_in.toFixed(3));
+    if (eng.stroke_in) setStroke(eng.stroke_in.toFixed(3));
+    if (eng.num_cylinders) setCylinders(String(eng.num_cylinders));
+  };
 
   const b = parseFloat(bore) || 0;
   const s = parseFloat(stroke) || 0;
@@ -30,7 +54,7 @@ export default function DisplacementCalculator() {
   }, [cubicInches, activeBuild?.id]);
 
   return (
-    <div className="container mx-auto py-8 px-4 max-w-3xl">
+    <div className="container mx-auto py-8 px-4 max-w-7xl">
       <SEOHead
         title="Engine Displacement Calculator | Cubic Inches, CC & Liters"
         description="Calculate engine displacement in cubic inches, CCs, and liters from bore, stroke, and cylinder count. Free tool for engine builders."
@@ -44,6 +68,9 @@ export default function DisplacementCalculator() {
       <h1 className="text-3xl font-bold mb-2">Engine Displacement Calculator</h1>
       <p className="text-muted-foreground mb-8">Calculate engine displacement in cubic inches, CCs, and liters.</p>
 
+      <div className="flex flex-col xl:flex-row gap-8">
+      <div className="flex-1 min-w-0">
+
       <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
         <Card>
           <CardHeader>
@@ -51,6 +78,53 @@ export default function DisplacementCalculator() {
             <CardDescription>Enter your bore, stroke, and cylinder count.</CardDescription>
           </CardHeader>
           <CardContent className="space-y-4">
+            <div className="mb-4 p-3 bg-gray-50 rounded-lg border">
+              <button
+                onClick={() => setShowPicker(!showPicker)}
+                className="text-sm font-medium text-[#E85D04] hover:underline"
+              >
+                {showPicker ? "Hide engine picker \u2191" : "Auto-fill from engine database \u2193"}
+              </button>
+              {showPicker && (
+                <div className="mt-3 grid grid-cols-1 sm:grid-cols-3 gap-3">
+                  <div className="space-y-1">
+                    <Label className="text-xs">Manufacturer</Label>
+                    <Select value={pickerMfr} onValueChange={v => { setPickerMfr(v); setPickerFamily(""); setPickerEngine(""); }}>
+                      <SelectTrigger><SelectValue placeholder="Select..." /></SelectTrigger>
+                      <SelectContent className="max-h-60 overflow-y-auto">
+                        {manufacturers.map(m => (
+                          <SelectItem key={m.slug} value={m.slug}>{m.name}</SelectItem>
+                        ))}
+                      </SelectContent>
+                    </Select>
+                  </div>
+                  <div className="space-y-1">
+                    <Label className="text-xs">Family</Label>
+                    <Select value={pickerFamily} onValueChange={v => { setPickerFamily(v); setPickerEngine(""); }} disabled={!pickerMfr}>
+                      <SelectTrigger><SelectValue placeholder="Select..." /></SelectTrigger>
+                      <SelectContent className="max-h-60 overflow-y-auto">
+                        {filteredFamilies.map(f => (
+                          <SelectItem key={f.family_slug} value={f.family_slug}>{f.family_name}</SelectItem>
+                        ))}
+                      </SelectContent>
+                    </Select>
+                  </div>
+                  <div className="space-y-1">
+                    <Label className="text-xs">Engine</Label>
+                    <Select value={pickerEngine} onValueChange={handlePickerEngine} disabled={!familyData}>
+                      <SelectTrigger><SelectValue placeholder="Select..." /></SelectTrigger>
+                      <SelectContent className="max-h-60 overflow-y-auto">
+                        {familyData?.engines.map(e => (
+                          <SelectItem key={e.engine_id} value={e.engine_id}>
+                            {e.displacement_ci ? `${e.displacement_ci}ci` : ""} {e.year || ""} {e.variants?.[0]?.code || e.engine_id}
+                          </SelectItem>
+                        ))}
+                      </SelectContent>
+                    </Select>
+                  </div>
+                </div>
+              )}
+            </div>
             <div className="space-y-2">
               <Label>Bore (inches)</Label>
               <Input type="number" step="0.001" value={bore} onChange={(e) => setBore(e.target.value)} />
@@ -87,20 +161,61 @@ export default function DisplacementCalculator() {
         </Card>
       </div>
 
+      </div>{/* end left column */}
+
+      <aside className="xl:w-80 shrink-0 space-y-6">
+        <Card className="sticky top-20">
+          <CardHeader className="pb-3">
+            <CardTitle className="text-base flex items-center gap-2">
+              <Info className="w-4 h-4 text-[#E85D04]" />
+              Quick Reference
+            </CardTitle>
+          </CardHeader>
+          <CardContent className="text-sm text-muted-foreground space-y-4">
+            <div>
+              <h4 className="font-semibold text-foreground mb-1">The Formula</h4>
+              <p>Bore² x Stroke x 0.7854 x Cylinders = Displacement (cubic inches). Divide by 61.024 for liters.</p>
+            </div>
+            <div>
+              <h4 className="font-semibold text-foreground mb-1">Why It Matters</h4>
+              <p>Displacement determines airflow needs, cam selection, fuel system sizing, and power potential. It's the starting point for every build decision.</p>
+            </div>
+            <div>
+              <h4 className="font-semibold text-foreground mb-1">Overbore Effect</h4>
+              <p>Boring +0.030" on a 4.000" bore adds ~5 cubic inches on a V8. A 383 stroker uses +0.030" bore with a 3.750" stroke crank.</p>
+            </div>
+            <div className="border-t pt-3">
+              <h4 className="font-semibold text-foreground mb-1">Common Engines</h4>
+              <ul className="space-y-1 mt-1 text-xs">
+                <li className="flex justify-between"><span>SBC 350:</span><span className="font-mono">4.000" x 3.480"</span></li>
+                <li className="flex justify-between"><span>383 Stroker:</span><span className="font-mono">4.030" x 3.750"</span></li>
+                <li className="flex justify-between"><span>LS1 5.7L:</span><span className="font-mono">3.898" x 3.622"</span></li>
+                <li className="flex justify-between"><span>LS3 6.2L:</span><span className="font-mono">4.065" x 3.622"</span></li>
+                <li className="flex justify-between"><span>Ford 302:</span><span className="font-mono">4.000" x 3.000"</span></li>
+                <li className="flex justify-between"><span>BBC 454:</span><span className="font-mono">4.251" x 4.000"</span></li>
+                <li className="flex justify-between"><span>Mopar 440:</span><span className="font-mono">4.320" x 3.750"</span></li>
+              </ul>
+            </div>
+          </CardContent>
+        </Card>
+      </aside>
+
+      </div>{/* end flex row */}
+
       <Card className="mt-8">
         <CardHeader>
           <CardTitle className="text-lg">Understanding Engine Displacement</CardTitle>
         </CardHeader>
         <CardContent className="prose prose-sm max-w-none text-muted-foreground space-y-3">
           <p>
-            Engine displacement is the total swept volume of all pistons in an engine, calculated from bore diameter, stroke length, and cylinder count. It is the single most fundamental specification in any engine build because it directly determines the engine's airflow requirements, camshaft selection, fuel system sizing, and ultimately its power potential. The formula is simple: bore squared times stroke times 0.7854 (pi/4) times the number of cylinders.
+            Engine displacement is the total volume swept by all pistons during one complete revolution of the crankshaft. It is the single most fundamental measurement of an engine and determines airflow requirements, fuel system sizing, cam selection, and ultimately power potential. The formula is straightforward: Bore² x Stroke x 0.7854 x Cylinders. The 0.7854 constant is simply pi/4, converting the bore diameter into the area of the cylinder.
           </p>
           <p>
-            For engine builders, displacement matters most when planning overbores and stroker combinations. A standard small block Chevy 350 uses a 4.000" bore and 3.480" stroke across 8 cylinders for 349.8 cubic inches. Boring that block +0.030" to 4.030" increases displacement to 355 cubic inches. A common 383 stroker uses that same +0.030" overbore with a 3.750" stroke crankshaft, yielding 383 cubic inches from the same block. On the LS platform, the LS1 runs a 3.898" bore and 3.622" stroke for 346 cubic inches (5.7L), while the LS3 opens the bore to 4.065" for 376 cubic inches (6.2L).
+            For example, the classic Chevy small block 350 uses a 4.000" bore and 3.480" stroke across 8 cylinders, yielding 349.8 cubic inches. The LS1, despite being called a "5.7 liter," actually displaces 346 cubic inches (3.898" bore x 3.622" stroke). Meanwhile, Ford's venerable 302 uses a 4.000" bore with a shorter 3.000" stroke, and the BBC 454 goes big with a 4.251" bore and 4.000" stroke. The Mopar 440 splits the difference at 4.320" x 3.750".
           </p>
-          <h3 className="text-sm font-semibold text-foreground mt-4">Common Displacement Reference</h3>
+          <h3 className="text-sm font-semibold text-foreground mt-4">Overbores and Stroker Combos</h3>
           <p>
-            Ford 302 Windsor: 4.000" x 3.000" = 302ci. Ford 351W: 4.000" x 3.500" = 351ci. BBC 454: 4.251" x 4.000" = 454ci. Mopar 440: 4.320" x 3.750" = 440ci. Displacement in liters is cubic inches divided by 61.024 — so a 350 is 5.74L and a 454 is 7.44L.
+            Boring a 350 SBC +0.030" (to 4.030") adds about 5 cubic inches, bringing it to 355ci. The popular 383 stroker takes that same +0.030" overbore and pairs it with a 3.750" stroke crankshaft from a 400 SBC, producing 383 cubic inches — a 33ci gain over stock. To convert cubic inches to liters, divide by 61.024: a 383ci engine is 6.27 liters, and a stock 350 is 5.73 liters. Every displacement increase changes the engine's appetite for air and fuel, so recalculate your carb or injector sizing whenever bore or stroke changes.
           </p>
         </CardContent>
       </Card>

@@ -3,6 +3,7 @@ import { SEOHead } from "@/components/SEOHead";
 import { Input } from "@/components/ui/input";
 import { Label } from "@/components/ui/label";
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
+import { Info } from "lucide-react";
 
 function TorqueDiagram({ wrenchLength, extensionLength }: { wrenchLength: number; extensionLength: number }) {
   const total = wrenchLength + extensionLength;
@@ -78,9 +79,9 @@ export default function TorqueExtensionCalculator() {
   const torqueReduction = torqueNum > 0 ? ((torqueNum - adjustedTorque) / torqueNum) * 100 : 0;
 
   return (
-    <div className="container mx-auto py-8 px-4 max-w-4xl">
+    <div className="container mx-auto py-8 px-4 max-w-7xl">
       <SEOHead
-        title="Torque Extension Calculator — Crow's Foot & Wobble Adapter Correction"
+        title="Crow's Foot Torque Calculator | Extension Correction"
         description="Calculate corrected torque wrench settings when using crow's foot adapters, extensions, or wobble sockets that change the effective lever arm. Free engine builder tool."
         canonical="/calculators/torque-extension"
         keywords="torque extension calculator, crow's foot torque correction, wobble socket torque, torque wrench adapter correction, torque extension formula"
@@ -89,6 +90,9 @@ export default function TorqueExtensionCalculator() {
       <p className="text-muted-foreground mb-8">
         Calculate the corrected torque wrench setting when using a crow's foot, extension, or wobble adapter that adds to the effective lever arm.
       </p>
+
+      <div className="flex flex-col xl:flex-row gap-8">
+      <div className="flex-1 min-w-0">
 
       <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
         <div className="space-y-6">
@@ -225,77 +229,62 @@ export default function TorqueExtensionCalculator() {
         </div>
       </div>
 
-      <Card className="mt-8">
-        <CardHeader>
-          <CardTitle className="text-lg">Understanding Torque Extension Correction</CardTitle>
-        </CardHeader>
-        <CardContent className="prose prose-sm max-w-none text-muted-foreground space-y-3">
-          <p>
-            Torque is force multiplied by distance. A torque wrench is calibrated to measure force at a specific lever arm length — the distance from your hand to the square drive. When you attach a crow's foot or offset adapter, you extend that lever arm. The wrench still reads the same, but the fastener now sees more torque because the effective distance is longer. If you set the wrench to the full spec, you'll over-torque the fastener.
-          </p>
-          <p>
-            The correction formula is straightforward: <strong>Wrench Setting = Desired Torque &times; (L / (L + E))</strong>. For example, if your wrench is 18 inches long and you add a 3-inch crow's foot, the correction factor is 18/21 = 0.857. To achieve 80 ft-lbs at the fastener, you set the wrench to 68.6 ft-lbs. The wrench under-reads by design — the extra lever arm makes up the difference.
-          </p>
-          <h3 className="text-sm font-semibold text-foreground mt-4">Crow's Foot Angle Matters</h3>
-          <p>
-            This formula applies when the crow's foot is oriented <strong>in-line (0&deg;)</strong> with the torque wrench handle — pointing straight away from you, extending the lever arm. If the crow's foot is at <strong>90 degrees</strong> to the wrench handle, no correction is needed because the extension goes sideways, not along the lever arm, so the effective distance from your hand to the fastener doesn't change. If the crow's foot points back toward you (180&deg;), the lever arm actually shortens and you'd need to <em>increase</em> the wrench setting. The easiest approach in tight spaces is to orient the crow's foot at 90&deg; and skip the math entirely.
-          </p>
-          <h3 className="text-sm font-semibold text-foreground mt-4">In-Line Extensions Don't Need Correction</h3>
-          <p>
-            A standard extension bar or wobble socket that stays on the same axis as the torque wrench does <em>not</em> change the effective lever arm. The pivot point is still at the square drive. The correction only applies when an adapter changes the lever arm length along the axis of the wrench handle — i.e., when it changes the distance between where you grip and where the fastener is, measured along the direction of force.
-          </p>
-        </CardContent>
-      </Card>
+      </div>{/* end left column */}
+
+      <aside className="xl:w-80 shrink-0 space-y-6">
+        <Card className="sticky top-20">
+          <CardHeader className="pb-3">
+            <CardTitle className="text-base flex items-center gap-2">
+              <Info className="w-4 h-4 text-[#E85D04]" />
+              Quick Reference
+            </CardTitle>
+          </CardHeader>
+          <CardContent className="text-sm text-muted-foreground space-y-4">
+            <div>
+              <h4 className="font-semibold text-foreground mb-1">The Formula</h4>
+              <p>Wrench Setting = Desired Torque x (L / (L + E)). L = wrench length, E = extension length along lever arm.</p>
+            </div>
+            <div>
+              <h4 className="font-semibold text-foreground mb-1">90-Degree Rule</h4>
+              <p>Crow's foot at 90 degrees to the handle needs NO correction. The extension goes sideways, not along the lever arm.</p>
+            </div>
+            <div>
+              <h4 className="font-semibold text-foreground mb-1">In-Line Extensions</h4>
+              <p>Standard extension bars on the same axis as the wrench do NOT change effective lever arm. No correction needed.</p>
+            </div>
+            <div>
+              <h4 className="font-semibold text-foreground mb-1">Impact Wrenches</h4>
+              <p>This formula does NOT apply to impacts. Dynamic hammer blows lose energy through extension compliance. Use torque sticks instead.</p>
+            </div>
+            <div className="border-t pt-3">
+              <h4 className="font-semibold text-foreground mb-1">Example</h4>
+              <ul className="space-y-1 mt-1 text-xs">
+                <li className="flex justify-between"><span>Wrench 18", CF 3":</span><span className="font-mono">Factor 0.857</span></li>
+                <li className="flex justify-between"><span>Target 80 ft-lbs:</span><span className="font-mono">Set 68.6</span></li>
+                <li className="flex justify-between"><span>CF at 90 deg:</span><span className="font-mono">No correction</span></li>
+              </ul>
+            </div>
+          </CardContent>
+        </Card>
+      </aside>
+
+      </div>{/* end flex row */}
 
       <Card className="mt-8">
         <CardHeader>
-          <CardTitle className="text-lg">What About Torsion on the Extension?</CardTitle>
+          <CardTitle className="text-lg">Torque Wrench Extensions and Crow's Foot Correction</CardTitle>
         </CardHeader>
         <CardContent className="prose prose-sm max-w-none text-muted-foreground space-y-3">
           <p>
-            A common question: doesn't the extension bar twist under load, and doesn't that twisting absorb some of the torque before it reaches the fastener? The short answer is <strong>no</strong> — torque is fully conserved through a rigid mechanical linkage under static conditions, which is exactly how a hand-operated torque wrench works.
+            When you attach an extension like a crow's foot adapter to a torque wrench, you change the effective lever arm length. If the extension positions the fastener further from the wrench pivot point, the actual torque delivered to the fastener is higher than what the wrench dial reads. Conversely, if the extension shortens the effective arm, you under-torque. The correction formula accounts for this: Set Torque = Desired Torque x (L / (L + E)), where L is the wrench handle length (pivot to grip center) and E is the extension offset distance.
           </p>
           <p>
-            Under Newton's Third Law, the torque at one end of a shaft in static equilibrium must equal the torque at the other end. If it didn't, the shaft would spin — and it doesn't. The extension does twist slightly (torsional deflection), but that twist stores elastic energy like a spring. It doesn't dissipate it. Once you reach steady-state force on the handle, 100% of the torque passes through to the fastener. This is confirmed by{" "}
-            <a href="https://web.mit.edu/course/3/3.11/www/modules/torsion.pdf" target="_blank" rel="noopener noreferrer" className="text-primary underline">MIT's Mechanics of Materials coursework</a> and{" "}
-            <a href="https://www.bu.edu/moss/mechanics-of-materials-torsion/" target="_blank" rel="noopener noreferrer" className="text-primary underline">Boston University's torsion reference</a>.
+            This correction only applies when the extension is at 90 degrees to the torque wrench handle — creating a true lever arm change. If you mount a crow's foot straight in line with the wrench (0 degrees), or if you use a standard socket extension that keeps the fastener on the same axis as the wrench drive, no correction is needed because the lever arm length has not changed.
           </p>
+          <h3 className="text-sm font-semibold text-foreground mt-4">When This Matters Most</h3>
           <p>
-            <strong>One exception:</strong> this does <em>not</em> apply to impact wrenches. Each hammer blow is a dynamic event, and the extension's torsional compliance absorbs energy from each pulse. Torque sticks and impact-rated extensions exist for exactly this reason. But for a hand-applied click wrench or beam wrench, torsion is not a factor.
+            Crow's foot adapters are commonly needed for exhaust manifold bolts, oil pan bolts on installed engines, and intake manifold fasteners where a socket cannot reach. On critical engine fasteners like head bolts, main caps, and rod bolts, always use the proper socket — never a crow's foot — to ensure accurate torque. For less critical fasteners where a crow's foot is acceptable, apply the correction formula and verify with a second pass. A 10% torque error on a head bolt spec of 65 ft-lbs is 6.5 ft-lbs — enough to cause uneven clamp load and a head gasket leak.
           </p>
-          <h3 className="text-sm font-semibold text-foreground mt-4">The 90&deg; Rule: Accurate, Not Perfect</h3>
-          <p>
-            The 90-degree "no correction needed" rule is backed by{" "}
-            <a href="https://www.tekton.com/blog/how-to-accurately-use-a-torque-wrench-with-a-crowfoot-wrench" target="_blank" rel="noopener noreferrer" className="text-primary underline">Tekton</a>,{" "}
-            <a href="https://www.engineersedge.com/manufacturing_spec/torque_wrench_1.htm" target="_blank" rel="noopener noreferrer" className="text-primary underline">Engineers Edge</a>,{" "}
-            <a href="https://www.mountztorque.com/calculations-for-torque-wrench-extension-adapters-and-spanners" target="_blank" rel="noopener noreferrer" className="text-primary underline">Mountz Torque</a>, and U.S. Air Force PMEL calibration standards. The full correction formula includes a cosine term — since cos(90&deg;) = 0, the extension's contribution drops out entirely.
-          </p>
-          <p>
-            There is a small geometric nuance: at 90&deg;, the true distance from hand to fastener is the hypotenuse, not just the wrench length. For an 18-inch wrench with a 2-inch crow's foot, that's &radic;(18&sup2; + 2&sup2;) = 18.11 inches — a 0.6% difference. Even with a long 6-inch adapter it's only about 5%. Since most torque wrenches are rated &plusmn;3–4% accuracy, standard crow's feet stay well within tool tolerance.
-          </p>
-          <h3 className="text-sm font-semibold text-foreground mt-4">What Actually Affects Accuracy More</h3>
-          <ul className="list-disc list-inside space-y-1 ml-1">
-            <li><strong>Lubrication state</strong> — whether threads are dry, oiled, or anti-seized has a far larger effect on achieved clamp load than any adapter math</li>
-            <li><strong>Hand position</strong> — gripping the wrench away from the marked handle point changes the effective lever arm</li>
-            <li><strong>Tool quality</strong> — cheap crow's feet with slop in the square drive introduce play that affects click consistency</li>
-            <li><strong>Stacking adapters</strong> — multiple extensions, swivels, and crow's feet compound slop and reduce confidence in the reading</li>
-          </ul>
-        </CardContent>
-      </Card>
-
-      <Card className="mt-4">
-        <CardHeader>
-          <CardTitle className="text-sm">Sources &amp; Further Reading</CardTitle>
-        </CardHeader>
-        <CardContent className="text-xs text-muted-foreground space-y-1">
-          <ul className="list-disc list-inside space-y-1 ml-1">
-            <li><a href="https://web.mit.edu/course/3/3.11/www/modules/torsion.pdf" target="_blank" rel="noopener noreferrer" className="text-primary underline">MIT — Mechanics of Materials: Shear and Torsion</a> (David Roylance)</li>
-            <li><a href="https://www.bu.edu/moss/mechanics-of-materials-torsion/" target="_blank" rel="noopener noreferrer" className="text-primary underline">Boston University — Mechanics of Materials: Torsion</a></li>
-            <li><a href="https://www.tekton.com/blog/how-to-accurately-use-a-torque-wrench-with-a-crowfoot-wrench" target="_blank" rel="noopener noreferrer" className="text-primary underline">Tekton — How to Use a Torque Wrench with a Crowfoot Wrench</a></li>
-            <li><a href="https://www.engineersedge.com/manufacturing_spec/torque_wrench_1.htm" target="_blank" rel="noopener noreferrer" className="text-primary underline">Engineers Edge — Torque Wrench Extension Formulas</a></li>
-            <li><a href="https://www.mountztorque.com/calculations-for-torque-wrench-extension-adapters-and-spanners" target="_blank" rel="noopener noreferrer" className="text-primary underline">Mountz — Calculations for Extensions and Spanners</a></li>
-            <li><a href="https://www.norbar.com/Support/Calculators/Torque-Wrench-Extension-Formula" target="_blank" rel="noopener noreferrer" className="text-primary underline">Norbar — Torque Wrench Extension Formula</a></li>
-          </ul>
         </CardContent>
       </Card>
     </div>

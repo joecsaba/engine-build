@@ -4,7 +4,7 @@ import { Input } from "@/components/ui/input";
 import { Label } from "@/components/ui/label";
 import { Card, CardContent, CardHeader, CardTitle, CardDescription } from "@/components/ui/card";
 import { Select, SelectContent, SelectItem, SelectTrigger, SelectValue } from "@/components/ui/select";
-import { ChevronDown } from "lucide-react";
+import { ChevronDown, Info } from "lucide-react";
 
 // ── Types ───────────────────────────────────────────────────────────────────────
 
@@ -349,7 +349,7 @@ export default function DieselSingleTurboCalculator() {
   const appDef = APPLICATIONS[application];
 
   return (
-    <div className="container mx-auto py-8 px-4 max-w-6xl">
+    <div className="container mx-auto py-8 px-4 max-w-7xl">
       <SEOHead
         title="Diesel Single Turbo Finder & Sizing"
         description="Find the right single turbocharger for your diesel engine. Match Holset, BorgWarner S-series, Garrett, and aftermarket turbos for Cummins, Duramax, and Powerstroke platforms with airflow, boost, EGT, and drive pressure calculations."
@@ -358,6 +358,9 @@ export default function DieselSingleTurboCalculator() {
       />
       <h1 className="text-3xl font-bold mb-2">Diesel Single Turbo Finder</h1>
       <p className="text-muted-foreground mb-8">Find the right single turbo upgrade for your diesel engine. Matches Holset, BorgWarner S-series, Garrett, and aftermarket turbos with real compressor data.</p>
+
+      <div className="flex flex-col xl:flex-row gap-8">
+      <div className="flex-1 min-w-0">
 
       <div className="grid grid-cols-1 lg:grid-cols-2 gap-8">
         {/* ──────────── LEFT COLUMN: INPUTS ──────────── */}
@@ -884,6 +887,73 @@ export default function DieselSingleTurboCalculator() {
         {" · "}
         <a href="/calculators/afr-lambda" className="text-primary underline hover:text-[#E85D04]">AFR / Lambda Converter</a>
       </div>
+
+      </div>{/* end left column */}
+
+      <aside className="xl:w-80 shrink-0 space-y-6">
+        <Card className="sticky top-20">
+          <CardHeader className="pb-3">
+            <CardTitle className="text-base flex items-center gap-2">
+              <Info className="w-4 h-4 text-[#E85D04]" />
+              Quick Reference
+            </CardTitle>
+          </CardHeader>
+          <CardContent className="text-sm text-muted-foreground space-y-4">
+            <div>
+              <h4 className="font-semibold text-foreground mb-1">Spool vs. Flow</h4>
+              <p>Smaller turbos spool fast but run out of air. Larger turbos flow more but lag below 2,000-2,500 RPM. Tow rigs need spool; drag trucks need flow.</p>
+            </div>
+            <div>
+              <h4 className="font-semibold text-foreground mb-1">EGT Safety</h4>
+              <p>Safe: {"<"}1,100°F. Caution: 1,100-1,300°F. Danger: {">"}1,300°F. Sustained high EGTs crack pistons and warp heads.</p>
+            </div>
+            <div>
+              <h4 className="font-semibold text-foreground mb-1">When to Go Compound</h4>
+              <p>Single turbos max out around 550-650 HP. Above that, compound (twin sequential) setups split the work for better efficiency and spool.</p>
+            </div>
+            <div className="border-t pt-3">
+              <h4 className="font-semibold text-foreground mb-1">Common Turbo Sizes</h4>
+              <ul className="space-y-1 mt-1 text-xs">
+                <li className="flex justify-between"><span>HX35 (stock 12v):</span><span className="font-mono">250-350 HP</span></li>
+                <li className="flex justify-between"><span>HX40:</span><span className="font-mono">350-500 HP</span></li>
+                <li className="flex justify-between"><span>S362:</span><span className="font-mono">400-550 HP</span></li>
+                <li className="flex justify-between"><span>S366:</span><span className="font-mono">500-650 HP</span></li>
+                <li className="flex justify-between"><span>S369:</span><span className="font-mono">550-700 HP</span></li>
+                <li className="flex justify-between"><span>S372:</span><span className="font-mono">600-800 HP</span></li>
+              </ul>
+            </div>
+            <div className="border-t pt-3">
+              <h4 className="font-semibold text-foreground mb-1">Boost Ranges</h4>
+              <ul className="space-y-1 mt-1 text-xs">
+                <li className="flex justify-between"><span>Stock tow:</span><span className="font-mono">20-30 PSI</span></li>
+                <li className="flex justify-between"><span>Mild build:</span><span className="font-mono">30-40 PSI</span></li>
+                <li className="flex justify-between"><span>Performance:</span><span className="font-mono">40-55 PSI</span></li>
+                <li className="flex justify-between"><span>Race single:</span><span className="font-mono">55-70 PSI</span></li>
+              </ul>
+            </div>
+          </CardContent>
+        </Card>
+      </aside>
+
+      </div>{/* end flex row */}
+
+      <Card className="mt-8">
+        <CardHeader>
+          <CardTitle className="text-lg">Diesel Single Turbo Selection</CardTitle>
+        </CardHeader>
+        <CardContent className="prose prose-sm max-w-none text-muted-foreground space-y-3">
+          <p>
+            Selecting a single turbo for a diesel engine is a balance between spool speed and top-end airflow. Diesel engines operate across a much wider fueling range than gasoline engines, and the turbo must provide adequate boost from loaded cruising at 1,800 RPM all the way through peak power at 3,000-3,500 RPM. A turbo that spools too slowly leaves the engine blowing black smoke under load while waiting for boost, which means high EGTs, wasted fuel, and accelerated wear on pistons and rings.
+          </p>
+          <p>
+            For a Cummins 5.9L or 6.7L platform, common single turbo upgrades follow a well-established path. The stock HX35 on a 12-valve Cummins supports 250-350 HP reliably. Moving to an HX40 opens the door to 350-500 HP with good spool characteristics. The S362 and S366 BorgWarner-frame turbos push into 400-650 HP territory, with the S366 being the most popular "do everything" single turbo for tow-and-race trucks. Beyond 650 HP, single turbos struggle to maintain both spool and flow — that is where compound setups take over.
+          </p>
+          <h3 className="text-sm font-semibold text-foreground mt-4">Boost and EGT Management</h3>
+          <p>
+            Safe exhaust gas temperatures for a diesel are below 1,100°F pre-turbo. Between 1,100-1,300°F you are in the caution zone, and above 1,300°F you risk cracking piston crowns and warping cylinder heads. Proper turbo sizing keeps EGTs manageable by ensuring the engine has enough air to burn the fuel completely. If your EGTs are high, the answer is more air (bigger turbo or compounds), not less fuel — though reducing fuel is the immediate safety measure while you plan the upgrade.
+          </p>
+        </CardContent>
+      </Card>
     </div>
   );
 }

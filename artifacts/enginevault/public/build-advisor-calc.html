@@ -4,31 +4,35 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Engine Build Calculator</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
 <style>
   :root {
-    --bg: #0f1117;
-    --surface: #1a1d27;
-    --surface2: #242837;
-    --border: #2e3348;
-    --text: #e4e6ef;
-    --text-dim: #8b8fa3;
-    --accent: #4f8cff;
-    --accent2: #36d399;
-    --warn: #f5a623;
+    --bg: #f9fafb;
+    --surface: #ffffff;
+    --surface2: #f3f4f6;
+    --border: #e5e7eb;
+    --text: #1a1a1a;
+    --text-dim: #6b7280;
+    --accent: #E85D04;
+    --accent2: #22c55e;
+    --warn: #f59e0b;
     --error: #ef4444;
     --green: #22c55e;
   }
   * { margin: 0; padding: 0; box-sizing: border-box; }
   body {
-    font-family: 'Segoe UI', system-ui, -apple-system, sans-serif;
+    font-family: 'Inter', system-ui, -apple-system, sans-serif;
     background: var(--bg);
     color: var(--text);
     line-height: 1.5;
     min-height: 100vh;
   }
   .header {
-    background: var(--surface);
-    border-bottom: 1px solid var(--border);
+    background: #1a1a1a;
+    color: white;
+    border-bottom: 1px solid #2a2a2a;
     padding: 16px 24px;
     display: flex;
     align-items: center;
@@ -138,7 +142,7 @@
   .result-hero {
     text-align: center;
     padding: 24px;
-    background: linear-gradient(135deg, #1a2744, #1a1d27);
+    background: linear-gradient(135deg, #1a1a1a, #2a2a2a);
     border-radius: 8px;
     margin-bottom: 16px;
   }
@@ -1251,7 +1255,7 @@ function updateAdvisor() {
 
   // HP Impact breakdown — show how each factor contributes
   const factors = [
-    { name: 'Short Block (' + params.displacement.toFixed(0) + ' CI)',  factor: params.displacement / 350,   color: '#4f8cff' },
+    { name: 'Short Block (' + params.displacement.toFixed(0) + ' CI)',  factor: params.displacement / 350,   color: '#E85D04' },
     { name: 'Head Flow',      factor: params.headCFM / 250,        color: '#36d399' },
     { name: 'Cam Duration',   factor: (params.camDuration - 190) / 80, color: '#f59e0b' },
     { name: 'Compression',    factor: result.crFactor,             color: '#8b5cf6' },
@@ -1601,7 +1605,7 @@ function runValidation() {
   const estDiff = claimedHP>0 ? Math.round(((est.hp-claimedHP)/claimedHP)*100) : 0;
 
   document.getElementById('val-results').innerHTML = `
-    <div class="result-hero" style="background:linear-gradient(135deg,${score>=80?'#1a3427':score>=50?'#2a2a17':'#2a1a1a'},#1a1d27)">
+    <div class="result-hero" style="background:linear-gradient(135deg,${score>=80?'#1a1a1a':score>=50?'#1a1a1a':'#1a1a1a'},#2a2a2a)">
       <div class="hp-number" style="font-size:48px;${score>=80?'':score>=50?'-webkit-text-fill-color:var(--warn)':'-webkit-text-fill-color:var(--error)'}">${score}%</div>
       <div class="hp-label">${passC}/${checks.length} checks passed</div>
     </div>

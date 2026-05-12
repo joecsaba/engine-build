@@ -362,7 +362,7 @@ export default function RingGapAdvancedCalculator() {
   }
 
   return (
-    <div className="container mx-auto py-8 px-4 max-w-6xl">
+    <div className="container mx-auto py-8 px-4 max-w-7xl">
       <SEOHead
         title="Piston Ring Gap Calculator"
         description="Application-specific piston ring end gap calculator for NA, nitrous, turbo, supercharged, and diesel builds. Per-ring outputs, material warnings, and file-gap workflow."
@@ -378,6 +378,9 @@ export default function RingGapAdvancedCalculator() {
       <p className="text-muted-foreground mb-8">
         Application-specific ring gap for every ring position. Covers NA, nitrous, turbo, supercharged, and diesel builds with material compatibility warnings.
       </p>
+
+      <div className="flex flex-col xl:flex-row gap-8">
+      <div className="flex-1 min-w-0">
 
       {/* ── Inputs ─────────────────────────────────────────────────────────── */}
       <div className="grid grid-cols-1 lg:grid-cols-3 gap-6 mb-8">
@@ -691,73 +694,74 @@ export default function RingGapAdvancedCalculator() {
         </CardContent>
       </Card>
 
-      {/* ── Educational Content ────────────────────────────────────────────── */}
-      <Card>
-        <CardHeader>
-          <CardTitle className="text-lg">Understanding Piston Ring End Gap</CardTitle>
-        </CardHeader>
-        <CardContent className="prose prose-sm max-w-none text-muted-foreground space-y-4">
-          <p>
-            Piston rings expand as the engine heats to operating temperature. The end gap is the cold clearance that allows for this expansion. If the gap is too tight, the ring ends butt together under heat, and the ring has nowhere to go — it buckles outward, breaks the ring land off the piston, and can score or crack the cylinder wall. This is one of the most common causes of catastrophic engine failure in fresh builds. Too much gap allows combustion gases to blow past the ring (blowby), reducing power, pressurizing the crankcase, and contaminating the oil with combustion byproducts.
-          </p>
-          <p>
-            Power adders — turbochargers, superchargers, and nitrous — dump significantly more heat into the combustion chamber than a naturally aspirated engine. The piston ring sees higher peak temperatures, expands more, and needs a larger cold gap to avoid thermal lock-up. A turbo engine making 20 psi of boost can see cylinder temperatures 200–400°F higher than the same engine naturally aspirated. Nitrous is even more aggressive — the oxygen-enriched charge burns faster and hotter, creating extreme thermal shock that can crack or delaminate ring coatings not designed for it.
-          </p>
-          <p>
-            Ring material matters because different metals respond to heat differently. Cast iron was the standard for decades — inexpensive and adequate for stock applications, but it warps under rapid thermal cycling and is brittle under high loads. Moly-faced (molybdenum-filled) rings improved durability and oil retention significantly, but the plasma-sprayed moly coating can delaminate under the thermal shock of high nitrous or extreme boost. Steel and stainless steel rings (gas-nitrided or tool steel like M2) are dimensionally stable even under extreme conditions — they cost more, but they hold their shape and survive where cast iron and moly cannot.
-          </p>
+      </div>{/* end left column */}
 
-          <h3 className="text-sm font-semibold text-foreground mt-6">Oil Ring Rails vs. Compression Rings</h3>
-          <p>
-            Oil ring rails are responsible for scraping oil off the cylinder wall, not sealing combustion pressure. Their gap is far less critical than compression ring gaps. Most manufacturers (Mahle, Hastings, Wiseco, CP-Carrillo) specify oil rail gap as a flat <strong>0.015" minimum</strong> regardless of bore size — it is not calculated as a per-inch-of-bore multiplier like compression rings. Excessive oil ring gap slightly reduces oil scraping efficiency but does not cause compression loss. Too-tight oil ring gap can cause the same butting/seizure problems as compression rings. The oil ring expander (the wavy spring between the two thin rails) should never be filed — only the thin steel rails get gapped.
-          </p>
+      <aside className="xl:w-80 shrink-0 space-y-6">
+        <Card className="sticky top-20">
+          <CardHeader className="pb-3">
+            <CardTitle className="text-base flex items-center gap-2">
+              <Info className="w-4 h-4 text-[#E85D04]" />
+              Quick Reference
+            </CardTitle>
+          </CardHeader>
+          <CardContent className="text-sm text-muted-foreground space-y-4">
+            <div>
+              <h4 className="font-semibold text-foreground mb-1">Why Gap Matters</h4>
+              <p>Too tight: ring ends butt, buckle outward, break ring lands, score cylinder walls. Too loose: blowby reduces power and pressurizes crankcase.</p>
+            </div>
+            <div>
+              <h4 className="font-semibold text-foreground mb-1">Power Adders</h4>
+              <p>Turbo/nitrous engines see 200-400F higher cylinder temps. Rings expand more and need larger cold gaps to prevent thermal lock-up.</p>
+            </div>
+            <div>
+              <h4 className="font-semibold text-foreground mb-1">Ring Materials</h4>
+              <ul className="space-y-1 mt-1">
+                <li><span className="font-medium text-foreground">Cast iron:</span> Stock use only, brittle under load</li>
+                <li><span className="font-medium text-foreground">Moly-faced:</span> Good durability, can delaminate under extreme heat</li>
+                <li><span className="font-medium text-foreground">Steel/Stainless:</span> Best for boost/nitrous, dimensionally stable</li>
+              </ul>
+            </div>
+            <div>
+              <h4 className="font-semibold text-foreground mb-1">Oil Rails</h4>
+              <p>0.015" minimum flat spec regardless of bore. Not per-inch-of-bore. Never file the expander — only the thin rails.</p>
+            </div>
+            <div>
+              <h4 className="font-semibold text-foreground mb-1">Diesel Difference</h4>
+              <p>Diesels use tight top ring + very large second ring (3:1 ratio). Cummins 5.9L: top 0.010-0.014", second 0.033-0.045". Do NOT use gasoline formulas.</p>
+            </div>
+            <div className="border-t pt-3">
+              <h4 className="font-semibold text-foreground mb-1">Gas Engine Multipliers</h4>
+              <ul className="space-y-1 mt-1 text-xs">
+                <li className="flex justify-between"><span>Stock NA top:</span><span className="font-mono">0.0040"/in</span></li>
+                <li className="flex justify-between"><span>Perf NA top:</span><span className="font-mono">0.0045"/in</span></li>
+                <li className="flex justify-between"><span>Turbo/SC top:</span><span className="font-mono">0.0055"/in</span></li>
+                <li className="flex justify-between"><span>Nitrous top:</span><span className="font-mono">0.0060"/in</span></li>
+                <li className="flex justify-between"><span>Oil rails:</span><span className="font-mono">0.015" min</span></li>
+              </ul>
+            </div>
+          </CardContent>
+        </Card>
+      </aside>
 
-          <h3 className="text-sm font-semibold text-foreground mt-6">Diesel Engines: A Different Animal</h3>
-          <p>
-            Diesel engines use fundamentally different ring gap ratios than gasoline engines. The standard gasoline formula of "0.004" per inch of bore" does <strong>not</strong> apply to most diesels. Diesel engines typically use a tight top ring and a very large second ring — roughly a 3:1 ratio of second-to-top ring gap. For example, the Cummins 5.9L 6BT specs a top ring of 0.010"–0.014" but a second ring of 0.033"–0.045". The Ford 7.3L Powerstroke is even more extreme: 0.062"–0.072" on the second ring.
-          </p>
-          <p>
-            This is a deliberate design choice. Diesel engines operate at higher compression ratios and temperatures. The large second ring gap equalizes inter-ring pressures, prevents the top ring from being destabilized by trapped pressure, and allows oil to reach the top ring for lubrication (diesel fuel provides no cylinder wall lubrication, unlike gasoline). Engine Professional magazine published a specific technical bulletin warning rebuilders about Cummins ring gaps, because machinists unfamiliar with diesel specs would assume the large second ring gap was an error and try to "correct" it — causing ring failure.
-          </p>
-        </CardContent>
-      </Card>
+      </div>{/* end flex row */}
 
-      {/* ── Multiplier Reference Table ─────────────────────────────────────── */}
       <Card className="mt-8">
         <CardHeader>
-          <CardTitle className="text-lg">Gasoline Engine Ring Gap Multiplier Reference</CardTitle>
+          <CardTitle className="text-lg">Piston Ring End Gap Specifications</CardTitle>
         </CardHeader>
-        <CardContent className="overflow-x-auto">
-          <p className="text-sm text-muted-foreground mb-4">
-            Multiplied by bore diameter in inches. Oil rail gap is a flat minimum (not per inch of bore).
+        <CardContent className="prose prose-sm max-w-none text-muted-foreground space-y-3">
+          <p>
+            Piston ring end gap is the clearance between the two ends of a piston ring when installed in the cylinder bore. This gap exists because rings expand as they heat up during engine operation. If the gap is too tight, the ring ends butt together under thermal expansion — this is called "ring butting" and it can score the cylinder walls, break the ring lands, or seize the piston. It is one of the most catastrophic and preventable failures in engine building.
           </p>
-          <table className="w-full text-sm">
-            <thead>
-              <tr className="border-b text-left">
-                <th className="pb-2 pr-4 font-semibold">Application</th>
-                <th className="pb-2 pr-4 font-semibold text-right">Top (per in.)</th>
-                <th className="pb-2 pr-4 font-semibold text-right">Second (per in.)</th>
-                <th className="pb-2 font-semibold text-right">Oil Rails</th>
-              </tr>
-            </thead>
-            <tbody className="text-muted-foreground">
-              {(Object.keys(multiplierTable) as Application[]).filter(k => k !== "diesel").map(key => {
-                const row = multiplierTable[key];
-                const isActive = key === app;
-                return (
-                  <tr key={key} className={`border-b last:border-0 ${isActive ? "bg-[#E85D04]/5 font-medium text-foreground" : ""}`}>
-                    <td className="py-2 pr-4">{applicationLabels[key]}</td>
-                    <td className="py-2 pr-4 text-right font-mono">{row.top.toFixed(4)}</td>
-                    <td className="py-2 pr-4 text-right font-mono">{row.second.toFixed(4)}</td>
-                    <td className="py-2 text-right font-mono">{row.oilMin.toFixed(3)}" min</td>
-                  </tr>
-                );
-              })}
-            </tbody>
-          </table>
+          <p>
+            The standard rule of thumb is 0.004" of gap per inch of bore diameter for naturally aspirated engines, and 0.006" per inch for forced induction (turbo or supercharged). For a 4.030" bore NA street engine, that means 0.016" minimum on the top ring. Most builders target 0.016"-0.020" for the top ring on a street NA application to provide a margin of safety. Second rings are typically gapped 0.002"-0.004" wider than the top ring.
+          </p>
+          <h3 className="text-sm font-semibold text-foreground mt-4">NA vs. Forced Induction Gaps</h3>
+          <p>
+            Forced induction engines see significantly higher combustion temperatures, which means more thermal expansion. A turbo 4.030" bore engine needs 0.024"-0.026" on the top ring — nearly 50% more than the NA spec. Nitrous engines should be gapped even wider, at 0.006"-0.007" per inch. Running too tight a gap on a boosted engine is a guaranteed path to ring butting, scuffed bores, and an expensive teardown. Always file-fit your rings to the actual measured bore diameter of each cylinder, not the nominal size.
+          </p>
         </CardContent>
       </Card>
-
     </div>
   );
 }

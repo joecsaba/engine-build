@@ -6,6 +6,7 @@ import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 import { Select, SelectContent, SelectItem, SelectTrigger, SelectValue } from "@/components/ui/select";
 import { Tabs, TabsContent, TabsList, TabsTrigger } from "@/components/ui/tabs";
 import { useBuildContext } from "@/context/BuildContext";
+import { Info } from "lucide-react";
 
 /* ── Application safety margins ───────────────────────────────── */
 
@@ -713,7 +714,7 @@ export default function ValveSpringCalculator() {
   const sidHasRate = sidRate > 0;
 
   return (
-    <div className="container mx-auto py-8 px-4 max-w-5xl">
+    <div className="container mx-auto py-8 px-4 max-w-7xl">
       <SEOHead
         title="Valve Spring Calculator | Coil Bind, Pressure & Shims"
         description="Check coil bind clearance, calculate max safe valve lift, figure shim combinations, verify seat and open pressures, and check retainer-to-seal clearance. Free engine builder tool."
@@ -722,6 +723,9 @@ export default function ValveSpringCalculator() {
       />
       <h1 className="text-3xl font-bold mb-2">Valve Spring Calculator</h1>
       <p className="text-muted-foreground mb-8">Coil bind check, max safe lift, shimming guide, pressure verification, and retainer-to-seal clearance for any cam type.</p>
+
+      <div className="flex flex-col xl:flex-row gap-8">
+      <div className="flex-1 min-w-0">
 
       <Tabs defaultValue="bind" className="space-y-6">
         <TabsList className="w-full grid grid-cols-7 h-auto">
@@ -1667,27 +1671,60 @@ export default function ValveSpringCalculator() {
         </TabsContent>
       </Tabs>
 
-      {/* ═══════════════════════════════════════════════════════ */}
-      {/*  EDUCATIONAL NOTE                                      */}
-      {/* ═══════════════════════════════════════════════════════ */}
+      </div>{/* end left column */}
+
+      <aside className="xl:w-80 shrink-0 space-y-6">
+        <Card className="sticky top-20">
+          <CardHeader className="pb-3">
+            <CardTitle className="text-base flex items-center gap-2">
+              <Info className="w-4 h-4 text-[#E85D04]" />
+              Quick Reference
+            </CardTitle>
+          </CardHeader>
+          <CardContent className="text-sm text-muted-foreground space-y-4">
+            <div>
+              <h4 className="font-semibold text-foreground mb-1">Seat vs Open Pressure</h4>
+              <p>Seat pressure seals the valve against combustion. Open pressure prevents float at RPM. Both must be correct for the cam profile.</p>
+            </div>
+            <div>
+              <h4 className="font-semibold text-foreground mb-1">Coil Bind Safety</h4>
+              <ul className="space-y-1 mt-1">
+                <li><span className="font-medium text-foreground">Street:</span> 0.060" min above bind</li>
+                <li><span className="font-medium text-foreground">Race:</span> 0.080" min above bind</li>
+              </ul>
+            </div>
+            <div>
+              <h4 className="font-semibold text-foreground mb-1">Over-Sprung Danger</h4>
+              <p>Excessive pressure wipes flat-tappet cams in minutes. Hydraulic lifters pump down under excess load, causing intermittent misfires.</p>
+            </div>
+            <div>
+              <h4 className="font-semibold text-foreground mb-1">Shimming Rule</h4>
+              <p>Equalize all 16 springs within 0.010" of each other. Shim to the shortest installed height. Use 0.015/0.030/0.060/0.090" shims.</p>
+            </div>
+            <div className="border-t pt-3">
+              <h4 className="font-semibold text-foreground mb-1">RPM Upgrades</h4>
+              <p>Titanium retainers reduce valve-side mass 40-50%, raising safe RPM limit 500-800 RPM without changing springs.</p>
+            </div>
+          </CardContent>
+        </Card>
+      </aside>
+
+      </div>{/* end flex row */}
+
       <Card className="mt-8">
         <CardHeader>
-          <CardTitle className="text-lg">Understanding Valve Springs</CardTitle>
+          <CardTitle className="text-lg">Valve Springs: Matching Springs to Your Cam</CardTitle>
         </CardHeader>
         <CardContent className="prose prose-sm max-w-none text-muted-foreground space-y-3">
           <p>
-            Valve springs serve two critical jobs. Seat pressure keeps the valve sealed against combustion pressure when the valve is closed. Without adequate seat pressure, combustion gases leak past the valve seat, killing compression and power. Open pressure (sometimes called "over the nose" pressure) is the force the spring exerts at maximum lift. This pressure decelerates the valve as it opens and reaccelerates it on the closing side, preventing valve float at high RPM. If open pressure is too low for the cam profile, the valve can't follow the lobe at speed and floats open \u2014 causing misfires, lost power, and potentially catastrophic piston-to-valve contact.
+            Valve springs must do two jobs: maintain contact with the cam lobe at the base circle (seat pressure) and control the valve at maximum lift against the inertia forces trying to throw it open (open pressure). Seat pressure that is too low allows the lifter to bounce off the cam lobe, causing noise, wear, and erratic valve motion. Open pressure that is too low at high RPM results in valve float — the spring cannot close the valve fast enough, and the valve hangs open, losing power and risking piston contact.
           </p>
           <p>
-            Coil bind occurs when all the coils in a valve spring are physically touching and the spring cannot compress any further. If the valve tries to open past the coil bind point, something in the valvetrain has to give: the pushrod bends, the rocker breaks, the retainer fails, or the spring itself fatigues catastrophically. Coil bind is one of the most destructive failures possible in an engine because it happens at RPM and causes cascading damage to multiple components. Every spring has a published coil bind height on its datasheet. The safety margin between compressed height at max lift and coil bind height depends on application: street engines need less margin than race engines because they see less RPM and thermal variation.
+            Coil bind is the most dangerous spring failure mode. When a spring compresses to its solid height (all coils touching), it instantly becomes a rigid column — the valve stops moving but the cam keeps pushing, bending the pushrod, breaking the rocker, or snapping the valve stem. You need a minimum of 0.060" of clearance between maximum valve lift and coil bind height. Always verify installed height, maximum lift, and coil bind height before assembly.
           </p>
-          <h3 className="text-sm font-semibold text-foreground mt-4">Why Pressure Ranges Matter</h3>
+          <h3 className="text-sm font-semibold text-foreground mt-4">Retainers, Mass, and RPM</h3>
           <p>
-            Under-sprung engines experience valve float at RPM, losing compression and risking piston contact. Over-sprung engines suffer accelerated cam lobe wear \u2014 this is especially critical on flat-tappet camshafts, where excessive spring pressure scuffs the lobe face and wipes the cam, often within the first 20 minutes of break-in. Hydraulic flat tappet cams are the most sensitive: the cam lobe relies on an oil film between the lifter face and lobe, and excessive pressure breaks through that film. Hydraulic lifters also have a finite load limit \u2014 over-sprung hydraulic lifters collapse under load, causing the lifter to "pump down" and lose lift at RPM, which looks like a dead miss that comes and goes.
-          </p>
-          <h3 className="text-sm font-semibold text-foreground mt-4">Shimming Procedure</h3>
-          <p>
-            After assembling all 16 valves (on a V8), measure every installed height with a spring height micrometer. Find the shortest installed height in the set. Shim all other locations down to match that shortest height, using combinations of 0.015", 0.030", 0.060", and 0.090" shims. The goal is to get all 16 within 0.010" of each other. Equalization matters more than hitting a "perfect" spec number \u2014 inconsistent installed heights mean inconsistent seat pressures across cylinders, which causes uneven sealing, uneven valve float thresholds, and harmonic problems. A set of springs all at 1.810" is better than half at 1.800" and half at 1.830".
+            The force required to control the valve increases with the square of engine speed — doubling RPM quadruples the inertia force. At some point, adding more spring pressure creates diminishing returns because the additional pressure increases friction and cam lobe loading. The solution is reducing mass: titanium retainers weigh 40-50% less than steel, and titanium valves save even more. Lighter valvetrain components allow the same springs to control the valves at higher RPM, or they let you run less spring pressure for the same RPM ceiling, reducing wear on flat tappet cam lobes and improving engine longevity.
           </p>
         </CardContent>
       </Card>

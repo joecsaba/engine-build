@@ -5,7 +5,8 @@ import { Label } from "@/components/ui/label";
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 import { Select, SelectContent, SelectItem, SelectTrigger, SelectValue } from "@/components/ui/select";
 import { Slider } from "@/components/ui/slider";
-import { ChevronDown } from "lucide-react";
+import { ChevronDown, Info } from "lucide-react";
+import { useManufacturers, useFamilies, useFamilyEngines } from "@/hooks/useEngineData";
 import {
   LineChart, Line, XAxis, YAxis, CartesianGrid, Tooltip, ReferenceLine,
   ResponsiveContainer,
@@ -247,6 +248,16 @@ export default function PistonToValveCalculator() {
   // Engine platform preset
   const [platform, setPlatform] = useState("sbc350");
 
+  // Engine picker state (from database)
+  const [showPicker, setShowPicker] = useState(false);
+  const [pickerMfr, setPickerMfr] = useState("");
+  const [pickerFamily, setPickerFamily] = useState("");
+  const [pickerEngine, setPickerEngine] = useState("");
+  const { manufacturers } = useManufacturers();
+  const { families } = useFamilies();
+  const { familyData } = useFamilyEngines(pickerMfr, pickerFamily);
+  const filteredFamilies = families.filter(f => f.manufacturer_slug === pickerMfr);
+
   // Section A — Engine dimensions
   const [bore, setBore] = useState("4.000");
   const [stroke, setStroke] = useState("3.480");
@@ -336,6 +347,19 @@ export default function PistonToValveCalculator() {
     setPtd(p.ptd);
   }
 
+  // Apply engine from database picker
+  function handlePickerEngine(engineId: string) {
+    setPickerEngine(engineId);
+    if (!familyData) return;
+    const eng = familyData.engines.find(e => e.engine_id === engineId);
+    if (!eng) return;
+    setPlatform("custom");
+    if (eng.bore_in) setBore(eng.bore_in.toFixed(3));
+    if (eng.stroke_in) setStroke(eng.stroke_in.toFixed(3));
+    if (eng.rod_length_in) setRodLength(eng.rod_length_in.toFixed(3));
+    if (eng.head?.rocker_ratio) setRockerRatio(eng.head.rocker_ratio.toFixed(3));
+  }
+
   // Warnings
   const warnings: { text: string; level: "red" | "yellow" }[] = [];
   if (result) {
@@ -393,12 +417,12 @@ export default function PistonToValveCalculator() {
     : [];
 
   return (
-    <div className="max-w-4xl mx-auto">
+    <div className="max-w-7xl mx-auto">
       <div className="px-4 space-y-5">
         <div>
           <SEOHead
-            title="Piston-to-Valve Clearance Calculator"
-            description="Calculate piston-to-valve clearance across the full overlap region with kinematic simulation. Engine presets for SBC, LS, SBF, BBC, Mopar. Live cam advance slider, clearance chart, and interference warnings."
+            title="Piston-to-Valve Clearance Calculator | P2V Check"
+            description="Calculate piston-to-valve clearance with kinematic simulation. Presets for SBC, LS, SBF, BBC, Mopar. Cam advance slider and interference warnings."
             canonical="/calculators/piston-to-valve"
             keywords="piston to valve clearance calculator, P2V clearance, piston valve interference, cam advance clearance, valve relief depth calculator, engine clearance calculator, SBC P2V, LS P2V"
           />
@@ -408,6 +432,9 @@ export default function PistonToValveCalculator() {
           </p>
         </div>
 
+        <div className="flex flex-col xl:flex-row gap-8">
+        <div className="flex-1 min-w-0">
+
         {/* ── Common misconception callout ──────────────────── */}
         <div className="p-3 rounded-lg border bg-blue-50 border-blue-200 text-sm text-blue-800">
           <strong>P2V is NOT tightest at max lift.</strong> The critical clearance occurs during valve overlap near TDC (typically 5-15° from TDC), when the piston is near the head and the valves are partially open. This calculator simulates that exact region.
@@ -416,6 +443,55 @@ export default function PistonToValveCalculator() {
         {/* ── SECTION A: Engine Dimensions ─────────────────── */}
         <Section title="1 — Engine Dimensions">
           <div className="space-y-5">
+            {/* Database engine picker */}
+            <div className="mb-4 p-3 bg-gray-50 rounded-lg border">
+              <button
+                onClick={() => setShowPicker(!showPicker)}
+                className="text-sm font-medium text-[#E85D04] hover:underline"
+              >
+                {showPicker ? "Hide engine picker \u2191" : "Auto-fill from engine database \u2193"}
+              </button>
+              {showPicker && (
+                <div className="mt-3 grid grid-cols-1 sm:grid-cols-3 gap-3">
+                  <div className="space-y-1">
+                    <Label className="text-xs">Manufacturer</Label>
+                    <Select value={pickerMfr} onValueChange={v => { setPickerMfr(v); setPickerFamily(""); setPickerEngine(""); }}>
+                      <SelectTrigger><SelectValue placeholder="Select..." /></SelectTrigger>
+                      <SelectContent className="max-h-60 overflow-y-auto">
+                        {manufacturers.map(m => (
+                          <SelectItem key={m.slug} value={m.slug}>{m.name}</SelectItem>
+                        ))}
+                      </SelectContent>
+                    </Select>
+                  </div>
+                  <div className="space-y-1">
+                    <Label className="text-xs">Family</Label>
+                    <Select value={pickerFamily} onValueChange={v => { setPickerFamily(v); setPickerEngine(""); }} disabled={!pickerMfr}>
+                      <SelectTrigger><SelectValue placeholder="Select..." /></SelectTrigger>
+                      <SelectContent className="max-h-60 overflow-y-auto">
+                        {filteredFamilies.map(f => (
+                          <SelectItem key={f.family_slug} value={f.family_slug}>{f.family_name}</SelectItem>
+                        ))}
+                      </SelectContent>
+                    </Select>
+                  </div>
+                  <div className="space-y-1">
+                    <Label className="text-xs">Engine</Label>
+                    <Select value={pickerEngine} onValueChange={handlePickerEngine} disabled={!familyData}>
+                      <SelectTrigger><SelectValue placeholder="Select..." /></SelectTrigger>
+                      <SelectContent className="max-h-60 overflow-y-auto">
+                        {familyData?.engines.map(e => (
+                          <SelectItem key={e.engine_id} value={e.engine_id}>
+                            {e.displacement_ci ? `${e.displacement_ci}ci` : ""} {e.year || ""} {e.variants?.[0]?.code || e.engine_id}
+                          </SelectItem>
+                        ))}
+                      </SelectContent>
+                    </Select>
+                  </div>
+                </div>
+              )}
+            </div>
+
             {/* Engine preset picker */}
             <Field label="Engine Platform" hint="Fills in stroke, rod length, bore, and piston-to-deck. You can override any value after selection.">
               <Select value={platform} onValueChange={applyPreset}>
@@ -487,7 +563,7 @@ export default function PistonToValveCalculator() {
               </div>
               {liftMode === "lobe" && (
                 <div className="grid grid-cols-1 sm:grid-cols-2 gap-5">
-                  <Field label="Rocker Ratio" hint="e.g. 1.5 for stock SBC, 1.7 for aftermarket">
+                  <Field label="Rocker Ratio" hint="e.g. 1.5 SBC/Pontiac/Mopar, 1.6 SBF/Olds/AMC, 1.7 BBC/LS">
                     <Input type="number" step="0.01" value={rockerRatio} onChange={e => setRockerRatio(e.target.value)} />
                   </Field>
                   <div className="flex items-end pb-1">
@@ -886,30 +962,61 @@ export default function PistonToValveCalculator() {
           </Section>
         )}
 
-        {/* ── Educational Content ──────────────────────────── */}
-        <Card>
+        </div>{/* end left column */}
+
+        <aside className="xl:w-80 shrink-0 space-y-6">
+          <Card className="sticky top-20">
+            <CardHeader className="pb-3">
+              <CardTitle className="text-base flex items-center gap-2">
+                <Info className="w-4 h-4 text-[#E85D04]" />
+                Quick Reference
+              </CardTitle>
+            </CardHeader>
+            <CardContent className="text-sm text-muted-foreground space-y-4">
+              <div>
+                <h4 className="font-semibold text-foreground mb-1">Minimum Clearances</h4>
+                <ul className="space-y-1 mt-1">
+                  <li><span className="font-medium text-foreground">Intake:</span> 0.080" minimum</li>
+                  <li><span className="font-medium text-foreground">Exhaust:</span> 0.100" minimum</li>
+                  <li><span className="font-medium text-foreground">Clay-check target:</span> 0.060-0.080"</li>
+                </ul>
+              </div>
+              <div>
+                <h4 className="font-semibold text-foreground mb-1">Tightest Point</h4>
+                <p>Intake P2V is tightest around 10° ATDC — piston has barely dropped but intake valve is opening fast.</p>
+              </div>
+              <div>
+                <h4 className="font-semibold text-foreground mb-1">Cam Advance Effect</h4>
+                <p>Each 1° of advance costs ~0.005-0.008" of intake clearance. A 4° advance can reduce intake P2V by 0.020-0.030".</p>
+              </div>
+              <div>
+                <h4 className="font-semibold text-foreground mb-1">Exhaust Reliefs</h4>
+                <p>Exhaust valves run 1200-1350°F vs 800-900°F intake. Need 0.020-0.030" deeper reliefs for thermal growth.</p>
+              </div>
+              <div className="border-t pt-3">
+                <h4 className="font-semibold text-foreground mb-1">Always Clay-Check</h4>
+                <p>Use light checking springs (never hydraulic lifters). Roll clay across reliefs, rotate through TDC, measure with caliper. Calculator is for planning only.</p>
+              </div>
+            </CardContent>
+          </Card>
+        </aside>
+
+        </div>{/* end flex row */}
+
+        <Card className="mt-8">
           <CardHeader>
-            <CardTitle className="text-lg">Understanding Piston-to-Valve Clearance</CardTitle>
+            <CardTitle className="text-lg">Piston-to-Valve Clearance: The Critical Safety Check</CardTitle>
           </CardHeader>
           <CardContent className="prose prose-sm max-w-none text-muted-foreground space-y-3">
             <p>
-              Piston-to-valve (P2V) clearance is the minimum distance between the piston crown and an open valve during the overlap period near top dead center. During overlap, the exhaust valve is closing while the intake valve is opening, and the piston is near the top of the cylinder. If the piston crown and an open valve occupy the same space at any crank angle, the result is bent valves, broken pistons, and often catastrophic engine failure. Every performance engine build requires P2V verification before the engine is run.
+              Piston-to-valve (P2V) clearance is the minimum distance between the valve head and the piston top during the overlap period — the window of crankshaft rotation when both the intake and exhaust valves are open simultaneously. If this clearance is insufficient, the valve contacts the piston, bending the valve, cracking the piston, and potentially destroying the entire engine on the first revolution. Minimum safe clearances are 0.080" on the intake side and 0.100" on the exhaust side.
             </p>
-            <h3 className="text-sm font-semibold text-foreground mt-4">Why Intake P2V Is Tightest Around 10° ATDC</h3>
             <p>
-              At top dead center, the intake valve has barely started to open — it may only have a few thousandths of an inch of lift. As the piston descends from TDC and the valve opens faster, the valve "chases" the piston downward. Around 10° ATDC, the piston has not dropped much (only about 0.030-0.040" on a typical small block) but the intake valve has already opened appreciably. This is the closest approach — the point of minimum clearance. By 20° ATDC, the piston has dropped enough to outrun the valve, and clearance increases again.
+              Several modifications reduce P2V clearance and require rechecking: installing a cam with more duration or lift, increasing the rocker arm ratio (e.g., upgrading from 1.5:1 to 1.6:1 rockers), milling the cylinder heads (which moves the valves closer to the piston), and advancing the camshaft timing. Valve reliefs (notches) machined into the piston crown provide clearance, but their depth must be verified against the actual valve position — not assumed from catalog specifications.
             </p>
-            <h3 className="text-sm font-semibold text-foreground mt-4">Why Cam Advance Reduces Intake P2V</h3>
+            <h3 className="text-sm font-semibold text-foreground mt-4">How to Check P2V Clearance</h3>
             <p>
-              Advancing the cam moves the intake valve opening event earlier relative to TDC. At 10° ATDC, an advanced cam has the intake valve more open than a straight-up cam would. More valve lift at the same piston position means less clearance. Each degree of advance costs approximately 0.005-0.008" of intake clearance on a typical cam — a 4° advance can reduce intake P2V by 0.020-0.030". This is why checking P2V clearance after advancing a cam is critical. Use the slider above to see this effect on your combination.
-            </p>
-            <h3 className="text-sm font-semibold text-foreground mt-4">Why Exhaust Reliefs Are Deeper</h3>
-            <p>
-              Exhaust valves run hotter than intake valves — typically 1200-1350°F versus 800-900°F for intake. This heat causes exhaust valves to stretch more over time and deflect further off the seat under exhaust pressure pulses. Deeper exhaust valve reliefs (typically 0.020-0.030" more than intake) provide margin for this thermal growth and dynamic motion. Titanium valves require even more clearance because their lower density means they deflect more under spring pressure at high RPM.
-            </p>
-            <h3 className="text-sm font-semibold text-foreground mt-4">Always Verify with Clay</h3>
-            <p>
-              This calculator uses a parabolic lift approximation centered on the cam lobe centerline. Real cam lobes have complex acceleration profiles with different opening and closing ramps, and the parabolic model is accurate to within about 0.015" on typical hydraulic cams. For race engines operating near the edge of clearance, physical clay-check verification is required. Roll modeling clay across the valve reliefs, install the head and gasket with light checking springs (never hydraulic lifters — they bleed down), rotate the engine through TDC with zero lash, then measure the clay thickness with a dial caliper. Target 0.060-0.080" clay-verified clearance as the professional standard. The clay check remains the gold standard — this calculator is a planning tool for cam selection and clearance prediction, not a replacement for physical verification.
+              The most reliable method is the clay check: place modeling clay on the piston top in the valve pocket areas, assemble the engine with light checking springs (not full-rate springs), rotate the engine through two full revolutions, then disassemble and measure the clay thickness with a caliper. Alternatively, use a dial indicator through the spark plug hole while the engine is assembled with light springs, rotating slowly through the overlap zone (from intake opening to exhaust closing). Always check P2V with the cam degreed to its final installed position — a 4-degree advance moves the intake valve event earlier and can eat into clearance that looked fine at "straight up."
             </p>
           </CardContent>
         </Card>

@@ -1,4 +1,4 @@
-import { useState, useEffect } from "react";
+import { useState, useEffect, useMemo } from "react";
 import { SEOHead } from "@/components/SEOHead";
 import { Input } from "@/components/ui/input";
 import { Label } from "@/components/ui/label";
@@ -6,6 +6,8 @@ import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 import { useBuildField } from "@/hooks/useBuildField";
 import { useBuildContext } from "@/context/BuildContext";
 import { BuildBanner } from "@/components/BuildBanner";
+import { Info } from "lucide-react";
+import { useReferenceEngines } from "@/hooks/useEngineData";
 
 const commonEngines = [
   { name: "Chevy 350 (SBC)", stroke: "3.480", rod: "5.700", ratio: 1.638 },
@@ -40,6 +42,27 @@ export default function RodRatioCalculator() {
   const ratio = s > 0 ? r / s : 0;
   const zone = getRatioZone(ratio);
 
+  // Merge hardcoded engines with JSON database engines
+  const { engines: jsonEngines, loading: jsonLoading } = useReferenceEngines();
+  const mergedEngines = useMemo(() => {
+    const hardcoded = commonEngines.map(e => ({ ...e }));
+    const seen = new Set(hardcoded.map(e => `${e.stroke}-${e.rod}`));
+    for (const je of jsonEngines) {
+      if (!je.rodLength) continue;
+      const key = `${je.stroke.toFixed(3)}-${je.rodLength.toFixed(3)}`;
+      if (seen.has(key)) continue;
+      seen.add(key);
+      const r = je.rodLength / je.stroke;
+      hardcoded.push({
+        name: je.name,
+        stroke: je.stroke.toFixed(3),
+        rod: je.rodLength.toFixed(3),
+        ratio: parseFloat(r.toFixed(3)),
+      });
+    }
+    return hardcoded;
+  }, [jsonEngines]);
+
   useEffect(() => {
     if (activeBuild && ratio > 0) {
       setField("computed.rodRatio", ratio.toFixed(3));
@@ -47,7 +70,7 @@ export default function RodRatioCalculator() {
   }, [ratio, activeBuild?.id]);
 
   return (
-    <div className="container mx-auto py-8 px-4 max-w-5xl">
+    <div className="container mx-auto py-8 px-4 max-w-7xl">
       <SEOHead
         title="Rod Ratio Calculator | Connecting Rod to Stroke"
         description="Calculate your connecting rod ratio (L/S) and see where it falls in the performance spectrum. Compare against common engines like SBC 350, LS1, Ford 302, 2JZ."
@@ -59,6 +82,9 @@ export default function RodRatioCalculator() {
       ]} />
       <h1 className="text-3xl font-bold mb-2">Connecting Rod Ratio Calculator</h1>
       <p className="text-muted-foreground mb-8">Calculate your connecting rod ratio and see where it falls in the performance spectrum.</p>
+
+      <div className="flex flex-col xl:flex-row gap-8">
+      <div className="flex-1 min-w-0">
 
       <div className="grid grid-cols-1 md:grid-cols-2 gap-8 mb-8">
         <Card>
@@ -123,7 +149,7 @@ export default function RodRatioCalculator() {
       </Card>
 
       <Card>
-        <CardHeader><CardTitle>Common Engine Comparison</CardTitle></CardHeader>
+        <CardHeader><CardTitle>Common Engine Comparison{jsonLoading ? " (loading database...)" : ""}</CardTitle></CardHeader>
         <CardContent>
           <div className="overflow-x-auto">
             <table className="w-full text-sm">
@@ -136,7 +162,7 @@ export default function RodRatioCalculator() {
                 </tr>
               </thead>
               <tbody>
-                {commonEngines.map((e, i) => (
+                {mergedEngines.map((e, i) => (
                   <tr key={i} className={i % 2 === 0 ? "border-b" : "bg-muted/30 border-b"}>
                     <td className="py-2 font-medium">{e.name}</td>
                     <td className="text-right py-2">{e.stroke}"</td>
@@ -150,20 +176,63 @@ export default function RodRatioCalculator() {
         </CardContent>
       </Card>
 
+      </div>{/* end left column */}
+
+      <aside className="xl:w-80 shrink-0 space-y-6">
+        <Card className="sticky top-20">
+          <CardHeader className="pb-3">
+            <CardTitle className="text-base flex items-center gap-2">
+              <Info className="w-4 h-4 text-[#E85D04]" />
+              Quick Reference
+            </CardTitle>
+          </CardHeader>
+          <CardContent className="text-sm text-muted-foreground space-y-4">
+            <div>
+              <h4 className="font-semibold text-foreground mb-1">What Is Rod Ratio?</h4>
+              <p>Rod center-to-center length divided by stroke (L/S). Affects piston dwell, side loading, and acceleration through the stroke.</p>
+            </div>
+            <div>
+              <h4 className="font-semibold text-foreground mb-1">Ideal Range</h4>
+              <p>1.6–1.8 covers most performance engines. Above 1.8 gives diminishing returns with packaging challenges. Below 1.55 increases piston wear.</p>
+            </div>
+            <div>
+              <h4 className="font-semibold text-foreground mb-1">Stroker Warning</h4>
+              <p>A 383 SBC stroker with stock 5.700" rods drops to 1.520:1. Upgrade to 6.000" rods to bring it back to 1.600:1.</p>
+            </div>
+            <div>
+              <h4 className="font-semibold text-foreground mb-1">Higher Ratio Trade-offs</h4>
+              <p>Longer rods need a taller block or shorter piston compression height. Short pistons are weaker and more expensive.</p>
+            </div>
+            <div className="border-t pt-3">
+              <h4 className="font-semibold text-foreground mb-1">Common Ratios</h4>
+              <ul className="space-y-1 mt-1 text-xs">
+                <li className="flex justify-between"><span>SBC 350:</span><span className="font-mono">1.638</span></li>
+                <li className="flex justify-between"><span>LS1 5.7L:</span><span className="font-mono">1.684</span></li>
+                <li className="flex justify-between"><span>Ford 302:</span><span className="font-mono">1.697</span></li>
+                <li className="flex justify-between"><span>Honda K24A:</span><span className="font-mono">1.705</span></li>
+                <li className="flex justify-between"><span>Toyota 2JZ:</span><span className="font-mono">1.687</span></li>
+              </ul>
+            </div>
+          </CardContent>
+        </Card>
+      </aside>
+
+      </div>{/* end flex row */}
+
       <Card className="mt-8">
         <CardHeader>
           <CardTitle className="text-lg">Connecting Rod Ratio Explained</CardTitle>
         </CardHeader>
         <CardContent className="prose prose-sm max-w-none text-muted-foreground space-y-3">
           <p>
-            Rod ratio (or L/S ratio) is the connecting rod center-to-center length divided by the crankshaft stroke. This ratio affects three critical aspects of engine operation: piston dwell time at top dead center, piston side loading against the cylinder wall, and the rate of piston acceleration through the stroke. A higher rod ratio means the piston spends more time near TDC, giving combustion pressure more time to push the piston down during the power stroke. It also reduces the rod angle relative to the cylinder bore, which lowers side thrust on the piston skirt and reduces friction.
+            The connecting rod ratio (L/S) is the rod's center-to-center length divided by the crankshaft stroke. This ratio affects three critical aspects of engine operation: piston dwell time at top dead center, piston side loading against the cylinder wall, and the rate of piston acceleration through the stroke. A higher ratio means the rod operates at a smaller angle to the cylinder bore, reducing the side thrust that pushes the piston against the wall and causes friction and wear.
           </p>
           <p>
-            However, a higher rod ratio is not automatically better. Longer rods require either a taller deck height (bigger block), a shorter piston compression height, or both. Short compression-height pistons are weaker and more expensive to manufacture. There are also diminishing returns above about 1.8:1 — the gains in dwell time and reduced side loading become marginal while the packaging challenges become significant. Most successful performance engines fall in the 1.6 to 1.8 range.
+            Common factory ratios include: SBC 350 at 1.638 (5.700" rod / 3.480" stroke), LS1 at 1.684 (6.098" / 3.622"), and Ford 302 at 1.697 (5.090" / 3.000"). The LS1's ratio is notably better than the old small block, which is one reason the LS platform is smoother and more efficient at high RPM. Most performance engine builders target a ratio between 1.6 and 1.8, with the sweet spot around 1.65-1.75 for street engines.
           </p>
-          <h3 className="text-sm font-semibold text-foreground mt-4">Rod Ratio by Engine Family</h3>
+          <h3 className="text-sm font-semibold text-foreground mt-4">The 383 Stroker Problem</h3>
           <p>
-            The Chevy small block 350 runs a 5.700" rod on a 3.480" stroke for a 1.638:1 ratio — on the low end by modern standards. The GM LS1 improved this to 1.684:1 with a 6.098" rod and 3.622" stroke. Ford's 302 Windsor achieves 1.697:1 with a 5.090" rod and 3.000" stroke. The Honda K24A reaches 1.705:1, and the Toyota 2JZ sits at 1.687:1. When building a stroker engine, always recalculate rod ratio — a 383 SBC stroker with stock 5.700" rods drops to 1.520:1, which is why many builders upgrade to 6.000" rods.
+            When you stroke a 350 SBC to 383ci using a 3.750" stroke crank but keep the stock 5.700" rods, the ratio drops to 1.520 — well below the ideal range. This increases side loading and piston wear. The solution is upgrading to 6.000" rods, which brings the ratio back up to 1.600. However, longer rods require a shorter compression height piston to fit in the same block deck height, adding cost. A higher ratio is not always better because of these packaging constraints — you need room for adequate piston pin support, oil ring rail clearance, and a compression height that the piston manufacturer actually produces.
           </p>
         </CardContent>
       </Card>

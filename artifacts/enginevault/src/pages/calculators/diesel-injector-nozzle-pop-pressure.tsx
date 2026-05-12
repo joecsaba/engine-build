@@ -605,7 +605,7 @@ export default function DieselInjectorNozzlePopPressureCalculator() {
   }, [popHoleCount]);
 
   return (
-    <div className="container mx-auto py-8 px-4 max-w-6xl">
+    <div className="container mx-auto py-8 px-4 max-w-7xl">
       <SEOHead
         title="Diesel Injector Nozzle & Pop Pressure Calculator"
         description="Diesel nozzle sizing calculator for Cummins P-pump, VE, and VP44 engines. 5-hole and 7-hole nozzle support, SAC vs VCO selection, pop pressure recommendation, turbo match, air/fuel assessment, and common rail injector reference."
@@ -617,6 +617,9 @@ export default function DieselInjectorNozzlePopPressureCalculator() {
       <p className="text-muted-foreground mb-6">
         Size mechanical diesel nozzles, calculate pop-off pressure, or look up common rail injector sizing. Built for Cummins P-pump, VE, and VP44 builders.
       </p>
+
+      <div className="flex flex-col xl:flex-row gap-8">
+      <div className="flex-1 min-w-0">
 
       {/* ── Mode Toggle ─────────────────────────────────────────────── */}
       <div className="flex flex-wrap gap-1 bg-muted rounded-lg p-1 mb-8 w-fit">
@@ -1296,6 +1299,71 @@ export default function DieselInjectorNozzlePopPressureCalculator() {
           </div>
         </div>
       </Section>
+
+      </div>{/* end left column */}
+
+      <aside className="xl:w-80 shrink-0 space-y-6">
+        <Card className="sticky top-20">
+          <CardHeader className="pb-3">
+            <CardTitle className="text-base flex items-center gap-2">
+              <Info className="w-4 h-4 text-[#E85D04]" />
+              Quick Reference
+            </CardTitle>
+          </CardHeader>
+          <CardContent className="text-sm text-muted-foreground space-y-4">
+            <div>
+              <h4 className="font-semibold text-foreground mb-1">Nozzle Sizing Rule</h4>
+              <p>Bigger nozzles need higher pop pressure and more turbo airflow. Nozzles without matching turbo = smoke, not power.</p>
+            </div>
+            <div>
+              <h4 className="font-semibold text-foreground mb-1">5-Hole vs 7-Hole</h4>
+              <p>5-hole: coarser spray, better at low RPM/pressure. 7-hole: finer atomization, cleaner burn, less smoke at equal power.</p>
+            </div>
+            <div>
+              <h4 className="font-semibold text-foreground mb-1">SAC vs VCO</h4>
+              <p>SAC: fuel reservoir below needle, more durable at large sizes. VCO: cleaner cutoff, less idle smoke but fragile when oversized.</p>
+            </div>
+            <div className="border-t pt-3">
+              <h4 className="font-semibold text-foreground mb-1">12V Cummins Nozzle Path</h4>
+              <ul className="space-y-1 mt-1 text-xs">
+                <li className="flex justify-between"><span>280-320 HP:</span><span className="font-mono">5x0.014"</span></li>
+                <li className="flex justify-between"><span>400-450 HP:</span><span className="font-mono">5x0.016"</span></li>
+                <li className="flex justify-between"><span>550-650 HP:</span><span className="font-mono">5x0.018"</span></li>
+                <li className="flex justify-between"><span>700+ HP:</span><span className="font-mono">5x0.020"+</span></li>
+              </ul>
+            </div>
+            <div className="border-t pt-3">
+              <h4 className="font-semibold text-foreground mb-1">Pop Pressure Ranges</h4>
+              <ul className="space-y-1 mt-1 text-xs">
+                <li className="flex justify-between"><span>Stock:</span><span className="font-mono">3,100-3,300 PSI</span></li>
+                <li className="flex justify-between"><span>Mild (0.014"):</span><span className="font-mono">3,600-3,800 PSI</span></li>
+                <li className="flex justify-between"><span>Perf (0.016"):</span><span className="font-mono">4,000-4,200 PSI</span></li>
+                <li className="flex justify-between"><span>Race (0.018"+):</span><span className="font-mono">4,500-5,000 PSI</span></li>
+              </ul>
+            </div>
+          </CardContent>
+        </Card>
+      </aside>
+
+      </div>{/* end flex row */}
+
+      <Card className="mt-8">
+        <CardHeader>
+          <CardTitle className="text-lg">Diesel Injector Nozzles and Pop Pressure</CardTitle>
+        </CardHeader>
+        <CardContent className="prose prose-sm max-w-none text-muted-foreground space-y-3">
+          <p>
+            On mechanical diesel engines like the 12-valve Cummins, fuel injector nozzles are replaceable tips that control fuel spray pattern, atomization, and flow rate. The nozzle's orifice size (measured in thousandths of an inch) and number of holes determine how much fuel can be delivered per injection event. A stock 12-valve Cummins uses a 5x0.012" nozzle (five holes at 0.012" each). Upgrading to 5x0.014" nozzles increases fuel flow to support 280-320 HP, while 5x0.016" nozzles push to 400-450 HP.
+          </p>
+          <p>
+            Pop pressure (also called nozzle opening pressure or NOP) is the fuel pressure at which the nozzle needle lifts off its seat and fuel begins spraying. Higher pop pressure produces finer atomization and a cleaner burn but requires the injection pump to work harder. Stock pop pressure is 3,100-3,300 PSI. When upgrading nozzles, pop pressure must increase proportionally — larger nozzle orifices at stock pop pressure produce poor atomization, excessive smoke, and no power gain. A 0.016" nozzle typically needs 4,000-4,200 PSI pop pressure.
+          </p>
+          <h3 className="text-sm font-semibold text-foreground mt-4">Mechanical vs. Common Rail</h3>
+          <p>
+            Common rail diesel engines (2003+ Cummins, all Duramax, 6.0L+ Powerstroke) use sealed, electronically controlled injector assemblies. You cannot simply swap nozzle tips — upgrading requires purchasing complete injector sets rated as "50% over," "100% over," or larger from manufacturers like Industrial Injection or Exergy. The ECU must then be reprogrammed by a qualified tuner to match the new injector flow characteristics, pulse width, and timing. This is a fundamentally different approach than the bolt-on nozzle swaps possible on mechanical engines.
+          </p>
+        </CardContent>
+      </Card>
     </div>
   );
 }

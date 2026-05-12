@@ -10,7 +10,7 @@ import { useBuildContext } from "@/context/BuildContext";
 import { BUILD_SECTIONS, isSectionComplete } from "@/data/buildFieldDefs";
 
 type BuildSummary = {
-  id: number;
+  id: string;
   name: string;
   engineSlug: string;
   createdAt: string;
@@ -30,7 +30,7 @@ export default function MyBuildsPage() {
 
   const [builds, setBuilds] = useState<BuildSummary[]>([]);
   const [isLoading, setIsLoading] = useState(true);
-  const [deletingId, setDeletingId] = useState<number | null>(null);
+  const [deletingId, setDeletingId] = useState<string | null>(null);
 
   useEffect(() => {
     if (!isLoaded) return;
@@ -55,7 +55,7 @@ export default function MyBuildsPage() {
     }
   }
 
-  async function handleDelete(id: number) {
+  async function handleDelete(id: string) {
     if (!confirm("Delete this build? This cannot be undone.")) return;
     setDeletingId(id);
     try {
@@ -70,7 +70,7 @@ export default function MyBuildsPage() {
     }
   }
 
-  async function handleContinue(id: number) {
+  async function handleContinue(id: string) {
     await loadBuild(id);
     setLocation(`/build-sheets/build/${id}`);
   }

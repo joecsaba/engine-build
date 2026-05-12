@@ -15,7 +15,7 @@ export type CamRecommendation = {
 };
 
 export type ActiveBuild = {
-  id: number;
+  id: string;
   name: string;
   engineSlug: string;
   fields: Record<string, string>;
@@ -37,7 +37,7 @@ type BuildContextValue = {
 
   // Active build
   activeBuild: ActiveBuild | null;
-  loadBuild: (buildId: number) => Promise<void>;
+  loadBuild: (buildId: string) => Promise<void>;
   clearActiveBuild: () => void;
 
   // Field access — the key API for calculators and the wizard
@@ -106,7 +106,7 @@ export function BuildContextProvider({ children }: { children: React.ReactNode }
 
   // ── Sync dirty fields to API ───────────────────────────────────────────────
 
-  const flushSync = useCallback(async (buildId?: number) => {
+  const flushSync = useCallback(async (buildId?: string) => {
     const fields = { ...dirtyFieldsRef.current };
     const id = buildId ?? activeBuild?.id;
     if (!id || Object.keys(fields).length === 0) return;
@@ -160,18 +160,21 @@ export function BuildContextProvider({ children }: { children: React.ReactNode }
 
   // ── Active build management ────────────────────────────────────────────────
 
-  const loadBuild = useCallback(async (buildId: number) => {
+  const loadBuild = useCallback(async (buildId: string) => {
     try {
       const res = await authFetch(`/api/builds/${buildId}`);
       if (!res.ok) throw new Error("Failed to load build");
       const data = await res.json();
 
-      // Convert field entries array to a flat map
+      // Convert fields to a flat map — handle both array format (Postgres)
+      // and object format (DynamoDB Lambda)
       const fields: Record<string, string> = {};
       if (data.fields && Array.isArray(data.fields)) {
         for (const entry of data.fields) {
           fields[entry.fieldKey] = entry.value;
         }
+      } else if (data.fields && typeof data.fields === "object") {
+        Object.assign(fields, data.fields);
       }
 
       // Parse wizard metadata from stateJson

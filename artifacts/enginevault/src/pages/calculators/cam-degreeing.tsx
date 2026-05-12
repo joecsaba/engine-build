@@ -4,7 +4,7 @@ import { SEOHead } from "@/components/SEOHead";
 import { Input } from "@/components/ui/input";
 import { Label } from "@/components/ui/label";
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
-import { ChevronDown, Printer, Clipboard, Check } from "lucide-react";
+import { ChevronDown, Printer, Clipboard, Check, Info } from "lucide-react";
 
 // ── Types ──────────────────────────────────────────────────────────────────────
 
@@ -350,12 +350,12 @@ export default function CamDegreeingCalculator() {
   const handlePrint = () => window.print();
 
   return (
-    <div className="max-w-4xl mx-auto">
+    <div className="max-w-7xl mx-auto">
       <div className="px-4 space-y-5">
         <div>
           <SEOHead
-            title="Cam Degreeing Calculator"
-            description="Step-by-step cam degreeing guide with intake centerline calculator. Verify cam timing, find true TDC, measure valve events, and get offset bushing recommendations. Free tool for engine builders."
+            title="Cam Degreeing Calculator | Intake Centerline & TDC"
+            description="Step-by-step cam degreeing guide with intake centerline calculator. Verify cam timing, find true TDC, and get offset bushing recommendations."
             canonical="/calculators/cam-degreeing"
             keywords="cam degreeing calculator, degree camshaft, intake centerline calculator, cam timing verification, offset bushing calculator, piston stop TDC, degreeing cam, cam installation tool"
           />
@@ -373,6 +373,9 @@ export default function CamDegreeingCalculator() {
             </p>
           </div>
         </div>
+
+        <div className="flex flex-col xl:flex-row gap-8">
+        <div className="flex-1 min-w-0">
 
         {/* ── STEP 1: Cam Card Specs ─────────────────────────── */}
         <Section title="Step 1 — Enter Your Cam Card Specs">
@@ -891,30 +894,63 @@ export default function CamDegreeingCalculator() {
           </div>
         </Section>
 
-        {/* ── Educational Note ───────────────────────────────── */}
-        <Card className="mt-8 mx-4">
+        </div>{/* end left column */}
+
+        <aside className="xl:w-80 shrink-0 space-y-6">
+          <Card className="sticky top-20">
+            <CardHeader className="pb-3">
+              <CardTitle className="text-base flex items-center gap-2">
+                <Info className="w-4 h-4 text-[#E85D04]" />
+                Quick Reference
+              </CardTitle>
+            </CardHeader>
+            <CardContent className="text-sm text-muted-foreground space-y-4">
+              <div>
+                <h4 className="font-semibold text-foreground mb-1">Why Degree the Cam?</h4>
+                <p>Manufacturing tolerances in blanks, keyways, and chains can stack 2-6 degrees of error. Degreeing verifies actual vs. spec installation.</p>
+              </div>
+              <div>
+                <h4 className="font-semibold text-foreground mb-1">Advance vs Retard</h4>
+                <ul className="space-y-1 mt-1">
+                  <li><span className="font-medium text-foreground">+4° advance:</span> +4-6 ft-lb low RPM, -3-5 HP peak</li>
+                  <li><span className="font-medium text-foreground">Retard:</span> Opposite — more top-end, less low-end</li>
+                </ul>
+              </div>
+              <div>
+                <h4 className="font-semibold text-foreground mb-1">Common Errors</h4>
+                <ul className="space-y-1 mt-1">
+                  <li>Not using piston stop for true TDC (damper pointer can be off 1-3°)</li>
+                  <li>Chain backlash adding 0.5-1° per reading</li>
+                </ul>
+              </div>
+              <div>
+                <h4 className="font-semibold text-foreground mb-1">Correction Thresholds</h4>
+                <p>1° = within measurement precision, ignore it. 2° = correct on street builds. 3°+ = always correct.</p>
+              </div>
+              <div className="border-t pt-3">
+                <h4 className="font-semibold text-foreground mb-1">Street Engine Tip</h4>
+                <p>Factory cams are typically ground 2-4° advanced from design spec. Installing "straight up" per card may feel lazy at low RPM vs factory feel.</p>
+              </div>
+            </CardContent>
+          </Card>
+        </aside>
+
+        </div>{/* end flex row */}
+
+        <Card className="mt-8">
           <CardHeader>
-            <CardTitle className="text-lg">Why Degree Your Camshaft</CardTitle>
+            <CardTitle className="text-lg">Why You Should Degree Every Cam</CardTitle>
           </CardHeader>
           <CardContent className="prose prose-sm max-w-none text-muted-foreground space-y-3">
             <p>
-              Manufacturing tolerances in cam blanks, keyways, and timing chains can stack to 2–6° of error even on a brand-new timing set. Degreeing verifies the cam is actually installed where the cam card says it should be. This is usually the difference between a dog of an engine and a strong one — or, in extreme cases, between a safe build and a bent-valve event.
+              Even camshafts marked "straight up" from the manufacturer can be off by 2-4 degrees from the intended grind due to variations in the cam core, keyway slot, and timing set. Two degrees may not sound like much, but it changes the intake valve closing point (IVC) by 2 crankshaft degrees, which directly affects dynamic compression ratio and shifts the power band. On a high-compression engine, this can be the difference between clean combustion and destructive detonation.
             </p>
-            <h3 className="text-sm font-semibold text-foreground mt-4">Advance vs. Retard Effects</h3>
             <p>
-              Advancing the cam by 4° typically gains 4–6 ft-lb of peak torque at low RPM and loses 3–5 HP at peak HP. Retarding does the opposite. This trade-off is why some cam grinders sell the same lobe at different ICLs depending on application.
+              The degreeing process starts with finding true top dead center (TDC) using a piston stop — never trust the timing mark on the balancer. Install a degree wheel on the crankshaft snout and a dial indicator on the number one intake lifter. Rotate the engine and record the opening and closing points of the intake lobe at 0.050" lift. The midpoint between these two readings is the intake centerline, which you compare to the cam card specification.
             </p>
-            <h3 className="text-sm font-semibold text-foreground mt-4">Why Most Street Engines Benefit from Some Advance</h3>
+            <h3 className="text-sm font-semibold text-foreground mt-4">Advance and Retard</h3>
             <p>
-              Factory cams are usually ground with the ICL advanced 2–4° from the design spec to favor low-RPM torque. Builders who install the cam "straight up" (exactly per card) often feel the engine is lazy at low RPM vs factory feel.
-            </p>
-            <h3 className="text-sm font-semibold text-foreground mt-4">The Two Most Common Degreeing Errors</h3>
-            <p>
-              Not establishing true TDC with a piston stop (the damper pointer can be off 1–3°). Not removing all slack from the degree wheel before reading (backlash adds 0.5–1° of error on every reading).
-            </p>
-            <h3 className="text-sm font-semibold text-foreground mt-4">When to Stop Chasing Perfection</h3>
-            <p>
-              A 1° difference from card spec is within measurement precision. Don't install an offset bushing for 1° — you'll just introduce different tolerance errors. 3° of difference is worth correcting on a race engine; 2° is the threshold on a street build.
+              If the measured intake centerline is later (higher number) than the cam card, the cam is retarded — it shifts the power band upward in RPM. If it is earlier (lower number), the cam is advanced — more low-end torque but an earlier falloff on top. Most street engines benefit from 2-4 degrees of advance for better throttle response. Use an offset bushing in the cam gear or an adjustable timing set to dial in the exact centerline you want. Always verify the final position after torquing the cam bolt.
             </p>
           </CardContent>
         </Card>
