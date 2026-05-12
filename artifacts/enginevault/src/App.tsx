@@ -59,6 +59,7 @@ import OctaneMixCalculator from "@/pages/calculators/octane-mix";
 import DensityAltitudeCalculator from "@/pages/calculators/density-altitude";
 import HeaderSizingCalculator from "@/pages/calculators/header-sizing";
 import TorqueConverterStallCalculator from "@/pages/calculators/torque-converter-stall";
+import HeadMillingCalculator from "@/pages/calculators/head-milling";
 
 import CategoryShortBlock from "@/pages/calculators/category-short-block";
 import CategoryCamValvetrain from "@/pages/calculators/category-cam-valvetrain";
@@ -160,6 +161,7 @@ function Router() {
         <Route path="/calculators/density-altitude" component={DensityAltitudeCalculator} />
         <Route path="/calculators/header-sizing" component={HeaderSizingCalculator} />
         <Route path="/calculators/torque-converter-stall" component={TorqueConverterStallCalculator} />
+        <Route path="/calculators/head-milling" component={HeadMillingCalculator} />
 
         <Route path="/cam-guide" component={CamGuide} />
         <Route path="/build-advisor" component={BuildAdvisor} />

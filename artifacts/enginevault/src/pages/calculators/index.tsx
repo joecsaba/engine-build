@@ -100,6 +100,13 @@ const calculators: { title: string; href: string; desc: string; tags: string[]; 
     icon: ShieldAlert,
   },
   {
+    title: "Head Milling Calculator",
+    href: "/calculators/head-milling",
+    desc: "Calculate how head milling changes compression ratio, OHC cam timing retard, valve-to-piston clearance, and intake alignment. Engine presets for Subaru boxer, Honda, Toyota, Nissan, BMW, Ford, and Porsche. Handles flat/boxer asymmetric bank timing.",
+    tags: ["Cam Timing Retard", "CR Change", "P2V Clearance", "Boxer / OHC"],
+    icon: Wrench,
+  },
+  {
     title: "Valve Spring Calculator",
     href: "/calculators/valve-spring",
     desc: "Validate valve spring specs for your cam profile. Seat pressure, open pressure, coil bind clearance, and spring rate analysis.",
