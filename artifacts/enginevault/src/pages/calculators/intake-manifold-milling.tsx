@@ -178,28 +178,20 @@ function VEngineDiagram({ highlightA, highlightB, highlightC }: {
       <path d="M 80 350 L 80 270 L 170 180 L 220 230 L 380 230 L 430 180 L 520 270 L 520 350 Z"
         fill="#2a2a2a" stroke="#4a4a4a" strokeWidth="1" />
 
-      {/* Cylinder bores (45deg tilted) */}
-      <path d="M 139 211 L 196 268 L 168 296 L 111 239 Z" fill="#0a0a0a" />
-      <path d="M 461 211 L 489 239 L 432 296 L 404 268 Z" fill="#0a0a0a" />
-
       {/* Heads (parallelograms tilted 45deg) */}
       <path d="M 80 270 L 170 180 L 121 131 L 31 221 Z" fill="#3a3a3a" stroke="#5a5a5a" strokeWidth="1" />
       <path d="M 520 270 L 430 180 L 479 131 L 569 221 Z" fill="#3a3a3a" stroke="#5a5a5a" strokeWidth="1" />
 
-      {/* Combustion chambers */}
-      <path d="M 139 211 Q 100 200 111 239 Z" fill="#0a0a0a" />
-      <path d="M 461 211 Q 500 200 489 239 Z" fill="#0a0a0a" />
-
-      {/* Intake manifold */}
-      <path d="M 220 230 L 140 150 L 460 150 L 380 230 Z" fill="#444444" stroke="#6a6a6a" strokeWidth="1" />
+      {/* Intake manifold — raised to the top of the heads */}
+      <path d="M 220 230 L 121 131 L 479 131 L 380 230 Z" fill="#444444" stroke="#6a6a6a" strokeWidth="1" />
 
       {/* Surface A: Head deck / gasket surfaces */}
       <line x1="80" y1="270" x2="170" y2="180" stroke={highlightA ? colorA : dim} strokeWidth={highlightA ? 6 : 5} />
       <line x1="520" y1="270" x2="430" y2="180" stroke={highlightA ? colorA : dim} strokeWidth={highlightA ? 6 : 5} />
 
-      {/* Surface B: Intake manifold faces (angled) */}
-      <line x1="170" y1="180" x2="140" y2="150" stroke={highlightB ? colorB : dim} strokeWidth={highlightB ? 6 : 5} />
-      <line x1="430" y1="180" x2="460" y2="150" stroke={highlightB ? colorB : dim} strokeWidth={highlightB ? 6 : 5} />
+      {/* Surface B: Intake manifold faces (angled — full height of head) */}
+      <line x1="170" y1="180" x2="121" y2="131" stroke={highlightB ? colorB : dim} strokeWidth={highlightB ? 6 : 5} />
+      <line x1="430" y1="180" x2="479" y2="131" stroke={highlightB ? colorB : dim} strokeWidth={highlightB ? 6 : 5} />
 
       {/* Surface C: Manifold bottom / block rail */}
       <line x1="220" y1="230" x2="380" y2="230" stroke={highlightC ? colorC : dim} strokeWidth={highlightC ? 6 : 5} />
@@ -208,8 +200,8 @@ function VEngineDiagram({ highlightA, highlightB, highlightC }: {
       <line x1="125" y1="358" x2="125" y2="226" stroke="#999" strokeWidth="1" strokeDasharray="5,3" />
       <line x1="475" y1="358" x2="475" y2="226" stroke="#999" strokeWidth="1" strokeDasharray="5,3" />
       <line x1="300" y1="358" x2="300" y2="231" stroke="#999" strokeWidth="1" strokeDasharray="5,3" />
-      <line x1="68" y1="68" x2="154" y2="164" stroke="#999" strokeWidth="1" strokeDasharray="5,3" />
-      <line x1="532" y1="68" x2="446" y2="164" stroke="#999" strokeWidth="1" strokeDasharray="5,3" />
+      <line x1="55" y1="68" x2="144" y2="154" stroke="#999" strokeWidth="1" strokeDasharray="5,3" />
+      <line x1="545" y1="68" x2="456" y2="154" stroke="#999" strokeWidth="1" strokeDasharray="5,3" />
 
       {/* Circle labels — A */}
       <circle cx="125" cy="370" r="11" fill="#1a1a1a" stroke={colorA} strokeWidth="2" />
@@ -218,20 +210,20 @@ function VEngineDiagram({ highlightA, highlightB, highlightC }: {
       <text x="475" y="370" textAnchor="middle" dominantBaseline="central" fill={colorA} fontFamily="ui-monospace, monospace" fontSize="13" fontWeight="bold">A</text>
 
       {/* Circle labels — B */}
-      <circle cx="60" cy="60" r="11" fill="#1a1a1a" stroke={colorB} strokeWidth="2" />
-      <text x="60" y="60" textAnchor="middle" dominantBaseline="central" fill={colorB} fontFamily="ui-monospace, monospace" fontSize="13" fontWeight="bold">B</text>
-      <circle cx="540" cy="60" r="11" fill="#1a1a1a" stroke={colorB} strokeWidth="2" />
-      <text x="540" y="60" textAnchor="middle" dominantBaseline="central" fill={colorB} fontFamily="ui-monospace, monospace" fontSize="13" fontWeight="bold">B</text>
+      <circle cx="47" cy="60" r="11" fill="#1a1a1a" stroke={colorB} strokeWidth="2" />
+      <text x="47" y="60" textAnchor="middle" dominantBaseline="central" fill={colorB} fontFamily="ui-monospace, monospace" fontSize="13" fontWeight="bold">B</text>
+      <circle cx="553" cy="60" r="11" fill="#1a1a1a" stroke={colorB} strokeWidth="2" />
+      <text x="553" y="60" textAnchor="middle" dominantBaseline="central" fill={colorB} fontFamily="ui-monospace, monospace" fontSize="13" fontWeight="bold">B</text>
 
       {/* Circle labels — C */}
       <circle cx="300" cy="370" r="11" fill="#1a1a1a" stroke={colorC} strokeWidth="2" />
       <text x="300" y="370" textAnchor="middle" dominantBaseline="central" fill={colorC} fontFamily="ui-monospace, monospace" fontSize="13" fontWeight="bold">C</text>
 
       {/* Part labels */}
-      <text x="86" y="216" textAnchor="middle" dominantBaseline="central" fill="#dddddd" fontFamily="ui-monospace, monospace" fontSize="11" fontWeight="bold" letterSpacing="1.5" transform="rotate(-45 86 216)">HEAD</text>
-      <text x="514" y="216" textAnchor="middle" dominantBaseline="central" fill="#dddddd" fontFamily="ui-monospace, monospace" fontSize="11" fontWeight="bold" letterSpacing="1.5" transform="rotate(45 514 216)">HEAD</text>
+      <text x="86" y="230" textAnchor="middle" dominantBaseline="central" fill="#dddddd" fontFamily="ui-monospace, monospace" fontSize="11" fontWeight="bold" letterSpacing="1.5" transform="rotate(-45 86 230)">HEAD</text>
+      <text x="514" y="230" textAnchor="middle" dominantBaseline="central" fill="#dddddd" fontFamily="ui-monospace, monospace" fontSize="11" fontWeight="bold" letterSpacing="1.5" transform="rotate(45 514 230)">HEAD</text>
       <text x="300" y="305" textAnchor="middle" dominantBaseline="central" fill="#dddddd" fontFamily="ui-monospace, monospace" fontSize="11" fontWeight="bold" letterSpacing="2">BLOCK</text>
-      <text x="300" y="190" textAnchor="middle" dominantBaseline="central" fill="#dddddd" fontFamily="ui-monospace, monospace" fontSize="10" fontWeight="bold" letterSpacing="1.5">INTAKE MANIFOLD</text>
+      <text x="300" y="175" textAnchor="middle" dominantBaseline="central" fill="#dddddd" fontFamily="ui-monospace, monospace" fontSize="10" fontWeight="bold" letterSpacing="1.5">INTAKE MANIFOLD</text>
 
       {/* Legend */}
       <text x="300" y="392" textAnchor="middle" fill="#bbbbbb" fontFamily="ui-monospace, monospace" fontSize="10">
