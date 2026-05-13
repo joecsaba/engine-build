@@ -574,3 +574,32 @@ export function useRingGapSpecs() {
 export function useRingGapMultipliers() {
   return useJsonData<RingGapMultiplier>("ring_gap_multipliers.json");
 }
+
+// ── Bolt Spec Data ───────────────────────────────────────────────
+
+export interface BoltSpecEntry {
+  variant: string | null;
+  thread_callout: string;
+  diameter_in: number | null;
+  diameter_mm: number | null;
+  thread_pitch_tpi: number | null;
+  thread_pitch_mm: number | null;
+  bolt_count: number | null;
+  factory_type: string;
+  hex_size: string | null;
+  common_upgrade: string | null;
+  notes: string | null;
+}
+
+export interface BoltSpecPlatform {
+  slug: string;
+  display_name: string;
+  manufacturer: string;
+  sort_order: number;
+  head_bolts: BoltSpecEntry[] | null;
+  main_bolts: BoltSpecEntry[] | null;
+}
+
+export function useBoltSpecs() {
+  return useJsonData<BoltSpecPlatform>("bolt_specs.json");
+}

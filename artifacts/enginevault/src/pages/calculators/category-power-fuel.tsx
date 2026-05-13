@@ -1,6 +1,6 @@
 import { Link } from "wouter";
 import {
-  Zap, Flame, Wind, Droplet, Gauge, Fuel, Waves, type LucideIcon,
+  Zap, Flame, Wind, Droplet, Gauge, Fuel, Waves, Timer, type LucideIcon,
 } from "lucide-react";
 import { PageHeader } from "@/components/layout/PageHeader";
 import { SEOHead } from "@/components/SEOHead";
@@ -77,6 +77,13 @@ const powerFuel: Calc[] = [
     desc: "Size exhaust header primaries and collectors using acoustic harmonic tuning. Shows tube diameter, harmonic lengths, and collector dimensions.",
     tags: ["Header Sizing", "Primary Length", "Collector"],
     icon: Waves,
+  },
+  {
+    title: "Ignition Timing Advance Curve",
+    href: "/calculators/ignition-timing-curve",
+    desc: "Visualize your ignition advance curve. Input initial, mechanical, and vacuum advance to see total timing vs RPM at WOT, part throttle, and cruise.",
+    tags: ["Timing Curve", "Advance", "Distributor", "Ignition"],
+    icon: Timer,
   },
 ];
 

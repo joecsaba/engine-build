@@ -1,6 +1,6 @@
 import { Link } from "wouter";
 import {
-  Cylinder, Gauge, Circle, Timer, Ruler, ArrowDownUp, Target, Wrench,
+  Cylinder, Gauge, Circle, Timer, Ruler, ArrowDownUp, Target, Wrench, Bolt,
   type LucideIcon,
 } from "lucide-react";
 import { PageHeader } from "@/components/layout/PageHeader";
@@ -71,6 +71,13 @@ const shortBlock: Calc[] = [
     desc: "Calculate how much to mill the intake manifold after surfacing heads or decking the block. Tells you when correction is needed.",
     tags: ["Head Surfacing", "Intake Alignment", "Block Decking"],
     icon: Wrench,
+  },
+  {
+    title: "Head Bolt & Main Bolt Specs",
+    href: "/calculators/bolt-spec-lookup",
+    desc: "Look up head bolt and main bolt thread sizes, diameters, and ARP upgrade part numbers for any engine platform.",
+    tags: ["Thread Size", "Bolt Diameter", "ARP Upgrade", "TTY"],
+    icon: Bolt,
   },
 ];
 

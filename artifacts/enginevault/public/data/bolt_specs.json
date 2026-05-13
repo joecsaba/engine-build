@@ -1,0 +1,1159 @@
+[
+  {
+    "slug": "sbc",
+    "display_name": "Small Block Chevy (262-400)",
+    "manufacturer": "Chevrolet",
+    "sort_order": 1,
+    "head_bolts": [
+      {
+        "variant": "standard",
+        "thread_callout": "3/8\"-16",
+        "diameter_in": 0.375,
+        "diameter_mm": 9.53,
+        "thread_pitch_tpi": 16,
+        "thread_pitch_mm": null,
+        "bolt_count": 17,
+        "factory_type": "bolt",
+        "hex_size": "9/16\"",
+        "common_upgrade": "ARP 134-3601",
+        "notes": "Most production SBC 1955-2000. 17 bolts per head."
+      },
+      {
+        "variant": "high_perf_7/16",
+        "thread_callout": "7/16\"-14",
+        "diameter_in": 0.4375,
+        "diameter_mm": 11.11,
+        "thread_pitch_tpi": 14,
+        "thread_pitch_mm": null,
+        "bolt_count": 17,
+        "factory_type": "bolt",
+        "hex_size": "5/8\"",
+        "common_upgrade": "ARP 134-3701",
+        "notes": "LT-1 (1970), ZZ4, and some high-perf factory heads use 7/16\" head bolts. Requires matching block."
+      }
+    ],
+    "main_bolts": [
+      {
+        "variant": "2_bolt",
+        "thread_callout": "7/16\"-14",
+        "diameter_in": 0.4375,
+        "diameter_mm": 11.11,
+        "thread_pitch_tpi": 14,
+        "thread_pitch_mm": null,
+        "bolt_count": 2,
+        "factory_type": "bolt",
+        "hex_size": "5/8\"",
+        "common_upgrade": "ARP 134-5001",
+        "notes": "All 2-bolt main SBC blocks."
+      },
+      {
+        "variant": "4_bolt_inner",
+        "thread_callout": "7/16\"-14",
+        "diameter_in": 0.4375,
+        "diameter_mm": 11.11,
+        "thread_pitch_tpi": 14,
+        "thread_pitch_mm": null,
+        "bolt_count": 2,
+        "factory_type": "bolt",
+        "hex_size": "5/8\"",
+        "common_upgrade": "ARP 134-5202",
+        "notes": "Inner main bolts on 4-bolt blocks."
+      },
+      {
+        "variant": "4_bolt_outer",
+        "thread_callout": "3/8\"-16",
+        "diameter_in": 0.375,
+        "diameter_mm": 9.53,
+        "thread_pitch_tpi": 16,
+        "thread_pitch_mm": null,
+        "bolt_count": 2,
+        "factory_type": "bolt",
+        "hex_size": "9/16\"",
+        "common_upgrade": "ARP 134-5202",
+        "notes": "Outer main bolts on 4-bolt blocks."
+      }
+    ]
+  },
+  {
+    "slug": "bbc",
+    "display_name": "Big Block Chevy (396-454-502)",
+    "manufacturer": "Chevrolet",
+    "sort_order": 2,
+    "head_bolts": [
+      {
+        "variant": "standard",
+        "thread_callout": "7/16\"-14",
+        "diameter_in": 0.4375,
+        "diameter_mm": 11.11,
+        "thread_pitch_tpi": 14,
+        "thread_pitch_mm": null,
+        "bolt_count": 17,
+        "factory_type": "bolt",
+        "hex_size": "5/8\"",
+        "common_upgrade": "ARP 135-3601",
+        "notes": "All production BBC heads. 17 bolts per head."
+      }
+    ],
+    "main_bolts": [
+      {
+        "variant": "2_bolt",
+        "thread_callout": "7/16\"-14",
+        "diameter_in": 0.4375,
+        "diameter_mm": 11.11,
+        "thread_pitch_tpi": 14,
+        "thread_pitch_mm": null,
+        "bolt_count": 2,
+        "factory_type": "bolt",
+        "hex_size": "5/8\"",
+        "common_upgrade": "ARP 135-5001",
+        "notes": "All 2-bolt main BBC blocks."
+      },
+      {
+        "variant": "4_bolt_inner",
+        "thread_callout": "1/2\"-13",
+        "diameter_in": 0.5,
+        "diameter_mm": 12.7,
+        "thread_pitch_tpi": 13,
+        "thread_pitch_mm": null,
+        "bolt_count": 2,
+        "factory_type": "bolt",
+        "hex_size": "3/4\"",
+        "common_upgrade": "ARP 135-5201",
+        "notes": "Inner main bolts on 4-bolt BBC blocks."
+      },
+      {
+        "variant": "4_bolt_outer",
+        "thread_callout": "7/16\"-14",
+        "diameter_in": 0.4375,
+        "diameter_mm": 11.11,
+        "thread_pitch_tpi": 14,
+        "thread_pitch_mm": null,
+        "bolt_count": 2,
+        "factory_type": "bolt",
+        "hex_size": "5/8\"",
+        "common_upgrade": "ARP 135-5201",
+        "notes": "Outer main bolts on 4-bolt BBC blocks."
+      }
+    ]
+  },
+  {
+    "slug": "ls",
+    "display_name": "LS / Gen III-IV",
+    "manufacturer": "Chevrolet",
+    "sort_order": 3,
+    "head_bolts": [
+      {
+        "variant": "gen3_inner",
+        "thread_callout": "M11x2.0",
+        "diameter_in": null,
+        "diameter_mm": 11.0,
+        "thread_pitch_tpi": null,
+        "thread_pitch_mm": 2.0,
+        "bolt_count": 10,
+        "factory_type": "torque_to_yield",
+        "hex_size": "15mm",
+        "common_upgrade": "ARP 234-3711",
+        "notes": "LS1/LS6 Gen III cathedral port. 10 long M11 per head + 5 short M8."
+      },
+      {
+        "variant": "gen3_outer",
+        "thread_callout": "M8x1.25",
+        "diameter_in": null,
+        "diameter_mm": 8.0,
+        "thread_pitch_tpi": null,
+        "thread_pitch_mm": 1.25,
+        "bolt_count": 5,
+        "factory_type": "torque_to_yield",
+        "hex_size": "13mm",
+        "common_upgrade": "ARP 234-3711",
+        "notes": "LS1/LS6 Gen III short outer head bolts."
+      },
+      {
+        "variant": "gen4_inner",
+        "thread_callout": "M11x2.0",
+        "diameter_in": null,
+        "diameter_mm": 11.0,
+        "thread_pitch_tpi": null,
+        "thread_pitch_mm": 2.0,
+        "bolt_count": 10,
+        "factory_type": "torque_to_yield",
+        "hex_size": "15mm",
+        "common_upgrade": "ARP 234-3711",
+        "notes": "LS2/LS3/L92/LS7 Gen IV. Same M11 pattern."
+      },
+      {
+        "variant": "gen4_outer",
+        "thread_callout": "M8x1.25",
+        "diameter_in": null,
+        "diameter_mm": 8.0,
+        "thread_pitch_tpi": null,
+        "thread_pitch_mm": 1.25,
+        "bolt_count": 5,
+        "factory_type": "torque_to_yield",
+        "hex_size": "13mm",
+        "common_upgrade": "ARP 234-3711",
+        "notes": "LS2/LS3/L92/LS7 Gen IV short outer head bolts."
+      }
+    ],
+    "main_bolts": [
+      {
+        "variant": "inner",
+        "thread_callout": "M10x1.5",
+        "diameter_in": null,
+        "diameter_mm": 10.0,
+        "thread_pitch_tpi": null,
+        "thread_pitch_mm": 1.5,
+        "bolt_count": 2,
+        "factory_type": "torque_to_yield",
+        "hex_size": "15mm",
+        "common_upgrade": "ARP 234-5801",
+        "notes": "Inner main bolts, all Gen III/IV LS. 4-bolt from factory."
+      },
+      {
+        "variant": "outer",
+        "thread_callout": "M10x1.5",
+        "diameter_in": null,
+        "diameter_mm": 10.0,
+        "thread_pitch_tpi": null,
+        "thread_pitch_mm": 1.5,
+        "bolt_count": 2,
+        "factory_type": "torque_to_yield",
+        "hex_size": "15mm",
+        "common_upgrade": "ARP 234-5801",
+        "notes": "Outer main bolts, all Gen III/IV LS."
+      },
+      {
+        "variant": "cross_bolt",
+        "thread_callout": "M8x1.25",
+        "diameter_in": null,
+        "diameter_mm": 8.0,
+        "thread_pitch_tpi": null,
+        "thread_pitch_mm": 1.25,
+        "bolt_count": 2,
+        "factory_type": "bolt",
+        "hex_size": "13mm",
+        "common_upgrade": null,
+        "notes": "Side cross-bolts on iron truck blocks (LQ4/LQ9 4.8/5.3/6.0). Not present on all LS blocks."
+      }
+    ]
+  },
+  {
+    "slug": "sbf",
+    "display_name": "Small Block Ford (221-351W)",
+    "manufacturer": "Ford",
+    "sort_order": 10,
+    "head_bolts": [
+      {
+        "variant": "289_302",
+        "thread_callout": "7/16\"-14",
+        "diameter_in": 0.4375,
+        "diameter_mm": 11.11,
+        "thread_pitch_tpi": 14,
+        "thread_pitch_mm": null,
+        "bolt_count": 14,
+        "factory_type": "bolt",
+        "hex_size": "5/8\"",
+        "common_upgrade": "ARP 154-3601",
+        "notes": "289/302/5.0 head bolts. 14 per head."
+      },
+      {
+        "variant": "351w",
+        "thread_callout": "1/2\"-13",
+        "diameter_in": 0.5,
+        "diameter_mm": 12.7,
+        "thread_pitch_tpi": 13,
+        "thread_pitch_mm": null,
+        "bolt_count": 14,
+        "factory_type": "bolt",
+        "hex_size": "3/4\"",
+        "common_upgrade": "ARP 154-3603",
+        "notes": "351W uses larger 1/2\" head bolts than 289/302."
+      }
+    ],
+    "main_bolts": [
+      {
+        "variant": "289_302",
+        "thread_callout": "7/16\"-14",
+        "diameter_in": 0.4375,
+        "diameter_mm": 11.11,
+        "thread_pitch_tpi": 14,
+        "thread_pitch_mm": null,
+        "bolt_count": 2,
+        "factory_type": "bolt",
+        "hex_size": "5/8\"",
+        "common_upgrade": "ARP 154-5001",
+        "notes": "289/302 2-bolt main."
+      },
+      {
+        "variant": "302_4_bolt",
+        "thread_callout": "7/16\"-14",
+        "diameter_in": 0.4375,
+        "diameter_mm": 11.11,
+        "thread_pitch_tpi": 14,
+        "thread_pitch_mm": null,
+        "bolt_count": 4,
+        "factory_type": "bolt",
+        "hex_size": "5/8\"",
+        "common_upgrade": "ARP 154-5202",
+        "notes": "Boss 302 and some Mexican blocks have 4-bolt mains."
+      },
+      {
+        "variant": "351w",
+        "thread_callout": "7/16\"-14",
+        "diameter_in": 0.4375,
+        "diameter_mm": 11.11,
+        "thread_pitch_tpi": 14,
+        "thread_pitch_mm": null,
+        "bolt_count": 2,
+        "factory_type": "bolt",
+        "hex_size": "5/8\"",
+        "common_upgrade": "ARP 154-5003",
+        "notes": "351W 2-bolt main. Same diameter as 302 despite larger head bolts."
+      }
+    ]
+  },
+  {
+    "slug": "fe_ford",
+    "display_name": "FE Ford (332-428)",
+    "manufacturer": "Ford",
+    "sort_order": 11,
+    "head_bolts": [
+      {
+        "variant": "standard",
+        "thread_callout": "7/16\"-14",
+        "diameter_in": 0.4375,
+        "diameter_mm": 11.11,
+        "thread_pitch_tpi": 14,
+        "thread_pitch_mm": null,
+        "bolt_count": 15,
+        "factory_type": "bolt",
+        "hex_size": "5/8\"",
+        "common_upgrade": "ARP 155-3601",
+        "notes": "All FE heads. 15 bolts per head."
+      }
+    ],
+    "main_bolts": [
+      {
+        "variant": "standard",
+        "thread_callout": "7/16\"-14",
+        "diameter_in": 0.4375,
+        "diameter_mm": 11.11,
+        "thread_pitch_tpi": 14,
+        "thread_pitch_mm": null,
+        "bolt_count": 2,
+        "factory_type": "bolt",
+        "hex_size": "5/8\"",
+        "common_upgrade": "ARP 155-5001",
+        "notes": "FE 2-bolt main (352, 360, 390)."
+      },
+      {
+        "variant": "427_cross_bolt",
+        "thread_callout": "7/16\"-14",
+        "diameter_in": 0.4375,
+        "diameter_mm": 11.11,
+        "thread_pitch_tpi": 14,
+        "thread_pitch_mm": null,
+        "bolt_count": 2,
+        "factory_type": "bolt",
+        "hex_size": "5/8\"",
+        "common_upgrade": "ARP 155-5201",
+        "notes": "427 side-oiler vertical main bolts."
+      },
+      {
+        "variant": "427_cross_bolt_side",
+        "thread_callout": "3/8\"-16",
+        "diameter_in": 0.375,
+        "diameter_mm": 9.53,
+        "thread_pitch_tpi": 16,
+        "thread_pitch_mm": null,
+        "bolt_count": 2,
+        "factory_type": "bolt",
+        "hex_size": "9/16\"",
+        "common_upgrade": null,
+        "notes": "427 side-oiler horizontal cross-bolts."
+      }
+    ]
+  },
+  {
+    "slug": "mod_ford",
+    "display_name": "Modular Ford (4.6/5.4)",
+    "manufacturer": "Ford",
+    "sort_order": 12,
+    "head_bolts": [
+      {
+        "variant": "4.6_2v",
+        "thread_callout": "M10x1.5",
+        "diameter_in": null,
+        "diameter_mm": 10.0,
+        "thread_pitch_tpi": null,
+        "thread_pitch_mm": 1.5,
+        "bolt_count": 10,
+        "factory_type": "torque_to_yield",
+        "hex_size": "15mm",
+        "common_upgrade": null,
+        "notes": "4.6L 2V SOHC head bolts. 10 per head."
+      },
+      {
+        "variant": "4.6_4v",
+        "thread_callout": "M10x1.5",
+        "diameter_in": null,
+        "diameter_mm": 10.0,
+        "thread_pitch_tpi": null,
+        "thread_pitch_mm": 1.5,
+        "bolt_count": 10,
+        "factory_type": "torque_to_yield",
+        "hex_size": "15mm",
+        "common_upgrade": null,
+        "notes": "4.6L 4V DOHC (Cobra, Mach 1) head bolts."
+      }
+    ],
+    "main_bolts": [
+      {
+        "variant": "standard",
+        "thread_callout": "M10x1.5",
+        "diameter_in": null,
+        "diameter_mm": 10.0,
+        "thread_pitch_tpi": null,
+        "thread_pitch_mm": 1.5,
+        "bolt_count": 4,
+        "factory_type": "torque_to_yield",
+        "hex_size": "15mm",
+        "common_upgrade": null,
+        "notes": "4.6/5.4 modular cross-bolted mains. 4 bolts per cap."
+      }
+    ]
+  },
+  {
+    "slug": "coyote",
+    "display_name": "Coyote 5.0",
+    "manufacturer": "Ford",
+    "sort_order": 13,
+    "head_bolts": [
+      {
+        "variant": "gen1_gen2",
+        "thread_callout": "M11x1.5",
+        "diameter_in": null,
+        "diameter_mm": 11.0,
+        "thread_pitch_tpi": null,
+        "thread_pitch_mm": 1.5,
+        "bolt_count": 10,
+        "factory_type": "torque_to_yield",
+        "hex_size": "15mm",
+        "common_upgrade": "ARP 256-4301",
+        "notes": "Coyote Gen 1-2 (2011-2017). 10 per head."
+      },
+      {
+        "variant": "gen3",
+        "thread_callout": "M11x1.5",
+        "diameter_in": null,
+        "diameter_mm": 11.0,
+        "thread_pitch_tpi": null,
+        "thread_pitch_mm": 1.5,
+        "bolt_count": 10,
+        "factory_type": "torque_to_yield",
+        "hex_size": "15mm",
+        "common_upgrade": "ARP 256-4301",
+        "notes": "Coyote Gen 3 (2018+). Same thread spec."
+      }
+    ],
+    "main_bolts": [
+      {
+        "variant": "standard",
+        "thread_callout": "M10x1.5",
+        "diameter_in": null,
+        "diameter_mm": 10.0,
+        "thread_pitch_tpi": null,
+        "thread_pitch_mm": 1.5,
+        "bolt_count": 4,
+        "factory_type": "bolt",
+        "hex_size": "15mm",
+        "common_upgrade": "ARP 256-5801",
+        "notes": "Coyote cross-bolted mains. 4 bolts per cap."
+      }
+    ]
+  },
+  {
+    "slug": "voodoo",
+    "display_name": "Voodoo 5.2 Flat-Plane",
+    "manufacturer": "Ford",
+    "sort_order": 14,
+    "head_bolts": [],
+    "main_bolts": []
+  },
+  {
+    "slug": "mopar_b",
+    "display_name": "Mopar B (361/383/400)",
+    "manufacturer": "Mopar",
+    "sort_order": 20,
+    "head_bolts": [
+      {
+        "variant": "standard",
+        "thread_callout": "7/16\"-14",
+        "diameter_in": 0.4375,
+        "diameter_mm": 11.11,
+        "thread_pitch_tpi": 14,
+        "thread_pitch_mm": null,
+        "bolt_count": 17,
+        "factory_type": "bolt",
+        "hex_size": "5/8\"",
+        "common_upgrade": "ARP 144-3601",
+        "notes": "Mopar B engine (361/383/400). 17 per head."
+      }
+    ],
+    "main_bolts": [
+      {
+        "variant": "2_bolt",
+        "thread_callout": "7/16\"-14",
+        "diameter_in": 0.4375,
+        "diameter_mm": 11.11,
+        "thread_pitch_tpi": 14,
+        "thread_pitch_mm": null,
+        "bolt_count": 2,
+        "factory_type": "bolt",
+        "hex_size": "5/8\"",
+        "common_upgrade": "ARP 144-5001",
+        "notes": "Mopar B 2-bolt main."
+      }
+    ]
+  },
+  {
+    "slug": "mopar_rb",
+    "display_name": "Mopar RB (413/426W/440)",
+    "manufacturer": "Mopar",
+    "sort_order": 21,
+    "head_bolts": [
+      {
+        "variant": "standard",
+        "thread_callout": "7/16\"-14",
+        "diameter_in": 0.4375,
+        "diameter_mm": 11.11,
+        "thread_pitch_tpi": 14,
+        "thread_pitch_mm": null,
+        "bolt_count": 17,
+        "factory_type": "bolt",
+        "hex_size": "5/8\"",
+        "common_upgrade": "ARP 145-3601",
+        "notes": "Mopar RB engine (413/426W/440). 17 per head."
+      }
+    ],
+    "main_bolts": [
+      {
+        "variant": "2_bolt",
+        "thread_callout": "1/2\"-13",
+        "diameter_in": 0.5,
+        "diameter_mm": 12.7,
+        "thread_pitch_tpi": 13,
+        "thread_pitch_mm": null,
+        "bolt_count": 2,
+        "factory_type": "bolt",
+        "hex_size": "3/4\"",
+        "common_upgrade": "ARP 145-5001",
+        "notes": "Mopar RB 2-bolt main. Larger 1/2\" bolts."
+      }
+    ]
+  },
+  {
+    "slug": "mopar_hemi",
+    "display_name": "426 Hemi",
+    "manufacturer": "Mopar",
+    "sort_order": 22,
+    "head_bolts": [
+      {
+        "variant": "426",
+        "thread_callout": "7/16\"-14",
+        "diameter_in": 0.4375,
+        "diameter_mm": 11.11,
+        "thread_pitch_tpi": 14,
+        "thread_pitch_mm": null,
+        "bolt_count": 16,
+        "factory_type": "stud",
+        "hex_size": "5/8\"",
+        "common_upgrade": "ARP 145-4001",
+        "notes": "426 Hemi used studs from factory. 16 per head."
+      }
+    ],
+    "main_bolts": [
+      {
+        "variant": "standard",
+        "thread_callout": "1/2\"-13",
+        "diameter_in": 0.5,
+        "diameter_mm": 12.7,
+        "thread_pitch_tpi": 13,
+        "thread_pitch_mm": null,
+        "bolt_count": 4,
+        "factory_type": "bolt",
+        "hex_size": "3/4\"",
+        "common_upgrade": "ARP 145-5201",
+        "notes": "426 Hemi 4-bolt mains from factory. Cross-bolted."
+      }
+    ]
+  },
+  {
+    "slug": "pontiac",
+    "display_name": "Pontiac V8 (326-455)",
+    "manufacturer": "Pontiac",
+    "sort_order": 30,
+    "head_bolts": [
+      {
+        "variant": "standard",
+        "thread_callout": "7/16\"-14",
+        "diameter_in": 0.4375,
+        "diameter_mm": 11.11,
+        "thread_pitch_tpi": 14,
+        "thread_pitch_mm": null,
+        "bolt_count": 14,
+        "factory_type": "bolt",
+        "hex_size": "5/8\"",
+        "common_upgrade": "ARP 194-3601",
+        "notes": "All Pontiac V8. 14 per head."
+      }
+    ],
+    "main_bolts": [
+      {
+        "variant": "2_bolt",
+        "thread_callout": "7/16\"-14",
+        "diameter_in": 0.4375,
+        "diameter_mm": 11.11,
+        "thread_pitch_tpi": 14,
+        "thread_pitch_mm": null,
+        "bolt_count": 2,
+        "factory_type": "bolt",
+        "hex_size": "5/8\"",
+        "common_upgrade": "ARP 194-5001",
+        "notes": "Pontiac 2-bolt main."
+      },
+      {
+        "variant": "4_bolt",
+        "thread_callout": "7/16\"-14",
+        "diameter_in": 0.4375,
+        "diameter_mm": 11.11,
+        "thread_pitch_tpi": 14,
+        "thread_pitch_mm": null,
+        "bolt_count": 4,
+        "factory_type": "bolt",
+        "hex_size": "5/8\"",
+        "common_upgrade": "ARP 194-5201",
+        "notes": "455 SD/HO 4-bolt main."
+      }
+    ]
+  },
+  {
+    "slug": "buick_v8",
+    "display_name": "Buick V8 (300-455)",
+    "manufacturer": "Buick",
+    "sort_order": 31,
+    "head_bolts": [
+      {
+        "variant": "standard",
+        "thread_callout": "7/16\"-14",
+        "diameter_in": 0.4375,
+        "diameter_mm": 11.11,
+        "thread_pitch_tpi": 14,
+        "thread_pitch_mm": null,
+        "bolt_count": 17,
+        "factory_type": "bolt",
+        "hex_size": "5/8\"",
+        "common_upgrade": "ARP 124-3601",
+        "notes": "Buick V8 (350, 400, 430, 455). 17 per head."
+      }
+    ],
+    "main_bolts": [
+      {
+        "variant": "2_bolt",
+        "thread_callout": "7/16\"-14",
+        "diameter_in": 0.4375,
+        "diameter_mm": 11.11,
+        "thread_pitch_tpi": 14,
+        "thread_pitch_mm": null,
+        "bolt_count": 2,
+        "factory_type": "bolt",
+        "hex_size": "5/8\"",
+        "common_upgrade": null,
+        "notes": "Buick V8 2-bolt main."
+      }
+    ]
+  },
+  {
+    "slug": "olds_v8",
+    "display_name": "Oldsmobile V8 (307-455)",
+    "manufacturer": "Oldsmobile",
+    "sort_order": 32,
+    "head_bolts": [
+      {
+        "variant": "standard",
+        "thread_callout": "7/16\"-14",
+        "diameter_in": 0.4375,
+        "diameter_mm": 11.11,
+        "thread_pitch_tpi": 14,
+        "thread_pitch_mm": null,
+        "bolt_count": 17,
+        "factory_type": "bolt",
+        "hex_size": "5/8\"",
+        "common_upgrade": "ARP 180-3601",
+        "notes": "Olds V8 (307, 350, 403, 425, 455). 17 per head."
+      }
+    ],
+    "main_bolts": [
+      {
+        "variant": "2_bolt",
+        "thread_callout": "7/16\"-14",
+        "diameter_in": 0.4375,
+        "diameter_mm": 11.11,
+        "thread_pitch_tpi": 14,
+        "thread_pitch_mm": null,
+        "bolt_count": 2,
+        "factory_type": "bolt",
+        "hex_size": "5/8\"",
+        "common_upgrade": null,
+        "notes": "Olds V8 2-bolt main."
+      },
+      {
+        "variant": "4_bolt",
+        "thread_callout": "7/16\"-14",
+        "diameter_in": 0.4375,
+        "diameter_mm": 11.11,
+        "thread_pitch_tpi": 14,
+        "thread_pitch_mm": null,
+        "bolt_count": 4,
+        "factory_type": "bolt",
+        "hex_size": "5/8\"",
+        "common_upgrade": null,
+        "notes": "Olds 455 4-bolt main (W-30, W-31)."
+      }
+    ]
+  },
+  {
+    "slug": "toyota_jz",
+    "display_name": "1JZ / 2JZ",
+    "manufacturer": "Toyota",
+    "sort_order": 40,
+    "head_bolts": [
+      {
+        "variant": "2jz",
+        "thread_callout": "M11x1.25",
+        "diameter_in": null,
+        "diameter_mm": 11.0,
+        "thread_pitch_tpi": null,
+        "thread_pitch_mm": 1.25,
+        "bolt_count": 14,
+        "factory_type": "torque_to_yield",
+        "hex_size": "14mm",
+        "common_upgrade": "ARP 203-4303",
+        "notes": "2JZ-GTE head bolts. 14 per head. TTY from factory \u2014 stud upgrade critical above 600 HP."
+      },
+      {
+        "variant": "1jz",
+        "thread_callout": "M11x1.25",
+        "diameter_in": null,
+        "diameter_mm": 11.0,
+        "thread_pitch_tpi": null,
+        "thread_pitch_mm": 1.25,
+        "bolt_count": 14,
+        "factory_type": "torque_to_yield",
+        "hex_size": "14mm",
+        "common_upgrade": "ARP 203-4301",
+        "notes": "1JZ-GTE head bolts. Same thread spec as 2JZ."
+      }
+    ],
+    "main_bolts": [
+      {
+        "variant": "2jz",
+        "thread_callout": "M12x1.25",
+        "diameter_in": null,
+        "diameter_mm": 12.0,
+        "thread_pitch_tpi": null,
+        "thread_pitch_mm": 1.25,
+        "bolt_count": 2,
+        "factory_type": "bolt",
+        "hex_size": "17mm",
+        "common_upgrade": "ARP 203-5001",
+        "notes": "2JZ main bolts. 2-bolt girdle-style main caps."
+      }
+    ]
+  },
+  {
+    "slug": "nissan_rb",
+    "display_name": "RB20 / RB25 / RB26",
+    "manufacturer": "Nissan",
+    "sort_order": 50,
+    "head_bolts": [
+      {
+        "variant": "rb26",
+        "thread_callout": "M11x1.25",
+        "diameter_in": null,
+        "diameter_mm": 11.0,
+        "thread_pitch_tpi": null,
+        "thread_pitch_mm": 1.25,
+        "bolt_count": 11,
+        "factory_type": "torque_to_yield",
+        "hex_size": "14mm",
+        "common_upgrade": "ARP 202-4308",
+        "notes": "RB26DETT head bolts. 11 per head."
+      },
+      {
+        "variant": "rb25",
+        "thread_callout": "M11x1.25",
+        "diameter_in": null,
+        "diameter_mm": 11.0,
+        "thread_pitch_tpi": null,
+        "thread_pitch_mm": 1.25,
+        "bolt_count": 11,
+        "factory_type": "torque_to_yield",
+        "hex_size": "14mm",
+        "common_upgrade": "ARP 202-4301",
+        "notes": "RB25DET head bolts. Same thread as RB26."
+      }
+    ],
+    "main_bolts": [
+      {
+        "variant": "standard",
+        "thread_callout": "M12x1.25",
+        "diameter_in": null,
+        "diameter_mm": 12.0,
+        "thread_pitch_tpi": null,
+        "thread_pitch_mm": 1.25,
+        "bolt_count": 2,
+        "factory_type": "bolt",
+        "hex_size": "17mm",
+        "common_upgrade": "ARP 202-5001",
+        "notes": "RB main bolts, all variants. 2-bolt ladder frame."
+      }
+    ]
+  },
+  {
+    "slug": "nissan_sr",
+    "display_name": "SR20DET",
+    "manufacturer": "Nissan",
+    "sort_order": 51,
+    "head_bolts": [
+      {
+        "variant": "sr20det",
+        "thread_callout": "M11x1.25",
+        "diameter_in": null,
+        "diameter_mm": 11.0,
+        "thread_pitch_tpi": null,
+        "thread_pitch_mm": 1.25,
+        "bolt_count": 10,
+        "factory_type": "torque_to_yield",
+        "hex_size": "14mm",
+        "common_upgrade": "ARP 202-4701",
+        "notes": "SR20DET head bolts. 10 per head."
+      }
+    ],
+    "main_bolts": [
+      {
+        "variant": "standard",
+        "thread_callout": "M12x1.25",
+        "diameter_in": null,
+        "diameter_mm": 12.0,
+        "thread_pitch_tpi": null,
+        "thread_pitch_mm": 1.25,
+        "bolt_count": 2,
+        "factory_type": "bolt",
+        "hex_size": "17mm",
+        "common_upgrade": "ARP 202-5401",
+        "notes": "SR20 2-bolt main."
+      }
+    ]
+  },
+  {
+    "slug": "nissan_vq",
+    "display_name": "VQ35 / VQ37",
+    "manufacturer": "Nissan",
+    "sort_order": 52,
+    "head_bolts": [
+      {
+        "variant": "vq35de",
+        "thread_callout": "M11x1.25",
+        "diameter_in": null,
+        "diameter_mm": 11.0,
+        "thread_pitch_tpi": null,
+        "thread_pitch_mm": 1.25,
+        "bolt_count": 10,
+        "factory_type": "torque_to_yield",
+        "hex_size": "14mm",
+        "common_upgrade": "ARP 202-4305",
+        "notes": "VQ35DE head bolts. 10 per head."
+      },
+      {
+        "variant": "vq37vhr",
+        "thread_callout": "M11x1.25",
+        "diameter_in": null,
+        "diameter_mm": 11.0,
+        "thread_pitch_tpi": null,
+        "thread_pitch_mm": 1.25,
+        "bolt_count": 10,
+        "factory_type": "torque_to_yield",
+        "hex_size": "14mm",
+        "common_upgrade": null,
+        "notes": "VQ37VHR head bolts. Same thread spec."
+      }
+    ],
+    "main_bolts": [
+      {
+        "variant": "standard",
+        "thread_callout": "M12x1.25",
+        "diameter_in": null,
+        "diameter_mm": 12.0,
+        "thread_pitch_tpi": null,
+        "thread_pitch_mm": 1.25,
+        "bolt_count": 2,
+        "factory_type": "bolt",
+        "hex_size": "17mm",
+        "common_upgrade": null,
+        "notes": "VQ main bolts, all variants. Bedplate design."
+      }
+    ]
+  },
+  {
+    "slug": "honda_b",
+    "display_name": "B-Series (B16/B18)",
+    "manufacturer": "Honda",
+    "sort_order": 60,
+    "head_bolts": [
+      {
+        "variant": "b18c",
+        "thread_callout": "M11x1.5",
+        "diameter_in": null,
+        "diameter_mm": 11.0,
+        "thread_pitch_tpi": null,
+        "thread_pitch_mm": 1.5,
+        "bolt_count": 10,
+        "factory_type": "torque_to_yield",
+        "hex_size": "14mm",
+        "common_upgrade": "ARP 208-4303",
+        "notes": "B18C1/C5 head bolts. 10 per head."
+      }
+    ],
+    "main_bolts": [
+      {
+        "variant": "standard",
+        "thread_callout": "M10x1.25",
+        "diameter_in": null,
+        "diameter_mm": 10.0,
+        "thread_pitch_tpi": null,
+        "thread_pitch_mm": 1.25,
+        "bolt_count": 2,
+        "factory_type": "bolt",
+        "hex_size": "14mm",
+        "common_upgrade": "ARP 208-5401",
+        "notes": "B-series 2-bolt main. Girdle-style lower block."
+      }
+    ]
+  },
+  {
+    "slug": "honda_k",
+    "display_name": "K-Series (K20/K24)",
+    "manufacturer": "Honda",
+    "sort_order": 61,
+    "head_bolts": [
+      {
+        "variant": "k20",
+        "thread_callout": "M11x1.5",
+        "diameter_in": null,
+        "diameter_mm": 11.0,
+        "thread_pitch_tpi": null,
+        "thread_pitch_mm": 1.5,
+        "bolt_count": 10,
+        "factory_type": "torque_to_yield",
+        "hex_size": "14mm",
+        "common_upgrade": "ARP 208-4304",
+        "notes": "K20A/K20A2 head bolts. 10 per head."
+      },
+      {
+        "variant": "k24",
+        "thread_callout": "M11x1.5",
+        "diameter_in": null,
+        "diameter_mm": 11.0,
+        "thread_pitch_tpi": null,
+        "thread_pitch_mm": 1.5,
+        "bolt_count": 10,
+        "factory_type": "torque_to_yield",
+        "hex_size": "14mm",
+        "common_upgrade": "ARP 208-4304",
+        "notes": "K24 head bolts. Same spec as K20."
+      }
+    ],
+    "main_bolts": [
+      {
+        "variant": "standard",
+        "thread_callout": "M10x1.25",
+        "diameter_in": null,
+        "diameter_mm": 10.0,
+        "thread_pitch_tpi": null,
+        "thread_pitch_mm": 1.25,
+        "bolt_count": 2,
+        "factory_type": "bolt",
+        "hex_size": "14mm",
+        "common_upgrade": "ARP 208-5801",
+        "notes": "K-series 2-bolt main."
+      }
+    ]
+  },
+  {
+    "slug": "subaru_ej",
+    "display_name": "EJ (EJ25/EJ257)",
+    "manufacturer": "Subaru",
+    "sort_order": 70,
+    "head_bolts": [
+      {
+        "variant": "ej257",
+        "thread_callout": "M11x1.25",
+        "diameter_in": null,
+        "diameter_mm": 11.0,
+        "thread_pitch_tpi": null,
+        "thread_pitch_mm": 1.25,
+        "bolt_count": 8,
+        "factory_type": "torque_to_yield",
+        "hex_size": "14mm",
+        "common_upgrade": "ARP 260-4701",
+        "notes": "EJ257 (STI) head bolts. 8 per head (boxer layout). ARP studs fix the notorious head gasket issue."
+      }
+    ],
+    "main_bolts": [
+      {
+        "variant": "standard",
+        "thread_callout": "M12x1.25",
+        "diameter_in": null,
+        "diameter_mm": 12.0,
+        "thread_pitch_tpi": null,
+        "thread_pitch_mm": 1.25,
+        "bolt_count": 2,
+        "factory_type": "bolt",
+        "hex_size": "17mm",
+        "common_upgrade": "ARP 260-5401",
+        "notes": "EJ main bolts. Case-half bolts on boxer."
+      }
+    ]
+  },
+  {
+    "slug": "subaru_fa",
+    "display_name": "FA20DIT",
+    "manufacturer": "Subaru",
+    "sort_order": 71,
+    "head_bolts": [
+      {
+        "variant": "fa20dit",
+        "thread_callout": "M11x1.25",
+        "diameter_in": null,
+        "diameter_mm": 11.0,
+        "thread_pitch_tpi": null,
+        "thread_pitch_mm": 1.25,
+        "bolt_count": 8,
+        "factory_type": "torque_to_yield",
+        "hex_size": "14mm",
+        "common_upgrade": null,
+        "notes": "FA20DIT head bolts. 8 per head."
+      }
+    ],
+    "main_bolts": []
+  },
+  {
+    "slug": "bmw_s",
+    "display_name": "S54 (E46 M3)",
+    "manufacturer": "BMW",
+    "sort_order": 80,
+    "head_bolts": [
+      {
+        "variant": "s54",
+        "thread_callout": "M10x1.5",
+        "diameter_in": null,
+        "diameter_mm": 10.0,
+        "thread_pitch_tpi": null,
+        "thread_pitch_mm": 1.5,
+        "bolt_count": 14,
+        "factory_type": "torque_to_yield",
+        "hex_size": "14mm",
+        "common_upgrade": null,
+        "notes": "S54 (E46 M3) head bolts. 14 per head."
+      }
+    ],
+    "main_bolts": [
+      {
+        "variant": "s54",
+        "thread_callout": "M10x1.5",
+        "diameter_in": null,
+        "diameter_mm": 10.0,
+        "thread_pitch_tpi": null,
+        "thread_pitch_mm": 1.5,
+        "bolt_count": 2,
+        "factory_type": "bolt",
+        "hex_size": "16mm",
+        "common_upgrade": null,
+        "notes": "S54 2-bolt main."
+      }
+    ]
+  },
+  {
+    "slug": "bmw_n",
+    "display_name": "N54",
+    "manufacturer": "BMW",
+    "sort_order": 81,
+    "head_bolts": [
+      {
+        "variant": "n54",
+        "thread_callout": "M10x1.5",
+        "diameter_in": null,
+        "diameter_mm": 10.0,
+        "thread_pitch_tpi": null,
+        "thread_pitch_mm": 1.5,
+        "bolt_count": 14,
+        "factory_type": "torque_to_yield",
+        "hex_size": "14mm",
+        "common_upgrade": null,
+        "notes": "N54 head bolts. TTY \u2014 replace on removal."
+      }
+    ],
+    "main_bolts": [
+      {
+        "variant": "n54",
+        "thread_callout": "M10x1.5",
+        "diameter_in": null,
+        "diameter_mm": 10.0,
+        "thread_pitch_tpi": null,
+        "thread_pitch_mm": 1.5,
+        "bolt_count": 2,
+        "factory_type": "bolt",
+        "hex_size": "16mm",
+        "common_upgrade": null,
+        "notes": "N54 2-bolt main with bedplate."
+      }
+    ]
+  },
+  {
+    "slug": "bmw_b",
+    "display_name": "B58",
+    "manufacturer": "BMW",
+    "sort_order": 82,
+    "head_bolts": [
+      {
+        "variant": "b58",
+        "thread_callout": "M10x1.5",
+        "diameter_in": null,
+        "diameter_mm": 10.0,
+        "thread_pitch_tpi": null,
+        "thread_pitch_mm": 1.5,
+        "bolt_count": 14,
+        "factory_type": "torque_to_yield",
+        "hex_size": "14mm",
+        "common_upgrade": null,
+        "notes": "B58 head bolts. 14 per head."
+      }
+    ],
+    "main_bolts": [
+      {
+        "variant": "b58",
+        "thread_callout": "M10x1.5",
+        "diameter_in": null,
+        "diameter_mm": 10.0,
+        "thread_pitch_tpi": null,
+        "thread_pitch_mm": 1.5,
+        "bolt_count": 2,
+        "factory_type": "bolt",
+        "hex_size": "16mm",
+        "common_upgrade": null,
+        "notes": "B58 main bolts with structural bedplate."
+      }
+    ]
+  }
+]
