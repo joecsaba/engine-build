@@ -5,6 +5,7 @@ import { Toaster } from "@/components/ui/toaster";
 import { TooltipProvider } from "@/components/ui/tooltip";
 import { AppLayout } from "@/components/layout/AppLayout";
 import { AuthProvider } from "@/context/AuthContext";
+import { AuthBridge } from "@/components/AuthBridge";
 import { BuildContextProvider } from "@/context/BuildContext";
 import { ErrorBoundary } from "@/components/ErrorBoundary";
 import NotFound from "@/pages/not-found";
@@ -74,6 +75,12 @@ import BuildAdvisor from "@/pages/build-advisor";
 import TorqueSpecs from "@/pages/torque-specs";
 import Privacy from "@/pages/privacy";
 import Terms from "@/pages/terms";
+
+import ShopToolsIndex from "@/pages/shop-tools/index";
+import ShopDirectory from "@/pages/shop-tools/directory";
+import ShopPricing from "@/pages/shop-tools/pricing";
+import ShopBuildSheet from "@/pages/shop-tools/build-sheet";
+import AdminModeration from "@/pages/admin/moderation";
 
 const queryClient = new QueryClient({
   defaultOptions: {
@@ -167,6 +174,15 @@ function Router() {
         <Route path="/calculators/ignition-timing-curve" component={IgnitionTimingCurveCalculator} />
         <Route path="/calculators/bolt-spec-lookup" component={BoltSpecLookup} />
 
+        {/* Shop Tools — specific routes before index */}
+        <Route path="/shop-tools/directory" component={ShopDirectory} />
+        <Route path="/shop-tools/pricing" component={ShopPricing} />
+        <Route path="/shop-tools/build-sheet" component={ShopBuildSheet} />
+        <Route path="/shop-tools" component={ShopToolsIndex} />
+
+        {/* Admin */}
+        <Route path="/admin/moderation" component={AdminModeration} />
+
         <Route path="/cam-guide" component={CamGuide} />
         <Route path="/build-advisor" component={BuildAdvisor} />
 
@@ -186,6 +202,7 @@ function AppInner() {
       <TooltipProvider>
         <WouterRouter base={basePath}>
           <AuthProvider>
+            <AuthBridge />
             <BuildContextProvider>
               <Router />
             </BuildContextProvider>

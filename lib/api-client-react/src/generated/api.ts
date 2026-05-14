@@ -34,6 +34,7 @@ import type {
   SearchResults,
   SearchTorqueSpecsParams,
   Shop,
+  ShopEditSuggestion,
   ShopSubmission,
   ShopSubmitResult,
   SubmitResult,
@@ -916,6 +917,83 @@ export const useSubmitShopRating = <
   TContext
 > => {
   return useMutation(getSubmitShopRatingMutationOptions(options));
+};
+
+/**
+ * @summary Submit edit suggestion for a shop
+ */
+export const getSubmitShopEditUrl = (id: number) => {
+  return `/api/directory/shops/${id}/suggest-edit`;
+};
+
+export const submitShopEdit = async (
+  id: number,
+  shopEditSuggestion: ShopEditSuggestion,
+  options?: RequestInit,
+): Promise<SubmitResult> => {
+  return customFetch<SubmitResult>(getSubmitShopEditUrl(id), {
+    ...options,
+    method: "POST",
+    headers: { "Content-Type": "application/json", ...options?.headers },
+    body: JSON.stringify(shopEditSuggestion),
+  });
+};
+
+export const getSubmitShopEditMutationOptions = <
+  TError = ErrorType<unknown>,
+  TContext = unknown,
+>(options?: {
+  mutation?: UseMutationOptions<
+    Awaited<ReturnType<typeof submitShopEdit>>,
+    TError,
+    { id: number; data: BodyType<ShopEditSuggestion> },
+    TContext
+  >;
+  request?: SecondParameter<typeof customFetch>;
+}): UseMutationOptions<
+  Awaited<ReturnType<typeof submitShopEdit>>,
+  TError,
+  { id: number; data: BodyType<ShopEditSuggestion> },
+  TContext
+> => {
+  const mutationKey = ["submitShopEdit"];
+  const { mutation: mutationOptions, request: requestOptions } = options
+    ? options.mutation &&
+      "mutationKey" in options.mutation &&
+      options.mutation.mutationKey
+      ? options
+      : { ...options, mutation: { ...options.mutation, mutationKey } }
+    : { mutation: { mutationKey }, request: undefined };
+
+  const mutationFn: MutationFunction<
+    Awaited<ReturnType<typeof submitShopEdit>>,
+    { id: number; data: BodyType<ShopEditSuggestion> }
+  > = (props) => {
+    const { id, data } = props ?? {};
+    return submitShopEdit(id, data, requestOptions);
+  };
+
+  return { mutationFn, ...mutationOptions };
+};
+
+export const useSubmitShopEdit = <
+  TError = ErrorType<unknown>,
+  TContext = unknown,
+>(options?: {
+  mutation?: UseMutationOptions<
+    Awaited<ReturnType<typeof submitShopEdit>>,
+    TError,
+    { id: number; data: BodyType<ShopEditSuggestion> },
+    TContext
+  >;
+  request?: SecondParameter<typeof customFetch>;
+}): UseMutationResult<
+  Awaited<ReturnType<typeof submitShopEdit>>,
+  TError,
+  { id: number; data: BodyType<ShopEditSuggestion> },
+  TContext
+> => {
+  return useMutation(getSubmitShopEditMutationOptions(options));
 };
 
 /**

@@ -131,30 +131,107 @@ export interface Article {
 export interface Shop {
   id: number;
   name: string;
+  /** @nullable */
+  address?: string | null;
   city: string;
   state: string;
-  specialties: string[];
-  turnaroundTime: string;
   /** @nullable */
-  avgRating?: number | null;
-  ratingCount: number;
+  zip?: string | null;
   /** @nullable */
   phone?: string | null;
+  /** @nullable */
+  email?: string | null;
   /** @nullable */
   website?: string | null;
   /** @nullable */
   description?: string | null;
+  specialties: string[];
+  services: string[];
+  turnaroundTime: string;
+  /** @nullable */
+  lat?: number | null;
+  /** @nullable */
+  lng?: number | null;
+  source?: string;
+  /** @nullable */
+  avgRating?: number | null;
+  ratingCount: number;
+  /** @nullable */
+  distanceMiles?: number | null;
+}
+
+export interface GeocodeResult {
+  success: boolean;
+  lat?: number;
+  lng?: number;
+  matched?: string;
+  message?: string;
 }
 
 export interface ShopSubmission {
   name: string;
+  address?: string;
   city: string;
   state: string;
-  specialties: string[];
-  turnaroundTime: string;
+  zip?: string;
   phone?: string;
+  email?: string;
   website?: string;
   description?: string;
+  specialties: string[];
+  services: string[];
+  turnaroundTime?: string;
+}
+
+export interface ShopEditSuggestion {
+  field: string;
+  oldValue?: string;
+  newValue: string;
+  submitterNote?: string;
+}
+
+export interface AdminPendingShop {
+  id: number;
+  name: string;
+  /** @nullable */
+  address?: string | null;
+  city: string;
+  state: string;
+  /** @nullable */
+  zip?: string | null;
+  /** @nullable */
+  phone?: string | null;
+  /** @nullable */
+  email?: string | null;
+  /** @nullable */
+  website?: string | null;
+  /** @nullable */
+  description?: string | null;
+  specialties: string[];
+  services: string[];
+  turnaroundTime: string;
+  source: string;
+  approved: number;
+  /** @nullable */
+  submitterEmail?: string | null;
+  createdAt: string;
+}
+
+export interface AdminEditSuggestion {
+  id: number;
+  shopId: number;
+  shopName: string;
+  field: string;
+  /** @nullable */
+  oldValue?: string | null;
+  /** @nullable */
+  currentValue?: any;
+  newValue: string;
+  /** @nullable */
+  submitterNote?: string | null;
+  /** @nullable */
+  submitterEmail?: string | null;
+  createdAt: string;
 }
 
 export interface ShopSubmitResult {
@@ -225,6 +302,10 @@ export type GetShopsParams = {
   search?: string;
   state?: string;
   specialty?: string;
+  service?: string;
+  lat?: number;
+  lng?: number;
+  radius?: number;
 };
 
 export type GlobalSearchParams = {
