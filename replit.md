@@ -26,9 +26,9 @@ pnpm workspace monorepo using TypeScript. Each package manages its own dependenc
 
 See the `pnpm-workspace` skill for workspace structure, TypeScript setup, and package details.
 
-## EngineVault Application
+## Engine-Build Application
 
-**Artifact:** `artifacts/enginevault` (frontend) + `artifacts/api-server` (backend, port 8080)
+**Artifact:** `artifacts/engine-build` (frontend) + `artifacts/api-server` (backend, port 8080)
 
 ### Routes
 - `/` — Home
@@ -44,7 +44,7 @@ See the `pnpm-workspace` skill for workspace structure, TypeScript setup, and pa
 - Charcoal `#1a1a1a` — nav, page header banners, dark section backgrounds
 - Orange `#E85D04` — accent, CTAs, eyebrow text (`text-primary`)
 - White — content area backgrounds
-- `PageHeader` component: `artifacts/enginevault/src/components/layout/PageHeader.tsx`
+- `PageHeader` component: `artifacts/engine-build/src/components/layout/PageHeader.tsx`
 
 ### Authentication
 - Clerk auth integrated (provisioned via `setupClerkWhitelabelAuth`)
@@ -54,25 +54,25 @@ See the `pnpm-workspace` skill for workspace structure, TypeScript setup, and pa
 - Navbar shows "Sign In" / "Create Account" when logged out; user name + "Sign Out" when logged in
 
 ### Cross-Tool State
-- `BuildContext` (`artifacts/enginevault/src/context/BuildContext.tsx`) — persists cam recommendation across pages via `localStorage` key `enginevault_build_v1`
+- `BuildContext` (`artifacts/engine-build/src/context/BuildContext.tsx`) — persists cam recommendation across pages via `localStorage` key `enginevault_build_v1` (key name retained for user data continuity)
 - Cam Guide Section 3 "Recommender" → "Save to Build Planner" button saves structured cam spec
 - Build Planner shows cam recommendation banner when one is saved (gas platforms only)
 
 ### Key Data Files
-- `artifacts/enginevault/src/data/buildParts.ts` — Build Planner parts catalog (imports diesel from dieselParts.ts)
-- `artifacts/enginevault/src/data/dieselParts.ts` — Diesel platforms: Cummins 12V, Cummins 6.7L, Ford PS 7.3L, Ford PS 6.0L, Ford PS 6.7L, Duramax 6.6L
+- `artifacts/engine-build/src/data/buildParts.ts` — Build Planner parts catalog (imports diesel from dieselParts.ts)
+- `artifacts/engine-build/src/data/dieselParts.ts` — Diesel platforms: Cummins 12V, Cummins 6.7L, Ford PS 7.3L, Ford PS 6.0L, Ford PS 6.7L, Duramax 6.6L
 - `lib/db/src/seed.ts` — Database seed
 - `lib/db/src/seed-ls-sbc.ts` — LS/SBC supplemental seed
 
 ### Build Command (after frontend changes)
 ```
-cd artifacts/enginevault && PORT=8099 BASE_PATH=/ pnpm run build
+cd artifacts/engine-build && PORT=8099 BASE_PATH=/ pnpm run build
 ```
 
-## EngineVault Build Sheet
+## Engine-Build Build Sheet
 
 ### Engine Record Sheet (`/build-sheets/record`)
-File: `artifacts/enginevault/src/pages/shop-tools/build-sheet.tsx`
+File: `artifacts/engine-build/src/pages/shop-tools/build-sheet.tsx`
 - Engine selector (LS1, SBC 350, Coyote 5.0) via `GET /api/engines/:slug`
 - Color-coded clearance fields, plan-tier gating, save/load builds
 - API routes: `GET /api/engines/:slug`, `POST /api/builds`, `GET /api/builds/:id`, `POST /api/builds/:buildId/fields`

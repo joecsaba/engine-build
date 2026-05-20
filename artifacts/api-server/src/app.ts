@@ -43,8 +43,8 @@ if (process.env.CLERK_PUBLISHABLE_KEY && process.env.CLERK_SECRET_KEY) {
 
 app.use("/api", router);
 
-// Serve EngineVault static build
-const staticDir = path.resolve(__dirname, "../../enginevault/dist/public");
+// Serve engine-build static build
+const staticDir = path.resolve(__dirname, "../../engine-build/dist/public");
 app.use(express.static(staticDir));
 app.get("/{*path}", (_req, res) => {
   res.sendFile(path.join(staticDir, "index.html"));

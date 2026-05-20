@@ -6,7 +6,7 @@ echo "=== Engine-build.com: Export DB + Deploy ==="
 DB_CONTAINER="engine-db"
 DB_USER="engine"
 DB_NAME="engine_data"
-DATA_DIR="c:/Engine Website/engine-build/artifacts/enginevault/public/data"
+DATA_DIR="c:/Engine Website/artifacts/engine-build/public/data"
 AWS="/c/Program Files/Amazon/AWSCLIV2/aws.exe"
 DISTRIBUTION_ID="E19AA5JJA6WGT"
 MIN_CONFIDENCE=0.7
@@ -181,11 +181,11 @@ SELECT json_agg(platform ORDER BY platform.sort_order) FROM (
 echo "   Bolt specs exported"
 
 echo "3/5 — Building site..."
-cd "c:/Engine Website/engine-build"
-pnpm --filter @workspace/enginevault run build 2>&1 | tail -3
+cd "c:/Engine Website"
+pnpm --filter @workspace/engine-build run build 2>&1 | tail -3
 
 echo "4/5 — Uploading to S3..."
-"$AWS" s3 sync "c:/Engine Website/engine-build/artifacts/enginevault/dist/public/" s3://engine-build-com-site/ --delete 2>&1 | tail -3
+"$AWS" s3 sync "c:/Engine Website/artifacts/engine-build/dist/public/" s3://engine-build-com-site/ --delete 2>&1 | tail -3
 
 echo "5/5 — Invalidating CloudFront cache..."
 "$AWS" cloudfront create-invalidation --distribution-id $DISTRIBUTION_ID --paths "/*" --query 'Invalidation.Id' --output text
