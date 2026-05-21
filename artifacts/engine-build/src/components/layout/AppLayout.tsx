@@ -1,6 +1,7 @@
 import { Navbar } from "./Navbar";
 import { Footer } from "./Footer";
 import { AdBanner } from "@/components/ads/AdBanner";
+import { QuickToolsSidebar } from "@/components/sidebar/QuickToolsSidebar";
 
 export function AppLayout({ children }: { children: React.ReactNode }) {
   return (
@@ -18,6 +19,9 @@ export function AppLayout({ children }: { children: React.ReactNode }) {
           </div>
         </div>
         <Footer />
+      </div>
+      <div className="print:hidden">
+        <QuickToolsSidebar />
       </div>
     </div>
   );

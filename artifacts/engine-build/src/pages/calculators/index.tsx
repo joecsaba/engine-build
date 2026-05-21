@@ -1,7 +1,13 @@
 import { Link } from "wouter";
+import { Star, Clock } from "lucide-react";
 import { PageHeader } from "@/components/layout/PageHeader";
 import { SEOHead } from "@/components/SEOHead";
 import { AdBanner } from "@/components/ads/AdBanner";
+import { CalcCard } from "@/components/calculators/CalcCard";
+import { CALCULATORS_CATALOG, findCalcBySlug } from "@/data/calculatorsCatalog";
+import { usePreferences } from "@/hooks/usePreferences";
+
+const RECENTS_SHOWN = 6;
 
 const categories = [
   {
@@ -41,7 +47,61 @@ const categories = [
   },
 ];
 
+function MyTools() {
+  const { prefs } = usePreferences();
+  const favoriteCalcs = prefs.favorites
+    .map(findCalcBySlug)
+    .filter((c): c is NonNullable<typeof c> => c !== undefined);
+
+  if (favoriteCalcs.length === 0) return null;
+
+  return (
+    <section className="mb-10">
+      <div className="flex items-center gap-2 mb-4">
+        <Star className="w-5 h-5 text-[#E85D04]" fill="currentColor" strokeWidth={0} />
+        <h2 className="text-2xl font-bold">My Tools</h2>
+        <span className="text-sm text-gray-500">({favoriteCalcs.length})</span>
+      </div>
+      <div className="grid grid-cols-1 sm:grid-cols-2 gap-6">
+        {favoriteCalcs.map((calc) => (
+          <CalcCard key={calc.href} calc={calc} />
+        ))}
+      </div>
+    </section>
+  );
+}
+
+function RecentlyUsed() {
+  const { prefs } = usePreferences();
+  const favoriteSet = new Set(prefs.favorites);
+  const recentCalcs = prefs.recents
+    .filter((r) => !favoriteSet.has(r.slug))
+    .map((r) => findCalcBySlug(r.slug))
+    .filter((c): c is NonNullable<typeof c> => c !== undefined)
+    .slice(0, RECENTS_SHOWN);
+
+  if (recentCalcs.length === 0) return null;
+
+  return (
+    <section className="mb-10">
+      <div className="flex items-center gap-2 mb-4">
+        <Clock className="w-5 h-5 text-gray-500" />
+        <h2 className="text-2xl font-bold">Recently Used</h2>
+      </div>
+      <div className="grid grid-cols-1 sm:grid-cols-2 gap-6">
+        {recentCalcs.map((calc) => (
+          <CalcCard key={calc.href} calc={calc} />
+        ))}
+      </div>
+    </section>
+  );
+}
+
 export default function CalculatorsIndex() {
+  // Touching the catalog here ensures it tree-shakes correctly and surfaces
+  // any import errors at the index, not lazily inside MyTools.
+  void CALCULATORS_CATALOG;
+
   return (
     <div>
       <SEOHead
@@ -58,6 +118,9 @@ export default function CalculatorsIndex() {
       />
 
       <div className="container mx-auto max-w-6xl px-4 py-10">
+        <MyTools />
+        <RecentlyUsed />
+
         <div className="grid grid-cols-1 sm:grid-cols-2 gap-6">
           {categories.map((cat) => (
             <Link key={cat.href} href={cat.href}>

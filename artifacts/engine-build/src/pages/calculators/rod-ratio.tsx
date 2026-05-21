@@ -8,6 +8,7 @@ import { useBuildContext } from "@/context/BuildContext";
 import { BuildBanner } from "@/components/BuildBanner";
 import { Info } from "lucide-react";
 import { useReferenceEngines } from "@/hooks/useEngineData";
+import { useDefaultPlatform } from "@/hooks/useDefaultPlatform";
 
 const commonEngines = [
   { name: "Chevy 350 (SBC)", stroke: "3.480", rod: "5.700", ratio: 1.638 },
@@ -33,8 +34,9 @@ function getRatioZone(ratio: number): { label: string; color: string; position: 
 }
 
 export default function RodRatioCalculator() {
-  const [stroke, setStroke] = useBuildField("shortBlock.stroke", "3.622");
-  const [rodLength, setRodLength] = useBuildField("rotatingAssembly.rodLength", "6.098");
+  const platform = useDefaultPlatform();
+  const [stroke, setStroke] = useBuildField("shortBlock.stroke", platform?.stroke ?? "3.622");
+  const [rodLength, setRodLength] = useBuildField("rotatingAssembly.rodLength", platform?.rodLength ?? "6.098");
   const { activeBuild, setField } = useBuildContext();
 
   const s = parseFloat(stroke) || 0;

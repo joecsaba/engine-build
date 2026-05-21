@@ -9,6 +9,7 @@ import { useBuildContext } from "@/context/BuildContext";
 import { BuildBanner } from "@/components/BuildBanner";
 import { Info } from "lucide-react";
 import { useManufacturers, useFamilies, useFamilyEngines } from "@/hooks/useEngineData";
+import { useDefaultPlatform } from "@/hooks/useDefaultPlatform";
 
 const refEngines = [
   { name: "Stock SBC 350 (5500 RPM redline)", stroke: 3.48, rpm: 5500, meanFpm: 3190 },
@@ -29,8 +30,9 @@ function getSpeedZone(fpm: number): { label: string; color: string; bg: string }
 }
 
 export default function PistonSpeedCalculator() {
-  const [stroke, setStroke] = useBuildField("shortBlock.stroke", "3.622");
-  const [rpm, setRpm] = useBuildField("meta.targetRPM", "6500");
+  const platform = useDefaultPlatform();
+  const [stroke, setStroke] = useBuildField("shortBlock.stroke", platform?.stroke ?? "3.622");
+  const [rpm, setRpm] = useBuildField("meta.targetRPM", platform?.redline ?? "6500");
   const { activeBuild, setField: setBuildField } = useBuildContext();
 
   // Engine picker state

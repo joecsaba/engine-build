@@ -1,4 +1,5 @@
 import { useState } from "react";
+import { useUnitDirection } from "@/hooks/useUnitDirection";
 import { SEOHead } from "@/components/SEOHead";
 import { Input } from "@/components/ui/input";
 import { Label } from "@/components/ui/label";
@@ -35,7 +36,10 @@ const referenceData: RefRow[] = [
 ];
 
 export default function TorqueUnitsConverter() {
-  const [activeUnit, setActiveUnit] = useState<Unit>("ftlb");
+  const [activeUnit, setActiveUnit] = useUnitDirection<Unit>({
+    imperial: "ftlb",
+    metric: "nm",
+  });
   const [value, setValue] = useState("");
 
   const parsed = parseFloat(value);

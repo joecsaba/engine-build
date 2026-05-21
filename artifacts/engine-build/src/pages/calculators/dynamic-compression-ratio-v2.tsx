@@ -10,6 +10,8 @@ import { useBuildField } from "@/hooks/useBuildField";
 import { useBuildContext } from "@/context/BuildContext";
 import { BuildBanner } from "@/components/BuildBanner";
 import { useManufacturers, useFamilies, useFamilyEngines } from "@/hooks/useEngineData";
+import { useDefaultPlatform } from "@/hooks/useDefaultPlatform";
+import { PresetBar } from "@/components/presets/PresetBar";
 
 /* ─── types ─── */
 type CalcMode = "forward" | "solve_chamber" | "solve_ivc";
@@ -81,10 +83,11 @@ export default function DynamicCompressionRatioV2() {
   /* ─── Static CR input mode ─── */
   const [crInputMode, setCrInputMode] = useState<CrInputMode>("parts");
 
-  /* ─── Engine geometry (shared) — integrated with build ─── */
-  const [bore, setBore] = useBuildField("machineWork.finalBore", "4.030");
-  const [stroke, setStroke] = useBuildField("shortBlock.stroke", "3.480");
-  const [rodLength, setRodLength] = useBuildField("rotatingAssembly.rodLength", "5.700");
+  /* ─── Engine geometry (shared) — integrated with build, defaults from prefs ─── */
+  const platform = useDefaultPlatform();
+  const [bore, setBore] = useBuildField("machineWork.finalBore", platform?.bore ?? "4.030");
+  const [stroke, setStroke] = useBuildField("shortBlock.stroke", platform?.stroke ?? "3.480");
+  const [rodLength, setRodLength] = useBuildField("rotatingAssembly.rodLength", platform?.rodLength ?? "5.700");
 
   /* ─── Static CR from parts — integrated with build ─── */
   const [chamberVolume, setChamberVolume] = useBuildField("heads.chamberVolume", "64");
@@ -288,7 +291,46 @@ export default function DynamicCompressionRatioV2() {
         { label: "Dynamic CR", key: "computed.dynamicCR", value: results.dcr > 0 ? results.dcr.toFixed(2) : "", suffix: ":1" },
         { label: "Octane Req", key: "computed.octane", value: results.octane > 0 ? String(results.octane) : "" },
       ]} />
-      <h1 className="text-3xl font-bold mb-2">Compression Ratio Calculator</h1>
+      <div className="flex items-start justify-between gap-4 mb-2 flex-wrap">
+        <h1 className="text-3xl font-bold">Compression Ratio Calculator</h1>
+        <PresetBar
+          calcSlug="compression-ratio"
+          state={{
+            calcMode, crInputMode,
+            bore, stroke, rodLength,
+            chamberVolume, pistonVolume, gasketBore, gasketThick, deckClearance,
+            knownStaticCR,
+            ivcMethod, ivc0050, lashType, ivcSeat, intakeDuration,
+            lsa, icl, camAdvanceInput,
+            headType, isBoosted: String(isBoosted),
+            targetDCR,
+          }}
+          onLoad={(s) => {
+            if (typeof s.calcMode === "string") setCalcMode(s.calcMode as CalcMode);
+            if (typeof s.crInputMode === "string") setCrInputMode(s.crInputMode as CrInputMode);
+            if (typeof s.bore === "string") setBore(s.bore);
+            if (typeof s.stroke === "string") setStroke(s.stroke);
+            if (typeof s.rodLength === "string") setRodLength(s.rodLength);
+            if (typeof s.chamberVolume === "string") setChamberVolume(s.chamberVolume);
+            if (typeof s.pistonVolume === "string") setPistonVolume(s.pistonVolume);
+            if (typeof s.gasketBore === "string") setGasketBore(s.gasketBore);
+            if (typeof s.gasketThick === "string") setGasketThick(s.gasketThick);
+            if (typeof s.deckClearance === "string") setDeckClearance(s.deckClearance);
+            if (typeof s.knownStaticCR === "string") setKnownStaticCR(s.knownStaticCR);
+            if (typeof s.ivcMethod === "string") setIvcMethod(s.ivcMethod as IvcMethod);
+            if (typeof s.ivc0050 === "string") setIvc0050(s.ivc0050);
+            if (typeof s.lashType === "string") setLashType(s.lashType as LashType);
+            if (typeof s.ivcSeat === "string") setIvcSeat(s.ivcSeat);
+            if (typeof s.intakeDuration === "string") setIntakeDuration(s.intakeDuration);
+            if (typeof s.lsa === "string") setLsa(s.lsa);
+            if (typeof s.icl === "string") setIcl(s.icl);
+            if (typeof s.camAdvanceInput === "string") setCamAdvanceInput(s.camAdvanceInput);
+            if (typeof s.headType === "string") setHeadType(s.headType as HeadType);
+            if (typeof s.isBoosted === "string") setIsBoosted(s.isBoosted === "true");
+            if (typeof s.targetDCR === "string") setTargetDCR(s.targetDCR);
+          }}
+        />
+      </div>
       <p className="text-muted-foreground mb-6">
         Static CR from your parts, dynamic CR from your cam, cranking pressure, and octane recommendations — all in one place.
       </p>

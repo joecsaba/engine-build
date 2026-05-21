@@ -1,4 +1,5 @@
 import { useState } from "react";
+import { useUnitDirection } from "@/hooks/useUnitDirection";
 import { SEOHead } from "@/components/SEOHead";
 import { Input } from "@/components/ui/input";
 import { Label } from "@/components/ui/label";
@@ -30,7 +31,10 @@ const referenceData: RefRow[] = [
 ];
 
 export default function CcCiConverter() {
-  const [direction, setDirection] = useState<"cc-to-ci" | "ci-to-cc">("cc-to-ci");
+  const [direction, setDirection] = useUnitDirection<"cc-to-ci" | "ci-to-cc">({
+    imperial: "cc-to-ci",
+    metric: "ci-to-cc",
+  });
   const [inputValue, setInputValue] = useState("");
 
   const parsed = parseFloat(inputValue);

@@ -1,4 +1,5 @@
 import { useState } from "react";
+import { useUnitDirection } from "@/hooks/useUnitDirection";
 import { SEOHead } from "@/components/SEOHead";
 import { Input } from "@/components/ui/input";
 import { Label } from "@/components/ui/label";
@@ -45,7 +46,10 @@ const referenceData: RefRow[] = [
 ];
 
 export default function MmInchConverter() {
-  const [direction, setDirection] = useState<"mm-to-in" | "in-to-mm">("mm-to-in");
+  const [direction, setDirection] = useUnitDirection<"mm-to-in" | "in-to-mm">({
+    imperial: "mm-to-in",
+    metric: "in-to-mm",
+  });
   const [inputValue, setInputValue] = useState("");
   const [precision, setPrecision] = useState("4");
 

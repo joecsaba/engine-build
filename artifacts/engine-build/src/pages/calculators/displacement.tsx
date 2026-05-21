@@ -9,11 +9,14 @@ import { useBuildContext } from "@/context/BuildContext";
 import { BuildBanner } from "@/components/BuildBanner";
 import { Info } from "lucide-react";
 import { useManufacturers, useFamilies, useFamilyEngines } from "@/hooks/useEngineData";
+import { PresetBar } from "@/components/presets/PresetBar";
+import { useDefaultPlatform } from "@/hooks/useDefaultPlatform";
 
 export default function DisplacementCalculator() {
-  const [bore, setBore] = useBuildField("shortBlock.bore", "4.000");
-  const [stroke, setStroke] = useBuildField("shortBlock.stroke", "3.480");
-  const [cylinders, setCylinders] = useBuildField("shortBlock.cylinders", "8");
+  const platform = useDefaultPlatform();
+  const [bore, setBore] = useBuildField("shortBlock.bore", platform?.bore ?? "4.000");
+  const [stroke, setStroke] = useBuildField("shortBlock.stroke", platform?.stroke ?? "3.480");
+  const [cylinders, setCylinders] = useBuildField("shortBlock.cylinders", platform?.cylinders ?? "8");
   const { activeBuild, setField } = useBuildContext();
 
   // Engine picker state
@@ -65,7 +68,18 @@ export default function DisplacementCalculator() {
         { label: "Displacement", key: "computed.displacement", value: cubicInches > 0 ? cubicInches.toFixed(1) : "", suffix: " ci" },
         { label: "Liters", key: "computed.displacementL", value: liters > 0 ? liters.toFixed(2) : "", suffix: "L" },
       ]} />
-      <h1 className="text-3xl font-bold mb-2">Engine Displacement Calculator</h1>
+      <div className="flex items-start justify-between gap-4 mb-2 flex-wrap">
+        <h1 className="text-3xl font-bold">Engine Displacement Calculator</h1>
+        <PresetBar
+          calcSlug="displacement"
+          state={{ bore, stroke, cylinders }}
+          onLoad={(s) => {
+            if (typeof s.bore === "string") setBore(s.bore);
+            if (typeof s.stroke === "string") setStroke(s.stroke);
+            if (typeof s.cylinders === "string") setCylinders(s.cylinders);
+          }}
+        />
+      </div>
       <p className="text-muted-foreground mb-8">Calculate engine displacement in cubic inches, CCs, and liters.</p>
 
       <div className="flex flex-col xl:flex-row gap-8">

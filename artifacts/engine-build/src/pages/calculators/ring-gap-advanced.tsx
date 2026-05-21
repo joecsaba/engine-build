@@ -11,6 +11,8 @@ import { useBuildField } from "@/hooks/useBuildField";
 import { useBuildContext } from "@/context/BuildContext";
 import { BuildBanner } from "@/components/BuildBanner";
 import { useRingGapSpecs, useRingGapMultipliers, useGasEngineRingRefs, type RingGapSpec, type RingGapMultiplier } from "@/hooks/useEngineData";
+import { useDefaultPlatform } from "@/hooks/useDefaultPlatform";
+import { PresetBar } from "@/components/presets/PresetBar";
 
 // ── Types ──────────────────────────────────────────────────────────────────────
 
@@ -254,7 +256,8 @@ function DieselSourceCard({ spec }: { spec: RingGapSpec }) {
 // ── Component ──────────────────────────────────────────────────────────────────
 
 export default function RingGapAdvancedCalculator() {
-  const [bore, setBore] = useBuildField("machineWork.finalBore", "4.030");
+  const platform = useDefaultPlatform();
+  const [bore, setBore] = useBuildField("machineWork.finalBore", platform?.bore ?? "4.030");
   const { activeBuild, setField: setBuildField } = useBuildContext();
   const [boreMm, setBoreMm] = useState("");
   const [boreUnits, setBoreUnits] = useState<"in" | "mm">("in");
@@ -471,7 +474,22 @@ export default function RingGapAdvancedCalculator() {
         { label: "Top Ring Gap", key: "computed.ringGapTop", value: topGap > 0 ? topGap.toFixed(4) : "", suffix: "\"" },
         { label: "Second Ring Gap", key: "computed.ringGapSecond", value: secondGap > 0 ? secondGap.toFixed(4) : "", suffix: "\"" },
       ]} />
-      <h1 className="text-3xl font-bold mb-1">Piston Ring Gap Calculator</h1>
+      <div className="flex items-start justify-between gap-4 mb-1 flex-wrap">
+        <h1 className="text-3xl font-bold">Piston Ring Gap Calculator</h1>
+        <PresetBar
+          calcSlug="ring-gap"
+          state={{ bore, boreUnits, fuelType, gasApp, material, dieselEngine, pistonMat }}
+          onLoad={(s) => {
+            if (typeof s.bore === "string") setBore(s.bore);
+            if (s.boreUnits === "in" || s.boreUnits === "mm") setBoreUnits(s.boreUnits);
+            if (s.fuelType === "gas" || s.fuelType === "diesel") setFuelType(s.fuelType);
+            if (typeof s.gasApp === "string") setGasApp(s.gasApp);
+            if (typeof s.material === "string") setMaterial(s.material as RingMaterial);
+            if (typeof s.dieselEngine === "string") setDieselEngine(s.dieselEngine);
+            if (typeof s.pistonMat === "string") setPistonMat(s.pistonMat as PistonMaterial);
+          }}
+        />
+      </div>
       <p className="text-muted-foreground mb-4">
         Application-specific ring gap for every ring position. Covers NA, nitrous, turbo, supercharged, and diesel builds with material compatibility warnings.
       </p>

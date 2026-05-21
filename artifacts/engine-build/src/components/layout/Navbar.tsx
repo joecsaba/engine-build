@@ -79,8 +79,18 @@ export function Navbar() {
               </DropdownMenuTrigger>
               <DropdownMenuContent align="end" className="w-48">
                 <DropdownMenuItem asChild>
+                  <Link href="/me" className="cursor-pointer">
+                    Dashboard
+                  </Link>
+                </DropdownMenuItem>
+                <DropdownMenuItem asChild>
                   <Link href="/build-sheets/my-builds" className="cursor-pointer">
                     My Builds
+                  </Link>
+                </DropdownMenuItem>
+                <DropdownMenuItem asChild>
+                  <Link href="/settings" className="cursor-pointer">
+                    Settings
                   </Link>
                 </DropdownMenuItem>
                 <DropdownMenuItem
@@ -136,8 +146,14 @@ export function Navbar() {
                         </Avatar>
                         <span className="text-sm text-gray-300">{displayName}</span>
                       </div>
+                      <Link href="/me" className="text-lg font-medium text-gray-300 hover:text-white block mb-4" onClick={() => setMobileOpen(false)}>
+                        Dashboard
+                      </Link>
                       <Link href="/build-sheets/my-builds" className="text-lg font-medium text-gray-300 hover:text-white block mb-4" onClick={() => setMobileOpen(false)}>
                         My Builds
+                      </Link>
+                      <Link href="/settings" className="text-lg font-medium text-gray-300 hover:text-white block mb-4" onClick={() => setMobileOpen(false)}>
+                        Settings
                       </Link>
                       <button
                         onClick={() => { signOut(); setMobileOpen(false); }}

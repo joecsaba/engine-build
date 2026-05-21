@@ -1,4 +1,5 @@
 import { useState } from "react";
+import { useUnitDirection } from "@/hooks/useUnitDirection";
 import { SEOHead } from "@/components/SEOHead";
 import { Input } from "@/components/ui/input";
 import { Label } from "@/components/ui/label";
@@ -41,7 +42,10 @@ const zoneColor = {
 };
 
 export default function TemperatureConverter() {
-  const [activeUnit, setActiveUnit] = useState<Unit>("f");
+  const [activeUnit, setActiveUnit] = useUnitDirection<Unit>({
+    imperial: "f",
+    metric: "c",
+  });
   const [value, setValue] = useState("");
 
   const parsed = parseFloat(value);

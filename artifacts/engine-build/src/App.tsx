@@ -85,9 +85,12 @@ import Terms from "@/pages/terms";
 import Contact from "@/pages/contact";
 import ShopDirectory from "@/pages/shop-tools/directory";
 import AdminModeration from "@/pages/admin/moderation";
+import SettingsPage from "@/pages/settings";
+import MyDashboard from "@/pages/me";
 
 import { setBaseUrl } from "@workspace/api-client-react";
 import { AuthBridge } from "@/components/AuthBridge";
+import { RecentTracker } from "@/components/calculators/RecentTracker";
 
 // Point the api-client-react at the API Gateway
 setBaseUrl("https://uzgrsju1d1.execute-api.us-east-1.amazonaws.com");
@@ -115,6 +118,7 @@ function Router() {
   return (
     <AppLayout>
       <ScrollToTop />
+      <RecentTracker />
       <Switch>
         <Route path="/" component={Home} />
 
@@ -200,6 +204,8 @@ function Router() {
         <Route path="/shop-directory" component={ShopDirectory} />
         <Route path="/shop-tools/directory" component={ShopDirectory} />
         <Route path="/admin/moderation" component={AdminModeration} />
+        <Route path="/settings" component={SettingsPage} />
+        <Route path="/me" component={MyDashboard} />
 
         <Route component={NotFound} />
       </Switch>

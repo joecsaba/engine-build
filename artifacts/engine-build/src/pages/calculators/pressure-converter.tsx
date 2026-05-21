@@ -1,4 +1,5 @@
 import { useState } from "react";
+import { useUnitDirection } from "@/hooks/useUnitDirection";
 import { SEOHead } from "@/components/SEOHead";
 import { Input } from "@/components/ui/input";
 import { Label } from "@/components/ui/label";
@@ -40,7 +41,10 @@ const referenceData: RefRow[] = [
 ];
 
 export default function PressureConverter() {
-  const [activeUnit, setActiveUnit] = useState<Unit>("psi");
+  const [activeUnit, setActiveUnit] = useUnitDirection<Unit>({
+    imperial: "psi",
+    metric: "bar",
+  });
   const [value, setValue] = useState("");
 
   const parsed = parseFloat(value);

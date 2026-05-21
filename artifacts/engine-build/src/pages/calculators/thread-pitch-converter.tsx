@@ -1,4 +1,5 @@
 import { useState } from "react";
+import { useUnitDirection } from "@/hooks/useUnitDirection";
 import { SEOHead } from "@/components/SEOHead";
 import { Input } from "@/components/ui/input";
 import { Label } from "@/components/ui/label";
@@ -33,7 +34,10 @@ const referenceData: RefRow[] = [
 ];
 
 export default function ThreadPitchConverter() {
-  const [direction, setDirection] = useState<"mm-to-tpi" | "tpi-to-mm">("mm-to-tpi");
+  const [direction, setDirection] = useUnitDirection<"mm-to-tpi" | "tpi-to-mm">({
+    imperial: "mm-to-tpi",
+    metric: "tpi-to-mm",
+  });
   const [inputValue, setInputValue] = useState("");
 
   const parsed = parseFloat(inputValue);
