@@ -2,10 +2,11 @@ import { Link } from "wouter";
 import { Button } from "@/components/ui/button";
 import { Input } from "@/components/ui/input";
 import { Textarea } from "@/components/ui/textarea";
-import { Calculator, Settings2, Clock, Send, CheckCircle2, Gauge, Database, Wrench } from "lucide-react";
+import { Calculator, Settings2, Clock, Send, CheckCircle2, Gauge, Database, Wrench, Star, Bookmark, ClipboardList } from "lucide-react";
 import { useState } from "react";
 import { AdBanner } from "@/components/ads/AdBanner";
 import { SEOHead } from "@/components/SEOHead";
+import { useAuth } from "@/context/AuthContext";
 
 const features = [
   { title: "Build Advisor", desc: "Set a target HP, pick your platform, and tune components with live sliders to plan your build", icon: Gauge, href: "/build-advisor" },
@@ -34,6 +35,7 @@ const stats = [
 ];
 
 export default function Home() {
+  const { isSignedIn } = useAuth();
   const [name, setName] = useState("");
   const [email, setEmail] = useState("");
   const [message, setMessage] = useState("");
@@ -219,6 +221,62 @@ export default function Home() {
           </div>
         </div>
       </section>
+
+      {/* Free account CTA — hidden for signed-in users */}
+      {!isSignedIn && (
+        <section className="py-16 px-4 bg-[#1a1a1a]">
+          <div className="container mx-auto max-w-5xl">
+            <div className="text-center mb-10">
+              <p className="text-[#E85D04] text-sm font-semibold uppercase tracking-widest mb-2">Free Account</p>
+              <h2 className="text-3xl md:text-4xl font-bold text-white mb-3">Already using these calculators? Save your work.</h2>
+              <p className="text-gray-400 max-w-2xl mx-auto">
+                Create a free account to sync favorites, saved presets, and engine builds across every device — phone, tablet, shop laptop.
+              </p>
+            </div>
+
+            <div className="grid grid-cols-1 sm:grid-cols-3 gap-5 mb-10">
+              <div className="bg-[#242424] border border-[#2a2a2a] rounded-xl p-6">
+                <div className="w-10 h-10 rounded-lg bg-[#E85D04]/15 text-[#E85D04] flex items-center justify-center mb-4">
+                  <Star className="w-5 h-5" />
+                </div>
+                <h3 className="font-bold text-white mb-1">Star your favorites</h3>
+                <p className="text-sm text-gray-400">"My Tools" follows you to every device — no re-bookmarking.</p>
+              </div>
+              <div className="bg-[#242424] border border-[#2a2a2a] rounded-xl p-6">
+                <div className="w-10 h-10 rounded-lg bg-[#E85D04]/15 text-[#E85D04] flex items-center justify-center mb-4">
+                  <Bookmark className="w-5 h-5" />
+                </div>
+                <h3 className="font-bold text-white mb-1">Save calculator presets</h3>
+                <p className="text-sm text-gray-400">Reload the comp-ratio inputs for your 383 — or any build — in one click.</p>
+              </div>
+              <div className="bg-[#242424] border border-[#2a2a2a] rounded-xl p-6">
+                <div className="w-10 h-10 rounded-lg bg-[#E85D04]/15 text-[#E85D04] flex items-center justify-center mb-4">
+                  <ClipboardList className="w-5 h-5" />
+                </div>
+                <h3 className="font-bold text-white mb-1">Build sheets that follow you</h3>
+                <p className="text-sm text-gray-400">Plan on the laptop, check torque specs on your phone in the shop.</p>
+              </div>
+            </div>
+
+            <div className="flex flex-col sm:flex-row gap-3 justify-center">
+              <Link href="/sign-up">
+                <Button className="bg-[#E85D04] hover:bg-[#d04f00] text-white font-bold text-base px-8 py-5">
+                  Create Free Account
+                </Button>
+              </Link>
+              <Link href="/sign-in">
+                <Button variant="outline" className="border-[#E85D04]/40 text-[#E85D04] hover:bg-[#E85D04]/10 text-base px-8 py-5">
+                  Sign In
+                </Button>
+              </Link>
+            </div>
+
+            <p className="text-center text-xs text-gray-500 mt-5">
+              Free forever · No spam · Takes 30 seconds · <Link href="/me" className="hover:underline">See full feature list</Link>
+            </p>
+          </div>
+        </section>
+      )}
 
       {/* Mid-page ad */}
       <section className="py-6 px-4 bg-gray-50 border-t border-gray-100">

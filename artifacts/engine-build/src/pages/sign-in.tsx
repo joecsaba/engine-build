@@ -7,6 +7,7 @@ import { Input } from "@/components/ui/input";
 import { Label } from "@/components/ui/label";
 import { Loader2 } from "lucide-react";
 import { useAuth } from "@/context/AuthContext";
+import { SignupBenefits } from "@/components/auth/SignupBenefits";
 
 export default function SignInPage() {
   const { signIn } = useAuth();
@@ -236,8 +237,11 @@ export default function SignInPage() {
   return (
     <div>
       <PageHeader eyebrow="Account" title="Sign In" />
-      <div className="container mx-auto max-w-md px-4 py-10">
-        <Card>
+      <div className="container mx-auto max-w-5xl px-4 py-10 grid grid-cols-1 lg:grid-cols-2 gap-8 items-start">
+        <div className="order-2 lg:order-1">
+          <SignupBenefits />
+        </div>
+        <Card className="order-1 lg:order-2">
           <CardContent className="p-6">
             <form onSubmit={handleSignIn} className="space-y-4">
               <div>

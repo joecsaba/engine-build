@@ -1,5 +1,5 @@
 import { useEffect, useState } from "react";
-import { Link, useLocation } from "wouter";
+import { Link } from "wouter";
 import {
   Star, Clock, Wrench, Settings, Calculator, PlusCircle, ArrowRight, Loader2,
 } from "lucide-react";
@@ -11,6 +11,7 @@ import { useAuth } from "@/context/AuthContext";
 import { authFetch } from "@/lib/authFetch";
 import { usePreferences } from "@/hooks/usePreferences";
 import { findCalcBySlug } from "@/data/calculatorsCatalog";
+import { SignupBenefits } from "@/components/auth/SignupBenefits";
 
 const DASHBOARD_MAX = 4;
 
@@ -61,18 +62,13 @@ function QuickAction({ to, icon: Icon, label, desc }: {
 
 export default function MyDashboard() {
   const { isLoaded, isSignedIn, user } = useAuth();
-  const [, setLocation] = useLocation();
   const { prefs } = usePreferences();
 
   const [builds, setBuilds] = useState<BuildSummary[] | null>(null);
   const [buildsLoading, setBuildsLoading] = useState(true);
 
   useEffect(() => {
-    if (!isLoaded) return;
-    if (!isSignedIn) {
-      setLocation("/sign-in");
-      return;
-    }
+    if (!isLoaded || !isSignedIn) return;
     let cancelled = false;
     authFetch("/api/builds")
       .then((res) => (res.ok ? res.json() : []))
@@ -86,7 +82,7 @@ export default function MyDashboard() {
         if (!cancelled) setBuildsLoading(false);
       });
     return () => { cancelled = true; };
-  }, [isLoaded, isSignedIn, setLocation]);
+  }, [isLoaded, isSignedIn]);
 
   const favoriteCalcs = prefs.favorites
     .map(findCalcBySlug)
@@ -107,10 +103,78 @@ export default function MyDashboard() {
   const greeting = prefs.displayName?.trim() || user?.name?.split(" ")[0] || "back";
   const platformLabel = prefs.defaultPlatform ? (PLATFORM_LABELS[prefs.defaultPlatform] ?? prefs.defaultPlatform) : "Not set";
 
-  if (!isLoaded || !isSignedIn) {
+  if (!isLoaded) {
     return (
       <div className="container mx-auto py-16 px-4 max-w-2xl text-center">
         <Loader2 className="w-6 h-6 animate-spin mx-auto text-[#E85D04]" />
+      </div>
+    );
+  }
+
+  if (!isSignedIn) {
+    const localFavCount = prefs.favorites.length;
+    const localRecentCount = prefs.recents.length;
+    const hasLocalActivity = localFavCount > 0 || localRecentCount > 0;
+    return (
+      <div>
+        <SEOHead
+          title="Dashboard | Sign in"
+          description="Sign in to sync favorites, presets, builds, and defaults across every device."
+          canonical="/me"
+        />
+        <PageHeader
+          eyebrow="Dashboard"
+          title="Your engine-building hub"
+          subtitle="Sign in to sync favorites, saved presets, builds, and defaults across every device."
+        />
+        <div className="container mx-auto max-w-5xl px-4 py-10 grid grid-cols-1 lg:grid-cols-[1fr_1.1fr] gap-8 items-start">
+          <Card>
+            <CardContent className="p-6 space-y-5">
+              {hasLocalActivity && (
+                <div className="bg-[#E85D04]/10 border border-[#E85D04]/30 rounded-lg p-3 text-sm">
+                  <p className="font-semibold text-gray-900 mb-1">You already have local activity</p>
+                  <p className="text-gray-600">
+                    {localFavCount > 0 && <>{localFavCount} starred {localFavCount === 1 ? "calculator" : "calculators"}{localRecentCount > 0 && ", "}</>}
+                    {localRecentCount > 0 && <>{localRecentCount} recently used</>}
+                    {" "}— sign in and it’ll move with you to every device.
+                  </p>
+                </div>
+              )}
+              <div>
+                <h2 className="text-xl font-bold mb-1">Sign in to unlock your dashboard</h2>
+                <p className="text-sm text-gray-500">
+                  Free account. Takes 30 seconds. Everything you’ve already done on this browser stays put.
+                </p>
+              </div>
+              <div className="flex flex-col sm:flex-row gap-3">
+                <Link
+                  href="/sign-up"
+                  className="flex-1 text-center bg-[#E85D04] hover:bg-[#E85D04]/90 text-white font-semibold px-5 py-2.5 rounded-md transition-colors"
+                >
+                  Create Free Account
+                </Link>
+                <Link
+                  href="/sign-in"
+                  className="flex-1 text-center border border-gray-300 hover:border-[#E85D04] hover:text-[#E85D04] font-semibold px-5 py-2.5 rounded-md transition-colors"
+                >
+                  Sign In
+                </Link>
+              </div>
+              <div className="pt-3 border-t">
+                <p className="text-xs uppercase tracking-wider text-gray-500 mb-3">No account needed for</p>
+                <div className="grid grid-cols-1 gap-2">
+                  <Link href="/calculators" className="flex items-center gap-2 text-sm text-gray-700 hover:text-[#E85D04]">
+                    <Calculator className="w-4 h-4" /> All 47+ calculators
+                  </Link>
+                  <Link href="/engine-data" className="flex items-center gap-2 text-sm text-gray-700 hover:text-[#E85D04]">
+                    <Wrench className="w-4 h-4" /> Engine specs database (3,500+ engines)
+                  </Link>
+                </div>
+              </div>
+            </CardContent>
+          </Card>
+          <SignupBenefits />
+        </div>
       </div>
     );
   }
