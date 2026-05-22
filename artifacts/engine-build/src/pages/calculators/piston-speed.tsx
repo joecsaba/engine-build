@@ -3,6 +3,8 @@ import { SEOHead } from "@/components/SEOHead";
 import { Input } from "@/components/ui/input";
 import { Label } from "@/components/ui/label";
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
+import { CalculatorContent } from "@/components/calculators/CalculatorContent";
+import pistonSpeedContent from "@/data/calculatorContent/piston-speed.mjs";
 import { Select, SelectContent, SelectItem, SelectTrigger, SelectValue } from "@/components/ui/select";
 import { useBuildField } from "@/hooks/useBuildField";
 import { useBuildContext } from "@/context/BuildContext";
@@ -247,23 +249,7 @@ export default function PistonSpeedCalculator() {
 
       </div>{/* end flex row */}
 
-      <Card className="mt-8">
-        <CardHeader>
-          <CardTitle className="text-lg">Mean Piston Speed and Engine RPM Limits</CardTitle>
-        </CardHeader>
-        <CardContent className="prose prose-sm max-w-none text-muted-foreground space-y-3">
-          <p>
-            Mean piston speed (MPS) is the average velocity of the piston as it travels up and down the bore, calculated as (2 x Stroke x RPM) / 12, expressed in feet per minute. It is the primary factor limiting how fast an engine can safely rev. Pistons, rings, rod bearings, and wrist pins all have material limits, and exceeding safe piston speeds leads to ring flutter, bearing failure, and ultimately catastrophic connecting rod failure.
-          </p>
-          <p>
-            Safe piston speed zones are well established: below 3,500 FPM is comfortable for street engines with standard components, 3,500-4,500 FPM is the performance range requiring quality forged components, and above 4,500 FPM is race-only territory demanding the best rods, pistons, and fasteners available. A Chevy 350 with its 3.480" stroke reaches 3,480 FPM at 6,000 RPM — right at the street limit. Push it to 7,000 RPM and you are at 4,060 FPM, firmly in performance territory.
-          </p>
-          <h3 className="text-sm font-semibold text-foreground mt-4">Why Short Strokes Rev Higher</h3>
-          <p>
-            A shorter stroke means less piston travel per revolution, which directly reduces mean piston speed at any given RPM. The Ford 302 with its 3.000" stroke only reaches 3,250 FPM at 6,500 RPM — well within safe limits. This is why short-stroke engines like the 302, Honda B16, and Ferrari flat-plane V8s can safely rev to 7,000-9,000 RPM, while long-stroke torque motors like the BBC 454 (4.000" stroke) hit 4,000 FPM at just 6,000 RPM. When planning your rev limit, calculate MPS first and work backward to a safe RPM ceiling for your components.
-          </p>
-        </CardContent>
-      </Card>
+      <CalculatorContent data={pistonSpeedContent} title="Piston Speed" />
     </div>
   );
 }

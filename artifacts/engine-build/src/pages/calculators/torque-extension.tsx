@@ -4,6 +4,8 @@ import { Input } from "@/components/ui/input";
 import { Label } from "@/components/ui/label";
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 import { Info } from "lucide-react";
+import { CalculatorContent } from "@/components/calculators/CalculatorContent";
+import torqueExtensionContent from "@/data/calculatorContent/torque-extension.mjs";
 
 function TorqueDiagram({ wrenchLength, extensionLength }: { wrenchLength: number; extensionLength: number }) {
   const total = wrenchLength + extensionLength;
@@ -270,23 +272,7 @@ export default function TorqueExtensionCalculator() {
 
       </div>{/* end flex row */}
 
-      <Card className="mt-8">
-        <CardHeader>
-          <CardTitle className="text-lg">Torque Wrench Extensions and Crow's Foot Correction</CardTitle>
-        </CardHeader>
-        <CardContent className="prose prose-sm max-w-none text-muted-foreground space-y-3">
-          <p>
-            When you attach an extension like a crow's foot adapter to a torque wrench, you change the effective lever arm length. If the extension positions the fastener further from the wrench pivot point, the actual torque delivered to the fastener is higher than what the wrench dial reads. Conversely, if the extension shortens the effective arm, you under-torque. The correction formula accounts for this: Set Torque = Desired Torque x (L / (L + E)), where L is the wrench handle length (pivot to grip center) and E is the extension offset distance.
-          </p>
-          <p>
-            This correction only applies when the extension is at 90 degrees to the torque wrench handle — creating a true lever arm change. If you mount a crow's foot straight in line with the wrench (0 degrees), or if you use a standard socket extension that keeps the fastener on the same axis as the wrench drive, no correction is needed because the lever arm length has not changed.
-          </p>
-          <h3 className="text-sm font-semibold text-foreground mt-4">When This Matters Most</h3>
-          <p>
-            Crow's foot adapters are commonly needed for exhaust manifold bolts, oil pan bolts on installed engines, and intake manifold fasteners where a socket cannot reach. On critical engine fasteners like head bolts, main caps, and rod bolts, always use the proper socket — never a crow's foot — to ensure accurate torque. For less critical fasteners where a crow's foot is acceptable, apply the correction formula and verify with a second pass. A 10% torque error on a head bolt spec of 65 ft-lbs is 6.5 ft-lbs — enough to cause uneven clamp load and a head gasket leak.
-          </p>
-        </CardContent>
-      </Card>
+      <CalculatorContent data={torqueExtensionContent} title="Torque Extension" />
     </div>
   );
 }

@@ -3,6 +3,8 @@ import { SEOHead } from "@/components/SEOHead";
 import { Input } from "@/components/ui/input";
 import { Label } from "@/components/ui/label";
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
+import { CalculatorContent } from "@/components/calculators/CalculatorContent";
+import rodRatioContent from "@/data/calculatorContent/rod-ratio.mjs";
 import { useBuildField } from "@/hooks/useBuildField";
 import { useBuildContext } from "@/context/BuildContext";
 import { BuildBanner } from "@/components/BuildBanner";
@@ -221,23 +223,7 @@ export default function RodRatioCalculator() {
 
       </div>{/* end flex row */}
 
-      <Card className="mt-8">
-        <CardHeader>
-          <CardTitle className="text-lg">Connecting Rod Ratio Explained</CardTitle>
-        </CardHeader>
-        <CardContent className="prose prose-sm max-w-none text-muted-foreground space-y-3">
-          <p>
-            The connecting rod ratio (L/S) is the rod's center-to-center length divided by the crankshaft stroke. This ratio affects three critical aspects of engine operation: piston dwell time at top dead center, piston side loading against the cylinder wall, and the rate of piston acceleration through the stroke. A higher ratio means the rod operates at a smaller angle to the cylinder bore, reducing the side thrust that pushes the piston against the wall and causes friction and wear.
-          </p>
-          <p>
-            Common factory ratios include: SBC 350 at 1.638 (5.700" rod / 3.480" stroke), LS1 at 1.684 (6.098" / 3.622"), and Ford 302 at 1.697 (5.090" / 3.000"). The LS1's ratio is notably better than the old small block, which is one reason the LS platform is smoother and more efficient at high RPM. Most performance engine builders target a ratio between 1.6 and 1.8, with the sweet spot around 1.65-1.75 for street engines.
-          </p>
-          <h3 className="text-sm font-semibold text-foreground mt-4">The 383 Stroker Problem</h3>
-          <p>
-            When you stroke a 350 SBC to 383ci using a 3.750" stroke crank but keep the stock 5.700" rods, the ratio drops to 1.520 — well below the ideal range. This increases side loading and piston wear. The solution is upgrading to 6.000" rods, which brings the ratio back up to 1.600. However, longer rods require a shorter compression height piston to fit in the same block deck height, adding cost. A higher ratio is not always better because of these packaging constraints — you need room for adequate piston pin support, oil ring rail clearance, and a compression height that the piston manufacturer actually produces.
-          </p>
-        </CardContent>
-      </Card>
+      <CalculatorContent data={rodRatioContent} title="Connecting Rod Ratio" />
     </div>
   );
 }

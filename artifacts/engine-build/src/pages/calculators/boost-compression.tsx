@@ -4,6 +4,8 @@ import { Input } from "@/components/ui/input";
 import { Label } from "@/components/ui/label";
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 import { Select, SelectContent, SelectItem, SelectTrigger, SelectValue } from "@/components/ui/select";
+import { CalculatorContent } from "@/components/calculators/CalculatorContent";
+import boostCompressionContent from "@/data/calculatorContent/boost-compression.mjs";
 
 /* ── Fuel limits ─────────────────────────────────────────────────── */
 
@@ -328,32 +330,7 @@ export default function BoostCompressionCalculator() {
         </CardContent>
       </Card>
 
-      {/* ── Educational Content ───────────────────────────────────── */}
-      <Card className="mt-8">
-        <CardHeader>
-          <CardTitle className="text-lg">Boost and Effective Compression: What Engine Builders Need to Know</CardTitle>
-        </CardHeader>
-        <CardContent className="prose prose-sm max-w-none text-muted-foreground space-y-3">
-          <p>
-            Effective compression ratio (ECR) is the actual compression ratio your engine sees under boost. A naturally aspirated engine with a 9:1 static compression ratio compresses the air-fuel mixture by a factor of 9. But when a turbo or supercharger forces additional air into the cylinder above atmospheric pressure, the charge is already pre-compressed before the piston even starts its compression stroke. The result is an effective compression ratio significantly higher than the static number stamped on the piston box.
-          </p>
-          <p>
-            The relationship is straightforward: ECR equals the static compression ratio multiplied by the ratio of total manifold pressure (boost plus atmosphere) divided by atmospheric pressure. At sea level with 10 PSI of boost and a 9:1 static CR, your engine sees an effective 15.1:1 compression ratio. That is well above what 93-octane pump gas can handle without detonation, which is why most turbocharged street engines run lower static compression ratios in the 8.0-8.5:1 range.
-          </p>
-          <h3 className="text-sm font-semibold text-foreground mt-4">Why Dynamic CR Matters More Than Static CR</h3>
-          <p>
-            Static compression ratio is measured from bottom dead center to top dead center, but the intake valve does not close at BDC. On most performance cams, the intake valve closes 50-70 degrees after bottom dead center. Until that valve closes, the cylinder is not sealed and some of the charge escapes. The dynamic compression ratio accounts for this by calculating the effective stroke — the piston travel after the intake valve actually closes. This is a much better predictor of detonation than static CR, especially with aggressive cam profiles that close the intake valve very late.
-          </p>
-          <h3 className="text-sm font-semibold text-foreground mt-4">Altitude Effects</h3>
-          <p>
-            Atmospheric pressure drops at higher altitudes. A boost gauge reads pressure above ambient, so 10 PSI of boost in Denver (where ambient is about 12.1 PSI) produces less total manifold pressure than 10 PSI in Miami (14.7 PSI ambient). However, the effective compression ratio is actually <em>higher</em> at altitude for the same gauge boost, because the denominator in the ECR formula — atmospheric pressure — is smaller. Builders at altitude should account for this when selecting a compression ratio and boost target.
-          </p>
-          <h3 className="text-sm font-semibold text-foreground mt-4">Rule of Thumb</h3>
-          <p>
-            On 93-octane pump gas with a modern EFI system and good intercooling, keep your effective compression ratio under 12.5:1 for a reliable street engine. E85 provides a massive safety margin — its high octane rating and charge cooling effect allow effective compression ratios up to 15:1 in well-tuned setups. If you are running pump gas and want more boost, lower your static compression ratio. If you want to keep your high-compression pistons, switch to a higher-octane fuel.
-          </p>
-        </CardContent>
-      </Card>
+      <CalculatorContent data={boostCompressionContent} title="Boost & Effective Compression" />
     </div>
   );
 }

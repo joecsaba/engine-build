@@ -5,6 +5,8 @@ import { Label } from "@/components/ui/label";
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 import { Select, SelectContent, SelectItem, SelectTrigger, SelectValue } from "@/components/ui/select";
 import { AlertTriangle, ChevronDown, ChevronUp, Info } from "lucide-react";
+import { CalculatorContent } from "@/components/calculators/CalculatorContent";
+import headMillingContent from "@/data/calculatorContent/head-milling.mjs";
 
 /* ── Engine layout types ────────────────────────────────────────── */
 
@@ -712,58 +714,7 @@ export default function HeadMillingCalculator() {
         </CardContent>
       </Card>
 
-      {/* ── Educational Content ─────────────────────────────────── */}
-      <Card className="mt-8">
-        <CardHeader>
-          <button className="flex items-center justify-between w-full text-left" onClick={() => setShowEducation(!showEducation)}>
-            <CardTitle className="text-lg">Head Milling: What Engine Builders Need to Know</CardTitle>
-            {showEducation ? <ChevronUp className="w-4 h-4" /> : <ChevronDown className="w-4 h-4" />}
-          </button>
-        </CardHeader>
-        {showEducation && (
-          <CardContent className="prose prose-sm max-w-none text-muted-foreground space-y-3">
-            <p>
-              Cylinder head milling — removing material from the deck surface — is one of the most common machine shop operations. Every time a head is resurfaced after a gasket failure, warpage, or just as part of a rebuild, material comes off. On a pushrod (OHV) engine, the consequences are straightforward: compression goes up, pushrod length changes slightly, and on V-engines the intake manifold may need correction. But on an overhead cam engine, milling has a hidden and often overlooked side effect: it retards cam timing.
-            </p>
-
-            <h3 className="text-sm font-semibold text-foreground mt-4">Why Milling Retards OHC Cam Timing</h3>
-            <p>
-              On any engine where the camshaft lives in the cylinder head, removing material from the head deck lowers the cam closer to the crankshaft. The timing chain or belt stays the same length. With less distance between the crank and cam centers, slack develops on the drive side of the chain — effectively rotating the cam sprocket backward relative to the crank. The result is cam timing retard. Every cam event — intake open, intake close, exhaust open, exhaust close — shifts later in the cycle.
-            </p>
-
-            <h3 className="text-sm font-semibold text-foreground mt-4">The Formula</h3>
-            <p>
-              The amount of retard depends on two things: how much you mill, and the cam sprocket's pitch diameter. The relationship is:
-            </p>
-            <p className="font-mono bg-gray-100 p-2 rounded text-xs">
-              Retard (degrees) = milling depth × 360 / (π × sprocket pitch diameter)
-            </p>
-            <p>
-              A smaller sprocket means more retard per unit milled. A Honda D16 with its ~100mm cam gear sees about 1° of retard per 0.012" (0.30mm) milled. A 2JZ with its larger ~110mm sprocket sees slightly less. At 0.010" (0.25mm), most engines see 0.5–1.0° of retard — noticeable on a dyno but usually acceptable. Beyond 0.020" (0.50mm), correction is recommended.
-            </p>
-
-            <h3 className="text-sm font-semibold text-foreground mt-4">The Flat/Boxer Problem</h3>
-            <p>
-              On a flat (boxer) engine like a Subaru EJ25, EZ30, or Porsche flat-6, the problem is compounded. Both cylinder heads are on opposite sides of the block, each driven by separate chain runs from the crankshaft. The chain routing geometry means the left and right banks are not affected equally — one bank typically sees roughly 3x the retard of the other. On a Subaru, the driver-side cams can see 0.7° of retard while the passenger side sees only 0.24° from the same 0.010" cut. This asymmetric retard creates a bank-to-bank timing split that cannot be corrected with a single adjustment.
-            </p>
-
-            <h3 className="text-sm font-semibold text-foreground mt-4">Compression Ratio Effects</h3>
-            <p>
-              Milling removes volume from the combustion chamber, raising compression ratio. The amount depends on bore diameter — larger bores lose more CCs per thou removed. A 4" bore engine loses about 1cc per 0.006" milled. For a naturally aspirated engine, the higher CR is usually desirable. For a turbo engine, it can push effective compression dangerously high. Always recalculate CR after milling, especially on boosted applications.
-            </p>
-
-            <h3 className="text-sm font-semibold text-foreground mt-4">Valve-to-Piston Clearance</h3>
-            <p>
-              Milling brings the valves closer to the pistons by exactly the amount milled — a 1:1 relationship. If you mill 0.020" off the head, you lose 0.020" of valve-to-piston clearance. On engines with tight P2V margins (most modern DOHC engines with high compression), this can push clearances below safe minimums. Minimum intake P2V is 0.080" (2.0mm); exhaust is 0.100" (2.5mm). Always clay-check after milling more than 0.010".
-            </p>
-
-            <h3 className="text-sm font-semibold text-foreground mt-4">When to Correct</h3>
-            <p>
-              Under 0.5° of retard (roughly 0.005–0.008" milled on most engines): no correction needed. Between 0.5–2.0°: adjustable cam gears or offset dowels recommended, especially for performance builds where timing is dialed in. Over 2.0°: correction is mandatory. The cheapest fix is often a thicker head gasket that restores the original deck height, which simultaneously fixes both the timing retard and the compression increase. Adjustable cam gears give you the most control — they let you degree each cam independently, which is the only way to handle the asymmetric retard on boxer engines.
-            </p>
-          </CardContent>
-        )}
-      </Card>
+      <CalculatorContent data={headMillingContent} title="Head Milling" />
     </div>
   );
 }

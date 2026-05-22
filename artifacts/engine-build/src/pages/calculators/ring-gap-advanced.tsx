@@ -6,6 +6,8 @@ import { Label } from "@/components/ui/label";
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 import { Select, SelectContent, SelectItem, SelectTrigger, SelectValue } from "@/components/ui/select";
 import { Slider } from "@/components/ui/slider";
+import { CalculatorContent } from "@/components/calculators/CalculatorContent";
+import ringGapAdvancedContent from "@/data/calculatorContent/ring-gap.mjs";
 import { AlertTriangle, Copy, Check, ChevronDown, ChevronUp, Info } from "lucide-react";
 import { useBuildField } from "@/hooks/useBuildField";
 import { useBuildContext } from "@/context/BuildContext";
@@ -1132,38 +1134,7 @@ export default function RingGapAdvancedCalculator() {
 
       </div>{/* end flex row */}
 
-      <Card className="mt-8">
-        <CardHeader>
-          <CardTitle className="text-lg">Piston Ring End Gap Specifications</CardTitle>
-        </CardHeader>
-        <CardContent className="prose prose-sm max-w-none text-muted-foreground space-y-3">
-          <p>
-            Piston ring end gap is the clearance between the two ends of a piston ring when installed in the cylinder bore. This gap exists because rings expand as they heat up during engine operation. If the gap is too tight, the ring ends butt together under thermal expansion &mdash; this is called "ring butting" and it can score the cylinder walls, break the ring lands, or seize the piston. It is one of the most catastrophic and preventable failures in engine building.
-          </p>
-          <p>
-            The standard rule of thumb is 0.004" of gap per inch of bore diameter for naturally aspirated engines, and 0.006" per inch for forced induction (turbo or supercharged). For a 4.030" bore NA street engine, that means 0.016" minimum on the top ring. Most builders target 0.016"-0.020" for the top ring on a street NA application to provide a margin of safety. Second rings are typically gapped 0.002"-0.004" wider than the top ring.
-          </p>
-          <h3 className="text-sm font-semibold text-foreground mt-4">NA vs. Forced Induction Gaps</h3>
-          <p>
-            Forced induction engines see significantly higher combustion temperatures, which means more thermal expansion. A turbo 4.030" bore engine needs 0.024"-0.026" on the top ring &mdash; nearly 50% more than the NA spec. Nitrous engines should be gapped even wider, at 0.006"-0.007" per inch. Running too tight a gap on a boosted engine is a guaranteed path to ring butting, scuffed bores, and an expensive teardown. Always file-fit your rings to the actual measured bore diameter of each cylinder, not the nominal size.
-          </p>
-          {fuelType === "diesel" && (
-            <>
-              <h3 className="text-sm font-semibold text-foreground mt-4">Diesel Ring Gap Philosophy</h3>
-              <p>
-                Diesel engines use fundamentally different ring gap ratios than gasoline engines. Most diesels run a second ring gap 2&ndash;4x larger than the top ring to equalize inter-ring pressures and aid oil control. For example, the Cummins 5.9L specifies 0.010-0.014" for the top ring but 0.033-0.045" for the second ring. The 7.3L Powerstroke is even more extreme with a second ring gap of 0.062-0.072". <strong>Do not apply gasoline ring gap multipliers to diesel engines</strong> &mdash; always use your engine's OEM service manual or aftermarket ring manufacturer specs.
-              </p>
-            </>
-          )}
-          <h3 className="text-sm font-semibold text-foreground mt-6">Piston Material &amp; Ring Gap: Why It Matters</h3>
-          <p>
-            Piston material directly affects ring gap requirements, but not in the way most builders expect. Hypereutectic pistons (high-silicon cast aluminum, 16&ndash;19% silicon) have <strong>lower</strong> thermal expansion than forged pistons and run tighter piston-to-wall clearance &mdash; but they need <strong>larger</strong> ring gaps. This is because manufacturers like Keith Black (KB) position the top ring land closer to the piston crown for better combustion sealing. That higher position exposes the ring to significantly more heat, causing greater ring expansion. KB and UEM recommend a flat 40% increase over standard ring gap specs for their hypereutectic pistons. Insufficient ring gap on a hypereutectic piston is especially dangerous because hypereutectics fail by shattering (brittle fracture) rather than deforming like a forged piston.
-          </p>
-          <p>
-            Forged pistons come in two primary alloys: <strong>4032</strong> and <strong>2618</strong>. The 4032 alloy has lower thermal expansion (similar to hypereutectic) and can run tighter piston-to-wall clearance (0.002"&ndash;0.003"), making it quieter on cold start and ideal for street/strip builds. The 2618 alloy expands more and requires 0.0035"&ndash;0.005" clearance, but it is far more ductile &mdash; when pushed past its limit, a 2618 piston deforms rather than shattering. This makes 2618 the standard choice for forced induction, nitrous, and racing applications where detonation events are possible. Both alloys use the same ring gap multipliers; the difference is in piston-to-wall clearance and failure behavior, not ring gap.
-          </p>
-        </CardContent>
-      </Card>
+      <CalculatorContent data={ringGapAdvancedContent} title="Piston Ring End Gap" />
     </div>
   );
 }

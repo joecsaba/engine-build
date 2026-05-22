@@ -3,6 +3,8 @@ import { SEOHead } from "@/components/SEOHead";
 import { Input } from "@/components/ui/input";
 import { Label } from "@/components/ui/label";
 import { Card, CardContent, CardHeader, CardTitle, CardDescription } from "@/components/ui/card";
+import { CalculatorContent } from "@/components/calculators/CalculatorContent";
+import displacementContent from "@/data/calculatorContent/displacement.mjs";
 import { Select, SelectContent, SelectItem, SelectTrigger, SelectValue } from "@/components/ui/select";
 import { useBuildField } from "@/hooks/useBuildField";
 import { useBuildContext } from "@/context/BuildContext";
@@ -216,23 +218,7 @@ export default function DisplacementCalculator() {
 
       </div>{/* end flex row */}
 
-      <Card className="mt-8">
-        <CardHeader>
-          <CardTitle className="text-lg">Understanding Engine Displacement</CardTitle>
-        </CardHeader>
-        <CardContent className="prose prose-sm max-w-none text-muted-foreground space-y-3">
-          <p>
-            Engine displacement is the total volume swept by all pistons during one complete revolution of the crankshaft. It is the single most fundamental measurement of an engine and determines airflow requirements, fuel system sizing, cam selection, and ultimately power potential. The formula is straightforward: Bore² x Stroke x 0.7854 x Cylinders. The 0.7854 constant is simply pi/4, converting the bore diameter into the area of the cylinder.
-          </p>
-          <p>
-            For example, the classic Chevy small block 350 uses a 4.000" bore and 3.480" stroke across 8 cylinders, yielding 349.8 cubic inches. The LS1, despite being called a "5.7 liter," actually displaces 346 cubic inches (3.898" bore x 3.622" stroke). Meanwhile, Ford's venerable 302 uses a 4.000" bore with a shorter 3.000" stroke, and the BBC 454 goes big with a 4.251" bore and 4.000" stroke. The Mopar 440 splits the difference at 4.320" x 3.750".
-          </p>
-          <h3 className="text-sm font-semibold text-foreground mt-4">Overbores and Stroker Combos</h3>
-          <p>
-            Boring a 350 SBC +0.030" (to 4.030") adds about 5 cubic inches, bringing it to 355ci. The popular 383 stroker takes that same +0.030" overbore and pairs it with a 3.750" stroke crankshaft from a 400 SBC, producing 383 cubic inches — a 33ci gain over stock. To convert cubic inches to liters, divide by 61.024: a 383ci engine is 6.27 liters, and a stock 350 is 5.73 liters. Every displacement increase changes the engine's appetite for air and fuel, so recalculate your carb or injector sizing whenever bore or stroke changes.
-          </p>
-        </CardContent>
-      </Card>
+      <CalculatorContent data={displacementContent} title="Engine Displacement" />
     </div>
   );
 }

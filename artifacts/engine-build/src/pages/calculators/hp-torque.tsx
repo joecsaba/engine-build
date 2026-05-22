@@ -3,6 +3,8 @@ import { SEOHead } from "@/components/SEOHead";
 import { Input } from "@/components/ui/input";
 import { Label } from "@/components/ui/label";
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
+import { CalculatorContent } from "@/components/calculators/CalculatorContent";
+import hpTorqueContent from "@/data/calculatorContent/hp-torque.mjs";
 import { Info } from "lucide-react";
 
 export default function HpTorqueCalculator() {
@@ -152,23 +154,7 @@ export default function HpTorqueCalculator() {
 
       </div>{/* end flex row */}
 
-      <Card className="mt-8">
-        <CardHeader>
-          <CardTitle className="text-lg">Horsepower and Torque: The 5252 RPM Crossover</CardTitle>
-        </CardHeader>
-        <CardContent className="prose prose-sm max-w-none text-muted-foreground space-y-3">
-          <p>
-            The relationship between horsepower and torque is defined by one formula: HP = Torque x RPM / 5252. The constant 5252 comes from 33,000 ft-lbs/min (James Watt's definition of one horsepower) divided by 2pi, which converts rotational speed to linear work. This is not an approximation — it is an exact mathematical relationship. Because of this formula, horsepower and torque are always numerically equal at exactly 5252 RPM, regardless of the engine.
-          </p>
-          <p>
-            Below 5252 RPM, torque is always the larger number. Above 5252 RPM, horsepower is always larger. This is why torque determines how hard the engine pulls at low and mid-range RPM, while horsepower — which accounts for how fast the engine can spin — determines peak potential. An engine that makes big torque at low RPM but falls off early will feel strong off the line but run out of steam on top.
-          </p>
-          <h3 className="text-sm font-semibold text-foreground mt-4">Real Engine Examples</h3>
-          <p>
-            The 1970 LT-1 350 was rated at 370 HP at 6000 RPM. Plugging into the formula: 370 x 5252 / 6000 = 324 lb-ft at that RPM. Its peak torque of 380 lb-ft came at 4000 RPM, which equates to 289 HP at that RPM (380 x 4000 / 5252). A modern LS3 makes 430 HP at 5900 RPM and 424 lb-ft at 4600 RPM — more power at lower stress levels thanks to better breathing and combustion efficiency. Understanding these relationships helps you choose the right cam, heads, and intake combination for your intended RPM range.
-          </p>
-        </CardContent>
-      </Card>
+      <CalculatorContent data={hpTorqueContent} title="HP & Torque" />
     </div>
   );
 }
