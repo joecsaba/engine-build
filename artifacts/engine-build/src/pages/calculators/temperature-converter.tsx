@@ -4,6 +4,8 @@ import { SEOHead } from "@/components/SEOHead";
 import { Input } from "@/components/ui/input";
 import { Label } from "@/components/ui/label";
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
+import { CalculatorContent } from "@/components/calculators/CalculatorContent";
+import temperatureContent from "@/data/calculatorContent/temperature-converter.mjs";
 
 type Unit = "f" | "c" | "k";
 
@@ -89,8 +91,9 @@ export default function TemperatureConverter() {
       <h1 className="text-3xl font-bold mb-2">Temperature Converter</h1>
       <p className="text-muted-foreground mb-8">Fahrenheit, Celsius, and Kelvin with reference temperatures for coolant, oil, and EGT.</p>
 
-      <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
-        <div className="space-y-4">
+      <div className="grid grid-cols-1 lg:grid-cols-3 gap-6">
+        {/* Main column: input + reference data (interactive bits) */}
+        <div className="lg:col-span-2 space-y-4">
           <Card>
             <CardHeader><CardTitle>Enter Temperature</CardTitle></CardHeader>
             <CardContent className="space-y-4">
@@ -124,50 +127,56 @@ export default function TemperatureConverter() {
             </CardContent>
           </Card>
 
+          <Card>
+            <CardHeader><CardTitle>Engine Reference Temperatures</CardTitle></CardHeader>
+            <CardContent>
+              <div className="overflow-x-auto">
+                <table className="w-full text-sm">
+                  <thead>
+                    <tr className="border-b text-left">
+                      <th className="pb-2 font-medium text-muted-foreground text-xs uppercase tracking-wider">°F</th>
+                      <th className="pb-2 font-medium text-muted-foreground text-xs uppercase tracking-wider">°C</th>
+                      <th className="pb-2 font-medium text-muted-foreground text-xs uppercase tracking-wider">Use</th>
+                    </tr>
+                  </thead>
+                  <tbody className="font-mono">
+                    {referenceData.map(row => (
+                      <tr key={row.f + row.use} className="border-b last:border-0 hover:bg-muted/50 transition-colors">
+                        <td
+                          className={`py-2 pr-3 cursor-pointer hover:underline font-semibold ${row.zone ? zoneColor[row.zone] : "text-primary"}`}
+                          onClick={() => loadRef(row.f)}
+                        >
+                          {row.f}°
+                        </td>
+                        <td className="py-2 pr-3">{row.c}°</td>
+                        <td className="py-2 font-sans text-muted-foreground text-xs">{row.use}</td>
+                      </tr>
+                    ))}
+                  </tbody>
+                </table>
+              </div>
+              <p className="text-xs text-muted-foreground mt-3 italic">Click any °F value to load it. Color: <span className="text-blue-500">cold</span>, <span className="text-emerald-600">normal</span>, <span className="text-amber-600">hot</span>, <span className="text-red-500">danger</span>.</p>
+            </CardContent>
+          </Card>
+        </div>
+
+        {/* Sticky sidebar: live output that updates as you type */}
+        <aside className="lg:sticky lg:top-20 lg:self-start">
           <Card className="bg-[#1a1a1a] text-white">
             <CardHeader><CardTitle>All Units</CardTitle></CardHeader>
             <CardContent>
-              <div className="grid grid-cols-3 gap-3">
+              <div className="grid grid-cols-1 gap-3">
                 <UnitRow unit="f" label="Fahrenheit" val={f} precision={1} />
                 <UnitRow unit="c" label="Celsius" val={c} precision={1} />
                 <UnitRow unit="k" label="Kelvin" val={k} precision={1} />
               </div>
             </CardContent>
           </Card>
-        </div>
-
-        <Card>
-          <CardHeader><CardTitle>Engine Reference Temperatures</CardTitle></CardHeader>
-          <CardContent>
-            <div className="overflow-x-auto">
-              <table className="w-full text-sm">
-                <thead>
-                  <tr className="border-b text-left">
-                    <th className="pb-2 font-medium text-muted-foreground text-xs uppercase tracking-wider">°F</th>
-                    <th className="pb-2 font-medium text-muted-foreground text-xs uppercase tracking-wider">°C</th>
-                    <th className="pb-2 font-medium text-muted-foreground text-xs uppercase tracking-wider">Use</th>
-                  </tr>
-                </thead>
-                <tbody className="font-mono">
-                  {referenceData.map(row => (
-                    <tr key={row.f + row.use} className="border-b last:border-0 hover:bg-muted/50 transition-colors">
-                      <td
-                        className={`py-2 pr-3 cursor-pointer hover:underline font-semibold ${row.zone ? zoneColor[row.zone] : "text-primary"}`}
-                        onClick={() => loadRef(row.f)}
-                      >
-                        {row.f}°
-                      </td>
-                      <td className="py-2 pr-3">{row.c}°</td>
-                      <td className="py-2 font-sans text-muted-foreground text-xs">{row.use}</td>
-                    </tr>
-                  ))}
-                </tbody>
-              </table>
-            </div>
-            <p className="text-xs text-muted-foreground mt-3 italic">Click any °F value to load it. Color: <span className="text-blue-500">cold</span>, <span className="text-emerald-600">normal</span>, <span className="text-amber-600">hot</span>, <span className="text-red-500">danger</span>.</p>
-          </CardContent>
-        </Card>
+        </aside>
       </div>
+
+      {/* Long-form educational content: full container width, below the calculator */}
+      <CalculatorContent data={temperatureContent} title="Temperature Converter" />
     </div>
   );
 }

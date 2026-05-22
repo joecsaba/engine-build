@@ -12,14 +12,41 @@
 // 404→/index.html fallback (e.g. /build-sheets/build/:id).
 // =============================================================================
 
-import { readFile, writeFile, mkdir } from "node:fs/promises";
+import { readFile, writeFile, mkdir, access } from "node:fs/promises";
 import { dirname, resolve } from "node:path";
-import { fileURLToPath } from "node:url";
+import { fileURLToPath, pathToFileURL } from "node:url";
 
 const __dirname = dirname(fileURLToPath(import.meta.url));
 const DIST = resolve(__dirname, "..", "dist", "public");
+const CONTENT_DIR = resolve(__dirname, "..", "src", "data", "calculatorContent");
 const SITE = "https://engine-build.com";
 const SITE_NAME = "Engine-build.com";
+
+// Try to load long-form content for a calculator slug. Returns null if no
+// content file exists yet — most calcs are still in that state and just get
+// the basic h1+description SEO block.
+async function loadCalcContent(slug) {
+  const path = resolve(CONTENT_DIR, `${slug}.mjs`);
+  try {
+    await access(path);
+  } catch {
+    return null;
+  }
+  const mod = await import(pathToFileURL(path).href);
+  return mod.default ?? null;
+}
+
+function renderContentHtml(content) {
+  if (!content) return "";
+  const sections = content.sections.map((s) => `
+      <h2>${escapeHtml(s.heading)}</h2>
+      ${s.body}`).join("");
+  return `
+      <article style="margin-top:32px;padding-top:24px;border-top:1px solid #e5e5e5;">
+        <p>${escapeHtml(content.intro)}</p>
+        ${sections}
+      </article>`;
+}
 
 // ---------------------------------------------------------------------------
 // Route manifest. Single source of truth for SEO copy per page.
@@ -183,7 +210,7 @@ function calcAppJsonLd({ title, description, path }) {
 }
 
 // Build a route entry for a calculator
-function calcEntry(c) {
+async function calcEntry(c) {
   const cat = CATEGORIES[c.category];
   const related = pickRelated(c.category, c.slug);
   const crumbs = [
@@ -192,6 +219,8 @@ function calcEntry(c) {
     { label: cat.label, href: cat.href },
     { label: c.title },
   ];
+  const content = await loadCalcContent(c.slug);
+  const longContentHtml = renderContentHtml(content);
   const seoBlock = `
       <nav aria-label="Breadcrumb" style="font-size:14px;color:#666;margin:24px 0;">
         ${breadcrumbHtml(crumbs)}
@@ -203,7 +232,7 @@ function calcEntry(c) {
       <ul>
         ${related.map((r) => `<li><a href="/calculators/${r.slug}">${escapeHtml(r.title)}</a></li>`).join("\n        ")}
       </ul>` : ""}
-      <p><a href="/calculators">← All Engine Builder Calculators</a></p>`;
+      <p><a href="/calculators">← All Engine Builder Calculators</a></p>${longContentHtml}`;
   return {
     path: `/calculators/${c.slug}`,
     title: c.title,
@@ -212,6 +241,7 @@ function calcEntry(c) {
     jsonLd: [calcAppJsonLd({ title: c.title, description: c.description, path: `/calculators/${c.slug}` }), breadcrumbJsonLd(crumbs)],
     priority: 0.8,
     changefreq: "monthly",
+    hasLongContent: !!content,
   };
 }
 
@@ -387,7 +417,7 @@ async function main() {
   const allEntries = [
     ...STATIC_PAGES.map(staticEntry),
     ...CATEGORY_PAGES.map(categoryEntry),
-    ...CALCS.map(calcEntry),
+    ...(await Promise.all(CALCS.map(calcEntry))),
   ];
 
   let written = 0;
@@ -406,7 +436,9 @@ async function main() {
   await writeFile(resolve(DIST, "sitemap.xml"), sitemap, "utf8");
   const indexableCount = allEntries.filter((e) => !e.noindex).length + 1; // +1 for homepage
 
+  const withLongContent = allEntries.filter((e) => e.hasLongContent).length;
   console.log(`prerender: wrote ${written} HTML files (${CALCS.length} calculators, ${CATEGORY_PAGES.length} categories, ${STATIC_PAGES.length} static)`);
+  console.log(`prerender: ${withLongContent} / ${CALCS.length} calculators have long-form content`);
   console.log(`prerender: wrote sitemap.xml with ${indexableCount} URLs (noindex excluded)`);
 }
 
