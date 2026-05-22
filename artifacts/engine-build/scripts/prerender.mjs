@@ -99,24 +99,28 @@ const CALCS = [
 // NOTE: "/" is intentionally excluded — the source index.html already ships
 // rich homepage SEO content inside <div id="root"> (calculator listing, engine
 // reference specs, etc.) which we want to preserve as-is.
+//
+// `noindex: true` means prerender the page (so direct visits still get good
+// metadata) but EXCLUDE from sitemap.xml. Used for auth-gated pages with no
+// public content for Google to index.
 const STATIC_PAGES = [
-  { path: "/calculators",       title: "All Engine Building Calculators",                            description: "Browse 47+ engine building calculators across short block, cam & valvetrain, power & fuel, drivetrain & shop, and diesel categories. All free." },
-  { path: "/cam-guide",         title: "Camshaft Selection Guide",                                   description: "Systematic approach to selecting the right camshaft for your build. Duration, LSA, lift, and overlap explained for street, strip, and race." },
-  { path: "/build-advisor",     title: "Build Advisor — HP Goal Planner",                            description: "Set a target HP, pick your engine platform, and dial in heads, cam, intake, and compression with live sliders. Data-backed HP estimates." },
-  { path: "/build-sheets",      title: "Build Sheets — Engine Build Planner",                        description: "Plan and track your engine build. Parts lists, target specs, and dyno data in one organized sheet." },
-  { path: "/build-sheets/new",  title: "Start a New Engine Build",                                   description: "Guided wizard to start a new engine build sheet. Pick your platform and target specs, then refine with the calculator suite." },
-  { path: "/build-sheets/planner", title: "Build Planner",                                           description: "Plan your engine build component by component with live spec validation." },
-  { path: "/build-sheets/my-builds", title: "My Builds",                                             description: "Your saved engine builds. Resume any build, clone for a new project, or export specs." },
-  { path: "/engine-data",       title: "Engine Specs Database — 3,500+ Engines",                    description: "Bore, stroke, rod length, compression ratio, head data, valve sizes, and clearances for 3,500+ domestic and import engines. Searchable by manufacturer." },
-  { path: "/torque-specs",      title: "Torque Specs Quick Lookup",                                  description: "Head bolt, main bolt, and rod bolt torque sequences for popular engine platforms. Step-by-step with ARP upgrade specs." },
-  { path: "/shop-tools/directory", title: "Machine Shop Directory",                                  description: "Find engine machine shops near you. Searchable by service (boring, decking, balancing) and radius from your zip code." },
-  { path: "/contact",           title: "Contact",                                                    description: "Send feature requests, calculator suggestions, or feedback. We read every message." },
-  { path: "/privacy",           title: "Privacy Policy",                                             description: "How Engine-build.com handles your data. We don't sell your information." },
-  { path: "/terms",             title: "Terms of Service",                                           description: "Terms of service for using Engine-build.com calculators and tools." },
-  { path: "/sign-in",           title: "Sign In",                                                    description: "Sign in to sync favorites, saved presets, and engine builds across every device." },
-  { path: "/sign-up",           title: "Create a Free Account",                                      description: "Create a free Engine-build.com account to sync favorites, calculator presets, and build sheets across phone, tablet, and shop laptop." },
-  { path: "/me",                title: "Dashboard",                                                  description: "Your engine-building hub: favorites, recents, saved presets, builds, and defaults." },
-  { path: "/settings",          title: "Settings",                                                   description: "Manage your display name, default units, and default engine platform." },
+  { path: "/calculators",       title: "All Engine Building Calculators",                            description: "Browse 47+ engine building calculators across short block, cam & valvetrain, power & fuel, drivetrain & shop, and diesel categories. All free.",     priority: 0.9 },
+  { path: "/cam-guide",         title: "Camshaft Selection Guide",                                   description: "Systematic approach to selecting the right camshaft for your build. Duration, LSA, lift, and overlap explained for street, strip, and race.",         priority: 0.9 },
+  { path: "/build-advisor",     title: "Build Advisor — HP Goal Planner",                            description: "Set a target HP, pick your engine platform, and dial in heads, cam, intake, and compression with live sliders. Data-backed HP estimates.",             priority: 0.8 },
+  { path: "/build-sheets",      title: "Build Sheets — Engine Build Planner",                        description: "Plan and track your engine build. Parts lists, target specs, and dyno data in one organized sheet.",                                                  priority: 0.7 },
+  { path: "/build-sheets/new",  title: "Start a New Engine Build",                                   description: "Guided wizard to start a new engine build sheet. Pick your platform and target specs, then refine with the calculator suite.",                       noindex: true },
+  { path: "/build-sheets/planner", title: "Build Planner",                                           description: "Plan your engine build component by component with live spec validation.",                                                                              noindex: true },
+  { path: "/build-sheets/my-builds", title: "My Builds",                                             description: "Your saved engine builds. Resume any build, clone for a new project, or export specs.",                                                                 noindex: true },
+  { path: "/engine-data",       title: "Engine Specs Database — 3,500+ Engines",                    description: "Bore, stroke, rod length, compression ratio, head data, valve sizes, and clearances for 3,500+ domestic and import engines. Searchable by manufacturer.", priority: 0.9 },
+  { path: "/torque-specs",      title: "Torque Specs Quick Lookup",                                  description: "Head bolt, main bolt, and rod bolt torque sequences for popular engine platforms. Step-by-step with ARP upgrade specs.",                              priority: 0.8 },
+  { path: "/shop-tools/directory", title: "Machine Shop Directory",                                  description: "Find engine machine shops near you. Searchable by service (boring, decking, balancing) and radius from your zip code.",                              priority: 0.8 },
+  { path: "/contact",           title: "Contact",                                                    description: "Send feature requests, calculator suggestions, or feedback. We read every message.",                                                                    priority: 0.5 },
+  { path: "/privacy",           title: "Privacy Policy",                                             description: "How Engine-build.com handles your data. We don't sell your information.",                                                                              priority: 0.3 },
+  { path: "/terms",             title: "Terms of Service",                                           description: "Terms of service for using Engine-build.com calculators and tools.",                                                                                   priority: 0.3 },
+  { path: "/sign-in",           title: "Sign In",                                                    description: "Sign in to sync favorites, saved presets, and engine builds across every device.",                                                                     priority: 0.5 },
+  { path: "/sign-up",           title: "Create a Free Account",                                      description: "Create a free Engine-build.com account to sync favorites, calculator presets, and build sheets across phone, tablet, and shop laptop.",               priority: 0.6 },
+  { path: "/me",                title: "Dashboard",                                                  description: "Your engine-building hub: favorites, recents, saved presets, builds, and defaults.",                                                                   noindex: true },
+  { path: "/settings",          title: "Settings",                                                   description: "Manage your display name, default units, and default engine platform.",                                                                                noindex: true },
 ];
 
 // Category landing pages
@@ -206,6 +210,8 @@ function calcEntry(c) {
     description: c.description,
     seoBlock,
     jsonLd: [calcAppJsonLd({ title: c.title, description: c.description, path: `/calculators/${c.slug}` }), breadcrumbJsonLd(crumbs)],
+    priority: 0.8,
+    changefreq: "monthly",
   };
 }
 
@@ -234,6 +240,8 @@ function categoryEntry(cp) {
     description: cp.description,
     seoBlock,
     jsonLd: [breadcrumbJsonLd(crumbs)],
+    priority: 0.8,
+    changefreq: "weekly",
   };
 }
 
@@ -253,6 +261,8 @@ function staticEntry(sp) {
     description: sp.description,
     seoBlock,
     jsonLd: sp.path === "/" ? [] : [breadcrumbJsonLd(crumbs)],
+    noindex: sp.noindex === true,
+    priority: sp.priority,
   };
 }
 
@@ -261,7 +271,7 @@ function staticEntry(sp) {
 // ---------------------------------------------------------------------------
 
 function generateHtml(template, entry) {
-  const { path, title, description, seoBlock, jsonLd = [] } = entry;
+  const { path, title, description, seoBlock, jsonLd = [], noindex = false } = entry;
   const fullTitle = path === "/" ? `${title} | ${SITE_NAME}` : `${title} | ${SITE_NAME}`;
   const canonical = `${SITE}${path}`;
 
@@ -269,6 +279,15 @@ function generateHtml(template, entry) {
 
   // <title>
   html = html.replace(/<title>[\s\S]*?<\/title>/, `<title>${escapeHtml(fullTitle)}</title>`);
+
+  // <meta name="robots"> — flip to noindex,follow for auth-gated/private pages
+  // so Google doesn't index them even if it finds them via a link.
+  if (noindex) {
+    html = html.replace(
+      /<meta\s+name="robots"\s+content="[^"]*"\s*\/?>/,
+      `<meta name="robots" content="noindex, follow" />`
+    );
+  }
 
   // <meta name="description">
   html = html.replace(
@@ -332,6 +351,35 @@ function generateHtml(template, entry) {
 // Main
 // ---------------------------------------------------------------------------
 
+// ---------------------------------------------------------------------------
+// sitemap.xml generation
+// ---------------------------------------------------------------------------
+
+function generateSitemap(entries) {
+  const today = new Date().toISOString().slice(0, 10);
+  const indexable = entries.filter((e) => !e.noindex);
+  // Homepage is excluded from STATIC_PAGES so add it explicitly with priority 1.0
+  const all = [
+    { path: "/", priority: 1.0, changefreq: "weekly" },
+    ...indexable,
+  ];
+  const urls = all.map((e) => {
+    const loc = `${SITE}${e.path}`;
+    const priority = (e.priority ?? 0.7).toFixed(1);
+    const changefreq = e.changefreq ?? "monthly";
+    return `  <url><loc>${loc}</loc><lastmod>${today}</lastmod><changefreq>${changefreq}</changefreq><priority>${priority}</priority></url>`;
+  }).join("\n");
+  return `<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+${urls}
+</urlset>
+`;
+}
+
+// ---------------------------------------------------------------------------
+// Main
+// ---------------------------------------------------------------------------
+
 async function main() {
   const templatePath = resolve(DIST, "index.html");
   const template = await readFile(templatePath, "utf8");
@@ -353,7 +401,13 @@ async function main() {
     written++;
   }
 
+  // Generate sitemap.xml from the same manifest so it never drifts.
+  const sitemap = generateSitemap(allEntries);
+  await writeFile(resolve(DIST, "sitemap.xml"), sitemap, "utf8");
+  const indexableCount = allEntries.filter((e) => !e.noindex).length + 1; // +1 for homepage
+
   console.log(`prerender: wrote ${written} HTML files (${CALCS.length} calculators, ${CATEGORY_PAGES.length} categories, ${STATIC_PAGES.length} static)`);
+  console.log(`prerender: wrote sitemap.xml with ${indexableCount} URLs (noindex excluded)`);
 }
 
 main().catch((err) => {
