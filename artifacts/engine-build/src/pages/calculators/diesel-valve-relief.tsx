@@ -6,6 +6,8 @@ import { Label } from "@/components/ui/label";
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 import { Select, SelectContent, SelectItem, SelectTrigger, SelectValue } from "@/components/ui/select";
 import { AlertTriangle, CheckCircle, Info, Wrench, Loader2 } from "lucide-react";
+import { CalculatorContent } from "@/components/calculators/CalculatorContent";
+import dieselValveReliefContent from "@/data/calculatorContent/diesel-valve-relief.mjs";
 
 /* ── Types ─────────────────────────────────────────────────────── */
 
@@ -626,7 +628,10 @@ export default function DieselValveReliefCalculator() {
       </div>
       )}
 
+      <CalculatorContent data={dieselValveReliefContent} title="Cummins Valve Relief" />
+
       {/* ── Educational content ── */}
+      {false && (
       <Card className="mt-8">
         <CardHeader>
           <CardTitle className="text-lg">Understanding Diesel Valve Relief for Cam Upgrades</CardTitle>
@@ -659,6 +664,7 @@ export default function DieselValveReliefCalculator() {
           </p>
         </CardContent>
       </Card>
+      )}
     </div>
   );
 }

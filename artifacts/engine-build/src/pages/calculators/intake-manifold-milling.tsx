@@ -5,6 +5,8 @@ import { Label } from "@/components/ui/label";
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 import { Select, SelectContent, SelectItem, SelectTrigger, SelectValue } from "@/components/ui/select";
 import { ChevronDown, Info, AlertTriangle } from "lucide-react";
+import { CalculatorContent } from "@/components/calculators/CalculatorContent";
+import intakeManifoldMillingContent from "@/data/calculatorContent/intake-manifold-milling.mjs";
 
 // ── Engine data ──────────────────────────────────────────────────────────────
 
@@ -653,54 +655,6 @@ export default function IntakeManifoldMillingCalculator() {
             </Section>
           </div>
 
-          {/* ── The Math ── */}
-          <div className="mt-5">
-            <Section title="How the Math Works">
-              <div className="prose prose-sm max-w-none text-muted-foreground space-y-4">
-                <p>
-                  On a 90° V-engine, each cylinder bank sits at 45° from vertical. The intake manifold sits in the valley between the two banks. When you remove material from the head deck surface (Surface A), the head drops closer to the crankshaft centerline. This causes the intake manifold mounting surface on the head to shift <strong>inward</strong> toward the engine's centerline.
-                </p>
-                <p>
-                  How much it shifts depends on the <strong>head angle</strong> — the angle between the deck surface and the intake face. If the intake face is perfectly perpendicular to the deck (0°), the shift is 1:1. If the face is angled (like the SBC's 10°), the shift is amplified.
-                </p>
-
-                <h4 className="font-semibold text-foreground">The Formula</h4>
-                <div className="bg-gray-100 rounded-lg p-4 font-mono text-center text-foreground">
-                  Factor = 0.707 / sin(45° - head_angle)
-                </div>
-                <p>
-                  Where 0.707 = sin(45°), the base geometry of a 90° V-engine. The result is the multiplier: multiply the total deck removal by this factor to get the required intake face correction.
-                </p>
-
-                <h4 className="font-semibold text-foreground">Three Surfaces</h4>
-                <ul>
-                  <li><strong>Surface A</strong> — Head deck (gasket surface). This is your input — the amount you milled off.</li>
-                  <li><strong>Surface B</strong> — Intake manifold face of the head (or both sides of the intake manifold). Corrected using the head angle factor.</li>
-                  <li><strong>Surface C</strong> — Bottom of the intake manifold where it sits on the block (lifter valley rails). On some engines this needs correction too; on others (Pontiac, Chrysler B/RB) the manifold doesn't contact the block here.</li>
-                </ul>
-
-                <h4 className="font-semibold text-foreground">Where to Make the Correction</h4>
-                <p>
-                  You have two choices: mill the intake face of the <strong>heads</strong>, or mill the rails of the <strong>intake manifold</strong>. Most experienced builders prefer milling the heads because it keeps the intake manifold at its stock dimensions — so it can be used on other engines later. If you mill the manifold, it's married to that specific combination.
-                </p>
-
-                <h4 className="font-semibold text-foreground">When Is Correction Needed?</h4>
-                <p>
-                  There is no single universal threshold — it depends on gasket thickness, port size, bolt hole tolerance, and engine family. However, these general guidelines apply:
-                </p>
-                <ul>
-                  <li><strong>Under ~0.005" port shift:</strong> No correction needed. The intake gasket absorbs the difference and bolt holes line up fine.</li>
-                  <li><strong>0.005"-0.010" shift:</strong> Gray area. Dry-fit the intake with no gaskets and check bolt hole alignment. A thicker intake gasket (.060"-.120") may absorb this on many engines.</li>
-                  <li><strong>Over 0.010" shift:</strong> Correction is needed. Bolt holes won't line up, ports will be misaligned, and you'll have sealing problems.</li>
-                  <li><strong>Over 0.020" shift:</strong> Significant machining required. The manifold may "high center" on the block before seating on the heads.</li>
-                </ul>
-                <p>
-                  As a practical rule: if you've only taken a light cleanup cut (0.005"-0.008" off the heads), you almost certainly don't need to worry about the intake. Once you get above 0.010"-0.015" off the deck, start checking. Heavy cuts of 0.030"+ almost always require correction.
-                </p>
-              </div>
-            </Section>
-          </div>
-
         </div>{/* end left column */}
 
         {/* ── Right sidebar ── */}
@@ -753,6 +707,8 @@ export default function IntakeManifoldMillingCalculator() {
         </aside>
 
       </div>{/* end flex row */}
+
+      <CalculatorContent data={intakeManifoldMillingContent} title="Intake Manifold Milling" />
     </div>
   );
 }

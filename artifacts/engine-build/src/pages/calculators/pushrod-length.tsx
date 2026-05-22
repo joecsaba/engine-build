@@ -8,6 +8,8 @@ import { Tabs, TabsContent, TabsList, TabsTrigger } from "@/components/ui/tabs";
 import { useBuildContext } from "@/context/BuildContext";
 import { BuildBanner } from "@/components/BuildBanner";
 import { Info } from "lucide-react";
+import { CalculatorContent } from "@/components/calculators/CalculatorContent";
+import pushrodLengthContent from "@/data/calculatorContent/pushrod-length.mjs";
 
 /* ── Platform data ──────────────────────────────────────────────── */
 
@@ -798,23 +800,7 @@ export default function PushrodLengthCalculator() {
 
       </div>{/* end flex row */}
 
-      <Card className="mt-8">
-        <CardHeader>
-          <CardTitle className="text-lg">Why Pushrod Length Matters</CardTitle>
-        </CardHeader>
-        <CardContent className="prose prose-sm max-w-none text-muted-foreground space-y-3">
-          <p>
-            The correct pushrod length ensures that the rocker arm tip contacts the valve stem at the proper location — centered on the valve tip at mid-lift. When the pushrod is the wrong length, the rocker tip sweeps too far to one side of the valve stem, causing uneven wear on the valve tip, accelerated valve guide wear, increased friction, and eventually oil consumption from worn guides. Getting this right is critical for valve train longevity and consistent valve motion.
-          </p>
-          <p>
-            Any change to the geometry between the cam lobe and the valve tip requires checking pushrod length. This includes head milling (moves the rocker closer to the cam), block decking (same effect), different gasket thickness, a cam with a different base circle diameter, different rocker arm ratio, or switching from stock stamped to roller tip rockers. Each of these modifications shifts the geometric relationship, and the pushrod length must compensate.
-          </p>
-          <h3 className="text-sm font-semibold text-foreground mt-4">LS Engines: Pushrod Is Your Only Adjustment</h3>
-          <p>
-            LS engines use non-adjustable net-lash rocker arms with a fixed pivot point. Unlike traditional small blocks with adjustable poly-lock nuts, there is no way to set preload or lash at the rocker. The pushrod length is the sole means of controlling hydraulic lifter preload — typically targeting 0.030"-0.060" of preload (lifter plunger travel from the snap ring). If you install different heads, a different cam, or machine the block on an LS, you must determine the correct pushrod length using a checking pushrod before ordering your final set.
-          </p>
-        </CardContent>
-      </Card>
+      <CalculatorContent data={pushrodLengthContent} title="Pushrod Length" />
     </div>
   );
 }

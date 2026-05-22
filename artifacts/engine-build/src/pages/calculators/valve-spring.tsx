@@ -7,6 +7,8 @@ import { Select, SelectContent, SelectItem, SelectTrigger, SelectValue } from "@
 import { Tabs, TabsContent, TabsList, TabsTrigger } from "@/components/ui/tabs";
 import { useBuildContext } from "@/context/BuildContext";
 import { Info } from "lucide-react";
+import { CalculatorContent } from "@/components/calculators/CalculatorContent";
+import valveSpringContent from "@/data/calculatorContent/valve-spring.mjs";
 
 /* ── Application safety margins ───────────────────────────────── */
 
@@ -1711,23 +1713,7 @@ export default function ValveSpringCalculator() {
 
       </div>{/* end flex row */}
 
-      <Card className="mt-8">
-        <CardHeader>
-          <CardTitle className="text-lg">Valve Springs: Matching Springs to Your Cam</CardTitle>
-        </CardHeader>
-        <CardContent className="prose prose-sm max-w-none text-muted-foreground space-y-3">
-          <p>
-            Valve springs must do two jobs: maintain contact with the cam lobe at the base circle (seat pressure) and control the valve at maximum lift against the inertia forces trying to throw it open (open pressure). Seat pressure that is too low allows the lifter to bounce off the cam lobe, causing noise, wear, and erratic valve motion. Open pressure that is too low at high RPM results in valve float — the spring cannot close the valve fast enough, and the valve hangs open, losing power and risking piston contact.
-          </p>
-          <p>
-            Coil bind is the most dangerous spring failure mode. When a spring compresses to its solid height (all coils touching), it instantly becomes a rigid column — the valve stops moving but the cam keeps pushing, bending the pushrod, breaking the rocker, or snapping the valve stem. You need a minimum of 0.060" of clearance between maximum valve lift and coil bind height. Always verify installed height, maximum lift, and coil bind height before assembly.
-          </p>
-          <h3 className="text-sm font-semibold text-foreground mt-4">Retainers, Mass, and RPM</h3>
-          <p>
-            The force required to control the valve increases with the square of engine speed — doubling RPM quadruples the inertia force. At some point, adding more spring pressure creates diminishing returns because the additional pressure increases friction and cam lobe loading. The solution is reducing mass: titanium retainers weigh 40-50% less than steel, and titanium valves save even more. Lighter valvetrain components allow the same springs to control the valves at higher RPM, or they let you run less spring pressure for the same RPM ceiling, reducing wear on flat tappet cam lobes and improving engine longevity.
-          </p>
-        </CardContent>
-      </Card>
+      <CalculatorContent data={valveSpringContent} title="Valve Springs" />
     </div>
   );
 }

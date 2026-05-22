@@ -7,6 +7,8 @@ import { Select, SelectContent, SelectItem, SelectTrigger, SelectValue } from "@
 import { ChevronDown, Thermometer, AlertTriangle, Gauge, Wind, HelpCircle, Info } from "lucide-react";
 import { useBuildField } from "@/hooks/useBuildField";
 import { useBuildContext } from "@/context/BuildContext";
+import { CalculatorContent } from "@/components/calculators/CalculatorContent";
+import dieselEgtContent from "@/data/calculatorContent/diesel-egt-drive-pressure.mjs";
 
 // ── Types ───────────────────────────────────────────────────────────────────────
 
@@ -1213,10 +1215,13 @@ export default function DieselEgtDrivePressureCalculator() {
         </div>
       )}
 
+      <CalculatorContent data={dieselEgtContent} title="EGT & Drive Pressure" />
+
       {/* ══════════════════════════════════════════════════════════════════════════ */}
       {/* EDUCATIONAL SECTIONS                                                     */}
       {/* ══════════════════════════════════════════════════════════════════════════ */}
 
+      {false && (<>
       <Section title="What EGT Actually Measures" open={!!openSections["what-egt"]} toggle={() => toggleSection("what-egt")}>
         <div className="prose prose-sm max-w-none">
           <p>
@@ -1387,6 +1392,7 @@ export default function DieselEgtDrivePressureCalculator() {
           </table>
         </div>
       </Section>
+      </>)}
 
       {/* Cross-links */}
       <div className="mt-10 p-5 bg-gray-50 rounded-xl border">

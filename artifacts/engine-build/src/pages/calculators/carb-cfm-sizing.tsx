@@ -8,6 +8,8 @@ import { Slider } from "@/components/ui/slider";
 import { useBuildField } from "@/hooks/useBuildField";
 import { useBuildContext } from "@/context/BuildContext";
 import { ChevronDown, AlertTriangle, Info, Lightbulb, Gauge, Calculator } from "lucide-react";
+import { CalculatorContent } from "@/components/calculators/CalculatorContent";
+import carbCfmSizingContent from "@/data/calculatorContent/carb-cfm-sizing.mjs";
 
 // ── Available carb sizes (real Holley / Edelbrock catalog sizes) ──────
 // Verified against current Holley, Edelbrock, and Demon catalogs.
@@ -1216,7 +1218,8 @@ export default function CarbCfmSizingCalculator() {
         </div>
       </div>
 
-      {/* ── Educational Sections ─────────────────────────────────── */}
+      {/* ── Educational Sections (now via CalculatorContent below) ──── */}
+      {false && (<>
       <Section
         title="How the CFM Formula Works"
         open={educationOpen}
@@ -1362,7 +1365,6 @@ export default function CarbCfmSizingCalculator() {
           </p>
         </div>
       </Section>
-
       <Section
         title="Common Engine & Carb Combinations"
         open={combosOpen}
@@ -1403,6 +1405,7 @@ export default function CarbCfmSizingCalculator() {
           </p>
         </div>
       </Section>
+      </>)}
 
       </div>{/* end left column */}
 
@@ -1452,23 +1455,7 @@ export default function CarbCfmSizingCalculator() {
 
       </div>{/* end flex row */}
 
-      <Card className="mt-8">
-        <CardHeader>
-          <CardTitle className="text-lg">Carburetor CFM Sizing for Street and Race Engines</CardTitle>
-        </CardHeader>
-        <CardContent className="prose prose-sm max-w-none text-muted-foreground space-y-3">
-          <p>
-            The basic carburetor sizing formula is CFM = (CID x RPM x VE) / 3456, where VE (volumetric efficiency) accounts for how well the engine fills its cylinders. A stock 350 SBC with a mild cam runs about 80% VE, needing roughly 485 CFM at 5,500 RPM — a 500 CFM 2-barrel or small 4-barrel is ideal. Add heads and a cam and VE climbs to 85-90%, pushing the requirement to 550-600 CFM. A 383 stroker with aftermarket heads and a performance cam at 90% VE needs 700+ CFM.
-          </p>
-          <p>
-            Overcarburetion is the most common mistake in carbureted engine builds. An oversized carburetor kills throttle-plate signal (the pressure drop across the venturi that draws fuel from the circuits), which destroys low-RPM throttle response, causes hesitation, and wastes fuel. A 350 SBC with a stock cam and intake does not need an 850 CFM carb — it will stumble off idle and never see enough airflow to reach the carb's efficient operating range. Size for the 85-90% efficiency point of the carburetor, which means the engine at peak power should be pulling about 85-90% of the carb's rated CFM.
-          </p>
-          <h3 className="text-sm font-semibold text-foreground mt-4">Street vs. Race Sizing Strategy</h3>
-          <p>
-            Street engines should be sized for peak torque RPM, not peak power RPM, because that is where you spend most of your driving time. A mild 350 making peak torque at 3,500 RPM needs only about 400 CFM at that speed — a 600 CFM carb handles this perfectly while still having headroom for higher RPM pulls. Race engines should be sized for peak HP RPM plus a 200 RPM margin. When in doubt between two sizes, the street engine should always go with the smaller carb. Better signal, crisper throttle response, and cleaner part-throttle mixtures outweigh the theoretical peak-power advantage of a larger carb that the engine can never fully utilize on the street.
-          </p>
-        </CardContent>
-      </Card>
+      <CalculatorContent data={carbCfmSizingContent} title="Carburetor CFM Sizing" />
     </div>
   );
 }

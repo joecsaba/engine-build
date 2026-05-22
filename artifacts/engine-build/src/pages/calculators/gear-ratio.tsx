@@ -10,6 +10,8 @@ import { useBuildField } from "@/hooks/useBuildField";
 import { useBuildContext } from "@/context/BuildContext";
 import { useTransmissions } from "@/hooks/useEngineData";
 import { Info } from "lucide-react";
+import { CalculatorContent } from "@/components/calculators/CalculatorContent";
+import gearRatioContent from "@/data/calculatorContent/gear-ratio.mjs";
 
 /* ─── Constants ─── */
 const SPEED_CONSTANT = 336.13; // 63360 / (60 × π)
@@ -967,23 +969,7 @@ export default function GearRatioCalculator() {
 
       </div>{/* end flex row */}
 
-      <Card className="mt-8">
-        <CardHeader>
-          <CardTitle className="text-lg">Gear Ratio and Final Drive Selection</CardTitle>
-        </CardHeader>
-        <CardContent className="prose prose-sm max-w-none text-muted-foreground space-y-3">
-          <p>
-            Engine RPM at any given speed is determined by: RPM = (Speed x Gear Ratio x Axle Ratio x 336.13) / Tire Diameter. This relationship governs whether your engine is loafing on the highway or screaming at redline. The transmission gear ratio multiplied by the axle (ring and pinion) ratio gives the overall drive ratio, and the tire diameter acts as the final reduction — taller tires effectively lower the ratio, shorter tires raise it.
-          </p>
-          <p>
-            The classic street/strip dilemma is 3.73 versus 4.10 rear gears. With 3.73s and a 28" tire in a 1:1 top gear, 70 MPH puts the engine at about 2,650 RPM — comfortable for highway cruising, good fuel economy, and lower engine wear. Switch to 4.10s and that same 70 MPH is now 2,910 RPM — noticeably busier on the highway but significantly quicker off the line and through the gears because the engine stays closer to its torque peak during acceleration.
-          </p>
-          <h3 className="text-sm font-semibold text-foreground mt-4">Tire Size and Highway RPM</h3>
-          <p>
-            Tire diameter changes your effective gear ratio without touching the ring and pinion. Going from a 26" tire to a 28" tire with 3.73 gears drops highway RPM by about 7% — equivalent to swapping from 3.73s to roughly 3.46s. This is why drag racers run small-diameter slicks (shorter tire = higher effective ratio for launch) and why tall off-road tires make trucks feel sluggish (lower effective ratio, engine below its torque peak). Always recalculate your cruise RPM when changing tire sizes, and consider a gear swap if you have moved more than 2" in tire diameter from stock.
-          </p>
-        </CardContent>
-      </Card>
+      <CalculatorContent data={gearRatioContent} title="Gear Ratio / Final Drive" />
     </div>
   );
 }

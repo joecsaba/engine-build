@@ -8,6 +8,8 @@ import { ChevronDown, Info } from "lucide-react";
 import { useBuildField } from "@/hooks/useBuildField";
 import { useBuildContext } from "@/context/BuildContext";
 import { useHeadFlowProfiles } from "@/hooks/useEngineData";
+import { CalculatorContent } from "@/components/calculators/CalculatorContent";
+import headFlowContent from "@/data/calculatorContent/head-flow.mjs";
 
 // ── Constants ───────────────────────────────────────────────────────────────────
 
@@ -841,6 +843,7 @@ export default function HeadFlowCalculator() {
       </div>
 
       {/* ──────────── EDUCATIONAL SECTION ──────────── */}
+      {false && (
       <div className="mt-10 border rounded-xl overflow-hidden">
         <button
           className="w-full flex items-center justify-between px-5 py-4 bg-[#1a1a1a] text-white font-medium hover:bg-[#2a2a2a] transition-colors"
@@ -899,6 +902,7 @@ export default function HeadFlowCalculator() {
           </div>
         )}
       </div>
+      )}
 
       </div>{/* end left column */}
 
@@ -948,23 +952,7 @@ export default function HeadFlowCalculator() {
 
       </div>{/* end flex row */}
 
-      <Card className="mt-8">
-        <CardHeader>
-          <CardTitle className="text-lg">Cylinder Head Airflow and Power Potential</CardTitle>
-        </CardHeader>
-        <CardContent className="prose prose-sm max-w-none text-muted-foreground space-y-3">
-          <p>
-            Cylinder head airflow is the single greatest determinant of an engine's power potential. The widely validated SuperFlow formula — HP = Peak CFM x 0.257 x Cylinders — gives a reliable estimate for naturally aspirated engines. A set of heads flowing 270 CFM per port on a V8 yields approximately 555 HP potential (270 x 0.257 x 8). Stock Vortec SBC heads flow about 218 CFM, limiting a 350 to roughly 448 HP. Aftermarket heads like the AFR 195 flow 270 CFM, and ported LS3 heads can exceed 370 CFM.
-          </p>
-          <p>
-            The exhaust-to-intake flow ratio is equally important. Target 72-80% of intake flow on the exhaust side. Below 65%, the exhaust port becomes the bottleneck — the cylinder cannot clear spent gases fast enough for the next intake charge. This shows up as poor scavenging, high exhaust temperatures, and a power plateau that no amount of intake porting will fix. Exhaust port work or larger exhaust valves are the solution.
-          </p>
-          <h3 className="text-sm font-semibold text-foreground mt-4">Match the Heads to the Cam</h3>
-          <p>
-            A head that flows 300 CFM at 0.600" lift is wasted if your cam only opens the valve 0.480". The head's peak flow potential is never reached because the valve never opens far enough. Look at the flow curve: if flow is still climbing at your cam's maximum lift, you are leaving power on the table and may benefit from a higher-lift cam or higher-ratio rockers. Conversely, if flow plateaus at 0.450" and your cam opens to 0.550", you are carrying the cost and complexity of a bigger cam profile with no airflow benefit. Port velocity matters too — target 180-220 ft/sec for street builds and 250-320 ft/sec for race applications.
-          </p>
-        </CardContent>
-      </Card>
+      <CalculatorContent data={headFlowContent} title="Cylinder Head Flow" />
     </div>
   );
 }

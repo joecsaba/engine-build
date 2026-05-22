@@ -7,6 +7,8 @@ import { Select, SelectContent, SelectItem, SelectTrigger, SelectValue } from "@
 import { Slider } from "@/components/ui/slider";
 import { ChevronDown, Info } from "lucide-react";
 import { useManufacturers, useFamilies, useFamilyEngines } from "@/hooks/useEngineData";
+import { CalculatorContent } from "@/components/calculators/CalculatorContent";
+import pistonToValveContent from "@/data/calculatorContent/piston-to-valve.mjs";
 import {
   LineChart, Line, XAxis, YAxis, CartesianGrid, Tooltip, ReferenceLine,
   ResponsiveContainer,
@@ -1003,23 +1005,7 @@ export default function PistonToValveCalculator() {
 
         </div>{/* end flex row */}
 
-        <Card className="mt-8">
-          <CardHeader>
-            <CardTitle className="text-lg">Piston-to-Valve Clearance: The Critical Safety Check</CardTitle>
-          </CardHeader>
-          <CardContent className="prose prose-sm max-w-none text-muted-foreground space-y-3">
-            <p>
-              Piston-to-valve (P2V) clearance is the minimum distance between the valve head and the piston top during the overlap period — the window of crankshaft rotation when both the intake and exhaust valves are open simultaneously. If this clearance is insufficient, the valve contacts the piston, bending the valve, cracking the piston, and potentially destroying the entire engine on the first revolution. Minimum safe clearances are 0.080" on the intake side and 0.100" on the exhaust side.
-            </p>
-            <p>
-              Several modifications reduce P2V clearance and require rechecking: installing a cam with more duration or lift, increasing the rocker arm ratio (e.g., upgrading from 1.5:1 to 1.6:1 rockers), milling the cylinder heads (which moves the valves closer to the piston), and advancing the camshaft timing. Valve reliefs (notches) machined into the piston crown provide clearance, but their depth must be verified against the actual valve position — not assumed from catalog specifications.
-            </p>
-            <h3 className="text-sm font-semibold text-foreground mt-4">How to Check P2V Clearance</h3>
-            <p>
-              The most reliable method is the clay check: place modeling clay on the piston top in the valve pocket areas, assemble the engine with light checking springs (not full-rate springs), rotate the engine through two full revolutions, then disassemble and measure the clay thickness with a caliper. Alternatively, use a dial indicator through the spark plug hole while the engine is assembled with light springs, rotating slowly through the overlap zone (from intake opening to exhaust closing). Always check P2V with the cam degreed to its final installed position — a 4-degree advance moves the intake valve event earlier and can eat into clearance that looked fine at "straight up."
-            </p>
-          </CardContent>
-        </Card>
+        <CalculatorContent data={pistonToValveContent} title="Piston-to-Valve Clearance" />
       </div>
     </div>
   );

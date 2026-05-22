@@ -8,6 +8,8 @@ import { Select, SelectContent, SelectItem, SelectTrigger, SelectValue } from "@
 import { AlertTriangle, ChevronDown, Info } from "lucide-react";
 import { useBuildField } from "@/hooks/useBuildField";
 import { useBuildContext } from "@/context/BuildContext";
+import { CalculatorContent } from "@/components/calculators/CalculatorContent";
+import dieselNozzleContent from "@/data/calculatorContent/diesel-injector-nozzle-pop-pressure.mjs";
 
 // ── Types ──────────────────────────────────────────────────────────────────────
 
@@ -1154,9 +1156,12 @@ export default function DieselInjectorNozzlePopPressureCalculator() {
         </div>
       )}
 
+      <CalculatorContent data={dieselNozzleContent} title="Diesel Nozzle & Pop Pressure" />
+
       {/* ══════════════════════════════════════════════════════════════════
           NOZZLE SIZING PROGRESSION TABLE (all modes)
          ══════════════════════════════════════════════════════════════════ */}
+      {false && (<>
       <Section title="Nozzle Sizing Progression Table" open={sizingTableOpen} toggle={() => setSizingTableOpen(!sizingTableOpen)}>
         <p className="text-sm text-muted-foreground mb-4">
           HP ranges are approximate for 5.9L 6-cylinder Cummins and assume adequate turbo, pump, and fuel supply. 4BT (4-cylinder) owners: reduce HP estimates by ~33%.
@@ -1299,6 +1304,7 @@ export default function DieselInjectorNozzlePopPressureCalculator() {
           </div>
         </div>
       </Section>
+      </>)}
 
       </div>{/* end left column */}
 

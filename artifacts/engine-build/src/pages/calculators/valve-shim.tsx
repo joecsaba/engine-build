@@ -6,6 +6,8 @@ import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 import { Select, SelectContent, SelectItem, SelectTrigger, SelectValue } from "@/components/ui/select";
 import { Button } from "@/components/ui/button";
 import { Info, Plus, Trash2, AlertTriangle, ArrowRightLeft, CheckCircle } from "lucide-react";
+import { CalculatorContent } from "@/components/calculators/CalculatorContent";
+import valveShimContent from "@/data/calculatorContent/valve-shim.mjs";
 
 /* ── Constants ───────────────────────────────────────────────────── */
 
@@ -744,6 +746,8 @@ export default function ValveShimCalculator() {
       </div>
 
       {/* ── Educational content ── */}
+      <CalculatorContent data={valveShimContent} title="Valve Shim" />
+      {false && (
       <Card className="mt-8">
         <CardHeader>
           <CardTitle className="text-lg">Understanding Valve Shim Adjustment</CardTitle>
@@ -790,6 +794,7 @@ export default function ValveShimCalculator() {
           </p>
         </CardContent>
       </Card>
+      )}
     </div>
   );
 }

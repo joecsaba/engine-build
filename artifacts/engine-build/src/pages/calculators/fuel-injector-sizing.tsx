@@ -8,6 +8,8 @@ import { ChevronDown, AlertTriangle, CheckCircle2, Info } from "lucide-react";
 import { useBuildField } from "@/hooks/useBuildField";
 import { useBuildContext } from "@/context/BuildContext";
 import { Link } from "wouter";
+import { CalculatorContent } from "@/components/calculators/CalculatorContent";
+import fuelInjectorSizingContent from "@/data/calculatorContent/fuel-injector-sizing.mjs";
 
 // ── Types ───────────────────────────────────────────────────────────────────────
 
@@ -709,23 +711,7 @@ export default function FuelInjectorSizingCalculator() {
 
       </div>{/* end flex row */}
 
-      <Card className="mt-8">
-        <CardHeader>
-          <CardTitle className="text-lg">Fuel Injector Sizing Fundamentals</CardTitle>
-        </CardHeader>
-        <CardContent className="prose prose-sm max-w-none text-muted-foreground space-y-3">
-          <p>
-            The fundamental injector sizing formula is: Injector Size (lb/hr) = (HP x BSFC) / (Cylinders x Max Duty Cycle). BSFC (brake specific fuel consumption) is typically 0.45-0.50 lb/hr per HP for naturally aspirated gasoline engines and 0.55-0.60 for boosted applications. Max duty cycle is the percentage of time the injector can remain open per engine cycle — 80% for street engines, 85% for dedicated race engines. Exceeding 85% duty cycle leaves no headroom for enrichment during transients or hot weather.
-          </p>
-          <p>
-            Published injector flow ratings are "static" — measured at a fixed fuel pressure with the injector held wide open. In a running engine, injectors pulse open and closed rapidly, and their actual fuel delivery is affected by dead time (the lag between the electrical signal and mechanical opening), battery voltage, and fuel pressure. Lower voltage increases dead time, reducing effective flow. Higher fuel pressure increases flow — roughly 3-4% per PSI above the rated pressure.
-          </p>
-          <h3 className="text-sm font-semibold text-foreground mt-4">E85 and Alternative Fuel Sizing</h3>
-          <p>
-            E85 has a stoichiometric AFR of approximately 9.8:1 compared to gasoline's 14.7:1, meaning it requires roughly 30% more fuel by volume to achieve the same Lambda. If your engine needs 42 lb/hr injectors on gasoline, you need approximately 55 lb/hr on E85. Many builders size for E85 from the start — running gasoline just means lower duty cycles, which is perfectly fine. Undersized injectors on E85 max out at 100% duty cycle and go lean under load, which can destroy pistons and bearings in seconds.
-          </p>
-        </CardContent>
-      </Card>
+      <CalculatorContent data={fuelInjectorSizingContent} title="Fuel Injector Sizing" />
     </div>
   );
 }

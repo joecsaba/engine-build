@@ -4,6 +4,8 @@ import { Input } from "@/components/ui/input";
 import { Label } from "@/components/ui/label";
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 import { Select, SelectContent, SelectItem, SelectTrigger, SelectValue } from "@/components/ui/select";
+import { CalculatorContent } from "@/components/calculators/CalculatorContent";
+import headerSizingContent from "@/data/calculatorContent/header-sizing.mjs";
 
 /* ── Constants ────────────────────────────────────────────────────── */
 
@@ -467,35 +469,7 @@ export default function HeaderSizingCalculator() {
         </CardContent>
       </Card>
 
-      {/* ── Educational Content ────────────────────────────────────── */}
-      <Card className="mb-8">
-        <CardHeader>
-          <CardTitle className="text-lg">How Acoustic Tuning Works in Exhaust Headers</CardTitle>
-        </CardHeader>
-        <CardContent className="prose prose-sm max-w-none text-muted-foreground space-y-3">
-          <p>
-            When the exhaust valve opens, a high-pressure pulse travels down the primary tube at the speed of sound in the hot exhaust gas (roughly 1,700-2,000 ft/s depending on temperature). When that pulse reaches the open end of the tube — the collector — it reflects back as a low-pressure (negative) wave. If the tube length is tuned correctly, that negative wave arrives back at the exhaust port just as the valve is closing, creating a scavenging effect that literally sucks residual exhaust gas out of the cylinder. This is free power with no moving parts.
-          </p>
-          <p>
-            The timing of this reflection depends on tube length, gas temperature, and engine RPM. At one specific RPM, the pulse makes a perfect round trip in the time available. This is the tuned RPM. The 2nd harmonic gives the strongest scavenging effect because the reflected pulse has only traveled back and forth once — it arrives with the most energy. Higher harmonics (3rd, 4th) work at shorter tube lengths but produce weaker scavenging because the pulse has bounced multiple times and lost energy at each reflection.
-          </p>
-
-          <h3 className="text-sm font-semibold text-foreground mt-4">Why the 2nd Harmonic Dominates</h3>
-          <p>
-            The 2nd harmonic is the standard choice for long-tube headers because the reflected pulse completes one full round trip during the exhaust event. The 3rd harmonic completes 1.5 round trips and is the basis for mid-length headers — a compromise between packaging and performance. The 4th harmonic, at roughly half the 2nd harmonic's length, is used in shorty or "block-hugger" headers where space constraints prevent longer tubes. Shorty headers provide some tuning benefit but significantly less than long-tubes.
-          </p>
-
-          <h3 className="text-sm font-semibold text-foreground mt-4">Tube Diameter and the Torque Curve</h3>
-          <p>
-            Primary tube diameter controls gas velocity. A smaller tube keeps velocity high at low RPM, improving low-end and mid-range torque — ideal for street and towing applications. A larger tube reduces velocity at low RPM (hurting bottom-end response) but flows enough air to support high-RPM power. This is why a 1-5/8" primary works well on a 350 making 300 HP, but a 1-3/4" or 1-7/8" is needed once you push past 400 HP. Oversized headers on a mild engine will feel lazy below 3,500 RPM.
-          </p>
-
-          <h3 className="text-sm font-semibold text-foreground mt-4">Why Target Gas Velocity Matters</h3>
-          <p>
-            Exhaust gas velocity in the primary tubes directly determines scavenging effectiveness. If velocity is too low (below 200 ft/s), the exhaust pulses are weak and do not create meaningful scavenging — the engine is essentially breathing through an oversized pipe with no tuning benefit. If velocity is too high (above 400 ft/s), backpressure rises sharply and the engine works harder to push exhaust out. The sweet spot for most naturally aspirated engines is 240-350 ft/s, with street engines running the lower end and race engines targeting the upper end. This calculator sizes the tube to hit your target velocity, then shows you the actual velocity after snapping to the nearest standard tube size.
-          </p>
-        </CardContent>
-      </Card>
+      <CalculatorContent data={headerSizingContent} title="Header Sizing" />
     </div>
   );
 }

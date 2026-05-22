@@ -8,6 +8,8 @@ import { ChevronDown, Info } from "lucide-react";
 import { useBuildField } from "@/hooks/useBuildField";
 import { useBuildContext } from "@/context/BuildContext";
 import { BuildBanner } from "@/components/BuildBanner";
+import { CalculatorContent } from "@/components/calculators/CalculatorContent";
+import quenchDeckHeightContent from "@/data/calculatorContent/quench-deck-height.mjs";
 
 // ── Types ─────────────────────────────────────────────────────────────────────
 
@@ -827,26 +829,7 @@ export default function QuenchDeckHeightCalculator() {
 
       </div>{/* end flex row */}
 
-      <Card className="mt-8">
-        <CardHeader>
-          <CardTitle className="text-lg">Quench Distance and Detonation Resistance</CardTitle>
-        </CardHeader>
-        <CardContent className="prose prose-sm max-w-none text-muted-foreground space-y-3">
-          <p>
-            The quench zone (also called the squish band) is the flat area of the piston top that comes very close to the flat area of the cylinder head at top dead center. When the piston approaches TDC, the air-fuel mixture trapped in this narrow gap is violently squeezed toward the combustion chamber, creating turbulence that promotes fast, even combustion. More importantly, the close proximity of the cool piston and head surfaces cools the end gas in the quench zone, preventing the uncontrolled detonation that destroys pistons and rings.
-          </p>
-          <p>
-            The optimal quench distance depends on connecting rod material. Steel rods stretch less under load, so 0.035"-0.045" is the target. Aluminum rods expand more with heat, so 0.050"-0.060" is recommended to prevent piston-to-head contact. Too tight and the piston can physically contact the head — especially at high RPM where rod stretch increases. Too loose (above 0.080") and the quench effect diminishes, offering little detonation resistance and poor combustion efficiency.
-          </p>
-          <h3 className="text-sm font-semibold text-foreground mt-4">How Deck Height and Gasket Affect Quench</h3>
-          <p>
-            Quench distance is the sum of the deck clearance (distance from piston top to block deck surface at TDC) plus the compressed gasket thickness in the quench area. If the piston is 0.005" in the hole and the gasket compresses to 0.038", quench distance is 0.043". Milling the heads or block reduces the gasket's compressed thickness and changes quench &mdash; always recalculate after machine work. Zero-deck pistons (flush with the block) with a 0.040" compressed gasket are a common street target for good quench without contact risk.
-          </p>
-          <p>
-            Piston material also plays a role in quench and clearance decisions. Forged 2618 aluminum expands significantly more than cast or hypereutectic pistons &mdash; requiring 0.0035" to 0.005" piston-to-wall clearance versus just 0.0008" to 0.0015" for hypereutectic. This greater expansion means 2618 pistons rock more in the bore at cold start (before expanding to fill the clearance), which is another reason to keep quench on the conservative side with 2618 builds. The 4032 forging alloy splits the difference &mdash; moderate expansion, tighter fit, and quieter cold operation &mdash; making it the preferred choice for street builds that don't need the extreme ductility of 2618.
-          </p>
-        </CardContent>
-      </Card>
+      <CalculatorContent data={quenchDeckHeightContent} title="Quench & Deck Height" />
     </div>
   );
 }

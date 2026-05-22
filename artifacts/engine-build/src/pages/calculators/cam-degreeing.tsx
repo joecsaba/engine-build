@@ -5,6 +5,8 @@ import { Input } from "@/components/ui/input";
 import { Label } from "@/components/ui/label";
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 import { ChevronDown, Printer, Clipboard, Check, Info } from "lucide-react";
+import { CalculatorContent } from "@/components/calculators/CalculatorContent";
+import camDegreeingContent from "@/data/calculatorContent/cam-degreeing.mjs";
 
 // ── Types ──────────────────────────────────────────────────────────────────────
 
@@ -937,23 +939,7 @@ export default function CamDegreeingCalculator() {
 
         </div>{/* end flex row */}
 
-        <Card className="mt-8">
-          <CardHeader>
-            <CardTitle className="text-lg">Why You Should Degree Every Cam</CardTitle>
-          </CardHeader>
-          <CardContent className="prose prose-sm max-w-none text-muted-foreground space-y-3">
-            <p>
-              Even camshafts marked "straight up" from the manufacturer can be off by 2-4 degrees from the intended grind due to variations in the cam core, keyway slot, and timing set. Two degrees may not sound like much, but it changes the intake valve closing point (IVC) by 2 crankshaft degrees, which directly affects dynamic compression ratio and shifts the power band. On a high-compression engine, this can be the difference between clean combustion and destructive detonation.
-            </p>
-            <p>
-              The degreeing process starts with finding true top dead center (TDC) using a piston stop — never trust the timing mark on the balancer. Install a degree wheel on the crankshaft snout and a dial indicator on the number one intake lifter. Rotate the engine and record the opening and closing points of the intake lobe at 0.050" lift. The midpoint between these two readings is the intake centerline, which you compare to the cam card specification.
-            </p>
-            <h3 className="text-sm font-semibold text-foreground mt-4">Advance and Retard</h3>
-            <p>
-              If the measured intake centerline is later (higher number) than the cam card, the cam is retarded — it shifts the power band upward in RPM. If it is earlier (lower number), the cam is advanced — more low-end torque but an earlier falloff on top. Most street engines benefit from 2-4 degrees of advance for better throttle response. Use an offset bushing in the cam gear or an adjustable timing set to dial in the exact centerline you want. Always verify the final position after torquing the cam bolt.
-            </p>
-          </CardContent>
-        </Card>
+        <CalculatorContent data={camDegreeingContent} title="Cam Degreeing" />
       </div>
     </div>
   );

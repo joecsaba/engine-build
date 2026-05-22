@@ -11,6 +11,8 @@ import {
   SelectValue,
 } from "@/components/ui/select";
 import { ChevronDown , Info } from "lucide-react";
+import { CalculatorContent } from "@/components/calculators/CalculatorContent";
+import hpEstimatorContent from "@/data/calculatorContent/hp-estimator.mjs";
 import {
   enginePlatforms,
   componentCategories,
@@ -883,23 +885,7 @@ export default function HpEstimator() {
 
       </div>{/* end flex row */}
 
-      <Card className="mt-8">
-        <CardHeader>
-          <CardTitle className="text-lg">Estimating Engine Horsepower</CardTitle>
-        </CardHeader>
-        <CardContent className="prose prose-sm max-w-none text-muted-foreground space-y-3">
-          <p>
-            Horsepower estimates from calculators are approximations based on airflow, displacement, and volumetric efficiency assumptions. Real-world output depends heavily on tuning quality, fuel system calibration, ignition timing, and exhaust design. A well-tuned engine can make 10-15% more power than a poorly calibrated one with identical parts. Use these estimates for planning purposes — the only way to know actual output is a chassis or engine dyno.
-          </p>
-          <p>
-            Altitude significantly affects naturally aspirated power output. Engines lose approximately 3% of their power per 1,000 feet of elevation because air density decreases. An engine making 400 HP at sea level produces roughly 340 HP in Denver (5,280 feet). Forced induction engines are less affected because the turbo or supercharger compensates for thinner air — though intercooler efficiency suffers at altitude due to higher intake temperatures.
-          </p>
-          <h3 className="text-sm font-semibold text-foreground mt-4">Drivetrain Losses and Historical Ratings</h3>
-          <p>
-            Chassis dyno numbers are always lower than engine dyno numbers because of drivetrain losses. A manual transmission typically absorbs about 15% of engine output, while an automatic loses 18-22% depending on the torque converter and transmission design. When comparing published ratings, remember that pre-1972 "gross" horsepower numbers were measured on a bare engine with no accessories, exhaust, or emissions equipment. Modern "net" ratings include all accessories and a full exhaust system, making them 15-25% lower for equivalent engines. A 1970 Chevelle rated at 450 gross HP likely made 360-380 net HP — still impressive, but not directly comparable to a modern crate engine rating.
-          </p>
-        </CardContent>
-      </Card>
+      <CalculatorContent data={hpEstimatorContent} title="HP & Torque Estimator" />
     </div>
   );
 }

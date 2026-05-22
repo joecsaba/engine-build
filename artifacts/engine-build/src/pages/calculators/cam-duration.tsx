@@ -9,6 +9,8 @@ import { ChevronDown, Printer, Clipboard, Check, Info } from "lucide-react";
 import { useBuildContext } from "@/context/BuildContext";
 import { BuildBanner } from "@/components/BuildBanner";
 import { useManufacturers, useFamilies, useFamilyEngines } from "@/hooks/useEngineData";
+import { CalculatorContent } from "@/components/calculators/CalculatorContent";
+import camDurationContent from "@/data/calculatorContent/cam-duration.mjs";
 
 // ── Types ──────────────────────────────────────────────────────────────────────
 
@@ -869,23 +871,7 @@ export default function CamDurationCalculator() {
 
       </div>{/* end flex row */}
 
-      <Card className="mt-8">
-        <CardHeader>
-          <CardTitle className="text-lg">Understanding Camshaft Timing</CardTitle>
-        </CardHeader>
-        <CardContent className="prose prose-sm max-w-none text-muted-foreground space-y-3">
-          <p>
-            This calculator helps you evaluate camshaft timing events and lobe separation angle (LSA) recommendations based on your engine combination. The cam controls when valves open and close relative to piston position, and those timing events determine where in the RPM range the engine makes power. Duration at 0.050" lift is the industry-standard measurement — it ignores the slow opening and closing ramps and measures only the aggressive portion of the lobe profile.
-          </p>
-          <p>
-            Overlap is the period (measured in crankshaft degrees) when both intake and exhaust valves are open simultaneously. More overlap improves high-RPM scavenging but hurts idle quality and low-RPM vacuum. Lobe separation angle (LSA) is the angle in camshaft degrees between the intake and exhaust lobe centerlines. Tighter LSA (like 108°) increases overlap, builds a peaky power band, and hurts idle. Wider LSA (like 114°) reduces overlap, broadens the power band, and improves idle and vacuum.
-          </p>
-          <h3 className="text-sm font-semibold text-foreground mt-4">Real-World Cam Example</h3>
-          <p>
-            A popular street performance cam like the COMP Cams XE274H has 274°/286° advertised duration, approximately 224°/230° at 0.050", and a 110° LSA with roughly 60° of overlap. For a 350ci SBC with 2.02"/1.60" valves, a recommended LSA is approximately 108°-112° depending on whether the build favors low-end torque (wider) or top-end horsepower (tighter). The cam is only half the equation — it must be matched to the cylinder heads' flow capabilities and the engine's intended RPM range.
-          </p>
-        </CardContent>
-      </Card>
+      <CalculatorContent data={camDurationContent} title="Advanced Cam Calculator" />
       </div>
     </div>
   );

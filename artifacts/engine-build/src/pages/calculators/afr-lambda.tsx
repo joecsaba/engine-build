@@ -5,6 +5,8 @@ import { Label } from "@/components/ui/label";
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 import { Select, SelectContent, SelectItem, SelectTrigger, SelectValue } from "@/components/ui/select";
 import { ChevronDown, Info } from "lucide-react";
+import { CalculatorContent } from "@/components/calculators/CalculatorContent";
+import afrLambdaContent from "@/data/calculatorContent/afr-lambda.mjs";
 
 // ── Types ───────────────────────────────────────────────────────────────────────
 
@@ -713,23 +715,7 @@ export default function AfrLambdaCalculator() {
 
       </div>{/* end flex row */}
 
-      <Card className="mt-8">
-        <CardHeader>
-          <CardTitle className="text-lg">Understanding Lambda, AFR, and Wideband Readings</CardTitle>
-        </CardHeader>
-        <CardContent className="prose prose-sm max-w-none text-muted-foreground space-y-3">
-          <p>
-            Wideband oxygen sensors measure the oxygen content in the exhaust and convert that measurement into a Lambda value. Lambda is a ratio of actual air-fuel ratio to the stoichiometric (chemically perfect) ratio for a given fuel. Lambda 1.000 always means stoichiometric, regardless of fuel type — this is what makes Lambda universal. The wideband controller then multiplies Lambda by the stoichiometric AFR of gasoline (14.7) to display the familiar "AFR" number on gas-scale gauges.
-          </p>
-          <p>
-            This gas-scale display creates confusion when tuning on alternative fuels. E85 has a stoichiometric AFR of approximately 9.8:1, not 14.7. When your wideband reads "12.5:1" on E85, it is not telling you the actual air-fuel ratio — it is showing Lambda 0.85 multiplied by 14.7. The actual AFR is approximately 8.3:1. This is why professional tuners work in Lambda rather than AFR: the target Lambda stays the same regardless of fuel, while the AFR number changes with every fuel blend.
-          </p>
-          <h3 className="text-sm font-semibold text-foreground mt-4">Practical Tuning Targets</h3>
-          <p>
-            For gasoline, a typical power target is Lambda 0.85-0.88 (AFR 12.5-12.9), cruise is Lambda 1.00-1.05 (AFR 14.7-15.4), and idle is Lambda 0.95-1.00 (AFR 14.0-14.7). When switching from gasoline to E85, target the same Lambda values — not the same AFR numbers. E85 at Lambda 0.85 means the wideband still reads about 12.5 on a gas-scale display, but the actual mixture is roughly 8.3:1 by mass. This requires approximately 30% more fuel flow, which is why injector and fuel pump upgrades are essential for E85 conversions.
-          </p>
-        </CardContent>
-      </Card>
+      <CalculatorContent data={afrLambdaContent} title="AFR & Lambda" />
     </div>
   );
 }

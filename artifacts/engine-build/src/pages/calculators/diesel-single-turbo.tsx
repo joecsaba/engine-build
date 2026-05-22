@@ -6,6 +6,8 @@ import { Card, CardContent, CardHeader, CardTitle, CardDescription } from "@/com
 import { Select, SelectContent, SelectItem, SelectTrigger, SelectValue } from "@/components/ui/select";
 import { ChevronDown, Info } from "lucide-react";
 import { useDieselPlatforms } from "@/hooks/useEngineData";
+import { CalculatorContent } from "@/components/calculators/CalculatorContent";
+import dieselSingleTurboContent from "@/data/calculatorContent/diesel-single-turbo.mjs";
 
 // ── Types ───────────────────────────────────────────────────────────────────────
 
@@ -776,7 +778,10 @@ export default function DieselSingleTurboCalculator() {
         </div>
       </div>
 
+      <CalculatorContent data={dieselSingleTurboContent} title="Diesel Single Turbo" />
+
       {/* ──────────── UPGRADE PATH REFERENCE ──────────── */}
+      {false && (<>
       <Section title="Single Turbo Upgrade Paths by Platform" open={upgradePathOpen} toggle={() => setUpgradePathOpen(!upgradePathOpen)}>
         <p className="text-sm text-muted-foreground mb-4">Common single-turbo upgrade paths. These are the turbos most people run at each power level — proven combos with good parts availability.</p>
         <div className="overflow-x-auto">
@@ -898,6 +903,7 @@ export default function DieselSingleTurboCalculator() {
           </p>
         </div>
       </Section>
+      </>)}
 
       {/* Cross-links */}
       <div className="mt-8 p-4 rounded-lg bg-muted/30 text-sm text-muted-foreground">

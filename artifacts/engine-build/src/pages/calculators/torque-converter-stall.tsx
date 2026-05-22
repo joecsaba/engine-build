@@ -4,6 +4,8 @@ import { Input } from "@/components/ui/input";
 import { Label } from "@/components/ui/label";
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 import { Select, SelectContent, SelectItem, SelectTrigger, SelectValue } from "@/components/ui/select";
+import { CalculatorContent } from "@/components/calculators/CalculatorContent";
+import torqueConverterStallContent from "@/data/calculatorContent/torque-converter-stall.mjs";
 
 /* ─── Transmission Data ─── */
 const TRANS_DATA: Record<string, { label: string; first: number; od: number | null }> = {
@@ -638,6 +640,8 @@ export default function TorqueConverterStallCalculator() {
       </div>
 
       {/* ─── Educational Content ─── */}
+      <CalculatorContent data={torqueConverterStallContent} title="Torque Converter Stall" />
+      {false && (
       <Card className="mt-8">
         <CardHeader>
           <CardTitle className="text-lg">Understanding Torque Converter Stall Speed</CardTitle>
@@ -669,6 +673,7 @@ export default function TorqueConverterStallCalculator() {
           </p>
         </CardContent>
       </Card>
+      )}
     </div>
   );
 }

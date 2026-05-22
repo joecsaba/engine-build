@@ -5,6 +5,8 @@ import { Label } from "@/components/ui/label";
 import { Card, CardContent, CardHeader, CardTitle, CardDescription } from "@/components/ui/card";
 import { Select, SelectContent, SelectItem, SelectTrigger, SelectValue } from "@/components/ui/select";
 import { ChevronDown, Info } from "lucide-react";
+import { CalculatorContent } from "@/components/calculators/CalculatorContent";
+import dieselCompoundTurboContent from "@/data/calculatorContent/diesel-compound-turbo.mjs";
 
 // ── Types ───────────────────────────────────────────────────────────────────────
 
@@ -990,7 +992,10 @@ export default function DieselCompoundTurboCalculator() {
         </Section>
       )}
 
+      <CalculatorContent data={dieselCompoundTurboContent} title="Diesel Compound Turbo Sizing" />
+
       {/* ──────────── REFERENCE COMBOS ──────────── */}
+      {false && (<>
       <Section title="Common Diesel Compound Combos" open={referenceCombosOpen} toggle={() => setReferenceCombosOpen(!referenceCombosOpen)}>
         <p className="text-sm text-muted-foreground mb-4">Popular compound turbo combinations by platform and power level. These are starting points — exact sizing depends on altitude, fueling, and application.</p>
         <div className="overflow-x-auto">
@@ -1129,6 +1134,7 @@ export default function DieselCompoundTurboCalculator() {
           </div>
         </div>
       </Section>
+      </>)}
 
       {/* Cross-links */}
       <div className="mt-8 p-4 rounded-lg bg-muted/30 text-sm text-muted-foreground">

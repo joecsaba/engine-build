@@ -5,6 +5,8 @@ import { Label } from "@/components/ui/label";
 import { Card, CardContent, CardHeader, CardTitle, CardDescription } from "@/components/ui/card";
 import { Select, SelectContent, SelectItem, SelectTrigger, SelectValue } from "@/components/ui/select";
 import { ChevronDown, Info } from "lucide-react";
+import { CalculatorContent } from "@/components/calculators/CalculatorContent";
+import dieselSmokeLambdaContent from "@/data/calculatorContent/diesel-smoke-lambda.mjs";
 
 // ── Types ───────────────────────────────────────────────────────────────────────
 
@@ -1152,7 +1154,10 @@ export default function DieselSmokeLambdaCalculator() {
       {/* COLLAPSIBLE SECTIONS                                                  */}
       {/* ═══════════════════════════════════════════════════════════════════════ */}
 
+      <CalculatorContent data={dieselSmokeLambdaContent} title="Diesel Smoke & Lambda" />
+
       {/* Diesel Lambda Ranges Reference */}
+      {false && (<>
       <Section title="Diesel Lambda Operating Ranges" open={rangesOpen} toggle={() => setRangesOpen(!rangesOpen)}>
         <p className="text-sm text-muted-foreground mb-4">Expected diesel lambda ranges by operating condition. These are fundamentally different from gasoline.</p>
         <div className="overflow-x-auto">
@@ -1251,6 +1256,7 @@ export default function DieselSmokeLambdaCalculator() {
           <strong>Sources:</strong> HP Academy Practical Diesel Tuning course, Schiller Tuning published diesel AFR guide, Bosch Automotive Handbook (diesel combustion chapter), Innovate Motorsports LC-2 diesel application notes, AEM X-Series diesel configuration guide.
         </div>
       </Section>
+      </>)}
 
       {/* Cross-links */}
       <div className="mt-8 p-4 rounded-lg bg-muted/30 text-sm text-muted-foreground">

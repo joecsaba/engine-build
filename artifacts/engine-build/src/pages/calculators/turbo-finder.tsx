@@ -6,6 +6,8 @@ import { Card, CardContent, CardHeader, CardTitle, CardDescription } from "@/com
 import { Select, SelectContent, SelectItem, SelectTrigger, SelectValue } from "@/components/ui/select";
 import { ChevronDown , Info } from "lucide-react";
 import { useTurboModels } from "@/hooks/useEngineData";
+import { CalculatorContent } from "@/components/calculators/CalculatorContent";
+import turboFinderContent from "@/data/calculatorContent/turbo-finder.mjs";
 
 // ── Types ───────────────────────────────────────────────────────────────────────
 
@@ -1421,23 +1423,7 @@ export default function TurboFinderCalculator() {
 
       </div>{/* end flex row */}
 
-      <Card className="mt-8">
-        <CardHeader>
-          <CardTitle className="text-lg">Turbo Sizing Basics</CardTitle>
-        </CardHeader>
-        <CardContent className="prose prose-sm max-w-none text-muted-foreground space-y-3">
-          <p>
-            The airflow a turbocharged engine requires is calculated as: CFM = (CID x RPM x VE x PR) / 3456, where PR is the pressure ratio (absolute boost pressure divided by atmospheric pressure). A 350ci engine at 6,000 RPM with 90% VE and 15 PSI boost (PR = 2.02) needs approximately 1,100 CFM. The turbo's compressor map must show an efficiency island that covers your operating range at this flow rate and pressure ratio.
-          </p>
-          <p>
-            Compressor efficiency is critical. Operating in the surge zone (left side of the map, too little flow for the pressure ratio) causes the compressor to stall and reverse flow — this creates violent oscillations that destroy the turbo shaft and bearings. Operating in the choke zone (right side, too much flow) means the compressor wheel cannot accelerate the air any further, so adding RPM produces no additional boost. The ideal operating point is in the center of the highest efficiency island on the compressor map.
-          </p>
-          <h3 className="text-sm font-semibold text-foreground mt-4">A/R Ratio and Common Mistakes</h3>
-          <p>
-            The turbine housing A/R (area over radius) ratio controls spool characteristics. A smaller A/R (e.g., 0.63) increases exhaust gas velocity at the turbine wheel, spooling the turbo faster but restricting top-end flow. A larger A/R (e.g., 1.00) allows more exhaust flow at high RPM but spools slower. The most common turbo sizing mistake is choosing a turbo for maximum horsepower potential instead of the RPM range the engine will actually use. A street car spends 90% of its time below 5,000 RPM — sizing a turbo for 700 HP at 7,500 RPM means a laggy, unresponsive engine everywhere you actually drive it. Size for the RPM range you use, not the peak number on paper.
-          </p>
-        </CardContent>
-      </Card>
+      <CalculatorContent data={turboFinderContent} title="Turbo Finder & Sizing" />
     </div>
   );
 }

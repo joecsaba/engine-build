@@ -10,6 +10,8 @@ import {
   LineChart, Line, XAxis, YAxis, CartesianGrid, Tooltip, ReferenceLine,
   ResponsiveContainer, Area, ComposedChart,
 } from "recharts";
+import { CalculatorContent } from "@/components/calculators/CalculatorContent";
+import valvetrainBuilderContent from "@/data/calculatorContent/valvetrain-builder.mjs";
 
 /* ══════════════════════════════════════════════════════════════════
    TYPES & CONSTANTS
@@ -1811,23 +1813,7 @@ export default function ValvetrainBuilderCalculator() {
 
         </div>{/* end flex row */}
 
-        <Card className="mt-8">
-          <CardHeader>
-            <CardTitle className="text-lg">Valvetrain Geometry and Component Selection</CardTitle>
-          </CardHeader>
-          <CardContent className="prose prose-sm max-w-none text-muted-foreground space-y-3">
-            <p>
-              The valvetrain is a mechanical chain that transmits motion from the camshaft lobe to the valve. In a pushrod engine, this chain includes the cam lobe, lifter, pushrod, rocker arm, and valve. Every component in this chain affects the final valve motion — changing any one part requires verifying that the rest of the system still works correctly. The rocker arm ratio multiplies the cam lobe lift, so a 0.300" lobe lift with a 1.6:1 rocker produces 0.480" of valve lift. Switching to 1.7:1 rockers on the same cam jumps to 0.510" — a free lift increase, but one that requires checking valve spring capacity, retainer-to-seal clearance, and piston-to-valve clearance.
-            </p>
-            <p>
-              Valve float occurs when the valve spring cannot close the valve fast enough to follow the cam's closing ramp at high RPM. The inertia forces acting on the valve increase with the square of engine speed — an 18% increase in RPM (from 5,500 to 6,500) increases the force on the valve by 40%. This is why high-RPM engines need progressively stiffer springs, lighter valves, and lighter retainers. Titanium retainers weigh 40-50% less than steel and can add 500-800 RPM of safe operating range on the same springs.
-            </p>
-            <h3 className="text-sm font-semibold text-foreground mt-4">Flat Tappet vs. Roller Cam Considerations</h3>
-            <p>
-              Flat tappet cams have a practical spring pressure limit of approximately 130 lbs on the seat. Above this, accelerated cam lobe wear becomes a serious concern, especially with modern low-ZDDP motor oils. Roller cams eliminate this friction concern entirely — the roller lifter rides on a needle bearing instead of sliding contact, allowing spring pressures of 170-400+ lbs on the seat without lobe wear. This is why roller cams dominate performance applications: they permit the aggressive lobe profiles and high spring pressures needed for serious RPM and power. If you are building a flat tappet engine, use a dedicated break-in oil with high ZDDP content and stay within the spring pressure limits recommended by the cam manufacturer.
-            </p>
-          </CardContent>
-        </Card>
+        <CalculatorContent data={valvetrainBuilderContent} title="Valvetrain RPM Builder" />
       </div>
     </div>
   );

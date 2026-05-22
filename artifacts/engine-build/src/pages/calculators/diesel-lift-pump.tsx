@@ -6,6 +6,8 @@ import { Card, CardContent, CardHeader, CardTitle, CardDescription } from "@/com
 import { Select, SelectContent, SelectItem, SelectTrigger, SelectValue } from "@/components/ui/select";
 import { ChevronDown, Info } from "lucide-react";
 import { useDieselPlatforms } from "@/hooks/useEngineData";
+import { CalculatorContent } from "@/components/calculators/CalculatorContent";
+import dieselLiftPumpContent from "@/data/calculatorContent/diesel-lift-pump.mjs";
 
 // ── Types ───────────────────────────────────────────────────────────────────────
 
@@ -934,7 +936,10 @@ export default function DieselLiftPumpCalculator() {
         </div>
       </div>
 
+      <CalculatorContent data={dieselLiftPumpContent} title="Diesel Lift Pump & Fuel System" />
+
       {/* ──────────── COLLAPSIBLE: SIZING GUIDE ──────────── */}
+      {false && (<>
       <Section title="Lift Pump Sizing Guide" open={sizingGuideOpen} toggle={() => setSizingGuideOpen(!sizingGuideOpen)}>
         <p className="text-sm text-muted-foreground mb-4">General sizing guidelines for diesel lift pumps. These are approximate — use the calculator above for your specific setup.</p>
         <div className="overflow-x-auto">
@@ -1067,6 +1072,7 @@ export default function DieselLiftPumpCalculator() {
           </div>
         </div>
       </Section>
+      </>)}
 
       </div>{/* end left column */}
 
