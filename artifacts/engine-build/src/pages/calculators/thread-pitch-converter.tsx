@@ -4,6 +4,8 @@ import { SEOHead } from "@/components/SEOHead";
 import { Input } from "@/components/ui/input";
 import { Label } from "@/components/ui/label";
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
+import { CalculatorContent } from "@/components/calculators/CalculatorContent";
+import threadPitchContent from "@/data/calculatorContent/thread-pitch-converter.mjs";
 
 const MM_PER_INCH = 25.4;
 
@@ -154,6 +156,8 @@ export default function ThreadPitchConverter() {
           </CardContent>
         </Card>
       </div>
+
+      <CalculatorContent data={threadPitchContent} title="Thread Pitch" />
     </div>
   );
 }

@@ -5,6 +5,8 @@ import { Input } from "@/components/ui/input";
 import { Label } from "@/components/ui/label";
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 import { Select, SelectContent, SelectItem, SelectTrigger, SelectValue } from "@/components/ui/select";
+import { CalculatorContent } from "@/components/calculators/CalculatorContent";
+import mmInchContent from "@/data/calculatorContent/mm-inch-converter.mjs";
 
 const MM_PER_INCH = 25.4; // exact by international definition
 
@@ -209,6 +211,8 @@ export default function MmInchConverter() {
           </CardContent>
         </Card>
       </div>
+
+      <CalculatorContent data={mmInchContent} title="MM to Inch" />
     </div>
   );
 }

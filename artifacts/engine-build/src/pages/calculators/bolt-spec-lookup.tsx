@@ -5,6 +5,8 @@ import { Card, CardContent, CardHeader, CardTitle, CardDescription } from "@/com
 import { Select, SelectContent, SelectItem, SelectTrigger, SelectValue } from "@/components/ui/select";
 import { AlertTriangle, Info } from "lucide-react";
 import { useBoltSpecs, type BoltSpecPlatform, type BoltSpecEntry } from "@/hooks/useEngineData";
+import { CalculatorContent } from "@/components/calculators/CalculatorContent";
+import boltSpecContent from "@/data/calculatorContent/bolt-spec-lookup.mjs";
 
 // ── Helpers ───────────────────────────────────────────────────────────────────
 
@@ -222,6 +224,8 @@ export default function BoltSpecLookup() {
             <p className="text-lg">Select an engine platform above to view bolt specifications.</p>
           </div>
         )}
+
+        <CalculatorContent data={boltSpecContent} title="Bolt Spec Lookup" />
       </div>
     </div>
   );

@@ -4,6 +4,8 @@ import { SEOHead } from "@/components/SEOHead";
 import { Input } from "@/components/ui/input";
 import { Label } from "@/components/ui/label";
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
+import { CalculatorContent } from "@/components/calculators/CalculatorContent";
+import pressureConverterContent from "@/data/calculatorContent/pressure-converter.mjs";
 
 // Conversions per psi (NIST):
 // 1 psi = 0.0689476 bar
@@ -183,6 +185,8 @@ export default function PressureConverter() {
           </CardContent>
         </Card>
       </div>
+
+      <CalculatorContent data={pressureConverterContent} title="Pressure Converter" />
     </div>
   );
 }

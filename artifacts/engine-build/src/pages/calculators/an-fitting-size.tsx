@@ -3,6 +3,8 @@ import { SEOHead } from "@/components/SEOHead";
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 import { Select, SelectContent, SelectItem, SelectTrigger, SelectValue } from "@/components/ui/select";
 import { Label } from "@/components/ui/label";
+import { CalculatorContent } from "@/components/calculators/CalculatorContent";
+import anFittingContent from "@/data/calculatorContent/an-fitting-size.mjs";
 
 interface AnSize {
   dash: string;          // e.g. "-6"
@@ -125,6 +127,8 @@ export default function AnFittingSize() {
           </CardContent>
         </Card>
       </div>
+
+      <CalculatorContent data={anFittingContent} title="AN Fitting Size" />
     </div>
   );
 }

@@ -4,6 +4,8 @@ import { Input } from "@/components/ui/input";
 import { Label } from "@/components/ui/label";
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 import { Select, SelectContent, SelectItem, SelectTrigger, SelectValue } from "@/components/ui/select";
+import { CalculatorContent } from "@/components/calculators/CalculatorContent";
+import densityAltitudeContent from "@/data/calculatorContent/density-altitude.mjs";
 
 function hpLossColor(loss: number): string {
   if (loss < 3) return "text-green-400";
@@ -557,6 +559,8 @@ export default function DensityAltitudeCalculator() {
           </CardContent>
         </Card>
       </div>
+
+      <CalculatorContent data={densityAltitudeContent} title="Density Altitude" />
     </div>
   );
 }

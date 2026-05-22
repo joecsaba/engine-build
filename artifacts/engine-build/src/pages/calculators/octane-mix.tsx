@@ -4,6 +4,8 @@ import { Input } from "@/components/ui/input";
 import { Label } from "@/components/ui/label";
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 import { Select, SelectContent, SelectItem, SelectTrigger, SelectValue } from "@/components/ui/select";
+import { CalculatorContent } from "@/components/calculators/CalculatorContent";
+import octaneMixContent from "@/data/calculatorContent/octane-mix.mjs";
 
 /* ─── Reference Data ──────────────────────────────────── */
 
@@ -488,6 +490,8 @@ export default function OctaneMixCalculator() {
           </p>
         </CardContent>
       </Card>
+
+      <CalculatorContent data={octaneMixContent} title="Octane Mix" />
     </div>
   );
 }

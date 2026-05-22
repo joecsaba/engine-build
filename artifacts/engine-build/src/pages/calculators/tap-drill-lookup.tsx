@@ -4,6 +4,8 @@ import { Input } from "@/components/ui/input";
 import { Label } from "@/components/ui/label";
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 import { Select, SelectContent, SelectItem, SelectTrigger, SelectValue } from "@/components/ui/select";
+import { CalculatorContent } from "@/components/calculators/CalculatorContent";
+import tapDrillContent from "@/data/calculatorContent/tap-drill-lookup.mjs";
 
 type ThreadStandard = "imperial" | "metric";
 
@@ -207,6 +209,8 @@ export default function TapDrillLookup() {
           </CardContent>
         </Card>
       </div>
+
+      <CalculatorContent data={tapDrillContent} title="Tap Drill Lookup" />
     </div>
   );
 }

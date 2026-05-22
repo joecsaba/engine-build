@@ -5,6 +5,8 @@ import { Label } from "@/components/ui/label";
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 import { Select, SelectContent, SelectItem, SelectTrigger, SelectValue } from "@/components/ui/select";
 import { ChevronDown, Info } from "lucide-react";
+import { CalculatorContent } from "@/components/calculators/CalculatorContent";
+import ignitionTimingContent from "@/data/calculatorContent/ignition-timing-curve.mjs";
 import {
   LineChart, Line, XAxis, YAxis, CartesianGrid, Tooltip, ReferenceLine,
   ResponsiveContainer, Area, ComposedChart, Legend,
@@ -573,6 +575,8 @@ export default function IgnitionTimingCurveCalculator() {
           Always verify timing with proper instruments and watch for detonation.
         </p>
       </div>
+
+      <CalculatorContent data={ignitionTimingContent} title="Ignition Timing Curve" />
     </div>
   );
 }
