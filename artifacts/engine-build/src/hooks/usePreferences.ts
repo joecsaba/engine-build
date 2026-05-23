@@ -184,6 +184,13 @@ export function usePreferences() {
     mutation.mutate(patch);
   }, [mutation]);
 
+  // Per-user flags live in the `settings` JSONB blob. Helpers below keep the
+  // call sites tidy and avoid every consumer re-reading the same key.
+  const expertMode = prefs.settings?.expertMode === true;
+  const setExpertMode = useCallback((v: boolean) => {
+    mutation.mutate({ settings: { ...prefs.settings, expertMode: v } });
+  }, [prefs.settings, mutation]);
+
   return {
     prefs,
     isLoading: query.isLoading,
@@ -194,6 +201,8 @@ export function usePreferences() {
     addRecent,
     togglePinned,
     setDefaults,
+    expertMode,
+    setExpertMode,
     setPrefs: (patch: Patch) => mutation.mutate(patch),
   };
 }

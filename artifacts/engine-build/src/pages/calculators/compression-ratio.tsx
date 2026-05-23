@@ -4,6 +4,7 @@ import { Input } from "@/components/ui/input";
 import { Label } from "@/components/ui/label";
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 import { CalculatorContent } from "@/components/calculators/CalculatorContent";
+import { HelpCard } from "@/components/calculators/HelpCard";
 import compressionRatioContent from "@/data/calculatorContent/compression-ratio.mjs";
 
 function getOctaneRec(cr: number): { label: string; color: string; bg: string } {
@@ -133,7 +134,7 @@ export default function CompressionRatioCalculator() {
             </CardContent>
           </Card>
 
-          <Card>
+          <HelpCard>
             <CardHeader><CardTitle>Why Dynamic CR Matters</CardTitle></CardHeader>
             <CardContent className="text-sm text-muted-foreground space-y-2">
               <p>
@@ -144,7 +145,7 @@ export default function CompressionRatioCalculator() {
               </p>
               <p>Ideal dynamic CR for pump gas: <strong>7.5–8.5:1</strong></p>
             </CardContent>
-          </Card>
+          </HelpCard>
         </div>
       </div>
 

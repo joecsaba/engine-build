@@ -4,6 +4,7 @@ import { Input } from "@/components/ui/input";
 import { Label } from "@/components/ui/label";
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 import { CalculatorContent } from "@/components/calculators/CalculatorContent";
+import { HelpSidebar } from "@/components/calculators/HelpCard";
 import pistonSpeedContent from "@/data/calculatorContent/piston-speed.mjs";
 import { Select, SelectContent, SelectItem, SelectTrigger, SelectValue } from "@/components/ui/select";
 import { useBuildField } from "@/hooks/useBuildField";
@@ -208,7 +209,7 @@ export default function PistonSpeedCalculator() {
 
       </div>{/* end left column */}
 
-      <aside className="xl:w-80 shrink-0 space-y-6">
+      <HelpSidebar className="xl:w-80 shrink-0 space-y-6">
         <Card className="sticky top-20">
           <CardHeader className="pb-3">
             <CardTitle className="text-base flex items-center gap-2">
@@ -245,7 +246,7 @@ export default function PistonSpeedCalculator() {
             </div>
           </CardContent>
         </Card>
-      </aside>
+      </HelpSidebar>
 
       </div>{/* end flex row */}
 

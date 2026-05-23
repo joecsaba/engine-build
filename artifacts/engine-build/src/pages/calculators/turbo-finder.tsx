@@ -7,6 +7,7 @@ import { Select, SelectContent, SelectItem, SelectTrigger, SelectValue } from "@
 import { ChevronDown , Info } from "lucide-react";
 import { useTurboModels } from "@/hooks/useEngineData";
 import { CalculatorContent } from "@/components/calculators/CalculatorContent";
+import { HelpSidebar } from "@/components/calculators/HelpCard";
 import turboFinderContent from "@/data/calculatorContent/turbo-finder.mjs";
 
 // ── Types ───────────────────────────────────────────────────────────────────────
@@ -1389,7 +1390,7 @@ export default function TurboFinderCalculator() {
 
       </div>{/* end left column */}
 
-      <aside className="xl:w-80 shrink-0 space-y-6">
+      <HelpSidebar className="xl:w-80 shrink-0 space-y-6">
         <Card className="sticky top-20">
           <CardHeader className="pb-3">
             <CardTitle className="text-base flex items-center gap-2">
@@ -1419,7 +1420,7 @@ export default function TurboFinderCalculator() {
             </div>
           </CardContent>
         </Card>
-      </aside>
+      </HelpSidebar>
 
       </div>{/* end flex row */}
 

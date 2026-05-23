@@ -12,6 +12,9 @@ import { BuildBanner } from "@/components/BuildBanner";
 import { useManufacturers, useFamilies, useFamilyEngines } from "@/hooks/useEngineData";
 import { useDefaultPlatform } from "@/hooks/useDefaultPlatform";
 import { PresetBar } from "@/components/presets/PresetBar";
+import { CalculatorContent } from "@/components/calculators/CalculatorContent";
+import { HelpCard, HelpSidebar } from "@/components/calculators/HelpCard";
+import compressionRatioContent from "@/data/calculatorContent/compression-ratio.mjs";
 
 /* ─── types ─── */
 type CalcMode = "forward" | "solve_chamber" | "solve_ivc";
@@ -825,8 +828,8 @@ export default function DynamicCompressionRatioV2() {
       </div>{/* end left column */}
 
       {/* ─── Right column: Reference sidebar ─── */}
-      <aside className="xl:w-80 shrink-0 space-y-6">
-        <Card className="sticky top-20">
+      <HelpSidebar className="xl:w-80 shrink-0 space-y-6">
+        <HelpCard className="sticky top-20">
           <CardHeader className="pb-3">
             <CardTitle className="text-base flex items-center gap-2">
               <Info className="w-4 h-4 text-[#E85D04]" />
@@ -871,10 +874,12 @@ export default function DynamicCompressionRatioV2() {
               </ul>
             </div>
           </CardContent>
-        </Card>
-      </aside>
+        </HelpCard>
+      </HelpSidebar>
 
       </div>{/* end flex row */}
+
+      <CalculatorContent data={compressionRatioContent} title="Compression Ratio" />
     </div>
   );
 }

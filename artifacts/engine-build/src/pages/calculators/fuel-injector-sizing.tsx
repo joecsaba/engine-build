@@ -9,6 +9,7 @@ import { useBuildField } from "@/hooks/useBuildField";
 import { useBuildContext } from "@/context/BuildContext";
 import { Link } from "wouter";
 import { CalculatorContent } from "@/components/calculators/CalculatorContent";
+import { HelpSidebar } from "@/components/calculators/HelpCard";
 import fuelInjectorSizingContent from "@/data/calculatorContent/fuel-injector-sizing.mjs";
 
 // ── Types ───────────────────────────────────────────────────────────────────────
@@ -675,7 +676,7 @@ export default function FuelInjectorSizingCalculator() {
 
       </div>{/* end left column */}
 
-      <aside className="xl:w-80 shrink-0 space-y-6">
+      <HelpSidebar className="xl:w-80 shrink-0 space-y-6">
         <Card className="sticky top-20">
           <CardHeader className="pb-3">
             <CardTitle className="text-base flex items-center gap-2">
@@ -707,7 +708,7 @@ export default function FuelInjectorSizingCalculator() {
             </div>
           </CardContent>
         </Card>
-      </aside>
+      </HelpSidebar>
 
       </div>{/* end flex row */}
 

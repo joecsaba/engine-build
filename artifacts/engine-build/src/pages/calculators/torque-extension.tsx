@@ -5,6 +5,7 @@ import { Label } from "@/components/ui/label";
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 import { Info } from "lucide-react";
 import { CalculatorContent } from "@/components/calculators/CalculatorContent";
+import { HelpSidebar } from "@/components/calculators/HelpCard";
 import torqueExtensionContent from "@/data/calculatorContent/torque-extension.mjs";
 
 function TorqueDiagram({ wrenchLength, extensionLength }: { wrenchLength: number; extensionLength: number }) {
@@ -233,7 +234,7 @@ export default function TorqueExtensionCalculator() {
 
       </div>{/* end left column */}
 
-      <aside className="xl:w-80 shrink-0 space-y-6">
+      <HelpSidebar className="xl:w-80 shrink-0 space-y-6">
         <Card className="sticky top-20">
           <CardHeader className="pb-3">
             <CardTitle className="text-base flex items-center gap-2">
@@ -268,7 +269,7 @@ export default function TorqueExtensionCalculator() {
             </div>
           </CardContent>
         </Card>
-      </aside>
+      </HelpSidebar>
 
       </div>{/* end flex row */}
 

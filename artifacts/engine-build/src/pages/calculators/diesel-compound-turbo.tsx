@@ -6,6 +6,7 @@ import { Card, CardContent, CardHeader, CardTitle, CardDescription } from "@/com
 import { Select, SelectContent, SelectItem, SelectTrigger, SelectValue } from "@/components/ui/select";
 import { ChevronDown, Info } from "lucide-react";
 import { CalculatorContent } from "@/components/calculators/CalculatorContent";
+import { HelpSidebar } from "@/components/calculators/HelpCard";
 import dieselCompoundTurboContent from "@/data/calculatorContent/diesel-compound-turbo.mjs";
 
 // ── Types ───────────────────────────────────────────────────────────────────────
@@ -1146,7 +1147,7 @@ export default function DieselCompoundTurboCalculator() {
 
       </div>{/* end left column */}
 
-      <aside className="xl:w-80 shrink-0 space-y-6">
+      <HelpSidebar className="xl:w-80 shrink-0 space-y-6">
         <Card className="sticky top-20">
           <CardHeader className="pb-3">
             <CardTitle className="text-base flex items-center gap-2">
@@ -1186,7 +1187,7 @@ export default function DieselCompoundTurboCalculator() {
             </div>
           </CardContent>
         </Card>
-      </aside>
+      </HelpSidebar>
 
       </div>{/* end flex row */}
 

@@ -1,5 +1,6 @@
 import { Link } from "wouter";
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
+import { usePreferences } from "@/hooks/usePreferences";
 
 export interface CalculatorContentSection {
   heading: string;
@@ -27,8 +28,13 @@ interface Props {
  * Renders the long-form SEO/explanation content under a calculator.
  * The same content data is consumed by the prerender script so what users see
  * matches what Googlebot indexes byte-for-byte.
+ *
+ * Hidden client-side when the user has Expert Mode enabled in settings — the
+ * prerendered HTML still ships the content for crawlers, so SEO is preserved.
  */
 export function CalculatorContent({ data, title }: Props) {
+  const { expertMode } = usePreferences();
+  if (expertMode) return null;
   return (
     // Full container width — wrap the prose inside at a comfortable reading
     // length (~70ch) so long-form text doesn't sprawl across the whole card.

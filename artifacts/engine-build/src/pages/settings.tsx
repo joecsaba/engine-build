@@ -31,7 +31,7 @@ const PLATFORMS: Array<{ value: string; label: string }> = [
 
 export default function SettingsPage() {
   const { isSignedIn, isLoaded, user } = useAuth();
-  const { prefs, setPrefs } = usePreferences();
+  const { prefs, setPrefs, expertMode, setExpertMode } = usePreferences();
 
   // Local state for the display name so it can debounce — other prefs save
   // instantly because they're click-driven.
@@ -147,6 +147,33 @@ export default function SettingsPage() {
               <p className="text-xs text-muted-foreground">
                 Build-aware calculators (compression ratio, P2V, bolt specs, etc.) will pre-fill this platform when you open them.
               </p>
+            </div>
+
+            <div className="space-y-2 pt-4 border-t">
+              <div className="flex items-start justify-between gap-4 max-w-sm">
+                <div className="flex-1">
+                  <Label htmlFor="expertMode" className="text-sm font-medium">Expert Mode</Label>
+                  <p className="text-xs text-muted-foreground mt-1">
+                    Hides the educational sections below calculators. Useful if you already know the math and just want the tool.
+                  </p>
+                </div>
+                <button
+                  type="button"
+                  id="expertMode"
+                  role="switch"
+                  aria-checked={expertMode}
+                  onClick={() => setExpertMode(!expertMode)}
+                  className={`relative inline-flex h-6 w-11 shrink-0 cursor-pointer rounded-full border-2 border-transparent transition-colors focus:outline-none focus:ring-2 focus:ring-[#E85D04] focus:ring-offset-2 ${
+                    expertMode ? "bg-[#E85D04]" : "bg-gray-300"
+                  }`}
+                >
+                  <span
+                    className={`pointer-events-none inline-block h-5 w-5 transform rounded-full bg-white shadow ring-0 transition duration-200 ease-in-out ${
+                      expertMode ? "translate-x-5" : "translate-x-0"
+                    }`}
+                  />
+                </button>
+              </div>
             </div>
           </CardContent>
         </Card>
