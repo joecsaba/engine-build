@@ -26,9 +26,11 @@ export function Navbar() {
 
   const links = [
     { href: "/calculators", label: "Calculators" },
+    { href: "/guides", label: "Guides" },
     { href: "/shop-directory", label: "Shop Directory" },
     { href: "/cam-guide", label: "Cam Guide" },
     { href: "/build-sheets", label: "Build Sheets" },
+    { href: "/faq", label: "FAQ" },
   ];
 
   return (

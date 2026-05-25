@@ -44,15 +44,25 @@ export default function BearingClearanceGuide() {
         <h3 className="text-xl font-bold">Step 1: Clean Everything</h3>
         <p>The journal (crank), bearing shells, and cap bore must be absolutely clean and DRY. Any oil, assembly lube, or debris will give you a false reading. Clean with brake cleaner and dry completely. This step matters — a film of oil can throw your reading off by 0.001".</p>
 
-        <div className="p-4 bg-muted rounded-lg">
-          <svg viewBox="0 0 400 120" className="w-full">
-            <rect x="20" y="40" width="360" height="40" rx="4" fill="#e5e7eb" stroke="#9ca3af" />
-            <ellipse cx="200" cy="60" rx="40" ry="30" fill="#374151" />
-            <text x="200" y="65" textAnchor="middle" fill="white" fontSize="11" fontWeight="bold">Crank Journal</text>
-            <text x="200" y="25" textAnchor="middle" fill="#6b7280" fontSize="11">Bearing shell (installed, clean, dry)</text>
-            <rect x="160" y="55" width="80" height="3" fill="#E85D04" />
-            <text x="200" y="115" textAnchor="middle" fill="#E85D04" fontSize="11" fontWeight="bold">Plastigage strip placed along journal</text>
-          </svg>
+        <div className="my-6 grid grid-cols-1 sm:grid-cols-2 gap-3 text-sm">
+          <div className="p-3 rounded-md bg-green-50 border border-green-200">
+            <p className="font-bold text-green-800 mb-1">✓ Correct placement</p>
+            <ul className="text-green-900 text-xs space-y-1 list-disc pl-4">
+              <li>Strip runs <strong>parallel to the crank axis</strong></li>
+              <li>Spans nearly the <strong>full bearing width</strong></li>
+              <li>Held on the <strong>journal surface</strong> with a dab of grease</li>
+              <li><strong>Clear of the oil hole</strong></li>
+            </ul>
+          </div>
+          <div className="p-3 rounded-md bg-red-50 border border-red-200">
+            <p className="font-bold text-red-800 mb-1">✗ Wrong</p>
+            <ul className="text-red-900 text-xs space-y-1 list-disc pl-4">
+              <li>Strip wrapped around the journal (circumferentially)</li>
+              <li>Tiny strip (won't crush evenly)</li>
+              <li>On the bearing shell (will smear)</li>
+              <li>Over the oil hole (no contact, no reading)</li>
+            </ul>
+          </div>
         </div>
 
         <h3 className="text-xl font-bold">Step 2: Install Lower Bearing Shell</h3>

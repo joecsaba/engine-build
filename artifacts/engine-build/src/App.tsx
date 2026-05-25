@@ -87,6 +87,14 @@ import ShopDirectory from "@/pages/shop-tools/directory";
 import AdminModeration from "@/pages/admin/moderation";
 import SettingsPage from "@/pages/settings";
 import MyDashboard from "@/pages/me";
+import FaqPage from "@/pages/faq";
+import GuidesIndex from "@/pages/guides/index";
+import GuideBearingClearance from "@/pages/guides/bearing-clearance";
+import GuideRingGap from "@/pages/guides/ring-gap";
+import GuideBreakIn from "@/pages/guides/break-in";
+import GuideDegreeCam from "@/pages/guides/degree-cam";
+import GuideMachineShopQuality from "@/pages/guides/machine-shop-quality";
+import GuideBlueprinting from "@/pages/guides/blueprinting";
 
 import { setBaseUrl } from "@workspace/api-client-react";
 import { AuthBridge } from "@/components/AuthBridge";
@@ -206,6 +214,15 @@ function Router() {
         <Route path="/admin/moderation" component={AdminModeration} />
         <Route path="/settings" component={SettingsPage} />
         <Route path="/me" component={MyDashboard} />
+
+        <Route path="/guides" component={GuidesIndex} />
+        <Route path="/guides/bearing-clearance" component={GuideBearingClearance} />
+        <Route path="/guides/ring-gap" component={GuideRingGap} />
+        <Route path="/guides/break-in" component={GuideBreakIn} />
+        <Route path="/guides/degree-cam" component={GuideDegreeCam} />
+        <Route path="/guides/machine-shop-quality" component={GuideMachineShopQuality} />
+        <Route path="/guides/blueprinting" component={GuideBlueprinting} />
+        <Route path="/faq" component={FaqPage} />
 
         <Route component={NotFound} />
       </Switch>

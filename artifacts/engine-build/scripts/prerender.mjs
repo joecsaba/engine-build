@@ -16,11 +16,33 @@ import { readFile, writeFile, mkdir, access } from "node:fs/promises";
 import { dirname, resolve } from "node:path";
 import { fileURLToPath, pathToFileURL } from "node:url";
 
+import GUIDES from "../src/data/guides/manifest.mjs";
+import FAQ from "../src/data/faq.mjs";
+
 const __dirname = dirname(fileURLToPath(import.meta.url));
 const DIST = resolve(__dirname, "..", "dist", "public");
 const CONTENT_DIR = resolve(__dirname, "..", "src", "data", "calculatorContent");
 const SITE = "https://engine-build.com";
 const SITE_NAME = "Engine-build.com";
+
+// Convert "15 min" / "1h 30m" / "PT15M" into ISO 8601 duration for HowTo schema.
+function toIsoDuration(input) {
+  if (!input) return undefined;
+  if (input.startsWith("PT")) return input;
+  let h = 0, m = 0;
+  const hMatch = input.match(/(\d+)\s*h/i);
+  const mMatch = input.match(/(\d+)\s*(?:min|m)\b/i);
+  if (hMatch) h = parseInt(hMatch[1], 10);
+  if (mMatch) m = parseInt(mMatch[1], 10);
+  if (!h && !m) return undefined;
+  return `PT${h ? h + "H" : ""}${m ? m + "M" : ""}`;
+}
+
+// Strip HTML tags from a string — Google's FAQPage and HowTo schemas accept
+// plain text for the answer/step text.
+function stripHtml(s) {
+  return String(s).replace(/<[^>]+>/g, "").replace(/\s+/g, " ").trim();
+}
 
 // Try to load long-form content for a calculator slug. Returns null if no
 // content file exists yet — most calcs are still in that state and just get
@@ -297,6 +319,117 @@ function staticEntry(sp) {
 }
 
 // ---------------------------------------------------------------------------
+// Guides + FAQ entries
+// ---------------------------------------------------------------------------
+
+function guidesIndexEntry() {
+  const crumbs = [{ label: "Home", href: "/" }, { label: "Guides" }];
+  const seoBlock = `
+      <nav aria-label="Breadcrumb" style="font-size:14px;color:#666;margin:24px 0;">
+        ${breadcrumbHtml(crumbs)}
+      </nav>
+      <h1>Engine Building Guides</h1>
+      <p>Step-by-step walkthroughs of the procedures every builder needs to get right.</p>
+      <ul>
+        ${GUIDES.map((g) => `<li><a href="/guides/${g.slug}">${escapeHtml(g.title)}</a> — ${escapeHtml(g.description)}</li>`).join("\n        ")}
+      </ul>`;
+  return {
+    path: "/guides",
+    title: "Engine Building Guides",
+    description: "Step-by-step engine building tutorials — ring gap, cam degreeing, piston-to-valve, bearing clearance, turbo sizing, blueprinting, and more.",
+    seoBlock,
+    jsonLd: [breadcrumbJsonLd(crumbs)],
+    priority: 0.9,
+    changefreq: "monthly",
+  };
+}
+
+function guideEntry(g) {
+  const crumbs = [
+    { label: "Home", href: "/" },
+    { label: "Guides", href: "/guides" },
+    { label: g.title },
+  ];
+  const stepsHtml = (g.steps ?? []).map((s, i) => `
+        <h3>Step ${i + 1}: ${escapeHtml(s.name)}</h3>
+        <p>${escapeHtml(s.text)}</p>`).join("");
+  const seoBlock = `
+      <nav aria-label="Breadcrumb" style="font-size:14px;color:#666;margin:24px 0;">
+        ${breadcrumbHtml(crumbs)}
+      </nav>
+      <h1>${escapeHtml(g.title)}</h1>
+      <p>${escapeHtml(g.description)}</p>
+      ${g.totalTime ? `<p><strong>Time:</strong> ${escapeHtml(g.totalTime)}</p>` : ""}${stepsHtml}`;
+
+  const jsonLd = [breadcrumbJsonLd(crumbs)];
+  // HowTo schema only if the manifest provides steps[].
+  if (g.steps?.length) {
+    const iso = toIsoDuration(g.totalTime);
+    jsonLd.push({
+      "@context": "https://schema.org",
+      "@type": "HowTo",
+      name: g.title,
+      description: g.description,
+      url: `${SITE}/guides/${g.slug}`,
+      ...(iso ? { totalTime: iso } : {}),
+      step: g.steps.map((s, i) => ({
+        "@type": "HowToStep",
+        position: i + 1,
+        name: s.name,
+        text: stripHtml(s.text),
+        url: `${SITE}/guides/${g.slug}#step-${i + 1}`,
+      })),
+    });
+  }
+  return {
+    path: `/guides/${g.slug}`,
+    title: g.title,
+    description: g.description,
+    seoBlock,
+    jsonLd,
+    priority: 0.8,
+    changefreq: "monthly",
+  };
+}
+
+function faqEntry() {
+  const crumbs = [{ label: "Home", href: "/" }, { label: "FAQ" }];
+  const questionsHtml = FAQ.map((q) => `
+        <h3>${escapeHtml(q.question)}</h3>
+        <p>${stripHtml(q.answer)}</p>`).join("");
+  const seoBlock = `
+      <nav aria-label="Breadcrumb" style="font-size:14px;color:#666;margin:24px 0;">
+        ${breadcrumbHtml(crumbs)}
+      </nav>
+      <h1>Engine Building FAQ</h1>
+      <p>Common questions about compression ratio, ring gap, turbo sizing, diesel tuning, and more — answered briefly and clearly.</p>
+      ${questionsHtml}`;
+  return {
+    path: "/faq",
+    title: "Engine Building FAQ",
+    description: "Common engine builder questions on compression ratio, ring gap, turbo sizing, diesel tuning, head bolts, and more — short answers, no fluff.",
+    seoBlock,
+    jsonLd: [
+      breadcrumbJsonLd(crumbs),
+      {
+        "@context": "https://schema.org",
+        "@type": "FAQPage",
+        mainEntity: FAQ.map((q) => ({
+          "@type": "Question",
+          name: q.question,
+          acceptedAnswer: {
+            "@type": "Answer",
+            text: stripHtml(q.answer),
+          },
+        })),
+      },
+    ],
+    priority: 0.8,
+    changefreq: "monthly",
+  };
+}
+
+// ---------------------------------------------------------------------------
 // Per-route HTML generation
 // ---------------------------------------------------------------------------
 
@@ -418,6 +551,9 @@ async function main() {
     ...STATIC_PAGES.map(staticEntry),
     ...CATEGORY_PAGES.map(categoryEntry),
     ...(await Promise.all(CALCS.map(calcEntry))),
+    guidesIndexEntry(),
+    ...GUIDES.map(guideEntry),
+    faqEntry(),
   ];
 
   let written = 0;
@@ -437,7 +573,7 @@ async function main() {
   const indexableCount = allEntries.filter((e) => !e.noindex).length + 1; // +1 for homepage
 
   const withLongContent = allEntries.filter((e) => e.hasLongContent).length;
-  console.log(`prerender: wrote ${written} HTML files (${CALCS.length} calculators, ${CATEGORY_PAGES.length} categories, ${STATIC_PAGES.length} static)`);
+  console.log(`prerender: wrote ${written} HTML files (${CALCS.length} calculators, ${CATEGORY_PAGES.length} categories, ${STATIC_PAGES.length} static, ${GUIDES.length} guides, 1 FAQ)`);
   console.log(`prerender: ${withLongContent} / ${CALCS.length} calculators have long-form content`);
   console.log(`prerender: wrote sitemap.xml with ${indexableCount} URLs (noindex excluded)`);
 }
