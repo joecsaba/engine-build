@@ -7,14 +7,25 @@ import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 import { Select, SelectContent, SelectItem, SelectTrigger, SelectValue } from "@/components/ui/select";
 
 type RingType = "top" | "second" | "oil";
-type AppType = "na-street" | "na-perf" | "fi-street" | "full-race";
+type AppType = "na-street" | "na-perf" | "fi-street" | "full-race" | "diesel";
 
-// Oil ring uses flat minimum gap (NOT per-inch multiplier) — see advanced calculator for details
+/* Per-inch-of-bore multipliers for top + second ring; oil rail uses a flat
+   minimum gap (not per-inch). Recalibrated 2026-05-28 against manufacturer
+   sources (Mahle Motorsports, Wiseco, JE Pistons, Total Seal, CP-Carrillo,
+   ICON) — see scripts/validate-ring-gap-sources.md for the reference table.
+
+   Notes on second-ring logic:
+   - Street: second ≈ top. OK because there's no inter-ring pressure issue.
+   - FI street & race: per Mahle Motorsports current guidance, second is set
+     EQUAL TO (not tighter than) the top ring to vent inter-ring pressure.
+     CP-Carrillo recommends second = top + 0.004"-0.008" for race. Splitting
+     the difference: second = top for FI/race rather than tighter. */
 const gapMultipliers: Record<AppType, Record<RingType, { perInch: [number, number] } | { flat: [number, number] }>> = {
-  "na-street":   { top: { perInch: [0.004, 0.005] }, second: { perInch: [0.004, 0.005] }, oil: { flat: [0.015, 0.055] } },
-  "na-perf":     { top: { perInch: [0.005, 0.006] }, second: { perInch: [0.005, 0.006] }, oil: { flat: [0.015, 0.055] } },
-  "fi-street":   { top: { perInch: [0.006, 0.007] }, second: { perInch: [0.005, 0.006] }, oil: { flat: [0.015, 0.055] } },
-  "full-race":   { top: { perInch: [0.007, 0.009] }, second: { perInch: [0.006, 0.008] }, oil: { flat: [0.015, 0.055] } },
+  "na-street":   { top: { perInch: [0.0040, 0.0050] }, second: { perInch: [0.0040, 0.0050] }, oil: { flat: [0.015, 0.055] } },
+  "na-perf":     { top: { perInch: [0.0045, 0.0055] }, second: { perInch: [0.0045, 0.0055] }, oil: { flat: [0.015, 0.055] } },
+  "fi-street":   { top: { perInch: [0.0060, 0.0070] }, second: { perInch: [0.0060, 0.0070] }, oil: { flat: [0.015, 0.055] } },
+  "full-race":   { top: { perInch: [0.0070, 0.0080] }, second: { perInch: [0.0070, 0.0080] }, oil: { flat: [0.015, 0.055] } },
+  "diesel":      { top: { perInch: [0.0060, 0.0095] }, second: { perInch: [0.0055, 0.0085] }, oil: { flat: [0.015, 0.055] } },
 };
 
 function getZone(actual: number, min: number, max: number): { label: string; color: string; bg: string } {
@@ -86,8 +97,9 @@ export default function RingGapCalculator() {
                 <SelectContent>
                   <SelectItem value="na-street">Naturally Aspirated Street</SelectItem>
                   <SelectItem value="na-perf">NA Performance</SelectItem>
-                  <SelectItem value="fi-street">Forced Induction Street</SelectItem>
-                  <SelectItem value="full-race">Full Race</SelectItem>
+                  <SelectItem value="fi-street">Forced Induction Street (turbo / supercharger)</SelectItem>
+                  <SelectItem value="full-race">Full Race (gasoline, FI or nitrous)</SelectItem>
+                  <SelectItem value="diesel">Diesel (turbo, high-output Cummins / Duramax / Power Stroke)</SelectItem>
                 </SelectContent>
               </Select>
             </div>
@@ -151,11 +163,15 @@ export default function RingGapCalculator() {
             Piston ring end gap is the clearance between the two ends of a piston ring when it is seated in the cylinder bore. This gap must be precisely set because piston rings expand as the engine reaches operating temperature. If the gap is too tight, the ring ends butt together and the ring has nowhere to go — it breaks the ring land off the piston, scores the cylinder wall, and can destroy the entire short block in seconds. This is one of the most common causes of catastrophic engine failure in fresh builds.
           </p>
           <p>
-            The general rule for naturally aspirated street engines is 0.004" of gap per inch of bore diameter for the top compression ring. On a 4.000" bore, that works out to 0.016" minimum. Most ring manufacturers recommend 0.004" to 0.005" per inch for the top ring on NA applications, giving a range of 0.016" to 0.020" on a standard 4.000" bore. Forced induction engines run significantly more gap — typically 0.006" to 0.007" per inch for the top ring — because turbo and supercharged engines generate far more cylinder heat, causing greater ring expansion. On that same 4.000" bore with a turbo, you would gap the top ring at 0.024" to 0.028".
+            The general rule for naturally aspirated street engines is 0.0040" of gap per inch of bore diameter for the top compression ring. On a 4.000" bore, that works out to 0.016" minimum. Most ring manufacturers recommend 0.0040" to 0.0050" per inch for the top ring on NA applications, giving a range of 0.016" to 0.020" on a standard 4.000" bore. Forced induction engines run significantly more gap — typically 0.0060" to 0.0070" per inch for the top ring — because turbo and supercharged engines generate far more cylinder heat, causing greater ring expansion. On that same 4.000" bore with a turbo, you would gap the top ring at 0.024" to 0.028".
           </p>
           <h3 className="text-sm font-semibold text-foreground mt-4">Ring Gap Quick Reference</h3>
           <p>
-            For a common 4.030" overbored SBC: NA street top ring = 0.016"-0.020", NA performance = 0.020"-0.024", forced induction street = 0.024"-0.028", full race = 0.028"-0.036". The second ring typically runs the same or slightly tighter than the top ring. Always file-fit rings to your actual bore measurement — never trust the gap straight out of the box.
+            For a common 4.030" overbored SBC: NA street top ring = 0.016"-0.020", NA performance = 0.018"-0.022", forced induction street = 0.024"-0.028", full race gasoline = 0.028"-0.032", high-output diesel = 0.024"-0.038". On modern race builds the second ring is set equal to or slightly larger than the top ring (Mahle Motorsports / CP-Carrillo current guidance) to vent inter-ring pressure that would otherwise lift the top ring off its land. Always file-fit rings to your actual bore measurement — never trust the gap straight out of the box.
+          </p>
+          <h3 className="text-sm font-semibold text-foreground mt-4">Sources</h3>
+          <p>
+            Multipliers cross-checked against Mahle Motorsports ring gap minimums chart, Wiseco ring installation guide, JE Pistons ring instruction sheets, Total Seal application guide, and CP-Carrillo installation specifications. Diesel range derived from Total Seal Severe Duty Diesel specs (Cummins / Duramax) and Mahle diesel-turbo recs (top 0.0060", second 0.0055").
           </p>
         </CardContent>
       </Card>

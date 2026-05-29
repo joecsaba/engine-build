@@ -40,14 +40,26 @@ const rockerPresets = [
 
 type CamType = "hyd-flat" | "hyd-roller-street" | "hyd-roller-perf" | "solid-flat" | "solid-roller-street" | "solid-roller-race" | "solid-roller-extreme";
 
+/* Pressure ranges recalibrated 2026-05-28 against published mfr guidance:
+   Summit Racing tech sheets, SB International recommended-pressures PDF,
+   COMP Cams Valve Spring Master Chart, PAC Racing 2018 catalog, PSI 1500
+   series springs, Manley NexTek product pages, Crower spring PDFs, and
+   Engine Builder Magazine spring-pressure technical articles. Notable
+   shifts vs. prior values:
+   - Hyd flat tappet seat lifted from 85 to 95 lbs (85 risks float >4500 RPM
+     per Summit; COMP/SB Intl. publish 95-125 for performance use).
+   - Solid roller race seat tightened to 230-280 (prior 230-300 spilled
+     into the "extreme" tier; 300+ is a Pro Stock / drag-only range).
+   - Hyd roller performance open ceiling raised to 410 (COMP 26925 hits
+     405; >410 generally requires billet/tool-steel lifters). */
 const camTypes: Record<CamType, { label: string; seatMin: number; seatMax: number; openMin: number; openMax: number }> = {
-  "hyd-flat":              { label: "Hydraulic flat tappet",             seatMin: 85,  seatMax: 115, openMin: 240, openMax: 280  },
-  "hyd-roller-street":     { label: "Hydraulic roller (street)",        seatMin: 120, seatMax: 145, openMin: 300, openMax: 350  },
-  "hyd-roller-perf":       { label: "Hydraulic roller (performance)",   seatMin: 140, seatMax: 170, openMin: 350, openMax: 400  },
-  "solid-flat":            { label: "Solid flat tappet",                seatMin: 130, seatMax: 160, openMin: 330, openMax: 380  },
+  "hyd-flat":              { label: "Hydraulic flat tappet",             seatMin: 95,  seatMax: 125, openMin: 240, openMax: 280  },
+  "hyd-roller-street":     { label: "Hydraulic roller (street)",         seatMin: 120, seatMax: 145, openMin: 300, openMax: 350  },
+  "hyd-roller-perf":       { label: "Hydraulic roller (performance)",    seatMin: 140, seatMax: 170, openMin: 350, openMax: 410  },
+  "solid-flat":            { label: "Solid flat tappet",                 seatMin: 130, seatMax: 165, openMin: 320, openMax: 380  },
   "solid-roller-street":   { label: "Solid roller (street, 6500 RPM max)", seatMin: 180, seatMax: 230, openMin: 480, openMax: 560  },
-  "solid-roller-race":     { label: "Solid roller (race, 6500-8000 RPM)",  seatMin: 230, seatMax: 300, openMin: 600, openMax: 750  },
-  "solid-roller-extreme":  { label: "Solid roller (extreme, 8000+ RPM)",   seatMin: 300, seatMax: 400, openMin: 750, openMax: 1000 },
+  "solid-roller-race":     { label: "Solid roller (race, 6500-8000 RPM)",  seatMin: 230, seatMax: 280, openMin: 600, openMax: 750  },
+  "solid-roller-extreme":  { label: "Solid roller (extreme, 8000+ RPM)",   seatMin: 280, seatMax: 400, openMin: 750, openMax: 1010 },
 };
 
 /* ── Stock shim sizes ─────────────────────────────────────────── */

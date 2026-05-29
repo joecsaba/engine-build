@@ -181,12 +181,21 @@ const enginePlatforms: Record<string, EnginePlatform> = {
 };
 
 // ── Clearance Recommendations by Build Level ───────────────────────────────────
-// From Clevite/Mahle, King Bearings, and ACL technical bulletins
+// Recalibrated 2026-05-28 against published mfr guidance:
+//   Clevite Race Bearing FAQ — "0.00075-0.0010 per inch of journal" plus 0.0005
+//     for HP applications (race upper end ~0.0030 main / 0.0026 rod on SBC).
+//   King Bearings — same per-inch rule; aluminum blocks "ship no looser than
+//     factory minimum"; King 383 SBC drag race data 0.0025-0.0028 main.
+//   ACL Race Series guide — SBC race 0.0024-0.0030 main / 0.0021-0.0026 rod.
+// Prior "race" range topped out at 0.0035 which was looser than what any of
+// the three major bearing manufacturers actually recommends for short-track
+// race builds. Endurance / large-journal BBC builds still fit within the
+// new range — King's published BBC race spec is 0.0025-0.0030 main.
 
 const clearanceSpecs: Record<BuildLevel, ClearanceSpec> = {
   "street":       { main: [0.0015, 0.0025], rod: [0.0015, 0.0022] },
-  "street-strip": { main: [0.0025, 0.0030], rod: [0.0020, 0.0028] },
-  "race":         { main: [0.0028, 0.0035], rod: [0.0025, 0.0032] },
+  "street-strip": { main: [0.0020, 0.0028], rod: [0.0018, 0.0025] },
+  "race":         { main: [0.0025, 0.0032], rod: [0.0022, 0.0028] },
 };
 
 const buildLevelLabels: Record<BuildLevel, string> = {
