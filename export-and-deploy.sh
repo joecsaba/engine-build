@@ -180,6 +180,29 @@ SELECT json_agg(platform ORDER BY platform.sort_order) FROM (
 " > "$DATA_DIR/bolt_specs.json"
 echo "   Bolt specs exported"
 
+# Bearing clearance recommendations (per-source build-level ranges)
+docker exec $DB_CONTAINER psql -U $DB_USER -d $DB_NAME -t -A -c "
+SELECT json_agg(t ORDER BY t.sort_order) FROM (
+  SELECT source, source_detail, build_level, block_material,
+    main_min, main_max, rod_min, rod_max,
+    oil_viscosity, rule_of_thumb, source_url, notes, sort_order
+  FROM bearing_clearance_recommendations ORDER BY sort_order
+) t;
+" > "$DATA_DIR/bearing_clearance_recommendations.json"
+echo "   Bearing clearance recommendations exported"
+
+# Valve spring pressure ranges (per-source per cam-type)
+docker exec $DB_CONTAINER psql -U $DB_USER -d $DB_NAME -t -A -c "
+SELECT json_agg(t ORDER BY t.sort_order) FROM (
+  SELECT source, source_detail, cam_type, sub_category,
+    seat_min, seat_max, open_min, open_max,
+    max_lift, max_rpm, coil_bind_min,
+    source_url, notes, sort_order
+  FROM valve_spring_pressure_ranges ORDER BY sort_order
+) t;
+" > "$DATA_DIR/valve_spring_pressure_ranges.json"
+echo "   Valve spring pressure ranges exported"
+
 echo "3/5 — Building site..."
 cd "c:/Engine Website"
 pnpm --filter @workspace/engine-build run build 2>&1 | tail -3

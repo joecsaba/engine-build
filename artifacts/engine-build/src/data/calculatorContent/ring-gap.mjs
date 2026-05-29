@@ -1,5 +1,5 @@
 export default {
-  slug: "ring-gap-advanced",
+  slug: "ring-gap",
   intro: "Piston ring end gap is the clearance between the two ends of a ring when installed in the bore. Rings expand as they heat up — if the gap is too tight, the ends butt together, scoring the cylinder walls, breaking ring lands, or seizing the piston. \"Ring butting\" is one of the most catastrophic and preventable failures in engine building.",
   sections: [
     {

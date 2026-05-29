@@ -232,7 +232,7 @@ const bottomEndSections: SectionDef[] = [
       { key: "machineWork.notes", label: "Machine Shop Notes", type: "textarea", placeholder: "Boring, honing crosshatch angle, valve job specs, etc." },
     ],
     calculatorLinks: [
-      { label: "Ring Gap", href: "/calculators/ring-gap-advanced" },
+      { label: "Ring Gap", href: "/calculators/ring-gap" },
       { label: "Quench / Deck Height", href: "/calculators/quench-deck-height" },
     ],
   },
@@ -269,7 +269,7 @@ const bottomEndSections: SectionDef[] = [
     calculatorLinks: [
       { label: "Piston Speed", href: "/calculators/piston-speed" },
       { label: "Rod Ratio", href: "/calculators/rod-ratio" },
-      { label: "Ring Gap", href: "/calculators/ring-gap-advanced" },
+      { label: "Ring Gap", href: "/calculators/ring-gap" },
     ],
   },
 ];

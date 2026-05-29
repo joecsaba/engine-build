@@ -1,4 +1,4 @@
-import { useState, useEffect } from "react";
+import { useState, useEffect, useMemo } from "react";
 import { SEOHead } from "@/components/SEOHead";
 import { Input } from "@/components/ui/input";
 import { Label } from "@/components/ui/label";
@@ -6,6 +6,7 @@ import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 import { Select, SelectContent, SelectItem, SelectTrigger, SelectValue } from "@/components/ui/select";
 import { Tabs, TabsContent, TabsList, TabsTrigger } from "@/components/ui/tabs";
 import { useBuildContext } from "@/context/BuildContext";
+import { useValveSpringPressureRanges, type ValveSpringPressureRange } from "@/hooks/useEngineData";
 import { Info } from "lucide-react";
 import { CalculatorContent } from "@/components/calculators/CalculatorContent";
 import { HelpSidebar } from "@/components/calculators/HelpCard";
@@ -40,27 +41,56 @@ const rockerPresets = [
 
 type CamType = "hyd-flat" | "hyd-roller-street" | "hyd-roller-perf" | "solid-flat" | "solid-roller-street" | "solid-roller-race" | "solid-roller-extreme";
 
-/* Pressure ranges recalibrated 2026-05-28 against published mfr guidance:
-   Summit Racing tech sheets, SB International recommended-pressures PDF,
-   COMP Cams Valve Spring Master Chart, PAC Racing 2018 catalog, PSI 1500
-   series springs, Manley NexTek product pages, Crower spring PDFs, and
-   Engine Builder Magazine spring-pressure technical articles. Notable
-   shifts vs. prior values:
-   - Hyd flat tappet seat lifted from 85 to 95 lbs (85 risks float >4500 RPM
-     per Summit; COMP/SB Intl. publish 95-125 for performance use).
-   - Solid roller race seat tightened to 230-280 (prior 230-300 spilled
-     into the "extreme" tier; 300+ is a Pro Stock / drag-only range).
-   - Hyd roller performance open ceiling raised to 410 (COMP 26925 hits
-     405; >410 generally requires billet/tool-steel lifters). */
-const camTypes: Record<CamType, { label: string; seatMin: number; seatMax: number; openMin: number; openMax: number }> = {
-  "hyd-flat":              { label: "Hydraulic flat tappet",             seatMin: 95,  seatMax: 125, openMin: 240, openMax: 280  },
-  "hyd-roller-street":     { label: "Hydraulic roller (street)",         seatMin: 120, seatMax: 145, openMin: 300, openMax: 350  },
-  "hyd-roller-perf":       { label: "Hydraulic roller (performance)",    seatMin: 140, seatMax: 170, openMin: 350, openMax: 410  },
-  "solid-flat":            { label: "Solid flat tappet",                 seatMin: 130, seatMax: 165, openMin: 320, openMax: 380  },
-  "solid-roller-street":   { label: "Solid roller (street, 6500 RPM max)", seatMin: 180, seatMax: 230, openMin: 480, openMax: 560  },
-  "solid-roller-race":     { label: "Solid roller (race, 6500-8000 RPM)",  seatMin: 230, seatMax: 280, openMin: 600, openMax: 750  },
-  "solid-roller-extreme":  { label: "Solid roller (extreme, 8000+ RPM)",   seatMin: 280, seatMax: 400, openMin: 750, openMax: 1010 },
+interface CamTypeSpec { label: string; seatMin: number; seatMax: number; openMin: number; openMax: number; }
+
+const CAM_TYPE_LABELS: Record<CamType, string> = {
+  "hyd-flat":              "Hydraulic flat tappet",
+  "hyd-roller-street":     "Hydraulic roller (street)",
+  "hyd-roller-perf":       "Hydraulic roller (performance)",
+  "solid-flat":            "Solid flat tappet",
+  "solid-roller-street":   "Solid roller (street, 6500 RPM max)",
+  "solid-roller-race":     "Solid roller (race, 6500-8000 RPM)",
+  "solid-roller-extreme":  "Solid roller (extreme, 8000+ RPM)",
 };
+
+/* Default pressure ranges — fallback for first render before the DB-backed
+   JSON loads. Live values are derived from /data/valve_spring_pressure_ranges.json
+   which is sourced from the `valve_spring_pressure_ranges` Postgres table
+   (engine-db/init/13_valve_spring_pressure_ranges.sql). To update the
+   recommended ranges going forward, edit the SQL and re-deploy — no calc
+   code change required. */
+const DEFAULT_CAM_TYPES: Record<CamType, CamTypeSpec> = {
+  "hyd-flat":              { label: CAM_TYPE_LABELS["hyd-flat"],              seatMin: 95,  seatMax: 125, openMin: 240, openMax: 280  },
+  "hyd-roller-street":     { label: CAM_TYPE_LABELS["hyd-roller-street"],     seatMin: 120, seatMax: 145, openMin: 300, openMax: 350  },
+  "hyd-roller-perf":       { label: CAM_TYPE_LABELS["hyd-roller-perf"],       seatMin: 140, seatMax: 170, openMin: 350, openMax: 410  },
+  "solid-flat":            { label: CAM_TYPE_LABELS["solid-flat"],            seatMin: 130, seatMax: 165, openMin: 320, openMax: 380  },
+  "solid-roller-street":   { label: CAM_TYPE_LABELS["solid-roller-street"],   seatMin: 180, seatMax: 230, openMin: 480, openMax: 560  },
+  "solid-roller-race":     { label: CAM_TYPE_LABELS["solid-roller-race"],     seatMin: 230, seatMax: 280, openMin: 600, openMax: 750  },
+  "solid-roller-extreme":  { label: CAM_TYPE_LABELS["solid-roller-extreme"],  seatMin: 280, seatMax: 400, openMin: 750, openMax: 1010 },
+};
+
+/** Collapse per-source rows into a single (seatMin..seatMax, openMin..openMax)
+ *  envelope per cam type. Specific spring-kit rows (sub_category prefixed
+ *  'kit-') are excluded so the envelope reflects published mfr guidance,
+ *  not a single product's spec. */
+function deriveCamTypes(rows: ValveSpringPressureRange[]): Record<CamType, CamTypeSpec> {
+  if (!rows || rows.length === 0) return DEFAULT_CAM_TYPES;
+  const out: Record<CamType, CamTypeSpec> = { ...DEFAULT_CAM_TYPES };
+  for (const camType of Object.keys(DEFAULT_CAM_TYPES) as CamType[]) {
+    const matching = rows.filter(r =>
+      r.cam_type === camType && !(r.sub_category || "").startsWith("kit-")
+    );
+    if (matching.length === 0) continue;
+    out[camType] = {
+      label: CAM_TYPE_LABELS[camType],
+      seatMin: Math.min(...matching.map(r => r.seat_min)),
+      seatMax: Math.max(...matching.map(r => r.seat_max)),
+      openMin: Math.min(...matching.map(r => r.open_min)),
+      openMax: Math.max(...matching.map(r => r.open_max)),
+    };
+  }
+  return out;
+}
 
 /* ── Stock shim sizes ─────────────────────────────────────────── */
 
@@ -507,6 +537,14 @@ function SpringMeasurementDiagram() {
 
 export default function ValveSpringCalculator() {
   const { activeBuild, getField, setField: setBuildField } = useBuildContext();
+
+  // Live cam-type pressure ranges from DB (collapsed across COMP/PAC/PSI/etc).
+  // Falls back to DEFAULT_CAM_TYPES during first render.
+  const { data: pressureRangeRows } = useValveSpringPressureRanges();
+  const camTypes = useMemo(
+    () => deriveCamTypes(pressureRangeRows),
+    [pressureRangeRows]
+  );
 
   /* Tab 1: Coil Bind Check */
   const [installedHeight, setInstalledHeight] = useState("1.800");

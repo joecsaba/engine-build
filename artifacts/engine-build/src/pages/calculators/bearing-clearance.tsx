@@ -8,7 +8,7 @@ import { Select, SelectContent, SelectItem, SelectTrigger, SelectValue } from "@
 import { AlertTriangle, Info, ChevronDown, ChevronUp } from "lucide-react";
 import { useBuildField } from "@/hooks/useBuildField";
 import { useBuildContext } from "@/context/BuildContext";
-import { useEnginesWithClearances } from "@/hooks/useEngineData";
+import { useEnginesWithClearances, useBearingClearanceRecs, type BearingClearanceRec } from "@/hooks/useEngineData";
 
 // ── Types ──────────────────────────────────────────────────────────────────────
 
@@ -181,22 +181,46 @@ const enginePlatforms: Record<string, EnginePlatform> = {
 };
 
 // ── Clearance Recommendations by Build Level ───────────────────────────────────
-// Recalibrated 2026-05-28 against published mfr guidance:
-//   Clevite Race Bearing FAQ — "0.00075-0.0010 per inch of journal" plus 0.0005
-//     for HP applications (race upper end ~0.0030 main / 0.0026 rod on SBC).
-//   King Bearings — same per-inch rule; aluminum blocks "ship no looser than
-//     factory minimum"; King 383 SBC drag race data 0.0025-0.0028 main.
-//   ACL Race Series guide — SBC race 0.0024-0.0030 main / 0.0021-0.0026 rod.
-// Prior "race" range topped out at 0.0035 which was looser than what any of
-// the three major bearing manufacturers actually recommends for short-track
-// race builds. Endurance / large-journal BBC builds still fit within the
-// new range — King's published BBC race spec is 0.0025-0.0030 main.
+// Source of truth: `bearing_clearance_recommendations` table in engine-db,
+// exported to /data/bearing_clearance_recommendations.json. The defaults below
+// are a fallback for first-render before the JSON loads; they collapse the
+// per-source data (King/ACL/Clevite/Mahle) into a single envelope range per
+// build level. The runtime value used by the calculator is computed from the
+// fetched data via deriveClearanceSpecs() inside the component.
 
-const clearanceSpecs: Record<BuildLevel, ClearanceSpec> = {
+const DEFAULT_CLEARANCE_SPECS: Record<BuildLevel, ClearanceSpec> = {
   "street":       { main: [0.0015, 0.0025], rod: [0.0015, 0.0022] },
   "street-strip": { main: [0.0020, 0.0028], rod: [0.0018, 0.0025] },
   "race":         { main: [0.0025, 0.0032], rod: [0.0022, 0.0028] },
 };
+
+/** Collapse all matching source rows for a build_level + block_material into
+ *  a single (min, max) envelope: min = min of all source mins, max = max of
+ *  all source maxes. Aluminum-block selection falls back to 'any' rows. */
+function deriveClearanceSpecs(rows: BearingClearanceRec[]): Record<BuildLevel, ClearanceSpec> {
+  if (!rows || rows.length === 0) return DEFAULT_CLEARANCE_SPECS;
+  const out: Record<BuildLevel, ClearanceSpec> = { ...DEFAULT_CLEARANCE_SPECS };
+  for (const level of ["street", "street-strip", "race"] as BuildLevel[]) {
+    // Use iron-block rows for the envelope (aluminum offset is applied
+    // separately in assessClearance); endurance rows are an aspirational
+    // upper tail and excluded from the typical-builder envelope.
+    const matching = rows.filter(r =>
+      r.build_level === level && (r.block_material === "iron" || r.block_material === "any")
+    );
+    if (matching.length === 0) continue;
+    out[level] = {
+      main: [
+        Math.min(...matching.map(r => r.main_min)),
+        Math.max(...matching.map(r => r.main_max)),
+      ],
+      rod: [
+        Math.min(...matching.map(r => r.rod_min)),
+        Math.max(...matching.map(r => r.rod_max)),
+      ],
+    };
+  }
+  return out;
+}
 
 const buildLevelLabels: Record<BuildLevel, string> = {
   "street": "Street / daily",
@@ -223,8 +247,9 @@ function assessClearance(
   type: BearingType,
   buildLevel: BuildLevel,
   blockMaterial: BlockMaterial,
+  specs: Record<BuildLevel, ClearanceSpec>,
 ): { assessment: Assessment; label: string; color: string; bgColor: string; borderColor: string } {
-  const spec = clearanceSpecs[buildLevel];
+  const spec = specs[buildLevel];
   const range = type === "main" ? spec.main : spec.rod;
   const [min, max] = range;
 
@@ -311,6 +336,14 @@ export default function BearingClearanceCalculator() {
     }
     return merged;
   }, [jsonPlatforms]);
+
+  // Load source-tagged clearance recommendations from the DB-exported JSON.
+  // Falls back to DEFAULT_CLEARANCE_SPECS during first render.
+  const { data: clearanceRecRows } = useBearingClearanceRecs();
+  const clearanceSpecs = useMemo(
+    () => deriveClearanceSpecs(clearanceRecRows),
+    [clearanceRecRows]
+  );
 
   // Mode
   const [mode, setMode] = useState<Mode>("measurements");
@@ -556,7 +589,7 @@ export default function BearingClearanceCalculator() {
 
   const plastigageValue = (parseFloat(plastigageClearance) || 0) / 1000;
   const plastigageAssessment = plastigageValue > 0
-    ? assessClearance(plastigageValue, plastigageBearingType, buildLevel, blockMaterial)
+    ? assessClearance(plastigageValue, plastigageBearingType, buildLevel, blockMaterial, clearanceSpecs)
     : null;
 
   return (
@@ -743,7 +776,7 @@ export default function BearingClearanceCalculator() {
                           <tbody>
                             {mainEntries.map((entry, i) => {
                               const c = mainClearances[i];
-                              const a = c !== null && c > 0 ? assessClearance(c, "main", buildLevel, blockMaterial) : null;
+                              const a = c !== null && c > 0 ? assessClearance(c, "main", buildLevel, blockMaterial, clearanceSpecs) : null;
                               return (
                                 <tr key={i} className="border-b last:border-0">
                                   <td className="py-2 pr-2 font-medium">#{i + 1}</td>
@@ -810,7 +843,7 @@ export default function BearingClearanceCalculator() {
                           <tbody>
                             {rodEntries.map((entry, i) => {
                               const c = rodClearances[i];
-                              const a = c !== null && c > 0 ? assessClearance(c, "rod", buildLevel, blockMaterial) : null;
+                              const a = c !== null && c > 0 ? assessClearance(c, "rod", buildLevel, blockMaterial, clearanceSpecs) : null;
                               return (
                                 <tr key={i} className="border-b last:border-0">
                                   <td className="py-2 pr-2 font-medium">#{i + 1}</td>
@@ -873,7 +906,7 @@ export default function BearingClearanceCalculator() {
                       <p className="text-4xl font-bold text-[#E85D04] tabular-nums">{formatClearance(effectiveMainClearance)}"</p>
                       <p className="text-sm text-gray-400 mt-1">{formatThousandths(effectiveMainClearance)} thousandths</p>
                       {(() => {
-                        const a = assessClearance(effectiveMainClearance, "main", buildLevel, blockMaterial);
+                        const a = assessClearance(effectiveMainClearance, "main", buildLevel, blockMaterial, clearanceSpecs);
                         return <p className={`text-xs mt-2 ${a.assessment === "good" ? "text-green-400" : a.assessment === "tight" ? "text-yellow-400" : a.assessment === "loose" ? "text-orange-400" : "text-red-400"}`}>{a.label}</p>;
                       })()}
                     </>
@@ -894,7 +927,7 @@ export default function BearingClearanceCalculator() {
                       <p className="text-4xl font-bold text-[#E85D04] tabular-nums">{formatClearance(effectiveRodClearance)}"</p>
                       <p className="text-sm text-gray-400 mt-1">{formatThousandths(effectiveRodClearance)} thousandths</p>
                       {(() => {
-                        const a = assessClearance(effectiveRodClearance, "rod", buildLevel, blockMaterial);
+                        const a = assessClearance(effectiveRodClearance, "rod", buildLevel, blockMaterial, clearanceSpecs);
                         return <p className={`text-xs mt-2 ${a.assessment === "good" ? "text-green-400" : a.assessment === "tight" ? "text-yellow-400" : a.assessment === "loose" ? "text-orange-400" : "text-red-400"}`}>{a.label}</p>;
                       })()}
                     </>

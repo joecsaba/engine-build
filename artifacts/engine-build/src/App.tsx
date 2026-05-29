@@ -23,7 +23,7 @@ import MyBuildsPage from "@/pages/build-sheets/my-builds";
 import CalculatorsIndex from "@/pages/calculators/index";
 import DisplacementCalculator from "@/pages/calculators/displacement";
 import CompressionRatioCalculator from "@/pages/calculators/compression-ratio";
-import RingGapCalculator from "@/pages/calculators/ring-gap";
+import RingGapCalculator from "@/pages/calculators/ring-gap";  // formerly ring-gap-advanced; basic deleted 2026-05-28
 import CamDurationCalculator from "@/pages/calculators/cam-duration";
 import RodRatioCalculator from "@/pages/calculators/rod-ratio";
 import HpTorqueCalculator from "@/pages/calculators/hp-torque";
@@ -34,7 +34,6 @@ import PushrodLengthCalculator from "@/pages/calculators/pushrod-length";
 import PistonToValveCalculator from "@/pages/calculators/piston-to-valve";
 import CamDegreeingCalculator from "@/pages/calculators/cam-degreeing";
 import ValveSpringCalculator from "@/pages/calculators/valve-spring";
-import RingGapAdvancedCalculator from "@/pages/calculators/ring-gap-advanced";
 import DynamicCompressionRatioV2 from "@/pages/calculators/dynamic-compression-ratio-v2";
 import TorqueExtensionCalculator from "@/pages/calculators/torque-extension";
 import HpEstimator from "@/pages/calculators/hp-estimator";
@@ -154,7 +153,7 @@ function Router() {
         <Route path="/calculators/diesel" component={CategoryDiesel} />
         <Route path="/calculators/displacement" component={DisplacementCalculator} />
         <Route path="/calculators/compression-ratio" component={DynamicCompressionRatioV2} />
-        <Route path="/calculators/ring-gap" component={RingGapAdvancedCalculator} />
+        <Route path="/calculators/ring-gap" component={RingGapCalculator} />
         {/* /calculators/ring-gap-advanced redirected to /calculators/ring-gap by CloudFront Function */}
         <Route path="/calculators/cam-duration" component={CamDurationCalculator} />
         <Route path="/calculators/rod-ratio" component={RodRatioCalculator} />

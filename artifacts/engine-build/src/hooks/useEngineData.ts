@@ -575,6 +575,51 @@ export function useRingGapMultipliers() {
   return useJsonData<RingGapMultiplier>("ring_gap_multipliers.json");
 }
 
+// ── Bearing Clearance Recommendations ─────────────────────────────
+
+export interface BearingClearanceRec {
+  source: string;
+  source_detail: string | null;
+  build_level: string;          // 'street' | 'street-strip' | 'race' | 'race-endurance'
+  block_material: string;        // 'iron' | 'aluminum' | 'any'
+  main_min: number;
+  main_max: number;
+  rod_min: number;
+  rod_max: number;
+  oil_viscosity: string | null;
+  rule_of_thumb: string | null;
+  source_url: string | null;
+  notes: string | null;
+  sort_order: number;
+}
+
+export function useBearingClearanceRecs() {
+  return useJsonData<BearingClearanceRec>("bearing_clearance_recommendations.json");
+}
+
+// ── Valve Spring Pressure Ranges ──────────────────────────────────
+
+export interface ValveSpringPressureRange {
+  source: string;
+  source_detail: string | null;
+  cam_type: string;
+  sub_category: string | null;   // 'kit-...' indicates a specific spring kit; otherwise a range label
+  seat_min: number;
+  seat_max: number;
+  open_min: number;
+  open_max: number;
+  max_lift: number | null;
+  max_rpm: number | null;
+  coil_bind_min: number | null;
+  source_url: string | null;
+  notes: string | null;
+  sort_order: number;
+}
+
+export function useValveSpringPressureRanges() {
+  return useJsonData<ValveSpringPressureRange>("valve_spring_pressure_ranges.json");
+}
+
 // ── Gas Engine Ring Gap Reference ─────────────────────────────────
 
 export interface GasEngineRingRef {
