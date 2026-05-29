@@ -7,12 +7,16 @@ import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 import { Select, SelectContent, SelectItem, SelectTrigger, SelectValue } from "@/components/ui/select";
 
 type RingType = "top" | "second" | "oil";
-type AppType = "na-street" | "na-perf" | "fi-street" | "full-race" | "diesel";
+type AppType = "na-street" | "na-perf" | "fi-street" | "full-race";
 
 /* Per-inch-of-bore multipliers for top + second ring; oil rail uses a flat
    minimum gap (not per-inch). Recalibrated 2026-05-28 against manufacturer
    sources (Mahle Motorsports, Wiseco, JE Pistons, Total Seal, CP-Carrillo,
-   ICON) — see scripts/validate-ring-gap-sources.md for the reference table.
+   ICON).
+
+   This is the gasoline-only calculator. Diesel applications go to
+   /calculators/ring-gap-advanced which has fuel-type toggle, DB-backed
+   per-engine specs, and diesel-specific material warnings.
 
    Notes on second-ring logic:
    - Street: second ≈ top. OK because there's no inter-ring pressure issue.
@@ -25,7 +29,6 @@ const gapMultipliers: Record<AppType, Record<RingType, { perInch: [number, numbe
   "na-perf":     { top: { perInch: [0.0045, 0.0055] }, second: { perInch: [0.0045, 0.0055] }, oil: { flat: [0.015, 0.055] } },
   "fi-street":   { top: { perInch: [0.0060, 0.0070] }, second: { perInch: [0.0060, 0.0070] }, oil: { flat: [0.015, 0.055] } },
   "full-race":   { top: { perInch: [0.0070, 0.0080] }, second: { perInch: [0.0070, 0.0080] }, oil: { flat: [0.015, 0.055] } },
-  "diesel":      { top: { perInch: [0.0060, 0.0095] }, second: { perInch: [0.0055, 0.0085] }, oil: { flat: [0.015, 0.055] } },
 };
 
 function getZone(actual: number, min: number, max: number): { label: string; color: string; bg: string } {
@@ -99,7 +102,6 @@ export default function RingGapCalculator() {
                   <SelectItem value="na-perf">NA Performance</SelectItem>
                   <SelectItem value="fi-street">Forced Induction Street (turbo / supercharger)</SelectItem>
                   <SelectItem value="full-race">Full Race (gasoline, FI or nitrous)</SelectItem>
-                  <SelectItem value="diesel">Diesel (turbo, high-output Cummins / Duramax / Power Stroke)</SelectItem>
                 </SelectContent>
               </Select>
             </div>
@@ -167,11 +169,14 @@ export default function RingGapCalculator() {
           </p>
           <h3 className="text-sm font-semibold text-foreground mt-4">Ring Gap Quick Reference</h3>
           <p>
-            For a common 4.030" overbored SBC: NA street top ring = 0.016"-0.020", NA performance = 0.018"-0.022", forced induction street = 0.024"-0.028", full race gasoline = 0.028"-0.032", high-output diesel = 0.024"-0.038". On modern race builds the second ring is set equal to or slightly larger than the top ring (Mahle Motorsports / CP-Carrillo current guidance) to vent inter-ring pressure that would otherwise lift the top ring off its land. Always file-fit rings to your actual bore measurement — never trust the gap straight out of the box.
+            For a common 4.030" overbored SBC: NA street top ring = 0.016"-0.020", NA performance = 0.018"-0.022", forced induction street = 0.024"-0.028", full race gasoline = 0.028"-0.032". On modern race builds the second ring is set equal to or slightly larger than the top ring (Mahle Motorsports / CP-Carrillo current guidance) to vent inter-ring pressure that would otherwise lift the top ring off its land. Always file-fit rings to your actual bore measurement — never trust the gap straight out of the box.
+          </p>
+          <p className="text-sm">
+            <strong>Diesel builds:</strong> use the <Link href="/calculators/ring-gap-advanced" className="text-[#E85D04] hover:underline">advanced ring gap calculator</Link> instead — it has a fuel-type toggle, per-engine factory specs (Cummins, Duramax, Power Stroke), and material warnings specific to high-EGT diesel applications.
           </p>
           <h3 className="text-sm font-semibold text-foreground mt-4">Sources</h3>
           <p>
-            Multipliers cross-checked against Mahle Motorsports ring gap minimums chart, Wiseco ring installation guide, JE Pistons ring instruction sheets, Total Seal application guide, and CP-Carrillo installation specifications. Diesel range derived from Total Seal Severe Duty Diesel specs (Cummins / Duramax) and Mahle diesel-turbo recs (top 0.0060", second 0.0055").
+            Gasoline multipliers cross-checked against Mahle Motorsports ring gap minimums chart, Wiseco ring installation guide, JE Pistons ring instruction sheets, Total Seal application guide, and CP-Carrillo installation specifications.
           </p>
         </CardContent>
       </Card>
