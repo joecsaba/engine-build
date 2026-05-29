@@ -203,6 +203,37 @@ SELECT json_agg(t ORDER BY t.sort_order) FROM (
 " > "$DATA_DIR/valve_spring_pressure_ranges.json"
 echo "   Valve spring pressure ranges exported"
 
+# Piston-to-valve minimums (per-mfr per valve-material per application)
+docker exec $DB_CONTAINER psql -U $DB_USER -d $DB_NAME -t -A -c "
+SELECT json_agg(t ORDER BY t.sort_order) FROM (
+  SELECT mfr, valve_material, application, intake_min, exhaust_min,
+    reason, rod_material, source_url, notes, sort_order
+  FROM piston_to_valve_minimums ORDER BY sort_order
+) t;
+" > "$DATA_DIR/piston_to_valve_minimums.json"
+echo "   Piston-to-valve minimums exported"
+
+# Carburetor CFM recommendations (per-mfr per carb model)
+docker exec $DB_CONTAINER psql -U $DB_USER -d $DB_NAME -t -A -c "
+SELECT json_agg(t ORDER BY t.sort_order) FROM (
+  SELECT mfr, carb_model, cfm, cid_min, cid_max, hp_min, hp_max,
+    engine_type, intake_style, use_case, source_url, sort_order
+  FROM carb_cfm_recommendations ORDER BY sort_order
+) t;
+" > "$DATA_DIR/carb_cfm_recommendations.json"
+echo "   Carburetor CFM recommendations exported"
+
+# Header sizing recommendations (per-mfr per engine family per tier)
+docker exec $DB_CONTAINER psql -U $DB_USER -d $DB_NAME -t -A -c "
+SELECT json_agg(t ORDER BY t.sort_order) FROM (
+  SELECT mfr, engine_family, app_tier, primary_od_min, primary_od_max,
+    collector_id, primary_length_in, hp_min, hp_max, header_type,
+    source_url, sort_order
+  FROM header_sizing_recommendations ORDER BY sort_order
+) t;
+" > "$DATA_DIR/header_sizing_recommendations.json"
+echo "   Header sizing recommendations exported"
+
 echo "3/5 — Building site..."
 cd "c:/Engine Website"
 pnpm --filter @workspace/engine-build run build 2>&1 | tail -3

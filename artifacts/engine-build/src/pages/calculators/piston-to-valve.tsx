@@ -6,7 +6,7 @@ import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 import { Select, SelectContent, SelectItem, SelectTrigger, SelectValue } from "@/components/ui/select";
 import { Slider } from "@/components/ui/slider";
 import { ChevronDown, Info } from "lucide-react";
-import { useManufacturers, useFamilies, useFamilyEngines } from "@/hooks/useEngineData";
+import { useManufacturers, useFamilies, useFamilyEngines, usePistonToValveMinimums, type PistonToValveMin } from "@/hooks/useEngineData";
 import { CalculatorContent } from "@/components/calculators/CalculatorContent";
 import pistonToValveContent from "@/data/calculatorContent/piston-to-valve.mjs";
 import {
@@ -20,19 +20,79 @@ type ValveMaterial = "steel" | "stainless" | "titanium" | "inconel";
 
 interface Thresholds { intakeMin: number; exhaustMin: number }
 
-const MATERIAL_THRESHOLDS: Record<ValveMaterial, Thresholds> = {
+/* Default thresholds (fallback for first render). Sourced from JE Pistons,
+   Wiseco, Diamond Racing, Reher-Morrison, Ferrea, Supertech published values
+   via the piston_to_valve_minimums DB table.
+
+   Important corrections from prior values (recalibrated 2026-05-28):
+   - Titanium thresholds DROPPED from 0.120"/0.150" to 0.080"/0.100". No
+     mfr publishes a higher Ti minimum; Reher-Morrison and JE both allow
+     Ti to run TIGHTER (0.055-0.060" intake) because Ti's lower mass means
+     less valvetrain bounce.
+   - Inconel exhaust DROPPED from 0.130" to 0.100". Inconel 751 has LOWER
+     thermal expansion than stainless per Supertech.
+   - The real "more clearance" trigger is ALUMINUM RODS — +0.030" per
+     Diamond Racing. Calc now exposes that as a separate flag. */
+const DEFAULT_MATERIAL_THRESHOLDS: Record<ValveMaterial, Thresholds> = {
   steel:     { intakeMin: 0.080, exhaustMin: 0.100 },
   stainless: { intakeMin: 0.080, exhaustMin: 0.100 },
-  titanium:  { intakeMin: 0.120, exhaustMin: 0.150 },
-  inconel:   { intakeMin: 0.080, exhaustMin: 0.130 },
+  titanium:  { intakeMin: 0.080, exhaustMin: 0.100 },
+  inconel:   { intakeMin: 0.080, exhaustMin: 0.100 },
 };
+
+/** +0.030" intake & exhaust for aluminum rods per Diamond Racing's
+ *  published guidance. The single most-impactful real-world variable. */
+const ALUMINUM_ROD_ADDER = 0.030;
 
 const MATERIAL_LABELS: Record<ValveMaterial, string> = {
   steel:     "Steel (stock OEM)",
   stainless: "Stainless (performance)",
-  titanium:  "Titanium (race)",
-  inconel:   "Inconel exhaust / Stainless intake",
+  titanium:  "Titanium (race) — same minimum as steel, NOT higher",
+  inconel:   "Inconel exhaust / Stainless intake — same minimum as steel",
 };
+
+/** Collapse JSON rows into a (material → min envelope) table. The minimum
+ *  is the LOWEST published value per material (i.e. tightest tolerance any
+ *  reputable mfr will sign off on), so a measurement at or above this is
+ *  guaranteed to pass at least one mfr's threshold. Rows tagged with
+ *  'aluminum' rod or radial-only floors are excluded — those are handled
+ *  separately. */
+function deriveMaterialThresholds(rows: PistonToValveMin[]): Record<ValveMaterial, Thresholds> {
+  if (!rows || rows.length === 0) return DEFAULT_MATERIAL_THRESHOLDS;
+  const out: Record<ValveMaterial, Thresholds> = { ...DEFAULT_MATERIAL_THRESHOLDS };
+  for (const mat of ["steel", "stainless", "titanium", "inconel"] as ValveMaterial[]) {
+    const matching = rows.filter(r => {
+      // Aluminum rods are flagged separately
+      if (r.rod_material === "aluminum") return false;
+      // Exclude radial-only floors
+      if (/radial/i.test(r.application || "")) return false;
+      // Match by material — also accept 'steel/stainless' as covering both,
+      // and 'any' as covering everything when nothing material-specific exists.
+      if (mat === "steel" || mat === "stainless") {
+        return r.valve_material === mat
+            || r.valve_material === "steel/stainless"
+            || r.valve_material === "steel";
+      }
+      return r.valve_material === mat;
+    });
+    if (matching.length === 0) continue;
+    out[mat] = {
+      // Use median of published minimums rather than the absolute floor.
+      // The lowest published value (Reher-Morrison Pro Stock 0.055/0.100)
+      // requires every-cylinder verification with cam-supplier sign-off;
+      // the median is what a typical builder should target.
+      intakeMin:  median(matching.map(r => r.intake_min)),
+      exhaustMin: median(matching.map(r => r.exhaust_min)),
+    };
+  }
+  return out;
+}
+
+function median(nums: number[]): number {
+  const sorted = [...nums].sort((a, b) => a - b);
+  const mid = Math.floor(sorted.length / 2);
+  return sorted.length % 2 ? sorted[mid] : (sorted[mid - 1] + sorted[mid]) / 2;
+}
 
 // ── Engine presets ─────────────────────────────────────────────────────────────
 
@@ -285,8 +345,17 @@ export default function PistonToValveCalculator() {
   const [intReliefDepth, setIntReliefDepth] = useState("0.120");
   const [exhReliefDepth, setExhReliefDepth] = useState("0.140");
 
-  // Section D — Valve material
+  // Section D — Valve material + rod material (rod is the strongest variable)
   const [valveMaterial, setValveMaterial] = useState<ValveMaterial>("stainless");
+  const [rodMaterial, setRodMaterial] = useState<"steel" | "aluminum">("steel");
+
+  // Live thresholds from DB. Falls back to DEFAULT_MATERIAL_THRESHOLDS
+  // (which now match Wiseco/JE published values) before JSON loads.
+  const { data: ptvRows } = usePistonToValveMinimums();
+  const materialThresholds = useMemo(
+    () => deriveMaterialThresholds(ptvRows),
+    [ptvRows]
+  );
 
   // Parse all inputs
   const n = (v: string) => parseFloat(v) || 0;
@@ -310,7 +379,13 @@ export default function PistonToValveCalculator() {
   // Computed intake centerline
   const iclComputed = lsaV - camAdvance;
 
-  const thresholds = MATERIAL_THRESHOLDS[valveMaterial];
+  // Apply aluminum-rod adder if selected (Diamond Racing +0.030" rule)
+  const baseThr = materialThresholds[valveMaterial];
+  const rodAdder = rodMaterial === "aluminum" ? ALUMINUM_ROD_ADDER : 0;
+  const thresholds: Thresholds = {
+    intakeMin:  baseThr.intakeMin  + rodAdder,
+    exhaustMin: baseThr.exhaustMin + rodAdder,
+  };
 
   // Full kinematic simulation
   const result = useMemo(() => {
@@ -611,10 +686,10 @@ export default function PistonToValveCalculator() {
           </div>
         </Section>
 
-        {/* ── SECTION D: Valve Material (compact) ──────────── */}
-        <Section title="4 — Valve Material & Thresholds">
+        {/* ── SECTION D: Valve Material + Rod Material ──────── */}
+        <Section title="4 — Material & Thresholds">
           <div className="space-y-4">
-            <div className="max-w-sm">
+            <div className="grid grid-cols-1 sm:grid-cols-2 gap-3 max-w-2xl">
               <Field label="Valve Material">
                 <Select value={valveMaterial} onValueChange={v => setValveMaterial(v as ValveMaterial)}>
                   <SelectTrigger><SelectValue /></SelectTrigger>
@@ -625,7 +700,26 @@ export default function PistonToValveCalculator() {
                   </SelectContent>
                 </Select>
               </Field>
+              <Field label="Connecting Rod Material">
+                <Select value={rodMaterial} onValueChange={v => setRodMaterial(v as "steel" | "aluminum")}>
+                  <SelectTrigger><SelectValue /></SelectTrigger>
+                  <SelectContent>
+                    <SelectItem value="steel">Steel (stock / forged)</SelectItem>
+                    <SelectItem value="aluminum">Aluminum (race) — +0.030″ added to both</SelectItem>
+                  </SelectContent>
+                </Select>
+              </Field>
             </div>
+            <p className="text-xs text-muted-foreground max-w-2xl">
+              <strong>Why valve material doesn't change the minimum:</strong> JE, Wiseco,
+              Reher-Morrison, Ferrea and Supertech all publish the same 0.080″/0.100″ floor
+              regardless of material — Titanium can actually run TIGHTER (Reher-Morrison Pro
+              Stock allows 0.060″/0.120″) because lower mass means less valvetrain bounce.
+              Inconel 751 has lower thermal expansion than stainless and doesn't need extra
+              clearance. The real "more clearance" variable is <strong>aluminum rods</strong>,
+              which stretch more at RPM and require an additional 0.030″ per Diamond Racing's
+              published guidance.
+            </p>
             <div className="grid grid-cols-2 gap-3 text-sm">
               <div className="p-3 rounded-lg border bg-gray-50 text-center">
                 <div className="text-xs text-gray-500 mb-1">Intake Minimum</div>

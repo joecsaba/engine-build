@@ -1,4 +1,4 @@
-import { useState, useEffect } from "react";
+import { useState, useEffect, useMemo } from "react";
 import { SEOHead } from "@/components/SEOHead";
 import { Input } from "@/components/ui/input";
 import { Label } from "@/components/ui/label";
@@ -7,6 +7,7 @@ import { Select, SelectContent, SelectItem, SelectTrigger, SelectValue } from "@
 import { Slider } from "@/components/ui/slider";
 import { useBuildField } from "@/hooks/useBuildField";
 import { useBuildContext } from "@/context/BuildContext";
+import { useCarbCfmRecommendations, type CarbCfmRecommendation } from "@/hooks/useEngineData";
 import { ChevronDown, AlertTriangle, Info, Lightbulb, Gauge, Calculator } from "lucide-react";
 import { CalculatorContent } from "@/components/calculators/CalculatorContent";
 import { HelpSidebar } from "@/components/calculators/HelpCard";
@@ -208,6 +209,127 @@ function getUseFactor(use: IntendedUse): { min: number; max: number; label: stri
 
 function pct(v: number): string { return (v * 100).toFixed(1) + "%"; }
 
+// ── Manufacturer Comparison Card ─────────────────────────────────────
+// Shows mfr-published carb pairings whose CID range covers the user's
+// engine, with the calc's recommended CFM as the comparison point.
+// If the calc's CFM is materially lower than what mfrs ship for the same
+// CID, surfaces a warning — the classic formula systematically
+// under-recommends by ~45% on street builds.
+
+function MfrComparisonCard({
+  cid,
+  calcCfm,
+  recs,
+}: {
+  cid: number;
+  calcCfm: number;
+  recs: CarbCfmRecommendation[];
+}) {
+  const matches = useMemo(() => {
+    if (!recs || recs.length === 0 || cid <= 0) return [];
+    return recs
+      .filter(r => cid >= r.cid_min && cid <= r.cid_max)
+      .sort((a, b) => a.cfm - b.cfm);
+  }, [recs, cid]);
+
+  if (matches.length === 0) return null;
+
+  const mfrCfms = matches.map(r => r.cfm);
+  const mfrMin = Math.min(...mfrCfms);
+  const mfrMax = Math.max(...mfrCfms);
+  const mfrMedian = mfrCfms.sort((a, b) => a - b)[Math.floor(mfrCfms.length / 2)];
+  const underByPct = mfrMedian > 0 ? Math.round(((mfrMedian - calcCfm) / mfrMedian) * 100) : 0;
+  const isUnder = underByPct >= 15;
+
+  return (
+    <Card className="mt-6">
+      <CardHeader>
+        <CardTitle className="flex items-center gap-2 text-base">
+          <Calculator className="w-5 h-5 text-[#E85D04]" />
+          Compare to Manufacturer Recommendations ({cid} CID)
+        </CardTitle>
+        <CardDescription>
+          Holley, Edelbrock, Quick Fuel and Demon carbs that the mfrs themselves recommend
+          for your displacement range.
+        </CardDescription>
+      </CardHeader>
+      <CardContent className="space-y-4">
+        <div className="grid grid-cols-3 gap-3 text-center">
+          <div className="p-3 rounded-lg border bg-gray-50">
+            <div className="text-xs text-gray-500">Calc recommended</div>
+            <div className="text-2xl font-bold text-[#E85D04]">{calcCfm}</div>
+            <div className="text-xs text-gray-400">CFM</div>
+          </div>
+          <div className="p-3 rounded-lg border bg-gray-50">
+            <div className="text-xs text-gray-500">Mfr range for {cid} CID</div>
+            <div className="text-2xl font-bold">{mfrMin}–{mfrMax}</div>
+            <div className="text-xs text-gray-400">CFM (n={mfrCfms.length})</div>
+          </div>
+          <div className="p-3 rounded-lg border bg-gray-50">
+            <div className="text-xs text-gray-500">Mfr median</div>
+            <div className="text-2xl font-bold">{mfrMedian}</div>
+            <div className="text-xs text-gray-400">CFM</div>
+          </div>
+        </div>
+
+        {isUnder && (
+          <div className="p-3 rounded-lg border bg-amber-50 border-amber-200 text-sm text-amber-800 flex items-start gap-2">
+            <Info className="w-4 h-4 mt-0.5 shrink-0" />
+            <div>
+              Your calculated <strong>{calcCfm} CFM</strong> is about <strong>{underByPct}% below</strong> the median manufacturer recommendation
+              of <strong>{mfrMedian} CFM</strong> for this displacement. The classic <code>CID×RPM×VE/3456</code> formula systematically under-sizes
+              street carbs because real engines breathe better than the formula assumes — vacuum-secondary carbs in particular self-regulate, so
+              oversizing penalty is minimal. Consider the next size up if your build is street-driven, especially with vacuum secondaries.
+            </div>
+          </div>
+        )}
+
+        <div className="overflow-x-auto -mx-2">
+          <table className="w-full text-xs">
+            <thead>
+              <tr className="border-b bg-gray-50">
+                <th className="px-2 py-2 text-left font-semibold text-gray-700">Mfr / Model</th>
+                <th className="px-2 py-2 text-right font-semibold text-gray-700">CFM</th>
+                <th className="px-2 py-2 text-right font-semibold text-gray-700">HP range</th>
+                <th className="px-2 py-2 text-left font-semibold text-gray-700">Intake / Type</th>
+                <th className="px-2 py-2 text-left font-semibold text-gray-700">Use case</th>
+              </tr>
+            </thead>
+            <tbody>
+              {matches.map((r, i) => {
+                const isCalcSize = Math.abs(r.cfm - calcCfm) <= 50;
+                return (
+                  <tr key={`${r.mfr}-${r.carb_model}-${i}`} className={`border-b hover:bg-gray-50 ${isCalcSize ? "bg-[#E85D04]/5" : ""}`}>
+                    <td className="px-2 py-1.5">
+                      {r.source_url ? (
+                        <a href={r.source_url} target="_blank" rel="noopener noreferrer" className="font-semibold text-gray-800 hover:text-[#E85D04] hover:underline">
+                          {r.mfr} {r.carb_model}
+                        </a>
+                      ) : (
+                        <span className="font-semibold text-gray-800">{r.mfr} {r.carb_model}</span>
+                      )}
+                    </td>
+                    <td className={`px-2 py-1.5 text-right font-mono font-bold ${isCalcSize ? "text-[#E85D04]" : ""}`}>{r.cfm}</td>
+                    <td className="px-2 py-1.5 text-right font-mono text-gray-700">
+                      {r.hp_min ? `${r.hp_min}${r.hp_max ? `-${r.hp_max}` : "+"}` : "—"}
+                    </td>
+                    <td className="px-2 py-1.5 text-[11px] text-gray-600">{r.intake_style || "either"} / {r.engine_type}</td>
+                    <td className="px-2 py-1.5 text-[11px] text-gray-600 max-w-[200px]">{r.use_case}</td>
+                  </tr>
+                );
+              })}
+            </tbody>
+          </table>
+        </div>
+        <p className="text-[10px] text-muted-foreground leading-snug">
+          <strong className="text-[#E85D04]">Orange-highlighted rows</strong> are within ±50 CFM of your calc result.
+          Click any model name to view the manufacturer's source page.
+        </p>
+      </CardContent>
+    </Card>
+  );
+}
+
 // ── Component ────────────────────────────────────────────────────────
 
 export default function CarbCfmSizingCalculator() {
@@ -222,6 +344,9 @@ export default function CarbCfmSizingCalculator() {
   const [cylinders, setCylinders] = useState("8");
   const [intakeStyle, setIntakeStyle] = useState<IntakeStyle>("single4");
   const [intendedUse, setIntendedUse] = useState<IntendedUse>("street");
+
+  // Manufacturer carb recommendations from DB
+  const { data: carbRecs } = useCarbCfmRecommendations();
 
   // ── VE mode toggle ─────────────────────────────────────────────────
   const [veMode, setVeMode] = useState<VeMode>("vizard");
@@ -1218,6 +1343,9 @@ export default function CarbCfmSizingCalculator() {
           )}
         </div>
       </div>
+
+      {/* ── Manufacturer Recommendations Comparison ──────────────────── */}
+      <MfrComparisonCard cid={cid} calcCfm={recommendedSize} recs={carbRecs} />
 
       {/* ── Educational Sections (now via CalculatorContent below) ──── */}
       {false && (<>

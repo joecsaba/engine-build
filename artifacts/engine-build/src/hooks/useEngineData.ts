@@ -620,6 +620,67 @@ export function useValveSpringPressureRanges() {
   return useJsonData<ValveSpringPressureRange>("valve_spring_pressure_ranges.json");
 }
 
+// ── Piston-to-Valve Minimums ──────────────────────────────────────
+
+export interface PistonToValveMin {
+  mfr: string;
+  valve_material: string;          // 'steel' | 'stainless' | 'titanium' | 'inconel' | 'steel/stainless' | 'any'
+  application: string;
+  intake_min: number;
+  exhaust_min: number;
+  reason: string | null;
+  rod_material: string | null;     // 'steel' | 'aluminum' | null = any
+  source_url: string | null;
+  notes: string | null;
+  sort_order: number;
+}
+
+export function usePistonToValveMinimums() {
+  return useJsonData<PistonToValveMin>("piston_to_valve_minimums.json");
+}
+
+// ── Carburetor CFM Recommendations ────────────────────────────────
+
+export interface CarbCfmRecommendation {
+  mfr: string;
+  carb_model: string;
+  cfm: number;
+  cid_min: number;
+  cid_max: number;
+  hp_min: number | null;
+  hp_max: number | null;
+  engine_type: string;             // 'NA-street' | 'NA-performance' | 'race' | 'blower-suitable'
+  intake_style: string | null;     // 'dual-plane' | 'single-plane' | null = either
+  use_case: string;
+  source_url: string | null;
+  sort_order: number;
+}
+
+export function useCarbCfmRecommendations() {
+  return useJsonData<CarbCfmRecommendation>("carb_cfm_recommendations.json");
+}
+
+// ── Header Sizing Recommendations ─────────────────────────────────
+
+export interface HeaderSizingRec {
+  mfr: string;
+  engine_family: string;
+  app_tier: string;                // 'street' | 'street-strip' | 'race'
+  primary_od_min: number;
+  primary_od_max: number;
+  collector_id: number | null;
+  primary_length_in: number | null;
+  hp_min: number | null;
+  hp_max: number | null;
+  header_type: string;
+  source_url: string | null;
+  sort_order: number;
+}
+
+export function useHeaderSizingRecs() {
+  return useJsonData<HeaderSizingRec>("header_sizing_recommendations.json");
+}
+
 // ── Gas Engine Ring Gap Reference ─────────────────────────────────
 
 export interface GasEngineRingRef {

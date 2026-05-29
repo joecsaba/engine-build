@@ -1,4 +1,4 @@
-import { useState } from "react";
+import { useState, useMemo } from "react";
 import { SEOHead } from "@/components/SEOHead";
 import { Input } from "@/components/ui/input";
 import { Label } from "@/components/ui/label";
@@ -6,6 +6,7 @@ import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 import { Select, SelectContent, SelectItem, SelectTrigger, SelectValue } from "@/components/ui/select";
 import { CalculatorContent } from "@/components/calculators/CalculatorContent";
 import headerSizingContent from "@/data/calculatorContent/header-sizing.mjs";
+import { useHeaderSizingRecs } from "@/hooks/useEngineData";
 
 /* ── Constants ────────────────────────────────────────────────────── */
 
@@ -38,13 +39,14 @@ const ENGINE_PRESETS: EnginePreset[] = [
   { label: "Inline 6 4.0L",    displacement: "242", cylinders: "6", torqueRpm: "4000", hpRpm: "5000" },
 ];
 
-const REFERENCE_TABLE = [
-  { engine: "SBC 350 street",  hp: "250-350",  primary: '1-5/8"',         length: '30-34"', collector: '3.0"' },
-  { engine: "SBC 350 perf",    hp: "350-450",  primary: '1-3/4"',         length: '28-32"', collector: '3.0-3.5"' },
-  { engine: "BBC 454",         hp: "350-500",  primary: '1-7/8"-2"',      length: '32-38"', collector: '3.5"' },
-  { engine: "LS1 / LS3",       hp: "350-500",  primary: '1-3/4"-1-7/8"',  length: '30-36"', collector: '3.0-3.5"' },
-  { engine: "SBF 302",         hp: "225-300",  primary: '1-5/8"',         length: '28-32"', collector: '2.5-3.0"' },
-];
+/* The legacy hardcoded REFERENCE_TABLE was replaced 2026-05-28 by the
+   header_sizing_recommendations DB table. Prior values had two known
+   defects: (1) BBC 454 listed 1-7/8"-2" primary at 350-500 HP, but
+   Hooker / Hedman / Doug's actually ship 1-3/4" / 3.0" for street-strip
+   BBC; 2.0" is a race-only spec. (2) LS1/LS3 listed 3.0-3.5" collector
+   range, but every major mfr (Kooks, ARH, Stainless Works, Hooker) uses
+   3.0" through 700+ HP. The DB-backed table now shows actual mfr SKUs
+   with source URLs. */
 
 /* ── Helpers ──────────────────────────────────────────────────────── */
 
@@ -83,6 +85,97 @@ function velocityLabel(v: number): string {
   if (v >= 240 && v <= 350) return "Optimal range";
   if (v < 240) return "Slightly slow — acceptable for mild street";
   return "Slightly fast — acceptable for high-RPM use";
+}
+
+/* ── Manufacturer Reference Card (DB-backed) ──────────────────────── */
+function MfrReferenceCard() {
+  const { data: recs } = useHeaderSizingRecs();
+  const [filter, setFilter] = useState<string>("all");
+
+  const families = useMemo(() => {
+    const set = new Set(recs.map(r => r.engine_family));
+    return Array.from(set).sort();
+  }, [recs]);
+
+  const filtered = useMemo(() => {
+    return filter === "all" ? recs : recs.filter(r => r.engine_family === filter);
+  }, [recs, filter]);
+
+  function formatPrimary(min: number, max: number): string {
+    const fmt = (n: number) => fractionLabel(n).replace(/"$/, "");
+    return min === max ? `${fmt(min)}"` : `${fmt(min)}-${fmt(max)}"`;
+  }
+
+  return (
+    <Card className="mb-8">
+      <CardHeader>
+        <CardTitle>Reference: Manufacturer-Published Header Sizes</CardTitle>
+        <p className="text-xs text-muted-foreground mt-1">
+          Actual catalog sizes from Hooker, Hedman, Kooks, ARH, Stainless Works, Doug&apos;s, BBK,
+          JBA, Patriot and Pacesetter. Sorted by engine family; click any row&apos;s mfr/model link
+          to view the source page.
+        </p>
+      </CardHeader>
+      <CardContent>
+        {families.length > 0 && (
+          <div className="mb-3 max-w-sm">
+            <Label className="text-xs">Filter by engine family</Label>
+            <Select value={filter} onValueChange={setFilter}>
+              <SelectTrigger><SelectValue /></SelectTrigger>
+              <SelectContent className="max-h-72 overflow-y-auto">
+                <SelectItem value="all">All families ({recs.length})</SelectItem>
+                {families.map(f => (
+                  <SelectItem key={f} value={f}>{f}</SelectItem>
+                ))}
+              </SelectContent>
+            </Select>
+          </div>
+        )}
+        <div className="overflow-x-auto">
+          <table className="w-full text-xs">
+            <thead>
+              <tr className="border-b bg-muted">
+                <th className="text-left p-2">Mfr / Engine</th>
+                <th className="text-left p-2">Tier</th>
+                <th className="text-right p-2">Primary OD</th>
+                <th className="text-right p-2">Collector</th>
+                <th className="text-right p-2">HP Range</th>
+                <th className="text-left p-2">Type</th>
+              </tr>
+            </thead>
+            <tbody>
+              {filtered.map((r, i) => (
+                <tr key={i} className="border-b hover:bg-muted/30">
+                  <td className="p-2">
+                    {r.source_url ? (
+                      <a href={r.source_url} target="_blank" rel="noopener noreferrer" className="font-medium hover:text-[#E85D04] hover:underline">
+                        {r.mfr}
+                      </a>
+                    ) : (
+                      <span className="font-medium">{r.mfr}</span>
+                    )}
+                    <div className="text-[11px] text-gray-500">{r.engine_family}</div>
+                  </td>
+                  <td className="p-2 text-[11px] text-gray-600">{r.app_tier}</td>
+                  <td className="p-2 text-right font-mono">{formatPrimary(r.primary_od_min, r.primary_od_max)}</td>
+                  <td className="p-2 text-right font-mono">{r.collector_id ? `${r.collector_id}"` : "—"}</td>
+                  <td className="p-2 text-right font-mono">
+                    {r.hp_min ? `${r.hp_min}${r.hp_max ? `-${r.hp_max}` : "+"}` : "—"}
+                  </td>
+                  <td className="p-2 text-[11px] text-gray-600 max-w-[200px]">{r.header_type}</td>
+                </tr>
+              ))}
+            </tbody>
+          </table>
+        </div>
+        <p className="text-[10px] text-muted-foreground mt-3 leading-snug">
+          <strong>Note on length:</strong> no major header mfr publishes primary tube length as a customer-facing
+          spec — length is chassis-driven. Treat the calculator&apos;s length output above as a theoretical
+          scavenging-tuned value, not a &quot;what you can buy&quot; recommendation.
+        </p>
+      </CardContent>
+    </Card>
+  );
 }
 
 /* ── Component ────────────────────────────────────────────────────── */
@@ -438,36 +531,8 @@ export default function HeaderSizingCalculator() {
         </div>
       </div>
 
-      {/* ── Reference Table ────────────────────────────────────────── */}
-      <Card className="mb-8">
-        <CardHeader><CardTitle>Reference: Common Header Sizes by Engine</CardTitle></CardHeader>
-        <CardContent>
-          <div className="overflow-x-auto">
-            <table className="w-full text-sm">
-              <thead>
-                <tr className="border-b bg-muted">
-                  <th className="text-left p-3">Engine</th>
-                  <th className="text-right p-3">HP Range</th>
-                  <th className="text-right p-3">Primary OD</th>
-                  <th className="text-right p-3">Length</th>
-                  <th className="text-right p-3">Collector</th>
-                </tr>
-              </thead>
-              <tbody>
-                {REFERENCE_TABLE.map((row, i) => (
-                  <tr key={i} className={i % 2 === 0 ? "border-b" : "bg-muted/30 border-b"}>
-                    <td className="p-3">{row.engine}</td>
-                    <td className="text-right p-3">{row.hp}</td>
-                    <td className="text-right p-3">{row.primary}</td>
-                    <td className="text-right p-3">{row.length}</td>
-                    <td className="text-right p-3">{row.collector}</td>
-                  </tr>
-                ))}
-              </tbody>
-            </table>
-          </div>
-        </CardContent>
-      </Card>
+      {/* ── Reference Table (DB-backed) ───────────────────────────── */}
+      <MfrReferenceCard />
 
       <CalculatorContent data={headerSizingContent} title="Header Sizing" />
     </div>
