@@ -85,9 +85,10 @@ const REF_ROWS = [
   { cond: "Cruise, light load",           lambda: "0.95\u20131.05", gs: "14.0\u201315.4",  notes: "Lean for mpg" },
   { cond: "WOT NA, 91 octane",            lambda: "0.85\u20130.88", gs: "12.5\u201313.0",  notes: "" },
   { cond: "WOT NA, race gas",             lambda: "0.82\u20130.85", gs: "12.0\u201312.5",  notes: "Cooler, safer" },
-  { cond: "WOT boost, pump gas",          lambda: "0.75\u20130.80", gs: "11.0\u201311.8",  notes: "Critical" },
-  { cond: "WOT boost, E85",               lambda: "0.75\u20130.80", gs: "11.0\u201311.8",  notes: "Same \u03bb, half the AFR" },
-  { cond: "WOT methanol",                 lambda: "0.85\u20130.90", gs: "12.5\u201313.2",  notes: "Tolerates leaner \u03bb" },
+  { cond: "WOT boost, pump gas",          lambda: "0.78\u20130.80", gs: "11.5\u201311.8",  notes: "Critical; \u03bb 0.75 = too rich, costs power (HPA/HP Tuners consensus)" },
+  { cond: "WOT boost, E85",               lambda: "0.78\u20130.80", gs: "11.5\u201311.8",  notes: "Same \u03bb, half the AFR. E85 tolerates leaner targets (up to \u03bb 0.82) due to ethanol's knock resistance" },
+  { cond: "WOT methanol (peak power)",    lambda: "0.85\u20130.90", gs: "12.5\u201313.2",  notes: "Fastest burn = peak power (HPA / MoTeC school)" },
+  { cond: "WOT methanol (max cooling, drag)", lambda: "0.78\u20130.82", gs: "11.5\u201312.0",  notes: "Drag-race practice \u2014 rich for cylinder cooling at sustained max load" },
 ];
 
 const SWEEP = [

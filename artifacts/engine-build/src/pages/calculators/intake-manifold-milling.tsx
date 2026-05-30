@@ -29,7 +29,7 @@ const ENGINE_PRESETS: EnginePreset[] = [
   { label: "SBC 265-400 (64cc chamber)",  group: "Chevrolet", headAngle: 10, intakeFactor: 0.0123, blockFactor: 0.0173, ccPer001: 0.58,  notes: "23° valve angle heads" },
   { label: "SBC 265-400 (76cc chamber)",  group: "Chevrolet", headAngle: 10, intakeFactor: 0.0123, blockFactor: 0.0173, ccPer001: 0.68 },
   { label: "BBC 396-454 (107cc closed)",  group: "Chevrolet", headAngle: 10, intakeFactor: 0.007,  blockFactor: 0.0193, ccPer001: 0.65,  notes: "Closed chamber rectangle port" },
-  { label: "BBC 396-454 (118cc open)",    group: "Chevrolet", headAngle: 10, intakeFactor: 0.007,  blockFactor: 0.0181, ccPer001: 0.60,  notes: "Open chamber oval port" },
+  { label: "BBC 396-454 (118cc open)",    group: "Chevrolet", headAngle: 10, intakeFactor: 0.007,  blockFactor: 0.0193, ccPer001: 0.60,  notes: "Open chamber oval port" },
 
   // Ford
   { label: "Ford SB 221-302 (1965-72)",   group: "Ford", headAngle: 0,  intakeFactor: 0.010,  blockFactor: 0.0143, ccPer001: 0.58 },
@@ -707,6 +707,25 @@ export default function IntakeManifoldMillingCalculator() {
         </aside>
 
       </div>{/* end flex row */}
+
+      {/* Unit convention reminder (matches the published industry reference table) */}
+      <Card className="mt-4 border-amber-200 bg-amber-50/50">
+        <CardHeader className="pb-2">
+          <CardTitle className="text-sm">How to read the per-platform factors</CardTitle>
+        </CardHeader>
+        <CardContent className="text-xs text-muted-foreground space-y-2">
+          <p>
+            Intake-factor and block-factor columns are <strong className="text-foreground">inches of surface
+            removal per 0.010″ of head deck milling.</strong> Example: SBC at 0.0123 means if you take 0.010″
+            off the deck, mill 0.0123″ off the manifold side of the head (or the intake mating face) to keep
+            the ports aligned.
+          </p>
+          <p>
+            Values per the long-standing industry chart reprinted in Engine Builder Magazine, Speed Pro /
+            Federal-Mogul technical bulletins, and machine-shop reference cards. Cross-checked 2026-05-29.
+          </p>
+        </CardContent>
+      </Card>
 
       <CalculatorContent data={intakeManifoldMillingContent} title="Intake Manifold Milling" />
     </div>

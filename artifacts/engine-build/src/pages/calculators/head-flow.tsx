@@ -622,6 +622,15 @@ export default function HeadFlowCalculator() {
                       {results.correctedExhaustCfm > 0 ? `, ${fmt(results.correctedExhaustCfm, 1)} CFM exhaust` : ""}
                     </p>
                   )}
+                  <div className="mt-3 p-2 rounded bg-white/5 border border-white/10 text-xs text-gray-300 leading-relaxed space-y-1">
+                    <p>
+                      <strong className="text-white">Tier-dependent HP multiplier:</strong> calc uses SuperFlow&apos;s
+                      universally-cited <strong>0.257 hp/cfm</strong> (street/performance NA). Documented race-build
+                      multipliers run higher — Patrick Hale&apos;s data shows <strong>SuperStock ~0.285</strong> and{" "}
+                      <strong>Pro Stock 0.300-0.310</strong>. For a race-build estimate, multiply the HP range
+                      shown above by ~1.10-1.20.
+                    </p>
+                  </div>
                 </CardContent>
               </Card>
 
@@ -642,7 +651,11 @@ export default function HeadFlowCalculator() {
                           results.exhaustIntakeRatio >= 70 ? "text-green-600" : results.exhaustIntakeRatio >= 65 ? "text-yellow-600" : "text-red-600"
                         }`}>{fmt(results.exhaustIntakeRatio, 1)}%</p>
                         <p className="text-xs text-muted-foreground">
-                          {results.exhaustIntakeRatio >= 75 ? "Excellent for NA" : results.exhaustIntakeRatio >= 70 ? "Good for NA" : results.exhaustIntakeRatio >= 65 ? "Acceptable" : "Low — consider exhaust work"}
+                          {results.exhaustIntakeRatio >= 80 ? "Race tier (80-85% target)"
+                            : results.exhaustIntakeRatio >= 75 ? "Performance tier (75-80% target — Vizard's single-pattern-cam pivot)"
+                            : results.exhaustIntakeRatio >= 70 ? "Street tier (70-75% target)"
+                            : results.exhaustIntakeRatio >= 65 ? "Below street range — exhaust work suggested"
+                            : "Low — consider exhaust port work or larger exhaust valves"}
                         </p>
                       </div>
                     )}
