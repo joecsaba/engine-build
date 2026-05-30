@@ -27,7 +27,7 @@ import {
   type ComponentOption,
   type ReferenceBuild,
 } from "@/data/hpEstimatorData";
-import { useManufacturers, useFamilies, useFamilyEngines } from "@/hooks/useEngineData";
+import { useManufacturers, useFamilies, useFamilyEngines, useHpReferenceBuilds, type HpReferenceBuild } from "@/hooks/useEngineData";
 
 // ── Estimation engine ──────────────────────────────────────────────────────────
 
@@ -314,6 +314,122 @@ function getSmogPenalty(platformId: string): SmogPenalty {
     label: "Emissions equipment",
     items: ["Catalytic converters", "EGR system", "Secondary air injection", "Restrictive factory exhaust"],
   };
+}
+
+// ── Similar Verified Dyno Builds Card ────────────────────────────────────
+// Surfaces real-world dyno results that match the user's platform + aspiration
+// + estimated HP ballpark. Pulled live from /data/hp_reference_builds.json
+// (45 verified builds, mostly published-dyno-sheet crate engines + Engine
+// Builder Magazine feature articles).
+function SimilarDynoBuildsCard({
+  estimateHp,
+  platformCid,
+  platformFamily,
+  aspiration,
+}: {
+  estimateHp: number;
+  platformCid: number;
+  platformFamily: string;
+  aspiration: string;
+}) {
+  const { data: builds } = useHpReferenceBuilds();
+
+  const matches = useMemo(() => {
+    if (!builds || builds.length === 0 || estimateHp <= 0) return [];
+    // Score each build by similarity. Lower score = closer match.
+    const familyTokens = platformFamily.toLowerCase().split(/[\s/]+/).filter(t => t.length >= 2);
+    const aspNormalized = aspiration === "na" ? "NA"
+      : aspiration.includes("turbo") ? "turbo"
+      : aspiration.includes("super") ? "supercharged"
+      : aspiration.includes("nitrous") ? "nitrous"
+      : aspiration.toUpperCase();
+
+    const scored = builds.map(b => {
+      let score = 0;
+      // CID match: 1 pt per 10 CI of difference
+      score += Math.abs(b.cid - platformCid) / 10;
+      // HP match: 1 pt per 50 HP of difference
+      score += Math.abs(b.dyno_hp - estimateHp) / 50;
+      // Aspiration mismatch: heavy penalty unless matched
+      const buildAsp = b.aspiration.toLowerCase();
+      const matchesAsp = (aspNormalized === "NA" && buildAsp === "na")
+                     || (aspNormalized === "turbo" && buildAsp.includes("turbo"))
+                     || (aspNormalized === "supercharged" && buildAsp.includes("super"))
+                     || (aspNormalized === "nitrous" && buildAsp.includes("nitrous"));
+      if (!matchesAsp) score += 100;
+      // Engine-family token match: each matched token is -2 pts (bonus)
+      const buildFamily = b.engine_family.toLowerCase();
+      for (const tok of familyTokens) {
+        if (buildFamily.includes(tok)) score -= 2;
+      }
+      return { b, score };
+    });
+    scored.sort((a, b) => a.score - b.score);
+    return scored.slice(0, 8).map(s => s.b);
+  }, [builds, estimateHp, platformCid, platformFamily, aspiration]);
+
+  if (matches.length === 0) return null;
+
+  return (
+    <Card className="mt-6">
+      <CardHeader>
+        <CardTitle className="flex items-center gap-2 text-base">
+          <Info className="w-5 h-5 text-[#E85D04]" />
+          Similar Verified Dyno Builds (~{estimateHp} HP target)
+        </CardTitle>
+        <p className="text-xs text-muted-foreground mt-1">
+          Real engines with published dyno results that match your platform and aspiration.
+          Use these as a sanity check — if no published build is within ±20% of your estimate,
+          your inputs may be outside the practical range.
+        </p>
+      </CardHeader>
+      <CardContent>
+        <div className="overflow-x-auto -mx-2">
+          <table className="w-full text-xs">
+            <thead>
+              <tr className="border-b bg-gray-50">
+                <th className="px-2 py-2 text-left font-semibold text-gray-700">Source / Engine</th>
+                <th className="px-2 py-2 text-right font-semibold text-gray-700">CID</th>
+                <th className="px-2 py-2 text-left font-semibold text-gray-700">Asp.</th>
+                <th className="px-2 py-2 text-right font-semibold text-gray-700">Dyno HP</th>
+                <th className="px-2 py-2 text-right font-semibold text-gray-700">TQ</th>
+                <th className="px-2 py-2 text-left font-semibold text-gray-700">Heads</th>
+                <th className="px-2 py-2 text-left font-semibold text-gray-700">Tier</th>
+              </tr>
+            </thead>
+            <tbody>
+              {matches.map((b, i) => {
+                const closeHp = Math.abs(b.dyno_hp - estimateHp) / estimateHp < 0.15;
+                return (
+                  <tr key={`${b.source}-${b.engine_family}-${i}`} className={`border-b hover:bg-gray-50 ${closeHp ? "bg-[#E85D04]/5" : ""}`}>
+                    <td className="px-2 py-1.5">
+                      <div className="font-semibold text-gray-800">
+                        {b.source_url ? (
+                          <a href={b.source_url} target="_blank" rel="noopener noreferrer" className="hover:text-[#E85D04] hover:underline">
+                            {b.source}
+                          </a>
+                        ) : b.source}
+                      </div>
+                      <div className="text-[10px] text-gray-500">{b.engine_family}</div>
+                    </td>
+                    <td className="px-2 py-1.5 text-right font-mono text-gray-700">{b.cid}</td>
+                    <td className="px-2 py-1.5 text-[11px] text-gray-600">{b.aspiration}</td>
+                    <td className={`px-2 py-1.5 text-right font-mono font-bold ${closeHp ? "text-[#E85D04]" : ""}`}>{b.dyno_hp}</td>
+                    <td className="px-2 py-1.5 text-right font-mono text-gray-700">{b.dyno_tq ?? "—"}</td>
+                    <td className="px-2 py-1.5 text-[11px] text-gray-600 max-w-[180px]">{b.heads ?? "—"}</td>
+                    <td className="px-2 py-1.5 text-[11px] text-gray-600">{b.tier}</td>
+                  </tr>
+                );
+              })}
+            </tbody>
+          </table>
+        </div>
+        <p className="text-[10px] text-muted-foreground mt-3 leading-snug">
+          <strong className="text-[#E85D04]">Orange-highlighted rows</strong> are within ±15% of your estimate. Click any source to view the dyno-sheet / article.
+        </p>
+      </CardContent>
+    </Card>
+  );
 }
 
 export default function HpEstimator() {
@@ -885,6 +1001,13 @@ export default function HpEstimator() {
       </HelpSidebar>
 
       </div>{/* end flex row */}
+
+      <SimilarDynoBuildsCard
+        estimateHp={estimate.hp}
+        platformCid={platform.displacement}
+        platformFamily={platform.family}
+        aspiration={selections.induction || "na"}
+      />
 
       <CalculatorContent data={hpEstimatorContent} title="HP & Torque Estimator" />
     </div>

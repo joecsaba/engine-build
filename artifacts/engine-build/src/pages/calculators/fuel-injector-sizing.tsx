@@ -1,12 +1,13 @@
-import { useState, useEffect } from "react";
+import { useState, useEffect, useMemo } from "react";
 import { SEOHead } from "@/components/SEOHead";
 import { Input } from "@/components/ui/input";
 import { Label } from "@/components/ui/label";
-import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
+import { Card, CardContent, CardHeader, CardTitle, CardDescription } from "@/components/ui/card";
 import { Select, SelectContent, SelectItem, SelectTrigger, SelectValue } from "@/components/ui/select";
 import { ChevronDown, AlertTriangle, CheckCircle2, Info } from "lucide-react";
 import { useBuildField } from "@/hooks/useBuildField";
 import { useBuildContext } from "@/context/BuildContext";
+import { useFuelInjectorBsfc, useFuelInjectorCatalog, type FuelInjectorBsfc, type FuelInjectorCatalogEntry } from "@/hooks/useEngineData";
 import { Link } from "wouter";
 import { CalculatorContent } from "@/components/calculators/CalculatorContent";
 import { HelpSidebar } from "@/components/calculators/HelpCard";
@@ -19,15 +20,47 @@ type Aspiration = "na" | "turbo" | "supercharged";
 
 // ── Constants ───────────────────────────────────────────────────────────────────
 
-// BSFC values (lb/hp-hr) — conservative end of range for safety margin.
-// Sources: HP Academy, Injector Dynamics tech articles, EFI University.
-const BSFC_MAP: Record<FuelType, Record<Aspiration, number>> = {
-  "gas-e10":  { na: 0.50, turbo: 0.60, supercharged: 0.58 },
-  "gas-e0":   { na: 0.48, turbo: 0.58, supercharged: 0.56 },
-  "e85":      { na: 0.72, turbo: 0.88, supercharged: 0.82 },
-  "methanol": { na: 1.60, turbo: 1.80, supercharged: 1.70 },
+/* Default BSFC values (lb/hp-hr) — fallback before the DB-backed JSON loads.
+   Live values are derived per-render from /data/fuel_injector_bsfc.json
+   (sourced from `fuel_injector_bsfc_recommendations` table, 25 rows from
+   Injector Dynamics, FIC, DeatschWerks, HP Academy, EFI University, Bosch).
+
+   2026-05-29 recalibration: prior methanol values (1.60/1.80/1.70) were
+   significantly inflated vs the mfr consensus (ID/HPA/FIC/DW all near
+   0.95 NA / 1.35 forced; only EFI University publishes 1.90 forced).
+   Defaults now align with the mfr median. */
+const DEFAULT_BSFC_MAP: Record<FuelType, Record<Aspiration, number>> = {
+  "gas-e10":  { na: 0.48, turbo: 0.60, supercharged: 0.58 },
+  "gas-e0":   { na: 0.46, turbo: 0.58, supercharged: 0.56 },
+  "e85":      { na: 0.65, turbo: 0.80, supercharged: 0.78 },
+  "methanol": { na: 0.95, turbo: 1.40, supercharged: 1.30 },
   "diesel":   { na: 0.40, turbo: 0.38, supercharged: 0.40 },
 };
+
+/** Collapse per-source rows into a (fuel × aspiration → median BSFC) map.
+ *  Rows tagged with 'forced' aspiration apply to both turbo and supercharged
+ *  if a more specific row isn't present. Falls back to DEFAULT_BSFC_MAP. */
+function deriveBsfcMap(rows: FuelInjectorBsfc[]): Record<FuelType, Record<Aspiration, number>> {
+  if (!rows || rows.length === 0) return DEFAULT_BSFC_MAP;
+  const out: Record<FuelType, Record<Aspiration, number>> = JSON.parse(JSON.stringify(DEFAULT_BSFC_MAP));
+  const fuels: FuelType[] = ["gas-e10", "gas-e0", "e85", "methanol", "diesel"];
+  const aspirations: Aspiration[] = ["na", "turbo", "supercharged"];
+  for (const fuel of fuels) {
+    for (const asp of aspirations) {
+      // Map aspiration to row labels: 'NA' for na, 'turbo' or 'forced' for turbo,
+      // 'supercharged' or 'forced' for supercharged.
+      const matching = rows.filter(r => r.fuel === fuel && (
+        (asp === "na"           && r.aspiration === "NA") ||
+        (asp === "turbo"        && (r.aspiration === "turbo" || r.aspiration === "forced")) ||
+        (asp === "supercharged" && (r.aspiration === "supercharged" || r.aspiration === "forced"))
+      ));
+      if (matching.length === 0) continue;
+      const sorted = matching.map(r => r.bsfc).sort((a, b) => a - b);
+      out[fuel][asp] = sorted[Math.floor(sorted.length / 2)];  // median
+    }
+  }
+  return out;
+}
 
 const FUEL_LABELS: Record<FuelType, string> = {
   "gas-e10":  "Pump Gasoline (E10)",
@@ -107,6 +140,96 @@ const SWAP_TABLE = [
   { build: "Turbo 4-cyl (300 HP)",       fuel: "E85", injector: "52–60 lb/hr" },
 ];
 
+// ── Manufacturer Injector Catalog Card ──────────────────────────────────────
+// Shows mfr-published injectors whose max-HP rating covers the user's
+// required-flow recommendation. Filters by fuel compatibility.
+function MfrInjectorCard({
+  recommendedLbHr,
+  fuelType,
+  catalog,
+}: {
+  recommendedLbHr: number;
+  fuelType: FuelType;
+  catalog: FuelInjectorCatalogEntry[];
+}) {
+  const matches = useMemo(() => {
+    if (!catalog || catalog.length === 0 || recommendedLbHr <= 0) return [];
+    // Map calc fuel types to catalog compat strings
+    const needsE85 = fuelType === "e85";
+    const needsMeth = fuelType === "methanol";
+    return catalog
+      .filter(c => {
+        // Require at least the calc's flow rating; cap at 2x to avoid huge over-sized items
+        if (c.flow_lb_hr < recommendedLbHr * 0.9) return false;
+        if (c.flow_lb_hr > recommendedLbHr * 2.5) return false;
+        if (needsE85 && !/E85/i.test(c.fuel_compat)) return false;
+        if (needsMeth && !/methanol|M100/i.test(c.fuel_compat)) return false;
+        return true;
+      })
+      .sort((a, b) => a.flow_lb_hr - b.flow_lb_hr)
+      .slice(0, 8);
+  }, [catalog, recommendedLbHr, fuelType]);
+
+  if (matches.length === 0) return null;
+
+  return (
+    <Card className="mt-6">
+      <CardHeader>
+        <CardTitle className="flex items-center gap-2 text-base">
+          <Info className="w-5 h-5 text-[#E85D04]" />
+          Manufacturer-Recommended Injectors at {recommendedLbHr} lb/hr
+        </CardTitle>
+        <CardDescription>
+          Injectors from Injector Dynamics, Fuel Injector Clinic, DeatschWerks, and Bosch
+          Motorsport that match your required flow rating and fuel compatibility.
+        </CardDescription>
+      </CardHeader>
+      <CardContent>
+        <div className="overflow-x-auto -mx-2">
+          <table className="w-full text-xs">
+            <thead>
+              <tr className="border-b bg-gray-50">
+                <th className="px-2 py-2 text-left font-semibold text-gray-700">Mfr / Model</th>
+                <th className="px-2 py-2 text-right font-semibold text-gray-700">Flow (lb/hr)</th>
+                <th className="px-2 py-2 text-right font-semibold text-gray-700">cc/min</th>
+                <th className="px-2 py-2 text-right font-semibold text-gray-700">Max HP</th>
+                <th className="px-2 py-2 text-left font-semibold text-gray-700">Fuel</th>
+                <th className="px-2 py-2 text-left font-semibold text-gray-700">Common app</th>
+              </tr>
+            </thead>
+            <tbody>
+              {matches.map((r, i) => {
+                const isClose = Math.abs(r.flow_lb_hr - recommendedLbHr) / recommendedLbHr < 0.10;
+                return (
+                  <tr key={`${r.mfr}-${r.model}-${i}`} className={`border-b hover:bg-gray-50 ${isClose ? "bg-[#E85D04]/5" : ""}`}>
+                    <td className="px-2 py-1.5">
+                      {r.source_url ? (
+                        <a href={r.source_url} target="_blank" rel="noopener noreferrer" className="font-semibold text-gray-800 hover:text-[#E85D04] hover:underline">
+                          {r.mfr} {r.model}
+                        </a>
+                      ) : (
+                        <span className="font-semibold text-gray-800">{r.mfr} {r.model}</span>
+                      )}
+                    </td>
+                    <td className={`px-2 py-1.5 text-right font-mono font-bold ${isClose ? "text-[#E85D04]" : ""}`}>{r.flow_lb_hr}</td>
+                    <td className="px-2 py-1.5 text-right font-mono text-gray-700">{r.flow_cc_min}</td>
+                    <td className="px-2 py-1.5 text-right font-mono text-gray-700">{r.max_hp}</td>
+                    <td className="px-2 py-1.5 text-[11px] text-gray-600">{r.fuel_compat}</td>
+                    <td className="px-2 py-1.5 text-[11px] text-gray-600 max-w-[220px]">{r.common_app}</td>
+                  </tr>
+                );
+              })}
+            </tbody>
+          </table>
+        </div>
+        <p className="text-[10px] text-muted-foreground mt-3 leading-snug">
+          <strong className="text-[#E85D04]">Orange-highlighted rows</strong> are within ±10% of your required flow. Click any model to view the manufacturer's source page.
+        </p>
+      </CardContent>
+    </Card>
+  );
+}
+
 // ── Component ───────────────────────────────────────────────────────────────────
 
 export default function FuelInjectorSizingCalculator() {
@@ -114,6 +237,11 @@ export default function FuelInjectorSizingCalculator() {
   const [ctxHp] = useBuildField("computed.estimatedHp", "");
   const [ctxCyl] = useBuildField("shortBlock.cylinders", "");
   const { activeBuild, setField } = useBuildContext();
+
+  // DB-backed BSFC values + injector catalog
+  const { data: bsfcRows } = useFuelInjectorBsfc();
+  const BSFC_MAP = useMemo(() => deriveBsfcMap(bsfcRows), [bsfcRows]);
+  const { data: catalogRows } = useFuelInjectorCatalog();
 
   // Core inputs
   const [targetHp, setTargetHp] = useState(() => (ctxHp && parseFloat(ctxHp) > 0 ? ctxHp : "400"));
@@ -711,6 +839,8 @@ export default function FuelInjectorSizingCalculator() {
       </HelpSidebar>
 
       </div>{/* end flex row */}
+
+      <MfrInjectorCard recommendedLbHr={recommendedSize} fuelType={fuelType} catalog={catalogRows} />
 
       <CalculatorContent data={fuelInjectorSizingContent} title="Fuel Injector Sizing" />
     </div>

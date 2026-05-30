@@ -234,6 +234,37 @@ SELECT json_agg(t ORDER BY t.sort_order) FROM (
 " > "$DATA_DIR/header_sizing_recommendations.json"
 echo "   Header sizing recommendations exported"
 
+# Fuel injector BSFC values (per-source per fuel/aspiration)
+docker exec $DB_CONTAINER psql -U $DB_USER -d $DB_NAME -t -A -c "
+SELECT json_agg(t ORDER BY t.sort_order) FROM (
+  SELECT source, fuel, aspiration, bsfc, bsfc_range_low, bsfc_range_high,
+    source_url, notes, sort_order
+  FROM fuel_injector_bsfc_recommendations ORDER BY sort_order
+) t;
+" > "$DATA_DIR/fuel_injector_bsfc.json"
+echo "   Fuel injector BSFC values exported"
+
+# Fuel injector catalog (per-mfr specific models)
+docker exec $DB_CONTAINER psql -U $DB_USER -d $DB_NAME -t -A -c "
+SELECT json_agg(t ORDER BY t.sort_order) FROM (
+  SELECT mfr, model, flow_lb_hr, flow_cc_min, max_hp, fuel_compat,
+    common_app, source_url, sort_order
+  FROM fuel_injector_catalog ORDER BY sort_order
+) t;
+" > "$DATA_DIR/fuel_injector_catalog.json"
+echo "   Fuel injector catalog exported"
+
+# HP reference builds (verified dyno results)
+docker exec $DB_CONTAINER psql -U $DB_USER -d $DB_NAME -t -A -c "
+SELECT json_agg(t ORDER BY t.sort_order) FROM (
+  SELECT source, engine_family, cid, aspiration, heads, cam_dur050, cam_lift,
+    lsa, intake, exhaust, cr, fuel, dyno_hp, dyno_tq, peak_hp_rpm, tier,
+    is_rwhp, source_url, notes, sort_order
+  FROM hp_reference_builds ORDER BY sort_order
+) t;
+" > "$DATA_DIR/hp_reference_builds.json"
+echo "   HP reference builds exported"
+
 echo "3/5 — Building site..."
 cd "c:/Engine Website"
 pnpm --filter @workspace/engine-build run build 2>&1 | tail -3

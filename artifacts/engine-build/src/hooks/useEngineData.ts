@@ -681,6 +681,71 @@ export function useHeaderSizingRecs() {
   return useJsonData<HeaderSizingRec>("header_sizing_recommendations.json");
 }
 
+// ── Fuel Injector BSFC Recommendations ────────────────────────────
+
+export interface FuelInjectorBsfc {
+  source: string;
+  fuel: string;                     // 'gas-e10' | 'gas-e0' | 'e85' | 'methanol' | 'diesel'
+  aspiration: string;               // 'NA' | 'turbo' | 'supercharged' | 'forced' | 'turbo-noIC'
+  bsfc: number;
+  bsfc_range_low: number | null;
+  bsfc_range_high: number | null;
+  source_url: string | null;
+  notes: string | null;
+  sort_order: number;
+}
+
+export function useFuelInjectorBsfc() {
+  return useJsonData<FuelInjectorBsfc>("fuel_injector_bsfc.json");
+}
+
+// ── Fuel Injector Catalog ─────────────────────────────────────────
+
+export interface FuelInjectorCatalogEntry {
+  mfr: string;
+  model: string;
+  flow_lb_hr: number;
+  flow_cc_min: number;
+  max_hp: number;
+  fuel_compat: string;
+  common_app: string;
+  source_url: string | null;
+  sort_order: number;
+}
+
+export function useFuelInjectorCatalog() {
+  return useJsonData<FuelInjectorCatalogEntry>("fuel_injector_catalog.json");
+}
+
+// ── HP Reference Builds ───────────────────────────────────────────
+
+export interface HpReferenceBuild {
+  source: string;
+  engine_family: string;
+  cid: number;
+  aspiration: string;
+  heads: string | null;
+  cam_dur050: number | null;
+  cam_lift: number | null;
+  lsa: number | null;
+  intake: string | null;
+  exhaust: string | null;
+  cr: number | null;
+  fuel: string | null;
+  dyno_hp: number;
+  dyno_tq: number | null;
+  peak_hp_rpm: number | null;
+  tier: string;
+  is_rwhp: boolean;
+  source_url: string | null;
+  notes: string | null;
+  sort_order: number;
+}
+
+export function useHpReferenceBuilds() {
+  return useJsonData<HpReferenceBuild>("hp_reference_builds.json");
+}
+
 // ── Gas Engine Ring Gap Reference ─────────────────────────────────
 
 export interface GasEngineRingRef {
