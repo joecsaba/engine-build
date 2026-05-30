@@ -36,7 +36,7 @@ const ENGINE_PRESETS: Record<string, EnginePreset> = {
   // Subaru Boxer
   ej25_sohc: {
     label: "Subaru EJ25 SOHC",
-    layout: "flat", valvetrain: "sohc", bore: 99.5, chamberCC: 53, sprocketPD: 95, vAngle: 180, maxMill: 0.30, notes: "OEM max 0.30mm. Head gasket failures common — minimal cleanup cuts preferred.",
+    layout: "flat", valvetrain: "sohc", bore: 99.5, chamberCC: 53, sprocketPD: 95, vAngle: 180, maxMill: 0.30, notes: "Aftermarket race-shop max 0.30mm. Subaru FSM grinding limit is 0.10mm (warpage 0.05mm). Head gasket failures common — minimal cleanup cuts preferred.",
   },
   ej25_dohc: {
     label: "Subaru EJ25 DOHC (STI/WRX)",
@@ -97,7 +97,7 @@ const ENGINE_PRESETS: Record<string, EnginePreset> = {
   // Mitsubishi
   "4g63": {
     label: "Mitsubishi 4G63 (Evo)",
-    layout: "inline", valvetrain: "dohc", bore: 85, chamberCC: 47, sprocketPD: 100, vAngle: 0, maxMill: 0.50, notes: "Belt-driven. MIVEC on later versions.",
+    layout: "inline", valvetrain: "dohc", bore: 85, chamberCC: 47, sprocketPD: 100, vAngle: 0, maxMill: 0.40, notes: "Belt-driven. MIVEC on later versions. AERA aftermarket spec is 0.38mm head-only; Mitsubishi FSM is 0.20mm combined head+block. Prior 0.50mm value exceeded AERA — lowered to 0.40 for safety.",
   },
   // Ford
   coyote: {
@@ -710,6 +710,31 @@ export default function HeadMillingCalculator() {
           </div>
           <p className="text-xs text-muted-foreground mt-3 italic">
             Volume removed per cylinder. Subtract from chamber CCs, then recalculate CR.
+          </p>
+        </CardContent>
+      </Card>
+
+      {/* ── Max-mill values disclaimer ─────────────────────────────── */}
+      <Card className="mt-4 border-amber-200 bg-amber-50/50">
+        <CardHeader className="pb-2">
+          <CardTitle className="text-sm">About the per-platform max-mill values</CardTitle>
+        </CardHeader>
+        <CardContent className="text-xs text-muted-foreground space-y-2">
+          <p>
+            The per-engine max-mill values are <strong className="text-foreground">aftermarket / race-shop
+            consensus</strong> (AERA, Cometic, DSPORT, builder forums) — not OEM factory service limits.
+            OEM factory service manuals publish much tighter numbers (0.05-0.20 mm warpage / 0.10-0.20 mm
+            grinding limit) because they're written for warranty service, not power-building.
+          </p>
+          <p>
+            <strong className="text-foreground">Rule of thumb for OEM-conservative builds:</strong> use roughly
+            1/3 of the displayed max-mill value. The Subaru FSM, for instance, allows 0.10 mm on EJ25 where
+            the aftermarket consensus goes to 0.30 mm.
+          </p>
+          <p>
+            <strong className="text-foreground">Gasket-thickness compensation:</strong> 1 mm thicker MLS head
+            gasket recovers most of what milling adds to compression. Cometic stocks 0.018″-0.140″ MLS gaskets
+            for most platforms — use the gasket to land on your target CR rather than maximizing mill depth.
           </p>
         </CardContent>
       </Card>

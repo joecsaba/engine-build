@@ -239,9 +239,9 @@ export default function PushrodLengthCalculator() {
       "- Observe wiped pattern on valve tip",
       "",
       "Step 5: Evaluate pattern",
-      "- Pattern should be 30-50% of valve tip width, roughly centered",
-      "- Toward exhaust side: pushrod too short — lengthen",
-      "- Toward intake side: pushrod too long — shorten",
+      "- Pattern should be ≤0.060\" (penny width) within middle 1/3 of valve tip",
+      "- Toward exhaust side: pushrod too LONG — shorten",
+      "- Toward intake side: pushrod too SHORT — lengthen",
       "- Repeat steps 3-4 until centered",
       "",
       "Step 6: Measure checker",
@@ -516,18 +516,32 @@ export default function PushrodLengthCalculator() {
                 </CardTitle>
               </CardHeader>
               <CardContent className="text-sm ml-11 space-y-2">
-                <p className="text-muted-foreground">Pattern should be 30-50% of valve tip width, roughly centered on valve tip.</p>
+                <p className="text-muted-foreground">
+                  Target pattern: <strong>≤0.060″ wide (penny width), within the middle 1/3 of the valve tip.</strong> Industry
+                  consensus (COMP, Crower, Manton, Smith Bros, Trend, Jesel, Harland Sharp, T&amp;D, Yella Terra, Engine Builder Magazine):
+                  narrower is better — race builds target the narrowest sweep achievable.
+                </p>
                 <div className="grid grid-cols-1 sm:grid-cols-2 gap-3">
                   <div className="p-3 rounded-lg bg-orange-50 border border-orange-200">
                     <p className="text-orange-700 font-semibold text-sm">Pattern toward exhaust side</p>
-                    <p className="text-orange-600 text-xs">Pushrod too short — lengthen checker</p>
+                    <p className="text-orange-600 text-xs">Pushrod too <strong>LONG</strong> — shorten checker</p>
                   </div>
                   <div className="p-3 rounded-lg bg-blue-50 border border-blue-200">
                     <p className="text-blue-700 font-semibold text-sm">Pattern toward intake side</p>
-                    <p className="text-blue-600 text-xs">Pushrod too long — shorten checker</p>
+                    <p className="text-blue-600 text-xs">Pushrod too <strong>SHORT</strong> — lengthen checker</p>
                   </div>
                 </div>
-                <p className="text-muted-foreground text-xs">Repeat steps 3–4 until pattern is centered.</p>
+                <p className="text-muted-foreground text-xs">
+                  Repeat steps 3–4 until the pattern is narrow and centered. Each 0.025″ pushrod-length change shifts the pattern roughly 0.005–0.010″ on the valve tip.
+                </p>
+                <div className="mt-3 p-3 rounded-lg bg-gray-50 border border-gray-200 text-xs space-y-1">
+                  <p className="font-semibold text-gray-700">LS engines (non-adjustable rockers):</p>
+                  <p className="text-gray-600">7.400″ is the OE Gen III/IV length. Because LS rockers don&apos;t adjust, pushrod length sets BOTH rocker geometry AND lifter preload simultaneously — target 0.020–0.080″ preload. Trunnion-bearing upgrade kits do NOT change required pushrod length. Milled heads / aftermarket rockers (Yella Terra, Harland Sharp non-adj., BTR) usually need a 7.350–7.450″ pushrod.</p>
+                </div>
+                <div className="p-3 rounded-lg bg-gray-50 border border-gray-200 text-xs space-y-1">
+                  <p className="font-semibold text-gray-700">Aftermarket rockers:</p>
+                  <p className="text-gray-600"><strong>Stud-mount adjustable</strong> (Harland Sharp, Crower, Yella Terra adj.): correct pushrod length leaves adjuster 1–1.5 turns past zero lash (max 2). <strong>Shaft-mount</strong> (Jesel, T&amp;D, PRW): set shaft/stand height with shims FIRST, then determine pushrod length. Each rocker brand has different trunnion height — never reuse the old pushrod length when swapping rocker brands.</p>
+                </div>
               </CardContent>
             </Card>
 

@@ -146,25 +146,31 @@ function getICLStatus(diff: number): { label: string; detail: string; color: str
 
   if (absDiff <= 1) return {
     label: "On spec",
-    detail: "Cam is installed per cam card spec (within tolerance).",
+    detail: "Cam is installed per cam card spec. COMP Cams and the major cam houses treat ≤1° as on-spec for any application.",
     color: "text-green-700",
     bg: "bg-green-50 border-green-200",
   };
-  if (absDiff <= 3) return {
-    label: `Slightly ${direction}`,
-    detail: `Cam is slightly ${direction}. This is within typical timing chain tolerance. Consider verifying against the cam builder's recommendation for your specific application.`,
+  if (absDiff <= 2) return {
+    label: `Slightly ${direction} (street-OK)`,
+    detail: `Cam is slightly ${direction}. Per COMP Cams: 2° off spec on a high-performance street application is of no concern. Race builds (Reher-Morrison, Pro Stock) want this corrected to 0°.`,
+    color: "text-blue-700",
+    bg: "bg-blue-50 border-blue-200",
+  };
+  if (absDiff <= 4) return {
+    label: `Verify against builder spec`,
+    detail: `Cam is ${absDiff.toFixed(1)}° ${direction}. This sits at the limit of modern factory timing-set stack-up (Cloyes notes ~4° spread is normal). Verify against your cam builder's recommendation for your specific application before correcting.`,
     color: "text-blue-700",
     bg: "bg-blue-50 border-blue-200",
   };
   if (absDiff <= 6) return {
     label: `Meaningfully ${direction}`,
-    detail: `Cam is meaningfully ${direction}. Consider an offset bushing to correct.`,
+    detail: `Cam is meaningfully ${direction}. Consider an offset bushing or multi-position timing gear (Cloyes Hex-A-Just) to correct.`,
     color: "text-yellow-700",
     bg: "bg-yellow-50 border-yellow-200",
   };
   return {
     label: "Large offset — recheck TDC",
-    detail: "Large timing offset detected. RE-VERIFY YOUR TDC MEASUREMENT FIRST — this is the single most common source of degreeing error. Then consider offset bushing or different timing gear.",
+    detail: "Large timing offset detected. RE-VERIFY YOUR TDC MEASUREMENT FIRST — this is the single most common source of degreeing error. Most offset-bushing kits top out at 8°. Iron-vs-aluminum block thermal effects on cam-to-crank centerline are negligible (little metal between cam tunnel and crank tunnel) — that is NOT the cause of a large measured offset.",
     color: "text-red-700",
     bg: "bg-red-50 border-red-200",
   };
