@@ -810,7 +810,7 @@ export default function QuenchDeckHeightCalculator() {
             </div>
             <div>
               <h4 className="font-semibold text-foreground mb-1">Detonation Benefit</h4>
-              <p>Tightening quench from 0.070" to 0.040" reclaims 0.5–1.0 point of detonation resistance. That means more compression on the same fuel.</p>
+              <p>Tightening quench from 0.070″ into the 0.035–0.045″ optimum noticeably improves detonation resistance — the high-velocity turbulence helps the mixture finish burning before it can auto-ignite. Sources (Vizard, Mahle, Reher-Morrison, EngineLabs) agree on the qualitative effect; specific "octane points reclaimed" numbers vary by source and aren't reliably published.</p>
             </div>
             <div>
               <h4 className="font-semibold text-foreground mb-1">Measurement Tips</h4>

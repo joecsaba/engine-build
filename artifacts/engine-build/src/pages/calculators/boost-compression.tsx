@@ -330,6 +330,27 @@ export default function BoostCompressionCalculator() {
         </CardContent>
       </Card>
 
+      {/* ── Assumptions + master rule callout ────────────────────────── */}
+      <Card className="mt-4 border-amber-200 bg-amber-50/50">
+        <CardHeader className="pb-2">
+          <CardTitle className="text-sm">Assumptions &amp; the industry master rule</CardTitle>
+        </CardHeader>
+        <CardContent className="text-xs text-muted-foreground space-y-2">
+          <p>
+            <strong className="text-foreground">Intercooled forced induction is assumed.</strong> Every quality source
+            (Garrett, ProCharger, Vortech, Whipple, Engine Builder Magazine) builds their CR/boost guidance on this
+            assumption. Non-intercooled builds: penalize a further ~1 PSI / ~0.5 CR.
+          </p>
+          <p>
+            <strong className="text-foreground">The 12:1 effective-CR rule.</strong> The most-cited industry guideline
+            for 92 octane is a 12.0:1 hard ceiling on effective CR (Garrett, ProCharger, Whipple, Engine Builder Magazine,
+            OnAllCylinders all converge here). The Premium 93 row of this calculator's max-ECR table caps at 11.0 to leave
+            a 1-point margin below that ceiling; the table assumes aluminum heads with reasonable quench (~0.035-0.045″).
+            For iron heads, drop ~0.5 CR off the safe maximum at every boost level.
+          </p>
+        </CardContent>
+      </Card>
+
       <CalculatorContent data={boostCompressionContent} title="Boost & Effective Compression" />
     </div>
   );

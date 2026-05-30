@@ -141,9 +141,15 @@ export default function CompressionRatioCalculator() {
                 Dynamic compression ratio is the <em>actual</em> compression ratio after accounting for when the intake valve closes. Because the intake valve stays open past BDC, some mixture is pushed back out before compression begins.
               </p>
               <p>
-                <strong>This is what causes detonation</strong> — not the static CR. A cam with late intake valve closing (high IVC) dramatically lowers effective compression, allowing a higher static ratio without knock. This is how performance engines run 11:1 static CR on pump gas.
+                <strong>This is what causes detonation</strong> — not the static CR. A cam with late intake valve closing (high IVC) dramatically lowers effective compression, allowing a higher static ratio without knock. This is how performance engines run 11:1 static CR on pump gas — but only with the right cam.
               </p>
-              <p>Ideal dynamic CR for pump gas: <strong>7.5–8.5:1</strong></p>
+              <p>Ideal dynamic CR for pump gas: <strong>7.5–8.5:1</strong> (iron heads stay closer to 8.0; aluminum heads can stretch to 8.5).</p>
+              <p>
+                <strong>Rule of thumb:</strong> static CR above 10.5:1 typically needs intake duration ≥ 225° @ 0.050″ to bleed off enough volume to land DCR ≤ 8.5. Below ~210° duration, even modest static CR can push DCR above pump-gas territory.
+              </p>
+              <p>
+                <strong>Empirical cross-check (Vizard):</strong> cranking compression under 180 PSI at sea level = pump-gas safe; over 200 PSI = race fuel required. Computes directly without any DCR formula. See the dedicated <a href="/calculators/compression-ratio" className="text-[#E85D04] hover:underline">Dynamic Compression Ratio</a> calculator for the precise number.
+              </p>
             </CardContent>
           </HelpCard>
         </div>

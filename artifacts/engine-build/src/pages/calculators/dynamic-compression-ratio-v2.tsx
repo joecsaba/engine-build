@@ -691,6 +691,12 @@ export default function DynamicCompressionRatioV2() {
                   <Info className="w-4 h-4 shrink-0" /> Low DCR — engine will tolerate pump gas but low-RPM performance may suffer
                 </div>
               )}
+              <div className="mt-3 p-2 rounded bg-white/5 border border-white/10 text-xs text-gray-300 leading-relaxed">
+                <strong className="text-white">How this number compares to KB / UEM:</strong> this calculator uses the
+                <em> advertised intake-closing angle</em> method. The KB / UEM calculator adds 15° to the IVC @ .050 lift
+                point and will read approximately 0.5 LOWER on the same cam. A "safe 8.0 DCR" by KB is roughly an 8.5
+                DCR by this calculator. Use one method consistently — don't mix.
+              </div>
             </CardContent>
           </Card>
 
