@@ -49,6 +49,10 @@ interface MechPlatformDef {
   pumpType: string;
   intercooledDefault: boolean;
   maxPumpHp: number;
+  /** Max NOP (PSI) before pump damage / atomization issues. Platform-specific.
+   *  VE pump weakest (~3915 PSI / 270 bar); P7100 strongest (~4930 / 340 bar).
+   *  Optional — undefined defaults to the global 5500 PSI safety floor. */
+  maxNopPsi?: number;
   notes: string;
 }
 
@@ -61,7 +65,11 @@ const MECH_PLATFORMS: Record<MechPlatform, MechPlatformDef> = {
     pumpType: "Bosch VE rotary",
     intercooledDefault: false,
     maxPumpHp: 350,
-    notes: "The VE pump is a rotary distributor pump with limited fuel delivery capacity. Nozzle upgrades beyond 5×0.014\" usually require a P-pump conversion for adequate fuel supply.",
+    // VE pump is the weakest mechanical pump Cummins used — Power Driven Diesel and
+    // Industrial Injection both cap performance pop pressure at ~270 bar (3915 PSI).
+    // Higher = pump damage. Don't chase pop pressure on a VE.
+    maxNopPsi: 3915,
+    notes: "The VE pump is a rotary distributor pump with limited fuel delivery capacity. Nozzle upgrades beyond 5×0.014\" usually require a P-pump conversion for adequate fuel supply. PDD/Industrial Injection cap perf NOP at ~270 bar — VE pump is the weakest link.",
   },
   "cummins-12v-p": {
     label: "5.9L 12-valve Cummins — P7100 pump (1994–1998)",
@@ -71,7 +79,10 @@ const MECH_PLATFORMS: Record<MechPlatform, MechPlatformDef> = {
     pumpType: "Bosch P7100 inline",
     intercooledDefault: true,
     maxPumpHp: 800,
-    notes: "The P7100 is the most upgradeable mechanical injection pump. With governor springs, delivery valves, and a fuel plate, it can support 800+ HP with appropriate nozzles.",
+    // P7100 tiers (Scheid / Industrial Injection consensus): stock 260-285 bar,
+    // performance 295-310, race 320-340. Race floor uses Scheid's 5×.039 race tips.
+    maxNopPsi: 4930,  // 340 bar
+    notes: "The P7100 is the most upgradeable mechanical injection pump. Bosch stock 260 bar; DDP ships 270; Industrial Injection 280-285. Performance tier 295-310 bar; race 320-340 bar (Scheid race tips). Higher pop = finer atomization + requires +1-2° timing advance + more pump load.",
   },
   "cummins-24v-vp44": {
     label: "5.9L 24-valve Cummins — VP44 (1998.5–2002)",
@@ -81,7 +92,10 @@ const MECH_PLATFORMS: Record<MechPlatform, MechPlatformDef> = {
     pumpType: "Bosch VP44 electronic rotary",
     intercooledDefault: true,
     maxPumpHp: 500,
-    notes: "The VP44 is electronically controlled with limited fuel delivery vs the P-pump. Nozzles larger than 5×0.016\" typically exceed VP44 capacity. Consider common rail conversion for higher HP targets.",
+    // VP44 factory 310 bar ±17 bar tolerance. Lower limit ~293 bar before
+    // atomization degrades. Don't push much beyond 320 bar; VP44 is fragile.
+    maxNopPsi: 4640,  // 320 bar
+    notes: "The VP44 is electronically controlled with limited fuel delivery vs the P-pump. Factory NOP 310 bar ±17 (lower limit 293 bar before atomization degrades). Nozzles larger than 5×0.016\" typically exceed VP44 capacity. Consider common rail conversion for higher HP targets.",
   },
   other: {
     label: "Other mechanical diesel (custom specs)",
@@ -91,7 +105,8 @@ const MECH_PLATFORMS: Record<MechPlatform, MechPlatformDef> = {
     pumpType: "Varies",
     intercooledDefault: true,
     maxPumpHp: 600,
-    notes: "Enter your engine's stock nozzle specs manually. These defaults use P-pump 12-valve baselines.",
+    maxNopPsi: 4350,  // 300 bar conservative default for unknown pump
+    notes: "Enter your engine's stock nozzle specs manually. These defaults use P-pump 12-valve baselines. Conservative 300 bar / 4350 PSI max NOP applied — verify against your pump manufacturer.",
   },
 };
 
@@ -193,7 +208,11 @@ function recommendPopPressure(
   };
   basePsi += pumpBias[pumpMod];
 
-  basePsi = Math.max(stockPsi, Math.min(5500, basePsi));
+  // Respect platform-specific max NOP cap (pump-damage protection).
+  // VE pump caps at 3915 PSI (270 bar); P7100 at 4930 (340 bar); VP44 at 4640 (320 bar).
+  // Falls back to 5500 PSI global safety floor if no platform cap set.
+  const platformMax = plat.maxNopPsi ?? 5500;
+  basePsi = Math.max(stockPsi, Math.min(platformMax, basePsi));
   basePsi = Math.round(basePsi / 50) * 50;
 
   const bar = Math.round(basePsi / 14.504);

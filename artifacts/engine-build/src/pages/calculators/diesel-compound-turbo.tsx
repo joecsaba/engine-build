@@ -26,8 +26,8 @@ interface PlatformDef {
 }
 
 const PLATFORMS: Record<string, PlatformDef> = {
-  "12v-cummins":    { label: "5.9L 12-Valve Cummins (6BT)",        cid: 359, cylinders: 6, maxRpm: 3200, stockTurbo: "Holset HX35",       notes: "Mechanical P-pump injection. Fuel system scales with P-pump mods + bigger nozzles, not ECU tuning." },
-  "24v-cummins":    { label: "5.9L 24-Valve Cummins (ISB)",        cid: 359, cylinders: 6, maxRpm: 3400, stockTurbo: "Holset HY35W / HE351CW", notes: "Common rail injection. ECU tuning controls fuel delivery — compounds are bolt-on-and-tune." },
+  "12v-cummins":    { label: "5.9L 12-Valve Cummins (6BT)",        cid: 359, cylinders: 6, maxRpm: 3200, stockTurbo: "Holset HX35",       notes: "Mechanical P-pump injection. Stock P-pump governor cuts at ~2700 RPM — 3200 RPM requires a governor spring kit. Fuel system scales with P-pump mods + bigger nozzles, not ECU tuning." },
+  "24v-cummins":    { label: "5.9L 24-Valve Cummins (ISB)",        cid: 359, cylinders: 6, maxRpm: 3200, stockTurbo: "Holset HY35W / HE351CW", notes: "Stock factory governor is 3200 RPM. 3400+ RPM is the modified valve-float ceiling and requires upgraded springs. Common rail injection — ECU tuning controls fuel delivery, compounds are bolt-on-and-tune." },
   "6.7-cummins":    { label: "6.7L Cummins (ISB 6.7)",             cid: 408, cylinders: 6, maxRpm: 3600, stockTurbo: "Holset HE351VE / HE300VG", notes: "Variable geometry stock turbo. Compounds replace the VGT with a fixed-geometry primary." },
   "duramax-early":  { label: "6.6L Duramax (LB7/LLY/LBZ/LMM)",    cid: 403, cylinders: 8, maxRpm: 3400, stockTurbo: "Garrett GT3788VA",   notes: "Compound kits require adapter plates and custom piping. More fabrication than Cummins." },
   "duramax-late":   { label: "6.6L Duramax (LML/L5P)",             cid: 403, cylinders: 8, maxRpm: 3500, stockTurbo: "Garrett GT3788VA / VGT", notes: "Compound kits require adapter plates and custom piping. Verify kit compatibility with year/model." },

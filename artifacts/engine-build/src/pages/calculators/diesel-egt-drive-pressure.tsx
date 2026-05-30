@@ -93,7 +93,11 @@ function getEgtZone(egtF: number, location: MeasurementLocation): EgtZone {
     borderClass: "border-yellow-300",
     description: "Moderate load range. Normal when towing. Monitor.",
   };
-  if (effective < 1200) return {
+  // 1000-1250°F = "high but acceptable for short bursts under load"
+  // (raised from 1200°F per cross-source consensus 2026-05-30:
+  // Banks Power, Dieselhub, HP Academy, Cummins forum, Duramax forum
+  // all converge on 1250°F pre-turbo as the practical sustained ceiling.)
+  if (effective < 1250) return {
     label: "High",
     color: "#f97316",
     bgClass: "bg-orange-50",
@@ -101,13 +105,13 @@ function getEgtZone(egtF: number, location: MeasurementLocation): EgtZone {
     borderClass: "border-orange-300",
     description: "High load range. Acceptable for short durations under heavy towing. Sustained operation here will reduce component life.",
   };
-  if (effective < 1300) return {
+  if (effective < 1400) return {
     label: "WARNING",
     color: "#ef4444",
     bgClass: "bg-red-50",
     textClass: "text-red-800",
     borderClass: "border-red-300",
-    description: "Approaching material limits. Back off throttle, downshift to increase RPM, or pull over to cool. Sustained operation risks damage to pistons, valves, and turbo.",
+    description: "Approaching material limits. Back off throttle, downshift to increase RPM, or pull over to cool. Sustained operation risks damage to pistons, valves, and turbo. Note: factory DPF regen events on 6.7 Cummins / Duramax LMM/LML/L5P can briefly push 1400-1500°F — that's by design (coated pistons).",
   };
   return {
     label: "DANGER",
@@ -275,8 +279,8 @@ function getCheckWarnings(
     });
   }
 
-  // High EGT with stock turbo
-  if (effective > 1200 && turbo === "stock-single") {
+  // High EGT with stock turbo (raised threshold from 1200 -> 1250°F per cross-source consensus)
+  if (effective > 1250 && turbo === "stock-single") {
     warnings.push({
       level: "red",
       title: "Stock turbo likely undersized",

@@ -796,9 +796,39 @@ export default function DieselLiftPumpCalculator() {
                 </CardHeader>
                 <CardContent className="space-y-4 pt-4">
                   <div className="p-3 rounded-lg bg-muted/30 text-center">
-                    <p className="text-xs text-muted-foreground">Required Fuel Flow</p>
+                    <p className="text-xs text-muted-foreground">Engine Fuel Burn (actual consumption)</p>
                     <p className="text-3xl font-bold text-[#E85D04]">{fmt(results.requiredGph, 1)} GPH</p>
                     <p className="text-xs text-muted-foreground mt-1">({fmt(results.requiredGphRaw, 1)} GPH base × {fmt(results.safetyMargin, 2)} safety margin)</p>
+                  </div>
+
+                  {/* Supply-vs-burn explanation: every quality lift-pump mfr
+                      publishes RATED pump GPH that's significantly larger than
+                      engine burn because they recirculate ~2/3 of pump output
+                      back to tank (return-style filtration design). FASS, AirDog,
+                      BD, Fuelab all size at ~1 GPH supply per 5-6 HP. The pump
+                      recommendations below reflect this. */}
+                  <div className="text-xs text-muted-foreground bg-amber-50/50 border border-amber-200 rounded p-2 leading-snug">
+                    <strong className="text-foreground">Why the recommended pump GPH is much higher than engine burn:</strong> FASS,
+                    AirDog, BD, and Fuelab pumps are return-style — they recirculate roughly 2/3 of their
+                    rated flow back to the tank for filtration and air separation, then deliver the rest
+                    to the engine at regulated pressure. Mfr charts (1 GPH per ~5-6 HP) are the SUPPLY
+                    rating, not the engine burn rating. The pumps below are matched to mfr-published
+                    HP-support ratings, not to the raw burn number above.
+                  </div>
+
+                  {/* Platform-specific supply PSI — different injection pumps want
+                      different filter-inlet pressure. Sourced from Cummins QuickServe /
+                      Mopar1973man VP44 spec / Pure Diesel Power. */}
+                  <div className="p-3 rounded-lg border bg-white text-xs space-y-1">
+                    <p className="font-semibold text-foreground">Supply pressure target for this platform:</p>
+                    <p className="text-muted-foreground">
+                      {platform.injectionPumpType === "p-pump" && <><strong className="text-foreground">25+ PSI at filter inlet</strong> (P7100 inline pump; will pull harder if fed too low — gives up timing precision)</>}
+                      {platform.injectionPumpType === "ve" && <><strong className="text-foreground">8-12 PSI at filter inlet</strong> (Bosch VE rotary — sensitive to overpressure; do NOT exceed 15 PSI)</>}
+                      {platform.injectionPumpType === "vp44" && <><strong className="text-foreground">14-17 PSI cruise, never below 10 PSI under load</strong> (Bosch VP44; low pressure = pump death — primary failure mode)</>}
+                      {platform.injectionPumpType === "cp3" && <><strong className="text-foreground">8-12 PSI at filter inlet</strong> (Bosch CP3 common rail — adequate supply supports CP3 longevity)</>}
+                      {platform.injectionPumpType === "cp4" && <><strong className="text-foreground">8-12 PSI at filter inlet</strong> (Bosch CP4.2 — even more sensitive to fuel quality than CP3)</>}
+                      {platform.injectionPumpType === "heui" && <><strong className="text-foreground">55-65 PSI to HPOP system, 8-12 PSI at lift pump output</strong> (HEUI uses oil-driven high-pressure injection)</>}
+                    </p>
                   </div>
 
                   {/* FASS recommendation */}

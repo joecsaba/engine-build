@@ -132,15 +132,15 @@ function getDieselLambdaZone(l: number): DieselLambdaZone {
     color: "#4d7c0f", bg: "bg-lime-50 border-lime-200", textClass: "text-lime-700",
   };
   if (l >= 1.2) return {
-    label: "Rich for diesel \u2014 near smoke threshold",
-    sub: "Visible puff on tip-in. More air (bigger turbo) would help.",
-    smoke: "Visible puff, light haze under load",
+    label: "High-load cruise \u2014 acceptable under load",
+    sub: "Cummins forum / HP Academy consensus puts \u03bb 1.24+ as no-smoke. \u03bb 1.2 is the edge of smoke-free under load; tip-in puffs are normal here.",
+    smoke: "Possible tip-in puff under heavy load",
     color: "#a16207", bg: "bg-yellow-50 border-yellow-200", textClass: "text-yellow-700",
   };
   if (l >= 1.1) return {
-    label: "At smoke limit \u2014 continuous visible smoke",
-    sub: "Over-fueled for available air. Increase boost or reduce fuel.",
-    smoke: "Continuous light-to-moderate smoke",
+    label: "Smoke begins \u2014 visible haze under load",
+    sub: "Per HP Academy / Schiller: visible haze begins here. Race builds with good atomization can still be clean; stock engines visibly smoke.",
+    smoke: "Visible haze; race builds may stay clean if injector timing + boost are right",
     color: "#c2410c", bg: "bg-orange-50 border-orange-200", textClass: "text-orange-700",
   };
   if (l >= 1.0) return {
@@ -1150,6 +1150,35 @@ export default function DieselSmokeLambdaCalculator() {
           </div>
         </div>
       )}
+
+      {/* Lambda-alone-is-a-poor-smoke-predictor disclaimer (every quality source
+          surveyed — HP Academy, Schiller, Darkside, Industrial Injection — warns
+          about this). Surface prominently so users understand the limitation. */}
+      <Card className="mt-6 border-amber-200 bg-amber-50/50">
+        <CardHeader className="pb-2">
+          <CardTitle className="text-sm">Important: lambda alone is a poor smoke predictor</CardTitle>
+        </CardHeader>
+        <CardContent className="text-xs text-muted-foreground space-y-2">
+          <p>
+            Every authoritative diesel tuning source (HP Academy, Schiller Tuning, Darkside Developments,
+            Industrial Injection community) explicitly warns that lambda is a <strong>secondary</strong>
+            smoke indicator, not a primary one. HP Academy specifically reports race builds running
+            λ ≈ 1.0 with no visible smoke AND stock engines smoking heavily at λ 1.1 — on the same dyno.
+          </p>
+          <p>
+            Three things dominate smoke output regardless of lambda:
+          </p>
+          <ul className="list-disc pl-5 space-y-1">
+            <li><strong className="text-foreground">Injector timing</strong> — too advanced = unburned fuel = smoke; too retarded = clean but high EGT</li>
+            <li><strong className="text-foreground">Boost / O2 availability</strong> — more boost = more oxygen = less smoke at the same fueling</li>
+            <li><strong className="text-foreground">Nozzle hole count and spray angle</strong> — better atomization = less smoke; 5-hole high-pressure nozzles dramatically beat 7-hole at the same flow</li>
+          </ul>
+          <p>
+            Use <strong className="text-foreground">EGT + visual smoke as primary indicators</strong>, lambda as a secondary
+            cross-check. A clean stack at high fueling is more meaningful than a lambda number.
+          </p>
+        </CardContent>
+      </Card>
 
       {/* ═══════════════════════════════════════════════════════════════════════ */}
       {/* COLLAPSIBLE SECTIONS                                                  */}
