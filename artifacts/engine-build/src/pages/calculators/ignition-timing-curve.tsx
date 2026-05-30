@@ -30,14 +30,23 @@ interface EnginePreset {
 const PRESETS: EnginePreset[] = [
   { label: "SBC 350 Mild Street",       initial: 12, mechTotal: 24, mechStartRpm: 800,  mechFullRpm: 2800, vacAdvance: 10, vacStartInHg: 7,  vacFullInHg: 15 },
   { label: "SBC 383 Stroker",           initial: 10, mechTotal: 22, mechStartRpm: 900,  mechFullRpm: 3000, vacAdvance: 12, vacStartInHg: 7,  vacFullInHg: 15 },
-  { label: "BBC 454 Street",            initial: 10, mechTotal: 22, mechStartRpm: 800,  mechFullRpm: 2500, vacAdvance: 10, vacStartInHg: 7,  vacFullInHg: 14 },
+  { label: "BBC 454 Street",            initial: 10, mechTotal: 24, mechStartRpm: 800,  mechFullRpm: 2500, vacAdvance: 10, vacStartInHg: 7,  vacFullInHg: 14 },
   { label: "SBF 302 / 5.0",             initial: 12, mechTotal: 22, mechStartRpm: 800,  mechFullRpm: 2800, vacAdvance: 10, vacStartInHg: 7,  vacFullInHg: 15 },
-  { label: "LS1 / LS3 (reference)",     initial: 15, mechTotal: 21, mechStartRpm: 800,  mechFullRpm: 3200, vacAdvance: 0,  vacStartInHg: 0,  vacFullInHg: 0  },
+  // LS NA WOT timing (~28° total) — much lower than the carbureted SBC/BBF presets because
+  // the efficient LS combustion chamber doesn't need as much spark advance. LS1Tech / HPTuners
+  // / Steve Morris dyno consensus: 25-28° peak NA on 91 octane. The factory ECU advertises 36°
+  // max but that's only commanded at light cruise; WOT spark commanded is ~28°. Prior calc
+  // value of 36° total was the ECU max-advertised, which would cause detonation if dialed in
+  // mechanically on a distributor-style LS conversion at WOT.
+  { label: "LS1 / LS3 (NA, WOT timing)", initial: 15, mechTotal: 13, mechStartRpm: 800, mechFullRpm: 3200, vacAdvance: 0,  vacStartInHg: 0,  vacFullInHg: 0  },
   { label: "SBC Hot Street / Cam",      initial: 14, mechTotal: 22, mechStartRpm: 1000, mechFullRpm: 3200, vacAdvance: 8,  vacStartInHg: 8,  vacFullInHg: 15 },
   { label: "Boosted SBC (8 psi)",       initial: 10, mechTotal: 12, mechStartRpm: 800,  mechFullRpm: 2400, vacAdvance: 0,  vacStartInHg: 0,  vacFullInHg: 0  },
   { label: "Boosted LS (10 psi)",       initial: 10, mechTotal: 14, mechStartRpm: 800,  mechFullRpm: 2800, vacAdvance: 0,  vacStartInHg: 0,  vacFullInHg: 0  },
   { label: "Mopar 360 / 340",           initial: 12, mechTotal: 22, mechStartRpm: 800,  mechFullRpm: 2800, vacAdvance: 10, vacStartInHg: 7,  vacFullInHg: 15 },
-  { label: "Pontiac 400 / 455",         initial: 10, mechTotal: 24, mechStartRpm: 800,  mechFullRpm: 2600, vacAdvance: 12, vacStartInHg: 7,  vacFullInHg: 14 },
+  // Pontiac split: 400 (shorter stroke) commonly takes 36° total; 455 (longer stroke) takes 34°
+  // per published Pontiac sources. Prior single preset was a compromise.
+  { label: "Pontiac 400",               initial: 12, mechTotal: 24, mechStartRpm: 800,  mechFullRpm: 2600, vacAdvance: 12, vacStartInHg: 7,  vacFullInHg: 14 },
+  { label: "Pontiac 455",               initial: 10, mechTotal: 24, mechStartRpm: 800,  mechFullRpm: 2600, vacAdvance: 12, vacStartInHg: 7,  vacFullInHg: 14 },
 ];
 
 const REFERENCE_TABLE = [
@@ -46,7 +55,7 @@ const REFERENCE_TABLE = [
   { combo: "383 stroker, 10.0:1, 91 oct",       initial: "12-14", total: "34-36", vacuum: "8-10",  notes: "Watch for knock" },
   { combo: "BBC 454, 8.5:1, mild cam",          initial: "10-12", total: "32-34", vacuum: "10-12", notes: "Low compression = more advance" },
   { combo: "SBF 302, 9.5:1, 91 oct",            initial: "12-14", total: "34-36", vacuum: "8-12",  notes: "" },
-  { combo: "LS1 stock, 10.25:1, 91 oct",        initial: "15",    total: "36",    vacuum: "—",     notes: "Electronic, no distributor" },
+  { combo: "LS1 stock, 10.25:1, 91 oct",        initial: "15",    total: "25-28 WOT",    vacuum: "—",     notes: "Electronic. 36° = light-load max; WOT is 25-28° on 91 oct (Steve Morris / LS1Tech / HPTuners consensus)" },
   { combo: "10:1+, boosted, pump gas",           initial: "8-10",  total: "20-24", vacuum: "—",     notes: "Pull timing under boost" },
   { combo: "9:1 boosted, E85",                   initial: "10-12", total: "26-30", vacuum: "—",     notes: "E85 tolerates more advance" },
   { combo: "High comp NA, 11:1+, race gas",      initial: "14-16", total: "30-34", vacuum: "0-6",   notes: "Fast burn = less needed" },
@@ -250,6 +259,9 @@ export default function IgnitionTimingCurveCalculator() {
               </div>
               <p className="text-xs text-muted-foreground">
                 "All-in" is the RPM where mechanical advance is fully deployed. Typically 2400-3200 RPM for street engines.
+                Most presets here use 800 RPM start; Performance Distributors (DUI) typically publishes 940-1200 RPM start.
+                If your idle is set below your "Advance Starts" RPM, the curve will creep at idle which can cause unstable idle —
+                pick a start RPM at least 100 RPM above your target idle speed.
               </p>
             </CardContent>
           </Card>

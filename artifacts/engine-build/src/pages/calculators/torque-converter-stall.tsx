@@ -36,13 +36,27 @@ const CAM_POWERBAND: [number, number, string][] = [
 /* ─── Power Adder Options ─── */
 const POWER_ADDER_OPTIONS: { value: string; label: string; adj: number }[] = [
   { value: "none", label: "None", adj: 0 },
-  { value: "nitrous_low", label: "Nitrous \u2264150 shot", adj: -300 },
-  { value: "nitrous_high", label: "Nitrous 150+ shot", adj: -600 },
-  { value: "turbo_low", label: "Turbo <10 psi", adj: -300 },
-  { value: "turbo_high", label: "Turbo 10+ psi", adj: -700 },
-  { value: "sc_centrifugal", label: "Supercharger Centrifugal", adj: -300 },
-  { value: "sc_pd", label: "Supercharger Positive Displacement", adj: -500 },
+  { value: "nitrous_low", label: "Nitrous \u2264150 shot (flash above new peak TQ)", adj: 300 },
+  { value: "nitrous_high", label: "Nitrous 150+ shot (flash above new peak TQ)", adj: 600 },
+  { value: "turbo_low", label: "Turbo <10 psi (lower stall, build boost first)", adj: -300 },
+  { value: "turbo_high", label: "Turbo 10+ psi (lower stall, build boost first)", adj: -700 },
+  { value: "sc_centrifugal", label: "Supercharger Centrifugal (lower stall, couple early)", adj: -300 },
+  { value: "sc_pd", label: "Supercharger PD/Roots (lower stall, couple at idle)", adj: -500 },
 ];
+/* Sign convention notes:
+   - Nitrous: PLUS RPM. When the bottle opens, peak torque rises sharply
+     (the spray adds 100+ ft-lb), so the converter must flash ABOVE the
+     new (higher) peak torque RPM. Per LS1Tech STR sticky / Dragzine:
+     ~+500 RPM per 100hp of spray. Prior calc had NEGATIVE adjustments
+     here \u2014 that's the minority "spray off the line at idle" use case;
+     the more common "spray once converter is coupled" pattern needs
+     POSITIVE adjustments.
+   - Turbo: MINUS RPM. Build boost first, then flash converter as boost
+     arrives. A high stall on a boosted car wastes time before boost.
+   - Roots/PD SC: MINUS RPM. PD blowers make boost from idle; couple
+     converter early so the SC's low-RPM torque reaches the wheels.
+   - Centri SC: MINUS RPM (less than PD). Centris build boost with RPM
+     but still want to be coupled by mid-range. */
 
 /* ─── Helpers ─── */
 function clamp(val: number, min: number, max: number): number {
