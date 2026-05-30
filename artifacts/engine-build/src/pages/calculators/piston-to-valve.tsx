@@ -40,9 +40,29 @@ const DEFAULT_MATERIAL_THRESHOLDS: Record<ValveMaterial, Thresholds> = {
   inconel:   { intakeMin: 0.080, exhaustMin: 0.100 },
 };
 
-/** +0.030" intake & exhaust for aluminum rods per Diamond Racing's
- *  published guidance. The single most-impactful real-world variable. */
-const ALUMINUM_ROD_ADDER = 0.030;
+/* Aluminum rod adders. Sources disagree on the magnitude:
+ *   - Diamond Racing + Reher-Morrison + several editorial outlets:    +0.030"
+ *     (Diamond cites RPM stretch; Reher-Morrison's deck-clearance
+ *     delta supports a similar magnitude).
+ *   - MGP Connecting Rods + GRP Connecting Rods (the primary aluminum
+ *     rod manufacturers themselves):                                  ~+0.010"
+ *     They attribute it to THERMAL expansion (CTE math), not RPM
+ *     stretch, and say modern billet aluminum has eliminated most of
+ *     the historical "rod stretch" issue.
+ * The calculator exposes both as user-selectable so the user can pick
+ * the assumption that matches their rod manufacturer's guidance. */
+const ALUMINUM_ROD_ADDER_CONSERVATIVE = 0.030;
+const ALUMINUM_ROD_ADDER_MODERN_BILLET = 0.010;
+
+type RodMaterial = "steel" | "aluminum-modern" | "aluminum-conservative";
+
+function rodAdderFor(rm: RodMaterial): number {
+  switch (rm) {
+    case "aluminum-modern":       return ALUMINUM_ROD_ADDER_MODERN_BILLET;
+    case "aluminum-conservative": return ALUMINUM_ROD_ADDER_CONSERVATIVE;
+    default:                      return 0;
+  }
+}
 
 const MATERIAL_LABELS: Record<ValveMaterial, string> = {
   steel:     "Steel (stock OEM)",
@@ -347,7 +367,7 @@ export default function PistonToValveCalculator() {
 
   // Section D — Valve material + rod material (rod is the strongest variable)
   const [valveMaterial, setValveMaterial] = useState<ValveMaterial>("stainless");
-  const [rodMaterial, setRodMaterial] = useState<"steel" | "aluminum">("steel");
+  const [rodMaterial, setRodMaterial] = useState<RodMaterial>("steel");
 
   // Live thresholds from DB. Falls back to DEFAULT_MATERIAL_THRESHOLDS
   // (which now match Wiseco/JE published values) before JSON loads.
@@ -379,9 +399,9 @@ export default function PistonToValveCalculator() {
   // Computed intake centerline
   const iclComputed = lsaV - camAdvance;
 
-  // Apply aluminum-rod adder if selected (Diamond Racing +0.030" rule)
+  // Apply rod-material adder (mfrs disagree on the magnitude — see top)
   const baseThr = materialThresholds[valveMaterial];
-  const rodAdder = rodMaterial === "aluminum" ? ALUMINUM_ROD_ADDER : 0;
+  const rodAdder = rodAdderFor(rodMaterial);
   const thresholds: Thresholds = {
     intakeMin:  baseThr.intakeMin  + rodAdder,
     exhaustMin: baseThr.exhaustMin + rodAdder,
@@ -701,25 +721,38 @@ export default function PistonToValveCalculator() {
                 </Select>
               </Field>
               <Field label="Connecting Rod Material">
-                <Select value={rodMaterial} onValueChange={v => setRodMaterial(v as "steel" | "aluminum")}>
+                <Select value={rodMaterial} onValueChange={v => setRodMaterial(v as RodMaterial)}>
                   <SelectTrigger><SelectValue /></SelectTrigger>
                   <SelectContent>
-                    <SelectItem value="steel">Steel (stock / forged)</SelectItem>
-                    <SelectItem value="aluminum">Aluminum (race) — +0.030″ added to both</SelectItem>
+                    <SelectItem value="steel">Steel (stock / forged) — baseline</SelectItem>
+                    <SelectItem value="aluminum-modern">Aluminum, modern billet (MGP / GRP) — +0.010″</SelectItem>
+                    <SelectItem value="aluminum-conservative">Aluminum, conservative (Diamond / Reher-Morrison) — +0.030″</SelectItem>
                   </SelectContent>
                 </Select>
               </Field>
             </div>
-            <p className="text-xs text-muted-foreground max-w-2xl">
-              <strong>Why valve material doesn't change the minimum:</strong> JE, Wiseco,
-              Reher-Morrison, Ferrea and Supertech all publish the same 0.080″/0.100″ floor
-              regardless of material — Titanium can actually run TIGHTER (Reher-Morrison Pro
-              Stock allows 0.060″/0.120″) because lower mass means less valvetrain bounce.
-              Inconel 751 has lower thermal expansion than stainless and doesn't need extra
-              clearance. The real "more clearance" variable is <strong>aluminum rods</strong>,
-              which stretch more at RPM and require an additional 0.030″ per Diamond Racing's
-              published guidance.
-            </p>
+            <div className="text-xs text-muted-foreground max-w-2xl space-y-2">
+              <p>
+                <strong>Why valve material doesn't change the minimum:</strong> JE, Wiseco,
+                Reher-Morrison, Ferrea and Supertech all publish the same 0.080″/0.100″ floor
+                regardless of material — Titanium can actually run TIGHTER (Reher-Morrison Pro
+                Stock allows 0.060″/0.120″) because lower mass means less valvetrain bounce.
+                Inconel 751 has lower thermal expansion than stainless and doesn't need extra
+                clearance.
+              </p>
+              <p>
+                <strong>Why two aluminum-rod options:</strong> sources disagree. Diamond Racing
+                and editorial outlets (EngineLabs, StreetMuscle, RPM Mag) recommend +0.030″ on
+                the assumption that aluminum rods stretch at RPM. The aluminum rod manufacturers
+                themselves (<a href="https://www.mgpconnectingrods.com/mgp-tech/technical-advice/"
+                target="_blank" rel="noopener noreferrer" className="text-[#E85D04] hover:underline">MGP</a> and{" "}
+                <a href="https://www.dragzine.com/tech-stories/engine/debunking-aluminum-rod-myths-with-grp/"
+                target="_blank" rel="noopener noreferrer" className="text-[#E85D04] hover:underline">GRP</a>)
+                disagree — they say modern aerospace-grade aluminum doesn't stretch at RPM, and
+                only ~0.010″ of thermal expansion is real. Pick the option that matches your rod
+                manufacturer's guidance.
+              </p>
+            </div>
             <div className="grid grid-cols-2 gap-3 text-sm">
               <div className="p-3 rounded-lg border bg-gray-50 text-center">
                 <div className="text-xs text-gray-500 mb-1">Intake Minimum</div>

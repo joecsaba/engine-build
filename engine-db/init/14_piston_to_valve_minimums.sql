@@ -64,10 +64,20 @@ VALUES
    'steel', 'https://blog.diamondracing.net/checking-piston-to-valve-clearance-the-right-way',
    NULL, 60),
 
-  ('Diamond Racing', 'any', 'race-aluminum-rod', 0.110, 0.130,
-   'Aluminum rods stretch more than steel at RPM; add 0.030 to baseline',
+  ('Diamond Racing', 'any', 'race-aluminum-rod-conservative', 0.110, 0.130,
+   'Conservative +0.030 over steel-rod baseline; Diamond cites RPM stretch as the mechanism (contested by MGP/GRP — see notes).',
    'aluminum', 'https://blog.diamondracing.net/checking-piston-to-valve-clearance-the-right-way',
-   'KEY VARIABLE — aluminum rod requires +0.030 vs. steel-rod minimums.', 70),
+   'Supported by Reher-Morrison deck-clearance guidance (+0.020-0.030 aluminum vs steel). Editorial sources (EngineLabs, StreetMuscle, RPM Mag) repeat this verbatim but appear to share a single origin, not independent confirmation.', 70),
+
+  ('MGP Connecting Rods', 'any', 'race-aluminum-rod-modern', 0.090, 0.110,
+   'MGP (primary aluminum rod mfr) says modern aerospace-grade aluminum has eliminated the rod stretch builders historically compensated for. Only ~0.010 thermal growth in practice.',
+   'aluminum', 'https://www.mgpconnectingrods.com/mgp-tech/technical-advice/',
+   'Contradicts conventional +0.030 adder. Primary mfr source — should outweigh editorial repeats.', 75),
+
+  ('GRP Connecting Rods', 'any', 'race-aluminum-rod-modern', 0.090, 0.110,
+   'GRP says aluminum rods stretch less than 0.010 more than steel. Mechanism is THERMAL expansion (CTE math: 6in rod, +280F = ~0.022in growth), NOT RPM stretch as Diamond claims.',
+   'aluminum', 'https://www.dragzine.com/tech-stories/engine/debunking-aluminum-rod-myths-with-grp/',
+   'Cross-validation source for MGP. Quote: "everyone is under the impression that aluminum rods permanently stretch, but this simply is not the case".', 76),
 
   ('Reher-Morrison', 'steel', 'pro-stock', 0.060, 0.120,
    'Published in R-M engine-building book; exhaust = 1.6-2x intake',
