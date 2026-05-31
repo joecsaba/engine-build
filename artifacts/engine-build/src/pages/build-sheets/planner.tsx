@@ -301,6 +301,17 @@ export default function BuildPlanner() {
 
   return (
     <div>
+      <div className="bg-amber-500 text-black border-b-2 border-amber-700">
+        <div className="container mx-auto max-w-6xl px-4 py-3 flex items-center gap-3">
+          <span className="bg-black text-amber-400 text-xs font-bold uppercase tracking-wider px-2 py-1 rounded">
+            Beta
+          </span>
+          <p className="text-sm font-medium">
+            The Build Planner is in active development. Part lists, pricing, and platform coverage are being expanded — treat results as a starting point, not a final shopping list.
+          </p>
+        </div>
+      </div>
+
       <PageHeader
         eyebrow="Build Planner"
         title="Plan Your Engine Build"
