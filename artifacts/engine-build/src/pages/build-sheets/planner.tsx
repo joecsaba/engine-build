@@ -82,7 +82,7 @@ function PartSelector({ category, selectedPartId, onSelect }: {
       </button>
 
       {open && (
-        <div className="absolute z-20 left-0 right-0 mt-1 bg-white border border-gray-200 rounded-lg shadow-lg overflow-hidden">
+        <div className="absolute z-30 left-0 right-0 mt-1 bg-white border border-gray-200 rounded-lg shadow-lg max-h-[60vh] overflow-y-auto">
           {!category.required && (
             <button
               onClick={() => { onSelect(null); setOpen(false); }}
@@ -394,8 +394,8 @@ export default function BuildPlanner() {
             <h2 className="text-lg font-bold mb-6">2. Select Components</h2>
             <div className="space-y-8">
               {groupedCategories.map(([group, categories]) => (
-                <div key={group} className="bg-white rounded-xl border border-gray-200 overflow-hidden">
-                  <div className="bg-[#1a1a1a] px-6 py-3">
+                <div key={group} className="bg-white rounded-xl border border-gray-200">
+                  <div className="bg-[#1a1a1a] px-6 py-3 rounded-t-xl">
                     <h3 className="text-white font-semibold text-sm uppercase tracking-wider">{group}</h3>
                   </div>
                   <div className="px-6">
