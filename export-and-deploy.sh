@@ -128,13 +128,41 @@ echo "   Head flow profiles exported"
 # Diesel platforms
 docker exec $DB_CONTAINER psql -U $DB_USER -d $DB_NAME -t -A -c "
 SELECT json_agg(t ORDER BY t.name) FROM (
-  SELECT slug, name, engine_family, displacement_ci, cylinders, bore_in, stock_hp, stock_torque,
+  SELECT slug, calc_slug, name, engine_family, displacement_ci, cylinders, bore_in, stock_hp, stock_torque,
     injection_type, supply_pressure_min, supply_pressure_max, max_egt_sustained, max_egt_peak,
-    stock_turbo, nozzle_specs, lift_pump_specs, notes
+    stock_turbo, stock_turbo_notes, stock_boost_psi, stock_nop_psi, max_nop_psi,
+    max_rpm, max_rpm_modified, nozzle_specs, lift_pump_specs, notes
   FROM diesel_platforms ORDER BY name
 ) t;
 " > "$DATA_DIR/diesel_platforms.json"
 echo "   Diesel platforms exported"
+
+# Diesel EGT zones
+docker exec $DB_CONTAINER psql -U $DB_USER -d $DB_NAME -t -A -c "
+SELECT json_agg(t ORDER BY t.sort_order) FROM (
+  SELECT zone_key, label, threshold_min_f, threshold_max_f, color, description, sort_order
+  FROM diesel_egt_zones ORDER BY sort_order
+) t;
+" > "$DATA_DIR/diesel_egt_zones.json"
+echo "   Diesel EGT zones exported"
+
+# Diesel lambda zones
+docker exec $DB_CONTAINER psql -U $DB_USER -d $DB_NAME -t -A -c "
+SELECT json_agg(t ORDER BY t.sort_order) FROM (
+  SELECT zone_key, label, lambda_min, lambda_max, color, description, sort_order
+  FROM diesel_lambda_zones ORDER BY sort_order
+) t;
+" > "$DATA_DIR/diesel_lambda_zones.json"
+echo "   Diesel lambda zones exported"
+
+# Diesel lift-pump PSI specs
+docker exec $DB_CONTAINER psql -U $DB_USER -d $DB_NAME -t -A -c "
+SELECT json_agg(t ORDER BY t.injection_type) FROM (
+  SELECT injection_type, cruise_psi_min, cruise_psi_max, hard_floor_psi, hard_ceiling_psi, notes
+  FROM diesel_lift_pump_psi_specs ORDER BY injection_type
+) t;
+" > "$DATA_DIR/diesel_lift_pump_psi_specs.json"
+echo "   Diesel lift-pump PSI specs exported"
 
 # Ring gap specs (platform-specific absolute gap specs from multiple sources)
 docker exec $DB_CONTAINER psql -U $DB_USER -d $DB_NAME -t -A -c "
