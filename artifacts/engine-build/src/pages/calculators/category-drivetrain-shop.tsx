@@ -32,8 +32,8 @@ export const drivetrainShop: Calc[] = [
   {
     title: "Wrench Size Converter — SAE ↔ Metric",
     href: "/calculators/wrench-size-converter",
-    desc: "Pick a SAE or metric wrench and get the closest match in the other system, plus whether the swap is safe under torque or will round the fastener. Full standard-set chart with interchange tiers.",
-    tags: ["SAE", "Metric", "Wrench", "Socket"],
+    desc: "Convert SAE wrench sizes to metric and back — or measure the bolt head with calipers and we'll tell you the right wrench from either set. Interchange tiers warn when a swap will round the fastener.",
+    tags: ["SAE", "Metric", "Wrench", "Calipers", "Socket"],
     icon: Wrench,
   },
   {

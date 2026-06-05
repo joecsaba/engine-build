@@ -1,7 +1,19 @@
 export default {
   slug: "wrench-size-converter",
-  intro: "Most modern engines are a mix of SAE and metric fasteners — a Chevy LS uses metric head bolts on an SAE block, a Cummins swap drops a metric engine into an SAE chassis. When the right wrench isn't on the bench, knowing which size from the other system will actually fit (and which will round the bolt) is the difference between finishing the job and a trip to the parts store.",
+  intro: "Most modern engines are a mix of SAE and metric fasteners — a Chevy LS uses metric head bolts on an SAE block, a Cummins swap drops a metric engine into an SAE chassis. When the right wrench isn't on the bench, knowing which size from the other system will actually fit (and which will round the bolt) is the difference between finishing the job and a trip to the parts store. Use \"Measure with calipers\" mode when you've got an unknown bolt and need to ID the wrench size from a tape or caliper reading.",
   sections: [
+    {
+      heading: "Identifying an unknown wrench size from a measurement",
+      body: `
+        <p>If you don't know what size wrench a bolt takes, measure it. Two rules to get a clean reading:</p>
+        <ol>
+          <li><strong>Measure across the flats, not the corners.</strong> A hex head has six flats and six corners — the flat-to-flat distance is what defines the wrench size. The corner-to-corner distance is about 15% larger and will lead you to the wrong wrench every time.</li>
+          <li><strong>Expect 0.1–0.2 mm (4–8 thou) undersize from nominal.</strong> A 13 mm bolt head typically measures 12.85–12.95 mm. A 1/2" head typically measures 0.490–0.498". That's the manufacturing tolerance — the wrench size is the bigger, nominal value, not what your calipers read.</li>
+        </ol>
+        <p>Tape measure works for ≥3/8" (10 mm) hardware if you've got a good rule, but calipers are the right tool. Cheap dial or digital calipers from any hardware store get you within 0.05 mm, which is more than enough to ID a wrench size. For really small fasteners (≤8 mm) the wrench-size step is tight enough that a millimeter of measurement error can land you on the wrong size — measure twice and pick the wrench that's slightly larger than your reading.</p>
+        <p>This calculator's "Measure with calipers" mode takes your reading and shows you the closest wrench from <em>both</em> the SAE and metric sets, so you can grab whichever you have in hand. The closer fit usually tells you which system the bolt actually came from.</p>
+      `,
+    },
     {
       heading: "How the conversion works",
       body: `
