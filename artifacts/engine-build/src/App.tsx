@@ -52,6 +52,7 @@ import DieselInjectorNozzlePopPressureCalculator from "@/pages/calculators/diese
 import DieselSmokeLambdaCalculator from "@/pages/calculators/diesel-smoke-lambda";
 import ValveShimCalculator from "@/pages/calculators/valve-shim";
 import MmInchConverter from "@/pages/calculators/mm-inch-converter";
+import WrenchSizeConverter from "@/pages/calculators/wrench-size-converter";
 import DieselValveReliefCalculator from "@/pages/calculators/diesel-valve-relief";
 import IntakeManifoldMillingCalculator from "@/pages/calculators/intake-manifold-milling";
 import HeadMillingCalculator from "@/pages/calculators/head-milling";
@@ -183,6 +184,7 @@ function Router() {
         <Route path="/calculators/diesel-smoke-lambda" component={DieselSmokeLambdaCalculator} />
         <Route path="/calculators/valve-shim" component={ValveShimCalculator} />
         <Route path="/calculators/mm-inch-converter" component={MmInchConverter} />
+        <Route path="/calculators/wrench-size-converter" component={WrenchSizeConverter} />
         <Route path="/calculators/diesel-valve-relief" component={DieselValveReliefCalculator} />
         <Route path="/calculators/intake-manifold-milling" component={IntakeManifoldMillingCalculator} />
         <Route path="/calculators/head-milling" component={HeadMillingCalculator} />

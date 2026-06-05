@@ -30,6 +30,13 @@ export const drivetrainShop: Calc[] = [
     icon: Ruler,
   },
   {
+    title: "Wrench Size Converter — SAE ↔ Metric",
+    href: "/calculators/wrench-size-converter",
+    desc: "Pick a SAE or metric wrench and get the closest match in the other system, plus whether the swap is safe under torque or will round the fastener. Full standard-set chart with interchange tiers.",
+    tags: ["SAE", "Metric", "Wrench", "Socket"],
+    icon: Wrench,
+  },
+  {
     title: "Density Altitude / HP Correction",
     href: "/calculators/density-altitude",
     desc: "Calculate density altitude, relative HP, and dyno correction factors for SAE J1349, J607, and DIN 70020. Dew point or RH input for trackside accuracy.",
