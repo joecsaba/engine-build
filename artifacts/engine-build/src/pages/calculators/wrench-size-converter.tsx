@@ -93,6 +93,54 @@ function classify(gapMm: number): { tier: Match["tier"]; note: string } {
   };
 }
 
+// Measure-mode classify: compares one bolt measurement to one candidate wrench.
+// Direction-aware: a wrench *smaller* than the measurement won't physically fit
+// over the head, regardless of how small the gap is.
+function classifyForMeasure(measurementMm: number, wrenchMm: number): { tier: Match["tier"]; note: string } {
+  const gapMm = wrenchMm - measurementMm; // signed: positive = wrench bigger
+  const absGap = Math.abs(gapMm);
+  const absGapIn = absGap / MM_PER_INCH;
+  const gapTxt = `${absGap.toFixed(2)} mm (${(absGapIn * 1000).toFixed(1)} thou)`;
+
+  // Wrench is meaningfully smaller than the measurement: won't slip over the head.
+  if (gapMm < -0.10) {
+    return {
+      tier: gapMm < -0.40 ? "no-match" : "loose",
+      note: `Wrench is ${gapTxt} smaller than your reading — it won't fit over the bolt head. Go up to the next size.`,
+    };
+  }
+
+  // Wrench within ~0.1 mm of the measurement (either direction) — perfect fit.
+  // Bolt heads run 0.1–0.2 mm undersize from nominal, so a wrench 0.0–0.2 mm
+  // larger than the measurement is the expected match.
+  if (gapMm <= 0.25) {
+    return {
+      tier: "interchangeable",
+      note: `Wrench is ${gapTxt} ${gapMm < 0 ? "smaller" : "larger"} than your reading — this is normal bolt-head tolerance. This is the right wrench for the job.`,
+    };
+  }
+
+  // Wrench noticeably larger than the measurement — fits but with play.
+  if (gapMm <= 0.50) {
+    return {
+      tier: "close",
+      note: `Wrench is ${gapTxt} larger than your reading — it'll go on but with visible play. Fine for breaking loose; risk of rounding under torque.`,
+    };
+  }
+
+  if (gapMm <= 1.00) {
+    return {
+      tier: "loose",
+      note: `Wrench is ${gapTxt} larger than your reading — too loose to trust. Will slip. Try the next size down.`,
+    };
+  }
+
+  return {
+    tier: "no-match",
+    note: `Wrench is ${gapTxt} off your reading — no standard wrench close to this size. Re-measure across the flats (not corners), or this is a non-standard fastener.`,
+  };
+}
+
 function tierColor(tier: Match["tier"]): string {
   switch (tier) {
     case "interchangeable": return "text-emerald-400";
@@ -230,7 +278,8 @@ export default function WrenchSizeConverter() {
   }, [direction, saePick, metricPick, customMm, customIn, measureUnit, measureValue]);
 
   // For measure mode we need the per-system tiers individually so we can show
-  // both options with their own fit badges.
+  // both options with their own fit badges. Uses classifyForMeasure() which is
+  // direction-aware: a wrench smaller than the measurement won't fit at all.
   const measureBreakdown = useMemo(() => {
     if (direction !== "measure") return null;
     const v = parseFloat(measureValue);
@@ -238,8 +287,8 @@ export default function WrenchSizeConverter() {
     const sourceMm = measureUnit === "mm" ? v : v * MM_PER_INCH;
     const m = findClosestMetric(sourceMm);
     const s = findClosestSae(sourceMm);
-    const metricCls = classify(m.gapMm);
-    const saeCls = classify(s.gapMm);
+    const metricCls = classifyForMeasure(sourceMm, m.size);
+    const saeCls = classifyForMeasure(sourceMm, s.sae.decimalIn * MM_PER_INCH);
     return {
       sourceMm,
       metric: { size: m.size, gapMm: m.gapMm, ...metricCls },
