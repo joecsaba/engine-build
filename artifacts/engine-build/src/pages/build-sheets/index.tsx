@@ -1,5 +1,5 @@
 import { Link } from "wouter";
-import { ClipboardList, ShoppingCart, ChevronRight, Wrench, PlusCircle } from "lucide-react";
+import { ClipboardList, ChevronRight, Wrench, PlusCircle } from "lucide-react";
 import { PageHeader } from "@/components/layout/PageHeader";
 import { useAuth } from "@/context/AuthContext";
 
@@ -12,15 +12,6 @@ const tools = [
     tags: ["Guided Wizard", "Auto-Populates Calculators", "Save & Resume"],
     isNew: true,
     highlight: true,
-  },
-  {
-    icon: ShoppingCart,
-    title: "Build Planner",
-    href: "/build-sheets/planner",
-    desc: "Select your engine platform, pick components category by category, and get a complete shopping list with parts pricing from Summit Racing and Jegs.",
-    tags: ["Parts Catalog", "Running Total", "Shopping List", "5 Platforms"],
-    isNew: false,
-    highlight: false,
   },
   {
     icon: ClipboardList,
@@ -91,12 +82,6 @@ export default function BuildSheetsIndex() {
           ))}
         </div>
 
-        <div className="mt-10 p-6 rounded-lg bg-gray-50 border border-gray-200">
-          <h3 className="font-semibold text-lg mb-2">About Part Pricing</h3>
-          <p className="text-sm text-gray-600">
-            Part prices shown in the Build Planner are reference values sourced from Summit Racing and Jegs catalogs. Prices fluctuate — always verify current pricing before ordering. Part numbers are listed so you can search directly. Engine-build.com is not affiliated with any retailer.
-          </p>
-        </div>
       </div>
     </div>
   );

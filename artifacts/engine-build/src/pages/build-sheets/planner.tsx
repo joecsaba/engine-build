@@ -4,6 +4,7 @@ import { ChevronDown, ShoppingCart, Printer, ArrowLeft, Info, Check, BookOpen, X
 import { useBuildContext } from "@/context/BuildContext";
 import { Button } from "@/components/ui/button";
 import { PageHeader } from "@/components/layout/PageHeader";
+import { SEOHead } from "@/components/SEOHead";
 import {
   PLATFORMS,
   TIER_LABELS,
@@ -301,13 +302,20 @@ export default function BuildPlanner() {
 
   return (
     <div>
+      <SEOHead
+        title="Build Planner"
+        description="Build planner workspace"
+        canonical="/build-sheets/planner"
+        noindex
+      />
+
       <div className="bg-amber-500 text-black border-b-2 border-amber-700">
         <div className="container mx-auto max-w-6xl px-4 py-3 flex items-center gap-3">
           <span className="bg-black text-amber-400 text-xs font-bold uppercase tracking-wider px-2 py-1 rounded">
-            Beta
+            Preview
           </span>
           <p className="text-sm font-medium">
-            The Build Planner is in active development. Part lists, pricing, and platform coverage are being expanded — treat results as a starting point, not a final shopping list.
+            The Build Planner is a private preview — not linked from the public site while we finish the parts catalog and retailer integration.
           </p>
         </div>
       </div>

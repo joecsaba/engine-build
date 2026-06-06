@@ -8,6 +8,7 @@ interface SEOHeadProps {
   description: string;
   canonical?: string;
   keywords?: string;
+  noindex?: boolean;
 }
 
 function setMeta(property: string, content: string, isProperty = false) {
@@ -31,7 +32,7 @@ function setLink(rel: string, href: string) {
   el.href = href;
 }
 
-export function SEOHead({ title, description, canonical, keywords }: SEOHeadProps) {
+export function SEOHead({ title, description, canonical, keywords, noindex }: SEOHeadProps) {
   const fullTitle = `${title} | ${SITE_NAME}`;
   const url = canonical ? `${SITE}${canonical}` : SITE;
 
@@ -47,7 +48,8 @@ export function SEOHead({ title, description, canonical, keywords }: SEOHeadProp
     setMeta("og:site_name", SITE_NAME, true);
     setMeta("twitter:title", fullTitle);
     setMeta("twitter:description", description);
-  }, [fullTitle, description, url, keywords]);
+    setMeta("robots", noindex ? "noindex, nofollow" : "index, follow");
+  }, [fullTitle, description, url, keywords, noindex]);
 
   return null;
 }
