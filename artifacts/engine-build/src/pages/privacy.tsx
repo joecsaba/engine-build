@@ -17,7 +17,7 @@ export default function Privacy() {
 
       <div className="container mx-auto max-w-4xl px-4 py-10">
         <div className="bg-white rounded-xl shadow-sm border p-8 md:p-12 prose prose-gray max-w-none">
-          <p className="text-sm text-gray-500">Last updated: April 22, 2026</p>
+          <p className="text-sm text-gray-500">Last updated: June 6, 2026</p>
 
           <h2>Introduction</h2>
           <p>
@@ -34,11 +34,22 @@ export default function Privacy() {
             version of the site.
           </p>
 
-          <h2>Google Analytics (GA4)</h2>
+          <h2>Cookie Consent</h2>
           <p>
-            We use Google Analytics 4 (measurement ID: <code>G-624Z648DND</code>) to
-            understand how visitors interact with our site. Google Analytics collects
-            information such as:
+            The first time you visit Engine-build.com you will see a consent banner offering
+            two choices: <strong>Accept all</strong> or <strong>Reject non-essential</strong>.
+            No analytics or advertising cookies are set on your device until you choose
+            <strong> Accept all</strong>. Your choice is saved to your browser's local storage
+            (key: <code>ebcom_cookie_consent_v1</code>) so we do not ask again on subsequent visits.
+            To change your decision later, clear your browser's site data for engine-build.com
+            and refresh the page.
+          </p>
+
+          <h2>Google Analytics (GA4) — only after consent</h2>
+          <p>
+            If (and only if) you click <strong>Accept all</strong> on the cookie banner, we
+            load Google Analytics 4 (measurement ID: <code>G-624Z648DND</code>) to understand
+            how visitors interact with our site. Google Analytics collects information such as:
           </p>
           <ul>
             <li>Pages visited and time spent on each page</li>
@@ -56,22 +67,14 @@ export default function Privacy() {
             </a>.
           </p>
 
-          <h2>Google AdSense</h2>
+          <h2>Advertising (planned)</h2>
           <p>
-            We use Google AdSense to display advertisements on our site. Google AdSense may
-            use cookies and web beacons to serve ads based on your prior visits to this and
-            other websites. This includes the use of the DoubleClick cookie, which enables
-            Google and its partners to serve personalized ads.
-          </p>
-          <p>
-            You may opt out of personalized advertising by visiting{" "}
-            <a href="https://www.google.com/settings/ads" target="_blank" rel="noopener noreferrer">
-              Google Ads Settings
-            </a>{" "}
-            or{" "}
-            <a href="https://www.aboutads.info/choices/" target="_blank" rel="noopener noreferrer">
-              www.aboutads.info/choices
-            </a>.
+            Engine-build.com is currently in the process of onboarding with an ad network so
+            we can keep the calculators free. No display ads are running on the site today.
+            When advertising goes live, this Privacy Policy will be updated with the specific
+            network we partner with, the cookies they place, the personalized-advertising
+            controls available to you, and a Consent Management Platform that is compliant
+            with the IAB Transparency &amp; Consent Framework (TCF).
           </p>
 
           <h2>Contact Form (Formspree)</h2>
@@ -101,22 +104,21 @@ export default function Privacy() {
             browser settings.
           </p>
 
-          <h2>Cookies</h2>
+          <h2>Cookies in use</h2>
           <p>
-            Our site uses cookies from the following third-party services:
+            With consent (Accept all), our site uses cookies from the following services:
           </p>
           <ul>
             <li>
               <strong>Google Analytics</strong> — analytics cookies to measure site usage
               (e.g., <code>_ga</code>, <code>_ga_*</code>)
             </li>
-            <li>
-              <strong>Google AdSense</strong> — advertising cookies to serve and personalize ads
-            </li>
           </ul>
           <p>
-            You can control or disable cookies through your browser settings. Disabling
-            cookies may affect the functionality of some features on the site.
+            Without consent (Reject non-essential), only one piece of browser storage is used:
+            the <code>localStorage</code> key recording your consent choice. No analytics or
+            advertising cookies are placed. You can also control or disable cookies through
+            your browser settings.
           </p>
 
           <h2>Children's Privacy</h2>
@@ -139,7 +141,8 @@ export default function Privacy() {
           <p>
             Because we do not maintain user accounts or a personal data database, most of the
             data associated with your visit is held by third-party services (Google Analytics,
-            Google AdSense). You can exercise your rights with those services directly. For
+            and our future advertising network). You can exercise your rights with those
+            services directly, or refuse all non-essential cookies on the consent banner. For
             any other requests, please contact us.
           </p>
 
