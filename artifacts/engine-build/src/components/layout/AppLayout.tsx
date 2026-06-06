@@ -2,7 +2,10 @@ import { Navbar } from "./Navbar";
 import { Footer } from "./Footer";
 import { AdBanner } from "@/components/ads/AdBanner";
 import { QuickToolsSidebar } from "@/components/sidebar/QuickToolsSidebar";
-import { CookieConsent } from "@/components/CookieConsent";
+
+// Note: cookie consent is now handled by the Ezoic Gatekeeper CMP
+// loaded from index.html, which is TCF 2.3 compliant. The earlier
+// custom CookieConsent banner has been unmounted.
 
 export function AppLayout({ children }: { children: React.ReactNode }) {
   return (
@@ -23,7 +26,6 @@ export function AppLayout({ children }: { children: React.ReactNode }) {
       </div>
       <div className="print:hidden">
         <QuickToolsSidebar />
-        <CookieConsent />
       </div>
     </div>
   );

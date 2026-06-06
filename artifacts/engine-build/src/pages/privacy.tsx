@@ -36,20 +36,21 @@ export default function Privacy() {
 
           <h2>Cookie Consent</h2>
           <p>
-            The first time you visit Engine-build.com you will see a consent banner offering
-            two choices: <strong>Accept all</strong> or <strong>Reject non-essential</strong>.
-            No analytics or advertising cookies are set on your device until you choose
-            <strong> Accept all</strong>. Your choice is saved to your browser's local storage
-            (key: <code>ebcom_cookie_consent_v1</code>) so we do not ask again on subsequent visits.
-            To change your decision later, clear your browser's site data for engine-build.com
-            and refresh the page.
+            The first time you visit Engine-build.com you will see a consent banner from our
+            Consent Management Platform (CMP). The CMP is provided by Ezoic via the IAB
+            Transparency &amp; Consent Framework (TCF) version 2.3. You can accept, reject,
+            or customize which categories of cookies (analytics, personalized advertising,
+            etc.) are allowed on your device. Your choice is recorded in your browser and
+            governs what tracking can run on subsequent visits. You can revisit the CMP
+            and change your decision at any time using the consent controls in the page footer
+            (or by clearing your browser's site data and reloading the page).
           </p>
 
-          <h2>Google Analytics (GA4) — only after consent</h2>
+          <h2>Google Analytics (GA4)</h2>
           <p>
-            If (and only if) you click <strong>Accept all</strong> on the cookie banner, we
-            load Google Analytics 4 (measurement ID: <code>G-624Z648DND</code>) to understand
-            how visitors interact with our site. Google Analytics collects information such as:
+            Subject to your consent choices on the CMP banner, we use Google Analytics 4
+            (measurement ID: <code>G-624Z648DND</code>) to understand how visitors interact
+            with our site. Google Analytics collects information such as:
           </p>
           <ul>
             <li>Pages visited and time spent on each page</li>
@@ -67,14 +68,21 @@ export default function Privacy() {
             </a>.
           </p>
 
-          <h2>Advertising (planned)</h2>
+          <h2>Advertising (Ezoic)</h2>
           <p>
-            Engine-build.com is currently in the process of onboarding with an ad network so
-            we can keep the calculators free. No display ads are running on the site today.
-            When advertising goes live, this Privacy Policy will be updated with the specific
-            network we partner with, the cookies they place, the personalized-advertising
-            controls available to you, and a Consent Management Platform that is compliant
-            with the IAB Transparency &amp; Consent Framework (TCF).
+            Engine-build.com is a partner of Ezoic, which provides advertising on this
+            website. Ezoic and its third-party advertising partners use cookies and similar
+            technologies to deliver, measure, and personalize advertising. The categories of
+            cookies and partner vendors used are presented to you on the Consent Management
+            Platform banner described above, and your selections there govern which vendors
+            may operate.
+          </p>
+          <p>
+            For full detail about Ezoic's data collection and your rights, see Ezoic's
+            published privacy policy at{" "}
+            <a href="https://www.ezoic.com/privacy-policy/" target="_blank" rel="noopener noreferrer">
+              ezoic.com/privacy-policy
+            </a>.
           </p>
 
           <h2>Contact Form (Formspree)</h2>
@@ -106,19 +114,23 @@ export default function Privacy() {
 
           <h2>Cookies in use</h2>
           <p>
-            With consent (Accept all), our site uses cookies from the following services:
+            Subject to your consent, our site uses cookies from the following services:
           </p>
           <ul>
             <li>
               <strong>Google Analytics</strong> — analytics cookies to measure site usage
               (e.g., <code>_ga</code>, <code>_ga_*</code>)
             </li>
+            <li>
+              <strong>Ezoic and its advertising partners</strong> — cookies used to serve,
+              measure, and personalize advertising. The full list of partner vendors is
+              shown on the CMP banner.
+            </li>
           </ul>
           <p>
-            Without consent (Reject non-essential), only one piece of browser storage is used:
-            the <code>localStorage</code> key recording your consent choice. No analytics or
-            advertising cookies are placed. You can also control or disable cookies through
-            your browser settings.
+            You can also control or disable cookies through your browser settings. Most
+            browsers allow you to refuse all cookies, accept only certain types, or be
+            prompted before a cookie is stored.
           </p>
 
           <h2>Children's Privacy</h2>
