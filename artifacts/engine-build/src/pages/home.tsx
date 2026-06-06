@@ -244,7 +244,7 @@ export default function Home() {
       {/* Mid-page ad */}
       <section className="py-6 px-4 bg-gray-50 border-t border-gray-100">
         <div className="container mx-auto max-w-6xl">
-          <AdBanner slot="2222222222" format="horizontal" />
+          <AdBanner placementId={102} />
         </div>
       </section>
 

@@ -122,10 +122,29 @@ function ScrollToTop() {
   return null;
 }
 
+// On every SPA navigation, tell Ezoic to refresh its ad placements for the
+// new pageview. Required for SPA sites per Ezoic dynamic-content docs:
+//   https://docs.ezoic.com/docs/ezoicads/dynamic-content/
+// ezstandalone.showAds() with no args refreshes every placeholder on the
+// current page. Wrapped in cmd.push so it queues until sa.min.js is ready.
+function EzoicSpaRefresh() {
+  const [location] = useLocation();
+  useEffect(() => {
+    const ez = (window as any).ezstandalone;
+    if (!ez) return;
+    ez.cmd = ez.cmd || [];
+    ez.cmd.push(function () {
+      try { ez.showAds(); } catch { /* no-op */ }
+    });
+  }, [location]);
+  return null;
+}
+
 function Router() {
   return (
     <AppLayout>
       <ScrollToTop />
+      <EzoicSpaRefresh />
       <RecentTracker />
       <Switch>
         <Route path="/" component={Home} />

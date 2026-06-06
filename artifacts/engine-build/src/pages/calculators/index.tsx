@@ -144,7 +144,7 @@ export default function CalculatorsIndex() {
         </div>
 
         <div className="mt-10">
-          <AdBanner slot="3333333333" format="horizontal" />
+          <AdBanner placementId={108} />
         </div>
       </div>
     </div>

@@ -19,7 +19,7 @@ export function AppLayout({ children }: { children: React.ReactNode }) {
       <div className="print:hidden">
         <div className="bg-white border-t border-gray-100 py-4 px-4">
           <div className="container mx-auto max-w-6xl">
-            <AdBanner slot="1111111111" format="horizontal" />
+            <AdBanner placementId={101} />
           </div>
         </div>
         <Footer />

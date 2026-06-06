@@ -106,7 +106,7 @@ export default function CategoryShortBlock() {
         </div>
 
         <div className="mt-10">
-          <AdBanner slot="3333333333" format="horizontal" />
+          <AdBanner placementId={103} />
         </div>
       </div>
     </div>

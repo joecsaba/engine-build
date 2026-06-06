@@ -113,7 +113,7 @@ export default function CategoryDrivetrainShop() {
         </div>
 
         <div className="mt-10">
-          <AdBanner slot="3333333333" format="horizontal" />
+          <AdBanner placementId={106} />
         </div>
       </div>
     </div>

@@ -113,7 +113,7 @@ export default function CategoryPowerFuel() {
         </div>
 
         <div className="mt-10">
-          <AdBanner slot="3333333333" format="horizontal" />
+          <AdBanner placementId={105} />
         </div>
       </div>
     </div>

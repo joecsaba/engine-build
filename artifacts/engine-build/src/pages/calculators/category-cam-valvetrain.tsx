@@ -100,7 +100,7 @@ export default function CategoryCamValvetrain() {
         </div>
 
         <div className="mt-10">
-          <AdBanner slot="3333333333" format="horizontal" />
+          <AdBanner placementId={104} />
         </div>
       </div>
     </div>

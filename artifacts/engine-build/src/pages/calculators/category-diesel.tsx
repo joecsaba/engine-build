@@ -85,7 +85,7 @@ export default function CategoryDiesel() {
         </div>
 
         <div className="mt-10">
-          <AdBanner slot="3333333333" format="horizontal" />
+          <AdBanner placementId={107} />
         </div>
       </div>
     </div>
