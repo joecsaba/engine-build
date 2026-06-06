@@ -2,7 +2,7 @@ import { Link } from "wouter";
 import { Button } from "@/components/ui/button";
 import { Input } from "@/components/ui/input";
 import { Textarea } from "@/components/ui/textarea";
-import { Calculator, Settings2, Clock, Send, CheckCircle2, Gauge, Database, Wrench, Star, Bookmark, ClipboardList } from "lucide-react";
+import { Calculator, Settings2, Send, CheckCircle2, Gauge, Database, Star, Bookmark, ClipboardList } from "lucide-react";
 import { useState } from "react";
 import { AdBanner } from "@/components/ads/AdBanner";
 import { SEOHead } from "@/components/SEOHead";
@@ -131,42 +131,6 @@ export default function Home() {
         </div>
       </section>
 
-      {/* Who this is for */}
-      <section className="py-16 px-4 bg-gray-50 border-y border-gray-100">
-        <div className="container mx-auto max-w-5xl">
-          <h2 className="text-3xl font-bold tracking-tight mb-8 text-center">Built for People Who Build Engines</h2>
-          <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
-            <div className="text-center space-y-3">
-              <div className="w-14 h-14 rounded-xl bg-[#E85D04]/10 flex items-center justify-center mx-auto">
-                <Wrench className="w-7 h-7 text-[#E85D04]" />
-              </div>
-              <h3 className="font-bold text-lg">Machine Shop Professionals</h3>
-              <p className="text-sm text-gray-600">
-                Quick-reference clearance specs, bearing tolerances, ring gap tables, and gasket comparison tools. Verify your work against factory specs before final assembly.
-              </p>
-            </div>
-            <div className="text-center space-y-3">
-              <div className="w-14 h-14 rounded-xl bg-[#E85D04]/10 flex items-center justify-center mx-auto">
-                <Settings2 className="w-7 h-7 text-[#E85D04]" />
-              </div>
-              <h3 className="font-bold text-lg">DIY Engine Builders</h3>
-              <p className="text-sm text-gray-600">
-                Planning a 383 stroker? Upgrading heads and cam? Use the build advisor to estimate HP, then dial in every spec with individual calculators. No guesswork.
-              </p>
-            </div>
-            <div className="text-center space-y-3">
-              <div className="w-14 h-14 rounded-xl bg-[#E85D04]/10 flex items-center justify-center mx-auto">
-                <Gauge className="w-7 h-7 text-[#E85D04]" />
-              </div>
-              <h3 className="font-bold text-lg">Performance &amp; Race Teams</h3>
-              <p className="text-sm text-gray-600">
-                Turbo sizing, injector duty cycle analysis, density altitude HP correction, octane blending, and ignition timing curve visualization for trackside tuning.
-              </p>
-            </div>
-          </div>
-        </div>
-      </section>
-
       {/* Features grid */}
       <section className="py-16 px-4 bg-[#1a1a1a]">
         <div className="container mx-auto max-w-5xl">
@@ -174,7 +138,7 @@ export default function Home() {
             <p className="text-[#E85D04] text-sm font-semibold uppercase tracking-widest mb-2">Everything You Need</p>
             <h2 className="text-3xl font-bold text-white">Tools &amp; Resources</h2>
           </div>
-          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-5 gap-5">
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-5">
             {features.map((f) => (
               <Link key={f.title} href={f.href}>
                 <div className="group h-full p-6 rounded-xl border border-[#2a2a2a] bg-[#242424] hover:border-[#E85D04] hover:shadow-lg hover:shadow-[#E85D04]/10 transition-all cursor-pointer flex flex-col items-center text-center space-y-3">
