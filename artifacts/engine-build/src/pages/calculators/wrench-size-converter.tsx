@@ -159,6 +159,18 @@ function tierBadge(tier: Match["tier"]): string {
   }
 }
 
+// Measure-mode badges: labeled from the perspective of "should I use this wrench?"
+// gapMm is signed (wrench − measurement): positive = wrench bigger.
+function tierBadgeForMeasure(tier: Match["tier"], gapMm: number): string {
+  if (gapMm < -0.10) return "Won't fit — size up";
+  switch (tier) {
+    case "interchangeable": return "Right wrench";
+    case "close":           return "Fits with play";
+    case "loose":           return "Too loose — will slip";
+    case "no-match":        return "Not a match";
+  }
+}
+
 function findClosestMetric(targetMm: number): { size: number; gapMm: number } {
   let best = METRIC_SIZES_MM[0];
   let bestGap = Math.abs(METRIC_SIZES_MM[0] - targetMm);
@@ -280,6 +292,8 @@ export default function WrenchSizeConverter() {
   // For measure mode we need the per-system tiers individually so we can show
   // both options with their own fit badges. Uses classifyForMeasure() which is
   // direction-aware: a wrench smaller than the measurement won't fit at all.
+  // Also picks a single "best overall" wrench across both systems so the user
+  // gets one clear recommendation instead of conflicting per-system advice.
   const measureBreakdown = useMemo(() => {
     if (direction !== "measure") return null;
     const v = parseFloat(measureValue);
@@ -287,12 +301,37 @@ export default function WrenchSizeConverter() {
     const sourceMm = measureUnit === "mm" ? v : v * MM_PER_INCH;
     const m = findClosestMetric(sourceMm);
     const s = findClosestSae(sourceMm);
+    const saeMm = s.sae.decimalIn * MM_PER_INCH;
+    const metricSignedGap = m.size - sourceMm;        // signed, wrench − measurement
+    const saeSignedGap = saeMm - sourceMm;            // signed
     const metricCls = classifyForMeasure(sourceMm, m.size);
-    const saeCls = classifyForMeasure(sourceMm, s.sae.decimalIn * MM_PER_INCH);
+    const saeCls = classifyForMeasure(sourceMm, saeMm);
+
+    // Rank tiers from best to worst for picking the overall winner.
+    const tierRank: Record<Match["tier"], number> = {
+      "interchangeable": 0,
+      "close":           1,
+      "loose":           2,
+      "no-match":        3,
+    };
+    // A wrench that's smaller than the measurement gets penalized — it
+    // won't physically fit, so it never wins over a bigger-but-loose wrench.
+    function effectiveRank(tier: Match["tier"], signedGap: number) {
+      const base = tierRank[tier];
+      return signedGap < -0.10 ? base + 10 : base;
+    }
+    const metricRank = effectiveRank(metricCls.tier, metricSignedGap);
+    const saeRank = effectiveRank(saeCls.tier, saeSignedGap);
+    let best: "sae" | "metric";
+    if (metricRank < saeRank) best = "metric";
+    else if (saeRank < metricRank) best = "sae";
+    else best = Math.abs(saeSignedGap) <= Math.abs(metricSignedGap) ? "sae" : "metric";
+
     return {
       sourceMm,
-      metric: { size: m.size, gapMm: m.gapMm, ...metricCls },
-      sae: { sae: s.sae, gapMm: s.gapMm, ...saeCls },
+      best,
+      metric: { size: m.size, gapMm: m.gapMm, signedGap: metricSignedGap, ...metricCls },
+      sae: { sae: s.sae, gapMm: s.gapMm, signedGap: saeSignedGap, ...saeCls },
     };
   }, [direction, measureValue, measureUnit]);
 
@@ -444,35 +483,57 @@ export default function WrenchSizeConverter() {
                   <p className="text-xs uppercase tracking-wider text-gray-500">
                     You measured <span className="font-mono text-amber-400">{measureBreakdown.sourceMm.toFixed(2)} mm</span> · <span className="font-mono text-amber-400">{(measureBreakdown.sourceMm / MM_PER_INCH).toFixed(4)}"</span>
                   </p>
-                  {/* Metric pick */}
-                  <div className="border-t border-gray-700 pt-3">
-                    <p className="text-[10px] uppercase tracking-wider text-gray-500 mb-1">From the metric set</p>
-                    <p className="text-3xl font-bold font-mono text-primary">{measureBreakdown.metric.size} mm</p>
-                    <p className={`text-xs font-bold uppercase tracking-wider mt-1 ${tierColor(measureBreakdown.metric.tier)}`}>
-                      {tierBadge(measureBreakdown.metric.tier)}
-                    </p>
-                    <p className="text-xs text-gray-400 mt-1">{measureBreakdown.metric.note}</p>
-                  </div>
-                  {/* SAE pick */}
-                  <div className="border-t border-gray-700 pt-3">
-                    <p className="text-[10px] uppercase tracking-wider text-gray-500 mb-1">From the SAE set</p>
-                    <p className="text-3xl font-bold font-mono text-primary">{measureBreakdown.sae.sae.label}</p>
-                    <p className={`text-xs font-bold uppercase tracking-wider mt-1 ${tierColor(measureBreakdown.sae.tier)}`}>
-                      {tierBadge(measureBreakdown.sae.tier)}
-                    </p>
-                    <p className="text-xs text-gray-400 mt-1">{measureBreakdown.sae.note}</p>
-                  </div>
-                  {/* Hint about which to prefer */}
-                  <div className="border-t border-gray-700 pt-3">
-                    <p className="text-xs text-gray-400">
-                      <strong className="text-amber-400">Tip:</strong>{" "}
-                      {measureBreakdown.metric.gapMm < measureBreakdown.sae.gapMm
-                        ? `Metric is the closer fit (Δ ${measureBreakdown.metric.gapMm.toFixed(2)} mm vs SAE ${measureBreakdown.sae.gapMm.toFixed(2)} mm) — this is almost certainly a metric bolt.`
-                        : measureBreakdown.sae.gapMm < measureBreakdown.metric.gapMm
-                          ? `SAE is the closer fit (Δ ${measureBreakdown.sae.gapMm.toFixed(2)} mm vs metric ${measureBreakdown.metric.gapMm.toFixed(2)} mm) — this is almost certainly an SAE bolt.`
-                          : `Equal fit either way — likely one of the truly-interchangeable pairs (3/4"=19mm, 5/8"=16mm, etc.).`
-                      }
-                    </p>
+
+                  {/* Best-overall headline pick */}
+                  {(() => {
+                    const winner = measureBreakdown.best === "sae" ? measureBreakdown.sae : measureBreakdown.metric;
+                    const winnerLabel = measureBreakdown.best === "sae"
+                      ? `${measureBreakdown.sae.sae.label} SAE`
+                      : `${measureBreakdown.metric.size} mm`;
+                    const winnerSystem = measureBreakdown.best === "sae" ? "SAE" : "metric";
+                    const winnerSignedGap = measureBreakdown.best === "sae" ? measureBreakdown.sae.signedGap : measureBreakdown.metric.signedGap;
+                    return (
+                      <div>
+                        <p className="text-[10px] uppercase tracking-wider text-gray-500 mb-1">Use this wrench</p>
+                        <p className="text-5xl font-bold font-mono text-primary tracking-wide">
+                          {winnerLabel}
+                        </p>
+                        <p className={`text-sm font-bold uppercase tracking-wider mt-1 ${tierColor(winner.tier)}`}>
+                          {tierBadgeForMeasure(winner.tier, winnerSignedGap)}
+                        </p>
+                        <p className="text-sm text-gray-300 mt-2 leading-relaxed">
+                          {winner.note} This is almost certainly a {winnerSystem === "SAE" ? "SAE" : "metric"} bolt.
+                        </p>
+                      </div>
+                    );
+                  })()}
+
+                  {/* Alternates: show the other system as a fallback */}
+                  <div className="pt-3 border-t border-gray-700">
+                    <p className="text-[10px] uppercase tracking-wider text-gray-500 mb-2">If you only have the other set</p>
+                    {measureBreakdown.best === "sae" ? (
+                      <div>
+                        <p className="text-lg font-mono font-semibold text-gray-300">
+                          {measureBreakdown.metric.size} mm
+                          {" "}
+                          <span className={`text-[11px] font-bold uppercase tracking-wider ml-2 ${tierColor(measureBreakdown.metric.tier)}`}>
+                            {tierBadgeForMeasure(measureBreakdown.metric.tier, measureBreakdown.metric.signedGap)}
+                          </span>
+                        </p>
+                        <p className="text-xs text-gray-400 mt-1">{measureBreakdown.metric.note}</p>
+                      </div>
+                    ) : (
+                      <div>
+                        <p className="text-lg font-mono font-semibold text-gray-300">
+                          {measureBreakdown.sae.sae.label}
+                          {" "}
+                          <span className={`text-[11px] font-bold uppercase tracking-wider ml-2 ${tierColor(measureBreakdown.sae.tier)}`}>
+                            {tierBadgeForMeasure(measureBreakdown.sae.tier, measureBreakdown.sae.signedGap)}
+                          </span>
+                        </p>
+                        <p className="text-xs text-gray-400 mt-1">{measureBreakdown.sae.note}</p>
+                      </div>
+                    )}
                   </div>
                 </div>
               ) : match && direction !== "measure" ? (
