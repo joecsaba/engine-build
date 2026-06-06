@@ -1,6 +1,7 @@
 import { Link } from "wouter";
 import { ClipboardList, ChevronRight, Wrench, PlusCircle } from "lucide-react";
 import { PageHeader } from "@/components/layout/PageHeader";
+import { SEOHead } from "@/components/SEOHead";
 import { useAuth } from "@/context/AuthContext";
 
 const tools = [
@@ -29,6 +30,12 @@ export default function BuildSheetsIndex() {
 
   return (
     <div>
+      <SEOHead
+        title="Build Sheets"
+        description="Plan and document your engine build."
+        canonical="/build-sheets"
+        noindex
+      />
       <PageHeader
         eyebrow="Build Sheets"
         title="Plan & Document Your Build"

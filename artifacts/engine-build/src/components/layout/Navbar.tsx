@@ -29,7 +29,6 @@ export function Navbar() {
     { href: "/guides", label: "Guides" },
     { href: "/shop-directory", label: "Shop Directory" },
     { href: "/cam-guide", label: "Cam Guide" },
-    { href: "/build-sheets", label: "Build Sheets" },
     { href: "/faq", label: "FAQ" },
   ];
 

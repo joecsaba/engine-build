@@ -13,7 +13,6 @@ const features = [
   { title: "40+ Calculators", desc: "Displacement, compression, ring gap, cam timing, turbo sizing, bearing clearance, and more", icon: Calculator, href: "/calculators" },
   { title: "Cam Guide", desc: "Systematic approach to selecting the right camshaft for your combination", icon: Settings2, href: "/cam-guide" },
   { title: "Engine Data", desc: "Specs, head data, clearances, and VIN decoder for 3,500+ engines", icon: Database, href: "/engine-data" },
-  { title: "Build Sheets", desc: "Guided engine build wizard and printable record sheets for documenting your project", icon: Wrench, href: "/build-sheets" },
 ];
 
 const calculators = [
