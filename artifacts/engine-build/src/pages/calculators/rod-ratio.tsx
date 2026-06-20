@@ -36,6 +36,226 @@ function getRatioZone(ratio: number): { label: string; color: string; position: 
   return { label: "Very high ratio — Diminishing returns, packaging issues", color: "text-purple-600", position };
 }
 
+// Distance of piston below TDC for a given crank angle (radians).
+// Standard slider-crank equation: x(θ) = r(1 - cosθ) + L(1 - √(1 - (r/L)²sin²θ))
+// where r = stroke/2 and L = rod length. Returns the same units as stroke/L.
+function pistonDisplacement(crankAngleRad: number, stroke: number, rodLength: number): number {
+  const r = stroke / 2;
+  const L = rodLength;
+  const sin = Math.sin(crankAngleRad);
+  const cos = Math.cos(crankAngleRad);
+  return r * (1 - cos) + L * (1 - Math.sqrt(1 - (r / L) ** 2 * sin ** 2));
+}
+
+// Dwell in degrees of crank rotation where the piston stays within
+// `thresholdFraction` of stroke from TDC (or BDC). 0.005 = within 0.5% of stroke.
+function computeDwell(stroke: number, rodLength: number, thresholdFraction = 0.005) {
+  const step = 0.25; // degrees, fine enough for accurate counts
+  const threshold = thresholdFraction * stroke;
+  let tdc = 0;
+  let bdc = 0;
+  for (let deg = 0; deg < 360; deg += step) {
+    const x = pistonDisplacement((deg * Math.PI) / 180, stroke, rodLength);
+    if (x < threshold) tdc += step;
+    if (x > stroke - threshold) bdc += step;
+  }
+  return { tdcDeg: tdc, bdcDeg: bdc };
+}
+
+// Build an SVG path string for a piston-position curve over 0-360° crank.
+// Y is normalized so 1 = TDC (top) and 0 = BDC (bottom).
+function buildCurvePath(stroke: number, rodLength: number, width: number, height: number, samples = 361): string {
+  const cmds: string[] = [];
+  for (let i = 0; i < samples; i++) {
+    const deg = (i / (samples - 1)) * 360;
+    const x = pistonDisplacement((deg * Math.PI) / 180, stroke, rodLength);
+    const normalized = 1 - x / stroke; // 1 = TDC, 0 = BDC
+    const px = (i / (samples - 1)) * width;
+    const py = (1 - normalized) * height;
+    cmds.push(`${i === 0 ? "M" : "L"}${px.toFixed(2)},${py.toFixed(2)}`);
+  }
+  return cmds.join(" ");
+}
+
+// Interactive piston-dwell chart. Shows piston position vs crank angle for
+// the user's current rod ratio and a user-adjustable comparison ratio so the
+// effect of a rod change is visible.
+function DwellChart({ stroke, rodLength }: { stroke: number; rodLength: number }) {
+  const [compareRatio, setCompareRatio] = useState("1.75");
+
+  // Chart geometry (SVG viewBox units).
+  const W = 600;
+  const H = 280;
+  const M = { top: 16, right: 16, bottom: 32, left: 44 };
+  const plotW = W - M.left - M.right;
+  const plotH = H - M.top - M.bottom;
+
+  const validStroke = stroke > 0;
+  const validRod = rodLength > 0;
+  const currentRatio = validStroke && validRod ? rodLength / stroke : 0;
+  const cmpRatioNum = parseFloat(compareRatio) || 0;
+  const compareRodLen = cmpRatioNum * stroke;
+
+  const { current, comparison } = useMemo(() => {
+    if (!validStroke || !validRod) return { current: null, comparison: null };
+    return {
+      current: {
+        path: buildCurvePath(stroke, rodLength, plotW, plotH),
+        dwell: computeDwell(stroke, rodLength),
+      },
+      comparison: cmpRatioNum > 0 ? {
+        path: buildCurvePath(stroke, compareRodLen, plotW, plotH),
+        dwell: computeDwell(stroke, compareRodLen),
+      } : null,
+    };
+  }, [stroke, rodLength, compareRodLen, cmpRatioNum, validStroke, validRod, plotW, plotH]);
+
+  if (!current) {
+    return (
+      <Card className="mb-8">
+        <CardHeader><CardTitle>Piston Dwell Profile</CardTitle></CardHeader>
+        <CardContent>
+          <p className="text-sm text-muted-foreground">Enter a stroke and rod length above to see the dwell chart.</p>
+        </CardContent>
+      </Card>
+    );
+  }
+
+  // Top-of-stroke dwell band: top 0.5% of the chart (orange tint, near TDC).
+  const tdcBandHeight = plotH * 0.005;
+  // BDC band: bottom 0.5% of the chart.
+  const bdcBandY = plotH * 0.995;
+
+  return (
+    <Card className="mb-8">
+      <CardHeader><CardTitle>Piston Dwell Profile</CardTitle></CardHeader>
+      <CardContent>
+        <p className="text-sm text-muted-foreground mb-4">
+          Piston position vs crank angle for one full revolution. Flat regions at top (TDC) and bottom (BDC) are where the piston dwells. Longer rods spread dwell toward TDC; shorter rods toward BDC.
+        </p>
+
+        {/* Comparison-ratio input */}
+        <div className="flex items-center gap-3 mb-4">
+          <Label htmlFor="cmp-ratio" className="text-sm text-muted-foreground whitespace-nowrap">Compare against rod ratio:</Label>
+          <Input
+            id="cmp-ratio"
+            type="number"
+            step="0.05"
+            min="1.4"
+            max="2.2"
+            value={compareRatio}
+            onChange={(e) => setCompareRatio(e.target.value)}
+            className="w-28 font-mono"
+          />
+          {cmpRatioNum > 0 && (
+            <span className="text-xs text-muted-foreground">
+              = {compareRodLen.toFixed(3)}" rod on a {stroke.toFixed(3)}" stroke
+            </span>
+          )}
+        </div>
+
+        {/* Chart */}
+        <div className="w-full">
+          <svg viewBox={`0 0 ${W} ${H}`} className="w-full h-auto" preserveAspectRatio="xMidYMid meet">
+            <g transform={`translate(${M.left},${M.top})`}>
+              {/* Dwell-zone bands */}
+              <rect x={0} y={0} width={plotW} height={tdcBandHeight} fill="#E85D04" opacity={0.08} />
+              <rect x={0} y={bdcBandY} width={plotW} height={plotH - bdcBandY} fill="#0369a1" opacity={0.08} />
+
+              {/* Y-axis grid + labels */}
+              {[0, 0.25, 0.5, 0.75, 1].map((frac) => {
+                const y = (1 - frac) * plotH;
+                return (
+                  <g key={frac}>
+                    <line x1={0} x2={plotW} y1={y} y2={y} stroke="#e5e7eb" strokeWidth={1} strokeDasharray={frac === 0 || frac === 1 ? undefined : "2,3"} />
+                    <text x={-8} y={y + 4} fontSize={10} textAnchor="end" fill="#6b7280">
+                      {frac === 1 ? "TDC" : frac === 0 ? "BDC" : `${(frac * 100).toFixed(0)}%`}
+                    </text>
+                  </g>
+                );
+              })}
+
+              {/* X-axis grid + labels (every 90°) */}
+              {[0, 90, 180, 270, 360].map((deg) => {
+                const x = (deg / 360) * plotW;
+                return (
+                  <g key={deg}>
+                    <line x1={x} x2={x} y1={0} y2={plotH} stroke="#e5e7eb" strokeWidth={1} strokeDasharray={deg === 0 || deg === 360 ? undefined : "2,3"} />
+                    <text x={x} y={plotH + 16} fontSize={10} textAnchor="middle" fill="#6b7280">
+                      {deg === 0 ? "TDC 0°" : deg === 180 ? "BDC 180°" : deg === 360 ? "TDC 360°" : `${deg}°`}
+                    </text>
+                  </g>
+                );
+              })}
+
+              {/* Comparison curve */}
+              {comparison && (
+                <path d={comparison.path} fill="none" stroke="#475569" strokeWidth={1.5} strokeDasharray="4,3" opacity={0.8} />
+              )}
+
+              {/* Current curve */}
+              <path d={current.path} fill="none" stroke="#E85D04" strokeWidth={2.25} />
+            </g>
+          </svg>
+        </div>
+
+        {/* Legend */}
+        <div className="flex flex-wrap gap-4 mt-3 text-xs">
+          <span className="flex items-center gap-2">
+            <span className="inline-block w-4 h-0.5 bg-[#E85D04]" />
+            Your ratio: <strong className="font-mono">{currentRatio.toFixed(3)}</strong>
+          </span>
+          {comparison && (
+            <span className="flex items-center gap-2">
+              <span className="inline-block w-4 h-0.5 border-t-2 border-dashed border-slate-600" />
+              Comparison: <strong className="font-mono">{cmpRatioNum.toFixed(3)}</strong>
+            </span>
+          )}
+          <span className="text-muted-foreground">Shaded bands = within 0.5% of stroke from TDC / BDC.</span>
+        </div>
+
+        {/* Dwell readout */}
+        <div className="grid grid-cols-2 sm:grid-cols-4 gap-3 mt-5">
+          <div className="rounded-lg bg-orange-50 border border-orange-200 p-3">
+            <p className="text-[10px] uppercase tracking-wider text-orange-900 font-semibold mb-1">Your TDC dwell</p>
+            <p className="text-xl font-bold font-mono text-orange-900">{current.dwell.tdcDeg.toFixed(1)}°</p>
+            <p className="text-[10px] text-orange-700">crank rotation within 0.5% of TDC</p>
+          </div>
+          <div className="rounded-lg bg-sky-50 border border-sky-200 p-3">
+            <p className="text-[10px] uppercase tracking-wider text-sky-900 font-semibold mb-1">Your BDC dwell</p>
+            <p className="text-xl font-bold font-mono text-sky-900">{current.dwell.bdcDeg.toFixed(1)}°</p>
+            <p className="text-[10px] text-sky-700">crank rotation within 0.5% of BDC</p>
+          </div>
+          {comparison ? (
+            <>
+              <div className="rounded-lg bg-gray-50 border border-gray-200 p-3">
+                <p className="text-[10px] uppercase tracking-wider text-gray-600 font-semibold mb-1">Cmp TDC dwell</p>
+                <p className="text-xl font-bold font-mono text-gray-700">{comparison.dwell.tdcDeg.toFixed(1)}°</p>
+                <p className="text-[10px] text-gray-500">
+                  {comparison.dwell.tdcDeg > current.dwell.tdcDeg ? "+" : ""}
+                  {(comparison.dwell.tdcDeg - current.dwell.tdcDeg).toFixed(2)}° vs yours
+                </p>
+              </div>
+              <div className="rounded-lg bg-gray-50 border border-gray-200 p-3">
+                <p className="text-[10px] uppercase tracking-wider text-gray-600 font-semibold mb-1">Cmp BDC dwell</p>
+                <p className="text-xl font-bold font-mono text-gray-700">{comparison.dwell.bdcDeg.toFixed(1)}°</p>
+                <p className="text-[10px] text-gray-500">
+                  {comparison.dwell.bdcDeg > current.dwell.bdcDeg ? "+" : ""}
+                  {(comparison.dwell.bdcDeg - current.dwell.bdcDeg).toFixed(2)}° vs yours
+                </p>
+              </div>
+            </>
+          ) : (
+            <div className="col-span-2 rounded-lg bg-muted/50 border border-dashed border-gray-300 p-3 flex items-center justify-center">
+              <p className="text-xs text-muted-foreground">Enter a comparison ratio above to see the dwell difference.</p>
+            </div>
+          )}
+        </div>
+      </CardContent>
+    </Card>
+  );
+}
+
 export default function RodRatioCalculator() {
   const platform = useDefaultPlatform();
   const [stroke, setStroke] = useBuildField("shortBlock.stroke", platform?.stroke ?? "3.622");
@@ -130,6 +350,8 @@ export default function RodRatioCalculator() {
           </CardContent>
         </Card>
       </div>
+
+      <DwellChart stroke={s} rodLength={r} />
 
       <Card className="mb-8">
         <CardHeader><CardTitle>What Rod Ratio Affects</CardTitle></CardHeader>
