@@ -77,11 +77,25 @@ function buildCurvePath(stroke: number, rodLength: number, width: number, height
   return cmds.join(" ");
 }
 
-// Interactive piston-dwell chart. Shows piston position vs crank angle for
-// the user's current rod ratio and a user-adjustable comparison ratio so the
-// effect of a rod change is visible.
+// Common rod-length presets engine builders compare against the stock rod.
+// Triggered by quick-pick chips below the comparison input.
+const ROD_PRESETS: Array<{ label: string; length: number }> = [
+  { label: '5.700"', length: 5.700 },  // SBC stock
+  { label: '5.850"', length: 5.850 },  // Common stroker step
+  { label: '6.000"', length: 6.000 },  // Standard performance rod
+  { label: '6.098"', length: 6.098 },  // LS / Coyote
+  { label: '6.125"', length: 6.125 },  // Common SBC stroker
+  { label: '6.200"', length: 6.200 },  // Tall-deck step
+  { label: '6.535"', length: 6.535 },  // BBC stock
+];
+
+// Interactive piston-dwell chart. Shows two piston-position curves overlaid
+// (current rod + a comparison rod) so the user can see how a rod-length
+// change shifts the dwell at TDC vs BDC.
 function DwellChart({ stroke, rodLength }: { stroke: number; rodLength: number }) {
-  const [compareRatio, setCompareRatio] = useState("1.75");
+  // Default comparison rod = current + 0.300" (a common stroker-style upgrade
+  // like SBC 5.700" -> 6.000"). Reset if the current rod length changes.
+  const [compareRodInput, setCompareRodInput] = useState("");
 
   // Chart geometry (SVG viewBox units).
   const W = 600;
@@ -93,8 +107,12 @@ function DwellChart({ stroke, rodLength }: { stroke: number; rodLength: number }
   const validStroke = stroke > 0;
   const validRod = rodLength > 0;
   const currentRatio = validStroke && validRod ? rodLength / stroke : 0;
-  const cmpRatioNum = parseFloat(compareRatio) || 0;
-  const compareRodLen = cmpRatioNum * stroke;
+
+  // Comparison rod: use user's input if set, otherwise default to current + 0.300"
+  const compareRodLen = compareRodInput.trim() === ""
+    ? (validRod ? rodLength + 0.300 : 0)
+    : (parseFloat(compareRodInput) || 0);
+  const compareRatio = validStroke && compareRodLen > 0 ? compareRodLen / stroke : 0;
 
   const { current, comparison } = useMemo(() => {
     if (!validStroke || !validRod) return { current: null, comparison: null };
@@ -103,12 +121,12 @@ function DwellChart({ stroke, rodLength }: { stroke: number; rodLength: number }
         path: buildCurvePath(stroke, rodLength, plotW, plotH),
         dwell: computeDwell(stroke, rodLength),
       },
-      comparison: cmpRatioNum > 0 ? {
+      comparison: compareRodLen > 0 ? {
         path: buildCurvePath(stroke, compareRodLen, plotW, plotH),
         dwell: computeDwell(stroke, compareRodLen),
       } : null,
     };
-  }, [stroke, rodLength, compareRodLen, cmpRatioNum, validStroke, validRod, plotW, plotH]);
+  }, [stroke, rodLength, compareRodLen, validStroke, validRod, plotW, plotH]);
 
   if (!current) {
     return (
@@ -134,24 +152,55 @@ function DwellChart({ stroke, rodLength }: { stroke: number; rodLength: number }
           Piston position vs crank angle for one full revolution. Flat regions at top (TDC) and bottom (BDC) are where the piston dwells. Longer rods spread dwell toward TDC; shorter rods toward BDC.
         </p>
 
-        {/* Comparison-ratio input */}
-        <div className="flex items-center gap-3 mb-4">
-          <Label htmlFor="cmp-ratio" className="text-sm text-muted-foreground whitespace-nowrap">Compare against rod ratio:</Label>
-          <Input
-            id="cmp-ratio"
-            type="number"
-            step="0.05"
-            min="1.4"
-            max="2.2"
-            value={compareRatio}
-            onChange={(e) => setCompareRatio(e.target.value)}
-            className="w-28 font-mono"
-          />
-          {cmpRatioNum > 0 && (
-            <span className="text-xs text-muted-foreground">
-              = {compareRodLen.toFixed(3)}" rod on a {stroke.toFixed(3)}" stroke
-            </span>
-          )}
+        {/* Comparison rod-length input + quick presets */}
+        <div className="mb-4 space-y-2">
+          <div className="flex items-center gap-3 flex-wrap">
+            <Label htmlFor="cmp-rod" className="text-sm text-muted-foreground whitespace-nowrap">Compare against rod length:</Label>
+            <Input
+              id="cmp-rod"
+              type="number"
+              step="0.025"
+              min="4.0"
+              max="8.0"
+              placeholder={validRod ? (rodLength + 0.300).toFixed(3) : "6.000"}
+              value={compareRodInput}
+              onChange={(e) => setCompareRodInput(e.target.value)}
+              className="w-32 font-mono"
+            />
+            <span className="text-xs text-muted-foreground">inches</span>
+            {compareRodLen > 0 && (
+              <span className="text-xs text-muted-foreground">
+                = ratio <strong className="font-mono">{compareRatio.toFixed(3)}</strong>
+                {validRod && (
+                  <> ({compareRodLen > rodLength ? "+" : ""}{(compareRodLen - rodLength).toFixed(3)}" vs your rod)</>
+                )}
+              </span>
+            )}
+          </div>
+          <div className="flex items-center gap-2 flex-wrap">
+            <span className="text-xs text-muted-foreground">Quick picks:</span>
+            {ROD_PRESETS.map((p) => (
+              <button
+                key={p.label}
+                type="button"
+                onClick={() => setCompareRodInput(p.length.toFixed(3))}
+                className={`text-xs px-2 py-1 rounded-md border font-mono transition-colors ${
+                  Math.abs(compareRodLen - p.length) < 0.001
+                    ? "bg-slate-700 text-white border-slate-700"
+                    : "bg-white text-slate-600 border-slate-300 hover:border-slate-500 hover:bg-slate-50"
+                }`}
+              >
+                {p.label}
+              </button>
+            ))}
+            <button
+              type="button"
+              onClick={() => setCompareRodInput("")}
+              className="text-xs px-2 py-1 rounded-md border border-dashed border-slate-300 text-slate-500 hover:text-slate-700 hover:border-slate-500"
+            >
+              reset
+            </button>
+          </div>
         </div>
 
         {/* Chart */}
@@ -200,54 +249,79 @@ function DwellChart({ stroke, rodLength }: { stroke: number; rodLength: number }
         </div>
 
         {/* Legend */}
-        <div className="flex flex-wrap gap-4 mt-3 text-xs">
+        <div className="flex flex-wrap gap-x-5 gap-y-2 mt-3 text-xs">
           <span className="flex items-center gap-2">
             <span className="inline-block w-4 h-0.5 bg-[#E85D04]" />
-            Your ratio: <strong className="font-mono">{currentRatio.toFixed(3)}</strong>
+            <span>
+              Your rod: <strong className="font-mono">{rodLength.toFixed(3)}"</strong>
+              {" "}
+              <span className="text-muted-foreground">(ratio {currentRatio.toFixed(3)})</span>
+            </span>
           </span>
           {comparison && (
             <span className="flex items-center gap-2">
               <span className="inline-block w-4 h-0.5 border-t-2 border-dashed border-slate-600" />
-              Comparison: <strong className="font-mono">{cmpRatioNum.toFixed(3)}</strong>
+              <span>
+                Comparison: <strong className="font-mono">{compareRodLen.toFixed(3)}"</strong>
+                {" "}
+                <span className="text-muted-foreground">(ratio {compareRatio.toFixed(3)})</span>
+              </span>
             </span>
           )}
           <span className="text-muted-foreground">Shaded bands = within 0.5% of stroke from TDC / BDC.</span>
         </div>
 
-        {/* Dwell readout */}
-        <div className="grid grid-cols-2 sm:grid-cols-4 gap-3 mt-5">
-          <div className="rounded-lg bg-orange-50 border border-orange-200 p-3">
-            <p className="text-[10px] uppercase tracking-wider text-orange-900 font-semibold mb-1">Your TDC dwell</p>
-            <p className="text-xl font-bold font-mono text-orange-900">{current.dwell.tdcDeg.toFixed(1)}°</p>
-            <p className="text-[10px] text-orange-700">crank rotation within 0.5% of TDC</p>
+        {/* Dwell readout — two rows of two cells: your rod (TDC + BDC), comparison rod (TDC + BDC) */}
+        <div className="grid grid-cols-1 sm:grid-cols-2 gap-3 mt-5">
+          {/* Your rod */}
+          <div className="rounded-lg border-2 border-[#E85D04]/40 bg-orange-50/60 p-3">
+            <p className="text-[10px] uppercase tracking-wider text-[#E85D04] font-bold mb-2">
+              Your rod — {rodLength.toFixed(3)}" (ratio {currentRatio.toFixed(3)})
+            </p>
+            <div className="grid grid-cols-2 gap-2">
+              <div>
+                <p className="text-[10px] text-orange-900/70">TDC dwell</p>
+                <p className="text-lg font-bold font-mono text-orange-900">{current.dwell.tdcDeg.toFixed(1)}°</p>
+              </div>
+              <div>
+                <p className="text-[10px] text-sky-900/70">BDC dwell</p>
+                <p className="text-lg font-bold font-mono text-sky-900">{current.dwell.bdcDeg.toFixed(1)}°</p>
+              </div>
+            </div>
           </div>
-          <div className="rounded-lg bg-sky-50 border border-sky-200 p-3">
-            <p className="text-[10px] uppercase tracking-wider text-sky-900 font-semibold mb-1">Your BDC dwell</p>
-            <p className="text-xl font-bold font-mono text-sky-900">{current.dwell.bdcDeg.toFixed(1)}°</p>
-            <p className="text-[10px] text-sky-700">crank rotation within 0.5% of BDC</p>
-          </div>
+
+          {/* Comparison rod */}
           {comparison ? (
-            <>
-              <div className="rounded-lg bg-gray-50 border border-gray-200 p-3">
-                <p className="text-[10px] uppercase tracking-wider text-gray-600 font-semibold mb-1">Cmp TDC dwell</p>
-                <p className="text-xl font-bold font-mono text-gray-700">{comparison.dwell.tdcDeg.toFixed(1)}°</p>
-                <p className="text-[10px] text-gray-500">
-                  {comparison.dwell.tdcDeg > current.dwell.tdcDeg ? "+" : ""}
-                  {(comparison.dwell.tdcDeg - current.dwell.tdcDeg).toFixed(2)}° vs yours
-                </p>
+            <div className="rounded-lg border-2 border-slate-400/40 bg-slate-50 p-3">
+              <p className="text-[10px] uppercase tracking-wider text-slate-700 font-bold mb-2">
+                Comparison — {compareRodLen.toFixed(3)}" (ratio {compareRatio.toFixed(3)})
+              </p>
+              <div className="grid grid-cols-2 gap-2">
+                <div>
+                  <p className="text-[10px] text-slate-600">TDC dwell</p>
+                  <p className="text-lg font-bold font-mono text-slate-700">
+                    {comparison.dwell.tdcDeg.toFixed(1)}°
+                  </p>
+                  <p className="text-[10px] text-slate-500">
+                    {comparison.dwell.tdcDeg > current.dwell.tdcDeg ? "+" : ""}
+                    {(comparison.dwell.tdcDeg - current.dwell.tdcDeg).toFixed(2)}° vs yours
+                  </p>
+                </div>
+                <div>
+                  <p className="text-[10px] text-slate-600">BDC dwell</p>
+                  <p className="text-lg font-bold font-mono text-slate-700">
+                    {comparison.dwell.bdcDeg.toFixed(1)}°
+                  </p>
+                  <p className="text-[10px] text-slate-500">
+                    {comparison.dwell.bdcDeg > current.dwell.bdcDeg ? "+" : ""}
+                    {(comparison.dwell.bdcDeg - current.dwell.bdcDeg).toFixed(2)}° vs yours
+                  </p>
+                </div>
               </div>
-              <div className="rounded-lg bg-gray-50 border border-gray-200 p-3">
-                <p className="text-[10px] uppercase tracking-wider text-gray-600 font-semibold mb-1">Cmp BDC dwell</p>
-                <p className="text-xl font-bold font-mono text-gray-700">{comparison.dwell.bdcDeg.toFixed(1)}°</p>
-                <p className="text-[10px] text-gray-500">
-                  {comparison.dwell.bdcDeg > current.dwell.bdcDeg ? "+" : ""}
-                  {(comparison.dwell.bdcDeg - current.dwell.bdcDeg).toFixed(2)}° vs yours
-                </p>
-              </div>
-            </>
+            </div>
           ) : (
-            <div className="col-span-2 rounded-lg bg-muted/50 border border-dashed border-gray-300 p-3 flex items-center justify-center">
-              <p className="text-xs text-muted-foreground">Enter a comparison ratio above to see the dwell difference.</p>
+            <div className="rounded-lg bg-muted/50 border border-dashed border-gray-300 p-3 flex items-center justify-center">
+              <p className="text-xs text-muted-foreground">Enter a comparison rod length above to see the dwell difference.</p>
             </div>
           )}
         </div>
