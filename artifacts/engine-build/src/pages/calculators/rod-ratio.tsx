@@ -77,6 +77,44 @@ function buildCurvePath(stroke: number, rodLength: number, width: number, height
   return cmds.join(" ");
 }
 
+// Piston acceleration vs crank angle. Returns d²x/dθ² (units: inches per
+// radian²) at each of `samples` crank angles between 0 and 360°.
+// Computed via central finite difference of the analytical position function
+// — simpler than the closed-form 2nd derivative and well-behaved for plotting.
+function computeAccelSeries(stroke: number, rodLength: number, samples = 361): number[] {
+  const positions: number[] = [];
+  for (let i = 0; i < samples; i++) {
+    const deg = (i / (samples - 1)) * 360;
+    positions.push(pistonDisplacement((deg * Math.PI) / 180, stroke, rodLength));
+  }
+  const accels: number[] = [];
+  const dtheta = (2 * Math.PI) / (samples - 1);
+  const N = samples - 1; // periodic period (sample N = sample 0)
+  for (let i = 0; i < samples; i++) {
+    const im = (i - 1 + N) % N;
+    const ip = (i + 1) % N;
+    accels.push((positions[ip] - 2 * positions[i] + positions[im]) / (dtheta * dtheta));
+  }
+  return accels;
+}
+
+// Build SVG path for an acceleration curve. The curve is centered vertically
+// at height/2 (the y=0 line) and scaled by `commonMaxAbs` so multiple curves
+// can be overlaid on a comparable scale.
+function buildAccelPath(accels: number[], commonMaxAbs: number, width: number, height: number): string {
+  const cmds: string[] = [];
+  const N = accels.length;
+  // Use 90% of the half-height so peaks don't touch the chart edges.
+  const scale = (height / 2) * 0.9;
+  for (let i = 0; i < N; i++) {
+    const px = (i / (N - 1)) * width;
+    const normalized = accels[i] / commonMaxAbs; // ~-1 to +1
+    const py = height / 2 - normalized * scale;
+    cmds.push(`${i === 0 ? "M" : "L"}${px.toFixed(2)},${py.toFixed(2)}`);
+  }
+  return cmds.join(" ");
+}
+
 // Common rod-length presets engine builders compare against the stock rod.
 // Triggered by quick-pick chips below the comparison input.
 const ROD_PRESETS: Array<{ label: string; length: number }> = [
@@ -114,8 +152,21 @@ function DwellChart({ stroke, rodLength }: { stroke: number; rodLength: number }
     : (parseFloat(compareRodInput) || 0);
   const compareRatio = validStroke && compareRodLen > 0 ? compareRodLen / stroke : 0;
 
-  const { current, comparison } = useMemo(() => {
-    if (!validStroke || !validRod) return { current: null, comparison: null };
+  // Acceleration chart geometry (separate from position chart).
+  const accelH = 180;
+  const accelPlotH = accelH - M.top - M.bottom;
+
+  const { current, comparison, accelMaxAbs, currentAccel, comparisonAccel } = useMemo(() => {
+    if (!validStroke || !validRod) {
+      return { current: null, comparison: null, accelMaxAbs: 0, currentAccel: null, comparisonAccel: null };
+    }
+    const curAccel = computeAccelSeries(stroke, rodLength);
+    const cmpAccel = compareRodLen > 0 ? computeAccelSeries(stroke, compareRodLen) : null;
+    const maxAbs = Math.max(
+      ...curAccel.map(Math.abs),
+      ...(cmpAccel ? cmpAccel.map(Math.abs) : [0]),
+    );
+    // Peak acceleration is at θ=0 (TDC) for any finite rod. Index 0 = θ=0°.
     return {
       current: {
         path: buildCurvePath(stroke, rodLength, plotW, plotH),
@@ -125,8 +176,19 @@ function DwellChart({ stroke, rodLength }: { stroke: number; rodLength: number }
         path: buildCurvePath(stroke, compareRodLen, plotW, plotH),
         dwell: computeDwell(stroke, compareRodLen),
       } : null,
+      accelMaxAbs: maxAbs,
+      currentAccel: {
+        path: buildAccelPath(curAccel, maxAbs, plotW, accelPlotH),
+        peakTdc: curAccel[0],
+        peakBdc: Math.abs(curAccel[Math.floor((curAccel.length - 1) / 2)]),
+      },
+      comparisonAccel: cmpAccel ? {
+        path: buildAccelPath(cmpAccel, maxAbs, plotW, accelPlotH),
+        peakTdc: cmpAccel[0],
+        peakBdc: Math.abs(cmpAccel[Math.floor((cmpAccel.length - 1) / 2)]),
+      } : null,
     };
-  }, [stroke, rodLength, compareRodLen, validStroke, validRod, plotW, plotH]);
+  }, [stroke, rodLength, compareRodLen, validStroke, validRod, plotW, plotH, accelPlotH]);
 
   if (!current) {
     return (
@@ -203,7 +265,8 @@ function DwellChart({ stroke, rodLength }: { stroke: number; rodLength: number }
           </div>
         </div>
 
-        {/* Chart */}
+        {/* Chart 1 — piston POSITION vs crank angle */}
+        <p className="text-[11px] uppercase tracking-wider text-muted-foreground font-semibold mb-1">Piston position</p>
         <div className="w-full">
           <svg viewBox={`0 0 ${W} ${H}`} className="w-full h-auto" preserveAspectRatio="xMidYMid meet">
             <g transform={`translate(${M.left},${M.top})`}>
@@ -247,6 +310,82 @@ function DwellChart({ stroke, rodLength }: { stroke: number; rodLength: number }
             </g>
           </svg>
         </div>
+
+        {/* Chart 2 — piston ACCELERATION vs crank angle.
+            This is where the dwell story is visually obvious: the TDC peak
+            shrinks as rod length grows, which IS the dwell-at-TDC benefit. */}
+        {currentAccel && (
+          <div className="mt-6">
+            <p className="text-[11px] uppercase tracking-wider text-muted-foreground font-semibold mb-1">
+              Piston acceleration <span className="text-muted-foreground/70 normal-case font-normal">— peak at TDC visibly shrinks with longer rods (that's dwell)</span>
+            </p>
+            <svg viewBox={`0 0 ${W} ${accelH}`} className="w-full h-auto" preserveAspectRatio="xMidYMid meet">
+              <g transform={`translate(${M.left},${M.top})`}>
+                {/* Zero-acceleration centerline (heaviest gridline) */}
+                <line x1={0} x2={plotW} y1={accelPlotH / 2} y2={accelPlotH / 2} stroke="#9ca3af" strokeWidth={1} />
+
+                {/* ±50% gridlines */}
+                {[0.25, 0.75].map((frac) => (
+                  <line key={frac} x1={0} x2={plotW} y1={frac * accelPlotH} y2={frac * accelPlotH}
+                    stroke="#e5e7eb" strokeWidth={1} strokeDasharray="2,3" />
+                ))}
+
+                {/* Y-axis labels: +peak / 0 / -peak */}
+                <text x={-8} y={4} fontSize={10} textAnchor="end" fill="#6b7280">+peak (TDC)</text>
+                <text x={-8} y={accelPlotH / 2 + 4} fontSize={10} textAnchor="end" fill="#6b7280">0</text>
+                <text x={-8} y={accelPlotH + 4} fontSize={10} textAnchor="end" fill="#6b7280">−peak (BDC)</text>
+
+                {/* X-axis grid + labels (every 90°) */}
+                {[0, 90, 180, 270, 360].map((deg) => {
+                  const x = (deg / 360) * plotW;
+                  return (
+                    <g key={deg}>
+                      <line x1={x} x2={x} y1={0} y2={accelPlotH} stroke="#e5e7eb" strokeWidth={1}
+                        strokeDasharray={deg === 0 || deg === 360 ? undefined : "2,3"} />
+                      <text x={x} y={accelPlotH + 16} fontSize={10} textAnchor="middle" fill="#6b7280">
+                        {deg === 0 ? "TDC 0°" : deg === 180 ? "BDC 180°" : deg === 360 ? "TDC 360°" : `${deg}°`}
+                      </text>
+                    </g>
+                  );
+                })}
+
+                {/* Comparison acceleration */}
+                {comparisonAccel && (
+                  <path d={comparisonAccel.path} fill="none" stroke="#475569" strokeWidth={1.5}
+                    strokeDasharray="4,3" opacity={0.8} />
+                )}
+
+                {/* Current acceleration */}
+                <path d={currentAccel.path} fill="none" stroke="#E85D04" strokeWidth={2.25} />
+              </g>
+            </svg>
+
+            {/* Peak-acceleration readout — the headline number for this chart */}
+            {comparisonAccel && accelMaxAbs > 0 && (() => {
+              const tdcReductionPct = ((currentAccel.peakTdc - comparisonAccel.peakTdc) / currentAccel.peakTdc) * 100;
+              const longer = compareRodLen > rodLength;
+              return (
+                <div className="mt-3 rounded-lg bg-slate-50 border border-slate-200 p-3 text-xs">
+                  <p className="text-slate-700">
+                    <strong>Peak TDC acceleration:</strong>{" "}
+                    <span className="font-mono text-[#E85D04]">{currentAccel.peakTdc.toFixed(2)}</span>{" "}
+                    (your rod) vs{" "}
+                    <span className="font-mono text-slate-700">{comparisonAccel.peakTdc.toFixed(2)}</span>{" "}
+                    (comparison)
+                    {" — "}
+                    <span className={`font-semibold ${tdcReductionPct > 0 ? "text-emerald-700" : "text-orange-700"}`}>
+                      {Math.abs(tdcReductionPct).toFixed(1)}% {tdcReductionPct > 0 ? "lower" : "higher"} with the {longer ? "longer" : "shorter"} rod
+                    </span>
+                    .
+                  </p>
+                  <p className="text-slate-500 mt-1">
+                    Lower TDC acceleration = piston spends more time near TDC = better cylinder pressure retention during combustion. This is the mechanical reason longer rods feel "easier" on the top end of the engine.
+                  </p>
+                </div>
+              );
+            })()}
+          </div>
+        )}
 
         {/* Legend */}
         <div className="flex flex-wrap gap-x-5 gap-y-2 mt-3 text-xs">
