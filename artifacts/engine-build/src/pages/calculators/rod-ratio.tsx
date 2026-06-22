@@ -166,10 +166,63 @@ const ROD_PRESETS: Array<{ label: string; length: number }> = [
   { label: '7.500"', length: 7.500 },  // F1-territory; for dramatic comparison
 ];
 
-// Interactive piston-dwell chart. Shows two piston-position curves overlaid
-// (current rod + a comparison rod) so the user can see how a rod-length
-// change shifts the dwell at TDC vs BDC.
-function DwellChart({ stroke, rodLength }: { stroke: number; rodLength: number }) {
+// One-click preset comparisons that load BOTH the stroke and rod lengths for
+// a realistic engine swap. The data is what builders actually consider —
+// upgrading stock rods to a common aftermarket length on a known platform.
+interface PlatformPreset {
+  label: string;
+  blurb: string;
+  stroke: string;
+  currentRod: string;
+  compareRod: string;
+}
+const PLATFORM_PRESETS: PlatformPreset[] = [
+  {
+    label: 'SBC 350: 5.700" → 6.000"',
+    blurb: "Stock 350 rod vs the popular 383-stroker 6-inch upgrade",
+    stroke: "3.480",
+    currentRod: "5.700",
+    compareRod: "6.000",
+  },
+  {
+    label: 'SBC 383 stroker: 5.700" → 6.000"',
+    blurb: 'Same rods, but on a 3.750" stroker crank — bigger angle change',
+    stroke: "3.750",
+    currentRod: "5.700",
+    compareRod: "6.000",
+  },
+  {
+    label: 'LS1 / LS3: 6.098" → 6.125"',
+    blurb: "Stock LS rod vs the common 6.125 aftermarket upgrade",
+    stroke: "3.622",
+    currentRod: "6.098",
+    compareRod: "6.125",
+  },
+  {
+    label: 'LS7: 6.067" → 6.300"',
+    blurb: "Stock LS7 titanium vs a race-style long-rod build",
+    stroke: "4.000",
+    currentRod: "6.067",
+    compareRod: "6.300",
+  },
+  {
+    label: 'BBC 454: 6.135" → 6.385"',
+    blurb: "Stock big-block rod vs common aftermarket length",
+    stroke: "4.000",
+    currentRod: "6.135",
+    compareRod: "6.385",
+  },
+];
+
+// Interactive piston-dwell chart. Shows piston position, acceleration, and
+// rod angle / side load for the user's current rod + a comparison rod.
+interface DwellChartProps {
+  stroke: number;
+  rodLength: number;
+  setStrokeText: (s: string) => void;
+  setRodLengthText: (r: string) => void;
+}
+function DwellChart({ stroke, rodLength, setStrokeText, setRodLengthText }: DwellChartProps) {
   // Default comparison rod = current + 0.300" (a common stroker-style upgrade
   // like SBC 5.700" -> 6.000"). Reset if the current rod length changes.
   const [compareRodInput, setCompareRodInput] = useState("");
@@ -272,6 +325,43 @@ function DwellChart({ stroke, rodLength }: { stroke: number; rodLength: number }
         <p className="text-sm text-muted-foreground mb-4">
           Piston position vs crank angle for one full revolution. Flat regions at top (TDC) and bottom (BDC) are where the piston dwells. Longer rods spread dwell toward TDC; shorter rods toward BDC.
         </p>
+
+        {/* Common platform comparisons — one click loads stroke + both rods. */}
+        <div className="mb-4 rounded-lg bg-blue-50 border border-blue-200 p-3">
+          <p className="text-[11px] uppercase tracking-wider text-blue-900 font-bold mb-2">
+            Common platform comparisons
+          </p>
+          <div className="flex flex-wrap gap-2">
+            {PLATFORM_PRESETS.map((p) => {
+              const isActive =
+                Math.abs(stroke - parseFloat(p.stroke)) < 0.001 &&
+                Math.abs(rodLength - parseFloat(p.currentRod)) < 0.001 &&
+                compareRodInput.trim() === p.compareRod;
+              return (
+                <button
+                  key={p.label}
+                  type="button"
+                  onClick={() => {
+                    setStrokeText(p.stroke);
+                    setRodLengthText(p.currentRod);
+                    setCompareRodInput(p.compareRod);
+                  }}
+                  title={p.blurb}
+                  className={`text-xs px-3 py-1.5 rounded-md border font-medium transition-colors ${
+                    isActive
+                      ? "bg-blue-900 text-white border-blue-900"
+                      : "bg-white text-blue-900 border-blue-300 hover:bg-blue-100"
+                  }`}
+                >
+                  {p.label}
+                </button>
+              );
+            })}
+          </div>
+          <p className="text-[11px] text-blue-700 mt-2">
+            Each preset loads the stroke and both rod lengths so you can see the actual geometric difference for that swap.
+          </p>
+        </div>
 
         {/* Comparison rod-length input + quick presets */}
         <div className="mb-4 space-y-2">
@@ -496,13 +586,43 @@ function DwellChart({ stroke, rodLength }: { stroke: number; rodLength: number }
               </g>
             </svg>
 
-            {/* Peak rod-angle + side-load readout. This is the DRAMATIC comparison —
-                real rod-length changes shift peak angle by ~1-3° which translates
-                to 5-25% peak-side-force reduction. */}
+            {/* Peak rod-angle + side-load readout. Contextual takeaway scales
+                with the magnitude of the change: an LS 6.098→6.125 swap moves
+                this <1% (so the message is "wash, upgrade for other reasons"),
+                while an SBC 5.700→6.000 moves it ~5% ("meaningful"), and a
+                race-style long-rod swap moves it 15%+ ("dramatic"). */}
             {comparisonSide && (() => {
               // Side load force ratio compared by tan of peak rod angle.
               const sideReductionPct = ((currentSide.peakSideLoadFactor - comparisonSide.peakSideLoadFactor) / currentSide.peakSideLoadFactor) * 100;
               const longer = compareRodLen > rodLength;
+              const absPct = Math.abs(sideReductionPct);
+              // Magnitude buckets drive the takeaway language.
+              let verdict: { tag: string; tagColor: string; line: string };
+              if (absPct < 1.5) {
+                verdict = {
+                  tag: "Essentially a wash",
+                  tagColor: "bg-gray-200 text-gray-800",
+                  line: `These two rod lengths are geometrically almost identical (peak rod angle within ${Math.abs(currentSide.peakAngle - comparisonSide.peakAngle).toFixed(2)}°). If you're picking between them, the choice should come from material, beam style (I- vs H-beam), bolt grade (stock vs ARP 2000 vs 625+), balance accuracy, and price — not from dwell or side load. The geometry doesn't change in any practical sense.`,
+                };
+              } else if (absPct < 4) {
+                verdict = {
+                  tag: "Modest improvement",
+                  tagColor: "bg-amber-100 text-amber-900",
+                  line: `Real, measurable, but not dramatic. You'd see this as slightly less skirt wear at high mileage. Most builders making this swap are doing it as part of a larger upgrade (new pistons, balance work) where the rod choice is incremental rather than headline.`,
+                };
+              } else if (absPct < 10) {
+                verdict = {
+                  tag: "Meaningful improvement",
+                  tagColor: "bg-emerald-100 text-emerald-900",
+                  line: `Worth doing. This is the magnitude builders feel — less cylinder-wall scoring at sustained high RPM, longer top-end engine life, slightly less ring tilt. The classic SBC 350-to-383-stroker 6"-rod swap lives here.`,
+                };
+              } else {
+                verdict = {
+                  tag: "Significant — race territory",
+                  tagColor: "bg-blue-100 text-blue-900",
+                  line: `Major geometric change. This is the rod-length difference seen in race engines and F1 power units that need to survive at sustained 12,000+ RPM. For street builds it's overkill; packaging usually doesn't allow rods this long without raised cam tunnels or shorter pistons.`,
+                };
+              }
               return (
                 <div className="mt-3 rounded-lg bg-slate-50 border border-slate-200 p-3 text-xs">
                   <p className="text-slate-700">
@@ -515,12 +635,18 @@ function DwellChart({ stroke, rodLength }: { stroke: number; rodLength: number }
                   <p className="text-slate-700 mt-1">
                     <strong>Peak side load on the cylinder wall:</strong>{" "}
                     <span className={`font-semibold ${sideReductionPct > 0 ? "text-emerald-700" : "text-orange-700"}`}>
-                      {Math.abs(sideReductionPct).toFixed(1)}% {sideReductionPct > 0 ? "lower" : "higher"} with the {longer ? "longer" : "shorter"} rod
+                      {absPct.toFixed(1)}% {sideReductionPct > 0 ? "lower" : "higher"} with the {longer ? "longer" : "shorter"} rod
                     </span>
                     {" "}(side load = combustion force × tan of rod angle).
                   </p>
-                  <p className="text-slate-500 mt-1">
-                    Side load is the force that mashes the piston skirt into the cylinder wall. The major thrust face (the side opposite the crank rotation during the power stroke) carries 70–80% of this load — it's where most piston-skirt and cylinder-wall wear comes from. Halving rod-angle peak roughly halves wear at the major thrust face.
+                  <div className="mt-2 flex items-start gap-2">
+                    <span className={`text-[10px] uppercase tracking-wider font-bold px-2 py-0.5 rounded ${verdict.tagColor} whitespace-nowrap shrink-0`}>
+                      {verdict.tag}
+                    </span>
+                    <p className="text-slate-600 leading-relaxed">{verdict.line}</p>
+                  </div>
+                  <p className="text-slate-500 mt-2 leading-relaxed">
+                    Side load is the force that mashes the piston skirt into the cylinder wall. The major thrust face (the side opposite the crank rotation during the power stroke) carries 70–80% of this load — it's where most piston-skirt and cylinder-wall wear comes from.
                   </p>
                 </div>
               );
@@ -705,7 +831,12 @@ export default function RodRatioCalculator() {
         </Card>
       </div>
 
-      <DwellChart stroke={s} rodLength={r} />
+      <DwellChart
+        stroke={s}
+        rodLength={r}
+        setStrokeText={setStroke}
+        setRodLengthText={setRodLength}
+      />
 
       <Card className="mb-8">
         <CardHeader><CardTitle>What Rod Ratio Affects</CardTitle></CardHeader>
