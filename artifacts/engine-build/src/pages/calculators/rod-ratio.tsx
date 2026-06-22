@@ -77,6 +77,40 @@ function buildCurvePath(stroke: number, rodLength: number, width: number, height
   return cmds.join(" ");
 }
 
+// Rod angle (degrees, signed) vs crank angle. The rod angle φ from cylinder
+// centerline at crank angle θ satisfies sin(φ) = (r/L)·sin(θ). Peak rod
+// angle is arcsin(r/L), occurring at θ = 90° and 270°. Side load on the
+// piston skirt scales with tan(φ) — so this curve IS the side-load shape,
+// just in friendlier units (degrees instead of force ratio).
+function computeRodAngleSeries(stroke: number, rodLength: number, samples = 361): number[] {
+  const r = stroke / 2;
+  const ratio = r / rodLength;
+  const angles: number[] = [];
+  for (let i = 0; i < samples; i++) {
+    const theta = (i / (samples - 1)) * 2 * Math.PI;
+    const phi = Math.asin(ratio * Math.sin(theta));
+    angles.push((phi * 180) / Math.PI); // degrees
+  }
+  return angles;
+}
+
+// Build SVG path for rod-angle / side-load curve. Centered at height/2 (y=0)
+// with the +peak (one direction of rod swing) at top and -peak (other
+// direction) at bottom. Common-scale normalization so two rod lengths can
+// be compared on the same axis.
+function buildRodAnglePath(angles: number[], commonMaxAbs: number, width: number, height: number): string {
+  const cmds: string[] = [];
+  const N = angles.length;
+  const scale = (height / 2) * 0.9;
+  for (let i = 0; i < N; i++) {
+    const px = (i / (N - 1)) * width;
+    const normalized = angles[i] / commonMaxAbs; // ~-1 to +1
+    const py = height / 2 - normalized * scale;
+    cmds.push(`${i === 0 ? "M" : "L"}${px.toFixed(2)},${py.toFixed(2)}`);
+  }
+  return cmds.join(" ");
+}
+
 // Piston acceleration vs crank angle. Returns d²x/dθ² (units: inches per
 // radian²) at each of `samples` crank angles between 0 and 360°.
 // Computed via central finite difference of the analytical position function
@@ -116,7 +150,9 @@ function buildAccelPath(accels: number[], commonMaxAbs: number, width: number, h
 }
 
 // Common rod-length presets engine builders compare against the stock rod.
-// Triggered by quick-pick chips below the comparison input.
+// Triggered by quick-pick chips below the comparison input. Spans from stock
+// SBC at the low end up to F1-territory long rods (~7.500") so the user can
+// see dramatic visual differences on the charts.
 const ROD_PRESETS: Array<{ label: string; length: number }> = [
   { label: '5.700"', length: 5.700 },  // SBC stock
   { label: '5.850"', length: 5.850 },  // Common stroker step
@@ -125,6 +161,9 @@ const ROD_PRESETS: Array<{ label: string; length: number }> = [
   { label: '6.125"', length: 6.125 },  // Common SBC stroker
   { label: '6.200"', length: 6.200 },  // Tall-deck step
   { label: '6.535"', length: 6.535 },  // BBC stock
+  { label: '6.700"', length: 6.700 },  // long-rod street/strip
+  { label: '7.100"', length: 7.100 },  // big-block race / drag long-rod
+  { label: '7.500"', length: 7.500 },  // F1-territory; for dramatic comparison
 ];
 
 // Interactive piston-dwell chart. Shows two piston-position curves overlaid
@@ -146,9 +185,10 @@ function DwellChart({ stroke, rodLength }: { stroke: number; rodLength: number }
   const validRod = rodLength > 0;
   const currentRatio = validStroke && validRod ? rodLength / stroke : 0;
 
-  // Comparison rod: use user's input if set, otherwise default to current + 0.300"
+  // Comparison rod: use user's input if set, otherwise default to current + 0.500"
+  // (chosen to be visibly different on the charts — +0.300 was too subtle).
   const compareRodLen = compareRodInput.trim() === ""
-    ? (validRod ? rodLength + 0.300 : 0)
+    ? (validRod ? rodLength + 0.500 : 0)
     : (parseFloat(compareRodInput) || 0);
   const compareRatio = validStroke && compareRodLen > 0 ? compareRodLen / stroke : 0;
 
@@ -156,17 +196,27 @@ function DwellChart({ stroke, rodLength }: { stroke: number; rodLength: number }
   const accelH = 180;
   const accelPlotH = accelH - M.top - M.bottom;
 
-  const { current, comparison, accelMaxAbs, currentAccel, comparisonAccel } = useMemo(() => {
+  const { current, comparison, currentAccel, comparisonAccel, currentSide, comparisonSide } = useMemo(() => {
     if (!validStroke || !validRod) {
-      return { current: null, comparison: null, accelMaxAbs: 0, currentAccel: null, comparisonAccel: null };
+      return { current: null, comparison: null, currentAccel: null, comparisonAccel: null, currentSide: null, comparisonSide: null };
     }
     const curAccel = computeAccelSeries(stroke, rodLength);
     const cmpAccel = compareRodLen > 0 ? computeAccelSeries(stroke, compareRodLen) : null;
-    const maxAbs = Math.max(
+    const accelMaxAbs = Math.max(
       ...curAccel.map(Math.abs),
       ...(cmpAccel ? cmpAccel.map(Math.abs) : [0]),
     );
-    // Peak acceleration is at θ=0 (TDC) for any finite rod. Index 0 = θ=0°.
+
+    // Rod-angle series (signed degrees). Peak |angle| at θ=90° and 270°.
+    const curAngles = computeRodAngleSeries(stroke, rodLength);
+    const cmpAngles = compareRodLen > 0 ? computeRodAngleSeries(stroke, compareRodLen) : null;
+    const sideMaxAbs = Math.max(
+      ...curAngles.map(Math.abs),
+      ...(cmpAngles ? cmpAngles.map(Math.abs) : [0]),
+    );
+    // Peak rod angle = arcsin(r/L), reached at θ=90° (index = (N-1)/4 for 360° span)
+    const peakIdx = Math.floor((curAngles.length - 1) / 4);
+
     return {
       current: {
         path: buildCurvePath(stroke, rodLength, plotW, plotH),
@@ -176,16 +226,25 @@ function DwellChart({ stroke, rodLength }: { stroke: number; rodLength: number }
         path: buildCurvePath(stroke, compareRodLen, plotW, plotH),
         dwell: computeDwell(stroke, compareRodLen),
       } : null,
-      accelMaxAbs: maxAbs,
       currentAccel: {
-        path: buildAccelPath(curAccel, maxAbs, plotW, accelPlotH),
+        path: buildAccelPath(curAccel, accelMaxAbs, plotW, accelPlotH),
         peakTdc: curAccel[0],
         peakBdc: Math.abs(curAccel[Math.floor((curAccel.length - 1) / 2)]),
       },
       comparisonAccel: cmpAccel ? {
-        path: buildAccelPath(cmpAccel, maxAbs, plotW, accelPlotH),
+        path: buildAccelPath(cmpAccel, accelMaxAbs, plotW, accelPlotH),
         peakTdc: cmpAccel[0],
         peakBdc: Math.abs(cmpAccel[Math.floor((cmpAccel.length - 1) / 2)]),
+      } : null,
+      currentSide: {
+        path: buildRodAnglePath(curAngles, sideMaxAbs, plotW, accelPlotH),
+        peakAngle: Math.abs(curAngles[peakIdx]),
+        peakSideLoadFactor: Math.abs(Math.tan((curAngles[peakIdx] * Math.PI) / 180)),
+      },
+      comparisonSide: cmpAngles ? {
+        path: buildRodAnglePath(cmpAngles, sideMaxAbs, plotW, accelPlotH),
+        peakAngle: Math.abs(cmpAngles[peakIdx]),
+        peakSideLoadFactor: Math.abs(Math.tan((cmpAngles[peakIdx] * Math.PI) / 180)),
       } : null,
     };
   }, [stroke, rodLength, compareRodLen, validStroke, validRod, plotW, plotH, accelPlotH]);
@@ -224,7 +283,7 @@ function DwellChart({ stroke, rodLength }: { stroke: number; rodLength: number }
               step="0.025"
               min="4.0"
               max="8.0"
-              placeholder={validRod ? (rodLength + 0.300).toFixed(3) : "6.000"}
+              placeholder={validRod ? (rodLength + 0.500).toFixed(3) : "6.000"}
               value={compareRodInput}
               onChange={(e) => setCompareRodInput(e.target.value)}
               className="w-32 font-mono"
@@ -361,7 +420,7 @@ function DwellChart({ stroke, rodLength }: { stroke: number; rodLength: number }
             </svg>
 
             {/* Peak-acceleration readout — the headline number for this chart */}
-            {comparisonAccel && accelMaxAbs > 0 && (() => {
+            {comparisonAccel && (() => {
               const tdcReductionPct = ((currentAccel.peakTdc - comparisonAccel.peakTdc) / currentAccel.peakTdc) * 100;
               const longer = compareRodLen > rodLength;
               return (
@@ -380,6 +439,88 @@ function DwellChart({ stroke, rodLength }: { stroke: number; rodLength: number }
                   </p>
                   <p className="text-slate-500 mt-1">
                     Lower TDC acceleration = piston spends more time near TDC = better cylinder pressure retention during combustion. This is the mechanical reason longer rods feel "easier" on the top end of the engine.
+                  </p>
+                </div>
+              );
+            })()}
+          </div>
+        )}
+
+        {/* Chart 3 — ROD ANGLE / SIDE LOAD vs crank angle.
+            Side load = F_combustion × tan(rod angle), so rod angle IS the
+            side-load shape in friendlier units. Peak |angle| = arcsin(r/L).
+            For real rod-length comparisons this curve shows MUCH bigger
+            visual differences than dwell does — this is where the "longer
+            rods reduce piston wear" story lives. */}
+        {currentSide && (
+          <div className="mt-6">
+            <p className="text-[11px] uppercase tracking-wider text-muted-foreground font-semibold mb-1">
+              Rod angle (side load shape) <span className="text-muted-foreground/70 normal-case font-normal">— peak swing = how hard the piston gets shoved into the cylinder wall</span>
+            </p>
+            <svg viewBox={`0 0 ${W} ${accelH}`} className="w-full h-auto" preserveAspectRatio="xMidYMid meet">
+              <g transform={`translate(${M.left},${M.top})`}>
+                {/* Faint shaded region showing the rod-swing envelope */}
+                <rect x={0} y={accelPlotH * 0.05} width={plotW} height={accelPlotH * 0.45} fill="#0369a1" opacity={0.05} />
+                <rect x={0} y={accelPlotH * 0.5} width={plotW} height={accelPlotH * 0.45} fill="#dc2626" opacity={0.05} />
+
+                {/* Zero-rod-angle centerline (rod aligned with cylinder) */}
+                <line x1={0} x2={plotW} y1={accelPlotH / 2} y2={accelPlotH / 2} stroke="#9ca3af" strokeWidth={1} />
+
+                {/* Y-axis labels: side identification */}
+                <text x={-8} y={4} fontSize={10} textAnchor="end" fill="#0369a1">+ (minor)</text>
+                <text x={-8} y={accelPlotH / 2 + 4} fontSize={10} textAnchor="end" fill="#6b7280">0° aligned</text>
+                <text x={-8} y={accelPlotH + 4} fontSize={10} textAnchor="end" fill="#dc2626">− (major)</text>
+
+                {/* X-axis grid + labels (every 90°) */}
+                {[0, 90, 180, 270, 360].map((deg) => {
+                  const x = (deg / 360) * plotW;
+                  return (
+                    <g key={deg}>
+                      <line x1={x} x2={x} y1={0} y2={accelPlotH} stroke="#e5e7eb" strokeWidth={1}
+                        strokeDasharray={deg === 0 || deg === 360 ? undefined : "2,3"} />
+                      <text x={x} y={accelPlotH + 16} fontSize={10} textAnchor="middle" fill="#6b7280">
+                        {deg === 0 ? "TDC 0°" : deg === 180 ? "BDC 180°" : deg === 360 ? "TDC 360°" : `${deg}°`}
+                      </text>
+                    </g>
+                  );
+                })}
+
+                {/* Comparison rod angle */}
+                {comparisonSide && (
+                  <path d={comparisonSide.path} fill="none" stroke="#475569" strokeWidth={1.5}
+                    strokeDasharray="4,3" opacity={0.8} />
+                )}
+
+                {/* Current rod angle */}
+                <path d={currentSide.path} fill="none" stroke="#E85D04" strokeWidth={2.25} />
+              </g>
+            </svg>
+
+            {/* Peak rod-angle + side-load readout. This is the DRAMATIC comparison —
+                real rod-length changes shift peak angle by ~1-3° which translates
+                to 5-25% peak-side-force reduction. */}
+            {comparisonSide && (() => {
+              // Side load force ratio compared by tan of peak rod angle.
+              const sideReductionPct = ((currentSide.peakSideLoadFactor - comparisonSide.peakSideLoadFactor) / currentSide.peakSideLoadFactor) * 100;
+              const longer = compareRodLen > rodLength;
+              return (
+                <div className="mt-3 rounded-lg bg-slate-50 border border-slate-200 p-3 text-xs">
+                  <p className="text-slate-700">
+                    <strong>Peak rod angle:</strong>{" "}
+                    <span className="font-mono text-[#E85D04]">{currentSide.peakAngle.toFixed(2)}°</span>{" "}
+                    (your rod) vs{" "}
+                    <span className="font-mono text-slate-700">{comparisonSide.peakAngle.toFixed(2)}°</span>{" "}
+                    (comparison)
+                  </p>
+                  <p className="text-slate-700 mt-1">
+                    <strong>Peak side load on the cylinder wall:</strong>{" "}
+                    <span className={`font-semibold ${sideReductionPct > 0 ? "text-emerald-700" : "text-orange-700"}`}>
+                      {Math.abs(sideReductionPct).toFixed(1)}% {sideReductionPct > 0 ? "lower" : "higher"} with the {longer ? "longer" : "shorter"} rod
+                    </span>
+                    {" "}(side load = combustion force × tan of rod angle).
+                  </p>
+                  <p className="text-slate-500 mt-1">
+                    Side load is the force that mashes the piston skirt into the cylinder wall. The major thrust face (the side opposite the crank rotation during the power stroke) carries 70–80% of this load — it's where most piston-skirt and cylinder-wall wear comes from. Halving rod-angle peak roughly halves wear at the major thrust face.
                   </p>
                 </div>
               );
