@@ -247,13 +247,6 @@ const PLATFORM_PRESETS: PlatformPreset[] = [
     compareRod: "6.385",
   },
   {
-    label: 'Engine Masters 478 BBC: 6.135" → 6.800"',
-    blurb: 'S5E1 Rod Ratio Examined — +0.665" rod swap on one engine. 1.63 vs 1.81 ratio.',
-    stroke: "3.760",
-    currentRod: "6.135",
-    compareRod: "6.800",
-  },
-  {
     label: 'NHRA Pro Stock 500ci: 6.480" → 6.120"',
     blurb: "Old-school 1.80 rod ratio vs modern 1.70 — Pro Stock went SHORTER to chase RPM.",
     stroke: "3.600",
