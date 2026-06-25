@@ -77,6 +77,40 @@ function buildCurvePath(stroke: number, rodLength: number, width: number, height
   return cmds.join(" ");
 }
 
+// TDC-zoom path. Samples a narrow window around TDC (±degHalfRange of crank
+// rotation) and maps to a Y range from 0 to topFraction of stroke (e.g.
+// 0.02 = top 2% of stroke). This amplifies the visual difference between rod
+// lengths in the dwell zone — where the differences actually live.
+function buildTdcZoomPath(
+  stroke: number,
+  rodLength: number,
+  width: number,
+  height: number,
+  degHalfRange = 40,
+  topFraction = 0.02,
+  samples = 241,
+): string {
+  const cmds: string[] = [];
+  let started = false;
+  for (let i = 0; i < samples; i++) {
+    // Sample symmetrically around TDC: from -degHalfRange to +degHalfRange
+    const deg = -degHalfRange + (i / (samples - 1)) * (2 * degHalfRange);
+    const x = pistonDisplacement((deg * Math.PI) / 180, stroke, rodLength);
+    const fracFromTdc = x / stroke; // 0 at TDC, grows downward
+    if (fracFromTdc > topFraction) {
+      // Clip — once outside the zoom window, lift the pen.
+      started = false;
+      continue;
+    }
+    const px = ((deg + degHalfRange) / (2 * degHalfRange)) * width;
+    // Y: 0 at top (TDC), height at bottom (topFraction down from TDC)
+    const py = (fracFromTdc / topFraction) * height;
+    cmds.push(`${started ? "L" : "M"}${px.toFixed(2)},${py.toFixed(2)}`);
+    started = true;
+  }
+  return cmds.join(" ");
+}
+
 // Rod angle (degrees, signed) vs crank angle. The rod angle φ from cylinder
 // centerline at crank angle θ satisfies sin(φ) = (r/L)·sin(θ). Peak rod
 // angle is arcsin(r/L), occurring at θ = 90° and 270°. Side load on the
@@ -212,7 +246,180 @@ const PLATFORM_PRESETS: PlatformPreset[] = [
     currentRod: "6.135",
     compareRod: "6.385",
   },
+  {
+    label: 'Engine Masters 478 BBC: 6.135" → 6.800"',
+    blurb: 'S5E1 Rod Ratio Examined — +0.665" rod swap on one engine. 1.63 vs 1.81 ratio.',
+    stroke: "3.760",
+    currentRod: "6.135",
+    compareRod: "6.800",
+  },
+  {
+    label: 'NHRA Pro Stock 500ci: 6.480" → 6.120"',
+    blurb: "Old-school 1.80 rod ratio vs modern 1.70 — Pro Stock went SHORTER to chase RPM.",
+    stroke: "3.600",
+    currentRod: "6.480",
+    compareRod: "6.120",
+  },
 ];
+
+// ─── Comparison scorecard: bar row ──────────────────────────────────────────
+// Shows two side-by-side horizontal bars normalized to the larger value, so
+// even a 1% difference is visually distinguishable (one bar is clearly
+// shorter). Color tells the user whether the comparison is better (green) or
+// worse (orange) than their current setup.
+interface BarRowProps {
+  label: string;
+  unit: string;
+  currentValue: number;
+  comparisonValue: number;
+  lowerIsBetter: boolean;
+  format?: (v: number) => string;
+}
+function BarRow({ label, unit, currentValue, comparisonValue, lowerIsBetter, format = (v) => v.toFixed(2) }: BarRowProps) {
+  const maxAbs = Math.max(Math.abs(currentValue), Math.abs(comparisonValue));
+  const currentPct = maxAbs > 0 ? (Math.abs(currentValue) / maxAbs) * 100 : 0;
+  const comparisonPct = maxAbs > 0 ? (Math.abs(comparisonValue) / maxAbs) * 100 : 0;
+  const deltaPct = currentValue !== 0 ? ((comparisonValue - currentValue) / currentValue) * 100 : 0;
+  const isComparisonBetter = lowerIsBetter
+    ? comparisonValue < currentValue
+    : comparisonValue > currentValue;
+  const deltaColor = isComparisonBetter ? "text-emerald-700" : "text-orange-700";
+  const deltaSign = deltaPct >= 0 ? "+" : "";
+  return (
+    <div className="mb-3">
+      <div className="flex justify-between items-baseline mb-1.5">
+        <span className="text-xs font-semibold text-slate-700">{label}</span>
+        <span className={`text-xs font-bold font-mono ${deltaColor}`}>
+          {deltaSign}{deltaPct.toFixed(1)}%
+        </span>
+      </div>
+      <div className="space-y-1">
+        <div className="flex items-center gap-2">
+          <span className="text-[10px] text-slate-500 w-16 shrink-0">Your rod</span>
+          <div className="flex-1 h-4 bg-slate-100 rounded overflow-hidden">
+            <div className="h-full bg-[#E85D04] rounded transition-all" style={{ width: `${currentPct}%` }} />
+          </div>
+          <span className="text-[10px] font-mono text-slate-700 w-20 text-right shrink-0">
+            {format(currentValue)}{unit}
+          </span>
+        </div>
+        <div className="flex items-center gap-2">
+          <span className="text-[10px] text-slate-500 w-16 shrink-0">Compare</span>
+          <div className="flex-1 h-4 bg-slate-100 rounded overflow-hidden">
+            <div className="h-full bg-blue-600 rounded transition-all" style={{ width: `${comparisonPct}%` }} />
+          </div>
+          <span className="text-[10px] font-mono text-slate-700 w-20 text-right shrink-0">
+            {format(comparisonValue)}{unit}
+          </span>
+        </div>
+      </div>
+    </div>
+  );
+}
+
+// ─── Cylinder wear visualization ────────────────────────────────────────────
+// Shows a cylinder cross-section with the connecting rod at its PEAK swing
+// angle (θ=90° crank, when the rod is at maximum tilt). The major thrust face
+// wall (right side, opposite crank rotation during power stroke) is shaded
+// red with opacity scaled to the rod's peak side-load factor — and shaded
+// RELATIVELY between the two rod choices, so even a 5% load difference
+// shows as a visibly different red.
+interface CylinderDiagramProps {
+  rodLength: number;
+  stroke: number;
+  peakAngle: number;        // degrees
+  peakSideLoad: number;     // tan of peak angle
+  loadMaxInPair: number;    // shared with the other cylinder for relative shading
+  label: string;
+  sublabel: string;
+  isPrimary: boolean;
+}
+function CylinderDiagram({ rodLength, stroke, peakAngle, peakSideLoad, loadMaxInPair, label, sublabel, isPrimary }: CylinderDiagramProps) {
+  // SVG canvas
+  const W = 160;
+  const H = 240;
+  // Cylinder geometry — drawn in SVG units, NOT physical scale.
+  const cylBore = 60;
+  const cylTop = 30;
+  const cylBottom = 180;
+  const cylLeft = (W - cylBore) / 2;
+  const cylRight = cylLeft + cylBore;
+  const cylHeight = cylBottom - cylTop;
+  const cylCenter = W / 2;
+
+  // Piston at mid-stroke (where peak rod angle occurs at θ=90°)
+  const pistonH = 26;
+  const pistonY = (cylTop + cylBottom) / 2 - pistonH / 2;
+  const pistonPinY = pistonY + pistonH / 2;
+
+  // Rod geometry — draw at the actual peak rod angle, length scaled to bore.
+  // Display length is fixed (visual constant) but angle is real.
+  const rodDisplayLen = 80;
+  const angleRad = (peakAngle * Math.PI) / 180;
+  const rodEndX = cylCenter + rodDisplayLen * Math.sin(angleRad);
+  const rodEndY = pistonPinY + rodDisplayLen * Math.cos(angleRad);
+
+  // Relative shading: the heavier-loaded cylinder shows ~0.85 opacity, the
+  // lighter shows opacity scaled by its share of the pair's max.
+  const wearOpacity = loadMaxInPair > 0 ? (peakSideLoad / loadMaxInPair) * 0.85 : 0;
+  // Major thrust face = the wall the piston gets pushed into during power stroke
+  // (we're showing the +90° rod-swing direction, so right wall = major face).
+
+  // Arrow size scaled to side load magnitude — also relative within the pair.
+  const arrowScale = loadMaxInPair > 0 ? peakSideLoad / loadMaxInPair : 0;
+
+  return (
+    <div className={`text-center rounded-lg border-2 p-2 ${isPrimary ? "border-[#E85D04]/40 bg-orange-50/40" : "border-blue-400/50 bg-blue-50/40"}`}>
+      <p className={`text-[10px] font-bold uppercase tracking-wider mb-0.5 ${isPrimary ? "text-[#E85D04]" : "text-blue-700"}`}>
+        {label}
+      </p>
+      <p className="text-[10px] font-mono text-slate-600 mb-1">{sublabel}</p>
+      <svg viewBox={`0 0 ${W} ${H}`} className="w-full h-auto" preserveAspectRatio="xMidYMid meet">
+        {/* Wall wear shading — major (right) thrust face */}
+        <rect x={cylRight} y={cylTop} width={8} height={cylHeight} fill="#dc2626" opacity={wearOpacity} />
+        {/* Right wall outline */}
+        <rect x={cylRight} y={cylTop} width={8} height={cylHeight} fill="none" stroke="#1f2937" strokeWidth={1.5} />
+        {/* Left wall (minor face) — light shading */}
+        <rect x={cylLeft - 8} y={cylTop} width={8} height={cylHeight} fill="#0369a1" opacity={wearOpacity * 0.25} />
+        <rect x={cylLeft - 8} y={cylTop} width={8} height={cylHeight} fill="none" stroke="#1f2937" strokeWidth={1.5} />
+
+        {/* Cylinder bore (dashed top open) */}
+        <line x1={cylLeft} y1={cylTop} x2={cylRight} y2={cylTop} stroke="#9ca3af" strokeWidth={1} strokeDasharray="3,2" />
+
+        {/* Piston */}
+        <rect x={cylLeft + 2} y={pistonY} width={cylBore - 4} height={pistonH}
+          fill="#e2e8f0" stroke="#475569" strokeWidth={1.25} rx={2} />
+        {/* Piston rings */}
+        <line x1={cylLeft + 2} y1={pistonY + 6} x2={cylRight - 2} y2={pistonY + 6} stroke="#94a3b8" strokeWidth={0.5} />
+        <line x1={cylLeft + 2} y1={pistonY + 10} x2={cylRight - 2} y2={pistonY + 10} stroke="#94a3b8" strokeWidth={0.5} />
+
+        {/* Connecting rod at peak angle (the visual differentiator) */}
+        <line x1={cylCenter} y1={pistonPinY} x2={rodEndX} y2={rodEndY}
+          stroke="#334155" strokeWidth={4} strokeLinecap="round" />
+        {/* Piston pin */}
+        <circle cx={cylCenter} cy={pistonPinY} r={3} fill="#1f2937" />
+        {/* Crank pin */}
+        <circle cx={rodEndX} cy={rodEndY} r={4.5} fill="#1f2937" />
+
+        {/* Side-load arrow into the major thrust face */}
+        {arrowScale > 0.1 && (
+          <g transform={`translate(${cylRight - 2}, ${pistonPinY})`}>
+            <line x1={-10 - arrowScale * 8} y1={0} x2={2} y2={0} stroke="#dc2626" strokeWidth={1.5 + arrowScale * 2.5} strokeLinecap="round" />
+            <path d={`M -3 -3 L 2 0 L -3 3`} fill="#dc2626" />
+          </g>
+        )}
+
+        {/* Peak angle text label */}
+        <text x={W / 2} y={H - 28} fontSize={11} textAnchor="middle" fill="#1f2937" fontWeight="bold">
+          {peakAngle.toFixed(2)}°
+        </text>
+        <text x={W / 2} y={H - 14} fontSize={9} textAnchor="middle" fill="#6b7280">
+          peak rod angle
+        </text>
+      </svg>
+    </div>
+  );
+}
 
 // Interactive piston-dwell chart. Shows piston position, acceleration, and
 // rod angle / side load for the user's current rod + a comparison rod.
@@ -273,10 +480,14 @@ function DwellChart({ stroke, rodLength, setStrokeText, setRodLengthText }: Dwel
     return {
       current: {
         path: buildCurvePath(stroke, rodLength, plotW, plotH),
+        // TDC zoom uses a smaller height (the zoom chart is ~half-tall) and
+        // a tight crank window so the dwell-region detail is the whole chart.
+        tdcZoomPath: buildTdcZoomPath(stroke, rodLength, plotW, 120),
         dwell: computeDwell(stroke, rodLength),
       },
       comparison: compareRodLen > 0 ? {
         path: buildCurvePath(stroke, compareRodLen, plotW, plotH),
+        tdcZoomPath: buildTdcZoomPath(stroke, compareRodLen, plotW, 120),
         dwell: computeDwell(stroke, compareRodLen),
       } : null,
       currentAccel: {
@@ -414,323 +625,157 @@ function DwellChart({ stroke, rodLength, setStrokeText, setRodLengthText }: Dwel
           </div>
         </div>
 
-        {/* Chart 1 — piston POSITION vs crank angle */}
-        <p className="text-[11px] uppercase tracking-wider text-muted-foreground font-semibold mb-1">Piston position</p>
-        <div className="w-full">
-          <svg viewBox={`0 0 ${W} ${H}`} className="w-full h-auto" preserveAspectRatio="xMidYMid meet">
-            <g transform={`translate(${M.left},${M.top})`}>
-              {/* Dwell-zone bands */}
-              <rect x={0} y={0} width={plotW} height={tdcBandHeight} fill="#E85D04" opacity={0.08} />
-              <rect x={0} y={bdcBandY} width={plotW} height={plotH - bdcBandY} fill="#0369a1" opacity={0.08} />
-
-              {/* Y-axis grid + labels */}
-              {[0, 0.25, 0.5, 0.75, 1].map((frac) => {
-                const y = (1 - frac) * plotH;
-                return (
-                  <g key={frac}>
-                    <line x1={0} x2={plotW} y1={y} y2={y} stroke="#e5e7eb" strokeWidth={1} strokeDasharray={frac === 0 || frac === 1 ? undefined : "2,3"} />
-                    <text x={-8} y={y + 4} fontSize={10} textAnchor="end" fill="#6b7280">
-                      {frac === 1 ? "TDC" : frac === 0 ? "BDC" : `${(frac * 100).toFixed(0)}%`}
-                    </text>
-                  </g>
-                );
-              })}
-
-              {/* X-axis grid + labels (every 90°) */}
-              {[0, 90, 180, 270, 360].map((deg) => {
-                const x = (deg / 360) * plotW;
-                return (
-                  <g key={deg}>
-                    <line x1={x} x2={x} y1={0} y2={plotH} stroke="#e5e7eb" strokeWidth={1} strokeDasharray={deg === 0 || deg === 360 ? undefined : "2,3"} />
-                    <text x={x} y={plotH + 16} fontSize={10} textAnchor="middle" fill="#6b7280">
-                      {deg === 0 ? "TDC 0°" : deg === 180 ? "BDC 180°" : deg === 360 ? "TDC 360°" : `${deg}°`}
-                    </text>
-                  </g>
-                );
-              })}
-
-              {/* Comparison curve */}
-              {comparison && (
-                <path d={comparison.path} fill="none" stroke="#475569" strokeWidth={1.5} strokeDasharray="4,3" opacity={0.8} />
-              )}
-
-              {/* Current curve */}
-              <path d={current.path} fill="none" stroke="#E85D04" strokeWidth={2.25} />
-            </g>
-          </svg>
-        </div>
-
-        {/* Chart 2 — piston ACCELERATION vs crank angle.
-            This is where the dwell story is visually obvious: the TDC peak
-            shrinks as rod length grows, which IS the dwell-at-TDC benefit. */}
-        {currentAccel && (
-          <div className="mt-6">
-            <p className="text-[11px] uppercase tracking-wider text-muted-foreground font-semibold mb-1">
-              Piston acceleration <span className="text-muted-foreground/70 normal-case font-normal">— peak at TDC visibly shrinks with longer rods (that's dwell)</span>
-            </p>
-            <svg viewBox={`0 0 ${W} ${accelH}`} className="w-full h-auto" preserveAspectRatio="xMidYMid meet">
-              <g transform={`translate(${M.left},${M.top})`}>
-                {/* Zero-acceleration centerline (heaviest gridline) */}
-                <line x1={0} x2={plotW} y1={accelPlotH / 2} y2={accelPlotH / 2} stroke="#9ca3af" strokeWidth={1} />
-
-                {/* ±50% gridlines */}
-                {[0.25, 0.75].map((frac) => (
-                  <line key={frac} x1={0} x2={plotW} y1={frac * accelPlotH} y2={frac * accelPlotH}
-                    stroke="#e5e7eb" strokeWidth={1} strokeDasharray="2,3" />
-                ))}
-
-                {/* Y-axis labels: +peak / 0 / -peak */}
-                <text x={-8} y={4} fontSize={10} textAnchor="end" fill="#6b7280">+peak (TDC)</text>
-                <text x={-8} y={accelPlotH / 2 + 4} fontSize={10} textAnchor="end" fill="#6b7280">0</text>
-                <text x={-8} y={accelPlotH + 4} fontSize={10} textAnchor="end" fill="#6b7280">−peak (BDC)</text>
-
-                {/* X-axis grid + labels (every 90°) */}
-                {[0, 90, 180, 270, 360].map((deg) => {
-                  const x = (deg / 360) * plotW;
-                  return (
-                    <g key={deg}>
-                      <line x1={x} x2={x} y1={0} y2={accelPlotH} stroke="#e5e7eb" strokeWidth={1}
-                        strokeDasharray={deg === 0 || deg === 360 ? undefined : "2,3"} />
-                      <text x={x} y={accelPlotH + 16} fontSize={10} textAnchor="middle" fill="#6b7280">
-                        {deg === 0 ? "TDC 0°" : deg === 180 ? "BDC 180°" : deg === 360 ? "TDC 360°" : `${deg}°`}
-                      </text>
-                    </g>
-                  );
-                })}
-
-                {/* Comparison acceleration */}
-                {comparisonAccel && (
-                  <path d={comparisonAccel.path} fill="none" stroke="#475569" strokeWidth={1.5}
-                    strokeDasharray="4,3" opacity={0.8} />
-                )}
-
-                {/* Current acceleration */}
-                <path d={currentAccel.path} fill="none" stroke="#E85D04" strokeWidth={2.25} />
-              </g>
-            </svg>
-
-            {/* Peak-acceleration readout — the headline number for this chart */}
-            {comparisonAccel && (() => {
-              const tdcReductionPct = ((currentAccel.peakTdc - comparisonAccel.peakTdc) / currentAccel.peakTdc) * 100;
-              const longer = compareRodLen > rodLength;
-              return (
-                <div className="mt-3 rounded-lg bg-slate-50 border border-slate-200 p-3 text-xs">
-                  <p className="text-slate-700">
-                    <strong>Peak TDC acceleration:</strong>{" "}
-                    <span className="font-mono text-[#E85D04]">{currentAccel.peakTdc.toFixed(2)}</span>{" "}
-                    (your rod) vs{" "}
-                    <span className="font-mono text-slate-700">{comparisonAccel.peakTdc.toFixed(2)}</span>{" "}
-                    (comparison)
-                    {" — "}
-                    <span className={`font-semibold ${tdcReductionPct > 0 ? "text-emerald-700" : "text-orange-700"}`}>
-                      {Math.abs(tdcReductionPct).toFixed(1)}% {tdcReductionPct > 0 ? "lower" : "higher"} with the {longer ? "longer" : "shorter"} rod
-                    </span>
-                    .
-                  </p>
-                  <p className="text-slate-500 mt-1">
-                    Lower TDC acceleration = piston spends more time near TDC = better cylinder pressure retention during combustion. This is the mechanical reason longer rods feel "easier" on the top end of the engine.
-                  </p>
-                </div>
-              );
-            })()}
-          </div>
-        )}
-
-        {/* Chart 3 — ROD ANGLE / SIDE LOAD vs crank angle.
-            Side load = F_combustion × tan(rod angle), so rod angle IS the
-            side-load shape in friendlier units. Peak |angle| = arcsin(r/L).
-            For real rod-length comparisons this curve shows MUCH bigger
-            visual differences than dwell does — this is where the "longer
-            rods reduce piston wear" story lives. */}
-        {currentSide && (
-          <div className="mt-6">
-            <p className="text-[11px] uppercase tracking-wider text-muted-foreground font-semibold mb-1">
-              Rod angle (side load shape) <span className="text-muted-foreground/70 normal-case font-normal">— peak swing = how hard the piston gets shoved into the cylinder wall</span>
-            </p>
-            <svg viewBox={`0 0 ${W} ${accelH}`} className="w-full h-auto" preserveAspectRatio="xMidYMid meet">
-              <g transform={`translate(${M.left},${M.top})`}>
-                {/* Faint shaded region showing the rod-swing envelope */}
-                <rect x={0} y={accelPlotH * 0.05} width={plotW} height={accelPlotH * 0.45} fill="#0369a1" opacity={0.05} />
-                <rect x={0} y={accelPlotH * 0.5} width={plotW} height={accelPlotH * 0.45} fill="#dc2626" opacity={0.05} />
-
-                {/* Zero-rod-angle centerline (rod aligned with cylinder) */}
-                <line x1={0} x2={plotW} y1={accelPlotH / 2} y2={accelPlotH / 2} stroke="#9ca3af" strokeWidth={1} />
-
-                {/* Y-axis labels: side identification */}
-                <text x={-8} y={4} fontSize={10} textAnchor="end" fill="#0369a1">+ (minor)</text>
-                <text x={-8} y={accelPlotH / 2 + 4} fontSize={10} textAnchor="end" fill="#6b7280">0° aligned</text>
-                <text x={-8} y={accelPlotH + 4} fontSize={10} textAnchor="end" fill="#dc2626">− (major)</text>
-
-                {/* X-axis grid + labels (every 90°) */}
-                {[0, 90, 180, 270, 360].map((deg) => {
-                  const x = (deg / 360) * plotW;
-                  return (
-                    <g key={deg}>
-                      <line x1={x} x2={x} y1={0} y2={accelPlotH} stroke="#e5e7eb" strokeWidth={1}
-                        strokeDasharray={deg === 0 || deg === 360 ? undefined : "2,3"} />
-                      <text x={x} y={accelPlotH + 16} fontSize={10} textAnchor="middle" fill="#6b7280">
-                        {deg === 0 ? "TDC 0°" : deg === 180 ? "BDC 180°" : deg === 360 ? "TDC 360°" : `${deg}°`}
-                      </text>
-                    </g>
-                  );
-                })}
-
-                {/* Comparison rod angle */}
-                {comparisonSide && (
-                  <path d={comparisonSide.path} fill="none" stroke="#475569" strokeWidth={1.5}
-                    strokeDasharray="4,3" opacity={0.8} />
-                )}
-
-                {/* Current rod angle */}
-                <path d={currentSide.path} fill="none" stroke="#E85D04" strokeWidth={2.25} />
-              </g>
-            </svg>
-
-            {/* Peak rod-angle + side-load readout. Contextual takeaway scales
-                with the magnitude of the change: an LS 6.098→6.125 swap moves
-                this <1% (so the message is "wash, upgrade for other reasons"),
-                while an SBC 5.700→6.000 moves it ~5% ("meaningful"), and a
-                race-style long-rod swap moves it 15%+ ("dramatic"). */}
-            {comparisonSide && (() => {
-              // Side load force ratio compared by tan of peak rod angle.
-              const sideReductionPct = ((currentSide.peakSideLoadFactor - comparisonSide.peakSideLoadFactor) / currentSide.peakSideLoadFactor) * 100;
-              const longer = compareRodLen > rodLength;
-              const absPct = Math.abs(sideReductionPct);
-              // Magnitude buckets drive the takeaway language.
-              let verdict: { tag: string; tagColor: string; line: string };
-              if (absPct < 1.5) {
-                verdict = {
-                  tag: "Essentially a wash",
-                  tagColor: "bg-gray-200 text-gray-800",
-                  line: `These two rod lengths are geometrically almost identical (peak rod angle within ${Math.abs(currentSide.peakAngle - comparisonSide.peakAngle).toFixed(2)}°). If you're picking between them, the choice should come from material, beam style (I- vs H-beam), bolt grade (stock vs ARP 2000 vs 625+), balance accuracy, and price — not from dwell or side load. The geometry doesn't change in any practical sense.`,
-                };
-              } else if (absPct < 4) {
-                verdict = {
-                  tag: "Modest improvement",
-                  tagColor: "bg-amber-100 text-amber-900",
-                  line: `Real, measurable, but not dramatic. You'd see this as slightly less skirt wear at high mileage. Most builders making this swap are doing it as part of a larger upgrade (new pistons, balance work) where the rod choice is incremental rather than headline.`,
-                };
-              } else if (absPct < 10) {
-                verdict = {
-                  tag: "Meaningful improvement",
-                  tagColor: "bg-emerald-100 text-emerald-900",
-                  line: `Worth doing. This is the magnitude builders feel — less cylinder-wall scoring at sustained high RPM, longer top-end engine life, slightly less ring tilt. The classic SBC 350-to-383-stroker 6"-rod swap lives here.`,
-                };
-              } else {
-                verdict = {
-                  tag: "Significant — race territory",
-                  tagColor: "bg-blue-100 text-blue-900",
-                  line: `Major geometric change. This is the rod-length difference seen in race engines and F1 power units that need to survive at sustained 12,000+ RPM. For street builds it's overkill; packaging usually doesn't allow rods this long without raised cam tunnels or shorter pistons.`,
-                };
-              }
-              return (
-                <div className="mt-3 rounded-lg bg-slate-50 border border-slate-200 p-3 text-xs">
-                  <p className="text-slate-700">
-                    <strong>Peak rod angle:</strong>{" "}
-                    <span className="font-mono text-[#E85D04]">{currentSide.peakAngle.toFixed(2)}°</span>{" "}
-                    (your rod) vs{" "}
-                    <span className="font-mono text-slate-700">{comparisonSide.peakAngle.toFixed(2)}°</span>{" "}
-                    (comparison)
-                  </p>
-                  <p className="text-slate-700 mt-1">
-                    <strong>Peak side load on the cylinder wall:</strong>{" "}
-                    <span className={`font-semibold ${sideReductionPct > 0 ? "text-emerald-700" : "text-orange-700"}`}>
-                      {absPct.toFixed(1)}% {sideReductionPct > 0 ? "lower" : "higher"} with the {longer ? "longer" : "shorter"} rod
-                    </span>
-                    {" "}(side load = combustion force × tan of rod angle).
-                  </p>
-                  <div className="mt-2 flex items-start gap-2">
-                    <span className={`text-[10px] uppercase tracking-wider font-bold px-2 py-0.5 rounded ${verdict.tagColor} whitespace-nowrap shrink-0`}>
-                      {verdict.tag}
-                    </span>
-                    <p className="text-slate-600 leading-relaxed">{verdict.line}</p>
-                  </div>
-                  <p className="text-slate-500 mt-2 leading-relaxed">
-                    Side load is the force that mashes the piston skirt into the cylinder wall. The major thrust face (the side opposite the crank rotation during the power stroke) carries 70–80% of this load — it's where most piston-skirt and cylinder-wall wear comes from.
-                  </p>
-                </div>
-              );
-            })()}
-          </div>
-        )}
-
-        {/* Legend */}
-        <div className="flex flex-wrap gap-x-5 gap-y-2 mt-3 text-xs">
-          <span className="flex items-center gap-2">
-            <span className="inline-block w-4 h-0.5 bg-[#E85D04]" />
-            <span>
-              Your rod: <strong className="font-mono">{rodLength.toFixed(3)}"</strong>
-              {" "}
-              <span className="text-muted-foreground">(ratio {currentRatio.toFixed(3)})</span>
-            </span>
-          </span>
-          {comparison && (
-            <span className="flex items-center gap-2">
-              <span className="inline-block w-4 h-0.5 border-t-2 border-dashed border-slate-600" />
-              <span>
-                Comparison: <strong className="font-mono">{compareRodLen.toFixed(3)}"</strong>
-                {" "}
-                <span className="text-muted-foreground">(ratio {compareRatio.toFixed(3)})</span>
-              </span>
-            </span>
-          )}
-          <span className="text-muted-foreground">Shaded bands = within 0.5% of stroke from TDC / BDC.</span>
-        </div>
-
-        {/* Dwell readout — two rows of two cells: your rod (TDC + BDC), comparison rod (TDC + BDC) */}
-        <div className="grid grid-cols-1 sm:grid-cols-2 gap-3 mt-5">
-          {/* Your rod */}
-          <div className="rounded-lg border-2 border-[#E85D04]/40 bg-orange-50/60 p-3">
-            <p className="text-[10px] uppercase tracking-wider text-[#E85D04] font-bold mb-2">
-              Your rod — {rodLength.toFixed(3)}" (ratio {currentRatio.toFixed(3)})
-            </p>
-            <div className="grid grid-cols-2 gap-2">
-              <div>
-                <p className="text-[10px] text-orange-900/70">TDC dwell</p>
-                <p className="text-lg font-bold font-mono text-orange-900">{current.dwell.tdcDeg.toFixed(1)}°</p>
-              </div>
-              <div>
-                <p className="text-[10px] text-sky-900/70">BDC dwell</p>
-                <p className="text-lg font-bold font-mono text-sky-900">{current.dwell.bdcDeg.toFixed(1)}°</p>
-              </div>
-            </div>
-          </div>
-
-          {/* Comparison rod */}
-          {comparison ? (
-            <div className="rounded-lg border-2 border-slate-400/40 bg-slate-50 p-3">
-              <p className="text-[10px] uppercase tracking-wider text-slate-700 font-bold mb-2">
-                Comparison — {compareRodLen.toFixed(3)}" (ratio {compareRatio.toFixed(3)})
+        {/* ─── Comparison Summary: Bar scorecard (left) + cylinder viz (right) ─── */}
+        {comparison && currentAccel && comparisonAccel && currentSide && comparisonSide && (
+          <div className="mb-6 grid grid-cols-1 lg:grid-cols-2 gap-4">
+            {/* LEFT — Bar scorecard */}
+            <div className="rounded-lg bg-white border-2 border-slate-200 p-4">
+              <h3 className="text-xs font-bold text-slate-900 uppercase tracking-wider mb-3">
+                Comparison scorecard
+              </h3>
+              <BarRow
+                label="Peak side load"
+                unit=""
+                currentValue={currentSide.peakSideLoadFactor}
+                comparisonValue={comparisonSide.peakSideLoadFactor}
+                lowerIsBetter
+                format={(v) => v.toFixed(3)}
+              />
+              <BarRow
+                label="Peak rod angle"
+                unit="°"
+                currentValue={currentSide.peakAngle}
+                comparisonValue={comparisonSide.peakAngle}
+                lowerIsBetter
+                format={(v) => v.toFixed(2)}
+              />
+              <BarRow
+                label="Peak TDC acceleration"
+                unit=""
+                currentValue={currentAccel.peakTdc}
+                comparisonValue={comparisonAccel.peakTdc}
+                lowerIsBetter
+                format={(v) => v.toFixed(2)}
+              />
+              <BarRow
+                label="TDC dwell"
+                unit="°"
+                currentValue={current.dwell.tdcDeg}
+                comparisonValue={comparison.dwell.tdcDeg}
+                lowerIsBetter={false}
+                format={(v) => v.toFixed(1)}
+              />
+              <BarRow
+                label="BDC dwell"
+                unit="°"
+                currentValue={current.dwell.bdcDeg}
+                comparisonValue={comparison.dwell.bdcDeg}
+                lowerIsBetter={false}
+                format={(v) => v.toFixed(1)}
+              />
+              <p className="text-[10px] text-slate-500 mt-3 leading-snug border-t border-slate-200 pt-2">
+                Bars normalized to the larger value in each row so small differences are visible.
+                Green % = the change helps; orange % = the change hurts.
               </p>
-              <div className="grid grid-cols-2 gap-2">
-                <div>
-                  <p className="text-[10px] text-slate-600">TDC dwell</p>
-                  <p className="text-lg font-bold font-mono text-slate-700">
-                    {comparison.dwell.tdcDeg.toFixed(1)}°
-                  </p>
-                  <p className="text-[10px] text-slate-500">
-                    {comparison.dwell.tdcDeg > current.dwell.tdcDeg ? "+" : ""}
-                    {(comparison.dwell.tdcDeg - current.dwell.tdcDeg).toFixed(2)}° vs yours
-                  </p>
-                </div>
-                <div>
-                  <p className="text-[10px] text-slate-600">BDC dwell</p>
-                  <p className="text-lg font-bold font-mono text-slate-700">
-                    {comparison.dwell.bdcDeg.toFixed(1)}°
-                  </p>
-                  <p className="text-[10px] text-slate-500">
-                    {comparison.dwell.bdcDeg > current.dwell.bdcDeg ? "+" : ""}
-                    {(comparison.dwell.bdcDeg - current.dwell.bdcDeg).toFixed(2)}° vs yours
-                  </p>
-                </div>
+            </div>
+
+            {/* RIGHT — Cylinder wear visualization */}
+            <div className="rounded-lg bg-white border-2 border-slate-200 p-4">
+              <h3 className="text-xs font-bold text-slate-900 uppercase tracking-wider mb-3">
+                Cylinder wall loading
+              </h3>
+              <div className="grid grid-cols-2 gap-3">
+                <CylinderDiagram
+                  rodLength={rodLength}
+                  stroke={stroke}
+                  peakAngle={currentSide.peakAngle}
+                  peakSideLoad={currentSide.peakSideLoadFactor}
+                  loadMaxInPair={Math.max(currentSide.peakSideLoadFactor, comparisonSide.peakSideLoadFactor)}
+                  label="Your rod"
+                  sublabel={`${rodLength.toFixed(3)}"`}
+                  isPrimary
+                />
+                <CylinderDiagram
+                  rodLength={compareRodLen}
+                  stroke={stroke}
+                  peakAngle={comparisonSide.peakAngle}
+                  peakSideLoad={comparisonSide.peakSideLoadFactor}
+                  loadMaxInPair={Math.max(currentSide.peakSideLoadFactor, comparisonSide.peakSideLoadFactor)}
+                  label="Comparison"
+                  sublabel={`${compareRodLen.toFixed(3)}"`}
+                  isPrimary={false}
+                />
               </div>
+              <p className="text-[10px] text-slate-500 mt-3 leading-snug border-t border-slate-200 pt-2">
+                Rod is shown at peak swing angle (θ=90° crank). The major thrust face (right wall, red)
+                is where 70–80% of skirt wear happens. Wall colors are scaled <em>between the two rods</em>
+                so even small differences in peak side load show as different reds.
+              </p>
             </div>
-          ) : (
-            <div className="rounded-lg bg-muted/50 border border-dashed border-gray-300 p-3 flex items-center justify-center">
-              <p className="text-xs text-muted-foreground">Enter a comparison rod length above to see the dwell difference.</p>
+          </div>
+        )}
+
+        {/* Magnitude-aware verdict — interprets what the scorecard numbers
+            mean for builders ("wash, upgrade for other reasons" vs
+            "meaningful improvement" vs "race territory"). */}
+        {currentSide && comparisonSide && (() => {
+          const sideReductionPct = ((currentSide.peakSideLoadFactor - comparisonSide.peakSideLoadFactor) / currentSide.peakSideLoadFactor) * 100;
+          const longer = compareRodLen > rodLength;
+          const absPct = Math.abs(sideReductionPct);
+          let verdict: { tag: string; tagColor: string; line: string };
+          if (absPct < 1.5) {
+            verdict = {
+              tag: "Essentially a wash",
+              tagColor: "bg-gray-200 text-gray-800",
+              line: `These two rod lengths are geometrically almost identical (peak rod angle within ${Math.abs(currentSide.peakAngle - comparisonSide.peakAngle).toFixed(2)}°). If you're picking between them, the choice should come from material, beam style (I- vs H-beam), bolt grade (stock vs ARP 2000 vs 625+), balance accuracy, and price — not from dwell or side load. The geometry doesn't change in any practical sense.`,
+            };
+          } else if (absPct < 4) {
+            verdict = {
+              tag: "Modest improvement",
+              tagColor: "bg-amber-100 text-amber-900",
+              line: `Real, measurable, but not dramatic. You'd see this as slightly less skirt wear at high mileage. Most builders making this swap are doing it as part of a larger upgrade (new pistons, balance work) where the rod choice is incremental rather than headline.`,
+            };
+          } else if (absPct < 10) {
+            verdict = {
+              tag: "Meaningful improvement",
+              tagColor: "bg-emerald-100 text-emerald-900",
+              line: `Worth doing. This is the magnitude builders feel — less cylinder-wall scoring at sustained high RPM, longer top-end engine life, slightly less ring tilt. The classic SBC 350-to-383-stroker 6"-rod swap lives here.`,
+            };
+          } else {
+            verdict = {
+              tag: "Significant — race territory",
+              tagColor: "bg-blue-100 text-blue-900",
+              line: `Major geometric change. This is the rod-length difference seen in race engines and F1 power units that need to survive at sustained 12,000+ RPM. For street builds it's overkill; packaging usually doesn't allow rods this long without raised cam tunnels or shorter pistons.`,
+            };
+          }
+          return (
+            <div className="rounded-lg bg-slate-50 border border-slate-200 p-3 text-xs">
+              <p className="text-slate-700">
+                <strong>Peak side load on the cylinder wall:</strong>{" "}
+                <span className={`font-semibold ${sideReductionPct > 0 ? "text-emerald-700" : "text-orange-700"}`}>
+                  {absPct.toFixed(1)}% {sideReductionPct > 0 ? "lower" : "higher"} with the {longer ? "longer" : "shorter"} rod
+                </span>
+                {" "}(side load = combustion force × tan of rod angle).
+              </p>
+              <div className="mt-2 flex items-start gap-2">
+                <span className={`text-[10px] uppercase tracking-wider font-bold px-2 py-0.5 rounded ${verdict.tagColor} whitespace-nowrap shrink-0`}>
+                  {verdict.tag}
+                </span>
+                <p className="text-slate-600 leading-relaxed">{verdict.line}</p>
+              </div>
+              <p className="text-slate-500 mt-2 leading-relaxed">
+                Side load is the force that mashes the piston skirt into the cylinder wall. The major thrust face (the side opposite the crank rotation during the power stroke) carries 70–80% of this load — it's where most piston-skirt and cylinder-wall wear comes from.
+              </p>
             </div>
-          )}
-        </div>
+          );
+        })()}
+
+        {/* TDC zoom + position/accel/side-load charts removed — they were
+            visually flat for realistic rod-length comparisons. The scorecard
+            and cylinder viz above carry the comparison story now. Curve-building
+            helpers (buildCurvePath, buildTdcZoomPath, buildAccelPath,
+            buildRodAnglePath) are still defined above in case we bring graphs
+            back, but no longer invoked here. */}
       </CardContent>
     </Card>
   );
