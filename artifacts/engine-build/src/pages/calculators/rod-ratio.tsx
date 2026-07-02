@@ -50,7 +50,13 @@ function pistonDisplacement(crankAngleRad: number, stroke: number, rodLength: nu
 // Dwell in degrees of crank rotation where the piston stays within
 // `thresholdFraction` of stroke from TDC (or BDC). 0.005 = within 0.5% of stroke.
 function computeDwell(stroke: number, rodLength: number, thresholdFraction = 0.005) {
-  const step = 0.25; // degrees, fine enough for accurate counts
+  // Step size determines resolution. Realistic rod-length swaps produce
+  // dwell-boundary differences of ~0.02° between the two rods (e.g. NHRA
+  // Pro Stock 6.480 vs 6.120 rod = 0.04° TDC dwell difference). Any step
+  // coarser than ~0.01° quantizes both rods to the same integer count, which
+  // was the "TDC/BDC show identical" bug the user caught. 0.005° gives us
+  // 4 decimal places of angular precision at ~0.4ms CPU per call — fine.
+  const step = 0.005;
   const threshold = thresholdFraction * stroke;
   let tdc = 0;
   let bdc = 0;
@@ -414,6 +420,7 @@ function CylinderDiagram({ rodLength, stroke, peakAngle, peakSideLoad, loadMaxIn
   );
 }
 
+
 // Interactive piston-dwell chart. Shows piston position, acceleration, and
 // rod angle / side load for the user's current rod + a comparison rod.
 interface DwellChartProps {
@@ -656,7 +663,7 @@ function DwellChart({ stroke, rodLength, setStrokeText, setRodLengthText }: Dwel
                 currentValue={current.dwell.tdcDeg}
                 comparisonValue={comparison.dwell.tdcDeg}
                 lowerIsBetter={false}
-                format={(v) => v.toFixed(1)}
+                format={(v) => v.toFixed(2)}
               />
               <BarRow
                 label="BDC dwell"
@@ -664,7 +671,7 @@ function DwellChart({ stroke, rodLength, setStrokeText, setRodLengthText }: Dwel
                 currentValue={current.dwell.bdcDeg}
                 comparisonValue={comparison.dwell.bdcDeg}
                 lowerIsBetter={false}
-                format={(v) => v.toFixed(1)}
+                format={(v) => v.toFixed(2)}
               />
               <p className="text-[10px] text-slate-500 mt-3 leading-snug border-t border-slate-200 pt-2">
                 Bars normalized to the larger value in each row so small differences are visible.
@@ -763,12 +770,8 @@ function DwellChart({ stroke, rodLength, setStrokeText, setRodLengthText }: Dwel
           );
         })()}
 
-        {/* TDC zoom + position/accel/side-load charts removed — they were
-            visually flat for realistic rod-length comparisons. The scorecard
-            and cylinder viz above carry the comparison story now. Curve-building
-            helpers (buildCurvePath, buildTdcZoomPath, buildAccelPath,
-            buildRodAnglePath) are still defined above in case we bring graphs
-            back, but no longer invoked here. */}
+        {/* Note for future me: curve-building helpers (buildCurvePath etc.)
+            stay defined above in case we want SVG line charts back. */}
       </CardContent>
     </Card>
   );
