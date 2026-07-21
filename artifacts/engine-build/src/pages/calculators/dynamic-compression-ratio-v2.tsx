@@ -283,10 +283,10 @@ export default function DynamicCompressionRatioV2() {
   return (
     <div className="container mx-auto py-8 px-4 max-w-7xl">
       <SEOHead
-        title="Compression Ratio Calculator | Static & Dynamic CR"
-        description="Calculate static and dynamic compression ratio with octane recommendations. Three IVC methods, cranking pressure, reverse-solve mode, and cam advance slider."
+        title="Compression Ratio Calculator — Static & Dynamic CR with Octane Chart"
+        description="Free engine compression ratio calculator. Static + Dynamic (DCR) with three IVC methods, cranking pressure, and reverse-solve. Includes octane requirement chart, 22 popular engines with stock CR, head gasket thickness effect, and aluminum vs iron head adjustment."
         canonical="/calculators/compression-ratio"
-        keywords="compression ratio calculator, dynamic compression ratio, static compression ratio, DCR calculator, cranking pressure, intake valve closing, cam timing compression, octane recommendation, chamber volume calculator"
+        keywords="compression ratio calculator, dynamic compression ratio, static compression ratio, DCR calculator, cranking pressure calculator, intake valve closing, IVC calculator, chamber volume calculator, piston dish calculator, head gasket thickness compression, aluminum head compression, octane recommendation, SBC compression ratio, LS compression ratio"
       />
 
       <BuildBanner savedFields={[

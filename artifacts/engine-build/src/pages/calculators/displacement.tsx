@@ -62,10 +62,10 @@ export default function DisplacementCalculator() {
   return (
     <div className="container mx-auto py-8 px-4 max-w-7xl">
       <SEOHead
-        title="Engine Displacement Calculator | Cubic Inches, CC & Liters"
-        description="Calculate engine displacement in cubic inches, CCs, and liters from bore, stroke, and cylinder count. Free tool for engine builders."
+        title="Engine Displacement Calculator — Bore × Stroke to Cubic Inches, CC & Liters"
+        description="Free engine displacement calculator with 30+ engine specs table (SBC, LS, BBC, Ford, Mopar, Coyote, Cummins), 20 popular stroker combos with displacement gain, and overbore effect chart. Cubic inches ↔ liters ↔ cc conversions."
         canonical="/calculators/displacement"
-        keywords="engine displacement calculator, cubic inch calculator, bore stroke calculator, engine size calculator, CID calculator"
+        keywords="engine displacement calculator, cubic inch calculator, bore stroke calculator, engine size calculator, CID calculator, engine cc calculator, engine cubic inch calculator, engine bore stroke calculator, stroker displacement calculator, 383 stroker displacement, 408 stroker displacement, overbore displacement"
       />
       <BuildBanner savedFields={[
         { label: "Displacement", key: "computed.displacement", value: cubicInches > 0 ? cubicInches.toFixed(1) : "", suffix: " ci" },
