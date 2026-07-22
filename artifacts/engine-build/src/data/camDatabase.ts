@@ -22,12 +22,12 @@ export interface CamSpec {
   platform: CamPlatform;
   lifter: CamLifter;
   int050: number;
-  exh050: number;
+  exh050: number | null;   // null = manufacturer doesn't publish it (e.g. BTR "24X")
   liftInt: number;
   liftExh: number;
   lsa: number;
-  rpmLo: number;
-  rpmHi: number;
+  rpmLo: number | null;    // null = not published
+  rpmHi: number | null;
   use: string;
 }
 
@@ -96,4 +96,27 @@ export const CAM_DATABASE: CamSpec[] = [
   { mfr: "Summit Racing", family: "Classic",        part: "SUM-1103",  platform: "sbc", lifter: "hyd_flat", int050: 214, exh050: 224, liftInt: 0.444, liftExh: 0.466, lsa: 112, rpmLo: 1800, rpmHi: 5000, use: "Fair idle, biggest w/ stock converter" },
   { mfr: "Summit Racing", family: "Classic",        part: "SUM-1105",  platform: "sbc", lifter: "hyd_flat", int050: 224, exh050: 234, liftInt: 0.466, liftExh: 0.487, lsa: 114, rpmLo: 2400, rpmHi: 6000, use: "Fair idle, strong mid-range" },
   { mfr: "Summit Racing", family: "Pro (Stage 3)",  part: "SUM-8802",  platform: "sbc", lifter: "hyd_roller", int050: 218, exh050: 227, liftInt: 0.525, liftExh: 0.520, lsa: 112, rpmLo: 1800, rpmHi: 6300, use: "Street / strip roller" },
+
+  // ── LS-specific makers (cathedral/rectangle/truck, all hyd roller) ────────
+  // Brian Tooley Racing — NA street/strip. BTR does not publish exhaust @.050"
+  // (prints it as "24X"), so exh050 is null; intake @.050", lift, and LSA are
+  // published. Lift at LS 1.7 rocker.
+  { mfr: "Brian Tooley Racing", family: "Stage 2 NA V2 (LS1/LS2)", part: "BTR-LS1STAGE2", platform: "ls", lifter: "hyd_roller", int050: 221, exh050: null, liftInt: 0.624, liftExh: 0.635, lsa: 112, rpmLo: null, rpmHi: null, use: "Street / strip NA (cathedral)" },
+  { mfr: "Brian Tooley Racing", family: "Stage 2 NA V2 (LS3/L92)", part: "BTR-LS3STAGE2", platform: "ls", lifter: "hyd_roller", int050: 221, exh050: null, liftInt: 0.619, liftExh: 0.617, lsa: 113, rpmLo: null, rpmHi: null, use: "Street / strip NA (rectangle)" },
+  { mfr: "Brian Tooley Racing", family: "Stage 3 NA V2 (LS1/LS2)", part: "BTR-LS1STAGE3", platform: "ls", lifter: "hyd_roller", int050: 227, exh050: null, liftInt: 0.636, liftExh: 0.636, lsa: 112, rpmLo: null, rpmHi: null, use: "Street / strip NA, wants stall (cathedral)" },
+  { mfr: "Brian Tooley Racing", family: "Stage 3 NA V2 (LS3/L92)", part: "BTR-LS3STAGE3", platform: "ls", lifter: "hyd_roller", int050: 227, exh050: null, liftInt: 0.636, liftExh: 0.636, lsa: 112, rpmLo: null, rpmHi: null, use: "Street / strip NA (rectangle)" },
+  // Texas Speed & Performance — cathedral-port street/strip
+  { mfr: "Texas Speed", family: "224/228",           part: "TSP-224228R6112", platform: "ls", lifter: "hyd_roller", int050: 224, exh050: 228, liftInt: 0.600, liftExh: 0.600, lsa: 112, rpmLo: 1500, rpmHi: 6600, use: "Street / strip (streetable boost)" },
+  { mfr: "Texas Speed", family: "228/232",           part: "25-TSP228232",    platform: "ls", lifter: "hyd_roller", int050: 228, exh050: 232, liftInt: 0.600, liftExh: 0.600, lsa: 112, rpmLo: null, rpmHi: null, use: "Street / strip, ~2800 stall" },
+  { mfr: "Texas Speed", family: "228R",              part: "TSP-228R6110",    platform: "ls", lifter: "hyd_roller", int050: 228, exh050: 228, liftInt: 0.600, liftExh: 0.600, lsa: 110, rpmLo: 1800, rpmHi: 6800, use: "Street / strip, 3200+ stall" },
+  { mfr: "Texas Speed", family: "MS3 (Magic Stick 3)", part: "25-TSPMS3112",  platform: "ls", lifter: "hyd_roller", int050: 238, exh050: 242, liftInt: 0.600, liftExh: 0.600, lsa: 112, rpmLo: null, rpmHi: null, use: "Street / strip, max-effort end" },
+  // COMP Cams — additional LS street grinds
+  { mfr: "COMP Cams", family: "XFI RPM XR259HR",     part: "54-408-11", platform: "ls", lifter: "hyd_roller", int050: 206, exh050: 212, liftInt: 0.515, liftExh: 0.522, lsa: 112, rpmLo: 800, rpmHi: 5800, use: "Mild street / performance" },
+  { mfr: "COMP Cams", family: "XFI Xtreme Truck HR15", part: "54-451-11", platform: "ls", lifter: "hyd_roller", int050: 208, exh050: 212, liftInt: 0.554, liftExh: 0.558, lsa: 115, rpmLo: 1000, rpmHi: 5700, use: "Daily / tow truck" },
+  { mfr: "COMP Cams", family: "LSR Cathedral 231/239", part: "54-459-11", platform: "ls", lifter: "hyd_roller", int050: 231, exh050: 239, liftInt: 0.617, liftExh: 0.624, lsa: 113, rpmLo: 2000, rpmHi: 7000, use: "Street / strip, wide powerband" },
+  { mfr: "COMP Cams", family: "Big Mutha' Thumpr",   part: "54-602-11", platform: "ls", lifter: "hyd_roller", int050: 228, exh050: 230, liftInt: 0.573, liftExh: 0.558, lsa: 112, rpmLo: 2200, rpmHi: 7200, use: "Street / strip, aggressive lopey idle" },
+  // Cam Motion / Trick Flow / Summit
+  { mfr: "Cam Motion", family: "Hotrod",             part: "03-01-0075", platform: "ls", lifter: "hyd_roller", int050: 227, exh050: 237, liftInt: 0.595, liftExh: 0.587, lsa: 111, rpmLo: 3000, rpmHi: 6500, use: "Street / strip, lopey idle" },
+  { mfr: "Trick Flow", family: "TrackMax LS",        part: "TFS-30602001", platform: "ls", lifter: "hyd_roller", int050: 216, exh050: 220, liftInt: 0.560, liftExh: 0.560, lsa: 114, rpmLo: 2000, rpmHi: 6000, use: "Street / strip, good idle" },
+  { mfr: "Summit Racing", family: "Pro LS (truck swap)", part: "SUM-8712", platform: "ls", lifter: "hyd_roller", int050: 209, exh050: 217, liftInt: 0.500, liftExh: 0.500, lsa: 112, rpmLo: 1800, rpmHi: 6000, use: "Daily / tow, big low-end torque" },
 ];

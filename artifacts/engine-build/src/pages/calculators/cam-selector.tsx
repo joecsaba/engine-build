@@ -76,6 +76,17 @@ function round2(n: number) { return Math.round(n / 2) * 2; }
 function round100(n: number) { return Math.round(n / 100) * 100; }
 function clamp(lo: number, hi: number, n: number) { return Math.max(lo, Math.min(hi, n)); }
 
+// Advanced (optional) inputs — when 0/empty, the calc falls back to its
+// simple-mode assumptions.
+interface AdvInputs {
+  cfm: number;        // peak intake port flow @ 28" (0 = ignore)
+  flowAdj: number;    // LSA nudge derived from flow (internal)
+  manifold: string;   // "dual" | "single" | "efi" | ""
+  targetRpm: number;  // target peak-HP RPM (0 = use application preset)
+  stroke: number;     // for dynamic compression (0 = skip)
+  rod: number;        // rod length for dynamic compression (0 = skip)
+}
+
 interface Result {
   int050: number;
   exh050: number;
@@ -96,33 +107,54 @@ interface Result {
   bandHi: number;
   cubesPerIn: number;
   warnings: { level: "warn" | "info" | "ok"; text: string }[];
+  // Advanced-only outputs (null when the relevant advanced input wasn't given)
+  hpPotential: number | null;   // from head flow
+  dcr: number | null;           // dynamic compression ratio
+  crankingPsi: number | null;   // estimated cranking pressure, gauge
+  ivc: number | null;           // intake valve closing, °ABDC (seat)
+  pumpGasVerdict: string | null;
+  advNotes: string[];           // advanced-mode explanatory notes
+  targetRpmUsed: boolean;
 }
 
 function compute(
   disp: number, cyl: number, valveDia: number, cr: number,
   app: Application, asp: Aspiration, trans: Transmission,
   head: HeadFamily, lifter: LifterType, stall: number,
+  adv: AdvInputs,
 ): Result | null {
   if (disp <= 0 || cyl <= 0 || valveDia <= 0) return null;
   const p = APPLICATIONS[app];
   const dispPerCyl = disp / cyl;
   const cubesPerIn = dispPerCyl / valveDia;
+  const advNotes: string[] = [];
 
   // ── Duration: application base scaled to cubes-per-cylinder ──────────────
   // Bigger engines swallow more cam at the same idle intent (they still make
   // idle torque); smaller engines get slightly less. ~0.35°/ci-per-cyl vs the
   // 43.75 ci/cyl (350 V8) baseline.
   const durNudge = (dispPerCyl - 43.75) * 0.35;
-  const int050 = round2(clamp(190, 290, p.baseDur + durNudge));
+  let int050: number;
+  let targetRpmUsed = false;
+  if (adv.targetRpm > 0) {
+    // Reverse-solve duration from a target peak-HP RPM:
+    // peakHp = 3800 + 52·(int050 − 200)  ⇒  int050 = 200 + (targetRpm − 3800)/52
+    int050 = round2(clamp(190, 290, 200 + (adv.targetRpm - 3800) / 52));
+    targetRpmUsed = true;
+    advNotes.push(`Duration set to hit your ~${adv.targetRpm.toLocaleString()} RPM peak-power target (overrides the application preset).`);
+  } else {
+    int050 = round2(clamp(190, 290, p.baseDur + durNudge));
+  }
   const exh050 = int050 + p.exhAdd;
 
-  // ── LSA: Vizard 128-minus rule + CR + aspiration ────────────────────────
+  // ── LSA: Vizard 128-minus rule + CR + aspiration + (advanced) flow ──────
   const base = HEAD_FAMILIES[head].base;
   const vizardRaw = base - cubesPerIn * 0.91;
   const crAdj = (cr - 10.5) * 0.75;         // +0.75°/point over 10.5, symmetric under
   const aspAdj = ASPIRATION[asp].lsaAdj;
+  const flowAdj = adv.flowAdj;              // 0 unless CFM provided
   const vizardLsa = clamp(100, 118, Math.round(vizardRaw));
-  const lsa = clamp(102, 120, Math.round(vizardRaw + crAdj + aspAdj));
+  const lsa = clamp(102, 120, Math.round(vizardRaw + crAdj + aspAdj + flowAdj));
 
   // ── Lift (bounded by lifter type ceiling) ───────────────────────────────
   const ceil = LIFTERS[lifter].liftCeiling;
@@ -148,8 +180,14 @@ function compute(
   // ── Peak RPM estimates from intake duration @0.050" ─────────────────────
   const peakTq = round100(2000 + 52 * (int050 - 200));
   const peakHp = peakTq + 1800;
-  const bandLo = round100(peakTq - 1400);
-  const bandHi = round100(peakHp + 400);
+  // Intake manifold shifts the usable band: single-plane favors the top,
+  // dual-plane favors low/mid and caps the top a bit.
+  let bandShiftLo = 0, bandShiftHi = 0;
+  if (adv.manifold === "single") { bandShiftLo = 200; bandShiftHi = 300; advNotes.push("Single-plane intake: powerband shifts up — favors 3,500 RPM and above, gives up a little bottom-end for top-end."); }
+  else if (adv.manifold === "dual") { bandShiftHi = -200; advNotes.push("Dual-plane intake: strong low and mid-range, but it signs off up top — pair with cams under ~230° @ .050\" for best results."); }
+  else if (adv.manifold === "efi") { advNotes.push("EFI intake: broad, flexible powerband — tune covers the transitions."); }
+  const bandLo = round100(peakTq - 1400 + bandShiftLo);
+  const bandHi = round100(peakHp + 400 + bandShiftHi);
 
   // ── Supporting-mod warnings ─────────────────────────────────────────────
   const warnings: Result["warnings"] = [];
@@ -180,10 +218,53 @@ function compute(
     warnings.push({ level: "info", text: ASPIRATION[asp].note });
   }
 
+  // ── Advanced analysis ────────────────────────────────────────────────────
+  // HP potential from head flow (Vizard's flow-to-HP rule: ~0.257 hp per CFM
+  // of peak intake flow at 28", per cylinder).
+  let hpPotential: number | null = null;
+  if (adv.cfm > 0) {
+    hpPotential = Math.round(adv.cfm * 0.257 * cyl);
+    // Is the head a bottleneck or over-cammed relative to flow? A rough guide:
+    // the cam's usable peak-HP RPM wants flow of about disp × peakHp / 100000 CFM
+    // per cylinder. We instead compare flow-per-cube to a ~2.2 CFM/ci street norm.
+    const flowPerCube = adv.cfm / dispPerCyl;
+    if (flowPerCube < 1.9) {
+      warnings.push({ level: "warn", text: `At ${adv.cfm} CFM the heads may bottleneck this cam — the engine will run out of breath before the duration's RPM suggests. A bigger cam won't help until the heads flow more.` });
+    } else if (flowPerCube > 2.6) {
+      advNotes.push(`Strong head flow (${flowPerCube.toFixed(1)} CFM per cubic inch) supports this cam's top end — you could even step up in duration and the heads would keep feeding it.`);
+    }
+    advNotes.push(`Head-flow HP potential: about ${hpPotential} hp at the crank if the rest of the combo (cam, intake, exhaust, compression) is matched — heads flowing ${adv.cfm} CFM × 0.257 × ${cyl} cylinders.`);
+  }
+
+  // Dynamic compression + cranking pressure from the recommended cam's intake
+  // valve closing point. DCR = 1 + (effective_stroke/stroke)·(SCR−1), which is
+  // bore/chamber-independent. IVC (seat) from the recommended cam timing.
+  let dcr: number | null = null, crankingPsi: number | null = null, ivc: number | null = null, pumpGasVerdict: string | null = null;
+  if (adv.stroke > 0 && adv.rod > 0 && cr > 1) {
+    const advance = 4; // typical ground-in intake advance
+    const icl = lsa - advance;
+    ivc = advInt / 2 + icl - 180; // °ABDC, seat timing
+    if (ivc > 0 && ivc < 110) {
+      const A = (ivc * Math.PI) / 180;
+      const r = adv.stroke / 2;
+      const R = adv.rod;
+      const se = r + R + r * Math.cos(A) - Math.sqrt(R * R - Math.pow(r * Math.sin(A), 2));
+      dcr = Math.round((1 + (se / adv.stroke) * (cr - 1)) * 100) / 100;
+      crankingPsi = Math.round(14.7 * Math.pow(dcr, 1.2) - 14.7);
+      pumpGasVerdict =
+        crankingPsi <= 175 ? "Comfortable on pump gas (regular–premium)" :
+        crankingPsi <= 195 ? "Pump-gas friendly on 91–93 octane with good tuning" :
+        crankingPsi <= 210 ? "Right at the pump-gas edge — needs premium, good chambers, careful timing" :
+                             "Race-gas territory — cranking pressure is high for pump gas";
+      advNotes.push(`With this cam (intake closes ~${Math.round(ivc)}° ABDC) on your ${adv.stroke}" stroke / ${adv.rod}" rod and ${cr.toFixed(1)}:1 static, dynamic compression works out to ${dcr}:1 (~${crankingPsi} psi cranking).`);
+    }
+  }
+
   return {
     int050, exh050, lsa, vizardLsa, crAdj, aspAdj, liftLo, liftHi,
     advInt, advExh, overlap, idleVac, idleChar,
     peakTq, peakHp, bandLo, bandHi, cubesPerIn, warnings,
+    hpPotential, dcr, crankingPsi, ivc, pumpGasVerdict, advNotes, targetRpmUsed,
   };
 }
 
@@ -200,6 +281,7 @@ function defaultValveDia(disp: number, cyl: number): number {
 }
 
 export default function CamSelectorCalculator() {
+  const [mode, setMode] = useState<"simple" | "advanced">("simple");
   const [disp, setDisp] = useState("350");
   const [cyl, setCyl] = useState("8");
   const [valveDia, setValveDia] = useState("2.02");
@@ -211,14 +293,42 @@ export default function CamSelectorCalculator() {
   const [head, setHead] = useState<HeadFamily>("sbc");
   const [lifter, setLifter] = useState<LifterType>("hyd_roller");
   const [stall, setStall] = useState("");
+  // Advanced-only inputs
+  const [cfm, setCfm] = useState("");
+  const [manifold, setManifold] = useState("");
+  const [targetRpm, setTargetRpm] = useState("");
+  const [stroke, setStroke] = useState("");
+  const [rod, setRod] = useState("");
 
   // Auto-fill valve diameter from displacement unless the user has set it.
   const effectiveValve = valveTouched ? valveDia : defaultValveDia(parseFloat(disp) || 0, parseInt(cyl) || 0).toFixed(2);
 
+  // Advanced inputs bundle — zeroed out in simple mode so the calc uses its
+  // assumptions. Flow → LSA nudge (Vizard: high-flow heads want wider LSA).
+  const advInputs: AdvInputs = useMemo(() => {
+    if (mode !== "advanced") return { cfm: 0, flowAdj: 0, manifold: "", targetRpm: 0, stroke: 0, rod: 0 };
+    const cfmN = parseFloat(cfm) || 0;
+    const dispPerCyl = (parseFloat(disp) || 0) / (parseInt(cyl) || 1);
+    let flowAdj = 0;
+    if (cfmN > 0 && dispPerCyl > 0) {
+      const flowPerCube = cfmN / dispPerCyl;
+      flowAdj = clamp(-1, 2, Math.round((flowPerCube - 2.2) * 2));
+    }
+    return {
+      cfm: cfmN,
+      flowAdj,
+      manifold,
+      targetRpm: parseInt(targetRpm) || 0,
+      stroke: parseFloat(stroke) || 0,
+      rod: parseFloat(rod) || 0,
+    };
+  }, [mode, cfm, manifold, targetRpm, stroke, rod, disp, cyl]);
+
   const result = useMemo(() => compute(
     parseFloat(disp) || 0, parseInt(cyl) || 0, parseFloat(effectiveValve) || 0,
     parseFloat(cr) || 0, app, asp, trans, head, lifter, parseInt(stall) || 0,
-  ), [disp, cyl, effectiveValve, cr, app, asp, trans, head, lifter, stall]);
+    advInputs,
+  ), [disp, cyl, effectiveValve, cr, app, asp, trans, head, lifter, stall, advInputs]);
 
   // ── Match the recommendation against the real-cam database ───────────────
   // Head family maps directly to a cam platform (sbc/ls/bbc/sbf). "import" has
@@ -254,15 +364,38 @@ export default function CamSelectorCalculator() {
     <div className="container mx-auto py-8 px-4 max-w-7xl">
       <SEOHead
         title="Camshaft Selector — What Cam Do I Need? Duration, LSA & Lift Calculator"
-        description="Free camshaft selector: enter your engine, compression, transmission, and goal and get recommended duration @ 0.050&quot;, lobe separation angle (LSA), and valve lift — plus real matching cams from COMP, Lunati, Crane, Howards, Edelbrock &amp; Summit, estimated powerband, idle character, and the converter/compression/spring upgrades the cam needs. Uses David Vizard's LSA method."
+        description="Free camshaft selector: enter your engine, compression, transmission, and goal and get recommended duration @ 0.050&quot;, lobe separation angle (LSA), and valve lift — plus real matching cams from COMP, Brian Tooley Racing, Texas Speed, Lunati, Crane, Howards, Edelbrock &amp; Summit. Advanced mode adds ported head flow, dynamic compression, and target-RPM inputs. Uses David Vizard's LSA method."
         canonical="/calculators/cam-selector"
         keywords="cam selector, camshaft selector, what cam do i need, camshaft calculator, cam duration calculator, LSA calculator, lobe separation angle, how to choose a camshaft, cam recommendation, camshaft finder, cam selection calculator, street cam, street strip cam, duration at 0.050"
       />
 
       <h1 className="text-3xl font-bold mb-2">Camshaft Selector — What Cam Do I Need?</h1>
-      <p className="text-muted-foreground mb-8 max-w-3xl">
-        Tell us about your engine and what you want it to do. We'll recommend a duration at 0.050&quot;, lobe separation angle, and lift range — then show the powerband it makes, how it idles, and the converter, compression, and springs it needs. Methodology follows David Vizard's LSA method and published cam-duration/RPM data.
+      <p className="text-muted-foreground mb-6 max-w-3xl">
+        Tell us about your engine and what you want it to do. We'll recommend a duration at 0.050&quot;, lobe separation angle, and lift range — then show the powerband it makes, how it idles, real matching cams, and the converter, compression, and springs it needs. Methodology follows David Vizard's LSA method and published cam-duration/RPM data.
       </p>
+
+      {/* ── Simple / Advanced toggle ── */}
+      <div className="flex items-center gap-3 mb-8">
+        <div className="inline-flex rounded-lg border overflow-hidden">
+          <button
+            onClick={() => setMode("simple")}
+            className={`px-4 py-2 text-sm font-medium transition-colors ${mode === "simple" ? "bg-[#1a1a1a] text-white" : "bg-white text-muted-foreground hover:bg-muted"}`}
+          >
+            Simple
+          </button>
+          <button
+            onClick={() => setMode("advanced")}
+            className={`px-4 py-2 text-sm font-medium transition-colors border-l ${mode === "advanced" ? "bg-[#1a1a1a] text-white" : "bg-white text-muted-foreground hover:bg-muted"}`}
+          >
+            Advanced
+          </button>
+        </div>
+        <p className="text-xs text-muted-foreground">
+          {mode === "simple"
+            ? "Simple mode uses smart assumptions. Switch to Advanced to enter real head flow, dynamic-compression inputs, target RPM, and intake type."
+            : "Advanced: override the assumptions. Any field you leave blank falls back to the simple-mode estimate."}
+        </p>
+      </div>
 
       <div className="flex flex-col xl:flex-row gap-8">
         <div className="flex-1 min-w-0 space-y-6">
@@ -378,6 +511,54 @@ export default function CamSelectorCalculator() {
             </Card>
           </div>
 
+          {/* ── ADVANCED INPUTS ── */}
+          {mode === "advanced" && (
+            <Card className="border-[#E85D04]/30">
+              <CardHeader>
+                <CardTitle className="text-base">Advanced — Override the Assumptions</CardTitle>
+                <CardDescription>Enter real numbers where you have them. Blank fields fall back to the simple-mode estimate.</CardDescription>
+              </CardHeader>
+              <CardContent className="space-y-4">
+                <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
+                  <div className="space-y-1">
+                    <Label>Intake port flow (CFM @ 28&quot;)</Label>
+                    <Input type="number" step="5" placeholder="e.g. 265 ported" value={cfm} onChange={(e) => setCfm(e.target.value)} />
+                    <p className="text-[10px] text-muted-foreground">Peak intake flow. Refines LSA + shows HP potential + flags a head bottleneck.</p>
+                  </div>
+                  <div className="space-y-1">
+                    <Label>Intake manifold</Label>
+                    <Select value={manifold || "unset"} onValueChange={(v) => setManifold(v === "unset" ? "" : v)}>
+                      <SelectTrigger><SelectValue placeholder="Not specified" /></SelectTrigger>
+                      <SelectContent>
+                        <SelectItem value="unset">Not specified</SelectItem>
+                        <SelectItem value="dual">Dual-plane (low/mid torque)</SelectItem>
+                        <SelectItem value="single">Single-plane (top-end)</SelectItem>
+                        <SelectItem value="efi">EFI / port injection</SelectItem>
+                      </SelectContent>
+                    </Select>
+                    <p className="text-[10px] text-muted-foreground">Shifts the usable powerband.</p>
+                  </div>
+                  <div className="space-y-1">
+                    <Label>Target peak-HP RPM</Label>
+                    <Input type="number" step="100" placeholder="e.g. 6500" value={targetRpm} onChange={(e) => setTargetRpm(e.target.value)} />
+                    <p className="text-[10px] text-muted-foreground">Reverse-solves duration to hit your RPM target instead of the preset.</p>
+                  </div>
+                  <div className="grid grid-cols-2 gap-3">
+                    <div className="space-y-1">
+                      <Label>Stroke (in)</Label>
+                      <Input type="number" step="0.01" placeholder="3.48" value={stroke} onChange={(e) => setStroke(e.target.value)} />
+                    </div>
+                    <div className="space-y-1">
+                      <Label>Rod length (in)</Label>
+                      <Input type="number" step="0.01" placeholder="5.70" value={rod} onChange={(e) => setRod(e.target.value)} />
+                    </div>
+                    <p className="col-span-2 text-[10px] text-muted-foreground">Stroke + rod + your static compression → dynamic compression &amp; cranking pressure for the recommended cam (pump-gas check).</p>
+                  </div>
+                </div>
+              </CardContent>
+            </Card>
+          )}
+
           {/* ── RESULT ── */}
           {result && (
             <>
@@ -445,6 +626,52 @@ export default function CamSelectorCalculator() {
                 </Card>
               </div>
 
+              {/* ── Advanced analysis (only when advanced inputs were given) ── */}
+              {mode === "advanced" && (result.hpPotential !== null || result.dcr !== null || result.advNotes.length > 0) && (
+                <Card className="border-[#E85D04]/30">
+                  <CardHeader><CardTitle className="text-base flex items-center gap-2"><Gauge className="w-4 h-4 text-[#E85D04]" />Advanced Analysis</CardTitle></CardHeader>
+                  <CardContent className="space-y-4">
+                    {(result.hpPotential !== null || result.dcr !== null) && (
+                      <div className="grid grid-cols-1 sm:grid-cols-3 gap-4">
+                        {result.hpPotential !== null && (
+                          <div className="rounded-lg bg-muted/50 p-3">
+                            <p className="text-[10px] uppercase tracking-wider text-muted-foreground">Head-flow HP potential</p>
+                            <p className="text-xl font-bold font-mono">{result.hpPotential} hp</p>
+                          </div>
+                        )}
+                        {result.dcr !== null && (
+                          <div className="rounded-lg bg-muted/50 p-3">
+                            <p className="text-[10px] uppercase tracking-wider text-muted-foreground">Dynamic compression</p>
+                            <p className="text-xl font-bold font-mono">{result.dcr}:1</p>
+                          </div>
+                        )}
+                        {result.crankingPsi !== null && (
+                          <div className="rounded-lg bg-muted/50 p-3">
+                            <p className="text-[10px] uppercase tracking-wider text-muted-foreground">Cranking pressure (est.)</p>
+                            <p className="text-xl font-bold font-mono">~{result.crankingPsi} psi</p>
+                          </div>
+                        )}
+                      </div>
+                    )}
+                    {result.pumpGasVerdict && (
+                      <div className="flex items-start gap-2 text-sm">
+                        <CheckCircle2 className="w-4 h-4 text-emerald-500 shrink-0 mt-0.5" />
+                        <p className="text-foreground font-medium">{result.pumpGasVerdict}</p>
+                      </div>
+                    )}
+                    {result.advNotes.map((n, i) => (
+                      <div key={i} className="flex items-start gap-2 text-sm">
+                        <Info className="w-4 h-4 text-sky-500 shrink-0 mt-0.5" />
+                        <p className="text-muted-foreground">{n}</p>
+                      </div>
+                    ))}
+                    <p className="text-[11px] text-muted-foreground border-t pt-3">
+                      Dynamic compression uses the recommended cam's intake-closing point (≈4° ground-in advance) with your stroke, rod, and static compression via the standard slider-crank effective-stroke method. HP potential uses ~0.257 hp per CFM of peak intake flow. Both are estimates — validate a final build on a dyno.
+                    </p>
+                  </CardContent>
+                </Card>
+              )}
+
               <Card>
                 <CardHeader><CardTitle className="text-base">Supporting Parts & Cautions</CardTitle></CardHeader>
                 <CardContent className="space-y-3">
@@ -506,11 +733,11 @@ export default function CamSelectorCalculator() {
                                   <div className="text-xs text-muted-foreground">{c.family}</div>
                                 </td>
                                 <td className="py-2 pr-3 font-mono text-xs">{c.part}</td>
-                                <td className="py-2 pr-3 font-mono">{c.int050}/{c.exh050}°</td>
+                                <td className="py-2 pr-3 font-mono">{c.int050}/{c.exh050 ?? "—"}°</td>
                                 <td className="py-2 pr-3 font-mono text-xs">{c.liftInt.toFixed(3)}/{c.liftExh.toFixed(3)}&quot;</td>
                                 <td className="py-2 pr-3 font-mono">{c.lsa}°</td>
                                 <td className="py-2 pr-3 text-xs">{lifterLabel[c.lifter]}</td>
-                                <td className="py-2 text-xs text-muted-foreground">{c.rpmLo.toLocaleString()}–{c.rpmHi.toLocaleString()} · {c.use}</td>
+                                <td className="py-2 text-xs text-muted-foreground">{c.rpmLo != null && c.rpmHi != null ? `${c.rpmLo.toLocaleString()}–${c.rpmHi.toLocaleString()} · ` : ""}{c.use}</td>
                               </tr>
                             );
                           })}

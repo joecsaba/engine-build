@@ -134,6 +134,27 @@ export default {
       `,
     },
     {
+      heading: "Advanced mode — replace the assumptions with real numbers",
+      body: `
+        <p>Simple mode makes reasonable assumptions to get you a fast answer — it estimates head flow from valve diameter, uses a standard rocker ratio for lift, and predicts the powerband from duration alone. Switch to <strong>Advanced mode</strong> to override any of those with data you actually have:</p>
+        <ul>
+          <li><strong>Intake port flow (CFM @ 28&quot;)</strong> — the real airflow number from your heads (ported or not). We use it to estimate crank HP potential (about 0.257 hp per CFM of peak intake flow × cylinders — a well-known Vizard rule), to nudge the LSA (higher-flowing heads want slightly wider LSA), and to flag when the heads are the bottleneck — the case where a bigger cam won't help because the head runs out of breath first.</li>
+          <li><strong>Intake manifold type</strong> — a dual-plane favors low and mid-range and signs off up top; a single-plane shifts the whole band up. The calculator moves the estimated powerband accordingly.</li>
+          <li><strong>Target peak-HP RPM</strong> — if you know the RPM you want peak power at (say you're building around a converter and gear), the calculator reverse-solves the duration to land there instead of using the application preset.</li>
+          <li><strong>Stroke + rod length</strong> — combined with your static compression, these let the calculator compute the <em>dynamic</em> compression ratio and cranking pressure the recommended cam will actually produce, and tell you whether that's pump-gas friendly. This is the honest version of the "does a big cam need more compression?" question — it uses the recommended cam's real intake-closing point.</li>
+        </ul>
+        <p>The dynamic-compression math uses the standard slider-crank effective-stroke method: <strong>DCR = 1 + (effective stroke ÷ full stroke) × (static CR − 1)</strong>, where the effective stroke is measured from the intake-valve-closing point. Because bore and chamber volume cancel out of that ratio, we only need stroke, rod, static compression, and the cam's IVC — no chamber cc required. Cranking pressure follows the polytropic model (14.7 × DCR^1.2 − 14.7). For pump gas, aim for a dynamic CR around 7.5–8.5:1 and cranking pressure under ~190 psi.</p>
+        <p>Any advanced field you leave blank simply falls back to the simple-mode estimate, so you can fill in only the numbers you have.</p>
+      `,
+    },
+    {
+      heading: "Shopping the recommendation — real matching cams",
+      body: `
+        <p>Below the recommendation, the calculator lists real, currently-available grinds from the major manufacturers whose specs land closest to your target duration, LSA, and lift. The database covers popular street and street/strip cams from <strong>COMP Cams, Lunati, Crane, Howards, Edelbrock, Summit Racing</strong>, plus LS-specific makers like <strong>Brian Tooley Racing and Texas Speed</strong>, across Small Block Chevy, LS, Big Block Chevy, and Small Block Ford.</p>
+        <p>Every listed cam's duration at 0.050&quot;, LSA, lift, and part number was pulled from a published manufacturer or retailer spec page. But <strong>always verify before you buy</strong> — specs and part numbers change, listed lift assumes the platform's standard rocker ratio (so your actual lift may differ), and you must confirm fitment and piston-to-valve clearance for your specific combination. The matches are shopping starting points, not endorsements, and engine-build.com is not affiliated with any cam manufacturer.</p>
+      `,
+    },
+    {
       heading: "Frequently asked questions",
       body: `
         <p><strong>What cam do I need for a stock 350?</strong><br>
