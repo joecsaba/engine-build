@@ -124,10 +124,10 @@ export default function DecimalFractionInchConverter() {
   return (
     <div className="container mx-auto py-8 px-4 max-w-5xl">
       <SEOHead
-        title="Decimal ↔ Fraction Inch Converter"
-        description="Convert decimal inches to fractional inches and back. Choose precision down to 1/128. Built for machinists who need to read a caliper and pick the right drill."
+        title={'Decimal to Fraction Inch Converter — Full 1/64" Chart + Tap Drill & Wrench Sizes'}
+        description={'Free decimal ↔ fraction inch converter with full 1/64" reference chart (0 to 1"), tap drill decimal equivalents (75% thread), SAE wrench sizes with metric equivalents, engine-builder thousandths reference (bearing clearance, ring gap, quench), and 12-question FAQ.'}
         canonical="/calculators/decimal-fraction-inch"
-        keywords="decimal to fraction, fraction to decimal, inch fractions, machinist converter, 1/64 1/32 1/16, fractional inch chart"
+        keywords="decimal to fraction inches, fraction to decimal inches, inch fraction calculator, 1/64 chart, 1/32 chart, 1/16 chart, decimal to inches, fraction to inches, machinist converter, tap drill decimal, wrench size decimal, .375 to fraction, .625 to fraction, 0.265 to fraction, inch decimal conversion, decimal inches to fraction, fractional inch chart, 3/8 to decimal, 5/8 to decimal, 3/4 to decimal, 0.5 in fraction, 0.25 in fraction"
       />
       <h1 className="text-3xl font-bold mb-2">Decimal ↔ Fraction Inch Converter</h1>
       <p className="text-muted-foreground mb-8">Translate between decimal caliper readings and fractional drill/wrench sizes.</p>
