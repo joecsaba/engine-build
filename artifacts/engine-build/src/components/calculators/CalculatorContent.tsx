@@ -36,39 +36,49 @@ export function CalculatorContent({ data, title }: Props) {
   const { expertMode } = usePreferences();
   if (expertMode) return null;
   return (
-    // Full container width — wrap the prose inside at a comfortable reading
-    // length (~70ch) so long-form text doesn't sprawl across the whole card.
-    <Card className="mt-8">
-      <CardHeader>
-        <CardTitle className="text-xl">{title}: What Engine Builders Need to Know</CardTitle>
-      </CardHeader>
-      <CardContent>
-        <div className="max-w-3xl space-y-6 text-muted-foreground">
-          <p className="text-base leading-relaxed text-foreground">{data.intro}</p>
+    <>
+      {/* Related calculators — moved above the long-form content so users
+          landing from search see the cross-links first, before scrolling
+          through the reference material. */}
+      {data.related && data.related.length > 0 && (
+        <Card className="mt-8">
+          <CardHeader className="pb-3">
+            <CardTitle className="text-base">Related calculators</CardTitle>
+          </CardHeader>
+          <CardContent>
+            <ul className="grid grid-cols-1 sm:grid-cols-2 gap-x-6 gap-y-1.5 text-sm">
+              {data.related.map((r) => (
+                <li key={r.slug}>
+                  <Link href={`/calculators/${r.slug}`} className="text-[#E85D04] hover:underline">
+                    {r.title}
+                  </Link>
+                </li>
+              ))}
+            </ul>
+          </CardContent>
+        </Card>
+      )}
 
-          {data.sections.map((s) => (
-            <section key={s.heading} className="space-y-2">
-              <h3 className="text-base font-semibold text-foreground">{s.heading}</h3>
-              <div className="prose prose-sm max-w-none text-muted-foreground" dangerouslySetInnerHTML={{ __html: s.body }} />
-            </section>
-          ))}
+      {/* Long-form SEO / educational content. Full container width — wrap the
+          prose inside at a comfortable reading length (~70ch) so long-form
+          text doesn't sprawl across the whole card. */}
+      <Card className="mt-4">
+        <CardHeader>
+          <CardTitle className="text-xl">{title}: What Engine Builders Need to Know</CardTitle>
+        </CardHeader>
+        <CardContent>
+          <div className="max-w-3xl space-y-6 text-muted-foreground">
+            <p className="text-base leading-relaxed text-foreground">{data.intro}</p>
 
-          {data.related && data.related.length > 0 && (
-            <section className="pt-4 border-t">
-              <h3 className="text-base font-semibold text-foreground mb-2">Related calculators</h3>
-              <ul className="space-y-1 text-sm">
-                {data.related.map((r) => (
-                  <li key={r.slug}>
-                    <Link href={`/calculators/${r.slug}`} className="text-[#E85D04] hover:underline">
-                      {r.title}
-                    </Link>
-                  </li>
-                ))}
-              </ul>
-            </section>
-          )}
-        </div>
-      </CardContent>
-    </Card>
+            {data.sections.map((s) => (
+              <section key={s.heading} className="space-y-2">
+                <h3 className="text-base font-semibold text-foreground">{s.heading}</h3>
+                <div className="prose prose-sm max-w-none text-muted-foreground" dangerouslySetInnerHTML={{ __html: s.body }} />
+              </section>
+            ))}
+          </div>
+        </CardContent>
+      </Card>
+    </>
   );
 }
