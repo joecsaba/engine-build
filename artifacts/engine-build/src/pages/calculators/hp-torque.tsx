@@ -37,10 +37,10 @@ export default function HpTorqueCalculator() {
   return (
     <div className="container mx-auto py-8 px-4 max-w-7xl">
       <SEOHead
-        title="HP to Torque Calculator | Horsepower & Torque Converter"
-        description="Convert between horsepower and torque at any RPM. Free HP to torque calculator with Nm and kg-m conversions for engine builders and tuners."
+        title="HP to Torque Calculator — Horsepower ↔ Torque at Any RPM (lb-ft, Nm, kW)"
+        description="Free bidirectional HP↔Torque calculator with the 5252 RPM formula explained. Includes conversion tables (100–1500 HP), stock engine peak HP/torque for 24 popular V8s / imports / diesels, HP-per-liter benchmarks, and unit conversions between lb-ft, Nm, kg·m, HP, PS, and kW."
         canonical="/calculators/hp-torque"
-        keywords="hp to torque calculator, torque to horsepower, horsepower calculator, torque converter calculator, engine power calculator"
+        keywords="hp to torque calculator, torque to hp calculator, horsepower to torque, torque to horsepower, hp torque converter, 5252 rpm, torque calculator, horsepower calculator, hp torque formula, hp to torque formula, torque to hp formula, nm to hp, hp to nm, kw to hp, torque units converter, engine hp calculator"
       />
       <h1 className="text-3xl font-bold mb-2">Horsepower &amp; Torque Converter</h1>
       <p className="text-muted-foreground mb-8">Bidirectional HP↔Torque conversion with unit conversions. Enter HP or Torque — leave the other blank to calculate it.</p>
