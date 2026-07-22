@@ -9,6 +9,7 @@ import { Info, AlertTriangle, CheckCircle2, Gauge } from "lucide-react";
 import { CalculatorContent } from "@/components/calculators/CalculatorContent";
 import { HelpSidebar } from "@/components/calculators/HelpCard";
 import camSelectorContent from "@/data/calculatorContent/cam-selector.mjs";
+import { CAM_DATABASE, type CamSpec, type CamPlatform, type CamLifter } from "@/data/camDatabase";
 
 /* ─────────────────────────────────────────────────────────────────────────
    Cam Selector — recommends duration @ 0.050", LSA, and lift from the
@@ -24,7 +25,7 @@ import camSelectorContent from "@/data/calculatorContent/cam-selector.mjs";
 type Application = "economy" | "daily" | "mild" | "street" | "strip" | "drag" | "pro";
 type Aspiration = "na" | "supercharged" | "turbo" | "nitrous";
 type Transmission = "auto" | "manual";
-type HeadFamily = "sbc" | "sbf" | "bbc" | "import";
+type HeadFamily = "sbc" | "ls" | "sbf" | "bbc" | "import";
 type LifterType = "hyd_roller" | "hyd_flat" | "solid_roller" | "solid_flat";
 
 interface AppProfile {
@@ -50,7 +51,8 @@ const APPLICATIONS: Record<Application, AppProfile> = {
 };
 
 const HEAD_FAMILIES: Record<HeadFamily, { label: string; base: number }> = {
-  sbc:    { label: "SBC / LS / parallel-valve V8", base: 128 },
+  sbc:    { label: "Small Block Chevy (SBC)",      base: 128 },
+  ls:     { label: "GM LS / LT (Gen III–V)",       base: 128 },
   sbf:    { label: "Ford Windsor / SBF",           base: 127 },
   bbc:    { label: "BBC / canted-valve / Cleveland", base: 131 },
   import: { label: "Import 4/6-cyl / other",       base: 128 },
@@ -218,11 +220,41 @@ export default function CamSelectorCalculator() {
     parseFloat(cr) || 0, app, asp, trans, head, lifter, parseInt(stall) || 0,
   ), [disp, cyl, effectiveValve, cr, app, asp, trans, head, lifter, stall]);
 
+  // ── Match the recommendation against the real-cam database ───────────────
+  // Head family maps directly to a cam platform (sbc/ls/bbc/sbf). "import" has
+  // no database coverage yet. Score = weighted distance in the fields that
+  // matter most: duration @0.050", then LSA, then lift-range fit, with a soft
+  // penalty for a lifter-type mismatch. We only surface cams within a sane
+  // duration window so we never recommend something wildly off.
+  const matches = useMemo(() => {
+    if (!result) return [];
+    const platform = head as CamPlatform; // sbc|ls|bbc|sbf all exist in the DB
+    if (!["sbc", "ls", "bbc", "sbf"].includes(platform)) return [];
+    const scored = CAM_DATABASE
+      .filter((c) => c.platform === platform)
+      .map((c) => {
+        const durDiff = Math.abs(c.int050 - result.int050);
+        const lsaDiff = Math.abs(c.lsa - result.lsa);
+        // lift fit: penalty only if the cam's peak lift is outside a tolerant band
+        const camLift = Math.max(c.liftInt, c.liftExh);
+        const liftPenalty =
+          camLift < result.liftLo - 0.04 ? (result.liftLo - camLift) * 40 :
+          camLift > result.liftHi + 0.06 ? (camLift - result.liftHi) * 40 : 0;
+        const lifterPenalty = c.lifter === (lifter as CamLifter) ? 0 : 8;
+        const score = durDiff * 3 + lsaDiff * 2 + liftPenalty + lifterPenalty;
+        return { cam: c, score, durDiff };
+      })
+      .filter((m) => m.durDiff <= 16) // only reasonably-close cams
+      .sort((a, b) => a.score - b.score)
+      .slice(0, 5);
+    return scored;
+  }, [result, head, lifter]);
+
   return (
     <div className="container mx-auto py-8 px-4 max-w-7xl">
       <SEOHead
         title="Camshaft Selector — What Cam Do I Need? Duration, LSA & Lift Calculator"
-        description="Free camshaft selector: enter your engine, compression, transmission, and goal and get recommended duration @ 0.050&quot;, lobe separation angle (LSA), and valve lift — plus estimated powerband, idle character, and the converter/compression/spring upgrades the cam needs. Uses David Vizard's LSA method."
+        description="Free camshaft selector: enter your engine, compression, transmission, and goal and get recommended duration @ 0.050&quot;, lobe separation angle (LSA), and valve lift — plus real matching cams from COMP, Lunati, Crane, Howards, Edelbrock &amp; Summit, estimated powerband, idle character, and the converter/compression/spring upgrades the cam needs. Uses David Vizard's LSA method."
         canonical="/calculators/cam-selector"
         keywords="cam selector, camshaft selector, what cam do i need, camshaft calculator, cam duration calculator, LSA calculator, lobe separation angle, how to choose a camshaft, cam recommendation, camshaft finder, cam selection calculator, street cam, street strip cam, duration at 0.050"
       />
@@ -431,6 +463,65 @@ export default function CamSelectorCalculator() {
                     {" "}= {result.lsa}° LSA. Verify final specs against your cam manufacturer's recommendation and always check piston-to-valve clearance.
                   </p>
                 </CardContent>
+              </Card>
+
+              {/* ── Matching real cams from the database ── */}
+              <Card>
+                <CardHeader>
+                  <CardTitle className="text-base">Closest Real Cams</CardTitle>
+                  <CardDescription>
+                    {matches.length > 0
+                      ? `Published grinds from major manufacturers near your recommended spec, sorted by fit. These are shopping starting points — not an endorsement.`
+                      : head === "import"
+                        ? `No cam database coverage for import/other engines yet — use the recommended spec above to shop.`
+                        : `No close database matches — your recommendation may be between common off-the-shelf grinds, or a custom cam is warranted. Use the spec above to shop.`}
+                  </CardDescription>
+                </CardHeader>
+                {matches.length > 0 && (
+                  <CardContent>
+                    <div className="overflow-x-auto">
+                      <table className="w-full text-sm">
+                        <thead>
+                          <tr className="border-b text-left text-xs text-muted-foreground uppercase tracking-wider">
+                            <th className="pb-2 pr-3 font-medium">Cam</th>
+                            <th className="pb-2 pr-3 font-medium">Part #</th>
+                            <th className="pb-2 pr-3 font-medium">@.050&quot; I/E</th>
+                            <th className="pb-2 pr-3 font-medium">Lift I/E</th>
+                            <th className="pb-2 pr-3 font-medium">LSA</th>
+                            <th className="pb-2 pr-3 font-medium">Lifter</th>
+                            <th className="pb-2 font-medium">RPM / Use</th>
+                          </tr>
+                        </thead>
+                        <tbody>
+                          {matches.map((m, i) => {
+                            const c = m.cam;
+                            const lifterLabel: Record<CamLifter, string> = {
+                              hyd_flat: "Hyd flat", hyd_roller: "Hyd roller",
+                              solid_flat: "Solid flat", solid_roller: "Solid roller",
+                            };
+                            return (
+                              <tr key={i} className="border-b last:border-0 align-top hover:bg-muted/40 transition-colors">
+                                <td className="py-2 pr-3">
+                                  <div className="font-semibold text-foreground">{c.mfr}</div>
+                                  <div className="text-xs text-muted-foreground">{c.family}</div>
+                                </td>
+                                <td className="py-2 pr-3 font-mono text-xs">{c.part}</td>
+                                <td className="py-2 pr-3 font-mono">{c.int050}/{c.exh050}°</td>
+                                <td className="py-2 pr-3 font-mono text-xs">{c.liftInt.toFixed(3)}/{c.liftExh.toFixed(3)}&quot;</td>
+                                <td className="py-2 pr-3 font-mono">{c.lsa}°</td>
+                                <td className="py-2 pr-3 text-xs">{lifterLabel[c.lifter]}</td>
+                                <td className="py-2 text-xs text-muted-foreground">{c.rpmLo.toLocaleString()}–{c.rpmHi.toLocaleString()} · {c.use}</td>
+                              </tr>
+                            );
+                          })}
+                        </tbody>
+                      </table>
+                    </div>
+                    <p className="text-[11px] text-muted-foreground mt-3 border-t pt-3 leading-relaxed">
+                      <strong>Verify before buying.</strong> Specs and part numbers change, and lift depends on your rocker ratio (listed at the platform's standard ratio). These are representative popular grinds pulled from published manufacturer/retailer data — confirm current specs, pricing, availability, and fitment with the manufacturer, and always check piston-to-valve clearance for your combination. Engine-build.com is not affiliated with any cam manufacturer.
+                    </p>
+                  </CardContent>
+                )}
               </Card>
 
               <div className="rounded-lg bg-blue-50 border border-blue-200 p-4 text-sm text-blue-900">
