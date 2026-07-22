@@ -10,6 +10,13 @@ import { CalcCard, type Calc } from "@/components/calculators/CalcCard";
 
 export const camValvetrain: Calc[] = [
   {
+    title: "Camshaft Selector — What Cam Do I Need?",
+    href: "/calculators/cam-selector",
+    desc: "Enter your engine, compression, transmission, and goal — get a recommended duration @ 0.050\", LSA, and lift, plus the powerband, idle character, and converter/compression/spring upgrades it needs. Uses David Vizard's LSA method.",
+    tags: ["Cam Selector", "What Cam", "Duration", "LSA"],
+    icon: Settings2,
+  },
+  {
     title: "Advanced Cam Calculator",
     href: "/calculators/cam-duration",
     desc: "Full cam analysis — valve events, overlap, recommended LSA, dynamic compression ratio, and rocker lift table.",

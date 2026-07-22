@@ -25,6 +25,7 @@ import DisplacementCalculator from "@/pages/calculators/displacement";
 import CompressionRatioCalculator from "@/pages/calculators/compression-ratio";
 import RingGapCalculator from "@/pages/calculators/ring-gap";  // formerly ring-gap-advanced; basic deleted 2026-05-28
 import CamDurationCalculator from "@/pages/calculators/cam-duration";
+import CamSelectorCalculator from "@/pages/calculators/cam-selector";
 import RodRatioCalculator from "@/pages/calculators/rod-ratio";
 import HpTorqueCalculator from "@/pages/calculators/hp-torque";
 import PistonSpeedCalculator from "@/pages/calculators/piston-speed";
@@ -176,6 +177,7 @@ function Router() {
         <Route path="/calculators/ring-gap" component={RingGapCalculator} />
         {/* /calculators/ring-gap-advanced redirected to /calculators/ring-gap by CloudFront Function */}
         <Route path="/calculators/cam-duration" component={CamDurationCalculator} />
+        <Route path="/calculators/cam-selector" component={CamSelectorCalculator} />
         <Route path="/calculators/rod-ratio" component={RodRatioCalculator} />
         <Route path="/calculators/hp-torque" component={HpTorqueCalculator} />
         <Route path="/calculators/piston-speed" component={PistonSpeedCalculator} />
