@@ -12,7 +12,9 @@
 // butlerperformance.com, thmotorsports.com, poormanmotorsports.com, and
 // manufacturer listings.
 
-export type CamPlatform = "sbc" | "ls" | "bbc" | "sbf";
+export type CamPlatform =
+  | "sbc" | "ls" | "bbc" | "sbf"
+  | "mopar_sb" | "mopar_bb" | "pontiac" | "cleveland" | "ford_385";
 export type CamLifter = "hyd_flat" | "hyd_roller" | "solid_flat" | "solid_roller";
 
 export interface CamSpec {
@@ -119,4 +121,45 @@ export const CAM_DATABASE: CamSpec[] = [
   { mfr: "Cam Motion", family: "Hotrod",             part: "03-01-0075", platform: "ls", lifter: "hyd_roller", int050: 227, exh050: 237, liftInt: 0.595, liftExh: 0.587, lsa: 111, rpmLo: 3000, rpmHi: 6500, use: "Street / strip, lopey idle" },
   { mfr: "Trick Flow", family: "TrackMax LS",        part: "TFS-30602001", platform: "ls", lifter: "hyd_roller", int050: 216, exh050: 220, liftInt: 0.560, liftExh: 0.560, lsa: 114, rpmLo: 2000, rpmHi: 6000, use: "Street / strip, good idle" },
   { mfr: "Summit Racing", family: "Pro LS (truck swap)", part: "SUM-8712", platform: "ls", lifter: "hyd_roller", int050: 209, exh050: 217, liftInt: 0.500, liftExh: 0.500, lsa: 112, rpmLo: 1800, rpmHi: 6000, use: "Daily / tow, big low-end torque" },
+
+  // ── Pontiac V8 (326–455) ─────────────────────────────────────────────────
+  // Lift shown at Pontiac 1.5 rocker (Lunati lists both 1.5 and 1.65).
+  { mfr: "Lunati", family: "Voodoo (retrofit HR)", part: "20510712LK", platform: "pontiac", lifter: "hyd_roller", int050: 231, exh050: 239, liftInt: 0.535, liftExh: 0.550, lsa: 110, rpmLo: 2200, rpmHi: 6200, use: "High-perf street, ~2800 stall, 9.5:1" },
+  { mfr: "Lunati", family: "Voodoo (retrofit HR)", part: "20510713",   platform: "pontiac", lifter: "hyd_roller", int050: 243, exh050: 251, liftInt: 0.560, liftExh: 0.565, lsa: 110, rpmLo: 2600, rpmHi: 6600, use: "Serious street / strip, 3200 stall, 10.5:1" },
+
+  // ── Ford 351 Cleveland / 351M / 400M ─────────────────────────────────────
+  { mfr: "Crane Cams", family: "Energizer H-284-2", part: "133052", platform: "cleveland", lifter: "hyd_flat", int050: 228, exh050: 228, liftInt: 0.554, liftExh: 0.554, lsa: 110, rpmLo: 2600, rpmHi: 6400, use: "Performance street (351C/M/400)" },
+
+  // ── Mopar LA small block (318/340/360) ───────────────────────────────────
+  // Lift at Mopar 1.5 rocker.
+  { mfr: "COMP Cams", family: "Xtreme Energy XE262H", part: "20-222-3", platform: "mopar_sb", lifter: "hyd_flat", int050: 218, exh050: 224, liftInt: 0.462, liftExh: 0.470, lsa: 110, rpmLo: 1300, rpmHi: 5600, use: "Mild street, good mileage, stock converter" },
+  { mfr: "COMP Cams", family: "Xtreme Energy XE268H", part: "20-223-3", platform: "mopar_sb", lifter: "hyd_flat", int050: 224, exh050: 230, liftInt: 0.477, liftExh: 0.480, lsa: 110, rpmLo: 1600, rpmHi: 5800, use: "Street, biggest for stock converter" },
+  { mfr: "COMP Cams", family: "Xtreme Energy XE274H", part: "20-224-4", platform: "mopar_sb", lifter: "hyd_flat", int050: 230, exh050: 236, liftInt: 0.488, liftExh: 0.491, lsa: 110, rpmLo: 1800, rpmHi: 6000, use: "Street / strip, 2200+ stall" },
+  { mfr: "Crower", family: "Hi-Draulic Hauler", part: "31204", platform: "mopar_sb", lifter: "hyd_flat", int050: 218, exh050: 227, liftInt: 0.474, liftExh: 0.480, lsa: 108, rpmLo: 2500, rpmHi: 6500, use: "Mid-range torque" },
+  { mfr: "Crower", family: "Hi-Draulic Hauler", part: "31205", platform: "mopar_sb", lifter: "hyd_flat", int050: 224, exh050: 234, liftInt: 0.507, liftExh: 0.522, lsa: 108, rpmLo: 2700, rpmHi: 6500, use: "Mid-range acceleration" },
+
+  // ── Mopar B / RB big block (383/400/440) ─────────────────────────────────
+  { mfr: "COMP Cams", family: "Xtreme Energy XE268H", part: "21-223-4", platform: "mopar_bb", lifter: "hyd_flat", int050: 224, exh050: 230, liftInt: 0.477, liftExh: 0.480, lsa: 110, rpmLo: 1600, rpmHi: 5800, use: "Street, works with stock converter" },
+  { mfr: "COMP Cams", family: "Xtreme Energy XE274H", part: "21-224-4", platform: "mopar_bb", lifter: "hyd_flat", int050: 230, exh050: 236, liftInt: 0.488, liftExh: 0.491, lsa: 110, rpmLo: 1800, rpmHi: 6000, use: "High-performance street" },
+  { mfr: "COMP Cams", family: "Xtreme Energy XE284H", part: "21-225-4", platform: "mopar_bb", lifter: "hyd_flat", int050: 240, exh050: 246, liftInt: 0.507, liftExh: 0.510, lsa: 110, rpmLo: 2300, rpmHi: 6500, use: "Street / strip, 2800+ stall, rough idle" },
+
+  // ── Pontiac V8 (326–455) — additional ────────────────────────────────────
+  { mfr: "COMP Cams", family: "Xtreme Energy XE262H", part: "51-222-4", platform: "pontiac", lifter: "hyd_flat", int050: 218, exh050: 224, liftInt: 0.462, liftExh: 0.470, lsa: 110, rpmLo: 1300, rpmHi: 5500, use: "Mild street, stock/1800 stall" },
+  { mfr: "COMP Cams", family: "Xtreme Energy XE268H", part: "51-223-4", platform: "pontiac", lifter: "hyd_flat", int050: 224, exh050: 230, liftInt: 0.477, liftExh: 0.480, lsa: 110, rpmLo: 1600, rpmHi: 5800, use: "Street, slightly rough idle, 2000+ stall" },
+  { mfr: "Lunati", family: "Voodoo", part: "10510703", platform: "pontiac", lifter: "hyd_flat", int050: 227, exh050: 233, liftInt: 0.489, liftExh: 0.504, lsa: 110, rpmLo: 1600, rpmHi: 5800, use: "Street / strip, 2200–2400 stall" },
+
+  // ── Ford 351 Cleveland — additional ──────────────────────────────────────
+  // Lift at Cleveland 1.73 rocker.
+  { mfr: "COMP Cams", family: "Xtreme Energy XE274H", part: "32-246-4", platform: "cleveland", lifter: "hyd_flat", int050: 230, exh050: 236, liftInt: 0.562, liftExh: 0.565, lsa: 110, rpmLo: 2000, rpmHi: 6000, use: "Street / perf, strong mid-range" },
+  { mfr: "COMP Cams", family: "Xtreme Energy XE284H", part: "32-250-4", platform: "cleveland", lifter: "hyd_flat", int050: 240, exh050: 246, liftInt: 0.584, liftExh: 0.588, lsa: 110, rpmLo: 2300, rpmHi: 6500, use: "Street / strip, 2800+ stall, 9.5:1" },
+  { mfr: "Crower", family: "Ball Nose", part: "15172", platform: "cleveland", lifter: "hyd_flat", int050: 215, exh050: 221, liftInt: 0.519, liftExh: 0.514, lsa: 112, rpmLo: 1800, rpmHi: 5500, use: "Street" },
+  { mfr: "Crower", family: "Ball Nose", part: "15173", platform: "cleveland", lifter: "hyd_flat", int050: 219, exh050: 225, liftInt: 0.530, liftExh: 0.524, lsa: 110, rpmLo: 2000, rpmHi: 5700, use: "Street / perf" },
+  { mfr: "Crower", family: "Ball Nose", part: "15174", platform: "cleveland", lifter: "hyd_flat", int050: 227, exh050: 233, liftInt: 0.550, liftExh: 0.547, lsa: 110, rpmLo: 2100, rpmHi: 5900, use: "Performance" },
+
+  // ── Ford 429 / 460 (385-series) ──────────────────────────────────────────
+  // Lift at Ford 460 1.73 rocker.
+  { mfr: "COMP Cams", family: "Xtreme Energy XE262H", part: "34-238-4", platform: "ford_385", lifter: "hyd_flat", int050: 218, exh050: 224, liftInt: 0.513, liftExh: 0.520, lsa: 110, rpmLo: 1300, rpmHi: 5600, use: "Street / tow, strong torque" },
+  { mfr: "COMP Cams", family: "Xtreme Energy XE274H", part: "34-247-4", platform: "ford_385", lifter: "hyd_flat", int050: 230, exh050: 236, liftInt: 0.562, liftExh: 0.565, lsa: 110, rpmLo: 1800, rpmHi: 6000, use: "High-perf street, 2400+ stall, headers" },
+  { mfr: "Crower", family: "Ball Nose", part: "22172", platform: "ford_385", lifter: "hyd_flat", int050: 215, exh050: 221, liftInt: 0.519, liftExh: 0.514, lsa: 112, rpmLo: 1600, rpmHi: 5000, use: "Street" },
+  { mfr: "Crower", family: "Hi-Draulic Hauler", part: "22205", platform: "ford_385", lifter: "hyd_flat", int050: 222, exh050: 232, liftInt: 0.536, liftExh: 0.540, lsa: 108, rpmLo: 2700, rpmHi: 6500, use: "Torque / strip" },
 ];

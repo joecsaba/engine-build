@@ -150,7 +150,7 @@ export default {
     {
       heading: "Shopping the recommendation — real matching cams",
       body: `
-        <p>Below the recommendation, the calculator lists real, currently-available grinds from the major manufacturers whose specs land closest to your target duration, LSA, and lift. The database covers popular street and street/strip cams from <strong>COMP Cams, Lunati, Crane, Howards, Edelbrock, Summit Racing</strong>, plus LS-specific makers like <strong>Brian Tooley Racing and Texas Speed</strong>, across Small Block Chevy, LS, Big Block Chevy, and Small Block Ford.</p>
+        <p>Below the recommendation, the calculator lists real, currently-available grinds from the major manufacturers whose specs land closest to your target duration, LSA, and lift. The database covers popular street and street/strip cams from <strong>COMP Cams, Lunati, Crane, Crower, Howards, Edelbrock, Summit Racing</strong>, plus LS-specific makers like <strong>Brian Tooley Racing, Texas Speed, Cam Motion, and Trick Flow</strong> — across <strong>Small Block Chevy, LS/LT, Big Block Chevy, Ford Windsor, Ford 351 Cleveland, Ford 429/460, Mopar small block (LA), Mopar big block (B/RB), and Pontiac V8</strong>.</p>
         <p>Every listed cam's duration at 0.050&quot;, LSA, lift, and part number was pulled from a published manufacturer or retailer spec page. But <strong>always verify before you buy</strong> — specs and part numbers change, listed lift assumes the platform's standard rocker ratio (so your actual lift may differ), and you must confirm fitment and piston-to-valve clearance for your specific combination. The matches are shopping starting points, not endorsements, and engine-build.com is not affiliated with any cam manufacturer.</p>
       `,
     },

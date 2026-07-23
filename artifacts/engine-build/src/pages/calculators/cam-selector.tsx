@@ -25,7 +25,10 @@ import { CAM_DATABASE, type CamSpec, type CamPlatform, type CamLifter } from "@/
 type Application = "economy" | "daily" | "mild" | "street" | "strip" | "drag" | "pro";
 type Aspiration = "na" | "supercharged" | "turbo" | "nitrous";
 type Transmission = "auto" | "manual";
-type HeadFamily = "sbc" | "ls" | "sbf" | "bbc" | "import";
+type HeadFamily =
+  | "sbc" | "ls" | "sbf" | "bbc"
+  | "mopar_sb" | "mopar_bb" | "pontiac" | "cleveland" | "ford_385"
+  | "import";
 type LifterType = "hyd_roller" | "hyd_flat" | "solid_roller" | "solid_flat";
 
 interface AppProfile {
@@ -51,10 +54,15 @@ const APPLICATIONS: Record<Application, AppProfile> = {
 };
 
 const HEAD_FAMILIES: Record<HeadFamily, { label: string; base: number }> = {
-  sbc:    { label: "Small Block Chevy (SBC)",      base: 128 },
-  ls:     { label: "GM LS / LT (Gen III–V)",       base: 128 },
-  sbf:    { label: "Ford Windsor / SBF",           base: 127 },
-  bbc:    { label: "BBC / canted-valve / Cleveland", base: 131 },
+  sbc:       { label: "Small Block Chevy (SBC)",         base: 128 },
+  ls:        { label: "GM LS / LT (Gen III–V)",          base: 128 },
+  bbc:       { label: "Big Block Chevy (BBC)",           base: 131 },
+  sbf:       { label: "Ford Windsor / SBF (289–351W)",   base: 127 },
+  cleveland: { label: "Ford 351 Cleveland (351C/M/400M)", base: 131 },
+  ford_385:  { label: "Ford 429 / 460 (385-series)",     base: 131 },
+  mopar_sb:  { label: "Mopar LA small block (318/340/360)", base: 128 },
+  mopar_bb:  { label: "Mopar B / RB big block (383/400/440)", base: 130 },
+  pontiac:   { label: "Pontiac V8 (326–455)",            base: 129 },
   import: { label: "Import 4/6-cyl / other",       base: 128 },
 };
 
@@ -338,8 +346,8 @@ export default function CamSelectorCalculator() {
   // duration window so we never recommend something wildly off.
   const matches = useMemo(() => {
     if (!result) return [];
-    const platform = head as CamPlatform; // sbc|ls|bbc|sbf all exist in the DB
-    if (!["sbc", "ls", "bbc", "sbf"].includes(platform)) return [];
+    const platform = head as CamPlatform;
+    if (head === "import") return []; // no database coverage for import/other
     const scored = CAM_DATABASE
       .filter((c) => c.platform === platform)
       .map((c) => {
