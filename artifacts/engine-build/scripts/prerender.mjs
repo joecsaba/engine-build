@@ -22,6 +22,7 @@ import FAQ from "../src/data/faq.mjs";
 const __dirname = dirname(fileURLToPath(import.meta.url));
 const DIST = resolve(__dirname, "..", "dist", "public");
 const CONTENT_DIR = resolve(__dirname, "..", "src", "data", "calculatorContent");
+const GUIDE_CONTENT_DIR = resolve(__dirname, "..", "src", "data", "guideContent");
 const SITE = "https://engine-build.com";
 const SITE_NAME = "Engine-build.com";
 
@@ -68,6 +69,44 @@ function renderContentHtml(content) {
         <p>${escapeHtml(content.intro)}</p>
         ${sections}
       </article>`;
+}
+
+// Long-form body for a guide, from src/data/guideContent/<slug>.mjs. Mirrors
+// loadCalcContent: the same file backs the React <GuideContent> component, so
+// the prose a reader sees is the prose that gets indexed. Returns null when a
+// guide has no content file yet, in which case the manifest steps[] still
+// provide a basic (short) SEO block.
+async function loadGuideContent(slug) {
+  const path = resolve(GUIDE_CONTENT_DIR, `${slug}.mjs`);
+  try {
+    await access(path);
+  } catch {
+    return null;
+  }
+  const mod = await import(pathToFileURL(path).href);
+  return mod.default ?? null;
+}
+
+function renderGuideContentHtml(content) {
+  if (!content) return "";
+  const note = content.note
+    ? `\n      <p><strong>${escapeHtml(content.note.title)}:</strong> ${escapeHtml(content.note.body)}</p>`
+    : "";
+  const sections = content.sections.map((s) => `
+      <h2>${escapeHtml(s.heading)}</h2>
+      ${s.body}`).join("");
+  const related = content.related?.length
+    ? `
+      <h2>Related calculators</h2>
+      <ul>
+        ${content.related.map((r) => `<li><a href="/calculators/${r.slug}">${escapeHtml(r.title)}</a></li>`).join("\n        ")}
+      </ul>`
+    : "";
+  return `
+      <article>
+        <p>${escapeHtml(content.intro)}</p>${note}
+        ${sections}
+      </article>${related}`;
 }
 
 // ---------------------------------------------------------------------------
@@ -346,13 +385,20 @@ function guidesIndexEntry() {
   };
 }
 
-function guideEntry(g) {
+async function guideEntry(g) {
   const crumbs = [
     { label: "Home", href: "/" },
     { label: "Guides", href: "/guides" },
     { label: g.title },
   ];
-  const stepsHtml = (g.steps ?? []).map((s, i) => `
+  // Prefer the full long-form body. The manifest steps[] are a condensed
+  // summary written for HowTo schema — emitting them as the page body was
+  // shipping ~260 words of a 600-900 word guide to the crawler. They remain the
+  // fallback for any guide that has no content file yet.
+  const content = await loadGuideContent(g.slug);
+  const bodyHtml = content
+    ? renderGuideContentHtml(content)
+    : (g.steps ?? []).map((s, i) => `
         <h3>Step ${i + 1}: ${escapeHtml(s.name)}</h3>
         <p>${escapeHtml(s.text)}</p>`).join("");
   const seoBlock = `
@@ -361,7 +407,7 @@ function guideEntry(g) {
       </nav>
       <h1>${escapeHtml(g.title)}</h1>
       <p>${escapeHtml(g.description)}</p>
-      ${g.totalTime ? `<p><strong>Time:</strong> ${escapeHtml(g.totalTime)}</p>` : ""}${stepsHtml}`;
+      ${g.totalTime ? `<p><strong>Time:</strong> ${escapeHtml(g.totalTime)}</p>` : ""}${bodyHtml}`;
 
   const jsonLd = [breadcrumbJsonLd(crumbs)];
   // HowTo schema only if the manifest provides steps[].
@@ -554,7 +600,7 @@ async function main() {
     ...CATEGORY_PAGES.map(categoryEntry),
     ...(await Promise.all(CALCS.map(calcEntry))),
     guidesIndexEntry(),
-    ...GUIDES.map(guideEntry),
+    ...(await Promise.all(GUIDES.map(guideEntry))),
     faqEntry(),
   ];
 
