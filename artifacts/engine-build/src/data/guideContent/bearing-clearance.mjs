@@ -89,21 +89,9 @@ export default {
       heading: "Step 4: Install the cap and torque",
       body: `
         <p>Install the cap (and upper bearing shell if checking mains) carefully &mdash; DO NOT rotate the crankshaft. Any rotation will smear the Plastigage and invalidate the reading. Torque the bolts to specification in the correct sequence. For most applications, torque in three steps: 1/3 &rarr; 2/3 &rarr; full torque.</p>
-        <table>
-          <thead>
-            <tr><th>Engine</th><th>Main bearing torque</th><th>Rod bearing torque</th></tr>
-          </thead>
-          <tbody>
-            <tr><td>Chevy 350 (SBC)</td><td>70 ft-lbs (4-bolt outer: 65)</td><td>45 ft-lbs</td></tr>
-            <tr><td>GM LS1/LS2/LS3</td><td>105 Nm (77 ft-lbs)</td><td>58 Nm (43 ft-lbs)</td></tr>
-            <tr><td>GM LS7</td><td>120 Nm + 80&deg; (outer studs)</td><td>65 Nm + 75&deg;</td></tr>
-            <tr><td>Ford 302 Windsor</td><td>95&ndash;105 ft-lbs</td><td>19&ndash;24 ft-lbs (ARP)</td></tr>
-            <tr><td>Ford 351 Windsor</td><td>95&ndash;105 ft-lbs</td><td>40&ndash;45 ft-lbs</td></tr>
-            <tr><td>Toyota 2JZ-GTE</td><td>90 Nm + 90&deg;</td><td>57 Nm + 90&deg;</td></tr>
-            <tr><td>Honda K20A</td><td>74 Nm (55 ft-lbs)</td><td>32 Nm + 90&deg;</td></tr>
-          </tbody>
-        </table>
-        <p>Always confirm against the factory manual for your exact engine &mdash; torque-to-yield procedures and stud-versus-bolt hardware change these numbers.</p>
+        <aside data-tone="warn">
+          <p><strong>Use your engine's published spec.</strong> Main and rod cap torque varies by engine family, by hardware (factory bolt versus ARP stud), and by procedure &mdash; many modern engines are torque-to-yield and finish on an angle rather than a value. Take the figure from the factory service manual or the fastener manufacturer's instruction sheet for your exact engine and hardware. Getting cap torque wrong distorts the bearing bore and changes the very clearance you are trying to measure.</p>
+        </aside>
       `,
     },
     {

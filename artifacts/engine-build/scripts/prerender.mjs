@@ -202,7 +202,12 @@ const STATIC_PAGES = [
   { path: "/build-sheets/planner", title: "Build Planner",                                           description: "Plan your engine build component by component with live spec validation.",                                                                              noindex: true },
   { path: "/build-sheets/my-builds", title: "My Builds",                                             description: "Your saved engine builds. Resume any build, clone for a new project, or export specs.",                                                                 noindex: true },
   { path: "/engine-data",       title: "Engine Specs Database — 3,500+ Engines",                    description: "Bore, stroke, rod length, compression ratio, head data, valve sizes, and clearances for 3,500+ domestic and import engines. Searchable by manufacturer.", priority: 0.9 },
-  { path: "/torque-specs",      title: "Torque Specs Quick Lookup",                                  description: "Head bolt, main bolt, and rod bolt torque sequences for popular engine platforms. Step-by-step with ARP upgrade specs.",                              priority: 0.8 },
+  // noindex until the torque dataset is repaired. Every one of the 1,315
+  // torque_to_yield specs currently carries a single step with no angle and
+  // reusable:true — i.e. the initial snug value recorded as if it were the
+  // whole procedure. Publishing that to search is a safety problem, so the
+  // page stays reachable by direct link but out of the index until fixed.
+  { path: "/torque-specs",      title: "Torque Specs Quick Lookup",                                  description: "Head bolt, main bolt, and rod bolt torque sequences for popular engine platforms. Step-by-step with ARP upgrade specs.",                              noindex: true },
   { path: "/shop-tools/directory", title: "Machine Shop Directory",                                  description: "Find engine machine shops near you. Searchable by service (boring, decking, balancing) and radius from your zip code.",                              priority: 0.8 },
   { path: "/contact",           title: "Contact",                                                    description: "Send feature requests, calculator suggestions, or feedback. We read every message.",                                                                    priority: 0.5 },
   { path: "/privacy",           title: "Privacy Policy",                                             description: "How Engine-build.com handles your data. We don't sell your information.",                                                                              priority: 0.3 },

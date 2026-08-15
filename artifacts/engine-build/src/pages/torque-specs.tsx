@@ -321,6 +321,7 @@ export default function TorqueSpecs() {
         description="Engine specifications, head data, and torque specs for 2,400+ engines across 36 manufacturers. Look up bore, stroke, compression ratio, HP, and more. VIN decoder included."
         canonical="/engine-data"
         keywords="engine specs, engine data, engine specifications lookup, bore stroke, compression ratio, torque specs, engine database, torque specs database, engine specifications lookup, engine torque specs, bolt torque specifications"
+        noindex
       />
 
       <PageHeader
