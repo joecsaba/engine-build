@@ -1,5 +1,5 @@
 import { Switch, Route, Router as WouterRouter, useLocation } from "wouter";
-import { useEffect } from "react";
+import { useEffect, lazy, Suspense } from "react";
 import { QueryClient, QueryClientProvider } from "@tanstack/react-query";
 import { Toaster } from "@/components/ui/toaster";
 import { TooltipProvider } from "@/components/ui/tooltip";
@@ -14,69 +14,80 @@ import ComingSoon from "@/pages/coming-soon";
 
 import Home from "@/pages/home";
 
+// Engine spec database — /engines and everything under it. Lazy-loaded: these
+// pages are the largest route group on the site and most visitors arrive on a
+// calculator, so they should not sit in the initial bundle.
+const EnginesIndex = lazy(() => import("@/pages/engines/index"));
+const EngineFamily = lazy(() => import("@/pages/engines/family"));
+const EnginePage = lazy(() => import("@/pages/engines/engine"));
+
 import BuildSheetsIndex from "@/pages/build-sheets/index";
 import BuildPlanner from "@/pages/build-sheets/planner";
 import NewBuildPage from "@/pages/build-sheets/new";
 import BuildWizardPage from "@/pages/build-sheets/build";
 import MyBuildsPage from "@/pages/build-sheets/my-builds";
 
-import CalculatorsIndex from "@/pages/calculators/index";
-import DisplacementCalculator from "@/pages/calculators/displacement";
-import CompressionRatioCalculator from "@/pages/calculators/compression-ratio";
+// Calculators are lazy-loaded. All 56 were statically imported, so every visitor
+// downloaded every calculator to use one — the bulk of the 821 KB payload. One
+// chunk per route means a converter page no longer ships the diesel turbo
+// sizing maths.
+const CalculatorsIndex = lazy(() => import("@/pages/calculators/index"));
+const DisplacementCalculator = lazy(() => import("@/pages/calculators/displacement"));
+const CompressionRatioCalculator = lazy(() => import("@/pages/calculators/compression-ratio"));
 import RingGapCalculator from "@/pages/calculators/ring-gap";  // formerly ring-gap-advanced; basic deleted 2026-05-28
-import CamDurationCalculator from "@/pages/calculators/cam-duration";
-import CamSelectorCalculator from "@/pages/calculators/cam-selector";
-import RodRatioCalculator from "@/pages/calculators/rod-ratio";
-import HpTorqueCalculator from "@/pages/calculators/hp-torque";
-import PistonSpeedCalculator from "@/pages/calculators/piston-speed";
-import AfrLambdaCalculator from "@/pages/calculators/afr-lambda";
-import QuenchDeckHeightCalculator from "@/pages/calculators/quench-deck-height";
-import PushrodLengthCalculator from "@/pages/calculators/pushrod-length";
-import PistonToValveCalculator from "@/pages/calculators/piston-to-valve";
-import CamDegreeingCalculator from "@/pages/calculators/cam-degreeing";
-import ValveSpringCalculator from "@/pages/calculators/valve-spring";
-import DynamicCompressionRatioV2 from "@/pages/calculators/dynamic-compression-ratio-v2";
-import TorqueExtensionCalculator from "@/pages/calculators/torque-extension";
-import HpEstimator from "@/pages/calculators/hp-estimator";
-import ValvetrainBuilderCalculator from "@/pages/calculators/valvetrain-builder";
-import TurboFinderCalculator from "@/pages/calculators/turbo-finder";
-import DieselCompoundTurboCalculator from "@/pages/calculators/diesel-compound-turbo";
-import DieselSingleTurboCalculator from "@/pages/calculators/diesel-single-turbo";
-import CarbCfmSizingCalculator from "@/pages/calculators/carb-cfm-sizing";
-import BearingClearanceCalculator from "@/pages/calculators/bearing-clearance";
-import FuelInjectorSizingCalculator from "@/pages/calculators/fuel-injector-sizing";
-import HeadFlowCalculator from "@/pages/calculators/head-flow";
-import GearRatioCalculator from "@/pages/calculators/gear-ratio";
-import DieselLiftPumpCalculator from "@/pages/calculators/diesel-lift-pump";
-import DieselEgtDrivePressureCalculator from "@/pages/calculators/diesel-egt-drive-pressure";
-import DieselInjectorNozzlePopPressureCalculator from "@/pages/calculators/diesel-injector-nozzle-pop-pressure";
-import DieselSmokeLambdaCalculator from "@/pages/calculators/diesel-smoke-lambda";
-import ValveShimCalculator from "@/pages/calculators/valve-shim";
-import MmInchConverter from "@/pages/calculators/mm-inch-converter";
-import WrenchSizeConverter from "@/pages/calculators/wrench-size-converter";
-import DieselValveReliefCalculator from "@/pages/calculators/diesel-valve-relief";
-import IntakeManifoldMillingCalculator from "@/pages/calculators/intake-manifold-milling";
-import HeadMillingCalculator from "@/pages/calculators/head-milling";
-import BoostCompressionCalculator from "@/pages/calculators/boost-compression";
-import OctaneMixCalculator from "@/pages/calculators/octane-mix";
-import DensityAltitudeCalculator from "@/pages/calculators/density-altitude";
-import TorqueConverterStallCalculator from "@/pages/calculators/torque-converter-stall";
-import IgnitionTimingCurveCalculator from "@/pages/calculators/ignition-timing-curve";
-import BoltSpecLookup from "@/pages/calculators/bolt-spec-lookup";
-import DecimalFractionInchConverter from "@/pages/calculators/decimal-fraction-inch";
-import TapDrillLookup from "@/pages/calculators/tap-drill-lookup";
-import ThreadPitchConverter from "@/pages/calculators/thread-pitch-converter";
-import TorqueUnitsConverter from "@/pages/calculators/torque-units-converter";
-import PressureConverter from "@/pages/calculators/pressure-converter";
-import CcCiConverter from "@/pages/calculators/cc-ci-converter";
-import TemperatureConverter from "@/pages/calculators/temperature-converter";
-import AnFittingSize from "@/pages/calculators/an-fitting-size";
+const CamDurationCalculator = lazy(() => import("@/pages/calculators/cam-duration"));
+const CamSelectorCalculator = lazy(() => import("@/pages/calculators/cam-selector"));
+const RodRatioCalculator = lazy(() => import("@/pages/calculators/rod-ratio"));
+const HpTorqueCalculator = lazy(() => import("@/pages/calculators/hp-torque"));
+const PistonSpeedCalculator = lazy(() => import("@/pages/calculators/piston-speed"));
+const AfrLambdaCalculator = lazy(() => import("@/pages/calculators/afr-lambda"));
+const QuenchDeckHeightCalculator = lazy(() => import("@/pages/calculators/quench-deck-height"));
+const PushrodLengthCalculator = lazy(() => import("@/pages/calculators/pushrod-length"));
+const PistonToValveCalculator = lazy(() => import("@/pages/calculators/piston-to-valve"));
+const CamDegreeingCalculator = lazy(() => import("@/pages/calculators/cam-degreeing"));
+const ValveSpringCalculator = lazy(() => import("@/pages/calculators/valve-spring"));
+const DynamicCompressionRatioV2 = lazy(() => import("@/pages/calculators/dynamic-compression-ratio-v2"));
+const TorqueExtensionCalculator = lazy(() => import("@/pages/calculators/torque-extension"));
+const HpEstimator = lazy(() => import("@/pages/calculators/hp-estimator"));
+const ValvetrainBuilderCalculator = lazy(() => import("@/pages/calculators/valvetrain-builder"));
+const TurboFinderCalculator = lazy(() => import("@/pages/calculators/turbo-finder"));
+const DieselCompoundTurboCalculator = lazy(() => import("@/pages/calculators/diesel-compound-turbo"));
+const DieselSingleTurboCalculator = lazy(() => import("@/pages/calculators/diesel-single-turbo"));
+const CarbCfmSizingCalculator = lazy(() => import("@/pages/calculators/carb-cfm-sizing"));
+const BearingClearanceCalculator = lazy(() => import("@/pages/calculators/bearing-clearance"));
+const FuelInjectorSizingCalculator = lazy(() => import("@/pages/calculators/fuel-injector-sizing"));
+const HeadFlowCalculator = lazy(() => import("@/pages/calculators/head-flow"));
+const GearRatioCalculator = lazy(() => import("@/pages/calculators/gear-ratio"));
+const DieselLiftPumpCalculator = lazy(() => import("@/pages/calculators/diesel-lift-pump"));
+const DieselEgtDrivePressureCalculator = lazy(() => import("@/pages/calculators/diesel-egt-drive-pressure"));
+const DieselInjectorNozzlePopPressureCalculator = lazy(() => import("@/pages/calculators/diesel-injector-nozzle-pop-pressure"));
+const DieselSmokeLambdaCalculator = lazy(() => import("@/pages/calculators/diesel-smoke-lambda"));
+const ValveShimCalculator = lazy(() => import("@/pages/calculators/valve-shim"));
+const MmInchConverter = lazy(() => import("@/pages/calculators/mm-inch-converter"));
+const WrenchSizeConverter = lazy(() => import("@/pages/calculators/wrench-size-converter"));
+const DieselValveReliefCalculator = lazy(() => import("@/pages/calculators/diesel-valve-relief"));
+const IntakeManifoldMillingCalculator = lazy(() => import("@/pages/calculators/intake-manifold-milling"));
+const HeadMillingCalculator = lazy(() => import("@/pages/calculators/head-milling"));
+const BoostCompressionCalculator = lazy(() => import("@/pages/calculators/boost-compression"));
+const OctaneMixCalculator = lazy(() => import("@/pages/calculators/octane-mix"));
+const DensityAltitudeCalculator = lazy(() => import("@/pages/calculators/density-altitude"));
+const TorqueConverterStallCalculator = lazy(() => import("@/pages/calculators/torque-converter-stall"));
+const IgnitionTimingCurveCalculator = lazy(() => import("@/pages/calculators/ignition-timing-curve"));
+const BoltSpecLookup = lazy(() => import("@/pages/calculators/bolt-spec-lookup"));
+const DecimalFractionInchConverter = lazy(() => import("@/pages/calculators/decimal-fraction-inch"));
+const TapDrillLookup = lazy(() => import("@/pages/calculators/tap-drill-lookup"));
+const ThreadPitchConverter = lazy(() => import("@/pages/calculators/thread-pitch-converter"));
+const TorqueUnitsConverter = lazy(() => import("@/pages/calculators/torque-units-converter"));
+const PressureConverter = lazy(() => import("@/pages/calculators/pressure-converter"));
+const CcCiConverter = lazy(() => import("@/pages/calculators/cc-ci-converter"));
+const TemperatureConverter = lazy(() => import("@/pages/calculators/temperature-converter"));
+const AnFittingSize = lazy(() => import("@/pages/calculators/an-fitting-size"));
 
-import CategoryShortBlock from "@/pages/calculators/category-short-block";
-import CategoryCamValvetrain from "@/pages/calculators/category-cam-valvetrain";
-import CategoryPowerFuel from "@/pages/calculators/category-power-fuel";
-import CategoryDrivetrainShop from "@/pages/calculators/category-drivetrain-shop";
-import CategoryDiesel from "@/pages/calculators/category-diesel";
+const CategoryShortBlock = lazy(() => import("@/pages/calculators/category-short-block"));
+const CategoryCamValvetrain = lazy(() => import("@/pages/calculators/category-cam-valvetrain"));
+const CategoryPowerFuel = lazy(() => import("@/pages/calculators/category-power-fuel"));
+const CategoryDrivetrainShop = lazy(() => import("@/pages/calculators/category-drivetrain-shop"));
+const CategoryDiesel = lazy(() => import("@/pages/calculators/category-diesel"));
 
 import CamGuide from "@/pages/cam-guide";
 import BuildAdvisor from "@/pages/build-advisor";
@@ -128,11 +139,19 @@ function Router() {
     <AppLayout>
       <ScrollToTop />
       <RecentTracker />
+      <Suspense fallback={<div className="container mx-auto py-16 px-4 text-center text-muted-foreground">Loading…</div>}>
       <Switch>
         <Route path="/" component={Home} />
 
         {/* Coming Soon sections (v2) */}
         <Route path="/engine-data" component={TorqueSpecs} />
+
+        {/* Engine spec database. Ordered most-specific-first: wouter matches in
+            order, so /engines/:mfr would otherwise swallow the deeper routes. */}
+        <Route path="/engines/:mfr/:family/:engine" component={EnginePage} />
+        <Route path="/engines/:mfr/:family" component={EngineFamily} />
+        <Route path="/engines/:mfr" component={EnginesIndex} />
+        <Route path="/engines" component={EnginesIndex} />
         {/* /torque-specs, /specs, /specs/* redirected to /engine-data by CloudFront Function */}
         {/* Build Sheets — guided engine build wizard */}
         <Route path="/build-sheets" component={BuildSheetsIndex} />
@@ -229,6 +248,7 @@ function Router() {
 
         <Route component={NotFound} />
       </Switch>
+      </Suspense>
     </AppLayout>
   );
 }

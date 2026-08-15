@@ -18,6 +18,7 @@ import { fileURLToPath, pathToFileURL } from "node:url";
 
 import GUIDES from "../src/data/guides/manifest.mjs";
 import FAQ from "../src/data/faq.mjs";
+import { loadEngineData, writeRuntimeData } from "./engineData.mjs";
 
 const __dirname = dirname(fileURLToPath(import.meta.url));
 const DIST = resolve(__dirname, "..", "dist", "public");
@@ -365,6 +366,204 @@ function staticEntry(sp) {
 }
 
 // ---------------------------------------------------------------------------
+// Engine spec database entries
+//
+// The dataset was already in the repo but reached search as nothing: /specs/*
+// had no route, so those URLs fell through to the SPA shell and Googlebot got
+// the homepage title on every one of them. These entries give each engine,
+// family and manufacturer real indexable HTML built from the same data the
+// React pages render, via scripts/engineData.mjs.
+//
+// Torque specs are deliberately not emitted here — that dataset is on hold.
+// ---------------------------------------------------------------------------
+
+const fmtIn = (v) => (v == null ? null : `${v}"`);
+
+function specRows(rows) {
+  const body = rows
+    .filter(([, v]) => v != null && v !== "")
+    .map(([k, v]) => `<tr><th style="text-align:left;padding:4px 12px 4px 0;font-weight:400;color:#666;">${escapeHtml(k)}</th><td style="padding:4px 0;">${escapeHtml(String(v))}</td></tr>`)
+    .join("");
+  return body ? `<table>${body}</table>` : "";
+}
+
+function engineEntry(e) {
+  const crumbs = [
+    { label: "Home", href: "/" },
+    { label: "Engines", href: "/engines" },
+    { label: e.manufacturerName, href: e.manufacturerUrl },
+    { label: e.familyName, href: e.familyUrl },
+    { label: e.displayName },
+  ];
+
+  const title = `${e.manufacturerName} ${e.displayName} Specs`;
+  const descBits = [];
+  if (e.displacement_ci != null) descBits.push(`${e.displacement_ci} ci${e.displacement_l != null ? ` (${e.displacement_l}L)` : ""}`);
+  if (e.num_cylinders != null) descBits.push(`${e.num_cylinders}-cylinder`);
+  if (e.bore_in != null && e.stroke_in != null) descBits.push(`${e.bore_in}" bore x ${e.stroke_in}" stroke`);
+  if (e.compression_ratio != null) descBits.push(`${e.compression_ratio}:1 compression`);
+  const description = `${e.manufacturerName} ${e.displayName} engine specs: ${descBits.join(", ")}.`.slice(0, 300);
+
+  const variantsHtml = e.variantCount > 1
+    ? `<h2>Variants sharing these dimensions (${e.variantCount})</h2>
+      <p>These records share identical bore, stroke, displacement and compression. They differ by model year and factory power rating.</p>
+      <table><tr><th>Year</th><th>Advertised HP</th><th>Code</th></tr>${
+        e.variants.map((v) => `<tr><td>${v.year ?? "—"}</td><td>${v.hp != null ? `${v.hp} hp` : "—"}</td><td>${escapeHtml(v.codes.join(", ") || "—")}</td></tr>`).join("")
+      }</table>`
+    : "";
+
+  const vehiclesHtml = e.vehicles.length
+    ? `<h2>Vehicles (${e.vehicles.length})</h2><ul>${
+        e.vehicles.map((v) => `<li>${escapeHtml(v.name)}${v.year_start ? ` (${v.year_start}${v.year_end ? `–${v.year_end}` : "+"})` : ""}</li>`).join("")
+      }</ul>`
+    : "";
+
+  const seoBlock = `
+      <nav aria-label="Breadcrumb" style="font-size:14px;color:#666;margin:24px 0;">
+        ${breadcrumbHtml(crumbs)}
+      </nav>
+      <h1>${escapeHtml(title)}</h1>
+      <p>${escapeHtml(description)}</p>
+      <h2>Dimensions</h2>
+      ${specRows([
+        ["Displacement", e.displacement_ci != null ? `${e.displacement_ci} ci${e.displacement_l != null ? ` / ${e.displacement_l} L` : ""}` : null],
+        ["Bore", fmtIn(e.bore_in)],
+        ["Stroke", fmtIn(e.stroke_in)],
+        ["Cylinders", e.num_cylinders],
+        ["Configuration", e.configuration],
+        ["Compression ratio", e.compression_ratio != null ? `${e.compression_ratio}:1` : null],
+        ["Rod length", fmtIn(e.rod_length_in)],
+        ["Rod ratio", e.rod_ratio],
+        ["Bore/stroke ratio", e.boreStrokeRatio],
+        ["Deck height", fmtIn(e.deck_height_in)],
+      ])}
+      <h2>Construction</h2>
+      ${specRows([
+        ["Block material", e.block_material],
+        ["Head material", e.head_material],
+        ["Valvetrain", e.valvetrain],
+        ["Valves per cylinder", e.valves_per_cylinder],
+        ["Cam type", e.cam_type],
+        ["Induction", e.induction],
+        ["Fuel type", e.fuel_type],
+        ["Firing order", e.firing_order],
+        ["Advertised HP", e.hpMin != null ? (e.hpMin === e.hpMax ? `${e.hpMin} hp` : `${e.hpMin}–${e.hpMax} hp`) : null],
+        ["Years", e.yearMin != null ? (e.yearMin === e.yearMax ? e.yearMin : `${e.yearMin}–${e.yearMax}`) : null],
+        ["Oil capacity", e.oil_capacity_qt != null ? `${e.oil_capacity_qt} qt` : null],
+        ["Coolant capacity", e.coolant_capacity_qt != null ? `${e.coolant_capacity_qt} qt` : null],
+      ])}
+      ${e.calcLinks?.length ? `<h2>Run the numbers for this engine</h2>
+      <p>Each link opens the calculator with this engine's specs already filled in.</p>
+      <ul>${e.calcLinks.map((c) => `<li><a href="${c.href}">${escapeHtml(c.label)}</a></li>`).join("")}</ul>` : ""}
+      ${variantsHtml}
+      ${vehiclesHtml}
+      <p><a href="${e.familyUrl}">← All ${escapeHtml(e.familyName)} engines</a></p>`;
+
+  return {
+    path: e.url,
+    title,
+    description,
+    seoBlock,
+    jsonLd: [breadcrumbJsonLd(crumbs)],
+    priority: 0.6,
+    changefreq: "yearly",
+  };
+}
+
+function engineFamilyEntry(fam) {
+  const crumbs = [
+    { label: "Home", href: "/" },
+    { label: "Engines", href: "/engines" },
+    { label: fam.manufacturerName, href: fam.manufacturerUrl },
+    { label: fam.familyName },
+  ];
+  const title = `${fam.manufacturerName} ${fam.familyName} Engine Specs`;
+  const description = `Bore, stroke, displacement and compression for all ${fam.engines.length} ${fam.manufacturerName} ${fam.familyName} engines. Compare variants side by side.`.slice(0, 300);
+
+  const rows = fam.engines
+    .map((e) => `<tr><td><a href="${e.url}">${escapeHtml(e.displayName)}</a></td><td>${e.displacement_ci != null ? `${e.displacement_ci} ci` : "—"}</td><td>${e.bore_in != null && e.stroke_in != null ? `${e.bore_in}&quot; × ${e.stroke_in}&quot;` : "—"}</td><td>${e.compression_ratio != null ? `${e.compression_ratio}:1` : "—"}</td><td>${e.hpMin != null ? (e.hpMin === e.hpMax ? e.hpMin : `${e.hpMin}–${e.hpMax}`) : "—"}</td></tr>`)
+    .join("");
+
+  const seoBlock = `
+      <nav aria-label="Breadcrumb" style="font-size:14px;color:#666;margin:24px 0;">
+        ${breadcrumbHtml(crumbs)}
+      </nav>
+      <h1>${escapeHtml(title)}</h1>
+      <p>${escapeHtml(description)}</p>
+      <table>
+        <tr><th>Engine</th><th>Displacement</th><th>Bore × Stroke</th><th>CR</th><th>HP</th></tr>
+        ${rows}
+      </table>
+      <p><a href="${fam.manufacturerUrl}">← All ${escapeHtml(fam.manufacturerName)} engines</a></p>`;
+
+  return {
+    path: fam.url,
+    title,
+    description,
+    seoBlock,
+    jsonLd: [breadcrumbJsonLd(crumbs)],
+    priority: 0.7,
+    changefreq: "monthly",
+  };
+}
+
+function manufacturerEntry(m) {
+  const crumbs = [
+    { label: "Home", href: "/" },
+    { label: "Engines", href: "/engines" },
+    { label: m.name },
+  ];
+  const title = `${m.name} Engine Specs`;
+  const description = `Bore, stroke, displacement and compression specs for ${m.engineCount} ${m.name} engines across ${m.families.length} families.`.slice(0, 300);
+  const seoBlock = `
+      <nav aria-label="Breadcrumb" style="font-size:14px;color:#666;margin:24px 0;">
+        ${breadcrumbHtml(crumbs)}
+      </nav>
+      <h1>${escapeHtml(title)}</h1>
+      <p>${escapeHtml(description)}</p>
+      <ul>
+        ${m.families.map((f) => `<li><a href="${f.url}">${escapeHtml(f.familyName)}</a> — ${f.engines.length} engine${f.engines.length === 1 ? "" : "s"}</li>`).join("\n        ")}
+      </ul>
+      <p><a href="/engines">← All engine manufacturers</a></p>`;
+  return {
+    path: m.url,
+    title,
+    description,
+    seoBlock,
+    jsonLd: [breadcrumbJsonLd(crumbs)],
+    priority: 0.7,
+    changefreq: "monthly",
+  };
+}
+
+function enginesIndexEntry(manufacturers) {
+  const crumbs = [{ label: "Home", href: "/" }, { label: "Engines" }];
+  const totalEngines = manufacturers.reduce((n, m) => n + m.engineCount, 0);
+  const totalFamilies = manufacturers.reduce((n, m) => n + m.families.length, 0);
+  const title = "Engine Specs Database";
+  const description = `Bore, stroke, displacement, compression and rod ratio for ${totalEngines} engines across ${manufacturers.length} manufacturers. Free reference for engine builders.`;
+  const seoBlock = `
+      <nav aria-label="Breadcrumb" style="font-size:14px;color:#666;margin:24px 0;">
+        ${breadcrumbHtml(crumbs)}
+      </nav>
+      <h1>${escapeHtml(title)}</h1>
+      <p>${escapeHtml(description)}</p>
+      <p>${totalEngines} engines · ${totalFamilies} families · ${manufacturers.length} manufacturers</p>
+      <ul>
+        ${manufacturers.map((m) => `<li><a href="${m.url}">${escapeHtml(m.name)}</a> — ${m.engineCount} engines</li>`).join("\n        ")}
+      </ul>`;
+  return {
+    path: "/engines",
+    title,
+    description,
+    seoBlock,
+    jsonLd: [breadcrumbJsonLd(crumbs)],
+    priority: 0.9,
+    changefreq: "monthly",
+  };
+}
+
+// ---------------------------------------------------------------------------
 // Guides + FAQ entries
 // ---------------------------------------------------------------------------
 
@@ -600,8 +799,17 @@ async function main() {
   const templatePath = resolve(DIST, "index.html");
   const template = await readFile(templatePath, "utf8");
 
+  // Engine spec database: build the route set and the runtime JSON the React
+  // pages fetch, from one pass over public/data/engines/.
+  const engineData = loadEngineData();
+  writeRuntimeData(engineData);
+
   const allEntries = [
     ...STATIC_PAGES.map(staticEntry),
+    enginesIndexEntry(engineData.manufacturers),
+    ...engineData.manufacturers.map(manufacturerEntry),
+    ...engineData.families.map(engineFamilyEntry),
+    ...engineData.engines.map(engineEntry),
     ...CATEGORY_PAGES.map(categoryEntry),
     ...(await Promise.all(CALCS.map(calcEntry))),
     guidesIndexEntry(),
@@ -626,6 +834,7 @@ async function main() {
   const indexableCount = allEntries.filter((e) => !e.noindex).length + 1; // +1 for homepage
 
   const withLongContent = allEntries.filter((e) => e.hasLongContent).length;
+  console.log(`prerender: engine DB — ${engineData.engines.length} engines, ${engineData.families.length} families, ${engineData.manufacturers.length} manufacturers`);
   console.log(`prerender: wrote ${written} HTML files (${CALCS.length} calculators, ${CATEGORY_PAGES.length} categories, ${STATIC_PAGES.length} static, ${GUIDES.length} guides, 1 FAQ)`);
   console.log(`prerender: ${withLongContent} / ${CALCS.length} calculators have long-form content`);
   console.log(`prerender: wrote sitemap.xml with ${indexableCount} URLs (noindex excluded)`);

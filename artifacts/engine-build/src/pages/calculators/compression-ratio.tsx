@@ -1,4 +1,5 @@
 import { useState } from "react";
+import { usePrefill } from "@/hooks/usePrefill";
 import { SEOHead } from "@/components/SEOHead";
 import { Input } from "@/components/ui/input";
 import { Label } from "@/components/ui/label";
@@ -24,6 +25,14 @@ export default function CompressionRatioCalculator() {
   const [chamberVolume, setChamberVolume] = useState("64");
   const [ivc, setIvc] = useState("63");
   const [rodLength, setRodLength] = useState("5.700");
+
+  // Seed inputs from the query string so an engine spec page (or a link pasted
+  // into a forum thread) lands on this calculator already filled in.
+  usePrefill({
+    bore: setBore,
+    stroke: setStroke,
+    rod: setRodLength,
+  });
 
   const b = parseFloat(bore) || 0;
   const s = parseFloat(stroke) || 0;

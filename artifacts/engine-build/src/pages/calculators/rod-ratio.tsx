@@ -1,4 +1,5 @@
 import { useState, useEffect, useMemo } from "react";
+import { usePrefill } from "@/hooks/usePrefill";
 import { SEOHead } from "@/components/SEOHead";
 import { Input } from "@/components/ui/input";
 import { Label } from "@/components/ui/label";
@@ -781,6 +782,13 @@ export default function RodRatioCalculator() {
   const platform = useDefaultPlatform();
   const [stroke, setStroke] = useBuildField("shortBlock.stroke", platform?.stroke ?? "3.622");
   const [rodLength, setRodLength] = useBuildField("rotatingAssembly.rodLength", platform?.rodLength ?? "6.098");
+
+  // Seed inputs from the query string so an engine spec page (or a link pasted
+  // into a forum thread) lands on this calculator already filled in.
+  usePrefill({
+    stroke: setStroke,
+    rod: setRodLength,
+  });
   const { activeBuild, setField } = useBuildContext();
 
   const s = parseFloat(stroke) || 0;

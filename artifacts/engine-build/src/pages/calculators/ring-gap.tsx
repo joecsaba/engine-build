@@ -1,4 +1,5 @@
 import { useState, useMemo, useEffect } from "react";
+import { usePrefill } from "@/hooks/usePrefill";
 import { Link } from "wouter";
 import { SEOHead } from "@/components/SEOHead";
 import { Input } from "@/components/ui/input";
@@ -261,6 +262,12 @@ function DieselSourceCard({ spec }: { spec: RingGapSpec }) {
 export default function RingGapAdvancedCalculator() {
   const platform = useDefaultPlatform();
   const [bore, setBore] = useBuildField("machineWork.finalBore", platform?.bore ?? "4.030");
+
+  // Seed inputs from the query string so an engine spec page (or a link pasted
+  // into a forum thread) lands on this calculator already filled in.
+  usePrefill({
+    bore: setBore,
+  });
   const { activeBuild, setField: setBuildField } = useBuildContext();
   const [boreMm, setBoreMm] = useState("");
   const [boreUnits, setBoreUnits] = useState<"in" | "mm">("in");

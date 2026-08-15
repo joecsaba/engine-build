@@ -1,4 +1,5 @@
 import { useState, useEffect, useMemo } from "react";
+import { usePrefill } from "@/hooks/usePrefill";
 import { SEOHead } from "@/components/SEOHead";
 import { Input } from "@/components/ui/input";
 import { Label } from "@/components/ui/label";
@@ -342,6 +343,13 @@ export default function CarbCfmSizingCalculator() {
   const [displacement, setDisplacement] = useState(savedDisplacement || "350");
   const [rpm, setRpm] = useState("5500");
   const [cylinders, setCylinders] = useState("8");
+
+  // Seed inputs from the query string so an engine spec page (or a link pasted
+  // into a forum thread) lands on this calculator already filled in.
+  usePrefill({
+    displacement: setDisplacement,
+    cylinders: setCylinders,
+  });
   const [intakeStyle, setIntakeStyle] = useState<IntakeStyle>("single4");
   const [intendedUse, setIntendedUse] = useState<IntendedUse>("street");
 

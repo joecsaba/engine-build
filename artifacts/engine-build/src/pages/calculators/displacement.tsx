@@ -1,4 +1,5 @@
 import { useState, useEffect } from "react";
+import { usePrefill } from "@/hooks/usePrefill";
 import { SEOHead } from "@/components/SEOHead";
 import { Input } from "@/components/ui/input";
 import { Label } from "@/components/ui/label";
@@ -20,6 +21,14 @@ export default function DisplacementCalculator() {
   const [bore, setBore] = useBuildField("shortBlock.bore", platform?.bore ?? "4.000");
   const [stroke, setStroke] = useBuildField("shortBlock.stroke", platform?.stroke ?? "3.480");
   const [cylinders, setCylinders] = useBuildField("shortBlock.cylinders", platform?.cylinders ?? "8");
+
+  // Seed inputs from the query string so an engine spec page (or a link pasted
+  // into a forum thread) lands on this calculator already filled in.
+  usePrefill({
+    bore: setBore,
+    stroke: setStroke,
+    cylinders: setCylinders,
+  });
   const { activeBuild, setField } = useBuildContext();
 
   // Engine picker state
