@@ -3,26 +3,7 @@
   <head>
     <meta charset="UTF-8" />
 
-    <!-- ─── Ezoic Privacy Scripts (Gatekeeper CMP — TCF 2.3) ─────────────────
-         Must load FIRST, before the Ezoic header script. Handles user
-         consent management for ads and analytics. -->
-    <script data-cfasync="false" src="https://cmp.gatekeeperconsent.com/min.js"></script>
-    <script data-cfasync="false" src="https://the.gatekeeperconsent.com/cmp.min.js"></script>
-
-    <!-- ─── Ezoic Header Script ──────────────────────────────────────────────
-         Initializes Ezoic's ad system. Ad placement code is injected
-         per-page via Ezoic's auto-placement system after approval. -->
-    <script async src="//www.ezojs.com/ezoic/sa.min.js"></script>
-    <script>
-      window.ezstandalone = window.ezstandalone || {};
-      ezstandalone.cmd = ezstandalone.cmd || [];
-    </script>
-    <script src="//ezoicanalytics.com/analytics.js"></script>
-
-    <!-- ─── Google Analytics 4 ───────────────────────────────────────────────
-         Consent is now managed by Gatekeeper CMP above (TCF 2.3) — GA4
-         can load unconditionally; CMP gates the actual tracking based on
-         user's IAB consent string. -->
+    <!-- ─── Google Analytics 4 ─────────────────────────────────────────────── -->
     <script async src="https://www.googletagmanager.com/gtag/js?id=G-624Z648DND"></script>
     <script>
       window.dataLayer = window.dataLayer || [];
@@ -65,13 +46,7 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
-
-    <!-- ─── Google AdSense (site verification) ──────────────────────────────
-         Required on every page for AdSense to verify ownership. Loaded after
-         the Gatekeeper CMP so consent applies to AdSense the same way it
-         applies to Ezoic's other demand partners. -->
-    <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-6597333894163422"
-         crossorigin="anonymous"></script>
+    <!-- No ad-network scripts currently loaded — pending a new ad partner. -->
   </head>
   <body>
     <div id="root">
