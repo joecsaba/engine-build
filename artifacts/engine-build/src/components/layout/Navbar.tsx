@@ -20,6 +20,7 @@ export function Navbar() {
   const initial = displayName[0]?.toUpperCase();
 
   const engineDataLinks = [
+    { href: "/engines", label: "Engine Specs Database" },
     { href: "/engine-data", label: "VIN Decoder & Specs" },
     { href: "/calculators/bolt-spec-lookup", label: "Hardware & Bolt Specs" },
   ];

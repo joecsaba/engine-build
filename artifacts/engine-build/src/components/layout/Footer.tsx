@@ -18,6 +18,7 @@ export function Footer() {
     {
       title: "Reference",
       links: [
+        { href: "/engines", label: "Engine Specs Database" },
         { href: "/engine-data", label: "Engine Data" },
         { href: "/cam-guide", label: "Cam Guide" },
         { href: "/build-advisor", label: "Build Advisor" },

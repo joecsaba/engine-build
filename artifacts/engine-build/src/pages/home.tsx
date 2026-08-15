@@ -258,7 +258,13 @@ export default function Home() {
               Bore, stroke, rod length, compression ratio, head data, valve sizes, clearances, and more for domestic and import engines. Searchable by manufacturer, family, or VIN.
             </p>
           </div>
-          <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
+          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4">
+            <Link href="/engines" className="block group">
+              <div className="p-6 rounded-xl border border-gray-200 bg-white hover:border-[#E85D04] hover:shadow-md transition-all h-full">
+                <h3 className="font-bold text-lg group-hover:text-[#E85D04] transition-colors mb-2">Browse Engine Specs</h3>
+                <p className="text-sm text-gray-500">Bore, stroke, displacement, compression and rod ratio for every engine, organized by manufacturer and family. Each engine links straight into the calculators with its numbers filled in.</p>
+              </div>
+            </Link>
             <Link href="/engine-data" className="block group">
               <div className="p-6 rounded-xl border border-gray-200 bg-white hover:border-[#E85D04] hover:shadow-md transition-all h-full">
                 <h3 className="font-bold text-lg group-hover:text-[#E85D04] transition-colors mb-2">VIN Decoder &amp; Engine Specs</h3>
@@ -268,7 +274,7 @@ export default function Home() {
             <Link href="/calculators/bolt-spec-lookup" className="block group">
               <div className="p-6 rounded-xl border border-gray-200 bg-white hover:border-[#E85D04] hover:shadow-md transition-all h-full">
                 <h3 className="font-bold text-lg group-hover:text-[#E85D04] transition-colors mb-2">Hardware &amp; Bolt Specs</h3>
-                <p className="text-sm text-gray-500">Head bolt and main bolt thread sizes, diameters, torque specs, and ARP upgrade part numbers for popular engine platforms.</p>
+                <p className="text-sm text-gray-500">Head bolt and main bolt thread sizes, diameters, thread pitch, bolt counts and ARP upgrade part numbers for popular engine platforms.</p>
               </div>
             </Link>
           </div>
