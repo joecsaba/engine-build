@@ -28,7 +28,7 @@ export function Navbar() {
   const links = [
     { href: "/calculators", label: "Calculators" },
     { href: "/guides", label: "Guides" },
-    { href: "/shop-directory", label: "Shop Directory" },
+    { href: "/shop-tools/directory", label: "Shop Directory" },
     { href: "/cam-guide", label: "Cam Guide" },
     { href: "/faq", label: "FAQ" },
   ];
