@@ -345,7 +345,7 @@ export default function ValveShimCalculator() {
   return (
     <div className="container mx-auto py-8 px-4 max-w-7xl">
       <SEOHead
-        title="Valve Shim Calculator — Bucket & Shim Clearance Tool | EngineVault"
+        title="Valve Shim Calculator — Bucket & Shim Clearance Tool"
         description="Calculate replacement valve shim sizes for shim-over-bucket and shim-under-bucket engines. Supports mm and inch inputs, multi-valve entry, shim swap suggestions, and nearest available shim size lookup."
         canonical="/calculators/valve-shim"
         keywords="valve shim calculator, bucket shim calculator, valve clearance calculator, shim over bucket, shim under bucket, motorcycle valve adjustment, valve shim size, OHC valve adjustment"

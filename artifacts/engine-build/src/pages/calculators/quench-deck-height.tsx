@@ -215,8 +215,8 @@ export default function QuenchDeckHeightCalculator() {
   return (
     <div className="container mx-auto py-8 px-4 max-w-7xl">
       <SEOHead
-        title="Quench & Deck Height Calculator | Squish Distance"
-        description="Calculate piston-to-deck clearance, quench distance, and compression ratio simultaneously. Compare gasket thicknesses side by side. Free engine builder tool."
+        title="Quench & Deck Height Calculator — Squish"
+        description="Piston-to-deck clearance, quench (squish) distance and compression ratio in one pass. Compare gasket thicknesses side by side and see all three update live."
         canonical="/calculators/quench-deck-height"
         keywords="quench calculator, deck height calculator, piston to deck clearance, squish calculator, quench distance, compression ratio calculator, engine quench, piston material, piston to wall clearance, forged piston clearance, hypereutectic piston, 4032 vs 2618"
       />

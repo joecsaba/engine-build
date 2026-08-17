@@ -264,8 +264,8 @@ export default function AfrLambdaCalculator() {
   return (
     <div className="container mx-auto py-8 px-4 max-w-7xl">
       <SEOHead
-        title="AFR / Lambda Calculator | Air Fuel Ratio Converter"
-        description="Convert between Lambda, AFR, and gas-scale wideband readings for gasoline, E85, methanol, and custom fuel blends. Free air fuel ratio calculator."
+        title="Lambda to AFR Converter — Both Directions"
+        description="Convert lambda to AFR or AFR to lambda for pump gas, E85, E98, methanol, propane and CNG. Instant result on both the gas scale and true AFR."
         canonical="/calculators/afr-lambda"
         keywords="AFR calculator, lambda calculator, wideband AFR converter, E85 AFR, methanol AFR, gas scale AFR, stoichiometric AFR, air fuel ratio calculator, lambda to AFR"
       />

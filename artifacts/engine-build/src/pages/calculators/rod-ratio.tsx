@@ -826,8 +826,8 @@ export default function RodRatioCalculator() {
   return (
     <div className="container mx-auto py-8 px-4 max-w-7xl">
       <SEOHead
-        title="Rod Ratio Calculator | Connecting Rod to Stroke"
-        description="Calculate your connecting rod ratio (L/S) and see where it falls in the performance spectrum. Compare against common engines like SBC 350, LS1, Ford 302, 2JZ."
+        title="Rod Ratio Calculator — Compare 11 Engines"
+        description="Enter rod length and stroke for your rod ratio instantly. Visual gauge shows where your combo lands, with 11 engines from LS1 to K24A to compare against."
         canonical="/calculators/rod-ratio"
         keywords="rod ratio calculator, connecting rod ratio, rod length stroke ratio, engine rod ratio, L/S ratio calculator"
       />

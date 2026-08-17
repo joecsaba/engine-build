@@ -272,7 +272,7 @@ export default function HeaderSizingCalculator() {
   return (
     <div className="container mx-auto py-8 px-4 max-w-5xl">
       <SEOHead
-        title="Exhaust Header Tube Length & Diameter Calculator | EngineVault"
+        title="Exhaust Header Tube Length & Diameter Calculator"
         description="Calculate optimal exhaust header primary tube length and diameter using acoustic harmonic tuning. Includes collector sizing, standard tube snap, and Bowling's cross-check for V8 engines."
         canonical="/calculators/header-sizing"
         keywords="header tube length calculator, exhaust header sizing, primary tube diameter, header collector sizing, acoustic tuning exhaust, header calculator"

@@ -126,8 +126,8 @@ export default function OctaneMixCalculator() {
   return (
     <div className="container mx-auto py-8 px-4 max-w-5xl">
       <SEOHead
-        title="Octane Mix / Fuel Blending Calculator"
-        description="Calculate blended octane from two fuels or determine E85/ethanol fill amounts. Includes stoichiometric AFR, BTU content, MPG impact, and fuel system warnings."
+        title="Octane Mix Calculator — Blend 110 with 93"
+        description="Blend two fuels to hit a target octane — race gas with pump, or any E85 ratio. Shows mix percentage, resulting stoich AFR, BTU content and MPG impact."
         canonical="/calculators/octane-mix"
         keywords="octane blending calculator, E85 ethanol blend, fuel mix octane, E30 E50 blend, race fuel mix, octane calculator"
       />

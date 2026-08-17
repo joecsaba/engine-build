@@ -474,8 +474,8 @@ export default function RingGapAdvancedCalculator() {
   return (
     <div className="container mx-auto py-8 px-4 max-w-7xl">
       <SEOHead
-        title="Piston Ring Gap Calculator"
-        description="Application-specific piston ring end gap calculator for NA, nitrous, turbo, supercharged, and diesel builds. Per-ring outputs, material warnings, and file-gap workflow."
+        title="Piston Ring Gap Calculator (NA & Boost)"
+        description="Ring end gap for your exact bore, by application — NA, turbo, supercharged, nitrous or diesel. Per-ring targets in inches or mm, with material warnings."
         canonical="/calculators/ring-gap"
         keywords="piston ring gap calculator, advanced ring gap, turbo ring gap, nitrous ring gap, diesel ring gap, cummins ring gap, powerstroke ring gap, duramax ring gap, ring material, file ring gap, piston material, hypereutectic ring gap, forged piston ring gap, 4032 vs 2618, piston to wall clearance"
       />
