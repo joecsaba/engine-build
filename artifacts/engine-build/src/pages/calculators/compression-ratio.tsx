@@ -1,4 +1,5 @@
 import { useState } from "react";
+import { EnginePicker } from "@/components/calculators/EnginePicker";
 import { usePrefill } from "@/hooks/usePrefill";
 import { SEOHead } from "@/components/SEOHead";
 import { Input } from "@/components/ui/input";
@@ -78,6 +79,19 @@ export default function CompressionRatioCalculator() {
           <Card>
             <CardHeader><CardTitle>Engine Dimensions</CardTitle></CardHeader>
             <CardContent className="space-y-3">
+              {/* Chamber volume is the number builders can rarely find. We hold
+                  it for the engines sourced from the NHRA blueprints, so the
+                  picker fills it here along with the rest of the geometry. */}
+              <EnginePicker
+                requires={["bore_in", "stroke_in"]}
+                onSelect={(e) => {
+                  if (e.bore_in != null) setBore(e.bore_in.toFixed(3));
+                  if (e.stroke_in != null) setStroke(e.stroke_in.toFixed(3));
+                  if (e.head?.head_cc != null) setChamberVolume(String(e.head.head_cc));
+                  if (e.rod_length_in != null) setRodLength(e.rod_length_in.toFixed(3));
+                  if (e.piston_deck_clearance != null) setDeckHeight(e.piston_deck_clearance.toFixed(3));
+                }}
+              />
               <Field label="Bore (inches)" value={bore} onChange={setBore} step="0.001" />
               <Field label="Stroke (inches)" value={stroke} onChange={setStroke} step="0.001" />
               <Field label="Head Chamber Volume (cc)" value={chamberVolume} onChange={setChamberVolume} step="0.1" />

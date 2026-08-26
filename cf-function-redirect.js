@@ -43,7 +43,22 @@ function handler(event) {
     };
   }
 
-  // 4. /ads.txt must 404 rather than fall through to the SPA.
+  // 4. Retire the superseded dynamic CR draft.
+  // /calculators/compression-ratio already computes dynamic CR; the v2 page was
+  // a parallel draft that was never prerendered or added to the sitemap, so it
+  // served the homepage title with a 200 to any crawler that found it.
+  if (uri === '/calculators/dynamic-compression-ratio-v2' ||
+      uri === '/calculators/dynamic-compression-ratio-v2/') {
+    return {
+      statusCode: 301,
+      statusDescription: 'Moved Permanently',
+      headers: {
+        location: { value: 'https://engine-build.com/calculators/compression-ratio' }
+      }
+    };
+  }
+
+  // 5. /ads.txt must 404 rather than fall through to the SPA.
   // The file was removed when the ad-network code came out. Because it has a
   // dot it skips the rewrite below, misses in S3, and hits the 404 → /index.html
   // error response — which returns the homepage with a 200. That is a soft 404,
@@ -60,7 +75,7 @@ function handler(event) {
     };
   }
 
-  // 5. Directory-style URL resolution.
+  // 6. Directory-style URL resolution.
   // Per-route prerendered HTML lives at /foo/bar/index.html. Without rewriting,
   // S3 returns 404 for /foo/bar and CloudFront falls back to root /index.html,
   // which defeats the entire prerender. Rewrite extension-less paths to their
