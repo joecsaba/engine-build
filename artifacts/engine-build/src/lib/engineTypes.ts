@@ -65,7 +65,19 @@ export interface EngineRecord {
     exhaust_valve_dia?: number;
     cam_intake_lift?: number;
     cam_exhaust_lift?: number;
+    /** Combustion chamber volume, cc. From the NHRA blueprints. */
+    head_cc?: number;
+    rocker_ratio?: number;
+    lifter_type?: string;
   } | null;
+  /**
+   * Piston-to-deck clearance at TDC, inches. NHRA records this for class
+   * legality and labels it "deck height" — it is NOT block deck height, which
+   * is ~9". Median here is 0.010".
+   */
+  piston_deck_clearance?: number | null;
+  /** Provenance, shown on the page. */
+  sources?: string[];
   /** Nearest-displacement engines, family first. Cross-links between pages. */
   relatedEngines: {
     url: string;

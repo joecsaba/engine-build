@@ -24,6 +24,7 @@
 // hold (1,315 malformed torque_to_yield entries) and must not reach search.
 
 import { readFileSync, existsSync, writeFileSync, mkdirSync } from "node:fs";
+import { loadNhraEngines, geoKey } from "./nhraData.mjs";
 import { resolve, dirname } from "node:path";
 import { fileURLToPath } from "node:url";
 
@@ -278,6 +279,9 @@ export function loadEngineData() {
           for (const k of ["intake_valve_dia", "exhaust_valve_dia", "cam_intake_lift", "cam_exhaust_lift"]) {
             if (num(h[k]) != null) out[k] = num(h[k]);
           }
+          // head_cc, rocker_ratio and lifter_type are empty on every record in
+          // public/data/engines. They are backfilled from the NHRA blueprints
+          // in the merge pass below.
           return Object.keys(out).length ? out : null;
         })(),
 
@@ -331,6 +335,175 @@ export function loadEngineData() {
     m.engineCount = m.families.reduce((n, f) => n + f.engines.length, 0);
   }
 
+  // ---- merge the NHRA blueprints -------------------------------------------
+  // Two distinct jobs, both keyed on geometry rather than engine_id, because
+  // the ids in public/data/engines and the ids in the blueprints only overlap
+  // partially:
+  //
+  //   ENRICH  an NHRA record whose bore/stroke/cylinders already exists on the
+  //           site contributes head_cc, rocker_ratio and lifter_type — three
+  //           fields that are present-but-empty on every published record.
+  //   ADD     an NHRA record with geometry the site has never carried becomes a
+  //           new engine. These are mostly muscle-era Chevrolet, Pontiac, Buick
+  //           and AMC iron with no coverage at all.
+  //
+  // Matching on geometry also means an added engine can never duplicate a page
+  // that already exists, which is the rule the whole route set is built on.
+  const nhra = loadNhraEngines();
+  const nhraStats = { ...nhra.stats, enriched: 0, added: 0, newFamilies: 0 };
+
+  if (nhra.engines.length) {
+    const byGeo = new Map();
+    for (const e of outEngines) {
+      const k = geoKey(e.bore_in, e.stroke_in, e.num_cylinders);
+      if (k && !byGeo.has(k)) byGeo.set(k, e);
+    }
+
+    const leftovers = [];
+    for (const r of nhra.engines) {
+      const k = geoKey(r.bore_in, r.stroke_in, r.num_cylinders);
+      const target = k ? byGeo.get(k) : null;
+      if (!target) { if (k) leftovers.push(r); continue; }
+
+      const head = target.head ?? {};
+      let touched = false;
+      for (const [field, value] of [
+        ["head_cc", r.head_cc], ["rocker_ratio", r.rocker_ratio], ["lifter_type", r.lifter_type],
+        ["intake_valve_dia", r.intake_valve_dia], ["exhaust_valve_dia", r.exhaust_valve_dia],
+        ["cam_intake_lift", r.cam_intake_lift], ["cam_exhaust_lift", r.cam_exhaust_lift],
+      ]) {
+        if (value != null && head[field] == null) { head[field] = value; touched = true; }
+      }
+      if (r.piston_deck_clearance != null && target.piston_deck_clearance == null) {
+        target.piston_deck_clearance = r.piston_deck_clearance;
+        touched = true;
+      }
+      if (touched) {
+        target.head = Object.keys(head).length ? head : null;
+        target.sources = [...new Set([...(target.sources ?? []), "NHRA blueprints"])];
+        nhraStats.enriched++;
+      }
+    }
+
+    // --- add the engines the site has never carried --------------------------
+    // Grouped by manufacturer + displacement, matching the existing
+    // "<mfr>-<displacement>ci" family convention already used by 142 families.
+    const groups = new Map();
+    for (const r of leftovers) {
+      if (!r.manufacturer || r.displacement_ci == null) continue;
+      const mfrSlug = hyphenate(r.manufacturer).replace(/-/g, "_");
+      const famSlug = `${hyphenate(r.manufacturer)}-${Math.round(r.displacement_ci)}ci`;
+      const key = `${mfrSlug}|${famSlug}`;
+      if (!groups.has(key)) groups.set(key, { mfrSlug, famSlug, mfrName: r.manufacturer, records: [] });
+      groups.get(key).records.push(r);
+    }
+
+    for (const g of groups.values()) {
+      const mfrSeg = hyphenate(g.mfrSlug);
+      const famSeg = hyphenate(stripPrefix(g.famSlug, hyphenate(g.mfrSlug)) ?? g.famSlug);
+      const famUrl = `/engines/${mfrSeg}/${famSeg}`;
+      let fam = outFamilies.find((f) => f.url === famUrl);
+      if (!fam) {
+        fam = {
+          url: famUrl,
+          familySlug: g.famSlug,
+          familyName: `${g.mfrName} ${Math.round(g.records[0].displacement_ci)}ci`,
+          manufacturerName: g.mfrName,
+          manufacturerSlug: g.mfrSlug,
+          manufacturerUrl: `/engines/${mfrSeg}`,
+          configuration: null,
+          engines: [],
+        };
+        outFamilies.push(fam);
+        nhraStats.newFamilies++;
+      }
+
+      // Collapse to distinct geometry, same rule as the main pass.
+      const byGeom = new Map();
+      for (const r of g.records) {
+        const k = [r.bore_in, r.stroke_in, r.displacement_ci, r.num_cylinders, r.compression_ratio].join("|");
+        if (!byGeom.has(k)) byGeom.set(k, []);
+        byGeom.get(k).push(r);
+      }
+
+      const used = new Set(fam.engines.map((e) => e.slug));
+      for (const cluster of byGeom.values()) {
+        const rep = cluster.slice().sort((a, b) =>
+          Object.values(b).filter((v) => v != null).length -
+          Object.values(a).filter((v) => v != null).length)[0];
+
+        let slug = hyphenate(`${Math.round(rep.displacement_ci)}ci-${rep.bore_in}x${rep.stroke_in}`);
+        if (used.has(slug) && rep.compression_ratio != null) {
+          slug = hyphenate(`${slug}-${String(rep.compression_ratio).replace(".", "-")}cr`);
+        }
+        if (used.has(slug)) slug = hyphenate(rep.engine_id);
+        used.add(slug);
+
+        const hps = cluster.map((r) => r.advertised_hp).filter((v) => v != null);
+        const years = cluster.map((r) => r.year).filter(Boolean);
+        const head = {};
+        for (const f of ["intake_valve_dia", "exhaust_valve_dia", "cam_intake_lift", "cam_exhaust_lift",
+                         "head_cc", "rocker_ratio", "lifter_type"]) {
+          if (rep[f] != null) head[f] = rep[f];
+        }
+
+        const eng = {
+          url: `${famUrl}/${slug}`,
+          slug,
+          engine_id: rep.engine_id,
+          displayName: `${g.mfrName} ${Math.round(rep.displacement_ci)}ci · ${rep.bore_in}" × ${rep.stroke_in}"` +
+                       (rep.compression_ratio != null ? ` · ${rep.compression_ratio}:1` : ""),
+          familyName: fam.familyName,
+          familySlug: fam.familySlug,
+          familyUrl: famUrl,
+          manufacturerName: g.mfrName,
+          manufacturerSlug: g.mfrSlug,
+          manufacturerUrl: `/engines/${mfrSeg}`,
+          bore_in: rep.bore_in, stroke_in: rep.stroke_in, bore_mm: null, stroke_mm: null,
+          displacement_ci: rep.displacement_ci,
+          displacement_l: rep.displacement_ci != null ? +(rep.displacement_ci * 0.0163871).toFixed(1) : null,
+          num_cylinders: rep.num_cylinders,
+          compression_ratio: rep.compression_ratio,
+          rod_length_in: rep.rod_length_in,
+          deck_height_in: null,
+          piston_deck_clearance: rep.piston_deck_clearance,
+          configuration: null,
+          block_material: null, head_material: null, valvetrain: null,
+          valves_per_cylinder: null, cam_type: null, fuel_type: null,
+          induction: rep.induction, firing_order: null,
+          oil_capacity_qt: null, coolant_capacity_qt: null,
+          rod_ratio: rep.rod_length_in != null && rep.stroke_in
+            ? +(rep.rod_length_in / rep.stroke_in).toFixed(3) : null,
+          boreStrokeRatio: rep.bore_in != null && rep.stroke_in
+            ? +(rep.bore_in / rep.stroke_in).toFixed(3) : null,
+          hpMin: hps.length ? Math.min(...hps) : null,
+          hpMax: hps.length ? Math.max(...hps) : null,
+          yearMin: years.length ? Math.min(...years) : null,
+          yearMax: years.length ? Math.max(...years) : null,
+          head: Object.keys(head).length ? head : null,
+          vehicles: [],
+          variants: cluster.map((r) => ({
+            engine_id: r.engine_id, year: r.year, hp: r.advertised_hp, codes: [],
+          })).sort((a, b) => (a.year ?? 0) - (b.year ?? 0) || (a.hp ?? 0) - (b.hp ?? 0)),
+          variantCount: cluster.length,
+          sources: ["NHRA blueprints"],
+        };
+        eng.calcLinks = calcLinksFor(eng);
+        fam.engines.push(eng);
+        outEngines.push(eng);
+        nhraStats.added++;
+      }
+      fam.engines.sort((a, b) => (b.displacement_ci ?? 0) - (a.displacement_ci ?? 0));
+    }
+
+    // Manufacturers created by the import need a hub entry too.
+    for (const fam of outFamilies) {
+      if (!mfrByslug.has(fam.manufacturerSlug)) {
+        mfrByslug.set(fam.manufacturerSlug, { slug: fam.manufacturerSlug, name: fam.manufacturerName, country: null });
+      }
+    }
+  }
+
   // ---- related engines -----------------------------------------------------
   // Cross-links between engine pages, computed once the full set is known.
   //
@@ -381,7 +554,7 @@ export function loadEngineData() {
     e.relatedEngines = picked;
   }
 
-  return { manufacturers: outManufacturers, families: outFamilies, engines: outEngines, familyIndex };
+  return { manufacturers: outManufacturers, families: outFamilies, engines: outEngines, familyIndex, nhraStats };
 }
 
 /**

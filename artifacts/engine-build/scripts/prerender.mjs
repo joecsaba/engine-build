@@ -436,6 +436,7 @@ function engineEntry(e) {
         ["Rod ratio", e.rod_ratio],
         ["Bore/stroke ratio", e.boreStrokeRatio],
         ["Deck height", fmtIn(e.deck_height_in)],
+        ["Piston deck clearance", fmtIn(e.piston_deck_clearance)],
       ])}
       <h2>Construction</h2>
       ${specRows([
@@ -458,6 +459,9 @@ function engineEntry(e) {
         ["Exhaust valve diameter", fmtIn(e.head.exhaust_valve_dia)],
         ["Cam lift, intake", fmtIn(e.head.cam_intake_lift)],
         ["Cam lift, exhaust", fmtIn(e.head.cam_exhaust_lift)],
+        ["Chamber volume", e.head.head_cc != null ? `${e.head.head_cc} cc` : null],
+        ["Rocker ratio", e.head.rocker_ratio != null ? `${e.head.rocker_ratio}:1` : null],
+        ["Lifter type", e.head.lifter_type],
       ])}` : ""}
       ${e.calcLinks?.length ? `<h2>Run the numbers for this engine</h2>
       <p>Each link opens the calculator with this engine's specs already filled in.</p>
@@ -466,6 +470,7 @@ function engineEntry(e) {
       ${vehiclesHtml}
       ${e.relatedEngines?.length ? `<h2>Similar engines</h2>
       <ul>${e.relatedEngines.map((r) => `<li><a href="${r.url}">${escapeHtml(r.manufacturerName + " " + r.displayName)}</a>${r.displacement_ci != null ? ` — ${r.displacement_ci} ci` : ""}</li>`).join("")}</ul>` : ""}
+      ${e.sources?.length ? `<p>Source: ${escapeHtml(e.sources.join(", "))} — <a href="https://www.nhra.net/tech_specs/engine/blueprints/">nhra.net blueprints</a></p>` : ""}
       <p><a href="${e.familyUrl}">← All ${escapeHtml(e.familyName)} engines</a></p>`;
 
   return {

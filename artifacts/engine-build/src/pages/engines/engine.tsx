@@ -136,6 +136,9 @@ export default function EnginePage() {
                 <Row label="Exhaust valve diameter" value={rec.head.exhaust_valve_dia != null ? `${rec.head.exhaust_valve_dia}"` : null} />
                 <Row label="Cam lift, intake" value={rec.head.cam_intake_lift != null ? `${rec.head.cam_intake_lift}"` : null} />
                 <Row label="Cam lift, exhaust" value={rec.head.cam_exhaust_lift != null ? `${rec.head.cam_exhaust_lift}"` : null} />
+                <Row label="Chamber volume" value={rec.head.head_cc != null ? `${rec.head.head_cc} cc` : null} />
+                <Row label="Rocker ratio" value={rec.head.rocker_ratio != null ? `${rec.head.rocker_ratio}:1` : null} />
+                <Row label="Lifter type" value={rec.head.lifter_type ? rec.head.lifter_type[0].toUpperCase() + rec.head.lifter_type.slice(1) : null} />
               </tbody>
             </table>
           </CardContent>
@@ -218,6 +221,15 @@ export default function EnginePage() {
         </Card>
       )}
 
+      {rec.sources?.length ? (
+        <p className="text-xs text-muted-foreground mt-6">
+          Source: {rec.sources.join(", ")} —{" "}
+          <a href="https://www.nhra.net/tech_specs/engine/blueprints/" target="_blank" rel="noopener noreferrer" className="underline">
+            nhra.net blueprints
+          </a>
+        </p>
+      ) : null}
+
       <p className="text-xs text-muted-foreground mt-8">
         Specs are for reference and build planning. Always verify against the factory service
         manual for your exact engine — dimensions vary by production year, casting and application.
@@ -270,6 +282,7 @@ function SpecTable({ rec }: { rec: EngineRecord }) {
               <Row label="Rod ratio" value={rec.rod_ratio} />
               <Row label="Bore/stroke ratio" value={rec.boreStrokeRatio} />
               <Row label="Deck height" value={rec.deck_height_in != null ? `${rec.deck_height_in}"` : null} />
+              <Row label="Piston deck clearance" value={rec.piston_deck_clearance != null ? `${rec.piston_deck_clearance}"` : null} />
             </tbody>
           </table>
         </CardContent>
