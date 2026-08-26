@@ -452,11 +452,20 @@ function engineEntry(e) {
         ["Oil capacity", e.oil_capacity_qt != null ? `${e.oil_capacity_qt} qt` : null],
         ["Coolant capacity", e.coolant_capacity_qt != null ? `${e.coolant_capacity_qt} qt` : null],
       ])}
+      ${e.head ? `<h2>Cylinder head</h2>
+      ${specRows([
+        ["Intake valve diameter", fmtIn(e.head.intake_valve_dia)],
+        ["Exhaust valve diameter", fmtIn(e.head.exhaust_valve_dia)],
+        ["Cam lift, intake", fmtIn(e.head.cam_intake_lift)],
+        ["Cam lift, exhaust", fmtIn(e.head.cam_exhaust_lift)],
+      ])}` : ""}
       ${e.calcLinks?.length ? `<h2>Run the numbers for this engine</h2>
       <p>Each link opens the calculator with this engine's specs already filled in.</p>
       <ul>${e.calcLinks.map((c) => `<li><a href="${c.href}">${escapeHtml(c.label)}</a></li>`).join("")}</ul>` : ""}
       ${variantsHtml}
       ${vehiclesHtml}
+      ${e.relatedEngines?.length ? `<h2>Similar engines</h2>
+      <ul>${e.relatedEngines.map((r) => `<li><a href="${r.url}">${escapeHtml(r.manufacturerName + " " + r.displayName)}</a>${r.displacement_ci != null ? ` — ${r.displacement_ci} ci` : ""}</li>`).join("")}</ul>` : ""}
       <p><a href="${e.familyUrl}">← All ${escapeHtml(e.familyName)} engines</a></p>`;
 
   return {

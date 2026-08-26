@@ -123,6 +123,24 @@ export default function EnginePage() {
         </Card>
       )}
 
+
+      {rec.head && (
+        <Card className="mt-6">
+          <CardHeader className="pb-3">
+            <CardTitle className="text-base">Cylinder head</CardTitle>
+          </CardHeader>
+          <CardContent>
+            <table className="w-full text-sm max-w-md">
+              <tbody>
+                <Row label="Intake valve diameter" value={rec.head.intake_valve_dia != null ? `${rec.head.intake_valve_dia}"` : null} />
+                <Row label="Exhaust valve diameter" value={rec.head.exhaust_valve_dia != null ? `${rec.head.exhaust_valve_dia}"` : null} />
+                <Row label="Cam lift, intake" value={rec.head.cam_intake_lift != null ? `${rec.head.cam_intake_lift}"` : null} />
+                <Row label="Cam lift, exhaust" value={rec.head.cam_exhaust_lift != null ? `${rec.head.cam_exhaust_lift}"` : null} />
+              </tbody>
+            </table>
+          </CardContent>
+        </Card>
+      )}
       {rec.variantCount > 1 && (
         <Card className="mt-6">
           <CardHeader className="pb-3">
@@ -170,6 +188,29 @@ export default function EnginePage() {
                 <li key={i}>
                   {v.name}
                   {v.year_start ? ` (${v.year_start}${v.year_end ? `–${v.year_end}` : "+"})` : ""}
+                </li>
+              ))}
+            </ul>
+          </CardContent>
+        </Card>
+      )}
+
+
+      {rec.relatedEngines?.length > 0 && (
+        <Card className="mt-6">
+          <CardHeader className="pb-3">
+            <CardTitle className="text-base">Similar engines</CardTitle>
+          </CardHeader>
+          <CardContent>
+            <ul className="grid grid-cols-1 sm:grid-cols-2 gap-x-6 gap-y-1.5 text-sm">
+              {rec.relatedEngines.map((r) => (
+                <li key={r.url}>
+                  <Link href={r.url} className="text-[#E85D04] hover:underline">
+                    {r.manufacturerName} {r.displayName}
+                  </Link>
+                  {r.displacement_ci != null && (
+                    <span className="text-muted-foreground"> — {r.displacement_ci} ci</span>
+                  )}
                 </li>
               ))}
             </ul>

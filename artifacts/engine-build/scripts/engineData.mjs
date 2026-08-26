@@ -267,9 +267,26 @@ export function loadEngineData() {
         hpMax: hps.length ? Math.max(...hps) : null,
         yearMin: years.length ? Math.min(...years) : null,
         yearMax: years.length ? Math.max(...years) : null,
-        // nested detail (torque deliberately omitted)
-        head: rep.head ?? null,
-        clearances: rep.clearances ?? null,
+        // Cylinder head specs, whitelisted to the four fields that hold real
+        // per-engine data. head_cc, valve_stem_dia, rocker_ratio, lifter_type,
+        // spring_type and head_gasket_thickness exist in the source but are
+        // empty on every record, so they are not carried through.
+        head: (() => {
+          const h = rep.head;
+          if (!h) return null;
+          const out = {};
+          for (const k of ["intake_valve_dia", "exhaust_valve_dia", "cam_intake_lift", "cam_exhaust_lift"]) {
+            if (num(h[k]) != null) out[k] = num(h[k]);
+          }
+          return Object.keys(out).length ? out : null;
+        })(),
+
+        // `clearances` is deliberately NOT carried through. Like torque, that
+        // block is templated rather than measured — 372 engines share 4-9
+        // distinct values per field, and the figures skew dangerously tight
+        // (LS7 piston-to-wall stored as 0.0005-0.0018" against a real spec
+        // nearer 0.0045-0.0055"). Dropping it here means it cannot reach a
+        // page by accident. See [[project_torque_data_hold]] for the parallel.
         vehicles,
         variants,
         variantCount: group.length,
@@ -312,6 +329,56 @@ export function loadEngineData() {
   for (const m of outManufacturers) {
     m.families.sort((a, b) => a.familyName.localeCompare(b.familyName));
     m.engineCount = m.families.reduce((n, f) => n + f.engines.length, 0);
+  }
+
+  // ---- related engines -----------------------------------------------------
+  // Cross-links between engine pages, computed once the full set is known.
+  //
+  // Two jobs: they give crawlers paths between 1,346 pages that previously only
+  // connected upward through their family hub, and they give a reader landing
+  // on one engine somewhere to go next — which is the lever on pages per
+  // session, currently 1.7.
+  //
+  // Ordering is nearest-displacement first within the family (the engines
+  // someone is genuinely cross-shopping), then the same manufacturer, then
+  // anything close in size. Displacement is the axis builders actually compare
+  // on, so a 350 sits next to a 383 rather than next to an unrelated 4-cylinder.
+  const byDisp = outEngines
+    .filter((e) => e.displacement_ci != null)
+    .sort((a, b) => a.displacement_ci - b.displacement_ci);
+
+  const brief = (e) => ({
+    url: e.url,
+    displayName: e.displayName,
+    familyName: e.familyName,
+    manufacturerName: e.manufacturerName,
+    displacement_ci: e.displacement_ci,
+  });
+
+  for (const e of outEngines) {
+    const picked = [];
+    const seen = new Set([e.url]);
+    const take = (candidates, limit) => {
+      for (const c of candidates) {
+        if (picked.length >= limit) break;
+        if (seen.has(c.url)) continue;
+        seen.add(c.url);
+        picked.push(brief(c));
+      }
+    };
+    const near = (pool) =>
+      e.displacement_ci == null
+        ? pool
+        : pool
+            .slice()
+            .sort((a, b) =>
+              Math.abs((a.displacement_ci ?? 1e9) - e.displacement_ci) -
+              Math.abs((b.displacement_ci ?? 1e9) - e.displacement_ci));
+
+    take(near(outEngines.filter((x) => x.familyUrl === e.familyUrl)), 4);
+    take(near(outEngines.filter((x) => x.manufacturerSlug === e.manufacturerSlug)), 6);
+    if (e.displacement_ci != null) take(near(byDisp), 8);
+    e.relatedEngines = picked;
   }
 
   return { manufacturers: outManufacturers, families: outFamilies, engines: outEngines, familyIndex };

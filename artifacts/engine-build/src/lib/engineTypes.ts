@@ -59,8 +59,21 @@ export interface EngineRecord {
 
   calcLinks: { href: string; label: string }[];
 
-  head: unknown | null;
-  clearances: unknown | null;
+  /** Whitelisted head specs. Empty source fields are not carried through. */
+  head: {
+    intake_valve_dia?: number;
+    exhaust_valve_dia?: number;
+    cam_intake_lift?: number;
+    cam_exhaust_lift?: number;
+  } | null;
+  /** Nearest-displacement engines, family first. Cross-links between pages. */
+  relatedEngines: {
+    url: string;
+    displayName: string;
+    familyName: string;
+    manufacturerName: string;
+    displacement_ci: number | null;
+  }[];
   vehicles: EngineVehicle[];
   variants: EngineVariant[];
   variantCount: number;
