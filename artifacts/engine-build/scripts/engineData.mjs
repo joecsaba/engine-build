@@ -276,7 +276,13 @@ export function loadEngineData() {
           const h = rep.head;
           if (!h) return null;
           const out = {};
-          for (const k of ["intake_valve_dia", "exhaust_valve_dia", "cam_intake_lift", "cam_exhaust_lift"]) {
+          // cam_intake_lift / cam_exhaust_lift are NOT carried. The NHRA field is
+          // ambiguous — only ~27 of 156 records are plausible as lobe lift and
+          // ~28 as valve lift, and 79 of 152 values fall below 0.200", which is
+          // not a lift of either kind (some are 0.02, some are 0). Publishing it
+          // would put a number on the page that is wrong by a rocker ratio at
+          // best and meaningless at worst.
+          for (const k of ["intake_valve_dia", "exhaust_valve_dia"]) {
             if (num(h[k]) != null) out[k] = num(h[k]);
           }
           // head_cc, rocker_ratio and lifter_type are empty on every record in
@@ -370,7 +376,6 @@ export function loadEngineData() {
       for (const [field, value] of [
         ["head_cc", r.head_cc], ["rocker_ratio", r.rocker_ratio], ["lifter_type", r.lifter_type],
         ["intake_valve_dia", r.intake_valve_dia], ["exhaust_valve_dia", r.exhaust_valve_dia],
-        ["cam_intake_lift", r.cam_intake_lift], ["cam_exhaust_lift", r.cam_exhaust_lift],
       ]) {
         if (value != null && head[field] == null) { head[field] = value; touched = true; }
       }
@@ -442,7 +447,7 @@ export function loadEngineData() {
         const hps = cluster.map((r) => r.advertised_hp).filter((v) => v != null);
         const years = cluster.map((r) => r.year).filter(Boolean);
         const head = {};
-        for (const f of ["intake_valve_dia", "exhaust_valve_dia", "cam_intake_lift", "cam_exhaust_lift",
+        for (const f of ["intake_valve_dia", "exhaust_valve_dia",
                          "head_cc", "rocker_ratio", "lifter_type"]) {
           if (rep[f] != null) head[f] = rep[f];
         }

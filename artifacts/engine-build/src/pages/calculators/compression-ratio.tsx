@@ -83,13 +83,15 @@ export default function CompressionRatioCalculator() {
                   it for the engines sourced from the NHRA blueprints, so the
                   picker fills it here along with the rest of the geometry. */}
               <EnginePicker
-                requires={["bore_in", "stroke_in"]}
+                fills={["bore", "stroke", "chamber volume", "rod length", "deck clearance"]}
                 onSelect={(e) => {
-                  if (e.bore_in != null) setBore(e.bore_in.toFixed(3));
-                  if (e.stroke_in != null) setStroke(e.stroke_in.toFixed(3));
-                  if (e.head?.head_cc != null) setChamberVolume(String(e.head.head_cc));
-                  if (e.rod_length_in != null) setRodLength(e.rod_length_in.toFixed(3));
-                  if (e.piston_deck_clearance != null) setDeckHeight(e.piston_deck_clearance.toFixed(3));
+                  const got: string[] = [];
+                  if (e.bore_in != null) { setBore(e.bore_in.toFixed(3)); got.push("bore"); }
+                  if (e.stroke_in != null) { setStroke(e.stroke_in.toFixed(3)); got.push("stroke"); }
+                  if (e.head?.head_cc != null) { setChamberVolume(String(e.head.head_cc)); got.push("chamber volume"); }
+                  if (e.rod_length_in != null) { setRodLength(e.rod_length_in.toFixed(3)); got.push("rod length"); }
+                  if (e.piston_deck_clearance != null) { setDeckHeight(e.piston_deck_clearance.toFixed(3)); got.push("deck clearance"); }
+                  return got;
                 }}
               />
               <Field label="Bore (inches)" value={bore} onChange={setBore} step="0.001" />

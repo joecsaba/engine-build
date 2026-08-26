@@ -14,15 +14,24 @@ import type { EngineFamilyDoc, EngineRecord, ManufacturerSummary } from "@/lib/e
  *
  * Hands the caller the whole EngineRecord and lets it decide what to fill, so
  * one component serves calculators with completely different inputs.
+ *
+ * Every engine stays selectable even when it is missing fields a given
+ * calculator wants. Partial data beats no data: filling three of five inputs
+ * still saves the reader three lookups, and hiding the engine would just make
+ * the database look emptier than it is. The caller reports back which fields it
+ * managed to fill and the picker names the rest, so nobody is left guessing
+ * which boxes still need a number.
  */
 interface Props {
-  onSelect: (engine: EngineRecord) => void;
-  /** Only offer engines that have these fields — hides useless choices. */
-  requires?: (keyof EngineRecord)[];
+  /** Fill what you can; return the labels of the fields you filled. */
+  onSelect: (engine: EngineRecord) => string[] | void;
+  /** Labels this calculator can fill, used to report what was missing. */
+  fills?: string[];
   label?: string;
 }
 
-export function EnginePicker({ onSelect, requires = [], label = "Auto-fill from engine database" }: Props) {
+export function EnginePicker({ onSelect, fills = [], label = "Auto-fill from engine database" }: Props) {
+  const [filled, setFilled] = useState<string[] | null>(null);
   const [open, setOpen] = useState(false);
   const [mfrs, setMfrs] = useState<ManufacturerSummary[] | null>(null);
   const [mfrUrl, setMfrUrl] = useState("");
@@ -58,22 +67,17 @@ export function EnginePicker({ onSelect, requires = [], label = "Auto-fill from 
     [mfrs, mfrUrl]
   );
 
-  const engines = useMemo(() => {
-    const all = doc?.engines ?? [];
-    if (!requires.length) return all;
-    return all.filter((e) =>
-      requires.every((k) => {
-        const v = e[k];
-        return v != null && v !== "";
-      })
-    );
-  }, [doc, requires]);
+  const engines = doc?.engines ?? [];
 
   const handleEngine = (slug: string) => {
     setEngSlug(slug);
     const e = engines.find((x) => x.slug === slug);
-    if (e) onSelect(e);
+    if (!e) return;
+    const got = onSelect(e) || [];
+    setFilled(got);
   };
+
+  const missing = filled ? fills.filter((f) => !filled.includes(f)) : [];
 
   return (
     <div>
@@ -135,6 +139,15 @@ export function EnginePicker({ onSelect, requires = [], label = "Auto-fill from 
             </Select>
           </div>
         </div>
+      )}
+
+      {open && filled && (
+        <p className="mt-2 text-xs text-muted-foreground">
+          {filled.length
+            ? <>Filled <span className="text-foreground">{filled.join(", ")}</span>.</>
+            : <>No data available for this engine.</>}
+          {missing.length ? <> We don&apos;t have {missing.join(", ")} for this one — enter {missing.length === 1 ? "it" : "them"} below.</> : null}
+        </p>
       )}
     </div>
   );

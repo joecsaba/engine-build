@@ -1,4 +1,5 @@
 import { useState, useEffect } from "react";
+import { EnginePicker } from "@/components/calculators/EnginePicker";
 import { usePrefill } from "@/hooks/usePrefill";
 import { SEOHead } from "@/components/SEOHead";
 import { Input } from "@/components/ui/input";
@@ -105,51 +106,16 @@ export default function DisplacementCalculator() {
           </CardHeader>
           <CardContent className="space-y-4">
             <div className="mb-4 p-3 bg-gray-50 rounded-lg border">
-              <button
-                onClick={() => setShowPicker(!showPicker)}
-                className="text-sm font-medium text-[#E85D04] hover:underline"
-              >
-                {showPicker ? "Hide engine picker \u2191" : "Auto-fill from engine database \u2193"}
-              </button>
-              {showPicker && (
-                <div className="mt-3 grid grid-cols-1 sm:grid-cols-3 gap-3">
-                  <div className="space-y-1">
-                    <Label className="text-xs">Manufacturer</Label>
-                    <Select value={pickerMfr} onValueChange={v => { setPickerMfr(v); setPickerFamily(""); setPickerEngine(""); }}>
-                      <SelectTrigger><SelectValue placeholder="Select..." /></SelectTrigger>
-                      <SelectContent className="max-h-60 overflow-y-auto">
-                        {manufacturers.map(m => (
-                          <SelectItem key={m.slug} value={m.slug}>{m.name}</SelectItem>
-                        ))}
-                      </SelectContent>
-                    </Select>
-                  </div>
-                  <div className="space-y-1">
-                    <Label className="text-xs">Family</Label>
-                    <Select value={pickerFamily} onValueChange={v => { setPickerFamily(v); setPickerEngine(""); }} disabled={!pickerMfr}>
-                      <SelectTrigger><SelectValue placeholder="Select..." /></SelectTrigger>
-                      <SelectContent className="max-h-60 overflow-y-auto">
-                        {filteredFamilies.map(f => (
-                          <SelectItem key={f.family_slug} value={f.family_slug}>{f.family_name}</SelectItem>
-                        ))}
-                      </SelectContent>
-                    </Select>
-                  </div>
-                  <div className="space-y-1">
-                    <Label className="text-xs">Engine</Label>
-                    <Select value={pickerEngine} onValueChange={handlePickerEngine} disabled={!familyData}>
-                      <SelectTrigger><SelectValue placeholder="Select..." /></SelectTrigger>
-                      <SelectContent className="max-h-60 overflow-y-auto">
-                        {familyData?.engines.map(e => (
-                          <SelectItem key={e.engine_id} value={e.engine_id}>
-                            {e.displacement_ci ? `${e.displacement_ci}ci` : ""} {e.year || ""} {e.variants?.[0]?.code || e.engine_id}
-                          </SelectItem>
-                        ))}
-                      </SelectContent>
-                    </Select>
-                  </div>
-                </div>
-              )}
+              <EnginePicker
+                fills={["bore", "stroke", "cylinders"]}
+                onSelect={(e) => {
+                  const got: string[] = [];
+                  if (e.bore_in != null) { setBore(e.bore_in.toFixed(3)); got.push("bore"); }
+                  if (e.stroke_in != null) { setStroke(e.stroke_in.toFixed(3)); got.push("stroke"); }
+                  if (e.num_cylinders != null) { setCylinders(String(e.num_cylinders)); got.push("cylinders"); }
+                  return got;
+                }}
+              />
             </div>
             <div className="space-y-2">
               <Label>Bore (inches)</Label>

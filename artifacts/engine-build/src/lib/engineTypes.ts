@@ -63,8 +63,6 @@ export interface EngineRecord {
   head: {
     intake_valve_dia?: number;
     exhaust_valve_dia?: number;
-    cam_intake_lift?: number;
-    cam_exhaust_lift?: number;
     /** Combustion chamber volume, cc. From the NHRA blueprints. */
     head_cc?: number;
     rocker_ratio?: number;

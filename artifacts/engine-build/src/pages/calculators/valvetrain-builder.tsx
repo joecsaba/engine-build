@@ -1,4 +1,5 @@
 import { useState, useMemo, useCallback } from "react";
+import { EnginePicker } from "@/components/calculators/EnginePicker";
 import { SEOHead } from "@/components/SEOHead";
 import { Input } from "@/components/ui/input";
 import { Label } from "@/components/ui/label";
@@ -1078,51 +1079,17 @@ export default function ValvetrainBuilderCalculator() {
 
         {/* ── Engine Picker from Database ──────────────────── */}
         <div className="p-3 bg-gray-50 rounded-lg border">
-          <button
-            onClick={() => setShowPicker(!showPicker)}
-            className="text-sm font-medium text-[#E85D04] hover:underline"
-          >
-            {showPicker ? "Hide engine picker \u2191" : "Auto-fill from engine database \u2193"}
-          </button>
-          {showPicker && (
-            <div className="mt-3 grid grid-cols-1 sm:grid-cols-3 gap-3">
-              <div className="space-y-1">
-                <Label className="text-xs">Manufacturer</Label>
-                <Select value={pickerMfr} onValueChange={v => { setPickerMfr(v); setPickerFamily(""); setPickerEngine(""); }}>
-                  <SelectTrigger><SelectValue placeholder="Select..." /></SelectTrigger>
-                  <SelectContent className="max-h-60 overflow-y-auto">
-                    {manufacturers.map(m => (
-                      <SelectItem key={m.slug} value={m.slug}>{m.name}</SelectItem>
-                    ))}
-                  </SelectContent>
-                </Select>
-              </div>
-              <div className="space-y-1">
-                <Label className="text-xs">Family</Label>
-                <Select value={pickerFamily} onValueChange={v => { setPickerFamily(v); setPickerEngine(""); }} disabled={!pickerMfr}>
-                  <SelectTrigger><SelectValue placeholder="Select..." /></SelectTrigger>
-                  <SelectContent className="max-h-60 overflow-y-auto">
-                    {filteredFamilies.map(f => (
-                      <SelectItem key={f.family_slug} value={f.family_slug}>{f.family_name}</SelectItem>
-                    ))}
-                  </SelectContent>
-                </Select>
-              </div>
-              <div className="space-y-1">
-                <Label className="text-xs">Engine</Label>
-                <Select value={pickerEngine} onValueChange={handlePickerEngine} disabled={!familyData}>
-                  <SelectTrigger><SelectValue placeholder="Select..." /></SelectTrigger>
-                  <SelectContent className="max-h-60 overflow-y-auto">
-                    {familyData?.engines.map(e => (
-                      <SelectItem key={e.engine_id} value={e.engine_id}>
-                        {e.displacement_ci ? `${e.displacement_ci}ci` : ""} {e.year || ""} {e.variants?.[0]?.code || e.engine_id}
-                      </SelectItem>
-                    ))}
-                  </SelectContent>
-                </Select>
-              </div>
-            </div>
-          )}
+              <EnginePicker
+                fills={["rocker ratio"]}
+                onSelect={(e) => {
+                  const got: string[] = [];
+                  if (e.head?.rocker_ratio != null) { setCustomRatio(String(e.head.rocker_ratio)); got.push("rocker ratio"); }
+                  // NHRA records lifter_type as hydraulic/mechanical only. CamType
+                  // here also needs flat vs roller, which the blueprints do not
+                  // say, so setting it would be a guess on half the answer.
+                  return got;
+                }}
+              />
         </div>
 
         {/* ══════════════════════════════════════════════════════

@@ -134,8 +134,6 @@ export default function EnginePage() {
               <tbody>
                 <Row label="Intake valve diameter" value={rec.head.intake_valve_dia != null ? `${rec.head.intake_valve_dia}"` : null} />
                 <Row label="Exhaust valve diameter" value={rec.head.exhaust_valve_dia != null ? `${rec.head.exhaust_valve_dia}"` : null} />
-                <Row label="Cam lift, intake" value={rec.head.cam_intake_lift != null ? `${rec.head.cam_intake_lift}"` : null} />
-                <Row label="Cam lift, exhaust" value={rec.head.cam_exhaust_lift != null ? `${rec.head.cam_exhaust_lift}"` : null} />
                 <Row label="Chamber volume" value={rec.head.head_cc != null ? `${rec.head.head_cc} cc` : null} />
                 <Row label="Rocker ratio" value={rec.head.rocker_ratio != null ? `${rec.head.rocker_ratio}:1` : null} />
                 <Row label="Lifter type" value={rec.head.lifter_type ? rec.head.lifter_type[0].toUpperCase() + rec.head.lifter_type.slice(1) : null} />

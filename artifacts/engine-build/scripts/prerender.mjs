@@ -457,8 +457,6 @@ function engineEntry(e) {
       ${specRows([
         ["Intake valve diameter", fmtIn(e.head.intake_valve_dia)],
         ["Exhaust valve diameter", fmtIn(e.head.exhaust_valve_dia)],
-        ["Cam lift, intake", fmtIn(e.head.cam_intake_lift)],
-        ["Cam lift, exhaust", fmtIn(e.head.cam_exhaust_lift)],
         ["Chamber volume", e.head.head_cc != null ? `${e.head.head_cc} cc` : null],
         ["Rocker ratio", e.head.rocker_ratio != null ? `${e.head.rocker_ratio}:1` : null],
         ["Lifter type", e.head.lifter_type],
