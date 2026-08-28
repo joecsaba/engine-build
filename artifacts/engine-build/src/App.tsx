@@ -21,6 +21,10 @@ const EnginesIndex = lazy(() => import("@/pages/engines/index"));
 const EngineFamily = lazy(() => import("@/pages/engines/family"));
 const EnginePage = lazy(() => import("@/pages/engines/engine"));
 
+// Camshaft spec database — /cams and below. Same lazy treatment as /engines.
+const CamsIndex = lazy(() => import("@/pages/cams/index"));
+const CamPage = lazy(() => import("@/pages/cams/cam"));
+
 import BuildSheetsIndex from "@/pages/build-sheets/index";
 import BuildPlanner from "@/pages/build-sheets/planner";
 import NewBuildPage from "@/pages/build-sheets/new";
@@ -152,6 +156,11 @@ function Router() {
         <Route path="/engines/:mfr/:family" component={EngineFamily} />
         <Route path="/engines/:mfr" component={EnginesIndex} />
         <Route path="/engines" component={EnginesIndex} />
+
+        {/* Camshaft database. Most specific first, same as /engines. */}
+        <Route path="/cams/:mfr/:part" component={CamPage} />
+        <Route path="/cams/:mfr" component={CamsIndex} />
+        <Route path="/cams" component={CamsIndex} />
         {/* /torque-specs, /specs, /specs/* redirected to /engine-data by CloudFront Function */}
         {/* Build Sheets — guided engine build wizard */}
         <Route path="/build-sheets" component={BuildSheetsIndex} />

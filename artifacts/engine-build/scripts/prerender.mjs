@@ -19,6 +19,7 @@ import { fileURLToPath, pathToFileURL } from "node:url";
 import GUIDES from "../src/data/guides/manifest.mjs";
 import FAQ from "../src/data/faq.mjs";
 import { loadEngineData, writeRuntimeData } from "./engineData.mjs";
+import { loadCams, writeCamRuntime } from "./camData.mjs";
 
 const __dirname = dirname(fileURLToPath(import.meta.url));
 const DIST = resolve(__dirname, "..", "dist", "public");
@@ -396,7 +397,7 @@ function engineEntry(e) {
     { label: e.displayName },
   ];
 
-  const title = `${e.manufacturerName} ${e.displayName} Specs`;
+  const title = `${e.seoTitle ?? `${e.manufacturerName} ${e.displayName}`} Specs`;
   const descBits = [];
   if (e.displacement_ci != null) descBits.push(`${e.displacement_ci} ci${e.displacement_l != null ? ` (${e.displacement_l}L)` : ""}`);
   if (e.num_cylinders != null) descBits.push(`${e.num_cylinders}-cylinder`);
@@ -453,6 +454,8 @@ function engineEntry(e) {
         ["Oil capacity", e.oil_capacity_qt != null ? `${e.oil_capacity_qt} qt` : null],
         ["Coolant capacity", e.coolant_capacity_qt != null ? `${e.coolant_capacity_qt} qt` : null],
       ])}
+      ${e.derived?.length ? `<h2>What these numbers mean</h2>
+      ${specRows(e.derived.map((d) => [d.label, d.value]))}` : ""}
       ${e.head ? `<h2>Cylinder head</h2>
       ${specRows([
         ["Intake valve diameter", fmtIn(e.head.intake_valve_dia)],
@@ -573,6 +576,79 @@ function enginesIndexEntry(manufacturers) {
     priority: 0.9,
     changefreq: "monthly",
   };
+}
+
+
+// ---------------------------------------------------------------------------
+// Camshaft database entries
+// ---------------------------------------------------------------------------
+
+function camEntry(c) {
+  const crumbs = [
+    { label: "Home", href: "/" },
+    { label: "Camshafts", href: "/cams" },
+    { label: c.mfr, href: c.mfrUrl },
+    { label: c.family },
+  ];
+  const title = `${c.mfr} ${c.family} Cam Specs`;
+  const description = `${c.part} — ${c.int050}${c.exh050 != null ? `/${c.exh050}` : ""} duration at 0.050", ${c.liftInt}"/${c.liftExh}" lift, ${c.lsa} LSA. ${c.platformLabel}, ${c.lifterLabel.toLowerCase()}.`.slice(0, 300);
+
+  const seoBlock = `
+      <nav aria-label="Breadcrumb" style="font-size:14px;color:#666;margin:24px 0;">
+        ${breadcrumbHtml(crumbs)}
+      </nav>
+      <h1>${escapeHtml(title)}</h1>
+      <p>${escapeHtml(description)}</p>
+      <h2>Specifications</h2>
+      ${specRows([
+        ["Part number", c.part],
+        ["Duration at 0.050 intake", `${c.int050}&deg;`],
+        ["Duration at 0.050 exhaust", c.exh050 != null ? `${c.exh050}&deg;` : "Not published"],
+        ["Valve lift intake", `${c.liftInt}"`],
+        ["Valve lift exhaust", `${c.liftExh}"`],
+        ["Lobe separation angle", `${c.lsa}&deg;`],
+        ["Published RPM range", c.rpmLo != null && c.rpmHi != null ? `${c.rpmLo}-${c.rpmHi} RPM` : "Not published"],
+        ["Lifter type", c.lifterLabel],
+        ["Platform", c.platformLabel],
+        ["Intended use", c.use],
+      ])}
+      ${c.similar?.length ? `<h2>Similar grinds for ${escapeHtml(c.platformLabel)}</h2>
+      <ul>${c.similar.map((s) => `<li><a href="${s.url}">${escapeHtml(`${s.mfr} ${s.family}`)}</a> — ${s.part}, ${s.int050}&deg; at 0.050", ${s.lsa}&deg; LSA</li>`).join("")}</ul>` : ""}
+      <p><a href="${c.mfrUrl}">&larr; All ${escapeHtml(c.mfr)} camshafts</a></p>`;
+
+  return { path: c.url, title, description, seoBlock, jsonLd: [breadcrumbJsonLd(crumbs)], priority: 0.6, changefreq: "yearly" };
+}
+
+function camMfrEntry(m) {
+  const crumbs = [{ label: "Home", href: "/" }, { label: "Camshafts", href: "/cams" }, { label: m.name }];
+  const title = `${m.name} Camshaft Specs`;
+  const description = `Duration at 0.050", lift, LSA and RPM range for ${m.cams.length} ${m.name} camshaft grinds, with part numbers.`;
+  const rows = m.cams.map((c) => `<tr><td><a href="${c.url}">${escapeHtml(c.family)}</a></td><td>${escapeHtml(c.part)}</td><td>${escapeHtml(c.platformLabel)}</td><td>${c.int050}${c.exh050 != null ? `/${c.exh050}` : ""}</td><td>${c.lsa}</td></tr>`).join("");
+  const seoBlock = `
+      <nav aria-label="Breadcrumb" style="font-size:14px;color:#666;margin:24px 0;">
+        ${breadcrumbHtml(crumbs)}
+      </nav>
+      <h1>${escapeHtml(title)}</h1>
+      <p>${escapeHtml(description)}</p>
+      <table><tr><th>Cam</th><th>Part</th><th>Platform</th><th>Dur @.050</th><th>LSA</th></tr>${rows}</table>
+      <p><a href="/cams">&larr; All camshaft manufacturers</a></p>`;
+  return { path: m.url, title, description, seoBlock, jsonLd: [breadcrumbJsonLd(crumbs)], priority: 0.7, changefreq: "monthly" };
+}
+
+function camsIndexEntry(cams, manufacturers) {
+  const crumbs = [{ label: "Home", href: "/" }, { label: "Camshafts" }];
+  const title = "Camshaft Specs Database";
+  const description = `Duration at 0.050", lift, LSA and RPM range for ${cams.length} camshaft grinds across ${manufacturers.length} manufacturers.`;
+  const seoBlock = `
+      <nav aria-label="Breadcrumb" style="font-size:14px;color:#666;margin:24px 0;">
+        ${breadcrumbHtml(crumbs)}
+      </nav>
+      <h1>${escapeHtml(title)}</h1>
+      <p>${escapeHtml(description)}</p>
+      <ul>
+        ${manufacturers.map((m) => `<li><a href="${m.url}">${escapeHtml(m.name)}</a> — ${m.cams.length} grinds</li>`).join("")}
+      </ul>`;
+  return { path: "/cams", title, description, seoBlock, jsonLd: [breadcrumbJsonLd(crumbs)], priority: 0.9, changefreq: "monthly" };
 }
 
 // ---------------------------------------------------------------------------
@@ -815,6 +891,8 @@ async function main() {
   // pages fetch, from one pass over public/data/engines/.
   const engineData = loadEngineData();
   writeRuntimeData(engineData);
+  const camData = loadCams();
+  writeCamRuntime(camData);
 
   const allEntries = [
     ...STATIC_PAGES.map(staticEntry),
@@ -822,6 +900,9 @@ async function main() {
     ...engineData.manufacturers.map(manufacturerEntry),
     ...engineData.families.map(engineFamilyEntry),
     ...engineData.engines.map(engineEntry),
+    camsIndexEntry(camData.cams, camData.manufacturers),
+    ...camData.manufacturers.map(camMfrEntry),
+    ...camData.cams.map(camEntry),
     ...CATEGORY_PAGES.map(categoryEntry),
     ...(await Promise.all(CALCS.map(calcEntry))),
     guidesIndexEntry(),
@@ -846,6 +927,7 @@ async function main() {
   const indexableCount = allEntries.filter((e) => !e.noindex).length + 1; // +1 for homepage
 
   const withLongContent = allEntries.filter((e) => e.hasLongContent).length;
+  console.log(`prerender: cam DB — ${camData.cams.length} cams, ${camData.manufacturers.length} manufacturers`);
   console.log(`prerender: engine DB — ${engineData.engines.length} engines, ${engineData.families.length} families, ${engineData.manufacturers.length} manufacturers`);
   console.log(`prerender: wrote ${written} HTML files (${CALCS.length} calculators, ${CATEGORY_PAGES.length} categories, ${STATIC_PAGES.length} static, ${GUIDES.length} guides, 1 FAQ)`);
   console.log(`prerender: ${withLongContent} / ${CALCS.length} calculators have long-form content`);

@@ -20,6 +20,10 @@ export interface EngineRecord {
   slug: string;
   engine_id: string;
   displayName: string;
+  /** Concise, searchable <title>. displayName is for lists, this is for search. */
+  seoTitle?: string;
+  /** Facts computed from this engine's own dimensions. */
+  derived?: { label: string; value: string }[];
   familyName: string;
   familySlug: string;
   familyUrl: string;

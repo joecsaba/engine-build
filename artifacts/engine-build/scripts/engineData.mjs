@@ -95,6 +95,67 @@ function calcLinksFor(e) {
   return links;
 }
 
+
+// Facts computed from an engine's own dimensions.
+//
+// These are the numbers a builder derives by hand from bore, stroke and rod
+// length, and each one differs per engine because it is arithmetic on that
+// engine's figures — not a template with the name swapped. They also answer
+// real queries ("is the LS1 oversquare", "LS7 piston speed") that the bare
+// spec table does not.
+//
+// Piston speed is quoted at a fixed 6,000 RPM reference because redline is not
+// in the dataset; stating the RPM makes the figure checkable rather than
+// implying we know where this engine actually revs to.
+function derivedFor(e) {
+  const out = [];
+  const { bore_in: b, stroke_in: s, num_cylinders: c, displacement_ci: d, rod_ratio: rr, compression_ratio: cr } = e;
+
+  if (b != null && s != null) {
+    const ratio = b / s;
+    const character =
+      ratio >= 1.05 ? "oversquare — bore exceeds stroke, which favours higher RPM and larger valves"
+      : ratio <= 0.95 ? "undersquare — stroke exceeds bore, which favours low-end torque"
+      : "square — bore and stroke are within 5%, a balanced compromise";
+    out.push({ label: "Bore/stroke character", value: `${ratio.toFixed(3)} — ${character}` });
+  }
+
+  if (s != null) {
+    // Mean piston speed (ft/min) = 2 * stroke(in) * RPM / 12
+    const fpm = Math.round((2 * s * 6000) / 12);
+    const note = fpm > 4500 ? "above the 4,500 ft/min mark where most production bottom ends are considered at their limit"
+      : fpm > 3500 ? "in the range typical of performance street engines"
+      : "conservative for a street engine";
+    out.push({ label: "Mean piston speed at 6,000 RPM", value: `${fpm.toLocaleString()} ft/min — ${note}` });
+  }
+
+  if (rr != null) {
+    const note = rr >= 1.75 ? "long — less side loading on the cylinder wall, favours high RPM"
+      : rr <= 1.55 ? "short — more side loading and piston dwell at TDC, typical of stroker combinations"
+      : "moderate — the range most production V8s fall in";
+    out.push({ label: "Rod ratio", value: `${rr} — ${note}` });
+  }
+
+  if (d != null && c != null) {
+    out.push({ label: "Displacement per cylinder", value: `${(d / c).toFixed(1)} ci` });
+  }
+
+  if (cr != null) {
+    const note = cr >= 11 ? "high enough that pump premium or better is normally required"
+      : cr >= 9.5 ? "in the range that usually runs on pump premium"
+      : "low by modern standards, generally happy on regular pump fuel";
+    out.push({ label: "Static compression", value: `${cr}:1 — ${note}` });
+  }
+
+  return out;
+}
+
+// Manufacturer display name, resolved the same way in both the record build and
+// the title build.
+function mfrNameEarly(f, mfrByslug, mfrSeg) {
+  return f.manufacturer_name || mfrByslug.get(f.manufacturer_slug)?.name || titleize(mfrSeg);
+}
+
 /**
  * Read the whole dataset and return { manufacturers, families, engines }.
  * Every entry carries the `url` it will be published at.
@@ -223,6 +284,29 @@ export function loadEngineData() {
           : `${famNameEarly} · ${rep.bore_in?.toFixed(3)}" × ${rep.stroke_in?.toFixed(3)}"` +
             (rep.compression_ratio != null ? ` · ${rep.compression_ratio}:1` : "");
       const famName = famNameEarly;
+
+      // The <title> is a different job from the on-page heading. displayName is
+      // built to identify an engine unambiguously in a list; used verbatim in a
+      // title it produced things like
+      //   "Chevrolet Chevrolet 350ci · 4.065" × 3.370" · 12.5:1 Specs"
+      // — the manufacturer twice, 60-plus characters of geometry punctuation,
+      // and nothing a person would ever type into a search box. That shape was
+      // on 444 of 1,472 pages.
+      //
+      // seoTitle instead leads with what someone searches: the engine code if
+      // it has one, otherwise the family, then the single spec that separates
+      // this record from its siblings.
+      const seoTitle = (() => {
+        const startsWithMfr = famNameEarly.toLowerCase().startsWith(mfrNameEarly(f, mfrByslug, mfrSeg).toLowerCase());
+        const mfr = mfrNameEarly(f, mfrByslug, mfrSeg);
+        if (sharedCode) return `${mfr} ${sharedCode}`;
+        if (group.length === 1) return `${mfr} ${titleize(slug)}`;
+        // Cluster: lead with the family, then the most distinguishing figure.
+        const base = startsWithMfr ? famNameEarly : `${mfr} ${famNameEarly}`;
+        if (rep.compression_ratio != null) return `${base} ${rep.compression_ratio}:1`;
+        if (rep.bore_in != null) return `${base} ${rep.bore_in.toFixed(3)}" bore`;
+        return base;
+      })();
       const mfrName = f.manufacturer_name || mfrByslug.get(f.manufacturer_slug)?.name || titleize(mfrSeg);
 
       famEngines.push({
@@ -230,6 +314,7 @@ export function loadEngineData() {
         slug,
         engine_id: rep.engine_id,
         displayName,
+        seoTitle,
         familyName: famName,
         familySlug: f.family_slug,
         familyUrl: famUrl,
@@ -302,6 +387,7 @@ export function loadEngineData() {
         variantCount: group.length,
       });
       famEngines[famEngines.length - 1].calcLinks = calcLinksFor(famEngines[famEngines.length - 1]);
+      famEngines[famEngines.length - 1].derived = derivedFor(famEngines[famEngines.length - 1]);
     }
 
     if (!famEngines.length) continue;
@@ -458,6 +544,8 @@ export function loadEngineData() {
           engine_id: rep.engine_id,
           displayName: `${g.mfrName} ${Math.round(rep.displacement_ci)}ci · ${rep.bore_in}" × ${rep.stroke_in}"` +
                        (rep.compression_ratio != null ? ` · ${rep.compression_ratio}:1` : ""),
+          seoTitle: `${g.mfrName} ${Math.round(rep.displacement_ci)}ci` +
+                    (rep.compression_ratio != null ? ` ${rep.compression_ratio}:1` : ` ${rep.bore_in}" bore`),
           familyName: fam.familyName,
           familySlug: fam.familySlug,
           familyUrl: famUrl,
@@ -494,6 +582,7 @@ export function loadEngineData() {
           sources: ["NHRA blueprints"],
         };
         eng.calcLinks = calcLinksFor(eng);
+        eng.derived = derivedFor(eng);
         fam.engines.push(eng);
         outEngines.push(eng);
         nhraStats.added++;

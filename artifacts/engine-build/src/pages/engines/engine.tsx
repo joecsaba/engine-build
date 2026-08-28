@@ -68,7 +68,7 @@ export default function EnginePage() {
     );
   }
 
-  const title = `${rec.manufacturerName} ${rec.displayName} Specs`;
+  const title = `${rec.seoTitle ?? `${rec.manufacturerName} ${rec.displayName}`} Specs`;
   const description = specDescription(rec);
   const calcLinks = rec.calcLinks ?? [];
 
@@ -123,6 +123,26 @@ export default function EnginePage() {
         </Card>
       )}
 
+
+      {rec.derived?.length ? (
+        <Card className="mt-6">
+          <CardHeader className="pb-3">
+            <CardTitle className="text-base">What these numbers mean</CardTitle>
+          </CardHeader>
+          <CardContent>
+            <table className="w-full text-sm">
+              <tbody>
+                {rec.derived.map((d) => (
+                  <tr key={d.label} className="border-b last:border-0">
+                    <td className="py-2 pr-4 text-muted-foreground whitespace-nowrap align-top">{d.label}</td>
+                    <td className="py-2">{d.value}</td>
+                  </tr>
+                ))}
+              </tbody>
+            </table>
+          </CardContent>
+        </Card>
+      ) : null}
 
       {rec.head && (
         <Card className="mt-6">
