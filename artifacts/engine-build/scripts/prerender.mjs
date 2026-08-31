@@ -128,8 +128,8 @@ const CATEGORIES = {
 
 const CALCS = [
   // ─── Short Block ────────────────────────────────────────────────────────
-  { slug: "displacement",                  category: "short-block",     title: "Engine Displacement Calculator — Bore × Stroke to Cubic Inches, CC & Liters", description: "Free engine displacement calculator with 30+ engine specs table (SBC, LS, BBC, Ford, Mopar, Coyote, Cummins), 20 popular stroker combos with displacement gain, and overbore effect chart. Cubic inches ↔ liters ↔ cc conversions." },
-  { slug: "compression-ratio",             category: "short-block",     title: "Compression Ratio Calculator — Static & Dynamic CR with Octane Chart", description: "Free engine compression ratio calculator. Static + Dynamic (DCR) with three IVC methods, cranking pressure, and reverse-solve. Includes octane requirement chart, 22 popular engines with stock CR, head gasket thickness effect, and aluminum vs iron head adjustment." },
+  { slug: "displacement",                  category: "short-block",     title: "Engine Displacement Calculator — Bore × Stroke", description: "Free engine displacement calculator with 30+ engine specs table (SBC, LS, BBC, Ford, Mopar, Coyote, Cummins), 20 popular stroker combos with displacement gain, and overbore effect chart. Cubic inches ↔ liters ↔ cc conversions." },
+  { slug: "compression-ratio",             category: "short-block",     title: "Compression Ratio Calculator — Static & Dynamic", description: "Free engine compression ratio calculator. Static + Dynamic (DCR) with three IVC methods, cranking pressure, and reverse-solve. Includes octane requirement chart, 22 popular engines with stock CR, head gasket thickness effect, and aluminum vs iron head adjustment." },
   { slug: "ring-gap",                      category: "short-block",     title: "Piston Ring Gap Calculator (NA & Boost)",                     description: "Ring end gap for your exact bore, by application — NA, turbo, supercharged, nitrous or diesel. Per-ring targets in inches or mm, with material warnings." },
   { slug: "piston-speed",                  category: "short-block",     title: "Piston Speed Calculator",                        description: "Mean and peak piston speed in FPM with color-coded safety zones. Reference table of common engine redlines." },
   { slug: "quench-deck-height",            category: "short-block",     title: "Quench & Deck Height Calculator — Squish",                description: "Piston-to-deck clearance, quench (squish) distance and compression ratio in one pass. Compare gasket thicknesses side by side and see all three update live." },
@@ -140,7 +140,7 @@ const CALCS = [
   { slug: "cc-ci-converter",               category: "short-block",     title: "CC to Cubic Inch Converter",                     description: "Convert chamber volumes, piston dome/dish CCs, and displacement between cubic centimeters, cubic inches, liters, and fluid ounces." },
 
   // ─── Cam & Valvetrain ──────────────────────────────────────────────────
-  { slug: "cam-selector",                  category: "cam-valvetrain",  title: "Camshaft Selector — What Cam Do I Need? Duration, LSA & Lift Calculator", description: "Free camshaft selector: enter your engine, compression, transmission, and goal and get recommended duration @ 0.050\", lobe separation angle (LSA), and valve lift — plus real matching cams from COMP, Brian Tooley Racing, Texas Speed, Lunati, Crane, Howards, Edelbrock & Summit, estimated powerband, and idle character. Advanced mode adds ported head flow, dynamic compression, and target-RPM inputs. Uses David Vizard's LSA method." },
+  { slug: "cam-selector",                  category: "cam-valvetrain",  title: "Camshaft Selector — What Cam Do I Need?", description: "Free camshaft selector: enter your engine, compression, transmission, and goal and get recommended duration @ 0.050\", lobe separation angle (LSA), and valve lift — plus real matching cams from COMP, Brian Tooley Racing, Texas Speed, Lunati, Crane, Howards, Edelbrock & Summit, estimated powerband, and idle character. Advanced mode adds ported head flow, dynamic compression, and target-RPM inputs. Uses David Vizard's LSA method." },
   { slug: "cam-duration",                  category: "cam-valvetrain",  title: "Advanced Cam Timing Calculator",                 description: "Full cam analysis — valve events, overlap, recommended LSA, dynamic compression ratio, and rocker lift table." },
   { slug: "cam-degreeing",                 category: "cam-valvetrain",  title: "Cam Degreeing Calculator",                       description: "Step-by-step cam degreeing guide with intake centerline verification, advance/retard calculation, and dial indicator math." },
   { slug: "valvetrain-builder",            category: "cam-valvetrain",  title: "Valvetrain RPM Builder",                         description: "Match cam, rockers, springs, and target RPM as a complete system. Valve float estimation, RPM safety graph, and cascade warnings." },
@@ -152,7 +152,7 @@ const CALCS = [
   { slug: "head-milling",                  category: "cam-valvetrain",  title: "Head Milling Calculator",                        description: "Calculate chamber volume change, compression ratio shift, and intake manifold alignment when milling cylinder heads." },
 
   // ─── Power & Fuel ──────────────────────────────────────────────────────
-  { slug: "hp-torque",                     category: "power-fuel",      title: "HP to Torque Calculator — Horsepower ↔ Torque at Any RPM (lb-ft, Nm, kW)", description: "Free bidirectional HP↔Torque calculator with the 5252 RPM formula explained. Includes conversion tables (100–1500 HP), stock engine peak HP/torque for 24 popular V8s / imports / diesels, HP-per-liter benchmarks, and unit conversions between lb-ft, Nm, kg·m, HP, PS, and kW." },
+  { slug: "hp-torque",                     category: "power-fuel",      title: "HP to Torque Calculator — Both Directions", description: "Free bidirectional HP↔Torque calculator with the 5252 RPM formula explained. Includes conversion tables (100–1500 HP), stock engine peak HP/torque for 24 popular V8s / imports / diesels, HP-per-liter benchmarks, and unit conversions between lb-ft, Nm, kg·m, HP, PS, and kW." },
   { slug: "hp-estimator",                  category: "power-fuel",      title: "HP and Torque Estimator",                        description: "Estimate horsepower and torque for your build. Pick your engine, heads, cam, intake, exhaust, and compression for a data-backed estimate." },
   { slug: "afr-lambda",                    category: "power-fuel",      title: "Lambda to AFR Converter — Both Directions",                         description: "Convert lambda to AFR or AFR to lambda for pump gas, E85, E98, methanol, propane and CNG. Instant result on both the gas scale and true AFR." },
   { slug: "carb-cfm-sizing",               category: "power-fuel",      title: "Carburetor CFM Calculator",                      description: "Calculate the right carburetor size for your engine. Real carb sizes from Holley and Edelbrock with overcarburetion warnings." },
@@ -168,10 +168,10 @@ const CALCS = [
   { slug: "gear-ratio",                    category: "drivetrain-shop", title: "Gear Ratio & Final Drive Calculator",            description: "Calculate RPM at speed for any axle ratio, tire size, and transmission. Compare gear ratios side by side." },
   { slug: "torque-extension",              category: "drivetrain-shop", title: "Torque Wrench Extension Calculator",             description: "Corrected torque wrench setting for crow's foot adapters, offset extensions, and wobble sockets." },
   { slug: "mm-inch-converter",             category: "drivetrain-shop", title: "MM to Inch Converter",                           description: "High-precision metric to imperial conversion for engine builders. Includes machinist reference tables and fractional inch equivalents." },
-  { slug: "wrench-size-converter",         category: "drivetrain-shop", title: "Wrench Size Converter — SAE to Metric + Measure with Calipers", description: "Convert SAE wrench sizes to metric and back, or measure the bolt head with calipers / tape and get the right wrench from either set. Exact gap and torque-safe interchange tiers." },
+  { slug: "wrench-size-converter",         category: "drivetrain-shop", title: "Wrench Size Converter — SAE to Metric", description: "Convert SAE wrench sizes to metric and back, or measure the bolt head with calipers / tape and get the right wrench from either set. Exact gap and torque-safe interchange tiers." },
   { slug: "density-altitude",              category: "drivetrain-shop", title: "Density Altitude / HP Correction Calculator",    description: "Calculate density altitude, relative HP, and dyno correction factors for SAE J1349, J607, and DIN 70020. Dew point or RH input." },
   { slug: "torque-converter-stall",        category: "drivetrain-shop", title: "Torque Converter Stall Speed Calculator",        description: "Find the right converter stall speed for your build. Recommended stall range, converter diameter, launch analysis, and cruise RPM." },
-  { slug: "decimal-fraction-inch",         category: "drivetrain-shop", title: "Decimal to Fraction Inch Converter — Full 1/64\" Chart + Tap Drill & Wrench Sizes", description: "Free decimal ↔ fraction inch converter with full 1/64\" reference chart (0 to 1\"), tap drill decimal equivalents (75% thread), SAE wrench sizes with metric equivalents, engine-builder thousandths reference (bearing clearance, ring gap, quench), and 12-question FAQ." },
+  { slug: "decimal-fraction-inch",         category: "drivetrain-shop", title: "Decimal to Fraction Inch Converter + Chart", description: "Free decimal ↔ fraction inch converter with full 1/64\" reference chart (0 to 1\"), tap drill decimal equivalents (75% thread), SAE wrench sizes with metric equivalents, engine-builder thousandths reference (bearing clearance, ring gap, quench), and 12-question FAQ." },
   { slug: "tap-drill-lookup",              category: "drivetrain-shop", title: "Tap Drill Size Lookup",                          description: "Pick a tap, get the drill. Imperial UNC/UNF and metric coarse/fine with 75% and 50% thread engagement sizes for any common tap." },
   { slug: "thread-pitch-converter",        category: "drivetrain-shop", title: "Thread Pitch Converter — TPI to Metric",         description: "Identify a thread when you have only TPI or only metric pitch. TPI × pitch (mm) = 25.4. Common UNC/UNF and metric pitches in quick reference." },
   { slug: "torque-units-converter",        category: "drivetrain-shop", title: "Torque Units Converter (ft-lb / Nm / in-lb)",    description: "Convert between ft-lb, Nm, in-lb, and kgf·m. Common engine torque references included for spec lookup." },
@@ -492,7 +492,13 @@ function engineFamilyEntry(fam) {
     { label: fam.manufacturerName, href: fam.manufacturerUrl },
     { label: fam.familyName },
   ];
-  const title = `${fam.manufacturerName} ${fam.familyName} Engine Specs`;
+  // NHRA-created families are named "<Manufacturer> <displacement>ci", so
+  // prepending the manufacturer again produced "American Motors American
+  // Motors 195ci Engine Specs".
+  const famTitleBase = fam.familyName.toLowerCase().startsWith(fam.manufacturerName.toLowerCase())
+    ? fam.familyName
+    : `${fam.manufacturerName} ${fam.familyName}`;
+  const title = `${famTitleBase} Engine Specs`;
   const description = `Bore, stroke, displacement and compression for all ${fam.engines.length} ${fam.manufacturerName} ${fam.familyName} engines. Compare variants side by side.`.slice(0, 300);
 
   const rows = fam.engines
@@ -590,7 +596,22 @@ function camEntry(c) {
     { label: c.mfr, href: c.mfrUrl },
     { label: c.family },
   ];
-  const title = `${c.mfr} ${c.family} Cam Specs`;
+  // Budget: 65 chars total, and " | Engine-build.com" costs 19. Drop the word
+  // "Cam" first, then trim the family — never the manufacturer or part, which
+  // are what people search.
+  const title = (() => {
+    const full = `${c.mfr} ${c.family} Cam Specs`;
+    if (full.length <= 46) return full;
+    const short = `${c.mfr} ${c.family} Specs`;
+    if (short.length <= 46) return short;
+    // Trim at a boundary, never mid-token: drop a trailing parenthetical first
+    // ("Stage 2 NA V2 (LS1/LS2)" -> "Stage 2 NA V2"), then whole words.
+    let fam = c.family.replace(/\s*\([^)]*\)\s*$/, "").trim();
+    if (`${c.mfr} ${fam} Specs`.length <= 46) return `${c.mfr} ${fam} Specs`;
+    const words = fam.split(/\s+/);
+    while (words.length > 1 && `${c.mfr} ${words.join(" ")} Specs`.length > 46) words.pop();
+    return `${c.mfr} ${words.join(" ")} Specs`;
+  })();
   const description = `${c.part} — ${c.int050}${c.exh050 != null ? `/${c.exh050}` : ""} duration at 0.050", ${c.liftInt}"/${c.liftExh}" lift, ${c.lsa} LSA. ${c.platformLabel}, ${c.lifterLabel.toLowerCase()}.`.slice(0, 300);
 
   const seoBlock = `

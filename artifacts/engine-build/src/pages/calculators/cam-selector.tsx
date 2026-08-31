@@ -371,7 +371,7 @@ export default function CamSelectorCalculator() {
   return (
     <div className="container mx-auto py-8 px-4 max-w-7xl">
       <SEOHead
-        title="Camshaft Selector — What Cam Do I Need? Duration, LSA & Lift Calculator"
+        title="Camshaft Selector — What Cam Do I Need?"
         description="Free camshaft selector: enter your engine, compression, transmission, and goal and get recommended duration @ 0.050&quot;, lobe separation angle (LSA), and valve lift — plus real matching cams from COMP, Brian Tooley Racing, Texas Speed, Lunati, Crane, Howards, Edelbrock &amp; Summit. Advanced mode adds ported head flow, dynamic compression, and target-RPM inputs. Uses David Vizard's LSA method."
         canonical="/calculators/cam-selector"
         keywords="cam selector, camshaft selector, what cam do i need, camshaft calculator, cam duration calculator, LSA calculator, lobe separation angle, how to choose a camshaft, cam recommendation, camshaft finder, cam selection calculator, street cam, street strip cam, duration at 0.050"

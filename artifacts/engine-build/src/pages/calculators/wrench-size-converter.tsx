@@ -338,7 +338,7 @@ export default function WrenchSizeConverter() {
   return (
     <div className="container mx-auto py-8 px-4 max-w-5xl">
       <SEOHead
-        title="Wrench Size Converter — SAE ↔ Metric + Measure with Calipers"
+        title="Wrench Size Converter — SAE to Metric"
         description="Convert SAE (inch) wrench sizes to metric (mm) and back, or measure the bolt head across the flats with calipers / tape and get the right wrench from either set. Shows the gap in mm and thousandths and whether the swap is safe under torque."
         canonical="/calculators/wrench-size-converter"
         keywords="wrench size converter, SAE to metric wrench, metric to SAE wrench, measure bolt head wrench size, identify wrench size with calipers, socket size conversion, wrench equivalent chart, 5/8 to 16mm, 3/4 to 19mm"

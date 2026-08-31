@@ -66,7 +66,7 @@ export default function CompressionRatioCalculator() {
   return (
     <div className="container mx-auto py-8 px-4 max-w-5xl">
       <SEOHead
-        title="Compression Ratio Calculator"
+        title="Compression Ratio Calculator — Static & Dynamic"
         description="Calculate static and dynamic compression ratio with octane recommendations. Enter bore, stroke, chamber volume, and piston dish. Free engine builder tool."
         canonical="/calculators/compression-ratio"
         keywords="compression ratio calculator, static compression ratio, dynamic compression ratio, engine compression calculator, chamber volume calculator"
