@@ -20,6 +20,7 @@ import GUIDES from "../src/data/guides/manifest.mjs";
 import FAQ from "../src/data/faq.mjs";
 import { loadEngineData, writeRuntimeData } from "./engineData.mjs";
 import { loadCams, writeCamRuntime } from "./camData.mjs";
+import CAM_GUIDE from "../src/data/pageContent/cam-guide.mjs";
 
 const __dirname = dirname(fileURLToPath(import.meta.url));
 const DIST = resolve(__dirname, "..", "dist", "public");
@@ -345,16 +346,50 @@ function categoryEntry(cp) {
   };
 }
 
+// Extra prerendered body for pages whose substance is client-side or, in the
+// case of /build-advisor, inside an iframe. Both are top-level URLs, which is
+// what Bing has crawled so far, and both were shipping under 40 words.
+const STATIC_EXTRA = {
+  "/cam-guide": () => `
+      <p>${escapeHtml(CAM_GUIDE.intro)}</p>
+      <h2>Understanding cam specs</h2>
+      <dl>${CAM_GUIDE.terms.map((t) => `<dt><strong>${escapeHtml(t.term)}</strong></dt><dd>${escapeHtml(t.def)}</dd>`).join("")}</dl>
+      <h2>Tools on this page</h2>
+      ${CAM_GUIDE.tools.map((t) => `<h3>${escapeHtml(t.heading)}</h3><p>${escapeHtml(t.body)}</p>`).join("")}
+      <p><a href="/calculators/cam-selector">Camshaft Selector</a> matches your combination against a database of real manufacturer grinds. <a href="/cams">Browse camshaft specs by manufacturer</a>.</p>`,
+
+  // The advisor itself is an iframe, so none of its content is attributed to
+  // this URL. Without a block here the page is a title and one sentence.
+  "/build-advisor": () => `
+      <p>Set a horsepower target, pick a platform, and adjust heads, cam, intake, compression and induction with live sliders to see what the combination is estimated to make. The advisor flags combinations that do not hold together — a cam that needs more compression than you have, a head that is the limiting factor, an intake mismatched to the RPM range.</p>
+      <h2>What it estimates</h2>
+      <ul>
+        <li>Peak horsepower and torque for the combination, with the RPM they arrive at</li>
+        <li>Whether each component is a limiter or has headroom left</li>
+        <li>Static and dynamic compression, and the octane that implies</li>
+        <li>Warnings where two choices contradict each other</li>
+      </ul>
+      <h2>Related tools</h2>
+      <ul>
+        <li><a href="/calculators/hp-estimator">HP and torque estimator</a> — power from component specs</li>
+        <li><a href="/calculators/compression-ratio">Compression ratio calculator</a> — static and dynamic CR</li>
+        <li><a href="/calculators/cam-selector">Camshaft selector</a> — match a grind to the build</li>
+        <li><a href="/calculators/head-flow">Cylinder head flow calculator</a> — CFM to horsepower</li>
+        <li><a href="/engines">Engine specs database</a> — bore, stroke and compression for 1,472 engines</li>
+      </ul>`,
+};
+
 function staticEntry(sp) {
   const crumbs = sp.path === "/"
     ? [{ label: "Home" }]
     : [{ label: "Home", href: "/" }, { label: sp.title }];
+  const extra = STATIC_EXTRA[sp.path]?.() ?? "";
   const seoBlock = `
       <nav aria-label="Breadcrumb" style="font-size:14px;color:#666;margin:24px 0;">
         ${breadcrumbHtml(crumbs)}
       </nav>
       <h1>${escapeHtml(sp.title)}</h1>
-      <p>${escapeHtml(sp.description)}</p>`;
+      <p>${escapeHtml(sp.description)}</p>${extra}`;
   return {
     path: sp.path,
     title: sp.title,

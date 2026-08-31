@@ -18,3 +18,24 @@ declare module "@/data/guideContent/*.mjs" {
   const content: GuideContentData;
   export default content;
 }
+
+// Shared content for individual pages whose substance would otherwise live only
+// in a component literal — see src/data/pageContent/.
+declare module "@/data/pageContent/cam-guide.mjs" {
+  export interface CamSpecTerm {
+    term: string;
+    def: string;
+  }
+  export interface CamGuideTool {
+    heading: string;
+    body: string;
+  }
+  export const CAM_SPEC_TERMS: CamSpecTerm[];
+  export const CAM_GUIDE_TOOLS: CamGuideTool[];
+  const content: {
+    intro: string;
+    terms: CamSpecTerm[];
+    tools: CamGuideTool[];
+  };
+  export default content;
+}

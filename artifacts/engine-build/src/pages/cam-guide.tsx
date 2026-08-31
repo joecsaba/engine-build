@@ -1,4 +1,5 @@
 import { useState, useEffect } from "react";
+import { CAM_SPEC_TERMS } from "@/data/pageContent/cam-guide.mjs";
 import { Link, useSearch } from "wouter";
 import { SEOHead } from "@/components/SEOHead";
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
@@ -395,14 +396,7 @@ export default function CamGuide() {
       <section className="mb-12">
         <h2 className="text-2xl font-bold mb-6 pb-2 border-b">Section 1: Understanding Cam Specs</h2>
         <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
-          {[
-            { term: "Duration at 0.050\"", def: "The industry-standard measurement of how many crankshaft degrees the valve is open more than 0.050\" lift. This is the only number you can reliably compare between cam brands." },
-            { term: "Advertised Duration", def: "Duration measured at a low lift point (varies by manufacturer — 0.004\" to 0.006\"). NOT comparable between brands. Used for marketing." },
-            { term: "Lift", def: "Maximum distance the valve opens, in inches. Determined by: lobe lift × rocker ratio. More lift generally means more airflow potential, but valve springs, geometry, and head port size all limit the useful lift." },
-            { term: "Lobe Separation Angle (LSA)", def: "The angle between the intake and exhaust lobe centerlines, measured in camshaft degrees. Affects overlap, idle quality, and power band. Narrow LSA = more overlap, peakier power, rough idle. Wide LSA = less overlap, smoother idle, better vacuum, broader power." },
-            { term: "Intake Centerline (ICL)", def: "The crankshaft degree position at which the intake lobe reaches maximum lift (after TDC). Installing a cam advanced or retarded from this spec shifts the power band up or down in RPM." },
-            { term: "Overlap", def: "The period in crankshaft degrees when both intake AND exhaust valves are simultaneously open. More overlap = more power potential at high RPM, worse idle, worse low-end torque, lower vacuum. The cam that sounds like a race car at idle has lots of overlap." },
-          ].map((item, i) => (
+          {CAM_SPEC_TERMS.map((item, i) => (
             <div key={i} className="p-4 rounded-lg border bg-card">
               <p className="font-bold mb-1">{item.term}</p>
               <p className="text-sm text-muted-foreground">{item.def}</p>
