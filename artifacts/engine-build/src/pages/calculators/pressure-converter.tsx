@@ -91,7 +91,7 @@ export default function PressureConverter() {
   return (
     <div className="container mx-auto py-8 px-4 max-w-5xl">
       <SEOHead
-        title="Pressure Converter — PSI · Bar · kPa"
+        title="Pressure Converter — PSI, Bar, kPa, atm"
         description="Convert between psi, bar, kPa, atmospheres, and inches of mercury. For boost gauges, oil pressure, fuel pressure, and atmospheric reference."
         canonical="/calculators/pressure-converter"
         keywords="psi to bar, psi to kPa, boost pressure converter, bar to psi, kPa converter, inHg vacuum, oil pressure conversion"

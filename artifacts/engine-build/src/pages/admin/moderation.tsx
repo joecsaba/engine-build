@@ -386,7 +386,11 @@ export default function ModerationPage() {
 
   return (
     <div>
-      <SEOHead title="Admin Moderation" description="Admin moderation page for shop submissions and edits." />
+      <SEOHead
+        title="Admin Moderation"
+        description="Admin moderation page for shop submissions and edits."
+        noindex
+      />
       <PageHeader
         eyebrow="Admin"
         title="Moderation Dashboard"

@@ -130,7 +130,7 @@ const CATEGORIES = {
 const CALCS = [
   // ─── Short Block ────────────────────────────────────────────────────────
   { slug: "displacement",                  category: "short-block",     title: "Engine Displacement Calculator — Bore × Stroke", description: "Free engine displacement calculator with 30+ engine specs table (SBC, LS, BBC, Ford, Mopar, Coyote, Cummins), 20 popular stroker combos with displacement gain, and overbore effect chart. Cubic inches ↔ liters ↔ cc conversions." },
-  { slug: "compression-ratio",             category: "short-block",     title: "Compression Ratio Calculator — Static & Dynamic", description: "Free engine compression ratio calculator. Static + Dynamic (DCR) with three IVC methods, cranking pressure, and reverse-solve. Includes octane requirement chart, 22 popular engines with stock CR, head gasket thickness effect, and aluminum vs iron head adjustment." },
+  { slug: "compression-ratio",             category: "short-block",     title: "Compression Ratio Calculator: Static + Dynamic", description: "Free engine compression ratio calculator. Static + Dynamic (DCR) with three IVC methods, cranking pressure, and reverse-solve. Includes octane requirement chart, 22 popular engines with stock CR, head gasket thickness effect, and aluminum vs iron head adjustment." },
   { slug: "ring-gap",                      category: "short-block",     title: "Piston Ring Gap Calculator (NA & Boost)",                     description: "Ring end gap for your exact bore, by application — NA, turbo, supercharged, nitrous or diesel. Per-ring targets in inches or mm, with material warnings." },
   { slug: "piston-speed",                  category: "short-block",     title: "Piston Speed Calculator",                        description: "Mean and peak piston speed in FPM with color-coded safety zones. Reference table of common engine redlines." },
   { slug: "quench-deck-height",            category: "short-block",     title: "Quench & Deck Height Calculator — Squish",                description: "Piston-to-deck clearance, quench (squish) distance and compression ratio in one pass. Compare gasket thicknesses side by side and see all three update live." },
@@ -162,7 +162,7 @@ const CALCS = [
   { slug: "boost-compression",             category: "power-fuel",      title: "Boost / Effective Compression Ratio Calculator", description: "Effective compression ratio under boost. Altitude correction, fuel-specific safety limits, and reverse-solve for max safe boost or CR." },
   { slug: "octane-mix",                    category: "power-fuel",      title: "Octane Mix Calculator — Blend 110 with 93",                          description: "Blend two fuels to hit a target octane — race gas with pump, or any E85 ratio. Shows mix percentage, resulting stoich AFR, BTU content and MPG impact." },
   { slug: "ignition-timing-curve",         category: "power-fuel",      title: "Ignition Timing Advance Curve Calculator",       description: "Visualize your ignition advance curve. Input initial, mechanical, and vacuum advance to see total timing vs RPM at WOT, part throttle, cruise." },
-  { slug: "pressure-converter",            category: "power-fuel",      title: "Pressure Converter (PSI / Bar / kPa / atm / inHg)", description: "Convert between PSI, bar, kPa, atm, and inHg — for boost gauges, oil pressure, fuel rail, and vacuum measurements." },
+  { slug: "pressure-converter",            category: "power-fuel",      title: "Pressure Converter — PSI, Bar, kPa, atm", description: "Convert between PSI, bar, kPa, atm, and inHg — for boost gauges, oil pressure, fuel rail, and vacuum measurements." },
   { slug: "an-fitting-size",               category: "power-fuel",      title: "AN Fitting Size Chart",                          description: "AN / JIC fitting dash sizes with tube OD, JIC 37° flare thread, and ORB thread. For fuel system, oil cooler, and turbo plumbing." },
 
   // ─── Drivetrain & Shop ─────────────────────────────────────────────────
@@ -212,10 +212,10 @@ const STATIC_PAGES = [
   // page stays reachable by direct link but out of the index until fixed.
   { path: "/torque-specs",      title: "Torque Specs Quick Lookup",                                  description: "Head bolt, main bolt, and rod bolt torque sequences for popular engine platforms. Step-by-step with ARP upgrade specs.",                              noindex: true },
   { path: "/shop-tools/directory", title: "Machine Shop Directory",                                  description: "Find engine machine shops near you. Searchable by service (boring, decking, balancing) and radius from your zip code.",                              priority: 0.8 },
-  { path: "/contact",           title: "Contact",                                                    description: "Send feature requests, calculator suggestions, or feedback. We read every message.",                                                                    priority: 0.5 },
-  { path: "/privacy",           title: "Privacy Policy",                                             description: "How Engine-build.com handles your data. We don't sell your information.",                                                                              priority: 0.3 },
-  { path: "/terms",             title: "Terms of Service",                                           description: "Terms of service for using Engine-build.com calculators and tools.",                                                                                   priority: 0.3 },
-  { path: "/sign-in",           title: "Sign In",                                                    description: "Sign in to sync favorites, saved presets, and engine builds across every device.",                                                                     priority: 0.5 },
+  { path: "/contact",           title: "Contact",                                                    description: "Send feature requests, calculator suggestions, corrections or feedback. We read every message, and most of the calculators on this site started as a request from someone building an engine.",                                                                    priority: 0.5 },
+  { path: "/privacy",           title: "Privacy Policy",                                             description: "How Engine-build.com handles your data. We use Google Analytics only, we don't sell your information, and there is currently no advertising on the site. Full detail on cookies and your rights.",                                                                              priority: 0.3 },
+  { path: "/terms",             title: "Terms of Service",                                           description: "Terms of service for using Engine-build.com calculators, engine specs and reference data. Covers acceptable use, accuracy disclaimers and why you should always verify against a factory manual.",                                                                                   priority: 0.3 },
+  { path: "/sign-in",         noindex: true,           title: "Sign In",                                                    description: "Sign in to sync favorites, saved presets, and engine builds across every device.",                                                                     priority: 0.5 },
   { path: "/sign-up",           title: "Create a Free Account",                                      description: "Create a free Engine-build.com account to sync favorites, calculator presets, and build sheets across phone, tablet, and shop laptop.",               priority: 0.6 },
   { path: "/me",                title: "Dashboard",                                                  description: "Your engine-building hub: favorites, recents, saved presets, builds, and defaults.",                                                                   noindex: true },
   { path: "/settings",          title: "Settings",                                                   description: "Manage your display name, default units, and default engine platform.",                                                                                noindex: true },
@@ -224,7 +224,7 @@ const STATIC_PAGES = [
 // Category landing pages
 const CATEGORY_PAGES = [
   { path: "/calculators/short-block",     category: "short-block",     title: "Short Block & Bottom End Calculators",   description: "Displacement, compression, ring gap, bearings, and rotating assembly math for your short block build." },
-  { path: "/calculators/cam-valvetrain",  category: "cam-valvetrain",  title: "Cam, Valvetrain & Cylinder Head Calculators", description: "Cam timing, valve springs, pushrod length, P2V clearance, degreeing, head flow, and head milling." },
+  { path: "/calculators/cam-valvetrain",  category: "cam-valvetrain",  title: "Cam, Valvetrain & Cylinder Head Calculators", description: "Cam timing, valve springs, pushrod length, piston-to-valve clearance, cam degreeing, cylinder head flow and head milling — the calculators for everything above the deck, free and with no signup." },
   { path: "/calculators/power-fuel",      category: "power-fuel",      title: "Power, Fuel & Forced Induction Calculators", description: "HP estimation, AFR/lambda, carburetor and injector sizing, turbo matching, and boost analysis." },
   { path: "/calculators/drivetrain-shop", category: "drivetrain-shop", title: "Drivetrain & Shop Tool Calculators",     description: "Gear ratio, torque wrench correction, precision conversion, threading, and shop reference tools." },
   { path: "/calculators/diesel",          category: "diesel",          title: "Diesel Engine Calculators",              description: "Single and compound turbo sizing, lift pump selection, EGT safety, nozzle sizing, smoke/lambda, and valve relief for Cummins, Duramax, Powerstroke." },
@@ -438,7 +438,19 @@ function engineEntry(e) {
   if (e.num_cylinders != null) descBits.push(`${e.num_cylinders}-cylinder`);
   if (e.bore_in != null && e.stroke_in != null) descBits.push(`${e.bore_in}" bore x ${e.stroke_in}" stroke`);
   if (e.compression_ratio != null) descBits.push(`${e.compression_ratio}:1 compression`);
-  const description = `${e.manufacturerName} ${e.displayName} engine specs: ${descBits.join(", ")}.`.slice(0, 300);
+  // Bing flagged 209 descriptions as too short. The spec list alone runs 90-100
+  // characters on engines with few populated fields, so append what else the
+  // page actually carries rather than padding it with adjectives.
+  const extraBits = [];
+  if (e.rod_ratio != null) extraBits.push(`${e.rod_ratio} rod ratio`);
+  if (e.head?.head_cc != null) extraBits.push(`${e.head.head_cc}cc chambers`);
+  if (e.head?.intake_valve_dia != null) extraBits.push(`${e.head.intake_valve_dia}" intake valves`);
+  if (e.hpMin != null) extraBits.push(e.hpMin === e.hpMax ? `${e.hpMin} hp` : `${e.hpMin}-${e.hpMax} hp`);
+  const description = (
+    `${e.manufacturerName} ${e.displayName} engine specs: ${descBits.join(", ")}.` +
+    (extraBits.length ? ` Plus ${extraBits.slice(0, 3).join(", ")}.` : "") +
+    ` Free reference with piston speed, bore/stroke character and prefilled calculators.`
+  ).slice(0, 300);
 
   const variantsHtml = e.variantCount > 1
     ? `<h2>Variants sharing these dimensions (${e.variantCount})</h2>
@@ -533,8 +545,22 @@ function engineFamilyEntry(fam) {
   const famTitleBase = fam.familyName.toLowerCase().startsWith(fam.manufacturerName.toLowerCase())
     ? fam.familyName
     : `${fam.manufacturerName} ${fam.familyName}`;
-  const title = `${famTitleBase} Engine Specs`;
-  const description = `Bore, stroke, displacement and compression for all ${fam.engines.length} ${fam.manufacturerName} ${fam.familyName} engines. Compare variants side by side.`.slice(0, 300);
+  // 65-char budget, 19 of it the site suffix. Drop a trailing parenthetical
+  // before anything else — "(194/230/250/292)" is the least load-bearing part
+  // of "GMC Chevy Straight-6 (194/230/250/292)".
+  const title = (() => {
+    const full = `${famTitleBase} Engine Specs`;
+    if (full.length <= 46) return full;
+    const trimmed = `${famTitleBase.replace(/\s*\([^)]*\)\s*$/, "").trim()} Engine Specs`;
+    if (trimmed.length <= 46) return trimmed;
+    return `${famTitleBase.replace(/\s*\([^)]*\)\s*$/, "").trim()} Specs`;
+  })();
+  const description = (
+    `Bore, stroke, displacement and compression for all ${fam.engines.length} ` +
+    `${fam.manufacturerName} ${fam.familyName} engines, compared side by side. ` +
+    `Includes rod length, rod ratio and cylinder head specs where published, ` +
+    `with each engine linking into the calculators with its numbers filled in.`
+  ).slice(0, 300);
 
   const rows = fam.engines
     .map((e) => `<tr><td><a href="${e.url}">${escapeHtml(e.displayName)}</a></td><td>${e.displacement_ci != null ? `${e.displacement_ci} ci` : "—"}</td><td>${e.bore_in != null && e.stroke_in != null ? `${e.bore_in}&quot; × ${e.stroke_in}&quot;` : "—"}</td><td>${e.compression_ratio != null ? `${e.compression_ratio}:1` : "—"}</td><td>${e.hpMin != null ? (e.hpMin === e.hpMax ? e.hpMin : `${e.hpMin}–${e.hpMax}`) : "—"}</td></tr>`)
@@ -570,7 +596,11 @@ function manufacturerEntry(m) {
     { label: m.name },
   ];
   const title = `${m.name} Engine Specs`;
-  const description = `Bore, stroke, displacement and compression specs for ${m.engineCount} ${m.name} engines across ${m.families.length} families.`.slice(0, 300);
+  const description = (
+    `Bore, stroke, displacement and compression specs for ${m.engineCount} ${m.name} ` +
+    `engines across ${m.families.length} families. Free reference for engine builders, ` +
+    `with rod ratio, piston speed and cylinder head data where published.`
+  ).slice(0, 300);
   const seoBlock = `
       <nav aria-label="Breadcrumb" style="font-size:14px;color:#666;margin:24px 0;">
         ${breadcrumbHtml(crumbs)}
@@ -647,7 +677,13 @@ function camEntry(c) {
     while (words.length > 1 && `${c.mfr} ${words.join(" ")} Specs`.length > 46) words.pop();
     return `${c.mfr} ${words.join(" ")} Specs`;
   })();
-  const description = `${c.part} — ${c.int050}${c.exh050 != null ? `/${c.exh050}` : ""} duration at 0.050", ${c.liftInt}"/${c.liftExh}" lift, ${c.lsa} LSA. ${c.platformLabel}, ${c.lifterLabel.toLowerCase()}.`.slice(0, 300);
+  const description = (
+    `${c.part} — ${c.int050}${c.exh050 != null ? `/${c.exh050}` : ""} duration at 0.050", ` +
+    `${c.liftInt}"/${c.liftExh}" lift, ${c.lsa} LSA. ${c.platformLabel}, ${c.lifterLabel.toLowerCase()}.` +
+    (c.rpmLo != null && c.rpmHi != null ? ` Published range ${c.rpmLo}-${c.rpmHi} RPM.` : "") +
+    (c.use ? ` ${c.use}.` : "") +
+    ` Compare against similar grinds and check it against your build.`
+  ).slice(0, 300);
 
   const seoBlock = `
       <nav aria-label="Breadcrumb" style="font-size:14px;color:#666;margin:24px 0;">
@@ -678,7 +714,11 @@ function camEntry(c) {
 function camMfrEntry(m) {
   const crumbs = [{ label: "Home", href: "/" }, { label: "Camshafts", href: "/cams" }, { label: m.name }];
   const title = `${m.name} Camshaft Specs`;
-  const description = `Duration at 0.050", lift, LSA and RPM range for ${m.cams.length} ${m.name} camshaft grinds, with part numbers.`;
+  const description = (
+    `Duration at 0.050", lift, LSA and published RPM range for ${m.cams.length} ` +
+    `${m.name} camshaft grind${m.cams.length === 1 ? "" : "s"}, listed with part numbers. ` +
+    `Compare each against similar grinds on the same platform, or check one against your build.`
+  ).slice(0, 300);
   const rows = m.cams.map((c) => `<tr><td><a href="${c.url}">${escapeHtml(c.family)}</a></td><td>${escapeHtml(c.part)}</td><td>${escapeHtml(c.platformLabel)}</td><td>${c.int050}${c.exh050 != null ? `/${c.exh050}` : ""}</td><td>${c.lsa}</td></tr>`).join("");
   const seoBlock = `
       <nav aria-label="Breadcrumb" style="font-size:14px;color:#666;margin:24px 0;">
