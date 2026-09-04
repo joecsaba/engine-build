@@ -555,11 +555,18 @@ function engineFamilyEntry(fam) {
     if (trimmed.length <= 46) return trimmed;
     return `${famTitleBase.replace(/\s*\([^)]*\)\s*$/, "").trim()} Specs`;
   })();
+  // 193 families hold a single engine, so "all 1 engines, compared side by side"
+  // needs a different sentence rather than a plural hack.
+  const one = fam.engines.length === 1;
   const description = (
-    `Bore, stroke, displacement and compression for all ${fam.engines.length} ` +
-    `${fam.manufacturerName} ${fam.familyName} engines, compared side by side. ` +
-    `Includes rod length, rod ratio and cylinder head specs where published, ` +
-    `with each engine linking into the calculators with its numbers filled in.`
+    one
+      ? `Bore, stroke, displacement and compression for the ${fam.manufacturerName} ${fam.familyName}. ` +
+        `Includes rod length, rod ratio, mean piston speed and cylinder head specs where published, ` +
+        `and links into the calculators with its dimensions already filled in.`
+      : `Bore, stroke, displacement and compression for all ${fam.engines.length} ` +
+        `${fam.manufacturerName} ${fam.familyName} engines, compared side by side. ` +
+        `Includes rod length, rod ratio and cylinder head specs where published, ` +
+        `with each engine linking into the calculators with its numbers filled in.`
   ).slice(0, 300);
 
   const rows = fam.engines
@@ -572,10 +579,16 @@ function engineFamilyEntry(fam) {
       </nav>
       <h1>${escapeHtml(title)}</h1>
       <p>${escapeHtml(description)}</p>
+      ${fam.context?.facts?.length ? `<h2>At a glance</h2>
+      ${specRows(fam.context.facts)}` : ""}
+      <h2>${fam.engines.length === 1 ? "This engine" : "Engines in this family"}</h2>
       <table>
         <tr><th>Engine</th><th>Displacement</th><th>Bore × Stroke</th><th>CR</th><th>HP</th></tr>
         ${rows}
       </table>
+      ${fam.context?.notes?.length ? `<h2>What varies across the family</h2>
+      ${fam.context.notes.map((n) => `<p>${escapeHtml(n)}</p>`).join("")}` : ""}
+      <p>Each engine page carries rod ratio, mean piston speed, bore/stroke character and cylinder head specs where published, and links into the calculators with its dimensions already filled in.</p>
       <p><a href="${fam.manufacturerUrl}">← All ${escapeHtml(fam.manufacturerName)} engines</a></p>`;
 
   return {
@@ -607,9 +620,25 @@ function manufacturerEntry(m) {
       </nav>
       <h1>${escapeHtml(title)}</h1>
       <p>${escapeHtml(description)}</p>
+      ${(() => {
+        const all = m.families.flatMap((f) => f.engines);
+        const disp = all.map((e) => e.displacement_ci).filter((v) => v != null);
+        const cyl = [...new Set(all.map((e) => e.num_cylinders).filter((v) => v != null))].sort((a, b) => a - b);
+        const yrs = [...all.map((e) => e.yearMin), ...all.map((e) => e.yearMax)].filter(Boolean);
+        const r = [];
+        if (disp.length) r.push(["Displacement range", `${Math.min(...disp)}-${Math.max(...disp)} ci`]);
+        if (cyl.length) r.push(["Cylinder counts", cyl.join(", ")]);
+        if (yrs.length) r.push(["Years covered", `${Math.min(...yrs)}-${Math.max(...yrs)}`]);
+        r.push(["Families", String(m.families.length)], ["Engines", String(m.engineCount)]);
+        const wh = all.filter((e) => e.head).length;
+        if (wh) r.push(["With cylinder head data", `${wh} engines`]);
+        return `<h2>At a glance</h2>${specRows(r)}`;
+      })()}
+      <h2>Engine families</h2>
       <ul>
         ${m.families.map((f) => `<li><a href="${f.url}">${escapeHtml(f.familyName)}</a> — ${f.engines.length} engine${f.engines.length === 1 ? "" : "s"}</li>`).join("\n        ")}
       </ul>
+            <p>Every engine page lists bore, stroke, displacement, compression and rod ratio, with mean piston speed and bore/stroke character worked out, plus cylinder head specs where published. Each links into the calculators with its own dimensions filled in.</p>
       <p><a href="/engines">← All engine manufacturers</a></p>`;
   return {
     path: m.url,

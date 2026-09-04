@@ -150,6 +150,89 @@ function derivedFor(e) {
   return out;
 }
 
+// Computed context for a family hub.
+//
+// Hubs were the thinnest pages on the site — median 82 words, 438 of 473 under
+// 150 — because a hub is a comparison table, and a table of one or two rows says
+// almost nothing. 193 families hold a single engine.
+//
+// Everything here is arithmetic over the family's own members, so a one-engine
+// family reads differently from a nineteen-engine one, and a family spanning
+// 40 years of iron reads differently from a single modern casting. No sentence
+// is emitted unless the data supports it.
+function familyContext(fam) {
+  const es = fam.engines;
+  const nums = (f) => es.map((e) => e[f]).filter((v) => v != null);
+  const rng = (f, dp = 0) => {
+    const v = nums(f);
+    if (!v.length) return null;
+    const lo = Math.min(...v), hi = Math.max(...v);
+    return lo === hi ? lo.toFixed(dp) : `${lo.toFixed(dp)}–${hi.toFixed(dp)}`;
+  };
+
+  const facts = [];
+  const disp = nums("displacement_ci");
+  if (disp.length) {
+    const lo = Math.min(...disp), hi = Math.max(...disp);
+    facts.push(["Displacement", lo === hi ? `${lo} ci` : `${lo}–${hi} ci`]);
+  }
+  const cyl = [...new Set(nums("num_cylinders"))].sort((a, b) => a - b);
+  if (cyl.length) facts.push(["Cylinders", cyl.join(", ")]);
+  const bore = rng("bore_in", 3), stroke = rng("stroke_in", 3);
+  if (bore) facts.push(["Bore", `${bore}"`]);
+  if (stroke) facts.push(["Stroke", `${stroke}"`]);
+  const cr = rng("compression_ratio", 1);
+  if (cr) facts.push(["Compression", `${cr}:1`]);
+  const hp = [...nums("hpMin"), ...nums("hpMax")];
+  if (hp.length) {
+    const lo = Math.min(...hp), hi = Math.max(...hp);
+    facts.push(["Advertised power", lo === hi ? `${lo} hp` : `${lo}–${hi} hp`]);
+  }
+  const yrs = [...nums("yearMin"), ...nums("yearMax")];
+  if (yrs.length) {
+    const lo = Math.min(...yrs), hi = Math.max(...yrs);
+    facts.push(["Years", lo === hi ? `${lo}` : `${lo}–${hi}`]);
+  }
+  const withHead = es.filter((e) => e.head).length;
+  if (withHead) facts.push(["Cylinder head data", `${withHead} of ${es.length} engines`]);
+
+  // What actually varies across the family — the question a hub should answer.
+  const notes = [];
+  const bores = new Set(nums("bore_in").map((v) => v.toFixed(4)));
+  const strokes = new Set(nums("stroke_in").map((v) => v.toFixed(4)));
+  if (es.length > 1) {
+    if (bores.size === 1 && strokes.size > 1) {
+      notes.push(`Every engine here shares a ${nums("bore_in")[0]}" bore; displacement varies by stroke alone, which is the signature of a family built on one block with different cranks.`);
+    } else if (strokes.size === 1 && bores.size > 1) {
+      notes.push(`Stroke is constant at ${nums("stroke_in")[0]}" across the family — the displacement spread comes from bore, so these share a crank and differ in the block.`);
+    } else if (bores.size > 1 && strokes.size > 1) {
+      notes.push(`Both bore and stroke vary across the family, so these are separate castings rather than variations on one block.`);
+    }
+    const crv = nums("compression_ratio");
+    if (crv.length > 1) {
+      const lo = Math.min(...crv), hi = Math.max(...crv);
+      if (hi - lo >= 1.5) {
+        notes.push(`Compression spans ${lo}:1 to ${hi}:1, so fuel requirements differ meaningfully between members — worth checking before assuming parts interchange.`);
+      }
+    }
+  } else if (es.length === 1) {
+    const e = es[0];
+    const bits = [];
+    if (e.displacement_ci != null) bits.push(`${e.displacement_ci} ci`);
+    if (e.num_cylinders != null) bits.push(`${e.num_cylinders} cylinders`);
+    if (e.bore_in != null && e.stroke_in != null) bits.push(`a ${e.bore_in}" × ${e.stroke_in}" bore and stroke`);
+    if (bits.length) notes.push(`This family is represented by a single engine in the database: ${bits.join(", ")}.`);
+  }
+
+  const os = es.filter((e) => e.boreStrokeRatio != null && e.boreStrokeRatio >= 1.05).length;
+  const us = es.filter((e) => e.boreStrokeRatio != null && e.boreStrokeRatio <= 0.95).length;
+  if (os && !us) notes.push(`${os === es.length ? "All" : `${os} of ${es.length}`} are oversquare — bore larger than stroke, which favours revs over low-end torque.`);
+  else if (us && !os) notes.push(`${us === es.length ? "All" : `${us} of ${es.length}`} are undersquare — stroke larger than bore, favouring torque low in the range.`);
+  else if (os && us) notes.push(`The family mixes oversquare and undersquare designs, so members behave quite differently despite sharing a name.`);
+
+  return { facts, notes };
+}
+
 // Manufacturer display name, resolved the same way in both the record build and
 // the title build.
 function mfrNameEarly(f, mfrByslug, mfrSeg) {
@@ -597,6 +680,8 @@ export function loadEngineData() {
       }
     }
   }
+
+  for (const fam of outFamilies) fam.context = familyContext(fam);
 
   // ---- related engines -----------------------------------------------------
   // Cross-links between engine pages, computed once the full set is known.
