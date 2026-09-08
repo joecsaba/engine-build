@@ -770,9 +770,27 @@ function camsIndexEntry(cams, manufacturers) {
       </nav>
       <h1>${escapeHtml(title)}</h1>
       <p>${escapeHtml(description)}</p>
+      ${(() => {
+        const d = cams.map((c) => c.int050).filter((v) => v != null);
+        const l = cams.map((c) => c.lsa).filter((v) => v != null);
+        const lift = cams.map((c) => c.liftInt).filter((v) => v != null);
+        const plats = [...new Set(cams.map((c) => c.platformLabel))];
+        const lifters = [...new Set(cams.map((c) => c.lifterLabel))];
+        const r = [];
+        if (d.length) r.push(["Duration at 0.050\"", `${Math.min(...d)}-${Math.max(...d)}°`]);
+        if (lift.length) r.push(["Valve lift", `${Math.min(...lift)}"-${Math.max(...lift)}"`]);
+        if (l.length) r.push(["Lobe separation", `${Math.min(...l)}-${Math.max(...l)}°`]);
+        r.push(["Platforms", `${plats.length}`], ["Lifter types", lifters.join(", ")]);
+        return `<h2>At a glance</h2>${specRows(r)}`;
+      })()}
+      <h2>By manufacturer</h2>
       <ul>
         ${manufacturers.map((m) => `<li><a href="${m.url}">${escapeHtml(m.name)}</a> — ${m.cams.length} grinds</li>`).join("")}
-      </ul>`;
+      </ul>
+      <h2>Platforms covered</h2>
+      <p>${escapeHtml([...new Set(cams.map((c) => c.platformLabel))].sort().join(", "))}.</p>
+      <p>Every grind lists duration at 0.050" for both intake and exhaust, valve lift, lobe separation angle and the manufacturer's published RPM range, with the nearest alternatives on the same platform for comparison. Duration at 0.050" is the only figure comparable between brands — advertised duration is measured at different lift points by different makers.</p>
+      <p><a href="/calculators/cam-selector">Match a cam to your build</a> or read the <a href="/cam-guide">camshaft selection guide</a>.</p>`;
   return { path: "/cams", title, description, seoBlock, jsonLd: [breadcrumbJsonLd(crumbs)], priority: 0.9, changefreq: "monthly" };
 }
 
