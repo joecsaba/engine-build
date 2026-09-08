@@ -1,4 +1,5 @@
 import { useState, useMemo } from "react";
+import { SourceNote } from "@/components/calculators/SourceNote";
 import { SEOHead } from "@/components/SEOHead";
 import { Input } from "@/components/ui/input";
 import { Label } from "@/components/ui/label";
@@ -965,6 +966,9 @@ export default function HeadFlowCalculator() {
       </HelpSidebar>
 
       </div>{/* end flex row */}
+
+      <SourceNote book="heads" context="the intake-to-exhaust flow ratio targets and the flow-to-horsepower relationship" />
+
 
       <CalculatorContent data={headFlowContent} title="Cylinder Head Flow" />
     </div>

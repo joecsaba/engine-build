@@ -39,3 +39,18 @@ declare module "@/data/pageContent/cam-guide.mjs" {
   };
   export default content;
 }
+
+declare module "@/data/attribution.mjs" {
+  export interface VizardBook {
+    title: string;
+    asin: string;
+    isbn13: string;
+    covers: string;
+  }
+  export const AMAZON_TAG: string;
+  export const VIZARD_BOOKS: Record<"horsepower" | "smallBlock" | "heads", VizardBook>;
+  export function bookUrl(key: string): string | null;
+  export function vizardCitationHtml(key: string, context: string): string;
+  const books: Record<string, VizardBook>;
+  export default books;
+}

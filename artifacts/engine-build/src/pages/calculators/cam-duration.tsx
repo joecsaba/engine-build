@@ -1,4 +1,5 @@
 import { useState, useCallback, useEffect } from "react";
+import { bookUrl } from "@/data/attribution.mjs";
 import { Link } from "wouter";
 import { SEOHead } from "@/components/SEOHead";
 import { Input } from "@/components/ui/input";
@@ -534,7 +535,7 @@ export default function CamDurationCalculator() {
           <div className="text-xs italic text-muted-foreground border-b pb-3">
             Formula and methodology from David Vizard's{" "}
             <a
-              href="https://amzn.to/4cMoisN"
+              href={bookUrl("horsepower")!}
               target="_blank"
               rel="noopener noreferrer"
               className="underline hover:text-[#E85D04] transition-colors"
@@ -543,7 +544,7 @@ export default function CamDurationCalculator() {
             </a>
             . To learn more,{" "}
             <a
-              href="https://amzn.to/4cMoisN"
+              href={bookUrl("horsepower")!}
               target="_blank"
               rel="noopener noreferrer"
               className="underline font-semibold hover:text-[#E85D04] transition-colors"
@@ -664,7 +665,7 @@ export default function CamDurationCalculator() {
                 The LSA recommendation formula above is from David Vizard's <em className="text-[#E85D04]">How to Build Horsepower</em> — one of the most thorough technical references on building performance engines.
               </p>
               <a
-                href="https://amzn.to/4cMoisN"
+                href={bookUrl("horsepower")!}
                 target="_blank"
                 rel="noopener noreferrer"
                 className="inline-flex items-center gap-2 bg-[#E85D04] hover:bg-[#d04f00] text-white font-bold px-4 py-2 rounded-lg transition-colors text-sm"

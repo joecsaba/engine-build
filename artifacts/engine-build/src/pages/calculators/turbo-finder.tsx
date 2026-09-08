@@ -1,4 +1,5 @@
 import { useState, useMemo } from "react";
+import { SourceNote } from "@/components/calculators/SourceNote";
 import { SEOHead } from "@/components/SEOHead";
 import { Input } from "@/components/ui/input";
 import { Label } from "@/components/ui/label";
@@ -1423,6 +1424,9 @@ export default function TurboFinderCalculator() {
       </HelpSidebar>
 
       </div>{/* end flex row */}
+
+      <SourceNote book="heads" context="the head-flow-to-engine-CFM method" />
+
 
       <CalculatorContent data={turboFinderContent} title="Turbo Finder & Sizing" />
     </div>

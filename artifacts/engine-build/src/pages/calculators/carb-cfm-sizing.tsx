@@ -1,4 +1,5 @@
 import { useState, useEffect, useMemo } from "react";
+import { SourceNote } from "@/components/calculators/SourceNote";
 import { usePrefill } from "@/hooks/usePrefill";
 import { SEOHead } from "@/components/SEOHead";
 import { Input } from "@/components/ui/input";
@@ -1591,6 +1592,9 @@ export default function CarbCfmSizingCalculator() {
       </HelpSidebar>
 
       </div>{/* end flex row */}
+
+      <SourceNote book="horsepower" context="the correction-factor method for carburettor sizing, which sets CFM from cam duration and cylinder head quality" />
+
 
       <CalculatorContent data={carbCfmSizingContent} title="Carburetor CFM Sizing" />
     </div>

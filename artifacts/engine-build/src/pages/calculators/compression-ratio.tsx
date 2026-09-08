@@ -1,4 +1,5 @@
 import { useState } from "react";
+import { SourceNote } from "@/components/calculators/SourceNote";
 import { EnginePicker } from "@/components/calculators/EnginePicker";
 import { usePrefill } from "@/hooks/usePrefill";
 import { SEOHead } from "@/components/SEOHead";
@@ -179,6 +180,9 @@ export default function CompressionRatioCalculator() {
           </HelpCard>
         </div>
       </div>
+
+      <SourceNote book="horsepower" context="the cranking-pressure cross-check used to sanity-test dynamic compression" />
+
 
       <CalculatorContent data={compressionRatioContent} title="Compression Ratio" />
     </div>

@@ -1,4 +1,5 @@
 import { useState, useMemo } from "react";
+import { SourceNote } from "@/components/calculators/SourceNote";
 import { Link } from "wouter";
 import { SEOHead } from "@/components/SEOHead";
 import { Input } from "@/components/ui/input";
@@ -806,6 +807,9 @@ export default function CamSelectorCalculator() {
           </Card>
         </HelpSidebar>
       </div>
+
+      <SourceNote book="horsepower" context="the LSA selection rule (cylinder displacement divided by intake valve diameter, adjusted for compression) and the flow-to-horsepower figure" />
+
 
       <CalculatorContent data={camSelectorContent} title="Camshaft Selection" />
     </div>
