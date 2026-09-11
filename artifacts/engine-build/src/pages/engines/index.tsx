@@ -4,6 +4,7 @@ import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 import { Input } from "@/components/ui/input";
 import { Skeleton } from "@/components/ui/skeleton";
 import { SEOHead } from "@/components/SEOHead";
+import { manufacturerDescription } from "@/data/seoDescriptions.mjs";
 import type { ManufacturerSummary } from "@/lib/engineTypes";
 
 /**
@@ -75,7 +76,7 @@ export default function EnginesIndexPage() {
       <div className="container mx-auto max-w-5xl py-10 px-4">
         <SEOHead
           title={title}
-          description={`Bore, stroke, displacement and compression specs for ${current.engineCount} ${current.name} engines across ${current.families.length} families.`}
+          description={manufacturerDescription(current)}
           canonical={current.url}
         />
         <nav aria-label="Breadcrumb" className="text-sm text-muted-foreground mb-6">

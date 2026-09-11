@@ -3,6 +3,7 @@ import { Link, useParams } from "wouter";
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 import { Skeleton } from "@/components/ui/skeleton";
 import { SEOHead } from "@/components/SEOHead";
+import { familyDescription } from "@/data/seoDescriptions.mjs";
 import type { EngineFamilyDoc } from "@/lib/engineTypes";
 
 /**
@@ -54,9 +55,7 @@ export default function EngineFamilyPage() {
   }
 
   const title = `${doc.manufacturerName} ${doc.familyName} Engine Specs`;
-  const description =
-    `Bore, stroke, displacement and compression for all ${doc.engines.length} ` +
-    `${doc.manufacturerName} ${doc.familyName} engines. Compare variants side by side.`;
+  const description = familyDescription(doc);
 
   return (
     <div className="container mx-auto max-w-5xl py-10 px-4">

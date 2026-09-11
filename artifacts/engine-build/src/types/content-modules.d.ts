@@ -54,3 +54,22 @@ declare module "@/data/attribution.mjs" {
   const books: Record<string, VizardBook>;
   export default books;
 }
+
+// Shared meta description builders — see src/data/seoDescriptions.mjs. Imported
+// by both the React pages and scripts/prerender.mjs so the two cannot drift.
+declare module "@/data/seoDescriptions.mjs" {
+  export const DESC_MAX: number;
+  export const DESC_MIN: number;
+  export function clampDesc(parts: (string | string[] | null | undefined)[]): string;
+  export function familyPhrase(manufacturerName: string, familyName: string): string;
+  export function familyDescription(fam: {
+    manufacturerName: string;
+    familyName: string;
+    engines: unknown[];
+  }): string;
+  export function manufacturerDescription(m: {
+    name: string;
+    engineCount: number;
+    families: unknown[];
+  }): string;
+}

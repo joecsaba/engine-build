@@ -16,7 +16,7 @@ export default [
     slug: "bearing-clearance",
     level: "Beginner",
     title: "How to Check Bearing Clearance",
-    description: "Using Plastigage to measure main and rod bearing clearances. Step-by-step with spec table.",
+    description: "Using Plastigage to measure main and rod bearing clearances, with the torque procedure, iron and aluminum spec ranges, and what to do when it is out.",
     totalTime: "15 min",
     steps: [
       { name: "Clean the journal and bearing", text: "Wipe the crank journal and bearing surface with a clean lint-free cloth. Any debris will throw off the reading." },
@@ -30,7 +30,7 @@ export default [
     slug: "ring-gap",
     level: "Beginner",
     title: "How to Set Piston Ring End Gap",
-    description: "Proper filing technique, stagger positioning, and oil ring installation.",
+    description: "Proper filing technique, stagger positioning and oil ring installation, plus target gaps for NA, turbo and nitrous and how to square a ring in the bore.",
     totalTime: "12 min",
     steps: [
       { name: "Calculate your target gap", text: "Use the ring-gap calculator. Rule of thumb: 0.004\"/inch of bore for NA, 0.006\"/inch for turbo, 0.007\"/inch for nitrous." },
@@ -45,7 +45,7 @@ export default [
     slug: "break-in",
     level: "Beginner",
     title: "Engine Break-In Procedure",
-    description: "Complete flat-tappet AND roller cam break-in. The critical ZDDP requirements explained.",
+    description: "Complete flat-tappet and roller cam break-in. The ZDDP requirement explained, plus priming, the 20-minute run at 2,000 RPM and the 500-mile oil change.",
     totalTime: "18 min",
     steps: [
       { name: "Use a high-ZDDP break-in oil", text: "Flat tappet cams require break-in oil with 1500+ ppm zinc (ZDDP). Modern SN-rated oils don't have enough. Brands: Brad Penn 30W, Driven BR30, COMP Cams break-in oil." },
@@ -59,7 +59,7 @@ export default [
     slug: "degree-cam",
     level: "Intermediate",
     title: "How to Degree a Camshaft",
-    description: "Finding TDC, degree wheel setup, intake centerline, and lobe separation verification.",
+    description: "Finding true TDC with a piston stop, degree wheel setup, reading intake centerline, and correcting a cam that is off the card with an offset bushing.",
     totalTime: "20 min",
     steps: [
       { name: "Find true TDC", text: "Install a piston stop in the spark plug hole. Rotate the crank forward until it stops, mark the degree wheel. Rotate backward until it stops, mark again. True TDC is halfway between the marks." },
@@ -73,7 +73,7 @@ export default [
     slug: "machine-shop-quality",
     level: "Intermediate",
     title: "How to Evaluate Machine Shop Work",
-    description: "What to inspect when you get your block back. Red flags, measuring guide, questions to ask.",
+    description: "What to inspect when you get your block back: deck flatness, bore roundness, main bore alignment and valve seat work. Red flags and questions to ask.",
     totalTime: "14 min",
     steps: [
       { name: "Inspect block surfaces", text: "Check the deck and main bore for scratches, gouges, or unfinished spots. Decks should be machined flat (verify with a precision straightedge and feeler gauges)." },
@@ -87,7 +87,7 @@ export default [
     slug: "blueprinting",
     level: "Advanced",
     title: "Blueprinting an Engine",
-    description: "What blueprinting actually means, what gets blueprinted, and whether it's worth the cost for your build.",
+    description: "What blueprinting actually means and what gets blueprinted: balancing, chamber cc, port matching and individual bearing clearances. Plus what it costs.",
     totalTime: "22 min",
     steps: [
       { name: "Establish baseline specs", text: "Measure every component (bore, stroke, journal diameters, deck height, chamber volume) and record actual vs. published values." },
