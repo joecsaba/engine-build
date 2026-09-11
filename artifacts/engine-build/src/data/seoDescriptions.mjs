@@ -12,6 +12,23 @@
 export const DESC_MAX = 158;
 export const DESC_MIN = 110;
 
+// Lengths are measured AFTER HTML escaping, because that is what ends up in the
+// file and what an analyzer reading the markup counts. An inch mark costs six
+// characters as &quot;, not one, and engine descriptions carry two of them:
+//
+//   Chevrolet LS1 ... 3.9" bore x 3.622" stroke ...
+//   decoded 158  ->  raw 168
+//
+// 535 pages sat over 160 raw while measuring 158 decoded. Bing's own numbers
+// point the same way: it reported exactly one "Title too long", and exactly one
+// title exceeds 65 characters once &amp; is counted as five.
+const HTML_ESCAPES = { "&": "&amp;", "<": "&lt;", ">": "&gt;", '"': "&quot;", "'": "&#39;" };
+
+/** Length of `s` once escaped for HTML — what actually lands in the markup. */
+export function encodedLength(s) {
+  return String(s).replace(/[&<>"']/g, (c) => HTML_ESCAPES[c]).length;
+}
+
 /**
  * Join `parts` into a description that fits DESC_MAX, most important first.
  *
@@ -24,7 +41,9 @@ export function clampDesc(parts) {
   let out = "";
   for (const part of parts.filter(Boolean)) {
     const options = Array.isArray(part) ? part.filter(Boolean) : [part];
-    const fits = options.find((o) => (out ? out.length + 1 + o.length : o.length) <= DESC_MAX);
+    const fits = options.find(
+      (o) => (out ? encodedLength(out) + 1 + encodedLength(o) : encodedLength(o)) <= DESC_MAX,
+    );
     // Order carries meaning, so a slot that cannot fit ends the description
     // rather than being skipped over to reach a later, less important one.
     if (!fits) break;
@@ -33,7 +52,14 @@ export function clampDesc(parts) {
   // Nothing fit: take the first part and trim it at a word boundary.
   if (!out && parts.length) {
     const first = parts.flat().find(Boolean) ?? "";
-    out = first.length <= DESC_MAX ? first : first.slice(0, DESC_MAX).replace(/\s+\S*$/, "") + "…";
+    // Trim whole words until the ESCAPED string fits. Slicing to DESC_MAX
+    // characters first is not enough — escaping can push it back over.
+    out = first;
+    while (out && encodedLength(out) > DESC_MAX) {
+      const cut = out.replace(/\s+\S*$/, "");
+      out = cut && cut !== out ? cut : out.slice(0, -1);
+    }
+    if (out !== first) out = `${out.replace(/[\s,;:·-]+$/, "")}…`;
   }
   return out;
 }

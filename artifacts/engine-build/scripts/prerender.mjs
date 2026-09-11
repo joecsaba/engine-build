@@ -17,7 +17,7 @@ import { dirname, resolve } from "node:path";
 import { fileURLToPath, pathToFileURL } from "node:url";
 
 import GUIDES from "../src/data/guides/manifest.mjs";
-import { clampDesc, familyDescription, manufacturerDescription } from "../src/data/seoDescriptions.mjs";
+import { clampDesc, encodedLength, familyDescription, manufacturerDescription } from "../src/data/seoDescriptions.mjs";
 import FAQ from "../src/data/faq.mjs";
 import { loadEngineData, writeRuntimeData } from "./engineData.mjs";
 import { loadCams, writeCamRuntime } from "./camData.mjs";
@@ -225,7 +225,7 @@ const STATIC_PAGES = [
 // Category landing pages
 const CATEGORY_PAGES = [
   { path: "/calculators/short-block",     category: "short-block",     title: "Short Block & Bottom End Calculators",   description: "Displacement, compression ratio, ring gap, bearing clearance, piston speed, rod ratio and deck height calculators for the bottom end of your build." },
-  { path: "/calculators/cam-valvetrain",  category: "cam-valvetrain",  title: "Cam, Valvetrain & Cylinder Head Calculators", description: "Cam timing, valve springs, pushrod length, piston-to-valve clearance, degreeing, head flow and head milling calculators." },
+  { path: "/calculators/cam-valvetrain",  category: "cam-valvetrain",  title: "Cam, Valvetrain and Cylinder Head Calculators", description: "Cam timing, valve springs, pushrod length, piston-to-valve clearance, degreeing, head flow and head milling calculators." },
   { path: "/calculators/power-fuel",      category: "power-fuel",      title: "Power, Fuel & Forced Induction Calculators", description: "HP estimation, AFR and lambda, carburetor and injector sizing, turbo matching and boost analysis. Free tools for NA, turbo and supercharged builds." },
   { path: "/calculators/drivetrain-shop", category: "drivetrain-shop", title: "Drivetrain & Shop Tool Calculators",     description: "Gear ratio, torque wrench correction, precision conversion, thread and tap drill sizing, and shop reference tools, with the charts on the page." },
   { path: "/calculators/diesel",          category: "diesel",          title: "Diesel Engine Calculators",              description: "Single and compound turbo sizing, lift pump selection, EGT safety, nozzle sizing, smoke/lambda, and valve relief for Cummins, Duramax, Powerstroke." },
@@ -448,10 +448,27 @@ function engineEntry(e) {
   if (e.head?.head_cc != null) extraBits.push(`${e.head.head_cc}cc chambers`);
   if (e.head?.intake_valve_dia != null) extraBits.push(`${e.head.intake_valve_dia}" intake valves`);
   if (e.hpMin != null) extraBits.push(e.hpMin === e.hpMax ? `${e.hpMin} hp` : `${e.hpMin}-${e.hpMax} hp`);
+  // The <title> already solved this: seoTitle strips the geometry suffix that
+  // displayName carries ("Acura Honda B-series . 3.189" x 3.433" . 10:1") and
+  // does not repeat the manufacturer. The description was still built from
+  // displayName, so 444 of 1,472 engine pages stated bore, stroke and
+  // compression twice and 298 named the manufacturer twice - in the one line a
+  // searcher reads before deciding whether to click. The trailing compression
+  // ratio goes too, because descBits states it again a few words later.
+  const descName = (e.seoTitle ?? `${e.manufacturerName} ${e.displayName}`)
+    .replace(/\s+\d+(?:\.\d+)?:1$/, "")
+    .trim();
   const description = clampDesc([
-    `${e.manufacturerName} ${e.displayName} engine specs: ${descBits.join(", ")}.`,
-    extraBits.length ? `Plus ${extraBits.slice(0, 2).join(" and ")}.` : "",
-    "With piston speed and rod ratio worked out.",
+    `${descName} engine specs: ${descBits.join(", ")}.`,
+    // Shorter phrasings for each tail slot. Two inch marks cost ten characters
+    // once escaped, so on a spec-heavy engine the long form will not fit and
+    // without an alternative the slot is dropped whole.
+    extraBits.length
+      ? [`Plus ${extraBits.slice(0, 2).join(" and ")}.`, `Plus ${extraBits[0]}.`]
+      : "",
+    ["With piston speed and rod ratio worked out.",
+     "With piston speed and rod ratio.",
+     "With rod ratio worked out."],
   ]);
 
   const variantsHtml = e.variantCount > 1
@@ -552,9 +569,9 @@ function engineFamilyEntry(fam) {
   // of "GMC Chevy Straight-6 (194/230/250/292)".
   const title = (() => {
     const full = `${famTitleBase} Engine Specs`;
-    if (full.length <= 46) return full;
+    if (encodedLength(full) <= 46) return full;
     const trimmed = `${famTitleBase.replace(/\s*\([^)]*\)\s*$/, "").trim()} Engine Specs`;
-    if (trimmed.length <= 46) return trimmed;
+    if (encodedLength(trimmed) <= 46) return trimmed;
     return `${famTitleBase.replace(/\s*\([^)]*\)\s*$/, "").trim()} Specs`;
   })();
   // 193 families hold a single engine, so "all 1 engines, compared side by side"
@@ -684,9 +701,9 @@ function camEntry(c) {
   // are what people search.
   const title = (() => {
     const full = `${c.mfr} ${c.family} Cam Specs`;
-    if (full.length <= 46) return full;
+    if (encodedLength(full) <= 46) return full;
     const short = `${c.mfr} ${c.family} Specs`;
-    if (short.length <= 46) return short;
+    if (encodedLength(short) <= 46) return short;
     // Trim at a boundary, never mid-token: drop a trailing parenthetical first
     // ("Stage 2 NA V2 (LS1/LS2)" -> "Stage 2 NA V2"), then whole words.
     let fam = c.family.replace(/\s*\([^)]*\)\s*$/, "").trim();
