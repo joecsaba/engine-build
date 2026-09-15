@@ -47,6 +47,19 @@ function handler(event) {
   // /calculators/compression-ratio already computes dynamic CR; the v2 page was
   // a parallel draft that was never prerendered or added to the sitemap, so it
   // served the homepage title with a 200 to any crawler that found it.
+  // 3b. /calculators/ring-gap-advanced -> /calculators/ring-gap.
+  // The advanced version became the only ring-gap calculator on 2026-05-28 and
+  // the basic one was deleted. A comment in App.tsx claimed this redirect
+  // already existed; it did not, so the old URL fell through to the SPA and
+  // Google logged it as a soft 404 (200 status, no such route).
+  if (uri === '/calculators/ring-gap-advanced' || uri === '/calculators/ring-gap-advanced/') {
+    return {
+      statusCode: 301,
+      statusDescription: 'Moved Permanently',
+      headers: { location: { value: 'https://engine-build.com/calculators/ring-gap' } }
+    };
+  }
+
   if (uri === '/calculators/dynamic-compression-ratio-v2' ||
       uri === '/calculators/dynamic-compression-ratio-v2/') {
     return {

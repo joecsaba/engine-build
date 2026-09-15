@@ -44,6 +44,7 @@ const CamSelectorCalculator = lazy(() => import("@/pages/calculators/cam-selecto
 const RodRatioCalculator = lazy(() => import("@/pages/calculators/rod-ratio"));
 const HpTorqueCalculator = lazy(() => import("@/pages/calculators/hp-torque"));
 const PistonSpeedCalculator = lazy(() => import("@/pages/calculators/piston-speed"));
+const HeaderSizingCalculator = lazy(() => import("@/pages/calculators/header-sizing"));
 const AfrLambdaCalculator = lazy(() => import("@/pages/calculators/afr-lambda"));
 const QuenchDeckHeightCalculator = lazy(() => import("@/pages/calculators/quench-deck-height"));
 const PushrodLengthCalculator = lazy(() => import("@/pages/calculators/pushrod-length"));
@@ -184,12 +185,13 @@ function Router() {
         <Route path="/calculators/displacement" component={DisplacementCalculator} />
         <Route path="/calculators/compression-ratio" component={DynamicCompressionRatioV2} />
         <Route path="/calculators/ring-gap" component={RingGapCalculator} />
-        {/* /calculators/ring-gap-advanced redirected to /calculators/ring-gap by CloudFront Function */}
+        {/* /calculators/ring-gap-advanced -> /calculators/ring-gap, 301 in cf-function-redirect.js */}
         <Route path="/calculators/cam-duration" component={CamDurationCalculator} />
         <Route path="/calculators/cam-selector" component={CamSelectorCalculator} />
         <Route path="/calculators/rod-ratio" component={RodRatioCalculator} />
         <Route path="/calculators/hp-torque" component={HpTorqueCalculator} />
         <Route path="/calculators/piston-speed" component={PistonSpeedCalculator} />
+        <Route path="/calculators/header-sizing" component={HeaderSizingCalculator} />
         <Route path="/calculators/afr-lambda" component={AfrLambdaCalculator} />
         <Route path="/calculators/quench-deck-height" component={QuenchDeckHeightCalculator} />
         <Route path="/calculators/pushrod-length" component={PushrodLengthCalculator} />
