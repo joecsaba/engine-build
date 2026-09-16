@@ -17,6 +17,7 @@ import { BuildBanner } from "@/components/BuildBanner";
 import { useRingGapSpecs, useRingGapMultipliers, useGasEngineRingRefs, type RingGapSpec, type RingGapMultiplier } from "@/hooks/useEngineData";
 import { useDefaultPlatform } from "@/hooks/useDefaultPlatform";
 import { PresetBar } from "@/components/presets/PresetBar";
+import { ToolsForThisJob } from "@/components/affiliate/ToolsForThisJob";
 
 // ── Types ──────────────────────────────────────────────────────────────────────
 
@@ -1142,6 +1143,7 @@ export default function RingGapAdvancedCalculator() {
 
       </div>{/* end flex row */}
 
+      <ToolsForThisJob calculator="ring-gap" />
       <CalculatorContent data={ringGapAdvancedContent} title="Piston Ring End Gap" />
     </div>
   );

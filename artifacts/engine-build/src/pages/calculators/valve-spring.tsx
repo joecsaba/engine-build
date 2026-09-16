@@ -11,6 +11,7 @@ import { Info } from "lucide-react";
 import { CalculatorContent } from "@/components/calculators/CalculatorContent";
 import { HelpSidebar } from "@/components/calculators/HelpCard";
 import valveSpringContent from "@/data/calculatorContent/valve-spring.mjs";
+import { ToolsForThisJob } from "@/components/affiliate/ToolsForThisJob";
 
 /* ── Application safety margins ───────────────────────────────── */
 
@@ -1764,6 +1765,7 @@ export default function ValveSpringCalculator() {
 
       </div>{/* end flex row */}
 
+      <ToolsForThisJob calculator="valve-spring" />
       <CalculatorContent data={valveSpringContent} title="Valve Springs" />
     </div>
   );

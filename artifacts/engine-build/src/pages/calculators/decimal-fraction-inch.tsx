@@ -6,6 +6,7 @@ import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 import { Select, SelectContent, SelectItem, SelectTrigger, SelectValue } from "@/components/ui/select";
 import { CalculatorContent } from "@/components/calculators/CalculatorContent";
 import decimalFractionContent from "@/data/calculatorContent/decimal-fraction-inch.mjs";
+import { ToolsForThisJob } from "@/components/affiliate/ToolsForThisJob";
 
 function reduceFraction(num: number, denom: number): { num: number; denom: number } {
   let n = num;
@@ -250,6 +251,7 @@ export default function DecimalFractionInchConverter() {
         </Card>
       </div>
 
+      <ToolsForThisJob calculator="decimal-fraction-inch" />
       <CalculatorContent data={decimalFractionContent} title="Decimal to Fraction Inch" />
     </div>
   );

@@ -7,6 +7,7 @@ import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 import { Select, SelectContent, SelectItem, SelectTrigger, SelectValue } from "@/components/ui/select";
 import { CalculatorContent } from "@/components/calculators/CalculatorContent";
 import wrenchSizeContent from "@/data/calculatorContent/wrench-size-converter.mjs";
+import { ToolsForThisJob } from "@/components/affiliate/ToolsForThisJob";
 
 const MM_PER_INCH = 25.4;
 
@@ -624,6 +625,7 @@ export default function WrenchSizeConverter() {
         </Card>
       </div>
 
+      <ToolsForThisJob calculator="wrench-size-converter" />
       <CalculatorContent data={wrenchSizeContent} title="Wrench Size Converter" />
     </div>
   );

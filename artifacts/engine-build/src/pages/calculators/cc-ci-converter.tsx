@@ -6,6 +6,7 @@ import { Label } from "@/components/ui/label";
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 import { CalculatorContent } from "@/components/calculators/CalculatorContent";
 import ccCiContent from "@/data/calculatorContent/cc-ci-converter.mjs";
+import { ToolsForThisJob } from "@/components/affiliate/ToolsForThisJob";
 
 // 1 cubic inch = 16.387064 cm³ (exact: 2.54³)
 const CC_PER_CI = 16.387064;
@@ -167,6 +168,7 @@ export default function CcCiConverter() {
         </Card>
       </div>
 
+      <ToolsForThisJob calculator="cc-ci-converter" />
       <CalculatorContent data={ccCiContent} title="CC ↔ Cubic Inch" />
     </div>
   );

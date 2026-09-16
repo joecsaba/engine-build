@@ -9,6 +9,7 @@ import { useDieselPlatforms } from "@/hooks/useEngineData";
 import { CalculatorContent } from "@/components/calculators/CalculatorContent";
 import { HelpSidebar } from "@/components/calculators/HelpCard";
 import dieselLiftPumpContent from "@/data/calculatorContent/diesel-lift-pump.mjs";
+import { ToolsForThisJob } from "@/components/affiliate/ToolsForThisJob";
 
 // ── Types ───────────────────────────────────────────────────────────────────────
 
@@ -967,6 +968,7 @@ export default function DieselLiftPumpCalculator() {
         </div>
       </div>
 
+      <ToolsForThisJob calculator="diesel-lift-pump" />
       <CalculatorContent data={dieselLiftPumpContent} title="Diesel Lift Pump & Fuel System" />
 
       {/* ──────────── COLLAPSIBLE: SIZING GUIDE ──────────── */}

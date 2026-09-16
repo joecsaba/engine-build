@@ -7,6 +7,7 @@ import { Info } from "lucide-react";
 import { CalculatorContent } from "@/components/calculators/CalculatorContent";
 import { HelpSidebar } from "@/components/calculators/HelpCard";
 import torqueExtensionContent from "@/data/calculatorContent/torque-extension.mjs";
+import { ToolsForThisJob } from "@/components/affiliate/ToolsForThisJob";
 
 function TorqueDiagram({ wrenchLength, extensionLength }: { wrenchLength: number; extensionLength: number }) {
   const total = wrenchLength + extensionLength;
@@ -273,6 +274,7 @@ export default function TorqueExtensionCalculator() {
 
       </div>{/* end flex row */}
 
+      <ToolsForThisJob calculator="torque-extension" />
       <CalculatorContent data={torqueExtensionContent} title="Torque Extension" />
     </div>
   );

@@ -11,6 +11,7 @@ import { BuildBanner } from "@/components/BuildBanner";
 import { CalculatorContent } from "@/components/calculators/CalculatorContent";
 import { HelpSidebar } from "@/components/calculators/HelpCard";
 import quenchDeckHeightContent from "@/data/calculatorContent/quench-deck-height.mjs";
+import { ToolsForThisJob } from "@/components/affiliate/ToolsForThisJob";
 
 // ── Types ─────────────────────────────────────────────────────────────────────
 
@@ -830,6 +831,7 @@ export default function QuenchDeckHeightCalculator() {
 
       </div>{/* end flex row */}
 
+      <ToolsForThisJob calculator="quench-deck-height" />
       <CalculatorContent data={quenchDeckHeightContent} title="Quench & Deck Height" />
     </div>
   );

@@ -6,6 +6,7 @@ import { Label } from "@/components/ui/label";
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 import { CalculatorContent } from "@/components/calculators/CalculatorContent";
 import torqueUnitsContent from "@/data/calculatorContent/torque-units-converter.mjs";
+import { ToolsForThisJob } from "@/components/affiliate/ToolsForThisJob";
 
 // Reference values per ft-lb (NIST):
 // 1 ft-lb = 1.3558179483 N·m
@@ -176,6 +177,7 @@ export default function TorqueUnitsConverter() {
         </Card>
       </div>
 
+      <ToolsForThisJob calculator="torque-units-converter" />
       <CalculatorContent data={torqueUnitsContent} title="Torque Units" />
     </div>
   );

@@ -5,6 +5,7 @@ import { Select, SelectContent, SelectItem, SelectTrigger, SelectValue } from "@
 import { Label } from "@/components/ui/label";
 import { CalculatorContent } from "@/components/calculators/CalculatorContent";
 import anFittingContent from "@/data/calculatorContent/an-fitting-size.mjs";
+import { ToolsForThisJob } from "@/components/affiliate/ToolsForThisJob";
 
 interface AnSize {
   dash: string;          // e.g. "-6"
@@ -128,6 +129,7 @@ export default function AnFittingSize() {
         </Card>
       </div>
 
+      <ToolsForThisJob calculator="an-fitting-size" />
       <CalculatorContent data={anFittingContent} title="AN Fitting Size" />
     </div>
   );

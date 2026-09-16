@@ -16,6 +16,7 @@ import { Info } from "lucide-react";
 import { useManufacturers, useFamilies, useFamilyEngines } from "@/hooks/useEngineData";
 import { PresetBar } from "@/components/presets/PresetBar";
 import { useDefaultPlatform } from "@/hooks/useDefaultPlatform";
+import { ToolsForThisJob } from "@/components/affiliate/ToolsForThisJob";
 
 export default function DisplacementCalculator() {
   const platform = useDefaultPlatform();
@@ -194,6 +195,7 @@ export default function DisplacementCalculator() {
 
       </div>{/* end flex row */}
 
+      <ToolsForThisJob calculator="displacement" />
       <CalculatorContent data={displacementContent} title="Engine Displacement" />
     </div>
   );

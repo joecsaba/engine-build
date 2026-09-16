@@ -11,6 +11,7 @@ import {
   LineChart, Line, XAxis, YAxis, CartesianGrid, Tooltip, ReferenceLine,
   ResponsiveContainer, Area, ComposedChart, Legend,
 } from "recharts";
+import { ToolsForThisJob } from "@/components/affiliate/ToolsForThisJob";
 
 /* ══════════════════════════════════════════════════════════════════
    TYPES & CONSTANTS
@@ -588,6 +589,7 @@ export default function IgnitionTimingCurveCalculator() {
         </p>
       </div>
 
+      <ToolsForThisJob calculator="ignition-timing-curve" />
       <CalculatorContent data={ignitionTimingContent} title="Ignition Timing Curve" />
     </div>
   );

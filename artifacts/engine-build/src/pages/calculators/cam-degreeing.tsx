@@ -7,6 +7,7 @@ import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 import { ChevronDown, Printer, Clipboard, Check, Info } from "lucide-react";
 import { CalculatorContent } from "@/components/calculators/CalculatorContent";
 import camDegreeingContent from "@/data/calculatorContent/cam-degreeing.mjs";
+import { ToolsForThisJob } from "@/components/affiliate/ToolsForThisJob";
 
 // ── Types ──────────────────────────────────────────────────────────────────────
 
@@ -945,6 +946,7 @@ export default function CamDegreeingCalculator() {
 
         </div>{/* end flex row */}
 
+        <ToolsForThisJob calculator="cam-degreeing" />
         <CalculatorContent data={camDegreeingContent} title="Cam Degreeing" />
       </div>
     </div>

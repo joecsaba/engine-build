@@ -11,6 +11,7 @@ import { Info } from "lucide-react";
 import { CalculatorContent } from "@/components/calculators/CalculatorContent";
 import { HelpSidebar } from "@/components/calculators/HelpCard";
 import pushrodLengthContent from "@/data/calculatorContent/pushrod-length.mjs";
+import { ToolsForThisJob } from "@/components/affiliate/ToolsForThisJob";
 
 /* ── Platform data ──────────────────────────────────────────────── */
 
@@ -815,6 +816,7 @@ export default function PushrodLengthCalculator() {
 
       </div>{/* end flex row */}
 
+      <ToolsForThisJob calculator="pushrod-length" />
       <CalculatorContent data={pushrodLengthContent} title="Pushrod Length" />
     </div>
   );

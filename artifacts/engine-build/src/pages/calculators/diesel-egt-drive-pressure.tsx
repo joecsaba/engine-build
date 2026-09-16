@@ -10,6 +10,7 @@ import { useBuildContext } from "@/context/BuildContext";
 import { CalculatorContent } from "@/components/calculators/CalculatorContent";
 import { HelpSidebar } from "@/components/calculators/HelpCard";
 import dieselEgtContent from "@/data/calculatorContent/diesel-egt-drive-pressure.mjs";
+import { ToolsForThisJob } from "@/components/affiliate/ToolsForThisJob";
 
 // ── Types ───────────────────────────────────────────────────────────────────────
 
@@ -1220,6 +1221,7 @@ export default function DieselEgtDrivePressureCalculator() {
         </div>
       )}
 
+      <ToolsForThisJob calculator="diesel-egt-drive-pressure" />
       <CalculatorContent data={dieselEgtContent} title="EGT & Drive Pressure" />
 
       {/* ══════════════════════════════════════════════════════════════════════════ */}

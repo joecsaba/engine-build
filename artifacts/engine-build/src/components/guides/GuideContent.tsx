@@ -1,6 +1,7 @@
 import { Link } from "wouter";
 import { ArrowLeft, Printer } from "lucide-react";
 import { Button } from "@/components/ui/button";
+import { ToolsForThisJob } from "@/components/affiliate/ToolsForThisJob";
 
 export interface GuideContentSection {
   heading: string;
@@ -120,6 +121,8 @@ export function GuideContent({ data, title, description, level }: Props) {
             />
           </section>
         ))}
+
+        <ToolsForThisJob guide={data.slug} />
 
         {data.related && data.related.length > 0 && (
           <div className="mt-8 rounded-lg border p-4">

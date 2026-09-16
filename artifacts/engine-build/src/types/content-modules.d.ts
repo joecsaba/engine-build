@@ -73,3 +73,21 @@ declare module "@/data/seoDescriptions.mjs" {
     families: unknown[];
   }): string;
 }
+
+// Amazon affiliate "Tools for this job" placements — see src/data/affiliateTools.mjs.
+declare module "@/data/affiliateTools.mjs" {
+  export interface AffiliateTool {
+    name: string;
+    /** Amazon search terms; used unless `dp` is set. */
+    q: string;
+    /** One line on why this job needs it. */
+    why: string;
+    /** Optional pinned ASIN; takes precedence over the search. */
+    dp?: string;
+  }
+  export function toolUrl(tool: AffiliateTool): string;
+  export const CALCULATOR_TOOLS: Record<string, AffiliateTool[]>;
+  export const GUIDE_TOOLS: Record<string, AffiliateTool[]>;
+  const all: { CALCULATOR_TOOLS: typeof CALCULATOR_TOOLS; GUIDE_TOOLS: typeof GUIDE_TOOLS };
+  export default all;
+}

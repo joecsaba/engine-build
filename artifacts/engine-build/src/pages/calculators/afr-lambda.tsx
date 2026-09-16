@@ -8,6 +8,7 @@ import { ChevronDown, Info } from "lucide-react";
 import { CalculatorContent } from "@/components/calculators/CalculatorContent";
 import { HelpSidebar } from "@/components/calculators/HelpCard";
 import afrLambdaContent from "@/data/calculatorContent/afr-lambda.mjs";
+import { ToolsForThisJob } from "@/components/affiliate/ToolsForThisJob";
 
 // ── Types ───────────────────────────────────────────────────────────────────────
 
@@ -717,6 +718,7 @@ export default function AfrLambdaCalculator() {
 
       </div>{/* end flex row */}
 
+      <ToolsForThisJob calculator="afr-lambda" />
       <CalculatorContent data={afrLambdaContent} title="AFR & Lambda" />
     </div>
   );

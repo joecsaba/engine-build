@@ -9,6 +9,7 @@ import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 import { CalculatorContent } from "@/components/calculators/CalculatorContent";
 import { HelpCard } from "@/components/calculators/HelpCard";
 import compressionRatioContent from "@/data/calculatorContent/compression-ratio.mjs";
+import { ToolsForThisJob } from "@/components/affiliate/ToolsForThisJob";
 
 function getOctaneRec(cr: number): { label: string; color: string; bg: string } {
   if (cr <= 9.5) return { label: "Regular 87 octane", color: "text-green-700", bg: "bg-green-50 border-green-200" };
@@ -184,6 +185,7 @@ export default function CompressionRatioCalculator() {
       <SourceNote book="horsepower" context="the cranking-pressure cross-check used to sanity-test dynamic compression" />
 
 
+      <ToolsForThisJob calculator="compression-ratio" />
       <CalculatorContent data={compressionRatioContent} title="Compression Ratio" />
     </div>
   );

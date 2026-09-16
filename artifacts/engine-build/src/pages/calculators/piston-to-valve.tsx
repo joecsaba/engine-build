@@ -14,6 +14,7 @@ import {
   LineChart, Line, XAxis, YAxis, CartesianGrid, Tooltip, ReferenceLine,
   ResponsiveContainer,
 } from "recharts";
+import { ToolsForThisJob } from "@/components/affiliate/ToolsForThisJob";
 
 // ── Types ──────────────────────────────────────────────────────────────────────
 
@@ -1100,6 +1101,7 @@ export default function PistonToValveCalculator() {
 
         </div>{/* end flex row */}
 
+        <ToolsForThisJob calculator="piston-to-valve" />
         <CalculatorContent data={pistonToValveContent} title="Piston-to-Valve Clearance" />
       </div>
     </div>

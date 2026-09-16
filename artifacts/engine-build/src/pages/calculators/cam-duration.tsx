@@ -13,6 +13,7 @@ import { useManufacturers, useFamilies, useFamilyEngines } from "@/hooks/useEngi
 import { CalculatorContent } from "@/components/calculators/CalculatorContent";
 import { HelpSidebar } from "@/components/calculators/HelpCard";
 import camDurationContent from "@/data/calculatorContent/cam-duration.mjs";
+import { ToolsForThisJob } from "@/components/affiliate/ToolsForThisJob";
 
 // ── Types ──────────────────────────────────────────────────────────────────────
 
@@ -873,6 +874,7 @@ export default function CamDurationCalculator() {
 
       </div>{/* end flex row */}
 
+      <ToolsForThisJob calculator="cam-duration" />
       <CalculatorContent data={camDurationContent} title="Advanced Cam Calculator" />
       </div>
     </div>

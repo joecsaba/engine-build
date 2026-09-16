@@ -10,6 +10,7 @@ import { HelpSidebar } from "@/components/calculators/HelpCard";
 import { useBuildField } from "@/hooks/useBuildField";
 import { useBuildContext } from "@/context/BuildContext";
 import { useEnginesWithClearances, useBearingClearanceRecs, type BearingClearanceRec } from "@/hooks/useEngineData";
+import { ToolsForThisJob } from "@/components/affiliate/ToolsForThisJob";
 
 // ── Types ──────────────────────────────────────────────────────────────────────
 
@@ -1360,6 +1361,7 @@ export default function BearingClearanceCalculator() {
             </div>
           </CardContent>
         </Card>
+        <ToolsForThisJob calculator="bearing-clearance" />
       </HelpSidebar>
 
       </div>{/* end flex row */}

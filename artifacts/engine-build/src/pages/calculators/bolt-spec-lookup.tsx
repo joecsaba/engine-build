@@ -7,6 +7,7 @@ import { AlertTriangle, Info } from "lucide-react";
 import { useBoltSpecs, type BoltSpecPlatform, type BoltSpecEntry } from "@/hooks/useEngineData";
 import { CalculatorContent } from "@/components/calculators/CalculatorContent";
 import boltSpecContent from "@/data/calculatorContent/bolt-spec-lookup.mjs";
+import { ToolsForThisJob } from "@/components/affiliate/ToolsForThisJob";
 
 // ── Helpers ───────────────────────────────────────────────────────────────────
 
@@ -225,6 +226,7 @@ export default function BoltSpecLookup() {
           </div>
         )}
 
+        <ToolsForThisJob calculator="bolt-spec-lookup" />
         <CalculatorContent data={boltSpecContent} title="Bolt Spec Lookup" />
       </div>
     </div>
