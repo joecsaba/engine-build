@@ -71,20 +71,25 @@ function handler(event) {
     };
   }
 
-  // 5. /ads.txt must 404 rather than fall through to the SPA.
-  // The file was removed when the ad-network code came out. Because it has a
-  // dot it skips the rewrite below, misses in S3, and hits the 404 → /index.html
-  // error response — which returns the homepage with a 200. That is a soft 404,
-  // and it also means ads.txt crawlers get HTML instead of a clean "no file".
+  // 5. /ads.txt -> the file Mediavine hosts for this site.
+  // Journey by Mediavine was installed 2026-09-16. Rather than copy their
+  // ads.txt into S3, redirect to the version they maintain — it carries a
+  // version stamp (v20260904 at install) and changes as demand partners come
+  // and go, so a static copy would drift and Mediavine flags stale files. This
+  // is what their WordPress plugin does. The IAB spec permits a single
+  // off-domain redirect and requires crawlers to follow it.
+  //
+  // This rule also keeps /ads.txt from falling through to the SPA: the path has
+  // a dot, so it would skip the rewrite below, miss in S3, and hit the
+  // 404 -> /index.html error response — the homepage with a 200.
   if (uri === '/ads.txt') {
     return {
-      statusCode: 404,
-      statusDescription: 'Not Found',
+      statusCode: 301,
+      statusDescription: 'Moved Permanently',
       headers: {
-        'content-type': { value: 'text/plain' },
+        location: { value: 'https://adstxt.mediavine.com/sites/9c5b9a80-e2da-4fa3-82c9-3db1731d9991/ads.txt' },
         'cache-control': { value: 'max-age=3600' }
-      },
-      body: 'Not Found'
+      }
     };
   }
 
