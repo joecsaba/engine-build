@@ -17,7 +17,7 @@ export default function Privacy() {
 
       <div className="container mx-auto max-w-4xl px-4 py-10">
         <div className="bg-white rounded-xl shadow-sm border p-8 md:p-12 prose prose-gray max-w-none">
-          <p className="text-sm text-gray-500">Last updated: July 23, 2026</p>
+          <p className="text-sm text-gray-500">Last updated: September 16, 2026</p>
 
           <h2>Introduction</h2>
           <p>
@@ -36,13 +36,13 @@ export default function Privacy() {
 
           <h2>Cookies &amp; Your Choices</h2>
           <p>
-            Engine-build.com currently uses only Google Analytics cookies (described below).
-            You can control or block cookies at any time through your browser settings — most
-            browsers let you refuse all cookies, accept only certain types, or delete existing
-            cookies. Blocking analytics cookies does not affect site functionality. If we add
-            an advertising partner in the future, we will introduce a Consent Management
-            Platform (CMP) so you can accept, reject, or customize advertising cookies, and
-            this policy will be updated accordingly.
+            Engine-build.com uses cookies from Google Analytics and from Mediavine, our
+            advertising partner, and Mediavine's ad partners (both described below). You can
+            control or block cookies at any time through your browser settings — most browsers
+            let you refuse all cookies, accept only certain types, or delete existing cookies.
+            Blocking cookies does not affect the calculators or engine data. Visitors in regions
+            covered by GDPR or CCPA are shown Mediavine's Consent Management Platform on first
+            visit, where you can accept, reject, or customize advertising cookies.
           </p>
 
           <h2>Google Analytics (GA4)</h2>
@@ -66,13 +66,97 @@ export default function Privacy() {
             </a>.
           </p>
 
-          <h2>Advertising (planned)</h2>
+          <h2>Advertising (Journey by Mediavine)</h2>
           <p>
-            Engine-build.com does not currently display third-party advertising. If we
-            partner with an ad network in the future, this Privacy Policy will be updated to
-            name the network, describe the cookies it and its partners place, list the
-            personalized-advertising controls available to you, and describe the Consent
-            Management Platform we will use to obtain and record your consent.
+            Engine-build.com displays advertising through Journey by Mediavine. Advertising is
+            what keeps the calculators and the engine database free to use. Mediavine's
+            required disclosure follows, reproduced exactly as they publish it.
+          </p>
+
+          {/* Mediavine's required text, Ver 1.1 (05/09/2022), reproduced verbatim from
+              help.mediavine.com/privacy-policy-language. Do not edit — it is their
+              disclosure, not ours, and they require it unchanged. */}
+          <h3>Mediavine Programmatic Advertising (Ver 1.1)</h3>
+          <p>
+            The Website works with Mediavine to manage third-party interest-based advertising
+            appearing on the Website. Mediavine serves content and advertisements when you visit
+            the Website, which may use first and third-party cookies. A cookie is a small text
+            file which is sent to your computer or mobile device (referred to in this policy as a
+            “device”) by the web server so that a website can remember some information about
+            your browsing activity on the Website.
+          </p>
+          <p>
+            First party cookies are created by the website that you are visiting. A third-party
+            cookie is frequently used in behavioral advertising and analytics and is created by a
+            domain other than the website you are visiting. Third-party cookies, tags, pixels,
+            beacons and other similar technologies (collectively, “Tags”) may be placed on the
+            Website to monitor interaction with advertising content and to target and optimize
+            advertising. Each internet browser has functionality so that you can block both first
+            and third-party cookies and clear your browser’s cache. The "help" feature of the
+            menu bar on most browsers will tell you how to stop accepting new cookies, how to
+            receive notification of new cookies, how to disable existing cookies and how to clear
+            your browser’s cache. For more information about cookies and how to disable them, you
+            can consult the information at{" "}
+            <a href="https://www.allaboutcookies.org/manage-cookies/" target="_blank" rel="noreferrer noopener nofollow">
+              All About Cookies
+            </a>.
+          </p>
+          <p>
+            Without cookies you may not be able to take full advantage of the Website content and
+            features. Please note that rejecting cookies does not mean that you will no longer see
+            ads when you visit our Site. In the event you opt-out, you will still see
+            non-personalized advertisements on the Website.
+          </p>
+          <p>The Website collects the following data using a cookie when serving personalized ads:</p>
+          <ul>
+            <li>IP Address</li>
+            <li>Operating System type</li>
+            <li>Operating System version</li>
+            <li>Device Type</li>
+            <li>Language of the website</li>
+            <li>Web browser type</li>
+            <li>Email (in hashed form)</li>
+          </ul>
+          <p>
+            Mediavine Partners (companies listed below with whom Mediavine shares data) may also
+            use this data to link to other end user information the partner has independently
+            collected to deliver targeted advertisements. Mediavine Partners may also separately
+            collect data about end users from other sources, such as advertising IDs or pixels,
+            and link that data to data collected from Mediavine publishers in order to provide
+            interest-based advertising across your online experience, including devices, browsers
+            and apps. This data includes usage data, cookie information, device information,
+            information about interactions between users and advertisements and websites,
+            geolocation data, traffic data, and information about a visitor’s referral source to
+            a particular website. Mediavine Partners may also create unique IDs to create audience
+            segments, which are used to provide targeted advertising.
+          </p>
+          <p>
+            If you would like more information about this practice and to know your choices to
+            opt-in or opt-out of this data collection, please visit{" "}
+            <a href="https://thenai.org/opt-out/" target="_blank" rel="noreferrer noopener nofollow">
+              National Advertising Initiative opt out page
+            </a>. You may also visit{" "}
+            <a href="http://optout.aboutads.info/#/" target="_blank" rel="noreferrer noopener nofollow">
+              Digital Advertising Alliance website
+            </a>{" "}
+            and{" "}
+            <a href="http://optout.networkadvertising.org/#" target="_blank" rel="noreferrer noopener nofollow">
+              Network Advertising Initiative website
+            </a>{" "}
+            to learn more information about interest-based advertising. You may download the
+            AppChoices app at{" "}
+            <a href="https://youradchoices.com/appchoices" target="_blank" rel="noreferrer noopener nofollow">
+              Digital Advertising Alliance’s AppChoices app
+            </a>{" "}
+            to opt out in connection with mobile apps, or use the platform controls on your mobile
+            device to opt out.
+          </p>
+          <p>
+            For specific information about Mediavine Partners, the data each collects and their
+            data collection and privacy policies, please visit{" "}
+            <a href="https://www.mediavine.com/ad-partners/" target="_blank" rel="noreferrer noopener nofollow">
+              Mediavine Partners
+            </a>.
           </p>
 
           <h2>Contact Form (Formspree)</h2>
@@ -104,12 +188,20 @@ export default function Privacy() {
 
           <h2>Cookies in use</h2>
           <p>
-            Our site currently uses cookies from a single service:
+            Our site uses cookies from two services:
           </p>
           <ul>
             <li>
               <strong>Google Analytics</strong> — analytics cookies to measure site usage
               (e.g., <code>_ga</code>, <code>_ga_*</code>)
+            </li>
+            <li>
+              <strong>Mediavine and Mediavine Partners</strong> — advertising and measurement
+              cookies used to serve, frequency-cap and, with your consent where required,
+              personalize ads. The partners and their policies are listed at{" "}
+              <a href="https://www.mediavine.com/ad-partners/" target="_blank" rel="noopener noreferrer">
+                Mediavine Partners
+              </a>.
             </li>
           </ul>
           <p>
@@ -137,8 +229,8 @@ export default function Privacy() {
           </p>
           <p>
             Because we do not maintain user accounts or a personal data database, most of the
-            data associated with your visit is held by third-party services (Google Analytics,
-            and our future advertising network). You can exercise your rights with those
+            data associated with your visit is held by third-party services (Google Analytics
+            and Mediavine). You can exercise your rights with those
             services directly, or refuse all non-essential cookies on the consent banner. For
             any other requests, please contact us.
           </p>
