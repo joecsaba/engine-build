@@ -1326,42 +1326,44 @@ export default function BearingClearanceCalculator() {
 
       </div>{/* end left column */}
 
-      <HelpSidebar className="xl:w-80 shrink-0 space-y-6">
-        <Card className="sticky top-20">
-          <CardHeader className="pb-3">
-            <CardTitle className="text-base flex items-center gap-2">
-              <Info className="w-4 h-4 text-[#E85D04]" />
-              Quick Reference
-            </CardTitle>
-          </CardHeader>
-          <CardContent className="text-sm text-muted-foreground space-y-4">
-            <div>
-              <h4 className="font-semibold text-foreground mb-1">Oil Clearance</h4>
-              <p>Clearance = Housing bore - Journal diameter. Too tight starves the bearing; too loose drops oil pressure.</p>
-            </div>
-            <div>
-              <h4 className="font-semibold text-foreground mb-1">General Rule</h4>
-              <p>0.001" per inch of journal diameter is a good starting point. Mains slightly looser than rods.</p>
-            </div>
-            <div>
-              <h4 className="font-semibold text-foreground mb-1">Typical Clearances</h4>
-              <ul className="space-y-1 mt-1">
-                <li><span className="font-medium text-foreground">SBC mains:</span> 0.0020-0.0025"</li>
-                <li><span className="font-medium text-foreground">SBC rods:</span> 0.0018-0.0022"</li>
-                <li><span className="font-medium text-foreground">LS mains:</span> 0.0015-0.0021"</li>
-              </ul>
-            </div>
-            <div className="border-t pt-3">
-              <h4 className="font-semibold text-foreground mb-1">Plastigage Colors</h4>
-              <ul className="space-y-1 mt-1 text-xs">
-                <li className="flex justify-between"><span>Green:</span><span className="font-mono">0.001-0.003"</span></li>
-                <li className="flex justify-between"><span>Red:</span><span className="font-mono">0.002-0.006"</span></li>
-                <li className="flex justify-between"><span>Blue:</span><span className="font-mono">0.004-0.009"</span></li>
-              </ul>
-            </div>
-          </CardContent>
-        </Card>
-        <ToolsForThisJob calculator="bearing-clearance" />
+      <HelpSidebar className="xl:w-80 shrink-0">
+        <div className="sticky top-20 space-y-6">
+          <Card>
+            <CardHeader className="pb-3">
+              <CardTitle className="text-base flex items-center gap-2">
+                <Info className="w-4 h-4 text-[#E85D04]" />
+                Quick Reference
+              </CardTitle>
+            </CardHeader>
+            <CardContent className="text-sm text-muted-foreground space-y-4">
+              <div>
+                <h4 className="font-semibold text-foreground mb-1">Oil Clearance</h4>
+                <p>Clearance = Housing bore - Journal diameter. Too tight starves the bearing; too loose drops oil pressure.</p>
+              </div>
+              <div>
+                <h4 className="font-semibold text-foreground mb-1">General Rule</h4>
+                <p>0.001" per inch of journal diameter is a good starting point. Mains slightly looser than rods.</p>
+              </div>
+              <div>
+                <h4 className="font-semibold text-foreground mb-1">Typical Clearances</h4>
+                <ul className="space-y-1 mt-1">
+                  <li><span className="font-medium text-foreground">SBC mains:</span> 0.0020-0.0025"</li>
+                  <li><span className="font-medium text-foreground">SBC rods:</span> 0.0018-0.0022"</li>
+                  <li><span className="font-medium text-foreground">LS mains:</span> 0.0015-0.0021"</li>
+                </ul>
+              </div>
+              <div className="border-t pt-3">
+                <h4 className="font-semibold text-foreground mb-1">Plastigage Colors</h4>
+                <ul className="space-y-1 mt-1 text-xs">
+                  <li className="flex justify-between"><span>Green:</span><span className="font-mono">0.001-0.003"</span></li>
+                  <li className="flex justify-between"><span>Red:</span><span className="font-mono">0.002-0.006"</span></li>
+                  <li className="flex justify-between"><span>Blue:</span><span className="font-mono">0.004-0.009"</span></li>
+                </ul>
+              </div>
+            </CardContent>
+          </Card>
+          <ToolsForThisJob calculator="bearing-clearance" />
+        </div>
       </HelpSidebar>
 
       </div>{/* end flex row */}
