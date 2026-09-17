@@ -221,6 +221,10 @@ const STATIC_PAGES = [
   { path: "/sign-up",           title: "Create a Free Account",                                      description: "Create a free Engine-build.com account to sync favorites, calculator presets, and build sheets across phone, tablet, and shop laptop.",               priority: 0.6 },
   { path: "/me",                title: "Dashboard",                                                  description: "Your engine-building hub: favorites, recents, saved presets, builds, and defaults.",                                                                   noindex: true },
   { path: "/settings",          title: "Settings",                                                   description: "Manage your display name, default units, and default engine platform.",                                                                                noindex: true },
+  // The body CloudFront serves for every real 404 (and S3 403), with a 404
+  // status — see the distribution's custom error responses. Also written to
+  // /404.html at the root, because CloudFront fetches the error page by key.
+  { path: "/404",               title: "Page Not Found",                                             description: "That address does not exist on Engine-build.com. It may have a typo or the page may have moved. Start again from the calculators, engine specs or guides.", noindex: true },
 ];
 
 // Category landing pages
@@ -378,6 +382,19 @@ const STATIC_EXTRA = {
         <li><a href="/calculators/cam-selector">Camshaft selector</a> — match a grind to the build</li>
         <li><a href="/calculators/head-flow">Cylinder head flow calculator</a> — CFM to horsepower</li>
         <li><a href="/engines">Engine specs database</a> — bore, stroke and compression for 1,472 engines</li>
+      </ul>`,
+
+  // It is a normal prerendered page, so it still loads the app bundle. A
+  // client-side route missing from the CloudFront function's allow-list
+  // therefore degrades to "works for humans, 404 for crawlers" — the router
+  // still renders the right page — rather than to a blank screen.
+  "/404": () => `
+      <p>Check the address for a typo. If you followed a link here, the page has moved or been retired. The main sections:</p>
+      <ul>
+        <li><a href="/calculators">Engine calculators</a> — compression ratio, displacement, ring gap, cam selection and 45 more</li>
+        <li><a href="/engines">Engine specs</a> — bore, stroke, displacement and compression for 1,472 engines</li>
+        <li><a href="/cams">Camshaft specs</a> — duration, lift and LSA for 81 grinds</li>
+        <li><a href="/guides">Guides</a> — bearing clearance, ring gap, degreeing a cam, break-in</li>
       </ul>`,
 };
 
@@ -1074,6 +1091,9 @@ async function main() {
     const outFile = resolve(outDir, "index.html");
     await mkdir(outDir, { recursive: true });
     await writeFile(outFile, html, "utf8");
+    // CloudFront fetches its custom error page by object key, so the
+    // not-found page also lives at the root as /404.html.
+    if (entry.path === "/404") await writeFile(resolve(DIST, "404.html"), html, "utf8");
     written++;
   }
 

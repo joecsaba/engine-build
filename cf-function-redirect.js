@@ -93,13 +93,40 @@ function handler(event) {
     };
   }
 
-  // 6. Directory-style URL resolution.
+  // 6. Client-side-only routes.
+  // These have no prerendered file and need the app shell so the client
+  // router can render them. They are the ONLY paths that get /index.html with
+  // a 200. Everything else that misses in S3 becomes a real 404 through the
+  // distribution's custom error responses (403/404 -> /404.html, status 404).
+  //
+  // Before this list existed the error response was /index.html with a 200,
+  // which made every mistyped or retired URL return the homepage as a
+  // success — Google's "soft 404" — and turned WAF blocks into the homepage
+  // too. Audited against App.tsx on 2026-09-17. When a new client-only route
+  // ships, add it here; a miss degrades to "works for humans, 404 for
+  // crawlers" because /404.html still boots the app, not to a broken page.
+  var SPA_EXACT = ['/build-sheets/record'];
+  var SPA_PREFIXES = ['/build-sheets/build/', '/articles', '/sign-in/', '/sign-up/', '/admin/'];
+  var i;
+  for (i = 0; i < SPA_EXACT.length; i++) {
+    if (uri === SPA_EXACT[i] || uri === SPA_EXACT[i] + '/') {
+      request.uri = '/index.html';
+      return request;
+    }
+  }
+  for (i = 0; i < SPA_PREFIXES.length; i++) {
+    if (uri.startsWith(SPA_PREFIXES[i])) {
+      request.uri = '/index.html';
+      return request;
+    }
+  }
+
+  // 7. Directory-style URL resolution.
   // Per-route prerendered HTML lives at /foo/bar/index.html. Without rewriting,
-  // S3 returns 404 for /foo/bar and CloudFront falls back to root /index.html,
-  // which defeats the entire prerender. Rewrite extension-less paths to their
-  // /index.html so prerendered files are served when present, and the existing
-  // 404 → /index.html error response covers SPA-only routes (e.g.
-  // /build-sheets/build/:id) that don't have a prerendered file.
+  // S3 returns 403 for /foo/bar (no list permission on the bucket) and the
+  // prerender is never served. Rewrite extension-less paths to their
+  // /index.html; a path with no prerendered file then misses in S3 and gets
+  // the real 404 page.
   var lastSlash = uri.lastIndexOf('/');
   var lastSegment = uri.substring(lastSlash + 1);
   if (lastSegment.indexOf('.') === -1) {
