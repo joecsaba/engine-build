@@ -18,6 +18,12 @@
     <meta name="robots" content="index, follow" />
     <link rel="canonical" href="https://engine-build.com/" />
     <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+    <!-- Browsers request /favicon.ico and iOS requests /apple-touch-icon.png
+         whether or not they are linked; without the files those were ~280
+         404s a day in the CloudFront logs and no home-screen icon on iOS.
+         Both are rasterized from favicon.svg. -->
+    <link rel="icon" href="/favicon.ico" sizes="32x32" />
+    <link rel="apple-touch-icon" href="/apple-touch-icon.png" />
 
     <meta property="og:type" content="website" />
     <meta property="og:site_name" content="Engine-build.com" />
