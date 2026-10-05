@@ -6,6 +6,7 @@ import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 import { Skeleton } from "@/components/ui/skeleton";
 import { SEOHead } from "@/components/SEOHead";
 import type { EngineFamilyDoc, EngineRecord } from "@/lib/engineTypes";
+import { engineNarrative } from "@/data/engineNarrative.mjs";
 
 /**
  * Engine spec page: /engines/<mfr>/<family>/<engine>
@@ -98,6 +99,17 @@ export default function EnginePage() {
           Print
         </Button>
       </div>
+
+      {/* Computed from this engine's own numbers — see src/data/engineNarrative.mjs.
+          The prerender emits the identical paragraphs, so indexed text and rendered
+          text cannot drift. */}
+      {engineNarrative(rec).length > 0 && (
+        <div className="mb-6 space-y-3 text-[15px] leading-relaxed text-foreground/90">
+          {engineNarrative(rec).map((para, i) => (
+            <p key={i}>{para}</p>
+          ))}
+        </div>
+      )}
 
       <SpecTable rec={rec} />
 

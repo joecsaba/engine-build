@@ -91,3 +91,9 @@ declare module "@/data/affiliateTools.mjs" {
   const all: { CALCULATOR_TOOLS: typeof CALCULATOR_TOOLS; GUIDE_TOOLS: typeof GUIDE_TOOLS };
   export default all;
 }
+
+// Computed prose for engine spec pages — see src/data/engineNarrative.mjs.
+declare module "@/data/engineNarrative.mjs" {
+  export function engineNarrative(e: object): string[];
+  export default engineNarrative;
+}

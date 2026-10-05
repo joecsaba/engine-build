@@ -91,6 +91,13 @@ export interface EngineRecord {
   vehicles: EngineVehicle[];
   variants: EngineVariant[];
   variantCount: number;
+  /** Where this engine sits in its family; feeds the computed prose. */
+  familyStats?: {
+    count: number;
+    minCi: number | null;
+    maxCi: number | null;
+    rank: "largest" | "smallest" | "middle" | "only";
+  };
 }
 
 export interface EngineFamilyDoc {

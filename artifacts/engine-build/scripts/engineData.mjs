@@ -695,6 +695,22 @@ export function loadEngineData() {
   // someone is genuinely cross-shopping), then the same manufacturer, then
   // anything close in size. Displacement is the axis builders actually compare
   // on, so a 350 sits next to a 383 rather than next to an unrelated 4-cylinder.
+  // Where each engine sits in its family — count, displacement span, and
+  // whether this one is the largest, smallest or in between. Feeds the family
+  // sentence in src/data/engineNarrative.mjs; carried into the runtime JSON so
+  // the React page can say the same thing the prerender does.
+  for (const fam of outFamilies) {
+    const ds = fam.engines.map((e) => e.displacement_ci).filter((v) => v != null);
+    const minCi = ds.length ? Math.min(...ds) : null;
+    const maxCi = ds.length ? Math.max(...ds) : null;
+    for (const e of fam.engines) {
+      const rank = e.displacement_ci == null || minCi === maxCi ? "only"
+        : e.displacement_ci === maxCi ? "largest"
+        : e.displacement_ci === minCi ? "smallest" : "middle";
+      e.familyStats = { count: fam.engines.length, minCi, maxCi, rank };
+    }
+  }
+
   const byDisp = outEngines
     .filter((e) => e.displacement_ci != null)
     .sort((a, b) => a.displacement_ci - b.displacement_ci);
