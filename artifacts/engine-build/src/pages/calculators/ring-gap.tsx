@@ -18,6 +18,7 @@ import { useRingGapSpecs, useRingGapMultipliers, useGasEngineRingRefs, type Ring
 import { useDefaultPlatform } from "@/hooks/useDefaultPlatform";
 import { PresetBar } from "@/components/presets/PresetBar";
 import { ToolsForThisJob } from "@/components/affiliate/ToolsForThisJob";
+import { ShareResult } from "@/components/calculators/ShareResult";
 
 // ── Types ──────────────────────────────────────────────────────────────────────
 
@@ -266,8 +267,16 @@ export default function RingGapAdvancedCalculator() {
 
   // Seed inputs from the query string so an engine spec page (or a link pasted
   // into a forum thread) lands on this calculator already filled in.
+  // Every option that changes the answer is a param, so the "Copy for forum"
+  // link reproduces exactly the result the poster saw. Unknown values are
+  // ignored rather than applied, so a mangled link cannot break the lookup.
   usePrefill({
     bore: setBore,
+    fuel: (v) => { if (v === "gas" || v === "diesel") setFuelType(v); },
+    app: (v) => { if (v in fallbackGasMultipliers) setGasApp(v); },
+    material: (v) => { if (["cast-iron", "moly", "steel", "stainless"].includes(v)) setMaterial(v as RingMaterial); },
+    piston: (v) => { if (["cast", "hypereutectic", "forged-4032", "forged-2618", "billet"].includes(v)) setPistonMat(v as PistonMaterial); },
+    diesel: (v) => setDieselEngine(v),
   });
   const { activeBuild, setField: setBuildField } = useBuildContext();
   const [boreMm, setBoreMm] = useState("");
@@ -793,6 +802,22 @@ export default function RingGapAdvancedCalculator() {
           </div>
         )}
       </div>
+
+      {topGap > 0 && (
+        <div className="mb-8 -mt-4">
+          <ShareResult
+            calcSlug="ring-gap"
+            toolName="Ring gap calculator"
+            title={`Ring gap, ${bore}" bore, ${isDieselWithSpec && activeDieselSpec ? activeDieselSpec.engine_label : `${gasAppLabels[gasApp] ?? gasApp}, ${material} rings`}`}
+            rows={[
+              { label: "top", value: `${formatInches(topGap)}"` },
+              { label: "second", value: `${formatInches(secondGap)}"` },
+              { label: "oil rails min", value: `${formatInches(oilGapMin)}"` },
+            ]}
+            params={{ bore, fuel: fuelType, app: fuelType === "gas" ? gasApp : undefined, material: fuelType === "gas" ? material : undefined, piston: fuelType === "gas" ? pistonMat : undefined, diesel: fuelType === "diesel" ? dieselEngine : undefined }}
+          />
+        </div>
+      )}
 
       {/* ── Diesel: Selected Spec Notes ────────────────────────────────────── */}
       {isDieselWithSpec && activeDieselSpec && activeDieselSpec.notes && (
