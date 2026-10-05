@@ -18,6 +18,7 @@ import { fileURLToPath, pathToFileURL } from "node:url";
 
 import GUIDES from "../src/data/guides/manifest.mjs";
 import { clampDesc, encodedLength, familyDescription, manufacturerDescription } from "../src/data/seoDescriptions.mjs";
+import { engineNarrative } from "../src/data/engineNarrative.mjs";
 import FAQ from "../src/data/faq.mjs";
 import { loadEngineData, writeRuntimeData } from "./engineData.mjs";
 import { loadCams, writeCamRuntime } from "./camData.mjs";
@@ -137,28 +138,28 @@ const CALCS = [
   { slug: "quench-deck-height",            category: "short-block",     title: "Quench & Deck Height Calculator — Squish",                description: "Piston-to-deck clearance, quench (squish) distance and compression ratio in one pass. Compare gasket thicknesses side by side and see all three update live." },
   { slug: "rod-ratio",                     category: "short-block",     title: "Rod Ratio Calculator — Compare 11 Engines",                description: "Enter rod length and stroke for your rod ratio instantly. Visual gauge shows where your combo lands, with 11 engines from LS1 to K24A to compare against." },
   { slug: "bearing-clearance",             category: "short-block",     title: "Bearing Clearance Calculator",                   description: "Main and rod bearing oil clearance from measurements or Plastigage. Per-bearing tables and oil viscosity recommendations." },
-  { slug: "intake-manifold-milling",       category: "short-block",     title: "Intake Manifold Milling Calculator",             description: "How much to mill the intake manifold after surfacing heads or decking the block. Tells you when correction is needed and how much." },
+  { slug: "intake-manifold-milling",       category: "short-block",     title: "Intake Manifold Milling Calculator — Surfacing Correction",             description: "How much to mill the intake manifold after surfacing heads or decking the block. Tells you when correction is needed and how much." },
   { slug: "bolt-spec-lookup",              category: "short-block",     title: "Head Bolt & Main Bolt Spec Lookup",              description: "Look up head bolt and main bolt thread sizes, diameters, torque specs, and ARP upgrade part numbers for any engine platform." },
   { slug: "cc-ci-converter",               category: "short-block",     title: "CC to Cubic Inch Converter",                     description: "Convert chamber volumes, piston dome/dish CCs, and displacement between cubic centimeters, cubic inches, liters, and fluid ounces." },
 
   // ─── Cam & Valvetrain ──────────────────────────────────────────────────
   { slug: "cam-selector",                  category: "cam-valvetrain",  title: "Camshaft Selector — What Cam Do I Need?", description: "Enter your engine, compression, transmission and goal. Get a recommended duration at 0.050 inch, LSA and lift, with matching real cams." },
   { slug: "cam-duration",                  category: "cam-valvetrain",  title: "Advanced Cam Timing Calculator",                 description: "Full cam analysis: valve events, overlap, recommended LSA, dynamic compression ratio and a rocker lift table. Works from the numbers on the cam card." },
-  { slug: "cam-degreeing",                 category: "cam-valvetrain",  title: "Cam Degreeing Calculator",                       description: "Step-by-step cam degreeing guide with intake centerline verification, advance/retard calculation, and dial indicator math." },
+  { slug: "cam-degreeing",                 category: "cam-valvetrain",  title: "Cam Degreeing Calculator — Intake Centerline & TDC",                       description: "Step-by-step cam degreeing guide with intake centerline verification, advance/retard calculation, and dial indicator math." },
   { slug: "valvetrain-builder",            category: "cam-valvetrain",  title: "Valvetrain RPM Builder",                         description: "Match cam, rockers, springs, and target RPM as a complete system. Valve float estimation, RPM safety graph, and cascade warnings." },
   { slug: "valve-spring",                  category: "cam-valvetrain",  title: "Valve Spring Calculator",                        description: "Validate valve spring specs for your cam profile. Seat pressure, open pressure, coil bind clearance, and spring rate analysis." },
-  { slug: "valve-shim",                    category: "cam-valvetrain",  title: "Valve Shim Calculator",                          description: "Calculate replacement shim sizes for shim-over-bucket and shim-under-bucket valvetrains. Nearest available shim lookup." },
+  { slug: "valve-shim",                    category: "cam-valvetrain",  title: "Valve Shim Calculator — Bucket & Shim Clearance Tool",                          description: "Calculate replacement shim sizes for shim-over-bucket and shim-under-bucket valvetrains. Nearest available shim lookup." },
   { slug: "pushrod-length",                category: "cam-valvetrain",  title: "Pushrod Length Calculator",                      description: "Correct pushrod length after head milling, cam swaps, or rocker changes. Stock lengths for SBC, BBC, LS, SBF, and Hemi." },
   { slug: "piston-to-valve",               category: "cam-valvetrain",  title: "Piston-to-Valve Clearance Calculator",           description: "Kinematic P2V simulation across the overlap region. Engine platform presets, cam advance slider, and interference warnings." },
   { slug: "head-flow",                     category: "cam-valvetrain",  title: "Cylinder Head Flow / CFM to HP Calculator",      description: "Convert flow bench CFM to horsepower potential. Flow coefficient, intake/exhaust ratio, port velocity, and comparison against popular heads." },
-  { slug: "head-milling",                  category: "cam-valvetrain",  title: "Head Milling Calculator",                        description: "Calculate chamber volume change, compression ratio shift, and intake manifold alignment when milling cylinder heads." },
+  { slug: "head-milling",                  category: "cam-valvetrain",  title: "Head Milling Calculator — CR, Cam Timing & Clearance",                        description: "Calculate chamber volume change, compression ratio shift, and intake manifold alignment when milling cylinder heads." },
 
   // ─── Power & Fuel ──────────────────────────────────────────────────────
   { slug: "hp-torque",                     category: "power-fuel",      title: "HP to Torque Calculator — Both Directions", description: "Bidirectional horsepower and torque calculator with the 5252 RPM crossover explained, plus Nm and kg-m conversions." },
-  { slug: "hp-estimator",                  category: "power-fuel",      title: "HP and Torque Estimator",                        description: "Estimate horsepower and torque for your build. Pick your engine, heads, cam, intake, exhaust, and compression for a data-backed estimate." },
+  { slug: "hp-estimator",                  category: "power-fuel",      title: "Engine Horsepower Calculator — HP Estimator",                        description: "Estimate horsepower and torque for your build. Pick your engine, heads, cam, intake, exhaust, and compression for a data-backed estimate." },
   { slug: "afr-lambda",                    category: "power-fuel",      title: "Lambda to AFR Converter — Both Directions",                         description: "Convert lambda to AFR or AFR to lambda for pump gas, E85, E98, methanol, propane and CNG. Instant result on both the gas scale and true AFR." },
   { slug: "header-sizing",                 category: "power-fuel",      title: "Exhaust Header Tube Length Calculator", description: "Header primary tube length and diameter from displacement and target RPM, with collector sizing and the tube sizes Hooker, Kooks and ARH actually ship." },
-  { slug: "carb-cfm-sizing",               category: "power-fuel",      title: "Carburetor CFM Calculator",                      description: "Calculate the right carburetor size for your engine. Real carb sizes from Holley and Edelbrock with overcarburetion warnings." },
+  { slug: "carb-cfm-sizing",               category: "power-fuel",      title: "Carburetor CFM Calculator — What Size Carb Do I Need?",                      description: "Calculate the right carburetor size for your engine. Real carb sizes from Holley and Edelbrock with overcarburetion warnings." },
   { slug: "fuel-injector-sizing",          category: "power-fuel",      title: "Fuel Injector Sizing Calculator",                description: "What size fuel injectors do you need? Duty cycle analysis, fuel pump sizing and matching to real injector sizes, for pump gas, E85 and methanol." },
   { slug: "turbo-finder",                  category: "power-fuel",      title: "Turbo Finder & Sizing Calculator",               description: "Find the right turbocharger for your engine. Airflow, boost pressure, compressor sizing, and turbo recommendations by HP goal." },
   { slug: "boost-compression",             category: "power-fuel",      title: "Boost / Effective Compression Ratio Calculator", description: "Effective compression ratio under boost. Altitude correction, fuel-specific safety limits, and reverse-solve for max safe boost or CR." },
@@ -169,11 +170,11 @@ const CALCS = [
 
   // ─── Drivetrain & Shop ─────────────────────────────────────────────────
   { slug: "gear-ratio",                    category: "drivetrain-shop", title: "Gear Ratio & Final Drive Calculator",            description: "RPM at speed for any axle ratio, tire size and transmission. Compare gear ratios side by side and see what a taller tire does to your cruise RPM." },
-  { slug: "torque-extension",              category: "drivetrain-shop", title: "Torque Wrench Extension Calculator",             description: "Corrected torque wrench setting for a crow's foot or extension, using the L/(L+E) lever arm formula, plus the cases where no correction is needed." },
+  { slug: "torque-extension",              category: "drivetrain-shop", title: "Crow's Foot Torque Calculator — Extension Correction",             description: "Corrected torque wrench setting for a crow's foot or extension, using the L/(L+E) lever arm formula, plus the cases where no correction is needed." },
   { slug: "mm-inch-converter",             category: "drivetrain-shop", title: "MM to Inch Converter",                           description: "High-precision metric to imperial conversion for engine builders. Includes machinist reference tables and fractional inch equivalents." },
   { slug: "wrench-size-converter",         category: "drivetrain-shop", title: "Wrench Size Converter — SAE to Metric", description: "Convert SAE wrench sizes to metric and back, or measure an unknown fastener with calipers to find the size you need." },
   { slug: "density-altitude",              category: "drivetrain-shop", title: "Density Altitude / HP Correction Calculator",    description: "Calculate density altitude, relative HP, and dyno correction factors for SAE J1349, J607, and DIN 70020. Dew point or RH input." },
-  { slug: "torque-converter-stall",        category: "drivetrain-shop", title: "Torque Converter Stall Speed Calculator",        description: "Find the right converter stall speed for your build. Recommended stall range, converter diameter, launch analysis, and cruise RPM." },
+  { slug: "torque-converter-stall",        category: "drivetrain-shop", title: "Torque Converter Stall Speed Calculator & Selection Guide",        description: "Find the right converter stall speed for your build. Recommended stall range, converter diameter, launch analysis, and cruise RPM." },
   { slug: "decimal-fraction-inch",         category: "drivetrain-shop", title: "Decimal to Fraction Inch Converter + Chart", description: "Decimal to fraction inch converter with a full 1/64 inch chart, tap drill equivalents and SAE wrench sizes with metric equivalents." },
   { slug: "tap-drill-lookup",              category: "drivetrain-shop", title: "Tap Drill Size Lookup",                          description: "Pick a tap, get the drill. Imperial UNC/UNF and metric coarse/fine with 75% and 50% thread engagement sizes for any common tap." },
   { slug: "thread-pitch-converter",        category: "drivetrain-shop", title: "Thread Pitch Converter — TPI to Metric",         description: "Identify a thread when you have only TPI or only metric pitch. TPI × pitch (mm) = 25.4. Common UNC/UNF and metric pitches in quick reference." },
@@ -452,7 +453,16 @@ function engineEntry(e) {
     { label: e.displayName },
   ];
 
-  const title = `${e.seoTitle ?? `${e.manufacturerName} ${e.displayName}`} Specs`;
+  // The client title carried "— Bore, Stroke, Compression", which are the words
+  // engine queries use; keep them when the 65-character budget (46 + the site
+  // suffix) allows, fall back to a shorter form, then to the bare name.
+  const title = (() => {
+    const base = `${e.seoTitle ?? `${e.manufacturerName} ${e.displayName}`} Specs`;
+    for (const tail of [" — Bore, Stroke, Compression", ": Bore, Stroke, CR", ""]) {
+      if (encodedLength(base + tail) <= 46) return base + tail;
+    }
+    return base;
+  })();
   const descBits = [];
   if (e.displacement_ci != null) descBits.push(`${e.displacement_ci} ci${e.displacement_l != null ? ` (${e.displacement_l}L)` : ""}`);
   if (e.num_cylinders != null) descBits.push(`${e.num_cylinders}-cylinder`);
@@ -509,6 +519,7 @@ function engineEntry(e) {
       </nav>
       <h1>${escapeHtml(title)}</h1>
       <p>${escapeHtml(description)}</p>
+      ${engineNarrative(e).map((para) => `<p>${escapeHtml(para)}</p>`).join("")}
       <h2>Dimensions</h2>
       ${specRows([
         ["Displacement", e.displacement_ci != null ? `${e.displacement_ci} ci${e.displacement_l != null ? ` / ${e.displacement_l} L` : ""}` : null],
@@ -968,7 +979,8 @@ function generateHtml(template, entry) {
   // <meta name="description">
   html = html.replace(
     /<meta\s+name="description"\s+content="[^"]*"\s*\/?>/,
-    `<meta name="description" content="${escapeHtml(description)}" />`
+    `<meta name="description" content="${escapeHtml(description)}" />
+    <meta name="prerender-path" content="${escapeHtml(path)}" />`
   );
 
   // <link rel="canonical">
