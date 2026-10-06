@@ -12,11 +12,21 @@ export interface CalculatorContentRelated {
   title: string;
 }
 
+export interface CalculatorContentFaq {
+  q: string;
+  a: string; // trusted HTML, so an answer can cite sources
+}
+
 export interface CalculatorContentData {
   slug: string;
   intro: string;
   sections: CalculatorContentSection[];
   related?: CalculatorContentRelated[];
+  /**
+   * Optional Q&A aimed at the People-Also-Ask questions a page's SERP shows.
+   * Rendered at the bottom so it never gets in the way of the calculator.
+   */
+  faq?: CalculatorContentFaq[];
 }
 
 interface Props {
@@ -76,6 +86,18 @@ export function CalculatorContent({ data, title }: Props) {
                 <div className="prose prose-sm max-w-none text-muted-foreground" dangerouslySetInnerHTML={{ __html: s.body }} />
               </section>
             ))}
+
+            {data.faq && data.faq.length > 0 && (
+              <section className="space-y-4 pt-2">
+                <h3 className="text-base font-semibold text-foreground">Questions people ask</h3>
+                {data.faq.map((f) => (
+                  <div key={f.q} className="space-y-1">
+                    <p className="font-medium text-foreground">{f.q}</p>
+                    <div className="prose prose-sm max-w-none text-muted-foreground" dangerouslySetInnerHTML={{ __html: f.a }} />
+                  </div>
+                ))}
+              </section>
+            )}
           </div>
         </CardContent>
       </Card>

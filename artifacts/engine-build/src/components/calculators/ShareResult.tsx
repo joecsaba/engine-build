@@ -45,7 +45,7 @@ function presetUrl(slug: string, params: Props["params"]) {
 export function ShareResult({ title, rows, calcSlug, params, toolName }: Props) {
   const [copied, setCopied] = useState<"forum" | "reddit" | "link" | null>(null);
   const url = presetUrl(calcSlug, params);
-  const lines = rows.map((r) => `${r.label} ${r.value}`).join(", ");
+  const lines = rows.map((r) => (r.label ? `${r.label} ${r.value}` : r.value)).join(", ");
 
   const bbcode = `[b]${title}:[/b] ${lines}\n[url=${url}]${toolName} — Engine-build.com[/url]`;
   const markdown = `**${title}:** ${lines}  \n[${toolName} — Engine-build.com](${url})`;

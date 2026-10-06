@@ -6,6 +6,8 @@ import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 import { Select, SelectContent, SelectItem, SelectTrigger, SelectValue } from "@/components/ui/select";
 import { CalculatorContent } from "@/components/calculators/CalculatorContent";
 import torqueConverterStallContent from "@/data/calculatorContent/torque-converter-stall.mjs";
+import { ShareResult } from "@/components/calculators/ShareResult";
+import { usePrefill } from "@/hooks/usePrefill";
 
 /* ─── Transmission Data ─── */
 const TRANS_DATA: Record<string, { label: string; first: number; od: number | null }> = {
@@ -87,6 +89,14 @@ export default function TorqueConverterStallCalculator() {
   const [odRatio, setOdRatio] = useState("");
   const [transBrake, setTransBrake] = useState("no");
   const [primaryUse, setPrimaryUse] = useState("street-strip");
+
+  // Query-string prefill so a "Copy for forum" link reproduces the result.
+  usePrefill({
+    hp: setPeakHp, hprpm: setRpmAtPeakHp, tq: setPeakTorque, tqrpm: setRpmAtPeakTorque,
+    duration: setCamDuration, lsa: setLsa, adder: setPowerAdder,
+    weight: setVehicleWeight, tire: setTireDiameter, gear: setRearGear,
+    trans: setTransmission, first: setFirstGearRatio, use: setPrimaryUse,
+  });
 
   // Converter Verification (collapsible)
   const [showVerification, setShowVerification] = useState(false);
@@ -463,6 +473,17 @@ export default function TorqueConverterStallCalculator() {
                   </div>
                 </CardContent>
               </Card>
+
+              <ShareResult
+                calcSlug="torque-converter-stall"
+                toolName="Torque converter stall calculator"
+                title={`Converter stall, ${camDuration}° at .050" / ${lsa}° LSA, ${peakHp} hp at ${rpmAtPeakHp} RPM, ${vehicleWeight} lb, ${rearGear} gear`}
+                rows={[
+                  { label: "recommended", value: `${fmt(rangeLow)}–${fmt(rangeHigh)} RPM` },
+                  { label: "converter", value: converterDiameter },
+                ]}
+                params={{ hp: peakHp, hprpm: rpmAtPeakHp, tq: peakTorque, tqrpm: rpmAtPeakTorque, duration: camDuration, lsa, adder: powerAdder, weight: vehicleWeight, tire: tireDiameter, gear: rearGear, trans: transmission, first: firstGearRatio, use: primaryUse }}
+              />
 
               {/* Driveline Analysis */}
               <Card className="bg-[#1a1a1a] text-white">

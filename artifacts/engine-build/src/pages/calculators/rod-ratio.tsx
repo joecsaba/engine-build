@@ -13,6 +13,7 @@ import { BuildBanner } from "@/components/BuildBanner";
 import { Info } from "lucide-react";
 import { useReferenceEngines } from "@/hooks/useEngineData";
 import { useDefaultPlatform } from "@/hooks/useDefaultPlatform";
+import { ShareResult } from "@/components/calculators/ShareResult";
 
 const commonEngines = [
   { name: "Chevy 350 (SBC)", stroke: "3.480", rod: "5.700", ratio: 1.638 },
@@ -879,6 +880,19 @@ export default function RodRatioCalculator() {
           </CardContent>
         </Card>
       </div>
+
+      {ratio > 0 && (
+        <ShareResult
+          calcSlug="rod-ratio"
+          toolName="Rod ratio calculator"
+          title={`Rod ratio, ${rodLength}" rod on a ${stroke}" stroke`}
+          rows={[
+            { label: "", value: `${ratio.toFixed(3)}:1` },
+            { label: "", value: zone.label.toLowerCase() },
+          ]}
+          params={{ rod: rodLength, stroke }}
+        />
+      )}
 
       <DwellChart
         stroke={s}

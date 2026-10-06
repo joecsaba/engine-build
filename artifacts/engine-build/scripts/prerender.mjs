@@ -69,10 +69,19 @@ function renderContentHtml(content) {
   const sections = content.sections.map((s) => `
       <h2>${escapeHtml(s.heading)}</h2>
       ${s.body}`).join("");
+  // Optional Q&A, targeted at the People-Also-Ask questions a page's SERP
+  // actually shows. Answers are trusted HTML so they can cite sources.
+  const faq = content.faq?.length
+    ? `
+      <h2>Questions people ask</h2>
+      ${content.faq.map((f) => `
+      <h3>${escapeHtml(f.q)}</h3>
+      ${f.a}`).join("")}`
+    : "";
   return `
       <article style="margin-top:32px;padding-top:24px;border-top:1px solid #e5e5e5;">
         <p>${escapeHtml(content.intro)}</p>
-        ${sections}
+        ${sections}${faq}
       </article>`;
 }
 

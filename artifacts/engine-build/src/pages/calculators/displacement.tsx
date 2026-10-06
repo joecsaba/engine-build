@@ -17,6 +17,7 @@ import { useManufacturers, useFamilies, useFamilyEngines } from "@/hooks/useEngi
 import { PresetBar } from "@/components/presets/PresetBar";
 import { useDefaultPlatform } from "@/hooks/useDefaultPlatform";
 import { ToolsForThisJob } from "@/components/affiliate/ToolsForThisJob";
+import { ShareResult } from "@/components/calculators/ShareResult";
 
 export default function DisplacementCalculator() {
   const platform = useDefaultPlatform();
@@ -153,6 +154,20 @@ export default function DisplacementCalculator() {
           </CardContent>
         </Card>
       </div>
+
+      {cubicInches > 0 && (
+        <ShareResult
+          calcSlug="displacement"
+          toolName="Displacement calculator"
+          title={`Displacement, ${bore}" × ${stroke}", ${cylinders} cylinders`}
+          rows={[
+            { label: "", value: `${cubicInches.toFixed(1)} ci` },
+            { label: "", value: `${liters.toFixed(2)} L` },
+            { label: "", value: `${cc.toFixed(0)} cc` },
+          ]}
+          params={{ bore, stroke, cylinders }}
+        />
+      )}
 
       </div>{/* end left column */}
 

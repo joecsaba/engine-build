@@ -10,6 +10,7 @@ import { CalculatorContent } from "@/components/calculators/CalculatorContent";
 import { HelpCard } from "@/components/calculators/HelpCard";
 import compressionRatioContent from "@/data/calculatorContent/compression-ratio.mjs";
 import { ToolsForThisJob } from "@/components/affiliate/ToolsForThisJob";
+import { ShareResult } from "@/components/calculators/ShareResult";
 
 function getOctaneRec(cr: number): { label: string; color: string; bg: string } {
   if (cr <= 9.5) return { label: "Regular 87 octane", color: "text-green-700", bg: "bg-green-50 border-green-200" };
@@ -31,10 +32,18 @@ export default function CompressionRatioCalculator() {
 
   // Seed inputs from the query string so an engine spec page (or a link pasted
   // into a forum thread) lands on this calculator already filled in.
+  // Every input that changes the answer is a param, so a "Copy for forum" link
+  // reproduces exactly the result the poster saw.
   usePrefill({
     bore: setBore,
     stroke: setStroke,
     rod: setRodLength,
+    chamber: setChamberVolume,
+    piston: setPistonVolume,
+    gasketBore: setGasketBore,
+    gasket: setGasketThick,
+    deck: setDeckHeight,
+    ivc: setIvc,
   });
 
   const b = parseFloat(bore) || 0;
@@ -133,6 +142,20 @@ export default function CompressionRatioCalculator() {
               </div>
             </CardContent>
           </Card>
+
+          {staticCR > 0 && (
+            <ShareResult
+              calcSlug="compression-ratio"
+              toolName="Compression ratio calculator"
+              title={`Compression ratio, ${bore}" × ${stroke}", ${chamberVolume} cc chamber, IVC ${ivc}° ABDC`}
+              rows={[
+                { label: "static", value: `${staticCR.toFixed(2)}:1` },
+                { label: "dynamic", value: `${dynamicCR.toFixed(2)}:1` },
+                { label: "fuel", value: octane.label.toLowerCase() },
+              ]}
+              params={{ bore, stroke, rod: rodLength, chamber: chamberVolume, piston: pistonVolume, gasketBore, gasket: gasketThick, deck: deckHeight, ivc }}
+            />
+          )}
 
           <Card>
             <CardHeader><CardTitle>Comparison</CardTitle></CardHeader>

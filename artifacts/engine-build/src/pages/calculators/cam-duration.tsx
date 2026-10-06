@@ -14,6 +14,8 @@ import { CalculatorContent } from "@/components/calculators/CalculatorContent";
 import { HelpSidebar } from "@/components/calculators/HelpCard";
 import camDurationContent from "@/data/calculatorContent/cam-duration.mjs";
 import { ToolsForThisJob } from "@/components/affiliate/ToolsForThisJob";
+import { ShareResult } from "@/components/calculators/ShareResult";
+import { usePrefill } from "@/hooks/usePrefill";
 
 // ── Types ──────────────────────────────────────────────────────────────────────
 
@@ -212,6 +214,14 @@ function Section({ title, defaultOpen = true, children }: {
 export default function CamDurationCalculator() {
   const { activeBuild, getField, setField: setBuildField } = useBuildContext();
   const [s, setS] = useState<State>(DEFAULT);
+
+  // Query-string prefill for the inputs that set the timing result, so a
+  // "Copy for forum" link reproduces exactly what the poster saw.
+  usePrefill(Object.fromEntries(
+    (["intAdv", "exhAdv", "int050", "exh050", "lsa", "advance", "intLift", "exhLift",
+      "stroke", "rodLength", "bore", "compressionRatio"] as const)
+      .map((k) => [k, (v: string) => setS((prev) => ({ ...prev, [k]: v }))]),
+  ));
   const [copied, setCopied] = useState(false);
   const [buildSynced, setBuildSynced] = useState(false);
 
@@ -511,6 +521,18 @@ export default function CamDurationCalculator() {
               IO BTDC ({C.IO_BTDC.toFixed(1)}°) + EC ATDC ({C.EC_ATDC.toFixed(1)}°) = {C.overlap.toFixed(1)}°
             </div>
           </div>
+
+          <ShareResult
+            calcSlug="cam-duration"
+            toolName="Cam timing calculator"
+            title={`Cam timing, ${s.int050}/${s.exh050}° at .050", ${s.lsa}° LSA, ${s.advance}° advance`}
+            rows={[
+              { label: "overlap", value: `${C.overlap.toFixed(1)}°` },
+              { label: "intake centerline", value: `${C.intCenter.toFixed(1)}° ATDC` },
+              { label: "exhaust centerline", value: `${C.exhCenter.toFixed(1)}° BTDC` },
+            ]}
+            params={{ intAdv: s.intAdv, exhAdv: s.exhAdv, int050: s.int050, exh050: s.exh050, lsa: s.lsa, advance: s.advance, intLift: s.intLift, exhLift: s.exhLift, stroke: s.stroke, rodLength: s.rodLength, bore: s.bore, compressionRatio: s.compressionRatio }}
+          />
 
           <div className="grid grid-cols-5 gap-1 text-xs text-center">
             {[
