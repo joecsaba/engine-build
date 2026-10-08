@@ -72,8 +72,6 @@ function fmt(val: number): string {
 /* ─── Component ─── */
 export default function TorqueConverterStallCalculator() {
   // Engine & Cam
-  const [peakHp, setPeakHp] = useState("350");
-  const [rpmAtPeakHp, setRpmAtPeakHp] = useState("5500");
   const [peakTorque, setPeakTorque] = useState("380");
   const [rpmAtPeakTorque, setRpmAtPeakTorque] = useState("4000");
   const [camDuration, setCamDuration] = useState("220");
@@ -92,7 +90,7 @@ export default function TorqueConverterStallCalculator() {
 
   // Query-string prefill so a "Copy for forum" link reproduces the result.
   usePrefill({
-    hp: setPeakHp, hprpm: setRpmAtPeakHp, tq: setPeakTorque, tqrpm: setRpmAtPeakTorque,
+    tq: setPeakTorque, tqrpm: setRpmAtPeakTorque,
     duration: setCamDuration, lsa: setLsa, adder: setPowerAdder,
     weight: setVehicleWeight, tire: setTireDiameter, gear: setRearGear,
     trans: setTransmission, first: setFirstGearRatio, use: setPrimaryUse,
@@ -114,8 +112,6 @@ export default function TorqueConverterStallCalculator() {
   };
 
   // Parse inputs
-  const hp = parseFloat(peakHp) || 0;
-  const hpRpm = parseFloat(rpmAtPeakHp) || 0;
   const tq = parseFloat(peakTorque) || 0;
   const tqRpm = parseFloat(rpmAtPeakTorque) || 0;
   const camDur = parseFloat(camDuration) || 0;
@@ -166,6 +162,19 @@ export default function TorqueConverterStallCalculator() {
   let baseStall = powerbandStart + 500;
   let recommendedStall = baseStall + lsaAdj + paAdj + wtAdj;
 
+  // ─── Step 5b: Don't stall past the torque peak ───
+  // B&M: "the stall speed should be rated at about 500-750 rpm under your
+  // engine's peak torque rpm" (quoted in OnAllCylinders, Summit Racing). Used as
+  // a CAP, not a target: as a target it fails on modern flat-torque engines —
+  // a stock LS3 peaks near 4,600 RPM and would be told to run a 4,000 stall.
+  // As a cap it catches the real failure, a big cam on an engine that makes its
+  // torque low. Nitrous is exempt (it deliberately flashes above the NA torque
+  // peak), and so is a trans-brake, which has its own rule below.
+  const isNitrous = powerAdder.startsWith("nitrous");
+  const torqueCap = tqRpm > 0 ? tqRpm - 500 : Infinity;
+  const cappedByTorque = !isNitrous && transBrake !== "yes" && recommendedStall > torqueCap;
+  if (cappedByTorque) recommendedStall = torqueCap;
+
   if (transBrake === "yes") {
     recommendedStall = Math.max(recommendedStall, tqRpm + 300);
   }
@@ -173,6 +182,20 @@ export default function TorqueConverterStallCalculator() {
   recommendedStall = clamp(recommendedStall, 1800, 7000);
   const rangeLow = recommendedStall - 200;
   const rangeHigh = recommendedStall + 200;
+
+  // ─── Step 5c: Advertised rating to shop for ───
+  // A converter's stall depends on the torque behind it: K = RPM / sqrt(torque)
+  // (Circle D Specialties, Dragzine). Advertised ratings assume a typical small
+  // block, so a stronger engine stalls the same converter higher — 300-500 RPM
+  // higher behind a big block (OnAllCylinders), the spread TCI's chart shows
+  // between its small- and big-block ranges. The 400 lb-ft reference is our
+  // calibration to that spread, not a published figure, so it is labelled an
+  // estimate on the page.
+  const REF_TORQUE = 400;
+  const ratingFactor = tq > 0 ? Math.sqrt(REF_TORQUE / tq) : 1;
+  const round50 = (x: number) => Math.round(x / 50) * 50;
+  const ratingLow = round50(rangeLow * ratingFactor);
+  const ratingHigh = round50(rangeHigh * ratingFactor);
 
   // ─── Step 6: Converter diameter ───
   let converterDiameter = "11-12 inch (stock)";
@@ -198,14 +221,14 @@ export default function TorqueConverterStallCalculator() {
   let matchAssessment = "";
   let matchColor = "";
   if (advStall > 0) {
-    if (advStall < rangeLow - 300) {
+    if (advStall < ratingLow - 300) {
       matchAssessment = "Too low — engine will bog off the line. The converter locks up before the engine reaches its powerband.";
       matchColor = "text-red-400";
-    } else if (advStall > rangeHigh + 500) {
+    } else if (advStall > ratingHigh + 500) {
       matchAssessment = "Too high — excessive slip and heat. The converter will generate excessive heat during normal driving and may shorten its life.";
       matchColor = "text-red-400";
-    } else if (advStall >= rangeLow && advStall <= rangeHigh) {
-      matchAssessment = "Good match — the advertised stall falls within the recommended range for your combination.";
+    } else if (advStall >= ratingLow && advStall <= ratingHigh) {
+      matchAssessment = "Good match — the advertised stall falls within the rating range to shop for, for your engine's torque.";
       matchColor = "text-green-400";
     } else {
       matchAssessment = "Acceptable — not ideal but workable. The converter is close to the recommended range and should perform adequately.";
@@ -241,7 +264,7 @@ export default function TorqueConverterStallCalculator() {
     });
   }
 
-  const hasInputs = hp > 0 && tq > 0 && camDur > 0;
+  const hasInputs = tq > 0 && camDur > 0;
 
   return (
     <div className="container mx-auto py-8 px-4 max-w-5xl">
@@ -265,16 +288,6 @@ export default function TorqueConverterStallCalculator() {
               <CardTitle className="text-base">Engine & Cam</CardTitle>
             </CardHeader>
             <CardContent className="space-y-3">
-              <div className="grid grid-cols-2 gap-3">
-                <div className="space-y-1">
-                  <Label className="text-xs text-muted-foreground">Peak Horsepower</Label>
-                  <Input type="number" step="10" value={peakHp} onChange={e => setPeakHp(e.target.value)} />
-                </div>
-                <div className="space-y-1">
-                  <Label className="text-xs text-muted-foreground">RPM at Peak HP</Label>
-                  <Input type="number" step="100" value={rpmAtPeakHp} onChange={e => setRpmAtPeakHp(e.target.value)} />
-                </div>
-              </div>
               <div className="grid grid-cols-2 gap-3">
                 <div className="space-y-1">
                   <Label className="text-xs text-muted-foreground">Peak Torque (lb-ft)</Label>
@@ -427,8 +440,20 @@ export default function TorqueConverterStallCalculator() {
                 </CardHeader>
                 <CardContent className="space-y-4">
                   <div className="text-center p-4 rounded-lg bg-white/5 border border-white/10">
-                    <p className="text-sm text-gray-400 mb-1">Recommended Stall Range</p>
+                    <p className="text-sm text-gray-400 mb-1">Stall in the Car</p>
                     <p className="text-4xl font-bold text-[#E85D04]">{fmt(rangeLow)} - {fmt(rangeHigh)} RPM</p>
+                  </div>
+                  <div className="text-center p-3 rounded-lg bg-white/5 border border-white/10">
+                    <p className="text-sm text-gray-400 mb-1">Advertised Rating to Shop For (estimate)</p>
+                    <p className="text-2xl font-bold">~{fmt(ratingLow)} - {fmt(ratingHigh)} RPM</p>
+                    <p className="text-xs text-gray-400 mt-1">
+                      {Math.abs(ratingFactor - 1) < 0.03
+                        ? "Your torque is close to the typical small block that ratings assume, so rating and in-car stall line up."
+                        : ratingFactor < 1
+                          ? `Your ${fmt(tq)} lb-ft will stall a converter higher than its rating, so shop lower. Stall scales with the square root of torque (K-factor).`
+                          : `Your ${fmt(tq)} lb-ft will stall a converter below its rating, so shop higher. Stall scales with the square root of torque (K-factor).`}
+                      {" "}Converter makers ask about 30 questions — call them with these numbers before you buy.
+                    </p>
                   </div>
                   <div className="grid grid-cols-2 gap-3">
                     <div className="p-3 rounded-lg bg-white/5">
@@ -466,6 +491,12 @@ export default function TorqueConverterStallCalculator() {
                         {wtAdj >= 0 ? "+" : ""}{fmt(wtAdj)} RPM
                       </span>
                     </div>
+                    {cappedByTorque && (
+                      <div className="flex justify-between text-sm">
+                        <span className="text-gray-300">Capped at peak torque − 500:</span>
+                        <span className="text-green-400">{fmt(tqRpm - 500)} RPM</span>
+                      </div>
+                    )}
                     <div className="flex justify-between text-sm font-semibold border-t border-white/10 pt-1 mt-1">
                       <span>= Final:</span>
                       <span className="text-[#E85D04]">{fmt(recommendedStall)} RPM</span>
@@ -477,12 +508,13 @@ export default function TorqueConverterStallCalculator() {
               <ShareResult
                 calcSlug="torque-converter-stall"
                 toolName="Torque converter stall calculator"
-                title={`Converter stall, ${camDuration}° at .050" / ${lsa}° LSA, ${peakHp} hp at ${rpmAtPeakHp} RPM, ${vehicleWeight} lb, ${rearGear} gear`}
+                title={`Converter stall, ${camDuration}° at .050" / ${lsa}° LSA, ${peakTorque} lb-ft at ${rpmAtPeakTorque} RPM, ${vehicleWeight} lb, ${rearGear} gear`}
                 rows={[
-                  { label: "recommended", value: `${fmt(rangeLow)}–${fmt(rangeHigh)} RPM` },
+                  { label: "stall in the car", value: `${fmt(rangeLow)}–${fmt(rangeHigh)} RPM` },
+                  { label: "rating to shop for", value: `~${fmt(ratingLow)}–${fmt(ratingHigh)} RPM` },
                   { label: "converter", value: converterDiameter },
                 ]}
-                params={{ hp: peakHp, hprpm: rpmAtPeakHp, tq: peakTorque, tqrpm: rpmAtPeakTorque, duration: camDuration, lsa, adder: powerAdder, weight: vehicleWeight, tire: tireDiameter, gear: rearGear, trans: transmission, first: firstGearRatio, use: primaryUse }}
+                params={{ tq: peakTorque, tqrpm: rpmAtPeakTorque, duration: camDuration, lsa, adder: powerAdder, weight: vehicleWeight, tire: tireDiameter, gear: rearGear, trans: transmission, first: firstGearRatio, use: primaryUse }}
               />
 
               {/* Driveline Analysis */}
