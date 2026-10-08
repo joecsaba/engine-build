@@ -110,7 +110,6 @@ export default function DynamicCompressionRatioV2() {
   const [intakeDuration, setIntakeDuration] = useState("224");
   const [lsa, setLsa] = useState("110");
   const [icl, setIcl] = useState("106");
-  const [camAdvanceInput, setCamAdvanceInput] = useState("0");
 
   /* ─── Head type ─── */
   const [headType, setHeadType] = useState<HeadType>("iron_fast");
@@ -185,10 +184,12 @@ export default function DynamicCompressionRatioV2() {
       effectiveIVC = parseFloat(ivcSeat) || 0;
     } else {
       const dur = parseFloat(intakeDuration) || 0;
+      // ICL as installed already includes any advance or retard: advance is
+      // defined as LSA - ICL, so it is derived for display, never entered and
+      // subtracted again. (It used to be, which double-counted the advance for
+      // anyone who entered both the card's ICL and its "ground X deg advanced".)
       const iclVal = parseFloat(icl) || 0;
-      const camAdv = parseFloat(camAdvanceInput) || 0;
-      const effectiveICL = iclVal - camAdv;
-      ivc0050Computed = effectiveICL + dur / 2 - 180;
+      ivc0050Computed = iclVal + dur / 2 - 180;
       const adj = lashType === "hydraulic" ? 15 : 5;
       effectiveIVC = ivc0050Computed + adj;
     }
@@ -263,7 +264,7 @@ export default function DynamicCompressionRatioV2() {
       physicalStroke: s,
       solvedChamberCC, solvedStaticCR, solvedIVC,
     };
-  }, [bore, stroke, rodLength, crInputMode, chamberVolume, pistonVolume, gasketBore, gasketThick, deckClearance, knownStaticCR, ivcMethod, ivc0050, lashType, ivcSeat, intakeDuration, lsa, icl, camAdvanceInput, headType, camAdvanceSlider, targetDCR]);
+  }, [bore, stroke, rodLength, crInputMode, chamberVolume, pistonVolume, gasketBore, gasketThick, deckClearance, knownStaticCR, ivcMethod, ivc0050, lashType, ivcSeat, intakeDuration, lsa, icl, headType, camAdvanceSlider, targetDCR]);
 
   // Write computed CR values back to active build
   useEffect(() => {
@@ -304,7 +305,7 @@ export default function DynamicCompressionRatioV2() {
             chamberVolume, pistonVolume, gasketBore, gasketThick, deckClearance,
             knownStaticCR,
             ivcMethod, ivc0050, lashType, ivcSeat, intakeDuration,
-            lsa, icl, camAdvanceInput,
+            lsa, icl,
             headType, isBoosted: String(isBoosted),
             targetDCR,
           }}
@@ -327,7 +328,6 @@ export default function DynamicCompressionRatioV2() {
             if (typeof s.intakeDuration === "string") setIntakeDuration(s.intakeDuration);
             if (typeof s.lsa === "string") setLsa(s.lsa);
             if (typeof s.icl === "string") setIcl(s.icl);
-            if (typeof s.camAdvanceInput === "string") setCamAdvanceInput(s.camAdvanceInput);
             if (typeof s.headType === "string") setHeadType(s.headType as HeadType);
             if (typeof s.isBoosted === "string") setIsBoosted(s.isBoosted === "true");
             if (typeof s.targetDCR === "string") setTargetDCR(s.targetDCR);
@@ -587,9 +587,19 @@ export default function DynamicCompressionRatioV2() {
                       <Field label="Lobe Separation Angle (LSA)" value={lsa} onChange={setLsa} step="0.5"
                         hint="On cam card. Typical street: 110–114°. Race: 106–110°." />
                       <Field label="Intake Centerline (ICL)" value={icl} onChange={setIcl} step="1"
-                        hint="On cam card as 'Intake Centerline' or 'Intake Lobe Center'. If not listed: ICL = LSA minus advance (e.g. LSA 110 with 4° advance = ICL 106)." />
-                      <Field label="Cam Advance/Retard (degrees, positive = advance)" value={camAdvanceInput} onChange={setCamAdvanceInput} step="1"
-                        hint="If cam card says 'ground with X° advance', enter that number. If installed straight-up on LSA, enter 0." />
+                        hint="As installed — on the cam card as 'Intake Centerline' or 'Intake Lobe Center'. If the card only gives advance: ICL = LSA minus advance (110 LSA ground 4° advanced = 106 ICL)." />
+                      {(() => {
+                        const adv = (parseFloat(lsa) || 0) - (parseFloat(icl) || 0);
+                        return (
+                          <p className="text-xs text-muted-foreground -mt-1">
+                            Implied cam timing (LSA − ICL):{" "}
+                            <span className="font-semibold text-foreground">
+                              {adv === 0 ? "straight up" : `${Math.abs(adv)}° ${adv > 0 ? "advanced" : "retarded"}`}
+                            </span>
+                            . Already included — use the slider below to try other timing.
+                          </p>
+                        );
+                      })()}
                       <LashSelector lashType={lashType} setLashType={setLashType} />
                       {results.ivc0050Computed !== null && (
                         <div className="p-3 rounded bg-gray-50 border text-sm">
