@@ -691,6 +691,14 @@ export default function BearingClearanceCalculator() {
                           <SelectItem value="0.030">0.030" under</SelectItem>
                         </SelectContent>
                       </Select>
+                      {/* Grinding moves the journal, not the target: clearance is
+                          still housing bore minus journal, so the grind changes
+                          which bearings to order, never the clearance math. */}
+                      <p className="text-xs text-muted-foreground">
+                        {crankGrind === "standard"
+                          ? "Use standard-size bearings."
+                          : `Order bearings marked ${crankGrind}" undersize (U/S). The clearance target does not change. Measure the ground journal and use that diameter above.`}
+                      </p>
                     </div>
                   </div>
                 </CardContent>

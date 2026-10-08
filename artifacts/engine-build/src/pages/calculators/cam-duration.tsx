@@ -504,8 +504,8 @@ export default function CamDurationCalculator() {
           <div className="text-xs text-muted-foreground space-y-0.5 border-t pt-3">
             <p>IO BTDC = AdvDuration/2 − IntakeCenterline = {s.intAdv}/2 − {C.intCenter.toFixed(1)} = {C.IO_BTDC.toFixed(1)}°</p>
             <p>IC ABDC = AdvDuration/2 − (180 − IntakeCenterline) = {C.IC_ABDC.toFixed(1)}°</p>
-            <p>EO BBDC = ExhDuration/2 − ExhCenterline = {s.exhAdv}/2 − {C.exhCenter.toFixed(1)} = {C.EO_BBDC.toFixed(1)}°</p>
-            <p>EC ATDC = ExhDuration/2 − (180 − ExhCenterline) = {C.EC_ATDC.toFixed(1)}°</p>
+            <p>EO BBDC = ExhDuration/2 − (180 − ExhCenterline) = {C.EO_BBDC.toFixed(1)}°</p>
+            <p>EC ATDC = ExhDuration/2 − ExhCenterline = {s.exhAdv}/2 − {C.exhCenter.toFixed(1)} = {C.EC_ATDC.toFixed(1)}°</p>
           </div>
         </div>
       </Section>
