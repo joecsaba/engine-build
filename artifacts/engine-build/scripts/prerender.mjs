@@ -21,7 +21,9 @@ import { clampDesc, encodedLength, familyDescription, manufacturerDescription } 
 import { engineNarrative } from "../src/data/engineNarrative.mjs";
 import FAQ from "../src/data/faq.mjs";
 import { loadEngineData, writeRuntimeData } from "./engineData.mjs";
+import { writeBuilderEngines } from "./builderEngines.mjs";
 import { loadCams, writeCamRuntime } from "./camData.mjs";
+import { buildCamCatalog } from "./camCatalog.mjs";
 import CAM_GUIDE from "../src/data/pageContent/cam-guide.mjs";
 
 const __dirname = dirname(fileURLToPath(import.meta.url));
@@ -1085,8 +1087,13 @@ async function main() {
   // pages fetch, from one pass over public/data/engines/.
   const engineData = loadEngineData();
   writeRuntimeData(engineData);
+  const be = writeBuilderEngines();
+  console.log(`prerender: builder engines — ${be.rawTotal} records merged to ${be.mergedTotal}, ${be.asking} ask which year/version`);
   const camData = loadCams();
   writeCamRuntime(camData);
+  // Part-number lookup for the engine builder (CAM_DATABASE + Howards catalog).
+  const camCatalog = buildCamCatalog([resolve(DIST, "data")]);
+  console.log(`prerender: cam catalog — ${camCatalog.total} cams (${camCatalog.howards} Howards)`);
 
   const allEntries = [
     ...STATIC_PAGES.map(staticEntry),

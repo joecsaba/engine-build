@@ -29,6 +29,37 @@ interface Family {
   engine_count: number;
 }
 
+// One engine from public/data/builder-engines/ (scripts/builderEngines.mjs):
+// records that are physically the same engine, merged, with what differs
+// between them kept as versions.
+interface MergedVersion {
+  engine_id: string;
+  label: string;
+  yearMin: number | null;
+  yearMax: number | null;
+  codes: string[];
+  compression_ratio: number | null;
+  head_cc: number | null;
+  hpMin: number | null;
+  hpMax: number | null;
+}
+interface MergedEngine {
+  id: string;
+  label: string;
+  engine_id: string;
+  bore_in: number | null;
+  stroke_in: number | null;
+  displacement_ci: number | null;
+  displacement_l: number | null;
+  num_cylinders: number | null;
+  fuel_type: string | null;
+  hpMin: number | null;
+  hpMax: number | null;
+  needsVersion: boolean;
+  versionPrompt: string;
+  versions: MergedVersion[];
+}
+
 interface EngineOption {
   engine_id: string;
   displacement_ci: number | null;
@@ -136,6 +167,26 @@ const QUICK_PICKS = [
   },
 ];
 
+// The rest of this page (preview, build name, engineSlug) works on one record.
+// A merged engine plus the chosen version gives it that record; engine_id is
+// the version's representative raw record, which build.tsx loads defaults from.
+function toOption(m: MergedEngine, v: MergedVersion): EngineOption {
+  return {
+    engine_id: v.engine_id,
+    displacement_ci: m.displacement_ci,
+    displacement_l: m.displacement_l,
+    num_cylinders: m.num_cylinders,
+    bore_in: m.bore_in,
+    stroke_in: m.stroke_in,
+    rod_length_in: null,
+    deck_height_in: null,
+    compression_ratio: v.compression_ratio,
+    advertised_hp: v.hpMin != null && v.hpMin === v.hpMax ? v.hpMin : null,
+    cam_type: null,
+    variants: v.codes.map((code) => ({ code, description: null })),
+  };
+}
+
 // ─── Component ───────────────────────────────────────────────────────────────
 
 export default function NewBuildPage() {
@@ -155,7 +206,9 @@ export default function NewBuildPage() {
   const [families, setFamilies] = useState<Family[]>([]);
   const [selectedMfr, setSelectedMfr] = useState("");
   const [selectedFamily, setSelectedFamily] = useState("");
-  const [engines, setEngines] = useState<EngineOption[]>([]);
+  const [engines, setEngines] = useState<MergedEngine[]>([]);
+  const [selectedMerged, setSelectedMerged] = useState<MergedEngine | null>(null);
+  const [familyCounts, setFamilyCounts] = useState<Record<string, number>>({});
   const [selectedDbEngine, setSelectedDbEngine] = useState<EngineOption | null>(null);
   const [loadingEngines, setLoadingEngines] = useState(false);
 
@@ -172,9 +225,11 @@ export default function NewBuildPage() {
     Promise.all([
       fetch(`${BASE}/data/manufacturers.json`).then((r) => r.json()),
       fetch(`${BASE}/data/families.json`).then((r) => r.json()),
-    ]).then(([mfrs, fams]) => {
+      fetch(`${BASE}/data/builder-engines/counts.json`).then((r) => (r.ok ? r.json() : {})).catch(() => ({})),
+    ]).then(([mfrs, fams, counts]) => {
       setManufacturers(mfrs);
       setFamilies(fams);
+      setFamilyCounts(counts);
     }).catch(() => {});
   }, []);
 
@@ -186,10 +241,11 @@ export default function NewBuildPage() {
       return;
     }
     setLoadingEngines(true);
-    fetch(`${BASE}/data/engines/${selectedMfr}/${selectedFamily}.json`)
+    fetch(`${BASE}/data/builder-engines/${selectedMfr}/${selectedFamily}.json`)
       .then((r) => r.json())
       .then((data) => {
         setEngines(data.engines || []);
+        setSelectedMerged(null);
         setSelectedDbEngine(null);
       })
       .catch(() => setEngines([]))
@@ -198,20 +254,12 @@ export default function NewBuildPage() {
 
   const filteredFamilies = families.filter((f) => f.manufacturer_slug === selectedMfr);
 
-  function engineLabel(e: EngineOption): string {
-    const parts: string[] = [];
-    const code = e.variants?.length ? e.variants.map((v) => v.code).join("/") : "";
-    if (code) parts.push(code);
-    if (e.displacement_l) parts.push(`${e.displacement_l}L`);
-    if (e.displacement_ci) parts.push(`(${e.displacement_ci}ci)`);
-    if (e.advertised_hp) parts.push(`${e.advertised_hp}HP`);
-    return parts.join(" ") || e.engine_id;
-  }
-
   function getDefaultBuildName(): string {
-    if (mode === "database" && selectedDbEngine) {
+    if (mode === "database" && selectedDbEngine && selectedMerged) {
       const mfr = manufacturers.find((m) => m.slug === selectedMfr);
-      return `${mfr?.name ?? ""} ${engineLabel(selectedDbEngine)} Build`.trim();
+      const v = selectedMerged.versions.find((x) => x.engine_id === selectedDbEngine.engine_id);
+      const when = selectedMerged.needsVersion && v ? ` (${v.label.split(" · ")[0]})` : "";
+      return `${mfr?.name ?? ""} ${selectedMerged.label.replace(/\s\d{4}(–\d{4})?$/, "")}${when} Build`.trim();
     }
     if (mode === "custom") {
       return customEngineName.trim() ? `${customEngineName} Build` : "Custom Engine Build";
@@ -341,7 +389,7 @@ export default function NewBuildPage() {
                 <Label className="text-sm font-medium mb-1.5 block">Manufacturer</Label>
                 <Select
                   value={selectedMfr}
-                  onValueChange={(v) => { setSelectedMfr(v); setSelectedFamily(""); setSelectedDbEngine(null); }}
+                  onValueChange={(v) => { setSelectedMfr(v); setSelectedFamily(""); setSelectedMerged(null); setSelectedDbEngine(null); }}
                 >
                   <SelectTrigger>
                     <SelectValue placeholder="Select manufacturer..." />
@@ -362,7 +410,7 @@ export default function NewBuildPage() {
                   <Label className="text-sm font-medium mb-1.5 block">Engine Family</Label>
                   <Select
                     value={selectedFamily}
-                    onValueChange={(v) => { setSelectedFamily(v); setSelectedDbEngine(null); }}
+                    onValueChange={(v) => { setSelectedFamily(v); setSelectedMerged(null); setSelectedDbEngine(null); }}
                   >
                     <SelectTrigger>
                       <SelectValue placeholder="Select engine family..." />
@@ -370,7 +418,9 @@ export default function NewBuildPage() {
                     <SelectContent>
                       {filteredFamilies.map((f) => (
                         <SelectItem key={f.family_slug} value={f.family_slug}>
-                          {f.family_name} ({f.engine_count} engines)
+                          {f.family_name}
+                          {familyCounts[`${selectedMfr}/${f.family_slug}`] != null &&
+                            ` (${familyCounts[`${selectedMfr}/${f.family_slug}`]} ${familyCounts[`${selectedMfr}/${f.family_slug}`] === 1 ? "engine" : "engines"})`}
                         </SelectItem>
                       ))}
                     </SelectContent>
@@ -383,23 +433,53 @@ export default function NewBuildPage() {
                 <div>
                   <Label className="text-sm font-medium mb-1.5 block">Engine</Label>
                   <Select
-                    value={selectedDbEngine?.engine_id ?? ""}
+                    value={selectedMerged?.id ?? ""}
                     onValueChange={(v) => {
-                      const eng = engines.find((e) => e.engine_id === v);
-                      setSelectedDbEngine(eng ?? null);
+                      const m = engines.find((e) => e.id === v) ?? null;
+                      setSelectedMerged(m);
+                      // Only one version: nothing to ask, select it straight away.
+                      setSelectedDbEngine(m && !m.needsVersion ? toOption(m, m.versions[0]) : null);
                     }}
                   >
                     <SelectTrigger>
-                      <SelectValue placeholder="Select specific engine..." />
+                      <SelectValue placeholder="Select engine..." />
                     </SelectTrigger>
                     <SelectContent>
                       {engines.map((e) => (
-                        <SelectItem key={e.engine_id} value={e.engine_id}>
-                          {engineLabel(e)}
+                        <SelectItem key={e.id} value={e.id}>
+                          {e.label}
                         </SelectItem>
                       ))}
                     </SelectContent>
                   </Select>
+                </div>
+              )}
+
+              {/* Year / version — asked only when versions differ in something you build with */}
+              {selectedMerged?.needsVersion && (
+                <div>
+                  <Label className="text-sm font-medium mb-1.5 block">{selectedMerged.versionPrompt}</Label>
+                  <Select
+                    value={selectedDbEngine?.engine_id ?? ""}
+                    onValueChange={(v) => {
+                      const ver = selectedMerged.versions.find((x) => x.engine_id === v);
+                      setSelectedDbEngine(ver ? toOption(selectedMerged, ver) : null);
+                    }}
+                  >
+                    <SelectTrigger>
+                      <SelectValue placeholder="Select..." />
+                    </SelectTrigger>
+                    <SelectContent>
+                      {selectedMerged.versions.map((v) => (
+                        <SelectItem key={v.engine_id} value={v.engine_id}>
+                          {v.label}
+                        </SelectItem>
+                      ))}
+                    </SelectContent>
+                  </Select>
+                  <p className="mt-1 text-xs text-gray-500">
+                    These years differ in compression or heads, which changes your build. Not sure? Pick the closest — you can edit every spec later.
+                  </p>
                 </div>
               )}
 

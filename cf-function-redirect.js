@@ -71,6 +71,24 @@ function handler(event) {
     };
   }
 
+  // 4b. Spec pages whose address changed when bad data was corrected
+  // (2026-10-08). Engine slugs carry the compression ratio when it is what
+  // separates two records, so fixing a wrong ratio moves the page.
+  var CORRECTED = {
+    // Olds 350 diesel: 23.5:1 corrected to 22.5:1.
+    '/engines/oldsmobile/oldsmobile-350ci/350ci-4-057x3-385-23-5cr': '/engines/oldsmobile/oldsmobile-350ci/350ci-4-057x3-385-22-5cr',
+    // Chevy 427 listed at an impossible 14.9:1; ratio removed, merged with its twin.
+    '/engines/chevrolet/chevrolet-427ci/427ci-4-125x4-14-9cr': '/engines/chevrolet/chevrolet-427ci/427ci-4-125x4'
+  };
+  var corrected = CORRECTED[uri.replace(/\/$/, '')];
+  if (corrected) {
+    return {
+      statusCode: 301,
+      statusDescription: 'Moved Permanently',
+      headers: { location: { value: 'https://engine-build.com' + corrected } }
+    };
+  }
+
   // 5. /ads.txt -> the file Mediavine hosts for this site.
   // Journey by Mediavine was installed 2026-09-16. Rather than copy their
   // ads.txt into S3, redirect to the version they maintain — it carries a
