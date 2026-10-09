@@ -24,6 +24,7 @@ import { loadEngineData, writeRuntimeData } from "./engineData.mjs";
 import { writeBuilderEngines } from "./builderEngines.mjs";
 import { loadCams, writeCamRuntime } from "./camData.mjs";
 import { buildCamCatalog } from "./camCatalog.mjs";
+import { buildCamFitment } from "./camFitment.mjs";
 import CAM_GUIDE from "../src/data/pageContent/cam-guide.mjs";
 
 const __dirname = dirname(fileURLToPath(import.meta.url));
@@ -1094,6 +1095,8 @@ async function main() {
   // Part-number lookup for the engine builder (CAM_DATABASE + Howards catalog).
   const camCatalog = buildCamCatalog([resolve(DIST, "data")]);
   console.log(`prerender: cam catalog — ${camCatalog.total} cams (${camCatalog.howards} Howards)`);
+  const camFit = buildCamFitment([resolve(DIST, "data")]);
+  console.log(`prerender: cam fitment — ${camFit.mapped} mapped, ${camFit.unmapped} without usable fitment`);
 
   const allEntries = [
     ...STATIC_PAGES.map(staticEntry),

@@ -290,9 +290,19 @@ export default function NewBuildPage() {
     setError("");
     setIsCreating(true);
     try {
+      // The year picked for a database engine travels with the build so the
+      // cam finder can filter roller vs flat-tappet fitment by year.
+      const initialFields: Record<string, string> = {};
+      if (mode === "database" && selectedMerged && selectedDbEngine) {
+        const v = selectedMerged.versions.find((x) => x.engine_id === selectedDbEngine.engine_id);
+        if (v?.yearMin != null) {
+          initialFields["engine.yearFrom"] = String(v.yearMin);
+          initialFields["engine.yearTo"] = String(v.yearMax ?? v.yearMin);
+        }
+      }
       const res = await authFetch("/api/builds", {
         method: "POST",
-        body: JSON.stringify({ name, engineSlug }),
+        body: JSON.stringify({ name, engineSlug, fields: initialFields }),
       });
 
       if (!res.ok) {

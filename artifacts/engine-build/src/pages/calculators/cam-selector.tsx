@@ -1,4 +1,4 @@
-import { useState, useMemo } from "react";
+import { useState, useMemo, useEffect } from "react";
 import { SourceNote } from "@/components/calculators/SourceNote";
 import { Link } from "wouter";
 import { SEOHead } from "@/components/SEOHead";
@@ -11,6 +11,42 @@ import { CalculatorContent } from "@/components/calculators/CalculatorContent";
 import { HelpSidebar } from "@/components/calculators/HelpCard";
 import camSelectorContent from "@/data/calculatorContent/cam-selector.mjs";
 import { CAM_DATABASE, type CamSpec, type CamPlatform, type CamLifter } from "@/data/camDatabase";
+import type { CatalogCam } from "@/components/build/CamPartPicker";
+import { normPart, type CamFit } from "@/data/camFitment";
+
+// Engine families in public/data/cam-fitment.json that each head family covers.
+// Fitment is per block family, not per displacement, so a 383 stroker small
+// block still gets small-block cams.
+const FITMENT_FAMILIES: Partial<Record<string, string[]>> = {
+  sbc: ["Small-block Chevy", "Small-block Chevy 305/350"],
+  ls: ["GM LS"],
+  sbf: ["Small-block Ford (Windsor)"],
+  bbc: ["Chevy Mark IV big block", "Chevy Gen VI big block"],
+  mopar_sb: ["Mopar LA small block", "Mopar Magnum 5.2/5.9"],
+  mopar_bb: ["Mopar B/RB big block"],
+  pontiac: ["Pontiac V8"],
+  cleveland: ["Ford 351C/351M/400"],
+  ford_385: ["Ford 429/460"],
+};
+const TY_TO_LIFTER: Record<string, CamLifter> = {
+  hydraulic_flat: "hyd_flat", hydraulic_roller: "hyd_roller", solid_flat: "solid_flat", solid_roller: "solid_roller",
+};
+
+// One row in "Closest Real Cams", from either the hand-verified CAM_DATABASE
+// or the Howards catalog. `src` is where to see the spec card.
+type MatchCam = Pick<CamSpec, "mfr" | "family" | "part" | "lifter" | "int050" | "exh050" | "liftInt" | "liftExh" | "lsa" | "rpmLo" | "rpmHi" | "use"> & { src: string | null };
+
+let fullCatalog: Promise<{ cams: CatalogCam[]; fits: CamFit[] }> | null = null;
+function loadFullCatalog() {
+  const base = import.meta.env.BASE_URL.replace(/\/$/, "");
+  fullCatalog ??= Promise.all([
+    fetch(`${base}/data/cam-catalog.json`).then((r) => (r.ok ? r.json() : { cams: [] })),
+    fetch(`${base}/data/cam-fitment.json`).then((r) => (r.ok ? r.json() : [])),
+  ])
+    .then(([cat, fits]) => ({ cams: cat.cams as CatalogCam[], fits: fits as CamFit[] }))
+    .catch(() => { fullCatalog = null; return { cams: [], fits: [] }; });
+  return fullCatalog;
+}
 
 /* ─────────────────────────────────────────────────────────────────────────
    Cam Selector — recommends duration @ 0.050", LSA, and lift from the
@@ -291,6 +327,8 @@ function defaultValveDia(disp: number, cyl: number): number {
 
 export default function CamSelectorCalculator() {
   const [mode, setMode] = useState<"simple" | "advanced">("simple");
+  const [catalog, setCatalog] = useState<{ cams: CatalogCam[]; fits: CamFit[] } | null>(null);
+  useEffect(() => { loadFullCatalog().then(setCatalog); }, []);
   const [disp, setDisp] = useState("350");
   const [cyl, setCyl] = useState("8");
   const [valveDia, setValveDia] = useState("2.02");
@@ -349,8 +387,29 @@ export default function CamSelectorCalculator() {
     if (!result) return [];
     const platform = head as CamPlatform;
     if (head === "import") return []; // no database coverage for import/other
-    const scored = CAM_DATABASE
+    // Pool: the hand-verified grinds for this platform, plus every catalog cam
+    // whose published fitment is this engine family (Howards today). Same
+    // scoring for both; a part number already in CAM_DATABASE isn't repeated.
+    const pool: MatchCam[] = CAM_DATABASE
       .filter((c) => c.platform === platform)
+      .map((c) => ({ ...c, src: null }));
+    const fams = FITMENT_FAMILIES[head];
+    if (catalog && fams) {
+      const seen = new Set(pool.map((c) => normPart(c.part)));
+      const byPart = new Map(catalog.cams.map((c) => [normPart(c.p), c]));
+      for (const f of catalog.fits) {
+        if (!fams.includes(f.fam) || seen.has(f.p)) continue;
+        const c = byPart.get(f.p);
+        if (!c || c.li == null || c.le == null || !c.ty || !TY_TO_LIFTER[c.ty]) continue;
+        seen.add(f.p);
+        pool.push({
+          mfr: c.m, family: c.f ?? f.fam, part: c.p, lifter: TY_TO_LIFTER[c.ty],
+          int050: c.i, exh050: c.e, liftInt: c.li, liftExh: c.le, lsa: c.lsa,
+          rpmLo: c.rl, rpmHi: c.rh, use: f.fit, src: c.src,
+        });
+      }
+    }
+    const scored = pool
       .map((c) => {
         const durDiff = Math.abs(c.int050 - result.int050);
         const lsaDiff = Math.abs(c.lsa - result.lsa);
@@ -365,9 +424,9 @@ export default function CamSelectorCalculator() {
       })
       .filter((m) => m.durDiff <= 16) // only reasonably-close cams
       .sort((a, b) => a.score - b.score)
-      .slice(0, 5);
+      .slice(0, 8);
     return scored;
-  }, [result, head, lifter]);
+  }, [result, head, lifter, catalog]);
 
   return (
     <div className="container mx-auto py-8 px-4 max-w-7xl">
@@ -707,7 +766,7 @@ export default function CamSelectorCalculator() {
                   <CardTitle className="text-base">Closest Real Cams</CardTitle>
                   <CardDescription>
                     {matches.length > 0
-                      ? `Published grinds from major manufacturers near your recommended spec, sorted by fit. These are shopping starting points — not an endorsement.`
+                      ? `The closest of ${catalog ? "3,000+" : "our"} published grinds that fit your engine family, sorted by fit to your recommended spec. Shopping starting points — not an endorsement.`
                       : head === "import"
                         ? `No cam database coverage for import/other engines yet — use the recommended spec above to shop.`
                         : `No close database matches — your recommendation may be between common off-the-shelf grinds, or a custom cam is warranted. Use the spec above to shop.`}
@@ -725,7 +784,8 @@ export default function CamSelectorCalculator() {
                             <th className="pb-2 pr-3 font-medium">Lift I/E</th>
                             <th className="pb-2 pr-3 font-medium">LSA</th>
                             <th className="pb-2 pr-3 font-medium">Lifter</th>
-                            <th className="pb-2 font-medium">RPM / Use</th>
+                            <th className="pb-2 pr-3 font-medium">RPM / Use</th>
+                            <th className="pb-2 font-medium">Buy</th>
                           </tr>
                         </thead>
                         <tbody>
@@ -746,7 +806,13 @@ export default function CamSelectorCalculator() {
                                 <td className="py-2 pr-3 font-mono text-xs">{c.liftInt.toFixed(3)}/{c.liftExh.toFixed(3)}&quot;</td>
                                 <td className="py-2 pr-3 font-mono">{c.lsa}°</td>
                                 <td className="py-2 pr-3 text-xs">{lifterLabel[c.lifter]}</td>
-                                <td className="py-2 text-xs text-muted-foreground">{c.rpmLo != null && c.rpmHi != null ? `${c.rpmLo.toLocaleString()}–${c.rpmHi.toLocaleString()} · ` : ""}{c.use}</td>
+                                <td className="py-2 pr-3 text-xs text-muted-foreground">{c.rpmLo != null && c.rpmHi != null ? `${c.rpmLo.toLocaleString()}–${c.rpmHi.toLocaleString()} · ` : ""}{c.use}</td>
+                                <td className="py-2 text-xs whitespace-nowrap">
+                                  {c.src && (
+                                    <a href={c.src} target="_blank" rel="noopener noreferrer" className="text-[#E85D04] hover:underline mr-2">Spec card</a>
+                                  )}
+                                  <a href={`https://www.summitracing.com/search?keyword=${encodeURIComponent(`${c.mfr} ${c.part}`)}`} target="_blank" rel="noopener noreferrer" className="text-[#E85D04] hover:underline">Price</a>
+                                </td>
                               </tr>
                             );
                           })}

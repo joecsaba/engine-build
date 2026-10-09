@@ -15,6 +15,7 @@ import {
 import { PageHeader } from "@/components/layout/PageHeader";
 import { CamPartPicker } from "@/components/build/CamPartPicker";
 import { SectionPartPicker } from "@/components/build/SectionPartPicker";
+import { CamFinder } from "@/components/build/CamFinder";
 import { platformForBuild, savedPicks } from "@/data/partsCatalog";
 import type { EnginePlatform } from "@/data/buildParts";
 import { Input } from "@/components/ui/input";
@@ -144,6 +145,7 @@ function SectionCard({
   setFields,
   buildId,
   platform,
+  engineSlug,
 }: {
   section: SectionDef;
   fields: Record<string, string>;
@@ -152,6 +154,7 @@ function SectionCard({
   setFields: (entries: Record<string, string>) => void;
   buildId: string;
   platform: EnginePlatform | null;
+  engineSlug: string | undefined;
 }) {
   const isComplete = isSectionComplete(section.id, fields);
 
@@ -170,6 +173,7 @@ function SectionCard({
 
       {/* Fields */}
       <div className="p-5">
+        {section.id === "cam" && <CamFinder engineSlug={engineSlug} fields={fields} setFields={setFields} />}
         {section.id === "cam" && <CamPartPicker fields={fields} setFields={setFields} />}
         {section.id !== "meta" && (
           <SectionPartPicker sectionId={section.id} platform={platform} fields={fields} setFields={setFields} />
@@ -312,7 +316,8 @@ export default function BuildWizardPage() {
   // Auto-fill engine defaults on first load when fields are empty
   useEffect(() => {
     if (!activeBuild || isLoading) return;
-    const hasAnyFields = Object.keys(activeBuild.fields).length > 0;
+    // engine.* keys (the year picked at creation) don't count as specs.
+    const hasAnyFields = Object.keys(activeBuild.fields).some((k) => !k.startsWith("engine."));
     if (hasAnyFields) return;
 
     // Check hardcoded defaults first
@@ -566,6 +571,7 @@ export default function BuildWizardPage() {
                   setFields={setFields}
                   buildId={activeBuild.id}
                   platform={platform}
+                  engineSlug={activeBuild.engineSlug}
                 />
               ))}
             </div>
