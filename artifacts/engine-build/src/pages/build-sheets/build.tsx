@@ -13,6 +13,10 @@ import {
   type TabDef,
 } from "@/data/buildFieldDefs";
 import { PageHeader } from "@/components/layout/PageHeader";
+import { CamPartPicker } from "@/components/build/CamPartPicker";
+import { SectionPartPicker } from "@/components/build/SectionPartPicker";
+import { platformForBuild, savedPicks } from "@/data/partsCatalog";
+import type { EnginePlatform } from "@/data/buildParts";
 import { Input } from "@/components/ui/input";
 import { Label } from "@/components/ui/label";
 import { Textarea } from "@/components/ui/textarea";
@@ -137,13 +141,17 @@ function SectionCard({
   fields,
   getField,
   setField,
+  setFields,
   buildId,
+  platform,
 }: {
   section: SectionDef;
   fields: Record<string, string>;
   getField: (key: string) => string | undefined;
   setField: (key: string, value: string) => void;
+  setFields: (entries: Record<string, string>) => void;
   buildId: string;
+  platform: EnginePlatform | null;
 }) {
   const isComplete = isSectionComplete(section.id, fields);
 
@@ -162,6 +170,10 @@ function SectionCard({
 
       {/* Fields */}
       <div className="p-5">
+        {section.id === "cam" && <CamPartPicker fields={fields} setFields={setFields} />}
+        {section.id !== "meta" && (
+          <SectionPartPicker sectionId={section.id} platform={platform} fields={fields} setFields={setFields} />
+        )}
         <div className="grid gap-4 sm:grid-cols-2">
           {section.fields.map((field) => (
             <div key={field.key} className={field.type === "textarea" ? "sm:col-span-2" : ""}>
@@ -317,15 +329,19 @@ export default function BuildWizardPage() {
       // Try to find this engine in our static JSON data
       fetch(`${import.meta.env.BASE_URL.replace(/\/$/, "")}/data/families.json`)
         .then((r) => r.json())
-        .then((families: { family_slug: string; manufacturer_slug: string }[]) => {
-          const family = families.find((f) => f.manufacturer_slug === mfr && slug.startsWith(mfr));
-          if (!family) return;
-          return fetch(`${import.meta.env.BASE_URL.replace(/\/$/, "")}/data/engines/${mfr}/${family.family_slug}.json`);
+        .then(async (families: { family_slug: string; manufacturer_slug: string }[]) => {
+          // Search every family of this manufacturer for the engine. (This used to
+          // open only the manufacturer's first family, so most database engines
+          // never found their specs and the build started blank.)
+          const base = import.meta.env.BASE_URL.replace(/\/$/, "");
+          for (const family of families.filter((f) => f.manufacturer_slug === mfr)) {
+            const d = await fetch(`${base}/data/engines/${mfr}/${family.family_slug}.json`).then((r) => (r.ok ? r.json() : null)).catch(() => null);
+            const hit = d?.engines?.find((e: any) => e.engine_id === slug);
+            if (hit) return hit;
+          }
+          return null;
         })
-        .then((r) => r?.json())
-        .then((data) => {
-          if (!data?.engines) return;
-          const eng = data.engines.find((e: any) => e.engine_id === slug);
+        .then((eng: any) => {
           if (!eng) return;
           const dbDefaults: Record<string, string> = {};
           if (eng.bore_in) dbDefaults["shortBlock.bore"] = String(eng.bore_in);
@@ -345,6 +361,9 @@ export default function BuildWizardPage() {
   useAutoCompute(activeBuild?.fields ?? {}, setField);
 
   const fields = activeBuild?.fields ?? {};
+  // Which parts catalog fits this build (null = no part numbers for it yet).
+  const platform = platformForBuild(activeBuild?.engineSlug, fields);
+  const picks = savedPicks(fields);
   const engineLabel = formatEngineSlug(activeBuild?.engineSlug ?? "");
 
   // Overall progress
@@ -381,6 +400,17 @@ export default function BuildWizardPage() {
         title={activeBuild.name}
         subtitle="Fill in your build specs — data you enter here auto-populates the calculators."
       />
+
+      {!platform && (
+        <div className="container mx-auto max-w-4xl px-4 pt-4">
+          <div className="rounded-lg border border-dashed border-gray-300 bg-gray-50 px-4 py-3 text-sm text-gray-600">
+            <strong className="text-gray-800">Part numbers for this engine are coming.</strong>{" "}
+            We're adding a full parts catalog. Keep building — enter what you're running in each section and it saves
+            to your build. Part pickers are live today for the small-block Chevy 350, LS1, LS3, Ford 302 and popular
+            diesels, plus cam lookup by part number for every engine.
+          </div>
+        </div>
+      )}
 
       {/* Tab navigation — sticky */}
       <div className="bg-[#1a1a1a] sticky top-16 z-30 border-b border-[#2a2a2a]">
@@ -468,6 +498,21 @@ export default function BuildWizardPage() {
             </div>
 
             <div className="space-y-4 print:space-y-2">
+              {picks.length > 0 && (
+                <div className="rounded-xl border border-gray-200 bg-white overflow-hidden print:rounded-none print:border-gray-300">
+                  <div className="px-4 py-2.5 bg-gray-50 border-b border-gray-200 print:bg-gray-100">
+                    <h3 className="text-sm font-bold uppercase tracking-wider text-gray-600">Parts</h3>
+                  </div>
+                  <div className="divide-y divide-gray-100">
+                    {picks.map((p) => (
+                      <div key={p.categoryId} className="flex items-center justify-between gap-4 px-4 py-2.5 hover:bg-gray-50">
+                        <span className="text-sm text-gray-900">{p.label}</span>
+                        <span className="text-sm font-mono text-gray-600 shrink-0">{p.partNumber ? `#${p.partNumber}` : "—"}</span>
+                      </div>
+                    ))}
+                  </div>
+                </div>
+              )}
               {BUILD_SHEET_GROUPS.map((group) => {
                 const hasData = group.rows.some((r) => fields[r.key] && fields[r.key].trim());
                 if (!hasData) return null;
@@ -495,7 +540,7 @@ export default function BuildWizardPage() {
               })}
 
               {/* Empty state */}
-              {BUILD_SHEET_GROUPS.every((g) => !g.rows.some((r) => fields[r.key]?.trim())) && (
+              {picks.length === 0 && BUILD_SHEET_GROUPS.every((g) => !g.rows.some((r) => fields[r.key]?.trim())) && (
                 <div className="text-center py-16">
                   <ClipboardList className="w-12 h-12 text-gray-300 mx-auto mb-4" />
                   <h3 className="text-lg font-semibold text-gray-600 mb-1">No data yet</h3>
@@ -518,7 +563,9 @@ export default function BuildWizardPage() {
                   fields={fields}
                   getField={getField}
                   setField={setField}
+                  setFields={setFields}
                   buildId={activeBuild.id}
+                  platform={platform}
                 />
               ))}
             </div>
