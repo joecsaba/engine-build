@@ -21,10 +21,11 @@ export interface VehicleEngine {
   electric?: boolean;
   trims: string[];
   note: string | null;
-  nhra: boolean;
+  /** Source fields exist in data/vehicles/ only; the runtime JSON omits them. */
+  nhra?: boolean;
   race?: boolean;
-  sources: VehicleSource[];
-  sourceCount: number;
+  sources?: VehicleSource[];
+  sourceCount?: number;
   engineUrl: string | null;
   familyUrl: string | null;
   familyName: string | null;
@@ -49,8 +50,8 @@ export interface VehicleDoc {
   intro: string[];
   generations: VehicleGeneration[];
   engines: VehicleEngine[];
-  sources: VehicleSource[];
-  method: string;
+  sources?: VehicleSource[];
+  method?: string;
   yearMin: number;
   yearMax: number;
 }

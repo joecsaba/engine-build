@@ -2,14 +2,14 @@
 # Curation specs for the nine models after the Camaro. Writes vspecs/<slug>.json.
 import json, os, sys
 SP = sys.argv[1]
-PICK = "Pick a year to see every engine offered that model year, with its code, rated horsepower and the trims it came in. Each engine links to its full specs, and each row lists the sources that confirm it."
+PICK = "Pick a year to see every engine offered that model year, with its code, rated horsepower and the trims it came in. Each engine links to its full specs."
 
 def G(key, name, a, b, *intro): return {"key": key, "name": name, "years": [a, b], "intro": list(intro)}
 
 S = {}
 S["chevelle"] = dict(make="Chevrolet", model="Chevelle", makeSlug="chevrolet", slug="chevelle",
   title="Chevrolet Chevelle Engines by Year (1964–1977)",
-  description="Every factory engine in the Chevrolet Chevelle, Malibu and SS by year, 1964–1977: RPO codes and ratings from the 194 six to the LS6 454. 3+ sources each.",
+  description="Every factory engine in the Chevrolet Chevelle, Malibu and SS by year, 1964–1977: RPO codes and ratings from the 194 six to the LS6 454.",
   intro=["Chevrolet's mid-size Chevelle ran from 1964 to 1977 and carried everything from a 194 cubic-inch six to the 450 hp LS6 454.", PICK],
   generations=[
     G("gen1", "First generation", 1964, 1967, "The first Chevelle offered inline sixes and the 283 and 327 small blocks. The 396 big block arrived in 1965 in the Z16 Malibu SS 396 and became the SS 396 engine from 1966."),
@@ -17,17 +17,17 @@ S["chevelle"] = dict(make="Chevrolet", model="Chevelle", makeSlug="chevrolet", s
     G("gen3", "Third generation", 1973, 1977, "The Colonnade Chevelle of 1973–1977 carried SAE net ratings and emissions equipment. The 454 lasted through 1975 and the 400 small block through 1976; by 1977 the list was down to the 250 six, the 305 and the 350.")],
   files=["verify_chevrolet-chevelle-1968-1972.json", "verify_chevelle-rest.json"],
   notes={"1965|396|375": "Z16 Malibu SS 396 package.",
-         "1967|396|375": "Reinstated around April 1967. Some sources describe it as dealer-installed.",
+         "1967|396|375": "Reinstated around April 1967.",
          "1969|427|425": "COPO 9562 special order, not in the regular order guide.",
          "1970|402|330": "Badged as a 396; displaces 402 cubic inches.",
          "1970|402|350": "Badged as a 396; displaces 402 cubic inches.",
          "1970|402|375": "Badged as a 396; displaces 402 cubic inches.",
          "1971|402|300": "Badged as a 396; displaces 402 cubic inches.",
-         "1975|454|215": "Some sources repeat the 1974 figure of 235 hp; GM gives 215 for 1975."})
+         "1975|454|215": "Down from 235 hp in 1974."})
 
 S["bel-air"] = dict(make="Chevrolet", model="Bel Air", makeSlug="chevrolet", slug="bel-air",
   title="Chevrolet Bel Air Engines by Year (1950–1975)",
-  description="Every factory engine in the Chevrolet Bel Air by year, 1950–1975: Stovebolt sixes, the 265 and 283, the 348 and 409, and the big blocks. 3+ sources each.",
+  description="Every factory engine in the Chevrolet Bel Air by year, 1950–1975: Stovebolt sixes, the 265 and 283, the 348 and 409, and the big blocks.",
   intro=["The Bel Air name ran on Chevrolet's US full-size cars from 1950 to 1975. It began as the hardtop of the Styleline De Luxe, became Chevrolet's top series in 1953, and from 1959 sat below the Impala.", PICK],
   generations=[
     G("1950-1954", "Stovebolt years", 1950, 1954, "Before 1955 every Chevrolet had an inline six: the 216 with a manual transmission and the 235 with the Powerglide automatic, until the 235 became the only engine in 1953."),
@@ -40,11 +40,11 @@ S["bel-air"] = dict(make="Chevrolet", model="Bel Air", makeSlug="chevrolet", slu
 
 S["mustang"] = dict(make="Ford", model="Mustang", makeSlug="ford", slug="mustang",
   title="Ford Mustang Engines by Year (1964½–2026)",
-  description="Every factory engine in the Ford Mustang by year, 1964½–2026: sixes, the K-code 289, Boss and Cobra Jet V8s, the 5.0 HO, Coyote and Voodoo. 3+ sources each.",
+  description="Every factory engine in the Ford Mustang by year, 1964½–2026: sixes, the K-code 289, Boss and Cobra Jet V8s, the 5.0 HO, Coyote and Voodoo.",
   intro=["Ford has built the Mustang without a break since April 1964. Over seven generations it has carried inline sixes and fours, a turbocharged 2.3, V6s, and V8s from the 260 to the supercharged 5.2 Predator.", PICK],
   generations=[
     G("gen1", "First generation", 1964, 1973, "The Mustang launched in April 1964 with a 170 six and a 260 V8, and by 1968 it offered a 428. By 1969–1971 the list ran to the Boss 302, the Boss 429 and the 428 and 429 Cobra Jets.", "Ford changed engines in the middle of model years several times, most notably the 260-to-289 switch in 1964 and the 428 Cobra Jet's arrival on April 1, 1968. The notes mark each one."),
-    G("mustang-ii", "Mustang II", 1974, 1978, "The smaller Mustang II dropped the V8 for 1974, offering a 2.3 four and a 2.8 V6; the 302 returned in 1975. Published ratings from these years differ between sources, so several are shown as ranges."),
+    G("mustang-ii", "Mustang II", 1974, 1978, "The smaller Mustang II dropped the V8 for 1974, offering a 2.3 four and a 2.8 V6; the 302 returned in 1975. Published ratings from these years vary, so several are shown as ranges."),
     G("fox", "Fox body", 1979, 1993, "The Fox-body Mustang brought the turbocharged 2.3, offered in 1979–1980 and again in the 1984–1986 SVO, and the 5.0 High Output V8, fuel-injected from 1986."),
     G("sn95", "SN95", 1994, 2004, "The 1994 redesign kept the 5.0 for two years before the 4.6 modular V8 took over in 1996, with a four-cam version in the SVT Cobra."),
     G("s197", "S197", 2005, 2014, "The 2005 Mustang used a 4.0 V6 and a three-valve 4.6 V8. The 2011 update brought the 3.7 V6 and the 5.0 Coyote. Shelby GT500s used supercharged 5.4 and, for 2013–2014, 5.8 V8s."),
@@ -58,7 +58,7 @@ S["mustang"] = dict(make="Ford", model="Mustang", makeSlug="ford", slug="mustang
           "1982|140|86": [86, 88], "1983|140|88": [88, 90], "1983|232|112": [105, 112]},
   notes={"1964|289|271": "Available from June 1964.",
          "1968|302|210": "Replaced the 289 two-barrel partway through the year.",
-         "1968|390|280": "Automatic only. Listed in Ford's revised December 1967 brochure.",
+         "1968|390|280": "Automatic only. Added during the 1968 model year.",
          "1968|428|335": "Cobra Jet, introduced April 1, 1968.",
          "1985|302|180": "Rated 165 hp until November 1984."})
 
@@ -68,10 +68,10 @@ S["torino"] = dict(make="Ford", model="Torino", makeSlug="ford", slug="torino",
   intro=["Ford's intermediate went from FE big blocks to the 385-series 429 and 460 in its nine years. The Fairlane shared the Torino's engines through 1970 and is included in those years' tables.", PICK],
   generations=[
     G("1968-1971", "1968–1971", 1968, 1971, "The 428 Cobra Jet was standard in the 1969 Cobra, and for 1970 the 429 came in Thunder Jet, Cobra Jet and Super Cobra Jet form."),
-    G("1972-1976", "1972–1976", 1972, 1976, "The 1972 redesign put the Torino on a separate frame. Ratings from 1972 are SAE net. The 351 Cobra Jet lasted through 1974, and the 460 was offered from 1974. Ford's brochures from these years print no horsepower, so ratings come from NHRA and published road tests.")],
+    G("1972-1976", "1972–1976", 1972, 1976, "The 1972 redesign put the Torino on a separate frame. Ratings from 1972 are SAE net. The 351 Cobra Jet lasted through 1974, and the 460 was offered from 1974.")],
   files=["verify_ford-torino-1968-1971.json", "verify_torino-1972-1976.json"],
   ranges={"1973|250|92": [88, 92], "1974|460|220": [215, 220]},
-  notes={"1972|400|168": "Rating from NHRA; Ford's brochures give none."})
+  notes={})
 
 S["gto"] = dict(make="Pontiac", model="GTO", makeSlug="pontiac", slug="gto",
   title="Pontiac GTO Engines by Year, 1964–2006",
@@ -84,8 +84,8 @@ S["gto"] = dict(make="Pontiac", model="GTO", makeSlug="pontiac", slug="gto",
     G("2004-2006", "2004–2006", 2004, 2006, "The revived GTO used the 5.7L LS1 in 2004 and the 6.0L LS2 in 2005–2006.")],
   files=["verify_pontiac-gto-1964-1967.json", "verify_gto-rest.json"],
   require_trim={"verify_pontiac-gto-1964-1967.json": "GTO"},
-  notes={"1968|400|366": "Ram Air II, added partway through 1968. Some sources give 360 hp.",
-         "1969|400|265": "Two-barrel economy 400, offered in 1969 despite some sources saying it was dropped."})
+  notes={"1968|400|366": "Ram Air II, added partway through 1968. Also published as 360 hp.",
+         "1969|400|265": "Two-barrel economy 400."})
 
 S["firebird"] = dict(make="Pontiac", model="Firebird", makeSlug="pontiac", slug="firebird",
   title="Pontiac Firebird Engines by Year (1967–2002)",
@@ -101,7 +101,7 @@ S["firebird"] = dict(make="Pontiac", model="Firebird", makeSlug="pontiac", slug=
   include=["1970|400|345"],
   ranges={"1979|231|115": [105, 115], "1979|305|125": [125, 135], "1979|350|165": [160, 170], "1982|173|102": [102, 105],
           "1983|151|92": [90, 92], "1984|151|92": [90, 92], "1985|305|155": [155, 160], "1987|305|170": [155, 170]},
-  notes={"1970|400|345": "Ram Air IV. NHRA lists 370 hp, the GTO rating.",
+  notes={"1970|400|345": "Ram Air IV.",
          "1980|301|210": "Turbocharged.", "1981|301|200": "Turbocharged.",
          "1989|231|250": "Turbocharged 3.8, assembled by PAS Inc. under contract to Pontiac."})
 

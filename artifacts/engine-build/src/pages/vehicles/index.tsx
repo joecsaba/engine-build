@@ -44,8 +44,8 @@ export default function VehiclesIndex() {
 
       <h1 className="text-4xl font-bold mb-3">{makeName ? `${makeName} engines by vehicle` : "Factory engines by vehicle"}</h1>
       <p className="text-muted-foreground max-w-3xl mb-8">
-        Pick a car to see every engine it was offered with, year by year. Each engine on these
-        pages was checked against at least three sources, and links to its full specs.
+        Pick a car to see every engine it was offered with, year by year. Each engine links to
+        its full specs.
       </p>
 
       {all == null ? (

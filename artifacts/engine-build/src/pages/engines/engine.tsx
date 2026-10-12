@@ -254,14 +254,6 @@ export default function EnginePage() {
         </Card>
       )}
 
-      {rec.sources?.length ? (
-        <p className="text-xs text-muted-foreground mt-6">
-          Source: {rec.sources.join(", ")} —{" "}
-          <a href="https://www.nhra.net/tech_specs/engine/blueprints/" target="_blank" rel="noopener noreferrer" className="underline">
-            nhra.net blueprints
-          </a>
-        </p>
-      ) : null}
 
       <p className="text-xs text-muted-foreground mt-8">
         Specs are for reference and build planning. Always verify against the factory service

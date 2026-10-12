@@ -1,6 +1,5 @@
 import { useEffect, useMemo, useState } from "react";
 import { Link, useParams } from "wouter";
-import { ExternalLink } from "lucide-react";
 import { Skeleton } from "@/components/ui/skeleton";
 import { SEOHead } from "@/components/SEOHead";
 import type { VehicleDoc, VehicleEngine } from "@/lib/vehicleTypes";
@@ -146,20 +145,6 @@ export default function VehicleModelPage() {
         );
       })}
 
-      <section className="mt-12 rounded-lg border p-5 text-sm">
-        <h2 className="text-base font-semibold mb-2">How this page was checked</h2>
-        <p className="text-muted-foreground mb-4 max-w-3xl">{doc.method} Engines the sources disagree on are left off.</p>
-        <h3 className="font-semibold mb-2">Sources</h3>
-        <ul className="grid gap-1.5 sm:grid-cols-2">
-          {doc.sources.map((s) => (
-            <li key={s.url} className="min-w-0">
-              <a href={s.url} target="_blank" rel="noopener noreferrer" className="text-[#E85D04] hover:underline break-words">
-                {s.name}
-              </a>
-            </li>
-          ))}
-        </ul>
-      </section>
     </div>
   );
 }
@@ -177,19 +162,17 @@ function YearTable({ year, label, model, engines }: { year: number; label: strin
         </span>
       </h3>
       <div className="overflow-x-auto rounded-lg border">
-        <table className="w-full text-sm min-w-[680px] table-fixed">
+        <table className="w-full text-sm min-w-[560px] table-fixed">
           <colgroup>
-            <col className="w-[38%]" />
-            <col className="w-[17%]" />
-            <col className="w-[27%]" />
-            <col className="w-[18%]" />
+            <col className="w-[44%]" />
+            <col className="w-[20%]" />
+            <col className="w-[36%]" />
           </colgroup>
           <thead>
             <tr className="border-b bg-muted/40">
               <th className="text-left py-2 px-3 font-medium">Engine</th>
               <th className="text-left py-2 px-3 font-medium">Rated</th>
               <th className="text-left py-2 px-3 font-medium">Offered in</th>
-              <th className="text-left py-2 px-3 font-medium">Verified by</th>
             </tr>
           </thead>
           <tbody>
@@ -207,29 +190,6 @@ function YearTable({ year, label, model, engines }: { year: number; label: strin
                 </td>
                 <td className="py-2 px-3 tabular-nums whitespace-nowrap">{hpText(e)}</td>
                 <td className="py-2 px-3">{e.trims.join(", ") || "—"}</td>
-                <td className="py-2 px-3">
-                  <details>
-                    <summary className="cursor-pointer text-muted-foreground whitespace-nowrap">
-                      {e.sourceCount} sources
-                    </summary>
-                    <ul className="mt-1.5 space-y-1 text-xs">
-                      {e.nhra && (
-                        <li>
-                          <a href="https://www.nhraracer.com/stockcarclassification" target="_blank" rel="noopener noreferrer" className="text-[#E85D04] hover:underline inline-flex items-center gap-1">
-                            NHRA Stock Car Classification Guides <ExternalLink className="w-3 h-3 shrink-0" />
-                          </a>
-                        </li>
-                      )}
-                      {e.sources.map((s) => (
-                        <li key={s.url + s.name}>
-                          <a href={s.url} target="_blank" rel="noopener noreferrer" className="text-[#E85D04] hover:underline inline-flex items-center gap-1">
-                            {s.name} <ExternalLink className="w-3 h-3 shrink-0" />
-                          </a>
-                        </li>
-                      ))}
-                    </ul>
-                  </details>
-                </td>
               </tr>
             ))}
           </tbody>

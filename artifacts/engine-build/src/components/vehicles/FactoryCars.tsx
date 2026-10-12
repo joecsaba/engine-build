@@ -15,9 +15,6 @@ export function FactoryCars({ groups, title }: { groups?: FactoryCarGroup[]; tit
         <CardTitle className="text-base">{title}</CardTitle>
       </CardHeader>
       <CardContent>
-        <p className="text-sm text-muted-foreground mb-3">
-          Each car and year below was checked against at least three sources.
-        </p>
         <ul className="space-y-2 text-sm">
           {groups.map((g) => (
             <li key={g.url}>

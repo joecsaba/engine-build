@@ -175,7 +175,7 @@ for fn in spec["files"]:
             if k in spec.get("ranges", {}):
                 lo, hi = spec["ranges"][k]
                 rec["hpRange"] = [lo, hi]
-                rec["note"] = rec["note"] or "Published ratings for this engine differ between sources."
+                rec["note"] = rec["note"] or "Published ratings for this engine vary."
             if y.startswith("1964") and mk == "ford": rec["yearLabel"] = "1964½"
             ok_status = st in ("confirmed", "two_sources_not_nhra", "three_sources_not_nhra", "electric") or k in spec.get("include", []) or k in spec.get("ranges", {})
             ok = k not in spec.get("exclude", {}) and ((ok_status and n >= 3) or (race and n >= 2))

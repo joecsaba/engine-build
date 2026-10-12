@@ -582,7 +582,6 @@ function engineEntry(e) {
       ${vehiclesHtml}
       ${e.relatedEngines?.length ? `<h2>Similar engines</h2>
       <ul>${e.relatedEngines.map((r) => `<li><a href="${r.url}">${escapeHtml(r.manufacturerName + " " + r.displayName)}</a>${r.displacement_ci != null ? ` — ${r.displacement_ci} ci` : ""}</li>`).join("")}</ul>` : ""}
-      ${e.sources?.length ? `<p>Source: ${escapeHtml(e.sources.join(", "))} — <a href="https://www.nhra.net/tech_specs/engine/blueprints/">nhra.net blueprints</a></p>` : ""}
       <p><a href="${e.familyUrl}">← All ${escapeHtml(e.familyName)} engines</a></p>`;
 
   return {
@@ -738,7 +737,6 @@ function enginesIndexEntry(manufacturers) {
 function factoryCarsHtml(groups, heading) {
   if (!groups?.length) return "";
   return `<h2>${escapeHtml(heading)}</h2>
-      <p>Each car and year below was checked against at least three sources.</p>
       <ul>${groups.map((g) => `<li><a href="${g.url}">${escapeHtml(g.vehicle)}</a>: ${
         g.rows.map((r) => `<a href="${r.url}">${escapeHtml(factoryCarLabel(r))}</a>`).join("; ")}</li>`).join("")}</ul>`;
 }
@@ -757,7 +755,7 @@ function vehicleEntry(v) {
   const row = (e) => {
     const name = vehicleEngineLabel(e);
     const link = e.engineUrl ?? e.familyUrl;
-    return `<tr><td>${link ? `<a href="${link}">${escapeHtml(name)}</a>` : escapeHtml(name)}</td><td>${escapeHtml(hpText(e))}</td><td>${escapeHtml(e.trims.join(", ") || "—")}</td><td>${escapeHtml(e.note ?? "")}</td><td>${e.sourceCount} sources</td></tr>`;
+    return `<tr><td>${link ? `<a href="${link}">${escapeHtml(name)}</a>` : escapeHtml(name)}${e.note ? `<br><small>${escapeHtml(e.note)}</small>` : ""}</td><td>${escapeHtml(hpText(e))}</td><td>${escapeHtml(e.trims.join(", ") || "—")}</td></tr>`;
   };
   const gens = v.generations.map((g) => {
     const ys = years.filter((y) => y >= g.years[0] && y <= g.years[1]);
@@ -767,7 +765,7 @@ function vehicleEntry(v) {
         const road = v.engines.filter((e) => e.year === y && !e.race);
         const race = v.engines.filter((e) => e.year === y && e.race);
         return `<h3 id="${y}">${escapeHtml(yearLabel(y))} ${escapeHtml(v.model)} engines</h3>
-      <table><tr><th>Engine</th><th>Rated</th><th>Offered in</th><th>Notes</th><th>Verified by</th></tr>${road.map(row).join("")}</table>${
+      <table><tr><th>Engine</th><th>Rated</th><th>Offered in</th></tr>${road.map(row).join("")}</table>${
         race.length ? `<p>Race-only (not street legal): ${race.map((e) => escapeHtml(`${vehicleEngineLabel(e)}, ${hpText(e)}`)).join("; ")}</p>` : ""}`;
       }).join("")}`;
   }).join("");
@@ -780,10 +778,6 @@ function vehicleEntry(v) {
       <h2>Jump to a year</h2>
       ${nav}
       ${gens}
-      <h2>How this page was checked</h2>
-      <p>${escapeHtml(v.method)}</p>
-      <h2>Sources</h2>
-      <ul>${v.sources.map((s) => `<li><a href="${escapeHtml(s.url)}" rel="noopener">${escapeHtml(s.name)}</a></li>`).join("")}</ul>
       <p><a href="${v.makeUrl}">← All ${escapeHtml(v.make)} vehicles</a></p>`;
   return {
     path: v.url,
@@ -807,7 +801,6 @@ function vehicleMakeEntries(vehicles) {
     const names = m.models.map((v) => v.model);
     const description = clampDesc([
       `Factory engines by model year for the ${m.make} ${names.join(", ")}, with ratings and RPO or engine codes.`,
-      "Each engine checked against at least three sources.",
       "With links to full engine specs.",
     ]);
     return {
@@ -833,7 +826,6 @@ function vehiclesIndexEntry(vehicles) {
   const crumbs = [{ label: "Home", href: "/" }, { label: "Vehicles" }];
   const description = clampDesc([
     "Which engines each car came with, year by year: displacement, rated horsepower and RPO or engine codes.",
-    "Every entry checked against at least three sources.",
     "Linked to full engine specs.",
   ]);
   return {

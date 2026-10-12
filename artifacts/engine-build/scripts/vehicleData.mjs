@@ -173,7 +173,10 @@ export function writeVehicleRuntime(vehicles) {
   for (const v of vehicles) {
     const dir = resolve(OUT, v.makeSlug);
     mkdirSync(dir, { recursive: true });
-    const { excluded, ...pub } = v; // the audit trail stays out of the runtime
+    // Sources are tracked privately (data/vehicles/, data/vehicles-research/,
+    // scripts/vehicleSources.mjs) and are not shown or shipped to the browser.
+    const { excluded, sources, method, ...rest } = v;
+    const pub = { ...rest, engines: v.engines.map(({ sources: _s, sourceCount: _c, nhra: _n, ...e }) => e) };
     writeFileSync(resolve(dir, `${v.slug}.json`), JSON.stringify(pub), "utf8");
   }
   return vehicles.length;
