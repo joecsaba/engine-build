@@ -78,7 +78,10 @@ function handler(event) {
     // Olds 350 diesel: 23.5:1 corrected to 22.5:1.
     '/engines/oldsmobile/oldsmobile-350ci/350ci-4-057x3-385-23-5cr': '/engines/oldsmobile/oldsmobile-350ci/350ci-4-057x3-385-22-5cr',
     // Chevy 427 listed at an impossible 14.9:1; ratio removed, merged with its twin.
-    '/engines/chevrolet/chevrolet-427ci/427ci-4-125x4-14-9cr': '/engines/chevrolet/chevrolet-427ci/427ci-4-125x4'
+    '/engines/chevrolet/chevrolet-427ci/427ci-4-125x4-14-9cr': '/engines/chevrolet/chevrolet-427ci/427ci-4-125x4',
+    // Chrysler B 383: bore/stroke corrected to 4.25 x 3.375 (2026-10-12); the
+    // 10:1 records now share one page.
+    '/engines/plymouth/b/383-b-v8': '/engines/plymouth/b/e'
   };
   var corrected = CORRECTED[uri.replace(/\/$/, '')];
   if (corrected) {

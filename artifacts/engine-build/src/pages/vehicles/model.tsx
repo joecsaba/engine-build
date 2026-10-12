@@ -133,7 +133,10 @@ export default function VehicleModelPage() {
         return (
           <section key={g.key} className="mb-12">
             <h2 className="text-2xl font-bold mb-3">
-              {g.name} <span className="text-muted-foreground font-normal">({g.years[0]}–{g.years[1]})</span>
+              {g.name}
+              {!g.name.includes(String(g.years[0])) && (
+                <span className="text-muted-foreground font-normal"> ({g.years[0]}–{g.years[1]})</span>
+              )}
             </h2>
             {g.intro?.length ? (
               <div className="space-y-3 text-[15px] leading-relaxed text-foreground/90 max-w-3xl mb-6">
@@ -186,6 +189,7 @@ function YearTable({ year, label, model, engines }: { year: number; label: strin
                   ) : (
                     <span className="font-medium">{vehicleEngineLabel(e)}</span>
                   )}
+                  {e.desc && <div className="text-xs text-foreground/80 mt-0.5">{e.desc}</div>}
                   {e.note && <div className="text-xs text-muted-foreground mt-0.5">{e.note}</div>}
                 </td>
                 <td className="py-2 px-3 tabular-nums whitespace-nowrap">{hpText(e)}</td>

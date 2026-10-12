@@ -36,6 +36,7 @@ S["bel-air"] = dict(make="Chevrolet", model="Bel Air", makeSlug="chevrolet", slu
     G("1965-1970", "1965–1970", 1965, 1970, "From 1965 the full-size Chevrolet offered big-block V8s alongside the six and the small blocks."),
     G("1971-1975", "1971–1975", 1971, 1975, "The last US Bel Airs were Chevrolet's lowest-priced full-size series. Ratings are SAE net from 1972, and from 1974 the base engine was a 350 V8; no six was offered.")],
   files=["verify_chevrolet-tri-five-1955-1957.json", "verify_bel-air.json"],
+  family_overrides=[{"years": [1950, 1952], "cid": [216], "url": "/engines/chevrolet/chevrolet-216ci"}],
   notes={"1957|283|250": "Ramjet fuel injection.", "1957|283|283": "Ramjet fuel injection."})
 
 S["mustang"] = dict(make="Ford", model="Mustang", makeSlug="ford", slug="mustang",
@@ -52,6 +53,7 @@ S["mustang"] = dict(make="Ford", model="Mustang", makeSlug="ford", slug="mustang
     G("s650", "S650", 2024, 2026, "The current car offers the 2.3 EcoBoost and the 5.0 Coyote, including the 500 hp Dark Horse, and the supercharged 5.2 in the GTD.")],
   files=["verify_ford-mustang-1965-1968.json", "verify_mustang-1969-1993.json", "verify_mustang-1994-2026.json"],
   family_overrides=[{"years": [2011, 2026], "cid": [302, 307], "url": "/engines/ford/coyote"}],
+  cid_fix={"2004|238|193": 237},
   ranges={"1972|250|99": [95, 99], "1975|140|87": [83, 88], "1975|171|97": [97, 105], "1975|302|129": [122, 140],
           "1976|171|100": [100, 105], "1976|302|133": [133, 140], "1977|140|88": [88, 93], "1977|171|93": [93, 104],
           "1977|302|134": [122, 137], "1978|171|90": [90, 104], "1978|302|139": [134, 139], "1980|140|132": [132, 150],

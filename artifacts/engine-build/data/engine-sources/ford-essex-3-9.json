@@ -1,0 +1,207 @@
+{
+ "name": "Ford 3.9L Essex V6",
+ "fields": {
+  "bore_in": {
+   "value": 3.81,
+   "sources": [
+    {
+     "name": "Wikipedia: Ford Essex V6 engine (Canadian)",
+     "url": "https://en.wikipedia.org/wiki/Ford_Essex_V6_engine_(Canadian)",
+     "says": "3.9: bore 96.8 mm (3.81 in), same as 3.8 and 4.2"
+    },
+    {
+     "name": "CarBuzz: The 2004 Ford Mustang only shared this V6 with one other car (G. Smith, 2025)",
+     "url": "https://carbuzz.com/ford-freestar-mustang-v6-engine/",
+     "says": "Bore: 3.81 Inches"
+    },
+    {
+     "name": "Ford Performance: 3.9L V6 Essex Mustang (2020, archived)",
+     "url": "https://performance.ford.com/enthusiasts/newsroom/2020/04/3-9l-v6-essex-mustang.html",
+     "says": "the 3.9 was substantively the same piece as the 3.8 save for a slightly longer stroke"
+    }
+   ],
+   "note": "96.8 mm = 3.8110 in. Ford implies the 3.8's bore and doesn't print it. CarBuzz's numbers match Wikipedia exactly and may be copied. Treat as borderline."
+  },
+  "stroke_in": {
+   "value": 3.46,
+   "sources": [
+    {
+     "name": "Ford Performance: 3.9L V6 Essex Mustang",
+     "url": "https://performance.ford.com/enthusiasts/newsroom/2020/04/3-9l-v6-essex-mustang.html",
+     "says": "slightly longer stroke, now at 3.464 inches"
+    },
+    {
+     "name": "Wikipedia: Ford Essex V6 engine (Canadian)",
+     "url": "https://en.wikipedia.org/wiki/Ford_Essex_V6_engine_(Canadian)",
+     "says": "stroke 88 mm (3.46 in)"
+    },
+    {
+     "name": "CarBuzz",
+     "url": "https://carbuzz.com/ford-freestar-mustang-v6-engine/",
+     "says": "Stroke: 3.46 Inches"
+    }
+   ],
+   "note": "88.0 mm = 3.4646 in. Some spec farms say 88.4 mm, which would make it 238 ci."
+  },
+  "displacement_ci": {
+   "value": 237,
+   "sources": [
+    {
+     "name": "Ford Performance: 3.9L V6 Essex Mustang",
+     "url": "https://performance.ford.com/enthusiasts/newsroom/2020/04/3-9l-v6-essex-mustang.html",
+     "says": "At 237 cubic inches, the 3.9 ..."
+    },
+    {
+     "name": "Wikipedia: Ford Essex V6 engine (Canadian)",
+     "url": "https://en.wikipedia.org/wiki/Ford_Essex_V6_engine_(Canadian)",
+     "says": "3,886 cc (237.1 cu in)"
+    },
+    {
+     "name": "CarBuzz",
+     "url": "https://carbuzz.com/ford-freestar-mustang-v6-engine/",
+     "says": "Displacement: 3,886 cc (=237.1 ci)"
+    }
+   ],
+   "note": "DISAGREES WITH OUR DATASET (238). cars.com/KBB-style listings say '3.9L/238'. 3.81 x 3.464 x 6 = 237.0 ci."
+  },
+  "displacement_l": {
+   "value": 3.9,
+   "sources": [
+    {
+     "name": "Ford Performance: 3.9L V6 Essex Mustang",
+     "url": "https://performance.ford.com/enthusiasts/newsroom/2020/04/3-9l-v6-essex-mustang.html",
+     "says": "3.9-liter"
+    },
+    {
+     "name": "Wikipedia: Ford Essex V6 engine (Canadian)",
+     "url": "https://en.wikipedia.org/wiki/Ford_Essex_V6_engine_(Canadian)",
+     "says": "3,886 cc"
+    },
+    {
+     "name": "EPA fueleconomy.gov data",
+     "url": "https://www.fueleconomy.gov/feg/download.shtml",
+     "says": "2004 Mustang: 3.9 L 6-cyl listed alongside 3.8 L"
+    },
+    {
+     "name": "cars.com 2004 Ford Freestar specs",
+     "url": "https://www.cars.com/research/ford-freestar-2004/specs/127332",
+     "says": "3.9L/238"
+    }
+   ],
+   "note": "3,886 cc"
+  },
+  "num_cylinders": {
+   "value": 6,
+   "sources": [
+    {
+     "name": "Ford Performance: 3.9L V6 Essex Mustang",
+     "url": "https://performance.ford.com/enthusiasts/newsroom/2020/04/3-9l-v6-essex-mustang.html",
+     "says": "V-6"
+    },
+    {
+     "name": "Wikipedia: Ford Essex V6 engine (Canadian)",
+     "url": "https://en.wikipedia.org/wiki/Ford_Essex_V6_engine_(Canadian)",
+     "says": "V6"
+    },
+    {
+     "name": "EPA fueleconomy.gov data",
+     "url": "https://www.fueleconomy.gov/feg/download.shtml",
+     "says": "3.9 L 6-cyl"
+    }
+   ],
+   "note": ""
+  },
+  "configuration": {
+   "value": "V6 (90-degree)",
+   "sources": [
+    {
+     "name": "Ford Performance: 3.9L V6 Essex Mustang",
+     "url": "https://performance.ford.com/enthusiasts/newsroom/2020/04/3-9l-v6-essex-mustang.html",
+     "says": "a 90-degree overhead-valve design built in Ford's Essex Engine Plant"
+    },
+    {
+     "name": "Wikipedia: Ford Essex V6 engine (Canadian)",
+     "url": "https://en.wikipedia.org/wiki/Ford_Essex_V6_engine_(Canadian)",
+     "says": "Canadian Essex V6 (3.8/3.9/4.2 family)"
+    },
+    {
+     "name": "CarBuzz",
+     "url": "https://carbuzz.com/ford-freestar-mustang-v6-engine/",
+     "says": "3.9-liter Essex V6"
+    }
+   ],
+   "note": "Only Ford Performance gives the 90-degree angle explicitly."
+  },
+  "years": {
+   "value": "2004 (Mustang, mid-year running change); 2004-2007 (Freestar)",
+   "sources": [
+    {
+     "name": "Wikipedia: Ford Essex V6 engine (Canadian)",
+     "url": "https://en.wikipedia.org/wiki/Ford_Essex_V6_engine_(Canadian)",
+     "says": "late-production 2004 Mustang (from October 7, 2003); 2004-2007 Freestar"
+    },
+    {
+     "name": "Ford Performance: 3.9L V6 Essex Mustang",
+     "url": "https://performance.ford.com/enthusiasts/newsroom/2020/04/3-9l-v6-essex-mustang.html",
+     "says": "drummed up pallet-loads of 3.9's to finish out the '04 Mustang production run"
+    },
+    {
+     "name": "CarBuzz",
+     "url": "https://carbuzz.com/ford-freestar-mustang-v6-engine/",
+     "says": "appeared for half a year of 2004 production before becoming exclusive to the Freestar through 2007"
+    },
+    {
+     "name": "Wikipedia: Ford Mustang (fourth generation)",
+     "url": "https://en.wikipedia.org/wiki/Ford_Mustang_(fourth_generation)",
+     "says": "second half of the 2004 model year, the 3.8 L Essex was replaced with a 3.9 L version"
+    }
+   ],
+   "note": "Both Wikipedia pages count as one source."
+  }
+ },
+ "variants": [
+  {
+   "year": 2004,
+   "hp": 193,
+   "hp_basis": "SAE net",
+   "compression_ratio": null,
+   "code": "3.9L OHV V6 (Mustang base / Deluxe / Premium)",
+   "induction": "sequential multiport EFI",
+   "sources": [
+    {
+     "name": "Ford 2004 Ford Legends brochure (Ford Heritage Vault)",
+     "url": "https://fordheritagevaultmedia.com/api/links/c29a9048c4864d89915b29f4f39330e4/uuid/ff4aac4f5f354d8ebb407223bcd1929e/access",
+     "says": "OHV V6 Horsepower: 193 @ 5500 rpm"
+    },
+    {
+     "name": "Kelley Blue Book: 2004 Ford Mustang specs",
+     "url": "https://www.kbb.com/ford/mustang/2004/",
+     "says": "193 @ 5500 RPM, V6 3.9 Liter"
+    },
+    {
+     "name": "Wikipedia: Ford Mustang (fourth generation)",
+     "url": "https://en.wikipedia.org/wiki/Ford_Mustang_(fourth_generation)",
+     "says": "3.9 L ... power output identical (193 hp)"
+    }
+   ],
+   "note": "Same rating as the 3.8. Ford Performance's 2020 article says Ford didn't change the rating but calls the 3.8 '190', which was the 1999-2000 figure."
+  }
+ ],
+ "unverified": {
+  "valvetrain": "OHV pushrod, 2 valves/cyl: Ford Performance ('OHV, 2-valves-per-cylinder') and Wikipedia. The Ford Legends brochure ('OHV V6') is Ford again. Only 2 independent.",
+  "block_material": "Cast iron: Ford Performance (Essex 'compact cast-iron block') and Wikipedia. Only 2.",
+  "head_material": "Aluminum: Ford Performance ('aluminum heads') and Wikipedia. Only 2.",
+  "induction": "Sequential multiport fuel injection: Wikipedia; Ford Performance says only 'all of them in Mustangs featured fuel injection'. Only 2.",
+  "compression_ratio": "Not found for the 3.9.",
+  "firing_order": "Not found from reputable sources.",
+  "fuel_type": "Gasoline: cars.com Freestar 'Gas V6'. EPA fuel field not checked.",
+  "rod_length_in": "Not found."
+ },
+ "unverified_variants": [
+  {
+   "year": "2004-2007 (Freestar)",
+   "hp": 193,
+   "found": "cars.com 2004 Freestar: 193 @ 4500, 240 lb-ft @ 3750 (different peak rpm from the Mustang's 193 @ 5500). Not researched further."
+  }
+ ]
+}

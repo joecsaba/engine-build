@@ -28,7 +28,7 @@ ENGINE_KIND = {  # (make, cid) -> (cylinders, layout word)
               173: (6, "V6"), 231: (6, "V6"), 191: (6, "V6"), 207: (6, "V6"), 346: (8, "V8"), 364: (8, "V8")},
   "ford": {144: (6, "inline-six"), 170: (6, "inline-six"), 200: (6, "inline-six"), 250: (6, "inline-six"),
            240: (6, "inline-six"), 300: (6, "inline-six"), 223: (6, "inline-six"), 232: (6, "V6"),
-           171: (6, "V6"), 227: (6, "V6"), 238: (6, "V6"), 245: (6, "V6"),
+           171: (6, "V6"), 227: (6, "V6"), 237: (6, "V6"), 238: (6, "V6"), 245: (6, "V6"),
            140: (4, "inline-four"), 122: (4, "inline-four"), 138: (4, "inline-four")},
   "dodge": {170: (6, "slant six"), 198: (6, "slant six"), 225: (6, "slant six"),
             167: (6, "V6"), 215: (6, "V6"), 220: (6, "V6"), 183: (6, "inline-six"),
@@ -87,6 +87,21 @@ def clean_code(rpo):
     c = re.sub(r"\s+California.*$", "", c).strip()
     return c or None
 
+# A real code is short (L78, LS6, Z28, LT-1, RPO 574, Q-code); anything longer is a
+# description ("426 Street Hemi, dual 4-bbl") and goes on its own line under the name.
+JUNK = re.compile(r"none in factory literature|per nhra|unknown", re.I)
+def split_code(raw):
+    c = clean_code(raw)
+    if not c or JUNK.search(c): return None, None
+    m = re.match(r"^(RPO\s*\d+(?:\s*/\s*\d+)?)\b[\s,]*(.*)$", c)
+    if m: return m.group(1), (m.group(2) or None)
+    m = re.match(r"^engine code ([A-Z0-9])$", c, re.I)
+    if m: return f"{m.group(1).upper()}-code", None
+    if re.match(r"^(standard|std)\b", c, re.I): return None, None
+    one = r"(?:[A-Z][A-Z0-9]{1,3}(?:-1)?|[A-Z0-9]-code(?: Hi-Po)?|XX)"
+    if re.fullmatch(rf"{one}(?:\s*[/+]\s*{one})*", c): return c, None
+    return None, c
+
 def induction_word(e):
     t = json.dumps([e.get("name"), e.get("common_name"), e.get("rpo")]).lower()
     if "supercharg" in t or re.search(r"\bsc\b", t): return " supercharged"
@@ -105,6 +120,9 @@ for fn in spec["files"]:
         year = int(re.sub(r"\D", "", y)[:4])
         for e in es:
             k = key(year, e)
+            # verified displacement corrections (the Mustang's 3.9 Essex is 237 ci, not 238)
+            if k in spec.get("cid_fix", {}):
+                e = {**e, "cid": spec["cid_fix"][k]}
             raw = list(e.get("sources") or []) + spec.get("add_sources", {}).get(k, [])
             srcs, seen = [], set()
             for s in raw:
@@ -136,7 +154,8 @@ for fn in spec["files"]:
                 "year": year,
                 "gen": e.get("gen") or next((g["key"] for g in spec["generations"] if g["years"][0] <= year <= g["years"][1]), None),
                 "cid": e["cid"], "cyl": cyl, "name": name,
-                "code": spec.get("codes", {}).get(k, clean_code(e.get("rpo"))),
+                "code": spec.get("codes", {}).get(k, split_code(e.get("rpo"))[0]),
+                "desc": None if k in spec.get("codes", {}) else split_code(e.get("rpo"))[1],
                 "hp": e.get("hp"),
                 # US makers quoted SAE net from 1972 on; research files sometimes
                 # labeled later ratings "gross", so the year decides, not the label.

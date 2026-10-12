@@ -1,0 +1,363 @@
+{
+ "name": "Chrysler 400 B-engine V8",
+ "fields": {
+  "bore_in": {
+   "value": 4.342,
+   "sources": [
+    {
+     "name": "Chrysler factory brochure: 1978 Dodge Charger SE (p.4 Engine Specifications)",
+     "url": "https://www.oldcarbrochures.org/United%20States/Dodge/1978_Dodge/1978-Dodge-Charger-SE-Brochure/slides/1978_Dodge_Charger_SE-04.html",
+     "says": "400 V8: Bore & stroke 4.34 x 3.38 in"
+    },
+    {
+     "name": "NHRA engine blueprint CHRY-72",
+     "url": "https://www.nhra.net/tech_specs/engine/blueprints/CHRY-72.rtf",
+     "says": "Bore 4.340, stroke 3.380, 400 ci, 8 cyl (same in CHRY-73..78)"
+    },
+    {
+     "name": "Wikipedia: Chrysler B engine",
+     "url": "https://en.wikipedia.org/wiki/Chrysler_B_engine",
+     "says": "400: bore 4.342 in (110.3 mm)"
+    },
+    {
+     "name": "MoTales (David Zatz, ex-Allpar): B-Engines",
+     "url": "https://www.motales.com/engines/B-V8.php",
+     "says": "Bore table: 400 = 4.34 in"
+    }
+   ],
+   "note": "Factory/NHRA round to 4.34; 4.342 is the commonly cited nominal (Wikipedia)."
+  },
+  "stroke_in": {
+   "value": 3.375,
+   "sources": [
+    {
+     "name": "Chrysler factory brochure: 1978 Dodge Charger SE (p.4 Engine Specifications)",
+     "url": "https://www.oldcarbrochures.org/United%20States/Dodge/1978_Dodge/1978-Dodge-Charger-SE-Brochure/slides/1978_Dodge_Charger_SE-04.html",
+     "says": "4.34 x 3.38 in"
+    },
+    {
+     "name": "NHRA engine blueprint CHRY-72",
+     "url": "https://www.nhra.net/tech_specs/engine/blueprints/CHRY-72.rtf",
+     "says": "stroke 3.380"
+    },
+    {
+     "name": "Wikipedia: Chrysler B engine",
+     "url": "https://en.wikipedia.org/wiki/Chrysler_B_engine",
+     "says": "All low-block B engines have a 3-3/8 in stroke"
+    }
+   ],
+   "note": "3.375 nominal; factory and NHRA print 3.38."
+  },
+  "displacement_ci": {
+   "value": 400,
+   "sources": [
+    {
+     "name": "Chrysler factory brochure: 1978 Dodge Charger SE (p.4 Engine Specifications)",
+     "url": "https://www.oldcarbrochures.org/United%20States/Dodge/1978_Dodge/1978-Dodge-Charger-SE-Brochure/slides/1978_Dodge_Charger_SE-04.html",
+     "says": "Cubic-inch displacement 400.0"
+    },
+    {
+     "name": "NHRA engine blueprint CHRY-72",
+     "url": "https://www.nhra.net/tech_specs/engine/blueprints/CHRY-72.rtf",
+     "says": "400 ci"
+    },
+    {
+     "name": "Wikipedia: Chrysler B engine",
+     "url": "https://en.wikipedia.org/wiki/Chrysler_B_engine",
+     "says": "400 cu in"
+    }
+   ],
+   "note": "Computed from 4.342 x 3.375 x 8 = 399.8 ci."
+  },
+  "displacement_l": {
+   "value": 6.6,
+   "sources": [
+    {
+     "name": "Wikipedia: Chrysler B engine",
+     "url": "https://en.wikipedia.org/wiki/Chrysler_B_engine",
+     "says": "400 cu in (6.6 L)"
+    },
+    {
+     "name": "Chrysler factory brochure: 1978 Dodge Charger SE (p.4 Engine Specifications)",
+     "url": "https://www.oldcarbrochures.org/United%20States/Dodge/1978_Dodge/1978-Dodge-Charger-SE-Brochure/slides/1978_Dodge_Charger_SE-04.html",
+     "says": "400.0 ci (= 6.55 L)"
+    },
+    {
+     "name": "NHRA engine blueprint CHRY-72",
+     "url": "https://www.nhra.net/tech_specs/engine/blueprints/CHRY-72.rtf",
+     "says": "400 ci (= 6.55 L)"
+    }
+   ],
+   "note": "6.55 L exact; 6.6 L rounded."
+  },
+  "num_cylinders": {
+   "value": 8,
+   "sources": [
+    {
+     "name": "Chrysler factory brochure: 1978 Dodge Charger SE (p.4 Engine Specifications)",
+     "url": "https://www.oldcarbrochures.org/United%20States/Dodge/1978_Dodge/1978-Dodge-Charger-SE-Brochure/slides/1978_Dodge_Charger_SE-04.html",
+     "says": "90 deg V8"
+    },
+    {
+     "name": "NHRA engine blueprint CHRY-72",
+     "url": "https://www.nhra.net/tech_specs/engine/blueprints/CHRY-72.rtf",
+     "says": "8 cylinders"
+    },
+    {
+     "name": "Wikipedia: Chrysler B engine",
+     "url": "https://en.wikipedia.org/wiki/Chrysler_B_engine",
+     "says": "V8"
+    }
+   ],
+   "note": ""
+  },
+  "configuration": {
+   "value": "V8 (90-degree)",
+   "sources": [
+    {
+     "name": "Chrysler factory brochure: 1978 Dodge Charger SE (p.4 Engine Specifications)",
+     "url": "https://www.oldcarbrochures.org/United%20States/Dodge/1978_Dodge/1978-Dodge-Charger-SE-Brochure/slides/1978_Dodge_Charger_SE-04.html",
+     "says": "Overhead valve, 90 deg V8"
+    },
+    {
+     "name": "NHRA engine blueprint CHRY-72",
+     "url": "https://www.nhra.net/tech_specs/engine/blueprints/CHRY-72.rtf",
+     "says": "8 cyl Chrysler V8 blueprint"
+    },
+    {
+     "name": "Wikipedia: Chrysler B engine",
+     "url": "https://en.wikipedia.org/wiki/Chrysler_B_engine",
+     "says": "V8"
+    }
+   ],
+   "note": ""
+  },
+  "valvetrain": {
+   "value": "OHV pushrod, 2 valves/cyl, hydraulic lifters",
+   "sources": [
+    {
+     "name": "Chrysler factory brochure: 1978 Dodge Charger SE (p.4 Engine Specifications)",
+     "url": "https://www.oldcarbrochures.org/United%20States/Dodge/1978_Dodge/1978-Dodge-Charger-SE-Brochure/slides/1978_Dodge_Charger_SE-04.html",
+     "says": "Type: Overhead valve, 90 deg V8"
+    },
+    {
+     "name": "Wikipedia: Chrysler B engine",
+     "url": "https://en.wikipedia.org/wiki/Chrysler_B_engine",
+     "says": "OHV 2 valves x cyl"
+    },
+    {
+     "name": "NHRA engine blueprint CHRY-72",
+     "url": "https://www.nhra.net/tech_specs/engine/blueprints/CHRY-72.rtf",
+     "says": "Lifter: H (hydraulic); one intake + one exhaust valve size per cylinder"
+    }
+   ],
+   "note": ""
+  },
+  "induction": {
+   "value": "Carburetor: 2-bbl or 4-bbl (Carter Thermo-Quad 4-bbl; Holley/Carter 2-bbl)",
+   "sources": [
+    {
+     "name": "Chrysler factory brochure: 1972 Plymouth Satellite/Road Runner (Form 81-505-2023, p.20)",
+     "url": "https://www.oldcarbrochures.org/United%20States/Plymouth/1972%20Plymouth/1972-Plymouth-Satellite-Brochure/slides/1972_Plymouth_Satellite-20-21.html",
+     "says": "400 V-8 2-bbl and 400 V-8 4-bbl listed"
+    },
+    {
+     "name": "NHRA engine blueprint CHRY-72",
+     "url": "https://www.nhra.net/tech_specs/engine/blueprints/CHRY-72.rtf",
+     "says": "400: 1-2 Carter BBD (190 hp); 1-4 Carter TQ (255 hp)"
+    },
+    {
+     "name": "MoTales (David Zatz, ex-Allpar): B-Engines",
+     "url": "https://www.motales.com/engines/B-V8.php",
+     "says": "1972 400 two-barrel and four-barrel"
+    },
+    {
+     "name": "Mopar Connection Magazine (Chris Holley): 1972 Charger Rallye feature",
+     "url": "https://moparconnectionmagazine.com/?p=52586",
+     "says": "one with a two-barrel (190 hp) and the other with a four-barrel (255 hp)"
+    }
+   ],
+   "note": "2-bbl dropped after 1975 per MoTales; 1977-78 NHRA lists only 4-bbl; 1978 brochure lists 4-barrel only."
+  },
+  "fuel_type": {
+   "value": "Gasoline (unleaded regular by 1978)",
+   "sources": [
+    {
+     "name": "Chrysler factory brochure: 1978 Dodge Charger SE (p.4 Engine Specifications)",
+     "url": "https://www.oldcarbrochures.org/United%20States/Dodge/1978_Dodge/1978-Dodge-Charger-SE-Brochure/slides/1978_Dodge_Charger_SE-04.html",
+     "says": "Recommended fuel: Unleaded Regular"
+    },
+    {
+     "name": "Wikipedia: Chrysler B engine",
+     "url": "https://en.wikipedia.org/wiki/Chrysler_B_engine",
+     "says": "compression dropped to allow low-lead/no-lead gas"
+    },
+    {
+     "name": "MoTales (David Zatz, ex-Allpar): B-Engines",
+     "url": "https://www.motales.com/engines/B-V8.php",
+     "says": "1973 induction-hardened exhaust seats, readying the big engines for unleaded fuel"
+    }
+   ],
+   "note": ""
+  },
+  "years": {
+   "value": "1972-1978",
+   "sources": [
+    {
+     "name": "NHRA engine blueprint CHRY-72",
+     "url": "https://www.nhra.net/tech_specs/engine/blueprints/CHRY-72.rtf",
+     "says": "400 listed in every CHRY-72 through CHRY-78 blueprint"
+    },
+    {
+     "name": "MoTales (David Zatz, ex-Allpar): B-Engines",
+     "url": "https://www.motales.com/engines/B-V8.php",
+     "says": "introduced 1972; in August 1978 the last B or RB engine left the assembly line"
+    },
+    {
+     "name": "Wikipedia: Chrysler B engine",
+     "url": "https://en.wikipedia.org/wiki/Chrysler_B_engine",
+     "says": "introduced in 1972 to replace the 383; 1978 final year"
+    },
+    {
+     "name": "Chrysler factory brochure: 1972 Plymouth Satellite/Road Runner (Form 81-505-2023, p.20)",
+     "url": "https://www.oldcarbrochures.org/United%20States/Plymouth/1972%20Plymouth/1972-Plymouth-Satellite-Brochure/slides/1972_Plymouth_Satellite-20-21.html",
+     "says": "1972 400 V-8 offered (brochure dated 8-1-71)"
+    }
+   ],
+   "note": ""
+  },
+  "compression_ratio": {
+   "value": "8.2:1 (factory advertised, 1972 and 1978)",
+   "sources": [
+    {
+     "name": "Chrysler factory brochure: 1972 Plymouth Satellite/Road Runner (Form 81-505-2023, p.20)",
+     "url": "https://www.oldcarbrochures.org/United%20States/Plymouth/1972%20Plymouth/1972-Plymouth-Satellite-Brochure/slides/1972_Plymouth_Satellite-20-21.html",
+     "says": "400 V-8 2-bbl 8.2 to 1; 400 V-8 4-bbl 8.2 to 1"
+    },
+    {
+     "name": "Chrysler factory brochure: 1978 Dodge Charger SE (p.4 Engine Specifications)",
+     "url": "https://www.oldcarbrochures.org/United%20States/Dodge/1978_Dodge/1978-Dodge-Charger-SE-Brochure/slides/1978_Dodge_Charger_SE-04.html",
+     "says": "400: compression ratio 8.2:1"
+    },
+    {
+     "name": "Wikipedia: Chrysler B engine",
+     "url": "https://en.wikipedia.org/wiki/Chrysler_B_engine",
+     "says": "All versions used 8.2:1 compression ratio"
+    }
+   ],
+   "note": "NHRA blueprints list different (NHRA-spec) ratios: 8.79 (1972-73), 8.68 (1974-75), 8.90 (1976), 9.27 (1977), 9.20 (1978). Use factory 8.2:1 for the page."
+  }
+ },
+ "variants": [
+  {
+   "year": 1972,
+   "hp": 190,
+   "hp_basis": "net",
+   "compression_ratio": 8.2,
+   "code": "400 2-bbl, single exhaust",
+   "induction": "2-bbl",
+   "sources": [
+    {
+     "name": "NHRA engine blueprint CHRY-72",
+     "url": "https://www.nhra.net/tech_specs/engine/blueprints/CHRY-72.rtf",
+     "says": "190 hp 400 DP, 1-2 Carter BBD"
+    },
+    {
+     "name": "MoTales (David Zatz, ex-Allpar): B-Engines",
+     "url": "https://www.motales.com/engines/B-V8.php",
+     "says": "1972 400: 190 hp and 310 lb-ft with a two-barrel"
+    },
+    {
+     "name": "Mopar Connection Magazine (Chris Holley): 1972 Charger Rallye feature",
+     "url": "https://moparconnectionmagazine.com/?p=52586",
+     "says": "two-barrel (190 hp)"
+    }
+   ]
+  },
+  {
+   "year": 1972,
+   "hp": 255,
+   "hp_basis": "net",
+   "compression_ratio": 8.2,
+   "code": "400 4-bbl, dual exhaust (std. Road Runner)",
+   "induction": "4-bbl",
+   "sources": [
+    {
+     "name": "NHRA engine blueprint CHRY-72",
+     "url": "https://www.nhra.net/tech_specs/engine/blueprints/CHRY-72.rtf",
+     "says": "255 hp 400 DP, 1-4 Carter TQ"
+    },
+    {
+     "name": "MoTales (David Zatz, ex-Allpar): B-Engines",
+     "url": "https://www.motales.com/engines/B-V8.php",
+     "says": "a healthy 255 hp and 340 lb-ft with the four-barrel"
+    },
+    {
+     "name": "Mopar Connection Magazine (Chris Holley): 1972 Charger Rallye feature",
+     "url": "https://moparconnectionmagazine.com/?p=52586",
+     "says": "four-barrel (255 hp)"
+    }
+   ],
+   "note": "NHRA also lists 265 hp for this engine 'with fresh air package' (Air Grabber) - an NHRA classification, not a factory rating."
+  }
+ ],
+ "unverified": {
+  "rod_length_in": "6.358 in: NHRA CHRY-72..78 (6.358) and Wikipedia (6.358, 1.88:1 rod ratio) - only 2 sources.",
+  "firing_order": "1-8-4-3-6-5-7-2: Chrysler 1969 Plymouth Fury owner's manual gives it for the 383/440 B/RB engines (same family) but no 1972-78 400-specific source found.",
+  "block_material": "Cast iron: Wikipedia; MoTales mentions chrome-alloy cast-iron block (truck versions). Not 3 sources.",
+  "head_material": "Cast iron: Wikipedia only."
+ },
+ "unverified_variants": [
+  {
+   "year": 1973,
+   "hp": 175,
+   "induction": "2-bbl",
+   "found": "NHRA CHRY-73 lists 175 (DP) and 185 (CDP) 2-bbl."
+  },
+  {
+   "year": 1973,
+   "hp": 260,
+   "code": "E68 4-bbl dual exhaust",
+   "found": "NHRA CHRY-73 (260, Carter TQ); Wikipedia Road Runner ('code E68 400 cu in 260 hp'). 2 sources."
+  },
+  {
+   "year": 1974,
+   "hp": 250,
+   "code": "4-bbl high performance",
+   "found": "NHRA CHRY-74 lists 185 (2-bbl), 240 and 250 (4-bbl). Wikipedia B-engine generic 4-bbl single-exhaust 205 hp (year not stated)."
+  },
+  {
+   "year": 1975,
+   "hp": 175,
+   "induction": "2-bbl",
+   "found": "NHRA CHRY-75 (165 and 175); MoTales ('In 1975, the two-barrel 400 was producing 175 hp'); Wikipedia Road Runner says 160. Disagreement."
+  },
+  {
+   "year": 1975,
+   "hp": 185,
+   "induction": "4-bbl single exhaust",
+   "found": "NHRA CHRY-75 (185 and 190); Wikipedia Road Runner (185)."
+  },
+  {
+   "year": 1975,
+   "hp": 235,
+   "code": "E68 4-bbl dual exhaust",
+   "found": "NHRA CHRY-75 (235 and 240); Wikipedia Road Runner (235)."
+  },
+  {
+   "year": 1976,
+   "hp": null,
+   "found": "NHRA CHRY-76 lists 175 (2-bbl), 185/200/210 (4-bbl), 240 (4-bbl HP). No second source."
+  },
+  {
+   "year": 1977,
+   "hp": 190,
+   "found": "NHRA CHRY-77 (190, 4-bbl, E64/E68). No second source."
+  },
+  {
+   "year": 1978,
+   "hp": 190,
+   "found": "NHRA CHRY-78 (190, 4-bbl); Wikipedia ('1978: 190 hp only'). SlashGear says the final 400 made 195 hp - disagreement."
+  }
+ ]
+}

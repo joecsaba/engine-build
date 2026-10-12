@@ -14,6 +14,8 @@ export interface VehicleEngine {
   cyl: number | null;
   name: string;
   code: string | null;
+  /** What the maker or enthusiasts call this version ("426 Street Hemi, dual 4-bbl"). */
+  desc?: string | null;
   hp: number | null;
   /** Set when sources agree the engine was offered but publish different ratings. */
   hpRange?: [number, number];

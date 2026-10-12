@@ -1,0 +1,335 @@
+{
+ "name": "Ford 5.8L supercharged \"Trinity\" V8",
+ "fields": {
+  "displacement_l": {
+   "value": 5.8,
+   "sources": [
+    {
+     "name": "Ford Performance: 2013 Shelby GT500 (archived spec page)",
+     "url": "https://performance.ford.com/enthusiasts/collector-vehicles/shelby/shelby-gt500/2013.html",
+     "says": "Displacement: 5.8L / 351 CID"
+    },
+    {
+     "name": "Wikipedia: Ford Modular engine (5.8 Trinity)",
+     "url": "https://en.wikipedia.org/wiki/Ford_Modular_engine",
+     "says": "5.8 L (5,812 cc; 354.7 cu in)"
+    },
+    {
+     "name": "auto motor und sport: Ford Mustang Shelby GT500 technische Daten",
+     "url": "https://www.auto-motor-und-sport.de/test/ford-mustang-shelby-gt-500/technische-daten/",
+     "says": "Hubraum 5812 cm3"
+    },
+    {
+     "name": "EPA fueleconomy.gov data",
+     "url": "https://www.fueleconomy.gov/feg/download.shtml",
+     "says": "2013/2014 Mustang Shelby GT500: 5.8 L 8-cyl, S (supercharged)"
+    }
+   ],
+   "note": "5,812 cc"
+  },
+  "num_cylinders": {
+   "value": 8,
+   "sources": [
+    {
+     "name": "Ford Performance: 2013 Shelby GT500",
+     "url": "https://performance.ford.com/enthusiasts/collector-vehicles/shelby/shelby-gt500/2013.html",
+     "says": "supercharged aluminum V-8"
+    },
+    {
+     "name": "Wikipedia: Ford Modular engine",
+     "url": "https://en.wikipedia.org/wiki/Ford_Modular_engine",
+     "says": "V8"
+    },
+    {
+     "name": "auto motor und sport",
+     "url": "https://www.auto-motor-und-sport.de/test/ford-mustang-shelby-gt-500/technische-daten/",
+     "says": "8-Zylinder V-Motor"
+    },
+    {
+     "name": "EPA fueleconomy.gov data",
+     "url": "https://www.fueleconomy.gov/feg/download.shtml",
+     "says": "5.8 L 8-cyl"
+    }
+   ],
+   "note": ""
+  },
+  "configuration": {
+   "value": "V8 (90-degree)",
+   "sources": [
+    {
+     "name": "Ford Performance: 2013 Shelby GT500",
+     "url": "https://performance.ford.com/enthusiasts/collector-vehicles/shelby/shelby-gt500/2013.html",
+     "says": "Engine Type: 90-degree, DOHC 32-Valve supercharged aluminum V-8"
+    },
+    {
+     "name": "Wikipedia: Ford Modular engine",
+     "url": "https://en.wikipedia.org/wiki/Ford_Modular_engine",
+     "says": "Modular V8"
+    },
+    {
+     "name": "auto motor und sport",
+     "url": "https://www.auto-motor-und-sport.de/test/ford-mustang-shelby-gt-500/technische-daten/",
+     "says": "8-Zylinder V-Motor"
+    }
+   ],
+   "note": "Only Ford gives the 90-degree angle explicitly; Wikipedia and AMS just say V8."
+  },
+  "valvetrain": {
+   "value": "DOHC, 4 valves/cyl (32 valves)",
+   "sources": [
+    {
+     "name": "Ford Performance: 2013 Shelby GT500",
+     "url": "https://performance.ford.com/enthusiasts/collector-vehicles/shelby/shelby-gt500/2013.html",
+     "says": "DOHC 32-Valve"
+    },
+    {
+     "name": "Wikipedia: Ford Modular engine",
+     "url": "https://en.wikipedia.org/wiki/Ford_Modular_engine",
+     "says": "DOHC, 4 valves per cylinder"
+    },
+    {
+     "name": "Hagerty Learning Garage: 2013 Ford Shelby GT 500",
+     "url": "https://www.hagerty.com/learning-garage/vehicles/2013-ford-shelby-gt-500",
+     "says": "Double overhead-cam, 32-valve V-8"
+    },
+    {
+     "name": "EngineLabs: A failure of one GT500's 5.8-liter Trinity (C. Blue, 2015)",
+     "url": "https://www.enginelabs.com/news/failure-analysis-one-gt500s-5-8-liter-trinity-engine/",
+     "says": "four-valve ... DOHC"
+    }
+   ],
+   "note": ""
+  },
+  "block_material": {
+   "value": "aluminum",
+   "sources": [
+    {
+     "name": "Ford Performance: 2013 Shelby GT500",
+     "url": "https://performance.ford.com/enthusiasts/collector-vehicles/shelby/shelby-gt500/2013.html",
+     "says": "5.8-liter V-8 aluminum-block engine"
+    },
+    {
+     "name": "Wikipedia: Ford Modular engine",
+     "url": "https://en.wikipedia.org/wiki/Ford_Modular_engine",
+     "says": "aluminum block"
+    },
+    {
+     "name": "Hagerty Learning Garage: 2013 Ford Shelby GT 500",
+     "url": "https://www.hagerty.com/learning-garage/vehicles/2013-ford-shelby-gt-500",
+     "says": "an all-aluminum 5.8-liter 32-valve DOHC engine"
+    }
+   ],
+   "note": ""
+  },
+  "head_material": {
+   "value": "aluminum",
+   "sources": [
+    {
+     "name": "Wikipedia: Ford Modular engine",
+     "url": "https://en.wikipedia.org/wiki/Ford_Modular_engine",
+     "says": "aluminum heads"
+    },
+    {
+     "name": "Hagerty Learning Garage: 2013 Ford Shelby GT 500",
+     "url": "https://www.hagerty.com/learning-garage/vehicles/2013-ford-shelby-gt-500",
+     "says": "all-aluminum 5.8-liter"
+    },
+    {
+     "name": "Ford Performance: 2013 Shelby GT500",
+     "url": "https://performance.ford.com/enthusiasts/collector-vehicles/shelby/shelby-gt500/2013.html",
+     "says": "supercharged aluminum V-8"
+    }
+   ],
+   "note": "Ford and Hagerty say 'aluminum V-8' / 'all-aluminum', not heads specifically."
+  },
+  "induction": {
+   "value": "supercharged (Eaton TVS, 2.3 L, intercooled), port fuel injection",
+   "sources": [
+    {
+     "name": "Ford Performance: 2013 Shelby GT500",
+     "url": "https://performance.ford.com/enthusiasts/collector-vehicles/shelby/shelby-gt500/2013.html",
+     "says": "supercharged ... new supercharger"
+    },
+    {
+     "name": "Wikipedia: Ford Modular engine",
+     "url": "https://en.wikipedia.org/wiki/Ford_Modular_engine",
+     "says": "2.3 L Eaton TVS supercharger with maximum boost of 14 psi; port fuel injection"
+    },
+    {
+     "name": "Hagerty Learning Garage: 2013 Ford Shelby GT 500",
+     "url": "https://www.hagerty.com/learning-garage/vehicles/2013-ford-shelby-gt-500",
+     "says": "Boost is provided by a huge Eaton Supercharger ... intercooled"
+    },
+    {
+     "name": "auto motor und sport",
+     "url": "https://www.auto-motor-und-sport.de/test/ford-mustang-shelby-gt-500/technische-daten/",
+     "says": "Kompressor (0,6 bar)"
+    }
+   ],
+   "note": "Supercharger is confirmed by all four. The 2.3 L size and port injection are Wikipedia only. Boost differs: Wikipedia 14 psi max vs AMS 0.6 bar."
+  },
+  "compression_ratio": {
+   "value": "9.0:1",
+   "sources": [
+    {
+     "name": "Ford Performance: 2013 Shelby GT500",
+     "url": "https://performance.ford.com/enthusiasts/collector-vehicles/shelby/shelby-gt500/2013.html",
+     "says": "Compression: 9.0:1"
+    },
+    {
+     "name": "Wikipedia: Ford Modular engine",
+     "url": "https://en.wikipedia.org/wiki/Ford_Modular_engine",
+     "says": "9.0:1"
+    },
+    {
+     "name": "auto motor und sport",
+     "url": "https://www.auto-motor-und-sport.de/test/ford-mustang-shelby-gt-500/technische-daten/",
+     "says": "Verdichtung 9,0:1"
+    }
+   ],
+   "note": ""
+  },
+  "years": {
+   "value": "2013-2014 (Shelby GT500 only)",
+   "sources": [
+    {
+     "name": "Wikipedia: Ford Modular engine",
+     "url": "https://en.wikipedia.org/wiki/Ford_Modular_engine",
+     "says": "2013-2014 Ford Shelby GT500"
+    },
+    {
+     "name": "auto motor und sport",
+     "url": "https://www.auto-motor-und-sport.de/test/ford-mustang-shelby-gt-500/technische-daten/",
+     "says": "01/2013 bis 12/2014"
+    },
+    {
+     "name": "Kelley Blue Book 2013 and 2014 Mustang specs",
+     "url": "https://www.kbb.com/ford/mustang/2014/",
+     "says": "Shelby GT500: V8 Supercharged 5.8L (2013, 2014)"
+    },
+    {
+     "name": "Ford news release 2012-04-26 (archived)",
+     "url": "https://web.archive.org/web/2013/https://media.ford.com/content/fordmedia/fna/us/en/news/2012/04/27/at-662-hp--2013-ford-shelby-gt500-certified-as-worlds-most-power.html",
+     "says": "2013 Ford Shelby GT500 5.8-liter supercharged V8"
+    }
+   ],
+   "note": ""
+  },
+  "bore_in": {
+   "value": 3.681,
+   "sources": [
+    {
+     "name": "Ford Performance / Ford media 2013 GT500 specifications",
+     "url": null,
+     "says": "93.5 mm x 105.8 mm (see research notes)"
+    },
+    {
+     "name": "Wikipedia - Ford Modular engine (5.8 Trinity)",
+     "url": "https://en.wikipedia.org/wiki/Ford_Modular_engine"
+    },
+    {
+     "name": "F150hub (Reid Tekk) - Ford 5.8L Trinity V-8 specs",
+     "url": "https://www.f150hub.com/specs/5.8-trinity.html",
+     "says": "3.681\" x 4.165\" (93.5 mm x 105.8 mm), 355 cid, 5810 cc, 9.0:1"
+    }
+   ],
+   "note": "Third source added after the research pass; MustangSpecs copies Wikipedia verbatim and was not counted."
+  },
+  "stroke_in": {
+   "value": 4.165,
+   "sources": [
+    {
+     "name": "Ford Performance / Ford media 2013 GT500 specifications",
+     "url": null,
+     "says": "93.5 mm x 105.8 mm (see research notes)"
+    },
+    {
+     "name": "Wikipedia - Ford Modular engine (5.8 Trinity)",
+     "url": "https://en.wikipedia.org/wiki/Ford_Modular_engine"
+    },
+    {
+     "name": "F150hub (Reid Tekk) - Ford 5.8L Trinity V-8 specs",
+     "url": "https://www.f150hub.com/specs/5.8-trinity.html",
+     "says": "3.681\" x 4.165\" (93.5 mm x 105.8 mm), 355 cid, 5810 cc, 9.0:1"
+    }
+   ],
+   "note": "Third source added after the research pass; MustangSpecs copies Wikipedia verbatim and was not counted."
+  }
+ },
+ "variants": [
+  {
+   "year": 2013,
+   "hp": 662,
+   "hp_basis": "SAE net (SAE J1349 certified)",
+   "compression_ratio": 9.0,
+   "code": "5.8L Trinity (Shelby GT500)",
+   "induction": "supercharged, Eaton TVS",
+   "sources": [
+    {
+     "name": "Ford news release 2012-04-26 'At 662 HP, 2013 Ford Shelby GT500 Certified' (archived)",
+     "url": "https://web.archive.org/web/2013/https://media.ford.com/content/fordmedia/fna/us/en/news/2012/04/27/at-662-hp--2013-ford-shelby-gt500-certified-as-worlds-most-power.html",
+     "says": "SAE certified at 662 horsepower and 631 lb.-ft."
+    },
+    {
+     "name": "Wikipedia: Ford Modular engine / Mustang (fifth generation)",
+     "url": "https://en.wikipedia.org/wiki/Ford_Modular_engine",
+     "says": "662 bhp at 6500 rpm"
+    },
+    {
+     "name": "Kelley Blue Book 2013 Ford Mustang specs",
+     "url": "https://www.kbb.com/ford/mustang/2013/",
+     "says": "Shelby GT500: 662 @ 6250 RPM, V8 Supercharged 5.8L"
+    },
+    {
+     "name": "auto motor und sport",
+     "url": "https://www.auto-motor-und-sport.de/test/ford-mustang-shelby-gt-500/technische-daten/",
+     "says": "494 kW / 671 PS bei 6500 U/min (=662 hp), 2013-2014"
+    },
+    {
+     "name": "Hagerty Learning Garage: 2013 Ford Shelby GT 500",
+     "url": "https://www.hagerty.com/learning-garage/vehicles/2013-ford-shelby-gt-500",
+     "says": "662 horsepower"
+    }
+   ],
+   "note": "Peak rpm: 6500 (Ford, Wikipedia, AMS) vs 6250 (KBB). MustangSpecs lists 650 hp for 2013 (pre-certification figure)."
+  },
+  {
+   "year": 2014,
+   "hp": 662,
+   "hp_basis": "SAE net (SAE J1349 certified)",
+   "compression_ratio": 9.0,
+   "code": "5.8L Trinity (Shelby GT500)",
+   "induction": "supercharged, Eaton TVS",
+   "sources": [
+    {
+     "name": "Ford news release 2012-04-26 'At 662 HP, 2013 Ford Shelby GT500 Certified' (archived)",
+     "url": "https://web.archive.org/web/2013/https://media.ford.com/content/fordmedia/fna/us/en/news/2012/04/27/at-662-hp--2013-ford-shelby-gt500-certified-as-worlds-most-power.html",
+     "says": "SAE certified at 662 horsepower and 631 lb.-ft."
+    },
+    {
+     "name": "Wikipedia: Ford Modular engine / Mustang (fifth generation)",
+     "url": "https://en.wikipedia.org/wiki/Ford_Modular_engine",
+     "says": "662 bhp at 6500 rpm"
+    },
+    {
+     "name": "Kelley Blue Book 2014 Ford Mustang specs",
+     "url": "https://www.kbb.com/ford/mustang/2014/",
+     "says": "Shelby GT500: 662 @ 6250 RPM, V8 Supercharged 5.8L"
+    },
+    {
+     "name": "auto motor und sport",
+     "url": "https://www.auto-motor-und-sport.de/test/ford-mustang-shelby-gt-500/technische-daten/",
+     "says": "494 kW / 671 PS bei 6500 U/min (=662 hp), 2013-2014"
+    }
+   ],
+   "note": "Peak rpm: 6500 (Ford, Wikipedia, AMS) vs 6250 (KBB). MustangSpecs lists 650 hp for 2013 (pre-certification figure)."
+  }
+ ],
+ "unverified": {
+  "displacement_ci": "DISPUTED. 5,812 cc = 354.7 ci (Wikipedia; also AMS's 5812 cm3 converted), which supports 355. But Ford's own spec page and MustangSpecs say '351 CID'. Suggest 355 (354.7) with a note.",
+  "firing_order": "1-3-7-2-6-5-4-8 (Modular order) from Wikipedia only.",
+  "fuel_type": "Gasoline (premium likely). Not explicitly quoted from 3 sources; EPA fuel field not checked.",
+  "rod_length_in": "Not found."
+ },
+ "unverified_variants": []
+}

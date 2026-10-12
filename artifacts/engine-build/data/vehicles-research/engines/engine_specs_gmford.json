@@ -1,0 +1,2076 @@
+{
+ "job": "gmford",
+ "generated": "2026-10-12",
+ "engines": [
+  {
+   "id": "chevrolet-216",
+   "name": "Chevrolet 216.5 \"Stovebolt\" inline-six",
+   "fields": {
+    "bore_in": {
+     "value": 3.5,
+     "sources": [
+      {
+       "name": "GM Heritage Center 1950 Chevrolet information kit",
+       "url": "https://www.gm.com/content/dam/company/no_search/heritage-archive-docs/vehicle-information-kits/chevrolet/1950-Chevrolet.pdf",
+       "says": "Basic design data: bore and stroke (nominal) 3-1/2 x 3-3/4; cylinder bore diameter 3.4995-3.5015"
+      },
+      {
+       "name": "Wikipedia: Chevrolet Stovebolt engine",
+       "url": "https://en.wikipedia.org/wiki/Chevrolet_Stovebolt_engine",
+       "says": "216: 3+1/2 by 3+3/4 in (88.90 mm x 95.25 mm)"
+      },
+      {
+       "name": "HotSixes: Chevy inline 6 engine family",
+       "url": "https://www.hotsixes.com/chevy-inline-6/",
+       "says": "3.500\" (88.90mm) bore and a 3.750\" (95.25 mm) stroke"
+      },
+      {
+       "name": "Conceptcarz: 1952 Chevrolet Deluxe Styleline",
+       "url": "https://www.conceptcarz.com/vehicle/s1620/view/eras.aspx?c=181",
+       "says": "Bore: 3.5 in | 89 mm"
+      }
+     ],
+     "note": "HotSixes is a specialist inline-six site; weakest of the four."
+    },
+    "stroke_in": {
+     "value": 3.75,
+     "sources": [
+      {
+       "name": "GM Heritage Center 1950 Chevrolet information kit",
+       "url": "https://www.gm.com/content/dam/company/no_search/heritage-archive-docs/vehicle-information-kits/chevrolet/1950-Chevrolet.pdf",
+       "says": "bore and stroke (nominal) 3-1/2 x 3-3/4"
+      },
+      {
+       "name": "Wikipedia: Chevrolet Stovebolt engine",
+       "url": "https://en.wikipedia.org/wiki/Chevrolet_Stovebolt_engine",
+       "says": "3+1/2 by 3+3/4 in"
+      },
+      {
+       "name": "HotSixes: Chevy inline 6 engine family",
+       "url": "https://www.hotsixes.com/chevy-inline-6/",
+       "says": "3.750\" (95.25 mm) stroke"
+      },
+      {
+       "name": "Conceptcarz: 1952 Chevrolet Deluxe Styleline",
+       "url": "https://www.conceptcarz.com/vehicle/s1620/view/eras.aspx?c=181",
+       "says": "Stroke: 3.8 in | 95 mm (rounded)"
+      }
+     ],
+     "note": ""
+    },
+    "displacement_ci": {
+     "value": 216.5,
+     "sources": [
+      {
+       "name": "GM Heritage Center 1950 Chevrolet information kit",
+       "url": "https://www.gm.com/content/dam/company/no_search/heritage-archive-docs/vehicle-information-kits/chevrolet/1950-Chevrolet.pdf",
+       "says": "Piston displacement (cu. in.) 216.5"
+      },
+      {
+       "name": "Wikipedia: Chevrolet Stovebolt engine",
+       "url": "https://en.wikipedia.org/wiki/Chevrolet_Stovebolt_engine",
+       "says": "216 (216.5 cu in)"
+      },
+      {
+       "name": "Mac's Motor City Garage: New Day at Chevrolet, the 1937 Master",
+       "url": "https://macsmotorcitygarage.com/new-day-at-chevrolet-the-1937-master-and-master-de-luxe/",
+       "says": "Displacement was increased to 216.5 cubic inches in the new design"
+      },
+      {
+       "name": "EngineLabs: The Mighty Chevrolet Stovebolt Six (J. Zurschmeide, 2017)",
+       "url": "https://www.enginelabs.com/news/mighty-chevrolet-stovebolt-six",
+       "says": "3.5 liters (216.5 cubic inches)"
+      }
+     ],
+     "note": ""
+    },
+    "displacement_l": {
+     "value": 3.5,
+     "sources": [
+      {
+       "name": "EngineLabs: The Mighty Chevrolet Stovebolt Six",
+       "url": "https://www.enginelabs.com/news/mighty-chevrolet-stovebolt-six",
+       "says": "3.5 liters (216.5 cubic inches)"
+      },
+      {
+       "name": "Wikipedia: Chevrolet Stovebolt engine",
+       "url": "https://en.wikipedia.org/wiki/Chevrolet_Stovebolt_engine",
+       "says": "216 = 3.5 L"
+      },
+      {
+       "name": "Conceptcarz: 1952 Chevrolet Deluxe Styleline",
+       "url": "https://www.conceptcarz.com/vehicle/s1620/view/eras.aspx?c=181",
+       "says": "3548 cc | 216.5 cu in | 3.5 L"
+      }
+     ],
+     "note": "3,548 cc"
+    },
+    "num_cylinders": {
+     "value": 6,
+     "sources": [
+      {
+       "name": "GM Heritage Center 1950 Chevrolet information kit",
+       "url": "https://www.gm.com/content/dam/company/no_search/heritage-archive-docs/vehicle-information-kits/chevrolet/1950-Chevrolet.pdf",
+       "says": "Number of cylinders 6"
+      },
+      {
+       "name": "Wikipedia: Chevrolet Stovebolt engine",
+       "url": "https://en.wikipedia.org/wiki/Chevrolet_Stovebolt_engine",
+       "says": "inline six"
+      },
+      {
+       "name": "Mac's Motor City Garage",
+       "url": "https://macsmotorcitygarage.com/new-day-at-chevrolet-the-1937-master-and-master-de-luxe/",
+       "says": "an overhead-valve six"
+      }
+     ],
+     "note": ""
+    },
+    "configuration": {
+     "value": "inline-six",
+     "sources": [
+      {
+       "name": "GM Heritage Center 1950 Chevrolet information kit",
+       "url": "https://www.gm.com/content/dam/company/no_search/heritage-archive-docs/vehicle-information-kits/chevrolet/1950-Chevrolet.pdf",
+       "says": "6-cylinder valve-in-head engine"
+      },
+      {
+       "name": "Wikipedia: Chevrolet Stovebolt engine",
+       "url": "https://en.wikipedia.org/wiki/Chevrolet_Stovebolt_engine",
+       "says": "straight-six"
+      },
+      {
+       "name": "Mac's Motor City Garage",
+       "url": "https://macsmotorcitygarage.com/new-day-at-chevrolet-the-1937-master-and-master-de-luxe/",
+       "says": "overhead-valve six"
+      }
+     ],
+     "note": ""
+    },
+    "valvetrain": {
+     "value": "OHV (pushrod), 2 valves/cyl, solid lifters",
+     "sources": [
+      {
+       "name": "GM Heritage Center 1950 Chevrolet information kit",
+       "url": "https://www.gm.com/content/dam/company/no_search/heritage-archive-docs/vehicle-information-kits/chevrolet/1950-Chevrolet.pdf",
+       "says": "Valve-in-head; spec p.2 (PDF p.33): one intake, one exhaust valve; hydraulic valve lifters: No"
+      },
+      {
+       "name": "Wikipedia: Chevrolet Stovebolt engine",
+       "url": "https://en.wikipedia.org/wiki/Chevrolet_Stovebolt_engine",
+       "says": "OHV, 2 valves per cylinder"
+      },
+      {
+       "name": "Mac's Motor City Garage",
+       "url": "https://macsmotorcitygarage.com/new-day-at-chevrolet-the-1937-master-and-master-de-luxe/",
+       "says": "an overhead-valve six developed by research engineer Alex Taub"
+      },
+      {
+       "name": "EngineLabs: The Mighty Chevrolet Stovebolt Six",
+       "url": "https://www.enginelabs.com/news/mighty-chevrolet-stovebolt-six",
+       "says": "pushrod-actuated overhead valves"
+      }
+     ],
+     "note": "Solid lifters from the GM kit only (others don't say); 235 Powerglide engine had hydraulic lifters."
+    },
+    "block_material": {
+     "value": "cast iron",
+     "sources": [
+      {
+       "name": "GM Heritage Center 1950 Chevrolet information kit",
+       "url": "https://www.gm.com/content/dam/company/no_search/heritage-archive-docs/vehicle-information-kits/chevrolet/1950-Chevrolet.pdf",
+       "says": "Cylinder case and head - Material: cast alloy iron"
+      },
+      {
+       "name": "EngineLabs: The Mighty Chevrolet Stovebolt Six",
+       "url": "https://www.enginelabs.com/news/mighty-chevrolet-stovebolt-six",
+       "says": "cast-iron construction"
+      },
+      {
+       "name": "Conceptcarz: 1952 Chevrolet Deluxe Styleline",
+       "url": "https://www.conceptcarz.com/vehicle/s1620/view/eras.aspx?c=181",
+       "says": "inline 6-cylinder engines with cast-iron blocks"
+      }
+     ],
+     "note": ""
+    },
+    "head_material": {
+     "value": "cast iron",
+     "sources": [
+      {
+       "name": "GM Heritage Center 1950 Chevrolet information kit",
+       "url": "https://www.gm.com/content/dam/company/no_search/heritage-archive-docs/vehicle-information-kits/chevrolet/1950-Chevrolet.pdf",
+       "says": "Cylinder case and head - Material: cast alloy iron"
+      },
+      {
+       "name": "Hagerty Media: Watch us dissect this Chevy pickup's 216 Stovebolt",
+       "url": "https://www.hagerty.com/media/videos/dissect-a-chevy-pickups-216-stovebolt-redline-update/",
+       "says": "cylinder head ... the long lump of cast iron on the table"
+      },
+      {
+       "name": "EngineLabs: The Mighty Chevrolet Stovebolt Six",
+       "url": "https://www.enginelabs.com/news/mighty-chevrolet-stovebolt-six",
+       "says": "cast-iron construction"
+      }
+     ],
+     "note": ""
+    },
+    "compression_ratio": {
+     "value": "6.6:1 (1949-1952)",
+     "sources": [
+      {
+       "name": "GM Heritage Center 1950 Chevrolet information kit",
+       "url": "https://www.gm.com/content/dam/company/no_search/heritage-archive-docs/vehicle-information-kits/chevrolet/1950-Chevrolet.pdf",
+       "says": "Compression ratio (no option) 6.6:1"
+      },
+      {
+       "name": "Wikipedia: Chevrolet Stovebolt engine",
+       "url": "https://en.wikipedia.org/wiki/Chevrolet_Stovebolt_engine",
+       "says": "6.6:1 by 1949"
+      },
+      {
+       "name": "Conceptcarz: 1952 Chevrolet Deluxe Styleline",
+       "url": "https://www.conceptcarz.com/vehicle/s1620/view/eras.aspx?c=181",
+       "says": "Compression: 6.6:1"
+      }
+     ],
+     "note": "1937-1940 ratio disputed: 6.5:1 (Wikipedia, EngineLabs) vs 6.25:1 (Mac's Motor City Garage)."
+    }
+   },
+   "variants": [
+    {
+     "year": "1937-1940",
+     "hp": 85,
+     "hp_basis": "gross",
+     "compression_ratio": 6.5,
+     "code": "Master / Master De Luxe six",
+     "induction": "1-bbl",
+     "sources": [
+      {
+       "name": "Wikipedia: Chevrolet Stovebolt engine",
+       "url": "https://en.wikipedia.org/wiki/Chevrolet_Stovebolt_engine",
+       "says": "1937-1940: 85 hp"
+      },
+      {
+       "name": "Mac's Motor City Garage",
+       "url": "https://macsmotorcitygarage.com/new-day-at-chevrolet-the-1937-master-and-master-de-luxe/",
+       "says": "85 hp at 3,200 rpm (1937)"
+      },
+      {
+       "name": "EngineLabs: The Mighty Chevrolet Stovebolt Six",
+       "url": "https://www.enginelabs.com/news/mighty-chevrolet-stovebolt-six",
+       "says": "6.5:1 compression, yielding 85 horsepower"
+      }
+     ],
+     "note": "Compression disputed: Mac's says 6.25:1. Mac's covers 1937 only."
+    },
+    {
+     "year": "1941-1948",
+     "hp": 90,
+     "hp_basis": "gross",
+     "compression_ratio": null,
+     "code": "",
+     "induction": "1-bbl",
+     "sources": [
+      {
+       "name": "Wikipedia: Chevrolet Stovebolt engine",
+       "url": "https://en.wikipedia.org/wiki/Chevrolet_Stovebolt_engine",
+       "says": "1941-1942 and 1946-1948: 90 hp"
+      },
+      {
+       "name": "EngineLabs: The Mighty Chevrolet Stovebolt Six",
+       "url": "https://www.enginelabs.com/news/mighty-chevrolet-stovebolt-six",
+       "says": "increasing to 90 horsepower in 1941"
+      },
+      {
+       "name": "HotSixes: Chevy inline 6 engine family",
+       "url": "https://www.hotsixes.com/chevy-inline-6/",
+       "says": "later 90 hp (67 kW) after 1941 cylinder head development"
+      }
+     ],
+     "note": "No civilian production in 1943-1945."
+    },
+    {
+     "year": 1950,
+     "hp": 92,
+     "hp_basis": "gross",
+     "compression_ratio": 6.6,
+     "code": "standard six (Synchro-Mesh cars)",
+     "induction": "1-bbl Rochester",
+     "sources": [
+      {
+       "name": "GM Heritage Center 1950 Chevrolet information kit",
+       "url": "https://www.gm.com/content/dam/company/no_search/heritage-archive-docs/vehicle-information-kits/chevrolet/1950-Chevrolet.pdf",
+       "says": "p.28 specifications: 216.5 cu in, 6.6:1, 92 bhp @ 3400"
+      },
+      {
+       "name": "Wikipedia: Chevrolet Stovebolt engine",
+       "url": "https://en.wikipedia.org/wiki/Chevrolet_Stovebolt_engine",
+       "says": "1950-1953: 92 hp"
+      },
+      {
+       "name": "EngineLabs: The Mighty Chevrolet Stovebolt Six",
+       "url": "https://www.enginelabs.com/news/mighty-chevrolet-stovebolt-six",
+       "says": "92 horsepower in 1949 (unchanged afterward)"
+      },
+      {
+       "name": "Old Cars Weekly: Car of the Week 1950 Chevrolet Bel Air",
+       "url": "https://oldcarsweekly.com/features/car-week-1950-chevrolet-bel-air",
+       "says": "Powerglide engine 105 hp, '13 more than' the three-speed six (=92)"
+      }
+     ],
+     "note": "Powerglide cars used the 235.5 (105 hp), not the 216."
+    },
+    {
+     "year": 1951,
+     "hp": 92,
+     "hp_basis": "gross",
+     "compression_ratio": 6.6,
+     "code": "standard six (Synchro-Mesh cars)",
+     "induction": "1-bbl Rochester",
+     "sources": [
+      {
+       "name": "GM Heritage Center 1951 Chevrolet information kit",
+       "url": "https://www.gm.com/content/dam/company/no_search/heritage-archive-docs/vehicle-information-kits/chevrolet/1951-Chevrolet.pdf",
+       "says": "p.46: 216.5 cu in, 92 gross @ 3400"
+      },
+      {
+       "name": "Wikipedia: Chevrolet Stovebolt engine",
+       "url": "https://en.wikipedia.org/wiki/Chevrolet_Stovebolt_engine",
+       "says": "1950-1953: 92 hp"
+      },
+      {
+       "name": "EngineLabs: The Mighty Chevrolet Stovebolt Six",
+       "url": "https://www.enginelabs.com/news/mighty-chevrolet-stovebolt-six",
+       "says": "92 horsepower in 1949 (unchanged afterward)"
+      }
+     ],
+     "note": "Powerglide cars used the 235.5 (105 hp), not the 216."
+    },
+    {
+     "year": 1952,
+     "hp": 92,
+     "hp_basis": "gross",
+     "compression_ratio": 6.6,
+     "code": "standard six (Synchro-Mesh cars)",
+     "induction": "1-bbl Rochester",
+     "sources": [
+      {
+       "name": "GM Heritage Center 1952 Chevrolet information kit",
+       "url": "https://www.gm.com/content/dam/company/no_search/heritage-archive-docs/vehicle-information-kits/chevrolet/1952-Chevrolet.pdf",
+       "says": "p.32: 216.5 cu in, 92 gross @ 3400"
+      },
+      {
+       "name": "Wikipedia: Chevrolet Stovebolt engine",
+       "url": "https://en.wikipedia.org/wiki/Chevrolet_Stovebolt_engine",
+       "says": "1950-1953: 92 hp"
+      },
+      {
+       "name": "EngineLabs: The Mighty Chevrolet Stovebolt Six",
+       "url": "https://www.enginelabs.com/news/mighty-chevrolet-stovebolt-six",
+       "says": "92 horsepower in 1949 (unchanged afterward)"
+      },
+      {
+       "name": "Conceptcarz: 1952 Chevrolet Deluxe Styleline",
+       "url": "https://www.conceptcarz.com/vehicle/s1620/view/eras.aspx?c=181",
+       "says": "216.5 cu in, 92 HP @ 3400 RPM, 6.6:1"
+      }
+     ],
+     "note": "Powerglide cars used the 235.5 (105 hp), not the 216."
+    }
+   ],
+   "unverified": {
+    "rod_length_in": "6.8125 (6-13/16) center-to-center from the 1950 GM kit only (same figure printed for the 235.5 Powerglide engine). No second independent source found.",
+    "firing_order": "1-5-3-6-2-4 in the 1950 GM kit (PDF p.34, 'Firing order 1-5-3-6-2-4') and restore-an-old-car.com (Mark Trotta). Only 2; other hits were content farms/forums.",
+    "induction": "Single Rochester 1-bbl downdraft (GM 1950 kit: Rochester model 7002050, one, downdraft; Conceptcarz 1952: Rochester 1-barrel). Only 2 sources.",
+    "fuel_type": "Gasoline (GM kit). Uncontested but only the GM kit states it.",
+    "years": "Start 1937 is solid (Wikipedia, Mac's, EngineLabs). Passenger-car end 1952: the 1953 GM kit and 1953 brochure show 235.5 engines (108/115 hp) in all 1953 cars, and restore-an-old-car says 1937-1952. Wikipedia lists 92 hp '1950-1953' and HotSixes says 'until 1963' (wrong for cars). Truck/sedan-delivery use in 1953 only from forums. Suggested value: 1937-1952 (passenger cars).",
+    "lubrication_note": "Rod bearings splash/dipper-fed (Mac's, Wikipedia; GM kit: 'pressure, pressure stream and splash'). Not a required field."
+   },
+   "unverified_variants": [
+    {
+     "year": 1949,
+     "hp": 92,
+     "found": "Wikipedia (1949: 92 hp, 6.6:1) and EngineLabs (92 hp in 1949). The 1949 GM kit wasn't checked."
+    }
+   ]
+  },
+  {
+   "id": "chevrolet-348",
+   "name": "Chevrolet 348 W-series V8",
+   "fields": {
+    "bore_in": {
+     "value": 4.125,
+     "sources": [
+      {
+       "name": "GM Heritage Center 1958 Chevrolet information kit",
+       "url": "https://www.gm.com/content/dam/company/no_search/heritage-archive-docs/vehicle-information-kits/chevrolet/1958-Chevrolet.pdf",
+       "says": "PDF p.57, 348 general data: bore and stroke (nominal) 4.125 x 3.25"
+      },
+      {
+       "name": "NHRA engine blueprint 1958 Chevrolet (CHEV-58)",
+       "url": "https://www.nhra.net/tech_specs/engine/blueprints/CHEV-58.rtf",
+       "says": "Bore 4.125, stroke 3.250, displacement 348, 8 cyl, rod length 6.135"
+      },
+      {
+       "name": "Chevy Hardcore: Throwback Thursday, the 348 W-series (R. Bolig, 2015)",
+       "url": "https://www.chevyhardcore.com/news/throwback-thursday-the-348-cubic-inch-w-series-engine/",
+       "says": "4.125-inch cylinder bores, and a stroke of 3.25 inches"
+      },
+      {
+       "name": "Wikipedia: Chevrolet big-block engine (W-series)",
+       "url": "https://en.wikipedia.org/wiki/Chevrolet_big-block_engine",
+       "says": "4+1/8 in x 3+1/4 in (104.8 mm x 82.6 mm)"
+      },
+      {
+       "name": "Engine Builder: Chevy's 348 and 409 W Motors (2014)",
+       "url": "https://www.enginebuildermag.com/2014/08/chevys-348-and-409-w-motors/",
+       "says": "A stock 348 has a bore of 4.125 inches"
+      },
+      {
+       "name": "Street Machine: Chevrolet W-series 348 & 409 V8s (M. Lee, 2025)",
+       "url": "https://www.streetmachine.com.au/features/chevrolet-w-series-big-block-v8-1958-1965",
+       "says": "The bore came in at 4.125in, with a 3.25in stroke"
+      }
+     ],
+     "note": ""
+    },
+    "stroke_in": {
+     "value": 3.25,
+     "sources": [
+      {
+       "name": "GM Heritage Center 1958 Chevrolet information kit",
+       "url": "https://www.gm.com/content/dam/company/no_search/heritage-archive-docs/vehicle-information-kits/chevrolet/1958-Chevrolet.pdf",
+       "says": "4.125 x 3.25"
+      },
+      {
+       "name": "NHRA engine blueprint 1958 Chevrolet (CHEV-58)",
+       "url": "https://www.nhra.net/tech_specs/engine/blueprints/CHEV-58.rtf",
+       "says": "stroke 3.250"
+      },
+      {
+       "name": "Chevy Hardcore: Throwback Thursday, the 348",
+       "url": "https://www.chevyhardcore.com/news/throwback-thursday-the-348-cubic-inch-w-series-engine/",
+       "says": "a stroke of 3.25 inches"
+      },
+      {
+       "name": "Engine Builder: Chevy's 348 and 409 W Motors",
+       "url": "https://www.enginebuildermag.com/2014/08/chevys-348-and-409-w-motors/",
+       "says": "stroke change from 348s to 409s that went from 3.25 to 3.50 inches"
+      },
+      {
+       "name": "Wikipedia: Chevrolet big-block engine",
+       "url": "https://en.wikipedia.org/wiki/Chevrolet_big-block_engine",
+       "says": "3+1/4 in"
+      }
+     ],
+     "note": ""
+    },
+    "displacement_ci": {
+     "value": 348,
+     "sources": [
+      {
+       "name": "GM Heritage Center 1958 Chevrolet information kit",
+       "url": "https://www.gm.com/content/dam/company/no_search/heritage-archive-docs/vehicle-information-kits/chevrolet/1958-Chevrolet.pdf",
+       "says": "Piston displacement (cu. in.) 348"
+      },
+      {
+       "name": "NHRA engine blueprint 1958 Chevrolet (CHEV-58)",
+       "url": "https://www.nhra.net/tech_specs/engine/blueprints/CHEV-58.rtf",
+       "says": "displacement 348"
+      },
+      {
+       "name": "Chevy Hardcore: Throwback Thursday, the 348",
+       "url": "https://www.chevyhardcore.com/news/throwback-thursday-the-348-cubic-inch-w-series-engine/",
+       "says": "348 cubic-inch W-series"
+      },
+      {
+       "name": "Wikipedia: Chevrolet big-block engine",
+       "url": "https://en.wikipedia.org/wiki/Chevrolet_big-block_engine",
+       "says": "348 cu in"
+      }
+     ],
+     "note": ""
+    },
+    "displacement_l": {
+     "value": 5.7,
+     "sources": [
+      {
+       "name": "Wikipedia: Chevrolet big-block engine",
+       "url": "https://en.wikipedia.org/wiki/Chevrolet_big-block_engine",
+       "says": "348 cu in (5.7 L)"
+      },
+      {
+       "name": "GM Heritage Center 1958 Chevrolet information kit",
+       "url": "https://www.gm.com/content/dam/company/no_search/heritage-archive-docs/vehicle-information-kits/chevrolet/1958-Chevrolet.pdf",
+       "says": "348 cu in (converted)"
+      },
+      {
+       "name": "NHRA engine blueprint 1958 Chevrolet (CHEV-58)",
+       "url": "https://www.nhra.net/tech_specs/engine/blueprints/CHEV-58.rtf",
+       "says": "348 cu in (converted)"
+      }
+     ],
+     "note": "348 ci = 5,703 cc. Converted from the ci figure, so this rests on the displacement_ci sources."
+    },
+    "num_cylinders": {
+     "value": 8,
+     "sources": [
+      {
+       "name": "GM Heritage Center 1958 Chevrolet information kit",
+       "url": "https://www.gm.com/content/dam/company/no_search/heritage-archive-docs/vehicle-information-kits/chevrolet/1958-Chevrolet.pdf",
+       "says": "Number of cylinders 8"
+      },
+      {
+       "name": "NHRA engine blueprint 1958 Chevrolet (CHEV-58)",
+       "url": "https://www.nhra.net/tech_specs/engine/blueprints/CHEV-58.rtf",
+       "says": "cylinders 8"
+      },
+      {
+       "name": "Wikipedia: Chevrolet big-block engine",
+       "url": "https://en.wikipedia.org/wiki/Chevrolet_big-block_engine",
+       "says": "V8"
+      }
+     ],
+     "note": ""
+    },
+    "configuration": {
+     "value": "V8",
+     "sources": [
+      {
+       "name": "GM Heritage Center 1958 Chevrolet information kit",
+       "url": "https://www.gm.com/content/dam/company/no_search/heritage-archive-docs/vehicle-information-kits/chevrolet/1958-Chevrolet.pdf",
+       "says": "348 cubic inch eight cylinder V-8"
+      },
+      {
+       "name": "Wikipedia: Chevrolet big-block engine",
+       "url": "https://en.wikipedia.org/wiki/Chevrolet_big-block_engine",
+       "says": "W-series V8"
+      },
+      {
+       "name": "Street Machine",
+       "url": "https://www.streetmachine.com.au/features/chevrolet-w-series-big-block-v8-1958-1965",
+       "says": "W-series big-block V8"
+      }
+     ],
+     "note": ""
+    },
+    "valvetrain": {
+     "value": "OHV (pushrod), 2 valves/cyl; hydraulic lifters on base engines, mechanical on Special versions",
+     "sources": [
+      {
+       "name": "GM Heritage Center 1958 Chevrolet information kit",
+       "url": "https://www.gm.com/content/dam/company/no_search/heritage-archive-docs/vehicle-information-kits/chevrolet/1958-Chevrolet.pdf",
+       "says": "PDF p.57 general data: Type: valve-in-head, 8 cylinders"
+      },
+      {
+       "name": "Wikipedia: Chevrolet big-block engine",
+       "url": "https://en.wikipedia.org/wiki/Chevrolet_big-block_engine",
+       "says": "OHV 2 valves x cyl; tubular steel pushrods operating stud-mounted, stamped-steel rocker arms"
+      },
+      {
+       "name": "NHRA engine blueprint 1958 Chevrolet (CHEV-58)",
+       "url": "https://www.nhra.net/tech_specs/engine/blueprints/CHEV-58.rtf",
+       "says": "lifter H (250/280) and M (300/315); rocker ratio 1.75"
+      },
+      {
+       "name": "Chevy Hardcore: Throwback Thursday, the 348",
+       "url": "https://www.chevyhardcore.com/news/throwback-thursday-the-348-cubic-inch-w-series-engine/",
+       "says": "offset valve positioning ... wedge-shaped combustion chamber"
+      }
+     ],
+     "note": ""
+    },
+    "block_material": {
+     "value": "cast iron",
+     "sources": [
+      {
+       "name": "GM Heritage Center 1958 Chevrolet information kit",
+       "url": "https://www.gm.com/content/dam/company/no_search/heritage-archive-docs/vehicle-information-kits/chevrolet/1958-Chevrolet.pdf",
+       "says": "348 engine data (OCR): cylinder bore 4.120-4.130 ... Material: cast alloy iron"
+      },
+      {
+       "name": "Chevy Hardcore: Throwback Thursday, the 348",
+       "url": "https://www.chevyhardcore.com/news/throwback-thursday-the-348-cubic-inch-w-series-engine/",
+       "says": "cast-iron engine"
+      },
+      {
+       "name": "Wikipedia: Chevrolet big-block engine",
+       "url": "https://en.wikipedia.org/wiki/Chevrolet_big-block_engine",
+       "says": "cast iron block"
+      },
+      {
+       "name": "Street Machine",
+       "url": "https://www.streetmachine.com.au/features/chevrolet-w-series-big-block-v8-1958-1965",
+       "says": "heavy-duty, two-main iron block"
+      }
+     ],
+     "note": "Street Machine's 'two-main' is presumably a mistake for two-bolt mains (Engine Builder: 'All W motors came with only two bolt mains')."
+    },
+    "head_material": {
+     "value": "cast iron",
+     "sources": [
+      {
+       "name": "GM Heritage Center 1958 Chevrolet information kit",
+       "url": "https://www.gm.com/content/dam/company/no_search/heritage-archive-docs/vehicle-information-kits/chevrolet/1958-Chevrolet.pdf",
+       "says": "348 engine data (OCR): cylinder head bolts 36 ... cast alloy iron (same block/head entry)"
+      },
+      {
+       "name": "Wikipedia: Chevrolet big-block engine",
+       "url": "https://en.wikipedia.org/wiki/Chevrolet_big-block_engine",
+       "says": "cast iron cylinder heads"
+      },
+      {
+       "name": "Chevy Hardcore: Throwback Thursday, the 348",
+       "url": "https://www.chevyhardcore.com/news/throwback-thursday-the-348-cubic-inch-w-series-engine/",
+       "says": "cast-iron engine with machined flat cylinder heads"
+      }
+     ],
+     "note": "The GM kit's OCR text puts 'cast alloy iron' in the shared cylinder block/head entry, so it doesn't clearly say heads. Chevy Hardcore says 'cast-iron engine', not heads specifically."
+    },
+    "induction": {
+     "value": "carbureted: single 4-bbl (Carter WCFB/AFB) or triple 2-bbl Rochester",
+     "sources": [
+      {
+       "name": "GM Heritage Center 1958 Chevrolet information kit",
+       "url": "https://www.gm.com/content/dam/company/no_search/heritage-archive-docs/vehicle-information-kits/chevrolet/1958-Chevrolet.pdf",
+       "says": "4-barrel (production), triple 2-barrel (optional)"
+      },
+      {
+       "name": "NHRA engine blueprint 1958 Chevrolet (CHEV-58)",
+       "url": "https://www.nhra.net/tech_specs/engine/blueprints/CHEV-58.rtf",
+       "says": "1-4 Carter WCFB; 3-2 Rochester"
+      },
+      {
+       "name": "Chevy Hardcore: Throwback Thursday, the 348",
+       "url": "https://www.chevyhardcore.com/news/throwback-thursday-the-348-cubic-inch-w-series-engine/",
+       "says": "single four-barrel, three two-barrel (Tri-power)"
+      },
+      {
+       "name": "Street Machine",
+       "url": "https://www.streetmachine.com.au/features/chevrolet-w-series-big-block-v8-1958-1965",
+       "says": "single Carter AFB four-barrel carb or triple Rochester two-barrel carbs"
+      }
+     ],
+     "note": ""
+    },
+    "compression_ratio": {
+     "value": "9.5:1 (standard Turbo-Thrust / Super Turbo-Thrust); 11.0:1 and 11.25:1 (Special versions)",
+     "sources": [
+      {
+       "name": "NHRA engine blueprint 1959 Chevrolet (CHEV-59)",
+       "url": "https://www.nhra.net/tech_specs/engine/blueprints/CHEV-59.rtf",
+       "says": "250/280: 9.50; 305/315: 11.00; 320/335: 11.25"
+      },
+      {
+       "name": "GM Heritage Center 1961 Chevrolet information kit",
+       "url": "https://www.gm.com/content/dam/company/no_search/heritage-archive-docs/vehicle-information-kits/chevrolet/1961-Chevrolet.pdf",
+       "says": "pp.73-74: 11.25:1 on 340 & 350 special-cam engines"
+      },
+      {
+       "name": "Chevy Hardcore: Impala Engine Options 1960",
+       "url": "https://www.chevyhardcore.com/news/impala-engine-options-1960/",
+       "says": "348 4-bbl 9.5:1 250 hp; 11.0:1 305; 11.25:1 320/335"
+      }
+     ],
+     "note": ""
+    },
+    "years": {
+     "value": "1958-1961 (passenger cars)",
+     "sources": [
+      {
+       "name": "GM Heritage Center 1958 and 1961 Chevrolet information kits",
+       "url": "https://www.gm.com/content/dam/company/no_search/heritage-archive-docs/vehicle-information-kits/chevrolet/1958-Chevrolet.pdf",
+       "says": "348 offered in the 1958 kit through the 1961 kit"
+      },
+      {
+       "name": "NHRA blueprints CHEV-58 through CHEV-61",
+       "url": "https://www.nhra.net/tech_specs/engine/blueprints/CHEV-61.rtf",
+       "says": "348 listed 1958, 1959, 1960, 1961"
+      },
+      {
+       "name": "Wikipedia: Chevrolet big-block engine",
+       "url": "https://en.wikipedia.org/wiki/Chevrolet_big-block_engine",
+       "says": "1958 to 1961 in cars, through 1964 in trucks"
+      },
+      {
+       "name": "Chevy Hardcore: Throwback Thursday, the 348",
+       "url": "https://www.chevyhardcore.com/news/throwback-thursday-the-348-cubic-inch-w-series-engine/",
+       "says": "released in 1958 ... 1961: 340 and 350"
+      }
+     ],
+     "note": "Truck use through 1964 comes from Wikipedia only."
+    }
+   },
+   "variants": [
+    {
+     "year": 1958,
+     "hp": 250,
+     "hp_basis": "gross",
+     "compression_ratio": 9.5,
+     "code": "Turbo-Thrust",
+     "induction": "4-bbl",
+     "sources": [
+      {
+       "name": "GM Heritage Center 1958 Chevrolet information kit",
+       "url": "https://www.gm.com/content/dam/company/no_search/heritage-archive-docs/vehicle-information-kits/chevrolet/1958-Chevrolet.pdf",
+       "says": "p.57: 4-barrel (production) 250 @ 4400"
+      },
+      {
+       "name": "NHRA engine blueprint 1958 Chevrolet (CHEV-58)",
+       "url": "https://www.nhra.net/tech_specs/engine/blueprints/CHEV-58.rtf",
+       "says": "250 348 9.50 1-4 Carter WCFB"
+      },
+      {
+       "name": "Chevy Hardcore: Impala Engine Options 1958",
+       "url": "https://www.chevyhardcore.com/?p=8350",
+       "says": "Turbo-Thrust 4-bbl 250 hp"
+      }
+     ],
+     "note": ""
+    },
+    {
+     "year": 1958,
+     "hp": 280,
+     "hp_basis": "gross",
+     "compression_ratio": 9.5,
+     "code": "Super Turbo-Thrust",
+     "induction": "3x2-bbl",
+     "sources": [
+      {
+       "name": "GM Heritage Center 1958 Chevrolet information kit",
+       "url": "https://www.gm.com/content/dam/company/no_search/heritage-archive-docs/vehicle-information-kits/chevrolet/1958-Chevrolet.pdf",
+       "says": "p.57: triple 2-barrel (optional) 280 @ 4800"
+      },
+      {
+       "name": "NHRA engine blueprint 1958 Chevrolet (CHEV-58)",
+       "url": "https://www.nhra.net/tech_specs/engine/blueprints/CHEV-58.rtf",
+       "says": "280 348 9.50 3-2 Rochester"
+      },
+      {
+       "name": "Chevy Hardcore: Impala Engine Options 1958",
+       "url": "https://www.chevyhardcore.com/?p=8350",
+       "says": "Super Turbo-Thrust 3x2 280 hp"
+      }
+     ],
+     "note": ""
+    },
+    {
+     "year": 1958,
+     "hp": 315,
+     "hp_basis": "gross",
+     "compression_ratio": 11.0,
+     "code": "Special Super Turbo-Thrust",
+     "induction": "3x2-bbl, mechanical lifters (mid-year)",
+     "sources": [
+      {
+       "name": "NHRA engine blueprint 1958 Chevrolet (CHEV-58)",
+       "url": "https://www.nhra.net/tech_specs/engine/blueprints/CHEV-58.rtf",
+       "says": "315 348 11.00 3-2 Rochester, M lifters"
+      },
+      {
+       "name": "Chevy Hardcore: Impala Engine Options 1958",
+       "url": "https://www.chevyhardcore.com/?p=8350",
+       "says": "Special Super Turbo-Thrust, 3x2-bbl, solid lifters, 315 hp"
+      },
+      {
+       "name": "Wikipedia: Chevrolet Bel Air",
+       "url": "https://en.wikipedia.org/wiki/Chevrolet_Bel_Air",
+       "says": "348 Big-Block 250-315 hp V8 (1958)"
+      }
+     ],
+     "note": "Wikipedia gives a range only. The big-block article lists 315 for 1959-1960."
+    },
+    {
+     "year": 1959,
+     "hp": 250,
+     "hp_basis": "gross",
+     "compression_ratio": 9.5,
+     "code": "Turbo-Thrust, RPO 576",
+     "induction": "4-bbl",
+     "sources": [
+      {
+       "name": "GM Heritage Center 1959 Chevrolet information kit",
+       "url": "https://www.gm.com/content/dam/company/no_search/heritage-archive-docs/vehicle-information-kits/chevrolet/1959-Chevrolet.pdf",
+       "says": "p.48: Turbo-Thrust RPO 576, 4-bbl 250 @ 4400"
+      },
+      {
+       "name": "NHRA engine blueprint 1959 Chevrolet (CHEV-59)",
+       "url": "https://www.nhra.net/tech_specs/engine/blueprints/CHEV-59.rtf",
+       "says": "250 348 9.50 1-4 Carter WCFB"
+      },
+      {
+       "name": "Chevy Hardcore: Impala Engine Options 1959",
+       "url": "https://www.chevyhardcore.com/?p=8334",
+       "says": "Turbo-Thrust 4-bbl 250 hp"
+      }
+     ],
+     "note": ""
+    },
+    {
+     "year": 1959,
+     "hp": 280,
+     "hp_basis": "gross",
+     "compression_ratio": 9.5,
+     "code": "Super Turbo-Thrust, RPO 573",
+     "induction": "3x2-bbl",
+     "sources": [
+      {
+       "name": "GM Heritage Center 1959 Chevrolet information kit",
+       "url": "https://www.gm.com/content/dam/company/no_search/heritage-archive-docs/vehicle-information-kits/chevrolet/1959-Chevrolet.pdf",
+       "says": "p.48: Super Turbo-Thrust RPO 573, 3x2 280 @ 4800"
+      },
+      {
+       "name": "NHRA engine blueprint 1959 Chevrolet (CHEV-59)",
+       "url": "https://www.nhra.net/tech_specs/engine/blueprints/CHEV-59.rtf",
+       "says": "280 348 9.50 3-2 Rochester"
+      },
+      {
+       "name": "Chevy Hardcore: Impala Engine Options 1959",
+       "url": "https://www.chevyhardcore.com/?p=8334",
+       "says": "Super Turbo-Thrust 3x2 280 hp"
+      }
+     ],
+     "note": ""
+    },
+    {
+     "year": 1959,
+     "hp": 305,
+     "hp_basis": "gross",
+     "compression_ratio": 11.0,
+     "code": "Turbo-Thrust Special (with HD Powerglide), RPO 576/577",
+     "induction": "4-bbl Carter AFB",
+     "sources": [
+      {
+       "name": "GM Heritage Center 1959 Chevrolet information kit",
+       "url": "https://www.gm.com/content/dam/company/no_search/heritage-archive-docs/vehicle-information-kits/chevrolet/1959-Chevrolet.pdf",
+       "says": "p.48 (rev. 3-23-59): Turbo-Thrust Special 4-bbl 305 @ 5600, '+ Heavy Duty Powerglide'"
+      },
+      {
+       "name": "NHRA engine blueprint 1959 Chevrolet (CHEV-59)",
+       "url": "https://www.nhra.net/tech_specs/engine/blueprints/CHEV-59.rtf",
+       "says": "305 348 11.00 1-4 Carter AFB-2897S, M lifters"
+      },
+      {
+       "name": "Wikipedia: Chevrolet big-block engine",
+       "url": "https://en.wikipedia.org/wiki/Chevrolet_big-block_engine",
+       "says": "Special Turbo-Thrust (4-barrel): 305 hp"
+      }
+     ],
+     "note": "Wikipedia doesn't give the year. Early-1959 GM booklet (Oct 1958) and Chevy Hardcore list 300 hp instead; see unverified_variants."
+    },
+    {
+     "year": 1959,
+     "hp": 315,
+     "hp_basis": "gross",
+     "compression_ratio": 11.0,
+     "code": "Super Turbo-Thrust Special, RPO 574 (early)",
+     "induction": "3x2-bbl",
+     "sources": [
+      {
+       "name": "1959 Chevrolet Engineering Features booklet (GM, oldcarbrochures.org)",
+       "url": "https://oldcarbrochures.org/United%20States/Chevrolet/1959-Chevrolet/1959-Chevrolet-Engineering-Features-Booklet/index.html",
+       "says": "p.52 (Oct 1958): three 2-bbl and special camshaft, 315 at 5600"
+      },
+      {
+       "name": "NHRA engine blueprint 1959 Chevrolet (CHEV-59)",
+       "url": "https://www.nhra.net/tech_specs/engine/blueprints/CHEV-59.rtf",
+       "says": "315 348 11.00 3-2 Rochester, M lifters"
+      },
+      {
+       "name": "Chevy Hardcore: Impala Engine Options 1959",
+       "url": "https://www.chevyhardcore.com/?p=8334",
+       "says": "Super Turbo-Thrust Special 3x2 315 hp"
+      },
+      {
+       "name": "Wikipedia: Chevrolet big-block engine",
+       "url": "https://en.wikipedia.org/wiki/Chevrolet_big-block_engine",
+       "says": "315 hp (1959-1960)"
+      }
+     ],
+     "note": ""
+    },
+    {
+     "year": 1959,
+     "hp": 320,
+     "hp_basis": "gross",
+     "compression_ratio": 11.25,
+     "code": "Turbo-Thrust Special, RPO 577",
+     "induction": "4-bbl Carter AFB",
+     "sources": [
+      {
+       "name": "GM Heritage Center 1959 Chevrolet information kit",
+       "url": "https://www.gm.com/content/dam/company/no_search/heritage-archive-docs/vehicle-information-kits/chevrolet/1959-Chevrolet.pdf",
+       "says": "p.48: Turbo-Thrust Special (RPO 577) 4-bbl 320 @ 5600"
+      },
+      {
+       "name": "NHRA engine blueprint 1959 Chevrolet (CHEV-59)",
+       "url": "https://www.nhra.net/tech_specs/engine/blueprints/CHEV-59.rtf",
+       "says": "320 348 11.25 1-4 Carter AFB"
+      },
+      {
+       "name": "Chevy Hardcore: Throwback Thursday, the 348",
+       "url": "https://www.chevyhardcore.com/news/throwback-thursday-the-348-cubic-inch-w-series-engine/",
+       "says": "1959-1960: 320-335 horsepower"
+      }
+     ],
+     "note": ""
+    },
+    {
+     "year": 1959,
+     "hp": 335,
+     "hp_basis": "gross",
+     "compression_ratio": 11.25,
+     "code": "Super Turbo-Thrust Special, RPO 574",
+     "induction": "3x2-bbl",
+     "sources": [
+      {
+       "name": "GM Heritage Center 1959 Chevrolet information kit",
+       "url": "https://www.gm.com/content/dam/company/no_search/heritage-archive-docs/vehicle-information-kits/chevrolet/1959-Chevrolet.pdf",
+       "says": "p.48: Super Turbo-Thrust Special (RPO 574) 3x2 335 @ 5800"
+      },
+      {
+       "name": "NHRA engine blueprint 1959 Chevrolet (CHEV-59)",
+       "url": "https://www.nhra.net/tech_specs/engine/blueprints/CHEV-59.rtf",
+       "says": "335 348 11.25 3-2 Rochester"
+      },
+      {
+       "name": "Chevy Hardcore: Impala Engine Options 1959",
+       "url": "https://www.chevyhardcore.com/?p=8334",
+       "says": "late 1959 compression raised to 11.25:1, 335 hp"
+      }
+     ],
+     "note": ""
+    },
+    {
+     "year": 1960,
+     "hp": 250,
+     "hp_basis": "gross",
+     "compression_ratio": 9.5,
+     "code": "Turbo-Thrust, RPO 576",
+     "induction": "4-bbl",
+     "sources": [
+      {
+       "name": "GM Heritage Center 1960 Chevrolet information kit",
+       "url": "https://www.gm.com/content/dam/company/no_search/heritage-archive-docs/vehicle-information-kits/chevrolet/1960-Chevrolet.pdf",
+       "says": "p.51: 348 250 4-bbl reg cam RPO 576"
+      },
+      {
+       "name": "NHRA engine blueprint 1960 Chevrolet (CHEV-60)",
+       "url": "https://www.nhra.net/tech_specs/engine/blueprints/CHEV-60.rtf",
+       "says": "250 348 9.50 1-4 Carter WCFB"
+      },
+      {
+       "name": "Chevy Hardcore: Impala Engine Options 1960",
+       "url": "https://www.chevyhardcore.com/news/impala-engine-options-1960/",
+       "says": "348 4-bbl 9.5:1 250 hp"
+      }
+     ],
+     "note": ""
+    },
+    {
+     "year": 1960,
+     "hp": 280,
+     "hp_basis": "gross",
+     "compression_ratio": 9.5,
+     "code": "Super Turbo-Thrust, RPO 573",
+     "induction": "3x2-bbl",
+     "sources": [
+      {
+       "name": "GM Heritage Center 1960 Chevrolet information kit",
+       "url": "https://www.gm.com/content/dam/company/no_search/heritage-archive-docs/vehicle-information-kits/chevrolet/1960-Chevrolet.pdf",
+       "says": "p.51: 348 280 3x2 reg cam RPO 573"
+      },
+      {
+       "name": "NHRA engine blueprint 1960 Chevrolet (CHEV-60)",
+       "url": "https://www.nhra.net/tech_specs/engine/blueprints/CHEV-60.rtf",
+       "says": "280 348 9.50 3-2 Rochester"
+      },
+      {
+       "name": "Chevy Hardcore: Impala Engine Options 1960",
+       "url": "https://www.chevyhardcore.com/news/impala-engine-options-1960/",
+       "says": "348 3x2 9.5:1 280 hp"
+      }
+     ],
+     "note": ""
+    },
+    {
+     "year": 1960,
+     "hp": 305,
+     "hp_basis": "gross",
+     "compression_ratio": 11.0,
+     "code": "Turbo-Thrust Special (HD Powerglide), RPO 576",
+     "induction": "4-bbl",
+     "sources": [
+      {
+       "name": "GM Heritage Center 1960 Chevrolet information kit",
+       "url": "https://www.gm.com/content/dam/company/no_search/heritage-archive-docs/vehicle-information-kits/chevrolet/1960-Chevrolet.pdf",
+       "says": "p.51: 348 305 4-bbl spec cam PG (H.D.)"
+      },
+      {
+       "name": "NHRA engine blueprint 1960 Chevrolet (CHEV-60)",
+       "url": "https://www.nhra.net/tech_specs/engine/blueprints/CHEV-60.rtf",
+       "says": "305 348 11.00 1-4 Carter AFB"
+      },
+      {
+       "name": "Chevy Hardcore: Impala Engine Options 1960",
+       "url": "https://www.chevyhardcore.com/news/impala-engine-options-1960/",
+       "says": "348 4-bbl 11.0:1 305 hp"
+      }
+     ],
+     "note": ""
+    },
+    {
+     "year": 1960,
+     "hp": 320,
+     "hp_basis": "gross",
+     "compression_ratio": 11.25,
+     "code": "Turbo-Thrust Special, RPO 577 / 590",
+     "induction": "4-bbl",
+     "sources": [
+      {
+       "name": "GM Heritage Center 1960 Chevrolet information kit",
+       "url": "https://www.gm.com/content/dam/company/no_search/heritage-archive-docs/vehicle-information-kits/chevrolet/1960-Chevrolet.pdf",
+       "says": "p.51: 348 320 RPO 577 and RPO 590 'High Performance Special'"
+      },
+      {
+       "name": "NHRA engine blueprint 1960 Chevrolet (CHEV-60)",
+       "url": "https://www.nhra.net/tech_specs/engine/blueprints/CHEV-60.rtf",
+       "says": "320 348 11.25 1-4 Carter AFB"
+      },
+      {
+       "name": "Chevy Hardcore: Impala Engine Options 1960",
+       "url": "https://www.chevyhardcore.com/news/impala-engine-options-1960/",
+       "says": "348 4-bbl 11.25:1 320 hp"
+      }
+     ],
+     "note": ""
+    },
+    {
+     "year": 1960,
+     "hp": 335,
+     "hp_basis": "gross",
+     "compression_ratio": 11.25,
+     "code": "Super Turbo-Thrust Special, RPO 574 / 571",
+     "induction": "3x2-bbl",
+     "sources": [
+      {
+       "name": "GM Heritage Center 1960 Chevrolet information kit",
+       "url": "https://www.gm.com/content/dam/company/no_search/heritage-archive-docs/vehicle-information-kits/chevrolet/1960-Chevrolet.pdf",
+       "says": "p.51: 348 335 RPO 574 and RPO 571"
+      },
+      {
+       "name": "NHRA engine blueprint 1960 Chevrolet (CHEV-60)",
+       "url": "https://www.nhra.net/tech_specs/engine/blueprints/CHEV-60.rtf",
+       "says": "335 348 11.25 3-2 Rochester"
+      },
+      {
+       "name": "Chevy Hardcore: Impala Engine Options 1960",
+       "url": "https://www.chevyhardcore.com/news/impala-engine-options-1960/",
+       "says": "348 3x2 11.25:1 335 hp"
+      },
+      {
+       "name": "Wikipedia: Chevrolet Bel Air",
+       "url": "https://en.wikipedia.org/wiki/Chevrolet_Bel_Air",
+       "says": "348 up to 335 hp at 5800 rpm (1960)"
+      }
+     ],
+     "note": ""
+    },
+    {
+     "year": 1961,
+     "hp": 250,
+     "hp_basis": "gross",
+     "compression_ratio": 9.5,
+     "code": "Turbo-Thrust, RPO 576",
+     "induction": "4-bbl",
+     "sources": [
+      {
+       "name": "GM Heritage Center 1961 Chevrolet information kit",
+       "url": "https://www.gm.com/content/dam/company/no_search/heritage-archive-docs/vehicle-information-kits/chevrolet/1961-Chevrolet.pdf",
+       "says": "pp.73-74: Turbo-Thrust RPO 576 250 HP"
+      },
+      {
+       "name": "NHRA engine blueprint 1961 Chevrolet (CHEV-61)",
+       "url": "https://www.nhra.net/tech_specs/engine/blueprints/CHEV-61.rtf",
+       "says": "250 348 9.50 1-4 Carter WCFB"
+      },
+      {
+       "name": "Chevy Hardcore: Impala Engine Options 1961",
+       "url": "https://www.chevyhardcore.com/news/impala-engine-options-1961/",
+       "says": "348 4-bbl 250 hp"
+      }
+     ],
+     "note": ""
+    },
+    {
+     "year": 1961,
+     "hp": 280,
+     "hp_basis": "gross",
+     "compression_ratio": 9.5,
+     "code": "Super Turbo-Thrust, RPO 573",
+     "induction": "3x2-bbl",
+     "sources": [
+      {
+       "name": "GM Heritage Center 1961 Chevrolet information kit",
+       "url": "https://www.gm.com/content/dam/company/no_search/heritage-archive-docs/vehicle-information-kits/chevrolet/1961-Chevrolet.pdf",
+       "says": "pp.73-74: Super Turbo-Thrust 3x2 280 HP"
+      },
+      {
+       "name": "NHRA engine blueprint 1961 Chevrolet (CHEV-61)",
+       "url": "https://www.nhra.net/tech_specs/engine/blueprints/CHEV-61.rtf",
+       "says": "280 348 9.50 3-2 Rochester"
+      },
+      {
+       "name": "Chevy Hardcore: Impala Engine Options 1961",
+       "url": "https://www.chevyhardcore.com/news/impala-engine-options-1961/",
+       "says": "348 Tri-Power 280 hp"
+      }
+     ],
+     "note": ""
+    },
+    {
+     "year": 1961,
+     "hp": 305,
+     "hp_basis": "gross",
+     "compression_ratio": null,
+     "code": "Turbo-Thrust Special",
+     "induction": "4-bbl Carter AFB",
+     "sources": [
+      {
+       "name": "GM Heritage Center 1961 Chevrolet information kit",
+       "url": "https://www.gm.com/content/dam/company/no_search/heritage-archive-docs/vehicle-information-kits/chevrolet/1961-Chevrolet.pdf",
+       "says": "pp.73-74: Special 305 HP"
+      },
+      {
+       "name": "NHRA engine blueprint 1961 Chevrolet (CHEV-61)",
+       "url": "https://www.nhra.net/tech_specs/engine/blueprints/CHEV-61.rtf",
+       "says": "305 348 9.50 1-4 Carter AFB (two rows: H and M lifters)"
+      },
+      {
+       "name": "Chevy Hardcore: Impala Engine Options 1961",
+       "url": "https://www.chevyhardcore.com/news/impala-engine-options-1961/",
+       "says": "348 4-bbl 11.0:1 305 hp"
+      }
+     ],
+     "note": "Compression disputed: NHRA 9.5:1 vs Chevy Hardcore 11.0:1."
+    },
+    {
+     "year": 1961,
+     "hp": 340,
+     "hp_basis": "gross",
+     "compression_ratio": 11.25,
+     "code": "Turbo-Thrust Special, RPO 572",
+     "induction": "4-bbl Carter AFB",
+     "sources": [
+      {
+       "name": "GM Heritage Center 1961 Chevrolet information kit",
+       "url": "https://www.gm.com/content/dam/company/no_search/heritage-archive-docs/vehicle-information-kits/chevrolet/1961-Chevrolet.pdf",
+       "says": "pp.73-74: Special 340 HP; 11.25:1 on 340 & 350"
+      },
+      {
+       "name": "NHRA engine blueprint 1961 Chevrolet (CHEV-61)",
+       "url": "https://www.nhra.net/tech_specs/engine/blueprints/CHEV-61.rtf",
+       "says": "340 348 11.00 1-4 Carter AFB-3012S, M lifters"
+      },
+      {
+       "name": "Chevy Hardcore: Impala Engine Options 1961",
+       "url": "https://www.chevyhardcore.com/news/impala-engine-options-1961/",
+       "says": "348 4-bbl 11.25:1 340 hp"
+      },
+      {
+       "name": "Wikipedia: Chevrolet big-block engine",
+       "url": "https://en.wikipedia.org/wiki/Chevrolet_big-block_engine",
+       "says": "340 hp (1961)"
+      },
+      {
+       "name": "Street Machine",
+       "url": "https://www.streetmachine.com.au/features/chevrolet-w-series-big-block-v8-1958-1965",
+       "says": "By 1961, the single-carb 348 was rated at 340hp gross"
+      }
+     ],
+     "note": "Compression: GM and Chevy Hardcore say 11.25:1, NHRA says 11.0."
+    },
+    {
+     "year": 1961,
+     "hp": 350,
+     "hp_basis": "gross",
+     "compression_ratio": 11.25,
+     "code": "Super Turbo-Thrust Special",
+     "induction": "3x2-bbl",
+     "sources": [
+      {
+       "name": "GM Heritage Center 1961 Chevrolet information kit",
+       "url": "https://www.gm.com/content/dam/company/no_search/heritage-archive-docs/vehicle-information-kits/chevrolet/1961-Chevrolet.pdf",
+       "says": "pp.73-74: Super Turbo-Thrust Special 350 HP"
+      },
+      {
+       "name": "NHRA engine blueprint 1961 Chevrolet (CHEV-61)",
+       "url": "https://www.nhra.net/tech_specs/engine/blueprints/CHEV-61.rtf",
+       "says": "350 348 11.25 3-2 Rochester, M lifters"
+      },
+      {
+       "name": "Chevy Hardcore: Impala Engine Options 1961",
+       "url": "https://www.chevyhardcore.com/news/impala-engine-options-1961/",
+       "says": "348 Tri-Power 11.25:1 350 hp"
+      }
+     ],
+     "note": "Wikipedia (big-block) and Street Machine say 348 hp. GM, NHRA and Chevy Hardcore all say 350."
+    }
+   ],
+   "unverified": {
+    "fuel_type": "Gasoline (carbureted); no source checked states fuel explicitly.",
+    "rod_length_in": "6.135 from the NHRA blueprints only (CHEV-58..61). Engine Builder gives 6.135 for 454 rods, not explicitly for the 348. GM kit OCR didn't yield the V8 rod length.",
+    "firing_order": "1-8-4-3-6-5-7-2 from the 1958 GM kit only (PDF p.63, 'Firing order 1-8-4-3-6-5-7-2'). No second independent source checked."
+   },
+   "unverified_variants": [
+    {
+     "year": 1958,
+     "hp": 300,
+     "found": "NHRA CHEV-58 lists '300 348 11.00 1-4 Carter WCFB, M lifters' (mid-year Special Turbo-Thrust). Chevy Hardcore (1958 list and Throwback) gives 305 instead. The 1958 GM kit (dated 11-29-57) predates the mid-year option. Disputed 300 vs 305."
+    },
+    {
+     "year": 1959,
+     "hp": 300,
+     "found": "1959 GM Engineering Features booklet (Oct 1958: 4-bbl special cam 11.0:1, 300 @ 5600) and Chevy Hardcore 1959 list (300). The revised GM kit (3-23-59) and NHRA CHEV-59 show 305 instead. Probably an early-1959 rating later changed to 305."
+    },
+    {
+     "year": "1958-1964 (trucks)",
+     "hp": null,
+     "found": "Truck 348 ratings not researched; Wikipedia says trucks used the 348 through 1964."
+    }
+   ]
+  },
+  {
+   "id": "gm-3100-lh0",
+   "name": "GM 3.1L 60-degree V6 (LH0)",
+   "fields": {
+    "bore_in": {
+     "value": 3.5,
+     "sources": [
+      {
+       "name": "GM Heritage Center 1992 Camaro information kit (MVMA specs)",
+       "url": "https://www.gm.com/content/dam/company/no_search/heritage-archive-docs/vehicle-information-kits/chevrolet/1992-Chevrolet-Camaro.pdf",
+       "says": "RPO LH0 60 deg. V ... Bore 89.025mm (3.50 in.) Stroke 84mm (3.31 in.)"
+      },
+      {
+       "name": "NHRA engine blueprints 1990-1992 Chevrolet/Pontiac",
+       "url": "https://www.nhra.net/tech_specs/engine/blueprints/CHEV-90.rtf",
+       "says": "3.500 bore, 3.310 stroke, 191 ci, 6 cyl (rod length blank)"
+      },
+      {
+       "name": "Wikipedia: General Motors 60-degree V6 engine",
+       "url": "https://en.wikipedia.org/wiki/General_Motors_60%C2%B0_V6_engine",
+       "says": "3.1 L: bore 89 mm (3.5 in), stroke 84 mm (3.31 in)"
+      },
+      {
+       "name": "Brake & Front End: A 360-degree look into the GM 60-degree 3.1L (Larry Carley)",
+       "url": "https://www.brakeandfrontend.com/look-into-gm-engine/",
+       "says": "The 3.1L V6 utilizes a 3.50\" bore with a 3.312\" stroke crankshaft"
+      }
+     ],
+     "note": "GM metric: 89.025 mm = 3.5049 in, so the GM, NHRA and Wikipedia figures agree."
+    },
+    "stroke_in": {
+     "value": 3.31,
+     "sources": [
+      {
+       "name": "GM Heritage Center 1992 Camaro information kit",
+       "url": "https://www.gm.com/content/dam/company/no_search/heritage-archive-docs/vehicle-information-kits/chevrolet/1992-Chevrolet-Camaro.pdf",
+       "says": "Stroke 84mm (3.31 in.)"
+      },
+      {
+       "name": "NHRA engine blueprints 1990-1992",
+       "url": "https://www.nhra.net/tech_specs/engine/blueprints/CHEV-90.rtf",
+       "says": "stroke 3.310"
+      },
+      {
+       "name": "Wikipedia: General Motors 60-degree V6 engine",
+       "url": "https://en.wikipedia.org/wiki/General_Motors_60%C2%B0_V6_engine",
+       "says": "84 mm (3.31 in)"
+      },
+      {
+       "name": "Brake & Front End (Larry Carley)",
+       "url": "https://www.brakeandfrontend.com/look-into-gm-engine/",
+       "says": "3.312\" stroke crankshaft"
+      }
+     ],
+     "note": "84 mm = 3.3071 in; NHRA 3.310; B&FE 3.312. The 1990 GM kit says the 3.1 kept the 2.8's bore and lengthened the stroke. B&FE says the opposite (bore change) but prints the same numbers."
+    },
+    "displacement_ci": {
+     "value": 191,
+     "sources": [
+      {
+       "name": "GM Heritage Center 1992 Camaro information kit",
+       "url": "https://www.gm.com/content/dam/company/no_search/heritage-archive-docs/vehicle-information-kits/chevrolet/1992-Chevrolet-Camaro.pdf",
+       "says": "LH0 3.1 (191)"
+      },
+      {
+       "name": "NHRA engine blueprints 1990-1992",
+       "url": "https://www.nhra.net/tech_specs/engine/blueprints/CHEV-90.rtf",
+       "says": "191"
+      },
+      {
+       "name": "Wikipedia: General Motors 60-degree V6 engine",
+       "url": "https://en.wikipedia.org/wiki/General_Motors_60%C2%B0_V6_engine",
+       "says": "3,135 cc (3.1 L; 191.3 cu in)"
+      }
+     ],
+     "note": ""
+    },
+    "displacement_l": {
+     "value": 3.1,
+     "sources": [
+      {
+       "name": "GM Heritage Center 1992 Camaro information kit",
+       "url": "https://www.gm.com/content/dam/company/no_search/heritage-archive-docs/vehicle-information-kits/chevrolet/1992-Chevrolet-Camaro.pdf",
+       "says": "LH0 3.1"
+      },
+      {
+       "name": "Wikipedia: General Motors 60-degree V6 engine",
+       "url": "https://en.wikipedia.org/wiki/General_Motors_60%C2%B0_V6_engine",
+       "says": "3,135 cc (3.1 L)"
+      },
+      {
+       "name": "EPA fueleconomy.gov data",
+       "url": "https://www.fueleconomy.gov/feg/download.shtml",
+       "says": "1990-1992 Camaro/Firebird: 3.1 L 6-cyl"
+      }
+     ],
+     "note": "3,135 cc"
+    },
+    "num_cylinders": {
+     "value": 6,
+     "sources": [
+      {
+       "name": "GM Heritage Center 1992 Camaro information kit",
+       "url": "https://www.gm.com/content/dam/company/no_search/heritage-archive-docs/vehicle-information-kits/chevrolet/1992-Chevrolet-Camaro.pdf",
+       "says": "No. of cylinders 6"
+      },
+      {
+       "name": "Wikipedia: General Motors 60-degree V6 engine",
+       "url": "https://en.wikipedia.org/wiki/General_Motors_60%C2%B0_V6_engine",
+       "says": "V6"
+      },
+      {
+       "name": "EPA fueleconomy.gov data",
+       "url": "https://www.fueleconomy.gov/feg/download.shtml",
+       "says": "3.1 L 6-cyl"
+      }
+     ],
+     "note": ""
+    },
+    "configuration": {
+     "value": "60-degree V6",
+     "sources": [
+      {
+       "name": "GM Heritage Center 1992 Camaro information kit",
+       "url": "https://www.gm.com/content/dam/company/no_search/heritage-archive-docs/vehicle-information-kits/chevrolet/1992-Chevrolet-Camaro.pdf",
+       "says": "60 deg. V, Front, Longitudinal, OHV"
+      },
+      {
+       "name": "Wikipedia: General Motors 60-degree V6 engine",
+       "url": "https://en.wikipedia.org/wiki/General_Motors_60%C2%B0_V6_engine",
+       "says": "60-degree V6"
+      },
+      {
+       "name": "Brake & Front End (Larry Carley)",
+       "url": "https://www.brakeandfrontend.com/look-into-gm-engine/",
+       "says": "The narrow 60 deg angle of the V6 cylinder bank"
+      }
+     ],
+     "note": ""
+    },
+    "valvetrain": {
+     "value": "OHV (pushrod), 2 valves/cyl, hydraulic lifters",
+     "sources": [
+      {
+       "name": "GM Heritage Center 1992 Camaro information kit",
+       "url": "https://www.gm.com/content/dam/company/no_search/heritage-archive-docs/vehicle-information-kits/chevrolet/1992-Chevrolet-Camaro.pdf",
+       "says": "OHV"
+      },
+      {
+       "name": "Wikipedia: General Motors 60-degree V6 engine",
+       "url": "https://en.wikipedia.org/wiki/General_Motors_60%C2%B0_V6_engine",
+       "says": "overhead valve, two valves per cylinder"
+      },
+      {
+       "name": "Brake & Front End (Larry Carley)",
+       "url": "https://www.brakeandfrontend.com/look-into-gm-engine/",
+       "says": "conventional pushrod designs with two valves per cylinder"
+      },
+      {
+       "name": "NHRA engine blueprints 1990-1992",
+       "url": "https://www.nhra.net/tech_specs/engine/blueprints/CHEV-90.rtf",
+       "says": "rocker ratio 1.5, lifter H (hydraulic)"
+      }
+     ],
+     "note": ""
+    },
+    "induction": {
+     "value": "multi-port fuel injection (MPFI), naturally aspirated",
+     "sources": [
+      {
+       "name": "GM Heritage Center 1990 and 1992 Camaro information kits",
+       "url": "https://www.gm.com/content/dam/company/no_search/heritage-archive-docs/vehicle-information-kits/chevrolet/1992-Chevrolet-Camaro.pdf",
+       "says": "LH0 3.1 (191) Multi-Port Fuel Injection"
+      },
+      {
+       "name": "NHRA engine blueprints 1990-1992",
+       "url": "https://www.nhra.net/tech_specs/engine/blueprints/CHEV-90.rtf",
+       "says": "Ind. PFI, Rochester"
+      },
+      {
+       "name": "Wikipedia: General Motors 60-degree V6 engine",
+       "url": "https://en.wikipedia.org/wiki/General_Motors_60%C2%B0_V6_engine",
+       "says": "multi-port fuel injection"
+      },
+      {
+       "name": "GM-EFI magazine: Guide to the 3rd-gen Firebird",
+       "url": "https://gm-efi.com/gm-efis-guide-to-the-3rd-gen-pontiac-firebird/",
+       "says": "new, smoother MFI 3.1L V6 making 140hp"
+      }
+     ],
+     "note": ""
+    },
+    "years": {
+     "value": "1990-1992 in Camaro/Firebird (RWD); LH0 itself 1988-1994 in FWD GM cars",
+     "sources": [
+      {
+       "name": "GM Heritage Center 1990 Camaro information kit",
+       "url": "https://www.gm.com/content/dam/company/no_search/heritage-archive-docs/vehicle-information-kits/chevrolet/1990-Chevrolet-Camaro.pdf",
+       "says": "3.1L V6 MFI replaces the 2.8L as standard on Camaro RS Coupe (1990)"
+      },
+      {
+       "name": "GM Heritage Center 1992 Camaro information kit",
+       "url": "https://www.gm.com/content/dam/company/no_search/heritage-archive-docs/vehicle-information-kits/chevrolet/1992-Chevrolet-Camaro.pdf",
+       "says": "LH0 3.1 listed in 1992 power teams"
+      },
+      {
+       "name": "NHRA blueprints CHEV/PONT-90..92",
+       "url": "https://www.nhra.net/tech_specs/engine/blueprints/CHEV-92.rtf",
+       "says": "191 V6 listed 1990, 1991, 1992"
+      },
+      {
+       "name": "Wikipedia: General Motors 60-degree V6 engine",
+       "url": "https://en.wikipedia.org/wiki/General_Motors_60%C2%B0_V6_engine",
+       "says": "LH0 introduced 1988, produced through 1994; 1990-1992 Camaros and Firebirds"
+      },
+      {
+       "name": "Brake & Front End (Larry Carley)",
+       "url": "https://www.brakeandfrontend.com/look-into-gm-engine/",
+       "says": "Applications: 1990-1992 Chevrolet Camaro"
+      }
+     ],
+     "note": "Our dataset's 1993-1997 records for this engine don't match: 1993+ Camaro/Firebird used the 3.4L L32. The 1994+ '3100' (L82) is a different RPO used in FWD cars."
+    }
+   },
+   "variants": [
+    {
+     "year": 1990,
+     "hp": 140,
+     "hp_basis": "SAE net",
+     "compression_ratio": null,
+     "code": "LH0 (VIN T)",
+     "induction": "MPFI",
+     "sources": [
+      {
+       "name": "GM Heritage Center 1990 Camaro information kit",
+       "url": "https://www.gm.com/content/dam/company/no_search/heritage-archive-docs/vehicle-information-kits/chevrolet/1990-Chevrolet-Camaro.pdf",
+       "says": "PDF p.14, 25: 3.1L V6 MFI, 140 @ 4400"
+      },
+      {
+       "name": "NHRA CHEV-90 / PONT-90",
+       "url": "https://www.nhra.net/tech_specs/engine/blueprints/CHEV-90.rtf",
+       "says": "140 191 9.00 PFI"
+      },
+      {
+       "name": "Wikipedia: Chevrolet Camaro (third generation)",
+       "url": "https://en.wikipedia.org/wiki/Chevrolet_Camaro_(third_generation)",
+       "says": "LH0 1990-1991 140 hp @ 4,400"
+      }
+     ],
+     "note": "Same rating in Camaro RS and base Firebird. Compression disputed (see unverified)."
+    },
+    {
+     "year": 1991,
+     "hp": 140,
+     "hp_basis": "SAE net",
+     "compression_ratio": null,
+     "code": "LH0 (VIN T)",
+     "induction": "MPFI",
+     "sources": [
+      {
+       "name": "GM Heritage Center 1991 Camaro information kit",
+       "url": "https://www.gm.com/content/dam/company/no_search/heritage-archive-docs/vehicle-information-kits/chevrolet/1991-Chevrolet-Camaro.pdf",
+       "says": "PDF p.5-7: base V6 for RS Coupe was 191ci, 140hp"
+      },
+      {
+       "name": "NHRA CHEV-91 / PONT-91",
+       "url": "https://www.nhra.net/tech_specs/engine/blueprints/CHEV-91.rtf",
+       "says": "140 191 9.00 PFI"
+      },
+      {
+       "name": "GM-EFI magazine: Guide to the 3rd-gen Firebird",
+       "url": "https://gm-efi.com/gm-efis-guide-to-the-3rd-gen-pontiac-firebird/",
+       "says": "3.1L V6 MFI: 140 hp (base)"
+      }
+     ],
+     "note": "Same rating in Camaro RS and base Firebird. Compression disputed (see unverified)."
+    },
+    {
+     "year": 1992,
+     "hp": 140,
+     "hp_basis": "SAE net",
+     "compression_ratio": null,
+     "code": "LH0 (VIN T)",
+     "induction": "MPFI",
+     "sources": [
+      {
+       "name": "GM Heritage Center 1992 Camaro information kit",
+       "url": "https://www.gm.com/content/dam/company/no_search/heritage-archive-docs/vehicle-information-kits/chevrolet/1992-Chevrolet-Camaro.pdf",
+       "says": "MVMA power teams: LH0 3.1 (191) MPFI 8.5:1 104 kW (140) @ 4400"
+      },
+      {
+       "name": "NHRA CHEV-92",
+       "url": "https://www.nhra.net/tech_specs/engine/blueprints/CHEV-92.rtf",
+       "says": "140 191 9.00 PFI"
+      },
+      {
+       "name": "Wikipedia: Chevrolet Camaro (third generation)",
+       "url": "https://en.wikipedia.org/wiki/Chevrolet_Camaro_(third_generation)",
+       "says": "LH0 1992 140 hp"
+      }
+     ],
+     "note": "Same rating in Camaro RS and base Firebird. Compression disputed (see unverified)."
+    }
+   ],
+   "unverified": {
+    "compression_ratio": "Disputed: GM 1990 and 1992 Camaro kits say 8.5:1; NHRA CHEV-90/91/92 and PONT-90/91 say 9.0 for the 140-hp 191. Wikipedia gives none for LH0.",
+    "block_material": "Cast iron: GM 1992 kit (MVMA 'Cylinder Block Cast Iron') and Wikipedia ('cast-iron block'). Only 2.",
+    "head_material": "Cast iron per the GM 1992 kit (MVMA 'Cast Iron, 13.15 kg (29 lb)' in the head entry) and a Wikipedia passage saying Camaro versions kept iron heads. Wikipedia elsewhere implies aluminum heads for the 3.1. Not settled at 3 sources.",
+    "firing_order": "1-2-3-4-5-6 from the GM 1992 kit only. Brake & Front End gives coil pairs 1-4, 6-3, 2-5 (consistent, but not a firing order).",
+    "rod_length_in": "Not found. The NHRA blueprints leave it blank for the 191.",
+    "fuel_type": "Unleaded 87 gasoline per the GM 1992 kit (MVMA) only."
+   },
+   "unverified_variants": [
+    {
+     "year": 1990,
+     "hp": 135,
+     "found": "NHRA CHEV-90 / PONT-90 list a 135-hp 191 (9.0:1, PFI), and Wikipedia gives 135 hp for 1988-89 LH0. That's the FWD rating, not Camaro/Firebird."
+    },
+    {
+     "year": 1990,
+     "hp": 142,
+     "found": "NHRA CHEV-90 lists a 142-hp 191 at 9.4:1 (different manifold part numbers). Probably a FWD application (e.g. Beretta/Corsica). Only NHRA."
+    }
+   ]
+  },
+  {
+   "id": "ford-essex-3-9",
+   "name": "Ford 3.9L Essex V6",
+   "fields": {
+    "bore_in": {
+     "value": 3.81,
+     "sources": [
+      {
+       "name": "Wikipedia: Ford Essex V6 engine (Canadian)",
+       "url": "https://en.wikipedia.org/wiki/Ford_Essex_V6_engine_(Canadian)",
+       "says": "3.9: bore 96.8 mm (3.81 in), same as 3.8 and 4.2"
+      },
+      {
+       "name": "CarBuzz: The 2004 Ford Mustang only shared this V6 with one other car (G. Smith, 2025)",
+       "url": "https://carbuzz.com/ford-freestar-mustang-v6-engine/",
+       "says": "Bore: 3.81 Inches"
+      },
+      {
+       "name": "Ford Performance: 3.9L V6 Essex Mustang (2020, archived)",
+       "url": "https://performance.ford.com/enthusiasts/newsroom/2020/04/3-9l-v6-essex-mustang.html",
+       "says": "the 3.9 was substantively the same piece as the 3.8 save for a slightly longer stroke"
+      }
+     ],
+     "note": "96.8 mm = 3.8110 in. Ford implies the 3.8's bore and doesn't print it. CarBuzz's numbers match Wikipedia exactly and may be copied. Treat as borderline."
+    },
+    "stroke_in": {
+     "value": 3.46,
+     "sources": [
+      {
+       "name": "Ford Performance: 3.9L V6 Essex Mustang",
+       "url": "https://performance.ford.com/enthusiasts/newsroom/2020/04/3-9l-v6-essex-mustang.html",
+       "says": "slightly longer stroke, now at 3.464 inches"
+      },
+      {
+       "name": "Wikipedia: Ford Essex V6 engine (Canadian)",
+       "url": "https://en.wikipedia.org/wiki/Ford_Essex_V6_engine_(Canadian)",
+       "says": "stroke 88 mm (3.46 in)"
+      },
+      {
+       "name": "CarBuzz",
+       "url": "https://carbuzz.com/ford-freestar-mustang-v6-engine/",
+       "says": "Stroke: 3.46 Inches"
+      }
+     ],
+     "note": "88.0 mm = 3.4646 in. Some spec farms say 88.4 mm, which would make it 238 ci."
+    },
+    "displacement_ci": {
+     "value": 237,
+     "sources": [
+      {
+       "name": "Ford Performance: 3.9L V6 Essex Mustang",
+       "url": "https://performance.ford.com/enthusiasts/newsroom/2020/04/3-9l-v6-essex-mustang.html",
+       "says": "At 237 cubic inches, the 3.9 ..."
+      },
+      {
+       "name": "Wikipedia: Ford Essex V6 engine (Canadian)",
+       "url": "https://en.wikipedia.org/wiki/Ford_Essex_V6_engine_(Canadian)",
+       "says": "3,886 cc (237.1 cu in)"
+      },
+      {
+       "name": "CarBuzz",
+       "url": "https://carbuzz.com/ford-freestar-mustang-v6-engine/",
+       "says": "Displacement: 3,886 cc (=237.1 ci)"
+      }
+     ],
+     "note": "DISAGREES WITH OUR DATASET (238). cars.com/KBB-style listings say '3.9L/238'. 3.81 x 3.464 x 6 = 237.0 ci."
+    },
+    "displacement_l": {
+     "value": 3.9,
+     "sources": [
+      {
+       "name": "Ford Performance: 3.9L V6 Essex Mustang",
+       "url": "https://performance.ford.com/enthusiasts/newsroom/2020/04/3-9l-v6-essex-mustang.html",
+       "says": "3.9-liter"
+      },
+      {
+       "name": "Wikipedia: Ford Essex V6 engine (Canadian)",
+       "url": "https://en.wikipedia.org/wiki/Ford_Essex_V6_engine_(Canadian)",
+       "says": "3,886 cc"
+      },
+      {
+       "name": "EPA fueleconomy.gov data",
+       "url": "https://www.fueleconomy.gov/feg/download.shtml",
+       "says": "2004 Mustang: 3.9 L 6-cyl listed alongside 3.8 L"
+      },
+      {
+       "name": "cars.com 2004 Ford Freestar specs",
+       "url": "https://www.cars.com/research/ford-freestar-2004/specs/127332",
+       "says": "3.9L/238"
+      }
+     ],
+     "note": "3,886 cc"
+    },
+    "num_cylinders": {
+     "value": 6,
+     "sources": [
+      {
+       "name": "Ford Performance: 3.9L V6 Essex Mustang",
+       "url": "https://performance.ford.com/enthusiasts/newsroom/2020/04/3-9l-v6-essex-mustang.html",
+       "says": "V-6"
+      },
+      {
+       "name": "Wikipedia: Ford Essex V6 engine (Canadian)",
+       "url": "https://en.wikipedia.org/wiki/Ford_Essex_V6_engine_(Canadian)",
+       "says": "V6"
+      },
+      {
+       "name": "EPA fueleconomy.gov data",
+       "url": "https://www.fueleconomy.gov/feg/download.shtml",
+       "says": "3.9 L 6-cyl"
+      }
+     ],
+     "note": ""
+    },
+    "configuration": {
+     "value": "V6 (90-degree)",
+     "sources": [
+      {
+       "name": "Ford Performance: 3.9L V6 Essex Mustang",
+       "url": "https://performance.ford.com/enthusiasts/newsroom/2020/04/3-9l-v6-essex-mustang.html",
+       "says": "a 90-degree overhead-valve design built in Ford's Essex Engine Plant"
+      },
+      {
+       "name": "Wikipedia: Ford Essex V6 engine (Canadian)",
+       "url": "https://en.wikipedia.org/wiki/Ford_Essex_V6_engine_(Canadian)",
+       "says": "Canadian Essex V6 (3.8/3.9/4.2 family)"
+      },
+      {
+       "name": "CarBuzz",
+       "url": "https://carbuzz.com/ford-freestar-mustang-v6-engine/",
+       "says": "3.9-liter Essex V6"
+      }
+     ],
+     "note": "Only Ford Performance gives the 90-degree angle explicitly."
+    },
+    "years": {
+     "value": "2004 (Mustang, mid-year running change); 2004-2007 (Freestar)",
+     "sources": [
+      {
+       "name": "Wikipedia: Ford Essex V6 engine (Canadian)",
+       "url": "https://en.wikipedia.org/wiki/Ford_Essex_V6_engine_(Canadian)",
+       "says": "late-production 2004 Mustang (from October 7, 2003); 2004-2007 Freestar"
+      },
+      {
+       "name": "Ford Performance: 3.9L V6 Essex Mustang",
+       "url": "https://performance.ford.com/enthusiasts/newsroom/2020/04/3-9l-v6-essex-mustang.html",
+       "says": "drummed up pallet-loads of 3.9's to finish out the '04 Mustang production run"
+      },
+      {
+       "name": "CarBuzz",
+       "url": "https://carbuzz.com/ford-freestar-mustang-v6-engine/",
+       "says": "appeared for half a year of 2004 production before becoming exclusive to the Freestar through 2007"
+      },
+      {
+       "name": "Wikipedia: Ford Mustang (fourth generation)",
+       "url": "https://en.wikipedia.org/wiki/Ford_Mustang_(fourth_generation)",
+       "says": "second half of the 2004 model year, the 3.8 L Essex was replaced with a 3.9 L version"
+      }
+     ],
+     "note": "Both Wikipedia pages count as one source."
+    }
+   },
+   "variants": [
+    {
+     "year": 2004,
+     "hp": 193,
+     "hp_basis": "SAE net",
+     "compression_ratio": null,
+     "code": "3.9L OHV V6 (Mustang base / Deluxe / Premium)",
+     "induction": "sequential multiport EFI",
+     "sources": [
+      {
+       "name": "Ford 2004 Ford Legends brochure (Ford Heritage Vault)",
+       "url": "https://fordheritagevaultmedia.com/api/links/c29a9048c4864d89915b29f4f39330e4/uuid/ff4aac4f5f354d8ebb407223bcd1929e/access",
+       "says": "OHV V6 Horsepower: 193 @ 5500 rpm"
+      },
+      {
+       "name": "Kelley Blue Book: 2004 Ford Mustang specs",
+       "url": "https://www.kbb.com/ford/mustang/2004/",
+       "says": "193 @ 5500 RPM, V6 3.9 Liter"
+      },
+      {
+       "name": "Wikipedia: Ford Mustang (fourth generation)",
+       "url": "https://en.wikipedia.org/wiki/Ford_Mustang_(fourth_generation)",
+       "says": "3.9 L ... power output identical (193 hp)"
+      }
+     ],
+     "note": "Same rating as the 3.8. Ford Performance's 2020 article says Ford didn't change the rating but calls the 3.8 '190', which was the 1999-2000 figure."
+    }
+   ],
+   "unverified": {
+    "valvetrain": "OHV pushrod, 2 valves/cyl: Ford Performance ('OHV, 2-valves-per-cylinder') and Wikipedia. The Ford Legends brochure ('OHV V6') is Ford again. Only 2 independent.",
+    "block_material": "Cast iron: Ford Performance (Essex 'compact cast-iron block') and Wikipedia. Only 2.",
+    "head_material": "Aluminum: Ford Performance ('aluminum heads') and Wikipedia. Only 2.",
+    "induction": "Sequential multiport fuel injection: Wikipedia; Ford Performance says only 'all of them in Mustangs featured fuel injection'. Only 2.",
+    "compression_ratio": "Not found for the 3.9.",
+    "firing_order": "Not found from reputable sources.",
+    "fuel_type": "Gasoline: cars.com Freestar 'Gas V6'. EPA fuel field not checked.",
+    "rod_length_in": "Not found."
+   },
+   "unverified_variants": [
+    {
+     "year": "2004-2007 (Freestar)",
+     "hp": 193,
+     "found": "cars.com 2004 Freestar: 193 @ 4500, 240 lb-ft @ 3750 (different peak rpm from the Mustang's 193 @ 5500). Not researched further."
+    }
+   ]
+  },
+  {
+   "id": "ford-5-8-trinity",
+   "name": "Ford 5.8L supercharged \"Trinity\" V8",
+   "fields": {
+    "displacement_l": {
+     "value": 5.8,
+     "sources": [
+      {
+       "name": "Ford Performance: 2013 Shelby GT500 (archived spec page)",
+       "url": "https://performance.ford.com/enthusiasts/collector-vehicles/shelby/shelby-gt500/2013.html",
+       "says": "Displacement: 5.8L / 351 CID"
+      },
+      {
+       "name": "Wikipedia: Ford Modular engine (5.8 Trinity)",
+       "url": "https://en.wikipedia.org/wiki/Ford_Modular_engine",
+       "says": "5.8 L (5,812 cc; 354.7 cu in)"
+      },
+      {
+       "name": "auto motor und sport: Ford Mustang Shelby GT500 technische Daten",
+       "url": "https://www.auto-motor-und-sport.de/test/ford-mustang-shelby-gt-500/technische-daten/",
+       "says": "Hubraum 5812 cm3"
+      },
+      {
+       "name": "EPA fueleconomy.gov data",
+       "url": "https://www.fueleconomy.gov/feg/download.shtml",
+       "says": "2013/2014 Mustang Shelby GT500: 5.8 L 8-cyl, S (supercharged)"
+      }
+     ],
+     "note": "5,812 cc"
+    },
+    "num_cylinders": {
+     "value": 8,
+     "sources": [
+      {
+       "name": "Ford Performance: 2013 Shelby GT500",
+       "url": "https://performance.ford.com/enthusiasts/collector-vehicles/shelby/shelby-gt500/2013.html",
+       "says": "supercharged aluminum V-8"
+      },
+      {
+       "name": "Wikipedia: Ford Modular engine",
+       "url": "https://en.wikipedia.org/wiki/Ford_Modular_engine",
+       "says": "V8"
+      },
+      {
+       "name": "auto motor und sport",
+       "url": "https://www.auto-motor-und-sport.de/test/ford-mustang-shelby-gt-500/technische-daten/",
+       "says": "8-Zylinder V-Motor"
+      },
+      {
+       "name": "EPA fueleconomy.gov data",
+       "url": "https://www.fueleconomy.gov/feg/download.shtml",
+       "says": "5.8 L 8-cyl"
+      }
+     ],
+     "note": ""
+    },
+    "configuration": {
+     "value": "V8 (90-degree)",
+     "sources": [
+      {
+       "name": "Ford Performance: 2013 Shelby GT500",
+       "url": "https://performance.ford.com/enthusiasts/collector-vehicles/shelby/shelby-gt500/2013.html",
+       "says": "Engine Type: 90-degree, DOHC 32-Valve supercharged aluminum V-8"
+      },
+      {
+       "name": "Wikipedia: Ford Modular engine",
+       "url": "https://en.wikipedia.org/wiki/Ford_Modular_engine",
+       "says": "Modular V8"
+      },
+      {
+       "name": "auto motor und sport",
+       "url": "https://www.auto-motor-und-sport.de/test/ford-mustang-shelby-gt-500/technische-daten/",
+       "says": "8-Zylinder V-Motor"
+      }
+     ],
+     "note": "Only Ford gives the 90-degree angle explicitly; Wikipedia and AMS just say V8."
+    },
+    "valvetrain": {
+     "value": "DOHC, 4 valves/cyl (32 valves)",
+     "sources": [
+      {
+       "name": "Ford Performance: 2013 Shelby GT500",
+       "url": "https://performance.ford.com/enthusiasts/collector-vehicles/shelby/shelby-gt500/2013.html",
+       "says": "DOHC 32-Valve"
+      },
+      {
+       "name": "Wikipedia: Ford Modular engine",
+       "url": "https://en.wikipedia.org/wiki/Ford_Modular_engine",
+       "says": "DOHC, 4 valves per cylinder"
+      },
+      {
+       "name": "Hagerty Learning Garage: 2013 Ford Shelby GT 500",
+       "url": "https://www.hagerty.com/learning-garage/vehicles/2013-ford-shelby-gt-500",
+       "says": "Double overhead-cam, 32-valve V-8"
+      },
+      {
+       "name": "EngineLabs: A failure of one GT500's 5.8-liter Trinity (C. Blue, 2015)",
+       "url": "https://www.enginelabs.com/news/failure-analysis-one-gt500s-5-8-liter-trinity-engine/",
+       "says": "four-valve ... DOHC"
+      }
+     ],
+     "note": ""
+    },
+    "block_material": {
+     "value": "aluminum",
+     "sources": [
+      {
+       "name": "Ford Performance: 2013 Shelby GT500",
+       "url": "https://performance.ford.com/enthusiasts/collector-vehicles/shelby/shelby-gt500/2013.html",
+       "says": "5.8-liter V-8 aluminum-block engine"
+      },
+      {
+       "name": "Wikipedia: Ford Modular engine",
+       "url": "https://en.wikipedia.org/wiki/Ford_Modular_engine",
+       "says": "aluminum block"
+      },
+      {
+       "name": "Hagerty Learning Garage: 2013 Ford Shelby GT 500",
+       "url": "https://www.hagerty.com/learning-garage/vehicles/2013-ford-shelby-gt-500",
+       "says": "an all-aluminum 5.8-liter 32-valve DOHC engine"
+      }
+     ],
+     "note": ""
+    },
+    "head_material": {
+     "value": "aluminum",
+     "sources": [
+      {
+       "name": "Wikipedia: Ford Modular engine",
+       "url": "https://en.wikipedia.org/wiki/Ford_Modular_engine",
+       "says": "aluminum heads"
+      },
+      {
+       "name": "Hagerty Learning Garage: 2013 Ford Shelby GT 500",
+       "url": "https://www.hagerty.com/learning-garage/vehicles/2013-ford-shelby-gt-500",
+       "says": "all-aluminum 5.8-liter"
+      },
+      {
+       "name": "Ford Performance: 2013 Shelby GT500",
+       "url": "https://performance.ford.com/enthusiasts/collector-vehicles/shelby/shelby-gt500/2013.html",
+       "says": "supercharged aluminum V-8"
+      }
+     ],
+     "note": "Ford and Hagerty say 'aluminum V-8' / 'all-aluminum', not heads specifically."
+    },
+    "induction": {
+     "value": "supercharged (Eaton TVS, 2.3 L, intercooled), port fuel injection",
+     "sources": [
+      {
+       "name": "Ford Performance: 2013 Shelby GT500",
+       "url": "https://performance.ford.com/enthusiasts/collector-vehicles/shelby/shelby-gt500/2013.html",
+       "says": "supercharged ... new supercharger"
+      },
+      {
+       "name": "Wikipedia: Ford Modular engine",
+       "url": "https://en.wikipedia.org/wiki/Ford_Modular_engine",
+       "says": "2.3 L Eaton TVS supercharger with maximum boost of 14 psi; port fuel injection"
+      },
+      {
+       "name": "Hagerty Learning Garage: 2013 Ford Shelby GT 500",
+       "url": "https://www.hagerty.com/learning-garage/vehicles/2013-ford-shelby-gt-500",
+       "says": "Boost is provided by a huge Eaton Supercharger ... intercooled"
+      },
+      {
+       "name": "auto motor und sport",
+       "url": "https://www.auto-motor-und-sport.de/test/ford-mustang-shelby-gt-500/technische-daten/",
+       "says": "Kompressor (0,6 bar)"
+      }
+     ],
+     "note": "Supercharger is confirmed by all four. The 2.3 L size and port injection are Wikipedia only. Boost differs: Wikipedia 14 psi max vs AMS 0.6 bar."
+    },
+    "compression_ratio": {
+     "value": "9.0:1",
+     "sources": [
+      {
+       "name": "Ford Performance: 2013 Shelby GT500",
+       "url": "https://performance.ford.com/enthusiasts/collector-vehicles/shelby/shelby-gt500/2013.html",
+       "says": "Compression: 9.0:1"
+      },
+      {
+       "name": "Wikipedia: Ford Modular engine",
+       "url": "https://en.wikipedia.org/wiki/Ford_Modular_engine",
+       "says": "9.0:1"
+      },
+      {
+       "name": "auto motor und sport",
+       "url": "https://www.auto-motor-und-sport.de/test/ford-mustang-shelby-gt-500/technische-daten/",
+       "says": "Verdichtung 9,0:1"
+      }
+     ],
+     "note": ""
+    },
+    "years": {
+     "value": "2013-2014 (Shelby GT500 only)",
+     "sources": [
+      {
+       "name": "Wikipedia: Ford Modular engine",
+       "url": "https://en.wikipedia.org/wiki/Ford_Modular_engine",
+       "says": "2013-2014 Ford Shelby GT500"
+      },
+      {
+       "name": "auto motor und sport",
+       "url": "https://www.auto-motor-und-sport.de/test/ford-mustang-shelby-gt-500/technische-daten/",
+       "says": "01/2013 bis 12/2014"
+      },
+      {
+       "name": "Kelley Blue Book 2013 and 2014 Mustang specs",
+       "url": "https://www.kbb.com/ford/mustang/2014/",
+       "says": "Shelby GT500: V8 Supercharged 5.8L (2013, 2014)"
+      },
+      {
+       "name": "Ford news release 2012-04-26 (archived)",
+       "url": "https://web.archive.org/web/2013/https://media.ford.com/content/fordmedia/fna/us/en/news/2012/04/27/at-662-hp--2013-ford-shelby-gt500-certified-as-worlds-most-power.html",
+       "says": "2013 Ford Shelby GT500 5.8-liter supercharged V8"
+      }
+     ],
+     "note": ""
+    }
+   },
+   "variants": [
+    {
+     "year": 2013,
+     "hp": 662,
+     "hp_basis": "SAE net (SAE J1349 certified)",
+     "compression_ratio": 9.0,
+     "code": "5.8L Trinity (Shelby GT500)",
+     "induction": "supercharged, Eaton TVS",
+     "sources": [
+      {
+       "name": "Ford news release 2012-04-26 'At 662 HP, 2013 Ford Shelby GT500 Certified' (archived)",
+       "url": "https://web.archive.org/web/2013/https://media.ford.com/content/fordmedia/fna/us/en/news/2012/04/27/at-662-hp--2013-ford-shelby-gt500-certified-as-worlds-most-power.html",
+       "says": "SAE certified at 662 horsepower and 631 lb.-ft."
+      },
+      {
+       "name": "Wikipedia: Ford Modular engine / Mustang (fifth generation)",
+       "url": "https://en.wikipedia.org/wiki/Ford_Modular_engine",
+       "says": "662 bhp at 6500 rpm"
+      },
+      {
+       "name": "Kelley Blue Book 2013 Ford Mustang specs",
+       "url": "https://www.kbb.com/ford/mustang/2013/",
+       "says": "Shelby GT500: 662 @ 6250 RPM, V8 Supercharged 5.8L"
+      },
+      {
+       "name": "auto motor und sport",
+       "url": "https://www.auto-motor-und-sport.de/test/ford-mustang-shelby-gt-500/technische-daten/",
+       "says": "494 kW / 671 PS bei 6500 U/min (=662 hp), 2013-2014"
+      },
+      {
+       "name": "Hagerty Learning Garage: 2013 Ford Shelby GT 500",
+       "url": "https://www.hagerty.com/learning-garage/vehicles/2013-ford-shelby-gt-500",
+       "says": "662 horsepower"
+      }
+     ],
+     "note": "Peak rpm: 6500 (Ford, Wikipedia, AMS) vs 6250 (KBB). MustangSpecs lists 650 hp for 2013 (pre-certification figure)."
+    },
+    {
+     "year": 2014,
+     "hp": 662,
+     "hp_basis": "SAE net (SAE J1349 certified)",
+     "compression_ratio": 9.0,
+     "code": "5.8L Trinity (Shelby GT500)",
+     "induction": "supercharged, Eaton TVS",
+     "sources": [
+      {
+       "name": "Ford news release 2012-04-26 'At 662 HP, 2013 Ford Shelby GT500 Certified' (archived)",
+       "url": "https://web.archive.org/web/2013/https://media.ford.com/content/fordmedia/fna/us/en/news/2012/04/27/at-662-hp--2013-ford-shelby-gt500-certified-as-worlds-most-power.html",
+       "says": "SAE certified at 662 horsepower and 631 lb.-ft."
+      },
+      {
+       "name": "Wikipedia: Ford Modular engine / Mustang (fifth generation)",
+       "url": "https://en.wikipedia.org/wiki/Ford_Modular_engine",
+       "says": "662 bhp at 6500 rpm"
+      },
+      {
+       "name": "Kelley Blue Book 2014 Ford Mustang specs",
+       "url": "https://www.kbb.com/ford/mustang/2014/",
+       "says": "Shelby GT500: 662 @ 6250 RPM, V8 Supercharged 5.8L"
+      },
+      {
+       "name": "auto motor und sport",
+       "url": "https://www.auto-motor-und-sport.de/test/ford-mustang-shelby-gt-500/technische-daten/",
+       "says": "494 kW / 671 PS bei 6500 U/min (=662 hp), 2013-2014"
+      }
+     ],
+     "note": "Peak rpm: 6500 (Ford, Wikipedia, AMS) vs 6250 (KBB). MustangSpecs lists 650 hp for 2013 (pre-certification figure)."
+    }
+   ],
+   "unverified": {
+    "bore_in": "3.681 (93.5 mm): Ford spec page '3.68 in.' and Wikipedia '93.5 mm (3.68 in)'. MustangSpecs repeats Wikipedia word for word, so it counts once. Only 2 independent sources.",
+    "stroke_in": "4.165 (105.8 mm): Ford spec page '4.17 in.' and Wikipedia '105.8 mm (4.17 in)'. Only 2. EngineLabs (2015) wrongly says the 5.4 became 5.8 'by adding stroke'. The stroke is unchanged from the 5.4 and the bore grew from 90.2 to 93.5 mm.",
+    "displacement_ci": "DISPUTED. 5,812 cc = 354.7 ci (Wikipedia; also AMS's 5812 cm3 converted), which supports 355. But Ford's own spec page and MustangSpecs say '351 CID'. Suggest 355 (354.7) with a note.",
+    "firing_order": "1-3-7-2-6-5-4-8 (Modular order) from Wikipedia only.",
+    "fuel_type": "Gasoline (premium likely). Not explicitly quoted from 3 sources; EPA fuel field not checked.",
+    "rod_length_in": "Not found."
+   },
+   "unverified_variants": []
+  }
+ ]
+}

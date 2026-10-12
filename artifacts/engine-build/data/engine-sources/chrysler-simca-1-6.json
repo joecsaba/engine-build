@@ -1,0 +1,263 @@
+{
+ "name": "Simca/Peugeot-built 1.6L (97 ci) inline-four (Omni/Horizon/Charger)",
+ "fields": {
+  "bore_in": {
+   "value": 3.17,
+   "sources": [
+    {
+     "name": "Chrysler factory brochure: 1986 Dodge Charger (p.14 Charger Engines and Transaxles)",
+     "url": "https://www.oldcarbrochures.org/United%20States/Dodge/1986-Dodge/1986-Dodge-Charger-Brochure/slides/1986_Dodge_Charger-13-14.html",
+     "says": "1.6-liter (97.1 CID): bore & stroke 3.17 x 3.07 in"
+    },
+    {
+     "name": "NHRA engine blueprint CHRY-84",
+     "url": "https://www.nhra.net/tech_specs/engine/blueprints/CHRY-84.rtf",
+     "says": "bore 3.170, stroke 3.070, 97 ci, 4 cyl (also CHRY-85, CHRY-86)"
+    },
+    {
+     "name": "Wikipedia: Simca Poissy engine",
+     "url": "https://en.wikipedia.org/wiki/Simca_Poissy_engine",
+     "says": "1592 cc: bore 80.6 mm, stroke 78 mm"
+    }
+   ],
+   "note": "Metric 80.6 mm = 3.1732 in."
+  },
+  "stroke_in": {
+   "value": 3.07,
+   "sources": [
+    {
+     "name": "Chrysler factory brochure: 1986 Dodge Charger (p.14 Charger Engines and Transaxles)",
+     "url": "https://www.oldcarbrochures.org/United%20States/Dodge/1986-Dodge/1986-Dodge-Charger-Brochure/slides/1986_Dodge_Charger-13-14.html",
+     "says": "3.17 x 3.07 in"
+    },
+    {
+     "name": "NHRA engine blueprint CHRY-84",
+     "url": "https://www.nhra.net/tech_specs/engine/blueprints/CHRY-84.rtf",
+     "says": "stroke 3.070"
+    },
+    {
+     "name": "Wikipedia: Simca Poissy engine",
+     "url": "https://en.wikipedia.org/wiki/Simca_Poissy_engine",
+     "says": "stroke 78 mm"
+    }
+   ],
+   "note": "78 mm = 3.0709 in."
+  },
+  "displacement_ci": {
+   "value": 97.1,
+   "sources": [
+    {
+     "name": "Chrysler factory brochure: 1986 Dodge Charger (p.14 Charger Engines and Transaxles)",
+     "url": "https://www.oldcarbrochures.org/United%20States/Dodge/1986-Dodge/1986-Dodge-Charger-Brochure/slides/1986_Dodge_Charger-13-14.html",
+     "says": "1.6-liter (97.1 CID)"
+    },
+    {
+     "name": "Chrysler factory brochure: 1984 Dodge Charger (p.16 Engines and Transaxles)",
+     "url": "https://www.oldcarbrochures.org/United%20States/Dodge/1984_Dodge/1984-Dodge-Charger-Brochure/slides/1984_Dodge_Charger-16-17.html",
+     "says": "1.6-liter (97.1 CID)"
+    },
+    {
+     "name": "NHRA engine blueprint CHRY-84",
+     "url": "https://www.nhra.net/tech_specs/engine/blueprints/CHRY-84.rtf",
+     "says": "97 ci"
+    },
+    {
+     "name": "Wikipedia: Simca Poissy engine",
+     "url": "https://en.wikipedia.org/wiki/Simca_Poissy_engine",
+     "says": "1.6 L; 97.1 cu in (1,592 cc)"
+    },
+    {
+     "name": "California ARB Executive Order A-9-116 (1984 Chrysler, engine family ECR1.6V2HDJ2)",
+     "url": "https://arb.ca.gov/msprog/onroad/cert/pcldtmdv/1984/chrysler_pc_a0090116_1d6_ta0.pdf",
+     "says": "98 (1.6) cubic inches (liters)"
+    }
+   ],
+   "note": "CARB rounds to 98 ci; 1592 cc = 97.15 ci. CH84 and CH86 are the same (Chrysler) source."
+  },
+  "displacement_l": {
+   "value": 1.6,
+   "sources": [
+    {
+     "name": "Chrysler factory brochure: 1986 Dodge Charger (p.14 Charger Engines and Transaxles)",
+     "url": "https://www.oldcarbrochures.org/United%20States/Dodge/1986-Dodge/1986-Dodge-Charger-Brochure/slides/1986_Dodge_Charger-13-14.html",
+     "says": "1.6-liter"
+    },
+    {
+     "name": "EPA fueleconomy.gov: 1984-1986 Dodge Charger (vehicle 26655 et al.)",
+     "url": "https://www.fueleconomy.gov/ws/rest/vehicle/26655",
+     "says": "displ 1.6, 4 cylinders"
+    },
+    {
+     "name": "Wikipedia: Simca Poissy engine",
+     "url": "https://en.wikipedia.org/wiki/Simca_Poissy_engine",
+     "says": "1,592 cc"
+    },
+    {
+     "name": "California ARB Executive Order A-9-116 (1984 Chrysler, engine family ECR1.6V2HDJ2)",
+     "url": "https://arb.ca.gov/msprog/onroad/cert/pcldtmdv/1984/chrysler_pc_a0090116_1d6_ta0.pdf",
+     "says": "1.6 L"
+    }
+   ],
+   "note": ""
+  },
+  "num_cylinders": {
+   "value": 4,
+   "sources": [
+    {
+     "name": "Chrysler factory brochure: 1986 Dodge Charger (p.14 Charger Engines and Transaxles)",
+     "url": "https://www.oldcarbrochures.org/United%20States/Dodge/1986-Dodge/1986-Dodge-Charger-Brochure/slides/1986_Dodge_Charger-13-14.html",
+     "says": "4-cylinder"
+    },
+    {
+     "name": "EPA fueleconomy.gov: 1984-1986 Dodge Charger (vehicle 26655 et al.)",
+     "url": "https://www.fueleconomy.gov/ws/rest/vehicle/26655",
+     "says": "cylinders 4"
+    },
+    {
+     "name": "NHRA engine blueprint CHRY-84",
+     "url": "https://www.nhra.net/tech_specs/engine/blueprints/CHRY-84.rtf",
+     "says": "4 cylinders"
+    },
+    {
+     "name": "Wikipedia: Simca Poissy engine",
+     "url": "https://en.wikipedia.org/wiki/Simca_Poissy_engine",
+     "says": "Inline-4"
+    }
+   ],
+   "note": ""
+  },
+  "configuration": {
+   "value": "Inline-four",
+   "sources": [
+    {
+     "name": "Wikipedia: Simca Poissy engine",
+     "url": "https://en.wikipedia.org/wiki/Simca_Poissy_engine",
+     "says": "Inline-4"
+    },
+    {
+     "name": "Curbside Classic: CC Outtake 1983 Dodge Omni",
+     "url": "https://www.curbsideclassic.com/blog/cc-outtake/cc-outtake-1983-dodge-omni-shares-the-cc-stage-with-a-couple-of-other-ccs/",
+     "says": "Simca pushrod four"
+    },
+    {
+     "name": "Chrysler factory brochure: 1986 Dodge Charger (p.14 Charger Engines and Transaxles)",
+     "url": "https://www.oldcarbrochures.org/United%20States/Dodge/1986-Dodge/1986-Dodge-Charger-Brochure/slides/1986_Dodge_Charger-13-14.html",
+     "says": "4-cylinder"
+    }
+   ],
+   "note": ""
+  },
+  "valvetrain": {
+   "value": "OHV pushrod, 2 valves/cyl",
+   "sources": [
+    {
+     "name": "Wikipedia: Simca Poissy engine",
+     "url": "https://en.wikipedia.org/wiki/Simca_Poissy_engine",
+     "says": "OHV (2 valves per cylinder)"
+    },
+    {
+     "name": "Curbside Classic: CC Outtake 1983 Dodge Omni",
+     "url": "https://www.curbsideclassic.com/blog/cc-outtake/cc-outtake-1983-dodge-omni-shares-the-cc-stage-with-a-couple-of-other-ccs/",
+     "says": "the Simca pushrod four"
+    },
+    {
+     "name": "NHRA engine blueprint CHRY-84",
+     "url": "https://www.nhra.net/tech_specs/engine/blueprints/CHRY-84.rtf",
+     "says": "Lifter: M (mechanical); one intake/one exhaust valve listed"
+    }
+   ],
+   "note": "DISAGREEMENT: the 1986 Charger brochure table labels the 1.6 '4-cylinder OHC' (appears to be a blanket label for all its fours). Some spec sites also say SOHC. Treat brochure label as an error."
+  },
+  "induction": {
+   "value": "Carburetor, single 2-barrel (Holley)",
+   "sources": [
+    {
+     "name": "NHRA engine blueprint CHRY-84",
+     "url": "https://www.nhra.net/tech_specs/engine/blueprints/CHRY-84.rtf",
+     "says": "Ind. 1-2, Holley 40058/40060"
+    },
+    {
+     "name": "Wikipedia: Simca Poissy engine",
+     "url": "https://en.wikipedia.org/wiki/Simca_Poissy_engine",
+     "says": "Single or double-barrel carburetors"
+    },
+    {
+     "name": "California ARB Executive Order A-9-116 (1984 Chrysler, engine family ECR1.6V2HDJ2)",
+     "url": "https://arb.ca.gov/msprog/onroad/cert/pcldtmdv/1984/chrysler_pc_a0090116_1d6_ta0.pdf",
+     "says": "engine family ECR1.6V2HDJ2 (2V = 2-venturi carburetor in the family code)"
+    }
+   ],
+   "note": "Dodge Omni Wikipedia: 'carbureted'."
+  },
+  "fuel_type": {
+   "value": "Gasoline (regular)",
+   "sources": [
+    {
+     "name": "EPA fueleconomy.gov: 1984-1986 Dodge Charger (vehicle 26655 et al.)",
+     "url": "https://www.fueleconomy.gov/ws/rest/vehicle/26655",
+     "says": "fuelType1: Regular Gasoline"
+    },
+    {
+     "name": "California ARB Executive Order A-9-116 (1984 Chrysler, engine family ECR1.6V2HDJ2)",
+     "url": "https://arb.ca.gov/msprog/onroad/cert/pcldtmdv/1984/chrysler_pc_a0090116_1d6_ta0.pdf",
+     "says": "gasoline-powered passenger cars"
+    },
+    {
+     "name": "Wikipedia: Simca Poissy engine",
+     "url": "https://en.wikipedia.org/wiki/Simca_Poissy_engine",
+     "says": "fueltype Gasoline"
+    }
+   ],
+   "note": ""
+  },
+  "years": {
+   "value": "1983-1986 in US Chrysler cars (Omni/Horizon from mid-1983; Dodge Charger 1984-1986)",
+   "sources": [
+    {
+     "name": "Wikipedia: Dodge Omni",
+     "url": "https://en.wikipedia.org/wiki/Dodge_Omni",
+     "says": "1.6 L Peugeot/Simca 6J I4, 62 hp, 1983-1986"
+    },
+    {
+     "name": "Curbside Classic: CC Outtake 1983 Dodge Omni",
+     "url": "https://www.curbsideclassic.com/blog/cc-outtake/cc-outtake-1983-dodge-omni-shares-the-cc-stage-with-a-couple-of-other-ccs/",
+     "says": "in the latter part of the 1983 model year Chrysler ... started importing the Simca 1600 cc four"
+    },
+    {
+     "name": "EPA fueleconomy.gov: 1984-1986 Dodge Charger (vehicle 26655 et al.)",
+     "url": "https://www.fueleconomy.gov/ws/rest/vehicle/26655",
+     "says": "1.6 L Charger listed 1984, 1985, 1986"
+    },
+    {
+     "name": "NHRA engine blueprint CHRY-83",
+     "url": "https://www.nhra.net/tech_specs/engine/blueprints/CHRY-83.rtf",
+     "says": "97 ci listed in CHRY-83 through CHRY-86"
+    }
+   ],
+   "note": ""
+  }
+ },
+ "variants": [],
+ "unverified": {
+  "compression_ratio": "8.8:1: Chrysler 1986 Charger brochure only. NHRA lists 12.55 (1984-85, apparently an error) and 9.9 (1986) as NHRA-spec ratios.",
+  "block_material": "Not stated by any source found (Wikipedia notes cast-iron crankshaft, not block).",
+  "head_material": "Aluminum alloy cross-flow head: Wikipedia (Poissy engine 'alloy cross-flow head') only.",
+  "rod_length_in": "Not found.",
+  "firing_order": "Not found (1-3-4-2 would be typical for an inline-four, but no source)."
+ },
+ "unverified_variants": [
+  {
+   "year": "1984-1986",
+   "hp": 64,
+   "hp_basis": "net",
+   "compression_ratio": 8.8,
+   "found": "Chrysler 1986 Charger brochure (64 hp @ 4,800, SAE net); NHRA CHRY-84/85/86 (64 hp). Only 2 sources."
+  },
+  {
+   "year": 1983,
+   "hp": 62,
+   "hp_basis": "net",
+   "found": "NHRA CHRY-83 (62 hp, 'holding for clarification'); Wikipedia Dodge Omni (62 hp). Curbside Classic says 63. Applies to Omni/Horizon; Charger used it from 1984 per EPA."
+  }
+ ]
+}

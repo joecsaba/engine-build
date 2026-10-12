@@ -755,11 +755,11 @@ function vehicleEntry(v) {
   const row = (e) => {
     const name = vehicleEngineLabel(e);
     const link = e.engineUrl ?? e.familyUrl;
-    return `<tr><td>${link ? `<a href="${link}">${escapeHtml(name)}</a>` : escapeHtml(name)}${e.note ? `<br><small>${escapeHtml(e.note)}</small>` : ""}</td><td>${escapeHtml(hpText(e))}</td><td>${escapeHtml(e.trims.join(", ") || "—")}</td></tr>`;
+    return `<tr><td>${link ? `<a href="${link}">${escapeHtml(name)}</a>` : escapeHtml(name)}${e.desc ? `<br><small>${escapeHtml(e.desc)}</small>` : ""}${e.note ? `<br><small>${escapeHtml(e.note)}</small>` : ""}</td><td>${escapeHtml(hpText(e))}</td><td>${escapeHtml(e.trims.join(", ") || "—")}</td></tr>`;
   };
   const gens = v.generations.map((g) => {
     const ys = years.filter((y) => y >= g.years[0] && y <= g.years[1]);
-    return `<h2>${escapeHtml(g.name)} (${g.years[0]}–${g.years[1]})</h2>
+    return `<h2>${escapeHtml(g.name)}${g.name.includes(String(g.years[0])) ? "" : ` (${g.years[0]}–${g.years[1]})`}</h2>
       ${(g.intro ?? []).map((p) => `<p>${escapeHtml(p)}</p>`).join("")}
       ${ys.map((y) => {
         const road = v.engines.filter((e) => e.year === y && !e.race);

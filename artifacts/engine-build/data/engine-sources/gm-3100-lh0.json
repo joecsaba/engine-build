@@ -1,0 +1,324 @@
+{
+ "name": "GM 3.1L 60-degree V6 (LH0)",
+ "fields": {
+  "bore_in": {
+   "value": 3.5,
+   "sources": [
+    {
+     "name": "GM Heritage Center 1992 Camaro information kit (MVMA specs)",
+     "url": "https://www.gm.com/content/dam/company/no_search/heritage-archive-docs/vehicle-information-kits/chevrolet/1992-Chevrolet-Camaro.pdf",
+     "says": "RPO LH0 60 deg. V ... Bore 89.025mm (3.50 in.) Stroke 84mm (3.31 in.)"
+    },
+    {
+     "name": "NHRA engine blueprints 1990-1992 Chevrolet/Pontiac",
+     "url": "https://www.nhra.net/tech_specs/engine/blueprints/CHEV-90.rtf",
+     "says": "3.500 bore, 3.310 stroke, 191 ci, 6 cyl (rod length blank)"
+    },
+    {
+     "name": "Wikipedia: General Motors 60-degree V6 engine",
+     "url": "https://en.wikipedia.org/wiki/General_Motors_60%C2%B0_V6_engine",
+     "says": "3.1 L: bore 89 mm (3.5 in), stroke 84 mm (3.31 in)"
+    },
+    {
+     "name": "Brake & Front End: A 360-degree look into the GM 60-degree 3.1L (Larry Carley)",
+     "url": "https://www.brakeandfrontend.com/look-into-gm-engine/",
+     "says": "The 3.1L V6 utilizes a 3.50\" bore with a 3.312\" stroke crankshaft"
+    }
+   ],
+   "note": "GM metric: 89.025 mm = 3.5049 in, so the GM, NHRA and Wikipedia figures agree."
+  },
+  "stroke_in": {
+   "value": 3.31,
+   "sources": [
+    {
+     "name": "GM Heritage Center 1992 Camaro information kit",
+     "url": "https://www.gm.com/content/dam/company/no_search/heritage-archive-docs/vehicle-information-kits/chevrolet/1992-Chevrolet-Camaro.pdf",
+     "says": "Stroke 84mm (3.31 in.)"
+    },
+    {
+     "name": "NHRA engine blueprints 1990-1992",
+     "url": "https://www.nhra.net/tech_specs/engine/blueprints/CHEV-90.rtf",
+     "says": "stroke 3.310"
+    },
+    {
+     "name": "Wikipedia: General Motors 60-degree V6 engine",
+     "url": "https://en.wikipedia.org/wiki/General_Motors_60%C2%B0_V6_engine",
+     "says": "84 mm (3.31 in)"
+    },
+    {
+     "name": "Brake & Front End (Larry Carley)",
+     "url": "https://www.brakeandfrontend.com/look-into-gm-engine/",
+     "says": "3.312\" stroke crankshaft"
+    }
+   ],
+   "note": "84 mm = 3.3071 in; NHRA 3.310; B&FE 3.312. The 1990 GM kit says the 3.1 kept the 2.8's bore and lengthened the stroke. B&FE says the opposite (bore change) but prints the same numbers."
+  },
+  "displacement_ci": {
+   "value": 191,
+   "sources": [
+    {
+     "name": "GM Heritage Center 1992 Camaro information kit",
+     "url": "https://www.gm.com/content/dam/company/no_search/heritage-archive-docs/vehicle-information-kits/chevrolet/1992-Chevrolet-Camaro.pdf",
+     "says": "LH0 3.1 (191)"
+    },
+    {
+     "name": "NHRA engine blueprints 1990-1992",
+     "url": "https://www.nhra.net/tech_specs/engine/blueprints/CHEV-90.rtf",
+     "says": "191"
+    },
+    {
+     "name": "Wikipedia: General Motors 60-degree V6 engine",
+     "url": "https://en.wikipedia.org/wiki/General_Motors_60%C2%B0_V6_engine",
+     "says": "3,135 cc (3.1 L; 191.3 cu in)"
+    }
+   ],
+   "note": ""
+  },
+  "displacement_l": {
+   "value": 3.1,
+   "sources": [
+    {
+     "name": "GM Heritage Center 1992 Camaro information kit",
+     "url": "https://www.gm.com/content/dam/company/no_search/heritage-archive-docs/vehicle-information-kits/chevrolet/1992-Chevrolet-Camaro.pdf",
+     "says": "LH0 3.1"
+    },
+    {
+     "name": "Wikipedia: General Motors 60-degree V6 engine",
+     "url": "https://en.wikipedia.org/wiki/General_Motors_60%C2%B0_V6_engine",
+     "says": "3,135 cc (3.1 L)"
+    },
+    {
+     "name": "EPA fueleconomy.gov data",
+     "url": "https://www.fueleconomy.gov/feg/download.shtml",
+     "says": "1990-1992 Camaro/Firebird: 3.1 L 6-cyl"
+    }
+   ],
+   "note": "3,135 cc"
+  },
+  "num_cylinders": {
+   "value": 6,
+   "sources": [
+    {
+     "name": "GM Heritage Center 1992 Camaro information kit",
+     "url": "https://www.gm.com/content/dam/company/no_search/heritage-archive-docs/vehicle-information-kits/chevrolet/1992-Chevrolet-Camaro.pdf",
+     "says": "No. of cylinders 6"
+    },
+    {
+     "name": "Wikipedia: General Motors 60-degree V6 engine",
+     "url": "https://en.wikipedia.org/wiki/General_Motors_60%C2%B0_V6_engine",
+     "says": "V6"
+    },
+    {
+     "name": "EPA fueleconomy.gov data",
+     "url": "https://www.fueleconomy.gov/feg/download.shtml",
+     "says": "3.1 L 6-cyl"
+    }
+   ],
+   "note": ""
+  },
+  "configuration": {
+   "value": "60-degree V6",
+   "sources": [
+    {
+     "name": "GM Heritage Center 1992 Camaro information kit",
+     "url": "https://www.gm.com/content/dam/company/no_search/heritage-archive-docs/vehicle-information-kits/chevrolet/1992-Chevrolet-Camaro.pdf",
+     "says": "60 deg. V, Front, Longitudinal, OHV"
+    },
+    {
+     "name": "Wikipedia: General Motors 60-degree V6 engine",
+     "url": "https://en.wikipedia.org/wiki/General_Motors_60%C2%B0_V6_engine",
+     "says": "60-degree V6"
+    },
+    {
+     "name": "Brake & Front End (Larry Carley)",
+     "url": "https://www.brakeandfrontend.com/look-into-gm-engine/",
+     "says": "The narrow 60 deg angle of the V6 cylinder bank"
+    }
+   ],
+   "note": ""
+  },
+  "valvetrain": {
+   "value": "OHV (pushrod), 2 valves/cyl, hydraulic lifters",
+   "sources": [
+    {
+     "name": "GM Heritage Center 1992 Camaro information kit",
+     "url": "https://www.gm.com/content/dam/company/no_search/heritage-archive-docs/vehicle-information-kits/chevrolet/1992-Chevrolet-Camaro.pdf",
+     "says": "OHV"
+    },
+    {
+     "name": "Wikipedia: General Motors 60-degree V6 engine",
+     "url": "https://en.wikipedia.org/wiki/General_Motors_60%C2%B0_V6_engine",
+     "says": "overhead valve, two valves per cylinder"
+    },
+    {
+     "name": "Brake & Front End (Larry Carley)",
+     "url": "https://www.brakeandfrontend.com/look-into-gm-engine/",
+     "says": "conventional pushrod designs with two valves per cylinder"
+    },
+    {
+     "name": "NHRA engine blueprints 1990-1992",
+     "url": "https://www.nhra.net/tech_specs/engine/blueprints/CHEV-90.rtf",
+     "says": "rocker ratio 1.5, lifter H (hydraulic)"
+    }
+   ],
+   "note": ""
+  },
+  "induction": {
+   "value": "multi-port fuel injection (MPFI), naturally aspirated",
+   "sources": [
+    {
+     "name": "GM Heritage Center 1990 and 1992 Camaro information kits",
+     "url": "https://www.gm.com/content/dam/company/no_search/heritage-archive-docs/vehicle-information-kits/chevrolet/1992-Chevrolet-Camaro.pdf",
+     "says": "LH0 3.1 (191) Multi-Port Fuel Injection"
+    },
+    {
+     "name": "NHRA engine blueprints 1990-1992",
+     "url": "https://www.nhra.net/tech_specs/engine/blueprints/CHEV-90.rtf",
+     "says": "Ind. PFI, Rochester"
+    },
+    {
+     "name": "Wikipedia: General Motors 60-degree V6 engine",
+     "url": "https://en.wikipedia.org/wiki/General_Motors_60%C2%B0_V6_engine",
+     "says": "multi-port fuel injection"
+    },
+    {
+     "name": "GM-EFI magazine: Guide to the 3rd-gen Firebird",
+     "url": "https://gm-efi.com/gm-efis-guide-to-the-3rd-gen-pontiac-firebird/",
+     "says": "new, smoother MFI 3.1L V6 making 140hp"
+    }
+   ],
+   "note": ""
+  },
+  "years": {
+   "value": "1990-1992 in Camaro/Firebird (RWD); LH0 itself 1988-1994 in FWD GM cars",
+   "sources": [
+    {
+     "name": "GM Heritage Center 1990 Camaro information kit",
+     "url": "https://www.gm.com/content/dam/company/no_search/heritage-archive-docs/vehicle-information-kits/chevrolet/1990-Chevrolet-Camaro.pdf",
+     "says": "3.1L V6 MFI replaces the 2.8L as standard on Camaro RS Coupe (1990)"
+    },
+    {
+     "name": "GM Heritage Center 1992 Camaro information kit",
+     "url": "https://www.gm.com/content/dam/company/no_search/heritage-archive-docs/vehicle-information-kits/chevrolet/1992-Chevrolet-Camaro.pdf",
+     "says": "LH0 3.1 listed in 1992 power teams"
+    },
+    {
+     "name": "NHRA blueprints CHEV/PONT-90..92",
+     "url": "https://www.nhra.net/tech_specs/engine/blueprints/CHEV-92.rtf",
+     "says": "191 V6 listed 1990, 1991, 1992"
+    },
+    {
+     "name": "Wikipedia: General Motors 60-degree V6 engine",
+     "url": "https://en.wikipedia.org/wiki/General_Motors_60%C2%B0_V6_engine",
+     "says": "LH0 introduced 1988, produced through 1994; 1990-1992 Camaros and Firebirds"
+    },
+    {
+     "name": "Brake & Front End (Larry Carley)",
+     "url": "https://www.brakeandfrontend.com/look-into-gm-engine/",
+     "says": "Applications: 1990-1992 Chevrolet Camaro"
+    }
+   ],
+   "note": "Our dataset's 1993-1997 records for this engine don't match: 1993+ Camaro/Firebird used the 3.4L L32. The 1994+ '3100' (L82) is a different RPO used in FWD cars."
+  }
+ },
+ "variants": [
+  {
+   "year": 1990,
+   "hp": 140,
+   "hp_basis": "SAE net",
+   "compression_ratio": null,
+   "code": "LH0 (VIN T)",
+   "induction": "MPFI",
+   "sources": [
+    {
+     "name": "GM Heritage Center 1990 Camaro information kit",
+     "url": "https://www.gm.com/content/dam/company/no_search/heritage-archive-docs/vehicle-information-kits/chevrolet/1990-Chevrolet-Camaro.pdf",
+     "says": "PDF p.14, 25: 3.1L V6 MFI, 140 @ 4400"
+    },
+    {
+     "name": "NHRA CHEV-90 / PONT-90",
+     "url": "https://www.nhra.net/tech_specs/engine/blueprints/CHEV-90.rtf",
+     "says": "140 191 9.00 PFI"
+    },
+    {
+     "name": "Wikipedia: Chevrolet Camaro (third generation)",
+     "url": "https://en.wikipedia.org/wiki/Chevrolet_Camaro_(third_generation)",
+     "says": "LH0 1990-1991 140 hp @ 4,400"
+    }
+   ],
+   "note": "Same rating in Camaro RS and base Firebird. Compression disputed (see unverified)."
+  },
+  {
+   "year": 1991,
+   "hp": 140,
+   "hp_basis": "SAE net",
+   "compression_ratio": null,
+   "code": "LH0 (VIN T)",
+   "induction": "MPFI",
+   "sources": [
+    {
+     "name": "GM Heritage Center 1991 Camaro information kit",
+     "url": "https://www.gm.com/content/dam/company/no_search/heritage-archive-docs/vehicle-information-kits/chevrolet/1991-Chevrolet-Camaro.pdf",
+     "says": "PDF p.5-7: base V6 for RS Coupe was 191ci, 140hp"
+    },
+    {
+     "name": "NHRA CHEV-91 / PONT-91",
+     "url": "https://www.nhra.net/tech_specs/engine/blueprints/CHEV-91.rtf",
+     "says": "140 191 9.00 PFI"
+    },
+    {
+     "name": "GM-EFI magazine: Guide to the 3rd-gen Firebird",
+     "url": "https://gm-efi.com/gm-efis-guide-to-the-3rd-gen-pontiac-firebird/",
+     "says": "3.1L V6 MFI: 140 hp (base)"
+    }
+   ],
+   "note": "Same rating in Camaro RS and base Firebird. Compression disputed (see unverified)."
+  },
+  {
+   "year": 1992,
+   "hp": 140,
+   "hp_basis": "SAE net",
+   "compression_ratio": null,
+   "code": "LH0 (VIN T)",
+   "induction": "MPFI",
+   "sources": [
+    {
+     "name": "GM Heritage Center 1992 Camaro information kit",
+     "url": "https://www.gm.com/content/dam/company/no_search/heritage-archive-docs/vehicle-information-kits/chevrolet/1992-Chevrolet-Camaro.pdf",
+     "says": "MVMA power teams: LH0 3.1 (191) MPFI 8.5:1 104 kW (140) @ 4400"
+    },
+    {
+     "name": "NHRA CHEV-92",
+     "url": "https://www.nhra.net/tech_specs/engine/blueprints/CHEV-92.rtf",
+     "says": "140 191 9.00 PFI"
+    },
+    {
+     "name": "Wikipedia: Chevrolet Camaro (third generation)",
+     "url": "https://en.wikipedia.org/wiki/Chevrolet_Camaro_(third_generation)",
+     "says": "LH0 1992 140 hp"
+    }
+   ],
+   "note": "Same rating in Camaro RS and base Firebird. Compression disputed (see unverified)."
+  }
+ ],
+ "unverified": {
+  "compression_ratio": "Disputed: GM 1990 and 1992 Camaro kits say 8.5:1; NHRA CHEV-90/91/92 and PONT-90/91 say 9.0 for the 140-hp 191. Wikipedia gives none for LH0.",
+  "block_material": "Cast iron: GM 1992 kit (MVMA 'Cylinder Block Cast Iron') and Wikipedia ('cast-iron block'). Only 2.",
+  "head_material": "Cast iron per the GM 1992 kit (MVMA 'Cast Iron, 13.15 kg (29 lb)' in the head entry) and a Wikipedia passage saying Camaro versions kept iron heads. Wikipedia elsewhere implies aluminum heads for the 3.1. Not settled at 3 sources.",
+  "firing_order": "1-2-3-4-5-6 from the GM 1992 kit only. Brake & Front End gives coil pairs 1-4, 6-3, 2-5 (consistent, but not a firing order).",
+  "rod_length_in": "Not found. The NHRA blueprints leave it blank for the 191.",
+  "fuel_type": "Unleaded 87 gasoline per the GM 1992 kit (MVMA) only."
+ },
+ "unverified_variants": [
+  {
+   "year": 1990,
+   "hp": 135,
+   "found": "NHRA CHEV-90 / PONT-90 list a 135-hp 191 (9.0:1, PFI), and Wikipedia gives 135 hp for 1988-89 LH0. That's the FWD rating, not Camaro/Firebird."
+  },
+  {
+   "year": 1990,
+   "hp": 142,
+   "found": "NHRA CHEV-90 lists a 142-hp 191 at 9.4:1 (different manifold part numbers). Probably a FWD application (e.g. Beretta/Corsica). Only NHRA."
+  }
+ ]
+}
