@@ -7,6 +7,7 @@ import { Skeleton } from "@/components/ui/skeleton";
 import { SEOHead } from "@/components/SEOHead";
 import type { EngineFamilyDoc, EngineRecord } from "@/lib/engineTypes";
 import { engineNarrative } from "@/data/engineNarrative.mjs";
+import { FactoryCars } from "@/components/vehicles/FactoryCars";
 
 /**
  * Engine spec page: /engines/<mfr>/<family>/<engine>
@@ -209,6 +210,8 @@ export default function EnginePage() {
           </CardContent>
         </Card>
       )}
+
+      <FactoryCars groups={rec.factoryCars} title="Factory cars with this engine" />
 
       {rec.vehicles.length > 0 && (
         <Card className="mt-6">

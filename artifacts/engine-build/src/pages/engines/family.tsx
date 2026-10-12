@@ -5,6 +5,7 @@ import { Skeleton } from "@/components/ui/skeleton";
 import { SEOHead } from "@/components/SEOHead";
 import { familyDescription } from "@/data/seoDescriptions.mjs";
 import type { EngineFamilyDoc } from "@/lib/engineTypes";
+import { FactoryCars } from "@/components/vehicles/FactoryCars";
 
 /**
  * Family hub: /engines/<mfr>/<family>
@@ -54,7 +55,12 @@ export default function EngineFamilyPage() {
     );
   }
 
-  const title = `${doc.manufacturerName} ${doc.familyName} Engine Specs`;
+  // Same rule as the prerender: NHRA-created families are already named
+  // "<Manufacturer> <displacement>ci", so don't prepend the manufacturer twice.
+  const famBase = doc.familyName.toLowerCase().startsWith(doc.manufacturerName.toLowerCase())
+    ? doc.familyName
+    : `${doc.manufacturerName} ${doc.familyName}`;
+  const title = `${famBase} Engine Specs`;
   const description = familyDescription(doc);
 
   return (
@@ -116,6 +122,8 @@ export default function EngineFamilyPage() {
           </div>
         </CardContent>
       </Card>
+
+      <FactoryCars groups={doc.factoryCars} title={`Factory cars with a ${doc.familyName}`} />
 
       <p className="text-xs text-muted-foreground mt-8">
         Specs are for reference and build planning. Always verify against the factory service

@@ -778,6 +778,7 @@ export function writeRuntimeData({ manufacturers, families }) {
         manufacturerName: fam.manufacturerName,
         manufacturerUrl: fam.manufacturerUrl,
         configuration: fam.configuration,
+        factoryCars: fam.factoryCars ?? [],
         engines: fam.engines,
       }),
       "utf8"

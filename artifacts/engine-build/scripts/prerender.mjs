@@ -13,6 +13,7 @@
 // =============================================================================
 
 import { readFile, writeFile, mkdir, access } from "node:fs/promises";
+import { cpSync, existsSync } from "node:fs";
 import { dirname, resolve } from "node:path";
 import { fileURLToPath, pathToFileURL } from "node:url";
 
@@ -21,6 +22,8 @@ import { clampDesc, encodedLength, familyDescription, manufacturerDescription } 
 import { engineNarrative } from "../src/data/engineNarrative.mjs";
 import FAQ from "../src/data/faq.mjs";
 import { loadEngineData, writeRuntimeData } from "./engineData.mjs";
+import { loadVehicles, linkVehicles, writeVehicleRuntime, yearSpan } from "./vehicleData.mjs";
+import { factoryCarLabel, vehicleEngineLabel, hpText } from "../src/data/vehicleText.mjs";
 import { writeBuilderEngines } from "./builderEngines.mjs";
 import { loadCams, writeCamRuntime } from "./camData.mjs";
 import { buildCamCatalog } from "./camCatalog.mjs";
@@ -575,6 +578,7 @@ function engineEntry(e) {
       <p>Each link opens the calculator with this engine's specs already filled in.</p>
       <ul>${e.calcLinks.map((c) => `<li><a href="${c.href}">${escapeHtml(c.label)}</a></li>`).join("")}</ul>` : ""}
       ${variantsHtml}
+      ${factoryCarsHtml(e.factoryCars, "Factory cars with this engine")}
       ${vehiclesHtml}
       ${e.relatedEngines?.length ? `<h2>Similar engines</h2>
       <ul>${e.relatedEngines.map((r) => `<li><a href="${r.url}">${escapeHtml(r.manufacturerName + " " + r.displayName)}</a>${r.displacement_ci != null ? ` — ${r.displacement_ci} ci` : ""}</li>`).join("")}</ul>` : ""}
@@ -637,6 +641,7 @@ function engineFamilyEntry(fam) {
         <tr><th>Engine</th><th>Displacement</th><th>Bore × Stroke</th><th>CR</th><th>HP</th></tr>
         ${rows}
       </table>
+      ${factoryCarsHtml(fam.factoryCars, `Factory cars with a ${fam.familyName}`)}
       ${fam.context?.notes?.length ? `<h2>What varies across the family</h2>
       ${fam.context.notes.map((n) => `<p>${escapeHtml(n)}</p>`).join("")}` : ""}
       <p>Each engine page carries rod ratio, mean piston speed, bore/stroke character and cylinder head specs where published, and links into the calculators with its dimensions already filled in.</p>
@@ -725,6 +730,128 @@ function enginesIndexEntry(manufacturers) {
   };
 }
 
+
+// ---------------------------------------------------------------------------
+// Vehicle pages: factory engines by model year (scripts/vehicleData.mjs).
+// ---------------------------------------------------------------------------
+
+function factoryCarsHtml(groups, heading) {
+  if (!groups?.length) return "";
+  return `<h2>${escapeHtml(heading)}</h2>
+      <p>Each car and year below was checked against at least three sources.</p>
+      <ul>${groups.map((g) => `<li><a href="${g.url}">${escapeHtml(g.vehicle)}</a>: ${
+        g.rows.map((r) => `<a href="${r.url}">${escapeHtml(factoryCarLabel(r))}</a>`).join("; ")}</li>`).join("")}</ul>`;
+}
+
+function vehicleEntry(v) {
+  const crumbs = [
+    { label: "Home", href: "/" },
+    { label: "Vehicles", href: "/vehicles" },
+    { label: v.make, href: v.makeUrl },
+    { label: v.model },
+  ];
+  const years = [...new Set(v.engines.map((e) => e.year))];
+  const yearLabel = (y) => v.engines.find((e) => e.year === y)?.yearLabel ?? String(y);
+  const nav = v.generations.map((g) => `<p><b>${escapeHtml(g.name)}:</b> ${
+    years.filter((y) => y >= g.years[0] && y <= g.years[1]).map((y) => `<a href="#${y}">${escapeHtml(yearLabel(y))}</a>`).join(" · ")}</p>`).join("");
+  const row = (e) => {
+    const name = vehicleEngineLabel(e);
+    const link = e.engineUrl ?? e.familyUrl;
+    return `<tr><td>${link ? `<a href="${link}">${escapeHtml(name)}</a>` : escapeHtml(name)}</td><td>${escapeHtml(hpText(e))}</td><td>${escapeHtml(e.trims.join(", ") || "—")}</td><td>${escapeHtml(e.note ?? "")}</td><td>${e.sourceCount} sources</td></tr>`;
+  };
+  const gens = v.generations.map((g) => {
+    const ys = years.filter((y) => y >= g.years[0] && y <= g.years[1]);
+    return `<h2>${escapeHtml(g.name)} (${g.years[0]}–${g.years[1]})</h2>
+      ${(g.intro ?? []).map((p) => `<p>${escapeHtml(p)}</p>`).join("")}
+      ${ys.map((y) => {
+        const road = v.engines.filter((e) => e.year === y && !e.race);
+        const race = v.engines.filter((e) => e.year === y && e.race);
+        return `<h3 id="${y}">${escapeHtml(yearLabel(y))} ${escapeHtml(v.model)} engines</h3>
+      <table><tr><th>Engine</th><th>Rated</th><th>Offered in</th><th>Notes</th><th>Verified by</th></tr>${road.map(row).join("")}</table>${
+        race.length ? `<p>Race-only (not street legal): ${race.map((e) => escapeHtml(`${vehicleEngineLabel(e)}, ${hpText(e)}`)).join("; ")}</p>` : ""}`;
+      }).join("")}`;
+  }).join("");
+  const seoBlock = `
+      <nav aria-label="Breadcrumb" style="font-size:14px;color:#666;margin:24px 0;">
+        ${breadcrumbHtml(crumbs)}
+      </nav>
+      <h1>${escapeHtml(`${v.make} ${v.model} Engines by Year`)}</h1>
+      ${v.intro.map((p) => `<p>${escapeHtml(p)}</p>`).join("")}
+      <h2>Jump to a year</h2>
+      ${nav}
+      ${gens}
+      <h2>How this page was checked</h2>
+      <p>${escapeHtml(v.method)}</p>
+      <h2>Sources</h2>
+      <ul>${v.sources.map((s) => `<li><a href="${escapeHtml(s.url)}" rel="noopener">${escapeHtml(s.name)}</a></li>`).join("")}</ul>
+      <p><a href="${v.makeUrl}">← All ${escapeHtml(v.make)} vehicles</a></p>`;
+  return {
+    path: v.url,
+    title: v.title,
+    description: v.description,
+    seoBlock,
+    jsonLd: [breadcrumbJsonLd(crumbs)],
+    priority: 0.7,
+    changefreq: "monthly",
+  };
+}
+
+function vehicleMakeEntries(vehicles) {
+  const makes = new Map();
+  for (const v of vehicles) {
+    if (!makes.has(v.makeSlug)) makes.set(v.makeSlug, { make: v.make, url: v.makeUrl, models: [] });
+    makes.get(v.makeSlug).models.push(v);
+  }
+  return [...makes.values()].map((m) => {
+    const crumbs = [{ label: "Home", href: "/" }, { label: "Vehicles", href: "/vehicles" }, { label: m.make }];
+    const names = m.models.map((v) => v.model);
+    const description = clampDesc([
+      `Factory engines by model year for the ${m.make} ${names.join(", ")}, with ratings and RPO or engine codes.`,
+      "Each engine checked against at least three sources.",
+      "With links to full engine specs.",
+    ]);
+    return {
+      path: m.url,
+      title: `${m.make} Engines by Vehicle and Year`,
+      description,
+      seoBlock: `
+      <nav aria-label="Breadcrumb" style="font-size:14px;color:#666;margin:24px 0;">
+        ${breadcrumbHtml(crumbs)}
+      </nav>
+      <h1>${escapeHtml(`${m.make} engines by vehicle`)}</h1>
+      <p>${escapeHtml(description)}</p>
+      <ul>${m.models.map((v) => `<li><a href="${v.url}">${escapeHtml(`${v.make} ${v.model}`)}</a> (${escapeHtml(yearSpan(v.engines.map((e) => e.year)))})</li>`).join("")}</ul>
+      <p><a href="/vehicles">← All vehicles</a></p>`,
+      jsonLd: [breadcrumbJsonLd(crumbs)],
+      priority: 0.6,
+      changefreq: "monthly",
+    };
+  });
+}
+
+function vehiclesIndexEntry(vehicles) {
+  const crumbs = [{ label: "Home", href: "/" }, { label: "Vehicles" }];
+  const description = clampDesc([
+    "Which engines each car came with, year by year: displacement, rated horsepower and RPO or engine codes.",
+    "Every entry checked against at least three sources.",
+    "Linked to full engine specs.",
+  ]);
+  return {
+    path: "/vehicles",
+    title: "Factory Engines by Vehicle and Year",
+    description,
+    seoBlock: `
+      <nav aria-label="Breadcrumb" style="font-size:14px;color:#666;margin:24px 0;">
+        ${breadcrumbHtml(crumbs)}
+      </nav>
+      <h1>Factory engines by vehicle</h1>
+      <p>${escapeHtml(description)}</p>
+      <ul>${vehicles.map((v) => `<li><a href="${v.url}">${escapeHtml(`${v.make} ${v.model}`)}</a> (${escapeHtml(yearSpan(v.engines.map((e) => e.year)))})</li>`).join("")}</ul>`,
+    jsonLd: [breadcrumbJsonLd(crumbs)],
+    priority: 0.8,
+    changefreq: "monthly",
+  };
+}
 
 // ---------------------------------------------------------------------------
 // Camshaft database entries
@@ -1087,7 +1214,13 @@ async function main() {
   // Engine spec database: build the route set and the runtime JSON the React
   // pages fetch, from one pass over public/data/engines/.
   const engineData = loadEngineData();
+  // Vehicle links must be attached before the runtime JSON is written, so the
+  // engine and family pages carry their "Factory cars" lists.
+  const vehicles = loadVehicles();
+  const vlink = linkVehicles(vehicles, engineData);
   writeRuntimeData(engineData);
+  writeVehicleRuntime(vehicles);
+  console.log(`prerender: vehicles — ${vehicles.length} models, ${vlink.engines} engine-years (${vlink.enginePage} to an engine page, ${vlink.familyPage} to a family, ${vlink.none} unlinked)`);
   const be = writeBuilderEngines();
   console.log(`prerender: builder engines — ${be.rawTotal} records merged to ${be.mergedTotal}, ${be.asking} ask which year/version`);
   const camData = loadCams();
@@ -1095,6 +1228,13 @@ async function main() {
   // Part-number lookup for the engine builder (CAM_DATABASE + Howards catalog).
   const camCatalog = buildCamCatalog([resolve(DIST, "data")]);
   console.log(`prerender: cam catalog — ${camCatalog.total} cams (${camCatalog.howards} Howards)`);
+  // The runtime JSON above is written to public/data/, but Vite copied public/
+  // into dist/ before this script ran, so without this copy every deploy
+  // shipped the previous build's data (and a clean checkout shipped none).
+  for (const dir of ["engine-pages", "builder-engines", "vehicle-pages", "cam-pages"]) {
+    const src = resolve(__dirname, "..", "public", "data", dir);
+    if (existsSync(src)) cpSync(src, resolve(DIST, "data", dir), { recursive: true, force: true });
+  }
   const camFit = buildCamFitment([resolve(DIST, "data")]);
   console.log(`prerender: cam fitment — ${camFit.mapped} mapped, ${camFit.unmapped} without usable fitment`);
 
@@ -1104,6 +1244,7 @@ async function main() {
     ...engineData.manufacturers.map(manufacturerEntry),
     ...engineData.families.map(engineFamilyEntry),
     ...engineData.engines.map(engineEntry),
+    ...(vehicles.length ? [vehiclesIndexEntry(vehicles), ...vehicleMakeEntries(vehicles), ...vehicles.map(vehicleEntry)] : []),
     camsIndexEntry(camData.cams, camData.manufacturers),
     ...camData.manufacturers.map(camMfrEntry),
     ...camData.cams.map(camEntry),

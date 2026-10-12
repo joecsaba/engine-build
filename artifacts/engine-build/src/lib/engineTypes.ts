@@ -89,6 +89,8 @@ export interface EngineRecord {
     displacement_ci: number | null;
   }[];
   vehicles: EngineVehicle[];
+  /** Verified factory installations (scripts/vehicleData.mjs). */
+  factoryCars?: FactoryCarGroup[];
   variants: EngineVariant[];
   variantCount: number;
   /** Where this engine sits in its family; feeds the computed prose. */
@@ -106,7 +108,15 @@ export interface EngineFamilyDoc {
   manufacturerName: string;
   manufacturerUrl: string;
   configuration: string | null;
+  factoryCars?: FactoryCarGroup[];
   engines: EngineRecord[];
+}
+
+/** One vehicle model in a "Factory cars with this engine" list. */
+export interface FactoryCarGroup {
+  vehicle: string;
+  url: string;
+  rows: { vehicle: string; url: string; year: number; hp: number | null; hpBasis: string; code: string | null }[];
 }
 
 export interface ManufacturerSummary {

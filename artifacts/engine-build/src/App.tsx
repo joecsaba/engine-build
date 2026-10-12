@@ -20,6 +20,8 @@ import Home from "@/pages/home";
 const EnginesIndex = lazy(() => import("@/pages/engines/index"));
 const EngineFamily = lazy(() => import("@/pages/engines/family"));
 const EnginePage = lazy(() => import("@/pages/engines/engine"));
+const VehiclesIndex = lazy(() => import("@/pages/vehicles/index"));
+const VehicleModel = lazy(() => import("@/pages/vehicles/model"));
 
 // Camshaft spec database — /cams and below. Same lazy treatment as /engines.
 const CamsIndex = lazy(() => import("@/pages/cams/index"));
@@ -157,6 +159,9 @@ function Router() {
         <Route path="/engines/:mfr/:family" component={EngineFamily} />
         <Route path="/engines/:mfr" component={EnginesIndex} />
         <Route path="/engines" component={EnginesIndex} />
+        <Route path="/vehicles/:make/:model" component={VehicleModel} />
+        <Route path="/vehicles/:make" component={VehiclesIndex} />
+        <Route path="/vehicles" component={VehiclesIndex} />
 
         {/* Camshaft database. Most specific first, same as /engines. */}
         <Route path="/cams/:mfr/:part" component={CamPage} />
