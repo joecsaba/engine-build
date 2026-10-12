@@ -1087,6 +1087,41 @@
    "cyl": 8,
    "name": "350 V8",
    "code": "L30",
+   "hp": 160,
+   "hpBasis": "net",
+   "trims": [
+    "Esprit (standard)",
+    "Firebird (optional)"
+   ],
+   "note": null,
+   "nhra": false,
+   "sources": [
+    {
+     "name": "1972 Pontiac Full Line Prestige brochure (oldcarbrochures.org)",
+     "url": "https://www.oldcarbrochures.org/United%20States/Pontiac/1972%20Pontiac/1972-Pontiac-Full-Line-Prestige-Brochure/index.html"
+    },
+    {
+     "name": "1972 Pontiac Firebird brochure, GM of Canada, spec table p.7 (xr793.com)",
+     "url": "https://xr793.com/wp-content/uploads/2017/02/1972-Pontiac-Firebird-CN.pdf"
+    },
+    {
+     "name": "Tran-Zam.com Firebird history - 1972 Firebird Engines table",
+     "url": "https://tran-zam.com/fhistory/1972Engines.aspx"
+    },
+    {
+     "name": "Hagerty Valuation Tools (1972 Pontiac Firebird)",
+     "url": "https://www.hagerty.com/valuation-tools/pontiac/firebird/1972"
+    }
+   ],
+   "sourceCount": 3
+  },
+  {
+   "year": 1972,
+   "gen": "gen2",
+   "cid": 350,
+   "cyl": 8,
+   "name": "350 V8",
+   "code": "L30",
    "hp": 175,
    "hpBasis": "net",
    "trims": [
@@ -5737,6 +5772,11 @@
    "type": null
   },
   {
+   "name": "Hagerty Valuation Tools (1972 Pontiac Firebird)",
+   "url": "https://www.hagerty.com/valuation-tools/pontiac/firebird/1972",
+   "type": null
+  },
+  {
    "name": "EPA fueleconomy.gov vehicle data",
    "url": "https://www.fueleconomy.gov/feg/download.shtml",
    "type": "government"
@@ -6153,40 +6193,6 @@
   }
  ],
  "excluded": [
-  {
-   "year": 1972,
-   "gen": "gen2",
-   "cid": 350,
-   "cyl": 8,
-   "name": "350 V8",
-   "code": "L30",
-   "hp": 160,
-   "hpBasis": "net",
-   "trims": [
-    "Esprit (standard)",
-    "Firebird (optional)"
-   ],
-   "note": null,
-   "nhra": false,
-   "sources": [
-    {
-     "name": "1972 Pontiac Full Line Prestige brochure (oldcarbrochures.org)",
-     "url": "https://www.oldcarbrochures.org/United%20States/Pontiac/1972%20Pontiac/1972-Pontiac-Full-Line-Prestige-Brochure/index.html"
-    },
-    {
-     "name": "1972 Pontiac Firebird brochure, GM of Canada, spec table p.7 (xr793.com)",
-     "url": "https://xr793.com/wp-content/uploads/2017/02/1972-Pontiac-Firebird-CN.pdf"
-    },
-    {
-     "name": "Tran-Zam.com Firebird history - 1972 Firebird Engines table",
-     "url": "https://tran-zam.com/fhistory/1972Engines.aspx"
-    }
-   ],
-   "sourceCount": 2,
-   "status": "three_sources_not_nhra",
-   "reason": "2 independent sources",
-   "researchNote": "NHRA lists only the dual-exhaust 175 rating."
-  },
   {
    "year": 1974,
    "gen": "gen2",

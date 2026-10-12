@@ -150,6 +150,14 @@ S["road-runner"] = dict(make="Plymouth", model="Road Runner", makeSlug="plymouth
   notes={"1971|440|385": "Six Barrel, three two-barrel carburetors.",
          "1978|318|155": "California four-barrel."})
 
+# Independent third sources found in a follow-up pass (third_source_found.json).
+SLUG = {"Chevrolet Bel Air": "bel-air", "Chevrolet Chevelle": "chevelle", "Pontiac Firebird": "firebird"}
+tp = os.path.join(SP, "third_source_found.json")
+if os.path.exists(tp):
+    for x in json.load(open(tp, encoding="utf-8")):
+        if "source" in x and x["model"] in SLUG:
+            S[SLUG[x["model"]]].setdefault("add_sources", {}).setdefault(f'{x["year"]}|{x["cid"]}|{x["hp"]}', []).append(x["source"])
+
 os.makedirs(os.path.join(SP, "vspecs"), exist_ok=True)
 for k, v in S.items():
     v["draft"] = True
