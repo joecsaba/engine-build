@@ -1,0 +1,196 @@
+{
+ "make": "Chevrolet",
+ "model": "Camaro",
+ "makeSlug": "chevrolet",
+ "slug": "camaro",
+ "title": "Chevrolet Camaro Engines by Year (1967–2024)",
+ "description": "Every factory engine in the Chevrolet Camaro by year, 1967–2024: RPO codes, rated horsepower and trims, from the 230 six to the LT4. 3+ sources each.",
+ "intro": [
+  "Chevrolet built the Camaro in six generations from 1967 to 2024 and offered it with a long list of engines: inline sixes and fours, V6s, small-block V8s from 267 to 376 cubic inches, big blocks, and supercharged V8s up to 650 hp.",
+  "Pick a year to see every engine offered that model year, with its RPO code, rated horsepower and the trims it came in. Each engine links to its full specs, and each row lists the sources that confirm it."
+ ],
+ "generations": [
+  {
+   "key": "gen1",
+   "name": "First generation",
+   "years": [
+    1967,
+    1969
+   ],
+   "intro": [
+    "The first-generation Camaro had one of the longest engine lists of its time: two inline sixes, small blocks from 307 to 350, the 302 built for the Z/28, and the 396 big block in three ratings. In 1969 dealers could also order the L72 and aluminum ZL1 427s through Chevrolet's Central Office Production Order (COPO) system."
+   ]
+  },
+  {
+   "key": "gen2",
+   "name": "Second generation",
+   "years": [
+    1970,
+    1981
+   ],
+   "intro": [
+    "The second generation went on sale in February 1970 as a 1970½ model, with the 360 hp LT-1 small block in the Z28 and a 402 cubic-inch big block still badged as the 396. The big block was gone after 1972, and from 1972 Chevrolet quoted SAE net horsepower, which is why the ratings fall so sharply. The Z28 sat out 1975 and 1976 and returned partway through 1977.",
+    "The 1980 and 1981 cars added two 3.8L V6s, Chevrolet's own 229 and a Buick-built 231, and a 267 cubic-inch small block."
+   ]
+  },
+  {
+   "key": "gen3",
+   "name": "Third generation",
+   "years": [
+    1982,
+    1992
+   ],
+   "intro": [
+    "The third generation was lighter and brought fuel injection to the Camaro: a throttle-body Iron Duke four, Cross-Fire Injection on the 1982–83 Z28, and Tuned Port Injection 305s from 1985 and 350s from 1987 on the Z28 and IROC-Z.",
+    "Several engines carried two ratings in the same year depending on transmission or exhaust, so some years list the same engine more than once."
+   ]
+  },
+  {
+   "key": "gen4",
+   "name": "Fourth generation",
+   "years": [
+    1993,
+    2002
+   ],
+   "intro": [
+    "The fourth generation launched with the LT1 350 in the Z28 and a 3.4L V6, switched to the 3800 V6 in 1995, and moved to the aluminum LS1 for 1998. The SS package, with a ram-air hood and freer exhaust, raised the LS1's rating to 320 and later 325 hp.",
+    "The 1996–1997 SS and LT4 cars converted by SLP Engineering were sold through Chevrolet dealers but were not factory installations, so they are not listed."
+   ]
+  },
+  {
+   "key": "gen5",
+   "name": "Fifth generation",
+   "years": [
+    2010,
+    2015
+   ],
+   "intro": [
+    "Chevrolet did not build the Camaro from 2003 to 2009. It returned for 2010 with a direct-injected 3.6L V6 and 6.2L small blocks: the LS3 with manual transmissions and the L99, with cylinder deactivation, with automatics. The supercharged LSA arrived in the 2012 ZL1 and the 7.0L LS7 in the 2014–2015 Z/28.",
+    "From 2012 Chevrolet also built COPO Camaro drag cars. They are not street legal and are listed separately under each year."
+   ]
+  },
+  {
+   "key": "gen6",
+   "name": "Sixth generation",
+   "years": [
+    2016,
+    2024
+   ],
+   "intro": [
+    "The sixth generation added a 2.0L turbocharged four as the base engine through 2023, alongside the 3.6L V6, the direct-injected LT1 in the SS and the supercharged LT4 in the ZL1. Chevrolet ended Camaro production after the 2024 model year."
+   ]
+  }
+ ],
+ "files": [
+  "verify_chevrolet-camaro-1967-1969.json",
+  "verify_chevrolet-camaro-1970-1981.json",
+  "verify_chevrolet-camaro-1982-2002.json",
+  "verify_chevrolet-camaro-2010-2024.json"
+ ],
+ "include": [
+  "1980|305|155",
+  "1981|229|110",
+  "1981|305|150",
+  "1983|151|94",
+  "1983|305|175",
+  "1983|305|190",
+  "1984|305|190",
+  "1985|305|155",
+  "1991|305|205",
+  "1996|350|285",
+  "1998|346|320"
+ ],
+ "nhra_lists": [
+  "1980|305|155",
+  "1983|305|175",
+  "1983|305|190",
+  "1984|305|190",
+  "1985|305|155",
+  "1991|305|205",
+  "1996|350|285"
+ ],
+ "exclude": {
+  "1996|350|305": "SLP Engineering dealer conversion, not a factory installation",
+  "1997|350|305": "SLP Engineering dealer conversion, not a factory installation",
+  "1997|350|330": "SLP Engineering dealer conversion (108 cars), not a factory installation",
+  "1970|454|450": "Listed in early GM literature; none built"
+ },
+ "add_sources": {
+  "2000|346|320": [
+   {
+    "name": "The Auto Channel - 2000 Chevrolet Camaro SS review (Carey Russ)",
+    "url": "https://theautochannel.com/vehicles/new/reviews/2000/russ0029.html"
+   }
+  ]
+ },
+ "trims": {
+  "1969|427|425": [
+   "COPO 9561 special order"
+  ],
+  "1969|427|430": [
+   "COPO 9560 special order"
+  ],
+  "1998|346|320": [
+   "SS package (late availability)"
+  ],
+  "1999|346|320": [
+   "SS package"
+  ],
+  "2000|346|320": [
+   "SS package"
+  ]
+ },
+ "codes": {
+  "1998|346|320": "LS1",
+  "1999|346|320": "LS1",
+  "2000|346|320": "LS1",
+  "2001|346|325": "LS1",
+  "2002|346|325": "LS1",
+  "1977|350|185": "LM1",
+  "1978|350|185": "LM1",
+  "1978|350|175": "LM1",
+  "1979|350|175": "LM1",
+  "1980|350|190": "LM1",
+  "1981|350|175": "LM1",
+  "1981|305|165": "LG4",
+  "1970|350|360": "LT-1",
+  "1971|350|330": "LT-1",
+  "1972|350|255": "LT-1"
+ },
+ "notes": {
+  "1967|302|290": "Introduced partway through the 1967 model year.",
+  "1967|396|375": "Introduced partway through the 1967 model year.",
+  "1968|396|375": "The L89 is the L78 with aluminum cylinder heads.",
+  "1969|396|375": "The L89 is the L78 with aluminum cylinder heads.",
+  "1969|427|425": "Ordered through COPO, not the regular order guide. Cast-iron block and heads.",
+  "1969|427|430": "Ordered through COPO. All-aluminum block and heads.",
+  "1970|402|350": "Badged as a 396; displaces 402 cubic inches.",
+  "1970|402|375": "Badged as a 396; displaces 402 cubic inches.",
+  "1971|402|300": "Badged as a 396; displaces 402 cubic inches.",
+  "1972|402|240": "Badged as a 396; last year of the big block in the Camaro.",
+  "1977|350|185": "The Z28 returned partway through the 1977 model year.",
+  "1978|350|175": "California and high-altitude Z28.",
+  "1980|305|155": "NHRA lists a 180 hp 305; GM and other sources give 155.",
+  "1981|229|110": "NHRA lists 120 hp; GM gives 110.",
+  "1981|305|150": "NHRA lists 155 hp, the 1980 figure; GM gives 150 for 1981.",
+  "1982|305|165": "Cross-Fire Injection, two throttle bodies. Automatic only.",
+  "1983|151|94": "Some sources give 92 hp; GM's 1983 literature gives 94.",
+  "1983|305|175": "Cross-Fire Injection. NHRA lists 165 hp, the 1982 figure.",
+  "1983|305|190": "H.O. four-barrel, added in April 1983. NHRA lists 200 hp.",
+  "1984|305|190": "NHRA lists 180 hp, the Monte Carlo SS rating; GM gives 190 for the Camaro.",
+  "1985|305|155": "NHRA lists 150 hp, the 1984 figure.",
+  "1985|305|215": "Tuned Port Injection.",
+  "1987|350|225": "Tuned Port Injection. Added during the model year.",
+  "1991|305|205": "NHRA lists 210 hp, the 1990 figure.",
+  "1996|350|285": "Some 1996 GM literature repeats the earlier 275 hp; GM's specification table gives 285.",
+  "1998|346|320": "Chevrolet gave 320 hp for the 1999–2000 SS; a few sources give 325–327 for 1998.",
+  "2011|217|312": "Same engine as 2010, re-rated to 312 hp.",
+  "2012|376|580": "Supercharged. ZL1 only.",
+  "2014|427|505": "Dry-sump 7.0L. Z/28 coupe only.",
+  "2015|427|505": "Dry-sump 7.0L. Z/28 coupe only.",
+  "2017|376|650": "Supercharged. ZL1 only.",
+  "2024|217|335": "The 2.0L turbo four was dropped for 2024, leaving the V6 as the base engine."
+ },
+ "source_names": {},
+ "draft": true
+}

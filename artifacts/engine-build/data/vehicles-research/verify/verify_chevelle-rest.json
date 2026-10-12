@@ -1,0 +1,2070 @@
+{
+ "vehicle": "chevelle-rest",
+ "model": "Chevrolet Chevelle (Chevelle 300 / 300 Deluxe / Deluxe / Malibu / Malibu SS / SS 396 / Laguna / Laguna Type S-3 / Malibu Classic); El Camino is context only",
+ "scope_note": "1964-1967 (gen1) and 1973-1977 (gen3 Colonnade). 1968-1972 is in verify_chevrolet-chevelle-1968-1972.json. NHRA (nhra_chevelle-rest.json) is source 1; confirmed = NHRA + at least 2 other sources. HP gross through 1967, SAE net 1973-1977.",
+ "years": {
+  "1964": [
+   {
+    "gen": "gen1",
+    "cid": 194,
+    "hp": 120,
+    "hp_basis": "gross",
+    "rpo": "std six",
+    "name": "Hi-Thrift 194",
+    "trims": [
+     "Chevelle 300",
+     "Malibu",
+     "Malibu SS",
+     "El Camino (context)"
+    ],
+    "nhra": true,
+    "sources": [
+     {
+      "name": "GM Heritage Center 1964 Chevelle Vehicle Information Kit",
+      "url": "https://www.gm.com/content/dam/company/no_search/heritage-archive-docs/vehicle-information-kits/chevrolet/1964-Chevrolet-Chevelle.pdf",
+      "says": "p.45 Power Teams + p.53 advertised ratings: Hi-Thrift 194, 120 hp, standard six"
+     },
+     {
+      "name": "Chevellestuff.net 1964 Chevelle engine ID codes",
+      "url": "https://www.chevellestuff.net/1964/engine_id_codes.htm",
+      "says": "codes G/K etc: 194-1bbl 120 hp"
+     },
+     {
+      "name": "Chevy Hardcore (Power Automedia), Chevelle Engine Options: 1964, Randy Bolig",
+      "url": "https://www.chevyhardcore.com/?p=8706",
+      "says": "194ci 1-bbl 120 hp"
+     }
+    ],
+    "status": "confirmed",
+    "note": ""
+   },
+   {
+    "gen": "gen1",
+    "cid": 230,
+    "hp": 155,
+    "hp_basis": "gross",
+    "rpo": "L61",
+    "name": "Turbo-Thrift 230",
+    "trims": [
+     "Chevelle 300",
+     "Malibu",
+     "Malibu SS",
+     "El Camino (context)"
+    ],
+    "nhra": true,
+    "sources": [
+     {
+      "name": "GM Heritage Center 1964 Chevelle Vehicle Information Kit",
+      "url": "https://www.gm.com/content/dam/company/no_search/heritage-archive-docs/vehicle-information-kits/chevrolet/1964-Chevrolet-Chevelle.pdf",
+      "says": "p.45 Power Teams; p.51 \"155 HP Turbo-Thrift L-6 (RPO L61)\""
+     },
+     {
+      "name": "Chevellestuff.net 1964 Chevelle engine ID codes",
+      "url": "https://www.chevellestuff.net/1964/engine_id_codes.htm",
+      "says": "codes BL-LN: 230-1bbl 155 hp, RPO L61"
+     },
+     {
+      "name": "Chevy Hardcore (Power Automedia), Chevelle Engine Options: 1964, Randy Bolig",
+      "url": "https://www.chevyhardcore.com/?p=8706",
+      "says": "230ci 1-bbl 155 hp"
+     }
+    ],
+    "status": "confirmed",
+    "note": "230 rated 155 hp in 1964; 140 hp from 1965."
+   },
+   {
+    "gen": "gen1",
+    "cid": 283,
+    "hp": 195,
+    "hp_basis": "gross",
+    "rpo": "std V8",
+    "name": "Turbo-Fire 283 2-bbl",
+    "trims": [
+     "Chevelle 300",
+     "Malibu",
+     "Malibu SS",
+     "El Camino (context)"
+    ],
+    "nhra": true,
+    "sources": [
+     {
+      "name": "GM Heritage Center 1964 Chevelle Vehicle Information Kit",
+      "url": "https://www.gm.com/content/dam/company/no_search/heritage-archive-docs/vehicle-information-kits/chevrolet/1964-Chevrolet-Chevelle.pdf",
+      "says": "p.45 Power Teams + p.53: Turbo-Fire 283 2-bbl 195 hp @ 4800"
+     },
+     {
+      "name": "Chevellestuff.net 1964 Chevelle engine ID codes",
+      "url": "https://www.chevellestuff.net/1964/engine_id_codes.htm",
+      "says": "codes J/JA/JD: 283-2bbl 195 hp"
+     },
+     {
+      "name": "Chevy Hardcore (Power Automedia), Chevelle Engine Options: 1964, Randy Bolig",
+      "url": "https://www.chevyhardcore.com/?p=8706",
+      "says": "283ci 2-bbl 195 hp"
+     }
+    ],
+    "status": "confirmed",
+    "note": ""
+   },
+   {
+    "gen": "gen1",
+    "cid": 283,
+    "hp": 220,
+    "hp_basis": "gross",
+    "rpo": "L77",
+    "name": "Turbo-Fire 283 4-bbl",
+    "trims": [
+     "Chevelle 300",
+     "Malibu",
+     "Malibu SS",
+     "El Camino (context)"
+    ],
+    "nhra": true,
+    "sources": [
+     {
+      "name": "GM Heritage Center 1964 Chevelle Vehicle Information Kit",
+      "url": "https://www.gm.com/content/dam/company/no_search/heritage-archive-docs/vehicle-information-kits/chevrolet/1964-Chevrolet-Chevelle.pdf",
+      "says": "p.45 Power Teams + p.53: Turbo-Fire 283 (RPO L77) 4-bbl 220 hp @ 4800"
+     },
+     {
+      "name": "Chevellestuff.net 1964 Chevelle engine ID codes",
+      "url": "https://www.chevellestuff.net/1964/engine_id_codes.htm",
+      "says": "codes JG/JH: 283-4bbl 220 hp L77"
+     },
+     {
+      "name": "Chevy Hardcore (Power Automedia), Chevelle Engine Options: 1964, Randy Bolig",
+      "url": "https://www.chevyhardcore.com/?p=8706",
+      "says": "283ci 4-bbl 220 hp"
+     }
+    ],
+    "status": "confirmed",
+    "note": ""
+   },
+   {
+    "gen": "gen1",
+    "cid": 327,
+    "hp": 250,
+    "hp_basis": "gross",
+    "rpo": "L30",
+    "name": "Turbo-Fire 327",
+    "trims": [
+     "Chevelle 300",
+     "Malibu",
+     "Malibu SS",
+     "El Camino (context)"
+    ],
+    "nhra": true,
+    "sources": [
+     {
+      "name": "GM Heritage Center 1964 Chevelle Vehicle Information Kit",
+      "url": "https://www.gm.com/content/dam/company/no_search/heritage-archive-docs/vehicle-information-kits/chevrolet/1964-Chevrolet-Chevelle.pdf",
+      "says": "p.45 Power Teams: Turbo-Fire 327 250 HP RPO L30; AMA specs p.122 (models 54/56-5800)"
+     },
+     {
+      "name": "Chevellestuff.net 1964 Chevelle engine ID codes",
+      "url": "https://www.chevellestuff.net/1964/engine_id_codes.htm",
+      "says": "codes JQ/JT/SR: 327-4bbl 250 hp L30, available March 1964"
+     },
+     {
+      "name": "Chevy Hardcore (Power Automedia), Chevelle Engine Options: 1964, Randy Bolig",
+      "url": "https://www.chevyhardcore.com/?p=8706",
+      "says": "327ci 4-bbl 250 hp"
+     },
+     {
+      "name": "Wikipedia - Chevrolet Chevelle",
+      "url": "https://en.wikipedia.org/wiki/Chevrolet_Chevelle",
+      "says": "mid-1964: 327 in 250 or 300 hp"
+     }
+    ],
+    "status": "confirmed",
+    "note": "Mid-year addition: available from about March 1964."
+   },
+   {
+    "gen": "gen1",
+    "cid": 327,
+    "hp": 300,
+    "hp_basis": "gross",
+    "rpo": "L74",
+    "name": "Turbo-Fire 327 (large 4-bbl alum.)",
+    "trims": [
+     "Chevelle 300",
+     "Malibu",
+     "Malibu SS",
+     "El Camino (context)"
+    ],
+    "nhra": true,
+    "sources": [
+     {
+      "name": "GM Heritage Center 1964 Chevelle Vehicle Information Kit",
+      "url": "https://www.gm.com/content/dam/company/no_search/heritage-archive-docs/vehicle-information-kits/chevrolet/1964-Chevrolet-Chevelle.pdf",
+      "says": "p.45 Power Teams: Turbo-Fire 327 300 HP RPO L74, large 4-bbl aluminum carburetor"
+     },
+     {
+      "name": "Chevellestuff.net 1964 Chevelle engine ID codes",
+      "url": "https://www.chevellestuff.net/1964/engine_id_codes.htm",
+      "says": "codes JR/SS: 327-4bbl 300 hp L74, available June 1964"
+     },
+     {
+      "name": "Chevy Hardcore (Power Automedia), Chevelle Engine Options: 1964, Randy Bolig",
+      "url": "https://www.chevyhardcore.com/?p=8706",
+      "says": "327ci 4-bbl 300 hp, later in the year"
+     },
+     {
+      "name": "Wikipedia - Chevrolet Chevelle",
+      "url": "https://en.wikipedia.org/wiki/Chevrolet_Chevelle",
+      "says": "mid-1964: 327 in 250 or 300 hp"
+     }
+    ],
+    "status": "confirmed",
+    "note": "Mid-year addition: available from about May-June 1964."
+   },
+   {
+    "gen": "gen1",
+    "cid": 327,
+    "hp": 365,
+    "hp_basis": "gross",
+    "rpo": "L76",
+    "name": "Turbo-Fire 327 (solid lifter)",
+    "trims": [
+     "Malibu",
+     "Malibu SS (listed)"
+    ],
+    "nhra": false,
+    "sources": [
+     {
+      "name": "GM Heritage Center 1964 Chevelle Vehicle Information Kit",
+      "url": "https://www.gm.com/content/dam/company/no_search/heritage-archive-docs/vehicle-information-kits/chevrolet/1964-Chevrolet-Chevelle.pdf",
+      "says": "p.9 RPO list and AMA specification pages 122-162 list \"365 HP (RPO-L76)\" for models 54/56-5800"
+     },
+     {
+      "name": "Chevellestuff.net 1964 Chevelle engine ID codes",
+      "url": "https://www.chevellestuff.net/1964/engine_id_codes.htm",
+      "says": "code JS 327/365 L76 listed, but \"Chevrolet's Accumulative Production Report does not list the RPO as being sold in a Chevelle\"; no K66 transistor ignition sold either"
+     }
+    ],
+    "status": "excluded_not_produced",
+    "note": "Appears in GM's 1964 AMA specs and engine code lists but no recorded sale; NHRA and Chevy Hardcore omit it. Do not show as an available engine."
+   }
+  ],
+  "1965": [
+   {
+    "gen": "gen1",
+    "cid": 194,
+    "hp": 120,
+    "hp_basis": "gross",
+    "rpo": "std six",
+    "name": "Hi-Thrift 194",
+    "trims": [
+     "Chevelle 300",
+     "300 Deluxe",
+     "Malibu",
+     "Malibu SS",
+     "El Camino (context)"
+    ],
+    "nhra": true,
+    "sources": [
+     {
+      "name": "GM Heritage Center 1965 Chevelle Vehicle Information Kit",
+      "url": "https://www.gm.com/content/dam/company/no_search/heritage-archive-docs/vehicle-information-kits/chevrolet/1965-Chevrolet-Chevelle.pdf",
+      "says": "p.21 Power Teams + p.23 advertised ratings: 194 120 hp base"
+     },
+     {
+      "name": "Chevellestuff.net 1965 Chevelle engine ID codes",
+      "url": "https://www.chevellestuff.net/1965/engine_id_codes.htm",
+      "says": "codes AA-AR: 194-1bbl 120 hp"
+     },
+     {
+      "name": "Chevy Hardcore (Power Automedia), Chevelle Engine Options: 1965, Randy Bolig",
+      "url": "https://www.chevyhardcore.com/tech-stories/chevelle-engine-options-1965/",
+      "says": "194ci six (base)"
+     }
+    ],
+    "status": "confirmed",
+    "note": "Chevy Hardcore gives no rating for the sixes."
+   },
+   {
+    "gen": "gen1",
+    "cid": 230,
+    "hp": 140,
+    "hp_basis": "gross",
+    "rpo": "L26",
+    "name": "Turbo-Thrift 230",
+    "trims": [
+     "Chevelle 300",
+     "300 Deluxe",
+     "Malibu",
+     "Malibu SS",
+     "El Camino (context)"
+    ],
+    "nhra": true,
+    "sources": [
+     {
+      "name": "GM Heritage Center 1965 Chevelle Vehicle Information Kit",
+      "url": "https://www.gm.com/content/dam/company/no_search/heritage-archive-docs/vehicle-information-kits/chevrolet/1965-Chevrolet-Chevelle.pdf",
+      "says": "p.21 Power Teams: Turbo-Thrift 230 RPO L26 140 hp"
+     },
+     {
+      "name": "Chevellestuff.net 1965 Chevelle engine ID codes",
+      "url": "https://www.chevellestuff.net/1965/engine_id_codes.htm",
+      "says": "codes CA-CD: 230-1bbl 140 hp L26"
+     },
+     {
+      "name": "Chevy Hardcore (Power Automedia), Chevelle Engine Options: 1965, Randy Bolig",
+      "url": "https://www.chevyhardcore.com/tech-stories/chevelle-engine-options-1965/",
+      "says": "230ci six"
+     }
+    ],
+    "status": "confirmed",
+    "note": ""
+   },
+   {
+    "gen": "gen1",
+    "cid": 283,
+    "hp": 195,
+    "hp_basis": "gross",
+    "rpo": "std V8",
+    "name": "Turbo-Fire 283 2-bbl",
+    "trims": [
+     "Chevelle 300",
+     "300 Deluxe",
+     "Malibu",
+     "Malibu SS",
+     "El Camino (context)"
+    ],
+    "nhra": true,
+    "sources": [
+     {
+      "name": "GM Heritage Center 1965 Chevelle Vehicle Information Kit",
+      "url": "https://www.gm.com/content/dam/company/no_search/heritage-archive-docs/vehicle-information-kits/chevrolet/1965-Chevrolet-Chevelle.pdf",
+      "says": "p.21 Power Teams + p.23: Turbo-Fire 283 195 hp base V8"
+     },
+     {
+      "name": "Chevellestuff.net 1965 Chevelle engine ID codes",
+      "url": "https://www.chevellestuff.net/1965/engine_id_codes.htm",
+      "says": "codes DA/DB/DE: 283-2bbl 195 hp"
+     },
+     {
+      "name": "Chevy Hardcore (Power Automedia), Chevelle Engine Options: 1965, Randy Bolig",
+      "url": "https://www.chevyhardcore.com/tech-stories/chevelle-engine-options-1965/",
+      "says": "283ci 195 hp"
+     }
+    ],
+    "status": "confirmed",
+    "note": ""
+   },
+   {
+    "gen": "gen1",
+    "cid": 283,
+    "hp": 220,
+    "hp_basis": "gross",
+    "rpo": "L77",
+    "name": "Turbo-Fire 283 4-bbl",
+    "trims": [
+     "Chevelle 300",
+     "300 Deluxe",
+     "Malibu",
+     "Malibu SS",
+     "El Camino (context)"
+    ],
+    "nhra": true,
+    "sources": [
+     {
+      "name": "GM Heritage Center 1965 Chevelle Vehicle Information Kit",
+      "url": "https://www.gm.com/content/dam/company/no_search/heritage-archive-docs/vehicle-information-kits/chevrolet/1965-Chevrolet-Chevelle.pdf",
+      "says": "p.21 Power Teams + p.23: Turbo-Fire 283 220 hp RPO L77"
+     },
+     {
+      "name": "Chevellestuff.net 1965 Chevelle engine ID codes",
+      "url": "https://www.chevellestuff.net/1965/engine_id_codes.htm",
+      "says": "codes DG/DH: 283-4bbl 220 hp L77"
+     },
+     {
+      "name": "Chevy Hardcore (Power Automedia), Chevelle Engine Options: 1965, Randy Bolig",
+      "url": "https://www.chevyhardcore.com/tech-stories/chevelle-engine-options-1965/",
+      "says": "283ci 220 hp"
+     },
+     {
+      "name": "Wikipedia - Chevrolet Chevelle",
+      "url": "https://en.wikipedia.org/wiki/Chevrolet_Chevelle",
+      "says": "283 four-barrel rated 220 hp"
+     }
+    ],
+    "status": "confirmed",
+    "note": ""
+   },
+   {
+    "gen": "gen1",
+    "cid": 327,
+    "hp": 250,
+    "hp_basis": "gross",
+    "rpo": "L30",
+    "name": "Turbo-Fire 327",
+    "trims": [
+     "Chevelle 300",
+     "300 Deluxe",
+     "Malibu",
+     "Malibu SS",
+     "El Camino (context)"
+    ],
+    "nhra": true,
+    "sources": [
+     {
+      "name": "GM Heritage Center 1965 Chevelle Vehicle Information Kit",
+      "url": "https://www.gm.com/content/dam/company/no_search/heritage-archive-docs/vehicle-information-kits/chevrolet/1965-Chevrolet-Chevelle.pdf",
+      "says": "p.21 Power Teams: Turbo-Fire 327 250 HP RPO L30"
+     },
+     {
+      "name": "Chevellestuff.net 1965 Chevelle engine ID codes",
+      "url": "https://www.chevellestuff.net/1965/engine_id_codes.htm",
+      "says": "codes EA/EE: 327-4bbl 250 hp L30"
+     },
+     {
+      "name": "Chevy Hardcore (Power Automedia), Chevelle Engine Options: 1965, Randy Bolig",
+      "url": "https://www.chevyhardcore.com/tech-stories/chevelle-engine-options-1965/",
+      "says": "327ci \"255\" hp (sic)"
+     }
+    ],
+    "status": "confirmed",
+    "note": "Chevy Hardcore prints 255 hp; GM and chevellestuff give 250 (typo in the article)."
+   },
+   {
+    "gen": "gen1",
+    "cid": 327,
+    "hp": 300,
+    "hp_basis": "gross",
+    "rpo": "L74",
+    "name": "Turbo-Fire 327 (large 4-bbl alum.)",
+    "trims": [
+     "Chevelle 300",
+     "300 Deluxe",
+     "Malibu",
+     "Malibu SS",
+     "El Camino (context)"
+    ],
+    "nhra": true,
+    "sources": [
+     {
+      "name": "GM Heritage Center 1965 Chevelle Vehicle Information Kit",
+      "url": "https://www.gm.com/content/dam/company/no_search/heritage-archive-docs/vehicle-information-kits/chevrolet/1965-Chevrolet-Chevelle.pdf",
+      "says": "p.21 Power Teams: Turbo-Fire 327 300 HP RPO L74"
+     },
+     {
+      "name": "Chevellestuff.net 1965 Chevelle engine ID codes",
+      "url": "https://www.chevellestuff.net/1965/engine_id_codes.htm",
+      "says": "codes EB/EF: 327-4bbl 300 hp L74, AFB carb"
+     },
+     {
+      "name": "Chevy Hardcore (Power Automedia), Chevelle Engine Options: 1965, Randy Bolig",
+      "url": "https://www.chevyhardcore.com/tech-stories/chevelle-engine-options-1965/",
+      "says": "327ci 300 hp"
+     }
+    ],
+    "status": "confirmed",
+    "note": ""
+   },
+   {
+    "gen": "gen1",
+    "cid": 327,
+    "hp": 350,
+    "hp_basis": "gross",
+    "rpo": "L79",
+    "name": "Turbo-Fire 327 (Holley)",
+    "trims": [
+     "Chevelle 300",
+     "300 Deluxe",
+     "Malibu",
+     "Malibu SS"
+    ],
+    "nhra": true,
+    "sources": [
+     {
+      "name": "GM Heritage Center 1965 Chevelle Vehicle Information Kit",
+      "url": "https://www.gm.com/content/dam/company/no_search/heritage-archive-docs/vehicle-information-kits/chevrolet/1965-Chevrolet-Chevelle.pdf",
+      "says": "p.21 Power Teams (revised February 1965): Turbo-Fire 327 350 HP RPO L79, large 4-bbl"
+     },
+     {
+      "name": "Chevellestuff.net 1965 Chevelle engine ID codes",
+      "url": "https://www.chevellestuff.net/1965/engine_id_codes.htm",
+      "says": "codes EC/ED: 327-4bbl 350 hp L79, Holley carb, special high performance"
+     },
+     {
+      "name": "Chevy Hardcore (Power Automedia), Chevelle Engine Options: 1965, Randy Bolig",
+      "url": "https://www.chevyhardcore.com/tech-stories/chevelle-engine-options-1965/",
+      "says": "327ci 350 hp new for 1965"
+     },
+     {
+      "name": "Wikipedia - Chevrolet Chevelle",
+      "url": "https://en.wikipedia.org/wiki/Chevrolet_Chevelle",
+      "says": "for 1965 Chevrolet added the 350-hp 327 V8 as RPO L79"
+     }
+    ],
+    "status": "confirmed",
+    "note": ""
+   },
+   {
+    "gen": "gen1",
+    "cid": 396,
+    "hp": 375,
+    "hp_basis": "gross",
+    "rpo": "L37 (Z16 package)",
+    "name": "Turbo-Jet 396 (Z16)",
+    "trims": [
+     "Malibu SS 396 (Z16) hardtop/convertible"
+    ],
+    "nhra": true,
+    "sources": [
+     {
+      "name": "GM Heritage Center 1965 Chevelle Vehicle Information Kit",
+      "url": "https://www.gm.com/content/dam/company/no_search/heritage-archive-docs/vehicle-information-kits/chevrolet/1965-Chevrolet-Chevelle.pdf",
+      "says": "p.14 Malibu SS 396 specification sheet: Turbo-Jet 396 V8, 375 HP, 11.0:1, 4.094 x 3.76"
+     },
+     {
+      "name": "Chevellestuff.net 1965 Chevelle engine ID codes",
+      "url": "https://www.chevellestuff.net/1965/engine_id_codes.htm",
+      "says": "codes IX (Z16) / IY (COPO): 396-4bbl 375 hp L37"
+     },
+     {
+      "name": "Chevy Hardcore (Power Automedia), Chevelle Engine Options: 1965, Randy Bolig",
+      "url": "https://www.chevyhardcore.com/tech-stories/chevelle-engine-options-1965/",
+      "says": "396 L37 375 hp, Z-16 package only; 201 built (200 hardtops, 1 convertible)"
+     },
+     {
+      "name": "Wikipedia - Chevrolet Chevelle",
+      "url": "https://en.wikipedia.org/wiki/Chevrolet_Chevelle",
+      "says": "201 Malibu SS 396 Z-16 cars produced, mostly mid-March to mid-April 1965"
+     }
+    ],
+    "status": "confirmed",
+    "note": "Z16 package only, 201 cars, built from about March 1965."
+   }
+  ],
+  "1966": [
+   {
+    "gen": "gen1",
+    "cid": 194,
+    "hp": 120,
+    "hp_basis": "gross",
+    "rpo": "std six",
+    "name": "Hi-Thrift 194",
+    "trims": [
+     "Chevelle 300",
+     "300 Deluxe",
+     "Malibu",
+     "El Camino (context)"
+    ],
+    "nhra": true,
+    "sources": [
+     {
+      "name": "GM Heritage Center 1966 Chevelle Vehicle Information Kit",
+      "url": "https://www.gm.com/content/dam/company/no_search/heritage-archive-docs/vehicle-information-kits/chevrolet/1966-Chevrolet-Chevelle.pdf",
+      "says": "p.7 Power Teams + p.9 advertised ratings: Hi-Thrift 194 120 hp standard"
+     },
+     {
+      "name": "Chevellestuff.net 1966 Chevelle engine ID codes",
+      "url": "https://www.chevellestuff.net/1966/engine_id_codes.htm",
+      "says": "codes AA-AT: 194-1bbl 120 hp"
+     },
+     {
+      "name": "Chevy Hardcore (Power Automedia), Chevelle Engine Options: 1966, Randy Bolig",
+      "url": "https://www.chevyhardcore.com/news/chevelle-engine-options-1966",
+      "says": "194ci 120 hp"
+     }
+    ],
+    "status": "confirmed",
+    "note": ""
+   },
+   {
+    "gen": "gen1",
+    "cid": 230,
+    "hp": 140,
+    "hp_basis": "gross",
+    "rpo": "L26",
+    "name": "Turbo-Thrift 230",
+    "trims": [
+     "Chevelle 300",
+     "300 Deluxe",
+     "Malibu",
+     "El Camino (context)"
+    ],
+    "nhra": true,
+    "sources": [
+     {
+      "name": "GM Heritage Center 1966 Chevelle Vehicle Information Kit",
+      "url": "https://www.gm.com/content/dam/company/no_search/heritage-archive-docs/vehicle-information-kits/chevrolet/1966-Chevrolet-Chevelle.pdf",
+      "says": "p.7 Power Teams: Turbo-Thrift 230 RPO L26"
+     },
+     {
+      "name": "Chevellestuff.net 1966 Chevelle engine ID codes",
+      "url": "https://www.chevellestuff.net/1966/engine_id_codes.htm",
+      "says": "codes BL-CD: 230-1bbl 140 hp L26"
+     },
+     {
+      "name": "Chevy Hardcore (Power Automedia), Chevelle Engine Options: 1966, Randy Bolig",
+      "url": "https://www.chevyhardcore.com/news/chevelle-engine-options-1966",
+      "says": "230ci 140 hp"
+     }
+    ],
+    "status": "confirmed",
+    "note": ""
+   },
+   {
+    "gen": "gen1",
+    "cid": 283,
+    "hp": 195,
+    "hp_basis": "gross",
+    "rpo": "std V8",
+    "name": "Turbo-Fire 283 2-bbl",
+    "trims": [
+     "Chevelle 300",
+     "300 Deluxe",
+     "Malibu",
+     "El Camino (context)"
+    ],
+    "nhra": true,
+    "sources": [
+     {
+      "name": "GM Heritage Center 1966 Chevelle Vehicle Information Kit",
+      "url": "https://www.gm.com/content/dam/company/no_search/heritage-archive-docs/vehicle-information-kits/chevrolet/1966-Chevrolet-Chevelle.pdf",
+      "says": "p.7 Power Teams: Turbo-Fire 283 standard V8; p.9 195 hp"
+     },
+     {
+      "name": "Chevellestuff.net 1966 Chevelle engine ID codes",
+      "url": "https://www.chevellestuff.net/1966/engine_id_codes.htm",
+      "says": "codes DA-DK: 283-2bbl 195 hp"
+     },
+     {
+      "name": "Chevy Hardcore (Power Automedia), Chevelle Engine Options: 1966, Randy Bolig",
+      "url": "https://www.chevyhardcore.com/news/chevelle-engine-options-1966",
+      "says": "283ci 195 hp"
+     }
+    ],
+    "status": "confirmed",
+    "note": ""
+   },
+   {
+    "gen": "gen1",
+    "cid": 283,
+    "hp": 220,
+    "hp_basis": "gross",
+    "rpo": "L77",
+    "name": "Turbo-Fire 283 4-bbl",
+    "trims": [
+     "Chevelle 300",
+     "300 Deluxe",
+     "Malibu",
+     "El Camino (context)"
+    ],
+    "nhra": true,
+    "sources": [
+     {
+      "name": "GM Heritage Center 1966 Chevelle Vehicle Information Kit",
+      "url": "https://www.gm.com/content/dam/company/no_search/heritage-archive-docs/vehicle-information-kits/chevrolet/1966-Chevrolet-Chevelle.pdf",
+      "says": "p.9 advertised ratings: 283 RPO L77 220 hp"
+     },
+     {
+      "name": "Chevellestuff.net 1966 Chevelle engine ID codes",
+      "url": "https://www.chevellestuff.net/1966/engine_id_codes.htm",
+      "says": "codes DG/DH/DL/DM: 283-4bbl 220 hp L77"
+     },
+     {
+      "name": "Chevy Hardcore (Power Automedia), Chevelle Engine Options: 1966, Randy Bolig",
+      "url": "https://www.chevyhardcore.com/news/chevelle-engine-options-1966",
+      "says": "283ci 220 hp"
+     }
+    ],
+    "status": "confirmed",
+    "note": ""
+   },
+   {
+    "gen": "gen1",
+    "cid": 327,
+    "hp": 275,
+    "hp_basis": "gross",
+    "rpo": "L30",
+    "name": "Turbo-Fire 327",
+    "trims": [
+     "Chevelle 300",
+     "300 Deluxe",
+     "Malibu",
+     "El Camino (context)"
+    ],
+    "nhra": true,
+    "sources": [
+     {
+      "name": "GM Heritage Center 1966 Chevelle Vehicle Information Kit",
+      "url": "https://www.gm.com/content/dam/company/no_search/heritage-archive-docs/vehicle-information-kits/chevrolet/1966-Chevrolet-Chevelle.pdf",
+      "says": "p.9 advertised ratings: Turbo-Fire 327 RPO L30 275 hp"
+     },
+     {
+      "name": "Chevellestuff.net 1966 Chevelle engine ID codes",
+      "url": "https://www.chevellestuff.net/1966/engine_id_codes.htm",
+      "says": "codes EA/EB/EC/EE: 327-4bbl 275 hp L30"
+     },
+     {
+      "name": "Chevy Hardcore (Power Automedia), Chevelle Engine Options: 1966, Randy Bolig",
+      "url": "https://www.chevyhardcore.com/news/chevelle-engine-options-1966",
+      "says": "327ci 275 hp"
+     }
+    ],
+    "status": "confirmed",
+    "note": ""
+   },
+   {
+    "gen": "gen1",
+    "cid": 327,
+    "hp": 350,
+    "hp_basis": "gross",
+    "rpo": "L79",
+    "name": "Turbo-Fire 327 (Holley)",
+    "trims": [
+     "Chevelle 300",
+     "300 Deluxe",
+     "Malibu",
+     "El Camino (context)"
+    ],
+    "nhra": true,
+    "sources": [
+     {
+      "name": "GM Heritage Center 1966 Chevelle Vehicle Information Kit",
+      "url": "https://www.gm.com/content/dam/company/no_search/heritage-archive-docs/vehicle-information-kits/chevrolet/1966-Chevrolet-Chevelle.pdf",
+      "says": "AMA specification pages: \"327 Cu.In. V-8 ... RPO L30 & L79\", \"350HP L79\" for models 13200/13400/13600; NOT in the p.7 dealer Power Teams chart"
+     },
+     {
+      "name": "Chevellestuff.net 1966 Chevelle engine ID codes",
+      "url": "https://www.chevellestuff.net/1966/engine_id_codes.htm",
+      "says": "codes EP/ER/ES 327/350 L79 listed under \"327 n/a\": production records show the engine built from Feb 7 1966, but 1966 RPO production numbers show no sales"
+     },
+     {
+      "name": "Chevy Hardcore (Power Automedia), Chevelle Engine Options: 1966, Randy Bolig",
+      "url": "https://www.chevyhardcore.com/news/chevelle-engine-options-1966",
+      "says": "1966 article lists only the 275-hp 327; no L79"
+     }
+    ],
+    "status": "disputed",
+    "note": "NHRA and GM's AMA specs list a 350-hp L79 for 1966, but Chevrolet's RPO sales figures record none, and the dealer Power Teams chart and Chevy Hardcore omit it. Listed but unconfirmed as sold; it returned for 1967 at 325 hp."
+   },
+   {
+    "gen": "gen1",
+    "cid": 396,
+    "hp": 325,
+    "hp_basis": "gross",
+    "rpo": "L35",
+    "name": "Turbo-Jet 396",
+    "trims": [
+     "SS 396",
+     "El Camino (context)"
+    ],
+    "nhra": true,
+    "sources": [
+     {
+      "name": "GM Heritage Center 1966 Chevelle Vehicle Information Kit",
+      "url": "https://www.gm.com/content/dam/company/no_search/heritage-archive-docs/vehicle-information-kits/chevrolet/1966-Chevrolet-Chevelle.pdf",
+      "says": "p.7 Power Teams: 396 325 HP standard, Super Sport and Sedan Pickup only; p.9 RPO L35"
+     },
+     {
+      "name": "Chevellestuff.net 1966 Chevelle engine ID codes",
+      "url": "https://www.chevellestuff.net/1966/engine_id_codes.htm",
+      "says": "codes EDH/EH/EKH/EKR/EM: 396-4bbl 325 hp L35; base SS396 engine"
+     },
+     {
+      "name": "Chevy Hardcore (Power Automedia), Chevelle Engine Options: 1966, Randy Bolig",
+      "url": "https://www.chevyhardcore.com/news/chevelle-engine-options-1966",
+      "says": "396ci 325 hp standard in SS 396"
+     },
+     {
+      "name": "Wikipedia - Chevrolet Chevelle",
+      "url": "https://en.wikipedia.org/wiki/Chevrolet_Chevelle",
+      "says": "SS396 standard 396 rated 325 hp"
+     }
+    ],
+    "status": "confirmed",
+    "note": ""
+   },
+   {
+    "gen": "gen1",
+    "cid": 396,
+    "hp": 360,
+    "hp_basis": "gross",
+    "rpo": "L34",
+    "name": "Turbo-Jet 396",
+    "trims": [
+     "SS 396",
+     "El Camino (context)"
+    ],
+    "nhra": true,
+    "sources": [
+     {
+      "name": "GM Heritage Center 1966 Chevelle Vehicle Information Kit",
+      "url": "https://www.gm.com/content/dam/company/no_search/heritage-archive-docs/vehicle-information-kits/chevrolet/1966-Chevrolet-Chevelle.pdf",
+      "says": "p.7 Power Teams: 396 360 HP RPO L34"
+     },
+     {
+      "name": "Chevellestuff.net 1966 Chevelle engine ID codes",
+      "url": "https://www.chevellestuff.net/1966/engine_id_codes.htm",
+      "says": "codes EF/EJ/EL/EN: 396-4bbl 360 hp L34"
+     },
+     {
+      "name": "Chevy Hardcore (Power Automedia), Chevelle Engine Options: 1966, Randy Bolig",
+      "url": "https://www.chevyhardcore.com/news/chevelle-engine-options-1966",
+      "says": "396ci 360 hp optional"
+     },
+     {
+      "name": "Wikipedia - Chevrolet Chevelle",
+      "url": "https://en.wikipedia.org/wiki/Chevrolet_Chevelle",
+      "says": "optional 360 hp (mid 396 rated 360 for 1966, 350 thereafter)"
+     }
+    ],
+    "status": "confirmed",
+    "note": ""
+   },
+   {
+    "gen": "gen1",
+    "cid": 396,
+    "hp": 375,
+    "hp_basis": "gross",
+    "rpo": "L78",
+    "name": "Turbo-Jet 396 (solid lifter)",
+    "trims": [
+     "SS 396",
+     "El Camino (context)"
+    ],
+    "nhra": true,
+    "sources": [
+     {
+      "name": "GM Heritage Center 1966 Chevelle Vehicle Information Kit",
+      "url": "https://www.gm.com/content/dam/company/no_search/heritage-archive-docs/vehicle-information-kits/chevrolet/1966-Chevrolet-Chevelle.pdf",
+      "says": "p.7 Power Teams: 396 375 HP RPO L78, mech. lifters, 4-speed only"
+     },
+     {
+      "name": "Chevellestuff.net 1966 Chevelle engine ID codes",
+      "url": "https://www.chevellestuff.net/1966/engine_id_codes.htm",
+      "says": "code EG: 396-4bbl 375 hp L78, Holley/solid cam; 3,099 installed; reinstated Oct 7 1965"
+     },
+     {
+      "name": "Chevy Hardcore (Power Automedia), Chevelle Engine Options: 1966, Randy Bolig",
+      "url": "https://www.chevyhardcore.com/news/chevelle-engine-options-1966",
+      "says": "396 375 hp late offering via spring 1966 sales addendum"
+     },
+     {
+      "name": "Wikipedia - Chevrolet Chevelle",
+      "url": "https://en.wikipedia.org/wiki/Chevrolet_Chevelle",
+      "says": "optional 375 hp"
+     }
+    ],
+    "status": "confirmed",
+    "note": "Late availability; 3,099 installed in SS 396 and El Camino."
+   }
+  ],
+  "1967": [
+   {
+    "gen": "gen1",
+    "cid": 230,
+    "hp": 140,
+    "hp_basis": "gross",
+    "rpo": "std six",
+    "name": "Turbo-Thrift 230",
+    "trims": [
+     "Chevelle 300",
+     "300 Deluxe",
+     "Malibu",
+     "El Camino (context)"
+    ],
+    "nhra": true,
+    "sources": [
+     {
+      "name": "GM Heritage Center 1967 Chevelle Vehicle Information Kit",
+      "url": "https://www.gm.com/content/dam/company/no_search/heritage-archive-docs/vehicle-information-kits/chevrolet/1967-Chevrolet-Chevelle.pdf",
+      "says": "p.4 price list \"140-hp ... 230 Engine\" for six-cylinder models; p.26 Power Teams 230 140 HP"
+     },
+     {
+      "name": "Chevellestuff.net 1967 Chevelle engine ID codes",
+      "url": "https://www.chevellestuff.net/1967/engine_id_codes.htm",
+      "says": "230-1bbl 140 hp"
+     },
+     {
+      "name": "Chevy Hardcore (Power Automedia), Chevelle Engine Options: 1967, Randy Bolig",
+      "url": "https://www.chevyhardcore.com/?p=8664",
+      "says": "230ci 140 hp base"
+     }
+    ],
+    "status": "confirmed",
+    "note": "194 dropped for 1967."
+   },
+   {
+    "gen": "gen1",
+    "cid": 250,
+    "hp": 155,
+    "hp_basis": "gross",
+    "rpo": "L22",
+    "name": "Turbo-Thrift 250",
+    "trims": [
+     "Chevelle 300",
+     "300 Deluxe",
+     "Malibu",
+     "El Camino (context)"
+    ],
+    "nhra": true,
+    "sources": [
+     {
+      "name": "GM Heritage Center 1967 Chevelle Vehicle Information Kit",
+      "url": "https://www.gm.com/content/dam/company/no_search/heritage-archive-docs/vehicle-information-kits/chevrolet/1967-Chevrolet-Chevelle.pdf",
+      "says": "p.26 Power Teams: 250 155 HP 6-cylinder"
+     },
+     {
+      "name": "Chevellestuff.net 1967 Chevelle engine ID codes",
+      "url": "https://www.chevellestuff.net/1967/engine_id_codes.htm",
+      "says": "250-1bbl 155 hp L22"
+     },
+     {
+      "name": "Chevy Hardcore (Power Automedia), Chevelle Engine Options: 1967, Randy Bolig",
+      "url": "https://www.chevyhardcore.com/?p=8664",
+      "says": "250ci 155 hp"
+     }
+    ],
+    "status": "confirmed",
+    "note": ""
+   },
+   {
+    "gen": "gen1",
+    "cid": 283,
+    "hp": 195,
+    "hp_basis": "gross",
+    "rpo": "std V8",
+    "name": "Turbo-Fire 283 2-bbl",
+    "trims": [
+     "Chevelle 300",
+     "300 Deluxe",
+     "Malibu",
+     "El Camino (context)"
+    ],
+    "nhra": true,
+    "sources": [
+     {
+      "name": "GM Heritage Center 1967 Chevelle Vehicle Information Kit",
+      "url": "https://www.gm.com/content/dam/company/no_search/heritage-archive-docs/vehicle-information-kits/chevrolet/1967-Chevrolet-Chevelle.pdf",
+      "says": "p.26 Power Teams: Turbo-Fire 283 2-bbl"
+     },
+     {
+      "name": "Chevellestuff.net 1967 Chevelle engine ID codes",
+      "url": "https://www.chevellestuff.net/1967/engine_id_codes.htm",
+      "says": "283-2bbl 195 hp"
+     },
+     {
+      "name": "Chevy Hardcore (Power Automedia), Chevelle Engine Options: 1967, Randy Bolig",
+      "url": "https://www.chevyhardcore.com/?p=8664",
+      "says": "283ci 195 hp 2-bbl"
+     }
+    ],
+    "status": "confirmed",
+    "note": "4-bbl 283 (L77) dropped for 1967."
+   },
+   {
+    "gen": "gen1",
+    "cid": 327,
+    "hp": 275,
+    "hp_basis": "gross",
+    "rpo": "L30",
+    "name": "Turbo-Fire 327",
+    "trims": [
+     "Chevelle 300",
+     "300 Deluxe",
+     "Malibu",
+     "El Camino (context)"
+    ],
+    "nhra": true,
+    "sources": [
+     {
+      "name": "GM Heritage Center 1967 Chevelle Vehicle Information Kit",
+      "url": "https://www.gm.com/content/dam/company/no_search/heritage-archive-docs/vehicle-information-kits/chevrolet/1967-Chevrolet-Chevelle.pdf",
+      "says": "p.26 Power Teams: 327 275 HP; p.45 option list L30"
+     },
+     {
+      "name": "Chevellestuff.net 1967 Chevelle engine ID codes",
+      "url": "https://www.chevellestuff.net/1967/engine_id_codes.htm",
+      "says": "327-4bbl 275 hp L30"
+     },
+     {
+      "name": "Chevy Hardcore (Power Automedia), Chevelle Engine Options: 1967, Randy Bolig",
+      "url": "https://www.chevyhardcore.com/?p=8664",
+      "says": "327 RPO L30 275 hp"
+     }
+    ],
+    "status": "confirmed",
+    "note": ""
+   },
+   {
+    "gen": "gen1",
+    "cid": 327,
+    "hp": 325,
+    "hp_basis": "gross",
+    "rpo": "L79",
+    "name": "Turbo-Fire 327 (Holley)",
+    "trims": [
+     "Chevelle 300",
+     "300 Deluxe",
+     "Malibu",
+     "El Camino (context)"
+    ],
+    "nhra": true,
+    "sources": [
+     {
+      "name": "GM Heritage Center 1967 Chevelle Vehicle Information Kit",
+      "url": "https://www.gm.com/content/dam/company/no_search/heritage-archive-docs/vehicle-information-kits/chevrolet/1967-Chevrolet-Chevelle.pdf",
+      "says": "p.26 Power Teams 327 4-bbl; p.9 option notes \"325-hp 327\"; p.45 option list L79"
+     },
+     {
+      "name": "Chevellestuff.net 1967 Chevelle engine ID codes",
+      "url": "https://www.chevellestuff.net/1967/engine_id_codes.htm",
+      "says": "327-4bbl 325 hp L79"
+     },
+     {
+      "name": "Chevy Hardcore (Power Automedia), Chevelle Engine Options: 1967, Randy Bolig",
+      "url": "https://www.chevyhardcore.com/?p=8664",
+      "says": "327 RPO L79 325 hp, 11.0:1, aluminum high-rise intake with Holley"
+     }
+    ],
+    "status": "confirmed",
+    "note": ""
+   },
+   {
+    "gen": "gen1",
+    "cid": 396,
+    "hp": 325,
+    "hp_basis": "gross",
+    "rpo": "L35",
+    "name": "Turbo-Jet 396",
+    "trims": [
+     "SS 396",
+     "El Camino (context)"
+    ],
+    "nhra": true,
+    "sources": [
+     {
+      "name": "GM Heritage Center 1967 Chevelle Vehicle Information Kit",
+      "url": "https://www.gm.com/content/dam/company/no_search/heritage-archive-docs/vehicle-information-kits/chevrolet/1967-Chevrolet-Chevelle.pdf",
+      "says": "p.4 price list: SS 396 with \"325-hp Turbo-Jet 396 Engine\"; p.26 Power Teams"
+     },
+     {
+      "name": "Chevellestuff.net 1967 Chevelle engine ID codes",
+      "url": "https://www.chevellestuff.net/1967/engine_id_codes.htm",
+      "says": "396-4bbl 325 hp L35, base SS396; 45,218 installed in coupes/convertibles"
+     },
+     {
+      "name": "Chevy Hardcore (Power Automedia), Chevelle Engine Options: 1967, Randy Bolig",
+      "url": "https://www.chevyhardcore.com/?p=8664",
+      "says": "396 RPO L35 325 hp base big-block"
+     },
+     {
+      "name": "Wikipedia - Chevrolet Chevelle",
+      "url": "https://en.wikipedia.org/wiki/Chevrolet_Chevelle",
+      "says": "SS396 standard 325 hp"
+     }
+    ],
+    "status": "confirmed",
+    "note": ""
+   },
+   {
+    "gen": "gen1",
+    "cid": 396,
+    "hp": 350,
+    "hp_basis": "gross",
+    "rpo": "L34",
+    "name": "Turbo-Jet 396",
+    "trims": [
+     "SS 396",
+     "El Camino (context)"
+    ],
+    "nhra": true,
+    "sources": [
+     {
+      "name": "GM Heritage Center 1967 Chevelle Vehicle Information Kit",
+      "url": "https://www.gm.com/content/dam/company/no_search/heritage-archive-docs/vehicle-information-kits/chevrolet/1967-Chevrolet-Chevelle.pdf",
+      "says": "p.26 Power Teams: Turbo-Jet 396 350 HP V-8"
+     },
+     {
+      "name": "Chevellestuff.net 1967 Chevelle engine ID codes",
+      "url": "https://www.chevellestuff.net/1967/engine_id_codes.htm",
+      "says": "396-4bbl 350 hp L34; 17,176 installed"
+     },
+     {
+      "name": "Chevy Hardcore (Power Automedia), Chevelle Engine Options: 1967, Randy Bolig",
+      "url": "https://www.chevyhardcore.com/?p=8664",
+      "says": "396 RPO L34 350 hp (down from 360)"
+     },
+     {
+      "name": "Wikipedia - Chevrolet Chevelle",
+      "url": "https://en.wikipedia.org/wiki/Chevrolet_Chevelle",
+      "says": "mid 396 rated 350 hp from 1967"
+     }
+    ],
+    "status": "confirmed",
+    "note": ""
+   },
+   {
+    "gen": "gen1",
+    "cid": 396,
+    "hp": 375,
+    "hp_basis": "gross",
+    "rpo": "L78",
+    "name": "Turbo-Jet 396 (solid lifter)",
+    "trims": [
+     "SS 396",
+     "El Camino (context)"
+    ],
+    "nhra": true,
+    "sources": [
+     {
+      "name": "GM Heritage Center 1967 Chevelle Vehicle Information Kit",
+      "url": "https://www.gm.com/content/dam/company/no_search/heritage-archive-docs/vehicle-information-kits/chevrolet/1967-Chevrolet-Chevelle.pdf",
+      "says": "AMA specification pages (revised 12-22-66): \"396 cu. in. V-8 375 HP Optional (L78)\" for models 13817/13867 (SS 396) and 13480/13680 (El Camino), 375 @ 5600, 11.0:1"
+     },
+     {
+      "name": "Chevellestuff.net 1967 Chevelle engine ID codes",
+      "url": "https://www.chevellestuff.net/1967/engine_id_codes.htm",
+      "says": "396-4bbl 375 hp L78; option removed at start of year, reappeared about April 1967; 612 installed in SS 396 (630 built at Tonawanda, codes EG/EX)"
+     },
+     {
+      "name": "Chevy Hardcore (Power Automedia), Chevelle Engine Options: 1967, Randy Bolig",
+      "url": "https://www.chevyhardcore.com/?p=8664",
+      "says": "L78 \"not officially available\" but about 612 cars received it \"as a dealer-installed option\""
+     },
+     {
+      "name": "Wikipedia - Chevrolet Chevelle",
+      "url": "https://en.wikipedia.org/wiki/Chevrolet_Chevelle",
+      "says": "SS396 optional 375 hp 396"
+     }
+    ],
+    "status": "confirmed",
+    "note": "About 612 cars. Chevellestuff says the factory option was reinstated about April 1967 with Tonawanda engine codes; Chevy Hardcore calls it dealer-installed. GM's AMA specs list it as a factory option; it is not in the kit's dealer Power Teams chart."
+   }
+  ],
+  "1973": [
+   {
+    "gen": "gen3",
+    "cid": 250,
+    "hp": 100,
+    "hp_basis": "net",
+    "rpo": "L22",
+    "name": "Turbo-Thrift 250",
+    "trims": [
+     "Deluxe",
+     "Malibu",
+     "El Camino (context)"
+    ],
+    "nhra": true,
+    "sources": [
+     {
+      "name": "GM Heritage Center 1973 Chevelle Vehicle Information Kit",
+      "url": "https://www.gm.com/content/dam/company/no_search/heritage-archive-docs/vehicle-information-kits/chevrolet/1973-Chevrolet-Chevelle.pdf",
+      "says": "p.14 engine specs (SAE net): Turbo-Thrift 250, 100 @ 3600, ordering code L22; p.30 VIN code D = L6-250 (100 H.P.)"
+     },
+     {
+      "name": "1973 Chevrolet Chevelle sales brochure (oldcarbrochures.org scan)",
+      "url": "https://oldcarbrochures.org/United%20States/Chevrolet/1973-Chevrolet/1973-Chevrolet-Chevelle-Brochure/",
+      "says": "Power Teams: Turbo-Thrift 250 Six (Standard)"
+     },
+     {
+      "name": "Wikipedia - Chevrolet Chevelle",
+      "url": "https://en.wikipedia.org/wiki/Chevrolet_Chevelle",
+      "says": "250 inline-six standard on Deluxe and Malibu, \"110 hp\""
+     },
+     {
+      "name": "Chevy Hardcore (Power Automedia), Chevelle Engine Options: 1973, Randy Bolig",
+      "url": "https://www.chevyhardcore.com/news/chevelle-engine-options-1973/",
+      "says": "250 six \"110 hp\""
+     }
+    ],
+    "status": "confirmed",
+    "note": "Wikipedia and Chevy Hardcore give 110 hp; GM's spec sheet and NHRA give 100 hp net. Use 100."
+   },
+   {
+    "gen": "gen3",
+    "cid": 307,
+    "hp": 115,
+    "hp_basis": "net",
+    "rpo": "std V8",
+    "name": "Turbo-Fire 307",
+    "trims": [
+     "Deluxe",
+     "Malibu",
+     "El Camino (context)"
+    ],
+    "nhra": true,
+    "sources": [
+     {
+      "name": "GM Heritage Center 1973 Chevelle Vehicle Information Kit",
+      "url": "https://www.gm.com/content/dam/company/no_search/heritage-archive-docs/vehicle-information-kits/chevrolet/1973-Chevrolet-Chevelle.pdf",
+      "says": "p.14 engine specs (SAE net): Turbo-Fire 307, 115 @ 3600; p.30 VIN code F = V8-307 (115 H.P.)"
+     },
+     {
+      "name": "1973 Chevrolet Chevelle sales brochure (oldcarbrochures.org scan)",
+      "url": "https://oldcarbrochures.org/United%20States/Chevrolet/1973-Chevrolet/1973-Chevrolet-Chevelle-Brochure/",
+      "says": "Power Teams: Turbo-Fire 307 V8 (Standard)"
+     },
+     {
+      "name": "Wikipedia - Chevrolet Chevelle",
+      "url": "https://en.wikipedia.org/wiki/Chevrolet_Chevelle",
+      "says": "307 2-bbl V8 standard on Deluxe and Malibu, \"110 hp\""
+     },
+     {
+      "name": "Chevy Hardcore (Power Automedia), Chevelle Engine Options: 1973, Randy Bolig",
+      "url": "https://www.chevyhardcore.com/news/chevelle-engine-options-1973/",
+      "says": "307 V8 \"110 hp\""
+     }
+    ],
+    "status": "confirmed",
+    "note": "Wikipedia and Chevy Hardcore give 110 hp; GM and NHRA give 115 hp net. Use 115. Last year of the 307 in the Chevelle."
+   },
+   {
+    "gen": "gen3",
+    "cid": 350,
+    "hp": 145,
+    "hp_basis": "net",
+    "rpo": "L65",
+    "name": "Turbo-Fire 350-2",
+    "trims": [
+     "Deluxe",
+     "Malibu",
+     "Laguna (std)",
+     "El Camino (context)"
+    ],
+    "nhra": true,
+    "sources": [
+     {
+      "name": "GM Heritage Center 1973 Chevelle Vehicle Information Kit",
+      "url": "https://www.gm.com/content/dam/company/no_search/heritage-archive-docs/vehicle-information-kits/chevrolet/1973-Chevrolet-Chevelle.pdf",
+      "says": "p.14 engine specs: Turbo-Fire 350-2, ordering code L65, 145 @ 4000 net; standard on Laguna"
+     },
+     {
+      "name": "1973 Chevrolet Chevelle sales brochure (oldcarbrochures.org scan)",
+      "url": "https://oldcarbrochures.org/United%20States/Chevrolet/1973-Chevrolet/1973-Chevrolet-Chevelle-Brochure/",
+      "says": "Power Teams: Turbo-Fire 350-2 V8 (Standard on Laguna)"
+     },
+     {
+      "name": "Wikipedia - Chevrolet Chevelle",
+      "url": "https://en.wikipedia.org/wiki/Chevrolet_Chevelle",
+      "says": "350 2-bbl of 145 hp, base Laguna engine"
+     },
+     {
+      "name": "Chevy Hardcore (Power Automedia), Chevelle Engine Options: 1973, Randy Bolig",
+      "url": "https://www.chevyhardcore.com/news/chevelle-engine-options-1973/",
+      "says": "350 2-bbl 145 hp, standard in Laguna"
+     }
+    ],
+    "status": "confirmed",
+    "note": ""
+   },
+   {
+    "gen": "gen3",
+    "cid": 350,
+    "hp": 175,
+    "hp_basis": "net",
+    "rpo": "L48",
+    "name": "Turbo-Fire 350-4",
+    "trims": [
+     "Deluxe",
+     "Malibu",
+     "Malibu SS",
+     "Laguna",
+     "El Camino (context)"
+    ],
+    "nhra": true,
+    "sources": [
+     {
+      "name": "GM Heritage Center 1973 Chevelle Vehicle Information Kit",
+      "url": "https://www.gm.com/content/dam/company/no_search/heritage-archive-docs/vehicle-information-kits/chevrolet/1973-Chevrolet-Chevelle.pdf",
+      "says": "p.14 engine specs: Turbo-Fire 350-4, ordering code L48, 175 @ 4000 net, dual exhaust"
+     },
+     {
+      "name": "1973 Chevrolet Chevelle sales brochure (oldcarbrochures.org scan)",
+      "url": "https://oldcarbrochures.org/United%20States/Chevrolet/1973-Chevrolet/1973-Chevrolet-Chevelle-Brochure/",
+      "says": "Power Teams: Turbo-Fire 350-4 V8"
+     },
+     {
+      "name": "Wikipedia - Chevrolet Chevelle",
+      "url": "https://en.wikipedia.org/wiki/Chevrolet_Chevelle",
+      "says": "350 4-bbl of 175 hp optional for any Chevelle"
+     },
+     {
+      "name": "Chevy Hardcore (Power Automedia), Chevelle Engine Options: 1973, Randy Bolig",
+      "url": "https://www.chevyhardcore.com/news/chevelle-engine-options-1973/",
+      "says": "350 4-bbl 175 hp"
+     }
+    ],
+    "status": "confirmed",
+    "note": ""
+   },
+   {
+    "gen": "gen3",
+    "cid": 454,
+    "hp": 245,
+    "hp_basis": "net",
+    "rpo": "LS4",
+    "name": "Turbo-Jet 454-4",
+    "trims": [
+     "Deluxe",
+     "Malibu",
+     "Malibu SS",
+     "Laguna",
+     "El Camino (context)"
+    ],
+    "nhra": true,
+    "sources": [
+     {
+      "name": "GM Heritage Center 1973 Chevelle Vehicle Information Kit",
+      "url": "https://www.gm.com/content/dam/company/no_search/heritage-archive-docs/vehicle-information-kits/chevrolet/1973-Chevrolet-Chevelle.pdf",
+      "says": "p.14 engine specs: Turbo-Jet 454-4, ordering code LS4, 245 @ 4000 net, dual exhaust"
+     },
+     {
+      "name": "1973 Chevrolet Chevelle sales brochure (oldcarbrochures.org scan)",
+      "url": "https://oldcarbrochures.org/United%20States/Chevrolet/1973-Chevrolet/1973-Chevrolet-Chevelle-Brochure/",
+      "says": "Power Teams: Turbo-Jet 454-4 V8"
+     },
+     {
+      "name": "Wikipedia - Chevrolet Chevelle",
+      "url": "https://en.wikipedia.org/wiki/Chevrolet_Chevelle",
+      "says": "454 4-bbl rated 245 hp optional for any Chevelle; 2,500 SS cars had the 454"
+     },
+     {
+      "name": "Chevy Hardcore (Power Automedia), Chevelle Engine Options: 1973, Randy Bolig",
+      "url": "https://www.chevyhardcore.com/news/chevelle-engine-options-1973/",
+      "says": "454 V8 (no rating given)"
+     }
+    ],
+    "status": "confirmed",
+    "note": "Last year of the SS option."
+   }
+  ],
+  "1974": [
+   {
+    "gen": "gen3",
+    "cid": 250,
+    "hp": 100,
+    "hp_basis": "net",
+    "rpo": "L22",
+    "name": "Turbo-Thrift 250",
+    "trims": [
+     "Malibu",
+     "Malibu Classic",
+     "El Camino (context)"
+    ],
+    "nhra": true,
+    "sources": [
+     {
+      "name": "GM Heritage Center 1974 Chevelle Vehicle Information Kit",
+      "url": "https://www.gm.com/content/dam/company/no_search/heritage-archive-docs/vehicle-information-kits/chevrolet/1974-Chevrolet-Chevelle.pdf",
+      "says": "p.14 engine specs (SAE net); p.32 VIN code D = L6-250 (100 H.P.)"
+     },
+     {
+      "name": "1974 Chevrolet Chevelle sales brochure (oldcarbrochures.org scan)",
+      "url": "https://oldcarbrochures.org/United%20States/Chevrolet/1974-Chevrolet/1974-Chevrolet-Chevelle-Brochure-Rev/",
+      "says": "Power teams: Turbo-Thrift 250 Six 100-hp, standard except Laguna Type S-3"
+     }
+    ],
+    "status": "confirmed",
+    "note": "Third source is a second GM document (the sales brochure); no non-GM per-engine list was found for 1974. Not offered on Laguna Type S-3."
+   },
+   {
+    "gen": "gen3",
+    "cid": 350,
+    "hp": 145,
+    "hp_basis": "net",
+    "rpo": "L65",
+    "name": "Turbo-Fire 350-2",
+    "trims": [
+     "Malibu",
+     "Malibu Classic",
+     "El Camino (context)",
+     "Laguna Type S-3 (std)"
+    ],
+    "nhra": true,
+    "sources": [
+     {
+      "name": "GM Heritage Center 1974 Chevelle Vehicle Information Kit",
+      "url": "https://www.gm.com/content/dam/company/no_search/heritage-archive-docs/vehicle-information-kits/chevrolet/1974-Chevrolet-Chevelle.pdf",
+      "says": "p.14 engine specs; p.32 VIN H = V8-350 (145 H.P.), RPO L65"
+     },
+     {
+      "name": "1974 Chevrolet Chevelle sales brochure (oldcarbrochures.org scan)",
+      "url": "https://oldcarbrochures.org/United%20States/Chevrolet/1974-Chevrolet/1974-Chevrolet-Chevelle-Brochure-Rev/",
+      "says": "Power teams: Turbo-Fire 350 V8 145-hp, 2-bbl single exhaust, standard V8"
+     },
+     {
+      "name": "Chevy Hardcore - \"Chevelle Laguna: Forgotten Gem Or Best Forgotten?\"",
+      "url": "https://www.chevyhardcore.com/?p=5704",
+      "says": "Laguna could have a two-barrel 350, two- and four-barrel small-block 400s, and for 1974 a four-barrel 454 (no ratings)"
+     }
+    ],
+    "status": "confirmed",
+    "note": "Ratings from GM documents only (kit + brochure); Chevy Hardcore independently confirms the engine was offered (Laguna) but gives no rating."
+   },
+   {
+    "gen": "gen3",
+    "cid": 350,
+    "hp": 160,
+    "hp_basis": "net",
+    "rpo": "LM1",
+    "name": "Turbo-Fire 350-4",
+    "trims": [
+     "Malibu",
+     "Malibu Classic",
+     "El Camino (context)",
+     "Laguna Type S-3"
+    ],
+    "nhra": true,
+    "sources": [
+     {
+      "name": "GM Heritage Center 1974 Chevelle Vehicle Information Kit",
+      "url": "https://www.gm.com/content/dam/company/no_search/heritage-archive-docs/vehicle-information-kits/chevrolet/1974-Chevrolet-Chevelle.pdf",
+      "says": "p.14 \"Turbo-Fire 350-4 ... 160 @ 3800\"; p.32 VIN L = V8-350 (160 H.P.), RPO LM1"
+     },
+     {
+      "name": "1974 Chevrolet Chevelle sales brochure (oldcarbrochures.org scan)",
+      "url": "https://oldcarbrochures.org/United%20States/Chevrolet/1974-Chevrolet/1974-Chevrolet-Chevelle-Brochure-Rev/",
+      "says": "Power teams: Turbo-Fire 350 V8 160-hp, 4-bbl single exhaust"
+     }
+    ],
+    "status": "confirmed",
+    "note": "Third source is a second GM document (the sales brochure); no non-GM per-engine list was found for 1974."
+   },
+   {
+    "gen": "gen3",
+    "cid": 400,
+    "hp": 150,
+    "hp_basis": "net",
+    "rpo": "LF6",
+    "name": "Turbo-Fire 400-2",
+    "trims": [
+     "Malibu",
+     "Malibu Classic",
+     "El Camino (context)",
+     "Laguna Type S-3"
+    ],
+    "nhra": true,
+    "sources": [
+     {
+      "name": "GM Heritage Center 1974 Chevelle Vehicle Information Kit",
+      "url": "https://www.gm.com/content/dam/company/no_search/heritage-archive-docs/vehicle-information-kits/chevrolet/1974-Chevrolet-Chevelle.pdf",
+      "says": "p.14 \"Turbo-Fire 400-2 ... 150 @ 3200\"; p.21 \"LF6 400 C.I.D./150 SAE Net HP\"; p.32 VIN R = V8-400 (150 H.P.), RPO LF6"
+     },
+     {
+      "name": "1974 Chevrolet Chevelle sales brochure (oldcarbrochures.org scan)",
+      "url": "https://oldcarbrochures.org/United%20States/Chevrolet/1974-Chevrolet/1974-Chevrolet-Chevelle-Brochure-Rev/",
+      "says": "Power teams: Turbo-Fire 400 V8 150-hp, 2-bbl single exhaust"
+     },
+     {
+      "name": "Chevy Hardcore - \"Chevelle Laguna: Forgotten Gem Or Best Forgotten?\"",
+      "url": "https://www.chevyhardcore.com/?p=5704",
+      "says": "Laguna could have a two-barrel 350, two- and four-barrel small-block 400s, and for 1974 a four-barrel 454 (no ratings)"
+     }
+    ],
+    "status": "confirmed",
+    "note": "Ratings from GM documents only (kit + brochure); Chevy Hardcore independently confirms the engine was offered (Laguna) but gives no rating."
+   },
+   {
+    "gen": "gen3",
+    "cid": 400,
+    "hp": 180,
+    "hp_basis": "net",
+    "rpo": "LT4",
+    "name": "Turbo-Fire 400-4",
+    "trims": [
+     "Malibu",
+     "Malibu Classic",
+     "El Camino (context)",
+     "Laguna Type S-3"
+    ],
+    "nhra": true,
+    "sources": [
+     {
+      "name": "GM Heritage Center 1974 Chevelle Vehicle Information Kit",
+      "url": "https://www.gm.com/content/dam/company/no_search/heritage-archive-docs/vehicle-information-kits/chevrolet/1974-Chevrolet-Chevelle.pdf",
+      "says": "p.14 \"Turbo-Fire 400-4 ... 180 @ 3800\"; p.32 VIN U = V8-400 (180 H.P.), RPO LT4"
+     },
+     {
+      "name": "1974 Chevrolet Chevelle sales brochure (oldcarbrochures.org scan)",
+      "url": "https://oldcarbrochures.org/United%20States/Chevrolet/1974-Chevrolet/1974-Chevrolet-Chevelle-Brochure-Rev/",
+      "says": "Power teams: Turbo-Fire 400 V8 180-hp, 4-bbl single exhaust"
+     },
+     {
+      "name": "Chevy Hardcore - \"Chevelle Laguna: Forgotten Gem Or Best Forgotten?\"",
+      "url": "https://www.chevyhardcore.com/?p=5704",
+      "says": "Laguna could have a two-barrel 350, two- and four-barrel small-block 400s, and for 1974 a four-barrel 454 (no ratings)"
+     }
+    ],
+    "status": "confirmed",
+    "note": "Ratings from GM documents only (kit + brochure); Chevy Hardcore independently confirms the engine was offered (Laguna) but gives no rating."
+   },
+   {
+    "gen": "gen3",
+    "cid": 454,
+    "hp": 235,
+    "hp_basis": "net",
+    "rpo": "LS4",
+    "name": "Turbo-Jet 454-4",
+    "trims": [
+     "Malibu",
+     "Malibu Classic",
+     "El Camino (context)",
+     "Laguna Type S-3"
+    ],
+    "nhra": true,
+    "sources": [
+     {
+      "name": "GM Heritage Center 1974 Chevelle Vehicle Information Kit",
+      "url": "https://www.gm.com/content/dam/company/no_search/heritage-archive-docs/vehicle-information-kits/chevrolet/1974-Chevrolet-Chevelle.pdf",
+      "says": "p.14 \"Turbo-Jet 454-4 ... 235 @ 4000\", dual exhaust; p.32 VIN Y = V8-454 (235 H.P.), RPO LS4"
+     },
+     {
+      "name": "1974 Chevrolet Chevelle sales brochure (oldcarbrochures.org scan)",
+      "url": "https://oldcarbrochures.org/United%20States/Chevrolet/1974-Chevrolet/1974-Chevrolet-Chevelle-Brochure-Rev/",
+      "says": "Power teams: Turbo-Jet 454 V8 235-hp, 4-bbl dual exhaust"
+     },
+     {
+      "name": "Chevy Hardcore - \"Chevelle Laguna: Forgotten Gem Or Best Forgotten?\"",
+      "url": "https://www.chevyhardcore.com/?p=5704",
+      "says": "Laguna could have a two-barrel 350, two- and four-barrel small-block 400s, and for 1974 a four-barrel 454 (no ratings)"
+     }
+    ],
+    "status": "confirmed",
+    "note": "Ratings from GM documents only (kit + brochure); Chevy Hardcore independently confirms the engine was offered (Laguna) but gives no rating."
+   }
+  ],
+  "1975": [
+   {
+    "gen": "gen3",
+    "cid": 250,
+    "hp": 105,
+    "hp_basis": "net",
+    "rpo": "L22",
+    "name": "Turbo-Thrift 250",
+    "trims": [
+     "Malibu",
+     "Malibu Classic",
+     "El Camino (context)"
+    ],
+    "nhra": true,
+    "sources": [
+     {
+      "name": "GM Heritage Center 1975 Chevelle Vehicle Information Kit",
+      "url": "https://www.gm.com/content/dam/company/no_search/heritage-archive-docs/vehicle-information-kits/chevrolet/1975-Chevrolet-Chevelle.pdf",
+      "says": "p.16 VIN D = L6-250 (105 H.P.), Turbo-Thrift 250 base engine"
+     },
+     {
+      "name": "1975 Chevrolet Chevelle sales brochure (oldcarbrochures.org scan)",
+      "url": "https://oldcarbrochures.org/United%20States/Chevrolet/1975-Chevrolet/1975-Chevrolet-Chevelle-Brochure/",
+      "says": "Power Teams: 250-1 six, 105 net hp, standard"
+     },
+     {
+      "name": "Wikipedia - Chevrolet Chevelle",
+      "url": "https://en.wikipedia.org/wiki/Chevrolet_Chevelle",
+      "says": "engines ranged from the standard 250 six ..."
+     }
+    ],
+    "status": "confirmed",
+    "note": ""
+   },
+   {
+    "gen": "gen3",
+    "cid": 350,
+    "hp": 145,
+    "hp_basis": "net",
+    "rpo": "L65",
+    "name": "Turbo-Fire 350-2",
+    "trims": [
+     "Malibu",
+     "Malibu Classic",
+     "El Camino (context)",
+     "Laguna Type S-3 (std)"
+    ],
+    "nhra": true,
+    "sources": [
+     {
+      "name": "GM Heritage Center 1975 Chevelle Vehicle Information Kit",
+      "url": "https://www.gm.com/content/dam/company/no_search/heritage-archive-docs/vehicle-information-kits/chevrolet/1975-Chevrolet-Chevelle.pdf",
+      "says": "p.16 VIN H = V8-350 (145 H.P.), RPO L65"
+     },
+     {
+      "name": "1975 Chevrolet Chevelle sales brochure (oldcarbrochures.org scan)",
+      "url": "https://oldcarbrochures.org/United%20States/Chevrolet/1975-Chevrolet/1975-Chevrolet-Chevelle-Brochure/",
+      "says": "Power Teams: 350-2 V8 145 hp, standard on all V8 models"
+     },
+     {
+      "name": "Wikipedia - Chevrolet Chevelle",
+      "url": "https://en.wikipedia.org/wiki/Chevrolet_Chevelle",
+      "says": "standard ... 350/2-barrel V8"
+     }
+    ],
+    "status": "confirmed",
+    "note": ""
+   },
+   {
+    "gen": "gen3",
+    "cid": 350,
+    "hp": 155,
+    "hp_basis": "net",
+    "rpo": "LM1",
+    "name": "Turbo-Fire 350-4",
+    "trims": [
+     "Malibu",
+     "Malibu Classic",
+     "El Camino (context)",
+     "Laguna Type S-3"
+    ],
+    "nhra": true,
+    "sources": [
+     {
+      "name": "GM Heritage Center 1975 Chevelle Vehicle Information Kit",
+      "url": "https://www.gm.com/content/dam/company/no_search/heritage-archive-docs/vehicle-information-kits/chevrolet/1975-Chevrolet-Chevelle.pdf",
+      "says": "p.16 VIN L = V8-350 (155 H.P.), RPO LM1"
+     },
+     {
+      "name": "1975 Chevrolet Chevelle sales brochure (oldcarbrochures.org scan)",
+      "url": "https://oldcarbrochures.org/United%20States/Chevrolet/1975-Chevrolet/1975-Chevrolet-Chevelle-Brochure/",
+      "says": "Power Teams: 350-4 V8 155 hp"
+     }
+    ],
+    "status": "confirmed",
+    "note": "Wikipedia does not mention the 4-bbl 350 for 1975; third source is the GM sales brochure."
+   },
+   {
+    "gen": "gen3",
+    "cid": 400,
+    "hp": 175,
+    "hp_basis": "net",
+    "rpo": "LT4",
+    "name": "Turbo-Fire 400-4",
+    "trims": [
+     "Malibu",
+     "Malibu Classic",
+     "El Camino (context)",
+     "Laguna Type S-3"
+    ],
+    "nhra": true,
+    "sources": [
+     {
+      "name": "GM Heritage Center 1975 Chevelle Vehicle Information Kit",
+      "url": "https://www.gm.com/content/dam/company/no_search/heritage-archive-docs/vehicle-information-kits/chevrolet/1975-Chevrolet-Chevelle.pdf",
+      "says": "p.16 VIN U = V8-400 (175 H.P.), RPO LT4"
+     },
+     {
+      "name": "1975 Chevrolet Chevelle sales brochure (oldcarbrochures.org scan)",
+      "url": "https://oldcarbrochures.org/United%20States/Chevrolet/1975-Chevrolet/1975-Chevrolet-Chevelle-Brochure/",
+      "says": "Power Teams: 400-4 V8 175 hp"
+     },
+     {
+      "name": "Wikipedia - Chevrolet Chevelle",
+      "url": "https://en.wikipedia.org/wiki/Chevrolet_Chevelle",
+      "says": "options of 400 ... cubic-inch size"
+     }
+    ],
+    "status": "confirmed",
+    "note": "2-bbl 400 (LF6) dropped for 1975."
+   },
+   {
+    "gen": "gen3",
+    "cid": 454,
+    "hp": 215,
+    "hp_basis": "net",
+    "rpo": "LS4",
+    "name": "Turbo-Jet 454-4",
+    "trims": [
+     "Malibu",
+     "Malibu Classic",
+     "Laguna Type S-3",
+     "El Camino (context)"
+    ],
+    "nhra": true,
+    "sources": [
+     {
+      "name": "GM Heritage Center 1975 Chevelle Vehicle Information Kit",
+      "url": "https://www.gm.com/content/dam/company/no_search/heritage-archive-docs/vehicle-information-kits/chevrolet/1975-Chevrolet-Chevelle.pdf",
+      "says": "p.16 VIN Y = V8-454 (215 H.P.), RPO LS4"
+     },
+     {
+      "name": "1975 Chevrolet Chevelle sales brochure (oldcarbrochures.org scan)",
+      "url": "https://oldcarbrochures.org/United%20States/Chevrolet/1975-Chevrolet/1975-Chevrolet-Chevelle-Brochure/",
+      "says": "Power Teams: 454-4 V8 215 hp"
+     },
+     {
+      "name": "Wikipedia - Chevrolet Chevelle",
+      "url": "https://en.wikipedia.org/wiki/Chevrolet_Chevelle",
+      "says": "454 option \"with a 235-horsepower rating\"; available for the first half of the model year"
+     }
+    ],
+    "status": "confirmed",
+    "note": "Wikipedia gives 235 hp (the 1974 figure); GM kit, GM brochure and NHRA give 215 hp net. Use 215. Dropped mid-year per Wikipedia; last Chevelle 454."
+   }
+  ],
+  "1976": [
+   {
+    "gen": "gen3",
+    "cid": 250,
+    "hp": 105,
+    "hp_basis": "net",
+    "rpo": "L22",
+    "name": "Turbo-Thrift 250",
+    "trims": [
+     "Malibu",
+     "Malibu Classic",
+     "El Camino (context)"
+    ],
+    "nhra": true,
+    "sources": [
+     {
+      "name": "GM Heritage Center 1976 Chevelle Vehicle Information Kit",
+      "url": "https://www.gm.com/content/dam/company/no_search/heritage-archive-docs/vehicle-information-kits/chevrolet/1976-Chevrolet-Chevelle.pdf",
+      "says": "p.34 VIN D = L6-250 (105 H.P.), base engine"
+     },
+     {
+      "name": "1976 Chevrolet Chevelle sales brochure (oldcarbrochures.org scan)",
+      "url": "https://oldcarbrochures.org/United%20States/Chevrolet/1976-Chevrolet/1976-Chevrolet-Chevelle-Brochure/",
+      "says": "Power teams table: 250-1 Six (4.1 litre), 105 net hp, std."
+     }
+    ],
+    "status": "confirmed",
+    "note": "Wikipedia names no six for 1976; third source is the GM sales brochure."
+   },
+   {
+    "gen": "gen3",
+    "cid": 305,
+    "hp": 140,
+    "hp_basis": "net",
+    "rpo": "LG3",
+    "name": "305-2",
+    "trims": [
+     "Malibu",
+     "Malibu Classic",
+     "El Camino (context)",
+     "Laguna Type S-3"
+    ],
+    "nhra": true,
+    "sources": [
+     {
+      "name": "GM Heritage Center 1976 Chevelle Vehicle Information Kit",
+      "url": "https://www.gm.com/content/dam/company/no_search/heritage-archive-docs/vehicle-information-kits/chevrolet/1976-Chevrolet-Chevelle.pdf",
+      "says": "p.34 VIN Q = V8-305 (140 H.P.), 305 Cubic Inch V8 (RPO LG3)"
+     },
+     {
+      "name": "1976 Chevrolet Chevelle sales brochure (oldcarbrochures.org scan)",
+      "url": "https://oldcarbrochures.org/United%20States/Chevrolet/1976-Chevrolet/1976-Chevrolet-Chevelle-Brochure/",
+      "says": "Power teams table: 305-2 V8 (5.0 litre), 140 net hp; \"new 305 V8 engine\""
+     },
+     {
+      "name": "Wikipedia - Chevrolet Chevelle",
+      "url": "https://en.wikipedia.org/wiki/Chevrolet_Chevelle",
+      "says": "a new 305 engine rated at 140 hp"
+     }
+    ],
+    "status": "confirmed",
+    "note": "New for 1976."
+   },
+   {
+    "gen": "gen3",
+    "cid": 350,
+    "hp": 145,
+    "hp_basis": "net",
+    "rpo": "L65",
+    "name": "350-2",
+    "trims": [
+     "Malibu",
+     "Malibu Classic",
+     "El Camino (context)",
+     "Laguna Type S-3"
+    ],
+    "nhra": true,
+    "sources": [
+     {
+      "name": "GM Heritage Center 1976 Chevelle Vehicle Information Kit",
+      "url": "https://www.gm.com/content/dam/company/no_search/heritage-archive-docs/vehicle-information-kits/chevrolet/1976-Chevrolet-Chevelle.pdf",
+      "says": "p.34 VIN V = V8-350 (145 H.P.), RPO L65"
+     },
+     {
+      "name": "1976 Chevrolet Chevelle sales brochure (oldcarbrochures.org scan)",
+      "url": "https://oldcarbrochures.org/United%20States/Chevrolet/1976-Chevrolet/1976-Chevrolet-Chevelle-Brochure/",
+      "says": "Power teams table: 350-2 V8 (5.7 litre), 145 net hp"
+     }
+    ],
+    "status": "confirmed",
+    "note": "Wikipedia lists only three V8s for 1976 (305 / 350-165 / 400); third source is the GM sales brochure."
+   },
+   {
+    "gen": "gen3",
+    "cid": 350,
+    "hp": 165,
+    "hp_basis": "net",
+    "rpo": "LM1",
+    "name": "350-4",
+    "trims": [
+     "Malibu",
+     "Malibu Classic",
+     "El Camino (context)",
+     "Laguna Type S-3"
+    ],
+    "nhra": true,
+    "sources": [
+     {
+      "name": "GM Heritage Center 1976 Chevelle Vehicle Information Kit",
+      "url": "https://www.gm.com/content/dam/company/no_search/heritage-archive-docs/vehicle-information-kits/chevrolet/1976-Chevrolet-Chevelle.pdf",
+      "says": "p.34 VIN L = V8-350 (165 H.P.), RPO LM1"
+     },
+     {
+      "name": "1976 Chevrolet Chevelle sales brochure (oldcarbrochures.org scan)",
+      "url": "https://oldcarbrochures.org/United%20States/Chevrolet/1976-Chevrolet/1976-Chevrolet-Chevelle-Brochure/",
+      "says": "Power teams table: 350-4 V8 (5.7 litre), 165 net hp"
+     },
+     {
+      "name": "Wikipedia - Chevrolet Chevelle",
+      "url": "https://en.wikipedia.org/wiki/Chevrolet_Chevelle",
+      "says": "a 350 engine providing 165 hp"
+     }
+    ],
+    "status": "confirmed",
+    "note": ""
+   },
+   {
+    "gen": "gen3",
+    "cid": 400,
+    "hp": 175,
+    "hp_basis": "net",
+    "rpo": "LT4",
+    "name": "400-4",
+    "trims": [
+     "Malibu",
+     "Malibu Classic",
+     "El Camino (context)",
+     "Laguna Type S-3"
+    ],
+    "nhra": true,
+    "sources": [
+     {
+      "name": "GM Heritage Center 1976 Chevelle Vehicle Information Kit",
+      "url": "https://www.gm.com/content/dam/company/no_search/heritage-archive-docs/vehicle-information-kits/chevrolet/1976-Chevrolet-Chevelle.pdf",
+      "says": "p.34 VIN U = V8-400 (175 H.P.), RPO LT4"
+     },
+     {
+      "name": "1976 Chevrolet Chevelle sales brochure (oldcarbrochures.org scan)",
+      "url": "https://oldcarbrochures.org/United%20States/Chevrolet/1976-Chevrolet/1976-Chevrolet-Chevelle-Brochure/",
+      "says": "Power teams table: 400-4 V8 (6.6 litre), 175 net hp"
+     },
+     {
+      "name": "Wikipedia - Chevrolet Chevelle",
+      "url": "https://en.wikipedia.org/wiki/Chevrolet_Chevelle",
+      "says": "a 400 engine with 175 hp"
+     }
+    ],
+    "status": "confirmed",
+    "note": "Last year of the 400 and of the Laguna Type S-3."
+   }
+  ],
+  "1977": [
+   {
+    "gen": "gen3",
+    "cid": 250,
+    "hp": 110,
+    "hp_basis": "net",
+    "rpo": "L22",
+    "name": "250-1",
+    "trims": [
+     "Malibu",
+     "Malibu Classic",
+     "El Camino (context)"
+    ],
+    "nhra": true,
+    "sources": [
+     {
+      "name": "GM Heritage Center 1977 Chevelle Vehicle Information Kit",
+      "url": "https://www.gm.com/content/dam/company/no_search/heritage-archive-docs/vehicle-information-kits/chevrolet/1977-Chevrolet-Chevelle.pdf",
+      "says": "Engine data page: single-bbl 110 @ 3800 federal (90 @ 3600 California); order guide \"L22 engine\"; p.26 VIN code list L6-250"
+     },
+     {
+      "name": "Wikipedia - Chevrolet Chevelle",
+      "url": "https://en.wikipedia.org/wiki/Chevrolet_Chevelle",
+      "says": "standard 250 six-cylinder (no rating given)"
+     }
+    ],
+    "status": "confirmed",
+    "note": "Only NHRA and the GM kit give the 110-hp figure; Wikipedia confirms the engine but not the rating. The 1977 Chevelle brochures on oldcarbrochures.org carry no engine table."
+   },
+   {
+    "gen": "gen3",
+    "cid": 305,
+    "hp": 145,
+    "hp_basis": "net",
+    "rpo": "LG3",
+    "name": "305-2",
+    "trims": [
+     "Malibu",
+     "Malibu Classic",
+     "El Camino (context)"
+    ],
+    "nhra": true,
+    "sources": [
+     {
+      "name": "GM Heritage Center 1977 Chevelle Vehicle Information Kit",
+      "url": "https://www.gm.com/content/dam/company/no_search/heritage-archive-docs/vehicle-information-kits/chevrolet/1977-Chevrolet-Chevelle.pdf",
+      "says": "Engine data page: two-bbl 145 @ 3800; p.26 VIN U = V8-305 (145 H.P.), RPO LG3 (federal only)"
+     },
+     {
+      "name": "Wikipedia - Chevrolet Chevelle",
+      "url": "https://en.wikipedia.org/wiki/Chevrolet_Chevelle",
+      "says": "a 145 hp 305 V8"
+     }
+    ],
+    "status": "confirmed",
+    "note": "Federal only (not California)."
+   },
+   {
+    "gen": "gen3",
+    "cid": 350,
+    "hp": 170,
+    "hp_basis": "net",
+    "rpo": "LM1",
+    "name": "350-4",
+    "trims": [
+     "Malibu",
+     "Malibu Classic",
+     "El Camino (context)",
+     "Malibu Classic wagon (std)"
+    ],
+    "nhra": true,
+    "sources": [
+     {
+      "name": "GM Heritage Center 1977 Chevelle Vehicle Information Kit",
+      "url": "https://www.gm.com/content/dam/company/no_search/heritage-archive-docs/vehicle-information-kits/chevrolet/1977-Chevrolet-Chevelle.pdf",
+      "says": "Engine data page: four-bbl 170 @ 3800 federal (160 California); p.26 VIN L = V8-350 (170 H.P.), RPO LM1"
+     },
+     {
+      "name": "Wikipedia - Chevrolet Chevelle",
+      "url": "https://en.wikipedia.org/wiki/Chevrolet_Chevelle",
+      "says": "the sole option was a 170 hp four-barrel 350 V8, standard in the Malibu Classic wagon"
+     }
+    ],
+    "status": "confirmed",
+    "note": "Last Chevelle model year."
+   }
+  ]
+ },
+ "source_index": [
+  {
+   "name": "Chevy Hardcore - Chevelle Laguna: Forgotten Gem Or Best Forgotten?",
+   "url": "https://www.chevyhardcore.com/?p=5704",
+   "type": "publication"
+  },
+  {
+   "name": "GM Heritage Center 1964 Chevelle Vehicle Information Kit",
+   "url": "https://www.gm.com/content/dam/company/no_search/heritage-archive-docs/vehicle-information-kits/chevrolet/1964-Chevrolet-Chevelle.pdf",
+   "type": "manufacturer"
+  },
+  {
+   "name": "GM Heritage Center 1965 Chevelle Vehicle Information Kit",
+   "url": "https://www.gm.com/content/dam/company/no_search/heritage-archive-docs/vehicle-information-kits/chevrolet/1965-Chevrolet-Chevelle.pdf",
+   "type": "manufacturer"
+  },
+  {
+   "name": "GM Heritage Center 1966 Chevelle Vehicle Information Kit",
+   "url": "https://www.gm.com/content/dam/company/no_search/heritage-archive-docs/vehicle-information-kits/chevrolet/1966-Chevrolet-Chevelle.pdf",
+   "type": "manufacturer"
+  },
+  {
+   "name": "GM Heritage Center 1967 Chevelle Vehicle Information Kit",
+   "url": "https://www.gm.com/content/dam/company/no_search/heritage-archive-docs/vehicle-information-kits/chevrolet/1967-Chevrolet-Chevelle.pdf",
+   "type": "manufacturer"
+  },
+  {
+   "name": "GM Heritage Center 1973 Chevelle Vehicle Information Kit",
+   "url": "https://www.gm.com/content/dam/company/no_search/heritage-archive-docs/vehicle-information-kits/chevrolet/1973-Chevrolet-Chevelle.pdf",
+   "type": "manufacturer"
+  },
+  {
+   "name": "GM Heritage Center 1974 Chevelle Vehicle Information Kit",
+   "url": "https://www.gm.com/content/dam/company/no_search/heritage-archive-docs/vehicle-information-kits/chevrolet/1974-Chevrolet-Chevelle.pdf",
+   "type": "manufacturer"
+  },
+  {
+   "name": "GM Heritage Center 1975 Chevelle Vehicle Information Kit",
+   "url": "https://www.gm.com/content/dam/company/no_search/heritage-archive-docs/vehicle-information-kits/chevrolet/1975-Chevrolet-Chevelle.pdf",
+   "type": "manufacturer"
+  },
+  {
+   "name": "GM Heritage Center 1976 Chevelle Vehicle Information Kit",
+   "url": "https://www.gm.com/content/dam/company/no_search/heritage-archive-docs/vehicle-information-kits/chevrolet/1976-Chevrolet-Chevelle.pdf",
+   "type": "manufacturer"
+  },
+  {
+   "name": "GM Heritage Center 1977 Chevelle Vehicle Information Kit",
+   "url": "https://www.gm.com/content/dam/company/no_search/heritage-archive-docs/vehicle-information-kits/chevrolet/1977-Chevrolet-Chevelle.pdf",
+   "type": "manufacturer"
+  },
+  {
+   "name": "Chevellestuff.net 1964 Chevelle engine ID codes",
+   "url": "https://www.chevellestuff.net/1964/engine_id_codes.htm",
+   "type": "registry"
+  },
+  {
+   "name": "Chevellestuff.net 1965 Chevelle engine ID codes",
+   "url": "https://www.chevellestuff.net/1965/engine_id_codes.htm",
+   "type": "registry"
+  },
+  {
+   "name": "Chevellestuff.net 1966 Chevelle engine ID codes",
+   "url": "https://www.chevellestuff.net/1966/engine_id_codes.htm",
+   "type": "registry"
+  },
+  {
+   "name": "Chevellestuff.net 1967 Chevelle engine ID codes",
+   "url": "https://www.chevellestuff.net/1967/engine_id_codes.htm",
+   "type": "registry"
+  },
+  {
+   "name": "Chevy Hardcore - Chevelle Engine Options: 1964",
+   "url": "https://www.chevyhardcore.com/?p=8706",
+   "type": "publication"
+  },
+  {
+   "name": "Chevy Hardcore - Chevelle Engine Options: 1965",
+   "url": "https://www.chevyhardcore.com/tech-stories/chevelle-engine-options-1965/",
+   "type": "publication"
+  },
+  {
+   "name": "Chevy Hardcore - Chevelle Engine Options: 1966",
+   "url": "https://www.chevyhardcore.com/news/chevelle-engine-options-1966",
+   "type": "publication"
+  },
+  {
+   "name": "Chevy Hardcore - Chevelle Engine Options: 1967",
+   "url": "https://www.chevyhardcore.com/?p=8664",
+   "type": "publication"
+  },
+  {
+   "name": "Chevy Hardcore - Chevelle Engine Options: 1973",
+   "url": "https://www.chevyhardcore.com/news/chevelle-engine-options-1973/",
+   "type": "publication"
+  },
+  {
+   "name": "1973 Chevrolet Chevelle sales brochure (oldcarbrochures.org)",
+   "url": "https://oldcarbrochures.org/United%20States/Chevrolet/1973-Chevrolet/1973-Chevrolet-Chevelle-Brochure/",
+   "type": "manufacturer"
+  },
+  {
+   "name": "1974 Chevrolet Chevelle sales brochure (oldcarbrochures.org)",
+   "url": "https://oldcarbrochures.org/United%20States/Chevrolet/1974-Chevrolet/1974-Chevrolet-Chevelle-Brochure-Rev/",
+   "type": "manufacturer"
+  },
+  {
+   "name": "1975 Chevrolet Chevelle sales brochure (oldcarbrochures.org)",
+   "url": "https://oldcarbrochures.org/United%20States/Chevrolet/1975-Chevrolet/1975-Chevrolet-Chevelle-Brochure/",
+   "type": "manufacturer"
+  },
+  {
+   "name": "1976 Chevrolet Chevelle sales brochure (oldcarbrochures.org)",
+   "url": "https://oldcarbrochures.org/United%20States/Chevrolet/1976-Chevrolet/1976-Chevrolet-Chevelle-Brochure/",
+   "type": "manufacturer"
+  },
+  {
+   "name": "Wikipedia - Chevrolet Chevelle",
+   "url": "https://en.wikipedia.org/wiki/Chevrolet_Chevelle",
+   "type": "wikipedia"
+  }
+ ]
+}

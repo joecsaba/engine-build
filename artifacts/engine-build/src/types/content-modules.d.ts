@@ -101,6 +101,6 @@ declare module "@/data/engineNarrative.mjs" {
 // Shared wording for vehicle pages and "Factory cars" lists — see src/data/vehicleText.mjs.
 declare module "@/data/vehicleText.mjs" {
   export function vehicleEngineLabel(e: { name: string; code: string | null }): string;
-  export function hpText(e: { hp: number | null; hpBasis: string }): string;
-  export function factoryCarLabel(r: { year: number; code: string | null; hp: number | null }): string;
+  export function hpText(e: { hp: number | null; hpBasis: string; hpRange?: [number, number] | null; electric?: boolean }): string;
+  export function factoryCarLabel(r: { year: number; code: string | null; hp: number | null; hpRange?: [number, number] | null }): string;
 }

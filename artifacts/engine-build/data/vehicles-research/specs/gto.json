@@ -1,0 +1,70 @@
+{
+ "make": "Pontiac",
+ "model": "GTO",
+ "makeSlug": "pontiac",
+ "slug": "gto",
+ "title": "Pontiac GTO Engines by Year, 1964–2006",
+ "description": "Every factory engine in the Pontiac GTO by year: the 389 Tri-Power, Ram Air 400s and 455 H.O. from 1964–1974, and the LS1 and LS2 of 2004–2006.",
+ "intro": [
+  "The GTO started in 1964 as an option package on the Tempest LeMans, became its own series in 1966 and was built until 1974. Pontiac revived the name for 2004–2006 on a Holden-built coupe with GM's LS V8s.",
+  "Pick a year to see every engine offered that model year, with its code, rated horsepower and the trims it came in. Each engine links to its full specs, and each row lists the sources that confirm it."
+ ],
+ "generations": [
+  {
+   "key": "1964-1967",
+   "name": "1964–1967",
+   "years": [
+    1964,
+    1967
+   ],
+   "intro": [
+    "The first GTOs used the 389 with a four-barrel or three two-barrel Tri-Power carburetors. The 1967 GTO replaced the 389 with the 400 and dropped Tri-Power for a single four-barrel."
+   ]
+  },
+  {
+   "key": "1968-1972",
+   "name": "1968–1972",
+   "years": [
+    1968,
+    1972
+   ],
+   "intro": [
+    "The 1968 GTO brought Ram Air 400s, which reached the Ram Air IV in 1969, and a 455 from 1970. Ratings are gross through 1971 and SAE net from 1972."
+   ]
+  },
+  {
+   "key": "1973-1974",
+   "name": "1973–1974",
+   "years": [
+    1973,
+    1974
+   ],
+   "intro": [
+    "The 1973 GTO was an option on the Colonnade LeMans with a 400 or 455. For 1974 it moved to the compact Ventura with a 350."
+   ]
+  },
+  {
+   "key": "2004-2006",
+   "name": "2004–2006",
+   "years": [
+    2004,
+    2006
+   ],
+   "intro": [
+    "The revived GTO used the 5.7L LS1 in 2004 and the 6.0L LS2 in 2005–2006."
+   ]
+  }
+ ],
+ "files": [
+  "verify_pontiac-gto-1964-1967.json",
+  "verify_gto-rest.json"
+ ],
+ "require_trim": {
+  "verify_pontiac-gto-1964-1967.json": "GTO"
+ },
+ "notes": {
+  "1968|400|366": "Ram Air II, added partway through 1968. Some sources give 360 hp.",
+  "1969|400|265": "Two-barrel economy 400, offered in 1969 despite some sources saying it was dropped."
+ },
+ "draft": true
+}

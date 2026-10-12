@@ -116,7 +116,7 @@ export interface EngineFamilyDoc {
 export interface FactoryCarGroup {
   vehicle: string;
   url: string;
-  rows: { vehicle: string; url: string; year: number; hp: number | null; hpBasis: string; code: string | null }[];
+  rows: { vehicle: string; url: string; year: number; hp: number | null; hpRange?: [number, number] | null; hpBasis: string; code: string | null }[];
 }
 
 export interface ManufacturerSummary {

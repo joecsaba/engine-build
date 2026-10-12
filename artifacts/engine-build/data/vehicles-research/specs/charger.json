@@ -1,0 +1,112 @@
+{
+ "make": "Dodge",
+ "model": "Charger",
+ "makeSlug": "dodge",
+ "slug": "charger",
+ "title": "Dodge Charger Engines by Year (1966–2026)",
+ "description": "Every factory engine in the Dodge Charger by year, 1966–2026: the 426 Hemi and 440 Six Pack, the Shelby Charger 2.2, Hemi V8s, Hellcats and the Hurricane six.",
+ "intro": [
+  "Dodge has used the Charger name on four different cars: the 1966–1978 coupes, a front-drive hatchback in 1982–1987, the four-door sedan of 2006–2023, and the current car, sold as the electric Daytona and the Hurricane-powered Sixpack.",
+  "Pick a year to see every engine offered that model year, with its code, rated horsepower and the trims it came in. Each engine links to its full specs, and each row lists the sources that confirm it."
+ ],
+ "generations": [
+  {
+   "key": "1966-1967",
+   "name": "1966–1967",
+   "years": [
+    1966,
+    1967
+   ],
+   "intro": [
+    "The first Charger was a fastback Coronet with V8s only, from the 318 to the 426 Hemi. The 440 Magnum arrived for 1967."
+   ]
+  },
+  {
+   "key": "1968-1970",
+   "name": "1968–1970",
+   "years": [
+    1968,
+    1970
+   ],
+   "intro": [
+    "The second-generation Charger ran from a 225 slant six to the 426 Hemi. The R/T came with the 440 Magnum as standard and the Hemi as its only option. The 1969 Charger 500 and Daytona, built for NASCAR, used the same 440 and Hemi.",
+    "The 440 Six Pack joined the Charger R/T for 1970."
+   ]
+  },
+  {
+   "key": "1971-1978",
+   "name": "1971–1978",
+   "years": [
+    1971,
+    1978
+   ],
+   "intro": [
+    "The 1971 redesign kept the Hemi and the 440 Six Pack for one more year. Ratings are SAE net from 1972, and from 1975 the Charger was a personal-luxury coupe sharing the Chrysler Cordoba's body."
+   ]
+  },
+  {
+   "key": "1982-1987",
+   "name": "1982–1987",
+   "years": [
+    1982,
+    1987
+   ],
+   "intro": [
+    "The front-drive Charger used Chrysler's 2.2 and a 1.6 four, with the turbocharged 2.2 in the Shelby Charger from 1985 and the 175 hp Turbo II in the 1987 Shelby Charger GLHS."
+   ]
+  },
+  {
+   "key": "2006-2023",
+   "name": "2006–2023",
+   "years": [
+    2006,
+    2023
+   ],
+   "intro": [
+    "The sedan offered V6s, the 5.7, 6.1 and 6.4 Hemi V8s, and from 2015 the supercharged 6.2 Hellcat, which reached 807 hp in the 2023 Redeye Jailbreak."
+   ]
+  },
+  {
+   "key": "2024-2026",
+   "name": "2024–2026",
+   "years": [
+    2024,
+    2026
+   ],
+   "intro": [
+    "The current Charger launched as the Daytona EV for 2024. The Sixpack, with the 3.0 Hurricane twin-turbo inline six, followed for 2026."
+   ]
+  }
+ ],
+ "files": [
+  "verify_dodge-charger-1968-1970.json",
+  "verify_charger-classic.json",
+  "verify_charger-modern.json"
+ ],
+ "ranges": {
+  "1976|400|175": [
+   170,
+   175
+  ],
+  "1977|318|145": [
+   135,
+   145
+  ],
+  "1977|400|190": [
+   190,
+   195
+  ],
+  "2008|167|190": [
+   178,
+   190
+  ]
+ },
+ "notes": {
+  "1968|225|145": "Added partway through the 1968 model year.",
+  "1969|440|375": "Also used in the 1969 Charger 500 and Charger Daytona.",
+  "1969|426|425": "Also used in the 1969 Charger 500 and Charger Daytona.",
+  "2006|167|190": "Fleet sales only in 2006.",
+  "2015|376|707": "Supercharged Hellcat."
+ },
+ "draft": true
+}

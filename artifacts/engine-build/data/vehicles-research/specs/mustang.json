@@ -1,0 +1,180 @@
+{
+ "make": "Ford",
+ "model": "Mustang",
+ "makeSlug": "ford",
+ "slug": "mustang",
+ "title": "Ford Mustang Engines by Year (1964½–2026)",
+ "description": "Every factory engine in the Ford Mustang by year, 1964½–2026: sixes, the K-code 289, Boss and Cobra Jet V8s, the 5.0 HO, Coyote and Voodoo. 3+ sources each.",
+ "intro": [
+  "Ford has built the Mustang without a break since April 1964. Over seven generations it has carried inline sixes and fours, a turbocharged 2.3, V6s, and V8s from the 260 to the supercharged 5.2 Predator.",
+  "Pick a year to see every engine offered that model year, with its code, rated horsepower and the trims it came in. Each engine links to its full specs, and each row lists the sources that confirm it."
+ ],
+ "generations": [
+  {
+   "key": "gen1",
+   "name": "First generation",
+   "years": [
+    1964,
+    1973
+   ],
+   "intro": [
+    "The Mustang launched in April 1964 with a 170 six and a 260 V8, and by 1968 it offered a 428. By 1969–1971 the list ran to the Boss 302, the Boss 429 and the 428 and 429 Cobra Jets.",
+    "Ford changed engines in the middle of model years several times, most notably the 260-to-289 switch in 1964 and the 428 Cobra Jet's arrival on April 1, 1968. The notes mark each one."
+   ]
+  },
+  {
+   "key": "mustang-ii",
+   "name": "Mustang II",
+   "years": [
+    1974,
+    1978
+   ],
+   "intro": [
+    "The smaller Mustang II dropped the V8 for 1974, offering a 2.3 four and a 2.8 V6; the 302 returned in 1975. Published ratings from these years differ between sources, so several are shown as ranges."
+   ]
+  },
+  {
+   "key": "fox",
+   "name": "Fox body",
+   "years": [
+    1979,
+    1993
+   ],
+   "intro": [
+    "The Fox-body Mustang brought the turbocharged 2.3, offered in 1979–1980 and again in the 1984–1986 SVO, and the 5.0 High Output V8, fuel-injected from 1986."
+   ]
+  },
+  {
+   "key": "sn95",
+   "name": "SN95",
+   "years": [
+    1994,
+    2004
+   ],
+   "intro": [
+    "The 1994 redesign kept the 5.0 for two years before the 4.6 modular V8 took over in 1996, with a four-cam version in the SVT Cobra."
+   ]
+  },
+  {
+   "key": "s197",
+   "name": "S197",
+   "years": [
+    2005,
+    2014
+   ],
+   "intro": [
+    "The 2005 Mustang used a 4.0 V6 and a three-valve 4.6 V8. The 2011 update brought the 3.7 V6 and the 5.0 Coyote. Shelby GT500s used supercharged 5.4 and, for 2013–2014, 5.8 V8s."
+   ]
+  },
+  {
+   "key": "s550",
+   "name": "S550",
+   "years": [
+    2015,
+    2023
+   ],
+   "intro": [
+    "The S550 added the 2.3 EcoBoost turbo four, the flat-plane-crank 5.2 Voodoo in the Shelby GT350, and the supercharged 5.2 Predator in the 2020–2022 GT500."
+   ]
+  },
+  {
+   "key": "s650",
+   "name": "S650",
+   "years": [
+    2024,
+    2026
+   ],
+   "intro": [
+    "The current car offers the 2.3 EcoBoost and the 5.0 Coyote, including the 500 hp Dark Horse, and the supercharged 5.2 in the GTD."
+   ]
+  }
+ ],
+ "files": [
+  "verify_ford-mustang-1965-1968.json",
+  "verify_mustang-1969-1993.json",
+  "verify_mustang-1994-2026.json"
+ ],
+ "family_overrides": [
+  {
+   "years": [
+    2011,
+    2026
+   ],
+   "cid": [
+    302,
+    307
+   ],
+   "url": "/engines/ford/coyote"
+  }
+ ],
+ "ranges": {
+  "1972|250|99": [
+   95,
+   99
+  ],
+  "1975|140|87": [
+   83,
+   88
+  ],
+  "1975|171|97": [
+   97,
+   105
+  ],
+  "1975|302|129": [
+   122,
+   140
+  ],
+  "1976|171|100": [
+   100,
+   105
+  ],
+  "1976|302|133": [
+   133,
+   140
+  ],
+  "1977|140|88": [
+   88,
+   93
+  ],
+  "1977|171|93": [
+   93,
+   104
+  ],
+  "1977|302|134": [
+   122,
+   137
+  ],
+  "1978|171|90": [
+   90,
+   104
+  ],
+  "1978|302|139": [
+   134,
+   139
+  ],
+  "1980|140|132": [
+   132,
+   150
+  ],
+  "1982|140|86": [
+   86,
+   88
+  ],
+  "1983|140|88": [
+   88,
+   90
+  ],
+  "1983|232|112": [
+   105,
+   112
+  ]
+ },
+ "notes": {
+  "1964|289|271": "Available from June 1964.",
+  "1968|302|210": "Replaced the 289 two-barrel partway through the year.",
+  "1968|390|280": "Automatic only. Listed in Ford's revised December 1967 brochure.",
+  "1968|428|335": "Cobra Jet, introduced April 1, 1968.",
+  "1985|302|180": "Rated 165 hp until November 1984."
+ },
+ "draft": true
+}

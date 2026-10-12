@@ -172,7 +172,8 @@ function YearTable({ year, label, model, engines }: { year: number; label: strin
       <h3 className="text-lg font-semibold mb-2">
         {label} {model} engines{" "}
         <span className="text-sm font-normal text-muted-foreground">
-          {road.length} engine{road.length === 1 ? "" : "s"} · {road[0]?.hpBasis === "net" ? "SAE net hp" : "gross hp"}
+          {road.length} engine{road.length === 1 ? "" : "s"} ·{" "}
+          {road.every((e) => e.electric) ? "electric" : road[0]?.hpBasis === "net" ? "SAE net hp" : "gross hp"}
         </span>
       </h3>
       <div className="overflow-x-auto rounded-lg border">
@@ -192,8 +193,8 @@ function YearTable({ year, label, model, engines }: { year: number; label: strin
             </tr>
           </thead>
           <tbody>
-            {road.map((e) => (
-              <tr key={`${e.cid}-${e.hp}-${e.code}`} className="border-b last:border-0 align-top">
+            {road.map((e, i) => (
+              <tr key={`${e.cid}-${e.hp}-${e.code}-${i}`} className="border-b last:border-0 align-top">
                 <td className="py-2 px-3">
                   {e.engineUrl || e.familyUrl ? (
                     <Link href={(e.engineUrl ?? e.familyUrl)!} className="font-medium text-[#E85D04] hover:underline">

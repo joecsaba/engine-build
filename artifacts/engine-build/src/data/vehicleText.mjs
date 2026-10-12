@@ -7,13 +7,16 @@ export function vehicleEngineLabel(e) {
   return e.code ? `${e.name} (${e.code})` : e.name;
 }
 
-/** "375 hp gross" / "245 hp net" */
+/** "375 hp gross" / "245 hp net" / "88–93 hp net" when sources publish different ratings */
 export function hpText(e) {
-  if (e.hp == null) return "—";
-  return `${e.hp} hp ${e.hpBasis === "net" ? "net" : "gross"}`;
+  if (e.hp == null && !e.hpRange) return "—";
+  const v = e.hpRange ? `${e.hpRange[0]}–${e.hpRange[1]}` : e.hp;
+  if (e.electric) return `${v} hp`;
+  return `${v} hp ${e.hpBasis === "net" ? "net" : "gross"}`;
 }
 
 /** One row of a "Factory cars" list: "1969, L78, 375 hp" */
 export function factoryCarLabel(r) {
-  return [r.year, r.code, r.hp != null ? `${r.hp} hp` : null].filter(Boolean).join(", ");
+  const hp = r.hpRange ? `${r.hpRange[0]}–${r.hpRange[1]} hp` : r.hp != null ? `${r.hp} hp` : null;
+  return [r.year, r.code, hp].filter(Boolean).join(", ");
 }

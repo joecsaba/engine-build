@@ -63,7 +63,7 @@ export function loadVehicles() {
       v.slug = f.replace(/\.json$/, "");
       v.url = `/vehicles/${make}/${v.slug}`;
       v.makeUrl = `/vehicles/${make}`;
-      v.engines.sort((a, b) => a.year - b.year || a.cid - b.cid || (a.hp ?? 0) - (b.hp ?? 0));
+      v.engines.sort((a, b) => a.year - b.year || (a.cid ?? 1e4) - (b.cid ?? 1e4) || (a.hp ?? 0) - (b.hp ?? 0));
       const years = v.engines.map((e) => e.year);
       v.yearMin = Math.min(...years);
       v.yearMax = Math.max(...years);
@@ -89,9 +89,13 @@ export function linkVehicles(vehicles, engineData) {
     const pool = engineData.engines.filter((e) => makers.includes(e.manufacturerSlug));
     for (const ve of v.engines) {
       stats.engines++;
-      if (ve.race) continue; // race-only packages don't get spec links
-      let cands = pool.filter((e) => sameCi(e.displacement_ci, ve.cid) &&
-        (ve.cyl == null || e.num_cylinders == null || e.num_cylinders === ve.cyl));
+      if (ve.race || ve.electric) continue; // race-only packages and electric drives get no spec links
+      // linkFamily: the curated file names the family when displacement alone
+      // can't tell two engines apart (the 2011+ Coyote 302 vs the Windsor 302).
+      let cands = ve.linkFamily
+        ? engineData.engines.filter((e) => e.familyUrl === ve.linkFamily)
+        : pool.filter((e) => sameCi(e.displacement_ci, ve.cid) &&
+            (ve.cyl == null || e.num_cylinders == null || e.num_cylinders === ve.cyl));
       // Same manufacturer first: a Pontiac 400 must not borrow a Chevy 400.
       const own = cands.filter((e) => e.manufacturerSlug === makers[0]);
       if (own.length) cands = own;
@@ -117,6 +121,7 @@ export function linkVehicles(vehicles, engineData) {
         year: ve.year,
         hp: ve.hp,
         hpBasis: ve.hpBasis,
+        hpRange: ve.hpRange ?? null,
         code: ve.code ?? null,
       };
       if (engine) engine.factoryCars.push(car);

@@ -1,0 +1,63 @@
+{
+ "make": "Chevrolet",
+ "model": "Chevelle",
+ "makeSlug": "chevrolet",
+ "slug": "chevelle",
+ "title": "Chevrolet Chevelle Engines by Year (1964–1977)",
+ "description": "Every factory engine in the Chevrolet Chevelle, Malibu and SS by year, 1964–1977: RPO codes and ratings from the 194 six to the LS6 454. 3+ sources each.",
+ "intro": [
+  "Chevrolet's mid-size Chevelle ran from 1964 to 1977 and carried everything from a 194 cubic-inch six to the 450 hp LS6 454.",
+  "Pick a year to see every engine offered that model year, with its code, rated horsepower and the trims it came in. Each engine links to its full specs, and each row lists the sources that confirm it."
+ ],
+ "generations": [
+  {
+   "key": "gen1",
+   "name": "First generation",
+   "years": [
+    1964,
+    1967
+   ],
+   "intro": [
+    "The first Chevelle offered inline sixes and the 283 and 327 small blocks. The 396 big block arrived in 1965 in the Z16 Malibu SS 396 and became the SS 396 engine from 1966."
+   ]
+  },
+  {
+   "key": "gen2",
+   "name": "Second generation",
+   "years": [
+    1968,
+    1972
+   ],
+   "intro": [
+    "The second-generation Chevelle went from a 140 hp six to the 450 hp LS6 454 in three years. The big blocks were tied to the SS: a separate SS 396 series in 1968, then an SS option package on the Malibu, 300 Deluxe coupe and El Camino from 1969.",
+    "Horsepower is advertised gross through 1971 and SAE net for 1972, which is why the 1972 numbers look so much lower."
+   ]
+  },
+  {
+   "key": "gen3",
+   "name": "Third generation",
+   "years": [
+    1973,
+    1977
+   ],
+   "intro": [
+    "The Colonnade Chevelle of 1973–1977 carried SAE net ratings and emissions equipment. The 454 lasted through 1975 and the 400 small block through 1976; by 1977 the list was down to the 250 six, the 305 and the 350."
+   ]
+  }
+ ],
+ "files": [
+  "verify_chevrolet-chevelle-1968-1972.json",
+  "verify_chevelle-rest.json"
+ ],
+ "notes": {
+  "1965|396|375": "Z16 Malibu SS 396 package.",
+  "1967|396|375": "Reinstated around April 1967. Some sources describe it as dealer-installed.",
+  "1969|427|425": "COPO 9562 special order, not in the regular order guide.",
+  "1970|402|330": "Badged as a 396; displaces 402 cubic inches.",
+  "1970|402|350": "Badged as a 396; displaces 402 cubic inches.",
+  "1970|402|375": "Badged as a 396; displaces 402 cubic inches.",
+  "1971|402|300": "Badged as a 396; displaces 402 cubic inches.",
+  "1975|454|215": "Some sources repeat the 1974 figure of 235 hp; GM gives 215 for 1975."
+ },
+ "draft": true
+}

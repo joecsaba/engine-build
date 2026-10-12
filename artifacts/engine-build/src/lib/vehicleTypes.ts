@@ -10,12 +10,15 @@ export interface VehicleEngine {
   year: number;
   yearLabel?: string;
   gen: string | null;
-  cid: number;
-  cyl: number;
+  cid: number | null;
+  cyl: number | null;
   name: string;
   code: string | null;
   hp: number | null;
+  /** Set when sources agree the engine was offered but publish different ratings. */
+  hpRange?: [number, number];
   hpBasis: "gross" | "net";
+  electric?: boolean;
   trims: string[];
   note: string | null;
   nhra: boolean;
