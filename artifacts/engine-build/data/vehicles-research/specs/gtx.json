@@ -1,0 +1,39 @@
+{
+ "make": "Plymouth",
+ "model": "GTX",
+ "makeSlug": "plymouth",
+ "slug": "gtx",
+ "title": "Plymouth GTX Engines by Year (1967–1971)",
+ "description": "Every factory engine in the Plymouth GTX by year, 1967–1971: the 440 Super Commando standard engine, the 440 Six Barrel and the 426 Street Hemi.",
+ "intro": [
+  "The GTX was Plymouth's premium mid-size muscle car, with a 440 as its standard engine and the 426 Street Hemi as the option. It was its own model from 1967 to 1971; from 1972 the GTX name continued as a 440 package on the Road Runner, listed on the Road Runner page.",
+  "Pick a year to see every engine offered that model year, with its code, rated horsepower and the trims it came in. Each engine links to its full specs."
+ ],
+ "generations": [
+  {
+   "key": "1967-1971",
+   "name": "1967–1971",
+   "years": [
+    1967,
+    1971
+   ],
+   "intro": [
+    "Every GTX came with a big block. The 440 Six Barrel, with three two-barrel carburetors, joined the list for 1970. The 1971 ratings are gross, with net figures in the notes where published."
+   ]
+  }
+ ],
+ "files": [
+  "verify_gtx.json"
+ ],
+ "exclude": {
+  "1972|440|280": "1972 Road Runner GTX package; on the Road Runner page",
+  "1972|440|330": "1972 Road Runner GTX package; on the Road Runner page"
+ },
+ "notes": {
+  "1971|440|370": "305 hp net.",
+  "1971|440|385": "Six Barrel. 330 hp net.",
+  "1971|426|425": "350 hp net.",
+  "1970|440|390": "Six Barrel, three two-barrel carburetors."
+ },
+ "draft": true
+}

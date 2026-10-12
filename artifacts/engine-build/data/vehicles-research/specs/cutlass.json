@@ -1,0 +1,121 @@
+{
+ "make": "Oldsmobile",
+ "model": "Cutlass",
+ "makeSlug": "oldsmobile",
+ "slug": "cutlass",
+ "title": "Oldsmobile Cutlass Engines by Year (1961–1999)",
+ "description": "Every factory engine in the Oldsmobile Cutlass, 442 and Cutlass Supreme by year, 1961–1999: the Jetfire turbo, the 400 and 455 W-30, Olds V8s and V6s.",
+ "intro": [
+  "The Cutlass name ran on Oldsmobile's compact and mid-size cars from 1961 to 1999, and covered the 442, the Hurst/Olds and several later front-drive lines. The 442 began as an option package and was a separate model for 1968–1971; the trims column shows which engines it got.",
+  "Pick a year to see every engine offered that model year, with its code, rated horsepower and the trims it came in. Each engine links to its full specs."
+ ],
+ "generations": [
+  {
+   "key": "1961-1963",
+   "name": "1961–1963",
+   "years": [
+    1961,
+    1963
+   ],
+   "intro": [
+    "The first F-85 and Cutlass used Oldsmobile's aluminum 215 V8, and the 1962–1963 Jetfire added a turbocharger."
+   ]
+  },
+  {
+   "key": "1964-1972",
+   "name": "1964–1972",
+   "years": [
+    1964,
+    1972
+   ],
+   "intro": [
+    "From 1964 the Cutlass used Oldsmobile's cast-iron V8s: the 330, then the 350, with the 400 in the 442 and, from 1968, the 455. The W-30 package was the top 442 engine. Ratings are gross through 1971 and SAE net from 1972."
+   ]
+  },
+  {
+   "key": "1973-1977",
+   "name": "1973–1977",
+   "years": [
+    1973,
+    1977
+   ],
+   "intro": [
+    "The Colonnade Cutlass carried SAE net ratings and Oldsmobile's 260, 350 and 455, with the 403 arriving for 1977."
+   ]
+  },
+  {
+   "key": "1978-1987",
+   "name": "1978–1987",
+   "years": [
+    1978,
+    1987
+   ],
+   "intro": [
+    "The downsized rear-drive Cutlass Supreme, Salon, Calais and Cruiser used Buick V6s, Oldsmobile's 260, 307 and 350 V8s, and Oldsmobile diesels; the 1985–1987 4-4-2 used a 307. The front-drive Cutlass Ciera arrived in 1982 and the Cutlass Calais in 1985."
+   ]
+  },
+  {
+   "key": "1988-1999",
+   "name": "1988–1999",
+   "years": [
+    1988,
+    1999
+   ],
+   "intro": [
+    "The front-drive Cutlass Supreme replaced the rear-drive car after 1988. The Ciera, Calais and the 1997–1999 Cutlass used GM fours and V6s, including Oldsmobile's Quad 4."
+   ]
+  }
+ ],
+ "files": [
+  "verify_cutlass-1961-1977.json",
+  "verify_cutlass-1978-1999.json"
+ ],
+ "include": [
+  "1982|260|100"
+ ],
+ "ranges": {
+  "1964|330|230": [
+   210,
+   230
+  ],
+  "1969|400|360": [
+   350,
+   360
+  ],
+  "1979|260|105": [
+   105,
+   110
+  ],
+  "1980|260|105": [
+   105,
+   110
+  ],
+  "1980|307|155": [
+   148,
+   155
+  ],
+  "1982|231|110": [
+   110,
+   115
+  ],
+  "1982|307|140": [
+   140,
+   155
+  ],
+  "1986|173|125": [
+   125,
+   130
+  ]
+ },
+ "notes": {
+  "1962|215|215": "Jetfire, turbocharged.",
+  "1963|215|215": "Jetfire, turbocharged.",
+  "1982|307|140": "Cruiser wagon only. Published ratings for this engine vary."
+ },
+ "code_notes": {
+  "W-30": "W-30 package.",
+  "LF9": "Diesel.",
+  "LT7": "V6 diesel."
+ },
+ "draft": true
+}

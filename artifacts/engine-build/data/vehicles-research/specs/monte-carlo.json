@@ -1,0 +1,73 @@
+{
+ "make": "Chevrolet",
+ "model": "Monte Carlo",
+ "makeSlug": "chevrolet",
+ "slug": "monte-carlo",
+ "title": "Chevrolet Monte Carlo Engines (1970–2007)",
+ "description": "Every factory engine in the Chevrolet Monte Carlo by year: the SS 454 of 1970–71, small blocks, the 1983–88 SS H.O. 305, V6s and the 2006–07 SS 5.3 V8.",
+ "intro": [
+  "Chevrolet built the Monte Carlo as a rear-drive personal luxury coupe from 1970 to 1988 and as a front-drive coupe from 1995 to 2007. The SS name marked its performance versions: a 454 in 1970–1971, a high-output 305 in 1983–1988 and a 5.3 V8 in 2006–2007.",
+  "Pick a year to see every engine offered that model year, with its code, rated horsepower and the trims it came in. Each engine links to its full specs."
+ ],
+ "generations": [
+  {
+   "key": "1970-1972",
+   "name": "1970–1972",
+   "years": [
+    1970,
+    1972
+   ],
+   "intro": [
+    "The first Monte Carlo shared the Chevelle's engines, from the 350 to the 402 big block badged as a 396, with the 454 in the SS. Ratings are gross through 1971 and SAE net from 1972."
+   ]
+  },
+  {
+   "key": "1973-1977",
+   "name": "1973–1977",
+   "years": [
+    1973,
+    1977
+   ],
+   "intro": [
+    "The Colonnade Monte Carlo offered the 350, 400 and 454, with the 454 available through 1975 and the 305 arriving for 1976."
+   ]
+  },
+  {
+   "key": "1978-1988",
+   "name": "1978–1988",
+   "years": [
+    1978,
+    1988
+   ],
+   "intro": [
+    "The downsized Monte Carlo added V6s, including a turbocharged 3.8 in 1980–1981, and Oldsmobile-built diesels in the early 1980s. From 1983 the SS used a high-output 305."
+   ]
+  },
+  {
+   "key": "1995-2007",
+   "name": "1995–2007",
+   "years": [
+    1995,
+    2007
+   ],
+   "intro": [
+    "The front-drive Monte Carlo used GM's 60-degree V6s and the 3800, supercharged in the 2004–2005 SS, and a 5.3 V8 in the 2006–2007 SS."
+   ]
+  }
+ ],
+ "files": [
+  "verify_monte-carlo.json"
+ ],
+ "notes": {
+  "1970|402|330": "Badged as a 396; displaces 402 cubic inches.",
+  "1971|402|300": "Badged as a 396; displaces 402 cubic inches.",
+  "1972|402|240": "Badged as a 396; displaces 402 cubic inches."
+ },
+ "code_notes": {
+  "LF9": "Oldsmobile-built diesel.",
+  "LT6": "Oldsmobile-built V6 diesel.",
+  "LC8": "Turbocharged.",
+  "L69": "High-output four-barrel 305."
+ },
+ "draft": true
+}

@@ -33,16 +33,21 @@ const OUT = resolve(ROOT, "public", "data", "vehicle-pages");
 // Which engine-dataset manufacturers can supply a vehicle make's engines.
 // Corporate engines were filed under whichever brand the source used, so a
 // Plymouth's 440 may live under Chrysler or Dodge.
+// The car's own division comes first (own-maker matches win); GM shared
+// engines across divisions and filed some under whichever brand the source
+// used. Toyota and Mitsubishi cover the NUMMI Nova and the 1978–83 Challenger.
+const GM = ["chevrolet", "gmc", "pontiac", "oldsmobile", "buick", "cadillac"];
 const ENGINE_MAKERS = {
-  chevrolet: ["chevrolet", "gmc"],
-  pontiac: ["pontiac", "chevrolet"],
-  oldsmobile: ["oldsmobile", "chevrolet"],
-  buick: ["buick", "chevrolet"],
-  ford: ["ford", "mercury", "lincoln"],
-  mercury: ["mercury", "ford"],
-  dodge: ["dodge", "chrysler", "plymouth"],
-  plymouth: ["plymouth", "chrysler", "dodge"],
+  chevrolet: [...GM, "toyota"],
+  pontiac: ["pontiac", ...GM.filter((m) => m !== "pontiac")],
+  oldsmobile: ["oldsmobile", ...GM.filter((m) => m !== "oldsmobile")],
+  buick: ["buick", ...GM.filter((m) => m !== "buick")],
+  ford: ["ford", "mercury", "lincoln", "shelby"],
+  mercury: ["mercury", "ford", "lincoln"],
+  dodge: ["dodge", "chrysler", "plymouth", "ram", "mitsubishi"],
+  plymouth: ["plymouth", "chrysler", "dodge", "mitsubishi"],
   chrysler: ["chrysler", "dodge", "plymouth"],
+  amc: ["american_motors", "jeep"],
 };
 
 // Exact cubic inches only. Allowing ±1 linked the Camaro's 230 inline-six to
@@ -89,13 +94,26 @@ export function linkVehicles(vehicles, engineData) {
     const pool = engineData.engines.filter((e) => makers.includes(e.manufacturerSlug));
     for (const ve of v.engines) {
       stats.engines++;
-      if (ve.race || ve.electric) continue; // race-only packages and electric drives get no spec links
+      // race-only packages and electric drives get no spec links; noLink marks an
+      // engine whose same-size page is a different engine (Zetec vs EcoBoost 2.0)
+      if (ve.race || ve.electric || ve.noLink) continue;
       // linkFamily: the curated file names the family when displacement alone
       // can't tell two engines apart (the 2011+ Coyote 302 vs the Windsor 302).
+      // Diesels match diesel records only, from any maker: the 5.7 diesel in a
+      // Chevrolet was Oldsmobile-built, and must not land on the gasoline 350.
+      const isDieselRec = (e) => /diesel/i.test(String(e.fuel_type ?? ""));
       let cands = ve.linkFamily
         ? engineData.engines.filter((e) => e.familyUrl === ve.linkFamily)
-        : pool.filter((e) => sameCi(e.displacement_ci, ve.cid) &&
-            (ve.cyl == null || e.num_cylinders == null || e.num_cylinders === ve.cyl));
+        : ve.diesel
+          ? engineData.engines.filter((e) => isDieselRec(e) && sameCi(e.displacement_ci, ve.cid))
+          : pool.filter((e) => !isDieselRec(e) && sameCi(e.displacement_ci, ve.cid) &&
+              (ve.cyl == null || e.num_cylinders == null || e.num_cylinders === ve.cyl));
+      // Same size, different era: a 1999 Cougar's 2.0 Zetec must not land on
+      // the 1973 Pinto 2.0. Records with no years can't be judged and stay in.
+      if (!ve.linkFamily) {
+        const near = (e) => e.yearMin == null || (ve.year >= e.yearMin - 10 && ve.year <= (e.yearMax ?? e.yearMin) + 10);
+        cands = cands.filter(near);
+      }
       // Same manufacturer first: a Pontiac 400 must not borrow a Chevy 400.
       const own = cands.filter((e) => e.manufacturerSlug === makers[0]);
       if (own.length) cands = own;

@@ -1,0 +1,3616 @@
+{
+ "vehicle": "dart",
+ "scope": "Dodge Dart 1960-1976 and 2013-2016",
+ "method_note": "All Dodge/Chrysler/FCA/Stellantis material counts as ONE source; all Wikipedia articles count as one. confirmed = NHRA + at least 2 independent non-NHRA sources (Dodge counted once). hp is advertised gross through 1971, SAE net from 1972. Several Dodge catalogs (1960, 1961 4-bbl variants, 1972-76) confirm availability but print no brake hp; that is noted per entry.",
+ "years": {
+  "1960": [
+   {
+    "gen": "gen1",
+    "cid": 225,
+    "hp": 145,
+    "hp_basis": "gross",
+    "name": "Economy Slant Six",
+    "carb": "1-bbl",
+    "trims": [
+     "Seneca",
+     "Pioneer"
+    ],
+    "nhra": true,
+    "sources": [
+     {
+      "name": "Dodge 1960 Dart catalog (81-205-0003, 8-59), specifications p.19",
+      "url": "https://oldcarbrochures.org/United%20States/Dodge/1960_Dodge/1960-Dodge-Dart-Brochure/slides/1960_Dodge_Dart-18.html",
+      "says": "Economy Slant 6, 225 cu in, standard on 6-cyl Seneca and Pioneer (catalog prints taxable hp only)"
+     },
+     {
+      "name": "Over-Drive magazine: 1960 Dodge Facts, Figures, and Specifications (from AMA spec sheets)",
+      "url": "https://over-drive-magazine.com/2026/03/17/1960-dodge-fact-sheet/",
+      "says": "225 CID I-6 145 HP, Dart Seneca/Pioneer/Phoenix"
+     },
+     {
+      "name": "Muscle Car Club: Dodge Dart 1960-1976 (engine tables by generation)",
+      "url": "https://musclecarclub.com/dodge-dart/",
+      "says": "1960-1966 225 I6 1bbl 145 hp"
+     },
+     {
+      "name": "conceptcarz: Dodge Dart history text (1960-1976, on the per-year Dart pages)",
+      "url": "https://www.conceptcarz.com/w10938/dodge-dart.aspx",
+      "says": "225 slant six ... 145 horsepower"
+     },
+     {
+      "name": "Wikipedia: Dodge Dart",
+      "url": "https://en.wikipedia.org/wiki/Dodge_Dart",
+      "says": "new 225 slant-six standard"
+     }
+    ],
+    "status": "confirmed",
+    "note": ""
+   },
+   {
+    "gen": "gen1",
+    "cid": 318,
+    "hp": 230,
+    "hp_basis": "gross",
+    "name": "Red Ram V8",
+    "carb": "2-bbl",
+    "trims": [
+     "Seneca",
+     "Pioneer"
+    ],
+    "nhra": true,
+    "sources": [
+     {
+      "name": "Dodge 1960 Dart catalog (81-205-0003, 8-59), specifications p.19",
+      "url": "https://oldcarbrochures.org/United%20States/Dodge/1960_Dodge/1960-Dodge-Dart-Brochure/slides/1960_Dodge_Dart-18.html",
+      "says": "Red Ram 318, dual downdraft (2-bbl) carburetor on Seneca and Pioneer"
+     },
+     {
+      "name": "Over-Drive magazine: 1960 Dodge Facts, Figures, and Specifications (from AMA spec sheets)",
+      "url": "https://over-drive-magazine.com/2026/03/17/1960-dodge-fact-sheet/",
+      "says": "318 CID 2-bbl 230 HP"
+     },
+     {
+      "name": "Muscle Car Club: Dodge Dart 1960-1976 (engine tables by generation)",
+      "url": "https://musclecarclub.com/dodge-dart/",
+      "says": "318 2bbl 230 hp on Seneca/Pioneer"
+     },
+     {
+      "name": "conceptcarz: Dodge Dart history text (1960-1976, on the per-year Dart pages)",
+      "url": "https://www.conceptcarz.com/w10938/dodge-dart.aspx",
+      "says": "318 V8 ... 230 horsepower"
+     },
+     {
+      "name": "Wikipedia: Dodge Dart",
+      "url": "https://en.wikipedia.org/wiki/Dodge_Dart",
+      "says": "318 V8 optional (standard on some Phoenix/Pioneer)"
+     }
+    ],
+    "status": "confirmed",
+    "note": ""
+   },
+   {
+    "gen": "gen1",
+    "cid": 318,
+    "hp": 255,
+    "hp_basis": "gross",
+    "name": "Red Ram V8 4-bbl",
+    "carb": "4-bbl",
+    "trims": [
+     "Phoenix"
+    ],
+    "nhra": true,
+    "sources": [
+     {
+      "name": "Dodge 1960 Dart catalog (81-205-0003, 8-59), specifications p.19",
+      "url": "https://oldcarbrochures.org/United%20States/Dodge/1960_Dodge/1960-Dodge-Dart-Brochure/slides/1960_Dodge_Dart-18.html",
+      "says": "Red Ram 318 with 4-barrel carburetor on Phoenix"
+     },
+     {
+      "name": "Over-Drive magazine: 1960 Dodge Facts, Figures, and Specifications (from AMA spec sheets)",
+      "url": "https://over-drive-magazine.com/2026/03/17/1960-dodge-fact-sheet/",
+      "says": "318 CID 4-bbl 255 HP, Dart Phoenix only (Sept-Dec 1959)"
+     },
+     {
+      "name": "Muscle Car Club: Dodge Dart 1960-1976 (engine tables by generation)",
+      "url": "https://musclecarclub.com/dodge-dart/",
+      "says": "quad-barrel 318 making 255 hp in the Phoenix"
+     }
+    ],
+    "status": "confirmed",
+    "note": "Over-Drive says the 4-bbl 318 was only built Sept-Dec 1959."
+   },
+   {
+    "gen": "gen1",
+    "cid": 361,
+    "hp": 310,
+    "hp_basis": "gross",
+    "name": "D-500 Ram Induction",
+    "carb": "2x4-bbl cross-ram",
+    "rpo": "D-500",
+    "trims": [
+     "all Dart"
+    ],
+    "nhra": true,
+    "sources": [
+     {
+      "name": "Dodge 1960 Dart catalog (81-205-0003, 8-59), specifications p.19",
+      "url": "https://oldcarbrochures.org/United%20States/Dodge/1960_Dodge/1960-Dodge-Dart-Brochure/slides/1960_Dodge_Dart-18.html",
+      "says": "D-500 Ram Induction 361 V8, two 4-barrel carburetors, optional"
+     },
+     {
+      "name": "Over-Drive magazine: 1960 Dodge Facts, Figures, and Specifications (from AMA spec sheets)",
+      "url": "https://over-drive-magazine.com/2026/03/17/1960-dodge-fact-sheet/",
+      "says": "361 D-500 310 HP dual 4-bbl long ram, Dart line only"
+     },
+     {
+      "name": "Muscle Car Club: Dodge Dart 1960-1976 (engine tables by generation)",
+      "url": "https://musclecarclub.com/dodge-dart/",
+      "says": "361 D-500 Ram Induction 310 hp"
+     },
+     {
+      "name": "conceptcarz: Dodge Dart history text (1960-1976, on the per-year Dart pages)",
+      "url": "https://www.conceptcarz.com/w10938/dodge-dart.aspx",
+      "says": "361 V8 produced 310 horsepower; D500 ram induction, twin four-barrels"
+     },
+     {
+      "name": "Wikipedia: Dodge Dart",
+      "url": "https://en.wikipedia.org/wiki/Dodge_Dart",
+      "says": "361 V8 optional"
+     }
+    ],
+    "status": "confirmed",
+    "note": ""
+   },
+   {
+    "gen": "gen1",
+    "cid": 361,
+    "hp": 295,
+    "hp_basis": "gross",
+    "name": "361 V8 (Matador engine)",
+    "trims": [],
+    "nhra": true,
+    "sources": [
+     {
+      "name": "Over-Drive magazine: 1960 Dodge Facts, Figures, and Specifications (from AMA spec sheets)",
+      "url": "https://over-drive-magazine.com/2026/03/17/1960-dodge-fact-sheet/",
+      "says": "361 CID 2-barrel 295 HP: Matador only (standard)"
+     }
+    ],
+    "status": "disputed",
+    "note": "NHRA lists 361/295 under Dart; Over-Drive lists it as Matador-only, and the 1960 Dart catalog lists only the D-500 361 for Dart. Probably NHRA carrying over the Matador engine; not confirmed for Dart."
+   },
+   {
+    "gen": "gen1",
+    "cid": 383,
+    "hp": 325,
+    "hp_basis": "gross",
+    "name": "383 4-bbl (Police)",
+    "carb": "4-bbl",
+    "trims": [
+     "Phoenix (police/special order)"
+    ],
+    "nhra": true,
+    "sources": [
+     {
+      "name": "Over-Drive magazine: 1960 Dodge Facts, Figures, and Specifications (from AMA spec sheets)",
+      "url": "https://over-drive-magazine.com/2026/03/17/1960-dodge-fact-sheet/",
+      "says": "383 CID 325 HP single 4-bbl, Police, available Dart Phoenix, Matador, Polara"
+     }
+    ],
+    "status": "nhra_plus_one",
+    "note": "Not in the 1960 Dart catalog; Wikipedia says the 383 was added to the Dart in 1961. Police/special order only, if at all."
+   },
+   {
+    "gen": "gen1",
+    "cid": 383,
+    "hp": 330,
+    "hp_basis": "gross",
+    "name": "383 D-500 Ram Induction",
+    "carb": "2x4-bbl cross-ram",
+    "trims": [
+     "special order"
+    ],
+    "nhra": true,
+    "sources": [
+     {
+      "name": "Over-Drive magazine: 1960 Dodge Facts, Figures, and Specifications (from AMA spec sheets)",
+      "url": "https://over-drive-magazine.com/2026/03/17/1960-dodge-fact-sheet/",
+      "says": "383 D-500 long ram dual 4-bbl 330 HP, Dart (special order), Matador, Polara"
+     }
+    ],
+    "status": "nhra_plus_one",
+    "note": "Not in the 1960 Dart catalog; Wikipedia says the 383 was added to the Dart in 1961."
+   }
+  ],
+  "1961": [
+   {
+    "gen": "gen1",
+    "cid": 225,
+    "hp": 145,
+    "hp_basis": "gross",
+    "name": "Economy Slant Six",
+    "carb": "1-bbl",
+    "trims": [
+     "all Dart"
+    ],
+    "nhra": true,
+    "sources": [
+     {
+      "name": "Dodge 1961 Dart and Polara catalog, specifications p.11",
+      "url": "https://oldcarbrochures.org/United%20States/Dodge/1961_Dodge/1961_Dodge_Dart_and_Polara_Brochure/slides/1961_Dodge_Dart__amp__Polara-11.html",
+      "says": "Economy Slant 6, 225 cu in, standard on all Dart models, 145 hp at 4000"
+     },
+     {
+      "name": "Over-Drive magazine: 1961 Dodge Fact Sheet",
+      "url": "https://over-drive-magazine.com/2025/07/24/1961-dodge-fact-sheet/",
+      "says": "225 CID I-6 145 HP, Dart line only"
+     },
+     {
+      "name": "Muscle Car Club: Dodge Dart 1960-1976 (engine tables by generation)",
+      "url": "https://musclecarclub.com/dodge-dart/",
+      "says": "1960-1966 225 I6 145 hp"
+     },
+     {
+      "name": "Wikipedia: Dodge Dart",
+      "url": "https://en.wikipedia.org/wiki/Dodge_Dart",
+      "says": "225 slant-six; die-cast aluminum block on some mid-year cars"
+     }
+    ],
+    "status": "confirmed",
+    "note": "Mid-year some 225s had the die-cast aluminum block."
+   },
+   {
+    "gen": "gen1",
+    "cid": 318,
+    "hp": 230,
+    "hp_basis": "gross",
+    "name": "Dart V8",
+    "carb": "2-bbl",
+    "trims": [
+     "all Dart V8"
+    ],
+    "nhra": true,
+    "sources": [
+     {
+      "name": "Dodge 1961 Dart and Polara catalog, specifications p.11",
+      "url": "https://oldcarbrochures.org/United%20States/Dodge/1961_Dodge/1961_Dodge_Dart_and_Polara_Brochure/slides/1961_Dodge_Dart__amp__Polara-11.html",
+      "says": "Dart V8 318, dual downdraft, 230 hp at 4400, standard on Dart 8-cyl"
+     },
+     {
+      "name": "Over-Drive magazine: 1961 Dodge Fact Sheet",
+      "url": "https://over-drive-magazine.com/2025/07/24/1961-dodge-fact-sheet/",
+      "says": "318 CID 2-bbl 230 HP, Dart line only"
+     },
+     {
+      "name": "Muscle Car Club: Dodge Dart 1960-1976 (engine tables by generation)",
+      "url": "https://musclecarclub.com/dodge-dart/",
+      "says": "1960-1962 318 2bbl 230 hp"
+     },
+     {
+      "name": "Wikipedia: Dodge Dart",
+      "url": "https://en.wikipedia.org/wiki/Dodge_Dart",
+      "says": "318 V8 available"
+     }
+    ],
+    "status": "confirmed",
+    "note": ""
+   },
+   {
+    "gen": "gen1",
+    "cid": 318,
+    "hp": 260,
+    "hp_basis": "gross",
+    "name": "Dart V8 with Power Package",
+    "carb": "4-bbl",
+    "trims": [
+     "all Dart (TorqueFlite only)"
+    ],
+    "nhra": true,
+    "sources": [
+     {
+      "name": "Dodge 1961 Dart and Polara catalog, specifications p.11",
+      "url": "https://oldcarbrochures.org/United%20States/Dodge/1961_Dodge/1961_Dodge_Dart_and_Polara_Brochure/slides/1961_Dodge_Dart__amp__Polara-11.html",
+      "says": "with a 4-barrel carburetor called \"Dart V8 with power package\", extra cost, TorqueFlite only, all Darts (hp not printed)"
+     },
+     {
+      "name": "Over-Drive magazine: 1961 Dodge Fact Sheet",
+      "url": "https://over-drive-magazine.com/2025/07/24/1961-dodge-fact-sheet/",
+      "says": "\"Power Pack\" 318 260 HP, automatic only, Dart line only"
+     }
+    ],
+    "status": "confirmed",
+    "note": "Muscle Car Club lists the 4-bbl 318 at 255 hp for 1960-61 (the 1960 figure); NHRA and Over-Drive give 260 for 1961."
+   },
+   {
+    "gen": "gen1",
+    "cid": 361,
+    "hp": 305,
+    "hp_basis": "gross",
+    "name": "Dart D-500",
+    "carb": "4-bbl",
+    "rpo": "D-500",
+    "trims": [
+     "all Dart"
+    ],
+    "nhra": true,
+    "sources": [
+     {
+      "name": "Dodge 1961 Dart and Polara catalog, specifications p.11",
+      "url": "https://oldcarbrochures.org/United%20States/Dodge/1961_Dodge/1961_Dodge_Dart_and_Polara_Brochure/slides/1961_Dodge_Dart__amp__Polara-11.html",
+      "says": "361 with 4-barrel carburetor called \"Dart D-500\", extra cost on all Dart models (hp not printed)"
+     },
+     {
+      "name": "Over-Drive magazine: 1961 Dodge Fact Sheet",
+      "url": "https://over-drive-magazine.com/2025/07/24/1961-dodge-fact-sheet/",
+      "says": "361 CID 4-bbl 305 HP, D-500 base option on Dart line"
+     },
+     {
+      "name": "Muscle Car Club: Dodge Dart 1960-1976 (engine tables by generation)",
+      "url": "https://musclecarclub.com/dodge-dart/",
+      "says": "1961-1962 361 4bbl D500 305 hp"
+     }
+    ],
+    "status": "confirmed",
+    "note": ""
+   },
+   {
+    "gen": "gen1",
+    "cid": 361,
+    "hp": 265,
+    "hp_basis": "gross",
+    "name": "Polara V8",
+    "trims": [],
+    "nhra": true,
+    "sources": [
+     {
+      "name": "Dodge 1961 Dart and Polara catalog, specifications p.11",
+      "url": "https://oldcarbrochures.org/United%20States/Dodge/1961_Dodge/1961_Dodge_Dart_and_Polara_Brochure/slides/1961_Dodge_Dart__amp__Polara-11.html",
+      "says": "361 2-bbl 265 hp = \"Polara V8\", standard on Polara"
+     },
+     {
+      "name": "Over-Drive magazine: 1961 Dodge Fact Sheet",
+      "url": "https://over-drive-magazine.com/2025/07/24/1961-dodge-fact-sheet/",
+      "says": "361 CID 2-bbl 265 HP: Polara line only, base V8"
+     }
+    ],
+    "status": "disputed",
+    "note": "NHRA lists 361/265 under Dart; the Dodge catalog and Over-Drive both say Polara only. Not a Dart engine."
+   },
+   {
+    "gen": "gen1",
+    "cid": 383,
+    "hp": 330,
+    "hp_basis": "gross",
+    "name": "D-500 Ram Induction 383",
+    "carb": "2x4-bbl cross-ram",
+    "rpo": "D-500",
+    "trims": [
+     "all Dart"
+    ],
+    "nhra": true,
+    "sources": [
+     {
+      "name": "Dodge 1961 Dart and Polara catalog, specifications p.11",
+      "url": "https://oldcarbrochures.org/United%20States/Dodge/1961_Dodge/1961_Dodge_Dart_and_Polara_Brochure/slides/1961_Dodge_Dart__amp__Polara-11.html",
+      "says": "D-500 Ram Induction 383, two 4-bbl, 330 hp at 4800, extra cost on all models; manual transmission on Dart only"
+     },
+     {
+      "name": "Over-Drive magazine: 1961 Dodge Fact Sheet",
+      "url": "https://over-drive-magazine.com/2025/07/24/1961-dodge-fact-sheet/",
+      "says": "383 dual 4-bbl long ram D-500 330 HP on Dart and Polara; in-line dual 4-bbl 330 HP police"
+     },
+     {
+      "name": "Muscle Car Club: Dodge Dart 1960-1976 (engine tables by generation)",
+      "url": "https://musclecarclub.com/dodge-dart/",
+      "says": "1961 383 2x4bbl 330 hp"
+     },
+     {
+      "name": "Wikipedia: Dodge Dart",
+      "url": "https://en.wikipedia.org/wiki/Dodge_Dart",
+      "says": "Dodge 383 V8 added in 1961"
+     }
+    ],
+    "status": "confirmed",
+    "note": ""
+   },
+   {
+    "gen": "gen1",
+    "cid": 383,
+    "hp": 325,
+    "hp_basis": "gross",
+    "name": "383 4-bbl (Police)",
+    "carb": "4-bbl",
+    "trims": [
+     "Police package"
+    ],
+    "nhra": true,
+    "sources": [
+     {
+      "name": "Over-Drive magazine: 1961 Dodge Fact Sheet",
+      "url": "https://over-drive-magazine.com/2025/07/24/1961-dodge-fact-sheet/",
+      "says": "383 CID 4-bbl 325 HP: base D-500 on Polara, available as \"Police Package\" on Dart"
+     }
+    ],
+    "status": "nhra_plus_one",
+    "note": "The 1961 Dodge catalog lists the 325-hp 383 for Polara only; Dart availability rests on NHRA and Over-Drive (police package)."
+   },
+   {
+    "gen": "gen1",
+    "cid": 383,
+    "hp": 340,
+    "hp_basis": "gross",
+    "name": "383 Short Ram (Police)",
+    "carb": "2x4-bbl short ram",
+    "trims": [
+     "Police package"
+    ],
+    "nhra": true,
+    "sources": [
+     {
+      "name": "Over-Drive magazine: 1961 Dodge Fact Sheet",
+      "url": "https://over-drive-magazine.com/2025/07/24/1961-dodge-fact-sheet/",
+      "says": "383 dual 4-bbl short ram 340 HP, Dart line only as \"Police Package\""
+     }
+    ],
+    "status": "nhra_plus_one",
+    "note": ""
+   },
+   {
+    "gen": "gen1",
+    "cid": 413,
+    "hp": 350,
+    "hp_basis": "gross",
+    "name": "413 4-bbl (Police)",
+    "carb": "4-bbl",
+    "trims": [
+     "Police package"
+    ],
+    "nhra": true,
+    "sources": [
+     {
+      "name": "Over-Drive magazine: 1961 Dodge Fact Sheet",
+      "url": "https://over-drive-magazine.com/2025/07/24/1961-dodge-fact-sheet/",
+      "says": "413 CID 4-bbl 350 HP, Dart line only as \"Police Package\""
+     }
+    ],
+    "status": "nhra_plus_one",
+    "note": "Not in the Dodge retail catalog."
+   },
+   {
+    "gen": "gen1",
+    "cid": 413,
+    "hp": 375,
+    "hp_basis": "gross",
+    "name": "413 dual 4-bbl (Police)",
+    "carb": "2x4-bbl",
+    "trims": [
+     "Police package"
+    ],
+    "nhra": true,
+    "sources": [
+     {
+      "name": "Over-Drive magazine: 1961 Dodge Fact Sheet",
+      "url": "https://over-drive-magazine.com/2025/07/24/1961-dodge-fact-sheet/",
+      "says": "413 in-line dual 4-bbl and short-ram dual 4-bbl, 375 HP, Dart line only as \"Police Package\""
+     }
+    ],
+    "status": "nhra_plus_one",
+    "note": "Not in the Dodge retail catalog."
+   },
+   {
+    "gen": "gen1",
+    "cid": 225,
+    "hp": 196,
+    "hp_basis": "gross",
+    "name": "225 high-performance (Hyper-Pak?)",
+    "trims": [],
+    "nhra": true,
+    "sources": [],
+    "status": "nhra_only",
+    "note": "NHRA lists 225/196 hp (C-225-03). No Dart source found; probably the dealer-installed Hyper-Pak 4-bbl kit sold for Valiant/Lancer. Searched the 1961 catalog, Over-Drive, Muscle Car Club, Wikipedia."
+   }
+  ],
+  "1962": [
+   {
+    "gen": "gen2",
+    "cid": 225,
+    "hp": 145,
+    "hp_basis": "gross",
+    "name": "Slant Six",
+    "carb": "1-bbl",
+    "trims": [
+     "Dart",
+     "Dart 330",
+     "Dart 440"
+    ],
+    "nhra": true,
+    "sources": [
+     {
+      "name": "Dodge 1962 Dart/Lancer catalog, engines p.15",
+      "url": "https://oldcarbrochures.org/United%20States/Dodge/1962_Dodge/1962_Dodge_Dart-Lancer_Brochure/slides/1962_Dodge_Dart__amp__Lancer-15.html",
+      "says": "225 Slant 6 standard on all Dart 6 models, 145 hp at 4000"
+     },
+     {
+      "name": "Dodge 1962 \"Dart 440 Story\" booklet, engine tables pp.6 and 10",
+      "url": "https://oldcarbrochures.org/United%20States/Dodge/1962_Dodge/1962_Dodge_Dart_440_Story_001/index.html",
+      "says": "145 hp 225 six standard on all 440s"
+     },
+     {
+      "name": "Over-Drive magazine: 1962 Dodge Mid-Size Cars Fact Sheet",
+      "url": "https://over-drive-magazine.com/2023/10/11/1962-dodge-mid-size-cars-fact-sheet/",
+      "says": "225 CID I-6 145 HP, Dart, Dart 330, Dart 440"
+     },
+     {
+      "name": "Muscle Car Club: Dodge Dart 1960-1976 (engine tables by generation)",
+      "url": "https://musclecarclub.com/dodge-dart/",
+      "says": "1960-1966 225 I6 145 hp"
+     }
+    ],
+    "status": "confirmed",
+    "note": ""
+   },
+   {
+    "gen": "gen2",
+    "cid": 318,
+    "hp": 230,
+    "hp_basis": "gross",
+    "name": "318 V8",
+    "carb": "2-bbl",
+    "trims": [
+     "Dart",
+     "Dart 330",
+     "Dart 440"
+    ],
+    "nhra": true,
+    "sources": [
+     {
+      "name": "Dodge 1962 Dart/Lancer catalog, engines p.15",
+      "url": "https://oldcarbrochures.org/United%20States/Dodge/1962_Dodge/1962_Dodge_Dart-Lancer_Brochure/slides/1962_Dodge_Dart__amp__Lancer-15.html",
+      "says": "318 V8 standard on Dart V8 models, 230 hp at 4400"
+     },
+     {
+      "name": "Over-Drive magazine: 1962 Dodge Mid-Size Cars Fact Sheet",
+      "url": "https://over-drive-magazine.com/2023/10/11/1962-dodge-mid-size-cars-fact-sheet/",
+      "says": "318 CID V-8 230 HP"
+     },
+     {
+      "name": "Muscle Car Club: Dodge Dart 1960-1976 (engine tables by generation)",
+      "url": "https://musclecarclub.com/dodge-dart/",
+      "says": "1960-1962 318 2bbl 230 hp"
+     },
+     {
+      "name": "conceptcarz: Dodge Dart history text (1960-1976, on the per-year Dart pages)",
+      "url": "https://www.conceptcarz.com/w10938/dodge-dart.aspx",
+      "says": "base engine still the 2-barrel 318 ... 230 horsepower"
+     }
+    ],
+    "status": "confirmed",
+    "note": ""
+   },
+   {
+    "gen": "gen2",
+    "cid": 318,
+    "hp": 260,
+    "hp_basis": "gross",
+    "name": "318 V8 with Power Package",
+    "carb": "4-bbl",
+    "trims": [
+     "all Dart (automatic only)"
+    ],
+    "nhra": true,
+    "sources": [
+     {
+      "name": "Dodge 1962 Dart/Lancer catalog, engines p.15",
+      "url": "https://oldcarbrochures.org/United%20States/Dodge/1962_Dodge/1962_Dodge_Dart-Lancer_Brochure/slides/1962_Dodge_Dart__amp__Lancer-15.html",
+      "says": "318 V8 with Power Package, 4-bbl, 260 hp at 4400, extra cost with automatic on all Darts"
+     },
+     {
+      "name": "Over-Drive magazine: 1962 Dodge Mid-Size Cars Fact Sheet",
+      "url": "https://over-drive-magazine.com/2023/10/11/1962-dodge-mid-size-cars-fact-sheet/",
+      "says": "318 \"Power Pack\" 260 HP (automatic only)"
+     },
+     {
+      "name": "Muscle Car Club: Dodge Dart 1960-1976 (engine tables by generation)",
+      "url": "https://musclecarclub.com/dodge-dart/",
+      "says": "1962 318 260 hp"
+     }
+    ],
+    "status": "confirmed",
+    "note": ""
+   },
+   {
+    "gen": "gen2",
+    "cid": 361,
+    "hp": 305,
+    "hp_basis": "gross",
+    "name": "361 V8 4-bbl",
+    "carb": "4-bbl",
+    "trims": [
+     "all Dart"
+    ],
+    "nhra": true,
+    "sources": [
+     {
+      "name": "Dodge 1962 Dart/Lancer catalog, engines p.15",
+      "url": "https://oldcarbrochures.org/United%20States/Dodge/1962_Dodge/1962_Dodge_Dart-Lancer_Brochure/slides/1962_Dodge_Dart__amp__Lancer-15.html",
+      "says": "361 V8 extra cost on all Dart models, 305 hp at 4800, 4-bbl"
+     },
+     {
+      "name": "Dodge 1962 \"Dart 440 Story\" booklet, engine tables pp.6 and 10",
+      "url": "https://oldcarbrochures.org/United%20States/Dodge/1962_Dodge/1962_Dodge_Dart_440_Story_001/index.html",
+      "says": "305 hp 361 V8 w/4 bbl carb, optional"
+     },
+     {
+      "name": "Over-Drive magazine: 1962 Dodge Mid-Size Cars Fact Sheet",
+      "url": "https://over-drive-magazine.com/2023/10/11/1962-dodge-mid-size-cars-fact-sheet/",
+      "says": "361 CID 305 HP, Polara 500 std, optional Dart 440"
+     },
+     {
+      "name": "Muscle Car Club: Dodge Dart 1960-1976 (engine tables by generation)",
+      "url": "https://musclecarclub.com/dodge-dart/",
+      "says": "1961-1962 361 4bbl 305 hp"
+     }
+    ],
+    "status": "confirmed",
+    "note": ""
+   },
+   {
+    "gen": "gen2",
+    "cid": 413,
+    "hp": 410,
+    "hp_basis": "gross",
+    "name": "413 Max Wedge Ramcharger (11.0:1)",
+    "carb": "2x4-bbl short cross-ram",
+    "trims": [
+     "Dart",
+     "Dart 330",
+     "Dart 440"
+    ],
+    "nhra": true,
+    "sources": [
+     {
+      "name": "Over-Drive magazine: 1962 Dodge Mid-Size Cars Fact Sheet",
+      "url": "https://over-drive-magazine.com/2023/10/11/1962-dodge-mid-size-cars-fact-sheet/",
+      "says": "413 CID 410 HP @ 5400 \"Super Stock 413\", optional"
+     },
+     {
+      "name": "Muscle Car Club: Dodge Dart 1960-1976 (engine tables by generation)",
+      "url": "https://musclecarclub.com/dodge-dart/",
+      "says": "1962 413 2x4bbl 410 hp (11:1 compression)"
+     },
+     {
+      "name": "Wikipedia: Dodge Dart",
+      "url": "https://en.wikipedia.org/wiki/Dodge_Dart",
+      "says": "mid-year 415 hp \"Ramcharger\" 413 aimed at drag racing (Wikipedia figure 415)"
+     }
+    ],
+    "status": "confirmed",
+    "note": "Mid-year, short cross-ram dual 4-bbl; regular-production option aimed at drag racing. Not in the retail Dart catalogs."
+   },
+   {
+    "gen": "gen2",
+    "cid": 413,
+    "hp": 420,
+    "hp_basis": "gross",
+    "name": "413 Max Wedge Ramcharger (13.5:1)",
+    "carb": "2x4-bbl short cross-ram",
+    "trims": [
+     "Dart",
+     "Dart 330",
+     "Dart 440"
+    ],
+    "nhra": true,
+    "sources": [
+     {
+      "name": "Over-Drive magazine: 1962 Dodge Mid-Size Cars Fact Sheet",
+      "url": "https://over-drive-magazine.com/2023/10/11/1962-dodge-mid-size-cars-fact-sheet/",
+      "says": "413 CID 420 HP @ 5400 \"Ramcharger 413\" (13.5:1)"
+     },
+     {
+      "name": "Muscle Car Club: Dodge Dart 1960-1976 (engine tables by generation)",
+      "url": "https://musclecarclub.com/dodge-dart/",
+      "says": "1962 413 2x4bbl 420 hp (13.5:1)"
+     },
+     {
+      "name": "conceptcarz: Dodge Dart history text (1960-1976, on the per-year Dart pages)",
+      "url": "https://www.conceptcarz.com/w10938/dodge-dart.aspx",
+      "says": "413 Max Wedge, horsepower skyrocketed to 420"
+     },
+     {
+      "name": "Wikipedia: Dodge Dart",
+      "url": "https://en.wikipedia.org/wiki/Dodge_Dart",
+      "says": "mid-year 415 hp \"Ramcharger\" 413"
+     }
+    ],
+    "status": "confirmed",
+    "note": "Mid-year drag-oriented option; not in the retail Dart catalogs."
+   },
+   {
+    "gen": "gen2",
+    "cid": 413,
+    "hp": 385,
+    "hp_basis": "gross",
+    "name": "413 dual 4-bbl",
+    "carb": "2x4-bbl",
+    "trims": [
+     "Dart 440"
+    ],
+    "nhra": true,
+    "sources": [
+     {
+      "name": "Over-Drive magazine: 1962 Dodge Mid-Size Cars Fact Sheet",
+      "url": "https://over-drive-magazine.com/2023/10/11/1962-dodge-mid-size-cars-fact-sheet/",
+      "says": "413 CID 385 HP @ 5200 (dual 4-barrel), optional on Dart 440"
+     }
+    ],
+    "status": "nhra_plus_one",
+    "note": ""
+   },
+   {
+    "gen": "gen2",
+    "cid": 383,
+    "hp": 343,
+    "hp_basis": "gross",
+    "name": "383 V8",
+    "trims": [
+     "Dart 440"
+    ],
+    "nhra": true,
+    "sources": [
+     {
+      "name": "Over-Drive magazine: 1962 Dodge Mid-Size Cars Fact Sheet",
+      "url": "https://over-drive-magazine.com/2023/10/11/1962-dodge-mid-size-cars-fact-sheet/",
+      "says": "383 CID 330 HP (single 4-bbl) and 335 HP (dual 4-bbl), optional on Dart 440"
+     }
+    ],
+    "status": "disputed",
+    "note": "NHRA lists 383/343; Over-Drive gives 330 (4-bbl) and 335 (dual 4-bbl). No 383 in the 1962 Dart/Lancer catalog or the Dart 440 booklet. Rating unresolved."
+   },
+   {
+    "gen": "gen2",
+    "cid": 413,
+    "hp": 394,
+    "hp_basis": "gross",
+    "name": "413 (unidentified rating)",
+    "trims": [],
+    "nhra": true,
+    "sources": [],
+    "status": "nhra_only",
+    "note": "NHRA lists 413/394 hp (C-413-05/07); no other source mentions it, probably an NHRA re-rating. Searched Over-Drive, Muscle Car Club, conceptcarz, Wikipedia."
+   },
+   {
+    "gen": "gen2",
+    "cid": 361,
+    "hp": 310,
+    "hp_basis": "gross",
+    "name": "361 dual 4-bbl",
+    "trims": [
+     "Dart 440"
+    ],
+    "nhra": false,
+    "sources": [
+     {
+      "name": "Over-Drive magazine: 1962 Dodge Mid-Size Cars Fact Sheet",
+      "url": "https://over-drive-magazine.com/2023/10/11/1962-dodge-mid-size-cars-fact-sheet/",
+      "says": "361 CID 310 HP @ 5200 (dual 4-barrel), optional on Dart 440"
+     }
+    ],
+    "status": "single_source",
+    "note": "Only Over-Drive lists it for 1962."
+   },
+   {
+    "gen": "gen2",
+    "cid": 413,
+    "hp": 365,
+    "hp_basis": "gross",
+    "name": "413 4-bbl",
+    "trims": [
+     "Dart 440"
+    ],
+    "nhra": false,
+    "sources": [
+     {
+      "name": "Over-Drive magazine: 1962 Dodge Mid-Size Cars Fact Sheet",
+      "url": "https://over-drive-magazine.com/2023/10/11/1962-dodge-mid-size-cars-fact-sheet/",
+      "says": "413 CID 365 HP @ 4600, optional on Dart 440"
+     }
+    ],
+    "status": "single_source",
+    "note": "Only Over-Drive lists it for the 1962 Dart."
+   }
+  ],
+  "1963": [
+   {
+    "gen": "gen3",
+    "cid": 170,
+    "hp": 101,
+    "hp_basis": "gross",
+    "name": "Slant Six",
+    "carb": "1-bbl",
+    "trims": [
+     "170",
+     "270",
+     "GT"
+    ],
+    "nhra": false,
+    "sources": [
+     {
+      "name": "Dodge 1963 Dart catalog, specifications p.11",
+      "url": "https://oldcarbrochures.org/United%20States/Dodge/1963_Dodge/1963_Dodge_Dart_Brochure/slides/1963_Dodge_Dart-11.html",
+      "says": "170 cubic-inch six standard on all models, 101 hp at 4400"
+     },
+     {
+      "name": "Wikipedia: Dodge Dart",
+      "url": "https://en.wikipedia.org/wiki/Dodge_Dart",
+      "says": "170 cu in 101 hp standard"
+     },
+     {
+      "name": "Muscle Car Club: Dodge Dart 1960-1976 (engine tables by generation)",
+      "url": "https://musclecarclub.com/dodge-dart/",
+      "says": "1962-1966 170 I6 101 hp"
+     },
+     {
+      "name": "conceptcarz: Dodge Dart history text (1960-1976, on the per-year Dart pages)",
+      "url": "https://www.conceptcarz.com/w10938/dodge-dart.aspx",
+      "says": "base engine just over 100 horsepower"
+     }
+    ],
+    "status": "three_sources_not_nhra",
+    "note": "NHRA has no 1963 Dart rows."
+   },
+   {
+    "gen": "gen3",
+    "cid": 225,
+    "hp": 145,
+    "hp_basis": "gross",
+    "name": "Slant Six",
+    "carb": "1-bbl",
+    "trims": [
+     "170",
+     "270",
+     "GT"
+    ],
+    "nhra": false,
+    "sources": [
+     {
+      "name": "Dodge 1963 Dart catalog, specifications p.11",
+      "url": "https://oldcarbrochures.org/United%20States/Dodge/1963_Dodge/1963_Dodge_Dart_Brochure/slides/1963_Dodge_Dart-11.html",
+      "says": "225 six optional at extra cost on all models, 145 hp at 4000"
+     },
+     {
+      "name": "Wikipedia: Dodge Dart",
+      "url": "https://en.wikipedia.org/wiki/Dodge_Dart",
+      "says": "225 cu in 145 hp for under $50 extra"
+     },
+     {
+      "name": "Muscle Car Club: Dodge Dart 1960-1976 (engine tables by generation)",
+      "url": "https://musclecarclub.com/dodge-dart/",
+      "says": "225 I6 145 hp"
+     },
+     {
+      "name": "conceptcarz: Dodge Dart history text (1960-1976, on the per-year Dart pages)",
+      "url": "https://www.conceptcarz.com/w10938/dodge-dart.aspx",
+      "says": "225 cubic-inch engine capable of 145 horsepower"
+     }
+    ],
+    "status": "three_sources_not_nhra",
+    "note": "Aluminum-block 225 dropped early in 1963 (Wikipedia). Sixes only this year."
+   }
+  ],
+  "1964": [
+   {
+    "gen": "gen3",
+    "cid": 170,
+    "hp": 101,
+    "hp_basis": "gross",
+    "name": "Slant Six",
+    "carb": "1-bbl",
+    "trims": [
+     "170",
+     "270",
+     "GT"
+    ],
+    "nhra": true,
+    "sources": [
+     {
+      "name": "Dodge 1964 Dart catalog (early issue), specifications pp.10-11",
+      "url": "https://oldcarbrochures.org/United%20States/Dodge/1964_Dodge/1964_Dodge_Dart_Brochure/slides/1964_Dodge_Dart-10-11.html",
+      "says": "170 Slant Six standard on all Dart 6-cyl models, 101 hp at 4400"
+     },
+     {
+      "name": "Wikipedia: Dodge Dart",
+      "url": "https://en.wikipedia.org/wiki/Dodge_Dart",
+      "says": "170 101 hp standard"
+     },
+     {
+      "name": "Muscle Car Club: Dodge Dart 1960-1976 (engine tables by generation)",
+      "url": "https://musclecarclub.com/dodge-dart/",
+      "says": "170 I6 101 hp"
+     },
+     {
+      "name": "conceptcarz: Dodge Dart history text (1960-1976, on the per-year Dart pages)",
+      "url": "https://www.conceptcarz.com/w10938/dodge-dart.aspx",
+      "says": "base 170 six 101 horsepower"
+     }
+    ],
+    "status": "confirmed",
+    "note": ""
+   },
+   {
+    "gen": "gen3",
+    "cid": 225,
+    "hp": 145,
+    "hp_basis": "gross",
+    "name": "Slant Six",
+    "carb": "1-bbl",
+    "trims": [
+     "170",
+     "270",
+     "GT"
+    ],
+    "nhra": true,
+    "sources": [
+     {
+      "name": "Dodge 1964 Dart catalog (early issue), specifications pp.10-11",
+      "url": "https://oldcarbrochures.org/United%20States/Dodge/1964_Dodge/1964_Dodge_Dart_Brochure/slides/1964_Dodge_Dart-10-11.html",
+      "says": "225 Slant Six optional on all Dart 6-cyl models, 145 hp at 4000"
+     },
+     {
+      "name": "Wikipedia: Dodge Dart",
+      "url": "https://en.wikipedia.org/wiki/Dodge_Dart",
+      "says": "225 145 hp"
+     },
+     {
+      "name": "Muscle Car Club: Dodge Dart 1960-1976 (engine tables by generation)",
+      "url": "https://musclecarclub.com/dodge-dart/",
+      "says": "225 145 hp"
+     },
+     {
+      "name": "conceptcarz: Dodge Dart history text (1960-1976, on the per-year Dart pages)",
+      "url": "https://www.conceptcarz.com/w10938/dodge-dart.aspx",
+      "says": "225 six 145 horsepower"
+     }
+    ],
+    "status": "confirmed",
+    "note": ""
+   },
+   {
+    "gen": "gen3",
+    "cid": 273,
+    "hp": 180,
+    "hp_basis": "gross",
+    "name": "LA 273 V8",
+    "carb": "2-bbl",
+    "trims": [
+     "170",
+     "270",
+     "GT"
+    ],
+    "nhra": true,
+    "sources": [
+     {
+      "name": "Wikipedia: Dodge Dart",
+      "url": "https://en.wikipedia.org/wiki/Dodge_Dart",
+      "says": "after the start of the 1964 model year, new 273 LA V8, 180 bhp, 2-bbl"
+     },
+     {
+      "name": "Muscle Car Club: Dodge Dart 1960-1976 (engine tables by generation)",
+      "url": "https://musclecarclub.com/dodge-dart/",
+      "says": "1964-1966 273 2bbl 180 hp"
+     },
+     {
+      "name": "conceptcarz: Dodge Dart history text (1960-1976, on the per-year Dart pages)",
+      "url": "https://www.conceptcarz.com/w10938/dodge-dart.aspx",
+      "says": "273 V8 producing 180 horsepower"
+     }
+    ],
+    "status": "confirmed",
+    "note": "Introduced after the start of the model year; the early 1964 Dart catalog lists sixes only."
+   }
+  ],
+  "1965": [
+   {
+    "gen": "gen3",
+    "cid": 170,
+    "hp": 101,
+    "hp_basis": "gross",
+    "name": "Slant Six",
+    "carb": "1-bbl",
+    "trims": [
+     "Dart",
+     "270",
+     "GT"
+    ],
+    "nhra": true,
+    "sources": [
+     {
+      "name": "Dodge 1965 Full Line catalog, Dart engine chart p.9 (and p.7)",
+      "url": "https://oldcarbrochures.org/United%20States/Dodge/1965_Dodge/1965%20Dodge%20Full%20Line/slides/1965_Dodge_Full_Line-09.html",
+      "says": "170 Six (1 bbl) 101 hp, standard for 6-cyl Dart, 270, GT"
+     },
+     {
+      "name": "Wikipedia: Dodge Dart",
+      "url": "https://en.wikipedia.org/wiki/Dodge_Dart",
+      "says": "170 101 hp"
+     },
+     {
+      "name": "Muscle Car Club: Dodge Dart 1960-1976 (engine tables by generation)",
+      "url": "https://musclecarclub.com/dodge-dart/",
+      "says": "170 101 hp"
+     },
+     {
+      "name": "conceptcarz: Dodge Dart history text (1960-1976, on the per-year Dart pages)",
+      "url": "https://www.conceptcarz.com/w10938/dodge-dart.aspx",
+      "says": "two six-cylinder engines"
+     }
+    ],
+    "status": "confirmed",
+    "note": ""
+   },
+   {
+    "gen": "gen3",
+    "cid": 225,
+    "hp": 145,
+    "hp_basis": "gross",
+    "name": "Slant Six",
+    "carb": "1-bbl",
+    "trims": [
+     "Dart",
+     "270",
+     "GT"
+    ],
+    "nhra": true,
+    "sources": [
+     {
+      "name": "Dodge 1965 Full Line catalog, Dart engine chart p.9 (and p.7)",
+      "url": "https://oldcarbrochures.org/United%20States/Dodge/1965_Dodge/1965%20Dodge%20Full%20Line/slides/1965_Dodge_Full_Line-09.html",
+      "says": "225 Six (1 bbl) 145 hp, optional for 6-cyl models"
+     },
+     {
+      "name": "Wikipedia: Dodge Dart",
+      "url": "https://en.wikipedia.org/wiki/Dodge_Dart",
+      "says": "225 145 hp"
+     },
+     {
+      "name": "Muscle Car Club: Dodge Dart 1960-1976 (engine tables by generation)",
+      "url": "https://musclecarclub.com/dodge-dart/",
+      "says": "225 145 hp"
+     },
+     {
+      "name": "conceptcarz: Dodge Dart history text (1960-1976, on the per-year Dart pages)",
+      "url": "https://www.conceptcarz.com/w10938/dodge-dart.aspx",
+      "says": "two six-cylinder engines"
+     }
+    ],
+    "status": "confirmed",
+    "note": ""
+   },
+   {
+    "gen": "gen3",
+    "cid": 273,
+    "hp": 180,
+    "hp_basis": "gross",
+    "name": "LA 273 V8",
+    "carb": "2-bbl",
+    "trims": [
+     "Dart",
+     "270",
+     "GT"
+    ],
+    "nhra": true,
+    "sources": [
+     {
+      "name": "Dodge 1965 Full Line catalog, Dart engine chart p.9 (and p.7)",
+      "url": "https://oldcarbrochures.org/United%20States/Dodge/1965_Dodge/1965%20Dodge%20Full%20Line/slides/1965_Dodge_Full_Line-09.html",
+      "says": "273 V8 (2 bbl) 180 hp, standard for V8 models"
+     },
+     {
+      "name": "Wikipedia: Dodge Dart",
+      "url": "https://en.wikipedia.org/wiki/Dodge_Dart",
+      "says": "2-barrel 273 remained available"
+     },
+     {
+      "name": "Muscle Car Club: Dodge Dart 1960-1976 (engine tables by generation)",
+      "url": "https://musclecarclub.com/dodge-dart/",
+      "says": "273 2bbl 180 hp"
+     },
+     {
+      "name": "conceptcarz: Dodge Dart history text (1960-1976, on the per-year Dart pages)",
+      "url": "https://www.conceptcarz.com/w10938/dodge-dart.aspx",
+      "says": "the 273 cubic-inch V8"
+     }
+    ],
+    "status": "confirmed",
+    "note": ""
+   },
+   {
+    "gen": "gen3",
+    "cid": 273,
+    "hp": 235,
+    "hp_basis": "gross",
+    "name": "273 4-bbl (Charger 273)",
+    "carb": "4-bbl",
+    "trims": [
+     "Dart",
+     "270",
+     "GT"
+    ],
+    "nhra": true,
+    "sources": [
+     {
+      "name": "Dodge 1965 Full Line catalog, Dart engine chart p.9 (and p.7)",
+      "url": "https://oldcarbrochures.org/United%20States/Dodge/1965_Dodge/1965%20Dodge%20Full%20Line/slides/1965_Dodge_Full_Line-09.html",
+      "says": "273 V8 (4 bbl) 235 hp, optional for V8 models; p.7 \"235 wild horses\", 10.5:1"
+     },
+     {
+      "name": "Wikipedia: Dodge Dart",
+      "url": "https://en.wikipedia.org/wiki/Dodge_Dart",
+      "says": "new 4-bbl 273, 10.5:1, solid lifters, 235 bhp; Dart Charger"
+     },
+     {
+      "name": "Muscle Car Club: Dodge Dart 1960-1976 (engine tables by generation)",
+      "url": "https://musclecarclub.com/dodge-dart/",
+      "says": "1965-1966 273 4bbl 235 hp"
+     },
+     {
+      "name": "conceptcarz: Dodge Dart history text (1960-1976, on the per-year Dart pages)",
+      "url": "https://www.conceptcarz.com/w10938/dodge-dart.aspx",
+      "says": "new version of the 273 ... 235 horsepower"
+     }
+    ],
+    "status": "confirmed",
+    "note": "Dodge called it the Charger 273 (Plymouth: Commando); used in the Dart GT \"Charger\" hardtops."
+   }
+  ],
+  "1966": [
+   {
+    "gen": "gen3",
+    "cid": 170,
+    "hp": 101,
+    "hp_basis": "gross",
+    "name": "Slant Six",
+    "carb": "1-bbl",
+    "trims": [
+     "Dart",
+     "270",
+     "GT"
+    ],
+    "nhra": true,
+    "sources": [
+     {
+      "name": "Dodge 1966 Full Line catalog, Dart engines p.19",
+      "url": "https://oldcarbrochures.org/United%20States/Dodge/1966_Dodge/1966-Dodge-Full-Line-Brochure/slides/1966_Dodge_Full_Line-19.html",
+      "says": "170 Six (1-bbl) 101 hp, standard on 6-cyl models"
+     },
+     {
+      "name": "Muscle Car Club: Dodge Dart 1960-1976 (engine tables by generation)",
+      "url": "https://musclecarclub.com/dodge-dart/",
+      "says": "1962-1966 170 101 hp"
+     },
+     {
+      "name": "Wikipedia: Dodge Dart",
+      "url": "https://en.wikipedia.org/wiki/Dodge_Dart",
+      "says": "170 rated 101 bhp until 1967"
+     }
+    ],
+    "status": "confirmed",
+    "note": ""
+   },
+   {
+    "gen": "gen3",
+    "cid": 225,
+    "hp": 145,
+    "hp_basis": "gross",
+    "name": "Slant Six",
+    "carb": "1-bbl",
+    "trims": [
+     "Dart",
+     "270",
+     "GT"
+    ],
+    "nhra": true,
+    "sources": [
+     {
+      "name": "Dodge 1966 Full Line catalog, Dart engines p.19",
+      "url": "https://oldcarbrochures.org/United%20States/Dodge/1966_Dodge/1966-Dodge-Full-Line-Brochure/slides/1966_Dodge_Full_Line-19.html",
+      "says": "225 Six (1-bbl) 145 hp, optional on 6-cyl models"
+     },
+     {
+      "name": "Muscle Car Club: Dodge Dart 1960-1976 (engine tables by generation)",
+      "url": "https://musclecarclub.com/dodge-dart/",
+      "says": "1960-1966 225 145 hp"
+     },
+     {
+      "name": "Wikipedia: Dodge Dart",
+      "url": "https://en.wikipedia.org/wiki/Dodge_Dart",
+      "says": "225 145 hp option"
+     }
+    ],
+    "status": "confirmed",
+    "note": ""
+   },
+   {
+    "gen": "gen3",
+    "cid": 273,
+    "hp": 180,
+    "hp_basis": "gross",
+    "name": "LA 273 V8",
+    "carb": "2-bbl",
+    "trims": [
+     "Dart",
+     "270",
+     "GT"
+    ],
+    "nhra": true,
+    "sources": [
+     {
+      "name": "Dodge 1966 Full Line catalog, Dart engines p.19",
+      "url": "https://oldcarbrochures.org/United%20States/Dodge/1966_Dodge/1966-Dodge-Full-Line-Brochure/slides/1966_Dodge_Full_Line-19.html",
+      "says": "273 V8 (2-bbl) 180 hp, standard on 8-cyl models"
+     },
+     {
+      "name": "Muscle Car Club: Dodge Dart 1960-1976 (engine tables by generation)",
+      "url": "https://musclecarclub.com/dodge-dart/",
+      "says": "1964-1966 273 2bbl 180 hp"
+     },
+     {
+      "name": "Wikipedia: Dodge Dart",
+      "url": "https://en.wikipedia.org/wiki/Dodge_Dart",
+      "says": "2-barrel 273"
+     }
+    ],
+    "status": "confirmed",
+    "note": ""
+   },
+   {
+    "gen": "gen3",
+    "cid": 273,
+    "hp": 235,
+    "hp_basis": "gross",
+    "name": "273 4-bbl (Charger 273)",
+    "carb": "4-bbl",
+    "trims": [
+     "Dart",
+     "270",
+     "GT"
+    ],
+    "nhra": true,
+    "sources": [
+     {
+      "name": "Dodge 1966 Full Line catalog, Dart engines p.19",
+      "url": "https://oldcarbrochures.org/United%20States/Dodge/1966_Dodge/1966-Dodge-Full-Line-Brochure/slides/1966_Dodge_Full_Line-19.html",
+      "says": "273 V8 (4-bbl) 235 hp, optional on 8-cyl models, N.A. wagons"
+     },
+     {
+      "name": "Muscle Car Club: Dodge Dart 1960-1976 (engine tables by generation)",
+      "url": "https://musclecarclub.com/dodge-dart/",
+      "says": "1965-1966 273 4bbl 235 hp"
+     },
+     {
+      "name": "Wikipedia: Dodge Dart",
+      "url": "https://en.wikipedia.org/wiki/Dodge_Dart",
+      "says": "4-bbl 273 235 bhp"
+     }
+    ],
+    "status": "confirmed",
+    "note": ""
+   },
+   {
+    "gen": "gen3",
+    "cid": 273,
+    "hp": 275,
+    "hp_basis": "gross",
+    "name": "D-Dart 273",
+    "carb": "4-bbl Holley",
+    "rpo": "sales code 699",
+    "trims": [
+     "GT (D-Dart)"
+    ],
+    "nhra": true,
+    "sources": [
+     {
+      "name": "Wikipedia: Dodge Dart",
+      "url": "https://en.wikipedia.org/wiki/Dodge_Dart",
+      "says": "1966 D-Dart for NHRA D/stock, 273 modified to 275 bhp; Chrysler dealer bulletin"
+     },
+     {
+      "name": "Muscle Car Club: Dodge Dart 1960-1976 (engine tables by generation)",
+      "url": "https://musclecarclub.com/dodge-dart/",
+      "says": "1966 273 4bbl 275 hp, one-year D/Dart, no warranty"
+     },
+     {
+      "name": "conceptcarz: 1966 Dodge Dart GT / D-Dart page",
+      "url": "https://www.conceptcarz.com/w23308/dodge-dart.aspx",
+      "says": "sales code 699: 273 with 275 horsepower installed in the Dart (D-Dart)"
+     }
+    ],
+    "status": "confirmed",
+    "note": "Factory competition package for NHRA D/Stock, no warranty, not in the retail catalog. Treated as a factory option, not race_only."
+   }
+  ],
+  "1967": [
+   {
+    "gen": "gen4",
+    "cid": 170,
+    "hp": 115,
+    "hp_basis": "gross",
+    "name": "Slant Six",
+    "carb": "1-bbl",
+    "trims": [
+     "Dart",
+     "270",
+     "GT"
+    ],
+    "nhra": true,
+    "sources": [
+     {
+      "name": "Dodge 1967 Full Line catalog (rev.), Dart engines p.22",
+      "url": "https://oldcarbrochures.org/United%20States/Dodge/1967_Dodge/1967-Dodge-Full-Line-brochure/slides/1967_Dodge_Full_Line_Rev-22.html",
+      "says": "170 Six (1-bbl) 115 hp, standard for all 6-cyl Darts"
+     },
+     {
+      "name": "Over-Drive magazine: 1967 Dodge Dart Fact Sheet",
+      "url": "https://over-drive-magazine.com/2024/11/16/1967-dodge-dart-fact-sheet/",
+      "says": "170 CID I-6 115 HP"
+     },
+     {
+      "name": "Muscle Car Club: Dodge Dart 1960-1976 (engine tables by generation)",
+      "url": "https://musclecarclub.com/dodge-dart/",
+      "says": "1967-1969 170 115 hp"
+     },
+     {
+      "name": "Wikipedia: Dodge Dart",
+      "url": "https://en.wikipedia.org/wiki/Dodge_Dart",
+      "says": "170 rating rose from 101 to 115 bhp for 1967"
+     }
+    ],
+    "status": "confirmed",
+    "note": "NHRA lists 170/101 (the 1966 rating); Dodge, Over-Drive, MCC and Wikipedia give 115 for 1967."
+   },
+   {
+    "gen": "gen4",
+    "cid": 225,
+    "hp": 145,
+    "hp_basis": "gross",
+    "name": "Slant Six",
+    "carb": "1-bbl",
+    "trims": [
+     "Dart",
+     "270",
+     "GT"
+    ],
+    "nhra": true,
+    "sources": [
+     {
+      "name": "Dodge 1967 Full Line catalog (rev.), Dart engines p.22",
+      "url": "https://oldcarbrochures.org/United%20States/Dodge/1967_Dodge/1967-Dodge-Full-Line-brochure/slides/1967_Dodge_Full_Line_Rev-22.html",
+      "says": "225 Six 145 hp, optional for 6-cyl Darts"
+     },
+     {
+      "name": "Over-Drive magazine: 1967 Dodge Dart Fact Sheet",
+      "url": "https://over-drive-magazine.com/2024/11/16/1967-dodge-dart-fact-sheet/",
+      "says": "225 CID I-6 145 HP"
+     },
+     {
+      "name": "Muscle Car Club: Dodge Dart 1960-1976 (engine tables by generation)",
+      "url": "https://musclecarclub.com/dodge-dart/",
+      "says": "1967-1969 225 145 hp"
+     }
+    ],
+    "status": "confirmed",
+    "note": ""
+   },
+   {
+    "gen": "gen4",
+    "cid": 273,
+    "hp": 180,
+    "hp_basis": "gross",
+    "name": "LA 273 V8",
+    "carb": "2-bbl",
+    "trims": [
+     "Dart",
+     "270",
+     "GT"
+    ],
+    "nhra": true,
+    "sources": [
+     {
+      "name": "Dodge 1967 Full Line catalog (rev.), Dart engines p.22",
+      "url": "https://oldcarbrochures.org/United%20States/Dodge/1967_Dodge/1967-Dodge-Full-Line-brochure/slides/1967_Dodge_Full_Line_Rev-22.html",
+      "says": "273 V8 (2-bbl) 180 hp, standard for all V8 Darts"
+     },
+     {
+      "name": "Over-Drive magazine: 1967 Dodge Dart Fact Sheet",
+      "url": "https://over-drive-magazine.com/2024/11/16/1967-dodge-dart-fact-sheet/",
+      "says": "273 CID V-8 180 HP"
+     },
+     {
+      "name": "Muscle Car Club: Dodge Dart 1960-1976 (engine tables by generation)",
+      "url": "https://musclecarclub.com/dodge-dart/",
+      "says": "1967 273 2bbl 180 hp"
+     }
+    ],
+    "status": "confirmed",
+    "note": ""
+   },
+   {
+    "gen": "gen4",
+    "cid": 273,
+    "hp": 235,
+    "hp_basis": "gross",
+    "name": "273 4-bbl",
+    "carb": "4-bbl",
+    "trims": [
+     "Dart",
+     "270",
+     "GT"
+    ],
+    "nhra": true,
+    "sources": [
+     {
+      "name": "Dodge 1967 Full Line catalog (rev.), Dart engines p.22",
+      "url": "https://oldcarbrochures.org/United%20States/Dodge/1967_Dodge/1967-Dodge-Full-Line-brochure/slides/1967_Dodge_Full_Line_Rev-22.html",
+      "says": "273 V8 (4-bbl) 235 hp, optional for all V8 Darts"
+     },
+     {
+      "name": "Over-Drive magazine: 1967 Dodge Dart Fact Sheet",
+      "url": "https://over-drive-magazine.com/2024/11/16/1967-dodge-dart-fact-sheet/",
+      "says": "273 CID V-8 235 HP"
+     },
+     {
+      "name": "Muscle Car Club: Dodge Dart 1960-1976 (engine tables by generation)",
+      "url": "https://musclecarclub.com/dodge-dart/",
+      "says": "1967 273 4bbl 235 hp"
+     }
+    ],
+    "status": "confirmed",
+    "note": ""
+   },
+   {
+    "gen": "gen4",
+    "cid": 383,
+    "hp": 280,
+    "hp_basis": "gross",
+    "name": "383 B V8 (GTS)",
+    "carb": "4-bbl",
+    "trims": [
+     "GT (GTS package)"
+    ],
+    "nhra": true,
+    "sources": [
+     {
+      "name": "Over-Drive magazine: 1967 Dodge Dart Fact Sheet",
+      "url": "https://over-drive-magazine.com/2024/11/16/1967-dodge-dart-fact-sheet/",
+      "says": "383 CID B big-block 280 HP, only with the GTS package; 437 produced"
+     },
+     {
+      "name": "Muscle Car Club: Dodge Dart 1960-1976 (engine tables by generation)",
+      "url": "https://musclecarclub.com/dodge-dart/",
+      "says": "1967 383 4bbl 280 hp; 458 383 Dart GTS"
+     },
+     {
+      "name": "Wikipedia: Dodge Dart",
+      "url": "https://en.wikipedia.org/wiki/Dodge_Dart",
+      "says": "GTS debuted late 1967 in limited quantities"
+     }
+    ],
+    "status": "confirmed",
+    "note": "Late-year GTS package; not in the full-line catalog. Production 437 (Over-Drive) vs 458 (MCC)."
+   }
+  ],
+  "1968": [
+   {
+    "gen": "gen4",
+    "cid": 170,
+    "hp": 115,
+    "hp_basis": "gross",
+    "name": "Slant Six",
+    "carb": "1-bbl",
+    "trims": [
+     "Dart",
+     "270",
+     "GT"
+    ],
+    "nhra": false,
+    "sources": [
+     {
+      "name": "Dodge 1968 Dart catalog (81-206-8036, 8-67), engine table p.12",
+      "url": "https://oldcarbrochures.org/United%20States/Dodge/1968_Dodge/1968%20Dodge%20Dart/index.html",
+      "says": "170 cu in 115 hp @4400"
+     },
+     {
+      "name": "Over-Drive magazine: 1968 Dodge Dart Fact Sheet",
+      "url": "https://over-drive-magazine.com/2024/11/25/1968-dodge-dart-fact-sheet/",
+      "says": "170 CID I-6 115 HP"
+     },
+     {
+      "name": "Muscle Car Club: Dodge Dart 1960-1976 (engine tables by generation)",
+      "url": "https://musclecarclub.com/dodge-dart/",
+      "says": "170 115 hp"
+     }
+    ],
+    "status": "three_sources_not_nhra",
+    "note": "NHRA 1968 Dart rows list only the Hemi."
+   },
+   {
+    "gen": "gen4",
+    "cid": 225,
+    "hp": 145,
+    "hp_basis": "gross",
+    "name": "Slant Six",
+    "carb": "1-bbl",
+    "trims": [
+     "Dart",
+     "270",
+     "GT"
+    ],
+    "nhra": false,
+    "sources": [
+     {
+      "name": "Dodge 1968 Dart catalog (81-206-8036, 8-67), engine table p.12",
+      "url": "https://oldcarbrochures.org/United%20States/Dodge/1968_Dodge/1968%20Dodge%20Dart/index.html",
+      "says": "225 cu in 145 hp @4000"
+     },
+     {
+      "name": "Over-Drive magazine: 1968 Dodge Dart Fact Sheet",
+      "url": "https://over-drive-magazine.com/2024/11/25/1968-dodge-dart-fact-sheet/",
+      "says": "225 CID I-6 145 HP"
+     },
+     {
+      "name": "Muscle Car Club: Dodge Dart 1960-1976 (engine tables by generation)",
+      "url": "https://musclecarclub.com/dodge-dart/",
+      "says": "225 145 hp"
+     }
+    ],
+    "status": "three_sources_not_nhra",
+    "note": "NHRA 1968 Dart rows list only the Hemi."
+   },
+   {
+    "gen": "gen4",
+    "cid": 273,
+    "hp": 190,
+    "hp_basis": "gross",
+    "name": "LA 273 V8",
+    "carb": "2-bbl",
+    "trims": [
+     "Dart",
+     "270",
+     "GT"
+    ],
+    "nhra": false,
+    "sources": [
+     {
+      "name": "Dodge 1968 Dart catalog (81-206-8036, 8-67), engine table p.12",
+      "url": "https://oldcarbrochures.org/United%20States/Dodge/1968_Dodge/1968%20Dodge%20Dart/index.html",
+      "says": "273 cu in 190 hp @4400 (standard V8)"
+     },
+     {
+      "name": "Over-Drive magazine: 1968 Dodge Dart Fact Sheet",
+      "url": "https://over-drive-magazine.com/2024/11/25/1968-dodge-dart-fact-sheet/",
+      "says": "273 CID V-8 190 HP"
+     },
+     {
+      "name": "Muscle Car Club: Dodge Dart 1960-1976 (engine tables by generation)",
+      "url": "https://musclecarclub.com/dodge-dart/",
+      "says": "1968-1969 273 2bbl 190 hp"
+     }
+    ],
+    "status": "three_sources_not_nhra",
+    "note": "NHRA 1968 Dart rows list only the Hemi."
+   },
+   {
+    "gen": "gen4",
+    "cid": 318,
+    "hp": 230,
+    "hp_basis": "gross",
+    "name": "LA 318 V8",
+    "carb": "2-bbl",
+    "trims": [
+     "Dart",
+     "270",
+     "GT"
+    ],
+    "nhra": false,
+    "sources": [
+     {
+      "name": "Dodge 1968 Dart catalog (81-206-8036, 8-67), engine table p.12",
+      "url": "https://oldcarbrochures.org/United%20States/Dodge/1968_Dodge/1968%20Dodge%20Dart/index.html",
+      "says": "318 cu in 230 hp @4400"
+     },
+     {
+      "name": "Over-Drive magazine: 1968 Dodge Dart Fact Sheet",
+      "url": "https://over-drive-magazine.com/2024/11/25/1968-dodge-dart-fact-sheet/",
+      "says": "318 CID V-8 230 HP"
+     },
+     {
+      "name": "Muscle Car Club: Dodge Dart 1960-1976 (engine tables by generation)",
+      "url": "https://musclecarclub.com/dodge-dart/",
+      "says": "318 2bbl 230 hp"
+     },
+     {
+      "name": "Wikipedia: Dodge Dart",
+      "url": "https://en.wikipedia.org/wiki/Dodge_Dart",
+      "says": "318 2-bbl 230 bhp added 1968"
+     }
+    ],
+    "status": "three_sources_not_nhra",
+    "note": "NHRA 1968 Dart rows list only the Hemi."
+   },
+   {
+    "gen": "gen4",
+    "cid": 340,
+    "hp": 275,
+    "hp_basis": "gross",
+    "name": "LA 340 V8",
+    "carb": "4-bbl",
+    "trims": [
+     "GTS (std)"
+    ],
+    "nhra": false,
+    "sources": [
+     {
+      "name": "Dodge 1968 Dart catalog (81-206-8036, 8-67), engine table p.12",
+      "url": "https://oldcarbrochures.org/United%20States/Dodge/1968_Dodge/1968%20Dodge%20Dart/index.html",
+      "says": "340 cu in 275 hp @5000, GTS only"
+     },
+     {
+      "name": "Dodge 1968 Performance Models catalog, engines pp.8-9",
+      "url": "https://oldcarbrochures.org/United%20States/Dodge/1968_Dodge/1968-Dodge-Performance-Models-Brochure/slides/1968_Dodge_Performance_Models_Catalog-08-09.html",
+      "says": "340 V8 275 hp, standard on Dart GTS"
+     },
+     {
+      "name": "Over-Drive magazine: 1968 Dodge Dart Fact Sheet",
+      "url": "https://over-drive-magazine.com/2024/11/25/1968-dodge-dart-fact-sheet/",
+      "says": "340 CID V-8 275 HP"
+     },
+     {
+      "name": "Muscle Car Club: Dodge Dart 1960-1976 (engine tables by generation)",
+      "url": "https://musclecarclub.com/dodge-dart/",
+      "says": "340 Scat Pack 275 hp"
+     },
+     {
+      "name": "Wikipedia: Dodge Dart",
+      "url": "https://en.wikipedia.org/wiki/Dodge_Dart",
+      "says": "275 bhp 340 4-bbl standard in GTS"
+     },
+     {
+      "name": "conceptcarz: Dodge Dart history text (1960-1976, on the per-year Dart pages)",
+      "url": "https://www.conceptcarz.com/w10938/dodge-dart.aspx",
+      "says": "GTS 340 producing 275 horsepower"
+     }
+    ],
+    "status": "three_sources_not_nhra",
+    "note": "NHRA 1968 Dart rows list only the Hemi."
+   },
+   {
+    "gen": "gen4",
+    "cid": 383,
+    "hp": 300,
+    "hp_basis": "gross",
+    "name": "383 B V8",
+    "carb": "4-bbl",
+    "trims": [
+     "GTS"
+    ],
+    "nhra": false,
+    "sources": [
+     {
+      "name": "Dodge 1968 Dart catalog (81-206-8036, 8-67), engine table p.12",
+      "url": "https://oldcarbrochures.org/United%20States/Dodge/1968_Dodge/1968%20Dodge%20Dart/index.html",
+      "says": "383 cu in 300 hp @4400, GTS only"
+     },
+     {
+      "name": "Dodge 1968 Performance Models catalog, engines pp.8-9",
+      "url": "https://oldcarbrochures.org/United%20States/Dodge/1968_Dodge/1968-Dodge-Performance-Models-Brochure/slides/1968_Dodge_Performance_Models_Catalog-08-09.html",
+      "says": "383 V8 300 hp, optional on Dart GTS"
+     },
+     {
+      "name": "Over-Drive magazine: 1968 Dodge Dart Fact Sheet",
+      "url": "https://over-drive-magazine.com/2024/11/25/1968-dodge-dart-fact-sheet/",
+      "says": "383 CID V-8 300 HP"
+     },
+     {
+      "name": "Muscle Car Club: Dodge Dart 1960-1976 (engine tables by generation)",
+      "url": "https://musclecarclub.com/dodge-dart/",
+      "says": "383 4bbl 300 hp"
+     },
+     {
+      "name": "Wikipedia: Dodge Dart",
+      "url": "https://en.wikipedia.org/wiki/Dodge_Dart",
+      "says": "300 hp 383 optional"
+     },
+     {
+      "name": "conceptcarz: Dodge Dart history text (1960-1976, on the per-year Dart pages)",
+      "url": "https://www.conceptcarz.com/w10938/dodge-dart.aspx",
+      "says": "optional 383 producing 300 horsepower"
+     }
+    ],
+    "status": "three_sources_not_nhra",
+    "note": "NHRA 1968 Dart rows list only the Hemi."
+   },
+   {
+    "gen": "gen4",
+    "cid": 426,
+    "hp": 425,
+    "hp_basis": "gross",
+    "name": "426 Hemi (Hurst Hemi Dart)",
+    "carb": "2x4-bbl cross-ram",
+    "rpo": "LO23",
+    "trims": [
+     "GTS hardtop (LO23)"
+    ],
+    "nhra": true,
+    "sources": [
+     {
+      "name": "Wikipedia: Dodge Dart",
+      "url": "https://en.wikipedia.org/wiki/Dodge_Dart",
+      "says": "limited 1968 option code L023, Hurst-built Hemi Darts, 80 made strictly for drag racing, non-warranty; 425 hp"
+     },
+     {
+      "name": "Muscle Car Club: Dodge Dart 1960-1976 (engine tables by generation)",
+      "url": "https://musclecarclub.com/dodge-dart/",
+      "says": "80 426 HEMI Darts, 425 hp, drag racers with no warranty"
+     },
+     {
+      "name": "Over-Drive magazine: 1968 Dodge Dart Fact Sheet",
+      "url": "https://over-drive-magazine.com/2024/11/25/1968-dodge-dart-fact-sheet/",
+      "says": "\"Hemi Dart Available to Selected Drag Racers\""
+     },
+     {
+      "name": "Dodge 1968 Performance Models catalog, engines pp.8-9",
+      "url": "https://oldcarbrochures.org/United%20States/Dodge/1968_Dodge/1968-Dodge-Performance-Models-Brochure/slides/1968_Dodge_Performance_Models_Catalog-08-09.html",
+      "says": "retail performance catalog: Hemi not available on Dart GTS"
+     }
+    ],
+    "status": "race_only",
+    "note": "Built by Hurst under Chrysler contract for SS/B drag racing; no warranty, not for street use. Dodge press release to dealers 20 Feb 1968 (per Wikipedia)."
+   },
+   {
+    "gen": "gen4",
+    "cid": 440,
+    "hp": 375,
+    "hp_basis": "gross",
+    "name": "440 Magnum (Hurst pilot run)",
+    "carb": "4-bbl",
+    "trims": [
+     "GTS"
+    ],
+    "nhra": false,
+    "sources": [
+     {
+      "name": "Wikipedia: Dodge Dart",
+      "url": "https://en.wikipedia.org/wiki/Dodge_Dart",
+      "says": "a small pilot run of fifty 440-powered Darts built in 1968 (Larry Shepard)"
+     },
+     {
+      "name": "Muscle Car Club: Dodge Dart 1960-1976 (engine tables by generation)",
+      "url": "https://musclecarclub.com/dodge-dart/",
+      "says": "1968-1969 440 375 hp; first version created by Chicago dealer Norman Kraus in 1968"
+     },
+     {
+      "name": "Dodge 1968 Performance Models catalog, engines pp.8-9",
+      "url": "https://oldcarbrochures.org/United%20States/Dodge/1968_Dodge/1968-Dodge-Performance-Models-Brochure/slides/1968_Dodge_Performance_Models_Catalog-08-09.html",
+      "says": "440 Magnum: \"not available on Dart GTS\""
+     }
+    ],
+    "status": "disputed",
+    "note": "The 1968 Dodge performance catalog says the 440 was not available on the Dart GTS; Wikipedia and MCC describe a ~50-car Hurst/dealer-originated pilot run. Unclear whether factory or dealer conversion."
+   }
+  ],
+  "1969": [
+   {
+    "gen": "gen4",
+    "cid": 170,
+    "hp": 115,
+    "hp_basis": "gross",
+    "name": "Slant Six",
+    "carb": "1-bbl",
+    "trims": [
+     "Dart",
+     "Custom",
+     "Swinger",
+     "GT"
+    ],
+    "nhra": true,
+    "sources": [
+     {
+      "name": "Dodge 1969 Dart catalog, engine table p.4",
+      "url": "https://oldcarbrochures.org/United%20States/Dodge/1969_Dodge/1969_Dodge_Dart_Brochure/slides/1969_Dodge_Dart-04.html",
+      "says": "170 cu in 115@4400"
+     },
+     {
+      "name": "Over-Drive magazine: 1969 Dodge Dart Fact Sheet",
+      "url": "https://over-drive-magazine.com/2024/12/19/1969-dodge-dart-fact-sheet/",
+      "says": "170 CID I-6 115 HP"
+     },
+     {
+      "name": "Muscle Car Club: Dodge Dart 1960-1976 (engine tables by generation)",
+      "url": "https://musclecarclub.com/dodge-dart/",
+      "says": "170 115 hp"
+     }
+    ],
+    "status": "confirmed",
+    "note": ""
+   },
+   {
+    "gen": "gen4",
+    "cid": 225,
+    "hp": 145,
+    "hp_basis": "gross",
+    "name": "Slant Six",
+    "carb": "1-bbl",
+    "trims": [
+     "Dart",
+     "Custom",
+     "Swinger",
+     "GT"
+    ],
+    "nhra": true,
+    "sources": [
+     {
+      "name": "Dodge 1969 Dart catalog, engine table p.4",
+      "url": "https://oldcarbrochures.org/United%20States/Dodge/1969_Dodge/1969_Dodge_Dart_Brochure/slides/1969_Dodge_Dart-04.html",
+      "says": "225 cu in 145@4000"
+     },
+     {
+      "name": "Over-Drive magazine: 1969 Dodge Dart Fact Sheet",
+      "url": "https://over-drive-magazine.com/2024/12/19/1969-dodge-dart-fact-sheet/",
+      "says": "225 CID I-6 145 HP"
+     },
+     {
+      "name": "Muscle Car Club: Dodge Dart 1960-1976 (engine tables by generation)",
+      "url": "https://musclecarclub.com/dodge-dart/",
+      "says": "225 145 hp"
+     }
+    ],
+    "status": "confirmed",
+    "note": ""
+   },
+   {
+    "gen": "gen4",
+    "cid": 273,
+    "hp": 190,
+    "hp_basis": "gross",
+    "name": "LA 273 V8",
+    "carb": "2-bbl",
+    "trims": [
+     "Dart",
+     "Custom",
+     "Swinger",
+     "GT"
+    ],
+    "nhra": true,
+    "sources": [
+     {
+      "name": "Dodge 1969 Dart catalog, engine table p.4",
+      "url": "https://oldcarbrochures.org/United%20States/Dodge/1969_Dodge/1969_Dodge_Dart_Brochure/slides/1969_Dodge_Dart-04.html",
+      "says": "273 cu in 190@4400"
+     },
+     {
+      "name": "Over-Drive magazine: 1969 Dodge Dart Fact Sheet",
+      "url": "https://over-drive-magazine.com/2024/12/19/1969-dodge-dart-fact-sheet/",
+      "says": "273 CID V-8 190 HP"
+     },
+     {
+      "name": "Muscle Car Club: Dodge Dart 1960-1976 (engine tables by generation)",
+      "url": "https://musclecarclub.com/dodge-dart/",
+      "says": "273 190 hp"
+     }
+    ],
+    "status": "confirmed",
+    "note": ""
+   },
+   {
+    "gen": "gen4",
+    "cid": 318,
+    "hp": 230,
+    "hp_basis": "gross",
+    "name": "LA 318 V8",
+    "carb": "2-bbl",
+    "trims": [
+     "Dart",
+     "Custom",
+     "Swinger",
+     "GT"
+    ],
+    "nhra": true,
+    "sources": [
+     {
+      "name": "Dodge 1969 Dart catalog, engine table p.4",
+      "url": "https://oldcarbrochures.org/United%20States/Dodge/1969_Dodge/1969_Dodge_Dart_Brochure/slides/1969_Dodge_Dart-04.html",
+      "says": "318 cu in 230@4400"
+     },
+     {
+      "name": "Over-Drive magazine: 1969 Dodge Dart Fact Sheet",
+      "url": "https://over-drive-magazine.com/2024/12/19/1969-dodge-dart-fact-sheet/",
+      "says": "318 CID V-8 230 HP"
+     },
+     {
+      "name": "Muscle Car Club: Dodge Dart 1960-1976 (engine tables by generation)",
+      "url": "https://musclecarclub.com/dodge-dart/",
+      "says": "318 230 hp"
+     }
+    ],
+    "status": "confirmed",
+    "note": ""
+   },
+   {
+    "gen": "gen4",
+    "cid": 340,
+    "hp": 275,
+    "hp_basis": "gross",
+    "name": "LA 340 V8",
+    "carb": "4-bbl",
+    "trims": [
+     "Swinger 340",
+     "GTS"
+    ],
+    "nhra": true,
+    "sources": [
+     {
+      "name": "Dodge 1969 Dart catalog, engine table p.4",
+      "url": "https://oldcarbrochures.org/United%20States/Dodge/1969_Dodge/1969_Dodge_Dart_Brochure/slides/1969_Dodge_Dart-04.html",
+      "says": "340 cu in 275@5000, Swinger 340 & GTS only"
+     },
+     {
+      "name": "Over-Drive magazine: 1969 Dodge Dart Fact Sheet",
+      "url": "https://over-drive-magazine.com/2024/12/19/1969-dodge-dart-fact-sheet/",
+      "says": "340 CID V-8 275 HP"
+     },
+     {
+      "name": "Muscle Car Club: Dodge Dart 1960-1976 (engine tables by generation)",
+      "url": "https://musclecarclub.com/dodge-dart/",
+      "says": "340 275 hp"
+     }
+    ],
+    "status": "confirmed",
+    "note": "NHRA lists it under Swinger (Swinger 340)."
+   },
+   {
+    "gen": "gen4",
+    "cid": 383,
+    "hp": 330,
+    "hp_basis": "gross",
+    "name": "383 B V8",
+    "carb": "4-bbl",
+    "trims": [
+     "GTS"
+    ],
+    "nhra": true,
+    "sources": [
+     {
+      "name": "Dodge 1969 Dart catalog, engine table p.4",
+      "url": "https://oldcarbrochures.org/United%20States/Dodge/1969_Dodge/1969_Dodge_Dart_Brochure/slides/1969_Dodge_Dart-04.html",
+      "says": "383 cu in 330@5200, GTS only"
+     },
+     {
+      "name": "Over-Drive magazine: 1969 Dodge Dart Fact Sheet",
+      "url": "https://over-drive-magazine.com/2024/12/19/1969-dodge-dart-fact-sheet/",
+      "says": "383 CID V-8 330 HP (Super Bee upgrades)"
+     },
+     {
+      "name": "Muscle Car Club: Dodge Dart 1960-1976 (engine tables by generation)",
+      "url": "https://musclecarclub.com/dodge-dart/",
+      "says": "1969 383 4bbl 330 hp"
+     }
+    ],
+    "status": "confirmed",
+    "note": "NHRA lists it under Swinger; the Dodge catalog says GTS only."
+   },
+   {
+    "gen": "gen4",
+    "cid": 440,
+    "hp": 375,
+    "hp_basis": "gross",
+    "name": "440 Magnum",
+    "carb": "4-bbl",
+    "trims": [
+     "GTS"
+    ],
+    "nhra": true,
+    "sources": [
+     {
+      "name": "Over-Drive magazine: 1969 Dodge Dart Fact Sheet",
+      "url": "https://over-drive-magazine.com/2024/12/19/1969-dodge-dart-fact-sheet/",
+      "says": "440 CID 375 HP now available in the Dart GTS"
+     },
+     {
+      "name": "Muscle Car Club: Dodge Dart 1960-1976 (engine tables by generation)",
+      "url": "https://musclecarclub.com/dodge-dart/",
+      "says": "1968-1969 440 375 hp"
+     },
+     {
+      "name": "Wikipedia: Dodge Dart",
+      "url": "https://en.wikipedia.org/wiki/Dodge_Dart",
+      "says": "\"In 1969 we built over 600 440-powered Darts\" (Shepard), basically the 383 GTS with the 440"
+     }
+    ],
+    "status": "confirmed",
+    "note": "Not in the 1969 Dart catalog engine table; added later in the year as a limited factory build."
+   }
+  ],
+  "1970": [
+   {
+    "gen": "gen4",
+    "cid": 198,
+    "hp": 125,
+    "hp_basis": "gross",
+    "name": "Slant Six",
+    "carb": "1-bbl",
+    "trims": [
+     "Dart",
+     "Swinger",
+     "Custom"
+    ],
+    "nhra": true,
+    "sources": [
+     {
+      "name": "Dodge 1970 Dart catalog (81-205-0036, 8-69), \"70 Specs\" engine table p.12",
+      "url": "https://oldcarbrochures.org/United%20States/Dodge/1970_Dodge/1970-Dodge-Dart-Brochure/slides/1970_Dodge_Dart-12.html",
+      "says": "198 cu in 125@4400"
+     },
+     {
+      "name": "Over-Drive magazine: 1970 Dodge Dart Fact Sheet",
+      "url": "https://over-drive-magazine.com/2025/02/19/1970-dodge-dart-fact-sheet/",
+      "says": "198 CID I-6 125 HP"
+     },
+     {
+      "name": "Muscle Car Club: Dodge Dart 1960-1976 (engine tables by generation)",
+      "url": "https://musclecarclub.com/dodge-dart/",
+      "says": "1970-1971 198 125 hp"
+     },
+     {
+      "name": "Wikipedia: Dodge Dart",
+      "url": "https://en.wikipedia.org/wiki/Dodge_Dart",
+      "says": "170 replaced by 198 for 1970"
+     }
+    ],
+    "status": "confirmed",
+    "note": ""
+   },
+   {
+    "gen": "gen4",
+    "cid": 225,
+    "hp": 145,
+    "hp_basis": "gross",
+    "name": "Slant Six",
+    "carb": "1-bbl",
+    "trims": [
+     "Dart",
+     "Swinger",
+     "Custom"
+    ],
+    "nhra": true,
+    "sources": [
+     {
+      "name": "Dodge 1970 Dart catalog (81-205-0036, 8-69), \"70 Specs\" engine table p.12",
+      "url": "https://oldcarbrochures.org/United%20States/Dodge/1970_Dodge/1970-Dodge-Dart-Brochure/slides/1970_Dodge_Dart-12.html",
+      "says": "225 cu in 145@4000"
+     },
+     {
+      "name": "Over-Drive magazine: 1970 Dodge Dart Fact Sheet",
+      "url": "https://over-drive-magazine.com/2025/02/19/1970-dodge-dart-fact-sheet/",
+      "says": "225 CID I-6 145 HP"
+     },
+     {
+      "name": "Muscle Car Club: Dodge Dart 1960-1976 (engine tables by generation)",
+      "url": "https://musclecarclub.com/dodge-dart/",
+      "says": "225 145 hp"
+     }
+    ],
+    "status": "confirmed",
+    "note": ""
+   },
+   {
+    "gen": "gen4",
+    "cid": 318,
+    "hp": 230,
+    "hp_basis": "gross",
+    "name": "LA 318 V8",
+    "carb": "2-bbl",
+    "trims": [
+     "Dart",
+     "Swinger",
+     "Custom"
+    ],
+    "nhra": true,
+    "sources": [
+     {
+      "name": "Dodge 1970 Dart catalog (81-205-0036, 8-69), \"70 Specs\" engine table p.12",
+      "url": "https://oldcarbrochures.org/United%20States/Dodge/1970_Dodge/1970-Dodge-Dart-Brochure/slides/1970_Dodge_Dart-12.html",
+      "says": "318 cu in 230@4400"
+     },
+     {
+      "name": "Over-Drive magazine: 1970 Dodge Dart Fact Sheet",
+      "url": "https://over-drive-magazine.com/2025/02/19/1970-dodge-dart-fact-sheet/",
+      "says": "318 CID V-8 230 HP"
+     },
+     {
+      "name": "Muscle Car Club: Dodge Dart 1960-1976 (engine tables by generation)",
+      "url": "https://musclecarclub.com/dodge-dart/",
+      "says": "318 230 hp"
+     }
+    ],
+    "status": "confirmed",
+    "note": ""
+   },
+   {
+    "gen": "gen4",
+    "cid": 340,
+    "hp": 275,
+    "hp_basis": "gross",
+    "name": "LA 340 V8",
+    "carb": "4-bbl",
+    "trims": [
+     "Swinger 340"
+    ],
+    "nhra": false,
+    "sources": [
+     {
+      "name": "Dodge 1970 Dart catalog (81-205-0036, 8-69), \"70 Specs\" engine table p.12",
+      "url": "https://oldcarbrochures.org/United%20States/Dodge/1970_Dodge/1970-Dodge-Dart-Brochure/slides/1970_Dodge_Dart-12.html",
+      "says": "340 cu in 275@5000, standard on Swinger 340"
+     },
+     {
+      "name": "Over-Drive magazine: 1970 Dodge Dart Fact Sheet",
+      "url": "https://over-drive-magazine.com/2025/02/19/1970-dodge-dart-fact-sheet/",
+      "says": "340 CID V-8 275 HP, Swinger 340 standard"
+     },
+     {
+      "name": "Muscle Car Club: Dodge Dart 1960-1976 (engine tables by generation)",
+      "url": "https://musclecarclub.com/dodge-dart/",
+      "says": "1970-1971 340 275 hp"
+     },
+     {
+      "name": "Wikipedia: Dodge Dart",
+      "url": "https://en.wikipedia.org/wiki/Dodge_Dart",
+      "says": "275 bhp 340 4-bbl the top Dart engine; 383 and convertible dropped"
+     }
+    ],
+    "status": "three_sources_not_nhra",
+    "note": "NHRA 1970 Dart rows omit the Swinger 340."
+   }
+  ],
+  "1971": [
+   {
+    "gen": "gen4",
+    "cid": 198,
+    "hp": 125,
+    "hp_basis": "gross",
+    "name": "Slant Six",
+    "carb": "1-bbl",
+    "trims": [
+     "Dart",
+     "Demon",
+     "Swinger",
+     "Custom"
+    ],
+    "nhra": true,
+    "sources": [
+     {
+      "name": "Dodge 1971 Full Line catalog, Fact Finders engine table (gross and net) pp.22-23",
+      "url": "https://oldcarbrochures.org/United%20States/Dodge/1971_Dodge/1971-Dodge-Full-Line-Brochure/slides/1971_Dodge_Full_Line-22-23.html",
+      "says": "198 (6) 125 gross hp"
+     },
+     {
+      "name": "Muscle Car Club: Dodge Dart 1960-1976 (engine tables by generation)",
+      "url": "https://musclecarclub.com/dodge-dart/",
+      "says": "1970-1971 198 125 hp"
+     },
+     {
+      "name": "conceptcarz: Dodge Dart history text (1960-1976, on the per-year Dart pages)",
+      "url": "https://www.conceptcarz.com/w10938/dodge-dart.aspx",
+      "says": "Demon standard 198 Slant Six, 125 horsepower"
+     }
+    ],
+    "status": "confirmed",
+    "note": ""
+   },
+   {
+    "gen": "gen4",
+    "cid": 225,
+    "hp": 145,
+    "hp_basis": "gross",
+    "name": "Slant Six",
+    "carb": "1-bbl",
+    "trims": [
+     "Dart",
+     "Demon",
+     "Swinger",
+     "Custom"
+    ],
+    "nhra": true,
+    "sources": [
+     {
+      "name": "Dodge 1971 Full Line catalog, Fact Finders engine table (gross and net) pp.22-23",
+      "url": "https://oldcarbrochures.org/United%20States/Dodge/1971_Dodge/1971-Dodge-Full-Line-Brochure/slides/1971_Dodge_Full_Line-22-23.html",
+      "says": "225 (6) listed (hp column illegible in the scan OCR)"
+     },
+     {
+      "name": "Muscle Car Club: Dodge Dart 1960-1976 (engine tables by generation)",
+      "url": "https://musclecarclub.com/dodge-dart/",
+      "says": "1970-1971 225 145 hp"
+     },
+     {
+      "name": "Wikipedia: Dodge Dart",
+      "url": "https://en.wikipedia.org/wiki/Dodge_Dart",
+      "says": "225 remained an upgrade option"
+     }
+    ],
+    "status": "confirmed",
+    "note": ""
+   },
+   {
+    "gen": "gen4",
+    "cid": 318,
+    "hp": 230,
+    "hp_basis": "gross",
+    "name": "LA 318 V8",
+    "carb": "2-bbl",
+    "trims": [
+     "Dart",
+     "Demon",
+     "Swinger",
+     "Custom"
+    ],
+    "nhra": true,
+    "sources": [
+     {
+      "name": "Dodge 1971 Full Line catalog, Fact Finders engine table (gross and net) pp.22-23",
+      "url": "https://oldcarbrochures.org/United%20States/Dodge/1971_Dodge/1971-Dodge-Full-Line-Brochure/slides/1971_Dodge_Full_Line-22-23.html",
+      "says": "318 V8 230 gross hp"
+     },
+     {
+      "name": "Muscle Car Club: Dodge Dart 1960-1976 (engine tables by generation)",
+      "url": "https://musclecarclub.com/dodge-dart/",
+      "says": "1970-1971 318 230 hp"
+     },
+     {
+      "name": "Wikipedia: Dodge Dart",
+      "url": "https://en.wikipedia.org/wiki/Dodge_Dart",
+      "says": "318 2-bbl option"
+     }
+    ],
+    "status": "confirmed",
+    "note": ""
+   },
+   {
+    "gen": "gen4",
+    "cid": 340,
+    "hp": 275,
+    "hp_basis": "gross",
+    "name": "LA 340 V8",
+    "carb": "4-bbl",
+    "trims": [
+     "Demon 340"
+    ],
+    "nhra": false,
+    "sources": [
+     {
+      "name": "Dodge 1971 Full Line catalog, Fact Finders engine table (gross and net) pp.22-23",
+      "url": "https://oldcarbrochures.org/United%20States/Dodge/1971_Dodge/1971-Dodge-Full-Line-Brochure/slides/1971_Dodge_Full_Line-22-23.html",
+      "says": "340 V8 275 gross hp; Scat Pack standard on Demon 340"
+     },
+     {
+      "name": "Muscle Car Club: Dodge Dart 1960-1976 (engine tables by generation)",
+      "url": "https://musclecarclub.com/dodge-dart/",
+      "says": "1970-1971 340 275 hp"
+     },
+     {
+      "name": "Wikipedia: Dodge Dart",
+      "url": "https://en.wikipedia.org/wiki/Dodge_Dart",
+      "says": "Demon 340, 275 HP"
+     },
+     {
+      "name": "conceptcarz: Dodge Dart history text (1960-1976, on the per-year Dart pages)",
+      "url": "https://www.conceptcarz.com/w10938/dodge-dart.aspx",
+      "says": "Demon 340 package, 340 small-block, 275 horsepower"
+     }
+    ],
+    "status": "three_sources_not_nhra",
+    "note": "NHRA 1971 Dart rows omit the Demon 340. The 1971 Dodge catalog also prints net ratings."
+   }
+  ],
+  "1972": [
+   {
+    "gen": "gen4",
+    "cid": 198,
+    "hp": 100,
+    "hp_basis": "SAE net",
+    "name": "Slant Six",
+    "carb": "1-bbl",
+    "trims": [
+     "Dart",
+     "Demon",
+     "Swinger",
+     "Custom"
+    ],
+    "nhra": true,
+    "sources": [
+     {
+      "name": "Dodge 1972 Dart/Dart Demon catalog, engine lineup table p.2",
+      "url": "https://oldcarbrochures.org/United%20States/Dodge/1972_Dodge/1972-Dodge-Dart/slides/1972_Dodge_Dart-02.html",
+      "says": "198 (6) standard six (footnote: 198 only on Demon in California); no hp printed"
+     },
+     {
+      "name": "Muscle Car Club: Dodge Dart 1960-1976 (engine tables by generation)",
+      "url": "https://musclecarclub.com/dodge-dart/",
+      "says": "1972 198 100 hp"
+     }
+    ],
+    "status": "confirmed",
+    "note": "Dodge confirms availability only; net hp from NHRA and MCC."
+   },
+   {
+    "gen": "gen4",
+    "cid": 225,
+    "hp": 110,
+    "hp_basis": "SAE net",
+    "name": "Slant Six",
+    "carb": "1-bbl",
+    "trims": [
+     "Dart",
+     "Demon",
+     "Swinger",
+     "Custom"
+    ],
+    "nhra": true,
+    "sources": [
+     {
+      "name": "Dodge 1972 Dart/Dart Demon catalog, engine lineup table p.2",
+      "url": "https://oldcarbrochures.org/United%20States/Dodge/1972_Dodge/1972-Dodge-Dart/slides/1972_Dodge_Dart-02.html",
+      "says": "225 (6) optional six; no hp printed"
+     },
+     {
+      "name": "Muscle Car Club: Dodge Dart 1960-1976 (engine tables by generation)",
+      "url": "https://musclecarclub.com/dodge-dart/",
+      "says": "1972 225 110 hp"
+     }
+    ],
+    "status": "confirmed",
+    "note": "Dodge confirms availability only; net hp from NHRA and MCC."
+   },
+   {
+    "gen": "gen4",
+    "cid": 318,
+    "hp": 150,
+    "hp_basis": "SAE net",
+    "name": "LA 318 V8",
+    "carb": "2-bbl",
+    "trims": [
+     "Dart",
+     "Demon",
+     "Swinger",
+     "Custom"
+    ],
+    "nhra": true,
+    "sources": [
+     {
+      "name": "Dodge 1972 Dart/Dart Demon catalog, engine lineup table p.2",
+      "url": "https://oldcarbrochures.org/United%20States/Dodge/1972_Dodge/1972-Dodge-Dart/slides/1972_Dodge_Dart-02.html",
+      "says": "318 (V8) standard V8"
+     },
+     {
+      "name": "Muscle Car Club: Dodge Dart 1960-1976 (engine tables by generation)",
+      "url": "https://musclecarclub.com/dodge-dart/",
+      "says": "1972-1974 318 150 hp"
+     },
+     {
+      "name": "Hagerty Valuation Tools: 1972 Dodge Dart configurations (login-walled; via search excerpt)",
+      "url": "https://www.hagerty.com/valuation-tools/dodge/dart/1972",
+      "says": "318cid/150hp 2bbl in base, Demon, Swinger"
+     }
+    ],
+    "status": "confirmed",
+    "note": ""
+   },
+   {
+    "gen": "gen4",
+    "cid": 340,
+    "hp": 240,
+    "hp_basis": "SAE net",
+    "name": "LA 340 V8",
+    "carb": "4-bbl",
+    "trims": [
+     "Demon 340"
+    ],
+    "nhra": true,
+    "sources": [
+     {
+      "name": "Dodge 1972 Dart/Dart Demon catalog, engine lineup table p.2",
+      "url": "https://oldcarbrochures.org/United%20States/Dodge/1972_Dodge/1972-Dodge-Dart/slides/1972_Dodge_Dart-02.html",
+      "says": "340 (V8) 4-bbl dual exhaust, standard with Demon 340 only"
+     },
+     {
+      "name": "Muscle Car Club: Dodge Dart 1960-1976 (engine tables by generation)",
+      "url": "https://musclecarclub.com/dodge-dart/",
+      "says": "1972-1973 340 240 hp"
+     },
+     {
+      "name": "Hagerty Valuation Tools: 1972 Dodge Dart configurations (login-walled; via search excerpt)",
+      "url": "https://www.hagerty.com/valuation-tools/dodge/dart/1972",
+      "says": "Demon 340 340cid/240hp 4bbl"
+     }
+    ],
+    "status": "confirmed",
+    "note": ""
+   }
+  ],
+  "1973": [
+   {
+    "gen": "gen4",
+    "cid": 198,
+    "hp": 95,
+    "hp_basis": "SAE net",
+    "name": "Slant Six",
+    "carb": "1-bbl",
+    "trims": [
+     "Dart",
+     "Swinger",
+     "Sport"
+    ],
+    "nhra": true,
+    "sources": [
+     {
+      "name": "Dodge 1973 Full Line catalog, Dart specifications and options pp.30-31",
+      "url": "https://oldcarbrochures.org/United%20States/Dodge/1973_Dodge/1973-Dodge-Full-Line-Brochure/slides/1973__Dodge_Full_Line-30-31.html",
+      "says": "198 Six (N.A. in California)"
+     },
+     {
+      "name": "Muscle Car Club: Dodge Dart 1960-1976 (engine tables by generation)",
+      "url": "https://musclecarclub.com/dodge-dart/",
+      "says": "1973-1974 198 95 hp"
+     }
+    ],
+    "status": "confirmed",
+    "note": "Dodge confirms availability only."
+   },
+   {
+    "gen": "gen4",
+    "cid": 225,
+    "hp": 105,
+    "hp_basis": "SAE net",
+    "name": "Slant Six",
+    "carb": "1-bbl",
+    "trims": [
+     "Dart",
+     "Swinger",
+     "Sport"
+    ],
+    "nhra": true,
+    "sources": [
+     {
+      "name": "Dodge 1973 Full Line catalog, Dart specifications and options pp.30-31",
+      "url": "https://oldcarbrochures.org/United%20States/Dodge/1973_Dodge/1973-Dodge-Full-Line-Brochure/slides/1973__Dodge_Full_Line-30-31.html",
+      "says": "optional equipment: 225 6-cylinder engine"
+     },
+     {
+      "name": "Muscle Car Club: Dodge Dart 1960-1976 (engine tables by generation)",
+      "url": "https://musclecarclub.com/dodge-dart/",
+      "says": "1973-1974 225 105 hp"
+     }
+    ],
+    "status": "confirmed",
+    "note": "Dodge confirms availability only."
+   },
+   {
+    "gen": "gen4",
+    "cid": 318,
+    "hp": 150,
+    "hp_basis": "SAE net",
+    "name": "LA 318 V8",
+    "carb": "2-bbl",
+    "trims": [
+     "Dart",
+     "Swinger",
+     "Sport"
+    ],
+    "nhra": true,
+    "sources": [
+     {
+      "name": "Dodge 1973 Full Line catalog, Dart specifications and options pp.30-31",
+      "url": "https://oldcarbrochures.org/United%20States/Dodge/1973_Dodge/1973-Dodge-Full-Line-Brochure/slides/1973__Dodge_Full_Line-30-31.html",
+      "says": "318 V8"
+     },
+     {
+      "name": "Muscle Car Club: Dodge Dart 1960-1976 (engine tables by generation)",
+      "url": "https://musclecarclub.com/dodge-dart/",
+      "says": "318 150 hp"
+     },
+     {
+      "name": "Hagerty Valuation Tools: 1973 Dodge Dart configurations (login-walled; via search excerpt)",
+      "url": "https://www.hagerty.com/valuation-tools/dodge/dart/1973",
+      "says": "Sport and Swinger 318cid/150hp 2bbl"
+     }
+    ],
+    "status": "confirmed",
+    "note": ""
+   },
+   {
+    "gen": "gen4",
+    "cid": 340,
+    "hp": 240,
+    "hp_basis": "SAE net",
+    "name": "LA 340 V8",
+    "carb": "4-bbl",
+    "trims": [
+     "Dart Sport 340"
+    ],
+    "nhra": true,
+    "sources": [
+     {
+      "name": "Dodge 1973 Full Line catalog, Dart specifications and options pp.30-31",
+      "url": "https://oldcarbrochures.org/United%20States/Dodge/1973_Dodge/1973-Dodge-Full-Line-Brochure/slides/1973__Dodge_Full_Line-30-31.html",
+      "says": "340 4-bbl V8 (Dart 340 Sport)"
+     },
+     {
+      "name": "Muscle Car Club: Dodge Dart 1960-1976 (engine tables by generation)",
+      "url": "https://musclecarclub.com/dodge-dart/",
+      "says": "1972-1973 340 240 hp"
+     },
+     {
+      "name": "Hagerty Valuation Tools: 1973 Dodge Dart configurations (login-walled; via search excerpt)",
+      "url": "https://www.hagerty.com/valuation-tools/dodge/dart/1973",
+      "says": "340 Sport 340cid/240hp"
+     },
+     {
+      "name": "Wikipedia: Dodge Dart",
+      "url": "https://en.wikipedia.org/wiki/Dodge_Dart",
+      "says": "Dart Sport 340 for 1973"
+     }
+    ],
+    "status": "confirmed",
+    "note": ""
+   }
+  ],
+  "1974": [
+   {
+    "gen": "gen4",
+    "cid": 198,
+    "hp": 95,
+    "hp_basis": "SAE net",
+    "name": "Slant Six",
+    "carb": "1-bbl",
+    "trims": [
+     "Dart",
+     "Swinger",
+     "Sport"
+    ],
+    "nhra": true,
+    "sources": [
+     {
+      "name": "Dodge 1974 Full Line catalog, Dart standard specifications pp.26-27",
+      "url": "https://oldcarbrochures.org/United%20States/Dodge/1974_Dodge/1974_Dodge_Full-Line_Brochure/slides/1974_Dodge_Full-Line_26-27.html",
+      "says": "198 Six (N.A. in California; 225 Six opt.)"
+     },
+     {
+      "name": "Muscle Car Club: Dodge Dart 1960-1976 (engine tables by generation)",
+      "url": "https://musclecarclub.com/dodge-dart/",
+      "says": "198 95 hp"
+     },
+     {
+      "name": "Hagerty Valuation Tools: 1974 Dodge Dart configurations (login-walled; via search excerpt)",
+      "url": "https://www.hagerty.com/valuation-tools/dodge/dart/1974",
+      "says": "Sport/Swinger 198cid/95hp 1bbl"
+     }
+    ],
+    "status": "confirmed",
+    "note": ""
+   },
+   {
+    "gen": "gen4",
+    "cid": 225,
+    "hp": 105,
+    "hp_basis": "SAE net",
+    "name": "Slant Six",
+    "carb": "1-bbl",
+    "trims": [
+     "Dart",
+     "Swinger",
+     "Sport",
+     "Special Edition"
+    ],
+    "nhra": true,
+    "sources": [
+     {
+      "name": "Dodge 1974 Full Line catalog, Dart standard specifications pp.26-27",
+      "url": "https://oldcarbrochures.org/United%20States/Dodge/1974_Dodge/1974_Dodge_Full-Line_Brochure/slides/1974_Dodge_Full-Line_26-27.html",
+      "says": "225 Six optional"
+     },
+     {
+      "name": "Muscle Car Club: Dodge Dart 1960-1976 (engine tables by generation)",
+      "url": "https://musclecarclub.com/dodge-dart/",
+      "says": "225 105 hp"
+     },
+     {
+      "name": "Hagerty Valuation Tools: 1974 Dodge Dart configurations (login-walled; via search excerpt)",
+      "url": "https://www.hagerty.com/valuation-tools/dodge/dart/1974",
+      "says": "225cid/105hp 1bbl (Special Edition, Swinger Special)"
+     }
+    ],
+    "status": "confirmed",
+    "note": ""
+   },
+   {
+    "gen": "gen4",
+    "cid": 318,
+    "hp": 150,
+    "hp_basis": "SAE net",
+    "name": "LA 318 V8",
+    "carb": "2-bbl",
+    "trims": [
+     "Dart",
+     "Swinger",
+     "Sport",
+     "Special Edition"
+    ],
+    "nhra": true,
+    "sources": [
+     {
+      "name": "Dodge 1974 Full Line catalog, Dart standard specifications pp.26-27",
+      "url": "https://oldcarbrochures.org/United%20States/Dodge/1974_Dodge/1974_Dodge_Full-Line_Brochure/slides/1974_Dodge_Full-Line_26-27.html",
+      "says": "318 V8"
+     },
+     {
+      "name": "Muscle Car Club: Dodge Dart 1960-1976 (engine tables by generation)",
+      "url": "https://musclecarclub.com/dodge-dart/",
+      "says": "1972-1974 318 150 hp"
+     },
+     {
+      "name": "Hagerty Valuation Tools: 1974 Dodge Dart configurations (login-walled; via search excerpt)",
+      "url": "https://www.hagerty.com/valuation-tools/dodge/dart/1974",
+      "says": "318cid/150hp 2bbl"
+     }
+    ],
+    "status": "confirmed",
+    "note": ""
+   },
+   {
+    "gen": "gen4",
+    "cid": 360,
+    "hp": 245,
+    "hp_basis": "SAE net",
+    "name": "LA 360 V8",
+    "carb": "4-bbl",
+    "trims": [
+     "Dart Sport 360"
+    ],
+    "nhra": true,
+    "sources": [
+     {
+      "name": "Dodge 1974 Full Line catalog, Dart standard specifications pp.26-27",
+      "url": "https://oldcarbrochures.org/United%20States/Dodge/1974_Dodge/1974_Dodge_Full-Line_Brochure/slides/1974_Dodge_Full-Line_26-27.html",
+      "says": "360 4-bbl V8, dual exhaust, standard on Dart 360 Sport"
+     },
+     {
+      "name": "Muscle Car Club: Dodge Dart 1960-1976 (engine tables by generation)",
+      "url": "https://musclecarclub.com/dodge-dart/",
+      "says": "1974 360 4bbl 245 hp"
+     },
+     {
+      "name": "Hagerty Valuation Tools: 1974 Dodge Dart configurations (login-walled; via search excerpt)",
+      "url": "https://www.hagerty.com/valuation-tools/dodge/dart/1974",
+      "says": "360 Sport 360cid/245hp 4bbl Hi-Perf"
+     },
+     {
+      "name": "Wikipedia: Dodge Dart",
+      "url": "https://en.wikipedia.org/wiki/Dodge_Dart",
+      "says": "Dart Sport 360, 245 bhp"
+     }
+    ],
+    "status": "confirmed",
+    "note": "Replaced the 340."
+   }
+  ],
+  "1975": [
+   {
+    "gen": "gen4",
+    "cid": 225,
+    "hp": 95,
+    "hp_basis": "SAE net",
+    "name": "Slant Six",
+    "carb": "1-bbl",
+    "trims": [
+     "Dart",
+     "Swinger",
+     "Sport",
+     "Special Edition"
+    ],
+    "nhra": true,
+    "sources": [
+     {
+      "name": "Dodge 1975 Dart catalog pp.8-9 (and 1975 Dodge catalog p.8)",
+      "url": "https://oldcarbrochures.org/United%20States/Dodge/1975_Dodge/1975_Dodge_Dart_Brochure/slides/1975_Dodge_Dart-08-09.html",
+      "says": "economical 225 Six (Swinger, Special Edition, Sport)"
+     },
+     {
+      "name": "Hagerty Valuation Tools: 1975 Dodge Dart configurations (login-walled; via search excerpt)",
+      "url": "https://www.hagerty.com/valuation-tools/dodge/dart/1975",
+      "says": "225cid/95hp 1bbl"
+     },
+     {
+      "name": "Wikipedia: Dodge Dart",
+      "url": "https://en.wikipedia.org/wiki/Dodge_Dart",
+      "says": "198 discontinued; 225 standard on all models"
+     }
+    ],
+    "status": "confirmed",
+    "note": "MCC lists 90 hp (probably the California rating)."
+   },
+   {
+    "gen": "gen4",
+    "cid": 318,
+    "hp": 145,
+    "hp_basis": "SAE net",
+    "name": "LA 318 V8",
+    "carb": "2-bbl",
+    "trims": [
+     "Dart",
+     "Swinger",
+     "Sport",
+     "Special Edition"
+    ],
+    "nhra": true,
+    "sources": [
+     {
+      "name": "Dodge 1975 Dart catalog pp.8-9 (and 1975 Dodge catalog p.8)",
+      "url": "https://oldcarbrochures.org/United%20States/Dodge/1975_Dodge/1975_Dodge_Dart_Brochure/slides/1975_Dodge_Dart-08-09.html",
+      "says": "318 V8"
+     },
+     {
+      "name": "Hagerty Valuation Tools: 1975 Dodge Dart configurations (login-walled; via search excerpt)",
+      "url": "https://www.hagerty.com/valuation-tools/dodge/dart/1975",
+      "says": "318cid/145hp 2bbl"
+     }
+    ],
+    "status": "confirmed",
+    "note": "MCC lists 140 hp."
+   },
+   {
+    "gen": "gen4",
+    "cid": 360,
+    "hp": 230,
+    "hp_basis": "SAE net",
+    "name": "LA 360 V8",
+    "carb": "4-bbl",
+    "trims": [
+     "Dart Sport 360"
+    ],
+    "nhra": true,
+    "sources": [
+     {
+      "name": "Dodge 1975 Dart catalog pp.8-9 (and 1975 Dodge catalog p.8)",
+      "url": "https://oldcarbrochures.org/United%20States/Dodge/1975_Dodge/1975_Dodge_Dart_Brochure/slides/1975_Dodge_Dart-08-09.html",
+      "says": "Dart 360 Sport: 360-cubic-inch four-barrel V8"
+     },
+     {
+      "name": "Muscle Car Club: Dodge Dart 1960-1976 (engine tables by generation)",
+      "url": "https://musclecarclub.com/dodge-dart/",
+      "says": "1975 360 4bbl 230 hp"
+     },
+     {
+      "name": "Hagerty Valuation Tools: 1975 Dodge Dart configurations (login-walled; via search excerpt)",
+      "url": "https://www.hagerty.com/valuation-tools/dodge/dart/1975",
+      "says": "360 Sport 360cid/230hp 4bbl Hi-Perf"
+     },
+     {
+      "name": "Wikipedia: Dodge Dart",
+      "url": "https://en.wikipedia.org/wiki/Dodge_Dart",
+      "says": "360 limited to the Dart Sport 360"
+     }
+    ],
+    "status": "confirmed",
+    "note": ""
+   },
+   {
+    "gen": "gen4",
+    "cid": 360,
+    "hp": 180,
+    "hp_basis": "SAE net",
+    "name": "LA 360 V8 2-bbl",
+    "carb": "2-bbl",
+    "trims": [
+     "Dart Sport 360"
+    ],
+    "nhra": false,
+    "sources": [
+     {
+      "name": "Hagerty Valuation Tools: 1975 Dodge Dart configurations (login-walled; via search excerpt)",
+      "url": "https://www.hagerty.com/valuation-tools/dodge/dart/1975",
+      "says": "360 Sport 360cid/180hp 2bbl"
+     }
+    ],
+    "status": "single_source",
+    "note": "Only Hagerty lists a 2-bbl 360 in the 1975 Dart."
+   }
+  ],
+  "1976": [
+   {
+    "gen": "gen4",
+    "cid": 225,
+    "hp": 100,
+    "hp_basis": "SAE net",
+    "name": "Slant Six",
+    "carb": "1-bbl",
+    "trims": [
+     "Dart",
+     "Swinger",
+     "Sport",
+     "Spirit of 76"
+    ],
+    "nhra": true,
+    "sources": [
+     {
+      "name": "Dodge 1976 Dart catalog, specifications/options pp.6-7",
+      "url": "https://oldcarbrochures.org/United%20States/Dodge/1976_Dodge/1976-Dodge-Dart-Brochure/slides/1976_Dodge_Dart-06-07.html",
+      "says": "standard 225 CID Six"
+     },
+     {
+      "name": "Muscle Car Club: Dodge Dart 1960-1976 (engine tables by generation)",
+      "url": "https://musclecarclub.com/dodge-dart/",
+      "says": "1976 225 100 hp"
+     },
+     {
+      "name": "Hagerty Valuation Tools: 1976 Dodge Dart configurations (login-walled; via search excerpt)",
+      "url": "https://www.hagerty.com/valuation-tools/dodge/dart/1976",
+      "says": "225cid/100hp 1bbl"
+     }
+    ],
+    "status": "confirmed",
+    "note": "Wikipedia gives 95 hp (90 California) for the taxi package."
+   },
+   {
+    "gen": "gen4",
+    "cid": 318,
+    "hp": 150,
+    "hp_basis": "SAE net",
+    "name": "LA 318 V8",
+    "carb": "2-bbl",
+    "trims": [
+     "Dart",
+     "Swinger",
+     "Sport",
+     "Spirit of 76"
+    ],
+    "nhra": true,
+    "sources": [
+     {
+      "name": "Dodge 1976 Dart catalog, specifications/options pp.6-7",
+      "url": "https://oldcarbrochures.org/United%20States/Dodge/1976_Dodge/1976-Dodge-Dart-Brochure/slides/1976_Dodge_Dart-06-07.html",
+      "says": "318 CID V8"
+     },
+     {
+      "name": "Hagerty Valuation Tools: 1976 Dodge Dart configurations (login-walled; via search excerpt)",
+      "url": "https://www.hagerty.com/valuation-tools/dodge/dart/1976",
+      "says": "318cid/150hp 2bbl"
+     },
+     {
+      "name": "Wikipedia: Dodge Dart",
+      "url": "https://en.wikipedia.org/wiki/Dodge_Dart",
+      "says": "225, 318 and 360 engines (A38 police section)"
+     }
+    ],
+    "status": "confirmed",
+    "note": "MCC lists 145 hp (looks like the 1975 figure)."
+   },
+   {
+    "gen": "gen4",
+    "cid": 360,
+    "hp": 220,
+    "hp_basis": "SAE net",
+    "name": "LA 360 V8",
+    "carb": "4-bbl",
+    "trims": [
+     "Dart Sport"
+    ],
+    "nhra": true,
+    "sources": [
+     {
+      "name": "Dodge 1976 Dart catalog, specifications/options pp.6-7",
+      "url": "https://oldcarbrochures.org/United%20States/Dodge/1976_Dodge/1976-Dodge-Dart-Brochure/slides/1976_Dodge_Dart-06-07.html",
+      "says": "360 V8 option (Dart Sport)"
+     },
+     {
+      "name": "Muscle Car Club: Dodge Dart 1960-1976 (engine tables by generation)",
+      "url": "https://musclecarclub.com/dodge-dart/",
+      "says": "1976 360 4bbl 220 hp"
+     },
+     {
+      "name": "Hagerty Valuation Tools: 1976 Dodge Dart configurations (login-walled; via search excerpt)",
+      "url": "https://www.hagerty.com/valuation-tools/dodge/dart/1976",
+      "says": "Sport 360cid/220hp 4bbl"
+     },
+     {
+      "name": "Wikipedia: Dodge Dart",
+      "url": "https://en.wikipedia.org/wiki/Dodge_Dart",
+      "says": "360 4-bbl $376 option on Dart Sport; A38 police 360 220 hp"
+     }
+    ],
+    "status": "confirmed",
+    "note": "Not in California; Dart Sport 360 dropped as a separate model."
+   }
+  ],
+  "2013": [
+   {
+    "gen": "PF",
+    "cid": 122,
+    "hp": 160,
+    "hp_basis": "SAE net (J1349)",
+    "name": "2.0L Tigershark I4",
+    "trims": [
+     "SE",
+     "SXT",
+     "Rallye",
+     "Limited"
+    ],
+    "nhra": false,
+    "sources": [
+     {
+      "name": "Dodge release: Dodge Hits Bull's Eye With All-new Compact Car - The Dodge Dart (Stellantis Media, 2013 MY)",
+      "url": "https://media.stellantisnorthamerica.com/newsrelease.do?id=12885",
+      "says": "160 hp Tigershark 16-valve 2.0-liter; SE powered by the 2.0"
+     },
+     {
+      "name": "Dodge release: 2013 Dodge Dart powertrain/engines (Stellantis Media)",
+      "url": "https://media.stellantisnorthamerica.com/newsrelease.do?id=11858",
+      "says": "2.0-liter 160 hp at 6,300 rpm"
+     },
+     {
+      "name": "Wikipedia: Dodge Dart (PF)",
+      "url": "https://en.wikipedia.org/wiki/Dodge_Dart_(PF)",
+      "says": "SE: 160-hp 2.0L Tigershark"
+     },
+     {
+      "name": "EPA fueleconomy.gov vehicle data",
+      "url": "https://www.fueleconomy.gov/feg/download.shtml",
+      "says": "2013: 2.0 L 4-cyl Dart (incl. FFV)"
+     },
+     {
+      "name": "Auto123: 2013 Dodge Dart preview (via search excerpt)",
+      "url": "https://www.auto123.com/en/news/2013-dodge-dart-preview/56213/",
+      "says": "2.0L Tigershark 160 hp, 145 lb-ft"
+     }
+    ],
+    "status": "three_sources_not_nhra",
+    "note": "2.0 L (122 cu in) DOHC Tigershark."
+   },
+   {
+    "gen": "PF",
+    "cid": 83,
+    "hp": 160,
+    "hp_basis": "SAE net (J1349)",
+    "name": "1.4L MultiAir Turbo I4",
+    "trims": [
+     "Aero",
+     "Rallye",
+     "Limited"
+    ],
+    "nhra": false,
+    "sources": [
+     {
+      "name": "Dodge release: Dodge Hits Bull's Eye With All-new Compact Car - The Dodge Dart (Stellantis Media, 2013 MY)",
+      "url": "https://media.stellantisnorthamerica.com/newsrelease.do?id=12885",
+      "says": "160 hp 1.4-liter MultiAir Intercooled Turbo"
+     },
+     {
+      "name": "Wikipedia: Dodge Dart (PF)",
+      "url": "https://en.wikipedia.org/wiki/Dodge_Dart_(PF)",
+      "says": "1.4 L MultiAir turbo 160 hp (Aero, Limited)"
+     },
+     {
+      "name": "EPA fueleconomy.gov vehicle data",
+      "url": "https://www.fueleconomy.gov/feg/download.shtml",
+      "says": "2013: 1.4 L 4-cyl turbo, Dart and Dart Aero"
+     },
+     {
+      "name": "Auto123: 2013 Dodge Dart preview (via search excerpt)",
+      "url": "https://www.auto123.com/en/news/2013-dodge-dart-preview/56213/",
+      "says": "1.4L MultiAir 160 hp, 184 lb-ft"
+     }
+    ],
+    "status": "three_sources_not_nhra",
+    "note": "1.4 L (83 cu in) Fiat FIRE MultiAir turbo."
+   },
+   {
+    "gen": "PF",
+    "cid": 144,
+    "hp": 184,
+    "hp_basis": "SAE net (J1349)",
+    "name": "2.4L Tigershark MultiAir2 I4",
+    "trims": [
+     "R/T",
+     "GT"
+    ],
+    "nhra": false,
+    "sources": [
+     {
+      "name": "Dodge release: Dodge Hits Bull's Eye With All-new Compact Car - The Dodge Dart (Stellantis Media, 2013 MY)",
+      "url": "https://media.stellantisnorthamerica.com/newsrelease.do?id=12885",
+      "says": "184 hp Tigershark 2.4-liter MultiAir 2 (available 3rd quarter); Dart R/T"
+     },
+     {
+      "name": "Wikipedia: Dodge Dart (PF)",
+      "url": "https://en.wikipedia.org/wiki/Dodge_Dart_(PF)",
+      "says": "2.4 offered late 2013 with the GT"
+     },
+     {
+      "name": "EPA fueleconomy.gov vehicle data",
+      "url": "https://www.fueleconomy.gov/feg/download.shtml",
+      "says": "2013: 2.4 L 4-cyl Dart"
+     },
+     {
+      "name": "Auto123: 2013 Dodge Dart preview (via search excerpt)",
+      "url": "https://www.auto123.com/en/news/2013-dodge-dart-preview/56213/",
+      "says": "2.4L MultiAir 184 hp, 171 lb-ft"
+     }
+    ],
+    "status": "three_sources_not_nhra",
+    "note": "Mid-year availability (R/T, then GT)."
+   }
+  ],
+  "2014": [
+   {
+    "gen": "PF",
+    "cid": 122,
+    "hp": 160,
+    "hp_basis": "SAE net (J1349)",
+    "name": "2.0L Tigershark I4",
+    "trims": [
+     "SE"
+    ],
+    "nhra": false,
+    "sources": [
+     {
+      "name": "Dodge release: Dodge Simplifies Dart Lineup for 2014; Launches 184-horsepower 2.4-liter Tigershark Engine (Stellantis Media)",
+      "url": "https://media.stellantisnorthamerica.com/newsrelease.do?id=14675",
+      "says": "2014 Dart SE: 2.0-liter Tigershark, 160 hp"
+     },
+     {
+      "name": "Dodge 2014 Dart brochure (PDF)",
+      "url": "https://www.dodge.com/assets/pdf/brochure/dart.pdf",
+      "says": "2.0L 160-hp Tigershark"
+     },
+     {
+      "name": "Wikipedia: Dodge Dart (PF)",
+      "url": "https://en.wikipedia.org/wiki/Dodge_Dart_(PF)",
+      "says": "2.0 only in the base SE from 2014"
+     },
+     {
+      "name": "EPA fueleconomy.gov vehicle data",
+      "url": "https://www.fueleconomy.gov/feg/download.shtml",
+      "says": "2014: 2.0 L 4-cyl Dart (incl. FFV)"
+     },
+     {
+      "name": "Automotive Fleet: Chrysler details updates to 2014 Charger, Journey and Dart (via search excerpt)",
+      "url": "https://www.automotive-fleet.com/113595/chrysler-details-updates-to-2014-charger-journey-and-dart",
+      "says": "2.0 in SE, 1.4 turbo in Aero, 184-hp 2.4 on SXT, Limited, GT"
+     }
+    ],
+    "status": "three_sources_not_nhra",
+    "note": ""
+   },
+   {
+    "gen": "PF",
+    "cid": 83,
+    "hp": 160,
+    "hp_basis": "SAE net (J1349)",
+    "name": "1.4L MultiAir Turbo I4",
+    "trims": [
+     "Aero"
+    ],
+    "nhra": false,
+    "sources": [
+     {
+      "name": "Dodge release: Dodge Simplifies Dart Lineup for 2014; Launches 184-horsepower 2.4-liter Tigershark Engine (Stellantis Media)",
+      "url": "https://media.stellantisnorthamerica.com/newsrelease.do?id=14675",
+      "says": "2014 Dart Aero: 1.4-liter MultiAir Turbo, 160 hp"
+     },
+     {
+      "name": "Dodge 2014 Dart brochure (PDF)",
+      "url": "https://www.dodge.com/assets/pdf/brochure/dart.pdf",
+      "says": "1.4L 160-hp MultiAir intercooled turbo"
+     },
+     {
+      "name": "Wikipedia: Dodge Dart (PF)",
+      "url": "https://en.wikipedia.org/wiki/Dodge_Dart_(PF)",
+      "says": "Aero (and Rallye/SXT/Limited) offered the 1.4 MultiAir turbo"
+     },
+     {
+      "name": "EPA fueleconomy.gov vehicle data",
+      "url": "https://www.fueleconomy.gov/feg/download.shtml",
+      "says": "2014: 1.4 L 4-cyl turbo Dart, Dart Aero"
+     },
+     {
+      "name": "Automotive Fleet: Chrysler details updates to 2014 Charger, Journey and Dart (via search excerpt)",
+      "url": "https://www.automotive-fleet.com/113595/chrysler-details-updates-to-2014-charger-journey-and-dart",
+      "says": "2.0 in SE, 1.4 turbo in Aero, 184-hp 2.4 on SXT, Limited, GT"
+     }
+    ],
+    "status": "three_sources_not_nhra",
+    "note": ""
+   },
+   {
+    "gen": "PF",
+    "cid": 144,
+    "hp": 184,
+    "hp_basis": "SAE net (J1349)",
+    "name": "2.4L Tigershark MultiAir2 I4",
+    "trims": [
+     "SXT",
+     "Limited",
+     "GT"
+    ],
+    "nhra": false,
+    "sources": [
+     {
+      "name": "Dodge release: Dodge Simplifies Dart Lineup for 2014; Launches 184-horsepower 2.4-liter Tigershark Engine (Stellantis Media)",
+      "url": "https://media.stellantisnorthamerica.com/newsrelease.do?id=14675",
+      "says": "2.4-liter Tigershark MultiAir2, 184 hp, standard on SXT, Limited, GT"
+     },
+     {
+      "name": "Dodge 2014 Dart brochure (PDF)",
+      "url": "https://www.dodge.com/assets/pdf/brochure/dart.pdf",
+      "says": "2.4L 184-hp Tigershark standard on SXT, Rallye, Limited"
+     },
+     {
+      "name": "Wikipedia: Dodge Dart (PF)",
+      "url": "https://en.wikipedia.org/wiki/Dodge_Dart_(PF)",
+      "says": "2.4 L in SXT and Limited from 2014; GT 184 hp"
+     },
+     {
+      "name": "EPA fueleconomy.gov vehicle data",
+      "url": "https://www.fueleconomy.gov/feg/download.shtml",
+      "says": "2014: 2.4 L 4-cyl Dart, Dart GT"
+     },
+     {
+      "name": "Automotive Fleet: Chrysler details updates to 2014 Charger, Journey and Dart (via search excerpt)",
+      "url": "https://www.automotive-fleet.com/113595/chrysler-details-updates-to-2014-charger-journey-and-dart",
+      "says": "2.0 in SE, 1.4 turbo in Aero, 184-hp 2.4 on SXT, Limited, GT"
+     }
+    ],
+    "status": "three_sources_not_nhra",
+    "note": ""
+   }
+  ],
+  "2015": [
+   {
+    "gen": "PF",
+    "cid": 122,
+    "hp": 160,
+    "hp_basis": "SAE net (J1349)",
+    "name": "2.0L Tigershark I4",
+    "trims": [
+     "SE"
+    ],
+    "nhra": false,
+    "sources": [
+     {
+      "name": "Wikipedia: Dodge Dart (PF)",
+      "url": "https://en.wikipedia.org/wiki/Dodge_Dart_(PF)",
+      "says": "2.0 only in the base SE from 2014"
+     },
+     {
+      "name": "EPA fueleconomy.gov vehicle data",
+      "url": "https://www.fueleconomy.gov/feg/download.shtml",
+      "says": "2015: 2.0 L 4-cyl Dart (incl. FFV)"
+     },
+     {
+      "name": "Autoblog: 2015 Dodge Dart review (via search excerpt)",
+      "url": "https://www.autoblog.com/buy/2015-Dodge-Dart/review/",
+      "says": "160-hp 2.0, 160-hp 1.4 turbo (Aero), 184-hp 2.4 (SXT, Limited, GT)"
+     }
+    ],
+    "status": "three_sources_not_nhra",
+    "note": "No Dodge document found for 2015."
+   },
+   {
+    "gen": "PF",
+    "cid": 83,
+    "hp": 160,
+    "hp_basis": "SAE net (J1349)",
+    "name": "1.4L MultiAir Turbo I4",
+    "trims": [
+     "Aero"
+    ],
+    "nhra": false,
+    "sources": [
+     {
+      "name": "Wikipedia: Dodge Dart (PF)",
+      "url": "https://en.wikipedia.org/wiki/Dodge_Dart_(PF)",
+      "says": "Aero (and Rallye/SXT/Limited) offered the 1.4 MultiAir turbo"
+     },
+     {
+      "name": "EPA fueleconomy.gov vehicle data",
+      "url": "https://www.fueleconomy.gov/feg/download.shtml",
+      "says": "2015: 1.4 L 4-cyl turbo Dart, Dart Aero"
+     },
+     {
+      "name": "Autoblog: 2015 Dodge Dart review (via search excerpt)",
+      "url": "https://www.autoblog.com/buy/2015-Dodge-Dart/review/",
+      "says": "160-hp 2.0, 160-hp 1.4 turbo (Aero), 184-hp 2.4 (SXT, Limited, GT)"
+     }
+    ],
+    "status": "three_sources_not_nhra",
+    "note": "No Dodge document found for 2015."
+   },
+   {
+    "gen": "PF",
+    "cid": 144,
+    "hp": 184,
+    "hp_basis": "SAE net (J1349)",
+    "name": "2.4L Tigershark MultiAir2 I4",
+    "trims": [
+     "SXT",
+     "Limited",
+     "GT"
+    ],
+    "nhra": false,
+    "sources": [
+     {
+      "name": "Wikipedia: Dodge Dart (PF)",
+      "url": "https://en.wikipedia.org/wiki/Dodge_Dart_(PF)",
+      "says": "2.4 L in SXT and Limited from 2014; GT 184 hp"
+     },
+     {
+      "name": "EPA fueleconomy.gov vehicle data",
+      "url": "https://www.fueleconomy.gov/feg/download.shtml",
+      "says": "2015: 2.4 L 4-cyl Dart, Dart GT"
+     },
+     {
+      "name": "Autoblog: 2015 Dodge Dart review (via search excerpt)",
+      "url": "https://www.autoblog.com/buy/2015-Dodge-Dart/review/",
+      "says": "160-hp 2.0, 160-hp 1.4 turbo (Aero), 184-hp 2.4 (SXT, Limited, GT)"
+     }
+    ],
+    "status": "three_sources_not_nhra",
+    "note": "No Dodge document found for 2015."
+   }
+  ],
+  "2016": [
+   {
+    "gen": "PF",
+    "cid": 122,
+    "hp": 160,
+    "hp_basis": "SAE net (J1349)",
+    "name": "2.0L Tigershark I4",
+    "trims": [
+     "SE"
+    ],
+    "nhra": false,
+    "sources": [
+     {
+      "name": "Dodge 2016 Dart brochure (PDF), engines and powertrain availability",
+      "url": "https://www.dodge.com/assets/pdf/brochure/2016dart.pdf",
+      "says": "2.0L DOHC Tigershark, 160 horses"
+     },
+     {
+      "name": "Wikipedia: Dodge Dart (PF)",
+      "url": "https://en.wikipedia.org/wiki/Dodge_Dart_(PF)",
+      "says": "2.0 only in the base SE from 2014"
+     },
+     {
+      "name": "EPA fueleconomy.gov vehicle data",
+      "url": "https://www.fueleconomy.gov/feg/download.shtml",
+      "says": "2016: 2.0 L 4-cyl Dart (incl. FFV)"
+     },
+     {
+      "name": "Autoblog: 2016 Dodge Dart review (via search excerpt)",
+      "url": "https://www.autoblog.com/buy/2016-Dodge-Dart/review/",
+      "says": "160-hp 2.0 (SE), 160-hp 1.4 turbo (Aero), 184-hp 2.4 (SXT, GT, Limited)"
+     }
+    ],
+    "status": "three_sources_not_nhra",
+    "note": "April 2016 the lineup was cut to SXT Sport, Turbo and GT Sport."
+   },
+   {
+    "gen": "PF",
+    "cid": 83,
+    "hp": 160,
+    "hp_basis": "SAE net (J1349)",
+    "name": "1.4L MultiAir Turbo I4",
+    "trims": [
+     "Aero"
+    ],
+    "nhra": false,
+    "sources": [
+     {
+      "name": "Dodge 2016 Dart brochure (PDF), engines and powertrain availability",
+      "url": "https://www.dodge.com/assets/pdf/brochure/2016dart.pdf",
+      "says": "1.4L intercooled turbo with MultiAir (Aero), 160 hp"
+     },
+     {
+      "name": "Wikipedia: Dodge Dart (PF)",
+      "url": "https://en.wikipedia.org/wiki/Dodge_Dart_(PF)",
+      "says": "Aero (and Rallye/SXT/Limited) offered the 1.4 MultiAir turbo"
+     },
+     {
+      "name": "EPA fueleconomy.gov vehicle data",
+      "url": "https://www.fueleconomy.gov/feg/download.shtml",
+      "says": "2016: 1.4 L 4-cyl turbo Dart, Dart Aero"
+     },
+     {
+      "name": "Autoblog: 2016 Dodge Dart review (via search excerpt)",
+      "url": "https://www.autoblog.com/buy/2016-Dodge-Dart/review/",
+      "says": "160-hp 2.0 (SE), 160-hp 1.4 turbo (Aero), 184-hp 2.4 (SXT, GT, Limited)"
+     }
+    ],
+    "status": "three_sources_not_nhra",
+    "note": "April 2016 the lineup was cut to SXT Sport, Turbo and GT Sport."
+   },
+   {
+    "gen": "PF",
+    "cid": 144,
+    "hp": 184,
+    "hp_basis": "SAE net (J1349)",
+    "name": "2.4L Tigershark MultiAir2 I4",
+    "trims": [
+     "SXT",
+     "Limited",
+     "GT"
+    ],
+    "nhra": false,
+    "sources": [
+     {
+      "name": "Dodge 2016 Dart brochure (PDF), engines and powertrain availability",
+      "url": "https://www.dodge.com/assets/pdf/brochure/2016dart.pdf",
+      "says": "2.4L Tigershark with MultiAir2, 184 horsepower"
+     },
+     {
+      "name": "Wikipedia: Dodge Dart (PF)",
+      "url": "https://en.wikipedia.org/wiki/Dodge_Dart_(PF)",
+      "says": "2.4 L in SXT and Limited from 2014; GT 184 hp"
+     },
+     {
+      "name": "EPA fueleconomy.gov vehicle data",
+      "url": "https://www.fueleconomy.gov/feg/download.shtml",
+      "says": "2016: 2.4 L 4-cyl Dart, Dart GT"
+     },
+     {
+      "name": "Autoblog: 2016 Dodge Dart review (via search excerpt)",
+      "url": "https://www.autoblog.com/buy/2016-Dodge-Dart/review/",
+      "says": "160-hp 2.0 (SE), 160-hp 1.4 turbo (Aero), 184-hp 2.4 (SXT, GT, Limited)"
+     }
+    ],
+    "status": "three_sources_not_nhra",
+    "note": "April 2016 the lineup was cut to SXT Sport, Turbo and GT Sport."
+   }
+  ]
+ },
+ "source_index": [
+  {
+   "name": "Dodge 1960 Dart catalog (81-205-0003, 8-59), specifications p.19",
+   "url": "https://oldcarbrochures.org/United%20States/Dodge/1960_Dodge/1960-Dodge-Dart-Brochure/slides/1960_Dodge_Dart-18.html",
+   "type": "manufacturer"
+  },
+  {
+   "name": "Dodge 1961 Dart and Polara catalog, specifications p.11",
+   "url": "https://oldcarbrochures.org/United%20States/Dodge/1961_Dodge/1961_Dodge_Dart_and_Polara_Brochure/slides/1961_Dodge_Dart__amp__Polara-11.html",
+   "type": "manufacturer"
+  },
+  {
+   "name": "Dodge 1962 Dart/Lancer catalog, engines p.15",
+   "url": "https://oldcarbrochures.org/United%20States/Dodge/1962_Dodge/1962_Dodge_Dart-Lancer_Brochure/slides/1962_Dodge_Dart__amp__Lancer-15.html",
+   "type": "manufacturer"
+  },
+  {
+   "name": "Dodge 1962 \"Dart 440 Story\" booklet, engine tables pp.6 and 10",
+   "url": "https://oldcarbrochures.org/United%20States/Dodge/1962_Dodge/1962_Dodge_Dart_440_Story_001/index.html",
+   "type": "manufacturer"
+  },
+  {
+   "name": "Dodge 1963 Dart catalog, specifications p.11",
+   "url": "https://oldcarbrochures.org/United%20States/Dodge/1963_Dodge/1963_Dodge_Dart_Brochure/slides/1963_Dodge_Dart-11.html",
+   "type": "manufacturer"
+  },
+  {
+   "name": "Dodge 1964 Dart catalog (early issue), specifications pp.10-11",
+   "url": "https://oldcarbrochures.org/United%20States/Dodge/1964_Dodge/1964_Dodge_Dart_Brochure/slides/1964_Dodge_Dart-10-11.html",
+   "type": "manufacturer"
+  },
+  {
+   "name": "Dodge 1965 Full Line catalog, Dart engine chart p.9 (and p.7)",
+   "url": "https://oldcarbrochures.org/United%20States/Dodge/1965_Dodge/1965%20Dodge%20Full%20Line/slides/1965_Dodge_Full_Line-09.html",
+   "type": "manufacturer"
+  },
+  {
+   "name": "Dodge 1966 Full Line catalog, Dart engines p.19",
+   "url": "https://oldcarbrochures.org/United%20States/Dodge/1966_Dodge/1966-Dodge-Full-Line-Brochure/slides/1966_Dodge_Full_Line-19.html",
+   "type": "manufacturer"
+  },
+  {
+   "name": "Dodge 1967 Full Line catalog (rev.), Dart engines p.22",
+   "url": "https://oldcarbrochures.org/United%20States/Dodge/1967_Dodge/1967-Dodge-Full-Line-brochure/slides/1967_Dodge_Full_Line_Rev-22.html",
+   "type": "manufacturer"
+  },
+  {
+   "name": "Dodge 1968 Dart catalog (81-206-8036, 8-67), engine table p.12",
+   "url": "https://oldcarbrochures.org/United%20States/Dodge/1968_Dodge/1968%20Dodge%20Dart/index.html",
+   "type": "manufacturer"
+  },
+  {
+   "name": "Dodge 1968 Performance Models catalog, engines pp.8-9",
+   "url": "https://oldcarbrochures.org/United%20States/Dodge/1968_Dodge/1968-Dodge-Performance-Models-Brochure/slides/1968_Dodge_Performance_Models_Catalog-08-09.html",
+   "type": "manufacturer"
+  },
+  {
+   "name": "Dodge 1969 Dart catalog, engine table p.4",
+   "url": "https://oldcarbrochures.org/United%20States/Dodge/1969_Dodge/1969_Dodge_Dart_Brochure/slides/1969_Dodge_Dart-04.html",
+   "type": "manufacturer"
+  },
+  {
+   "name": "Dodge 1970 Dart catalog (81-205-0036, 8-69), \"70 Specs\" engine table p.12",
+   "url": "https://oldcarbrochures.org/United%20States/Dodge/1970_Dodge/1970-Dodge-Dart-Brochure/slides/1970_Dodge_Dart-12.html",
+   "type": "manufacturer"
+  },
+  {
+   "name": "Dodge 1971 Full Line catalog, Fact Finders engine table (gross and net) pp.22-23",
+   "url": "https://oldcarbrochures.org/United%20States/Dodge/1971_Dodge/1971-Dodge-Full-Line-Brochure/slides/1971_Dodge_Full_Line-22-23.html",
+   "type": "manufacturer"
+  },
+  {
+   "name": "Dodge 1972 Dart/Dart Demon catalog, engine lineup table p.2",
+   "url": "https://oldcarbrochures.org/United%20States/Dodge/1972_Dodge/1972-Dodge-Dart/slides/1972_Dodge_Dart-02.html",
+   "type": "manufacturer"
+  },
+  {
+   "name": "Dodge 1973 Full Line catalog, Dart specifications and options pp.30-31",
+   "url": "https://oldcarbrochures.org/United%20States/Dodge/1973_Dodge/1973-Dodge-Full-Line-Brochure/slides/1973__Dodge_Full_Line-30-31.html",
+   "type": "manufacturer"
+  },
+  {
+   "name": "Dodge 1974 Full Line catalog, Dart standard specifications pp.26-27",
+   "url": "https://oldcarbrochures.org/United%20States/Dodge/1974_Dodge/1974_Dodge_Full-Line_Brochure/slides/1974_Dodge_Full-Line_26-27.html",
+   "type": "manufacturer"
+  },
+  {
+   "name": "Dodge 1975 Dart catalog pp.8-9 (and 1975 Dodge catalog p.8)",
+   "url": "https://oldcarbrochures.org/United%20States/Dodge/1975_Dodge/1975_Dodge_Dart_Brochure/slides/1975_Dodge_Dart-08-09.html",
+   "type": "manufacturer"
+  },
+  {
+   "name": "Dodge 1976 Dart catalog, specifications/options pp.6-7",
+   "url": "https://oldcarbrochures.org/United%20States/Dodge/1976_Dodge/1976-Dodge-Dart-Brochure/slides/1976_Dodge_Dart-06-07.html",
+   "type": "manufacturer"
+  },
+  {
+   "name": "Dodge release: Dodge Hits Bull's Eye With All-new Compact Car - The Dodge Dart (Stellantis Media, 2013 MY)",
+   "url": "https://media.stellantisnorthamerica.com/newsrelease.do?id=12885",
+   "type": "manufacturer"
+  },
+  {
+   "name": "Dodge release: 2013 Dodge Dart powertrain/engines (Stellantis Media)",
+   "url": "https://media.stellantisnorthamerica.com/newsrelease.do?id=11858",
+   "type": "manufacturer"
+  },
+  {
+   "name": "Dodge release: Dodge Simplifies Dart Lineup for 2014; Launches 184-horsepower 2.4-liter Tigershark Engine (Stellantis Media)",
+   "url": "https://media.stellantisnorthamerica.com/newsrelease.do?id=14675",
+   "type": "manufacturer"
+  },
+  {
+   "name": "Dodge 2014 Dart brochure (PDF)",
+   "url": "https://www.dodge.com/assets/pdf/brochure/dart.pdf",
+   "type": "manufacturer"
+  },
+  {
+   "name": "Dodge 2016 Dart brochure (PDF), engines and powertrain availability",
+   "url": "https://www.dodge.com/assets/pdf/brochure/2016dart.pdf",
+   "type": "manufacturer"
+  },
+  {
+   "name": "Wikipedia: Dodge Dart",
+   "url": "https://en.wikipedia.org/wiki/Dodge_Dart",
+   "type": "wikipedia"
+  },
+  {
+   "name": "Wikipedia: Dodge Dart (PF)",
+   "url": "https://en.wikipedia.org/wiki/Dodge_Dart_(PF)",
+   "type": "wikipedia"
+  },
+  {
+   "name": "Muscle Car Club: Dodge Dart 1960-1976 (engine tables by generation)",
+   "url": "https://musclecarclub.com/dodge-dart/",
+   "type": "publication"
+  },
+  {
+   "name": "conceptcarz: Dodge Dart history text (1960-1976, on the per-year Dart pages)",
+   "url": "https://www.conceptcarz.com/w10938/dodge-dart.aspx",
+   "type": "publication"
+  },
+  {
+   "name": "conceptcarz: 1966 Dodge Dart GT / D-Dart page",
+   "url": "https://www.conceptcarz.com/w23308/dodge-dart.aspx",
+   "type": "publication"
+  },
+  {
+   "name": "Over-Drive magazine: 1960 Dodge Facts, Figures, and Specifications (from AMA spec sheets)",
+   "url": "https://over-drive-magazine.com/2026/03/17/1960-dodge-fact-sheet/",
+   "type": "publication"
+  },
+  {
+   "name": "Over-Drive magazine: 1961 Dodge Fact Sheet",
+   "url": "https://over-drive-magazine.com/2025/07/24/1961-dodge-fact-sheet/",
+   "type": "publication"
+  },
+  {
+   "name": "Over-Drive magazine: 1962 Dodge Mid-Size Cars Fact Sheet",
+   "url": "https://over-drive-magazine.com/2023/10/11/1962-dodge-mid-size-cars-fact-sheet/",
+   "type": "publication"
+  },
+  {
+   "name": "Over-Drive magazine: 1967 Dodge Dart Fact Sheet",
+   "url": "https://over-drive-magazine.com/2024/11/16/1967-dodge-dart-fact-sheet/",
+   "type": "publication"
+  },
+  {
+   "name": "Over-Drive magazine: 1968 Dodge Dart Fact Sheet",
+   "url": "https://over-drive-magazine.com/2024/11/25/1968-dodge-dart-fact-sheet/",
+   "type": "publication"
+  },
+  {
+   "name": "Over-Drive magazine: 1969 Dodge Dart Fact Sheet",
+   "url": "https://over-drive-magazine.com/2024/12/19/1969-dodge-dart-fact-sheet/",
+   "type": "publication"
+  },
+  {
+   "name": "Over-Drive magazine: 1970 Dodge Dart Fact Sheet",
+   "url": "https://over-drive-magazine.com/2025/02/19/1970-dodge-dart-fact-sheet/",
+   "type": "publication"
+  },
+  {
+   "name": "Hagerty Valuation Tools: 1972 Dodge Dart configurations (login-walled; via search excerpt)",
+   "url": "https://www.hagerty.com/valuation-tools/dodge/dart/1972",
+   "type": "publication"
+  },
+  {
+   "name": "Hagerty Valuation Tools: 1973 Dodge Dart configurations (login-walled; via search excerpt)",
+   "url": "https://www.hagerty.com/valuation-tools/dodge/dart/1973",
+   "type": "publication"
+  },
+  {
+   "name": "Hagerty Valuation Tools: 1974 Dodge Dart configurations (login-walled; via search excerpt)",
+   "url": "https://www.hagerty.com/valuation-tools/dodge/dart/1974",
+   "type": "publication"
+  },
+  {
+   "name": "Hagerty Valuation Tools: 1975 Dodge Dart configurations (login-walled; via search excerpt)",
+   "url": "https://www.hagerty.com/valuation-tools/dodge/dart/1975",
+   "type": "publication"
+  },
+  {
+   "name": "Hagerty Valuation Tools: 1976 Dodge Dart configurations (login-walled; via search excerpt)",
+   "url": "https://www.hagerty.com/valuation-tools/dodge/dart/1976",
+   "type": "publication"
+  },
+  {
+   "name": "EPA fueleconomy.gov vehicle data",
+   "url": "https://www.fueleconomy.gov/feg/download.shtml",
+   "type": "government"
+  },
+  {
+   "name": "Auto123: 2013 Dodge Dart preview (via search excerpt)",
+   "url": "https://www.auto123.com/en/news/2013-dodge-dart-preview/56213/",
+   "type": "publication"
+  },
+  {
+   "name": "Automotive Fleet: Chrysler details updates to 2014 Charger, Journey and Dart (via search excerpt)",
+   "url": "https://www.automotive-fleet.com/113595/chrysler-details-updates-to-2014-charger-journey-and-dart",
+   "type": "publication"
+  },
+  {
+   "name": "Autoblog: 2015 Dodge Dart review (via search excerpt)",
+   "url": "https://www.autoblog.com/buy/2015-Dodge-Dart/review/",
+   "type": "publication"
+  },
+  {
+   "name": "Autoblog: 2016 Dodge Dart review (via search excerpt)",
+   "url": "https://www.autoblog.com/buy/2016-Dodge-Dart/review/",
+   "type": "publication"
+  },
+  {
+   "name": "NHRA Stock Car Classification Guide (nhra_dart.json)",
+   "url": "scratchpad/nhra_dart.json",
+   "type": "registry"
+  }
+ ]
+}

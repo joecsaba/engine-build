@@ -1,0 +1,2781 @@
+{
+ "vehicle": "cutlass-1961-1977",
+ "scope_note": "Oldsmobile F-85 / Cutlass / Cutlass S / Cutlass Supreme / Cutlass Salon / 4-4-2 / Hurst/Olds, 1961-1977. Vista-Cruiser and the 1977 Omega-based F-85 excluded. All Oldsmobile/GM factory literature counted as ONE source; all Wikipedia articles as ONE; Olds FAQ (Oldsmobile mail-list community reference hosted at oldsjunction.classicoldsmobile.com) as one registry source. HP gross through 1971 (1971 net in notes), SAE net from 1972. '442_only' marks engines offered in the Cutlass line only with the 4-4-2 package.",
+ "excluded": [
+  "Vista-Cruiser engines (NHRA VISTA CRUISER rows), excluded per assignment.",
+  "1977 NHRA 'F-85' rows (231/105, 260/110, 305/145, 350/170): the 1977 F-85 was a trim of the compact X-body Omega, not the Cutlass; the Chevrolet 305 appears only there.",
+  "1964-1965 Jetstar 88 330 ratings (260/315 hp H.C.) belong to the full-size Olds, not the F-85/Cutlass."
+ ],
+ "years": {
+  "1961": [
+   {
+    "gen": "gen1",
+    "cid": 215,
+    "hp": 155,
+    "hp_basis": "gross",
+    "rpo": "",
+    "name": "Rockette 215 aluminum V8 2-bbl",
+    "trims": [
+     "F-85"
+    ],
+    "442_only": false,
+    "nhra": true,
+    "sources": [
+     {
+      "name": "Oldsmobile 1961 Full Line Brochure (oldcarbrochures.org scan)",
+      "url": "https://www.oldcarbrochures.org/United%20States/Oldsmobile/1961%20Oldsmobile/1961_Oldsmobile_Full_Line_Brochure/index.html",
+      "says": "Brand new 155 H.P. aluminum Rockette V-8, standard on every F-85"
+     },
+     {
+      "name": "Wikipedia - Oldsmobile Cutlass",
+      "url": "https://en.wikipedia.org/wiki/Oldsmobile_Cutlass",
+      "says": "Rockette 215 V8, two-barrel, rated 155 bhp at 4,800 rpm; unchanged 1961-1963"
+     },
+     {
+      "name": "Olds FAQ - Cutlass / F-85",
+      "url": "https://oldsjunction.classicoldsmobile.com/oldsfaq/ofctl.htm",
+      "says": "F-85 215 V-8 ... Horsepower: 155 (Standard Catalog excerpt)"
+     }
+    ],
+    "status": "confirmed",
+    "note": ""
+   },
+   {
+    "gen": "gen1",
+    "cid": 215,
+    "hp": 185,
+    "hp_basis": "gross",
+    "rpo": "",
+    "name": "Cutlass 215 aluminum V8 4-bbl ('power pack')",
+    "trims": [
+     "Cutlass (std.)",
+     "F-85 (opt.)"
+    ],
+    "442_only": false,
+    "nhra": true,
+    "sources": [
+     {
+      "name": "Oldsmobile 1961 F-85 Cutlass Foldout (oldcarbrochures.org scan)",
+      "url": "https://www.oldcarbrochures.org/United%20States/Oldsmobile/1961%20Oldsmobile/1961%20Oldsmobile%20F-85%20Cutlass%20Foldout/index.html",
+      "says": "F-85 Cutlass specifications: Aluminum V-8, Horsepower 185 at 4800"
+     },
+     {
+      "name": "Wikipedia - Oldsmobile Cutlass",
+      "url": "https://en.wikipedia.org/wiki/Oldsmobile_Cutlass",
+      "says": "'power pack option' 4-bbl 10.25:1 215 rated 185 hp; Cutlass came with it"
+     },
+     {
+      "name": "Olds FAQ - Cutlass / F-85",
+      "url": "https://oldsjunction.classicoldsmobile.com/oldsfaq/ofctl.htm",
+      "says": "power pack option ... boosted the horsepower rating 30 to 185"
+     }
+    ],
+    "status": "confirmed",
+    "note": "Power pack arrived a few months into the 1961 model year; the Cutlass coupe arrived in May 1961."
+   }
+  ],
+  "1962": [
+   {
+    "gen": "gen1",
+    "cid": 215,
+    "hp": 155,
+    "hp_basis": "gross",
+    "rpo": "",
+    "name": "Rockette 215 aluminum V8 2-bbl",
+    "trims": [
+     "F-85"
+    ],
+    "442_only": false,
+    "nhra": true,
+    "sources": [
+     {
+      "name": "Oldsmobile 1962 F-85 Brochure (oldcarbrochures.org scan)",
+      "url": "https://www.oldcarbrochures.org/United%20States/Oldsmobile/1962%20Oldsmobile/1962%20Oldsmobile%20F-85%20Brochure/index.html",
+      "says": "Oldsmobile's 155-h.p. Rockette V-8"
+     },
+     {
+      "name": "Wikipedia - Oldsmobile Cutlass",
+      "url": "https://en.wikipedia.org/wiki/Oldsmobile_Cutlass",
+      "says": "base engine 155 bhp; specifications remained the same throughout 1961-1963"
+     }
+    ],
+    "status": "confirmed",
+    "note": ""
+   },
+   {
+    "gen": "gen1",
+    "cid": 215,
+    "hp": 185,
+    "hp_basis": "gross",
+    "rpo": "",
+    "name": "Cutlass 215 aluminum V8 4-bbl",
+    "trims": [
+     "Cutlass (std.)",
+     "F-85 (opt.)"
+    ],
+    "442_only": false,
+    "nhra": true,
+    "sources": [
+     {
+      "name": "Oldsmobile 1962 F-85 Brochure (oldcarbrochures.org scan)",
+      "url": "https://www.oldcarbrochures.org/United%20States/Oldsmobile/1962%20Oldsmobile/1962%20Oldsmobile%20F-85%20Brochure/index.html",
+      "says": "high-performance 185-h.p. Cutlass aluminum V-8 standard [on Cutlass]; 185 horsepower now available in every F-85 model"
+     }
+    ],
+    "status": "nhra_plus_one",
+    "note": "Wikipedia and the Olds FAQ give 185 only for 1961."
+   },
+   {
+    "gen": "gen1",
+    "cid": 215,
+    "hp": 215,
+    "hp_basis": "gross",
+    "rpo": "",
+    "name": "Turbo-Rocket 215 V8 (turbocharged, fluid injection)",
+    "trims": [
+     "Jetfire"
+    ],
+    "442_only": false,
+    "nhra": true,
+    "sources": [
+     {
+      "name": "Oldsmobile 1962 Jetfire Folder (oldcarbrochures.org scan)",
+      "url": "https://www.oldcarbrochures.org/United%20States/Oldsmobile/1962%20Oldsmobile/1962_Oldsmobile_Jetfire_Folder/index.html",
+      "says": "Jetfire: turbocharged, fluid-injected V-8 that puts out one horsepower for every cubic inch"
+     },
+     {
+      "name": "Wikipedia - Oldsmobile Cutlass",
+      "url": "https://en.wikipedia.org/wiki/Oldsmobile_Cutlass",
+      "says": "Jetfire Turbo-Rocket rated 215 bhp at 4,600 rpm, 300 lb-ft"
+     },
+     {
+      "name": "Olds FAQ - Jetfire",
+      "url": "https://oldsjunction.classicoldsmobile.com/oldsfaq/ofjet.htm",
+      "says": "Factory rating for the turbo motor was 215 hp out of 215 cu in"
+     }
+    ],
+    "status": "confirmed",
+    "note": "Jetfire introduced mid-1962 (production began April 1962)."
+   }
+  ],
+  "1963": [
+   {
+    "gen": "gen1",
+    "cid": 215,
+    "hp": 155,
+    "hp_basis": "gross",
+    "rpo": "",
+    "name": "Rockette 215 aluminum V8 2-bbl",
+    "trims": [
+     "F-85"
+    ],
+    "442_only": false,
+    "nhra": true,
+    "sources": [
+     {
+      "name": "Oldsmobile 1963 Brochure / 1963 Sports Cars brochure (oldcarbrochures.org scans)",
+      "url": "https://www.oldcarbrochures.org/United%20States/Oldsmobile/1963_Oldsmobile/1963_Oldsmobile_Brochure-02/index.html",
+      "says": "ROCKETTE standard on F-85. 155 h.p., 8.75-to-1"
+     },
+     {
+      "name": "Wikipedia - Oldsmobile Cutlass",
+      "url": "https://en.wikipedia.org/wiki/Oldsmobile_Cutlass",
+      "says": "base engine 155 bhp, unchanged 1961-1963"
+     }
+    ],
+    "status": "confirmed",
+    "note": ""
+   },
+   {
+    "gen": "gen1",
+    "cid": 215,
+    "hp": 185,
+    "hp_basis": "gross",
+    "rpo": "",
+    "name": "Cutlass 185 215 V8 4-bbl (synchromesh cars)",
+    "trims": [
+     "Cutlass (std. w/ manual)",
+     "F-85 (opt.)"
+    ],
+    "442_only": false,
+    "nhra": true,
+    "sources": [
+     {
+      "name": "Oldsmobile 1963 Brochure / 1963 Sports Cars brochure (oldcarbrochures.org scans)",
+      "url": "https://www.oldcarbrochures.org/United%20States/Oldsmobile/1963_Oldsmobile/1963_Oldsmobile_Brochure-02/index.html",
+      "says": "Cutlass 185 standard on Cutlass, optional on other F-85's equipped with syncromesh transmission"
+     },
+     {
+      "name": "Wikipedia - Oldsmobile Cutlass",
+      "url": "https://en.wikipedia.org/wiki/Oldsmobile_Cutlass",
+      "says": "1963 Cutlass engine 185 hp (Wikipedia attaches it to automatic cars, see 195-hp entry)"
+     }
+    ],
+    "status": "confirmed",
+    "note": ""
+   },
+   {
+    "gen": "gen1",
+    "cid": 215,
+    "hp": 195,
+    "hp_basis": "gross",
+    "rpo": "",
+    "name": "Cutlass 195 215 V8 4-bbl, 10.75:1 (Hydra-Matic cars)",
+    "trims": [
+     "Cutlass (std. w/ Hydra-Matic)",
+     "F-85 (opt. w/ Hydra-Matic)"
+    ],
+    "442_only": false,
+    "nhra": true,
+    "sources": [
+     {
+      "name": "Oldsmobile 1963 Brochure / 1963 Sports Cars brochure (oldcarbrochures.org scans)",
+      "url": "https://www.oldcarbrochures.org/United%20States/Oldsmobile/1963_Oldsmobile/1963_Oldsmobile_Brochure-02/index.html",
+      "says": "Cutlass 195 engine standard on Hydra-Matic-equipped Cutlass, optional on other F-85's with Hydra-Matic; F-85 'develops up to 195 h.p.'"
+     },
+     {
+      "name": "Olds FAQ - Jetfire",
+      "url": "https://oldsjunction.classicoldsmobile.com/oldsfaq/ofjet.htm",
+      "says": "The automatic Cutlass with 10.75:1 compression gave 195 HP @ 4800 and 235 lb/ft @ 3200"
+     }
+    ],
+    "status": "confirmed",
+    "note": "Wikipedia (citing Car Life, Nov 1962) says the 10.75:1 automatic-only engine made 185 hp; Oldsmobile's own 1963 literature says 195 with Hydra-Matic and 185 with synchromesh. Factory figure used."
+   },
+   {
+    "gen": "gen1",
+    "cid": 215,
+    "hp": 215,
+    "hp_basis": "gross",
+    "rpo": "",
+    "name": "Turbo-Rocket 215 V8 (turbocharged)",
+    "trims": [
+     "Jetfire"
+    ],
+    "442_only": false,
+    "nhra": false,
+    "sources": [
+     {
+      "name": "Oldsmobile 1963 Brochure / 1963 Sports Cars brochure (oldcarbrochures.org scans)",
+      "url": "https://www.oldcarbrochures.org/United%20States/Oldsmobile/1963_Oldsmobile/1963_Oldsmobile_Brochure-02/index.html",
+      "says": "TURBO-ROCKET standard on JETFIRE only. Turbocharged, fluid-injected ... 215 h.p., 300 lb.-ft."
+     },
+     {
+      "name": "Wikipedia - Oldsmobile Cutlass",
+      "url": "https://en.wikipedia.org/wiki/Oldsmobile_Cutlass",
+      "says": "The Jetfire and its turbocharged V8 returned for 1963, its final year"
+     },
+     {
+      "name": "Olds FAQ - Jetfire",
+      "url": "https://oldsjunction.classicoldsmobile.com/oldsfaq/ofjet.htm",
+      "says": "215 hp in turbocharged form from Olds (the 62-63 Jetfire)"
+     }
+    ],
+    "status": "three_sources_not_nhra",
+    "note": "NHRA's 1963 F-85 rows omit the Jetfire."
+   }
+  ],
+  "1964": [
+   {
+    "gen": "gen2",
+    "cid": 225,
+    "hp": 155,
+    "hp_basis": "gross",
+    "rpo": "",
+    "name": "Econ-O-Way 225 V6 (Buick-built) 1-bbl",
+    "trims": [
+     "F-85",
+     "F-85 Deluxe",
+     "V-6 Sports Coupe"
+    ],
+    "442_only": false,
+    "nhra": true,
+    "sources": [
+     {
+      "name": "Oldsmobile 1964 Prestige Brochure, Foldout and Sports Cars brochure (oldcarbrochures.org scans)",
+      "url": "https://www.oldcarbrochures.org/United%20States/Oldsmobile/1964%20Oldsmobile/1964_Oldsmobile_Prestige_Brochure/index.html",
+      "says": "ECON-O-WAY V-6 ... delivers 155-h.p.; standard on V-6 Sports Coupe, available on all F-85 models except Cutlass; spec table V-6 Sports Coupe 155/4400"
+     },
+     {
+      "name": "Wikipedia - Oldsmobile Cutlass / Buick V6 engine",
+      "url": "https://en.wikipedia.org/wiki/Buick_V6_engine",
+      "says": "Buick 225 V6 standard in 1964 F-85 (Cutlass article); 1964-1965 225 with one-barrel produced 155 hp (Buick V6 article)"
+     }
+    ],
+    "status": "confirmed",
+    "note": "The Olds FAQ performance table lists the 1964 F-85 V-6 at 165 hp, which disagrees with Oldsmobile's own 155."
+   },
+   {
+    "gen": "gen2",
+    "cid": 330,
+    "hp": 230,
+    "hp_basis": "gross",
+    "rpo": "",
+    "name": "Jetfire Rocket 330 V8 2-bbl",
+    "trims": [
+     "F-85",
+     "F-85 Deluxe"
+    ],
+    "442_only": false,
+    "nhra": true,
+    "sources": [
+     {
+      "name": "Oldsmobile 1964 Prestige Brochure, Foldout and Sports Cars brochure (oldcarbrochures.org scans)",
+      "url": "https://www.oldcarbrochures.org/United%20States/Oldsmobile/1964%20Oldsmobile/1964_Oldsmobile_Prestige_Brochure/index.html",
+      "says": "210-H.P. JETFIRE ROCKET - available on F-85 models (except Cutlass and V-6 Sports Coupe), 9.0:1 [introductory-1964 figure]"
+     },
+     {
+      "name": "Olds FAQ - Engines, Engine Performance table",
+      "url": "https://oldsjunction.classicoldsmobile.com/oldsfaq/ofeng.htm",
+      "says": "'64 F-85 330 2bbl low [compression] 230 hp"
+     }
+    ],
+    "status": "disputed",
+    "note": "The rating changed during the year. Oldsmobile's introductory 1964 Prestige brochure says 210 hp; NHRA and the Olds FAQ say 230. No later Oldsmobile document with 230 turned up, so this is marked disputed and 230 is recorded as the NHRA/Olds FAQ figure."
+   },
+   {
+    "gen": "gen2",
+    "cid": 330,
+    "hp": 290,
+    "hp_basis": "gross",
+    "rpo": "",
+    "name": "Cutlass 330 V8 4-bbl (Jetfire Rocket H.C.)",
+    "trims": [
+     "Cutlass (std.)",
+     "F-85/F-85 Deluxe V8 (opt.)"
+    ],
+    "442_only": false,
+    "nhra": true,
+    "sources": [
+     {
+      "name": "Oldsmobile 1964 Salesmen's Specs (second revision) and No. 8 '4-4-2' salesman information sheet (oldcarbrochures.org scans)",
+      "url": "https://www.oldcarbrochures.org/United%20States/Oldsmobile/1964%20Oldsmobile/1964-Oldsmobile-Salesmens-Specs/index.html",
+      "says": "Engine, 290-HP Cutlass V-8 - F-85 and F-85 Deluxe; 4-4-2 sheet: 310 h.p. '20 h.p. more than a standard Cutlass V-8'"
+     },
+     {
+      "name": "Olds FAQ (Oldsmobile Mail List community reference) - The 442's",
+      "url": "https://oldsjunction.classicoldsmobile.com/oldsfaq/of442.htm",
+      "says": "The Cutlass 330 was rated at 290hp, while the 442's was rated at 310hp"
+     }
+    ],
+    "status": "confirmed",
+    "note": "Oldsmobile's introductory 1964 Prestige brochure, foldout and Sports Cars brochure rate the Cutlass 330 4-bbl at 260 hp at 4800; the revised Salesmen's Specs and the 4-4-2 sheet say 290. 290 is the later factory figure and matches NHRA."
+   },
+   {
+    "gen": "gen2",
+    "cid": 330,
+    "hp": 310,
+    "hp_basis": "gross",
+    "rpo": "B09 (4-4-2 Police Apprehender package)",
+    "name": "4-4-2 330 V8 4-bbl",
+    "trims": [
+     "F-85 V8 (any except wagon) with 4-4-2 option",
+     "Cutlass with 4-4-2 option"
+    ],
+    "442_only": true,
+    "nhra": true,
+    "sources": [
+     {
+      "name": "Oldsmobile 1964 Salesmen's Specs (second revision) and No. 8 '4-4-2' salesman information sheet (oldcarbrochures.org scans)",
+      "url": "https://www.oldcarbrochures.org/United%20States/Oldsmobile/1964%20Oldsmobile/1964-Oldsmobile-Salesmens-Specs/index.html",
+      "says": "4-4-2 (Option B09): 330-cu.-in. V-8 ... at 5200 rpm develops 310 h.p.; 355 lb.-ft. at 3600"
+     },
+     {
+      "name": "Wikipedia - Oldsmobile 442",
+      "url": "https://en.wikipedia.org/wiki/Oldsmobile_442",
+      "says": "B09 package 330 CID V8 (L79) raised to 310 hp at 5,200 rpm"
+     },
+     {
+      "name": "Olds FAQ (Oldsmobile Mail List community reference) - The 442's",
+      "url": "https://oldsjunction.classicoldsmobile.com/oldsfaq/of442.htm",
+      "says": "330cu. in., 4bbl Rochester, 10.25 CR, 310 hp@5200, 355 ft/lbs torque@3600; 2999 built"
+     }
+    ],
+    "status": "confirmed",
+    "note": "442-only. NHRA lists the 310 under its CUTLASS heading. Released mid-year (late spring 1964)."
+   }
+  ],
+  "1965": [
+   {
+    "gen": "gen2",
+    "cid": 225,
+    "hp": 155,
+    "hp_basis": "gross",
+    "rpo": "",
+    "name": "Econ-O-Way 225 V6 1-bbl",
+    "trims": [
+     "F-85",
+     "F-85 Deluxe"
+    ],
+    "442_only": false,
+    "nhra": true,
+    "sources": [
+     {
+      "name": "Oldsmobile 1965 Dealer SPECS book, Engines-Axles-Tires page (oldcarbrochures.org scan)",
+      "url": "https://www.oldcarbrochures.org/United%20States/Oldsmobile/1965%20Oldsmobile/1965-Oldsmobile-Dealer-SPECS/index.html",
+      "says": "155-hp Econ-O-Way V-6, 155 at 4400, 225 cu in, std. F-85 Deluxe V-6/F-85 V-6"
+     },
+     {
+      "name": "Wikipedia - Oldsmobile Cutlass / Buick V6 engine",
+      "url": "https://en.wikipedia.org/wiki/Buick_V6_engine",
+      "says": "Buick 225 V6 carried over for 1965 (Cutlass article); 155 hp 1964-1965 (Buick V6 article)"
+     }
+    ],
+    "status": "confirmed",
+    "note": ""
+   },
+   {
+    "gen": "gen2",
+    "cid": 330,
+    "hp": 250,
+    "hp_basis": "gross",
+    "rpo": "",
+    "name": "Jetfire Rocket 330 V8 2-bbl",
+    "trims": [
+     "F-85 V8",
+     "F-85 Deluxe V8"
+    ],
+    "442_only": false,
+    "nhra": true,
+    "sources": [
+     {
+      "name": "Oldsmobile 1965 Dealer SPECS book, Engines-Axles-Tires page (oldcarbrochures.org scan)",
+      "url": "https://www.oldcarbrochures.org/United%20States/Oldsmobile/1965%20Oldsmobile/1965-Oldsmobile-Dealer-SPECS/index.html",
+      "says": "250-hp Jetfire Rocket V-8, 250 at 4800, 330 cu in, 9.00:1, 2-bbl; Std. F-85 V-8 and F-85 Deluxe V-8"
+     }
+    ],
+    "status": "nhra_plus_one",
+    "note": "Only Oldsmobile's own book and NHRA give the 1965 rating; Wikipedia says only that V8 ratings went up for 1965."
+   },
+   {
+    "gen": "gen2",
+    "cid": 330,
+    "hp": 315,
+    "hp_basis": "gross",
+    "rpo": "",
+    "name": "Cutlass 330 V8 4-bbl (10.25:1)",
+    "trims": [
+     "Cutlass (std.)",
+     "F-85 V8 (opt.)"
+    ],
+    "442_only": false,
+    "nhra": true,
+    "sources": [
+     {
+      "name": "Oldsmobile 1965 Dealer SPECS book, Engines-Axles-Tires page (oldcarbrochures.org scan)",
+      "url": "https://www.oldcarbrochures.org/United%20States/Oldsmobile/1965%20Oldsmobile/1965-Oldsmobile-Dealer-SPECS/index.html",
+      "says": "315-hp Cutlass V-8, 315 at 5200, 330 cu in, 10.25:1, 4-bbl; Std. Cutlass, Opt. F-85 Deluxe V-8 and F-85 V-8"
+     }
+    ],
+    "status": "nhra_plus_one",
+    "note": ""
+   },
+   {
+    "gen": "gen2",
+    "cid": 330,
+    "hp": 305,
+    "hp_basis": "gross",
+    "rpo": "",
+    "name": "Cutlass 330 V8 4-bbl regular fuel (9.0:1)",
+    "trims": [
+     "Cutlass (opt.)"
+    ],
+    "442_only": false,
+    "nhra": false,
+    "sources": [
+     {
+      "name": "Oldsmobile 1965 Dealer SPECS book, Engines-Axles-Tires page (oldcarbrochures.org scan)",
+      "url": "https://www.oldcarbrochures.org/United%20States/Oldsmobile/1965%20Oldsmobile/1965-Oldsmobile-Dealer-SPECS/index.html",
+      "says": "305-hp Cutlass V-8, 305 at 5200, 9.00:1, 4-bbl, regular fuel; Opt. Cutlass"
+     }
+    ],
+    "status": "single_source",
+    "note": "Not in NHRA; no second source found."
+   },
+   {
+    "gen": "gen2",
+    "cid": 400,
+    "hp": 345,
+    "hp_basis": "gross",
+    "rpo": "4-4-2 Performance Package",
+    "name": "4-4-2 400 V8 4-bbl",
+    "trims": [
+     "Cutlass with 4-4-2",
+     "F-85 V8 Club Coupe with 4-4-2"
+    ],
+    "442_only": true,
+    "nhra": true,
+    "sources": [
+     {
+      "name": "Oldsmobile 1965 Dealer SPECS book, Engines-Axles-Tires page (oldcarbrochures.org scan)",
+      "url": "https://www.oldcarbrochures.org/United%20States/Oldsmobile/1965%20Oldsmobile/1965-Oldsmobile-Dealer-SPECS/index.html",
+      "says": "345-hp 4-4-2 Performance V-8, 345 at 4800, 400 cu in, 10.25:1, dual exhaust; Opt. Cutlass and F-85 V-8 Club Coupe with 4-4-2 package"
+     },
+     {
+      "name": "Wikipedia - Oldsmobile 442",
+      "url": "https://en.wikipedia.org/wiki/Oldsmobile_442",
+      "says": "4-4-2 got the new 400 CID; output 345 hp and 440 lb-ft"
+     },
+     {
+      "name": "Olds FAQ (Oldsmobile Mail List community reference) - The 442's",
+      "url": "https://oldsjunction.classicoldsmobile.com/oldsfaq/of442.htm",
+      "says": "400 cu in, 4-bbl Rochester, 10.25 CR, 345 hp@4800"
+     }
+    ],
+    "status": "confirmed",
+    "note": "442-only."
+   }
+  ],
+  "1966": [
+   {
+    "gen": "gen2",
+    "cid": 250,
+    "hp": 155,
+    "hp_basis": "gross",
+    "rpo": "",
+    "name": "Action-Line 6 250 (Chevrolet-built) 1-bbl",
+    "trims": [
+     "F-85",
+     "F-85 Deluxe"
+    ],
+    "442_only": false,
+    "nhra": true,
+    "sources": [
+     {
+      "name": "Oldsmobile 1966 Dealer SPECS book, Specifications...All Models (oldcarbrochures.org scan)",
+      "url": "https://www.oldcarbrochures.org/United%20States/Oldsmobile/1966%20Oldsmobile/1966-Oldsmobile-Dealer-SPECS/index.html",
+      "says": "155-hp Action-Line Six, 155 at 4200, 250 cu in; Std. F-85 Deluxe and F-85"
+     },
+     {
+      "name": "Olds FAQ - Cutlass / F-85",
+      "url": "https://oldsjunction.classicoldsmobile.com/oldsfaq/ofctl.htm",
+      "says": "An inline 6, 250 CID engine was available in the Cutlass from 1966 thru 1971 ... rated at 155hp"
+     }
+    ],
+    "status": "confirmed",
+    "note": "Wikipedia confirms the Chevrolet 250 six replaced the Buick V6 for 1966 (no rating given)."
+   },
+   {
+    "gen": "gen2",
+    "cid": 330,
+    "hp": 250,
+    "hp_basis": "gross",
+    "rpo": "L65",
+    "name": "Jetfire Rocket 330 V8 2-bbl",
+    "trims": [
+     "F-85 V8",
+     "F-85 Deluxe V8"
+    ],
+    "442_only": false,
+    "nhra": true,
+    "sources": [
+     {
+      "name": "Oldsmobile 1966 Dealer SPECS book, Specifications...All Models (oldcarbrochures.org scan)",
+      "url": "https://www.oldcarbrochures.org/United%20States/Oldsmobile/1966%20Oldsmobile/1966-Oldsmobile-Dealer-SPECS/index.html",
+      "says": "250-hp Jetfire Rocket V-8, 250 at 4800, 9.00:1, 2-bbl; Std. F-85 and F-85 Deluxe V-8 (L65 in trailer-towing code list)"
+     },
+     {
+      "name": "Wikipedia - Oldsmobile Cutlass",
+      "url": "https://en.wikipedia.org/wiki/Oldsmobile_Cutlass",
+      "says": "the 330 Jetfire Rocket V8 continued with power ratings of 250 and 320 hp"
+     }
+    ],
+    "status": "confirmed",
+    "note": ""
+   },
+   {
+    "gen": "gen2",
+    "cid": 330,
+    "hp": 320,
+    "hp_basis": "gross",
+    "rpo": "L74",
+    "name": "Cutlass 330 V8 H.C. 4-bbl",
+    "trims": [
+     "Cutlass (std.)",
+     "F-85 (opt.)"
+    ],
+    "442_only": false,
+    "nhra": true,
+    "sources": [
+     {
+      "name": "Oldsmobile 1966 Dealer SPECS book, Specifications...All Models (oldcarbrochures.org scan)",
+      "url": "https://www.oldcarbrochures.org/United%20States/Oldsmobile/1966%20Oldsmobile/1966-Oldsmobile-Dealer-SPECS/index.html",
+      "says": "320-hp Cutlass V-8 H.C., 320 at 5200, 10.25:1, 4-bbl; Std. Cutlass, Opt. F-85/F-85 Deluxe"
+     },
+     {
+      "name": "Wikipedia - Oldsmobile Cutlass",
+      "url": "https://en.wikipedia.org/wiki/Oldsmobile_Cutlass",
+      "says": "330 continued with ratings of 250 and 320 hp"
+     }
+    ],
+    "status": "confirmed",
+    "note": ""
+   },
+   {
+    "gen": "gen2",
+    "cid": 330,
+    "hp": 310,
+    "hp_basis": "gross",
+    "rpo": "L73",
+    "name": "Cutlass 330 V8 4-bbl regular fuel (9.0:1)",
+    "trims": [
+     "Cutlass (opt.)",
+     "F-85 (opt.)"
+    ],
+    "442_only": false,
+    "nhra": true,
+    "sources": [
+     {
+      "name": "Oldsmobile 1966 Dealer SPECS book, Specifications...All Models (oldcarbrochures.org scan)",
+      "url": "https://www.oldcarbrochures.org/United%20States/Oldsmobile/1966%20Oldsmobile/1966-Oldsmobile-Dealer-SPECS/index.html",
+      "says": "Cutlass V-8, 310 at 5200, 330 cu in, 9.00:1, 4-bbl, regular fuel; Opt. Cutlass, F-85 Deluxe, F-85"
+     }
+    ],
+    "status": "nhra_plus_one",
+    "note": "NHRA prints this engine as '425 ci / 310 hp' (family GM-425-05) under CUTLASS. No 425 was offered in the F-85 or Cutlass, and Oldsmobile's book shows a 330/310 regular-fuel Cutlass V-8, so this is treated as an NHRA displacement typo."
+   },
+   {
+    "gen": "gen2",
+    "cid": 400,
+    "hp": 350,
+    "hp_basis": "gross",
+    "rpo": "L78",
+    "name": "4-4-2 400 V8 4-bbl",
+    "trims": [
+     "4-4-2 (Cutlass / F-85 coupes)"
+    ],
+    "442_only": true,
+    "nhra": true,
+    "sources": [
+     {
+      "name": "Oldsmobile 1966 Dealer SPECS book, Specifications...All Models (oldcarbrochures.org scan)",
+      "url": "https://www.oldcarbrochures.org/United%20States/Oldsmobile/1966%20Oldsmobile/1966-Oldsmobile-Dealer-SPECS/index.html",
+      "says": "4-4-2 V-8, 350 at 5000, 400 cu in, 10.50:1, 4-bbl, dual exhaust; Opt. Cutlass, F-85 Deluxe, F-85 (4-4-2 package)"
+     },
+     {
+      "name": "Wikipedia - Oldsmobile 442",
+      "url": "https://en.wikipedia.org/wiki/Oldsmobile_442",
+      "says": "400 ci L78 V8 rated at 350 hp"
+     },
+     {
+      "name": "Olds FAQ (Oldsmobile Mail List community reference) - The 442's",
+      "url": "https://oldsjunction.classicoldsmobile.com/oldsfaq/of442.htm",
+      "says": "400 cu in, 4-bbl Rochester, 10.50 CR, 350 hp@5000"
+     }
+    ],
+    "status": "confirmed",
+    "note": "442-only."
+   },
+   {
+    "gen": "gen2",
+    "cid": 400,
+    "hp": 360,
+    "hp_basis": "gross",
+    "rpo": "L69 (Tri-Carb); also W-30",
+    "name": "4-4-2 400 V8 3x2-bbl Tri-Carb",
+    "trims": [
+     "4-4-2"
+    ],
+    "442_only": true,
+    "nhra": true,
+    "sources": [
+     {
+      "name": "Oldsmobile 1966 4-4-2 Brochure (oldcarbrochures.org scan)",
+      "url": "https://www.oldcarbrochures.org/United%20States/Oldsmobile/1966%20Oldsmobile/1966-Oldsmobile-442-Brochure/index.html",
+      "says": "Tri-Carb option ... a 4-4-2 equipped with the new Tri-Carb option puts out 360 horsepower; 360 @ 5000 rpm (Tri-Carb)"
+     },
+     {
+      "name": "Wikipedia - Oldsmobile 442",
+      "url": "https://en.wikipedia.org/wiki/Oldsmobile_442",
+      "says": "L69 three two-barrel option 360 hp; rare W30 (outside-air induction) also rated 360 hp, 54 factory-built"
+     },
+     {
+      "name": "Olds FAQ (Oldsmobile Mail List community reference) - The 442's",
+      "url": "https://oldsjunction.classicoldsmobile.com/oldsfaq/of442.htm",
+      "says": "400 cu in, (3) 2bbl rochesters, 10.50 CR, 360 hp@5000"
+     }
+    ],
+    "status": "confirmed",
+    "note": "442-only. The 1966 W-30 (L69 plus outside-air induction and a hotter cam; 54 factory-built plus about 97 dealer-installed per Wikipedia) carried the same 360 rating."
+   }
+  ],
+  "1967": [
+   {
+    "gen": "gen2",
+    "cid": 250,
+    "hp": 155,
+    "hp_basis": "gross",
+    "rpo": "",
+    "name": "Action-Line 6 250 1-bbl",
+    "trims": [
+     "Cutlass",
+     "F-85"
+    ],
+    "442_only": false,
+    "nhra": true,
+    "sources": [
+     {
+      "name": "Oldsmobile 1967 SPECS book, Specifications...All Models p.15 (oldcarbrochures.org scan)",
+      "url": "https://www.oldcarbrochures.org/United%20States/Oldsmobile/1967%20Oldsmobile/1967-Oldsmobile-SPECS/index.html",
+      "says": "Action-Line 6, 155 at 4200, 250 cu in; Std. Cutlass, F-85"
+     },
+     {
+      "name": "Olds FAQ - Cutlass / F-85",
+      "url": "https://oldsjunction.classicoldsmobile.com/oldsfaq/ofctl.htm",
+      "says": "250 CID six in the Cutlass 1966-1971, rated 155hp"
+     }
+    ],
+    "status": "confirmed",
+    "note": ""
+   },
+   {
+    "gen": "gen2",
+    "cid": 330,
+    "hp": 250,
+    "hp_basis": "gross",
+    "rpo": "L65 (no-cost w/ automatic)",
+    "name": "Jetfire Rocket 330 V8 2-bbl",
+    "trims": [
+     "Cutlass",
+     "F-85"
+    ],
+    "442_only": false,
+    "nhra": true,
+    "sources": [
+     {
+      "name": "Oldsmobile 1967 SPECS book, Specifications...All Models p.15 (oldcarbrochures.org scan)",
+      "url": "https://www.oldcarbrochures.org/United%20States/Oldsmobile/1967%20Oldsmobile/1967-Oldsmobile-SPECS/index.html",
+      "says": "Jetfire Rocket V-8, 250 at 4800, 9.00:1, 2-bbl; Std. Cutlass, F-85 V8"
+     },
+     {
+      "name": "Olds FAQ - Engines, Engine Performance table",
+      "url": "https://oldsjunction.classicoldsmobile.com/oldsfaq/ofeng.htm",
+      "says": "'67 Cutlass 330 2bbl 9.0 250 hp"
+     }
+    ],
+    "status": "confirmed",
+    "note": ""
+   },
+   {
+    "gen": "gen2",
+    "cid": 330,
+    "hp": 320,
+    "hp_basis": "gross",
+    "rpo": "L74",
+    "name": "Jetfire Rocket 330 V8 H.C. 4-bbl",
+    "trims": [
+     "Cutlass Supreme (std.)",
+     "Cutlass / F-85 (opt.)"
+    ],
+    "442_only": false,
+    "nhra": true,
+    "sources": [
+     {
+      "name": "Oldsmobile 1967 SPECS book, Specifications...All Models p.15 (oldcarbrochures.org scan)",
+      "url": "https://www.oldcarbrochures.org/United%20States/Oldsmobile/1967%20Oldsmobile/1967-Oldsmobile-SPECS/index.html",
+      "says": "Jetfire Rocket V-8 H.C., 320 at 5200, 10.25:1, 4-bbl; Std. Cutlass Supreme; L74 on Cutlass, F-85"
+     },
+     {
+      "name": "Olds FAQ - Engines, Engine Performance table",
+      "url": "https://oldsjunction.classicoldsmobile.com/oldsfaq/ofeng.htm",
+      "says": "'67 Cutlass 330 4bbl 10.25 320 hp"
+     }
+    ],
+    "status": "confirmed",
+    "note": ""
+   },
+   {
+    "gen": "gen2",
+    "cid": 330,
+    "hp": 310,
+    "hp_basis": "gross",
+    "rpo": "L73",
+    "name": "Jetfire Rocket 330 V8 4-bbl regular fuel",
+    "trims": [
+     "Cutlass Supreme (no-cost opt.)",
+     "Cutlass / F-85 (opt.)"
+    ],
+    "442_only": false,
+    "nhra": true,
+    "sources": [
+     {
+      "name": "Oldsmobile 1967 SPECS book, Specifications...All Models p.15 (oldcarbrochures.org scan)",
+      "url": "https://www.oldcarbrochures.org/United%20States/Oldsmobile/1967%20Oldsmobile/1967-Oldsmobile-SPECS/index.html",
+      "says": "Jetfire Rocket V-8, 310 at 5200, 9.00:1, 4-bbl, regular fuel; L73 on Cutlass Supreme (at no extra cost), Cutlass, F-85"
+     },
+     {
+      "name": "Olds FAQ - Engines, Engine Performance table",
+      "url": "https://oldsjunction.classicoldsmobile.com/oldsfaq/ofeng.htm",
+      "says": "'67 Cutlass 330 4bbl 9.0 310 hp"
+     }
+    ],
+    "status": "confirmed",
+    "note": "NHRA again prints this as '425 ci / 310 hp' (GM-425-05); treated as a displacement typo for the 330."
+   },
+   {
+    "gen": "gen2",
+    "cid": 400,
+    "hp": 300,
+    "hp_basis": "gross",
+    "rpo": "L66 (Turnpike Cruising option)",
+    "name": "Rocket 400 V8 2-bbl (Turnpike Cruiser)",
+    "trims": [
+     "Cutlass Supreme (sports coupe, Holiday coupe, convertible)"
+    ],
+    "442_only": false,
+    "nhra": true,
+    "sources": [
+     {
+      "name": "Oldsmobile 1967 SPECS book, Specifications...All Models p.15 (oldcarbrochures.org scan)",
+      "url": "https://www.oldcarbrochures.org/United%20States/Oldsmobile/1967%20Oldsmobile/1967-Oldsmobile-SPECS/index.html",
+      "says": "Rocket 400 V-8, 300 at 4600, 2-bbl; Cutlass Supreme: L66e - included in Turnpike Cruising Option for Sports Coupe, Holiday Coupe and Convertible"
+     },
+     {
+      "name": "Olds FAQ (Oldsmobile Mail List community reference) - The 442's",
+      "url": "https://oldsjunction.classicoldsmobile.com/oldsfaq/of442.htm",
+      "says": "Turnpike: 400cu in, 2bbl, 300 hp@4600 ... In 1967 Olds offered the Turnpike Cruiser option on non-442 Cutlii"
+     }
+    ],
+    "status": "confirmed",
+    "note": "NHRA lists 400/300 under its 442 heading, but Oldsmobile's book lists it as a Cutlass Supreme (non-442) option, and the Olds FAQ agrees."
+   },
+   {
+    "gen": "gen2",
+    "cid": 400,
+    "hp": 350,
+    "hp_basis": "gross",
+    "rpo": "L78",
+    "name": "4-4-2 Rocket 400 V8 4-bbl",
+    "trims": [
+     "4-4-2 (Cutlass Supreme coupes/convertible)"
+    ],
+    "442_only": true,
+    "nhra": true,
+    "sources": [
+     {
+      "name": "Oldsmobile 1967 SPECS book, Specifications...All Models p.15 (oldcarbrochures.org scan)",
+      "url": "https://www.oldcarbrochures.org/United%20States/Oldsmobile/1967%20Oldsmobile/1967-Oldsmobile-SPECS/index.html",
+      "says": "4-4-2 Rocket V-8, 350 at 5000, 400 cu in, 10.50:1, 4-bbl, dual; L78d included in 4-4-2 Performance Package"
+     },
+     {
+      "name": "Wikipedia - Oldsmobile V8 engine",
+      "url": "https://en.wikipedia.org/wiki/Oldsmobile_V8_engine",
+      "says": "1966-1967 4-4-2 400 rated 350 hp with a Rochester 4-barrel"
+     },
+     {
+      "name": "Olds FAQ (Oldsmobile Mail List community reference) - The 442's",
+      "url": "https://oldsjunction.classicoldsmobile.com/oldsfaq/of442.htm",
+      "says": "Standard: 400cu in, 4bbl, 10.50 CR, 350 hp@5000"
+     }
+    ],
+    "status": "confirmed",
+    "note": "442-only."
+   },
+   {
+    "gen": "gen2",
+    "cid": 400,
+    "hp": 360,
+    "hp_basis": "gross",
+    "rpo": "W-30 (Force-Air)",
+    "name": "4-4-2 400 V8 4-bbl Force-Air",
+    "trims": [
+     "4-4-2"
+    ],
+    "442_only": true,
+    "nhra": true,
+    "sources": [
+     {
+      "name": "Oldsmobile 1967 4-4-2 brochure (oldcarbrochures.org scan)",
+      "url": "https://www.oldcarbrochures.org/United%20States/Oldsmobile/1967%20Oldsmobile/1967%20Oldsmobile%204-4-2/index.html",
+      "says": "Force-Air induction system ... cold air drawn in from scoops above and below parking lights (no rating printed)"
+     },
+     {
+      "name": "Wikipedia - Oldsmobile V8 engine",
+      "url": "https://en.wikipedia.org/wiki/Oldsmobile_V8_engine",
+      "says": "A nominal 360 hp was claimed in 1967 when equipped with a W30 camshaft, 4-barrel, and outside air induction, 502 factory produced"
+     },
+     {
+      "name": "Olds FAQ (Oldsmobile Mail List community reference) - The 442's",
+      "url": "https://oldsjunction.classicoldsmobile.com/oldsfaq/of442.htm",
+      "says": "Force-Air: 400cu in, 4bbl, 10.50 CR, 360 hp@5000"
+     }
+    ],
+    "status": "confirmed",
+    "note": "442-only. The Tri-Carb L69 was dropped for 1967."
+   }
+  ],
+  "1968": [
+   {
+    "gen": "gen3",
+    "cid": 250,
+    "hp": 155,
+    "hp_basis": "gross",
+    "rpo": "",
+    "name": "Action-Line 6 250 1-bbl",
+    "trims": [
+     "F-85",
+     "Cutlass"
+    ],
+    "442_only": false,
+    "nhra": true,
+    "sources": [
+     {
+      "name": "Oldsmobile 1968 Salesmen's Prices/Equipment/Specifications (rev. Jan 1968), Specifications...General, Engines (oldcarbrochures.org scan)",
+      "url": "https://www.oldcarbrochures.org/United%20States/Oldsmobile/1968_Oldsmobile/1968-Oldsmobile-Salemens-Specs/index.html",
+      "says": "155-HP Action-Line 6, 155 at 4200; Std. Cutlass, F-85"
+     },
+     {
+      "name": "Olds FAQ - Cutlass / F-85",
+      "url": "https://oldsjunction.classicoldsmobile.com/oldsfaq/ofctl.htm",
+      "says": "250 six 1966-1971, 155hp"
+     }
+    ],
+    "status": "confirmed",
+    "note": ""
+   },
+   {
+    "gen": "gen3",
+    "cid": 350,
+    "hp": 250,
+    "hp_basis": "gross",
+    "rpo": "L65 (std. V8)",
+    "name": "Rocket 350 V8 2-bbl",
+    "trims": [
+     "F-85",
+     "Cutlass",
+     "Cutlass Supreme (L65, lower cost)"
+    ],
+    "442_only": false,
+    "nhra": true,
+    "sources": [
+     {
+      "name": "Oldsmobile 1968 Salesmen's Prices/Equipment/Specifications (rev. Jan 1968), Specifications...General, Engines (oldcarbrochures.org scan)",
+      "url": "https://www.oldcarbrochures.org/United%20States/Oldsmobile/1968_Oldsmobile/1968-Oldsmobile-Salemens-Specs/index.html",
+      "says": "250-HP Rocket 350 V-8, 250 at 4400, 9.00:1, 2-bbl; Std. Cutlass/F-85; L65 at lower cost on Cutlass Supreme"
+     }
+    ],
+    "status": "nhra_plus_one",
+    "note": "Wikipedia and the Olds FAQ confirm a standard 2-bbl 350 but give no 1968 rating."
+   },
+   {
+    "gen": "gen3",
+    "cid": 350,
+    "hp": 310,
+    "hp_basis": "gross",
+    "rpo": "L74",
+    "name": "Rocket 350 V8 4-bbl H.C.",
+    "trims": [
+     "Cutlass Supreme (std.)",
+     "Cutlass / F-85 (opt.)"
+    ],
+    "442_only": false,
+    "nhra": true,
+    "sources": [
+     {
+      "name": "Oldsmobile 1968 Salesmen's Prices/Equipment/Specifications (rev. Jan 1968), Specifications...General, Engines (oldcarbrochures.org scan)",
+      "url": "https://www.oldcarbrochures.org/United%20States/Oldsmobile/1968_Oldsmobile/1968-Oldsmobile-Salemens-Specs/index.html",
+      "says": "310-HP Rocket 350 V-8, 310 at 4800, 10.25:1, 4-bbl; Std. Cutlass Supreme, L74 Cutlass/F-85"
+     },
+     {
+      "name": "Wikipedia - Oldsmobile Cutlass",
+      "url": "https://en.wikipedia.org/wiki/Oldsmobile_Cutlass",
+      "says": "1969 engine offerings unchanged from 1968, including four-barrel 'Ultra High Compression' 310 hp option"
+     }
+    ],
+    "status": "confirmed",
+    "note": ""
+   },
+   {
+    "gen": "gen3",
+    "cid": 350,
+    "hp": 325,
+    "hp_basis": "gross",
+    "rpo": "'Ram Rod 350' (W-31 precursor)",
+    "name": "Rocket 350 V8 4-bbl Force-Air",
+    "trims": [
+     "F-85 coupe",
+     "Cutlass S"
+    ],
+    "442_only": false,
+    "nhra": true,
+    "sources": [
+     {
+      "name": "Wikipedia - Oldsmobile Cutlass",
+      "url": "https://en.wikipedia.org/wiki/Oldsmobile_Cutlass",
+      "says": "1969 engines unchanged from 1968 ... and the W-31 option, conservatively rated at 325 hp"
+     },
+     {
+      "name": "Olds FAQ - W Machines",
+      "url": "https://oldsjunction.classicoldsmobile.com/oldsfaq/ofwmc.htm",
+      "says": "1968: F-85 W-31 'Ram Rod' ... 325 HP 350 CI engine with Ram Air; equivalent car called the Ram Rod 350 in 1968"
+     }
+    ],
+    "status": "confirmed",
+    "note": "Mid-year package, so it isn't in the January 1968 Salesmen's Specs book. Olds FAQ says about 501 built."
+   },
+   {
+    "gen": "gen3",
+    "cid": 400,
+    "hp": 290,
+    "hp_basis": "gross",
+    "rpo": "L65 (Turnpike Cruiser, 4-4-2 at lower cost)",
+    "name": "Rocket 400 V8 2-bbl",
+    "trims": [
+     "4-4-2 (auto only, lower-cost option)"
+    ],
+    "442_only": true,
+    "nhra": true,
+    "sources": [
+     {
+      "name": "Oldsmobile 1968 Salesmen's Prices/Equipment/Specifications (rev. Jan 1968), Specifications...General, Engines (oldcarbrochures.org scan)",
+      "url": "https://www.oldcarbrochures.org/United%20States/Oldsmobile/1968_Oldsmobile/1968-Oldsmobile-Salemens-Specs/index.html",
+      "says": "290-HP Rocket 400 V-8, 290 at 4600, 9.00:1, 2-bbl; 4-4-2: L65bc (automatic, at lower cost)"
+     },
+     {
+      "name": "Wikipedia - Oldsmobile 442",
+      "url": "https://en.wikipedia.org/wiki/Oldsmobile_442",
+      "says": "1968-71 infobox: 400 cuin 290hp V8"
+     },
+     {
+      "name": "Olds FAQ (Oldsmobile Mail List community reference) - The 442's",
+      "url": "https://oldsjunction.classicoldsmobile.com/oldsfaq/of442.htm",
+      "says": "Turnpike Cruiser: 400cu in, 2-bbl, 9.0 CR, 290 hp@4600"
+     }
+    ],
+    "status": "confirmed",
+    "note": "442-only within the Cutlass line (the same engine was the Custom Vista-Cruiser option)."
+   },
+   {
+    "gen": "gen3",
+    "cid": 400,
+    "hp": 350,
+    "hp_basis": "gross",
+    "rpo": "std. 4-4-2 (manual trans.)",
+    "name": "4-4-2 Rocket 400 V8 4-bbl",
+    "trims": [
+     "4-4-2"
+    ],
+    "442_only": true,
+    "nhra": true,
+    "sources": [
+     {
+      "name": "Oldsmobile 1968 Salesmen's Prices/Equipment/Specifications (rev. Jan 1968), Specifications...General, Engines (oldcarbrochures.org scan)",
+      "url": "https://www.oldcarbrochures.org/United%20States/Oldsmobile/1968_Oldsmobile/1968-Oldsmobile-Salemens-Specs/index.html",
+      "says": "350-HP Rocket 400 V-8, 350 at 4800, 10.50:1, 4-bbl; Std. 4-4-2"
+     },
+     {
+      "name": "Wikipedia - Oldsmobile 442",
+      "url": "https://en.wikipedia.org/wiki/Oldsmobile_442",
+      "says": "base engine still rated 350 hp, but only with the three- and four-speed manuals"
+     },
+     {
+      "name": "Olds FAQ (Oldsmobile Mail List community reference) - The 442's",
+      "url": "https://oldsjunction.classicoldsmobile.com/oldsfaq/of442.htm",
+      "says": "Standard: 400cu in, 4-bbl, 10.50 CR, 350 hp@4800 (325 hp with auto)"
+     }
+    ],
+    "status": "confirmed",
+    "note": "442-only."
+   },
+   {
+    "gen": "gen3",
+    "cid": 400,
+    "hp": 325,
+    "hp_basis": "gross",
+    "rpo": "std. 4-4-2 (automatic)",
+    "name": "4-4-2 Rocket 400 V8 4-bbl (Turbo Hydra-Matic)",
+    "trims": [
+     "4-4-2"
+    ],
+    "442_only": true,
+    "nhra": true,
+    "sources": [
+     {
+      "name": "Oldsmobile 1968 Salesmen's Prices/Equipment/Specifications (rev. Jan 1968), Specifications...General, Engines (oldcarbrochures.org scan)",
+      "url": "https://www.oldcarbrochures.org/United%20States/Oldsmobile/1968_Oldsmobile/1968-Oldsmobile-Salemens-Specs/index.html",
+      "says": "325-HP Rocket 400 V-8, 325 at 4800; 4-4-2 Std. b (available with automatic transmission)"
+     },
+     {
+      "name": "Wikipedia - Oldsmobile 442",
+      "url": "https://en.wikipedia.org/wiki/Oldsmobile_442",
+      "says": "automatics were rated at 325 hp"
+     },
+     {
+      "name": "Olds FAQ (Oldsmobile Mail List community reference) - The 442's",
+      "url": "https://oldsjunction.classicoldsmobile.com/oldsfaq/of442.htm",
+      "says": "442 AT 400 4bbl 10.5 325@4800"
+     }
+    ],
+    "status": "confirmed",
+    "note": "442-only."
+   },
+   {
+    "gen": "gen3",
+    "cid": 400,
+    "hp": 360,
+    "hp_basis": "gross",
+    "rpo": "W-30",
+    "name": "4-4-2 Rocket 400 V8 Force-Air",
+    "trims": [
+     "4-4-2"
+    ],
+    "442_only": true,
+    "nhra": true,
+    "sources": [
+     {
+      "name": "Oldsmobile 1968 Salesmen's Prices/Equipment/Specifications (rev. Jan 1968), Specifications...General, Engines (oldcarbrochures.org scan)",
+      "url": "https://www.oldcarbrochures.org/United%20States/Oldsmobile/1968_Oldsmobile/1968-Oldsmobile-Salemens-Specs/index.html",
+      "says": "360-HP Rocket 400 V-8, 360 at 5400, dual exhaust; 4-4-2: W30a - with Force-Air Induction System"
+     },
+     {
+      "name": "Wikipedia - Oldsmobile 442",
+      "url": "https://en.wikipedia.org/wiki/Oldsmobile_442",
+      "says": "W-30s were rated again at 360 hp"
+     },
+     {
+      "name": "Olds FAQ (Oldsmobile Mail List community reference) - The 442's",
+      "url": "https://oldsjunction.classicoldsmobile.com/oldsfaq/of442.htm",
+      "says": "Forced-Air: 400cu in, 4-bbl, 10.50 CR, 360 hp@5400"
+     }
+    ],
+    "status": "confirmed",
+    "note": "442-only."
+   },
+   {
+    "gen": "gen3",
+    "cid": 455,
+    "hp": 390,
+    "hp_basis": "gross",
+    "rpo": "W-45 / W-46 (Hurst/Olds)",
+    "name": "Rocket 455 V8 4-bbl (Toronado-based, W-30 heads)",
+    "trims": [
+     "Hurst/Olds (442 Holiday and Sports coupes)"
+    ],
+    "442_only": false,
+    "nhra": true,
+    "sources": [
+     {
+      "name": "Hurst-Olds 1968 folder (oldcarbrochures.org scan)",
+      "url": "https://www.oldcarbrochures.org/United%20States/Oldsmobile/1968_Oldsmobile/1968%20Oldsmobile%20Hurst%20Olds%20Folder/index.html",
+      "says": "Hurst-Olds ... powered by a custom built 455 cubic inch engine; Hurst modifications done by Demmer Engineering in Lansing (no rating printed)"
+     },
+     {
+      "name": "Wikipedia - Oldsmobile V8 engine",
+      "url": "https://en.wikipedia.org/wiki/Oldsmobile_V8_engine",
+      "says": "Applications: Oldsmobile Hurst/Olds, 390 hp"
+     },
+     {
+      "name": "Olds FAQ - Hurst/Olds",
+      "url": "https://oldsjunction.classicoldsmobile.com/oldsfaq/ofhos.htm",
+      "says": "the H/O ... allowed to advertise 390 HP in the 68 H/O; the 455's were installed on the factory assembly lines in the H/O's; all '68 H/Os built in Lansing"
+     }
+    ],
+    "status": "confirmed",
+    "note": "Hurst/Olds only (515 built). Treated as factory: the Olds FAQ, citing W-46 codes in Oldsmobile's assembly manual, says the 455 was installed on the Lansing line and Hurst/Demmer finished the cars. NHRA lists 455/390 under 442."
+   }
+  ],
+  "1969": [
+   {
+    "gen": "gen3",
+    "cid": 250,
+    "hp": 155,
+    "hp_basis": "gross",
+    "rpo": "L-6",
+    "name": "Action-Line 6 250 1-bbl",
+    "trims": [
+     "F-85",
+     "Cutlass S",
+     "Cutlass sedans and wagons"
+    ],
+    "442_only": false,
+    "nhra": true,
+    "sources": [
+     {
+      "name": "Oldsmobile 1969 Dealer SPECS book, Specifications...Engines (oldcarbrochures.org scan)",
+      "url": "https://www.oldcarbrochures.org/United%20States/Oldsmobile/1969%20Oldsmobile/1969-OLdsmobile-Dealer-SPECS/index.html",
+      "says": "155-HP Action-Line 6, 155 at 4200; Std. L-6 Cutlass S, Cutlass sedans and wagons, F-85"
+     },
+     {
+      "name": "Olds FAQ - Cutlass / F-85",
+      "url": "https://oldsjunction.classicoldsmobile.com/oldsfaq/ofctl.htm",
+      "says": "250 six 1966-1971, 155hp"
+     }
+    ],
+    "status": "confirmed",
+    "note": ""
+   },
+   {
+    "gen": "gen3",
+    "cid": 350,
+    "hp": 250,
+    "hp_basis": "gross",
+    "rpo": "L65",
+    "name": "Rocket 350 V8 2-bbl regular fuel",
+    "trims": [
+     "F-85",
+     "Cutlass",
+     "Cutlass S (std. V8)",
+     "Cutlass Supreme (L65, less cost)"
+    ],
+    "442_only": false,
+    "nhra": true,
+    "sources": [
+     {
+      "name": "Oldsmobile 1969 Dealer SPECS book, Specifications...Engines (oldcarbrochures.org scan)",
+      "url": "https://www.oldcarbrochures.org/United%20States/Oldsmobile/1969%20Oldsmobile/1969-OLdsmobile-Dealer-SPECS/index.html",
+      "says": "250-HP Rocket 350 V-8 (Reg.-Fuel), 250 at 4400; Std. V-8 Cutlass S, sedans/wagons, F-85; L65 (less cost) Cutlass Supreme"
+     }
+    ],
+    "status": "nhra_plus_one",
+    "note": "Wikipedia confirms the standard two-barrel 350 but gives no rating."
+   },
+   {
+    "gen": "gen3",
+    "cid": 350,
+    "hp": 310,
+    "hp_basis": "gross",
+    "rpo": "L74",
+    "name": "Rocket 350 V8 4-bbl H.C.",
+    "trims": [
+     "Cutlass Supreme (std.)",
+     "Cutlass / F-85 (opt.)"
+    ],
+    "442_only": false,
+    "nhra": true,
+    "sources": [
+     {
+      "name": "Oldsmobile 1969 Dealer SPECS book, Specifications...Engines (oldcarbrochures.org scan)",
+      "url": "https://www.oldcarbrochures.org/United%20States/Oldsmobile/1969%20Oldsmobile/1969-OLdsmobile-Dealer-SPECS/index.html",
+      "says": "310-HP Rocket 350 V-8 H.C., 310 at 4800; Std. Cutlass Supreme, L74 Cutlass S/sedans/F-85"
+     },
+     {
+      "name": "Wikipedia - Oldsmobile Cutlass",
+      "url": "https://en.wikipedia.org/wiki/Oldsmobile_Cutlass",
+      "says": "four-barrel 'Ultra High Compression' 310 hp option"
+     }
+    ],
+    "status": "confirmed",
+    "note": ""
+   },
+   {
+    "gen": "gen3",
+    "cid": 350,
+    "hp": 325,
+    "hp_basis": "gross",
+    "rpo": "W-31",
+    "name": "Rocket 350 V8 H.C. Force-Air",
+    "trims": [
+     "F-85 Sports Coupe",
+     "Cutlass S Sport/Holiday Coupe and Convertible"
+    ],
+    "442_only": false,
+    "nhra": true,
+    "sources": [
+     {
+      "name": "Oldsmobile 1969 Dealer SPECS book, Specifications...Engines (oldcarbrochures.org scan)",
+      "url": "https://www.oldcarbrochures.org/United%20States/Oldsmobile/1969%20Oldsmobile/1969-OLdsmobile-Dealer-SPECS/index.html",
+      "says": "325-HP Rocket 350 V-8 H.C. (Force-Air), 325 at 5400; W31 on Cutlass S and F-85 (W-Machines foldout: 350 C.I.D. 325 H.P.)"
+     },
+     {
+      "name": "Wikipedia - Oldsmobile Cutlass",
+      "url": "https://en.wikipedia.org/wiki/Oldsmobile_Cutlass",
+      "says": "the W-31 option, conservatively rated at 325 hp"
+     },
+     {
+      "name": "Olds FAQ - W Machines",
+      "url": "https://oldsjunction.classicoldsmobile.com/oldsfaq/ofwmc.htm",
+      "says": "W-31: 350 CID ... 325 hp"
+     }
+    ],
+    "status": "confirmed",
+    "note": ""
+   },
+   {
+    "gen": "gen3",
+    "cid": 400,
+    "hp": 350,
+    "hp_basis": "gross",
+    "rpo": "std. 4-4-2 (manual trans.)",
+    "name": "4-4-2 Rocket 400 V8 4-bbl",
+    "trims": [
+     "4-4-2"
+    ],
+    "442_only": true,
+    "nhra": true,
+    "sources": [
+     {
+      "name": "Oldsmobile 1969 Dealer SPECS book, Specifications...Engines (oldcarbrochures.org scan)",
+      "url": "https://www.oldcarbrochures.org/United%20States/Oldsmobile/1969%20Oldsmobile/1969-OLdsmobile-Dealer-SPECS/index.html",
+      "says": "350-HP Rocket 400 V-8 H.C., 350 at 4800; 4-4-2 Std. (w/man. trans.)"
+     },
+     {
+      "name": "Olds FAQ (Oldsmobile Mail List community reference) - The 442's",
+      "url": "https://oldsjunction.classicoldsmobile.com/oldsfaq/of442.htm",
+      "says": "Base: 400cu in, 4bbl, 10.50 CR, 350 hp@4800 (325 hp with automatic)"
+     }
+    ],
+    "status": "confirmed",
+    "note": "442-only. Wikipedia's 1969 section gives no rating."
+   },
+   {
+    "gen": "gen3",
+    "cid": 400,
+    "hp": 325,
+    "hp_basis": "gross",
+    "rpo": "std. 4-4-2 (automatic)",
+    "name": "4-4-2 Rocket 400 V8 4-bbl",
+    "trims": [
+     "4-4-2"
+    ],
+    "442_only": true,
+    "nhra": true,
+    "sources": [
+     {
+      "name": "Oldsmobile 1969 Dealer SPECS book, Specifications...Engines (oldcarbrochures.org scan)",
+      "url": "https://www.oldcarbrochures.org/United%20States/Oldsmobile/1969%20Oldsmobile/1969-OLdsmobile-Dealer-SPECS/index.html",
+      "says": "325-HP Rocket 400 V-8 H.C., 325 at 4600; 4-4-2 Std. (w/auto. trans.)"
+     },
+     {
+      "name": "Olds FAQ (Oldsmobile Mail List community reference) - The 442's",
+      "url": "https://oldsjunction.classicoldsmobile.com/oldsfaq/of442.htm",
+      "says": "325 hp with automatic"
+     }
+    ],
+    "status": "confirmed",
+    "note": "442-only."
+   },
+   {
+    "gen": "gen3",
+    "cid": 400,
+    "hp": 360,
+    "hp_basis": "gross",
+    "rpo": "W-30",
+    "name": "4-4-2 Rocket 400 V8 H.C. Force-Air",
+    "trims": [
+     "4-4-2"
+    ],
+    "442_only": true,
+    "nhra": true,
+    "sources": [
+     {
+      "name": "Oldsmobile 1969 Dealer SPECS book, Specifications...Engines (oldcarbrochures.org scan)",
+      "url": "https://www.oldcarbrochures.org/United%20States/Oldsmobile/1969%20Oldsmobile/1969-OLdsmobile-Dealer-SPECS/index.html",
+      "says": "360-HP Rocket 400 V-8 H.C. (Force-Air), 360 at 5400; 4-4-2: W30 (W-Machines foldout: 400 C.I.D. 360 H.P.)"
+     },
+     {
+      "name": "Olds FAQ (Oldsmobile Mail List community reference) - The 442's",
+      "url": "https://oldsjunction.classicoldsmobile.com/oldsfaq/of442.htm",
+      "says": "W-30: 400 cu in, 4bbl, 10.50 CR, 360 hp@5400"
+     }
+    ],
+    "status": "confirmed",
+    "note": "442-only."
+   },
+   {
+    "gen": "gen3",
+    "cid": 400,
+    "hp": 360,
+    "hp_basis": "gross",
+    "rpo": "W-32",
+    "name": "4-4-2 Rocket 400 V8 Force-Air, milder cam, Turbo Hydra-Matic only",
+    "trims": [
+     "4-4-2 Sport Coupe, Holiday Coupe, Convertible"
+    ],
+    "442_only": true,
+    "nhra": true,
+    "sources": [
+     {
+      "name": "Oldsmobile 1969 'Dr. Oldsmobile's W-Machines' foldout (oldcarbrochures.org scan)",
+      "url": "https://www.oldcarbrochures.org/United%20States/Oldsmobile/1969%20Oldsmobile/1969-Oldsmobile-W-Machines-List-Foldout/index.html",
+      "says": "W-32: available on 442 ... includes 400 C.I.D. 360 H.P. engine with special camshaft; special Turbo Hydramatic mandatory"
+     },
+     {
+      "name": "Olds FAQ - W Machines",
+      "url": "https://oldsjunction.classicoldsmobile.com/oldsfaq/ofwmc.htm",
+      "says": "W-32 ... 297 built ... 350 hp compared to 360 for the W-30; 'one of their publications lists the W-32 engine at 360 HP, while all of the other charts I found list it at 350 HP'"
+     }
+    ],
+    "status": "disputed",
+    "note": "Rating disputed. Oldsmobile's W-Machines foldout says 360 hp; the Olds FAQ says other Oldsmobile charts say 350. The 1969 SPECS book doesn't list the W-32. NHRA has no separate W-32 row; its 400/350 and 400/360 rows could cover it."
+   },
+   {
+    "gen": "gen3",
+    "cid": 455,
+    "hp": 380,
+    "hp_basis": "gross",
+    "rpo": "W-46 (Hurst/Olds)",
+    "name": "Rocket 455 V8 4-bbl H.C.",
+    "trims": [
+     "Hurst/Olds (442 Holiday Coupe)"
+    ],
+    "442_only": false,
+    "nhra": true,
+    "sources": [
+     {
+      "name": "Hurst/Olds 1969 folder (oldcarbrochures.org scan)",
+      "url": "https://www.oldcarbrochures.org/United%20States/Oldsmobile/1969%20Oldsmobile/1969%20Oldsmobile%20Hurst%20Olds%20Folder/index.html",
+      "says": "Hurst/Olds 1969 specifications: OHV V-8, 4.125 x 4.250, 10.5:1, horsepower 380 @ 5000, torque 500"
+     },
+     {
+      "name": "Wikipedia - Oldsmobile 442",
+      "url": "https://en.wikipedia.org/wiki/Oldsmobile_442",
+      "says": "a 380-horsepower 455 cid V8 that was detuned slightly from 1968; 906 production Hurst/Olds"
+     },
+     {
+      "name": "Olds FAQ - Hurst/Olds",
+      "url": "https://oldsjunction.classicoldsmobile.com/oldsfaq/ofhos.htm",
+      "says": "1969 H/O ... Rocket 455; all built in Lansing, 455s installed on the factory assembly line"
+     }
+    ],
+    "status": "confirmed",
+    "note": "Hurst/Olds only. NHRA lists 455/380 under 442."
+   }
+  ],
+  "1970": [
+   {
+    "gen": "gen3",
+    "cid": 250,
+    "hp": 155,
+    "hp_basis": "gross",
+    "rpo": "L-6",
+    "name": "Action-Line 6 250 1-bbl",
+    "trims": [
+     "F-85",
+     "Cutlass S",
+     "Cutlass sedans and wagons"
+    ],
+    "442_only": false,
+    "nhra": true,
+    "sources": [
+     {
+      "name": "Oldsmobile 1970 Power Teams booklet, 1970 Oldsmobile Engine Specifications (oldcarbrochures.org scan)",
+      "url": "https://www.oldcarbrochures.org/United%20States/Oldsmobile/1970%20Oldsmobile/1970-Oldsmobile-Power-Teams/index.html",
+      "says": "155-HP Action-Line 6 (Reg. Fuel), 155 at 4200; Std. L-6 Cutlass S, sedans/wagons, F-85"
+     },
+     {
+      "name": "Olds FAQ - Cutlass / F-85",
+      "url": "https://oldsjunction.classicoldsmobile.com/oldsfaq/ofctl.htm",
+      "says": "250 six 1966-1971, 155hp"
+     }
+    ],
+    "status": "confirmed",
+    "note": ""
+   },
+   {
+    "gen": "gen3",
+    "cid": 350,
+    "hp": 250,
+    "hp_basis": "gross",
+    "rpo": "L65",
+    "name": "Rocket 350 V8 2-bbl regular fuel",
+    "trims": [
+     "F-85",
+     "Cutlass",
+     "Cutlass S (std. V8)",
+     "Cutlass Supreme (L65)"
+    ],
+    "442_only": false,
+    "nhra": true,
+    "sources": [
+     {
+      "name": "Oldsmobile 1970 Power Teams booklet, 1970 Oldsmobile Engine Specifications (oldcarbrochures.org scan)",
+      "url": "https://www.oldcarbrochures.org/United%20States/Oldsmobile/1970%20Oldsmobile/1970-Oldsmobile-Power-Teams/index.html",
+      "says": "250-HP Rocket 350 V-8 (Reg. Fuel), 250 at 4400; Std. V-8 Cutlass S, sedans/wagons, F-85; L65 Cutlass Supreme"
+     }
+    ],
+    "status": "nhra_plus_one",
+    "note": ""
+   },
+   {
+    "gen": "gen3",
+    "cid": 350,
+    "hp": 310,
+    "hp_basis": "gross",
+    "rpo": "L74 (also Rallye 350 W45)",
+    "name": "Rocket 350 V8 4-bbl H.C.",
+    "trims": [
+     "Cutlass Supreme (std.)",
+     "Cutlass S / F-85 (opt.)",
+     "Rallye 350"
+    ],
+    "442_only": false,
+    "nhra": true,
+    "sources": [
+     {
+      "name": "Oldsmobile 1970 Power Teams booklet, 1970 Oldsmobile Engine Specifications (oldcarbrochures.org scan)",
+      "url": "https://www.oldcarbrochures.org/United%20States/Oldsmobile/1970%20Oldsmobile/1970-Oldsmobile-Power-Teams/index.html",
+      "says": "310-HP Rocket 350 V-8 H.C., 310 at 4800; Std. Cutlass Supreme; L74 Cutlass S, sedans, F-85"
+     },
+     {
+      "name": "Wikipedia - Oldsmobile Cutlass",
+      "url": "https://en.wikipedia.org/wiki/Oldsmobile_Cutlass",
+      "says": "Rallye 350 used the L74 air-inducted high-compression 350 ... producing 310 hp"
+     },
+     {
+      "name": "Olds FAQ (Oldsmobile Mail List community reference) - The 442's",
+      "url": "https://oldsjunction.classicoldsmobile.com/oldsfaq/of442.htm",
+      "says": "Rallye 350: 350cu in, 4-bbl, 10.25 CR, 310 hp@4800"
+     }
+    ],
+    "status": "confirmed",
+    "note": ""
+   },
+   {
+    "gen": "gen3",
+    "cid": 350,
+    "hp": 325,
+    "hp_basis": "gross",
+    "rpo": "W-31",
+    "name": "Force-Air Rocket 350 V8 H.C.",
+    "trims": [
+     "F-85",
+     "Cutlass S"
+    ],
+    "442_only": false,
+    "nhra": true,
+    "sources": [
+     {
+      "name": "Oldsmobile 1970 Power Teams booklet, 1970 Oldsmobile Engine Specifications (oldcarbrochures.org scan)",
+      "url": "https://www.oldcarbrochures.org/United%20States/Oldsmobile/1970%20Oldsmobile/1970-Oldsmobile-Power-Teams/index.html",
+      "says": "325-HP Force-Air Rocket 350 V-8 H.C., 325 at 5400, dual exhaust; W31 Cutlass S, F-85"
+     },
+     {
+      "name": "Olds FAQ (Oldsmobile Mail List community reference) - The 442's",
+      "url": "https://oldsjunction.classicoldsmobile.com/oldsfaq/of442.htm",
+      "says": "W-31: 350cu in, 4-bbl, 10.50 CR, 325 hp@5400"
+     }
+    ],
+    "status": "confirmed",
+    "note": ""
+   },
+   {
+    "gen": "gen3",
+    "cid": 455,
+    "hp": 320,
+    "hp_basis": "gross",
+    "rpo": "L33",
+    "name": "Rocket 455 V8 H.C. 2-bbl",
+    "trims": [
+     "Cutlass S",
+     "Cutlass sedans and wagons",
+     "Cutlass Supreme (L33 or Y79 SX)"
+    ],
+    "442_only": false,
+    "nhra": true,
+    "sources": [
+     {
+      "name": "Oldsmobile 1970 Power Teams booklet, 1970 Oldsmobile Engine Specifications (oldcarbrochures.org scan)",
+      "url": "https://www.oldcarbrochures.org/United%20States/Oldsmobile/1970%20Oldsmobile/1970-Oldsmobile-Power-Teams/index.html",
+      "says": "320-HP Rocket 455 V-8 H.C., 320 at 4200, 2-bbl; Cutlass Supreme L33 or Y79; Cutlass S and sedans/wagons L33"
+     },
+     {
+      "name": "Olds FAQ - W Machines",
+      "url": "https://oldsjunction.classicoldsmobile.com/oldsfaq/ofwmc.htm",
+      "says": "standard [SX] engine early on was the high-compression 2-bbl L-33 455 ... also available on the regular Cutlass ... out of production by February [1970]"
+     }
+    ],
+    "status": "confirmed",
+    "note": "Mid-year change: dropped around February 1970 (Olds FAQ)."
+   },
+   {
+    "gen": "gen3",
+    "cid": 455,
+    "hp": 365,
+    "hp_basis": "gross",
+    "rpo": "L31 (Cutlass Supreme SX Y79, from Feb. 1970) / W-32",
+    "name": "Rocket 455 V8 4-bbl",
+    "trims": [
+     "Cutlass Supreme SX"
+    ],
+    "442_only": false,
+    "nhra": true,
+    "sources": [
+     {
+      "name": "Oldsmobile 1970 Power Teams booklet, 1970 Oldsmobile Engine Specifications (oldcarbrochures.org scan)",
+      "url": "https://www.oldcarbrochures.org/United%20States/Oldsmobile/1970%20Oldsmobile/1970-Oldsmobile-Power-Teams/index.html",
+      "says": "365-HP Rocket 455 V-8 H.C., 365 at 4600, 4-bbl (L31; listed for full-size and Vista-Cruiser in the early-1970 Power Teams table)"
+     },
+     {
+      "name": "Olds FAQ - W Machines",
+      "url": "https://oldsjunction.classicoldsmobile.com/oldsfaq/ofwmc.htm",
+      "says": "After February of 1970 the L-33 was dropped and the L-31 365hp 4-bbl 455 became standard with the Y-79 [SX] package; the W-32 365hp 4-bbl 455 (the 442 engine) was the optional upgrade, ~1,025 built"
+     }
+    ],
+    "status": "confirmed",
+    "note": "NHRA lists 455/365 under CUTLASS SUPREME. Oldsmobile's early-1970 Power Teams table does not yet show the L31 in the Supreme."
+   },
+   {
+    "gen": "gen3",
+    "cid": 455,
+    "hp": 365,
+    "hp_basis": "gross",
+    "rpo": "std. 4-4-2",
+    "name": "4-4-2 Rocket 455 V8 H.C. 4-bbl",
+    "trims": [
+     "4-4-2"
+    ],
+    "442_only": true,
+    "nhra": true,
+    "sources": [
+     {
+      "name": "Oldsmobile 1970 Power Teams booklet, 1970 Oldsmobile Engine Specifications (oldcarbrochures.org scan)",
+      "url": "https://www.oldcarbrochures.org/United%20States/Oldsmobile/1970%20Oldsmobile/1970-Oldsmobile-Power-Teams/index.html",
+      "says": "365-HP 4-4-2 Rocket 455 V-8 H.C., 365 at 5000, 500 at 3200, dual; Std. 4-4-2"
+     },
+     {
+      "name": "Wikipedia - Oldsmobile 442",
+      "url": "https://en.wikipedia.org/wiki/Oldsmobile_442",
+      "says": "455 standard 4-4-2 engine, output 365 hp and 500 lb-ft"
+     },
+     {
+      "name": "Olds FAQ (Oldsmobile Mail List community reference) - The 442's",
+      "url": "https://oldsjunction.classicoldsmobile.com/oldsfaq/of442.htm",
+      "says": "Base: 455cu in, 4-bbl, 10.50 CR, 365 hp@5000"
+     }
+    ],
+    "status": "confirmed",
+    "note": "442-only, except as the W-32 option in the Cutlass Supreme SX."
+   },
+   {
+    "gen": "gen3",
+    "cid": 455,
+    "hp": 370,
+    "hp_basis": "gross",
+    "rpo": "W-30",
+    "name": "Force-Air Rocket 455 V8 H.C.",
+    "trims": [
+     "4-4-2"
+    ],
+    "442_only": true,
+    "nhra": true,
+    "sources": [
+     {
+      "name": "Oldsmobile 1970 Power Teams booklet, 1970 Oldsmobile Engine Specifications (oldcarbrochures.org scan)",
+      "url": "https://www.oldcarbrochures.org/United%20States/Oldsmobile/1970%20Oldsmobile/1970-Oldsmobile-Power-Teams/index.html",
+      "says": "370-HP Force-Air Rocket 455 V-8 H.C., 370 at 5200; 4-4-2: W30"
+     },
+     {
+      "name": "Wikipedia - Oldsmobile 442",
+      "url": "https://en.wikipedia.org/wiki/Oldsmobile_442",
+      "says": "370 hp variant available with the W30 option"
+     },
+     {
+      "name": "Olds FAQ (Oldsmobile Mail List community reference) - The 442's",
+      "url": "https://oldsjunction.classicoldsmobile.com/oldsfaq/of442.htm",
+      "says": "W-30: 455cu in, 4bbl, 10.50 CR, 370 hp@5200"
+     }
+    ],
+    "status": "confirmed",
+    "note": "442-only."
+   }
+  ],
+  "1971": [
+   {
+    "gen": "gen3",
+    "cid": 250,
+    "hp": 145,
+    "hp_basis": "gross",
+    "rpo": "",
+    "name": "Action-Line 6 250 1-bbl",
+    "trims": [
+     "F-85",
+     "Cutlass",
+     "Cutlass S"
+    ],
+    "442_only": false,
+    "nhra": false,
+    "sources": [
+     {
+      "name": "Oldsmobile 1971 Dealer SPECS book, Specifications p.36 (gross and SAE net) (oldcarbrochures.org scan)",
+      "url": "https://www.oldcarbrochures.org/United%20States/Oldsmobile/1971%20Oldsmobile/1971-Oldsmobile-Dealer-SPECS/index.html",
+      "says": "Action-Line 6: gross 145 at 4200; SAE net 110 at 3800; Standard F-85, Cutlass, Cutlass S"
+     },
+     {
+      "name": "Wikipedia - Oldsmobile Cutlass",
+      "url": "https://en.wikipedia.org/wiki/Oldsmobile_Cutlass",
+      "says": "1971 was the last year for the 250 six in Olds intermediates"
+     }
+    ],
+    "status": "two_sources_not_nhra",
+    "note": "NHRA skips sixes. SAE net 110. Wikipedia confirms availability but gives no rating, so the rating rests on Oldsmobile alone."
+   },
+   {
+    "gen": "gen3",
+    "cid": 350,
+    "hp": 240,
+    "hp_basis": "gross",
+    "rpo": "L65",
+    "name": "Rocket 350 V8 2-bbl",
+    "trims": [
+     "F-85",
+     "Cutlass",
+     "Cutlass S (std.)",
+     "Cutlass Supreme (avail.)"
+    ],
+    "442_only": false,
+    "nhra": true,
+    "sources": [
+     {
+      "name": "Oldsmobile 1971 Dealer SPECS book, Specifications p.36 (gross and SAE net) (oldcarbrochures.org scan)",
+      "url": "https://www.oldcarbrochures.org/United%20States/Oldsmobile/1971%20Oldsmobile/1971-Oldsmobile-Dealer-SPECS/index.html",
+      "says": "Rocket 350 L65: gross 240 at 4200; SAE net 160 (single) / 175 (dual exhaust); Standard F-85, Cutlass, Cutlass S; available Cutlass Supreme"
+     }
+    ],
+    "status": "nhra_plus_one",
+    "note": "SAE net 160 single exhaust, 175 dual."
+   },
+   {
+    "gen": "gen3",
+    "cid": 350,
+    "hp": 260,
+    "hp_basis": "gross",
+    "rpo": "L74",
+    "name": "Rocket 350 V8 4-bbl",
+    "trims": [
+     "Cutlass Supreme (std.)",
+     "F-85 / Cutlass / Cutlass S (avail.)"
+    ],
+    "442_only": false,
+    "nhra": true,
+    "sources": [
+     {
+      "name": "Oldsmobile 1971 Dealer SPECS book, Specifications p.36 (gross and SAE net) (oldcarbrochures.org scan)",
+      "url": "https://www.oldcarbrochures.org/United%20States/Oldsmobile/1971%20Oldsmobile/1971-Oldsmobile-Dealer-SPECS/index.html",
+      "says": "Rocket 350 L74: gross 260 at 4600; SAE net 180 single / 200 dual; Standard Cutlass Supreme, available F-85, Cutlass, Cutlass S"
+     }
+    ],
+    "status": "nhra_plus_one",
+    "note": "SAE net 180 single exhaust, 200 dual. The dealer book's Power Teams page shows 185 for the L74 in F-85/Cutlass/Cutlass S and 180 for the Cutlass Supreme."
+   },
+   {
+    "gen": "gen3",
+    "cid": 455,
+    "hp": 320,
+    "hp_basis": "gross",
+    "rpo": "L32 (Cutlass Supreme SX Y79)",
+    "name": "Rocket 455 V8 4-bbl",
+    "trims": [
+     "Cutlass Supreme SX (coupe, convertible)"
+    ],
+    "442_only": false,
+    "nhra": false,
+    "sources": [
+     {
+      "name": "Oldsmobile 1971 Dealer SPECS book, Specifications p.36 (gross and SAE net) (oldcarbrochures.org scan)",
+      "url": "https://www.oldcarbrochures.org/United%20States/Oldsmobile/1971%20Oldsmobile/1971-Oldsmobile-Dealer-SPECS/index.html",
+      "says": "Rocket 455 L32: gross 320 at 4400; SAE net 250 (dual); Cutlass Supreme: Available - in 'SX' Performance Package (Y79), Turbo Hydra-matic 400 required"
+     }
+    ],
+    "status": "single_source",
+    "note": "NHRA lists 455/320 only under VISTA-CRUISER. No second source found for the Supreme SX application."
+   },
+   {
+    "gen": "gen3",
+    "cid": 455,
+    "hp": 340,
+    "hp_basis": "gross",
+    "rpo": "std. 4-4-2",
+    "name": "4-4-2 Rocket 455 V8 4-bbl",
+    "trims": [
+     "4-4-2"
+    ],
+    "442_only": true,
+    "nhra": true,
+    "sources": [
+     {
+      "name": "Oldsmobile 1971 Dealer SPECS book, Specifications p.36 (gross and SAE net) (oldcarbrochures.org scan)",
+      "url": "https://www.oldcarbrochures.org/United%20States/Oldsmobile/1971%20Oldsmobile/1971-Oldsmobile-Dealer-SPECS/index.html",
+      "says": "4-4-2 Rocket 455: gross 340 at 4600; SAE net 270 at 4400; Standard 4-4-2"
+     },
+     {
+      "name": "Wikipedia - Oldsmobile 442",
+      "url": "https://en.wikipedia.org/wiki/Oldsmobile_442",
+      "says": "The base 455 was rated at 340 hp"
+     },
+     {
+      "name": "Olds FAQ (Oldsmobile Mail List community reference) - The 442's",
+      "url": "https://oldsjunction.classicoldsmobile.com/oldsfaq/of442.htm",
+      "says": "Base: 455cu in, 4-bbl, 8.50 CR, 270 hp(net)@4600"
+     }
+    ],
+    "status": "confirmed",
+    "note": "442-only. SAE net 270."
+   },
+   {
+    "gen": "gen3",
+    "cid": 455,
+    "hp": 350,
+    "hp_basis": "gross",
+    "rpo": "W-30",
+    "name": "Force-Air Rocket 455 V8",
+    "trims": [
+     "4-4-2"
+    ],
+    "442_only": true,
+    "nhra": true,
+    "sources": [
+     {
+      "name": "Oldsmobile 1971 Dealer SPECS book, Specifications p.36 (gross and SAE net) (oldcarbrochures.org scan)",
+      "url": "https://www.oldcarbrochures.org/United%20States/Oldsmobile/1971%20Oldsmobile/1971-Oldsmobile-Dealer-SPECS/index.html",
+      "says": "W30: gross 350 at 4700; SAE net 300 at 4700; Available in W30 Performance Package (4-4-2)"
+     },
+     {
+      "name": "Wikipedia - Oldsmobile 442",
+      "url": "https://en.wikipedia.org/wiki/Oldsmobile_442",
+      "says": "W-30 achieving a rating of 350 hp"
+     },
+     {
+      "name": "Olds FAQ (Oldsmobile Mail List community reference) - The 442's",
+      "url": "https://oldsjunction.classicoldsmobile.com/oldsfaq/of442.htm",
+      "says": "W-30: 455cu in, 4-bbl, 8.50 CR, 280 hp(net)@4700"
+     }
+    ],
+    "status": "confirmed",
+    "note": "442-only. The net ratings disagree: Oldsmobile's 1971 dealer book says 300 net, the Olds FAQ says 280 net. Everyone agrees on 350 gross."
+   }
+  ],
+  "1972": [
+   {
+    "gen": "gen3",
+    "cid": 350,
+    "hp": 160,
+    "hp_basis": "net",
+    "rpo": "L32",
+    "name": "Rocket 350 V8 2-bbl",
+    "trims": [
+     "F-85",
+     "Cutlass",
+     "Cutlass S (std.)",
+     "Cutlass Supreme (avail.)"
+    ],
+    "442_only": false,
+    "nhra": true,
+    "sources": [
+     {
+      "name": "Oldsmobile 1972 Dealer SPECS book, Engine Specifications & Availabilities (oldcarbrochures.org scan)",
+      "url": "https://www.oldcarbrochures.org/United%20States/Oldsmobile/1972-Oldsmobile/1972-Oldsmobile-Dealer-SPECS-/index.html",
+      "says": "Rocket 350 L32: SAE net 160 @ 4000, 2-bbl, single exhaust; Standard F-85, Cutlass, Cutlass S; available Cutlass Supreme"
+     },
+     {
+      "name": "Olds FAQ (Oldsmobile Mail List community reference) - The 442's",
+      "url": "https://oldsjunction.classicoldsmobile.com/oldsfaq/of442.htm",
+      "says": "L32: 350cu in, 2-bbl, 8.50 CR, 160 hp@4000 (base engine); VIN code H single exhaust, J dual exhaust"
+     }
+    ],
+    "status": "confirmed",
+    "note": "NHRA lists this engine at 175 hp, which is the dual-exhaust rating (VIN code J; the 1971 book rates the L65 at 175 net with dual exhaust). The single-exhaust factory figure is recorded."
+   },
+   {
+    "gen": "gen3",
+    "cid": 350,
+    "hp": 180,
+    "hp_basis": "net",
+    "rpo": "L34",
+    "name": "Rocket 350 V8 4-bbl",
+    "trims": [
+     "Cutlass Supreme (std.)",
+     "F-85 / Cutlass / Cutlass S (avail.)"
+    ],
+    "442_only": false,
+    "nhra": true,
+    "sources": [
+     {
+      "name": "Oldsmobile 1972 Dealer SPECS book, Engine Specifications & Availabilities (oldcarbrochures.org scan)",
+      "url": "https://www.oldcarbrochures.org/United%20States/Oldsmobile/1972-Oldsmobile/1972-Oldsmobile-Dealer-SPECS-/index.html",
+      "says": "Rocket 350 L34: SAE net 180 @ 4000, 4-bbl, single exhaust; Standard Cutlass Supreme, available F-85/Cutlass/Cutlass S"
+     },
+     {
+      "name": "Olds FAQ (Oldsmobile Mail List community reference) - The 442's",
+      "url": "https://oldsjunction.classicoldsmobile.com/oldsfaq/of442.htm",
+      "says": "L34: 350cu in, 4-bbl, 8.50 CR, 180 hp@4000; VIN K single exhaust, M dual exhaust"
+     }
+    ],
+    "status": "confirmed",
+    "note": "NHRA lists 200 hp, which is the dual-exhaust rating (VIN M). The single-exhaust factory figure is recorded."
+   },
+   {
+    "gen": "gen3",
+    "cid": 455,
+    "hp": 270,
+    "hp_basis": "net",
+    "rpo": "L75 (manual trans.)",
+    "name": "Rocket 455 V8 4-bbl",
+    "trims": [
+     "F-85",
+     "Cutlass",
+     "Cutlass S",
+     "Cutlass Supreme",
+     "Hurst/Olds (std.)",
+     "442 (W-29 package)"
+    ],
+    "442_only": false,
+    "nhra": true,
+    "sources": [
+     {
+      "name": "Oldsmobile 1972 Dealer SPECS book, Engine Specifications & Availabilities (oldcarbrochures.org scan)",
+      "url": "https://www.oldcarbrochures.org/United%20States/Oldsmobile/1972-Oldsmobile/1972-Oldsmobile-Dealer-SPECS-/index.html",
+      "says": "Rocket 455 L75 SMT: SAE net 270 @ 4400, dual exhaust; available F-85, Cutlass, Cutlass S, Cutlass Supreme (Hurst/Olds brochure: 455 CID Performance Engine)"
+     },
+     {
+      "name": "Wikipedia - Oldsmobile 442",
+      "url": "https://en.wikipedia.org/wiki/Oldsmobile_442",
+      "says": "1972 Hurst/Olds came standard with a 270-net horsepower 455 Rocket"
+     },
+     {
+      "name": "Olds FAQ (Oldsmobile Mail List community reference) - The 442's",
+      "url": "https://oldsjunction.classicoldsmobile.com/oldsfaq/of442.htm",
+      "says": "L75: 455cu in, 4-bbl, 8.50 CR, 270 hp@4400"
+     }
+    ],
+    "status": "confirmed",
+    "note": ""
+   },
+   {
+    "gen": "gen3",
+    "cid": 455,
+    "hp": 250,
+    "hp_basis": "net",
+    "rpo": "L75 (Turbo Hydra-Matic)",
+    "name": "Rocket 455 V8 4-bbl",
+    "trims": [
+     "F-85",
+     "Cutlass",
+     "Cutlass S",
+     "Cutlass Supreme"
+    ],
+    "442_only": false,
+    "nhra": true,
+    "sources": [
+     {
+      "name": "Oldsmobile 1972 Dealer SPECS book, Engine Specifications & Availabilities (oldcarbrochures.org scan)",
+      "url": "https://www.oldcarbrochures.org/United%20States/Oldsmobile/1972-Oldsmobile/1972-Oldsmobile-Dealer-SPECS-/index.html",
+      "says": "Rocket 455 L75 HMT: SAE net 250 @ 4200, dual exhaust"
+     }
+    ],
+    "status": "nhra_plus_one",
+    "note": "Automatic-transmission rating of the L75."
+   },
+   {
+    "gen": "gen3",
+    "cid": 455,
+    "hp": 300,
+    "hp_basis": "net",
+    "rpo": "L77 (W-30)",
+    "name": "Rocket 455 V8 4-bbl W-30",
+    "trims": [
+     "Cutlass",
+     "Cutlass S",
+     "Cutlass Supreme (W30 package)",
+     "Hurst/Olds (opt.)"
+    ],
+    "442_only": false,
+    "nhra": true,
+    "sources": [
+     {
+      "name": "Oldsmobile 1972 Dealer SPECS book, Engine Specifications & Availabilities (oldcarbrochures.org scan)",
+      "url": "https://www.oldcarbrochures.org/United%20States/Oldsmobile/1972-Oldsmobile/1972-Oldsmobile-Dealer-SPECS-/index.html",
+      "says": "Rocket 455 L77: SAE net 300 @ 4700; Available (required and available only with W30 Performance Package) on Cutlass, Cutlass S, Cutlass Supreme"
+     },
+     {
+      "name": "Wikipedia - Oldsmobile 442",
+      "url": "https://en.wikipedia.org/wiki/Oldsmobile_442",
+      "says": "W-30 had 300 hp in 1972; optional 300-net hp W-30 on the 1972 Hurst/Olds"
+     },
+     {
+      "name": "Olds FAQ (Oldsmobile Mail List community reference) - The 442's",
+      "url": "https://oldsjunction.classicoldsmobile.com/oldsfaq/of442.htm",
+      "says": "W-30: 455cu in, 4-bbl, 8.50 CR, 300 hp@4400"
+     }
+    ],
+    "status": "confirmed",
+    "note": "Not 442-only in 1972: the 442 was the W-29 appearance/handling package, and the W-30 was a separate package."
+   }
+  ],
+  "1973": [
+   {
+    "gen": "gen4",
+    "cid": 350,
+    "hp": 180,
+    "hp_basis": "net",
+    "rpo": "L34 (VIN K)",
+    "name": "Rocket 350 V8 4-bbl",
+    "trims": [
+     "Cutlass",
+     "Cutlass S",
+     "Cutlass Supreme",
+     "442 (W-29)"
+    ],
+    "442_only": false,
+    "nhra": true,
+    "sources": [
+     {
+      "name": "Oldsmobile 1973 Salesmen's SPECS book, Engine Specification & Availabilities (oldcarbrochures.org scan)",
+      "url": "https://www.oldcarbrochures.org/United%20States/Oldsmobile/1973_Oldsmobile/1973-Oldsmobile-Dealer-SPECS/index.html",
+      "says": "Rocket 350 4-bbl L34: SAE net 180 @ 3800; Standard Cutlass, Cutlass S, Cutlass Supreme"
+     },
+     {
+      "name": "Wikipedia - Oldsmobile 442",
+      "url": "https://en.wikipedia.org/wiki/Oldsmobile_442",
+      "says": "'K' code 350 single exhaust produced 180 hp; 'M' code with dual exhausts 200 hp"
+     }
+    ],
+    "status": "confirmed",
+    "note": "The dual-exhaust version (VIN M) was rated 200 net (Wikipedia); NHRA doesn't list it for 1973."
+   },
+   {
+    "gen": "gen4",
+    "cid": 350,
+    "hp": 160,
+    "hp_basis": "net",
+    "rpo": "2-bbl",
+    "name": "Rocket 350 V8 2-bbl",
+    "trims": [
+     "Cutlass (per NHRA)"
+    ],
+    "442_only": false,
+    "nhra": true,
+    "sources": [
+     {
+      "name": "Olds FAQ (Oldsmobile Mail List community reference) - The 442's",
+      "url": "https://oldsjunction.classicoldsmobile.com/oldsfaq/of442.htm",
+      "says": "1973 442 engine specs: 250 CID 6 cyl., 350 2 and 4 bbl., and 455 2 and 4 bbl. (no ratings)"
+     }
+    ],
+    "status": "disputed",
+    "note": "Oldsmobile's 1973 Salesmen's SPECS availability chart lists only the 4-bbl L34 350 and the L75 455 for Cutlass models; the 2-bbl 350 and the 250 six appear only for Omega and full-size cars. NHRA lists 350/160 for the Cutlass, and the Olds FAQ mentions a 2-bbl 350 without a rating."
+   },
+   {
+    "gen": "gen4",
+    "cid": 455,
+    "hp": 250,
+    "hp_basis": "net",
+    "rpo": "L75 (VIN U)",
+    "name": "Rocket 455 V8 4-bbl",
+    "trims": [
+     "Cutlass",
+     "Cutlass S",
+     "Cutlass Supreme",
+     "Hurst/Olds (W-45, std. with A/C)"
+    ],
+    "442_only": false,
+    "nhra": true,
+    "sources": [
+     {
+      "name": "Oldsmobile 1973 Salesmen's SPECS book, Engine Specification & Availabilities (oldcarbrochures.org scan)",
+      "url": "https://www.oldcarbrochures.org/United%20States/Oldsmobile/1973_Oldsmobile/1973-Oldsmobile-Dealer-SPECS/index.html",
+      "says": "Rocket 455 4-bbl L75: SAE net 250 @ 4000, dual exhaust; Available Cutlass, Cutlass S, Cutlass Supreme; Hurst/Olds folder: 455 CID L75 Performance Engine"
+     },
+     {
+      "name": "Wikipedia - Oldsmobile 442",
+      "url": "https://en.wikipedia.org/wiki/Oldsmobile_442",
+      "says": "the L75 'U' code 455 AT produced 250 hp"
+     }
+    ],
+    "status": "confirmed",
+    "note": ""
+   },
+   {
+    "gen": "gen4",
+    "cid": 455,
+    "hp": 270,
+    "hp_basis": "net",
+    "rpo": "L77 (VIN V)",
+    "name": "Rocket 455 V8 4-bbl, special cam",
+    "trims": [
+     "Hurst/Olds (W-46, non-A/C)",
+     "442 (4-speed M20)"
+    ],
+    "442_only": false,
+    "nhra": true,
+    "sources": [
+     {
+      "name": "Hurst/Olds 1973 folder (oldcarbrochures.org scan)",
+      "url": "https://www.oldcarbrochures.org/United%20States/Oldsmobile/1973_Oldsmobile/1973_Oldsmobile_Hurst_Olds_Folder/index.html",
+      "says": "The 455 CID L77 Performance Engine is available featuring special cam shaft ... standard on non-air conditioned cars only"
+     },
+     {
+      "name": "Wikipedia - Oldsmobile 442",
+      "url": "https://en.wikipedia.org/wiki/Oldsmobile_442",
+      "says": "The L77 'V' code produced 270 hp; with the 4-speed M-20 and in the Hurst/Olds without A/C"
+     }
+    ],
+    "status": "confirmed",
+    "note": ""
+   }
+  ],
+  "1974": [
+   {
+    "gen": "gen4",
+    "cid": 350,
+    "hp": 180,
+    "hp_basis": "net",
+    "rpo": "L34 (VIN K)",
+    "name": "Rocket 350 V8 4-bbl",
+    "trims": [
+     "Cutlass",
+     "Cutlass S",
+     "Cutlass Supreme",
+     "Cutlass Salon",
+     "442",
+     "Hurst/Olds W-25"
+    ],
+    "442_only": false,
+    "nhra": true,
+    "sources": [
+     {
+      "name": "Wikipedia - Oldsmobile 442",
+      "url": "https://en.wikipedia.org/wiki/Oldsmobile_442",
+      "says": "1974 4-4-2: standard 180 hp Rocket 350 four-barrel V8"
+     },
+     {
+      "name": "Olds FAQ (Oldsmobile Mail List community reference) - The 442's",
+      "url": "https://oldsjunction.classicoldsmobile.com/oldsfaq/of442.htm",
+      "says": "1974: Code K is 350 single exhaust 180 h.p."
+     }
+    ],
+    "status": "confirmed",
+    "note": "No 1974 Oldsmobile spec sheet turned up on oldcarbrochures.org (the 1974 Full Line brochure has no engine table). The 350 V8 was standard on all Cutlasses."
+   },
+   {
+    "gen": "gen4",
+    "cid": 350,
+    "hp": 200,
+    "hp_basis": "net",
+    "rpo": "VIN M (dual exhaust)",
+    "name": "Rocket 350 V8 4-bbl dual exhaust",
+    "trims": [
+     "Cutlass (dual-exhaust option)"
+    ],
+    "442_only": false,
+    "nhra": true,
+    "sources": [
+     {
+      "name": "Olds FAQ (Oldsmobile Mail List community reference) - The 442's",
+      "url": "https://oldsjunction.classicoldsmobile.com/oldsfaq/of442.htm",
+      "says": "1974: Code M is 350 dual exhaust 200 h.p."
+     }
+    ],
+    "status": "nhra_plus_one",
+    "note": ""
+   },
+   {
+    "gen": "gen4",
+    "cid": 455,
+    "hp": 230,
+    "hp_basis": "net",
+    "rpo": "W-30 (VIN U, dual exhaust)",
+    "name": "Rocket 455 V8 4-bbl",
+    "trims": [
+     "442",
+     "Hurst/Olds W-30",
+     "Cutlass (opt.)"
+    ],
+    "442_only": false,
+    "nhra": true,
+    "sources": [
+     {
+      "name": "Wikipedia - Oldsmobile 442",
+      "url": "https://en.wikipedia.org/wiki/Oldsmobile_442",
+      "says": "optional 230 hp Rocket 455, which reintroduced the W-30 code"
+     },
+     {
+      "name": "Olds FAQ (Oldsmobile Mail List community reference) - The 442's",
+      "url": "https://oldsjunction.classicoldsmobile.com/oldsfaq/of442.htm",
+      "says": "1974: Code U is 455 dual exhaust 230 h.p."
+     }
+    ],
+    "status": "confirmed",
+    "note": ""
+   },
+   {
+    "gen": "gen4",
+    "cid": 455,
+    "hp": 210,
+    "hp_basis": "net",
+    "rpo": "single exhaust",
+    "name": "Rocket 455 V8 4-bbl",
+    "trims": [
+     "Cutlass / Cutlass Supreme (per NHRA)"
+    ],
+    "442_only": false,
+    "nhra": true,
+    "sources": [],
+    "status": "nhra_only",
+    "note": "Only NHRA lists a 210-hp 455 (probably the single-exhaust rating). No other source found."
+   },
+   {
+    "gen": "gen4",
+    "cid": 455,
+    "hp": 245,
+    "hp_basis": "net",
+    "rpo": "",
+    "name": "Rocket 455 V8 4-bbl",
+    "trims": [
+     "Cutlass (per NHRA)"
+    ],
+    "442_only": false,
+    "nhra": true,
+    "sources": [],
+    "status": "nhra_only",
+    "note": "Only NHRA lists a 245-hp 455 for the 1974 Cutlass. No other source found; it may be an NHRA error."
+   }
+  ],
+  "1975": [
+   {
+    "gen": "gen4",
+    "cid": 250,
+    "hp": 105,
+    "hp_basis": "net",
+    "rpo": "L22",
+    "name": "Chevrolet 250 inline six 1-bbl",
+    "trims": [
+     "Cutlass",
+     "Cutlass S",
+     "Cutlass Supreme",
+     "442 (std.)"
+    ],
+    "442_only": false,
+    "nhra": true,
+    "sources": [
+     {
+      "name": "Oldsmobile 1975 Full Line brochure, Cutlass specifications & available equipment (oldcarbrochures.org scan)",
+      "url": "https://www.oldcarbrochures.org/United%20States/Oldsmobile/1975%20Oldsmobile/1975-Oldsmobile-Full-Line/index.html",
+      "says": "Cutlass / Cutlass S / Cutlass Supreme standard power team: Engine, 250 6-cyl. 1-bbl (rating per GM's 1975 Chevelle information kit: L6-250 105 H.P.)"
+     }
+    ],
+    "status": "nhra_plus_one",
+    "note": "Wikipedia confirms the Chevrolet 250 six returned for 1975 and was standard on the 4-4-2, but gives no rating. The GM corporate L22 rating is 105 net (GM Heritage 1975 Chevelle kit, https://www.gm.com/content/dam/company/no_search/heritage-archive-docs/vehicle-information-kits/chevrolet/1975-Chevrolet-Chevelle.pdf), counted together with the Oldsmobile literature as one manufacturer source."
+   },
+   {
+    "gen": "gen4",
+    "cid": 260,
+    "hp": 110,
+    "hp_basis": "net",
+    "rpo": "LV8 (VIN F)",
+    "name": "Rocket 260 V8 2-bbl",
+    "trims": [
+     "Cutlass",
+     "Cutlass S",
+     "Cutlass Supreme"
+    ],
+    "442_only": false,
+    "nhra": true,
+    "sources": [
+     {
+      "name": "Oldsmobile 1975 Full Line brochure, Cutlass specifications & available equipment (oldcarbrochures.org scan)",
+      "url": "https://www.oldcarbrochures.org/United%20States/Oldsmobile/1975%20Oldsmobile/1975-Oldsmobile-Full-Line/index.html",
+      "says": "CUTLASS AVAILABLE EQUIPMENT: 260 V8 2-bbl. engine; new 'baby' V8 ... 260 cubic inches"
+     },
+     {
+      "name": "Wikipedia - Oldsmobile V8 engine",
+      "url": "https://en.wikipedia.org/wiki/Oldsmobile_V8_engine",
+      "says": "260 V8 created for 1975 ... produced 110 hp net (Standard Catalog of Oldsmobile); used in 1975-1982 Cutlass"
+     }
+    ],
+    "status": "confirmed",
+    "note": ""
+   },
+   {
+    "gen": "gen4",
+    "cid": 350,
+    "hp": 170,
+    "hp_basis": "net",
+    "rpo": "L34",
+    "name": "Rocket 350 V8 4-bbl",
+    "trims": [
+     "Cutlass",
+     "Cutlass S",
+     "Cutlass Supreme",
+     "Cutlass Salon",
+     "442"
+    ],
+    "442_only": false,
+    "nhra": true,
+    "sources": [
+     {
+      "name": "Oldsmobile 1975 Full Line brochure, Cutlass specifications & available equipment (oldcarbrochures.org scan)",
+      "url": "https://www.oldcarbrochures.org/United%20States/Oldsmobile/1975%20Oldsmobile/1975-Oldsmobile-Full-Line/index.html",
+      "says": "Available equipment: 350 V8 4-bbl. engine (Cutlass, Cutlass S, Supreme, Salon)"
+     },
+     {
+      "name": "Wikipedia - Oldsmobile 442",
+      "url": "https://en.wikipedia.org/wiki/Oldsmobile_442",
+      "says": "The 170-horsepower 350 Rocket V8 was now an extra-cost option [1975 4-4-2]"
+     }
+    ],
+    "status": "confirmed",
+    "note": ""
+   },
+   {
+    "gen": "gen4",
+    "cid": 455,
+    "hp": 190,
+    "hp_basis": "net",
+    "rpo": "L75",
+    "name": "Rocket 455 V8 4-bbl",
+    "trims": [
+     "Cutlass",
+     "Cutlass S",
+     "Cutlass Supreme",
+     "Cutlass Salon",
+     "442"
+    ],
+    "442_only": false,
+    "nhra": true,
+    "sources": [
+     {
+      "name": "Oldsmobile 1975 Full Line brochure, Cutlass specifications & available equipment (oldcarbrochures.org scan)",
+      "url": "https://www.oldcarbrochures.org/United%20States/Oldsmobile/1975%20Oldsmobile/1975-Oldsmobile-Full-Line/index.html",
+      "says": "Available equipment: 455 V8 4-bbl. engine"
+     },
+     {
+      "name": "Wikipedia - Oldsmobile Cutlass",
+      "url": "https://en.wikipedia.org/wiki/Oldsmobile_Cutlass",
+      "says": "Also continuing was the 455 Rocket V8, rated at 190 hp (442 article: 190 hp at 3400 rpm)"
+     }
+    ],
+    "status": "confirmed",
+    "note": ""
+   }
+  ],
+  "1976": [
+   {
+    "gen": "gen4",
+    "cid": 250,
+    "hp": 105,
+    "hp_basis": "net",
+    "rpo": "L22",
+    "name": "Chevrolet 250 inline six 1-bbl",
+    "trims": [
+     "Cutlass S",
+     "Cutlass Supreme",
+     "Cutlass Supreme Brougham"
+    ],
+    "442_only": false,
+    "nhra": true,
+    "sources": [
+     {
+      "name": "Oldsmobile 1976 Mid-size and Compact brochure (oldcarbrochures.org scan)",
+      "url": "https://www.oldcarbrochures.org/United%20States/Oldsmobile/1976_Oldsmobile/1976_Oldsmobile_Mid-size_and_Compact_Brochure/index.html",
+      "says": "250 SIX ENGINE, standard (most coupes and sedans); Cutlass standard power team: Engine, 6 cylinders, 250 CID except Salon and wagons (GM 1976 Chevelle kit: L6-250 105 H.P.)"
+     }
+    ],
+    "status": "nhra_plus_one",
+    "note": "Wikipedia says engine offerings carried over from 1975, including the Chevy 250 six, but gives no rating. The Olds FAQ says the 260 V8 was standard in 1976, which contradicts Oldsmobile's brochure (250 six standard except on Salon and wagons)."
+   },
+   {
+    "gen": "gen4",
+    "cid": 260,
+    "hp": 110,
+    "hp_basis": "net",
+    "rpo": "LV8",
+    "name": "Rocket 260 V8 2-bbl",
+    "trims": [
+     "Cutlass S",
+     "Cutlass Supreme",
+     "Cutlass Salon (std.)",
+     "442"
+    ],
+    "442_only": false,
+    "nhra": true,
+    "sources": [
+     {
+      "name": "Oldsmobile 1976 Mid-size and Compact brochure (oldcarbrochures.org scan)",
+      "url": "https://www.oldcarbrochures.org/United%20States/Oldsmobile/1976_Oldsmobile/1976_Oldsmobile_Mid-size_and_Compact_Brochure/index.html",
+      "says": "260 cu. in. V8, Salon [standard]; 5-speed overdrive manual available with 260 V8"
+     },
+     {
+      "name": "Wikipedia - Oldsmobile V8 engine",
+      "url": "https://en.wikipedia.org/wiki/Oldsmobile_V8_engine",
+      "says": "260 produced 110 hp net; 1975-1982 Cutlass"
+     },
+     {
+      "name": "Olds FAQ - Cutlass / F-85",
+      "url": "https://oldsjunction.classicoldsmobile.com/oldsfaq/ofctl.htm",
+      "says": "1976: Olds 260 V-8 with automatic or T-50 5-speed manual"
+     }
+    ],
+    "status": "confirmed",
+    "note": ""
+   },
+   {
+    "gen": "gen4",
+    "cid": 350,
+    "hp": 170,
+    "hp_basis": "net",
+    "rpo": "L34",
+    "name": "Rocket 350 V8 4-bbl",
+    "trims": [
+     "Cutlass S",
+     "Cutlass Supreme",
+     "Cutlass Salon",
+     "442"
+    ],
+    "442_only": false,
+    "nhra": true,
+    "sources": [
+     {
+      "name": "Oldsmobile 1976 Mid-size and Compact brochure (oldcarbrochures.org scan)",
+      "url": "https://www.oldcarbrochures.org/United%20States/Oldsmobile/1976_Oldsmobile/1976_Oldsmobile_Mid-size_and_Compact_Brochure/index.html",
+      "says": "350 cu. in. V8 (standard in Vista-Cruiser / Cutlass Supreme Cruiser; optional on coupes and sedans)"
+     },
+     {
+      "name": "Wikipedia - Oldsmobile 442",
+      "url": "https://en.wikipedia.org/wiki/Oldsmobile_442",
+      "says": "1976 engine offerings unchanged from 1975 (170-hp 350)"
+     }
+    ],
+    "status": "confirmed",
+    "note": "Olds FAQ: the L34 350 4-bbl was rated 170-190 hp in this period."
+   },
+   {
+    "gen": "gen4",
+    "cid": 455,
+    "hp": 190,
+    "hp_basis": "net",
+    "rpo": "L75",
+    "name": "Rocket 455 V8 4-bbl",
+    "trims": [
+     "Cutlass S",
+     "Cutlass Supreme",
+     "Cutlass Salon",
+     "442"
+    ],
+    "442_only": false,
+    "nhra": true,
+    "sources": [
+     {
+      "name": "Wikipedia - Oldsmobile 442",
+      "url": "https://en.wikipedia.org/wiki/Oldsmobile_442",
+      "says": "1976 offerings unchanged from 1975 (190-hp 455); final year for the 455 Rocket V8"
+     },
+     {
+      "name": "Olds FAQ - Cutlass / F-85",
+      "url": "https://oldsjunction.classicoldsmobile.com/oldsfaq/ofctl.htm",
+      "says": "1976: The Olds 350 and Olds 455 were available as options, automatic only"
+     }
+    ],
+    "status": "confirmed",
+    "note": "Last year of the 455. It doesn't appear in the OCR of the 1976 mid-size brochure."
+   }
+  ],
+  "1977": [
+   {
+    "gen": "gen4",
+    "cid": 231,
+    "hp": 105,
+    "hp_basis": "net",
+    "rpo": "LD5",
+    "name": "Buick 231 V6 2-bbl",
+    "trims": [
+     "Cutlass S",
+     "Cutlass Supreme",
+     "442 (std.)"
+    ],
+    "442_only": false,
+    "nhra": true,
+    "sources": [
+     {
+      "name": "Oldsmobile 1977 Mid-Size (Cutlass) brochure (oldcarbrochures.org scan)",
+      "url": "https://www.oldcarbrochures.org/United%20States/Oldsmobile/1977%20Oldsmobile/1977_Oldsmobile_Mid_Size_Brochure/index.html",
+      "says": "Cutlass Supreme: 'A new lighter standard engine. A tough and spunky 231 V6!'; 4-4-2: 'A spunky 231 V6 comes standard'"
+     },
+     {
+      "name": "Wikipedia - Oldsmobile Cutlass",
+      "url": "https://en.wikipedia.org/wiki/Oldsmobile_Cutlass",
+      "says": "Buick 231 V6 standard on all models except Salon and Vista Cruiser (Buick V6 article: 105 or 110 hp depending on fitment and year)"
+     }
+    ],
+    "status": "confirmed",
+    "note": ""
+   },
+   {
+    "gen": "gen4",
+    "cid": 260,
+    "hp": 110,
+    "hp_basis": "net",
+    "rpo": "LV8",
+    "name": "Rocket 260 V8 2-bbl",
+    "trims": [
+     "Cutlass S",
+     "Cutlass Supreme",
+     "Cutlass Supreme Brougham / Salon (std.)",
+     "442"
+    ],
+    "442_only": false,
+    "nhra": true,
+    "sources": [
+     {
+      "name": "Oldsmobile 1977 Mid-Size (Cutlass) brochure (oldcarbrochures.org scan)",
+      "url": "https://www.oldcarbrochures.org/United%20States/Oldsmobile/1977%20Oldsmobile/1977_Oldsmobile_Mid_Size_Brochure/index.html",
+      "says": "4-4-2: available 260 V8 with a 5-speed manual shifter; power teams list 260 V8 2-bbl"
+     },
+     {
+      "name": "Wikipedia - Oldsmobile V8 engine",
+      "url": "https://en.wikipedia.org/wiki/Oldsmobile_V8_engine",
+      "says": "260 produced 110 hp net; 1975-1982 Cutlass"
+     }
+    ],
+    "status": "confirmed",
+    "note": ""
+   },
+   {
+    "gen": "gen4",
+    "cid": 350,
+    "hp": 170,
+    "hp_basis": "net",
+    "rpo": "L34",
+    "name": "Rocket 350 V8 4-bbl",
+    "trims": [
+     "Cutlass S",
+     "Cutlass Supreme",
+     "Cutlass Salon",
+     "442"
+    ],
+    "442_only": false,
+    "nhra": true,
+    "sources": [
+     {
+      "name": "Oldsmobile 1977 Mid-Size (Cutlass) brochure (oldcarbrochures.org scan)",
+      "url": "https://www.oldcarbrochures.org/United%20States/Oldsmobile/1977%20Oldsmobile/1977_Oldsmobile_Mid_Size_Brochure/index.html",
+      "says": "Our famous Rocket 350 4-barrel V8 [4-4-2 and Cutlass]"
+     },
+     {
+      "name": "Olds FAQ - 350 CID engine detail",
+      "url": "https://oldsjunction.classicoldsmobile.com/oldsfaq/ofe350.htm",
+      "says": "L34 350 4-bbl ... produced 170-190 hp (Wikipedia V8 article agrees, 1976 Cutlass S onward)"
+     }
+    ],
+    "status": "confirmed",
+    "note": ""
+   },
+   {
+    "gen": "gen4",
+    "cid": 403,
+    "hp": 185,
+    "hp_basis": "net",
+    "rpo": "L80",
+    "name": "Rocket 403 V8 4-bbl",
+    "trims": [
+     "Cutlass S",
+     "Cutlass Supreme",
+     "Cutlass Salon",
+     "442"
+    ],
+    "442_only": false,
+    "nhra": true,
+    "sources": [
+     {
+      "name": "Oldsmobile 1977 Mid-Size (Cutlass) brochure (oldcarbrochures.org scan)",
+      "url": "https://www.oldcarbrochures.org/United%20States/Oldsmobile/1977%20Oldsmobile/1977_Oldsmobile_Mid_Size_Brochure/index.html",
+      "says": "our new Rocket 403 4-barrel V8 with Turbo Hydra-matic"
+     },
+     {
+      "name": "Wikipedia - Oldsmobile V8 engine",
+      "url": "https://en.wikipedia.org/wiki/Oldsmobile_V8_engine",
+      "says": "403 replaced the 455 in 1977; output 185 hp and 320 lb-ft; 1977 Oldsmobile Cutlass"
+     },
+     {
+      "name": "Olds FAQ - 403 CID engine detail",
+      "url": "https://oldsjunction.classicoldsmobile.com/oldsfaq/ofe403.htm",
+      "says": "Stock specs on a 1977-79 403 are: 185hp@3600 RPM, 320ft/lbs torque @2200"
+     }
+    ],
+    "status": "confirmed",
+    "note": "The Olds FAQ summary table gives 175 hp for the 403, but its 403 detail page gives 185."
+   }
+  ]
+ },
+ "source_index": [
+  {
+   "name": "Oldsmobile 1961 Full Line Brochure (oldcarbrochures.org scan)",
+   "url": "https://www.oldcarbrochures.org/United%20States/Oldsmobile/1961%20Oldsmobile/1961_Oldsmobile_Full_Line_Brochure/index.html",
+   "type": "manufacturer"
+  },
+  {
+   "name": "Wikipedia - Oldsmobile Cutlass",
+   "url": "https://en.wikipedia.org/wiki/Oldsmobile_Cutlass",
+   "type": "wikipedia"
+  },
+  {
+   "name": "Olds FAQ - Cutlass / F-85",
+   "url": "https://oldsjunction.classicoldsmobile.com/oldsfaq/ofctl.htm",
+   "type": "registry"
+  },
+  {
+   "name": "Oldsmobile 1961 F-85 Cutlass Foldout (oldcarbrochures.org scan)",
+   "url": "https://www.oldcarbrochures.org/United%20States/Oldsmobile/1961%20Oldsmobile/1961%20Oldsmobile%20F-85%20Cutlass%20Foldout/index.html",
+   "type": "manufacturer"
+  },
+  {
+   "name": "Oldsmobile 1962 F-85 Brochure (oldcarbrochures.org scan)",
+   "url": "https://www.oldcarbrochures.org/United%20States/Oldsmobile/1962%20Oldsmobile/1962%20Oldsmobile%20F-85%20Brochure/index.html",
+   "type": "manufacturer"
+  },
+  {
+   "name": "Oldsmobile 1962 Jetfire Folder (oldcarbrochures.org scan)",
+   "url": "https://www.oldcarbrochures.org/United%20States/Oldsmobile/1962%20Oldsmobile/1962_Oldsmobile_Jetfire_Folder/index.html",
+   "type": "manufacturer"
+  },
+  {
+   "name": "Olds FAQ - Jetfire",
+   "url": "https://oldsjunction.classicoldsmobile.com/oldsfaq/ofjet.htm",
+   "type": "registry"
+  },
+  {
+   "name": "Oldsmobile 1963 Brochure / 1963 Sports Cars brochure (oldcarbrochures.org scans)",
+   "url": "https://www.oldcarbrochures.org/United%20States/Oldsmobile/1963_Oldsmobile/1963_Oldsmobile_Brochure-02/index.html",
+   "type": "manufacturer"
+  },
+  {
+   "name": "Oldsmobile 1964 Prestige Brochure, Foldout and Sports Cars brochure (oldcarbrochures.org scans)",
+   "url": "https://www.oldcarbrochures.org/United%20States/Oldsmobile/1964%20Oldsmobile/1964_Oldsmobile_Prestige_Brochure/index.html",
+   "type": "manufacturer"
+  },
+  {
+   "name": "Wikipedia - Oldsmobile Cutlass / Buick V6 engine",
+   "url": "https://en.wikipedia.org/wiki/Buick_V6_engine",
+   "type": "wikipedia"
+  },
+  {
+   "name": "Olds FAQ - Engines, Engine Performance table",
+   "url": "https://oldsjunction.classicoldsmobile.com/oldsfaq/ofeng.htm",
+   "type": "registry"
+  },
+  {
+   "name": "Oldsmobile 1964 Salesmen's Specs (second revision) and No. 8 '4-4-2' salesman information sheet (oldcarbrochures.org scans)",
+   "url": "https://www.oldcarbrochures.org/United%20States/Oldsmobile/1964%20Oldsmobile/1964-Oldsmobile-Salesmens-Specs/index.html",
+   "type": "manufacturer"
+  },
+  {
+   "name": "Olds FAQ (Oldsmobile Mail List community reference) - The 442's",
+   "url": "https://oldsjunction.classicoldsmobile.com/oldsfaq/of442.htm",
+   "type": "registry"
+  },
+  {
+   "name": "Wikipedia - Oldsmobile 442",
+   "url": "https://en.wikipedia.org/wiki/Oldsmobile_442",
+   "type": "wikipedia"
+  },
+  {
+   "name": "Oldsmobile 1965 Dealer SPECS book, Engines-Axles-Tires page (oldcarbrochures.org scan)",
+   "url": "https://www.oldcarbrochures.org/United%20States/Oldsmobile/1965%20Oldsmobile/1965-Oldsmobile-Dealer-SPECS/index.html",
+   "type": "manufacturer"
+  },
+  {
+   "name": "Oldsmobile 1966 Dealer SPECS book, Specifications...All Models (oldcarbrochures.org scan)",
+   "url": "https://www.oldcarbrochures.org/United%20States/Oldsmobile/1966%20Oldsmobile/1966-Oldsmobile-Dealer-SPECS/index.html",
+   "type": "manufacturer"
+  },
+  {
+   "name": "Oldsmobile 1966 4-4-2 Brochure (oldcarbrochures.org scan)",
+   "url": "https://www.oldcarbrochures.org/United%20States/Oldsmobile/1966%20Oldsmobile/1966-Oldsmobile-442-Brochure/index.html",
+   "type": "manufacturer"
+  },
+  {
+   "name": "Oldsmobile 1967 SPECS book, Specifications...All Models p.15 (oldcarbrochures.org scan)",
+   "url": "https://www.oldcarbrochures.org/United%20States/Oldsmobile/1967%20Oldsmobile/1967-Oldsmobile-SPECS/index.html",
+   "type": "manufacturer"
+  },
+  {
+   "name": "Wikipedia - Oldsmobile V8 engine",
+   "url": "https://en.wikipedia.org/wiki/Oldsmobile_V8_engine",
+   "type": "wikipedia"
+  },
+  {
+   "name": "Oldsmobile 1967 4-4-2 brochure (oldcarbrochures.org scan)",
+   "url": "https://www.oldcarbrochures.org/United%20States/Oldsmobile/1967%20Oldsmobile/1967%20Oldsmobile%204-4-2/index.html",
+   "type": "manufacturer"
+  },
+  {
+   "name": "Oldsmobile 1968 Salesmen's Prices/Equipment/Specifications (rev. Jan 1968), Specifications...General, Engines (oldcarbrochures.org scan)",
+   "url": "https://www.oldcarbrochures.org/United%20States/Oldsmobile/1968_Oldsmobile/1968-Oldsmobile-Salemens-Specs/index.html",
+   "type": "manufacturer"
+  },
+  {
+   "name": "Olds FAQ - W Machines",
+   "url": "https://oldsjunction.classicoldsmobile.com/oldsfaq/ofwmc.htm",
+   "type": "registry"
+  },
+  {
+   "name": "Hurst-Olds 1968 folder (oldcarbrochures.org scan)",
+   "url": "https://www.oldcarbrochures.org/United%20States/Oldsmobile/1968_Oldsmobile/1968%20Oldsmobile%20Hurst%20Olds%20Folder/index.html",
+   "type": "manufacturer"
+  },
+  {
+   "name": "Olds FAQ - Hurst/Olds",
+   "url": "https://oldsjunction.classicoldsmobile.com/oldsfaq/ofhos.htm",
+   "type": "registry"
+  },
+  {
+   "name": "Oldsmobile 1969 Dealer SPECS book, Specifications...Engines (oldcarbrochures.org scan)",
+   "url": "https://www.oldcarbrochures.org/United%20States/Oldsmobile/1969%20Oldsmobile/1969-OLdsmobile-Dealer-SPECS/index.html",
+   "type": "manufacturer"
+  },
+  {
+   "name": "Oldsmobile 1969 'Dr. Oldsmobile's W-Machines' foldout (oldcarbrochures.org scan)",
+   "url": "https://www.oldcarbrochures.org/United%20States/Oldsmobile/1969%20Oldsmobile/1969-Oldsmobile-W-Machines-List-Foldout/index.html",
+   "type": "manufacturer"
+  },
+  {
+   "name": "Hurst/Olds 1969 folder (oldcarbrochures.org scan)",
+   "url": "https://www.oldcarbrochures.org/United%20States/Oldsmobile/1969%20Oldsmobile/1969%20Oldsmobile%20Hurst%20Olds%20Folder/index.html",
+   "type": "manufacturer"
+  },
+  {
+   "name": "Oldsmobile 1970 Power Teams booklet, 1970 Oldsmobile Engine Specifications (oldcarbrochures.org scan)",
+   "url": "https://www.oldcarbrochures.org/United%20States/Oldsmobile/1970%20Oldsmobile/1970-Oldsmobile-Power-Teams/index.html",
+   "type": "manufacturer"
+  },
+  {
+   "name": "Oldsmobile 1971 Dealer SPECS book, Specifications p.36 (gross and SAE net) (oldcarbrochures.org scan)",
+   "url": "https://www.oldcarbrochures.org/United%20States/Oldsmobile/1971%20Oldsmobile/1971-Oldsmobile-Dealer-SPECS/index.html",
+   "type": "manufacturer"
+  },
+  {
+   "name": "Oldsmobile 1972 Dealer SPECS book, Engine Specifications & Availabilities (oldcarbrochures.org scan)",
+   "url": "https://www.oldcarbrochures.org/United%20States/Oldsmobile/1972-Oldsmobile/1972-Oldsmobile-Dealer-SPECS-/index.html",
+   "type": "manufacturer"
+  },
+  {
+   "name": "Oldsmobile 1973 Salesmen's SPECS book, Engine Specification & Availabilities (oldcarbrochures.org scan)",
+   "url": "https://www.oldcarbrochures.org/United%20States/Oldsmobile/1973_Oldsmobile/1973-Oldsmobile-Dealer-SPECS/index.html",
+   "type": "manufacturer"
+  },
+  {
+   "name": "Hurst/Olds 1973 folder (oldcarbrochures.org scan)",
+   "url": "https://www.oldcarbrochures.org/United%20States/Oldsmobile/1973_Oldsmobile/1973_Oldsmobile_Hurst_Olds_Folder/index.html",
+   "type": "manufacturer"
+  },
+  {
+   "name": "Oldsmobile 1975 Full Line brochure, Cutlass specifications & available equipment (oldcarbrochures.org scan)",
+   "url": "https://www.oldcarbrochures.org/United%20States/Oldsmobile/1975%20Oldsmobile/1975-Oldsmobile-Full-Line/index.html",
+   "type": "manufacturer"
+  },
+  {
+   "name": "Oldsmobile 1976 Mid-size and Compact brochure (oldcarbrochures.org scan)",
+   "url": "https://www.oldcarbrochures.org/United%20States/Oldsmobile/1976_Oldsmobile/1976_Oldsmobile_Mid-size_and_Compact_Brochure/index.html",
+   "type": "manufacturer"
+  },
+  {
+   "name": "Oldsmobile 1977 Mid-Size (Cutlass) brochure (oldcarbrochures.org scan)",
+   "url": "https://www.oldcarbrochures.org/United%20States/Oldsmobile/1977%20Oldsmobile/1977_Oldsmobile_Mid_Size_Brochure/index.html",
+   "type": "manufacturer"
+  },
+  {
+   "name": "Olds FAQ - 350 CID engine detail",
+   "url": "https://oldsjunction.classicoldsmobile.com/oldsfaq/ofe350.htm",
+   "type": "registry"
+  },
+  {
+   "name": "Olds FAQ - 403 CID engine detail",
+   "url": "https://oldsjunction.classicoldsmobile.com/oldsfaq/ofe403.htm",
+   "type": "registry"
+  },
+  {
+   "name": "GM Heritage Center 1975 / 1976 Chevrolet Chevelle Vehicle Information Kits (L22 250 six rating)",
+   "url": "https://www.gm.com/content/dam/company/no_search/heritage-archive-docs/vehicle-information-kits/chevrolet/1975-Chevrolet-Chevelle.pdf",
+   "type": "manufacturer"
+  }
+ ]
+}

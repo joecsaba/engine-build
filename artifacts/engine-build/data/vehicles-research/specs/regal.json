@@ -1,0 +1,78 @@
+{
+ "make": "Buick",
+ "model": "Regal",
+ "makeSlug": "buick",
+ "slug": "regal",
+ "title": "Buick Regal Engines by Year (1973–2020)",
+ "description": "Every factory engine in the Buick Regal by year, 1973–2020: the 3.8 turbo V6 of the Grand National and GNX, Buick and Olds V8s, the supercharged GS and 2.0T.",
+ "intro": [
+  "Buick sold the Regal as a mid-size rear-drive car from 1973 to 1987, as a front-drive car from 1988 to 2004, and as a European-developed sedan and wagon from 2011 to 2020. Its best-known engine is the turbocharged 3.8 V6 of the Grand National and GNX.",
+  "Pick a year to see every engine offered that model year, with its code, rated horsepower and the trims it came in. Each engine links to its full specs."
+ ],
+ "generations": [
+  {
+   "key": "1973-1977",
+   "name": "1973–1977",
+   "years": [
+    1973,
+    1977
+   ],
+   "intro": [
+    "The first Regal used Buick's 350 and 455 V8s and, from 1975, the 231 V6."
+   ]
+  },
+  {
+   "key": "1978-1987",
+   "name": "1978–1987",
+   "years": [
+    1978,
+    1987
+   ],
+   "intro": [
+    "The downsized Regal introduced Buick's turbocharged 3.8 V6 in 1978. It gained sequential fuel injection in 1984 and an intercooler in 1986, reaching 245 hp in the 1987 Grand National and 276 hp in the GNX, which ASC/McLaren finished for Buick."
+   ]
+  },
+  {
+   "key": "1988-2004",
+   "name": "1988–2004",
+   "years": [
+    1988,
+    2004
+   ],
+   "intro": [
+    "The front-drive Regal used the 2.8 and 3.1 V6s and the 3800, supercharged in the GS from 1997."
+   ]
+  },
+  {
+   "key": "2011-2020",
+   "name": "2011–2020",
+   "years": [
+    2011,
+    2020
+   ],
+   "intro": [
+    "The last Regals used 2.4 and turbocharged 2.0 fours and, in the 2018–2020 GS, a 3.6 V6."
+   ]
+  }
+ ],
+ "files": [
+  "verify_regal.json"
+ ],
+ "include": [
+  "1979|305|155"
+ ],
+ "ranges": {
+  "1999|231|200": [
+   195,
+   200
+  ]
+ },
+ "trim_notes": {
+  "GNX": "Finished by ASC/McLaren for Buick."
+ },
+ "code_notes": {
+  "LF9": "Oldsmobile-built diesel.",
+  "LT7": "Oldsmobile-built V6 diesel."
+ },
+ "draft": true
+}

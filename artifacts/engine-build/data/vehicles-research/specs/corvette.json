@@ -1,0 +1,123 @@
+{
+ "make": "Chevrolet",
+ "model": "Corvette",
+ "makeSlug": "chevrolet",
+ "slug": "corvette",
+ "title": "Chevrolet Corvette Engines by Year (1953–2026)",
+ "description": "Every factory engine in the Chevrolet Corvette by year, 1953–2026: the Blue Flame six, fuelie small blocks, 427 big blocks, LT1, LS and LT V8s.",
+ "intro": [
+  "The Corvette has been built in eight generations since 1953. It started with an inline six and has carried a V8 since 1955: fuel-injected small blocks, big-block 427s and 454s, the LT1 and LS families, and today's mid-engine LT2, LT6 and twin-turbo LT7.",
+  "Pick a year to see every engine offered that model year, with its code, rated horsepower and the trims it came in. Each engine links to its full specs."
+ ],
+ "generations": [
+  {
+   "key": "c1",
+   "name": "C1",
+   "years": [
+    1953,
+    1962
+   ],
+   "intro": [
+    "The first Corvettes used the Blue Flame inline six. The 265 V8 arrived in 1955, and from 1957 the 283 could be ordered with Ramjet mechanical fuel injection, rated at one horsepower per cubic inch in its top form."
+   ]
+  },
+  {
+   "key": "c2",
+   "name": "C2 Sting Ray",
+   "years": [
+    1963,
+    1967
+   ],
+   "intro": [
+    "The Sting Ray offered the 327 in several ratings, including the fuel-injected L84 through 1965, the 396 big block for 1965, and from 1966 the 427, which reached 435 hp with three two-barrel carburetors."
+   ]
+  },
+  {
+   "key": "c3",
+   "name": "C3",
+   "years": [
+    1968,
+    1982
+   ],
+   "intro": [
+    "The C3 carried big blocks through 1974: the 427 until 1969 and the 454 from 1970. Ratings are SAE net from 1972. The 1980 California car used a 305, and the 1982 model introduced Cross-Fire Injection."
+   ]
+  },
+  {
+   "key": "c4",
+   "name": "C4",
+   "years": [
+    1984,
+    1996
+   ],
+   "intro": [
+    "There was no 1983 production Corvette. The C4 used Cross-Fire Injection for 1984, Tuned Port Injection from 1985 and the second-generation LT1 from 1992. The ZR-1's four-cam LT5, built by Mercury Marine, ran from 1990 to 1995, and the 1996 Grand Sport used the 330 hp LT4."
+   ]
+  },
+  {
+   "key": "c5",
+   "name": "C5",
+   "years": [
+    1997,
+    2004
+   ],
+   "intro": [
+    "The C5 introduced the aluminum LS1. The Z06 used the higher-output LS6 from 2001."
+   ]
+  },
+  {
+   "key": "c6",
+   "name": "C6",
+   "years": [
+    2005,
+    2013
+   ],
+   "intro": [
+    "The C6 started with the 6.0L LS2, switched to the 6.2L LS3 in 2008, and added the 7.0L LS7 in the Z06 and the supercharged LS9 in the 2009–2013 ZR1."
+   ]
+  },
+  {
+   "key": "c7",
+   "name": "C7",
+   "years": [
+    2014,
+    2019
+   ],
+   "intro": [
+    "The C7 used the direct-injected LT1, the supercharged LT4 in the Z06 from 2015, and the 755 hp supercharged LT5 in the 2019 ZR1."
+   ]
+  },
+  {
+   "key": "c8",
+   "name": "C8",
+   "years": [
+    2020,
+    2026
+   ],
+   "intro": [
+    "The mid-engine C8 uses the LT2. The Z06 adds the flat-plane-crank LT6, the E-Ray pairs the LT2 with an electric front axle, and the ZR1 and ZR1X use the twin-turbocharged LT7."
+   ]
+  }
+ ],
+ "files": [
+  "verify_corvette-1953-1982.json",
+  "verify_corvette-1984-2026.json"
+ ],
+ "notes": {
+  "1957|283|283": "Ramjet fuel injection.",
+  "1957|283|250": "Ramjet fuel injection.",
+  "1960|283|275": "Ramjet fuel injection. Also published as 250 hp.",
+  "1960|283|315": "Ramjet fuel injection. Also published as 290 hp.",
+  "2019|376|755": "Supercharged. ZR1 only."
+ },
+ "trim_notes": {
+  "E-Ray": "E-Ray adds a 160 hp electric motor driving the front wheels; 655 hp combined.",
+  "ZR1X": "ZR1X adds a front electric motor; 1,250 hp combined."
+ },
+ "code_notes": {
+  "LT5": "Four-cam, 32-valve. ZR-1 only.",
+  "L88": "Rated 430 hp; built for racing.",
+  "ZL1": "All-aluminum 427."
+ },
+ "draft": true
+}

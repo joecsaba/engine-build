@@ -1,0 +1,4199 @@
+{
+ "vehicle": "chevrolet-corvette-1953-1982",
+ "job": "corvette-1953-1982",
+ "years": {
+  "1953": [
+   {
+    "gen": "c1",
+    "cid": 235,
+    "hp": 150,
+    "hp_basis": "gross",
+    "rpo": "std",
+    "name": "Blue Flame Six",
+    "trims": [
+     "base"
+    ],
+    "nhra": false,
+    "sources": [
+     {
+      "name": "GM Heritage Center 1953 Corvette Vehicle Information Kit",
+      "url": "https://www.gm.com/content/dam/company/no_search/heritage-archive-docs/vehicle-information-kits/chevrolet/1953-Chevrolet-Corvette.pdf",
+      "says": "AMA Consolidated Specification Questionnaire (Nov 1953): Corvette, in-line 6, 235.5 cu in, advertised max brake hp 150 @ 4200"
+     },
+     {
+      "name": "Wikipedia (Corvette C1 / Chevrolet engine articles)",
+      "url": "https://en.wikipedia.org/wiki/Chevrolet_Corvette_(C1)",
+      "says": "Blue Flame 235 inline six, output 150 hp; engine table 1953-1954 150 hp"
+     },
+     {
+      "name": "CorvSport - 1953 Corvette Performance & Specifications",
+      "url": "https://www.corvsport.com/1953-corvette-specifications/",
+      "says": "235 cubic inch, 150 horsepower; 150 HP @ 4200 RPM"
+     },
+     {
+      "name": "Corvette Action Center - 1953 Corvette specifications",
+      "url": "https://www.corvetteactioncenter.com/specs/c1/1953/53specs.html",
+      "says": "235.5 ci, 150 bhp @ 4200 rpm, 3x1-bbl, 8.0:1"
+     }
+    ],
+    "status": "three_sources_not_nhra",
+    "note": "NHRA guide data start in 1955. Three Carter side-draft carbs; Powerglide only."
+   }
+  ],
+  "1954": [
+   {
+    "gen": "c1",
+    "cid": 235,
+    "hp": 150,
+    "hp_basis": "gross",
+    "rpo": "std",
+    "name": "Blue Flame Six",
+    "trims": [
+     "base"
+    ],
+    "nhra": false,
+    "sources": [
+     {
+      "name": "GM Heritage Center 1954 Corvette Vehicle Information Kit",
+      "url": "https://www.gm.com/content/dam/company/no_search/heritage-archive-docs/vehicle-information-kits/chevrolet/1954-Chevrolet-Corvette.pdf",
+      "says": "kit's Corvette Black Book reprint pages: suffix YG 235ci, 150hp, 155hp; 'engines used in all 1954 Corvettes had a power rating of either 150hp or 155hp' (camshaft change during production)"
+     },
+     {
+      "name": "Wikipedia (Corvette C1 / Chevrolet engine articles)",
+      "url": "https://en.wikipedia.org/wiki/Chevrolet_Corvette_(C1)",
+      "says": "engine table: 235 Blue Flame I6, 1953-1954, 150 hp"
+     },
+     {
+      "name": "CorvSport - 1954 Corvette Performance & Specifications",
+      "url": "https://www.corvsport.com/1954-corvette-specifications/",
+      "says": "235 cubic inch, 150 horsepower, 155 horsepower; 150/155 HP @ 4200 RPM"
+     },
+     {
+      "name": "Corvette Action Center - 1954 Corvette specifications",
+      "url": "https://www.corvetteactioncenter.com/specs/c1/1954/54specs.html",
+      "says": "235.5 ci six, 150 bhp @ 4200 rpm"
+     }
+    ],
+    "status": "three_sources_not_nhra",
+    "note": "Late-1954 engines with a revised camshaft are rated 155 hp (GM kit Black Book pages, CorvSport); Wikipedia and CAC give 150 only. Paxton supercharger was a dealer-installed accessory (Wikipedia only; not recorded as an engine)."
+   }
+  ],
+  "1955": [
+   {
+    "gen": "c1",
+    "cid": 235,
+    "hp": 155,
+    "hp_basis": "gross",
+    "rpo": "std six",
+    "name": "Blue Flame Six",
+    "trims": [
+     "base (six)"
+    ],
+    "nhra": true,
+    "sources": [
+     {
+      "name": "GM Heritage Center 1955 Corvette Vehicle Information Kit",
+      "url": "https://www.gm.com/content/dam/company/no_search/heritage-archive-docs/vehicle-information-kits/chevrolet/1955-Chevrolet-Corvette.pdf",
+      "says": "AMA spec page: Blue Flame six gross horsepower 155 @ 4200 RPM; kit's Corvette Black Book reprint pages: suffix YG 235ci, 155hp (6-cyl); 'A 235ci, 155hp six-cylinder engine... included in the base price'"
+     },
+     {
+      "name": "Wikipedia (Corvette C1 / Chevrolet engine articles)",
+      "url": "https://en.wikipedia.org/wiki/Chevrolet_Corvette_(C1)",
+      "says": "engine table: 235 Blue Flame I6, 1955, 155 hp"
+     },
+     {
+      "name": "CorvSport - 1955 Corvette Performance & Specifications",
+      "url": "https://www.corvsport.com/1955-corvette-specifications/",
+      "says": "suffix YG: 235 cubic inch, 155 horsepower"
+     }
+    ],
+    "status": "confirmed",
+    "note": "Very few 1955 sixes were built (Wikipedia: 'the few 6-cylinder models'). CAC's 1955 page gives the six as 150 bhp (prior-year figure)."
+   },
+   {
+    "gen": "c1",
+    "cid": 265,
+    "hp": 195,
+    "hp_basis": "gross",
+    "rpo": "V8 (option)",
+    "name": "Turbo-Fire 265 V8",
+    "trims": [
+     "V8"
+    ],
+    "nhra": true,
+    "sources": [
+     {
+      "name": "GM Heritage Center 1955 Corvette Vehicle Information Kit",
+      "url": "https://www.gm.com/content/dam/company/no_search/heritage-archive-docs/vehicle-information-kits/chevrolet/1955-Chevrolet-Corvette.pdf",
+      "says": "AMA spec: 265 cu in V8 gross horsepower 195; Black Book pages: suffix FG/GR 265ci, 195hp"
+     },
+     {
+      "name": "Wikipedia (Corvette C1 / Chevrolet engine articles)",
+      "url": "https://en.wikipedia.org/wiki/Chevrolet_Corvette_(C1)",
+      "says": "195 hp 265 small-block V8 became available for the Corvette in 1955"
+     },
+     {
+      "name": "CorvSport - 1955 Corvette Performance & Specifications",
+      "url": "https://www.corvsport.com/1955-corvette-specifications/",
+      "says": "suffix FG, GR: 265 cubic inch, 195 horsepower"
+     },
+     {
+      "name": "Corvette Action Center - 1955 Corvette specifications",
+      "url": "https://www.corvetteactioncenter.com/specs/c1/1955/55specs.html",
+      "says": "2934-8: 265 ci, 195 bhp @ 5000 rpm, Carter 4-bbl"
+     }
+    ],
+    "status": "confirmed",
+    "note": ""
+   }
+  ],
+  "1956": [
+   {
+    "gen": "c1",
+    "cid": 265,
+    "hp": 210,
+    "hp_basis": "gross",
+    "rpo": "std",
+    "name": "Turbo-Fire 265 V8",
+    "trims": [
+     "base"
+    ],
+    "nhra": true,
+    "sources": [
+     {
+      "name": "GM Heritage Center 1956 Corvette Vehicle Information Kit",
+      "url": "https://www.gm.com/content/dam/company/no_search/heritage-archive-docs/vehicle-information-kits/chevrolet/1956-Chevrolet-Corvette.pdf",
+      "says": "AMA spec page and Black Book pages: suffix FK/GV 265ci, 210hp; 'The base 265ci, 210hp engine'"
+     },
+     {
+      "name": "Wikipedia (Corvette C1 / Chevrolet engine articles)",
+      "url": "https://en.wikipedia.org/wiki/Chevrolet_Corvette_(C1)",
+      "says": "1956 power ranged from 210 to 240 hp; engine table 1956 210 hp"
+     },
+     {
+      "name": "CorvSport - 1956 Corvette Performance & Specifications",
+      "url": "https://www.corvsport.com/1956-corvette-specifications/",
+      "says": "suffix FK, GV: 265 cubic inch, 210 horsepower; 210 HP @ 5,600 RPM"
+     },
+     {
+      "name": "Corvette Action Center - 1956 Corvette specifications",
+      "url": "https://www.corvetteactioncenter.com/specs/c1/1956/56specs.html",
+      "says": "base engine 265 ci, 210 bhp"
+     }
+    ],
+    "status": "confirmed",
+    "note": ""
+   },
+   {
+    "gen": "c1",
+    "cid": 265,
+    "hp": 225,
+    "hp_basis": "gross",
+    "rpo": "469",
+    "name": "265 V8 dual four-barrel",
+    "trims": [
+     "option"
+    ],
+    "nhra": true,
+    "sources": [
+     {
+      "name": "GM Heritage Center 1956 Corvette Vehicle Information Kit",
+      "url": "https://www.gm.com/content/dam/company/no_search/heritage-archive-docs/vehicle-information-kits/chevrolet/1956-Chevrolet-Corvette.pdf",
+      "says": "options list: RPO 469 265ci, 225hp Engine (2x4 carburetors), qty 3,080; spec page 225 @ 5200 with two 4-barrel carburetors"
+     },
+     {
+      "name": "Wikipedia (Corvette C1 / Chevrolet engine articles)",
+      "url": "https://en.wikipedia.org/wiki/Chevrolet_small-block_engine_(1954%E2%80%932003)",
+      "says": "small-block article: 1956 Corvette offered 210 hp single 4-bbl, 225 hp twin 4-barrels, 240 hp with high-lift cam"
+     },
+     {
+      "name": "CorvSport - 1956 Corvette Performance & Specifications",
+      "url": "https://www.corvsport.com/1956-corvette-specifications/",
+      "says": "suffix FG, GR: 265 cubic inch, 225 horsepower"
+     },
+     {
+      "name": "Corvette Action Center - 1956 Corvette specifications",
+      "url": "https://www.corvetteactioncenter.com/specs/c1/1956/56specs.html",
+      "says": "RPO 469: 265 ci, 225 bhp, 2x4 bbl"
+     }
+    ],
+    "status": "confirmed",
+    "note": ""
+   },
+   {
+    "gen": "c1",
+    "cid": 265,
+    "hp": 240,
+    "hp_basis": "gross",
+    "rpo": "469 + 449",
+    "name": "265 V8 dual four-barrel, special high-lift cam",
+    "trims": [
+     "option (racing)"
+    ],
+    "nhra": false,
+    "sources": [
+     {
+      "name": "GM Heritage Center 1956 Corvette Vehicle Information Kit",
+      "url": "https://www.gm.com/content/dam/company/no_search/heritage-archive-docs/vehicle-information-kits/chevrolet/1956-Chevrolet-Corvette.pdf",
+      "says": "Black Book pages: suffix GU 265ci, 240hp, mt; 'RPO 449 (Special High-Lift Camshaft) was available only when combined with RPO 469... Chevrolet... generally did not specify a horsepower rating. The accepted, though unofficial, power output of RPO 449 is 240hp' (qty 111)"
+     },
+     {
+      "name": "Wikipedia (Corvette C1 / Chevrolet engine articles)",
+      "url": "https://en.wikipedia.org/wiki/Chevrolet_Corvette_(C1)",
+      "says": "high-performance camshaft available as RPO 449 with the 240 hp engine; engine table 1956 240 hp"
+     },
+     {
+      "name": "CorvSport - 1956 Corvette Performance & Specifications",
+      "url": "https://www.corvsport.com/1956-corvette-specifications/",
+      "says": "suffix GU: 265 cubic inch, 240 horsepower, manual transmission"
+     }
+    ],
+    "status": "three_sources_not_nhra",
+    "note": "240 hp is an accepted but unofficial figure; Chevrolet sold RPO 449 'for racing purposes only'. NHRA lists only 210 and 225 for 1956."
+   }
+  ],
+  "1957": [
+   {
+    "gen": "c1",
+    "cid": 283,
+    "hp": 220,
+    "hp_basis": "gross",
+    "rpo": "std",
+    "name": "283 V8 4-bbl",
+    "trims": [
+     "base"
+    ],
+    "nhra": true,
+    "sources": [
+     {
+      "name": "GM Heritage Center 1957 Corvette Vehicle Information Kit",
+      "url": "https://www.gm.com/content/dam/company/no_search/heritage-archive-docs/vehicle-information-kits/chevrolet/1957-Chevrolet-Corvette.pdf",
+      "says": "AMA spec 'Advertised maximum engine performance' table (OCR): 4-bbl 220, dual 4-bbl 245, dual 4-bbl w/ competition cam 270, fuel injection 250, FI w/ competition cam 283 @ 6200 - this row 220"
+     },
+     {
+      "name": "Wikipedia (Corvette C1 / Chevrolet engine articles)",
+      "url": "https://en.wikipedia.org/wiki/Chevrolet_Corvette_(C1)",
+      "says": "engine table 1957 283 220 hp"
+     },
+     {
+      "name": "CorvSport - 1957 Corvette Performance & Specifications",
+      "url": "https://www.corvsport.com/1957-corvette-specifications/",
+      "says": "suffix EF, FH: 283 cubic inch, 220 HP"
+     },
+     {
+      "name": "Corvette Action Center - 1957 Corvette specifications",
+      "url": "https://www.corvetteactioncenter.com/specs/c1/1957/57specs.html",
+      "says": "base 283 ci, 220 bhp @ 4600 rpm, 4-bbl"
+     }
+    ],
+    "status": "confirmed",
+    "note": ""
+   },
+   {
+    "gen": "c1",
+    "cid": 283,
+    "hp": 245,
+    "hp_basis": "gross",
+    "rpo": "469A",
+    "name": "283 V8 dual 4-bbl",
+    "trims": [
+     "option"
+    ],
+    "nhra": true,
+    "sources": [
+     {
+      "name": "GM Heritage Center 1957 Corvette Vehicle Information Kit",
+      "url": "https://www.gm.com/content/dam/company/no_search/heritage-archive-docs/vehicle-information-kits/chevrolet/1957-Chevrolet-Corvette.pdf",
+      "says": "AMA spec 'Advertised maximum engine performance' table (OCR): 4-bbl 220, dual 4-bbl 245, dual 4-bbl w/ competition cam 270, fuel injection 250, FI w/ competition cam 283 @ 6200 - this row 245"
+     },
+     {
+      "name": "Wikipedia (Corvette C1 / Chevrolet engine articles)",
+      "url": "https://en.wikipedia.org/wiki/Chevrolet_Corvette_(C1)",
+      "says": "1957-1961 283 245 hp (dual four-barrel)"
+     },
+     {
+      "name": "CorvSport - 1957 Corvette Performance & Specifications",
+      "url": "https://www.corvsport.com/1957-corvette-specifications/",
+      "says": "suffix EH, FG: 283 cubic inch, 245 HP"
+     },
+     {
+      "name": "Corvette Action Center - 1957 Corvette specifications",
+      "url": "https://www.corvetteactioncenter.com/specs/c1/1957/57specs.html",
+      "says": "469A: 283 ci, 245 bhp @ 5000 rpm, 2x4-bbl"
+     }
+    ],
+    "status": "confirmed",
+    "note": ""
+   },
+   {
+    "gen": "c1",
+    "cid": 283,
+    "hp": 270,
+    "hp_basis": "gross",
+    "rpo": "469C",
+    "name": "283 V8 dual 4-bbl, special cam",
+    "trims": [
+     "option"
+    ],
+    "nhra": true,
+    "sources": [
+     {
+      "name": "GM Heritage Center 1957 Corvette Vehicle Information Kit",
+      "url": "https://www.gm.com/content/dam/company/no_search/heritage-archive-docs/vehicle-information-kits/chevrolet/1957-Chevrolet-Corvette.pdf",
+      "says": "AMA spec 'Advertised maximum engine performance' table (OCR): 4-bbl 220, dual 4-bbl 245, dual 4-bbl w/ competition cam 270, fuel injection 250, FI w/ competition cam 283 @ 6200 - this row 270"
+     },
+     {
+      "name": "Wikipedia (Corvette C1 / Chevrolet engine articles)",
+      "url": "https://en.wikipedia.org/wiki/Chevrolet_Corvette_(C1)",
+      "says": "1957-1961 283 270 hp (dual four-barrel)"
+     },
+     {
+      "name": "CorvSport - 1957 Corvette Performance & Specifications",
+      "url": "https://www.corvsport.com/1957-corvette-specifications/",
+      "says": "suffix EG: 283 cubic inch, 270 HP"
+     },
+     {
+      "name": "Corvette Action Center - 1957 Corvette specifications",
+      "url": "https://www.corvetteactioncenter.com/specs/c1/1957/57specs.html",
+      "says": "469C: 283 ci, 270 bhp @ 6000 rpm, 2x4-bbl"
+     }
+    ],
+    "status": "confirmed",
+    "note": ""
+   },
+   {
+    "gen": "c1",
+    "cid": 283,
+    "hp": 250,
+    "hp_basis": "gross",
+    "rpo": "579A / 579C",
+    "name": "283 Ramjet fuel injection",
+    "trims": [
+     "option"
+    ],
+    "nhra": true,
+    "sources": [
+     {
+      "name": "GM Heritage Center 1957 Corvette Vehicle Information Kit",
+      "url": "https://www.gm.com/content/dam/company/no_search/heritage-archive-docs/vehicle-information-kits/chevrolet/1957-Chevrolet-Corvette.pdf",
+      "says": "AMA spec 'Advertised maximum engine performance' table (OCR): 4-bbl 220, dual 4-bbl 245, dual 4-bbl w/ competition cam 270, fuel injection 250, FI w/ competition cam 283 @ 6200 - this row 250"
+     },
+     {
+      "name": "Wikipedia (Corvette C1 / Chevrolet engine articles)",
+      "url": "https://en.wikipedia.org/wiki/Chevrolet_Corvette_(C1)",
+      "says": "1957-1959 283 FI 250 hp"
+     },
+     {
+      "name": "CorvSport - 1957 Corvette Performance & Specifications",
+      "url": "https://www.corvsport.com/1957-corvette-specifications/",
+      "says": "suffix EM, FK: 283 cubic inch, 250 HP"
+     },
+     {
+      "name": "Corvette Action Center - 1957 Corvette specifications",
+      "url": "https://www.corvetteactioncenter.com/specs/c1/1957/57specs.html",
+      "says": "579A/579C: 283 ci, 250 bhp @ 5000 rpm, fuel injection"
+     }
+    ],
+    "status": "confirmed",
+    "note": ""
+   },
+   {
+    "gen": "c1",
+    "cid": 283,
+    "hp": 283,
+    "hp_basis": "gross",
+    "rpo": "579B / 579E",
+    "name": "283 Ramjet fuel injection, special cam",
+    "trims": [
+     "option"
+    ],
+    "nhra": true,
+    "sources": [
+     {
+      "name": "GM Heritage Center 1957 Corvette Vehicle Information Kit",
+      "url": "https://www.gm.com/content/dam/company/no_search/heritage-archive-docs/vehicle-information-kits/chevrolet/1957-Chevrolet-Corvette.pdf",
+      "says": "AMA spec 'Advertised maximum engine performance' table (OCR): 4-bbl 220, dual 4-bbl 245, dual 4-bbl w/ competition cam 270, fuel injection 250, FI w/ competition cam 283 @ 6200 - this row 283"
+     },
+     {
+      "name": "Wikipedia (Corvette C1 / Chevrolet engine articles)",
+      "url": "https://en.wikipedia.org/wiki/Chevrolet_Corvette_(C1)",
+      "says": "1957 283 FI 283 hp ('one hp per cubic inch')"
+     },
+     {
+      "name": "CorvSport - 1957 Corvette Performance & Specifications",
+      "url": "https://www.corvsport.com/1957-corvette-specifications/",
+      "says": "suffix EL, EN: 283 cubic inch, 283 HP"
+     },
+     {
+      "name": "Corvette Action Center - 1957 Corvette specifications",
+      "url": "https://www.corvetteactioncenter.com/specs/c1/1957/57specs.html",
+      "says": "579B/579E: 283 ci, 283 bhp @ 6200 rpm, fuel injection, 10.5:1"
+     }
+    ],
+    "status": "confirmed",
+    "note": "Wikipedia's C1 prose cites a '290 hp' FI figure for 1957 (the 1958 rating); its engine table and all other sources give 283 hp for 1957."
+   }
+  ],
+  "1958": [
+   {
+    "gen": "c1",
+    "cid": 283,
+    "hp": 230,
+    "hp_basis": "gross",
+    "rpo": "std",
+    "name": "283 V8 4-bbl",
+    "trims": [
+     "base"
+    ],
+    "nhra": true,
+    "sources": [
+     {
+      "name": "GM Heritage Center 1958 Corvette Vehicle Information Kit",
+      "url": "https://www.gm.com/content/dam/company/no_search/heritage-archive-docs/vehicle-information-kits/chevrolet/1958-Chevrolet-Corvette.pdf",
+      "says": "kit's Corvette Black Book reprint pages: engine suffix/option list shows 283ci, 230hp base engine"
+     },
+     {
+      "name": "Wikipedia (Corvette C1 / Chevrolet engine articles)",
+      "url": "https://en.wikipedia.org/wiki/Chevrolet_Corvette_(C1)",
+      "says": "engine table: 1958-1961 283 230 hp"
+     },
+     {
+      "name": "CorvSport - 1958 Corvette Performance & Specifications",
+      "url": "https://www.corvsport.com/1958-corvette-specifications/",
+      "says": "suffix CQ, DG: 283 cubic inch, 230 HP"
+     },
+     {
+      "name": "Corvette Action Center - 1958 Corvette specifications",
+      "url": "https://www.corvetteactioncenter.com/specs/c1/1958/58specs.html",
+      "says": "base: 283 ci, 230 bhp"
+     }
+    ],
+    "status": "confirmed",
+    "note": ""
+   },
+   {
+    "gen": "c1",
+    "cid": 283,
+    "hp": 245,
+    "hp_basis": "gross",
+    "rpo": "469",
+    "name": "283 V8 dual 4-bbl",
+    "trims": [
+     "option"
+    ],
+    "nhra": true,
+    "sources": [
+     {
+      "name": "GM Heritage Center 1958 Corvette Vehicle Information Kit",
+      "url": "https://www.gm.com/content/dam/company/no_search/heritage-archive-docs/vehicle-information-kits/chevrolet/1958-Chevrolet-Corvette.pdf",
+      "says": "kit's Corvette Black Book reprint pages: engine suffix/option list shows 283ci, 245hp (RPO 469)"
+     },
+     {
+      "name": "Wikipedia (Corvette C1 / Chevrolet engine articles)",
+      "url": "https://en.wikipedia.org/wiki/Chevrolet_Corvette_(C1)",
+      "says": "engine table: 1957-1961 245 hp"
+     },
+     {
+      "name": "CorvSport - 1958 Corvette Performance & Specifications",
+      "url": "https://www.corvsport.com/1958-corvette-specifications/",
+      "says": "suffix CT, DJ: 283 cubic inch, 245 HP"
+     },
+     {
+      "name": "Corvette Action Center - 1958 Corvette specifications",
+      "url": "https://www.corvetteactioncenter.com/specs/c1/1958/58specs.html",
+      "says": "RPO 469: 283 ci, 245 bhp"
+     }
+    ],
+    "status": "confirmed",
+    "note": ""
+   },
+   {
+    "gen": "c1",
+    "cid": 283,
+    "hp": 270,
+    "hp_basis": "gross",
+    "rpo": "469C",
+    "name": "283 V8 dual 4-bbl, special cam",
+    "trims": [
+     "option"
+    ],
+    "nhra": true,
+    "sources": [
+     {
+      "name": "GM Heritage Center 1958 Corvette Vehicle Information Kit",
+      "url": "https://www.gm.com/content/dam/company/no_search/heritage-archive-docs/vehicle-information-kits/chevrolet/1958-Chevrolet-Corvette.pdf",
+      "says": "kit's Corvette Black Book reprint pages: engine suffix/option list shows 283ci, 270hp (RPO 469C)"
+     },
+     {
+      "name": "Wikipedia (Corvette C1 / Chevrolet engine articles)",
+      "url": "https://en.wikipedia.org/wiki/Chevrolet_Corvette_(C1)",
+      "says": "engine table: 1957-1961 270 hp"
+     },
+     {
+      "name": "CorvSport - 1958 Corvette Performance & Specifications",
+      "url": "https://www.corvsport.com/1958-corvette-specifications/",
+      "says": "suffix CU: 283 cubic inch, 270 HP"
+     },
+     {
+      "name": "Corvette Action Center - 1958 Corvette specifications",
+      "url": "https://www.corvetteactioncenter.com/specs/c1/1958/58specs.html",
+      "says": "RPO 469C: 283 ci, 270 bhp"
+     }
+    ],
+    "status": "confirmed",
+    "note": ""
+   },
+   {
+    "gen": "c1",
+    "cid": 283,
+    "hp": 250,
+    "hp_basis": "gross",
+    "rpo": "579",
+    "name": "283 fuel injection",
+    "trims": [
+     "option"
+    ],
+    "nhra": true,
+    "sources": [
+     {
+      "name": "GM Heritage Center 1958 Corvette Vehicle Information Kit",
+      "url": "https://www.gm.com/content/dam/company/no_search/heritage-archive-docs/vehicle-information-kits/chevrolet/1958-Chevrolet-Corvette.pdf",
+      "says": "kit's Corvette Black Book reprint pages: engine suffix/option list shows 283ci, 250hp (RPO 579)"
+     },
+     {
+      "name": "Wikipedia (Corvette C1 / Chevrolet engine articles)",
+      "url": "https://en.wikipedia.org/wiki/Chevrolet_Corvette_(C1)",
+      "says": "engine table: 1957-1959 FI 250 hp"
+     },
+     {
+      "name": "CorvSport - 1958 Corvette Performance & Specifications",
+      "url": "https://www.corvsport.com/1958-corvette-specifications/",
+      "says": "suffix CR, DH: 283 cubic inch, 250 HP"
+     },
+     {
+      "name": "Corvette Action Center - 1958 Corvette specifications",
+      "url": "https://www.corvetteactioncenter.com/specs/c1/1958/58specs.html",
+      "says": "RPO 579: 283 ci, 250 bhp"
+     }
+    ],
+    "status": "confirmed",
+    "note": ""
+   },
+   {
+    "gen": "c1",
+    "cid": 283,
+    "hp": 290,
+    "hp_basis": "gross",
+    "rpo": "579D",
+    "name": "283 fuel injection, special cam",
+    "trims": [
+     "option"
+    ],
+    "nhra": true,
+    "sources": [
+     {
+      "name": "GM Heritage Center 1958 Corvette Vehicle Information Kit",
+      "url": "https://www.gm.com/content/dam/company/no_search/heritage-archive-docs/vehicle-information-kits/chevrolet/1958-Chevrolet-Corvette.pdf",
+      "says": "kit's Corvette Black Book reprint pages: engine suffix/option list shows 283ci, 290hp (RPO 579D)"
+     },
+     {
+      "name": "Wikipedia (Corvette C1 / Chevrolet engine articles)",
+      "url": "https://en.wikipedia.org/wiki/Chevrolet_Corvette_(C1)",
+      "says": "engine table: 1958-1959 FI 290 hp"
+     },
+     {
+      "name": "CorvSport - 1958 Corvette Performance & Specifications",
+      "url": "https://www.corvsport.com/1958-corvette-specifications/",
+      "says": "suffix CS: 283 cubic inch, 290 HP"
+     },
+     {
+      "name": "Corvette Action Center - 1958 Corvette specifications",
+      "url": "https://www.corvetteactioncenter.com/specs/c1/1958/58specs.html",
+      "says": "RPO 579D: 283 ci, 290 bhp"
+     }
+    ],
+    "status": "confirmed",
+    "note": ""
+   }
+  ],
+  "1959": [
+   {
+    "gen": "c1",
+    "cid": 283,
+    "hp": 230,
+    "hp_basis": "gross",
+    "rpo": "std",
+    "name": "283 V8 4-bbl",
+    "trims": [
+     "base"
+    ],
+    "nhra": true,
+    "sources": [
+     {
+      "name": "GM Heritage Center 1959 Corvette Vehicle Information Kit",
+      "url": "https://www.gm.com/content/dam/company/no_search/heritage-archive-docs/vehicle-information-kits/chevrolet/1959-Chevrolet-Corvette.pdf",
+      "says": "kit's Corvette Black Book reprint pages: engine suffix/option list shows 283ci, 230hp base engine"
+     },
+     {
+      "name": "Wikipedia (Corvette C1 / Chevrolet engine articles)",
+      "url": "https://en.wikipedia.org/wiki/Chevrolet_Corvette_(C1)",
+      "says": "engine table: 1958-1961 283 230 hp"
+     },
+     {
+      "name": "CorvSport - 1959 Corvette Performance & Specifications",
+      "url": "https://www.corvsport.com/1959-corvette-specifications/",
+      "says": "suffix CQ, DG: 283 cubic inch, 230 HP"
+     },
+     {
+      "name": "Corvette Action Center - 1959 Corvette specifications",
+      "url": "https://www.corvetteactioncenter.com/specs/c1/1959/59specs.html",
+      "says": "base: 283 ci, 230 bhp"
+     }
+    ],
+    "status": "confirmed",
+    "note": ""
+   },
+   {
+    "gen": "c1",
+    "cid": 283,
+    "hp": 245,
+    "hp_basis": "gross",
+    "rpo": "469",
+    "name": "283 V8 dual 4-bbl",
+    "trims": [
+     "option"
+    ],
+    "nhra": true,
+    "sources": [
+     {
+      "name": "GM Heritage Center 1959 Corvette Vehicle Information Kit",
+      "url": "https://www.gm.com/content/dam/company/no_search/heritage-archive-docs/vehicle-information-kits/chevrolet/1959-Chevrolet-Corvette.pdf",
+      "says": "kit's Corvette Black Book reprint pages: engine suffix/option list shows 283ci, 245hp (RPO 469)"
+     },
+     {
+      "name": "Wikipedia (Corvette C1 / Chevrolet engine articles)",
+      "url": "https://en.wikipedia.org/wiki/Chevrolet_Corvette_(C1)",
+      "says": "engine table: 1957-1961 245 hp"
+     },
+     {
+      "name": "CorvSport - 1959 Corvette Performance & Specifications",
+      "url": "https://www.corvsport.com/1959-corvette-specifications/",
+      "says": "suffix CT, DJ: 283 cubic inch, 245 HP"
+     },
+     {
+      "name": "Corvette Action Center - 1959 Corvette specifications",
+      "url": "https://www.corvetteactioncenter.com/specs/c1/1959/59specs.html",
+      "says": "RPO 469: 283 ci, 245 bhp"
+     }
+    ],
+    "status": "confirmed",
+    "note": ""
+   },
+   {
+    "gen": "c1",
+    "cid": 283,
+    "hp": 270,
+    "hp_basis": "gross",
+    "rpo": "469C",
+    "name": "283 V8 dual 4-bbl, special cam",
+    "trims": [
+     "option"
+    ],
+    "nhra": true,
+    "sources": [
+     {
+      "name": "GM Heritage Center 1959 Corvette Vehicle Information Kit",
+      "url": "https://www.gm.com/content/dam/company/no_search/heritage-archive-docs/vehicle-information-kits/chevrolet/1959-Chevrolet-Corvette.pdf",
+      "says": "kit's Corvette Black Book reprint pages: engine suffix/option list shows 283ci, 270hp (RPO 469C)"
+     },
+     {
+      "name": "Wikipedia (Corvette C1 / Chevrolet engine articles)",
+      "url": "https://en.wikipedia.org/wiki/Chevrolet_Corvette_(C1)",
+      "says": "engine table: 1957-1961 270 hp"
+     },
+     {
+      "name": "CorvSport - 1959 Corvette Performance & Specifications",
+      "url": "https://www.corvsport.com/1959-corvette-specifications/",
+      "says": "suffix CU: 283 cubic inch, 270 HP"
+     },
+     {
+      "name": "Corvette Action Center - 1959 Corvette specifications",
+      "url": "https://www.corvetteactioncenter.com/specs/c1/1959/59specs.html",
+      "says": "RPO 469C: 283 ci, 270 bhp"
+     }
+    ],
+    "status": "confirmed",
+    "note": ""
+   },
+   {
+    "gen": "c1",
+    "cid": 283,
+    "hp": 250,
+    "hp_basis": "gross",
+    "rpo": "579",
+    "name": "283 fuel injection",
+    "trims": [
+     "option"
+    ],
+    "nhra": true,
+    "sources": [
+     {
+      "name": "GM Heritage Center 1959 Corvette Vehicle Information Kit",
+      "url": "https://www.gm.com/content/dam/company/no_search/heritage-archive-docs/vehicle-information-kits/chevrolet/1959-Chevrolet-Corvette.pdf",
+      "says": "kit's Corvette Black Book reprint pages: engine suffix/option list shows 283ci, 250hp (RPO 579)"
+     },
+     {
+      "name": "Wikipedia (Corvette C1 / Chevrolet engine articles)",
+      "url": "https://en.wikipedia.org/wiki/Chevrolet_Corvette_(C1)",
+      "says": "engine table: 1957-1959 FI 250 hp"
+     },
+     {
+      "name": "CorvSport - 1959 Corvette Performance & Specifications",
+      "url": "https://www.corvsport.com/1959-corvette-specifications/",
+      "says": "suffix CR, DH: 283 cubic inch, 250 HP"
+     },
+     {
+      "name": "Corvette Action Center - 1959 Corvette specifications",
+      "url": "https://www.corvetteactioncenter.com/specs/c1/1959/59specs.html",
+      "says": "RPO 579: 283 ci, 250 bhp"
+     }
+    ],
+    "status": "confirmed",
+    "note": ""
+   },
+   {
+    "gen": "c1",
+    "cid": 283,
+    "hp": 290,
+    "hp_basis": "gross",
+    "rpo": "579D",
+    "name": "283 fuel injection, special cam",
+    "trims": [
+     "option"
+    ],
+    "nhra": true,
+    "sources": [
+     {
+      "name": "GM Heritage Center 1959 Corvette Vehicle Information Kit",
+      "url": "https://www.gm.com/content/dam/company/no_search/heritage-archive-docs/vehicle-information-kits/chevrolet/1959-Chevrolet-Corvette.pdf",
+      "says": "kit's Corvette Black Book reprint pages: engine suffix/option list shows 283ci, 290hp (RPO 579D)"
+     },
+     {
+      "name": "Wikipedia (Corvette C1 / Chevrolet engine articles)",
+      "url": "https://en.wikipedia.org/wiki/Chevrolet_Corvette_(C1)",
+      "says": "engine table: 1958-1959 FI 290 hp"
+     },
+     {
+      "name": "CorvSport - 1959 Corvette Performance & Specifications",
+      "url": "https://www.corvsport.com/1959-corvette-specifications/",
+      "says": "suffix CS: 283 cubic inch, 290 HP"
+     },
+     {
+      "name": "Corvette Action Center - 1959 Corvette specifications",
+      "url": "https://www.corvetteactioncenter.com/specs/c1/1959/59specs.html",
+      "says": "RPO 579D: 283 ci, 290 bhp"
+     }
+    ],
+    "status": "confirmed",
+    "note": ""
+   }
+  ],
+  "1960": [
+   {
+    "gen": "c1",
+    "cid": 283,
+    "hp": 230,
+    "hp_basis": "gross",
+    "rpo": "std",
+    "name": "283 V8 4-bbl",
+    "trims": [
+     "base"
+    ],
+    "nhra": true,
+    "sources": [
+     {
+      "name": "GM Heritage Center 1960 Corvette Vehicle Information Kit",
+      "url": "https://www.gm.com/content/dam/company/no_search/heritage-archive-docs/vehicle-information-kits/chevrolet/1960-Chevrolet-Corvette.pdf",
+      "says": "AMA spec: standard 230 @ 4800; Black Book suffix CQ/DG 230hp"
+     },
+     {
+      "name": "Wikipedia (Corvette C1 / Chevrolet engine articles)",
+      "url": "https://en.wikipedia.org/wiki/Chevrolet_Corvette_(C1)",
+      "says": "1958-1961 230 hp"
+     },
+     {
+      "name": "CorvSport - 1960 Corvette Performance & Specifications",
+      "url": "https://www.corvsport.com/1960-corvette-specifications/",
+      "says": "engine suffix list: 283 cubic inch, 230 HP"
+     },
+     {
+      "name": "Corvette Action Center - 1960 Corvette specifications",
+      "url": "https://www.corvetteactioncenter.com/specs/c1/1960/60specs.html",
+      "says": "base 283 ci, 230 bhp"
+     }
+    ],
+    "status": "confirmed",
+    "note": ""
+   },
+   {
+    "gen": "c1",
+    "cid": 283,
+    "hp": 245,
+    "hp_basis": "gross",
+    "rpo": "469",
+    "name": "283 V8 dual 4-bbl",
+    "trims": [
+     "option"
+    ],
+    "nhra": true,
+    "sources": [
+     {
+      "name": "GM Heritage Center 1960 Corvette Vehicle Information Kit",
+      "url": "https://www.gm.com/content/dam/company/no_search/heritage-archive-docs/vehicle-information-kits/chevrolet/1960-Chevrolet-Corvette.pdf",
+      "says": "AMA spec: dual 4-barrel (RPO 469) 245 @ 5000; suffix CT/DJ 245hp"
+     },
+     {
+      "name": "Wikipedia (Corvette C1 / Chevrolet engine articles)",
+      "url": "https://en.wikipedia.org/wiki/Chevrolet_Corvette_(C1)",
+      "says": "1957-1961 245 hp"
+     },
+     {
+      "name": "CorvSport - 1960 Corvette Performance & Specifications",
+      "url": "https://www.corvsport.com/1960-corvette-specifications/",
+      "says": "engine suffix list: 283 cubic inch, 245 HP"
+     },
+     {
+      "name": "Corvette Action Center - 1960 Corvette specifications",
+      "url": "https://www.corvetteactioncenter.com/specs/c1/1960/60specs.html",
+      "says": "RPO 469: 245 bhp"
+     }
+    ],
+    "status": "confirmed",
+    "note": ""
+   },
+   {
+    "gen": "c1",
+    "cid": 283,
+    "hp": 270,
+    "hp_basis": "gross",
+    "rpo": "469C",
+    "name": "283 V8 dual 4-bbl, special cam",
+    "trims": [
+     "option"
+    ],
+    "nhra": true,
+    "sources": [
+     {
+      "name": "GM Heritage Center 1960 Corvette Vehicle Information Kit",
+      "url": "https://www.gm.com/content/dam/company/no_search/heritage-archive-docs/vehicle-information-kits/chevrolet/1960-Chevrolet-Corvette.pdf",
+      "says": "AMA spec: dual 4-barrel special cam 270 @ 6000; suffix CU 270hp"
+     },
+     {
+      "name": "Wikipedia (Corvette C1 / Chevrolet engine articles)",
+      "url": "https://en.wikipedia.org/wiki/Chevrolet_Corvette_(C1)",
+      "says": "1957-1961 270 hp"
+     },
+     {
+      "name": "CorvSport - 1960 Corvette Performance & Specifications",
+      "url": "https://www.corvsport.com/1960-corvette-specifications/",
+      "says": "engine suffix list: 283 cubic inch, 270 HP"
+     },
+     {
+      "name": "Corvette Action Center - 1960 Corvette specifications",
+      "url": "https://www.corvetteactioncenter.com/specs/c1/1960/60specs.html",
+      "says": "RPO 469C: 270 bhp"
+     }
+    ],
+    "status": "confirmed",
+    "note": ""
+   },
+   {
+    "gen": "c1",
+    "cid": 283,
+    "hp": 275,
+    "hp_basis": "gross",
+    "rpo": "579",
+    "name": "283 fuel injection",
+    "trims": [
+     "option"
+    ],
+    "nhra": true,
+    "sources": [
+     {
+      "name": "GM Heritage Center 1960 Corvette Vehicle Information Kit",
+      "url": "https://www.gm.com/content/dam/company/no_search/heritage-archive-docs/vehicle-information-kits/chevrolet/1960-Chevrolet-Corvette.pdf",
+      "says": "AMA spec: Fuel Injection (RPO 579) standard 275 @ 5200"
+     },
+     {
+      "name": "Wikipedia (Corvette C1 / Chevrolet engine articles)",
+      "url": "https://en.wikipedia.org/wiki/Chevrolet_Corvette_(C1)",
+      "says": "1960-1961 FI 275 hp"
+     },
+     {
+      "name": "CorvSport - 1960 Corvette Performance & Specifications",
+      "url": "https://www.corvsport.com/1960-corvette-specifications/",
+      "says": "engine suffix list: 283 cubic inch, 275 HP"
+     }
+    ],
+    "status": "confirmed",
+    "note": "Factory AMA spec sheet in the GM kit gives the 1960 FI engines as 275 and 315 hp (as do NHRA, Wikipedia and CorvSport), but the kit's Corvette Black Book pages list 1960 FI suffixes CR/CS as 250/290 hp and say the 275/315 codes (CY/CZ) were for aluminum-head engines whose retail delivery is unconfirmed; CAC also gives 250/290. Recorded the factory rating."
+   },
+   {
+    "gen": "c1",
+    "cid": 283,
+    "hp": 315,
+    "hp_basis": "gross",
+    "rpo": "579D",
+    "name": "283 fuel injection, special cam",
+    "trims": [
+     "option"
+    ],
+    "nhra": true,
+    "sources": [
+     {
+      "name": "GM Heritage Center 1960 Corvette Vehicle Information Kit",
+      "url": "https://www.gm.com/content/dam/company/no_search/heritage-archive-docs/vehicle-information-kits/chevrolet/1960-Chevrolet-Corvette.pdf",
+      "says": "AMA spec: Fuel Injection (RPO 579) special 315 @ 6200"
+     },
+     {
+      "name": "Wikipedia (Corvette C1 / Chevrolet engine articles)",
+      "url": "https://en.wikipedia.org/wiki/Chevrolet_Corvette_(C1)",
+      "says": "1960-1961 FI 315 hp"
+     },
+     {
+      "name": "CorvSport - 1960 Corvette Performance & Specifications",
+      "url": "https://www.corvsport.com/1960-corvette-specifications/",
+      "says": "engine suffix list: 283 cubic inch, 315 HP"
+     }
+    ],
+    "status": "confirmed",
+    "note": "Factory AMA spec sheet in the GM kit gives the 1960 FI engines as 275 and 315 hp (as do NHRA, Wikipedia and CorvSport), but the kit's Corvette Black Book pages list 1960 FI suffixes CR/CS as 250/290 hp and say the 275/315 codes (CY/CZ) were for aluminum-head engines whose retail delivery is unconfirmed; CAC also gives 250/290. Recorded the factory rating."
+   }
+  ],
+  "1961": [
+   {
+    "gen": "c1",
+    "cid": 283,
+    "hp": 230,
+    "hp_basis": "gross",
+    "rpo": "std",
+    "name": "283 V8 4-bbl",
+    "trims": [
+     "base"
+    ],
+    "nhra": true,
+    "sources": [
+     {
+      "name": "GM Heritage Center 1961 Corvette Vehicle Information Kit",
+      "url": "https://www.gm.com/content/dam/company/no_search/heritage-archive-docs/vehicle-information-kits/chevrolet/1961-Chevrolet-Corvette.pdf",
+      "says": "kit's Corvette Black Book reprint pages: suffix list 283ci, 230hp; options list RPO (base)"
+     },
+     {
+      "name": "Wikipedia (Corvette C1 / Chevrolet engine articles)",
+      "url": "https://en.wikipedia.org/wiki/Chevrolet_Corvette_(C1)",
+      "says": "1958-1961 230 hp"
+     },
+     {
+      "name": "CorvSport - 1961 Corvette Performance & Specifications",
+      "url": "https://www.corvsport.com/1961-corvette-specifications/",
+      "says": "engine suffix list: 283 cubic inch, 230 HP"
+     },
+     {
+      "name": "Corvette Action Center - 1961 Corvette specifications",
+      "url": "https://www.corvetteactioncenter.com/specs/c1/1961/61specs.html",
+      "says": "283 ci, 230 bhp"
+     }
+    ],
+    "status": "confirmed",
+    "note": ""
+   },
+   {
+    "gen": "c1",
+    "cid": 283,
+    "hp": 245,
+    "hp_basis": "gross",
+    "rpo": "469",
+    "name": "283 V8 dual 4-bbl",
+    "trims": [
+     "option"
+    ],
+    "nhra": true,
+    "sources": [
+     {
+      "name": "GM Heritage Center 1961 Corvette Vehicle Information Kit",
+      "url": "https://www.gm.com/content/dam/company/no_search/heritage-archive-docs/vehicle-information-kits/chevrolet/1961-Chevrolet-Corvette.pdf",
+      "says": "kit's Corvette Black Book reprint pages: suffix list 283ci, 245hp; options list RPO 469"
+     },
+     {
+      "name": "Wikipedia (Corvette C1 / Chevrolet engine articles)",
+      "url": "https://en.wikipedia.org/wiki/Chevrolet_Corvette_(C1)",
+      "says": "1957-1961 245 hp"
+     },
+     {
+      "name": "CorvSport - 1961 Corvette Performance & Specifications",
+      "url": "https://www.corvsport.com/1961-corvette-specifications/",
+      "says": "engine suffix list: 283 cubic inch, 245 HP"
+     },
+     {
+      "name": "Corvette Action Center - 1961 Corvette specifications",
+      "url": "https://www.corvetteactioncenter.com/specs/c1/1961/61specs.html",
+      "says": "283 ci, 245 bhp"
+     }
+    ],
+    "status": "confirmed",
+    "note": "CAC swaps the RPO labels (469 = 270, 469C = 245); GM kit options list shows 468 = 270 hp, 469 = 245 hp."
+   },
+   {
+    "gen": "c1",
+    "cid": 283,
+    "hp": 270,
+    "hp_basis": "gross",
+    "rpo": "468",
+    "name": "283 V8 dual 4-bbl, special cam",
+    "trims": [
+     "option"
+    ],
+    "nhra": true,
+    "sources": [
+     {
+      "name": "GM Heritage Center 1961 Corvette Vehicle Information Kit",
+      "url": "https://www.gm.com/content/dam/company/no_search/heritage-archive-docs/vehicle-information-kits/chevrolet/1961-Chevrolet-Corvette.pdf",
+      "says": "kit's Corvette Black Book reprint pages: suffix list 283ci, 270hp; options list RPO 468"
+     },
+     {
+      "name": "Wikipedia (Corvette C1 / Chevrolet engine articles)",
+      "url": "https://en.wikipedia.org/wiki/Chevrolet_Corvette_(C1)",
+      "says": "1957-1961 270 hp"
+     },
+     {
+      "name": "CorvSport - 1961 Corvette Performance & Specifications",
+      "url": "https://www.corvsport.com/1961-corvette-specifications/",
+      "says": "engine suffix list: 283 cubic inch, 270 HP"
+     },
+     {
+      "name": "Corvette Action Center - 1961 Corvette specifications",
+      "url": "https://www.corvetteactioncenter.com/specs/c1/1961/61specs.html",
+      "says": "283 ci, 270 bhp"
+     }
+    ],
+    "status": "confirmed",
+    "note": ""
+   },
+   {
+    "gen": "c1",
+    "cid": 283,
+    "hp": 275,
+    "hp_basis": "gross",
+    "rpo": "353",
+    "name": "283 fuel injection",
+    "trims": [
+     "option"
+    ],
+    "nhra": true,
+    "sources": [
+     {
+      "name": "GM Heritage Center 1961 Corvette Vehicle Information Kit",
+      "url": "https://www.gm.com/content/dam/company/no_search/heritage-archive-docs/vehicle-information-kits/chevrolet/1961-Chevrolet-Corvette.pdf",
+      "says": "kit's Corvette Black Book reprint pages: suffix list 283ci, 275hp; options list RPO 353"
+     },
+     {
+      "name": "Wikipedia (Corvette C1 / Chevrolet engine articles)",
+      "url": "https://en.wikipedia.org/wiki/Chevrolet_Corvette_(C1)",
+      "says": "1960-1961 FI 275 hp"
+     },
+     {
+      "name": "CorvSport - 1961 Corvette Performance & Specifications",
+      "url": "https://www.corvsport.com/1961-corvette-specifications/",
+      "says": "engine suffix list: 283 cubic inch, 275 HP"
+     },
+     {
+      "name": "Corvette Action Center - 1961 Corvette specifications",
+      "url": "https://www.corvetteactioncenter.com/specs/c1/1961/61specs.html",
+      "says": "283 ci, 275 bhp"
+     }
+    ],
+    "status": "confirmed",
+    "note": ""
+   },
+   {
+    "gen": "c1",
+    "cid": 283,
+    "hp": 315,
+    "hp_basis": "gross",
+    "rpo": "354",
+    "name": "283 fuel injection, special cam",
+    "trims": [
+     "option"
+    ],
+    "nhra": true,
+    "sources": [
+     {
+      "name": "GM Heritage Center 1961 Corvette Vehicle Information Kit",
+      "url": "https://www.gm.com/content/dam/company/no_search/heritage-archive-docs/vehicle-information-kits/chevrolet/1961-Chevrolet-Corvette.pdf",
+      "says": "kit's Corvette Black Book reprint pages: suffix list 283ci, 315hp; options list RPO 354"
+     },
+     {
+      "name": "Wikipedia (Corvette C1 / Chevrolet engine articles)",
+      "url": "https://en.wikipedia.org/wiki/Chevrolet_Corvette_(C1)",
+      "says": "1960-1961 FI 315 hp"
+     },
+     {
+      "name": "CorvSport - 1961 Corvette Performance & Specifications",
+      "url": "https://www.corvsport.com/1961-corvette-specifications/",
+      "says": "engine suffix list: 283 cubic inch, 315 HP"
+     },
+     {
+      "name": "Corvette Action Center - 1961 Corvette specifications",
+      "url": "https://www.corvetteactioncenter.com/specs/c1/1961/61specs.html",
+      "says": "283 ci, 315 bhp"
+     }
+    ],
+    "status": "confirmed",
+    "note": ""
+   }
+  ],
+  "1962": [
+   {
+    "gen": "c1",
+    "cid": 327,
+    "hp": 250,
+    "hp_basis": "gross",
+    "rpo": "std",
+    "name": "327 V8 4-bbl",
+    "trims": [
+     "base"
+    ],
+    "nhra": true,
+    "sources": [
+     {
+      "name": "GM Heritage Center 1962 Corvette Vehicle Information Kit",
+      "url": "https://www.gm.com/content/dam/company/no_search/heritage-archive-docs/vehicle-information-kits/chevrolet/1962-Chevrolet-Corvette.pdf",
+      "says": "kit's Corvette Black Book reprint pages: suffix list 327ci, 250hp"
+     },
+     {
+      "name": "Wikipedia (Corvette C1 / Chevrolet engine articles)",
+      "url": "https://en.wikipedia.org/wiki/Chevrolet_Corvette_(C1)",
+      "says": "engine table: 327 small-block 1962 250 hp"
+     },
+     {
+      "name": "CorvSport - 1962 Corvette Performance & Specifications",
+      "url": "https://www.corvsport.com/1962-corvette-specifications/",
+      "says": "suffix list: 327 cubic inch, 250 HP"
+     },
+     {
+      "name": "Corvette Action Center - 1962 Corvette specifications",
+      "url": "https://www.corvetteactioncenter.com/specs/c1/1962/62specs.html",
+      "says": "base: 327 ci, 250 bhp"
+     }
+    ],
+    "status": "confirmed",
+    "note": ""
+   },
+   {
+    "gen": "c1",
+    "cid": 327,
+    "hp": 300,
+    "hp_basis": "gross",
+    "rpo": "583",
+    "name": "327 V8 4-bbl (AFB)",
+    "trims": [
+     "option"
+    ],
+    "nhra": true,
+    "sources": [
+     {
+      "name": "GM Heritage Center 1962 Corvette Vehicle Information Kit",
+      "url": "https://www.gm.com/content/dam/company/no_search/heritage-archive-docs/vehicle-information-kits/chevrolet/1962-Chevrolet-Corvette.pdf",
+      "says": "kit's Corvette Black Book reprint pages: suffix list 327ci, 300hp"
+     },
+     {
+      "name": "Wikipedia (Corvette C1 / Chevrolet engine articles)",
+      "url": "https://en.wikipedia.org/wiki/Chevrolet_Corvette_(C1)",
+      "says": "engine table: 327 small-block 1962 300 hp"
+     },
+     {
+      "name": "CorvSport - 1962 Corvette Performance & Specifications",
+      "url": "https://www.corvsport.com/1962-corvette-specifications/",
+      "says": "suffix list: 327 cubic inch, 300 HP"
+     },
+     {
+      "name": "Corvette Action Center - 1962 Corvette specifications",
+      "url": "https://www.corvetteactioncenter.com/specs/c1/1962/62specs.html",
+      "says": "RPO 583: 327 ci, 300 bhp"
+     }
+    ],
+    "status": "confirmed",
+    "note": ""
+   },
+   {
+    "gen": "c1",
+    "cid": 327,
+    "hp": 340,
+    "hp_basis": "gross",
+    "rpo": "396",
+    "name": "327 V8 solid-lifter",
+    "trims": [
+     "option"
+    ],
+    "nhra": true,
+    "sources": [
+     {
+      "name": "GM Heritage Center 1962 Corvette Vehicle Information Kit",
+      "url": "https://www.gm.com/content/dam/company/no_search/heritage-archive-docs/vehicle-information-kits/chevrolet/1962-Chevrolet-Corvette.pdf",
+      "says": "kit's Corvette Black Book reprint pages: suffix list 327ci, 340hp"
+     },
+     {
+      "name": "Wikipedia (Corvette C1 / Chevrolet engine articles)",
+      "url": "https://en.wikipedia.org/wiki/Chevrolet_Corvette_(C1)",
+      "says": "engine table: 327 small-block 1962 340 hp"
+     },
+     {
+      "name": "CorvSport - 1962 Corvette Performance & Specifications",
+      "url": "https://www.corvsport.com/1962-corvette-specifications/",
+      "says": "suffix list: 327 cubic inch, 340 HP"
+     },
+     {
+      "name": "Corvette Action Center - 1962 Corvette specifications",
+      "url": "https://www.corvetteactioncenter.com/specs/c1/1962/62specs.html",
+      "says": "RPO 396: 327 ci, 340 bhp"
+     }
+    ],
+    "status": "confirmed",
+    "note": ""
+   },
+   {
+    "gen": "c1",
+    "cid": 327,
+    "hp": 360,
+    "hp_basis": "gross",
+    "rpo": "582",
+    "name": "327 fuel injection",
+    "trims": [
+     "option"
+    ],
+    "nhra": true,
+    "sources": [
+     {
+      "name": "GM Heritage Center 1962 Corvette Vehicle Information Kit",
+      "url": "https://www.gm.com/content/dam/company/no_search/heritage-archive-docs/vehicle-information-kits/chevrolet/1962-Chevrolet-Corvette.pdf",
+      "says": "kit's Corvette Black Book reprint pages: suffix list 327ci, 360hp; options list RPO 582"
+     },
+     {
+      "name": "Wikipedia (Corvette C1 / Chevrolet engine articles)",
+      "url": "https://en.wikipedia.org/wiki/Chevrolet_Corvette_(C1)",
+      "says": "engine table: 327 small-block 1962 360 hp"
+     },
+     {
+      "name": "CorvSport - 1962 Corvette Performance & Specifications",
+      "url": "https://www.corvsport.com/1962-corvette-specifications/",
+      "says": "suffix list: 327 cubic inch, 360 HP"
+     },
+     {
+      "name": "Corvette Action Center - 1962 Corvette specifications",
+      "url": "https://www.corvetteactioncenter.com/specs/c1/1962/62specs.html",
+      "says": "RPO 582: 327 ci, 360 bhp"
+     }
+    ],
+    "status": "confirmed",
+    "note": ""
+   }
+  ],
+  "1963": [
+   {
+    "gen": "c2",
+    "cid": 327,
+    "hp": 250,
+    "hp_basis": "gross",
+    "rpo": "std",
+    "name": "327 V8",
+    "trims": [
+     "base"
+    ],
+    "nhra": true,
+    "sources": [
+     {
+      "name": "GM Heritage Center 1963 Corvette Vehicle Information Kit",
+      "url": "https://www.gm.com/content/dam/company/no_search/heritage-archive-docs/vehicle-information-kits/chevrolet/1963-Chevrolet-Corvette.pdf",
+      "says": "kit's Corvette Black Book reprint pages: suffix list 327ci, 250hp"
+     },
+     {
+      "name": "Wikipedia (Corvette C2 / Chevrolet engine articles)",
+      "url": "https://en.wikipedia.org/wiki/Chevrolet_Corvette_(C2)",
+      "says": "1963: carbureted 250, 300 and 340 hp; 360 hp fuel-injected V8 (Z06 used the L84)"
+     },
+     {
+      "name": "CorvSport - 1963 Corvette Performance & Specifications",
+      "url": "https://www.corvsport.com/1963-corvette-specifications/",
+      "says": "powertrain table: 327, 250 hp"
+     },
+     {
+      "name": "Corvette Action Center - 1963 Corvette specifications",
+      "url": "https://www.corvetteactioncenter.com/specs/c2/1963/63specs.html",
+      "says": "base: 250 bhp"
+     }
+    ],
+    "status": "confirmed",
+    "note": ""
+   },
+   {
+    "gen": "c2",
+    "cid": 327,
+    "hp": 300,
+    "hp_basis": "gross",
+    "rpo": "L75",
+    "name": "327 V8",
+    "trims": [
+     "option"
+    ],
+    "nhra": true,
+    "sources": [
+     {
+      "name": "GM Heritage Center 1963 Corvette Vehicle Information Kit",
+      "url": "https://www.gm.com/content/dam/company/no_search/heritage-archive-docs/vehicle-information-kits/chevrolet/1963-Chevrolet-Corvette.pdf",
+      "says": "kit's Corvette Black Book reprint pages: suffix list 327ci, 300hp"
+     },
+     {
+      "name": "Wikipedia (Corvette C2 / Chevrolet engine articles)",
+      "url": "https://en.wikipedia.org/wiki/Chevrolet_Corvette_(C2)",
+      "says": "1963: carbureted 250, 300 and 340 hp; 360 hp fuel-injected V8 (Z06 used the L84)"
+     },
+     {
+      "name": "CorvSport - 1963 Corvette Performance & Specifications",
+      "url": "https://www.corvsport.com/1963-corvette-specifications/",
+      "says": "powertrain table: 327, 300 hp"
+     },
+     {
+      "name": "Corvette Action Center - 1963 Corvette specifications",
+      "url": "https://www.corvetteactioncenter.com/specs/c2/1963/63specs.html",
+      "says": "L75: 300 bhp"
+     }
+    ],
+    "status": "confirmed",
+    "note": ""
+   },
+   {
+    "gen": "c2",
+    "cid": 327,
+    "hp": 340,
+    "hp_basis": "gross",
+    "rpo": "L76",
+    "name": "327 V8 solid-lifter",
+    "trims": [
+     "option"
+    ],
+    "nhra": true,
+    "sources": [
+     {
+      "name": "GM Heritage Center 1963 Corvette Vehicle Information Kit",
+      "url": "https://www.gm.com/content/dam/company/no_search/heritage-archive-docs/vehicle-information-kits/chevrolet/1963-Chevrolet-Corvette.pdf",
+      "says": "kit's Corvette Black Book reprint pages: suffix list 327ci, 340hp; options list L76 327ci, 340hp"
+     },
+     {
+      "name": "Wikipedia (Corvette C2 / Chevrolet engine articles)",
+      "url": "https://en.wikipedia.org/wiki/Chevrolet_Corvette_(C2)",
+      "says": "1963: carbureted 250, 300 and 340 hp; 360 hp fuel-injected V8 (Z06 used the L84)"
+     },
+     {
+      "name": "CorvSport - 1963 Corvette Performance & Specifications",
+      "url": "https://www.corvsport.com/1963-corvette-specifications/",
+      "says": "powertrain table: 327, 340 hp"
+     },
+     {
+      "name": "Corvette Action Center - 1963 Corvette specifications",
+      "url": "https://www.corvetteactioncenter.com/specs/c2/1963/63specs.html",
+      "says": "L76: 340 bhp"
+     }
+    ],
+    "status": "confirmed",
+    "note": ""
+   },
+   {
+    "gen": "c2",
+    "cid": 327,
+    "hp": 360,
+    "hp_basis": "gross",
+    "rpo": "L84",
+    "name": "327 fuel injection",
+    "trims": [
+     "option; Z06 package"
+    ],
+    "nhra": true,
+    "sources": [
+     {
+      "name": "GM Heritage Center 1963 Corvette Vehicle Information Kit",
+      "url": "https://www.gm.com/content/dam/company/no_search/heritage-archive-docs/vehicle-information-kits/chevrolet/1963-Chevrolet-Corvette.pdf",
+      "says": "kit's Corvette Black Book reprint pages: suffix list 327ci, 360hp"
+     },
+     {
+      "name": "Wikipedia (Corvette C2 / Chevrolet engine articles)",
+      "url": "https://en.wikipedia.org/wiki/Chevrolet_Corvette_(C2)",
+      "says": "1963: carbureted 250, 300 and 340 hp; 360 hp fuel-injected V8 (Z06 used the L84)"
+     },
+     {
+      "name": "CorvSport - 1963 Corvette Performance & Specifications",
+      "url": "https://www.corvsport.com/1963-corvette-specifications/",
+      "says": "powertrain table: 327, 360 hp, fuel injection"
+     },
+     {
+      "name": "Corvette Action Center - 1963 Corvette specifications",
+      "url": "https://www.corvetteactioncenter.com/specs/c2/1963/63specs.html",
+      "says": "L84: 360 bhp"
+     }
+    ],
+    "status": "confirmed",
+    "note": ""
+   }
+  ],
+  "1964": [
+   {
+    "gen": "c2",
+    "cid": 327,
+    "hp": 250,
+    "hp_basis": "gross",
+    "rpo": "std",
+    "name": "327 V8",
+    "trims": [
+     "base"
+    ],
+    "nhra": true,
+    "sources": [
+     {
+      "name": "GM Heritage Center 1964 Corvette Vehicle Information Kit",
+      "url": "https://www.gm.com/content/dam/company/no_search/heritage-archive-docs/vehicle-information-kits/chevrolet/1964-Chevrolet-Corvette.pdf",
+      "says": "kit's Corvette Black Book reprint pages: suffix list 327ci, 250hp"
+     },
+     {
+      "name": "CorvSport - 1964 Corvette Performance & Specifications",
+      "url": "https://www.corvsport.com/1964-corvette-specifications/",
+      "says": "engine suffix list: 327 cubic inch, 250 horsepower"
+     }
+    ],
+    "status": "confirmed",
+    "note": ""
+   },
+   {
+    "gen": "c2",
+    "cid": 327,
+    "hp": 300,
+    "hp_basis": "gross",
+    "rpo": "L75",
+    "name": "327 V8",
+    "trims": [
+     "option"
+    ],
+    "nhra": true,
+    "sources": [
+     {
+      "name": "GM Heritage Center 1964 Corvette Vehicle Information Kit",
+      "url": "https://www.gm.com/content/dam/company/no_search/heritage-archive-docs/vehicle-information-kits/chevrolet/1964-Chevrolet-Corvette.pdf",
+      "says": "kit's Corvette Black Book reprint pages: suffix list 327ci, 300hp"
+     },
+     {
+      "name": "CorvSport - 1964 Corvette Performance & Specifications",
+      "url": "https://www.corvsport.com/1964-corvette-specifications/",
+      "says": "engine suffix list: 327 cubic inch, 300 horsepower"
+     }
+    ],
+    "status": "confirmed",
+    "note": ""
+   },
+   {
+    "gen": "c2",
+    "cid": 327,
+    "hp": 365,
+    "hp_basis": "gross",
+    "rpo": "L76",
+    "name": "327 V8 solid-lifter",
+    "trims": [
+     "option"
+    ],
+    "nhra": true,
+    "sources": [
+     {
+      "name": "GM Heritage Center 1964 Corvette Vehicle Information Kit",
+      "url": "https://www.gm.com/content/dam/company/no_search/heritage-archive-docs/vehicle-information-kits/chevrolet/1964-Chevrolet-Corvette.pdf",
+      "says": "kit's Corvette Black Book reprint pages: suffix list 327ci, 365hp"
+     },
+     {
+      "name": "CorvSport - 1964 Corvette Performance & Specifications",
+      "url": "https://www.corvsport.com/1964-corvette-specifications/",
+      "says": "engine suffix list: 327 cubic inch, 365 horsepower"
+     },
+     {
+      "name": "Wikipedia (Corvette C2 / Chevrolet engine articles)",
+      "url": "https://en.wikipedia.org/wiki/Chevrolet_Corvette_(C2)",
+      "says": "1964: solid-lifter unit produced 365 hp; fuel-injected engine gained 15 hp to 375 hp"
+     }
+    ],
+    "status": "confirmed",
+    "note": ""
+   },
+   {
+    "gen": "c2",
+    "cid": 327,
+    "hp": 375,
+    "hp_basis": "gross",
+    "rpo": "L84",
+    "name": "327 fuel injection",
+    "trims": [
+     "option"
+    ],
+    "nhra": true,
+    "sources": [
+     {
+      "name": "GM Heritage Center 1964 Corvette Vehicle Information Kit",
+      "url": "https://www.gm.com/content/dam/company/no_search/heritage-archive-docs/vehicle-information-kits/chevrolet/1964-Chevrolet-Corvette.pdf",
+      "says": "kit's Corvette Black Book reprint pages: suffix list 327ci, 375hp; options list 327ci, 375hp Engine (fuel injection) L84"
+     },
+     {
+      "name": "CorvSport - 1964 Corvette Performance & Specifications",
+      "url": "https://www.corvsport.com/1964-corvette-specifications/",
+      "says": "engine suffix list: 327 cubic inch, 375 horsepower"
+     },
+     {
+      "name": "Wikipedia (Corvette C2 / Chevrolet engine articles)",
+      "url": "https://en.wikipedia.org/wiki/Chevrolet_Corvette_(C2)",
+      "says": "1964: solid-lifter unit produced 365 hp; fuel-injected engine gained 15 hp to 375 hp"
+     }
+    ],
+    "status": "confirmed",
+    "note": ""
+   }
+  ],
+  "1965": [
+   {
+    "gen": "c2",
+    "cid": 327,
+    "hp": 250,
+    "hp_basis": "gross",
+    "rpo": "std",
+    "name": "327 V8",
+    "trims": [
+     "base"
+    ],
+    "nhra": true,
+    "sources": [
+     {
+      "name": "GM Heritage Center 1965 Corvette Vehicle Information Kit",
+      "url": "https://www.gm.com/content/dam/company/no_search/heritage-archive-docs/vehicle-information-kits/chevrolet/1965-Chevrolet-Corvette.pdf",
+      "says": "kit's Corvette Black Book reprint pages: suffix list 327ci, 250hp; options list base"
+     },
+     {
+      "name": "CorvSport - 1965 Corvette Performance & Specifications",
+      "url": "https://www.corvsport.com/1965-corvette-specifications/",
+      "says": "powertrain table: Standard 327, 250 @ rpm"
+     },
+     {
+      "name": "Corvette Action Center - 1965 Corvette specifications",
+      "url": "https://www.corvetteactioncenter.com/specs/c2/1965/65specs.html",
+      "says": "base (327 ci): 250 bhp"
+     }
+    ],
+    "status": "confirmed",
+    "note": ""
+   },
+   {
+    "gen": "c2",
+    "cid": 327,
+    "hp": 300,
+    "hp_basis": "gross",
+    "rpo": "L75",
+    "name": "327 V8",
+    "trims": [
+     "option"
+    ],
+    "nhra": true,
+    "sources": [
+     {
+      "name": "GM Heritage Center 1965 Corvette Vehicle Information Kit",
+      "url": "https://www.gm.com/content/dam/company/no_search/heritage-archive-docs/vehicle-information-kits/chevrolet/1965-Chevrolet-Corvette.pdf",
+      "says": "kit's Corvette Black Book reprint pages: suffix list 327ci, 300hp; options list L75"
+     },
+     {
+      "name": "CorvSport - 1965 Corvette Performance & Specifications",
+      "url": "https://www.corvsport.com/1965-corvette-specifications/",
+      "says": "powertrain table: L75 327, 300 @ rpm"
+     },
+     {
+      "name": "Corvette Action Center - 1965 Corvette specifications",
+      "url": "https://www.corvetteactioncenter.com/specs/c2/1965/65specs.html",
+      "says": "L75 (327 ci): 300 bhp"
+     }
+    ],
+    "status": "confirmed",
+    "note": ""
+   },
+   {
+    "gen": "c2",
+    "cid": 327,
+    "hp": 350,
+    "hp_basis": "gross",
+    "rpo": "L79",
+    "name": "327 V8 hydraulic",
+    "trims": [
+     "option"
+    ],
+    "nhra": true,
+    "sources": [
+     {
+      "name": "GM Heritage Center 1965 Corvette Vehicle Information Kit",
+      "url": "https://www.gm.com/content/dam/company/no_search/heritage-archive-docs/vehicle-information-kits/chevrolet/1965-Chevrolet-Corvette.pdf",
+      "says": "kit's Corvette Black Book reprint pages: suffix list 327ci, 350hp; options list L79"
+     },
+     {
+      "name": "CorvSport - 1965 Corvette Performance & Specifications",
+      "url": "https://www.corvsport.com/1965-corvette-specifications/",
+      "says": "powertrain table: L79 327, 350 @ rpm"
+     },
+     {
+      "name": "Corvette Action Center - 1965 Corvette specifications",
+      "url": "https://www.corvetteactioncenter.com/specs/c2/1965/65specs.html",
+      "says": "L79 (327 ci): 350 bhp"
+     }
+    ],
+    "status": "confirmed",
+    "note": ""
+   },
+   {
+    "gen": "c2",
+    "cid": 327,
+    "hp": 365,
+    "hp_basis": "gross",
+    "rpo": "L76",
+    "name": "327 V8 solid-lifter",
+    "trims": [
+     "option"
+    ],
+    "nhra": true,
+    "sources": [
+     {
+      "name": "GM Heritage Center 1965 Corvette Vehicle Information Kit",
+      "url": "https://www.gm.com/content/dam/company/no_search/heritage-archive-docs/vehicle-information-kits/chevrolet/1965-Chevrolet-Corvette.pdf",
+      "says": "kit's Corvette Black Book reprint pages: suffix list 327ci, 365hp; options list L76"
+     },
+     {
+      "name": "CorvSport - 1965 Corvette Performance & Specifications",
+      "url": "https://www.corvsport.com/1965-corvette-specifications/",
+      "says": "powertrain table: L76 327, 365 @ rpm"
+     },
+     {
+      "name": "Corvette Action Center - 1965 Corvette specifications",
+      "url": "https://www.corvetteactioncenter.com/specs/c2/1965/65specs.html",
+      "says": "L76 (327 ci): 365 bhp"
+     }
+    ],
+    "status": "confirmed",
+    "note": ""
+   },
+   {
+    "gen": "c2",
+    "cid": 327,
+    "hp": 375,
+    "hp_basis": "gross",
+    "rpo": "L84",
+    "name": "327 fuel injection",
+    "trims": [
+     "option"
+    ],
+    "nhra": true,
+    "sources": [
+     {
+      "name": "GM Heritage Center 1965 Corvette Vehicle Information Kit",
+      "url": "https://www.gm.com/content/dam/company/no_search/heritage-archive-docs/vehicle-information-kits/chevrolet/1965-Chevrolet-Corvette.pdf",
+      "says": "kit's Corvette Black Book reprint pages: suffix list 327ci, 375hp; options list L84"
+     },
+     {
+      "name": "CorvSport - 1965 Corvette Performance & Specifications",
+      "url": "https://www.corvsport.com/1965-corvette-specifications/",
+      "says": "powertrain table: L84 327, 375 @ rpm"
+     },
+     {
+      "name": "Corvette Action Center - 1965 Corvette specifications",
+      "url": "https://www.corvetteactioncenter.com/specs/c2/1965/65specs.html",
+      "says": "L84 (327 ci): 375 bhp"
+     },
+     {
+      "name": "Wikipedia (Corvette C2 / Chevrolet engine articles)",
+      "url": "https://en.wikipedia.org/wiki/Chevrolet_Corvette_(C2)",
+      "says": "1965: mid-year 396 big-block 425 hp; fuel-injected 327/375 hp"
+     }
+    ],
+    "status": "confirmed",
+    "note": "CorvSport's 1965 table labels the L84 induction 'Carburetor' (error); GM kit and others show fuel injection. Final year of Rochester mechanical fuel injection."
+   },
+   {
+    "gen": "c2",
+    "cid": 396,
+    "hp": 425,
+    "hp_basis": "gross",
+    "rpo": "L78",
+    "name": "396 Turbo-Jet big-block",
+    "trims": [
+     "option"
+    ],
+    "nhra": true,
+    "sources": [
+     {
+      "name": "GM Heritage Center 1965 Corvette Vehicle Information Kit",
+      "url": "https://www.gm.com/content/dam/company/no_search/heritage-archive-docs/vehicle-information-kits/chevrolet/1965-Chevrolet-Corvette.pdf",
+      "says": "kit's Corvette Black Book reprint pages: suffix list 396ci, 425hp; options list L78; spec sheet 'RPO L78 425 HP engine 396 cubic inch V-8'"
+     },
+     {
+      "name": "CorvSport - 1965 Corvette Performance & Specifications",
+      "url": "https://www.corvsport.com/1965-corvette-specifications/",
+      "says": "powertrain table: L78 396, 425 @ rpm"
+     },
+     {
+      "name": "Corvette Action Center - 1965 Corvette specifications",
+      "url": "https://www.corvetteactioncenter.com/specs/c2/1965/65specs.html",
+      "says": "L78 (396 ci): 425 bhp"
+     },
+     {
+      "name": "Wikipedia (Corvette C2 / Chevrolet engine articles)",
+      "url": "https://en.wikipedia.org/wiki/Chevrolet_Corvette_(C2)",
+      "says": "1965: mid-year 396 big-block 425 hp; fuel-injected 327/375 hp"
+     }
+    ],
+    "status": "confirmed",
+    "note": "Introduced mid-year; last year of Rochester fuel injection."
+   }
+  ],
+  "1966": [
+   {
+    "gen": "c2",
+    "cid": 327,
+    "hp": 300,
+    "hp_basis": "gross",
+    "rpo": "std",
+    "name": "327 V8",
+    "trims": [
+     "base"
+    ],
+    "nhra": true,
+    "sources": [
+     {
+      "name": "GM Heritage Center 1966 Corvette Vehicle Information Kit",
+      "url": "https://www.gm.com/content/dam/company/no_search/heritage-archive-docs/vehicle-information-kits/chevrolet/1966-Chevrolet-Corvette.pdf",
+      "says": "kit's Corvette Black Book reprint pages: suffix/options list 327ci, 300hp (base)"
+     },
+     {
+      "name": "CorvSport - 1966 Corvette Performance & Specifications",
+      "url": "https://www.corvsport.com/1966-corvette-specifications/",
+      "says": "powertrain table: Standard 327, 300 @ rpm"
+     }
+    ],
+    "status": "confirmed",
+    "note": ""
+   },
+   {
+    "gen": "c2",
+    "cid": 327,
+    "hp": 350,
+    "hp_basis": "gross",
+    "rpo": "L79",
+    "name": "327 V8",
+    "trims": [
+     "option"
+    ],
+    "nhra": true,
+    "sources": [
+     {
+      "name": "GM Heritage Center 1966 Corvette Vehicle Information Kit",
+      "url": "https://www.gm.com/content/dam/company/no_search/heritage-archive-docs/vehicle-information-kits/chevrolet/1966-Chevrolet-Corvette.pdf",
+      "says": "kit's Corvette Black Book reprint pages: suffix/options list 327ci, 350hp L79"
+     },
+     {
+      "name": "CorvSport - 1966 Corvette Performance & Specifications",
+      "url": "https://www.corvsport.com/1966-corvette-specifications/",
+      "says": "powertrain table: L79 327, 350 @ rpm"
+     }
+    ],
+    "status": "confirmed",
+    "note": ""
+   },
+   {
+    "gen": "c2",
+    "cid": 427,
+    "hp": 390,
+    "hp_basis": "gross",
+    "rpo": "L36",
+    "name": "427 Turbo-Jet",
+    "trims": [
+     "option"
+    ],
+    "nhra": true,
+    "sources": [
+     {
+      "name": "GM Heritage Center 1966 Corvette Vehicle Information Kit",
+      "url": "https://www.gm.com/content/dam/company/no_search/heritage-archive-docs/vehicle-information-kits/chevrolet/1966-Chevrolet-Corvette.pdf",
+      "says": "kit's Corvette Black Book reprint pages: suffix/options list 427ci, 390hp L36"
+     },
+     {
+      "name": "CorvSport - 1966 Corvette Performance & Specifications",
+      "url": "https://www.corvsport.com/1966-corvette-specifications/",
+      "says": "powertrain table: L36 427, 390 @ rpm"
+     },
+     {
+      "name": "Wikipedia (Corvette C2 / Chevrolet engine articles)",
+      "url": "https://en.wikipedia.org/wiki/Chevrolet_Corvette_(C2)",
+      "says": "1966 big-block V8 came in two forms: 390 hp and 425 bhp"
+     }
+    ],
+    "status": "confirmed",
+    "note": ""
+   },
+   {
+    "gen": "c2",
+    "cid": 427,
+    "hp": 425,
+    "hp_basis": "gross",
+    "rpo": "L72",
+    "name": "427 Turbo-Jet solid-lifter",
+    "trims": [
+     "option"
+    ],
+    "nhra": true,
+    "sources": [
+     {
+      "name": "GM Heritage Center 1966 Corvette Vehicle Information Kit",
+      "url": "https://www.gm.com/content/dam/company/no_search/heritage-archive-docs/vehicle-information-kits/chevrolet/1966-Chevrolet-Corvette.pdf",
+      "says": "kit's Corvette Black Book reprint pages: suffix/options list 427ci, 450/425hp L72"
+     },
+     {
+      "name": "CorvSport - 1966 Corvette Performance & Specifications",
+      "url": "https://www.corvsport.com/1966-corvette-specifications/",
+      "says": "powertrain table: L72 427, 425 @ rpm"
+     },
+     {
+      "name": "Wikipedia (Corvette C2 / Chevrolet engine articles)",
+      "url": "https://en.wikipedia.org/wiki/Chevrolet_Corvette_(C2)",
+      "says": "1966 big-block V8 came in two forms: 390 hp and 425 bhp"
+     }
+    ],
+    "status": "confirmed",
+    "note": "GM kit: the solid-lifter 427 was initially listed at 450 hp and later re-rated 425 hp without hardware change."
+   }
+  ],
+  "1967": [
+   {
+    "gen": "c2",
+    "cid": 327,
+    "hp": 300,
+    "hp_basis": "gross",
+    "rpo": "std",
+    "name": "327 V8",
+    "trims": [
+     "base"
+    ],
+    "nhra": true,
+    "sources": [
+     {
+      "name": "GM Heritage Center 1967 Corvette Vehicle Information Kit",
+      "url": "https://www.gm.com/content/dam/company/no_search/heritage-archive-docs/vehicle-information-kits/chevrolet/1967-Chevrolet-Corvette.pdf",
+      "says": "kit's Corvette Black Book reprint pages: suffix/options list 327ci, 300hp (base)"
+     },
+     {
+      "name": "CorvSport - 1967 Corvette Performance & Specifications",
+      "url": "https://www.corvsport.com/1967-corvette-specifications/",
+      "says": "powertrain table: Standard 327, 300 @ rpm"
+     }
+    ],
+    "status": "confirmed",
+    "note": ""
+   },
+   {
+    "gen": "c2",
+    "cid": 327,
+    "hp": 350,
+    "hp_basis": "gross",
+    "rpo": "L79",
+    "name": "327 V8",
+    "trims": [
+     "option"
+    ],
+    "nhra": true,
+    "sources": [
+     {
+      "name": "GM Heritage Center 1967 Corvette Vehicle Information Kit",
+      "url": "https://www.gm.com/content/dam/company/no_search/heritage-archive-docs/vehicle-information-kits/chevrolet/1967-Chevrolet-Corvette.pdf",
+      "says": "kit's Corvette Black Book reprint pages: suffix/options list 327ci, 350hp L79"
+     },
+     {
+      "name": "CorvSport - 1967 Corvette Performance & Specifications",
+      "url": "https://www.corvsport.com/1967-corvette-specifications/",
+      "says": "powertrain table: L79 327, 350 @ rpm"
+     }
+    ],
+    "status": "confirmed",
+    "note": ""
+   },
+   {
+    "gen": "c2",
+    "cid": 427,
+    "hp": 390,
+    "hp_basis": "gross",
+    "rpo": "L36",
+    "name": "427 V8 4-bbl",
+    "trims": [
+     "option"
+    ],
+    "nhra": true,
+    "sources": [
+     {
+      "name": "GM Heritage Center 1967 Corvette Vehicle Information Kit",
+      "url": "https://www.gm.com/content/dam/company/no_search/heritage-archive-docs/vehicle-information-kits/chevrolet/1967-Chevrolet-Corvette.pdf",
+      "says": "kit's Corvette Black Book reprint pages: suffix/options list 427ci, 390hp L36"
+     },
+     {
+      "name": "CorvSport - 1967 Corvette Performance & Specifications",
+      "url": "https://www.corvsport.com/1967-corvette-specifications/",
+      "says": "powertrain table: L36 427, 390 @ rpm"
+     },
+     {
+      "name": "Wikipedia (Corvette C2 / Chevrolet engine articles)",
+      "url": "https://en.wikipedia.org/wiki/Chevrolet_big-block_engine",
+      "says": "big-block article: L-36 produced 1966-69, 390 hp in Corvettes"
+     }
+    ],
+    "status": "confirmed",
+    "note": ""
+   },
+   {
+    "gen": "c2",
+    "cid": 427,
+    "hp": 400,
+    "hp_basis": "gross",
+    "rpo": "L68",
+    "name": "427 V8 Tri-Power",
+    "trims": [
+     "option"
+    ],
+    "nhra": true,
+    "sources": [
+     {
+      "name": "GM Heritage Center 1967 Corvette Vehicle Information Kit",
+      "url": "https://www.gm.com/content/dam/company/no_search/heritage-archive-docs/vehicle-information-kits/chevrolet/1967-Chevrolet-Corvette.pdf",
+      "says": "kit's Corvette Black Book reprint pages: suffix/options list 427ci, 400hp L68"
+     },
+     {
+      "name": "CorvSport - 1967 Corvette Performance & Specifications",
+      "url": "https://www.corvsport.com/1967-corvette-specifications/",
+      "says": "powertrain table: L68 427, 400 @ rpm"
+     },
+     {
+      "name": "Wikipedia (Corvette C2 / Chevrolet engine articles)",
+      "url": "https://en.wikipedia.org/wiki/Chevrolet_big-block_engine",
+      "says": "big-block article: L-68 produced 1967-69, Tri-Power, 400 hp, used in Corvettes"
+     }
+    ],
+    "status": "confirmed",
+    "note": ""
+   },
+   {
+    "gen": "c2",
+    "cid": 427,
+    "hp": 435,
+    "hp_basis": "gross",
+    "rpo": "L71",
+    "name": "427 V8 Tri-Power solid-lifter",
+    "trims": [
+     "option"
+    ],
+    "nhra": true,
+    "sources": [
+     {
+      "name": "GM Heritage Center 1967 Corvette Vehicle Information Kit",
+      "url": "https://www.gm.com/content/dam/company/no_search/heritage-archive-docs/vehicle-information-kits/chevrolet/1967-Chevrolet-Corvette.pdf",
+      "says": "kit's Corvette Black Book reprint pages: suffix/options list 427ci, 435hp L71"
+     },
+     {
+      "name": "CorvSport - 1967 Corvette Performance & Specifications",
+      "url": "https://www.corvsport.com/1967-corvette-specifications/",
+      "says": "powertrain table: L71 427, 435 @ rpm"
+     },
+     {
+      "name": "Wikipedia (Corvette C2 / Chevrolet engine articles)",
+      "url": "https://en.wikipedia.org/wiki/Chevrolet_big-block_engine",
+      "says": "big-block article: 435 bhp L71 with 3x2-barrel Holleys, 1967-1969 Corvettes"
+     }
+    ],
+    "status": "confirmed",
+    "note": ""
+   },
+   {
+    "gen": "c2",
+    "cid": 427,
+    "hp": 435,
+    "hp_basis": "gross",
+    "rpo": "L71 + L89",
+    "name": "427 Tri-Power, aluminum heads",
+    "trims": [
+     "option"
+    ],
+    "nhra": true,
+    "sources": [
+     {
+      "name": "GM Heritage Center 1967 Corvette Vehicle Information Kit",
+      "url": "https://www.gm.com/content/dam/company/no_search/heritage-archive-docs/vehicle-information-kits/chevrolet/1967-Chevrolet-Corvette.pdf",
+      "says": "options list: L89 Aluminum Cylinder Heads for L71 (qty 16); suffix 427ci, 435hp, mt, ah"
+     },
+     {
+      "name": "CorvSport - 1967 Corvette Performance & Specifications",
+      "url": "https://www.corvsport.com/1967-corvette-specifications/",
+      "says": "head casting 3904392: 427 cubic inch, 430HP, 435HP, aluminum head"
+     },
+     {
+      "name": "Wikipedia (Corvette C2 / Chevrolet engine articles)",
+      "url": "https://en.wikipedia.org/wiki/Chevrolet_Corvette_(C2)",
+      "says": "infobox lists 427 L89; big-block article: L71 435 bhp in 1967-1969 Corvettes"
+     }
+    ],
+    "status": "confirmed",
+    "note": "L89 is an aluminum-head option on the L71; same 435 hp rating. NHRA's single 427/435 listing does not separate head material."
+   },
+   {
+    "gen": "c2",
+    "cid": 427,
+    "hp": 430,
+    "hp_basis": "gross",
+    "rpo": "L88",
+    "name": "427 L88",
+    "trims": [
+     "option"
+    ],
+    "nhra": false,
+    "sources": [
+     {
+      "name": "GM Heritage Center 1967 Corvette Vehicle Information Kit",
+      "url": "https://www.gm.com/content/dam/company/no_search/heritage-archive-docs/vehicle-information-kits/chevrolet/1967-Chevrolet-Corvette.pdf",
+      "says": "options list: L88 427ci, 430hp Engine (qty 20); suffix IT 427ci, 430hp (L88)"
+     },
+     {
+      "name": "CorvSport - 1967 Corvette Performance & Specifications",
+      "url": "https://www.corvsport.com/1967-corvette-specifications/",
+      "says": "powertrain table: L88 427, 430 @ rpm"
+     },
+     {
+      "name": "Wikipedia (Corvette C2 / Chevrolet engine articles)",
+      "url": "https://en.wikipedia.org/wiki/Chevrolet_Corvette_(C2)",
+      "says": "infobox lists 427 L88 big-block"
+     },
+     {
+      "name": "Corvette Action Center - 1967 Corvette specifications",
+      "url": "https://www.corvetteactioncenter.com/specs/c2/1967/67specs.html",
+      "says": "1967 tech page: 'Optional off-road L88 engine package offered'"
+     }
+    ],
+    "status": "three_sources_not_nhra",
+    "note": "Not in the NHRA 1967 rows. 20 built; 430 hp is the factory's understated rating. Off-road/racing-oriented but a regular production option."
+   }
+  ],
+  "1968": [
+   {
+    "gen": "c3",
+    "cid": 327,
+    "hp": 300,
+    "hp_basis": "gross",
+    "rpo": "std",
+    "name": "327 V8",
+    "trims": [
+     "base"
+    ],
+    "nhra": true,
+    "sources": [
+     {
+      "name": "GM Heritage Center 1968 Corvette Vehicle Information Kit",
+      "url": "https://www.gm.com/content/dam/company/no_search/heritage-archive-docs/vehicle-information-kits/chevrolet/1968-Chevrolet-Corvette.pdf",
+      "says": "kit's Corvette Black Book reprint pages: options list 327ci, 300hp Engine (base)"
+     },
+     {
+      "name": "CorvSport - 1968 Corvette Performance & Specifications",
+      "url": "https://www.corvsport.com/1968-corvette-specifications/",
+      "says": "powertrain table: Standard 327, 300 @ rpm"
+     },
+     {
+      "name": "Wikipedia (Corvette C3 / Chevrolet engine articles)",
+      "url": "https://en.wikipedia.org/wiki/Chevrolet_Corvette_(C3)",
+      "says": "engine table (RPO / power): 1968 std 300 hp, 327 cu in"
+     }
+    ],
+    "status": "confirmed",
+    "note": ""
+   },
+   {
+    "gen": "c3",
+    "cid": 327,
+    "hp": 350,
+    "hp_basis": "gross",
+    "rpo": "L79",
+    "name": "327 V8",
+    "trims": [
+     "option"
+    ],
+    "nhra": true,
+    "sources": [
+     {
+      "name": "GM Heritage Center 1968 Corvette Vehicle Information Kit",
+      "url": "https://www.gm.com/content/dam/company/no_search/heritage-archive-docs/vehicle-information-kits/chevrolet/1968-Chevrolet-Corvette.pdf",
+      "says": "kit's Corvette Black Book reprint pages: options list 327ci, 350hp Engine L79"
+     },
+     {
+      "name": "CorvSport - 1968 Corvette Performance & Specifications",
+      "url": "https://www.corvsport.com/1968-corvette-specifications/",
+      "says": "powertrain table: L79 327, 350 @ rpm"
+     },
+     {
+      "name": "Wikipedia (Corvette C3 / Chevrolet engine articles)",
+      "url": "https://en.wikipedia.org/wiki/Chevrolet_Corvette_(C3)",
+      "says": "engine table (RPO / power): 1968 L79 350 hp, 327 cu in"
+     }
+    ],
+    "status": "confirmed",
+    "note": ""
+   },
+   {
+    "gen": "c3",
+    "cid": 427,
+    "hp": 390,
+    "hp_basis": "gross",
+    "rpo": "L36",
+    "name": "427 V8 4-bbl",
+    "trims": [
+     "option"
+    ],
+    "nhra": true,
+    "sources": [
+     {
+      "name": "GM Heritage Center 1968 Corvette Vehicle Information Kit",
+      "url": "https://www.gm.com/content/dam/company/no_search/heritage-archive-docs/vehicle-information-kits/chevrolet/1968-Chevrolet-Corvette.pdf",
+      "says": "kit's Corvette Black Book reprint pages: options list 427ci, 390hp Engine L36"
+     },
+     {
+      "name": "CorvSport - 1968 Corvette Performance & Specifications",
+      "url": "https://www.corvsport.com/1968-corvette-specifications/",
+      "says": "powertrain table: L36 427, 390 @ rpm"
+     },
+     {
+      "name": "Wikipedia (Corvette C3 / Chevrolet engine articles)",
+      "url": "https://en.wikipedia.org/wiki/Chevrolet_Corvette_(C3)",
+      "says": "engine table (RPO / power): 1968 L36 390 hp, 427 cu in"
+     }
+    ],
+    "status": "confirmed",
+    "note": ""
+   },
+   {
+    "gen": "c3",
+    "cid": 427,
+    "hp": 400,
+    "hp_basis": "gross",
+    "rpo": "L68",
+    "name": "427 Tri-Power",
+    "trims": [
+     "option"
+    ],
+    "nhra": true,
+    "sources": [
+     {
+      "name": "GM Heritage Center 1968 Corvette Vehicle Information Kit",
+      "url": "https://www.gm.com/content/dam/company/no_search/heritage-archive-docs/vehicle-information-kits/chevrolet/1968-Chevrolet-Corvette.pdf",
+      "says": "kit's Corvette Black Book reprint pages: options list 427ci, 400hp Engine L68"
+     },
+     {
+      "name": "CorvSport - 1968 Corvette Performance & Specifications",
+      "url": "https://www.corvsport.com/1968-corvette-specifications/",
+      "says": "powertrain table: L68 427, 400 @ rpm"
+     },
+     {
+      "name": "Wikipedia (Corvette C3 / Chevrolet engine articles)",
+      "url": "https://en.wikipedia.org/wiki/Chevrolet_Corvette_(C3)",
+      "says": "engine table (RPO / power): 1968 L68 400 hp, 427 cu in"
+     }
+    ],
+    "status": "confirmed",
+    "note": ""
+   },
+   {
+    "gen": "c3",
+    "cid": 427,
+    "hp": 435,
+    "hp_basis": "gross",
+    "rpo": "L71",
+    "name": "427 Tri-Power solid-lifter",
+    "trims": [
+     "option"
+    ],
+    "nhra": true,
+    "sources": [
+     {
+      "name": "GM Heritage Center 1968 Corvette Vehicle Information Kit",
+      "url": "https://www.gm.com/content/dam/company/no_search/heritage-archive-docs/vehicle-information-kits/chevrolet/1968-Chevrolet-Corvette.pdf",
+      "says": "kit's Corvette Black Book reprint pages: options list 427ci, 435hp Engine L71"
+     },
+     {
+      "name": "CorvSport - 1968 Corvette Performance & Specifications",
+      "url": "https://www.corvsport.com/1968-corvette-specifications/",
+      "says": "powertrain table: L71 427, 435 @ rpm"
+     },
+     {
+      "name": "Wikipedia (Corvette C3 / Chevrolet engine articles)",
+      "url": "https://en.wikipedia.org/wiki/Chevrolet_Corvette_(C3)",
+      "says": "engine table (RPO / power): 1968 L71 435 hp, 427 cu in"
+     }
+    ],
+    "status": "confirmed",
+    "note": ""
+   },
+   {
+    "gen": "c3",
+    "cid": 427,
+    "hp": 435,
+    "hp_basis": "gross",
+    "rpo": "L71 + L89",
+    "name": "427 Tri-Power, aluminum heads",
+    "trims": [
+     "option"
+    ],
+    "nhra": true,
+    "sources": [
+     {
+      "name": "GM Heritage Center 1968 Corvette Vehicle Information Kit",
+      "url": "https://www.gm.com/content/dam/company/no_search/heritage-archive-docs/vehicle-information-kits/chevrolet/1968-Chevrolet-Corvette.pdf",
+      "says": "options list: L89 Aluminum Cylinder Heads (with L71)"
+     },
+     {
+      "name": "CorvSport - 1968 Corvette Performance & Specifications",
+      "url": "https://www.corvsport.com/1968-corvette-specifications/",
+      "says": "suffix IU: 427 cubic inch, 435 HP, manual trans, aluminum heads"
+     },
+     {
+      "name": "Wikipedia (Corvette C3 / Chevrolet engine articles)",
+      "url": "https://en.wikipedia.org/wiki/Chevrolet_Corvette_(C3)",
+      "says": "infobox: 427 L89 V8 (1968-1969)"
+     }
+    ],
+    "status": "confirmed",
+    "note": "Aluminum-head L71; NHRA's 427/435 listing covers it."
+   },
+   {
+    "gen": "c3",
+    "cid": 427,
+    "hp": 430,
+    "hp_basis": "gross",
+    "rpo": "L88",
+    "name": "427 L88",
+    "trims": [
+     "option"
+    ],
+    "nhra": true,
+    "sources": [
+     {
+      "name": "GM Heritage Center 1968 Corvette Vehicle Information Kit",
+      "url": "https://www.gm.com/content/dam/company/no_search/heritage-archive-docs/vehicle-information-kits/chevrolet/1968-Chevrolet-Corvette.pdf",
+      "says": "kit's Corvette Black Book reprint pages: options list 427ci, 430hp Engine L88"
+     },
+     {
+      "name": "CorvSport - 1968 Corvette Performance & Specifications",
+      "url": "https://www.corvsport.com/1968-corvette-specifications/",
+      "says": "powertrain table: L88 427, 430 @ rpm"
+     },
+     {
+      "name": "Wikipedia (Corvette C3 / Chevrolet engine articles)",
+      "url": "https://en.wikipedia.org/wiki/Chevrolet_Corvette_(C3)",
+      "says": "engine table (RPO / power): 1968 L88 430 hp, 427 cu in"
+     }
+    ],
+    "status": "confirmed",
+    "note": ""
+   }
+  ],
+  "1969": [
+   {
+    "gen": "c3",
+    "cid": 350,
+    "hp": 300,
+    "hp_basis": "gross",
+    "rpo": "std",
+    "name": "350 V8",
+    "trims": [
+     "base"
+    ],
+    "nhra": true,
+    "sources": [
+     {
+      "name": "GM Heritage Center 1969 Corvette Vehicle Information Kit",
+      "url": "https://www.gm.com/content/dam/company/no_search/heritage-archive-docs/vehicle-information-kits/chevrolet/1969-Chevrolet-Corvette.pdf",
+      "says": "kit's Corvette Black Book reprint pages: suffix/options list 350ci, 300hp (base)"
+     },
+     {
+      "name": "CorvSport - 1969 Corvette Performance & Specifications",
+      "url": "https://www.corvsport.com/1969-corvette-specifications/",
+      "says": "powertrain table: Standard 350, 300 @ rpm"
+     },
+     {
+      "name": "Wikipedia (Corvette C3 / Chevrolet engine articles)",
+      "url": "https://en.wikipedia.org/wiki/Chevrolet_Corvette_(C3)",
+      "says": "engine table (RPO / power): 1969 std 300 hp, 350 cu in"
+     },
+     {
+      "name": "Corvette Action Center - 1969 Corvette specifications",
+      "url": "https://www.corvetteactioncenter.com/tech/c3/1969/69specs.html",
+      "says": "engine options list includes Base 350"
+     }
+    ],
+    "status": "confirmed",
+    "note": ""
+   },
+   {
+    "gen": "c3",
+    "cid": 350,
+    "hp": 350,
+    "hp_basis": "gross",
+    "rpo": "L46",
+    "name": "350 V8",
+    "trims": [
+     "option"
+    ],
+    "nhra": true,
+    "sources": [
+     {
+      "name": "GM Heritage Center 1969 Corvette Vehicle Information Kit",
+      "url": "https://www.gm.com/content/dam/company/no_search/heritage-archive-docs/vehicle-information-kits/chevrolet/1969-Chevrolet-Corvette.pdf",
+      "says": "kit's Corvette Black Book reprint pages: suffix/options list 350ci, 350hp L46"
+     },
+     {
+      "name": "CorvSport - 1969 Corvette Performance & Specifications",
+      "url": "https://www.corvsport.com/1969-corvette-specifications/",
+      "says": "powertrain table: L46 350, 350 @ rpm"
+     },
+     {
+      "name": "Wikipedia (Corvette C3 / Chevrolet engine articles)",
+      "url": "https://en.wikipedia.org/wiki/Chevrolet_Corvette_(C3)",
+      "says": "engine table (RPO / power): 1969 L46 350 hp, 350 cu in"
+     },
+     {
+      "name": "Corvette Action Center - 1969 Corvette specifications",
+      "url": "https://www.corvetteactioncenter.com/tech/c3/1969/69specs.html",
+      "says": "engine options list includes L46"
+     }
+    ],
+    "status": "confirmed",
+    "note": ""
+   },
+   {
+    "gen": "c3",
+    "cid": 427,
+    "hp": 390,
+    "hp_basis": "gross",
+    "rpo": "L36",
+    "name": "427 V8 4-bbl",
+    "trims": [
+     "option"
+    ],
+    "nhra": true,
+    "sources": [
+     {
+      "name": "GM Heritage Center 1969 Corvette Vehicle Information Kit",
+      "url": "https://www.gm.com/content/dam/company/no_search/heritage-archive-docs/vehicle-information-kits/chevrolet/1969-Chevrolet-Corvette.pdf",
+      "says": "kit's Corvette Black Book reprint pages: suffix/options list 427ci, 390hp L36"
+     },
+     {
+      "name": "CorvSport - 1969 Corvette Performance & Specifications",
+      "url": "https://www.corvsport.com/1969-corvette-specifications/",
+      "says": "powertrain table: L36 427, 390 @ rpm"
+     },
+     {
+      "name": "Wikipedia (Corvette C3 / Chevrolet engine articles)",
+      "url": "https://en.wikipedia.org/wiki/Chevrolet_Corvette_(C3)",
+      "says": "engine table (RPO / power): 1969 L36 390 hp, 427 cu in"
+     },
+     {
+      "name": "Corvette Action Center - 1969 Corvette specifications",
+      "url": "https://www.corvetteactioncenter.com/tech/c3/1969/69specs.html",
+      "says": "engine options list includes L36"
+     }
+    ],
+    "status": "confirmed",
+    "note": ""
+   },
+   {
+    "gen": "c3",
+    "cid": 427,
+    "hp": 400,
+    "hp_basis": "gross",
+    "rpo": "L68",
+    "name": "427 Tri-Power",
+    "trims": [
+     "option"
+    ],
+    "nhra": true,
+    "sources": [
+     {
+      "name": "GM Heritage Center 1969 Corvette Vehicle Information Kit",
+      "url": "https://www.gm.com/content/dam/company/no_search/heritage-archive-docs/vehicle-information-kits/chevrolet/1969-Chevrolet-Corvette.pdf",
+      "says": "kit's Corvette Black Book reprint pages: suffix/options list 427ci, 400hp L68"
+     },
+     {
+      "name": "CorvSport - 1969 Corvette Performance & Specifications",
+      "url": "https://www.corvsport.com/1969-corvette-specifications/",
+      "says": "powertrain table: L68 427, 400 @ rpm"
+     },
+     {
+      "name": "Wikipedia (Corvette C3 / Chevrolet engine articles)",
+      "url": "https://en.wikipedia.org/wiki/Chevrolet_Corvette_(C3)",
+      "says": "engine table (RPO / power): 1969 L68 400 hp, 427 cu in"
+     },
+     {
+      "name": "Corvette Action Center - 1969 Corvette specifications",
+      "url": "https://www.corvetteactioncenter.com/tech/c3/1969/69specs.html",
+      "says": "engine options list includes L68"
+     }
+    ],
+    "status": "confirmed",
+    "note": ""
+   },
+   {
+    "gen": "c3",
+    "cid": 427,
+    "hp": 435,
+    "hp_basis": "gross",
+    "rpo": "L71",
+    "name": "427 Tri-Power solid-lifter",
+    "trims": [
+     "option"
+    ],
+    "nhra": true,
+    "sources": [
+     {
+      "name": "GM Heritage Center 1969 Corvette Vehicle Information Kit",
+      "url": "https://www.gm.com/content/dam/company/no_search/heritage-archive-docs/vehicle-information-kits/chevrolet/1969-Chevrolet-Corvette.pdf",
+      "says": "kit's Corvette Black Book reprint pages: suffix/options list 427ci, 435hp L71"
+     },
+     {
+      "name": "CorvSport - 1969 Corvette Performance & Specifications",
+      "url": "https://www.corvsport.com/1969-corvette-specifications/",
+      "says": "powertrain table: L71 427, 435 @ rpm"
+     },
+     {
+      "name": "Wikipedia (Corvette C3 / Chevrolet engine articles)",
+      "url": "https://en.wikipedia.org/wiki/Chevrolet_Corvette_(C3)",
+      "says": "engine table (RPO / power): 1969 L71 435 hp, 427 cu in"
+     },
+     {
+      "name": "Corvette Action Center - 1969 Corvette specifications",
+      "url": "https://www.corvetteactioncenter.com/tech/c3/1969/69specs.html",
+      "says": "engine options list includes L71"
+     }
+    ],
+    "status": "confirmed",
+    "note": ""
+   },
+   {
+    "gen": "c3",
+    "cid": 427,
+    "hp": 435,
+    "hp_basis": "gross",
+    "rpo": "L71 + L89",
+    "name": "427 Tri-Power, aluminum heads",
+    "trims": [
+     "option"
+    ],
+    "nhra": true,
+    "sources": [
+     {
+      "name": "GM Heritage Center 1969 Corvette Vehicle Information Kit",
+      "url": "https://www.gm.com/content/dam/company/no_search/heritage-archive-docs/vehicle-information-kits/chevrolet/1969-Chevrolet-Corvette.pdf",
+      "says": "options list: L89 Aluminum Cylinder Heads with L71; suffix LP/LU/LW 427ci, 435hp, ah"
+     },
+     {
+      "name": "CorvSport - 1969 Corvette Performance & Specifications",
+      "url": "https://www.corvsport.com/1969-corvette-specifications/",
+      "says": "suffix LP, LU, LW: 427 cubic inch, 435 HP, aluminum heads"
+     },
+     {
+      "name": "Wikipedia (Corvette C3 / Chevrolet engine articles)",
+      "url": "https://en.wikipedia.org/wiki/Chevrolet_Corvette_(C3)",
+      "says": "infobox: 427 L89 V8 (1968-1969)"
+     },
+     {
+      "name": "Corvette Action Center - 1969 Corvette specifications",
+      "url": "https://www.corvetteactioncenter.com/tech/c3/1969/69specs.html",
+      "says": "engine options list includes L89"
+     }
+    ],
+    "status": "confirmed",
+    "note": ""
+   },
+   {
+    "gen": "c3",
+    "cid": 427,
+    "hp": 430,
+    "hp_basis": "gross",
+    "rpo": "L88",
+    "name": "427 L88",
+    "trims": [
+     "option"
+    ],
+    "nhra": true,
+    "sources": [
+     {
+      "name": "GM Heritage Center 1969 Corvette Vehicle Information Kit",
+      "url": "https://www.gm.com/content/dam/company/no_search/heritage-archive-docs/vehicle-information-kits/chevrolet/1969-Chevrolet-Corvette.pdf",
+      "says": "kit's Corvette Black Book reprint pages: suffix/options list 427ci, 430hp L88"
+     },
+     {
+      "name": "CorvSport - 1969 Corvette Performance & Specifications",
+      "url": "https://www.corvsport.com/1969-corvette-specifications/",
+      "says": "powertrain table: L88 427, 430 @ rpm"
+     },
+     {
+      "name": "Wikipedia (Corvette C3 / Chevrolet engine articles)",
+      "url": "https://en.wikipedia.org/wiki/Chevrolet_Corvette_(C3)",
+      "says": "engine table (RPO / power): 1969 L88 430 hp, 427 cu in"
+     },
+     {
+      "name": "Corvette Action Center - 1969 Corvette specifications",
+      "url": "https://www.corvetteactioncenter.com/tech/c3/1969/69specs.html",
+      "says": "engine options list includes L88"
+     }
+    ],
+    "status": "confirmed",
+    "note": ""
+   },
+   {
+    "gen": "c3",
+    "cid": 427,
+    "hp": 430,
+    "hp_basis": "gross",
+    "rpo": "ZL1",
+    "name": "427 all-aluminum ZL1",
+    "trims": [
+     "option"
+    ],
+    "nhra": true,
+    "sources": [
+     {
+      "name": "GM Heritage Center 1969 Corvette Vehicle Information Kit",
+      "url": "https://www.gm.com/content/dam/company/no_search/heritage-archive-docs/vehicle-information-kits/chevrolet/1969-Chevrolet-Corvette.pdf",
+      "says": "Black Book suffix ME/MG: 427ci, 430hp (ZL1)"
+     },
+     {
+      "name": "CorvSport - 1969 Corvette Performance & Specifications",
+      "url": "https://www.corvsport.com/1969-corvette-specifications/",
+      "says": "suffix ME (ZL1) manual, MG (ZL1) automatic: 427 cubic inch, 430 HP"
+     },
+     {
+      "name": "Wikipedia (Corvette C3 / Chevrolet engine articles)",
+      "url": "https://en.wikipedia.org/wiki/Chevrolet_Corvette_(C3)",
+      "says": "engine table: 1969 L88 and ZL1 430 hp; two factory-produced 1969 ZL-1 Corvettes"
+     }
+    ],
+    "status": "confirmed",
+    "note": "Two built. NHRA's 1969 427/430 row is not split by L88/ZL1 (two family codes listed)."
+   },
+   {
+    "gen": "c3",
+    "cid": 350,
+    "hp": 370,
+    "hp_basis": "gross",
+    "rpo": "LT-1 (listed)",
+    "name": "350 LT-1",
+    "trims": [],
+    "nhra": true,
+    "sources": [
+     {
+      "name": "GM Heritage Center 1969 Corvette Vehicle Information Kit",
+      "url": "https://www.gm.com/content/dam/company/no_search/heritage-archive-docs/vehicle-information-kits/chevrolet/1969-Chevrolet-Corvette.pdf",
+      "says": "1969 suffix/option lists show 350ci at 300hp and 350hp only; no 370hp engine"
+     },
+     {
+      "name": "Wikipedia (Corvette C3 / Chevrolet engine articles)",
+      "url": "https://en.wikipedia.org/wiki/Chevrolet_small-block_engine_(1954%E2%80%932003)",
+      "says": "C3 table: 1969 350 engines Base 300 and L46 350 only; small-block article: LT-1 'available as a track-ready 350 option in 1970'"
+     },
+     {
+      "name": "CorvSport - 1969 Corvette Performance & Specifications",
+      "url": "https://www.corvsport.com/1969-corvette-specifications/",
+      "says": "1969 powertrain table: Standard 300, L46 350 (no LT1)"
+     }
+    ],
+    "status": "excluded_not_produced",
+    "note": "NHRA lists a 350/370 for 1969; the LT-1 reached production in 1970. No other source shows it as a 1969 Corvette engine."
+   }
+  ],
+  "1970": [
+   {
+    "gen": "c3",
+    "cid": 350,
+    "hp": 300,
+    "hp_basis": "gross",
+    "rpo": "std",
+    "name": "350 V8",
+    "trims": [
+     "base"
+    ],
+    "nhra": true,
+    "sources": [
+     {
+      "name": "GM Heritage Center 1970 Corvette Vehicle Information Kit",
+      "url": "https://www.gm.com/content/dam/company/no_search/heritage-archive-docs/vehicle-information-kits/chevrolet/1970-Chevrolet-Corvette.pdf",
+      "says": "kit's Corvette Black Book reprint pages: suffix list 350ci, 300hp"
+     },
+     {
+      "name": "CorvSport - 1970 Corvette Performance & Specifications",
+      "url": "https://www.corvsport.com/1970-corvette-specifications/",
+      "says": "powertrain table: Standard 350, 300 @ rpm"
+     },
+     {
+      "name": "Wikipedia (Corvette C3 / Chevrolet engine articles)",
+      "url": "https://en.wikipedia.org/wiki/Chevrolet_Corvette_(C3)",
+      "says": "engine table (RPO / power): 1970 std 300 hp, 350 cu in"
+     }
+    ],
+    "status": "confirmed",
+    "note": ""
+   },
+   {
+    "gen": "c3",
+    "cid": 350,
+    "hp": 350,
+    "hp_basis": "gross",
+    "rpo": "L46",
+    "name": "350 V8",
+    "trims": [
+     "option"
+    ],
+    "nhra": true,
+    "sources": [
+     {
+      "name": "GM Heritage Center 1970 Corvette Vehicle Information Kit",
+      "url": "https://www.gm.com/content/dam/company/no_search/heritage-archive-docs/vehicle-information-kits/chevrolet/1970-Chevrolet-Corvette.pdf",
+      "says": "kit's Corvette Black Book reprint pages: suffix list 350ci, 350hp"
+     },
+     {
+      "name": "CorvSport - 1970 Corvette Performance & Specifications",
+      "url": "https://www.corvsport.com/1970-corvette-specifications/",
+      "says": "powertrain table: L46 350, 350 @ rpm"
+     },
+     {
+      "name": "Wikipedia (Corvette C3 / Chevrolet engine articles)",
+      "url": "https://en.wikipedia.org/wiki/Chevrolet_Corvette_(C3)",
+      "says": "engine table (RPO / power): 1970 L46 350 hp, 350 cu in"
+     }
+    ],
+    "status": "confirmed",
+    "note": ""
+   },
+   {
+    "gen": "c3",
+    "cid": 350,
+    "hp": 370,
+    "hp_basis": "gross",
+    "rpo": "LT-1",
+    "name": "350 LT-1 solid-lifter",
+    "trims": [
+     "option",
+     "ZR1 package"
+    ],
+    "nhra": true,
+    "sources": [
+     {
+      "name": "GM Heritage Center 1970 Corvette Vehicle Information Kit",
+      "url": "https://www.gm.com/content/dam/company/no_search/heritage-archive-docs/vehicle-information-kits/chevrolet/1970-Chevrolet-Corvette.pdf",
+      "says": "kit's Corvette Black Book reprint pages: suffix list 350ci, 370hp incl. CTV 350ci, 370hp (ZR1)"
+     },
+     {
+      "name": "CorvSport - 1970 Corvette Performance & Specifications",
+      "url": "https://www.corvsport.com/1970-corvette-specifications/",
+      "says": "powertrain table: LT-1 350, 370 @ rpm"
+     },
+     {
+      "name": "Wikipedia (Corvette C3 / Chevrolet engine articles)",
+      "url": "https://en.wikipedia.org/wiki/Chevrolet_Corvette_(C3)",
+      "says": "engine table (RPO / power): 1970 LT-1 370 hp, 350 cu in"
+     }
+    ],
+    "status": "confirmed",
+    "note": ""
+   },
+   {
+    "gen": "c3",
+    "cid": 454,
+    "hp": 390,
+    "hp_basis": "gross",
+    "rpo": "LS5",
+    "name": "454 V8",
+    "trims": [
+     "option"
+    ],
+    "nhra": true,
+    "sources": [
+     {
+      "name": "GM Heritage Center 1970 Corvette Vehicle Information Kit",
+      "url": "https://www.gm.com/content/dam/company/no_search/heritage-archive-docs/vehicle-information-kits/chevrolet/1970-Chevrolet-Corvette.pdf",
+      "says": "kit's Corvette Black Book reprint pages: suffix list 454ci, 390hp"
+     },
+     {
+      "name": "CorvSport - 1970 Corvette Performance & Specifications",
+      "url": "https://www.corvsport.com/1970-corvette-specifications/",
+      "says": "powertrain table: LS5 454, 390 @ rpm"
+     },
+     {
+      "name": "Wikipedia (Corvette C3 / Chevrolet engine articles)",
+      "url": "https://en.wikipedia.org/wiki/Chevrolet_Corvette_(C3)",
+      "says": "engine table (RPO / power): 1970 LS5 390 hp, 454 cu in"
+     }
+    ],
+    "status": "confirmed",
+    "note": ""
+   },
+   {
+    "gen": "c3",
+    "cid": 454,
+    "hp": 460,
+    "hp_basis": "gross",
+    "rpo": "LS7 (listed)",
+    "name": "454 LS7",
+    "trims": [],
+    "nhra": false,
+    "sources": [
+     {
+      "name": "GM Heritage Center 1970 Corvette Vehicle Information Kit",
+      "url": "https://www.gm.com/content/dam/company/no_search/heritage-archive-docs/vehicle-information-kits/chevrolet/1970-Chevrolet-Corvette.pdf",
+      "says": "factory price/performance sheets list 'RPO LS7 454 cu in 460 HP'; Black Book pages: 'A ZR2 package like ZR1, but with a 460hp (also listed as 465hp) 454ci engine, was planned and advertised...'"
+     },
+     {
+      "name": "Wikipedia (Corvette C3 / Chevrolet engine articles)",
+      "url": "https://en.wikipedia.org/wiki/Chevrolet_Corvette_(C3)",
+      "says": "LS7 ... advertised at 460 hp SAE gross ... was planned (but not produced)"
+     },
+     {
+      "name": "CorvSport - 1970 Corvette Performance & Specifications",
+      "url": "https://www.corvsport.com/1970-corvette-specifications/",
+      "says": "powertrain table includes LS7 454, 460 @ 5,600"
+     }
+    ],
+    "status": "excluded_not_produced",
+    "note": "Advertised in 1970 literature but not built; CorvSport's table lists it as if available. Not in NHRA."
+   }
+  ],
+  "1971": [
+   {
+    "gen": "c3",
+    "cid": 350,
+    "hp": 270,
+    "hp_basis": "gross",
+    "rpo": "std",
+    "name": "350 V8",
+    "trims": [
+     "base"
+    ],
+    "nhra": true,
+    "sources": [
+     {
+      "name": "GM Heritage Center 1971 Corvette Vehicle Information Kit",
+      "url": "https://www.gm.com/content/dam/company/no_search/heritage-archive-docs/vehicle-information-kits/chevrolet/1971-Chevrolet-Corvette.pdf",
+      "says": "kit's Corvette Black Book reprint pages: suffix list 350ci, 270hp"
+     },
+     {
+      "name": "CorvSport - 1971 Corvette Performance & Specifications",
+      "url": "https://www.corvsport.com/1971-corvette-specifications/",
+      "says": "powertrain table: Standard 350, 270 @ rpm"
+     },
+     {
+      "name": "Wikipedia (Corvette C3 / Chevrolet engine articles)",
+      "url": "https://en.wikipedia.org/wiki/Chevrolet_Corvette_(C3)",
+      "says": "engine table 1971 std: 270 hp gross / 210 hp net"
+     }
+    ],
+    "status": "confirmed",
+    "note": "SAE net 210 hp (Wikipedia)."
+   },
+   {
+    "gen": "c3",
+    "cid": 350,
+    "hp": 330,
+    "hp_basis": "gross",
+    "rpo": "LT-1",
+    "name": "350 LT-1",
+    "trims": [
+     "option",
+     "ZR1 package"
+    ],
+    "nhra": true,
+    "sources": [
+     {
+      "name": "GM Heritage Center 1971 Corvette Vehicle Information Kit",
+      "url": "https://www.gm.com/content/dam/company/no_search/heritage-archive-docs/vehicle-information-kits/chevrolet/1971-Chevrolet-Corvette.pdf",
+      "says": "kit's Corvette Black Book reprint pages: suffix list 350ci, 330hp (LT1/ZR1)"
+     },
+     {
+      "name": "CorvSport - 1971 Corvette Performance & Specifications",
+      "url": "https://www.corvsport.com/1971-corvette-specifications/",
+      "says": "powertrain table: LT-1 350, 330 @ rpm"
+     },
+     {
+      "name": "Wikipedia (Corvette C3 / Chevrolet engine articles)",
+      "url": "https://en.wikipedia.org/wiki/Chevrolet_Corvette_(C3)",
+      "says": "engine table 1971 LT-1: 330 hp gross / 275 hp net"
+     }
+    ],
+    "status": "confirmed",
+    "note": "SAE net 275 hp (Wikipedia)."
+   },
+   {
+    "gen": "c3",
+    "cid": 454,
+    "hp": 365,
+    "hp_basis": "gross",
+    "rpo": "LS5",
+    "name": "454 V8",
+    "trims": [
+     "option"
+    ],
+    "nhra": true,
+    "sources": [
+     {
+      "name": "GM Heritage Center 1971 Corvette Vehicle Information Kit",
+      "url": "https://www.gm.com/content/dam/company/no_search/heritage-archive-docs/vehicle-information-kits/chevrolet/1971-Chevrolet-Corvette.pdf",
+      "says": "kit's Corvette Black Book reprint pages: suffix list 454ci, 365hp"
+     },
+     {
+      "name": "CorvSport - 1971 Corvette Performance & Specifications",
+      "url": "https://www.corvsport.com/1971-corvette-specifications/",
+      "says": "powertrain table: LS5 454, 365 @ rpm"
+     },
+     {
+      "name": "Wikipedia (Corvette C3 / Chevrolet engine articles)",
+      "url": "https://en.wikipedia.org/wiki/Chevrolet_Corvette_(C3)",
+      "says": "engine table 1971 LS5: 365 hp gross / 285 hp net"
+     }
+    ],
+    "status": "confirmed",
+    "note": "SAE net 285 hp (Wikipedia)."
+   },
+   {
+    "gen": "c3",
+    "cid": 454,
+    "hp": 425,
+    "hp_basis": "gross",
+    "rpo": "LS6",
+    "name": "454 LS6 aluminum-head",
+    "trims": [
+     "option",
+     "ZR2 package"
+    ],
+    "nhra": true,
+    "sources": [
+     {
+      "name": "GM Heritage Center 1971 Corvette Vehicle Information Kit",
+      "url": "https://www.gm.com/content/dam/company/no_search/heritage-archive-docs/vehicle-information-kits/chevrolet/1971-Chevrolet-Corvette.pdf",
+      "says": "kit's Corvette Black Book reprint pages: suffix list 454ci, 425hp ah (aluminum heads)"
+     },
+     {
+      "name": "CorvSport - 1971 Corvette Performance & Specifications",
+      "url": "https://www.corvsport.com/1971-corvette-specifications/",
+      "says": "powertrain table: LS6 454, 425 @ rpm"
+     },
+     {
+      "name": "Wikipedia (Corvette C3 / Chevrolet engine articles)",
+      "url": "https://en.wikipedia.org/wiki/Chevrolet_Corvette_(C3)",
+      "says": "engine table 1971 LS6: 425 hp gross / 325 hp net"
+     }
+    ],
+    "status": "confirmed",
+    "note": "SAE net 325 hp (Wikipedia). ZR2 offered 1971 only."
+   }
+  ],
+  "1972": [
+   {
+    "gen": "c3",
+    "cid": 350,
+    "hp": 200,
+    "hp_basis": "net",
+    "rpo": "std (ZQ3)",
+    "name": "350 V8",
+    "trims": [
+     "base"
+    ],
+    "nhra": true,
+    "sources": [
+     {
+      "name": "GM Heritage Center 1972 Corvette Vehicle Information Kit",
+      "url": "https://www.gm.com/content/dam/company/no_search/heritage-archive-docs/vehicle-information-kits/chevrolet/1972-Chevrolet-Corvette.pdf",
+      "says": "kit's Corvette Black Book reprint pages: VIN fifth digit K=350ci, 200hp; L=350ci, 255hp; W=454ci, 270hp; suffix list 350ci, 200hp"
+     },
+     {
+      "name": "CorvSport - 1972 Corvette Performance & Specifications",
+      "url": "https://www.corvsport.com/1972-corvette-specifications/",
+      "says": "powertrain table: Standard 350, 200 @ rpm"
+     },
+     {
+      "name": "Wikipedia (Corvette C3 / Chevrolet engine articles)",
+      "url": "https://en.wikipedia.org/wiki/Chevrolet_Corvette_(C3)",
+      "says": "engine table (RPO / power): 1972 std (ZQ3) 200 hp, 350 cu in"
+     }
+    ],
+    "status": "confirmed",
+    "note": ""
+   },
+   {
+    "gen": "c3",
+    "cid": 350,
+    "hp": 255,
+    "hp_basis": "net",
+    "rpo": "LT-1",
+    "name": "350 LT-1",
+    "trims": [
+     "option",
+     "ZR1 package"
+    ],
+    "nhra": true,
+    "sources": [
+     {
+      "name": "GM Heritage Center 1972 Corvette Vehicle Information Kit",
+      "url": "https://www.gm.com/content/dam/company/no_search/heritage-archive-docs/vehicle-information-kits/chevrolet/1972-Chevrolet-Corvette.pdf",
+      "says": "kit's Corvette Black Book reprint pages: VIN fifth digit K=350ci, 200hp; L=350ci, 255hp; W=454ci, 270hp; suffix list 350ci, 255hp"
+     },
+     {
+      "name": "CorvSport - 1972 Corvette Performance & Specifications",
+      "url": "https://www.corvsport.com/1972-corvette-specifications/",
+      "says": "powertrain table: LT-1 350, 255 @ rpm"
+     },
+     {
+      "name": "Wikipedia (Corvette C3 / Chevrolet engine articles)",
+      "url": "https://en.wikipedia.org/wiki/Chevrolet_Corvette_(C3)",
+      "says": "engine table (RPO / power): 1972 LT-1 255 hp, 350 cu in"
+     }
+    ],
+    "status": "confirmed",
+    "note": ""
+   },
+   {
+    "gen": "c3",
+    "cid": 454,
+    "hp": 270,
+    "hp_basis": "net",
+    "rpo": "LS5",
+    "name": "454 V8",
+    "trims": [
+     "option"
+    ],
+    "nhra": true,
+    "sources": [
+     {
+      "name": "GM Heritage Center 1972 Corvette Vehicle Information Kit",
+      "url": "https://www.gm.com/content/dam/company/no_search/heritage-archive-docs/vehicle-information-kits/chevrolet/1972-Chevrolet-Corvette.pdf",
+      "says": "kit's Corvette Black Book reprint pages: VIN fifth digit K=350ci, 200hp; L=350ci, 255hp; W=454ci, 270hp; suffix list 454ci, 270hp"
+     },
+     {
+      "name": "CorvSport - 1972 Corvette Performance & Specifications",
+      "url": "https://www.corvsport.com/1972-corvette-specifications/",
+      "says": "powertrain table: LS5 454, 270 @ rpm"
+     },
+     {
+      "name": "Wikipedia (Corvette C3 / Chevrolet engine articles)",
+      "url": "https://en.wikipedia.org/wiki/Chevrolet_Corvette_(C3)",
+      "says": "engine table (RPO / power): 1972 LS5 270 hp, 454 cu in"
+     }
+    ],
+    "status": "confirmed",
+    "note": ""
+   }
+  ],
+  "1973": [
+   {
+    "gen": "c3",
+    "cid": 350,
+    "hp": 190,
+    "hp_basis": "net",
+    "rpo": "L48 (std)",
+    "name": "350 V8",
+    "trims": [
+     "base"
+    ],
+    "nhra": true,
+    "sources": [
+     {
+      "name": "GM Heritage Center 1973 Corvette Vehicle Information Kit",
+      "url": "https://www.gm.com/content/dam/company/no_search/heritage-archive-docs/vehicle-information-kits/chevrolet/1973-Chevrolet-Corvette.pdf",
+      "says": "kit's Corvette Black Book reprint pages: VIN fifth digit J=350ci, 190hp; T=350ci, 250hp; Z=454ci, 275hp"
+     },
+     {
+      "name": "CorvSport - 1973 Corvette Performance & Specifications",
+      "url": "https://www.corvsport.com/1973-corvette-specifications/",
+      "says": "engine suffix list: 350 cubic inch, 190 HP (its spec table shows 180/210 for the small-blocks, the 1976-77 figures)"
+     },
+     {
+      "name": "Wikipedia (Corvette C3 / Chevrolet engine articles)",
+      "url": "https://en.wikipedia.org/wiki/Chevrolet_Corvette_(C3)",
+      "says": "engine table (RPO / power): 1973 L48 (std) 190 hp, 350 cu in"
+     }
+    ],
+    "status": "confirmed",
+    "note": "CorvSport's 1973 spec table shows 180/210 hp (1976-77 figures); its suffix list gives 190/250."
+   },
+   {
+    "gen": "c3",
+    "cid": 350,
+    "hp": 250,
+    "hp_basis": "net",
+    "rpo": "L82",
+    "name": "350 V8",
+    "trims": [
+     "option"
+    ],
+    "nhra": true,
+    "sources": [
+     {
+      "name": "GM Heritage Center 1973 Corvette Vehicle Information Kit",
+      "url": "https://www.gm.com/content/dam/company/no_search/heritage-archive-docs/vehicle-information-kits/chevrolet/1973-Chevrolet-Corvette.pdf",
+      "says": "kit's Corvette Black Book reprint pages: VIN fifth digit J=350ci, 190hp; T=350ci, 250hp; Z=454ci, 275hp"
+     },
+     {
+      "name": "CorvSport - 1973 Corvette Performance & Specifications",
+      "url": "https://www.corvsport.com/1973-corvette-specifications/",
+      "says": "engine suffix list: 350 cubic inch, 250 HP (its spec table shows 180/210 for the small-blocks, the 1976-77 figures)"
+     },
+     {
+      "name": "Wikipedia (Corvette C3 / Chevrolet engine articles)",
+      "url": "https://en.wikipedia.org/wiki/Chevrolet_Corvette_(C3)",
+      "says": "engine table (RPO / power): 1973 L82 250 hp, 350 cu in"
+     }
+    ],
+    "status": "confirmed",
+    "note": "CorvSport's 1973 spec table shows 180/210 hp (1976-77 figures); its suffix list gives 190/250."
+   },
+   {
+    "gen": "c3",
+    "cid": 454,
+    "hp": 275,
+    "hp_basis": "net",
+    "rpo": "LS4",
+    "name": "454 V8",
+    "trims": [
+     "option"
+    ],
+    "nhra": true,
+    "sources": [
+     {
+      "name": "GM Heritage Center 1973 Corvette Vehicle Information Kit",
+      "url": "https://www.gm.com/content/dam/company/no_search/heritage-archive-docs/vehicle-information-kits/chevrolet/1973-Chevrolet-Corvette.pdf",
+      "says": "kit's Corvette Black Book reprint pages: VIN fifth digit J=350ci, 190hp; T=350ci, 250hp; Z=454ci, 275hp"
+     },
+     {
+      "name": "CorvSport - 1973 Corvette Performance & Specifications",
+      "url": "https://www.corvsport.com/1973-corvette-specifications/",
+      "says": "engine suffix list: 454 cubic inch, 275 HP (its spec table shows 180/210 for the small-blocks, the 1976-77 figures)"
+     },
+     {
+      "name": "Wikipedia (Corvette C3 / Chevrolet engine articles)",
+      "url": "https://en.wikipedia.org/wiki/Chevrolet_Corvette_(C3)",
+      "says": "engine table (RPO / power): 1973 LS4 275 hp, 454 cu in"
+     }
+    ],
+    "status": "confirmed",
+    "note": "NHRA lists the 1973 454 as 245 hp; GM, Wikipedia and CorvSport give 275 hp net."
+   }
+  ],
+  "1974": [
+   {
+    "gen": "c3",
+    "cid": 350,
+    "hp": 195,
+    "hp_basis": "net",
+    "rpo": "L48 (std)",
+    "name": "350 V8",
+    "trims": [
+     "base"
+    ],
+    "nhra": true,
+    "sources": [
+     {
+      "name": "GM Heritage Center 1974 Corvette Vehicle Information Kit",
+      "url": "https://www.gm.com/content/dam/company/no_search/heritage-archive-docs/vehicle-information-kits/chevrolet/1974-Chevrolet-Corvette.pdf",
+      "says": "kit's Corvette Black Book reprint pages: VIN fifth digit J=350ci, 195hp; T=350ci, 250hp; Z=454ci, 270hp"
+     },
+     {
+      "name": "CorvSport - 1974 Corvette Performance & Specifications",
+      "url": "https://www.corvsport.com/1974-corvette-specifications/",
+      "says": "powertrain table: L48 350, 195 @ rpm"
+     },
+     {
+      "name": "Wikipedia (Corvette C3 / Chevrolet engine articles)",
+      "url": "https://en.wikipedia.org/wiki/Chevrolet_Corvette_(C3)",
+      "says": "engine table (RPO / power): 1974 L48 (std) 195 hp, 350 cu in"
+     },
+     {
+      "name": "Corvette Action Center - 1974 Corvette specifications",
+      "url": "https://www.corvetteactioncenter.com/tech/c3/1974/74specs.html",
+      "says": "L48: 350 ci, 195 hp"
+     }
+    ],
+    "status": "confirmed",
+    "note": ""
+   },
+   {
+    "gen": "c3",
+    "cid": 350,
+    "hp": 250,
+    "hp_basis": "net",
+    "rpo": "L82",
+    "name": "350 V8",
+    "trims": [
+     "option"
+    ],
+    "nhra": true,
+    "sources": [
+     {
+      "name": "GM Heritage Center 1974 Corvette Vehicle Information Kit",
+      "url": "https://www.gm.com/content/dam/company/no_search/heritage-archive-docs/vehicle-information-kits/chevrolet/1974-Chevrolet-Corvette.pdf",
+      "says": "kit's Corvette Black Book reprint pages: VIN fifth digit J=350ci, 195hp; T=350ci, 250hp; Z=454ci, 270hp"
+     },
+     {
+      "name": "CorvSport - 1974 Corvette Performance & Specifications",
+      "url": "https://www.corvsport.com/1974-corvette-specifications/",
+      "says": "powertrain table: L82 350, 250 @ rpm"
+     },
+     {
+      "name": "Wikipedia (Corvette C3 / Chevrolet engine articles)",
+      "url": "https://en.wikipedia.org/wiki/Chevrolet_Corvette_(C3)",
+      "says": "engine table (RPO / power): 1974 L82 250 hp, 350 cu in"
+     },
+     {
+      "name": "Corvette Action Center - 1974 Corvette specifications",
+      "url": "https://www.corvetteactioncenter.com/tech/c3/1974/74specs.html",
+      "says": "L82: 350 ci, 250 hp"
+     }
+    ],
+    "status": "confirmed",
+    "note": ""
+   },
+   {
+    "gen": "c3",
+    "cid": 454,
+    "hp": 270,
+    "hp_basis": "net",
+    "rpo": "LS4",
+    "name": "454 V8",
+    "trims": [
+     "option"
+    ],
+    "nhra": true,
+    "sources": [
+     {
+      "name": "GM Heritage Center 1974 Corvette Vehicle Information Kit",
+      "url": "https://www.gm.com/content/dam/company/no_search/heritage-archive-docs/vehicle-information-kits/chevrolet/1974-Chevrolet-Corvette.pdf",
+      "says": "kit's Corvette Black Book reprint pages: VIN fifth digit J=350ci, 195hp; T=350ci, 250hp; Z=454ci, 270hp"
+     },
+     {
+      "name": "CorvSport - 1974 Corvette Performance & Specifications",
+      "url": "https://www.corvsport.com/1974-corvette-specifications/",
+      "says": "powertrain table: LS4 454, 270 @ rpm"
+     },
+     {
+      "name": "Wikipedia (Corvette C3 / Chevrolet engine articles)",
+      "url": "https://en.wikipedia.org/wiki/Chevrolet_Corvette_(C3)",
+      "says": "engine table (RPO / power): 1974 LS4 270 hp, 454 cu in"
+     },
+     {
+      "name": "Corvette Action Center - 1974 Corvette specifications",
+      "url": "https://www.corvetteactioncenter.com/tech/c3/1974/74specs.html",
+      "says": "LS4 listed, 454 ci (hp not given)"
+     }
+    ],
+    "status": "confirmed",
+    "note": "Last year of the big-block Corvette."
+   }
+  ],
+  "1975": [
+   {
+    "gen": "c3",
+    "cid": 350,
+    "hp": 165,
+    "hp_basis": "net",
+    "rpo": "L48 (std)",
+    "name": "350 V8",
+    "trims": [
+     "base"
+    ],
+    "nhra": true,
+    "sources": [
+     {
+      "name": "GM Heritage Center 1975 Corvette Vehicle Information Kit",
+      "url": "https://www.gm.com/content/dam/company/no_search/heritage-archive-docs/vehicle-information-kits/chevrolet/1975-Chevrolet-Corvette.pdf",
+      "says": "kit's Corvette Black Book reprint pages: suffix list / VIN code 350ci, 165hp"
+     },
+     {
+      "name": "CorvSport - 1975 Corvette Performance & Specifications",
+      "url": "https://www.corvsport.com/1975-corvette-specifications/",
+      "says": "engine suffix list / powertrain table: 350, 165 HP"
+     },
+     {
+      "name": "Wikipedia (Corvette C3 / Chevrolet engine articles)",
+      "url": "https://en.wikipedia.org/wiki/Chevrolet_Corvette_(C3)",
+      "says": "engine table (RPO / power): 1975 L48 (std) 165 hp, 350 cu in"
+     },
+     {
+      "name": "Corvette Action Center - 1975 Corvette specifications",
+      "url": "https://www.corvetteactioncenter.com/tech/c3/1975/75specs.html",
+      "says": "L48: 350 ci, 165 hp"
+     }
+    ],
+    "status": "confirmed",
+    "note": ""
+   },
+   {
+    "gen": "c3",
+    "cid": 350,
+    "hp": 205,
+    "hp_basis": "net",
+    "rpo": "L82",
+    "name": "350 V8",
+    "trims": [
+     "option"
+    ],
+    "nhra": true,
+    "sources": [
+     {
+      "name": "GM Heritage Center 1975 Corvette Vehicle Information Kit",
+      "url": "https://www.gm.com/content/dam/company/no_search/heritage-archive-docs/vehicle-information-kits/chevrolet/1975-Chevrolet-Corvette.pdf",
+      "says": "kit's Corvette Black Book reprint pages: suffix list / VIN code 350ci, 205hp"
+     },
+     {
+      "name": "CorvSport - 1975 Corvette Performance & Specifications",
+      "url": "https://www.corvsport.com/1975-corvette-specifications/",
+      "says": "engine suffix list / powertrain table: 350, 205 HP"
+     },
+     {
+      "name": "Wikipedia (Corvette C3 / Chevrolet engine articles)",
+      "url": "https://en.wikipedia.org/wiki/Chevrolet_Corvette_(C3)",
+      "says": "engine table (RPO / power): 1975 L82 205 hp, 350 cu in"
+     },
+     {
+      "name": "Corvette Action Center - 1975 Corvette specifications",
+      "url": "https://www.corvetteactioncenter.com/tech/c3/1975/75specs.html",
+      "says": "L82: 350 ci, 205 hp"
+     }
+    ],
+    "status": "confirmed",
+    "note": ""
+   }
+  ],
+  "1976": [
+   {
+    "gen": "c3",
+    "cid": 350,
+    "hp": 180,
+    "hp_basis": "net",
+    "rpo": "L48 (std)",
+    "name": "350 V8",
+    "trims": [
+     "base"
+    ],
+    "nhra": true,
+    "sources": [
+     {
+      "name": "GM Heritage Center 1976 Corvette Vehicle Information Kit",
+      "url": "https://www.gm.com/content/dam/company/no_search/heritage-archive-docs/vehicle-information-kits/chevrolet/1976-Chevrolet-Corvette.pdf",
+      "says": "kit's Corvette Black Book reprint pages: suffix list / VIN code 350ci, 180hp"
+     },
+     {
+      "name": "CorvSport - 1976 Corvette Performance & Specifications",
+      "url": "https://www.corvsport.com/1976-corvette-specifications/",
+      "says": "engine suffix list / powertrain table: 350, 180 HP"
+     },
+     {
+      "name": "Wikipedia (Corvette C3 / Chevrolet engine articles)",
+      "url": "https://en.wikipedia.org/wiki/Chevrolet_Corvette_(C3)",
+      "says": "engine table (RPO / power): 1976 L48 (std) 180 hp, 350 cu in"
+     },
+     {
+      "name": "Corvette Action Center - 1976 Corvette specifications",
+      "url": "https://www.corvetteactioncenter.com/tech/c3/1976/76specs.html",
+      "says": "L48: 350 ci, 180 hp"
+     }
+    ],
+    "status": "confirmed",
+    "note": ""
+   },
+   {
+    "gen": "c3",
+    "cid": 350,
+    "hp": 210,
+    "hp_basis": "net",
+    "rpo": "L82",
+    "name": "350 V8",
+    "trims": [
+     "option"
+    ],
+    "nhra": true,
+    "sources": [
+     {
+      "name": "GM Heritage Center 1976 Corvette Vehicle Information Kit",
+      "url": "https://www.gm.com/content/dam/company/no_search/heritage-archive-docs/vehicle-information-kits/chevrolet/1976-Chevrolet-Corvette.pdf",
+      "says": "kit's Corvette Black Book reprint pages: suffix list / VIN code 350ci, 210hp"
+     },
+     {
+      "name": "CorvSport - 1976 Corvette Performance & Specifications",
+      "url": "https://www.corvsport.com/1976-corvette-specifications/",
+      "says": "engine suffix list / powertrain table: 350, 210 HP"
+     },
+     {
+      "name": "Wikipedia (Corvette C3 / Chevrolet engine articles)",
+      "url": "https://en.wikipedia.org/wiki/Chevrolet_Corvette_(C3)",
+      "says": "engine table (RPO / power): 1976 L82 210 hp, 350 cu in"
+     },
+     {
+      "name": "Corvette Action Center - 1976 Corvette specifications",
+      "url": "https://www.corvetteactioncenter.com/tech/c3/1976/76specs.html",
+      "says": "L82: 350 ci, 210 hp"
+     }
+    ],
+    "status": "confirmed",
+    "note": ""
+   }
+  ],
+  "1977": [
+   {
+    "gen": "c3",
+    "cid": 350,
+    "hp": 180,
+    "hp_basis": "net",
+    "rpo": "L48 (std)",
+    "name": "350 V8",
+    "trims": [
+     "base"
+    ],
+    "nhra": true,
+    "sources": [
+     {
+      "name": "GM Heritage Center 1977 Corvette Vehicle Information Kit",
+      "url": "https://www.gm.com/content/dam/company/no_search/heritage-archive-docs/vehicle-information-kits/chevrolet/1977-Chevrolet-Corvette.pdf",
+      "says": "kit's Corvette Black Book reprint pages: suffix list / VIN code 350ci, 180hp"
+     },
+     {
+      "name": "CorvSport - 1977 Corvette Performance & Specifications",
+      "url": "https://www.corvsport.com/1977-corvette-specifications/",
+      "says": "engine suffix list / powertrain table: 350, 180 HP"
+     },
+     {
+      "name": "Wikipedia (Corvette C3 / Chevrolet engine articles)",
+      "url": "https://en.wikipedia.org/wiki/Chevrolet_Corvette_(C3)",
+      "says": "engine table (RPO / power): 1977 L48 (std) 180 hp, 350 cu in"
+     },
+     {
+      "name": "Corvette Action Center - 1977 Corvette specifications",
+      "url": "https://www.corvetteactioncenter.com/tech/c3/1977/77specs.html",
+      "says": "L48: 350 ci, 180 hp"
+     }
+    ],
+    "status": "confirmed",
+    "note": ""
+   },
+   {
+    "gen": "c3",
+    "cid": 350,
+    "hp": 210,
+    "hp_basis": "net",
+    "rpo": "L82",
+    "name": "350 V8",
+    "trims": [
+     "option"
+    ],
+    "nhra": true,
+    "sources": [
+     {
+      "name": "GM Heritage Center 1977 Corvette Vehicle Information Kit",
+      "url": "https://www.gm.com/content/dam/company/no_search/heritage-archive-docs/vehicle-information-kits/chevrolet/1977-Chevrolet-Corvette.pdf",
+      "says": "kit's Corvette Black Book reprint pages: suffix list / VIN code 350ci, 210hp"
+     },
+     {
+      "name": "CorvSport - 1977 Corvette Performance & Specifications",
+      "url": "https://www.corvsport.com/1977-corvette-specifications/",
+      "says": "engine suffix list / powertrain table: 350, 210 HP"
+     },
+     {
+      "name": "Wikipedia (Corvette C3 / Chevrolet engine articles)",
+      "url": "https://en.wikipedia.org/wiki/Chevrolet_Corvette_(C3)",
+      "says": "engine table (RPO / power): 1977 L82 210 hp, 350 cu in"
+     },
+     {
+      "name": "Corvette Action Center - 1977 Corvette specifications",
+      "url": "https://www.corvetteactioncenter.com/tech/c3/1977/77specs.html",
+      "says": "L82: 350 ci, 210 hp"
+     }
+    ],
+    "status": "confirmed",
+    "note": ""
+   }
+  ],
+  "1978": [
+   {
+    "gen": "c3",
+    "cid": 350,
+    "hp": 185,
+    "hp_basis": "net",
+    "rpo": "L48 (std)",
+    "name": "350 V8",
+    "trims": [
+     "base"
+    ],
+    "nhra": true,
+    "sources": [
+     {
+      "name": "GM Heritage Center 1978 Corvette Vehicle Information Kit",
+      "url": "https://www.gm.com/content/dam/company/no_search/heritage-archive-docs/vehicle-information-kits/chevrolet/1978-Chevrolet-Corvette.pdf",
+      "says": "factory spec: RPO L48 185 HP / RPO L82 220 HP, net 175 @ 3800 California; Black Book suffix list 350ci, 185hp"
+     },
+     {
+      "name": "CorvSport - 1978 Corvette Performance & Specifications",
+      "url": "https://www.corvsport.com/1978-corvette-specifications/",
+      "says": "engine suffix list / powertrain table: 350, 185 HP"
+     },
+     {
+      "name": "Wikipedia (Corvette C3 / Chevrolet engine articles)",
+      "url": "https://en.wikipedia.org/wiki/Chevrolet_Corvette_(C3)",
+      "says": "engine table (RPO / power): 1978 L48 (std) 185 hp, 350 cu in"
+     },
+     {
+      "name": "Corvette Action Center - 1978 Corvette specifications",
+      "url": "https://www.corvetteactioncenter.com/tech/c3/1978/78specs.html",
+      "says": "L48: 350 ci, 185 hp"
+     }
+    ],
+    "status": "confirmed",
+    "note": "California/high-altitude L48 rated 175 hp (GM kit, CorvSport, Wikipedia)."
+   },
+   {
+    "gen": "c3",
+    "cid": 350,
+    "hp": 220,
+    "hp_basis": "net",
+    "rpo": "L82",
+    "name": "350 V8",
+    "trims": [
+     "option"
+    ],
+    "nhra": true,
+    "sources": [
+     {
+      "name": "GM Heritage Center 1978 Corvette Vehicle Information Kit",
+      "url": "https://www.gm.com/content/dam/company/no_search/heritage-archive-docs/vehicle-information-kits/chevrolet/1978-Chevrolet-Corvette.pdf",
+      "says": "factory spec: RPO L48 185 HP / RPO L82 220 HP, net 175 @ 3800 California; Black Book suffix list 350ci, 220hp"
+     },
+     {
+      "name": "CorvSport - 1978 Corvette Performance & Specifications",
+      "url": "https://www.corvsport.com/1978-corvette-specifications/",
+      "says": "engine suffix list / powertrain table: 350, 220 HP"
+     },
+     {
+      "name": "Wikipedia (Corvette C3 / Chevrolet engine articles)",
+      "url": "https://en.wikipedia.org/wiki/Chevrolet_Corvette_(C3)",
+      "says": "engine table (RPO / power): 1978 L82 220 hp, 350 cu in"
+     },
+     {
+      "name": "Corvette Action Center - 1978 Corvette specifications",
+      "url": "https://www.corvetteactioncenter.com/tech/c3/1978/78specs.html",
+      "says": "L82: 350 ci, 225 hp"
+     }
+    ],
+    "status": "confirmed",
+    "note": "CAC's 1978 page gives 225 hp (the 1979 figure); GM kit spec, Wikipedia and CorvSport give 220."
+   }
+  ],
+  "1979": [
+   {
+    "gen": "c3",
+    "cid": 350,
+    "hp": 195,
+    "hp_basis": "net",
+    "rpo": "L48 (std)",
+    "name": "350 V8",
+    "trims": [
+     "base"
+    ],
+    "nhra": true,
+    "sources": [
+     {
+      "name": "GM Heritage Center 1979 Corvette Vehicle Information Kit",
+      "url": "https://www.gm.com/content/dam/company/no_search/heritage-archive-docs/vehicle-information-kits/chevrolet/1979-Chevrolet-Corvette.pdf",
+      "says": "kit's Corvette Black Book reprint pages: suffix list / VIN code 350ci, 195hp"
+     },
+     {
+      "name": "CorvSport - 1979 Corvette Performance & Specifications",
+      "url": "https://www.corvsport.com/1979-corvette-specifications/",
+      "says": "engine suffix list / powertrain table: 350, 195 HP"
+     },
+     {
+      "name": "Wikipedia (Corvette C3 / Chevrolet engine articles)",
+      "url": "https://en.wikipedia.org/wiki/Chevrolet_Corvette_(C3)",
+      "says": "engine table (RPO / power): 1979 L48 (std) 195 hp, 350 cu in"
+     },
+     {
+      "name": "Corvette Action Center - 1979 Corvette specifications",
+      "url": "https://www.corvetteactioncenter.com/tech/c3/1979/79specs.html",
+      "says": "L48: 350 ci, 195 hp"
+     }
+    ],
+    "status": "confirmed",
+    "note": ""
+   },
+   {
+    "gen": "c3",
+    "cid": 350,
+    "hp": 225,
+    "hp_basis": "net",
+    "rpo": "L82",
+    "name": "350 V8",
+    "trims": [
+     "option"
+    ],
+    "nhra": true,
+    "sources": [
+     {
+      "name": "GM Heritage Center 1979 Corvette Vehicle Information Kit",
+      "url": "https://www.gm.com/content/dam/company/no_search/heritage-archive-docs/vehicle-information-kits/chevrolet/1979-Chevrolet-Corvette.pdf",
+      "says": "kit's Corvette Black Book reprint pages: suffix list / VIN code 350ci, 225hp"
+     },
+     {
+      "name": "CorvSport - 1979 Corvette Performance & Specifications",
+      "url": "https://www.corvsport.com/1979-corvette-specifications/",
+      "says": "engine suffix list / powertrain table: 350, 225 HP"
+     },
+     {
+      "name": "Wikipedia (Corvette C3 / Chevrolet engine articles)",
+      "url": "https://en.wikipedia.org/wiki/Chevrolet_Corvette_(C3)",
+      "says": "engine table (RPO / power): 1979 L82 225 hp, 350 cu in"
+     },
+     {
+      "name": "Corvette Action Center - 1979 Corvette specifications",
+      "url": "https://www.corvetteactioncenter.com/tech/c3/1979/79specs.html",
+      "says": "L82: 350 ci, 225 hp"
+     }
+    ],
+    "status": "confirmed",
+    "note": ""
+   }
+  ],
+  "1980": [
+   {
+    "gen": "c3",
+    "cid": 350,
+    "hp": 190,
+    "hp_basis": "net",
+    "rpo": "L48 (std)",
+    "name": "350 V8",
+    "trims": [
+     "base (49-state)"
+    ],
+    "nhra": true,
+    "sources": [
+     {
+      "name": "GM Heritage Center 1980 Corvette Vehicle Information Kit",
+      "url": "https://www.gm.com/content/dam/company/no_search/heritage-archive-docs/vehicle-information-kits/chevrolet/1980-Chevrolet-Corvette.pdf",
+      "says": "kit's Corvette Black Book reprint pages: VIN fifth digit 8=350ci, 190hp; L=350ci, 230hp; H=305ci, 180hp"
+     },
+     {
+      "name": "CorvSport - 1980 Corvette Performance & Specifications",
+      "url": "https://www.corvsport.com/1980-corvette-specifications/",
+      "says": "engine suffix list:  350 cubic inch, 190 horsepower"
+     },
+     {
+      "name": "Wikipedia (Corvette C3 / Chevrolet engine articles)",
+      "url": "https://en.wikipedia.org/wiki/Chevrolet_Corvette_(C3)",
+      "says": "engine table (RPO / power): 1980 L48 (std) 190 hp, 350 cu in"
+     },
+     {
+      "name": "Corvette Action Center - 1980 Corvette specifications",
+      "url": "https://www.corvetteactioncenter.com/tech/c3/1980/80specs.html",
+      "says": "350 ci, 190 hp"
+     }
+    ],
+    "status": "confirmed",
+    "note": "Not certified in California for 1980."
+   },
+   {
+    "gen": "c3",
+    "cid": 350,
+    "hp": 230,
+    "hp_basis": "net",
+    "rpo": "L82",
+    "name": "350 V8",
+    "trims": [
+     "option (49-state)"
+    ],
+    "nhra": true,
+    "sources": [
+     {
+      "name": "GM Heritage Center 1980 Corvette Vehicle Information Kit",
+      "url": "https://www.gm.com/content/dam/company/no_search/heritage-archive-docs/vehicle-information-kits/chevrolet/1980-Chevrolet-Corvette.pdf",
+      "says": "kit's Corvette Black Book reprint pages: VIN fifth digit 8=350ci, 190hp; L=350ci, 230hp; H=305ci, 180hp"
+     },
+     {
+      "name": "CorvSport - 1980 Corvette Performance & Specifications",
+      "url": "https://www.corvsport.com/1980-corvette-specifications/",
+      "says": "engine suffix list:  350 cubic inch, 230 horsepower"
+     },
+     {
+      "name": "Wikipedia (Corvette C3 / Chevrolet engine articles)",
+      "url": "https://en.wikipedia.org/wiki/Chevrolet_Corvette_(C3)",
+      "says": "engine table (RPO / power): 1980 L82 230 hp, 350 cu in"
+     },
+     {
+      "name": "Corvette Action Center - 1980 Corvette specifications",
+      "url": "https://www.corvetteactioncenter.com/tech/c3/1980/80specs.html",
+      "says": "350 ci, 230 hp"
+     }
+    ],
+    "status": "confirmed",
+    "note": "Final year of the L82."
+   },
+   {
+    "gen": "c3",
+    "cid": 305,
+    "hp": 180,
+    "hp_basis": "net",
+    "rpo": "LG4",
+    "name": "305 V8",
+    "trims": [
+     "California only"
+    ],
+    "nhra": true,
+    "sources": [
+     {
+      "name": "GM Heritage Center 1980 Corvette Vehicle Information Kit",
+      "url": "https://www.gm.com/content/dam/company/no_search/heritage-archive-docs/vehicle-information-kits/chevrolet/1980-Chevrolet-Corvette.pdf",
+      "says": "kit's Corvette Black Book reprint pages: VIN fifth digit 8=350ci, 190hp; L=350ci, 230hp; H=305ci, 180hp; 'California Corvette buyers were required to purchase a 305ci engine, the RPO LG4'"
+     },
+     {
+      "name": "CorvSport - 1980 Corvette Performance & Specifications",
+      "url": "https://www.corvsport.com/1980-corvette-specifications/",
+      "says": "engine suffix list: ZCA 305 cubic inch, 180 horsepower, California emissions"
+     },
+     {
+      "name": "Wikipedia (Corvette C3 / Chevrolet engine articles)",
+      "url": "https://en.wikipedia.org/wiki/Chevrolet_Corvette_(C3)",
+      "says": "engine table (RPO / power): 1980 LG4 180 hp, 305 cu in"
+     },
+     {
+      "name": "Corvette Action Center - 1980 Corvette specifications",
+      "url": "https://www.corvetteactioncenter.com/tech/c3/1980/80specs.html",
+      "says": "305 ci, 180 hp"
+     }
+    ],
+    "status": "confirmed",
+    "note": "Required in California 1980 with a $50 credit (GM kit Black Book pages); the 350s were not certified there."
+   }
+  ],
+  "1981": [
+   {
+    "gen": "c3",
+    "cid": 350,
+    "hp": 190,
+    "hp_basis": "net",
+    "rpo": "L81",
+    "name": "350 V8 (computer-controlled carburetor)",
+    "trims": [
+     "base (only engine)"
+    ],
+    "nhra": true,
+    "sources": [
+     {
+      "name": "GM Heritage Center 1981 Corvette Vehicle Information Kit",
+      "url": "https://www.gm.com/content/dam/company/no_search/heritage-archive-docs/vehicle-information-kits/chevrolet/1981-Chevrolet-Corvette.pdf",
+      "says": "kit's Corvette Black Book reprint pages: 'there were no engine options for 1981... the base 350ci, 190hp L81 engine' (all states incl. California); order guide L81 5.7 Liter 4 BBL"
+     },
+     {
+      "name": "CorvSport - 1981 Corvette Performance & Specifications",
+      "url": "https://www.corvsport.com/1981-corvette-specifications/",
+      "says": "suffix ZDA-ZDD: 350 cubic inch, 190 horsepower"
+     },
+     {
+      "name": "Wikipedia (Corvette C3 / Chevrolet engine articles)",
+      "url": "https://en.wikipedia.org/wiki/Chevrolet_Corvette_(C3)",
+      "says": "engine table (RPO / power): 1981 L81 190 hp, 350 cu in"
+     },
+     {
+      "name": "Corvette Action Center - 1981 Corvette specifications",
+      "url": "https://www.corvetteactioncenter.com/tech/c3/1981/81specs.html",
+      "says": "Base - L81: 350 ci, 190 bhp @ 4200 rpm"
+     }
+    ],
+    "status": "confirmed",
+    "note": ""
+   }
+  ],
+  "1982": [
+   {
+    "gen": "c3",
+    "cid": 350,
+    "hp": 200,
+    "hp_basis": "net",
+    "rpo": "L83",
+    "name": "350 Cross-Fire Injection",
+    "trims": [
+     "base (only engine)"
+    ],
+    "nhra": true,
+    "sources": [
+     {
+      "name": "GM Heritage Center 1982 Corvette Vehicle Information Kit",
+      "url": "https://www.gm.com/content/dam/company/no_search/heritage-archive-docs/vehicle-information-kits/chevrolet/1982-Chevrolet-Corvette.pdf",
+      "says": "order guide: L83 Engine 5.7 Liter Dual C.F.I. V8; Black Book: 350ci, 200hp engine"
+     },
+     {
+      "name": "CorvSport - 1982 Corvette Performance & Specifications",
+      "url": "https://www.corvsport.com/1982-corvette-specifications/",
+      "says": "suffix ZBA/ZBC/ZBN: 350 cubic inch, 200 horsepower"
+     },
+     {
+      "name": "Wikipedia (Corvette C3 / Chevrolet engine articles)",
+      "url": "https://en.wikipedia.org/wiki/Chevrolet_Corvette_(C3)",
+      "says": "engine table 1982 base 350 200 hp; Cross-Fire Injection debuted 1982 (L83)"
+     }
+    ],
+    "status": "confirmed",
+    "note": "Twin throttle-body 'Cross-Fire' injection; automatic transmission only."
+   }
+  ]
+ },
+ "source_index": [
+  {
+   "name": "GM Heritage Center 1953 Corvette Vehicle Information Kit",
+   "url": "https://www.gm.com/content/dam/company/no_search/heritage-archive-docs/vehicle-information-kits/chevrolet/1953-Chevrolet-Corvette.pdf",
+   "type": "manufacturer"
+  },
+  {
+   "name": "Wikipedia (Corvette C1 / Chevrolet engine articles)",
+   "url": "https://en.wikipedia.org/wiki/Chevrolet_Corvette_(C1)",
+   "type": "wikipedia"
+  },
+  {
+   "name": "CorvSport - 1953 Corvette Performance & Specifications",
+   "url": "https://www.corvsport.com/1953-corvette-specifications/",
+   "type": "publication"
+  },
+  {
+   "name": "Corvette Action Center - 1953 Corvette specifications",
+   "url": "https://www.corvetteactioncenter.com/specs/c1/1953/53specs.html",
+   "type": "registry"
+  },
+  {
+   "name": "GM Heritage Center 1954 Corvette Vehicle Information Kit",
+   "url": "https://www.gm.com/content/dam/company/no_search/heritage-archive-docs/vehicle-information-kits/chevrolet/1954-Chevrolet-Corvette.pdf",
+   "type": "manufacturer"
+  },
+  {
+   "name": "CorvSport - 1954 Corvette Performance & Specifications",
+   "url": "https://www.corvsport.com/1954-corvette-specifications/",
+   "type": "publication"
+  },
+  {
+   "name": "Corvette Action Center - 1954 Corvette specifications",
+   "url": "https://www.corvetteactioncenter.com/specs/c1/1954/54specs.html",
+   "type": "registry"
+  },
+  {
+   "name": "GM Heritage Center 1955 Corvette Vehicle Information Kit",
+   "url": "https://www.gm.com/content/dam/company/no_search/heritage-archive-docs/vehicle-information-kits/chevrolet/1955-Chevrolet-Corvette.pdf",
+   "type": "manufacturer"
+  },
+  {
+   "name": "CorvSport - 1955 Corvette Performance & Specifications",
+   "url": "https://www.corvsport.com/1955-corvette-specifications/",
+   "type": "publication"
+  },
+  {
+   "name": "Corvette Action Center - 1955 Corvette specifications",
+   "url": "https://www.corvetteactioncenter.com/specs/c1/1955/55specs.html",
+   "type": "registry"
+  },
+  {
+   "name": "GM Heritage Center 1956 Corvette Vehicle Information Kit",
+   "url": "https://www.gm.com/content/dam/company/no_search/heritage-archive-docs/vehicle-information-kits/chevrolet/1956-Chevrolet-Corvette.pdf",
+   "type": "manufacturer"
+  },
+  {
+   "name": "CorvSport - 1956 Corvette Performance & Specifications",
+   "url": "https://www.corvsport.com/1956-corvette-specifications/",
+   "type": "publication"
+  },
+  {
+   "name": "Corvette Action Center - 1956 Corvette specifications",
+   "url": "https://www.corvetteactioncenter.com/specs/c1/1956/56specs.html",
+   "type": "registry"
+  },
+  {
+   "name": "Wikipedia (Corvette C1 / Chevrolet engine articles)",
+   "url": "https://en.wikipedia.org/wiki/Chevrolet_small-block_engine_(1954%E2%80%932003)",
+   "type": "wikipedia"
+  },
+  {
+   "name": "GM Heritage Center 1957 Corvette Vehicle Information Kit",
+   "url": "https://www.gm.com/content/dam/company/no_search/heritage-archive-docs/vehicle-information-kits/chevrolet/1957-Chevrolet-Corvette.pdf",
+   "type": "manufacturer"
+  },
+  {
+   "name": "CorvSport - 1957 Corvette Performance & Specifications",
+   "url": "https://www.corvsport.com/1957-corvette-specifications/",
+   "type": "publication"
+  },
+  {
+   "name": "Corvette Action Center - 1957 Corvette specifications",
+   "url": "https://www.corvetteactioncenter.com/specs/c1/1957/57specs.html",
+   "type": "registry"
+  },
+  {
+   "name": "GM Heritage Center 1958 Corvette Vehicle Information Kit",
+   "url": "https://www.gm.com/content/dam/company/no_search/heritage-archive-docs/vehicle-information-kits/chevrolet/1958-Chevrolet-Corvette.pdf",
+   "type": "manufacturer"
+  },
+  {
+   "name": "CorvSport - 1958 Corvette Performance & Specifications",
+   "url": "https://www.corvsport.com/1958-corvette-specifications/",
+   "type": "publication"
+  },
+  {
+   "name": "Corvette Action Center - 1958 Corvette specifications",
+   "url": "https://www.corvetteactioncenter.com/specs/c1/1958/58specs.html",
+   "type": "registry"
+  },
+  {
+   "name": "GM Heritage Center 1959 Corvette Vehicle Information Kit",
+   "url": "https://www.gm.com/content/dam/company/no_search/heritage-archive-docs/vehicle-information-kits/chevrolet/1959-Chevrolet-Corvette.pdf",
+   "type": "manufacturer"
+  },
+  {
+   "name": "CorvSport - 1959 Corvette Performance & Specifications",
+   "url": "https://www.corvsport.com/1959-corvette-specifications/",
+   "type": "publication"
+  },
+  {
+   "name": "Corvette Action Center - 1959 Corvette specifications",
+   "url": "https://www.corvetteactioncenter.com/specs/c1/1959/59specs.html",
+   "type": "registry"
+  },
+  {
+   "name": "GM Heritage Center 1960 Corvette Vehicle Information Kit",
+   "url": "https://www.gm.com/content/dam/company/no_search/heritage-archive-docs/vehicle-information-kits/chevrolet/1960-Chevrolet-Corvette.pdf",
+   "type": "manufacturer"
+  },
+  {
+   "name": "CorvSport - 1960 Corvette Performance & Specifications",
+   "url": "https://www.corvsport.com/1960-corvette-specifications/",
+   "type": "publication"
+  },
+  {
+   "name": "Corvette Action Center - 1960 Corvette specifications",
+   "url": "https://www.corvetteactioncenter.com/specs/c1/1960/60specs.html",
+   "type": "registry"
+  },
+  {
+   "name": "GM Heritage Center 1961 Corvette Vehicle Information Kit",
+   "url": "https://www.gm.com/content/dam/company/no_search/heritage-archive-docs/vehicle-information-kits/chevrolet/1961-Chevrolet-Corvette.pdf",
+   "type": "manufacturer"
+  },
+  {
+   "name": "CorvSport - 1961 Corvette Performance & Specifications",
+   "url": "https://www.corvsport.com/1961-corvette-specifications/",
+   "type": "publication"
+  },
+  {
+   "name": "Corvette Action Center - 1961 Corvette specifications",
+   "url": "https://www.corvetteactioncenter.com/specs/c1/1961/61specs.html",
+   "type": "registry"
+  },
+  {
+   "name": "GM Heritage Center 1962 Corvette Vehicle Information Kit",
+   "url": "https://www.gm.com/content/dam/company/no_search/heritage-archive-docs/vehicle-information-kits/chevrolet/1962-Chevrolet-Corvette.pdf",
+   "type": "manufacturer"
+  },
+  {
+   "name": "CorvSport - 1962 Corvette Performance & Specifications",
+   "url": "https://www.corvsport.com/1962-corvette-specifications/",
+   "type": "publication"
+  },
+  {
+   "name": "Corvette Action Center - 1962 Corvette specifications",
+   "url": "https://www.corvetteactioncenter.com/specs/c1/1962/62specs.html",
+   "type": "registry"
+  },
+  {
+   "name": "GM Heritage Center 1963 Corvette Vehicle Information Kit",
+   "url": "https://www.gm.com/content/dam/company/no_search/heritage-archive-docs/vehicle-information-kits/chevrolet/1963-Chevrolet-Corvette.pdf",
+   "type": "manufacturer"
+  },
+  {
+   "name": "Wikipedia (Corvette C2 / Chevrolet engine articles)",
+   "url": "https://en.wikipedia.org/wiki/Chevrolet_Corvette_(C2)",
+   "type": "wikipedia"
+  },
+  {
+   "name": "CorvSport - 1963 Corvette Performance & Specifications",
+   "url": "https://www.corvsport.com/1963-corvette-specifications/",
+   "type": "publication"
+  },
+  {
+   "name": "Corvette Action Center - 1963 Corvette specifications",
+   "url": "https://www.corvetteactioncenter.com/specs/c2/1963/63specs.html",
+   "type": "registry"
+  },
+  {
+   "name": "GM Heritage Center 1964 Corvette Vehicle Information Kit",
+   "url": "https://www.gm.com/content/dam/company/no_search/heritage-archive-docs/vehicle-information-kits/chevrolet/1964-Chevrolet-Corvette.pdf",
+   "type": "manufacturer"
+  },
+  {
+   "name": "CorvSport - 1964 Corvette Performance & Specifications",
+   "url": "https://www.corvsport.com/1964-corvette-specifications/",
+   "type": "publication"
+  },
+  {
+   "name": "GM Heritage Center 1965 Corvette Vehicle Information Kit",
+   "url": "https://www.gm.com/content/dam/company/no_search/heritage-archive-docs/vehicle-information-kits/chevrolet/1965-Chevrolet-Corvette.pdf",
+   "type": "manufacturer"
+  },
+  {
+   "name": "CorvSport - 1965 Corvette Performance & Specifications",
+   "url": "https://www.corvsport.com/1965-corvette-specifications/",
+   "type": "publication"
+  },
+  {
+   "name": "Corvette Action Center - 1965 Corvette specifications",
+   "url": "https://www.corvetteactioncenter.com/specs/c2/1965/65specs.html",
+   "type": "registry"
+  },
+  {
+   "name": "GM Heritage Center 1966 Corvette Vehicle Information Kit",
+   "url": "https://www.gm.com/content/dam/company/no_search/heritage-archive-docs/vehicle-information-kits/chevrolet/1966-Chevrolet-Corvette.pdf",
+   "type": "manufacturer"
+  },
+  {
+   "name": "CorvSport - 1966 Corvette Performance & Specifications",
+   "url": "https://www.corvsport.com/1966-corvette-specifications/",
+   "type": "publication"
+  },
+  {
+   "name": "GM Heritage Center 1967 Corvette Vehicle Information Kit",
+   "url": "https://www.gm.com/content/dam/company/no_search/heritage-archive-docs/vehicle-information-kits/chevrolet/1967-Chevrolet-Corvette.pdf",
+   "type": "manufacturer"
+  },
+  {
+   "name": "CorvSport - 1967 Corvette Performance & Specifications",
+   "url": "https://www.corvsport.com/1967-corvette-specifications/",
+   "type": "publication"
+  },
+  {
+   "name": "Wikipedia (Corvette C2 / Chevrolet engine articles)",
+   "url": "https://en.wikipedia.org/wiki/Chevrolet_big-block_engine",
+   "type": "wikipedia"
+  },
+  {
+   "name": "Corvette Action Center - 1967 Corvette specifications",
+   "url": "https://www.corvetteactioncenter.com/specs/c2/1967/67specs.html",
+   "type": "registry"
+  },
+  {
+   "name": "GM Heritage Center 1968 Corvette Vehicle Information Kit",
+   "url": "https://www.gm.com/content/dam/company/no_search/heritage-archive-docs/vehicle-information-kits/chevrolet/1968-Chevrolet-Corvette.pdf",
+   "type": "manufacturer"
+  },
+  {
+   "name": "CorvSport - 1968 Corvette Performance & Specifications",
+   "url": "https://www.corvsport.com/1968-corvette-specifications/",
+   "type": "publication"
+  },
+  {
+   "name": "Wikipedia (Corvette C3 / Chevrolet engine articles)",
+   "url": "https://en.wikipedia.org/wiki/Chevrolet_Corvette_(C3)",
+   "type": "wikipedia"
+  },
+  {
+   "name": "GM Heritage Center 1969 Corvette Vehicle Information Kit",
+   "url": "https://www.gm.com/content/dam/company/no_search/heritage-archive-docs/vehicle-information-kits/chevrolet/1969-Chevrolet-Corvette.pdf",
+   "type": "manufacturer"
+  },
+  {
+   "name": "CorvSport - 1969 Corvette Performance & Specifications",
+   "url": "https://www.corvsport.com/1969-corvette-specifications/",
+   "type": "publication"
+  },
+  {
+   "name": "Corvette Action Center - 1969 Corvette specifications",
+   "url": "https://www.corvetteactioncenter.com/tech/c3/1969/69specs.html",
+   "type": "registry"
+  },
+  {
+   "name": "GM Heritage Center 1970 Corvette Vehicle Information Kit",
+   "url": "https://www.gm.com/content/dam/company/no_search/heritage-archive-docs/vehicle-information-kits/chevrolet/1970-Chevrolet-Corvette.pdf",
+   "type": "manufacturer"
+  },
+  {
+   "name": "CorvSport - 1970 Corvette Performance & Specifications",
+   "url": "https://www.corvsport.com/1970-corvette-specifications/",
+   "type": "publication"
+  },
+  {
+   "name": "GM Heritage Center 1971 Corvette Vehicle Information Kit",
+   "url": "https://www.gm.com/content/dam/company/no_search/heritage-archive-docs/vehicle-information-kits/chevrolet/1971-Chevrolet-Corvette.pdf",
+   "type": "manufacturer"
+  },
+  {
+   "name": "CorvSport - 1971 Corvette Performance & Specifications",
+   "url": "https://www.corvsport.com/1971-corvette-specifications/",
+   "type": "publication"
+  },
+  {
+   "name": "GM Heritage Center 1972 Corvette Vehicle Information Kit",
+   "url": "https://www.gm.com/content/dam/company/no_search/heritage-archive-docs/vehicle-information-kits/chevrolet/1972-Chevrolet-Corvette.pdf",
+   "type": "manufacturer"
+  },
+  {
+   "name": "CorvSport - 1972 Corvette Performance & Specifications",
+   "url": "https://www.corvsport.com/1972-corvette-specifications/",
+   "type": "publication"
+  },
+  {
+   "name": "GM Heritage Center 1973 Corvette Vehicle Information Kit",
+   "url": "https://www.gm.com/content/dam/company/no_search/heritage-archive-docs/vehicle-information-kits/chevrolet/1973-Chevrolet-Corvette.pdf",
+   "type": "manufacturer"
+  },
+  {
+   "name": "CorvSport - 1973 Corvette Performance & Specifications",
+   "url": "https://www.corvsport.com/1973-corvette-specifications/",
+   "type": "publication"
+  },
+  {
+   "name": "GM Heritage Center 1974 Corvette Vehicle Information Kit",
+   "url": "https://www.gm.com/content/dam/company/no_search/heritage-archive-docs/vehicle-information-kits/chevrolet/1974-Chevrolet-Corvette.pdf",
+   "type": "manufacturer"
+  },
+  {
+   "name": "CorvSport - 1974 Corvette Performance & Specifications",
+   "url": "https://www.corvsport.com/1974-corvette-specifications/",
+   "type": "publication"
+  },
+  {
+   "name": "Corvette Action Center - 1974 Corvette specifications",
+   "url": "https://www.corvetteactioncenter.com/tech/c3/1974/74specs.html",
+   "type": "registry"
+  },
+  {
+   "name": "GM Heritage Center 1975 Corvette Vehicle Information Kit",
+   "url": "https://www.gm.com/content/dam/company/no_search/heritage-archive-docs/vehicle-information-kits/chevrolet/1975-Chevrolet-Corvette.pdf",
+   "type": "manufacturer"
+  },
+  {
+   "name": "CorvSport - 1975 Corvette Performance & Specifications",
+   "url": "https://www.corvsport.com/1975-corvette-specifications/",
+   "type": "publication"
+  },
+  {
+   "name": "Corvette Action Center - 1975 Corvette specifications",
+   "url": "https://www.corvetteactioncenter.com/tech/c3/1975/75specs.html",
+   "type": "registry"
+  },
+  {
+   "name": "GM Heritage Center 1976 Corvette Vehicle Information Kit",
+   "url": "https://www.gm.com/content/dam/company/no_search/heritage-archive-docs/vehicle-information-kits/chevrolet/1976-Chevrolet-Corvette.pdf",
+   "type": "manufacturer"
+  },
+  {
+   "name": "CorvSport - 1976 Corvette Performance & Specifications",
+   "url": "https://www.corvsport.com/1976-corvette-specifications/",
+   "type": "publication"
+  },
+  {
+   "name": "Corvette Action Center - 1976 Corvette specifications",
+   "url": "https://www.corvetteactioncenter.com/tech/c3/1976/76specs.html",
+   "type": "registry"
+  },
+  {
+   "name": "GM Heritage Center 1977 Corvette Vehicle Information Kit",
+   "url": "https://www.gm.com/content/dam/company/no_search/heritage-archive-docs/vehicle-information-kits/chevrolet/1977-Chevrolet-Corvette.pdf",
+   "type": "manufacturer"
+  },
+  {
+   "name": "CorvSport - 1977 Corvette Performance & Specifications",
+   "url": "https://www.corvsport.com/1977-corvette-specifications/",
+   "type": "publication"
+  },
+  {
+   "name": "Corvette Action Center - 1977 Corvette specifications",
+   "url": "https://www.corvetteactioncenter.com/tech/c3/1977/77specs.html",
+   "type": "registry"
+  },
+  {
+   "name": "GM Heritage Center 1978 Corvette Vehicle Information Kit",
+   "url": "https://www.gm.com/content/dam/company/no_search/heritage-archive-docs/vehicle-information-kits/chevrolet/1978-Chevrolet-Corvette.pdf",
+   "type": "manufacturer"
+  },
+  {
+   "name": "CorvSport - 1978 Corvette Performance & Specifications",
+   "url": "https://www.corvsport.com/1978-corvette-specifications/",
+   "type": "publication"
+  },
+  {
+   "name": "Corvette Action Center - 1978 Corvette specifications",
+   "url": "https://www.corvetteactioncenter.com/tech/c3/1978/78specs.html",
+   "type": "registry"
+  },
+  {
+   "name": "GM Heritage Center 1979 Corvette Vehicle Information Kit",
+   "url": "https://www.gm.com/content/dam/company/no_search/heritage-archive-docs/vehicle-information-kits/chevrolet/1979-Chevrolet-Corvette.pdf",
+   "type": "manufacturer"
+  },
+  {
+   "name": "CorvSport - 1979 Corvette Performance & Specifications",
+   "url": "https://www.corvsport.com/1979-corvette-specifications/",
+   "type": "publication"
+  },
+  {
+   "name": "Corvette Action Center - 1979 Corvette specifications",
+   "url": "https://www.corvetteactioncenter.com/tech/c3/1979/79specs.html",
+   "type": "registry"
+  },
+  {
+   "name": "GM Heritage Center 1980 Corvette Vehicle Information Kit",
+   "url": "https://www.gm.com/content/dam/company/no_search/heritage-archive-docs/vehicle-information-kits/chevrolet/1980-Chevrolet-Corvette.pdf",
+   "type": "manufacturer"
+  },
+  {
+   "name": "CorvSport - 1980 Corvette Performance & Specifications",
+   "url": "https://www.corvsport.com/1980-corvette-specifications/",
+   "type": "publication"
+  },
+  {
+   "name": "Corvette Action Center - 1980 Corvette specifications",
+   "url": "https://www.corvetteactioncenter.com/tech/c3/1980/80specs.html",
+   "type": "registry"
+  },
+  {
+   "name": "GM Heritage Center 1981 Corvette Vehicle Information Kit",
+   "url": "https://www.gm.com/content/dam/company/no_search/heritage-archive-docs/vehicle-information-kits/chevrolet/1981-Chevrolet-Corvette.pdf",
+   "type": "manufacturer"
+  },
+  {
+   "name": "CorvSport - 1981 Corvette Performance & Specifications",
+   "url": "https://www.corvsport.com/1981-corvette-specifications/",
+   "type": "publication"
+  },
+  {
+   "name": "Corvette Action Center - 1981 Corvette specifications",
+   "url": "https://www.corvetteactioncenter.com/tech/c3/1981/81specs.html",
+   "type": "registry"
+  },
+  {
+   "name": "GM Heritage Center 1982 Corvette Vehicle Information Kit",
+   "url": "https://www.gm.com/content/dam/company/no_search/heritage-archive-docs/vehicle-information-kits/chevrolet/1982-Chevrolet-Corvette.pdf",
+   "type": "manufacturer"
+  },
+  {
+   "name": "CorvSport - 1982 Corvette Performance & Specifications",
+   "url": "https://www.corvsport.com/1982-corvette-specifications/",
+   "type": "publication"
+  }
+ ],
+ "notes": "NHRA source: nhra_corvette-1953-1982.json (starts 1955). GM Heritage Corvette kits for every year 1953-1982 were OCR'd (vette/k/); from the mid-1950s on most kits include reprinted Corvette Black Book (Michael Bruce Associates) pages with suffix codes, option lists and VIN engine codes, cited here as part of the GM kit (one manufacturer source). Independent sources: Wikipedia (C1/C2/C3 and small-/big-block articles, counted once), CorvSport.com year spec pages (powertrain tables and engine suffix lists; its suffix lists track the Black Book, so CorvSport is not fully independent of the kit pages), Corvette Action Center spec pages (C1, 1963, 1965, 1969 RPO list, 1974-1981; 1964/1966-68/1970-73/1982 pages unavailable or image-only). EPA file is empty (pre-1984). HP: SAE gross 1953-1971 (1971 net figures in note), SAE net 1972-1982. California ratings are noted on the federal entry except the 1980 California-only 305."
+}

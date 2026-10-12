@@ -1,0 +1,645 @@
+{
+ "vehicle": "plymouth-gtx-1967-1971",
+ "note": "Standalone GTX 1967-71 (gen1 = the GTX model run; B-bodies 1967, 1968-70, 1971). 1972 entries are the Road Runner GTX package and duplicate verify_road-runner-1971-1980.json. All Plymouth/Chrysler literature counts as ONE source (one brochure per year cited). HP: SAE gross through 1971, net from 1972.",
+ "years": {
+  "1967": [
+   {
+    "gen": "gen1",
+    "cid": 440,
+    "hp": 375,
+    "hp_basis": "gross",
+    "carb": "4-bbl",
+    "name": "Super Commando 440",
+    "trims": [
+     "GTX (std)"
+    ],
+    "nhra": true,
+    "nhra_codes": [
+     "C-440-09"
+    ],
+    "sources": [
+     {
+      "name": "Plymouth 1967 Belvedere/GTX brochure, GTX p.2 and engine spec table p.22",
+      "url": "https://www.oldcarbrochures.org/United%20States/Plymouth/1967%20Plymouth/1967%20Plymouth%20Belvedere/slides/1967_Plymouth_Belvedere-22-23.html",
+      "says": "spec table: '440 Super Commando Standard GTX V-8', 375 hp at 4600 rpm; text: 'the super-hot Super Commando 440 cu. in. V-8 ... standard'"
+     },
+     {
+      "name": "Wikipedia: Plymouth GTX",
+      "url": "https://en.wikipedia.org/wiki/Plymouth_GTX",
+      "says": "1967: 440 V8 (Super Commando 440) 375 hp gross"
+     },
+     {
+      "name": "MuscleCarClub.com: Plymouth GTX year-by-year engines",
+      "url": "https://musclecarclub.com/plymouth-gtx/",
+      "says": "1967: 440 cid Super Commando V8, 4bbl, 375 hp"
+     },
+     {
+      "name": "Conceptcarz (Dan Vaughan): Plymouth GTX history",
+      "url": "https://www.conceptcarz.com/w6752/plymouth-gtx.aspx",
+      "says": "Super Commando 440 ... 375 horsepower"
+     }
+    ],
+    "status": "confirmed",
+    "note": "SAE gross. First GTX year (Belvedere GTX hardtop and convertible). TorqueFlite standard, 4-speed optional."
+   },
+   {
+    "gen": "gen1",
+    "cid": 426,
+    "hp": 425,
+    "hp_basis": "gross",
+    "carb": "2x4-bbl",
+    "name": "426 Street Hemi",
+    "trims": [
+     "GTX (opt)"
+    ],
+    "nhra": true,
+    "nhra_codes": [
+     "C-426-14"
+    ],
+    "sources": [
+     {
+      "name": "Plymouth 1967 Belvedere/GTX brochure, GTX p.2 and engine spec table p.22",
+      "url": "https://www.oldcarbrochures.org/United%20States/Plymouth/1967%20Plymouth/1967%20Plymouth%20Belvedere/slides/1967_Plymouth_Belvedere-22-23.html",
+      "says": "spec table: '426 Optional Hemi', 425 hp at 5000 rpm; text: 'The fantastic Street Hemi is available at extra cost'"
+     },
+     {
+      "name": "Wikipedia: Plymouth GTX",
+      "url": "https://en.wikipedia.org/wiki/Plymouth_GTX",
+      "says": "426 Hemi V8 425 hp gross"
+     },
+     {
+      "name": "MuscleCarClub.com: Plymouth GTX year-by-year engines",
+      "url": "https://musclecarclub.com/plymouth-gtx/",
+      "says": "Either a 440 cid Super Commando V8 or the iconic 426 HEMI V8; 425 hp"
+     },
+     {
+      "name": "Conceptcarz (Dan Vaughan): Plymouth GTX history",
+      "url": "https://www.conceptcarz.com/w6752/plymouth-gtx.aspx",
+      "says": "optional 426 Hemi, 425 hp"
+     }
+    ],
+    "status": "confirmed",
+    "note": "SAE gross."
+   }
+  ],
+  "1968": [
+   {
+    "gen": "gen1",
+    "cid": 440,
+    "hp": 375,
+    "hp_basis": "gross",
+    "carb": "4-bbl",
+    "name": "Super Commando 440",
+    "trims": [
+     "GTX (std)"
+    ],
+    "nhra": true,
+    "nhra_codes": [
+     "C-440-07"
+    ],
+    "sources": [
+     {
+      "name": "Plymouth 1968 mid-size brochure, GTX pp.4-5 and engines/specifications pp.26-27 (+ 1968 full-line brochure spec p.30)",
+      "url": "https://www.oldcarbrochures.org/United%20States/Plymouth/1968%20Plymouth/1968-Plymouth-Mid-Size-Brochure/slides/1968_Plymouth_Mid-Size-26-27.html",
+      "says": "'Our Super Commando 440 V-8 is standard on GTX'; engines page: 375 horsepower, 'standard for GTX'; spec table 440 Super Commando 375 hp at 4600"
+     },
+     {
+      "name": "Wikipedia: Plymouth GTX",
+      "url": "https://en.wikipedia.org/wiki/Plymouth_GTX",
+      "says": "1968-1970: 440 V8 375 hp gross"
+     },
+     {
+      "name": "MuscleCarClub.com: Plymouth GTX year-by-year engines",
+      "url": "https://musclecarclub.com/plymouth-gtx/",
+      "says": "carried over the same 426 HEMI and 440 Super Commando V8 engines; 375 hp"
+     },
+     {
+      "name": "Conceptcarz (Dan Vaughan): Plymouth GTX history",
+      "url": "https://www.conceptcarz.com/w6752/plymouth-gtx.aspx",
+      "says": "standard 440 with 375 hp"
+     }
+    ],
+    "status": "confirmed",
+    "note": "SAE gross. New-body GTX hardtop and convertible."
+   },
+   {
+    "gen": "gen1",
+    "cid": 426,
+    "hp": 425,
+    "hp_basis": "gross",
+    "carb": "2x4-bbl",
+    "name": "426 Street Hemi",
+    "trims": [
+     "GTX (opt)"
+    ],
+    "nhra": true,
+    "nhra_codes": [
+     "C-426-13"
+    ],
+    "sources": [
+     {
+      "name": "Plymouth 1968 mid-size brochure, GTX pp.4-5 and engines/specifications pp.26-27 (+ 1968 full-line brochure spec p.30)",
+      "url": "https://www.oldcarbrochures.org/United%20States/Plymouth/1968%20Plymouth/1968-Plymouth-Mid-Size-Brochure/slides/1968_Plymouth_Mid-Size-26-27.html",
+      "says": "'Optional power: The famous Street Hemi'; spec table 426 Hemi 425 hp at 5000, optional on Road Runner and GTX"
+     },
+     {
+      "name": "Wikipedia: Plymouth GTX",
+      "url": "https://en.wikipedia.org/wiki/Plymouth_GTX",
+      "says": "426 Hemi V8 425 hp gross"
+     },
+     {
+      "name": "MuscleCarClub.com: Plymouth GTX year-by-year engines",
+      "url": "https://musclecarclub.com/plymouth-gtx/",
+      "says": "426 HEMI, 425 hp"
+     },
+     {
+      "name": "Conceptcarz (Dan Vaughan): Plymouth GTX history",
+      "url": "https://www.conceptcarz.com/w6752/plymouth-gtx.aspx",
+      "says": "optional Hemi at 425 hp"
+     }
+    ],
+    "status": "confirmed",
+    "note": "SAE gross."
+   }
+  ],
+  "1969": [
+   {
+    "gen": "gen1",
+    "cid": 440,
+    "hp": 375,
+    "hp_basis": "gross",
+    "carb": "4-bbl",
+    "name": "Super Commando 440",
+    "trims": [
+     "GTX (std)"
+    ],
+    "nhra": true,
+    "nhra_codes": [
+     "C-440-07"
+    ],
+    "sources": [
+     {
+      "name": "Plymouth 1969 Belvedere brochure, GTX pp.2-3",
+      "url": "https://www.oldcarbrochures.org/United%20States/Plymouth/1969-Plymouth/1969-Plymouth-Belvedere-Brochure/slides/1969_Plymouth_Belvedere-02-03.html",
+      "says": "'The 440-cube Super Commando comes with 4-barrel carb ... It delivers 375 horsepower'"
+     },
+     {
+      "name": "Wikipedia: Plymouth GTX",
+      "url": "https://en.wikipedia.org/wiki/Plymouth_GTX",
+      "says": "1968-1970: 440 V8 375 hp gross"
+     },
+     {
+      "name": "MuscleCarClub.com: Plymouth GTX year-by-year engines",
+      "url": "https://musclecarclub.com/plymouth-gtx/",
+      "says": "1969: 440 cid V8 4bbl 375 hp; lineup identical to previous years"
+     },
+     {
+      "name": "Conceptcarz (Dan Vaughan): Plymouth GTX history",
+      "url": "https://www.conceptcarz.com/w6752/plymouth-gtx.aspx",
+      "says": "base 440: 375 hp"
+     }
+    ],
+    "status": "confirmed",
+    "note": "SAE gross. Air Grabber hood new option."
+   },
+   {
+    "gen": "gen1",
+    "cid": 426,
+    "hp": 425,
+    "hp_basis": "gross",
+    "carb": "2x4-bbl",
+    "name": "426 Street Hemi",
+    "trims": [
+     "GTX (opt)"
+    ],
+    "nhra": true,
+    "nhra_codes": [
+     "C-426-13"
+    ],
+    "sources": [
+     {
+      "name": "Plymouth 1969 Belvedere brochure, GTX pp.2-3",
+      "url": "https://www.oldcarbrochures.org/United%20States/Plymouth/1969-Plymouth/1969-Plymouth-Belvedere-Brochure/slides/1969_Plymouth_Belvedere-02-03.html",
+      "says": "'Hemi is called Hemi because it has hemispherical combustion chambers ... If you're serious about sanctioned racing, Hemi is it'"
+     },
+     {
+      "name": "Wikipedia: Plymouth GTX",
+      "url": "https://en.wikipedia.org/wiki/Plymouth_GTX",
+      "says": "426 Hemi V8 425 hp gross"
+     },
+     {
+      "name": "MuscleCarClub.com: Plymouth GTX year-by-year engines",
+      "url": "https://musclecarclub.com/plymouth-gtx/",
+      "says": "1969: 426 HEMI 425 hp"
+     },
+     {
+      "name": "Conceptcarz (Dan Vaughan): Plymouth GTX history",
+      "url": "https://www.conceptcarz.com/w6752/plymouth-gtx.aspx",
+      "says": "optional Hemi 425 hp"
+     }
+    ],
+    "status": "confirmed",
+    "note": "SAE gross. The 1969 GTX brochure names the Hemi as the option but prints no hp; 425 hp is from the 1968/1970 Plymouth spec tables and the other sources."
+   },
+   {
+    "gen": "gen1",
+    "cid": 440,
+    "hp": 390,
+    "hp_basis": "gross",
+    "carb": "3x2-bbl",
+    "name": "440 Six Barrel (A12)",
+    "trims": [
+     "not offered on GTX"
+    ],
+    "nhra": false,
+    "sources": [
+     {
+      "name": "Conceptcarz (Dan Vaughan): Plymouth GTX history",
+      "url": "https://www.conceptcarz.com/w6752/plymouth-gtx.aspx",
+      "says": "claims the 1969 GTX 440 got three 2-bbl carbs for 390 hp"
+     }
+    ],
+    "status": "excluded_not_produced",
+    "note": "Not a 1969 GTX engine. The mid-1969 A12 440 Six Barrel package was a Road Runner (and Dodge Super Bee) option only. NHRA lists no 440/390 under 1969 GTX; Wikipedia and MuscleCarClub give the 440-6 to the GTX in 1970 only; the 1969 GTX brochure lists only the 440 4-bbl and Hemi. Conceptcarz alone claims it and is wrong. The 1969 A12 belongs on the Road Runner page."
+   }
+  ],
+  "1970": [
+   {
+    "gen": "gen1",
+    "cid": 440,
+    "hp": 375,
+    "hp_basis": "gross",
+    "carb": "4-bbl",
+    "name": "Super Commando 440",
+    "trims": [
+     "GTX (std)"
+    ],
+    "nhra": true,
+    "nhra_codes": [
+     "C-440-12"
+    ],
+    "sources": [
+     {
+      "name": "Plymouth 1970 Rapid Transit System brochure, spec spread pp.14-15",
+      "url": "https://www.oldcarbrochures.com/static/NA/Plymouth/1970%20Plymouth/1970%20Plymouth%20Rapid%20Transit%20System/1970%20Plymouth%20Rapid%20Transit%20System-14-15.html",
+      "says": "GTX column: 440, 375 @ 4600"
+     },
+     {
+      "name": "Wikipedia: Plymouth GTX",
+      "url": "https://en.wikipedia.org/wiki/Plymouth_GTX",
+      "says": "1968-1970: 440 V8 375 hp gross"
+     },
+     {
+      "name": "MuscleCarClub.com: Plymouth GTX year-by-year engines",
+      "url": "https://musclecarclub.com/plymouth-gtx/",
+      "says": "1970: 440 cid V8 4bbl 375 hp"
+     },
+     {
+      "name": "Motorious: Rare 1970 Plymouth GTX 440 Six Barrel",
+      "url": "https://www.motorious.com/articles/handpicked/rare-1970-plymouth-gtx-440-six-barrel",
+      "says": "'Super Commando' 440-cid V8 with 375 horsepower (standard equipment)"
+     }
+    ],
+    "status": "confirmed",
+    "note": "SAE gross."
+   },
+   {
+    "gen": "gen1",
+    "cid": 440,
+    "hp": 390,
+    "hp_basis": "gross",
+    "carb": "3x2-bbl",
+    "name": "440 Six Barrel (440+6)",
+    "trims": [
+     "GTX (opt)"
+    ],
+    "nhra": true,
+    "nhra_codes": [
+     "C-440-04"
+    ],
+    "sources": [
+     {
+      "name": "Plymouth 1970 Rapid Transit System brochure, spec spread pp.14-15",
+      "url": "https://www.oldcarbrochures.com/static/NA/Plymouth/1970%20Plymouth/1970%20Plymouth%20Rapid%20Transit%20System/1970%20Plymouth%20Rapid%20Transit%20System-14-15.html",
+      "says": "GTX column: 440 6-bbl., 390 @ 4700, triple Holley 2-bbl"
+     },
+     {
+      "name": "Wikipedia: Plymouth GTX",
+      "url": "https://en.wikipedia.org/wiki/Plymouth_GTX",
+      "says": "440 V8 6-bbl 390 hp (1970 only within 1968-70)"
+     },
+     {
+      "name": "MuscleCarClub.com: Plymouth GTX year-by-year engines",
+      "url": "https://musclecarclub.com/plymouth-gtx/",
+      "says": "1970: 440 Super Commando Six-Pack (3x2bbl) 390 hp"
+     },
+     {
+      "name": "Motorious: Rare 1970 Plymouth GTX 440 Six Barrel",
+      "url": "https://www.motorious.com/articles/handpicked/rare-1970-plymouth-gtx-440-six-barrel",
+      "says": "440-cid 'Six Barrel' V8 with 390 horsepower (optional)"
+     }
+    ],
+    "status": "confirmed",
+    "note": "SAE gross. First year the 440-6 was offered on the GTX. 'Six Pack' is Dodge's name; Plymouth used 'Six Barrel' / '440+6'."
+   },
+   {
+    "gen": "gen1",
+    "cid": 426,
+    "hp": 425,
+    "hp_basis": "gross",
+    "carb": "2x4-bbl",
+    "name": "426 Street Hemi",
+    "trims": [
+     "GTX (opt)"
+    ],
+    "nhra": true,
+    "nhra_codes": [
+     "C-426-13",
+     "C-426-15"
+    ],
+    "sources": [
+     {
+      "name": "Plymouth 1970 Rapid Transit System brochure, spec spread pp.14-15",
+      "url": "https://www.oldcarbrochures.com/static/NA/Plymouth/1970%20Plymouth/1970%20Plymouth%20Rapid%20Transit%20System/1970%20Plymouth%20Rapid%20Transit%20System-14-15.html",
+      "says": "GTX column: 426 Hemi, 425 @ 5000, dual Carter AFB 4-bbl, Air Grabber standard"
+     },
+     {
+      "name": "Wikipedia: Plymouth GTX",
+      "url": "https://en.wikipedia.org/wiki/Plymouth_GTX",
+      "says": "426 Hemi V8 425 hp gross"
+     },
+     {
+      "name": "MuscleCarClub.com: Plymouth GTX year-by-year engines",
+      "url": "https://musclecarclub.com/plymouth-gtx/",
+      "says": "1970: 426 HEMI 425 hp"
+     },
+     {
+      "name": "Motorious: Rare 1970 Plymouth GTX 440 Six Barrel",
+      "url": "https://www.motorious.com/articles/handpicked/rare-1970-plymouth-gtx-440-six-barrel",
+      "says": "426-cid 'Street HEMI' V8 with 425 horsepower (optional)"
+     }
+    ],
+    "status": "confirmed",
+    "note": "SAE gross."
+   }
+  ],
+  "1971": [
+   {
+    "gen": "gen1",
+    "cid": 440,
+    "hp": 370,
+    "hp_basis": "gross",
+    "carb": "4-bbl",
+    "name": "Super Commando 440",
+    "trims": [
+     "GTX (std)"
+    ],
+    "nhra": true,
+    "nhra_codes": [
+     "C-440-06",
+     "C-440-12"
+    ],
+    "sources": [
+     {
+      "name": "Plymouth 1971 Rapid Transit System brochure p.12 (GTX spec + engine table) and 1971 Satellite/Road Runner/GTX brochure engine chart p.20",
+      "url": "https://www.oldcarbrochures.com/static/NA/Plymouth/1971%20Plymouth/1971%20%20Plymouth%20Rapid%20Transit%20System/1971%20Plymouth%20Rapid%20Transit%20System-12.jpg",
+      "says": "1971 GTX drive train (std): 440 CID, 370 hp @ 4600 gross, 305 hp net; engine table 'Std. GTX, Sport Fury GT'"
+     },
+     {
+      "name": "Wikipedia: Plymouth GTX",
+      "url": "https://en.wikipedia.org/wiki/Plymouth_GTX",
+      "says": "1971: 440 V8 370 hp gross / 305 hp net"
+     },
+     {
+      "name": "MuscleCarClub.com: Plymouth GTX year-by-year engines",
+      "url": "https://musclecarclub.com/plymouth-gtx/",
+      "says": "1971: 440 cid V8 4bbl 370 hp"
+     },
+     {
+      "name": "Conceptcarz (Dan Vaughan): Plymouth GTX history",
+      "url": "https://www.conceptcarz.com/w6752/plymouth-gtx.aspx",
+      "says": "standard 440 made five less horsepower than the prior year"
+     }
+    ],
+    "status": "confirmed",
+    "note": "SAE gross 370 (Plymouth also printed 305 net). New fuselage B-body; last year of the standalone GTX."
+   },
+   {
+    "gen": "gen1",
+    "cid": 440,
+    "hp": 385,
+    "hp_basis": "gross",
+    "carb": "3x2-bbl",
+    "name": "440 Six Barrel (440+6)",
+    "trims": [
+     "GTX (opt)"
+    ],
+    "nhra": true,
+    "nhra_codes": [
+     "C-440-04",
+     "C-440-16"
+    ],
+    "sources": [
+     {
+      "name": "Plymouth 1971 Rapid Transit System brochure p.12 (GTX spec + engine table) and 1971 Satellite/Road Runner/GTX brochure engine chart p.20",
+      "url": "https://www.oldcarbrochures.com/static/NA/Plymouth/1971%20Plymouth/1971%20%20Plymouth%20Rapid%20Transit%20System/1971%20Plymouth%20Rapid%20Transit%20System-12.jpg",
+      "says": "engine table: 440+6 V-8, 385 @ 4700 gross, 330 @ 4700 net, 'Opt. Cuda, Road Runner, GTX'"
+     },
+     {
+      "name": "Wikipedia: Plymouth GTX",
+      "url": "https://en.wikipedia.org/wiki/Plymouth_GTX",
+      "says": "1971: 440-6 V8 385 hp gross / 330 hp net"
+     },
+     {
+      "name": "MuscleCarClub.com: Plymouth GTX year-by-year engines",
+      "url": "https://musclecarclub.com/plymouth-gtx/",
+      "says": "1971: 440 Six-Pack 3x2bbl 385 hp"
+     }
+    ],
+    "status": "confirmed",
+    "note": "SAE gross 385 (net 330). Conceptcarz says 390 hp, the 1970 rating - wrong for 1971."
+   },
+   {
+    "gen": "gen1",
+    "cid": 426,
+    "hp": 425,
+    "hp_basis": "gross",
+    "carb": "2x4-bbl",
+    "name": "426 Street Hemi",
+    "trims": [
+     "GTX (opt)"
+    ],
+    "nhra": true,
+    "nhra_codes": [
+     "C-426-13",
+     "C-426-15"
+    ],
+    "sources": [
+     {
+      "name": "Plymouth 1971 Rapid Transit System brochure p.12 (GTX spec + engine table) and 1971 Satellite/Road Runner/GTX brochure engine chart p.20",
+      "url": "https://www.oldcarbrochures.com/static/NA/Plymouth/1971%20Plymouth/1971%20%20Plymouth%20Rapid%20Transit%20System/1971%20Plymouth%20Rapid%20Transit%20System-12.jpg",
+      "says": "engine table: 426 Hemi V-8, 425 @ 5000 gross, 350 @ 5000 net, 'Opt. Cuda, Road Runner, GTX'"
+     },
+     {
+      "name": "Wikipedia: Plymouth GTX",
+      "url": "https://en.wikipedia.org/wiki/Plymouth_GTX",
+      "says": "1971: 426 Hemi 425 hp gross / 350 hp net; 30 Hemi cars of 2,942 GTXs"
+     },
+     {
+      "name": "MuscleCarClub.com: Plymouth GTX year-by-year engines",
+      "url": "https://musclecarclub.com/plymouth-gtx/",
+      "says": "1971: 426 HEMI 425 hp"
+     },
+     {
+      "name": "Conceptcarz (Dan Vaughan): Plymouth GTX history",
+      "url": "https://www.conceptcarz.com/w6752/plymouth-gtx.aspx",
+      "says": "optional Hemi 425 hp"
+     }
+    ],
+    "status": "confirmed",
+    "note": "SAE gross 425 (net 350). Last year of the Street Hemi; Wikipedia: 30 Hemi GTXs."
+   }
+  ],
+  "1972": [
+   {
+    "gen": "gen2",
+    "cid": 440,
+    "hp": 280,
+    "hp_basis": "net",
+    "carb": "4-bbl",
+    "name": "Road Runner GTX 440",
+    "trims": [
+     "Road Runner GTX (option package, not a separate model)"
+    ],
+    "nhra": true,
+    "sources": [
+     {
+      "name": "Plymouth 1972 Satellite brochure (Road Runner pp.10-11) and 1972 Chrysler-Plymouth brochure pp.10-11 + product-changes sheet 9/20/71",
+      "url": "https://www.oldcarbrochures.com/static/NA/Plymouth/1972%20Plymouth/1972%20Plymouth%20Satellite%20Brochure/image6.html",
+      "says": "'Or go all the way with the GTX engines which include a 440 4-bbl. or 6-bbl. V-8'"
+     },
+     {
+      "name": "Wikipedia: Plymouth Road Runner (cites Mueller; Dodge and Plymouth Muscle Car Red Book; Standard Catalog)",
+      "url": "https://en.wikipedia.org/wiki/Plymouth_Road_Runner",
+      "says": "The 280 hp 440 engine was the basis for the Road Runner GTX"
+     },
+     {
+      "name": "Hagerty Valuation Tools: Plymouth Road Runner by year (login-walled; text seen via search excerpts)",
+      "url": "https://www.hagerty.com/valuation-tools/plymouth/road_runner",
+      "says": "280 bhp 440 cid V-8 for $153; 440 brought GTX identification"
+     },
+     {
+      "name": "MuscleCarClub.com: Plymouth Road Runner year-by-year engine specifications",
+      "url": "https://musclecarclub.com/plymouth-roadrunner/",
+      "says": "440 4bbl 280 hp"
+     }
+    ],
+    "status": "confirmed",
+    "note": "SAE net. The standalone GTX ended after 1971; from 1972 a Road Runner with the 440 4-bbl was badged Road Runner GTX (Wikipedia GTX article agrees). Copied from verify_road-runner-1971-1980.json (NHRA there lists 280 and 290 hp for the same codes; not in nhra_gtx.json). Continued 1973 (280 net) and 1974 (275 net) - see the Road Runner file. Belongs on the Road Runner page, not as a GTX model year."
+   },
+   {
+    "gen": "gen2",
+    "cid": 440,
+    "hp": 330,
+    "hp_basis": "net",
+    "carb": "3x2-bbl",
+    "name": "440 Six Barrel",
+    "trims": [
+     "Road Runner GTX (listed, cancelled)"
+    ],
+    "nhra": false,
+    "sources": [
+     {
+      "name": "Plymouth 1972 Satellite brochure (Road Runner pp.10-11) and 1972 Chrysler-Plymouth brochure pp.10-11 + product-changes sheet 9/20/71",
+      "url": "https://www.oldcarbrochures.com/static/NA/Plymouth/1972%20Plymouth/1972%20Plymouth%20Satellite%20Brochure/image6.html",
+      "says": "early 1972 literature lists a GTX '440 ... 6-bbl. V-8'"
+     },
+     {
+      "name": "Wikipedia: Plymouth Road Runner (cites Mueller; Dodge and Plymouth Muscle Car Red Book; Standard Catalog)",
+      "url": "https://en.wikipedia.org/wiki/Plymouth_Road_Runner",
+      "says": "only five 440 Six Barrel cars produced before the option was dropped in fall 1971"
+     },
+     {
+      "name": "Hagerty Valuation Tools: Plymouth Road Runner by year (login-walled; text seen via search excerpts)",
+      "url": "https://www.hagerty.com/valuation-tools/plymouth/road_runner",
+      "says": "Five cars believed delivered with a 330 bhp 440 Six-Pack"
+     }
+    ],
+    "status": "disputed",
+    "note": "SAE net. Printed in early 1972 literature, dropped in fall 1971 for emissions; about 5 built. Not in NHRA. Do not show as a regular option."
+   }
+  ]
+ },
+ "source_index": [
+  {
+   "name": "NHRA Stock Car Classification Guide (scratchpad nhra_gtx.json)",
+   "url": "nhra_gtx.json",
+   "type": "registry"
+  },
+  {
+   "name": "Plymouth 1967 Belvedere/GTX brochure, GTX p.2 and engine spec table p.22",
+   "url": "https://www.oldcarbrochures.org/United%20States/Plymouth/1967%20Plymouth/1967%20Plymouth%20Belvedere/slides/1967_Plymouth_Belvedere-22-23.html",
+   "type": "manufacturer"
+  },
+  {
+   "name": "Plymouth 1968 mid-size brochure, GTX pp.4-5 and engines/specifications pp.26-27 (+ 1968 full-line brochure spec p.30)",
+   "url": "https://www.oldcarbrochures.org/United%20States/Plymouth/1968%20Plymouth/1968-Plymouth-Mid-Size-Brochure/slides/1968_Plymouth_Mid-Size-26-27.html",
+   "type": "manufacturer"
+  },
+  {
+   "name": "Plymouth 1969 Belvedere brochure, GTX pp.2-3",
+   "url": "https://www.oldcarbrochures.org/United%20States/Plymouth/1969-Plymouth/1969-Plymouth-Belvedere-Brochure/slides/1969_Plymouth_Belvedere-02-03.html",
+   "type": "manufacturer"
+  },
+  {
+   "name": "Plymouth 1970 Rapid Transit System brochure, spec spread pp.14-15",
+   "url": "https://www.oldcarbrochures.com/static/NA/Plymouth/1970%20Plymouth/1970%20Plymouth%20Rapid%20Transit%20System/1970%20Plymouth%20Rapid%20Transit%20System-14-15.html",
+   "type": "manufacturer"
+  },
+  {
+   "name": "Plymouth 1971 Rapid Transit System brochure p.12 (GTX spec + engine table) and 1971 Satellite/Road Runner/GTX brochure engine chart p.20",
+   "url": "https://www.oldcarbrochures.com/static/NA/Plymouth/1971%20Plymouth/1971%20%20Plymouth%20Rapid%20Transit%20System/1971%20Plymouth%20Rapid%20Transit%20System-12.jpg",
+   "type": "manufacturer"
+  },
+  {
+   "name": "Plymouth 1972 Satellite brochure (Road Runner pp.10-11) and 1972 Chrysler-Plymouth brochure pp.10-11 + product-changes sheet 9/20/71",
+   "url": "https://www.oldcarbrochures.com/static/NA/Plymouth/1972%20Plymouth/1972%20Plymouth%20Satellite%20Brochure/image6.html",
+   "type": "manufacturer"
+  },
+  {
+   "name": "Wikipedia: Plymouth GTX",
+   "url": "https://en.wikipedia.org/wiki/Plymouth_GTX",
+   "type": "wikipedia"
+  },
+  {
+   "name": "Wikipedia: Plymouth Road Runner (cites Mueller; Dodge and Plymouth Muscle Car Red Book; Standard Catalog)",
+   "url": "https://en.wikipedia.org/wiki/Plymouth_Road_Runner",
+   "type": "wikipedia"
+  },
+  {
+   "name": "MuscleCarClub.com: Plymouth GTX year-by-year engines",
+   "url": "https://musclecarclub.com/plymouth-gtx/",
+   "type": "publication"
+  },
+  {
+   "name": "MuscleCarClub.com: Plymouth Road Runner year-by-year engine specifications",
+   "url": "https://musclecarclub.com/plymouth-roadrunner/",
+   "type": "publication"
+  },
+  {
+   "name": "Hagerty Valuation Tools: Plymouth Road Runner by year (login-walled; text seen via search excerpts)",
+   "url": "https://www.hagerty.com/valuation-tools/plymouth/road_runner",
+   "type": "publication"
+  },
+  {
+   "name": "Motorious: Rare 1970 Plymouth GTX 440 Six Barrel",
+   "url": "https://www.motorious.com/articles/handpicked/rare-1970-plymouth-gtx-440-six-barrel",
+   "type": "publication"
+  },
+  {
+   "name": "Conceptcarz (Dan Vaughan): Plymouth GTX history",
+   "url": "https://www.conceptcarz.com/w6752/plymouth-gtx.aspx",
+   "type": "publication"
+  }
+ ]
+}

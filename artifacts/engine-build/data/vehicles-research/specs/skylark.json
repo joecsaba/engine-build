@@ -1,0 +1,93 @@
+{
+ "make": "Buick",
+ "model": "Skylark",
+ "makeSlug": "buick",
+ "slug": "skylark",
+ "title": "Buick Skylark Engines by Year (1953–1998)",
+ "description": "Every factory engine in the Buick Skylark and Gran Sport by year, 1953–1998: the Nailhead, aluminum 215, GS 400 and 455 Stage 1, and later V6s and fours.",
+ "intro": [
+  "Buick used the Skylark name on a 1953–1954 luxury convertible, on its compact and mid-size cars from 1961 to 1972, and on smaller Buicks through 1998. The Gran Sport, a Skylark-based performance model, carried Buick's largest engines; the trims column shows which ones.",
+  "Pick a year to see every engine offered that model year, with its code, rated horsepower and the trims it came in. Each engine links to its full specs."
+ ],
+ "generations": [
+  {
+   "key": "1953-1954",
+   "name": "1953–1954",
+   "years": [
+    1953,
+    1954
+   ],
+   "intro": [
+    "The original Skylark was a limited-production convertible with Buick's 322 Nailhead V8."
+   ]
+  },
+  {
+   "key": "1961-1963",
+   "name": "1961–1963",
+   "years": [
+    1961,
+    1963
+   ],
+   "intro": [
+    "The compact Skylark used Buick's aluminum 215 V8."
+   ]
+  },
+  {
+   "key": "1964-1972",
+   "name": "1964–1972",
+   "years": [
+    1964,
+    1972
+   ],
+   "intro": [
+    "The mid-size Skylark moved to cast-iron V8s: the 300, 340 and 350, with the 401 Nailhead, 400 and 455 reserved for the Gran Sport. The 455 Stage 1 was the top engine from 1970. Ratings are gross through 1971 and SAE net from 1972."
+   ]
+  },
+  {
+   "key": "1975-1979",
+   "name": "1975–1979",
+   "years": [
+    1975,
+    1979
+   ],
+   "intro": [
+    "The compact rear-drive Skylark used Buick's 231 V6 and V8s built by Buick, Oldsmobile, Pontiac and Chevrolet; the notes say which."
+   ]
+  },
+  {
+   "key": "1980-1998",
+   "name": "1980–1998",
+   "years": [
+    1980,
+    1998
+   ],
+   "intro": [
+    "From 1980 the Skylark was front-drive, with GM fours and V6s: the 2.5, the 2.8, Buick's 3.0 and 3.3, Oldsmobile's Quad 4 and 2.4, and the 3100."
+   ]
+  }
+ ],
+ "files": [
+  "verify_skylark-1953-1972.json",
+  "verify_skylark-1975-1998.json"
+ ],
+ "built_by_notes": true,
+ "own_division": "^Buick",
+ "ranges": {
+  "1969|400|345": [
+   340,
+   350
+  ],
+  "1972|350|155": [
+   145,
+   155
+  ],
+  "1972|350|180": [
+   175,
+   180
+  ]
+ },
+ "notes": {
+  "1969|400|345": "Stage 1. Published ratings for this engine vary."
+ },
+ "draft": true
+}

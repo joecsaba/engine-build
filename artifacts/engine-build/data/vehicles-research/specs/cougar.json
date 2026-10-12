@@ -1,0 +1,115 @@
+{
+ "make": "Mercury",
+ "model": "Cougar",
+ "makeSlug": "mercury",
+ "slug": "cougar",
+ "title": "Mercury Cougar Engines by Year (1967–2002)",
+ "description": "Every factory engine in the Mercury Cougar by year, 1967–2002: the 289 and 390, 428 Cobra Jet and Boss 302 Eliminator, Fox and MN12 V6s and V8s and the Zetec.",
+ "intro": [
+  "Mercury's Cougar began in 1967 as an upscale relative of the Mustang and changed character several times: a larger coupe in 1974–1976, a full intermediate line in 1977–1979, rear-drive coupes through 1997, and a front-drive hatchback in 1999–2002.",
+  "Pick a year to see every engine offered that model year, with its code, rated horsepower and the trims it came in. Each engine links to its full specs."
+ ],
+ "generations": [
+  {
+   "key": "1967-1973",
+   "name": "1967–1973",
+   "years": [
+    1967,
+    1973
+   ],
+   "intro": [
+    "The first Cougars shared the Mustang's engines, from the 289 to the 390 and 428 Cobra Jet, with the Boss 302 in the 1969–1970 Eliminator. Ratings are SAE net from 1972."
+   ]
+  },
+  {
+   "key": "1974-1979",
+   "name": "1974–1979",
+   "years": [
+    1974,
+    1979
+   ],
+   "intro": [
+    "The Cougar moved to Ford's intermediate platform with the 351, 400 and 460, and for 1977–1979 the name covered sedans and wagons as well as the XR-7 coupe."
+   ]
+  },
+  {
+   "key": "1980-1988",
+   "name": "1980–1988",
+   "years": [
+    1980,
+    1988
+   ],
+   "intro": [
+    "The Fox-platform Cougar used Ford's 2.3 four, 3.3 six, 3.8 V6 and 4.2 and 5.0 V8s; the 1984–1986 XR-7 had a turbocharged 2.3."
+   ]
+  },
+  {
+   "key": "1989-1997",
+   "name": "1989–1997",
+   "years": [
+    1989,
+    1997
+   ],
+   "intro": [
+    "The MN12 Cougar offered the 3.8 V6, supercharged in the 1989–1990 XR-7, and V8s: the 5.0 and, from 1994, the 4.6."
+   ]
+  },
+  {
+   "key": "1999-2002",
+   "name": "1999–2002",
+   "years": [
+    1999,
+    2002
+   ],
+   "intro": [
+    "The last Cougar was a front-drive hatchback with Ford's 2.0 Zetec four and 2.5 Duratec V6."
+   ]
+  }
+ ],
+ "files": [
+  "verify_cougar.json"
+ ],
+ "no_link": [
+  {
+   "cid": 122,
+   "years": [
+    1999,
+    2002
+   ]
+  }
+ ],
+ "ranges": {
+  "1972|351|262": [
+   248,
+   262
+  ],
+  "1973|351|168": [
+   168,
+   173
+  ],
+  "1973|351|264": [
+   253,
+   264
+  ],
+  "1977|302|130": [
+   130,
+   137
+  ],
+  "1978|400|160": [
+   160,
+   166
+  ],
+  "1979|302|133": [
+   130,
+   133
+  ]
+ },
+ "notes": {
+  "1969|302|290": "Boss 302, Eliminator.",
+  "1970|302|290": "Boss 302, Eliminator.",
+  "1968|428|335": "Cobra Jet.",
+  "1969|428|335": "Cobra Jet.",
+  "1970|428|335": "Cobra Jet."
+ },
+ "draft": true
+}

@@ -1,0 +1,68 @@
+{
+ "make": "Dodge",
+ "model": "Challenger",
+ "makeSlug": "dodge",
+ "slug": "challenger",
+ "title": "Dodge Challenger Engines by Year (1970–2023)",
+ "description": "Every factory engine in the Dodge Challenger by year, 1970–2023: the 340 Six Pack, 440 and 426 Hemi, Mitsubishi fours, and Hemi, Hellcat and Demon V8s.",
+ "intro": [
+  "Dodge has sold three different Challengers: the 1970–1974 pony car, a 1978–1983 compact coupe built by Mitsubishi, and the 2008–2023 modern car, which ended with the 1,025 hp Demon 170.",
+  "Pick a year to see every engine offered that model year, with its code, rated horsepower and the trims it came in. Each engine links to its full specs."
+ ],
+ "generations": [
+  {
+   "key": "1970-1974",
+   "name": "1970–1974",
+   "years": [
+    1970,
+    1974
+   ],
+   "intro": [
+    "The first Challenger shared the Plymouth Barracuda's body and engines, from the 225 slant six to the 426 Hemi. The 1970 Challenger T/A used a 340 with three two-barrel carburetors. Ratings are SAE net from 1972, after the big blocks were gone."
+   ]
+  },
+  {
+   "key": "1978-1983",
+   "name": "1978–1983",
+   "years": [
+    1978,
+    1983
+   ],
+   "intro": [
+    "The second Challenger was a Mitsubishi-built coupe with Mitsubishi 1.6 and 2.6 four-cylinder engines."
+   ]
+  },
+  {
+   "key": "2008-2023",
+   "name": "2008–2023",
+   "years": [
+    2008,
+    2023
+   ],
+   "intro": [
+    "The modern Challenger ran from V6s through the 5.7, 6.1 and 6.4 Hemi V8s to the supercharged 6.2 Hellcat family, which ended with the 807 hp Jailbreak. The 2018 Demon and 2023 Demon 170 were limited-production drag-oriented models whose top ratings need race fuel or E85."
+   ]
+  }
+ ],
+ "files": [
+  "verify_challenger.json"
+ ],
+ "ranges": {
+  "1982|156|105": [
+   100,
+   105
+  ],
+  "1983|156|105": [
+   103,
+   105
+  ]
+ },
+ "notes": {
+  "1970|340|290": "Challenger T/A, three two-barrel carburetors."
+ },
+ "trim_notes": {
+  "Demon 170": "Rated on E85 fuel.",
+  "Demon": "Rated on 100-octane fuel; 808 hp on 91 octane."
+ },
+ "draft": true
+}
