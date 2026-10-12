@@ -1,4 +1,7 @@
 @import "tailwindcss";
+/* Research data, not site source: its notes include Windows paths that Tailwind
+   misreads as CSS escapes (backslash + hex), which fails the build. */
+@source not "../data/vehicles-research";
 @import "tw-animate-css";
 @plugin "@tailwindcss/typography";
 
