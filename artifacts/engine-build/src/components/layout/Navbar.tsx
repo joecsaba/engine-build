@@ -21,6 +21,7 @@ export function Navbar() {
 
   const engineDataLinks = [
     { href: "/engines", label: "Engine Specs Database" },
+    { href: "/vehicles", label: "Engines by Vehicle" },
     { href: "/engine-data", label: "VIN Decoder & Specs" },
     { href: "/calculators/bolt-spec-lookup", label: "Hardware & Bolt Specs" },
   ];

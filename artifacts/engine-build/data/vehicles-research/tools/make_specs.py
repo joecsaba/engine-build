@@ -162,6 +162,6 @@ if os.path.exists(tp):
 
 os.makedirs(os.path.join(SP, "vspecs"), exist_ok=True)
 for k, v in S.items():
-    v["draft"] = True
+    v.pop("draft", None)  # approved 2026-10-12
     json.dump(v, open(os.path.join(SP, "vspecs", f"{k}.json"), "w", encoding="utf-8"), ensure_ascii=False, indent=1)
 print("specs:", ", ".join(S))
