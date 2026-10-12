@@ -25,7 +25,7 @@ ENGINE_KIND = {  # (make, cid) -> (cylinders, layout word)
                 194: (6, "inline-six"), 216: (6, "inline-six"), 230: (6, "inline-six"), 235: (6, "inline-six"),
                 250: (6, "inline-six"), 261: (6, "inline-six"), 292: (6, "inline-six")},
   "pontiac": {151: (4, "inline-four"), 215: (6, "inline-six"), 230: (6, "OHC inline-six"), 250: (6, "inline-six"),
-              173: (6, "V6"), 231: (6, "V6"), 191: (6, "V6")},
+              173: (6, "V6"), 231: (6, "V6"), 191: (6, "V6"), 207: (6, "V6"), 346: (8, "V8"), 364: (8, "V8")},
   "ford": {144: (6, "inline-six"), 170: (6, "inline-six"), 200: (6, "inline-six"), 250: (6, "inline-six"),
            240: (6, "inline-six"), 300: (6, "inline-six"), 223: (6, "inline-six"), 232: (6, "V6"),
            171: (6, "V6"), 227: (6, "V6"), 238: (6, "V6"), 245: (6, "V6"),
