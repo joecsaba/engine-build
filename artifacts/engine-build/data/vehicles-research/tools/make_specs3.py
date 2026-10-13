@@ -31,7 +31,8 @@ S["cherokee"] = dict(make="Jeep", model="Cherokee", makeSlug="jeep", slug="chero
     G("xj", "XJ", 1984, 2001, "The XJ started with AMC's 2.5 four, a GM-built 2.8 V6 and a Renault 2.1 turbodiesel. The 4.0 six replaced the V6 for 1987 and was rated 190 hp from 1991."),
     G("kl", "KL", 2014, 2023, "The last Cherokee offered the 2.4 Tigershark four, the 3.2 Pentastar V6 and, from 2019, a 2.0 turbo four.")],
   files=["verify_jeep-cherokee.json"], metric_from=1984,
-  family_overrides=[{"years": [2014, 2023], "cid": [198], "url": "/engines/jeep/pentastar"}],
+  # the Pentastar page lists only the 3.6; the 3.2 waits for its own record (to-do)
+  no_link=[{"cid": 198, "years": [2014, 2023]}],
   code_notes={})
 
 S["grand-cherokee"] = dict(make="Jeep", model="Grand Cherokee", makeSlug="jeep", slug="grand-cherokee",

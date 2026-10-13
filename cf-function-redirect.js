@@ -96,7 +96,10 @@ function handler(event) {
     '/engines/mercury/385/460-8cr': '/engines/mercury/385/460ci-4-36x3-85',
     // The Buick-built 225 V6 sold in the 1964 Oldsmobile F-85 now has its own page.
     '/engines/oldsmobile/oldsmobile-225ci': '/engines/buick/buick-225ci',
-    '/engines/oldsmobile/oldsmobile-225ci/225ci-3-75x3-4': '/engines/buick/buick-225ci/225ci-3-75x3-4'
+    '/engines/oldsmobile/oldsmobile-225ci/225ci-3-75x3-4': '/engines/buick/buick-225ci/225ci-3-75x3-4',
+    // Buick 350: the one undated record (3.80 x 3.80, a copied bore) replaced by
+    // verified 1968-1978 records at 3.80 x 3.85 (2026-10-13).
+    '/engines/buick/buick-small-block-v8/350': '/engines/buick/buick-small-block-v8/350ci-3-8x3-85-10-25cr'
   };
   var corrected = CORRECTED[uri.replace(/\/$/, '')];
   if (corrected) {

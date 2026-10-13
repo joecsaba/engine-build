@@ -1,0 +1,887 @@
+{
+ "id": "buick-350-v8",
+ "name": "Buick 350 V8 (Buick small block, 1968-1980; Jeep 'Dauntless 350')",
+ "fields": {
+  "bore_in": {
+   "value": 3.8,
+   "sources": [
+    {
+     "name": "GM/Buick factory literature (all GM material counted as ONE source): 1970 Buick service manual spec table (reproduced on TeamBuick) + 1974 full-line brochure p.56",
+     "url": "https://teambuick.com/reference/350_engine_specs.php",
+     "says": "Bore and stroke 3.80 x 3.850 (350-2 SO, 350-4 SB, 350-4 SP); 1974: 350-2/350-4 3.800 x 3.850"
+    },
+    {
+     "name": "NHRA engine blueprint BUI-68 and/or NHRA Stock classification guide (NHRA counted once)",
+     "url": "https://www.nhra.net/tech_specs/engine/blueprints/BUI-68.rtf",
+     "says": "bore 3.80 / stroke 3.85 on every Buick-built 350 entry 1968-1976"
+    },
+    {
+     "name": "Wikipedia (Buick V8 / Skylark / LeSabre / Century / Gran Sport articles; counted once)",
+     "url": "https://en.wikipedia.org/wiki/Buick_V8_engine",
+     "says": "same 3.8 in (96.5 mm) bore as the 231 V6; retained the 3.85 in (97.8 mm) stroke of the 340; 349.31 cu in"
+    },
+    {
+     "name": "JeepTech knowledge base - Buick 350 (Dauntless) factory engine page",
+     "url": "https://www.jeepfan.com/tech/jeeptech/engine-factory-buick350v8.htm",
+     "says": "Bore x Stroke: 3.80 x 3.85"
+    }
+   ],
+   "note": "96.5 mm"
+  },
+  "stroke_in": {
+   "value": 3.85,
+   "sources": [
+    {
+     "name": "GM/Buick factory literature (all GM material counted as ONE source): 1970 Buick service manual spec table (reproduced on TeamBuick) + 1974 full-line brochure p.56",
+     "url": "https://teambuick.com/reference/350_engine_specs.php",
+     "says": "Bore and stroke 3.80 x 3.850 (350-2 SO, 350-4 SB, 350-4 SP); 1974: 350-2/350-4 3.800 x 3.850"
+    },
+    {
+     "name": "NHRA engine blueprint BUI-68 and/or NHRA Stock classification guide (NHRA counted once)",
+     "url": "https://www.nhra.net/tech_specs/engine/blueprints/BUI-68.rtf",
+     "says": "bore 3.80 / stroke 3.85 on every Buick-built 350 entry 1968-1976"
+    },
+    {
+     "name": "Wikipedia (Buick V8 / Skylark / LeSabre / Century / Gran Sport articles; counted once)",
+     "url": "https://en.wikipedia.org/wiki/Buick_V8_engine",
+     "says": "same 3.8 in (96.5 mm) bore as the 231 V6; retained the 3.85 in (97.8 mm) stroke of the 340; 349.31 cu in"
+    },
+    {
+     "name": "JeepTech knowledge base - Buick 350 (Dauntless) factory engine page",
+     "url": "https://www.jeepfan.com/tech/jeeptech/engine-factory-buick350v8.htm",
+     "says": "Bore x Stroke: 3.80 x 3.85"
+    }
+   ],
+   "note": "97.8 mm"
+  },
+  "displacement_ci": {
+   "value": 350,
+   "sources": [
+    {
+     "name": "GM/Buick factory literature (all GM material counted as ONE source)",
+     "url": "https://oldcarbrochures.org/United%20States/Buick/1969_Buick/1969_Buick_Prestige_Brochure/index.html",
+     "says": "Displacement 350 (350-2 and 350-4 V8)"
+    },
+    {
+     "name": "NHRA engine blueprint BUI-68 and/or NHRA Stock classification guide (NHRA counted once)",
+     "url": "https://www.nhra.net/tech_specs/engine/blueprints/BUI-68.rtf",
+     "says": "displacement 350"
+    },
+    {
+     "name": "Wikipedia (Buick V8 / Skylark / LeSabre / Century / Gran Sport articles; counted once)",
+     "url": "https://en.wikipedia.org/wiki/Buick_V8_engine",
+     "says": "exact displacement 349.31 cu in (5,724 cc)"
+    },
+    {
+     "name": "JeepTech knowledge base - Buick 350 (Dauntless) factory engine page",
+     "url": "https://www.jeepfan.com/tech/jeeptech/engine-factory-buick350v8.htm",
+     "says": "Displacement: 350 (5.73L)"
+    },
+    {
+     "name": "Kaiser Jeep full-line brochure Form 67-10R (Kaiser Jeep factory literature, independent of GM)",
+     "url": "https://oldcarbrochures.org/United%20States/Jeep/1967-Jeep/1967-Jeep-Full-Line-Brochure/index.html",
+     "says": "New 350 cubic inch Dauntless V-8 engine with 230 horsepower"
+    }
+   ],
+   "note": "Exact 349.3 ci (3.80 x 3.85 x 8)"
+  },
+  "displacement_l": {
+   "value": 5.7,
+   "sources": [
+    {
+     "name": "GM/Buick factory literature (all GM material counted as ONE source)",
+     "url": "https://www.oldcarbrochures.org/United%20States/Buick/1977-Buick/1977-Buick-Full-Line-Brochure/index.html",
+     "says": "Buick's 5.7 litre (350 CID) 2-bbl. V-8"
+    },
+    {
+     "name": "J. 'Kelly' Flory Jr., American Cars 1973-1980 (McFarland 2013), Buick powertrain chart p.337/445 (Google Books snippet)",
+     "url": "https://books.google.com/books?id=PV1uzCfmJDgC",
+     "says": "350 CID (5.7L)"
+    },
+    {
+     "name": "Wikipedia (Buick V8 / Skylark / LeSabre / Century / Gran Sport articles; counted once)",
+     "url": "https://en.wikipedia.org/wiki/Buick_V8_engine",
+     "says": "349.31 cu in (5,724 cc)"
+    }
+   ],
+   "note": ""
+  },
+  "num_cylinders": {
+   "value": 8,
+   "sources": [
+    {
+     "name": "GM/Buick factory literature (all GM material counted as ONE source)",
+     "url": "https://teambuick.com/reference/350_engine_specs.php",
+     "says": "Engine type 90 deg V8"
+    },
+    {
+     "name": "NHRA engine blueprint BUI-68 and/or NHRA Stock classification guide (NHRA counted once)",
+     "url": "https://www.nhra.net/tech_specs/engine/blueprints/BUI-68.rtf",
+     "says": "8 cylinders"
+    },
+    {
+     "name": "Wikipedia (Buick V8 / Skylark / LeSabre / Century / Gran Sport articles; counted once)",
+     "url": "https://en.wikipedia.org/wiki/Buick_V8_engine",
+     "says": "V8"
+    },
+    {
+     "name": "JeepTech knowledge base - Buick 350 (Dauntless) factory engine page",
+     "url": "https://www.jeepfan.com/tech/jeeptech/engine-factory-buick350v8.htm",
+     "says": "V8"
+    }
+   ],
+   "note": ""
+  },
+  "configuration": {
+   "value": "90-degree V8",
+   "sources": [
+    {
+     "name": "GM/Buick factory literature (all GM material counted as ONE source)",
+     "url": "https://www.oldcarbrochures.org/United%20States/Buick/1974_Buick/1974-Buick-Full-Line-Brochure/index.html",
+     "says": "350-2 / 350-4: 90 V-8, In-head"
+    },
+    {
+     "name": "Wikipedia (Buick V8 / Skylark / LeSabre / Century / Gran Sport articles; counted once)",
+     "url": "https://en.wikipedia.org/wiki/Buick_V8_engine",
+     "says": "Buick small-block V8 (shares 90-degree layout with the 231 V6 family)"
+    },
+    {
+     "name": "JeepTech knowledge base - Buick 350 (Dauntless) factory engine page",
+     "url": "https://www.jeepfan.com/tech/jeeptech/engine-factory-buick350v8.htm",
+     "says": "Buick 350 V8"
+    },
+    {
+     "name": "NHRA engine blueprint BUI-68 and/or NHRA Stock classification guide (NHRA counted once)",
+     "url": "https://www.nhra.net/tech_specs/engine/blueprints/BUI-68.rtf",
+     "says": "V8"
+    }
+   ],
+   "note": ""
+  },
+  "valvetrain": {
+   "value": "OHV, 2 valves/cyl, hydraulic lifters, chain-driven cam in block",
+   "sources": [
+    {
+     "name": "GM/Buick factory literature (all GM material counted as ONE source)",
+     "url": "https://teambuick.com/reference/350_engine_specs.php",
+     "says": "Valve lifter mechanism: Hydraulic; camshaft drive: chain; 1974 brochure: valve arrangement In-head"
+    },
+    {
+     "name": "NHRA engine blueprint BUI-68 and/or NHRA Stock classification guide (NHRA counted once)",
+     "url": "https://www.nhra.net/tech_specs/engine/blueprints/BUI-68.rtf",
+     "says": "lifter type hydraulic, rocker ratio 1.55"
+    },
+    {
+     "name": "JeepTech knowledge base - Buick 350 (Dauntless) factory engine page",
+     "url": "https://www.jeepfan.com/tech/jeeptech/engine-factory-buick350v8.htm",
+     "says": "Valve Configuration: OHV; hydraulic lifters"
+    },
+    {
+     "name": "Kaiser Jeep full-line brochure Form 67-10R (Kaiser Jeep factory literature, independent of GM)",
+     "url": "https://oldcarbrochures.org/United%20States/Jeep/1967-Jeep/1967-Jeep-Full-Line-Brochure/index.html",
+     "says": "Large valves, wedge-shaped combustion chambers and hydraulic tappets"
+    }
+   ],
+   "note": ""
+  },
+  "block_material": {
+   "value": "cast iron",
+   "sources": [
+    {
+     "name": "GM/Buick factory literature (all GM material counted as ONE source)",
+     "url": "https://www.oldcarbrochures.org/United%20States/Buick/1974_Buick/1974-Buick-Full-Line-Brochure/index.html",
+     "says": "Cylinder Head and Block Material: Cast Alloy Iron (350-2, 350-4)"
+    },
+    {
+     "name": "Wikipedia (Buick V8 / Skylark / LeSabre / Century / Gran Sport articles; counted once)",
+     "url": "https://en.wikipedia.org/wiki/Buick_V8_engine",
+     "says": "deep-skirt block ... cast iron with increased nickel content"
+    },
+    {
+     "name": "JeepTech knowledge base - Buick 350 (Dauntless) factory engine page",
+     "url": "https://www.jeepfan.com/tech/jeeptech/engine-factory-buick350v8.htm",
+     "says": "Block and cylinder heads: cast iron"
+    }
+   ],
+   "note": ""
+  },
+  "induction": {
+   "value": "Rochester 2-bbl or 4-bbl (Quadrajet) carburetor",
+   "sources": [
+    {
+     "name": "GM/Buick factory literature (all GM material counted as ONE source)",
+     "url": "https://oldcarbrochures.org/United%20States/Buick/1969_Buick/1969_Buick_Prestige_Brochure/index.html",
+     "says": "350-2 Carburetion 2-barrel; 350-4 Carburetion 4-barrel"
+    },
+    {
+     "name": "NHRA engine blueprint BUI-68 and/or NHRA Stock classification guide (NHRA counted once)",
+     "url": "https://www.nhra.net/tech_specs/engine/blueprints/BUI-68.rtf",
+     "says": "induction 1-2 and 1-4, carb make Rochester"
+    },
+    {
+     "name": "Wikipedia (Buick V8 / Skylark / LeSabre / Century / Gran Sport articles; counted once)",
+     "url": "https://en.wikipedia.org/wiki/Buick_Skylark",
+     "says": "1968: 350 V8 using a two-barrel Rochester carburetor; GS 350 Quadrajet"
+    },
+    {
+     "name": "J. 'Kelly' Flory Jr., American Cars 1973-1980 (McFarland 2013), Buick powertrain chart p.33/337/445 (Google Books snippet)",
+     "url": "https://books.google.com/books?id=PV1uzCfmJDgC",
+     "says": "350 CID 2-bbl. and 4-bbl. V8"
+    }
+   ],
+   "note": ""
+  },
+  "fuel_type": {
+   "value": "gasoline",
+   "sources": [
+    {
+     "name": "GM/Buick factory literature (all GM material counted as ONE source)",
+     "url": "https://oldcarbrochures.org/United%20States/Buick/1969_Buick/1969_Buick_Prestige_Brochure/index.html",
+     "says": "Fuel: Regular (350-2) / Premium (350-4)"
+    },
+    {
+     "name": "JeepTech knowledge base - Buick 350 (Dauntless) factory engine page",
+     "url": "https://www.jeepfan.com/tech/jeeptech/engine-factory-buick350v8.htm",
+     "says": "gasoline, 2bbl"
+    },
+    {
+     "name": "J. 'Kelly' Flory Jr., American Cars 1973-1980 (McFarland 2013), Buick powertrain chart p.337 (Google Books snippet)",
+     "url": "https://books.google.com/books?id=PV1uzCfmJDgC",
+     "says": "gasoline V8 (the diesel 350 is a separate Oldsmobile engine)"
+    }
+   ],
+   "note": ""
+  },
+  "years": {
+   "value": "1968-1980 (Buick cars); Jeep 'Dauntless 350' 1968/69 to mid-1971",
+   "sources": [
+    {
+     "name": "Wikipedia (Buick V8 / Skylark / LeSabre / Century / Gran Sport articles; counted once)",
+     "url": "https://en.wikipedia.org/wiki/Buick_V8_engine",
+     "says": "Buick adopted the popular 350 size in 1968 ... produced through 1980"
+    },
+    {
+     "name": "GM/Buick factory literature (all GM material counted as ONE source)",
+     "url": "https://oldcarbrochures.org/United%20States/Buick/1968_Buick/1968-Buick-Full-Line-Prestige-Brochure/index.html ; https://www.oldcarbrochures.org/United%20States/Buick/1978_Buick/1978-Buick-Full-Line-Prestige-Brochure/index.html",
+     "says": "1968 brochure introduces the 350-2/350-4; 1978 brochure: 350 V8 (L77) produced by GM Buick Motor Division, Flint"
+    },
+    {
+     "name": "J. 'Kelly' Flory Jr., American Cars 1973-1980 (McFarland 2013), Buick powertrain chart p.929 (Google Books snippet)",
+     "url": "https://books.google.com/books?id=PV1uzCfmJDgC",
+     "says": "engine-source index: L77 J 350CID V8 4-bbl, GM-Buick Motor Division, Flint"
+    },
+    {
+     "name": "NHRA engine blueprint BUI-68 and/or NHRA Stock classification guide (NHRA counted once)",
+     "url": "https://www.nhra.net/tech_specs/engine/blueprints/BUI-68.rtf",
+     "says": "Buick 350 in NHRA guides 1968-1979"
+    }
+   ],
+   "note": "Start 1968 is solid; end year 1980 rests on Wikipedia + Flory index + GM 1980 brochure listing a 5.7 L gasoline V8 (not identified as Buick-built). No 1980 rating found."
+  }
+ },
+ "variants": [
+  {
+   "year": 1968,
+   "hp": 230,
+   "hp_basis": "gross",
+   "induction": "2-bbl",
+   "compression_ratio": 9.0,
+   "code": "350-2",
+   "sources": [
+    {
+     "name": "GM/Buick factory literature (all GM material counted as ONE source)",
+     "url": "https://oldcarbrochures.org/United%20States/Buick/1968_Buick/1968-Buick-Full-Line-Prestige-Brochure/index.html",
+     "says": "350-2 8-cylinder engine, 350 cubic inches, 230 horsepower, 350 lb-ft"
+    },
+    {
+     "name": "Over-Drive Magazine - 1968 Buick Mid-Size Cars Fact Sheet",
+     "url": "https://over-drive-magazine.com/2024/02/16/1968-buick-mid-size-cars-fact-sheet/",
+     "says": "350 CID V-8 230 HP @ 4400"
+    },
+    {
+     "name": "Wikipedia (Buick V8 / Skylark / LeSabre / Century / Gran Sport articles; counted once)",
+     "url": "https://en.wikipedia.org/wiki/Buick_Skylark",
+     "says": "350 V8 with two-barrel Rochester, 230 hp at 4400 rpm"
+    },
+    {
+     "name": "NHRA engine blueprint BUI-68 and/or NHRA Stock classification guide (NHRA counted once)",
+     "url": "https://www.nhra.net/tech_specs/engine/blueprints/BUI-68.rtf",
+     "says": "350 / 230 hp / 9.0 / 1-2 Rochester"
+    }
+   ]
+  },
+  {
+   "year": 1968,
+   "hp": 280,
+   "hp_basis": "gross",
+   "induction": "4-bbl",
+   "compression_ratio": 10.25,
+   "code": "350-4 (GS 350 std)",
+   "sources": [
+    {
+     "name": "GM/Buick factory literature (all GM material counted as ONE source)",
+     "url": "https://oldcarbrochures.org/United%20States/Buick/1968_Buick/1968-Buick-Full-Line-Prestige-Brochure/index.html",
+     "says": "GS 350: 350-4 ... delivering 280 [hp], 375 lb-ft"
+    },
+    {
+     "name": "Over-Drive Magazine - 1968 Buick Mid-Size Cars Fact Sheet",
+     "url": "https://over-drive-magazine.com/2024/02/16/1968-buick-mid-size-cars-fact-sheet/",
+     "says": "350 CID 280 HP V-8"
+    },
+    {
+     "name": "Ate Up With Motor - Buick Gran Sport history p.3",
+     "url": "https://ateupwithmotor.com/model-histories/buick-gran-sport-history/3/",
+     "says": "GS350, powered by a new 350 cu. in. small-block V8 with 280 hp"
+    },
+    {
+     "name": "Old Cars Weekly - Deceptively Hot: Buick's 1960s Gran Sports",
+     "url": "https://www.oldcarsweekly.com/60s-cars/deceptively-hot-buicks-beautiful-1960s-gran-sports",
+     "says": "GS-350 for 1968 ... new 350-cid V-8 that pumped out 280 hp"
+    },
+    {
+     "name": "Wikipedia (Buick V8 / Skylark / LeSabre / Century / Gran Sport articles; counted once)",
+     "url": "https://en.wikipedia.org/wiki/Buick_LeSabre",
+     "says": "LeSabre 400 package: 280-horsepower 350 four-barrel, 10.25 to 1"
+    },
+    {
+     "name": "NHRA engine blueprint BUI-68 and/or NHRA Stock classification guide (NHRA counted once)",
+     "url": "https://www.nhra.net/tech_specs/engine/blueprints/BUI-68.rtf",
+     "says": "350 / 280 hp / 10.25 / 1-4"
+    }
+   ]
+  },
+  {
+   "year": 1969,
+   "hp": 230,
+   "hp_basis": "gross",
+   "induction": "2-bbl",
+   "compression_ratio": 9.0,
+   "code": "350-2",
+   "sources": [
+    {
+     "name": "GM/Buick factory literature (all GM material counted as ONE source)",
+     "url": "https://oldcarbrochures.org/United%20States/Buick/1969_Buick/1969_Buick_Prestige_Brochure/index.html",
+     "says": "350-2 V8: Horsepower 230 @ 4400, Torque 350 @ 2400, CR 9.0, 2-barrel"
+    },
+    {
+     "name": "Over-Drive Magazine - 1969 Buick Mid-Size Cars Fact Sheet",
+     "url": "https://over-drive-magazine.com/2024/02/16/1969-buick-mid-size-cars-fact-sheet/",
+     "says": "350 CID V-8 230 HP @ 4400"
+    },
+    {
+     "name": "Wikipedia (Buick V8 / Skylark / LeSabre / Century / Gran Sport articles; counted once)",
+     "url": "https://en.wikipedia.org/wiki/Buick_LeSabre",
+     "says": "1969: 230-horsepower 350 two-barrel V8 standard"
+    },
+    {
+     "name": "NHRA engine blueprint BUI-69 and/or NHRA Stock classification guide (NHRA counted once)",
+     "url": "https://www.nhra.net/tech_specs/engine/blueprints/BUI-69.rtf",
+     "says": "350 / 230 hp / 9.0 / 1-2"
+    }
+   ]
+  },
+  {
+   "year": 1969,
+   "hp": 280,
+   "hp_basis": "gross",
+   "induction": "4-bbl",
+   "compression_ratio": 10.25,
+   "code": "350-4 (GS 350 std)",
+   "sources": [
+    {
+     "name": "GM/Buick factory literature (all GM material counted as ONE source)",
+     "url": "https://oldcarbrochures.org/United%20States/Buick/1969_Buick/1969_Buick_Prestige_Brochure/index.html",
+     "says": "350-4 V8 280 @ 4600, 375 @ 3200, 10.25, 4-barrel; standard on GS 350 and California GS"
+    },
+    {
+     "name": "Over-Drive Magazine - 1969 Buick Mid-Size Cars Fact Sheet",
+     "url": "https://over-drive-magazine.com/2024/02/16/1969-buick-mid-size-cars-fact-sheet/",
+     "says": "350 CID 280 HP V-8"
+    },
+    {
+     "name": "Wikipedia (Buick V8 / Skylark / LeSabre / Century / Gran Sport articles; counted once)",
+     "url": "https://en.wikipedia.org/wiki/Buick_Gran_Sport",
+     "says": "1969 California GS: Buick's 280 hp 350-4"
+    },
+    {
+     "name": "NHRA engine blueprint BUI-69 and/or NHRA Stock classification guide (NHRA counted once)",
+     "url": "https://www.nhra.net/tech_specs/engine/blueprints/BUI-69.rtf",
+     "says": "350 / 280 hp / 10.25 / 1-4"
+    }
+   ]
+  },
+  {
+   "year": 1970,
+   "hp": 260,
+   "hp_basis": "gross",
+   "induction": "2-bbl",
+   "compression_ratio": 9.0,
+   "code": "350-2 (SO)",
+   "sources": [
+    {
+     "name": "GM/Buick factory literature (all GM material counted as ONE source)",
+     "url": "https://oldcarbrochures.org/United%20States/Buick/1970_Buick/1970%20Buick%20Full%20Line%20Prestige/index.html",
+     "says": "Standard engine 350-2 V8: 260 @ 4600, 360 @ 2600, 9.0, 2-barrel"
+    },
+    {
+     "name": "Over-Drive Magazine - 1970 Buick Mid-Size Cars Fact Sheet",
+     "url": "https://over-drive-magazine.com/2022/12/06/1970-buick-mid-size-car-fact-sheet/",
+     "says": "350 V-8 260 at 4600"
+    },
+    {
+     "name": "Wikipedia (Buick V8 / Skylark / LeSabre / Century / Gran Sport articles; counted once)",
+     "url": "https://en.wikipedia.org/wiki/Buick_LeSabre",
+     "says": "standard 350 two-barrel V8 increased in horsepower from 230 to 260"
+    },
+    {
+     "name": "NHRA engine blueprint BUI-70 and/or NHRA Stock classification guide (NHRA counted once)",
+     "url": "https://www.nhra.net/tech_specs/engine/blueprints/BUI-70.rtf",
+     "says": "350 / 260 hp / 9.0 / 1-2"
+    }
+   ],
+   "note": "The 1970 service-manual table reproduced on TeamBuick prints 230/4400 for the 350-2 SO; the 1970 brochure and all other sources say 260. Treated as a carry-over misprint."
+  },
+  {
+   "year": 1970,
+   "hp": 285,
+   "hp_basis": "gross",
+   "induction": "4-bbl",
+   "compression_ratio": 9.0,
+   "code": "350-4 (SB)",
+   "sources": [
+    {
+     "name": "GM/Buick factory literature (all GM material counted as ONE source)",
+     "url": "https://oldcarbrochures.org/United%20States/Buick/1970_Buick/1970%20Buick%20Full%20Line%20Prestige/index.html ; https://teambuick.com/reference/350_engine_specs.php",
+     "says": "350-4 V8 285 @ 4600, 375 @ 3000, 9.0; service manual SB 285/4600"
+    },
+    {
+     "name": "Over-Drive Magazine - 1970 Buick Mid-Size Cars Fact Sheet",
+     "url": "https://over-drive-magazine.com/2022/12/06/1970-buick-mid-size-car-fact-sheet/",
+     "says": "350 CID V-8 285 HP"
+    },
+    {
+     "name": "Wikipedia (Buick V8 / Skylark / LeSabre / Century / Gran Sport articles; counted once)",
+     "url": "https://en.wikipedia.org/wiki/Buick_LeSabre",
+     "says": "low-compression regular-fuel 350 four-barrel rated at 285 horsepower"
+    },
+    {
+     "name": "NHRA engine blueprint BUI-70 and/or NHRA Stock classification guide (NHRA counted once)",
+     "url": "https://www.nhra.net/tech_specs/engine/blueprints/BUI-70.rtf",
+     "says": "350 / 285 hp / 9.0 / 1-4"
+    }
+   ]
+  },
+  {
+   "year": 1970,
+   "hp": 315,
+   "hp_basis": "gross",
+   "induction": "4-bbl",
+   "compression_ratio": 10.25,
+   "code": "350-4 High Performance (SP); GS std",
+   "sources": [
+    {
+     "name": "GM/Buick factory literature (all GM material counted as ONE source)",
+     "url": "https://oldcarbrochures.org/United%20States/Buick/1970_Buick/1970%20Buick%20Full%20Line%20Prestige/index.html ; https://teambuick.com/reference/350_engine_specs.php",
+     "says": "Standard GS engine 350-4 V8: 315 @ 4800, 410 @ 3200, 10.25; service manual SP 315/4800"
+    },
+    {
+     "name": "Over-Drive Magazine - 1970 Buick Mid-Size Cars Fact Sheet",
+     "url": "https://over-drive-magazine.com/2022/12/06/1970-buick-mid-size-car-fact-sheet/",
+     "says": "350 CID 315 HP V-8, 315 @ 4800; std GS 350"
+    },
+    {
+     "name": "Wikipedia (Buick V8 / Skylark / LeSabre / Century / Gran Sport articles; counted once)",
+     "url": "https://en.wikipedia.org/wiki/Buick_LeSabre",
+     "says": "high-compression premium-fuel 350 four-barrel ... upped to 315 on a 10.25 to 1 compression ratio"
+    },
+    {
+     "name": "NHRA engine blueprint BUI-70 and/or NHRA Stock classification guide (NHRA counted once)",
+     "url": "https://www.nhra.net/tech_specs/engine/blueprints/BUI-70.rtf",
+     "says": "350 / 315 hp / 10.25 / 1-4"
+    }
+   ]
+  },
+  {
+   "year": 1971,
+   "hp": 230,
+   "hp_basis": "gross",
+   "induction": "2-bbl",
+   "compression_ratio": 8.5,
+   "code": "350-2",
+   "sources": [
+    {
+     "name": "Over-Drive Magazine - 1971 Buick Mid-Size Cars Fact Sheet",
+     "url": "https://over-drive-magazine.com/2024/03/20/1971-buick-mid-size-cars-fact-sheet/",
+     "says": "230 HP V-8: 350 cu in, 230 at 4400"
+    },
+    {
+     "name": "Wikipedia (Buick V8 / Skylark / LeSabre / Century / Gran Sport articles; counted once)",
+     "url": "https://en.wikipedia.org/wiki/Buick_Skylark",
+     "says": "1971 Skylark 350: V8 that put out only 230 hp; LeSabre article: 230 gross in 1971"
+    },
+    {
+     "name": "NHRA engine blueprint BUI-71 and/or NHRA Stock classification guide (NHRA counted once)",
+     "url": "https://www.nhra.net/tech_specs/engine/blueprints/BUI-71.rtf",
+     "says": "350 / 230 hp / 1-2"
+    }
+   ],
+   "note": "GM 1971 brochure gives 8.5:1 and 2-barrel but no hp. NHRA prints 10.5:1."
+  },
+  {
+   "year": 1973,
+   "hp": 150,
+   "hp_basis": "net",
+   "induction": "2-bbl",
+   "compression_ratio": 8.5,
+   "code": "350-2 (H)",
+   "sources": [
+    {
+     "name": "NHRA engine blueprint BUI-73 and/or NHRA Stock classification guide (NHRA counted once)",
+     "url": "https://www.nhra.net/tech_specs/engine/blueprints/BUI-73.rtf",
+     "says": "350 / 150 hp / 1-2 (Apollo, Century, Regal, LeSabre)"
+    },
+    {
+     "name": "Wikipedia (Buick V8 / Skylark / LeSabre / Century / Gran Sport articles; counted once)",
+     "url": "https://en.wikipedia.org/wiki/Buick_Gran_Sport",
+     "says": "1973 Century: standard 150-horsepower 350 two-barrel"
+    },
+    {
+     "name": "J. 'Kelly' Flory Jr., American Cars 1973-1980 (McFarland 2013), Buick powertrain chart p.33 (Google Books snippet)",
+     "url": "https://books.google.com/books?id=PV1uzCfmJDgC",
+     "says": "350 CID (5.7L), 150, 2-bbl., V8, code H"
+    },
+    {
+     "name": "Conceptcarz (Daniel Vaughan) year page / spec-by-year table",
+     "url": "https://www.conceptcarz.com/z29823/buick-century.aspx",
+     "says": "1973 Century: 8 cyl., 350 CID, 150 hp"
+    }
+   ]
+  },
+  {
+   "year": 1973,
+   "hp": 175,
+   "hp_basis": "net",
+   "induction": "4-bbl (single exhaust)",
+   "compression_ratio": 8.5,
+   "code": "350-4 (J)",
+   "sources": [
+    {
+     "name": "NHRA engine blueprint BUI-73 and/or NHRA Stock classification guide (NHRA counted once)",
+     "url": "https://www.nhra.net/tech_specs/engine/blueprints/BUI-73.rtf",
+     "says": "350 / 175 hp / 1-4"
+    },
+    {
+     "name": "Wikipedia (Buick V8 / Skylark / LeSabre / Century / Gran Sport articles; counted once)",
+     "url": "https://en.wikipedia.org/wiki/Buick_Gran_Sport",
+     "says": "175-horsepower 350 four-barrel (with single exhaust)"
+    },
+    {
+     "name": "J. 'Kelly' Flory Jr., American Cars 1973-1980 (McFarland 2013), Buick powertrain chart p.33 (Google Books snippet)",
+     "url": "https://books.google.com/books?id=PV1uzCfmJDgC",
+     "says": "350 CID (5.7L), 175, 4-bbl., V8, code J"
+    },
+    {
+     "name": "Conceptcarz (Daniel Vaughan) year page / spec-by-year table",
+     "url": "https://www.conceptcarz.com/z29823/buick-century.aspx",
+     "says": "1973 Century: 8 cyl., 350 CID, 175 hp"
+    }
+   ]
+  },
+  {
+   "year": 1975,
+   "hp": 145,
+   "hp_basis": "net",
+   "induction": "2-bbl",
+   "compression_ratio": null,
+   "code": "350-2 (H)",
+   "sources": [
+    {
+     "name": "NHRA engine blueprint BUI-75 and/or NHRA Stock classification guide (NHRA counted once)",
+     "url": "https://www.nhra.net/tech_specs/engine/blueprints/BUI-75.rtf",
+     "says": "Stock guide: 350 ci / 145 hp (Apollo, Century, Regal, Skylark)"
+    },
+    {
+     "name": "J. 'Kelly' Flory Jr., American Cars 1973-1980 (McFarland 2013), Buick powertrain chart p.231 (Google Books snippet)",
+     "url": "https://books.google.com/books?id=PV1uzCfmJDgC",
+     "says": "1975 Buick: 350 CID (5.7L), 145, H, 2-bbl., V8"
+    },
+    {
+     "name": "Conceptcarz (Daniel Vaughan) year page / spec-by-year table",
+     "url": "https://www.conceptcarz.com/vehicle/z14474/buick-regal.aspx",
+     "says": "1975 Regal: base V8 350, 145 hp"
+    }
+   ],
+   "note": "Wikipedia (Gran Sport article) gives 155 hp for the 1975 2-bbl - disagrees."
+  },
+  {
+   "year": 1975,
+   "hp": 165,
+   "hp_basis": "net",
+   "induction": "4-bbl",
+   "compression_ratio": null,
+   "code": "350-4 (J)",
+   "sources": [
+    {
+     "name": "NHRA engine blueprint BUI-75 and/or NHRA Stock classification guide (NHRA counted once)",
+     "url": "https://www.nhra.net/tech_specs/engine/blueprints/BUI-75.rtf",
+     "says": "Stock guide: 350 ci / 165 hp"
+    },
+    {
+     "name": "J. 'Kelly' Flory Jr., American Cars 1973-1980 (McFarland 2013), Buick powertrain chart p.231 (Google Books snippet)",
+     "url": "https://books.google.com/books?id=PV1uzCfmJDgC",
+     "says": "1975 Buick: 350 CID (5.7L), 165, 4-bbl., V8, J"
+    },
+    {
+     "name": "Ate Up With Motor - Buick Gran Sport history p.4",
+     "url": "https://ateupwithmotor.com/model-histories/buick-gran-sport-history/4/",
+     "says": "1975 Gran Sport: the most powerful engine available offered only 165 net horsepower"
+    },
+    {
+     "name": "Conceptcarz (Daniel Vaughan) year page / spec-by-year table",
+     "url": "https://www.conceptcarz.com/vehicle/z14474/buick-regal.aspx",
+     "says": "1975 Regal: optional 350 4-bbl, 165 hp"
+    }
+   ],
+   "note": "Wikipedia (Gran Sport article) gives 175 hp - disagrees."
+  },
+  {
+   "year": 1976,
+   "hp": 140,
+   "hp_basis": "net",
+   "induction": "2-bbl",
+   "compression_ratio": null,
+   "code": "350-2 (H)",
+   "sources": [
+    {
+     "name": "NHRA engine blueprint BUI-76 and/or NHRA Stock classification guide (NHRA counted once)",
+     "url": "https://www.nhra.net/tech_specs/engine/blueprints/BUI-76.rtf",
+     "says": "350 / 140 hp (blueprint + stock guide)"
+    },
+    {
+     "name": "J. 'Kelly' Flory Jr., American Cars 1973-1980 (McFarland 2013), Buick powertrain chart p.337 (Google Books snippet)",
+     "url": "https://books.google.com/books?id=PV1uzCfmJDgC",
+     "says": "1976 Buick: 350 CID (5.7L), 2-bbl., V8, 140, H"
+    },
+    {
+     "name": "Wikipedia (Buick V8 / Skylark / LeSabre / Century / Gran Sport articles; counted once)",
+     "url": "https://en.wikipedia.org/wiki/Buick_Skylark",
+     "says": "1976: 5.7 L V8 140 hp at 3,200 rpm with the 2-barrel"
+    }
+   ]
+  },
+  {
+   "year": 1976,
+   "hp": 155,
+   "hp_basis": "net",
+   "induction": "4-bbl",
+   "compression_ratio": null,
+   "code": "350-4 (J)",
+   "sources": [
+    {
+     "name": "NHRA engine blueprint BUI-76 and/or NHRA Stock classification guide (NHRA counted once)",
+     "url": "https://www.nhra.net/tech_specs/engine/blueprints/BUI-76.rtf",
+     "says": "350 / 155 hp"
+    },
+    {
+     "name": "J. 'Kelly' Flory Jr., American Cars 1973-1980 (McFarland 2013), Buick powertrain chart p.337 (Google Books snippet)",
+     "url": "https://books.google.com/books?id=PV1uzCfmJDgC",
+     "says": "350 CID (5.7L), 4-bbl., V8, 155, J"
+    },
+    {
+     "name": "Wikipedia (Buick V8 / Skylark / LeSabre / Century / Gran Sport articles; counted once)",
+     "url": "https://en.wikipedia.org/wiki/Buick_Skylark",
+     "says": "155 hp at 3,400 rpm with the 4-barrel"
+    },
+    {
+     "name": "Conceptcarz (Daniel Vaughan) year page / spec-by-year table",
+     "url": "https://www.conceptcarz.com/z29823/buick-century.aspx",
+     "says": "1976 Century: 8 cyl., 350 CID, 155 hp"
+    }
+   ]
+  },
+  {
+   "year": 1977,
+   "hp": 140,
+   "hp_basis": "net",
+   "induction": "2-bbl",
+   "compression_ratio": null,
+   "code": "L32 (VIN H)",
+   "sources": [
+    {
+     "name": "NHRA engine blueprint BUI-77 and/or NHRA Stock classification guide (NHRA counted once)",
+     "url": "https://www.nhra.net/tech_specs/engine/blueprints/BUI-77.rtf",
+     "says": "Stock guide: 350 ci / 140 hp (Century, Regal)"
+    },
+    {
+     "name": "J. 'Kelly' Flory Jr., American Cars 1973-1980 (McFarland 2013), Buick powertrain chart p.445 (Google Books snippet)",
+     "url": "https://books.google.com/books?id=PV1uzCfmJDgC",
+     "says": "1977 Buick: 350 CID (5.7L), 140, 2-bbl., V8, H, L32"
+    },
+    {
+     "name": "Conceptcarz (Daniel Vaughan) year page / spec-by-year table",
+     "url": "https://www.conceptcarz.com/vehicle/z14474/buick-regal.aspx",
+     "says": "1977 Regal sedan 350 2-bbl, 140 hp"
+    }
+   ],
+   "note": "GM 1977 brochure confirms 'Buick's 5.7 litre (350 CID) 2-bbl. V-8' but gives no hp."
+  },
+  {
+   "year": 1977,
+   "hp": 155,
+   "hp_basis": "net",
+   "induction": "4-bbl",
+   "compression_ratio": null,
+   "code": "L77 (VIN J)",
+   "sources": [
+    {
+     "name": "NHRA engine blueprint BUI-77 and/or NHRA Stock classification guide (NHRA counted once)",
+     "url": "https://www.nhra.net/tech_specs/engine/blueprints/BUI-77.rtf",
+     "says": "Stock guide: 350 ci / 155 hp (Century, Regal, LeSabre, Electra, Riviera)"
+    },
+    {
+     "name": "J. 'Kelly' Flory Jr., American Cars 1973-1980 (McFarland 2013), Buick powertrain chart p.445 (Google Books snippet)",
+     "url": "https://books.google.com/books?id=PV1uzCfmJDgC",
+     "says": "350 CID (5.7L), 155, 4-bbl., V8, J, L77"
+    },
+    {
+     "name": "Conceptcarz (Daniel Vaughan) year page / spec-by-year table",
+     "url": "https://www.conceptcarz.com/vehicle/z14474/buick-regal.aspx",
+     "says": "1977 Regal optional 350 4-bbl, 155 hp"
+    }
+   ]
+  },
+  {
+   "year": 1978,
+   "hp": 155,
+   "hp_basis": "net",
+   "induction": "4-bbl",
+   "compression_ratio": null,
+   "code": "L77 (VIN X)",
+   "sources": [
+    {
+     "name": "GM/Buick factory literature (all GM material counted as ONE source)",
+     "url": "https://www.oldcarbrochures.org/United%20States/Buick/1978_Buick/1978-Buick-Full-Line-Prestige-Brochure/index.html",
+     "says": "350 Cu. In. V8 Engine (L77) Produced by GM - Buick Motor Division, Flint: 4-bbl, SAE net 155 @ 3400"
+    },
+    {
+     "name": "NHRA engine blueprint BUI-78 and/or NHRA Stock classification guide (NHRA counted once)",
+     "url": "https://www.nhra.net/tech_specs/engine/blueprints/BUI-78.rtf",
+     "says": "Stock guide: 350 ci / 155 hp (Electra, Estate Wagon, LeSabre, Riviera)"
+    },
+    {
+     "name": "J. 'Kelly' Flory Jr., American Cars 1973-1980 (McFarland 2013), Buick powertrain chart p.559 (Google Books snippet)",
+     "url": "https://books.google.com/books?id=PV1uzCfmJDgC",
+     "says": "1978 Buick: 350 CID (5.7L), 155, 4-bbl., V8, X, L77"
+    }
+   ]
+  }
+ ],
+ "unverified": {
+  "head_material": "cast iron. Explicit: GM 1974 brochure ('Cylinder Head and Block Material: Cast Alloy Iron') and JeepTech ('Block and cylinder heads: cast iron'). Wikipedia only implies it (the 300 switched to iron heads for 1966; 340/350 use the same family of heads). 2 explicit sources.",
+  "firing_order": "1-8-4-3-6-5-7-2 per the 1970 Buick service manual table (TeamBuick reproduction) and TeamBuick tune-up specs - both GM material = 1 source. No independent second/third source reachable (Chilton/Motor scans on Google Books return no snippets; Hot Rod/MotorTrend not fetchable).",
+  "rod_length_in": "NHRA blueprints 6.387; Wikipedia 6.385. Only 2 sources, differing in the 3rd decimal.",
+  "compression_by_year": "GM brochures: 1968-69 9.0 (2-bbl) / 10.25 (4-bbl); 1970 9.0 / 9.0 / 10.25 (315 hp); 1971-74 8.5 for all. NHRA agrees 1968-70 but prints 10.5 for 1971-74 (probably wrong) and 9.61 for 1976. Over-Drive gives 10.25 for the 280/315 versions. Treat 1968-70 values as solid; 1971-74 8.5 is GM-only."
+ },
+ "unverified_variants": [
+  {
+   "year": 1971,
+   "hp": 260,
+   "hp_basis": "gross",
+   "induction": "4-bbl",
+   "code": "350-4 (GS std)",
+   "found": "Over-Drive 1971 fact sheet (260 at 4600) + NHRA (260). GM 1971 brochure: 8.5:1, no hp. Only 2 sources (auction listings excluded)."
+  },
+  {
+   "year": 1972,
+   "hp": "disputed",
+   "hp_basis": "net",
+   "found": "2-bbl: NHRA 155; Wikipedia 145 (Skylark) and 160 (LeSabre). 4-bbl: NHRA 195; Wikipedia 180 (Skylark 350, single exhaust); Over-Drive implies the dual-exhaust GS 350 at 195 net. GM 1972 brochure gives 8.5:1, no hp. Ratings probably varied by model/exhaust; none reaches 3 sources."
+  },
+  {
+   "year": 1973,
+   "hp": 190,
+   "hp_basis": "net",
+   "induction": "4-bbl, dual exhaust (Century Gran Sport)",
+   "found": "NHRA 190 (Century) + Wikipedia 190. Flory only notes dual exhaust std with Gran Sport, without a figure."
+  },
+  {
+   "year": 1974,
+   "hp": "150 (2-bbl) / 175 (4-bbl)",
+   "hp_basis": "net",
+   "found": "GM 1974 brochure p.56 (350-2 150 @ 3600; 350-4 175 @ 3800; 8.5:1) + NHRA 150/175. Third source not reached (Flory snippets did not return the 1974 chart; Wikipedia says engines carried over from 1973 without figures)."
+  },
+  {
+   "year": 1979,
+   "hp": 155,
+   "hp_basis": "net",
+   "induction": "4-bbl",
+   "code": "L77 (VIN X)",
+   "found": "Flory p.674 (350 CID 4-bbl V8 155 X, L77) + NHRA stock guide 155. GM 1979 brochure lists a 5.7 litre 4-bbl V-8, no hp."
+  },
+  {
+   "year": 1980,
+   "hp": null,
+   "found": "Wikipedia says the Buick 350 was built through 1980, but no 1980 Buick-built 350 rating was found. NHRA's 1980 entry (165 hp, LeSabre/Electra) is probably an Oldsmobile 350."
+  }
+ ],
+ "jeep_dauntless_350": {
+  "name": "Jeep 'Dauntless 350' (Buick 350 supplied to Kaiser Jeep, later AMC Jeep)",
+  "rating": {
+   "hp": 230,
+   "rpm": 4400,
+   "basis": "gross",
+   "induction": "2-bbl",
+   "compression_ratio": 9.0
+  },
+  "hp_sources": [
+   {
+    "name": "Kaiser Jeep full-line brochure Form 67-10R (Kaiser Jeep factory literature, independent of GM) + 1970 Jeep Wagoneer brochure",
+    "url": "https://oldcarbrochures.org/United%20States/Jeep/1970_Jeep/1970-Jeep-Wagoneer-Brochure/index.html",
+    "says": "New Dauntless V-8 ... 230 horsepower; 1970: Dauntless V-8, 350 cu in, 230 hp at 4400, 350 lb-ft"
+   },
+   {
+    "name": "JeepTech knowledge base - Buick 350 (Dauntless) factory engine page",
+    "url": "https://www.jeepfan.com/tech/jeeptech/engine-factory-buick350v8.htm",
+    "says": "Horsepower (gross) 230@4400; Fuel: 2bbl; CR 9.0:1"
+   },
+   {
+    "name": "Wikipedia - Jeep Wagoneer (SJ)",
+    "url": "https://en.wikipedia.org/wiki/Jeep_Wagoneer_(SJ)",
+    "says": "For 1968 through 1971, Wagoneers were powered by Buick's 350 230 hp Dauntless V8"
+   },
+   {
+    "name": "Curbside Classic - 1966-1971 Jeep Super Wagoneer and Wagoneer Custom Special",
+    "url": "https://www.curbsideclassic.com/automotive-histories/1966-1971-jeep-super-wagoneer-and-wagoneer-custom-special-these-lux",
+    "says": "In mid-1968 ... new Dauntless 350, a small-block Buick engine with 230 hp"
+   },
+   {
+    "name": "Old Cars Weekly - Car of the Week: 1969 Jeep Gladiator",
+    "url": "https://www.oldcarsweekly.com/features/car-week-1969-jeep-gladiator",
+    "says": "Buick 350 Dauntless V-8 optional, 230 hp"
+   },
+   {
+    "name": "Flory, American Light Trucks and Utility Vehicles 1967-1989 (McFarland 2019) pp.158-160, 207-209, 262-263",
+    "url": "https://books.google.com/books?id=Az-7DwAAQBAJ",
+    "says": "350 CID V8 sourced from Buick Motor Division, new for 1969; 230 @ 4400 / 350 @ 2400 (chart prints '4-bbl.'); replaced by AMC 360 mid-1971"
+   }
+  ],
+  "models": "Wagoneer / Super Wagoneer and Gladiator (J-series) pickups only",
+  "years": "1968 (mid-year) to mid-1971",
+  "disagreements": [
+   "Start year: Kaiser Form 67-10R brochure (1968-model literature), Wikipedia, Curbside Classic, Jalopnik say 1968 (mid-year); Flory, IFSJA drivetrain table and JeepTech say 1969.",
+   "End: replaced by AMC 304/360 during 1971 (Flory p.262; Allpar); JeepTech says 1970.",
+   "Carburetor: JeepTech says 2-bbl, and 230 @ 4400 / 9.0:1 is exactly Buick's 350-2 rating; Flory's charts print 4-bbl."
+  ]
+ },
+ "data_check": {
+  "record": "3.7992 x 3.7992 bore x stroke on a 280 hp Buick 350",
+  "verdict": "WRONG",
+  "correct": "3.80 in bore x 3.85 in stroke (96.5 x 97.8 mm)",
+  "explanation": "3.7992 in = 96.5 mm, i.e. the bore converted from mm, copied into the stroke as well. 3.7992 x 3.7992 x 8 cyl = 344.6 ci, not 350; 3.80 x 3.85 = 349.3 ci. GM service manual and brochures, NHRA, Wikipedia and JeepTech all give 3.80 x 3.85."
+ },
+ "notes": [
+  "NHRA blueprints BUI-77 and BUI-79 have '350' entries with 4.001 x 3.484 bore/stroke and 5.7 in rods: these are Chevrolet/Oldsmobile 350s fitted to Buicks, not the Buick 350. The NHRA stock guides also mix 160/170 hp Chevy/Olds 350s into 1977-80 Buick listings.",
+  "NHRA BUI-75 has no 350 entry; the 1975 NHRA figures come from the NHRA Stock classification guide.",
+  "Buick also published 1971 SAE net figures; not collected."
+ ]
+}

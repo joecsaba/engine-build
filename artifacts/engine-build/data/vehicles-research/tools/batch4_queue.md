@@ -47,6 +47,9 @@ Sources stay private. Half-ton / light-duty models only unless noted.
 - Ford 3.0 Power Stroke V6 diesel (183 ci) — F-150 2018–2021 (left unlinked; not the Audi EA896)
 - Ford 3.3 Ti-VCT V6 (204 ci), 6.2 Boss V8 (379 ci), 5.2 Predator supercharged V8 (317 ci) — F-150
 - Mitsubishi 6DR5 4.0 diesel (243 ci) — Dodge D150 1978
+- Chrysler 3.2 Pentastar V6 (198 ci) — Cherokee KL 2014–2022 (Pentastar page has only the 3.6)
+- DONE 2026-10-13: Buick 350 V8 1968–1978 records (3.80 x 3.85) and Jeep Dauntless 350. Still unverified: 1971 4-bbl 260, 1972, 1974, 1979–80 ratings.
+- Buick 300 / 340 / 400 records look wrong (bore 3.7992 on all; 300 stroke 3.311, 340 stroke 3.752, 400 bore 4.126 x 3.7992). Real: 300 = 3.75 x 3.40, 340 = 3.75 x 3.85, 400 = 4.04 x 3.90. Verify and fix with redirects.
 
 ## Other leftovers
 - Dodge D-series: 1961, 1968, 1969 and 1989 have no engine with 3 sources yet (no brochures found) — retry.

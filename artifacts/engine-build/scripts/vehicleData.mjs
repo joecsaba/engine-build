@@ -124,12 +124,22 @@ export function linkVehicles(vehicles, engineData) {
       const exact = cands.filter((e) => (e.variants ?? []).some((x) => x.year === ve.year && x.hp === ve.hp));
       const engine = exact.length === 1 ? exact[0] : null;
 
-      // Family: the displacement family most of the candidates belong to,
-      // preferring the conventional "<mfr>-<ci>ci" hub.
+      // Family: prefer the family with a dated record closest to this model
+      // year (a 1972 Buick 350 belongs with Buick's 1968-1978 350, not with
+      // the 1979+ Chevy-built 350s in "Buick 350ci"); then the conventional
+      // "<mfr>-<ci>ci" hub; then the family most candidates belong to.
       const famCount = new Map();
-      for (const e of engine ? [engine] : cands) famCount.set(e.familyUrl, (famCount.get(e.familyUrl) ?? 0) + 1);
+      const famDist = new Map();
+      for (const e of engine ? [engine] : cands) {
+        famCount.set(e.familyUrl, (famCount.get(e.familyUrl) ?? 0) + 1);
+        const lo = e.yearMin, hi = e.yearMax ?? e.yearMin;
+        const gap = lo == null ? 99 : ve.year < lo ? lo - ve.year : ve.year > hi ? ve.year - hi : 0;
+        const dist = gap <= 3 ? 0 : gap; // within three years counts as the same era
+        famDist.set(e.familyUrl, Math.min(famDist.get(e.familyUrl) ?? 99, dist));
+      }
       const famUrl = [...famCount.entries()]
-        .sort((a, b) => Number(/-\d+ci$/.test(b[0])) - Number(/-\d+ci$/.test(a[0])) || b[1] - a[1])[0]?.[0] ?? null;
+        .sort((a, b) => famDist.get(a[0]) - famDist.get(b[0]) ||
+          Number(/-\d+ci$/.test(b[0])) - Number(/-\d+ci$/.test(a[0])) || b[1] - a[1])[0]?.[0] ?? null;
 
       ve.engineUrl = engine?.url ?? null;
       ve.familyUrl = famUrl;
