@@ -102,7 +102,7 @@ function handler(event) {
     '/engines/pontiac/pontiac-346ci/ponti-2004-346-350hp': '/engines/pontiac/pontiac-346ci/346ci-3-898x3-622',
     // Geometry audit (2026-10-13): bore/stroke corrected or withheld; the
     // GMC-filed Buick V8 family (all records wrong) and a made-up Northstar removed.
-    '/engines/audi/ea837/auk-bkh-bpk-cala': '/engines/audi/ea837',
+    '/engines/audi/ea837/auk-bkh-bpk-cala': '/engines/audi/ea837/cala',
     '/engines/cadillac/ecotec/20t-lsy': '/engines/cadillac/ecotec/lsy',
     '/engines/cadillac/ecotec/20t-lsv': '/engines/cadillac/ecotec/lsy',
     '/engines/cadillac/northstar/lk8': '/engines/cadillac/northstar',
@@ -123,12 +123,11 @@ function handler(event) {
     '/engines/oldsmobile/oldsmobile-207ci/207ci-3-62x2-31': '/engines/oldsmobile/oldsmobile-207ci',
     '/engines/plymouth/rb/426-maxwedge': '/engines/plymouth/rb/426ci-4-25x3-75',
     '/engines/plymouth/rb/426-wedge': '/engines/plymouth/rb/426ci-4-25x3-75',
-    '/engines/pontiac/pontiac-135ci/135ci-3-386x3-386': '/engines/pontiac',
+    '/engines/pontiac/pontiac-135ci/135ci-3-386x3-386': '/engines/pontiac/pontiac-135ci/135ci-3-386x3-724',
     '/engines/pontiac/pontiac-207ci/207ci-3-62x2-31': '/engines/pontiac/pontiac-207ci',
     '/engines/subaru/fa/24-na': '/engines/subaru/fa',
     '/engines/subaru/fa/subaru-fa24t': '/engines/subaru/fa',
-    '/engines/gmc/buick-v8': '/engines/buick',
-    '/engines/pontiac/pontiac-135ci': '/engines/pontiac'
+    '/engines/gmc/buick-v8': '/engines/buick'
   };
   var corrected = CORRECTED[uri.replace(/\/$/, '')];
   if (corrected) {

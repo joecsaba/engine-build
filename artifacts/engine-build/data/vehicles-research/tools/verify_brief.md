@@ -67,3 +67,10 @@ bearing clearances or cam specs. Do not modify any file outside the scratchpad.
 
 Final message: a compact table per vehicle (year × engine × status) and every
 disagreement you found, in under 400 words.
+
+## Source rule (user, 2026-10-13)
+- First pass: 3 independent reputable sources (all manufacturer material = one; Wikipedia = one).
+- Second pass: 2 reputable sources that agree exactly may be published (e.g. the manufacturer's spec sheet
+  plus an independent publication). A partial third source and an arithmetic check strengthen it.
+- When sources conflict, use the most authoritative figure only if the arithmetic confirms it; otherwise withhold.
+- Provably wrong figures are withheld (null) until verified, never left live.
