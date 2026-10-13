@@ -1,7 +1,7 @@
 # -*- coding: utf-8 -*-
 # Curation specs for batch 4 (Jeeps, trucks). Writes vspecs/<slug>.json, draft until approved.
 # Public copy must not mention sources; notes say "Also published as..." rather than naming them.
-import json, os, sys
+import json, os, re, sys
 SP = sys.argv[1]
 ONLY = sys.argv[2:]  # optional: build only these slugs
 PICK = "Pick a year to see every engine offered that model year, with its code, rated horsepower and the trims it came in. Each engine links to its full specs."
@@ -132,6 +132,16 @@ S["f-100"] = dict(make="Ford", model="F-100", makeSlug="ford", slug="f-100",
     G("gen7", "1980–1983", 1980, 1983, "The last F-100s offered the 300 six, a 3.8 V6 from 1982, and the 4.2 and 5.0 V8s.")],
   files=["verify_ford-f100-1953-1983.json"],
   names={"1964|262|152": "262 inline-six"})
+
+# Third sources found in follow-up passes, matched to the model they cover.
+for fn, slug in (("third_source_found_cj.json", "cj"),):
+    tp = os.path.join(SP, fn)
+    if not os.path.exists(tp): continue
+    for x in json.load(open(tp, encoding="utf-8")):
+        if "source" not in x: continue
+        k = f'{x["year"]}|{x["cid"]}|{x["hp"]}'
+        S[slug].setdefault("add_sources_trim", {}).setdefault(k, []).append(
+            {"trim": "^" + re.escape(x.get("trim") or "") , "source": x["source"]})
 
 os.makedirs(os.path.join(SP, "vspecs"), exist_ok=True)
 for k, v in S.items():

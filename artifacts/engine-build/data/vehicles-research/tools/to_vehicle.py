@@ -143,6 +143,9 @@ for fn in spec["files"]:
             if str(e.get("cid")) in spec.get("cid_remap", {}):
                 e = {**e, "cid": spec["cid_remap"][str(e["cid"])]}
             raw = list(e.get("sources") or []) + spec.get("add_sources", {}).get(k, [])
+            # add_sources_trim: a source that covers only one model of a shared row (CJ-6, not CJ-5)
+            raw += [x["source"] for x in spec.get("add_sources_trim", {}).get(k, [])
+                    if re.search(x["trim"], " ".join(e.get("trims") or []), re.I)]
             srcs, seen = [], set()
             for s in raw:
                 if not s.get("name"): continue
