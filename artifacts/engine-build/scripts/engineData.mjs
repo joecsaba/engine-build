@@ -23,7 +23,7 @@
 // Torque specs are deliberately NOT surfaced anywhere here — that dataset is on
 // hold (1,315 malformed torque_to_yield entries) and must not reach search.
 
-import { readFileSync, existsSync, writeFileSync, mkdirSync } from "node:fs";
+import { readFileSync, existsSync, writeFileSync, mkdirSync, rmSync } from "node:fs";
 import { loadNhraEngines, geoKey } from "./nhraData.mjs";
 import { resolve, dirname } from "node:path";
 import { fileURLToPath } from "node:url";
@@ -769,6 +769,8 @@ export function loadEngineData() {
  */
 export function writeRuntimeData({ manufacturers, families }) {
   const outDir = resolve(DATA, "engine-pages");
+  // Start clean: a family that was merged or renamed must not linger.
+  rmSync(outDir, { recursive: true, force: true });
   mkdirSync(outDir, { recursive: true });
 
   for (const fam of families) {
@@ -784,7 +786,8 @@ export function writeRuntimeData({ manufacturers, families }) {
         manufacturerUrl: fam.manufacturerUrl,
         configuration: fam.configuration,
         factoryCars: fam.factoryCars ?? [],
-        engines: fam.engines,
+        // Sources are tracked privately (data/engine-sources/) and not shipped.
+        engines: fam.engines.map(({ sources: _s, ...e }) => e),
       }),
       "utf8"
     );
