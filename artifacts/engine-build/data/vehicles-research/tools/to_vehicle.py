@@ -254,7 +254,9 @@ for fn in spec["files"]:
                 rec["note"] = rec["note"] or "Published ratings for this engine vary."
             if y.startswith("1964") and mk == "ford": rec["yearLabel"] = "1964½"
             ok_status = st in ("confirmed", "two_sources_not_nhra", "three_sources_not_nhra", "nhra_plus_one", "electric") or k in spec.get("include", []) or k in spec.get("ranges", {})
-            ok = k not in spec.get("exclude", {}) and ((ok_status and n >= 3) or (race and n >= 2))
+            # second pass (user rule 2026-10-13): two reputable sources that agree exactly
+            two_agree = st == "two_sources_agree" and n >= 2
+            ok = k not in spec.get("exclude", {}) and ((ok_status and n >= 3) or two_agree or (race and n >= 2))
             if ok:
                 engines.append(rec)
             else:

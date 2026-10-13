@@ -29,6 +29,16 @@ JOBS = {
   "dodge-dseries-1961-1993": (r"^Dodge$", r"^D1|^RAM$", r"^Dodge$", r"^[DW]100|^[DW]150", "1961-1993"),
   "dodge-ram-1500-1994-2008": (r"^Dodge$", r"^RAM$|D1500", r"^Dodge$", r"^Ram 1500", "1994-2008"),
   "ram-1500-2009-2026": (r"^Dodge$", r"^RAM$|D1500", r"^(Dodge|Ram)$", r"^(Ram )?1500", "2009-2026"),
+  # wave 2 (2026-10-13)
+  "chevrolet-s10-1982-2004": (r"^Chevrolet$", r"S-10", r"^Chevrolet$", r"^S10 Pickup|^T10 \(S10\) Pickup", "1982-2004"),
+  "chevrolet-blazer-k5-1969-1994": (r"^Chevrolet$", r"BLAZER", r"^Chevrolet$", r"^(K5|K10|K1500|C10|V10)?.*Blazer(?!.*S10)", "1969-1994"),
+  "ford-ranger-1983-2012": (r"^Ford$", r"^RANGER$", r"^Ford$", r"^Ranger Pickup", "1983-2012"),
+  "ford-ranger-2019-2026": (r"^Ford$", r"^RANGER$", r"^Ford$", r"^Ranger", "2019-2026"),
+  "ford-bronco-1966-1996": (r"^Ford$", r"BRONCO", r"^Ford$", r"^Bronco(?! II)", "1966-1996"),
+  "ford-bronco-2021-2026": (None, None, r"^Ford$", r"^Bronco(?! Sport)", "2021-2026"),
+  "dodge-dakota-1987-2011": (r"^Dodge$", r"^DAKOTA$", r"^(Dodge|Ram)$", r"Dakota", "1987-2011"),
+  "jeep-jseries-1972-1988": (None, None, r"^(Jeep|AMC)$", r"^J10|^J20|Pickup(?!.*Comanche)", "1972-1988"),
+  "jeep-comanche-1986-1992": (None, None, r"^Jeep$", r"Comanche", "1986-1992"),
 }
 
 def spans(s):
