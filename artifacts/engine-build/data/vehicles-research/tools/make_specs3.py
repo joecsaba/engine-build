@@ -135,7 +135,7 @@ S["f-100"] = dict(make="Ford", model="F-100", makeSlug="ford", slug="f-100",
 
 S["ram-1500"] = dict(make="Ram", model="1500", makeSlug="ram", slug="1500",
   title="Ram 1500 Engines by Year (1994–2026)",
-  description="Every factory engine in the Dodge Ram 1500 and Ram 1500 by year, 1994–2026: Magnum V6 and V8s, the SRT-10 V10, Hemis, EcoDiesel, the TRX and the Hurricane six.",
+  description="Every factory engine in the Dodge Ram 1500 and Ram 1500 by year, 1994–2026: Magnum V6 and V8s, the SRT-10 V10, Hemis, EcoDiesel, the TRX and Hurricane six.",
   intro=["Dodge sold the Ram 1500 from 1994. Ram became a separate brand in 2010, and the truck has been the Ram 1500 since the 2011 model year. After the 2019 redesign the previous truck stayed on sale as the Ram 1500 Classic through 2024. Earlier Dodge half-tons are on the D-series page.", PICK],
   generations=[
     G("gen2", "1994–2001", 1994, 2001, "The 1994 Ram used the 3.9 Magnum V6 and the 5.2 and 5.9 Magnum V8s. The 8.0 V10 was a 2500 and 3500 engine."),
