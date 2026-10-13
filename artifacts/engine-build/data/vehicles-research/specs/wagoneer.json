@@ -1,0 +1,53 @@
+{
+ "make": "Jeep",
+ "model": "Wagoneer",
+ "makeSlug": "jeep",
+ "slug": "wagoneer",
+ "title": "Jeep Wagoneer Engines by Year (1963–1991)",
+ "description": "Every factory engine in the Jeep Wagoneer and Grand Wagoneer by year, 1963–1991: the Tornado six, 327 Vigilante, Buick 350 and AMC sixes and V8s.",
+ "intro": [
+  "Kaiser introduced the full-size Wagoneer for 1963. American Motors bought Jeep in 1970, and the same basic body was built until 1991, renamed Grand Wagoneer from 1984. The compact XJ-based Wagoneer of 1984–1990 is covered with the Cherokee.",
+  "Pick a year to see every engine offered that model year, with its code, rated horsepower and the trims it came in. Each engine links to its full specs."
+ ],
+ "generations": [
+  {
+   "key": "kaiser",
+   "name": "Kaiser",
+   "years": [
+    1963,
+    1970
+   ],
+   "intro": [
+    "Kaiser's Wagoneer started with the overhead-cam Tornado six. AMC's 232 six and the 327 Vigilante V8 replaced it during 1965, and Buick's 350 Dauntless V8 took over from the 327 during 1968."
+   ]
+  },
+  {
+   "key": "amc",
+   "name": "AMC",
+   "years": [
+    1971,
+    1991
+   ],
+   "intro": [
+    "Under AMC the Wagoneer moved to AMC's 258 six and 304, 360 and 401 V8s. Jeep's literature stopped quoting horsepower after 1974, so many later years show no rating. The Grand Wagoneer of 1984–1991 used the 360 V8, with the 258 six available through 1986."
+   ]
+  }
+ ],
+ "files": [
+  "verify_jeep-wagoneer-1963-1991.json"
+ ],
+ "metric_from": 1984,
+ "family_overrides": [
+  {
+   "years": [
+    1968,
+    1971
+   ],
+   "cid": [
+    350
+   ],
+   "url": "/engines/jeep/dauntless"
+  }
+ ],
+ "draft": true
+}

@@ -1,0 +1,3533 @@
+{
+ "vehicle": "jeep-cherokee",
+ "scope": "US-market Jeep Cherokee: SJ (1974-1983), XJ (1984-2001), KL (2014-2023). 2002-2012 Liberty excluded. NHRA input was empty, so nhra=false throughout.",
+ "excluded_notes": [
+  "2.5L VM Motori turbodiesel (XJ, 1994-2001) and the 2.1 TD after 1987 were export/Canada only; not recorded.",
+  "KL 2.0L/2.2L Multijet diesels and China-market 2.0 engines were not sold in the US.",
+  "XJ 2.8 V6 ended after 1986; 4.0 began 1987."
+ ],
+ "years": {
+  "1974": [
+   {
+    "gen": "sj",
+    "cid": 258,
+    "hp": 110,
+    "hp_basis": "net",
+    "rpo": "AMC 258 1-bbl",
+    "name": "4.2L / 258 I6",
+    "common_name": "AMC 258",
+    "trims": [
+     "base (standard)"
+    ],
+    "nhra": false,
+    "sources": [
+     {
+      "name": "Wikipedia - Jeep Cherokee (SJ)",
+      "url": "https://en.wikipedia.org/wiki/Jeep_Cherokee_(SJ)",
+      "says": "Engine list 1974-1983: 258 cu in AMC I6, 110 hp"
+     },
+     {
+      "name": "Off Road Xtreme - Vintage Monday: The 1974-1983 Full-Size Jeep Cherokee (SJ) (Lindsey Fisher)",
+      "url": "https://www.offroadxtreme.com/?p=9839",
+      "says": "258ci inline-six, 110 HP, offered throughout 1974-1983"
+     }
+    ],
+    "status": "two_sources_not_nhra",
+    "note": "No 1974 factory literature found online; only two non-NHRA sources (both range statements).  1974 figures (Wikipedia, Off Road Xtreme); SAE net."
+   },
+   {
+    "gen": "sj",
+    "cid": 360,
+    "hp": 175,
+    "hp_basis": "net",
+    "rpo": "AMC 360 2-bbl",
+    "name": "5.9L / 360 V8 2-bbl",
+    "common_name": "AMC 360",
+    "trims": [
+     "optional"
+    ],
+    "nhra": false,
+    "sources": [
+     {
+      "name": "Wikipedia - Jeep Cherokee (SJ)",
+      "url": "https://en.wikipedia.org/wiki/Jeep_Cherokee_(SJ)",
+      "says": "175 hp 360 cu in V8 with two-barrel carburetor (1974-1983 engine list)"
+     },
+     {
+      "name": "Off Road Xtreme - Vintage Monday: The 1974-1983 Full-Size Jeep Cherokee (SJ) (Lindsey Fisher)",
+      "url": "https://www.offroadxtreme.com/?p=9839",
+      "says": "360ci V8 (2-barrel) 175 HP"
+     },
+     {
+      "name": "wagoneers.com (John Meister) - Full Size Jeep engine availability by year",
+      "url": "https://wagoneers.com/tech/Engines/FSJ-engines-ALL/Engines-FSJ.html",
+      "says": "FSJ table 1974-1978: 360 2v and 4v, 401 4v optional"
+     }
+    ],
+    "status": "three_sources_not_nhra",
+    "note": "No 1974 factory literature found online; third source is the full-size-Jeep (Wagoneer/Cherokee/pickup) table, not Cherokee-specific. 1974 figures (Wikipedia, Off Road Xtreme); SAE net."
+   },
+   {
+    "gen": "sj",
+    "cid": 360,
+    "hp": 195,
+    "hp_basis": "net",
+    "rpo": "AMC 360 4-bbl",
+    "name": "5.9L / 360 V8 4-bbl",
+    "common_name": "AMC 360",
+    "trims": [
+     "optional"
+    ],
+    "nhra": false,
+    "sources": [
+     {
+      "name": "Wikipedia - Jeep Cherokee (SJ)",
+      "url": "https://en.wikipedia.org/wiki/Jeep_Cherokee_(SJ)",
+      "says": "195 hp four-barrel 360"
+     },
+     {
+      "name": "Off Road Xtreme - Vintage Monday: The 1974-1983 Full-Size Jeep Cherokee (SJ) (Lindsey Fisher)",
+      "url": "https://www.offroadxtreme.com/?p=9839",
+      "says": "360ci V8 (4-barrel) 195 HP"
+     },
+     {
+      "name": "wagoneers.com (John Meister) - Full Size Jeep engine availability by year",
+      "url": "https://wagoneers.com/tech/Engines/FSJ-engines-ALL/Engines-FSJ.html",
+      "says": "FSJ table 1974-1978: 360 4v optional"
+     }
+    ],
+    "status": "three_sources_not_nhra",
+    "note": "No 1974 factory literature found online; third source is the full-size-Jeep (Wagoneer/Cherokee/pickup) table, not Cherokee-specific. 1974 figures (Wikipedia, Off Road Xtreme); SAE net."
+   },
+   {
+    "gen": "sj",
+    "cid": 401,
+    "hp": 215,
+    "hp_basis": "net",
+    "rpo": "AMC 401 4-bbl",
+    "name": "6.6L / 401 V8",
+    "common_name": "AMC 401",
+    "trims": [
+     "optional"
+    ],
+    "nhra": false,
+    "sources": [
+     {
+      "name": "Wikipedia - Jeep Cherokee (SJ)",
+      "url": "https://en.wikipedia.org/wiki/Jeep_Cherokee_(SJ)",
+      "says": "net 215 hp 401 cu in AMC V8; discontinued at the end of 1978"
+     },
+     {
+      "name": "Off Road Xtreme - Vintage Monday: The 1974-1983 Full-Size Jeep Cherokee (SJ) (Lindsey Fisher)",
+      "url": "https://www.offroadxtreme.com/?p=9839",
+      "says": "401ci V8 (4-barrel) 215 HP; dropped for 1979"
+     },
+     {
+      "name": "wagoneers.com (John Meister) - Full Size Jeep engine availability by year",
+      "url": "https://wagoneers.com/tech/Engines/FSJ-engines-ALL/Engines-FSJ.html",
+      "says": "FSJ table 1974-1978: 401 4v optional"
+     }
+    ],
+    "status": "three_sources_not_nhra",
+    "note": "No 1974 factory literature found online; third source is the full-size-Jeep (Wagoneer/Cherokee/pickup) table, not Cherokee-specific. 1974 figures (Wikipedia, Off Road Xtreme); SAE net."
+   }
+  ],
+  "1975": [
+   {
+    "gen": "sj",
+    "cid": 258,
+    "hp": null,
+    "hp_basis": "net",
+    "rpo": "AMC 258 1-bbl",
+    "name": "4.2L / 258 I6",
+    "common_name": "AMC 258",
+    "trims": [
+     "base (standard)"
+    ],
+    "nhra": false,
+    "sources": [
+     {
+      "name": "Wikipedia - Jeep Cherokee (SJ)",
+      "url": "https://en.wikipedia.org/wiki/Jeep_Cherokee_(SJ)",
+      "says": "Engine list 1974-1983: 258 cu in AMC I6, 110 hp"
+     },
+     {
+      "name": "Off Road Xtreme - Vintage Monday: The 1974-1983 Full-Size Jeep Cherokee (SJ) (Lindsey Fisher)",
+      "url": "https://www.offroadxtreme.com/?p=9839",
+      "says": "258ci inline-six, 110 HP, offered throughout 1974-1983"
+     }
+    ],
+    "status": "two_sources_not_nhra",
+    "note": "No 1975 factory literature found online; only two non-NHRA sources (both range statements). Per-year SAE net rating not stated in the factory brochures found; spec databases disagree, so hp left null."
+   },
+   {
+    "gen": "sj",
+    "cid": 360,
+    "hp": null,
+    "hp_basis": "net",
+    "rpo": "AMC 360 2-bbl",
+    "name": "5.9L / 360 V8 2-bbl",
+    "common_name": "AMC 360",
+    "trims": [
+     "optional"
+    ],
+    "nhra": false,
+    "sources": [
+     {
+      "name": "Wikipedia - Jeep Cherokee (SJ)",
+      "url": "https://en.wikipedia.org/wiki/Jeep_Cherokee_(SJ)",
+      "says": "175 hp 360 cu in V8 with two-barrel carburetor (1974-1983 engine list)"
+     },
+     {
+      "name": "Off Road Xtreme - Vintage Monday: The 1974-1983 Full-Size Jeep Cherokee (SJ) (Lindsey Fisher)",
+      "url": "https://www.offroadxtreme.com/?p=9839",
+      "says": "360ci V8 (2-barrel) 175 HP"
+     },
+     {
+      "name": "wagoneers.com (John Meister) - Full Size Jeep engine availability by year",
+      "url": "https://wagoneers.com/tech/Engines/FSJ-engines-ALL/Engines-FSJ.html",
+      "says": "FSJ table 1974-1978: 360 2v and 4v, 401 4v optional"
+     }
+    ],
+    "status": "three_sources_not_nhra",
+    "note": "No 1975 factory literature found online; third source is the full-size-Jeep (Wagoneer/Cherokee/pickup) table, not Cherokee-specific. Per-year SAE net rating not stated in the factory brochures found; spec databases disagree, so hp left null."
+   },
+   {
+    "gen": "sj",
+    "cid": 360,
+    "hp": null,
+    "hp_basis": "net",
+    "rpo": "AMC 360 4-bbl",
+    "name": "5.9L / 360 V8 4-bbl",
+    "common_name": "AMC 360",
+    "trims": [
+     "optional"
+    ],
+    "nhra": false,
+    "sources": [
+     {
+      "name": "Wikipedia - Jeep Cherokee (SJ)",
+      "url": "https://en.wikipedia.org/wiki/Jeep_Cherokee_(SJ)",
+      "says": "195 hp four-barrel 360"
+     },
+     {
+      "name": "Off Road Xtreme - Vintage Monday: The 1974-1983 Full-Size Jeep Cherokee (SJ) (Lindsey Fisher)",
+      "url": "https://www.offroadxtreme.com/?p=9839",
+      "says": "360ci V8 (4-barrel) 195 HP"
+     },
+     {
+      "name": "wagoneers.com (John Meister) - Full Size Jeep engine availability by year",
+      "url": "https://wagoneers.com/tech/Engines/FSJ-engines-ALL/Engines-FSJ.html",
+      "says": "FSJ table 1974-1978: 360 4v optional"
+     }
+    ],
+    "status": "three_sources_not_nhra",
+    "note": "No 1975 factory literature found online; third source is the full-size-Jeep (Wagoneer/Cherokee/pickup) table, not Cherokee-specific. Per-year SAE net rating not stated in the factory brochures found; spec databases disagree, so hp left null."
+   },
+   {
+    "gen": "sj",
+    "cid": 401,
+    "hp": null,
+    "hp_basis": "net",
+    "rpo": "AMC 401 4-bbl",
+    "name": "6.6L / 401 V8",
+    "common_name": "AMC 401",
+    "trims": [
+     "optional"
+    ],
+    "nhra": false,
+    "sources": [
+     {
+      "name": "Wikipedia - Jeep Cherokee (SJ)",
+      "url": "https://en.wikipedia.org/wiki/Jeep_Cherokee_(SJ)",
+      "says": "net 215 hp 401 cu in AMC V8; discontinued at the end of 1978"
+     },
+     {
+      "name": "Off Road Xtreme - Vintage Monday: The 1974-1983 Full-Size Jeep Cherokee (SJ) (Lindsey Fisher)",
+      "url": "https://www.offroadxtreme.com/?p=9839",
+      "says": "401ci V8 (4-barrel) 215 HP; dropped for 1979"
+     },
+     {
+      "name": "wagoneers.com (John Meister) - Full Size Jeep engine availability by year",
+      "url": "https://wagoneers.com/tech/Engines/FSJ-engines-ALL/Engines-FSJ.html",
+      "says": "FSJ table 1974-1978: 401 4v optional"
+     }
+    ],
+    "status": "three_sources_not_nhra",
+    "note": "No 1975 factory literature found online; third source is the full-size-Jeep (Wagoneer/Cherokee/pickup) table, not Cherokee-specific. Per-year SAE net rating not stated in the factory brochures found; spec databases disagree, so hp left null."
+   }
+  ],
+  "1976": [
+   {
+    "gen": "sj",
+    "cid": 258,
+    "hp": null,
+    "hp_basis": "net",
+    "rpo": "AMC 258 1-bbl",
+    "name": "4.2L / 258 I6",
+    "common_name": "AMC 258",
+    "trims": [
+     "base (standard)"
+    ],
+    "nhra": false,
+    "sources": [
+     {
+      "name": "Wikipedia - Jeep Cherokee (SJ)",
+      "url": "https://en.wikipedia.org/wiki/Jeep_Cherokee_(SJ)",
+      "says": "Engine list 1974-1983: 258 cu in AMC I6, 110 hp"
+     },
+     {
+      "name": "Off Road Xtreme - Vintage Monday: The 1974-1983 Full-Size Jeep Cherokee (SJ) (Lindsey Fisher)",
+      "url": "https://www.offroadxtreme.com/?p=9839",
+      "says": "258ci inline-six, 110 HP, offered throughout 1974-1983"
+     },
+     {
+      "name": "1976 Jeep Full Line brochure, p.29 Engine Availability chart",
+      "url": "https://oldcarbrochures.org/United%20States/Jeep/1976-Jeep/1976-Jeep-Full-Line-Brochure/slides/1976_Jeep_Full_Line-29.html",
+      "says": "Engine Availability: 258-1bbl 6 cylinder - Cherokee Std. (N.A. in California; 360-4bbl std. in Calif.)"
+     }
+    ],
+    "status": "three_sources_not_nhra",
+    "note": "Per-year SAE net rating not stated in the factory brochures found; spec databases disagree, so hp left null. Not available in California for 1976 (360-4bbl standard there)."
+   },
+   {
+    "gen": "sj",
+    "cid": 360,
+    "hp": null,
+    "hp_basis": "net",
+    "rpo": "AMC 360 2-bbl",
+    "name": "5.9L / 360 V8 2-bbl",
+    "common_name": "AMC 360",
+    "trims": [
+     "optional"
+    ],
+    "nhra": false,
+    "sources": [
+     {
+      "name": "Wikipedia - Jeep Cherokee (SJ)",
+      "url": "https://en.wikipedia.org/wiki/Jeep_Cherokee_(SJ)",
+      "says": "175 hp 360 cu in V8 with two-barrel carburetor (1974-1983 engine list)"
+     },
+     {
+      "name": "Off Road Xtreme - Vintage Monday: The 1974-1983 Full-Size Jeep Cherokee (SJ) (Lindsey Fisher)",
+      "url": "https://www.offroadxtreme.com/?p=9839",
+      "says": "360ci V8 (2-barrel) 175 HP"
+     },
+     {
+      "name": "wagoneers.com (John Meister) - Full Size Jeep engine availability by year",
+      "url": "https://wagoneers.com/tech/Engines/FSJ-engines-ALL/Engines-FSJ.html",
+      "says": "FSJ table 1974-1978: 360 2v and 4v, 401 4v optional"
+     },
+     {
+      "name": "1976 Jeep Full Line brochure, p.29 Engine Availability chart",
+      "url": "https://oldcarbrochures.org/United%20States/Jeep/1976-Jeep/1976-Jeep-Full-Line-Brochure/slides/1976_Jeep_Full_Line-29.html",
+      "says": "360-2bbl V8 - Cherokee Opt. (N.A. in California)"
+     }
+    ],
+    "status": "three_sources_not_nhra",
+    "note": "Per-year SAE net rating not stated in the factory brochures found; spec databases disagree, so hp left null."
+   },
+   {
+    "gen": "sj",
+    "cid": 360,
+    "hp": null,
+    "hp_basis": "net",
+    "rpo": "AMC 360 4-bbl",
+    "name": "5.9L / 360 V8 4-bbl",
+    "common_name": "AMC 360",
+    "trims": [
+     "optional"
+    ],
+    "nhra": false,
+    "sources": [
+     {
+      "name": "Wikipedia - Jeep Cherokee (SJ)",
+      "url": "https://en.wikipedia.org/wiki/Jeep_Cherokee_(SJ)",
+      "says": "195 hp four-barrel 360"
+     },
+     {
+      "name": "Off Road Xtreme - Vintage Monday: The 1974-1983 Full-Size Jeep Cherokee (SJ) (Lindsey Fisher)",
+      "url": "https://www.offroadxtreme.com/?p=9839",
+      "says": "360ci V8 (4-barrel) 195 HP"
+     },
+     {
+      "name": "wagoneers.com (John Meister) - Full Size Jeep engine availability by year",
+      "url": "https://wagoneers.com/tech/Engines/FSJ-engines-ALL/Engines-FSJ.html",
+      "says": "FSJ table 1974-1978: 360 4v optional"
+     },
+     {
+      "name": "1976 Jeep Full Line brochure, p.29 Engine Availability chart",
+      "url": "https://oldcarbrochures.org/United%20States/Jeep/1976-Jeep/1976-Jeep-Full-Line-Brochure/slides/1976_Jeep_Full_Line-29.html",
+      "says": "360-4bbl V8 - Cherokee Opt. (standard in California)"
+     }
+    ],
+    "status": "three_sources_not_nhra",
+    "note": "Per-year SAE net rating not stated in the factory brochures found; spec databases disagree, so hp left null."
+   },
+   {
+    "gen": "sj",
+    "cid": 401,
+    "hp": null,
+    "hp_basis": "net",
+    "rpo": "AMC 401 4-bbl",
+    "name": "6.6L / 401 V8",
+    "common_name": "AMC 401",
+    "trims": [
+     "optional"
+    ],
+    "nhra": false,
+    "sources": [
+     {
+      "name": "Wikipedia - Jeep Cherokee (SJ)",
+      "url": "https://en.wikipedia.org/wiki/Jeep_Cherokee_(SJ)",
+      "says": "net 215 hp 401 cu in AMC V8; discontinued at the end of 1978"
+     },
+     {
+      "name": "Off Road Xtreme - Vintage Monday: The 1974-1983 Full-Size Jeep Cherokee (SJ) (Lindsey Fisher)",
+      "url": "https://www.offroadxtreme.com/?p=9839",
+      "says": "401ci V8 (4-barrel) 215 HP; dropped for 1979"
+     },
+     {
+      "name": "wagoneers.com (John Meister) - Full Size Jeep engine availability by year",
+      "url": "https://wagoneers.com/tech/Engines/FSJ-engines-ALL/Engines-FSJ.html",
+      "says": "FSJ table 1974-1978: 401 4v optional"
+     },
+     {
+      "name": "1976 Jeep Full Line brochure, p.29 Engine Availability chart",
+      "url": "https://oldcarbrochures.org/United%20States/Jeep/1976-Jeep/1976-Jeep-Full-Line-Brochure/slides/1976_Jeep_Full_Line-29.html",
+      "says": "401-4bbl V8 - Cherokee Opt."
+     }
+    ],
+    "status": "three_sources_not_nhra",
+    "note": "Per-year SAE net rating not stated in the factory brochures found; spec databases disagree, so hp left null."
+   }
+  ],
+  "1977": [
+   {
+    "gen": "sj",
+    "cid": 258,
+    "hp": null,
+    "hp_basis": "net",
+    "rpo": "AMC 258 2-bbl",
+    "name": "4.2L / 258 I6",
+    "common_name": "AMC 258",
+    "trims": [
+     "base (standard)"
+    ],
+    "nhra": false,
+    "sources": [
+     {
+      "name": "Wikipedia - Jeep Cherokee (SJ)",
+      "url": "https://en.wikipedia.org/wiki/Jeep_Cherokee_(SJ)",
+      "says": "Engine list 1974-1983: 258 cu in AMC I6, 110 hp"
+     },
+     {
+      "name": "Off Road Xtreme - Vintage Monday: The 1974-1983 Full-Size Jeep Cherokee (SJ) (Lindsey Fisher)",
+      "url": "https://www.offroadxtreme.com/?p=9839",
+      "says": "258ci inline-six, 110 HP, offered throughout 1974-1983"
+     },
+     {
+      "name": "1977 Jeep Full Line brochure, p.15 Cherokee Engine Availability",
+      "url": "https://oldcarbrochures.org/United%20States/Jeep/1977-Jeep/1977%20Jeep%20Full%20Line/slides/1977_Jeep_Full_Line-15.html",
+      "says": "258 CID Six 2-bbl 8.0:1 - STD."
+     }
+    ],
+    "status": "three_sources_not_nhra",
+    "note": "Per-year SAE net rating not stated in the factory brochures found; spec databases disagree, so hp left null."
+   },
+   {
+    "gen": "sj",
+    "cid": 360,
+    "hp": null,
+    "hp_basis": "net",
+    "rpo": "AMC 360 2-bbl",
+    "name": "5.9L / 360 V8 2-bbl",
+    "common_name": "AMC 360",
+    "trims": [
+     "optional"
+    ],
+    "nhra": false,
+    "sources": [
+     {
+      "name": "Wikipedia - Jeep Cherokee (SJ)",
+      "url": "https://en.wikipedia.org/wiki/Jeep_Cherokee_(SJ)",
+      "says": "175 hp 360 cu in V8 with two-barrel carburetor (1974-1983 engine list)"
+     },
+     {
+      "name": "Off Road Xtreme - Vintage Monday: The 1974-1983 Full-Size Jeep Cherokee (SJ) (Lindsey Fisher)",
+      "url": "https://www.offroadxtreme.com/?p=9839",
+      "says": "360ci V8 (2-barrel) 175 HP"
+     },
+     {
+      "name": "wagoneers.com (John Meister) - Full Size Jeep engine availability by year",
+      "url": "https://wagoneers.com/tech/Engines/FSJ-engines-ALL/Engines-FSJ.html",
+      "says": "FSJ table 1974-1978: 360 2v and 4v, 401 4v optional"
+     },
+     {
+      "name": "1977 Jeep Full Line brochure, p.15 Cherokee Engine Availability",
+      "url": "https://oldcarbrochures.org/United%20States/Jeep/1977-Jeep/1977%20Jeep%20Full%20Line/slides/1977_Jeep_Full_Line-15.html",
+      "says": "360 CID V-8 2-bbl 8.25:1 - OPT."
+     }
+    ],
+    "status": "three_sources_not_nhra",
+    "note": "Per-year SAE net rating not stated in the factory brochures found; spec databases disagree, so hp left null."
+   },
+   {
+    "gen": "sj",
+    "cid": 360,
+    "hp": null,
+    "hp_basis": "net",
+    "rpo": "AMC 360 4-bbl",
+    "name": "5.9L / 360 V8 4-bbl",
+    "common_name": "AMC 360",
+    "trims": [
+     "optional"
+    ],
+    "nhra": false,
+    "sources": [
+     {
+      "name": "Wikipedia - Jeep Cherokee (SJ)",
+      "url": "https://en.wikipedia.org/wiki/Jeep_Cherokee_(SJ)",
+      "says": "195 hp four-barrel 360"
+     },
+     {
+      "name": "Off Road Xtreme - Vintage Monday: The 1974-1983 Full-Size Jeep Cherokee (SJ) (Lindsey Fisher)",
+      "url": "https://www.offroadxtreme.com/?p=9839",
+      "says": "360ci V8 (4-barrel) 195 HP"
+     },
+     {
+      "name": "wagoneers.com (John Meister) - Full Size Jeep engine availability by year",
+      "url": "https://wagoneers.com/tech/Engines/FSJ-engines-ALL/Engines-FSJ.html",
+      "says": "FSJ table 1974-1978: 360 4v optional"
+     },
+     {
+      "name": "1977 Jeep Full Line brochure, p.15 Cherokee Engine Availability",
+      "url": "https://oldcarbrochures.org/United%20States/Jeep/1977-Jeep/1977%20Jeep%20Full%20Line/slides/1977_Jeep_Full_Line-15.html",
+      "says": "360 CID V-8 4-bbl 8.25:1 - OPT. (360 4-bbl std. in California)"
+     }
+    ],
+    "status": "three_sources_not_nhra",
+    "note": "Per-year SAE net rating not stated in the factory brochures found; spec databases disagree, so hp left null."
+   },
+   {
+    "gen": "sj",
+    "cid": 401,
+    "hp": null,
+    "hp_basis": "net",
+    "rpo": "AMC 401 4-bbl",
+    "name": "6.6L / 401 V8",
+    "common_name": "AMC 401",
+    "trims": [
+     "optional"
+    ],
+    "nhra": false,
+    "sources": [
+     {
+      "name": "Wikipedia - Jeep Cherokee (SJ)",
+      "url": "https://en.wikipedia.org/wiki/Jeep_Cherokee_(SJ)",
+      "says": "net 215 hp 401 cu in AMC V8; discontinued at the end of 1978"
+     },
+     {
+      "name": "Off Road Xtreme - Vintage Monday: The 1974-1983 Full-Size Jeep Cherokee (SJ) (Lindsey Fisher)",
+      "url": "https://www.offroadxtreme.com/?p=9839",
+      "says": "401ci V8 (4-barrel) 215 HP; dropped for 1979"
+     },
+     {
+      "name": "wagoneers.com (John Meister) - Full Size Jeep engine availability by year",
+      "url": "https://wagoneers.com/tech/Engines/FSJ-engines-ALL/Engines-FSJ.html",
+      "says": "FSJ table 1974-1978: 401 4v optional"
+     },
+     {
+      "name": "1977 Jeep Full Line brochure, p.15 Cherokee Engine Availability",
+      "url": "https://oldcarbrochures.org/United%20States/Jeep/1977-Jeep/1977%20Jeep%20Full%20Line/slides/1977_Jeep_Full_Line-15.html",
+      "says": "401 CID V-8 4-bbl 8.3:1 - OPT."
+     }
+    ],
+    "status": "three_sources_not_nhra",
+    "note": "Per-year SAE net rating not stated in the factory brochures found; spec databases disagree, so hp left null."
+   }
+  ],
+  "1978": [
+   {
+    "gen": "sj",
+    "cid": 258,
+    "hp": null,
+    "hp_basis": "net",
+    "rpo": "AMC 258 2-bbl",
+    "name": "4.2L / 258 I6",
+    "common_name": "AMC 258",
+    "trims": [
+     "base (standard)"
+    ],
+    "nhra": false,
+    "sources": [
+     {
+      "name": "Wikipedia - Jeep Cherokee (SJ)",
+      "url": "https://en.wikipedia.org/wiki/Jeep_Cherokee_(SJ)",
+      "says": "Engine list 1974-1983: 258 cu in AMC I6, 110 hp"
+     },
+     {
+      "name": "Off Road Xtreme - Vintage Monday: The 1974-1983 Full-Size Jeep Cherokee (SJ) (Lindsey Fisher)",
+      "url": "https://www.offroadxtreme.com/?p=9839",
+      "says": "258ci inline-six, 110 HP, offered throughout 1974-1983"
+     },
+     {
+      "name": "1978 Jeep Full Line brochure, p.15 Cherokee Engine Availability",
+      "url": "https://oldcarbrochures.org/United%20States/Jeep/1978_Jeep/1978_Jeep_Full_Line_Brochure/slides/1978_Jeep_Pg_15.html",
+      "says": "258 CID Six 2-bbl 8.0:1 - Std."
+     }
+    ],
+    "status": "three_sources_not_nhra",
+    "note": "Per-year SAE net rating not stated in the factory brochures found; spec databases disagree, so hp left null."
+   },
+   {
+    "gen": "sj",
+    "cid": 360,
+    "hp": null,
+    "hp_basis": "net",
+    "rpo": "AMC 360 2-bbl",
+    "name": "5.9L / 360 V8 2-bbl",
+    "common_name": "AMC 360",
+    "trims": [
+     "optional"
+    ],
+    "nhra": false,
+    "sources": [
+     {
+      "name": "Wikipedia - Jeep Cherokee (SJ)",
+      "url": "https://en.wikipedia.org/wiki/Jeep_Cherokee_(SJ)",
+      "says": "175 hp 360 cu in V8 with two-barrel carburetor (1974-1983 engine list)"
+     },
+     {
+      "name": "Off Road Xtreme - Vintage Monday: The 1974-1983 Full-Size Jeep Cherokee (SJ) (Lindsey Fisher)",
+      "url": "https://www.offroadxtreme.com/?p=9839",
+      "says": "360ci V8 (2-barrel) 175 HP"
+     },
+     {
+      "name": "wagoneers.com (John Meister) - Full Size Jeep engine availability by year",
+      "url": "https://wagoneers.com/tech/Engines/FSJ-engines-ALL/Engines-FSJ.html",
+      "says": "FSJ table 1974-1978: 360 2v and 4v, 401 4v optional"
+     },
+     {
+      "name": "1978 Jeep Full Line brochure, p.15 Cherokee Engine Availability",
+      "url": "https://oldcarbrochures.org/United%20States/Jeep/1978_Jeep/1978_Jeep_Full_Line_Brochure/slides/1978_Jeep_Pg_15.html",
+      "says": "360 CID V-8 2-bbl 8.25:1 - Opt. (only engine available for Cherokees sold in California)"
+     }
+    ],
+    "status": "three_sources_not_nhra",
+    "note": "Per-year SAE net rating not stated in the factory brochures found; spec databases disagree, so hp left null."
+   },
+   {
+    "gen": "sj",
+    "cid": 360,
+    "hp": null,
+    "hp_basis": "net",
+    "rpo": "AMC 360 4-bbl",
+    "name": "5.9L / 360 V8 4-bbl",
+    "common_name": "AMC 360",
+    "trims": [
+     "optional"
+    ],
+    "nhra": false,
+    "sources": [
+     {
+      "name": "Wikipedia - Jeep Cherokee (SJ)",
+      "url": "https://en.wikipedia.org/wiki/Jeep_Cherokee_(SJ)",
+      "says": "195 hp four-barrel 360"
+     },
+     {
+      "name": "Off Road Xtreme - Vintage Monday: The 1974-1983 Full-Size Jeep Cherokee (SJ) (Lindsey Fisher)",
+      "url": "https://www.offroadxtreme.com/?p=9839",
+      "says": "360ci V8 (4-barrel) 195 HP"
+     },
+     {
+      "name": "wagoneers.com (John Meister) - Full Size Jeep engine availability by year",
+      "url": "https://wagoneers.com/tech/Engines/FSJ-engines-ALL/Engines-FSJ.html",
+      "says": "FSJ table 1974-1978: 360 4v optional"
+     },
+     {
+      "name": "1978 Jeep Full Line brochure, p.15 Cherokee Engine Availability",
+      "url": "https://oldcarbrochures.org/United%20States/Jeep/1978_Jeep/1978_Jeep_Full_Line_Brochure/slides/1978_Jeep_Pg_15.html",
+      "says": "360 CID V-8 4-bbl 8.25:1 - Opt."
+     }
+    ],
+    "status": "three_sources_not_nhra",
+    "note": "Per-year SAE net rating not stated in the factory brochures found; spec databases disagree, so hp left null."
+   },
+   {
+    "gen": "sj",
+    "cid": 401,
+    "hp": null,
+    "hp_basis": "net",
+    "rpo": "AMC 401 4-bbl",
+    "name": "6.6L / 401 V8",
+    "common_name": "AMC 401",
+    "trims": [
+     "optional"
+    ],
+    "nhra": false,
+    "sources": [
+     {
+      "name": "Wikipedia - Jeep Cherokee (SJ)",
+      "url": "https://en.wikipedia.org/wiki/Jeep_Cherokee_(SJ)",
+      "says": "net 215 hp 401 cu in AMC V8; discontinued at the end of 1978"
+     },
+     {
+      "name": "Off Road Xtreme - Vintage Monday: The 1974-1983 Full-Size Jeep Cherokee (SJ) (Lindsey Fisher)",
+      "url": "https://www.offroadxtreme.com/?p=9839",
+      "says": "401ci V8 (4-barrel) 215 HP; dropped for 1979"
+     },
+     {
+      "name": "wagoneers.com (John Meister) - Full Size Jeep engine availability by year",
+      "url": "https://wagoneers.com/tech/Engines/FSJ-engines-ALL/Engines-FSJ.html",
+      "says": "FSJ table 1974-1978: 401 4v optional"
+     },
+     {
+      "name": "1978 Jeep Full Line brochure, p.15 Cherokee Engine Availability",
+      "url": "https://oldcarbrochures.org/United%20States/Jeep/1978_Jeep/1978_Jeep_Full_Line_Brochure/slides/1978_Jeep_Pg_15.html",
+      "says": "401 CID V-8 4-bbl 8.3:1 - Opt."
+     }
+    ],
+    "status": "three_sources_not_nhra",
+    "note": "Per-year SAE net rating not stated in the factory brochures found; spec databases disagree, so hp left null."
+   }
+  ],
+  "1979": [
+   {
+    "gen": "sj",
+    "cid": 258,
+    "hp": null,
+    "hp_basis": "net",
+    "rpo": "AMC 258 2-bbl",
+    "name": "4.2L / 258 I6",
+    "common_name": "AMC 258",
+    "trims": [
+     "base (standard)"
+    ],
+    "nhra": false,
+    "sources": [
+     {
+      "name": "Wikipedia - Jeep Cherokee (SJ)",
+      "url": "https://en.wikipedia.org/wiki/Jeep_Cherokee_(SJ)",
+      "says": "Engine list 1974-1983: 258 cu in AMC I6, 110 hp"
+     },
+     {
+      "name": "Off Road Xtreme - Vintage Monday: The 1974-1983 Full-Size Jeep Cherokee (SJ) (Lindsey Fisher)",
+      "url": "https://www.offroadxtreme.com/?p=9839",
+      "says": "258ci inline-six, 110 HP, offered throughout 1974-1983"
+     },
+     {
+      "name": "1979 Jeep Full Line brochure, p.13 Cherokee Engine Availability",
+      "url": "https://oldcarbrochures.org/United%20States/Jeep/1979-Jeep/1979-Jeep-Full-Line-Brochure/slides/1979_Jeep_Full_Line-13.html",
+      "says": "258 CID Six 2-bbl 8.0:1 - Std."
+     }
+    ],
+    "status": "three_sources_not_nhra",
+    "note": "Per-year SAE net rating not stated in the factory brochures found; spec databases disagree, so hp left null."
+   },
+   {
+    "gen": "sj",
+    "cid": 360,
+    "hp": null,
+    "hp_basis": "net",
+    "rpo": "AMC 360 2-bbl",
+    "name": "5.9L / 360 V8 2-bbl",
+    "common_name": "AMC 360",
+    "trims": [
+     "optional"
+    ],
+    "nhra": false,
+    "sources": [
+     {
+      "name": "Wikipedia - Jeep Cherokee (SJ)",
+      "url": "https://en.wikipedia.org/wiki/Jeep_Cherokee_(SJ)",
+      "says": "175 hp 360 cu in V8 with two-barrel carburetor (1974-1983 engine list)"
+     },
+     {
+      "name": "Off Road Xtreme - Vintage Monday: The 1974-1983 Full-Size Jeep Cherokee (SJ) (Lindsey Fisher)",
+      "url": "https://www.offroadxtreme.com/?p=9839",
+      "says": "360ci V8 (2-barrel) 175 HP"
+     },
+     {
+      "name": "wagoneers.com (John Meister) - Full Size Jeep engine availability by year",
+      "url": "https://wagoneers.com/tech/Engines/FSJ-engines-ALL/Engines-FSJ.html",
+      "says": "FSJ table: 1979-1980 only the 360 2v V8; 1981-1983 360 2v optional"
+     },
+     {
+      "name": "1979 Jeep Full Line brochure, p.13 Cherokee Engine Availability",
+      "url": "https://oldcarbrochures.org/United%20States/Jeep/1979-Jeep/1979-Jeep-Full-Line-Brochure/slides/1979_Jeep_Full_Line-13.html",
+      "says": "360 CID V-8 2-bbl 8.25:1 - Opt. (only engine available in California)"
+     }
+    ],
+    "status": "three_sources_not_nhra",
+    "note": "Per-year SAE net rating not stated in the factory brochures found; spec databases disagree, so hp left null."
+   },
+   {
+    "gen": "sj",
+    "cid": 360,
+    "hp": null,
+    "hp_basis": "net",
+    "rpo": "AMC 360 4-bbl",
+    "name": "5.9L / 360 V8 4-bbl",
+    "common_name": "AMC 360",
+    "trims": [],
+    "nhra": false,
+    "sources": [
+     {
+      "name": "Off Road Xtreme - Vintage Monday: The 1974-1983 Full-Size Jeep Cherokee (SJ) (Lindsey Fisher)",
+      "url": "https://www.offroadxtreme.com/?p=9839",
+      "says": "\"For the 1979 model-year, the 401ci engine was discontinued as an option, leaving just the two 360ci engines and the inline-6\""
+     },
+     {
+      "name": "1979 Jeep Full Line brochure, p.13 Cherokee Engine Availability",
+      "url": "https://oldcarbrochures.org/United%20States/Jeep/1979-Jeep/1979-Jeep-Full-Line-Brochure/slides/1979_Jeep_Full_Line-13.html",
+      "says": "Cherokee Engine Availability lists only 258 2-bbl (std) and 360 2-bbl (opt); no 4-bbl"
+     },
+     {
+      "name": "wagoneers.com (John Meister) - Full Size Jeep engine availability by year",
+      "url": "https://wagoneers.com/tech/Engines/FSJ-engines-ALL/Engines-FSJ.html",
+      "says": "1979-1980: only the 360 2v"
+     }
+    ],
+    "status": "disputed",
+    "note": "Off Road Xtreme says both 360s continued for 1979; the 1979 factory brochure and the FSJ table list only the 2-bbl. Factory evidence says not offered; do not publish without another source."
+   }
+  ],
+  "1980": [
+   {
+    "gen": "sj",
+    "cid": 258,
+    "hp": null,
+    "hp_basis": "net",
+    "rpo": "AMC 258 2-bbl",
+    "name": "4.2L / 258 I6",
+    "common_name": "AMC 258",
+    "trims": [
+     "base (standard)"
+    ],
+    "nhra": false,
+    "sources": [
+     {
+      "name": "Wikipedia - Jeep Cherokee (SJ)",
+      "url": "https://en.wikipedia.org/wiki/Jeep_Cherokee_(SJ)",
+      "says": "Engine list 1974-1983: 258 cu in AMC I6, 110 hp"
+     },
+     {
+      "name": "Off Road Xtreme - Vintage Monday: The 1974-1983 Full-Size Jeep Cherokee (SJ) (Lindsey Fisher)",
+      "url": "https://www.offroadxtreme.com/?p=9839",
+      "says": "258ci inline-six, 110 HP, offered throughout 1974-1983"
+     },
+     {
+      "name": "1980 Jeep Cherokee brochure (metric edition), Specifications page",
+      "url": "https://oldcarbrochures.org/United%20States/Jeep/1980_Jeep/1980_Jeep_Cherokee_Brochure/slides/1980_Jeep_Cherokee-08.html",
+      "says": "Engine: Standard - 4.2 litre (258 CID) OHV Six, 8.0:1"
+     }
+    ],
+    "status": "three_sources_not_nhra",
+    "note": "Per-year SAE net rating not stated in the factory brochures found; spec databases disagree, so hp left null."
+   },
+   {
+    "gen": "sj",
+    "cid": 360,
+    "hp": null,
+    "hp_basis": "net",
+    "rpo": "AMC 360 2-bbl",
+    "name": "5.9L / 360 V8 2-bbl",
+    "common_name": "AMC 360",
+    "trims": [
+     "optional"
+    ],
+    "nhra": false,
+    "sources": [
+     {
+      "name": "Wikipedia - Jeep Cherokee (SJ)",
+      "url": "https://en.wikipedia.org/wiki/Jeep_Cherokee_(SJ)",
+      "says": "175 hp 360 cu in V8 with two-barrel carburetor (1974-1983 engine list)"
+     },
+     {
+      "name": "Off Road Xtreme - Vintage Monday: The 1974-1983 Full-Size Jeep Cherokee (SJ) (Lindsey Fisher)",
+      "url": "https://www.offroadxtreme.com/?p=9839",
+      "says": "360ci V8 (2-barrel) 175 HP"
+     },
+     {
+      "name": "wagoneers.com (John Meister) - Full Size Jeep engine availability by year",
+      "url": "https://wagoneers.com/tech/Engines/FSJ-engines-ALL/Engines-FSJ.html",
+      "says": "FSJ table: 1979-1980 only the 360 2v V8; 1981-1983 360 2v optional"
+     },
+     {
+      "name": "1980 Jeep Cherokee brochure (metric edition), Specifications page",
+      "url": "https://oldcarbrochures.org/United%20States/Jeep/1980_Jeep/1980_Jeep_Cherokee_Brochure/slides/1980_Jeep_Cherokee-08.html",
+      "says": "Optional - 5.9 litre (360 CID) OHV V-8, 8.25:1"
+     }
+    ],
+    "status": "three_sources_not_nhra",
+    "note": "Per-year SAE net rating not stated in the factory brochures found; spec databases disagree, so hp left null."
+   }
+  ],
+  "1981": [
+   {
+    "gen": "sj",
+    "cid": 258,
+    "hp": null,
+    "hp_basis": "net",
+    "rpo": "AMC 258 2-bbl",
+    "name": "4.2L / 258 I6",
+    "common_name": "AMC 258",
+    "trims": [
+     "base (standard)"
+    ],
+    "nhra": false,
+    "sources": [
+     {
+      "name": "Wikipedia - Jeep Cherokee (SJ)",
+      "url": "https://en.wikipedia.org/wiki/Jeep_Cherokee_(SJ)",
+      "says": "Engine list 1974-1983: 258 cu in AMC I6, 110 hp"
+     },
+     {
+      "name": "Off Road Xtreme - Vintage Monday: The 1974-1983 Full-Size Jeep Cherokee (SJ) (Lindsey Fisher)",
+      "url": "https://www.offroadxtreme.com/?p=9839",
+      "says": "258ci inline-six, 110 HP, offered throughout 1974-1983"
+     },
+     {
+      "name": "1981 Jeep Cherokee brochure, p.12 Cherokee Engine Availability",
+      "url": "https://oldcarbrochures.org/United%20States/Jeep/1981_Jeep/1981-Jeep-Cherokee-Brochure/slides/1981_Jeep_Cherokee-12.html",
+      "says": "258 CID Six 2-bbl 8.3:1 standard; \"The standard 258 CID Six is 90 lbs. leaner\""
+     },
+     {
+      "name": "wagoneers.com (John Meister) - Full Size Jeep engine availability by year",
+      "url": "https://wagoneers.com/tech/Engines/FSJ-engines-ALL/Engines-FSJ.html",
+      "says": "FSJ table 1981-1983: 258 (4.2) standard, 360 2v optional (FSJ line, not Cherokee-specific)"
+     }
+    ],
+    "status": "three_sources_not_nhra",
+    "note": "Per-year SAE net rating not stated in the factory brochures found; spec databases disagree, so hp left null."
+   },
+   {
+    "gen": "sj",
+    "cid": 360,
+    "hp": null,
+    "hp_basis": "net",
+    "rpo": "AMC 360 2-bbl",
+    "name": "5.9L / 360 V8 2-bbl",
+    "common_name": "AMC 360",
+    "trims": [
+     "optional"
+    ],
+    "nhra": false,
+    "sources": [
+     {
+      "name": "Wikipedia - Jeep Cherokee (SJ)",
+      "url": "https://en.wikipedia.org/wiki/Jeep_Cherokee_(SJ)",
+      "says": "175 hp 360 cu in V8 with two-barrel carburetor (1974-1983 engine list)"
+     },
+     {
+      "name": "Off Road Xtreme - Vintage Monday: The 1974-1983 Full-Size Jeep Cherokee (SJ) (Lindsey Fisher)",
+      "url": "https://www.offroadxtreme.com/?p=9839",
+      "says": "360ci V8 (2-barrel) 175 HP"
+     },
+     {
+      "name": "wagoneers.com (John Meister) - Full Size Jeep engine availability by year",
+      "url": "https://wagoneers.com/tech/Engines/FSJ-engines-ALL/Engines-FSJ.html",
+      "says": "FSJ table: 1979-1980 only the 360 2v V8; 1981-1983 360 2v optional"
+     },
+     {
+      "name": "1981 Jeep Cherokee brochure, p.12 Cherokee Engine Availability",
+      "url": "https://oldcarbrochures.org/United%20States/Jeep/1981_Jeep/1981-Jeep-Cherokee-Brochure/slides/1981_Jeep_Cherokee-12.html",
+      "says": "360 CID V-8 2-bbl 8.25:1 optional (not available in California)"
+     }
+    ],
+    "status": "three_sources_not_nhra",
+    "note": "Per-year SAE net rating not stated in the factory brochures found; spec databases disagree, so hp left null."
+   }
+  ],
+  "1982": [
+   {
+    "gen": "sj",
+    "cid": 258,
+    "hp": null,
+    "hp_basis": "net",
+    "rpo": "AMC 258 2-bbl",
+    "name": "4.2L / 258 I6",
+    "common_name": "AMC 258",
+    "trims": [
+     "base (standard)"
+    ],
+    "nhra": false,
+    "sources": [
+     {
+      "name": "Wikipedia - Jeep Cherokee (SJ)",
+      "url": "https://en.wikipedia.org/wiki/Jeep_Cherokee_(SJ)",
+      "says": "Engine list 1974-1983: 258 cu in AMC I6, 110 hp"
+     },
+     {
+      "name": "Off Road Xtreme - Vintage Monday: The 1974-1983 Full-Size Jeep Cherokee (SJ) (Lindsey Fisher)",
+      "url": "https://www.offroadxtreme.com/?p=9839",
+      "says": "258ci inline-six, 110 HP, offered throughout 1974-1983"
+     },
+     {
+      "name": "1982 Jeep Cherokee brochure, p.3",
+      "url": "https://oldcarbrochures.org/United%20States/Jeep/1982_Jeep/1982-Jeep-Cherokee-Brochure/slides/1982_Jeep_Cherokee-03.html",
+      "says": "\"a standard 258 CID Six and 4-speed manual transmission\""
+     },
+     {
+      "name": "wagoneers.com (John Meister) - Full Size Jeep engine availability by year",
+      "url": "https://wagoneers.com/tech/Engines/FSJ-engines-ALL/Engines-FSJ.html",
+      "says": "FSJ table 1981-1983: 258 (4.2) standard, 360 2v optional (FSJ line, not Cherokee-specific)"
+     }
+    ],
+    "status": "three_sources_not_nhra",
+    "note": "Per-year SAE net rating not stated in the factory brochures found; spec databases disagree, so hp left null."
+   },
+   {
+    "gen": "sj",
+    "cid": 360,
+    "hp": null,
+    "hp_basis": "net",
+    "rpo": "AMC 360 2-bbl",
+    "name": "5.9L / 360 V8 2-bbl",
+    "common_name": "AMC 360",
+    "trims": [
+     "optional"
+    ],
+    "nhra": false,
+    "sources": [
+     {
+      "name": "Wikipedia - Jeep Cherokee (SJ)",
+      "url": "https://en.wikipedia.org/wiki/Jeep_Cherokee_(SJ)",
+      "says": "175 hp 360 cu in V8 with two-barrel carburetor (1974-1983 engine list)"
+     },
+     {
+      "name": "Off Road Xtreme - Vintage Monday: The 1974-1983 Full-Size Jeep Cherokee (SJ) (Lindsey Fisher)",
+      "url": "https://www.offroadxtreme.com/?p=9839",
+      "says": "360ci V8 (2-barrel) 175 HP"
+     },
+     {
+      "name": "wagoneers.com (John Meister) - Full Size Jeep engine availability by year",
+      "url": "https://wagoneers.com/tech/Engines/FSJ-engines-ALL/Engines-FSJ.html",
+      "says": "FSJ table: 1979-1980 only the 360 2v V8; 1981-1983 360 2v optional"
+     }
+    ],
+    "status": "three_sources_not_nhra",
+    "note": "No factory brochure confirming the 360 for 1982 was found; sources are range statements (Wikipedia 1974-83, FSJ table 1981-83). Per-year SAE net rating not stated in the factory brochures found; spec databases disagree, so hp left null."
+   }
+  ],
+  "1983": [
+   {
+    "gen": "sj",
+    "cid": 258,
+    "hp": null,
+    "hp_basis": "net",
+    "rpo": "AMC 258 2-bbl",
+    "name": "4.2L / 258 I6",
+    "common_name": "AMC 258",
+    "trims": [
+     "base (standard)"
+    ],
+    "nhra": false,
+    "sources": [
+     {
+      "name": "Wikipedia - Jeep Cherokee (SJ)",
+      "url": "https://en.wikipedia.org/wiki/Jeep_Cherokee_(SJ)",
+      "says": "Engine list 1974-1983: 258 cu in AMC I6, 110 hp"
+     },
+     {
+      "name": "Off Road Xtreme - Vintage Monday: The 1974-1983 Full-Size Jeep Cherokee (SJ) (Lindsey Fisher)",
+      "url": "https://www.offroadxtreme.com/?p=9839",
+      "says": "258ci inline-six, 110 HP, offered throughout 1974-1983"
+     },
+     {
+      "name": "wagoneers.com (John Meister) - Full Size Jeep engine availability by year",
+      "url": "https://wagoneers.com/tech/Engines/FSJ-engines-ALL/Engines-FSJ.html",
+      "says": "FSJ table 1981-1983: 258 (4.2) standard, 360 2v optional (FSJ line, not Cherokee-specific)"
+     }
+    ],
+    "status": "three_sources_not_nhra",
+    "note": "1983: no factory engine data found; sources are range statements. Per-year SAE net rating not stated in the factory brochures found; spec databases disagree, so hp left null."
+   },
+   {
+    "gen": "sj",
+    "cid": 360,
+    "hp": null,
+    "hp_basis": "net",
+    "rpo": "AMC 360 2-bbl",
+    "name": "5.9L / 360 V8 2-bbl",
+    "common_name": "AMC 360",
+    "trims": [
+     "optional"
+    ],
+    "nhra": false,
+    "sources": [
+     {
+      "name": "Wikipedia - Jeep Cherokee (SJ)",
+      "url": "https://en.wikipedia.org/wiki/Jeep_Cherokee_(SJ)",
+      "says": "175 hp 360 cu in V8 with two-barrel carburetor (1974-1983 engine list)"
+     },
+     {
+      "name": "Off Road Xtreme - Vintage Monday: The 1974-1983 Full-Size Jeep Cherokee (SJ) (Lindsey Fisher)",
+      "url": "https://www.offroadxtreme.com/?p=9839",
+      "says": "360ci V8 (2-barrel) 175 HP"
+     },
+     {
+      "name": "wagoneers.com (John Meister) - Full Size Jeep engine availability by year",
+      "url": "https://wagoneers.com/tech/Engines/FSJ-engines-ALL/Engines-FSJ.html",
+      "says": "FSJ table: 1979-1980 only the 360 2v V8; 1981-1983 360 2v optional"
+     }
+    ],
+    "status": "three_sources_not_nhra",
+    "note": "No factory brochure confirming the 360 for 1983 was found; sources are range statements (Wikipedia 1974-83, FSJ table 1981-83). Per-year SAE net rating not stated in the factory brochures found; spec databases disagree, so hp left null."
+   }
+  ],
+  "1984": [
+   {
+    "gen": "xj",
+    "cid": 150,
+    "hp": 105,
+    "hp_basis": "net",
+    "rpo": "AMC 150 (1-bbl carburetor)",
+    "name": "2.5L / 150 I4",
+    "common_name": "AMC 2.5 / Power Tech I4",
+    "trims": [
+     "standard"
+    ],
+    "nhra": false,
+    "sources": [
+     {
+      "name": "Wikipedia - Jeep Cherokee (XJ)",
+      "url": "https://en.wikipedia.org/wiki/Jeep_Cherokee_(XJ)",
+      "says": "2.5 L AMC 150: 105 hp (1-bbl carburetor) for 1984"
+     },
+     {
+      "name": "EPA fueleconomy.gov vehicle data",
+      "url": "https://www.fueleconomy.gov/feg/download.shtml",
+      "says": "1984 2.5L I4: \"Cherokee/Wagoneer\" row (mixes XJ Cherokee and XJ Wagoneer, same engines)"
+     },
+     {
+      "name": "Haynes Repair Manual - Jeep Cherokee, Comanche & Wagoneer Limited 1984-2001 (coverage)",
+      "url": "https://us.haynes.com/products/classic-collectors-edition-jeep-cherokee-comanche-wagoneer-limited-2wd-4wd-gas-1984-2001-haynes-repair-manual",
+      "says": "Covers all 1984-2001 Cherokee gas engines: 2.5L four, 2.8L V6, 4.0L six"
+     }
+    ],
+    "status": "three_sources_not_nhra",
+    "note": "EPA rows for 1984-1986 are \"Cherokee/Wagoneer\" (XJ Cherokee + XJ Wagoneer); counted as one source for the shared engine."
+   },
+   {
+    "gen": "xj",
+    "cid": 173,
+    "hp": 110,
+    "hp_basis": "net",
+    "rpo": "GM LR2",
+    "name": "2.8L / 173 V6",
+    "common_name": "GM 60-degree 2.8 V6",
+    "trims": [
+     "optional"
+    ],
+    "nhra": false,
+    "sources": [
+     {
+      "name": "Wikipedia - Jeep Cherokee (XJ)",
+      "url": "https://en.wikipedia.org/wiki/Jeep_Cherokee_(XJ)",
+      "says": "2.8 L V6 (Chevrolet LR2): 110 hp, 1984-1986 only"
+     },
+     {
+      "name": "EPA fueleconomy.gov vehicle data",
+      "url": "https://www.fueleconomy.gov/feg/download.shtml",
+      "says": "1984 2.8L V6: \"Cherokee/Wagoneer\" row (mixes XJ Cherokee and XJ Wagoneer, same engines)"
+     },
+     {
+      "name": "Haynes Repair Manual - Jeep Cherokee, Comanche & Wagoneer Limited 1984-2001 (coverage)",
+      "url": "https://us.haynes.com/products/classic-collectors-edition-jeep-cherokee-comanche-wagoneer-limited-2wd-4wd-gas-1984-2001-haynes-repair-manual",
+      "says": "Covers 2.8L V6 (GM) in 1984-2001 Cherokee"
+     }
+    ],
+    "status": "three_sources_not_nhra",
+    "note": "GM-supplied 2.8 V6. Wikipedia (citing Popular Science, Jan 1984) gives 110 hp for 1984 and 115 hp for 1985-86; no factory 1984 figure found."
+   }
+  ],
+  "1985": [
+   {
+    "gen": "xj",
+    "cid": 150,
+    "hp": 105,
+    "hp_basis": "net",
+    "rpo": "AMC 150 (1-bbl carburetor)",
+    "name": "2.5L / 150 I4",
+    "common_name": "AMC 2.5 / Power Tech I4",
+    "trims": [
+     "standard"
+    ],
+    "nhra": false,
+    "sources": [
+     {
+      "name": "Wikipedia - Jeep Cherokee (XJ)",
+      "url": "https://en.wikipedia.org/wiki/Jeep_Cherokee_(XJ)",
+      "says": "2.5 L AMC 150: 105 hp (1-bbl carburetor) for 1985"
+     },
+     {
+      "name": "EPA fueleconomy.gov vehicle data",
+      "url": "https://www.fueleconomy.gov/feg/download.shtml",
+      "says": "1985 2.5L I4: \"Cherokee/Wagoneer\" row (mixes XJ Cherokee and XJ Wagoneer, same engines)"
+     },
+     {
+      "name": "Haynes Repair Manual - Jeep Cherokee, Comanche & Wagoneer Limited 1984-2001 (coverage)",
+      "url": "https://us.haynes.com/products/classic-collectors-edition-jeep-cherokee-comanche-wagoneer-limited-2wd-4wd-gas-1984-2001-haynes-repair-manual",
+      "says": "Covers all 1984-2001 Cherokee gas engines: 2.5L four, 2.8L V6, 4.0L six"
+     },
+     {
+      "name": "1985 Jeep brochure, Cherokee specifications / comparison page",
+      "url": "https://oldcarbrochures.org/United%20States/Jeep/1985_Jeep/1985_Jeep_Brochure/slides/1985_Jeep-03.html",
+      "says": "Base engine 2.5L I-4 (comparison table, Cherokee 2-Door)"
+     },
+     {
+      "name": "Diesel World - The 1985 Jeep Cherokee Diesel",
+      "url": "https://www.dieselworldmag.com/diesel-cars/2-1l-jeep-diesel/",
+      "says": "Cherokee gas choices were the inline-four (2.5L) or 2.8L V6"
+     }
+    ],
+    "status": "three_sources_not_nhra",
+    "note": "EPA rows for 1984-1986 are \"Cherokee/Wagoneer\" (XJ Cherokee + XJ Wagoneer); counted as one source for the shared engine."
+   },
+   {
+    "gen": "xj",
+    "cid": 173,
+    "hp": 115,
+    "hp_basis": "net",
+    "rpo": "GM LR2",
+    "name": "2.8L / 173 V6",
+    "common_name": "GM 60-degree 2.8 V6",
+    "trims": [
+     "optional"
+    ],
+    "nhra": false,
+    "sources": [
+     {
+      "name": "Wikipedia - Jeep Cherokee (XJ)",
+      "url": "https://en.wikipedia.org/wiki/Jeep_Cherokee_(XJ)",
+      "says": "2.8 L V6 (Chevrolet LR2): 115 hp, 1984-1986 only"
+     },
+     {
+      "name": "EPA fueleconomy.gov vehicle data",
+      "url": "https://www.fueleconomy.gov/feg/download.shtml",
+      "says": "1985 2.8L V6: \"Cherokee/Wagoneer\" row (mixes XJ Cherokee and XJ Wagoneer, same engines)"
+     },
+     {
+      "name": "Haynes Repair Manual - Jeep Cherokee, Comanche & Wagoneer Limited 1984-2001 (coverage)",
+      "url": "https://us.haynes.com/products/classic-collectors-edition-jeep-cherokee-comanche-wagoneer-limited-2wd-4wd-gas-1984-2001-haynes-repair-manual",
+      "says": "Covers 2.8L V6 (GM) in 1984-2001 Cherokee"
+     },
+     {
+      "name": "1985 Jeep brochure, Cherokee specifications / comparison page",
+      "url": "https://oldcarbrochures.org/United%20States/Jeep/1985_Jeep/1985_Jeep_Brochure/slides/1985_Jeep-03.html",
+      "says": "Optional engine: 2.8L V-6"
+     },
+     {
+      "name": "Diesel World - The 1985 Jeep Cherokee Diesel",
+      "url": "https://www.dieselworldmag.com/diesel-cars/2-1l-jeep-diesel/",
+      "says": "gas choices: inline-four or 2.8L V6"
+     }
+    ],
+    "status": "three_sources_not_nhra",
+    "note": "GM-supplied 2.8 V6."
+   },
+   {
+    "gen": "xj",
+    "cid": 126,
+    "hp": 85,
+    "hp_basis": "net",
+    "rpo": "Renault J8S",
+    "name": "2.1L turbodiesel I4",
+    "common_name": "Renault 2.1 TD",
+    "trims": [
+     "optional"
+    ],
+    "nhra": false,
+    "sources": [
+     {
+      "name": "Wikipedia - Jeep Cherokee (XJ)",
+      "url": "https://en.wikipedia.org/wiki/Jeep_Cherokee_(XJ)",
+      "says": "2.1 L Renault J8S turbodiesel, 85 hp, 1985-1987 in North America"
+     },
+     {
+      "name": "EPA fueleconomy.gov vehicle data",
+      "url": "https://www.fueleconomy.gov/feg/download.shtml",
+      "says": "1985 2.1L I4 turbo (diesel): \"Cherokee/Wagoneer\" row (mixes XJ Cherokee and XJ Wagoneer, same engines)"
+     },
+     {
+      "name": "Diesel World - The 1985 Jeep Cherokee Diesel",
+      "url": "https://www.dieselworldmag.com/diesel-cars/2-1l-jeep-diesel/",
+      "says": "Renault 2.1L intercooled turbodiesel added for 1985, 85 hp; offered in North American Jeeps through 87"
+     },
+     {
+      "name": "1985 Jeep brochure, Cherokee specifications / comparison page",
+      "url": "https://oldcarbrochures.org/United%20States/Jeep/1985_Jeep/1985_Jeep_Brochure/slides/1985_Jeep-03.html",
+      "says": "Optional engine: 2.1L I-4 Turbo-Diesel"
+     }
+    ],
+    "status": "three_sources_not_nhra",
+    "note": "Diesel; rare in the US. EPA rows are \"Cherokee/Wagoneer\"."
+   }
+  ],
+  "1986": [
+   {
+    "gen": "xj",
+    "cid": 150,
+    "hp": 117,
+    "hp_basis": "net",
+    "rpo": "AMC 150 (Renix TBI)",
+    "name": "2.5L / 150 I4",
+    "common_name": "AMC 2.5 / Power Tech I4",
+    "trims": [
+     "standard"
+    ],
+    "nhra": false,
+    "sources": [
+     {
+      "name": "Wikipedia - Jeep Cherokee (XJ)",
+      "url": "https://en.wikipedia.org/wiki/Jeep_Cherokee_(XJ)",
+      "says": "2.5 L AMC 150: 117 hp (Renix TBI) for 1986"
+     },
+     {
+      "name": "EPA fueleconomy.gov vehicle data",
+      "url": "https://www.fueleconomy.gov/feg/download.shtml",
+      "says": "1986 2.5L I4: \"Cherokee/Wagoneer\" row (mixes XJ Cherokee and XJ Wagoneer, same engines)"
+     },
+     {
+      "name": "Haynes Repair Manual - Jeep Cherokee, Comanche & Wagoneer Limited 1984-2001 (coverage)",
+      "url": "https://us.haynes.com/products/classic-collectors-edition-jeep-cherokee-comanche-wagoneer-limited-2wd-4wd-gas-1984-2001-haynes-repair-manual",
+      "says": "Covers all 1984-2001 Cherokee gas engines: 2.5L four, 2.8L V6, 4.0L six"
+     },
+     {
+      "name": "1986 Jeep Handout brochure, Cherokee pages",
+      "url": "https://oldcarbrochures.org/United%20States/Jeep/1986-Jeep/1986-Jeep-Handout-Brochure/slides/1986_Jeep_Handout-04-05.html",
+      "says": "\"The high-compression 2.5 litre 4-cylinder engine features electronic fuel-injection\" (standard for 86)"
+     },
+     {
+      "name": "Diesel World - The 1985 Jeep Cherokee Diesel",
+      "url": "https://www.dieselworldmag.com/diesel-cars/2-1l-jeep-diesel/",
+      "says": "Cherokee gas choices were the inline-four (2.5L) or 2.8L V6"
+     }
+    ],
+    "status": "three_sources_not_nhra",
+    "note": "EPA rows for 1984-1986 are \"Cherokee/Wagoneer\" (XJ Cherokee + XJ Wagoneer); counted as one source for the shared engine. TBI introduced for 1986."
+   },
+   {
+    "gen": "xj",
+    "cid": 173,
+    "hp": 115,
+    "hp_basis": "net",
+    "rpo": "GM LR2",
+    "name": "2.8L / 173 V6",
+    "common_name": "GM 60-degree 2.8 V6",
+    "trims": [
+     "optional"
+    ],
+    "nhra": false,
+    "sources": [
+     {
+      "name": "Wikipedia - Jeep Cherokee (XJ)",
+      "url": "https://en.wikipedia.org/wiki/Jeep_Cherokee_(XJ)",
+      "says": "2.8 L V6 (Chevrolet LR2): 115 hp, 1984-1986 only"
+     },
+     {
+      "name": "EPA fueleconomy.gov vehicle data",
+      "url": "https://www.fueleconomy.gov/feg/download.shtml",
+      "says": "1986 2.8L V6: \"Cherokee/Wagoneer\" row (mixes XJ Cherokee and XJ Wagoneer, same engines)"
+     },
+     {
+      "name": "Haynes Repair Manual - Jeep Cherokee, Comanche & Wagoneer Limited 1984-2001 (coverage)",
+      "url": "https://us.haynes.com/products/classic-collectors-edition-jeep-cherokee-comanche-wagoneer-limited-2wd-4wd-gas-1984-2001-haynes-repair-manual",
+      "says": "Covers 2.8L V6 (GM) in 1984-2001 Cherokee"
+     },
+     {
+      "name": "1986 Jeep Handout brochure, Cherokee pages",
+      "url": "https://oldcarbrochures.org/United%20States/Jeep/1986-Jeep/1986-Jeep-Handout-Brochure/slides/1986_Jeep_Handout-04-05.html",
+      "says": "\"an optional 2.8 litre V6 engine is available\""
+     },
+     {
+      "name": "Diesel World - The 1985 Jeep Cherokee Diesel",
+      "url": "https://www.dieselworldmag.com/diesel-cars/2-1l-jeep-diesel/",
+      "says": "gas choices: inline-four or 2.8L V6"
+     }
+    ],
+    "status": "three_sources_not_nhra",
+    "note": "GM-supplied 2.8 V6."
+   },
+   {
+    "gen": "xj",
+    "cid": 126,
+    "hp": 85,
+    "hp_basis": "net",
+    "rpo": "Renault J8S",
+    "name": "2.1L turbodiesel I4",
+    "common_name": "Renault 2.1 TD",
+    "trims": [
+     "optional"
+    ],
+    "nhra": false,
+    "sources": [
+     {
+      "name": "Wikipedia - Jeep Cherokee (XJ)",
+      "url": "https://en.wikipedia.org/wiki/Jeep_Cherokee_(XJ)",
+      "says": "2.1 L Renault J8S turbodiesel, 85 hp, 1985-1987 in North America"
+     },
+     {
+      "name": "EPA fueleconomy.gov vehicle data",
+      "url": "https://www.fueleconomy.gov/feg/download.shtml",
+      "says": "1986 2.1L I4 turbo (diesel): \"Cherokee/Wagoneer\" row (mixes XJ Cherokee and XJ Wagoneer, same engines)"
+     },
+     {
+      "name": "Diesel World - The 1985 Jeep Cherokee Diesel",
+      "url": "https://www.dieselworldmag.com/diesel-cars/2-1l-jeep-diesel/",
+      "says": "Renault 2.1L intercooled turbodiesel added for 1985, 85 hp; offered in North American Jeeps through 87"
+     },
+     {
+      "name": "1986 Jeep Handout brochure, Cherokee pages",
+      "url": "https://oldcarbrochures.org/United%20States/Jeep/1986-Jeep/1986-Jeep-Handout-Brochure/slides/1986_Jeep_Handout-04-05.html",
+      "says": "\"a new optional 2.1 litre turbo diesel engine\""
+     }
+    ],
+    "status": "three_sources_not_nhra",
+    "note": "Diesel; rare in the US. EPA rows are \"Cherokee/Wagoneer\"."
+   }
+  ],
+  "1987": [
+   {
+    "gen": "xj",
+    "cid": 150,
+    "hp": 121,
+    "hp_basis": "net",
+    "rpo": "AMC 150 (Renix TBI)",
+    "name": "2.5L / 150 I4",
+    "common_name": "AMC 2.5 / Power Tech I4",
+    "trims": [
+     "standard"
+    ],
+    "nhra": false,
+    "sources": [
+     {
+      "name": "Wikipedia - Jeep Cherokee (XJ)",
+      "url": "https://en.wikipedia.org/wiki/Jeep_Cherokee_(XJ)",
+      "says": "2.5 L AMC 150: 121 hp (Renix TBI) for 1987"
+     },
+     {
+      "name": "EPA fueleconomy.gov vehicle data",
+      "url": "https://www.fueleconomy.gov/feg/download.shtml",
+      "says": "1987 Cherokee 2WD/4WD: 2.5L I4"
+     },
+     {
+      "name": "Haynes Repair Manual - Jeep Cherokee, Comanche & Wagoneer Limited 1984-2001 (coverage)",
+      "url": "https://us.haynes.com/products/classic-collectors-edition-jeep-cherokee-comanche-wagoneer-limited-2wd-4wd-gas-1984-2001-haynes-repair-manual",
+      "says": "Covers all 1984-2001 Cherokee gas engines: 2.5L four, 2.8L V6, 4.0L six"
+     }
+    ],
+    "status": "three_sources_not_nhra",
+    "note": ""
+   },
+   {
+    "gen": "xj",
+    "cid": 126,
+    "hp": 85,
+    "hp_basis": "net",
+    "rpo": "Renault J8S",
+    "name": "2.1L turbodiesel I4",
+    "common_name": "Renault 2.1 TD",
+    "trims": [
+     "optional"
+    ],
+    "nhra": false,
+    "sources": [
+     {
+      "name": "Wikipedia - Jeep Cherokee (XJ)",
+      "url": "https://en.wikipedia.org/wiki/Jeep_Cherokee_(XJ)",
+      "says": "2.1 L Renault J8S turbodiesel, 85 hp, 1985-1987 in North America"
+     },
+     {
+      "name": "EPA fueleconomy.gov vehicle data",
+      "url": "https://www.fueleconomy.gov/feg/download.shtml",
+      "says": "1987 2.1L I4 turbo: \"Cherokee/Wagoneer 4WD\" row (mixes Cherokee and Wagoneer)"
+     },
+     {
+      "name": "Diesel World - The 1985 Jeep Cherokee Diesel",
+      "url": "https://www.dieselworldmag.com/diesel-cars/2-1l-jeep-diesel/",
+      "says": "Renault 2.1L intercooled turbodiesel added for 1985, 85 hp; offered in North American Jeeps through 87"
+     }
+    ],
+    "status": "three_sources_not_nhra",
+    "note": "Diesel; rare in the US. EPA rows are \"Cherokee/Wagoneer\". The 1988 brochure found online (metric, apparently Canadian) still lists the 2.1 TD on 4WD models; EPA has no 1988 2.1 rows, so 1988 is not recorded for the US."
+   },
+   {
+    "gen": "xj",
+    "cid": 242,
+    "hp": 173,
+    "hp_basis": "net",
+    "rpo": "AMC 242 (Renix MPI)",
+    "name": "4.0L / 242 I6",
+    "common_name": "Power-Tech Six / 4.0 HO",
+    "trims": [
+     "optional; standard on upper trims"
+    ],
+    "nhra": false,
+    "sources": [
+     {
+      "name": "Wikipedia - Jeep Cherokee (XJ)",
+      "url": "https://en.wikipedia.org/wiki/Jeep_Cherokee_(XJ)",
+      "says": "4.0 L AMC 242: 173 hp (1987)"
+     },
+     {
+      "name": "EPA fueleconomy.gov vehicle data",
+      "url": "https://www.fueleconomy.gov/feg/download.shtml",
+      "says": "1987 Cherokee 2WD/4WD: 4.0L I6"
+     },
+     {
+      "name": "1987 Jeep Full Line brochure, pp.2 and 5",
+      "url": "https://oldcarbrochures.org/United%20States/Jeep/1987-Jeep/1987-Jeep-Full-Line-Brochure/slides/1987_Jeep_Full_Line-05.html",
+      "says": "Power-Tech Six: all-new 4.0 litre, \"173 horsepower @ 4,500 rpm\"; Cherokee shown with 4.0 litre Power-Tech Six"
+     },
+     {
+      "name": "Haynes Repair Manual - Jeep Cherokee, Comanche & Wagoneer Limited 1984-2001 (coverage)",
+      "url": "https://us.haynes.com/products/classic-collectors-edition-jeep-cherokee-comanche-wagoneer-limited-2wd-4wd-gas-1984-2001-haynes-repair-manual",
+      "says": "Covers 4.0L inline six in 1984-2001 Cherokee"
+     }
+    ],
+    "status": "three_sources_not_nhra",
+    "note": ""
+   }
+  ],
+  "1988": [
+   {
+    "gen": "xj",
+    "cid": 150,
+    "hp": 121,
+    "hp_basis": "net",
+    "rpo": "AMC 150 (Renix TBI)",
+    "name": "2.5L / 150 I4",
+    "common_name": "AMC 2.5 / Power Tech I4",
+    "trims": [
+     "standard"
+    ],
+    "nhra": false,
+    "sources": [
+     {
+      "name": "Wikipedia - Jeep Cherokee (XJ)",
+      "url": "https://en.wikipedia.org/wiki/Jeep_Cherokee_(XJ)",
+      "says": "2.5 L AMC 150: 121 hp (Renix TBI) for 1988"
+     },
+     {
+      "name": "EPA fueleconomy.gov vehicle data",
+      "url": "https://www.fueleconomy.gov/feg/download.shtml",
+      "says": "1988 Cherokee 2WD/4WD: 2.5L I4"
+     },
+     {
+      "name": "Haynes Repair Manual - Jeep Cherokee, Comanche & Wagoneer Limited 1984-2001 (coverage)",
+      "url": "https://us.haynes.com/products/classic-collectors-edition-jeep-cherokee-comanche-wagoneer-limited-2wd-4wd-gas-1984-2001-haynes-repair-manual",
+      "says": "Covers all 1984-2001 Cherokee gas engines: 2.5L four, 2.8L V6, 4.0L six"
+     },
+     {
+      "name": "1988 Jeep Cherokee brochure (metric; likely Canadian edition), Powertrain table",
+      "url": "https://oldcarbrochures.org/United%20States/Jeep/1988-Jeep/1988-Jeep-Cherokee-Brochure/slides/1988_Jeep_Cherokee-04.html",
+      "says": "Standard AMC 2.5L I-4 (metric edition)"
+     }
+    ],
+    "status": "three_sources_not_nhra",
+    "note": ""
+   },
+   {
+    "gen": "xj",
+    "cid": 242,
+    "hp": 177,
+    "hp_basis": "net",
+    "rpo": "AMC 242 (Renix MPI)",
+    "name": "4.0L / 242 I6",
+    "common_name": "Power-Tech Six / 4.0 HO",
+    "trims": [
+     "optional; standard on upper trims"
+    ],
+    "nhra": false,
+    "sources": [
+     {
+      "name": "Wikipedia - Jeep Cherokee (XJ)",
+      "url": "https://en.wikipedia.org/wiki/Jeep_Cherokee_(XJ)",
+      "says": "4.0 L AMC 242: 177 hp (1988-1990)"
+     },
+     {
+      "name": "EPA fueleconomy.gov vehicle data",
+      "url": "https://www.fueleconomy.gov/feg/download.shtml",
+      "says": "1988 Cherokee 2WD/4WD: 4.0L I6"
+     },
+     {
+      "name": "1988 Jeep Cherokee brochure (metric; likely Canadian edition), Powertrain table",
+      "url": "https://oldcarbrochures.org/United%20States/Jeep/1988-Jeep/1988-Jeep-Cherokee-Brochure/slides/1988_Jeep_Cherokee-04.html",
+      "says": "Optional AMC 4.0L I-6 multi-point fuel injection (metric edition)"
+     },
+     {
+      "name": "Haynes Repair Manual - Jeep Cherokee, Comanche & Wagoneer Limited 1984-2001 (coverage)",
+      "url": "https://us.haynes.com/products/classic-collectors-edition-jeep-cherokee-comanche-wagoneer-limited-2wd-4wd-gas-1984-2001-haynes-repair-manual",
+      "says": "Covers 4.0L inline six in 1984-2001 Cherokee"
+     }
+    ],
+    "status": "three_sources_not_nhra",
+    "note": ""
+   }
+  ],
+  "1989": [
+   {
+    "gen": "xj",
+    "cid": 150,
+    "hp": 121,
+    "hp_basis": "net",
+    "rpo": "AMC 150 (Renix TBI)",
+    "name": "2.5L / 150 I4",
+    "common_name": "AMC 2.5 / Power Tech I4",
+    "trims": [
+     "standard"
+    ],
+    "nhra": false,
+    "sources": [
+     {
+      "name": "Wikipedia - Jeep Cherokee (XJ)",
+      "url": "https://en.wikipedia.org/wiki/Jeep_Cherokee_(XJ)",
+      "says": "2.5 L AMC 150: 121 hp (Renix TBI) for 1989"
+     },
+     {
+      "name": "EPA fueleconomy.gov vehicle data",
+      "url": "https://www.fueleconomy.gov/feg/download.shtml",
+      "says": "1989 Cherokee 2WD/4WD: 2.5L I4"
+     },
+     {
+      "name": "Haynes Repair Manual - Jeep Cherokee, Comanche & Wagoneer Limited 1984-2001 (coverage)",
+      "url": "https://us.haynes.com/products/classic-collectors-edition-jeep-cherokee-comanche-wagoneer-limited-2wd-4wd-gas-1984-2001-haynes-repair-manual",
+      "says": "Covers all 1984-2001 Cherokee gas engines: 2.5L four, 2.8L V6, 4.0L six"
+     },
+     {
+      "name": "1989 Jeep Full Line (small) brochure, pp.6-7 and 10-11",
+      "url": "https://oldcarbrochures.org/United%20States/Jeep/1989-Jeep/1989-Jeep-Full-Line-Small-Brochure/slides/1989_Jeep_Full_Line-06-07.html",
+      "says": "\"The 2.5 litre TBI 4-cylinder, with 121 horsepower\"; Cherokee: standard 2.5 litre TBI 4-cylinder"
+     }
+    ],
+    "status": "three_sources_not_nhra",
+    "note": ""
+   },
+   {
+    "gen": "xj",
+    "cid": 242,
+    "hp": 177,
+    "hp_basis": "net",
+    "rpo": "AMC 242 (Renix MPI)",
+    "name": "4.0L / 242 I6",
+    "common_name": "Power-Tech Six / 4.0 HO",
+    "trims": [
+     "optional; standard on upper trims"
+    ],
+    "nhra": false,
+    "sources": [
+     {
+      "name": "Wikipedia - Jeep Cherokee (XJ)",
+      "url": "https://en.wikipedia.org/wiki/Jeep_Cherokee_(XJ)",
+      "says": "4.0 L AMC 242: 177 hp (1988-1990)"
+     },
+     {
+      "name": "EPA fueleconomy.gov vehicle data",
+      "url": "https://www.fueleconomy.gov/feg/download.shtml",
+      "says": "1989 Cherokee 2WD/4WD: 4.0L I6"
+     },
+     {
+      "name": "1989 Jeep Full Line (small) brochure, pp.6-7 and 10-11",
+      "url": "https://oldcarbrochures.org/United%20States/Jeep/1989-Jeep/1989-Jeep-Full-Line-Small-Brochure/slides/1989_Jeep_Full_Line-06-07.html",
+      "says": "\"The 4.0 litre MPI 6-cylinder Power-Tech Six delivers 177 horsepower\"; Cherokee: optional 4.0 litre Power-Tech Six"
+     },
+     {
+      "name": "Haynes Repair Manual - Jeep Cherokee, Comanche & Wagoneer Limited 1984-2001 (coverage)",
+      "url": "https://us.haynes.com/products/classic-collectors-edition-jeep-cherokee-comanche-wagoneer-limited-2wd-4wd-gas-1984-2001-haynes-repair-manual",
+      "says": "Covers 4.0L inline six in 1984-2001 Cherokee"
+     }
+    ],
+    "status": "three_sources_not_nhra",
+    "note": ""
+   }
+  ],
+  "1990": [
+   {
+    "gen": "xj",
+    "cid": 150,
+    "hp": 121,
+    "hp_basis": "net",
+    "rpo": "AMC 150 (Renix TBI)",
+    "name": "2.5L / 150 I4",
+    "common_name": "AMC 2.5 / Power Tech I4",
+    "trims": [
+     "standard"
+    ],
+    "nhra": false,
+    "sources": [
+     {
+      "name": "Wikipedia - Jeep Cherokee (XJ)",
+      "url": "https://en.wikipedia.org/wiki/Jeep_Cherokee_(XJ)",
+      "says": "2.5 L AMC 150: 121 hp (Renix TBI) for 1990"
+     },
+     {
+      "name": "EPA fueleconomy.gov vehicle data",
+      "url": "https://www.fueleconomy.gov/feg/download.shtml",
+      "says": "1990 Cherokee 2WD/4WD: 2.5L I4"
+     },
+     {
+      "name": "Haynes Repair Manual - Jeep Cherokee, Comanche & Wagoneer Limited 1984-2001 (coverage)",
+      "url": "https://us.haynes.com/products/classic-collectors-edition-jeep-cherokee-comanche-wagoneer-limited-2wd-4wd-gas-1984-2001-haynes-repair-manual",
+      "says": "Covers all 1984-2001 Cherokee gas engines: 2.5L four, 2.8L V6, 4.0L six"
+     }
+    ],
+    "status": "three_sources_not_nhra",
+    "note": ""
+   },
+   {
+    "gen": "xj",
+    "cid": 242,
+    "hp": 177,
+    "hp_basis": "net",
+    "rpo": "AMC 242 (Renix MPI)",
+    "name": "4.0L / 242 I6",
+    "common_name": "Power-Tech Six / 4.0 HO",
+    "trims": [
+     "optional; standard on upper trims"
+    ],
+    "nhra": false,
+    "sources": [
+     {
+      "name": "Wikipedia - Jeep Cherokee (XJ)",
+      "url": "https://en.wikipedia.org/wiki/Jeep_Cherokee_(XJ)",
+      "says": "4.0 L AMC 242: 177 hp (1988-1990)"
+     },
+     {
+      "name": "EPA fueleconomy.gov vehicle data",
+      "url": "https://www.fueleconomy.gov/feg/download.shtml",
+      "says": "1990 Cherokee 2WD/4WD: 4.0L I6"
+     },
+     {
+      "name": "Haynes Repair Manual - Jeep Cherokee, Comanche & Wagoneer Limited 1984-2001 (coverage)",
+      "url": "https://us.haynes.com/products/classic-collectors-edition-jeep-cherokee-comanche-wagoneer-limited-2wd-4wd-gas-1984-2001-haynes-repair-manual",
+      "says": "Covers 4.0L inline six in 1984-2001 Cherokee"
+     }
+    ],
+    "status": "three_sources_not_nhra",
+    "note": ""
+   }
+  ],
+  "1991": [
+   {
+    "gen": "xj",
+    "cid": 150,
+    "hp": 130,
+    "hp_basis": "net",
+    "rpo": "AMC 150 (Chrysler MPI)",
+    "name": "2.5L / 150 I4",
+    "common_name": "AMC 2.5 / Power Tech I4",
+    "trims": [
+     "standard"
+    ],
+    "nhra": false,
+    "sources": [
+     {
+      "name": "Wikipedia - Jeep Cherokee (XJ)",
+      "url": "https://en.wikipedia.org/wiki/Jeep_Cherokee_(XJ)",
+      "says": "2.5 L AMC 150: 130 hp (Chrysler MPI) for 1991"
+     },
+     {
+      "name": "EPA fueleconomy.gov vehicle data",
+      "url": "https://www.fueleconomy.gov/feg/download.shtml",
+      "says": "1991 Cherokee 2WD/4WD: 2.5L I4"
+     },
+     {
+      "name": "Haynes Repair Manual - Jeep Cherokee, Comanche & Wagoneer Limited 1984-2001 (coverage)",
+      "url": "https://us.haynes.com/products/classic-collectors-edition-jeep-cherokee-comanche-wagoneer-limited-2wd-4wd-gas-1984-2001-haynes-repair-manual",
+      "says": "Covers all 1984-2001 Cherokee gas engines: 2.5L four, 2.8L V6, 4.0L six"
+     }
+    ],
+    "status": "three_sources_not_nhra",
+    "note": "Chrysler MPI from 1991."
+   },
+   {
+    "gen": "xj",
+    "cid": 242,
+    "hp": 190,
+    "hp_basis": "net",
+    "rpo": "AMC 242 (HO, Chrysler MPI)",
+    "name": "4.0L / 242 I6",
+    "common_name": "Power-Tech Six / 4.0 HO",
+    "trims": [
+     "optional; standard on upper trims"
+    ],
+    "nhra": false,
+    "sources": [
+     {
+      "name": "Wikipedia - Jeep Cherokee (XJ)",
+      "url": "https://en.wikipedia.org/wiki/Jeep_Cherokee_(XJ)",
+      "says": "4.0 L AMC 242: 190 hp HO (1991-1999)"
+     },
+     {
+      "name": "EPA fueleconomy.gov vehicle data",
+      "url": "https://www.fueleconomy.gov/feg/download.shtml",
+      "says": "1991 Cherokee 2WD/4WD: 4.0L I6"
+     },
+     {
+      "name": "Haynes Repair Manual - Jeep Cherokee, Comanche & Wagoneer Limited 1984-2001 (coverage)",
+      "url": "https://us.haynes.com/products/classic-collectors-edition-jeep-cherokee-comanche-wagoneer-limited-2wd-4wd-gas-1984-2001-haynes-repair-manual",
+      "says": "Covers 4.0L inline six in 1984-2001 Cherokee"
+     }
+    ],
+    "status": "three_sources_not_nhra",
+    "note": "High Output version from 1991."
+   }
+  ],
+  "1992": [
+   {
+    "gen": "xj",
+    "cid": 150,
+    "hp": 130,
+    "hp_basis": "net",
+    "rpo": "AMC 150 (Chrysler MPI)",
+    "name": "2.5L / 150 I4",
+    "common_name": "AMC 2.5 / Power Tech I4",
+    "trims": [
+     "base / SE (standard)"
+    ],
+    "nhra": false,
+    "sources": [
+     {
+      "name": "Wikipedia - Jeep Cherokee (XJ)",
+      "url": "https://en.wikipedia.org/wiki/Jeep_Cherokee_(XJ)",
+      "says": "2.5 L AMC 150: 130 hp (Chrysler MPI) for 1992"
+     },
+     {
+      "name": "EPA fueleconomy.gov vehicle data",
+      "url": "https://www.fueleconomy.gov/feg/download.shtml",
+      "says": "1992 Cherokee 2WD/4WD: 2.5L I4"
+     },
+     {
+      "name": "Haynes Repair Manual - Jeep Cherokee, Comanche & Wagoneer Limited 1984-2001 (coverage)",
+      "url": "https://us.haynes.com/products/classic-collectors-edition-jeep-cherokee-comanche-wagoneer-limited-2wd-4wd-gas-1984-2001-haynes-repair-manual",
+      "says": "Covers all 1984-2001 Cherokee gas engines: 2.5L four, 2.8L V6, 4.0L six"
+     },
+     {
+      "name": "1992 Jeep Full Line brochure, Cherokee pp.6-7",
+      "url": "https://oldcarbrochures.org/United%20States/Jeep/1992%20Jeep/1992%20Jeep%20Full%20Line/slides/1992%20Jeep%20Full%20Line-06-07.html",
+      "says": "\"Cherokee Base offers as standard the 2.5 litre 4-cylinder MPI engine\""
+     }
+    ],
+    "status": "three_sources_not_nhra",
+    "note": ""
+   },
+   {
+    "gen": "xj",
+    "cid": 242,
+    "hp": 190,
+    "hp_basis": "net",
+    "rpo": "AMC 242 (HO, Chrysler MPI)",
+    "name": "4.0L / 242 I6",
+    "common_name": "Power-Tech Six / 4.0 HO",
+    "trims": [
+     "optional; standard on upper trims"
+    ],
+    "nhra": false,
+    "sources": [
+     {
+      "name": "Wikipedia - Jeep Cherokee (XJ)",
+      "url": "https://en.wikipedia.org/wiki/Jeep_Cherokee_(XJ)",
+      "says": "4.0 L AMC 242: 190 hp HO (1991-1999)"
+     },
+     {
+      "name": "EPA fueleconomy.gov vehicle data",
+      "url": "https://www.fueleconomy.gov/feg/download.shtml",
+      "says": "1992 Cherokee 2WD/4WD: 4.0L I6"
+     },
+     {
+      "name": "1992 Jeep Full Line brochure, Cherokee pp.6-7",
+      "url": "https://oldcarbrochures.org/United%20States/Jeep/1992%20Jeep/1992%20Jeep%20Full%20Line/slides/1992%20Jeep%20Full%20Line-06-07.html",
+      "says": "\"high-output 4.0 litre Power-Tech Six. Standard on most Cherokee models, it delivers 190 horsepower\""
+     },
+     {
+      "name": "Haynes Repair Manual - Jeep Cherokee, Comanche & Wagoneer Limited 1984-2001 (coverage)",
+      "url": "https://us.haynes.com/products/classic-collectors-edition-jeep-cherokee-comanche-wagoneer-limited-2wd-4wd-gas-1984-2001-haynes-repair-manual",
+      "says": "Covers 4.0L inline six in 1984-2001 Cherokee"
+     }
+    ],
+    "status": "three_sources_not_nhra",
+    "note": ""
+   }
+  ],
+  "1993": [
+   {
+    "gen": "xj",
+    "cid": 150,
+    "hp": 130,
+    "hp_basis": "net",
+    "rpo": "AMC 150 (Chrysler MPI)",
+    "name": "2.5L / 150 I4",
+    "common_name": "AMC 2.5 / Power Tech I4",
+    "trims": [
+     "base / SE (standard)"
+    ],
+    "nhra": false,
+    "sources": [
+     {
+      "name": "Wikipedia - Jeep Cherokee (XJ)",
+      "url": "https://en.wikipedia.org/wiki/Jeep_Cherokee_(XJ)",
+      "says": "2.5 L AMC 150: 130 hp (Chrysler MPI) for 1993"
+     },
+     {
+      "name": "EPA fueleconomy.gov vehicle data",
+      "url": "https://www.fueleconomy.gov/feg/download.shtml",
+      "says": "1993 Cherokee 2WD/4WD: 2.5L I4"
+     },
+     {
+      "name": "Haynes Repair Manual - Jeep Cherokee, Comanche & Wagoneer Limited 1984-2001 (coverage)",
+      "url": "https://us.haynes.com/products/classic-collectors-edition-jeep-cherokee-comanche-wagoneer-limited-2wd-4wd-gas-1984-2001-haynes-repair-manual",
+      "says": "Covers all 1984-2001 Cherokee gas engines: 2.5L four, 2.8L V6, 4.0L six"
+     }
+    ],
+    "status": "three_sources_not_nhra",
+    "note": ""
+   },
+   {
+    "gen": "xj",
+    "cid": 242,
+    "hp": 190,
+    "hp_basis": "net",
+    "rpo": "AMC 242 (HO, Chrysler MPI)",
+    "name": "4.0L / 242 I6",
+    "common_name": "Power-Tech Six / 4.0 HO",
+    "trims": [
+     "optional; standard on upper trims"
+    ],
+    "nhra": false,
+    "sources": [
+     {
+      "name": "Wikipedia - Jeep Cherokee (XJ)",
+      "url": "https://en.wikipedia.org/wiki/Jeep_Cherokee_(XJ)",
+      "says": "4.0 L AMC 242: 190 hp HO (1991-1999)"
+     },
+     {
+      "name": "EPA fueleconomy.gov vehicle data",
+      "url": "https://www.fueleconomy.gov/feg/download.shtml",
+      "says": "1993 Cherokee 2WD/4WD: 4.0L I6"
+     },
+     {
+      "name": "Haynes Repair Manual - Jeep Cherokee, Comanche & Wagoneer Limited 1984-2001 (coverage)",
+      "url": "https://us.haynes.com/products/classic-collectors-edition-jeep-cherokee-comanche-wagoneer-limited-2wd-4wd-gas-1984-2001-haynes-repair-manual",
+      "says": "Covers 4.0L inline six in 1984-2001 Cherokee"
+     }
+    ],
+    "status": "three_sources_not_nhra",
+    "note": ""
+   }
+  ],
+  "1994": [
+   {
+    "gen": "xj",
+    "cid": 150,
+    "hp": 130,
+    "hp_basis": "net",
+    "rpo": "AMC 150 (Chrysler MPI)",
+    "name": "2.5L / 150 I4",
+    "common_name": "AMC 2.5 / Power Tech I4",
+    "trims": [
+     "base / SE (standard)"
+    ],
+    "nhra": false,
+    "sources": [
+     {
+      "name": "Wikipedia - Jeep Cherokee (XJ)",
+      "url": "https://en.wikipedia.org/wiki/Jeep_Cherokee_(XJ)",
+      "says": "2.5 L AMC 150: 130 hp (Chrysler MPI) for 1994"
+     },
+     {
+      "name": "EPA fueleconomy.gov vehicle data",
+      "url": "https://www.fueleconomy.gov/feg/download.shtml",
+      "says": "1994 Cherokee 2WD/4WD: 2.5L I4"
+     },
+     {
+      "name": "Haynes Repair Manual - Jeep Cherokee, Comanche & Wagoneer Limited 1984-2001 (coverage)",
+      "url": "https://us.haynes.com/products/classic-collectors-edition-jeep-cherokee-comanche-wagoneer-limited-2wd-4wd-gas-1984-2001-haynes-repair-manual",
+      "says": "Covers all 1984-2001 Cherokee gas engines: 2.5L four, 2.8L V6, 4.0L six"
+     }
+    ],
+    "status": "three_sources_not_nhra",
+    "note": ""
+   },
+   {
+    "gen": "xj",
+    "cid": 242,
+    "hp": 190,
+    "hp_basis": "net",
+    "rpo": "AMC 242 (HO, Chrysler MPI)",
+    "name": "4.0L / 242 I6",
+    "common_name": "Power-Tech Six / 4.0 HO",
+    "trims": [
+     "optional; standard on upper trims"
+    ],
+    "nhra": false,
+    "sources": [
+     {
+      "name": "Wikipedia - Jeep Cherokee (XJ)",
+      "url": "https://en.wikipedia.org/wiki/Jeep_Cherokee_(XJ)",
+      "says": "4.0 L AMC 242: 190 hp HO (1991-1999)"
+     },
+     {
+      "name": "EPA fueleconomy.gov vehicle data",
+      "url": "https://www.fueleconomy.gov/feg/download.shtml",
+      "says": "1994 Cherokee 2WD/4WD: 4.0L I6"
+     },
+     {
+      "name": "Haynes Repair Manual - Jeep Cherokee, Comanche & Wagoneer Limited 1984-2001 (coverage)",
+      "url": "https://us.haynes.com/products/classic-collectors-edition-jeep-cherokee-comanche-wagoneer-limited-2wd-4wd-gas-1984-2001-haynes-repair-manual",
+      "says": "Covers 4.0L inline six in 1984-2001 Cherokee"
+     }
+    ],
+    "status": "three_sources_not_nhra",
+    "note": ""
+   }
+  ],
+  "1995": [
+   {
+    "gen": "xj",
+    "cid": 150,
+    "hp": 130,
+    "hp_basis": "net",
+    "rpo": "AMC 150 (Chrysler MPI)",
+    "name": "2.5L / 150 I4",
+    "common_name": "AMC 2.5 / Power Tech I4",
+    "trims": [
+     "base / SE (standard)"
+    ],
+    "nhra": false,
+    "sources": [
+     {
+      "name": "Wikipedia - Jeep Cherokee (XJ)",
+      "url": "https://en.wikipedia.org/wiki/Jeep_Cherokee_(XJ)",
+      "says": "2.5 L AMC 150: 130 hp (Chrysler MPI) for 1995"
+     },
+     {
+      "name": "EPA fueleconomy.gov vehicle data",
+      "url": "https://www.fueleconomy.gov/feg/download.shtml",
+      "says": "1995 Cherokee 2WD/4WD: 2.5L I4"
+     },
+     {
+      "name": "Haynes Repair Manual - Jeep Cherokee, Comanche & Wagoneer Limited 1984-2001 (coverage)",
+      "url": "https://us.haynes.com/products/classic-collectors-edition-jeep-cherokee-comanche-wagoneer-limited-2wd-4wd-gas-1984-2001-haynes-repair-manual",
+      "says": "Covers all 1984-2001 Cherokee gas engines: 2.5L four, 2.8L V6, 4.0L six"
+     }
+    ],
+    "status": "three_sources_not_nhra",
+    "note": ""
+   },
+   {
+    "gen": "xj",
+    "cid": 242,
+    "hp": 190,
+    "hp_basis": "net",
+    "rpo": "AMC 242 (HO, Chrysler MPI)",
+    "name": "4.0L / 242 I6",
+    "common_name": "Power-Tech Six / 4.0 HO",
+    "trims": [
+     "optional; standard on upper trims"
+    ],
+    "nhra": false,
+    "sources": [
+     {
+      "name": "Wikipedia - Jeep Cherokee (XJ)",
+      "url": "https://en.wikipedia.org/wiki/Jeep_Cherokee_(XJ)",
+      "says": "4.0 L AMC 242: 190 hp HO (1991-1999)"
+     },
+     {
+      "name": "EPA fueleconomy.gov vehicle data",
+      "url": "https://www.fueleconomy.gov/feg/download.shtml",
+      "says": "1995 Cherokee 2WD/4WD: 4.0L I6"
+     },
+     {
+      "name": "Haynes Repair Manual - Jeep Cherokee, Comanche & Wagoneer Limited 1984-2001 (coverage)",
+      "url": "https://us.haynes.com/products/classic-collectors-edition-jeep-cherokee-comanche-wagoneer-limited-2wd-4wd-gas-1984-2001-haynes-repair-manual",
+      "says": "Covers 4.0L inline six in 1984-2001 Cherokee"
+     }
+    ],
+    "status": "three_sources_not_nhra",
+    "note": ""
+   }
+  ],
+  "1996": [
+   {
+    "gen": "xj",
+    "cid": 150,
+    "hp": 130,
+    "hp_basis": "net",
+    "rpo": "AMC 150 (Chrysler MPI)",
+    "name": "2.5L / 150 I4",
+    "common_name": "AMC 2.5 / Power Tech I4",
+    "trims": [
+     "base / SE (standard)"
+    ],
+    "nhra": false,
+    "sources": [
+     {
+      "name": "Wikipedia - Jeep Cherokee (XJ)",
+      "url": "https://en.wikipedia.org/wiki/Jeep_Cherokee_(XJ)",
+      "says": "2.5 L AMC 150: 130 hp (Chrysler MPI) for 1996"
+     },
+     {
+      "name": "EPA fueleconomy.gov vehicle data",
+      "url": "https://www.fueleconomy.gov/feg/download.shtml",
+      "says": "1996 Cherokee 2WD/4WD: 2.5L I4"
+     },
+     {
+      "name": "Haynes Repair Manual - Jeep Cherokee, Comanche & Wagoneer Limited 1984-2001 (coverage)",
+      "url": "https://us.haynes.com/products/classic-collectors-edition-jeep-cherokee-comanche-wagoneer-limited-2wd-4wd-gas-1984-2001-haynes-repair-manual",
+      "says": "Covers all 1984-2001 Cherokee gas engines: 2.5L four, 2.8L V6, 4.0L six"
+     }
+    ],
+    "status": "three_sources_not_nhra",
+    "note": ""
+   },
+   {
+    "gen": "xj",
+    "cid": 242,
+    "hp": 190,
+    "hp_basis": "net",
+    "rpo": "AMC 242 (HO, Chrysler MPI)",
+    "name": "4.0L / 242 I6",
+    "common_name": "Power-Tech Six / 4.0 HO",
+    "trims": [
+     "optional; standard on upper trims"
+    ],
+    "nhra": false,
+    "sources": [
+     {
+      "name": "Wikipedia - Jeep Cherokee (XJ)",
+      "url": "https://en.wikipedia.org/wiki/Jeep_Cherokee_(XJ)",
+      "says": "4.0 L AMC 242: 190 hp HO (1991-1999)"
+     },
+     {
+      "name": "EPA fueleconomy.gov vehicle data",
+      "url": "https://www.fueleconomy.gov/feg/download.shtml",
+      "says": "1996 Cherokee 2WD/4WD: 4.0L I6"
+     },
+     {
+      "name": "Haynes Repair Manual - Jeep Cherokee, Comanche & Wagoneer Limited 1984-2001 (coverage)",
+      "url": "https://us.haynes.com/products/classic-collectors-edition-jeep-cherokee-comanche-wagoneer-limited-2wd-4wd-gas-1984-2001-haynes-repair-manual",
+      "says": "Covers 4.0L inline six in 1984-2001 Cherokee"
+     }
+    ],
+    "status": "three_sources_not_nhra",
+    "note": ""
+   }
+  ],
+  "1997": [
+   {
+    "gen": "xj",
+    "cid": 150,
+    "hp": 125,
+    "hp_basis": "net",
+    "rpo": "AMC 150 (Chrysler MPI)",
+    "name": "2.5L / 150 I4",
+    "common_name": "AMC 2.5 / Power Tech I4",
+    "trims": [
+     "base / SE (standard)"
+    ],
+    "nhra": false,
+    "sources": [
+     {
+      "name": "Wikipedia - Jeep Cherokee (XJ)",
+      "url": "https://en.wikipedia.org/wiki/Jeep_Cherokee_(XJ)",
+      "says": "2.5 L AMC 150: 125 hp (Chrysler MPI) for 1997"
+     },
+     {
+      "name": "EPA fueleconomy.gov vehicle data",
+      "url": "https://www.fueleconomy.gov/feg/download.shtml",
+      "says": "1997 Cherokee 2WD/4WD: 2.5L I4"
+     },
+     {
+      "name": "Haynes Repair Manual - Jeep Cherokee, Comanche & Wagoneer Limited 1984-2001 (coverage)",
+      "url": "https://us.haynes.com/products/classic-collectors-edition-jeep-cherokee-comanche-wagoneer-limited-2wd-4wd-gas-1984-2001-haynes-repair-manual",
+      "says": "Covers all 1984-2001 Cherokee gas engines: 2.5L four, 2.8L V6, 4.0L six"
+     },
+     {
+      "name": "1997 Jeep Full Line brochure, Cherokee pp.8-9",
+      "url": "https://oldcarbrochures.org/United%20States/Jeep/1997-Jeep/1997-Jeep-Full-Line-Brochure/slides/1997_Jeep_Full_Line-08-09.html",
+      "says": "Six-cylinder engine standard on Sport and Country, optional on SE (four standard on SE)"
+     }
+    ],
+    "status": "three_sources_not_nhra",
+    "note": "Wikipedia gives 125 hp for 1997-2000."
+   },
+   {
+    "gen": "xj",
+    "cid": 242,
+    "hp": 190,
+    "hp_basis": "net",
+    "rpo": "AMC 242 (HO, Chrysler MPI)",
+    "name": "4.0L / 242 I6",
+    "common_name": "Power-Tech Six / 4.0 HO",
+    "trims": [
+     "optional; standard on upper trims"
+    ],
+    "nhra": false,
+    "sources": [
+     {
+      "name": "Wikipedia - Jeep Cherokee (XJ)",
+      "url": "https://en.wikipedia.org/wiki/Jeep_Cherokee_(XJ)",
+      "says": "4.0 L AMC 242: 190 hp HO (1991-1999)"
+     },
+     {
+      "name": "EPA fueleconomy.gov vehicle data",
+      "url": "https://www.fueleconomy.gov/feg/download.shtml",
+      "says": "1997 Cherokee 2WD/4WD: 4.0L I6"
+     },
+     {
+      "name": "1997 Jeep Full Line brochure, Cherokee pp.8-9",
+      "url": "https://oldcarbrochures.org/United%20States/Jeep/1997-Jeep/1997-Jeep-Full-Line-Brochure/slides/1997_Jeep_Full_Line-08-09.html",
+      "says": "\"The six-cylinder engine standard on Sport and Country (optional on SE) delivers 190 horses and 225 pound-feet\""
+     },
+     {
+      "name": "Haynes Repair Manual - Jeep Cherokee, Comanche & Wagoneer Limited 1984-2001 (coverage)",
+      "url": "https://us.haynes.com/products/classic-collectors-edition-jeep-cherokee-comanche-wagoneer-limited-2wd-4wd-gas-1984-2001-haynes-repair-manual",
+      "says": "Covers 4.0L inline six in 1984-2001 Cherokee"
+     }
+    ],
+    "status": "three_sources_not_nhra",
+    "note": ""
+   }
+  ],
+  "1998": [
+   {
+    "gen": "xj",
+    "cid": 150,
+    "hp": 125,
+    "hp_basis": "net",
+    "rpo": "AMC 150 (Chrysler MPI)",
+    "name": "2.5L / 150 I4",
+    "common_name": "AMC 2.5 / Power Tech I4",
+    "trims": [
+     "base / SE (standard)"
+    ],
+    "nhra": false,
+    "sources": [
+     {
+      "name": "Wikipedia - Jeep Cherokee (XJ)",
+      "url": "https://en.wikipedia.org/wiki/Jeep_Cherokee_(XJ)",
+      "says": "2.5 L AMC 150: 125 hp (Chrysler MPI) for 1998"
+     },
+     {
+      "name": "EPA fueleconomy.gov vehicle data",
+      "url": "https://www.fueleconomy.gov/feg/download.shtml",
+      "says": "1998 Cherokee 2WD/4WD: 2.5L I4"
+     },
+     {
+      "name": "Haynes Repair Manual - Jeep Cherokee, Comanche & Wagoneer Limited 1984-2001 (coverage)",
+      "url": "https://us.haynes.com/products/classic-collectors-edition-jeep-cherokee-comanche-wagoneer-limited-2wd-4wd-gas-1984-2001-haynes-repair-manual",
+      "says": "Covers all 1984-2001 Cherokee gas engines: 2.5L four, 2.8L V6, 4.0L six"
+     }
+    ],
+    "status": "three_sources_not_nhra",
+    "note": ""
+   },
+   {
+    "gen": "xj",
+    "cid": 242,
+    "hp": 190,
+    "hp_basis": "net",
+    "rpo": "AMC 242 (HO, Chrysler MPI)",
+    "name": "4.0L / 242 I6",
+    "common_name": "Power-Tech Six / 4.0 HO",
+    "trims": [
+     "optional; standard on upper trims"
+    ],
+    "nhra": false,
+    "sources": [
+     {
+      "name": "Wikipedia - Jeep Cherokee (XJ)",
+      "url": "https://en.wikipedia.org/wiki/Jeep_Cherokee_(XJ)",
+      "says": "4.0 L AMC 242: 190 hp HO (1991-1999)"
+     },
+     {
+      "name": "EPA fueleconomy.gov vehicle data",
+      "url": "https://www.fueleconomy.gov/feg/download.shtml",
+      "says": "1998 Cherokee 2WD/4WD: 4.0L I6"
+     },
+     {
+      "name": "Haynes Repair Manual - Jeep Cherokee, Comanche & Wagoneer Limited 1984-2001 (coverage)",
+      "url": "https://us.haynes.com/products/classic-collectors-edition-jeep-cherokee-comanche-wagoneer-limited-2wd-4wd-gas-1984-2001-haynes-repair-manual",
+      "says": "Covers 4.0L inline six in 1984-2001 Cherokee"
+     }
+    ],
+    "status": "three_sources_not_nhra",
+    "note": ""
+   }
+  ],
+  "1999": [
+   {
+    "gen": "xj",
+    "cid": 150,
+    "hp": 125,
+    "hp_basis": "net",
+    "rpo": "AMC 150 (Chrysler MPI)",
+    "name": "2.5L / 150 I4",
+    "common_name": "AMC 2.5 / Power Tech I4",
+    "trims": [
+     "base / SE (standard)"
+    ],
+    "nhra": false,
+    "sources": [
+     {
+      "name": "Wikipedia - Jeep Cherokee (XJ)",
+      "url": "https://en.wikipedia.org/wiki/Jeep_Cherokee_(XJ)",
+      "says": "2.5 L AMC 150: 125 hp (Chrysler MPI) for 1999"
+     },
+     {
+      "name": "EPA fueleconomy.gov vehicle data",
+      "url": "https://www.fueleconomy.gov/feg/download.shtml",
+      "says": "1999 Cherokee 2WD/4WD: 2.5L I4"
+     },
+     {
+      "name": "Haynes Repair Manual - Jeep Cherokee, Comanche & Wagoneer Limited 1984-2001 (coverage)",
+      "url": "https://us.haynes.com/products/classic-collectors-edition-jeep-cherokee-comanche-wagoneer-limited-2wd-4wd-gas-1984-2001-haynes-repair-manual",
+      "says": "Covers all 1984-2001 Cherokee gas engines: 2.5L four, 2.8L V6, 4.0L six"
+     },
+     {
+      "name": "1999 Jeep Full Line Prestige brochure, Cherokee pp.18-19",
+      "url": "https://oldcarbrochures.org/United%20States/Jeep/1999-Jeep/1999%20Jeep%20Full%20Line%20Prestige%20Brochure/slides/1999%20Jeep%20Full%20Line%20Prestige-18-19.html",
+      "says": "\"The standard 2.5L Power Tech I-4 engine on Cherokee SE ... provides 125 horsepower and 150 pound-feet\""
+     }
+    ],
+    "status": "three_sources_not_nhra",
+    "note": ""
+   },
+   {
+    "gen": "xj",
+    "cid": 242,
+    "hp": 190,
+    "hp_basis": "net",
+    "rpo": "AMC 242 (HO, Chrysler MPI)",
+    "name": "4.0L / 242 I6",
+    "common_name": "Power-Tech Six / 4.0 HO",
+    "trims": [
+     "optional; standard on upper trims"
+    ],
+    "nhra": false,
+    "sources": [
+     {
+      "name": "Wikipedia - Jeep Cherokee (XJ)",
+      "url": "https://en.wikipedia.org/wiki/Jeep_Cherokee_(XJ)",
+      "says": "4.0 L AMC 242: 190 hp HO (1991-1999)"
+     },
+     {
+      "name": "EPA fueleconomy.gov vehicle data",
+      "url": "https://www.fueleconomy.gov/feg/download.shtml",
+      "says": "1999 Cherokee 2WD/4WD: 4.0L I6"
+     },
+     {
+      "name": "1999 Jeep Full Line Prestige brochure, Cherokee pp.18-19",
+      "url": "https://oldcarbrochures.org/United%20States/Jeep/1999-Jeep/1999%20Jeep%20Full%20Line%20Prestige%20Brochure/slides/1999%20Jeep%20Full%20Line%20Prestige-18-19.html",
+      "says": "\"Output for Cherokee's 4.0L Power Tech I-6 engine is 190 horsepower and 225 pound-feet\""
+     },
+     {
+      "name": "Haynes Repair Manual - Jeep Cherokee, Comanche & Wagoneer Limited 1984-2001 (coverage)",
+      "url": "https://us.haynes.com/products/classic-collectors-edition-jeep-cherokee-comanche-wagoneer-limited-2wd-4wd-gas-1984-2001-haynes-repair-manual",
+      "says": "Covers 4.0L inline six in 1984-2001 Cherokee"
+     }
+    ],
+    "status": "three_sources_not_nhra",
+    "note": ""
+   }
+  ],
+  "2000": [
+   {
+    "gen": "xj",
+    "cid": 150,
+    "hp": 125,
+    "hp_basis": "net",
+    "rpo": "AMC 150 (Chrysler MPI)",
+    "name": "2.5L / 150 I4",
+    "common_name": "AMC 2.5 / Power Tech I4",
+    "trims": [
+     "base / SE (standard)"
+    ],
+    "nhra": false,
+    "sources": [
+     {
+      "name": "Wikipedia - Jeep Cherokee (XJ)",
+      "url": "https://en.wikipedia.org/wiki/Jeep_Cherokee_(XJ)",
+      "says": "2.5 L AMC 150: 125 hp (Chrysler MPI) for 2000"
+     },
+     {
+      "name": "EPA fueleconomy.gov vehicle data",
+      "url": "https://www.fueleconomy.gov/feg/download.shtml",
+      "says": "2000 Cherokee 2WD/4WD: 2.5L I4"
+     },
+     {
+      "name": "Haynes Repair Manual - Jeep Cherokee, Comanche & Wagoneer Limited 1984-2001 (coverage)",
+      "url": "https://us.haynes.com/products/classic-collectors-edition-jeep-cherokee-comanche-wagoneer-limited-2wd-4wd-gas-1984-2001-haynes-repair-manual",
+      "says": "Covers all 1984-2001 Cherokee gas engines: 2.5L four, 2.8L V6, 4.0L six"
+     },
+     {
+      "name": "2000 Jeep Full Line brochure, Cherokee pp.18-19",
+      "url": "https://oldcarbrochures.org/United%20States/Jeep/2000-Jeep/2000-Jeep-Full-Line-Brochure/slides/2000_Jeep_Full_Line-18-19.html",
+      "says": "\"Output for Cherokee's 2.5L Power Tech I-4 engine is 125 horsepower and 150 pound-feet of torque\""
+     }
+    ],
+    "status": "three_sources_not_nhra",
+    "note": "Last year for the 2.5L in the XJ (2001 was 4.0L only)."
+   },
+   {
+    "gen": "xj",
+    "cid": 242,
+    "hp": 190,
+    "hp_basis": "net",
+    "rpo": "AMC 242 (HO, Chrysler MPI)",
+    "name": "4.0L / 242 I6",
+    "common_name": "Power-Tech Six / 4.0 HO",
+    "trims": [
+     "optional; standard on upper trims"
+    ],
+    "nhra": false,
+    "sources": [
+     {
+      "name": "Wikipedia - Jeep Cherokee (XJ)",
+      "url": "https://en.wikipedia.org/wiki/Jeep_Cherokee_(XJ)",
+      "says": "4.0 L AMC 242: 193 hp HO (2000-2001 per 1997-2001 table)"
+     },
+     {
+      "name": "EPA fueleconomy.gov vehicle data",
+      "url": "https://www.fueleconomy.gov/feg/download.shtml",
+      "says": "2000 Cherokee 2WD/4WD: 4.0L I6"
+     },
+     {
+      "name": "2000 Jeep Full Line brochure, Cherokee pp.18-19",
+      "url": "https://oldcarbrochures.org/United%20States/Jeep/2000-Jeep/2000-Jeep-Full-Line-Brochure/slides/2000_Jeep_Full_Line-18-19.html",
+      "says": "\"For the 4.0L Power Tech I-6: 190 horsepower and 225 pound-feet of torque\""
+     },
+     {
+      "name": "Haynes Repair Manual - Jeep Cherokee, Comanche & Wagoneer Limited 1984-2001 (coverage)",
+      "url": "https://us.haynes.com/products/classic-collectors-edition-jeep-cherokee-comanche-wagoneer-limited-2wd-4wd-gas-1984-2001-haynes-repair-manual",
+      "says": "Covers 4.0L inline six in 1984-2001 Cherokee"
+     }
+    ],
+    "status": "three_sources_not_nhra",
+    "note": "Wikipedia lists 193 hp for 2000-2001; the 2000 factory brochure says 190 hp, so 190 is recorded."
+   }
+  ],
+  "2001": [
+   {
+    "gen": "xj",
+    "cid": 242,
+    "hp": 190,
+    "hp_basis": "net",
+    "rpo": "AMC 242 (HO, Chrysler MPI)",
+    "name": "4.0L / 242 I6",
+    "common_name": "Power-Tech Six / 4.0 HO",
+    "trims": [
+     "all"
+    ],
+    "nhra": false,
+    "sources": [
+     {
+      "name": "Wikipedia - Jeep Cherokee (XJ)",
+      "url": "https://en.wikipedia.org/wiki/Jeep_Cherokee_(XJ)",
+      "says": "4.0 L AMC 242: 193 hp HO (2000-2001 per 1997-2001 table)"
+     },
+     {
+      "name": "EPA fueleconomy.gov vehicle data",
+      "url": "https://www.fueleconomy.gov/feg/download.shtml",
+      "says": "2001 Cherokee 2WD/4WD: 4.0L I6"
+     },
+     {
+      "name": "Haynes Repair Manual - Jeep Cherokee, Comanche & Wagoneer Limited 1984-2001 (coverage)",
+      "url": "https://us.haynes.com/products/classic-collectors-edition-jeep-cherokee-comanche-wagoneer-limited-2wd-4wd-gas-1984-2001-haynes-repair-manual",
+      "says": "Covers 4.0L inline six in 1984-2001 Cherokee"
+     }
+    ],
+    "status": "three_sources_not_nhra",
+    "note": "Wikipedia lists 193 hp for 2000-2001; the 2000 factory brochure says 190 hp, so 190 is recorded. 4.0L was the only US engine for 2001."
+   }
+  ],
+  "2014": [
+   {
+    "gen": "kl",
+    "cid": 146,
+    "hp": 184,
+    "hp_basis": "net",
+    "rpo": "Tigershark MultiAir2 (ED6)",
+    "name": "2.4L I4",
+    "common_name": "Tigershark",
+    "trims": [
+     "Sport",
+     "FWD and 4WD"
+    ],
+    "nhra": false,
+    "sources": [
+     {
+      "name": "EPA fueleconomy.gov vehicle data",
+      "url": "https://www.fueleconomy.gov/feg/download.shtml",
+      "says": "2014 Cherokee: 2.4L 4-cyl"
+     },
+     {
+      "name": "Chrysler Group press kit - All-new 2014 Jeep Cherokee",
+      "url": "https://media.stellantisnorthamerica.com/newsrelease.do?id=14039",
+      "says": "2.4L MultiAir2 Tigershark I-4 184 hp; available 3.2L Pentastar V-6 271 hp"
+     },
+     {
+      "name": "Wikipedia - Jeep Cherokee (KL)",
+      "url": "https://en.wikipedia.org/wiki/Jeep_Cherokee_(KL)",
+      "says": "2.4L Tigershark I4 base engine (184 hp)"
+     },
+     {
+      "name": "Kelley Blue Book - 2014 Jeep Cherokee specs",
+      "url": "https://www.kbb.com/jeep/cherokee/2014/specs",
+      "says": "4-Cyl, 2.4 Liter, 184 @ 6250 RPM (Sport)"
+     }
+    ],
+    "status": "three_sources_not_nhra",
+    "note": ""
+   },
+   {
+    "gen": "kl",
+    "cid": 198,
+    "hp": 271,
+    "hp_basis": "net",
+    "rpo": "Pentastar 3.2 (EHB)",
+    "name": "3.2L V6",
+    "common_name": "Pentastar",
+    "trims": [
+     "optional; standard on upper trims"
+    ],
+    "nhra": false,
+    "sources": [
+     {
+      "name": "EPA fueleconomy.gov vehicle data",
+      "url": "https://www.fueleconomy.gov/feg/download.shtml",
+      "says": "2014 Cherokee: 3.2L 6-cyl"
+     },
+     {
+      "name": "Chrysler Group press kit - All-new 2014 Jeep Cherokee",
+      "url": "https://media.stellantisnorthamerica.com/newsrelease.do?id=14039",
+      "says": "2.4L MultiAir2 Tigershark I-4 184 hp; available 3.2L Pentastar V-6 271 hp"
+     },
+     {
+      "name": "Wikipedia - Jeep Cherokee (KL)",
+      "url": "https://en.wikipedia.org/wiki/Jeep_Cherokee_(KL)",
+      "says": "3.2L Pentastar V6, 271 hp; not offered for 2023"
+     },
+     {
+      "name": "Kelley Blue Book - 2014 Jeep Cherokee specs",
+      "url": "https://www.kbb.com/jeep/cherokee/2014/specs",
+      "says": "V6, 3.2 Liter, 271 @ 6500 RPM"
+     }
+    ],
+    "status": "three_sources_not_nhra",
+    "note": "Wikipedia trim text says the V6 reached the Sport trim only in 2015; offered on other trims from launch."
+   }
+  ],
+  "2015": [
+   {
+    "gen": "kl",
+    "cid": 146,
+    "hp": 184,
+    "hp_basis": "net",
+    "rpo": "Tigershark MultiAir2 (ED6)",
+    "name": "2.4L I4",
+    "common_name": "Tigershark",
+    "trims": [
+     "base trims",
+     "FWD and 4WD"
+    ],
+    "nhra": false,
+    "sources": [
+     {
+      "name": "EPA fueleconomy.gov vehicle data",
+      "url": "https://www.fueleconomy.gov/feg/download.shtml",
+      "says": "2015 Cherokee: 2.4L 4-cyl"
+     },
+     {
+      "name": "FCA US press kit - 2015 Jeep Cherokee",
+      "url": "https://media.stellantisnorthamerica.com/newsrelease.do?id=15914&mid=",
+      "says": "2.4L Tigershark I-4 184 hp; 3.2L Pentastar V-6 271 hp (stop/start)"
+     },
+     {
+      "name": "Wikipedia - Jeep Cherokee (KL)",
+      "url": "https://en.wikipedia.org/wiki/Jeep_Cherokee_(KL)",
+      "says": "2.4L Tigershark I4 base engine (184 hp)"
+     }
+    ],
+    "status": "three_sources_not_nhra",
+    "note": ""
+   },
+   {
+    "gen": "kl",
+    "cid": 198,
+    "hp": 271,
+    "hp_basis": "net",
+    "rpo": "Pentastar 3.2 (EHB)",
+    "name": "3.2L V6",
+    "common_name": "Pentastar",
+    "trims": [
+     "optional; standard on upper trims"
+    ],
+    "nhra": false,
+    "sources": [
+     {
+      "name": "EPA fueleconomy.gov vehicle data",
+      "url": "https://www.fueleconomy.gov/feg/download.shtml",
+      "says": "2015 Cherokee: 3.2L 6-cyl"
+     },
+     {
+      "name": "FCA US press kit - 2015 Jeep Cherokee",
+      "url": "https://media.stellantisnorthamerica.com/newsrelease.do?id=15914&mid=",
+      "says": "2.4L Tigershark I-4 184 hp; 3.2L Pentastar V-6 271 hp (stop/start)"
+     },
+     {
+      "name": "Wikipedia - Jeep Cherokee (KL)",
+      "url": "https://en.wikipedia.org/wiki/Jeep_Cherokee_(KL)",
+      "says": "3.2L Pentastar V6, 271 hp; not offered for 2023"
+     }
+    ],
+    "status": "three_sources_not_nhra",
+    "note": ""
+   }
+  ],
+  "2016": [
+   {
+    "gen": "kl",
+    "cid": 146,
+    "hp": 184,
+    "hp_basis": "net",
+    "rpo": "Tigershark MultiAir2 (ED6)",
+    "name": "2.4L I4",
+    "common_name": "Tigershark",
+    "trims": [
+     "base trims",
+     "FWD and 4WD"
+    ],
+    "nhra": false,
+    "sources": [
+     {
+      "name": "EPA fueleconomy.gov vehicle data",
+      "url": "https://www.fueleconomy.gov/feg/download.shtml",
+      "says": "2016 Cherokee: 2.4L 4-cyl"
+     },
+     {
+      "name": "FCA US - 2016 Jeep Cherokee release",
+      "url": "https://media.stellantisnorthamerica.com/newsrelease.do?id=16730&mid=",
+      "says": "2.4L Tigershark I-4 184 hp; 3.2L Pentastar V-6 271 hp"
+     },
+     {
+      "name": "Wikipedia - Jeep Cherokee (KL)",
+      "url": "https://en.wikipedia.org/wiki/Jeep_Cherokee_(KL)",
+      "says": "2.4L Tigershark I4 base engine (184 hp)"
+     },
+     {
+      "name": "Kelley Blue Book - 2016 Jeep Cherokee specs",
+      "url": "https://www.kbb.com/jeep/cherokee/2016/specs",
+      "says": "4-Cyl, 2.4 Liter, 184 hp (Sport)"
+     }
+    ],
+    "status": "three_sources_not_nhra",
+    "note": ""
+   },
+   {
+    "gen": "kl",
+    "cid": 198,
+    "hp": 271,
+    "hp_basis": "net",
+    "rpo": "Pentastar 3.2 (EHB)",
+    "name": "3.2L V6",
+    "common_name": "Pentastar",
+    "trims": [
+     "optional; standard on upper trims"
+    ],
+    "nhra": false,
+    "sources": [
+     {
+      "name": "EPA fueleconomy.gov vehicle data",
+      "url": "https://www.fueleconomy.gov/feg/download.shtml",
+      "says": "2016 Cherokee: 3.2L 6-cyl"
+     },
+     {
+      "name": "FCA US - 2016 Jeep Cherokee release",
+      "url": "https://media.stellantisnorthamerica.com/newsrelease.do?id=16730&mid=",
+      "says": "2.4L Tigershark I-4 184 hp; 3.2L Pentastar V-6 271 hp"
+     },
+     {
+      "name": "Wikipedia - Jeep Cherokee (KL)",
+      "url": "https://en.wikipedia.org/wiki/Jeep_Cherokee_(KL)",
+      "says": "3.2L Pentastar V6, 271 hp; not offered for 2023"
+     },
+     {
+      "name": "Kelley Blue Book - 2016 Jeep Cherokee specs",
+      "url": "https://www.kbb.com/jeep/cherokee/2016/specs",
+      "says": "V6, 3.2 Liter, 271 hp"
+     }
+    ],
+    "status": "three_sources_not_nhra",
+    "note": ""
+   }
+  ],
+  "2017": [
+   {
+    "gen": "kl",
+    "cid": 146,
+    "hp": 184,
+    "hp_basis": "net",
+    "rpo": "Tigershark MultiAir2 (ED6)",
+    "name": "2.4L I4",
+    "common_name": "Tigershark",
+    "trims": [
+     "base trims",
+     "FWD and 4WD"
+    ],
+    "nhra": false,
+    "sources": [
+     {
+      "name": "EPA fueleconomy.gov vehicle data",
+      "url": "https://www.fueleconomy.gov/feg/download.shtml",
+      "says": "2017 Cherokee: 2.4L 4-cyl"
+     },
+     {
+      "name": "FCA US - 2017 Jeep Cherokee Fact Sheet",
+      "url": "https://media.stellantisnorthamerica.com/newsrelease.do?id=17622&mid=426",
+      "says": "2.4L standard; 3.2L V-6 now available on Sport (no hp given)"
+     },
+     {
+      "name": "Wikipedia - Jeep Cherokee (KL)",
+      "url": "https://en.wikipedia.org/wiki/Jeep_Cherokee_(KL)",
+      "says": "2.4L Tigershark I4 base engine (184 hp)"
+     }
+    ],
+    "status": "three_sources_not_nhra",
+    "note": ""
+   },
+   {
+    "gen": "kl",
+    "cid": 198,
+    "hp": 271,
+    "hp_basis": "net",
+    "rpo": "Pentastar 3.2 (EHB)",
+    "name": "3.2L V6",
+    "common_name": "Pentastar",
+    "trims": [
+     "optional; standard on upper trims"
+    ],
+    "nhra": false,
+    "sources": [
+     {
+      "name": "EPA fueleconomy.gov vehicle data",
+      "url": "https://www.fueleconomy.gov/feg/download.shtml",
+      "says": "2017 Cherokee: 3.2L 6-cyl"
+     },
+     {
+      "name": "FCA US - 2017 Jeep Cherokee Fact Sheet",
+      "url": "https://media.stellantisnorthamerica.com/newsrelease.do?id=17622&mid=426",
+      "says": "2.4L standard; 3.2L V-6 now available on Sport (no hp given)"
+     },
+     {
+      "name": "Wikipedia - Jeep Cherokee (KL)",
+      "url": "https://en.wikipedia.org/wiki/Jeep_Cherokee_(KL)",
+      "says": "3.2L Pentastar V6, 271 hp; not offered for 2023"
+     }
+    ],
+    "status": "three_sources_not_nhra",
+    "note": ""
+   }
+  ],
+  "2018": [
+   {
+    "gen": "kl",
+    "cid": 146,
+    "hp": 184,
+    "hp_basis": "net",
+    "rpo": "Tigershark MultiAir2 (ED6)",
+    "name": "2.4L I4",
+    "common_name": "Tigershark",
+    "trims": [
+     "base trims",
+     "FWD and 4WD"
+    ],
+    "nhra": false,
+    "sources": [
+     {
+      "name": "EPA fueleconomy.gov vehicle data",
+      "url": "https://www.fueleconomy.gov/feg/download.shtml",
+      "says": "2018 Cherokee: 2.4L 4-cyl"
+     },
+     {
+      "name": "FCA US - 2018 Jeep Cherokee Fact Sheet",
+      "url": "https://media.stellantisnorthamerica.com/newsrelease.do?id=18529&mid=",
+      "says": "\"Choice of 2.4-liter I-4 or 3.2-liter V-6 engines\" (no hp given)"
+     },
+     {
+      "name": "Wikipedia - Jeep Cherokee (KL)",
+      "url": "https://en.wikipedia.org/wiki/Jeep_Cherokee_(KL)",
+      "says": "2.4L Tigershark I4 base engine (184 hp)"
+     }
+    ],
+    "status": "three_sources_not_nhra",
+    "note": ""
+   },
+   {
+    "gen": "kl",
+    "cid": 198,
+    "hp": 271,
+    "hp_basis": "net",
+    "rpo": "Pentastar 3.2 (EHB)",
+    "name": "3.2L V6",
+    "common_name": "Pentastar",
+    "trims": [
+     "optional; standard on upper trims"
+    ],
+    "nhra": false,
+    "sources": [
+     {
+      "name": "EPA fueleconomy.gov vehicle data",
+      "url": "https://www.fueleconomy.gov/feg/download.shtml",
+      "says": "2018 Cherokee: 3.2L 6-cyl"
+     },
+     {
+      "name": "FCA US - 2018 Jeep Cherokee Fact Sheet",
+      "url": "https://media.stellantisnorthamerica.com/newsrelease.do?id=18529&mid=",
+      "says": "\"Choice of 2.4-liter I-4 or 3.2-liter V-6 engines\" (no hp given)"
+     },
+     {
+      "name": "Wikipedia - Jeep Cherokee (KL)",
+      "url": "https://en.wikipedia.org/wiki/Jeep_Cherokee_(KL)",
+      "says": "3.2L Pentastar V6, 271 hp; not offered for 2023"
+     }
+    ],
+    "status": "three_sources_not_nhra",
+    "note": ""
+   }
+  ],
+  "2019": [
+   {
+    "gen": "kl",
+    "cid": 146,
+    "hp": 180,
+    "hp_basis": "net",
+    "rpo": "Tigershark MultiAir2 (ED6)",
+    "name": "2.4L I4",
+    "common_name": "Tigershark",
+    "trims": [
+     "base trims",
+     "FWD and 4WD"
+    ],
+    "nhra": false,
+    "sources": [
+     {
+      "name": "EPA fueleconomy.gov vehicle data",
+      "url": "https://www.fueleconomy.gov/feg/download.shtml",
+      "says": "2019 Cherokee: 2.4L 4-cyl"
+     },
+     {
+      "name": "FCA US - 2019 Jeep Cherokee Fact Sheet",
+      "url": "https://media.stellantisnorthamerica.com/newsrelease.do?id=18761&fIId=20072",
+      "says": "New 2.0L turbo I-4 270 hp; 2.4L I-4 and 3.2L V-6 also offered"
+     },
+     {
+      "name": "Wikipedia - Jeep Cherokee (KL)",
+      "url": "https://en.wikipedia.org/wiki/Jeep_Cherokee_(KL)",
+      "says": "2019: \"previously available 180-horsepower 2.4-liter\" I4"
+     },
+     {
+      "name": "AutoGuide - Refreshed 2019 Jeep Cherokee gets new turbo engine",
+      "url": "https://www.autoguide.com/auto-news/2018/01/the-2019-jeep-cherokee-goes-mainstream.html",
+      "says": "base 2.4-liter Tigershark MultiAir2, 180 horsepower"
+     }
+    ],
+    "status": "three_sources_not_nhra",
+    "note": "Rating listed as 180 hp from 2019 (184 hp 2014-2018)."
+   },
+   {
+    "gen": "kl",
+    "cid": 198,
+    "hp": 271,
+    "hp_basis": "net",
+    "rpo": "Pentastar 3.2 (EHB)",
+    "name": "3.2L V6",
+    "common_name": "Pentastar",
+    "trims": [
+     "optional; standard on upper trims"
+    ],
+    "nhra": false,
+    "sources": [
+     {
+      "name": "EPA fueleconomy.gov vehicle data",
+      "url": "https://www.fueleconomy.gov/feg/download.shtml",
+      "says": "2019 Cherokee: 3.2L 6-cyl"
+     },
+     {
+      "name": "FCA US - 2019 Jeep Cherokee Fact Sheet",
+      "url": "https://media.stellantisnorthamerica.com/newsrelease.do?id=18761&fIId=20072",
+      "says": "New 2.0L turbo I-4 270 hp; 2.4L I-4 and 3.2L V-6 also offered"
+     },
+     {
+      "name": "Wikipedia - Jeep Cherokee (KL)",
+      "url": "https://en.wikipedia.org/wiki/Jeep_Cherokee_(KL)",
+      "says": "3.2L Pentastar V6, 271 hp; not offered for 2023"
+     }
+    ],
+    "status": "three_sources_not_nhra",
+    "note": ""
+   },
+   {
+    "gen": "kl",
+    "cid": 122,
+    "hp": 270,
+    "hp_basis": "net",
+    "rpo": "GME-T4 (EC1)",
+    "name": "2.0L turbo I4",
+    "common_name": "Hurricane / GME T4",
+    "trims": [
+     "optional (upper trims)"
+    ],
+    "nhra": false,
+    "sources": [
+     {
+      "name": "EPA fueleconomy.gov vehicle data",
+      "url": "https://www.fueleconomy.gov/feg/download.shtml",
+      "says": "2019 Cherokee: 2.0L 4-cyl turbo (SIDI)"
+     },
+     {
+      "name": "FCA US - 2019 Jeep Cherokee Fact Sheet",
+      "url": "https://media.stellantisnorthamerica.com/newsrelease.do?id=18761&fIId=20072",
+      "says": "New 2.0L turbo I-4 270 hp; 2.4L I-4 and 3.2L V-6 also offered"
+     },
+     {
+      "name": "Wikipedia - Jeep Cherokee (KL)",
+      "url": "https://en.wikipedia.org/wiki/Jeep_Cherokee_(KL)",
+      "says": "2.0L Hurricane turbo I4, 270 hp, new for 2019"
+     },
+     {
+      "name": "AutoGuide - Refreshed 2019 Jeep Cherokee gets new turbo engine",
+      "url": "https://www.autoguide.com/auto-news/2018/01/the-2019-jeep-cherokee-goes-mainstream.html",
+      "says": "2.0-liter turbo, 270 horsepower"
+     }
+    ],
+    "status": "three_sources_not_nhra",
+    "note": ""
+   }
+  ],
+  "2020": [
+   {
+    "gen": "kl",
+    "cid": 146,
+    "hp": 180,
+    "hp_basis": "net",
+    "rpo": "Tigershark MultiAir2 (ED6)",
+    "name": "2.4L I4",
+    "common_name": "Tigershark",
+    "trims": [
+     "base trims",
+     "FWD and 4WD"
+    ],
+    "nhra": false,
+    "sources": [
+     {
+      "name": "EPA fueleconomy.gov vehicle data",
+      "url": "https://www.fueleconomy.gov/feg/download.shtml",
+      "says": "2020 Cherokee: 2.4L 4-cyl"
+     },
+     {
+      "name": "FCA US - 2020 Jeep Cherokee Fact Sheet",
+      "url": "https://media.stellantisnorthamerica.com/newsrelease.do?id=20899",
+      "says": "\"Choice of 2.0-liter I-4 turbocharged, 2.4-liter I-4 or 3.2-liter V-6 engines\"; turbo 270 hp"
+     },
+     {
+      "name": "Wikipedia - Jeep Cherokee (KL)",
+      "url": "https://en.wikipedia.org/wiki/Jeep_Cherokee_(KL)",
+      "says": "2019: \"previously available 180-horsepower 2.4-liter\" I4"
+     }
+    ],
+    "status": "three_sources_not_nhra",
+    "note": ""
+   },
+   {
+    "gen": "kl",
+    "cid": 198,
+    "hp": 271,
+    "hp_basis": "net",
+    "rpo": "Pentastar 3.2 (EHB)",
+    "name": "3.2L V6",
+    "common_name": "Pentastar",
+    "trims": [
+     "optional; standard on upper trims"
+    ],
+    "nhra": false,
+    "sources": [
+     {
+      "name": "EPA fueleconomy.gov vehicle data",
+      "url": "https://www.fueleconomy.gov/feg/download.shtml",
+      "says": "2020 Cherokee: 3.2L 6-cyl"
+     },
+     {
+      "name": "FCA US - 2020 Jeep Cherokee Fact Sheet",
+      "url": "https://media.stellantisnorthamerica.com/newsrelease.do?id=20899",
+      "says": "\"Choice of 2.0-liter I-4 turbocharged, 2.4-liter I-4 or 3.2-liter V-6 engines\"; turbo 270 hp"
+     },
+     {
+      "name": "Wikipedia - Jeep Cherokee (KL)",
+      "url": "https://en.wikipedia.org/wiki/Jeep_Cherokee_(KL)",
+      "says": "3.2L Pentastar V6, 271 hp; not offered for 2023"
+     }
+    ],
+    "status": "three_sources_not_nhra",
+    "note": ""
+   },
+   {
+    "gen": "kl",
+    "cid": 122,
+    "hp": 270,
+    "hp_basis": "net",
+    "rpo": "GME-T4 (EC1)",
+    "name": "2.0L turbo I4",
+    "common_name": "Hurricane / GME T4",
+    "trims": [
+     "optional (upper trims)"
+    ],
+    "nhra": false,
+    "sources": [
+     {
+      "name": "EPA fueleconomy.gov vehicle data",
+      "url": "https://www.fueleconomy.gov/feg/download.shtml",
+      "says": "2020 Cherokee: 2.0L 4-cyl turbo (SIDI)"
+     },
+     {
+      "name": "FCA US - 2020 Jeep Cherokee Fact Sheet",
+      "url": "https://media.stellantisnorthamerica.com/newsrelease.do?id=20899",
+      "says": "\"Choice of 2.0-liter I-4 turbocharged, 2.4-liter I-4 or 3.2-liter V-6 engines\"; turbo 270 hp"
+     },
+     {
+      "name": "Wikipedia - Jeep Cherokee (KL)",
+      "url": "https://en.wikipedia.org/wiki/Jeep_Cherokee_(KL)",
+      "says": "2.0L Hurricane turbo I4, 270 hp, new for 2019"
+     }
+    ],
+    "status": "three_sources_not_nhra",
+    "note": ""
+   }
+  ],
+  "2021": [
+   {
+    "gen": "kl",
+    "cid": 146,
+    "hp": 180,
+    "hp_basis": "net",
+    "rpo": "Tigershark MultiAir2 (ED6)",
+    "name": "2.4L I4",
+    "common_name": "Tigershark",
+    "trims": [
+     "base trims",
+     "FWD and 4WD"
+    ],
+    "nhra": false,
+    "sources": [
+     {
+      "name": "EPA fueleconomy.gov vehicle data",
+      "url": "https://www.fueleconomy.gov/feg/download.shtml",
+      "says": "2021 Cherokee: 2.4L 4-cyl"
+     },
+     {
+      "name": "FCA US - 2021 Jeep Cherokee Fact Sheet",
+      "url": "https://media.stellantisnorthamerica.com/newsrelease.do?id=21898&mid=4",
+      "says": "\"choice of 2.0-liter I-4 turbocharged, 2.4-liter I-4 or 3.2-liter V-6 engines\"; turbo 270 hp"
+     },
+     {
+      "name": "Wikipedia - Jeep Cherokee (KL)",
+      "url": "https://en.wikipedia.org/wiki/Jeep_Cherokee_(KL)",
+      "says": "2019: \"previously available 180-horsepower 2.4-liter\" I4"
+     },
+     {
+      "name": "Kelley Blue Book - 2021 Jeep Cherokee specs",
+      "url": "https://www.kbb.com/jeep/cherokee/2021/specs",
+      "says": "4-Cyl 2.4L 180 hp: Latitude, Altitude, Latitude Plus, Freedom"
+     },
+     {
+      "name": "Mopar Insiders - Jeep Cherokee returns for 2021 (FCA release reprint)",
+      "url": "https://moparinsiders.com/jeep-cherokee-returns-for-2021-adding-more-content-to-its-core-models/",
+      "says": "2.4L Tigershark standard on Latitude/Latitude Plus, 180 hp"
+     }
+    ],
+    "status": "three_sources_not_nhra",
+    "note": ""
+   },
+   {
+    "gen": "kl",
+    "cid": 198,
+    "hp": 271,
+    "hp_basis": "net",
+    "rpo": "Pentastar 3.2 (EHB)",
+    "name": "3.2L V6",
+    "common_name": "Pentastar",
+    "trims": [
+     "optional; standard on upper trims"
+    ],
+    "nhra": false,
+    "sources": [
+     {
+      "name": "EPA fueleconomy.gov vehicle data",
+      "url": "https://www.fueleconomy.gov/feg/download.shtml",
+      "says": "2021 Cherokee: 3.2L 6-cyl"
+     },
+     {
+      "name": "FCA US - 2021 Jeep Cherokee Fact Sheet",
+      "url": "https://media.stellantisnorthamerica.com/newsrelease.do?id=21898&mid=4",
+      "says": "\"choice of 2.0-liter I-4 turbocharged, 2.4-liter I-4 or 3.2-liter V-6 engines\"; turbo 270 hp"
+     },
+     {
+      "name": "Wikipedia - Jeep Cherokee (KL)",
+      "url": "https://en.wikipedia.org/wiki/Jeep_Cherokee_(KL)",
+      "says": "3.2L Pentastar V6, 271 hp; not offered for 2023"
+     },
+     {
+      "name": "Kelley Blue Book - 2021 Jeep Cherokee specs",
+      "url": "https://www.kbb.com/jeep/cherokee/2021/specs",
+      "says": "V6 3.2L 271 hp"
+     }
+    ],
+    "status": "three_sources_not_nhra",
+    "note": ""
+   },
+   {
+    "gen": "kl",
+    "cid": 122,
+    "hp": 270,
+    "hp_basis": "net",
+    "rpo": "GME-T4 (EC1)",
+    "name": "2.0L turbo I4",
+    "common_name": "Hurricane / GME T4",
+    "trims": [
+     "optional (upper trims)"
+    ],
+    "nhra": false,
+    "sources": [
+     {
+      "name": "EPA fueleconomy.gov vehicle data",
+      "url": "https://www.fueleconomy.gov/feg/download.shtml",
+      "says": "2021 Cherokee: 2.0L 4-cyl turbo (SIDI)"
+     },
+     {
+      "name": "FCA US - 2021 Jeep Cherokee Fact Sheet",
+      "url": "https://media.stellantisnorthamerica.com/newsrelease.do?id=21898&mid=4",
+      "says": "\"choice of 2.0-liter I-4 turbocharged, 2.4-liter I-4 or 3.2-liter V-6 engines\"; turbo 270 hp"
+     },
+     {
+      "name": "Wikipedia - Jeep Cherokee (KL)",
+      "url": "https://en.wikipedia.org/wiki/Jeep_Cherokee_(KL)",
+      "says": "2.0L Hurricane turbo I4, 270 hp, new for 2019"
+     },
+     {
+      "name": "Kelley Blue Book - 2021 Jeep Cherokee specs",
+      "url": "https://www.kbb.com/jeep/cherokee/2021/specs",
+      "says": "4-Cylinder Turbo 2.0L 270 hp"
+     },
+     {
+      "name": "Mopar Insiders - Jeep Cherokee returns for 2021 (FCA release reprint)",
+      "url": "https://moparinsiders.com/jeep-cherokee-returns-for-2021-adding-more-content-to-its-core-models/",
+      "says": "2.0L turbocharged (GME-T4) I4 270 hp"
+     }
+    ],
+    "status": "three_sources_not_nhra",
+    "note": ""
+   }
+  ],
+  "2022": [
+   {
+    "gen": "kl",
+    "cid": 146,
+    "hp": 180,
+    "hp_basis": "net",
+    "rpo": "Tigershark MultiAir2 (ED6)",
+    "name": "2.4L I4",
+    "common_name": "Tigershark",
+    "trims": [
+     "Altitude (limited availability)",
+     "FWD and 4WD"
+    ],
+    "nhra": false,
+    "sources": [
+     {
+      "name": "EPA fueleconomy.gov vehicle data",
+      "url": "https://www.fueleconomy.gov/feg/download.shtml",
+      "says": "2022 Cherokee: 2.4L 4-cyl"
+     },
+     {
+      "name": "Kelley Blue Book - 2022 Jeep Cherokee specs",
+      "url": "https://www.kbb.com/jeep/cherokee/2022/specs",
+      "says": "4-Cyl, Zero Evap, 2.4 Liter, 180 hp - Altitude trim only"
+     },
+     {
+      "name": "Cars.com - 2022 Jeep Cherokee specs (Altitude, Ltd Avail)",
+      "url": "https://www.cars.com/research/jeep-cherokee-2022/specs/",
+      "says": "Altitude FWD / 4x4 (Ltd Avail): 180-hp 2.4-liter 4-cylinder"
+     }
+    ],
+    "status": "three_sources_not_nhra",
+    "note": "Disagreement: Wikipedia says the 2.4 was discontinued for 2022 and the March 2022 Stellantis US fact sheet lists only the 2.0T and 3.2; EPA, KBB and Cars.com show a limited-availability 2022 Altitude with the 2.4 (180 hp). The Stellantis Canada 2022 sheet lists three engines."
+   },
+   {
+    "gen": "kl",
+    "cid": 198,
+    "hp": 271,
+    "hp_basis": "net",
+    "rpo": "Pentastar 3.2 (EHB)",
+    "name": "3.2L V6",
+    "common_name": "Pentastar",
+    "trims": [
+     "optional; standard on upper trims"
+    ],
+    "nhra": false,
+    "sources": [
+     {
+      "name": "EPA fueleconomy.gov vehicle data",
+      "url": "https://www.fueleconomy.gov/feg/download.shtml",
+      "says": "2022 Cherokee: 3.2L 6-cyl"
+     },
+     {
+      "name": "Stellantis US - 2022 Jeep Cherokee Fact Sheet (Mar 4, 2022)",
+      "url": "https://media.stellantisnorthamerica.com/pdf.do?id=23593",
+      "says": "Two engines: 2.0L turbo I-4 270 hp and 3.2L Pentastar V-6 271 hp (Cherokee X, Latitude LUX, Trailhawk, Limited)"
+     },
+     {
+      "name": "Wikipedia - Jeep Cherokee (KL)",
+      "url": "https://en.wikipedia.org/wiki/Jeep_Cherokee_(KL)",
+      "says": "3.2L Pentastar V6, 271 hp; not offered for 2023"
+     },
+     {
+      "name": "Kelley Blue Book - 2022 Jeep Cherokee specs",
+      "url": "https://www.kbb.com/jeep/cherokee/2022/specs",
+      "says": "V6, 3.2 Liter, 271 hp - X, Latitude Lux, Trailhawk, Limited"
+     }
+    ],
+    "status": "three_sources_not_nhra",
+    "note": "Standard on all 2022 models except Altitude."
+   },
+   {
+    "gen": "kl",
+    "cid": 122,
+    "hp": 270,
+    "hp_basis": "net",
+    "rpo": "GME-T4 (EC1)",
+    "name": "2.0L turbo I4",
+    "common_name": "Hurricane / GME T4",
+    "trims": [
+     "optional (upper trims)"
+    ],
+    "nhra": false,
+    "sources": [
+     {
+      "name": "EPA fueleconomy.gov vehicle data",
+      "url": "https://www.fueleconomy.gov/feg/download.shtml",
+      "says": "2022 Cherokee: 2.0L 4-cyl turbo (SIDI)"
+     },
+     {
+      "name": "Stellantis US - 2022 Jeep Cherokee Fact Sheet (Mar 4, 2022)",
+      "url": "https://media.stellantisnorthamerica.com/pdf.do?id=23593",
+      "says": "Two engines: 2.0L turbo I-4 270 hp and 3.2L Pentastar V-6 271 hp (Cherokee X, Latitude LUX, Trailhawk, Limited)"
+     },
+     {
+      "name": "Wikipedia - Jeep Cherokee (KL)",
+      "url": "https://en.wikipedia.org/wiki/Jeep_Cherokee_(KL)",
+      "says": "2.0L Hurricane turbo I4, 270 hp, new for 2019"
+     }
+    ],
+    "status": "three_sources_not_nhra",
+    "note": ""
+   }
+  ],
+  "2023": [
+   {
+    "gen": "kl",
+    "cid": 146,
+    "hp": 180,
+    "hp_basis": "net",
+    "rpo": "Tigershark MultiAir2 (ED6)",
+    "name": "2.4L I4",
+    "common_name": "Tigershark",
+    "trims": [
+     "Altitude LUX 4x4",
+     "4WD only"
+    ],
+    "nhra": false,
+    "sources": [
+     {
+      "name": "EPA fueleconomy.gov vehicle data",
+      "url": "https://www.fueleconomy.gov/feg/download.shtml",
+      "says": "2023 Cherokee: 2.4L 4-cyl"
+     },
+     {
+      "name": "Stellantis US - What's New for 2023: Jeep Cherokee (Jan 13, 2023)",
+      "url": "https://media.stellantisnorthamerica.com/pdf.do?id=24500",
+      "says": "2.0L turbo I-4 (Trailhawk 4x4) 270 hp; 2.4L I-4 (Altitude LUX 4x4) 180 hp"
+     },
+     {
+      "name": "Wikipedia - Jeep Cherokee (KL)",
+      "url": "https://en.wikipedia.org/wiki/Jeep_Cherokee_(KL)",
+      "says": "2023: 2.4L Tigershark returned as sole engine for Altitude Lux"
+     },
+     {
+      "name": "Kelley Blue Book - 2023 Jeep Cherokee offered in just 2 trims",
+      "url": "https://www.kbb.com/car-news/2023-jeep-cherokee-offered-in-just-2-trims",
+      "says": "Altitude Lux 4x4: 2.4-liter 4-cylinder making 180 horsepower"
+     }
+    ],
+    "status": "three_sources_not_nhra",
+    "note": "4x4 only for 2023."
+   },
+   {
+    "gen": "kl",
+    "cid": 122,
+    "hp": 270,
+    "hp_basis": "net",
+    "rpo": "GME-T4 (EC1)",
+    "name": "2.0L turbo I4",
+    "common_name": "Hurricane / GME T4",
+    "trims": [
+     "Trailhawk 4x4"
+    ],
+    "nhra": false,
+    "sources": [
+     {
+      "name": "EPA fueleconomy.gov vehicle data",
+      "url": "https://www.fueleconomy.gov/feg/download.shtml",
+      "says": "2023 Cherokee: 2.0L 4-cyl turbo (SIDI)"
+     },
+     {
+      "name": "Stellantis US - What's New for 2023: Jeep Cherokee (Jan 13, 2023)",
+      "url": "https://media.stellantisnorthamerica.com/pdf.do?id=24500",
+      "says": "2.0L turbo I-4 (Trailhawk 4x4) 270 hp; 2.4L I-4 (Altitude LUX 4x4) 180 hp"
+     },
+     {
+      "name": "Wikipedia - Jeep Cherokee (KL)",
+      "url": "https://en.wikipedia.org/wiki/Jeep_Cherokee_(KL)",
+      "says": "2.0L Hurricane turbo I4, 270 hp, new for 2019"
+     },
+     {
+      "name": "Kelley Blue Book - 2023 Jeep Cherokee offered in just 2 trims",
+      "url": "https://www.kbb.com/car-news/2023-jeep-cherokee-offered-in-just-2-trims",
+      "says": "Trailhawk: 270-horsepower turbocharged 4-cylinder"
+     }
+    ],
+    "status": "three_sources_not_nhra",
+    "note": ""
+   }
+  ]
+ },
+ "source_index": [
+  {
+   "name": "Wikipedia - Jeep Cherokee (SJ)",
+   "url": "https://en.wikipedia.org/wiki/Jeep_Cherokee_(SJ)",
+   "type": "wikipedia"
+  },
+  {
+   "name": "Wikipedia - Jeep Cherokee (XJ)",
+   "url": "https://en.wikipedia.org/wiki/Jeep_Cherokee_(XJ)",
+   "type": "wikipedia"
+  },
+  {
+   "name": "Wikipedia - Jeep Cherokee (KL)",
+   "url": "https://en.wikipedia.org/wiki/Jeep_Cherokee_(KL)",
+   "type": "wikipedia"
+  },
+  {
+   "name": "Off Road Xtreme - Vintage Monday: The 1974-1983 Full-Size Jeep Cherokee (SJ) (Lindsey Fisher)",
+   "url": "https://www.offroadxtreme.com/?p=9839",
+   "type": "publication"
+  },
+  {
+   "name": "wagoneers.com (John Meister) - Full Size Jeep engine availability by year",
+   "url": "https://wagoneers.com/tech/Engines/FSJ-engines-ALL/Engines-FSJ.html",
+   "type": "registry"
+  },
+  {
+   "name": "1976 Jeep Full Line brochure, p.29 Engine Availability chart",
+   "url": "https://oldcarbrochures.org/United%20States/Jeep/1976-Jeep/1976-Jeep-Full-Line-Brochure/slides/1976_Jeep_Full_Line-29.html",
+   "type": "manufacturer"
+  },
+  {
+   "name": "1977 Jeep Full Line brochure, p.15 Cherokee Engine Availability",
+   "url": "https://oldcarbrochures.org/United%20States/Jeep/1977-Jeep/1977%20Jeep%20Full%20Line/slides/1977_Jeep_Full_Line-15.html",
+   "type": "manufacturer"
+  },
+  {
+   "name": "1978 Jeep Full Line brochure, p.15 Cherokee Engine Availability",
+   "url": "https://oldcarbrochures.org/United%20States/Jeep/1978_Jeep/1978_Jeep_Full_Line_Brochure/slides/1978_Jeep_Pg_15.html",
+   "type": "manufacturer"
+  },
+  {
+   "name": "1979 Jeep Full Line brochure, p.13 Cherokee Engine Availability",
+   "url": "https://oldcarbrochures.org/United%20States/Jeep/1979-Jeep/1979-Jeep-Full-Line-Brochure/slides/1979_Jeep_Full_Line-13.html",
+   "type": "manufacturer"
+  },
+  {
+   "name": "1980 Jeep Cherokee brochure (metric edition), Specifications page",
+   "url": "https://oldcarbrochures.org/United%20States/Jeep/1980_Jeep/1980_Jeep_Cherokee_Brochure/slides/1980_Jeep_Cherokee-08.html",
+   "type": "manufacturer"
+  },
+  {
+   "name": "1981 Jeep Cherokee brochure, p.12 Cherokee Engine Availability",
+   "url": "https://oldcarbrochures.org/United%20States/Jeep/1981_Jeep/1981-Jeep-Cherokee-Brochure/slides/1981_Jeep_Cherokee-12.html",
+   "type": "manufacturer"
+  },
+  {
+   "name": "1982 Jeep Cherokee brochure, p.3",
+   "url": "https://oldcarbrochures.org/United%20States/Jeep/1982_Jeep/1982-Jeep-Cherokee-Brochure/slides/1982_Jeep_Cherokee-03.html",
+   "type": "manufacturer"
+  },
+  {
+   "name": "EPA fueleconomy.gov vehicle data",
+   "url": "https://www.fueleconomy.gov/feg/download.shtml",
+   "type": "manufacturer"
+  },
+  {
+   "name": "Haynes Repair Manual - Jeep Cherokee, Comanche & Wagoneer Limited 1984-2001 (coverage)",
+   "url": "https://us.haynes.com/products/classic-collectors-edition-jeep-cherokee-comanche-wagoneer-limited-2wd-4wd-gas-1984-2001-haynes-repair-manual",
+   "type": "publication"
+  },
+  {
+   "name": "Diesel World - The 1985 Jeep Cherokee Diesel",
+   "url": "https://www.dieselworldmag.com/diesel-cars/2-1l-jeep-diesel/",
+   "type": "publication"
+  },
+  {
+   "name": "1985 Jeep brochure, Cherokee specifications / comparison page",
+   "url": "https://oldcarbrochures.org/United%20States/Jeep/1985_Jeep/1985_Jeep_Brochure/slides/1985_Jeep-03.html",
+   "type": "manufacturer"
+  },
+  {
+   "name": "1986 Jeep Handout brochure, Cherokee pages",
+   "url": "https://oldcarbrochures.org/United%20States/Jeep/1986-Jeep/1986-Jeep-Handout-Brochure/slides/1986_Jeep_Handout-04-05.html",
+   "type": "manufacturer"
+  },
+  {
+   "name": "1987 Jeep Full Line brochure, pp.2 and 5",
+   "url": "https://oldcarbrochures.org/United%20States/Jeep/1987-Jeep/1987-Jeep-Full-Line-Brochure/slides/1987_Jeep_Full_Line-05.html",
+   "type": "manufacturer"
+  },
+  {
+   "name": "1988 Jeep Cherokee brochure (metric; likely Canadian edition), Powertrain table",
+   "url": "https://oldcarbrochures.org/United%20States/Jeep/1988-Jeep/1988-Jeep-Cherokee-Brochure/slides/1988_Jeep_Cherokee-04.html",
+   "type": "manufacturer"
+  },
+  {
+   "name": "1989 Jeep Full Line (small) brochure, pp.6-7 and 10-11",
+   "url": "https://oldcarbrochures.org/United%20States/Jeep/1989-Jeep/1989-Jeep-Full-Line-Small-Brochure/slides/1989_Jeep_Full_Line-06-07.html",
+   "type": "manufacturer"
+  },
+  {
+   "name": "1992 Jeep Full Line brochure, Cherokee pp.6-7",
+   "url": "https://oldcarbrochures.org/United%20States/Jeep/1992%20Jeep/1992%20Jeep%20Full%20Line/slides/1992%20Jeep%20Full%20Line-06-07.html",
+   "type": "manufacturer"
+  },
+  {
+   "name": "1997 Jeep Full Line brochure, Cherokee pp.8-9",
+   "url": "https://oldcarbrochures.org/United%20States/Jeep/1997-Jeep/1997-Jeep-Full-Line-Brochure/slides/1997_Jeep_Full_Line-08-09.html",
+   "type": "manufacturer"
+  },
+  {
+   "name": "1999 Jeep Full Line Prestige brochure, Cherokee pp.18-19",
+   "url": "https://oldcarbrochures.org/United%20States/Jeep/1999-Jeep/1999%20Jeep%20Full%20Line%20Prestige%20Brochure/slides/1999%20Jeep%20Full%20Line%20Prestige-18-19.html",
+   "type": "manufacturer"
+  },
+  {
+   "name": "2000 Jeep Full Line brochure, Cherokee pp.18-19",
+   "url": "https://oldcarbrochures.org/United%20States/Jeep/2000-Jeep/2000-Jeep-Full-Line-Brochure/slides/2000_Jeep_Full_Line-18-19.html",
+   "type": "manufacturer"
+  },
+  {
+   "name": "Chrysler Group press kit - All-new 2014 Jeep Cherokee",
+   "url": "https://media.stellantisnorthamerica.com/newsrelease.do?id=14039",
+   "type": "manufacturer"
+  },
+  {
+   "name": "FCA US press kit - 2015 Jeep Cherokee",
+   "url": "https://media.stellantisnorthamerica.com/newsrelease.do?id=15914&mid=",
+   "type": "manufacturer"
+  },
+  {
+   "name": "FCA US - 2016 Jeep Cherokee release",
+   "url": "https://media.stellantisnorthamerica.com/newsrelease.do?id=16730&mid=",
+   "type": "manufacturer"
+  },
+  {
+   "name": "FCA US - 2017 Jeep Cherokee Fact Sheet",
+   "url": "https://media.stellantisnorthamerica.com/newsrelease.do?id=17622&mid=426",
+   "type": "manufacturer"
+  },
+  {
+   "name": "FCA US - 2018 Jeep Cherokee Fact Sheet",
+   "url": "https://media.stellantisnorthamerica.com/newsrelease.do?id=18529&mid=",
+   "type": "manufacturer"
+  },
+  {
+   "name": "FCA US - 2019 Jeep Cherokee Fact Sheet",
+   "url": "https://media.stellantisnorthamerica.com/newsrelease.do?id=18761&fIId=20072",
+   "type": "manufacturer"
+  },
+  {
+   "name": "FCA US - 2020 Jeep Cherokee Fact Sheet",
+   "url": "https://media.stellantisnorthamerica.com/newsrelease.do?id=20899",
+   "type": "manufacturer"
+  },
+  {
+   "name": "FCA US - 2021 Jeep Cherokee Fact Sheet",
+   "url": "https://media.stellantisnorthamerica.com/newsrelease.do?id=21898&mid=4",
+   "type": "manufacturer"
+  },
+  {
+   "name": "Stellantis US - 2022 Jeep Cherokee Fact Sheet (Mar 4, 2022)",
+   "url": "https://media.stellantisnorthamerica.com/pdf.do?id=23593",
+   "type": "manufacturer"
+  },
+  {
+   "name": "Stellantis Canada - 2022 Jeep Cherokee Fact Sheet (Mar 4, 2022)",
+   "url": "https://media.stellantisnorthamerica.com/pdf.do?id=23603",
+   "type": "manufacturer"
+  },
+  {
+   "name": "Stellantis US - What's New for 2023: Jeep Cherokee (Jan 13, 2023)",
+   "url": "https://media.stellantisnorthamerica.com/pdf.do?id=24500",
+   "type": "manufacturer"
+  },
+  {
+   "name": "Kelley Blue Book - 2014 Jeep Cherokee specs",
+   "url": "https://www.kbb.com/jeep/cherokee/2014/specs",
+   "type": "publication"
+  },
+  {
+   "name": "Kelley Blue Book - 2016 Jeep Cherokee specs",
+   "url": "https://www.kbb.com/jeep/cherokee/2016/specs",
+   "type": "publication"
+  },
+  {
+   "name": "Kelley Blue Book - 2021 Jeep Cherokee specs",
+   "url": "https://www.kbb.com/jeep/cherokee/2021/specs",
+   "type": "publication"
+  },
+  {
+   "name": "Kelley Blue Book - 2022 Jeep Cherokee specs",
+   "url": "https://www.kbb.com/jeep/cherokee/2022/specs",
+   "type": "publication"
+  },
+  {
+   "name": "Kelley Blue Book - 2023 Jeep Cherokee offered in just 2 trims",
+   "url": "https://www.kbb.com/car-news/2023-jeep-cherokee-offered-in-just-2-trims",
+   "type": "publication"
+  },
+  {
+   "name": "Cars.com - 2022 Jeep Cherokee specs (Altitude, Ltd Avail)",
+   "url": "https://www.cars.com/research/jeep-cherokee-2022/specs/",
+   "type": "publication"
+  },
+  {
+   "name": "AutoGuide - Refreshed 2019 Jeep Cherokee gets new turbo engine",
+   "url": "https://www.autoguide.com/auto-news/2018/01/the-2019-jeep-cherokee-goes-mainstream.html",
+   "type": "publication"
+  },
+  {
+   "name": "Mopar Insiders - Jeep Cherokee returns for 2021 (FCA release reprint)",
+   "url": "https://moparinsiders.com/jeep-cherokee-returns-for-2021-adding-more-content-to-its-core-models/",
+   "type": "publication"
+  }
+ ]
+}

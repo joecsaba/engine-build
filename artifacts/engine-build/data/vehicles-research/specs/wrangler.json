@@ -1,0 +1,66 @@
+{
+ "make": "Jeep",
+ "model": "Wrangler",
+ "makeSlug": "jeep",
+ "slug": "wrangler",
+ "title": "Jeep Wrangler Engines by Year (1987–2026)",
+ "description": "Every factory engine in the Jeep Wrangler by year, 1987–2026: the 2.5 four and 4.0 six, the 3.6 Pentastar, 2.0 turbo, EcoDiesel and the 392 V8.",
+ "intro": [
+  "The Wrangler replaced the CJ for 1987 and has been built in four generations: the YJ, TJ, JK and JL. There was no 1996 model year; the YJ ended with 1995 and the TJ arrived as a 1997 model.",
+  "Pick a year to see every engine offered that model year, with its code, rated horsepower and the trims it came in. Each engine links to its full specs."
+ ],
+ "generations": [
+  {
+   "key": "yj",
+   "name": "YJ",
+   "years": [
+    1987,
+    1995
+   ],
+   "intro": [
+    "The YJ used AMC's 2.5 four and, through 1990, the carbureted 4.2 six. The fuel-injected 4.0 six replaced the 4.2 for 1991."
+   ]
+  },
+  {
+   "key": "tj",
+   "name": "TJ",
+   "years": [
+    1997,
+    2006
+   ],
+   "intro": [
+    "The coil-sprung TJ kept the 2.5 four and the 4.0 six; the 2.4 PowerTech four replaced the 2.5 for 2003. The Rubicon arrived in 2003 and the long-wheelbase Unlimited in 2004."
+   ]
+  },
+  {
+   "key": "jk",
+   "name": "JK",
+   "years": [
+    2007,
+    2018
+   ],
+   "intro": [
+    "The JK started with the 3.8 V6 and switched to the 3.6 Pentastar V6 for 2012. The JK was sold alongside the new JL during 2018."
+   ]
+  },
+  {
+   "key": "jl",
+   "name": "JL",
+   "years": [
+    2018,
+    2026
+   ],
+   "intro": [
+    "The JL offers the 3.6 Pentastar and a 2.0 turbo four, with the 3.0 EcoDiesel from 2020 to 2023, the 4xe plug-in hybrid from 2021 to 2025, and the 6.4 V8 of the 392 models from 2021."
+   ]
+  }
+ ],
+ "files": [
+  "verify_jeep-wrangler-1987-2006.json",
+  "verify_jeep-wrangler-2007-2026.json"
+ ],
+ "cid_remap": {
+  "121": 122
+ },
+ "draft": true
+}

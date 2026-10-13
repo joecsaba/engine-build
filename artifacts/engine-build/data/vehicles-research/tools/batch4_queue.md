@@ -24,13 +24,17 @@ Sources stay private. Half-ton / light-duty models only unless noted.
 
 ## Nova
 - 1970 Yenko Deuce (COPO 9010 LT1 350/360): treat as a factory COPO like the Camaro COPOs.
-  Has NHRA + Chevy Hardcore (one source); needs one more independent source.
+  DONE 2026-10-12 (eb37979): NHRA + Chevy Hardcore + Yenko registry + Wikipedia. Awaiting copy review / deploy.
 
 ## Engines still without a spec page (bore/stroke not yet verified by 3 sources)
 - Buick 3.0 V6 (181 ci) — Skylark, Cutlass 1982–1988
 - GM 2.2 LN2 (133 ci) — Cutlass 1993–1996
 - GM 3.9 V6 LZ8/LZ9 (237 ci) — Impala 2006–2011, Monte Carlo 2006
 - Ford/Jaguar 3.9 V8 AJ-30 (240 ci) — Thunderbird 2002–2005
+- Renault 2.1 turbodiesel J8S (126 ci) — Cherokee XJ 1985–1987
+- Chrysler 2.4 PowerTech DOHC (148 ci) — Wrangler TJ 2003–2006
+- FCA 2.4 Tigershark MultiAir2 (144/146 ci) — Cherokee KL 2014–2023
+- Mercedes-Benz OM642 3.0 V6 diesel (182 ci) — Grand Cherokee 2007–2008 (left unlinked; not the EcoDiesel)
 
 ## Other leftovers
 - Two-source rows to retry for a third source: El Camino 1965–68 sixes, early-80s GM diesels/V6s,

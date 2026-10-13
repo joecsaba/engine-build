@@ -1,0 +1,55 @@
+{
+ "make": "Jeep",
+ "model": "Gladiator",
+ "makeSlug": "jeep",
+ "slug": "gladiator",
+ "title": "Jeep Gladiator Engines by Year",
+ "description": "Every factory engine in the Jeep Gladiator pickup by year: the 1963–1971 Tornado six, 327 and Buick 350, and the 2020–2026 3.6 V6 and EcoDiesel.",
+ "intro": [
+  "Jeep has sold two pickups called Gladiator: Kaiser's full-size truck of 1963–1971, which continued as the J-series, and the Wrangler-based Gladiator that arrived for 2020.",
+  "Pick a year to see every engine offered that model year, with its code, rated horsepower and the trims it came in. Each engine links to its full specs."
+ ],
+ "generations": [
+  {
+   "key": "sj",
+   "name": "1963–1971",
+   "years": [
+    1963,
+    1971
+   ],
+   "intro": [
+    "The first Gladiator shared the Wagoneer's engines: the Tornado six, then AMC's 232 six and the 327 Vigilante V8, Buick's 350 Dauntless V8, and AMC sixes and V8s from 1971."
+   ]
+  },
+  {
+   "key": "jt",
+   "name": "JT",
+   "years": [
+    2020,
+    2026
+   ],
+   "intro": [
+    "The Wrangler-based Gladiator uses the 3.6 Pentastar V6, with the 3.0 EcoDiesel offered for 2021–2023."
+   ]
+  }
+ ],
+ "files": [
+  "verify_jeep-gladiator.json"
+ ],
+ "family_overrides": [
+  {
+   "years": [
+    1968,
+    1971
+   ],
+   "cid": [
+    350
+   ],
+   "url": "/engines/jeep/dauntless"
+  }
+ ],
+ "cid_remap": {
+  "183": 182
+ },
+ "draft": true
+}

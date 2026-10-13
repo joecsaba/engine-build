@@ -1,0 +1,117 @@
+{
+ "make": "Jeep",
+ "model": "Grand Cherokee",
+ "makeSlug": "jeep",
+ "slug": "grand-cherokee",
+ "title": "Jeep Grand Cherokee Engines by Year",
+ "description": "Every factory engine in the Jeep Grand Cherokee by year, 1993–2026: the 4.0 six, Magnum, PowerTech and Hemi V8s, the SRT8, Trackhawk and 4xe.",
+ "intro": [
+  "The Grand Cherokee arrived for 1993 and has been built in five generations: the ZJ, WJ, WK, WK2 and WL. The three-row Grand Cherokee L joined the WL range for 2021.",
+  "Pick a year to see every engine offered that model year, with its code, rated horsepower and the trims it came in. Each engine links to its full specs."
+ ],
+ "generations": [
+  {
+   "key": "zj",
+   "name": "ZJ",
+   "years": [
+    1993,
+    1998
+   ],
+   "intro": [
+    "The ZJ offered the 4.0 six and the 5.2 V8, then the 5.9 V8 in the 1998 5.9 Limited."
+   ]
+  },
+  {
+   "key": "wj",
+   "name": "WJ",
+   "years": [
+    1999,
+    2004
+   ],
+   "intro": [
+    "The WJ kept the 4.0 six and added the 4.7 PowerTech V8, with a high-output 4.7 from 2002."
+   ]
+  },
+  {
+   "key": "wk",
+   "name": "WK",
+   "years": [
+    2005,
+    2010
+   ],
+   "intro": [
+    "The WK brought the 3.7 V6, the 5.7 Hemi and, from 2006, the 6.1 Hemi of the SRT8. A Mercedes-built 3.0 turbodiesel was offered for 2007–2008."
+   ]
+  },
+  {
+   "key": "wk2",
+   "name": "WK2",
+   "years": [
+    2011,
+    2022
+   ],
+   "intro": [
+    "The WK2 used the 3.6 Pentastar V6, the 5.7 Hemi, the 6.4 Hemi of the SRT8 and SRT, a 3.0 EcoDiesel, and in the 2018–2021 Trackhawk the supercharged 6.2 Hellcat V8. A WK2-based Grand Cherokee WK was sold alongside the new model for 2022."
+   ]
+  },
+  {
+   "key": "wl",
+   "name": "WL",
+   "years": [
+    2021,
+    2026
+   ],
+   "intro": [
+    "The WL offers the 3.6 V6, the 5.7 Hemi through 2024, the 4xe plug-in hybrid for 2022–2025 and, from 2026, the Hurricane 2.0 turbo four."
+   ]
+  }
+ ],
+ "files": [
+  "verify_jeep-grand-cherokee-1993-2010.json",
+  "verify_jeep-grand-cherokee-2011-2026.json"
+ ],
+ "ranges": {
+  "2005|287|230": [
+   230,
+   235
+  ]
+ },
+ "cid_remap": {
+  "183": 182
+ },
+ "family_overrides": [
+  {
+   "years": [
+    1998,
+    1998
+   ],
+   "cid": [
+    360
+   ],
+   "url": "/engines/ram/magnum"
+  },
+  {
+   "years": [
+    2018,
+    2021
+   ],
+   "cid": [
+    376
+   ],
+   "url": "/engines/dodge/gen-iii-hemi"
+  }
+ ],
+ "no_link": [
+  {
+   "cid": 182,
+   "years": [
+    2007,
+    2008
+   ]
+  }
+ ],
+ "notes": {
+  "2005|287|230": "Published ratings for this engine vary."
+ },
+ "draft": true
+}

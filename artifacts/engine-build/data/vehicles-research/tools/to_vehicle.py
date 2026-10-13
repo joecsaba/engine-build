@@ -168,6 +168,9 @@ for fn in spec["files"]:
                 continue
             if electric:
                 cyl, layout, name = None, None, "Electric, dual motor"
+            elif e.get("cid") is None:
+                # never-built or undocumented rows carry no size; they stay in "excluded"
+                cyl, layout, name = None, None, e.get("name") or "Unknown"
             else:
                 cyl, layout = ENGINE_KIND.get(mk, {}).get(e["cid"], (None, None))
                 if cyl is None:
@@ -249,6 +252,27 @@ for fn in spec["files"]:
                 rec["reason"] = spec.get("exclude", {}).get(k) or (f"{n} independent sources" if n < 3 else st)
                 rec["researchNote"] = e.get("note")
                 excluded.append(rec)
+
+# trim_rewrite: [[regex, replacement], ...] tidies research trim text ("CJ-5: option 1972-78" -> "CJ-5").
+# merge_trims: one page row per engine and year; rows that differ only by which
+# model carried them (CJ-5, CJ-7 and CJ-8 all with the 258) become one row.
+for rx, rep in spec.get("trim_rewrite", []):
+    for r in engines + excluded:
+        r["trims"] = [re.sub(rx, rep, t) for t in r["trims"]]
+if spec.get("merge_trims"):
+    merged = {}
+    for r in engines:
+        mk_ = (r["year"], r["cid"], r["hp"], r.get("code"), r.get("desc"), r.get("diesel"), r.get("race"))
+        if mk_ not in merged:
+            merged[mk_] = r
+            continue
+        m = merged[mk_]
+        m["trims"] = m["trims"] + [t for t in r["trims"] if t not in m["trims"]]
+        urls = {x.get("url") for x in m["sources"]}
+        m["sources"] += [x for x in r["sources"] if x.get("url") not in urls]
+        m["sourceCount"] = max(m["sourceCount"], r["sourceCount"])
+        m["note"] = m["note"] or r["note"]
+    engines = list(merged.values())
 
 doc = {k: spec[k] for k in ("make", "model", "title", "description", "intro", "generations") if k in spec}
 if spec.get("draft"): doc["draft"] = True

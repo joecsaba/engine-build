@@ -1,0 +1,2707 @@
+{
+ "vehicle": "jeep-wagoneer-1963-1991",
+ "notes": "Covers the full-size SJ Wagoneer (1963-1983) and SJ Grand Wagoneer (1984-1991) only. The 1984-1990 XJ-based compact Wagoneer/Wagoneer Limited (2.5 I4, 2.8 V6, 2.1 turbodiesel, 4.0 I6) is excluded: the EPA file mixes it in as \"Cherokee/Wagoneer\" (1984-1989) and \"Wagoneer Limited\"/\"Wagoneer 4WD\" 4.0 (1989-1990) rows, and the 1987/1989 Jeep brochures and jeep.com history list \"Wagoneer Limited (XJ)\" next to Grand Wagoneer. NHRA has no rows for this model. Archive dating trap: oldcarbrochures.org's \"1965 Wagoneer R3\" and \"1966 Wagoneer\" brochures advertise the new Dauntless V-8 and are 1968+ literature; its \"1983 Jeep Wagoneer\" is a Mexican VAM brochure. Mexican VAM-built Wagoneers used a VAM 282 six (export, not US) and are excluded. Net HP for AMC V8s/sixes 1974-1983 could not be triple-sourced (brochures from 1974 on give no hp), so hp is null there. Super Wagoneer (1966-1969): 1969 engine not established. Wagoneer Limited (1978-83) used the same engines as the Wagoneer.",
+ "years": {
+  "1963": [
+   {
+    "gen": "kaiser",
+    "cid": 230,
+    "hp": 140,
+    "hp_basis": "gross",
+    "name": "3.8L / 230 OHC I6",
+    "rpo": "Tornado-OHC",
+    "common_name": "Tornado 230",
+    "trims": [
+     "std"
+    ],
+    "nhra": false,
+    "sources": [
+     {
+      "name": "Kaiser Jeep Wagoneer brochure (first-year 1963-model, archive label \"1962 Jeep Wagoneers\")",
+      "url": "https://oldcarbrochures.org/United%20States/Jeep/1962_Jeep/1962-Jeep-Wagoneers-Brochure/index.html",
+      "says": "Tornado-OHC 6-cyl overhead cam, 230 cu in, Max H.P. 140 @ 4,000, 8.5:1"
+     },
+     {
+      "name": "Wikipedia - Jeep Wagoneer (SJ)",
+      "url": "https://en.wikipedia.org/wiki/Jeep_Wagoneer_(SJ)",
+      "says": "Tornado SOHC 230 I6, 140 hp (1963-64)"
+     },
+     {
+      "name": "wagoneers.com (John Meister) - SJ engine summary by year",
+      "url": "https://wagoneers.com/tech/SJ-engines-years.html",
+      "says": "Year table: 1963 std 230"
+     },
+     {
+      "name": "International Full Size Jeep Association - FSJ Drivetrain Database (compiled from Kaiser/AMC/Chrysler factory references)",
+      "url": "https://ifsja.org/tech/figures/db.html",
+      "says": "230 OHC I-6 Kaiser, 1962-65 (early)"
+     }
+    ],
+    "status": "three_sources_not_nhra",
+    "note": "Wagoneer launched Nov 1962 as a 1963 model."
+   }
+  ],
+  "1964": [
+   {
+    "gen": "kaiser",
+    "cid": 230,
+    "hp": 140,
+    "hp_basis": "gross",
+    "name": "3.8L / 230 OHC I6",
+    "rpo": "Tornado-OHC",
+    "common_name": "Tornado 230",
+    "trims": [
+     "std"
+    ],
+    "nhra": false,
+    "sources": [
+     {
+      "name": "Wikipedia - Jeep Wagoneer (SJ)",
+      "url": "https://en.wikipedia.org/wiki/Jeep_Wagoneer_(SJ)",
+      "says": "Tornado SOHC 230 I6, 140 hp (1963-64)"
+     },
+     {
+      "name": "wagoneers.com (John Meister) - SJ engine summary by year",
+      "url": "https://wagoneers.com/tech/SJ-engines-years.html",
+      "says": "Year table: 1964 std 230"
+     },
+     {
+      "name": "International Full Size Jeep Association - FSJ Drivetrain Database (compiled from Kaiser/AMC/Chrysler factory references)",
+      "url": "https://ifsja.org/tech/figures/db.html",
+      "says": "230 OHC I-6 Kaiser, 1962-65 (early)"
+     }
+    ],
+    "status": "three_sources_not_nhra",
+    "note": "1964 brochure not found; 140 hp carried over per Wikipedia."
+   },
+   {
+    "gen": "kaiser",
+    "cid": 230,
+    "hp": 133,
+    "hp_basis": "gross",
+    "name": "3.8L / 230 OHC I6 (low compression)",
+    "rpo": "Tornado-OHC low-comp",
+    "common_name": "Tornado 230",
+    "trims": [
+     "optional"
+    ],
+    "nhra": false,
+    "sources": [
+     {
+      "name": "Wikipedia - Jeep Wagoneer (SJ)",
+      "url": "https://en.wikipedia.org/wiki/Jeep_Wagoneer_(SJ)",
+      "says": "1964: lower-compression 133 hp Tornado to remedy cooling problems"
+     },
+     {
+      "name": "The Truth About Cars - Rare Rides Icons: The Jeep Wagoneer (Part V)",
+      "url": "https://www.thetruthaboutcars.com/cars/features/rare-rides-icons-the-jeep-wagoneer-the-first-luxury-suv-ever-part-v-45134362",
+      "says": "Tornado limited to a lower compression version with 133 horsepower"
+     },
+     {
+      "name": "wagoneers.com (John Meister) - SJ engine summary by year",
+      "url": "https://wagoneers.com/tech/SJ-engines-years.html",
+      "says": "Year table: 1964 std 230, opt locompr 230"
+     }
+    ],
+    "status": "three_sources_not_nhra",
+    "note": "TTAC implies the 133 hp engine replaced the 140 hp one; wagoneers.com lists it as an option alongside the standard 230."
+   }
+  ],
+  "1965": [
+   {
+    "gen": "kaiser",
+    "cid": 230,
+    "hp": 140,
+    "hp_basis": "gross",
+    "name": "3.8L / 230 OHC I6",
+    "rpo": "Tornado-OHC",
+    "common_name": "Tornado 230",
+    "trims": [
+     "std, early 1965 only"
+    ],
+    "nhra": false,
+    "sources": [
+     {
+      "name": "International Full Size Jeep Association - FSJ Drivetrain Database (compiled from Kaiser/AMC/Chrysler factory references)",
+      "url": "https://ifsja.org/tech/figures/db.html",
+      "says": "230 OHC I-6 1962-65 (early)"
+     },
+     {
+      "name": "wagoneers.com (John Meister) - SJ engine summary by year",
+      "url": "https://wagoneers.com/tech/SJ-engines-years.html",
+      "says": "Year table: 1965 230 phased out"
+     },
+     {
+      "name": "Wikipedia - Jeep Wagoneer (SJ)",
+      "url": "https://en.wikipedia.org/wiki/Jeep_Wagoneer_(SJ)",
+      "says": "1965-1966: the Tornado engine was replaced by AMC 232 OHV I6"
+     }
+    ],
+    "status": "three_sources_not_nhra",
+    "note": "Early-1965 production only. TTAC Part V says 1964 was the Tornado's final Wagoneer year (disagrees). Which compression rating applied in 1965 not stated."
+   },
+   {
+    "gen": "kaiser",
+    "cid": 232,
+    "hp": 145,
+    "hp_basis": "gross",
+    "name": "3.8L / 232 I6",
+    "rpo": "Hi-Torque 6",
+    "common_name": "Hi-Torque Six",
+    "trims": [
+     "std"
+    ],
+    "nhra": false,
+    "sources": [
+     {
+      "name": "Kaiser Jeep 1965 full-line brochure, Form 6509 R2",
+      "url": "https://oldcarbrochures.org/United%20States/Jeep/1965-Jeep/1965-Jeep-Full-LIne-Brochure-R2/index.html",
+      "says": "HI-TORQUE 6 is standard on Jeep Wagoneers and Gladiators, 145 hp, 232 cu in, 1-bbl"
+     },
+     {
+      "name": "International Full Size Jeep Association - FSJ Drivetrain Database (compiled from Kaiser/AMC/Chrysler factory references)",
+      "url": "https://ifsja.org/tech/figures/db.html",
+      "says": "232 OHV I-6 AMC, 1965 (late)-71 (early)"
+     },
+     {
+      "name": "wagoneers.com (John Meister) - SJ engine summary by year",
+      "url": "https://wagoneers.com/tech/SJ-engines-years.html",
+      "says": "Year table: 1965 opt 232"
+     },
+     {
+      "name": "The Truth About Cars - Rare Rides Icons: The Jeep Wagoneer (Part V)",
+      "url": "https://www.thetruthaboutcars.com/cars/features/rare-rides-icons-the-jeep-wagoneer-the-first-luxury-suv-ever-part-v-45134362",
+      "says": "In 1965 the standard engine in the Wagoneer was AMC's 3.8-liter OHV inline-six"
+     },
+     {
+      "name": "Wikipedia - Jeep Wagoneer (SJ)",
+      "url": "https://en.wikipedia.org/wiki/Jeep_Wagoneer_(SJ)",
+      "says": "Tornado replaced by AMC 232 OHV I6"
+     }
+    ],
+    "status": "three_sources_not_nhra",
+    "note": "Replaced the Tornado during 1965."
+   },
+   {
+    "gen": "kaiser",
+    "cid": 327,
+    "hp": 250,
+    "hp_basis": "gross",
+    "name": "5.4L / 327 V8 2-bbl",
+    "rpo": "Vigilante V-8",
+    "common_name": "Vigilante 327 (AMC/Rambler 327)",
+    "trims": [
+     "optional"
+    ],
+    "nhra": false,
+    "sources": [
+     {
+      "name": "Kaiser Jeep 1965 full-line brochure, Form 6509 R2",
+      "url": "https://oldcarbrochures.org/United%20States/Jeep/1965-Jeep/1965-Jeep-Full-LIne-Brochure-R2/index.html",
+      "says": "VIGILANTE V-8, optional on Wagoneers and Gladiators, 250 horsepower"
+     },
+     {
+      "name": "Robert C. Ackerson, Jeep: The 50 Year History (p.191, quoted on wagoneers.com)",
+      "url": "https://wagoneers.com/tech/Engines/327-history.html",
+      "says": "In April 1965 the Wagoneer became the first Jeep offered with a V-8: AMC 327 Vigilante, 2-bbl, 250 hp @ 4700"
+     },
+     {
+      "name": "International Full Size Jeep Association - FSJ Drivetrain Database (compiled from Kaiser/AMC/Chrysler factory references)",
+      "url": "https://ifsja.org/tech/figures/db.html",
+      "says": "327 V8, 1965-68"
+     },
+     {
+      "name": "wagoneers.com (John Meister) - SJ engine summary by year",
+      "url": "https://wagoneers.com/tech/SJ-engines-years.html",
+      "says": "Year table: 1965 opt 327"
+     },
+     {
+      "name": "Wikipedia - Jeep Wagoneer (SJ)",
+      "url": "https://en.wikipedia.org/wiki/Jeep_Wagoneer_(SJ)",
+      "says": "Late-year 1965 Wagoneers available with 250 hp 327 AMC V8"
+     },
+     {
+      "name": "Jalopnik - Long Before Chrysler's Hot Rod Jeeps, AMC Stuffed V8s In CJs, Wagoneers, And More",
+      "url": "https://jalopnik.com/2210552/chrysler-hot-rod-jeeps-amc-v8-cj-wagoneer-and-more",
+      "says": "Vigilante V8 installed in Wagoneer beginning partway through the 1965 model year"
+     },
+     {
+      "name": "Wikipedia - AMC V8 engine",
+      "url": "https://en.wikipedia.org/wiki/AMC_V8_engine",
+      "says": "AMC 327 sold to Kaiser-Jeep 1965-1967 for Wagoneer"
+     }
+    ],
+    "status": "three_sources_not_nhra",
+    "note": "Mid-year (April 1965) introduction."
+   }
+  ],
+  "1966": [
+   {
+    "gen": "kaiser",
+    "cid": 232,
+    "hp": 145,
+    "hp_basis": "gross",
+    "name": "3.8L / 232 I6",
+    "rpo": "Hi-Torque 6",
+    "common_name": "Hi-Torque Six",
+    "trims": [
+     "std"
+    ],
+    "nhra": false,
+    "sources": [
+     {
+      "name": "Kaiser Jeep 1966 full-line brochure",
+      "url": "https://oldcarbrochures.org/United%20States/Jeep/1966_Jeep/1966-Jeep-Full-Line-Brochure/index.html",
+      "says": "ENGINE: Hi-Torque 6, 232 cu in, 145 h.p. @ 4300"
+     },
+     {
+      "name": "International Full Size Jeep Association - FSJ Drivetrain Database (compiled from Kaiser/AMC/Chrysler factory references)",
+      "url": "https://ifsja.org/tech/figures/db.html",
+      "says": "232 OHV I-6 AMC, 1965 (late)-71 (early)"
+     },
+     {
+      "name": "wagoneers.com (John Meister) - SJ engine summary by year",
+      "url": "https://wagoneers.com/tech/SJ-engines-years.html",
+      "says": "Year table: 1966 std 232"
+     },
+     {
+      "name": "Wikipedia - Jeep Wagoneer (SJ)",
+      "url": "https://en.wikipedia.org/wiki/Jeep_Wagoneer_(SJ)",
+      "says": "Tornado replaced by AMC 232 OHV I6"
+     }
+    ],
+    "status": "three_sources_not_nhra",
+    "note": ""
+   },
+   {
+    "gen": "kaiser",
+    "cid": 327,
+    "hp": 250,
+    "hp_basis": "gross",
+    "name": "5.4L / 327 V8 2-bbl",
+    "rpo": "Vigilante V-8",
+    "common_name": "Vigilante 327 (AMC/Rambler 327)",
+    "trims": [
+     "optional"
+    ],
+    "nhra": false,
+    "sources": [
+     {
+      "name": "Kaiser Jeep 1966 full-line brochure",
+      "url": "https://oldcarbrochures.org/United%20States/Jeep/1966_Jeep/1966-Jeep-Full-Line-Brochure/index.html",
+      "says": "Optional Vigilante, 327 cu in, 250 h.p. @ 4700, 2-bbl"
+     },
+     {
+      "name": "International Full Size Jeep Association - FSJ Drivetrain Database (compiled from Kaiser/AMC/Chrysler factory references)",
+      "url": "https://ifsja.org/tech/figures/db.html",
+      "says": "327 V8, 1965-68"
+     },
+     {
+      "name": "wagoneers.com (John Meister) - SJ engine summary by year",
+      "url": "https://wagoneers.com/tech/SJ-engines-years.html",
+      "says": "Year table: 1966 opt 327"
+     },
+     {
+      "name": "Wikipedia - Jeep Wagoneer (SJ)",
+      "url": "https://en.wikipedia.org/wiki/Jeep_Wagoneer_(SJ)",
+      "says": "250 hp 327 AMC V8"
+     },
+     {
+      "name": "Wikipedia - AMC V8 engine",
+      "url": "https://en.wikipedia.org/wiki/AMC_V8_engine",
+      "says": "AMC 327 sold to Kaiser-Jeep 1965-1967"
+     }
+    ],
+    "status": "three_sources_not_nhra",
+    "note": ""
+   },
+   {
+    "gen": "kaiser",
+    "cid": 327,
+    "hp": 270,
+    "hp_basis": "gross",
+    "name": "5.4L / 327 V8 4-bbl",
+    "rpo": "Vigilante V-8 4-bbl",
+    "common_name": "Super Wagoneer 327",
+    "trims": [
+     "Super Wagoneer (std)"
+    ],
+    "nhra": false,
+    "sources": [
+     {
+      "name": "Jeep brand official history, 1960s",
+      "url": "https://www.jeep.com/history/1960s.html",
+      "says": "Super Wagoneer: 327-cubic-inch \"Vigilante\" four-barrel V8 engine (270 hp) standard"
+     },
+     {
+      "name": "Curbside Classic - 1966-1971 Jeep Super Wagoneer and Wagoneer Custom Special",
+      "url": "https://www.curbsideclassic.com/automotive-histories/1966-1971-jeep-super-wagoneer-and-wagoneer-custom-special-these-luxury-suvs-were-way-ahead-of-their-time-so-why-didnt-they-sell/",
+      "says": "The Super Wagoneer was offered only with a 270 hp (gross) four-barrel Vigilante V-8 (AMC 327)"
+     },
+     {
+      "name": "Jalopnik - Long Before Chrysler's Hot Rod Jeeps, AMC Stuffed V8s In CJs, Wagoneers, And More",
+      "url": "https://jalopnik.com/2210552/chrysler-hot-rod-jeeps-amc-v8-cj-wagoneer-and-more",
+      "says": "A four-barrel version, 270 hp, could be ordered for the 1966 Super Wagoneer"
+     },
+     {
+      "name": "Wikipedia - AMC V8 engine",
+      "url": "https://en.wikipedia.org/wiki/AMC_V8_engine",
+      "says": "four-barrel high-compression version available in the Super Wagoneer from 1966 until 1968"
+     },
+     {
+      "name": "The Truth About Cars - Rare Rides Icons: The Jeep Wagoneer (Part V)",
+      "url": "https://www.thetruthaboutcars.com/cars/features/rare-rides-icons-the-jeep-wagoneer-the-first-luxury-suv-ever-part-v-45134362",
+      "says": "Super Wagoneer fitted as standard with a 270-horsepower 327 V8 with a four-barrel carb"
+     },
+     {
+      "name": "Wikipedia - Jeep Wagoneer (SJ)",
+      "url": "https://en.wikipedia.org/wiki/Jeep_Wagoneer_(SJ)",
+      "says": "Super Wagoneer (1966) 270 hp version of the AMC V8"
+     }
+    ],
+    "status": "three_sources_not_nhra",
+    "note": ""
+   }
+  ],
+  "1967": [
+   {
+    "gen": "kaiser",
+    "cid": 232,
+    "hp": 145,
+    "hp_basis": "gross",
+    "name": "3.8L / 232 I6",
+    "rpo": "Hi-Torque 6",
+    "common_name": "Hi-Torque Six",
+    "trims": [
+     "std"
+    ],
+    "nhra": false,
+    "sources": [
+     {
+      "name": "International Full Size Jeep Association - FSJ Drivetrain Database (compiled from Kaiser/AMC/Chrysler factory references)",
+      "url": "https://ifsja.org/tech/figures/db.html",
+      "says": "232 OHV I-6 AMC, 1965 (late)-71 (early)"
+     },
+     {
+      "name": "wagoneers.com (John Meister) - SJ engine summary by year",
+      "url": "https://wagoneers.com/tech/SJ-engines-years.html",
+      "says": "Year table: 1967 std 232"
+     },
+     {
+      "name": "Wikipedia - Jeep Wagoneer (SJ)",
+      "url": "https://en.wikipedia.org/wiki/Jeep_Wagoneer_(SJ)",
+      "says": "Tornado replaced by AMC 232 OHV I6"
+     }
+    ],
+    "status": "three_sources_not_nhra",
+    "note": "1967 brochure not located (archive \"1967\" full-line is 1968 literature)."
+   },
+   {
+    "gen": "kaiser",
+    "cid": 327,
+    "hp": 250,
+    "hp_basis": "gross",
+    "name": "5.4L / 327 V8 2-bbl",
+    "rpo": "Vigilante V-8",
+    "common_name": "Vigilante 327 (AMC/Rambler 327)",
+    "trims": [
+     "optional"
+    ],
+    "nhra": false,
+    "sources": [
+     {
+      "name": "International Full Size Jeep Association - FSJ Drivetrain Database (compiled from Kaiser/AMC/Chrysler factory references)",
+      "url": "https://ifsja.org/tech/figures/db.html",
+      "says": "327 V8, 1965-68"
+     },
+     {
+      "name": "wagoneers.com (John Meister) - SJ engine summary by year",
+      "url": "https://wagoneers.com/tech/SJ-engines-years.html",
+      "says": "Year table: 1967 opt 327"
+     },
+     {
+      "name": "Wikipedia - AMC V8 engine",
+      "url": "https://en.wikipedia.org/wiki/AMC_V8_engine",
+      "says": "AMC 327 sold to Kaiser-Jeep 1965-1967"
+     }
+    ],
+    "status": "three_sources_not_nhra",
+    "note": ""
+   },
+   {
+    "gen": "kaiser",
+    "cid": 327,
+    "hp": 270,
+    "hp_basis": "gross",
+    "name": "5.4L / 327 V8 4-bbl",
+    "rpo": "Vigilante V-8 4-bbl",
+    "common_name": "Super Wagoneer 327",
+    "trims": [
+     "Super Wagoneer (std)"
+    ],
+    "nhra": false,
+    "sources": [
+     {
+      "name": "Jeep brand official history, 1960s",
+      "url": "https://www.jeep.com/history/1960s.html",
+      "says": "Super Wagoneer: 327-cubic-inch \"Vigilante\" four-barrel V8 engine (270 hp) standard"
+     },
+     {
+      "name": "Curbside Classic - 1966-1971 Jeep Super Wagoneer and Wagoneer Custom Special",
+      "url": "https://www.curbsideclassic.com/automotive-histories/1966-1971-jeep-super-wagoneer-and-wagoneer-custom-special-these-luxury-suvs-were-way-ahead-of-their-time-so-why-didnt-they-sell/",
+      "says": "The Super Wagoneer was offered only with a 270 hp (gross) four-barrel Vigilante V-8 (AMC 327)"
+     },
+     {
+      "name": "Wikipedia - AMC V8 engine",
+      "url": "https://en.wikipedia.org/wiki/AMC_V8_engine",
+      "says": "four-barrel high-compression version available in the Super Wagoneer from 1966 until 1968"
+     }
+    ],
+    "status": "three_sources_not_nhra",
+    "note": ""
+   }
+  ],
+  "1968": [
+   {
+    "gen": "kaiser",
+    "cid": 232,
+    "hp": 145,
+    "hp_basis": "gross",
+    "name": "3.8L / 232 I6",
+    "rpo": "Hi-Torque 6",
+    "common_name": "Hi-Torque Six",
+    "trims": [
+     "std"
+    ],
+    "nhra": false,
+    "sources": [
+     {
+      "name": "Kaiser Jeep full-line brochure, Form 67-10R (archive label 1967; introduces \"New Dauntless V-8\", i.e. 1968-model literature)",
+      "url": "https://oldcarbrochures.org/United%20States/Jeep/1967-Jeep/1967-Jeep-Full-Line-Brochure/index.html",
+      "says": "Standard 145-hp Hi-Torque 6 engine (Wagoneer)"
+     },
+     {
+      "name": "International Full Size Jeep Association - FSJ Drivetrain Database (compiled from Kaiser/AMC/Chrysler factory references)",
+      "url": "https://ifsja.org/tech/figures/db.html",
+      "says": "232 OHV I-6 AMC, 1965 (late)-71 (early)"
+     },
+     {
+      "name": "wagoneers.com (John Meister) - SJ engine summary by year",
+      "url": "https://wagoneers.com/tech/SJ-engines-years.html",
+      "says": "Year table: 1968 std 232"
+     }
+    ],
+    "status": "three_sources_not_nhra",
+    "note": ""
+   },
+   {
+    "gen": "kaiser",
+    "cid": 327,
+    "hp": 250,
+    "hp_basis": "gross",
+    "name": "5.4L / 327 V8 2-bbl",
+    "rpo": "Vigilante V-8",
+    "common_name": "Vigilante 327 (AMC/Rambler 327)",
+    "trims": [
+     "optional"
+    ],
+    "nhra": false,
+    "sources": [
+     {
+      "name": "International Full Size Jeep Association - FSJ Drivetrain Database (compiled from Kaiser/AMC/Chrysler factory references)",
+      "url": "https://ifsja.org/tech/figures/db.html",
+      "says": "327 V8, 1965-68"
+     },
+     {
+      "name": "wagoneers.com (John Meister) - SJ engine summary by year",
+      "url": "https://wagoneers.com/tech/SJ-engines-years.html",
+      "says": "Year table: 1968 opt 327"
+     },
+     {
+      "name": "Curbside Classic - 1966-1971 Jeep Super Wagoneer and Wagoneer Custom Special",
+      "url": "https://www.curbsideclassic.com/automotive-histories/1966-1971-jeep-super-wagoneer-and-wagoneer-custom-special-these-luxury-suvs-were-way-ahead-of-their-time-so-why-didnt-they-sell/",
+      "says": "In mid-1968 the Vigilante 327 was phased out in favor of the Dauntless 350"
+     }
+    ],
+    "status": "three_sources_not_nhra",
+    "note": "Early 1968 only; replaced mid-year by the Buick 350. Wikipedia (AMC V8) says Kaiser bought the 327 only through 1967 - disagrees."
+   },
+   {
+    "gen": "kaiser",
+    "cid": 327,
+    "hp": 270,
+    "hp_basis": "gross",
+    "name": "5.4L / 327 V8 4-bbl",
+    "rpo": "Vigilante V-8 4-bbl",
+    "common_name": "Super Wagoneer 327",
+    "trims": [
+     "Super Wagoneer (std)"
+    ],
+    "nhra": false,
+    "sources": [
+     {
+      "name": "Jeep brand official history, 1960s",
+      "url": "https://www.jeep.com/history/1960s.html",
+      "says": "Super Wagoneer: 327-cubic-inch \"Vigilante\" four-barrel V8 engine (270 hp) standard"
+     },
+     {
+      "name": "Curbside Classic - 1966-1971 Jeep Super Wagoneer and Wagoneer Custom Special",
+      "url": "https://www.curbsideclassic.com/automotive-histories/1966-1971-jeep-super-wagoneer-and-wagoneer-custom-special-these-luxury-suvs-were-way-ahead-of-their-time-so-why-didnt-they-sell/",
+      "says": "The Super Wagoneer was offered only with a 270 hp (gross) four-barrel Vigilante V-8 (AMC 327)"
+     },
+     {
+      "name": "Wikipedia - AMC V8 engine",
+      "url": "https://en.wikipedia.org/wiki/AMC_V8_engine",
+      "says": "four-barrel high-compression version available in the Super Wagoneer from 1966 until 1968"
+     }
+    ],
+    "status": "three_sources_not_nhra",
+    "note": "Super Wagoneer ran 1966-1969 (Curbside); the 327 left mid-1968, so the 1968-69 Super engine is unclear and 1969 is not listed."
+   },
+   {
+    "gen": "kaiser",
+    "cid": 350,
+    "hp": 230,
+    "hp_basis": "gross",
+    "name": "5.7L / 350 V8 2-bbl",
+    "rpo": "Dauntless V-8 (Buick)",
+    "common_name": "Buick 350 Dauntless",
+    "trims": [
+     "optional"
+    ],
+    "nhra": false,
+    "sources": [
+     {
+      "name": "Kaiser Jeep full-line brochure, Form 67-10R (archive label 1967; introduces \"New Dauntless V-8\", i.e. 1968-model literature)",
+      "url": "https://oldcarbrochures.org/United%20States/Jeep/1967-Jeep/1967-Jeep-Full-Line-Brochure/index.html",
+      "says": "New Dauntless V-8 engine option with 230 horsepower; 350 cubic inch"
+     },
+     {
+      "name": "Curbside Classic - 1966-1971 Jeep Super Wagoneer and Wagoneer Custom Special",
+      "url": "https://www.curbsideclassic.com/automotive-histories/1966-1971-jeep-super-wagoneer-and-wagoneer-custom-special-these-luxury-suvs-were-way-ahead-of-their-time-so-why-didnt-they-sell/",
+      "says": "In mid-1968 ... new Dauntless 350, a small-block Buick engine with 230 hp"
+     },
+     {
+      "name": "Wikipedia - Jeep Wagoneer (SJ)",
+      "url": "https://en.wikipedia.org/wiki/Jeep_Wagoneer_(SJ)",
+      "says": "1968-1971 Wagoneers powered by Buick 350 Dauntless V8, 230 hp"
+     },
+     {
+      "name": "Jalopnik - Long Before Chrysler's Hot Rod Jeeps, AMC Stuffed V8s In CJs, Wagoneers, And More",
+      "url": "https://jalopnik.com/2210552/chrysler-hot-rod-jeeps-amc-v8-cj-wagoneer-and-more",
+      "says": "Dauntless V8, 350 cu in, in 1968-71 Wagoneers, 230 hp and 350 lb-ft"
+     }
+    ],
+    "status": "three_sources_not_nhra",
+    "note": "Mid-1968 introduction. IFSJA and wagoneers.com start it in 1969 (disagree). TTAC Part VI claims 1966, based on a misdated archive brochure (the \"1965 R3\" and \"1966\" Wagoneer brochures on oldcarbrochures.org already advertise the new Dauntless V-8, so they are 1968+ literature)."
+   }
+  ],
+  "1969": [
+   {
+    "gen": "kaiser",
+    "cid": 232,
+    "hp": 145,
+    "hp_basis": "gross",
+    "name": "3.8L / 232 I6",
+    "rpo": "Hi-Torque 6",
+    "common_name": "Hi-Torque Six",
+    "trims": [
+     "std"
+    ],
+    "nhra": false,
+    "sources": [
+     {
+      "name": "Kaiser Jeep 1969 Recreational Fleet brochure, Form 69-03",
+      "url": "https://oldcarbrochures.org/United%20States/Jeep/1969_Jeep/1969-Jeep-Recreational-Fleet-Brochure/index.html",
+      "says": "Standard 145 horsepower Hi-Torque 6 (Wagoneer)"
+     },
+     {
+      "name": "International Full Size Jeep Association - FSJ Drivetrain Database (compiled from Kaiser/AMC/Chrysler factory references)",
+      "url": "https://ifsja.org/tech/figures/db.html",
+      "says": "232 OHV I-6 AMC, 1965 (late)-71 (early)"
+     },
+     {
+      "name": "wagoneers.com (John Meister) - SJ engine summary by year",
+      "url": "https://wagoneers.com/tech/SJ-engines-years.html",
+      "says": "Year table: 1969 std 232"
+     }
+    ],
+    "status": "three_sources_not_nhra",
+    "note": ""
+   },
+   {
+    "gen": "kaiser",
+    "cid": 350,
+    "hp": 230,
+    "hp_basis": "gross",
+    "name": "5.7L / 350 V8 2-bbl",
+    "rpo": "Dauntless V-8 (Buick)",
+    "common_name": "Buick 350 Dauntless",
+    "trims": [
+     "optional"
+    ],
+    "nhra": false,
+    "sources": [
+     {
+      "name": "Kaiser Jeep 1969 Recreational Fleet brochure, Form 69-03",
+      "url": "https://oldcarbrochures.org/United%20States/Jeep/1969_Jeep/1969-Jeep-Recreational-Fleet-Brochure/index.html",
+      "says": "optional high-output Dauntless V-8 with 230 horses"
+     },
+     {
+      "name": "International Full Size Jeep Association - FSJ Drivetrain Database (compiled from Kaiser/AMC/Chrysler factory references)",
+      "url": "https://ifsja.org/tech/figures/db.html",
+      "says": "350 V8 Buick 1969-71"
+     },
+     {
+      "name": "wagoneers.com (John Meister) - SJ engine summary by year",
+      "url": "https://wagoneers.com/tech/SJ-engines-years.html",
+      "says": "Year table: 1969 opt Buick 350"
+     },
+     {
+      "name": "Wikipedia - Jeep Wagoneer (SJ)",
+      "url": "https://en.wikipedia.org/wiki/Jeep_Wagoneer_(SJ)",
+      "says": "1968-1971 Wagoneers powered by Buick 350 Dauntless V8, 230 hp"
+     },
+     {
+      "name": "Jalopnik - Long Before Chrysler's Hot Rod Jeeps, AMC Stuffed V8s In CJs, Wagoneers, And More",
+      "url": "https://jalopnik.com/2210552/chrysler-hot-rod-jeeps-amc-v8-cj-wagoneer-and-more",
+      "says": "Dauntless V8, 350 cu in, in 1968-71 Wagoneers, 230 hp and 350 lb-ft"
+     }
+    ],
+    "status": "three_sources_not_nhra",
+    "note": ""
+   }
+  ],
+  "1970": [
+   {
+    "gen": "kaiser",
+    "cid": 232,
+    "hp": 145,
+    "hp_basis": "gross",
+    "name": "3.8L / 232 I6",
+    "rpo": "Hi-Torque 6",
+    "common_name": "Hi-Torque Six",
+    "trims": [
+     "std"
+    ],
+    "nhra": false,
+    "sources": [
+     {
+      "name": "Kaiser Jeep 1970 Wagoneer brochure (also archive.org 70-01)",
+      "url": "https://oldcarbrochures.org/United%20States/Jeep/1970_Jeep/1970-Jeep-Wagoneer-Brochure/index.html",
+      "says": "standard Hi-Torque 6, 232 cu in, 145 hp at 4300"
+     },
+     {
+      "name": "International Full Size Jeep Association - FSJ Drivetrain Database (compiled from Kaiser/AMC/Chrysler factory references)",
+      "url": "https://ifsja.org/tech/figures/db.html",
+      "says": "232 OHV I-6 AMC, 1965 (late)-71 (early)"
+     },
+     {
+      "name": "wagoneers.com (John Meister) - SJ engine summary by year",
+      "url": "https://wagoneers.com/tech/SJ-engines-years.html",
+      "says": "Year table: 1970 std 232"
+     }
+    ],
+    "status": "three_sources_not_nhra",
+    "note": ""
+   },
+   {
+    "gen": "kaiser",
+    "cid": 350,
+    "hp": 230,
+    "hp_basis": "gross",
+    "name": "5.7L / 350 V8 2-bbl",
+    "rpo": "Dauntless V-8 (Buick)",
+    "common_name": "Buick 350 Dauntless",
+    "trims": [
+     "optional"
+    ],
+    "nhra": false,
+    "sources": [
+     {
+      "name": "Kaiser Jeep 1970 Wagoneer brochure (also archive.org 70-01)",
+      "url": "https://oldcarbrochures.org/United%20States/Jeep/1970_Jeep/1970-Jeep-Wagoneer-Brochure/index.html",
+      "says": "optional Dauntless V-8, 350 cu in, 230 hp at 4400, 350 lb-ft"
+     },
+     {
+      "name": "International Full Size Jeep Association - FSJ Drivetrain Database (compiled from Kaiser/AMC/Chrysler factory references)",
+      "url": "https://ifsja.org/tech/figures/db.html",
+      "says": "350 V8 Buick 1969-71"
+     },
+     {
+      "name": "wagoneers.com (John Meister) - SJ engine summary by year",
+      "url": "https://wagoneers.com/tech/SJ-engines-years.html",
+      "says": "Year table: 1970 opt Buick 350"
+     },
+     {
+      "name": "Wikipedia - Jeep Wagoneer (SJ)",
+      "url": "https://en.wikipedia.org/wiki/Jeep_Wagoneer_(SJ)",
+      "says": "1968-1971 Wagoneers powered by Buick 350 Dauntless V8, 230 hp"
+     },
+     {
+      "name": "Jalopnik - Long Before Chrysler's Hot Rod Jeeps, AMC Stuffed V8s In CJs, Wagoneers, And More",
+      "url": "https://jalopnik.com/2210552/chrysler-hot-rod-jeeps-amc-v8-cj-wagoneer-and-more",
+      "says": "Dauntless V8, 350 cu in, in 1968-71 Wagoneers, 230 hp and 350 lb-ft"
+     }
+    ],
+    "status": "three_sources_not_nhra",
+    "note": ""
+   }
+  ],
+  "1971": [
+   {
+    "gen": "amc",
+    "cid": 232,
+    "hp": 145,
+    "hp_basis": "gross",
+    "name": "3.8L / 232 I6",
+    "rpo": "Hi-Torque 6",
+    "common_name": "Hi-Torque Six",
+    "trims": [
+     "std"
+    ],
+    "nhra": false,
+    "sources": [
+     {
+      "name": "International Full Size Jeep Association - FSJ Drivetrain Database (compiled from Kaiser/AMC/Chrysler factory references)",
+      "url": "https://ifsja.org/tech/figures/db.html",
+      "says": "232 OHV I-6 AMC, 1965 (late)-71 (early)"
+     },
+     {
+      "name": "wagoneers.com (John Meister) - SJ engine summary by year",
+      "url": "https://wagoneers.com/tech/SJ-engines-years.html",
+      "says": "Year table: 1971 232 phased out"
+     }
+    ],
+    "status": "two_sources_not_nhra",
+    "note": "Early 1971 only (IFSJA); replaced by the AMC 258 during 1971. 1971 rating assumed unchanged (gross)."
+   },
+   {
+    "gen": "amc",
+    "cid": 350,
+    "hp": 230,
+    "hp_basis": "gross",
+    "name": "5.7L / 350 V8 2-bbl",
+    "rpo": "Dauntless V-8 (Buick)",
+    "common_name": "Buick 350 Dauntless",
+    "trims": [
+     "optional"
+    ],
+    "nhra": false,
+    "sources": [
+     {
+      "name": "Jeep 1971 full-line brochure",
+      "url": "https://oldcarbrochures.org/United%20States/Jeep/1971-Jeep/1971-Jeep-Full-Line-Brochure/index.html",
+      "says": "Wagoneer options like 350 cubic inches of V-8"
+     },
+     {
+      "name": "International Full Size Jeep Association - FSJ Drivetrain Database (compiled from Kaiser/AMC/Chrysler factory references)",
+      "url": "https://ifsja.org/tech/figures/db.html",
+      "says": "350 V8 Buick 1969-71"
+     },
+     {
+      "name": "Wikipedia - Jeep Wagoneer (SJ)",
+      "url": "https://en.wikipedia.org/wiki/Jeep_Wagoneer_(SJ)",
+      "says": "1968-1971 Wagoneers powered by Buick 350 Dauntless V8, 230 hp"
+     },
+     {
+      "name": "Jalopnik - Long Before Chrysler's Hot Rod Jeeps, AMC Stuffed V8s In CJs, Wagoneers, And More",
+      "url": "https://jalopnik.com/2210552/chrysler-hot-rod-jeeps-amc-v8-cj-wagoneer-and-more",
+      "says": "Dauntless V8, 350 cu in, in 1968-71 Wagoneers, 230 hp and 350 lb-ft"
+     }
+    ],
+    "status": "three_sources_not_nhra",
+    "note": "Early 1971; replaced by AMC V8s during the year. wagoneers.com ends it in 1970 (disagrees); TTAC Part VI says it lasted into 1972 (disagrees; 1972 brochure lists only AMC engines)."
+   },
+   {
+    "gen": "amc",
+    "cid": 258,
+    "hp": null,
+    "hp_basis": "gross",
+    "name": "4.2L / 258 I6",
+    "rpo": "",
+    "common_name": "AMC 258",
+    "trims": [
+     "std, late 1971"
+    ],
+    "nhra": false,
+    "sources": [
+     {
+      "name": "International Full Size Jeep Association - FSJ Drivetrain Database (compiled from Kaiser/AMC/Chrysler factory references)",
+      "url": "https://ifsja.org/tech/figures/db.html",
+      "says": "258 OHV I-6 AMC, 1971 (late)-87"
+     },
+     {
+      "name": "wagoneers.com (John Meister) - SJ engine summary by year",
+      "url": "https://wagoneers.com/tech/SJ-engines-years.html",
+      "says": "Year table: 1971 232 phased out, 258, 304, 360"
+     }
+    ],
+    "status": "two_sources_not_nhra",
+    "note": "Late-1971 running change; 1971 Jeep rating not found (AMC car rating 150 gross). Only two non-NHRA sources."
+   },
+   {
+    "gen": "amc",
+    "cid": 304,
+    "hp": null,
+    "hp_basis": "gross",
+    "name": "5.0L / 304 V8 2-bbl",
+    "rpo": "",
+    "common_name": "AMC 304",
+    "trims": [
+     "optional, late 1971"
+    ],
+    "nhra": false,
+    "sources": [
+     {
+      "name": "International Full Size Jeep Association - FSJ Drivetrain Database (compiled from Kaiser/AMC/Chrysler factory references)",
+      "url": "https://ifsja.org/tech/figures/db.html",
+      "says": "304 V8 AMC 1971-72"
+     },
+     {
+      "name": "wagoneers.com (John Meister) - SJ engine summary by year",
+      "url": "https://wagoneers.com/tech/SJ-engines-years.html",
+      "says": "Year table: 1971 ... 304 ... 360; SJ motors list 304 71-72"
+     }
+    ],
+    "status": "two_sources_not_nhra",
+    "note": "Late 1971. Rating not found for the Jeep application. Only two sources."
+   },
+   {
+    "gen": "amc",
+    "cid": 360,
+    "hp": null,
+    "hp_basis": "gross",
+    "name": "5.9L / 360 V8 2-bbl",
+    "rpo": "",
+    "common_name": "AMC 360",
+    "trims": [
+     "optional, late 1971"
+    ],
+    "nhra": false,
+    "sources": [
+     {
+      "name": "International Full Size Jeep Association - FSJ Drivetrain Database (compiled from Kaiser/AMC/Chrysler factory references)",
+      "url": "https://ifsja.org/tech/figures/db.html",
+      "says": "360 V8 AMC 1971-92"
+     },
+     {
+      "name": "wagoneers.com (John Meister) - SJ engine summary by year",
+      "url": "https://wagoneers.com/tech/SJ-engines-years.html",
+      "says": "Year table: 1971 opt 360"
+     },
+     {
+      "name": "Curbside Classic - 1966-1971 Jeep Super Wagoneer and Wagoneer Custom Special",
+      "url": "https://www.curbsideclassic.com/automotive-histories/1966-1971-jeep-super-wagoneer-and-wagoneer-custom-special-these-luxury-suvs-were-way-ahead-of-their-time-so-why-didnt-they-sell/",
+      "says": "1971 Custom Special models (built after AMC acquired Jeep) substituted the AMC 360 V-8 for the Buick Dauntless"
+     },
+     {
+      "name": "Wikipedia - Jeep Wagoneer (SJ)",
+      "url": "https://en.wikipedia.org/wiki/Jeep_Wagoneer_(SJ)",
+      "says": "the 360 AMC V8 replaced the Buick engine (from 1971)"
+     }
+    ],
+    "status": "three_sources_not_nhra",
+    "note": "Late 1971. Wikipedia AMC V8 article says Wagoneer use began 1972 (disagrees). A Chilton figure of 245 gross hp (2-bbl, 1971) is quoted only in a wagoneers.com mailing-list post, so hp left null."
+   }
+  ],
+  "1972": [
+   {
+    "gen": "amc",
+    "cid": 258,
+    "hp": 110,
+    "hp_basis": "net",
+    "name": "4.2L / 258 I6 1-bbl",
+    "rpo": "",
+    "common_name": "AMC 258",
+    "trims": [
+     "std"
+    ],
+    "nhra": false,
+    "sources": [
+     {
+      "name": "AMC Jeep 1972 full-line folder (engine table) + AMC 1972 Jeep Wagoneer brochure (archive.org)",
+      "url": "https://oldcarbrochures.org/United%20States/Jeep/1972-Jeep/1972-Jeep-Full-Line-Folder/index.html",
+      "says": "258-6: 110 net hp @ 3500; Standard on Wagoneer"
+     },
+     {
+      "name": "International Full Size Jeep Association - FSJ Drivetrain Database (compiled from Kaiser/AMC/Chrysler factory references)",
+      "url": "https://ifsja.org/tech/figures/db.html",
+      "says": "258 OHV I-6 1971 (late)-87"
+     },
+     {
+      "name": "wagoneers.com (John Meister) - SJ engine summary by year",
+      "url": "https://wagoneers.com/tech/SJ-engines-years.html",
+      "says": "Year table: 1972 std 258"
+     }
+    ],
+    "status": "three_sources_not_nhra",
+    "note": ""
+   },
+   {
+    "gen": "amc",
+    "cid": 304,
+    "hp": 150,
+    "hp_basis": "net",
+    "name": "5.0L / 304 V8 2-bbl",
+    "rpo": "",
+    "common_name": "AMC 304",
+    "trims": [
+     "optional"
+    ],
+    "nhra": false,
+    "sources": [
+     {
+      "name": "AMC Jeep 1972 full-line folder (engine table) + AMC 1972 Jeep Wagoneer brochure (archive.org)",
+      "url": "https://oldcarbrochures.org/United%20States/Jeep/1972-Jeep/1972-Jeep-Full-Line-Folder/index.html",
+      "says": "304 V-8: 150 net hp @ 4200; Optional all models except 7000 & 8000 GVW truck"
+     },
+     {
+      "name": "International Full Size Jeep Association - FSJ Drivetrain Database (compiled from Kaiser/AMC/Chrysler factory references)",
+      "url": "https://ifsja.org/tech/figures/db.html",
+      "says": "304 V8 1971-72"
+     },
+     {
+      "name": "wagoneers.com (John Meister) - SJ engine summary by year",
+      "url": "https://wagoneers.com/tech/SJ-engines-years.html",
+      "says": "Year table: 1972 opt 304"
+     },
+     {
+      "name": "Wikipedia - AMC V8 engine",
+      "url": "https://en.wikipedia.org/wiki/AMC_V8_engine",
+      "says": "304: 1972-75 models rated at 150 hp net"
+     }
+    ],
+    "status": "three_sources_not_nhra",
+    "note": "Jalopnik gives 210 hp for the 1972 Wagoneer 304 (that is the 1971 gross car rating; disagrees with the 150 net in the factory brochure)."
+   },
+   {
+    "gen": "amc",
+    "cid": 360,
+    "hp": 175,
+    "hp_basis": "net",
+    "name": "5.9L / 360 V8 2-bbl",
+    "rpo": "",
+    "common_name": "AMC 360",
+    "trims": [
+     "optional"
+    ],
+    "nhra": false,
+    "sources": [
+     {
+      "name": "AMC Jeep 1972 full-line folder (engine table) + AMC 1972 Jeep Wagoneer brochure (archive.org)",
+      "url": "https://oldcarbrochures.org/United%20States/Jeep/1972-Jeep/1972-Jeep-Full-Line-Folder/index.html",
+      "says": "360 V-8: 175 net hp @ 4000; Optional on Wagoneer"
+     },
+     {
+      "name": "International Full Size Jeep Association - FSJ Drivetrain Database (compiled from Kaiser/AMC/Chrysler factory references)",
+      "url": "https://ifsja.org/tech/figures/db.html",
+      "says": "360 V8 1971-92"
+     },
+     {
+      "name": "wagoneers.com (John Meister) - SJ engine summary by year",
+      "url": "https://wagoneers.com/tech/SJ-engines-years.html",
+      "says": "Year table: 1972 opt 360"
+     },
+     {
+      "name": "Wikipedia - AMC V8 engine",
+      "url": "https://en.wikipedia.org/wiki/AMC_V8_engine",
+      "says": "360 used in Wagoneer (SJ) from 1972"
+     },
+     {
+      "name": "The Truth About Cars - Rare Rides Icons: The Jeep Wagoneer (Part VI)",
+      "url": "https://www.thetruthaboutcars.com/cars/features/rare-rides-icons-the-jeep-wagoneer-the-first-luxury-suv-ever-part-vi-45134497",
+      "says": "Buick V8 went away in 1972, replaced by the AMC 360"
+     }
+    ],
+    "status": "three_sources_not_nhra",
+    "note": "No 4-bbl 360 listed for 1972 in the factory folder."
+   }
+  ],
+  "1973": [
+   {
+    "gen": "amc",
+    "cid": 258,
+    "hp": 110,
+    "hp_basis": "net",
+    "name": "4.2L / 258 I6 1-bbl",
+    "rpo": "",
+    "common_name": "AMC 258",
+    "trims": [
+     "std"
+    ],
+    "nhra": false,
+    "sources": [
+     {
+      "name": "AMC Jeep 1973 full-line brochure",
+      "url": "https://oldcarbrochures.org/United%20States/Jeep/1973-Jeep/1973-Jeep-Full-Line-Brochure/index.html",
+      "says": "Wagoneer engines: 258 6-cyl 1-bbl Standard, 110 net hp @ 3500"
+     },
+     {
+      "name": "International Full Size Jeep Association - FSJ Drivetrain Database (compiled from Kaiser/AMC/Chrysler factory references)",
+      "url": "https://ifsja.org/tech/figures/db.html",
+      "says": "258 1971-87"
+     },
+     {
+      "name": "wagoneers.com (John Meister) - SJ engine summary by year",
+      "url": "https://wagoneers.com/tech/SJ-engines-years.html",
+      "says": "Year table: 1973 std 258"
+     }
+    ],
+    "status": "three_sources_not_nhra",
+    "note": ""
+   },
+   {
+    "gen": "amc",
+    "cid": 360,
+    "hp": 175,
+    "hp_basis": "net",
+    "name": "5.9L / 360 V8 2-bbl",
+    "rpo": "",
+    "common_name": "AMC 360",
+    "trims": [
+     "optional"
+    ],
+    "nhra": false,
+    "sources": [
+     {
+      "name": "AMC Jeep 1973 full-line brochure",
+      "url": "https://oldcarbrochures.org/United%20States/Jeep/1973-Jeep/1973-Jeep-Full-Line-Brochure/index.html",
+      "says": "360 V8 2 bbl Optional, 175 net hp"
+     },
+     {
+      "name": "wagoneers.com (John Meister) - SJ engine summary by year",
+      "url": "https://wagoneers.com/tech/SJ-engines-years.html",
+      "says": "Year table: 1973 opt 360 2v, opt 360 4v"
+     },
+     {
+      "name": "International Full Size Jeep Association - FSJ Drivetrain Database (compiled from Kaiser/AMC/Chrysler factory references)",
+      "url": "https://ifsja.org/tech/figures/db.html",
+      "says": "360 V8 1971-92 (carb not stated)"
+     },
+     {
+      "name": "Wikipedia - AMC V8 engine",
+      "url": "https://en.wikipedia.org/wiki/AMC_V8_engine",
+      "says": "360 used in Wagoneer (SJ) 1972-1984"
+     }
+    ],
+    "status": "three_sources_not_nhra",
+    "note": ""
+   },
+   {
+    "gen": "amc",
+    "cid": 360,
+    "hp": 195,
+    "hp_basis": "net",
+    "name": "5.9L / 360 V8 4-bbl",
+    "rpo": "",
+    "common_name": "AMC 360",
+    "trims": [
+     "optional"
+    ],
+    "nhra": false,
+    "sources": [
+     {
+      "name": "AMC Jeep 1973 full-line brochure",
+      "url": "https://oldcarbrochures.org/United%20States/Jeep/1973-Jeep/1973-Jeep-Full-Line-Brochure/index.html",
+      "says": "360 V8 4 bbl Optional, 195 net hp"
+     },
+     {
+      "name": "wagoneers.com (John Meister) - SJ engine summary by year",
+      "url": "https://wagoneers.com/tech/SJ-engines-years.html",
+      "says": "Year table: 1973 opt 360 2v, opt 360 4v"
+     },
+     {
+      "name": "International Full Size Jeep Association - FSJ Drivetrain Database (compiled from Kaiser/AMC/Chrysler factory references)",
+      "url": "https://ifsja.org/tech/figures/db.html",
+      "says": "360 V8 1971-92 (carb not stated)"
+     },
+     {
+      "name": "Wikipedia - AMC V8 engine",
+      "url": "https://en.wikipedia.org/wiki/AMC_V8_engine",
+      "says": "360 used in Wagoneer (SJ) 1972-1984"
+     }
+    ],
+    "status": "three_sources_not_nhra",
+    "note": ""
+   }
+  ],
+  "1974": [
+   {
+    "gen": "amc",
+    "cid": 360,
+    "hp": null,
+    "hp_basis": "net",
+    "name": "5.9L / 360 V8 2-bbl",
+    "rpo": "",
+    "common_name": "AMC 360",
+    "trims": [
+     "std"
+    ],
+    "nhra": false,
+    "sources": [
+     {
+      "name": "wagoneers.com (John Meister) - SJ engine summary by year",
+      "url": "https://wagoneers.com/tech/SJ-engines-years.html",
+      "says": "Year table: 1974 std 360 2v"
+     },
+     {
+      "name": "International Full Size Jeep Association - FSJ Drivetrain Database (compiled from Kaiser/AMC/Chrysler factory references)",
+      "url": "https://ifsja.org/tech/figures/db.html",
+      "says": "360 V8 1971-92"
+     },
+     {
+      "name": "Wikipedia - AMC V8 engine",
+      "url": "https://en.wikipedia.org/wiki/AMC_V8_engine",
+      "says": "360 used in Wagoneer (SJ) 1972-1984"
+     }
+    ],
+    "status": "three_sources_not_nhra",
+    "note": "Net rating not found in two independent sources; hp left null."
+   },
+   {
+    "gen": "amc",
+    "cid": 360,
+    "hp": null,
+    "hp_basis": "net",
+    "name": "5.9L / 360 V8 4-bbl",
+    "rpo": "",
+    "common_name": "AMC 360 4-bbl",
+    "trims": [
+     "optional"
+    ],
+    "nhra": false,
+    "sources": [
+     {
+      "name": "wagoneers.com (John Meister) - SJ engine summary by year",
+      "url": "https://wagoneers.com/tech/SJ-engines-years.html",
+      "says": "Year table: 1974 opt 360 4v"
+     },
+     {
+      "name": "International Full Size Jeep Association - FSJ Drivetrain Database (compiled from Kaiser/AMC/Chrysler factory references)",
+      "url": "https://ifsja.org/tech/figures/db.html",
+      "says": "360 V8 1971-92 (carb not stated)"
+     }
+    ],
+    "status": "two_sources_not_nhra",
+    "note": " 1974-75 factory literature not found online; only wagoneers.com names the 4-bbl."
+   },
+   {
+    "gen": "amc",
+    "cid": 401,
+    "hp": 215,
+    "hp_basis": "net",
+    "name": "6.6L / 401 V8 4-bbl",
+    "rpo": "",
+    "common_name": "AMC 401",
+    "trims": [
+     "optional"
+    ],
+    "nhra": false,
+    "sources": [
+     {
+      "name": "wagoneers.com (John Meister) - SJ engine summary by year",
+      "url": "https://wagoneers.com/tech/SJ-engines-years.html",
+      "says": "Year table: 1974 opt 401 4v"
+     },
+     {
+      "name": "International Full Size Jeep Association - FSJ Drivetrain Database (compiled from Kaiser/AMC/Chrysler factory references)",
+      "url": "https://ifsja.org/tech/figures/db.html",
+      "says": "401 V8 AMC 1974-78"
+     },
+     {
+      "name": "JeepTech (offroaders.com/jeepfan.com) - AMC 401 V8",
+      "url": "https://jeepfan.com/tech/jeeptech/gnu-engine-factory401v8.htm",
+      "says": "introduced in 1974 as an optional engine for J-series pickups and Wagoneers; 215@4400 net"
+     },
+     {
+      "name": "Wikipedia - AMC V8 engine",
+      "url": "https://en.wikipedia.org/wiki/AMC_V8_engine",
+      "says": "full-size Jeeps (Wagoneer, Cherokee, J-10, J-20) could order a 401 until 1978"
+     }
+    ],
+    "status": "three_sources_not_nhra",
+    "note": "215 hp net per JeepTech (1974 introduction); later-year ratings not found."
+   },
+   {
+    "gen": "amc",
+    "cid": 258,
+    "hp": null,
+    "hp_basis": "net",
+    "name": "4.2L / 258 I6",
+    "rpo": "",
+    "common_name": "AMC 258",
+    "trims": [
+     "?"
+    ],
+    "nhra": false,
+    "sources": [
+     {
+      "name": "wagoneers.com (John Meister) - SJ engine summary by year",
+      "url": "https://wagoneers.com/tech/SJ-engines-years.html",
+      "says": "Year table: 1974 lists only 360 2v / 360 4v / 401 (no six)"
+     }
+    ],
+    "status": "disputed",
+    "note": "An Australian spec page (uniquecarsandparts.com.au, now 404; seen only in search text) says the 258 was also available in 1974. wagoneers.com shows no six 1974-78, the 1976 factory chart shows 258 N.A. for Wagoneer, and Wikipedia says the six was dropped in the 1970s. Likely NOT offered; do not publish without 1974 factory literature."
+   }
+  ],
+  "1975": [
+   {
+    "gen": "amc",
+    "cid": 360,
+    "hp": null,
+    "hp_basis": "net",
+    "name": "5.9L / 360 V8 2-bbl",
+    "rpo": "",
+    "common_name": "AMC 360",
+    "trims": [
+     "std"
+    ],
+    "nhra": false,
+    "sources": [
+     {
+      "name": "wagoneers.com (John Meister) - SJ engine summary by year",
+      "url": "https://wagoneers.com/tech/SJ-engines-years.html",
+      "says": "Year table: 1975 std 360 2v"
+     },
+     {
+      "name": "International Full Size Jeep Association - FSJ Drivetrain Database (compiled from Kaiser/AMC/Chrysler factory references)",
+      "url": "https://ifsja.org/tech/figures/db.html",
+      "says": "360 V8 1971-92"
+     },
+     {
+      "name": "Wikipedia - AMC V8 engine",
+      "url": "https://en.wikipedia.org/wiki/AMC_V8_engine",
+      "says": "360 used in Wagoneer (SJ) 1972-1984"
+     }
+    ],
+    "status": "three_sources_not_nhra",
+    "note": "Net rating varies by year and source (wagoneers.com quotes 175 hp for 1975); not triple-sourced, so hp left null."
+   },
+   {
+    "gen": "amc",
+    "cid": 360,
+    "hp": null,
+    "hp_basis": "net",
+    "name": "5.9L / 360 V8 4-bbl",
+    "rpo": "",
+    "common_name": "AMC 360 4-bbl",
+    "trims": [
+     "optional"
+    ],
+    "nhra": false,
+    "sources": [
+     {
+      "name": "wagoneers.com (John Meister) - SJ engine summary by year",
+      "url": "https://wagoneers.com/tech/SJ-engines-years.html",
+      "says": "Year table: 1975 opt 360 4v"
+     },
+     {
+      "name": "International Full Size Jeep Association - FSJ Drivetrain Database (compiled from Kaiser/AMC/Chrysler factory references)",
+      "url": "https://ifsja.org/tech/figures/db.html",
+      "says": "360 V8 1971-92 (carb not stated)"
+     }
+    ],
+    "status": "two_sources_not_nhra",
+    "note": " 1974-75 factory literature not found online; only wagoneers.com names the 4-bbl."
+   },
+   {
+    "gen": "amc",
+    "cid": 401,
+    "hp": null,
+    "hp_basis": "net",
+    "name": "6.6L / 401 V8 4-bbl",
+    "rpo": "",
+    "common_name": "AMC 401",
+    "trims": [
+     "optional"
+    ],
+    "nhra": false,
+    "sources": [
+     {
+      "name": "wagoneers.com (John Meister) - SJ engine summary by year",
+      "url": "https://wagoneers.com/tech/SJ-engines-years.html",
+      "says": "Year table: 1975 opt 401 4v"
+     },
+     {
+      "name": "International Full Size Jeep Association - FSJ Drivetrain Database (compiled from Kaiser/AMC/Chrysler factory references)",
+      "url": "https://ifsja.org/tech/figures/db.html",
+      "says": "401 V8 AMC 1974-78"
+     },
+     {
+      "name": "Wikipedia - AMC V8 engine",
+      "url": "https://en.wikipedia.org/wiki/AMC_V8_engine",
+      "says": "full-size Jeeps (Wagoneer, Cherokee, J-10, J-20) could order a 401 until 1978"
+     }
+    ],
+    "status": "three_sources_not_nhra",
+    "note": "Rating not triple-sourced; hp left null."
+   }
+  ],
+  "1976": [
+   {
+    "gen": "amc",
+    "cid": 360,
+    "hp": null,
+    "hp_basis": "net",
+    "name": "5.9L / 360 V8 2-bbl",
+    "rpo": "",
+    "common_name": "AMC 360",
+    "trims": [
+     "std"
+    ],
+    "nhra": false,
+    "sources": [
+     {
+      "name": "AMC Jeep 1976 full-line brochure (p.29 Engine Availability chart)",
+      "url": "https://oldcarbrochures.org/United%20States/Jeep/1976-Jeep/1976-Jeep-Full-Line-Brochure/index.html",
+      "says": "Engine Availability, Wagoneer: 360-2bbl V8 Std."
+     },
+     {
+      "name": "wagoneers.com (John Meister) - SJ engine summary by year",
+      "url": "https://wagoneers.com/tech/SJ-engines-years.html",
+      "says": "Year table: 1976 std 360 2v"
+     },
+     {
+      "name": "International Full Size Jeep Association - FSJ Drivetrain Database (compiled from Kaiser/AMC/Chrysler factory references)",
+      "url": "https://ifsja.org/tech/figures/db.html",
+      "says": "360 V8 1971-92"
+     },
+     {
+      "name": "Wikipedia - AMC V8 engine",
+      "url": "https://en.wikipedia.org/wiki/AMC_V8_engine",
+      "says": "360 used in Wagoneer (SJ) 1972-1984"
+     }
+    ],
+    "status": "three_sources_not_nhra",
+    "note": "Net rating not found in two independent sources; hp left null."
+   },
+   {
+    "gen": "amc",
+    "cid": 360,
+    "hp": null,
+    "hp_basis": "net",
+    "name": "5.9L / 360 V8 4-bbl",
+    "rpo": "",
+    "common_name": "AMC 360 4-bbl",
+    "trims": [
+     "optional"
+    ],
+    "nhra": false,
+    "sources": [
+     {
+      "name": "AMC Jeep 1976 full-line brochure (p.29 Engine Availability chart)",
+      "url": "https://oldcarbrochures.org/United%20States/Jeep/1976-Jeep/1976-Jeep-Full-Line-Brochure/index.html",
+      "says": "Engine Availability, Wagoneer: 360-4bbl V8 Opt. (Std. in Calif.)"
+     },
+     {
+      "name": "wagoneers.com (John Meister) - SJ engine summary by year",
+      "url": "https://wagoneers.com/tech/SJ-engines-years.html",
+      "says": "Year table: 1976 opt 360 4v"
+     },
+     {
+      "name": "International Full Size Jeep Association - FSJ Drivetrain Database (compiled from Kaiser/AMC/Chrysler factory references)",
+      "url": "https://ifsja.org/tech/figures/db.html",
+      "says": "360 V8 1971-92 (carb not stated)"
+     }
+    ],
+    "status": "three_sources_not_nhra",
+    "note": "Standard in California in 1976 (360-2bbl N.A. there)."
+   },
+   {
+    "gen": "amc",
+    "cid": 401,
+    "hp": null,
+    "hp_basis": "net",
+    "name": "6.6L / 401 V8 4-bbl",
+    "rpo": "",
+    "common_name": "AMC 401",
+    "trims": [
+     "optional"
+    ],
+    "nhra": false,
+    "sources": [
+     {
+      "name": "AMC Jeep 1976 full-line brochure (p.29 Engine Availability chart)",
+      "url": "https://oldcarbrochures.org/United%20States/Jeep/1976-Jeep/1976-Jeep-Full-Line-Brochure/index.html",
+      "says": "Engine Availability, Wagoneer: 401-4bbl V8 Opt."
+     },
+     {
+      "name": "wagoneers.com (John Meister) - SJ engine summary by year",
+      "url": "https://wagoneers.com/tech/SJ-engines-years.html",
+      "says": "Year table: 1976 opt 401 4v"
+     },
+     {
+      "name": "International Full Size Jeep Association - FSJ Drivetrain Database (compiled from Kaiser/AMC/Chrysler factory references)",
+      "url": "https://ifsja.org/tech/figures/db.html",
+      "says": "401 V8 AMC 1974-78"
+     },
+     {
+      "name": "Wikipedia - AMC V8 engine",
+      "url": "https://en.wikipedia.org/wiki/AMC_V8_engine",
+      "says": "full-size Jeeps (Wagoneer, Cherokee, J-10, J-20) could order a 401 until 1978"
+     }
+    ],
+    "status": "three_sources_not_nhra",
+    "note": "Rating not triple-sourced; hp left null."
+   }
+  ],
+  "1977": [
+   {
+    "gen": "amc",
+    "cid": 360,
+    "hp": null,
+    "hp_basis": "net",
+    "name": "5.9L / 360 V8 2-bbl",
+    "rpo": "",
+    "common_name": "AMC 360",
+    "trims": [
+     "std"
+    ],
+    "nhra": false,
+    "sources": [
+     {
+      "name": "AMC Jeep 1977 full-line brochure",
+      "url": "https://oldcarbrochures.org/United%20States/Jeep/1977-Jeep/1977%20Jeep%20Full%20Line/index.html",
+      "says": "Wagoneer standard: responsive 360 CID 2-bbl V-8"
+     },
+     {
+      "name": "wagoneers.com (John Meister) - SJ engine summary by year",
+      "url": "https://wagoneers.com/tech/SJ-engines-years.html",
+      "says": "Year table: 1977 std 360 2v"
+     },
+     {
+      "name": "International Full Size Jeep Association - FSJ Drivetrain Database (compiled from Kaiser/AMC/Chrysler factory references)",
+      "url": "https://ifsja.org/tech/figures/db.html",
+      "says": "360 V8 1971-92"
+     },
+     {
+      "name": "Wikipedia - AMC V8 engine",
+      "url": "https://en.wikipedia.org/wiki/AMC_V8_engine",
+      "says": "360 used in Wagoneer (SJ) 1972-1984"
+     }
+    ],
+    "status": "three_sources_not_nhra",
+    "note": "Net rating not found in two independent sources; hp left null."
+   },
+   {
+    "gen": "amc",
+    "cid": 360,
+    "hp": null,
+    "hp_basis": "net",
+    "name": "5.9L / 360 V8 4-bbl",
+    "rpo": "",
+    "common_name": "AMC 360 4-bbl",
+    "trims": [
+     "optional"
+    ],
+    "nhra": false,
+    "sources": [
+     {
+      "name": "AMC Jeep 1977 full-line brochure",
+      "url": "https://oldcarbrochures.org/United%20States/Jeep/1977-Jeep/1977%20Jeep%20Full%20Line/index.html",
+      "says": "Wagoneer options: V-8 engines (360 CID 4-bbl and 401 CID 4-bbl)"
+     },
+     {
+      "name": "wagoneers.com (John Meister) - SJ engine summary by year",
+      "url": "https://wagoneers.com/tech/SJ-engines-years.html",
+      "says": "Year table: 1977 opt 360 4v"
+     },
+     {
+      "name": "International Full Size Jeep Association - FSJ Drivetrain Database (compiled from Kaiser/AMC/Chrysler factory references)",
+      "url": "https://ifsja.org/tech/figures/db.html",
+      "says": "360 V8 1971-92 (carb not stated)"
+     }
+    ],
+    "status": "three_sources_not_nhra",
+    "note": ""
+   },
+   {
+    "gen": "amc",
+    "cid": 401,
+    "hp": null,
+    "hp_basis": "net",
+    "name": "6.6L / 401 V8 4-bbl",
+    "rpo": "",
+    "common_name": "AMC 401",
+    "trims": [
+     "optional"
+    ],
+    "nhra": false,
+    "sources": [
+     {
+      "name": "AMC Jeep 1977 full-line brochure",
+      "url": "https://oldcarbrochures.org/United%20States/Jeep/1977-Jeep/1977%20Jeep%20Full%20Line/index.html",
+      "says": "Wagoneer options: 401 CID 4-bbl"
+     },
+     {
+      "name": "wagoneers.com (John Meister) - SJ engine summary by year",
+      "url": "https://wagoneers.com/tech/SJ-engines-years.html",
+      "says": "Year table: 1977 opt 401 4v"
+     },
+     {
+      "name": "International Full Size Jeep Association - FSJ Drivetrain Database (compiled from Kaiser/AMC/Chrysler factory references)",
+      "url": "https://ifsja.org/tech/figures/db.html",
+      "says": "401 V8 AMC 1974-78"
+     },
+     {
+      "name": "Wikipedia - AMC V8 engine",
+      "url": "https://en.wikipedia.org/wiki/AMC_V8_engine",
+      "says": "full-size Jeeps (Wagoneer, Cherokee, J-10, J-20) could order a 401 until 1978"
+     }
+    ],
+    "status": "three_sources_not_nhra",
+    "note": "Rating not triple-sourced; hp left null."
+   }
+  ],
+  "1978": [
+   {
+    "gen": "amc",
+    "cid": 360,
+    "hp": null,
+    "hp_basis": "net",
+    "name": "5.9L / 360 V8 2-bbl",
+    "rpo": "",
+    "common_name": "AMC 360",
+    "trims": [
+     "std"
+    ],
+    "nhra": false,
+    "sources": [
+     {
+      "name": "AMC Jeep 1978 full-line brochure",
+      "url": "https://oldcarbrochures.org/United%20States/Jeep/1978_Jeep/1978_Jeep_Full_Line_Brochure/index.html",
+      "says": "Wagoneer standard features include a responsive 360 CID 2-barrel V-8"
+     },
+     {
+      "name": "wagoneers.com (John Meister) - SJ engine summary by year",
+      "url": "https://wagoneers.com/tech/SJ-engines-years.html",
+      "says": "Year table: 1978 std 360 2v"
+     },
+     {
+      "name": "International Full Size Jeep Association - FSJ Drivetrain Database (compiled from Kaiser/AMC/Chrysler factory references)",
+      "url": "https://ifsja.org/tech/figures/db.html",
+      "says": "360 V8 1971-92"
+     },
+     {
+      "name": "Wikipedia - AMC V8 engine",
+      "url": "https://en.wikipedia.org/wiki/AMC_V8_engine",
+      "says": "360 used in Wagoneer (SJ) 1972-1984"
+     },
+     {
+      "name": "The Truth About Cars - Rare Rides Icons: The Jeep Wagoneer (Part VII)",
+      "url": "https://www.thetruthaboutcars.com/cars/features/rare-rides-icons-the-jeep-wagoneer-the-first-luxury-suv-ever-part-vii-45134632",
+      "says": "All Wagoneers used a two-barrel 360 V8 by this time"
+     }
+    ],
+    "status": "three_sources_not_nhra",
+    "note": "Net rating not found in two independent sources; hp left null."
+   },
+   {
+    "gen": "amc",
+    "cid": 360,
+    "hp": null,
+    "hp_basis": "net",
+    "name": "5.9L / 360 V8 4-bbl",
+    "rpo": "",
+    "common_name": "AMC 360 4-bbl",
+    "trims": [
+     "optional"
+    ],
+    "nhra": false,
+    "sources": [
+     {
+      "name": "AMC Jeep 1978 full-line brochure",
+      "url": "https://oldcarbrochures.org/United%20States/Jeep/1978_Jeep/1978_Jeep_Full_Line_Brochure/index.html",
+      "says": "Optional engines include a 360 CID 4-barrel V-8 and a 401 CID 4-barrel V-8"
+     },
+     {
+      "name": "wagoneers.com (John Meister) - SJ engine summary by year",
+      "url": "https://wagoneers.com/tech/SJ-engines-years.html",
+      "says": "Year table: 1978 opt 360 4v"
+     },
+     {
+      "name": "International Full Size Jeep Association - FSJ Drivetrain Database (compiled from Kaiser/AMC/Chrysler factory references)",
+      "url": "https://ifsja.org/tech/figures/db.html",
+      "says": "360 V8 1971-92 (carb not stated)"
+     }
+    ],
+    "status": "three_sources_not_nhra",
+    "note": ""
+   },
+   {
+    "gen": "amc",
+    "cid": 401,
+    "hp": null,
+    "hp_basis": "net",
+    "name": "6.6L / 401 V8 4-bbl",
+    "rpo": "",
+    "common_name": "AMC 401",
+    "trims": [
+     "optional"
+    ],
+    "nhra": false,
+    "sources": [
+     {
+      "name": "AMC Jeep 1978 full-line brochure",
+      "url": "https://oldcarbrochures.org/United%20States/Jeep/1978_Jeep/1978_Jeep_Full_Line_Brochure/index.html",
+      "says": "Optional ... a 401 CID 4-barrel V-8"
+     },
+     {
+      "name": "wagoneers.com (John Meister) - SJ engine summary by year",
+      "url": "https://wagoneers.com/tech/SJ-engines-years.html",
+      "says": "Year table: 1978 opt 401 4v"
+     },
+     {
+      "name": "International Full Size Jeep Association - FSJ Drivetrain Database (compiled from Kaiser/AMC/Chrysler factory references)",
+      "url": "https://ifsja.org/tech/figures/db.html",
+      "says": "401 V8 AMC 1974-78"
+     },
+     {
+      "name": "Wikipedia - AMC V8 engine",
+      "url": "https://en.wikipedia.org/wiki/AMC_V8_engine",
+      "says": "full-size Jeeps (Wagoneer, Cherokee, J-10, J-20) could order a 401 until 1978"
+     },
+     {
+      "name": "The Truth About Cars - Rare Rides Icons: The Jeep Wagoneer (Part VII)",
+      "url": "https://www.thetruthaboutcars.com/cars/features/rare-rides-icons-the-jeep-wagoneer-the-first-luxury-suv-ever-part-vii-45134632",
+      "says": "Optional even on the Limited was the high-power four-barrel 401"
+     }
+    ],
+    "status": "three_sources_not_nhra",
+    "note": "Rating not triple-sourced; hp left null."
+   }
+  ],
+  "1979": [
+   {
+    "gen": "amc",
+    "cid": 360,
+    "hp": null,
+    "hp_basis": "net",
+    "name": "5.9L / 360 V8 2-bbl",
+    "rpo": "",
+    "common_name": "AMC 360",
+    "trims": [
+     "std (only engine)"
+    ],
+    "nhra": false,
+    "sources": [
+     {
+      "name": "AMC Jeep 1979 full-line brochure",
+      "url": "https://oldcarbrochures.org/United%20States/Jeep/1979-Jeep/1979-Jeep-Full-Line-Brochure/index.html",
+      "says": "Wagoneer Engine Availability: 360 CID V-8, 2-bbl, Std. (only engine listed)"
+     },
+     {
+      "name": "wagoneers.com (John Meister) - SJ engine summary by year",
+      "url": "https://wagoneers.com/tech/SJ-engines-years.html",
+      "says": "Year table: 1979 360 2v, none, none"
+     },
+     {
+      "name": "International Full Size Jeep Association - FSJ Drivetrain Database (compiled from Kaiser/AMC/Chrysler factory references)",
+      "url": "https://ifsja.org/tech/figures/db.html",
+      "says": "360 V8 1971-92"
+     },
+     {
+      "name": "Wikipedia - AMC V8 engine",
+      "url": "https://en.wikipedia.org/wiki/AMC_V8_engine",
+      "says": "360 used in Wagoneer (SJ) 1972-1984; 401 not available in 1979"
+     }
+    ],
+    "status": "three_sources_not_nhra",
+    "note": "Only engine in 1979."
+   }
+  ],
+  "1980": [
+   {
+    "gen": "amc",
+    "cid": 360,
+    "hp": null,
+    "hp_basis": "net",
+    "name": "5.9L / 360 V8 2-bbl",
+    "rpo": "",
+    "common_name": "AMC 360",
+    "trims": [
+     "std"
+    ],
+    "nhra": false,
+    "sources": [
+     {
+      "name": "AMC Jeep 1980 full-line brochure (p.25 Wagoneer Engine Availability)",
+      "url": "https://oldcarbrochures.org/United%20States/Jeep/1980_Jeep/1980-Jeep-Full-Line-Brochure/index.html",
+      "says": "Wagoneer Engine Availability: 360 CID V-8 2-bbl std."
+     },
+     {
+      "name": "wagoneers.com (John Meister) - SJ engine summary by year",
+      "url": "https://wagoneers.com/tech/SJ-engines-years.html",
+      "says": "Year table: 1980 std 360 2v"
+     },
+     {
+      "name": "International Full Size Jeep Association - FSJ Drivetrain Database (compiled from Kaiser/AMC/Chrysler factory references)",
+      "url": "https://ifsja.org/tech/figures/db.html",
+      "says": "360 V8 1971-92"
+     },
+     {
+      "name": "Wikipedia - AMC V8 engine",
+      "url": "https://en.wikipedia.org/wiki/AMC_V8_engine",
+      "says": "360 used in Wagoneer (SJ) 1972-1984"
+     }
+    ],
+    "status": "three_sources_not_nhra",
+    "note": ""
+   },
+   {
+    "gen": "amc",
+    "cid": 258,
+    "hp": null,
+    "hp_basis": "net",
+    "name": "4.2L / 258 I6 2-bbl",
+    "rpo": "",
+    "common_name": "AMC 258",
+    "trims": [
+     "optional (not California)"
+    ],
+    "nhra": false,
+    "sources": [
+     {
+      "name": "AMC Jeep 1980 full-line brochure (p.25 Wagoneer Engine Availability)",
+      "url": "https://oldcarbrochures.org/United%20States/Jeep/1980_Jeep/1980-Jeep-Full-Line-Brochure/index.html",
+      "says": "Wagoneer Engine Availability: 258 CID Six 2-bbl Opt.* (*Not available in California)"
+     },
+     {
+      "name": "Wikipedia - Jeep Wagoneer (SJ)",
+      "url": "https://en.wikipedia.org/wiki/Jeep_Wagoneer_(SJ)",
+      "says": "six returned as an option when sales were hit by the 1979 energy crisis"
+     },
+     {
+      "name": "International Full Size Jeep Association - FSJ Drivetrain Database (compiled from Kaiser/AMC/Chrysler factory references)",
+      "url": "https://ifsja.org/tech/figures/db.html",
+      "says": "258 OHV I-6 1971-87"
+     }
+    ],
+    "status": "three_sources_not_nhra",
+    "note": "wagoneers.com year table shows no six in 1980 and returns it in 1981 (disagrees with the 1980 factory brochure)."
+   }
+  ],
+  "1981": [
+   {
+    "gen": "amc",
+    "cid": 258,
+    "hp": null,
+    "hp_basis": "net",
+    "name": "4.2L / 258 I6 2-bbl",
+    "rpo": "",
+    "common_name": "AMC 258",
+    "trims": [
+     "std"
+    ],
+    "nhra": false,
+    "sources": [
+     {
+      "name": "AMC Jeep 1981 Wagoneer brochure",
+      "url": "https://oldcarbrochures.org/United%20States/Jeep/1981_Jeep/1981-Jeep-Wagoneer-Brochure/index.html",
+      "says": "standard 258 CID six; Engine availability: 258 CID Six 2-bbl std, 360 CID V-8 2-bbl opt (not available in California)"
+     },
+     {
+      "name": "wagoneers.com (John Meister) - SJ engine summary by year",
+      "url": "https://wagoneers.com/tech/SJ-engines-years.html",
+      "says": "Year table: 1981 std 258"
+     },
+     {
+      "name": "International Full Size Jeep Association - FSJ Drivetrain Database (compiled from Kaiser/AMC/Chrysler factory references)",
+      "url": "https://ifsja.org/tech/figures/db.html",
+      "says": "258 1971-87"
+     },
+     {
+      "name": "Wikipedia - Jeep Wagoneer (SJ)",
+      "url": "https://en.wikipedia.org/wiki/Jeep_Wagoneer_(SJ)",
+      "says": "six reintroduced after 1979; automatic with Selec-Trac standard in 1983"
+     }
+    ],
+    "status": "three_sources_not_nhra",
+    "note": "Net rating not found; hp null."
+   },
+   {
+    "gen": "amc",
+    "cid": 360,
+    "hp": null,
+    "hp_basis": "net",
+    "name": "5.9L / 360 V8 2-bbl",
+    "rpo": "",
+    "common_name": "AMC 360",
+    "trims": [
+     "optional (not California)"
+    ],
+    "nhra": false,
+    "sources": [
+     {
+      "name": "AMC Jeep 1981 Wagoneer brochure",
+      "url": "https://oldcarbrochures.org/United%20States/Jeep/1981_Jeep/1981-Jeep-Wagoneer-Brochure/index.html",
+      "says": "standard 258 CID six; Engine availability: 258 CID Six 2-bbl std, 360 CID V-8 2-bbl opt (not available in California)"
+     },
+     {
+      "name": "wagoneers.com (John Meister) - SJ engine summary by year",
+      "url": "https://wagoneers.com/tech/SJ-engines-years.html",
+      "says": "Year table: 1981 opt 360 2v"
+     },
+     {
+      "name": "International Full Size Jeep Association - FSJ Drivetrain Database (compiled from Kaiser/AMC/Chrysler factory references)",
+      "url": "https://ifsja.org/tech/figures/db.html",
+      "says": "360 V8 1971-92"
+     },
+     {
+      "name": "Wikipedia - AMC V8 engine",
+      "url": "https://en.wikipedia.org/wiki/AMC_V8_engine",
+      "says": "360 used in Wagoneer (SJ) 1972-1984"
+     }
+    ],
+    "status": "three_sources_not_nhra",
+    "note": "Not available in California."
+   }
+  ],
+  "1982": [
+   {
+    "gen": "amc",
+    "cid": 258,
+    "hp": null,
+    "hp_basis": "net",
+    "name": "4.2L / 258 I6 2-bbl",
+    "rpo": "",
+    "common_name": "AMC 258",
+    "trims": [
+     "std"
+    ],
+    "nhra": false,
+    "sources": [
+     {
+      "name": "AMC Jeep 1982 Wagoneer brochure + AMC 1982 Jeep price list (archive.org amc-1982-jeep-price-list)",
+      "url": "https://oldcarbrochures.org/United%20States/Jeep/1982_Jeep/1982-Jeep-Wagoneer-Brochure/index.html",
+      "says": "Engine availability: 258 CID Six std; 360 CID V-8 2-bbl opt (NA Calif.); price list: Wagoneer std 258, opt 360"
+     },
+     {
+      "name": "wagoneers.com (John Meister) - SJ engine summary by year",
+      "url": "https://wagoneers.com/tech/SJ-engines-years.html",
+      "says": "Year table: 1982 std 258"
+     },
+     {
+      "name": "International Full Size Jeep Association - FSJ Drivetrain Database (compiled from Kaiser/AMC/Chrysler factory references)",
+      "url": "https://ifsja.org/tech/figures/db.html",
+      "says": "258 1971-87"
+     },
+     {
+      "name": "Wikipedia - Jeep Wagoneer (SJ)",
+      "url": "https://en.wikipedia.org/wiki/Jeep_Wagoneer_(SJ)",
+      "says": "six reintroduced after 1979; automatic with Selec-Trac standard in 1983"
+     }
+    ],
+    "status": "three_sources_not_nhra",
+    "note": "Net rating not found; hp null."
+   },
+   {
+    "gen": "amc",
+    "cid": 360,
+    "hp": null,
+    "hp_basis": "net",
+    "name": "5.9L / 360 V8 2-bbl",
+    "rpo": "",
+    "common_name": "AMC 360",
+    "trims": [
+     "optional (not California)"
+    ],
+    "nhra": false,
+    "sources": [
+     {
+      "name": "AMC Jeep 1982 Wagoneer brochure + AMC 1982 Jeep price list (archive.org amc-1982-jeep-price-list)",
+      "url": "https://oldcarbrochures.org/United%20States/Jeep/1982_Jeep/1982-Jeep-Wagoneer-Brochure/index.html",
+      "says": "Engine availability: 258 CID Six std; 360 CID V-8 2-bbl opt (NA Calif.); price list: Wagoneer std 258, opt 360"
+     },
+     {
+      "name": "wagoneers.com (John Meister) - SJ engine summary by year",
+      "url": "https://wagoneers.com/tech/SJ-engines-years.html",
+      "says": "Year table: 1982 opt 360 2v"
+     },
+     {
+      "name": "International Full Size Jeep Association - FSJ Drivetrain Database (compiled from Kaiser/AMC/Chrysler factory references)",
+      "url": "https://ifsja.org/tech/figures/db.html",
+      "says": "360 V8 1971-92"
+     },
+     {
+      "name": "Wikipedia - AMC V8 engine",
+      "url": "https://en.wikipedia.org/wiki/AMC_V8_engine",
+      "says": "360 used in Wagoneer (SJ) 1972-1984"
+     }
+    ],
+    "status": "three_sources_not_nhra",
+    "note": "Not available in California."
+   }
+  ],
+  "1983": [
+   {
+    "gen": "amc",
+    "cid": 258,
+    "hp": null,
+    "hp_basis": "net",
+    "name": "4.2L / 258 I6 2-bbl",
+    "rpo": "",
+    "common_name": "AMC 258",
+    "trims": [
+     "std"
+    ],
+    "nhra": false,
+    "sources": [
+     {
+      "name": "AMC 1983 Jeep Product Information (dealer data book, archive.org)",
+      "url": "https://archive.org/details/amc-1983-jeep-product-information",
+      "says": "Wagoneer ENGINES (all states): 258 CID Six 2-Barrel STD; 360 CID V-8 2-Barrel (NA Calif.)"
+     },
+     {
+      "name": "wagoneers.com (John Meister) - SJ engine summary by year",
+      "url": "https://wagoneers.com/tech/SJ-engines-years.html",
+      "says": "Year table: 1983 std 258"
+     },
+     {
+      "name": "International Full Size Jeep Association - FSJ Drivetrain Database (compiled from Kaiser/AMC/Chrysler factory references)",
+      "url": "https://ifsja.org/tech/figures/db.html",
+      "says": "258 1971-87"
+     },
+     {
+      "name": "Wikipedia - Jeep Wagoneer (SJ)",
+      "url": "https://en.wikipedia.org/wiki/Jeep_Wagoneer_(SJ)",
+      "says": "six reintroduced after 1979; automatic with Selec-Trac standard in 1983"
+     }
+    ],
+    "status": "three_sources_not_nhra",
+    "note": "wagoneers.com quotes 115 hp @ 3200 (J10, 1983); not triple-sourced so hp null."
+   },
+   {
+    "gen": "amc",
+    "cid": 360,
+    "hp": null,
+    "hp_basis": "net",
+    "name": "5.9L / 360 V8 2-bbl",
+    "rpo": "",
+    "common_name": "AMC 360",
+    "trims": [
+     "optional (not California)"
+    ],
+    "nhra": false,
+    "sources": [
+     {
+      "name": "AMC 1983 Jeep Product Information (dealer data book, archive.org)",
+      "url": "https://archive.org/details/amc-1983-jeep-product-information",
+      "says": "Wagoneer ENGINES (all states): 258 CID Six 2-Barrel STD; 360 CID V-8 2-Barrel (NA Calif.)"
+     },
+     {
+      "name": "wagoneers.com (John Meister) - SJ engine summary by year",
+      "url": "https://wagoneers.com/tech/SJ-engines-years.html",
+      "says": "Year table: 1983 opt 360 2v"
+     },
+     {
+      "name": "International Full Size Jeep Association - FSJ Drivetrain Database (compiled from Kaiser/AMC/Chrysler factory references)",
+      "url": "https://ifsja.org/tech/figures/db.html",
+      "says": "360 V8 1971-92"
+     },
+     {
+      "name": "Wikipedia - AMC V8 engine",
+      "url": "https://en.wikipedia.org/wiki/AMC_V8_engine",
+      "says": "360 used in Wagoneer (SJ) 1972-1984"
+     }
+    ],
+    "status": "three_sources_not_nhra",
+    "note": "Not available in California."
+   }
+  ],
+  "1984": [
+   {
+    "gen": "amc",
+    "cid": 360,
+    "hp": 144,
+    "hp_basis": "net",
+    "name": "5.9L / 360 V8 2-bbl",
+    "rpo": "",
+    "common_name": "AMC 360",
+    "trims": [
+     "Grand Wagoneer"
+    ],
+    "nhra": false,
+    "sources": [
+     {
+      "name": "EPA fueleconomy.gov vehicle data",
+      "url": "https://www.fueleconomy.gov/feg/download.shtml",
+      "says": "Grand Wagoneer 4WD, 5.9 L, 8 cyl"
+     },
+     {
+      "name": "wagoneers.com (John Meister) - SJ engine summary by year",
+      "url": "https://wagoneers.com/tech/SJ-engines-years.html",
+      "says": "Year table: 1984 opt 360 2v"
+     },
+     {
+      "name": "JeepTech (offroaders.com) - Jeep Grand Wagoneer",
+      "url": "https://www.offroaders.com/tech/jeep/Jeep-Grand-Wagoneer.htm",
+      "says": "1984-1991 360 ci (5.9 L) American Motors V8, 144 hp"
+     },
+     {
+      "name": "Hagerty valuation tools, Grand Wagoneer 1984-1987 (text from search results; pages are login-gated)",
+      "url": "https://www.hagerty.com/apps/valuationtools/1985-Jeep-Grand_Wagoneer",
+      "says": "360 cu in V-8, 144 hp, 2-bbl"
+     },
+     {
+      "name": "Wikipedia - AMC V8 engine",
+      "url": "https://en.wikipedia.org/wiki/AMC_V8_engine",
+      "says": "360 in full-sized Grand Wagoneer 1984-1991"
+     },
+     {
+      "name": "International Full Size Jeep Association - FSJ Drivetrain Database (compiled from Kaiser/AMC/Chrysler factory references)",
+      "url": "https://ifsja.org/tech/figures/db.html",
+      "says": "360 V8 1971-92"
+     }
+    ],
+    "status": "three_sources_not_nhra",
+    "note": "144 hp per JeepTech and Hagerty; a wagoneers.com reply quotes 129 hp @ 3700 for 1984 (disagrees)."
+   },
+   {
+    "gen": "amc",
+    "cid": 258,
+    "hp": 115,
+    "hp_basis": "net",
+    "name": "4.2L / 258 I6 2-bbl",
+    "rpo": "",
+    "common_name": "AMC 258",
+    "trims": [
+     "Grand Wagoneer"
+    ],
+    "nhra": false,
+    "sources": [
+     {
+      "name": "EPA fueleconomy.gov vehicle data",
+      "url": "https://www.fueleconomy.gov/feg/download.shtml",
+      "says": "Grand Wagoneer 4WD, 4.2 L, 6 cyl"
+     },
+     {
+      "name": "wagoneers.com (John Meister) - SJ engine summary by year",
+      "url": "https://wagoneers.com/tech/SJ-engines-years.html",
+      "says": "Year table: 1984 std 258"
+     },
+     {
+      "name": "Hagerty valuation tools, Grand Wagoneer 1984-1987 (text from search results; pages are login-gated)",
+      "url": "https://www.hagerty.com/apps/valuationtools/1985-Jeep-Grand_Wagoneer",
+      "says": "For 1984-1986 a six-cylinder 4.2 AMC unit was the base engine, 258 produced 115 hp with 2-bbl"
+     },
+     {
+      "name": "International Full Size Jeep Association - FSJ Drivetrain Database (compiled from Kaiser/AMC/Chrysler factory references)",
+      "url": "https://ifsja.org/tech/figures/db.html",
+      "says": "258 OHV I-6 1971-87"
+     }
+    ],
+    "status": "three_sources_not_nhra",
+    "note": "115 hp per Hagerty and a wagoneers.com reply (1984); not a factory figure."
+   }
+  ],
+  "1985": [
+   {
+    "gen": "amc",
+    "cid": 360,
+    "hp": 144,
+    "hp_basis": "net",
+    "name": "5.9L / 360 V8 2-bbl",
+    "rpo": "",
+    "common_name": "AMC 360",
+    "trims": [
+     "Grand Wagoneer"
+    ],
+    "nhra": false,
+    "sources": [
+     {
+      "name": "EPA fueleconomy.gov vehicle data",
+      "url": "https://www.fueleconomy.gov/feg/download.shtml",
+      "says": "Grand Wagoneer 4WD, 5.9 L, 8 cyl"
+     },
+     {
+      "name": "wagoneers.com (John Meister) - SJ engine summary by year",
+      "url": "https://wagoneers.com/tech/SJ-engines-years.html",
+      "says": "Year table: 1985 opt 360 2v"
+     },
+     {
+      "name": "JeepTech (offroaders.com) - Jeep Grand Wagoneer",
+      "url": "https://www.offroaders.com/tech/jeep/Jeep-Grand-Wagoneer.htm",
+      "says": "1984-1991 360 ci (5.9 L) American Motors V8, 144 hp"
+     },
+     {
+      "name": "Hagerty valuation tools, Grand Wagoneer 1984-1987 (text from search results; pages are login-gated)",
+      "url": "https://www.hagerty.com/apps/valuationtools/1985-Jeep-Grand_Wagoneer",
+      "says": "360 cu in V-8, 144 hp, 2-bbl"
+     },
+     {
+      "name": "Wikipedia - AMC V8 engine",
+      "url": "https://en.wikipedia.org/wiki/AMC_V8_engine",
+      "says": "360 standard engine in the Grand Wagoneer through 1991"
+     },
+     {
+      "name": "International Full Size Jeep Association - FSJ Drivetrain Database (compiled from Kaiser/AMC/Chrysler factory references)",
+      "url": "https://ifsja.org/tech/figures/db.html",
+      "says": "360 V8 1971-92"
+     }
+    ],
+    "status": "three_sources_not_nhra",
+    "note": ""
+   },
+   {
+    "gen": "amc",
+    "cid": 258,
+    "hp": 115,
+    "hp_basis": "net",
+    "name": "4.2L / 258 I6 2-bbl",
+    "rpo": "",
+    "common_name": "AMC 258",
+    "trims": [
+     "Grand Wagoneer"
+    ],
+    "nhra": false,
+    "sources": [
+     {
+      "name": "EPA fueleconomy.gov vehicle data",
+      "url": "https://www.fueleconomy.gov/feg/download.shtml",
+      "says": "Grand Wagoneer 4WD, 4.2 L, 6 cyl"
+     },
+     {
+      "name": "wagoneers.com (John Meister) - SJ engine summary by year",
+      "url": "https://wagoneers.com/tech/SJ-engines-years.html",
+      "says": "Year table: 1985 std 258"
+     },
+     {
+      "name": "Hagerty valuation tools, Grand Wagoneer 1984-1987 (text from search results; pages are login-gated)",
+      "url": "https://www.hagerty.com/apps/valuationtools/1985-Jeep-Grand_Wagoneer",
+      "says": "For 1984-1986 a six-cylinder 4.2 AMC unit was the base engine; 115 hp"
+     },
+     {
+      "name": "International Full Size Jeep Association - FSJ Drivetrain Database (compiled from Kaiser/AMC/Chrysler factory references)",
+      "url": "https://ifsja.org/tech/figures/db.html",
+      "says": "258 OHV I-6 1971-87"
+     }
+    ],
+    "status": "three_sources_not_nhra",
+    "note": "115 hp per Hagerty and a wagoneers.com reply (1984); not a factory figure."
+   }
+  ],
+  "1986": [
+   {
+    "gen": "amc",
+    "cid": 360,
+    "hp": 144,
+    "hp_basis": "net",
+    "name": "5.9L / 360 V8 2-bbl",
+    "rpo": "",
+    "common_name": "AMC 360",
+    "trims": [
+     "Grand Wagoneer"
+    ],
+    "nhra": false,
+    "sources": [
+     {
+      "name": "EPA fueleconomy.gov vehicle data",
+      "url": "https://www.fueleconomy.gov/feg/download.shtml",
+      "says": "Grand Wagoneer 4WD, 5.9 L, 8 cyl"
+     },
+     {
+      "name": "wagoneers.com (John Meister) - SJ engine summary by year",
+      "url": "https://wagoneers.com/tech/SJ-engines-years.html",
+      "says": "Year table: 1986 opt 360 2v"
+     },
+     {
+      "name": "JeepTech (offroaders.com) - Jeep Grand Wagoneer",
+      "url": "https://www.offroaders.com/tech/jeep/Jeep-Grand-Wagoneer.htm",
+      "says": "1984-1991 360 ci (5.9 L) American Motors V8, 144 hp"
+     },
+     {
+      "name": "Hagerty valuation tools, Grand Wagoneer 1984-1987 (text from search results; pages are login-gated)",
+      "url": "https://www.hagerty.com/apps/valuationtools/1985-Jeep-Grand_Wagoneer",
+      "says": "360 cu in V-8, 144 hp, 2-bbl"
+     },
+     {
+      "name": "Wikipedia - AMC V8 engine",
+      "url": "https://en.wikipedia.org/wiki/AMC_V8_engine",
+      "says": "360 standard engine in the Grand Wagoneer through 1991"
+     },
+     {
+      "name": "International Full Size Jeep Association - FSJ Drivetrain Database (compiled from Kaiser/AMC/Chrysler factory references)",
+      "url": "https://ifsja.org/tech/figures/db.html",
+      "says": "360 V8 1971-92"
+     }
+    ],
+    "status": "three_sources_not_nhra",
+    "note": ""
+   },
+   {
+    "gen": "amc",
+    "cid": 258,
+    "hp": 115,
+    "hp_basis": "net",
+    "name": "4.2L / 258 I6 2-bbl",
+    "rpo": "",
+    "common_name": "AMC 258",
+    "trims": [
+     "Grand Wagoneer"
+    ],
+    "nhra": false,
+    "sources": [
+     {
+      "name": "EPA fueleconomy.gov vehicle data",
+      "url": "https://www.fueleconomy.gov/feg/download.shtml",
+      "says": "Grand Wagoneer 4WD, 4.2 L, 6 cyl"
+     },
+     {
+      "name": "wagoneers.com (John Meister) - SJ engine summary by year",
+      "url": "https://wagoneers.com/tech/SJ-engines-years.html",
+      "says": "Year table: 1986 std 258"
+     },
+     {
+      "name": "Hagerty valuation tools, Grand Wagoneer 1984-1987 (text from search results; pages are login-gated)",
+      "url": "https://www.hagerty.com/apps/valuationtools/1985-Jeep-Grand_Wagoneer",
+      "says": "For 1984-1986 a six-cylinder 4.2 AMC unit was the base engine; 115 hp"
+     },
+     {
+      "name": "International Full Size Jeep Association - FSJ Drivetrain Database (compiled from Kaiser/AMC/Chrysler factory references)",
+      "url": "https://ifsja.org/tech/figures/db.html",
+      "says": "258 OHV I-6 1971-87"
+     }
+    ],
+    "status": "three_sources_not_nhra",
+    "note": "115 hp per Hagerty and a wagoneers.com reply (1984); not a factory figure."
+   }
+  ],
+  "1987": [
+   {
+    "gen": "amc",
+    "cid": 360,
+    "hp": 144,
+    "hp_basis": "net",
+    "name": "5.9L / 360 V8 2-bbl",
+    "rpo": "",
+    "common_name": "AMC 360",
+    "trims": [
+     "Grand Wagoneer"
+    ],
+    "nhra": false,
+    "sources": [
+     {
+      "name": "EPA fueleconomy.gov vehicle data",
+      "url": "https://www.fueleconomy.gov/feg/download.shtml",
+      "says": "Grand Wagoneer 4WD, 5.9 L, 8 cyl"
+     },
+     {
+      "name": "wagoneers.com (John Meister) - SJ engine summary by year",
+      "url": "https://wagoneers.com/tech/SJ-engines-years.html",
+      "says": "Year table: 1987 360 2v only"
+     },
+     {
+      "name": "JeepTech (offroaders.com) - Jeep Grand Wagoneer",
+      "url": "https://www.offroaders.com/tech/jeep/Jeep-Grand-Wagoneer.htm",
+      "says": "1984-1991 360 ci (5.9 L) American Motors V8, 144 hp"
+     },
+     {
+      "name": "Hagerty valuation tools, Grand Wagoneer 1984-1987 (text from search results; pages are login-gated)",
+      "url": "https://www.hagerty.com/apps/valuationtools/1985-Jeep-Grand_Wagoneer",
+      "says": "360 cu in V-8, 144 hp, 2-bbl"
+     },
+     {
+      "name": "Wikipedia - AMC V8 engine",
+      "url": "https://en.wikipedia.org/wiki/AMC_V8_engine",
+      "says": "360 standard engine in the Grand Wagoneer through 1991"
+     },
+     {
+      "name": "International Full Size Jeep Association - FSJ Drivetrain Database (compiled from Kaiser/AMC/Chrysler factory references)",
+      "url": "https://ifsja.org/tech/figures/db.html",
+      "says": "360 V8 1971-92"
+     }
+    ],
+    "status": "three_sources_not_nhra",
+    "note": ""
+   },
+   {
+    "gen": "amc",
+    "cid": 258,
+    "hp": null,
+    "hp_basis": "net",
+    "name": "4.2L / 258 I6 2-bbl",
+    "rpo": "",
+    "common_name": "AMC 258",
+    "trims": [
+     "Grand Wagoneer"
+    ],
+    "nhra": false,
+    "sources": [
+     {
+      "name": "EPA fueleconomy.gov vehicle data",
+      "url": "https://www.fueleconomy.gov/feg/download.shtml",
+      "says": "Grand Wagoneer 4WD, 4.2 L, 6 cyl"
+     },
+     {
+      "name": "wagoneers.com (John Meister) - SJ engine summary by year",
+      "url": "https://wagoneers.com/tech/SJ-engines-years.html",
+      "says": "Year table: 1987 360 only (no 258)"
+     },
+     {
+      "name": "Hagerty valuation tools, Grand Wagoneer 1984-1987 (text from search results; pages are login-gated)",
+      "url": "https://www.hagerty.com/apps/valuationtools/1985-Jeep-Grand_Wagoneer",
+      "says": "For 1987 the V-8 was so popular that the six was dropped"
+     },
+     {
+      "name": "International Full Size Jeep Association - FSJ Drivetrain Database (compiled from Kaiser/AMC/Chrysler factory references)",
+      "url": "https://ifsja.org/tech/figures/db.html",
+      "says": "258 OHV I-6 1971-87"
+     }
+    ],
+    "status": "disputed",
+    "note": "EPA lists a 4.2 Grand Wagoneer for 1987 and IFSJA ends the 258 in 1987, but Hagerty and wagoneers.com say the six was dropped for 1987. Possibly early-1987/leftover; do not publish without factory confirmation."
+   }
+  ],
+  "1988": [
+   {
+    "gen": "amc",
+    "cid": 360,
+    "hp": 144,
+    "hp_basis": "net",
+    "name": "5.9L / 360 V8 2-bbl",
+    "rpo": "",
+    "common_name": "AMC 360",
+    "trims": [
+     "Grand Wagoneer"
+    ],
+    "nhra": false,
+    "sources": [
+     {
+      "name": "EPA fueleconomy.gov vehicle data",
+      "url": "https://www.fueleconomy.gov/feg/download.shtml",
+      "says": "Grand Wagoneer 4WD, 5.9 L, 8 cyl"
+     },
+     {
+      "name": "wagoneers.com (John Meister) - SJ engine summary by year",
+      "url": "https://wagoneers.com/tech/SJ-engines-years.html",
+      "says": "Year table: 1988 360 2v only"
+     },
+     {
+      "name": "JeepTech (offroaders.com) - Jeep Grand Wagoneer",
+      "url": "https://www.offroaders.com/tech/jeep/Jeep-Grand-Wagoneer.htm",
+      "says": "1984-1991 360 ci (5.9 L) American Motors V8, 144 hp"
+     },
+     {
+      "name": "Wikipedia - AMC V8 engine",
+      "url": "https://en.wikipedia.org/wiki/AMC_V8_engine",
+      "says": "360 standard engine in the Grand Wagoneer through 1991"
+     },
+     {
+      "name": "International Full Size Jeep Association - FSJ Drivetrain Database (compiled from Kaiser/AMC/Chrysler factory references)",
+      "url": "https://ifsja.org/tech/figures/db.html",
+      "says": "360 V8 1971-92"
+     }
+    ],
+    "status": "three_sources_not_nhra",
+    "note": "Chrysler-era (post-August 1987) production kept the carbureted AMC 360."
+   }
+  ],
+  "1989": [
+   {
+    "gen": "amc",
+    "cid": 360,
+    "hp": 144,
+    "hp_basis": "net",
+    "name": "5.9L / 360 V8 2-bbl",
+    "rpo": "",
+    "common_name": "AMC 360",
+    "trims": [
+     "Grand Wagoneer"
+    ],
+    "nhra": false,
+    "sources": [
+     {
+      "name": "EPA fueleconomy.gov vehicle data",
+      "url": "https://www.fueleconomy.gov/feg/download.shtml",
+      "says": "Grand Wagoneer 4WD, 5.9 L, 8 cyl"
+     },
+     {
+      "name": "wagoneers.com (John Meister) - SJ engine summary by year",
+      "url": "https://wagoneers.com/tech/SJ-engines-years.html",
+      "says": "Year table: 1989 360 2v only"
+     },
+     {
+      "name": "JeepTech (offroaders.com) - Jeep Grand Wagoneer",
+      "url": "https://www.offroaders.com/tech/jeep/Jeep-Grand-Wagoneer.htm",
+      "says": "1984-1991 360 ci (5.9 L) American Motors V8, 144 hp"
+     },
+     {
+      "name": "Jeep 1989 full-line brochure",
+      "url": "https://oldcarbrochures.org/United%20States/Jeep/1989-Jeep/1989-Jeep-Full-Line-Small-Brochure/index.html",
+      "says": "Grand Wagoneer's standard 5.9 litre V8"
+     },
+     {
+      "name": "Wikipedia - AMC V8 engine",
+      "url": "https://en.wikipedia.org/wiki/AMC_V8_engine",
+      "says": "360 standard engine in the Grand Wagoneer through 1991"
+     },
+     {
+      "name": "International Full Size Jeep Association - FSJ Drivetrain Database (compiled from Kaiser/AMC/Chrysler factory references)",
+      "url": "https://ifsja.org/tech/figures/db.html",
+      "says": "360 V8 1971-92"
+     }
+    ],
+    "status": "three_sources_not_nhra",
+    "note": "Chrysler-era (post-August 1987) production kept the carbureted AMC 360."
+   }
+  ],
+  "1990": [
+   {
+    "gen": "amc",
+    "cid": 360,
+    "hp": 144,
+    "hp_basis": "net",
+    "name": "5.9L / 360 V8 2-bbl",
+    "rpo": "",
+    "common_name": "AMC 360",
+    "trims": [
+     "Grand Wagoneer"
+    ],
+    "nhra": false,
+    "sources": [
+     {
+      "name": "EPA fueleconomy.gov vehicle data",
+      "url": "https://www.fueleconomy.gov/feg/download.shtml",
+      "says": "Grand Wagoneer 4WD, 5.9 L, 8 cyl"
+     },
+     {
+      "name": "wagoneers.com (John Meister) - SJ engine summary by year",
+      "url": "https://wagoneers.com/tech/SJ-engines-years.html",
+      "says": "Year table: 1990 360 2v only"
+     },
+     {
+      "name": "JeepTech (offroaders.com) - Jeep Grand Wagoneer",
+      "url": "https://www.offroaders.com/tech/jeep/Jeep-Grand-Wagoneer.htm",
+      "says": "1984-1991 360 ci (5.9 L) American Motors V8, 144 hp"
+     },
+     {
+      "name": "Wikipedia - AMC V8 engine",
+      "url": "https://en.wikipedia.org/wiki/AMC_V8_engine",
+      "says": "360 standard engine in the Grand Wagoneer through 1991"
+     },
+     {
+      "name": "International Full Size Jeep Association - FSJ Drivetrain Database (compiled from Kaiser/AMC/Chrysler factory references)",
+      "url": "https://ifsja.org/tech/figures/db.html",
+      "says": "360 V8 1971-92"
+     }
+    ],
+    "status": "three_sources_not_nhra",
+    "note": "Chrysler-era (post-August 1987) production kept the carbureted AMC 360."
+   }
+  ],
+  "1991": [
+   {
+    "gen": "amc",
+    "cid": 360,
+    "hp": 144,
+    "hp_basis": "net",
+    "name": "5.9L / 360 V8 2-bbl",
+    "rpo": "",
+    "common_name": "AMC 360",
+    "trims": [
+     "Grand Wagoneer"
+    ],
+    "nhra": false,
+    "sources": [
+     {
+      "name": "EPA fueleconomy.gov vehicle data",
+      "url": "https://www.fueleconomy.gov/feg/download.shtml",
+      "says": "Grand Wagoneer 4WD, 5.9 L, 8 cyl"
+     },
+     {
+      "name": "wagoneers.com (John Meister) - SJ engine summary by year",
+      "url": "https://wagoneers.com/tech/SJ-engines-years.html",
+      "says": "Year table: 1991 360 2v only"
+     },
+     {
+      "name": "JeepTech (offroaders.com) - Jeep Grand Wagoneer",
+      "url": "https://www.offroaders.com/tech/jeep/Jeep-Grand-Wagoneer.htm",
+      "says": "1984-1991 360 ci (5.9 L) American Motors V8, 144 hp"
+     },
+     {
+      "name": "Wikipedia - AMC V8 engine",
+      "url": "https://en.wikipedia.org/wiki/AMC_V8_engine",
+      "says": "360 standard engine in the Grand Wagoneer through 1991"
+     },
+     {
+      "name": "International Full Size Jeep Association - FSJ Drivetrain Database (compiled from Kaiser/AMC/Chrysler factory references)",
+      "url": "https://ifsja.org/tech/figures/db.html",
+      "says": "360 V8 1971-92"
+     }
+    ],
+    "status": "three_sources_not_nhra",
+    "note": "Chrysler-era (post-August 1987) production kept the carbureted AMC 360."
+   }
+  ]
+ },
+ "source_index": [
+  {
+   "name": "Kaiser Jeep Wagoneer brochure (first-year 1963-model, archive label \"1962 Jeep Wagoneers\")",
+   "url": "https://oldcarbrochures.org/United%20States/Jeep/1962_Jeep/1962-Jeep-Wagoneers-Brochure/index.html",
+   "type": "manufacturer"
+  },
+  {
+   "name": "Kaiser Jeep 1965 full-line brochure, Form 6509 R2",
+   "url": "https://oldcarbrochures.org/United%20States/Jeep/1965-Jeep/1965-Jeep-Full-LIne-Brochure-R2/index.html",
+   "type": "manufacturer"
+  },
+  {
+   "name": "Kaiser Jeep 1966 full-line brochure",
+   "url": "https://oldcarbrochures.org/United%20States/Jeep/1966_Jeep/1966-Jeep-Full-Line-Brochure/index.html",
+   "type": "manufacturer"
+  },
+  {
+   "name": "Kaiser Jeep full-line brochure, Form 67-10R (archive label 1967; introduces \"New Dauntless V-8\", i.e. 1968-model literature)",
+   "url": "https://oldcarbrochures.org/United%20States/Jeep/1967-Jeep/1967-Jeep-Full-Line-Brochure/index.html",
+   "type": "manufacturer"
+  },
+  {
+   "name": "Kaiser Jeep 1969 Recreational Fleet brochure, Form 69-03",
+   "url": "https://oldcarbrochures.org/United%20States/Jeep/1969_Jeep/1969-Jeep-Recreational-Fleet-Brochure/index.html",
+   "type": "manufacturer"
+  },
+  {
+   "name": "Kaiser Jeep 1970 Wagoneer brochure (also archive.org 70-01)",
+   "url": "https://oldcarbrochures.org/United%20States/Jeep/1970_Jeep/1970-Jeep-Wagoneer-Brochure/index.html",
+   "type": "manufacturer"
+  },
+  {
+   "name": "Jeep 1971 full-line brochure",
+   "url": "https://oldcarbrochures.org/United%20States/Jeep/1971-Jeep/1971-Jeep-Full-Line-Brochure/index.html",
+   "type": "manufacturer"
+  },
+  {
+   "name": "AMC Jeep 1972 full-line folder (engine table) + AMC 1972 Jeep Wagoneer brochure (archive.org)",
+   "url": "https://oldcarbrochures.org/United%20States/Jeep/1972-Jeep/1972-Jeep-Full-Line-Folder/index.html",
+   "type": "manufacturer"
+  },
+  {
+   "name": "AMC Jeep 1973 full-line brochure",
+   "url": "https://oldcarbrochures.org/United%20States/Jeep/1973-Jeep/1973-Jeep-Full-Line-Brochure/index.html",
+   "type": "manufacturer"
+  },
+  {
+   "name": "AMC Jeep 1976 full-line brochure (p.29 Engine Availability chart)",
+   "url": "https://oldcarbrochures.org/United%20States/Jeep/1976-Jeep/1976-Jeep-Full-Line-Brochure/index.html",
+   "type": "manufacturer"
+  },
+  {
+   "name": "AMC Jeep 1977 full-line brochure",
+   "url": "https://oldcarbrochures.org/United%20States/Jeep/1977-Jeep/1977%20Jeep%20Full%20Line/index.html",
+   "type": "manufacturer"
+  },
+  {
+   "name": "AMC Jeep 1978 full-line brochure",
+   "url": "https://oldcarbrochures.org/United%20States/Jeep/1978_Jeep/1978_Jeep_Full_Line_Brochure/index.html",
+   "type": "manufacturer"
+  },
+  {
+   "name": "AMC Jeep 1979 full-line brochure",
+   "url": "https://oldcarbrochures.org/United%20States/Jeep/1979-Jeep/1979-Jeep-Full-Line-Brochure/index.html",
+   "type": "manufacturer"
+  },
+  {
+   "name": "AMC Jeep 1980 full-line brochure (p.25 Wagoneer Engine Availability)",
+   "url": "https://oldcarbrochures.org/United%20States/Jeep/1980_Jeep/1980-Jeep-Full-Line-Brochure/index.html",
+   "type": "manufacturer"
+  },
+  {
+   "name": "AMC Jeep 1981 Wagoneer brochure",
+   "url": "https://oldcarbrochures.org/United%20States/Jeep/1981_Jeep/1981-Jeep-Wagoneer-Brochure/index.html",
+   "type": "manufacturer"
+  },
+  {
+   "name": "AMC Jeep 1982 Wagoneer brochure + AMC 1982 Jeep price list (archive.org amc-1982-jeep-price-list)",
+   "url": "https://oldcarbrochures.org/United%20States/Jeep/1982_Jeep/1982-Jeep-Wagoneer-Brochure/index.html",
+   "type": "manufacturer"
+  },
+  {
+   "name": "AMC 1983 Jeep Product Information (dealer data book, archive.org)",
+   "url": "https://archive.org/details/amc-1983-jeep-product-information",
+   "type": "manufacturer"
+  },
+  {
+   "name": "Jeep 1989 full-line brochure",
+   "url": "https://oldcarbrochures.org/United%20States/Jeep/1989-Jeep/1989-Jeep-Full-Line-Small-Brochure/index.html",
+   "type": "manufacturer"
+  },
+  {
+   "name": "Jeep brand official history, 1960s",
+   "url": "https://www.jeep.com/history/1960s.html",
+   "type": "manufacturer"
+  },
+  {
+   "name": "International Full Size Jeep Association - FSJ Drivetrain Database (compiled from Kaiser/AMC/Chrysler factory references)",
+   "url": "https://ifsja.org/tech/figures/db.html",
+   "type": "registry"
+  },
+  {
+   "name": "wagoneers.com (John Meister) - SJ engine summary by year",
+   "url": "https://wagoneers.com/tech/SJ-engines-years.html",
+   "type": "registry"
+  },
+  {
+   "name": "Robert C. Ackerson, Jeep: The 50 Year History (p.191, quoted on wagoneers.com)",
+   "url": "https://wagoneers.com/tech/Engines/327-history.html",
+   "type": "publication"
+  },
+  {
+   "name": "Curbside Classic - 1966-1971 Jeep Super Wagoneer and Wagoneer Custom Special",
+   "url": "https://www.curbsideclassic.com/automotive-histories/1966-1971-jeep-super-wagoneer-and-wagoneer-custom-special-these-luxury-suvs-were-way-ahead-of-their-time-so-why-didnt-they-sell/",
+   "type": "publication"
+  },
+  {
+   "name": "The Truth About Cars - Rare Rides Icons: The Jeep Wagoneer (Part V)",
+   "url": "https://www.thetruthaboutcars.com/cars/features/rare-rides-icons-the-jeep-wagoneer-the-first-luxury-suv-ever-part-v-45134362",
+   "type": "publication"
+  },
+  {
+   "name": "The Truth About Cars - Rare Rides Icons: The Jeep Wagoneer (Part VI)",
+   "url": "https://www.thetruthaboutcars.com/cars/features/rare-rides-icons-the-jeep-wagoneer-the-first-luxury-suv-ever-part-vi-45134497",
+   "type": "publication"
+  },
+  {
+   "name": "The Truth About Cars - Rare Rides Icons: The Jeep Wagoneer (Part VII)",
+   "url": "https://www.thetruthaboutcars.com/cars/features/rare-rides-icons-the-jeep-wagoneer-the-first-luxury-suv-ever-part-vii-45134632",
+   "type": "publication"
+  },
+  {
+   "name": "Jalopnik - Long Before Chrysler's Hot Rod Jeeps, AMC Stuffed V8s In CJs, Wagoneers, And More",
+   "url": "https://jalopnik.com/2210552/chrysler-hot-rod-jeeps-amc-v8-cj-wagoneer-and-more",
+   "type": "publication"
+  },
+  {
+   "name": "JeepTech (offroaders.com/jeepfan.com) - AMC 401 V8",
+   "url": "https://jeepfan.com/tech/jeeptech/gnu-engine-factory401v8.htm",
+   "type": "publication"
+  },
+  {
+   "name": "JeepTech (offroaders.com) - Jeep Grand Wagoneer",
+   "url": "https://www.offroaders.com/tech/jeep/Jeep-Grand-Wagoneer.htm",
+   "type": "publication"
+  },
+  {
+   "name": "Hagerty valuation tools, Grand Wagoneer 1984-1987 (text from search results; pages are login-gated)",
+   "url": "https://www.hagerty.com/apps/valuationtools/1985-Jeep-Grand_Wagoneer",
+   "type": "publication"
+  },
+  {
+   "name": "Wikipedia - Jeep Wagoneer (SJ)",
+   "url": "https://en.wikipedia.org/wiki/Jeep_Wagoneer_(SJ)",
+   "type": "wikipedia"
+  },
+  {
+   "name": "Wikipedia - AMC V8 engine",
+   "url": "https://en.wikipedia.org/wiki/AMC_V8_engine",
+   "type": "wikipedia"
+  },
+  {
+   "name": "EPA fueleconomy.gov vehicle data",
+   "url": "https://www.fueleconomy.gov/feg/download.shtml",
+   "type": "government"
+  }
+ ]
+}
