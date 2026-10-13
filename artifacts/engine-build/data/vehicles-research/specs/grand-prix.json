@@ -1,0 +1,80 @@
+{
+ "make": "Pontiac",
+ "model": "Grand Prix",
+ "makeSlug": "pontiac",
+ "slug": "grand-prix",
+ "title": "Pontiac Grand Prix Engines by Year (1962–2008)",
+ "description": "Every factory engine in the Pontiac Grand Prix by year, 1962–2008: the 389 and 421, 428 and SJ 455, G-body V6s and V8s, the supercharged GTP and the GXP V8.",
+ "intro": [
+  "The Grand Prix was Pontiac's personal luxury car from 1962 to 2008: built on the full-size chassis until 1968, on the mid-size platform from 1969 to 1987, and front-drive from 1988.",
+  "Pick a year to see every engine offered that model year, with its code, rated horsepower and the trims it came in. Each engine links to its full specs."
+ ],
+ "generations": [
+  {
+   "key": "1962-1968",
+   "name": "1962–1968",
+   "years": [
+    1962,
+    1968
+   ],
+   "intro": [
+    "The early Grand Prix used Pontiac's 389 and 421, including the 421 H.O. and Tri-Power versions, then the 400 and 428 from 1967. A few factory 421 Super Duty cars were built for racing in 1962."
+   ]
+  },
+  {
+   "key": "1969-1972",
+   "name": "1969–1972",
+   "years": [
+    1969,
+    1972
+   ],
+   "intro": [
+    "The 1969 redesign introduced the SJ, whose 428 was replaced by the 455 for 1970. Ratings are gross through 1971 and SAE net from 1972."
+   ]
+  },
+  {
+   "key": "1973-1977",
+   "name": "1973–1977",
+   "years": [
+    1973,
+    1977
+   ],
+   "intro": [
+    "The Colonnade Grand Prix used Pontiac's 400 and 455 and, from 1976, the 350 and 301, with Oldsmobile engines in some 1977 California cars."
+   ]
+  },
+  {
+   "key": "1978-1987",
+   "name": "1978–1987",
+   "years": [
+    1978,
+    1987
+   ],
+   "intro": [
+    "The downsized Grand Prix used Buick V6s, Pontiac's 301 and 265, Chevrolet's 305 and 4.3, and the Oldsmobile 5.7 diesel. The 1986 2+2 had a four-barrel 305."
+   ]
+  },
+  {
+   "key": "1988-2008",
+   "name": "1988–2008",
+   "years": [
+    1988,
+    2008
+   ],
+   "intro": [
+    "The front-drive Grand Prix used GM's 60-degree V6s, the Quad 4 and the 3800, supercharged in the GTP, plus the 1989–1990 Turbo Grand Prix's 3.1 turbo and the 2005–2008 GXP's 5.3 V8."
+   ]
+  }
+ ],
+ "files": [
+  "verify_grand-prix-1962-1987.json",
+  "verify_grand-prix-1988-2008.json"
+ ],
+ "built_by_notes": true,
+ "own_division": "^Pontiac",
+ "code_notes": {
+  "LG5": "Turbocharged; converted by ASC/McLaren for Pontiac.",
+  "LF9": "Oldsmobile-built diesel."
+ },
+ "draft": true
+}

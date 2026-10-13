@@ -1628,6 +1628,38 @@
   {
    "year": 1983,
    "gen": "gen4",
+   "cid": 262,
+   "cyl": 6,
+   "name": "4.3L / 262 V6 diesel",
+   "code": "LT6",
+   "desc": null,
+   "hp": 85,
+   "hpBasis": "net",
+   "trims": [
+    "Sport Coupe"
+   ],
+   "note": "Oldsmobile-built V6 diesel.",
+   "nhra": false,
+   "sources": [
+    {
+     "name": "GM Heritage Center 1983 Chevrolet Monte Carlo Vehicle Information Kit",
+     "url": "https://www.gm.com/content/dam/company/no_search/heritage-archive-docs/vehicle-information-kits/chevrolet/1983-Chevrolet-Monte-Carlo.pdf"
+    },
+    {
+     "name": "Wikipedia - Chevrolet Monte Carlo",
+     "url": "https://en.wikipedia.org/wiki/Chevrolet_Monte_Carlo"
+    },
+    {
+     "name": "Diesel World magazine - Diesel History Retrospective: The LT7 Front-Drive V-6 (Oldsmobile's other diesel)",
+     "url": "https://www.dieselworldmag.com/diesel-cars/diesel-history-retrospective-the-lt7-front-drive-v-6-oldsmobiles-other-diesel/"
+    }
+   ],
+   "sourceCount": 3,
+   "diesel": true
+  },
+  {
+   "year": 1983,
+   "gen": "gen4",
    "cid": 305,
    "cyl": 8,
    "name": "5.0L / 305 V8",
@@ -3220,6 +3252,11 @@
  ],
  "sources": [
   {
+   "name": "Diesel World magazine - Diesel History Retrospective: The LT7 Front-Drive V-6 (Oldsmobile's other diesel)",
+   "url": "https://www.dieselworldmag.com/diesel-cars/diesel-history-retrospective-the-lt7-front-drive-v-6-oldsmobiles-other-diesel/",
+   "type": null
+  },
+  {
    "name": "EPA fueleconomy.gov vehicle data",
    "url": "https://www.fueleconomy.gov/feg/download.shtml",
    "type": "government"
@@ -3528,37 +3565,6 @@
    "status": "two_sources_not_nhra",
    "reason": "2 independent sources",
    "researchNote": "SAE net; not in NHRA for 1983; Wikipedia only implies it for 1983."
-  },
-  {
-   "year": 1983,
-   "gen": "gen4",
-   "cid": 262,
-   "cyl": 6,
-   "name": "4.3L / 262 V6 diesel",
-   "code": "LT6",
-   "desc": null,
-   "hp": 85,
-   "hpBasis": "net",
-   "trims": [
-    "Sport Coupe"
-   ],
-   "note": "Oldsmobile-built V6 diesel.",
-   "nhra": false,
-   "sources": [
-    {
-     "name": "GM Heritage Center 1983 Chevrolet Monte Carlo Vehicle Information Kit",
-     "url": "https://www.gm.com/content/dam/company/no_search/heritage-archive-docs/vehicle-information-kits/chevrolet/1983-Chevrolet-Monte-Carlo.pdf"
-    },
-    {
-     "name": "Wikipedia - Chevrolet Monte Carlo",
-     "url": "https://en.wikipedia.org/wiki/Chevrolet_Monte_Carlo"
-    }
-   ],
-   "sourceCount": 2,
-   "diesel": true,
-   "status": "two_sources_not_nhra",
-   "reason": "2 independent sources",
-   "researchNote": "SAE net; final year"
   },
   {
    "year": 1983,

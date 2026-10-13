@@ -22,13 +22,13 @@ spec = json.load(open(SPEC, encoding="utf-8"))
 I4, I6, V6, SLANT = (4, "inline-four"), (6, "inline-six"), (6, "V6"), (6, "slant six")
 # GM shared engines across divisions; sizes not listed default to V8 (or what the
 # entry itself says). 262 is resolved per entry: Chevy 262 V8 (1975) vs 4.3 V6.
-GM_SHARED = {97: I4, 122: I4, 133: I4, 138: I4, 146: I4, 151: I4, 152: I4, 153: I4,
+GM_SHARED = {85: I4, 97: I4, 98: I4, 111: I4, 140: I4, 122: I4, 133: I4, 138: I4, 146: I4, 151: I4, 152: I4, 153: I4,
              173: V6, 181: V6, 191: V6, 196: V6, 198: V6, 200: V6, 204: V6, 207: V6, 213: V6, 217: V6,
              220: V6, 225: V6, 229: V6, 231: V6, 237: V6, 252: V6,
              194: I6, 216: I6, 235: I6, 250: I6, 261: I6, 292: I6}
 ENGINE_KIND = {  # (make, cid) -> (cylinders, layout word)
   "chevrolet": {**GM_SHARED, 230: I6},
-  "pontiac": {**GM_SHARED, 215: I6, 230: (6, "OHC inline-six"), 250: I6},
+  "pontiac": {**GM_SHARED, 195: I4, 215: I6, 230: (6, "OHC inline-six"), 250: I6},
   "oldsmobile": {**GM_SHARED},
   "buick": {**GM_SHARED},
   "ford": {144: I6, 170: I6, 200: I6, 223: I6, 240: I6, 250: I6, 300: I6,
@@ -109,7 +109,7 @@ def split_code(raw):
     return None, c
 
 def is_diesel(e):
-    t = json.dumps([e.get("name"), e.get("common_name"), e.get("rpo"), e.get("note")]).lower()
+    t = json.dumps([e.get("name"), e.get("common_name"), e.get("rpo")]).lower()
     return "diesel" in t or bool(re.search(r"\blf9\b|\blq7\b|\blq6\b", t))
 
 def induction_word(e):
@@ -132,6 +132,10 @@ for fn in spec["files"]:
         year = int(re.sub(r"\D", "", y)[:4])
         for e in es:
             k = key(year, e)
+            # some research files give fractional cubic inches (Chevette 1.6 = 97.6)
+            if isinstance(e.get("cid"), float):
+                e = {**e, "cid": round(e["cid"])}
+                k = key(year, e)
             # verified displacement corrections (the Mustang's 3.9 Essex is 237 ci, not 238)
             if k in spec.get("cid_fix", {}):
                 e = {**e, "cid": spec["cid_fix"][k]}
@@ -156,6 +160,9 @@ for fn in spec["files"]:
             tf = spec.get("require_trim", {}).get(fn)
             if tf and not re.search(tf, " ".join(e.get("trims") or []), re.I):
                 continue
+            # a file can carry two models (Vega + Chevette, Javelin + AMX)
+            if spec.get("require_model") and e.get("model") != spec["require_model"]:
+                continue
             if electric:
                 cyl, layout, name = None, None, "Electric, dual motor"
             else:
@@ -172,6 +179,9 @@ for fn in spec["files"]:
                 # trust what the entry itself says
                 txt = json.dumps([e.get("name"), e.get("common_name"), e.get("rpo")])
                 if e["cid"] == 262 and re.search(r"4\.3|V6|LB4|LU2|LB1", txt): cyl, layout = 6, "V6"
+                # the entry says V8 where the table has a six of the same size
+                # (Buick aluminum 215 V8 vs the 1964-65 Pontiac 215 six)
+                if layout != "V8" and re.search(r"\bV-?8\b|aluminum V8", txt, re.I) and not re.search(r"\bsix\b|\bI-?6\b|inline", txt, re.I): cyl, layout = 8, "V8"
                 liters = LITERS.get(e["cid"], round(e["cid"] * 0.016387, 1))
                 name = (f"{liters}L / {e['cid']} {layout}" if year >= metric_from else f"{e['cid']} {layout}") + induction_word(e)
             rec = {
@@ -198,6 +208,8 @@ for fn in spec["files"]:
                 rec["code"] = None
             if k in spec.get("names", {}): rec["name"] = spec["names"][k]
             if is_diesel(e): rec["diesel"] = True
+            if e.get("hp_disputed") and not rec["note"]:
+                rec["note"] = "Published ratings for this engine vary."
             if electric:
                 rec["electric"] = True
                 rec["code"] = None
@@ -211,7 +223,7 @@ for fn in spec["files"]:
                     rec["linkFamily"] = fo["url"]
             # Corporate engines: say which division built it (Firebird used
             # Chevrolet, Buick and Oldsmobile engines from 1977).
-            bb = (e.get("built_by") or e.get("builder") or "").strip()
+            bb = (e.get("built_by") or e.get("builder") or e.get("division") or "").strip()
             if spec.get("built_by_notes") and bb and not re.search(spec.get("own_division", "^$"), bb, re.I):
                 m = re.match(r"(Chevrolet|Buick|Oldsmobile|Pontiac)\b", bb)
                 div = m.group(1) if m else None
@@ -225,7 +237,7 @@ for fn in spec["files"]:
                 rec["hpRange"] = [lo, hi]
                 rec["note"] = rec["note"] or "Published ratings for this engine vary."
             if y.startswith("1964") and mk == "ford": rec["yearLabel"] = "1964½"
-            ok_status = st in ("confirmed", "two_sources_not_nhra", "three_sources_not_nhra", "electric") or k in spec.get("include", []) or k in spec.get("ranges", {})
+            ok_status = st in ("confirmed", "two_sources_not_nhra", "three_sources_not_nhra", "nhra_plus_one", "electric") or k in spec.get("include", []) or k in spec.get("ranges", {})
             ok = k not in spec.get("exclude", {}) and ((ok_status and n >= 3) or (race and n >= 2))
             if ok:
                 engines.append(rec)

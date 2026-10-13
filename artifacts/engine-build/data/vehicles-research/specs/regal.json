@@ -58,6 +58,11 @@
  "files": [
   "verify_regal.json"
  ],
+ "cid_fix": {
+  "2018|220|310": 217,
+  "2019|220|310": 217,
+  "2020|220|310": 217
+ },
  "include": [
   "1979|305|155"
  ],
@@ -73,6 +78,36 @@
  "code_notes": {
   "LF9": "Oldsmobile-built diesel.",
   "LT7": "Oldsmobile-built V6 diesel."
+ },
+ "add_sources": {
+  "1982|262|85": [
+   {
+    "name": "Diesel World magazine - Diesel History Retrospective: The LT7 Front-Drive V-6 (Oldsmobile's other diesel)",
+    "url": "https://www.dieselworldmag.com/diesel-cars/diesel-history-retrospective-the-lt7-front-drive-v-6-oldsmobiles-other-diesel/",
+    "says": "4.3 V6 diesel 'Introduced in 1982'; GM phased out all diesel cars after the 1985 model year; 'The LT6 was an all-iron engine designed for the rear-drive G-body cars (Buick Regal, Chevy Malibu and Monte Carlo, Olds Cutlass Supreme and Cutlass Calais)'; 85 hp @ 3,600. Gives the 1982-85 range, not a per-model year."
+   }
+  ],
+  "1983|262|85": [
+   {
+    "name": "Diesel World magazine - Diesel History Retrospective: The LT7 Front-Drive V-6 (Oldsmobile's other diesel)",
+    "url": "https://www.dieselworldmag.com/diesel-cars/diesel-history-retrospective-the-lt7-front-drive-v-6-oldsmobiles-other-diesel/",
+    "says": "4.3 V6 diesel 'Introduced in 1982'; GM phased out all diesel cars after the 1985 model year; 'The LT6 was an all-iron engine designed for the rear-drive G-body cars (Buick Regal, Chevy Malibu and Monte Carlo, Olds Cutlass Supreme and Cutlass Calais)'; 85 hp @ 3,600. Gives the 1982-85 range, not a per-model year."
+   }
+  ],
+  "2016|146|182": [
+   {
+    "name": "Kelley Blue Book - 2016 Buick Regal specs",
+    "url": "https://www.kbb.com/buick/regal/2016/specs/",
+    "says": "1SV: '4-Cyl, 2.4 Liter', '182 @ 6700 RPM'; other trims 2.0T 259 hp."
+   }
+  ],
+  "2017|146|182": [
+   {
+    "name": "Kelley Blue Book - 2017 Buick Regal specs",
+    "url": "https://www.kbb.com/buick/regal/2017/specs/",
+    "says": "1SV: '4-Cyl, 2.4 Liter', '182 @ 6700 RPM'."
+   }
+  ]
  },
  "draft": true
 }

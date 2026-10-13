@@ -1,0 +1,1665 @@
+{
+ "vehicle": "satellite",
+ "note": "Plymouth Satellite / Sport Satellite / Satellite Sebring 1965-1974. gen1 = 1965-67 (V-8-only top Belvedere series, hardtop/convertible; no six). gen2 = 1968-70 (Satellite mid-line incl. sedan/wagon with the 225 six; Sport Satellite V-8 only). gen3 = 1971-74 (Satellite name covers the whole intermediate line; Road Runner and GTX entries are excluded here - see their pages). All Plymouth/Chrysler factory literature counts as ONE source; the several Wikipedia articles count as ONE source. NHRA 1965-70 rows are filed under Belvedere headings (series-level, not Satellite-specific). Engines NOT offered on the non-Road-Runner/GTX Satellite per factory literature: 225 six 1965-67; 440 1967-74 (GTX/Road Runner only); 426 Hemi 1968-71; 440 6-bbl 1969-72; 340 1971-73 (Road Runner only; Hagerty lists a 1972 Sebring 340/240 and a 1972 360/175 - the factory 1972 chart marks the 340 NA and has no 360); 360 4-bbl 245 hp 1974 (Road Runner only).",
+ "years": {
+  "1965": [
+   {
+    "gen": "gen1",
+    "cid": 273,
+    "hp": 180,
+    "hp_basis": "gross",
+    "carb": "2-bbl",
+    "trims": [
+     "Satellite (std)"
+    ],
+    "nhra": true,
+    "sources": [
+     {
+      "name": "NHRA Stock Car Classification Guide (1965-70 rows under BELVEDERE / BELVEDERE I / II headings, nhra_satellite.json; 1971-74 rows under 'SATELITE SEBRING', 'SATELITE SEBRING PLUS', 'SEBRING', 'SEBRING PLUS' headings, scc_rows.json)",
+      "url": "scratchpad nhra_satellite.json / scc_rows.json",
+      "says": "BELVEDERE II: 273 ci / 180 hp (C-273-03)"
+     },
+     {
+      "name": "Plymouth 1965 Belvedere brochure, Belvedere Specifications p.18 (V-8 engine tables)",
+      "url": "https://www.oldcarbrochures.org/United%20States/Plymouth/1965%20Plymouth/1965_Plymouth_Belvedere_Brochure/slides/1965_Plymouth_Belvedere-18-19.html",
+      "says": "V-8 table: '273 Standard', 180 hp at 4200"
+     },
+     {
+      "name": "Wikipedia: Plymouth Satellite + Plymouth Belvedere (engine table, cites Standard Catalog of American Cars) + Chrysler B / LA / Slant-6 engine application lists (counted as ONE source)",
+      "url": "https://en.wikipedia.org/wiki/Plymouth_Satellite",
+      "says": "For 1965, the standard engine was the 273"
+     }
+    ],
+    "status": "confirmed",
+    "note": "SAE gross. 1965-67 Satellite was the V-8-only top Belvedere series (hardtop/convertible); standard V-8 was the 273."
+   },
+   {
+    "gen": "gen1",
+    "cid": 318,
+    "hp": 230,
+    "hp_basis": "gross",
+    "carb": "2-bbl",
+    "trims": [
+     "Satellite (opt)"
+    ],
+    "nhra": true,
+    "sources": [
+     {
+      "name": "NHRA Stock Car Classification Guide (1965-70 rows under BELVEDERE / BELVEDERE I / II headings, nhra_satellite.json; 1971-74 rows under 'SATELITE SEBRING', 'SATELITE SEBRING PLUS', 'SEBRING', 'SEBRING PLUS' headings, scc_rows.json)",
+      "url": "scratchpad nhra_satellite.json / scc_rows.json",
+      "says": "BELVEDERE II: 318 ci / 230 hp (C-318-37)"
+     },
+     {
+      "name": "Plymouth 1965 Belvedere brochure, Belvedere Specifications p.18 (V-8 engine tables)",
+      "url": "https://www.oldcarbrochures.org/United%20States/Plymouth/1965%20Plymouth/1965_Plymouth_Belvedere_Brochure/slides/1965_Plymouth_Belvedere-18-19.html",
+      "says": "V-8 table: '318 Optional', 230 hp at 4400"
+     },
+     {
+      "name": "Wikipedia: Plymouth Satellite + Plymouth Belvedere (engine table, cites Standard Catalog of American Cars) + Chrysler B / LA / Slant-6 engine application lists (counted as ONE source)",
+      "url": "https://en.wikipedia.org/wiki/Plymouth_Satellite",
+      "says": "optional 318 (Satellite 1965); Belvedere engine table 318 230 hp 1965-67"
+     }
+    ],
+    "status": "confirmed",
+    "note": "SAE gross. Poly-head A-engine 318 (not LA) in 1965-66."
+   },
+   {
+    "gen": "gen1",
+    "cid": 361,
+    "hp": 265,
+    "hp_basis": "gross",
+    "carb": "2-bbl",
+    "trims": [
+     "Satellite (opt)"
+    ],
+    "nhra": true,
+    "sources": [
+     {
+      "name": "NHRA Stock Car Classification Guide (1965-70 rows under BELVEDERE / BELVEDERE I / II headings, nhra_satellite.json; 1971-74 rows under 'SATELITE SEBRING', 'SATELITE SEBRING PLUS', 'SEBRING', 'SEBRING PLUS' headings, scc_rows.json)",
+      "url": "scratchpad nhra_satellite.json / scc_rows.json",
+      "says": "BELVEDERE II: 361 ci / 265 hp (C-361-12)"
+     },
+     {
+      "name": "Plymouth 1965 Belvedere brochure, Belvedere Specifications p.18 (V-8 engine tables)",
+      "url": "https://www.oldcarbrochures.org/United%20States/Plymouth/1965%20Plymouth/1965_Plymouth_Belvedere_Brochure/slides/1965_Plymouth_Belvedere-18-19.html",
+      "says": "V-8 table: '361 Commando', 265 hp at 4400"
+     },
+     {
+      "name": "Wikipedia: Plymouth Satellite + Plymouth Belvedere (engine table, cites Standard Catalog of American Cars) + Chrysler B / LA / Slant-6 engine application lists (counted as ONE source)",
+      "url": "https://en.wikipedia.org/wiki/Plymouth_Satellite",
+      "says": "optional 361 (Satellite 1965); Belvedere table 361 265 hp"
+     }
+    ],
+    "status": "confirmed",
+    "note": "SAE gross. Commando 361."
+   },
+   {
+    "gen": "gen1",
+    "cid": 383,
+    "hp": 330,
+    "hp_basis": "gross",
+    "carb": "4-bbl",
+    "trims": [
+     "Satellite (opt)"
+    ],
+    "nhra": true,
+    "sources": [
+     {
+      "name": "NHRA Stock Car Classification Guide (1965-70 rows under BELVEDERE / BELVEDERE I / II headings, nhra_satellite.json; 1971-74 rows under 'SATELITE SEBRING', 'SATELITE SEBRING PLUS', 'SEBRING', 'SEBRING PLUS' headings, scc_rows.json)",
+      "url": "scratchpad nhra_satellite.json / scc_rows.json",
+      "says": "BELVEDERE I / II: 383 ci / 330 hp (C-383-13)"
+     },
+     {
+      "name": "Plymouth 1965 Belvedere brochure, Belvedere Specifications p.18 (V-8 engine tables)",
+      "url": "https://www.oldcarbrochures.org/United%20States/Plymouth/1965%20Plymouth/1965_Plymouth_Belvedere_Brochure/slides/1965_Plymouth_Belvedere-18-19.html",
+      "says": "'383 Optional Commando', 330 hp at 4600, 4-bbl, dual exhaust"
+     },
+     {
+      "name": "Wikipedia: Plymouth Satellite + Plymouth Belvedere (engine table, cites Standard Catalog of American Cars) + Chrysler B / LA / Slant-6 engine application lists (counted as ONE source)",
+      "url": "https://en.wikipedia.org/wiki/Plymouth_Satellite",
+      "says": "Commando 383 at 325 hp [1966], down from its 330 hp rating in 1965"
+     }
+    ],
+    "status": "confirmed",
+    "note": "SAE gross. Commando 383 4-bbl."
+   },
+   {
+    "gen": "gen1",
+    "cid": 426,
+    "hp": 365,
+    "hp_basis": "gross",
+    "carb": "4-bbl",
+    "name": "426 Street Wedge (Commando)",
+    "trims": [
+     "Satellite (opt)"
+    ],
+    "nhra": true,
+    "sources": [
+     {
+      "name": "NHRA Stock Car Classification Guide (1965-70 rows under BELVEDERE / BELVEDERE I / II headings, nhra_satellite.json; 1971-74 rows under 'SATELITE SEBRING', 'SATELITE SEBRING PLUS', 'SEBRING', 'SEBRING PLUS' headings, scc_rows.json)",
+      "url": "scratchpad nhra_satellite.json / scc_rows.json",
+      "says": "BELVEDERE I / II: 426 ci / 365 hp (C-426-19)"
+     },
+     {
+      "name": "Plymouth 1965 Belvedere brochure, Belvedere Specifications p.18 (V-8 engine tables)",
+      "url": "https://www.oldcarbrochures.org/United%20States/Plymouth/1965%20Plymouth/1965_Plymouth_Belvedere_Brochure/slides/1965_Plymouth_Belvedere-18-19.html",
+      "says": "'426 Optional Commando', 365 hp at 4800, 4-bbl"
+     },
+     {
+      "name": "Wikipedia: Plymouth Satellite + Plymouth Belvedere (engine table, cites Standard Catalog of American Cars) + Chrysler B / LA / Slant-6 engine application lists (counted as ONE source)",
+      "url": "https://en.wikipedia.org/wiki/Plymouth_Satellite",
+      "says": "426 'Commando' wedge (1965 only), not the Hemi; Belvedere table 426 Wedge 365 hp 1965"
+     }
+    ],
+    "status": "confirmed",
+    "note": "SAE gross. 426 Street Wedge, 1965 only; B-body only."
+   },
+   {
+    "gen": "gen1",
+    "cid": 426,
+    "hp": null,
+    "hp_basis": "gross",
+    "carb": "2x4-bbl",
+    "name": "426 Super Commando (Max Wedge)",
+    "trims": [
+     "Satellite (special order)"
+    ],
+    "nhra": true,
+    "sources": [
+     {
+      "name": "NHRA Stock Car Classification Guide (1965-70 rows under BELVEDERE / BELVEDERE I / II headings, nhra_satellite.json; 1971-74 rows under 'SATELITE SEBRING', 'SATELITE SEBRING PLUS', 'SEBRING', 'SEBRING PLUS' headings, scc_rows.json)",
+      "url": "scratchpad nhra_satellite.json / scc_rows.json",
+      "says": "BELVEDERE II: 426 ci / 400 hp (C-426-07); BELVEDERE I also 425 hp (C-426-08/09)"
+     },
+     {
+      "name": "Plymouth 1965 Belvedere brochure, Belvedere Specifications p.18 (V-8 engine tables)",
+      "url": "https://www.oldcarbrochures.org/United%20States/Plymouth/1965%20Plymouth/1965_Plymouth_Belvedere_Brochure/slides/1965_Plymouth_Belvedere-18-19.html",
+      "says": "'426 Optional Super Commando': 'Not recommended for general highway driving. Full specifications available from your Plymouth Dealer on request'"
+     }
+    ],
+    "status": "race_only",
+    "note": "426 Super Commando (Max Wedge Stage III) race package; factory printed no hp. NHRA factors 400 hp (Belvedere II) and 425 (Belvedere I); Hagerty lists 415/425. The 1965 race Hemi (A864) appears in NHRA only under BELVEDERE I, not a Satellite engine."
+   }
+  ],
+  "1966": [
+   {
+    "gen": "gen1",
+    "cid": 273,
+    "hp": 180,
+    "hp_basis": "gross",
+    "carb": "2-bbl",
+    "trims": [
+     "Satellite (std)"
+    ],
+    "nhra": true,
+    "sources": [
+     {
+      "name": "NHRA Stock Car Classification Guide (1965-70 rows under BELVEDERE / BELVEDERE I / II headings, nhra_satellite.json; 1971-74 rows under 'SATELITE SEBRING', 'SATELITE SEBRING PLUS', 'SEBRING', 'SEBRING PLUS' headings, scc_rows.json)",
+      "url": "scratchpad nhra_satellite.json / scc_rows.json",
+      "says": "BELVEDERE I / II: 273 ci / 180 hp (C-273-06)"
+     },
+     {
+      "name": "Plymouth 1966 Belvedere brochure, Satellite p.2-3 and engine chart p.12; 1966 Plymouth 'Hot Ones' brochure, Hemi-powered Belvedere p.2-3",
+      "url": "https://www.oldcarbrochures.org/United%20States/Plymouth/1966%20Plymouth/1966-Plymouth-Belvedere-Brochure/slides/1966_Plymouth_Belvedere-12-13.html",
+      "says": "Satellite page: 'Satellite, with the 273-cu.-in. V-8 engine and 3-speed manual transmission'; chart: 273 Standard V-8, 180 hp at 4200"
+     },
+     {
+      "name": "Wikipedia: Plymouth Satellite + Plymouth Belvedere (engine table, cites Standard Catalog of American Cars) + Chrysler B / LA / Slant-6 engine application lists (counted as ONE source)",
+      "url": "https://en.wikipedia.org/wiki/Plymouth_Satellite",
+      "says": "other V8 options for 1966 remained the 180 hp 273"
+     }
+    ],
+    "status": "confirmed",
+    "note": "SAE gross. Satellite remained V-8 only."
+   },
+   {
+    "gen": "gen1",
+    "cid": 318,
+    "hp": 230,
+    "hp_basis": "gross",
+    "carb": "2-bbl",
+    "trims": [
+     "Satellite (opt)"
+    ],
+    "nhra": true,
+    "sources": [
+     {
+      "name": "NHRA Stock Car Classification Guide (1965-70 rows under BELVEDERE / BELVEDERE I / II headings, nhra_satellite.json; 1971-74 rows under 'SATELITE SEBRING', 'SATELITE SEBRING PLUS', 'SEBRING', 'SEBRING PLUS' headings, scc_rows.json)",
+      "url": "scratchpad nhra_satellite.json / scc_rows.json",
+      "says": "BELVEDERE I / II: 318 ci / 230 hp (C-318-10, C-318-27)"
+     },
+     {
+      "name": "Plymouth 1966 Belvedere brochure, Satellite p.2-3 and engine chart p.12; 1966 Plymouth 'Hot Ones' brochure, Hemi-powered Belvedere p.2-3",
+      "url": "https://www.oldcarbrochures.org/United%20States/Plymouth/1966%20Plymouth/1966-Plymouth-Belvedere-Brochure/slides/1966_Plymouth_Belvedere-12-13.html",
+      "says": "chart: '318 Optional V-8', 230 hp at 4400"
+     },
+     {
+      "name": "Wikipedia: Plymouth Satellite + Plymouth Belvedere (engine table, cites Standard Catalog of American Cars) + Chrysler B / LA / Slant-6 engine application lists (counted as ONE source)",
+      "url": "https://en.wikipedia.org/wiki/Plymouth_Satellite",
+      "says": "the 318 at 230 hp"
+     }
+    ],
+    "status": "confirmed",
+    "note": "SAE gross."
+   },
+   {
+    "gen": "gen1",
+    "cid": 361,
+    "hp": 265,
+    "hp_basis": "gross",
+    "carb": "2-bbl",
+    "trims": [
+     "Satellite (opt)"
+    ],
+    "nhra": true,
+    "sources": [
+     {
+      "name": "NHRA Stock Car Classification Guide (1965-70 rows under BELVEDERE / BELVEDERE I / II headings, nhra_satellite.json; 1971-74 rows under 'SATELITE SEBRING', 'SATELITE SEBRING PLUS', 'SEBRING', 'SEBRING PLUS' headings, scc_rows.json)",
+      "url": "scratchpad nhra_satellite.json / scc_rows.json",
+      "says": "BELVEDERE I / II: 361 ci / 265 hp (C-361-12)"
+     },
+     {
+      "name": "Plymouth 1966 Belvedere brochure, Satellite p.2-3 and engine chart p.12; 1966 Plymouth 'Hot Ones' brochure, Hemi-powered Belvedere p.2-3",
+      "url": "https://www.oldcarbrochures.org/United%20States/Plymouth/1966%20Plymouth/1966-Plymouth-Belvedere-Brochure/slides/1966_Plymouth_Belvedere-12-13.html",
+      "says": "chart: '361 Optional Commando V-8', 265 hp at 4400"
+     },
+     {
+      "name": "Wikipedia: Plymouth Satellite + Plymouth Belvedere (engine table, cites Standard Catalog of American Cars) + Chrysler B / LA / Slant-6 engine application lists (counted as ONE source)",
+      "url": "https://en.wikipedia.org/wiki/Plymouth_Satellite",
+      "says": "the 265 hp Commando 361"
+     }
+    ],
+    "status": "confirmed",
+    "note": "SAE gross. Last year of the 361 in the Satellite."
+   },
+   {
+    "gen": "gen1",
+    "cid": 383,
+    "hp": 325,
+    "hp_basis": "gross",
+    "carb": "4-bbl",
+    "trims": [
+     "Satellite (opt)"
+    ],
+    "nhra": true,
+    "sources": [
+     {
+      "name": "NHRA Stock Car Classification Guide (1965-70 rows under BELVEDERE / BELVEDERE I / II headings, nhra_satellite.json; 1971-74 rows under 'SATELITE SEBRING', 'SATELITE SEBRING PLUS', 'SEBRING', 'SEBRING PLUS' headings, scc_rows.json)",
+      "url": "scratchpad nhra_satellite.json / scc_rows.json",
+      "says": "BELVEDERE I / II: 383 ci / 325 hp (C-383-13)"
+     },
+     {
+      "name": "Plymouth 1966 Belvedere brochure, Satellite p.2-3 and engine chart p.12; 1966 Plymouth 'Hot Ones' brochure, Hemi-powered Belvedere p.2-3",
+      "url": "https://www.oldcarbrochures.org/United%20States/Plymouth/1966%20Plymouth/1966-Plymouth-Belvedere-Brochure/slides/1966_Plymouth_Belvedere-12-13.html",
+      "says": "chart: '383 Optional Commando V-8', 325 hp at 4800, 4-bbl; options: 'Commando 383-cu.-in. V-8 Engine ... Develops 325 hp'"
+     },
+     {
+      "name": "Wikipedia: Plymouth Satellite + Plymouth Belvedere (engine table, cites Standard Catalog of American Cars) + Chrysler B / LA / Slant-6 engine application lists (counted as ONE source)",
+      "url": "https://en.wikipedia.org/wiki/Plymouth_Satellite",
+      "says": "Commando 383 at 325 hp, down from its 330 hp rating in 1965"
+     }
+    ],
+    "status": "confirmed",
+    "note": "SAE gross."
+   },
+   {
+    "gen": "gen1",
+    "cid": 426,
+    "hp": 425,
+    "hp_basis": "gross",
+    "carb": "2x4-bbl",
+    "name": "Street Hemi",
+    "trims": [
+     "Satellite (opt)"
+    ],
+    "nhra": true,
+    "sources": [
+     {
+      "name": "NHRA Stock Car Classification Guide (1965-70 rows under BELVEDERE / BELVEDERE I / II headings, nhra_satellite.json; 1971-74 rows under 'SATELITE SEBRING', 'SATELITE SEBRING PLUS', 'SEBRING', 'SEBRING PLUS' headings, scc_rows.json)",
+      "url": "scratchpad nhra_satellite.json / scc_rows.json",
+      "says": "BELVEDERE I / II: 426 ci / 425 hp (C-426-13, C-426-14)"
+     },
+     {
+      "name": "Plymouth 1966 Belvedere brochure, Satellite p.2-3 and engine chart p.12; 1966 Plymouth 'Hot Ones' brochure, Hemi-powered Belvedere p.2-3",
+      "url": "https://www.oldcarbrochures.org/United%20States/Plymouth/1966%20Plymouth/1966-Plymouth-Belvedere-Brochure/slides/1966_Plymouth_Belvedere-12-13.html",
+      "says": "Hot Ones brochure: 'Now the 426 Hemi is available as an option in the '66 Plymouth Belvedere'; 'Belvedere Satellites have bucket seats up front'; 425 hp at 5000"
+     },
+     {
+      "name": "Wikipedia: Plymouth Satellite + Plymouth Belvedere (engine table, cites Standard Catalog of American Cars) + Chrysler B / LA / Slant-6 engine application lists (counted as ONE source)",
+      "url": "https://en.wikipedia.org/wiki/Plymouth_Satellite",
+      "says": "1966 redesigned Satellite was available with a 'Street Hemi' ... 425 hp at 5,000 rpm"
+     },
+     {
+      "name": "SlashGear (Azzief Khaliq, 2024): Every car that used a street version of the 426 Hemi, 1964-1971",
+      "url": "https://www.slashgear.com/1609813/every-car-used-426-hemi-engine-street-version",
+      "says": "the Satellite was only officially available with the 426 Street Hemi in 1966"
+     },
+     {
+      "name": "Conceptcarz (Dan Vaughan / Jessica Donaldson): Plymouth Satellite history",
+      "url": "https://www.conceptcarz.com/w739/plymouth-satellite.aspx",
+      "says": "The Satellite was available with the newly optional 'Street Hemi' engine in 1966"
+     }
+    ],
+    "status": "confirmed",
+    "note": "SAE gross. First year of the Street Hemi."
+   }
+  ],
+  "1967": [
+   {
+    "gen": "gen1",
+    "cid": 273,
+    "hp": 180,
+    "hp_basis": "gross",
+    "carb": "2-bbl",
+    "trims": [
+     "Satellite (std)"
+    ],
+    "nhra": true,
+    "sources": [
+     {
+      "name": "NHRA Stock Car Classification Guide (1965-70 rows under BELVEDERE / BELVEDERE I / II headings, nhra_satellite.json; 1971-74 rows under 'SATELITE SEBRING', 'SATELITE SEBRING PLUS', 'SEBRING', 'SEBRING PLUS' headings, scc_rows.json)",
+      "url": "scratchpad nhra_satellite.json / scc_rows.json",
+      "says": "BELVEDERE / I / II: 273 ci / 180 hp (C-273-06)"
+     },
+     {
+      "name": "Plymouth 1967 Belvedere brochure, series list p.2 and engine table p.23",
+      "url": "https://www.oldcarbrochures.org/United%20States/Plymouth/1967%20Plymouth/1967%20Plymouth%20Belvedere/slides/1967_Plymouth_Belvedere-22-23.html",
+      "says": "series list: 'Belvedere Satellite: V-8 models: 2-door hardtop, convertible'; table: '273 Standard V-8', 180 hp at 4200"
+     },
+     {
+      "name": "Wikipedia: Plymouth Satellite + Plymouth Belvedere (engine table, cites Standard Catalog of American Cars) + Chrysler B / LA / Slant-6 engine application lists (counted as ONE source)",
+      "url": "https://en.wikipedia.org/wiki/Plymouth_Satellite",
+      "says": "Belvedere engine table: 273 2-bbl 180 hp 1965-1967; Satellite 'powered by V8 engines'"
+     }
+    ],
+    "status": "confirmed",
+    "note": "SAE gross."
+   },
+   {
+    "gen": "gen1",
+    "cid": 318,
+    "hp": 230,
+    "hp_basis": "gross",
+    "carb": "2-bbl",
+    "trims": [
+     "Satellite (opt)"
+    ],
+    "nhra": true,
+    "sources": [
+     {
+      "name": "NHRA Stock Car Classification Guide (1965-70 rows under BELVEDERE / BELVEDERE I / II headings, nhra_satellite.json; 1971-74 rows under 'SATELITE SEBRING', 'SATELITE SEBRING PLUS', 'SEBRING', 'SEBRING PLUS' headings, scc_rows.json)",
+      "url": "scratchpad nhra_satellite.json / scc_rows.json",
+      "says": "BELVEDERE / I / II: 318 ci / 230 hp (C-318-45)"
+     },
+     {
+      "name": "Plymouth 1967 Belvedere brochure, series list p.2 and engine table p.23",
+      "url": "https://www.oldcarbrochures.org/United%20States/Plymouth/1967%20Plymouth/1967%20Plymouth%20Belvedere/slides/1967_Plymouth_Belvedere-22-23.html",
+      "says": "table: '318 Optional V-8', 230 hp at 4400"
+     },
+     {
+      "name": "Wikipedia: Plymouth Satellite + Plymouth Belvedere (engine table, cites Standard Catalog of American Cars) + Chrysler B / LA / Slant-6 engine application lists (counted as ONE source)",
+      "url": "https://en.wikipedia.org/wiki/Plymouth_Satellite",
+      "says": "Belvedere engine table: 318 2-bbl 230 hp 1965-1967"
+     }
+    ],
+    "status": "confirmed",
+    "note": "SAE gross. LA-block 318 new for 1967."
+   },
+   {
+    "gen": "gen1",
+    "cid": 383,
+    "hp": 270,
+    "hp_basis": "gross",
+    "carb": "2-bbl",
+    "trims": [
+     "Satellite (opt)"
+    ],
+    "nhra": true,
+    "sources": [
+     {
+      "name": "NHRA Stock Car Classification Guide (1965-70 rows under BELVEDERE / BELVEDERE I / II headings, nhra_satellite.json; 1971-74 rows under 'SATELITE SEBRING', 'SATELITE SEBRING PLUS', 'SEBRING', 'SEBRING PLUS' headings, scc_rows.json)",
+      "url": "scratchpad nhra_satellite.json / scc_rows.json",
+      "says": "BELVEDERE / I / II: 383 ci / 270 hp (C-383-06)"
+     },
+     {
+      "name": "Plymouth 1967 Belvedere brochure, series list p.2 and engine table p.23",
+      "url": "https://www.oldcarbrochures.org/United%20States/Plymouth/1967%20Plymouth/1967%20Plymouth%20Belvedere/slides/1967_Plymouth_Belvedere-22-23.html",
+      "says": "table: '383 2-bbl. Optional Commando V-8', 270 hp at 4400"
+     },
+     {
+      "name": "Wikipedia: Plymouth Satellite + Plymouth Belvedere (engine table, cites Standard Catalog of American Cars) + Chrysler B / LA / Slant-6 engine application lists (counted as ONE source)",
+      "url": "https://en.wikipedia.org/wiki/Plymouth_Satellite",
+      "says": "The 361 was discontinued for the 1967 models, but a 2-barrel 383 producing 270 hp was optional"
+     }
+    ],
+    "status": "confirmed",
+    "note": "SAE gross. Replaced the 361."
+   },
+   {
+    "gen": "gen1",
+    "cid": 383,
+    "hp": 325,
+    "hp_basis": "gross",
+    "carb": "4-bbl",
+    "trims": [
+     "Satellite (opt)"
+    ],
+    "nhra": true,
+    "sources": [
+     {
+      "name": "NHRA Stock Car Classification Guide (1965-70 rows under BELVEDERE / BELVEDERE I / II headings, nhra_satellite.json; 1971-74 rows under 'SATELITE SEBRING', 'SATELITE SEBRING PLUS', 'SEBRING', 'SEBRING PLUS' headings, scc_rows.json)",
+      "url": "scratchpad nhra_satellite.json / scc_rows.json",
+      "says": "BELVEDERE / I / II: 383 ci / 325 hp (C-383-13)"
+     },
+     {
+      "name": "Plymouth 1967 Belvedere brochure, series list p.2 and engine table p.23",
+      "url": "https://www.oldcarbrochures.org/United%20States/Plymouth/1967%20Plymouth/1967%20Plymouth%20Belvedere/slides/1967_Plymouth_Belvedere-22-23.html",
+      "says": "table: '383 4-bbl. Optional Commando V-8', 325 hp at 4800"
+     },
+     {
+      "name": "Wikipedia: Plymouth Satellite + Plymouth Belvedere (engine table, cites Standard Catalog of American Cars) + Chrysler B / LA / Slant-6 engine application lists (counted as ONE source)",
+      "url": "https://en.wikipedia.org/wiki/Plymouth_Satellite",
+      "says": "as well as 4-barrel version rated at 325 hp"
+     }
+    ],
+    "status": "confirmed",
+    "note": "SAE gross."
+   },
+   {
+    "gen": "gen1",
+    "cid": 426,
+    "hp": 425,
+    "hp_basis": "gross",
+    "carb": "2x4-bbl",
+    "name": "Street Hemi",
+    "trims": [
+     "Satellite (opt)"
+    ],
+    "nhra": true,
+    "sources": [
+     {
+      "name": "NHRA Stock Car Classification Guide (1965-70 rows under BELVEDERE / BELVEDERE I / II headings, nhra_satellite.json; 1971-74 rows under 'SATELITE SEBRING', 'SATELITE SEBRING PLUS', 'SEBRING', 'SEBRING PLUS' headings, scc_rows.json)",
+      "url": "scratchpad nhra_satellite.json / scc_rows.json",
+      "says": "BELVEDERE / I / II: 426 ci / 425 hp (C-426-13, C-426-14)"
+     },
+     {
+      "name": "Plymouth 1967 Belvedere brochure, series list p.2 and engine table p.23",
+      "url": "https://www.oldcarbrochures.org/United%20States/Plymouth/1967%20Plymouth/1967%20Plymouth%20Belvedere/slides/1967_Plymouth_Belvedere-22-23.html",
+      "says": "table: '426 Optional Hemi V-8', 425 hp at 5000 (Belvedere-line table; GTX text: 'The fantastic Street Hemi is available at extra cost')"
+     },
+     {
+      "name": "Wikipedia: Plymouth Satellite + Plymouth Belvedere (engine table, cites Standard Catalog of American Cars) + Chrysler B / LA / Slant-6 engine application lists (counted as ONE source)",
+      "url": "https://en.wikipedia.org/wiki/Plymouth_Satellite",
+      "says": "Belvedere engine table: 1967 426 Hemi 2x4-bbl 425 hp; Satellite infobox: Hemi 'introduced 1966' (not limited to 1966)"
+     }
+    ],
+    "status": "confirmed",
+    "note": "SAE gross. SlashGear says the Satellite was 'only officially available with the 426 Street Hemi in 1966' and that about 11 1967 Belvederes got Hemis as dealer special orders; the 1967 factory Belvedere-line table and NHRA both list it, so it is kept as a rare 1967 option."
+   }
+  ],
+  "1968": [
+   {
+    "gen": "gen2",
+    "cid": 225,
+    "hp": 145,
+    "hp_basis": "gross",
+    "carb": "1-bbl",
+    "name": "Slant Six",
+    "trims": [
+     "Satellite (std)",
+     "Satellite wagon (std)"
+    ],
+    "nhra": true,
+    "sources": [
+     {
+      "name": "NHRA Stock Car Classification Guide (1965-70 rows under BELVEDERE / BELVEDERE I / II headings, nhra_satellite.json; 1971-74 rows under 'SATELITE SEBRING', 'SATELITE SEBRING PLUS', 'SEBRING', 'SEBRING PLUS' headings, scc_rows.json)",
+      "url": "scratchpad nhra_satellite.json / scc_rows.json",
+      "says": "BELVEDERE: 225 ci / 145 hp (C-225-01, C-225-21)"
+     },
+     {
+      "name": "Plymouth 1968 mid-size brochure, engines p.26 and Specifications engine table (standard on / optional on) p.27; model chart p.28",
+      "url": "https://www.oldcarbrochures.org/United%20States/Plymouth/1968%20Plymouth/1968-Plymouth-Mid-Size-Brochure/slides/1968_Plymouth_Mid-Size-26-27.html",
+      "says": "table: 225 6, 145 hp at 4000; 'Standard on: Belvedere, Satellite'; model chart: 'Satellite ... V-8 & 6', 'Sport Satellite ... V-8'"
+     },
+     {
+      "name": "Curbside Classic: 1970 Plymouth Satellite - Lesser-Known B-Side",
+      "url": "https://www.curbsideclassic.com/uncategorized/curbside-classic-1970-plymouth-satellite-lesser-known-b-side/",
+      "says": "when restyled in '68 ... 'Our miserly 225 cubic inch six' sell lines show the Satellite was intended to be Plymouth's family yeoman"
+     }
+    ],
+    "status": "confirmed",
+    "note": "SAE gross. First Satellite six (Satellite became the mid-trim B-body line; sedan and wagon added). Not offered on Sport Satellite."
+   },
+   {
+    "gen": "gen2",
+    "cid": 273,
+    "hp": 190,
+    "hp_basis": "gross",
+    "carb": "2-bbl",
+    "trims": [
+     "Satellite (std V-8)",
+     "Satellite Sport Wagon (std)"
+    ],
+    "nhra": true,
+    "sources": [
+     {
+      "name": "NHRA Stock Car Classification Guide (1965-70 rows under BELVEDERE / BELVEDERE I / II headings, nhra_satellite.json; 1971-74 rows under 'SATELITE SEBRING', 'SATELITE SEBRING PLUS', 'SEBRING', 'SEBRING PLUS' headings, scc_rows.json)",
+      "url": "scratchpad nhra_satellite.json / scc_rows.json",
+      "says": "BELVEDERE: 273 ci / 190 hp (C-273-05)"
+     },
+     {
+      "name": "Plymouth 1968 mid-size brochure, engines p.26 and Specifications engine table (standard on / optional on) p.27; model chart p.28",
+      "url": "https://www.oldcarbrochures.org/United%20States/Plymouth/1968%20Plymouth/1968-Plymouth-Mid-Size-Brochure/slides/1968_Plymouth_Mid-Size-26-27.html",
+      "says": "table: 273 V-8, 190 hp at 4400; 'Standard on: Belvedere, Satellite, Satellite Sport Wagon'"
+     },
+     {
+      "name": "Wikipedia: Plymouth Satellite + Plymouth Belvedere (engine table, cites Standard Catalog of American Cars) + Chrysler B / LA / Slant-6 engine application lists (counted as ONE source)",
+      "url": "https://en.wikipedia.org/wiki/Plymouth_Satellite",
+      "says": "Satellite 1968-70 infobox and Chrysler LA engine 273 applications list the Plymouth Satellite"
+     }
+    ],
+    "status": "confirmed",
+    "note": "SAE gross. 1968 only for the 273 in this generation (new 190 hp rating)."
+   },
+   {
+    "gen": "gen2",
+    "cid": 318,
+    "hp": 230,
+    "hp_basis": "gross",
+    "carb": "2-bbl",
+    "trims": [
+     "Sport Satellite (std)",
+     "Satellite (opt)"
+    ],
+    "nhra": true,
+    "sources": [
+     {
+      "name": "NHRA Stock Car Classification Guide (1965-70 rows under BELVEDERE / BELVEDERE I / II headings, nhra_satellite.json; 1971-74 rows under 'SATELITE SEBRING', 'SATELITE SEBRING PLUS', 'SEBRING', 'SEBRING PLUS' headings, scc_rows.json)",
+      "url": "scratchpad nhra_satellite.json / scc_rows.json",
+      "says": "BELVEDERE: 318 ci / 230 hp (C-318-32)"
+     },
+     {
+      "name": "Plymouth 1968 mid-size brochure, engines p.26 and Specifications engine table (standard on / optional on) p.27; model chart p.28",
+      "url": "https://www.oldcarbrochures.org/United%20States/Plymouth/1968%20Plymouth/1968-Plymouth-Mid-Size-Brochure/slides/1968_Plymouth_Mid-Size-26-27.html",
+      "says": "table: 318 V-8, 230 hp at 4400; 'Standard on: Sport Satellite'; 'Optional on: Belvedere, Satellite, Satellite Sport Wagon'"
+     },
+     {
+      "name": "Wikipedia: Plymouth Satellite + Plymouth Belvedere (engine table, cites Standard Catalog of American Cars) + Chrysler B / LA / Slant-6 engine application lists (counted as ONE source)",
+      "url": "https://en.wikipedia.org/wiki/Plymouth_Satellite",
+      "says": "A restyled and higher trimmed Sport Satellite model with a standard 318 V8 was introduced in 1968"
+     },
+     {
+      "name": "Hagerty Valuation Tools: Plymouth Satellite by year (login-walled; configuration lists and descriptions seen via search excerpts; known to contain errors)",
+      "url": "https://www.hagerty.com/valuation-tools/plymouth/satellite",
+      "says": "1968 Satellite: 318 V8 230 bhp"
+     }
+    ],
+    "status": "confirmed",
+    "note": "SAE gross."
+   },
+   {
+    "gen": "gen2",
+    "cid": 383,
+    "hp": 290,
+    "hp_basis": "gross",
+    "carb": "2-bbl",
+    "trims": [
+     "Satellite (opt)",
+     "Sport Satellite (opt)"
+    ],
+    "nhra": true,
+    "sources": [
+     {
+      "name": "NHRA Stock Car Classification Guide (1965-70 rows under BELVEDERE / BELVEDERE I / II headings, nhra_satellite.json; 1971-74 rows under 'SATELITE SEBRING', 'SATELITE SEBRING PLUS', 'SEBRING', 'SEBRING PLUS' headings, scc_rows.json)",
+      "url": "scratchpad nhra_satellite.json / scc_rows.json",
+      "says": "BELVEDERE: 383 ci / 290 hp (C-383-08)"
+     },
+     {
+      "name": "Plymouth 1968 mid-size brochure, engines p.26 and Specifications engine table (standard on / optional on) p.27; model chart p.28",
+      "url": "https://www.oldcarbrochures.org/United%20States/Plymouth/1968%20Plymouth/1968-Plymouth-Mid-Size-Brochure/slides/1968_Plymouth_Mid-Size-26-27.html",
+      "says": "table: 383 Commando V-8, 290 hp at 4400, 2-bbl; optional on Belvedere, Satellite, Sport Satellite, Satellite Sport Wagon"
+     },
+     {
+      "name": "Hagerty Valuation Tools: Plymouth Satellite by year (login-walled; configuration lists and descriptions seen via search excerpts; known to contain errors)",
+      "url": "https://www.hagerty.com/valuation-tools/plymouth/satellite",
+      "says": "1968 Satellite: 383 V8 290 bhp"
+     }
+    ],
+    "status": "confirmed",
+    "note": "SAE gross. Commando 383 2-bbl."
+   },
+   {
+    "gen": "gen2",
+    "cid": 383,
+    "hp": 330,
+    "hp_basis": "gross",
+    "carb": "4-bbl",
+    "trims": [
+     "Satellite (opt)",
+     "Sport Satellite (opt)"
+    ],
+    "nhra": true,
+    "sources": [
+     {
+      "name": "NHRA Stock Car Classification Guide (1965-70 rows under BELVEDERE / BELVEDERE I / II headings, nhra_satellite.json; 1971-74 rows under 'SATELITE SEBRING', 'SATELITE SEBRING PLUS', 'SEBRING', 'SEBRING PLUS' headings, scc_rows.json)",
+      "url": "scratchpad nhra_satellite.json / scc_rows.json",
+      "says": "BELVEDERE: 383 ci / 330 hp (C-383-03)"
+     },
+     {
+      "name": "Plymouth 1968 mid-size brochure, engines p.26 and Specifications engine table (standard on / optional on) p.27; model chart p.28",
+      "url": "https://www.oldcarbrochures.org/United%20States/Plymouth/1968%20Plymouth/1968-Plymouth-Mid-Size-Brochure/slides/1968_Plymouth_Mid-Size-26-27.html",
+      "says": "table: 383 Super Commando V-8, 330 hp at 5000, 4-bbl; optional on Belvedere, Satellite, Sport Satellite, Satellite Sport Wagon"
+     },
+     {
+      "name": "Hagerty Valuation Tools: Plymouth Satellite by year (login-walled; configuration lists and descriptions seen via search excerpts; known to contain errors)",
+      "url": "https://www.hagerty.com/valuation-tools/plymouth/satellite",
+      "says": "1968 Satellite: 383 V8 330 bhp"
+     }
+    ],
+    "status": "confirmed",
+    "note": "SAE gross. Super Commando 383 (not the 335 hp Road Runner 383). Hagerty also lists a 426/425 Satellite configuration; the factory table says the Hemi was optional only on Road Runner and GTX, and the 440 standard only on GTX, so neither is a Satellite engine."
+   }
+  ],
+  "1969": [
+   {
+    "gen": "gen2",
+    "cid": 225,
+    "hp": 145,
+    "hp_basis": "gross",
+    "carb": "1-bbl",
+    "name": "Slant Six",
+    "trims": [
+     "Satellite (std)"
+    ],
+    "nhra": true,
+    "sources": [
+     {
+      "name": "NHRA Stock Car Classification Guide (1965-70 rows under BELVEDERE / BELVEDERE I / II headings, nhra_satellite.json; 1971-74 rows under 'SATELITE SEBRING', 'SATELITE SEBRING PLUS', 'SEBRING', 'SEBRING PLUS' headings, scc_rows.json)",
+      "url": "scratchpad nhra_satellite.json / scc_rows.json",
+      "says": "BELVEDERE: 225 ci / 145 hp (C-225-01, C-225-21)"
+     },
+     {
+      "name": "Plymouth 1969 Belvedere brochure, engines p.28 and Specifications engine table (standard on / optional on) p.29",
+      "url": "https://www.oldcarbrochures.org/United%20States/Plymouth/1969-Plymouth/1969-Plymouth-Belvedere-Brochure/slides/1969_Plymouth_Belvedere-28-29.html",
+      "says": "table: 225 6, 145 hp at 4000; 'Standard on: Belvedere, Satellite'"
+     },
+     {
+      "name": "Hagerty Valuation Tools: Plymouth Satellite by year (login-walled; configuration lists and descriptions seen via search excerpts; known to contain errors)",
+      "url": "https://www.hagerty.com/valuation-tools/plymouth/satellite",
+      "says": "1969 Satellite: inline 6 225 cu in 145 HP"
+     },
+     {
+      "name": "Curbside Classic: 1970 Plymouth Satellite - Lesser-Known B-Side",
+      "url": "https://www.curbsideclassic.com/uncategorized/curbside-classic-1970-plymouth-satellite-lesser-known-b-side/",
+      "says": "1968-70 Satellite advertised with 'Our miserly 225 cubic inch six'"
+     }
+    ],
+    "status": "confirmed",
+    "note": "SAE gross. Not on Sport Satellite."
+   },
+   {
+    "gen": "gen2",
+    "cid": 318,
+    "hp": 230,
+    "hp_basis": "gross",
+    "carb": "2-bbl",
+    "trims": [
+     "Satellite (std V-8)",
+     "Sport Satellite (std)"
+    ],
+    "nhra": true,
+    "sources": [
+     {
+      "name": "NHRA Stock Car Classification Guide (1965-70 rows under BELVEDERE / BELVEDERE I / II headings, nhra_satellite.json; 1971-74 rows under 'SATELITE SEBRING', 'SATELITE SEBRING PLUS', 'SEBRING', 'SEBRING PLUS' headings, scc_rows.json)",
+      "url": "scratchpad nhra_satellite.json / scc_rows.json",
+      "says": "BELVEDERE: 318 ci / 230 hp (C-318-32)"
+     },
+     {
+      "name": "Plymouth 1969 Belvedere brochure, engines p.28 and Specifications engine table (standard on / optional on) p.29",
+      "url": "https://www.oldcarbrochures.org/United%20States/Plymouth/1969-Plymouth/1969-Plymouth-Belvedere-Brochure/slides/1969_Plymouth_Belvedere-28-29.html",
+      "says": "'This year, for the first time - the standard V-8 for Belvedere, Satellite and Sport Satellite'; table 230 hp at 4400"
+     },
+     {
+      "name": "Hagerty Valuation Tools: Plymouth Satellite by year (login-walled; configuration lists and descriptions seen via search excerpts; known to contain errors)",
+      "url": "https://www.hagerty.com/valuation-tools/plymouth/satellite",
+      "says": "1969 Satellite: 318 cu in 230 BHP"
+     }
+    ],
+    "status": "confirmed",
+    "note": "SAE gross. 318 replaced the 273 as base V-8."
+   },
+   {
+    "gen": "gen2",
+    "cid": 383,
+    "hp": 290,
+    "hp_basis": "gross",
+    "carb": "2-bbl",
+    "trims": [
+     "Satellite (opt)",
+     "Sport Satellite (opt)"
+    ],
+    "nhra": true,
+    "sources": [
+     {
+      "name": "NHRA Stock Car Classification Guide (1965-70 rows under BELVEDERE / BELVEDERE I / II headings, nhra_satellite.json; 1971-74 rows under 'SATELITE SEBRING', 'SATELITE SEBRING PLUS', 'SEBRING', 'SEBRING PLUS' headings, scc_rows.json)",
+      "url": "scratchpad nhra_satellite.json / scc_rows.json",
+      "says": "BELVEDERE: 383 ci / 290 hp (C-383-07)"
+     },
+     {
+      "name": "Plymouth 1969 Belvedere brochure, engines p.28 and Specifications engine table (standard on / optional on) p.29",
+      "url": "https://www.oldcarbrochures.org/United%20States/Plymouth/1969-Plymouth/1969-Plymouth-Belvedere-Brochure/slides/1969_Plymouth_Belvedere-28-29.html",
+      "says": "table: 383 Commando V-8 290 hp at 4400; 'Optional on: Belvedere, Satellite, Sport Satellite'"
+     },
+     {
+      "name": "Hagerty Valuation Tools: Plymouth Satellite by year (login-walled; configuration lists and descriptions seen via search excerpts; known to contain errors)",
+      "url": "https://www.hagerty.com/valuation-tools/plymouth/satellite",
+      "says": "1969 Satellite: 383 cu in 290 BHP"
+     }
+    ],
+    "status": "confirmed",
+    "note": "SAE gross."
+   },
+   {
+    "gen": "gen2",
+    "cid": 383,
+    "hp": 330,
+    "hp_basis": "gross",
+    "carb": "4-bbl",
+    "trims": [
+     "Satellite (opt)",
+     "Sport Satellite (opt)"
+    ],
+    "nhra": true,
+    "sources": [
+     {
+      "name": "NHRA Stock Car Classification Guide (1965-70 rows under BELVEDERE / BELVEDERE I / II headings, nhra_satellite.json; 1971-74 rows under 'SATELITE SEBRING', 'SATELITE SEBRING PLUS', 'SEBRING', 'SEBRING PLUS' headings, scc_rows.json)",
+      "url": "scratchpad nhra_satellite.json / scc_rows.json",
+      "says": "BELVEDERE: 383 ci / 330 hp (C-383-03)"
+     },
+     {
+      "name": "Plymouth 1969 Belvedere brochure, engines p.28 and Specifications engine table (standard on / optional on) p.29",
+      "url": "https://www.oldcarbrochures.org/United%20States/Plymouth/1969-Plymouth/1969-Plymouth-Belvedere-Brochure/slides/1969_Plymouth_Belvedere-28-29.html",
+      "says": "table: 383 Super Commando V-8 330 hp at 5000; 'Optional on: Belvedere, Satellite, Sport Satellite'"
+     },
+     {
+      "name": "Hagerty Valuation Tools: Plymouth Satellite by year (login-walled; configuration lists and descriptions seen via search excerpts; known to contain errors)",
+      "url": "https://www.hagerty.com/valuation-tools/plymouth/satellite",
+      "says": "1969 Satellite: 383 cu in 330 BHP"
+     }
+    ],
+    "status": "confirmed",
+    "note": "SAE gross. Hagerty's 1969 list also shows 273/190 and 383/335 (Road Runner engine); the factory table gives the 383/335 to Road Runner only and drops the 273."
+   }
+  ],
+  "1970": [
+   {
+    "gen": "gen2",
+    "cid": 225,
+    "hp": 145,
+    "hp_basis": "gross",
+    "carb": "1-bbl",
+    "name": "Slant Six",
+    "trims": [
+     "Satellite (std)"
+    ],
+    "nhra": true,
+    "sources": [
+     {
+      "name": "NHRA Stock Car Classification Guide (1965-70 rows under BELVEDERE / BELVEDERE I / II headings, nhra_satellite.json; 1971-74 rows under 'SATELITE SEBRING', 'SATELITE SEBRING PLUS', 'SEBRING', 'SEBRING PLUS' headings, scc_rows.json)",
+      "url": "scratchpad nhra_satellite.json / scc_rows.json",
+      "says": "BELVEDERE: 225 ci / 145 hp (C-225-01, C-225-21)"
+     },
+     {
+      "name": "Plymouth 1970 Belvedere brochure, 'How do you like your power?' engines p.18 and standard features p.19",
+      "url": "https://www.oldcarbrochures.org/United%20States/Plymouth/1970%20Plymouth/1970-Plymouth-Belvedere-Brochure/slides/1970_Plymouth_Belvedere-18-19.html",
+      "says": "standard features: 'Satellite: 225 cu. in. Six or 318 cu. in. V-8'; '225 Six ... comes standard'"
+     },
+     {
+      "name": "Curbside Classic: 1970 Plymouth Satellite - Lesser-Known B-Side",
+      "url": "https://www.curbsideclassic.com/uncategorized/curbside-classic-1970-plymouth-satellite-lesser-known-b-side/",
+      "says": "1970 Satellite: 'Our miserly 225 cubic inch six' ... V-8s (the 318 and the 383)"
+     }
+    ],
+    "status": "confirmed",
+    "note": "SAE gross (145 hp per NHRA and the 1968-69 factory tables; the 1970 brochure prints no hp for the six)."
+   },
+   {
+    "gen": "gen2",
+    "cid": 318,
+    "hp": 230,
+    "hp_basis": "gross",
+    "carb": "2-bbl",
+    "trims": [
+     "Satellite (std V-8)",
+     "Sport Satellite (std)"
+    ],
+    "nhra": true,
+    "sources": [
+     {
+      "name": "NHRA Stock Car Classification Guide (1965-70 rows under BELVEDERE / BELVEDERE I / II headings, nhra_satellite.json; 1971-74 rows under 'SATELITE SEBRING', 'SATELITE SEBRING PLUS', 'SEBRING', 'SEBRING PLUS' headings, scc_rows.json)",
+      "url": "scratchpad nhra_satellite.json / scc_rows.json",
+      "says": "BELVEDERE: 318 ci / 230 hp (C-318-38)"
+     },
+     {
+      "name": "Plymouth 1970 Belvedere brochure, 'How do you like your power?' engines p.18 and standard features p.19",
+      "url": "https://www.oldcarbrochures.org/United%20States/Plymouth/1970%20Plymouth/1970-Plymouth-Belvedere-Brochure/slides/1970_Plymouth_Belvedere-18-19.html",
+      "says": "'318 V-8 The standard V-8 for the Belvedere, Satellite and Sport Satellite'; Sport Satellite std features '318 cu. in. V-8'"
+     },
+     {
+      "name": "Curbside Classic: 1970 Plymouth Satellite - Lesser-Known B-Side",
+      "url": "https://www.curbsideclassic.com/uncategorized/curbside-classic-1970-plymouth-satellite-lesser-known-b-side/",
+      "says": "the Satellite had to offer V-8s (the 318 and the 383)"
+     },
+     {
+      "name": "Hagerty Valuation Tools: Plymouth Satellite by year (login-walled; configuration lists and descriptions seen via search excerpts; known to contain errors)",
+      "url": "https://www.hagerty.com/valuation-tools/plymouth/satellite",
+      "says": "1970 Satellite: 318cid/230hp 2bbl (hardtop, convertible)"
+     }
+    ],
+    "status": "confirmed",
+    "note": "SAE gross."
+   },
+   {
+    "gen": "gen2",
+    "cid": 383,
+    "hp": 290,
+    "hp_basis": "gross",
+    "carb": "2-bbl",
+    "trims": [
+     "Satellite (opt)",
+     "Sport Satellite (opt)"
+    ],
+    "nhra": true,
+    "sources": [
+     {
+      "name": "NHRA Stock Car Classification Guide (1965-70 rows under BELVEDERE / BELVEDERE I / II headings, nhra_satellite.json; 1971-74 rows under 'SATELITE SEBRING', 'SATELITE SEBRING PLUS', 'SEBRING', 'SEBRING PLUS' headings, scc_rows.json)",
+      "url": "scratchpad nhra_satellite.json / scc_rows.json",
+      "says": "BELVEDERE: 383 ci / 290 hp (C-383-07)"
+     },
+     {
+      "name": "Plymouth 1970 Belvedere brochure, 'How do you like your power?' engines p.18 and standard features p.19",
+      "url": "https://www.oldcarbrochures.org/United%20States/Plymouth/1970%20Plymouth/1970-Plymouth-Belvedere-Brochure/slides/1970_Plymouth_Belvedere-18-19.html",
+      "says": "'Commando 383 V-8 ... 290 horsepower on regular gas ... Optional for all Belvederes except GTX and Road Runner'"
+     },
+     {
+      "name": "Curbside Classic: 1970 Plymouth Satellite - Lesser-Known B-Side",
+      "url": "https://www.curbsideclassic.com/uncategorized/curbside-classic-1970-plymouth-satellite-lesser-known-b-side/",
+      "says": "V-8s (the 318 and the 383)"
+     }
+    ],
+    "status": "confirmed",
+    "note": "SAE gross."
+   },
+   {
+    "gen": "gen2",
+    "cid": 383,
+    "hp": 330,
+    "hp_basis": "gross",
+    "carb": "4-bbl",
+    "trims": [
+     "Satellite (opt)",
+     "Sport Satellite (opt)"
+    ],
+    "nhra": true,
+    "sources": [
+     {
+      "name": "NHRA Stock Car Classification Guide (1965-70 rows under BELVEDERE / BELVEDERE I / II headings, nhra_satellite.json; 1971-74 rows under 'SATELITE SEBRING', 'SATELITE SEBRING PLUS', 'SEBRING', 'SEBRING PLUS' headings, scc_rows.json)",
+      "url": "scratchpad nhra_satellite.json / scc_rows.json",
+      "says": "BELVEDERE: 383 ci / 330 hp (C-383-03)"
+     },
+     {
+      "name": "Plymouth 1970 Belvedere brochure, 'How do you like your power?' engines p.18 and standard features p.19",
+      "url": "https://www.oldcarbrochures.org/United%20States/Plymouth/1970%20Plymouth/1970-Plymouth-Belvedere-Brochure/slides/1970_Plymouth_Belvedere-18-19.html",
+      "says": "'Super Commando 383 V-8 ... This one has 330 horses ... Optional for all Belvederes except GTX and Road Runner'"
+     },
+     {
+      "name": "Curbside Classic: 1970 Plymouth Satellite - Lesser-Known B-Side",
+      "url": "https://www.curbsideclassic.com/uncategorized/curbside-classic-1970-plymouth-satellite-lesser-known-b-side/",
+      "says": "V-8s (the 318 and the 383)"
+     },
+     {
+      "name": "Wikipedia: Plymouth Satellite + Plymouth Belvedere (engine table, cites Standard Catalog of American Cars) + Chrysler B / LA / Slant-6 engine application lists (counted as ONE source)",
+      "url": "https://en.wikipedia.org/wiki/Plymouth_Satellite",
+      "says": "Chrysler B engine: 383 used in the 1965-1971 Plymouth Satellite"
+     }
+    ],
+    "status": "confirmed",
+    "note": "SAE gross. 440 (GTX), 440 6-bbl (GTX/Road Runner) and Hemi (Road Runner/GTX) are not Satellite engines per the factory text."
+   }
+  ],
+  "1971": [
+   {
+    "gen": "gen3",
+    "cid": 225,
+    "hp": 145,
+    "hp_basis": "gross",
+    "carb": "1-bbl",
+    "name": "Slant Six",
+    "trims": [
+     "Satellite",
+     "Satellite Custom",
+     "Satellite Sebring (std)"
+    ],
+    "nhra": true,
+    "sources": [
+     {
+      "name": "NHRA Stock Car Classification Guide (1965-70 rows under BELVEDERE / BELVEDERE I / II headings, nhra_satellite.json; 1971-74 rows under 'SATELITE SEBRING', 'SATELITE SEBRING PLUS', 'SEBRING', 'SEBRING PLUS' headings, scc_rows.json)",
+      "url": "scratchpad nhra_satellite.json / scc_rows.json",
+      "says": "SATELITE SEBRING: 225 ci / 145 hp (C-225-01, C-225-21)"
+     },
+     {
+      "name": "Plymouth 1971 Satellite/Road Runner/GTX brochure, engine chart by series p.20",
+      "url": "https://www.oldcarbrochures.com/static/NA/Plymouth/1971%20Plymouth/1971%20Plymouth%20Satellite/1971%20Plymouth%20Satellite-20.html",
+      "says": "chart: 225 6, 1-bbl, 145 gross / 110 net; Std. on Satellite, Satellite Custom, Satellite Sebring"
+     },
+     {
+      "name": "Wikipedia: Plymouth Satellite + Plymouth Belvedere (engine table, cites Standard Catalog of American Cars) + Chrysler B / LA / Slant-6 engine application lists (counted as ONE source)",
+      "url": "https://en.wikipedia.org/wiki/Plymouth_Satellite",
+      "says": "Slant-6 engine: used in the 1971-1974 Plymouth Satellite"
+     },
+     {
+      "name": "Hagerty Valuation Tools: Plymouth Satellite by year (login-walled; configuration lists and descriptions seen via search excerpts; known to contain errors)",
+      "url": "https://www.hagerty.com/valuation-tools/plymouth/satellite",
+      "says": "1971 Satellite: engines ranged from the 145 bhp 225 cid slant six"
+     }
+    ],
+    "status": "confirmed",
+    "note": "SAE gross 145 (factory also printed 110 net). Not on Brougham or Sebring-Plus."
+   },
+   {
+    "gen": "gen3",
+    "cid": 318,
+    "hp": 230,
+    "hp_basis": "gross",
+    "carb": "2-bbl",
+    "trims": [
+     "all Satellite series (std V-8; std on Brougham and Sebring-Plus)"
+    ],
+    "nhra": true,
+    "sources": [
+     {
+      "name": "NHRA Stock Car Classification Guide (1965-70 rows under BELVEDERE / BELVEDERE I / II headings, nhra_satellite.json; 1971-74 rows under 'SATELITE SEBRING', 'SATELITE SEBRING PLUS', 'SEBRING', 'SEBRING PLUS' headings, scc_rows.json)",
+      "url": "scratchpad nhra_satellite.json / scc_rows.json",
+      "says": "SATELITE SEBRING / SEBRING PLUS: 318 ci / 230 hp (C-318-38)"
+     },
+     {
+      "name": "Plymouth 1971 Satellite/Road Runner/GTX brochure, engine chart by series p.20",
+      "url": "https://www.oldcarbrochures.com/static/NA/Plymouth/1971%20Plymouth/1971%20Plymouth%20Satellite/1971%20Plymouth%20Satellite-20.html",
+      "says": "chart: 318 V-8 2-bbl, 230 gross / 155 net; Std. on Satellite, Custom, Brougham, Sebring, Sebring-Plus"
+     },
+     {
+      "name": "Wikipedia: Plymouth Satellite + Plymouth Belvedere (engine table, cites Standard Catalog of American Cars) + Chrysler B / LA / Slant-6 engine application lists (counted as ONE source)",
+      "url": "https://en.wikipedia.org/wiki/Plymouth_Satellite",
+      "says": "Chrysler LA engine 318: 1964-1974 Plymouth Satellite"
+     },
+     {
+      "name": "Hagerty Valuation Tools: Plymouth Satellite by year (login-walled; configuration lists and descriptions seen via search excerpts; known to contain errors)",
+      "url": "https://www.hagerty.com/valuation-tools/plymouth/satellite",
+      "says": "the 230 bhp 318 cid V-8, which was the standard motor"
+     }
+    ],
+    "status": "confirmed",
+    "note": "SAE gross 230 (155 net)."
+   },
+   {
+    "gen": "gen3",
+    "cid": 383,
+    "hp": 275,
+    "hp_basis": "gross",
+    "carb": "2-bbl",
+    "trims": [
+     "Satellite",
+     "Custom",
+     "Brougham",
+     "Sebring",
+     "Sebring-Plus (opt)"
+    ],
+    "nhra": true,
+    "sources": [
+     {
+      "name": "NHRA Stock Car Classification Guide (1965-70 rows under BELVEDERE / BELVEDERE I / II headings, nhra_satellite.json; 1971-74 rows under 'SATELITE SEBRING', 'SATELITE SEBRING PLUS', 'SEBRING', 'SEBRING PLUS' headings, scc_rows.json)",
+      "url": "scratchpad nhra_satellite.json / scc_rows.json",
+      "says": "SATELITE SEBRING PLUS: 383 ci / 275 hp (C-383-07, C-383-23)"
+     },
+     {
+      "name": "Plymouth 1971 Satellite/Road Runner/GTX brochure, engine chart by series p.20",
+      "url": "https://www.oldcarbrochures.com/static/NA/Plymouth/1971%20Plymouth/1971%20Plymouth%20Satellite/1971%20Plymouth%20Satellite-20.html",
+      "says": "chart: 383 V-8 2-bbl, 275 gross / 190 net, Opt. on Satellite, Custom, Brougham, Sebring, Sebring-Plus"
+     },
+     {
+      "name": "Wikipedia: Plymouth Satellite + Plymouth Belvedere (engine table, cites Standard Catalog of American Cars) + Chrysler B / LA / Slant-6 engine application lists (counted as ONE source)",
+      "url": "https://en.wikipedia.org/wiki/Plymouth_Satellite",
+      "says": "Chrysler B engine: 383 used in the 1965-1971 Plymouth Satellite (no rating given)"
+     }
+    ],
+    "status": "confirmed",
+    "note": "SAE gross 275 (190 net). Hagerty's 1971 description quotes the 335 hp Road Runner 383 instead (wrong year/model)."
+   },
+   {
+    "gen": "gen3",
+    "cid": 383,
+    "hp": 300,
+    "hp_basis": "gross",
+    "carb": "4-bbl",
+    "trims": [
+     "Satellite",
+     "Custom",
+     "Brougham",
+     "Sebring",
+     "Sebring-Plus (opt)"
+    ],
+    "nhra": true,
+    "sources": [
+     {
+      "name": "NHRA Stock Car Classification Guide (1965-70 rows under BELVEDERE / BELVEDERE I / II headings, nhra_satellite.json; 1971-74 rows under 'SATELITE SEBRING', 'SATELITE SEBRING PLUS', 'SEBRING', 'SEBRING PLUS' headings, scc_rows.json)",
+      "url": "scratchpad nhra_satellite.json / scc_rows.json",
+      "says": "SATELITE SEBRING / SEBRING PLUS: 383 ci / 300 hp (C-383-10)"
+     },
+     {
+      "name": "Plymouth 1971 Satellite/Road Runner/GTX brochure, engine chart by series p.20",
+      "url": "https://www.oldcarbrochures.com/static/NA/Plymouth/1971%20Plymouth/1971%20Plymouth%20Satellite/1971%20Plymouth%20Satellite-20.html",
+      "says": "chart: 383 V-8 4-bbl, 300 gross / 250 net, dual exhaust, Opt. on all Satellites, Std. Road Runner"
+     },
+     {
+      "name": "Wikipedia: Plymouth Satellite + Plymouth Belvedere (engine table, cites Standard Catalog of American Cars) + Chrysler B / LA / Slant-6 engine application lists (counted as ONE source)",
+      "url": "https://en.wikipedia.org/wiki/Plymouth_Satellite",
+      "says": "Chrysler B engine: 383 used in the 1965-1971 Plymouth Satellite (no rating given)"
+     }
+    ],
+    "status": "confirmed",
+    "note": "SAE gross 300 (250 net). Same engine as the 1971 Road Runner standard 383."
+   },
+   {
+    "gen": "gen3",
+    "cid": 360,
+    "hp": 255,
+    "hp_basis": "gross",
+    "carb": "2-bbl",
+    "trims": [
+     "Satellite Sebring (per NHRA only)"
+    ],
+    "nhra": true,
+    "sources": [
+     {
+      "name": "NHRA Stock Car Classification Guide (1965-70 rows under BELVEDERE / BELVEDERE I / II headings, nhra_satellite.json; 1971-74 rows under 'SATELITE SEBRING', 'SATELITE SEBRING PLUS', 'SEBRING', 'SEBRING PLUS' headings, scc_rows.json)",
+      "url": "scratchpad nhra_satellite.json / scc_rows.json",
+      "says": "SATELITE SEBRING: 360 ci / 255 hp (C-360-15)"
+     }
+    ],
+    "status": "nhra_only",
+    "note": "Searched the 1971 Satellite brochure engine chart (lists 225, 318, 383-2, 383-4, 440, 440+6, Hemi only), Wikipedia LA 360 applications, Hagerty, Curbside Classic: no 1971 Satellite 360. Likely an NHRA carry-over from its Fury heading (same code C-360-15). Do not show."
+   }
+  ],
+  "1972": [
+   {
+    "gen": "gen3",
+    "cid": 225,
+    "hp": 110,
+    "hp_basis": "net",
+    "carb": "1-bbl",
+    "name": "Slant Six",
+    "trims": [
+     "Satellite",
+     "Satellite Custom",
+     "Satellite Sebring (std)"
+    ],
+    "nhra": true,
+    "sources": [
+     {
+      "name": "NHRA Stock Car Classification Guide (1965-70 rows under BELVEDERE / BELVEDERE I / II headings, nhra_satellite.json; 1971-74 rows under 'SATELITE SEBRING', 'SATELITE SEBRING PLUS', 'SEBRING', 'SEBRING PLUS' headings, scc_rows.json)",
+      "url": "scratchpad nhra_satellite.json / scc_rows.json",
+      "says": "SATELITE SEBRING: 225 ci / 110 hp (C-225-21, C-225-61)"
+     },
+     {
+      "name": "Plymouth 1972 Satellite brochure, '1972 Satellite Engines' chart by series p.20",
+      "url": "https://www.oldcarbrochures.com/static/NA/Plymouth/1972%20Plymouth/1972%20Plymouth%20Satellite%20Brochure/image11.html",
+      "says": "1972 Satellite Engines chart: 225 '6' 1-bbl, Std. on Satellite, Satellite Custom, Satellite Sebring; NA Sebring-Plus, Road Runner"
+     },
+     {
+      "name": "Wikipedia: Plymouth Satellite + Plymouth Belvedere (engine table, cites Standard Catalog of American Cars) + Chrysler B / LA / Slant-6 engine application lists (counted as ONE source)",
+      "url": "https://en.wikipedia.org/wiki/Plymouth_Satellite",
+      "says": "Slant-6 engine: used in the 1971-1974 Plymouth Satellite"
+     }
+    ],
+    "status": "confirmed",
+    "note": "SAE net. 110 hp from NHRA; the 1971 factory chart already gave 110 net for this engine; the 1972 chart prints no hp."
+   },
+   {
+    "gen": "gen3",
+    "cid": 318,
+    "hp": 150,
+    "hp_basis": "net",
+    "carb": "2-bbl",
+    "trims": [
+     "Satellite",
+     "Custom",
+     "Sebring",
+     "Sebring-Plus (std)"
+    ],
+    "nhra": true,
+    "sources": [
+     {
+      "name": "NHRA Stock Car Classification Guide (1965-70 rows under BELVEDERE / BELVEDERE I / II headings, nhra_satellite.json; 1971-74 rows under 'SATELITE SEBRING', 'SATELITE SEBRING PLUS', 'SEBRING', 'SEBRING PLUS' headings, scc_rows.json)",
+      "url": "scratchpad nhra_satellite.json / scc_rows.json",
+      "says": "SATELITE SEBRING / SEBRING PLUS: 318 ci / 150 hp (C-318-29)"
+     },
+     {
+      "name": "Plymouth 1972 Satellite brochure, '1972 Satellite Engines' chart by series p.20",
+      "url": "https://www.oldcarbrochures.com/static/NA/Plymouth/1972%20Plymouth/1972%20Plymouth%20Satellite%20Brochure/image11.html",
+      "says": "chart: 318 V-8 2-bbl, Std. on Satellite, Custom, Sebring, Sebring-Plus; NA Road Runner"
+     },
+     {
+      "name": "Wikipedia: Plymouth Satellite + Plymouth Belvedere (engine table, cites Standard Catalog of American Cars) + Chrysler B / LA / Slant-6 engine application lists (counted as ONE source)",
+      "url": "https://en.wikipedia.org/wiki/Plymouth_Satellite",
+      "says": "Chrysler LA engine 318: 1964-1974 Plymouth Satellite"
+     },
+     {
+      "name": "Hagerty Valuation Tools: Plymouth Satellite by year (login-walled; configuration lists and descriptions seen via search excerpts; known to contain errors)",
+      "url": "https://www.hagerty.com/valuation-tools/plymouth/satellite",
+      "says": "1972 Satellite/Sebring configurations: 318cid/150hp 2bbl"
+     }
+    ],
+    "status": "confirmed",
+    "note": "SAE net."
+   },
+   {
+    "gen": "gen3",
+    "cid": 400,
+    "hp": 190,
+    "hp_basis": "net",
+    "carb": "2-bbl",
+    "trims": [
+     "Satellite",
+     "Custom",
+     "Sebring",
+     "Sebring-Plus (opt)"
+    ],
+    "nhra": true,
+    "sources": [
+     {
+      "name": "NHRA Stock Car Classification Guide (1965-70 rows under BELVEDERE / BELVEDERE I / II headings, nhra_satellite.json; 1971-74 rows under 'SATELITE SEBRING', 'SATELITE SEBRING PLUS', 'SEBRING', 'SEBRING PLUS' headings, scc_rows.json)",
+      "url": "scratchpad nhra_satellite.json / scc_rows.json",
+      "says": "SATELITE SEBRING / SEBRING PLUS: 400 ci / 190 hp (C-400-07)"
+     },
+     {
+      "name": "Plymouth 1972 Satellite brochure, '1972 Satellite Engines' chart by series p.20",
+      "url": "https://www.oldcarbrochures.com/static/NA/Plymouth/1972%20Plymouth/1972%20Plymouth%20Satellite%20Brochure/image11.html",
+      "says": "chart: 400 V-8 2-bbl, single exhaust, Opt. on Satellite, Custom, Sebring, Sebring-Plus; NA Road Runner"
+     },
+     {
+      "name": "Hagerty Valuation Tools: Plymouth Satellite by year (login-walled; configuration lists and descriptions seen via search excerpts; known to contain errors)",
+      "url": "https://www.hagerty.com/valuation-tools/plymouth/satellite",
+      "says": "1972 Satellite configurations: 400cid/190hp 2bbl"
+     }
+    ],
+    "status": "confirmed",
+    "note": "SAE net. New 400 replaced the 383."
+   },
+   {
+    "gen": "gen3",
+    "cid": 400,
+    "hp": 255,
+    "hp_basis": "net",
+    "carb": "4-bbl",
+    "trims": [
+     "Satellite",
+     "Custom",
+     "Sebring",
+     "Sebring-Plus (opt)"
+    ],
+    "nhra": true,
+    "sources": [
+     {
+      "name": "NHRA Stock Car Classification Guide (1965-70 rows under BELVEDERE / BELVEDERE I / II headings, nhra_satellite.json; 1971-74 rows under 'SATELITE SEBRING', 'SATELITE SEBRING PLUS', 'SEBRING', 'SEBRING PLUS' headings, scc_rows.json)",
+      "url": "scratchpad nhra_satellite.json / scc_rows.json",
+      "says": "SATELITE SEBRING / SEBRING PLUS: 400 ci / 255 and 265 hp (both C-400-05)"
+     },
+     {
+      "name": "Plymouth 1972 Satellite brochure, '1972 Satellite Engines' chart by series p.20",
+      "url": "https://www.oldcarbrochures.com/static/NA/Plymouth/1972%20Plymouth/1972%20Plymouth%20Satellite%20Brochure/image11.html",
+      "says": "chart: 400 V-8 4-bbl, dual exhaust, Opt. on Satellite, Custom, Sebring, Sebring-Plus; Std. Road Runner"
+     },
+     {
+      "name": "Hagerty Valuation Tools: Plymouth Satellite by year (login-walled; configuration lists and descriptions seen via search excerpts; known to contain errors)",
+      "url": "https://www.hagerty.com/valuation-tools/plymouth/satellite",
+      "says": "1972 Satellite configurations: 400cid/255hp 4bbl Hi-Perf"
+     }
+    ],
+    "status": "confirmed",
+    "note": "SAE net 255. NHRA also prints 265 for the same family code; 255 is the figure Hagerty and the Road Runner sources give. Not available in California."
+   },
+   {
+    "gen": "gen3",
+    "cid": 440,
+    "hp": 280,
+    "hp_basis": "net",
+    "carb": "4-bbl",
+    "trims": [
+     "Satellite Sebring (per NHRA only)"
+    ],
+    "nhra": true,
+    "sources": [
+     {
+      "name": "NHRA Stock Car Classification Guide (1965-70 rows under BELVEDERE / BELVEDERE I / II headings, nhra_satellite.json; 1971-74 rows under 'SATELITE SEBRING', 'SATELITE SEBRING PLUS', 'SEBRING', 'SEBRING PLUS' headings, scc_rows.json)",
+      "url": "scratchpad nhra_satellite.json / scc_rows.json",
+      "says": "SATELITE SEBRING: 440 ci / 280 and 290 hp (C-440-02, C-440-15)"
+     }
+    ],
+    "status": "nhra_only",
+    "note": "The 1972 Satellite engine chart marks the 440 4-bbl and 440 6-bbl NA on every Satellite except Road Runner (where it made the GTX). Searched Wikipedia, Hagerty, Curbside Classic: no non-Road-Runner 1972 Satellite 440 (police/wagon 440 not checked; the wagon catalog is a separate brochure). Do not show for Satellite/Sebring."
+   }
+  ],
+  "1973": [
+   {
+    "gen": "gen3",
+    "cid": 225,
+    "hp": 105,
+    "hp_basis": "net",
+    "carb": "1-bbl",
+    "name": "Slant Six",
+    "trims": [
+     "Satellite",
+     "Satellite Custom",
+     "Satellite Sebring (std)"
+    ],
+    "nhra": true,
+    "sources": [
+     {
+      "name": "NHRA Stock Car Classification Guide (1965-70 rows under BELVEDERE / BELVEDERE I / II headings, nhra_satellite.json; 1971-74 rows under 'SATELITE SEBRING', 'SATELITE SEBRING PLUS', 'SEBRING', 'SEBRING PLUS' headings, scc_rows.json)",
+      "url": "scratchpad nhra_satellite.json / scc_rows.json",
+      "says": "SEBRING: 225 ci / 105 hp (C-225-21, C-225-61)"
+     },
+     {
+      "name": "Plymouth 1973 Satellite brochure, option selector (Performance section) p.19",
+      "url": "https://www.oldcarbrochures.com/static/NA/Plymouth/1973%20Plymouth/1973%20Plymouth%20Satellite/1973%20Plymouth%20Satellite-18-19.jpg",
+      "says": "option selector: 225 Six = S on Satellite, Satellite Custom, Satellite Sebring; NA Road Runner, Sebring-Plus"
+     },
+     {
+      "name": "Curbside Classic (Paul Niedermeyer): 1973 Plymouth Satellite Sebring Plus - Haven't I Heard That Name Before?",
+      "url": "https://www.curbsideclassic.com/curbside-classics-american/curbside-classic-1973-plymouth-satellite-sebring-plus-havent-i-heard-that-name-before/",
+      "says": "the 225 CID slant six now with 105 hp (all hp figures in net)"
+     },
+     {
+      "name": "Wikipedia: Plymouth Satellite + Plymouth Belvedere (engine table, cites Standard Catalog of American Cars) + Chrysler B / LA / Slant-6 engine application lists (counted as ONE source)",
+      "url": "https://en.wikipedia.org/wiki/Plymouth_Satellite",
+      "says": "Slant-6 engine: used in the 1971-1974 Plymouth Satellite"
+     }
+    ],
+    "status": "confirmed",
+    "note": "SAE net."
+   },
+   {
+    "gen": "gen3",
+    "cid": 318,
+    "hp": 150,
+    "hp_basis": "net",
+    "carb": "2-bbl",
+    "trims": [
+     "Satellite",
+     "Custom",
+     "Sebring",
+     "Sebring-Plus (std)"
+    ],
+    "nhra": true,
+    "sources": [
+     {
+      "name": "NHRA Stock Car Classification Guide (1965-70 rows under BELVEDERE / BELVEDERE I / II headings, nhra_satellite.json; 1971-74 rows under 'SATELITE SEBRING', 'SATELITE SEBRING PLUS', 'SEBRING', 'SEBRING PLUS' headings, scc_rows.json)",
+      "url": "scratchpad nhra_satellite.json / scc_rows.json",
+      "says": "SEBRING / SEBRING PLUS: 318 ci / 150 hp (C-318-29)"
+     },
+     {
+      "name": "Plymouth 1973 Satellite brochure, option selector (Performance section) p.19",
+      "url": "https://www.oldcarbrochures.com/static/NA/Plymouth/1973%20Plymouth/1973%20Plymouth%20Satellite/1973%20Plymouth%20Satellite-18-19.jpg",
+      "says": "option selector: 318 V-8 Single Exhaust = S on Satellite, Custom, Sebring, Sebring-Plus; NA Road Runner"
+     },
+     {
+      "name": "Curbside Classic (Paul Niedermeyer): 1973 Plymouth Satellite Sebring Plus - Haven't I Heard That Name Before?",
+      "url": "https://www.curbsideclassic.com/curbside-classics-american/curbside-classic-1973-plymouth-satellite-sebring-plus-havent-i-heard-that-name-before/",
+      "says": "the most popular 318 V8 (5.2 L) had 150 hp"
+     },
+     {
+      "name": "Wikipedia: Plymouth Satellite + Plymouth Belvedere (engine table, cites Standard Catalog of American Cars) + Chrysler B / LA / Slant-6 engine application lists (counted as ONE source)",
+      "url": "https://en.wikipedia.org/wiki/Plymouth_Satellite",
+      "says": "Chrysler LA engine 318: 1964-1974 Plymouth Satellite"
+     }
+    ],
+    "status": "confirmed",
+    "note": "SAE net. The 170 hp dual-exhaust 318 was Road Runner only."
+   },
+   {
+    "gen": "gen3",
+    "cid": 400,
+    "hp": 175,
+    "hp_basis": "net",
+    "carb": "2-bbl",
+    "trims": [
+     "Satellite",
+     "Custom",
+     "Sebring",
+     "Sebring-Plus (opt)"
+    ],
+    "nhra": true,
+    "sources": [
+     {
+      "name": "NHRA Stock Car Classification Guide (1965-70 rows under BELVEDERE / BELVEDERE I / II headings, nhra_satellite.json; 1971-74 rows under 'SATELITE SEBRING', 'SATELITE SEBRING PLUS', 'SEBRING', 'SEBRING PLUS' headings, scc_rows.json)",
+      "url": "scratchpad nhra_satellite.json / scc_rows.json",
+      "says": "SEBRING / SEBRING PLUS: 400 ci / 175 hp (C-400-07)"
+     },
+     {
+      "name": "Plymouth 1973 Satellite brochure, option selector (Performance section) p.19",
+      "url": "https://www.oldcarbrochures.com/static/NA/Plymouth/1973%20Plymouth/1973%20Plymouth%20Satellite/1973%20Plymouth%20Satellite-18-19.jpg",
+      "says": "option selector: 400 V-8 Single Exhaust = O on Satellite, Custom, Sebring, Sebring-Plus; NA Road Runner"
+     },
+     {
+      "name": "Curbside Classic (Paul Niedermeyer): 1973 Plymouth Satellite Sebring Plus - Haven't I Heard That Name Before?",
+      "url": "https://www.curbsideclassic.com/curbside-classics-american/curbside-classic-1973-plymouth-satellite-sebring-plus-havent-i-heard-that-name-before/",
+      "says": "the 400 V8 (6.6 L) came in two-barrel (175 hp)"
+     }
+    ],
+    "status": "confirmed",
+    "note": "SAE net."
+   },
+   {
+    "gen": "gen3",
+    "cid": 400,
+    "hp": 260,
+    "hp_basis": "net",
+    "carb": "4-bbl",
+    "trims": [
+     "Satellite (2-dr)",
+     "Custom",
+     "Sebring",
+     "Sebring-Plus (opt)"
+    ],
+    "nhra": true,
+    "sources": [
+     {
+      "name": "NHRA Stock Car Classification Guide (1965-70 rows under BELVEDERE / BELVEDERE I / II headings, nhra_satellite.json; 1971-74 rows under 'SATELITE SEBRING', 'SATELITE SEBRING PLUS', 'SEBRING', 'SEBRING PLUS' headings, scc_rows.json)",
+      "url": "scratchpad nhra_satellite.json / scc_rows.json",
+      "says": "SEBRING / SEBRING PLUS: 400 ci / 260 hp (C-400-05)"
+     },
+     {
+      "name": "Plymouth 1973 Satellite brochure, option selector (Performance section) p.19",
+      "url": "https://www.oldcarbrochures.com/static/NA/Plymouth/1973%20Plymouth/1973%20Plymouth%20Satellite/1973%20Plymouth%20Satellite-18-19.jpg",
+      "says": "option selector: 400 V-8 4-V, Dual Exhaust = O on Satellite, Road Runner, Custom, Sebring, Sebring-Plus"
+     },
+     {
+      "name": "Curbside Classic (Paul Niedermeyer): 1973 Plymouth Satellite Sebring Plus - Haven't I Heard That Name Before?",
+      "url": "https://www.curbsideclassic.com/curbside-classics-american/curbside-classic-1973-plymouth-satellite-sebring-plus-havent-i-heard-that-name-before/",
+      "says": "That final [four-barrel] version made a pretty healthy 250 or 260 hp, depending on which source you prefer"
+     }
+    ],
+    "status": "confirmed",
+    "note": "SAE net 260 (NHRA, and the Road Runner sources); Curbside Classic hedges 250/260. The 340 and 440 4-bbl were Road Runner only (factory NA for other Satellites); a Curbside Classic reader notes 440 sedans were police-package only."
+   }
+  ],
+  "1974": [
+   {
+    "gen": "gen3",
+    "cid": 225,
+    "hp": 105,
+    "hp_basis": "net",
+    "carb": "1-bbl",
+    "name": "Slant Six",
+    "trims": [
+     "Satellite",
+     "Satellite Custom (not wagons)",
+     "Satellite Sebring (std)"
+    ],
+    "nhra": true,
+    "sources": [
+     {
+      "name": "NHRA Stock Car Classification Guide (1965-70 rows under BELVEDERE / BELVEDERE I / II headings, nhra_satellite.json; 1971-74 rows under 'SATELITE SEBRING', 'SATELITE SEBRING PLUS', 'SEBRING', 'SEBRING PLUS' headings, scc_rows.json)",
+      "url": "scratchpad nhra_satellite.json / scc_rows.json",
+      "says": "SEBRING: 225 ci / 105 hp (C-225-21, C-225-61)"
+     },
+     {
+      "name": "Plymouth 1974 Satellite folder (Canada), Engine & Transmission Specifications / Engine Application by Model p.3",
+      "url": "https://www.oldcarbrochures.com/static/NA/Plymouth/1974%20Plymouth/1974_Plymouth_Satellite_Folder-Cdn/1974%20Plymouth%20Satellite%20Folder%20%20Cdn%20-03.html",
+      "says": "225 6-cyl. Standard, 105 @ 3600 net; Std. on Satellite, Satellite Custom (not wagons), Sebring; N.A. Road Runner, Sebring Plus, Regent"
+     },
+     {
+      "name": "Wikipedia: Plymouth Satellite + Plymouth Belvedere (engine table, cites Standard Catalog of American Cars) + Chrysler B / LA / Slant-6 engine application lists (counted as ONE source)",
+      "url": "https://en.wikipedia.org/wiki/Plymouth_Satellite",
+      "says": "Slant-6 engine: used in the 1971-1974 Plymouth Satellite"
+     }
+    ],
+    "status": "confirmed",
+    "note": "SAE net."
+   },
+   {
+    "gen": "gen3",
+    "cid": 318,
+    "hp": 150,
+    "hp_basis": "net",
+    "carb": "2-bbl",
+    "trims": [
+     "all Satellites except Road Runner (std V-8)"
+    ],
+    "nhra": true,
+    "sources": [
+     {
+      "name": "NHRA Stock Car Classification Guide (1965-70 rows under BELVEDERE / BELVEDERE I / II headings, nhra_satellite.json; 1971-74 rows under 'SATELITE SEBRING', 'SATELITE SEBRING PLUS', 'SEBRING', 'SEBRING PLUS' headings, scc_rows.json)",
+      "url": "scratchpad nhra_satellite.json / scc_rows.json",
+      "says": "SEBRING / SEBRING PLUS: 318 ci / 150 hp (C-318-39)"
+     },
+     {
+      "name": "Plymouth 1974 Satellite folder (Canada), Engine & Transmission Specifications / Engine Application by Model p.3",
+      "url": "https://www.oldcarbrochures.com/static/NA/Plymouth/1974%20Plymouth/1974_Plymouth_Satellite_Folder-Cdn/1974%20Plymouth%20Satellite%20Folder%20%20Cdn%20-03.html",
+      "says": "318 '8-Cyl. Standard Except Road Runner', 150 @ 4000 net, single exhaust"
+     },
+     {
+      "name": "Wikipedia: Plymouth Satellite + Plymouth Belvedere (engine table, cites Standard Catalog of American Cars) + Chrysler B / LA / Slant-6 engine application lists (counted as ONE source)",
+      "url": "https://en.wikipedia.org/wiki/Plymouth_Satellite",
+      "says": "Chrysler LA engine 318: 1964-1974 Plymouth Satellite"
+     },
+     {
+      "name": "Hagerty Valuation Tools: Plymouth Satellite by year (login-walled; configuration lists and descriptions seen via search excerpts; known to contain errors)",
+      "url": "https://www.hagerty.com/valuation-tools/plymouth/satellite",
+      "says": "1974 Satellite base coupe / Sebring: 8-cyl. 318cid/150hp 2bbl"
+     }
+    ],
+    "status": "confirmed",
+    "note": "SAE net."
+   },
+   {
+    "gen": "gen3",
+    "cid": 360,
+    "hp": 180,
+    "hp_basis": "net",
+    "carb": "2-bbl",
+    "trims": [
+     "all Satellites except Road Runner (opt, automatic only)"
+    ],
+    "nhra": true,
+    "sources": [
+     {
+      "name": "NHRA Stock Car Classification Guide (1965-70 rows under BELVEDERE / BELVEDERE I / II headings, nhra_satellite.json; 1971-74 rows under 'SATELITE SEBRING', 'SATELITE SEBRING PLUS', 'SEBRING', 'SEBRING PLUS' headings, scc_rows.json)",
+      "url": "scratchpad nhra_satellite.json / scc_rows.json",
+      "says": "SEBRING / SEBRING PLUS: 360 ci / 180 hp (C-360-05)"
+     },
+     {
+      "name": "Plymouth 1974 Satellite folder (Canada), Engine & Transmission Specifications / Engine Application by Model p.3",
+      "url": "https://www.oldcarbrochures.com/static/NA/Plymouth/1974%20Plymouth/1974_Plymouth_Satellite_Folder-Cdn/1974%20Plymouth%20Satellite%20Folder%20%20Cdn%20-03.html",
+      "says": "'Additional Engine Option: The 360 cubic inch V8 engine with a single two-barrel carburetor is available on all Satellites except Road Runner. Installed net horsepower is 180 @ 4,000'"
+     },
+     {
+      "name": "Wikipedia: Plymouth Satellite + Plymouth Belvedere (engine table, cites Standard Catalog of American Cars) + Chrysler B / LA / Slant-6 engine application lists (counted as ONE source)",
+      "url": "https://en.wikipedia.org/wiki/Plymouth_Satellite",
+      "says": "Satellite 1971-74 infobox lists the 360 V8 (no rating)"
+     }
+    ],
+    "status": "confirmed",
+    "note": "SAE net. Late addition printed as an extra note in the factory folder; Wikipedia lists the 360 without year or rating (weakest of the confirmed entries)."
+   },
+   {
+    "gen": "gen3",
+    "cid": 400,
+    "hp": 205,
+    "hp_basis": "net",
+    "carb": "4-bbl",
+    "trims": [
+     "Satellite",
+     "Custom",
+     "Sebring",
+     "Sebring Plus",
+     "Regent (opt)"
+    ],
+    "nhra": true,
+    "sources": [
+     {
+      "name": "NHRA Stock Car Classification Guide (1965-70 rows under BELVEDERE / BELVEDERE I / II headings, nhra_satellite.json; 1971-74 rows under 'SATELITE SEBRING', 'SATELITE SEBRING PLUS', 'SEBRING', 'SEBRING PLUS' headings, scc_rows.json)",
+      "url": "scratchpad nhra_satellite.json / scc_rows.json",
+      "says": "SEBRING / SEBRING PLUS: 400 ci / 205 hp (C-400-09)"
+     },
+     {
+      "name": "Plymouth 1974 Satellite folder (Canada), Engine & Transmission Specifications / Engine Application by Model p.3",
+      "url": "https://www.oldcarbrochures.com/static/NA/Plymouth/1974%20Plymouth/1974_Plymouth_Satellite_Folder-Cdn/1974%20Plymouth%20Satellite%20Folder%20%20Cdn%20-03.html",
+      "says": "400, 205 @ 4400 net, 1-4 bbl, single exhaust; Opt. on Satellite, Custom, Sebring, Sebring Plus, Regent; N.A. Road Runner"
+     },
+     {
+      "name": "Hagerty Valuation Tools: Plymouth Satellite by year (login-walled; configuration lists and descriptions seen via search excerpts; known to contain errors)",
+      "url": "https://www.hagerty.com/valuation-tools/plymouth/satellite",
+      "says": "1974 Satellite base coupe / Sebring: 8-cyl. 400cid/205hp 4bbl"
+     }
+    ],
+    "status": "confirmed",
+    "note": "SAE net. Single-exhaust 4-bbl 400."
+   },
+   {
+    "gen": "gen3",
+    "cid": 400,
+    "hp": 250,
+    "hp_basis": "net",
+    "carb": "4-bbl",
+    "trims": [
+     "Satellite 2-dr coupe",
+     "Sebring",
+     "Sebring Plus (opt)"
+    ],
+    "nhra": true,
+    "sources": [
+     {
+      "name": "NHRA Stock Car Classification Guide (1965-70 rows under BELVEDERE / BELVEDERE I / II headings, nhra_satellite.json; 1971-74 rows under 'SATELITE SEBRING', 'SATELITE SEBRING PLUS', 'SEBRING', 'SEBRING PLUS' headings, scc_rows.json)",
+      "url": "scratchpad nhra_satellite.json / scc_rows.json",
+      "says": "SEBRING / SEBRING PLUS: 400 ci / 250 hp (C-400-09, C-400-11)"
+     },
+     {
+      "name": "Plymouth 1974 Satellite folder (Canada), Engine & Transmission Specifications / Engine Application by Model p.3",
+      "url": "https://www.oldcarbrochures.com/static/NA/Plymouth/1974%20Plymouth/1974_Plymouth_Satellite_Folder-Cdn/1974%20Plymouth%20Satellite%20Folder%20%20Cdn%20-03.html",
+      "says": "400, 250 @ 4800 net, double snorkel, dual exhaust; Opt. on Satellite (2-door coupe only), Road Runner, Sebring, Sebring Plus; N.A. Custom, Regent"
+     }
+    ],
+    "status": "nhra_plus_one",
+    "note": "SAE net. Searched Hagerty (lists only 318/150 and 400/205 for 1974 Satellite/Sebring), Wikipedia (Satellite infobox omits the 400; B-engine article gives only a generic 260 hp high-performance 4-bbl), Curbside Classic: no third source names the 250 hp 400 in a 1974 non-Road-Runner Satellite. The same engine is confirmed in the 1974 Road Runner."
+   },
+   {
+    "gen": "gen3",
+    "cid": 360,
+    "hp": 200,
+    "hp_basis": "net",
+    "carb": "4-bbl",
+    "trims": [
+     "Satellite Sebring (per NHRA only)"
+    ],
+    "nhra": true,
+    "sources": [
+     {
+      "name": "NHRA Stock Car Classification Guide (1965-70 rows under BELVEDERE / BELVEDERE I / II headings, nhra_satellite.json; 1971-74 rows under 'SATELITE SEBRING', 'SATELITE SEBRING PLUS', 'SEBRING', 'SEBRING PLUS' headings, scc_rows.json)",
+      "url": "scratchpad nhra_satellite.json / scc_rows.json",
+      "says": "SEBRING / SEBRING PLUS: 360 ci / 200 hp (C-360-11)"
+     }
+    ],
+    "status": "nhra_only",
+    "note": "The 1974 factory folder lists only the 360 2-bbl (180) for non-Road-Runner Satellites and the 360 4-bbl (245) for Road Runner. No other source found for a 200 hp 360 in the Satellite. Do not show."
+   }
+  ]
+ },
+ "source_index": [
+  {
+   "name": "NHRA Stock Car Classification Guide (1965-70 rows under BELVEDERE / BELVEDERE I / II headings, nhra_satellite.json; 1971-74 rows under 'SATELITE SEBRING', 'SATELITE SEBRING PLUS', 'SEBRING', 'SEBRING PLUS' headings, scc_rows.json)",
+   "url": "scratchpad nhra_satellite.json / scc_rows.json",
+   "type": "registry"
+  },
+  {
+   "name": "Plymouth 1965 Belvedere brochure, Belvedere Specifications p.18 (V-8 engine tables)",
+   "url": "https://www.oldcarbrochures.org/United%20States/Plymouth/1965%20Plymouth/1965_Plymouth_Belvedere_Brochure/slides/1965_Plymouth_Belvedere-18-19.html",
+   "type": "manufacturer"
+  },
+  {
+   "name": "Plymouth 1966 Belvedere brochure, Satellite p.2-3 and engine chart p.12; 1966 Plymouth 'Hot Ones' brochure, Hemi-powered Belvedere p.2-3",
+   "url": "https://www.oldcarbrochures.org/United%20States/Plymouth/1966%20Plymouth/1966-Plymouth-Belvedere-Brochure/slides/1966_Plymouth_Belvedere-12-13.html",
+   "type": "manufacturer"
+  },
+  {
+   "name": "Plymouth 1967 Belvedere brochure, series list p.2 and engine table p.23",
+   "url": "https://www.oldcarbrochures.org/United%20States/Plymouth/1967%20Plymouth/1967%20Plymouth%20Belvedere/slides/1967_Plymouth_Belvedere-22-23.html",
+   "type": "manufacturer"
+  },
+  {
+   "name": "Plymouth 1968 mid-size brochure, engines p.26 and Specifications engine table (standard on / optional on) p.27; model chart p.28",
+   "url": "https://www.oldcarbrochures.org/United%20States/Plymouth/1968%20Plymouth/1968-Plymouth-Mid-Size-Brochure/slides/1968_Plymouth_Mid-Size-26-27.html",
+   "type": "manufacturer"
+  },
+  {
+   "name": "Plymouth 1969 Belvedere brochure, engines p.28 and Specifications engine table (standard on / optional on) p.29",
+   "url": "https://www.oldcarbrochures.org/United%20States/Plymouth/1969-Plymouth/1969-Plymouth-Belvedere-Brochure/slides/1969_Plymouth_Belvedere-28-29.html",
+   "type": "manufacturer"
+  },
+  {
+   "name": "Plymouth 1970 Belvedere brochure, 'How do you like your power?' engines p.18 and standard features p.19",
+   "url": "https://www.oldcarbrochures.org/United%20States/Plymouth/1970%20Plymouth/1970-Plymouth-Belvedere-Brochure/slides/1970_Plymouth_Belvedere-18-19.html",
+   "type": "manufacturer"
+  },
+  {
+   "name": "Plymouth 1971 Satellite/Road Runner/GTX brochure, engine chart by series p.20",
+   "url": "https://www.oldcarbrochures.com/static/NA/Plymouth/1971%20Plymouth/1971%20Plymouth%20Satellite/1971%20Plymouth%20Satellite-20.html",
+   "type": "manufacturer"
+  },
+  {
+   "name": "Plymouth 1972 Satellite brochure, '1972 Satellite Engines' chart by series p.20",
+   "url": "https://www.oldcarbrochures.com/static/NA/Plymouth/1972%20Plymouth/1972%20Plymouth%20Satellite%20Brochure/image11.html",
+   "type": "manufacturer"
+  },
+  {
+   "name": "Plymouth 1973 Satellite brochure, option selector (Performance section) p.19",
+   "url": "https://www.oldcarbrochures.com/static/NA/Plymouth/1973%20Plymouth/1973%20Plymouth%20Satellite/1973%20Plymouth%20Satellite-18-19.jpg",
+   "type": "manufacturer"
+  },
+  {
+   "name": "Plymouth 1974 Satellite folder (Canada), Engine & Transmission Specifications / Engine Application by Model p.3",
+   "url": "https://www.oldcarbrochures.com/static/NA/Plymouth/1974%20Plymouth/1974_Plymouth_Satellite_Folder-Cdn/1974%20Plymouth%20Satellite%20Folder%20%20Cdn%20-03.html",
+   "type": "manufacturer"
+  },
+  {
+   "name": "Wikipedia: Plymouth Satellite + Plymouth Belvedere (engine table, cites Standard Catalog of American Cars) + Chrysler B / LA / Slant-6 engine application lists (counted as ONE source)",
+   "url": "https://en.wikipedia.org/wiki/Plymouth_Satellite",
+   "type": "wikipedia"
+  },
+  {
+   "name": "Curbside Classic: 1970 Plymouth Satellite - Lesser-Known B-Side",
+   "url": "https://www.curbsideclassic.com/uncategorized/curbside-classic-1970-plymouth-satellite-lesser-known-b-side/",
+   "type": "publication"
+  },
+  {
+   "name": "Curbside Classic (Paul Niedermeyer): 1973 Plymouth Satellite Sebring Plus - Haven't I Heard That Name Before?",
+   "url": "https://www.curbsideclassic.com/curbside-classics-american/curbside-classic-1973-plymouth-satellite-sebring-plus-havent-i-heard-that-name-before/",
+   "type": "publication"
+  },
+  {
+   "name": "Hagerty Valuation Tools: Plymouth Satellite by year (login-walled; configuration lists and descriptions seen via search excerpts; known to contain errors)",
+   "url": "https://www.hagerty.com/valuation-tools/plymouth/satellite",
+   "type": "publication"
+  },
+  {
+   "name": "SlashGear (Azzief Khaliq, 2024): Every car that used a street version of the 426 Hemi, 1964-1971",
+   "url": "https://www.slashgear.com/1609813/every-car-used-426-hemi-engine-street-version",
+   "type": "publication"
+  },
+  {
+   "name": "Conceptcarz (Dan Vaughan / Jessica Donaldson): Plymouth Satellite history",
+   "url": "https://www.conceptcarz.com/w739/plymouth-satellite.aspx",
+   "type": "publication"
+  }
+ ]
+}

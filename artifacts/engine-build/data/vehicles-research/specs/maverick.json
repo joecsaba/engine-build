@@ -1,0 +1,45 @@
+{
+ "make": "Ford",
+ "model": "Maverick",
+ "makeSlug": "ford",
+ "slug": "maverick",
+ "title": "Ford Maverick Engines by Year (1970–1977)",
+ "description": "Every factory engine in the Ford Maverick car by year, 1970–1977: the 170, 200 and 250 sixes and the 302 V8, including the Grabber and Stallion models.",
+ "intro": [
+  "The Maverick was Ford's compact car from 1970 to 1977, with inline sixes and, from 1971, the 302 V8. The Grabber (1970–1975) and Stallion (1976) were appearance and performance packages. The 2022-on Maverick is a pickup and is not covered here.",
+  "Pick a year to see every engine offered that model year, with its code, rated horsepower and the trims it came in. Each engine links to its full specs."
+ ],
+ "generations": [
+  {
+   "key": "1970-1977",
+   "name": "1970–1977",
+   "years": [
+    1970,
+    1977
+   ],
+   "intro": [
+    "Ratings are gross for 1970–1971 and SAE net from 1972. The 250 six was added during 1970, and the 170 was dropped after 1972."
+   ]
+  }
+ ],
+ "files": [
+  "verify_maverick.json"
+ ],
+ "include": [
+  "1977|302|137"
+ ],
+ "exclude": {
+  "1977|302|122": "Second 1977 NHRA rating for the same engine; shown as a range on the 137 row"
+ },
+ "ranges": {
+  "1977|302|137": [
+   122,
+   137
+  ]
+ },
+ "notes": {
+  "1977|302|137": "California cars used a variable-venturi carburetor. Published ratings vary.",
+  "1970|250|155": "Added during the 1970 model year."
+ },
+ "draft": true
+}
