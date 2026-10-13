@@ -44,7 +44,10 @@ const ENGINE_MAKERS = {
   buick: ["buick", ...GM.filter((m) => m !== "buick")],
   ford: ["ford", "mercury", "lincoln", "shelby"],
   mercury: ["mercury", "ford", "lincoln"],
-  dodge: ["dodge", "chrysler", "plymouth", "ram", "mitsubishi"],
+  dodge: ["dodge", "ram", "chrysler", "plymouth", "mitsubishi", "cummins"],
+  ram: ["ram", "dodge", "chrysler", "cummins"],
+  // Jeeps carried Willys, Kaiser, AMC, Buick, GM, Chrysler and VM Motori engines.
+  jeep: ["jeep", "american_motors", "ram", "dodge", "chrysler", "buick", "chevrolet", "pontiac"],
   plymouth: ["plymouth", "chrysler", "dodge", "mitsubishi"],
   chrysler: ["chrysler", "dodge", "plymouth"],
   amc: ["american_motors", "jeep"],
