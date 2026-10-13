@@ -45,7 +45,14 @@ S["nova"] = dict(make="Chevrolet", model="Nova", makeSlug="chevrolet", slug="nov
   files=["verify_nova.json"],
   notes={"1970|402|350": "Badged as a 396; displaces 402 cubic inches.",
          "1970|402|375": "Badged as a 396; displaces 402 cubic inches.",
-         "1988|97|110": "Twin Cam, 16 valves."})
+         "1988|97|110": "Twin Cam, 16 valves.",
+         "1970|350|360": "Ordered by Yenko Chevrolet through Central Office Production Order (COPO) 9010; 175 built."},
+  # Factory COPO, like the Camaro COPOs; third and fourth sources in yenko_deuce_sources.json.
+  include=["1970|350|360"],
+  codes={"1970|350|360": "LT1"}, trims={"1970|350|360": ["Yenko Deuce"]},
+  add_sources={"1970|350|360": [
+    {"name": "Yenko Supercar Registry (yenko.net) - April 2001 Feature Car", "url": "https://www.yenko.net/features/2001/April2001.htm", "says": "COPO 9010/9737 Novas with the 360 hp LT-1; 175 built"},
+    {"name": "Wikipedia - Chevrolet LT-1", "url": "https://en.wikipedia.org/wiki/Chevrolet_LT-1", "says": "LT-1 350/360 offered in the 1970 Nova via COPO for Yenko"}]})
 
 S["impala"] = dict(make="Chevrolet", model="Impala", makeSlug="chevrolet", slug="impala",
   title="Chevrolet Impala Engines by Year (1958–2020)",
