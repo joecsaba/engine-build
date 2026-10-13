@@ -151,6 +151,27 @@ S["ram-1500"] = dict(make="Ram", model="1500", makeSlug="ram", slug="1500",
                     {"years": [2002, 2012], "cid": [226], "url": "/engines/ram/powertech"},
                     {"years": [1994, 2003], "cid": [360], "url": "/engines/ram/magnum"}])
 
+S["f-150"] = dict(make="Ford", model="F-150", makeSlug="ford", slug="f-150",
+  title="Ford F-150 Engines by Year (1975–2026)",
+  description="Every factory engine in the Ford F-150 by year, 1975–2026: the 300 six, Windsor and 351M V8s, the modular V8s, Lightning, Raptor, EcoBoost and the electric Lightning.",
+  intro=["Ford introduced the F-150 for 1975 as a heavier-rated half-ton alongside the F-100, which it replaced after 1983. It has been America's best-selling pickup for most of the time since. This page covers the F-150 itself; the F-100 has its own page.", PICK],
+  generations=[
+    G("gen6", "1975–1979", 1975, 1979, "The first F-150s used the 300 six and the 360, 390, 351M, 400 and 460 V8s."),
+    G("gen7", "1980–1986", 1980, 1986, "The 1980 redesign kept the 300 six and offered the 302 and 351 V8s, with electronic fuel injection on the 302 from 1985."),
+    G("gen8", "1987–1991", 1987, 1991, "All engines were fuel-injected from 1987: the 300 six, the 302 and the 351."),
+    G("gen9", "1992–1996", 1992, 1996, "The same three engines, plus the 1993–1995 SVT Lightning with a 240 hp 351."),
+    G("gen10", "1997–2003", 1997, 2003, "The rounded 1997 F-150 brought the 4.2 V6 and the overhead-cam 4.6 and 5.4 V8s. The 1999–2004 SVT Lightning used a supercharged 5.4, and the 2002–2003 Harley-Davidson edition a 340 hp version."),
+    G("gen11", "2004–2008", 2004, 2008, "The 2004 redesign moved to the three-valve 5.4. The previous truck was sold alongside it for 2004 as the F-150 Heritage."),
+    G("gen12", "2009–2014", 2009, 2014, "The 2009 F-150 used 4.6 and 5.4 V8s. The 2010 SVT Raptor added a 6.2 V8, and the 2011 lineup brought the 3.7 V6, the 5.0 Coyote V8 and the 3.5 EcoBoost twin-turbo V6."),
+    G("gen13", "2015–2020", 2015, 2020, "The aluminum-body F-150 added the 2.7 EcoBoost, a 3.3 V6 from 2018 and a 3.0 Power Stroke diesel from 2018 to 2021. The 2017 Raptor used a high-output 3.5 EcoBoost."),
+    G("gen14", "2021–2026", 2021, 2026, "The current F-150 adds the PowerBoost hybrid and the supercharged 5.2 of the Raptor R. The electric F-150 Lightning was sold for 2022–2025.")],
+  files=["verify_ford-f150-1975-1996.json", "verify_ford-f150-1997-2014.json", "verify_ford-f150-2015-2026.json"],
+  merge_trims=True,
+  exclude={"1993|351|210": "1993 rating is 200; 210 is the 1992 and 1994 figure"},
+  names={f"{y}|204|290": "3.3L / 204 V6" for y in range(2018, 2024)},
+  notes={**{f"{y}|213|430": "Hybrid: 430 hp is the combined output of the 3.5 EcoBoost V6 and the electric motor." for y in range(2021, 2027)},
+         **{f"{y}|None|452": "452 hp with the standard-range battery; 580 hp with the extended-range battery." for y in range(2022, 2026)}})
+
 # Third sources found in follow-up passes, matched to the model they cover.
 for fn, slug in (("third_source_found_cj.json", "cj"),):
     tp = os.path.join(SP, fn)

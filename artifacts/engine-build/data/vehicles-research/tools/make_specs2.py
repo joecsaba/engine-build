@@ -332,7 +332,7 @@ S["amx"] = dict(make="AMC", model="AMX", makeSlug="amc", slug="amx",
   intro=["AMC used the AMX name on a two-seat sports car from 1968 to 1970 and on sporty versions of the Hornet, Concord and Spirit from 1977 to 1980. From 1971 to 1974 the AMX was a Javelin model and is listed on the Javelin page.", PICK],
   generations=[
     G("1968-1970", "1968–1970", 1968, 1970, "The two-seat AMX had only V8s: the 290, 343 and 390, then the 360 and 390 for 1970. Hurst built a small run of Super Stock AMXs for drag racing in 1969."),
-    G("1977-1980", "1977–1980", 1977, 1980, "The later AMX used AMC's 258 six and 304 V8. AMC's brochures for these years print no horsepower for the six.")],
+    G("1977-1980", "1977–1980", 1977, 1980, "The later AMX used AMC's 258 six and 304 V8. No horsepower rating is listed for the six in these years.")],
   files=["verify_javelin-amx.json"], require_model="AMX")
 
 S["lemans"] = dict(make="Pontiac", model="LeMans", makeSlug="pontiac", slug="lemans",

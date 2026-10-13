@@ -264,6 +264,25 @@ for fn in spec["files"]:
 for rx, rep in spec.get("trim_rewrite", []):
     for r in engines + excluded:
         r["trims"] = [re.sub(rx, rep, t) for t in r["trims"]]
+# Sources stay private: research trims sometimes say where a fact came from
+# ("4x4 new for 1976 per BlueOvalTech", "Laredo (Wikipedia)", "NHRA family C-354-05").
+SRC_WORDS = r"Wikipedia|\bEPA\b|KBB|Kelley|Hagerty|NHRA|BlueOval\w*|Consumer Guide|brochures?|press release|Cars\.com|MotorWeek|Flory|JeepTech|wagoneers\.com|Curbside|Mopar Insiders?|factory literature|per factory"
+# "order guide" names a source only after "per" ("per 2001 order guide"); a COPO
+# note saying the car was "not in the regular order guide" is about the car.
+CITE = SRC_WORDS + r"|\bper (the |\d{4} )?order guide"
+def scrub(t):
+    if not t: return t
+    t = re.sub(r"\s*\([^()]*(" + CITE + r")[^()]*\)", "", t, flags=re.I)
+    t = re.sub(r"[;,]?\s*\bper (later |the |\d{4} )?(" + SRC_WORDS + r"|order guide)\b.*$", "", t, flags=re.I)
+    t = re.sub(r"\s+per factory$", "", t, flags=re.I)
+    return t.strip(" ;,")
+for r in engines + excluded:
+    r["trims"] = [scrub(t) for t in r["trims"]]
+    for f in ("desc", "note"):
+        if r.get(f) and re.search(SRC_WORDS, r[f], re.I):
+            r[f] = scrub(r[f]) if f == "note" else None
+        if f == "note" and r.get(f) and re.search(SRC_WORDS, r[f], re.I):
+            r[f] = None
 for r in engines + excluded:  # a rewrite to "" drops the trim; keep the first of any duplicates
     r["trims"] = [t for i, t in enumerate(r["trims"]) if t and t not in r["trims"][:i]]
 if spec.get("merge_trims"):

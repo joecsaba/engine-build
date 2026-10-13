@@ -1,0 +1,113 @@
+{
+ "make": "Ford",
+ "model": "Thunderbird",
+ "makeSlug": "ford",
+ "slug": "thunderbird",
+ "title": "Ford Thunderbird Engines by Year (1955–2005)",
+ "description": "Every factory engine in the Ford Thunderbird by year: the 292 and supercharged 312, the 352, 390, 428, 429 and 460, the Turbo Coupe and the Super Coupe.",
+ "intro": [
+  "Ford built the Thunderbird from 1955 to 1997 and again from 2002 to 2005, starting as a two-seater and growing into a four-seat personal luxury car. Its engines ran from the Y-block V8s to the 460, and later included the Turbo Coupe's 2.3 turbo four and the Super Coupe's supercharged 3.8.",
+  "Pick a year to see every engine offered that model year, with its code, rated horsepower and the trims it came in. Each engine links to its full specs."
+ ],
+ "generations": [
+  {
+   "key": "1955-1957",
+   "name": "1955–1957",
+   "years": [
+    1955,
+    1957
+   ],
+   "intro": [
+    "The two-seat Thunderbird used the 292 and 312 Y-block V8s; the 1957 F-code 312 was supercharged."
+   ]
+  },
+  {
+   "key": "1958-1966",
+   "name": "1958–1966",
+   "years": [
+    1958,
+    1966
+   ],
+   "intro": [
+    "The four-seat Thunderbird used the 352, the 430 shared with Lincoln in 1959–1960, then the 390, including the 1962–1963 M-code with three two-barrel carburetors, and the 428 for 1966."
+   ]
+  },
+  {
+   "key": "1967-1976",
+   "name": "1967–1976",
+   "years": [
+    1967,
+    1976
+   ],
+   "intro": [
+    "The Thunderbird used the 390, 428 and 429 and, from 1972, the 460. Ratings are SAE net from 1972."
+   ]
+  },
+  {
+   "key": "1977-1979",
+   "name": "1977–1979",
+   "years": [
+    1977,
+    1979
+   ],
+   "intro": [
+    "The downsized Thunderbird shared Ford's intermediate engines: the 302, 351 and 400."
+   ]
+  },
+  {
+   "key": "1980-1997",
+   "name": "1980–1997",
+   "years": [
+    1980,
+    1997
+   ],
+   "intro": [
+    "The Fox and MN12 Thunderbirds offered sixes, the 3.8 V6, the 5.0 and 4.6 V8s, the 1983–1988 Turbo Coupe's 2.3 turbo four, and the 1989–1995 Super Coupe's supercharged 3.8."
+   ]
+  },
+  {
+   "key": "2002-2005",
+   "name": "2002–2005",
+   "years": [
+    2002,
+    2005
+   ],
+   "intro": [
+    "The retro Thunderbird used a 3.9 four-cam V8 shared with the Lincoln LS."
+   ]
+  }
+ ],
+ "files": [
+  "verify_thunderbird-1955-1979.json",
+  "verify_thunderbird-1980-2005.json"
+ ],
+ "include": [
+  "1979|302|133",
+  "1979|351|142",
+  "1979|351|151"
+ ],
+ "ranges": {
+  "1975|460|220": [
+   218,
+   224
+  ],
+  "1978|400|166": [
+   160,
+   166
+  ],
+  "1981|200|88": [
+   88,
+   94
+  ],
+  "1982|255|122": [
+   111,
+   122
+  ]
+ },
+ "notes": {
+  "1957|312|300": "Supercharged F-code.",
+  "1962|390|340": "M-code, three two-barrel carburetors.",
+  "1963|390|340": "M-code, three two-barrel carburetors.",
+  "1968|390|315": "Standard until January 1, 1968, when the 429 replaced it."
+ }
+}
