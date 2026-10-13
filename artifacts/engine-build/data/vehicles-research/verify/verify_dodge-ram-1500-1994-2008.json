@@ -1,0 +1,2627 @@
+{
+ "vehicle": "dodge-ram-1500-1994-2008",
+ "scope_note": "Ram 1500 only. Heavy-duty-only engines (8.0 Magnum V10, Cummins 5.9 diesel) excluded; V10 entries kept with status excluded_not_offered_in_1500 because NHRA's RAM heading lists them. No 4.7 H.O. in the Ram 1500 confirmed. gen2 = 1994-2001, gen3 = 2002-2008. independent_sources counts non-NHRA source groups (all Dodge material = 1, all Wikipedia = 1).",
+ "years": {
+  "1994": [
+   {
+    "gen": "gen2",
+    "cid": 239,
+    "hp": 175,
+    "hp_basis": "SAE net",
+    "name": "3.9L / 239 V6",
+    "rpo": "Magnum 3.9",
+    "common_name": "3.9 Magnum V6",
+    "trims": [
+     "base (1500 only)",
+     "2WD only per EPA"
+    ],
+    "nhra": true,
+    "sources": [
+     {
+      "name": "NHRA Stock Car Classification Guide (Dodge 'D1500'/'RAM' heading)",
+      "url": "nhra_dodge-ram-1500-1994-2008.json",
+      "says": "1994 D1500: 239 ci / 175 hp"
+     },
+     {
+      "name": "Wikipedia - Ram pickup (second/third generation engine tables) + Chrysler LA / PowerTech / Ram SRT-10 articles (one source)",
+      "url": "https://en.wikipedia.org/wiki/Ram_pickup",
+      "says": "1994-2001 239 cu in 3.9 L Magnum V6, 175 hp"
+     },
+     {
+      "name": "EPA fueleconomy.gov vehicle data",
+      "url": "https://www.fueleconomy.gov/feg/download.shtml",
+      "says": "1994 Ram 1500 Pickup 2WD: 3.9 L 6-cyl listed (no 4WD row)"
+     },
+     {
+      "name": "Consumer Guide - 1994-01 Dodge Ram Pickup used-car review",
+      "url": "https://consumerguide.com/used/1994-01-dodge-ram-pickup/",
+      "says": "A 3.9-liter V6 making 175 horsepower (170 bhp in '96) went into 1500-series models"
+     }
+    ],
+    "independent_sources": 3,
+    "status": "confirmed",
+    "note": "1500 only (not 2500/3500); EPA lists it only in 2WD."
+   },
+   {
+    "gen": "gen2",
+    "cid": 318,
+    "hp": 220,
+    "hp_basis": "SAE net",
+    "name": "5.2L / 318 V8",
+    "rpo": "Magnum 5.2",
+    "common_name": "5.2 Magnum V8",
+    "trims": [
+     "1500 2WD (opt)",
+     "1500 4WD (std)"
+    ],
+    "nhra": true,
+    "sources": [
+     {
+      "name": "NHRA Stock Car Classification Guide (Dodge 'D1500'/'RAM' heading)",
+      "url": "nhra_dodge-ram-1500-1994-2008.json",
+      "says": "1994 D1500: 318 ci / 220 hp"
+     },
+     {
+      "name": "Wikipedia - Ram pickup (second/third generation engine tables) + Chrysler LA / PowerTech / Ram SRT-10 articles (one source)",
+      "url": "https://en.wikipedia.org/wiki/Ram_pickup",
+      "says": "1994-2001 318 cu in 5.2 L Magnum V8, 230 hp (single rating for all years)"
+     },
+     {
+      "name": "EPA fueleconomy.gov vehicle data",
+      "url": "https://www.fueleconomy.gov/feg/download.shtml",
+      "says": "1994 Ram 1500 Pickup: 5.2 L 8-cyl listed (2WD and 4WD)"
+     },
+     {
+      "name": "Consumer Guide - 1994-01 Dodge Ram Pickup used-car review",
+      "url": "https://consumerguide.com/used/1994-01-dodge-ram-pickup/",
+      "says": "A 220-horsepower, 5.2-liter V8 went into 4x4s and 2500-series Rams, and was optional in 1500-series"
+     },
+     {
+      "name": "Cars.com - 1994 Dodge Ram 1500 research page (expert review)",
+      "url": "https://www.cars.com/research/dodge-ram_1500-1994/specs/",
+      "says": "the 5.2-liter, 220-h.p., V-8"
+     }
+    ],
+    "independent_sources": 4,
+    "status": "confirmed",
+    "note": "Std on 4WD 1500, optional on 2WD. Wikipedia gives 230 hp for all 1994-2001; NHRA, Consumer Guide, Cars.com, Auto Channel and KBB give 220 hp through 1997. Recorded 220. KBB's 1994 page shows 215 hp/290 lb-ft (data error, not cited)."
+   },
+   {
+    "gen": "gen2",
+    "cid": 360,
+    "hp": 230,
+    "hp_basis": "SAE net",
+    "name": "5.9L / 360 V8",
+    "rpo": "Magnum 5.9",
+    "common_name": "5.9 Magnum V8",
+    "trims": [
+     "1500 2WD and 4WD (opt)"
+    ],
+    "nhra": true,
+    "sources": [
+     {
+      "name": "NHRA Stock Car Classification Guide (Dodge 'D1500'/'RAM' heading)",
+      "url": "nhra_dodge-ram-1500-1994-2008.json",
+      "says": "1994 D1500: 360 ci / 230 hp"
+     },
+     {
+      "name": "Wikipedia - Ram pickup (second/third generation engine tables) + Chrysler LA / PowerTech / Ram SRT-10 articles (one source)",
+      "url": "https://en.wikipedia.org/wiki/Ram_pickup",
+      "says": "360 cu in 5.9 L Magnum V8: 230 hp 1994-1997, 245 hp 1998-2002 (LA engine article: upgraded in 1998 to 245 hp at 4,000 rpm)"
+     },
+     {
+      "name": "EPA fueleconomy.gov vehicle data",
+      "url": "https://www.fueleconomy.gov/feg/download.shtml",
+      "says": "1994 Ram 1500 Pickup: 5.9 L 8-cyl listed (2WD and 4WD)"
+     },
+     {
+      "name": "Consumer Guide - 1994-01 Dodge Ram Pickup used-car review",
+      "url": "https://consumerguide.com/used/1994-01-dodge-ram-pickup/",
+      "says": "5.9-liter V8 230-235 hp, standard in 3500-series, optional in others; 'For 1997, a slight power boost for the 5.9-liter V8'"
+     },
+     {
+      "name": "Cars.com - 1994 Dodge Ram 1500 research page (expert review)",
+      "url": "https://www.cars.com/research/dodge-ram_1500-1994/specs/",
+      "says": "the 5.9-liter, 230-h.p., V-8 also offered in the Ram"
+     }
+    ],
+    "independent_sources": 4,
+    "status": "confirmed",
+    "note": "Optional in 1500."
+   },
+   {
+    "gen": "gen2",
+    "cid": 488,
+    "hp": 300,
+    "hp_basis": "SAE net",
+    "name": "8.0L / 488 V10",
+    "rpo": "Magnum V10",
+    "common_name": "8.0 Magnum V10",
+    "trims": [
+     "2500/3500 only"
+    ],
+    "nhra": true,
+    "sources": [
+     {
+      "name": "NHRA Stock Car Classification Guide (Dodge 'D1500'/'RAM' heading)",
+      "url": "nhra_dodge-ram-1500-1994-2008.json",
+      "says": "1994 D1500: 488 ci / 300 hp (NHRA heading covers all Ram pickups)"
+     },
+     {
+      "name": "Wikipedia - Ram pickup (second/third generation engine tables) + Chrysler LA / PowerTech / Ram SRT-10 articles (one source)",
+      "url": "https://en.wikipedia.org/wiki/Ram_pickup",
+      "says": "The V10 and diesel were available in 2500/3500 models above 8,500 pounds GVWR; LA article: Magnum V10 designed for Ram 2500 and 3500"
+     },
+     {
+      "name": "EPA fueleconomy.gov vehicle data",
+      "url": "https://www.fueleconomy.gov/feg/download.shtml",
+      "says": "1994: no 8.0 L 10-cyl row for Ram 1500 (heavy-duty >8,500 lb GVWR trucks were exempt from EPA labels)"
+     },
+     {
+      "name": "Cars.com - 1996 Dodge Ram 1500 research page (expert review tested a Ram 3500 V10)",
+      "url": "https://www.cars.com/research/dodge-ram_1500-1996/",
+      "says": "1996 expert review of the V10 was a Ram 3500 4X4, 300 hp, 450 lb-ft"
+     }
+    ],
+    "independent_sources": 3,
+    "status": "excluded_not_offered_in_1500",
+    "note": "Not a 1500 engine. NHRA lists it because its 'RAM' heading lumps 1500/2500/3500. Consumer Guide's 1994-01 review lists it among Ram engines without restricting series, but no source puts it in a 1500. Do not show on the 1500 page."
+   }
+  ],
+  "1995": [
+   {
+    "gen": "gen2",
+    "cid": 239,
+    "hp": 175,
+    "hp_basis": "SAE net",
+    "name": "3.9L / 239 V6",
+    "rpo": "Magnum 3.9",
+    "common_name": "3.9 Magnum V6",
+    "trims": [
+     "base (1500 only)",
+     "2WD only per EPA"
+    ],
+    "nhra": true,
+    "sources": [
+     {
+      "name": "NHRA Stock Car Classification Guide (Dodge 'D1500'/'RAM' heading)",
+      "url": "nhra_dodge-ram-1500-1994-2008.json",
+      "says": "1995 RAM: 239 ci / 175 hp"
+     },
+     {
+      "name": "Wikipedia - Ram pickup (second/third generation engine tables) + Chrysler LA / PowerTech / Ram SRT-10 articles (one source)",
+      "url": "https://en.wikipedia.org/wiki/Ram_pickup",
+      "says": "1994-2001 239 cu in 3.9 L Magnum V6, 175 hp"
+     },
+     {
+      "name": "EPA fueleconomy.gov vehicle data",
+      "url": "https://www.fueleconomy.gov/feg/download.shtml",
+      "says": "1995 Ram 1500 Pickup 2WD: 3.9 L 6-cyl listed (no 4WD row)"
+     },
+     {
+      "name": "Consumer Guide - 1994-01 Dodge Ram Pickup used-car review",
+      "url": "https://consumerguide.com/used/1994-01-dodge-ram-pickup/",
+      "says": "A 3.9-liter V6 making 175 horsepower (170 bhp in '96) went into 1500-series models"
+     }
+    ],
+    "independent_sources": 3,
+    "status": "confirmed",
+    "note": "1500 only (not 2500/3500); EPA lists it only in 2WD."
+   },
+   {
+    "gen": "gen2",
+    "cid": 318,
+    "hp": 220,
+    "hp_basis": "SAE net",
+    "name": "5.2L / 318 V8",
+    "rpo": "Magnum 5.2",
+    "common_name": "5.2 Magnum V8",
+    "trims": [
+     "1500 2WD (opt)",
+     "1500 4WD (std)"
+    ],
+    "nhra": true,
+    "sources": [
+     {
+      "name": "NHRA Stock Car Classification Guide (Dodge 'D1500'/'RAM' heading)",
+      "url": "nhra_dodge-ram-1500-1994-2008.json",
+      "says": "1995 RAM: 318 ci / 220 hp"
+     },
+     {
+      "name": "Wikipedia - Ram pickup (second/third generation engine tables) + Chrysler LA / PowerTech / Ram SRT-10 articles (one source)",
+      "url": "https://en.wikipedia.org/wiki/Ram_pickup",
+      "says": "1994-2001 318 cu in 5.2 L Magnum V8, 230 hp (single rating for all years)"
+     },
+     {
+      "name": "EPA fueleconomy.gov vehicle data",
+      "url": "https://www.fueleconomy.gov/feg/download.shtml",
+      "says": "1995 Ram 1500 Pickup: 5.2 L 8-cyl listed (2WD and 4WD)"
+     },
+     {
+      "name": "Consumer Guide - 1994-01 Dodge Ram Pickup used-car review",
+      "url": "https://consumerguide.com/used/1994-01-dodge-ram-pickup/",
+      "says": "A 220-horsepower, 5.2-liter V8 went into 4x4s and 2500-series Rams, and was optional in 1500-series"
+     }
+    ],
+    "independent_sources": 3,
+    "status": "confirmed",
+    "note": "Std on 4WD 1500, optional on 2WD. Wikipedia gives 230 hp for all 1994-2001; NHRA, Consumer Guide, Cars.com, Auto Channel and KBB give 220 hp through 1997. Recorded 220. Wikipedia also lists a 1995-1997 5.2 natural-gas V8 (200 hp) without saying which series; not verified for the 1500, not included."
+   },
+   {
+    "gen": "gen2",
+    "cid": 360,
+    "hp": 230,
+    "hp_basis": "SAE net",
+    "name": "5.9L / 360 V8",
+    "rpo": "Magnum 5.9",
+    "common_name": "5.9 Magnum V8",
+    "trims": [
+     "1500 2WD and 4WD (opt)"
+    ],
+    "nhra": true,
+    "sources": [
+     {
+      "name": "NHRA Stock Car Classification Guide (Dodge 'D1500'/'RAM' heading)",
+      "url": "nhra_dodge-ram-1500-1994-2008.json",
+      "says": "1995 RAM: 360 ci / 230 hp"
+     },
+     {
+      "name": "Wikipedia - Ram pickup (second/third generation engine tables) + Chrysler LA / PowerTech / Ram SRT-10 articles (one source)",
+      "url": "https://en.wikipedia.org/wiki/Ram_pickup",
+      "says": "360 cu in 5.9 L Magnum V8: 230 hp 1994-1997, 245 hp 1998-2002 (LA engine article: upgraded in 1998 to 245 hp at 4,000 rpm)"
+     },
+     {
+      "name": "EPA fueleconomy.gov vehicle data",
+      "url": "https://www.fueleconomy.gov/feg/download.shtml",
+      "says": "1995 Ram 1500 Pickup: 5.9 L 8-cyl listed (2WD and 4WD)"
+     },
+     {
+      "name": "Consumer Guide - 1994-01 Dodge Ram Pickup used-car review",
+      "url": "https://consumerguide.com/used/1994-01-dodge-ram-pickup/",
+      "says": "5.9-liter V8 230-235 hp, standard in 3500-series, optional in others; 'For 1997, a slight power boost for the 5.9-liter V8'"
+     }
+    ],
+    "independent_sources": 3,
+    "status": "confirmed",
+    "note": "Optional in 1500."
+   },
+   {
+    "gen": "gen2",
+    "cid": 488,
+    "hp": 300,
+    "hp_basis": "SAE net",
+    "name": "8.0L / 488 V10",
+    "rpo": "Magnum V10",
+    "common_name": "8.0 Magnum V10",
+    "trims": [
+     "2500/3500 only"
+    ],
+    "nhra": true,
+    "sources": [
+     {
+      "name": "NHRA Stock Car Classification Guide (Dodge 'D1500'/'RAM' heading)",
+      "url": "nhra_dodge-ram-1500-1994-2008.json",
+      "says": "1995 RAM: 488 ci / 300 hp (NHRA heading covers all Ram pickups)"
+     },
+     {
+      "name": "Wikipedia - Ram pickup (second/third generation engine tables) + Chrysler LA / PowerTech / Ram SRT-10 articles (one source)",
+      "url": "https://en.wikipedia.org/wiki/Ram_pickup",
+      "says": "The V10 and diesel were available in 2500/3500 models above 8,500 pounds GVWR; LA article: Magnum V10 designed for Ram 2500 and 3500"
+     },
+     {
+      "name": "EPA fueleconomy.gov vehicle data",
+      "url": "https://www.fueleconomy.gov/feg/download.shtml",
+      "says": "1995: no 8.0 L 10-cyl row for Ram 1500 (heavy-duty >8,500 lb GVWR trucks were exempt from EPA labels)"
+     },
+     {
+      "name": "Cars.com - 1996 Dodge Ram 1500 research page (expert review tested a Ram 3500 V10)",
+      "url": "https://www.cars.com/research/dodge-ram_1500-1996/",
+      "says": "1996 expert review of the V10 was a Ram 3500 4X4, 300 hp, 450 lb-ft"
+     }
+    ],
+    "independent_sources": 3,
+    "status": "excluded_not_offered_in_1500",
+    "note": "Not a 1500 engine. NHRA lists it because its 'RAM' heading lumps 1500/2500/3500. Consumer Guide's 1994-01 review lists it among Ram engines without restricting series, but no source puts it in a 1500. Do not show on the 1500 page."
+   }
+  ],
+  "1996": [
+   {
+    "gen": "gen2",
+    "cid": 239,
+    "hp": 175,
+    "hp_basis": "SAE net",
+    "name": "3.9L / 239 V6",
+    "rpo": "Magnum 3.9",
+    "common_name": "3.9 Magnum V6",
+    "trims": [
+     "base (1500 only)",
+     "2WD only per EPA"
+    ],
+    "nhra": true,
+    "sources": [
+     {
+      "name": "NHRA Stock Car Classification Guide (Dodge 'D1500'/'RAM' heading)",
+      "url": "nhra_dodge-ram-1500-1994-2008.json",
+      "says": "1996 RAM: 238 ci / 175 hp"
+     },
+     {
+      "name": "Wikipedia - Ram pickup (second/third generation engine tables) + Chrysler LA / PowerTech / Ram SRT-10 articles (one source)",
+      "url": "https://en.wikipedia.org/wiki/Ram_pickup",
+      "says": "1994-2001 239 cu in 3.9 L Magnum V6, 175 hp"
+     },
+     {
+      "name": "EPA fueleconomy.gov vehicle data",
+      "url": "https://www.fueleconomy.gov/feg/download.shtml",
+      "says": "1996 Ram 1500 Pickup 2WD: 3.9 L 6-cyl listed (no 4WD row)"
+     },
+     {
+      "name": "Consumer Guide - 1994-01 Dodge Ram Pickup used-car review",
+      "url": "https://consumerguide.com/used/1994-01-dodge-ram-pickup/",
+      "says": "A 3.9-liter V6 making 175 horsepower (170 bhp in '96) went into 1500-series models"
+     }
+    ],
+    "independent_sources": 3,
+    "status": "confirmed",
+    "note": "1500 only (not 2500/3500); EPA lists it only in 2WD. Consumer Guide says 170 hp for 1996; NHRA, Wikipedia and other years' sources say 175. Recorded 175."
+   },
+   {
+    "gen": "gen2",
+    "cid": 318,
+    "hp": 220,
+    "hp_basis": "SAE net",
+    "name": "5.2L / 318 V8",
+    "rpo": "Magnum 5.2",
+    "common_name": "5.2 Magnum V8",
+    "trims": [
+     "1500 2WD (opt)",
+     "1500 4WD (std)"
+    ],
+    "nhra": true,
+    "sources": [
+     {
+      "name": "NHRA Stock Car Classification Guide (Dodge 'D1500'/'RAM' heading)",
+      "url": "nhra_dodge-ram-1500-1994-2008.json",
+      "says": "1996 RAM: 318 ci / 220 hp"
+     },
+     {
+      "name": "Wikipedia - Ram pickup (second/third generation engine tables) + Chrysler LA / PowerTech / Ram SRT-10 articles (one source)",
+      "url": "https://en.wikipedia.org/wiki/Ram_pickup",
+      "says": "1994-2001 318 cu in 5.2 L Magnum V8, 230 hp (single rating for all years)"
+     },
+     {
+      "name": "EPA fueleconomy.gov vehicle data",
+      "url": "https://www.fueleconomy.gov/feg/download.shtml",
+      "says": "1996 Ram 1500 Pickup: 5.2 L 8-cyl listed (2WD and 4WD)"
+     },
+     {
+      "name": "Consumer Guide - 1994-01 Dodge Ram Pickup used-car review",
+      "url": "https://consumerguide.com/used/1994-01-dodge-ram-pickup/",
+      "says": "A 220-horsepower, 5.2-liter V8 went into 4x4s and 2500-series Rams, and was optional in 1500-series"
+     },
+     {
+      "name": "The Auto Channel - 1996 Dodge Ram 1500 4X4 SLT review (Tom Hagin)",
+      "url": "https://www.theautochannel.com/vehicles/new/reviews/solo9621.html",
+      "says": "The 5.2 liter's 220 horsepower and 300 lb-ft"
+     },
+     {
+      "name": "Kelley Blue Book - 1996 Dodge Ram 1500 Regular Cab specs",
+      "url": "https://www.kbb.com/dodge/ram-1500-regular-cab/1996/specs/",
+      "says": "V8, 5.2 Liter 220 @ 4400 RPM, 300 lb-ft"
+     }
+    ],
+    "independent_sources": 5,
+    "status": "confirmed",
+    "note": "Std on 4WD 1500, optional on 2WD. Wikipedia gives 230 hp for all 1994-2001; NHRA, Consumer Guide, Cars.com, Auto Channel and KBB give 220 hp through 1997. Recorded 220. Wikipedia also lists a 1995-1997 5.2 natural-gas V8 (200 hp) without saying which series; not verified for the 1500, not included."
+   },
+   {
+    "gen": "gen2",
+    "cid": 360,
+    "hp": 230,
+    "hp_basis": "SAE net",
+    "name": "5.9L / 360 V8",
+    "rpo": "Magnum 5.9",
+    "common_name": "5.9 Magnum V8",
+    "trims": [
+     "1500 2WD and 4WD (opt)",
+     "SS/T / Indy (1996-98)"
+    ],
+    "nhra": true,
+    "sources": [
+     {
+      "name": "NHRA Stock Car Classification Guide (Dodge 'D1500'/'RAM' heading)",
+      "url": "nhra_dodge-ram-1500-1994-2008.json",
+      "says": "1996 RAM: 360 ci / 230 hp"
+     },
+     {
+      "name": "Wikipedia - Ram pickup (second/third generation engine tables) + Chrysler LA / PowerTech / Ram SRT-10 articles (one source)",
+      "url": "https://en.wikipedia.org/wiki/Ram_pickup",
+      "says": "360 cu in 5.9 L Magnum V8: 230 hp 1994-1997, 245 hp 1998-2002 (LA engine article: upgraded in 1998 to 245 hp at 4,000 rpm)"
+     },
+     {
+      "name": "EPA fueleconomy.gov vehicle data",
+      "url": "https://www.fueleconomy.gov/feg/download.shtml",
+      "says": "1996 Ram 1500 Pickup: 5.9 L 8-cyl listed (2WD and 4WD)"
+     },
+     {
+      "name": "Consumer Guide - 1994-01 Dodge Ram Pickup used-car review",
+      "url": "https://consumerguide.com/used/1994-01-dodge-ram-pickup/",
+      "says": "5.9-liter V8 230-235 hp, standard in 3500-series, optional in others; 'For 1997, a slight power boost for the 5.9-liter V8'"
+     },
+     {
+      "name": "The Auto Channel - 1996 Dodge Ram 1500 4X4 SLT review (Tom Hagin)",
+      "url": "https://www.theautochannel.com/vehicles/new/reviews/solo9621.html",
+      "says": "5.9: 'Its 230 horsepower provides enough power...'"
+     }
+    ],
+    "independent_sources": 4,
+    "status": "confirmed",
+    "note": "Optional in 1500. 1996 Indy 500 Official Truck and 1997-98 SS/T packages used this 5.9 with freer exhaust (Wikipedia: +15 hp, uncited; not recorded as a separate engine)."
+   },
+   {
+    "gen": "gen2",
+    "cid": 488,
+    "hp": 300,
+    "hp_basis": "SAE net",
+    "name": "8.0L / 488 V10",
+    "rpo": "Magnum V10",
+    "common_name": "8.0 Magnum V10",
+    "trims": [
+     "2500/3500 only"
+    ],
+    "nhra": true,
+    "sources": [
+     {
+      "name": "NHRA Stock Car Classification Guide (Dodge 'D1500'/'RAM' heading)",
+      "url": "nhra_dodge-ram-1500-1994-2008.json",
+      "says": "1996 RAM: 488 ci / 300 hp (NHRA heading covers all Ram pickups)"
+     },
+     {
+      "name": "Wikipedia - Ram pickup (second/third generation engine tables) + Chrysler LA / PowerTech / Ram SRT-10 articles (one source)",
+      "url": "https://en.wikipedia.org/wiki/Ram_pickup",
+      "says": "The V10 and diesel were available in 2500/3500 models above 8,500 pounds GVWR; LA article: Magnum V10 designed for Ram 2500 and 3500"
+     },
+     {
+      "name": "EPA fueleconomy.gov vehicle data",
+      "url": "https://www.fueleconomy.gov/feg/download.shtml",
+      "says": "1996: no 8.0 L 10-cyl row for Ram 1500 (heavy-duty >8,500 lb GVWR trucks were exempt from EPA labels)"
+     },
+     {
+      "name": "Cars.com - 1996 Dodge Ram 1500 research page (expert review tested a Ram 3500 V10)",
+      "url": "https://www.cars.com/research/dodge-ram_1500-1996/",
+      "says": "1996 expert review of the V10 was a Ram 3500 4X4, 300 hp, 450 lb-ft"
+     }
+    ],
+    "independent_sources": 3,
+    "status": "excluded_not_offered_in_1500",
+    "note": "Not a 1500 engine. NHRA lists it because its 'RAM' heading lumps 1500/2500/3500. Consumer Guide's 1994-01 review lists it among Ram engines without restricting series, but no source puts it in a 1500. Do not show on the 1500 page."
+   }
+  ],
+  "1997": [
+   {
+    "gen": "gen2",
+    "cid": 239,
+    "hp": 175,
+    "hp_basis": "SAE net",
+    "name": "3.9L / 239 V6",
+    "rpo": "Magnum 3.9",
+    "common_name": "3.9 Magnum V6",
+    "trims": [
+     "base (1500 only)",
+     "2WD only per EPA"
+    ],
+    "nhra": true,
+    "sources": [
+     {
+      "name": "NHRA Stock Car Classification Guide (Dodge 'D1500'/'RAM' heading)",
+      "url": "nhra_dodge-ram-1500-1994-2008.json",
+      "says": "1997 RAM: 238 ci / 175 hp"
+     },
+     {
+      "name": "Wikipedia - Ram pickup (second/third generation engine tables) + Chrysler LA / PowerTech / Ram SRT-10 articles (one source)",
+      "url": "https://en.wikipedia.org/wiki/Ram_pickup",
+      "says": "1994-2001 239 cu in 3.9 L Magnum V6, 175 hp"
+     },
+     {
+      "name": "EPA fueleconomy.gov vehicle data",
+      "url": "https://www.fueleconomy.gov/feg/download.shtml",
+      "says": "1997 Ram 1500 Pickup 2WD: 3.9 L 6-cyl listed (no 4WD row)"
+     },
+     {
+      "name": "Consumer Guide - 1994-01 Dodge Ram Pickup used-car review",
+      "url": "https://consumerguide.com/used/1994-01-dodge-ram-pickup/",
+      "says": "A 3.9-liter V6 making 175 horsepower (170 bhp in '96) went into 1500-series models"
+     },
+     {
+      "name": "Cars.com - 1997 Dodge Ram 1500 specs (base + Club Cab 155 4WD trim)",
+      "url": "https://www.cars.com/research/dodge-ram_1500-1997/specs/",
+      "says": "175-hp, 3.9-liter V6 (base engine)"
+     }
+    ],
+    "independent_sources": 4,
+    "status": "confirmed",
+    "note": "1500 only (not 2500/3500); EPA lists it only in 2WD. Sequential fuel injection and 225 lb-ft torque from 1997 (Wikipedia LA engine)."
+   },
+   {
+    "gen": "gen2",
+    "cid": 318,
+    "hp": 220,
+    "hp_basis": "SAE net",
+    "name": "5.2L / 318 V8",
+    "rpo": "Magnum 5.2",
+    "common_name": "5.2 Magnum V8",
+    "trims": [
+     "1500 2WD (opt)",
+     "1500 4WD (std)"
+    ],
+    "nhra": true,
+    "sources": [
+     {
+      "name": "NHRA Stock Car Classification Guide (Dodge 'D1500'/'RAM' heading)",
+      "url": "nhra_dodge-ram-1500-1994-2008.json",
+      "says": "1997 RAM: 318 ci / 220 hp"
+     },
+     {
+      "name": "Wikipedia - Ram pickup (second/third generation engine tables) + Chrysler LA / PowerTech / Ram SRT-10 articles (one source)",
+      "url": "https://en.wikipedia.org/wiki/Ram_pickup",
+      "says": "1994-2001 318 cu in 5.2 L Magnum V8, 230 hp (single rating for all years)"
+     },
+     {
+      "name": "EPA fueleconomy.gov vehicle data",
+      "url": "https://www.fueleconomy.gov/feg/download.shtml",
+      "says": "1997 Ram 1500 Pickup: 5.2 L 8-cyl listed (2WD and 4WD)"
+     },
+     {
+      "name": "Consumer Guide - 1994-01 Dodge Ram Pickup used-car review",
+      "url": "https://consumerguide.com/used/1994-01-dodge-ram-pickup/",
+      "says": "A 220-horsepower, 5.2-liter V8 went into 4x4s and 2500-series Rams, and was optional in 1500-series"
+     },
+     {
+      "name": "Cars.com - 1997 Dodge Ram 1500 specs (base + Club Cab 155 4WD trim)",
+      "url": "https://www.cars.com/research/dodge-ram_1500-1997/specs/",
+      "says": "5.2L/318, 220 @ 4400 SAE net, 300 @ 3200"
+     },
+     {
+      "name": "Kelley Blue Book - 1997 Dodge Ram 1500 specs / Club Cab specs",
+      "url": "https://www.kbb.com/dodge/ram-1500-club-cab/1997/specs/",
+      "says": "V8, 5.2 Liter 220 @ 4400 RPM, 300 lb-ft"
+     }
+    ],
+    "independent_sources": 5,
+    "status": "confirmed",
+    "note": "Std on 4WD 1500, optional on 2WD. Wikipedia gives 230 hp for all 1994-2001; NHRA, Consumer Guide, Cars.com, Auto Channel and KBB give 220 hp through 1997. Recorded 220. Wikipedia also lists a 1995-1997 5.2 natural-gas V8 (200 hp) without saying which series; not verified for the 1500, not included."
+   },
+   {
+    "gen": "gen2",
+    "cid": 360,
+    "hp": 235,
+    "hp_basis": "SAE net",
+    "name": "5.9L / 360 V8",
+    "rpo": "Magnum 5.9",
+    "common_name": "5.9 Magnum V8",
+    "trims": [
+     "1500 2WD and 4WD (opt)",
+     "SS/T / Indy (1996-98)"
+    ],
+    "nhra": true,
+    "sources": [
+     {
+      "name": "NHRA Stock Car Classification Guide (Dodge 'D1500'/'RAM' heading)",
+      "url": "nhra_dodge-ram-1500-1994-2008.json",
+      "says": "1997 RAM: 360 ci / 250 hp"
+     },
+     {
+      "name": "Wikipedia - Ram pickup (second/third generation engine tables) + Chrysler LA / PowerTech / Ram SRT-10 articles (one source)",
+      "url": "https://en.wikipedia.org/wiki/Ram_pickup",
+      "says": "360 cu in 5.9 L Magnum V8: 230 hp 1994-1997, 245 hp 1998-2002 (LA engine article: upgraded in 1998 to 245 hp at 4,000 rpm)"
+     },
+     {
+      "name": "EPA fueleconomy.gov vehicle data",
+      "url": "https://www.fueleconomy.gov/feg/download.shtml",
+      "says": "1997 Ram 1500 Pickup: 5.9 L 8-cyl listed (2WD and 4WD)"
+     },
+     {
+      "name": "Consumer Guide - 1994-01 Dodge Ram Pickup used-car review",
+      "url": "https://consumerguide.com/used/1994-01-dodge-ram-pickup/",
+      "says": "5.9-liter V8 230-235 hp, standard in 3500-series, optional in others; 'For 1997, a slight power boost for the 5.9-liter V8'"
+     },
+     {
+      "name": "Kelley Blue Book - 1997 Dodge Ram 1500 specs / Club Cab specs",
+      "url": "https://www.kbb.com/dodge/ram-1500-club-cab/1997/specs/",
+      "says": "1997 Ram 1500 Club Cab: V8, 5.9 Liter 235 @ 4000 RPM, 330 lb-ft"
+     }
+    ],
+    "independent_sources": 4,
+    "status": "confirmed",
+    "note": "Optional in 1500. Rating disputed: Consumer Guide (230->235 for 1997) and KBB give 235; NHRA lists 250; Wikipedia keeps 230 through 1997. Recorded 235. 1996 Indy 500 Official Truck and 1997-98 SS/T packages used this 5.9 with freer exhaust (Wikipedia: +15 hp, uncited; not recorded as a separate engine)."
+   },
+   {
+    "gen": "gen2",
+    "cid": 488,
+    "hp": 300,
+    "hp_basis": "SAE net",
+    "name": "8.0L / 488 V10",
+    "rpo": "Magnum V10",
+    "common_name": "8.0 Magnum V10",
+    "trims": [
+     "2500/3500 only"
+    ],
+    "nhra": true,
+    "sources": [
+     {
+      "name": "NHRA Stock Car Classification Guide (Dodge 'D1500'/'RAM' heading)",
+      "url": "nhra_dodge-ram-1500-1994-2008.json",
+      "says": "1997 RAM: 488 ci / 300 hp (NHRA heading covers all Ram pickups)"
+     },
+     {
+      "name": "Wikipedia - Ram pickup (second/third generation engine tables) + Chrysler LA / PowerTech / Ram SRT-10 articles (one source)",
+      "url": "https://en.wikipedia.org/wiki/Ram_pickup",
+      "says": "The V10 and diesel were available in 2500/3500 models above 8,500 pounds GVWR; LA article: Magnum V10 designed for Ram 2500 and 3500"
+     },
+     {
+      "name": "EPA fueleconomy.gov vehicle data",
+      "url": "https://www.fueleconomy.gov/feg/download.shtml",
+      "says": "1997: no 8.0 L 10-cyl row for Ram 1500 (heavy-duty >8,500 lb GVWR trucks were exempt from EPA labels)"
+     },
+     {
+      "name": "Cars.com - 1996 Dodge Ram 1500 research page (expert review tested a Ram 3500 V10)",
+      "url": "https://www.cars.com/research/dodge-ram_1500-1996/",
+      "says": "1996 expert review of the V10 was a Ram 3500 4X4, 300 hp, 450 lb-ft"
+     }
+    ],
+    "independent_sources": 3,
+    "status": "excluded_not_offered_in_1500",
+    "note": "Not a 1500 engine. NHRA lists it because its 'RAM' heading lumps 1500/2500/3500. Consumer Guide's 1994-01 review lists it among Ram engines without restricting series, but no source puts it in a 1500. Do not show on the 1500 page."
+   }
+  ],
+  "1998": [
+   {
+    "gen": "gen2",
+    "cid": 239,
+    "hp": 175,
+    "hp_basis": "SAE net",
+    "name": "3.9L / 239 V6",
+    "rpo": "Magnum 3.9",
+    "common_name": "3.9 Magnum V6",
+    "trims": [
+     "base (1500 only)",
+     "2WD only per EPA"
+    ],
+    "nhra": true,
+    "sources": [
+     {
+      "name": "NHRA Stock Car Classification Guide (Dodge 'D1500'/'RAM' heading)",
+      "url": "nhra_dodge-ram-1500-1994-2008.json",
+      "says": "1998 RAM: 238 ci / 175 hp"
+     },
+     {
+      "name": "Wikipedia - Ram pickup (second/third generation engine tables) + Chrysler LA / PowerTech / Ram SRT-10 articles (one source)",
+      "url": "https://en.wikipedia.org/wiki/Ram_pickup",
+      "says": "1994-2001 239 cu in 3.9 L Magnum V6, 175 hp"
+     },
+     {
+      "name": "EPA fueleconomy.gov vehicle data",
+      "url": "https://www.fueleconomy.gov/feg/download.shtml",
+      "says": "1998 Ram 1500 Pickup 2WD: 3.9 L 6-cyl listed (no 4WD row)"
+     },
+     {
+      "name": "Consumer Guide - 1994-01 Dodge Ram Pickup used-car review",
+      "url": "https://consumerguide.com/used/1994-01-dodge-ram-pickup/",
+      "says": "A 3.9-liter V6 making 175 horsepower (170 bhp in '96) went into 1500-series models"
+     },
+     {
+      "name": "Cars.com - 1998 Dodge Ram 1500 specs (base + Quad Cab 139 trim)",
+      "url": "https://www.cars.com/research/dodge-ram_1500-1998/specs/",
+      "says": "175-hp 3.9-liter V6; SAE net 175 @ 4800"
+     }
+    ],
+    "independent_sources": 4,
+    "status": "confirmed",
+    "note": "1500 only (not 2500/3500); EPA lists it only in 2WD."
+   },
+   {
+    "gen": "gen2",
+    "cid": 318,
+    "hp": 230,
+    "hp_basis": "SAE net",
+    "name": "5.2L / 318 V8",
+    "rpo": "Magnum 5.2",
+    "common_name": "5.2 Magnum V8",
+    "trims": [
+     "1500 2WD (opt)",
+     "1500 4WD (std)"
+    ],
+    "nhra": true,
+    "sources": [
+     {
+      "name": "NHRA Stock Car Classification Guide (Dodge 'D1500'/'RAM' heading)",
+      "url": "nhra_dodge-ram-1500-1994-2008.json",
+      "says": "1998 RAM: 318 ci / 230 hp"
+     },
+     {
+      "name": "Wikipedia - Ram pickup (second/third generation engine tables) + Chrysler LA / PowerTech / Ram SRT-10 articles (one source)",
+      "url": "https://en.wikipedia.org/wiki/Ram_pickup",
+      "says": "1994-2001 318 cu in 5.2 L Magnum V8, 230 hp (single rating for all years)"
+     },
+     {
+      "name": "EPA fueleconomy.gov vehicle data",
+      "url": "https://www.fueleconomy.gov/feg/download.shtml",
+      "says": "1998 Ram 1500 Pickup: 5.2 L 8-cyl listed (2WD and 4WD)"
+     },
+     {
+      "name": "Consumer Guide - 1994-01 Dodge Ram Pickup used-car review",
+      "url": "https://consumerguide.com/used/1994-01-dodge-ram-pickup/",
+      "says": "A 220-horsepower, 5.2-liter V8 went into 4x4s and 2500-series Rams, and was optional in 1500-series"
+     },
+     {
+      "name": "Cars.com - 1998 Dodge Ram 1500 specs (base + Quad Cab 139 trim)",
+      "url": "https://www.cars.com/research/dodge-ram_1500-1998/specs/",
+      "says": "5.2L/318 230 @ 4400 SAE net"
+     }
+    ],
+    "independent_sources": 4,
+    "status": "confirmed",
+    "note": "Std on 4WD 1500, optional on 2WD. 230 hp from 1998 (NHRA, Cars.com, KBB, Wikipedia); Consumer Guide quotes only the earlier 220."
+   },
+   {
+    "gen": "gen2",
+    "cid": 360,
+    "hp": 245,
+    "hp_basis": "SAE net",
+    "name": "5.9L / 360 V8",
+    "rpo": "Magnum 5.9",
+    "common_name": "5.9 Magnum V8",
+    "trims": [
+     "1500 2WD and 4WD (opt)",
+     "SS/T / Indy (1996-98)"
+    ],
+    "nhra": true,
+    "sources": [
+     {
+      "name": "NHRA Stock Car Classification Guide (Dodge 'D1500'/'RAM' heading)",
+      "url": "nhra_dodge-ram-1500-1994-2008.json",
+      "says": "1998 RAM: 360 ci / 250 hp"
+     },
+     {
+      "name": "Wikipedia - Ram pickup (second/third generation engine tables) + Chrysler LA / PowerTech / Ram SRT-10 articles (one source)",
+      "url": "https://en.wikipedia.org/wiki/Ram_pickup",
+      "says": "360 cu in 5.9 L Magnum V8: 230 hp 1994-1997, 245 hp 1998-2002 (LA engine article: upgraded in 1998 to 245 hp at 4,000 rpm)"
+     },
+     {
+      "name": "EPA fueleconomy.gov vehicle data",
+      "url": "https://www.fueleconomy.gov/feg/download.shtml",
+      "says": "1998 Ram 1500 Pickup: 5.9 L 8-cyl listed (2WD and 4WD)"
+     },
+     {
+      "name": "Consumer Guide - 1994-01 Dodge Ram Pickup used-car review",
+      "url": "https://consumerguide.com/used/1994-01-dodge-ram-pickup/",
+      "says": "5.9-liter V8 230-235 hp, standard in 3500-series, optional in others; 'For 1997, a slight power boost for the 5.9-liter V8'"
+     },
+     {
+      "name": "Kelley Blue Book - 1998 Dodge Ram 1500 Quad Cab specs",
+      "url": "https://www.kbb.com/dodge/ram-1500-quad-cab/1998/specs",
+      "says": "1998 Ram 1500 Quad Cab: V8, 5.9 Liter 245 @ 4000 RPM, 335 lb-ft"
+     },
+     {
+      "name": "Cars.com - 1998 Dodge Ram 1500 specs (base + Quad Cab 139 trim)",
+      "url": "https://www.cars.com/research/dodge-ram_1500-1998/specs/",
+      "says": "245-hp, 5.9-liter V8 (Quad Cab trim)"
+     }
+    ],
+    "independent_sources": 5,
+    "status": "confirmed",
+    "note": "Optional in 1500. NHRA lists 250 hp for 1998; Wikipedia, KBB, Cars.com give 245. Recorded 245. 1996 Indy 500 Official Truck and 1997-98 SS/T packages used this 5.9 with freer exhaust (Wikipedia: +15 hp, uncited; not recorded as a separate engine)."
+   },
+   {
+    "gen": "gen2",
+    "cid": 488,
+    "hp": 300,
+    "hp_basis": "SAE net",
+    "name": "8.0L / 488 V10",
+    "rpo": "Magnum V10",
+    "common_name": "8.0 Magnum V10",
+    "trims": [
+     "2500/3500 only"
+    ],
+    "nhra": true,
+    "sources": [
+     {
+      "name": "NHRA Stock Car Classification Guide (Dodge 'D1500'/'RAM' heading)",
+      "url": "nhra_dodge-ram-1500-1994-2008.json",
+      "says": "1998 RAM: 488 ci / 300 hp (NHRA heading covers all Ram pickups)"
+     },
+     {
+      "name": "Wikipedia - Ram pickup (second/third generation engine tables) + Chrysler LA / PowerTech / Ram SRT-10 articles (one source)",
+      "url": "https://en.wikipedia.org/wiki/Ram_pickup",
+      "says": "The V10 and diesel were available in 2500/3500 models above 8,500 pounds GVWR; LA article: Magnum V10 designed for Ram 2500 and 3500"
+     },
+     {
+      "name": "EPA fueleconomy.gov vehicle data",
+      "url": "https://www.fueleconomy.gov/feg/download.shtml",
+      "says": "1998: no 8.0 L 10-cyl row for Ram 1500 (heavy-duty >8,500 lb GVWR trucks were exempt from EPA labels)"
+     },
+     {
+      "name": "Cars.com - 1996 Dodge Ram 1500 research page (expert review tested a Ram 3500 V10)",
+      "url": "https://www.cars.com/research/dodge-ram_1500-1996/",
+      "says": "1996 expert review of the V10 was a Ram 3500 4X4, 300 hp, 450 lb-ft"
+     }
+    ],
+    "independent_sources": 3,
+    "status": "excluded_not_offered_in_1500",
+    "note": "Not a 1500 engine. NHRA lists it because its 'RAM' heading lumps 1500/2500/3500. Consumer Guide's 1994-01 review lists it among Ram engines without restricting series, but no source puts it in a 1500. Do not show on the 1500 page."
+   }
+  ],
+  "1999": [
+   {
+    "gen": "gen2",
+    "cid": 239,
+    "hp": 175,
+    "hp_basis": "SAE net",
+    "name": "3.9L / 239 V6",
+    "rpo": "Magnum 3.9",
+    "common_name": "3.9 Magnum V6",
+    "trims": [
+     "base (1500 only)",
+     "2WD only per EPA"
+    ],
+    "nhra": true,
+    "sources": [
+     {
+      "name": "NHRA Stock Car Classification Guide (Dodge 'D1500'/'RAM' heading)",
+      "url": "nhra_dodge-ram-1500-1994-2008.json",
+      "says": "1999 RAM: 238 ci / 175 hp"
+     },
+     {
+      "name": "Wikipedia - Ram pickup (second/third generation engine tables) + Chrysler LA / PowerTech / Ram SRT-10 articles (one source)",
+      "url": "https://en.wikipedia.org/wiki/Ram_pickup",
+      "says": "1994-2001 239 cu in 3.9 L Magnum V6, 175 hp"
+     },
+     {
+      "name": "EPA fueleconomy.gov vehicle data",
+      "url": "https://www.fueleconomy.gov/feg/download.shtml",
+      "says": "1999 Ram 1500 Pickup 2WD: 3.9 L 6-cyl listed (no 4WD row)"
+     },
+     {
+      "name": "Consumer Guide - 1994-01 Dodge Ram Pickup used-car review",
+      "url": "https://consumerguide.com/used/1994-01-dodge-ram-pickup/",
+      "says": "A 3.9-liter V6 making 175 horsepower (170 bhp in '96) went into 1500-series models"
+     }
+    ],
+    "independent_sources": 3,
+    "status": "confirmed",
+    "note": "1500 only (not 2500/3500); EPA lists it only in 2WD."
+   },
+   {
+    "gen": "gen2",
+    "cid": 318,
+    "hp": 230,
+    "hp_basis": "SAE net",
+    "name": "5.2L / 318 V8",
+    "rpo": "Magnum 5.2",
+    "common_name": "5.2 Magnum V8",
+    "trims": [
+     "1500 2WD (opt)",
+     "1500 4WD (std)"
+    ],
+    "nhra": true,
+    "sources": [
+     {
+      "name": "NHRA Stock Car Classification Guide (Dodge 'D1500'/'RAM' heading)",
+      "url": "nhra_dodge-ram-1500-1994-2008.json",
+      "says": "1999 RAM: 318 ci / 230 hp"
+     },
+     {
+      "name": "Wikipedia - Ram pickup (second/third generation engine tables) + Chrysler LA / PowerTech / Ram SRT-10 articles (one source)",
+      "url": "https://en.wikipedia.org/wiki/Ram_pickup",
+      "says": "1994-2001 318 cu in 5.2 L Magnum V8, 230 hp (single rating for all years)"
+     },
+     {
+      "name": "EPA fueleconomy.gov vehicle data",
+      "url": "https://www.fueleconomy.gov/feg/download.shtml",
+      "says": "1999 Ram 1500 Pickup: 5.2 L 8-cyl listed (2WD and 4WD)"
+     },
+     {
+      "name": "Consumer Guide - 1994-01 Dodge Ram Pickup used-car review",
+      "url": "https://consumerguide.com/used/1994-01-dodge-ram-pickup/",
+      "says": "A 220-horsepower, 5.2-liter V8 went into 4x4s and 2500-series Rams, and was optional in 1500-series"
+     }
+    ],
+    "independent_sources": 3,
+    "status": "confirmed",
+    "note": "Std on 4WD 1500, optional on 2WD. 230 hp from 1998 (NHRA, Cars.com, KBB, Wikipedia); Consumer Guide quotes only the earlier 220."
+   },
+   {
+    "gen": "gen2",
+    "cid": 360,
+    "hp": 245,
+    "hp_basis": "SAE net",
+    "name": "5.9L / 360 V8",
+    "rpo": "Magnum 5.9",
+    "common_name": "5.9 Magnum V8",
+    "trims": [
+     "1500 2WD and 4WD (opt)"
+    ],
+    "nhra": true,
+    "sources": [
+     {
+      "name": "NHRA Stock Car Classification Guide (Dodge 'D1500'/'RAM' heading)",
+      "url": "nhra_dodge-ram-1500-1994-2008.json",
+      "says": "1999 RAM: 360 ci / 245 hp"
+     },
+     {
+      "name": "Wikipedia - Ram pickup (second/third generation engine tables) + Chrysler LA / PowerTech / Ram SRT-10 articles (one source)",
+      "url": "https://en.wikipedia.org/wiki/Ram_pickup",
+      "says": "360 cu in 5.9 L Magnum V8: 230 hp 1994-1997, 245 hp 1998-2002 (LA engine article: upgraded in 1998 to 245 hp at 4,000 rpm)"
+     },
+     {
+      "name": "EPA fueleconomy.gov vehicle data",
+      "url": "https://www.fueleconomy.gov/feg/download.shtml",
+      "says": "1999 Ram 1500 Pickup: 5.9 L 8-cyl listed (2WD and 4WD)"
+     },
+     {
+      "name": "Consumer Guide - 1994-01 Dodge Ram Pickup used-car review",
+      "url": "https://consumerguide.com/used/1994-01-dodge-ram-pickup/",
+      "says": "5.9-liter V8 230-235 hp, standard in 3500-series, optional in others; 'For 1997, a slight power boost for the 5.9-liter V8'"
+     }
+    ],
+    "independent_sources": 3,
+    "status": "confirmed",
+    "note": "Optional in 1500."
+   },
+   {
+    "gen": "gen2",
+    "cid": 488,
+    "hp": 310,
+    "hp_basis": "SAE net",
+    "name": "8.0L / 488 V10",
+    "rpo": "Magnum V10",
+    "common_name": "8.0 Magnum V10",
+    "trims": [
+     "2500/3500 only"
+    ],
+    "nhra": true,
+    "sources": [
+     {
+      "name": "NHRA Stock Car Classification Guide (Dodge 'D1500'/'RAM' heading)",
+      "url": "nhra_dodge-ram-1500-1994-2008.json",
+      "says": "1999 RAM: 488 ci / 310 hp (NHRA heading covers all Ram pickups)"
+     },
+     {
+      "name": "Wikipedia - Ram pickup (second/third generation engine tables) + Chrysler LA / PowerTech / Ram SRT-10 articles (one source)",
+      "url": "https://en.wikipedia.org/wiki/Ram_pickup",
+      "says": "The V10 and diesel were available in 2500/3500 models above 8,500 pounds GVWR; LA article: Magnum V10 designed for Ram 2500 and 3500"
+     },
+     {
+      "name": "EPA fueleconomy.gov vehicle data",
+      "url": "https://www.fueleconomy.gov/feg/download.shtml",
+      "says": "1999: no 8.0 L 10-cyl row for Ram 1500 (heavy-duty >8,500 lb GVWR trucks were exempt from EPA labels)"
+     },
+     {
+      "name": "Cars.com - 1996 Dodge Ram 1500 research page (expert review tested a Ram 3500 V10)",
+      "url": "https://www.cars.com/research/dodge-ram_1500-1996/",
+      "says": "1996 expert review of the V10 was a Ram 3500 4X4, 300 hp, 450 lb-ft"
+     }
+    ],
+    "independent_sources": 3,
+    "status": "excluded_not_offered_in_1500",
+    "note": "Not a 1500 engine. NHRA lists it because its 'RAM' heading lumps 1500/2500/3500. Consumer Guide's 1994-01 review lists it among Ram engines without restricting series, but no source puts it in a 1500. Do not show on the 1500 page."
+   }
+  ],
+  "2000": [
+   {
+    "gen": "gen2",
+    "cid": 239,
+    "hp": 175,
+    "hp_basis": "SAE net",
+    "name": "3.9L / 239 V6",
+    "rpo": "Magnum 3.9",
+    "common_name": "3.9 Magnum V6",
+    "trims": [
+     "base (1500 only)",
+     "2WD only per EPA"
+    ],
+    "nhra": true,
+    "sources": [
+     {
+      "name": "NHRA Stock Car Classification Guide (Dodge 'D1500'/'RAM' heading)",
+      "url": "nhra_dodge-ram-1500-1994-2008.json",
+      "says": "2000 RAM: 238 ci / 175 hp"
+     },
+     {
+      "name": "Wikipedia - Ram pickup (second/third generation engine tables) + Chrysler LA / PowerTech / Ram SRT-10 articles (one source)",
+      "url": "https://en.wikipedia.org/wiki/Ram_pickup",
+      "says": "1994-2001 239 cu in 3.9 L Magnum V6, 175 hp"
+     },
+     {
+      "name": "EPA fueleconomy.gov vehicle data",
+      "url": "https://www.fueleconomy.gov/feg/download.shtml",
+      "says": "2000 Ram 1500 Pickup 2WD: 3.9 L 6-cyl listed (no 4WD row)"
+     },
+     {
+      "name": "Consumer Guide - 1994-01 Dodge Ram Pickup used-car review",
+      "url": "https://consumerguide.com/used/1994-01-dodge-ram-pickup/",
+      "says": "A 3.9-liter V6 making 175 horsepower (170 bhp in '96) went into 1500-series models"
+     }
+    ],
+    "independent_sources": 3,
+    "status": "confirmed",
+    "note": "1500 only (not 2500/3500); EPA lists it only in 2WD."
+   },
+   {
+    "gen": "gen2",
+    "cid": 318,
+    "hp": 230,
+    "hp_basis": "SAE net",
+    "name": "5.2L / 318 V8",
+    "rpo": "Magnum 5.2",
+    "common_name": "5.2 Magnum V8",
+    "trims": [
+     "1500 2WD (opt)",
+     "1500 4WD (std)"
+    ],
+    "nhra": true,
+    "sources": [
+     {
+      "name": "NHRA Stock Car Classification Guide (Dodge 'D1500'/'RAM' heading)",
+      "url": "nhra_dodge-ram-1500-1994-2008.json",
+      "says": "2000 RAM: 318 ci / 230 hp"
+     },
+     {
+      "name": "Wikipedia - Ram pickup (second/third generation engine tables) + Chrysler LA / PowerTech / Ram SRT-10 articles (one source)",
+      "url": "https://en.wikipedia.org/wiki/Ram_pickup",
+      "says": "1994-2001 318 cu in 5.2 L Magnum V8, 230 hp (single rating for all years)"
+     },
+     {
+      "name": "EPA fueleconomy.gov vehicle data",
+      "url": "https://www.fueleconomy.gov/feg/download.shtml",
+      "says": "2000 Ram 1500 Pickup: 5.2 L 8-cyl listed (2WD and 4WD)"
+     },
+     {
+      "name": "Consumer Guide - 1994-01 Dodge Ram Pickup used-car review",
+      "url": "https://consumerguide.com/used/1994-01-dodge-ram-pickup/",
+      "says": "A 220-horsepower, 5.2-liter V8 went into 4x4s and 2500-series Rams, and was optional in 1500-series"
+     }
+    ],
+    "independent_sources": 3,
+    "status": "confirmed",
+    "note": "Std on 4WD 1500, optional on 2WD. 230 hp from 1998 (NHRA, Cars.com, KBB, Wikipedia); Consumer Guide quotes only the earlier 220."
+   },
+   {
+    "gen": "gen2",
+    "cid": 360,
+    "hp": 245,
+    "hp_basis": "SAE net",
+    "name": "5.9L / 360 V8",
+    "rpo": "Magnum 5.9",
+    "common_name": "5.9 Magnum V8",
+    "trims": [
+     "1500 2WD and 4WD (opt)"
+    ],
+    "nhra": true,
+    "sources": [
+     {
+      "name": "NHRA Stock Car Classification Guide (Dodge 'D1500'/'RAM' heading)",
+      "url": "nhra_dodge-ram-1500-1994-2008.json",
+      "says": "2000 RAM: 360 ci / 245 hp"
+     },
+     {
+      "name": "Wikipedia - Ram pickup (second/third generation engine tables) + Chrysler LA / PowerTech / Ram SRT-10 articles (one source)",
+      "url": "https://en.wikipedia.org/wiki/Ram_pickup",
+      "says": "360 cu in 5.9 L Magnum V8: 230 hp 1994-1997, 245 hp 1998-2002 (LA engine article: upgraded in 1998 to 245 hp at 4,000 rpm)"
+     },
+     {
+      "name": "EPA fueleconomy.gov vehicle data",
+      "url": "https://www.fueleconomy.gov/feg/download.shtml",
+      "says": "2000 Ram 1500 Pickup: 5.9 L 8-cyl listed (2WD and 4WD)"
+     },
+     {
+      "name": "Consumer Guide - 1994-01 Dodge Ram Pickup used-car review",
+      "url": "https://consumerguide.com/used/1994-01-dodge-ram-pickup/",
+      "says": "5.9-liter V8 230-235 hp, standard in 3500-series, optional in others; 'For 1997, a slight power boost for the 5.9-liter V8'"
+     }
+    ],
+    "independent_sources": 3,
+    "status": "confirmed",
+    "note": "Optional in 1500."
+   },
+   {
+    "gen": "gen2",
+    "cid": 488,
+    "hp": 310,
+    "hp_basis": "SAE net",
+    "name": "8.0L / 488 V10",
+    "rpo": "Magnum V10",
+    "common_name": "8.0 Magnum V10",
+    "trims": [
+     "2500/3500 only"
+    ],
+    "nhra": true,
+    "sources": [
+     {
+      "name": "NHRA Stock Car Classification Guide (Dodge 'D1500'/'RAM' heading)",
+      "url": "nhra_dodge-ram-1500-1994-2008.json",
+      "says": "2000 RAM: 488 ci / 310 hp (NHRA heading covers all Ram pickups)"
+     },
+     {
+      "name": "Wikipedia - Ram pickup (second/third generation engine tables) + Chrysler LA / PowerTech / Ram SRT-10 articles (one source)",
+      "url": "https://en.wikipedia.org/wiki/Ram_pickup",
+      "says": "The V10 and diesel were available in 2500/3500 models above 8,500 pounds GVWR; LA article: Magnum V10 designed for Ram 2500 and 3500"
+     },
+     {
+      "name": "EPA fueleconomy.gov vehicle data",
+      "url": "https://www.fueleconomy.gov/feg/download.shtml",
+      "says": "2000: no 8.0 L 10-cyl row for Ram 1500 (heavy-duty >8,500 lb GVWR trucks were exempt from EPA labels)"
+     },
+     {
+      "name": "Cars.com - 1996 Dodge Ram 1500 research page (expert review tested a Ram 3500 V10)",
+      "url": "https://www.cars.com/research/dodge-ram_1500-1996/",
+      "says": "1996 expert review of the V10 was a Ram 3500 4X4, 300 hp, 450 lb-ft"
+     }
+    ],
+    "independent_sources": 3,
+    "status": "excluded_not_offered_in_1500",
+    "note": "Not a 1500 engine. NHRA lists it because its 'RAM' heading lumps 1500/2500/3500. Consumer Guide's 1994-01 review lists it among Ram engines without restricting series, but no source puts it in a 1500. Do not show on the 1500 page."
+   }
+  ],
+  "2001": [
+   {
+    "gen": "gen2",
+    "cid": 239,
+    "hp": 175,
+    "hp_basis": "SAE net",
+    "name": "3.9L / 239 V6",
+    "rpo": "Magnum 3.9",
+    "common_name": "3.9 Magnum V6",
+    "trims": [
+     "base (1500 only)",
+     "2WD only per EPA"
+    ],
+    "nhra": true,
+    "sources": [
+     {
+      "name": "NHRA Stock Car Classification Guide (Dodge 'D1500'/'RAM' heading)",
+      "url": "nhra_dodge-ram-1500-1994-2008.json",
+      "says": "2001 RAM: 238 ci / 175 hp"
+     },
+     {
+      "name": "Wikipedia - Ram pickup (second/third generation engine tables) + Chrysler LA / PowerTech / Ram SRT-10 articles (one source)",
+      "url": "https://en.wikipedia.org/wiki/Ram_pickup",
+      "says": "1994-2001 239 cu in 3.9 L Magnum V6, 175 hp"
+     },
+     {
+      "name": "EPA fueleconomy.gov vehicle data",
+      "url": "https://www.fueleconomy.gov/feg/download.shtml",
+      "says": "2001 Ram 1500 Pickup 2WD: 3.9 L 6-cyl listed (no 4WD row)"
+     },
+     {
+      "name": "Consumer Guide - 1994-01 Dodge Ram Pickup used-car review",
+      "url": "https://consumerguide.com/used/1994-01-dodge-ram-pickup/",
+      "says": "A 3.9-liter V6 making 175 horsepower (170 bhp in '96) went into 1500-series models"
+     }
+    ],
+    "independent_sources": 3,
+    "status": "confirmed",
+    "note": "1500 only (not 2500/3500); EPA lists it only in 2WD."
+   },
+   {
+    "gen": "gen2",
+    "cid": 318,
+    "hp": 230,
+    "hp_basis": "SAE net",
+    "name": "5.2L / 318 V8",
+    "rpo": "Magnum 5.2",
+    "common_name": "5.2 Magnum V8",
+    "trims": [
+     "1500 2WD (opt)",
+     "1500 4WD (std)"
+    ],
+    "nhra": true,
+    "sources": [
+     {
+      "name": "NHRA Stock Car Classification Guide (Dodge 'D1500'/'RAM' heading)",
+      "url": "nhra_dodge-ram-1500-1994-2008.json",
+      "says": "2001 RAM: 318 ci / 230 hp"
+     },
+     {
+      "name": "Wikipedia - Ram pickup (second/third generation engine tables) + Chrysler LA / PowerTech / Ram SRT-10 articles (one source)",
+      "url": "https://en.wikipedia.org/wiki/Ram_pickup",
+      "says": "1994-2001 318 cu in 5.2 L Magnum V8, 230 hp (single rating for all years)"
+     },
+     {
+      "name": "EPA fueleconomy.gov vehicle data",
+      "url": "https://www.fueleconomy.gov/feg/download.shtml",
+      "says": "2001 Ram 1500 Pickup: 5.2 L 8-cyl listed (2WD and 4WD)"
+     },
+     {
+      "name": "Consumer Guide - 1994-01 Dodge Ram Pickup used-car review",
+      "url": "https://consumerguide.com/used/1994-01-dodge-ram-pickup/",
+      "says": "A 220-horsepower, 5.2-liter V8 went into 4x4s and 2500-series Rams, and was optional in 1500-series"
+     },
+     {
+      "name": "Kelley Blue Book - 2001 Dodge Ram 1500 specs",
+      "url": "https://www.kbb.com/dodge/ram-1500/2001/specs/",
+      "says": "V8, 5.2 Liter 230 @ 4400 RPM, 300 lb-ft"
+     }
+    ],
+    "independent_sources": 4,
+    "status": "confirmed",
+    "note": "Std on 4WD 1500, optional on 2WD. 230 hp from 1998 (NHRA, Cars.com, KBB, Wikipedia); Consumer Guide quotes only the earlier 220."
+   },
+   {
+    "gen": "gen2",
+    "cid": 360,
+    "hp": 245,
+    "hp_basis": "SAE net",
+    "name": "5.9L / 360 V8",
+    "rpo": "Magnum 5.9",
+    "common_name": "5.9 Magnum V8",
+    "trims": [
+     "1500 2WD and 4WD (opt)"
+    ],
+    "nhra": true,
+    "sources": [
+     {
+      "name": "NHRA Stock Car Classification Guide (Dodge 'D1500'/'RAM' heading)",
+      "url": "nhra_dodge-ram-1500-1994-2008.json",
+      "says": "2001 RAM: 360 ci / 245 hp"
+     },
+     {
+      "name": "Wikipedia - Ram pickup (second/third generation engine tables) + Chrysler LA / PowerTech / Ram SRT-10 articles (one source)",
+      "url": "https://en.wikipedia.org/wiki/Ram_pickup",
+      "says": "360 cu in 5.9 L Magnum V8: 230 hp 1994-1997, 245 hp 1998-2002 (LA engine article: upgraded in 1998 to 245 hp at 4,000 rpm)"
+     },
+     {
+      "name": "EPA fueleconomy.gov vehicle data",
+      "url": "https://www.fueleconomy.gov/feg/download.shtml",
+      "says": "2001 Ram 1500 Pickup: 5.9 L 8-cyl listed (2WD and 4WD)"
+     },
+     {
+      "name": "Consumer Guide - 1994-01 Dodge Ram Pickup used-car review",
+      "url": "https://consumerguide.com/used/1994-01-dodge-ram-pickup/",
+      "says": "5.9-liter V8 230-235 hp, standard in 3500-series, optional in others; 'For 1997, a slight power boost for the 5.9-liter V8'"
+     },
+     {
+      "name": "Kelley Blue Book - 2001 Dodge Ram 1500 specs",
+      "url": "https://www.kbb.com/dodge/ram-1500/2001/specs/",
+      "says": "V8, 5.9 Liter 245 @ 4000 RPM"
+     }
+    ],
+    "independent_sources": 4,
+    "status": "confirmed",
+    "note": "Optional in 1500."
+   },
+   {
+    "gen": "gen2",
+    "cid": 488,
+    "hp": 310,
+    "hp_basis": "SAE net",
+    "name": "8.0L / 488 V10",
+    "rpo": "Magnum V10",
+    "common_name": "8.0 Magnum V10",
+    "trims": [
+     "2500/3500 only"
+    ],
+    "nhra": true,
+    "sources": [
+     {
+      "name": "NHRA Stock Car Classification Guide (Dodge 'D1500'/'RAM' heading)",
+      "url": "nhra_dodge-ram-1500-1994-2008.json",
+      "says": "2001 RAM: 488 ci / 310 hp (NHRA heading covers all Ram pickups)"
+     },
+     {
+      "name": "Wikipedia - Ram pickup (second/third generation engine tables) + Chrysler LA / PowerTech / Ram SRT-10 articles (one source)",
+      "url": "https://en.wikipedia.org/wiki/Ram_pickup",
+      "says": "The V10 and diesel were available in 2500/3500 models above 8,500 pounds GVWR; LA article: Magnum V10 designed for Ram 2500 and 3500"
+     },
+     {
+      "name": "EPA fueleconomy.gov vehicle data",
+      "url": "https://www.fueleconomy.gov/feg/download.shtml",
+      "says": "2001: no 8.0 L 10-cyl row for Ram 1500 (heavy-duty >8,500 lb GVWR trucks were exempt from EPA labels)"
+     },
+     {
+      "name": "Cars.com - 1996 Dodge Ram 1500 research page (expert review tested a Ram 3500 V10)",
+      "url": "https://www.cars.com/research/dodge-ram_1500-1996/",
+      "says": "1996 expert review of the V10 was a Ram 3500 4X4, 300 hp, 450 lb-ft"
+     }
+    ],
+    "independent_sources": 3,
+    "status": "excluded_not_offered_in_1500",
+    "note": "Not a 1500 engine. NHRA lists it because its 'RAM' heading lumps 1500/2500/3500. Consumer Guide's 1994-01 review lists it among Ram engines without restricting series, but no source puts it in a 1500. Do not show on the 1500 page."
+   }
+  ],
+  "2002": [
+   {
+    "gen": "gen3",
+    "cid": 226,
+    "hp": 215,
+    "hp_basis": "SAE net",
+    "name": "3.7L / 226 V6",
+    "rpo": "PowerTech 3.7 (EKG)",
+    "common_name": "3.7 PowerTech V6 (Dodge: 3.7 Magnum)",
+    "trims": [
+     "base",
+     "2WD only (EPA; Dodge 2008: std on 2WD regular cabs)"
+    ],
+    "nhra": false,
+    "sources": [
+     {
+      "name": "Wikipedia - Ram pickup (second/third generation engine tables) + Chrysler LA / PowerTech / Ram SRT-10 articles (one source)",
+      "url": "https://en.wikipedia.org/wiki/Ram_pickup",
+      "says": "1500 2002-2008: 226 cu in 3.7 L PowerTech V6, 215 hp, 235 lb-ft"
+     },
+     {
+      "name": "EPA fueleconomy.gov vehicle data",
+      "url": "https://www.fueleconomy.gov/feg/download.shtml",
+      "says": "2002 Ram 1500 Pickup 2WD: 3.7 L 6-cyl listed (no 4WD row)"
+     },
+     {
+      "name": "Consumer Guide - 2002-05 Dodge Ram 1500 Pickup used-car review",
+      "url": "https://consumerguide.com/used/2002-05-dodge-ram-1500-pickup/",
+      "says": "3.7-liter V6, 215 hp, 235 lb-ft ('A 3.9-liter V6 gave way to a new 3.7-liter V6')"
+     },
+     {
+      "name": "MotorWeek road test - 2002 Dodge Ram 1500 (Program #2103)",
+      "url": "https://motorweek.org/road_tests/2002_dodge_ram_1500_program_2103",
+      "says": "Base is a 3.7-liter single-overhead-cam V6... 215 horsepower and 235 pound-feet"
+     },
+     {
+      "name": "Auto123 - 2002-2008 Dodge Ram pre-owned review",
+      "url": "https://www.auto123.com/en/news/2002-2008-dodge-ram-pre-owned/50261/",
+      "says": "Standard was Chrysler's 3.7 litre unit, with 215 horsepower"
+     }
+    ],
+    "independent_sources": 5,
+    "status": "three_sources_not_nhra",
+    "note": "NHRA 2002 rows list only the 360 and 488."
+   },
+   {
+    "gen": "gen3",
+    "cid": 287,
+    "hp": 235,
+    "hp_basis": "SAE net",
+    "name": "4.7L / 287 V8",
+    "rpo": "PowerTech 4.7",
+    "common_name": "4.7 PowerTech V8 (Dodge: 4.7 Magnum)",
+    "trims": [
+     "opt",
+     "2WD and 4WD"
+    ],
+    "nhra": false,
+    "sources": [
+     {
+      "name": "Wikipedia - Ram pickup (second/third generation engine tables) + Chrysler LA / PowerTech / Ram SRT-10 articles (one source)",
+      "url": "https://en.wikipedia.org/wiki/Ram_pickup",
+      "says": "1500 4.7 L PowerTech V8: 235 hp/295 lb-ft 2002-2007; 310 hp/330 lb-ft 2008"
+     },
+     {
+      "name": "EPA fueleconomy.gov vehicle data",
+      "url": "https://www.fueleconomy.gov/feg/download.shtml",
+      "says": "2002 Ram 1500 Pickup: 4.7 L 8-cyl listed (2WD and 4WD)"
+     },
+     {
+      "name": "Consumer Guide - 2002-05 Dodge Ram 1500 Pickup used-car review",
+      "url": "https://consumerguide.com/used/2002-05-dodge-ram-1500-pickup/",
+      "says": "A 4.7-liter V8 replaced the previous Ram's 5.2-liter V8; 235-240 hp, 295-300 lb-ft"
+     },
+     {
+      "name": "MotorWeek road test - 2002 Dodge Ram 1500 (Program #2103)",
+      "url": "https://motorweek.org/road_tests/2002_dodge_ram_1500_program_2103",
+      "says": "new-to-Ram 4.7-liter SOHC V8... 235 horsepower and 295 pound-feet"
+     },
+     {
+      "name": "Auto123 - 2002-2008 Dodge Ram pre-owned review",
+      "url": "https://www.auto123.com/en/news/2002-2008-dodge-ram-pre-owned/50261/",
+      "says": "4.7 litre unit with 240 or 305 horsepower (year-dependent)"
+     }
+    ],
+    "independent_sources": 5,
+    "status": "three_sources_not_nhra",
+    "note": "Replaced the 5.2 Magnum. NHRA 2002 rows omit it."
+   },
+   {
+    "gen": "gen3",
+    "cid": 360,
+    "hp": 245,
+    "hp_basis": "SAE net",
+    "name": "5.9L / 360 V8",
+    "rpo": "Magnum 5.9",
+    "common_name": "5.9 Magnum V8",
+    "trims": [
+     "opt, automatic only",
+     "2WD and 4WD"
+    ],
+    "nhra": true,
+    "sources": [
+     {
+      "name": "NHRA Stock Car Classification Guide (Dodge 'D1500'/'RAM' heading)",
+      "url": "nhra_dodge-ram-1500-1994-2008.json",
+      "says": "2002 RAM: 360 ci / 245 hp"
+     },
+     {
+      "name": "Wikipedia - Ram pickup (second/third generation engine tables) + Chrysler LA / PowerTech / Ram SRT-10 articles (one source)",
+      "url": "https://en.wikipedia.org/wiki/Ram_pickup",
+      "says": "1500 2002-2003: 360 cu in 5.9 L Magnum V8, 245 hp, 335 lb-ft"
+     },
+     {
+      "name": "EPA fueleconomy.gov vehicle data",
+      "url": "https://www.fueleconomy.gov/feg/download.shtml",
+      "says": "2002 Ram 1500 Pickup: 5.9 L 8-cyl listed (2WD and 4WD)"
+     },
+     {
+      "name": "Consumer Guide - 2002-05 Dodge Ram 1500 Pickup used-car review",
+      "url": "https://consumerguide.com/used/2002-05-dodge-ram-1500-pickup/",
+      "says": "5.9-liter V8 'continued with automatic transmission', 245 hp, 335 lb-ft"
+     },
+     {
+      "name": "MotorWeek road test - 2002 Dodge Ram 1500 (Program #2103)",
+      "url": "https://motorweek.org/road_tests/2002_dodge_ram_1500_program_2103",
+      "says": "the carryover 5.9-liter pushrod engine provides 245 horsepower and 335 pound-feet"
+     },
+     {
+      "name": "Auto123 - 2002-2008 Dodge Ram pre-owned review",
+      "url": "https://www.auto123.com/en/news/2002-2008-dodge-ram-pre-owned/50261/",
+      "says": "or a 5.9 litre, 245-horsepower torque-monster"
+     }
+    ],
+    "independent_sources": 5,
+    "status": "confirmed",
+    "note": "Automatic only."
+   },
+   {
+    "gen": "gen3",
+    "cid": 488,
+    "hp": 310,
+    "hp_basis": "SAE net",
+    "name": "8.0L / 488 V10",
+    "rpo": "Magnum V10",
+    "common_name": "8.0 Magnum V10",
+    "trims": [
+     "2500/3500 only"
+    ],
+    "nhra": true,
+    "sources": [
+     {
+      "name": "NHRA Stock Car Classification Guide (Dodge 'D1500'/'RAM' heading)",
+      "url": "nhra_dodge-ram-1500-1994-2008.json",
+      "says": "2002 RAM: 488 ci / 310 hp"
+     },
+     {
+      "name": "Wikipedia - Ram pickup (second/third generation engine tables) + Chrysler LA / PowerTech / Ram SRT-10 articles (one source)",
+      "url": "https://en.wikipedia.org/wiki/Ram_pickup",
+      "says": "2002 2500/3500 were still the second-generation truck (V10 in 2500/3500 >8,500 lb GVWR); 2003 488 Magnum V10 310 hp listed under heavy-duty"
+     },
+     {
+      "name": "EPA fueleconomy.gov vehicle data",
+      "url": "https://www.fueleconomy.gov/feg/download.shtml",
+      "says": "2002: no 8.0 L row for Ram 1500"
+     }
+    ],
+    "independent_sources": 2,
+    "status": "excluded_not_offered_in_1500",
+    "note": "Heavy-duty only; NHRA 'RAM' heading lumps all series. Not a 1500 engine."
+   }
+  ],
+  "2003": [
+   {
+    "gen": "gen3",
+    "cid": 226,
+    "hp": 215,
+    "hp_basis": "SAE net",
+    "name": "3.7L / 226 V6",
+    "rpo": "PowerTech 3.7 (EKG)",
+    "common_name": "3.7 PowerTech V6 (Dodge: 3.7 Magnum)",
+    "trims": [
+     "base",
+     "2WD only (EPA; Dodge 2008: std on 2WD regular cabs)"
+    ],
+    "nhra": true,
+    "sources": [
+     {
+      "name": "NHRA Stock Car Classification Guide (Dodge 'D1500'/'RAM' heading)",
+      "url": "nhra_dodge-ram-1500-1994-2008.json",
+      "says": "2003 RAM: 226 ci / 215 hp"
+     },
+     {
+      "name": "Wikipedia - Ram pickup (second/third generation engine tables) + Chrysler LA / PowerTech / Ram SRT-10 articles (one source)",
+      "url": "https://en.wikipedia.org/wiki/Ram_pickup",
+      "says": "1500 2002-2008: 226 cu in 3.7 L PowerTech V6, 215 hp, 235 lb-ft"
+     },
+     {
+      "name": "EPA fueleconomy.gov vehicle data",
+      "url": "https://www.fueleconomy.gov/feg/download.shtml",
+      "says": "2003 Ram 1500 Pickup 2WD: 3.7 L 6-cyl listed (no 4WD row)"
+     },
+     {
+      "name": "Consumer Guide - 2002-05 Dodge Ram 1500 Pickup used-car review",
+      "url": "https://consumerguide.com/used/2002-05-dodge-ram-1500-pickup/",
+      "says": "3.7-liter V6, 215 hp, 235 lb-ft"
+     },
+     {
+      "name": "Kelley Blue Book - 2003 Dodge Ram 1500 specs",
+      "url": "https://www.kbb.com/dodge/ram-1500/2003/specs/",
+      "says": "V6, 3.7 Liter 215 @ 5200 RPM, 235 lb-ft"
+     },
+     {
+      "name": "Auto123 - 2002-2008 Dodge Ram pre-owned review",
+      "url": "https://www.auto123.com/en/news/2002-2008-dodge-ram-pre-owned/50261/",
+      "says": "Standard was Chrysler's 3.7 litre unit, with 215 horsepower"
+     }
+    ],
+    "independent_sources": 5,
+    "status": "confirmed",
+    "note": ""
+   },
+   {
+    "gen": "gen3",
+    "cid": 287,
+    "hp": 235,
+    "hp_basis": "SAE net",
+    "name": "4.7L / 287 V8",
+    "rpo": "PowerTech 4.7",
+    "common_name": "4.7 PowerTech V8 (Dodge: 4.7 Magnum)",
+    "trims": [
+     "opt",
+     "2WD and 4WD"
+    ],
+    "nhra": true,
+    "sources": [
+     {
+      "name": "NHRA Stock Car Classification Guide (Dodge 'D1500'/'RAM' heading)",
+      "url": "nhra_dodge-ram-1500-1994-2008.json",
+      "says": "2003 RAM: 287 ci / 235 hp"
+     },
+     {
+      "name": "Wikipedia - Ram pickup (second/third generation engine tables) + Chrysler LA / PowerTech / Ram SRT-10 articles (one source)",
+      "url": "https://en.wikipedia.org/wiki/Ram_pickup",
+      "says": "1500 4.7 L PowerTech V8: 235 hp/295 lb-ft 2002-2007; 310 hp/330 lb-ft 2008"
+     },
+     {
+      "name": "EPA fueleconomy.gov vehicle data",
+      "url": "https://www.fueleconomy.gov/feg/download.shtml",
+      "says": "2003 Ram 1500 Pickup: 4.7 L 8-cyl listed (2WD and 4WD)"
+     },
+     {
+      "name": "Consumer Guide - 2002-05 Dodge Ram 1500 Pickup used-car review",
+      "url": "https://consumerguide.com/used/2002-05-dodge-ram-1500-pickup/",
+      "says": "A 4.7-liter V8 replaced the previous Ram's 5.2-liter V8; 235-240 hp, 295-300 lb-ft"
+     },
+     {
+      "name": "Kelley Blue Book - 2003 Dodge Ram 1500 specs",
+      "url": "https://www.kbb.com/dodge/ram-1500/2003/specs/",
+      "says": "V8, 4.7 Liter 235 @ 4800 RPM, 295 lb-ft"
+     },
+     {
+      "name": "Auto123 - 2002-2008 Dodge Ram pre-owned review",
+      "url": "https://www.auto123.com/en/news/2002-2008-dodge-ram-pre-owned/50261/",
+      "says": "4.7 litre unit with 240 or 305 horsepower (year-dependent)"
+     }
+    ],
+    "independent_sources": 5,
+    "status": "confirmed",
+    "note": ""
+   },
+   {
+    "gen": "gen3",
+    "cid": 360,
+    "hp": 245,
+    "hp_basis": "SAE net",
+    "name": "5.9L / 360 V8",
+    "rpo": "Magnum 5.9",
+    "common_name": "5.9 Magnum V8",
+    "trims": [
+     "opt, automatic only",
+     "2WD and 4WD"
+    ],
+    "nhra": true,
+    "sources": [
+     {
+      "name": "NHRA Stock Car Classification Guide (Dodge 'D1500'/'RAM' heading)",
+      "url": "nhra_dodge-ram-1500-1994-2008.json",
+      "says": "2003 RAM: 360 ci / 245 hp"
+     },
+     {
+      "name": "Wikipedia - Ram pickup (second/third generation engine tables) + Chrysler LA / PowerTech / Ram SRT-10 articles (one source)",
+      "url": "https://en.wikipedia.org/wiki/Ram_pickup",
+      "says": "1500 2002-2003: 360 cu in 5.9 L Magnum V8, 245 hp, 335 lb-ft"
+     },
+     {
+      "name": "EPA fueleconomy.gov vehicle data",
+      "url": "https://www.fueleconomy.gov/feg/download.shtml",
+      "says": "2003 Ram 1500 Pickup: 5.9 L 8-cyl listed (2WD and 4WD)"
+     },
+     {
+      "name": "Dodge release 'Dodge Flexes Legendary HEMI Muscle with the 2003.5 Dodge Ram 1500' (reprint on Auto123)",
+      "url": "https://www.auto123.com/en/news/dodge-flexes-legendary-hemir-muscle-with-the-20035-dodge-ram-1500/20276/",
+      "says": "5.7 HEMI gives 'an awesome 100 horsepower increase and an additional 40 lb.-ft. of torque compared with the 5.9-liter Magnum' (implies the 5.9 was the 1500's top engine before the 2003.5 Hemi)"
+     }
+    ],
+    "independent_sources": 3,
+    "status": "confirmed",
+    "note": "Early-2003 only; the 5.7 Hemi replaced it at the 2003.5 changeover. KBB's 2003 page omits it. The Dodge release only implies it; EPA, Wikipedia and NHRA are direct."
+   },
+   {
+    "gen": "gen3",
+    "cid": 345,
+    "hp": 345,
+    "hp_basis": "SAE net",
+    "name": "5.7L / 345 V8",
+    "rpo": "Hemi 5.7",
+    "common_name": "5.7 Hemi (Hemi Magnum)",
+    "trims": [
+     "opt",
+     "2WD and 4WD"
+    ],
+    "nhra": true,
+    "sources": [
+     {
+      "name": "NHRA Stock Car Classification Guide (Dodge 'D1500'/'RAM' heading)",
+      "url": "nhra_dodge-ram-1500-1994-2008.json",
+      "says": "2003 RAM: 348 ci / 345 hp (NHRA displacement typo for the 345-ci Hemi)"
+     },
+     {
+      "name": "Wikipedia - Ram pickup (second/third generation engine tables) + Chrysler LA / PowerTech / Ram SRT-10 articles (one source)",
+      "url": "https://en.wikipedia.org/wiki/Ram_pickup",
+      "says": "1500 2003-2008: 345 cu in 5.7 L Hemi V8, 345 hp, 375 lb-ft; MDS from 2006 on half-ton (same output)"
+     },
+     {
+      "name": "EPA fueleconomy.gov vehicle data",
+      "url": "https://www.fueleconomy.gov/feg/download.shtml",
+      "says": "2003 Ram 1500 Pickup: 5.7 L 8-cyl listed (2WD and 4WD)"
+     },
+     {
+      "name": "Consumer Guide - 2002-05 Dodge Ram 1500 Pickup used-car review",
+      "url": "https://consumerguide.com/used/2002-05-dodge-ram-1500-pickup/",
+      "says": "5.7-liter Hemi V8, 345 hp, 375 lb-ft (introduced 2003)"
+     },
+     {
+      "name": "Dodge release 'Dodge Flexes Legendary HEMI Muscle with the 2003.5 Dodge Ram 1500' (reprint on Auto123)",
+      "url": "https://www.auto123.com/en/news/dodge-flexes-legendary-hemir-muscle-with-the-20035-dodge-ram-1500/20276/",
+      "says": "5.7-liter HEMI Magnum... 345 horsepower and 375 lb.-ft. of torque (2003.5 Ram 1500)"
+     },
+     {
+      "name": "Kelley Blue Book - 2003 Dodge Ram 1500 specs",
+      "url": "https://www.kbb.com/dodge/ram-1500/2003/specs/",
+      "says": "V8, HEMI, 5.7 Liter 345 @ 5600 RPM, 375 lb-ft"
+     },
+     {
+      "name": "Auto123 - 2002-2008 Dodge Ram pre-owned review",
+      "url": "https://www.auto123.com/en/news/2002-2008-dodge-ram-pre-owned/50261/",
+      "says": "The 5.7 litre HEMI V8 kicked in for the 2003 model year, offering 345 horsepower; MDS added for 2006"
+     }
+    ],
+    "independent_sources": 6,
+    "status": "confirmed",
+    "note": "Mid-year (2003.5) addition. NHRA lists it as 348 ci."
+   },
+   {
+    "gen": "gen3",
+    "cid": 488,
+    "hp": 310,
+    "hp_basis": "SAE net",
+    "name": "8.0L / 488 V10",
+    "rpo": "Magnum V10",
+    "common_name": "8.0 Magnum V10",
+    "trims": [
+     "2500/3500 only"
+    ],
+    "nhra": true,
+    "sources": [
+     {
+      "name": "NHRA Stock Car Classification Guide (Dodge 'D1500'/'RAM' heading)",
+      "url": "nhra_dodge-ram-1500-1994-2008.json",
+      "says": "2003 RAM: 488 ci / 310 hp"
+     },
+     {
+      "name": "Wikipedia - Ram pickup (second/third generation engine tables) + Chrysler LA / PowerTech / Ram SRT-10 articles (one source)",
+      "url": "https://en.wikipedia.org/wiki/Ram_pickup",
+      "says": "2002 2500/3500 were still the second-generation truck (V10 in 2500/3500 >8,500 lb GVWR); 2003 488 Magnum V10 310 hp listed under heavy-duty"
+     },
+     {
+      "name": "EPA fueleconomy.gov vehicle data",
+      "url": "https://www.fueleconomy.gov/feg/download.shtml",
+      "says": "2003: no 8.0 L row for Ram 1500"
+     }
+    ],
+    "independent_sources": 2,
+    "status": "excluded_not_offered_in_1500",
+    "note": "Heavy-duty only; NHRA 'RAM' heading lumps all series. Not a 1500 engine."
+   }
+  ],
+  "2004": [
+   {
+    "gen": "gen3",
+    "cid": 226,
+    "hp": 215,
+    "hp_basis": "SAE net",
+    "name": "3.7L / 226 V6",
+    "rpo": "PowerTech 3.7 (EKG)",
+    "common_name": "3.7 PowerTech V6 (Dodge: 3.7 Magnum)",
+    "trims": [
+     "base",
+     "2WD only (EPA; Dodge 2008: std on 2WD regular cabs)"
+    ],
+    "nhra": true,
+    "sources": [
+     {
+      "name": "NHRA Stock Car Classification Guide (Dodge 'D1500'/'RAM' heading)",
+      "url": "nhra_dodge-ram-1500-1994-2008.json",
+      "says": "2004 RAM: 226 ci / 215 hp"
+     },
+     {
+      "name": "Wikipedia - Ram pickup (second/third generation engine tables) + Chrysler LA / PowerTech / Ram SRT-10 articles (one source)",
+      "url": "https://en.wikipedia.org/wiki/Ram_pickup",
+      "says": "1500 2002-2008: 226 cu in 3.7 L PowerTech V6, 215 hp, 235 lb-ft"
+     },
+     {
+      "name": "EPA fueleconomy.gov vehicle data",
+      "url": "https://www.fueleconomy.gov/feg/download.shtml",
+      "says": "2004 Ram 1500 Pickup 2WD: 3.7 L 6-cyl listed (no 4WD row)"
+     },
+     {
+      "name": "Consumer Guide - 2002-05 Dodge Ram 1500 Pickup used-car review",
+      "url": "https://consumerguide.com/used/2002-05-dodge-ram-1500-pickup/",
+      "says": "3.7-liter V6, 215 hp, 235 lb-ft"
+     },
+     {
+      "name": "Auto123 - 2002-2008 Dodge Ram pre-owned review",
+      "url": "https://www.auto123.com/en/news/2002-2008-dodge-ram-pre-owned/50261/",
+      "says": "Standard was Chrysler's 3.7 litre unit, with 215 horsepower"
+     }
+    ],
+    "independent_sources": 4,
+    "status": "confirmed",
+    "note": ""
+   },
+   {
+    "gen": "gen3",
+    "cid": 287,
+    "hp": 235,
+    "hp_basis": "SAE net",
+    "name": "4.7L / 287 V8",
+    "rpo": "PowerTech 4.7",
+    "common_name": "4.7 PowerTech V8 (Dodge: 4.7 Magnum)",
+    "trims": [
+     "opt",
+     "2WD and 4WD"
+    ],
+    "nhra": true,
+    "sources": [
+     {
+      "name": "NHRA Stock Car Classification Guide (Dodge 'D1500'/'RAM' heading)",
+      "url": "nhra_dodge-ram-1500-1994-2008.json",
+      "says": "2004 RAM: 287 ci / 235 hp"
+     },
+     {
+      "name": "Wikipedia - Ram pickup (second/third generation engine tables) + Chrysler LA / PowerTech / Ram SRT-10 articles (one source)",
+      "url": "https://en.wikipedia.org/wiki/Ram_pickup",
+      "says": "1500 4.7 L PowerTech V8: 235 hp/295 lb-ft 2002-2007; 310 hp/330 lb-ft 2008"
+     },
+     {
+      "name": "EPA fueleconomy.gov vehicle data",
+      "url": "https://www.fueleconomy.gov/feg/download.shtml",
+      "says": "2004 Ram 1500 Pickup: 4.7 L 8-cyl listed (2WD and 4WD); FFV (E85) rows"
+     },
+     {
+      "name": "Consumer Guide - 2002-05 Dodge Ram 1500 Pickup used-car review",
+      "url": "https://consumerguide.com/used/2002-05-dodge-ram-1500-pickup/",
+      "says": "A 4.7-liter V8 replaced the previous Ram's 5.2-liter V8; 235-240 hp, 295-300 lb-ft"
+     },
+     {
+      "name": "Auto123 - 2002-2008 Dodge Ram pre-owned review",
+      "url": "https://www.auto123.com/en/news/2002-2008-dodge-ram-pre-owned/50261/",
+      "says": "4.7 litre unit with 240 or 305 horsepower (year-dependent)"
+     }
+    ],
+    "independent_sources": 4,
+    "status": "confirmed",
+    "note": "Torque 300 lb-ft from 2004 (Consumer Guide 295-300). EPA lists flex-fuel (E85) versions from 2004."
+   },
+   {
+    "gen": "gen3",
+    "cid": 345,
+    "hp": 345,
+    "hp_basis": "SAE net",
+    "name": "5.7L / 345 V8",
+    "rpo": "Hemi 5.7",
+    "common_name": "5.7 Hemi (Hemi Magnum)",
+    "trims": [
+     "opt",
+     "2WD and 4WD",
+     "Rumble Bee/Hemi Sport/Daytona/Hemi GTX packages"
+    ],
+    "nhra": true,
+    "sources": [
+     {
+      "name": "NHRA Stock Car Classification Guide (Dodge 'D1500'/'RAM' heading)",
+      "url": "nhra_dodge-ram-1500-1994-2008.json",
+      "says": "2004 RAM: 348 ci / 345 hp (NHRA displacement typo for the 345-ci Hemi)"
+     },
+     {
+      "name": "Wikipedia - Ram pickup (second/third generation engine tables) + Chrysler LA / PowerTech / Ram SRT-10 articles (one source)",
+      "url": "https://en.wikipedia.org/wiki/Ram_pickup",
+      "says": "1500 2003-2008: 345 cu in 5.7 L Hemi V8, 345 hp, 375 lb-ft; MDS from 2006 on half-ton (same output)"
+     },
+     {
+      "name": "EPA fueleconomy.gov vehicle data",
+      "url": "https://www.fueleconomy.gov/feg/download.shtml",
+      "says": "2004 Ram 1500 Pickup: 5.7 L 8-cyl listed (2WD and 4WD)"
+     },
+     {
+      "name": "Consumer Guide - 2002-05 Dodge Ram 1500 Pickup used-car review",
+      "url": "https://consumerguide.com/used/2002-05-dodge-ram-1500-pickup/",
+      "says": "5.7-liter Hemi V8, 345 hp, 375 lb-ft"
+     },
+     {
+      "name": "Auto123 - 2002-2008 Dodge Ram pre-owned review",
+      "url": "https://www.auto123.com/en/news/2002-2008-dodge-ram-pre-owned/50261/",
+      "says": "The 5.7 litre HEMI V8 kicked in for the 2003 model year, offering 345 horsepower; MDS added for 2006"
+     }
+    ],
+    "independent_sources": 4,
+    "status": "confirmed",
+    "note": "NHRA lists it as 348 ci."
+   },
+   {
+    "gen": "gen3",
+    "cid": 505,
+    "hp": 500,
+    "hp_basis": "SAE net",
+    "name": "8.3L / 505 V10",
+    "rpo": "Viper V10 (SRT-10)",
+    "common_name": "Ram SRT-10 Viper V10",
+    "trims": [
+     "SRT-10 only",
+     "2WD only"
+    ],
+    "nhra": true,
+    "sources": [
+     {
+      "name": "NHRA Stock Car Classification Guide (Dodge 'D1500'/'RAM' heading)",
+      "url": "nhra_dodge-ram-1500-1994-2008.json",
+      "says": "2004 RAM: 505 ci / 500 hp"
+     },
+     {
+      "name": "Wikipedia - Ram pickup (second/third generation engine tables) + Chrysler LA / PowerTech / Ram SRT-10 articles (one source)",
+      "url": "https://en.wikipedia.org/wiki/Ram_pickup",
+      "says": "SRT-10 2004-2006, 8.3 L (505 cid) Viper V10, 500 bhp @ 5,600 / 525 lb-ft (Ram SRT-10 article; Ram pickup engine table says 510 hp)"
+     },
+     {
+      "name": "EPA fueleconomy.gov vehicle data",
+      "url": "https://www.fueleconomy.gov/feg/download.shtml",
+      "says": "2004 Ram 1500 Pickup 2WD: 8.3 L 10-cyl listed"
+     },
+     {
+      "name": "Consumer Guide - 2002-05 Dodge Ram 1500 Pickup used-car review",
+      "url": "https://consumerguide.com/used/2002-05-dodge-ram-1500-pickup/",
+      "says": "Ram SRT-10 with Viper V10, 500 hp (midyear 2004, 6-speed manual; Quad Cab with 4-speed auto for 2005)"
+     },
+     {
+      "name": "DaimlerChrysler press kit - 2004 Dodge Ram SRT-10 reveal (Feb 12, 2003), Stellantis media archive",
+      "url": "https://media.stellantisnorthamerica.com/newsrelease.do?id=399",
+      "says": "2004 Ram SRT-10: 8.3-liter V-10 from the 2003 Viper, 500 hp, 525 lb.-ft."
+     }
+    ],
+    "independent_sources": 4,
+    "status": "confirmed",
+    "note": "Mid-year 2004 introduction, regular cab, 6-speed manual only. Torque: Dodge/Wikipedia 525 lb-ft, Consumer Guide 2002-05 review 515. Wikipedia's Ram pickup engine table gives 510 hp; Dodge, Consumer Guide and the SRT-10 article give 500."
+   }
+  ],
+  "2005": [
+   {
+    "gen": "gen3",
+    "cid": 226,
+    "hp": 215,
+    "hp_basis": "SAE net",
+    "name": "3.7L / 226 V6",
+    "rpo": "PowerTech 3.7 (EKG)",
+    "common_name": "3.7 PowerTech V6 (Dodge: 3.7 Magnum)",
+    "trims": [
+     "base",
+     "2WD only (EPA; Dodge 2008: std on 2WD regular cabs)"
+    ],
+    "nhra": false,
+    "sources": [
+     {
+      "name": "Wikipedia - Ram pickup (second/third generation engine tables) + Chrysler LA / PowerTech / Ram SRT-10 articles (one source)",
+      "url": "https://en.wikipedia.org/wiki/Ram_pickup",
+      "says": "1500 2002-2008: 226 cu in 3.7 L PowerTech V6, 215 hp, 235 lb-ft"
+     },
+     {
+      "name": "EPA fueleconomy.gov vehicle data",
+      "url": "https://www.fueleconomy.gov/feg/download.shtml",
+      "says": "2005 Ram 1500 Pickup 2WD: 3.7 L 6-cyl listed (no 4WD row)"
+     },
+     {
+      "name": "Consumer Guide - 2002-05 Dodge Ram 1500 Pickup used-car review",
+      "url": "https://consumerguide.com/used/2002-05-dodge-ram-1500-pickup/",
+      "says": "3.7-liter V6, 215 hp, 235 lb-ft"
+     },
+     {
+      "name": "Auto123 - 2002-2008 Dodge Ram pre-owned review",
+      "url": "https://www.auto123.com/en/news/2002-2008-dodge-ram-pre-owned/50261/",
+      "says": "Standard was Chrysler's 3.7 litre unit, with 215 horsepower"
+     }
+    ],
+    "independent_sources": 4,
+    "status": "three_sources_not_nhra",
+    "note": ""
+   },
+   {
+    "gen": "gen3",
+    "cid": 287,
+    "hp": 235,
+    "hp_basis": "SAE net",
+    "name": "4.7L / 287 V8",
+    "rpo": "PowerTech 4.7",
+    "common_name": "4.7 PowerTech V8 (Dodge: 4.7 Magnum)",
+    "trims": [
+     "opt",
+     "2WD and 4WD"
+    ],
+    "nhra": false,
+    "sources": [
+     {
+      "name": "Wikipedia - Ram pickup (second/third generation engine tables) + Chrysler LA / PowerTech / Ram SRT-10 articles (one source)",
+      "url": "https://en.wikipedia.org/wiki/Ram_pickup",
+      "says": "1500 4.7 L PowerTech V8: 235 hp/295 lb-ft 2002-2007; 310 hp/330 lb-ft 2008"
+     },
+     {
+      "name": "EPA fueleconomy.gov vehicle data",
+      "url": "https://www.fueleconomy.gov/feg/download.shtml",
+      "says": "2005 Ram 1500 Pickup: 4.7 L 8-cyl listed (2WD and 4WD); FFV (E85) rows"
+     },
+     {
+      "name": "Consumer Guide - 2002-05 Dodge Ram 1500 Pickup used-car review",
+      "url": "https://consumerguide.com/used/2002-05-dodge-ram-1500-pickup/",
+      "says": "A 4.7-liter V8 replaced the previous Ram's 5.2-liter V8; 235-240 hp, 295-300 lb-ft"
+     },
+     {
+      "name": "Auto123 - 2002-2008 Dodge Ram pre-owned review",
+      "url": "https://www.auto123.com/en/news/2002-2008-dodge-ram-pre-owned/50261/",
+      "says": "4.7 litre unit with 240 or 305 horsepower (year-dependent)"
+     }
+    ],
+    "independent_sources": 4,
+    "status": "three_sources_not_nhra",
+    "note": "Torque 300 lb-ft from 2004 (Consumer Guide 295-300). EPA lists flex-fuel (E85) versions from 2004."
+   },
+   {
+    "gen": "gen3",
+    "cid": 345,
+    "hp": 345,
+    "hp_basis": "SAE net",
+    "name": "5.7L / 345 V8",
+    "rpo": "Hemi 5.7",
+    "common_name": "5.7 Hemi (Hemi Magnum)",
+    "trims": [
+     "opt",
+     "2WD and 4WD",
+     "Rumble Bee/Hemi Sport/Daytona/Hemi GTX packages"
+    ],
+    "nhra": false,
+    "sources": [
+     {
+      "name": "Wikipedia - Ram pickup (second/third generation engine tables) + Chrysler LA / PowerTech / Ram SRT-10 articles (one source)",
+      "url": "https://en.wikipedia.org/wiki/Ram_pickup",
+      "says": "1500 2003-2008: 345 cu in 5.7 L Hemi V8, 345 hp, 375 lb-ft; MDS from 2006 on half-ton (same output)"
+     },
+     {
+      "name": "EPA fueleconomy.gov vehicle data",
+      "url": "https://www.fueleconomy.gov/feg/download.shtml",
+      "says": "2005 Ram 1500 Pickup: 5.7 L 8-cyl listed (2WD and 4WD)"
+     },
+     {
+      "name": "Consumer Guide - 2002-05 Dodge Ram 1500 Pickup used-car review",
+      "url": "https://consumerguide.com/used/2002-05-dodge-ram-1500-pickup/",
+      "says": "5.7-liter Hemi V8, 345 hp, 375 lb-ft"
+     },
+     {
+      "name": "Auto123 - 2002-2008 Dodge Ram pre-owned review",
+      "url": "https://www.auto123.com/en/news/2002-2008-dodge-ram-pre-owned/50261/",
+      "says": "The 5.7 litre HEMI V8 kicked in for the 2003 model year, offering 345 horsepower; MDS added for 2006"
+     }
+    ],
+    "independent_sources": 4,
+    "status": "three_sources_not_nhra",
+    "note": ""
+   },
+   {
+    "gen": "gen3",
+    "cid": 505,
+    "hp": 500,
+    "hp_basis": "SAE net",
+    "name": "8.3L / 505 V10",
+    "rpo": "Viper V10 (SRT-10)",
+    "common_name": "Ram SRT-10 Viper V10",
+    "trims": [
+     "SRT-10 only",
+     "2WD only"
+    ],
+    "nhra": false,
+    "sources": [
+     {
+      "name": "Wikipedia - Ram pickup (second/third generation engine tables) + Chrysler LA / PowerTech / Ram SRT-10 articles (one source)",
+      "url": "https://en.wikipedia.org/wiki/Ram_pickup",
+      "says": "SRT-10 2004-2006, 8.3 L (505 cid) Viper V10, 500 bhp @ 5,600 / 525 lb-ft (Ram SRT-10 article; Ram pickup engine table says 510 hp)"
+     },
+     {
+      "name": "EPA fueleconomy.gov vehicle data",
+      "url": "https://www.fueleconomy.gov/feg/download.shtml",
+      "says": "2005 Ram 1500 Pickup 2WD: 8.3 L 10-cyl listed"
+     },
+     {
+      "name": "Consumer Guide - 2002-05 Dodge Ram 1500 Pickup used-car review",
+      "url": "https://consumerguide.com/used/2002-05-dodge-ram-1500-pickup/",
+      "says": "Ram SRT-10 with Viper V10, 500 hp (midyear 2004, 6-speed manual; Quad Cab with 4-speed auto for 2005)"
+     },
+     {
+      "name": "DaimlerChrysler press kit - 2004 Dodge Ram SRT-10 reveal (Feb 12, 2003), Stellantis media archive",
+      "url": "https://media.stellantisnorthamerica.com/newsrelease.do?id=399",
+      "says": "2004 Ram SRT-10: 8.3-liter V-10 from the 2003 Viper, 500 hp, 525 lb.-ft."
+     }
+    ],
+    "independent_sources": 4,
+    "status": "three_sources_not_nhra",
+    "note": "Regular cab 6-speed manual; Quad Cab 4-speed automatic (2005-06). 2WD only. Wikipedia's Ram pickup engine table gives 510 hp; Dodge, Consumer Guide and the SRT-10 article give 500."
+   }
+  ],
+  "2006": [
+   {
+    "gen": "gen3",
+    "cid": 226,
+    "hp": 215,
+    "hp_basis": "SAE net",
+    "name": "3.7L / 226 V6",
+    "rpo": "PowerTech 3.7 (EKG)",
+    "common_name": "3.7 PowerTech V6 (Dodge: 3.7 Magnum)",
+    "trims": [
+     "base",
+     "2WD only (EPA; Dodge 2008: std on 2WD regular cabs)"
+    ],
+    "nhra": false,
+    "sources": [
+     {
+      "name": "Wikipedia - Ram pickup (second/third generation engine tables) + Chrysler LA / PowerTech / Ram SRT-10 articles (one source)",
+      "url": "https://en.wikipedia.org/wiki/Ram_pickup",
+      "says": "1500 2002-2008: 226 cu in 3.7 L PowerTech V6, 215 hp, 235 lb-ft"
+     },
+     {
+      "name": "EPA fueleconomy.gov vehicle data",
+      "url": "https://www.fueleconomy.gov/feg/download.shtml",
+      "says": "2006 Ram 1500 Pickup 2WD: 3.7 L 6-cyl listed (no 4WD row)"
+     },
+     {
+      "name": "Consumer Guide - 2006-08 Dodge Ram 1500 Pickup used-car review",
+      "url": "https://consumerguide.com/used/2006-08-dodge-ram-1500-pickup/",
+      "says": "3.7-liter V6, 215 hp, 235 lb-ft"
+     },
+     {
+      "name": "Auto123 - 2002-2008 Dodge Ram pre-owned review",
+      "url": "https://www.auto123.com/en/news/2002-2008-dodge-ram-pre-owned/50261/",
+      "says": "Standard was Chrysler's 3.7 litre unit, with 215 horsepower"
+     }
+    ],
+    "independent_sources": 4,
+    "status": "three_sources_not_nhra",
+    "note": ""
+   },
+   {
+    "gen": "gen3",
+    "cid": 287,
+    "hp": 235,
+    "hp_basis": "SAE net",
+    "name": "4.7L / 287 V8",
+    "rpo": "PowerTech 4.7",
+    "common_name": "4.7 PowerTech V8 (Dodge: 4.7 Magnum)",
+    "trims": [
+     "opt",
+     "2WD and 4WD"
+    ],
+    "nhra": false,
+    "sources": [
+     {
+      "name": "Wikipedia - Ram pickup (second/third generation engine tables) + Chrysler LA / PowerTech / Ram SRT-10 articles (one source)",
+      "url": "https://en.wikipedia.org/wiki/Ram_pickup",
+      "says": "1500 4.7 L PowerTech V8: 235 hp/295 lb-ft 2002-2007; 310 hp/330 lb-ft 2008"
+     },
+     {
+      "name": "EPA fueleconomy.gov vehicle data",
+      "url": "https://www.fueleconomy.gov/feg/download.shtml",
+      "says": "2006 Ram 1500 Pickup: 4.7 L 8-cyl listed (2WD and 4WD); FFV (E85) rows"
+     },
+     {
+      "name": "Consumer Guide - 2006-08 Dodge Ram 1500 Pickup used-car review",
+      "url": "https://consumerguide.com/used/2006-08-dodge-ram-1500-pickup/",
+      "says": "a 235-horsepower 4.7-liter"
+     },
+     {
+      "name": "Auto123 - 2002-2008 Dodge Ram pre-owned review",
+      "url": "https://www.auto123.com/en/news/2002-2008-dodge-ram-pre-owned/50261/",
+      "says": "4.7 litre unit with 240 or 305 horsepower (year-dependent)"
+     }
+    ],
+    "independent_sources": 4,
+    "status": "three_sources_not_nhra",
+    "note": "Torque 300 lb-ft from 2004 (Consumer Guide 295-300). EPA lists flex-fuel (E85) versions from 2004."
+   },
+   {
+    "gen": "gen3",
+    "cid": 345,
+    "hp": 345,
+    "hp_basis": "SAE net",
+    "name": "5.7L / 345 V8",
+    "rpo": "Hemi 5.7 (MDS)",
+    "common_name": "5.7 Hemi (Hemi Magnum)",
+    "trims": [
+     "opt",
+     "2WD and 4WD",
+     "Rumble Bee/Hemi Sport/Daytona/Hemi GTX packages"
+    ],
+    "nhra": false,
+    "sources": [
+     {
+      "name": "Wikipedia - Ram pickup (second/third generation engine tables) + Chrysler LA / PowerTech / Ram SRT-10 articles (one source)",
+      "url": "https://en.wikipedia.org/wiki/Ram_pickup",
+      "says": "1500 2003-2008: 345 cu in 5.7 L Hemi V8, 345 hp, 375 lb-ft; MDS from 2006 on half-ton (same output)"
+     },
+     {
+      "name": "EPA fueleconomy.gov vehicle data",
+      "url": "https://www.fueleconomy.gov/feg/download.shtml",
+      "says": "2006 Ram 1500 Pickup: 5.7 L 8-cyl listed (2WD and 4WD)"
+     },
+     {
+      "name": "Consumer Guide - 2006-08 Dodge Ram 1500 Pickup used-car review",
+      "url": "https://consumerguide.com/used/2006-08-dodge-ram-1500-pickup/",
+      "says": "5.7-liter Hemi V8, 345 hp, 375 lb-ft"
+     },
+     {
+      "name": "Auto123 - 2002-2008 Dodge Ram pre-owned review",
+      "url": "https://www.auto123.com/en/news/2002-2008-dodge-ram-pre-owned/50261/",
+      "says": "The 5.7 litre HEMI V8 kicked in for the 2003 model year, offering 345 horsepower; MDS added for 2006"
+     }
+    ],
+    "independent_sources": 4,
+    "status": "three_sources_not_nhra",
+    "note": "MDS cylinder deactivation from 2006 (not on 2006 Mega Cab). Consumer Guide text says 344 hp, its table 345. KBB also shows a 335-hp listing for 2007-08 that no other source supports."
+   },
+   {
+    "gen": "gen3",
+    "cid": 505,
+    "hp": 500,
+    "hp_basis": "SAE net",
+    "name": "8.3L / 505 V10",
+    "rpo": "Viper V10 (SRT-10)",
+    "common_name": "Ram SRT-10 Viper V10",
+    "trims": [
+     "SRT-10 only",
+     "2WD only"
+    ],
+    "nhra": false,
+    "sources": [
+     {
+      "name": "Wikipedia - Ram pickup (second/third generation engine tables) + Chrysler LA / PowerTech / Ram SRT-10 articles (one source)",
+      "url": "https://en.wikipedia.org/wiki/Ram_pickup",
+      "says": "SRT-10 2004-2006, 8.3 L (505 cid) Viper V10, 500 bhp @ 5,600 / 525 lb-ft (Ram SRT-10 article; Ram pickup engine table says 510 hp)"
+     },
+     {
+      "name": "EPA fueleconomy.gov vehicle data",
+      "url": "https://www.fueleconomy.gov/feg/download.shtml",
+      "says": "2006 Ram 1500 Pickup 2WD: 8.3 L 10-cyl listed"
+     },
+     {
+      "name": "Consumer Guide - 2006-08 Dodge Ram 1500 Pickup used-car review",
+      "url": "https://consumerguide.com/used/2006-08-dodge-ram-1500-pickup/",
+      "says": "Ram SRT-10 with Viper V10, 500 hp (table: 8.3L V10 500 hp, 525 lb-ft); dropped for 2007"
+     },
+     {
+      "name": "DaimlerChrysler press kit - 2004 Dodge Ram SRT-10 reveal (Feb 12, 2003), Stellantis media archive",
+      "url": "https://media.stellantisnorthamerica.com/newsrelease.do?id=399",
+      "says": "2004 Ram SRT-10: 8.3-liter V-10 from the 2003 Viper, 500 hp, 525 lb.-ft."
+     }
+    ],
+    "independent_sources": 4,
+    "status": "three_sources_not_nhra",
+    "note": "Regular cab 6-speed manual; Quad Cab 4-speed automatic (2005-06). 2WD only. Production ended June 30, 2006. Wikipedia's Ram pickup engine table gives 510 hp; Dodge, Consumer Guide and the SRT-10 article give 500."
+   }
+  ],
+  "2007": [
+   {
+    "gen": "gen3",
+    "cid": 226,
+    "hp": 215,
+    "hp_basis": "SAE net",
+    "name": "3.7L / 226 V6",
+    "rpo": "PowerTech 3.7 (EKG)",
+    "common_name": "3.7 PowerTech V6 (Dodge: 3.7 Magnum)",
+    "trims": [
+     "base",
+     "2WD only (EPA; Dodge 2008: std on 2WD regular cabs)"
+    ],
+    "nhra": false,
+    "sources": [
+     {
+      "name": "Wikipedia - Ram pickup (second/third generation engine tables) + Chrysler LA / PowerTech / Ram SRT-10 articles (one source)",
+      "url": "https://en.wikipedia.org/wiki/Ram_pickup",
+      "says": "1500 2002-2008: 226 cu in 3.7 L PowerTech V6, 215 hp, 235 lb-ft"
+     },
+     {
+      "name": "EPA fueleconomy.gov vehicle data",
+      "url": "https://www.fueleconomy.gov/feg/download.shtml",
+      "says": "2007 Ram 1500 Pickup 2WD: 3.7 L 6-cyl listed (no 4WD row)"
+     },
+     {
+      "name": "Consumer Guide - 2006-08 Dodge Ram 1500 Pickup used-car review",
+      "url": "https://consumerguide.com/used/2006-08-dodge-ram-1500-pickup/",
+      "says": "3.7-liter V6, 215 hp, 235 lb-ft"
+     },
+     {
+      "name": "Kelley Blue Book - 2007 Dodge Ram 1500 specs",
+      "url": "https://www.kbb.com/dodge/ram-1500/2007/specs/",
+      "says": "V6, 3.7 Liter 215 @ 5200 RPM, 235 lb-ft"
+     },
+     {
+      "name": "Auto123 - 2002-2008 Dodge Ram pre-owned review",
+      "url": "https://www.auto123.com/en/news/2002-2008-dodge-ram-pre-owned/50261/",
+      "says": "Standard was Chrysler's 3.7 litre unit, with 215 horsepower"
+     }
+    ],
+    "independent_sources": 5,
+    "status": "three_sources_not_nhra",
+    "note": ""
+   },
+   {
+    "gen": "gen3",
+    "cid": 287,
+    "hp": 235,
+    "hp_basis": "SAE net",
+    "name": "4.7L / 287 V8",
+    "rpo": "PowerTech 4.7",
+    "common_name": "4.7 PowerTech V8 (Dodge: 4.7 Magnum)",
+    "trims": [
+     "opt",
+     "2WD and 4WD"
+    ],
+    "nhra": false,
+    "sources": [
+     {
+      "name": "Wikipedia - Ram pickup (second/third generation engine tables) + Chrysler LA / PowerTech / Ram SRT-10 articles (one source)",
+      "url": "https://en.wikipedia.org/wiki/Ram_pickup",
+      "says": "1500 4.7 L PowerTech V8: 235 hp/295 lb-ft 2002-2007; 310 hp/330 lb-ft 2008"
+     },
+     {
+      "name": "EPA fueleconomy.gov vehicle data",
+      "url": "https://www.fueleconomy.gov/feg/download.shtml",
+      "says": "2007 Ram 1500 Pickup: 4.7 L 8-cyl listed (2WD and 4WD); FFV (E85) rows"
+     },
+     {
+      "name": "Consumer Guide - 2006-08 Dodge Ram 1500 Pickup used-car review",
+      "url": "https://consumerguide.com/used/2006-08-dodge-ram-1500-pickup/",
+      "says": "a 235-horsepower 4.7-liter"
+     },
+     {
+      "name": "Kelley Blue Book - 2007 Dodge Ram 1500 specs",
+      "url": "https://www.kbb.com/dodge/ram-1500/2007/specs/",
+      "says": "V8, 4.7 Liter 235 @ 4800 RPM, 300 lb-ft"
+     },
+     {
+      "name": "Auto123 - 2002-2008 Dodge Ram pre-owned review",
+      "url": "https://www.auto123.com/en/news/2002-2008-dodge-ram-pre-owned/50261/",
+      "says": "4.7 litre unit with 240 or 305 horsepower (year-dependent)"
+     }
+    ],
+    "independent_sources": 5,
+    "status": "three_sources_not_nhra",
+    "note": "Torque 300 lb-ft from 2004 (Consumer Guide 295-300). EPA lists flex-fuel (E85) versions from 2004. Wikipedia's PowerTech article (unreferenced section) lists a 265-hp 4.7 H.O. for 2007-2008 Ram 1500; no other source, and KBB/Consumer Guide show only the 235-hp 4.7 for 2007. 4.7 H.O. not recorded."
+   },
+   {
+    "gen": "gen3",
+    "cid": 345,
+    "hp": 345,
+    "hp_basis": "SAE net",
+    "name": "5.7L / 345 V8",
+    "rpo": "Hemi 5.7 (MDS)",
+    "common_name": "5.7 Hemi (Hemi Magnum)",
+    "trims": [
+     "opt",
+     "2WD and 4WD"
+    ],
+    "nhra": false,
+    "sources": [
+     {
+      "name": "Wikipedia - Ram pickup (second/third generation engine tables) + Chrysler LA / PowerTech / Ram SRT-10 articles (one source)",
+      "url": "https://en.wikipedia.org/wiki/Ram_pickup",
+      "says": "1500 2003-2008: 345 cu in 5.7 L Hemi V8, 345 hp, 375 lb-ft; MDS from 2006 on half-ton (same output)"
+     },
+     {
+      "name": "EPA fueleconomy.gov vehicle data",
+      "url": "https://www.fueleconomy.gov/feg/download.shtml",
+      "says": "2007 Ram 1500 Pickup: 5.7 L 8-cyl listed (2WD and 4WD)"
+     },
+     {
+      "name": "Consumer Guide - 2006-08 Dodge Ram 1500 Pickup used-car review",
+      "url": "https://consumerguide.com/used/2006-08-dodge-ram-1500-pickup/",
+      "says": "5.7-liter Hemi V8, 345 hp, 375 lb-ft"
+     },
+     {
+      "name": "Kelley Blue Book - 2007 Dodge Ram 1500 specs",
+      "url": "https://www.kbb.com/dodge/ram-1500/2007/specs/",
+      "says": "V8, HEMI, 5.7 Liter 345 @ 5400 RPM (also a 335 hp listing)"
+     },
+     {
+      "name": "Auto123 - 2002-2008 Dodge Ram pre-owned review",
+      "url": "https://www.auto123.com/en/news/2002-2008-dodge-ram-pre-owned/50261/",
+      "says": "The 5.7 litre HEMI V8 kicked in for the 2003 model year, offering 345 horsepower; MDS added for 2006"
+     }
+    ],
+    "independent_sources": 5,
+    "status": "three_sources_not_nhra",
+    "note": "MDS cylinder deactivation from 2006 (not on 2006 Mega Cab). Consumer Guide text says 344 hp, its table 345. KBB also shows a 335-hp listing for 2007-08 that no other source supports."
+   }
+  ],
+  "2008": [
+   {
+    "gen": "gen3",
+    "cid": 226,
+    "hp": 215,
+    "hp_basis": "SAE net",
+    "name": "3.7L / 226 V6",
+    "rpo": "PowerTech 3.7 (EKG)",
+    "common_name": "3.7 PowerTech V6 (Dodge: 3.7 Magnum)",
+    "trims": [
+     "base",
+     "2WD only (EPA; Dodge 2008: std on 2WD regular cabs)"
+    ],
+    "nhra": false,
+    "sources": [
+     {
+      "name": "Wikipedia - Ram pickup (second/third generation engine tables) + Chrysler LA / PowerTech / Ram SRT-10 articles (one source)",
+      "url": "https://en.wikipedia.org/wiki/Ram_pickup",
+      "says": "1500 2002-2008: 226 cu in 3.7 L PowerTech V6, 215 hp, 235 lb-ft"
+     },
+     {
+      "name": "EPA fueleconomy.gov vehicle data",
+      "url": "https://www.fueleconomy.gov/feg/download.shtml",
+      "says": "2008 Ram 1500 Pickup 2WD: 3.7 L 6-cyl listed (no 4WD row)"
+     },
+     {
+      "name": "Consumer Guide - 2006-08 Dodge Ram 1500 Pickup used-car review",
+      "url": "https://consumerguide.com/used/2006-08-dodge-ram-1500-pickup/",
+      "says": "3.7-liter V6, 215 hp, 235 lb-ft"
+     },
+     {
+      "name": "Kelley Blue Book - 2008 Dodge Ram 1500 specs",
+      "url": "https://www.kbb.com/dodge/ram-1500/2008/specs/",
+      "says": "V6, 3.7 Liter 215 @ 5200 RPM"
+     },
+     {
+      "name": "conceptcarz - 2008 Dodge Ram 1500 (text marked 'Source - Dodge')",
+      "url": "https://www.conceptcarz.com/vehicle/z14807/supercars.aspx",
+      "says": "3.7-liter Magnum V-6 standard on 2WD Ram 1500 regular cabs, 215 hp, 235 lb-ft"
+     },
+     {
+      "name": "Auto123 - 2002-2008 Dodge Ram pre-owned review",
+      "url": "https://www.auto123.com/en/news/2002-2008-dodge-ram-pre-owned/50261/",
+      "says": "Standard was Chrysler's 3.7 litre unit, with 215 horsepower"
+     }
+    ],
+    "independent_sources": 6,
+    "status": "three_sources_not_nhra",
+    "note": ""
+   },
+   {
+    "gen": "gen3",
+    "cid": 287,
+    "hp": 310,
+    "hp_basis": "SAE net",
+    "name": "4.7L / 287 V8",
+    "rpo": "PowerTech 4.7 (Next Generation, FFV)",
+    "common_name": "4.7 PowerTech V8 (Dodge: 4.7 Magnum)",
+    "trims": [
+     "opt",
+     "2WD and 4WD"
+    ],
+    "nhra": false,
+    "sources": [
+     {
+      "name": "Wikipedia - Ram pickup (second/third generation engine tables) + Chrysler LA / PowerTech / Ram SRT-10 articles (one source)",
+      "url": "https://en.wikipedia.org/wiki/Ram_pickup",
+      "says": "1500 4.7 L PowerTech V8: 235 hp/295 lb-ft 2002-2007; 310 hp/330 lb-ft 2008"
+     },
+     {
+      "name": "EPA fueleconomy.gov vehicle data",
+      "url": "https://www.fueleconomy.gov/feg/download.shtml",
+      "says": "2008 Ram 1500 Pickup: 4.7 L 8-cyl listed (2WD and 4WD); FFV (E85) rows"
+     },
+     {
+      "name": "Consumer Guide - 2006-08 Dodge Ram 1500 Pickup used-car review",
+      "url": "https://consumerguide.com/used/2006-08-dodge-ram-1500-pickup/",
+      "says": "'A 310-hp V8 replaced a 235-hp 4.7 this year'"
+     },
+     {
+      "name": "Kelley Blue Book - 2008 Dodge Ram 1500 specs",
+      "url": "https://www.kbb.com/dodge/ram-1500/2008/specs/",
+      "says": "V8, 4.7 Liter 310 @ 5650 RPM, 330 lb-ft"
+     },
+     {
+      "name": "conceptcarz - 2008 Dodge Ram 1500 (text marked 'Source - Dodge')",
+      "url": "https://www.conceptcarz.com/vehicle/z14807/supercars.aspx",
+      "says": "new 4.7-liter V-8 produces 310 horsepower... 330 lb.-ft.; E85 capable (FFV)"
+     },
+     {
+      "name": "Auto123 - 2002-2008 Dodge Ram pre-owned review",
+      "url": "https://www.auto123.com/en/news/2002-2008-dodge-ram-pre-owned/50261/",
+      "says": "4.7 litre unit with 240 or 305 horsepower (year-dependent)"
+     }
+    ],
+    "independent_sources": 6,
+    "status": "three_sources_not_nhra",
+    "note": "New 'Next Generation' 4.7: dual plugs, 9.8:1, flex-fuel. Auto123 gives 305 hp (and 240 for earlier years), a publication error; Dodge, KBB, Consumer Guide, Wikipedia give 310 (235 earlier). Wikipedia's 4.7 H.O. listing for the 2008 Ram is unsupported."
+   },
+   {
+    "gen": "gen3",
+    "cid": 345,
+    "hp": 345,
+    "hp_basis": "SAE net",
+    "name": "5.7L / 345 V8",
+    "rpo": "Hemi 5.7 (MDS)",
+    "common_name": "5.7 Hemi (Hemi Magnum)",
+    "trims": [
+     "opt",
+     "2WD and 4WD"
+    ],
+    "nhra": false,
+    "sources": [
+     {
+      "name": "Wikipedia - Ram pickup (second/third generation engine tables) + Chrysler LA / PowerTech / Ram SRT-10 articles (one source)",
+      "url": "https://en.wikipedia.org/wiki/Ram_pickup",
+      "says": "1500 2003-2008: 345 cu in 5.7 L Hemi V8, 345 hp, 375 lb-ft; MDS from 2006 on half-ton (same output)"
+     },
+     {
+      "name": "EPA fueleconomy.gov vehicle data",
+      "url": "https://www.fueleconomy.gov/feg/download.shtml",
+      "says": "2008 Ram 1500 Pickup: 5.7 L 8-cyl listed (2WD and 4WD)"
+     },
+     {
+      "name": "Consumer Guide - 2006-08 Dodge Ram 1500 Pickup used-car review",
+      "url": "https://consumerguide.com/used/2006-08-dodge-ram-1500-pickup/",
+      "says": "5.7-liter Hemi V8, 345 hp, 375 lb-ft"
+     },
+     {
+      "name": "Kelley Blue Book - 2008 Dodge Ram 1500 specs",
+      "url": "https://www.kbb.com/dodge/ram-1500/2008/specs/",
+      "says": "V8, HEMI, 5.7 Liter 345 @ 5400 (also 335 @ 5200 listing)"
+     },
+     {
+      "name": "conceptcarz - 2008 Dodge Ram 1500 (text marked 'Source - Dodge')",
+      "url": "https://www.conceptcarz.com/vehicle/z14807/supercars.aspx",
+      "says": "5.7-liter HEMI V-8 produces 345 horsepower and 375 lb.-ft.; cylinder deactivation"
+     },
+     {
+      "name": "Auto123 - 2002-2008 Dodge Ram pre-owned review",
+      "url": "https://www.auto123.com/en/news/2002-2008-dodge-ram-pre-owned/50261/",
+      "says": "The 5.7 litre HEMI V8 kicked in for the 2003 model year, offering 345 horsepower; MDS added for 2006"
+     }
+    ],
+    "independent_sources": 6,
+    "status": "three_sources_not_nhra",
+    "note": "MDS cylinder deactivation from 2006 (not on 2006 Mega Cab). Consumer Guide text says 344 hp, its table 345. KBB also shows a 335-hp listing for 2007-08 that no other source supports."
+   }
+  ]
+ },
+ "source_index": [
+  {
+   "name": "Wikipedia - Ram pickup (second/third generation engine tables) + Chrysler LA / PowerTech / Ram SRT-10 articles (one source)",
+   "url": "https://en.wikipedia.org/wiki/Ram_pickup",
+   "type": "wikipedia"
+  },
+  {
+   "name": "EPA fueleconomy.gov vehicle data",
+   "url": "https://www.fueleconomy.gov/feg/download.shtml",
+   "type": "government"
+  },
+  {
+   "name": "Consumer Guide - 1994-01 Dodge Ram Pickup used-car review",
+   "url": "https://consumerguide.com/used/1994-01-dodge-ram-pickup/",
+   "type": "publication"
+  },
+  {
+   "name": "Consumer Guide - 2002-05 Dodge Ram 1500 Pickup used-car review",
+   "url": "https://consumerguide.com/used/2002-05-dodge-ram-1500-pickup/",
+   "type": "publication"
+  },
+  {
+   "name": "Consumer Guide - 2006-08 Dodge Ram 1500 Pickup used-car review",
+   "url": "https://consumerguide.com/used/2006-08-dodge-ram-1500-pickup/",
+   "type": "publication"
+  },
+  {
+   "name": "NHRA Stock Car Classification Guide (Dodge 'D1500'/'RAM' heading)",
+   "url": "nhra_dodge-ram-1500-1994-2008.json",
+   "type": "nhra"
+  },
+  {
+   "name": "Cars.com - 1994 Dodge Ram 1500 research page (expert review)",
+   "url": "https://www.cars.com/research/dodge-ram_1500-1994/specs/",
+   "type": "publication"
+  },
+  {
+   "name": "Cars.com - 1996 Dodge Ram 1500 research page (expert review tested a Ram 3500 V10)",
+   "url": "https://www.cars.com/research/dodge-ram_1500-1996/",
+   "type": "publication"
+  },
+  {
+   "name": "Cars.com - 1997 Dodge Ram 1500 specs (base + Club Cab 155 4WD trim)",
+   "url": "https://www.cars.com/research/dodge-ram_1500-1997/specs/",
+   "type": "publication"
+  },
+  {
+   "name": "Cars.com - 1998 Dodge Ram 1500 specs (base + Quad Cab 139 trim)",
+   "url": "https://www.cars.com/research/dodge-ram_1500-1998/specs/",
+   "type": "publication"
+  },
+  {
+   "name": "The Auto Channel - 1996 Dodge Ram 1500 4X4 SLT review (Tom Hagin)",
+   "url": "https://www.theautochannel.com/vehicles/new/reviews/solo9621.html",
+   "type": "publication"
+  },
+  {
+   "name": "Kelley Blue Book - 1996 Dodge Ram 1500 Regular Cab specs",
+   "url": "https://www.kbb.com/dodge/ram-1500-regular-cab/1996/specs/",
+   "type": "publication"
+  },
+  {
+   "name": "Kelley Blue Book - 1997 Dodge Ram 1500 specs / Club Cab specs",
+   "url": "https://www.kbb.com/dodge/ram-1500-club-cab/1997/specs/",
+   "type": "publication"
+  },
+  {
+   "name": "Kelley Blue Book - 1998 Dodge Ram 1500 Quad Cab specs",
+   "url": "https://www.kbb.com/dodge/ram-1500-quad-cab/1998/specs",
+   "type": "publication"
+  },
+  {
+   "name": "Kelley Blue Book - 2001 Dodge Ram 1500 specs",
+   "url": "https://www.kbb.com/dodge/ram-1500/2001/specs/",
+   "type": "publication"
+  },
+  {
+   "name": "Kelley Blue Book - 2003 Dodge Ram 1500 specs",
+   "url": "https://www.kbb.com/dodge/ram-1500/2003/specs/",
+   "type": "publication"
+  },
+  {
+   "name": "Kelley Blue Book - 2007 Dodge Ram 1500 specs",
+   "url": "https://www.kbb.com/dodge/ram-1500/2007/specs/",
+   "type": "publication"
+  },
+  {
+   "name": "Kelley Blue Book - 2008 Dodge Ram 1500 specs",
+   "url": "https://www.kbb.com/dodge/ram-1500/2008/specs/",
+   "type": "publication"
+  },
+  {
+   "name": "MotorWeek road test - 2002 Dodge Ram 1500 (Program #2103)",
+   "url": "https://motorweek.org/road_tests/2002_dodge_ram_1500_program_2103",
+   "type": "publication"
+  },
+  {
+   "name": "Auto123 - 2002-2008 Dodge Ram pre-owned review",
+   "url": "https://www.auto123.com/en/news/2002-2008-dodge-ram-pre-owned/50261/",
+   "type": "publication"
+  },
+  {
+   "name": "Dodge release 'Dodge Flexes Legendary HEMI Muscle with the 2003.5 Dodge Ram 1500' (reprint on Auto123)",
+   "url": "https://www.auto123.com/en/news/dodge-flexes-legendary-hemir-muscle-with-the-20035-dodge-ram-1500/20276/",
+   "type": "manufacturer"
+  },
+  {
+   "name": "DaimlerChrysler press kit - 2004 Dodge Ram SRT-10 reveal (Feb 12, 2003), Stellantis media archive",
+   "url": "https://media.stellantisnorthamerica.com/newsrelease.do?id=399",
+   "type": "manufacturer"
+  },
+  {
+   "name": "conceptcarz - 2008 Dodge Ram 1500 (text marked 'Source - Dodge')",
+   "url": "https://www.conceptcarz.com/vehicle/z14807/supercars.aspx",
+   "type": "manufacturer"
+  }
+ ]
+}

@@ -264,6 +264,8 @@ for fn in spec["files"]:
 for rx, rep in spec.get("trim_rewrite", []):
     for r in engines + excluded:
         r["trims"] = [re.sub(rx, rep, t) for t in r["trims"]]
+for r in engines + excluded:  # a rewrite to "" drops the trim; keep the first of any duplicates
+    r["trims"] = [t for i, t in enumerate(r["trims"]) if t and t not in r["trims"][:i]]
 if spec.get("merge_trims"):
     merged = {}
     for r in engines:

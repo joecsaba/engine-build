@@ -133,6 +133,24 @@ S["f-100"] = dict(make="Ford", model="F-100", makeSlug="ford", slug="f-100",
   files=["verify_ford-f100-1953-1983.json"],
   names={"1964|262|152": "262 inline-six"})
 
+S["ram-1500"] = dict(make="Ram", model="1500", makeSlug="ram", slug="1500",
+  title="Ram 1500 Engines by Year (1994–2026)",
+  description="Every factory engine in the Dodge Ram 1500 and Ram 1500 by year, 1994–2026: Magnum V6 and V8s, the SRT-10 V10, Hemis, EcoDiesel, the TRX and the Hurricane six.",
+  intro=["Dodge sold the Ram 1500 from 1994. Ram became a separate brand in 2010, and the truck has been the Ram 1500 since the 2011 model year. After the 2019 redesign the previous truck stayed on sale as the Ram 1500 Classic through 2024. Earlier Dodge half-tons are on the D-series page.", PICK],
+  generations=[
+    G("gen2", "1994–2001", 1994, 2001, "The 1994 Ram used the 3.9 Magnum V6 and the 5.2 and 5.9 Magnum V8s. The 8.0 V10 was a 2500 and 3500 engine."),
+    G("gen3", "2002–2008", 2002, 2008, "The 2002 redesign brought the 3.7 V6 and 4.7 V8, with the 5.7 Hemi from mid-2003. The 2004–2006 SRT-10 used the Viper's 8.3 V10."),
+    G("gen4", "2009–2018", 2009, 2018, "The 2009 Ram offered the 3.7 V6, the 4.7 V8 and the 5.7 Hemi, then the 3.6 Pentastar V6 from 2013 and a 3.0 EcoDiesel from 2014."),
+    G("gen5", "2019–2026", 2019, 2026, "The current Ram offers eTorque mild-hybrid V6 and Hemi engines, the EcoDiesel to 2023 and the supercharged 6.2 of the 2021–2024 TRX. The Hurricane 3.0 turbo six replaced the Hemi for 2025, and the Hemi returned for 2026. The trims column marks the Ram 1500 Classic, the previous truck sold alongside.")],
+  files=["verify_dodge-ram-1500-1994-2008.json", "verify_ram-1500-2009-2026.json"],
+  merge_trims=True,
+  trim_rewrite=[[r"^1500 ", ""], [r"\s*\((optional|standard)\)$", ""], [r"^2WD only.*$", "2WD only"],
+                [r"^SLT \(base engine, 2WD only\)$", "SLT"], [r"^SS/T / Indy \(1996-98\)$", "SS/T, Indy"],
+                [r"^(Others|All|Optional|Optional, automatic only|Base.*|2WD and 4WD.*)$", ""]],
+  family_overrides=[{"years": [2021, 2024], "cid": [376], "url": "/engines/dodge/gen-iii-hemi"},
+                    {"years": [2002, 2012], "cid": [226], "url": "/engines/ram/powertech"},
+                    {"years": [1994, 2003], "cid": [360], "url": "/engines/ram/magnum"}])
+
 # Third sources found in follow-up passes, matched to the model they cover.
 for fn, slug in (("third_source_found_cj.json", "cj"),):
     tp = os.path.join(SP, fn)
