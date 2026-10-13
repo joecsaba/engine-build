@@ -35,6 +35,14 @@ Sources stay private. Half-ton / light-duty models only unless noted.
 - Chrysler 2.4 PowerTech DOHC (148 ci) — Wrangler TJ 2003–2006
 - FCA 2.4 Tigershark MultiAir2 (144/146 ci) — Cherokee KL 2014–2023
 - Mercedes-Benz OM642 3.0 V6 diesel (182 ci) — Grand Cherokee 2007–2008 (left unlinked; not the EcoDiesel)
+- Willys Go-Devil L-134 flathead four — CJ-2A/CJ-3A 1945–1953 (left unlinked; Hurricane family is the F-head)
+- Perkins 4.192 diesel (192 ci) — CJ-5/CJ-6 1961–1965
+- GM 6.2 diesel LH6 (379 ci) — C/K 1982–1993
+- GM 6.5 diesel L49/L56 (395 ci) — C/K 1500 1994–1998
+- Ford 215 six (1952–1953), 239 flathead V8 (1953) — F-100
+- Ford 262 truck six (1961–1964) — F-100 1964
+- Ford 300 six (1965–1996) — F-100, F-150 (big gap: no page at all)
+- Ford FE 360 truck V8 (1968–1976) — F-100
 
 ## Other leftovers
 - Two-source rows to retry for a third source: El Camino 1965–68 sixes, early-80s GM diesels/V6s,

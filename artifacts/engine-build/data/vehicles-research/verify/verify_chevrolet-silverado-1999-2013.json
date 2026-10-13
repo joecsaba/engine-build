@@ -1,0 +1,3357 @@
+{
+ "vehicle": "chevrolet-silverado-1999-2013",
+ "scope": "Silverado 1500 incl. 1500HD (2001-2007 Classic), SS / Intimidator SS / VortecMAX, Hybrid; GMT800 1999-2006 plus 2007 Classic, GMT900 2007-2013. 2500HD/3500 excluded.",
+ "nhra_note": "The NHRA input has no Silverado rows (only a 1999 S-10 heading), so every engine is nhra:false.",
+ "years": {
+  "1999": [
+   {
+    "gen": "gmt800",
+    "cid": 262,
+    "hp": 200,
+    "hp_basis": "SAE net",
+    "rpo": "L35",
+    "name": "4.3L / 262 V6",
+    "common_name": "Vortec 4300",
+    "trims": [
+     "regular cab and low-trim 2WD extended cab; 2WD and 4WD"
+    ],
+    "nhra": false,
+    "sources": [
+     {
+      "name": "GM Canada media - 1999 Chevrolet Silverado (archived)",
+      "url": "https://web.archive.org/web/2005/http://media.gm.com:80/division/canada/english/products/chevy_truck/archives/1999Silverado.html",
+      "says": "Engines: Vortec 4300 V6 200 hp, Vortec 4800 V8 255 hp, Vortec 5300 V8 270 hp (Vortec 6000 for 2500 only)"
+     },
+     {
+      "name": "EPA fueleconomy.gov vehicle data",
+      "url": "https://www.fueleconomy.gov/feg/download.shtml",
+      "says": "1999: 4.3 L 6-cyl, Silverado 1500 2WD/4WD"
+     },
+     {
+      "name": "Wikipedia - Chevrolet Silverado (first generation) / GM LS engine",
+      "url": "https://en.wikipedia.org/wiki/Chevrolet_Silverado_(first_generation)",
+      "says": "Vortec 4300 V6, 1500, 200 hp 1999-2002"
+     },
+     {
+      "name": "cars.com - 1999 Chevrolet Silverado 1500 specs",
+      "url": "https://www.cars.com/research/chevrolet-silverado_1500-1999/specs/",
+      "says": "1999 Silverado 1500: 200-hp 4.3-liter V6 (255 and 270 hp also listed)"
+     }
+    ],
+    "status": "three_sources_not_nhra",
+    "note": "GM Canada lists 200 hp @ 4400 rpm; RPO L35 per GM 2000/2001 tables (LU3 from 2003)."
+   },
+   {
+    "gen": "gmt800",
+    "cid": 293,
+    "hp": 255,
+    "hp_basis": "SAE net",
+    "rpo": "LR4",
+    "name": "4.8L / 293 V8",
+    "common_name": "Vortec 4800",
+    "trims": [
+     "1500, 2WD and 4WD"
+    ],
+    "nhra": false,
+    "sources": [
+     {
+      "name": "GM Canada media - 1999 Chevrolet Silverado (archived)",
+      "url": "https://web.archive.org/web/2005/http://media.gm.com:80/division/canada/english/products/chevy_truck/archives/1999Silverado.html",
+      "says": "Engines: Vortec 4300 V6 200 hp, Vortec 4800 V8 255 hp, Vortec 5300 V8 270 hp (Vortec 6000 for 2500 only)"
+     },
+     {
+      "name": "EPA fueleconomy.gov vehicle data",
+      "url": "https://www.fueleconomy.gov/feg/download.shtml",
+      "says": "1999: 4.8 L 8-cyl, Silverado 1500 2WD/4WD"
+     },
+     {
+      "name": "Wikipedia - Chevrolet Silverado (first generation) / GM LS engine",
+      "url": "https://en.wikipedia.org/wiki/Chevrolet_Silverado_(first_generation)",
+      "says": "Vortec 4800 LR4, 1500, 255 hp"
+     },
+     {
+      "name": "cars.com - 1999 Chevrolet Silverado 1500 specs",
+      "url": "https://www.cars.com/research/chevrolet-silverado_1500-1999/specs/",
+      "says": "255 hp figure listed for 1999 Silverado 1500"
+     }
+    ],
+    "status": "three_sources_not_nhra",
+    "note": "Rated 255 hp in 1999, 270 hp 2000-2003, 285 hp 2004-2007."
+   },
+   {
+    "gen": "gmt800",
+    "cid": 325,
+    "hp": 270,
+    "hp_basis": "SAE net",
+    "rpo": "LM7",
+    "name": "5.3L / 325 V8",
+    "common_name": "Vortec 5300",
+    "trims": [
+     "1500, 2WD and 4WD; std on LT"
+    ],
+    "nhra": false,
+    "sources": [
+     {
+      "name": "GM Canada media - 1999 Chevrolet Silverado (archived)",
+      "url": "https://web.archive.org/web/2005/http://media.gm.com:80/division/canada/english/products/chevy_truck/archives/1999Silverado.html",
+      "says": "Engines: Vortec 4300 V6 200 hp, Vortec 4800 V8 255 hp, Vortec 5300 V8 270 hp (Vortec 6000 for 2500 only)"
+     },
+     {
+      "name": "EPA fueleconomy.gov vehicle data",
+      "url": "https://www.fueleconomy.gov/feg/download.shtml",
+      "says": "1999: 5.3 L 8-cyl, Silverado 1500 2WD/4WD"
+     },
+     {
+      "name": "Wikipedia - Chevrolet Silverado (first generation) / GM LS engine",
+      "url": "https://en.wikipedia.org/wiki/Chevrolet_Silverado_(first_generation)",
+      "says": "Vortec 5300 LM7, 1500, 270 hp"
+     },
+     {
+      "name": "cars.com - 1999 Chevrolet Silverado 1500 specs",
+      "url": "https://www.cars.com/research/chevrolet-silverado_1500-1999/specs/",
+      "says": "270 hp figure listed for 1999 Silverado 1500"
+     }
+    ],
+    "status": "three_sources_not_nhra",
+    "note": "Rated 270 hp in 1999, 285 hp 2000-2003, 295 hp 2004-2007."
+   }
+  ],
+  "2000": [
+   {
+    "gen": "gmt800",
+    "cid": 262,
+    "hp": 200,
+    "hp_basis": "SAE net",
+    "rpo": "L35",
+    "name": "4.3L / 262 V6",
+    "common_name": "Vortec 4300",
+    "trims": [
+     "regular cab and low-trim 2WD extended cab; 2WD and 4WD"
+    ],
+    "nhra": false,
+    "sources": [
+     {
+      "name": "GM media - 2000 Silverado specifications & engine pages (archived)",
+      "url": "https://web.archive.org/web/2005/http://media.gm.com:80/division/chevrolet/products/archive_prod_info/00chevy/00silverado/silver_specs.htm",
+      "says": "Engine table: L35 4300 V6 200 hp, LR4 4800 270 hp, LM7 5300 285 hp; 1500 availability std/opt"
+     },
+     {
+      "name": "EPA fueleconomy.gov vehicle data",
+      "url": "https://www.fueleconomy.gov/feg/download.shtml",
+      "says": "2000: 4.3 L 6-cyl, Silverado 1500 2WD/4WD"
+     },
+     {
+      "name": "Wikipedia - Chevrolet Silverado (first generation) / GM LS engine",
+      "url": "https://en.wikipedia.org/wiki/Chevrolet_Silverado_(first_generation)",
+      "says": "Vortec 4300 V6, 1500, 200 hp 1999-2002"
+     }
+    ],
+    "status": "three_sources_not_nhra",
+    "note": "RPO L35 per GM 2000/2001 spec tables (LU3 from 2003)."
+   },
+   {
+    "gen": "gmt800",
+    "cid": 293,
+    "hp": 270,
+    "hp_basis": "SAE net",
+    "rpo": "LR4",
+    "name": "4.8L / 293 V8",
+    "common_name": "Vortec 4800",
+    "trims": [
+     "1500, 2WD and 4WD"
+    ],
+    "nhra": false,
+    "sources": [
+     {
+      "name": "GM media - 2000 Silverado specifications & engine pages (archived)",
+      "url": "https://web.archive.org/web/2005/http://media.gm.com:80/division/chevrolet/products/archive_prod_info/00chevy/00silverado/silver_specs.htm",
+      "says": "Engine table: L35 4300 V6 200 hp, LR4 4800 270 hp, LM7 5300 285 hp; 1500 availability std/opt"
+     },
+     {
+      "name": "EPA fueleconomy.gov vehicle data",
+      "url": "https://www.fueleconomy.gov/feg/download.shtml",
+      "says": "2000: 4.8 L 8-cyl, Silverado 1500 2WD/4WD"
+     },
+     {
+      "name": "Wikipedia - Chevrolet Silverado (first generation) / GM LS engine",
+      "url": "https://en.wikipedia.org/wiki/Chevrolet_Silverado_(first_generation)",
+      "says": "Vortec 4800 LR4, 1500, 270 hp"
+     }
+    ],
+    "status": "three_sources_not_nhra",
+    "note": "Rated 255 hp in 1999, 270 hp 2000-2003, 285 hp 2004-2007."
+   },
+   {
+    "gen": "gmt800",
+    "cid": 325,
+    "hp": 285,
+    "hp_basis": "SAE net",
+    "rpo": "LM7",
+    "name": "5.3L / 325 V8",
+    "common_name": "Vortec 5300",
+    "trims": [
+     "1500, 2WD and 4WD; std on LT"
+    ],
+    "nhra": false,
+    "sources": [
+     {
+      "name": "GM media - 2000 Silverado specifications & engine pages (archived)",
+      "url": "https://web.archive.org/web/2005/http://media.gm.com:80/division/chevrolet/products/archive_prod_info/00chevy/00silverado/silver_specs.htm",
+      "says": "Engine table: L35 4300 V6 200 hp, LR4 4800 270 hp, LM7 5300 285 hp; 1500 availability std/opt"
+     },
+     {
+      "name": "EPA fueleconomy.gov vehicle data",
+      "url": "https://www.fueleconomy.gov/feg/download.shtml",
+      "says": "2000: 5.3 L 8-cyl, Silverado 1500 2WD/4WD"
+     },
+     {
+      "name": "Wikipedia - Chevrolet Silverado (first generation) / GM LS engine",
+      "url": "https://en.wikipedia.org/wiki/Chevrolet_Silverado_(first_generation)",
+      "says": "Vortec 5300 LM7, 1500, 285 hp"
+     }
+    ],
+    "status": "three_sources_not_nhra",
+    "note": "Rated 270 hp in 1999, 285 hp 2000-2003, 295 hp 2004-2007."
+   }
+  ],
+  "2001": [
+   {
+    "gen": "gmt800",
+    "cid": 262,
+    "hp": 200,
+    "hp_basis": "SAE net",
+    "rpo": "L35",
+    "name": "4.3L / 262 V6",
+    "common_name": "Vortec 4300",
+    "trims": [
+     "regular cab and low-trim 2WD extended cab; 2WD and 4WD"
+    ],
+    "nhra": false,
+    "sources": [
+     {
+      "name": "GM media - 2001 Silverado specifications (archived)",
+      "url": "https://web.archive.org/web/2005/http://media.gm.com:80/division/chevrolet/products/trucks/01chevy/01silverado/specs.htm",
+      "says": "RPO table: L35 200 hp, LR4 270 hp, LM7 285 hp, LQ4 300 hp"
+     },
+     {
+      "name": "EPA fueleconomy.gov vehicle data",
+      "url": "https://www.fueleconomy.gov/feg/download.shtml",
+      "says": "2001: 4.3 L 6-cyl, Silverado 1500 2WD/4WD"
+     },
+     {
+      "name": "Wikipedia - Chevrolet Silverado (first generation) / GM LS engine",
+      "url": "https://en.wikipedia.org/wiki/Chevrolet_Silverado_(first_generation)",
+      "says": "Vortec 4300 V6, 1500, 200 hp 1999-2002"
+     }
+    ],
+    "status": "three_sources_not_nhra",
+    "note": "RPO L35 per GM 2000/2001 spec tables (LU3 from 2003)."
+   },
+   {
+    "gen": "gmt800",
+    "cid": 293,
+    "hp": 270,
+    "hp_basis": "SAE net",
+    "rpo": "LR4",
+    "name": "4.8L / 293 V8",
+    "common_name": "Vortec 4800",
+    "trims": [
+     "1500, 2WD and 4WD"
+    ],
+    "nhra": false,
+    "sources": [
+     {
+      "name": "GM media - 2001 Silverado specifications (archived)",
+      "url": "https://web.archive.org/web/2005/http://media.gm.com:80/division/chevrolet/products/trucks/01chevy/01silverado/specs.htm",
+      "says": "RPO table: L35 200 hp, LR4 270 hp, LM7 285 hp, LQ4 300 hp"
+     },
+     {
+      "name": "EPA fueleconomy.gov vehicle data",
+      "url": "https://www.fueleconomy.gov/feg/download.shtml",
+      "says": "2001: 4.8 L 8-cyl, Silverado 1500 2WD/4WD"
+     },
+     {
+      "name": "Wikipedia - Chevrolet Silverado (first generation) / GM LS engine",
+      "url": "https://en.wikipedia.org/wiki/Chevrolet_Silverado_(first_generation)",
+      "says": "Vortec 4800 LR4, 1500, 270 hp"
+     }
+    ],
+    "status": "three_sources_not_nhra",
+    "note": "Rated 255 hp in 1999, 270 hp 2000-2003, 285 hp 2004-2007."
+   },
+   {
+    "gen": "gmt800",
+    "cid": 325,
+    "hp": 285,
+    "hp_basis": "SAE net",
+    "rpo": "LM7",
+    "name": "5.3L / 325 V8",
+    "common_name": "Vortec 5300",
+    "trims": [
+     "1500, 2WD and 4WD; std on LT"
+    ],
+    "nhra": false,
+    "sources": [
+     {
+      "name": "GM media - 2001 Silverado specifications (archived)",
+      "url": "https://web.archive.org/web/2005/http://media.gm.com:80/division/chevrolet/products/trucks/01chevy/01silverado/specs.htm",
+      "says": "RPO table: L35 200 hp, LR4 270 hp, LM7 285 hp, LQ4 300 hp"
+     },
+     {
+      "name": "EPA fueleconomy.gov vehicle data",
+      "url": "https://www.fueleconomy.gov/feg/download.shtml",
+      "says": "2001: 5.3 L 8-cyl, Silverado 1500 2WD/4WD"
+     },
+     {
+      "name": "Wikipedia - Chevrolet Silverado (first generation) / GM LS engine",
+      "url": "https://en.wikipedia.org/wiki/Chevrolet_Silverado_(first_generation)",
+      "says": "Vortec 5300 LM7, 1500, 285 hp"
+     }
+    ],
+    "status": "three_sources_not_nhra",
+    "note": "Rated 270 hp in 1999, 285 hp 2000-2003, 295 hp 2004-2007."
+   },
+   {
+    "gen": "gmt800",
+    "cid": 364,
+    "hp": 300,
+    "hp_basis": "SAE net",
+    "rpo": "LQ4",
+    "name": "6.0L / 364 V8",
+    "common_name": "Vortec 6000",
+    "trims": [
+     "1500HD crew cab only, 2WD and 4WD"
+    ],
+    "nhra": false,
+    "sources": [
+     {
+      "name": "Wikipedia - Chevrolet Silverado (first generation) / GM LS engine",
+      "url": "https://en.wikipedia.org/wiki/Chevrolet_Silverado_(first_generation)",
+      "says": "1500HD (introduced for 2001): 6.0 Vortec 6000, 300 hp, 1999-2006 table; LQ4 1999-2007 per GM LS engine article"
+     },
+     {
+      "name": "GM Canada media - 2003 Chevrolet Silverado (archived)",
+      "url": "https://web.archive.org/web/2005/http://media.gm.com:80/division/canada/english/products/chevy_truck/archives/2003Silverado.html",
+      "says": "History: 2001 - new \"1500 HD\" 1/2-ton model added; GM 2001 spec table lists LQ4 300 hp"
+     },
+     {
+      "name": "Kelley Blue Book - 2001 Silverado 1500 HD Crew Cab specs",
+      "url": "https://www.kbb.com/chevrolet/silverado-1500hd-crew-cab/2001/specs/",
+      "says": "Silverado 1500 HD Crew Cab: V8, 6.0 Liter, 300 hp"
+     }
+    ],
+    "status": "three_sources_not_nhra",
+    "note": "Silverado 1500HD: heavy-duty half-ton crew cab (>8,500 lb GVWR, so not in EPA data). Included because it was sold under the 1500 name; drop if the page excludes HD-chassis trucks."
+   }
+  ],
+  "2002": [
+   {
+    "gen": "gmt800",
+    "cid": 262,
+    "hp": 200,
+    "hp_basis": "SAE net",
+    "rpo": "L35",
+    "name": "4.3L / 262 V6",
+    "common_name": "Vortec 4300",
+    "trims": [
+     "regular cab and low-trim 2WD extended cab; 2WD and 4WD"
+    ],
+    "nhra": false,
+    "sources": [
+     {
+      "name": "GM Canada media - 2002 Chevrolet Silverado (archived)",
+      "url": "https://web.archive.org/web/2003/http://media.gm.com:80/division/canada/english/products/chevy_truck/archives/2002Silverado.html",
+      "says": "Vortec 4300 V6, 4800 V8, 5300 V8 (1500 models) 200/270/285 hp; Vortec 6000 for 1500HD"
+     },
+     {
+      "name": "EPA fueleconomy.gov vehicle data",
+      "url": "https://www.fueleconomy.gov/feg/download.shtml",
+      "says": "2002: 4.3 L 6-cyl, Silverado 1500 2WD/4WD"
+     },
+     {
+      "name": "Wikipedia - Chevrolet Silverado (first generation) / GM LS engine",
+      "url": "https://en.wikipedia.org/wiki/Chevrolet_Silverado_(first_generation)",
+      "says": "Vortec 4300 V6, 1500, 200 hp 1999-2002"
+     }
+    ],
+    "status": "three_sources_not_nhra",
+    "note": "RPO L35 per GM 2000/2001 spec tables (LU3 from 2003)."
+   },
+   {
+    "gen": "gmt800",
+    "cid": 293,
+    "hp": 270,
+    "hp_basis": "SAE net",
+    "rpo": "LR4",
+    "name": "4.8L / 293 V8",
+    "common_name": "Vortec 4800",
+    "trims": [
+     "1500, 2WD and 4WD"
+    ],
+    "nhra": false,
+    "sources": [
+     {
+      "name": "GM Canada media - 2002 Chevrolet Silverado (archived)",
+      "url": "https://web.archive.org/web/2003/http://media.gm.com:80/division/canada/english/products/chevy_truck/archives/2002Silverado.html",
+      "says": "Vortec 4300 V6, 4800 V8, 5300 V8 (1500 models) 200/270/285 hp; Vortec 6000 for 1500HD"
+     },
+     {
+      "name": "EPA fueleconomy.gov vehicle data",
+      "url": "https://www.fueleconomy.gov/feg/download.shtml",
+      "says": "2002: 4.8 L 8-cyl, Silverado 1500 2WD/4WD"
+     },
+     {
+      "name": "Wikipedia - Chevrolet Silverado (first generation) / GM LS engine",
+      "url": "https://en.wikipedia.org/wiki/Chevrolet_Silverado_(first_generation)",
+      "says": "Vortec 4800 LR4, 1500, 270 hp"
+     }
+    ],
+    "status": "three_sources_not_nhra",
+    "note": "Rated 255 hp in 1999, 270 hp 2000-2003, 285 hp 2004-2007."
+   },
+   {
+    "gen": "gmt800",
+    "cid": 325,
+    "hp": 285,
+    "hp_basis": "SAE net",
+    "rpo": "LM7",
+    "name": "5.3L / 325 V8",
+    "common_name": "Vortec 5300",
+    "trims": [
+     "1500, 2WD and 4WD; std on LT"
+    ],
+    "nhra": false,
+    "sources": [
+     {
+      "name": "GM Canada media - 2002 Chevrolet Silverado (archived)",
+      "url": "https://web.archive.org/web/2003/http://media.gm.com:80/division/canada/english/products/chevy_truck/archives/2002Silverado.html",
+      "says": "Vortec 4300 V6, 4800 V8, 5300 V8 (1500 models) 200/270/285 hp; Vortec 6000 for 1500HD"
+     },
+     {
+      "name": "EPA fueleconomy.gov vehicle data",
+      "url": "https://www.fueleconomy.gov/feg/download.shtml",
+      "says": "2002: 5.3 L 8-cyl, Silverado 1500 2WD/4WD"
+     },
+     {
+      "name": "Wikipedia - Chevrolet Silverado (first generation) / GM LS engine",
+      "url": "https://en.wikipedia.org/wiki/Chevrolet_Silverado_(first_generation)",
+      "says": "Vortec 5300 LM7, 1500, 285 hp"
+     }
+    ],
+    "status": "three_sources_not_nhra",
+    "note": "Rated 270 hp in 1999, 285 hp 2000-2003, 295 hp 2004-2007."
+   },
+   {
+    "gen": "gmt800",
+    "cid": 364,
+    "hp": 300,
+    "hp_basis": "SAE net",
+    "rpo": "LQ4",
+    "name": "6.0L / 364 V8",
+    "common_name": "Vortec 6000",
+    "trims": [
+     "1500HD crew cab only, 2WD and 4WD"
+    ],
+    "nhra": false,
+    "sources": [
+     {
+      "name": "Wikipedia - Chevrolet Silverado (first generation) / GM LS engine",
+      "url": "https://en.wikipedia.org/wiki/Chevrolet_Silverado_(first_generation)",
+      "says": "1500HD (introduced for 2001): 6.0 Vortec 6000, 300 hp, 1999-2006 table; LQ4 1999-2007 per GM LS engine article"
+     },
+     {
+      "name": "GM Canada media - 2002 Chevrolet Silverado (archived)",
+      "url": "https://web.archive.org/web/2003/http://media.gm.com:80/division/canada/english/products/chevy_truck/archives/2002Silverado.html",
+      "says": "Vortec 6000 V8 (1500HD, 2500, 2500HD and 3500 models) standard, 300 hp"
+     },
+     {
+      "name": "Kelley Blue Book - 2002 Silverado 1500 HD Crew Cab specs",
+      "url": "https://www.kbb.com/chevrolet/silverado-1500hd-crew-cab/2002/specs/",
+      "says": "Silverado 1500 HD Crew Cab: V8, 6.0 Liter, 300 hp"
+     }
+    ],
+    "status": "three_sources_not_nhra",
+    "note": "Silverado 1500HD: heavy-duty half-ton crew cab (>8,500 lb GVWR, so not in EPA data). Included because it was sold under the 1500 name; drop if the page excludes HD-chassis trucks."
+   }
+  ],
+  "2003": [
+   {
+    "gen": "gmt800",
+    "cid": 262,
+    "hp": 200,
+    "hp_basis": "SAE net",
+    "rpo": "LU3",
+    "name": "4.3L / 262 V6",
+    "common_name": "Vortec 4300",
+    "trims": [
+     "regular cab and low-trim 2WD extended cab; 2WD and 4WD"
+    ],
+    "nhra": false,
+    "sources": [
+     {
+      "name": "GM media - 2003 Silverado specifications / model lineup (archived)",
+      "url": "https://web.archive.org/web/2005/http://www.media.gm.com:80/division/2003_prodinfo/03_chevrolet/03_silverado/specifications.html",
+      "says": "Vortec 4300 (LU3) 200 hp, Vortec 4800 (LR4) 270 hp, Vortec 5300 (LM7) 285 hp, Vortec 6000 (LQ4) 300 hp; lineup lists SS with 6000"
+     },
+     {
+      "name": "EPA fueleconomy.gov vehicle data",
+      "url": "https://www.fueleconomy.gov/feg/download.shtml",
+      "says": "2003: 4.3 L 6-cyl, Silverado 1500 2WD/4WD"
+     },
+     {
+      "name": "Wikipedia - Chevrolet Silverado (first generation) / GM LS engine",
+      "url": "https://en.wikipedia.org/wiki/Chevrolet_Silverado_(first_generation)",
+      "says": "Vortec 4300 V6, 1500, 195 hp 2003-2007"
+     }
+    ],
+    "status": "three_sources_not_nhra",
+    "note": "GM 2003 spec sheet rates the LU3 at 200 hp; Wikipedia gives 195 hp from 2003 (GM rates 195 from 2004). Recorded the GM figure."
+   },
+   {
+    "gen": "gmt800",
+    "cid": 293,
+    "hp": 270,
+    "hp_basis": "SAE net",
+    "rpo": "LR4",
+    "name": "4.8L / 293 V8",
+    "common_name": "Vortec 4800",
+    "trims": [
+     "1500, 2WD and 4WD"
+    ],
+    "nhra": false,
+    "sources": [
+     {
+      "name": "GM media - 2003 Silverado specifications / model lineup (archived)",
+      "url": "https://web.archive.org/web/2005/http://www.media.gm.com:80/division/2003_prodinfo/03_chevrolet/03_silverado/specifications.html",
+      "says": "Vortec 4300 (LU3) 200 hp, Vortec 4800 (LR4) 270 hp, Vortec 5300 (LM7) 285 hp, Vortec 6000 (LQ4) 300 hp; lineup lists SS with 6000"
+     },
+     {
+      "name": "EPA fueleconomy.gov vehicle data",
+      "url": "https://www.fueleconomy.gov/feg/download.shtml",
+      "says": "2003: 4.8 L 8-cyl, Silverado 1500 2WD/4WD"
+     },
+     {
+      "name": "Wikipedia - Chevrolet Silverado (first generation) / GM LS engine",
+      "url": "https://en.wikipedia.org/wiki/Chevrolet_Silverado_(first_generation)",
+      "says": "Vortec 4800 LR4, 1500, 270 hp"
+     }
+    ],
+    "status": "three_sources_not_nhra",
+    "note": "Rated 255 hp in 1999, 270 hp 2000-2003, 285 hp 2004-2007."
+   },
+   {
+    "gen": "gmt800",
+    "cid": 325,
+    "hp": 285,
+    "hp_basis": "SAE net",
+    "rpo": "LM7",
+    "name": "5.3L / 325 V8",
+    "common_name": "Vortec 5300",
+    "trims": [
+     "1500, 2WD and 4WD; std on LT"
+    ],
+    "nhra": false,
+    "sources": [
+     {
+      "name": "GM media - 2003 Silverado specifications / model lineup (archived)",
+      "url": "https://web.archive.org/web/2005/http://www.media.gm.com:80/division/2003_prodinfo/03_chevrolet/03_silverado/specifications.html",
+      "says": "Vortec 4300 (LU3) 200 hp, Vortec 4800 (LR4) 270 hp, Vortec 5300 (LM7) 285 hp, Vortec 6000 (LQ4) 300 hp; lineup lists SS with 6000"
+     },
+     {
+      "name": "EPA fueleconomy.gov vehicle data",
+      "url": "https://www.fueleconomy.gov/feg/download.shtml",
+      "says": "2003: 5.3 L 8-cyl, Silverado 1500 2WD/4WD"
+     },
+     {
+      "name": "Wikipedia - Chevrolet Silverado (first generation) / GM LS engine",
+      "url": "https://en.wikipedia.org/wiki/Chevrolet_Silverado_(first_generation)",
+      "says": "Vortec 5300 LM7, 1500, 285 hp"
+     }
+    ],
+    "status": "three_sources_not_nhra",
+    "note": "Rated 270 hp in 1999, 285 hp 2000-2003, 295 hp 2004-2007."
+   },
+   {
+    "gen": "gmt800",
+    "cid": 325,
+    "hp": 285,
+    "hp_basis": "SAE net",
+    "rpo": "L59",
+    "name": "5.3L / 325 V8 FlexFuel",
+    "common_name": "Vortec 5300 FFV",
+    "trims": [
+     "1500, 2WD and 4WD"
+    ],
+    "nhra": false,
+    "sources": [
+     {
+      "name": "EPA fueleconomy.gov vehicle data",
+      "url": "https://www.fueleconomy.gov/feg/download.shtml",
+      "says": "2003: 5.3 L 8-cyl FFV (flex-fuel), Silverado 1500 2WD/4WD"
+     },
+     {
+      "name": "Wikipedia - Chevrolet Silverado (first generation) / GM LS engine",
+      "url": "https://en.wikipedia.org/wiki/Chevrolet_Silverado_(first_generation)",
+      "says": "L59: flex-fuel version of the LM7, 2002-2007, 285-295 hp"
+     }
+    ],
+    "status": "two_sources_not_nhra",
+    "note": "E85-capable LM7, same rating. Wikipedia dates it from 2002, but EPA has no Silverado 1500 FFV row before 2003 and no GM document for 2002 was found, so 2002 is not recorded. No GM document for this year names the L59 in the Silverado (GM Canada 2005 lists it for Tahoe/Suburban/Avalanche only)."
+   },
+   {
+    "gen": "gmt800",
+    "cid": 364,
+    "hp": 300,
+    "hp_basis": "SAE net",
+    "rpo": "LQ4",
+    "name": "6.0L / 364 V8",
+    "common_name": "Vortec 6000",
+    "trims": [
+     "1500HD crew cab only, 2WD and 4WD"
+    ],
+    "nhra": false,
+    "sources": [
+     {
+      "name": "Wikipedia - Chevrolet Silverado (first generation) / GM LS engine",
+      "url": "https://en.wikipedia.org/wiki/Chevrolet_Silverado_(first_generation)",
+      "says": "1500HD (introduced for 2001): 6.0 Vortec 6000, 300 hp, 1999-2006 table; LQ4 1999-2007 per GM LS engine article"
+     },
+     {
+      "name": "GM Canada media - 2003 Chevrolet Silverado (archived)",
+      "url": "https://web.archive.org/web/2005/http://media.gm.com:80/division/canada/english/products/chevy_truck/archives/2003Silverado.html",
+      "says": "Engine - Vortec 6000 V8 (1500HD, 2500HD and 3500 models): S; 300 hp"
+     },
+     {
+      "name": "Kelley Blue Book - 2003 Silverado 1500 HD Crew Cab specs",
+      "url": "https://www.kbb.com/chevrolet/silverado-1500hd-crew-cab/2003/specs/",
+      "says": "Silverado 1500 HD Crew Cab: V8, 6.0 Liter, 300 hp"
+     }
+    ],
+    "status": "three_sources_not_nhra",
+    "note": "Silverado 1500HD: heavy-duty half-ton crew cab (>8,500 lb GVWR, so not in EPA data). Included because it was sold under the 1500 name; drop if the page excludes HD-chassis trucks."
+   },
+   {
+    "gen": "gmt800",
+    "cid": 364,
+    "hp": 345,
+    "hp_basis": "SAE net",
+    "rpo": "LQ9",
+    "name": "6.0L / 364 V8 HO",
+    "common_name": "Vortec 6000 HO",
+    "trims": [
+     "SS extended cab, AWD only"
+    ],
+    "nhra": false,
+    "sources": [
+     {
+      "name": "Wikipedia - Chevrolet Silverado (first generation) / GM LS engine",
+      "url": "https://en.wikipedia.org/wiki/Chevrolet_Silverado_(first_generation)",
+      "says": "Silverado SS 2003-2007, 6.0 Vortec HO LQ9, 345 hp; 2WD SS from 2005; Intimidator SS 2006; VortecMAX 2006"
+     },
+     {
+      "name": "GM media - 2003 Silverado SS specifications (archived)",
+      "url": "https://web.archive.org/web/2005/http://media.gm.com:80/division/2003_prodinfo/03_chevrolet/03_silverado/silverado_ss_specs.html",
+      "says": "Silverado SS, Extended Cab AWD, Vortec H.O. 6000 V8, 345 hp"
+     },
+     {
+      "name": "EPA fueleconomy.gov vehicle data",
+      "url": "https://www.fueleconomy.gov/feg/download.shtml",
+      "says": "2003: 6.0 L 8-cyl, Silverado SS 1500 AWD"
+     }
+    ],
+    "status": "three_sources_not_nhra",
+    "note": "High-output 6.0 (10.0:1 compression, premium fuel)."
+   }
+  ],
+  "2004": [
+   {
+    "gen": "gmt800",
+    "cid": 262,
+    "hp": 195,
+    "hp_basis": "SAE net",
+    "rpo": "LU3",
+    "name": "4.3L / 262 V6",
+    "common_name": "Vortec 4300",
+    "trims": [
+     "regular cab and low-trim 2WD extended cab; 2WD and 4WD"
+    ],
+    "nhra": false,
+    "sources": [
+     {
+      "name": "GM media - 2004 Silverado specifications (archived)",
+      "url": "https://web.archive.org/web/2005/http://media.gm.com:80/division/2004_prodinfo/chevrolet/trucks/silverado/specs.html",
+      "says": "LU3 195 hp, LR4 285 hp, LM7 295 hp, LQ4 300 hp; SS: LQ9 345 hp"
+     },
+     {
+      "name": "EPA fueleconomy.gov vehicle data",
+      "url": "https://www.fueleconomy.gov/feg/download.shtml",
+      "says": "2004: 4.3 L 6-cyl, Silverado 1500 2WD/4WD"
+     },
+     {
+      "name": "Wikipedia - Chevrolet Silverado (first generation) / GM LS engine",
+      "url": "https://en.wikipedia.org/wiki/Chevrolet_Silverado_(first_generation)",
+      "says": "Vortec 4300 V6, 1500, 195 hp 2003-2007"
+     }
+    ],
+    "status": "three_sources_not_nhra",
+    "note": ""
+   },
+   {
+    "gen": "gmt800",
+    "cid": 293,
+    "hp": 285,
+    "hp_basis": "SAE net",
+    "rpo": "LR4",
+    "name": "4.8L / 293 V8",
+    "common_name": "Vortec 4800",
+    "trims": [
+     "1500, 2WD and 4WD"
+    ],
+    "nhra": false,
+    "sources": [
+     {
+      "name": "GM media - 2004 Silverado specifications (archived)",
+      "url": "https://web.archive.org/web/2005/http://media.gm.com:80/division/2004_prodinfo/chevrolet/trucks/silverado/specs.html",
+      "says": "LU3 195 hp, LR4 285 hp, LM7 295 hp, LQ4 300 hp; SS: LQ9 345 hp"
+     },
+     {
+      "name": "EPA fueleconomy.gov vehicle data",
+      "url": "https://www.fueleconomy.gov/feg/download.shtml",
+      "says": "2004: 4.8 L 8-cyl, Silverado 1500 2WD/4WD"
+     },
+     {
+      "name": "Wikipedia - Chevrolet Silverado (first generation) / GM LS engine",
+      "url": "https://en.wikipedia.org/wiki/Chevrolet_Silverado_(first_generation)",
+      "says": "Vortec 4800 LR4, 1500, 285 hp"
+     }
+    ],
+    "status": "three_sources_not_nhra",
+    "note": "Rated 255 hp in 1999, 270 hp 2000-2003, 285 hp 2004-2007."
+   },
+   {
+    "gen": "gmt800",
+    "cid": 325,
+    "hp": 295,
+    "hp_basis": "SAE net",
+    "rpo": "LM7",
+    "name": "5.3L / 325 V8",
+    "common_name": "Vortec 5300",
+    "trims": [
+     "1500, 2WD and 4WD; std on LT"
+    ],
+    "nhra": false,
+    "sources": [
+     {
+      "name": "GM media - 2004 Silverado specifications (archived)",
+      "url": "https://web.archive.org/web/2005/http://media.gm.com:80/division/2004_prodinfo/chevrolet/trucks/silverado/specs.html",
+      "says": "LU3 195 hp, LR4 285 hp, LM7 295 hp, LQ4 300 hp; SS: LQ9 345 hp"
+     },
+     {
+      "name": "EPA fueleconomy.gov vehicle data",
+      "url": "https://www.fueleconomy.gov/feg/download.shtml",
+      "says": "2004: 5.3 L 8-cyl, Silverado 1500 2WD/4WD"
+     },
+     {
+      "name": "Wikipedia - Chevrolet Silverado (first generation) / GM LS engine",
+      "url": "https://en.wikipedia.org/wiki/Chevrolet_Silverado_(first_generation)",
+      "says": "Vortec 5300 LM7, 1500, 295 hp"
+     }
+    ],
+    "status": "three_sources_not_nhra",
+    "note": "Rated 270 hp in 1999, 285 hp 2000-2003, 295 hp 2004-2007. GM 2004 sheet gives 330 lb-ft, Wikipedia 335 lb-ft (torque not recorded)."
+   },
+   {
+    "gen": "gmt800",
+    "cid": 325,
+    "hp": 295,
+    "hp_basis": "SAE net",
+    "rpo": "L59",
+    "name": "5.3L / 325 V8 FlexFuel",
+    "common_name": "Vortec 5300 FFV",
+    "trims": [
+     "1500, 2WD and 4WD"
+    ],
+    "nhra": false,
+    "sources": [
+     {
+      "name": "EPA fueleconomy.gov vehicle data",
+      "url": "https://www.fueleconomy.gov/feg/download.shtml",
+      "says": "2004: 5.3 L 8-cyl FFV (flex-fuel), Silverado 1500 2WD/4WD"
+     },
+     {
+      "name": "Wikipedia - Chevrolet Silverado (first generation) / GM LS engine",
+      "url": "https://en.wikipedia.org/wiki/Chevrolet_Silverado_(first_generation)",
+      "says": "L59: flex-fuel version of the LM7, 2002-2007, 285-295 hp"
+     }
+    ],
+    "status": "two_sources_not_nhra",
+    "note": "E85-capable LM7, same rating. Wikipedia dates it from 2002, but EPA has no Silverado 1500 FFV row before 2003 and no GM document for 2002 was found, so 2002 is not recorded. No GM document for this year names the L59 in the Silverado (GM Canada 2005 lists it for Tahoe/Suburban/Avalanche only)."
+   },
+   {
+    "gen": "gmt800",
+    "cid": 325,
+    "hp": 295,
+    "hp_basis": "SAE net",
+    "rpo": "LM7",
+    "name": "5.3L / 325 V8 Hybrid",
+    "common_name": "Silverado Hybrid (PHT)",
+    "trims": [
+     "1500 extended cab short box, 2WD and 4WD"
+    ],
+    "nhra": false,
+    "sources": [
+     {
+      "name": "EPA fueleconomy.gov vehicle data",
+      "url": "https://www.fueleconomy.gov/feg/download.shtml",
+      "says": "2004: 5.3 L 8-cyl, Silverado 15 Hybrid 2WD/4WD"
+     },
+     {
+      "name": "Wikipedia - Chevrolet Silverado (first generation) / GM LS engine",
+      "url": "https://en.wikipedia.org/wiki/Chevrolet_Silverado_(first_generation)",
+      "says": "GM launched a hybrid Silverado in 2004; 5.3 LM7; extended-cab short-bed only"
+     }
+    ],
+    "status": "two_sources_not_nhra",
+    "note": "Parallel Hybrid Truck (14 kW starter-generator), LM7 at 295 hp. GM 2005 overview presents the hybrid as new for 2005; EPA and Wikipedia place it in 2004 (initial limited/fleet sales). Only two sources for 2004.",
+    "hybrid": true
+   },
+   {
+    "gen": "gmt800",
+    "cid": 364,
+    "hp": 300,
+    "hp_basis": "SAE net",
+    "rpo": "LQ4",
+    "name": "6.0L / 364 V8",
+    "common_name": "Vortec 6000",
+    "trims": [
+     "1500HD crew cab only, 2WD and 4WD"
+    ],
+    "nhra": false,
+    "sources": [
+     {
+      "name": "Wikipedia - Chevrolet Silverado (first generation) / GM LS engine",
+      "url": "https://en.wikipedia.org/wiki/Chevrolet_Silverado_(first_generation)",
+      "says": "1500HD (introduced for 2001): 6.0 Vortec 6000, 300 hp, 1999-2006 table; LQ4 1999-2007 per GM LS engine article"
+     },
+     {
+      "name": "GM media - 2004 Silverado specifications (archived)",
+      "url": "https://web.archive.org/web/2005/http://media.gm.com:80/division/2004_prodinfo/chevrolet/trucks/silverado/specs.html",
+      "says": "LQ4 300 hp on the 2004 Silverado spec sheet"
+     }
+    ],
+    "status": "two_sources_not_nhra",
+    "note": "Silverado 1500HD: heavy-duty half-ton crew cab (>8,500 lb GVWR, so not in EPA data). Included because it was sold under the 1500 name; drop if the page excludes HD-chassis trucks. The KBB 2004 1500HD URL served 2006 data, so it is not counted."
+   },
+   {
+    "gen": "gmt800",
+    "cid": 364,
+    "hp": 345,
+    "hp_basis": "SAE net",
+    "rpo": "LQ9",
+    "name": "6.0L / 364 V8 HO",
+    "common_name": "Vortec 6000 HO",
+    "trims": [
+     "SS extended cab, AWD"
+    ],
+    "nhra": false,
+    "sources": [
+     {
+      "name": "Wikipedia - Chevrolet Silverado (first generation) / GM LS engine",
+      "url": "https://en.wikipedia.org/wiki/Chevrolet_Silverado_(first_generation)",
+      "says": "Silverado SS 2003-2007, 6.0 Vortec HO LQ9, 345 hp; 2WD SS from 2005; Intimidator SS 2006; VortecMAX 2006"
+     },
+     {
+      "name": "GM media - 2004 Silverado specifications (archived)",
+      "url": "https://web.archive.org/web/2005/http://media.gm.com:80/division/2004_prodinfo/chevrolet/trucks/silverado/specs.html",
+      "says": "SS: 345 hp @ 5200 (LQ9)"
+     },
+     {
+      "name": "EPA fueleconomy.gov vehicle data",
+      "url": "https://www.fueleconomy.gov/feg/download.shtml",
+      "says": "2004: 6.0 L 8-cyl, Silverado 1500 2WD and AWD"
+     }
+    ],
+    "status": "three_sources_not_nhra",
+    "note": "High-output 6.0 (10.0:1 compression, premium fuel). EPA lists a 2WD 6.0 Silverado 1500 for 2004, though Wikipedia and GM date the 2WD SS to mid-2005; not resolved (possibly an early 2005 build)."
+   }
+  ],
+  "2005": [
+   {
+    "gen": "gmt800",
+    "cid": 262,
+    "hp": 195,
+    "hp_basis": "SAE net",
+    "rpo": "LU3",
+    "name": "4.3L / 262 V6",
+    "common_name": "Vortec 4300",
+    "trims": [
+     "regular cab and low-trim 2WD extended cab; 2WD and 4WD"
+    ],
+    "nhra": false,
+    "sources": [
+     {
+      "name": "EPA fueleconomy.gov vehicle data",
+      "url": "https://www.fueleconomy.gov/feg/download.shtml",
+      "says": "2005: 4.3 L 6-cyl, Silverado 1500 2WD/4WD"
+     },
+     {
+      "name": "Wikipedia - Chevrolet Silverado (first generation) / GM LS engine",
+      "url": "https://en.wikipedia.org/wiki/Chevrolet_Silverado_(first_generation)",
+      "says": "Vortec 4300 V6, 1500, 195 hp 2003-2007"
+     },
+     {
+      "name": "cars.com - 2005 Chevrolet Silverado 1500 specs",
+      "url": "https://www.cars.com/research/chevrolet-silverado_1500-2005/specs/",
+      "says": "2005 Silverado 1500: 4.3L/262 V6, 195 @ 4600"
+     }
+    ],
+    "status": "three_sources_not_nhra",
+    "note": ""
+   },
+   {
+    "gen": "gmt800",
+    "cid": 293,
+    "hp": 285,
+    "hp_basis": "SAE net",
+    "rpo": "LR4",
+    "name": "4.8L / 293 V8",
+    "common_name": "Vortec 4800",
+    "trims": [
+     "1500, 2WD and 4WD"
+    ],
+    "nhra": false,
+    "sources": [
+     {
+      "name": "EPA fueleconomy.gov vehicle data",
+      "url": "https://www.fueleconomy.gov/feg/download.shtml",
+      "says": "2005: 4.8 L 8-cyl, Silverado 1500 2WD/4WD"
+     },
+     {
+      "name": "Wikipedia - Chevrolet Silverado (first generation) / GM LS engine",
+      "url": "https://en.wikipedia.org/wiki/Chevrolet_Silverado_(first_generation)",
+      "says": "Vortec 4800 LR4, 1500, 285 hp"
+     },
+     {
+      "name": "cars.com - 2005 Chevrolet Silverado 1500 specs",
+      "url": "https://www.cars.com/research/chevrolet-silverado_1500-2005/specs/",
+      "says": "2005 Silverado 1500: 285-hp 4.8-liter V8"
+     }
+    ],
+    "status": "three_sources_not_nhra",
+    "note": "Rated 255 hp in 1999, 270 hp 2000-2003, 285 hp 2004-2007."
+   },
+   {
+    "gen": "gmt800",
+    "cid": 325,
+    "hp": 295,
+    "hp_basis": "SAE net",
+    "rpo": "LM7",
+    "name": "5.3L / 325 V8",
+    "common_name": "Vortec 5300",
+    "trims": [
+     "1500, 2WD and 4WD; std on LT"
+    ],
+    "nhra": false,
+    "sources": [
+     {
+      "name": "conceptcarz - 2005 Chevrolet Silverado Hybrid (Source - GM)",
+      "url": "https://www.conceptcarz.com/vehicle/z8357/chevrolet-silverado.aspx",
+      "says": "Hybrid Vortec 5300 V-8 delivers 295 hp - the same as its non-hybrid counterpart"
+     },
+     {
+      "name": "EPA fueleconomy.gov vehicle data",
+      "url": "https://www.fueleconomy.gov/feg/download.shtml",
+      "says": "2005: 5.3 L 8-cyl, Silverado 1500 2WD/4WD"
+     },
+     {
+      "name": "Wikipedia - Chevrolet Silverado (first generation) / GM LS engine",
+      "url": "https://en.wikipedia.org/wiki/Chevrolet_Silverado_(first_generation)",
+      "says": "Vortec 5300 LM7, 1500, 295 hp"
+     },
+     {
+      "name": "cars.com - 2005 Chevrolet Silverado 1500 specs",
+      "url": "https://www.cars.com/research/chevrolet-silverado_1500-2005/specs/",
+      "says": "2005 Silverado 1500: 295 hp figure listed"
+     }
+    ],
+    "status": "three_sources_not_nhra",
+    "note": "Rated 270 hp in 1999, 285 hp 2000-2003, 295 hp 2004-2007."
+   },
+   {
+    "gen": "gmt800",
+    "cid": 325,
+    "hp": 295,
+    "hp_basis": "SAE net",
+    "rpo": "L59",
+    "name": "5.3L / 325 V8 FlexFuel",
+    "common_name": "Vortec 5300 FFV",
+    "trims": [
+     "1500, 2WD and 4WD"
+    ],
+    "nhra": false,
+    "sources": [
+     {
+      "name": "EPA fueleconomy.gov vehicle data",
+      "url": "https://www.fueleconomy.gov/feg/download.shtml",
+      "says": "2005: 5.3 L 8-cyl FFV (flex-fuel), Silverado 1500 2WD/4WD"
+     },
+     {
+      "name": "Wikipedia - Chevrolet Silverado (first generation) / GM LS engine",
+      "url": "https://en.wikipedia.org/wiki/Chevrolet_Silverado_(first_generation)",
+      "says": "L59: flex-fuel version of the LM7, 2002-2007, 285-295 hp"
+     }
+    ],
+    "status": "two_sources_not_nhra",
+    "note": "E85-capable LM7, same rating. Wikipedia dates it from 2002, but EPA has no Silverado 1500 FFV row before 2003 and no GM document for 2002 was found, so 2002 is not recorded. No GM document for this year names the L59 in the Silverado (GM Canada 2005 lists it for Tahoe/Suburban/Avalanche only)."
+   },
+   {
+    "gen": "gmt800",
+    "cid": 325,
+    "hp": 310,
+    "hp_basis": "SAE net",
+    "rpo": "L33",
+    "name": "5.3L / 325 V8 HO (aluminum block)",
+    "common_name": "Vortec 5300 HO",
+    "trims": [
+     "1500 extended cab standard box, 4WD only"
+    ],
+    "nhra": false,
+    "sources": [
+     {
+      "name": "GM media - 2005 Chevrolet Trucks overview (archived)",
+      "url": "https://web.archive.org/web/2005/http://media.gm.com:80/division/2005_prodinfo/chevrolet/trucks/05_Chevy_Trucks%20Overview.htm",
+      "says": "310 hp version of the Vortec 5300 available on 4WD Silverado 1500 Extended Cabs with a standard cargo box"
+     },
+     {
+      "name": "EPA fueleconomy.gov vehicle data",
+      "url": "https://www.fueleconomy.gov/feg/download.shtml",
+      "says": "2005: 5.3 L 8-cyl, Silverado 1500 4WD (cannot separate from LM7)"
+     },
+     {
+      "name": "Wikipedia - Chevrolet Silverado (first generation) / GM LS engine",
+      "url": "https://en.wikipedia.org/wiki/Chevrolet_Silverado_(first_generation)",
+      "says": "L33 all-aluminum 5.3 HO, 310 hp, extended-cab standard-bed 4WD only, 2005-2007"
+     }
+    ],
+    "status": "three_sources_not_nhra",
+    "note": "EPA cannot tell the L33 from the LM7, so it only confirms a 5.3 V8."
+   },
+   {
+    "gen": "gmt800",
+    "cid": 325,
+    "hp": 295,
+    "hp_basis": "SAE net",
+    "rpo": "LM7",
+    "name": "5.3L / 325 V8 Hybrid",
+    "common_name": "Silverado Hybrid (PHT)",
+    "trims": [
+     "1500 extended cab short box, 2WD and 4WD"
+    ],
+    "nhra": false,
+    "sources": [
+     {
+      "name": "conceptcarz - 2005 Chevrolet Silverado Hybrid (Source - GM)",
+      "url": "https://www.conceptcarz.com/vehicle/z8357/chevrolet-silverado.aspx",
+      "says": "Silverado PHT: Vortec 5300 V-8, 295 hp"
+     },
+     {
+      "name": "EPA fueleconomy.gov vehicle data",
+      "url": "https://www.fueleconomy.gov/feg/download.shtml",
+      "says": "2005: 5.3 L 8-cyl, Silverado 15 Hybrid 2WD/4WD"
+     },
+     {
+      "name": "Wikipedia - Chevrolet Silverado (first generation) / GM LS engine",
+      "url": "https://en.wikipedia.org/wiki/Chevrolet_Silverado_(first_generation)",
+      "says": "GM launched a hybrid Silverado in 2004; 5.3 LM7; extended-cab short-bed only"
+     }
+    ],
+    "status": "three_sources_not_nhra",
+    "note": "Parallel Hybrid Truck (14 kW starter-generator), LM7 at 295 hp.",
+    "hybrid": true
+   },
+   {
+    "gen": "gmt800",
+    "cid": 364,
+    "hp": 300,
+    "hp_basis": "SAE net",
+    "rpo": "LQ4",
+    "name": "6.0L / 364 V8",
+    "common_name": "Vortec 6000",
+    "trims": [
+     "1500HD crew cab only, 2WD and 4WD"
+    ],
+    "nhra": false,
+    "sources": [
+     {
+      "name": "Wikipedia - Chevrolet Silverado (first generation) / GM LS engine",
+      "url": "https://en.wikipedia.org/wiki/Chevrolet_Silverado_(first_generation)",
+      "says": "1500HD (introduced for 2001): 6.0 Vortec 6000, 300 hp, 1999-2006 table; LQ4 1999-2007 per GM LS engine article"
+     },
+     {
+      "name": "Kelley Blue Book - 2005 Silverado 1500 HD Crew Cab specs",
+      "url": "https://www.kbb.com/chevrolet/silverado-1500hd-crew-cab/2005/specs/",
+      "says": "Silverado 1500 HD Crew Cab: V8, 6.0 Liter, 300 hp"
+     }
+    ],
+    "status": "two_sources_not_nhra",
+    "note": "Silverado 1500HD: heavy-duty half-ton crew cab (>8,500 lb GVWR, so not in EPA data). Included because it was sold under the 1500 name; drop if the page excludes HD-chassis trucks. No GM 2005 document found that names the 1500HD."
+   },
+   {
+    "gen": "gmt800",
+    "cid": 364,
+    "hp": 345,
+    "hp_basis": "SAE net",
+    "rpo": "LQ9",
+    "name": "6.0L / 364 V8 HO",
+    "common_name": "Vortec 6000 HO",
+    "trims": [
+     "SS extended cab, AWD; 2WD added mid-2005"
+    ],
+    "nhra": false,
+    "sources": [
+     {
+      "name": "Wikipedia - Chevrolet Silverado (first generation) / GM LS engine",
+      "url": "https://en.wikipedia.org/wiki/Chevrolet_Silverado_(first_generation)",
+      "says": "Silverado SS 2003-2007, 6.0 Vortec HO LQ9, 345 hp; 2WD SS from 2005; Intimidator SS 2006; VortecMAX 2006"
+     },
+     {
+      "name": "GM media - 2006 NAIAS Chevrolet truck overview (archived)",
+      "url": "https://web.archive.org/web/2006/http://media.gm.com:80/us/gm/en/news/events/autoshows/06naias/brands/chevrolet/06_NAIAS_ChevTruck_oview.htm",
+      "says": "A new Silverado SS two-wheel-drive model joined the lineup later in 2005"
+     },
+     {
+      "name": "EPA fueleconomy.gov vehicle data",
+      "url": "https://www.fueleconomy.gov/feg/download.shtml",
+      "says": "2005: 6.0 L 8-cyl, Silverado 1500 2WD and AWD"
+     }
+    ],
+    "status": "three_sources_not_nhra",
+    "note": "High-output 6.0 (10.0:1 compression, premium fuel)."
+   }
+  ],
+  "2006": [
+   {
+    "gen": "gmt800",
+    "cid": 262,
+    "hp": 195,
+    "hp_basis": "SAE net",
+    "rpo": "LU3",
+    "name": "4.3L / 262 V6",
+    "common_name": "Vortec 4300",
+    "trims": [
+     "regular cab and low-trim 2WD extended cab; 2WD and 4WD"
+    ],
+    "nhra": false,
+    "sources": [
+     {
+      "name": "GM media - 2007 Silverado Classic press kit & specs (archived)",
+      "url": "https://web.archive.org/web/20070501201020/http://media.gm.com:80/us/chevrolet/en/product_services/r_trucks/r_c_silverado_classic/index.html",
+      "says": "Vortec 4.3L V-6 (LU3) 195 hp; 2007 Classic carries \"the same lineup as 2006\""
+     },
+     {
+      "name": "EPA fueleconomy.gov vehicle data",
+      "url": "https://www.fueleconomy.gov/feg/download.shtml",
+      "says": "2006: 4.3 L 6-cyl, Silverado 1500 2WD/4WD"
+     },
+     {
+      "name": "Wikipedia - Chevrolet Silverado (first generation) / GM LS engine",
+      "url": "https://en.wikipedia.org/wiki/Chevrolet_Silverado_(first_generation)",
+      "says": "Vortec 4300 V6, 1500, 195 hp 2003-2007"
+     }
+    ],
+    "status": "three_sources_not_nhra",
+    "note": ""
+   },
+   {
+    "gen": "gmt800",
+    "cid": 293,
+    "hp": 285,
+    "hp_basis": "SAE net",
+    "rpo": "LR4",
+    "name": "4.8L / 293 V8",
+    "common_name": "Vortec 4800",
+    "trims": [
+     "1500, 2WD and 4WD"
+    ],
+    "nhra": false,
+    "sources": [
+     {
+      "name": "GM media - 2007 Silverado Classic press kit & specs (archived)",
+      "url": "https://web.archive.org/web/20070501201020/http://media.gm.com:80/us/chevrolet/en/product_services/r_trucks/r_c_silverado_classic/index.html",
+      "says": "Vortec 4.8L V-8 (LR4) 285 hp; same lineup as 2006"
+     },
+     {
+      "name": "EPA fueleconomy.gov vehicle data",
+      "url": "https://www.fueleconomy.gov/feg/download.shtml",
+      "says": "2006: 4.8 L 8-cyl, Silverado 1500 2WD/4WD"
+     },
+     {
+      "name": "Wikipedia - Chevrolet Silverado (first generation) / GM LS engine",
+      "url": "https://en.wikipedia.org/wiki/Chevrolet_Silverado_(first_generation)",
+      "says": "Vortec 4800 LR4, 1500, 285 hp"
+     }
+    ],
+    "status": "three_sources_not_nhra",
+    "note": "Rated 255 hp in 1999, 270 hp 2000-2003, 285 hp 2004-2007."
+   },
+   {
+    "gen": "gmt800",
+    "cid": 325,
+    "hp": 295,
+    "hp_basis": "SAE net",
+    "rpo": "LM7",
+    "name": "5.3L / 325 V8",
+    "common_name": "Vortec 5300",
+    "trims": [
+     "1500, 2WD and 4WD; std on LT"
+    ],
+    "nhra": false,
+    "sources": [
+     {
+      "name": "GM media - 2007 Silverado Classic press kit & specs (archived)",
+      "url": "https://web.archive.org/web/20070501201020/http://media.gm.com:80/us/chevrolet/en/product_services/r_trucks/r_c_silverado_classic/index.html",
+      "says": "Vortec 5.3L V-8 (LM7) 295 hp; same lineup as 2006"
+     },
+     {
+      "name": "EPA fueleconomy.gov vehicle data",
+      "url": "https://www.fueleconomy.gov/feg/download.shtml",
+      "says": "2006: 5.3 L 8-cyl, Silverado 1500 2WD/4WD"
+     },
+     {
+      "name": "Wikipedia - Chevrolet Silverado (first generation) / GM LS engine",
+      "url": "https://en.wikipedia.org/wiki/Chevrolet_Silverado_(first_generation)",
+      "says": "Vortec 5300 LM7, 1500, 295 hp"
+     }
+    ],
+    "status": "three_sources_not_nhra",
+    "note": "Rated 270 hp in 1999, 285 hp 2000-2003, 295 hp 2004-2007."
+   },
+   {
+    "gen": "gmt800",
+    "cid": 325,
+    "hp": 295,
+    "hp_basis": "SAE net",
+    "rpo": "L59",
+    "name": "5.3L / 325 V8 FlexFuel",
+    "common_name": "Vortec 5300 FFV",
+    "trims": [
+     "1500, 2WD and 4WD"
+    ],
+    "nhra": false,
+    "sources": [
+     {
+      "name": "GM media - 2007 Silverado Classic press kit & specs (archived)",
+      "url": "https://web.archive.org/web/20070501201020/http://media.gm.com:80/us/chevrolet/en/product_services/r_trucks/r_c_silverado_classic/index.html",
+      "says": "2007 Classic lists L59 FFV 295 hp and carries the same lineup as 2006"
+     },
+     {
+      "name": "EPA fueleconomy.gov vehicle data",
+      "url": "https://www.fueleconomy.gov/feg/download.shtml",
+      "says": "2006: 5.3 L 8-cyl FFV (flex-fuel), Silverado 1500 2WD/4WD"
+     },
+     {
+      "name": "Wikipedia - Chevrolet Silverado (first generation) / GM LS engine",
+      "url": "https://en.wikipedia.org/wiki/Chevrolet_Silverado_(first_generation)",
+      "says": "L59: flex-fuel version of the LM7, 2002-2007, 285-295 hp"
+     }
+    ],
+    "status": "three_sources_not_nhra",
+    "note": "E85-capable LM7, same rating. Wikipedia dates it from 2002, but EPA has no Silverado 1500 FFV row before 2003 and no GM document for 2002 was found, so 2002 is not recorded."
+   },
+   {
+    "gen": "gmt800",
+    "cid": 325,
+    "hp": 310,
+    "hp_basis": "SAE net",
+    "rpo": "L33",
+    "name": "5.3L / 325 V8 HO (aluminum block)",
+    "common_name": "Vortec 5300 HO",
+    "trims": [
+     "1500 extended cab standard box, 4WD only"
+    ],
+    "nhra": false,
+    "sources": [
+     {
+      "name": "GM media - 2007 Silverado Classic press kit & specs (archived)",
+      "url": "https://web.archive.org/web/20070501201020/http://media.gm.com:80/us/chevrolet/en/product_services/r_trucks/r_c_silverado_classic/index.html",
+      "says": "Vortec 5.3L V-8 (L33) 310 hp; same lineup as 2006"
+     },
+     {
+      "name": "EPA fueleconomy.gov vehicle data",
+      "url": "https://www.fueleconomy.gov/feg/download.shtml",
+      "says": "2006: 5.3 L 8-cyl, Silverado 1500 4WD (cannot separate from LM7)"
+     },
+     {
+      "name": "Wikipedia - Chevrolet Silverado (first generation) / GM LS engine",
+      "url": "https://en.wikipedia.org/wiki/Chevrolet_Silverado_(first_generation)",
+      "says": "L33 all-aluminum 5.3 HO, 310 hp, extended-cab standard-bed 4WD only, 2005-2007"
+     }
+    ],
+    "status": "three_sources_not_nhra",
+    "note": "EPA cannot tell the L33 from the LM7, so it only confirms a 5.3 V8."
+   },
+   {
+    "gen": "gmt800",
+    "cid": 325,
+    "hp": 295,
+    "hp_basis": "SAE net",
+    "rpo": "LM7",
+    "name": "5.3L / 325 V8 Hybrid",
+    "common_name": "Silverado Hybrid (PHT)",
+    "trims": [
+     "1500 extended cab short box, 2WD and 4WD"
+    ],
+    "nhra": false,
+    "sources": [
+     {
+      "name": "GM media - 2006 NAIAS Chevrolet truck overview (archived)",
+      "url": "https://web.archive.org/web/2006/http://media.gm.com:80/us/gm/en/news/events/autoshows/06naias/brands/chevrolet/06_NAIAS_ChevTruck_oview.htm",
+      "says": "2006: expanded nationwide availability of the Silverado Hybrid pickup"
+     },
+     {
+      "name": "EPA fueleconomy.gov vehicle data",
+      "url": "https://www.fueleconomy.gov/feg/download.shtml",
+      "says": "2006: 5.3 L 8-cyl, Silverado 15 Hybrid 2WD/4WD"
+     },
+     {
+      "name": "Wikipedia - Chevrolet Silverado (first generation) / GM LS engine",
+      "url": "https://en.wikipedia.org/wiki/Chevrolet_Silverado_(first_generation)",
+      "says": "GM launched a hybrid Silverado in 2004; 5.3 LM7; extended-cab short-bed only"
+     }
+    ],
+    "status": "three_sources_not_nhra",
+    "note": "Parallel Hybrid Truck (14 kW starter-generator), LM7 at 295 hp.",
+    "hybrid": true
+   },
+   {
+    "gen": "gmt800",
+    "cid": 364,
+    "hp": 300,
+    "hp_basis": "SAE net",
+    "rpo": "LQ4",
+    "name": "6.0L / 364 V8",
+    "common_name": "Vortec 6000",
+    "trims": [
+     "1500HD crew cab only, 2WD and 4WD"
+    ],
+    "nhra": false,
+    "sources": [
+     {
+      "name": "Wikipedia - Chevrolet Silverado (first generation) / GM LS engine",
+      "url": "https://en.wikipedia.org/wiki/Chevrolet_Silverado_(first_generation)",
+      "says": "1500HD (introduced for 2001): 6.0 Vortec 6000, 300 hp, 1999-2006 table; LQ4 1999-2007 per GM LS engine article"
+     },
+     {
+      "name": "GM media - 2007 Silverado Classic press kit & specs (archived)",
+      "url": "https://web.archive.org/web/20070501201020/http://media.gm.com:80/us/chevrolet/en/product_services/r_trucks/r_c_silverado_classic/index.html",
+      "says": "1500HD Crew Cab std Vortec 6.0L, LQ4 300 hp; same lineup as 2006"
+     },
+     {
+      "name": "Kelley Blue Book - 2006 Silverado 1500 HD Crew Cab specs",
+      "url": "https://www.kbb.com/chevrolet/silverado-1500hd-crew-cab/2006/specs/",
+      "says": "Silverado 1500 HD Crew Cab: V8, 6.0 Liter, 300 hp"
+     }
+    ],
+    "status": "three_sources_not_nhra",
+    "note": "Silverado 1500HD: heavy-duty half-ton crew cab (>8,500 lb GVWR, so not in EPA data). Included because it was sold under the 1500 name; drop if the page excludes HD-chassis trucks."
+   },
+   {
+    "gen": "gmt800",
+    "cid": 364,
+    "hp": 345,
+    "hp_basis": "SAE net",
+    "rpo": "LQ9",
+    "name": "6.0L / 364 V8 HO",
+    "common_name": "Vortec 6000 HO",
+    "trims": [
+     "SS (2WD and AWD)",
+     "Intimidator SS (2WD, Black Onyx; 933 built)",
+     "VortecMAX package (1500 extended/crew cab)"
+    ],
+    "nhra": false,
+    "sources": [
+     {
+      "name": "Wikipedia - Chevrolet Silverado (first generation) / GM LS engine",
+      "url": "https://en.wikipedia.org/wiki/Chevrolet_Silverado_(first_generation)",
+      "says": "Silverado SS 2003-2007, 6.0 Vortec HO LQ9, 345 hp; 2WD SS from 2005; Intimidator SS 2006; VortecMAX 2006"
+     },
+     {
+      "name": "GM media - 2006 NAIAS Chevrolet truck overview (archived)",
+      "url": "https://web.archive.org/web/2006/http://media.gm.com:80/us/gm/en/news/events/autoshows/06naias/brands/chevrolet/06_NAIAS_ChevTruck_oview.htm",
+      "says": "New VortecMAX package with Vortec 6000 for light-duty Silverado; SS continues"
+     },
+     {
+      "name": "GM media - 2007 Silverado Classic press kit & specs (archived)",
+      "url": "https://web.archive.org/web/20070501201020/http://media.gm.com:80/us/chevrolet/en/product_services/r_trucks/r_c_silverado_classic/index.html",
+      "says": "LQ9 345 hp (SS Classic & VortecMAX); same lineup as 2006"
+     },
+     {
+      "name": "EPA fueleconomy.gov vehicle data",
+      "url": "https://www.fueleconomy.gov/feg/download.shtml",
+      "says": "2006: 6.0 L 8-cyl, Silverado 1500 2WD/4WD"
+     },
+     {
+      "name": "The Auto Channel - Chevrolet/DEI announce 2006 Silverado Intimidator SS (2005-04-29)",
+      "url": "https://www.theautochannel.com/news/2005/04/29/053680.html",
+      "says": "2006 Intimidator SS: Vortec 6000 V-8, 345 hp, rear-wheel drive"
+     }
+    ],
+    "status": "three_sources_not_nhra",
+    "note": "High-output 6.0 (10.0:1 compression, premium fuel). Intimidator SS (DEI-licensed special edition) was factory-built; per Wikipedia 100 of the 1,033 planned went out as 2007 SS Classic."
+   }
+  ],
+  "2007": [
+   {
+    "gen": "gmt800",
+    "cid": 262,
+    "hp": 195,
+    "hp_basis": "SAE net",
+    "rpo": "LU3",
+    "name": "4.3L / 262 V6",
+    "common_name": "Vortec 4300",
+    "trims": [
+     "regular cab and low-trim 2WD extended cab; 2WD and 4WD (Silverado Classic)"
+    ],
+    "nhra": false,
+    "sources": [
+     {
+      "name": "GM media - 2007 Silverado Classic press kit & specs (archived)",
+      "url": "https://web.archive.org/web/20070501201020/http://media.gm.com:80/us/chevrolet/en/product_services/r_trucks/r_c_silverado_classic/index.html",
+      "says": "Vortec 4.3L V-6 (LU3) 195 hp"
+     },
+     {
+      "name": "EPA fueleconomy.gov vehicle data",
+      "url": "https://www.fueleconomy.gov/feg/download.shtml",
+      "says": "2007: 4.3 L 6-cyl, Silverado Classic 1500 2WD/4WD"
+     },
+     {
+      "name": "Wikipedia - Chevrolet Silverado (first generation) / GM LS engine",
+      "url": "https://en.wikipedia.org/wiki/Chevrolet_Silverado_(first_generation)",
+      "says": "Vortec 4300 V6, 1500, 195 hp 2003-2007"
+     }
+    ],
+    "status": "three_sources_not_nhra",
+    "note": ""
+   },
+   {
+    "gen": "gmt800",
+    "cid": 293,
+    "hp": 285,
+    "hp_basis": "SAE net",
+    "rpo": "LR4",
+    "name": "4.8L / 293 V8",
+    "common_name": "Vortec 4800",
+    "trims": [
+     "1500, 2WD and 4WD (Silverado Classic)"
+    ],
+    "nhra": false,
+    "sources": [
+     {
+      "name": "GM media - 2007 Silverado Classic press kit & specs (archived)",
+      "url": "https://web.archive.org/web/20070501201020/http://media.gm.com:80/us/chevrolet/en/product_services/r_trucks/r_c_silverado_classic/index.html",
+      "says": "Vortec 4.8L V-8 (LR4) 285 hp"
+     },
+     {
+      "name": "EPA fueleconomy.gov vehicle data",
+      "url": "https://www.fueleconomy.gov/feg/download.shtml",
+      "says": "2007: 4.8 L 8-cyl, Silverado Classic 1500 2WD/4WD"
+     },
+     {
+      "name": "Wikipedia - Chevrolet Silverado (first generation) / GM LS engine",
+      "url": "https://en.wikipedia.org/wiki/Chevrolet_Silverado_(first_generation)",
+      "says": "Vortec 4800 LR4, 1500, 285 hp"
+     }
+    ],
+    "status": "three_sources_not_nhra",
+    "note": "Rated 255 hp in 1999, 270 hp 2000-2003, 285 hp 2004-2007."
+   },
+   {
+    "gen": "gmt800",
+    "cid": 325,
+    "hp": 295,
+    "hp_basis": "SAE net",
+    "rpo": "LM7",
+    "name": "5.3L / 325 V8",
+    "common_name": "Vortec 5300",
+    "trims": [
+     "1500, 2WD and 4WD; std on LT (Silverado Classic)"
+    ],
+    "nhra": false,
+    "sources": [
+     {
+      "name": "GM media - 2007 Silverado Classic press kit & specs (archived)",
+      "url": "https://web.archive.org/web/20070501201020/http://media.gm.com:80/us/chevrolet/en/product_services/r_trucks/r_c_silverado_classic/index.html",
+      "says": "Vortec 5.3L V-8 (LM7) 295 hp"
+     },
+     {
+      "name": "EPA fueleconomy.gov vehicle data",
+      "url": "https://www.fueleconomy.gov/feg/download.shtml",
+      "says": "2007: 5.3 L 8-cyl, Silverado Classic 1500 2WD/4WD"
+     },
+     {
+      "name": "Wikipedia - Chevrolet Silverado (first generation) / GM LS engine",
+      "url": "https://en.wikipedia.org/wiki/Chevrolet_Silverado_(first_generation)",
+      "says": "Vortec 5300 LM7, 1500, 295 hp"
+     }
+    ],
+    "status": "three_sources_not_nhra",
+    "note": "Rated 270 hp in 1999, 285 hp 2000-2003, 295 hp 2004-2007."
+   },
+   {
+    "gen": "gmt800",
+    "cid": 325,
+    "hp": 295,
+    "hp_basis": "SAE net",
+    "rpo": "L59",
+    "name": "5.3L / 325 V8 FlexFuel",
+    "common_name": "Vortec 5300 FFV",
+    "trims": [
+     "1500, 2WD and 4WD (Silverado Classic)"
+    ],
+    "nhra": false,
+    "sources": [
+     {
+      "name": "GM media - 2007 Silverado Classic press kit & specs (archived)",
+      "url": "https://web.archive.org/web/20070501201020/http://media.gm.com:80/us/chevrolet/en/product_services/r_trucks/r_c_silverado_classic/index.html",
+      "says": "Vortec 5.3L V-8 (L59) Flexible Fuel, 295 hp"
+     },
+     {
+      "name": "EPA fueleconomy.gov vehicle data",
+      "url": "https://www.fueleconomy.gov/feg/download.shtml",
+      "says": "2007: 5.3 L 8-cyl FFV (flex-fuel), Silverado Classic 1500 2WD/4WD"
+     },
+     {
+      "name": "Wikipedia - Chevrolet Silverado (first generation) / GM LS engine",
+      "url": "https://en.wikipedia.org/wiki/Chevrolet_Silverado_(first_generation)",
+      "says": "L59: flex-fuel version of the LM7, 2002-2007, 285-295 hp"
+     }
+    ],
+    "status": "three_sources_not_nhra",
+    "note": "E85-capable LM7, same rating. Wikipedia dates it from 2002, but EPA has no Silverado 1500 FFV row before 2003 and no GM document for 2002 was found, so 2002 is not recorded."
+   },
+   {
+    "gen": "gmt800",
+    "cid": 325,
+    "hp": 310,
+    "hp_basis": "SAE net",
+    "rpo": "L33",
+    "name": "5.3L / 325 V8 HO (aluminum block)",
+    "common_name": "Vortec 5300 HO",
+    "trims": [
+     "1500 extended cab standard box, 4WD only (Silverado Classic)"
+    ],
+    "nhra": false,
+    "sources": [
+     {
+      "name": "GM media - 2007 Silverado Classic press kit & specs (archived)",
+      "url": "https://web.archive.org/web/20070501201020/http://media.gm.com:80/us/chevrolet/en/product_services/r_trucks/r_c_silverado_classic/index.html",
+      "says": "Vortec 5.3L V-8 (L33) 310 hp"
+     },
+     {
+      "name": "EPA fueleconomy.gov vehicle data",
+      "url": "https://www.fueleconomy.gov/feg/download.shtml",
+      "says": "2007: 5.3 L 8-cyl, Silverado Classic 1500 4WD (cannot separate from LM7)"
+     },
+     {
+      "name": "Wikipedia - Chevrolet Silverado (first generation) / GM LS engine",
+      "url": "https://en.wikipedia.org/wiki/Chevrolet_Silverado_(first_generation)",
+      "says": "L33 all-aluminum 5.3 HO, 310 hp, extended-cab standard-bed 4WD only, 2005-2007"
+     }
+    ],
+    "status": "three_sources_not_nhra",
+    "note": "EPA cannot tell the L33 from the LM7, so it only confirms a 5.3 V8."
+   },
+   {
+    "gen": "gmt800",
+    "cid": 325,
+    "hp": 295,
+    "hp_basis": "SAE net",
+    "rpo": "LM7",
+    "name": "5.3L / 325 V8 Hybrid",
+    "common_name": "Silverado Hybrid (PHT)",
+    "trims": [
+     "1500 extended cab short box, 2WD and 4WD (Silverado Classic)"
+    ],
+    "nhra": false,
+    "sources": [
+     {
+      "name": "GM media - 2007 Silverado Classic press kit & specs (archived)",
+      "url": "https://web.archive.org/web/20070501201020/http://media.gm.com:80/us/chevrolet/en/product_services/r_trucks/r_c_silverado_classic/index.html",
+      "says": "Silverado 1500 Hybrid Classic: Vortec 5.3L V-8 (LM7), 295 hp"
+     },
+     {
+      "name": "EPA fueleconomy.gov vehicle data",
+      "url": "https://www.fueleconomy.gov/feg/download.shtml",
+      "says": "2007: 5.3 L 8-cyl, Silverado Classic 15 Hybrid 2WD/4WD"
+     },
+     {
+      "name": "Wikipedia - Chevrolet Silverado (first generation) / GM LS engine",
+      "url": "https://en.wikipedia.org/wiki/Chevrolet_Silverado_(first_generation)",
+      "says": "GM launched a hybrid Silverado in 2004; 5.3 LM7; extended-cab short-bed only"
+     }
+    ],
+    "status": "three_sources_not_nhra",
+    "note": "Parallel Hybrid Truck (14 kW starter-generator), LM7 at 295 hp.",
+    "hybrid": true
+   },
+   {
+    "gen": "gmt800",
+    "cid": 364,
+    "hp": 300,
+    "hp_basis": "SAE net",
+    "rpo": "LQ4",
+    "name": "6.0L / 364 V8",
+    "common_name": "Vortec 6000",
+    "trims": [
+     "1500HD crew cab only, 2WD and 4WD (Silverado Classic)"
+    ],
+    "nhra": false,
+    "sources": [
+     {
+      "name": "Wikipedia - Chevrolet Silverado (first generation) / GM LS engine",
+      "url": "https://en.wikipedia.org/wiki/Chevrolet_Silverado_(first_generation)",
+      "says": "1500HD (introduced for 2001): 6.0 Vortec 6000, 300 hp, 1999-2006 table; LQ4 1999-2007 per GM LS engine article"
+     },
+     {
+      "name": "GM media - 2007 Silverado Classic press kit & specs (archived)",
+      "url": "https://web.archive.org/web/20070501201020/http://media.gm.com:80/us/chevrolet/en/product_services/r_trucks/r_c_silverado_classic/index.html",
+      "says": "1500HD Crew Cab Short Box: Vortec 6.0L standard; LQ4 300 hp"
+     }
+    ],
+    "status": "two_sources_not_nhra",
+    "note": "Silverado 1500HD: heavy-duty half-ton crew cab (>8,500 lb GVWR, so not in EPA data). Included because it was sold under the 1500 name; drop if the page excludes HD-chassis trucks. 2007 Classic only."
+   },
+   {
+    "gen": "gmt800",
+    "cid": 364,
+    "hp": 345,
+    "hp_basis": "SAE net",
+    "rpo": "LQ9",
+    "name": "6.0L / 364 V8 HO",
+    "common_name": "Vortec 6000 HO",
+    "trims": [
+     "SS Classic (2WD and AWD)",
+     "VortecMAX package (Classic extended/crew cab)"
+    ],
+    "nhra": false,
+    "sources": [
+     {
+      "name": "Wikipedia - Chevrolet Silverado (first generation) / GM LS engine",
+      "url": "https://en.wikipedia.org/wiki/Chevrolet_Silverado_(first_generation)",
+      "says": "Silverado SS 2003-2007, 6.0 Vortec HO LQ9, 345 hp; 2WD SS from 2005; Intimidator SS 2006; VortecMAX 2006"
+     },
+     {
+      "name": "GM media - 2007 Silverado Classic press kit & specs (archived)",
+      "url": "https://web.archive.org/web/20070501201020/http://media.gm.com:80/us/chevrolet/en/product_services/r_trucks/r_c_silverado_classic/index.html",
+      "says": "Vortec 6.0L (LQ9) 345 hp: Silverado SS Classic (2WD and AWD) and VortecMAX package"
+     },
+     {
+      "name": "EPA fueleconomy.gov vehicle data",
+      "url": "https://www.fueleconomy.gov/feg/download.shtml",
+      "says": "2007: 6.0 L 8-cyl, Silverado Classic 1500 2WD/4WD"
+     }
+    ],
+    "status": "three_sources_not_nhra",
+    "note": "High-output 6.0 (10.0:1 compression, premium fuel)."
+   },
+   {
+    "gen": "gmt900",
+    "cid": 262,
+    "hp": 195,
+    "hp_basis": "SAE net",
+    "rpo": "LU3",
+    "name": "4.3L / 262 V6",
+    "common_name": "Vortec 4300",
+    "trims": [
+     "Work Truck regular cab and 2WD extended cab"
+    ],
+    "nhra": false,
+    "sources": [
+     {
+      "name": "GM media - 2007 Silverado (GMT900) press kit & cab specs (archived)",
+      "url": "https://web.archive.org/web/2007/http://media.gm.com:80/us/chevrolet/en/product_services/r_trucks/r_c_silverado/07index.html",
+      "says": "Vortec 4.3L V-6 (LU3) 195 hp"
+     },
+     {
+      "name": "EPA fueleconomy.gov vehicle data",
+      "url": "https://www.fueleconomy.gov/feg/download.shtml",
+      "says": "2007: 4.3 L 6-cyl (Silverado C15/K15)"
+     },
+     {
+      "name": "Wikipedia - Chevrolet Silverado (second generation) / GM LS engine",
+      "url": "https://en.wikipedia.org/wiki/Chevrolet_Silverado_(second_generation)",
+      "says": "4.3 Vortec 4300 V6, 195 hp, 1500 2007-2013"
+     }
+    ],
+    "status": "three_sources_not_nhra",
+    "note": ""
+   },
+   {
+    "gen": "gmt900",
+    "cid": 293,
+    "hp": 295,
+    "hp_basis": "SAE net",
+    "rpo": "LY2",
+    "name": "4.8L / 293 V8",
+    "common_name": "Vortec 4800",
+    "trims": [
+     "1500, 2WD and 4WD"
+    ],
+    "nhra": false,
+    "sources": [
+     {
+      "name": "GM media - 2007 Silverado (GMT900) press kit & cab specs (archived)",
+      "url": "https://web.archive.org/web/2007/http://media.gm.com:80/us/chevrolet/en/product_services/r_trucks/r_c_silverado/07index.html",
+      "says": "Vortec 4.8L V-8 (LY2), iron block, 295 hp"
+     },
+     {
+      "name": "EPA fueleconomy.gov vehicle data",
+      "url": "https://www.fueleconomy.gov/feg/download.shtml",
+      "says": "2007: 4.8 L 8-cyl (Silverado C15/K15)"
+     },
+     {
+      "name": "Wikipedia - Chevrolet Silverado (second generation) / GM LS engine",
+      "url": "https://en.wikipedia.org/wiki/Chevrolet_Silverado_(second_generation)",
+      "says": "4.8 Vortec 4800 295 hp; LY2 2007-2009 per GM LS engine article"
+     }
+    ],
+    "status": "three_sources_not_nhra",
+    "note": ""
+   },
+   {
+    "gen": "gmt900",
+    "cid": 325,
+    "hp": 315,
+    "hp_basis": "SAE net",
+    "rpo": "LY5",
+    "name": "5.3L / 325 V8 (iron block, AFM)",
+    "common_name": "Vortec 5300",
+    "trims": [
+     "1500 2WD and 4WD except 4WD crew cab"
+    ],
+    "nhra": false,
+    "sources": [
+     {
+      "name": "GM media - 2007 Silverado (GMT900) press kit & cab specs (archived)",
+      "url": "https://web.archive.org/web/2007/http://media.gm.com:80/us/chevrolet/en/product_services/r_trucks/r_c_silverado/07index.html",
+      "says": "5.3L V-8 (LY5), iron block, Active Fuel Management, 315 hp"
+     },
+     {
+      "name": "EPA fueleconomy.gov vehicle data",
+      "url": "https://www.fueleconomy.gov/feg/download.shtml",
+      "says": "2007: 5.3 L 8-cyl (cannot separate 5.3 variants) (Silverado C15/K15)"
+     },
+     {
+      "name": "Wikipedia - Chevrolet Silverado (second generation) / GM LS engine",
+      "url": "https://en.wikipedia.org/wiki/Chevrolet_Silverado_(second_generation)",
+      "says": "LY5 2007-2009 Silverado 1500, 315-320 hp"
+     }
+    ],
+    "status": "three_sources_not_nhra",
+    "note": ""
+   },
+   {
+    "gen": "gmt900",
+    "cid": 325,
+    "hp": 315,
+    "hp_basis": "SAE net",
+    "rpo": "LH6",
+    "name": "5.3L / 325 V8 (aluminum block, AFM)",
+    "common_name": "Vortec 5300",
+    "trims": [
+     "4WD crew cab"
+    ],
+    "nhra": false,
+    "sources": [
+     {
+      "name": "GM media - 2007 Silverado (GMT900) press kit & cab specs (archived)",
+      "url": "https://web.archive.org/web/2007/http://media.gm.com:80/us/chevrolet/en/product_services/r_trucks/r_c_silverado/07index.html",
+      "says": "5.3L V-8 (LH6), aluminum block, AFM, 315 hp; 4WD crew cab"
+     },
+     {
+      "name": "EPA fueleconomy.gov vehicle data",
+      "url": "https://www.fueleconomy.gov/feg/download.shtml",
+      "says": "2007: 5.3 L 8-cyl (Silverado C15/K15)"
+     },
+     {
+      "name": "Wikipedia - Chevrolet Silverado (second generation) / GM LS engine",
+      "url": "https://en.wikipedia.org/wiki/Chevrolet_Silverado_(second_generation)",
+      "says": "LH6 aluminum-block counterpart to the LY5, 300-315 hp"
+     }
+    ],
+    "status": "three_sources_not_nhra",
+    "note": "EPA cannot separate the 5.3 variants."
+   },
+   {
+    "gen": "gmt900",
+    "cid": 325,
+    "hp": 315,
+    "hp_basis": "SAE net",
+    "rpo": "LMG",
+    "name": "5.3L / 325 V8 FlexFuel (iron block)",
+    "common_name": "Vortec 5300 FlexFuel",
+    "trims": [
+     "1500, 2WD and 4WD"
+    ],
+    "nhra": false,
+    "sources": [
+     {
+      "name": "GM media - 2007 Silverado (GMT900) press kit & cab specs (archived)",
+      "url": "https://web.archive.org/web/2007/http://media.gm.com:80/us/chevrolet/en/product_services/r_trucks/r_c_silverado/07index.html",
+      "says": "5.3L FlexFuel V-8 (LMG), iron block, AFM, 315 hp"
+     },
+     {
+      "name": "EPA fueleconomy.gov vehicle data",
+      "url": "https://www.fueleconomy.gov/feg/download.shtml",
+      "says": "2007: 5.3 L 8-cyl FFV (Silverado C15/K15)"
+     },
+     {
+      "name": "Wikipedia - Chevrolet Silverado (second generation) / GM LS engine",
+      "url": "https://en.wikipedia.org/wiki/Chevrolet_Silverado_(second_generation)",
+      "says": "LMG 2007-2013 Silverado 1500, 315-320 hp"
+     }
+    ],
+    "status": "three_sources_not_nhra",
+    "note": ""
+   },
+   {
+    "gen": "gmt900",
+    "cid": 325,
+    "hp": 315,
+    "hp_basis": "SAE net",
+    "rpo": "LC9",
+    "name": "5.3L / 325 V8 FlexFuel (aluminum block)",
+    "common_name": "Vortec 5300 FlexFuel",
+    "trims": [
+     "4WD crew cab"
+    ],
+    "nhra": false,
+    "sources": [
+     {
+      "name": "GM media - 2007 Silverado (GMT900) press kit & cab specs (archived)",
+      "url": "https://web.archive.org/web/2007/http://media.gm.com:80/us/chevrolet/en/product_services/r_trucks/r_c_silverado/07index.html",
+      "says": "5.3L FlexFuel V-8 (LC9), aluminum block, 315 hp"
+     },
+     {
+      "name": "EPA fueleconomy.gov vehicle data",
+      "url": "https://www.fueleconomy.gov/feg/download.shtml",
+      "says": "2007: 5.3 L 8-cyl FFV (Silverado C15/K15)"
+     },
+     {
+      "name": "Wikipedia - Chevrolet Silverado (second generation) / GM LS engine",
+      "url": "https://en.wikipedia.org/wiki/Chevrolet_Silverado_(second_generation)",
+      "says": "LC9 2007-2014 flex-fuel aluminum 5.3, Silverado 1500 4WD, 315 hp"
+     }
+    ],
+    "status": "three_sources_not_nhra",
+    "note": ""
+   },
+   {
+    "gen": "gmt900",
+    "cid": 364,
+    "hp": 367,
+    "hp_basis": "SAE net",
+    "rpo": "L76",
+    "name": "6.0L / 364 V8",
+    "common_name": "Vortec 6000",
+    "trims": [
+     "LT/LTZ extended and crew cab with max trailering package"
+    ],
+    "nhra": false,
+    "sources": [
+     {
+      "name": "GM media - 2007 Silverado (GMT900) press kit & cab specs (archived)",
+      "url": "https://web.archive.org/web/2007/http://media.gm.com:80/us/chevrolet/en/product_services/r_trucks/r_c_silverado/07index.html",
+      "says": "6.0L V-8 (L76), aluminum block, VVT, AFM, 367 hp; LT/LTZ ext and crew cab, max trailering package"
+     },
+     {
+      "name": "EPA fueleconomy.gov vehicle data",
+      "url": "https://www.fueleconomy.gov/feg/download.shtml",
+      "says": "2007: 6.0 L 8-cyl (Silverado C15/K15)"
+     },
+     {
+      "name": "Wikipedia - Chevrolet Silverado (second generation) / GM LS engine",
+      "url": "https://en.wikipedia.org/wiki/Chevrolet_Silverado_(second_generation)",
+      "says": "6.0 Vortec 6000 367 hp, 1500 2007-2009; L76 per GM LS engine article"
+     }
+    ],
+    "status": "three_sources_not_nhra",
+    "note": ""
+   }
+  ],
+  "2008": [
+   {
+    "gen": "gmt900",
+    "cid": 262,
+    "hp": 195,
+    "hp_basis": "SAE net",
+    "rpo": "LU3",
+    "name": "4.3L / 262 V6",
+    "common_name": "Vortec 4300",
+    "trims": [
+     "Work Truck regular cab and 2WD extended cab"
+    ],
+    "nhra": false,
+    "sources": [
+     {
+      "name": "GM media - 2008 Silverado 1500 press kit (archived)",
+      "url": "https://web.archive.org/web/2008/http://media.gm.com:80/us/chevrolet/en/product_services/r_trucks/r_c_silverado/08index.html",
+      "says": "Vortec 4.3L V-6 (LU3) 195 hp"
+     },
+     {
+      "name": "EPA fueleconomy.gov vehicle data",
+      "url": "https://www.fueleconomy.gov/feg/download.shtml",
+      "says": "2008: 4.3 L 6-cyl (Silverado C15/K15)"
+     },
+     {
+      "name": "Wikipedia - Chevrolet Silverado (second generation) / GM LS engine",
+      "url": "https://en.wikipedia.org/wiki/Chevrolet_Silverado_(second_generation)",
+      "says": "4.3 Vortec 4300 V6, 195 hp, 1500 2007-2013"
+     }
+    ],
+    "status": "three_sources_not_nhra",
+    "note": ""
+   },
+   {
+    "gen": "gmt900",
+    "cid": 293,
+    "hp": 295,
+    "hp_basis": "SAE net",
+    "rpo": "LY2",
+    "name": "4.8L / 293 V8",
+    "common_name": "Vortec 4800",
+    "trims": [
+     "1500, 2WD and 4WD"
+    ],
+    "nhra": false,
+    "sources": [
+     {
+      "name": "GM media - 2008 Silverado 1500 press kit (archived)",
+      "url": "https://web.archive.org/web/2008/http://media.gm.com:80/us/chevrolet/en/product_services/r_trucks/r_c_silverado/08index.html",
+      "says": "Vortec 4.8L V-8 (LY2), iron block, 295 hp"
+     },
+     {
+      "name": "EPA fueleconomy.gov vehicle data",
+      "url": "https://www.fueleconomy.gov/feg/download.shtml",
+      "says": "2008: 4.8 L 8-cyl (Silverado C15/K15)"
+     },
+     {
+      "name": "Wikipedia - Chevrolet Silverado (second generation) / GM LS engine",
+      "url": "https://en.wikipedia.org/wiki/Chevrolet_Silverado_(second_generation)",
+      "says": "4.8 Vortec 4800 295 hp; LY2 2007-2009 per GM LS engine article"
+     }
+    ],
+    "status": "three_sources_not_nhra",
+    "note": ""
+   },
+   {
+    "gen": "gmt900",
+    "cid": 325,
+    "hp": 315,
+    "hp_basis": "SAE net",
+    "rpo": "LY5",
+    "name": "5.3L / 325 V8 (iron block, AFM)",
+    "common_name": "Vortec 5300",
+    "trims": [
+     "1500 2WD and 4WD except 4WD crew cab"
+    ],
+    "nhra": false,
+    "sources": [
+     {
+      "name": "GM media - 2008 Silverado 1500 press kit (archived)",
+      "url": "https://web.archive.org/web/2008/http://media.gm.com:80/us/chevrolet/en/product_services/r_trucks/r_c_silverado/08index.html",
+      "says": "5.3L V-8 (LY5), iron block, Active Fuel Management, 315 hp"
+     },
+     {
+      "name": "EPA fueleconomy.gov vehicle data",
+      "url": "https://www.fueleconomy.gov/feg/download.shtml",
+      "says": "2008: 5.3 L 8-cyl (cannot separate 5.3 variants) (Silverado C15/K15)"
+     },
+     {
+      "name": "Wikipedia - Chevrolet Silverado (second generation) / GM LS engine",
+      "url": "https://en.wikipedia.org/wiki/Chevrolet_Silverado_(second_generation)",
+      "says": "LY5 2007-2009 Silverado 1500, 315-320 hp"
+     }
+    ],
+    "status": "three_sources_not_nhra",
+    "note": ""
+   },
+   {
+    "gen": "gmt900",
+    "cid": 325,
+    "hp": 315,
+    "hp_basis": "SAE net",
+    "rpo": "LH6",
+    "name": "5.3L / 325 V8 (aluminum block, AFM)",
+    "common_name": "Vortec 5300",
+    "trims": [
+     "4WD crew cab"
+    ],
+    "nhra": false,
+    "sources": [
+     {
+      "name": "GM media - 2008 Silverado 1500 press kit (archived)",
+      "url": "https://web.archive.org/web/2008/http://media.gm.com:80/us/chevrolet/en/product_services/r_trucks/r_c_silverado/08index.html",
+      "says": "5.3L V-8 (LH6), aluminum block, AFM, 315 hp; 4WD crew cab"
+     },
+     {
+      "name": "EPA fueleconomy.gov vehicle data",
+      "url": "https://www.fueleconomy.gov/feg/download.shtml",
+      "says": "2008: 5.3 L 8-cyl (Silverado C15/K15)"
+     },
+     {
+      "name": "Wikipedia - Chevrolet Silverado (second generation) / GM LS engine",
+      "url": "https://en.wikipedia.org/wiki/Chevrolet_Silverado_(second_generation)",
+      "says": "LH6 aluminum-block counterpart to the LY5, 300-315 hp"
+     }
+    ],
+    "status": "three_sources_not_nhra",
+    "note": "EPA cannot separate the 5.3 variants."
+   },
+   {
+    "gen": "gmt900",
+    "cid": 325,
+    "hp": 315,
+    "hp_basis": "SAE net",
+    "rpo": "LMG",
+    "name": "5.3L / 325 V8 FlexFuel (iron block)",
+    "common_name": "Vortec 5300 FlexFuel",
+    "trims": [
+     "1500, 2WD and 4WD"
+    ],
+    "nhra": false,
+    "sources": [
+     {
+      "name": "GM media - 2008 Silverado 1500 press kit (archived)",
+      "url": "https://web.archive.org/web/2008/http://media.gm.com:80/us/chevrolet/en/product_services/r_trucks/r_c_silverado/08index.html",
+      "says": "5.3L FlexFuel V-8 (LMG), iron block, AFM, 315 hp"
+     },
+     {
+      "name": "EPA fueleconomy.gov vehicle data",
+      "url": "https://www.fueleconomy.gov/feg/download.shtml",
+      "says": "2008: 5.3 L 8-cyl FFV (Silverado C15/K15)"
+     },
+     {
+      "name": "Wikipedia - Chevrolet Silverado (second generation) / GM LS engine",
+      "url": "https://en.wikipedia.org/wiki/Chevrolet_Silverado_(second_generation)",
+      "says": "LMG 2007-2013 Silverado 1500, 315-320 hp"
+     }
+    ],
+    "status": "three_sources_not_nhra",
+    "note": "GM 2008 lineup table misprints the LMG as \"LM6\"."
+   },
+   {
+    "gen": "gmt900",
+    "cid": 325,
+    "hp": 315,
+    "hp_basis": "SAE net",
+    "rpo": "LC9",
+    "name": "5.3L / 325 V8 FlexFuel (aluminum block)",
+    "common_name": "Vortec 5300 FlexFuel",
+    "trims": [
+     "4WD crew cab"
+    ],
+    "nhra": false,
+    "sources": [
+     {
+      "name": "GM media - 2008 Silverado 1500 press kit (archived)",
+      "url": "https://web.archive.org/web/2008/http://media.gm.com:80/us/chevrolet/en/product_services/r_trucks/r_c_silverado/08index.html",
+      "says": "5.3L FlexFuel V-8 (LC9), aluminum block, 315 hp"
+     },
+     {
+      "name": "EPA fueleconomy.gov vehicle data",
+      "url": "https://www.fueleconomy.gov/feg/download.shtml",
+      "says": "2008: 5.3 L 8-cyl FFV (Silverado C15/K15)"
+     },
+     {
+      "name": "Wikipedia - Chevrolet Silverado (second generation) / GM LS engine",
+      "url": "https://en.wikipedia.org/wiki/Chevrolet_Silverado_(second_generation)",
+      "says": "LC9 2007-2014 flex-fuel aluminum 5.3, Silverado 1500 4WD, 315 hp"
+     }
+    ],
+    "status": "three_sources_not_nhra",
+    "note": ""
+   },
+   {
+    "gen": "gmt900",
+    "cid": 364,
+    "hp": 367,
+    "hp_basis": "SAE net",
+    "rpo": "L76",
+    "name": "6.0L / 364 V8",
+    "common_name": "Vortec 6000",
+    "trims": [
+     "LT/LTZ extended and crew cab with max trailering package"
+    ],
+    "nhra": false,
+    "sources": [
+     {
+      "name": "GM media - 2008 Silverado 1500 press kit (archived)",
+      "url": "https://web.archive.org/web/2008/http://media.gm.com:80/us/chevrolet/en/product_services/r_trucks/r_c_silverado/08index.html",
+      "says": "6.0L V-8 (L76), aluminum block, VVT, AFM, 367 hp; LT/LTZ ext and crew cab, max trailering package"
+     },
+     {
+      "name": "EPA fueleconomy.gov vehicle data",
+      "url": "https://www.fueleconomy.gov/feg/download.shtml",
+      "says": "2008: 6.0 L 8-cyl (Silverado C15/K15)"
+     },
+     {
+      "name": "Wikipedia - Chevrolet Silverado (second generation) / GM LS engine",
+      "url": "https://en.wikipedia.org/wiki/Chevrolet_Silverado_(second_generation)",
+      "says": "6.0 Vortec 6000 367 hp, 1500 2007-2009; L76 per GM LS engine article"
+     }
+    ],
+    "status": "three_sources_not_nhra",
+    "note": ""
+   }
+  ],
+  "2009": [
+   {
+    "gen": "gmt900",
+    "cid": 262,
+    "hp": 195,
+    "hp_basis": "SAE net",
+    "rpo": "LU3",
+    "name": "4.3L / 262 V6",
+    "common_name": "Vortec 4300",
+    "trims": [
+     "Work Truck regular cab and 2WD extended cab"
+    ],
+    "nhra": false,
+    "sources": [
+     {
+      "name": "GM media - 2009 Silverado 1500 press kit / specs (archived)",
+      "url": "https://web.archive.org/web/2009/http://media.gm.com:80/us/chevrolet/en/product_services/r_trucks/r_c_silverado/09index.html",
+      "says": "Vortec 4.3L V-6 (LU3) 195 hp"
+     },
+     {
+      "name": "EPA fueleconomy.gov vehicle data",
+      "url": "https://www.fueleconomy.gov/feg/download.shtml",
+      "says": "2009: 4.3 L 6-cyl (Silverado C15/K15)"
+     },
+     {
+      "name": "Wikipedia - Chevrolet Silverado (second generation) / GM LS engine",
+      "url": "https://en.wikipedia.org/wiki/Chevrolet_Silverado_(second_generation)",
+      "says": "4.3 Vortec 4300 V6, 195 hp, 1500 2007-2013"
+     }
+    ],
+    "status": "three_sources_not_nhra",
+    "note": ""
+   },
+   {
+    "gen": "gmt900",
+    "cid": 293,
+    "hp": 295,
+    "hp_basis": "SAE net",
+    "rpo": "LY2",
+    "name": "4.8L / 293 V8",
+    "common_name": "Vortec 4800",
+    "trims": [
+     "1500, 2WD and 4WD"
+    ],
+    "nhra": false,
+    "sources": [
+     {
+      "name": "GM media - 2009 Silverado 1500 press kit / specs (archived)",
+      "url": "https://web.archive.org/web/2009/http://media.gm.com:80/us/chevrolet/en/product_services/r_trucks/r_c_silverado/09index.html",
+      "says": "Vortec 4.8L V-8 (LY2), iron block, 295 hp"
+     },
+     {
+      "name": "EPA fueleconomy.gov vehicle data",
+      "url": "https://www.fueleconomy.gov/feg/download.shtml",
+      "says": "2009: 4.8 L 8-cyl (Silverado C15/K15)"
+     },
+     {
+      "name": "Wikipedia - Chevrolet Silverado (second generation) / GM LS engine",
+      "url": "https://en.wikipedia.org/wiki/Chevrolet_Silverado_(second_generation)",
+      "says": "4.8 Vortec 4800 295 hp; LY2 2007-2009 per GM LS engine article"
+     }
+    ],
+    "status": "three_sources_not_nhra",
+    "note": ""
+   },
+   {
+    "gen": "gmt900",
+    "cid": 325,
+    "hp": 315,
+    "hp_basis": "SAE net",
+    "rpo": "LY5",
+    "name": "5.3L / 325 V8 (iron block, AFM)",
+    "common_name": "Vortec 5300",
+    "trims": [
+     "1500 2WD and 4WD except 4WD crew cab"
+    ],
+    "nhra": false,
+    "sources": [
+     {
+      "name": "GM media - 2009 Silverado 1500 press kit / specs (archived)",
+      "url": "https://web.archive.org/web/2009/http://media.gm.com:80/us/chevrolet/en/product_services/r_trucks/r_c_silverado/09index.html",
+      "says": "5.3L V-8 (LY5), iron block, Active Fuel Management, 315 hp"
+     },
+     {
+      "name": "EPA fueleconomy.gov vehicle data",
+      "url": "https://www.fueleconomy.gov/feg/download.shtml",
+      "says": "2009: 5.3 L 8-cyl (cannot separate 5.3 variants) (Silverado C15/K15)"
+     },
+     {
+      "name": "Wikipedia - Chevrolet Silverado (second generation) / GM LS engine",
+      "url": "https://en.wikipedia.org/wiki/Chevrolet_Silverado_(second_generation)",
+      "says": "LY5 2007-2009 Silverado 1500, 315-320 hp"
+     }
+    ],
+    "status": "three_sources_not_nhra",
+    "note": ""
+   },
+   {
+    "gen": "gmt900",
+    "cid": 325,
+    "hp": 315,
+    "hp_basis": "SAE net",
+    "rpo": "LH6",
+    "name": "5.3L / 325 V8 (aluminum block, AFM)",
+    "common_name": "Vortec 5300",
+    "trims": [
+     "4WD crew cab"
+    ],
+    "nhra": false,
+    "sources": [
+     {
+      "name": "GM media - 2009 Silverado 1500 press kit / specs (archived)",
+      "url": "https://web.archive.org/web/2009/http://media.gm.com:80/us/chevrolet/en/product_services/r_trucks/r_c_silverado/09index.html",
+      "says": "5.3L V-8 (LH6), aluminum block, AFM, 315 hp; 4WD crew cab"
+     },
+     {
+      "name": "EPA fueleconomy.gov vehicle data",
+      "url": "https://www.fueleconomy.gov/feg/download.shtml",
+      "says": "2009: 5.3 L 8-cyl (Silverado C15/K15)"
+     },
+     {
+      "name": "Wikipedia - Chevrolet Silverado (second generation) / GM LS engine",
+      "url": "https://en.wikipedia.org/wiki/Chevrolet_Silverado_(second_generation)",
+      "says": "LH6 aluminum-block counterpart to the LY5, 300-315 hp"
+     }
+    ],
+    "status": "three_sources_not_nhra",
+    "note": "EPA cannot separate the 5.3 variants."
+   },
+   {
+    "gen": "gmt900",
+    "cid": 325,
+    "hp": 320,
+    "hp_basis": "SAE net",
+    "rpo": "LMG",
+    "name": "5.3L / 325 V8 FlexFuel (iron block)",
+    "common_name": "Vortec 5300 FlexFuel",
+    "trims": [
+     "1500, 2WD and 4WD"
+    ],
+    "nhra": false,
+    "sources": [
+     {
+      "name": "GM media - 2009 Silverado 1500 press kit / specs (archived)",
+      "url": "https://web.archive.org/web/2009/http://media.gm.com:80/us/chevrolet/en/product_services/r_trucks/r_c_silverado/09index.html",
+      "says": "5.3L FlexFuel V-8 (LMG), iron block, AFM, 320 hp / 340 lb-ft"
+     },
+     {
+      "name": "EPA fueleconomy.gov vehicle data",
+      "url": "https://www.fueleconomy.gov/feg/download.shtml",
+      "says": "2009: 5.3 L 8-cyl FFV (Silverado C15/K15)"
+     },
+     {
+      "name": "Wikipedia - Chevrolet Silverado (second generation) / GM LS engine",
+      "url": "https://en.wikipedia.org/wiki/Chevrolet_Silverado_(second_generation)",
+      "says": "LMG 2007-2013 Silverado 1500, 315-320 hp"
+     }
+    ],
+    "status": "three_sources_not_nhra",
+    "note": "GM 2009 kit rates the LMG at 320 hp / 340 lb-ft while the other 5.3s stay at 315; the 2010 sheet is back to 315 hp (326 on E85). Recorded 320 for 2009."
+   },
+   {
+    "gen": "gmt900",
+    "cid": 325,
+    "hp": 315,
+    "hp_basis": "SAE net",
+    "rpo": "LC9",
+    "name": "5.3L / 325 V8 FlexFuel (aluminum block)",
+    "common_name": "Vortec 5300 FlexFuel",
+    "trims": [
+     "4WD crew cab; XFE 2WD crew cab"
+    ],
+    "nhra": false,
+    "sources": [
+     {
+      "name": "GM media - 2009 Silverado 1500 press kit / specs (archived)",
+      "url": "https://web.archive.org/web/2009/http://media.gm.com:80/us/chevrolet/en/product_services/r_trucks/r_c_silverado/09index.html",
+      "says": "5.3L FlexFuel V-8 (LC9), aluminum block, 315 hp"
+     },
+     {
+      "name": "EPA fueleconomy.gov vehicle data",
+      "url": "https://www.fueleconomy.gov/feg/download.shtml",
+      "says": "2009: 5.3 L 8-cyl FFV (Silverado C15/K15)"
+     },
+     {
+      "name": "Wikipedia - Chevrolet Silverado (second generation) / GM LS engine",
+      "url": "https://en.wikipedia.org/wiki/Chevrolet_Silverado_(second_generation)",
+      "says": "LC9 2007-2014 flex-fuel aluminum 5.3, Silverado 1500 4WD, 315 hp"
+     }
+    ],
+    "status": "three_sources_not_nhra",
+    "note": ""
+   },
+   {
+    "gen": "gmt900",
+    "cid": 364,
+    "hp": 367,
+    "hp_basis": "SAE net",
+    "rpo": "L76",
+    "name": "6.0L / 364 V8",
+    "common_name": "Vortec 6000",
+    "trims": [
+     "LT/LTZ extended and crew cab with max trailering package"
+    ],
+    "nhra": false,
+    "sources": [
+     {
+      "name": "GM media - 2009 Silverado 1500 press kit / specs (archived)",
+      "url": "https://web.archive.org/web/2009/http://media.gm.com:80/us/chevrolet/en/product_services/r_trucks/r_c_silverado/09index.html",
+      "says": "6.0L V-8 (L76), aluminum block, VVT, AFM, 367 hp; LT/LTZ ext and crew cab, max trailering package"
+     },
+     {
+      "name": "EPA fueleconomy.gov vehicle data",
+      "url": "https://www.fueleconomy.gov/feg/download.shtml",
+      "says": "2009: 6.0 L 8-cyl (Silverado C15/K15)"
+     },
+     {
+      "name": "Wikipedia - Chevrolet Silverado (second generation) / GM LS engine",
+      "url": "https://en.wikipedia.org/wiki/Chevrolet_Silverado_(second_generation)",
+      "says": "6.0 Vortec 6000 367 hp, 1500 2007-2009; L76 per GM LS engine article"
+     }
+    ],
+    "status": "three_sources_not_nhra",
+    "note": ""
+   },
+   {
+    "gen": "gmt900",
+    "cid": 376,
+    "hp": 403,
+    "hp_basis": "SAE net",
+    "rpo": "L9H",
+    "name": "6.2L / 376 V8 FlexFuel",
+    "common_name": "Vortec 6200",
+    "trims": [
+     "crew cab (2009); LTZ extended and crew cab (2010+)"
+    ],
+    "nhra": false,
+    "sources": [
+     {
+      "name": "GM media - 2009 Silverado 1500 press kit / specs (archived)",
+      "url": "https://web.archive.org/web/2009/http://media.gm.com:80/us/chevrolet/en/product_services/r_trucks/r_c_silverado/09index.html",
+      "says": "6.2L V-8 (L9H), E85 FlexFuel, aluminum block, VVT, 403 hp"
+     },
+     {
+      "name": "EPA fueleconomy.gov vehicle data",
+      "url": "https://www.fueleconomy.gov/feg/download.shtml",
+      "says": "2009: 6.2 L 8-cyl FFV (Silverado C15/K15)"
+     },
+     {
+      "name": "Wikipedia - Chevrolet Silverado (second generation) / GM LS engine",
+      "url": "https://en.wikipedia.org/wiki/Chevrolet_Silverado_(second_generation)",
+      "says": "6.2 Vortec 6200 403 hp, 1500 2009-2013; L9H per GM LS engine article"
+     }
+    ],
+    "status": "three_sources_not_nhra",
+    "note": "GM 2009 kit: crew cab models only."
+   },
+   {
+    "gen": "gmt900",
+    "cid": 364,
+    "hp": 332,
+    "hp_basis": "SAE net",
+    "rpo": "LFA",
+    "name": "6.0L / 364 V8 Hybrid",
+    "common_name": "Two-Mode Hybrid",
+    "trims": [
+     "Silverado Hybrid crew cab, 2WD and 4WD"
+    ],
+    "nhra": false,
+    "sources": [
+     {
+      "name": "GM media - 2009 Silverado Hybrid specifications (archived)",
+      "url": "https://web.archive.org/web/2009/https://media.gm.com/media/us/en/chevrolet/vehicles/silveradohybrid/2009.tab1.html",
+      "says": "Silverado Hybrid 6.0L V-8 (LFA), 332 hp @ 5100"
+     },
+     {
+      "name": "EPA fueleconomy.gov vehicle data",
+      "url": "https://www.fueleconomy.gov/feg/download.shtml",
+      "says": "2009: 6.0 L 8-cyl, Silverado 15 Hybrid 2WD/4WD"
+     },
+     {
+      "name": "Wikipedia - Chevrolet Silverado (second generation) / GM LS engine",
+      "url": "https://en.wikipedia.org/wiki/Chevrolet_Silverado_(second_generation)",
+      "says": "Hybrid 6.0 V8 2009-2013 (379 hp combined); LFA 2008-2009, LZ1 2010-2013 per GM LS engine article"
+     }
+    ],
+    "status": "three_sources_not_nhra",
+    "note": "Engine 332 hp; Wikipedia gives combined system output 379 hp.",
+    "hybrid": true
+   }
+  ],
+  "2010": [
+   {
+    "gen": "gmt900",
+    "cid": 262,
+    "hp": 195,
+    "hp_basis": "SAE net",
+    "rpo": "LU3",
+    "name": "4.3L / 262 V6",
+    "common_name": "Vortec 4300",
+    "trims": [
+     "Work Truck regular cab and 2WD extended cab"
+    ],
+    "nhra": false,
+    "sources": [
+     {
+      "name": "GM media - 2010 Silverado specifications (archived)",
+      "url": "https://web.archive.org/web/20151031135947/http://media.gm.com/media/us/en/chevrolet/vehicles/silverado/2010.tab1.html",
+      "says": "Vortec 4.3L V-6 (LU3) 195 hp"
+     },
+     {
+      "name": "EPA fueleconomy.gov vehicle data",
+      "url": "https://www.fueleconomy.gov/feg/download.shtml",
+      "says": "2010: 4.3 L 6-cyl (Silverado C15/K15)"
+     },
+     {
+      "name": "Wikipedia - Chevrolet Silverado (second generation) / GM LS engine",
+      "url": "https://en.wikipedia.org/wiki/Chevrolet_Silverado_(second_generation)",
+      "says": "4.3 Vortec 4300 V6, 195 hp, 1500 2007-2013"
+     }
+    ],
+    "status": "three_sources_not_nhra",
+    "note": ""
+   },
+   {
+    "gen": "gmt900",
+    "cid": 293,
+    "hp": 302,
+    "hp_basis": "SAE net",
+    "rpo": "L20",
+    "name": "4.8L / 293 V8 FlexFuel",
+    "common_name": "Vortec 4800",
+    "trims": [
+     "1500, 2WD and 4WD"
+    ],
+    "nhra": false,
+    "sources": [
+     {
+      "name": "GM media - 2010 Silverado specifications (archived)",
+      "url": "https://web.archive.org/web/20151031135947/http://media.gm.com/media/us/en/chevrolet/vehicles/silverado/2010.tab1.html",
+      "says": "Vortec 4.8L V-8 FlexFuel (L20) 302 hp @ 5600, variable valve timing"
+     },
+     {
+      "name": "EPA fueleconomy.gov vehicle data",
+      "url": "https://www.fueleconomy.gov/feg/download.shtml",
+      "says": "2010: 4.8 L 8-cyl FFV (Silverado C15/K15)"
+     },
+     {
+      "name": "Wikipedia - Chevrolet Silverado (second generation) / GM LS engine",
+      "url": "https://en.wikipedia.org/wiki/Chevrolet_Silverado_(second_generation)",
+      "says": "4.8 Vortec 4800 302 hp; L20 2010-2013 adds VVT"
+     }
+    ],
+    "status": "three_sources_not_nhra",
+    "note": "E85-capable, variable valve timing."
+   },
+   {
+    "gen": "gmt900",
+    "cid": 325,
+    "hp": 315,
+    "hp_basis": "SAE net",
+    "rpo": "LMG",
+    "name": "5.3L / 325 V8 FlexFuel (iron block)",
+    "common_name": "Vortec 5300 FlexFuel",
+    "trims": [
+     "1500, 2WD and 4WD"
+    ],
+    "nhra": false,
+    "sources": [
+     {
+      "name": "GM media - 2010 Silverado specifications (archived)",
+      "url": "https://web.archive.org/web/20151031135947/http://media.gm.com/media/us/en/chevrolet/vehicles/silverado/2010.tab1.html",
+      "says": "5.3L FlexFuel V-8 (LMG), iron block, AFM, 315 hp gasoline / 326 hp E85"
+     },
+     {
+      "name": "EPA fueleconomy.gov vehicle data",
+      "url": "https://www.fueleconomy.gov/feg/download.shtml",
+      "says": "2010: 5.3 L 8-cyl FFV (Silverado C15/K15)"
+     },
+     {
+      "name": "Wikipedia - Chevrolet Silverado (second generation) / GM LS engine",
+      "url": "https://en.wikipedia.org/wiki/Chevrolet_Silverado_(second_generation)",
+      "says": "LMG 2007-2013 Silverado 1500, 315-320 hp"
+     }
+    ],
+    "status": "three_sources_not_nhra",
+    "note": "From 2010 GM quotes 315 hp on gasoline, 326 hp on E85."
+   },
+   {
+    "gen": "gmt900",
+    "cid": 325,
+    "hp": 315,
+    "hp_basis": "SAE net",
+    "rpo": "LC9",
+    "name": "5.3L / 325 V8 FlexFuel (aluminum block)",
+    "common_name": "Vortec 5300 FlexFuel",
+    "trims": [
+     "4WD crew cab; XFE 2WD crew cab"
+    ],
+    "nhra": false,
+    "sources": [
+     {
+      "name": "GM media - 2010 Silverado specifications (archived)",
+      "url": "https://web.archive.org/web/20151031135947/http://media.gm.com/media/us/en/chevrolet/vehicles/silverado/2010.tab1.html",
+      "says": "5.3L FlexFuel V-8 (LC9), aluminum block, 315 hp / 326 E85"
+     },
+     {
+      "name": "EPA fueleconomy.gov vehicle data",
+      "url": "https://www.fueleconomy.gov/feg/download.shtml",
+      "says": "2010: 5.3 L 8-cyl FFV (Silverado C15/K15)"
+     },
+     {
+      "name": "Wikipedia - Chevrolet Silverado (second generation) / GM LS engine",
+      "url": "https://en.wikipedia.org/wiki/Chevrolet_Silverado_(second_generation)",
+      "says": "LC9 2007-2014 flex-fuel aluminum 5.3, Silverado 1500 4WD, 315 hp"
+     }
+    ],
+    "status": "three_sources_not_nhra",
+    "note": ""
+   },
+   {
+    "gen": "gmt900",
+    "cid": 376,
+    "hp": 403,
+    "hp_basis": "SAE net",
+    "rpo": "L9H",
+    "name": "6.2L / 376 V8 FlexFuel",
+    "common_name": "Vortec 6200",
+    "trims": [
+     "crew cab (2009); LTZ extended and crew cab (2010+)"
+    ],
+    "nhra": false,
+    "sources": [
+     {
+      "name": "GM media - 2010 Silverado specifications (archived)",
+      "url": "https://web.archive.org/web/20151031135947/http://media.gm.com/media/us/en/chevrolet/vehicles/silverado/2010.tab1.html",
+      "says": "6.2L V-8 (L9H), E85 FlexFuel, aluminum block, VVT, 403 hp"
+     },
+     {
+      "name": "EPA fueleconomy.gov vehicle data",
+      "url": "https://www.fueleconomy.gov/feg/download.shtml",
+      "says": "2010: 6.2 L 8-cyl FFV (Silverado C15/K15)"
+     },
+     {
+      "name": "Wikipedia - Chevrolet Silverado (second generation) / GM LS engine",
+      "url": "https://en.wikipedia.org/wiki/Chevrolet_Silverado_(second_generation)",
+      "says": "6.2 Vortec 6200 403 hp, 1500 2009-2013; L9H per GM LS engine article"
+     }
+    ],
+    "status": "three_sources_not_nhra",
+    "note": "GM 2009 kit: crew cab models only."
+   },
+   {
+    "gen": "gmt900",
+    "cid": 364,
+    "hp": 332,
+    "hp_basis": "SAE net",
+    "rpo": "LZ1",
+    "name": "6.0L / 364 V8 Hybrid",
+    "common_name": "Two-Mode Hybrid",
+    "trims": [
+     "Silverado Hybrid crew cab, 2WD and 4WD"
+    ],
+    "nhra": false,
+    "sources": [
+     {
+      "name": "GM media - 2010 Silverado Hybrid specifications (archived)",
+      "url": "https://web.archive.org/web/2011/https://media.gm.com/media/us/en/chevrolet/vehicles/silveradohybrid/2010.tab1.html",
+      "says": "Silverado Hybrid 6.0L V-8 (LZ1), 332 hp @ 5100"
+     },
+     {
+      "name": "EPA fueleconomy.gov vehicle data",
+      "url": "https://www.fueleconomy.gov/feg/download.shtml",
+      "says": "2010: 6.0 L 8-cyl, Silverado 15 Hybrid 2WD/4WD"
+     },
+     {
+      "name": "Wikipedia - Chevrolet Silverado (second generation) / GM LS engine",
+      "url": "https://en.wikipedia.org/wiki/Chevrolet_Silverado_(second_generation)",
+      "says": "Hybrid 6.0 V8 2009-2013 (379 hp combined); LFA 2008-2009, LZ1 2010-2013 per GM LS engine article"
+     }
+    ],
+    "status": "three_sources_not_nhra",
+    "note": "Engine 332 hp; Wikipedia gives combined system output 379 hp.",
+    "hybrid": true
+   }
+  ],
+  "2011": [
+   {
+    "gen": "gmt900",
+    "cid": 262,
+    "hp": 195,
+    "hp_basis": "SAE net",
+    "rpo": "LU3",
+    "name": "4.3L / 262 V6",
+    "common_name": "Vortec 4300",
+    "trims": [
+     "Work Truck regular cab and 2WD extended cab"
+    ],
+    "nhra": false,
+    "sources": [
+     {
+      "name": "GM media - 2011 Silverado specifications (archived)",
+      "url": "https://web.archive.org/web/2011/http://media.gm.com/media/us/en/chevrolet/vehicles/silverado/2011.tab1.html",
+      "says": "Vortec 4.3L V-6 (LU3) 195 hp"
+     },
+     {
+      "name": "EPA fueleconomy.gov vehicle data",
+      "url": "https://www.fueleconomy.gov/feg/download.shtml",
+      "says": "2011: 4.3 L 6-cyl (Silverado C15/K15)"
+     },
+     {
+      "name": "Wikipedia - Chevrolet Silverado (second generation) / GM LS engine",
+      "url": "https://en.wikipedia.org/wiki/Chevrolet_Silverado_(second_generation)",
+      "says": "4.3 Vortec 4300 V6, 195 hp, 1500 2007-2013"
+     }
+    ],
+    "status": "three_sources_not_nhra",
+    "note": ""
+   },
+   {
+    "gen": "gmt900",
+    "cid": 293,
+    "hp": 302,
+    "hp_basis": "SAE net",
+    "rpo": "L20",
+    "name": "4.8L / 293 V8 FlexFuel",
+    "common_name": "Vortec 4800",
+    "trims": [
+     "1500, 2WD and 4WD"
+    ],
+    "nhra": false,
+    "sources": [
+     {
+      "name": "GM media - 2011 Silverado specifications (archived)",
+      "url": "https://web.archive.org/web/2011/http://media.gm.com/media/us/en/chevrolet/vehicles/silverado/2011.tab1.html",
+      "says": "Vortec 4.8L V-8 FlexFuel (L20) 302 hp @ 5600, variable valve timing"
+     },
+     {
+      "name": "EPA fueleconomy.gov vehicle data",
+      "url": "https://www.fueleconomy.gov/feg/download.shtml",
+      "says": "2011: 4.8 L 8-cyl FFV (Silverado C15/K15)"
+     },
+     {
+      "name": "Wikipedia - Chevrolet Silverado (second generation) / GM LS engine",
+      "url": "https://en.wikipedia.org/wiki/Chevrolet_Silverado_(second_generation)",
+      "says": "4.8 Vortec 4800 302 hp; L20 2010-2013 adds VVT"
+     }
+    ],
+    "status": "three_sources_not_nhra",
+    "note": "E85-capable, variable valve timing."
+   },
+   {
+    "gen": "gmt900",
+    "cid": 325,
+    "hp": 315,
+    "hp_basis": "SAE net",
+    "rpo": "LMG",
+    "name": "5.3L / 325 V8 FlexFuel (iron block)",
+    "common_name": "Vortec 5300 FlexFuel",
+    "trims": [
+     "1500, 2WD and 4WD"
+    ],
+    "nhra": false,
+    "sources": [
+     {
+      "name": "GM media - 2011 Silverado specifications (archived)",
+      "url": "https://web.archive.org/web/2011/http://media.gm.com/media/us/en/chevrolet/vehicles/silverado/2011.tab1.html",
+      "says": "5.3L FlexFuel V-8 (LMG), iron block, AFM, 315 hp gasoline / 326 hp E85"
+     },
+     {
+      "name": "EPA fueleconomy.gov vehicle data",
+      "url": "https://www.fueleconomy.gov/feg/download.shtml",
+      "says": "2011: 5.3 L 8-cyl FFV (Silverado C15/K15)"
+     },
+     {
+      "name": "Wikipedia - Chevrolet Silverado (second generation) / GM LS engine",
+      "url": "https://en.wikipedia.org/wiki/Chevrolet_Silverado_(second_generation)",
+      "says": "LMG 2007-2013 Silverado 1500, 315-320 hp"
+     }
+    ],
+    "status": "three_sources_not_nhra",
+    "note": "From 2010 GM quotes 315 hp on gasoline, 326 hp on E85."
+   },
+   {
+    "gen": "gmt900",
+    "cid": 325,
+    "hp": 315,
+    "hp_basis": "SAE net",
+    "rpo": "LC9",
+    "name": "5.3L / 325 V8 FlexFuel (aluminum block)",
+    "common_name": "Vortec 5300 FlexFuel",
+    "trims": [
+     "4WD crew cab; XFE 2WD crew cab"
+    ],
+    "nhra": false,
+    "sources": [
+     {
+      "name": "GM media - 2011 Silverado specifications (archived)",
+      "url": "https://web.archive.org/web/2011/http://media.gm.com/media/us/en/chevrolet/vehicles/silverado/2011.tab1.html",
+      "says": "5.3L FlexFuel V-8 (LC9), aluminum block, 315 hp / 326 E85"
+     },
+     {
+      "name": "EPA fueleconomy.gov vehicle data",
+      "url": "https://www.fueleconomy.gov/feg/download.shtml",
+      "says": "2011: 5.3 L 8-cyl FFV (Silverado C15/K15)"
+     },
+     {
+      "name": "Wikipedia - Chevrolet Silverado (second generation) / GM LS engine",
+      "url": "https://en.wikipedia.org/wiki/Chevrolet_Silverado_(second_generation)",
+      "says": "LC9 2007-2014 flex-fuel aluminum 5.3, Silverado 1500 4WD, 315 hp"
+     }
+    ],
+    "status": "three_sources_not_nhra",
+    "note": ""
+   },
+   {
+    "gen": "gmt900",
+    "cid": 376,
+    "hp": 403,
+    "hp_basis": "SAE net",
+    "rpo": "L9H",
+    "name": "6.2L / 376 V8 FlexFuel",
+    "common_name": "Vortec 6200",
+    "trims": [
+     "crew cab (2009); LTZ extended and crew cab (2010+)"
+    ],
+    "nhra": false,
+    "sources": [
+     {
+      "name": "GM media - 2011 Silverado specifications (archived)",
+      "url": "https://web.archive.org/web/2011/http://media.gm.com/media/us/en/chevrolet/vehicles/silverado/2011.tab1.html",
+      "says": "6.2L V-8 (L9H), E85 FlexFuel, aluminum block, VVT, 403 hp"
+     },
+     {
+      "name": "EPA fueleconomy.gov vehicle data",
+      "url": "https://www.fueleconomy.gov/feg/download.shtml",
+      "says": "2011: 6.2 L 8-cyl FFV (Silverado C15/K15)"
+     },
+     {
+      "name": "Wikipedia - Chevrolet Silverado (second generation) / GM LS engine",
+      "url": "https://en.wikipedia.org/wiki/Chevrolet_Silverado_(second_generation)",
+      "says": "6.2 Vortec 6200 403 hp, 1500 2009-2013; L9H per GM LS engine article"
+     }
+    ],
+    "status": "three_sources_not_nhra",
+    "note": "GM 2009 kit: crew cab models only."
+   },
+   {
+    "gen": "gmt900",
+    "cid": 364,
+    "hp": 332,
+    "hp_basis": "SAE net",
+    "rpo": "LZ1",
+    "name": "6.0L / 364 V8 Hybrid",
+    "common_name": "Two-Mode Hybrid",
+    "trims": [
+     "Silverado Hybrid crew cab, 2WD and 4WD"
+    ],
+    "nhra": false,
+    "sources": [
+     {
+      "name": "GM media - 2011 Silverado Hybrid specifications (archived)",
+      "url": "https://web.archive.org/web/2011/http://media.gm.com:80/media/us/en/chevrolet/vehicles/silveradohybrid/2011.tab1.html",
+      "says": "Silverado Hybrid 6.0L V-8 (LZ1), 332 hp @ 5100"
+     },
+     {
+      "name": "EPA fueleconomy.gov vehicle data",
+      "url": "https://www.fueleconomy.gov/feg/download.shtml",
+      "says": "2011: 6.0 L 8-cyl, Silverado 15 Hybrid 2WD/4WD"
+     },
+     {
+      "name": "Wikipedia - Chevrolet Silverado (second generation) / GM LS engine",
+      "url": "https://en.wikipedia.org/wiki/Chevrolet_Silverado_(second_generation)",
+      "says": "Hybrid 6.0 V8 2009-2013 (379 hp combined); LFA 2008-2009, LZ1 2010-2013 per GM LS engine article"
+     }
+    ],
+    "status": "three_sources_not_nhra",
+    "note": "Engine 332 hp; Wikipedia gives combined system output 379 hp.",
+    "hybrid": true
+   }
+  ],
+  "2012": [
+   {
+    "gen": "gmt900",
+    "cid": 262,
+    "hp": 195,
+    "hp_basis": "SAE net",
+    "rpo": "LU3",
+    "name": "4.3L / 262 V6",
+    "common_name": "Vortec 4300",
+    "trims": [
+     "Work Truck regular cab and 2WD extended cab"
+    ],
+    "nhra": false,
+    "sources": [
+     {
+      "name": "GM media - 2012 Silverado specifications (archived)",
+      "url": "https://web.archive.org/web/20120202003101/http://media.gm.com:80/media/us/en/chevrolet/vehicles/silverado/2012.tab1.html",
+      "says": "Vortec 4.3L V-6 (LU3) 195 hp"
+     },
+     {
+      "name": "EPA fueleconomy.gov vehicle data",
+      "url": "https://www.fueleconomy.gov/feg/download.shtml",
+      "says": "2012: 4.3 L 6-cyl (Silverado C15/K15)"
+     },
+     {
+      "name": "Wikipedia - Chevrolet Silverado (second generation) / GM LS engine",
+      "url": "https://en.wikipedia.org/wiki/Chevrolet_Silverado_(second_generation)",
+      "says": "4.3 Vortec 4300 V6, 195 hp, 1500 2007-2013"
+     }
+    ],
+    "status": "three_sources_not_nhra",
+    "note": ""
+   },
+   {
+    "gen": "gmt900",
+    "cid": 293,
+    "hp": 302,
+    "hp_basis": "SAE net",
+    "rpo": "L20",
+    "name": "4.8L / 293 V8 FlexFuel",
+    "common_name": "Vortec 4800",
+    "trims": [
+     "1500, 2WD and 4WD"
+    ],
+    "nhra": false,
+    "sources": [
+     {
+      "name": "GM media - 2012 Silverado specifications (archived)",
+      "url": "https://web.archive.org/web/20120202003101/http://media.gm.com:80/media/us/en/chevrolet/vehicles/silverado/2012.tab1.html",
+      "says": "Vortec 4.8L V-8 FlexFuel (L20) 302 hp @ 5600, variable valve timing"
+     },
+     {
+      "name": "EPA fueleconomy.gov vehicle data",
+      "url": "https://www.fueleconomy.gov/feg/download.shtml",
+      "says": "2012: 4.8 L 8-cyl FFV (Silverado C15/K15)"
+     },
+     {
+      "name": "Wikipedia - Chevrolet Silverado (second generation) / GM LS engine",
+      "url": "https://en.wikipedia.org/wiki/Chevrolet_Silverado_(second_generation)",
+      "says": "4.8 Vortec 4800 302 hp; L20 2010-2013 adds VVT"
+     }
+    ],
+    "status": "three_sources_not_nhra",
+    "note": "E85-capable, variable valve timing."
+   },
+   {
+    "gen": "gmt900",
+    "cid": 325,
+    "hp": 315,
+    "hp_basis": "SAE net",
+    "rpo": "LMG",
+    "name": "5.3L / 325 V8 FlexFuel (iron block)",
+    "common_name": "Vortec 5300 FlexFuel",
+    "trims": [
+     "1500, 2WD and 4WD"
+    ],
+    "nhra": false,
+    "sources": [
+     {
+      "name": "GM media - 2012 Silverado specifications (archived)",
+      "url": "https://web.archive.org/web/20120202003101/http://media.gm.com:80/media/us/en/chevrolet/vehicles/silverado/2012.tab1.html",
+      "says": "5.3L FlexFuel V-8 (LMG), iron block, AFM, 315 hp gasoline / 326 hp E85"
+     },
+     {
+      "name": "EPA fueleconomy.gov vehicle data",
+      "url": "https://www.fueleconomy.gov/feg/download.shtml",
+      "says": "2012: 5.3 L 8-cyl FFV (Silverado C15/K15)"
+     },
+     {
+      "name": "Wikipedia - Chevrolet Silverado (second generation) / GM LS engine",
+      "url": "https://en.wikipedia.org/wiki/Chevrolet_Silverado_(second_generation)",
+      "says": "LMG 2007-2013 Silverado 1500, 315-320 hp"
+     }
+    ],
+    "status": "three_sources_not_nhra",
+    "note": "From 2010 GM quotes 315 hp on gasoline, 326 hp on E85."
+   },
+   {
+    "gen": "gmt900",
+    "cid": 325,
+    "hp": 315,
+    "hp_basis": "SAE net",
+    "rpo": "LC9",
+    "name": "5.3L / 325 V8 FlexFuel (aluminum block)",
+    "common_name": "Vortec 5300 FlexFuel",
+    "trims": [
+     "4WD crew cab; XFE 2WD crew cab"
+    ],
+    "nhra": false,
+    "sources": [
+     {
+      "name": "GM media - 2012 Silverado specifications (archived)",
+      "url": "https://web.archive.org/web/20120202003101/http://media.gm.com:80/media/us/en/chevrolet/vehicles/silverado/2012.tab1.html",
+      "says": "5.3L FlexFuel V-8 (LC9), aluminum block, 315 hp / 326 E85"
+     },
+     {
+      "name": "EPA fueleconomy.gov vehicle data",
+      "url": "https://www.fueleconomy.gov/feg/download.shtml",
+      "says": "2012: 5.3 L 8-cyl FFV (Silverado C15/K15)"
+     },
+     {
+      "name": "Wikipedia - Chevrolet Silverado (second generation) / GM LS engine",
+      "url": "https://en.wikipedia.org/wiki/Chevrolet_Silverado_(second_generation)",
+      "says": "LC9 2007-2014 flex-fuel aluminum 5.3, Silverado 1500 4WD, 315 hp"
+     }
+    ],
+    "status": "three_sources_not_nhra",
+    "note": ""
+   },
+   {
+    "gen": "gmt900",
+    "cid": 376,
+    "hp": 403,
+    "hp_basis": "SAE net",
+    "rpo": "L9H",
+    "name": "6.2L / 376 V8 FlexFuel",
+    "common_name": "Vortec 6200",
+    "trims": [
+     "crew cab (2009); LTZ extended and crew cab (2010+)"
+    ],
+    "nhra": false,
+    "sources": [
+     {
+      "name": "GM media - 2012 Silverado specifications (archived)",
+      "url": "https://web.archive.org/web/20120202003101/http://media.gm.com:80/media/us/en/chevrolet/vehicles/silverado/2012.tab1.html",
+      "says": "6.2L V-8 (L9H), E85 FlexFuel, aluminum block, VVT, 403 hp"
+     },
+     {
+      "name": "EPA fueleconomy.gov vehicle data",
+      "url": "https://www.fueleconomy.gov/feg/download.shtml",
+      "says": "2012: 6.2 L 8-cyl FFV (Silverado C15/K15)"
+     },
+     {
+      "name": "Wikipedia - Chevrolet Silverado (second generation) / GM LS engine",
+      "url": "https://en.wikipedia.org/wiki/Chevrolet_Silverado_(second_generation)",
+      "says": "6.2 Vortec 6200 403 hp, 1500 2009-2013; L9H per GM LS engine article"
+     }
+    ],
+    "status": "three_sources_not_nhra",
+    "note": "GM 2009 kit: crew cab models only."
+   },
+   {
+    "gen": "gmt900",
+    "cid": 364,
+    "hp": 332,
+    "hp_basis": "SAE net",
+    "rpo": "LZ1",
+    "name": "6.0L / 364 V8 Hybrid",
+    "common_name": "Two-Mode Hybrid",
+    "trims": [
+     "Silverado Hybrid crew cab, 2WD and 4WD"
+    ],
+    "nhra": false,
+    "sources": [
+     {
+      "name": "GM media - 2012 Silverado Hybrid (archived)",
+      "url": "https://web.archive.org/web/2012/http://media.gm.com:80/media/us/en/chevrolet/vehicles/silveradohybrid/2012.html",
+      "says": "Silverado Hybrid 6.0L V-8, 332 hp @ 5100"
+     },
+     {
+      "name": "EPA fueleconomy.gov vehicle data",
+      "url": "https://www.fueleconomy.gov/feg/download.shtml",
+      "says": "2012: 6.0 L 8-cyl, Silverado 15 Hybrid 2WD/4WD"
+     },
+     {
+      "name": "Wikipedia - Chevrolet Silverado (second generation) / GM LS engine",
+      "url": "https://en.wikipedia.org/wiki/Chevrolet_Silverado_(second_generation)",
+      "says": "Hybrid 6.0 V8 2009-2013 (379 hp combined); LFA 2008-2009, LZ1 2010-2013 per GM LS engine article"
+     }
+    ],
+    "status": "three_sources_not_nhra",
+    "note": "Engine 332 hp; Wikipedia gives combined system output 379 hp. 2012-2013 GM pages give 332 hp without naming the RPO; LZ1 per Wikipedia.",
+    "hybrid": true
+   }
+  ],
+  "2013": [
+   {
+    "gen": "gmt900",
+    "cid": 262,
+    "hp": 195,
+    "hp_basis": "SAE net",
+    "rpo": "LU3",
+    "name": "4.3L / 262 V6",
+    "common_name": "Vortec 4300",
+    "trims": [
+     "Work Truck regular cab and 2WD extended cab"
+    ],
+    "nhra": false,
+    "sources": [
+     {
+      "name": "GM media - 2013 Silverado specifications (archived)",
+      "url": "https://web.archive.org/web/20160729092825/http://media.gm.com:80/media/us/en/chevrolet/vehicles/silverado/2013.tab1.html",
+      "says": "Vortec 4.3L V-6 (LU3) 195 hp"
+     },
+     {
+      "name": "EPA fueleconomy.gov vehicle data",
+      "url": "https://www.fueleconomy.gov/feg/download.shtml",
+      "says": "2013: 4.3 L 6-cyl (Silverado C15/K15)"
+     },
+     {
+      "name": "Wikipedia - Chevrolet Silverado (second generation) / GM LS engine",
+      "url": "https://en.wikipedia.org/wiki/Chevrolet_Silverado_(second_generation)",
+      "says": "4.3 Vortec 4300 V6, 195 hp, 1500 2007-2013"
+     }
+    ],
+    "status": "three_sources_not_nhra",
+    "note": ""
+   },
+   {
+    "gen": "gmt900",
+    "cid": 293,
+    "hp": 302,
+    "hp_basis": "SAE net",
+    "rpo": "L20",
+    "name": "4.8L / 293 V8 FlexFuel",
+    "common_name": "Vortec 4800",
+    "trims": [
+     "1500, 2WD and 4WD"
+    ],
+    "nhra": false,
+    "sources": [
+     {
+      "name": "GM media - 2013 Silverado specifications (archived)",
+      "url": "https://web.archive.org/web/20160729092825/http://media.gm.com:80/media/us/en/chevrolet/vehicles/silverado/2013.tab1.html",
+      "says": "Vortec 4.8L V-8 FlexFuel (L20) 302 hp @ 5600, variable valve timing"
+     },
+     {
+      "name": "EPA fueleconomy.gov vehicle data",
+      "url": "https://www.fueleconomy.gov/feg/download.shtml",
+      "says": "2013: 4.8 L 8-cyl FFV (Silverado C15/K15)"
+     },
+     {
+      "name": "Wikipedia - Chevrolet Silverado (second generation) / GM LS engine",
+      "url": "https://en.wikipedia.org/wiki/Chevrolet_Silverado_(second_generation)",
+      "says": "4.8 Vortec 4800 302 hp; L20 2010-2013 adds VVT"
+     }
+    ],
+    "status": "three_sources_not_nhra",
+    "note": "E85-capable, variable valve timing."
+   },
+   {
+    "gen": "gmt900",
+    "cid": 325,
+    "hp": 315,
+    "hp_basis": "SAE net",
+    "rpo": "LMG",
+    "name": "5.3L / 325 V8 FlexFuel (iron block)",
+    "common_name": "Vortec 5300 FlexFuel",
+    "trims": [
+     "1500, 2WD and 4WD"
+    ],
+    "nhra": false,
+    "sources": [
+     {
+      "name": "GM media - 2013 Silverado specifications (archived)",
+      "url": "https://web.archive.org/web/20160729092825/http://media.gm.com:80/media/us/en/chevrolet/vehicles/silverado/2013.tab1.html",
+      "says": "5.3L FlexFuel V-8 (LMG), iron block, AFM, 315 hp gasoline / 326 hp E85"
+     },
+     {
+      "name": "EPA fueleconomy.gov vehicle data",
+      "url": "https://www.fueleconomy.gov/feg/download.shtml",
+      "says": "2013: 5.3 L 8-cyl FFV (Silverado C15/K15)"
+     },
+     {
+      "name": "Wikipedia - Chevrolet Silverado (second generation) / GM LS engine",
+      "url": "https://en.wikipedia.org/wiki/Chevrolet_Silverado_(second_generation)",
+      "says": "LMG 2007-2013 Silverado 1500, 315-320 hp"
+     }
+    ],
+    "status": "three_sources_not_nhra",
+    "note": "From 2010 GM quotes 315 hp on gasoline, 326 hp on E85."
+   },
+   {
+    "gen": "gmt900",
+    "cid": 325,
+    "hp": 315,
+    "hp_basis": "SAE net",
+    "rpo": "LC9",
+    "name": "5.3L / 325 V8 FlexFuel (aluminum block)",
+    "common_name": "Vortec 5300 FlexFuel",
+    "trims": [
+     "4WD crew cab; XFE 2WD crew cab"
+    ],
+    "nhra": false,
+    "sources": [
+     {
+      "name": "GM media - 2013 Silverado specifications (archived)",
+      "url": "https://web.archive.org/web/20160729092825/http://media.gm.com:80/media/us/en/chevrolet/vehicles/silverado/2013.tab1.html",
+      "says": "5.3L FlexFuel V-8 (LC9), aluminum block, 315 hp / 326 E85"
+     },
+     {
+      "name": "EPA fueleconomy.gov vehicle data",
+      "url": "https://www.fueleconomy.gov/feg/download.shtml",
+      "says": "2013: 5.3 L 8-cyl FFV (Silverado C15/K15)"
+     },
+     {
+      "name": "Wikipedia - Chevrolet Silverado (second generation) / GM LS engine",
+      "url": "https://en.wikipedia.org/wiki/Chevrolet_Silverado_(second_generation)",
+      "says": "LC9 2007-2014 flex-fuel aluminum 5.3, Silverado 1500 4WD, 315 hp"
+     }
+    ],
+    "status": "three_sources_not_nhra",
+    "note": ""
+   },
+   {
+    "gen": "gmt900",
+    "cid": 376,
+    "hp": 403,
+    "hp_basis": "SAE net",
+    "rpo": "L9H",
+    "name": "6.2L / 376 V8 FlexFuel",
+    "common_name": "Vortec 6200",
+    "trims": [
+     "crew cab (2009); LTZ extended and crew cab (2010+)"
+    ],
+    "nhra": false,
+    "sources": [
+     {
+      "name": "GM media - 2013 Silverado specifications (archived)",
+      "url": "https://web.archive.org/web/20160729092825/http://media.gm.com:80/media/us/en/chevrolet/vehicles/silverado/2013.tab1.html",
+      "says": "6.2L V-8 (L9H), E85 FlexFuel, aluminum block, VVT, 403 hp"
+     },
+     {
+      "name": "EPA fueleconomy.gov vehicle data",
+      "url": "https://www.fueleconomy.gov/feg/download.shtml",
+      "says": "2013: 6.2 L 8-cyl FFV (Silverado C15/K15)"
+     },
+     {
+      "name": "Wikipedia - Chevrolet Silverado (second generation) / GM LS engine",
+      "url": "https://en.wikipedia.org/wiki/Chevrolet_Silverado_(second_generation)",
+      "says": "6.2 Vortec 6200 403 hp, 1500 2009-2013; L9H per GM LS engine article"
+     }
+    ],
+    "status": "three_sources_not_nhra",
+    "note": "GM 2009 kit: crew cab models only."
+   },
+   {
+    "gen": "gmt900",
+    "cid": 364,
+    "hp": 332,
+    "hp_basis": "SAE net",
+    "rpo": "LZ1",
+    "name": "6.0L / 364 V8 Hybrid",
+    "common_name": "Two-Mode Hybrid",
+    "trims": [
+     "Silverado Hybrid crew cab, 2WD and 4WD"
+    ],
+    "nhra": false,
+    "sources": [
+     {
+      "name": "GM media - 2013 Silverado Hybrid (archived)",
+      "url": "https://web.archive.org/web/2013/http://media.gm.com:80/media/us/en/chevrolet/vehicles/silveradohybrid/2013.html",
+      "says": "Silverado Hybrid 6.0L V-8, 332 hp @ 5100"
+     },
+     {
+      "name": "EPA fueleconomy.gov vehicle data",
+      "url": "https://www.fueleconomy.gov/feg/download.shtml",
+      "says": "2013: 6.0 L 8-cyl, Silverado 15 Hybrid 2WD/4WD"
+     },
+     {
+      "name": "Wikipedia - Chevrolet Silverado (second generation) / GM LS engine",
+      "url": "https://en.wikipedia.org/wiki/Chevrolet_Silverado_(second_generation)",
+      "says": "Hybrid 6.0 V8 2009-2013 (379 hp combined); LFA 2008-2009, LZ1 2010-2013 per GM LS engine article"
+     }
+    ],
+    "status": "three_sources_not_nhra",
+    "note": "Engine 332 hp; Wikipedia gives combined system output 379 hp. 2012-2013 GM pages give 332 hp without naming the RPO; LZ1 per Wikipedia.",
+    "hybrid": true
+   }
+  ]
+ },
+ "source_index": [
+  {
+   "name": "Wikipedia - Chevrolet Silverado (first generation) / GM LS engine",
+   "url": "https://en.wikipedia.org/wiki/Chevrolet_Silverado_(first_generation)",
+   "type": "wikipedia"
+  },
+  {
+   "name": "Wikipedia - Chevrolet Silverado (second generation) / GM LS engine",
+   "url": "https://en.wikipedia.org/wiki/Chevrolet_Silverado_(second_generation)",
+   "type": "wikipedia"
+  },
+  {
+   "name": "EPA fueleconomy.gov vehicle data",
+   "url": "https://www.fueleconomy.gov/feg/download.shtml",
+   "type": "government"
+  },
+  {
+   "name": "GM Canada media - 1999 Chevrolet Silverado (archived)",
+   "url": "https://web.archive.org/web/2005/http://media.gm.com:80/division/canada/english/products/chevy_truck/archives/1999Silverado.html",
+   "type": "manufacturer"
+  },
+  {
+   "name": "GM media - 2000 Silverado specifications & engine pages (archived)",
+   "url": "https://web.archive.org/web/2005/http://media.gm.com:80/division/chevrolet/products/archive_prod_info/00chevy/00silverado/silver_specs.htm",
+   "type": "manufacturer"
+  },
+  {
+   "name": "GM media - 2001 Silverado specifications (archived)",
+   "url": "https://web.archive.org/web/2005/http://media.gm.com:80/division/chevrolet/products/trucks/01chevy/01silverado/specs.htm",
+   "type": "manufacturer"
+  },
+  {
+   "name": "GM Canada media - 2002 Chevrolet Silverado (archived)",
+   "url": "https://web.archive.org/web/2003/http://media.gm.com:80/division/canada/english/products/chevy_truck/archives/2002Silverado.html",
+   "type": "manufacturer"
+  },
+  {
+   "name": "GM media - 2003 Silverado specifications / model lineup (archived)",
+   "url": "https://web.archive.org/web/2005/http://www.media.gm.com:80/division/2003_prodinfo/03_chevrolet/03_silverado/specifications.html",
+   "type": "manufacturer"
+  },
+  {
+   "name": "GM media - 2003 Silverado SS specifications (archived)",
+   "url": "https://web.archive.org/web/2005/http://media.gm.com:80/division/2003_prodinfo/03_chevrolet/03_silverado/silverado_ss_specs.html",
+   "type": "manufacturer"
+  },
+  {
+   "name": "GM Canada media - 2003 Chevrolet Silverado (archived)",
+   "url": "https://web.archive.org/web/2005/http://media.gm.com:80/division/canada/english/products/chevy_truck/archives/2003Silverado.html",
+   "type": "manufacturer"
+  },
+  {
+   "name": "GM media - 2004 Silverado specifications (archived)",
+   "url": "https://web.archive.org/web/2005/http://media.gm.com:80/division/2004_prodinfo/chevrolet/trucks/silverado/specs.html",
+   "type": "manufacturer"
+  },
+  {
+   "name": "GM media - 2005 Chevrolet Trucks overview (archived)",
+   "url": "https://web.archive.org/web/2005/http://media.gm.com:80/division/2005_prodinfo/chevrolet/trucks/05_Chevy_Trucks%20Overview.htm",
+   "type": "manufacturer"
+  },
+  {
+   "name": "conceptcarz - 2005 Chevrolet Silverado Hybrid (Source - GM)",
+   "url": "https://www.conceptcarz.com/vehicle/z8357/chevrolet-silverado.aspx",
+   "type": "manufacturer"
+  },
+  {
+   "name": "GM media - 2006 NAIAS Chevrolet truck overview (archived)",
+   "url": "https://web.archive.org/web/2006/http://media.gm.com:80/us/gm/en/news/events/autoshows/06naias/brands/chevrolet/06_NAIAS_ChevTruck_oview.htm",
+   "type": "manufacturer"
+  },
+  {
+   "name": "GM media - 2007 Silverado Classic press kit & specs (archived)",
+   "url": "https://web.archive.org/web/20070501201020/http://media.gm.com:80/us/chevrolet/en/product_services/r_trucks/r_c_silverado_classic/index.html",
+   "type": "manufacturer"
+  },
+  {
+   "name": "GM media - 2007 Silverado (GMT900) press kit & cab specs (archived)",
+   "url": "https://web.archive.org/web/2007/http://media.gm.com:80/us/chevrolet/en/product_services/r_trucks/r_c_silverado/07index.html",
+   "type": "manufacturer"
+  },
+  {
+   "name": "GM media - 2008 Silverado 1500 press kit (archived)",
+   "url": "https://web.archive.org/web/2008/http://media.gm.com:80/us/chevrolet/en/product_services/r_trucks/r_c_silverado/08index.html",
+   "type": "manufacturer"
+  },
+  {
+   "name": "GM media - 2009 Silverado 1500 press kit / specs (archived)",
+   "url": "https://web.archive.org/web/2009/http://media.gm.com:80/us/chevrolet/en/product_services/r_trucks/r_c_silverado/09index.html",
+   "type": "manufacturer"
+  },
+  {
+   "name": "GM media - 2010 Silverado specifications (archived)",
+   "url": "https://web.archive.org/web/20151031135947/http://media.gm.com/media/us/en/chevrolet/vehicles/silverado/2010.tab1.html",
+   "type": "manufacturer"
+  },
+  {
+   "name": "GM media - 2011 Silverado specifications (archived)",
+   "url": "https://web.archive.org/web/2011/http://media.gm.com/media/us/en/chevrolet/vehicles/silverado/2011.tab1.html",
+   "type": "manufacturer"
+  },
+  {
+   "name": "GM media - 2012 Silverado specifications (archived)",
+   "url": "https://web.archive.org/web/20120202003101/http://media.gm.com:80/media/us/en/chevrolet/vehicles/silverado/2012.tab1.html",
+   "type": "manufacturer"
+  },
+  {
+   "name": "GM media - 2013 Silverado specifications (archived)",
+   "url": "https://web.archive.org/web/20160729092825/http://media.gm.com:80/media/us/en/chevrolet/vehicles/silverado/2013.tab1.html",
+   "type": "manufacturer"
+  },
+  {
+   "name": "GM media - 2009 Silverado Hybrid specifications (archived)",
+   "url": "https://web.archive.org/web/2009/https://media.gm.com/media/us/en/chevrolet/vehicles/silveradohybrid/2009.tab1.html",
+   "type": "manufacturer"
+  },
+  {
+   "name": "GM media - 2010 Silverado Hybrid specifications (archived)",
+   "url": "https://web.archive.org/web/2011/https://media.gm.com/media/us/en/chevrolet/vehicles/silveradohybrid/2010.tab1.html",
+   "type": "manufacturer"
+  },
+  {
+   "name": "GM media - 2011 Silverado Hybrid specifications (archived)",
+   "url": "https://web.archive.org/web/2011/http://media.gm.com:80/media/us/en/chevrolet/vehicles/silveradohybrid/2011.tab1.html",
+   "type": "manufacturer"
+  },
+  {
+   "name": "GM media - 2012 Silverado Hybrid (archived)",
+   "url": "https://web.archive.org/web/2012/http://media.gm.com:80/media/us/en/chevrolet/vehicles/silveradohybrid/2012.html",
+   "type": "manufacturer"
+  },
+  {
+   "name": "GM media - 2013 Silverado Hybrid (archived)",
+   "url": "https://web.archive.org/web/2013/http://media.gm.com:80/media/us/en/chevrolet/vehicles/silveradohybrid/2013.html",
+   "type": "manufacturer"
+  },
+  {
+   "name": "cars.com - 1999 Chevrolet Silverado 1500 specs",
+   "url": "https://www.cars.com/research/chevrolet-silverado_1500-1999/specs/",
+   "type": "publication"
+  },
+  {
+   "name": "cars.com - 2005 Chevrolet Silverado 1500 specs",
+   "url": "https://www.cars.com/research/chevrolet-silverado_1500-2005/specs/",
+   "type": "publication"
+  },
+  {
+   "name": "The Auto Channel - Chevrolet/DEI announce 2006 Silverado Intimidator SS (2005-04-29)",
+   "url": "https://www.theautochannel.com/news/2005/04/29/053680.html",
+   "type": "publication"
+  },
+  {
+   "name": "Kelley Blue Book - 2001 Silverado 1500 HD Crew Cab specs",
+   "url": "https://www.kbb.com/chevrolet/silverado-1500hd-crew-cab/2001/specs/",
+   "type": "publication"
+  },
+  {
+   "name": "Kelley Blue Book - 2002 Silverado 1500 HD Crew Cab specs",
+   "url": "https://www.kbb.com/chevrolet/silverado-1500hd-crew-cab/2002/specs/",
+   "type": "publication"
+  },
+  {
+   "name": "Kelley Blue Book - 2003 Silverado 1500 HD Crew Cab specs",
+   "url": "https://www.kbb.com/chevrolet/silverado-1500hd-crew-cab/2003/specs/",
+   "type": "publication"
+  },
+  {
+   "name": "Kelley Blue Book - 2005 Silverado 1500 HD Crew Cab specs",
+   "url": "https://www.kbb.com/chevrolet/silverado-1500hd-crew-cab/2005/specs/",
+   "type": "publication"
+  },
+  {
+   "name": "Kelley Blue Book - 2006 Silverado 1500 HD Crew Cab specs",
+   "url": "https://www.kbb.com/chevrolet/silverado-1500hd-crew-cab/2006/specs/",
+   "type": "publication"
+  }
+ ]
+}

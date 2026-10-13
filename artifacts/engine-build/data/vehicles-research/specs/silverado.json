@@ -1,0 +1,73 @@
+{
+ "make": "Chevrolet",
+ "model": "Silverado 1500",
+ "makeSlug": "chevrolet",
+ "slug": "silverado-1500",
+ "title": "Chevrolet Silverado 1500 Engines by Year",
+ "description": "Every factory engine in the Chevrolet Silverado 1500 by year, 1999–2026: Vortec V6 and V8s, the SS 6.0, the 6.2 V8, the 2.7 TurboMax, the Duramax 3.0 and the EV.",
+ "intro": [
+  "The Silverado replaced the C/K 1500 for 1999 and has been built in four generations. This page covers the half-ton Silverado 1500; the 1500HD of 2001–2007 was built on the heavy-duty chassis and is not included.",
+  "Pick a year to see every engine offered that model year, with its code, rated horsepower and the trims it came in. Each engine links to its full specs."
+ ],
+ "generations": [
+  {
+   "key": "gmt800",
+   "name": "GMT800",
+   "years": [
+    1999,
+    2006
+   ],
+   "intro": [
+    "The first Silverado used the 4.3 V6 and Vortec 4.8, 5.3 and 6.0 V8s. The 2003–2007 Silverado SS used a 345 hp 6.0, and a mild hybrid ran from 2004."
+   ]
+  },
+  {
+   "key": "gmt900",
+   "name": "GMT900",
+   "years": [
+    2007,
+    2013
+   ],
+   "intro": [
+    "The GMT900 arrived for 2007, when the old body was also sold as the Silverado Classic. Later trucks offered Active Fuel Management V8s up to the 6.2 and a two-mode hybrid from 2009."
+   ]
+  },
+  {
+   "key": "k2xx",
+   "name": "K2XX",
+   "years": [
+    2014,
+    2018
+   ],
+   "intro": [
+    "The K2XX brought direct-injected EcoTec3 engines: the 4.3 V6, 5.3 V8 and 6.2 V8."
+   ]
+  },
+  {
+   "key": "t1",
+   "name": "T1",
+   "years": [
+    2019,
+    2026
+   ],
+   "intro": [
+    "The current Silverado offers the 2.7 turbo four, the 5.3 and 6.2 V8s with Dynamic Fuel Management and a 3.0 Duramax diesel, plus the electric Silverado EV from 2024. The old body was sold for 2019 as the Silverado LD."
+   ]
+  }
+ ],
+ "files": [
+  "verify_chevrolet-silverado-1999-2013.json",
+  "verify_chevrolet-silverado-2014-2026.json"
+ ],
+ "merge_trims": true,
+ "exclude": {
+  "2001|364|300": "1500HD (heavy-duty chassis)",
+  "2002|364|300": "1500HD (heavy-duty chassis)",
+  "2003|364|300": "1500HD (heavy-duty chassis)",
+  "2004|364|300": "1500HD (heavy-duty chassis)",
+  "2005|364|300": "1500HD (heavy-duty chassis)",
+  "2006|364|300": "1500HD (heavy-duty chassis)",
+  "2007|364|300": "1500HD (heavy-duty chassis)"
+ },
+ "draft": true
+}

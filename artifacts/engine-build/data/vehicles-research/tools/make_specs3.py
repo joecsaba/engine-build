@@ -88,6 +88,51 @@ S["cj"] = dict(make="Jeep", model="CJ", makeSlug="jeep", slug="cj",
   no_link=[{"cid": 134, "years": [1945, 1952]}],
   family_overrides=[{"years": [1965, 1971], "cid": [225], "url": "/engines/jeep/dauntless"}])
 
+S["ck-pickup"] = dict(make="Chevrolet", model="C/K Pickup", makeSlug="chevrolet", slug="ck-pickup",
+  title="Chevy C/K Pickup Engines by Year (1960–1998)",
+  description="Every factory engine in the Chevrolet C10, K10, C1500 and K1500 half-ton pickup by year, 1960–1998: sixes, small and big blocks, diesels and the 454 SS.",
+  intro=["Chevrolet's C/K trucks ran from 1960 to 1998; C means two-wheel drive and K four-wheel drive. This page covers the half-ton models: the C10 and K10 through 1987 and the C1500 and K1500 from 1988. The Silverado name, a trim level until then, became its own model for 1999.", PICK],
+  generations=[
+    G("1960-1966", "1960–1966", 1960, 1966, "The first C/K trucks used Chevrolet's 235 and 230 sixes, the 261 and 292 sixes and the 283 V8, with the 327 added for 1966."),
+    G("1967-1972", "1967–1972", 1967, 1972, "The 1967 redesign kept the 250 and 292 sixes and offered small-block V8s up to the 350. The C10 could be ordered with a big block from 1968: the 396, then the 402, which Chevrolet badged as a 400. Ratings are SAE net from 1972."),
+    G("1973-1987", "1973–1987", 1973, 1987, "The square-body trucks ran from the 250 six to the 454 V8, which was offered in the half-ton through 1979. GM's 6.2 diesel arrived for 1982 and the 4.3 V6 for 1985. For 1987 the half-tons were renamed R10 and V10 when the new C/K trucks were announced."),
+    G("gmt400", "GMT400", 1988, 1998, "The GMT400 C/K 1500 used the 4.3 V6, the 5.0 and 5.7 V8s and diesels, plus the 454 SS of 1990–1993. Vortec heads arrived for 1996.")],
+  files=["verify_chevrolet-ck-1960-1972.json", "verify_chevrolet-ck-1973-1987.json", "verify_chevrolet-ck-1988-1998.json"],
+  trim_rewrite=[[r"^(C10|K10|R10|V10|C1500|K1500)\s+(standard|optional)(\s+V8)?$", r"\1"], [r"^(C10|K10) \((2WD|4WD)( only)?\)$", r"\1"]],
+  merge_trims=True,
+  ranges={"1997|305|230": [220, 230], "1998|305|230": [220, 230]},
+  family_overrides=[{"years": [1963, 1965], "cid": [230], "url": "/engines/gmc/chevy-i6-194-292"},
+                    {"years": [1990, 1993], "cid": [454], "url": "/engines/chevrolet/chevrolet-454ci"},
+                    {"years": [1978, 1981], "cid": [350], "diesel": True, "url": "/engines/oldsmobile/diesel-v8"}],
+  code_notes={"LF9": "Oldsmobile-built diesel."})
+
+S["silverado"] = dict(make="Chevrolet", model="Silverado 1500", makeSlug="chevrolet", slug="silverado-1500",
+  title="Chevrolet Silverado 1500 Engines by Year",
+  description="Every factory engine in the Chevrolet Silverado 1500 by year, 1999–2026: Vortec V6 and V8s, the SS 6.0, the 6.2 V8, the 2.7 TurboMax, the Duramax 3.0 and the EV.",
+  intro=["The Silverado replaced the C/K 1500 for 1999 and has been built in four generations. This page covers the half-ton Silverado 1500; the 1500HD of 2001–2007 was built on the heavy-duty chassis and is not included.", PICK],
+  generations=[
+    G("gmt800", "GMT800", 1999, 2006, "The first Silverado used the 4.3 V6 and Vortec 4.8, 5.3 and 6.0 V8s. The 2003–2007 Silverado SS used a 345 hp 6.0, and a mild hybrid ran from 2004."),
+    G("gmt900", "GMT900", 2007, 2013, "The GMT900 arrived for 2007, when the old body was also sold as the Silverado Classic. Later trucks offered Active Fuel Management V8s up to the 6.2 and a two-mode hybrid from 2009."),
+    G("k2xx", "K2XX", 2014, 2018, "The K2XX brought direct-injected EcoTec3 engines: the 4.3 V6, 5.3 V8 and 6.2 V8."),
+    G("t1", "T1", 2019, 2026, "The current Silverado offers the 2.7 turbo four, the 5.3 and 6.2 V8s with Dynamic Fuel Management and a 3.0 Duramax diesel, plus the electric Silverado EV from 2024. The old body was sold for 2019 as the Silverado LD.")],
+  files=["verify_chevrolet-silverado-1999-2013.json", "verify_chevrolet-silverado-2014-2026.json"],
+  merge_trims=True,
+  exclude={f"{y}|364|300": "1500HD (heavy-duty chassis)" for y in range(2001, 2008)})
+
+S["f-100"] = dict(make="Ford", model="F-100", makeSlug="ford", slug="f-100",
+  title="Ford F-100 Engines by Year (1953–1983)",
+  description="Every factory engine in the Ford F-100 half-ton pickup by year, 1953–1983: flathead and Y-block V8s, the 223, 240 and 300 sixes, FE 352, 360 and 390, and the 302.",
+  intro=["The F-100 was Ford's half-ton pickup from 1953 to 1983. The F-150 joined it for 1975 as a heavier-rated half-ton and replaced it after 1983. Four-wheel drive was offered from 1959 to 1976.", PICK],
+  generations=[
+    G("gen2", "1953–1956", 1953, 1956, "The first F-100 used the 215 and 223 sixes and the 239 flathead V8, replaced by the overhead-valve Y-block for 1954."),
+    G("gen3", "1957–1960", 1957, 1960, "The 223 six and the 272 and 292 Y-block V8s."),
+    G("gen4", "1961–1966", 1961, 1966, "The 223 six and the 292 V8, then from 1965 the new 240 and 300 sixes and the FE 352 V8."),
+    G("gen5", "1967–1972", 1967, 1972, "The 240 and 300 sixes, the FE 360 and 390 V8s, and the 302 from 1969. Ratings are SAE net from 1972."),
+    G("gen6", "1973–1979", 1973, 1979, "Sixes and the 302, 360, 390, 351M and 400 V8s; the 460 was offered in the F-100 for 1974 only."),
+    G("gen7", "1980–1983", 1980, 1983, "The last F-100s offered the 300 six, a 3.8 V6 from 1982, and the 4.2 and 5.0 V8s.")],
+  files=["verify_ford-f100-1953-1983.json"],
+  names={"1964|262|152": "262 inline-six"})
+
 os.makedirs(os.path.join(SP, "vspecs"), exist_ok=True)
 for k, v in S.items():
     if ONLY and k not in ONLY: continue

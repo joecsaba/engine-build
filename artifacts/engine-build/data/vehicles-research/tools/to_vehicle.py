@@ -225,7 +225,9 @@ for fn in spec["files"]:
             if any(fo_y[0] <= year <= fo_y[1] and e["cid"] == c for c, fo_y in [(x["cid"], x["years"]) for x in spec.get("no_link", [])]):
                 rec["noLink"] = True
             for fo in spec.get("family_overrides", []):
-                if fo["years"][0] <= year <= fo["years"][1] and e["cid"] in fo["cid"]:
+                # optional "diesel": true/false keeps a gas and a diesel of the same size apart
+                if fo["years"][0] <= year <= fo["years"][1] and e["cid"] in fo["cid"] and \
+                        ("diesel" not in fo or bool(is_diesel(e)) == fo["diesel"]):
                     rec["linkFamily"] = fo["url"]
             # Corporate engines: say which division built it (Firebird used
             # Chevrolet, Buick and Oldsmobile engines from 1977).

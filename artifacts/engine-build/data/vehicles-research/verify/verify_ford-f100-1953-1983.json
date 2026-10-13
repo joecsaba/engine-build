@@ -1,0 +1,4125 @@
+{
+ "vehicle": "ford-f100-1953-1983",
+ "notes": "No NHRA rows exist for the F-100 (nhra file empty); EPA file empty (pre-1984). Sources per engine-year: Ford factory brochure for that year (oldcarbrochures.org scans, OCR'd and page images read), Hagerty Valuation Tools per-year F-100 engine list, BlueOvalTech year history page (enthusiast reference site, not a forum), and the Wikipedia F-Series generation article (counted once). Hagerty's pre-1961 and 1970s hp figures are often not factory ratings; factory brochure hp used where readable. 1972+ ratings are SAE net and vary by GVW/emissions; spreads in notes. 1958 has no factory brochure online. 460 V-8 in the F-100 only for 1974. F-100 4x4: 1959-1976; F-100 2WD-only 1977-1983.",
+ "years": {
+  "1953": [
+   {
+    "gen": "gen2",
+    "cid": 215,
+    "hp": 101,
+    "hp_basis": "gross",
+    "name": "3.5L / 215 I6",
+    "rpo": "Cost Clipper Six",
+    "common_name": "Cost Clipper Six",
+    "trims": [
+     "F-100"
+    ],
+    "nhra": false,
+    "sources": [
+     {
+      "name": "Ford 1953 F-100 Trucks brochure",
+      "url": "https://oldcarbrochures.org/United%20States/Ford%20Motor%20Company%20Trucks-Vans/1953-Trucks/1953%20Ford%20F-100%20Trucks-2022-7-31%2014.38.14/index.html",
+      "says": "101-H.P. Cost Clipper Six; specs: 215 cu in, 3.56 x 3.6, 101 @ 3500"
+     },
+     {
+      "name": "Hagerty Valuation Tools, 1953 Ford F-100 1/2 Ton (engine options list)",
+      "url": "https://www.hagerty.com/valuation-tools/ford/f~100/1953/1953-ford-f~100-1!2_ton",
+      "says": "6-cyl. 215cid/101hp 1bbl"
+     },
+     {
+      "name": "Wikipedia - Ford F-Series (second generation)",
+      "url": "https://en.wikipedia.org/wiki/Ford_F-Series_(second_generation)",
+      "says": "215 CID straight-6, 1953, 101 hp"
+     }
+    ],
+    "status": "three_sources_not_nhra",
+    "note": ""
+   },
+   {
+    "gen": "gen2",
+    "cid": 239,
+    "hp": 106,
+    "hp_basis": "gross",
+    "name": "3.9L / 239 flathead V8",
+    "rpo": "Truck V-8",
+    "common_name": "Flathead V8",
+    "trims": [
+     "F-100"
+    ],
+    "nhra": false,
+    "sources": [
+     {
+      "name": "Ford 1953 F-100 Trucks brochure",
+      "url": "https://oldcarbrochures.org/United%20States/Ford%20Motor%20Company%20Trucks-Vans/1953-Trucks/1953%20Ford%20F-100%20Trucks-2022-7-31%2014.38.14/index.html",
+      "says": "106-H.P. Truck V-8; specs: 3.19 x 3.75, 239 cu in, 106 @ 3800"
+     },
+     {
+      "name": "Hagerty Valuation Tools, 1953 Ford F-100 1/2 Ton (engine options list)",
+      "url": "https://www.hagerty.com/valuation-tools/ford/f~100/1953/1953-ford-f~100-1!2_ton",
+      "says": "8-cyl. 239cid/106hp 2bbl"
+     },
+     {
+      "name": "Wikipedia - Ford F-Series (second generation)",
+      "url": "https://en.wikipedia.org/wiki/Ford_F-Series_(second_generation)",
+      "says": "239 CID Flathead V8, 1953, 100 hp"
+     },
+     {
+      "name": "BlueOvalTech, 1953 Ford F-Series trucks history page",
+      "url": "https://www.blueovaltech.com/history/1953-ford-trucks.php",
+      "says": "1953 was the last year for the Flathead V8 in the F-Series"
+     }
+    ],
+    "status": "three_sources_not_nhra",
+    "note": "Factory brochure and Hagerty give 106 hp; Wikipedia 100; BlueOvalTech implies 110 (car rating). Last flathead year."
+   }
+  ],
+  "1954": [
+   {
+    "gen": "gen2",
+    "cid": 223,
+    "hp": 115,
+    "hp_basis": "gross",
+    "name": "3.7L / 223 I6",
+    "rpo": "Cost Clipper Six",
+    "common_name": "Mileage Maker / Cost Clipper Six",
+    "trims": [
+     "F-100"
+    ],
+    "nhra": false,
+    "sources": [
+     {
+      "name": "Ford 1954 F-100 Truck brochure",
+      "url": "https://oldcarbrochures.org/United%20States/Ford%20Motor%20Company%20Trucks-Vans/1954-Trucks/1954-Ford-F-100-Truck-Brochure/index.html",
+      "says": "new 115-h.p. Cost Clipper Six; specs 3.62 x 3.6, 223 cu in"
+     },
+     {
+      "name": "Hagerty Valuation Tools, 1954 Ford F-100 1/2 Ton (engine options list)",
+      "url": "https://www.hagerty.com/valuation-tools/ford/f~100/1954/1954-ford-f~100-1!2_ton",
+      "says": "6-cyl. 223cid/115hp 1bbl"
+     },
+     {
+      "name": "Wikipedia - Ford F-Series (second generation)",
+      "url": "https://en.wikipedia.org/wiki/Ford_F-Series_(second_generation)",
+      "says": "223 CID Mileage Maker I6, 1954-55, 115 hp"
+     },
+     {
+      "name": "BlueOvalTech, 1954 Ford F-Series trucks history page",
+      "url": "https://www.blueovaltech.com/history/1954-ford-trucks.php",
+      "says": "now 223 cubic inches and produced 115 horsepower"
+     }
+    ],
+    "status": "three_sources_not_nhra",
+    "note": ""
+   },
+   {
+    "gen": "gen2",
+    "cid": 239,
+    "hp": 130,
+    "hp_basis": "gross",
+    "name": "3.9L / 239 Y-block V8",
+    "rpo": "Power King V-8",
+    "common_name": "Y-block 239",
+    "trims": [
+     "F-100"
+    ],
+    "nhra": false,
+    "sources": [
+     {
+      "name": "Ford 1954 F-100 Truck brochure",
+      "url": "https://oldcarbrochures.org/United%20States/Ford%20Motor%20Company%20Trucks-Vans/1954-Trucks/1954-Ford-F-100-Truck-Brochure/index.html",
+      "says": "all-new 130-h.p. Power King V-8 (overhead valve)"
+     },
+     {
+      "name": "Hagerty Valuation Tools, 1954 Ford F-100 1/2 Ton (engine options list)",
+      "url": "https://www.hagerty.com/valuation-tools/ford/f~100/1954/1954-ford-f~100-1!2_ton",
+      "says": "8-cyl. 239cid/130hp 2bbl"
+     },
+     {
+      "name": "Wikipedia - Ford F-Series (second generation)",
+      "url": "https://en.wikipedia.org/wiki/Ford_F-Series_(second_generation)",
+      "says": "239 CID Y-block V8, 1954-55, 130 hp"
+     },
+     {
+      "name": "BlueOvalTech, 1954 Ford F-Series trucks history page",
+      "url": "https://www.blueovaltech.com/history/1954-ford-trucks.php",
+      "says": "OHV Power King V8, 239 cubic inches, 130 horsepower"
+     }
+    ],
+    "status": "three_sources_not_nhra",
+    "note": "First OHV V8 in the F-Series."
+   }
+  ],
+  "1955": [
+   {
+    "gen": "gen2",
+    "cid": 223,
+    "hp": 118,
+    "hp_basis": "gross",
+    "name": "3.7L / 223 I6",
+    "rpo": "Cost Clipper Six",
+    "common_name": "Mileage Maker / Cost Clipper Six",
+    "trims": [
+     "F-100"
+    ],
+    "nhra": false,
+    "sources": [
+     {
+      "name": "Ford 1955 F-100 Truck brochure",
+      "url": "https://oldcarbrochures.org/United%20States/Ford%20Motor%20Company%20Trucks-Vans/1955_Trucks_and_Vans/1955_Ford_F-100_Truck_Brochure/index.html",
+      "says": "Cost Clipper Six: 223 cu in, Brake Horsepower 118"
+     },
+     {
+      "name": "Hagerty Valuation Tools, 1955 Ford F-100 1/2 Ton (engine options list)",
+      "url": "https://www.hagerty.com/valuation-tools/ford/f~100/1955/1955-ford-f~100-1!2_ton",
+      "says": "6-cyl. 223cid/118hp 1bbl"
+     },
+     {
+      "name": "Wikipedia - Ford F-Series (second generation)",
+      "url": "https://en.wikipedia.org/wiki/Ford_F-Series_(second_generation)",
+      "says": "223 CID Mileage Maker I6 listed 1954-55 (115 hp)"
+     }
+    ],
+    "status": "three_sources_not_nhra",
+    "note": "Wikipedia carries the 1954 115-hp figure into 1955; factory says 118."
+   },
+   {
+    "gen": "gen2",
+    "cid": 239,
+    "hp": 132,
+    "hp_basis": "gross",
+    "name": "3.9L / 239 Y-block V8",
+    "rpo": "Power King V-8",
+    "common_name": "Y-block 239",
+    "trims": [
+     "F-100"
+    ],
+    "nhra": false,
+    "sources": [
+     {
+      "name": "Ford 1955 F-100 Truck brochure",
+      "url": "https://oldcarbrochures.org/United%20States/Ford%20Motor%20Company%20Trucks-Vans/1955_Trucks_and_Vans/1955_Ford_F-100_Truck_Brochure/index.html",
+      "says": "Power King V-8: 239 cu in, Brake Horsepower 132 at 4200"
+     },
+     {
+      "name": "Hagerty Valuation Tools, 1955 Ford F-100 1/2 Ton (engine options list)",
+      "url": "https://www.hagerty.com/valuation-tools/ford/f~100/1955/1955-ford-f~100-1!2_ton",
+      "says": "8-cyl. 239cid/132hp 2bbl"
+     },
+     {
+      "name": "Wikipedia - Ford F-Series (second generation)",
+      "url": "https://en.wikipedia.org/wiki/Ford_F-Series_(second_generation)",
+      "says": "239 CID Y-block V8 listed 1954-55 (130 hp)"
+     }
+    ],
+    "status": "three_sources_not_nhra",
+    "note": "Conceptcarz (not used) claims a 162-hp 272 for 1955; the F-100 brochure lists only the 239/132. Wikipedia's 256/279/317 V8s are heavier-series engines."
+   }
+  ],
+  "1956": [
+   {
+    "gen": "gen2",
+    "cid": 223,
+    "hp": 133,
+    "hp_basis": "gross",
+    "name": "3.7L / 223 I6",
+    "rpo": "Cost Cutter Six",
+    "common_name": "Mileage Maker / Cost Cutter Six",
+    "trims": [
+     "F-100"
+    ],
+    "nhra": false,
+    "sources": [
+     {
+      "name": "Ford 1956 Truck Full Line brochure",
+      "url": "https://oldcarbrochures.org/United%20States/Ford%20Motor%20Company%20Trucks-Vans/1956-Trucks/1956%20Ford%20Truck%20Full%20Line/index.html",
+      "says": "F-100: new 133-h.p. Cost Cutter Six; 223 cu in, 133 at 4000"
+     },
+     {
+      "name": "Hagerty Valuation Tools, 1956 Ford F-100 1/2 Ton (engine options list)",
+      "url": "https://www.hagerty.com/valuation-tools/ford/f~100/1956/1956-ford-f~100-1!2_ton",
+      "says": "6-cyl. 223cid/133hp 1bbl"
+     },
+     {
+      "name": "Wikipedia - Ford F-Series (second generation)",
+      "url": "https://en.wikipedia.org/wiki/Ford_F-Series_(second_generation)",
+      "says": "223 CID Mileage Maker I6, 1956, 137 hp"
+     }
+    ],
+    "status": "three_sources_not_nhra",
+    "note": "Wikipedia's 137 hp is the Ford car / Sedan Delivery rating (same brochure gives 137 for the Sedan Delivery); truck rating 133."
+   },
+   {
+    "gen": "gen2",
+    "cid": 272,
+    "hp": 167,
+    "hp_basis": "gross",
+    "name": "4.5L / 272 Y-block V8",
+    "rpo": "Power King V-8",
+    "common_name": "Y-block 272",
+    "trims": [
+     "F-100"
+    ],
+    "nhra": false,
+    "sources": [
+     {
+      "name": "Ford 1956 Truck Full Line brochure",
+      "url": "https://oldcarbrochures.org/United%20States/Ford%20Motor%20Company%20Trucks-Vans/1956-Trucks/1956%20Ford%20Truck%20Full%20Line/index.html",
+      "says": "F-100 pickup: new 167-h.p. Power King Y-8"
+     },
+     {
+      "name": "Hagerty Valuation Tools, 1956 Ford F-100 1/2 Ton (engine options list)",
+      "url": "https://www.hagerty.com/valuation-tools/ford/f~100/1956/1956-ford-f~100-1!2_ton",
+      "says": "8-cyl. 272cid/167hp 2bbl"
+     },
+     {
+      "name": "Wikipedia - Ford F-Series (second generation)",
+      "url": "https://en.wikipedia.org/wiki/Ford_F-Series_(second_generation)",
+      "says": "272 CID Truck 2V Y-block V8, 1956, 172 hp"
+     },
+     {
+      "name": "BlueOvalTech, 1956 Ford F-Series trucks history page",
+      "url": "https://www.blueovaltech.com/history/1956-ford-trucks.php",
+      "says": "A larger 272 cubic inch V8 with 167 horsepower"
+     }
+    ],
+    "status": "three_sources_not_nhra",
+    "note": "Wikipedia 172 hp; factory, Hagerty, BlueOvalTech 167. 173/176 hp are car/Sedan Delivery ratings."
+   }
+  ],
+  "1957": [
+   {
+    "gen": "gen3",
+    "cid": 223,
+    "hp": 139,
+    "hp_basis": "gross",
+    "name": "3.7L / 223 I6",
+    "rpo": "Ford 223 Six",
+    "common_name": "Mileage Maker Six",
+    "trims": [
+     "F-100"
+    ],
+    "nhra": false,
+    "sources": [
+     {
+      "name": "Ford 1957 Light Duty Trucks brochure (spec page)",
+      "url": "https://oldcarbrochures.org/United%20States/Ford%20Motor%20Company%20Trucks-Vans/1957%20Trucks%20and%20Vans/1957%20Ford%20Light%20Duty%20Trucks/index.html",
+      "says": "Ford 223 Six (std.), 223 cu in, 8.3:1, max gross hp 139 @ 4200; clutch std F-100 with 223 Six"
+     },
+     {
+      "name": "Hagerty Valuation Tools, 1957 Ford F-100 1/2 Ton (engine options list)",
+      "url": "https://www.hagerty.com/valuation-tools/ford/f~100/1957/1957-ford-f~100-1!2_ton",
+      "says": "6-cyl. 223cid/126hp 1bbl"
+     },
+     {
+      "name": "BlueOvalTech, 1957 Ford F-Series trucks history page",
+      "url": "https://www.blueovaltech.com/history/1957-ford-trucks.php",
+      "says": "You could also get a 223 cubic inch six cylinder"
+     },
+     {
+      "name": "Wikipedia - Ford F-Series (third generation)",
+      "url": "https://en.wikipedia.org/wiki/Ford_F-Series_(third_generation)",
+      "says": "Infobox lists 223 Mileage Maker I6, 272 Y-block and 292 Y-block for the 1957-60 generation"
+     }
+    ],
+    "status": "three_sources_not_nhra",
+    "note": "Hagerty 126 hp (not a factory gross figure); factory gross 139."
+   },
+   {
+    "gen": "gen3",
+    "cid": 272,
+    "hp": 171,
+    "hp_basis": "gross",
+    "name": "4.5L / 272 Y-block V8",
+    "rpo": "Ford 272 V-8 (opt.)",
+    "common_name": "Y-block 272",
+    "trims": [
+     "F-100"
+    ],
+    "nhra": false,
+    "sources": [
+     {
+      "name": "Ford 1957 Light Duty Trucks brochure (spec page)",
+      "url": "https://oldcarbrochures.org/United%20States/Ford%20Motor%20Company%20Trucks-Vans/1957%20Trucks%20and%20Vans/1957%20Ford%20Light%20Duty%20Trucks/index.html",
+      "says": "Ford 272 (opt.) 272 cu in, 171 gross hp; 10.5-in clutch std F-100 with 272 V-8"
+     },
+     {
+      "name": "Hagerty Valuation Tools, 1957 Ford F-100 1/2 Ton (engine options list)",
+      "url": "https://www.hagerty.com/valuation-tools/ford/f~100/1957/1957-ford-f~100-1!2_ton",
+      "says": "8-cyl. 272cid/145hp 2bbl"
+     },
+     {
+      "name": "BlueOvalTech, 1957 Ford F-Series trucks history page",
+      "url": "https://www.blueovaltech.com/history/1957-ford-trucks.php",
+      "says": "new Y-block V-8 engine with 272 cubic inches, 167 horsepower"
+     },
+     {
+      "name": "Wikipedia - Ford F-Series (third generation)",
+      "url": "https://en.wikipedia.org/wiki/Ford_F-Series_(third_generation)",
+      "says": "Infobox lists 223 Mileage Maker I6, 272 Y-block and 292 Y-block for the 1957-60 generation"
+     }
+    ],
+    "status": "three_sources_not_nhra",
+    "note": "Factory 171 gross; BlueOvalTech repeats 1956's 167; Hagerty 145. The brochure's 181-hp 272 is the heavy-duty version standard on dual-rear F-350."
+   }
+  ],
+  "1958": [
+   {
+    "gen": "gen3",
+    "cid": 223,
+    "hp": 139,
+    "hp_basis": "gross",
+    "name": "3.7L / 223 I6",
+    "rpo": "Ford 223 Six",
+    "common_name": "Mileage Maker Six",
+    "trims": [
+     "F-100"
+    ],
+    "nhra": false,
+    "sources": [
+     {
+      "name": "Hagerty Valuation Tools, 1958 Ford F-100 1/2 Ton (engine options list)",
+      "url": "https://www.hagerty.com/valuation-tools/ford/f~100/1958/1958-ford-f~100-1!2_ton",
+      "says": "6-cyl. 223cid/126hp 1bbl"
+     },
+     {
+      "name": "Wikipedia - Ford F-Series (third generation)",
+      "url": "https://en.wikipedia.org/wiki/Ford_F-Series_(third_generation)",
+      "says": "223 CID Mileage Maker I6, 1958-1960"
+     }
+    ],
+    "status": "two_sources_not_nhra",
+    "note": "No 1958 Ford truck brochure online (oldcarbrochures has only an Edsel-dealer folder). hp is the 1957/1959 factory gross figure carried over; Hagerty 126."
+   },
+   {
+    "gen": "gen3",
+    "cid": 272,
+    "hp": 171,
+    "hp_basis": "gross",
+    "name": "4.5L / 272 Y-block V8",
+    "rpo": "Ford 272 V-8",
+    "common_name": "Y-block 272",
+    "trims": [
+     "F-100"
+    ],
+    "nhra": false,
+    "sources": [
+     {
+      "name": "Hagerty Valuation Tools, 1958 Ford F-100 1/2 Ton (engine options list)",
+      "url": "https://www.hagerty.com/valuation-tools/ford/f~100/1958/1958-ford-f~100-1!2_ton",
+      "says": "8-cyl. 272cid/145hp 2bbl"
+     },
+     {
+      "name": "Wikipedia - Ford F-Series (third generation)",
+      "url": "https://en.wikipedia.org/wiki/Ford_F-Series_(third_generation)",
+      "says": "272 CID Y-block V8, 1958"
+     },
+     {
+      "name": "BlueOvalTech, 1958 Ford F-Series trucks history page",
+      "url": "https://www.blueovaltech.com/history/1958-ford-trucks.php",
+      "says": "mid-year change: the 272 cid engine that made 181 horsepower was replaced by a 292"
+     }
+    ],
+    "status": "three_sources_not_nhra",
+    "note": "Early-1958 V8. Ratings disagree (BlueOvalTech 181, Hagerty 145, 1957 factory 171); no 1958 factory document found, hp uncertain."
+   },
+   {
+    "gen": "gen3",
+    "cid": 292,
+    "hp": 186,
+    "hp_basis": "gross",
+    "name": "4.8L / 292 Y-block V8",
+    "rpo": "Ford 292 V-8",
+    "common_name": "Y-block 292",
+    "trims": [
+     "F-100"
+    ],
+    "nhra": false,
+    "sources": [
+     {
+      "name": "BlueOvalTech, 1958 Ford F-Series trucks history page",
+      "url": "https://www.blueovaltech.com/history/1958-ford-trucks.php",
+      "says": "272 replaced mid-year by a 292 cid V8 that produced 186 horsepower"
+     }
+    ],
+    "status": "single_source",
+    "note": "Mid-year 1958 replacement for the 272 per BlueOvalTech (forum posts agree; not citable). Wikipedia and Hagerty start the 292 in 1959. Needs a 1958 factory document."
+   }
+  ],
+  "1959": [
+   {
+    "gen": "gen3",
+    "cid": 223,
+    "hp": 139,
+    "hp_basis": "gross",
+    "name": "3.7L / 223 I6",
+    "rpo": "Ford 223 Six",
+    "common_name": "Mileage Maker Six",
+    "trims": [
+     "F-100 2WD and 4WD"
+    ],
+    "nhra": false,
+    "sources": [
+     {
+      "name": "Ford 1959 4-Wheel Drive Trucks folder (rev), F-100/F-250 4x4",
+      "url": "https://oldcarbrochures.org/United%20States/Ford%20Motor%20Company%20Trucks-Vans/1959-Trucks/1959-Ford-4WD-Trucks-Folder-Rev/index.html",
+      "says": "223 Six: bore 3.62, stroke 3.60, brake horsepower 139 @ 4200"
+     },
+     {
+      "name": "Hagerty Valuation Tools, 1959 Ford F-100 1/2 Ton (engine options list)",
+      "url": "https://www.hagerty.com/valuation-tools/ford/f~100/1959/1959-ford-f~100-1!2_ton",
+      "says": "6-cyl. 223cid/126hp 1bbl"
+     },
+     {
+      "name": "Wikipedia - Ford F-Series (third generation)",
+      "url": "https://en.wikipedia.org/wiki/Ford_F-Series_(third_generation)",
+      "says": "223 CID Mileage Maker I6, 1958-1960"
+     }
+    ],
+    "status": "three_sources_not_nhra",
+    "note": "1959 is the first year of a factory-built F-100 4x4. Hagerty 126 hp."
+   },
+   {
+    "gen": "gen3",
+    "cid": 292,
+    "hp": 186,
+    "hp_basis": "gross",
+    "name": "4.8L / 292 Y-block V8",
+    "rpo": "Ford 292 V-8",
+    "common_name": "Y-block 292",
+    "trims": [
+     "F-100 2WD and 4WD"
+    ],
+    "nhra": false,
+    "sources": [
+     {
+      "name": "Ford 1959 4-Wheel Drive Trucks folder (rev), F-100/F-250 4x4",
+      "url": "https://oldcarbrochures.org/United%20States/Ford%20Motor%20Company%20Trucks-Vans/1959-Trucks/1959-Ford-4WD-Trucks-Folder-Rev/index.html",
+      "says": "292 V-8: bore 3.75, stroke 3.30, brake horsepower 186 @ 4000"
+     },
+     {
+      "name": "Hagerty Valuation Tools, 1959 Ford F-100 1/2 Ton (engine options list)",
+      "url": "https://www.hagerty.com/valuation-tools/ford/f~100/1959/1959-ford-f~100-1!2_ton",
+      "says": "8-cyl. 292cid/158hp 2bbl; 292cid/160hp 4bbl"
+     },
+     {
+      "name": "Wikipedia - Ford F-Series (third generation)",
+      "url": "https://en.wikipedia.org/wiki/Ford_F-Series_(third_generation)",
+      "says": "292 CID Y-block V8, 1959-1960"
+     },
+     {
+      "name": "BlueOvalTech, 1959 Ford F-Series trucks history page",
+      "url": "https://www.blueovaltech.com/history/1959-ford-trucks.php",
+      "says": "a larger V8 (292 c.i., 186 horsepower)"
+     }
+    ],
+    "status": "three_sources_not_nhra",
+    "note": "Hagerty 158/160 hp (not factory gross)."
+   }
+  ],
+  "1960": [
+   {
+    "gen": "gen3",
+    "cid": 223,
+    "hp": 139,
+    "hp_basis": "gross",
+    "name": "3.7L / 223 I6",
+    "rpo": "223 Six (Std.)",
+    "common_name": "Mileage Maker Six",
+    "trims": [
+     "F-100 2WD and 4WD"
+    ],
+    "nhra": false,
+    "sources": [
+     {
+      "name": "Ford 1960 4-Wheel Drive Trucks brochure",
+      "url": "https://oldcarbrochures.org/United%20States/Ford%20Motor%20Company%20Trucks-Vans/1960-Trucks/1960-Ford-Trucks-4WD-Brochure/index.html",
+      "says": "Power: 223 Six (Std.) ... @ 4200; 292 V-8 (Opt.)"
+     },
+     {
+      "name": "Hagerty Valuation Tools, 1960 Ford F-100 1/2 Ton (engine options list)",
+      "url": "https://www.hagerty.com/valuation-tools/ford/f~100/1960/1960-ford-f~100-1!2_ton",
+      "says": "6-cyl. 223cid/126hp 1bbl"
+     },
+     {
+      "name": "Wikipedia - Ford F-Series (third generation)",
+      "url": "https://en.wikipedia.org/wiki/Ford_F-Series_(third_generation)",
+      "says": "223 CID Mileage Maker I6, 1958-1960"
+     },
+     {
+      "name": "BlueOvalTech, 1960 Ford F-Series trucks history page",
+      "url": "https://www.blueovaltech.com/history/1960-ford-trucks.php",
+      "says": "223 cid I-6 that made 139 horsepower @ 4,200 rpm"
+     }
+    ],
+    "status": "three_sources_not_nhra",
+    "note": "Six hp illegible in the brochure scan; 139 from BlueOvalTech (quoting the brochure). Hagerty 126."
+   },
+   {
+    "gen": "gen3",
+    "cid": 292,
+    "hp": 172,
+    "hp_basis": "gross",
+    "name": "4.8L / 292 Y-block V8",
+    "rpo": "292 V-8 (Opt.)",
+    "common_name": "Y-block 292",
+    "trims": [
+     "F-100 2WD and 4WD"
+    ],
+    "nhra": false,
+    "sources": [
+     {
+      "name": "Ford 1960 4-Wheel Drive Trucks brochure",
+      "url": "https://oldcarbrochures.org/United%20States/Ford%20Motor%20Company%20Trucks-Vans/1960-Trucks/1960-Ford-Trucks-4WD-Brochure/index.html",
+      "says": "292 V-8 (Opt.) bore 3.75, stroke 3.30, Horsepower 172 @ 4000"
+     },
+     {
+      "name": "Hagerty Valuation Tools, 1960 Ford F-100 1/2 Ton (engine options list)",
+      "url": "https://www.hagerty.com/valuation-tools/ford/f~100/1960/1960-ford-f~100-1!2_ton",
+      "says": "8-cyl. 292cid/146hp 2bbl"
+     },
+     {
+      "name": "Wikipedia - Ford F-Series (third generation)",
+      "url": "https://en.wikipedia.org/wiki/Ford_F-Series_(third_generation)",
+      "says": "292 CID Y-block V8, 1959-1960"
+     },
+     {
+      "name": "BlueOvalTech, 1960 Ford F-Series trucks history page",
+      "url": "https://www.blueovaltech.com/history/1960-ford-trucks.php",
+      "says": "292 cid Y block V-8 that produced 172 horsepower @ 4,000 rpm"
+     }
+    ],
+    "status": "three_sources_not_nhra",
+    "note": "Rated 172 for 1960 (186 in 1959). Hagerty 146."
+   }
+  ],
+  "1961": [
+   {
+    "gen": "gen4",
+    "cid": 223,
+    "hp": 135,
+    "hp_basis": "gross",
+    "name": "3.7L / 223 I6",
+    "rpo": "223 Six",
+    "common_name": "Mileage Maker Six",
+    "trims": [
+     "F-100 2WD and 4WD"
+    ],
+    "nhra": false,
+    "sources": [
+     {
+      "name": "Ford 1961 Small Trucks brochure (rev)",
+      "url": "https://oldcarbrochures.org/United%20States/Ford%20Motor%20Company%20Trucks-Vans/1961_Trucks-Vans/1961-Ford-Small-Trucks-Brochure-Rev/index.html",
+      "says": "standard gas-saving 135-hp Six ... 135-hp 223 SIX standard F-100, F-250, F-350"
+     },
+     {
+      "name": "Hagerty Valuation Tools, 1961 Ford F-100 1/2 Ton (engine options list)",
+      "url": "https://www.hagerty.com/valuation-tools/ford/f~100/1961/1961-ford-f~100-1!2_ton",
+      "says": "6-cyl. 223cid/135hp 1bbl"
+     },
+     {
+      "name": "BlueOvalTech, 1961 Ford F-Series trucks history page",
+      "url": "https://www.blueovaltech.com/history/1961-ford-trucks.php",
+      "says": "223 cid I6 F-100, F-250, F-350, 135 hp gross"
+     },
+     {
+      "name": "Wikipedia - Ford F-Series (fourth generation)",
+      "url": "https://en.wikipedia.org/wiki/Ford_F-Series_(fourth_generation)",
+      "says": "223 CID Mileage Maker I6, 1961-64, 114 hp"
+     }
+    ],
+    "status": "three_sources_not_nhra",
+    "note": "Wikipedia 114 hp (net); factory gross 135. BlueOvalTech mistypes 233 cid in 1961/62/64."
+   },
+   {
+    "gen": "gen4",
+    "cid": 292,
+    "hp": 160,
+    "hp_basis": "gross",
+    "name": "4.8L / 292 Y-block V8",
+    "rpo": "292 V-8",
+    "common_name": "Y-block 292",
+    "trims": [
+     "F-100 2WD and 4WD"
+    ],
+    "nhra": false,
+    "sources": [
+     {
+      "name": "Ford 1961 Small Trucks brochure (rev)",
+      "url": "https://oldcarbrochures.org/United%20States/Ford%20Motor%20Company%20Trucks-Vans/1961_Trucks-Vans/1961-Ford-Small-Trucks-Brochure-Rev/index.html",
+      "says": "optional 160-hp V-8 ... 160-hp 292 V-8 optional F-100, F-250, F-350"
+     },
+     {
+      "name": "Hagerty Valuation Tools, 1961 Ford F-100 1/2 Ton (engine options list)",
+      "url": "https://www.hagerty.com/valuation-tools/ford/f~100/1961/1961-ford-f~100-1!2_ton",
+      "says": "8-cyl. 292cid/160hp 2bbl"
+     },
+     {
+      "name": "BlueOvalTech, 1961 Ford F-Series trucks history page",
+      "url": "https://www.blueovaltech.com/history/1961-ford-trucks.php",
+      "says": "292 cid V8 F-100, F-250, F-350, 160 hp gross"
+     },
+     {
+      "name": "Wikipedia - Ford F-Series (fourth generation)",
+      "url": "https://en.wikipedia.org/wiki/Ford_F-Series_(fourth_generation)",
+      "says": "292 CID Y-block V8, 1961-64, 170 hp"
+     }
+    ],
+    "status": "three_sources_not_nhra",
+    "note": "Wikipedia 170 hp; factory 160."
+   }
+  ],
+  "1962": [
+   {
+    "gen": "gen4",
+    "cid": 223,
+    "hp": 135,
+    "hp_basis": "gross",
+    "name": "3.7L / 223 I6",
+    "rpo": "223 Six",
+    "common_name": "Mileage Maker Six",
+    "trims": [
+     "F-100 2WD and 4WD"
+    ],
+    "nhra": false,
+    "sources": [
+     {
+      "name": "Ford 1962 F-100 Trucks brochure (rev)",
+      "url": "https://oldcarbrochures.org/United%20States/Ford%20Motor%20Company%20Trucks-Vans/1962_Trucks-Vans/1962%20Ford%20F-100%20Trucks%20%28Rev%29/index.html",
+      "says": "F-100: gas-saving 135-hp Six; 135-hp 223 SIX 200 lbs-ft"
+     },
+     {
+      "name": "Hagerty Valuation Tools, 1962 Ford F-100 1/2 Ton (engine options list)",
+      "url": "https://www.hagerty.com/valuation-tools/ford/f~100/1962/1962-ford-f~100-1!2_ton",
+      "says": "6-cyl. 223cid/135hp 1bbl"
+     },
+     {
+      "name": "BlueOvalTech, 1962 Ford F-Series trucks history page",
+      "url": "https://www.blueovaltech.com/history/1962-ford-trucks.php",
+      "says": "223 cid I6 F-100, F-250, F-350, 135 hp gross"
+     },
+     {
+      "name": "Wikipedia - Ford F-Series (fourth generation)",
+      "url": "https://en.wikipedia.org/wiki/Ford_F-Series_(fourth_generation)",
+      "says": "223 CID Mileage Maker I6, 1961-64, 114 hp"
+     }
+    ],
+    "status": "three_sources_not_nhra",
+    "note": "Wikipedia 114 hp (net); factory gross 135. BlueOvalTech mistypes 233 cid in 1961/62/64."
+   },
+   {
+    "gen": "gen4",
+    "cid": 292,
+    "hp": 160,
+    "hp_basis": "gross",
+    "name": "4.8L / 292 Y-block V8",
+    "rpo": "292 V-8",
+    "common_name": "Y-block 292",
+    "trims": [
+     "F-100 2WD and 4WD"
+    ],
+    "nhra": false,
+    "sources": [
+     {
+      "name": "Ford 1962 F-100 Trucks brochure (rev)",
+      "url": "https://oldcarbrochures.org/United%20States/Ford%20Motor%20Company%20Trucks-Vans/1962_Trucks-Vans/1962%20Ford%20F-100%20Trucks%20%28Rev%29/index.html",
+      "says": "the popular 160-hp V-8; 292 V-8 Brake Horsepower 160 @ 4000"
+     },
+     {
+      "name": "Hagerty Valuation Tools, 1962 Ford F-100 1/2 Ton (engine options list)",
+      "url": "https://www.hagerty.com/valuation-tools/ford/f~100/1962/1962-ford-f~100-1!2_ton",
+      "says": "8-cyl. 292cid/160hp 2bbl"
+     },
+     {
+      "name": "BlueOvalTech, 1962 Ford F-Series trucks history page",
+      "url": "https://www.blueovaltech.com/history/1962-ford-trucks.php",
+      "says": "292 cid V8 F-100, F-250, F-350, 160 hp gross"
+     },
+     {
+      "name": "Wikipedia - Ford F-Series (fourth generation)",
+      "url": "https://en.wikipedia.org/wiki/Ford_F-Series_(fourth_generation)",
+      "says": "292 CID Y-block V8, 1961-64, 170 hp"
+     }
+    ],
+    "status": "three_sources_not_nhra",
+    "note": "Wikipedia 170 hp; factory 160."
+   }
+  ],
+  "1963": [
+   {
+    "gen": "gen4",
+    "cid": 223,
+    "hp": 135,
+    "hp_basis": "gross",
+    "name": "3.7L / 223 I6",
+    "rpo": "223 Six",
+    "common_name": "Mileage Maker Six",
+    "trims": [
+     "F-100 2WD and 4WD"
+    ],
+    "nhra": false,
+    "sources": [
+     {
+      "name": "Ford 1963 F-100 Trucks brochure",
+      "url": "https://oldcarbrochures.org/United%20States/Ford%20Motor%20Company%20Trucks-Vans/1963_Trucks-Vans/1963%20Ford%20F100%20Trucks/index.html",
+      "says": "spec table: 223 Six standard, 292 V-8 optional"
+     },
+     {
+      "name": "Hagerty Valuation Tools, 1963 Ford F-100 1/2 Ton (engine options list)",
+      "url": "https://www.hagerty.com/valuation-tools/ford/f~100/1963/1963-ford-f~100-1!2_ton",
+      "says": "6-cyl. 223cid/135hp 1bbl"
+     },
+     {
+      "name": "BlueOvalTech, 1963 Ford F-Series trucks history page",
+      "url": "https://www.blueovaltech.com/history/1963-ford-trucks.php",
+      "says": "223 cid I6 F-100, F-250, F-350, 135 hp gross"
+     },
+     {
+      "name": "Wikipedia - Ford F-Series (fourth generation)",
+      "url": "https://en.wikipedia.org/wiki/Ford_F-Series_(fourth_generation)",
+      "says": "223 CID Mileage Maker I6, 1961-64, 114 hp"
+     }
+    ],
+    "status": "three_sources_not_nhra",
+    "note": "Wikipedia 114 hp (net); factory gross 135. BlueOvalTech mistypes 233 cid in 1961/62/64."
+   },
+   {
+    "gen": "gen4",
+    "cid": 292,
+    "hp": 160,
+    "hp_basis": "gross",
+    "name": "4.8L / 292 Y-block V8",
+    "rpo": "292 V-8",
+    "common_name": "Y-block 292",
+    "trims": [
+     "F-100 2WD and 4WD"
+    ],
+    "nhra": false,
+    "sources": [
+     {
+      "name": "Ford 1963 F-100 Trucks brochure",
+      "url": "https://oldcarbrochures.org/United%20States/Ford%20Motor%20Company%20Trucks-Vans/1963_Trucks-Vans/1963%20Ford%20F100%20Trucks/index.html",
+      "says": "spec table: 292 V-8 optional (HD clutch with V-8)"
+     },
+     {
+      "name": "Hagerty Valuation Tools, 1963 Ford F-100 1/2 Ton (engine options list)",
+      "url": "https://www.hagerty.com/valuation-tools/ford/f~100/1963/1963-ford-f~100-1!2_ton",
+      "says": "8-cyl. 292cid/160hp 2bbl"
+     },
+     {
+      "name": "BlueOvalTech, 1963 Ford F-Series trucks history page",
+      "url": "https://www.blueovaltech.com/history/1963-ford-trucks.php",
+      "says": "292 cid V8 F-100, F-250, F-350, 160 hp gross"
+     },
+     {
+      "name": "Wikipedia - Ford F-Series (fourth generation)",
+      "url": "https://en.wikipedia.org/wiki/Ford_F-Series_(fourth_generation)",
+      "says": "292 CID Y-block V8, 1961-64, 170 hp"
+     }
+    ],
+    "status": "three_sources_not_nhra",
+    "note": "Wikipedia 170 hp; factory 160."
+   }
+  ],
+  "1964": [
+   {
+    "gen": "gen4",
+    "cid": 223,
+    "hp": 135,
+    "hp_basis": "gross",
+    "name": "3.7L / 223 I6",
+    "rpo": "223 Six",
+    "common_name": "Mileage Maker Six",
+    "trims": [
+     "F-100 2WD and 4WD"
+    ],
+    "nhra": false,
+    "sources": [
+     {
+      "name": "Ford 1964 F-100 Trucks brochure",
+      "url": "https://oldcarbrochures.org/United%20States/Ford%20Motor%20Company%20Trucks-Vans/1964_Trucks-Vans/1964%20Ford%20F-100%20Trucks/index.html",
+      "says": "Power specifications: 223 six 135 @ 4000"
+     },
+     {
+      "name": "Hagerty Valuation Tools, 1964 Ford F-100 1/2 Ton (engine options list)",
+      "url": "https://www.hagerty.com/valuation-tools/ford/f~100/1964/1964-ford-f~100-1!2_ton",
+      "says": "6-cyl. 223cid/135hp 1bbl"
+     },
+     {
+      "name": "BlueOvalTech, 1964 Ford F-Series trucks history page",
+      "url": "https://www.blueovaltech.com/history/1964-ford-trucks.php",
+      "says": "223 cid I6 F-100, F-250, F-350, 135 hp gross"
+     },
+     {
+      "name": "Wikipedia - Ford F-Series (fourth generation)",
+      "url": "https://en.wikipedia.org/wiki/Ford_F-Series_(fourth_generation)",
+      "says": "223 CID Mileage Maker I6, 1961-64, 114 hp"
+     }
+    ],
+    "status": "three_sources_not_nhra",
+    "note": "Wikipedia 114 hp (net); factory gross 135. BlueOvalTech mistypes 233 cid in 1961/62/64."
+   },
+   {
+    "gen": "gen4",
+    "cid": 292,
+    "hp": 160,
+    "hp_basis": "gross",
+    "name": "4.8L / 292 Y-block V8",
+    "rpo": "292 V-8",
+    "common_name": "Y-block 292",
+    "trims": [
+     "F-100 2WD and 4WD"
+    ],
+    "nhra": false,
+    "sources": [
+     {
+      "name": "Ford 1964 F-100 Trucks brochure",
+      "url": "https://oldcarbrochures.org/United%20States/Ford%20Motor%20Company%20Trucks-Vans/1964_Trucks-Vans/1964%20Ford%20F-100%20Trucks/index.html",
+      "says": "292 V-8 160 @ 4000, 270 lbs-ft"
+     },
+     {
+      "name": "Hagerty Valuation Tools, 1964 Ford F-100 1/2 Ton (engine options list)",
+      "url": "https://www.hagerty.com/valuation-tools/ford/f~100/1964/1964-ford-f~100-1!2_ton",
+      "says": "8-cyl. 292cid/160hp 2bbl"
+     },
+     {
+      "name": "BlueOvalTech, 1964 Ford F-Series trucks history page",
+      "url": "https://www.blueovaltech.com/history/1964-ford-trucks.php",
+      "says": "292 cid V8 F-100, F-250, F-350, 160 hp gross"
+     },
+     {
+      "name": "Wikipedia - Ford F-Series (fourth generation)",
+      "url": "https://en.wikipedia.org/wiki/Ford_F-Series_(fourth_generation)",
+      "says": "292 CID Y-block V8, 1961-64, 170 hp"
+     }
+    ],
+    "status": "three_sources_not_nhra",
+    "note": "Wikipedia 170 hp; factory 160."
+   },
+   {
+    "gen": "gen4",
+    "cid": 262,
+    "hp": 152,
+    "hp_basis": "gross",
+    "name": "4.3L / 262 I6",
+    "rpo": "262 Six",
+    "common_name": "Mileage Maker 262",
+    "trims": [
+     "F-100"
+    ],
+    "nhra": false,
+    "sources": [
+     {
+      "name": "Ford 1964 F-100 Trucks brochure",
+      "url": "https://oldcarbrochures.org/United%20States/Ford%20Motor%20Company%20Trucks-Vans/1964_Trucks-Vans/1964%20Ford%20F-100%20Trucks/index.html",
+      "says": "F-100 power specifications: 262 six 152 @ 4000, 237 lbs-ft, 3.72 x 4.03; 10.5-in clutch for 262 and V-8"
+     },
+     {
+      "name": "BlueOvalTech, 1964 Ford F-Series trucks history page",
+      "url": "https://www.blueovaltech.com/history/1964-ford-trucks.php",
+      "says": "new 262 cubic-inch inline six ... 152 horsepower; Engine Availability 262 cid I6 F-100, F-250, F-350"
+     },
+     {
+      "name": "Wikipedia - Ford F-Series (fourth generation)",
+      "url": "https://en.wikipedia.org/wiki/Ford_F-Series_(fourth_generation)",
+      "says": "262 CID Mileage Maker I6, 1961-64, 132 hp"
+     }
+    ],
+    "status": "three_sources_not_nhra",
+    "note": "Hagerty omits it. The 1961-63 F-100 brochures list only the 223 and 292 (262 was medium-duty then), so F-100 262 is 1964 only. Wikipedia's 132 hp is net."
+   }
+  ],
+  "1965": [
+   {
+    "gen": "gen4",
+    "cid": 240,
+    "hp": 150,
+    "hp_basis": "gross",
+    "name": "3.9L / 240 I6",
+    "rpo": "240 Six (std.)",
+    "common_name": "Ford 240 Six",
+    "trims": [
+     "F-100 2WD and 4WD"
+    ],
+    "nhra": false,
+    "sources": [
+     {
+      "name": "Ford 1965 F-100 & F-250 Trucks brochure",
+      "url": "https://oldcarbrochures.org/United%20States/Ford%20Motor%20Company%20Trucks-Vans/1965_Trucks-Vans/1965%20Ford%20F-100%20%26%20F-250%20Trucks/index.html",
+      "says": "240-cu in Six standard, 300 Big Six optional, 352 V-8 optional; specs 150 @ 4000, 170 @ 3600, 208 @ 4400"
+     },
+     {
+      "name": "Hagerty Valuation Tools, 1965 Ford F-100 1/2 Ton (engine options list)",
+      "url": "https://www.hagerty.com/valuation-tools/ford/f~100/1965/1965-ford-f~100-1!2_ton",
+      "says": "6-cyl. 240cid/150hp 1bbl"
+     },
+     {
+      "name": "BlueOvalTech, 1965 Ford F-Series trucks history page",
+      "url": "https://www.blueovaltech.com/history/1965-ford-trucks.php",
+      "says": "240 cid I6 F-100, F-250, F-350 150 hp"
+     },
+     {
+      "name": "Wikipedia - Ford F-Series (fourth generation)",
+      "url": "https://en.wikipedia.org/wiki/Ford_F-Series_(fourth_generation)",
+      "says": "240 CID straight-6, 1965-66, 150 hp"
+     }
+    ],
+    "status": "three_sources_not_nhra",
+    "note": "New for 1965 with Twin I-Beam."
+   },
+   {
+    "gen": "gen4",
+    "cid": 300,
+    "hp": 170,
+    "hp_basis": "gross",
+    "name": "4.9L / 300 I6",
+    "rpo": "300 Big Six",
+    "common_name": "Ford 300 Six",
+    "trims": [
+     "F-100 2WD and 4WD"
+    ],
+    "nhra": false,
+    "sources": [
+     {
+      "name": "Ford 1965 F-100 & F-250 Trucks brochure",
+      "url": "https://oldcarbrochures.org/United%20States/Ford%20Motor%20Company%20Trucks-Vans/1965_Trucks-Vans/1965%20Ford%20F-100%20%26%20F-250%20Trucks/index.html",
+      "says": "240-cu in Six standard, 300 Big Six optional, 352 V-8 optional; specs 150 @ 4000, 170 @ 3600, 208 @ 4400"
+     },
+     {
+      "name": "Hagerty Valuation Tools, 1965 Ford F-100 1/2 Ton (engine options list)",
+      "url": "https://www.hagerty.com/valuation-tools/ford/f~100/1965/1965-ford-f~100-1!2_ton",
+      "says": "6-cyl. 300cid/170hp 1bbl"
+     },
+     {
+      "name": "BlueOvalTech, 1965 Ford F-Series trucks history page",
+      "url": "https://www.blueovaltech.com/history/1965-ford-trucks.php",
+      "says": "300 cid I6 F-100, F-250, F-350 170 hp"
+     },
+     {
+      "name": "Wikipedia - Ford F-Series (fourth generation)",
+      "url": "https://en.wikipedia.org/wiki/Ford_F-Series_(fourth_generation)",
+      "says": "300 CID straight-6, 1965-66, 170 hp"
+     }
+    ],
+    "status": "three_sources_not_nhra",
+    "note": "New for 1965."
+   },
+   {
+    "gen": "gen4",
+    "cid": 352,
+    "hp": 208,
+    "hp_basis": "gross",
+    "name": "5.8L / 352 FE V8",
+    "rpo": "352 V-8",
+    "common_name": "FE 352",
+    "trims": [
+     "F-100 2WD and 4WD"
+    ],
+    "nhra": false,
+    "sources": [
+     {
+      "name": "Ford 1965 F-100 & F-250 Trucks brochure",
+      "url": "https://oldcarbrochures.org/United%20States/Ford%20Motor%20Company%20Trucks-Vans/1965_Trucks-Vans/1965%20Ford%20F-100%20%26%20F-250%20Trucks/index.html",
+      "says": "240-cu in Six standard, 300 Big Six optional, 352 V-8 optional; specs 150 @ 4000, 170 @ 3600, 208 @ 4400"
+     },
+     {
+      "name": "Hagerty Valuation Tools, 1965 Ford F-100 1/2 Ton (engine options list)",
+      "url": "https://www.hagerty.com/valuation-tools/ford/f~100/1965/1965-ford-f~100-1!2_ton",
+      "says": "8-cyl. 352cid/208hp 2bbl"
+     },
+     {
+      "name": "BlueOvalTech, 1965 Ford F-Series trucks history page",
+      "url": "https://www.blueovaltech.com/history/1965-ford-trucks.php",
+      "says": "352 cid V8 F-100, F-250, F-350 208 hp"
+     },
+     {
+      "name": "Wikipedia - Ford F-Series (fourth generation)",
+      "url": "https://en.wikipedia.org/wiki/Ford_F-Series_(fourth_generation)",
+      "says": "352 CID FE V8, 1964-66, 208 hp"
+     }
+    ],
+    "status": "three_sources_not_nhra",
+    "note": "Replaced the 292 Y-block. Wikipedia's 1964 start applies to heavier series; the 1964 F-100 brochure lists only 223/262/292."
+   }
+  ],
+  "1966": [
+   {
+    "gen": "gen4",
+    "cid": 240,
+    "hp": 150,
+    "hp_basis": "gross",
+    "name": "3.9L / 240 I6",
+    "rpo": "240 Six (std.)",
+    "common_name": "Ford 240 Six",
+    "trims": [
+     "F-100 2WD and 4WD"
+    ],
+    "nhra": false,
+    "sources": [
+     {
+      "name": "Ford 1966 Pickup Trucks brochure",
+      "url": "https://oldcarbrochures.org/United%20States/Ford%20Motor%20Company%20Trucks-Vans/1966_Trucks-Vans/1966-Ford-Pickup-Trucks-Brochure/index.html",
+      "says": "engine specs: 240 Six 150 @ 4000; 300 Six 170 @ 3600; 352 V-8 208 @ 4400 (gross)"
+     },
+     {
+      "name": "Hagerty Valuation Tools, 1966 Ford F-100 1/2 Ton (engine options list)",
+      "url": "https://www.hagerty.com/valuation-tools/ford/f~100/1966/1966-ford-f~100-1!2_ton",
+      "says": "6-cyl. 240cid/150hp 1bbl"
+     },
+     {
+      "name": "BlueOvalTech, 1966 Ford F-Series trucks history page",
+      "url": "https://www.blueovaltech.com/history/1966-ford-trucks.php",
+      "says": "240 cid I6 F-100, F-250, F-350 150 hp"
+     },
+     {
+      "name": "Wikipedia - Ford F-Series (fourth generation)",
+      "url": "https://en.wikipedia.org/wiki/Ford_F-Series_(fourth_generation)",
+      "says": "240 CID straight-6, 1965-66, 150 hp"
+     }
+    ],
+    "status": "three_sources_not_nhra",
+    "note": ""
+   },
+   {
+    "gen": "gen4",
+    "cid": 300,
+    "hp": 170,
+    "hp_basis": "gross",
+    "name": "4.9L / 300 I6",
+    "rpo": "300 Big Six",
+    "common_name": "Ford 300 Six",
+    "trims": [
+     "F-100 2WD and 4WD"
+    ],
+    "nhra": false,
+    "sources": [
+     {
+      "name": "Ford 1966 Pickup Trucks brochure",
+      "url": "https://oldcarbrochures.org/United%20States/Ford%20Motor%20Company%20Trucks-Vans/1966_Trucks-Vans/1966-Ford-Pickup-Trucks-Brochure/index.html",
+      "says": "engine specs: 240 Six 150 @ 4000; 300 Six 170 @ 3600; 352 V-8 208 @ 4400 (gross)"
+     },
+     {
+      "name": "Hagerty Valuation Tools, 1966 Ford F-100 1/2 Ton (engine options list)",
+      "url": "https://www.hagerty.com/valuation-tools/ford/f~100/1966/1966-ford-f~100-1!2_ton",
+      "says": "6-cyl. 300cid/170hp 1bbl"
+     },
+     {
+      "name": "BlueOvalTech, 1966 Ford F-Series trucks history page",
+      "url": "https://www.blueovaltech.com/history/1966-ford-trucks.php",
+      "says": "300 cid I6 F-100, F-250, F-350 170 hp"
+     },
+     {
+      "name": "Wikipedia - Ford F-Series (fourth generation)",
+      "url": "https://en.wikipedia.org/wiki/Ford_F-Series_(fourth_generation)",
+      "says": "300 CID straight-6, 1965-66, 170 hp"
+     }
+    ],
+    "status": "three_sources_not_nhra",
+    "note": ""
+   },
+   {
+    "gen": "gen4",
+    "cid": 352,
+    "hp": 208,
+    "hp_basis": "gross",
+    "name": "5.8L / 352 FE V8",
+    "rpo": "352 V-8",
+    "common_name": "FE 352",
+    "trims": [
+     "F-100 2WD and 4WD"
+    ],
+    "nhra": false,
+    "sources": [
+     {
+      "name": "Ford 1966 Pickup Trucks brochure",
+      "url": "https://oldcarbrochures.org/United%20States/Ford%20Motor%20Company%20Trucks-Vans/1966_Trucks-Vans/1966-Ford-Pickup-Trucks-Brochure/index.html",
+      "says": "engine specs: 240 Six 150 @ 4000; 300 Six 170 @ 3600; 352 V-8 208 @ 4400 (gross)"
+     },
+     {
+      "name": "Hagerty Valuation Tools, 1966 Ford F-100 1/2 Ton (engine options list)",
+      "url": "https://www.hagerty.com/valuation-tools/ford/f~100/1966/1966-ford-f~100-1!2_ton",
+      "says": "8-cyl. 352cid/208hp 2bbl"
+     },
+     {
+      "name": "BlueOvalTech, 1966 Ford F-Series trucks history page",
+      "url": "https://www.blueovaltech.com/history/1966-ford-trucks.php",
+      "says": "352 cid V8 F-100, F-250, F-350 208 hp"
+     },
+     {
+      "name": "Wikipedia - Ford F-Series (fourth generation)",
+      "url": "https://en.wikipedia.org/wiki/Ford_F-Series_(fourth_generation)",
+      "says": "352 CID FE V8, 1964-66, 208 hp"
+     }
+    ],
+    "status": "three_sources_not_nhra",
+    "note": ""
+   }
+  ],
+  "1967": [
+   {
+    "gen": "gen5",
+    "cid": 240,
+    "hp": 150,
+    "hp_basis": "gross",
+    "name": "3.9L / 240 I6",
+    "rpo": "240 Six (std.)",
+    "common_name": "Ford 240 Six",
+    "trims": [
+     "F-100 2WD and 4WD"
+    ],
+    "nhra": false,
+    "sources": [
+     {
+      "name": "Ford 1967 F-100/F-250 4WD Trucks brochure (engine spec table)",
+      "url": "https://oldcarbrochures.org/United%20States/Ford%20Motor%20Company%20Trucks-Vans/1967_Trucks-Vans/1967%20Ford%20F-100%20F-250%204WD%20Trucks/index.html",
+      "says": "engine specifications: 240 Six 150 @ 4000; 300 Six 170 @ 3600; 352 V-8 208 @ 4400 (gross), F-100/F-250"
+     },
+     {
+      "name": "Hagerty Valuation Tools, 1967 Ford F-100 1/2 Ton (engine options list)",
+      "url": "https://www.hagerty.com/valuation-tools/ford/f~100/1967/1967-ford-f~100-1!2_ton",
+      "says": "6-cyl. 240cid/150hp 1bbl"
+     },
+     {
+      "name": "BlueOvalTech, 1967 Ford F-Series trucks history page",
+      "url": "https://www.blueovaltech.com/history/1967-ford-trucks.php",
+      "says": "240 cid I6 F-100, F-250, F-350 150"
+     },
+     {
+      "name": "Wikipedia - Ford F-Series (fifth generation)",
+      "url": "https://en.wikipedia.org/wiki/Ford_F-Series_(fifth_generation)",
+      "says": "240 CID I6, 1967-1972, 150 hp"
+     }
+    ],
+    "status": "three_sources_not_nhra",
+    "note": ""
+   },
+   {
+    "gen": "gen5",
+    "cid": 300,
+    "hp": 170,
+    "hp_basis": "gross",
+    "name": "4.9L / 300 I6",
+    "rpo": "300 Big Six",
+    "common_name": "Ford 300 Six",
+    "trims": [
+     "F-100 2WD and 4WD"
+    ],
+    "nhra": false,
+    "sources": [
+     {
+      "name": "Ford 1967 F-100/F-250 4WD Trucks brochure (engine spec table)",
+      "url": "https://oldcarbrochures.org/United%20States/Ford%20Motor%20Company%20Trucks-Vans/1967_Trucks-Vans/1967%20Ford%20F-100%20F-250%204WD%20Trucks/index.html",
+      "says": "engine specifications: 240 Six 150 @ 4000; 300 Six 170 @ 3600; 352 V-8 208 @ 4400 (gross), F-100/F-250"
+     },
+     {
+      "name": "Hagerty Valuation Tools, 1967 Ford F-100 1/2 Ton (engine options list)",
+      "url": "https://www.hagerty.com/valuation-tools/ford/f~100/1967/1967-ford-f~100-1!2_ton",
+      "says": "6-cyl. 300cid/170hp 1bbl"
+     },
+     {
+      "name": "BlueOvalTech, 1967 Ford F-Series trucks history page",
+      "url": "https://www.blueovaltech.com/history/1967-ford-trucks.php",
+      "says": "300 cid I6 F-100, F-250, F-350 170"
+     },
+     {
+      "name": "Wikipedia - Ford F-Series (fifth generation)",
+      "url": "https://en.wikipedia.org/wiki/Ford_F-Series_(fifth_generation)",
+      "says": "300 CID I6, 1967-1972, 170 hp"
+     }
+    ],
+    "status": "three_sources_not_nhra",
+    "note": ""
+   },
+   {
+    "gen": "gen5",
+    "cid": 352,
+    "hp": 208,
+    "hp_basis": "gross",
+    "name": "5.8L / 352 FE V8",
+    "rpo": "352 V-8",
+    "common_name": "FE 352",
+    "trims": [
+     "F-100 2WD and 4WD"
+    ],
+    "nhra": false,
+    "sources": [
+     {
+      "name": "Ford 1967 F-100/F-250 4WD Trucks brochure (engine spec table)",
+      "url": "https://oldcarbrochures.org/United%20States/Ford%20Motor%20Company%20Trucks-Vans/1967_Trucks-Vans/1967%20Ford%20F-100%20F-250%204WD%20Trucks/index.html",
+      "says": "engine specifications: 240 Six 150 @ 4000; 300 Six 170 @ 3600; 352 V-8 208 @ 4400 (gross), F-100/F-250"
+     },
+     {
+      "name": "Hagerty Valuation Tools, 1967 Ford F-100 1/2 Ton (engine options list)",
+      "url": "https://www.hagerty.com/valuation-tools/ford/f~100/1967/1967-ford-f~100-1!2_ton",
+      "says": "8-cyl. 352cid/208hp 2bbl"
+     },
+     {
+      "name": "BlueOvalTech, 1967 Ford F-Series trucks history page",
+      "url": "https://www.blueovaltech.com/history/1967-ford-trucks.php",
+      "says": "352 cid V8 F-100, F-250, F-350 208"
+     },
+     {
+      "name": "Wikipedia - Ford F-Series (fifth generation)",
+      "url": "https://en.wikipedia.org/wiki/Ford_F-Series_(fifth_generation)",
+      "says": "352 CID FE V8, 1967, 208 hp"
+     }
+    ],
+    "status": "three_sources_not_nhra",
+    "note": "Last year of the 352."
+   }
+  ],
+  "1968": [
+   {
+    "gen": "gen5",
+    "cid": 240,
+    "hp": 150,
+    "hp_basis": "gross",
+    "name": "3.9L / 240 I6",
+    "rpo": "240 Six (std.)",
+    "common_name": "Ford 240 Six",
+    "trims": [
+     "F-100 2WD and 4WD"
+    ],
+    "nhra": false,
+    "sources": [
+     {
+      "name": "Ford 1968 Pickup brochure (engine specifications)",
+      "url": "https://oldcarbrochures.org/United%20States/Ford%20Motor%20Company%20Trucks-Vans/1968_Trucks-Vans/1968_Ford_Pickup_Brochure/index.html",
+      "says": "engine specifications: 240 Six 150; 300 Big Six 165; 360 V-8 215; 390 V-8 255 (max gross hp)"
+     },
+     {
+      "name": "Hagerty Valuation Tools, 1968 Ford F-100 1/2 Ton (engine options list)",
+      "url": "https://www.hagerty.com/valuation-tools/ford/f~100/1968/1968-ford-f~100-1!2_ton",
+      "says": "6-cyl. 240cid/150hp 1bbl"
+     },
+     {
+      "name": "BlueOvalTech, 1968 Ford F-Series trucks history page",
+      "url": "https://www.blueovaltech.com/history/1968-ford-trucks.php",
+      "says": "240 I-6 standard"
+     },
+     {
+      "name": "Wikipedia - Ford F-Series (fifth generation)",
+      "url": "https://en.wikipedia.org/wiki/Ford_F-Series_(fifth_generation)",
+      "says": "240 CID I6, 1967-1972, 150 hp"
+     }
+    ],
+    "status": "three_sources_not_nhra",
+    "note": ""
+   },
+   {
+    "gen": "gen5",
+    "cid": 300,
+    "hp": 165,
+    "hp_basis": "gross",
+    "name": "4.9L / 300 I6",
+    "rpo": "300 Big Six",
+    "common_name": "Ford 300 Six",
+    "trims": [
+     "F-100 2WD and 4WD"
+    ],
+    "nhra": false,
+    "sources": [
+     {
+      "name": "Ford 1968 Pickup brochure (engine specifications)",
+      "url": "https://oldcarbrochures.org/United%20States/Ford%20Motor%20Company%20Trucks-Vans/1968_Trucks-Vans/1968_Ford_Pickup_Brochure/index.html",
+      "says": "engine specifications: 240 Six 150; 300 Big Six 165; 360 V-8 215; 390 V-8 255 (max gross hp)"
+     },
+     {
+      "name": "Hagerty Valuation Tools, 1968 Ford F-100 1/2 Ton (engine options list)",
+      "url": "https://www.hagerty.com/valuation-tools/ford/f~100/1968/1968-ford-f~100-1!2_ton",
+      "says": "6-cyl. 300cid/165hp 1bbl"
+     },
+     {
+      "name": "BlueOvalTech, 1968 Ford F-Series trucks history page",
+      "url": "https://www.blueovaltech.com/history/1968-ford-trucks.php",
+      "says": "300 cid I6 F-100, F-250, F-350 165 hp"
+     },
+     {
+      "name": "Wikipedia - Ford F-Series (fifth generation)",
+      "url": "https://en.wikipedia.org/wiki/Ford_F-Series_(fifth_generation)",
+      "says": "300 CID I6, 1967-1972, 170/165 hp"
+     }
+    ],
+    "status": "three_sources_not_nhra",
+    "note": "Re-rated from 170 to 165 hp for 1968."
+   },
+   {
+    "gen": "gen5",
+    "cid": 360,
+    "hp": 215,
+    "hp_basis": "gross",
+    "name": "5.9L / 360 FE V8",
+    "rpo": "360 V-8",
+    "common_name": "FE 360",
+    "trims": [
+     "F-100 2WD and 4WD"
+    ],
+    "nhra": false,
+    "sources": [
+     {
+      "name": "Ford 1968 Pickup brochure (engine specifications)",
+      "url": "https://oldcarbrochures.org/United%20States/Ford%20Motor%20Company%20Trucks-Vans/1968_Trucks-Vans/1968_Ford_Pickup_Brochure/index.html",
+      "says": "engine specifications: 240 Six 150; 300 Big Six 165; 360 V-8 215; 390 V-8 255 (max gross hp)"
+     },
+     {
+      "name": "Hagerty Valuation Tools, 1968 Ford F-100 1/2 Ton (engine options list)",
+      "url": "https://www.hagerty.com/valuation-tools/ford/f~100/1968/1968-ford-f~100-1!2_ton",
+      "says": "8-cyl. 360cid/215hp 2bbl"
+     },
+     {
+      "name": "BlueOvalTech, 1968 Ford F-Series trucks history page",
+      "url": "https://www.blueovaltech.com/history/1968-ford-trucks.php",
+      "says": "360 cid V8 F-100, F-250, F-350 215 hp"
+     },
+     {
+      "name": "Wikipedia - Ford F-Series (fifth generation)",
+      "url": "https://en.wikipedia.org/wiki/Ford_F-Series_(fifth_generation)",
+      "says": "360 CID FE V8, 1968-1972, 215 hp"
+     }
+    ],
+    "status": "three_sources_not_nhra",
+    "note": "New for 1968, replacing the 352."
+   },
+   {
+    "gen": "gen5",
+    "cid": 390,
+    "hp": 255,
+    "hp_basis": "gross",
+    "name": "6.4L / 390 FE V8",
+    "rpo": "390 V-8",
+    "common_name": "FE 390",
+    "trims": [
+     "F-100 2WD and 4WD"
+    ],
+    "nhra": false,
+    "sources": [
+     {
+      "name": "Ford 1968 Pickup brochure (engine specifications)",
+      "url": "https://oldcarbrochures.org/United%20States/Ford%20Motor%20Company%20Trucks-Vans/1968_Trucks-Vans/1968_Ford_Pickup_Brochure/index.html",
+      "says": "engine specifications: 240 Six 150; 300 Big Six 165; 360 V-8 215; 390 V-8 255 (max gross hp)"
+     },
+     {
+      "name": "Hagerty Valuation Tools, 1968 Ford F-100 1/2 Ton (engine options list)",
+      "url": "https://www.hagerty.com/valuation-tools/ford/f~100/1968/1968-ford-f~100-1!2_ton",
+      "says": "8-cyl. 390cid/255hp 2bbl"
+     },
+     {
+      "name": "BlueOvalTech, 1968 Ford F-Series trucks history page",
+      "url": "https://www.blueovaltech.com/history/1968-ford-trucks.php",
+      "says": "390 cid V8 F-100, F-250, F-350 255 hp"
+     },
+     {
+      "name": "Wikipedia - Ford F-Series (fifth generation)",
+      "url": "https://en.wikipedia.org/wiki/Ford_F-Series_(fifth_generation)",
+      "says": "390 CID FE V8, 1968-1972, 255 hp"
+     }
+    ],
+    "status": "three_sources_not_nhra",
+    "note": "New for 1968. 4x4 availability unclear for 1968-71 (the 1970 4x4 page lists the sixes and 360 only); 1972+ brochures say 4x2 only."
+   }
+  ],
+  "1969": [
+   {
+    "gen": "gen5",
+    "cid": 240,
+    "hp": 150,
+    "hp_basis": "gross",
+    "name": "3.9L / 240 I6",
+    "rpo": "240 Six (std.)",
+    "common_name": "Ford 240 Six",
+    "trims": [
+     "F-100 2WD and 4WD"
+    ],
+    "nhra": false,
+    "sources": [
+     {
+      "name": "Ford 1969 Pickup brochure",
+      "url": "https://oldcarbrochures.org/United%20States/Ford%20Motor%20Company%20Trucks-Vans/1969_Trucks-Vans/1969_Ford_Pickup_Brochure/index.html",
+      "says": "Performance leaders for '69 are the big 360 and 390 V-8s ... the big 300 Six ... the 240 (spec table)"
+     },
+     {
+      "name": "Hagerty Valuation Tools, 1969 Ford F-100 1/2 Ton (engine options list)",
+      "url": "https://www.hagerty.com/valuation-tools/ford/f~100/1969/1969-ford-f~100-1!2_ton",
+      "says": "6-cyl. 240cid/150hp 1bbl"
+     },
+     {
+      "name": "BlueOvalTech, 1969 Ford F-Series trucks history page",
+      "url": "https://www.blueovaltech.com/history/1969-ford-trucks.php",
+      "says": "240 I-6 standard"
+     },
+     {
+      "name": "Wikipedia - Ford F-Series (fifth generation)",
+      "url": "https://en.wikipedia.org/wiki/Ford_F-Series_(fifth_generation)",
+      "says": "240 CID I6, 1967-1972, 150 hp"
+     }
+    ],
+    "status": "three_sources_not_nhra",
+    "note": ""
+   },
+   {
+    "gen": "gen5",
+    "cid": 300,
+    "hp": 165,
+    "hp_basis": "gross",
+    "name": "4.9L / 300 I6",
+    "rpo": "300 Big Six",
+    "common_name": "Ford 300 Six",
+    "trims": [
+     "F-100 2WD and 4WD"
+    ],
+    "nhra": false,
+    "sources": [
+     {
+      "name": "Ford 1969 Pickup brochure",
+      "url": "https://oldcarbrochures.org/United%20States/Ford%20Motor%20Company%20Trucks-Vans/1969_Trucks-Vans/1969_Ford_Pickup_Brochure/index.html",
+      "says": "Performance leaders for '69 are the big 360 and 390 V-8s ... the big 300 Six ... the 240 (spec table)"
+     },
+     {
+      "name": "Hagerty Valuation Tools, 1969 Ford F-100 1/2 Ton (engine options list)",
+      "url": "https://www.hagerty.com/valuation-tools/ford/f~100/1969/1969-ford-f~100-1!2_ton",
+      "says": "6-cyl. 300cid/165hp 1bbl"
+     },
+     {
+      "name": "BlueOvalTech, 1969 Ford F-Series trucks history page",
+      "url": "https://www.blueovaltech.com/history/1969-ford-trucks.php",
+      "says": "300 cid I6 F-100, F-250, F-350 165 hp"
+     },
+     {
+      "name": "Wikipedia - Ford F-Series (fifth generation)",
+      "url": "https://en.wikipedia.org/wiki/Ford_F-Series_(fifth_generation)",
+      "says": "300 CID I6, 1967-1972, 170/165 hp"
+     }
+    ],
+    "status": "three_sources_not_nhra",
+    "note": ""
+   },
+   {
+    "gen": "gen5",
+    "cid": 302,
+    "hp": 205,
+    "hp_basis": "gross",
+    "name": "5.0L / 302 Windsor V8",
+    "rpo": "302 V-8 (F-100 only)",
+    "common_name": "Windsor 302",
+    "trims": [
+     "F-100 2WD only"
+    ],
+    "nhra": false,
+    "sources": [
+     {
+      "name": "Ford 1970 Light Truck Sales Features (dealer book)",
+      "url": "https://oldcarbrochures.org/United%20States/Ford%20Motor%20Company%20Trucks-Vans/1970_Trucks-Vans/1970%20Ford%20Light%20Truck%20Sales%20Features/index.html",
+      "says": "1970 dealer book: 302 V-8, 205 hp, added in mid-'69 and available only on the F-100"
+     },
+     {
+      "name": "Hagerty Valuation Tools, 1969 Ford F-100 1/2 Ton (engine options list)",
+      "url": "https://www.hagerty.com/valuation-tools/ford/f~100/1969/1969-ford-f~100-1!2_ton",
+      "says": "8-cyl. 302cid/205hp 2bbl"
+     },
+     {
+      "name": "Wikipedia - Ford F-Series (fifth generation)",
+      "url": "https://en.wikipedia.org/wiki/Ford_F-Series_(fifth_generation)",
+      "says": "302 CID Windsor V8, 1969-1972, 205 hp"
+     }
+    ],
+    "status": "three_sources_not_nhra",
+    "note": "Mid-year 1969 addition, F-100 only (1969 brochure and BlueOvalTech 1969 page omit it; 1970 Ford dealer book documents the mid-'69 release)."
+   },
+   {
+    "gen": "gen5",
+    "cid": 360,
+    "hp": 215,
+    "hp_basis": "gross",
+    "name": "5.9L / 360 FE V8",
+    "rpo": "360 V-8",
+    "common_name": "FE 360",
+    "trims": [
+     "F-100 2WD and 4WD"
+    ],
+    "nhra": false,
+    "sources": [
+     {
+      "name": "Ford 1969 Pickup brochure",
+      "url": "https://oldcarbrochures.org/United%20States/Ford%20Motor%20Company%20Trucks-Vans/1969_Trucks-Vans/1969_Ford_Pickup_Brochure/index.html",
+      "says": "Performance leaders for '69 are the big 360 and 390 V-8s ... the big 300 Six ... the 240 (spec table)"
+     },
+     {
+      "name": "Hagerty Valuation Tools, 1969 Ford F-100 1/2 Ton (engine options list)",
+      "url": "https://www.hagerty.com/valuation-tools/ford/f~100/1969/1969-ford-f~100-1!2_ton",
+      "says": "8-cyl. 360cid/215hp 2bbl"
+     },
+     {
+      "name": "BlueOvalTech, 1969 Ford F-Series trucks history page",
+      "url": "https://www.blueovaltech.com/history/1969-ford-trucks.php",
+      "says": "360 cid V8 F-100, F-250, F-350 215 hp"
+     },
+     {
+      "name": "Wikipedia - Ford F-Series (fifth generation)",
+      "url": "https://en.wikipedia.org/wiki/Ford_F-Series_(fifth_generation)",
+      "says": "360 CID FE V8, 1968-1972, 215 hp"
+     }
+    ],
+    "status": "three_sources_not_nhra",
+    "note": ""
+   },
+   {
+    "gen": "gen5",
+    "cid": 390,
+    "hp": 255,
+    "hp_basis": "gross",
+    "name": "6.4L / 390 FE V8",
+    "rpo": "390 V-8",
+    "common_name": "FE 390",
+    "trims": [
+     "F-100 2WD and 4WD"
+    ],
+    "nhra": false,
+    "sources": [
+     {
+      "name": "Ford 1969 Pickup brochure",
+      "url": "https://oldcarbrochures.org/United%20States/Ford%20Motor%20Company%20Trucks-Vans/1969_Trucks-Vans/1969_Ford_Pickup_Brochure/index.html",
+      "says": "Performance leaders for '69 are the big 360 and 390 V-8s ... the big 300 Six ... the 240 (spec table)"
+     },
+     {
+      "name": "Hagerty Valuation Tools, 1969 Ford F-100 1/2 Ton (engine options list)",
+      "url": "https://www.hagerty.com/valuation-tools/ford/f~100/1969/1969-ford-f~100-1!2_ton",
+      "says": "8-cyl. 390cid/255hp 2bbl"
+     },
+     {
+      "name": "BlueOvalTech, 1969 Ford F-Series trucks history page",
+      "url": "https://www.blueovaltech.com/history/1969-ford-trucks.php",
+      "says": "390 cid V8 F-100, F-250, F-350 255 hp"
+     },
+     {
+      "name": "Wikipedia - Ford F-Series (fifth generation)",
+      "url": "https://en.wikipedia.org/wiki/Ford_F-Series_(fifth_generation)",
+      "says": "390 CID FE V8, 1968-1972, 255 hp"
+     }
+    ],
+    "status": "three_sources_not_nhra",
+    "note": ""
+   }
+  ],
+  "1970": [
+   {
+    "gen": "gen5",
+    "cid": 240,
+    "hp": 150,
+    "hp_basis": "gross",
+    "name": "3.9L / 240 I6",
+    "rpo": "240 Six (std.)",
+    "common_name": "Ford 240 Six",
+    "trims": [
+     "F-100 2WD and 4WD"
+    ],
+    "nhra": false,
+    "sources": [
+     {
+      "name": "Ford 1970 Light Truck Sales Features (dealer book)",
+      "url": "https://oldcarbrochures.org/United%20States/Ford%20Motor%20Company%20Trucks-Vans/1970_Trucks-Vans/1970%20Ford%20Light%20Truck%20Sales%20Features/index.html",
+      "says": "STD. SIX 240 150; SIX 300 165; *302 205 (*F-100 only); OPT. 360 215; 390 255"
+     },
+     {
+      "name": "Hagerty Valuation Tools, 1970 Ford F-100 1/2 Ton (engine options list)",
+      "url": "https://www.hagerty.com/valuation-tools/ford/f~100/1970/1970-ford-f~100-1!2_ton",
+      "says": "6-cyl. 240cid/150hp 1bbl"
+     },
+     {
+      "name": "BlueOvalTech, 1970 Ford F-Series trucks history page",
+      "url": "https://www.blueovaltech.com/history/1970-ford-trucks.php",
+      "says": "240 cid I6 F-100, F-250, F-350 150 hp"
+     },
+     {
+      "name": "Wikipedia - Ford F-Series (fifth generation)",
+      "url": "https://en.wikipedia.org/wiki/Ford_F-Series_(fifth_generation)",
+      "says": "240 CID I6, 1967-1972, 150 hp"
+     }
+    ],
+    "status": "three_sources_not_nhra",
+    "note": ""
+   },
+   {
+    "gen": "gen5",
+    "cid": 300,
+    "hp": 165,
+    "hp_basis": "gross",
+    "name": "4.9L / 300 I6",
+    "rpo": "300 Big Six",
+    "common_name": "Ford 300 Six",
+    "trims": [
+     "F-100 2WD and 4WD"
+    ],
+    "nhra": false,
+    "sources": [
+     {
+      "name": "Ford 1970 Light Truck Sales Features (dealer book)",
+      "url": "https://oldcarbrochures.org/United%20States/Ford%20Motor%20Company%20Trucks-Vans/1970_Trucks-Vans/1970%20Ford%20Light%20Truck%20Sales%20Features/index.html",
+      "says": "STD. SIX 240 150; SIX 300 165; *302 205 (*F-100 only); OPT. 360 215; 390 255"
+     },
+     {
+      "name": "Hagerty Valuation Tools, 1970 Ford F-100 1/2 Ton (engine options list)",
+      "url": "https://www.hagerty.com/valuation-tools/ford/f~100/1970/1970-ford-f~100-1!2_ton",
+      "says": "6-cyl. 300cid/165hp 1bbl"
+     },
+     {
+      "name": "BlueOvalTech, 1970 Ford F-Series trucks history page",
+      "url": "https://www.blueovaltech.com/history/1970-ford-trucks.php",
+      "says": "300 cid I6 F-100, F-250, F-350 165 hp"
+     },
+     {
+      "name": "Wikipedia - Ford F-Series (fifth generation)",
+      "url": "https://en.wikipedia.org/wiki/Ford_F-Series_(fifth_generation)",
+      "says": "300 CID I6, 1967-1972, 170/165 hp"
+     }
+    ],
+    "status": "three_sources_not_nhra",
+    "note": ""
+   },
+   {
+    "gen": "gen5",
+    "cid": 302,
+    "hp": 205,
+    "hp_basis": "gross",
+    "name": "5.0L / 302 Windsor V8",
+    "rpo": "302 V-8 (F-100 only)",
+    "common_name": "Windsor 302",
+    "trims": [
+     "F-100 2WD only"
+    ],
+    "nhra": false,
+    "sources": [
+     {
+      "name": "Ford 1970 Light Truck Sales Features (dealer book)",
+      "url": "https://oldcarbrochures.org/United%20States/Ford%20Motor%20Company%20Trucks-Vans/1970_Trucks-Vans/1970%20Ford%20Light%20Truck%20Sales%20Features/index.html",
+      "says": "1970 dealer book: 302 V-8, 205 hp, added in mid-'69 and available only on the F-100"
+     },
+     {
+      "name": "Hagerty Valuation Tools, 1970 Ford F-100 1/2 Ton (engine options list)",
+      "url": "https://www.hagerty.com/valuation-tools/ford/f~100/1970/1970-ford-f~100-1!2_ton",
+      "says": "8-cyl. 302cid/205hp 2bbl"
+     },
+     {
+      "name": "Wikipedia - Ford F-Series (fifth generation)",
+      "url": "https://en.wikipedia.org/wiki/Ford_F-Series_(fifth_generation)",
+      "says": "302 CID Windsor V8, 1969-1972, 205 hp"
+     },
+     {
+      "name": "BlueOvalTech, 1970 Ford F-Series trucks history page",
+      "url": "https://www.blueovaltech.com/history/1970-ford-trucks.php",
+      "says": "302 cid V8 F-100 only, 205 hp"
+     }
+    ],
+    "status": "three_sources_not_nhra",
+    "note": "F-100 only (2WD)."
+   },
+   {
+    "gen": "gen5",
+    "cid": 360,
+    "hp": 215,
+    "hp_basis": "gross",
+    "name": "5.9L / 360 FE V8",
+    "rpo": "360 V-8",
+    "common_name": "FE 360",
+    "trims": [
+     "F-100 2WD and 4WD"
+    ],
+    "nhra": false,
+    "sources": [
+     {
+      "name": "Ford 1970 Light Truck Sales Features (dealer book)",
+      "url": "https://oldcarbrochures.org/United%20States/Ford%20Motor%20Company%20Trucks-Vans/1970_Trucks-Vans/1970%20Ford%20Light%20Truck%20Sales%20Features/index.html",
+      "says": "STD. SIX 240 150; SIX 300 165; *302 205 (*F-100 only); OPT. 360 215; 390 255"
+     },
+     {
+      "name": "Hagerty Valuation Tools, 1970 Ford F-100 1/2 Ton (engine options list)",
+      "url": "https://www.hagerty.com/valuation-tools/ford/f~100/1970/1970-ford-f~100-1!2_ton",
+      "says": "8-cyl. 360cid/215hp 2bbl"
+     },
+     {
+      "name": "BlueOvalTech, 1970 Ford F-Series trucks history page",
+      "url": "https://www.blueovaltech.com/history/1970-ford-trucks.php",
+      "says": "360 cid V8 F-100, F-250, F-350 215 hp"
+     },
+     {
+      "name": "Wikipedia - Ford F-Series (fifth generation)",
+      "url": "https://en.wikipedia.org/wiki/Ford_F-Series_(fifth_generation)",
+      "says": "360 CID FE V8, 1968-1972, 215 hp"
+     }
+    ],
+    "status": "three_sources_not_nhra",
+    "note": ""
+   },
+   {
+    "gen": "gen5",
+    "cid": 390,
+    "hp": 255,
+    "hp_basis": "gross",
+    "name": "6.4L / 390 FE V8",
+    "rpo": "390 V-8",
+    "common_name": "FE 390",
+    "trims": [
+     "F-100 2WD and 4WD"
+    ],
+    "nhra": false,
+    "sources": [
+     {
+      "name": "Ford 1970 Light Truck Sales Features (dealer book)",
+      "url": "https://oldcarbrochures.org/United%20States/Ford%20Motor%20Company%20Trucks-Vans/1970_Trucks-Vans/1970%20Ford%20Light%20Truck%20Sales%20Features/index.html",
+      "says": "STD. SIX 240 150; SIX 300 165; *302 205 (*F-100 only); OPT. 360 215; 390 255"
+     },
+     {
+      "name": "Hagerty Valuation Tools, 1970 Ford F-100 1/2 Ton (engine options list)",
+      "url": "https://www.hagerty.com/valuation-tools/ford/f~100/1970/1970-ford-f~100-1!2_ton",
+      "says": "8-cyl. 390cid/255hp 2bbl"
+     },
+     {
+      "name": "BlueOvalTech, 1970 Ford F-Series trucks history page",
+      "url": "https://www.blueovaltech.com/history/1970-ford-trucks.php",
+      "says": "390 cid V8 F-100, F-250, F-350 255 hp"
+     },
+     {
+      "name": "Wikipedia - Ford F-Series (fifth generation)",
+      "url": "https://en.wikipedia.org/wiki/Ford_F-Series_(fifth_generation)",
+      "says": "390 CID FE V8, 1968-1972, 255 hp"
+     }
+    ],
+    "status": "three_sources_not_nhra",
+    "note": ""
+   }
+  ],
+  "1971": [
+   {
+    "gen": "gen5",
+    "cid": 240,
+    "hp": 140,
+    "hp_basis": "gross",
+    "name": "3.9L / 240 I6",
+    "rpo": "240 Six (std.)",
+    "common_name": "Ford 240 Six",
+    "trims": [
+     "F-100 2WD and 4WD"
+    ],
+    "nhra": false,
+    "sources": [
+     {
+      "name": "Ford 1971 Pickup brochure",
+      "url": "https://oldcarbrochures.org/United%20States/Ford%20Motor%20Company%20Trucks-Vans/1971_Trucks-Vans/1971_Ford_Pickup_Brochure/index.html",
+      "says": "five engines: 240 and 300 Sixes or 302 (F-100), 360 and 390 V-8s"
+     },
+     {
+      "name": "Hagerty Valuation Tools, 1971 Ford F-100 1/2 Ton (engine options list)",
+      "url": "https://www.hagerty.com/valuation-tools/ford/f~100/1971/1971-ford-f~100-1!2_ton",
+      "says": "6-cyl. 240cid/140hp 1bbl"
+     },
+     {
+      "name": "BlueOvalTech, 1971 Ford F-Series trucks history page",
+      "url": "https://www.blueovaltech.com/history/1971-ford-trucks.php",
+      "says": "240 cid I6 F-100, F-250, F-350 140 hp"
+     },
+     {
+      "name": "Wikipedia - Ford F-Series (fifth generation)",
+      "url": "https://en.wikipedia.org/wiki/Ford_F-Series_(fifth_generation)",
+      "says": "240 CID I6, 1967-1972, 150 hp"
+     }
+    ],
+    "status": "three_sources_not_nhra",
+    "note": "1971: emissions changes cut the 240 to 140 hp (Hagerty, BlueOvalTech); Wikipedia lists only 150 gross / 121 net."
+   },
+   {
+    "gen": "gen5",
+    "cid": 300,
+    "hp": 165,
+    "hp_basis": "gross",
+    "name": "4.9L / 300 I6",
+    "rpo": "300 Big Six",
+    "common_name": "Ford 300 Six",
+    "trims": [
+     "F-100 2WD and 4WD"
+    ],
+    "nhra": false,
+    "sources": [
+     {
+      "name": "Ford 1971 Pickup brochure",
+      "url": "https://oldcarbrochures.org/United%20States/Ford%20Motor%20Company%20Trucks-Vans/1971_Trucks-Vans/1971_Ford_Pickup_Brochure/index.html",
+      "says": "five engines: 240 and 300 Sixes or 302 (F-100), 360 and 390 V-8s"
+     },
+     {
+      "name": "Hagerty Valuation Tools, 1971 Ford F-100 1/2 Ton (engine options list)",
+      "url": "https://www.hagerty.com/valuation-tools/ford/f~100/1971/1971-ford-f~100-1!2_ton",
+      "says": "6-cyl. 300cid/165hp 1bbl"
+     },
+     {
+      "name": "BlueOvalTech, 1971 Ford F-Series trucks history page",
+      "url": "https://www.blueovaltech.com/history/1971-ford-trucks.php",
+      "says": "300 cid I6 F-100, F-250, F-350 165 hp"
+     },
+     {
+      "name": "Wikipedia - Ford F-Series (fifth generation)",
+      "url": "https://en.wikipedia.org/wiki/Ford_F-Series_(fifth_generation)",
+      "says": "300 CID I6, 1967-1972, 170/165 hp"
+     }
+    ],
+    "status": "three_sources_not_nhra",
+    "note": ""
+   },
+   {
+    "gen": "gen5",
+    "cid": 302,
+    "hp": 205,
+    "hp_basis": "gross",
+    "name": "5.0L / 302 Windsor V8",
+    "rpo": "302 V-8 (F-100 only)",
+    "common_name": "Windsor 302",
+    "trims": [
+     "F-100 2WD only"
+    ],
+    "nhra": false,
+    "sources": [
+     {
+      "name": "Ford 1971 Pickup brochure",
+      "url": "https://oldcarbrochures.org/United%20States/Ford%20Motor%20Company%20Trucks-Vans/1971_Trucks-Vans/1971_Ford_Pickup_Brochure/index.html",
+      "says": "five engines: 240 and 300 Sixes or 302 (F-100), 360 and 390 V-8s"
+     },
+     {
+      "name": "Hagerty Valuation Tools, 1971 Ford F-100 1/2 Ton (engine options list)",
+      "url": "https://www.hagerty.com/valuation-tools/ford/f~100/1971/1971-ford-f~100-1!2_ton",
+      "says": "8-cyl. 302cid/205hp 2bbl"
+     },
+     {
+      "name": "Wikipedia - Ford F-Series (fifth generation)",
+      "url": "https://en.wikipedia.org/wiki/Ford_F-Series_(fifth_generation)",
+      "says": "302 CID Windsor V8, 1969-1972, 205 hp"
+     },
+     {
+      "name": "BlueOvalTech, 1971 Ford F-Series trucks history page",
+      "url": "https://www.blueovaltech.com/history/1971-ford-trucks.php",
+      "says": "302 cid V8 F-100 only, 205 hp"
+     }
+    ],
+    "status": "three_sources_not_nhra",
+    "note": "F-100 only (2WD)."
+   },
+   {
+    "gen": "gen5",
+    "cid": 360,
+    "hp": 215,
+    "hp_basis": "gross",
+    "name": "5.9L / 360 FE V8",
+    "rpo": "360 V-8",
+    "common_name": "FE 360",
+    "trims": [
+     "F-100 2WD and 4WD"
+    ],
+    "nhra": false,
+    "sources": [
+     {
+      "name": "Ford 1971 Pickup brochure",
+      "url": "https://oldcarbrochures.org/United%20States/Ford%20Motor%20Company%20Trucks-Vans/1971_Trucks-Vans/1971_Ford_Pickup_Brochure/index.html",
+      "says": "five engines: 240 and 300 Sixes or 302 (F-100), 360 and 390 V-8s"
+     },
+     {
+      "name": "Hagerty Valuation Tools, 1971 Ford F-100 1/2 Ton (engine options list)",
+      "url": "https://www.hagerty.com/valuation-tools/ford/f~100/1971/1971-ford-f~100-1!2_ton",
+      "says": "8-cyl. 360cid/215hp 2bbl"
+     },
+     {
+      "name": "BlueOvalTech, 1971 Ford F-Series trucks history page",
+      "url": "https://www.blueovaltech.com/history/1971-ford-trucks.php",
+      "says": "360 cid V8 F-100, F-250, F-350 215 hp"
+     },
+     {
+      "name": "Wikipedia - Ford F-Series (fifth generation)",
+      "url": "https://en.wikipedia.org/wiki/Ford_F-Series_(fifth_generation)",
+      "says": "360 CID FE V8, 1968-1972, 215 hp"
+     }
+    ],
+    "status": "three_sources_not_nhra",
+    "note": ""
+   },
+   {
+    "gen": "gen5",
+    "cid": 390,
+    "hp": 255,
+    "hp_basis": "gross",
+    "name": "6.4L / 390 FE V8",
+    "rpo": "390 V-8",
+    "common_name": "FE 390",
+    "trims": [
+     "F-100 2WD and 4WD"
+    ],
+    "nhra": false,
+    "sources": [
+     {
+      "name": "Ford 1971 Pickup brochure",
+      "url": "https://oldcarbrochures.org/United%20States/Ford%20Motor%20Company%20Trucks-Vans/1971_Trucks-Vans/1971_Ford_Pickup_Brochure/index.html",
+      "says": "five engines: 240 and 300 Sixes or 302 (F-100), 360 and 390 V-8s"
+     },
+     {
+      "name": "Hagerty Valuation Tools, 1971 Ford F-100 1/2 Ton (engine options list)",
+      "url": "https://www.hagerty.com/valuation-tools/ford/f~100/1971/1971-ford-f~100-1!2_ton",
+      "says": "8-cyl. 390cid/255hp 2bbl"
+     },
+     {
+      "name": "BlueOvalTech, 1971 Ford F-Series trucks history page",
+      "url": "https://www.blueovaltech.com/history/1971-ford-trucks.php",
+      "says": "390 cid V8 F-100, F-250, F-350 255 hp"
+     },
+     {
+      "name": "Wikipedia - Ford F-Series (fifth generation)",
+      "url": "https://en.wikipedia.org/wiki/Ford_F-Series_(fifth_generation)",
+      "says": "390 CID FE V8, 1968-1972, 255 hp"
+     }
+    ],
+    "status": "three_sources_not_nhra",
+    "note": ""
+   }
+  ],
+  "1972": [
+   {
+    "gen": "gen5",
+    "cid": 240,
+    "hp": 120,
+    "hp_basis": "net",
+    "name": "3.9L / 240 I6",
+    "rpo": "240 Six (std.)",
+    "common_name": "Ford 240 Six",
+    "trims": [
+     "F-100 2WD and 4WD"
+    ],
+    "nhra": false,
+    "sources": [
+     {
+      "name": "Ford 1972 Pickup brochure",
+      "url": "https://oldcarbrochures.org/United%20States/Ford%20Motor%20Company%20Trucks-Vans/1972_Trucks-Vans/1972_Ford_Pickup_Brochure/index.html",
+      "says": "240 Six standard F-100; 300 Six on F-250 and F-350; 302 (available F-100 only), 360 and 390 V-8s optional; 390 4x2 only"
+     },
+     {
+      "name": "Hagerty Valuation Tools, 1972 Ford F-100 1/2 Ton (engine options list)",
+      "url": "https://www.hagerty.com/valuation-tools/ford/f~100/1972/1972-ford-f~100-1!2_ton",
+      "says": "6-cyl. 240cid/120hp 1bbl"
+     },
+     {
+      "name": "BlueOvalTech, 1972 Ford F-Series trucks history page",
+      "url": "https://www.blueovaltech.com/history/1972-ford-trucks.php",
+      "says": "240 cid I6 F-100 140/230 (gross)"
+     },
+     {
+      "name": "Wikipedia - Ford F-Series (fifth generation)",
+      "url": "https://en.wikipedia.org/wiki/Ford_F-Series_(fifth_generation)",
+      "says": "240 CID I6, 1967-1972, 150 / 121 hp"
+     }
+    ],
+    "status": "three_sources_not_nhra",
+    "note": "Rating basis disputed: Hagerty 120 net, Wikipedia 121 net, BlueOvalTech 140 gross. 1972 brochure scan gives no readable hp."
+   },
+   {
+    "gen": "gen5",
+    "cid": 300,
+    "hp": 165,
+    "hp_basis": "net",
+    "name": "4.9L / 300 I6",
+    "rpo": "300 Six",
+    "common_name": "Ford 300 Six",
+    "trims": [
+     "F-100 2WD and 4WD"
+    ],
+    "nhra": false,
+    "sources": [
+     {
+      "name": "BlueOvalTech, 1972 Ford F-Series trucks history page",
+      "url": "https://www.blueovaltech.com/history/1972-ford-trucks.php",
+      "says": "300 cid I6 F-100, F-250, F-350 165 hp"
+     },
+     {
+      "name": "Wikipedia - Ford F-Series (fifth generation)",
+      "url": "https://en.wikipedia.org/wiki/Ford_F-Series_(fifth_generation)",
+      "says": "300 CID I6, 1967-1972 (generation-wide)"
+     }
+    ],
+    "status": "disputed",
+    "note": "Both 1972 Ford pickup brochures say the 300 Six is for F-250/F-350 (240 standard in F-100) and Hagerty's 1972 F-100 list omits it; only BlueOvalTech puts it in the F-100. Probably not an F-100 engine for 1972."
+   },
+   {
+    "gen": "gen5",
+    "cid": 302,
+    "hp": 154,
+    "hp_basis": "net",
+    "name": "5.0L / 302 Windsor V8",
+    "rpo": "302 V-8 (F-100 4x2 only)",
+    "common_name": "Windsor 302",
+    "trims": [
+     "F-100 2WD only"
+    ],
+    "nhra": false,
+    "sources": [
+     {
+      "name": "Ford 1972 Pickup brochure",
+      "url": "https://oldcarbrochures.org/United%20States/Ford%20Motor%20Company%20Trucks-Vans/1972_Trucks-Vans/1972_Ford_Pickup_Brochure/index.html",
+      "says": "240 Six standard F-100; 300 Six on F-250 and F-350; 302 (available F-100 only), 360 and 390 V-8s optional; 390 4x2 only"
+     },
+     {
+      "name": "Hagerty Valuation Tools, 1972 Ford F-100 1/2 Ton (engine options list)",
+      "url": "https://www.hagerty.com/valuation-tools/ford/f~100/1972/1972-ford-f~100-1!2_ton",
+      "says": "8-cyl. 302cid/154hp 2bbl"
+     },
+     {
+      "name": "BlueOvalTech, 1972 Ford F-Series trucks history page",
+      "url": "https://www.blueovaltech.com/history/1972-ford-trucks.php",
+      "says": "302 cid V8 F-100 205 (gross)"
+     },
+     {
+      "name": "Wikipedia - Ford F-Series (fifth generation)",
+      "url": "https://en.wikipedia.org/wiki/Ford_F-Series_(fifth_generation)",
+      "says": "302 CID Windsor V8, 205 / 154 hp"
+     }
+    ],
+    "status": "three_sources_not_nhra",
+    "note": "154 net (Hagerty, Wikipedia); BlueOvalTech repeats 205 gross."
+   },
+   {
+    "gen": "gen5",
+    "cid": 360,
+    "hp": 196,
+    "hp_basis": "net",
+    "name": "5.9L / 360 FE V8",
+    "rpo": "360 V-8",
+    "common_name": "FE 360",
+    "trims": [
+     "F-100 2WD and 4WD"
+    ],
+    "nhra": false,
+    "sources": [
+     {
+      "name": "Ford 1972 Pickup brochure",
+      "url": "https://oldcarbrochures.org/United%20States/Ford%20Motor%20Company%20Trucks-Vans/1972_Trucks-Vans/1972_Ford_Pickup_Brochure/index.html",
+      "says": "240 Six standard F-100; 300 Six on F-250 and F-350; 302 (available F-100 only), 360 and 390 V-8s optional; 390 4x2 only"
+     },
+     {
+      "name": "Hagerty Valuation Tools, 1972 Ford F-100 1/2 Ton (engine options list)",
+      "url": "https://www.hagerty.com/valuation-tools/ford/f~100/1972/1972-ford-f~100-1!2_ton",
+      "says": "8-cyl. 360cid/196hp 2bbl"
+     },
+     {
+      "name": "BlueOvalTech, 1972 Ford F-Series trucks history page",
+      "url": "https://www.blueovaltech.com/history/1972-ford-trucks.php",
+      "says": "360 cid V8 215 (gross)"
+     },
+     {
+      "name": "Wikipedia - Ford F-Series (fifth generation)",
+      "url": "https://en.wikipedia.org/wiki/Ford_F-Series_(fifth_generation)",
+      "says": "360 CID FE V8, 215 / 196 hp"
+     }
+    ],
+    "status": "three_sources_not_nhra",
+    "note": "196 net; 215 gross."
+   },
+   {
+    "gen": "gen5",
+    "cid": 390,
+    "hp": 201,
+    "hp_basis": "net",
+    "name": "6.4L / 390 FE V8",
+    "rpo": "390 V-8 (4x2 only)",
+    "common_name": "FE 390",
+    "trims": [
+     "F-100 2WD only"
+    ],
+    "nhra": false,
+    "sources": [
+     {
+      "name": "Ford 1972 Pickup brochure",
+      "url": "https://oldcarbrochures.org/United%20States/Ford%20Motor%20Company%20Trucks-Vans/1972_Trucks-Vans/1972_Ford_Pickup_Brochure/index.html",
+      "says": "240 Six standard F-100; 300 Six on F-250 and F-350; 302 (available F-100 only), 360 and 390 V-8s optional; 390 4x2 only"
+     },
+     {
+      "name": "Hagerty Valuation Tools, 1972 Ford F-100 1/2 Ton (engine options list)",
+      "url": "https://www.hagerty.com/valuation-tools/ford/f~100/1972/1972-ford-f~100-1!2_ton",
+      "says": "8-cyl. 390cid/201hp 2bbl"
+     },
+     {
+      "name": "BlueOvalTech, 1972 Ford F-Series trucks history page",
+      "url": "https://www.blueovaltech.com/history/1972-ford-trucks.php",
+      "says": "390 cid V8 255 (gross)"
+     },
+     {
+      "name": "Wikipedia - Ford F-Series (fifth generation)",
+      "url": "https://en.wikipedia.org/wiki/Ford_F-Series_(fifth_generation)",
+      "says": "390 CID FE V8, 255 / 201 hp"
+     }
+    ],
+    "status": "three_sources_not_nhra",
+    "note": "201 net; 255 gross. Brochure: 4x2 only."
+   }
+  ],
+  "1973": [
+   {
+    "gen": "gen6",
+    "cid": 240,
+    "hp": 115,
+    "hp_basis": "net",
+    "name": "3.9L / 240 I6",
+    "rpo": "240 Six (std.)",
+    "common_name": "Ford 240 Six",
+    "trims": [
+     "F-100 2WD and 4WD"
+    ],
+    "nhra": false,
+    "sources": [
+     {
+      "name": "Ford 1973 Pickups brochure (spec page dated February 1973)",
+      "url": "https://oldcarbrochures.org/United%20States/Ford%20Motor%20Company%20Trucks-Vans/1973-Truck-and-Vans/1973-Ford-Pickups-Brochure/index.html",
+      "says": "Feb 1973 engine table: 240 Std. F-100; 300 Std. F-250/F-350; 302 Opt. F-100 4x2; 360 Opt. all; 390 Opt. all 4x2s; 460 Opt. F-250/F-350 4x2s"
+     },
+     {
+      "name": "Hagerty Valuation Tools, 1973 Ford F-100 1/2 Ton (engine options list)",
+      "url": "https://www.hagerty.com/valuation-tools/ford/f~100/1973/1973-ford-f~100-1!2_ton",
+      "says": "6-cyl. 240cid/150hp 1bbl"
+     },
+     {
+      "name": "BlueOvalTech, 1973 Ford F-Series trucks history page",
+      "url": "https://www.blueovaltech.com/history/1973-ford-trucks.php",
+      "says": "240 cid I6 F-100 115"
+     },
+     {
+      "name": "Wikipedia - Ford F-Series (sixth generation)",
+      "url": "https://en.wikipedia.org/wiki/Ford_F-Series_(sixth_generation)",
+      "says": "240 CID I6, 1973-76, F-100 only"
+     }
+    ],
+    "status": "three_sources_not_nhra",
+    "note": "Net rating unclear: BlueOvalTech 115, Hagerty 150 (gross carry-over). The 300 Six was not an F-100 engine for 1973 (brochure: F-250/F-350 standard), though Wikipedia lists the 300 for the whole generation."
+   },
+   {
+    "gen": "gen6",
+    "cid": 302,
+    "hp": 139,
+    "hp_basis": "net",
+    "name": "5.0L / 302 Windsor V8",
+    "rpo": "302 V-8 (F-100 4x2)",
+    "common_name": "Windsor 302",
+    "trims": [
+     "F-100 2WD only"
+    ],
+    "nhra": false,
+    "sources": [
+     {
+      "name": "Ford 1973 Pickups brochure (spec page dated February 1973)",
+      "url": "https://oldcarbrochures.org/United%20States/Ford%20Motor%20Company%20Trucks-Vans/1973-Truck-and-Vans/1973-Ford-Pickups-Brochure/index.html",
+      "says": "Feb 1973 engine table: 240 Std. F-100; 300 Std. F-250/F-350; 302 Opt. F-100 4x2; 360 Opt. all; 390 Opt. all 4x2s; 460 Opt. F-250/F-350 4x2s"
+     },
+     {
+      "name": "Hagerty Valuation Tools, 1973 Ford F-100 1/2 Ton (engine options list)",
+      "url": "https://www.hagerty.com/valuation-tools/ford/f~100/1973/1973-ford-f~100-1!2_ton",
+      "says": "8-cyl. 302cid/139hp 2bbl"
+     },
+     {
+      "name": "BlueOvalTech, 1973 Ford F-Series trucks history page",
+      "url": "https://www.blueovaltech.com/history/1973-ford-trucks.php",
+      "says": "302 cid V8 F-100 145"
+     },
+     {
+      "name": "Wikipedia - Ford F-Series (sixth generation)",
+      "url": "https://en.wikipedia.org/wiki/Ford_F-Series_(sixth_generation)",
+      "says": "302 V8, 1973-79, 130 hp, 2wd pickups only"
+     }
+    ],
+    "status": "three_sources_not_nhra",
+    "note": "Net ratings disagree: Hagerty 139, BlueOvalTech 145, Wikipedia 130."
+   },
+   {
+    "gen": "gen6",
+    "cid": 360,
+    "hp": 145,
+    "hp_basis": "net",
+    "name": "5.9L / 360 FE V8",
+    "rpo": "360 V-8",
+    "common_name": "FE 360",
+    "trims": [
+     "F-100 2WD and 4WD"
+    ],
+    "nhra": false,
+    "sources": [
+     {
+      "name": "Ford 1973 Pickups brochure (spec page dated February 1973)",
+      "url": "https://oldcarbrochures.org/United%20States/Ford%20Motor%20Company%20Trucks-Vans/1973-Truck-and-Vans/1973-Ford-Pickups-Brochure/index.html",
+      "says": "Feb 1973 engine table: 240 Std. F-100; 300 Std. F-250/F-350; 302 Opt. F-100 4x2; 360 Opt. all; 390 Opt. all 4x2s; 460 Opt. F-250/F-350 4x2s"
+     },
+     {
+      "name": "Hagerty Valuation Tools, 1973 Ford F-100 1/2 Ton (engine options list)",
+      "url": "https://www.hagerty.com/valuation-tools/ford/f~100/1973/1973-ford-f~100-1!2_ton",
+      "says": "8-cyl. 360cid/145hp 2bbl"
+     },
+     {
+      "name": "BlueOvalTech, 1973 Ford F-Series trucks history page",
+      "url": "https://www.blueovaltech.com/history/1973-ford-trucks.php",
+      "says": "360 cid V8 145"
+     },
+     {
+      "name": "Wikipedia - Ford F-Series (sixth generation)",
+      "url": "https://en.wikipedia.org/wiki/Ford_F-Series_(sixth_generation)",
+      "says": "360 CID FE V8, 1973-76, 143 hp"
+     }
+    ],
+    "status": "three_sources_not_nhra",
+    "note": "Wikipedia 143."
+   },
+   {
+    "gen": "gen6",
+    "cid": 390,
+    "hp": 161,
+    "hp_basis": "net",
+    "name": "6.4L / 390 FE V8",
+    "rpo": "390 V-8 (4x2 only)",
+    "common_name": "FE 390",
+    "trims": [
+     "F-100 2WD only"
+    ],
+    "nhra": false,
+    "sources": [
+     {
+      "name": "Ford 1973 Pickups brochure (spec page dated February 1973)",
+      "url": "https://oldcarbrochures.org/United%20States/Ford%20Motor%20Company%20Trucks-Vans/1973-Truck-and-Vans/1973-Ford-Pickups-Brochure/index.html",
+      "says": "Feb 1973 engine table: 240 Std. F-100; 300 Std. F-250/F-350; 302 Opt. F-100 4x2; 360 Opt. all; 390 Opt. all 4x2s; 460 Opt. F-250/F-350 4x2s"
+     },
+     {
+      "name": "Hagerty Valuation Tools, 1973 Ford F-100 1/2 Ton (engine options list)",
+      "url": "https://www.hagerty.com/valuation-tools/ford/f~100/1973/1973-ford-f~100-1!2_ton",
+      "says": "8-cyl. 390cid/161hp 2bbl"
+     },
+     {
+      "name": "BlueOvalTech, 1973 Ford F-Series trucks history page",
+      "url": "https://www.blueovaltech.com/history/1973-ford-trucks.php",
+      "says": "390 cid V8 F-100 160"
+     },
+     {
+      "name": "Wikipedia - Ford F-Series (sixth generation)",
+      "url": "https://en.wikipedia.org/wiki/Ford_F-Series_(sixth_generation)",
+      "says": "390 CID FE V8, 1973-76, 161 hp, 2wd only"
+     }
+    ],
+    "status": "three_sources_not_nhra",
+    "note": "BlueOvalTech 160. 460 was F-250/F-350 only in 1973."
+   }
+  ],
+  "1974": [
+   {
+    "gen": "gen6",
+    "cid": 240,
+    "hp": 115,
+    "hp_basis": "net",
+    "name": "3.9L / 240 I6",
+    "rpo": "240 Six (std.)",
+    "common_name": "Ford 240 Six",
+    "trims": [
+     "F-100 2WD and 4WD"
+    ],
+    "nhra": false,
+    "sources": [
+     {
+      "name": "Ford 1974 Pickups brochure (original and revised editions)",
+      "url": "https://oldcarbrochures.org/United%20States/Ford%20Motor%20Company%20Trucks-Vans/1974-Trucks-Vans/1974-Ford-Pickups-Brochure/index.html",
+      "says": "240 Six standard in F-100; 300 Six (with Calif. emissions pkg) or 302 V-8 optional in F-100 4x2; 360 (all series), 390 (4x2s); 460 V-8 now optional in F-100s (revised edition: optional in all 4x2s)"
+     },
+     {
+      "name": "Hagerty Valuation Tools, 1974 Ford F-100 1/2 Ton (engine options list)",
+      "url": "https://www.hagerty.com/valuation-tools/ford/f~100/1974/1974-ford-f~100-1!2_ton",
+      "says": "6-cyl. 240cid/150hp 1bbl"
+     },
+     {
+      "name": "BlueOvalTech, 1974 Ford F-Series trucks history page",
+      "url": "https://www.blueovaltech.com/history/1974-ford-trucks.php",
+      "says": "240 made its final appearance as the standard engine in the F-100 for 1974; 115 hp"
+     },
+     {
+      "name": "Wikipedia - Ford F-Series (sixth generation)",
+      "url": "https://en.wikipedia.org/wiki/Ford_F-Series_(sixth_generation)",
+      "says": "240 CID I6, 1973-76, F-100 only"
+     }
+    ],
+    "status": "three_sources_not_nhra",
+    "note": "Last year. Wikipedia's 1973-76 span is contradicted by the 1975-76 brochures (300 standard), Hagerty and BlueOvalTech."
+   },
+   {
+    "gen": "gen6",
+    "cid": 300,
+    "hp": 118,
+    "hp_basis": "net",
+    "name": "4.9L / 300 I6",
+    "rpo": "300 Six (opt. F-100 4x2)",
+    "common_name": "Ford 300 Six",
+    "trims": [
+     "F-100 2WD only"
+    ],
+    "nhra": false,
+    "sources": [
+     {
+      "name": "Ford 1974 Pickups brochure (original and revised editions)",
+      "url": "https://oldcarbrochures.org/United%20States/Ford%20Motor%20Company%20Trucks-Vans/1974-Trucks-Vans/1974-Ford-Pickups-Brochure/index.html",
+      "says": "240 Six standard in F-100; 300 Six (with Calif. emissions pkg) or 302 V-8 optional in F-100 4x2; 360 (all series), 390 (4x2s); 460 V-8 now optional in F-100s (revised edition: optional in all 4x2s)"
+     },
+     {
+      "name": "BlueOvalTech, 1974 Ford F-Series trucks history page",
+      "url": "https://www.blueovaltech.com/history/1974-ford-trucks.php",
+      "says": "300 cid I-6 ... F-100 4x2 118"
+     },
+     {
+      "name": "Wikipedia - Ford F-Series (sixth generation)",
+      "url": "https://en.wikipedia.org/wiki/Ford_F-Series_(sixth_generation)",
+      "says": "300 CID I6, 1973-79, 117 hp"
+     }
+    ],
+    "status": "three_sources_not_nhra",
+    "note": "Optional in F-100 4x2 with California emissions package. Hagerty's 1974 list omits it."
+   },
+   {
+    "gen": "gen6",
+    "cid": 302,
+    "hp": 130,
+    "hp_basis": "net",
+    "name": "5.0L / 302 Windsor V8",
+    "rpo": "302 V-8 (F-100 4x2)",
+    "common_name": "Windsor 302",
+    "trims": [
+     "F-100 2WD only"
+    ],
+    "nhra": false,
+    "sources": [
+     {
+      "name": "Ford 1974 Pickups brochure (original and revised editions)",
+      "url": "https://oldcarbrochures.org/United%20States/Ford%20Motor%20Company%20Trucks-Vans/1974-Trucks-Vans/1974-Ford-Pickups-Brochure/index.html",
+      "says": "240 Six standard in F-100; 300 Six (with Calif. emissions pkg) or 302 V-8 optional in F-100 4x2; 360 (all series), 390 (4x2s); 460 V-8 now optional in F-100s (revised edition: optional in all 4x2s)"
+     },
+     {
+      "name": "Hagerty Valuation Tools, 1974 Ford F-100 1/2 Ton (engine options list)",
+      "url": "https://www.hagerty.com/valuation-tools/ford/f~100/1974/1974-ford-f~100-1!2_ton",
+      "says": "8-cyl. 302cid/130hp 2bbl"
+     },
+     {
+      "name": "BlueOvalTech, 1974 Ford F-Series trucks history page",
+      "url": "https://www.blueovaltech.com/history/1974-ford-trucks.php",
+      "says": "302 cid V-8 Opt. F-100 4x2 145"
+     },
+     {
+      "name": "Wikipedia - Ford F-Series (sixth generation)",
+      "url": "https://en.wikipedia.org/wiki/Ford_F-Series_(sixth_generation)",
+      "says": "302 V8, 130 hp, 2wd pickups only"
+     }
+    ],
+    "status": "three_sources_not_nhra",
+    "note": "BlueOvalTech 145."
+   },
+   {
+    "gen": "gen6",
+    "cid": 360,
+    "hp": 145,
+    "hp_basis": "net",
+    "name": "5.9L / 360 FE V8",
+    "rpo": "360 V-8",
+    "common_name": "FE 360",
+    "trims": [
+     "F-100 2WD and 4WD"
+    ],
+    "nhra": false,
+    "sources": [
+     {
+      "name": "Ford 1974 Pickups brochure (original and revised editions)",
+      "url": "https://oldcarbrochures.org/United%20States/Ford%20Motor%20Company%20Trucks-Vans/1974-Trucks-Vans/1974-Ford-Pickups-Brochure/index.html",
+      "says": "240 Six standard in F-100; 300 Six (with Calif. emissions pkg) or 302 V-8 optional in F-100 4x2; 360 (all series), 390 (4x2s); 460 V-8 now optional in F-100s (revised edition: optional in all 4x2s)"
+     },
+     {
+      "name": "Hagerty Valuation Tools, 1974 Ford F-100 1/2 Ton (engine options list)",
+      "url": "https://www.hagerty.com/valuation-tools/ford/f~100/1974/1974-ford-f~100-1!2_ton",
+      "says": "8-cyl. 360cid/145hp 2bbl"
+     },
+     {
+      "name": "BlueOvalTech, 1974 Ford F-Series trucks history page",
+      "url": "https://www.blueovaltech.com/history/1974-ford-trucks.php",
+      "says": "360 cid V-8 145"
+     },
+     {
+      "name": "Wikipedia - Ford F-Series (sixth generation)",
+      "url": "https://en.wikipedia.org/wiki/Ford_F-Series_(sixth_generation)",
+      "says": "360 FE V8, 143 hp"
+     }
+    ],
+    "status": "three_sources_not_nhra",
+    "note": ""
+   },
+   {
+    "gen": "gen6",
+    "cid": 390,
+    "hp": 160,
+    "hp_basis": "net",
+    "name": "6.4L / 390 FE V8",
+    "rpo": "390 V-8 (4x2 only)",
+    "common_name": "FE 390",
+    "trims": [
+     "F-100 2WD only"
+    ],
+    "nhra": false,
+    "sources": [
+     {
+      "name": "Ford 1974 Pickups brochure (original and revised editions)",
+      "url": "https://oldcarbrochures.org/United%20States/Ford%20Motor%20Company%20Trucks-Vans/1974-Trucks-Vans/1974-Ford-Pickups-Brochure/index.html",
+      "says": "240 Six standard in F-100; 300 Six (with Calif. emissions pkg) or 302 V-8 optional in F-100 4x2; 360 (all series), 390 (4x2s); 460 V-8 now optional in F-100s (revised edition: optional in all 4x2s)"
+     },
+     {
+      "name": "Hagerty Valuation Tools, 1974 Ford F-100 1/2 Ton (engine options list)",
+      "url": "https://www.hagerty.com/valuation-tools/ford/f~100/1974/1974-ford-f~100-1!2_ton",
+      "says": "8-cyl. 390cid/160hp 2bbl"
+     },
+     {
+      "name": "BlueOvalTech, 1974 Ford F-Series trucks history page",
+      "url": "https://www.blueovaltech.com/history/1974-ford-trucks.php",
+      "says": "390 cid V-8 Opt. F-100 4x2 160"
+     },
+     {
+      "name": "Wikipedia - Ford F-Series (sixth generation)",
+      "url": "https://en.wikipedia.org/wiki/Ford_F-Series_(sixth_generation)",
+      "says": "390 FE V8, 161 hp, 2wd only"
+     }
+    ],
+    "status": "three_sources_not_nhra",
+    "note": ""
+   },
+   {
+    "gen": "gen6",
+    "cid": 460,
+    "hp": 245,
+    "hp_basis": "net",
+    "name": "7.5L / 460 385-series V8",
+    "rpo": "460 V-8 (4V)",
+    "common_name": "Ford 460",
+    "trims": [
+     "F-100 2WD only"
+    ],
+    "nhra": false,
+    "sources": [
+     {
+      "name": "Ford 1974 Pickups brochure (original and revised editions)",
+      "url": "https://oldcarbrochures.org/United%20States/Ford%20Motor%20Company%20Trucks-Vans/1974-Trucks-Vans/1974-Ford-Pickups-Brochure/index.html",
+      "says": "240 Six standard in F-100; 300 Six (with Calif. emissions pkg) or 302 V-8 optional in F-100 4x2; 360 (all series), 390 (4x2s); 460 V-8 now optional in F-100s (revised edition: optional in all 4x2s)"
+     },
+     {
+      "name": "BlueOvalTech, 1974 Ford F-Series trucks history page",
+      "url": "https://www.blueovaltech.com/history/1974-ford-trucks.php",
+      "says": "460 V-8 made available to all two-wheel drive pickups; 460 cid V-8 (4V) Opt. 4x2's 245"
+     },
+     {
+      "name": "Wikipedia - Ford F-Series (sixth generation)",
+      "url": "https://en.wikipedia.org/wiki/Ford_F-Series_(sixth_generation)",
+      "says": "460 CID 385 V8, 1973-79, 200-239 hp, 2wd pickups only"
+     }
+    ],
+    "status": "three_sources_not_nhra",
+    "note": "Only year the 460 was offered in the F-100 (1973: F-250/F-350 only; 1975-79 brochures restrict it to F-150 and heavier). Hagerty omits it. Net hp disputed: BlueOvalTech 245, Wikipedia 200-239."
+   }
+  ],
+  "1975": [
+   {
+    "gen": "gen6",
+    "cid": 300,
+    "hp": 120,
+    "hp_basis": "net",
+    "name": "4.9L / 300 I6",
+    "rpo": "300 Six (std.)",
+    "common_name": "Ford 300 Six",
+    "trims": [
+     "F-100 2WD and 4WD"
+    ],
+    "nhra": false,
+    "sources": [
+     {
+      "name": "Ford 1975 Pickups brochure (Engine Availability chart p.15)",
+      "url": "https://oldcarbrochures.org/United%20States/Ford%20Motor%20Company%20Trucks-Vans/1975_Trucks%20_and_Vans/1975-Ford-Pickups-Brochure/index.html",
+      "says": "Engine Availability: 300 Six Std. F-100/F-150/F-250/F-350; 302 (2V) Opt. F-100 4x2 (Regular Cab); 360 (2V) Std. F-350 Styleside and SCS, Opt. all others; 390 (2V) Opt. F-100 4x2; 390 (4V) and 460 (4V) Opt. F-150/F-250/F-350 4x2s"
+     },
+     {
+      "name": "Hagerty Valuation Tools, 1975 Ford F-100 1/2 Ton (engine options list)",
+      "url": "https://www.hagerty.com/valuation-tools/ford/f~100/1975/1975-ford-f~100-1!2_ton",
+      "says": "6-cyl. 300cid/120hp 1bbl"
+     },
+     {
+      "name": "BlueOvalTech, 1975 Ford F-Series trucks history page",
+      "url": "https://www.blueovaltech.com/history/1975-ford-trucks.php",
+      "says": "4.9 liter / 300 cid I-6 F-100/F-150/F-250/F-350 113"
+     },
+     {
+      "name": "Wikipedia - Ford F-Series (sixth generation)",
+      "url": "https://en.wikipedia.org/wiki/Ford_F-Series_(sixth_generation)",
+      "says": "300 CID I6, 1973-79, 117 hp"
+     }
+    ],
+    "status": "three_sources_not_nhra",
+    "note": "Net ratings vary by GVW/emissions: Hagerty 120, Wikipedia 117, BlueOvalTech 113. New standard F-100 engine for 1975, replacing the 240."
+   },
+   {
+    "gen": "gen6",
+    "cid": 302,
+    "hp": 130,
+    "hp_basis": "net",
+    "name": "5.0L / 302 Windsor V8",
+    "rpo": "302 V-8 (F-100 4x2 Regular Cab)",
+    "common_name": "Windsor 302",
+    "trims": [
+     "F-100 2WD Regular Cab"
+    ],
+    "nhra": false,
+    "sources": [
+     {
+      "name": "Ford 1975 Pickups brochure (Engine Availability chart p.15)",
+      "url": "https://oldcarbrochures.org/United%20States/Ford%20Motor%20Company%20Trucks-Vans/1975_Trucks%20_and_Vans/1975-Ford-Pickups-Brochure/index.html",
+      "says": "Engine Availability: 300 Six Std. F-100/F-150/F-250/F-350; 302 (2V) Opt. F-100 4x2 (Regular Cab); 360 (2V) Std. F-350 Styleside and SCS, Opt. all others; 390 (2V) Opt. F-100 4x2; 390 (4V) and 460 (4V) Opt. F-150/F-250/F-350 4x2s"
+     },
+     {
+      "name": "Hagerty Valuation Tools, 1975 Ford F-100 1/2 Ton (engine options list)",
+      "url": "https://www.hagerty.com/valuation-tools/ford/f~100/1975/1975-ford-f~100-1!2_ton",
+      "says": "8-cyl. 302cid/130hp 2bbl"
+     },
+     {
+      "name": "BlueOvalTech, 1975 Ford F-Series trucks history page",
+      "url": "https://www.blueovaltech.com/history/1975-ford-trucks.php",
+      "says": "5.0 liter / 302 cid V-8 F-100 130"
+     },
+     {
+      "name": "Wikipedia - Ford F-Series (sixth generation)",
+      "url": "https://en.wikipedia.org/wiki/Ford_F-Series_(sixth_generation)",
+      "says": "302 V8, 130 hp, 2wd only"
+     }
+    ],
+    "status": "three_sources_not_nhra",
+    "note": ""
+   },
+   {
+    "gen": "gen6",
+    "cid": 360,
+    "hp": 145,
+    "hp_basis": "net",
+    "name": "5.9L / 360 FE V8",
+    "rpo": "360 V-8 (2V)",
+    "common_name": "FE 360",
+    "trims": [
+     "F-100 2WD and 4WD"
+    ],
+    "nhra": false,
+    "sources": [
+     {
+      "name": "Ford 1975 Pickups brochure (Engine Availability chart p.15)",
+      "url": "https://oldcarbrochures.org/United%20States/Ford%20Motor%20Company%20Trucks-Vans/1975_Trucks%20_and_Vans/1975-Ford-Pickups-Brochure/index.html",
+      "says": "Engine Availability: 300 Six Std. F-100/F-150/F-250/F-350; 302 (2V) Opt. F-100 4x2 (Regular Cab); 360 (2V) Std. F-350 Styleside and SCS, Opt. all others; 390 (2V) Opt. F-100 4x2; 390 (4V) and 460 (4V) Opt. F-150/F-250/F-350 4x2s"
+     },
+     {
+      "name": "Hagerty Valuation Tools, 1975 Ford F-100 1/2 Ton (engine options list)",
+      "url": "https://www.hagerty.com/valuation-tools/ford/f~100/1975/1975-ford-f~100-1!2_ton",
+      "says": "8-cyl. 360cid/143hp 2bbl"
+     },
+     {
+      "name": "BlueOvalTech, 1975 Ford F-Series trucks history page",
+      "url": "https://www.blueovaltech.com/history/1975-ford-trucks.php",
+      "says": "5.9 liter / 360 cid V-8 145"
+     },
+     {
+      "name": "Wikipedia - Ford F-Series (sixth generation)",
+      "url": "https://en.wikipedia.org/wiki/Ford_F-Series_(sixth_generation)",
+      "says": "360 FE V8, 1973-76, 143 hp"
+     }
+    ],
+    "status": "three_sources_not_nhra",
+    "note": "Hagerty 143, Wikipedia 143, BlueOvalTech 145."
+   },
+   {
+    "gen": "gen6",
+    "cid": 390,
+    "hp": 160,
+    "hp_basis": "net",
+    "name": "6.4L / 390 FE V8",
+    "rpo": "390 V-8 (2V, F-100 4x2)",
+    "common_name": "FE 390",
+    "trims": [
+     "F-100 2WD only"
+    ],
+    "nhra": false,
+    "sources": [
+     {
+      "name": "Ford 1975 Pickups brochure (Engine Availability chart p.15)",
+      "url": "https://oldcarbrochures.org/United%20States/Ford%20Motor%20Company%20Trucks-Vans/1975_Trucks%20_and_Vans/1975-Ford-Pickups-Brochure/index.html",
+      "says": "Engine Availability: 300 Six Std. F-100/F-150/F-250/F-350; 302 (2V) Opt. F-100 4x2 (Regular Cab); 360 (2V) Std. F-350 Styleside and SCS, Opt. all others; 390 (2V) Opt. F-100 4x2; 390 (4V) and 460 (4V) Opt. F-150/F-250/F-350 4x2s"
+     },
+     {
+      "name": "Hagerty Valuation Tools, 1975 Ford F-100 1/2 Ton (engine options list)",
+      "url": "https://www.hagerty.com/valuation-tools/ford/f~100/1975/1975-ford-f~100-1!2_ton",
+      "says": "8-cyl. 390cid/157hp 2bbl"
+     },
+     {
+      "name": "BlueOvalTech, 1975 Ford F-Series trucks history page",
+      "url": "https://www.blueovaltech.com/history/1975-ford-trucks.php",
+      "says": "6.4 liters / 390 cid V-8 160"
+     },
+     {
+      "name": "Wikipedia - Ford F-Series (sixth generation)",
+      "url": "https://en.wikipedia.org/wiki/Ford_F-Series_(sixth_generation)",
+      "says": "390 FE V8, 1973-76, 161 hp"
+     }
+    ],
+    "status": "three_sources_not_nhra",
+    "note": "Net ratings disagree: Hagerty 157, BlueOvalTech 160, Wikipedia 161. The 460 and 390-4V were F-150 and heavier only."
+   }
+  ],
+  "1976": [
+   {
+    "gen": "gen6",
+    "cid": 300,
+    "hp": 120,
+    "hp_basis": "net",
+    "name": "4.9L / 300 I6",
+    "rpo": "300 Six (std.)",
+    "common_name": "Ford 300 Six",
+    "trims": [
+     "F-100 2WD and 4WD"
+    ],
+    "nhra": false,
+    "sources": [
+     {
+      "name": "Ford 1976 Pickups brochure (Engine Availability chart p.15)",
+      "url": "https://oldcarbrochures.org/United%20States/Ford%20Motor%20Company%20Trucks-Vans/1976_Trucks-Vans/1976-Ford-Pickups-Brochure/index.html",
+      "says": "Engine Availability: 300 Six Std.; 302 (2V) Opt. F-100 4x2 (Regular Cab); 360 (2V) Std. F-100 4x4, F-350 Styleside, SuperCab and SCS, Opt. all others; 390 (2V) Opt. F-100 4x2; 390 (4V) and 460 (4V) Opt. F-150/F-250/F-350 4x2s"
+     },
+     {
+      "name": "Hagerty Valuation Tools, 1976 Ford F-100 1/2 Ton (engine options list)",
+      "url": "https://www.hagerty.com/valuation-tools/ford/f~100/1976/1976-ford-f~100-1!2_ton",
+      "says": "6-cyl. 300cid/120hp 1bbl"
+     },
+     {
+      "name": "BlueOvalTech, 1976 Ford F-Series trucks history page",
+      "url": "https://www.blueovaltech.com/history/1976-ford-trucks.php",
+      "says": "4.9 liter / 300 cid I-6 F-100/F-150/F-250/F-350 113"
+     },
+     {
+      "name": "Wikipedia - Ford F-Series (sixth generation)",
+      "url": "https://en.wikipedia.org/wiki/Ford_F-Series_(sixth_generation)",
+      "says": "300 CID I6, 1973-79, 117 hp"
+     }
+    ],
+    "status": "three_sources_not_nhra",
+    "note": "Net ratings vary by GVW/emissions: Hagerty 120, Wikipedia 117, BlueOvalTech 113."
+   },
+   {
+    "gen": "gen6",
+    "cid": 302,
+    "hp": 130,
+    "hp_basis": "net",
+    "name": "5.0L / 302 Windsor V8",
+    "rpo": "302 V-8 (F-100 4x2 Regular Cab)",
+    "common_name": "Windsor 302",
+    "trims": [
+     "F-100 2WD Regular Cab"
+    ],
+    "nhra": false,
+    "sources": [
+     {
+      "name": "Ford 1976 Pickups brochure (Engine Availability chart p.15)",
+      "url": "https://oldcarbrochures.org/United%20States/Ford%20Motor%20Company%20Trucks-Vans/1976_Trucks-Vans/1976-Ford-Pickups-Brochure/index.html",
+      "says": "Engine Availability: 300 Six Std.; 302 (2V) Opt. F-100 4x2 (Regular Cab); 360 (2V) Std. F-100 4x4, F-350 Styleside, SuperCab and SCS, Opt. all others; 390 (2V) Opt. F-100 4x2; 390 (4V) and 460 (4V) Opt. F-150/F-250/F-350 4x2s"
+     },
+     {
+      "name": "Hagerty Valuation Tools, 1976 Ford F-100 1/2 Ton (engine options list)",
+      "url": "https://www.hagerty.com/valuation-tools/ford/f~100/1976/1976-ford-f~100-1!2_ton",
+      "says": "8-cyl. 302cid/130hp 2bbl; also 302cid/134hp"
+     },
+     {
+      "name": "BlueOvalTech, 1976 Ford F-Series trucks history page",
+      "url": "https://www.blueovaltech.com/history/1976-ford-trucks.php",
+      "says": "5.0 liter / 302 cid V-8 F-100 130"
+     },
+     {
+      "name": "Wikipedia - Ford F-Series (sixth generation)",
+      "url": "https://en.wikipedia.org/wiki/Ford_F-Series_(sixth_generation)",
+      "says": "302 V8, 130 hp, 2wd only"
+     }
+    ],
+    "status": "three_sources_not_nhra",
+    "note": ""
+   },
+   {
+    "gen": "gen6",
+    "cid": 360,
+    "hp": 145,
+    "hp_basis": "net",
+    "name": "5.9L / 360 FE V8",
+    "rpo": "360 V-8 (2V)",
+    "common_name": "FE 360",
+    "trims": [
+     "F-100 2WD and 4WD"
+    ],
+    "nhra": false,
+    "sources": [
+     {
+      "name": "Ford 1976 Pickups brochure (Engine Availability chart p.15)",
+      "url": "https://oldcarbrochures.org/United%20States/Ford%20Motor%20Company%20Trucks-Vans/1976_Trucks-Vans/1976-Ford-Pickups-Brochure/index.html",
+      "says": "Engine Availability: 300 Six Std.; 302 (2V) Opt. F-100 4x2 (Regular Cab); 360 (2V) Std. F-100 4x4, F-350 Styleside, SuperCab and SCS, Opt. all others; 390 (2V) Opt. F-100 4x2; 390 (4V) and 460 (4V) Opt. F-150/F-250/F-350 4x2s"
+     },
+     {
+      "name": "Hagerty Valuation Tools, 1976 Ford F-100 1/2 Ton (engine options list)",
+      "url": "https://www.hagerty.com/valuation-tools/ford/f~100/1976/1976-ford-f~100-1!2_ton",
+      "says": "8-cyl. 360cid/145hp 2bbl"
+     },
+     {
+      "name": "BlueOvalTech, 1976 Ford F-Series trucks history page",
+      "url": "https://www.blueovaltech.com/history/1976-ford-trucks.php",
+      "says": "5.9 liter / 360 cid V-8 145"
+     },
+     {
+      "name": "Wikipedia - Ford F-Series (sixth generation)",
+      "url": "https://en.wikipedia.org/wiki/Ford_F-Series_(sixth_generation)",
+      "says": "360 FE V8, 1973-76, 143 hp"
+     }
+    ],
+    "status": "three_sources_not_nhra",
+    "note": "Standard engine in the F-100 4x4 for 1976. Last year of the 360."
+   },
+   {
+    "gen": "gen6",
+    "cid": 390,
+    "hp": 160,
+    "hp_basis": "net",
+    "name": "6.4L / 390 FE V8",
+    "rpo": "390 V-8 (2V, F-100 4x2)",
+    "common_name": "FE 390",
+    "trims": [
+     "F-100 2WD only"
+    ],
+    "nhra": false,
+    "sources": [
+     {
+      "name": "Ford 1976 Pickups brochure (Engine Availability chart p.15)",
+      "url": "https://oldcarbrochures.org/United%20States/Ford%20Motor%20Company%20Trucks-Vans/1976_Trucks-Vans/1976-Ford-Pickups-Brochure/index.html",
+      "says": "Engine Availability: 300 Six Std.; 302 (2V) Opt. F-100 4x2 (Regular Cab); 360 (2V) Std. F-100 4x4, F-350 Styleside, SuperCab and SCS, Opt. all others; 390 (2V) Opt. F-100 4x2; 390 (4V) and 460 (4V) Opt. F-150/F-250/F-350 4x2s"
+     },
+     {
+      "name": "Hagerty Valuation Tools, 1976 Ford F-100 1/2 Ton (engine options list)",
+      "url": "https://www.hagerty.com/valuation-tools/ford/f~100/1976/1976-ford-f~100-1!2_ton",
+      "says": "8-cyl. 390cid/147hp and 156hp 2bbl"
+     },
+     {
+      "name": "BlueOvalTech, 1976 Ford F-Series trucks history page",
+      "url": "https://www.blueovaltech.com/history/1976-ford-trucks.php",
+      "says": "6.4 liters / 390 cid V-8 160"
+     },
+     {
+      "name": "Wikipedia - Ford F-Series (sixth generation)",
+      "url": "https://en.wikipedia.org/wiki/Ford_F-Series_(sixth_generation)",
+      "says": "390 FE V8, 1973-76, 161 hp"
+     }
+    ],
+    "status": "three_sources_not_nhra",
+    "note": "Last year of the 390. Hagerty 147/156, BlueOvalTech 160, Wikipedia 161. The 460 and 390-4V were F-150 and heavier only."
+   }
+  ],
+  "1977": [
+   {
+    "gen": "gen6",
+    "cid": 300,
+    "hp": 120,
+    "hp_basis": "net",
+    "name": "4.9L / 300 I6",
+    "rpo": "300 Six (std.)",
+    "common_name": "Ford 300 Six",
+    "trims": [
+     "F-100 2WD"
+    ],
+    "nhra": false,
+    "sources": [
+     {
+      "name": "Ford 1977 Pickups brochure (Engine Availability chart p.8)",
+      "url": "https://oldcarbrochures.org/United%20States/Ford%20Motor%20Company%20Trucks-Vans/1977_Trucks_and_Vans/1977-Ford-Pickups-Brochure/index.html",
+      "says": "Engine Availability: 300 Six Std. F-100/F-150/F-250/F-350; 302 (2V) Opt. F-100, F-150 Reg. Cabs; 351 (2V) Std. F-350 Styleside/SuperCab, Opt. all others; 400 (2V) Opt. F-100, F-150, F-250, F-350; 460 (4V) Opt. F-150, F-250, F-350"
+     },
+     {
+      "name": "Hagerty Valuation Tools, 1977 Ford F-100 1/2 Ton (engine options list)",
+      "url": "https://www.hagerty.com/valuation-tools/ford/f~100/1977/1977-ford-f~100-1!2_ton",
+      "says": "6-cyl. 300cid/120hp 1bbl"
+     },
+     {
+      "name": "BlueOvalTech, 1977 Ford F-Series trucks history page",
+      "url": "https://www.blueovaltech.com/history/1977-ford-trucks.php",
+      "says": "4.9 liter / 300 cid I-6 F-100 113"
+     },
+     {
+      "name": "Wikipedia - Ford F-Series (sixth generation)",
+      "url": "https://en.wikipedia.org/wiki/Ford_F-Series_(sixth_generation)",
+      "says": "300 CID I6, 117 hp"
+     }
+    ],
+    "status": "three_sources_not_nhra",
+    "note": "Net 113-120 by source. 4x4 moved to the F-150 for 1977; F-100 is 2WD only from here."
+   },
+   {
+    "gen": "gen6",
+    "cid": 302,
+    "hp": 130,
+    "hp_basis": "net",
+    "name": "5.0L / 302 Windsor V8",
+    "rpo": "302 V-8 (2V)",
+    "common_name": "Windsor 302",
+    "trims": [
+     "F-100 2WD"
+    ],
+    "nhra": false,
+    "sources": [
+     {
+      "name": "Ford 1977 Pickups brochure (Engine Availability chart p.8)",
+      "url": "https://oldcarbrochures.org/United%20States/Ford%20Motor%20Company%20Trucks-Vans/1977_Trucks_and_Vans/1977-Ford-Pickups-Brochure/index.html",
+      "says": "Engine Availability: 300 Six Std. F-100/F-150/F-250/F-350; 302 (2V) Opt. F-100, F-150 Reg. Cabs; 351 (2V) Std. F-350 Styleside/SuperCab, Opt. all others; 400 (2V) Opt. F-100, F-150, F-250, F-350; 460 (4V) Opt. F-150, F-250, F-350"
+     },
+     {
+      "name": "Hagerty Valuation Tools, 1977 Ford F-100 1/2 Ton (engine options list)",
+      "url": "https://www.hagerty.com/valuation-tools/ford/f~100/1977/1977-ford-f~100-1!2_ton",
+      "says": "8-cyl. 302cid/130hp 2bbl"
+     },
+     {
+      "name": "BlueOvalTech, 1977 Ford F-Series trucks history page",
+      "url": "https://www.blueovaltech.com/history/1977-ford-trucks.php",
+      "says": "5.0 liter / 302 cid V-8 F-100 / F-150 130"
+     },
+     {
+      "name": "Wikipedia - Ford F-Series (sixth generation)",
+      "url": "https://en.wikipedia.org/wiki/Ford_F-Series_(sixth_generation)",
+      "says": "302 V8, 130 hp"
+     }
+    ],
+    "status": "three_sources_not_nhra",
+    "note": ""
+   },
+   {
+    "gen": "gen6",
+    "cid": 351,
+    "hp": 143,
+    "hp_basis": "net",
+    "name": "5.8L / 351M V8",
+    "rpo": "351 V-8 (2V)",
+    "common_name": "351M",
+    "trims": [
+     "F-100 2WD"
+    ],
+    "nhra": false,
+    "sources": [
+     {
+      "name": "Ford 1977 Pickups brochure (Engine Availability chart p.8)",
+      "url": "https://oldcarbrochures.org/United%20States/Ford%20Motor%20Company%20Trucks-Vans/1977_Trucks_and_Vans/1977-Ford-Pickups-Brochure/index.html",
+      "says": "Engine Availability: 300 Six Std. F-100/F-150/F-250/F-350; 302 (2V) Opt. F-100, F-150 Reg. Cabs; 351 (2V) Std. F-350 Styleside/SuperCab, Opt. all others; 400 (2V) Opt. F-100, F-150, F-250, F-350; 460 (4V) Opt. F-150, F-250, F-350"
+     },
+     {
+      "name": "Hagerty Valuation Tools, 1977 Ford F-100 1/2 Ton (engine options list)",
+      "url": "https://www.hagerty.com/valuation-tools/ford/f~100/1977/1977-ford-f~100-1!2_ton",
+      "says": "8-cyl. 351cid/143hp 2bbl"
+     },
+     {
+      "name": "BlueOvalTech, 1977 Ford F-Series trucks history page",
+      "url": "https://www.blueovaltech.com/history/1977-ford-trucks.php",
+      "says": "5.8 liter / 351 cid V-8 F-100/F-150/F-250/F-350 160"
+     },
+     {
+      "name": "Wikipedia - Ford F-Series (sixth generation)",
+      "url": "https://en.wikipedia.org/wiki/Ford_F-Series_(sixth_generation)",
+      "says": "351M V8, 1977-79, 156 hp"
+     }
+    ],
+    "status": "three_sources_not_nhra",
+    "note": "New for 1977 (335-series 351M; BlueOvalTech wrongly calls it a Windsor). Net ratings disagree: Hagerty 143, Wikipedia 156, BlueOvalTech 160."
+   },
+   {
+    "gen": "gen6",
+    "cid": 400,
+    "hp": 169,
+    "hp_basis": "net",
+    "name": "6.6L / 400 V8",
+    "rpo": "400 V-8 (2V)",
+    "common_name": "Ford 400",
+    "trims": [
+     "F-100 2WD"
+    ],
+    "nhra": false,
+    "sources": [
+     {
+      "name": "Ford 1977 Pickups brochure (Engine Availability chart p.8)",
+      "url": "https://oldcarbrochures.org/United%20States/Ford%20Motor%20Company%20Trucks-Vans/1977_Trucks_and_Vans/1977-Ford-Pickups-Brochure/index.html",
+      "says": "Engine Availability: 300 Six Std. F-100/F-150/F-250/F-350; 302 (2V) Opt. F-100, F-150 Reg. Cabs; 351 (2V) Std. F-350 Styleside/SuperCab, Opt. all others; 400 (2V) Opt. F-100, F-150, F-250, F-350; 460 (4V) Opt. F-150, F-250, F-350"
+     },
+     {
+      "name": "Hagerty Valuation Tools, 1977 Ford F-100 1/2 Ton (engine options list)",
+      "url": "https://www.hagerty.com/valuation-tools/ford/f~100/1977/1977-ford-f~100-1!2_ton",
+      "says": "8-cyl. 400cid/177hp 2bbl"
+     },
+     {
+      "name": "Wikipedia - Ford F-Series (sixth generation)",
+      "url": "https://en.wikipedia.org/wiki/Ford_F-Series_(sixth_generation)",
+      "says": "400 V8, 1977-79, 169 hp"
+     }
+    ],
+    "status": "three_sources_not_nhra",
+    "note": "Brochure lists the 400 as optional in the F-100; BlueOvalTech's table says F-150/F-250/F-350 only. Net: Wikipedia and BlueOvalTech 169, Hagerty 177."
+   }
+  ],
+  "1978": [
+   {
+    "gen": "gen6",
+    "cid": 300,
+    "hp": 120,
+    "hp_basis": "net",
+    "name": "4.9L / 300 I6",
+    "rpo": "300 Six (std.)",
+    "common_name": "Ford 300 Six",
+    "trims": [
+     "F-100 2WD"
+    ],
+    "nhra": false,
+    "sources": [
+     {
+      "name": "Hagerty Valuation Tools, 1978 Ford F-100 1/2 Ton (engine options list)",
+      "url": "https://www.hagerty.com/valuation-tools/ford/f~100/1978/1978-ford-f~100-1!2_ton",
+      "says": "6-cyl. 300cid/120hp 1bbl"
+     },
+     {
+      "name": "BlueOvalTech, 1978 Ford F-Series trucks history page",
+      "url": "https://www.blueovaltech.com/history/1978-ford-trucks.php",
+      "says": "4.9 liter / 300 cid I-6 F-100 113"
+     },
+     {
+      "name": "Wikipedia - Ford F-Series (sixth generation)",
+      "url": "https://en.wikipedia.org/wiki/Ford_F-Series_(sixth_generation)",
+      "says": "300 CID I6, 117 hp"
+     }
+    ],
+    "status": "three_sources_not_nhra",
+    "note": "The 1978 Ford Pickups brochure online has no engine table (all pages checked)."
+   },
+   {
+    "gen": "gen6",
+    "cid": 302,
+    "hp": 130,
+    "hp_basis": "net",
+    "name": "5.0L / 302 Windsor V8",
+    "rpo": "302 V-8",
+    "common_name": "Windsor 302",
+    "trims": [
+     "F-100 2WD"
+    ],
+    "nhra": false,
+    "sources": [
+     {
+      "name": "Hagerty Valuation Tools, 1978 Ford F-100 1/2 Ton (engine options list)",
+      "url": "https://www.hagerty.com/valuation-tools/ford/f~100/1978/1978-ford-f~100-1!2_ton",
+      "says": "8-cyl. 302cid/130hp 2bbl"
+     },
+     {
+      "name": "BlueOvalTech, 1978 Ford F-Series trucks history page",
+      "url": "https://www.blueovaltech.com/history/1978-ford-trucks.php",
+      "says": "5.0 liter / 302 cid V-8 F-100 / F-150 Reg Cab 130"
+     },
+     {
+      "name": "Wikipedia - Ford F-Series (sixth generation)",
+      "url": "https://en.wikipedia.org/wiki/Ford_F-Series_(sixth_generation)",
+      "says": "302 V8, 130 hp"
+     }
+    ],
+    "status": "three_sources_not_nhra",
+    "note": ""
+   },
+   {
+    "gen": "gen6",
+    "cid": 351,
+    "hp": 147,
+    "hp_basis": "net",
+    "name": "5.8L / 351M V8",
+    "rpo": "351 V-8",
+    "common_name": "351M",
+    "trims": [
+     "F-100 2WD"
+    ],
+    "nhra": false,
+    "sources": [
+     {
+      "name": "Hagerty Valuation Tools, 1978 Ford F-100 1/2 Ton (engine options list)",
+      "url": "https://www.hagerty.com/valuation-tools/ford/f~100/1978/1978-ford-f~100-1!2_ton",
+      "says": "8-cyl. 351cid/147hp 2bbl"
+     },
+     {
+      "name": "BlueOvalTech, 1978 Ford F-Series trucks history page",
+      "url": "https://www.blueovaltech.com/history/1978-ford-trucks.php",
+      "says": "5.8 liter / 351 cid V-8 F-100/F-150/F-250/F-350 163"
+     },
+     {
+      "name": "Wikipedia - Ford F-Series (sixth generation)",
+      "url": "https://en.wikipedia.org/wiki/Ford_F-Series_(sixth_generation)",
+      "says": "351M V8, 1977-79, 156 hp"
+     }
+    ],
+    "status": "three_sources_not_nhra",
+    "note": "Net ratings disagree (147/156/163)."
+   },
+   {
+    "gen": "gen6",
+    "cid": 400,
+    "hp": 149,
+    "hp_basis": "net",
+    "name": "6.6L / 400 V8",
+    "rpo": "400 V-8",
+    "common_name": "Ford 400",
+    "trims": [
+     "F-100 2WD"
+    ],
+    "nhra": false,
+    "sources": [
+     {
+      "name": "Hagerty Valuation Tools, 1978 Ford F-100 1/2 Ton (engine options list)",
+      "url": "https://www.hagerty.com/valuation-tools/ford/f~100/1978/1978-ford-f~100-1!2_ton",
+      "says": "8-cyl. 400cid/149hp 2bbl"
+     },
+     {
+      "name": "BlueOvalTech, 1978 Ford F-Series trucks history page",
+      "url": "https://www.blueovaltech.com/history/1978-ford-trucks.php",
+      "says": "6.6 liter / 400 cid V-8 F-100/F-150/F-250/F-350"
+     },
+     {
+      "name": "Wikipedia - Ford F-Series (sixth generation)",
+      "url": "https://en.wikipedia.org/wiki/Ford_F-Series_(sixth_generation)",
+      "says": "400 V8, 1977-79, 169 hp"
+     }
+    ],
+    "status": "three_sources_not_nhra",
+    "note": "Net ratings disagree (Hagerty 149, Wikipedia 169). Last F-100 year for the 400."
+   }
+  ],
+  "1979": [
+   {
+    "gen": "gen6",
+    "cid": 300,
+    "hp": 117,
+    "hp_basis": "net",
+    "name": "4.9L / 300 I6",
+    "rpo": "4.9L Six (std.)",
+    "common_name": "Ford 300 Six",
+    "trims": [
+     "F-100 2WD"
+    ],
+    "nhra": false,
+    "sources": [
+     {
+      "name": "Ford 1979 Pickups brochure (spec chart p.16)",
+      "url": "https://oldcarbrochures.org/United%20States/Ford%20Motor%20Company%20Trucks-Vans/1979_Trucks-Vans/1979_Ford_Pickups/index.html",
+      "says": "F-100 two-wheel-drive spec chart: engine 4.9L (300) Six std.; optional 5.0L (302) V-8 and 5.8L (351) V-8; 6.6L (400) and 7.5L (460) listed for F-150 and heavier only"
+     },
+     {
+      "name": "Hagerty Valuation Tools, 1979 Ford F-100 1/2 Ton (engine options list)",
+      "url": "https://www.hagerty.com/valuation-tools/ford/f~100/1979/1979-ford-f~100-1!2_ton",
+      "says": "6-cyl. 300cid/120hp 1bbl"
+     },
+     {
+      "name": "BlueOvalTech, 1979 Ford F-Series trucks history page",
+      "url": "https://www.blueovaltech.com/history/1979-ford-trucks.php",
+      "says": "4.9 liter/300 cid I-6 F-100 116"
+     },
+     {
+      "name": "Wikipedia - Ford F-Series (sixth generation)",
+      "url": "https://en.wikipedia.org/wiki/Ford_F-Series_(sixth_generation)",
+      "says": "300 CID I6, 117 hp"
+     }
+    ],
+    "status": "three_sources_not_nhra",
+    "note": "Net 116-120 by source."
+   },
+   {
+    "gen": "gen6",
+    "cid": 302,
+    "hp": 130,
+    "hp_basis": "net",
+    "name": "5.0L / 302 Windsor V8",
+    "rpo": "5.0L V-8",
+    "common_name": "Windsor 302",
+    "trims": [
+     "F-100 2WD"
+    ],
+    "nhra": false,
+    "sources": [
+     {
+      "name": "Ford 1979 Pickups brochure (spec chart p.16)",
+      "url": "https://oldcarbrochures.org/United%20States/Ford%20Motor%20Company%20Trucks-Vans/1979_Trucks-Vans/1979_Ford_Pickups/index.html",
+      "says": "F-100 two-wheel-drive spec chart: engine 4.9L (300) Six std.; optional 5.0L (302) V-8 and 5.8L (351) V-8; 6.6L (400) and 7.5L (460) listed for F-150 and heavier only"
+     },
+     {
+      "name": "Hagerty Valuation Tools, 1979 Ford F-100 1/2 Ton (engine options list)",
+      "url": "https://www.hagerty.com/valuation-tools/ford/f~100/1979/1979-ford-f~100-1!2_ton",
+      "says": "8-cyl. 302cid/130hp 2bbl"
+     },
+     {
+      "name": "BlueOvalTech, 1979 Ford F-Series trucks history page",
+      "url": "https://www.blueovaltech.com/history/1979-ford-trucks.php",
+      "says": "5.0 liter/302 cid V-8 F-100 / F-150 130"
+     },
+     {
+      "name": "Wikipedia - Ford F-Series (sixth generation)",
+      "url": "https://en.wikipedia.org/wiki/Ford_F-Series_(sixth_generation)",
+      "says": "302 V8, 130 hp"
+     }
+    ],
+    "status": "three_sources_not_nhra",
+    "note": ""
+   },
+   {
+    "gen": "gen6",
+    "cid": 351,
+    "hp": 156,
+    "hp_basis": "net",
+    "name": "5.8L / 351M V8",
+    "rpo": "5.8L V-8",
+    "common_name": "351M",
+    "trims": [
+     "F-100 2WD"
+    ],
+    "nhra": false,
+    "sources": [
+     {
+      "name": "Ford 1979 Pickups brochure (spec chart p.16)",
+      "url": "https://oldcarbrochures.org/United%20States/Ford%20Motor%20Company%20Trucks-Vans/1979_Trucks-Vans/1979_Ford_Pickups/index.html",
+      "says": "F-100 two-wheel-drive spec chart: engine 4.9L (300) Six std.; optional 5.0L (302) V-8 and 5.8L (351) V-8; 6.6L (400) and 7.5L (460) listed for F-150 and heavier only"
+     },
+     {
+      "name": "Hagerty Valuation Tools, 1979 Ford F-100 1/2 Ton (engine options list)",
+      "url": "https://www.hagerty.com/valuation-tools/ford/f~100/1979/1979-ford-f~100-1!2_ton",
+      "says": "8-cyl. 351cid/156hp 2bbl"
+     },
+     {
+      "name": "BlueOvalTech, 1979 Ford F-Series trucks history page",
+      "url": "https://www.blueovaltech.com/history/1979-ford-trucks.php",
+      "says": "5.8 liter/351 cid V-8 F-100/F-150/F-250/F-350 160"
+     },
+     {
+      "name": "Wikipedia - Ford F-Series (sixth generation)",
+      "url": "https://en.wikipedia.org/wiki/Ford_F-Series_(sixth_generation)",
+      "says": "351M V8, 1977-79, 156 hp"
+     }
+    ],
+    "status": "three_sources_not_nhra",
+    "note": "400 and 460 were not offered in the 1979 F-100 (brochure chart, Hagerty and BlueOvalTech agree); Wikipedia's 460 '2wd pickups' note is not F-100-specific."
+   }
+  ],
+  "1980": [
+   {
+    "gen": "gen7",
+    "cid": 300,
+    "hp": 117,
+    "hp_basis": "net",
+    "name": "4.9L / 300 I6",
+    "rpo": "4.9L Six (std.)",
+    "common_name": "Ford 300 Six",
+    "trims": [
+     "F-100 2WD"
+    ],
+    "nhra": false,
+    "sources": [
+     {
+      "name": "Ford 1980 Pickup brochure (two-wheel-drive spec chart p.17)",
+      "url": "https://oldcarbrochures.org/United%20States/Ford%20Motor%20Company%20Trucks-Vans/1980_Trucks-Vans/1980-Ford-Pickup-Brochure/index.html",
+      "says": "two-wheel-drive spec chart: F-100 engine 4.9L (300) Six std., opt. 5.0L (302) V-8 only; 5.8L (351) listed for F-150/F-250/F-350"
+     },
+     {
+      "name": "Hagerty Valuation Tools, 1980 Ford F-100 1/2 Ton (engine options list)",
+      "url": "https://www.hagerty.com/valuation-tools/ford/f~100/1980/1980-ford-f~100-1!2_ton",
+      "says": "6-cyl. 300cid/117hp 1bbl"
+     },
+     {
+      "name": "BlueOvalTech, 1980 Ford F-Series trucks history page",
+      "url": "https://www.blueovaltech.com/history/1980-ford-trucks.php",
+      "says": "4.9 liter/300 cid I-6 F-100/F-150/F-250/F-350 120/229"
+     },
+     {
+      "name": "Wikipedia - Ford F-Series (seventh generation)",
+      "url": "https://en.wikipedia.org/wiki/Ford_F-Series_(seventh_generation)",
+      "says": "300 I6, 1980, 117 hp"
+     }
+    ],
+    "status": "three_sources_not_nhra",
+    "note": "BlueOvalTech 120. F-100 is 2WD only for 1980-83."
+   },
+   {
+    "gen": "gen7",
+    "cid": 302,
+    "hp": 133,
+    "hp_basis": "net",
+    "name": "5.0L / 302 Windsor V8",
+    "rpo": "5.0L V-8",
+    "common_name": "Windsor 302",
+    "trims": [
+     "F-100 2WD"
+    ],
+    "nhra": false,
+    "sources": [
+     {
+      "name": "Ford 1980 Pickup brochure (two-wheel-drive spec chart p.17)",
+      "url": "https://oldcarbrochures.org/United%20States/Ford%20Motor%20Company%20Trucks-Vans/1980_Trucks-Vans/1980-Ford-Pickup-Brochure/index.html",
+      "says": "two-wheel-drive spec chart: F-100 engine 4.9L (300) Six std., opt. 5.0L (302) V-8 only; 5.8L (351) listed for F-150/F-250/F-350"
+     },
+     {
+      "name": "Hagerty Valuation Tools, 1980 Ford F-100 1/2 Ton (engine options list)",
+      "url": "https://www.hagerty.com/valuation-tools/ford/f~100/1980/1980-ford-f~100-1!2_ton",
+      "says": "8-cyl. 302cid/130hp 2bbl"
+     },
+     {
+      "name": "BlueOvalTech, 1980 Ford F-Series trucks history page",
+      "url": "https://www.blueovaltech.com/history/1980-ford-trucks.php",
+      "says": "5.0 liter/302 cid V-8 F-100/F-150/F-250 133"
+     },
+     {
+      "name": "Wikipedia - Ford F-Series (seventh generation)",
+      "url": "https://en.wikipedia.org/wiki/Ford_F-Series_(seventh_generation)",
+      "says": "302 V8 2bbl, 1980-85, 133 hp"
+     }
+    ],
+    "status": "three_sources_not_nhra",
+    "note": "Hagerty 130. The 351M was not offered in the 1980-83 F-100 (brochure chart, Hagerty, BlueOvalTech); the 400 was F-350 / over 8,500 lb GVWR only."
+   }
+  ],
+  "1981": [
+   {
+    "gen": "gen7",
+    "cid": 300,
+    "hp": 115,
+    "hp_basis": "net",
+    "name": "4.9L / 300 I6",
+    "rpo": "4.9L Six (std.)",
+    "common_name": "Ford 300 Six",
+    "trims": [
+     "F-100 2WD"
+    ],
+    "nhra": false,
+    "sources": [
+     {
+      "name": "Ford 1981 Pickup brochure (rev)",
+      "url": "https://oldcarbrochures.org/United%20States/Ford%20Motor%20Company%20Trucks-Vans/1981_Trucks-Vans/1981%20Ford%20Pickup%20%28Rev%29/index.html",
+      "says": "New 4.2L (255) V-8 ... the smallest V-8 in an American-built pickup; standard 4.9L (300) Six; optional 5.0L (302) V-8 with new automatic overdrive"
+     },
+     {
+      "name": "Hagerty Valuation Tools, 1981 Ford F-100 1/2 Ton (engine options list)",
+      "url": "https://www.hagerty.com/valuation-tools/ford/f~100/1981/1981-ford-f~100-1!2_ton",
+      "says": "6-cyl. 300cid/115hp 1bbl OHV"
+     },
+     {
+      "name": "BlueOvalTech, 1981 Ford F-Series trucks history page",
+      "url": "https://www.blueovaltech.com/history/1981-ford-trucks.php",
+      "says": "4.9 liter/300 cid I-6 F-100/F-150/F-250/F-350 120/229"
+     },
+     {
+      "name": "Wikipedia - Ford F-Series (seventh generation)",
+      "url": "https://en.wikipedia.org/wiki/Ford_F-Series_(seventh_generation)",
+      "says": "300 I6, 1981-86, 125 hp"
+     }
+    ],
+    "status": "three_sources_not_nhra",
+    "note": "Net ratings: Hagerty 115, BlueOvalTech 120, Wikipedia 125."
+   },
+   {
+    "gen": "gen7",
+    "cid": 255,
+    "hp": 115,
+    "hp_basis": "net",
+    "name": "4.2L / 255 Windsor V8",
+    "rpo": "4.2L V-8 (F-100 only)",
+    "common_name": "Windsor 255",
+    "trims": [
+     "F-100 2WD"
+    ],
+    "nhra": false,
+    "sources": [
+     {
+      "name": "Ford 1981 Pickup brochure (rev)",
+      "url": "https://oldcarbrochures.org/United%20States/Ford%20Motor%20Company%20Trucks-Vans/1981_Trucks-Vans/1981%20Ford%20Pickup%20%28Rev%29/index.html",
+      "says": "New 4.2L (255) V-8 ... the smallest V-8 in an American-built pickup; standard 4.9L (300) Six; optional 5.0L (302) V-8 with new automatic overdrive"
+     },
+     {
+      "name": "Hagerty Valuation Tools, 1981 Ford F-100 1/2 Ton (engine options list)",
+      "url": "https://www.hagerty.com/valuation-tools/ford/f~100/1981/1981-ford-f~100-1!2_ton",
+      "says": "8-cyl. 255cid/115hp 2bbl OHV"
+     },
+     {
+      "name": "BlueOvalTech, 1981 Ford F-Series trucks history page",
+      "url": "https://www.blueovaltech.com/history/1981-ford-trucks.php",
+      "says": "4.2 liter/255 cid V-8 F-100 only 115/206"
+     },
+     {
+      "name": "Wikipedia - Ford F-Series (seventh generation)",
+      "url": "https://en.wikipedia.org/wiki/Ford_F-Series_(seventh_generation)",
+      "says": "255 V8, 1981-82, 115 hp; 4.2 L V8 option exclusive to the F-100"
+     }
+    ],
+    "status": "three_sources_not_nhra",
+    "note": "New for 1981; F-100 only."
+   },
+   {
+    "gen": "gen7",
+    "cid": 302,
+    "hp": 133,
+    "hp_basis": "net",
+    "name": "5.0L / 302 Windsor V8",
+    "rpo": "5.0L V-8",
+    "common_name": "Windsor 302",
+    "trims": [
+     "F-100 2WD"
+    ],
+    "nhra": false,
+    "sources": [
+     {
+      "name": "Ford 1981 Pickup brochure (rev)",
+      "url": "https://oldcarbrochures.org/United%20States/Ford%20Motor%20Company%20Trucks-Vans/1981_Trucks-Vans/1981%20Ford%20Pickup%20%28Rev%29/index.html",
+      "says": "New 4.2L (255) V-8 ... the smallest V-8 in an American-built pickup; standard 4.9L (300) Six; optional 5.0L (302) V-8 with new automatic overdrive"
+     },
+     {
+      "name": "Hagerty Valuation Tools, 1981 Ford F-100 1/2 Ton (engine options list)",
+      "url": "https://www.hagerty.com/valuation-tools/ford/f~100/1981/1981-ford-f~100-1!2_ton",
+      "says": "8-cyl. 302cid/130hp 2bbl OHV"
+     },
+     {
+      "name": "BlueOvalTech, 1981 Ford F-Series trucks history page",
+      "url": "https://www.blueovaltech.com/history/1981-ford-trucks.php",
+      "says": "5.0 liter/302 cid V-8 F-100/F-150/F-250 133/233"
+     },
+     {
+      "name": "Wikipedia - Ford F-Series (seventh generation)",
+      "url": "https://en.wikipedia.org/wiki/Ford_F-Series_(seventh_generation)",
+      "says": "302 V8 2bbl, 1980-85, 133 hp"
+     }
+    ],
+    "status": "three_sources_not_nhra",
+    "note": "Hagerty 130."
+   }
+  ],
+  "1982": [
+   {
+    "gen": "gen7",
+    "cid": 300,
+    "hp": 115,
+    "hp_basis": "net",
+    "name": "4.9L / 300 I6",
+    "rpo": "4.9L Six",
+    "common_name": "Ford 300 Six",
+    "trims": [
+     "F-100 2WD (std. in California; F-100 FS)"
+    ],
+    "nhra": false,
+    "sources": [
+     {
+      "name": "Ford 1982 Pickup brochure",
+      "url": "https://oldcarbrochures.org/United%20States/Ford%20Motor%20Company%20Trucks-Vans/1982-Trucks-Vans/1982-Ford-Pickup-Brochure/index.html",
+      "says": "3.8L (232) V-6 standard in F-100 except California; new F-100 FS (fuel saver) six-cylinder pickup; lockup automatic available in F-100 with 3.8L V-6 or 4.2L (255) V-8; 5.0L (302) V-8 with automatic overdrive in F-100/F-150/F-250"
+     },
+     {
+      "name": "Hagerty Valuation Tools, 1982 Ford F-100 1/2 Ton (engine options list)",
+      "url": "https://www.hagerty.com/valuation-tools/ford/f~100/1982/1982-ford-f~100-1!2_ton",
+      "says": "6-cyl. 300cid/115hp 1bbl OHV"
+     }
+    ],
+    "status": "two_sources_not_nhra",
+    "note": "Standard F-100 engine in California (V-6 not sold there) and in the F-100 FS. BlueOvalTech and Wikipedia say the 4.9 was F-150/F-250 only in 1982, contradicting the brochure and Hagerty."
+   },
+   {
+    "gen": "gen7",
+    "cid": 255,
+    "hp": 115,
+    "hp_basis": "net",
+    "name": "4.2L / 255 Windsor V8",
+    "rpo": "4.2L V-8 (F-100 only)",
+    "common_name": "Windsor 255",
+    "trims": [
+     "F-100 2WD"
+    ],
+    "nhra": false,
+    "sources": [
+     {
+      "name": "Ford 1982 Pickup brochure",
+      "url": "https://oldcarbrochures.org/United%20States/Ford%20Motor%20Company%20Trucks-Vans/1982-Trucks-Vans/1982-Ford-Pickup-Brochure/index.html",
+      "says": "3.8L (232) V-6 standard in F-100 except California; new F-100 FS (fuel saver) six-cylinder pickup; lockup automatic available in F-100 with 3.8L V-6 or 4.2L (255) V-8; 5.0L (302) V-8 with automatic overdrive in F-100/F-150/F-250"
+     },
+     {
+      "name": "Hagerty Valuation Tools, 1982 Ford F-100 1/2 Ton (engine options list)",
+      "url": "https://www.hagerty.com/valuation-tools/ford/f~100/1982/1982-ford-f~100-1!2_ton",
+      "says": "8-cyl. 255cid/115hp 2bbl OHV"
+     },
+     {
+      "name": "BlueOvalTech, 1982 Ford F-Series trucks history page",
+      "url": "https://www.blueovaltech.com/history/1982-ford-trucks.php",
+      "says": "4.2 liter/255 cid V-8 F-100 only 115/206"
+     },
+     {
+      "name": "Wikipedia - Ford F-Series (seventh generation)",
+      "url": "https://en.wikipedia.org/wiki/Ford_F-Series_(seventh_generation)",
+      "says": "255 V8, 1981-82, 115 hp; 4.2 L V8 option exclusive to the F-100"
+     }
+    ],
+    "status": "three_sources_not_nhra",
+    "note": "Dropped after 1982."
+   },
+   {
+    "gen": "gen7",
+    "cid": 302,
+    "hp": 133,
+    "hp_basis": "net",
+    "name": "5.0L / 302 Windsor V8",
+    "rpo": "5.0L V-8",
+    "common_name": "Windsor 302",
+    "trims": [
+     "F-100 2WD"
+    ],
+    "nhra": false,
+    "sources": [
+     {
+      "name": "Ford 1982 Pickup brochure",
+      "url": "https://oldcarbrochures.org/United%20States/Ford%20Motor%20Company%20Trucks-Vans/1982-Trucks-Vans/1982-Ford-Pickup-Brochure/index.html",
+      "says": "3.8L (232) V-6 standard in F-100 except California; new F-100 FS (fuel saver) six-cylinder pickup; lockup automatic available in F-100 with 3.8L V-6 or 4.2L (255) V-8; 5.0L (302) V-8 with automatic overdrive in F-100/F-150/F-250"
+     },
+     {
+      "name": "Hagerty Valuation Tools, 1982 Ford F-100 1/2 Ton (engine options list)",
+      "url": "https://www.hagerty.com/valuation-tools/ford/f~100/1982/1982-ford-f~100-1!2_ton",
+      "says": "8-cyl. 302cid/130hp 2bbl OHV"
+     },
+     {
+      "name": "BlueOvalTech, 1982 Ford F-Series trucks history page",
+      "url": "https://www.blueovaltech.com/history/1982-ford-trucks.php",
+      "says": "5.0 liter/302 cid V-8 F-100/F-150/F-250 133/233"
+     },
+     {
+      "name": "Wikipedia - Ford F-Series (seventh generation)",
+      "url": "https://en.wikipedia.org/wiki/Ford_F-Series_(seventh_generation)",
+      "says": "302 V8 2bbl, 1980-85, 133 hp"
+     }
+    ],
+    "status": "three_sources_not_nhra",
+    "note": "Hagerty 130."
+   },
+   {
+    "gen": "gen7",
+    "cid": 232,
+    "hp": 110,
+    "hp_basis": "net",
+    "name": "3.8L / 232 Essex V6",
+    "rpo": "3.8L V-6 (std.)",
+    "common_name": "Essex 3.8",
+    "trims": [
+     "F-100 2WD (not California)"
+    ],
+    "nhra": false,
+    "sources": [
+     {
+      "name": "Ford 1982 Pickup brochure",
+      "url": "https://oldcarbrochures.org/United%20States/Ford%20Motor%20Company%20Trucks-Vans/1982-Trucks-Vans/1982-Ford-Pickup-Brochure/index.html",
+      "says": "The new Ford 3.8L (232) V-6 ... standard in F-100 trucks, except California"
+     },
+     {
+      "name": "Hagerty Valuation Tools, 1982 Ford F-100 1/2 Ton (engine options list)",
+      "url": "https://www.hagerty.com/valuation-tools/ford/f~100/1982/1982-ford-f~100-1!2_ton",
+      "says": "6-cyl. 232cid/109hp 2bbl OHV"
+     },
+     {
+      "name": "BlueOvalTech, 1982 Ford F-Series trucks history page",
+      "url": "https://www.blueovaltech.com/history/1982-ford-trucks.php",
+      "says": "3.8 liter/232 cid V-6 F-100 only, standard, 110/183"
+     },
+     {
+      "name": "Wikipedia - Ford F-Series (seventh generation)",
+      "url": "https://en.wikipedia.org/wiki/Ford_F-Series_(seventh_generation)",
+      "says": "Essex 232 V6, 1982-83, 110 hp, standard on F-100, not available in California"
+     }
+    ],
+    "status": "three_sources_not_nhra",
+    "note": "First V6 in the F-Series. Hagerty 109 hp. Not sold in California."
+   }
+  ],
+  "1983": [
+   {
+    "gen": "gen7",
+    "cid": 232,
+    "hp": 110,
+    "hp_basis": "net",
+    "name": "3.8L / 232 Essex V6",
+    "rpo": "3.8L V-6 (std.)",
+    "common_name": "Essex 3.8",
+    "trims": [
+     "F-100 2WD (not California / high altitude)"
+    ],
+    "nhra": false,
+    "sources": [
+     {
+      "name": "Ford 1983 F-Series Pickup brochure",
+      "url": "https://oldcarbrochures.org/United%20States/Ford%20Motor%20Company%20Trucks-Vans/1983-Trucks-Vans/1983-Ford-F-Series-Pickup-Brochure/index.html",
+      "says": "3.8L V-6 standard F-100 except California and high-altitude areas; 4.9L I-6 standard in F-100 Fuel Saver Pickup; 5.0L V-8 optional in F-100 through F-250; 5.8L optional F-150/F-250 only"
+     },
+     {
+      "name": "Hagerty Valuation Tools, 1983 Ford F-100 1/2 Ton (engine options list)",
+      "url": "https://www.hagerty.com/valuation-tools/ford/f~100/1983/1983-ford-f~100-1!2_ton",
+      "says": "6-cyl. 232cid/109hp 2bbl OHV"
+     },
+     {
+      "name": "BlueOvalTech, 1983 Ford F-Series trucks history page",
+      "url": "https://www.blueovaltech.com/history/1983-ford-trucks.php",
+      "says": "3.8 liter/232 cid V-6 F-100 110/183"
+     },
+     {
+      "name": "Wikipedia - Ford F-Series (seventh generation)",
+      "url": "https://en.wikipedia.org/wiki/Ford_F-Series_(seventh_generation)",
+      "says": "3.8L V6 the base engine for the F-100"
+     }
+    ],
+    "status": "three_sources_not_nhra",
+    "note": "Last year of the F-100 and of the V-6 in the F-Series."
+   },
+   {
+    "gen": "gen7",
+    "cid": 300,
+    "hp": 115,
+    "hp_basis": "net",
+    "name": "4.9L / 300 I6",
+    "rpo": "4.9L Six",
+    "common_name": "Ford 300 Six",
+    "trims": [
+     "F-100 2WD (std. in California; F-100 Fuel Saver)"
+    ],
+    "nhra": false,
+    "sources": [
+     {
+      "name": "Ford 1983 F-Series Pickup brochure",
+      "url": "https://oldcarbrochures.org/United%20States/Ford%20Motor%20Company%20Trucks-Vans/1983-Trucks-Vans/1983-Ford-F-Series-Pickup-Brochure/index.html",
+      "says": "3.8L V-6 standard F-100 except California and high-altitude areas; 4.9L I-6 standard in F-100 Fuel Saver Pickup; 5.0L V-8 optional in F-100 through F-250; 5.8L optional F-150/F-250 only"
+     },
+     {
+      "name": "Hagerty Valuation Tools, 1983 Ford F-100 1/2 Ton (engine options list)",
+      "url": "https://www.hagerty.com/valuation-tools/ford/f~100/1983/1983-ford-f~100-1!2_ton",
+      "says": "6-cyl. 300cid/115hp 1bbl OHV"
+     },
+     {
+      "name": "Wikipedia - Ford F-Series (seventh generation)",
+      "url": "https://en.wikipedia.org/wiki/Ford_F-Series_(seventh_generation)",
+      "says": "the 4.9L Six (required in California) and 4.9 [sic, 5.0] V8 were optional"
+     }
+    ],
+    "status": "three_sources_not_nhra",
+    "note": "BlueOvalTech lists the 4.9 for F-150 and up only, contradicting the brochure. Net: Hagerty 115, Wikipedia 125, BlueOvalTech 122."
+   },
+   {
+    "gen": "gen7",
+    "cid": 302,
+    "hp": 133,
+    "hp_basis": "net",
+    "name": "5.0L / 302 Windsor V8",
+    "rpo": "5.0L V-8",
+    "common_name": "Windsor 302",
+    "trims": [
+     "F-100 2WD"
+    ],
+    "nhra": false,
+    "sources": [
+     {
+      "name": "Ford 1983 F-Series Pickup brochure",
+      "url": "https://oldcarbrochures.org/United%20States/Ford%20Motor%20Company%20Trucks-Vans/1983-Trucks-Vans/1983-Ford-F-Series-Pickup-Brochure/index.html",
+      "says": "3.8L V-6 standard F-100 except California and high-altitude areas; 4.9L I-6 standard in F-100 Fuel Saver Pickup; 5.0L V-8 optional in F-100 through F-250; 5.8L optional F-150/F-250 only"
+     },
+     {
+      "name": "Hagerty Valuation Tools, 1983 Ford F-100 1/2 Ton (engine options list)",
+      "url": "https://www.hagerty.com/valuation-tools/ford/f~100/1983/1983-ford-f~100-1!2_ton",
+      "says": "8-cyl. 302cid/130hp 2bbl OHV"
+     },
+     {
+      "name": "BlueOvalTech, 1983 Ford F-Series trucks history page",
+      "url": "https://www.blueovaltech.com/history/1983-ford-trucks.php",
+      "says": "5.0 liter/302 cid V-8 F-100/F-150/F-250 133/233"
+     },
+     {
+      "name": "Wikipedia - Ford F-Series (seventh generation)",
+      "url": "https://en.wikipedia.org/wiki/Ford_F-Series_(seventh_generation)",
+      "says": "302 V8 2bbl, 1980-85, 133 hp"
+     }
+    ],
+    "status": "three_sources_not_nhra",
+    "note": "The 4.2L V-8 was dropped for 1983. The 5.8L was F-150 and heavier only."
+   }
+  ]
+ },
+ "source_index": [
+  {
+   "name": "Ford 1953 F-100 Trucks brochure",
+   "url": "https://oldcarbrochures.org/United%20States/Ford%20Motor%20Company%20Trucks-Vans/1953-Trucks/1953%20Ford%20F-100%20Trucks-2022-7-31%2014.38.14/index.html",
+   "type": "manufacturer"
+  },
+  {
+   "name": "Hagerty Valuation Tools, 1953 Ford F-100 1/2 Ton (engine options list)",
+   "url": "https://www.hagerty.com/valuation-tools/ford/f~100/1953/1953-ford-f~100-1!2_ton",
+   "type": "publication"
+  },
+  {
+   "name": "Wikipedia - Ford F-Series (second generation)",
+   "url": "https://en.wikipedia.org/wiki/Ford_F-Series_(second_generation)",
+   "type": "wikipedia"
+  },
+  {
+   "name": "BlueOvalTech, 1953 Ford F-Series trucks history page",
+   "url": "https://www.blueovaltech.com/history/1953-ford-trucks.php",
+   "type": "registry"
+  },
+  {
+   "name": "Ford 1954 F-100 Truck brochure",
+   "url": "https://oldcarbrochures.org/United%20States/Ford%20Motor%20Company%20Trucks-Vans/1954-Trucks/1954-Ford-F-100-Truck-Brochure/index.html",
+   "type": "manufacturer"
+  },
+  {
+   "name": "Hagerty Valuation Tools, 1954 Ford F-100 1/2 Ton (engine options list)",
+   "url": "https://www.hagerty.com/valuation-tools/ford/f~100/1954/1954-ford-f~100-1!2_ton",
+   "type": "publication"
+  },
+  {
+   "name": "BlueOvalTech, 1954 Ford F-Series trucks history page",
+   "url": "https://www.blueovaltech.com/history/1954-ford-trucks.php",
+   "type": "registry"
+  },
+  {
+   "name": "Ford 1955 F-100 Truck brochure",
+   "url": "https://oldcarbrochures.org/United%20States/Ford%20Motor%20Company%20Trucks-Vans/1955_Trucks_and_Vans/1955_Ford_F-100_Truck_Brochure/index.html",
+   "type": "manufacturer"
+  },
+  {
+   "name": "Hagerty Valuation Tools, 1955 Ford F-100 1/2 Ton (engine options list)",
+   "url": "https://www.hagerty.com/valuation-tools/ford/f~100/1955/1955-ford-f~100-1!2_ton",
+   "type": "publication"
+  },
+  {
+   "name": "Ford 1956 Truck Full Line brochure",
+   "url": "https://oldcarbrochures.org/United%20States/Ford%20Motor%20Company%20Trucks-Vans/1956-Trucks/1956%20Ford%20Truck%20Full%20Line/index.html",
+   "type": "manufacturer"
+  },
+  {
+   "name": "Hagerty Valuation Tools, 1956 Ford F-100 1/2 Ton (engine options list)",
+   "url": "https://www.hagerty.com/valuation-tools/ford/f~100/1956/1956-ford-f~100-1!2_ton",
+   "type": "publication"
+  },
+  {
+   "name": "BlueOvalTech, 1956 Ford F-Series trucks history page",
+   "url": "https://www.blueovaltech.com/history/1956-ford-trucks.php",
+   "type": "registry"
+  },
+  {
+   "name": "Ford 1957 Light Duty Trucks brochure (spec page)",
+   "url": "https://oldcarbrochures.org/United%20States/Ford%20Motor%20Company%20Trucks-Vans/1957%20Trucks%20and%20Vans/1957%20Ford%20Light%20Duty%20Trucks/index.html",
+   "type": "manufacturer"
+  },
+  {
+   "name": "Hagerty Valuation Tools, 1957 Ford F-100 1/2 Ton (engine options list)",
+   "url": "https://www.hagerty.com/valuation-tools/ford/f~100/1957/1957-ford-f~100-1!2_ton",
+   "type": "publication"
+  },
+  {
+   "name": "BlueOvalTech, 1957 Ford F-Series trucks history page",
+   "url": "https://www.blueovaltech.com/history/1957-ford-trucks.php",
+   "type": "registry"
+  },
+  {
+   "name": "Wikipedia - Ford F-Series (third generation)",
+   "url": "https://en.wikipedia.org/wiki/Ford_F-Series_(third_generation)",
+   "type": "wikipedia"
+  },
+  {
+   "name": "Hagerty Valuation Tools, 1958 Ford F-100 1/2 Ton (engine options list)",
+   "url": "https://www.hagerty.com/valuation-tools/ford/f~100/1958/1958-ford-f~100-1!2_ton",
+   "type": "publication"
+  },
+  {
+   "name": "BlueOvalTech, 1958 Ford F-Series trucks history page",
+   "url": "https://www.blueovaltech.com/history/1958-ford-trucks.php",
+   "type": "registry"
+  },
+  {
+   "name": "Ford 1959 4-Wheel Drive Trucks folder (rev), F-100/F-250 4x4",
+   "url": "https://oldcarbrochures.org/United%20States/Ford%20Motor%20Company%20Trucks-Vans/1959-Trucks/1959-Ford-4WD-Trucks-Folder-Rev/index.html",
+   "type": "manufacturer"
+  },
+  {
+   "name": "Hagerty Valuation Tools, 1959 Ford F-100 1/2 Ton (engine options list)",
+   "url": "https://www.hagerty.com/valuation-tools/ford/f~100/1959/1959-ford-f~100-1!2_ton",
+   "type": "publication"
+  },
+  {
+   "name": "BlueOvalTech, 1959 Ford F-Series trucks history page",
+   "url": "https://www.blueovaltech.com/history/1959-ford-trucks.php",
+   "type": "registry"
+  },
+  {
+   "name": "Ford 1960 4-Wheel Drive Trucks brochure",
+   "url": "https://oldcarbrochures.org/United%20States/Ford%20Motor%20Company%20Trucks-Vans/1960-Trucks/1960-Ford-Trucks-4WD-Brochure/index.html",
+   "type": "manufacturer"
+  },
+  {
+   "name": "Hagerty Valuation Tools, 1960 Ford F-100 1/2 Ton (engine options list)",
+   "url": "https://www.hagerty.com/valuation-tools/ford/f~100/1960/1960-ford-f~100-1!2_ton",
+   "type": "publication"
+  },
+  {
+   "name": "BlueOvalTech, 1960 Ford F-Series trucks history page",
+   "url": "https://www.blueovaltech.com/history/1960-ford-trucks.php",
+   "type": "registry"
+  },
+  {
+   "name": "Ford 1961 Small Trucks brochure (rev)",
+   "url": "https://oldcarbrochures.org/United%20States/Ford%20Motor%20Company%20Trucks-Vans/1961_Trucks-Vans/1961-Ford-Small-Trucks-Brochure-Rev/index.html",
+   "type": "manufacturer"
+  },
+  {
+   "name": "Hagerty Valuation Tools, 1961 Ford F-100 1/2 Ton (engine options list)",
+   "url": "https://www.hagerty.com/valuation-tools/ford/f~100/1961/1961-ford-f~100-1!2_ton",
+   "type": "publication"
+  },
+  {
+   "name": "BlueOvalTech, 1961 Ford F-Series trucks history page",
+   "url": "https://www.blueovaltech.com/history/1961-ford-trucks.php",
+   "type": "registry"
+  },
+  {
+   "name": "Wikipedia - Ford F-Series (fourth generation)",
+   "url": "https://en.wikipedia.org/wiki/Ford_F-Series_(fourth_generation)",
+   "type": "wikipedia"
+  },
+  {
+   "name": "Ford 1962 F-100 Trucks brochure (rev)",
+   "url": "https://oldcarbrochures.org/United%20States/Ford%20Motor%20Company%20Trucks-Vans/1962_Trucks-Vans/1962%20Ford%20F-100%20Trucks%20%28Rev%29/index.html",
+   "type": "manufacturer"
+  },
+  {
+   "name": "Hagerty Valuation Tools, 1962 Ford F-100 1/2 Ton (engine options list)",
+   "url": "https://www.hagerty.com/valuation-tools/ford/f~100/1962/1962-ford-f~100-1!2_ton",
+   "type": "publication"
+  },
+  {
+   "name": "BlueOvalTech, 1962 Ford F-Series trucks history page",
+   "url": "https://www.blueovaltech.com/history/1962-ford-trucks.php",
+   "type": "registry"
+  },
+  {
+   "name": "Ford 1963 F-100 Trucks brochure",
+   "url": "https://oldcarbrochures.org/United%20States/Ford%20Motor%20Company%20Trucks-Vans/1963_Trucks-Vans/1963%20Ford%20F100%20Trucks/index.html",
+   "type": "manufacturer"
+  },
+  {
+   "name": "Hagerty Valuation Tools, 1963 Ford F-100 1/2 Ton (engine options list)",
+   "url": "https://www.hagerty.com/valuation-tools/ford/f~100/1963/1963-ford-f~100-1!2_ton",
+   "type": "publication"
+  },
+  {
+   "name": "BlueOvalTech, 1963 Ford F-Series trucks history page",
+   "url": "https://www.blueovaltech.com/history/1963-ford-trucks.php",
+   "type": "registry"
+  },
+  {
+   "name": "Ford 1964 F-100 Trucks brochure",
+   "url": "https://oldcarbrochures.org/United%20States/Ford%20Motor%20Company%20Trucks-Vans/1964_Trucks-Vans/1964%20Ford%20F-100%20Trucks/index.html",
+   "type": "manufacturer"
+  },
+  {
+   "name": "Hagerty Valuation Tools, 1964 Ford F-100 1/2 Ton (engine options list)",
+   "url": "https://www.hagerty.com/valuation-tools/ford/f~100/1964/1964-ford-f~100-1!2_ton",
+   "type": "publication"
+  },
+  {
+   "name": "BlueOvalTech, 1964 Ford F-Series trucks history page",
+   "url": "https://www.blueovaltech.com/history/1964-ford-trucks.php",
+   "type": "registry"
+  },
+  {
+   "name": "Ford 1965 F-100 & F-250 Trucks brochure",
+   "url": "https://oldcarbrochures.org/United%20States/Ford%20Motor%20Company%20Trucks-Vans/1965_Trucks-Vans/1965%20Ford%20F-100%20%26%20F-250%20Trucks/index.html",
+   "type": "manufacturer"
+  },
+  {
+   "name": "Hagerty Valuation Tools, 1965 Ford F-100 1/2 Ton (engine options list)",
+   "url": "https://www.hagerty.com/valuation-tools/ford/f~100/1965/1965-ford-f~100-1!2_ton",
+   "type": "publication"
+  },
+  {
+   "name": "BlueOvalTech, 1965 Ford F-Series trucks history page",
+   "url": "https://www.blueovaltech.com/history/1965-ford-trucks.php",
+   "type": "registry"
+  },
+  {
+   "name": "Ford 1966 Pickup Trucks brochure",
+   "url": "https://oldcarbrochures.org/United%20States/Ford%20Motor%20Company%20Trucks-Vans/1966_Trucks-Vans/1966-Ford-Pickup-Trucks-Brochure/index.html",
+   "type": "manufacturer"
+  },
+  {
+   "name": "Hagerty Valuation Tools, 1966 Ford F-100 1/2 Ton (engine options list)",
+   "url": "https://www.hagerty.com/valuation-tools/ford/f~100/1966/1966-ford-f~100-1!2_ton",
+   "type": "publication"
+  },
+  {
+   "name": "BlueOvalTech, 1966 Ford F-Series trucks history page",
+   "url": "https://www.blueovaltech.com/history/1966-ford-trucks.php",
+   "type": "registry"
+  },
+  {
+   "name": "Ford 1967 F-100/F-250 4WD Trucks brochure (engine spec table)",
+   "url": "https://oldcarbrochures.org/United%20States/Ford%20Motor%20Company%20Trucks-Vans/1967_Trucks-Vans/1967%20Ford%20F-100%20F-250%204WD%20Trucks/index.html",
+   "type": "manufacturer"
+  },
+  {
+   "name": "Hagerty Valuation Tools, 1967 Ford F-100 1/2 Ton (engine options list)",
+   "url": "https://www.hagerty.com/valuation-tools/ford/f~100/1967/1967-ford-f~100-1!2_ton",
+   "type": "publication"
+  },
+  {
+   "name": "BlueOvalTech, 1967 Ford F-Series trucks history page",
+   "url": "https://www.blueovaltech.com/history/1967-ford-trucks.php",
+   "type": "registry"
+  },
+  {
+   "name": "Wikipedia - Ford F-Series (fifth generation)",
+   "url": "https://en.wikipedia.org/wiki/Ford_F-Series_(fifth_generation)",
+   "type": "wikipedia"
+  },
+  {
+   "name": "Ford 1968 Pickup brochure (engine specifications)",
+   "url": "https://oldcarbrochures.org/United%20States/Ford%20Motor%20Company%20Trucks-Vans/1968_Trucks-Vans/1968_Ford_Pickup_Brochure/index.html",
+   "type": "manufacturer"
+  },
+  {
+   "name": "Hagerty Valuation Tools, 1968 Ford F-100 1/2 Ton (engine options list)",
+   "url": "https://www.hagerty.com/valuation-tools/ford/f~100/1968/1968-ford-f~100-1!2_ton",
+   "type": "publication"
+  },
+  {
+   "name": "BlueOvalTech, 1968 Ford F-Series trucks history page",
+   "url": "https://www.blueovaltech.com/history/1968-ford-trucks.php",
+   "type": "registry"
+  },
+  {
+   "name": "Ford 1969 Pickup brochure",
+   "url": "https://oldcarbrochures.org/United%20States/Ford%20Motor%20Company%20Trucks-Vans/1969_Trucks-Vans/1969_Ford_Pickup_Brochure/index.html",
+   "type": "manufacturer"
+  },
+  {
+   "name": "Hagerty Valuation Tools, 1969 Ford F-100 1/2 Ton (engine options list)",
+   "url": "https://www.hagerty.com/valuation-tools/ford/f~100/1969/1969-ford-f~100-1!2_ton",
+   "type": "publication"
+  },
+  {
+   "name": "BlueOvalTech, 1969 Ford F-Series trucks history page",
+   "url": "https://www.blueovaltech.com/history/1969-ford-trucks.php",
+   "type": "registry"
+  },
+  {
+   "name": "Ford 1970 Light Truck Sales Features (dealer book)",
+   "url": "https://oldcarbrochures.org/United%20States/Ford%20Motor%20Company%20Trucks-Vans/1970_Trucks-Vans/1970%20Ford%20Light%20Truck%20Sales%20Features/index.html",
+   "type": "manufacturer"
+  },
+  {
+   "name": "Hagerty Valuation Tools, 1970 Ford F-100 1/2 Ton (engine options list)",
+   "url": "https://www.hagerty.com/valuation-tools/ford/f~100/1970/1970-ford-f~100-1!2_ton",
+   "type": "publication"
+  },
+  {
+   "name": "BlueOvalTech, 1970 Ford F-Series trucks history page",
+   "url": "https://www.blueovaltech.com/history/1970-ford-trucks.php",
+   "type": "registry"
+  },
+  {
+   "name": "Ford 1971 Pickup brochure",
+   "url": "https://oldcarbrochures.org/United%20States/Ford%20Motor%20Company%20Trucks-Vans/1971_Trucks-Vans/1971_Ford_Pickup_Brochure/index.html",
+   "type": "manufacturer"
+  },
+  {
+   "name": "Hagerty Valuation Tools, 1971 Ford F-100 1/2 Ton (engine options list)",
+   "url": "https://www.hagerty.com/valuation-tools/ford/f~100/1971/1971-ford-f~100-1!2_ton",
+   "type": "publication"
+  },
+  {
+   "name": "BlueOvalTech, 1971 Ford F-Series trucks history page",
+   "url": "https://www.blueovaltech.com/history/1971-ford-trucks.php",
+   "type": "registry"
+  },
+  {
+   "name": "Ford 1972 Pickup brochure",
+   "url": "https://oldcarbrochures.org/United%20States/Ford%20Motor%20Company%20Trucks-Vans/1972_Trucks-Vans/1972_Ford_Pickup_Brochure/index.html",
+   "type": "manufacturer"
+  },
+  {
+   "name": "Hagerty Valuation Tools, 1972 Ford F-100 1/2 Ton (engine options list)",
+   "url": "https://www.hagerty.com/valuation-tools/ford/f~100/1972/1972-ford-f~100-1!2_ton",
+   "type": "publication"
+  },
+  {
+   "name": "BlueOvalTech, 1972 Ford F-Series trucks history page",
+   "url": "https://www.blueovaltech.com/history/1972-ford-trucks.php",
+   "type": "registry"
+  },
+  {
+   "name": "Ford 1973 Pickups brochure (spec page dated February 1973)",
+   "url": "https://oldcarbrochures.org/United%20States/Ford%20Motor%20Company%20Trucks-Vans/1973-Truck-and-Vans/1973-Ford-Pickups-Brochure/index.html",
+   "type": "manufacturer"
+  },
+  {
+   "name": "Hagerty Valuation Tools, 1973 Ford F-100 1/2 Ton (engine options list)",
+   "url": "https://www.hagerty.com/valuation-tools/ford/f~100/1973/1973-ford-f~100-1!2_ton",
+   "type": "publication"
+  },
+  {
+   "name": "BlueOvalTech, 1973 Ford F-Series trucks history page",
+   "url": "https://www.blueovaltech.com/history/1973-ford-trucks.php",
+   "type": "registry"
+  },
+  {
+   "name": "Wikipedia - Ford F-Series (sixth generation)",
+   "url": "https://en.wikipedia.org/wiki/Ford_F-Series_(sixth_generation)",
+   "type": "wikipedia"
+  },
+  {
+   "name": "Ford 1974 Pickups brochure (original and revised editions)",
+   "url": "https://oldcarbrochures.org/United%20States/Ford%20Motor%20Company%20Trucks-Vans/1974-Trucks-Vans/1974-Ford-Pickups-Brochure/index.html",
+   "type": "manufacturer"
+  },
+  {
+   "name": "Hagerty Valuation Tools, 1974 Ford F-100 1/2 Ton (engine options list)",
+   "url": "https://www.hagerty.com/valuation-tools/ford/f~100/1974/1974-ford-f~100-1!2_ton",
+   "type": "publication"
+  },
+  {
+   "name": "BlueOvalTech, 1974 Ford F-Series trucks history page",
+   "url": "https://www.blueovaltech.com/history/1974-ford-trucks.php",
+   "type": "registry"
+  },
+  {
+   "name": "Ford 1975 Pickups brochure (Engine Availability chart p.15)",
+   "url": "https://oldcarbrochures.org/United%20States/Ford%20Motor%20Company%20Trucks-Vans/1975_Trucks%20_and_Vans/1975-Ford-Pickups-Brochure/index.html",
+   "type": "manufacturer"
+  },
+  {
+   "name": "Hagerty Valuation Tools, 1975 Ford F-100 1/2 Ton (engine options list)",
+   "url": "https://www.hagerty.com/valuation-tools/ford/f~100/1975/1975-ford-f~100-1!2_ton",
+   "type": "publication"
+  },
+  {
+   "name": "BlueOvalTech, 1975 Ford F-Series trucks history page",
+   "url": "https://www.blueovaltech.com/history/1975-ford-trucks.php",
+   "type": "registry"
+  },
+  {
+   "name": "Ford 1976 Pickups brochure (Engine Availability chart p.15)",
+   "url": "https://oldcarbrochures.org/United%20States/Ford%20Motor%20Company%20Trucks-Vans/1976_Trucks-Vans/1976-Ford-Pickups-Brochure/index.html",
+   "type": "manufacturer"
+  },
+  {
+   "name": "Hagerty Valuation Tools, 1976 Ford F-100 1/2 Ton (engine options list)",
+   "url": "https://www.hagerty.com/valuation-tools/ford/f~100/1976/1976-ford-f~100-1!2_ton",
+   "type": "publication"
+  },
+  {
+   "name": "BlueOvalTech, 1976 Ford F-Series trucks history page",
+   "url": "https://www.blueovaltech.com/history/1976-ford-trucks.php",
+   "type": "registry"
+  },
+  {
+   "name": "Ford 1977 Pickups brochure (Engine Availability chart p.8)",
+   "url": "https://oldcarbrochures.org/United%20States/Ford%20Motor%20Company%20Trucks-Vans/1977_Trucks_and_Vans/1977-Ford-Pickups-Brochure/index.html",
+   "type": "manufacturer"
+  },
+  {
+   "name": "Hagerty Valuation Tools, 1977 Ford F-100 1/2 Ton (engine options list)",
+   "url": "https://www.hagerty.com/valuation-tools/ford/f~100/1977/1977-ford-f~100-1!2_ton",
+   "type": "publication"
+  },
+  {
+   "name": "BlueOvalTech, 1977 Ford F-Series trucks history page",
+   "url": "https://www.blueovaltech.com/history/1977-ford-trucks.php",
+   "type": "registry"
+  },
+  {
+   "name": "Hagerty Valuation Tools, 1978 Ford F-100 1/2 Ton (engine options list)",
+   "url": "https://www.hagerty.com/valuation-tools/ford/f~100/1978/1978-ford-f~100-1!2_ton",
+   "type": "publication"
+  },
+  {
+   "name": "BlueOvalTech, 1978 Ford F-Series trucks history page",
+   "url": "https://www.blueovaltech.com/history/1978-ford-trucks.php",
+   "type": "registry"
+  },
+  {
+   "name": "Ford 1979 Pickups brochure (spec chart p.16)",
+   "url": "https://oldcarbrochures.org/United%20States/Ford%20Motor%20Company%20Trucks-Vans/1979_Trucks-Vans/1979_Ford_Pickups/index.html",
+   "type": "manufacturer"
+  },
+  {
+   "name": "Hagerty Valuation Tools, 1979 Ford F-100 1/2 Ton (engine options list)",
+   "url": "https://www.hagerty.com/valuation-tools/ford/f~100/1979/1979-ford-f~100-1!2_ton",
+   "type": "publication"
+  },
+  {
+   "name": "BlueOvalTech, 1979 Ford F-Series trucks history page",
+   "url": "https://www.blueovaltech.com/history/1979-ford-trucks.php",
+   "type": "registry"
+  },
+  {
+   "name": "Ford 1980 Pickup brochure (two-wheel-drive spec chart p.17)",
+   "url": "https://oldcarbrochures.org/United%20States/Ford%20Motor%20Company%20Trucks-Vans/1980_Trucks-Vans/1980-Ford-Pickup-Brochure/index.html",
+   "type": "manufacturer"
+  },
+  {
+   "name": "Hagerty Valuation Tools, 1980 Ford F-100 1/2 Ton (engine options list)",
+   "url": "https://www.hagerty.com/valuation-tools/ford/f~100/1980/1980-ford-f~100-1!2_ton",
+   "type": "publication"
+  },
+  {
+   "name": "BlueOvalTech, 1980 Ford F-Series trucks history page",
+   "url": "https://www.blueovaltech.com/history/1980-ford-trucks.php",
+   "type": "registry"
+  },
+  {
+   "name": "Wikipedia - Ford F-Series (seventh generation)",
+   "url": "https://en.wikipedia.org/wiki/Ford_F-Series_(seventh_generation)",
+   "type": "wikipedia"
+  },
+  {
+   "name": "Ford 1981 Pickup brochure (rev)",
+   "url": "https://oldcarbrochures.org/United%20States/Ford%20Motor%20Company%20Trucks-Vans/1981_Trucks-Vans/1981%20Ford%20Pickup%20%28Rev%29/index.html",
+   "type": "manufacturer"
+  },
+  {
+   "name": "Hagerty Valuation Tools, 1981 Ford F-100 1/2 Ton (engine options list)",
+   "url": "https://www.hagerty.com/valuation-tools/ford/f~100/1981/1981-ford-f~100-1!2_ton",
+   "type": "publication"
+  },
+  {
+   "name": "BlueOvalTech, 1981 Ford F-Series trucks history page",
+   "url": "https://www.blueovaltech.com/history/1981-ford-trucks.php",
+   "type": "registry"
+  },
+  {
+   "name": "Ford 1982 Pickup brochure",
+   "url": "https://oldcarbrochures.org/United%20States/Ford%20Motor%20Company%20Trucks-Vans/1982-Trucks-Vans/1982-Ford-Pickup-Brochure/index.html",
+   "type": "manufacturer"
+  },
+  {
+   "name": "Hagerty Valuation Tools, 1982 Ford F-100 1/2 Ton (engine options list)",
+   "url": "https://www.hagerty.com/valuation-tools/ford/f~100/1982/1982-ford-f~100-1!2_ton",
+   "type": "publication"
+  },
+  {
+   "name": "BlueOvalTech, 1982 Ford F-Series trucks history page",
+   "url": "https://www.blueovaltech.com/history/1982-ford-trucks.php",
+   "type": "registry"
+  },
+  {
+   "name": "Ford 1983 F-Series Pickup brochure",
+   "url": "https://oldcarbrochures.org/United%20States/Ford%20Motor%20Company%20Trucks-Vans/1983-Trucks-Vans/1983-Ford-F-Series-Pickup-Brochure/index.html",
+   "type": "manufacturer"
+  },
+  {
+   "name": "Hagerty Valuation Tools, 1983 Ford F-100 1/2 Ton (engine options list)",
+   "url": "https://www.hagerty.com/valuation-tools/ford/f~100/1983/1983-ford-f~100-1!2_ton",
+   "type": "publication"
+  },
+  {
+   "name": "BlueOvalTech, 1983 Ford F-Series trucks history page",
+   "url": "https://www.blueovaltech.com/history/1983-ford-trucks.php",
+   "type": "registry"
+  }
+ ]
+}

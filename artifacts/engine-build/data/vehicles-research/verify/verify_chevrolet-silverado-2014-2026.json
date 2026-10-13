@@ -1,0 +1,2831 @@
+{
+ "vehicle": "chevrolet-silverado-2014-2026",
+ "note": "Silverado 1500 only (2500HD/3500HD skipped). gen k2xx = 2014-2018 plus the 2019 Silverado 1500 LD carryover; t1 = 2019-2026 (2022 refresh; 2022 Limited/LTD carryover noted in entries); ev = Silverado EV 2024+. NHRA has no rows for this job, so every engine is three_sources_not_nhra unless noted. Ratings are SAE certified net hp on gasoline (E85 ratings in notes). The 2027 redesign is out of scope.",
+ "years": {
+  "2014": [
+   {
+    "gen": "k2xx",
+    "cid": 262,
+    "liters": 4.3,
+    "hp": 285,
+    "hp_basis": "SAE net (SAE J1349 certified)",
+    "rpo": "LV3",
+    "name": "4.3L / 262 V6",
+    "common_name": "EcoTec3 4.3 V6",
+    "trims": [
+     "standard engine",
+     "2WD and 4WD"
+    ],
+    "nhra": false,
+    "sources": [
+     {
+      "name": "GM/Chevrolet Pressroom 2014 Silverado 1500 specifications (media.chevrolet.com, Wayback copy)",
+      "url": "https://web.archive.org/web/20160208103531/http://media.chevrolet.com/media/us/en/chevrolet/vehicles/silverado/2014.tab1.html",
+      "says": "4.3L V-6 VVT DI w/AFM 285 hp @5300 (SAE certified) ; listed as EcoTec3 4.3L V-6 FlexFuel (LV3)"
+     },
+     {
+      "name": "Consumer Guide 2014 Chevrolet Silverado review",
+      "url": "https://consumerguide.com/best-buys/large-pickup-truck/2014-chevrolet-silverado/",
+      "says": "285-hp 4.3-liter V6"
+     },
+     {
+      "name": "Kelley Blue Book 2014 Silverado 1500 review/specs",
+      "url": "https://www.kbb.com/chevrolet/silverado-1500-crew-cab/2014/",
+      "says": "285 horsepower @ 5,300 rpm (4.3L V6)"
+     },
+     {
+      "name": "Wikipedia - Chevrolet Silverado (with GM small-block / Silverado EV articles, counted once)",
+      "url": "https://en.wikipedia.org/wiki/Chevrolet_Silverado",
+      "says": "4.3 L LV3 EcoTec3 V6, 285 hp @5300, 2014-2018 (K2XX)"
+     },
+     {
+      "name": "EPA fueleconomy.gov vehicle data",
+      "url": "https://www.fueleconomy.gov/feg/download.shtml",
+      "says": "2014 Silverado: 4.3 L 6-cyl SIDI FFV, C15 2WD and K15 4WD"
+     },
+     {
+      "name": "GM Authority - GM LV3 engine page (Wayback copy)",
+      "url": "https://web.archive.org/web/2025/https://gmauthority.com/blog/gm/gm-engines/lv3/",
+      "says": "LV3 285 hp SAE; vehicle applications 2014 Chevrolet Silverado"
+     }
+    ],
+    "status": "three_sources_not_nhra",
+    "note": "E85 rating 297 hp. Direct injection, AFM, 6-speed auto."
+   },
+   {
+    "gen": "k2xx",
+    "cid": 325,
+    "liters": 5.3,
+    "hp": 355,
+    "hp_basis": "SAE net (SAE J1349 certified)",
+    "rpo": "L83",
+    "name": "5.3L / 325 V8",
+    "common_name": "EcoTec3 5.3 V8",
+    "trims": [
+     "optional; standard on upper trims",
+     "2WD and 4WD"
+    ],
+    "nhra": false,
+    "sources": [
+     {
+      "name": "GM/Chevrolet Pressroom 2014 Silverado 1500 specifications (media.chevrolet.com, Wayback copy)",
+      "url": "https://web.archive.org/web/20160208103531/http://media.chevrolet.com/media/us/en/chevrolet/vehicles/silverado/2014.tab1.html",
+      "says": "5.3L V-8 VVT DI w/AFM 355 hp @5600 (SAE certified) ; listed as EcoTec3 5.3L V-8 FlexFuel (L83)"
+     },
+     {
+      "name": "Consumer Guide 2014 Chevrolet Silverado review",
+      "url": "https://consumerguide.com/best-buys/large-pickup-truck/2014-chevrolet-silverado/",
+      "says": "355-hp 5.3-liter V8"
+     },
+     {
+      "name": "Kelley Blue Book 2014 Silverado 1500 review/specs",
+      "url": "https://www.kbb.com/chevrolet/silverado-1500-crew-cab/2014/",
+      "says": "355 horsepower @ 5,600 rpm (5.3L V8)"
+     },
+     {
+      "name": "Wikipedia - Chevrolet Silverado (with GM small-block / Silverado EV articles, counted once)",
+      "url": "https://en.wikipedia.org/wiki/Chevrolet_Silverado",
+      "says": "5.3 L L83 EcoTec3 V8, 355 hp @5600, 2014-2019"
+     },
+     {
+      "name": "EPA fueleconomy.gov vehicle data",
+      "url": "https://www.fueleconomy.gov/feg/download.shtml",
+      "says": "2014 Silverado: 5.3 L 8-cyl SIDI (FFV and non-FFV), C15 2WD and K15 4WD"
+     },
+     {
+      "name": "GM Authority - GM L83 engine page (Wayback copy)",
+      "url": "https://web.archive.org/web/2025/https://gmauthority.com/blog/gm/gm-engines/l83/",
+      "says": "L83 355 hp; applications 2014-2018 Chevrolet Silverado (6L80), 2015-2018 (8L90)"
+     }
+    ],
+    "status": "three_sources_not_nhra",
+    "note": "E85 rating 380 hp. 8-speed auto available with the 5.3 from 2016 (LTZ/High Country) per Consumer Guide."
+   },
+   {
+    "gen": "k2xx",
+    "cid": 376,
+    "liters": 6.2,
+    "hp": 420,
+    "hp_basis": "SAE net (SAE J1349 certified)",
+    "rpo": "L86",
+    "name": "6.2L / 376 V8",
+    "common_name": "EcoTec3 6.2 V8",
+    "trims": [
+     "LTZ, High Country"
+    ],
+    "nhra": false,
+    "sources": [
+     {
+      "name": "GM/Chevrolet Pressroom 2014 Silverado 1500 specifications (media.chevrolet.com, Wayback copy)",
+      "url": "https://web.archive.org/web/20160208103531/http://media.chevrolet.com/media/us/en/chevrolet/vehicles/silverado/2014.tab1.html",
+      "says": "6.2L V-8 VVT DI w/AFM 420 hp @5600 (SAE certified)"
+     },
+     {
+      "name": "Consumer Guide 2014 Chevrolet Silverado review",
+      "url": "https://consumerguide.com/best-buys/large-pickup-truck/2014-chevrolet-silverado/",
+      "says": "420-hp 6.2-liter V8"
+     },
+     {
+      "name": "Kelley Blue Book 2014 Silverado 1500 review/specs",
+      "url": "https://www.kbb.com/chevrolet/silverado-1500-crew-cab/2014/",
+      "says": "420 horsepower @ 5,600 rpm (6.2L V8)"
+     },
+     {
+      "name": "Wikipedia - Chevrolet Silverado (with GM small-block / Silverado EV articles, counted once)",
+      "url": "https://en.wikipedia.org/wiki/Chevrolet_Silverado",
+      "says": "6.2 L L86 EcoTec3 V8, 420 hp @5600, 2014-2018"
+     },
+     {
+      "name": "EPA fueleconomy.gov vehicle data",
+      "url": "https://www.fueleconomy.gov/feg/download.shtml",
+      "says": "2014 Silverado: 6.2 L 8-cyl SIDI (K15 4WD only listed)"
+     },
+     {
+      "name": "GM Authority - GM L86 engine page (Wayback copy)",
+      "url": "https://web.archive.org/web/2025/https://gmauthority.com/blog/gm/gm-engines/l86/",
+      "says": "L86 420 hp; applications 2014 Chevrolet Silverado (6L80)"
+     }
+    ],
+    "status": "three_sources_not_nhra",
+    "note": "6-speed auto in 2014; EPA 2014 lists the 6.2 only in 4WD. Premium fuel recommended."
+   }
+  ],
+  "2015": [
+   {
+    "gen": "k2xx",
+    "cid": 262,
+    "liters": 4.3,
+    "hp": 285,
+    "hp_basis": "SAE net (SAE J1349 certified)",
+    "rpo": "LV3",
+    "name": "4.3L / 262 V6",
+    "common_name": "EcoTec3 4.3 V6",
+    "trims": [
+     "standard engine",
+     "2WD and 4WD"
+    ],
+    "nhra": false,
+    "sources": [
+     {
+      "name": "Consumer Guide 2015 Chevrolet Silverado review",
+      "url": "https://consumerguide.com/best-buys/subcompact-car/2015-chevrolet-silverado/",
+      "says": "285-hp 4.3-liter V6"
+     },
+     {
+      "name": "Kelley Blue Book 2015 Silverado 1500 review/specs",
+      "url": "https://www.kbb.com/chevrolet/silverado-1500-crew-cab/2015/",
+      "says": "285 horsepower @ 5,300 rpm (4.3L V6)"
+     },
+     {
+      "name": "Wikipedia - Chevrolet Silverado (with GM small-block / Silverado EV articles, counted once)",
+      "url": "https://en.wikipedia.org/wiki/Chevrolet_Silverado",
+      "says": "4.3 L LV3 EcoTec3 V6, 285 hp @5300, 2014-2018 (K2XX)"
+     },
+     {
+      "name": "EPA fueleconomy.gov vehicle data",
+      "url": "https://www.fueleconomy.gov/feg/download.shtml",
+      "says": "2015 Silverado: 4.3 L 6-cyl SIDI FFV, C15 2WD and K15 4WD"
+     }
+    ],
+    "status": "three_sources_not_nhra",
+    "note": "E85 rating 297 hp. Direct injection, AFM, 6-speed auto."
+   },
+   {
+    "gen": "k2xx",
+    "cid": 325,
+    "liters": 5.3,
+    "hp": 355,
+    "hp_basis": "SAE net (SAE J1349 certified)",
+    "rpo": "L83",
+    "name": "5.3L / 325 V8",
+    "common_name": "EcoTec3 5.3 V8",
+    "trims": [
+     "optional; standard on upper trims",
+     "2WD and 4WD"
+    ],
+    "nhra": false,
+    "sources": [
+     {
+      "name": "Consumer Guide 2015 Chevrolet Silverado review",
+      "url": "https://consumerguide.com/best-buys/subcompact-car/2015-chevrolet-silverado/",
+      "says": "355-hp 5.3-liter V8"
+     },
+     {
+      "name": "Kelley Blue Book 2015 Silverado 1500 review/specs",
+      "url": "https://www.kbb.com/chevrolet/silverado-1500-crew-cab/2015/",
+      "says": "355 horsepower @ 5,600 rpm (5.3L V8)"
+     },
+     {
+      "name": "Wikipedia - Chevrolet Silverado (with GM small-block / Silverado EV articles, counted once)",
+      "url": "https://en.wikipedia.org/wiki/Chevrolet_Silverado",
+      "says": "5.3 L L83 EcoTec3 V8, 355 hp @5600, 2014-2019"
+     },
+     {
+      "name": "EPA fueleconomy.gov vehicle data",
+      "url": "https://www.fueleconomy.gov/feg/download.shtml",
+      "says": "2015 Silverado: 5.3 L 8-cyl SIDI (FFV and non-FFV), C15 2WD and K15 4WD"
+     },
+     {
+      "name": "GM Authority - GM L83 engine page (Wayback copy)",
+      "url": "https://web.archive.org/web/2025/https://gmauthority.com/blog/gm/gm-engines/l83/",
+      "says": "L83 355 hp; applications 2014-2018 Chevrolet Silverado (6L80), 2015-2018 (8L90)"
+     }
+    ],
+    "status": "three_sources_not_nhra",
+    "note": "E85 rating 380 hp. 8-speed auto available with the 5.3 from 2016 (LTZ/High Country) per Consumer Guide."
+   },
+   {
+    "gen": "k2xx",
+    "cid": 376,
+    "liters": 6.2,
+    "hp": 420,
+    "hp_basis": "SAE net (SAE J1349 certified)",
+    "rpo": "L86",
+    "name": "6.2L / 376 V8",
+    "common_name": "EcoTec3 6.2 V8",
+    "trims": [
+     "LTZ, High Country"
+    ],
+    "nhra": false,
+    "sources": [
+     {
+      "name": "Consumer Guide 2015 Chevrolet Silverado review",
+      "url": "https://consumerguide.com/best-buys/subcompact-car/2015-chevrolet-silverado/",
+      "says": "420-hp 6.2-liter V8"
+     },
+     {
+      "name": "Kelley Blue Book 2015 Silverado 1500 review/specs",
+      "url": "https://www.kbb.com/chevrolet/silverado-1500-crew-cab/2015/",
+      "says": "420 horsepower @ 5,600 rpm (6.2L V8)"
+     },
+     {
+      "name": "Wikipedia - Chevrolet Silverado (with GM small-block / Silverado EV articles, counted once)",
+      "url": "https://en.wikipedia.org/wiki/Chevrolet_Silverado",
+      "says": "6.2 L L86 EcoTec3 V8, 420 hp @5600, 2014-2018"
+     },
+     {
+      "name": "EPA fueleconomy.gov vehicle data",
+      "url": "https://www.fueleconomy.gov/feg/download.shtml",
+      "says": "2015 Silverado: 6.2 L 8-cyl SIDI, C15 2WD and K15 4WD"
+     },
+     {
+      "name": "GM Authority - GM L86 engine page (Wayback copy)",
+      "url": "https://web.archive.org/web/2025/https://gmauthority.com/blog/gm/gm-engines/l86/",
+      "says": "L86 420 hp; applications 2014 Chevrolet Silverado (6L80)"
+     }
+    ],
+    "status": "three_sources_not_nhra",
+    "note": "8-speed 8L90 auto from 2015. Premium fuel recommended."
+   }
+  ],
+  "2016": [
+   {
+    "gen": "k2xx",
+    "cid": 262,
+    "liters": 4.3,
+    "hp": 285,
+    "hp_basis": "SAE net (SAE J1349 certified)",
+    "rpo": "LV3",
+    "name": "4.3L / 262 V6",
+    "common_name": "EcoTec3 4.3 V6",
+    "trims": [
+     "standard engine",
+     "2WD and 4WD"
+    ],
+    "nhra": false,
+    "sources": [
+     {
+      "name": "Consumer Guide 2016 Chevrolet Silverado review",
+      "url": "https://consumerguide.com/best-buys/large-pickup-truck/2016-chevrolet-silverado-1500/",
+      "says": "285-hp 4.3-liter V6"
+     },
+     {
+      "name": "Kelley Blue Book 2016 Silverado 1500 review/specs",
+      "url": "https://www.kbb.com/chevrolet/silverado-1500-crew-cab/2016/",
+      "says": "285 horsepower @ 5,300 rpm (4.3L V6)"
+     },
+     {
+      "name": "Wikipedia - Chevrolet Silverado (with GM small-block / Silverado EV articles, counted once)",
+      "url": "https://en.wikipedia.org/wiki/Chevrolet_Silverado",
+      "says": "4.3 L LV3 EcoTec3 V6, 285 hp @5300, 2014-2018 (K2XX)"
+     },
+     {
+      "name": "EPA fueleconomy.gov vehicle data",
+      "url": "https://www.fueleconomy.gov/feg/download.shtml",
+      "says": "2016 Silverado: 4.3 L 6-cyl SIDI FFV, C15 2WD and K15 4WD"
+     }
+    ],
+    "status": "three_sources_not_nhra",
+    "note": "E85 rating 297 hp. Direct injection, AFM, 6-speed auto."
+   },
+   {
+    "gen": "k2xx",
+    "cid": 325,
+    "liters": 5.3,
+    "hp": 355,
+    "hp_basis": "SAE net (SAE J1349 certified)",
+    "rpo": "L83",
+    "name": "5.3L / 325 V8",
+    "common_name": "EcoTec3 5.3 V8",
+    "trims": [
+     "optional; standard on upper trims",
+     "2WD and 4WD"
+    ],
+    "nhra": false,
+    "sources": [
+     {
+      "name": "Consumer Guide 2016 Chevrolet Silverado review",
+      "url": "https://consumerguide.com/best-buys/large-pickup-truck/2016-chevrolet-silverado-1500/",
+      "says": "355-hp 5.3-liter V8"
+     },
+     {
+      "name": "Kelley Blue Book 2016 Silverado 1500 review/specs",
+      "url": "https://www.kbb.com/chevrolet/silverado-1500-crew-cab/2016/",
+      "says": "355 horsepower @ 5,600 rpm (5.3L V8)"
+     },
+     {
+      "name": "Wikipedia - Chevrolet Silverado (with GM small-block / Silverado EV articles, counted once)",
+      "url": "https://en.wikipedia.org/wiki/Chevrolet_Silverado",
+      "says": "5.3 L L83 EcoTec3 V8, 355 hp @5600, 2014-2019"
+     },
+     {
+      "name": "EPA fueleconomy.gov vehicle data",
+      "url": "https://www.fueleconomy.gov/feg/download.shtml",
+      "says": "2016 Silverado: 5.3 L 8-cyl SIDI (FFV and non-FFV), C15 2WD and K15 4WD"
+     },
+     {
+      "name": "GM Authority - GM L83 engine page (Wayback copy)",
+      "url": "https://web.archive.org/web/2025/https://gmauthority.com/blog/gm/gm-engines/l83/",
+      "says": "L83 355 hp; applications 2014-2018 Chevrolet Silverado (6L80), 2015-2018 (8L90)"
+     }
+    ],
+    "status": "three_sources_not_nhra",
+    "note": "E85 rating 380 hp. 8-speed auto available with the 5.3 from 2016 (LTZ/High Country) per Consumer Guide."
+   },
+   {
+    "gen": "k2xx",
+    "cid": 376,
+    "liters": 6.2,
+    "hp": 420,
+    "hp_basis": "SAE net (SAE J1349 certified)",
+    "rpo": "L86",
+    "name": "6.2L / 376 V8",
+    "common_name": "EcoTec3 6.2 V8",
+    "trims": [
+     "LTZ, High Country"
+    ],
+    "nhra": false,
+    "sources": [
+     {
+      "name": "Consumer Guide 2016 Chevrolet Silverado review",
+      "url": "https://consumerguide.com/best-buys/large-pickup-truck/2016-chevrolet-silverado-1500/",
+      "says": "420-hp 6.2-liter V8"
+     },
+     {
+      "name": "Kelley Blue Book 2016 Silverado 1500 review/specs",
+      "url": "https://www.kbb.com/chevrolet/silverado-1500-crew-cab/2016/",
+      "says": "420 horsepower @ 5,600 rpm (6.2L V8)"
+     },
+     {
+      "name": "Wikipedia - Chevrolet Silverado (with GM small-block / Silverado EV articles, counted once)",
+      "url": "https://en.wikipedia.org/wiki/Chevrolet_Silverado",
+      "says": "6.2 L L86 EcoTec3 V8, 420 hp @5600, 2014-2018"
+     },
+     {
+      "name": "EPA fueleconomy.gov vehicle data",
+      "url": "https://www.fueleconomy.gov/feg/download.shtml",
+      "says": "2016 Silverado: 6.2 L 8-cyl SIDI, C15 2WD and K15 4WD"
+     },
+     {
+      "name": "GM Authority - GM L86 engine page (Wayback copy)",
+      "url": "https://web.archive.org/web/2025/https://gmauthority.com/blog/gm/gm-engines/l86/",
+      "says": "L86 420 hp; applications 2014 Chevrolet Silverado (6L80)"
+     }
+    ],
+    "status": "three_sources_not_nhra",
+    "note": "8-speed 8L90 auto from 2015. Premium fuel recommended."
+   },
+   {
+    "gen": "k2xx",
+    "cid": 325,
+    "liters": 5.3,
+    "hp": 355,
+    "hp_basis": "SAE net (SAE J1349 certified)",
+    "rpo": "L8B (eAssist)",
+    "name": "5.3L / 325 V8 eAssist mild hybrid",
+    "common_name": "EcoTec3 5.3 eAssist",
+    "trims": [
+     "LT, California only (2016-2017)",
+     "LT and LTZ nationwide (2018)"
+    ],
+    "nhra": false,
+    "sources": [
+     {
+      "name": "Consumer Guide 2014-18 Chevrolet Silverado used-car guide",
+      "url": "https://consumerguide.com/used/2014-18-chevrolet-silverado/",
+      "says": "5.3-liter available with eAssist mild hybrid on LT and LTZ nationwide for 2018; previously only on LT models in California"
+     },
+     {
+      "name": "Wikipedia - Chevrolet Silverado (with GM small-block / Silverado EV articles, counted once)",
+      "url": "https://en.wikipedia.org/wiki/Chevrolet_Silverado",
+      "says": "5.3 L L8B EcoTec3 V8 (eAssist), same output as L83, 2016-2018"
+     },
+     {
+      "name": "EPA fueleconomy.gov vehicle data",
+      "url": "https://www.fueleconomy.gov/feg/download.shtml",
+      "says": "2016 Silverado: 5.3 L 8-cyl 'Silverado 15 Hybrid' 2WD and 4WD"
+     },
+     {
+      "name": "GM Authority - GM L8B engine page (Wayback copy)",
+      "url": "https://web.archive.org/web/2025/https://gmauthority.com/blog/gm/gm-engines/l8b/",
+      "says": "L8B eAssist introduced on 2016 Silverado 1500; applications 2016-2018 Silverado 1500 (8L90 + BAS); about 500 trucks for 2016 via California dealers; motor adds up to 13 hp / 44 lb-ft"
+     }
+    ],
+    "status": "three_sources_not_nhra",
+    "note": "Belt-alternator-starter mild hybrid; engine rated 355 hp like the L83, motor boost up to 13 hp / 44 lb-ft. 2016: about 500 trucks, California only. The GM 2018 spec sheet omits eAssist, but EPA, Consumer Guide and KBB list it for 2018."
+   }
+  ],
+  "2017": [
+   {
+    "gen": "k2xx",
+    "cid": 262,
+    "liters": 4.3,
+    "hp": 285,
+    "hp_basis": "SAE net (SAE J1349 certified)",
+    "rpo": "LV3",
+    "name": "4.3L / 262 V6",
+    "common_name": "EcoTec3 4.3 V6",
+    "trims": [
+     "standard engine",
+     "2WD and 4WD"
+    ],
+    "nhra": false,
+    "sources": [
+     {
+      "name": "GM/Chevrolet Pressroom 2017 Silverado 1500 specifications (media.chevrolet.com, Wayback copy)",
+      "url": "https://web.archive.org/web/20161226123235/http://media.chevrolet.com/media/us/en/chevrolet/vehicles/silverado/2017.tab1.html",
+      "says": "4.3L V-6 VVT DI w/AFM 285 hp @5300 (SAE certified)"
+     },
+     {
+      "name": "Consumer Guide 2017 Chevrolet Silverado review",
+      "url": "http://consumerguide.com/best-buys/2017-chevrolet-silverado/",
+      "says": "285-hp 4.3-liter V6"
+     },
+     {
+      "name": "Kelley Blue Book 2017 Silverado 1500 review/specs",
+      "url": "https://www.kbb.com/chevrolet/silverado-1500-crew-cab/2017/",
+      "says": "285 horsepower @ 5,300 rpm (4.3L V6)"
+     },
+     {
+      "name": "Wikipedia - Chevrolet Silverado (with GM small-block / Silverado EV articles, counted once)",
+      "url": "https://en.wikipedia.org/wiki/Chevrolet_Silverado",
+      "says": "4.3 L LV3 EcoTec3 V6, 285 hp @5300, 2014-2018 (K2XX)"
+     },
+     {
+      "name": "EPA fueleconomy.gov vehicle data",
+      "url": "https://www.fueleconomy.gov/feg/download.shtml",
+      "says": "2017 Silverado: 4.3 L 6-cyl SIDI FFV, C15 2WD and K15 4WD"
+     }
+    ],
+    "status": "three_sources_not_nhra",
+    "note": "E85 rating 297 hp. Direct injection, AFM, 6-speed auto."
+   },
+   {
+    "gen": "k2xx",
+    "cid": 325,
+    "liters": 5.3,
+    "hp": 355,
+    "hp_basis": "SAE net (SAE J1349 certified)",
+    "rpo": "L83",
+    "name": "5.3L / 325 V8",
+    "common_name": "EcoTec3 5.3 V8",
+    "trims": [
+     "optional; standard on upper trims",
+     "2WD and 4WD"
+    ],
+    "nhra": false,
+    "sources": [
+     {
+      "name": "GM/Chevrolet Pressroom 2017 Silverado 1500 specifications (media.chevrolet.com, Wayback copy)",
+      "url": "https://web.archive.org/web/20161226123235/http://media.chevrolet.com/media/us/en/chevrolet/vehicles/silverado/2017.tab1.html",
+      "says": "5.3L V-8 VVT DI w/AFM 355 hp @5600 (SAE certified)"
+     },
+     {
+      "name": "Consumer Guide 2017 Chevrolet Silverado review",
+      "url": "http://consumerguide.com/best-buys/2017-chevrolet-silverado/",
+      "says": "355-hp 5.3-liter V8"
+     },
+     {
+      "name": "Kelley Blue Book 2017 Silverado 1500 review/specs",
+      "url": "https://www.kbb.com/chevrolet/silverado-1500-crew-cab/2017/",
+      "says": "355 horsepower @ 5,600 rpm (5.3L V8)"
+     },
+     {
+      "name": "Wikipedia - Chevrolet Silverado (with GM small-block / Silverado EV articles, counted once)",
+      "url": "https://en.wikipedia.org/wiki/Chevrolet_Silverado",
+      "says": "5.3 L L83 EcoTec3 V8, 355 hp @5600, 2014-2019"
+     },
+     {
+      "name": "EPA fueleconomy.gov vehicle data",
+      "url": "https://www.fueleconomy.gov/feg/download.shtml",
+      "says": "2017 Silverado: 5.3 L 8-cyl SIDI (FFV and non-FFV), C15 2WD and K15 4WD"
+     },
+     {
+      "name": "GM Authority - GM L83 engine page (Wayback copy)",
+      "url": "https://web.archive.org/web/2025/https://gmauthority.com/blog/gm/gm-engines/l83/",
+      "says": "L83 355 hp; applications 2014-2018 Chevrolet Silverado (6L80), 2015-2018 (8L90)"
+     }
+    ],
+    "status": "three_sources_not_nhra",
+    "note": "E85 rating 380 hp. 8-speed auto available with the 5.3 from 2016 (LTZ/High Country) per Consumer Guide."
+   },
+   {
+    "gen": "k2xx",
+    "cid": 376,
+    "liters": 6.2,
+    "hp": 420,
+    "hp_basis": "SAE net (SAE J1349 certified)",
+    "rpo": "L86",
+    "name": "6.2L / 376 V8",
+    "common_name": "EcoTec3 6.2 V8",
+    "trims": [
+     "LTZ, High Country"
+    ],
+    "nhra": false,
+    "sources": [
+     {
+      "name": "GM/Chevrolet Pressroom 2017 Silverado 1500 specifications (media.chevrolet.com, Wayback copy)",
+      "url": "https://web.archive.org/web/20161226123235/http://media.chevrolet.com/media/us/en/chevrolet/vehicles/silverado/2017.tab1.html",
+      "says": "6.2L V-8 VVT DI w/AFM 420 hp @5600 (SAE certified)"
+     },
+     {
+      "name": "Consumer Guide 2017 Chevrolet Silverado review",
+      "url": "http://consumerguide.com/best-buys/2017-chevrolet-silverado/",
+      "says": "420-hp 6.2-liter V8"
+     },
+     {
+      "name": "Kelley Blue Book 2017 Silverado 1500 review/specs",
+      "url": "https://www.kbb.com/chevrolet/silverado-1500-crew-cab/2017/",
+      "says": "420 horsepower @ 5,600 rpm (6.2L V8)"
+     },
+     {
+      "name": "Wikipedia - Chevrolet Silverado (with GM small-block / Silverado EV articles, counted once)",
+      "url": "https://en.wikipedia.org/wiki/Chevrolet_Silverado",
+      "says": "6.2 L L86 EcoTec3 V8, 420 hp @5600, 2014-2018"
+     },
+     {
+      "name": "EPA fueleconomy.gov vehicle data",
+      "url": "https://www.fueleconomy.gov/feg/download.shtml",
+      "says": "2017 Silverado: 6.2 L 8-cyl SIDI, C15 2WD and K15 4WD"
+     },
+     {
+      "name": "GM Authority - GM L86 engine page (Wayback copy)",
+      "url": "https://web.archive.org/web/2025/https://gmauthority.com/blog/gm/gm-engines/l86/",
+      "says": "L86 420 hp; applications 2014 Chevrolet Silverado (6L80)"
+     }
+    ],
+    "status": "three_sources_not_nhra",
+    "note": "8-speed 8L90 auto from 2015. Premium fuel recommended."
+   },
+   {
+    "gen": "k2xx",
+    "cid": 325,
+    "liters": 5.3,
+    "hp": 355,
+    "hp_basis": "SAE net (SAE J1349 certified)",
+    "rpo": "L8B (eAssist)",
+    "name": "5.3L / 325 V8 eAssist mild hybrid",
+    "common_name": "EcoTec3 5.3 eAssist",
+    "trims": [
+     "LT, California only (2016-2017)",
+     "LT and LTZ nationwide (2018)"
+    ],
+    "nhra": false,
+    "sources": [
+     {
+      "name": "GM/Chevrolet Pressroom 2017 Silverado 1500 specifications (media.chevrolet.com, Wayback copy)",
+      "url": "https://web.archive.org/web/20161226123235/http://media.chevrolet.com/media/us/en/chevrolet/vehicles/silverado/2017.tab1.html",
+      "says": "5.3L V-8 with eAssist 355 hp @5600 (SAE certified); 24 mpg hwy eAssist 2WD 8-spd"
+     },
+     {
+      "name": "Consumer Guide 2014-18 Chevrolet Silverado used-car guide",
+      "url": "https://consumerguide.com/used/2014-18-chevrolet-silverado/",
+      "says": "5.3-liter available with eAssist mild hybrid on LT and LTZ nationwide for 2018; previously only on LT models in California"
+     },
+     {
+      "name": "Wikipedia - Chevrolet Silverado (with GM small-block / Silverado EV articles, counted once)",
+      "url": "https://en.wikipedia.org/wiki/Chevrolet_Silverado",
+      "says": "5.3 L L8B EcoTec3 V8 (eAssist), same output as L83, 2016-2018"
+     },
+     {
+      "name": "EPA fueleconomy.gov vehicle data",
+      "url": "https://www.fueleconomy.gov/feg/download.shtml",
+      "says": "2017 Silverado: 5.3 L 8-cyl 'Silverado 15 Hybrid' 2WD and 4WD"
+     },
+     {
+      "name": "GM Authority - GM L8B engine page (Wayback copy)",
+      "url": "https://web.archive.org/web/2025/https://gmauthority.com/blog/gm/gm-engines/l8b/",
+      "says": "L8B eAssist introduced on 2016 Silverado 1500; applications 2016-2018 Silverado 1500 (8L90 + BAS); about 500 trucks for 2016 via California dealers; motor adds up to 13 hp / 44 lb-ft"
+     }
+    ],
+    "status": "three_sources_not_nhra",
+    "note": "Belt-alternator-starter mild hybrid; engine rated 355 hp like the L83, motor boost up to 13 hp / 44 lb-ft. 2016: about 500 trucks, California only. The GM 2018 spec sheet omits eAssist, but EPA, Consumer Guide and KBB list it for 2018."
+   }
+  ],
+  "2018": [
+   {
+    "gen": "k2xx",
+    "cid": 262,
+    "liters": 4.3,
+    "hp": 285,
+    "hp_basis": "SAE net (SAE J1349 certified)",
+    "rpo": "LV3",
+    "name": "4.3L / 262 V6",
+    "common_name": "EcoTec3 4.3 V6",
+    "trims": [
+     "standard engine",
+     "2WD and 4WD"
+    ],
+    "nhra": false,
+    "sources": [
+     {
+      "name": "GM/Chevrolet Pressroom 2018 Silverado 1500 specifications (media.chevrolet.com, Wayback copy)",
+      "url": "https://web.archive.org/web/20190317221120/https://media.chevrolet.com/media/us/en/chevrolet/vehicles/silverado/2018.tab1.html",
+      "says": "4.3L V-6 VVT DI w/AFM 285 hp @5300 (SAE certified)"
+     },
+     {
+      "name": "Consumer Guide 2018 Chevrolet Silverado review",
+      "url": "https://consumerguide.com/chevrolet/2018-silverado/",
+      "says": "285-hp 4.3-liter V6"
+     },
+     {
+      "name": "Kelley Blue Book 2018 Silverado 1500 review/specs",
+      "url": "https://www.kbb.com/chevrolet/silverado-1500-crew-cab/2018/",
+      "says": "285 horsepower @ 5,300 rpm (4.3L V6)"
+     },
+     {
+      "name": "Wikipedia - Chevrolet Silverado (with GM small-block / Silverado EV articles, counted once)",
+      "url": "https://en.wikipedia.org/wiki/Chevrolet_Silverado",
+      "says": "4.3 L LV3 EcoTec3 V6, 285 hp @5300, 2014-2018 (K2XX)"
+     },
+     {
+      "name": "EPA fueleconomy.gov vehicle data",
+      "url": "https://www.fueleconomy.gov/feg/download.shtml",
+      "says": "2018 Silverado: 4.3 L 6-cyl SIDI FFV, C15 2WD and K15 4WD"
+     }
+    ],
+    "status": "three_sources_not_nhra",
+    "note": "E85 rating 297 hp. Direct injection, AFM, 6-speed auto."
+   },
+   {
+    "gen": "k2xx",
+    "cid": 325,
+    "liters": 5.3,
+    "hp": 355,
+    "hp_basis": "SAE net (SAE J1349 certified)",
+    "rpo": "L83",
+    "name": "5.3L / 325 V8",
+    "common_name": "EcoTec3 5.3 V8",
+    "trims": [
+     "optional; standard on upper trims",
+     "2WD and 4WD"
+    ],
+    "nhra": false,
+    "sources": [
+     {
+      "name": "GM/Chevrolet Pressroom 2018 Silverado 1500 specifications (media.chevrolet.com, Wayback copy)",
+      "url": "https://web.archive.org/web/20190317221120/https://media.chevrolet.com/media/us/en/chevrolet/vehicles/silverado/2018.tab1.html",
+      "says": "5.3L V-8 VVT DI w/AFM 355 hp @5600 (SAE certified)"
+     },
+     {
+      "name": "Consumer Guide 2018 Chevrolet Silverado review",
+      "url": "https://consumerguide.com/chevrolet/2018-silverado/",
+      "says": "355-hp 5.3-liter V8"
+     },
+     {
+      "name": "Kelley Blue Book 2018 Silverado 1500 review/specs",
+      "url": "https://www.kbb.com/chevrolet/silverado-1500-crew-cab/2018/",
+      "says": "355 horsepower @ 5,600 rpm (5.3L V8)"
+     },
+     {
+      "name": "Wikipedia - Chevrolet Silverado (with GM small-block / Silverado EV articles, counted once)",
+      "url": "https://en.wikipedia.org/wiki/Chevrolet_Silverado",
+      "says": "5.3 L L83 EcoTec3 V8, 355 hp @5600, 2014-2019"
+     },
+     {
+      "name": "EPA fueleconomy.gov vehicle data",
+      "url": "https://www.fueleconomy.gov/feg/download.shtml",
+      "says": "2018 Silverado: 5.3 L 8-cyl SIDI (FFV and non-FFV), C15 2WD and K15 4WD"
+     },
+     {
+      "name": "GM Authority - GM L83 engine page (Wayback copy)",
+      "url": "https://web.archive.org/web/2025/https://gmauthority.com/blog/gm/gm-engines/l83/",
+      "says": "L83 355 hp; applications 2014-2018 Chevrolet Silverado (6L80), 2015-2018 (8L90)"
+     }
+    ],
+    "status": "three_sources_not_nhra",
+    "note": "E85 rating 380 hp. 8-speed auto available with the 5.3 from 2016 (LTZ/High Country) per Consumer Guide."
+   },
+   {
+    "gen": "k2xx",
+    "cid": 376,
+    "liters": 6.2,
+    "hp": 420,
+    "hp_basis": "SAE net (SAE J1349 certified)",
+    "rpo": "L86",
+    "name": "6.2L / 376 V8",
+    "common_name": "EcoTec3 6.2 V8",
+    "trims": [
+     "LTZ, High Country"
+    ],
+    "nhra": false,
+    "sources": [
+     {
+      "name": "GM/Chevrolet Pressroom 2018 Silverado 1500 specifications (media.chevrolet.com, Wayback copy)",
+      "url": "https://web.archive.org/web/20190317221120/https://media.chevrolet.com/media/us/en/chevrolet/vehicles/silverado/2018.tab1.html",
+      "says": "6.2L V-8 VVT DI w/AFM 420 hp @5600 (SAE certified)"
+     },
+     {
+      "name": "Consumer Guide 2018 Chevrolet Silverado review",
+      "url": "https://consumerguide.com/chevrolet/2018-silverado/",
+      "says": "420-hp 6.2-liter V8"
+     },
+     {
+      "name": "Kelley Blue Book 2018 Silverado 1500 review/specs",
+      "url": "https://www.kbb.com/chevrolet/silverado-1500-crew-cab/2018/",
+      "says": "420 horsepower @ 5,600 rpm (6.2L V8)"
+     },
+     {
+      "name": "Wikipedia - Chevrolet Silverado (with GM small-block / Silverado EV articles, counted once)",
+      "url": "https://en.wikipedia.org/wiki/Chevrolet_Silverado",
+      "says": "6.2 L L86 EcoTec3 V8, 420 hp @5600, 2014-2018"
+     },
+     {
+      "name": "EPA fueleconomy.gov vehicle data",
+      "url": "https://www.fueleconomy.gov/feg/download.shtml",
+      "says": "2018 Silverado: 6.2 L 8-cyl SIDI, C15 2WD and K15 4WD"
+     },
+     {
+      "name": "GM Authority - GM L86 engine page (Wayback copy)",
+      "url": "https://web.archive.org/web/2025/https://gmauthority.com/blog/gm/gm-engines/l86/",
+      "says": "L86 420 hp; applications 2014 Chevrolet Silverado (6L80)"
+     }
+    ],
+    "status": "three_sources_not_nhra",
+    "note": "8-speed 8L90 auto from 2015. Premium fuel recommended."
+   },
+   {
+    "gen": "k2xx",
+    "cid": 325,
+    "liters": 5.3,
+    "hp": 355,
+    "hp_basis": "SAE net (SAE J1349 certified)",
+    "rpo": "L8B (eAssist)",
+    "name": "5.3L / 325 V8 eAssist mild hybrid",
+    "common_name": "EcoTec3 5.3 eAssist",
+    "trims": [
+     "LT, California only (2016-2017)",
+     "LT and LTZ nationwide (2018)"
+    ],
+    "nhra": false,
+    "sources": [
+     {
+      "name": "Consumer Guide 2018 Chevrolet Silverado review",
+      "url": "https://consumerguide.com/chevrolet/2018-silverado/",
+      "says": "Optional engine 5.3-liter V8 eAssist Hybrid, 355 hp, 8-speed automatic"
+     },
+     {
+      "name": "Consumer Guide 2014-18 Chevrolet Silverado used-car guide",
+      "url": "https://consumerguide.com/used/2014-18-chevrolet-silverado/",
+      "says": "5.3-liter available with eAssist mild hybrid on LT and LTZ nationwide for 2018; previously only on LT models in California"
+     },
+     {
+      "name": "Kelley Blue Book 2018 Silverado 1500 review/specs",
+      "url": "https://www.kbb.com/chevrolet/silverado-1500-crew-cab/2018/",
+      "says": "mild-hybrid eAssist package now available nationwide on LTZ and LT; eAssist EPA 18/24 2WD"
+     },
+     {
+      "name": "Wikipedia - Chevrolet Silverado (with GM small-block / Silverado EV articles, counted once)",
+      "url": "https://en.wikipedia.org/wiki/Chevrolet_Silverado",
+      "says": "5.3 L L8B EcoTec3 V8 (eAssist), same output as L83, 2016-2018"
+     },
+     {
+      "name": "EPA fueleconomy.gov vehicle data",
+      "url": "https://www.fueleconomy.gov/feg/download.shtml",
+      "says": "2018 Silverado: 5.3 L 8-cyl 'Silverado 15 Hybrid' 2WD and 4WD"
+     },
+     {
+      "name": "GM Authority - GM L8B engine page (Wayback copy)",
+      "url": "https://web.archive.org/web/2025/https://gmauthority.com/blog/gm/gm-engines/l8b/",
+      "says": "L8B eAssist introduced on 2016 Silverado 1500; applications 2016-2018 Silverado 1500 (8L90 + BAS); about 500 trucks for 2016 via California dealers; motor adds up to 13 hp / 44 lb-ft"
+     }
+    ],
+    "status": "three_sources_not_nhra",
+    "note": "Belt-alternator-starter mild hybrid; engine rated 355 hp like the L83, motor boost up to 13 hp / 44 lb-ft. 2016: about 500 trucks, California only. The GM 2018 spec sheet omits eAssist, but EPA, Consumer Guide and KBB list it for 2018."
+   }
+  ],
+  "2019": [
+   {
+    "gen": "k2xx",
+    "cid": 325,
+    "liters": 5.3,
+    "hp": 355,
+    "hp_basis": "SAE net (SAE J1349 certified)",
+    "rpo": "L83",
+    "name": "5.3L / 325 V8 (Silverado 1500 LD)",
+    "common_name": "EcoTec3 5.3 V8",
+    "trims": [
+     "Silverado 1500 LD (previous-generation carryover): Double Cab 6.5-ft box, WT/Custom/LT",
+     "2WD and 4WD"
+    ],
+    "nhra": false,
+    "sources": [
+     {
+      "name": "Kelley Blue Book 2019 Silverado 1500 review/specs",
+      "url": "https://www.kbb.com/chevrolet/silverado-1500-ld-double-cab/2019/",
+      "says": "2019 Silverado LD comes standard with a proven 5.3-liter V8 delivering 355 horsepower; only rating listed"
+     },
+     {
+      "name": "Wikipedia - Chevrolet Silverado (with GM small-block / Silverado EV articles, counted once)",
+      "url": "https://en.wikipedia.org/wiki/Chevrolet_Silverado",
+      "says": "5.3 L L83 EcoTec3 V8, 355 hp, 2014-2019 (K2XX incl. 2019 LD)"
+     },
+     {
+      "name": "EPA fueleconomy.gov vehicle data",
+      "url": "https://www.fueleconomy.gov/feg/download.shtml",
+      "says": "2019 Silverado: 'Silverado LD C15 2WD' and 'Silverado LD K15 4WD' rows are 5.3 L 8-cyl only"
+     }
+    ],
+    "status": "three_sources_not_nhra",
+    "note": "Only engine in the 2019 LD; EPA has no 4.3 V6 rows for the LD. 6-speed auto."
+   },
+   {
+    "gen": "t1",
+    "cid": 262,
+    "liters": 4.3,
+    "hp": 285,
+    "hp_basis": "SAE net (SAE J1349 certified)",
+    "rpo": "LV3",
+    "name": "4.3L / 262 V6",
+    "common_name": "EcoTec3 4.3 V6",
+    "trims": [
+     "WT, Custom (incl. Custom Trail Boss)"
+    ],
+    "nhra": false,
+    "sources": [
+     {
+      "name": "GM/Chevrolet Pressroom 2019 Silverado 1500 specifications (media.chevrolet.com, Wayback copy)",
+      "url": "https://web.archive.org/web/20190411035212/https://media.chevrolet.com/media/us/en/chevrolet/vehicles/silverado/2019.tab1.html",
+      "says": "4.3L V-6 VVT DI w/AFM 285 hp @5300 (SAE certified), 6-speed"
+     },
+     {
+      "name": "GM TechLink - All-New 2019 Silverado 1500 and Sierra 1500 Ready to Work",
+      "url": "https://gm-techlink.com/?p=10070",
+      "says": "4.3L V6 (RPO LV3) Work Truck, Custom; 285 hp / 305 lb-ft; carryover from 2018"
+     },
+     {
+      "name": "Consumer Guide 2019 Chevrolet Silverado review",
+      "url": "https://consumerguide.com/best-buys/2019-chevrolet-silverado/",
+      "says": "285-hp, 4.3-liter V6"
+     },
+     {
+      "name": "Kelley Blue Book 2019 Silverado 1500 review/specs",
+      "url": "https://www.kbb.com/chevrolet/silverado-1500-crew-cab/2019/",
+      "says": "4.3-liter V6 with 285 horsepower"
+     },
+     {
+      "name": "Wikipedia - Chevrolet Silverado (with GM small-block / Silverado EV articles, counted once)",
+      "url": "https://en.wikipedia.org/wiki/Chevrolet_Silverado",
+      "says": "4.3 L LV3, 285 hp, T1 2019-2021 only"
+     },
+     {
+      "name": "EPA fueleconomy.gov vehicle data",
+      "url": "https://www.fueleconomy.gov/feg/download.shtml",
+      "says": "2019 Silverado: 4.3 L 6-cyl SIDI C10 2WD, K10 4WD, K10 TrailBoss"
+     }
+    ],
+    "status": "three_sources_not_nhra",
+    "note": "6-speed auto."
+   },
+   {
+    "gen": "t1",
+    "cid": 166,
+    "liters": 2.7,
+    "hp": 310,
+    "hp_basis": "SAE net (SAE J1349 certified)",
+    "rpo": "L3B",
+    "name": "2.7L / 166 turbo I4",
+    "common_name": "2.7L Turbo",
+    "trims": [
+     "LT, RST"
+    ],
+    "nhra": false,
+    "sources": [
+     {
+      "name": "GM/Chevrolet Pressroom 2019 Silverado 1500 specifications (media.chevrolet.com, Wayback copy)",
+      "url": "https://web.archive.org/web/20190411035212/https://media.chevrolet.com/media/us/en/chevrolet/vehicles/silverado/2019.tab1.html",
+      "says": "2.7L I-4 Turbo DOHC VVT DI w/AFM and Stop/Start, 310 hp @5600 (SAE certified), 348 lb-ft"
+     },
+     {
+      "name": "Consumer Guide 2019 Chevrolet Silverado review",
+      "url": "https://consumerguide.com/best-buys/2019-chevrolet-silverado/",
+      "says": "310-HP, turbocharged 2.7-liter 4-cyl."
+     },
+     {
+      "name": "Kelley Blue Book 2019 Silverado 1500 review/specs",
+      "url": "https://www.kbb.com/chevrolet/silverado-1500-crew-cab/2019/",
+      "says": "2.7-liter turbo 4-cylinder with 310 horsepower"
+     },
+     {
+      "name": "Wikipedia - Chevrolet Silverado (with GM small-block / Silverado EV articles, counted once)",
+      "url": "https://en.wikipedia.org/wiki/Chevrolet_Silverado",
+      "says": "2.7 L L3B turbo I4, 310 hp @5600, 348 lb-ft, 2019-2021"
+     },
+     {
+      "name": "GM Authority - GM L3B engine page (Wayback copy)",
+      "url": "https://web.archive.org/web/2025/https://gmauthority.com/blog/gm/gm-engines/l3b/",
+      "says": "L3B 2019-2021 Chevrolet Silverado 1500, 310 hp / 348 lb-ft, 8-speed"
+     },
+     {
+      "name": "EPA fueleconomy.gov vehicle data",
+      "url": "https://www.fueleconomy.gov/feg/download.shtml",
+      "says": "2019 Silverado: 2.7 L 4-cyl turbo SIDI, C10 2WD and K10 4WD"
+     }
+    ],
+    "status": "three_sources_not_nhra",
+    "note": "348 lb-ft; 8-speed auto."
+   },
+   {
+    "gen": "t1",
+    "cid": 325,
+    "liters": 5.3,
+    "hp": 355,
+    "hp_basis": "SAE net (SAE J1349 certified)",
+    "rpo": "L82",
+    "name": "5.3L / 325 V8 (AFM)",
+    "common_name": "EcoTec3 5.3 V8",
+    "trims": [
+     "WT, Custom, Custom Trail Boss"
+    ],
+    "nhra": false,
+    "sources": [
+     {
+      "name": "GM/Chevrolet Pressroom 2019 Silverado 1500 specifications (media.chevrolet.com, Wayback copy)",
+      "url": "https://web.archive.org/web/20190411035212/https://media.chevrolet.com/media/us/en/chevrolet/vehicles/silverado/2019.tab1.html",
+      "says": "5.3L V-8 VVT DI with Active Fuel Management 355 hp @5600 (6-speed)"
+     },
+     {
+      "name": "GM TechLink - All-New 2019 Silverado 1500 and Sierra 1500 Ready to Work",
+      "url": "https://gm-techlink.com/?p=10070",
+      "says": "5.3L V8 (RPO L82) Work Truck, Custom; 355 hp / 383 lb-ft; AFM; carryover from 2018"
+     },
+     {
+      "name": "Wikipedia - Chevrolet Silverado (with GM small-block / Silverado EV articles, counted once)",
+      "url": "https://en.wikipedia.org/wiki/Chevrolet_Silverado",
+      "says": "5.3 L L82 EcoTec3 V8, 355 hp, 2019-2021"
+     },
+     {
+      "name": "GM Authority - GM L82 engine page (Wayback copy)",
+      "url": "https://web.archive.org/web/2025/https://gmauthority.com/blog/gm/gm-engines/l82/",
+      "says": "L82 (AFM, not DFM) first launched in 2019 Silverado 1500; 355 hp, 6-speed"
+     },
+     {
+      "name": "Consumer Guide 2019 Chevrolet Silverado review",
+      "url": "https://consumerguide.com/best-buys/2019-chevrolet-silverado/",
+      "says": "355-HP, 5.3-liter V8; only some 5.3-liter V8s get Dynamic Fuel Management"
+     },
+     {
+      "name": "EPA fueleconomy.gov vehicle data",
+      "url": "https://www.fueleconomy.gov/feg/download.shtml",
+      "says": "2019 Silverado: 5.3 L 8-cyl SIDI (several variants)"
+     }
+    ],
+    "status": "three_sources_not_nhra",
+    "note": "AFM cylinder deactivation, 6-speed auto. EPA cannot tell L82 and L84 apart."
+   },
+   {
+    "gen": "t1",
+    "cid": 325,
+    "liters": 5.3,
+    "hp": 355,
+    "hp_basis": "SAE net (SAE J1349 certified)",
+    "rpo": "L84",
+    "name": "5.3L / 325 V8 (DFM)",
+    "common_name": "EcoTec3 5.3 V8 w/ Dynamic Fuel Management",
+    "trims": [
+     "LT, RST, LT Trail Boss, LTZ, High Country"
+    ],
+    "nhra": false,
+    "sources": [
+     {
+      "name": "GM/Chevrolet Pressroom 2019 Silverado 1500 specifications (media.chevrolet.com, Wayback copy)",
+      "url": "https://web.archive.org/web/20190411035212/https://media.chevrolet.com/media/us/en/chevrolet/vehicles/silverado/2019.tab1.html",
+      "says": "5.3L V-8 VVT DI with Dynamic Fuel Management and Stop/Start 355 hp @5600 (8-speed)"
+     },
+     {
+      "name": "GM TechLink - All-New 2019 Silverado 1500 and Sierra 1500 Ready to Work",
+      "url": "https://gm-techlink.com/?p=10070",
+      "says": "5.3L V8 (RPO L84) LT, RST, LT Trail Boss, LTZ, High Country; 355 hp; new for 2019; Dynamic Fuel Management"
+     },
+     {
+      "name": "Wikipedia - Chevrolet Silverado (with GM small-block / Silverado EV articles, counted once)",
+      "url": "https://en.wikipedia.org/wiki/Chevrolet_Silverado",
+      "says": "5.3 L L84 EcoTec3 w/DFM, 355 hp, 2019-"
+     },
+     {
+      "name": "GM Authority - GM L84 engine page (Wayback copy)",
+      "url": "https://web.archive.org/web/2025/https://gmauthority.com/blog/gm/gm-engines/l84/",
+      "says": "L84 first launched in 2019 Silverado 1500; 355 hp, 8-speed"
+     },
+     {
+      "name": "Kelley Blue Book 2019 Silverado 1500 review/specs",
+      "url": "https://www.kbb.com/chevrolet/silverado-1500-crew-cab/2019/",
+      "says": "5.3-liter V8 with 355 horsepower"
+     },
+     {
+      "name": "EPA fueleconomy.gov vehicle data",
+      "url": "https://www.fueleconomy.gov/feg/download.shtml",
+      "says": "2019 Silverado: 5.3 L 8-cyl SIDI incl. FFV and XFE"
+     }
+    ],
+    "status": "three_sources_not_nhra",
+    "note": "8-speed auto in 2019."
+   },
+   {
+    "gen": "t1",
+    "cid": 376,
+    "liters": 6.2,
+    "hp": 420,
+    "hp_basis": "SAE net (SAE J1349 certified)",
+    "rpo": "L87",
+    "name": "6.2L / 376 V8 (DFM)",
+    "common_name": "EcoTec3 6.2 V8 w/ Dynamic Fuel Management",
+    "trims": [
+     "LTZ, High Country"
+    ],
+    "nhra": false,
+    "sources": [
+     {
+      "name": "GM/Chevrolet Pressroom 2019 Silverado 1500 specifications (media.chevrolet.com, Wayback copy)",
+      "url": "https://web.archive.org/web/20190411035212/https://media.chevrolet.com/media/us/en/chevrolet/vehicles/silverado/2019.tab1.html",
+      "says": "6.2L V-8 VVT DI with DFM and Stop/Start 420 hp @5600, 10-speed"
+     },
+     {
+      "name": "GM TechLink - All-New 2019 Silverado 1500 and Sierra 1500 Ready to Work",
+      "url": "https://gm-techlink.com/?p=10070",
+      "says": "6.2L V8 (RPO L87) LTZ, High Country; 420 hp / 460 lb-ft; new for 2019"
+     },
+     {
+      "name": "Consumer Guide 2019 Chevrolet Silverado review",
+      "url": "https://consumerguide.com/best-buys/2019-chevrolet-silverado/",
+      "says": "420-HP 6.2-liter V8; 6.2 now comes with a 10-speed automatic"
+     },
+     {
+      "name": "Kelley Blue Book 2019 Silverado 1500 review/specs",
+      "url": "https://www.kbb.com/chevrolet/silverado-1500-crew-cab/2019/",
+      "says": "6.2-liter V8 with 420 horsepower"
+     },
+     {
+      "name": "Wikipedia - Chevrolet Silverado (with GM small-block / Silverado EV articles, counted once)",
+      "url": "https://en.wikipedia.org/wiki/Chevrolet_Silverado",
+      "says": "6.2 L L87 EcoTec3 w/DFM, 420 hp, 2019-"
+     },
+     {
+      "name": "GM Authority - GM L87 engine page (Wayback copy)",
+      "url": "https://web.archive.org/web/2025/https://gmauthority.com/blog/gm/gm-engines/l87/",
+      "says": "L87 first launched in 2019 Silverado 1500; 420 hp; 10-speed"
+     },
+     {
+      "name": "EPA fueleconomy.gov vehicle data",
+      "url": "https://www.fueleconomy.gov/feg/download.shtml",
+      "says": "2019 Silverado: 6.2 L 8-cyl SIDI K10 4WD"
+     }
+    ],
+    "status": "three_sources_not_nhra",
+    "note": "10-speed auto. EPA 2019 lists 4WD only."
+   },
+   {
+    "gen": "t1",
+    "cid": 183,
+    "liters": 3.0,
+    "hp": 277,
+    "hp_basis": "SAE net (SAE J1349 certified)",
+    "rpo": "LM2",
+    "name": "3.0L / 183 turbodiesel I6",
+    "common_name": "Duramax 3.0",
+    "trims": [
+     "announced for 2019, not delivered"
+    ],
+    "nhra": false,
+    "sources": [
+     {
+      "name": "GM/Chevrolet Pressroom 2019 Silverado 1500 specifications (media.chevrolet.com, Wayback copy)",
+      "url": "https://web.archive.org/web/20190411035212/https://media.chevrolet.com/media/us/en/chevrolet/vehicles/silverado/2019.tab1.html",
+      "says": "2019 spec sheet lists '3.0L I-6 turbo-diesel / 10-speed auto.' with fuel economy TBD and no ratings"
+     },
+     {
+      "name": "Consumer Guide 2019 Chevrolet Silverado review",
+      "url": "https://consumerguide.com/best-buys/2019-chevrolet-silverado/",
+      "says": "turbodiesel 6-cylinder slated to arrive mid-year"
+     },
+     {
+      "name": "GM Authority - GM LM2 engine page (Wayback copy)",
+      "url": "https://web.archive.org/web/2025/https://gmauthority.com/blog/gm/gm-engines/lm2/",
+      "says": "application table lists 2019-2022 Chevrolet Silverado 1500"
+     },
+     {
+      "name": "EPA fueleconomy.gov vehicle data",
+      "url": "https://www.fueleconomy.gov/feg/download.shtml",
+      "says": "2019 Silverado: no 3.0 diesel rows for 2019; first rows are 2020"
+     }
+    ],
+    "status": "excluded_not_produced",
+    "note": "Announced for 2019 but reached customers as a 2020 model (EPA has no 2019 diesel; Wikipedia gives LM2 2020-2022; Consumer Guide 2020 calls it new). GM Authority's '2019-2022' range disagrees."
+   }
+  ],
+  "2020": [
+   {
+    "gen": "t1",
+    "cid": 262,
+    "liters": 4.3,
+    "hp": 285,
+    "hp_basis": "SAE net (SAE J1349 certified)",
+    "rpo": "LV3",
+    "name": "4.3L / 262 V6",
+    "common_name": "EcoTec3 4.3 V6",
+    "trims": [
+     "WT, Custom, Custom Trail Boss"
+    ],
+    "nhra": false,
+    "sources": [
+     {
+      "name": "GM/Chevrolet Pressroom 2020 Silverado 1500 specifications (media.chevrolet.com, Wayback copy)",
+      "url": "https://web.archive.org/web/20210307073047/https://media.chevrolet.com/media/us/en/chevrolet/vehicles/silverado/2020.tab1.html",
+      "says": "4.3L V-6 VVT DI w/AFM 285 hp @5300 (SAE certified)"
+     },
+     {
+      "name": "Consumer Guide 2020 Chevrolet Silverado review",
+      "url": "https://consumerguide.com/best-buys/2020-chevrolet-silverado/",
+      "says": "285-HP, 4.3-Liter V6"
+     },
+     {
+      "name": "Wikipedia - Chevrolet Silverado (with GM small-block / Silverado EV articles, counted once)",
+      "url": "https://en.wikipedia.org/wiki/Chevrolet_Silverado",
+      "says": "4.3 L LV3, 285 hp, T1 2019-2021 only"
+     },
+     {
+      "name": "EPA fueleconomy.gov vehicle data",
+      "url": "https://www.fueleconomy.gov/feg/download.shtml",
+      "says": "2020 Silverado: 4.3 L 6-cyl SIDI 2WD, 4WD, 4WD TrailBoss"
+     }
+    ],
+    "status": "three_sources_not_nhra",
+    "note": "6-speed auto."
+   },
+   {
+    "gen": "t1",
+    "cid": 166,
+    "liters": 2.7,
+    "hp": 310,
+    "hp_basis": "SAE net (SAE J1349 certified)",
+    "rpo": "L3B",
+    "name": "2.7L / 166 turbo I4",
+    "common_name": "2.7L Turbo",
+    "trims": [
+     "WT, Custom, LT, RST"
+    ],
+    "nhra": false,
+    "sources": [
+     {
+      "name": "GM/Chevrolet Pressroom 2020 Silverado 1500 specifications (media.chevrolet.com, Wayback copy)",
+      "url": "https://web.archive.org/web/20210307073047/https://media.chevrolet.com/media/us/en/chevrolet/vehicles/silverado/2020.tab1.html",
+      "says": "2.7L I-4 Turbo 310 hp @5600 (SAE certified), 348 lb-ft"
+     },
+     {
+      "name": "Consumer Guide 2020 Chevrolet Silverado review",
+      "url": "https://consumerguide.com/best-buys/2020-chevrolet-silverado/",
+      "says": "310-HP, turbocharged 2.7-liter 4-cyl."
+     },
+     {
+      "name": "Wikipedia - Chevrolet Silverado (with GM small-block / Silverado EV articles, counted once)",
+      "url": "https://en.wikipedia.org/wiki/Chevrolet_Silverado",
+      "says": "2.7 L L3B, 310 hp, 348 lb-ft, 2019-2021"
+     },
+     {
+      "name": "GM Authority - GM L3B engine page (Wayback copy)",
+      "url": "https://web.archive.org/web/2025/https://gmauthority.com/blog/gm/gm-engines/l3b/",
+      "says": "L3B 2019-2021 Chevrolet Silverado 1500, 310 hp / 348 lb-ft"
+     },
+     {
+      "name": "EPA fueleconomy.gov vehicle data",
+      "url": "https://www.fueleconomy.gov/feg/download.shtml",
+      "says": "2020 Silverado: 2.7 L 4-cyl turbo SIDI 2WD and 4WD"
+     }
+    ],
+    "status": "three_sources_not_nhra",
+    "note": "348 lb-ft; 8-speed auto."
+   },
+   {
+    "gen": "t1",
+    "cid": 325,
+    "liters": 5.3,
+    "hp": 355,
+    "hp_basis": "SAE net (SAE J1349 certified)",
+    "rpo": "L82",
+    "name": "5.3L / 325 V8 (AFM)",
+    "common_name": "EcoTec3 5.3 V8",
+    "trims": [
+     "WT, Custom, Custom Trail Boss"
+    ],
+    "nhra": false,
+    "sources": [
+     {
+      "name": "GM/Chevrolet Pressroom 2020 Silverado 1500 specifications (media.chevrolet.com, Wayback copy)",
+      "url": "https://web.archive.org/web/20210307073047/https://media.chevrolet.com/media/us/en/chevrolet/vehicles/silverado/2020.tab1.html",
+      "says": "5.3L V-8 VVT DI with Active Fuel Management 355 hp @5600"
+     },
+     {
+      "name": "Wikipedia - Chevrolet Silverado (with GM small-block / Silverado EV articles, counted once)",
+      "url": "https://en.wikipedia.org/wiki/Chevrolet_Silverado",
+      "says": "5.3 L L82, 355 hp, 2019-2021"
+     },
+     {
+      "name": "GM Authority - GM L82 engine page (Wayback copy)",
+      "url": "https://web.archive.org/web/2025/https://gmauthority.com/blog/gm/gm-engines/l82/",
+      "says": "L82 2019-and-newer Chevrolet Silverado 1500, 355 hp, 6-speed"
+     },
+     {
+      "name": "Consumer Guide 2020 Chevrolet Silverado review",
+      "url": "https://consumerguide.com/best-buys/2020-chevrolet-silverado/",
+      "says": "355-HP, 5.3-Liter V8"
+     },
+     {
+      "name": "EPA fueleconomy.gov vehicle data",
+      "url": "https://www.fueleconomy.gov/feg/download.shtml",
+      "says": "2020 Silverado: 5.3 L 8-cyl SIDI"
+     }
+    ],
+    "status": "three_sources_not_nhra",
+    "note": "6-speed auto."
+   },
+   {
+    "gen": "t1",
+    "cid": 325,
+    "liters": 5.3,
+    "hp": 355,
+    "hp_basis": "SAE net (SAE J1349 certified)",
+    "rpo": "L84",
+    "name": "5.3L / 325 V8 (DFM)",
+    "common_name": "EcoTec3 5.3 V8 w/ Dynamic Fuel Management",
+    "trims": [
+     "LT, RST, LT Trail Boss, LTZ, High Country"
+    ],
+    "nhra": false,
+    "sources": [
+     {
+      "name": "GM/Chevrolet Pressroom 2020 Silverado 1500 specifications (media.chevrolet.com, Wayback copy)",
+      "url": "https://web.archive.org/web/20210307073047/https://media.chevrolet.com/media/us/en/chevrolet/vehicles/silverado/2020.tab1.html",
+      "says": "5.3L V-8 VVT DI with Dynamic Fuel Management 355 hp @5600"
+     },
+     {
+      "name": "Wikipedia - Chevrolet Silverado (with GM small-block / Silverado EV articles, counted once)",
+      "url": "https://en.wikipedia.org/wiki/Chevrolet_Silverado",
+      "says": "5.3 L L84 w/DFM, 355 hp, 2019-"
+     },
+     {
+      "name": "GM Authority - GM L84 engine page (Wayback copy)",
+      "url": "https://web.archive.org/web/2025/https://gmauthority.com/blog/gm/gm-engines/l84/",
+      "says": "L84 2019-and-newer Chevrolet Silverado 1500, 355 hp"
+     },
+     {
+      "name": "Consumer Guide 2020 Chevrolet Silverado review",
+      "url": "https://consumerguide.com/best-buys/2020-chevrolet-silverado/",
+      "says": "355-HP, 5.3-Liter V8"
+     },
+     {
+      "name": "EPA fueleconomy.gov vehicle data",
+      "url": "https://www.fueleconomy.gov/feg/download.shtml",
+      "says": "2020 Silverado: 5.3 L 8-cyl SIDI incl. FFV, XFE Package"
+     }
+    ],
+    "status": "three_sources_not_nhra",
+    "note": "8- or 10-speed auto."
+   },
+   {
+    "gen": "t1",
+    "cid": 376,
+    "liters": 6.2,
+    "hp": 420,
+    "hp_basis": "SAE net (SAE J1349 certified)",
+    "rpo": "L87",
+    "name": "6.2L / 376 V8 (DFM)",
+    "common_name": "EcoTec3 6.2 V8 w/ Dynamic Fuel Management",
+    "trims": [
+     "RST, LT Trail Boss, LTZ, High Country"
+    ],
+    "nhra": false,
+    "sources": [
+     {
+      "name": "GM/Chevrolet Pressroom 2020 Silverado 1500 specifications (media.chevrolet.com, Wayback copy)",
+      "url": "https://web.archive.org/web/20210307073047/https://media.chevrolet.com/media/us/en/chevrolet/vehicles/silverado/2020.tab1.html",
+      "says": "6.2L V-8 VVT DI with DFM and Stop/Start 420 hp @5600"
+     },
+     {
+      "name": "Consumer Guide 2020 Chevrolet Silverado review",
+      "url": "https://consumerguide.com/best-buys/2020-chevrolet-silverado/",
+      "says": "420-HP 6.2-Liter V8"
+     },
+     {
+      "name": "Wikipedia - Chevrolet Silverado (with GM small-block / Silverado EV articles, counted once)",
+      "url": "https://en.wikipedia.org/wiki/Chevrolet_Silverado",
+      "says": "6.2 L L87 w/DFM, 420 hp, 2019-"
+     },
+     {
+      "name": "GM Authority - GM L87 engine page (Wayback copy)",
+      "url": "https://web.archive.org/web/2025/https://gmauthority.com/blog/gm/gm-engines/l87/",
+      "says": "L87 2019-and-newer Chevrolet Silverado 1500, 420 hp, 10-speed"
+     },
+     {
+      "name": "EPA fueleconomy.gov vehicle data",
+      "url": "https://www.fueleconomy.gov/feg/download.shtml",
+      "says": "2020 Silverado: 6.2 L 8-cyl SIDI 4WD and 4WD TrailBoss"
+     }
+    ],
+    "status": "three_sources_not_nhra",
+    "note": "10-speed auto; EPA lists 4WD only."
+   },
+   {
+    "gen": "t1",
+    "cid": 183,
+    "liters": 3.0,
+    "hp": 277,
+    "hp_basis": "SAE net (SAE J1349 certified)",
+    "rpo": "LM2",
+    "name": "3.0L / 183 turbodiesel I6",
+    "common_name": "Duramax 3.0",
+    "trims": [
+     "LT, RST, LTZ, High Country, Trail Boss"
+    ],
+    "nhra": false,
+    "sources": [
+     {
+      "name": "GM/Chevrolet Pressroom 2020 Silverado 1500 specifications (media.chevrolet.com, Wayback copy)",
+      "url": "https://web.archive.org/web/20210307073047/https://media.chevrolet.com/media/us/en/chevrolet/vehicles/silverado/2020.tab1.html",
+      "says": "3.0L DOHC I-6 Turbo-Diesel 277 hp @3750 / 460 lb-ft (SAE certified)"
+     },
+     {
+      "name": "Consumer Guide 2020 Chevrolet Silverado review",
+      "url": "https://consumerguide.com/best-buys/2020-chevrolet-silverado/",
+      "says": "new for 2020: 3.0-liter turbodiesel 6-cylinder, 277 horsepower and 460 lb-ft"
+     },
+     {
+      "name": "Wikipedia - Chevrolet Silverado (with GM small-block / Silverado EV articles, counted once)",
+      "url": "https://en.wikipedia.org/wiki/Chevrolet_Silverado",
+      "says": "3.0 L LM2 Duramax I6, 277 hp @3750, 2020-2022"
+     },
+     {
+      "name": "GM Authority - GM LM2 engine page (Wayback copy)",
+      "url": "https://web.archive.org/web/2025/https://gmauthority.com/blog/gm/gm-engines/lm2/",
+      "says": "LM2 Silverado 1500 277 hp / 460 lb-ft, 10L80"
+     },
+     {
+      "name": "EPA fueleconomy.gov vehicle data",
+      "url": "https://www.fueleconomy.gov/feg/download.shtml",
+      "says": "2020 Silverado: 3.0 L 6-cyl turbo diesel 2WD and 4WD"
+     }
+    ],
+    "status": "three_sources_not_nhra",
+    "note": "10-speed auto. First model year for the diesel."
+   }
+  ],
+  "2021": [
+   {
+    "gen": "t1",
+    "cid": 262,
+    "liters": 4.3,
+    "hp": 285,
+    "hp_basis": "SAE net (SAE J1349 certified)",
+    "rpo": "LV3",
+    "name": "4.3L / 262 V6",
+    "common_name": "EcoTec3 4.3 V6",
+    "trims": [
+     "WT, Custom, Custom Trail Boss"
+    ],
+    "nhra": false,
+    "sources": [
+     {
+      "name": "GM/Chevrolet Pressroom 2021 Silverado 1500 specifications (media.chevrolet.com, Wayback copy)",
+      "url": "https://web.archive.org/web/20220817215107/https://media.chevrolet.com/media/us/en/chevrolet/vehicles/silverado/2021.tab1.html",
+      "says": "4.3L V-6 VVT DI w/AFM 285 hp @5300 (SAE certified)"
+     },
+     {
+      "name": "Kelley Blue Book 2021 Silverado 1500 review/specs",
+      "url": "https://www.kbb.com/chevrolet/silverado-1500-crew-cab/2021/",
+      "says": "285 horsepower @ 5,300 rpm (4.3L V6)"
+     },
+     {
+      "name": "Wikipedia - Chevrolet Silverado (with GM small-block / Silverado EV articles, counted once)",
+      "url": "https://en.wikipedia.org/wiki/Chevrolet_Silverado",
+      "says": "4.3 L LV3, 285 hp, T1 2019-2021 only"
+     },
+     {
+      "name": "EPA fueleconomy.gov vehicle data",
+      "url": "https://www.fueleconomy.gov/feg/download.shtml",
+      "says": "2021 Silverado: 4.3 L 6-cyl SIDI 2WD, 4WD, 4WD TrailBoss"
+     }
+    ],
+    "status": "three_sources_not_nhra",
+    "note": "Last year; dropped for 2022 (Consumer Guide; KBB 2022 Limited)."
+   },
+   {
+    "gen": "t1",
+    "cid": 166,
+    "liters": 2.7,
+    "hp": 310,
+    "hp_basis": "SAE net (SAE J1349 certified)",
+    "rpo": "L3B",
+    "name": "2.7L / 166 turbo I4",
+    "common_name": "2.7L Turbo",
+    "trims": [
+     "WT, Custom, LT, RST"
+    ],
+    "nhra": false,
+    "sources": [
+     {
+      "name": "GM/Chevrolet Pressroom 2021 Silverado 1500 specifications (media.chevrolet.com, Wayback copy)",
+      "url": "https://web.archive.org/web/20220817215107/https://media.chevrolet.com/media/us/en/chevrolet/vehicles/silverado/2021.tab1.html",
+      "says": "2.7L I-4 Turbo 310 hp @5600 (SAE certified), 348 lb-ft"
+     },
+     {
+      "name": "Kelley Blue Book 2021 Silverado 1500 review/specs",
+      "url": "https://www.kbb.com/chevrolet/silverado-1500-crew-cab/2021/",
+      "says": "310 horsepower @ 5,600 rpm (2.7L turbo I4)"
+     },
+     {
+      "name": "Wikipedia - Chevrolet Silverado (with GM small-block / Silverado EV articles, counted once)",
+      "url": "https://en.wikipedia.org/wiki/Chevrolet_Silverado",
+      "says": "2.7 L L3B, 310 hp, 348 lb-ft, 2019-2021"
+     },
+     {
+      "name": "GM Authority - GM L3B engine page (Wayback copy)",
+      "url": "https://web.archive.org/web/2025/https://gmauthority.com/blog/gm/gm-engines/l3b/",
+      "says": "L3B 2019-2021 Chevrolet Silverado 1500, 310 hp / 348 lb-ft"
+     },
+     {
+      "name": "EPA fueleconomy.gov vehicle data",
+      "url": "https://www.fueleconomy.gov/feg/download.shtml",
+      "says": "2021 Silverado: 2.7 L 4-cyl turbo SIDI 2WD and 4WD"
+     }
+    ],
+    "status": "three_sources_not_nhra",
+    "note": "348 lb-ft; 8-speed auto."
+   },
+   {
+    "gen": "t1",
+    "cid": 325,
+    "liters": 5.3,
+    "hp": 355,
+    "hp_basis": "SAE net (SAE J1349 certified)",
+    "rpo": "L82",
+    "name": "5.3L / 325 V8 (AFM)",
+    "common_name": "EcoTec3 5.3 V8",
+    "trims": [
+     "WT, Custom, Custom Trail Boss"
+    ],
+    "nhra": false,
+    "sources": [
+     {
+      "name": "GM/Chevrolet Pressroom 2021 Silverado 1500 specifications (media.chevrolet.com, Wayback copy)",
+      "url": "https://web.archive.org/web/20220817215107/https://media.chevrolet.com/media/us/en/chevrolet/vehicles/silverado/2021.tab1.html",
+      "says": "5.3L V-8 VVT DI with Active Fuel Management (L82) 355 hp @5600"
+     },
+     {
+      "name": "Wikipedia - Chevrolet Silverado (with GM small-block / Silverado EV articles, counted once)",
+      "url": "https://en.wikipedia.org/wiki/Chevrolet_Silverado",
+      "says": "5.3 L L82, 355 hp, 2019-2021"
+     },
+     {
+      "name": "GM Authority - GM L82 engine page (Wayback copy)",
+      "url": "https://web.archive.org/web/2025/https://gmauthority.com/blog/gm/gm-engines/l82/",
+      "says": "L82 2019-and-newer Chevrolet Silverado 1500, 355 hp, 6-speed"
+     },
+     {
+      "name": "Kelley Blue Book 2021 Silverado 1500 review/specs",
+      "url": "https://www.kbb.com/chevrolet/silverado-1500-crew-cab/2021/",
+      "says": "5.3-liter V8 355 hp / 383 lb-ft, 6-, 8- or 10-speed depending on configuration"
+     },
+     {
+      "name": "EPA fueleconomy.gov vehicle data",
+      "url": "https://www.fueleconomy.gov/feg/download.shtml",
+      "says": "2021 Silverado: 5.3 L 8-cyl SIDI incl. 'Active Fuel Management' variant"
+     }
+    ],
+    "status": "three_sources_not_nhra",
+    "note": "From March 2021 the L82 with RPO YK9 was built without AFM (chip shortage), same 355 hp (GM 2021 spec)."
+   },
+   {
+    "gen": "t1",
+    "cid": 325,
+    "liters": 5.3,
+    "hp": 355,
+    "hp_basis": "SAE net (SAE J1349 certified)",
+    "rpo": "L84",
+    "name": "5.3L / 325 V8 (DFM)",
+    "common_name": "EcoTec3 5.3 V8 w/ Dynamic Fuel Management",
+    "trims": [
+     "LT, RST, LT Trail Boss, LTZ, High Country"
+    ],
+    "nhra": false,
+    "sources": [
+     {
+      "name": "GM/Chevrolet Pressroom 2021 Silverado 1500 specifications (media.chevrolet.com, Wayback copy)",
+      "url": "https://web.archive.org/web/20220817215107/https://media.chevrolet.com/media/us/en/chevrolet/vehicles/silverado/2021.tab1.html",
+      "says": "5.3L V-8 VVT DI with Dynamic Fuel Management (L84) 355 hp @5600"
+     },
+     {
+      "name": "Wikipedia - Chevrolet Silverado (with GM small-block / Silverado EV articles, counted once)",
+      "url": "https://en.wikipedia.org/wiki/Chevrolet_Silverado",
+      "says": "5.3 L L84 w/DFM, 355 hp, 2019-"
+     },
+     {
+      "name": "GM Authority - GM L84 engine page (Wayback copy)",
+      "url": "https://web.archive.org/web/2025/https://gmauthority.com/blog/gm/gm-engines/l84/",
+      "says": "L84 2019-and-newer Chevrolet Silverado 1500, 355 hp"
+     },
+     {
+      "name": "Kelley Blue Book 2021 Silverado 1500 review/specs",
+      "url": "https://www.kbb.com/chevrolet/silverado-1500-crew-cab/2021/",
+      "says": "355 horsepower @ 5,600 rpm (5.3L V8)"
+     },
+     {
+      "name": "EPA fueleconomy.gov vehicle data",
+      "url": "https://www.fueleconomy.gov/feg/download.shtml",
+      "says": "2021 Silverado: 5.3 L 8-cyl SIDI incl. FFV, Stop-Start, Cylinder Deactivation variants"
+     }
+    ],
+    "status": "three_sources_not_nhra",
+    "note": "From March 2021 the L84 with RPO YK9 was built without DFM (GM 2021 spec)."
+   },
+   {
+    "gen": "t1",
+    "cid": 376,
+    "liters": 6.2,
+    "hp": 420,
+    "hp_basis": "SAE net (SAE J1349 certified)",
+    "rpo": "L87",
+    "name": "6.2L / 376 V8 (DFM)",
+    "common_name": "EcoTec3 6.2 V8 w/ Dynamic Fuel Management",
+    "trims": [
+     "RST, LT Trail Boss, LTZ, High Country"
+    ],
+    "nhra": false,
+    "sources": [
+     {
+      "name": "GM/Chevrolet Pressroom 2021 Silverado 1500 specifications (media.chevrolet.com, Wayback copy)",
+      "url": "https://web.archive.org/web/20220817215107/https://media.chevrolet.com/media/us/en/chevrolet/vehicles/silverado/2021.tab1.html",
+      "says": "6.2L V-8 VVT DI with DFM and Stop/Start 420 hp @5600"
+     },
+     {
+      "name": "Kelley Blue Book 2021 Silverado 1500 review/specs",
+      "url": "https://www.kbb.com/chevrolet/silverado-1500-crew-cab/2021/",
+      "says": "6.2-liter V8 that doles out 420 horses and 460 lb-ft"
+     },
+     {
+      "name": "Wikipedia - Chevrolet Silverado (with GM small-block / Silverado EV articles, counted once)",
+      "url": "https://en.wikipedia.org/wiki/Chevrolet_Silverado",
+      "says": "6.2 L L87 w/DFM, 420 hp, 2019-"
+     },
+     {
+      "name": "GM Authority - GM L87 engine page (Wayback copy)",
+      "url": "https://web.archive.org/web/2025/https://gmauthority.com/blog/gm/gm-engines/l87/",
+      "says": "L87 2019-and-newer Chevrolet Silverado 1500, 420 hp, 10-speed"
+     },
+     {
+      "name": "EPA fueleconomy.gov vehicle data",
+      "url": "https://www.fueleconomy.gov/feg/download.shtml",
+      "says": "2021 Silverado: 6.2 L 8-cyl SIDI 4WD and 4WD TrailBoss"
+     }
+    ],
+    "status": "three_sources_not_nhra",
+    "note": "10-speed auto; EPA lists 4WD only."
+   },
+   {
+    "gen": "t1",
+    "cid": 183,
+    "liters": 3.0,
+    "hp": 277,
+    "hp_basis": "SAE net (SAE J1349 certified)",
+    "rpo": "LM2",
+    "name": "3.0L / 183 turbodiesel I6",
+    "common_name": "Duramax 3.0",
+    "trims": [
+     "LT, RST, LTZ, High Country, Trail Boss"
+    ],
+    "nhra": false,
+    "sources": [
+     {
+      "name": "GM/Chevrolet Pressroom 2021 Silverado 1500 specifications (media.chevrolet.com, Wayback copy)",
+      "url": "https://web.archive.org/web/20220817215107/https://media.chevrolet.com/media/us/en/chevrolet/vehicles/silverado/2021.tab1.html",
+      "says": "3.0L DOHC I-6 Turbo-Diesel 277 hp @3750 / 460 lb-ft (SAE certified)"
+     },
+     {
+      "name": "Kelley Blue Book 2021 Silverado 1500 review/specs",
+      "url": "https://www.kbb.com/chevrolet/silverado-1500-crew-cab/2021/",
+      "says": "277 horsepower @ 3,750 rpm (3.0L Duramax)"
+     },
+     {
+      "name": "Wikipedia - Chevrolet Silverado (with GM small-block / Silverado EV articles, counted once)",
+      "url": "https://en.wikipedia.org/wiki/Chevrolet_Silverado",
+      "says": "3.0 L LM2 Duramax I6, 277 hp @3750, 2020-2022"
+     },
+     {
+      "name": "GM Authority - GM LM2 engine page (Wayback copy)",
+      "url": "https://web.archive.org/web/2025/https://gmauthority.com/blog/gm/gm-engines/lm2/",
+      "says": "LM2 Silverado 1500 277 hp / 460 lb-ft, 10L80"
+     },
+     {
+      "name": "EPA fueleconomy.gov vehicle data",
+      "url": "https://www.fueleconomy.gov/feg/download.shtml",
+      "says": "2021 Silverado: 3.0 L 6-cyl turbo diesel 2WD and 4WD"
+     }
+    ],
+    "status": "three_sources_not_nhra",
+    "note": "10-speed auto."
+   }
+  ],
+  "2022": [
+   {
+    "gen": "t1",
+    "cid": 166,
+    "liters": 2.7,
+    "hp": 310,
+    "hp_basis": "SAE net (SAE J1349 certified)",
+    "rpo": "L3B",
+    "name": "2.7L / 166 turbo I4 (high output)",
+    "common_name": "2.7L Turbo High-Output",
+    "trims": [
+     "WT, Custom, LT, RST (refreshed 2022)",
+     "also 2022 Silverado 1500 Limited (old torque rating)"
+    ],
+    "nhra": false,
+    "sources": [
+     {
+      "name": "GM/Chevrolet Pressroom 2022 Silverado 1500 specifications (media.chevrolet.com, Wayback copy)",
+      "url": "https://web.archive.org/web/20220531205233/https://media.chevrolet.com/media/us/en/chevrolet/vehicles/silverado/2022.tab1.html",
+      "says": "2.7L I-4 Turbo 310 hp @5600 (GM est.), 430 lb-ft (GM est.)"
+     },
+     {
+      "name": "Kelley Blue Book 2022 Silverado 1500 review/specs",
+      "url": "https://www.kbb.com/chevrolet/silverado-1500-crew-cab/2022/",
+      "says": "310 horsepower @ 5,600 rpm"
+     },
+     {
+      "name": "Kelley Blue Book 2022 Silverado 1500 Limited review",
+      "url": "https://www.kbb.com/chevrolet/silverado-1500-limited-crew-cab/2022/",
+      "says": "2.7-liter turbo 4-cylinder 310 hp and 348 lb-ft"
+     },
+     {
+      "name": "Wikipedia - Chevrolet Silverado (with GM small-block / Silverado EV articles, counted once)",
+      "url": "https://en.wikipedia.org/wiki/Chevrolet_Silverado",
+      "says": "2.7 L L3B Turbocharged High Output I4, 310 hp, 420 lb-ft, 2022-"
+     },
+     {
+      "name": "GM Authority - GM L3B engine page (Wayback copy)",
+      "url": "https://web.archive.org/web/2025/https://gmauthority.com/blog/gm/gm-engines/l3b/",
+      "says": "2022 Chevrolet Silverado 1500 Limited 310/348; 2022-2024 Silverado 1500 310/430"
+     },
+     {
+      "name": "EPA fueleconomy.gov vehicle data",
+      "url": "https://www.fueleconomy.gov/feg/download.shtml",
+      "says": "2022 Silverado: 2.7 L 4-cyl turbo SIDI 2WD, 4WD, Mud Terrain Tires 4WD"
+     }
+    ],
+    "status": "three_sources_not_nhra",
+    "note": "Torque raised for the refreshed 2022: GM spec 430 lb-ft (GM est.), Wikipedia 420. The carryover 2022 Silverado 1500 Limited (LTD) kept 348 lb-ft. All sources give 310 hp."
+   },
+   {
+    "gen": "t1",
+    "cid": 325,
+    "liters": 5.3,
+    "hp": 355,
+    "hp_basis": "SAE net (SAE J1349 certified)",
+    "rpo": "L84",
+    "name": "5.3L / 325 V8 (DFM)",
+    "common_name": "EcoTec3 5.3 V8 w/ Dynamic Fuel Management",
+    "trims": [
+     "WT, Custom, LT, RST, Trail Boss, LTZ, High Country"
+    ],
+    "nhra": false,
+    "sources": [
+     {
+      "name": "GM/Chevrolet Pressroom 2022 Silverado 1500 specifications (media.chevrolet.com, Wayback copy)",
+      "url": "https://web.archive.org/web/20220531205233/https://media.chevrolet.com/media/us/en/chevrolet/vehicles/silverado/2022.tab1.html",
+      "says": "5.3L V-8 VVT DI with Dynamic Fuel Management 355 hp @5600 (SAE certified)"
+     },
+     {
+      "name": "Kelley Blue Book 2022 Silverado 1500 review/specs",
+      "url": "https://www.kbb.com/chevrolet/silverado-1500-crew-cab/2022/",
+      "says": "5.3-liter V8 355 hp / 383 lb-ft"
+     },
+     {
+      "name": "Wikipedia - Chevrolet Silverado (with GM small-block / Silverado EV articles, counted once)",
+      "url": "https://en.wikipedia.org/wiki/Chevrolet_Silverado",
+      "says": "5.3 L L84 w/DFM, 355 hp, 2019-"
+     },
+     {
+      "name": "GM Authority - GM L84 engine page (Wayback copy)",
+      "url": "https://web.archive.org/web/2025/https://gmauthority.com/blog/gm/gm-engines/l84/",
+      "says": "L84 2019-and-newer Silverado 1500, 355 hp"
+     },
+     {
+      "name": "EPA fueleconomy.gov vehicle data",
+      "url": "https://www.fueleconomy.gov/feg/download.shtml",
+      "says": "2022 Silverado: 5.3 L 8-cyl SIDI (FFV, Stop-Start, Sport Mode, Municipal variants)"
+     }
+    ],
+    "status": "three_sources_not_nhra",
+    "note": "The refreshed 2022 spec sheet lists only the DFM 5.3 (L84). The 2022 Limited (LTD) carried the 2021 line-up minus the 4.3 V6 (KBB Limited); an L82 in the LTD was not separately confirmed."
+   },
+   {
+    "gen": "t1",
+    "cid": 376,
+    "liters": 6.2,
+    "hp": 420,
+    "hp_basis": "SAE net (SAE J1349 certified)",
+    "rpo": "L87",
+    "name": "6.2L / 376 V8 (DFM)",
+    "common_name": "EcoTec3 6.2 V8 w/ Dynamic Fuel Management",
+    "trims": [
+     "RST, LT Trail Boss, LTZ, High Country",
+     "ZR2 (new for 2022)"
+    ],
+    "nhra": false,
+    "sources": [
+     {
+      "name": "GM/Chevrolet Pressroom 2022 Silverado 1500 specifications (media.chevrolet.com, Wayback copy)",
+      "url": "https://web.archive.org/web/20220531205233/https://media.chevrolet.com/media/us/en/chevrolet/vehicles/silverado/2022.tab1.html",
+      "says": "6.2L V-8 VVT DI with DFM 420 hp @5600 (SAE certified)"
+     },
+     {
+      "name": "Kelley Blue Book 2022 Silverado 1500 review/specs",
+      "url": "https://www.kbb.com/chevrolet/silverado-1500-crew-cab/2022/",
+      "says": "420 horsepower @ 5,600 rpm"
+     },
+     {
+      "name": "Wikipedia - Chevrolet Silverado (with GM small-block / Silverado EV articles, counted once)",
+      "url": "https://en.wikipedia.org/wiki/Chevrolet_Silverado",
+      "says": "6.2 L L87, 420 hp, 2019-"
+     },
+     {
+      "name": "GM Authority - GM L87 engine page (Wayback copy)",
+      "url": "https://web.archive.org/web/2025/https://gmauthority.com/blog/gm/gm-engines/l87/",
+      "says": "L87 2019-and-newer Silverado 1500, 420 hp"
+     },
+     {
+      "name": "EPA fueleconomy.gov vehicle data",
+      "url": "https://www.fueleconomy.gov/feg/download.shtml",
+      "says": "2022 Silverado: 6.2 L 8-cyl SIDI incl. 'Silverado 4WD ZR2'"
+     }
+    ],
+    "status": "three_sources_not_nhra",
+    "note": "ZR2 launched for 2022 with the 6.2 as its only engine (EPA 2022 ZR2 row is 6.2 only)."
+   },
+   {
+    "gen": "t1",
+    "cid": 183,
+    "liters": 3.0,
+    "hp": 277,
+    "hp_basis": "SAE net (SAE J1349 certified)",
+    "rpo": "LM2",
+    "name": "3.0L / 183 turbodiesel I6",
+    "common_name": "Duramax 3.0",
+    "trims": [
+     "Custom Trail Boss, LT, RST, LT Trail Boss, LTZ, High Country"
+    ],
+    "nhra": false,
+    "sources": [
+     {
+      "name": "GM/Chevrolet Pressroom 2022 Silverado 1500 specifications (media.chevrolet.com, Wayback copy)",
+      "url": "https://web.archive.org/web/20220531205233/https://media.chevrolet.com/media/us/en/chevrolet/vehicles/silverado/2022.tab1.html",
+      "says": "3.0L DOHC I-6 Turbo-Diesel 277 hp @3750 / 460 lb-ft (SAE certified)"
+     },
+     {
+      "name": "Kelley Blue Book 2022 Silverado 1500 review/specs",
+      "url": "https://www.kbb.com/chevrolet/silverado-1500-crew-cab/2022/",
+      "says": "277 horsepower @ 3,750 rpm"
+     },
+     {
+      "name": "Wikipedia - Chevrolet Silverado (with GM small-block / Silverado EV articles, counted once)",
+      "url": "https://en.wikipedia.org/wiki/Chevrolet_Silverado",
+      "says": "3.0 L LM2 Duramax, 277 hp, 2020-2022"
+     },
+     {
+      "name": "GM Authority - GM LM2 engine page (Wayback copy)",
+      "url": "https://web.archive.org/web/2025/https://gmauthority.com/blog/gm/gm-engines/lm2/",
+      "says": "LM2 2019-2022 Silverado 1500, 277 hp"
+     },
+     {
+      "name": "EPA fueleconomy.gov vehicle data",
+      "url": "https://www.fueleconomy.gov/feg/download.shtml",
+      "says": "2022 Silverado: 3.0 L 6-cyl turbo diesel 2WD/4WD"
+     }
+    ],
+    "status": "three_sources_not_nhra",
+    "note": "Final LM2 year; also in the 2022 Limited (KBB Limited 277 hp)."
+   }
+  ],
+  "2023": [
+   {
+    "gen": "t1",
+    "cid": 166,
+    "liters": 2.7,
+    "hp": 310,
+    "hp_basis": "SAE net (SAE J1349 certified)",
+    "rpo": "L3B",
+    "name": "2.7L / 166 turbo I4 (high output)",
+    "common_name": "2.7L Turbo High-Output",
+    "trims": [
+     "WT, Custom, Custom Trail Boss, LT, RST, LT Trail Boss"
+    ],
+    "nhra": false,
+    "sources": [
+     {
+      "name": "GM/Chevrolet Pressroom 2023 Silverado 1500 specifications (media.chevrolet.com, Wayback copy)",
+      "url": "https://web.archive.org/web/20230520032147/https://media.chevrolet.com/media/us/en/chevrolet/vehicles/silverado/2023.tab1.html",
+      "says": "2.7L Turbo DOHC 310 hp @5600 (SAE certified); torque printed as 348 lb-ft"
+     },
+     {
+      "name": "Kelley Blue Book 2023 Silverado 1500 review/specs",
+      "url": "https://www.kbb.com/chevrolet/silverado-1500-crew-cab/2023/",
+      "says": "turbocharged 2.7-liter 4-cylinder 310 hp and 420 lb-ft"
+     },
+     {
+      "name": "Wikipedia - Chevrolet Silverado (with GM small-block / Silverado EV articles, counted once)",
+      "url": "https://en.wikipedia.org/wiki/Chevrolet_Silverado",
+      "says": "2.7 L L3B Turbocharged High Output I4, 310 hp, 2022-"
+     },
+     {
+      "name": "EPA fueleconomy.gov vehicle data",
+      "url": "https://www.fueleconomy.gov/feg/download.shtml",
+      "says": "2023 Silverado: 2.7 L 4-cyl turbo SIDI 2WD/4WD"
+     },
+     {
+      "name": "GM Authority - GM L3B engine page (Wayback copy)",
+      "url": "https://web.archive.org/web/2025/https://gmauthority.com/blog/gm/gm-engines/l3b/",
+      "says": "L3B 2022-2024 Chevrolet Silverado 1500, 310 hp / 430 lb-ft; TurboMax name announced March 2023 for 2024"
+     }
+    ],
+    "status": "three_sources_not_nhra",
+    "note": "GM's 2023 spec sheet prints the old 348 lb-ft figure (apparent carry-over error); KBB 420, GM 2022/2024 430. HP agrees."
+   },
+   {
+    "gen": "t1",
+    "cid": 325,
+    "liters": 5.3,
+    "hp": 355,
+    "hp_basis": "SAE net (SAE J1349 certified)",
+    "rpo": "L84",
+    "name": "5.3L / 325 V8 (DFM)",
+    "common_name": "EcoTec3 5.3 V8 w/ Dynamic Fuel Management",
+    "trims": [
+     "standard LTZ, High Country; optional WT, Custom Trail Boss, LT, RST, LT Trail Boss"
+    ],
+    "nhra": false,
+    "sources": [
+     {
+      "name": "GM/Chevrolet Pressroom 2023 Silverado 1500 specifications (media.chevrolet.com, Wayback copy)",
+      "url": "https://web.archive.org/web/20230520032147/https://media.chevrolet.com/media/us/en/chevrolet/vehicles/silverado/2023.tab1.html",
+      "says": "5.3L V-8 (EcoTec3) with Dynamic Fuel Management, 355 horsepower, 383 lb-ft"
+     },
+     {
+      "name": "Kelley Blue Book 2023 Silverado 1500 review/specs",
+      "url": "https://www.kbb.com/chevrolet/silverado-1500-crew-cab/2023/",
+      "says": "5.3-liter V8 355 hp and 383 lb-ft"
+     },
+     {
+      "name": "Wikipedia - Chevrolet Silverado (with GM small-block / Silverado EV articles, counted once)",
+      "url": "https://en.wikipedia.org/wiki/Chevrolet_Silverado",
+      "says": "5.3 L L84 w/DFM, 355 hp, 2019-"
+     },
+     {
+      "name": "EPA fueleconomy.gov vehicle data",
+      "url": "https://www.fueleconomy.gov/feg/download.shtml",
+      "says": "2023 Silverado: 5.3 L 8-cyl SIDI (FFV, Municipal, Sport Mode variants)"
+     },
+     {
+      "name": "GM Authority - GM L84 engine page (Wayback copy)",
+      "url": "https://web.archive.org/web/2025/https://gmauthority.com/blog/gm/gm-engines/l84/",
+      "says": "L84 2019-and-newer Silverado 1500, 355 hp"
+     }
+    ],
+    "status": "three_sources_not_nhra",
+    "note": "10-speed auto."
+   },
+   {
+    "gen": "t1",
+    "cid": 376,
+    "liters": 6.2,
+    "hp": 420,
+    "hp_basis": "SAE net (SAE J1349 certified)",
+    "rpo": "L87",
+    "name": "6.2L / 376 V8 (DFM)",
+    "common_name": "EcoTec3 6.2 V8 w/ Dynamic Fuel Management",
+    "trims": [
+     "RST (4x4), LT Trail Boss, LTZ (4x4), High Country (4x4), ZR2"
+    ],
+    "nhra": false,
+    "sources": [
+     {
+      "name": "GM/Chevrolet Pressroom 2023 Silverado 1500 specifications (media.chevrolet.com, Wayback copy)",
+      "url": "https://web.archive.org/web/20230520032147/https://media.chevrolet.com/media/us/en/chevrolet/vehicles/silverado/2023.tab1.html",
+      "says": "6.2L V-8 with Dynamic Fuel Management, 420 horsepower, 460 lb-ft"
+     },
+     {
+      "name": "Kelley Blue Book 2023 Silverado 1500 review/specs",
+      "url": "https://www.kbb.com/chevrolet/silverado-1500-crew-cab/2023/",
+      "says": "6.2-liter V8 420 hp / 460 lb-ft; RST, LT Trail Boss, LTZ, High Country, ZR2"
+     },
+     {
+      "name": "Wikipedia - Chevrolet Silverado (with GM small-block / Silverado EV articles, counted once)",
+      "url": "https://en.wikipedia.org/wiki/Chevrolet_Silverado",
+      "says": "6.2 L L87 w/DFM, 420 hp, 2019-"
+     },
+     {
+      "name": "EPA fueleconomy.gov vehicle data",
+      "url": "https://www.fueleconomy.gov/feg/download.shtml",
+      "says": "2023 Silverado: 6.2 L 8-cyl SIDI 4WD"
+     },
+     {
+      "name": "GM Authority - GM L87 engine page (Wayback copy)",
+      "url": "https://web.archive.org/web/2025/https://gmauthority.com/blog/gm/gm-engines/l87/",
+      "says": "L87 2019-and-newer Silverado 1500, 420 hp"
+     }
+    ],
+    "status": "three_sources_not_nhra",
+    "note": "Standard in ZR2 (KBB 2023)."
+   },
+   {
+    "gen": "t1",
+    "cid": 183,
+    "liters": 3.0,
+    "hp": 305,
+    "hp_basis": "SAE net (SAE J1349 certified)",
+    "rpo": "LZ0",
+    "name": "3.0L / 183 turbodiesel I6",
+    "common_name": "Duramax 3.0 (second generation)",
+    "trims": [
+     "Custom Trail Boss, LT, RST, LT Trail Boss, LTZ, High Country"
+    ],
+    "nhra": false,
+    "sources": [
+     {
+      "name": "GM/Chevrolet Pressroom 2023 Silverado 1500 specifications (media.chevrolet.com, Wayback copy)",
+      "url": "https://web.archive.org/web/20230520032147/https://media.chevrolet.com/media/us/en/chevrolet/vehicles/silverado/2023.tab1.html",
+      "says": "3.0L DOHC I-6 Turbo-Diesel 305 hp @3750 / 495 lb-ft (GM est.)"
+     },
+     {
+      "name": "Wikipedia - Chevrolet Silverado (with GM small-block / Silverado EV articles, counted once)",
+      "url": "https://en.wikipedia.org/wiki/Chevrolet_Silverado",
+      "says": "3.0 L LZ0 Duramax I6, 305 hp, 495 lb-ft, 2023-"
+     },
+     {
+      "name": "GM Authority - GM LZ0 engine page (Wayback copy)",
+      "url": "https://web.archive.org/web/2025/https://gmauthority.com/blog/gm/gm-engines/lz0/",
+      "says": "LZ0 arrived for the 2023 Silverado 1500; applications 2023-present Silverado 1500, 305 hp / 495 lb-ft"
+     },
+     {
+      "name": "EPA fueleconomy.gov vehicle data",
+      "url": "https://www.fueleconomy.gov/feg/download.shtml",
+      "says": "2023 Silverado: 3.0 L 6-cyl turbo diesel 2WD/4WD"
+     },
+     {
+      "name": "Kelley Blue Book 2023 Silverado 1500 review/specs",
+      "url": "https://www.kbb.com/chevrolet/silverado-1500-crew-cab/2023/",
+      "says": "spec table lists 277 horsepower @ 3,750 rpm (old LM2 figure)"
+     }
+    ],
+    "status": "three_sources_not_nhra",
+    "note": "KBB's 2023 spec table still shows 277 hp (LM2); GM, Wikipedia and GM Authority give the 305 hp LZ0 for 2023."
+   }
+  ],
+  "2024": [
+   {
+    "gen": "t1",
+    "cid": 166,
+    "liters": 2.7,
+    "hp": 310,
+    "hp_basis": "SAE net (SAE J1349 certified)",
+    "rpo": "L3B",
+    "name": "2.7L / 166 turbo I4 (high output)",
+    "common_name": "TurboMax",
+    "trims": [
+     "WT, Custom, Custom Trail Boss, LT, RST, LT Trail Boss"
+    ],
+    "nhra": false,
+    "sources": [
+     {
+      "name": "GM/Chevrolet Pressroom 2024 Silverado 1500 specifications (media.chevrolet.com, Wayback copy)",
+      "url": "https://web.archive.org/web/20240523161520/https://media.chevrolet.com/media/us/en/chevrolet/vehicles/silverado/2024.tab1.html",
+      "says": "2.7L Turbo 310 hp @5600, 430 lb-ft (SAE certified)"
+     },
+     {
+      "name": "Kelley Blue Book 2024 Silverado 1500 review/specs",
+      "url": "https://www.kbb.com/chevrolet/silverado-1500-crew-cab/2024/",
+      "says": "turbocharged 4-cylinder 310 hp, 430 lb-ft"
+     },
+     {
+      "name": "Wikipedia - Chevrolet Silverado (with GM small-block / Silverado EV articles, counted once)",
+      "url": "https://en.wikipedia.org/wiki/Chevrolet_Silverado",
+      "says": "2.7 L L3B Turbocharged High Output I4, 310 hp, 2022-"
+     },
+     {
+      "name": "EPA fueleconomy.gov vehicle data",
+      "url": "https://www.fueleconomy.gov/feg/download.shtml",
+      "says": "2024 Silverado: 2.7 L 4-cyl turbo SIDI 2WD/4WD"
+     },
+     {
+      "name": "GM Authority - GM L3B engine page (Wayback copy)",
+      "url": "https://web.archive.org/web/2025/https://gmauthority.com/blog/gm/gm-engines/l3b/",
+      "says": "L3B 2022-2024 Chevrolet Silverado 1500, 310 hp / 430 lb-ft; TurboMax name announced March 2023 for 2024"
+     }
+    ],
+    "status": "three_sources_not_nhra",
+    "note": "Named 'TurboMax' from 2024 (GM Authority)."
+   },
+   {
+    "gen": "t1",
+    "cid": 325,
+    "liters": 5.3,
+    "hp": 355,
+    "hp_basis": "SAE net (SAE J1349 certified)",
+    "rpo": "L84",
+    "name": "5.3L / 325 V8 (DFM)",
+    "common_name": "EcoTec3 5.3 V8 w/ Dynamic Fuel Management",
+    "trims": [
+     "standard LTZ, High Country; optional WT, Custom Trail Boss, LT, RST, LT Trail Boss"
+    ],
+    "nhra": false,
+    "sources": [
+     {
+      "name": "GM/Chevrolet Pressroom 2024 Silverado 1500 specifications (media.chevrolet.com, Wayback copy)",
+      "url": "https://web.archive.org/web/20240523161520/https://media.chevrolet.com/media/us/en/chevrolet/vehicles/silverado/2024.tab1.html",
+      "says": "5.3L V-8 (EcoTec3) with Dynamic Fuel Management, 355 horsepower, 383 lb-ft"
+     },
+     {
+      "name": "Kelley Blue Book 2024 Silverado 1500 review/specs",
+      "url": "https://www.kbb.com/chevrolet/silverado-1500-crew-cab/2024/",
+      "says": "5.3-liter V8 355 hp and 383 lb-ft"
+     },
+     {
+      "name": "Wikipedia - Chevrolet Silverado (with GM small-block / Silverado EV articles, counted once)",
+      "url": "https://en.wikipedia.org/wiki/Chevrolet_Silverado",
+      "says": "5.3 L L84 w/DFM, 355 hp, 2019-"
+     },
+     {
+      "name": "EPA fueleconomy.gov vehicle data",
+      "url": "https://www.fueleconomy.gov/feg/download.shtml",
+      "says": "2024 Silverado: 5.3 L 8-cyl SIDI (FFV, Municipal, Sport Mode variants)"
+     },
+     {
+      "name": "GM Authority - GM L84 engine page (Wayback copy)",
+      "url": "https://web.archive.org/web/2025/https://gmauthority.com/blog/gm/gm-engines/l84/",
+      "says": "L84 2019-and-newer Silverado 1500, 355 hp"
+     }
+    ],
+    "status": "three_sources_not_nhra",
+    "note": "10-speed auto."
+   },
+   {
+    "gen": "t1",
+    "cid": 376,
+    "liters": 6.2,
+    "hp": 420,
+    "hp_basis": "SAE net (SAE J1349 certified)",
+    "rpo": "L87",
+    "name": "6.2L / 376 V8 (DFM)",
+    "common_name": "EcoTec3 6.2 V8 w/ Dynamic Fuel Management",
+    "trims": [
+     "RST (4x4), LT Trail Boss, LTZ (4x4), High Country (4x4), ZR2"
+    ],
+    "nhra": false,
+    "sources": [
+     {
+      "name": "GM/Chevrolet Pressroom 2024 Silverado 1500 specifications (media.chevrolet.com, Wayback copy)",
+      "url": "https://web.archive.org/web/20240523161520/https://media.chevrolet.com/media/us/en/chevrolet/vehicles/silverado/2024.tab1.html",
+      "says": "6.2L V-8 with Dynamic Fuel Management, 420 horsepower, 460 lb-ft"
+     },
+     {
+      "name": "Kelley Blue Book 2024 Silverado 1500 review/specs",
+      "url": "https://www.kbb.com/chevrolet/silverado-1500-crew-cab/2024/",
+      "says": "6.2-liter V8 420 hp / 460 lb-ft; RST, LT Trail Boss, LTZ, High Country, ZR2"
+     },
+     {
+      "name": "Wikipedia - Chevrolet Silverado (with GM small-block / Silverado EV articles, counted once)",
+      "url": "https://en.wikipedia.org/wiki/Chevrolet_Silverado",
+      "says": "6.2 L L87 w/DFM, 420 hp, 2019-"
+     },
+     {
+      "name": "EPA fueleconomy.gov vehicle data",
+      "url": "https://www.fueleconomy.gov/feg/download.shtml",
+      "says": "2024 Silverado: 6.2 L 8-cyl SIDI 4WD incl. 'Silverado 4WD ZR2'"
+     },
+     {
+      "name": "GM Authority - GM L87 engine page (Wayback copy)",
+      "url": "https://web.archive.org/web/2025/https://gmauthority.com/blog/gm/gm-engines/l87/",
+      "says": "L87 2019-and-newer Silverado 1500, 420 hp"
+     }
+    ],
+    "status": "three_sources_not_nhra",
+    "note": "ZR2 also offered with the 3.0 diesel from 2024."
+   },
+   {
+    "gen": "t1",
+    "cid": 183,
+    "liters": 3.0,
+    "hp": 305,
+    "hp_basis": "SAE net (SAE J1349 certified)",
+    "rpo": "LZ0",
+    "name": "3.0L / 183 turbodiesel I6",
+    "common_name": "Duramax 3.0 (second generation)",
+    "trims": [
+     "Custom Trail Boss, LT, RST, LT Trail Boss, LTZ, High Country",
+     "ZR2 (from 2024)"
+    ],
+    "nhra": false,
+    "sources": [
+     {
+      "name": "GM/Chevrolet Pressroom 2024 Silverado 1500 specifications (media.chevrolet.com, Wayback copy)",
+      "url": "https://web.archive.org/web/20240523161520/https://media.chevrolet.com/media/us/en/chevrolet/vehicles/silverado/2024.tab1.html",
+      "says": "3.0L DOHC I-6 Turbo-Diesel 305 hp @3750 / 495 lb-ft (GM est.)"
+     },
+     {
+      "name": "Wikipedia - Chevrolet Silverado (with GM small-block / Silverado EV articles, counted once)",
+      "url": "https://en.wikipedia.org/wiki/Chevrolet_Silverado",
+      "says": "3.0 L LZ0 Duramax I6, 305 hp, 495 lb-ft, 2023-"
+     },
+     {
+      "name": "GM Authority - GM LZ0 engine page (Wayback copy)",
+      "url": "https://web.archive.org/web/2025/https://gmauthority.com/blog/gm/gm-engines/lz0/",
+      "says": "LZ0 arrived for the 2023 Silverado 1500; applications 2023-present Silverado 1500, 305 hp / 495 lb-ft"
+     },
+     {
+      "name": "EPA fueleconomy.gov vehicle data",
+      "url": "https://www.fueleconomy.gov/feg/download.shtml",
+      "says": "2024 Silverado: 3.0 L 6-cyl turbo diesel 2WD/4WD incl. 'Silverado 4WD ZR2'"
+     },
+     {
+      "name": "Kelley Blue Book 2024 Silverado 1500 review/specs",
+      "url": "https://www.kbb.com/chevrolet/silverado-1500-crew-cab/2024/",
+      "says": "3.0-liter turbodiesel 305 hp, 495 lb-ft"
+     }
+    ],
+    "status": "three_sources_not_nhra",
+    "note": "Diesel added to ZR2 for 2024."
+   },
+   {
+    "gen": "ev",
+    "cid": null,
+    "liters": null,
+    "hp": 754,
+    "hp_basis": "combined motor output, manufacturer (max with Wide Open Watts)",
+    "rpo": "Ultium dual-motor e4WD",
+    "name": "Electric dual-motor (Ultium)",
+    "common_name": "Silverado EV",
+    "trims": [
+     "WT (510 hp)",
+     "RST First Edition (754 hp with Wide Open Watts)"
+    ],
+    "nhra": false,
+    "sources": [
+     {
+      "name": "Chevrolet Newsroom - The pickup reimagined: 2024 all-electric Chevrolet Silverado (May 13, 2024)",
+      "url": "https://news.chevrolet.com/newsroom.detail.html/Pages/news/us/en/2024/may/0513-silveradoev.html",
+      "says": "Up to 754 hp with more than 785 lb-ft in Wide Open Watts mode on First Edition RST; WT 510 hp and 615 lb-ft"
+     },
+     {
+      "name": "Kelley Blue Book 2024 Silverado EV review",
+      "url": "https://www.kbb.com/chevrolet/silverado-ev/2024/",
+      "says": "RST makes a maximum of 754 horsepower and 785 lb-ft in Wide Open Watts mode"
+     },
+     {
+      "name": "Wikipedia - Chevrolet Silverado EV",
+      "url": "https://en.wikipedia.org/wiki/Chevrolet_Silverado_EV",
+      "says": "WT 510 hp / 615 lb-ft; RST and RST First Edition 664 hp / 780 lb-ft"
+     },
+     {
+      "name": "EPA fueleconomy.gov vehicle data",
+      "url": "https://www.fueleconomy.gov/feg/download.shtml",
+      "says": "2024 Silverado: 'Silverado EV' electric row"
+     }
+    ],
+    "status": "three_sources_not_nhra",
+    "note": "Rating rose before RST deliveries: launch estimate 664 hp / 780 lb-ft (Wikipedia, Motor1); final GM figure 754 hp / 785 lb-ft. WT 510 hp. Fleet WT production began in 2023 at Factory Zero as a 2024 model.",
+    "electric": true
+   }
+  ],
+  "2025": [
+   {
+    "gen": "t1",
+    "cid": 166,
+    "liters": 2.7,
+    "hp": 310,
+    "hp_basis": "SAE net (SAE J1349 certified)",
+    "rpo": "L3B",
+    "name": "2.7L / 166 turbo I4 (high output)",
+    "common_name": "TurboMax",
+    "trims": [
+     "WT, Custom, Custom Trail Boss, LT, RST, LT Trail Boss"
+    ],
+    "nhra": false,
+    "sources": [
+     {
+      "name": "Chevrolet.com 2025 Silverado 1500 (commercial previous-year page, accessed 2026-10-12)",
+      "url": "https://www.chevrolet.com/commercial/previous-year/silverado/1500",
+      "says": "TurboMax: 310 horsepower, best-in-class standard 430 lb-ft; 8-speed"
+     },
+     {
+      "name": "Kelley Blue Book 2025 Silverado 1500 review/specs",
+      "url": "https://www.kbb.com/chevrolet/silverado-1500-crew-cab/2025/",
+      "says": "2.7-liter turbocharged 4-cylinder 310 hp and 430 lb-ft"
+     },
+     {
+      "name": "Wikipedia - Chevrolet Silverado (with GM small-block / Silverado EV articles, counted once)",
+      "url": "https://en.wikipedia.org/wiki/Chevrolet_Silverado",
+      "says": "2.7 L L3B Turbocharged High Output I4, 310 hp, 2022-"
+     },
+     {
+      "name": "EPA fueleconomy.gov vehicle data",
+      "url": "https://www.fueleconomy.gov/feg/download.shtml",
+      "says": "2025 Silverado: 2.7 L 4-cyl turbo SIDI 2WD/4WD"
+     }
+    ],
+    "status": "three_sources_not_nhra",
+    "note": "8-speed auto."
+   },
+   {
+    "gen": "t1",
+    "cid": 325,
+    "liters": 5.3,
+    "hp": 355,
+    "hp_basis": "SAE net (SAE J1349 certified)",
+    "rpo": "L84",
+    "name": "5.3L / 325 V8 (DFM)",
+    "common_name": "EcoTec3 5.3 V8 w/ Dynamic Fuel Management",
+    "trims": [
+     "standard LTZ, High Country; optional WT, Custom Trail Boss, LT, RST, LT Trail Boss"
+    ],
+    "nhra": false,
+    "sources": [
+     {
+      "name": "Chevrolet.com 2025 Silverado 1500 (commercial previous-year page, accessed 2026-10-12)",
+      "url": "https://www.chevrolet.com/commercial/previous-year/silverado/1500",
+      "says": "5.3L V-8 (EcoTec3) with Dynamic Fuel Management, 355 horsepower, 383 lb-ft"
+     },
+     {
+      "name": "Kelley Blue Book 2025 Silverado 1500 review/specs",
+      "url": "https://www.kbb.com/chevrolet/silverado-1500-crew-cab/2025/",
+      "says": "5.3-liter V8 355 hp and 383 lb-ft"
+     },
+     {
+      "name": "Wikipedia - Chevrolet Silverado (with GM small-block / Silverado EV articles, counted once)",
+      "url": "https://en.wikipedia.org/wiki/Chevrolet_Silverado",
+      "says": "5.3 L L84 w/DFM, 355 hp, 2019-"
+     },
+     {
+      "name": "EPA fueleconomy.gov vehicle data",
+      "url": "https://www.fueleconomy.gov/feg/download.shtml",
+      "says": "2025 Silverado: 5.3 L 8-cyl SIDI (FFV, Municipal, Sport Mode variants)"
+     },
+     {
+      "name": "GM Authority - GM L84 engine page (Wayback copy)",
+      "url": "https://web.archive.org/web/2025/https://gmauthority.com/blog/gm/gm-engines/l84/",
+      "says": "L84 2019-and-newer Silverado 1500, 355 hp"
+     }
+    ],
+    "status": "three_sources_not_nhra",
+    "note": "10-speed auto."
+   },
+   {
+    "gen": "t1",
+    "cid": 376,
+    "liters": 6.2,
+    "hp": 420,
+    "hp_basis": "SAE net (SAE J1349 certified)",
+    "rpo": "L87",
+    "name": "6.2L / 376 V8 (DFM)",
+    "common_name": "EcoTec3 6.2 V8 w/ Dynamic Fuel Management",
+    "trims": [
+     "RST (4x4), LT Trail Boss, LTZ (4x4), High Country (4x4), ZR2"
+    ],
+    "nhra": false,
+    "sources": [
+     {
+      "name": "Chevrolet.com 2025 Silverado 1500 (commercial previous-year page, accessed 2026-10-12)",
+      "url": "https://www.chevrolet.com/commercial/previous-year/silverado/1500",
+      "says": "6.2L V-8 with Dynamic Fuel Management, 420 horsepower, 460 lb-ft"
+     },
+     {
+      "name": "Kelley Blue Book 2025 Silverado 1500 review/specs",
+      "url": "https://www.kbb.com/chevrolet/silverado-1500-crew-cab/2025/",
+      "says": "6.2-liter V8 420 hp / 460 lb-ft; RST, LT Trail Boss, LTZ, High Country, ZR2"
+     },
+     {
+      "name": "Wikipedia - Chevrolet Silverado (with GM small-block / Silverado EV articles, counted once)",
+      "url": "https://en.wikipedia.org/wiki/Chevrolet_Silverado",
+      "says": "6.2 L L87 w/DFM, 420 hp, 2019-"
+     },
+     {
+      "name": "EPA fueleconomy.gov vehicle data",
+      "url": "https://www.fueleconomy.gov/feg/download.shtml",
+      "says": "2025 Silverado: 6.2 L 8-cyl SIDI 4WD incl. 'Silverado 4WD ZR2'"
+     },
+     {
+      "name": "GM Authority - GM L87 engine page (Wayback copy)",
+      "url": "https://web.archive.org/web/2025/https://gmauthority.com/blog/gm/gm-engines/l87/",
+      "says": "L87 2019-and-newer Silverado 1500, 420 hp"
+     }
+    ],
+    "status": "three_sources_not_nhra",
+    "note": "Chevrolet.com 2025 lists the diesel as 'standard on ZR2' and the 6.2 as 'available on ZR2'."
+   },
+   {
+    "gen": "t1",
+    "cid": 183,
+    "liters": 3.0,
+    "hp": 305,
+    "hp_basis": "SAE net (SAE J1349 certified)",
+    "rpo": "LZ0",
+    "name": "3.0L / 183 turbodiesel I6",
+    "common_name": "Duramax 3.0 (second generation)",
+    "trims": [
+     "Custom Trail Boss, LT, RST, LT Trail Boss, LTZ, High Country",
+     "ZR2 (from 2024)"
+    ],
+    "nhra": false,
+    "sources": [
+     {
+      "name": "Chevrolet.com 2025 Silverado 1500 (commercial previous-year page, accessed 2026-10-12)",
+      "url": "https://www.chevrolet.com/commercial/previous-year/silverado/1500",
+      "says": "Duramax 3.0L Turbo-Diesel: 305 horsepower, 495 lb-ft, 10-speed"
+     },
+     {
+      "name": "Wikipedia - Chevrolet Silverado (with GM small-block / Silverado EV articles, counted once)",
+      "url": "https://en.wikipedia.org/wiki/Chevrolet_Silverado",
+      "says": "3.0 L LZ0 Duramax I6, 305 hp, 495 lb-ft, 2023-"
+     },
+     {
+      "name": "GM Authority - GM LZ0 engine page (Wayback copy)",
+      "url": "https://web.archive.org/web/2025/https://gmauthority.com/blog/gm/gm-engines/lz0/",
+      "says": "LZ0 arrived for the 2023 Silverado 1500; applications 2023-present Silverado 1500, 305 hp / 495 lb-ft"
+     },
+     {
+      "name": "EPA fueleconomy.gov vehicle data",
+      "url": "https://www.fueleconomy.gov/feg/download.shtml",
+      "says": "2025 Silverado: 3.0 L 6-cyl turbo diesel 2WD/4WD incl. 'Silverado 4WD ZR2'"
+     },
+     {
+      "name": "Kelley Blue Book 2025 Silverado 1500 review/specs",
+      "url": "https://www.kbb.com/chevrolet/silverado-1500-crew-cab/2025/",
+      "says": "3.0-liter turbodiesel 305 hp, 495 lb-ft"
+     },
+     {
+      "name": "The Daily Herald (Everett) - 2025 Chevy Silverado 1500 Turbo-Diesel Delivers 25 MPG (Larry Lark)",
+      "url": "https://www.heraldnet.com/2025/03/12/2025-chevy-silverado-1500-turbo-diesel-delivers-25-mpg/",
+      "says": "Duramax 3.0-liter turbo-diesel inline six, 305 horsepower and 495 lb-ft"
+     }
+    ],
+    "status": "three_sources_not_nhra",
+    "note": "10-speed auto."
+   },
+   {
+    "gen": "ev",
+    "cid": null,
+    "liters": null,
+    "hp": 760,
+    "hp_basis": "combined motor output, manufacturer (max with Wide Open Watts)",
+    "rpo": "Ultium dual-motor e4WD",
+    "name": "Electric dual-motor (Ultium)",
+    "common_name": "Silverado EV",
+    "trims": [
+     "WT",
+     "LT (645 hp)",
+     "RST (645-760 hp; 760 with Max Range + Wide Open Watts)"
+    ],
+    "nhra": false,
+    "sources": [
+     {
+      "name": "Chevrolet.com 2025 Silverado EV (previous-year page, accessed 2026-10-12)",
+      "url": "https://www.chevrolet.com/electric/previous-year/silverado-ev",
+      "says": "760 max available horsepower with Wide Open Watts; up to 785 lb-ft"
+     },
+     {
+      "name": "Kelley Blue Book 2025 Silverado EV review",
+      "url": "https://www.kbb.com/chevrolet/silverado-ev/2025/",
+      "says": "645 hp / 765 lb-ft (LT) or 645-760 hp and 785 lb-ft (RST)"
+     },
+     {
+      "name": "EPA fueleconomy.gov vehicle data",
+      "url": "https://www.fueleconomy.gov/feg/download.shtml",
+      "says": "2025 Silverado: Silverado EV electric rows incl. 2WT, 5WT, 8WT"
+     }
+    ],
+    "status": "three_sources_not_nhra",
+    "note": "Exactly 3 sources (all agree on 760 max); Wikipedia gives no 2025 rating.",
+    "electric": true
+   }
+  ],
+  "2026": [
+   {
+    "gen": "t1",
+    "cid": 166,
+    "liters": 2.7,
+    "hp": 310,
+    "hp_basis": "SAE net (SAE J1349 certified)",
+    "rpo": "L3B",
+    "name": "2.7L / 166 turbo I4 (high output)",
+    "common_name": "TurboMax",
+    "trims": [
+     "WT, Custom, Custom Trail Boss, LT, RST, LT Trail Boss"
+    ],
+    "nhra": false,
+    "sources": [
+     {
+      "name": "Chevrolet.com 2026 Silverado 1500 (previous-year page, accessed 2026-10-12)",
+      "url": "https://www.chevrolet.com/trucks/previous-year/silverado/1500",
+      "says": "TurboMax engine, 310 horsepower, 430 lb-ft"
+     },
+     {
+      "name": "Kelley Blue Book 2026 Silverado 1500 review/specs",
+      "url": "https://www.kbb.com/chevrolet/silverado-1500-crew-cab/2026/",
+      "says": "2.7-liter turbocharged 4-cylinder 310 horsepower and 430 lb-ft"
+     },
+     {
+      "name": "Wikipedia - Chevrolet Silverado (with GM small-block / Silverado EV articles, counted once)",
+      "url": "https://en.wikipedia.org/wiki/Chevrolet_Silverado",
+      "says": "2.7 L L3B Turbocharged High Output I4, 310 hp, 2022-"
+     },
+     {
+      "name": "EPA fueleconomy.gov vehicle data",
+      "url": "https://www.fueleconomy.gov/feg/download.shtml",
+      "says": "2026 Silverado: 2.7 L 4-cyl turbo SIDI 2WD/4WD"
+     }
+    ],
+    "status": "three_sources_not_nhra",
+    "note": "8-speed auto."
+   },
+   {
+    "gen": "t1",
+    "cid": 325,
+    "liters": 5.3,
+    "hp": 355,
+    "hp_basis": "SAE net (SAE J1349 certified)",
+    "rpo": "L84",
+    "name": "5.3L / 325 V8 (DFM)",
+    "common_name": "EcoTec3 5.3 V8 w/ Dynamic Fuel Management",
+    "trims": [
+     "standard LTZ, High Country; optional WT, Custom Trail Boss, LT, RST, LT Trail Boss"
+    ],
+    "nhra": false,
+    "sources": [
+     {
+      "name": "Chevrolet.com 2026 Silverado 1500 (previous-year page, accessed 2026-10-12)",
+      "url": "https://www.chevrolet.com/trucks/previous-year/silverado/1500",
+      "says": "5.3L V-8 (EcoTec3) with Dynamic Fuel Management, 355 horsepower, 383 lb-ft"
+     },
+     {
+      "name": "Kelley Blue Book 2026 Silverado 1500 review/specs",
+      "url": "https://www.kbb.com/chevrolet/silverado-1500-crew-cab/2026/",
+      "says": "5.3-liter V8 355 hp and 383 lb-ft"
+     },
+     {
+      "name": "Wikipedia - Chevrolet Silverado (with GM small-block / Silverado EV articles, counted once)",
+      "url": "https://en.wikipedia.org/wiki/Chevrolet_Silverado",
+      "says": "5.3 L L84 w/DFM, 355 hp, 2019-"
+     },
+     {
+      "name": "EPA fueleconomy.gov vehicle data",
+      "url": "https://www.fueleconomy.gov/feg/download.shtml",
+      "says": "2026 Silverado: 5.3 L 8-cyl SIDI (FFV, Municipal, Sport Mode variants)"
+     }
+    ],
+    "status": "three_sources_not_nhra",
+    "note": "10-speed auto."
+   },
+   {
+    "gen": "t1",
+    "cid": 376,
+    "liters": 6.2,
+    "hp": 420,
+    "hp_basis": "SAE net (SAE J1349 certified)",
+    "rpo": "L87",
+    "name": "6.2L / 376 V8 (DFM)",
+    "common_name": "EcoTec3 6.2 V8 w/ Dynamic Fuel Management",
+    "trims": [
+     "RST (4x4), LT Trail Boss, LTZ (4x4), High Country (4x4), ZR2"
+    ],
+    "nhra": false,
+    "sources": [
+     {
+      "name": "Chevrolet.com 2026 Silverado 1500 (previous-year page, accessed 2026-10-12)",
+      "url": "https://www.chevrolet.com/trucks/previous-year/silverado/1500",
+      "says": "6.2L V-8 with Dynamic Fuel Management, 420 horsepower, 460 lb-ft"
+     },
+     {
+      "name": "Kelley Blue Book 2026 Silverado 1500 review/specs",
+      "url": "https://www.kbb.com/chevrolet/silverado-1500-crew-cab/2026/",
+      "says": "6.2-liter V8 420 hp / 460 lb-ft; RST, LT Trail Boss, LTZ, High Country, ZR2"
+     },
+     {
+      "name": "Wikipedia - Chevrolet Silverado (with GM small-block / Silverado EV articles, counted once)",
+      "url": "https://en.wikipedia.org/wiki/Chevrolet_Silverado",
+      "says": "6.2 L L87 w/DFM, 420 hp, 2019-"
+     },
+     {
+      "name": "EPA fueleconomy.gov vehicle data",
+      "url": "https://www.fueleconomy.gov/feg/download.shtml",
+      "says": "2026 Silverado: 6.2 L 8-cyl SIDI 4WD"
+     }
+    ],
+    "status": "three_sources_not_nhra",
+    "note": "4WD only."
+   },
+   {
+    "gen": "t1",
+    "cid": 183,
+    "liters": 3.0,
+    "hp": 305,
+    "hp_basis": "SAE net (SAE J1349 certified)",
+    "rpo": "LZ0",
+    "name": "3.0L / 183 turbodiesel I6",
+    "common_name": "Duramax 3.0 (second generation)",
+    "trims": [
+     "Custom Trail Boss, LT, RST, LT Trail Boss, LTZ, High Country",
+     "ZR2 (from 2024)"
+    ],
+    "nhra": false,
+    "sources": [
+     {
+      "name": "Chevrolet.com 2026 Silverado 1500 (previous-year page, accessed 2026-10-12)",
+      "url": "https://www.chevrolet.com/trucks/previous-year/silverado/1500",
+      "says": "Duramax 3.0L Turbo-Diesel: 305 horsepower, 495 lb-ft; standard on ZR2"
+     },
+     {
+      "name": "Wikipedia - Chevrolet Silverado (with GM small-block / Silverado EV articles, counted once)",
+      "url": "https://en.wikipedia.org/wiki/Chevrolet_Silverado",
+      "says": "3.0 L LZ0 Duramax I6, 305 hp, 495 lb-ft, 2023-"
+     },
+     {
+      "name": "GM Authority - GM LZ0 engine page (Wayback copy)",
+      "url": "https://web.archive.org/web/2025/https://gmauthority.com/blog/gm/gm-engines/lz0/",
+      "says": "LZ0 arrived for the 2023 Silverado 1500; applications 2023-present Silverado 1500, 305 hp / 495 lb-ft"
+     },
+     {
+      "name": "EPA fueleconomy.gov vehicle data",
+      "url": "https://www.fueleconomy.gov/feg/download.shtml",
+      "says": "2026 Silverado: 3.0 L 6-cyl turbo diesel 2WD/4WD"
+     },
+     {
+      "name": "Kelley Blue Book 2026 Silverado 1500 review/specs",
+      "url": "https://www.kbb.com/chevrolet/silverado-1500-crew-cab/2026/",
+      "says": "3.0-liter turbodiesel 305 hp, 495 lb-ft"
+     }
+    ],
+    "status": "three_sources_not_nhra",
+    "note": "10-speed auto."
+   },
+   {
+    "gen": "ev",
+    "cid": null,
+    "liters": null,
+    "hp": 725,
+    "hp_basis": "combined motor output, manufacturer (max with Wide Open Watts)",
+    "rpo": "Ultium dual-motor e4WD",
+    "name": "Electric dual-motor (Ultium)",
+    "common_name": "Silverado EV",
+    "trims": [
+     "WT",
+     "LT (replaces RST)",
+     "Trail Boss (new; Max Range 725 hp)"
+    ],
+    "nhra": false,
+    "sources": [
+     {
+      "name": "Chevrolet.com 2026 Silverado EV (accessed 2026-10-12)",
+      "url": "https://www.chevrolet.com/electric/silverado-ev",
+      "says": "footnote: 725 hp / 775 lb-ft (max available with Wide Open Watts); headline graphic still reads '760' max horsepower"
+     },
+     {
+      "name": "Guide Auto Web - 2026 Chevrolet Silverado EV: Same Base Price, New Trail Boss Model",
+      "url": "https://www.guideautoweb.com/en/articles/78806/2026-chevrolet-silverado-ev-same-base-price-new-trail-boss-model",
+      "says": "Trail Boss with Max Range battery up to 725 hp and 775 lb-ft; Trail Boss replaces RST"
+     },
+     {
+      "name": "Electrek - Chevy Silverado EV gains new 725 hp Trail Boss trim for 2026",
+      "url": "https://electrek.co/2025/05/21/chevy-silverado-ev-gains-new-725-hp-trail-boss-trim-for-2026/",
+      "says": "725 hp Trail Boss for 2026 (article body is inconsistent on which battery gives 725)"
+     },
+     {
+      "name": "EPA fueleconomy.gov vehicle data",
+      "url": "https://www.fueleconomy.gov/feg/download.shtml",
+      "says": "2026 Silverado: Silverado EV Std/Ext/Max Range electric rows"
+     }
+    ],
+    "status": "disputed",
+    "note": "Top rating unclear: chevrolet.com's headline still shows 760 hp (the 2025 figure), but its own footnote, Guide Auto Web and Electrek give 725 hp / 775 lb-ft for the 2026 Trail Boss Max Range. Search summaries give 625 hp for Extended Range. Recorded 725.",
+    "electric": true
+   }
+  ]
+ },
+ "source_index": [
+  {
+   "name": "GM/Chevrolet Pressroom Silverado spec sheet 2014 (Wayback)",
+   "url": "https://web.archive.org/web/20160208103531/http://media.chevrolet.com/media/us/en/chevrolet/vehicles/silverado/2014.tab1.html",
+   "type": "manufacturer"
+  },
+  {
+   "name": "GM/Chevrolet Pressroom Silverado spec sheet 2017 (Wayback)",
+   "url": "https://web.archive.org/web/20161226123235/http://media.chevrolet.com/media/us/en/chevrolet/vehicles/silverado/2017.tab1.html",
+   "type": "manufacturer"
+  },
+  {
+   "name": "GM/Chevrolet Pressroom Silverado spec sheet 2018 (Wayback)",
+   "url": "https://web.archive.org/web/20190317221120/https://media.chevrolet.com/media/us/en/chevrolet/vehicles/silverado/2018.tab1.html",
+   "type": "manufacturer"
+  },
+  {
+   "name": "GM/Chevrolet Pressroom Silverado spec sheet 2019 (Wayback)",
+   "url": "https://web.archive.org/web/20190411035212/https://media.chevrolet.com/media/us/en/chevrolet/vehicles/silverado/2019.tab1.html",
+   "type": "manufacturer"
+  },
+  {
+   "name": "GM/Chevrolet Pressroom Silverado spec sheet 2020 (Wayback)",
+   "url": "https://web.archive.org/web/20210307073047/https://media.chevrolet.com/media/us/en/chevrolet/vehicles/silverado/2020.tab1.html",
+   "type": "manufacturer"
+  },
+  {
+   "name": "GM/Chevrolet Pressroom Silverado spec sheet 2021 (Wayback)",
+   "url": "https://web.archive.org/web/20220817215107/https://media.chevrolet.com/media/us/en/chevrolet/vehicles/silverado/2021.tab1.html",
+   "type": "manufacturer"
+  },
+  {
+   "name": "GM/Chevrolet Pressroom Silverado spec sheet 2022 (Wayback)",
+   "url": "https://web.archive.org/web/20220531205233/https://media.chevrolet.com/media/us/en/chevrolet/vehicles/silverado/2022.tab1.html",
+   "type": "manufacturer"
+  },
+  {
+   "name": "GM/Chevrolet Pressroom Silverado spec sheet 2023 (Wayback)",
+   "url": "https://web.archive.org/web/20230520032147/https://media.chevrolet.com/media/us/en/chevrolet/vehicles/silverado/2023.tab1.html",
+   "type": "manufacturer"
+  },
+  {
+   "name": "GM/Chevrolet Pressroom Silverado spec sheet 2024 (Wayback)",
+   "url": "https://web.archive.org/web/20240523161520/https://media.chevrolet.com/media/us/en/chevrolet/vehicles/silverado/2024.tab1.html",
+   "type": "manufacturer"
+  },
+  {
+   "name": "Chevrolet.com 2025 Silverado 1500",
+   "url": "https://www.chevrolet.com/commercial/previous-year/silverado/1500",
+   "type": "manufacturer"
+  },
+  {
+   "name": "Chevrolet.com 2026 Silverado 1500",
+   "url": "https://www.chevrolet.com/trucks/previous-year/silverado/1500",
+   "type": "manufacturer"
+  },
+  {
+   "name": "Chevrolet.com Silverado EV (2026; previous-year page = 2025)",
+   "url": "https://www.chevrolet.com/electric/silverado-ev",
+   "type": "manufacturer"
+  },
+  {
+   "name": "Chevrolet Newsroom 2024 Silverado EV release",
+   "url": "https://news.chevrolet.com/newsroom.detail.html/Pages/news/us/en/2024/may/0513-silveradoev.html",
+   "type": "manufacturer"
+  },
+  {
+   "name": "GM TechLink 2019 Silverado 1500",
+   "url": "https://gm-techlink.com/?p=10070",
+   "type": "manufacturer"
+  },
+  {
+   "name": "EPA fueleconomy.gov vehicle data",
+   "url": "https://www.fueleconomy.gov/feg/download.shtml",
+   "type": "government"
+  },
+  {
+   "name": "Wikipedia - Chevrolet Silverado / Silverado EV / GM small-block (one source)",
+   "url": "https://en.wikipedia.org/wiki/Chevrolet_Silverado",
+   "type": "wikipedia"
+  },
+  {
+   "name": "GM Authority engine page LV3",
+   "url": "https://web.archive.org/web/2025/https://gmauthority.com/blog/gm/gm-engines/lv3/",
+   "type": "publication"
+  },
+  {
+   "name": "GM Authority engine page L83",
+   "url": "https://web.archive.org/web/2025/https://gmauthority.com/blog/gm/gm-engines/l83/",
+   "type": "publication"
+  },
+  {
+   "name": "GM Authority engine page L86",
+   "url": "https://web.archive.org/web/2025/https://gmauthority.com/blog/gm/gm-engines/l86/",
+   "type": "publication"
+  },
+  {
+   "name": "GM Authority engine page L8B",
+   "url": "https://web.archive.org/web/2025/https://gmauthority.com/blog/gm/gm-engines/l8b/",
+   "type": "publication"
+  },
+  {
+   "name": "GM Authority engine page L82",
+   "url": "https://web.archive.org/web/2025/https://gmauthority.com/blog/gm/gm-engines/l82/",
+   "type": "publication"
+  },
+  {
+   "name": "GM Authority engine page L84",
+   "url": "https://web.archive.org/web/2025/https://gmauthority.com/blog/gm/gm-engines/l84/",
+   "type": "publication"
+  },
+  {
+   "name": "GM Authority engine page L87",
+   "url": "https://web.archive.org/web/2025/https://gmauthority.com/blog/gm/gm-engines/l87/",
+   "type": "publication"
+  },
+  {
+   "name": "GM Authority engine page L3B",
+   "url": "https://web.archive.org/web/2025/https://gmauthority.com/blog/gm/gm-engines/l3b/",
+   "type": "publication"
+  },
+  {
+   "name": "GM Authority engine page LM2",
+   "url": "https://web.archive.org/web/2025/https://gmauthority.com/blog/gm/gm-engines/lm2/",
+   "type": "publication"
+  },
+  {
+   "name": "GM Authority engine page LZ0",
+   "url": "https://web.archive.org/web/2025/https://gmauthority.com/blog/gm/gm-engines/lz0/",
+   "type": "publication"
+  },
+  {
+   "name": "Consumer Guide 2014 Silverado",
+   "url": "https://consumerguide.com/best-buys/large-pickup-truck/2014-chevrolet-silverado/",
+   "type": "publication"
+  },
+  {
+   "name": "Consumer Guide 2015 Silverado",
+   "url": "https://consumerguide.com/best-buys/subcompact-car/2015-chevrolet-silverado/",
+   "type": "publication"
+  },
+  {
+   "name": "Consumer Guide 2016 Silverado",
+   "url": "https://consumerguide.com/best-buys/large-pickup-truck/2016-chevrolet-silverado-1500/",
+   "type": "publication"
+  },
+  {
+   "name": "Consumer Guide 2017 Silverado",
+   "url": "http://consumerguide.com/best-buys/2017-chevrolet-silverado/",
+   "type": "publication"
+  },
+  {
+   "name": "Consumer Guide 2018 Silverado",
+   "url": "https://consumerguide.com/chevrolet/2018-silverado/",
+   "type": "publication"
+  },
+  {
+   "name": "Consumer Guide 2019 Silverado",
+   "url": "https://consumerguide.com/best-buys/2019-chevrolet-silverado/",
+   "type": "publication"
+  },
+  {
+   "name": "Consumer Guide 2020 Silverado",
+   "url": "https://consumerguide.com/best-buys/2020-chevrolet-silverado/",
+   "type": "publication"
+  },
+  {
+   "name": "Consumer Guide 2014-18 used Silverado",
+   "url": "https://consumerguide.com/used/2014-18-chevrolet-silverado/",
+   "type": "publication"
+  },
+  {
+   "name": "Kelley Blue Book Silverado 1500 reviews 2014-2026 (plus 2019 LD, 2022 Limited, Silverado EV 2024-2025)",
+   "url": "https://www.kbb.com/chevrolet/silverado-1500-crew-cab/",
+   "type": "publication"
+  },
+  {
+   "name": "Guide Auto Web 2026 Silverado EV",
+   "url": "https://www.guideautoweb.com/en/articles/78806/2026-chevrolet-silverado-ev-same-base-price-new-trail-boss-model",
+   "type": "publication"
+  },
+  {
+   "name": "Electrek 2026 Silverado EV Trail Boss",
+   "url": "https://electrek.co/2025/05/21/chevy-silverado-ev-gains-new-725-hp-trail-boss-trim-for-2026/",
+   "type": "publication"
+  },
+  {
+   "name": "The Daily Herald 2025 Silverado diesel review",
+   "url": "https://www.heraldnet.com/2025/03/12/2025-chevy-silverado-1500-turbo-diesel-delivers-25-mpg/",
+   "type": "publication"
+  }
+ ]
+}

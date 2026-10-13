@@ -1,0 +1,2219 @@
+{
+ "vehicle": "chevrolet-ck-1988-1998",
+ "note": "GMT400 C/K 1500 half-ton only. HP is SAE net throughout. NHRA covers only 1990-91 (454 SS, 4.3 V6); its 1991 'GTC Truck 262/280' row is the GMC Syclone and its 1998 rows are S-10, so both are excluded. EPA labels the 1988 GMT400 half-tons C10/K10. No Chevrolet-branded spec tables were found for 1992-94 or 1997-98; for 1994 the GMC Sierra brochure (same GM powertrains) was used. Consumer Guide's 1990-98 review is narrative and is cited for engine ranges. The 1999 C/K Classic 1500 (extended cab, fleet) is included on Wikipedia + EPA only. The 4.8 I6 and the non-SS 7.4 were 2500/3500 engines and are excluded.",
+ "years": {
+  "1988": [
+   {
+    "gen": "gmt400",
+    "cid": 262,
+    "hp": 160,
+    "hp_basis": "net",
+    "rpo": "LB4",
+    "name": "4.3L / 262 V6",
+    "common_name": "Vortec 4.3 V6 (TBI)",
+    "trims": [
+     "C1500 2WD",
+     "K1500 4WD",
+     "Cheyenne",
+     "Scottsdale",
+     "Silverado"
+    ],
+    "nhra": false,
+    "sources": [
+     {
+      "name": "1988 Chevrolet Full-Size Pickup brochure (oldcarbrochures.org)",
+      "url": "https://www.oldcarbrochures.org/United%20States/GM%20Trucks%20and%20Vans/1988-GM-Trucks-and-Vans/1988%20Chevrolet%20Fullsize%20Pickup/index.html",
+      "says": "Engine table: 4.3 Liter Vortec V6 w/EFI, LB4, 160 @ 4000; standard in all 1500 and 2500"
+     },
+     {
+      "name": "EPA fueleconomy.gov vehicle data",
+      "url": "https://www.fueleconomy.gov/feg/download.shtml",
+      "says": "1988: C10/K10 Pickup (EPA's 1988 label for the new C/K 1500) 4.3 L 6-cyl"
+     },
+     {
+      "name": "Wikipedia - Chevrolet C/K (fourth generation)",
+      "url": "https://en.wikipedia.org/wiki/Chevrolet_C/K_(fourth_generation)",
+      "says": "LB4 4.3 V6 160 hp 1988-92, 165 hp 1993(-94)"
+     },
+     {
+      "name": "Consumer Guide - 1990-98 Chevrolet C/K Pickup used-car review",
+      "url": "https://consumerguide.com/used/1990-98-chevrolet-ck-pickup/",
+      "says": "At introduction, base engine for the C/K 1500 and 2500 was a 160-horsepower 4.3-liter V6"
+     }
+    ],
+    "status": "three_sources_not_nhra",
+    "note": "Throttle-body injection. Standard engine (except 454 SS). The 155 hp heavy-duty-emissions version was a 2500 item."
+   },
+   {
+    "gen": "gmt400",
+    "cid": 305,
+    "hp": 175,
+    "hp_basis": "net",
+    "rpo": "L03",
+    "name": "5.0L / 305 V8",
+    "common_name": "305 small-block (TBI)",
+    "trims": [
+     "C1500 2WD",
+     "K1500 4WD",
+     "Cheyenne",
+     "Scottsdale",
+     "Silverado"
+    ],
+    "nhra": false,
+    "sources": [
+     {
+      "name": "1988 Chevrolet Full-Size Pickup brochure (oldcarbrochures.org)",
+      "url": "https://www.oldcarbrochures.org/United%20States/GM%20Trucks%20and%20Vans/1988-GM-Trucks-and-Vans/1988%20Chevrolet%20Fullsize%20Pickup/index.html",
+      "says": "5.0 Liter V8 w/EFI 305, L03, 175 @ 4000; optional in 1500 and 2500"
+     },
+     {
+      "name": "EPA fueleconomy.gov vehicle data",
+      "url": "https://www.fueleconomy.gov/feg/download.shtml",
+      "says": "1988: C10/K10 Pickup (EPA's 1988 label for the new C/K 1500) 5.0 L 8-cyl"
+     },
+     {
+      "name": "Wikipedia - Chevrolet C/K (fourth generation)",
+      "url": "https://en.wikipedia.org/wiki/Chevrolet_C/K_(fourth_generation)",
+      "says": "L03 5.0 V8 175 hp (1988-93 @4000, 1994-95 @4200)"
+     },
+     {
+      "name": "Consumer Guide - 1990-98 Chevrolet C/K Pickup used-car review",
+      "url": "https://consumerguide.com/used/1990-98-chevrolet-ck-pickup/",
+      "says": "Options included 5.0- and 5.7-liter gasoline V8s, rated 175 and 210 horsepower"
+     }
+    ],
+    "status": "three_sources_not_nhra",
+    "note": "Throttle-body injection."
+   },
+   {
+    "gen": "gmt400",
+    "cid": 350,
+    "hp": 210,
+    "hp_basis": "net",
+    "rpo": "L05",
+    "name": "5.7L / 350 V8",
+    "common_name": "350 small-block (TBI)",
+    "trims": [
+     "C1500 2WD",
+     "K1500 4WD",
+     "Cheyenne",
+     "Scottsdale",
+     "Silverado"
+    ],
+    "nhra": false,
+    "sources": [
+     {
+      "name": "1988 Chevrolet Full-Size Pickup brochure (oldcarbrochures.org)",
+      "url": "https://www.oldcarbrochures.org/United%20States/GM%20Trucks%20and%20Vans/1988-GM-Trucks-and-Vans/1988%20Chevrolet%20Fullsize%20Pickup/index.html",
+      "says": "5.7 Liter V8 w/EFI 350, L05, 210 @ 4000 in 1500/2500"
+     },
+     {
+      "name": "EPA fueleconomy.gov vehicle data",
+      "url": "https://www.fueleconomy.gov/feg/download.shtml",
+      "says": "1988: C10/K10 Pickup (EPA's 1988 label for the new C/K 1500) 5.7 L 8-cyl (350 V8)"
+     },
+     {
+      "name": "Wikipedia - Chevrolet C/K (fourth generation)",
+      "url": "https://en.wikipedia.org/wiki/Chevrolet_C/K_(fourth_generation)",
+      "says": "L05 5.7 V8 210 hp 1988-93, 200 hp 1994-95"
+     },
+     {
+      "name": "Consumer Guide - 1990-98 Chevrolet C/K Pickup used-car review",
+      "url": "https://consumerguide.com/used/1990-98-chevrolet-ck-pickup/",
+      "says": "5.7-liter gasoline V8 rated 210 horsepower"
+     }
+    ],
+    "status": "three_sources_not_nhra",
+    "note": "Throttle-body injection."
+   },
+   {
+    "gen": "gmt400",
+    "cid": 379,
+    "hp": 140,
+    "hp_basis": "net",
+    "rpo": "LH6",
+    "name": "6.2L / 379 V8 diesel",
+    "common_name": "Detroit Diesel 6.2",
+    "trims": [
+     "C1500 2WD",
+     "K1500 4WD",
+     "long box only (1990+)"
+    ],
+    "nhra": false,
+    "sources": [
+     {
+      "name": "1988 Chevrolet Full-Size Pickup brochure, revised edition (oldcarbrochures.org)",
+      "url": "https://www.oldcarbrochures.org/United%20States/GM%20Trucks%20and%20Vans/1988-GM-Trucks-and-Vans/1988%20Chevrolet%20Full-Size%20Pickup%20-%20Aug%201987/index.html",
+      "says": "6.2 Liter V8 Diesel 379: LH6 126 @ 3600 (manual) / 140 @ 3600 (auto), printed as 1987 ratings; 'Diesel not available 1500 and 2500 Series in California'"
+     },
+     {
+      "name": "1988 Chevrolet Full-Size Pickup brochure (oldcarbrochures.org)",
+      "url": "https://www.oldcarbrochures.org/United%20States/GM%20Trucks%20and%20Vans/1988-GM-Trucks-and-Vans/1988%20Chevrolet%20Fullsize%20Pickup/index.html",
+      "says": "Other 1988 edition: LH6 footnoted '(B) Not available 1500 Series'; text says 'including a 6.2 Liter Diesel (not available 1500 Series)'"
+     },
+     {
+      "name": "EPA fueleconomy.gov vehicle data",
+      "url": "https://www.fueleconomy.gov/feg/download.shtml",
+      "says": "1988: C10/K10 Pickup (EPA's 1988 label for the new C/K 1500) 6.2 L 8-cyl diesel"
+     },
+     {
+      "name": "Wikipedia - Chevrolet C/K (fourth generation)",
+      "url": "https://en.wikipedia.org/wiki/Chevrolet_C/K_(fourth_generation)",
+      "says": "6.2 diesel offered (limited availability in 1500)"
+     },
+     {
+      "name": "Consumer Guide - 1990-98 Chevrolet C/K Pickup used-car review",
+      "url": "https://consumerguide.com/used/1990-98-chevrolet-ck-pickup/",
+      "says": "6.2-liter diesel V8 that developed 140-150 horsepower; replaced by the 6.5 in 1994"
+     }
+    ],
+    "status": "disputed",
+    "note": "The two 1988 Chevrolet brochures disagree: one says the diesel was not available in the 1500; the other lists it for 1500/2500 (not California). EPA lists 1988 C10/K10 diesels. Ratings 126 hp manual / 140 hp automatic (printed as 1987 ratings)."
+   }
+  ],
+  "1989": [
+   {
+    "gen": "gmt400",
+    "cid": 262,
+    "hp": 160,
+    "hp_basis": "net",
+    "rpo": "LB4",
+    "name": "4.3L / 262 V6",
+    "common_name": "Vortec 4.3 V6 (TBI)",
+    "trims": [
+     "C1500 2WD",
+     "K1500 4WD",
+     "Cheyenne",
+     "Scottsdale",
+     "Silverado"
+    ],
+    "nhra": false,
+    "sources": [
+     {
+      "name": "1989 Chevrolet Full-Size Pickup brochure (oldcarbrochures.org)",
+      "url": "https://www.oldcarbrochures.org/United%20States/GM%20Trucks%20and%20Vans/1989-GM-Trucks-and-Vans/1989-Chevrolet-Full-Size-Pickup-Brochure/index.html",
+      "says": "Engine table: 4.3 Vortec V6 LB4 160 @ 4000, All Series 1500 and 2500"
+     },
+     {
+      "name": "EPA fueleconomy.gov vehicle data",
+      "url": "https://www.fueleconomy.gov/feg/download.shtml",
+      "says": "1989: C1500/K1500 Pickup 4.3 L 6-cyl"
+     },
+     {
+      "name": "Wikipedia - Chevrolet C/K (fourth generation)",
+      "url": "https://en.wikipedia.org/wiki/Chevrolet_C/K_(fourth_generation)",
+      "says": "LB4 4.3 V6 160 hp 1988-92, 165 hp 1993(-94)"
+     },
+     {
+      "name": "Consumer Guide - 1990-98 Chevrolet C/K Pickup used-car review",
+      "url": "https://consumerguide.com/used/1990-98-chevrolet-ck-pickup/",
+      "says": "At introduction, base engine for the C/K 1500 and 2500 was a 160-horsepower 4.3-liter V6"
+     }
+    ],
+    "status": "three_sources_not_nhra",
+    "note": "Throttle-body injection. Standard engine (except 454 SS). The 155 hp heavy-duty-emissions version was a 2500 item."
+   },
+   {
+    "gen": "gmt400",
+    "cid": 305,
+    "hp": 175,
+    "hp_basis": "net",
+    "rpo": "L03",
+    "name": "5.0L / 305 V8",
+    "common_name": "305 small-block (TBI)",
+    "trims": [
+     "C1500 2WD",
+     "K1500 4WD",
+     "Cheyenne",
+     "Scottsdale",
+     "Silverado"
+    ],
+    "nhra": false,
+    "sources": [
+     {
+      "name": "1989 Chevrolet Full-Size Pickup brochure (oldcarbrochures.org)",
+      "url": "https://www.oldcarbrochures.org/United%20States/GM%20Trucks%20and%20Vans/1989-GM-Trucks-and-Vans/1989-Chevrolet-Full-Size-Pickup-Brochure/index.html",
+      "says": "5.0 Liter V8 w/EFI/305, L03, 175 @ 4000"
+     },
+     {
+      "name": "EPA fueleconomy.gov vehicle data",
+      "url": "https://www.fueleconomy.gov/feg/download.shtml",
+      "says": "1989: C1500/K1500 Pickup 5.0 L 8-cyl"
+     },
+     {
+      "name": "Wikipedia - Chevrolet C/K (fourth generation)",
+      "url": "https://en.wikipedia.org/wiki/Chevrolet_C/K_(fourth_generation)",
+      "says": "L03 5.0 V8 175 hp (1988-93 @4000, 1994-95 @4200)"
+     },
+     {
+      "name": "Consumer Guide - 1990-98 Chevrolet C/K Pickup used-car review",
+      "url": "https://consumerguide.com/used/1990-98-chevrolet-ck-pickup/",
+      "says": "Options included 5.0- and 5.7-liter gasoline V8s, rated 175 and 210 horsepower"
+     }
+    ],
+    "status": "three_sources_not_nhra",
+    "note": "Throttle-body injection."
+   },
+   {
+    "gen": "gmt400",
+    "cid": 350,
+    "hp": 210,
+    "hp_basis": "net",
+    "rpo": "L05",
+    "name": "5.7L / 350 V8",
+    "common_name": "350 small-block (TBI)",
+    "trims": [
+     "C1500 2WD",
+     "K1500 4WD",
+     "Cheyenne",
+     "Scottsdale",
+     "Silverado"
+    ],
+    "nhra": false,
+    "sources": [
+     {
+      "name": "1989 Chevrolet Full-Size Pickup brochure (oldcarbrochures.org)",
+      "url": "https://www.oldcarbrochures.org/United%20States/GM%20Trucks%20and%20Vans/1989-GM-Trucks-and-Vans/1989-Chevrolet-Full-Size-Pickup-Brochure/index.html",
+      "says": "5.7 Liter V8 L05 210 @ 4000 (Series 1500/2500)"
+     },
+     {
+      "name": "EPA fueleconomy.gov vehicle data",
+      "url": "https://www.fueleconomy.gov/feg/download.shtml",
+      "says": "1989: C1500/K1500 Pickup 5.7 L 8-cyl (350 V8)"
+     },
+     {
+      "name": "Wikipedia - Chevrolet C/K (fourth generation)",
+      "url": "https://en.wikipedia.org/wiki/Chevrolet_C/K_(fourth_generation)",
+      "says": "L05 5.7 V8 210 hp 1988-93, 200 hp 1994-95"
+     },
+     {
+      "name": "Consumer Guide - 1990-98 Chevrolet C/K Pickup used-car review",
+      "url": "https://consumerguide.com/used/1990-98-chevrolet-ck-pickup/",
+      "says": "5.7-liter gasoline V8 rated 210 horsepower"
+     }
+    ],
+    "status": "three_sources_not_nhra",
+    "note": "Throttle-body injection."
+   },
+   {
+    "gen": "gmt400",
+    "cid": 379,
+    "hp": 140,
+    "hp_basis": "net",
+    "rpo": "LH6",
+    "name": "6.2L / 379 V8 diesel",
+    "common_name": "Detroit Diesel 6.2",
+    "trims": [
+     "C1500 2WD",
+     "K1500 4WD",
+     "long box only (1990+)"
+    ],
+    "nhra": false,
+    "sources": [
+     {
+      "name": "1989 Chevrolet Full-Size Pickup brochure (oldcarbrochures.org)",
+      "url": "https://www.oldcarbrochures.org/United%20States/GM%20Trucks%20and%20Vans/1989-GM-Trucks-and-Vans/1989-Chevrolet-Full-Size-Pickup-Brochure/index.html",
+      "says": "6.2 Liter V8 Diesel 379: LH6 126 (manual) / 140 (auto) @ 3600 (1988 ratings); 'Diesel not available 1500 Series in California'"
+     },
+     {
+      "name": "EPA fueleconomy.gov vehicle data",
+      "url": "https://www.fueleconomy.gov/feg/download.shtml",
+      "says": "1989: C1500/K1500 Pickup 6.2 L 8-cyl diesel"
+     },
+     {
+      "name": "Wikipedia - Chevrolet C/K (fourth generation)",
+      "url": "https://en.wikipedia.org/wiki/Chevrolet_C/K_(fourth_generation)",
+      "says": "6.2 diesel offered (limited availability in 1500)"
+     },
+     {
+      "name": "Consumer Guide - 1990-98 Chevrolet C/K Pickup used-car review",
+      "url": "https://consumerguide.com/used/1990-98-chevrolet-ck-pickup/",
+      "says": "6.2-liter diesel V8 that developed 140-150 horsepower; replaced by the 6.5 in 1994"
+     }
+    ],
+    "status": "three_sources_not_nhra",
+    "note": "126 hp manual / 140 hp automatic (brochure prints 1988 ratings). Not in California 1500s. The 143 hp LL4 was the 2500-C6P/3500 diesel."
+   }
+  ],
+  "1990": [
+   {
+    "gen": "gmt400",
+    "cid": 262,
+    "hp": 160,
+    "hp_basis": "net",
+    "rpo": "LB4",
+    "name": "4.3L / 262 V6",
+    "common_name": "Vortec 4.3 V6 (TBI)",
+    "trims": [
+     "C1500 2WD",
+     "K1500 4WD",
+     "Cheyenne",
+     "Scottsdale",
+     "Silverado",
+     "W/T1500"
+    ],
+    "nhra": false,
+    "sources": [
+     {
+      "name": "1990 Chevrolet Full-Size Pickups brochure (oldcarbrochures.org)",
+      "url": "https://www.oldcarbrochures.org/United%20States/GM%20Trucks%20and%20Vans/1990-GM-Trucks-and-Vans/1990%20Chevrolet%20Truck%20Full%20Size%20Pickups/index.html",
+      "says": "4.3 Vortec V6 LB4 160 @ 4000, standard in all 1500 and 2500"
+     },
+     {
+      "name": "EPA fueleconomy.gov vehicle data",
+      "url": "https://www.fueleconomy.gov/feg/download.shtml",
+      "says": "1990: C1500/K1500 Pickup 4.3 L 6-cyl"
+     },
+     {
+      "name": "Wikipedia - Chevrolet C/K (fourth generation)",
+      "url": "https://en.wikipedia.org/wiki/Chevrolet_C/K_(fourth_generation)",
+      "says": "LB4 4.3 V6 160 hp 1988-92, 165 hp 1993(-94)"
+     },
+     {
+      "name": "Consumer Guide - 1990-98 Chevrolet C/K Pickup used-car review",
+      "url": "https://consumerguide.com/used/1990-98-chevrolet-ck-pickup/",
+      "says": "At introduction, base engine for the C/K 1500 and 2500 was a 160-horsepower 4.3-liter V6"
+     }
+    ],
+    "status": "three_sources_not_nhra",
+    "note": "Throttle-body injection. Standard engine (except 454 SS). The 155 hp heavy-duty-emissions version was a 2500 item."
+   },
+   {
+    "gen": "gmt400",
+    "cid": 305,
+    "hp": 175,
+    "hp_basis": "net",
+    "rpo": "L03",
+    "name": "5.0L / 305 V8",
+    "common_name": "305 small-block (TBI)",
+    "trims": [
+     "C1500 2WD",
+     "K1500 4WD",
+     "Cheyenne",
+     "Scottsdale",
+     "Silverado"
+    ],
+    "nhra": false,
+    "sources": [
+     {
+      "name": "1990 Chevrolet Full-Size Pickups brochure (oldcarbrochures.org)",
+      "url": "https://www.oldcarbrochures.org/United%20States/GM%20Trucks%20and%20Vans/1990-GM-Trucks-and-Vans/1990%20Chevrolet%20Truck%20Full%20Size%20Pickups/index.html",
+      "says": "5.0 Liter 305, 175 @ 4000; optional in 1500 and 2500"
+     },
+     {
+      "name": "EPA fueleconomy.gov vehicle data",
+      "url": "https://www.fueleconomy.gov/feg/download.shtml",
+      "says": "1990: C1500/K1500 Pickup 5.0 L 8-cyl"
+     },
+     {
+      "name": "Wikipedia - Chevrolet C/K (fourth generation)",
+      "url": "https://en.wikipedia.org/wiki/Chevrolet_C/K_(fourth_generation)",
+      "says": "L03 5.0 V8 175 hp (1988-93 @4000, 1994-95 @4200)"
+     },
+     {
+      "name": "Consumer Guide - 1990-98 Chevrolet C/K Pickup used-car review",
+      "url": "https://consumerguide.com/used/1990-98-chevrolet-ck-pickup/",
+      "says": "Options included 5.0- and 5.7-liter gasoline V8s, rated 175 and 210 horsepower"
+     }
+    ],
+    "status": "three_sources_not_nhra",
+    "note": "Throttle-body injection."
+   },
+   {
+    "gen": "gmt400",
+    "cid": 350,
+    "hp": 210,
+    "hp_basis": "net",
+    "rpo": "L05",
+    "name": "5.7L / 350 V8",
+    "common_name": "350 small-block (TBI)",
+    "trims": [
+     "C1500 2WD",
+     "K1500 4WD",
+     "Cheyenne",
+     "Scottsdale",
+     "Silverado"
+    ],
+    "nhra": false,
+    "sources": [
+     {
+      "name": "1990 Chevrolet Full-Size Pickups brochure (oldcarbrochures.org)",
+      "url": "https://www.oldcarbrochures.org/United%20States/GM%20Trucks%20and%20Vans/1990-GM-Trucks-and-Vans/1990%20Chevrolet%20Truck%20Full%20Size%20Pickups/index.html",
+      "says": "5.7 Liter 350 L05 210 @ 4000; optional in 1500"
+     },
+     {
+      "name": "EPA fueleconomy.gov vehicle data",
+      "url": "https://www.fueleconomy.gov/feg/download.shtml",
+      "says": "1990: C1500/K1500 Pickup 5.7 L 8-cyl (350 V8)"
+     },
+     {
+      "name": "Wikipedia - Chevrolet C/K (fourth generation)",
+      "url": "https://en.wikipedia.org/wiki/Chevrolet_C/K_(fourth_generation)",
+      "says": "L05 5.7 V8 210 hp 1988-93, 200 hp 1994-95"
+     },
+     {
+      "name": "Consumer Guide - 1990-98 Chevrolet C/K Pickup used-car review",
+      "url": "https://consumerguide.com/used/1990-98-chevrolet-ck-pickup/",
+      "says": "5.7-liter gasoline V8 rated 210 horsepower"
+     }
+    ],
+    "status": "three_sources_not_nhra",
+    "note": "Throttle-body injection."
+   },
+   {
+    "gen": "gmt400",
+    "cid": 454,
+    "hp": 230,
+    "hp_basis": "net",
+    "rpo": "L19",
+    "name": "7.4L / 454 V8",
+    "common_name": "454 SS big-block (TBI)",
+    "trims": [
+     "454 SS (C1500 2WD regular-cab short box only)"
+    ],
+    "nhra": true,
+    "sources": [
+     {
+      "name": "NHRA Stock Car Classification Guide (nhra_chevrolet-ck-1988-1998.json)",
+      "url": "nhra_chevrolet-ck-1988-1998.json",
+      "says": "1990 CHEVROLET PICKUP: 454 ci / 255 hp"
+     },
+     {
+      "name": "1990 Chevrolet Full-Size Pickups brochure (oldcarbrochures.org)",
+      "url": "https://www.oldcarbrochures.org/United%20States/GM%20Trucks%20and%20Vans/1990-GM-Trucks-and-Vans/1990%20Chevrolet%20Truck%20Full%20Size%20Pickups/index.html",
+      "says": "7.4 Liter V8 w/EFI 454, L19, 230 @ 3600; standard and available only in the C1500 454 SS (1500 series)"
+     },
+     {
+      "name": "EPA fueleconomy.gov vehicle data",
+      "url": "https://www.fueleconomy.gov/feg/download.shtml",
+      "says": "1990: C1500 Pickup 2WD 7.4 L 8-cyl"
+     },
+     {
+      "name": "Wikipedia - Chevrolet C/K (fourth generation)",
+      "url": "https://en.wikipedia.org/wiki/Chevrolet_C/K_(fourth_generation)",
+      "says": "454 SS 1990: 230 hp; 1991-93: 255 hp @4000"
+     },
+     {
+      "name": "Consumer Guide - 1990-98 Chevrolet C/K Pickup used-car review",
+      "url": "https://consumerguide.com/used/1990-98-chevrolet-ck-pickup/",
+      "says": "454 SS arrived in 1990; in 1991 that engine made 255 horsepower, 25 more than in 1990"
+     }
+    ],
+    "status": "confirmed",
+    "note": "NHRA lists 255 hp for 1990, which is the 1991-93 figure; the GM brochure, Consumer Guide and Wikipedia give 230 for 1990 (THM400 3-speed automatic)."
+   },
+   {
+    "gen": "gmt400",
+    "cid": 379,
+    "hp": 140,
+    "hp_basis": "net",
+    "rpo": "LH6",
+    "name": "6.2L / 379 V8 diesel",
+    "common_name": "Detroit Diesel 6.2",
+    "trims": [
+     "C1500 2WD",
+     "K1500 4WD",
+     "long box only (1990+)"
+    ],
+    "nhra": false,
+    "sources": [
+     {
+      "name": "1990 Chevrolet Full-Size Pickups brochure (oldcarbrochures.org)",
+      "url": "https://www.oldcarbrochures.org/United%20States/GM%20Trucks%20and%20Vans/1990-GM-Trucks-and-Vans/1990%20Chevrolet%20Truck%20Full%20Size%20Pickups/index.html",
+      "says": "6.2 Diesel LH6 135 @ 3600 (manual) / 140 @ 3600 (auto); not available in 454 SS, W/T1500, 1500 Series in California, or 1500 with 117.5\" wheelbase"
+     },
+     {
+      "name": "EPA fueleconomy.gov vehicle data",
+      "url": "https://www.fueleconomy.gov/feg/download.shtml",
+      "says": "1990: C1500/K1500 Pickup 6.2 L 8-cyl diesel"
+     },
+     {
+      "name": "Wikipedia - Chevrolet C/K (fourth generation)",
+      "url": "https://en.wikipedia.org/wiki/Chevrolet_C/K_(fourth_generation)",
+      "says": "6.2 diesel offered (limited availability in 1500)"
+     },
+     {
+      "name": "Consumer Guide - 1990-98 Chevrolet C/K Pickup used-car review",
+      "url": "https://consumerguide.com/used/1990-98-chevrolet-ck-pickup/",
+      "says": "6.2-liter diesel V8 that developed 140-150 horsepower; replaced by the 6.5 in 1994"
+     }
+    ],
+    "status": "three_sources_not_nhra",
+    "note": "135 hp manual / 140 hp automatic. Not in 454 SS, W/T1500, short-box 1500 or California 1500."
+   }
+  ],
+  "1991": [
+   {
+    "gen": "gmt400",
+    "cid": 262,
+    "hp": 160,
+    "hp_basis": "net",
+    "rpo": "LB4",
+    "name": "4.3L / 262 V6",
+    "common_name": "Vortec 4.3 V6 (TBI)",
+    "trims": [
+     "C1500 2WD",
+     "K1500 4WD",
+     "Cheyenne",
+     "Scottsdale",
+     "Silverado",
+     "W/T1500"
+    ],
+    "nhra": true,
+    "sources": [
+     {
+      "name": "NHRA Stock Car Classification Guide (nhra_chevrolet-ck-1988-1998.json)",
+      "url": "nhra_chevrolet-ck-1988-1998.json",
+      "says": "1991 C1500: 262 ci / 160 hp"
+     },
+     {
+      "name": "1991 Chevrolet Pickups brochure (oldcarbrochures.org)",
+      "url": "https://www.oldcarbrochures.org/United%20States/GM%20Trucks%20and%20Vans/1991-Trucks-and-Vans/1991-Chevrolet-Pickups-Brochure/index.html",
+      "says": "Engine specs All Series 1500/2500: 4.3L V6 w/EFI LB4 160 @ 4000; standard"
+     },
+     {
+      "name": "EPA fueleconomy.gov vehicle data",
+      "url": "https://www.fueleconomy.gov/feg/download.shtml",
+      "says": "1991: C1500/K1500 Pickup 4.3 L 6-cyl"
+     },
+     {
+      "name": "Wikipedia - Chevrolet C/K (fourth generation)",
+      "url": "https://en.wikipedia.org/wiki/Chevrolet_C/K_(fourth_generation)",
+      "says": "LB4 4.3 V6 160 hp 1988-92, 165 hp 1993(-94)"
+     },
+     {
+      "name": "Consumer Guide - 1990-98 Chevrolet C/K Pickup used-car review",
+      "url": "https://consumerguide.com/used/1990-98-chevrolet-ck-pickup/",
+      "says": "At introduction, base engine for the C/K 1500 and 2500 was a 160-horsepower 4.3-liter V6"
+     }
+    ],
+    "status": "confirmed",
+    "note": "Throttle-body injection. Standard engine (except 454 SS). The 155 hp heavy-duty-emissions version was a 2500 item."
+   },
+   {
+    "gen": "gmt400",
+    "cid": 305,
+    "hp": 175,
+    "hp_basis": "net",
+    "rpo": "L03",
+    "name": "5.0L / 305 V8",
+    "common_name": "305 small-block (TBI)",
+    "trims": [
+     "C1500 2WD",
+     "K1500 4WD",
+     "Cheyenne",
+     "Scottsdale",
+     "Silverado"
+    ],
+    "nhra": false,
+    "sources": [
+     {
+      "name": "1991 Chevrolet Pickups brochure (oldcarbrochures.org)",
+      "url": "https://www.oldcarbrochures.org/United%20States/GM%20Trucks%20and%20Vans/1991-Trucks-and-Vans/1991-Chevrolet-Pickups-Brochure/index.html",
+      "says": "5.0L (305) V8 w/EFI L03 175 @ 4000"
+     },
+     {
+      "name": "EPA fueleconomy.gov vehicle data",
+      "url": "https://www.fueleconomy.gov/feg/download.shtml",
+      "says": "1991: C1500/K1500 Pickup 5.0 L 8-cyl"
+     },
+     {
+      "name": "Wikipedia - Chevrolet C/K (fourth generation)",
+      "url": "https://en.wikipedia.org/wiki/Chevrolet_C/K_(fourth_generation)",
+      "says": "L03 5.0 V8 175 hp (1988-93 @4000, 1994-95 @4200)"
+     },
+     {
+      "name": "Consumer Guide - 1990-98 Chevrolet C/K Pickup used-car review",
+      "url": "https://consumerguide.com/used/1990-98-chevrolet-ck-pickup/",
+      "says": "Options included 5.0- and 5.7-liter gasoline V8s, rated 175 and 210 horsepower"
+     }
+    ],
+    "status": "three_sources_not_nhra",
+    "note": "Throttle-body injection."
+   },
+   {
+    "gen": "gmt400",
+    "cid": 350,
+    "hp": 210,
+    "hp_basis": "net",
+    "rpo": "L05",
+    "name": "5.7L / 350 V8",
+    "common_name": "350 small-block (TBI)",
+    "trims": [
+     "C1500 2WD",
+     "K1500 4WD",
+     "Cheyenne",
+     "Scottsdale",
+     "Silverado"
+    ],
+    "nhra": false,
+    "sources": [
+     {
+      "name": "1991 Chevrolet Pickups brochure (oldcarbrochures.org)",
+      "url": "https://www.oldcarbrochures.org/United%20States/GM%20Trucks%20and%20Vans/1991-Trucks-and-Vans/1991-Chevrolet-Pickups-Brochure/index.html",
+      "says": "5.7L (350) V8 w/EFI L05 210 @ 4000"
+     },
+     {
+      "name": "EPA fueleconomy.gov vehicle data",
+      "url": "https://www.fueleconomy.gov/feg/download.shtml",
+      "says": "1991: C1500/K1500 Pickup 5.7 L 8-cyl (350 V8)"
+     },
+     {
+      "name": "Wikipedia - Chevrolet C/K (fourth generation)",
+      "url": "https://en.wikipedia.org/wiki/Chevrolet_C/K_(fourth_generation)",
+      "says": "L05 5.7 V8 210 hp 1988-93, 200 hp 1994-95"
+     },
+     {
+      "name": "Consumer Guide - 1990-98 Chevrolet C/K Pickup used-car review",
+      "url": "https://consumerguide.com/used/1990-98-chevrolet-ck-pickup/",
+      "says": "5.7-liter gasoline V8 rated 210 horsepower"
+     }
+    ],
+    "status": "three_sources_not_nhra",
+    "note": "Throttle-body injection."
+   },
+   {
+    "gen": "gmt400",
+    "cid": 454,
+    "hp": 255,
+    "hp_basis": "net",
+    "rpo": "L19",
+    "name": "7.4L / 454 V8",
+    "common_name": "454 SS big-block (TBI)",
+    "trims": [
+     "454 SS (C1500 2WD regular-cab short box only)"
+    ],
+    "nhra": true,
+    "sources": [
+     {
+      "name": "NHRA Stock Car Classification Guide (nhra_chevrolet-ck-1988-1998.json)",
+      "url": "nhra_chevrolet-ck-1988-1998.json",
+      "says": "1991 C1500: 454 ci / 255 hp"
+     },
+     {
+      "name": "1991 Chevrolet Pickups brochure (oldcarbrochures.org)",
+      "url": "https://www.oldcarbrochures.org/United%20States/GM%20Trucks%20and%20Vans/1991-Trucks-and-Vans/1991-Chevrolet-Pickups-Brochure/index.html",
+      "says": "Footnote: For 454 SS only, SAE net horsepower is 255 @ 4000 and torque 405 @ 2400; L19 standard only in the C1500 454 SS"
+     },
+     {
+      "name": "EPA fueleconomy.gov vehicle data",
+      "url": "https://www.fueleconomy.gov/feg/download.shtml",
+      "says": "1991: C1500 Pickup 2WD 7.4 L 8-cyl"
+     },
+     {
+      "name": "Wikipedia - Chevrolet C/K (fourth generation)",
+      "url": "https://en.wikipedia.org/wiki/Chevrolet_C/K_(fourth_generation)",
+      "says": "454 SS 1990: 230 hp; 1991-93: 255 hp @4000"
+     },
+     {
+      "name": "Consumer Guide - 1990-98 Chevrolet C/K Pickup used-car review",
+      "url": "https://consumerguide.com/used/1990-98-chevrolet-ck-pickup/",
+      "says": "454 SS arrived in 1990; in 1991 that engine made 255 horsepower, 25 more than in 1990"
+     }
+    ],
+    "status": "confirmed",
+    "note": "255 hp @ 4000 with the 4L80E 4-speed automatic."
+   },
+   {
+    "gen": "gmt400",
+    "cid": 379,
+    "hp": 140,
+    "hp_basis": "net",
+    "rpo": "LH6",
+    "name": "6.2L / 379 V8 diesel",
+    "common_name": "Detroit Diesel 6.2",
+    "trims": [
+     "C1500 2WD",
+     "K1500 4WD",
+     "long box only (1990+)"
+    ],
+    "nhra": false,
+    "sources": [
+     {
+      "name": "1991 Chevrolet Pickups brochure (oldcarbrochures.org)",
+      "url": "https://www.oldcarbrochures.org/United%20States/GM%20Trucks%20and%20Vans/1991-Trucks-and-Vans/1991-Chevrolet-Pickups-Brochure/index.html",
+      "says": "6.2L (379) V8 Diesel LH6 140 @ 3600 (manual and auto); 'Diesel not available in 1500 Series in California'"
+     },
+     {
+      "name": "EPA fueleconomy.gov vehicle data",
+      "url": "https://www.fueleconomy.gov/feg/download.shtml",
+      "says": "1991: C1500/K1500 Pickup 6.2 L 8-cyl diesel"
+     },
+     {
+      "name": "Wikipedia - Chevrolet C/K (fourth generation)",
+      "url": "https://en.wikipedia.org/wiki/Chevrolet_C/K_(fourth_generation)",
+      "says": "6.2 diesel offered (limited availability in 1500)"
+     },
+     {
+      "name": "Consumer Guide - 1990-98 Chevrolet C/K Pickup used-car review",
+      "url": "https://consumerguide.com/used/1990-98-chevrolet-ck-pickup/",
+      "says": "6.2-liter diesel V8 that developed 140-150 horsepower; replaced by the 6.5 in 1994"
+     }
+    ],
+    "status": "three_sources_not_nhra",
+    "note": "140 hp with either transmission. Not in California 1500, 454 SS, W/T1500 or short box."
+   }
+  ],
+  "1992": [
+   {
+    "gen": "gmt400",
+    "cid": 262,
+    "hp": 160,
+    "hp_basis": "net",
+    "rpo": "LB4",
+    "name": "4.3L / 262 V6",
+    "common_name": "Vortec 4.3 V6 (TBI)",
+    "trims": [
+     "C1500 2WD",
+     "K1500 4WD",
+     "Cheyenne",
+     "Scottsdale",
+     "Silverado",
+     "W/T1500"
+    ],
+    "nhra": false,
+    "sources": [
+     {
+      "name": "EPA fueleconomy.gov vehicle data",
+      "url": "https://www.fueleconomy.gov/feg/download.shtml",
+      "says": "1992: C1500/K1500 Pickup 4.3 L 6-cyl"
+     },
+     {
+      "name": "Wikipedia - Chevrolet C/K (fourth generation)",
+      "url": "https://en.wikipedia.org/wiki/Chevrolet_C/K_(fourth_generation)",
+      "says": "LB4 4.3 V6 160 hp 1988-92, 165 hp 1993(-94)"
+     },
+     {
+      "name": "Consumer Guide - 1990-98 Chevrolet C/K Pickup used-car review",
+      "url": "https://consumerguide.com/used/1990-98-chevrolet-ck-pickup/",
+      "says": "At introduction, base engine for the C/K 1500 and 2500 was a 160-horsepower 4.3-liter V6"
+     }
+    ],
+    "status": "three_sources_not_nhra",
+    "note": "Throttle-body injection. Standard engine (except 454 SS). The 155 hp heavy-duty-emissions version was a 2500 item."
+   },
+   {
+    "gen": "gmt400",
+    "cid": 305,
+    "hp": 175,
+    "hp_basis": "net",
+    "rpo": "L03",
+    "name": "5.0L / 305 V8",
+    "common_name": "305 small-block (TBI)",
+    "trims": [
+     "C1500 2WD",
+     "K1500 4WD",
+     "Cheyenne",
+     "Scottsdale",
+     "Silverado"
+    ],
+    "nhra": false,
+    "sources": [
+     {
+      "name": "Cars.com - 1992 Chevrolet 1500 research page (expert review)",
+      "url": "https://www.cars.com/research/chevrolet-1500-1992/",
+      "says": "'175 horsepower from Chevy's 5.0-liter' (comparison test)"
+     },
+     {
+      "name": "EPA fueleconomy.gov vehicle data",
+      "url": "https://www.fueleconomy.gov/feg/download.shtml",
+      "says": "1992: C1500/K1500 Pickup 5.0 L 8-cyl"
+     },
+     {
+      "name": "Wikipedia - Chevrolet C/K (fourth generation)",
+      "url": "https://en.wikipedia.org/wiki/Chevrolet_C/K_(fourth_generation)",
+      "says": "L03 5.0 V8 175 hp (1988-93 @4000, 1994-95 @4200)"
+     },
+     {
+      "name": "Consumer Guide - 1990-98 Chevrolet C/K Pickup used-car review",
+      "url": "https://consumerguide.com/used/1990-98-chevrolet-ck-pickup/",
+      "says": "Options included 5.0- and 5.7-liter gasoline V8s, rated 175 and 210 horsepower"
+     }
+    ],
+    "status": "three_sources_not_nhra",
+    "note": "Throttle-body injection."
+   },
+   {
+    "gen": "gmt400",
+    "cid": 350,
+    "hp": 210,
+    "hp_basis": "net",
+    "rpo": "L05",
+    "name": "5.7L / 350 V8",
+    "common_name": "350 small-block (TBI)",
+    "trims": [
+     "C1500 2WD",
+     "K1500 4WD",
+     "Cheyenne",
+     "Scottsdale",
+     "Silverado"
+    ],
+    "nhra": false,
+    "sources": [
+     {
+      "name": "EPA fueleconomy.gov vehicle data",
+      "url": "https://www.fueleconomy.gov/feg/download.shtml",
+      "says": "1992: C1500/K1500 Pickup 5.7 L 8-cyl (350 V8)"
+     },
+     {
+      "name": "Wikipedia - Chevrolet C/K (fourth generation)",
+      "url": "https://en.wikipedia.org/wiki/Chevrolet_C/K_(fourth_generation)",
+      "says": "L05 5.7 V8 210 hp 1988-93, 200 hp 1994-95"
+     },
+     {
+      "name": "Consumer Guide - 1990-98 Chevrolet C/K Pickup used-car review",
+      "url": "https://consumerguide.com/used/1990-98-chevrolet-ck-pickup/",
+      "says": "5.7-liter gasoline V8 rated 210 horsepower"
+     }
+    ],
+    "status": "three_sources_not_nhra",
+    "note": "Throttle-body injection."
+   },
+   {
+    "gen": "gmt400",
+    "cid": 454,
+    "hp": 255,
+    "hp_basis": "net",
+    "rpo": "L19",
+    "name": "7.4L / 454 V8",
+    "common_name": "454 SS big-block (TBI)",
+    "trims": [
+     "454 SS (C1500 2WD regular-cab short box only)"
+    ],
+    "nhra": false,
+    "sources": [
+     {
+      "name": "1992 Chevrolet Light Trucks brochure (oldcarbrochures.org)",
+      "url": "https://www.oldcarbrochures.org/United%20States/GM%20Trucks%20and%20Vans/1992-Trucks-and-vans/1992%20Chevrolet%20Light%20Trucks/index.html",
+      "says": "Largest available engine 7.4L (454) gas V8, standard in the C1500 454 SS"
+     },
+     {
+      "name": "EPA fueleconomy.gov vehicle data",
+      "url": "https://www.fueleconomy.gov/feg/download.shtml",
+      "says": "1992: C1500 Pickup 2WD 7.4 L 8-cyl"
+     },
+     {
+      "name": "Wikipedia - Chevrolet C/K (fourth generation)",
+      "url": "https://en.wikipedia.org/wiki/Chevrolet_C/K_(fourth_generation)",
+      "says": "454 SS 1990: 230 hp; 1991-93: 255 hp @4000"
+     },
+     {
+      "name": "Consumer Guide - 1990-98 Chevrolet C/K Pickup used-car review",
+      "url": "https://consumerguide.com/used/1990-98-chevrolet-ck-pickup/",
+      "says": "454 SS arrived in 1990; in 1991 that engine made 255 horsepower, 25 more than in 1990"
+     }
+    ],
+    "status": "three_sources_not_nhra",
+    "note": "255 hp @ 4000."
+   },
+   {
+    "gen": "gmt400",
+    "cid": 379,
+    "hp": 140,
+    "hp_basis": "net",
+    "rpo": "LH6",
+    "name": "6.2L / 379 V8 diesel",
+    "common_name": "Detroit Diesel 6.2",
+    "trims": [
+     "C1500 2WD",
+     "K1500 4WD",
+     "long box only (1990+)"
+    ],
+    "nhra": false,
+    "sources": [
+     {
+      "name": "EPA fueleconomy.gov vehicle data",
+      "url": "https://www.fueleconomy.gov/feg/download.shtml",
+      "says": "1992: C1500/K1500 Pickup 6.2 L 8-cyl diesel"
+     },
+     {
+      "name": "Wikipedia - Chevrolet C/K (fourth generation)",
+      "url": "https://en.wikipedia.org/wiki/Chevrolet_C/K_(fourth_generation)",
+      "says": "6.2 diesel offered (limited availability in 1500)"
+     },
+     {
+      "name": "Consumer Guide - 1990-98 Chevrolet C/K Pickup used-car review",
+      "url": "https://consumerguide.com/used/1990-98-chevrolet-ck-pickup/",
+      "says": "6.2-liter diesel V8 that developed 140-150 horsepower; replaced by the 6.5 in 1994"
+     }
+    ],
+    "status": "three_sources_not_nhra",
+    "note": "No 1992 Chevrolet spec table found; 140 hp assumed unchanged from 1991 (Consumer Guide gives a 140-150 range)."
+   }
+  ],
+  "1993": [
+   {
+    "gen": "gmt400",
+    "cid": 262,
+    "hp": 165,
+    "hp_basis": "net",
+    "rpo": "LB4",
+    "name": "4.3L / 262 V6",
+    "common_name": "Vortec 4.3 V6 (TBI)",
+    "trims": [
+     "C1500 2WD",
+     "K1500 4WD",
+     "Cheyenne",
+     "Scottsdale",
+     "Silverado",
+     "W/T1500"
+    ],
+    "nhra": false,
+    "sources": [
+     {
+      "name": "Cars.com - 1993 Chevrolet 1500 research page (expert review, trim list)",
+      "url": "https://www.cars.com/research/chevrolet-1500-1993/specs/",
+      "says": "standard engine 165-horsepower V-6 (review text says '4-liter')"
+     },
+     {
+      "name": "EPA fueleconomy.gov vehicle data",
+      "url": "https://www.fueleconomy.gov/feg/download.shtml",
+      "says": "1993: C1500/K1500 Pickup 4.3 L 6-cyl"
+     },
+     {
+      "name": "Wikipedia - Chevrolet C/K (fourth generation)",
+      "url": "https://en.wikipedia.org/wiki/Chevrolet_C/K_(fourth_generation)",
+      "says": "LB4 4.3 V6 160 hp 1988-92, 165 hp 1993(-94)"
+     },
+     {
+      "name": "Consumer Guide - 1990-98 Chevrolet C/K Pickup used-car review",
+      "url": "https://consumerguide.com/used/1990-98-chevrolet-ck-pickup/",
+      "says": "At introduction, base engine for the C/K 1500 and 2500 was a 160-horsepower 4.3-liter V6"
+     }
+    ],
+    "status": "three_sources_not_nhra",
+    "note": "165 hp per Wikipedia and Cars.com; no 1993 Chevrolet spec table found."
+   },
+   {
+    "gen": "gmt400",
+    "cid": 305,
+    "hp": 175,
+    "hp_basis": "net",
+    "rpo": "L03",
+    "name": "5.0L / 305 V8",
+    "common_name": "305 small-block (TBI)",
+    "trims": [
+     "C1500 2WD",
+     "K1500 4WD",
+     "Cheyenne",
+     "Scottsdale",
+     "Silverado"
+    ],
+    "nhra": false,
+    "sources": [
+     {
+      "name": "EPA fueleconomy.gov vehicle data",
+      "url": "https://www.fueleconomy.gov/feg/download.shtml",
+      "says": "1993: C1500/K1500 Pickup 5.0 L 8-cyl"
+     },
+     {
+      "name": "Wikipedia - Chevrolet C/K (fourth generation)",
+      "url": "https://en.wikipedia.org/wiki/Chevrolet_C/K_(fourth_generation)",
+      "says": "L03 5.0 V8 175 hp (1988-93 @4000, 1994-95 @4200)"
+     },
+     {
+      "name": "Consumer Guide - 1990-98 Chevrolet C/K Pickup used-car review",
+      "url": "https://consumerguide.com/used/1990-98-chevrolet-ck-pickup/",
+      "says": "Options included 5.0- and 5.7-liter gasoline V8s, rated 175 and 210 horsepower"
+     }
+    ],
+    "status": "three_sources_not_nhra",
+    "note": "Throttle-body injection. No 1993 Chevrolet spec table found."
+   },
+   {
+    "gen": "gmt400",
+    "cid": 350,
+    "hp": 210,
+    "hp_basis": "net",
+    "rpo": "L05",
+    "name": "5.7L / 350 V8",
+    "common_name": "350 small-block (TBI)",
+    "trims": [
+     "C1500 2WD",
+     "K1500 4WD",
+     "Cheyenne",
+     "Scottsdale",
+     "Silverado"
+    ],
+    "nhra": false,
+    "sources": [
+     {
+      "name": "Cars.com - 1993 Chevrolet 1500 research page (expert review, trim list)",
+      "url": "https://www.cars.com/research/chevrolet-1500-1993/specs/",
+      "says": "optional 5.7-liter V-8 rated 210 horsepower at 4,000 rpm"
+     },
+     {
+      "name": "EPA fueleconomy.gov vehicle data",
+      "url": "https://www.fueleconomy.gov/feg/download.shtml",
+      "says": "1993: C1500/K1500 Pickup 5.7 L 8-cyl (350 V8)"
+     },
+     {
+      "name": "Wikipedia - Chevrolet C/K (fourth generation)",
+      "url": "https://en.wikipedia.org/wiki/Chevrolet_C/K_(fourth_generation)",
+      "says": "L05 5.7 V8 210 hp 1988-93, 200 hp 1994-95"
+     },
+     {
+      "name": "Consumer Guide - 1990-98 Chevrolet C/K Pickup used-car review",
+      "url": "https://consumerguide.com/used/1990-98-chevrolet-ck-pickup/",
+      "says": "5.7-liter gasoline V8 rated 210 horsepower"
+     }
+    ],
+    "status": "three_sources_not_nhra",
+    "note": "Throttle-body injection."
+   },
+   {
+    "gen": "gmt400",
+    "cid": 454,
+    "hp": 255,
+    "hp_basis": "net",
+    "rpo": "L19",
+    "name": "7.4L / 454 V8",
+    "common_name": "454 SS big-block (TBI)",
+    "trims": [
+     "454 SS (C1500 2WD regular-cab short box only)"
+    ],
+    "nhra": false,
+    "sources": [
+     {
+      "name": "1993 Chevrolet Light Trucks brochure (auto-brochures.com)",
+      "url": "https://www.auto-brochures.com/makes/Chevrolet/Chevrolet_US%20trucks_1993.pdf",
+      "says": "The 454 SS ... a 7.4 Liter (454 cu. in.) gas V8 engine; 'largest V8 of any new half-ton pickup'"
+     },
+     {
+      "name": "Cars.com - 1993 Chevrolet 1500 research page (expert review, trim list)",
+      "url": "https://www.cars.com/research/chevrolet-1500-1993/specs/",
+      "says": "trim list includes Reg Cab 117.5\" WB 454 SS"
+     },
+     {
+      "name": "EPA fueleconomy.gov vehicle data",
+      "url": "https://www.fueleconomy.gov/feg/download.shtml",
+      "says": "1993: C1500 Pickup 2WD 7.4 L 8-cyl"
+     },
+     {
+      "name": "Wikipedia - Chevrolet C/K (fourth generation)",
+      "url": "https://en.wikipedia.org/wiki/Chevrolet_C/K_(fourth_generation)",
+      "says": "454 SS 1990: 230 hp; 1991-93: 255 hp @4000"
+     },
+     {
+      "name": "Consumer Guide - 1990-98 Chevrolet C/K Pickup used-car review",
+      "url": "https://consumerguide.com/used/1990-98-chevrolet-ck-pickup/",
+      "says": "454 SS arrived in 1990; in 1991 that engine made 255 horsepower, 25 more than in 1990"
+     }
+    ],
+    "status": "three_sources_not_nhra",
+    "note": "255 hp @ 4000."
+   },
+   {
+    "gen": "gmt400",
+    "cid": 379,
+    "hp": 140,
+    "hp_basis": "net",
+    "rpo": "LH6",
+    "name": "6.2L / 379 V8 diesel",
+    "common_name": "Detroit Diesel 6.2",
+    "trims": [
+     "C1500 2WD",
+     "K1500 4WD",
+     "long box only (1990+)"
+    ],
+    "nhra": false,
+    "sources": [
+     {
+      "name": "1993 Chevrolet Light Trucks brochure (auto-brochures.com)",
+      "url": "https://www.auto-brochures.com/makes/Chevrolet/Chevrolet_US%20trucks_1993.pdf",
+      "says": "'Full-Size Pickups and Sportvans also have diesel power options'"
+     },
+     {
+      "name": "EPA fueleconomy.gov vehicle data",
+      "url": "https://www.fueleconomy.gov/feg/download.shtml",
+      "says": "1993: C1500/K1500 Pickup 6.2 L 8-cyl diesel"
+     },
+     {
+      "name": "Wikipedia - Chevrolet C/K (fourth generation)",
+      "url": "https://en.wikipedia.org/wiki/Chevrolet_C/K_(fourth_generation)",
+      "says": "6.2 diesel offered (limited availability in 1500)"
+     },
+     {
+      "name": "Consumer Guide - 1990-98 Chevrolet C/K Pickup used-car review",
+      "url": "https://consumerguide.com/used/1990-98-chevrolet-ck-pickup/",
+      "says": "6.2-liter diesel V8 that developed 140-150 horsepower; replaced by the 6.5 in 1994"
+     }
+    ],
+    "status": "three_sources_not_nhra",
+    "note": "Final year. No 1993 rating table found; 140 hp assumed from 1991 (Consumer Guide: 140-150)."
+   }
+  ],
+  "1994": [
+   {
+    "gen": "gmt400",
+    "cid": 262,
+    "hp": 165,
+    "hp_basis": "net",
+    "rpo": "LB4",
+    "name": "4.3L / 262 V6",
+    "common_name": "Vortec 4.3 V6 (TBI)",
+    "trims": [
+     "C1500 2WD",
+     "K1500 4WD",
+     "Cheyenne",
+     "Scottsdale",
+     "Silverado",
+     "W/T1500"
+    ],
+    "nhra": false,
+    "sources": [
+     {
+      "name": "1994 GMC Sierra Pickup brochure - GM twin of the C/K (oldcarbrochures.org)",
+      "url": "https://www.oldcarbrochures.org/United%20States/GM%20Trucks%20and%20Vans/1994-Trucks-and-Vans/1994-GMC-Sierra-Pickup-Brochure/index.html",
+      "says": "Sierra twin: 4.3L V6 LB4 165 @ 4000 (155 @ 4000 HD emissions)"
+     },
+     {
+      "name": "EPA fueleconomy.gov vehicle data",
+      "url": "https://www.fueleconomy.gov/feg/download.shtml",
+      "says": "1994: C1500/K1500 Pickup 4.3 L 6-cyl"
+     },
+     {
+      "name": "Wikipedia - Chevrolet C/K (fourth generation)",
+      "url": "https://en.wikipedia.org/wiki/Chevrolet_C/K_(fourth_generation)",
+      "says": "LB4 4.3 V6 160 hp 1988-92, 165 hp 1993(-94)"
+     },
+     {
+      "name": "Consumer Guide - 1990-98 Chevrolet C/K Pickup used-car review",
+      "url": "https://consumerguide.com/used/1990-98-chevrolet-ck-pickup/",
+      "says": "At introduction, base engine for the C/K 1500 and 2500 was a 160-horsepower 4.3-liter V6"
+     }
+    ],
+    "status": "three_sources_not_nhra",
+    "note": "GMC Sierra twin brochure gives 165 (155 HD-emissions)."
+   },
+   {
+    "gen": "gmt400",
+    "cid": 305,
+    "hp": 175,
+    "hp_basis": "net",
+    "rpo": "L03",
+    "name": "5.0L / 305 V8",
+    "common_name": "305 small-block (TBI)",
+    "trims": [
+     "C1500 2WD",
+     "K1500 4WD",
+     "Cheyenne",
+     "Scottsdale",
+     "Silverado"
+    ],
+    "nhra": false,
+    "sources": [
+     {
+      "name": "1994 GMC Sierra Pickup brochure - GM twin of the C/K (oldcarbrochures.org)",
+      "url": "https://www.oldcarbrochures.org/United%20States/GM%20Trucks%20and%20Vans/1994-Trucks-and-Vans/1994-GMC-Sierra-Pickup-Brochure/index.html",
+      "says": "Sierra twin: 5.0L V8 L03, 160 @ 4000 / 175 @ 4000 (footnoted variants)"
+     },
+     {
+      "name": "EPA fueleconomy.gov vehicle data",
+      "url": "https://www.fueleconomy.gov/feg/download.shtml",
+      "says": "1994: C1500/K1500 Pickup 5.0 L 8-cyl"
+     },
+     {
+      "name": "Wikipedia - Chevrolet C/K (fourth generation)",
+      "url": "https://en.wikipedia.org/wiki/Chevrolet_C/K_(fourth_generation)",
+      "says": "L03 5.0 V8 175 hp (1988-93 @4000, 1994-95 @4200)"
+     },
+     {
+      "name": "Consumer Guide - 1990-98 Chevrolet C/K Pickup used-car review",
+      "url": "https://consumerguide.com/used/1990-98-chevrolet-ck-pickup/",
+      "says": "Options included 5.0- and 5.7-liter gasoline V8s, rated 175 and 210 horsepower"
+     }
+    ],
+    "status": "three_sources_not_nhra",
+    "note": "Throttle-body injection. GMC twin brochure also lists a 160 hp variant."
+   },
+   {
+    "gen": "gmt400",
+    "cid": 350,
+    "hp": 200,
+    "hp_basis": "net",
+    "rpo": "L05",
+    "name": "5.7L / 350 V8",
+    "common_name": "350 small-block (TBI)",
+    "trims": [
+     "C1500 2WD",
+     "K1500 4WD",
+     "Cheyenne",
+     "Scottsdale",
+     "Silverado"
+    ],
+    "nhra": false,
+    "sources": [
+     {
+      "name": "1994 GMC Sierra Pickup brochure - GM twin of the C/K (oldcarbrochures.org)",
+      "url": "https://www.oldcarbrochures.org/United%20States/GM%20Trucks%20and%20Vans/1994-Trucks-and-Vans/1994-GMC-Sierra-Pickup-Brochure/index.html",
+      "says": "Sierra twin: 5.7L V8 L05 190 @ 4400 / 210 @ 4000 / 190 @ 4000 (footnoted variants)"
+     },
+     {
+      "name": "Cars.com - 1994 Chevrolet 1500 research page (expert review)",
+      "url": "https://www.cars.com/research/chevrolet-1500-1994/",
+      "says": "review truck: 5.7-liter V-8 (13/17 mpg 4WD)"
+     },
+     {
+      "name": "EPA fueleconomy.gov vehicle data",
+      "url": "https://www.fueleconomy.gov/feg/download.shtml",
+      "says": "1994: C1500/K1500 Pickup 5.7 L 8-cyl (350 V8)"
+     },
+     {
+      "name": "Wikipedia - Chevrolet C/K (fourth generation)",
+      "url": "https://en.wikipedia.org/wiki/Chevrolet_C/K_(fourth_generation)",
+      "says": "L05 5.7 V8 210 hp 1988-93, 200 hp 1994-95"
+     },
+     {
+      "name": "Consumer Guide - 1990-98 Chevrolet C/K Pickup used-car review",
+      "url": "https://consumerguide.com/used/1990-98-chevrolet-ck-pickup/",
+      "says": "5.7-liter gasoline V8 rated 210 horsepower"
+     }
+    ],
+    "status": "three_sources_not_nhra",
+    "note": "Wikipedia gives 200 for 1994-95; the 1994 GMC twin brochure shows 190/210/190 variants. Recorded 200."
+   },
+   {
+    "gen": "gmt400",
+    "cid": 395,
+    "hp": 155,
+    "hp_basis": "net",
+    "rpo": "L49",
+    "name": "6.5L / 395 V8 diesel",
+    "common_name": "6.5 diesel (naturally aspirated)",
+    "trims": [
+     "C1500 2WD",
+     "K1500 4WD",
+     "not short-box regular cab"
+    ],
+    "nhra": false,
+    "sources": [
+     {
+      "name": "1994 GMC Sierra Pickup brochure - GM twin of the C/K (oldcarbrochures.org)",
+      "url": "https://www.oldcarbrochures.org/United%20States/GM%20Trucks%20and%20Vans/1994-Trucks-and-Vans/1994-GMC-Sierra-Pickup-Brochure/index.html",
+      "says": "Sierra twin: 6.5L V8 diesel L49 395 ci, 155 @ 3600"
+     },
+     {
+      "name": "Cars.com - 1994 Chevrolet 1500 research page (expert review)",
+      "url": "https://www.cars.com/research/chevrolet-1500-1994/",
+      "says": "'6.5-liter, 155-horsepower V-8 diesel' in the 1500 Fleetside 4WD tested"
+     },
+     {
+      "name": "EPA fueleconomy.gov vehicle data",
+      "url": "https://www.fueleconomy.gov/feg/download.shtml",
+      "says": "1994: C1500/K1500 Pickup 6.5 L 8-cyl diesel, non-turbo"
+     },
+     {
+      "name": "Wikipedia - Chevrolet C/K (fourth generation)",
+      "url": "https://en.wikipedia.org/wiki/Chevrolet_C/K_(fourth_generation)",
+      "says": "6.5 NA diesel (L49) 1994-95 only, 155 hp"
+     },
+     {
+      "name": "Consumer Guide - 1990-98 Chevrolet C/K Pickup used-car review",
+      "url": "https://consumerguide.com/used/1990-98-chevrolet-ck-pickup/",
+      "says": "A 155-horsepower 6.5-liter diesel replaced the 6.2-liter in 1994"
+     }
+    ],
+    "status": "three_sources_not_nhra",
+    "note": "Displacement printed as 395 ci (GMC) or 397/400 ci (Chevrolet)."
+   },
+   {
+    "gen": "gmt400",
+    "cid": 395,
+    "hp": 180,
+    "hp_basis": "net",
+    "rpo": "L56",
+    "name": "6.5L / 395 V8 turbo diesel",
+    "common_name": "6.5 Turbo Diesel",
+    "trims": [
+     "C1500 2WD",
+     "K1500 4WD",
+     "not short-box regular cab"
+    ],
+    "nhra": false,
+    "sources": [
+     {
+      "name": "1994 GMC Sierra Pickup brochure - GM twin of the C/K (oldcarbrochures.org)",
+      "url": "https://www.oldcarbrochures.org/United%20States/GM%20Trucks%20and%20Vans/1994-Trucks-and-Vans/1994-GMC-Sierra-Pickup-Brochure/index.html",
+      "says": "Sierra twin: 6.5L V8 Turbo diesel L56/L65 180 @ 3400 (190 HD)"
+     },
+     {
+      "name": "EPA fueleconomy.gov vehicle data",
+      "url": "https://www.fueleconomy.gov/feg/download.shtml",
+      "says": "1994: C1500/K1500 Pickup 6.5 L 8-cyl turbo diesel"
+     },
+     {
+      "name": "Wikipedia - Chevrolet C/K (fourth generation)",
+      "url": "https://en.wikipedia.org/wiki/Chevrolet_C/K_(fourth_generation)",
+      "says": "6.5 turbo diesel (L56) 180 hp @3400, listed 1994-97"
+     },
+     {
+      "name": "Consumer Guide - 1990-98 Chevrolet C/K Pickup used-car review",
+      "url": "https://consumerguide.com/used/1990-98-chevrolet-ck-pickup/",
+      "says": "6.5 turbodiesel with 180 horsepower"
+     }
+    ],
+    "status": "three_sources_not_nhra",
+    "note": "L56 light-duty turbo diesel; the L65 (190 hp) was the HD version."
+   }
+  ],
+  "1995": [
+   {
+    "gen": "gmt400",
+    "cid": 262,
+    "hp": 160,
+    "hp_basis": "net",
+    "rpo": "LB4",
+    "name": "4.3L / 262 V6",
+    "common_name": "Vortec 4.3 V6 (TBI)",
+    "trims": [
+     "C1500 2WD",
+     "K1500 4WD",
+     "Cheyenne",
+     "Scottsdale",
+     "Silverado",
+     "W/T1500"
+    ],
+    "nhra": false,
+    "sources": [
+     {
+      "name": "1995 Chevrolet C/K Pickups brochure (oldcarbrochures.org)",
+      "url": "https://www.oldcarbrochures.org/United%20States/GM%20Trucks%20and%20Vans/1995-Trucks-and-Vans/1995-Chevrolet-C-K-Pickups-Brochure/index.html",
+      "says": "Powerteam table: 4.3L V6 w/TBI 262, 160 @ 4000, Standard in C/K 1500"
+     },
+     {
+      "name": "EPA fueleconomy.gov vehicle data",
+      "url": "https://www.fueleconomy.gov/feg/download.shtml",
+      "says": "1995: C1500/K1500 Pickup 4.3 L 6-cyl"
+     },
+     {
+      "name": "Wikipedia - Chevrolet C/K (fourth generation)",
+      "url": "https://en.wikipedia.org/wiki/Chevrolet_C/K_(fourth_generation)",
+      "says": "LB4 4.3 V6 160 hp 1988-92, 165 hp 1993(-94)"
+     },
+     {
+      "name": "Consumer Guide - 1990-98 Chevrolet C/K Pickup used-car review",
+      "url": "https://consumerguide.com/used/1990-98-chevrolet-ck-pickup/",
+      "says": "At introduction, base engine for the C/K 1500 and 2500 was a 160-horsepower 4.3-liter V6"
+     }
+    ],
+    "status": "three_sources_not_nhra",
+    "note": "Chevrolet 1995 brochure prints 160 @ 4000; the 1994 GMC brochure and Wikipedia give 165 for 1993-94. Recorded the factory 1995 figure."
+   },
+   {
+    "gen": "gmt400",
+    "cid": 305,
+    "hp": 175,
+    "hp_basis": "net",
+    "rpo": "L03",
+    "name": "5.0L / 305 V8",
+    "common_name": "305 small-block (TBI)",
+    "trims": [
+     "C1500 2WD",
+     "K1500 4WD",
+     "Cheyenne",
+     "Scottsdale",
+     "Silverado"
+    ],
+    "nhra": false,
+    "sources": [
+     {
+      "name": "1995 Chevrolet C/K Pickups brochure (oldcarbrochures.org)",
+      "url": "https://www.oldcarbrochures.org/United%20States/GM%20Trucks%20and%20Vans/1995-Trucks-and-Vans/1995-Chevrolet-C-K-Pickups-Brochure/index.html",
+      "says": "5.0L V8 w/TBI 305, 175 @ 4200; optional in C/K 1500"
+     },
+     {
+      "name": "EPA fueleconomy.gov vehicle data",
+      "url": "https://www.fueleconomy.gov/feg/download.shtml",
+      "says": "1995: C1500/K1500 Pickup 5.0 L 8-cyl"
+     },
+     {
+      "name": "Wikipedia - Chevrolet C/K (fourth generation)",
+      "url": "https://en.wikipedia.org/wiki/Chevrolet_C/K_(fourth_generation)",
+      "says": "L03 5.0 V8 175 hp (1988-93 @4000, 1994-95 @4200)"
+     },
+     {
+      "name": "Consumer Guide - 1990-98 Chevrolet C/K Pickup used-car review",
+      "url": "https://consumerguide.com/used/1990-98-chevrolet-ck-pickup/",
+      "says": "Options included 5.0- and 5.7-liter gasoline V8s, rated 175 and 210 horsepower"
+     }
+    ],
+    "status": "three_sources_not_nhra",
+    "note": "Throttle-body injection."
+   },
+   {
+    "gen": "gmt400",
+    "cid": 350,
+    "hp": 200,
+    "hp_basis": "net",
+    "rpo": "L05",
+    "name": "5.7L / 350 V8",
+    "common_name": "350 small-block (TBI)",
+    "trims": [
+     "C1500 2WD",
+     "K1500 4WD",
+     "Cheyenne",
+     "Scottsdale",
+     "Silverado"
+    ],
+    "nhra": false,
+    "sources": [
+     {
+      "name": "1995 Chevrolet C/K Pickups brochure (oldcarbrochures.org)",
+      "url": "https://www.oldcarbrochures.org/United%20States/GM%20Trucks%20and%20Vans/1995-Trucks-and-Vans/1995-Chevrolet-C-K-Pickups-Brochure/index.html",
+      "says": "5.7L V8 w/TBI 350 200 @ 4000; optional in C/K 1500"
+     },
+     {
+      "name": "EPA fueleconomy.gov vehicle data",
+      "url": "https://www.fueleconomy.gov/feg/download.shtml",
+      "says": "1995: C1500/K1500 Pickup 5.7 L 8-cyl (350 V8)"
+     },
+     {
+      "name": "Wikipedia - Chevrolet C/K (fourth generation)",
+      "url": "https://en.wikipedia.org/wiki/Chevrolet_C/K_(fourth_generation)",
+      "says": "L05 5.7 V8 210 hp 1988-93, 200 hp 1994-95"
+     },
+     {
+      "name": "Consumer Guide - 1990-98 Chevrolet C/K Pickup used-car review",
+      "url": "https://consumerguide.com/used/1990-98-chevrolet-ck-pickup/",
+      "says": "5.7-liter gasoline V8 rated 210 horsepower"
+     }
+    ],
+    "status": "three_sources_not_nhra",
+    "note": "1995 Chevrolet brochure: 200 @ 4000 (HD-emissions 180 hp version for >8500 lb GVWR)."
+   },
+   {
+    "gen": "gmt400",
+    "cid": 395,
+    "hp": 155,
+    "hp_basis": "net",
+    "rpo": "L49",
+    "name": "6.5L / 395 V8 diesel",
+    "common_name": "6.5 diesel (naturally aspirated)",
+    "trims": [
+     "C1500 2WD",
+     "K1500 4WD",
+     "not short-box regular cab"
+    ],
+    "nhra": false,
+    "sources": [
+     {
+      "name": "1995 Chevrolet C/K Pickups brochure (oldcarbrochures.org)",
+      "url": "https://www.oldcarbrochures.org/United%20States/GM%20Trucks%20and%20Vans/1995-Trucks-and-Vans/1995-Chevrolet-C-K-Pickups-Brochure/index.html",
+      "says": "6.5L Diesel V8 (naturally aspirated) 397, 155 @ 3600; optional in C/K 1500 (not short-wheelbase regular cab)"
+     },
+     {
+      "name": "EPA fueleconomy.gov vehicle data",
+      "url": "https://www.fueleconomy.gov/feg/download.shtml",
+      "says": "1995: C1500/K1500 Pickup 6.5 L 8-cyl diesel, non-turbo"
+     },
+     {
+      "name": "Wikipedia - Chevrolet C/K (fourth generation)",
+      "url": "https://en.wikipedia.org/wiki/Chevrolet_C/K_(fourth_generation)",
+      "says": "6.5 NA diesel (L49) 1994-95 only, 155 hp"
+     },
+     {
+      "name": "Consumer Guide - 1990-98 Chevrolet C/K Pickup used-car review",
+      "url": "https://consumerguide.com/used/1990-98-chevrolet-ck-pickup/",
+      "says": "A 155-horsepower 6.5-liter diesel replaced the 6.2-liter in 1994"
+     }
+    ],
+    "status": "three_sources_not_nhra",
+    "note": "Displacement printed as 395 ci (GMC) or 397/400 ci (Chevrolet)."
+   },
+   {
+    "gen": "gmt400",
+    "cid": 395,
+    "hp": 180,
+    "hp_basis": "net",
+    "rpo": "L56",
+    "name": "6.5L / 395 V8 turbo diesel",
+    "common_name": "6.5 Turbo Diesel",
+    "trims": [
+     "C1500 2WD",
+     "K1500 4WD",
+     "not short-box regular cab"
+    ],
+    "nhra": false,
+    "sources": [
+     {
+      "name": "1995 Chevrolet C/K Pickups brochure (oldcarbrochures.org)",
+      "url": "https://www.oldcarbrochures.org/United%20States/GM%20Trucks%20and%20Vans/1995-Trucks-and-Vans/1995-Chevrolet-C-K-Pickups-Brochure/index.html",
+      "says": "6.5L Turbo Diesel V8 397, 180 @ 3400; optional in C/K 1500"
+     },
+     {
+      "name": "EPA fueleconomy.gov vehicle data",
+      "url": "https://www.fueleconomy.gov/feg/download.shtml",
+      "says": "1995: C1500/K1500 Pickup 6.5 L 8-cyl turbo diesel"
+     },
+     {
+      "name": "Wikipedia - Chevrolet C/K (fourth generation)",
+      "url": "https://en.wikipedia.org/wiki/Chevrolet_C/K_(fourth_generation)",
+      "says": "6.5 turbo diesel (L56) 180 hp @3400, listed 1994-97"
+     },
+     {
+      "name": "Consumer Guide - 1990-98 Chevrolet C/K Pickup used-car review",
+      "url": "https://consumerguide.com/used/1990-98-chevrolet-ck-pickup/",
+      "says": "6.5 turbodiesel with 180 horsepower"
+     }
+    ],
+    "status": "three_sources_not_nhra",
+    "note": "L56 light-duty turbo diesel; the L65 (190 hp) was the HD version."
+   }
+  ],
+  "1996": [
+   {
+    "gen": "gmt400",
+    "cid": 262,
+    "hp": 200,
+    "hp_basis": "net",
+    "rpo": "L35",
+    "name": "4.3L / 262 V6",
+    "common_name": "Vortec 4300 (CSFI)",
+    "trims": [
+     "C1500 2WD",
+     "K1500 4WD",
+     "Cheyenne",
+     "Scottsdale",
+     "Silverado",
+     "W/T1500"
+    ],
+    "nhra": false,
+    "sources": [
+     {
+      "name": "1996 Chevrolet C/K Pickups brochure (oldcarbrochures.org)",
+      "url": "https://www.oldcarbrochures.org/United%20States/GM%20Trucks%20and%20Vans/1996-Trucks-and-Vans/1996-Chevrolet-CK-Pickups-Brochure/index.html",
+      "says": "Engine specs C/K1500: Vortec 4300 V6 w/SFI (RPO L35) 200 @ 4400; Standard in C/K1500"
+     },
+     {
+      "name": "EPA fueleconomy.gov vehicle data",
+      "url": "https://www.fueleconomy.gov/feg/download.shtml",
+      "says": "1996: C1500/K1500 Pickup 4.3 L 6-cyl"
+     },
+     {
+      "name": "Wikipedia - Chevrolet C/K (fourth generation)",
+      "url": "https://en.wikipedia.org/wiki/Chevrolet_C/K_(fourth_generation)",
+      "says": "Vortec 4300 200 hp 1996-98"
+     },
+     {
+      "name": "Consumer Guide - 1990-98 Chevrolet C/K Pickup used-car review",
+      "url": "https://consumerguide.com/used/1990-98-chevrolet-ck-pickup/",
+      "says": "1996: The 4.3-liter V6 now made 200 horsepower (up 40)"
+     }
+    ],
+    "status": "three_sources_not_nhra",
+    "note": "Central sequential fuel injection; standard engine."
+   },
+   {
+    "gen": "gmt400",
+    "cid": 305,
+    "hp": 220,
+    "hp_basis": "net",
+    "rpo": "L30",
+    "name": "5.0L / 305 V8",
+    "common_name": "Vortec 5000",
+    "trims": [
+     "C1500 2WD",
+     "K1500 4WD",
+     "Cheyenne",
+     "Scottsdale",
+     "Silverado"
+    ],
+    "nhra": false,
+    "sources": [
+     {
+      "name": "1996 Chevrolet C/K Pickups brochure (oldcarbrochures.org)",
+      "url": "https://www.oldcarbrochures.org/United%20States/GM%20Trucks%20and%20Vans/1996-Trucks-and-Vans/1996-Chevrolet-CK-Pickups-Brochure/index.html",
+      "says": "Vortec 5000 V8 w/SFI (RPO L30) 220 @ 4600; optional C/K1500"
+     },
+     {
+      "name": "EPA fueleconomy.gov vehicle data",
+      "url": "https://www.fueleconomy.gov/feg/download.shtml",
+      "says": "1996: C1500/K1500 Pickup 5.0 L 8-cyl"
+     },
+     {
+      "name": "Wikipedia - Chevrolet C/K (fourth generation)",
+      "url": "https://en.wikipedia.org/wiki/Chevrolet_C/K_(fourth_generation)",
+      "says": "Vortec 5000 (L30) 230 hp @4600 1996-98"
+     },
+     {
+      "name": "Consumer Guide - 1990-98 Chevrolet C/K Pickup used-car review",
+      "url": "https://consumerguide.com/used/1990-98-chevrolet-ck-pickup/",
+      "says": "1996: The 5.0-liter V8 added 45 horsepower (now 220)"
+     }
+    ],
+    "status": "three_sources_not_nhra",
+    "note": "1996 brochure and Consumer Guide: 220 hp; Wikipedia gives 230 for all 1996-98. Recorded 220 for 1996 (factory)."
+   },
+   {
+    "gen": "gmt400",
+    "cid": 350,
+    "hp": 250,
+    "hp_basis": "net",
+    "rpo": "L31",
+    "name": "5.7L / 350 V8",
+    "common_name": "Vortec 5700",
+    "trims": [
+     "C1500 2WD",
+     "K1500 4WD",
+     "Cheyenne",
+     "Scottsdale",
+     "Silverado"
+    ],
+    "nhra": false,
+    "sources": [
+     {
+      "name": "1996 Chevrolet C/K Pickups brochure (oldcarbrochures.org)",
+      "url": "https://www.oldcarbrochures.org/United%20States/GM%20Trucks%20and%20Vans/1996-Trucks-and-Vans/1996-Chevrolet-CK-Pickups-Brochure/index.html",
+      "says": "Vortec 5700 V8 w/SFI (RPO L31) 250 @ 4600; optional C/K1500"
+     },
+     {
+      "name": "EPA fueleconomy.gov vehicle data",
+      "url": "https://www.fueleconomy.gov/feg/download.shtml",
+      "says": "1996: C1500/K1500 Pickup 5.7 L 8-cyl"
+     },
+     {
+      "name": "Wikipedia - Chevrolet C/K (fourth generation)",
+      "url": "https://en.wikipedia.org/wiki/Chevrolet_C/K_(fourth_generation)",
+      "says": "Vortec 5700 (L31) 255 hp @4600 1996-2000"
+     },
+     {
+      "name": "Consumer Guide - 1990-98 Chevrolet C/K Pickup used-car review",
+      "url": "https://consumerguide.com/used/1990-98-chevrolet-ck-pickup/",
+      "says": "1996: The 5.7-liter V8 gained 50 (rated at 250)"
+     }
+    ],
+    "status": "three_sources_not_nhra",
+    "note": "1996 brochure and Consumer Guide: 250 hp; Wikipedia says 255 from 1996. Recorded 250 for 1996 (factory)."
+   },
+   {
+    "gen": "gmt400",
+    "cid": 395,
+    "hp": 180,
+    "hp_basis": "net",
+    "rpo": "L56",
+    "name": "6.5L / 395 V8 turbo diesel",
+    "common_name": "6.5 Turbo Diesel",
+    "trims": [
+     "C1500 2WD",
+     "K1500 4WD",
+     "not short-box regular cab"
+    ],
+    "nhra": false,
+    "sources": [
+     {
+      "name": "1996 Chevrolet C/K Pickups brochure (oldcarbrochures.org)",
+      "url": "https://www.oldcarbrochures.org/United%20States/GM%20Trucks%20and%20Vans/1996-Trucks-and-Vans/1996-Chevrolet-CK-Pickups-Brochure/index.html",
+      "says": "6.5 Liter Turbo-Diesel V8 (RPO L56) 180 @ 3400; optional C/K1500, not short wheelbase"
+     },
+     {
+      "name": "EPA fueleconomy.gov vehicle data",
+      "url": "https://www.fueleconomy.gov/feg/download.shtml",
+      "says": "1996: C1500/K1500 Pickup 6.5 L 8-cyl turbo diesel"
+     },
+     {
+      "name": "Wikipedia - Chevrolet C/K (fourth generation)",
+      "url": "https://en.wikipedia.org/wiki/Chevrolet_C/K_(fourth_generation)",
+      "says": "6.5 turbo diesel (L56) 180 hp @3400, listed 1994-97"
+     },
+     {
+      "name": "Consumer Guide - 1990-98 Chevrolet C/K Pickup used-car review",
+      "url": "https://consumerguide.com/used/1990-98-chevrolet-ck-pickup/",
+      "says": "6.5 turbodiesel with 180 horsepower"
+     }
+    ],
+    "status": "three_sources_not_nhra",
+    "note": "L56 light-duty turbo diesel; the L65 (190 hp) was the HD version."
+   }
+  ],
+  "1997": [
+   {
+    "gen": "gmt400",
+    "cid": 262,
+    "hp": 200,
+    "hp_basis": "net",
+    "rpo": "L35",
+    "name": "4.3L / 262 V6",
+    "common_name": "Vortec 4300 (CSFI)",
+    "trims": [
+     "C1500 2WD",
+     "K1500 4WD",
+     "Cheyenne",
+     "Scottsdale",
+     "Silverado",
+     "W/T1500"
+    ],
+    "nhra": false,
+    "sources": [
+     {
+      "name": "Cars.com - 1997 Chevrolet 1500 research page (trim list)",
+      "url": "https://www.cars.com/research/chevrolet-1500-1997/",
+      "says": "1997 C/K 1500 trims listed with 'Gas V6' engine"
+     },
+     {
+      "name": "EPA fueleconomy.gov vehicle data",
+      "url": "https://www.fueleconomy.gov/feg/download.shtml",
+      "says": "1997: C1500/K1500 Pickup 4.3 L 6-cyl"
+     },
+     {
+      "name": "Wikipedia - Chevrolet C/K (fourth generation)",
+      "url": "https://en.wikipedia.org/wiki/Chevrolet_C/K_(fourth_generation)",
+      "says": "Vortec 4300 200 hp 1996-98"
+     },
+     {
+      "name": "Consumer Guide - 1990-98 Chevrolet C/K Pickup used-car review",
+      "url": "https://consumerguide.com/used/1990-98-chevrolet-ck-pickup/",
+      "says": "1996: The 4.3-liter V6 now made 200 horsepower (up 40)"
+     }
+    ],
+    "status": "three_sources_not_nhra",
+    "note": "Central sequential fuel injection; standard engine."
+   },
+   {
+    "gen": "gmt400",
+    "cid": 305,
+    "hp": 230,
+    "hp_basis": "net",
+    "rpo": "L30",
+    "name": "5.0L / 305 V8",
+    "common_name": "Vortec 5000",
+    "trims": [
+     "C1500 2WD",
+     "K1500 4WD",
+     "Cheyenne",
+     "Scottsdale",
+     "Silverado"
+    ],
+    "nhra": false,
+    "sources": [
+     {
+      "name": "Cars.com - 1997 Chevrolet 1500 research page (trim list)",
+      "url": "https://www.cars.com/research/chevrolet-1500-1997/",
+      "says": "1997 C/K 1500 trims listed with 'Gas V8' engine"
+     },
+     {
+      "name": "EPA fueleconomy.gov vehicle data",
+      "url": "https://www.fueleconomy.gov/feg/download.shtml",
+      "says": "1997: C1500/K1500 Pickup 5.0 L 8-cyl"
+     },
+     {
+      "name": "Wikipedia - Chevrolet C/K (fourth generation)",
+      "url": "https://en.wikipedia.org/wiki/Chevrolet_C/K_(fourth_generation)",
+      "says": "Vortec 5000 (L30) 230 hp @4600 1996-98"
+     },
+     {
+      "name": "Consumer Guide - 1990-98 Chevrolet C/K Pickup used-car review",
+      "url": "https://consumerguide.com/used/1990-98-chevrolet-ck-pickup/",
+      "says": "1996: The 5.0-liter V8 added 45 horsepower (now 220)"
+     }
+    ],
+    "status": "disputed",
+    "note": "230 hp per Wikipedia; the 1996 factory rating was 220. No 1997-98 Chevrolet US spec table found, so the 230 figure rests on Wikipedia alone."
+   },
+   {
+    "gen": "gmt400",
+    "cid": 350,
+    "hp": 255,
+    "hp_basis": "net",
+    "rpo": "L31",
+    "name": "5.7L / 350 V8",
+    "common_name": "Vortec 5700",
+    "trims": [
+     "C1500 2WD",
+     "K1500 4WD",
+     "Cheyenne",
+     "Scottsdale",
+     "Silverado"
+    ],
+    "nhra": false,
+    "sources": [
+     {
+      "name": "Kelley Blue Book - 1997 Chevrolet 1500 Regular Cab specs",
+      "url": "https://www.kbb.com/chevrolet/1500-regular-cab/1997/",
+      "says": "V8, 5.7 Liter, 255 @ 4600 RPM"
+     },
+     {
+      "name": "The Auto Channel - 1997 Chevrolet K1500 Silverado review",
+      "url": "https://www.theautochannel.com/vehicles/new/reviews/1997/nhromiak09019702.html",
+      "says": "K1500 Silverado: 5.7-liter V-8, 255 hp @ 4,600 rpm"
+     },
+     {
+      "name": "EPA fueleconomy.gov vehicle data",
+      "url": "https://www.fueleconomy.gov/feg/download.shtml",
+      "says": "1997: C1500/K1500 Pickup 5.7 L 8-cyl"
+     },
+     {
+      "name": "Wikipedia - Chevrolet C/K (fourth generation)",
+      "url": "https://en.wikipedia.org/wiki/Chevrolet_C/K_(fourth_generation)",
+      "says": "Vortec 5700 (L31) 255 hp @4600 1996-2000"
+     },
+     {
+      "name": "Consumer Guide - 1990-98 Chevrolet C/K Pickup used-car review",
+      "url": "https://consumerguide.com/used/1990-98-chevrolet-ck-pickup/",
+      "says": "1996: The 5.7-liter V8 gained 50 (rated at 250)"
+     }
+    ],
+    "status": "three_sources_not_nhra",
+    "note": "255 hp (KBB, Auto Channel review, Wikipedia)."
+   },
+   {
+    "gen": "gmt400",
+    "cid": 395,
+    "hp": 180,
+    "hp_basis": "net",
+    "rpo": "L56",
+    "name": "6.5L / 395 V8 turbo diesel",
+    "common_name": "6.5 Turbo Diesel",
+    "trims": [
+     "K1500 4WD"
+    ],
+    "nhra": false,
+    "sources": [
+     {
+      "name": "EPA fueleconomy.gov vehicle data",
+      "url": "https://www.fueleconomy.gov/feg/download.shtml",
+      "says": "1997: K1500 Pickup 4WD only 6.5 L 8-cyl turbo diesel"
+     },
+     {
+      "name": "Wikipedia - Chevrolet C/K (fourth generation)",
+      "url": "https://en.wikipedia.org/wiki/Chevrolet_C/K_(fourth_generation)",
+      "says": "6.5 turbo diesel (L56) 180 hp @3400, listed 1994-97"
+     },
+     {
+      "name": "Consumer Guide - 1990-98 Chevrolet C/K Pickup used-car review",
+      "url": "https://consumerguide.com/used/1990-98-chevrolet-ck-pickup/",
+      "says": "6.5 turbodiesel with 180 horsepower"
+     }
+    ],
+    "status": "three_sources_not_nhra",
+    "note": "EPA lists the turbo diesel only for the K1500 in 1997-98. No 1997 Chevrolet spec table found."
+   }
+  ],
+  "1998": [
+   {
+    "gen": "gmt400",
+    "cid": 262,
+    "hp": 200,
+    "hp_basis": "net",
+    "rpo": "L35",
+    "name": "4.3L / 262 V6",
+    "common_name": "Vortec 4300 (CSFI)",
+    "trims": [
+     "C1500 2WD",
+     "K1500 4WD",
+     "Cheyenne",
+     "Scottsdale",
+     "Silverado",
+     "W/T1500"
+    ],
+    "nhra": false,
+    "sources": [
+     {
+      "name": "EPA fueleconomy.gov vehicle data",
+      "url": "https://www.fueleconomy.gov/feg/download.shtml",
+      "says": "1998: C1500/K1500 Pickup 4.3 L 6-cyl"
+     },
+     {
+      "name": "Wikipedia - Chevrolet C/K (fourth generation)",
+      "url": "https://en.wikipedia.org/wiki/Chevrolet_C/K_(fourth_generation)",
+      "says": "Vortec 4300 200 hp 1996-98"
+     },
+     {
+      "name": "Consumer Guide - 1990-98 Chevrolet C/K Pickup used-car review",
+      "url": "https://consumerguide.com/used/1990-98-chevrolet-ck-pickup/",
+      "says": "1996: The 4.3-liter V6 now made 200 horsepower (up 40)"
+     }
+    ],
+    "status": "three_sources_not_nhra",
+    "note": "Central sequential fuel injection; standard engine. No 1998 Chevrolet US C/K brochure found; EPA, Wikipedia, Consumer Guide only."
+   },
+   {
+    "gen": "gmt400",
+    "cid": 305,
+    "hp": 230,
+    "hp_basis": "net",
+    "rpo": "L30",
+    "name": "5.0L / 305 V8",
+    "common_name": "Vortec 5000",
+    "trims": [
+     "C1500 2WD",
+     "K1500 4WD",
+     "Cheyenne",
+     "Scottsdale",
+     "Silverado"
+    ],
+    "nhra": false,
+    "sources": [
+     {
+      "name": "EPA fueleconomy.gov vehicle data",
+      "url": "https://www.fueleconomy.gov/feg/download.shtml",
+      "says": "1998: C1500/K1500 Pickup 5.0 L 8-cyl"
+     },
+     {
+      "name": "Wikipedia - Chevrolet C/K (fourth generation)",
+      "url": "https://en.wikipedia.org/wiki/Chevrolet_C/K_(fourth_generation)",
+      "says": "Vortec 5000 (L30) 230 hp @4600 1996-98"
+     },
+     {
+      "name": "Consumer Guide - 1990-98 Chevrolet C/K Pickup used-car review",
+      "url": "https://consumerguide.com/used/1990-98-chevrolet-ck-pickup/",
+      "says": "1996: The 5.0-liter V8 added 45 horsepower (now 220)"
+     }
+    ],
+    "status": "disputed",
+    "note": "230 hp per Wikipedia; the 1996 factory rating was 220. No 1997-98 Chevrolet US spec table found, so the 230 figure rests on Wikipedia alone."
+   },
+   {
+    "gen": "gmt400",
+    "cid": 350,
+    "hp": 255,
+    "hp_basis": "net",
+    "rpo": "L31",
+    "name": "5.7L / 350 V8",
+    "common_name": "Vortec 5700",
+    "trims": [
+     "C1500 2WD",
+     "K1500 4WD",
+     "Cheyenne",
+     "Scottsdale",
+     "Silverado"
+    ],
+    "nhra": false,
+    "sources": [
+     {
+      "name": "1998 Chevrolet C/K Pickup brochure, export market (oldcarbrochures.org)",
+      "url": "https://www.oldcarbrochures.org/United%20States/GM%20Trucks%20and%20Vans/1998-Trucks-and-Vans/1998-Chevrolet-C-K-Pickup-Brochure/index.html",
+      "says": "Export C/K brochure: 5.7 L V8 gas engine"
+     },
+     {
+      "name": "EPA fueleconomy.gov vehicle data",
+      "url": "https://www.fueleconomy.gov/feg/download.shtml",
+      "says": "1998: C1500/K1500 Pickup 5.7 L 8-cyl"
+     },
+     {
+      "name": "Wikipedia - Chevrolet C/K (fourth generation)",
+      "url": "https://en.wikipedia.org/wiki/Chevrolet_C/K_(fourth_generation)",
+      "says": "Vortec 5700 (L31) 255 hp @4600 1996-2000"
+     },
+     {
+      "name": "Consumer Guide - 1990-98 Chevrolet C/K Pickup used-car review",
+      "url": "https://consumerguide.com/used/1990-98-chevrolet-ck-pickup/",
+      "says": "1996: The 5.7-liter V8 gained 50 (rated at 250)"
+     }
+    ],
+    "status": "three_sources_not_nhra",
+    "note": "255 hp per Wikipedia (1997 figure carried)."
+   },
+   {
+    "gen": "gmt400",
+    "cid": 395,
+    "hp": 180,
+    "hp_basis": "net",
+    "rpo": "L56",
+    "name": "6.5L / 395 V8 turbo diesel",
+    "common_name": "6.5 Turbo Diesel",
+    "trims": [
+     "K1500 4WD"
+    ],
+    "nhra": false,
+    "sources": [
+     {
+      "name": "Cars.com - 1998 Chevrolet 1500 research page (expert review)",
+      "url": "https://www.cars.com/research/chevrolet-1500-1998/",
+      "says": "6.5-liter turbocharged diesel; GM offers versions making 180 hp and 195 hp"
+     },
+     {
+      "name": "1998 Chevrolet C/K Pickup brochure, export market (oldcarbrochures.org)",
+      "url": "https://www.oldcarbrochures.org/United%20States/GM%20Trucks%20and%20Vans/1998-Trucks-and-Vans/1998-Chevrolet-C-K-Pickup-Brochure/index.html",
+      "says": "Export C/K brochure: 6.5 Liter Turbo-Diesel"
+     },
+     {
+      "name": "EPA fueleconomy.gov vehicle data",
+      "url": "https://www.fueleconomy.gov/feg/download.shtml",
+      "says": "1998: K1500 Pickup 4WD only 6.5 L 8-cyl turbo diesel"
+     },
+     {
+      "name": "Wikipedia - Chevrolet C/K (fourth generation)",
+      "url": "https://en.wikipedia.org/wiki/Chevrolet_C/K_(fourth_generation)",
+      "says": "6.5 turbo diesel (L56) 180 hp @3400, listed 1994-97"
+     },
+     {
+      "name": "Consumer Guide - 1990-98 Chevrolet C/K Pickup used-car review",
+      "url": "https://consumerguide.com/used/1990-98-chevrolet-ck-pickup/",
+      "says": "6.5 turbodiesel with 180 horsepower"
+     }
+    ],
+    "status": "disputed",
+    "note": "Wikipedia lists the L56 only through 1997, but EPA lists a 1998 K1500 6.5 turbo diesel and the Cars.com 1998 review covers it (180 and 195 hp versions). Recorded 180 hp (1500 light-duty)."
+   }
+  ],
+  "1999": [
+   {
+    "gen": "gmt400",
+    "cid": 305,
+    "hp": 230,
+    "hp_basis": "net",
+    "rpo": "L30",
+    "name": "5.0L / 305 V8",
+    "common_name": "Vortec 5000",
+    "trims": [
+     "C/K 1500 Classic extended cab (fleet)"
+    ],
+    "nhra": false,
+    "sources": [
+     {
+      "name": "EPA fueleconomy.gov vehicle data",
+      "url": "https://www.fueleconomy.gov/feg/download.shtml",
+      "says": "1999: C1500 Pickup 2WD / K1500 Pickup 4WD 5.0 L 8-cyl (old-body Classic; the new Silverado is listed separately)"
+     },
+     {
+      "name": "Wikipedia - Chevrolet C/K (fourth generation)",
+      "url": "https://en.wikipedia.org/wiki/Chevrolet_C/K_(fourth_generation)",
+      "says": "1999-2000 C/K Classic still offered in all three payload series; 1500 Classic extended cab / 6.5 ft Fleetside only; L30 230 hp"
+     }
+    ],
+    "status": "two_sources_not_nhra",
+    "note": "No third source found. The Classic 1500 was aimed at fleets."
+   },
+   {
+    "gen": "gmt400",
+    "cid": 350,
+    "hp": 255,
+    "hp_basis": "net",
+    "rpo": "L31",
+    "name": "5.7L / 350 V8",
+    "common_name": "Vortec 5700",
+    "trims": [
+     "C/K 1500 Classic extended cab (fleet)"
+    ],
+    "nhra": false,
+    "sources": [
+     {
+      "name": "EPA fueleconomy.gov vehicle data",
+      "url": "https://www.fueleconomy.gov/feg/download.shtml",
+      "says": "1999: C1500 Pickup 2WD / K1500 Pickup 4WD 5.7 L 8-cyl"
+     },
+     {
+      "name": "Wikipedia - Chevrolet C/K (fourth generation)",
+      "url": "https://en.wikipedia.org/wiki/Chevrolet_C/K_(fourth_generation)",
+      "says": "L31 255 hp 1996-2000; 1500 Classic extended cab only"
+     }
+    ],
+    "status": "two_sources_not_nhra",
+    "note": "No third source found."
+   }
+  ]
+ },
+ "source_index": [
+  {
+   "name": "1988 Chevrolet Full-Size Pickup brochure (oldcarbrochures.org)",
+   "url": "https://www.oldcarbrochures.org/United%20States/GM%20Trucks%20and%20Vans/1988-GM-Trucks-and-Vans/1988%20Chevrolet%20Fullsize%20Pickup/index.html",
+   "type": "manufacturer"
+  },
+  {
+   "name": "1988 Chevrolet Full-Size Pickup brochure, revised edition (oldcarbrochures.org)",
+   "url": "https://www.oldcarbrochures.org/United%20States/GM%20Trucks%20and%20Vans/1988-GM-Trucks-and-Vans/1988%20Chevrolet%20Full-Size%20Pickup%20-%20Aug%201987/index.html",
+   "type": "manufacturer"
+  },
+  {
+   "name": "1989 Chevrolet Full-Size Pickup brochure (oldcarbrochures.org)",
+   "url": "https://www.oldcarbrochures.org/United%20States/GM%20Trucks%20and%20Vans/1989-GM-Trucks-and-Vans/1989-Chevrolet-Full-Size-Pickup-Brochure/index.html",
+   "type": "manufacturer"
+  },
+  {
+   "name": "1990 Chevrolet Full-Size Pickups brochure (oldcarbrochures.org)",
+   "url": "https://www.oldcarbrochures.org/United%20States/GM%20Trucks%20and%20Vans/1990-GM-Trucks-and-Vans/1990%20Chevrolet%20Truck%20Full%20Size%20Pickups/index.html",
+   "type": "manufacturer"
+  },
+  {
+   "name": "1991 Chevrolet Pickups brochure (oldcarbrochures.org)",
+   "url": "https://www.oldcarbrochures.org/United%20States/GM%20Trucks%20and%20Vans/1991-Trucks-and-Vans/1991-Chevrolet-Pickups-Brochure/index.html",
+   "type": "manufacturer"
+  },
+  {
+   "name": "1992 Chevrolet Light Trucks brochure (oldcarbrochures.org)",
+   "url": "https://www.oldcarbrochures.org/United%20States/GM%20Trucks%20and%20Vans/1992-Trucks-and-vans/1992%20Chevrolet%20Light%20Trucks/index.html",
+   "type": "manufacturer"
+  },
+  {
+   "name": "1993 Chevrolet Light Trucks brochure (auto-brochures.com)",
+   "url": "https://www.auto-brochures.com/makes/Chevrolet/Chevrolet_US%20trucks_1993.pdf",
+   "type": "manufacturer"
+  },
+  {
+   "name": "1994 GMC Sierra Pickup brochure - GM twin of the C/K (oldcarbrochures.org)",
+   "url": "https://www.oldcarbrochures.org/United%20States/GM%20Trucks%20and%20Vans/1994-Trucks-and-Vans/1994-GMC-Sierra-Pickup-Brochure/index.html",
+   "type": "manufacturer"
+  },
+  {
+   "name": "1995 Chevrolet C/K Pickups brochure (oldcarbrochures.org)",
+   "url": "https://www.oldcarbrochures.org/United%20States/GM%20Trucks%20and%20Vans/1995-Trucks-and-Vans/1995-Chevrolet-C-K-Pickups-Brochure/index.html",
+   "type": "manufacturer"
+  },
+  {
+   "name": "1996 Chevrolet C/K Pickups brochure (oldcarbrochures.org)",
+   "url": "https://www.oldcarbrochures.org/United%20States/GM%20Trucks%20and%20Vans/1996-Trucks-and-Vans/1996-Chevrolet-CK-Pickups-Brochure/index.html",
+   "type": "manufacturer"
+  },
+  {
+   "name": "1998 Chevrolet C/K Pickup brochure, export market (oldcarbrochures.org)",
+   "url": "https://www.oldcarbrochures.org/United%20States/GM%20Trucks%20and%20Vans/1998-Trucks-and-Vans/1998-Chevrolet-C-K-Pickup-Brochure/index.html",
+   "type": "manufacturer"
+  },
+  {
+   "name": "EPA fueleconomy.gov vehicle data",
+   "url": "https://www.fueleconomy.gov/feg/download.shtml",
+   "type": "manufacturer"
+  },
+  {
+   "name": "Wikipedia - Chevrolet C/K (fourth generation)",
+   "url": "https://en.wikipedia.org/wiki/Chevrolet_C/K_(fourth_generation)",
+   "type": "wikipedia"
+  },
+  {
+   "name": "Consumer Guide - 1990-98 Chevrolet C/K Pickup used-car review",
+   "url": "https://consumerguide.com/used/1990-98-chevrolet-ck-pickup/",
+   "type": "publication"
+  },
+  {
+   "name": "Cars.com - 1992 Chevrolet 1500 research page (expert review)",
+   "url": "https://www.cars.com/research/chevrolet-1500-1992/",
+   "type": "publication"
+  },
+  {
+   "name": "Cars.com - 1993 Chevrolet 1500 research page (expert review, trim list)",
+   "url": "https://www.cars.com/research/chevrolet-1500-1993/specs/",
+   "type": "publication"
+  },
+  {
+   "name": "Cars.com - 1994 Chevrolet 1500 research page (expert review)",
+   "url": "https://www.cars.com/research/chevrolet-1500-1994/",
+   "type": "publication"
+  },
+  {
+   "name": "Cars.com - 1997 Chevrolet 1500 research page (trim list)",
+   "url": "https://www.cars.com/research/chevrolet-1500-1997/",
+   "type": "publication"
+  },
+  {
+   "name": "Cars.com - 1998 Chevrolet 1500 research page (expert review)",
+   "url": "https://www.cars.com/research/chevrolet-1500-1998/",
+   "type": "publication"
+  },
+  {
+   "name": "Kelley Blue Book - 1997 Chevrolet 1500 Regular Cab specs",
+   "url": "https://www.kbb.com/chevrolet/1500-regular-cab/1997/",
+   "type": "publication"
+  },
+  {
+   "name": "The Auto Channel - 1997 Chevrolet K1500 Silverado review",
+   "url": "https://www.theautochannel.com/vehicles/new/reviews/1997/nhromiak09019702.html",
+   "type": "publication"
+  },
+  {
+   "name": "NHRA Stock Car Classification Guide (nhra_chevrolet-ck-1988-1998.json)",
+   "url": "nhra_chevrolet-ck-1988-1998.json",
+   "type": "registry"
+  }
+ ]
+}
