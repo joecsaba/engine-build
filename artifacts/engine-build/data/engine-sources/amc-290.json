@@ -1,0 +1,548 @@
+{
+ "name": "AMC 290 V8 (Gen 2 'Typhoon')",
+ "fields": {
+  "bore_in": {
+   "value": 3.75,
+   "sources": [
+    {
+     "name": "NHRA engine blueprint AMER-68",
+     "url": "https://www.nhra.net/tech_specs/engine/blueprints/AMER-68.rtf",
+     "says": "ameri_1968_290_200hp: 290 ci, 8 cyl, bore 3.75, stroke 3.28, rod 5.875, CR 9.0, 1x2-bbl, 1.6 rockers, hydraulic lifters; ameri_1968_290_225hp: CR 10.0, 1x4-bbl"
+    },
+    {
+     "name": "AMC 1968 full-line brochure (revised), Engines specification table [AMC]",
+     "url": "https://oldcarbrochures.org/United%20States/AMC/1968_AMC/1968%20AMC%20Full%20Line%20-%20Revised/index.html",
+     "says": "'290' V-8: 200 @ 4600, 2-Barrel, 9.0:1/Regular, 3.75\" x 3.28\"; 225 @ 4700, 4-Barrel, 10.0:1/Premium, 3.75\" x 3.28\""
+    },
+    {
+     "name": "Wikipedia - AMC V8 engine",
+     "url": "https://en.wikipedia.org/wiki/AMC_V8_engine",
+     "says": "290: bore and stroke 3.75 x 3.28 in; 200 or 225 hp with 2-bbl or 4-bbl; built mid-1966 through 1969; infobox OHV 2 valves x cyl, gasoline; table 1968/69 290-2B 9.0:1, 290-4B 10.0:1 (1967 290-2B 8.7:1)"
+    },
+    {
+     "name": "Mac's Motor City Garage - Inside the American Motors Gen 2/Gen 3 V8, 1966-91 (Bill McGuire)",
+     "url": "https://macsmotorcitygarage.com/inside-the-american-motors-gen-2-gen-3-v8-1966-91/",
+     "says": "290 introduced mid-season 1966 in the Rambler Rogue, 3.75-in bore and 3.28-in stroke; Gen 3 304/360 (1970) got a longer 3.440-in stroke"
+    },
+    {
+     "name": "Super Stock & Drag Illustrated, Aug 1972, AMC V8 article (reprinted on wagoneers.com; AHPS specification page repeats the same text, counted once)",
+     "url": "https://wagoneers.com/tech/Engines/SuperStockAndDragIllustrated-Aug-1972.html",
+     "says": "3.75\" bore and 3.28\" stroke for the 290; the 290-360 rods are all 5.875\" long; 1.787\" intake and 1.406\" exhaust valves; aluminum roller-tip rockers; hydraulic camshafts"
+    }
+   ],
+   "note": "95.3 mm"
+  },
+  "stroke_in": {
+   "value": 3.28,
+   "sources": [
+    {
+     "name": "NHRA engine blueprint AMER-68",
+     "url": "https://www.nhra.net/tech_specs/engine/blueprints/AMER-68.rtf",
+     "says": "ameri_1968_290_200hp: 290 ci, 8 cyl, bore 3.75, stroke 3.28, rod 5.875, CR 9.0, 1x2-bbl, 1.6 rockers, hydraulic lifters; ameri_1968_290_225hp: CR 10.0, 1x4-bbl"
+    },
+    {
+     "name": "AMC 1968 full-line brochure (revised), Engines specification table [AMC]",
+     "url": "https://oldcarbrochures.org/United%20States/AMC/1968_AMC/1968%20AMC%20Full%20Line%20-%20Revised/index.html",
+     "says": "'290' V-8: 200 @ 4600, 2-Barrel, 9.0:1/Regular, 3.75\" x 3.28\"; 225 @ 4700, 4-Barrel, 10.0:1/Premium, 3.75\" x 3.28\""
+    },
+    {
+     "name": "Wikipedia - AMC V8 engine",
+     "url": "https://en.wikipedia.org/wiki/AMC_V8_engine",
+     "says": "290: bore and stroke 3.75 x 3.28 in; 200 or 225 hp with 2-bbl or 4-bbl; built mid-1966 through 1969; infobox OHV 2 valves x cyl, gasoline; table 1968/69 290-2B 9.0:1, 290-4B 10.0:1 (1967 290-2B 8.7:1)"
+    },
+    {
+     "name": "Mac's Motor City Garage - Inside the American Motors Gen 2/Gen 3 V8, 1966-91 (Bill McGuire)",
+     "url": "https://macsmotorcitygarage.com/inside-the-american-motors-gen-2-gen-3-v8-1966-91/",
+     "says": "290 introduced mid-season 1966 in the Rambler Rogue, 3.75-in bore and 3.28-in stroke; Gen 3 304/360 (1970) got a longer 3.440-in stroke"
+    },
+    {
+     "name": "Super Stock & Drag Illustrated, Aug 1972, AMC V8 article (reprinted on wagoneers.com; AHPS specification page repeats the same text, counted once)",
+     "url": "https://wagoneers.com/tech/Engines/SuperStockAndDragIllustrated-Aug-1972.html",
+     "says": "3.75\" bore and 3.28\" stroke for the 290; the 290-360 rods are all 5.875\" long; 1.787\" intake and 1.406\" exhaust valves; aluminum roller-tip rockers; hydraulic camshafts"
+    }
+   ],
+   "note": "83.3 mm"
+  },
+  "displacement_ci": {
+   "value": 290,
+   "sources": [
+    {
+     "name": "NHRA engine blueprint AMER-68",
+     "url": "https://www.nhra.net/tech_specs/engine/blueprints/AMER-68.rtf",
+     "says": "ameri_1968_290_200hp: 290 ci, 8 cyl, bore 3.75, stroke 3.28, rod 5.875, CR 9.0, 1x2-bbl, 1.6 rockers, hydraulic lifters; ameri_1968_290_225hp: CR 10.0, 1x4-bbl"
+    },
+    {
+     "name": "AMC 1968 full-line brochure (revised), Engines specification table [AMC]",
+     "url": "https://oldcarbrochures.org/United%20States/AMC/1968_AMC/1968%20AMC%20Full%20Line%20-%20Revised/index.html",
+     "says": "'290' V-8: 200 @ 4600, 2-Barrel, 9.0:1/Regular, 3.75\" x 3.28\"; 225 @ 4700, 4-Barrel, 10.0:1/Premium, 3.75\" x 3.28\""
+    },
+    {
+     "name": "Wikipedia - AMC V8 engine",
+     "url": "https://en.wikipedia.org/wiki/AMC_V8_engine",
+     "says": "290: bore and stroke 3.75 x 3.28 in; 200 or 225 hp with 2-bbl or 4-bbl; built mid-1966 through 1969; infobox OHV 2 valves x cyl, gasoline; table 1968/69 290-2B 9.0:1, 290-4B 10.0:1 (1967 290-2B 8.7:1)"
+    },
+    {
+     "name": "conceptcarz - 1969 AMC Javelin specifications",
+     "url": "https://www.conceptcarz.com/s2626/amc-javelin.aspx",
+     "says": "289.8 cu in, 225 BHP @ 4700"
+    }
+   ],
+   "note": "Nominal 290; exact 289.8 ci from 3.75 x 3.28 x 8 (conceptcarz prints 289.8)."
+  },
+  "displacement_l": {
+   "value": 4.75,
+   "sources": [
+    {
+     "name": "NHRA engine blueprint AMER-68",
+     "url": "https://www.nhra.net/tech_specs/engine/blueprints/AMER-68.rtf",
+     "says": "ameri_1968_290_200hp: 290 ci, 8 cyl, bore 3.75, stroke 3.28, rod 5.875, CR 9.0, 1x2-bbl, 1.6 rockers, hydraulic lifters; ameri_1968_290_225hp: CR 10.0, 1x4-bbl"
+    },
+    {
+     "name": "AMC 1968 full-line brochure (revised), Engines specification table [AMC]",
+     "url": "https://oldcarbrochures.org/United%20States/AMC/1968_AMC/1968%20AMC%20Full%20Line%20-%20Revised/index.html",
+     "says": "'290' V-8: 200 @ 4600, 2-Barrel, 9.0:1/Regular, 3.75\" x 3.28\"; 225 @ 4700, 4-Barrel, 10.0:1/Premium, 3.75\" x 3.28\""
+    },
+    {
+     "name": "Wikipedia - AMC V8 engine",
+     "url": "https://en.wikipedia.org/wiki/AMC_V8_engine",
+     "says": "290: bore and stroke 3.75 x 3.28 in; 200 or 225 hp with 2-bbl or 4-bbl; built mid-1966 through 1969; infobox OHV 2 valves x cyl, gasoline; table 1968/69 290-2B 9.0:1, 290-4B 10.0:1 (1967 290-2B 8.7:1)"
+    }
+   ],
+   "note": "Computed from the verified bore/stroke (4,749 cc); Wikipedia rounds to 4.8 L; AMC/NHRA give 290 ci only."
+  },
+  "num_cylinders": {
+   "value": 8,
+   "sources": [
+    {
+     "name": "NHRA engine blueprint AMER-68",
+     "url": "https://www.nhra.net/tech_specs/engine/blueprints/AMER-68.rtf",
+     "says": "ameri_1968_290_200hp: 290 ci, 8 cyl, bore 3.75, stroke 3.28, rod 5.875, CR 9.0, 1x2-bbl, 1.6 rockers, hydraulic lifters; ameri_1968_290_225hp: CR 10.0, 1x4-bbl"
+    },
+    {
+     "name": "AMC 1968 full-line brochure (revised), Engines specification table [AMC]",
+     "url": "https://oldcarbrochures.org/United%20States/AMC/1968_AMC/1968%20AMC%20Full%20Line%20-%20Revised/index.html",
+     "says": "'290' V-8: 200 @ 4600, 2-Barrel, 9.0:1/Regular, 3.75\" x 3.28\"; 225 @ 4700, 4-Barrel, 10.0:1/Premium, 3.75\" x 3.28\""
+    },
+    {
+     "name": "Wikipedia - AMC V8 engine",
+     "url": "https://en.wikipedia.org/wiki/AMC_V8_engine",
+     "says": "290: bore and stroke 3.75 x 3.28 in; 200 or 225 hp with 2-bbl or 4-bbl; built mid-1966 through 1969; infobox OHV 2 valves x cyl, gasoline; table 1968/69 290-2B 9.0:1, 290-4B 10.0:1 (1967 290-2B 8.7:1)"
+    },
+    {
+     "name": "Mac's Motor City Garage - Inside the American Motors Gen 2/Gen 3 V8, 1966-91 (Bill McGuire)",
+     "url": "https://macsmotorcitygarage.com/inside-the-american-motors-gen-2-gen-3-v8-1966-91/",
+     "says": "290 introduced mid-season 1966 in the Rambler Rogue, 3.75-in bore and 3.28-in stroke; Gen 3 304/360 (1970) got a longer 3.440-in stroke"
+    }
+   ],
+   "note": ""
+  },
+  "configuration": {
+   "value": "V8",
+   "sources": [
+    {
+     "name": "AMC 1968 full-line brochure (revised), Engines specification table [AMC]",
+     "url": "https://oldcarbrochures.org/United%20States/AMC/1968_AMC/1968%20AMC%20Full%20Line%20-%20Revised/index.html",
+     "says": "'290' V-8: 200 @ 4600, 2-Barrel, 9.0:1/Regular, 3.75\" x 3.28\"; 225 @ 4700, 4-Barrel, 10.0:1/Premium, 3.75\" x 3.28\""
+    },
+    {
+     "name": "Wikipedia - AMC V8 engine",
+     "url": "https://en.wikipedia.org/wiki/AMC_V8_engine",
+     "says": "290: bore and stroke 3.75 x 3.28 in; 200 or 225 hp with 2-bbl or 4-bbl; built mid-1966 through 1969; infobox OHV 2 valves x cyl, gasoline; table 1968/69 290-2B 9.0:1, 290-4B 10.0:1 (1967 290-2B 8.7:1)"
+    },
+    {
+     "name": "Mac's Motor City Garage - Inside the American Motors Gen 2/Gen 3 V8, 1966-91 (Bill McGuire)",
+     "url": "https://macsmotorcitygarage.com/inside-the-american-motors-gen-2-gen-3-v8-1966-91/",
+     "says": "290 introduced mid-season 1966 in the Rambler Rogue, 3.75-in bore and 3.28-in stroke; Gen 3 304/360 (1970) got a longer 3.440-in stroke"
+    },
+    {
+     "name": "NHRA engine blueprint AMER-68",
+     "url": "https://www.nhra.net/tech_specs/engine/blueprints/AMER-68.rtf",
+     "says": "ameri_1968_290_200hp: 290 ci, 8 cyl, bore 3.75, stroke 3.28, rod 5.875, CR 9.0, 1x2-bbl, 1.6 rockers, hydraulic lifters; ameri_1968_290_225hp: CR 10.0, 1x4-bbl"
+    }
+   ],
+   "note": "90-degree bank angle per Wikipedia infobox only."
+  },
+  "valvetrain": {
+   "value": "OHV pushrod, 2 valves/cyl, hydraulic lifters",
+   "sources": [
+    {
+     "name": "Wikipedia - AMC V8 engine",
+     "url": "https://en.wikipedia.org/wiki/AMC_V8_engine",
+     "says": "290: bore and stroke 3.75 x 3.28 in; 200 or 225 hp with 2-bbl or 4-bbl; built mid-1966 through 1969; infobox OHV 2 valves x cyl, gasoline; table 1968/69 290-2B 9.0:1, 290-4B 10.0:1 (1967 290-2B 8.7:1)"
+    },
+    {
+     "name": "NHRA engine blueprint AMER-68",
+     "url": "https://www.nhra.net/tech_specs/engine/blueprints/AMER-68.rtf",
+     "says": "ameri_1968_290_200hp: 290 ci, 8 cyl, bore 3.75, stroke 3.28, rod 5.875, CR 9.0, 1x2-bbl, 1.6 rockers, hydraulic lifters; ameri_1968_290_225hp: CR 10.0, 1x4-bbl"
+    },
+    {
+     "name": "Super Stock & Drag Illustrated, Aug 1972, AMC V8 article (reprinted on wagoneers.com; AHPS specification page repeats the same text, counted once)",
+     "url": "https://wagoneers.com/tech/Engines/SuperStockAndDragIllustrated-Aug-1972.html",
+     "says": "3.75\" bore and 3.28\" stroke for the 290; the 290-360 rods are all 5.875\" long; 1.787\" intake and 1.406\" exhaust valves; aluminum roller-tip rockers; hydraulic camshafts"
+    }
+   ],
+   "note": "Wikipedia: OHV 2 valves x cyl; NHRA: 1.6 rocker ratio, hydraulic lifters; SS&DI: 1.787 in intake / 1.406 in exhaust valves, rockers, hydraulic cams."
+  },
+  "compression_ratio": {
+   "value": "9.0:1 (2-bbl) / 10.0:1 (4-bbl), 1968-69",
+   "sources": [
+    {
+     "name": "AMC 1968 full-line brochure (revised), Engines specification table [AMC]",
+     "url": "https://oldcarbrochures.org/United%20States/AMC/1968_AMC/1968%20AMC%20Full%20Line%20-%20Revised/index.html",
+     "says": "'290' V-8: 200 @ 4600, 2-Barrel, 9.0:1/Regular, 3.75\" x 3.28\"; 225 @ 4700, 4-Barrel, 10.0:1/Premium, 3.75\" x 3.28\""
+    },
+    {
+     "name": "AMC 1969 full-line brochure, Engines chart [AMC] (same maker as 1968 brochure)",
+     "url": "https://oldcarbrochures.org/United%20States/AMC/1969_AMC/1969_AMC_Full_Line_Brochure/index.html",
+     "says": "290 V-8 2-barrel 200 @ 4600 9.0:1/Reg.; 4-barrel 225 @ 4700 10.0:1/Pre.; bore x stroke 3.75\" x 3.28\""
+    },
+    {
+     "name": "NHRA engine blueprint AMER-68",
+     "url": "https://www.nhra.net/tech_specs/engine/blueprints/AMER-68.rtf",
+     "says": "ameri_1968_290_200hp: 290 ci, 8 cyl, bore 3.75, stroke 3.28, rod 5.875, CR 9.0, 1x2-bbl, 1.6 rockers, hydraulic lifters; ameri_1968_290_225hp: CR 10.0, 1x4-bbl"
+    },
+    {
+     "name": "Wikipedia - AMC V8 engine",
+     "url": "https://en.wikipedia.org/wiki/AMC_V8_engine",
+     "says": "290: bore and stroke 3.75 x 3.28 in; 200 or 225 hp with 2-bbl or 4-bbl; built mid-1966 through 1969; infobox OHV 2 valves x cyl, gasoline; table 1968/69 290-2B 9.0:1, 290-4B 10.0:1 (1967 290-2B 8.7:1)"
+    }
+   ],
+   "note": "AMC 1968 and 1969 brochures are one maker source. For 1966-67 2-bbl, Wikipedia and AHPS give 8.7:1 while NHRA AMER-66/67 give 9.0:1 (disagreement)."
+  },
+  "induction": {
+   "value": "Carburetor, 2-bbl or 4-bbl, naturally aspirated",
+   "sources": [
+    {
+     "name": "AMC 1968 full-line brochure (revised), Engines specification table [AMC]",
+     "url": "https://oldcarbrochures.org/United%20States/AMC/1968_AMC/1968%20AMC%20Full%20Line%20-%20Revised/index.html",
+     "says": "'290' V-8: 200 @ 4600, 2-Barrel, 9.0:1/Regular, 3.75\" x 3.28\"; 225 @ 4700, 4-Barrel, 10.0:1/Premium, 3.75\" x 3.28\""
+    },
+    {
+     "name": "NHRA engine blueprint AMER-68",
+     "url": "https://www.nhra.net/tech_specs/engine/blueprints/AMER-68.rtf",
+     "says": "ameri_1968_290_200hp: 290 ci, 8 cyl, bore 3.75, stroke 3.28, rod 5.875, CR 9.0, 1x2-bbl, 1.6 rockers, hydraulic lifters; ameri_1968_290_225hp: CR 10.0, 1x4-bbl"
+    },
+    {
+     "name": "Wikipedia - AMC V8 engine",
+     "url": "https://en.wikipedia.org/wiki/AMC_V8_engine",
+     "says": "290: bore and stroke 3.75 x 3.28 in; 200 or 225 hp with 2-bbl or 4-bbl; built mid-1966 through 1969; infobox OHV 2 valves x cyl, gasoline; table 1968/69 290-2B 9.0:1, 290-4B 10.0:1 (1967 290-2B 8.7:1)"
+    },
+    {
+     "name": "MuscleCarFacts - 1968 Javelin",
+     "url": "https://www.musclecarfacts.com/amc-javelin/116-1968-javelin/",
+     "says": "290ci 200 hp @ 4600 rpm; four-barrel 290 optional"
+    }
+   ],
+   "note": ""
+  },
+  "fuel_type": {
+   "value": "Gasoline (2-bbl regular, 4-bbl premium)",
+   "sources": [
+    {
+     "name": "AMC 1968 full-line brochure (revised), Engines specification table [AMC]",
+     "url": "https://oldcarbrochures.org/United%20States/AMC/1968_AMC/1968%20AMC%20Full%20Line%20-%20Revised/index.html",
+     "says": "'290' V-8: 200 @ 4600, 2-Barrel, 9.0:1/Regular, 3.75\" x 3.28\"; 225 @ 4700, 4-Barrel, 10.0:1/Premium, 3.75\" x 3.28\""
+    },
+    {
+     "name": "Wikipedia - AMC V8 engine",
+     "url": "https://en.wikipedia.org/wiki/AMC_V8_engine",
+     "says": "290: bore and stroke 3.75 x 3.28 in; 200 or 225 hp with 2-bbl or 4-bbl; built mid-1966 through 1969; infobox OHV 2 valves x cyl, gasoline; table 1968/69 290-2B 9.0:1, 290-4B 10.0:1 (1967 290-2B 8.7:1)"
+    },
+    {
+     "name": "NHRA engine blueprint AMER-68",
+     "url": "https://www.nhra.net/tech_specs/engine/blueprints/AMER-68.rtf",
+     "says": "ameri_1968_290_200hp: 290 ci, 8 cyl, bore 3.75, stroke 3.28, rod 5.875, CR 9.0, 1x2-bbl, 1.6 rockers, hydraulic lifters; ameri_1968_290_225hp: CR 10.0, 1x4-bbl"
+    }
+   ],
+   "note": "AMC: 9.0:1/Regular, 10.0:1/Premium; Wikipedia infobox: gasoline; NHRA lists it among carbureted gasoline stock-class engines (implicit)."
+  },
+  "years": {
+   "value": "mid-1966 to 1969 model years",
+   "sources": [
+    {
+     "name": "Wikipedia - AMC V8 engine",
+     "url": "https://en.wikipedia.org/wiki/AMC_V8_engine",
+     "says": "290: bore and stroke 3.75 x 3.28 in; 200 or 225 hp with 2-bbl or 4-bbl; built mid-1966 through 1969; infobox OHV 2 valves x cyl, gasoline; table 1968/69 290-2B 9.0:1, 290-4B 10.0:1 (1967 290-2B 8.7:1)"
+    },
+    {
+     "name": "Auto History Preservation Society (AMC) - Gen 2 Short-Deck AMC V8 General Information",
+     "url": "https://autohistorypreservationsociety.org/?p=6955",
+     "says": "bore of 3.75\" and stroke of 3.28\"; 290 2-bbl 8.7:1 (200 hp), 4-bbl 10.0:1 (225 hp); manufactured from 1966 through 1969"
+    },
+    {
+     "name": "Mac's Motor City Garage - Inside the American Motors Gen 2/Gen 3 V8, 1966-91 (Bill McGuire)",
+     "url": "https://macsmotorcitygarage.com/inside-the-american-motors-gen-2-gen-3-v8-1966-91/",
+     "says": "290 introduced mid-season 1966 in the Rambler Rogue, 3.75-in bore and 3.28-in stroke; Gen 3 304/360 (1970) got a longer 3.440-in stroke"
+    },
+    {
+     "name": "NHRA engine blueprint AMER-66",
+     "url": "https://www.nhra.net/tech_specs/engine/blueprints/AMER-66.rtf",
+     "says": "ameri_1966_290: 200 hp 2-bbl 9.0:1 / 225 hp 4-bbl 10.0:1; bore 3.75, stroke 3.28, rod 5.875"
+    },
+    {
+     "name": "NHRA engine blueprint AMER-69",
+     "url": "https://www.nhra.net/tech_specs/engine/blueprints/AMER-69.rtf",
+     "says": "ameri_1969_290: 200 hp 2-bbl 9.0:1 / 225 hp 4-bbl 10.0:1; bore 3.75, stroke 3.28, rod 5.875"
+    }
+   ],
+   "note": "Mac's: introduced mid-season 1966 in the Rambler Rogue; replaced by the 304 for 1970."
+  }
+ },
+ "variants": [
+  {
+   "year": 1966,
+   "hp": 200,
+   "hp_basis": "gross",
+   "compression_ratio": null,
+   "code": "290-2V",
+   "induction": "2-bbl",
+   "sources": [
+    {
+     "name": "NHRA engine blueprint AMER-66",
+     "url": "https://www.nhra.net/tech_specs/engine/blueprints/AMER-66.rtf",
+     "says": "ameri_1966_290: 200 hp 2-bbl 9.0:1 / 225 hp 4-bbl 10.0:1; bore 3.75, stroke 3.28, rod 5.875"
+    },
+    {
+     "name": "Wikipedia - AMC V8 engine",
+     "url": "https://en.wikipedia.org/wiki/AMC_V8_engine",
+     "says": "290: bore and stroke 3.75 x 3.28 in; 200 or 225 hp with 2-bbl or 4-bbl; built mid-1966 through 1969; infobox OHV 2 valves x cyl, gasoline; table 1968/69 290-2B 9.0:1, 290-4B 10.0:1 (1967 290-2B 8.7:1)"
+    },
+    {
+     "name": "Auto History Preservation Society (AMC) - Gen 2 Short-Deck AMC V8 General Information",
+     "url": "https://autohistorypreservationsociety.org/?p=6955",
+     "says": "bore of 3.75\" and stroke of 3.28\"; 290 2-bbl 8.7:1 (200 hp), 4-bbl 10.0:1 (225 hp); manufactured from 1966 through 1969"
+    },
+    {
+     "name": "JustCars - 1966 Rambler American Spotlight",
+     "url": "https://justcars.com.au/news-and-reviews/1966-rambler-american-spotlight/9792",
+     "says": "The 290ci V8 also made its debut in 1966, available in two different power options, 200bhp or 225bhp"
+    }
+   ],
+   "note": "Rambler American Rogue (mid-year). CR disputed: NHRA 9.0:1, Wikipedia/AHPS 8.7:1."
+  },
+  {
+   "year": 1966,
+   "hp": 225,
+   "hp_basis": "gross",
+   "compression_ratio": 10.0,
+   "code": "290-4V",
+   "induction": "4-bbl",
+   "sources": [
+    {
+     "name": "NHRA engine blueprint AMER-66",
+     "url": "https://www.nhra.net/tech_specs/engine/blueprints/AMER-66.rtf",
+     "says": "ameri_1966_290: 200 hp 2-bbl 9.0:1 / 225 hp 4-bbl 10.0:1; bore 3.75, stroke 3.28, rod 5.875"
+    },
+    {
+     "name": "Auto History Preservation Society (AMC) - Gen 2 Short-Deck AMC V8 General Information",
+     "url": "https://autohistorypreservationsociety.org/?p=6955",
+     "says": "bore of 3.75\" and stroke of 3.28\"; 290 2-bbl 8.7:1 (200 hp), 4-bbl 10.0:1 (225 hp); manufactured from 1966 through 1969"
+    },
+    {
+     "name": "JustCars - 1966 Rambler American Spotlight",
+     "url": "https://justcars.com.au/news-and-reviews/1966-rambler-american-spotlight/9792",
+     "says": "The 290ci V8 also made its debut in 1966, available in two different power options, 200bhp or 225bhp"
+    },
+    {
+     "name": "Wikipedia - AMC V8 engine",
+     "url": "https://en.wikipedia.org/wiki/AMC_V8_engine",
+     "says": "290: bore and stroke 3.75 x 3.28 in; 200 or 225 hp with 2-bbl or 4-bbl; built mid-1966 through 1969; infobox OHV 2 valves x cyl, gasoline; table 1968/69 290-2B 9.0:1, 290-4B 10.0:1 (1967 290-2B 8.7:1)"
+    }
+   ],
+   "note": "Rambler American Rogue (mid-year)."
+  },
+  {
+   "year": 1967,
+   "hp": 200,
+   "hp_basis": "gross",
+   "compression_ratio": null,
+   "code": "290-2V",
+   "induction": "2-bbl",
+   "sources": [
+    {
+     "name": "NHRA engine blueprint AMER-67",
+     "url": "https://www.nhra.net/tech_specs/engine/blueprints/AMER-67.rtf",
+     "says": "ameri_1967_290: 200 hp 2-bbl 9.0:1 / 225 hp 4-bbl 10.0:1; bore 3.75, stroke 3.28, rod 5.875"
+    },
+    {
+     "name": "Wikipedia - AMC V8 engine",
+     "url": "https://en.wikipedia.org/wiki/AMC_V8_engine",
+     "says": "290: bore and stroke 3.75 x 3.28 in; 200 or 225 hp with 2-bbl or 4-bbl; built mid-1966 through 1969; infobox OHV 2 valves x cyl, gasoline; table 1968/69 290-2B 9.0:1, 290-4B 10.0:1 (1967 290-2B 8.7:1)"
+    },
+    {
+     "name": "Auto History Preservation Society (AMC) - Gen 2 Short-Deck AMC V8 General Information",
+     "url": "https://autohistorypreservationsociety.org/?p=6955",
+     "says": "bore of 3.75\" and stroke of 3.28\"; 290 2-bbl 8.7:1 (200 hp), 4-bbl 10.0:1 (225 hp); manufactured from 1966 through 1969"
+    }
+   ],
+   "note": "CR disputed: NHRA 9.0:1, Wikipedia 8.7:1. Wikipedia gives 200 @ 4700."
+  },
+  {
+   "year": 1967,
+   "hp": 225,
+   "hp_basis": "gross",
+   "compression_ratio": 10.0,
+   "code": "290-4V",
+   "induction": "4-bbl",
+   "sources": [
+    {
+     "name": "NHRA engine blueprint AMER-67",
+     "url": "https://www.nhra.net/tech_specs/engine/blueprints/AMER-67.rtf",
+     "says": "ameri_1967_290: 200 hp 2-bbl 9.0:1 / 225 hp 4-bbl 10.0:1; bore 3.75, stroke 3.28, rod 5.875"
+    },
+    {
+     "name": "Wikipedia - AMC V8 engine",
+     "url": "https://en.wikipedia.org/wiki/AMC_V8_engine",
+     "says": "290: bore and stroke 3.75 x 3.28 in; 200 or 225 hp with 2-bbl or 4-bbl; built mid-1966 through 1969; infobox OHV 2 valves x cyl, gasoline; table 1968/69 290-2B 9.0:1, 290-4B 10.0:1 (1967 290-2B 8.7:1)"
+    },
+    {
+     "name": "Auto History Preservation Society (AMC) - Gen 2 Short-Deck AMC V8 General Information",
+     "url": "https://autohistorypreservationsociety.org/?p=6955",
+     "says": "bore of 3.75\" and stroke of 3.28\"; 290 2-bbl 8.7:1 (200 hp), 4-bbl 10.0:1 (225 hp); manufactured from 1966 through 1969"
+    }
+   ],
+   "note": "Wikipedia gives 225 @ 4800."
+  },
+  {
+   "year": 1968,
+   "hp": 200,
+   "hp_basis": "gross",
+   "compression_ratio": 9.0,
+   "code": "290-2V",
+   "induction": "2-bbl",
+   "sources": [
+    {
+     "name": "AMC 1968 full-line brochure (revised), Engines specification table [AMC]",
+     "url": "https://oldcarbrochures.org/United%20States/AMC/1968_AMC/1968%20AMC%20Full%20Line%20-%20Revised/index.html",
+     "says": "'290' V-8: 200 @ 4600, 2-Barrel, 9.0:1/Regular, 3.75\" x 3.28\"; 225 @ 4700, 4-Barrel, 10.0:1/Premium, 3.75\" x 3.28\""
+    },
+    {
+     "name": "NHRA engine blueprint AMER-68",
+     "url": "https://www.nhra.net/tech_specs/engine/blueprints/AMER-68.rtf",
+     "says": "ameri_1968_290_200hp: 290 ci, 8 cyl, bore 3.75, stroke 3.28, rod 5.875, CR 9.0, 1x2-bbl, 1.6 rockers, hydraulic lifters; ameri_1968_290_225hp: CR 10.0, 1x4-bbl"
+    },
+    {
+     "name": "Wikipedia - AMC V8 engine",
+     "url": "https://en.wikipedia.org/wiki/AMC_V8_engine",
+     "says": "290: bore and stroke 3.75 x 3.28 in; 200 or 225 hp with 2-bbl or 4-bbl; built mid-1966 through 1969; infobox OHV 2 valves x cyl, gasoline; table 1968/69 290-2B 9.0:1, 290-4B 10.0:1 (1967 290-2B 8.7:1)"
+    },
+    {
+     "name": "MuscleCarFacts - 1968 Javelin",
+     "url": "https://www.musclecarfacts.com/amc-javelin/116-1968-javelin/",
+     "says": "290ci 200 hp @ 4600 rpm; four-barrel 290 optional"
+    }
+   ],
+   "note": "200 @ 4600; Javelin, American, Rebel, Ambassador"
+  },
+  {
+   "year": 1968,
+   "hp": 225,
+   "hp_basis": "gross",
+   "compression_ratio": 10.0,
+   "code": "290-4V",
+   "induction": "4-bbl",
+   "sources": [
+    {
+     "name": "AMC 1968 full-line brochure (revised), Engines specification table [AMC]",
+     "url": "https://oldcarbrochures.org/United%20States/AMC/1968_AMC/1968%20AMC%20Full%20Line%20-%20Revised/index.html",
+     "says": "'290' V-8: 200 @ 4600, 2-Barrel, 9.0:1/Regular, 3.75\" x 3.28\"; 225 @ 4700, 4-Barrel, 10.0:1/Premium, 3.75\" x 3.28\""
+    },
+    {
+     "name": "NHRA engine blueprint AMER-68",
+     "url": "https://www.nhra.net/tech_specs/engine/blueprints/AMER-68.rtf",
+     "says": "ameri_1968_290_200hp: 290 ci, 8 cyl, bore 3.75, stroke 3.28, rod 5.875, CR 9.0, 1x2-bbl, 1.6 rockers, hydraulic lifters; ameri_1968_290_225hp: CR 10.0, 1x4-bbl"
+    },
+    {
+     "name": "Wikipedia - AMC V8 engine",
+     "url": "https://en.wikipedia.org/wiki/AMC_V8_engine",
+     "says": "290: bore and stroke 3.75 x 3.28 in; 200 or 225 hp with 2-bbl or 4-bbl; built mid-1966 through 1969; infobox OHV 2 valves x cyl, gasoline; table 1968/69 290-2B 9.0:1, 290-4B 10.0:1 (1967 290-2B 8.7:1)"
+    },
+    {
+     "name": "Old Cars Weekly - Little AMX was not short on performance (1968 AMX)",
+     "url": "https://www.oldcarsweekly.com/features/little-amx-was-not-short-on-performance",
+     "says": "290-cid 225-hp V-8"
+    },
+    {
+     "name": "AMC 1968 'AMX Story' brochure [AMC] (same maker source as AMC brochures)",
+     "url": "https://oldcarbrochures.org/United%20States/AMC/1968_AMC/1968%20AMX%20Story/index.html",
+     "says": "Standard 290 CID 225 HP V-8 with 4-barrel carburetor"
+    }
+   ],
+   "note": "225 @ 4700; standard in AMX, optional Javelin/American"
+  },
+  {
+   "year": 1969,
+   "hp": 200,
+   "hp_basis": "gross",
+   "compression_ratio": 9.0,
+   "code": "290-2V",
+   "induction": "2-bbl",
+   "sources": [
+    {
+     "name": "AMC 1969 full-line brochure, Engines chart [AMC] (same maker as 1968 brochure)",
+     "url": "https://oldcarbrochures.org/United%20States/AMC/1969_AMC/1969_AMC_Full_Line_Brochure/index.html",
+     "says": "290 V-8 2-barrel 200 @ 4600 9.0:1/Reg.; 4-barrel 225 @ 4700 10.0:1/Pre.; bore x stroke 3.75\" x 3.28\""
+    },
+    {
+     "name": "NHRA engine blueprint AMER-69",
+     "url": "https://www.nhra.net/tech_specs/engine/blueprints/AMER-69.rtf",
+     "says": "ameri_1969_290: 200 hp 2-bbl 9.0:1 / 225 hp 4-bbl 10.0:1; bore 3.75, stroke 3.28, rod 5.875"
+    },
+    {
+     "name": "Wikipedia - AMC V8 engine",
+     "url": "https://en.wikipedia.org/wiki/AMC_V8_engine",
+     "says": "290: bore and stroke 3.75 x 3.28 in; 200 or 225 hp with 2-bbl or 4-bbl; built mid-1966 through 1969; infobox OHV 2 valves x cyl, gasoline; table 1968/69 290-2B 9.0:1, 290-4B 10.0:1 (1967 290-2B 8.7:1)"
+    },
+    {
+     "name": "MuscleCarFacts - 1969 Javelin",
+     "url": "https://www.musclecarfacts.com/amc-javelin/117-1969-javelin/",
+     "says": "290ci 200 hp @ 4600 rpm; 290ci 225 hp @ 4700 rpm"
+    }
+   ],
+   "note": "200 @ 4600"
+  },
+  {
+   "year": 1969,
+   "hp": 225,
+   "hp_basis": "gross",
+   "compression_ratio": 10.0,
+   "code": "290-4V",
+   "induction": "4-bbl",
+   "sources": [
+    {
+     "name": "AMC 1969 full-line brochure, Engines chart [AMC] (same maker as 1968 brochure)",
+     "url": "https://oldcarbrochures.org/United%20States/AMC/1969_AMC/1969_AMC_Full_Line_Brochure/index.html",
+     "says": "290 V-8 2-barrel 200 @ 4600 9.0:1/Reg.; 4-barrel 225 @ 4700 10.0:1/Pre.; bore x stroke 3.75\" x 3.28\""
+    },
+    {
+     "name": "NHRA engine blueprint AMER-69",
+     "url": "https://www.nhra.net/tech_specs/engine/blueprints/AMER-69.rtf",
+     "says": "ameri_1969_290: 200 hp 2-bbl 9.0:1 / 225 hp 4-bbl 10.0:1; bore 3.75, stroke 3.28, rod 5.875"
+    },
+    {
+     "name": "Wikipedia - AMC V8 engine",
+     "url": "https://en.wikipedia.org/wiki/AMC_V8_engine",
+     "says": "290: bore and stroke 3.75 x 3.28 in; 200 or 225 hp with 2-bbl or 4-bbl; built mid-1966 through 1969; infobox OHV 2 valves x cyl, gasoline; table 1968/69 290-2B 9.0:1, 290-4B 10.0:1 (1967 290-2B 8.7:1)"
+    },
+    {
+     "name": "MuscleCarFacts - 1969 Javelin",
+     "url": "https://www.musclecarfacts.com/amc-javelin/117-1969-javelin/",
+     "says": "290ci 200 hp @ 4600 rpm; 290ci 225 hp @ 4700 rpm"
+    },
+    {
+     "name": "conceptcarz - 1969 AMC Javelin specifications",
+     "url": "https://www.conceptcarz.com/s2626/amc-javelin.aspx",
+     "says": "289.8 cu in, 225 BHP @ 4700"
+    }
+   ],
+   "note": "225 @ 4700; standard in AMX"
+  }
+ ],
+ "unverified": {
+  "rod_length_in": "5.875 in - NHRA AMER-66..69 and Super Stock & Drag Illustrated Aug 1972 (AHPS repeats SS&DI text verbatim, counted once). Only 2 independent sources.",
+  "firing_order": "1-8-4-3-6-5-7-2 is the commonly cited AMC Gen 2/3 V8 order, but no reputable source found stating it for the 290 (only offroaders.com / parts pages for 304/360).",
+  "block_material": "Cast iron (thinwall) expected - SS&DI 1972 says blocks are 'thinwall castings', cranks/rods nodular iron; Wikipedia says 'thin-wall' casting but not the metal. Fewer than 3 sources state cast iron.",
+  "head_material": "Cast iron expected; no source found explicitly stating it for the 290."
+ },
+ "unverified_variants": []
+}

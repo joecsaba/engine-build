@@ -1,0 +1,3203 @@
+{
+ "engines": [
+  {
+   "id": "buick-181-v6",
+   "name": "Buick 3.0 V6 (181 ci) LK9 / LN7",
+   "fields": {
+    "displacement_ci": {
+     "value": 181,
+     "sources": [
+      {
+       "name": "Oldsmobile 1986 Fuel Economy Estimate Sheet (Aug 26 1985), in 1986 Mid-Size catalog (GM factory literature, oldcarbrochures.org)",
+       "url": "https://oldcarbrochures.org/United%20States/Oldsmobile/1986%20Oldsmobile/1986%20Oldsmobile%20Midsize%20-%202/index.html",
+       "says": "CALAIS 3.0-liter (181 CID) V6 MFI"
+      },
+      {
+       "name": "NHRA engine blueprints BUI-83 / BUI-85 / OLDS-86 / PONT-85",
+       "url": "https://www.nhra.net/tech_specs/engine/blueprints/BUI-83.rtf",
+       "says": "displacement 181 (110 hp 2-bbl 1983; 125 hp 1985-88)"
+      },
+      {
+       "name": "Wikipedia: Buick V6 engine (LK9)",
+       "url": "https://en.wikipedia.org/wiki/Buick_V6_engine",
+       "says": "A small 2,966 cc (181 cu in) version of the Buick V6 ... Introduced in 1982"
+      },
+      {
+       "name": "Ate Up With Motor (Aaron Severson): Buick Special / Rover V8 / 3800 V6 history",
+       "url": "https://ateupwithmotor.com/model-histories/buick-special-skylark-rover-V8-3800-v6-history/",
+       "says": "for 1982 by a short-stroke 181 cu. in. (2,996 cc) engine"
+      }
+     ],
+     "note": "2,966 cc. The 1988 Olds Mid-Size catalog's Calais spec table misprints '3.0-liter (183 cu. in.)'; Ate Up With Motor's '2,996 cc' is a typo for 2,966 (3.80 x 2.66 x 6 cyl = 181 ci)."
+    },
+    "displacement_l": {
+     "value": 3.0,
+     "sources": [
+      {
+       "name": "Oldsmobile 1982 Small Size catalog (GM factory literature)",
+       "url": "https://oldcarbrochures.org/United%20States/Oldsmobile/1982%20Oldsmobile/1982_Oldsmobile_Small_Size_Brochure/index.html",
+       "says": "A 3.0-liter V6 engine is available, too"
+      },
+      {
+       "name": "EPA fueleconomy.gov vehicle data",
+       "url": "https://www.fueleconomy.gov/feg/download.shtml",
+       "says": "1984-85 Cutlass Ciera, 1985-88 Calais: 3.0 L 6-cyl"
+      },
+      {
+       "name": "Wikipedia: Buick V6 engine (LK9)",
+       "url": "https://en.wikipedia.org/wiki/Buick_V6_engine",
+       "says": "2,966 cc (181 cu in)"
+      },
+      {
+       "name": "Curbside Classic: Curbside Unicorns - The Sporty FWD Oldsmobiles of the 1980s",
+       "url": "https://www.curbsideclassic.com/automotive-histories/curbside-unicorns-the-sporty-oldsmobiles-of-the-1980s/",
+       "says": "Buick's new 3.0 V6 (110 hp, 145 lb-ft)"
+      }
+     ],
+     "note": ""
+    },
+    "num_cylinders": {
+     "value": 6,
+     "sources": [
+      {
+       "name": "Oldsmobile 1988 Mid-Size catalog p.18 (GM factory literature)",
+       "url": "https://oldcarbrochures.org/United%20States/Oldsmobile/1988-Oldsmobile/1988-Oldsmobile-Mid-Size-Brochure/index.html",
+       "says": "Cutlass Calais powertrain specifications: 3.0-liter ... Engine: V6"
+      },
+      {
+       "name": "EPA fueleconomy.gov vehicle data",
+       "url": "https://www.fueleconomy.gov/feg/download.shtml",
+       "says": "3.0 L 6-cyl"
+      },
+      {
+       "name": "Wikipedia: Buick V6 engine",
+       "url": "https://en.wikipedia.org/wiki/Buick_V6_engine",
+       "says": "LK9 ... version of the Buick V6"
+      },
+      {
+       "name": "Curbside Classic: Sporty FWD Oldsmobiles of the 1980s",
+       "url": "https://www.curbsideclassic.com/automotive-histories/curbside-unicorns-the-sporty-oldsmobiles-of-the-1980s/",
+       "says": "fuel-injected Buick 3.0 V6 (125 hp, 150 lb-ft)"
+      }
+     ],
+     "note": ""
+    },
+    "configuration": {
+     "value": "90-degree V6, transverse (FWD), even-fire",
+     "sources": [
+      {
+       "name": "Wikipedia: Buick V6 engine",
+       "url": "https://en.wikipedia.org/wiki/Buick_V6_engine",
+       "says": "configuration 90 deg V6; LK9 'a lower deck version of the 3.8 designed for transverse application'; the 3.8 became even-firing (split-pin crank) in 1977"
+      },
+      {
+       "name": "Ate Up With Motor: Buick V6 history",
+       "url": "https://ateupwithmotor.com/model-histories/buick-special-skylark-rover-V8-3800-v6-history/",
+       "says": "shared the 90-degree bank angle of the 215 aluminum V8 ... version of the Even-Fire V6 ... and for 1982 by a short-stroke 181 cu. in. engine"
+      },
+      {
+       "name": "Novak: Guide to the Buick 90 Degree V6",
+       "url": "https://www.novak-adapt.com/knowledge/engines/buick-90-v6.html",
+       "says": "Buick 90 degree V6; in mid-1977 the 231 was converted to 'even-fire'"
+      }
+     ],
+     "note": "Brief asked whether the 1982-85 3.0 was odd-fire: no. Ate Up With Motor explicitly lists the 181 as a version of the Even-Fire V6, and Wikipedia calls it a lower-deck 3.8 (even-fire since 1977). Only AUWM states even-fire for the 3.0 directly; Wikipedia and Novak support it at family level."
+    },
+    "valvetrain": {
+     "value": "OHV pushrod, 2 valves per cylinder, hydraulic lifters",
+     "sources": [
+      {
+       "name": "Wikipedia: Buick V6 engine (infobox)",
+       "url": "https://en.wikipedia.org/wiki/Buick_V6_engine",
+       "says": "valvetrain: OHV 2 valves x cyl."
+      },
+      {
+       "name": "NHRA engine blueprints OLDS-85 / BUI-84 (181)",
+       "url": "https://www.nhra.net/tech_specs/engine/blueprints/OLDS-85.rtf",
+       "says": "rocker ratio 1.55, hydraulic lifters, intake valve 1.71, exhaust valve listed (one each)"
+      },
+      {
+       "name": "Ate Up With Motor: Buick V6 history",
+       "url": "https://ateupwithmotor.com/model-histories/buick-special-skylark-rover-V8-3800-v6-history/",
+       "says": "Both were cast iron OHV engines (Fireball V6 family)"
+      }
+     ],
+     "note": "Wikipedia and AUWM are family-level statements; NHRA is 181-specific."
+    },
+    "block_material": {
+     "value": "Cast iron",
+     "sources": [
+      {
+       "name": "Wikipedia: Buick V6 engine (infobox)",
+       "url": "https://en.wikipedia.org/wiki/Buick_V6_engine",
+       "says": "block: Cast iron"
+      },
+      {
+       "name": "Ate Up With Motor: Buick V6 history",
+       "url": "https://ateupwithmotor.com/model-histories/buick-special-skylark-rover-V8-3800-v6-history/",
+       "says": "the production engine reverted to cast iron (the 181 is a version of the same V6)"
+      },
+      {
+       "name": "Novak: Guide to the Buick 90 Degree V6",
+       "url": "https://www.novak-adapt.com/knowledge/engines/buick-90-v6.html",
+       "says": "set its sights on the iron block Fireball"
+      }
+     ],
+     "note": "All three are family-level statements about the Buick 90-degree V6; none is specific to the 3.0."
+    },
+    "firing_order": {
+     "value": "1-6-5-4-3-2",
+     "sources": [
+      {
+       "name": "Wikipedia: Buick V6 engine",
+       "url": "https://en.wikipedia.org/wiki/Buick_V6_engine",
+       "says": "cylinders numbered 1-3-5 on the left-hand bank (front bank for FWD) and 2-4-6 on the right-hand bank ... The firing order is 1-6-5-4-3-2."
+      },
+      {
+       "name": "Novak: Guide to the Buick 90 Degree V6",
+       "url": "https://www.novak-adapt.com/knowledge/engines/buick-90-v6.html",
+       "says": "All Buick V6's feature a 1-6-5-4-3-2 firing order."
+      },
+      {
+       "name": "Ate Up With Motor: Buick V6 history",
+       "url": "https://ateupwithmotor.com/model-histories/buick-special-skylark-rover-V8-3800-v6-history/",
+       "says": "firing order was 1-6-5-4-3-2 (Fireball V6)"
+      }
+     ],
+     "note": "Family-level statements; no 3.0-specific factory source checked."
+    },
+    "induction": {
+     "value": "LK9: Rochester E2ME 2-bbl carburetor (1982-85); LN7: multi-port fuel injection (1985-88)",
+     "sources": [
+      {
+       "name": "Oldsmobile 1982 Small Size catalog + 1988 Mid-Size catalog (GM factory literature)",
+       "url": "https://oldcarbrochures.org/United%20States/Oldsmobile/1988-Oldsmobile/1988-Oldsmobile-Mid-Size-Brochure/index.html",
+       "says": "1982 power teams '3.0/V6 2-Barrel'; 1988 Calais 3.0: 'Fuel management, fuel-injected: Multiport'"
+      },
+      {
+       "name": "Wikipedia: Buick V6 engine (LK9/LN7)",
+       "url": "https://en.wikipedia.org/wiki/Buick_V6_engine",
+       "says": "LK9 used a Rochester E2ME 2-bbl carburetor ... The LN7 is a multiport fuel injected version of the LK9"
+      },
+      {
+       "name": "NHRA engine blueprints BUI-83 / OLDS-85",
+       "url": "https://www.nhra.net/tech_specs/engine/blueprints/BUI-83.rtf",
+       "says": "181, 110 hp, induction 1-2, Rochester"
+      },
+      {
+       "name": "Curbside Classic: Sporty FWD Oldsmobiles of the 1980s",
+       "url": "https://www.curbsideclassic.com/automotive-histories/curbside-unicorns-the-sporty-oldsmobiles-of-the-1980s/",
+       "says": "fuel-injected Buick 3.0 V6 (125 hp, 150 lb-ft)"
+      }
+     ],
+     "note": ""
+    },
+    "years": {
+     "value": "1982-1988 (LK9 1982-1985, LN7 1985-1988)",
+     "sources": [
+      {
+       "name": "Wikipedia: Buick V6 engine (LK9/LN7)",
+       "url": "https://en.wikipedia.org/wiki/Buick_V6_engine",
+       "says": "Introduced in 1982 ... LK9 applications 1982-1985; LN7 introduced for 1985 ... replaced in 1989 with the 3.3"
+      },
+      {
+       "name": "Ate Up With Motor: Buick V6 history",
+       "url": "https://ateupwithmotor.com/model-histories/buick-special-skylark-rover-V8-3800-v6-history/",
+       "says": "for 1982 by a short-stroke 181 cu. in. engine"
+      },
+      {
+       "name": "Oldsmobile 1982 and 1988 catalogs (GM factory literature)",
+       "url": "https://oldcarbrochures.org/United%20States/Oldsmobile/1988-Oldsmobile/1988-Oldsmobile-Mid-Size-Brochure/index.html",
+       "says": "1982 Ciera: 3.0 V6 available; 1988 Cutlass Calais: available 3.0-liter 125 @ 4900"
+      },
+      {
+       "name": "NHRA engine blueprints BUI-83 .. BUI-88",
+       "url": "https://www.nhra.net/tech_specs/engine/blueprints/BUI-88.rtf",
+       "says": "181 listed 1983, 1984, 1985, 1986, 1988"
+      }
+     ],
+     "note": ""
+    }
+   },
+   "variants": [
+    {
+     "year": "1982-1985",
+     "hp": 110,
+     "hp_basis": "SAE net",
+     "compression_ratio": null,
+     "code": "LK9 (VIN E)",
+     "induction": "2-bbl (Rochester E2ME)",
+     "sources": [
+      {
+       "name": "Wikipedia: Buick V6 engine / Oldsmobile Cutlass Ciera",
+       "url": "https://en.wikipedia.org/wiki/Buick_V6_engine",
+       "says": "LK9 1982-1985 110 hp at 4,800 rpm; Ciera table 1982-1985 3.0 L LK9 V6 110 hp"
+      },
+      {
+       "name": "Curbside Classic: Sporty FWD Oldsmobiles of the 1980s",
+       "url": "https://www.curbsideclassic.com/automotive-histories/curbside-unicorns-the-sporty-oldsmobiles-of-the-1980s/",
+       "says": "initial Ciera options included Buick's new 3.0 V6 (110 hp, 145 lb-ft)"
+      },
+      {
+       "name": "NHRA engine blueprints BUI-83 / OLDS-85",
+       "url": "https://www.nhra.net/tech_specs/engine/blueprints/BUI-83.rtf",
+       "says": "1983 Buick 181 110 hp 1-2 Rochester; 1985 Olds 181 110 hp 1-2"
+      }
+     ],
+     "note": "Used in 1982-85 Buick Century and Oldsmobile Cutlass Ciera (also 1985 Electra/98 per Wikipedia). NHRA's 1984 and 1985 Buick sheets list 112 and 111 hp for the 181 2-bbl; the 1983 Buick and 1985 Olds sheets give 110. Olds catalogs list the 3.0 2-bbl but print no hp figure. No 1982-specific third source beyond Wikipedia and Curbside Classic (NHRA starts at 1983)."
+    },
+    {
+     "year": "1985-1988",
+     "hp": 125,
+     "hp_basis": "SAE net",
+     "compression_ratio": null,
+     "code": "LN7 (VIN L)",
+     "induction": "MPFI",
+     "sources": [
+      {
+       "name": "Oldsmobile 1988 Mid-Size catalog p.18 + 1986 Fuel Economy Estimate Sheet (GM factory literature)",
+       "url": "https://oldcarbrochures.org/United%20States/Oldsmobile/1988-Oldsmobile/1988-Oldsmobile-Mid-Size-Brochure/index.html",
+       "says": "3.0-liter ... 125 @ 4900, 150 @ 2400, Multiport; 1986 sheet: 3.0-liter (181 CID) V6 MFI, LN7, VIN L"
+      },
+      {
+       "name": "Wikipedia: Buick V6 engine (LN7) / Oldsmobile Cutlass Calais",
+       "url": "https://en.wikipedia.org/wiki/Buick_V6_engine",
+       "says": "LN7 125 hp at 4,900 rpm, 150 lb-ft at 2,400 rpm"
+      },
+      {
+       "name": "Curbside Classic: Sporty FWD Oldsmobiles of the 1980s",
+       "url": "https://www.curbsideclassic.com/automotive-histories/curbside-unicorns-the-sporty-oldsmobiles-of-the-1980s/",
+       "says": "Calais: fuel-injected Buick 3.0 V6 (125 hp, 150 lb-ft)"
+      },
+      {
+       "name": "NHRA engine blueprints BUI-85/86/88, OLDS-86/88, PONT-85/86",
+       "url": "https://www.nhra.net/tech_specs/engine/blueprints/BUI-86.rtf",
+       "says": "181, 125 hp"
+      }
+     ],
+     "note": "Used in 1985-88 Olds Calais, 1986-88 Buick Skylark / 1985-87 Somerset, 1985-86 Pontiac Grand Am. The earlier Skylark check found NHRA's 1987 sheet showing 130 hp; every other source gives 125."
+    }
+   ],
+   "unverified": {
+    "bore_in": "3.80 in: Oldsmobile 1988 Mid-Size catalog p.18 (Calais spec table 'Bore/Stroke (in.) 3.800/2.660') and Wikipedia ('same bore size as its larger sibling' = 3.8 in). Only 2 independent. Over-Drive's Buick V6 article copies Wikipedia word for word; spec sites (automobile-catalog, ultimatespecs) are excluded and some wrongly give 3.96. NHRA 181 rows have no bore.",
+    "stroke_in": "2.66 in: same two sources (Olds 1988 catalog '3.800/2.660'; Wikipedia 'smaller stroke of 2.66 in'). AUWM says only 'short-stroke'. Only 2.",
+    "compression_ratio": "DISPUTED. LK9: Wikipedia 8.45:1 (1982-83) / 8.4:1 (1984-85); NHRA blueprint figures 9.67 (1983) and 8.99 (1984-85) are not advertised ratings. LN7: Wikipedia 9.0:1; Olds 1988 catalog prints 8.5 to 1 (the same figure in every column of that table, so possibly a template error); NHRA lists 9.54-9.58. No three sources agree.",
+    "head_material": "Cast iron: Wikipedia infobox (Buick V6 family) and Ate Up With Motor (production Fireball V6 'reverted to cast iron'). Family-level only, 2 sources.",
+    "fuel_type": "Gasoline: Wikipedia infobox only (the EPA rows checked carry no fuel field). Unverified.",
+    "rod_length_in": "Not found in any acceptable source (NHRA 181 rows have no rod length)."
+   },
+   "unverified_variants": []
+  },
+  {
+   "id": "buick-225-v6",
+   "name": "Buick 225 V6 (Fireball / Wildcat V-6; Olds Econ-O-Way; Jeep Dauntless)",
+   "fields": {
+    "bore_in": {
+     "value": 3.75,
+     "sources": [
+      {
+       "name": "Oldsmobile 1965 Dealer SPECS (GM factory literature, oldcarbrochures.org)",
+       "url": "https://www.oldcarbrochures.org/United%20States/Oldsmobile/1965%20Oldsmobile/1965-Oldsmobile-Dealer-SPECS/index.html",
+       "says": "155-hp Econ-O-Way: 155 at 4400, 225 [lb-ft], 225 [cu in], bore 3.75, stroke 3.40, 9.0, 1 [bbl], Regular"
+      },
+      {
+       "name": "NHRA engine blueprints BUI-64..67 / OLDS-64, OLDS-65",
+       "url": "https://www.nhra.net/tech_specs/engine/blueprints/BUI-64.rtf",
+       "says": "225, bore 3.75, stroke 3.40"
+      },
+      {
+       "name": "Over-Drive Magazine: 1964 Buick Mid-Size Cars Fact Sheet",
+       "url": "https://over-drive-magazine.com/2025/03/28/1964-buick-mid-size-car-fact-sheet/",
+       "says": "Bore and stroke: 3.750 x 3.400 inches"
+      },
+      {
+       "name": "Wikipedia: Buick V6 engine (225)",
+       "url": "https://en.wikipedia.org/wiki/Buick_V6_engine",
+       "says": "The bore was increased to 3.75 in, and stroke increased to 3.4 in"
+      },
+      {
+       "name": "Ate Up With Motor: Buick V6 history",
+       "url": "https://ateupwithmotor.com/model-histories/buick-special-skylark-rover-V8-3800-v6-history/",
+       "says": "Buick engineers increased the V6's bore from 3.75 to 3.80 inches (for 1975)"
+      }
+     ],
+     "note": ""
+    },
+    "stroke_in": {
+     "value": 3.4,
+     "sources": [
+      {
+       "name": "Oldsmobile 1965 Dealer SPECS (GM factory literature)",
+       "url": "https://www.oldcarbrochures.org/United%20States/Oldsmobile/1965%20Oldsmobile/1965-Oldsmobile-Dealer-SPECS/index.html",
+       "says": "bore 3.75, stroke 3.40"
+      },
+      {
+       "name": "NHRA engine blueprints BUI-64..67 / OLDS-64, OLDS-65",
+       "url": "https://www.nhra.net/tech_specs/engine/blueprints/BUI-66.rtf",
+       "says": "stroke 3.40"
+      },
+      {
+       "name": "Over-Drive Magazine: 1966 Buick Mid-Size Cars Fact Sheet",
+       "url": "https://over-drive-magazine.com/2024/01/03/1966-buick-mid-size-cars-fact-sheet/",
+       "says": "3.750 x 3.400 inches"
+      },
+      {
+       "name": "Wikipedia: Buick V6 engine (225)",
+       "url": "https://en.wikipedia.org/wiki/Buick_V6_engine",
+       "says": "stroke increased to 3.4 in"
+      }
+     ],
+     "note": ""
+    },
+    "displacement_ci": {
+     "value": 225,
+     "sources": [
+      {
+       "name": "Oldsmobile 1965 Dealer SPECS (GM factory literature)",
+       "url": "https://www.oldcarbrochures.org/United%20States/Oldsmobile/1965%20Oldsmobile/1965-Oldsmobile-Dealer-SPECS/index.html",
+       "says": "Displacement (cu. in.) 225"
+      },
+      {
+       "name": "NHRA engine blueprints BUI-64..67",
+       "url": "https://www.nhra.net/tech_specs/engine/blueprints/BUI-64.rtf",
+       "says": "displacement 225"
+      },
+      {
+       "name": "Over-Drive Magazine: 1964 Buick Mid-Size Cars Fact Sheet",
+       "url": "https://over-drive-magazine.com/2025/03/28/1964-buick-mid-size-car-fact-sheet/",
+       "says": "Displacement: 225 cubic inches"
+      },
+      {
+       "name": "Wikipedia: Buick V6 engine (225)",
+       "url": "https://en.wikipedia.org/wiki/Buick_V6_engine",
+       "says": "3,692 cc (225 cu in)"
+      },
+      {
+       "name": "Ate Up With Motor: Buick V6 history",
+       "url": "https://ateupwithmotor.com/model-histories/buick-special-skylark-rover-V8-3800-v6-history/",
+       "says": "bringing the V6's displacement to 225 cu. in. (3,692 cc)"
+      }
+     ],
+     "note": ""
+    },
+    "num_cylinders": {
+     "value": 6,
+     "sources": [
+      {
+       "name": "Oldsmobile 1965 Dealer SPECS (GM factory literature)",
+       "url": "https://www.oldcarbrochures.org/United%20States/Oldsmobile/1965%20Oldsmobile/1965-Oldsmobile-Dealer-SPECS/index.html",
+       "says": "155-hp Econ-O-Way V-6"
+      },
+      {
+       "name": "Over-Drive Magazine: 1964 Buick Mid-Size Cars Fact Sheet",
+       "url": "https://over-drive-magazine.com/2025/03/28/1964-buick-mid-size-car-fact-sheet/",
+       "says": "155 HP 225 CID V-6"
+      },
+      {
+       "name": "Wikipedia: Buick V6 engine",
+       "url": "https://en.wikipedia.org/wiki/Buick_V6_engine",
+       "says": "225 ... V6"
+      },
+      {
+       "name": "Ate Up With Motor: Buick V6 history",
+       "url": "https://ateupwithmotor.com/model-histories/buick-special-skylark-rover-V8-3800-v6-history/",
+       "says": "the V6's displacement to 225 cu. in."
+      }
+     ],
+     "note": ""
+    },
+    "configuration": {
+     "value": "90-degree V6, odd-fire (three shared crankpins 120 degrees apart; firing intervals alternate 90/150 degrees)",
+     "sources": [
+      {
+       "name": "Wikipedia: Buick V6 engine",
+       "url": "https://en.wikipedia.org/wiki/Buick_V6_engine",
+       "says": "90 deg bank ... uneven firing pattern due to the crankshaft having only three crank pins set at 120 deg apart"
+      },
+      {
+       "name": "Ate Up With Motor: Buick V6 history",
+       "url": "https://ateupwithmotor.com/model-histories/buick-special-skylark-rover-V8-3800-v6-history/",
+       "says": "90-degree bank angle ... in the production Fireball V6, [firing intervals] alternated between 150 and 90 degrees of crankshaft rotation"
+      },
+      {
+       "name": "Novak: Guide to the Buick 90 Degree V6",
+       "url": "https://www.novak-adapt.com/knowledge/engines/buick-90-v6.html",
+       "says": "odd-fire design ... unevenly spaced (at 90-150-90-etc.) firing impulses"
+      }
+     ],
+     "note": ""
+    },
+    "compression_ratio": {
+     "value": 9.0,
+     "sources": [
+      {
+       "name": "Oldsmobile 1965 Dealer SPECS (GM factory literature); TeamBuick reprint of Buick service-manual specs (same GM source)",
+       "url": "https://www.oldcarbrochures.org/United%20States/Oldsmobile/1965%20Oldsmobile/1965-Oldsmobile-Dealer-SPECS/index.html",
+       "says": "Econ-O-Way V-6 compression ratio 9.0; TeamBuick: 'Compression Ratio 9.0 to 1'"
+      },
+      {
+       "name": "NHRA engine blueprints BUI-64..67 / OLDS-64, OLDS-65",
+       "url": "https://www.nhra.net/tech_specs/engine/blueprints/BUI-67.rtf",
+       "says": "compression 9.0 (155 hp 1964-65, 160 hp 1966-67)"
+      },
+      {
+       "name": "Over-Drive Magazine: 1964 and 1966 Buick Mid-Size Fact Sheets",
+       "url": "https://over-drive-magazine.com/2024/01/03/1966-buick-mid-size-cars-fact-sheet/",
+       "says": "Compression ratio: 9.00:1 (both years)"
+      }
+     ],
+     "note": ""
+    },
+    "firing_order": {
+     "value": "1-6-5-4-3-2",
+     "sources": [
+      {
+       "name": "TeamBuick: General Specifications for the 198 and 225 V-6 ('compiled from original Buick service manuals'); counted as the GM source",
+       "url": "https://www.teambuick.com/reference/225_v6_engine_specs.php",
+       "says": "Firing Order 1-6-5-4-3-2"
+      },
+      {
+       "name": "Ate Up With Motor: Buick V6 history",
+       "url": "https://ateupwithmotor.com/model-histories/buick-special-skylark-rover-V8-3800-v6-history/",
+       "says": "the engine would always fire across banks (firing order was 1-6-5-4-3-2)"
+      },
+      {
+       "name": "Novak: Guide to the Buick 90 Degree V6",
+       "url": "https://www.novak-adapt.com/knowledge/engines/buick-90-v6.html",
+       "says": "All Buick V6's feature a 1-6-5-4-3-2 firing order."
+      },
+      {
+       "name": "Wikipedia: Buick V6 engine",
+       "url": "https://en.wikipedia.org/wiki/Buick_V6_engine",
+       "says": "The firing order is 1-6-5-4-3-2."
+      }
+     ],
+     "note": ""
+    },
+    "valvetrain": {
+     "value": "OHV pushrod, 2 valves per cylinder, hydraulic lifters",
+     "sources": [
+      {
+       "name": "Over-Drive Magazine: 1964 Buick Mid-Size Cars Fact Sheet",
+       "url": "https://over-drive-magazine.com/2025/03/28/1964-buick-mid-size-car-fact-sheet/",
+       "says": "Overhead valves ... Valve lifters: Hydraulic"
+      },
+      {
+       "name": "NHRA engine blueprints BUI-64..67",
+       "url": "https://www.nhra.net/tech_specs/engine/blueprints/BUI-65.rtf",
+       "says": "rocker ratio 1.6, hydraulic lifters, intake valve 1.63, exhaust valve 1.38"
+      },
+      {
+       "name": "Wikipedia: Buick V6 engine (infobox)",
+       "url": "https://en.wikipedia.org/wiki/Buick_V6_engine",
+       "says": "OHV 2 valves x cyl."
+      },
+      {
+       "name": "TeamBuick (Buick service-manual specs; GM)",
+       "url": "https://www.teambuick.com/reference/225_v6_engine_specs.php",
+       "says": "Valve Arrangement: In Head"
+      }
+     ],
+     "note": ""
+    },
+    "block_material": {
+     "value": "Cast iron",
+     "sources": [
+      {
+       "name": "TeamBuick (Buick service-manual specs; GM)",
+       "url": "https://www.teambuick.com/reference/225_v6_engine_specs.php",
+       "says": "Block material: Cast Iron"
+      },
+      {
+       "name": "Over-Drive Magazine: 1964 Buick Mid-Size Cars Fact Sheet",
+       "url": "https://over-drive-magazine.com/2025/03/28/1964-buick-mid-size-car-fact-sheet/",
+       "says": "Cast iron block"
+      },
+      {
+       "name": "Wikipedia: Buick V6 engine",
+       "url": "https://en.wikipedia.org/wiki/Buick_V6_engine",
+       "says": "block: Cast iron"
+      },
+      {
+       "name": "Ate Up With Motor: Buick V6 history",
+       "url": "https://ateupwithmotor.com/model-histories/buick-special-skylark-rover-V8-3800-v6-history/",
+       "says": "the production engine reverted to cast iron"
+      }
+     ],
+     "note": ""
+    },
+    "head_material": {
+     "value": "Cast iron",
+     "sources": [
+      {
+       "name": "TeamBuick (Buick service-manual specs; GM)",
+       "url": "https://www.teambuick.com/reference/225_v6_engine_specs.php",
+       "says": "Head material: Cast Iron"
+      },
+      {
+       "name": "Wikipedia: Buick V6 engine (infobox)",
+       "url": "https://en.wikipedia.org/wiki/Buick_V6_engine",
+       "says": "head: Cast iron"
+      },
+      {
+       "name": "Ate Up With Motor: Buick V6 history",
+       "url": "https://ateupwithmotor.com/model-histories/buick-special-skylark-rover-V8-3800-v6-history/",
+       "says": "The earliest prototypes of the Fireball V6 were aluminum, but the production engine reverted to cast iron"
+      }
+     ],
+     "note": "AUWM's statement covers the engine as a whole, not the head specifically."
+    },
+    "induction": {
+     "value": "Carbureted: Rochester 1-bbl (1964-65), Rochester 2-bbl (1966-67)",
+     "sources": [
+      {
+       "name": "Over-Drive Magazine: 1964 and 1966 Buick Mid-Size Fact Sheets",
+       "url": "https://over-drive-magazine.com/2024/01/03/1966-buick-mid-size-cars-fact-sheet/",
+       "says": "1964: Rochester BC one-barrel; 1966: Rochester 2CG Two-barrel"
+      },
+      {
+       "name": "NHRA engine blueprints BUI-64..67",
+       "url": "https://www.nhra.net/tech_specs/engine/blueprints/BUI-66.rtf",
+       "says": "induction 1-1 Rochester (1964-65), 1-2 Rochester (1966-67)"
+      },
+      {
+       "name": "Wikipedia: Buick V6 engine (225)",
+       "url": "https://en.wikipedia.org/wiki/Buick_V6_engine",
+       "says": "1964-1965 single barrel Rochester MonoJet ... In 1966-1967, the 1-barrel was replaced with a 2-barrel Rochester 2GV"
+      },
+      {
+       "name": "Oldsmobile 1965 Dealer SPECS (GM factory literature)",
+       "url": "https://www.oldcarbrochures.org/United%20States/Oldsmobile/1965%20Oldsmobile/1965-Oldsmobile-Dealer-SPECS/index.html",
+       "says": "Carburetor (no. [of barrels]) 1"
+      }
+     ],
+     "note": "Carburetor model names differ: Over-Drive '2CG' vs Wikipedia '2GV'; Over-Drive 1964 'BC' vs Wikipedia 'MonoJet'."
+    },
+    "years": {
+     "value": "1964-1967 (Buick Special/Skylark); 1964-1965 Oldsmobile F-85/Cutlass; Kaiser Jeep Dauntless 225 from 1965/66",
+     "sources": [
+      {
+       "name": "Wikipedia: Buick V6 engine (225 / Dauntless)",
+       "url": "https://en.wikipedia.org/wiki/Buick_V6_engine",
+       "says": "used in Buick's Special and Skylark from 1964 to 1967 and Oldsmobile's F-85/Cutlass for 1964 and 1965 ... In 1965, Kaiser-Jeep began using the Buick 225"
+      },
+      {
+       "name": "NHRA engine blueprints BUI-64, BUI-65, BUI-66, BUI-67, OLDS-64, OLDS-65",
+       "url": "https://www.nhra.net/tech_specs/engine/blueprints/BUI-67.rtf",
+       "says": "225 V6 listed for Buick 1964-1967 and Oldsmobile 1964-1965"
+      },
+      {
+       "name": "Over-Drive Magazine: 1964 and 1967 Buick Mid-Size Fact Sheets",
+       "url": "https://over-drive-magazine.com/2024/01/10/1967-buick-mid-size-cars-fact-sheet/",
+       "says": "1964: 155 HP 225 CID V-6; 1967: 160 HP 225 CID V-6, 2-door coupe only"
+      },
+      {
+       "name": "Buick 1964-1967 brochures (GM factory literature, oldcarbrochures.org)",
+       "url": "https://oldcarbrochures.org/United%20States/Buick/1967_Buick/1967%20Buick%20Full%20Line/index.html",
+       "says": "1964: '155 Horsepower Fireball V6'; 1967: 'Skylark's 225 cubic inch V-6'"
+      }
+     ],
+     "note": "Ate Up With Motor says the V6 grew to 225 'for 1965'; the 1964 225 is documented by NHRA, Over-Drive, the Buick 1964 brochure and Wikipedia. AUWM says the first factory V6 CJ-5s were 1966 models; Wikipedia says Kaiser-Jeep began using it in 1965."
+    }
+   },
+   "variants": [
+    {
+     "year": "1964-1965",
+     "hp": 155,
+     "hp_basis": "gross",
+     "compression_ratio": 9.0,
+     "code": "Fireball V6 (Buick); Econ-O-Way V-6 (Olds F-85); RPO KH 1964 / LH 1965 per Wikipedia",
+     "induction": "1-bbl",
+     "sources": [
+      {
+       "name": "Buick 1964/1965 prestige brochures + Oldsmobile 1965 Dealer SPECS (GM factory literature)",
+       "url": "https://www.oldcarbrochures.org/United%20States/Oldsmobile/1965%20Oldsmobile/1965-Oldsmobile-Dealer-SPECS/index.html",
+       "says": "Buick: '155 Horsepower Fireball V6'; Olds: '155-hp Econ-O-Way 155 at 4400 ... 9.0 ... 1'"
+      },
+      {
+       "name": "Over-Drive Magazine: 1964 and 1965 Buick Mid-Size Fact Sheets",
+       "url": "https://over-drive-magazine.com/2025/03/28/1964-buick-mid-size-car-fact-sheet/",
+       "says": "155 HP 225 CID V-6, 155 @ 4400"
+      },
+      {
+       "name": "NHRA engine blueprints BUI-64, BUI-65, OLDS-64, OLDS-65",
+       "url": "https://www.nhra.net/tech_specs/engine/blueprints/OLDS-64.rtf",
+       "says": "225, 155 hp, 9.0, 1-1 Rochester"
+      },
+      {
+       "name": "Wikipedia: Buick V6 engine / Buick Skylark",
+       "url": "https://en.wikipedia.org/wiki/Buick_V6_engine",
+       "says": "1964-1965 models featured a single barrel Rochester MonoJet, producing 155 hp"
+      },
+      {
+       "name": "Ate Up With Motor: Buick V6 history",
+       "url": "https://ateupwithmotor.com/model-histories/buick-special-skylark-rover-V8-3800-v6-history/",
+       "says": "In this form, the V6 had 155 gross hp"
+      }
+     ],
+     "note": "Same rating in the 1964-65 Olds F-85/Cutlass. RPO codes come from Wikipedia only."
+    },
+    {
+     "year": "1966-1967",
+     "hp": 160,
+     "hp_basis": "gross",
+     "compression_ratio": 9.0,
+     "code": "Wildcat V-6 (1966 Buick name); RPO MH 1966 / NH 1967 per Wikipedia",
+     "induction": "2-bbl",
+     "sources": [
+      {
+       "name": "Buick 1966 prestige brochure (GM factory literature)",
+       "url": "https://oldcarbrochures.org/United%20States/Buick/1966_Buick/1966_Buick_Prestige_Brochure/index.html",
+       "says": "Skylark's 160-horsepower Wildcat V-6 engine"
+      },
+      {
+       "name": "Over-Drive Magazine: 1966 Buick Mid-Size Cars Fact Sheet",
+       "url": "https://over-drive-magazine.com/2024/01/03/1966-buick-mid-size-cars-fact-sheet/",
+       "says": "160 @ 4200 RPM; Rochester 2CG Two-barrel; 9.00:1"
+      },
+      {
+       "name": "NHRA engine blueprints BUI-66, BUI-67",
+       "url": "https://www.nhra.net/tech_specs/engine/blueprints/BUI-66.rtf",
+       "says": "225, 160 hp, 9.0, 1-2 Rochester"
+      },
+      {
+       "name": "Ate Up With Motor: Buick V6 history",
+       "url": "https://ateupwithmotor.com/model-histories/buick-special-skylark-rover-V8-3800-v6-history/",
+       "says": "raised in 1966 to 160 hp (119 kW)"
+      },
+      {
+       "name": "Wikipedia: Buick V6 engine",
+       "url": "https://en.wikipedia.org/wiki/Buick_V6_engine",
+       "says": "In 1966-1967 ... 2-barrel Rochester 2GV, giving the engine a 5-horsepower boost to 160 hp"
+      }
+     ],
+     "note": "Peak rpm differs: Over-Drive 1966 '160 @ 4200'; TeamBuick's service-manual compilation '160 BHP @ 4400'. 1967: Skylark thin-pillar coupe only (Over-Drive: 894 built)."
+    }
+   ],
+   "unverified": {
+    "displacement_l": "3.7 L: Wikipedia (3,692 cc) and Ate Up With Motor (3,692 cc). Only 2 give it in metric; it is a straight conversion of the verified 225 ci (3.75 x 3.40 in x 6 = 3,692 cc).",
+    "rod_length_in": "5.96 in: NHRA BUI-64..67 (5.96) / OLDS-64, OLDS-65 (5.965) and TeamBuick's Buick service-manual compilation ('Connecting Rod Length 5.960'). Only 2 independent (NHRA + GM).",
+    "fuel_type": "Gasoline, regular grade: Oldsmobile 1965 Dealer SPECS ('Fuel recommended: Regular') and Wikipedia infobox (gasoline). Only 2."
+   },
+   "unverified_variants": []
+  },
+  {
+   "id": "gm-152-i4-lkw",
+   "name": "GM Ecotec 2.5 L Gen III inline-four, RPO LKW (iVLC, start/stop)",
+   "fields": {
+    "displacement_l": {
+     "value": 2.5,
+     "sources": [
+      {
+       "name": "GM/Chevrolet media - 2014 Chevrolet Impala specifications (media.chevrolet.com, archived)",
+       "url": "https://web.archive.org/web/2016/http://media.chevrolet.com/media/us/en/chevrolet/vehicles/impala/2014.tab1.html",
+       "says": "Ecotec 2.5L DOHC I-4; Displacement (cu in / cc): 150 / 2457"
+      },
+      {
+       "name": "Wikipedia - GM Ecotec engine (Gen III 2.5 LCV/LKW)",
+       "url": "https://en.wikipedia.org/wiki/GM_Ecotec_engine",
+       "says": "Displacement for the 2.5 L engine is 2,457 cc"
+      },
+      {
+       "name": "EPA fueleconomy.gov vehicle data",
+       "url": "https://www.fueleconomy.gov/feg/download.shtml",
+       "says": "2014-2019 Impala 2.5 L 4-cyl SIDI"
+      },
+      {
+       "name": "Green Car Reports - 2014 Chevrolet Impala 2.5-liter four-cylinder quick drive",
+       "url": "https://www.greencarreports.com/news/1084370_2014-chevrolet-impala-2-5-liter-four-cylinder-quick-drive",
+       "says": "196-hp, 2.5-liter four-cylinder Ecotec engine"
+      },
+      {
+       "name": "Kelley Blue Book - 2017 Chevrolet Impala review/specs",
+       "url": "https://www.kbb.com/chevrolet/impala/2017/",
+       "says": "2.5-liter inline-4 197 horsepower @ 6,300 rpm"
+      }
+     ],
+     "note": ""
+    },
+    "num_cylinders": {
+     "value": 4,
+     "sources": [
+      {
+       "name": "GM/Chevrolet media - 2014 Chevrolet Impala specifications (media.chevrolet.com, archived)",
+       "url": "https://web.archive.org/web/2016/http://media.chevrolet.com/media/us/en/chevrolet/vehicles/impala/2014.tab1.html",
+       "says": "Ecotec 2.5L DOHC I-4"
+      },
+      {
+       "name": "Wikipedia - GM Ecotec engine (Gen III 2.5 LCV/LKW)",
+       "url": "https://en.wikipedia.org/wiki/GM_Ecotec_engine",
+       "says": "family of inline-four engines"
+      },
+      {
+       "name": "EPA fueleconomy.gov vehicle data",
+       "url": "https://www.fueleconomy.gov/feg/download.shtml",
+       "says": "2.5 L 4-cyl"
+      },
+      {
+       "name": "Green Car Reports - 2014 Chevrolet Impala 2.5-liter four-cylinder quick drive",
+       "url": "https://www.greencarreports.com/news/1084370_2014-chevrolet-impala-2-5-liter-four-cylinder-quick-drive",
+       "says": "2.5-liter four-cylinder"
+      }
+     ],
+     "note": ""
+    },
+    "configuration": {
+     "value": "inline-4",
+     "sources": [
+      {
+       "name": "GM/Chevrolet media - 2014 Chevrolet Impala specifications (media.chevrolet.com, archived)",
+       "url": "https://web.archive.org/web/2016/http://media.chevrolet.com/media/us/en/chevrolet/vehicles/impala/2014.tab1.html",
+       "says": "Ecotec 2.5L DOHC I-4"
+      },
+      {
+       "name": "Wikipedia - GM Ecotec engine (Gen III 2.5 LCV/LKW)",
+       "url": "https://en.wikipedia.org/wiki/GM_Ecotec_engine",
+       "says": "inline-four"
+      },
+      {
+       "name": "Kelley Blue Book - 2017 Chevrolet Impala review/specs",
+       "url": "https://www.kbb.com/chevrolet/impala/2017/",
+       "says": "2.5-liter inline-4"
+      },
+      {
+       "name": "AutoGuide - 2014 Chevrolet Impala 2.5L 4-Cyl Review (Luke Vandezande, 2013-06-12)",
+       "url": "https://www.autoguide.com/manufacturer/chevrolet/2014-chevrolet-impala-25l-4cyl-review-2667.html",
+       "says": "2.5L 4-cylinder"
+      }
+     ],
+     "note": ""
+    },
+    "valvetrain": {
+     "value": "DOHC, 4 valves/cyl (16-valve), intake variable valve lift (iVLC) + VVT",
+     "sources": [
+      {
+       "name": "GM/Chevrolet media - 2015/2016 Chevrolet Impala specifications (same GM source, archived)",
+       "url": "https://web.archive.org/web/2017/http://media.chevrolet.com/media/us/en/chevrolet/vehicles/impala/2015.tab1.html",
+       "says": "Valvetrain: DOHC iVLC, four valves per cylinder, continuously variable valve timing"
+      },
+      {
+       "name": "Wikipedia - GM Ecotec engine (Gen III 2.5 LCV/LKW)",
+       "url": "https://en.wikipedia.org/wiki/GM_Ecotec_engine",
+       "says": "dual overhead camshafts with continuously variable valve timing; LKW adds Intake Valve Lift Control two-stage variable valve lift"
+      },
+      {
+       "name": "Green Car Reports - 2014 Chevrolet Impala 2.5-liter four-cylinder quick drive",
+       "url": "https://www.greencarreports.com/news/1084370_2014-chevrolet-impala-2-5-liter-four-cylinder-quick-drive",
+       "says": "Not only does it have dual overhead cams and variable valve timing, but ... added variable lift to the intake valves"
+      }
+     ],
+     "note": "GCR confirms DOHC + intake variable lift; the 4-valves-per-cylinder count is GM (+ Wikipedia's general Ecotec description) only."
+    },
+    "induction": {
+     "value": "naturally aspirated; direct injection (SIDI)",
+     "sources": [
+      {
+       "name": "GM/Chevrolet media - 2014 Chevrolet Impala specifications (media.chevrolet.com, archived)",
+       "url": "https://web.archive.org/web/2016/http://media.chevrolet.com/media/us/en/chevrolet/vehicles/impala/2014.tab1.html",
+       "says": "Fuel delivery: high-pressure direct injection and electronic throttle control"
+      },
+      {
+       "name": "Wikipedia - GM Ecotec engine (Gen III 2.5 LCV/LKW)",
+       "url": "https://en.wikipedia.org/wiki/GM_Ecotec_engine",
+       "says": "high-pressure returnless direct-injection fuel system"
+      },
+      {
+       "name": "AutoGuide - 2014 Chevrolet Impala 2.5L 4-Cyl Review (Luke Vandezande, 2013-06-12)",
+       "url": "https://www.autoguide.com/manufacturer/chevrolet/2014-chevrolet-impala-25l-4cyl-review-2667.html",
+       "says": "direct injection plays a big role"
+      },
+      {
+       "name": "The Truth About Cars - Review: 2014 Chevrolet Impala (2013-08)",
+       "url": "https://www.thetruthaboutcars.com/2013/08/review-2014-chevrolet-impala-with-video/",
+       "says": "a 2.5L direct-injection four-cylinder engine"
+      },
+      {
+       "name": "EPA fueleconomy.gov vehicle data",
+       "url": "https://www.fueleconomy.gov/feg/download.shtml",
+       "says": "2.5 L 4-cyl SIDI"
+      }
+     ],
+     "note": ""
+    },
+    "years": {
+     "value": "2014-2019 (Chevrolet Impala); also 2014-2015 Chevrolet Malibu",
+     "sources": [
+      {
+       "name": "Chevrolet 2014 Impala US sales brochure (GM; local copy impm/broch/2014.txt)",
+       "url": "https://www.auto-brochures.com/makes/Chevrolet/Impala/Chevrolet_US%20Impala_2014.pdf",
+       "says": "ECOTEC 2.5L DOHC 4-cylinder with direct injection ... 196 hp"
+      },
+      {
+       "name": "Wikipedia - GM Ecotec engine (Gen III 2.5 LCV/LKW)",
+       "url": "https://en.wikipedia.org/wiki/GM_Ecotec_engine",
+       "says": "LKW: 2014-2019 Chevrolet Impala; 2014-2015 Chevrolet Malibu"
+      },
+      {
+       "name": "Kelley Blue Book - 2014 Chevrolet Impala review/specs",
+       "url": "https://www.kbb.com/chevrolet/impala/2014/",
+       "says": "The 2.5-liter 4-cylinder offers 196 horsepower"
+      },
+      {
+       "name": "Kelley Blue Book - 2019 Chevrolet Impala review/specs",
+       "url": "https://www.kbb.com/chevrolet/impala/2019/",
+       "says": "Horsepower 197 - 305 hp; 4-Cyl, ECOTEC, 2.5 Liter"
+      },
+      {
+       "name": "EPA fueleconomy.gov vehicle data",
+       "url": "https://www.fueleconomy.gov/feg/download.shtml",
+       "says": "Impala 2.5 L 4-cyl SIDI listed 2014-2019"
+      }
+     ],
+     "note": "Impala is the verified application; Malibu use per Wikipedia + GM Authority only. (The 2014-2016 'Impala Limited' W-body used other engines.)"
+    }
+   },
+   "variants": [
+    {
+     "year": "2014-2016",
+     "hp": 196,
+     "hp_basis": "SAE net (SAE certified) @ 6,300 rpm",
+     "compression_ratio": null,
+     "code": "LKW (Impala)",
+     "induction": "DI",
+     "sources": [
+      {
+       "name": "Chevrolet 2014 Impala US sales brochure (GM; local copy impm/broch/2014.txt)",
+       "url": "https://www.auto-brochures.com/makes/Chevrolet/Impala/Chevrolet_US%20Impala_2014.pdf",
+       "says": "2014/2015/2016 brochures: ECOTEC 2.5L DOHC ... 196 hp @ 6300 rpm, 186 lb.-ft. @ 4400"
+      },
+      {
+       "name": "GM/Chevrolet media - 2015/2016 Chevrolet Impala specifications (same GM source, archived)",
+       "url": "https://web.archive.org/web/2017/http://media.chevrolet.com/media/us/en/chevrolet/vehicles/impala/2015.tab1.html",
+       "says": "Horsepower: 196 / 146 @ 6300 (SAE certified) [2014, 2015, 2016 GM spec pages]"
+      },
+      {
+       "name": "Wikipedia - GM Ecotec engine (Gen III 2.5 LCV/LKW)",
+       "url": "https://en.wikipedia.org/wiki/GM_Ecotec_engine",
+       "says": "LKW 2014-2019 Chevrolet Impala 196-197 hp @ 6300 rpm"
+      },
+      {
+       "name": "Kelley Blue Book - 2015 Chevrolet Impala review/specs",
+       "url": "https://www.kbb.com/chevrolet/impala/2015/",
+       "says": "For 2015 ... a 2.5-liter that puts out an adequate 196 horsepower (KBB 2014 and 2016 pages likewise 196)"
+      },
+      {
+       "name": "Green Car Reports - 2014 Chevrolet Impala 2.5-liter four-cylinder quick drive",
+       "url": "https://www.greencarreports.com/news/1084370_2014-chevrolet-impala-2-5-liter-four-cylinder-quick-drive",
+       "says": "196-hp, 2.5-liter four-cylinder Ecotec [2014]"
+      }
+     ],
+     "note": "Brochure and GM media spec page are the same maker (one source)."
+    },
+    {
+     "year": "2017-2019",
+     "hp": 197,
+     "hp_basis": "SAE net @ 6,300 rpm",
+     "compression_ratio": null,
+     "code": "LKW (Impala, stop/start)",
+     "induction": "DI",
+     "sources": [
+      {
+       "name": "Chevrolet 2017 Impala US sales brochure (GM; local copy impm/broch/2017.txt)",
+       "url": "https://www.auto-brochures.com/makes/Chevrolet/Impala/Chevrolet_US%20Impala_2017.pdf",
+       "says": "2017/2018/2019 brochures: ECOTEC 2.5L DOHC ... 197 hp @ 6300 rpm, 191 lb.-ft. @ 4400"
+      },
+      {
+       "name": "Wikipedia - GM Ecotec engine (Gen III 2.5 LCV/LKW)",
+       "url": "https://en.wikipedia.org/wiki/GM_Ecotec_engine",
+       "says": "196-197 hp @ 6300 rpm"
+      },
+      {
+       "name": "Kelley Blue Book - 2017 Chevrolet Impala review/specs",
+       "url": "https://www.kbb.com/chevrolet/impala/2017/",
+       "says": "2.5-liter inline-4 197 horsepower @ 6,300 rpm, 191 lb-ft @ 4,400 (KBB 2018 and 2019: 197 - 305 hp)"
+      }
+     ]
+    }
+   ],
+   "unverified": {
+    "bore_in": "3.4646 in (88 mm) - GM Impala spec sheet '3.46 x 3.97 / 88 x 101'; Wikipedia '88.0 mm'; GM Authority reprints the GM Powertrain sheet '88.00 x 101.00mm' (same GM source). No third independent source found.",
+    "stroke_in": "3.9764 in (101 mm, GM) - GM '3.97 in / 101 mm'; Wikipedia '100.8 mm' (3.9685 in). Only GM + Wikipedia; small 101 vs 100.8 mm discrepancy.",
+    "displacement_ci": "150 ci (2,457 cc) - GM '150 / 2457'; Wikipedia '2,457 cc' (= 149.9 ci). NOTE the id's 152 is nominal 2.5 L x 61.02; actual is 150. Only GM + Wikipedia (EPA gives 2.5 L only).",
+    "compression_ratio": "GM Impala spec sheets (2014, 2015, 2016): 11.25:1. Wikipedia and the GM Powertrain sheet (via GM Authority): 11.3:1 (rounded). Only 2 independent sources (GM, Wikipedia); they agree within rounding.",
+    "firing_order": "1-3-4-2 - only in the GM Powertrain spec sheet as reprinted by GM Authority. Not found anywhere else.",
+    "block_material": "Aluminum - GM spec sheet 'cast aluminum' (2014) / 'lost foam cast aluminum' (2015-16); GM Powertrain text (via GM Authority) 'cast aluminum cylinder block with cast-in iron liners'. Wikipedia mentions only the aluminium bedplate. Only GM confirms.",
+    "head_material": "Aluminum - GM spec sheet 'cast aluminum'; GM Powertrain text (via GM Authority) '356T6 aluminum cylinder head'. Only GM.",
+    "fuel_type": "Regular unleaded gasoline (E85-capable per GM Powertrain sheet 'E0-E100' via GM Authority) - GM spec 'Recommended fuel: regular unleaded'; Wikipedia 'Gasoline'. Only 2 sources (EPA excluded for fuel)."
+   },
+   "unverified_variants": []
+  },
+  {
+   "id": "chevrolet-200-v6",
+   "name": "Chevrolet 200 (3.3 L) 90-degree V6",
+   "fields": {
+    "bore_in": {
+     "value": 3.5,
+     "sources": [
+      {
+       "name": "GM Heritage Center 1979 Chevrolet El Camino / Monte Carlo information kits",
+       "url": "https://www.gm.com/content/dam/company/no_search/heritage-archive-docs/vehicle-information-kits/chevrolet/1979-Chevrolet-El-Camino.pdf",
+       "says": "Basic Specifications (L26): Bore & stroke (nominal) 3.50\" x 3.48\"; MC kit cylinder block: bore diameter 88.881-88.964 mm (3.4995-3.5025)"
+      },
+      {
+       "name": "Wikipedia: Chevrolet 90-degree V6 engine",
+       "url": "https://en.wikipedia.org/wiki/Chevrolet_90%C2%B0_V6_engine",
+       "says": "3.5-by-3.48-inch (88.9 mm x 88.4 mm)"
+      },
+      {
+       "name": "Standard Catalog of American Cars 1976-1986 (Krause/Motorbooks, 1989), Google Books snippet",
+       "url": "https://books.google.com/books?id=xTM2Ixfev5QC",
+       "says": "Bore & stroke: 3.50 x 3.48 in."
+      },
+      {
+       "name": "Chilton's Motor/Age Professional Automotive Service Manual (1978), Google Books snippet",
+       "url": "https://books.google.com/books?id=UQ8SAQAAMAAJ",
+       "says": "V6-200 Chev 2 ... 95 @ 3800 160 @ 2000 3.50 x 3.48"
+      },
+      {
+       "name": "MOTOR Auto Repair Manual (Hearst, 1984), Google Books snippet",
+       "url": "https://books.google.com/books?id=XA2cHzaYWFMC",
+       "says": "V6-200, 3.3L ... 2 Bbl. 3.50 x 3.48 8.2 95 @ 3800"
+      }
+     ],
+     "note": "88.9 mm"
+    },
+    "stroke_in": {
+     "value": 3.48,
+     "sources": [
+      {
+       "name": "GM Heritage Center 1979 Chevrolet El Camino / Monte Carlo information kits",
+       "url": "https://www.gm.com/content/dam/company/no_search/heritage-archive-docs/vehicle-information-kits/chevrolet/1979-Chevrolet-El-Camino.pdf",
+       "says": "Bore & stroke (nominal) 3.50\" x 3.48\"; MC kit: 88.9 x 88.4 mm"
+      },
+      {
+       "name": "Wikipedia: Chevrolet 90-degree V6 engine",
+       "url": "https://en.wikipedia.org/wiki/Chevrolet_90%C2%B0_V6_engine",
+       "says": "3.5-by-3.48-inch"
+      },
+      {
+       "name": "Standard Catalog of American Cars 1976-1986 (Krause/Motorbooks, 1989), Google Books snippet",
+       "url": "https://books.google.com/books?id=xTM2Ixfev5QC",
+       "says": "Bore & stroke: 3.50 x 3.48 in."
+      },
+      {
+       "name": "MOTOR Auto Repair Manual (Hearst, 1984), Google Books snippet",
+       "url": "https://books.google.com/books?id=XA2cHzaYWFMC",
+       "says": "3.50 x 3.48"
+      }
+     ],
+     "note": "88.4 mm; same stroke as the 305/350 V8"
+    },
+    "displacement_ci": {
+     "value": 200,
+     "sources": [
+      {
+       "name": "GM Heritage Center 1979 Chevrolet El Camino / Monte Carlo information kits",
+       "url": "https://www.gm.com/content/dam/company/no_search/heritage-archive-docs/vehicle-information-kits/chevrolet/1979-Chevrolet-El-Camino.pdf",
+       "says": "Piston displacement (Litre/Cu. In.) 3.3/200"
+      },
+      {
+       "name": "Wikipedia: Chevrolet 90-degree V6 engine",
+       "url": "https://en.wikipedia.org/wiki/Chevrolet_90%C2%B0_V6_engine",
+       "says": "200 cu in (3.3 L)"
+      },
+      {
+       "name": "Standard Catalog of American Cars 1976-1986 (Krause/Motorbooks, 1989), Google Books snippet",
+       "url": "https://books.google.com/books?id=xTM2Ixfev5QC",
+       "says": "Displacement: 200 cu. in. (3.3 liters)"
+      },
+      {
+       "name": "NHRA Stock Car Classification Guide (scratchpad scc_rows.json)",
+       "url": "https://www.nhra.net/",
+       "says": "1978-79 Malibu/El Camino/Monte Carlo: 200 ci, family GM-200-01"
+      },
+      {
+       "name": "Mac's Motor City Garage: Good News, New Size - the 1978 Chevrolet Malibu",
+       "url": "https://macsmotorcitygarage.com/good-news-new-size-the-1978-chevrolet-malibu/",
+       "says": "The base engine was a new 90-degree V6 created by chopping two cylinders off the trusty small-block V8 ... With just 200 cubic inches ... rated at 95 hp."
+      }
+     ],
+     "note": ""
+    },
+    "displacement_l": {
+     "value": 3.3,
+     "sources": [
+      {
+       "name": "GM Heritage Center 1979 Chevrolet El Camino / Monte Carlo information kits",
+       "url": "https://www.gm.com/content/dam/company/no_search/heritage-archive-docs/vehicle-information-kits/chevrolet/1979-Chevrolet-El-Camino.pdf",
+       "says": "3.3/200"
+      },
+      {
+       "name": "Wikipedia: Chevrolet 90-degree V6 engine",
+       "url": "https://en.wikipedia.org/wiki/Chevrolet_90%C2%B0_V6_engine",
+       "says": "200 cu in (3.3 L)"
+      },
+      {
+       "name": "Standard Catalog of American Cars 1976-1986 (Krause/Motorbooks, 1989), Google Books snippet",
+       "url": "https://books.google.com/books?id=xTM2Ixfev5QC",
+       "says": "200 cu. in. (3.3 liters)"
+      },
+      {
+       "name": "MOTOR Auto Repair Manual (Hearst, 1984), Google Books snippet",
+       "url": "https://books.google.com/books?id=XA2cHzaYWFMC",
+       "says": "V6-200, 3.3L"
+      }
+     ],
+     "note": "World Cars 1978 gives 3,277 cc"
+    },
+    "num_cylinders": {
+     "value": 6,
+     "sources": [
+      {
+       "name": "GM Heritage Center 1979 Chevrolet El Camino / Monte Carlo information kits",
+       "url": "https://www.gm.com/content/dam/company/no_search/heritage-archive-docs/vehicle-information-kits/chevrolet/1979-Chevrolet-El-Camino.pdf",
+       "says": "3.3 Litre V6"
+      },
+      {
+       "name": "Wikipedia: Chevrolet 90-degree V6 engine",
+       "url": "https://en.wikipedia.org/wiki/Chevrolet_90%C2%B0_V6_engine",
+       "says": "V6"
+      },
+      {
+       "name": "Standard Catalog of American Cars 1976-1986 (Krause/Motorbooks, 1989), Google Books snippet",
+       "url": "https://books.google.com/books?id=xTM2Ixfev5QC",
+       "says": "90-degree, overhead-valve V-6"
+      },
+      {
+       "name": "World Cars 1978 (Automobile Club of Italy / Herald Books), Google Books snippet",
+       "url": "https://books.google.com/books?id=Ao6UOQnvbhQC",
+       "says": "6 cylinders, Vee-slanted at 90"
+      }
+     ],
+     "note": ""
+    },
+    "configuration": {
+     "value": "90-degree V6",
+     "sources": [
+      {
+       "name": "GM Heritage Center 1979 Chevrolet El Camino / Monte Carlo information kits",
+       "url": "https://www.gm.com/content/dam/company/no_search/heritage-archive-docs/vehicle-information-kits/chevrolet/1979-Chevrolet-El-Camino.pdf",
+       "says": "MC kit engine data: '90° OHV' V6 (OCR '900 OHV')"
+      },
+      {
+       "name": "Wikipedia: Chevrolet 90-degree V6 engine",
+       "url": "https://en.wikipedia.org/wiki/Chevrolet_90%C2%B0_V6_engine",
+       "says": "90-degree V6 family; 200 was the first, 1978"
+      },
+      {
+       "name": "Standard Catalog of American Cars 1976-1986 (Krause/Motorbooks, 1989), Google Books snippet",
+       "url": "https://books.google.com/books?id=xTM2Ixfev5QC",
+       "says": "90-degree, overhead-valve V-6"
+      },
+      {
+       "name": "World Cars 1978 (Automobile Club of Italy / Herald Books), Google Books snippet",
+       "url": "https://books.google.com/books?id=Ao6UOQnvbhQC",
+       "says": "6 cylinders, Vee-slanted at 90"
+      },
+      {
+       "name": "Mac's Motor City Garage: Good News, New Size - the 1978 Chevrolet Malibu",
+       "url": "https://macsmotorcitygarage.com/good-news-new-size-the-1978-chevrolet-malibu/",
+       "says": "The base engine was a new 90-degree V6 created by chopping two cylinders off the trusty small-block V8 ... With just 200 cubic inches ... rated at 95 hp."
+      }
+     ],
+     "note": "Derived from the small-block V8 with two cylinders removed (Mac's, Curbside Classic, Wikipedia)."
+    },
+    "firing_order": {
+     "value": "1-6-5-4-3-2",
+     "sources": [
+      {
+       "name": "Chilton's Motor/Age Professional Automotive Service Manual (1978), Google Books snippet",
+       "url": "https://books.google.com/books?id=UQ8SAQAAMAAJ",
+       "says": "200 V6 Engine firing order: 1-6-5-4-3-2 Distributor rotation: clockwise"
+      },
+      {
+       "name": "Wikipedia: Chevrolet 90-degree V6 engine",
+       "url": "https://en.wikipedia.org/wiki/Chevrolet_90%C2%B0_V6_engine",
+       "says": "All the engines use a 1-6-5-4-3-2 firing order"
+      },
+      {
+       "name": "GM Heritage Center 1979 Chevrolet Monte Carlo information kit",
+       "url": "https://www.gm.com/content/dam/company/no_search/heritage-archive-docs/vehicle-information-kits/chevrolet/1979-Chevrolet-Monte-Carlo.pdf",
+       "says": "Engine data and ratings table, 3.3 L 200 L26 row: firing order 1-6-5-4-3-2 (OCR '1-6-543-2'; column shared with the 3.8 row)"
+      }
+     ],
+     "note": "GM OCR reading is slightly ambiguous; Chilton Auto Repair Manual 1980 also lists '200, 229 V6 Engine firing order: 1-6-5-4-3-2' (same publisher as Motor/Age, not counted twice)."
+    },
+    "valvetrain": {
+     "value": "OHV pushrod, 2 valves per cylinder",
+     "sources": [
+      {
+       "name": "GM Heritage Center 1979 Chevrolet El Camino / Monte Carlo information kits",
+       "url": "https://www.gm.com/content/dam/company/no_search/heritage-archive-docs/vehicle-information-kits/chevrolet/1979-Chevrolet-El-Camino.pdf",
+       "says": "Engine type: Valve-in-head"
+      },
+      {
+       "name": "Wikipedia: Chevrolet 90-degree V6 engine",
+       "url": "https://en.wikipedia.org/wiki/Chevrolet_90%C2%B0_V6_engine",
+       "says": "12 valves activated by a pushrod valvetrain"
+      },
+      {
+       "name": "Standard Catalog of American Cars 1976-1986 (Krause/Motorbooks, 1989), Google Books snippet",
+       "url": "https://books.google.com/books?id=xTM2Ixfev5QC",
+       "says": "overhead-valve V-6"
+      }
+     ],
+     "note": ""
+    },
+    "block_material": {
+     "value": "cast iron",
+     "sources": [
+      {
+       "name": "GM Heritage Center 1979 Chevrolet El Camino / Monte Carlo information kits",
+       "url": "https://www.gm.com/content/dam/company/no_search/heritage-archive-docs/vehicle-information-kits/chevrolet/1979-Chevrolet-El-Camino.pdf",
+       "says": "3.3 Litre (200 Cu. In.) engine features Dualjet carburetor, aluminum inlet manifold, cast iron cylinder heads and block; MC kit: block material cast alloy iron"
+      },
+      {
+       "name": "Wikipedia: Chevrolet 90-degree V6 engine",
+       "url": "https://en.wikipedia.org/wiki/Chevrolet_90%C2%B0_V6_engine",
+       "says": "All engines have cast iron blocks and cylinder heads"
+      },
+      {
+       "name": "Standard Catalog of American Cars 1976-1986 (Krause/Motorbooks, 1989), Google Books snippet",
+       "url": "https://books.google.com/books?id=xTM2Ixfev5QC",
+       "says": "Cast iron block and head"
+      }
+     ],
+     "note": ""
+    },
+    "head_material": {
+     "value": "cast iron",
+     "sources": [
+      {
+       "name": "GM Heritage Center 1979 Chevrolet El Camino / Monte Carlo information kits",
+       "url": "https://www.gm.com/content/dam/company/no_search/heritage-archive-docs/vehicle-information-kits/chevrolet/1979-Chevrolet-El-Camino.pdf",
+       "says": "cast iron cylinder heads and block"
+      },
+      {
+       "name": "Wikipedia: Chevrolet 90-degree V6 engine",
+       "url": "https://en.wikipedia.org/wiki/Chevrolet_90%C2%B0_V6_engine",
+       "says": "cast iron blocks and cylinder heads"
+      },
+      {
+       "name": "Standard Catalog of American Cars 1976-1986 (Krause/Motorbooks, 1989), Google Books snippet",
+       "url": "https://books.google.com/books?id=xTM2Ixfev5QC",
+       "says": "Cast iron block and head"
+      }
+     ],
+     "note": ""
+    },
+    "induction": {
+     "value": "2-barrel carburetor (Rochester)",
+     "sources": [
+      {
+       "name": "GM Heritage Center 1979 Chevrolet El Camino / Monte Carlo information kits",
+       "url": "https://www.gm.com/content/dam/company/no_search/heritage-archive-docs/vehicle-information-kits/chevrolet/1979-Chevrolet-El-Camino.pdf",
+       "says": "Carburetor type 2-barrel; 1979 kit: Dualjet carburetor"
+      },
+      {
+       "name": "Wikipedia: Chevrolet 90-degree V6 engine",
+       "url": "https://en.wikipedia.org/wiki/Chevrolet_90%C2%B0_V6_engine",
+       "says": "1978 Rochester 2GC; 1979 Rochester Dualjet"
+      },
+      {
+       "name": "MOTOR Auto Repair Manual (Hearst, 1984), Google Books snippet",
+       "url": "https://books.google.com/books?id=XA2cHzaYWFMC",
+       "says": "V6-200, 3.3L ... 2 Bbl."
+      },
+      {
+       "name": "Chilton's Motor/Age Professional Automotive Service Manual (1978), Google Books snippet",
+       "url": "https://books.google.com/books?id=UQ8SAQAAMAAJ",
+       "says": "V6-200 Chev 2 [barrels]"
+      }
+     ],
+     "note": "Carb model per year (2GC 1978, Dualjet M2ME 1979) from GM + Wikipedia + MOTOR ('M2ME' 1979)."
+    },
+    "compression_ratio": {
+     "value": 8.2,
+     "sources": [
+      {
+       "name": "GM Heritage Center 1979 Chevrolet El Camino / Monte Carlo information kits",
+       "url": "https://www.gm.com/content/dam/company/no_search/heritage-archive-docs/vehicle-information-kits/chevrolet/1979-Chevrolet-El-Camino.pdf",
+       "says": "Compression ratio 8.2:1"
+      },
+      {
+       "name": "Wikipedia: Chevrolet 90-degree V6 engine",
+       "url": "https://en.wikipedia.org/wiki/Chevrolet_90%C2%B0_V6_engine",
+       "says": "8.2:1"
+      },
+      {
+       "name": "Standard Catalog of American Cars 1976-1986 (Krause/Motorbooks, 1989), Google Books snippet",
+       "url": "https://books.google.com/books?id=xTM2Ixfev5QC",
+       "says": "Compression ratio: 8.2:1"
+      },
+      {
+       "name": "MOTOR Auto Repair Manual (Hearst, 1984), Google Books snippet",
+       "url": "https://books.google.com/books?id=XA2cHzaYWFMC",
+       "says": "3.50 x 3.48 8.2 95 @ 3800"
+      }
+     ],
+     "note": ""
+    },
+    "fuel_type": {
+     "value": "gasoline (unleaded)",
+     "sources": [
+      {
+       "name": "GM Heritage Center 1979 Chevrolet El Camino / Monte Carlo information kits",
+       "url": "https://www.gm.com/content/dam/company/no_search/heritage-archive-docs/vehicle-information-kits/chevrolet/1979-Chevrolet-El-Camino.pdf",
+       "says": "Catalytic emissions control ... use of unleaded fuel"
+      },
+      {
+       "name": "Chilton's Motor/Age Professional Automotive Service Manual (1978), Google Books snippet",
+       "url": "https://books.google.com/books?id=UQ8SAQAAMAAJ",
+       "says": "tune-up: spark-ignition V6-200, R45TS plugs (gasoline)"
+      },
+      {
+       "name": "Wikipedia: Chevrolet 90-degree V6 engine",
+       "url": "https://en.wikipedia.org/wiki/Chevrolet_90%C2%B0_V6_engine",
+       "says": "carbureted gasoline V6 family"
+      }
+     ],
+     "note": "Uncontested; implied rather than stated in Chilton/Wikipedia."
+    },
+    "years": {
+     "value": "1978-1979",
+     "sources": [
+      {
+       "name": "Wikipedia: Chevrolet 90-degree V6 engine",
+       "url": "https://en.wikipedia.org/wiki/Chevrolet_90%C2%B0_V6_engine",
+       "says": "200 cu in ... 1978-1979 only"
+      },
+      {
+       "name": "NHRA Stock Car Classification Guide (scratchpad scc_rows.json)",
+       "url": "https://www.nhra.net/",
+       "says": "200 ci rows only in 1978 and 1979"
+      },
+      {
+       "name": "Curbside Classic COAL: 1979 Chevrolet Malibu",
+       "url": "https://www.curbsideclassic.com/curbside-classics-american/coal-1979-chevrolet-malibu-a-daily-driver/",
+       "says": "It had a 200 V6 - a two-year wonder"
+      },
+      {
+       "name": "GM Heritage Center 1979 Chevrolet El Camino / Monte Carlo information kits",
+       "url": "https://www.gm.com/content/dam/company/no_search/heritage-archive-docs/vehicle-information-kits/chevrolet/1979-Chevrolet-El-Camino.pdf",
+       "says": "1978 and 1979 kits list L26 3.3 L 200 V6"
+      }
+     ],
+     "note": "Malibu/Malibu Classic & El Camino 1978-79; Monte Carlo 1979 only. Not sold in California."
+    }
+   },
+   "variants": [
+    {
+     "year": 1978,
+     "hp": 95,
+     "hp_basis": "SAE net",
+     "compression_ratio": 8.2,
+     "code": "L26",
+     "induction": "2-bbl (Rochester 2GC)",
+     "applies_to": "Malibu, Malibu Classic, El Camino (49 states)",
+     "sources": [
+      {
+       "name": "GM Heritage Center 1978 Chevrolet El Camino information kit",
+       "url": "https://www.gm.com/content/dam/company/no_search/heritage-archive-docs/vehicle-information-kits/chevrolet/1978-Chevrolet-El-Camino.pdf",
+       "says": "3.3 Litre 200 2-bbl V6 95 @ 3800; Engine Ordering Code L26"
+      },
+      {
+       "name": "Wikipedia: Chevrolet 90-degree V6 engine",
+       "url": "https://en.wikipedia.org/wiki/Chevrolet_90%C2%B0_V6_engine",
+       "says": "95 hp (71 kW) @ 3800 rpm (1978)"
+      },
+      {
+       "name": "NHRA Stock Car Classification Guide (scratchpad scc_rows.json)",
+       "url": "https://www.nhra.net/",
+       "says": "1978 Malibu/Malibu Classic/El Camino: 200 ci / 95 hp, GM-200-01"
+      },
+      {
+       "name": "Chilton's Motor/Age Professional Automotive Service Manual (1978), Google Books snippet",
+       "url": "https://books.google.com/books?id=UQ8SAQAAMAAJ",
+       "says": "78 ... V6-200 Chev 2 29.4 95 @ 3800"
+      },
+      {
+       "name": "Mac's Motor City Garage: Good News, New Size - the 1978 Chevrolet Malibu",
+       "url": "https://macsmotorcitygarage.com/good-news-new-size-the-1978-chevrolet-malibu/",
+       "says": "The base engine was a new 90-degree V6 created by chopping two cylinders off the trusty small-block V8 ... With just 200 cubic inches ... rated at 95 hp."
+      }
+     ],
+     "note": ""
+    },
+    {
+     "year": 1979,
+     "hp": 94,
+     "hp_basis": "SAE net",
+     "compression_ratio": 8.2,
+     "code": "L26",
+     "induction": "2-bbl (Rochester Dualjet)",
+     "applies_to": "Malibu, Malibu Classic, El Camino, Monte Carlo (49 states)",
+     "sources": [
+      {
+       "name": "GM Heritage Center 1979 El Camino / Monte Carlo information kits",
+       "url": "https://www.gm.com/content/dam/company/no_search/heritage-archive-docs/vehicle-information-kits/chevrolet/1979-Chevrolet-Monte-Carlo.pdf",
+       "says": "3.3 Litre 2-Bbl. V6 RPO L26 Std., 94 @ 4000"
+      },
+      {
+       "name": "Wikipedia: Chevrolet 90-degree V6 engine",
+       "url": "https://en.wikipedia.org/wiki/Chevrolet_90%C2%B0_V6_engine",
+       "says": "94 hp (70 kW) @ 4000 rpm (1979)"
+      },
+      {
+       "name": "NHRA Stock Car Classification Guide (scratchpad scc_rows.json)",
+       "url": "https://www.nhra.net/",
+       "says": "1979 Malibu/Malibu Classic/El Camino/Monte Carlo: 200 ci / 94 hp, GM-200-01"
+      },
+      {
+       "name": "Standard Catalog of American Cars 1976-1986 (Krause/Motorbooks, 1989), Google Books snippet",
+       "url": "https://books.google.com/books?id=xTM2Ixfev5QC",
+       "says": "V-6 (Malibu, Monte Carlo) ... Compression ratio: 8.2:1. Brake horsepower: 94 at ..."
+      },
+      {
+       "name": "Curbside Classic (P. Niedermeyer): 1979 Chevrolet Malibu Coupe",
+       "url": "https://www.curbsideclassic.com/curbside-classics-american/curbside-classic-1979-chevrolet-malibu-coupe-good-new-mostly/",
+       "says": "the 200 CID (3.3 liter) V6 that wheezed out all of 94 hp. This was Chevy's first shot at lopping off two cylinders from the venerable small-block V8"
+      }
+     ],
+     "note": ""
+    }
+   ],
+   "unverified": {
+    "rod_length_in": "Not found in any acceptable source (no 200 ci NHRA blueprint in nhra_blueprints CHEV-78/79). Not published."
+   },
+   "unverified_variants": []
+  },
+  {
+   "id": "gm-237-v6",
+   "name": "GM 3.9 L (237 ci) High Value V6 (3900)",
+   "fields": {
+    "displacement_ci": {
+     "value": 237,
+     "sources": [
+      {
+       "name": "GM Heritage Center 2006 Chevrolet Monte Carlo / Impala information kits (spec sheet + Engine Mechanical specs)",
+       "url": "https://www.gm.com/content/dam/company/no_search/heritage-archive-docs/vehicle-information-kits/chevrolet/2006-Chevrolet-Monte-Carlo.pdf",
+       "says": "3900 3.9L V-6: Displacement (cu in / cc) 237 / 3880"
+      },
+      {
+       "name": "Wikipedia: GM High Value engine",
+       "url": "https://en.wikipedia.org/wiki/GM_High_Value_engine",
+       "says": "236.8 cu in (3,880 cc)"
+      },
+      {
+       "name": "NHRA Stock Car Classification Guide (scratchpad scc_rows.json)",
+       "url": "https://www.nhra.net/",
+       "says": "2007-08 Impala, 2006-07 Malibu, G6: 237 ci, family GM-237-01"
+      },
+      {
+       "name": "The Auto Channel (Carey Russ): 2006 Pontiac G6 GTP review",
+       "url": "https://theautochannel.com/news/2006/07/13/014646.html",
+       "says": "12-valve pushrod overhead valve V6 with variable cam phasing; 3.9 liters / 237 cu. in."
+      }
+     ],
+     "note": ""
+    },
+    "displacement_l": {
+     "value": 3.9,
+     "sources": [
+      {
+       "name": "GM Heritage Center 2006 Chevrolet Monte Carlo / Impala information kits (spec sheet + Engine Mechanical specs)",
+       "url": "https://www.gm.com/content/dam/company/no_search/heritage-archive-docs/vehicle-information-kits/chevrolet/2006-Chevrolet-Monte-Carlo.pdf",
+       "says": "3.9L V-6, 237 / 3880"
+      },
+      {
+       "name": "Wikipedia: GM High Value engine",
+       "url": "https://en.wikipedia.org/wiki/GM_High_Value_engine",
+       "says": "3.9 L"
+      },
+      {
+       "name": "EPA fueleconomy.gov vehicle data",
+       "url": "https://www.fueleconomy.gov/feg/download.shtml",
+       "says": "2006-2011 Impala and 2006 Monte Carlo: 3.9 L 6-cyl"
+      },
+      {
+       "name": "MotorWeek: 2006 Chevrolet Impala road test",
+       "url": "https://motorweek.org/road_tests/2006_chevrolet_impala/",
+       "says": "3.9-liter ... push-rod ... variable valve timing; 240 horsepower, 242 pound feet"
+      },
+      {
+       "name": "Consumer Guide: 2006-14 Chevrolet Impala used-car review",
+       "url": "https://consumerguide.com/used/2006-14-chevrolet-impalaimpala-limited/",
+       "says": "242-horsepower, 3.9-liter V6"
+      }
+     ],
+     "note": "3,880 cc"
+    },
+    "num_cylinders": {
+     "value": 6,
+     "sources": [
+      {
+       "name": "GM Heritage Center 2006 Chevrolet Monte Carlo / Impala information kits (spec sheet + Engine Mechanical specs)",
+       "url": "https://www.gm.com/content/dam/company/no_search/heritage-archive-docs/vehicle-information-kits/chevrolet/2006-Chevrolet-Monte-Carlo.pdf",
+       "says": "60 degree V-6"
+      },
+      {
+       "name": "Wikipedia: GM High Value engine",
+       "url": "https://en.wikipedia.org/wiki/GM_High_Value_engine",
+       "says": "V6"
+      },
+      {
+       "name": "EPA fueleconomy.gov vehicle data",
+       "url": "https://www.fueleconomy.gov/feg/download.shtml",
+       "says": "3.9 L 6-cyl"
+      }
+     ],
+     "note": ""
+    },
+    "configuration": {
+     "value": "V6",
+     "sources": [
+      {
+       "name": "GM Heritage Center 2006 Chevrolet Monte Carlo / Impala information kits (spec sheet + Engine Mechanical specs)",
+       "url": "https://www.gm.com/content/dam/company/no_search/heritage-archive-docs/vehicle-information-kits/chevrolet/2006-Chevrolet-Monte-Carlo.pdf",
+       "says": "Engine Type: 60 degree V-6"
+      },
+      {
+       "name": "Wikipedia: GM High Value engine",
+       "url": "https://en.wikipedia.org/wiki/GM_High_Value_engine",
+       "says": "60-degree V6 (High Value family)"
+      },
+      {
+       "name": "The Auto Channel (Carey Russ): 2006 Pontiac G6 GTP review",
+       "url": "https://theautochannel.com/news/2006/07/13/014646.html",
+       "says": "12-valve pushrod overhead valve V6 with variable cam phasing; 3.9 liters / 237 cu. in."
+      },
+      {
+       "name": "MotorWeek: 2006 Chevrolet Impala road test",
+       "url": "https://motorweek.org/road_tests/2006_chevrolet_impala/",
+       "says": "3.9-liter ... push-rod ... variable valve timing; 240 horsepower, 242 pound feet"
+      }
+     ],
+     "note": "60-degree V angle stated by GM and Wikipedia only (2 sources)."
+    },
+    "valvetrain": {
+     "value": "OHV pushrod, 2 valves per cylinder, cam phaser variable valve timing",
+     "sources": [
+      {
+       "name": "GM Heritage Center 2006 Chevrolet Monte Carlo / Impala information kits (spec sheet + Engine Mechanical specs)",
+       "url": "https://www.gm.com/content/dam/company/no_search/heritage-archive-docs/vehicle-information-kits/chevrolet/2006-Chevrolet-Monte-Carlo.pdf",
+       "says": "overhead valve, 2 valves per cylinder, continuously variable valve timing"
+      },
+      {
+       "name": "Wikipedia: GM High Value engine",
+       "url": "https://en.wikipedia.org/wiki/GM_High_Value_engine",
+       "says": "OHV with VVT ... roller rocker arms ... Variable Cam Timing"
+      },
+      {
+       "name": "The Auto Channel (Carey Russ): 2006 Pontiac G6 GTP review",
+       "url": "https://theautochannel.com/news/2006/07/13/014646.html",
+       "says": "12-valve pushrod overhead valve V6 with variable cam phasing; 3.9 liters / 237 cu. in."
+      },
+      {
+       "name": "Auto123: 2006 Pontiac G6 GTP coupe road test",
+       "url": "https://www.auto123.com/en/news/2006-pontiac-g6-gtp-coupe-road-test/53786/?page=3",
+       "says": "only 2-valves per cylinder, yet variable intake valve timing and a variable intake manifold"
+      },
+      {
+       "name": "MotorWeek: 2006 Chevrolet Impala road test",
+       "url": "https://motorweek.org/road_tests/2006_chevrolet_impala/",
+       "says": "3.9-liter ... push-rod ... variable valve timing; 240 horsepower, 242 pound feet"
+      }
+     ],
+     "note": ""
+    },
+    "induction": {
+     "value": "sequential multiport fuel injection, naturally aspirated",
+     "sources": [
+      {
+       "name": "GM Heritage Center 2006 Chevrolet Monte Carlo / Impala information kits (spec sheet + Engine Mechanical specs)",
+       "url": "https://www.gm.com/content/dam/company/no_search/heritage-archive-docs/vehicle-information-kits/chevrolet/2006-Chevrolet-Monte-Carlo.pdf",
+       "says": "sequential fuel injection"
+      },
+      {
+       "name": "Wikipedia: GM High Value engine",
+       "url": "https://en.wikipedia.org/wiki/GM_High_Value_engine",
+       "says": "Sequential multi-port fuel injection"
+      },
+      {
+       "name": "EPA fueleconomy.gov vehicle data",
+       "url": "https://www.fueleconomy.gov/feg/download.shtml",
+       "says": "2006 Impala 3.9 L: 'FFS MPFI'"
+      }
+     ],
+     "note": ""
+    },
+    "fuel_type": {
+     "value": "gasoline; E85 FlexFuel-capable in later Impala versions",
+     "sources": [
+      {
+       "name": "GM Heritage Center 2006 Chevrolet Monte Carlo / Impala information kits (spec sheet + Engine Mechanical specs)",
+       "url": "https://www.gm.com/content/dam/company/no_search/heritage-archive-docs/vehicle-information-kits/chevrolet/2006-Chevrolet-Monte-Carlo.pdf",
+       "says": "Fuel: regular unleaded (2006)"
+      },
+      {
+       "name": "Chevrolet 2009 / 2011 Impala US sales brochures (auto-brochures.com)",
+       "url": "https://www.auto-brochures.com/makes/Chevrolet/Impala/Chevrolet_US%20Impala_2009.pdf",
+       "says": "233-hp 3.9L V6 engine with E85 FlexFuel capability"
+      },
+      {
+       "name": "Wikipedia: GM High Value engine",
+       "url": "https://en.wikipedia.org/wiki/GM_High_Value_engine",
+       "says": "flexible-fuel variants (LGD, LZG) support E85"
+      },
+      {
+       "name": "EPA fueleconomy.gov vehicle data",
+       "url": "https://www.fueleconomy.gov/feg/download.shtml",
+       "says": "Impala 3.9 L flagged FFV for 2010 and 2011"
+      },
+      {
+       "name": "Consumer Guide: 2006-14 Chevrolet Impala used-car review",
+       "url": "https://consumerguide.com/used/2006-14-chevrolet-impalaimpala-limited/",
+       "says": "the available 3.9-liter V6 joined its 3.5-liter sibling in being able to run on E85"
+      }
+     ],
+     "note": "GM brochure counted with the GM kits as one manufacturer source. Start year of FlexFuel disputed: Consumer Guide says 2008, GM brochures/Wikipedia 2009, EPA flags FFV from 2010."
+    },
+    "years": {
+     "value": "2006-2011 (Impala 2006-2011; Monte Carlo 2006-2007)",
+     "sources": [
+      {
+       "name": "GM Heritage Center Impala/Monte Carlo kits 2006-07 and Chevrolet Impala brochures 2009-11",
+       "url": "https://www.gm.com/content/dam/company/no_search/heritage-archive-docs/vehicle-information-kits/chevrolet/2006-Chevrolet-Impala.pdf",
+       "says": "3.9L in 2006/2007 Impala and 2006 Monte Carlo kits; 3.9L V6 in 2009-2011 Impala brochures"
+      },
+      {
+       "name": "Wikipedia: GM High Value engine",
+       "url": "https://en.wikipedia.org/wiki/GM_High_Value_engine",
+       "says": "Impala and Monte Carlo among applications, 2006-on"
+      },
+      {
+       "name": "EPA fueleconomy.gov vehicle data",
+       "url": "https://www.fueleconomy.gov/feg/download.shtml",
+       "says": "Impala 3.9 L rows 2006-2011; Monte Carlo 3.9 L 2006"
+      },
+      {
+       "name": "Consumer Guide: 2006-14 Chevrolet Impala used-car review",
+       "url": "https://consumerguide.com/used/2006-14-chevrolet-impalaimpala-limited/",
+       "says": "3.9 V6 offered 2006 through 2011; replaced by a 300-horsepower 3.6-liter V6 in 2012"
+      }
+     ],
+     "note": "Family also used in the Pontiac G6, Malibu SS, GM minivans and 2009-11 Buick Lucerne (Wikipedia)."
+    }
+   },
+   "variants": [
+    {
+     "year": 2006,
+     "hp": 242,
+     "hp_basis": "SAE net",
+     "code": "LZ9",
+     "applies_to": "Impala LT/LTZ, Monte Carlo LT 3.9/LTZ",
+     "sources": [
+      {
+       "name": "GM Heritage Center 2006 Impala and Monte Carlo information kits",
+       "url": "https://www.gm.com/content/dam/company/no_search/heritage-archive-docs/vehicle-information-kits/chevrolet/2006-Chevrolet-Impala.pdf",
+       "says": "new 242-horsepower 3.9L V-6, 242 lb-ft; RPO LZ9"
+      },
+      {
+       "name": "Wikipedia: Chevrolet Impala / Chevrolet Monte Carlo engine tables",
+       "url": "https://en.wikipedia.org/wiki/Chevrolet_Impala",
+       "says": "2006 3.9 L LZ9 V6, 242 hp"
+      },
+      {
+       "name": "Consumer Guide: 2006-07 Chevrolet Monte Carlo used-car review",
+       "url": "https://consumerguide.com/used/2006-07-chevrolet-monte-carlo/",
+       "says": "LT 3.9 and LTZ contained a 242-horsepower 3.9-liter V6 (later rated at 233 hp)"
+      },
+      {
+       "name": "Consumer Guide: 2006-14 Chevrolet Impala used-car review",
+       "url": "https://consumerguide.com/used/2006-14-chevrolet-impalaimpala-limited/",
+       "says": "242-horsepower, 3.9-liter V6"
+      }
+     ],
+     "note": "MotorWeek's 2006 Impala test says 240 hp, the LZ9 figure GM used in the G6 and Malibu. GM and Consumer Guide say 242 for the Impala and Monte Carlo."
+    },
+    {
+     "year": "2007-2008",
+     "hp": 233,
+     "hp_basis": "SAE net",
+     "code": "LZ8 (Active Fuel Management)",
+     "applies_to": "Impala LT/LTZ",
+     "sources": [
+      {
+       "name": "GM Heritage Center 2007 Chevrolet Impala information kit",
+       "url": "https://www.gm.com/content/dam/company/no_search/heritage-archive-docs/vehicle-information-kits/chevrolet/2007-Chevrolet-Impala.pdf",
+       "says": "233-horsepower 3.9L V-6, 240 lb-ft; RPO LZ8 with Active Fuel Management"
+      },
+      {
+       "name": "Wikipedia: Chevrolet Impala (ninth generation engine table)",
+       "url": "https://en.wikipedia.org/wiki/Chevrolet_Impala",
+       "says": "2007-2008 3.9 L V6, 233 hp / 240 lb-ft; Active Fuel Management"
+      },
+      {
+       "name": "NHRA Stock Car Classification Guide (scratchpad scc_rows.json)",
+       "url": "https://www.nhra.net/",
+       "says": "2007 and 2008 Impala: 237 ci / 233 hp, GM-237-01"
+      },
+      {
+       "name": "Consumer Guide: 2006-14 Chevrolet Impala used-car review",
+       "url": "https://consumerguide.com/used/2006-14-chevrolet-impalaimpala-limited/",
+       "says": "later 233 hp"
+      }
+     ],
+     "note": ""
+    }
+   ],
+   "unverified": {
+    "bore_in": "3.8976 in (99 mm). Sources: GM 2006 Monte Carlo kit ('3.90 x 3.31 / 99 x 84', engine mechanical specs 'Bore 99 mm') and Wikipedia ('99 mm x 84 mm'). No third acceptable source found; the other hits were content farms.",
+    "stroke_in": "3.3071 in (84 mm). GM kit + Wikipedia only.",
+    "compression_ratio": "9.8:1 (GM 2006 Monte Carlo kit, engine mechanical specs, LZ9). No second source.",
+    "firing_order": "1-2-3-4-5-6 (GM 2006 Monte Carlo kit engine mechanical specs, OCR '123456'). No second source.",
+    "block_material": "Cast iron (GM kit spec sheet 'cast iron'; Wikipedia overview table). 2 sources.",
+    "head_material": "Cast aluminum (GM kit spec sheet; Wikipedia). 2 sources.",
+    "rod_length_in": "The GM kit OCR is garbled ('1 50 mm'?). Not usable, no other source."
+   },
+   "unverified_variants": [
+    {
+     "year": "2009-2010",
+     "hp": 233,
+     "code": "LGD/LZG FlexFuel (codes per Wikipedia only)",
+     "found": "GM 2009 and 2010 Impala brochures say 233 hp with E85 capability. Wikipedia says 230 hp / 235 lb-ft for 2009-2011. EPA confirms 3.9 L only. The rating is disputed and no third source gives hp."
+    },
+    {
+     "year": 2011,
+     "hp": 230,
+     "code": "LGD/LZG FlexFuel",
+     "found": "GM 2011 Impala brochure says 230 hp @ 5700, 235 lb-ft. Wikipedia says 230 hp. Only 2 sources state hp."
+    },
+    {
+     "year": 2007,
+     "hp": 233,
+     "code": "LZ8?",
+     "applies_to": "Monte Carlo",
+     "found": "Consumer Guide: Monte Carlo 3.9 'later rated at 233 hp'. The GM 2007 Monte Carlo kit URL returns the 2006 file. One source."
+    }
+   ]
+  },
+  {
+   "id": "chevrolet-lt6",
+   "name": "Chevrolet LT6 5.5 L flat-plane-crank DOHC V8 (Gemini small-block)",
+   "fields": {
+    "bore_in": {
+     "value": 4.1043,
+     "sources": [
+      {
+       "name": "GM News - 2023 Corvette Z06 press release + preliminary spec sheet (2021-10-26)",
+       "url": "https://news.gm.com/home.detail.html/Pages/news/us/en/2021/oct/1026-corvette-z06.html",
+       "says": "Bore & Stroke (in / mm): 4.104 x 3.150 / 104.25 x 80"
+      },
+      {
+       "name": "Car and Driver - 2023 Chevy Corvette Z06 revealed (Colwell/Quiroga/VanderWerp, 2021-10-26)",
+       "url": "https://www.caranddriver.com/news/a38044152/2023-chevrolet-corvette-z06-revealed/",
+       "says": "Cylinder dimensions are 104.25 millimeters by 80.0"
+      },
+      {
+       "name": "EngineLabs - GM Announces 5.5L LT6 (Greg Acosta, 2021-10-26)",
+       "url": "https://www.enginelabs.com/?p=6198",
+       "says": "Bore 104.25mm (4.104 inches)"
+      },
+      {
+       "name": "The Drive - 2023 Corvette Z06's LT6 V8: Everything You Ever Wanted to Know (P. Holderith, 2021-10-28)",
+       "url": "https://www.thedrive.com/news/42901/2023-corvette-z06s-lt6-v8-everything-you-ever-wanted-to-know",
+       "says": "4.104-inch bore"
+      },
+      {
+       "name": "Wikipedia - Chevrolet Gemini small-block engine (+ Chevrolet Corvette (C8); Wikipedia counted once)",
+       "url": "https://en.wikipedia.org/wiki/Chevrolet_Gemini_small-block_engine",
+       "says": "Cylinder bore: 104.25 mm (4.104 in)"
+      }
+     ],
+     "note": "Maker figure 104.25 mm (= 4.1043 in)."
+    },
+    "stroke_in": {
+     "value": 3.1496,
+     "sources": [
+      {
+       "name": "GM News - 2023 Corvette Z06 press release + preliminary spec sheet (2021-10-26)",
+       "url": "https://news.gm.com/home.detail.html/Pages/news/us/en/2021/oct/1026-corvette-z06.html",
+       "says": "4.104 x 3.150 / 104.25 x 80"
+      },
+      {
+       "name": "Car and Driver - 2023 Chevy Corvette Z06 revealed (Colwell/Quiroga/VanderWerp, 2021-10-26)",
+       "url": "https://www.caranddriver.com/news/a38044152/2023-chevrolet-corvette-z06-revealed/",
+       "says": "104.25 millimeters by 80.0"
+      },
+      {
+       "name": "EngineLabs - GM Announces 5.5L LT6 (Greg Acosta, 2021-10-26)",
+       "url": "https://www.enginelabs.com/?p=6198",
+       "says": "Stroke 80mm (3.150 inches)"
+      },
+      {
+       "name": "The Drive - 2023 Corvette Z06's LT6 V8: Everything You Ever Wanted to Know (P. Holderith, 2021-10-28)",
+       "url": "https://www.thedrive.com/news/42901/2023-corvette-z06s-lt6-v8-everything-you-ever-wanted-to-know",
+       "says": "3.150-inch (80mm) stroke"
+      },
+      {
+       "name": "Wikipedia - Chevrolet Gemini small-block engine (+ Chevrolet Corvette (C8); Wikipedia counted once)",
+       "url": "https://en.wikipedia.org/wiki/Chevrolet_Gemini_small-block_engine",
+       "says": "Piston stroke: 80 mm"
+      }
+     ],
+     "note": "Maker figure 80 mm (= 3.1496 in)."
+    },
+    "displacement_ci": {
+     "value": 333,
+     "sources": [
+      {
+       "name": "Car and Driver - 2023 Chevy Corvette Z06 revealed (Colwell/Quiroga/VanderWerp, 2021-10-26)",
+       "url": "https://www.caranddriver.com/news/a38044152/2023-chevrolet-corvette-z06-revealed/",
+       "says": "Displacement: 333 in3, 5463 cm3"
+      },
+      {
+       "name": "Hagerty - LT6 Breakdown: The Z06's 670-hp V-8 (Don Sherman, 2022-02-21)",
+       "url": "https://www.hagerty.com/media/?p=203718",
+       "says": "670 hp by its 333 cubic-inch displacement"
+      },
+      {
+       "name": "EngineLabs - GM Announces 5.5L LT6 (Greg Acosta, 2021-10-26)",
+       "url": "https://www.enginelabs.com/?p=6198",
+       "says": "5.5L (333 cubic inches)"
+      },
+      {
+       "name": "Wikipedia - Chevrolet Gemini small-block engine (+ Chevrolet Corvette (C8); Wikipedia counted once)",
+       "url": "https://en.wikipedia.org/wiki/Chevrolet_Gemini_small-block_engine",
+       "says": "5,463 cc (333.4 cu in)"
+      }
+     ],
+     "note": "104.25 x 80 mm x 8 = 5,463 cc = 333.4 ci. NOTE: the brief's 336 ci is only nominal 5.5 L x 61.02; actual is 333. Reprints of GM's spec sheet (corvsport, GM Authority) carry a copy-paste error '374.92 cu in (6.2 L)' / '6.2L / 333.3' - ignore."
+    },
+    "displacement_l": {
+     "value": 5.5,
+     "sources": [
+      {
+       "name": "GM News - 2023 Corvette Z06 press release + preliminary spec sheet (2021-10-26)",
+       "url": "https://news.gm.com/home.detail.html/Pages/news/us/en/2021/oct/1026-corvette-z06.html",
+       "says": "Type: LT6 5.5L DOHC V-8 Direct Injection"
+      },
+      {
+       "name": "Car and Driver - 2023 Chevy Corvette Z06 revealed (Colwell/Quiroga/VanderWerp, 2021-10-26)",
+       "url": "https://www.caranddriver.com/news/a38044152/2023-chevrolet-corvette-z06-revealed/",
+       "says": "netting a displacement of 5.5 liters"
+      },
+      {
+       "name": "Wikipedia - Chevrolet Gemini small-block engine (+ Chevrolet Corvette (C8); Wikipedia counted once)",
+       "url": "https://en.wikipedia.org/wiki/Chevrolet_Gemini_small-block_engine",
+       "says": "5,463 cc"
+      },
+      {
+       "name": "EPA fueleconomy.gov vehicle data",
+       "url": "https://www.fueleconomy.gov/feg/download.shtml",
+       "says": "2023-2026 Corvette Z06: 5.5 L V8 SIDI"
+      }
+     ],
+     "note": ""
+    },
+    "num_cylinders": {
+     "value": 8,
+     "sources": [
+      {
+       "name": "GM News - 2023 Corvette Z06 press release + preliminary spec sheet (2021-10-26)",
+       "url": "https://news.gm.com/home.detail.html/Pages/news/us/en/2021/oct/1026-corvette-z06.html",
+       "says": "LT6 5.5L DOHC V-8"
+      },
+      {
+       "name": "Car and Driver - 2023 Chevy Corvette Z06 revealed (Colwell/Quiroga/VanderWerp, 2021-10-26)",
+       "url": "https://www.caranddriver.com/news/a38044152/2023-chevrolet-corvette-z06-revealed/",
+       "says": "DOHC 32-valve V-8"
+      },
+      {
+       "name": "EPA fueleconomy.gov vehicle data",
+       "url": "https://www.fueleconomy.gov/feg/download.shtml",
+       "says": "5.5 L V8"
+      },
+      {
+       "name": "Wikipedia - Chevrolet Gemini small-block engine (+ Chevrolet Corvette (C8); Wikipedia counted once)",
+       "url": "https://en.wikipedia.org/wiki/Chevrolet_Gemini_small-block_engine",
+       "says": "V8"
+      }
+     ],
+     "note": ""
+    },
+    "configuration": {
+     "value": "90-degree V8, flat-plane crankshaft",
+     "sources": [
+      {
+       "name": "GM News - 2023 Corvette Z06 press release + preliminary spec sheet (2021-10-26)",
+       "url": "https://news.gm.com/home.detail.html/Pages/news/us/en/2021/oct/1026-corvette-z06.html",
+       "says": "'all-new flat-plane crankshaft'; spec sheet (as reprinted) 'Type: 90 deg V8, DOHC'"
+      },
+      {
+       "name": "Hagerty - LT6 Breakdown: The Z06's 670-hp V-8 (Don Sherman, 2022-02-21)",
+       "url": "https://www.hagerty.com/media/?p=203718",
+       "says": "The LT6's 90-degree cylinder block ... crankshaft with four throws located in a single plane"
+      },
+      {
+       "name": "Car and Driver - 2023 Chevy Corvette Z06 revealed (Colwell/Quiroga/VanderWerp, 2021-10-26)",
+       "url": "https://www.caranddriver.com/news/a38044152/2023-chevrolet-corvette-z06-revealed/",
+       "says": "flat-plane-crank 5.5-liter V-8"
+      },
+      {
+       "name": "Wikipedia - Chevrolet Gemini small-block engine (+ Chevrolet Corvette (C8); Wikipedia counted once)",
+       "url": "https://en.wikipedia.org/wiki/Chevrolet_Gemini_small-block_engine",
+       "says": "flat-plane DOHC V8"
+      }
+     ],
+     "note": ""
+    },
+    "valvetrain": {
+     "value": "DOHC, 4 valves/cyl (32-valve), mechanical finger followers",
+     "sources": [
+      {
+       "name": "GM News - 2023 Corvette Z06 press release + preliminary spec sheet (2021-10-26)",
+       "url": "https://news.gm.com/home.detail.html/Pages/news/us/en/2021/oct/1026-corvette-z06.html",
+       "says": "Dual overhead camshafts with mechanical finger follower valvetrain and dual-coil valve springs"
+      },
+      {
+       "name": "Car and Driver - 2023 Chevy Corvette Z06 revealed (Colwell/Quiroga/VanderWerp, 2021-10-26)",
+       "url": "https://www.caranddriver.com/news/a38044152/2023-chevrolet-corvette-z06-revealed/",
+       "says": "DOHC 32-valve V-8"
+      },
+      {
+       "name": "EngineLabs - GM Announces 5.5L LT6 (Greg Acosta, 2021-10-26)",
+       "url": "https://www.enginelabs.com/?p=6198",
+       "says": "32 total (4 per cylinder); mechanical finger-follower"
+      },
+      {
+       "name": "Hagerty - LT6 Breakdown: The Z06's 670-hp V-8 (Don Sherman, 2022-02-21)",
+       "url": "https://www.hagerty.com/media/?p=203718",
+       "says": "Each of the four valves above each cylinder is operated by a short finger follower"
+      }
+     ],
+     "note": ""
+    },
+    "block_material": {
+     "value": "aluminum (A319-T7 sand-cast, pressed-in iron liners)",
+     "sources": [
+      {
+       "name": "GM News - 2023 Corvette Z06 press release + preliminary spec sheet (2021-10-26)",
+       "url": "https://news.gm.com/home.detail.html/Pages/news/us/en/2021/oct/1026-corvette-z06.html",
+       "says": "Block Material: A319-T7 sand-cast aluminum with pressed-in iron cylinder liners and four-bolt main bearing caps"
+      },
+      {
+       "name": "Hagerty - LT6 Breakdown: The Z06's 670-hp V-8 (Don Sherman, 2022-02-21)",
+       "url": "https://www.hagerty.com/media/?p=203718",
+       "says": "The cylinder case and the oil sump are both made of A319 aluminum alloy"
+      },
+      {
+       "name": "Car and Driver - 2023 Chevy Corvette Z06 revealed (Colwell/Quiroga/VanderWerp, 2021-10-26)",
+       "url": "https://www.caranddriver.com/news/a38044152/2023-chevrolet-corvette-z06-revealed/",
+       "says": "aluminum block and heads"
+      },
+      {
+       "name": "Wikipedia - Chevrolet Gemini small-block engine (+ Chevrolet Corvette (C8); Wikipedia counted once)",
+       "url": "https://en.wikipedia.org/wiki/Chevrolet_Gemini_small-block_engine",
+       "says": "Sand-cast A319 Aluminum"
+      }
+     ],
+     "note": ""
+    },
+    "head_material": {
+     "value": "aluminum (A356-T6)",
+     "sources": [
+      {
+       "name": "GM News - 2023 Corvette Z06 press release + preliminary spec sheet (2021-10-26)",
+       "url": "https://news.gm.com/home.detail.html/Pages/news/us/en/2021/oct/1026-corvette-z06.html",
+       "says": "Cylinder Head Material: A356 T6 cast aluminum"
+      },
+      {
+       "name": "Hagerty - LT6 Breakdown: The Z06's 670-hp V-8 (Don Sherman, 2022-02-21)",
+       "url": "https://www.hagerty.com/media/?p=203718",
+       "says": "LT6 heads are cast in A356 aluminum and heat-treated"
+      },
+      {
+       "name": "Car and Driver - 2023 Chevy Corvette Z06 revealed (Colwell/Quiroga/VanderWerp, 2021-10-26)",
+       "url": "https://www.caranddriver.com/news/a38044152/2023-chevrolet-corvette-z06-revealed/",
+       "says": "aluminum block and heads"
+      },
+      {
+       "name": "Wikipedia - Chevrolet Gemini small-block engine (+ Chevrolet Corvette (C8); Wikipedia counted once)",
+       "url": "https://en.wikipedia.org/wiki/Chevrolet_Gemini_small-block_engine",
+       "says": "Aluminum"
+      }
+     ],
+     "note": ""
+    },
+    "compression_ratio": {
+     "value": 12.5,
+     "sources": [
+      {
+       "name": "GM News - 2023 Corvette Z06 press release + preliminary spec sheet (2021-10-26)",
+       "url": "https://news.gm.com/home.detail.html/Pages/news/us/en/2021/oct/1026-corvette-z06.html",
+       "says": "Compression Ratio: 12.5:1"
+      },
+      {
+       "name": "Car and Driver - 2023 Chevy Corvette Z06 revealed (Colwell/Quiroga/VanderWerp, 2021-10-26)",
+       "url": "https://www.caranddriver.com/news/a38044152/2023-chevrolet-corvette-z06-revealed/",
+       "says": "The compression ratio is 12.5:1"
+      },
+      {
+       "name": "Hagerty - LT6 Breakdown: The Z06's 670-hp V-8 (Don Sherman, 2022-02-21)",
+       "url": "https://www.hagerty.com/media/?p=203718",
+       "says": "the 12.5:1 combustion chambers"
+      },
+      {
+       "name": "The Drive - 2023 Corvette Z06's LT6 V8: Everything You Ever Wanted to Know (P. Holderith, 2021-10-28)",
+       "url": "https://www.thedrive.com/news/42901/2023-corvette-z06s-lt6-v8-everything-you-ever-wanted-to-know",
+       "says": "12.5:1 compression ratio"
+      },
+      {
+       "name": "Wikipedia - Chevrolet Gemini small-block engine (+ Chevrolet Corvette (C8); Wikipedia counted once)",
+       "url": "https://en.wikipedia.org/wiki/Chevrolet_Gemini_small-block_engine",
+       "says": "Compression ratio: 12.5:1"
+      }
+     ],
+     "note": ""
+    },
+    "induction": {
+     "value": "naturally aspirated; direct injection only (no port injectors); dry sump",
+     "sources": [
+      {
+       "name": "GM News - 2023 Corvette Z06 press release + preliminary spec sheet (2021-10-26)",
+       "url": "https://news.gm.com/home.detail.html/Pages/news/us/en/2021/oct/1026-corvette-z06.html",
+       "says": "Fuel Delivery: Exhaust side direct injection. Max pressure: 5,076 psi; Six stage dry sump"
+      },
+      {
+       "name": "Car and Driver - 2023 Chevy Corvette Z06 revealed (Colwell/Quiroga/VanderWerp, 2021-10-26)",
+       "url": "https://www.caranddriver.com/news/a38044152/2023-chevrolet-corvette-z06-revealed/",
+       "says": "direct fuel injection"
+      },
+      {
+       "name": "EngineLabs - GM Announces 5.5L LT6 (Greg Acosta, 2021-10-26)",
+       "url": "https://www.enginelabs.com/?p=6198",
+       "says": "Fuel Injection: Direct injection"
+      },
+      {
+       "name": "Hagerty - LT6 Breakdown: The Z06's 670-hp V-8 (Don Sherman, 2022-02-21)",
+       "url": "https://www.hagerty.com/media/?p=203718",
+       "says": "Direct fuel injectors are located outboard of the exhaust valves"
+      },
+      {
+       "name": "MotorTrend - 2025 Corvette ZR1 LT7 V8 engine deep dive (Eric Tingwall)",
+       "url": "https://www.motortrend.com/news/2025-chevrolet-corvette-zr1-lt7-v8-engine-deep-dive/",
+       "says": "the LT7 supplements the LT6's direct injection with a port-injection system"
+      },
+      {
+       "name": "EPA fueleconomy.gov vehicle data",
+       "url": "https://www.fueleconomy.gov/feg/download.shtml",
+       "says": "SIDI, not turbocharged"
+      }
+     ],
+     "note": ""
+    },
+    "years": {
+     "value": "2023-2026 model years verified (Corvette Z06); still current per Wikipedia",
+     "sources": [
+      {
+       "name": "GM News - 2023 Corvette Z06 press release + preliminary spec sheet (2021-10-26)",
+       "url": "https://news.gm.com/home.detail.html/Pages/news/us/en/2021/oct/1026-corvette-z06.html",
+       "says": "2023 Chevrolet Corvette Z06 ... powered by all-new LT6"
+      },
+      {
+       "name": "Wikipedia - Chevrolet Gemini small-block engine (+ Chevrolet Corvette (C8); Wikipedia counted once)",
+       "url": "https://en.wikipedia.org/wiki/Chevrolet_Gemini_small-block_engine",
+       "says": "2023-present Chevrolet Corvette Z06"
+      },
+      {
+       "name": "EPA fueleconomy.gov vehicle data",
+       "url": "https://www.fueleconomy.gov/feg/download.shtml",
+       "says": "Corvette Z06 5.5 L V8 listed 2023, 2024, 2025, 2026"
+      },
+      {
+       "name": "Kelley Blue Book - 2026 Chevrolet Corvette review/specs",
+       "url": "https://www.kbb.com/chevrolet/corvette/2026/",
+       "says": "2026 Corvette: 490 - 1,064 hp; V8, 5.5 Liter"
+      }
+     ],
+     "note": ""
+    }
+   },
+   "variants": [
+    {
+     "year": "2023-2026",
+     "hp": 670,
+     "hp_basis": "SAE net (GM tested per SAE J1349) @ 8,400 rpm",
+     "compression_ratio": 12.5,
+     "code": "LT6 (Corvette Z06)",
+     "induction": "NA, DI",
+     "sources": [
+      {
+       "name": "GM News - 2023 Corvette Z06 press release + preliminary spec sheet (2021-10-26)",
+       "url": "https://news.gm.com/home.detail.html/Pages/news/us/en/2021/oct/1026-corvette-z06.html",
+       "says": "670 hp at 8,400 rpm (GM tested per SAE J1349)"
+      },
+      {
+       "name": "Car and Driver - 2023 Chevy Corvette Z06 revealed (Colwell/Quiroga/VanderWerp, 2021-10-26)",
+       "url": "https://www.caranddriver.com/news/a38044152/2023-chevrolet-corvette-z06-revealed/",
+       "says": "670 hp @ 8400 rpm"
+      },
+      {
+       "name": "Wikipedia - Chevrolet Gemini small-block engine (+ Chevrolet Corvette (C8); Wikipedia counted once)",
+       "url": "https://en.wikipedia.org/wiki/Chevrolet_Gemini_small-block_engine",
+       "says": "670 hp (500 kW) at 8,400 RPM"
+      },
+      {
+       "name": "Kelley Blue Book - 2023 Chevrolet Corvette review/specs",
+       "url": "https://www.kbb.com/chevrolet/corvette/2023/",
+       "says": "5.5-liter V8 (Z06) 670 horsepower @ 8,400 rpm"
+      },
+      {
+       "name": "The Drive - 2023 Corvette Z06's LT6 V8: Everything You Ever Wanted to Know (P. Holderith, 2021-10-28)",
+       "url": "https://www.thedrive.com/news/42901/2023-corvette-z06s-lt6-v8-everything-you-ever-wanted-to-know",
+       "says": "670 horsepower at 8,400 rpm"
+      }
+     ],
+     "note": "Same rating every MY 2023-2026 (KBB 2024-2026 and EPA list the Z06 each year; no rating change found)."
+    }
+   ],
+   "unverified": {
+    "firing_order": "1-4-3-8-7-6-5-2. GM Z06 spec sheet ('Firing Order: 1-4-3-8-7-6-5-2') and AA1Car ('firing order for the Corvette C8 Z06 LT6 ... is 1-4-3-8-7-6-5-2'). GM Authority/corvsport only reprint GM's sheet (count once). The identical order is independently published for the LT7 sibling (Race Engine Technology, Street Machine, GM ZR1 sheet), but only 2 independent sources name the LT6 itself.",
+    "fuel_type": "Premium unleaded gasoline - The Drive ('Premium fuel required'); Wikipedia ('Gasoline'). GM's Z06 release does not state octane; MotorTrend/Hagerty say premium only for the LT7. EPA lists premium but EPA is limited to displacement/cyl/induction per brief.",
+    "rod_length_in": "Not published by GM or any source found (forged titanium rods)."
+   },
+   "unverified_variants": []
+  },
+  {
+   "id": "chevrolet-lt7",
+   "name": "Chevrolet LT7 5.5 L twin-turbo flat-plane-crank DOHC V8 (Gemini small-block)",
+   "fields": {
+    "bore_in": {
+     "value": 4.1043,
+     "sources": [
+      {
+       "name": "GM News - 2025 Corvette ZR1 press release + spec sheet (2024-07-25)",
+       "url": "https://news.gm.com/home.detail.html/Pages/news/us/en/2024/jul/0725-zr1.html",
+       "says": "Bore & stroke (in. / mm): 4.104 x 3.150 / 104.25 x 80"
+      },
+      {
+       "name": "MotorTrend - 2025 Corvette ZR1 LT7 V8 engine deep dive (Eric Tingwall)",
+       "url": "https://www.motortrend.com/news/2025-chevrolet-corvette-zr1-lt7-v8-engine-deep-dive/",
+       "says": "the same 104.25-millimeter bore and 80-millimeter stroke"
+      },
+      {
+       "name": "Race Engine Technology - Chevrolet LT7 V8 turbo",
+       "url": "https://www.raceenginetechnology.com/News/chevrolet-lt7-v8-turbo",
+       "says": "the bore is 104.25 mm (4.104 in)"
+      },
+      {
+       "name": "Hagerty - Epic Engine: How the ZR1's LT7 Makes Its 1064 HP (Don Sherman, 2024-10-08)",
+       "url": "https://www.hagerty.com/media/?p=436264",
+       "says": "largest possible bore - 4.104-in"
+      },
+      {
+       "name": "Street Machine (AU) - Inside the C8 ZR1 Corvette's 1064hp twin-turbo LT7 V8 (Iain Kelly)",
+       "url": "https://www.streetmachine.com.au/features/c8-zr1-corvette-1064hp-quad-cam-twin-turbo-lt7-v8",
+       "says": "The LT6 and LT7 share the same 104.25mm bore and short 80mm stroke"
+      },
+      {
+       "name": "Wikipedia - Chevrolet Gemini small-block engine (+ Chevrolet Corvette (C8); Wikipedia counted once)",
+       "url": "https://en.wikipedia.org/wiki/Chevrolet_Gemini_small-block_engine",
+       "says": "Cylinder bore: 104.25 mm"
+      }
+     ],
+     "note": "Maker figure 104.25 mm (= 4.1043 in). Hagerty prints 104.24 mm - typo."
+    },
+    "stroke_in": {
+     "value": 3.1496,
+     "sources": [
+      {
+       "name": "GM News - 2025 Corvette ZR1 press release + spec sheet (2024-07-25)",
+       "url": "https://news.gm.com/home.detail.html/Pages/news/us/en/2024/jul/0725-zr1.html",
+       "says": "4.104 x 3.150 / 104.25 x 80"
+      },
+      {
+       "name": "MotorTrend - 2025 Corvette ZR1 LT7 V8 engine deep dive (Eric Tingwall)",
+       "url": "https://www.motortrend.com/news/2025-chevrolet-corvette-zr1-lt7-v8-engine-deep-dive/",
+       "says": "80-millimeter stroke"
+      },
+      {
+       "name": "Hagerty - Epic Engine: How the ZR1's LT7 Makes Its 1064 HP (Don Sherman, 2024-10-08)",
+       "url": "https://www.hagerty.com/media/?p=436264",
+       "says": "The 3.150-in (80 mm) stroke"
+      },
+      {
+       "name": "Race Engine Technology - Chevrolet LT7 V8 turbo",
+       "url": "https://www.raceenginetechnology.com/News/chevrolet-lt7-v8-turbo",
+       "says": "the stroke 80 mm (3.100 in) [sic]"
+      },
+      {
+       "name": "Wikipedia - Chevrolet Gemini small-block engine (+ Chevrolet Corvette (C8); Wikipedia counted once)",
+       "url": "https://en.wikipedia.org/wiki/Chevrolet_Gemini_small-block_engine",
+       "says": "Piston stroke: 80 mm"
+      }
+     ],
+     "note": "Maker figure 80 mm (= 3.1496 in). RET's inch conversion 3.100 is a typo."
+    },
+    "displacement_ci": {
+     "value": 333,
+     "sources": [
+      {
+       "name": "Hagerty - Epic Engine: How the ZR1's LT7 Makes Its 1064 HP (Don Sherman, 2024-10-08)",
+       "url": "https://www.hagerty.com/media/?p=436264",
+       "says": "5.5 liters (333 cubic inches)"
+      },
+      {
+       "name": "Race Engine Technology - Chevrolet LT7 V8 turbo",
+       "url": "https://www.raceenginetechnology.com/News/chevrolet-lt7-v8-turbo",
+       "says": "for 5463 cc"
+      },
+      {
+       "name": "Wikipedia - Chevrolet Gemini small-block engine (+ Chevrolet Corvette (C8); Wikipedia counted once)",
+       "url": "https://en.wikipedia.org/wiki/Chevrolet_Gemini_small-block_engine",
+       "says": "5,463 cc (333.4 cu in)"
+      }
+     ],
+     "note": "5,463 cc = 333.4 ci; the brief's 336 is nominal."
+    },
+    "displacement_l": {
+     "value": 5.5,
+     "sources": [
+      {
+       "name": "GM News - 2025 Corvette ZR1 press release + spec sheet (2024-07-25)",
+       "url": "https://news.gm.com/home.detail.html/Pages/news/us/en/2024/jul/0725-zr1.html",
+       "says": "LT7 Twin-Turbocharged 5.5L DOHC VVT DI"
+      },
+      {
+       "name": "Car and Driver - 2025 Chevy Corvette ZR1 revealed (E. Stafford, 2024-07-25)",
+       "url": "https://www.caranddriver.com/news/a61692733/2025-chevrolet-corvette-zr1-revealed/",
+       "says": "1064-hp twin-turbo 5.5-liter V-8"
+      },
+      {
+       "name": "MotorTrend - 2025 Corvette ZR1 LT7 V8 engine deep dive (Eric Tingwall)",
+       "url": "https://www.motortrend.com/news/2025-chevrolet-corvette-zr1-lt7-v8-engine-deep-dive/",
+       "says": "5.5 liters of displacement"
+      },
+      {
+       "name": "EPA fueleconomy.gov vehicle data",
+       "url": "https://www.fueleconomy.gov/feg/download.shtml",
+       "says": "2025-2026 Corvette ZR1: 5.5 L V8 turbo SIDI"
+      }
+     ],
+     "note": ""
+    },
+    "num_cylinders": {
+     "value": 8,
+     "sources": [
+      {
+       "name": "GM News - 2025 Corvette ZR1 press release + spec sheet (2024-07-25)",
+       "url": "https://news.gm.com/home.detail.html/Pages/news/us/en/2024/jul/0725-zr1.html",
+       "says": "5.5L, twin-turbocharged DOHC flat-plane crank V8"
+      },
+      {
+       "name": "Car and Driver - 2025 Chevy Corvette ZR1 revealed (E. Stafford, 2024-07-25)",
+       "url": "https://www.caranddriver.com/news/a61692733/2025-chevrolet-corvette-zr1-revealed/",
+       "says": "twin-turbo 5.5-liter V-8"
+      },
+      {
+       "name": "EPA fueleconomy.gov vehicle data",
+       "url": "https://www.fueleconomy.gov/feg/download.shtml",
+       "says": "5.5 L V8 turbo"
+      },
+      {
+       "name": "Race Engine Technology - Chevrolet LT7 V8 turbo",
+       "url": "https://www.raceenginetechnology.com/News/chevrolet-lt7-v8-turbo",
+       "says": "These 90 degree bank angle engines"
+      }
+     ],
+     "note": ""
+    },
+    "configuration": {
+     "value": "90-degree V8, flat-plane crankshaft",
+     "sources": [
+      {
+       "name": "GM News - 2025 Corvette ZR1 press release + spec sheet (2024-07-25)",
+       "url": "https://news.gm.com/home.detail.html/Pages/news/us/en/2024/jul/0725-zr1.html",
+       "says": "DOHC flat-plane crank V8"
+      },
+      {
+       "name": "Race Engine Technology - Chevrolet LT7 V8 turbo",
+       "url": "https://www.raceenginetechnology.com/News/chevrolet-lt7-v8-turbo",
+       "says": "90 degree bank angle ... flat plane crankshaft"
+      },
+      {
+       "name": "Hagerty - Epic Engine: How the ZR1's LT7 Makes Its 1064 HP (Don Sherman, 2024-10-08)",
+       "url": "https://www.hagerty.com/media/?p=436264",
+       "says": "The flat-plane crankshaft alternates combustion events bank to bank"
+      },
+      {
+       "name": "MotorTrend - 2025 Corvette ZR1 LT7 V8 engine deep dive (Eric Tingwall)",
+       "url": "https://www.motortrend.com/news/2025-chevrolet-corvette-zr1-lt7-v8-engine-deep-dive/",
+       "says": "flat-plane crankshaft"
+      }
+     ],
+     "note": ""
+    },
+    "firing_order": {
+     "value": "1-4-3-8-7-6-5-2",
+     "sources": [
+      {
+       "name": "GM News - 2025 Corvette ZR1 press release + spec sheet (2024-07-25)",
+       "url": "https://news.gm.com/home.detail.html/Pages/news/us/en/2024/jul/0725-zr1.html",
+       "says": "Firing Order: 1-4-3-8-7-6-5-2"
+      },
+      {
+       "name": "Race Engine Technology - Chevrolet LT7 V8 turbo",
+       "url": "https://www.raceenginetechnology.com/News/chevrolet-lt7-v8-turbo",
+       "says": "The firing order is 1-4-3-8-7-6-5-2"
+      },
+      {
+       "name": "Street Machine (AU) - Inside the C8 ZR1 Corvette's 1064hp twin-turbo LT7 V8 (Iain Kelly)",
+       "url": "https://www.streetmachine.com.au/features/c8-zr1-corvette-1064hp-quad-cam-twin-turbo-lt7-v8",
+       "says": "Firing order: 1-4-3-8-7-6-5-2"
+      }
+     ],
+     "note": ""
+    },
+    "valvetrain": {
+     "value": "DOHC, 4 valves/cyl (32-valve), mechanical finger followers",
+     "sources": [
+      {
+       "name": "GM News - 2025 Corvette ZR1 press release + spec sheet (2024-07-25)",
+       "url": "https://news.gm.com/home.detail.html/Pages/news/us/en/2024/jul/0725-zr1.html",
+       "says": "Dual overhead camshafts (four valves per cylinder) with mechanical finger-follower valvetrain"
+      },
+      {
+       "name": "Race Engine Technology - Chevrolet LT7 V8 turbo",
+       "url": "https://www.raceenginetechnology.com/News/chevrolet-lt7-v8-turbo",
+       "says": "twin overhead camshafts operating four valves per cylinder"
+      },
+      {
+       "name": "Hagerty - Epic Engine: How the ZR1's LT7 Makes Its 1064 HP (Don Sherman, 2024-10-08)",
+       "url": "https://www.hagerty.com/media/?p=436264",
+       "says": "32-Valve Dual-Overhead-Cam Heads"
+      },
+      {
+       "name": "MotorTrend - 2025 Corvette ZR1 LT7 V8 engine deep dive (Eric Tingwall)",
+       "url": "https://www.motortrend.com/news/2025-chevrolet-corvette-zr1-lt7-v8-engine-deep-dive/",
+       "says": "dual-overhead-camshaft valvetrain with rigid mechanical finger followers"
+      }
+     ],
+     "note": ""
+    },
+    "block_material": {
+     "value": "aluminum (A319, cast-in iron liners)",
+     "sources": [
+      {
+       "name": "GM News - 2025 Corvette ZR1 press release + spec sheet (2024-07-25)",
+       "url": "https://news.gm.com/home.detail.html/Pages/news/us/en/2024/jul/0725-zr1.html",
+       "says": "Block Material: A319 cast aluminum with cast-in iron cylinder liners"
+      },
+      {
+       "name": "Hagerty - Epic Engine: How the ZR1's LT7 Makes Its 1064 HP (Don Sherman, 2024-10-08)",
+       "url": "https://www.hagerty.com/media/?p=436264",
+       "says": "the LT7's cylinder block is a two-piece A319-aluminum casting"
+      },
+      {
+       "name": "Race Engine Technology - Chevrolet LT7 V8 turbo",
+       "url": "https://www.raceenginetechnology.com/News/chevrolet-lt7-v8-turbo",
+       "says": "The sand cast block is aluminium"
+      },
+      {
+       "name": "Street Machine (AU) - Inside the C8 ZR1 Corvette's 1064hp twin-turbo LT7 V8 (Iain Kelly)",
+       "url": "https://www.streetmachine.com.au/features/c8-zr1-corvette-1064hp-quad-cam-twin-turbo-lt7-v8",
+       "says": "Block: Alloy"
+      }
+     ],
+     "note": ""
+    },
+    "head_material": {
+     "value": "aluminum (A356-T6)",
+     "sources": [
+      {
+       "name": "GM News - 2025 Corvette ZR1 press release + spec sheet (2024-07-25)",
+       "url": "https://news.gm.com/home.detail.html/Pages/news/us/en/2024/jul/0725-zr1.html",
+       "says": "Cylinder Head Material: A356 T6 cast aluminum"
+      },
+      {
+       "name": "Race Engine Technology - Chevrolet LT7 V8 turbo",
+       "url": "https://www.raceenginetechnology.com/News/chevrolet-lt7-v8-turbo",
+       "says": "aluminium as are the CNC-machined cylinder heads"
+      },
+      {
+       "name": "Street Machine (AU) - Inside the C8 ZR1 Corvette's 1064hp twin-turbo LT7 V8 (Iain Kelly)",
+       "url": "https://www.streetmachine.com.au/features/c8-zr1-corvette-1064hp-quad-cam-twin-turbo-lt7-v8",
+       "says": "Heads: DOHC alloy"
+      }
+     ],
+     "note": ""
+    },
+    "compression_ratio": {
+     "value": 9.8,
+     "sources": [
+      {
+       "name": "GM News - 2025 Corvette ZR1 press release + spec sheet (2024-07-25)",
+       "url": "https://news.gm.com/home.detail.html/Pages/news/us/en/2024/jul/0725-zr1.html",
+       "says": "Compression Ratio: 9.8:1"
+      },
+      {
+       "name": "Car and Driver - 2025 Chevy Corvette ZR1 revealed (E. Stafford, 2024-07-25)",
+       "url": "https://www.caranddriver.com/news/a61692733/2025-chevrolet-corvette-zr1-revealed/",
+       "says": "lower compression ratio of 9.8:1 (versus the LT6's 12.5:1)"
+      },
+      {
+       "name": "MotorTrend - 2025 Corvette ZR1 LT7 V8 engine deep dive (Eric Tingwall)",
+       "url": "https://www.motortrend.com/news/2025-chevrolet-corvette-zr1-lt7-v8-engine-deep-dive/",
+       "says": "drops the compression ratio from 12.5:1 to 9.8:1"
+      },
+      {
+       "name": "Hagerty - Epic Engine: How the ZR1's LT7 Makes Its 1064 HP (Don Sherman, 2024-10-08)",
+       "url": "https://www.hagerty.com/media/?p=436264",
+       "says": "9.8:1 compression ratio"
+      },
+      {
+       "name": "Race Engine Technology - Chevrolet LT7 V8 turbo",
+       "url": "https://www.raceenginetechnology.com/News/chevrolet-lt7-v8-turbo",
+       "says": "compression ratio of 9.8:1"
+      }
+     ],
+     "note": ""
+    },
+    "induction": {
+     "value": "twin turbochargers (water-to-air charge coolers); direct + port fuel injection (16 injectors); dry sump",
+     "sources": [
+      {
+       "name": "GM News - 2025 Corvette ZR1 press release + spec sheet (2024-07-25)",
+       "url": "https://news.gm.com/home.detail.html/Pages/news/us/en/2024/jul/0725-zr1.html",
+       "says": "Fuel Delivery: PDI (DI ... & Port Fuel Injection); Charging: Twin 76 mono-scroll ... turbos; Seven-stage dry sump"
+      },
+      {
+       "name": "Car and Driver - 2025 Chevy Corvette ZR1 revealed (E. Stafford, 2024-07-25)",
+       "url": "https://www.caranddriver.com/news/a61692733/2025-chevrolet-corvette-zr1-revealed/",
+       "says": "both port and direct fuel injection"
+      },
+      {
+       "name": "MotorTrend - 2025 Corvette ZR1 LT7 V8 engine deep dive (Eric Tingwall)",
+       "url": "https://www.motortrend.com/news/2025-chevrolet-corvette-zr1-lt7-v8-engine-deep-dive/",
+       "says": "the LT7 supplements the LT6's direct injection with a port-injection system ... all 16 injectors"
+      },
+      {
+       "name": "Race Engine Technology - Chevrolet LT7 V8 turbo",
+       "url": "https://www.raceenginetechnology.com/News/chevrolet-lt7-v8-turbo",
+       "says": "The LT7 employs a combination of direct and port injection"
+      },
+      {
+       "name": "Street Machine (AU) - Inside the C8 ZR1 Corvette's 1064hp twin-turbo LT7 V8 (Iain Kelly)",
+       "url": "https://www.streetmachine.com.au/features/c8-zr1-corvette-1064hp-quad-cam-twin-turbo-lt7-v8",
+       "says": "EFI: PDI (port and direct injection); Turbos: BorgWarner 76mm"
+      },
+      {
+       "name": "EPA fueleconomy.gov vehicle data",
+       "url": "https://www.fueleconomy.gov/feg/download.shtml",
+       "says": "5.5 L V8 turbo SIDI"
+      }
+     ],
+     "note": ""
+    },
+    "fuel_type": {
+     "value": "premium unleaded gasoline",
+     "sources": [
+      {
+       "name": "MotorTrend - 2025 Corvette ZR1 LT7 V8 engine deep dive (Eric Tingwall)",
+       "url": "https://www.motortrend.com/news/2025-chevrolet-corvette-zr1-lt7-v8-engine-deep-dive/",
+       "says": "feed the machine premium unleaded at a rate of two gallons per minute"
+      },
+      {
+       "name": "Hagerty - Epic Engine: How the ZR1's LT7 Makes Its 1064 HP (Don Sherman, 2024-10-08)",
+       "url": "https://www.hagerty.com/media/?p=436264",
+       "says": "two gallons of premium-unleaded fuel per minute"
+      },
+      {
+       "name": "Wikipedia - Chevrolet Gemini small-block engine (+ Chevrolet Corvette (C8); Wikipedia counted once)",
+       "url": "https://en.wikipedia.org/wiki/Chevrolet_Gemini_small-block_engine",
+       "says": "Fuel type: Gasoline"
+      }
+     ],
+     "note": "Wikipedia confirms gasoline only; 'premium' from MotorTrend + Hagerty."
+    },
+    "years": {
+     "value": "2025-2026 model years (Corvette ZR1 2025-; ZR1X 2026-)",
+     "sources": [
+      {
+       "name": "GM News - 2025 Corvette ZR1 press release + spec sheet (2024-07-25)",
+       "url": "https://news.gm.com/home.detail.html/Pages/news/us/en/2024/jul/0725-zr1.html",
+       "says": "2025 Chevrolet Corvette ZR1 ... LT7"
+      },
+      {
+       "name": "Car and Driver - 2025 Chevy Corvette ZR1 revealed (E. Stafford, 2024-07-25)",
+       "url": "https://www.caranddriver.com/news/a61692733/2025-chevrolet-corvette-zr1-revealed/",
+       "says": "The 2025 Chevy Corvette ZR1 has a 1064-hp twin-turbo 5.5-liter V-8"
+      },
+      {
+       "name": "Wikipedia - Chevrolet Gemini small-block engine (+ Chevrolet Corvette (C8); Wikipedia counted once)",
+       "url": "https://en.wikipedia.org/wiki/Chevrolet_Gemini_small-block_engine",
+       "says": "2025-present Chevrolet Corvette ZR1"
+      },
+      {
+       "name": "EPA fueleconomy.gov vehicle data",
+       "url": "https://www.fueleconomy.gov/feg/download.shtml",
+       "says": "Corvette ZR1 5.5 L V8 turbo 2025, 2026; ZR1X 2026"
+      }
+     ],
+     "note": ""
+    }
+   },
+   "variants": [
+    {
+     "year": "2025-2026",
+     "hp": 1064,
+     "hp_basis": "SAE net (per SAE guidelines) @ 7,000 rpm",
+     "compression_ratio": 9.8,
+     "code": "LT7 (Corvette ZR1)",
+     "induction": "twin turbo, DI+PFI",
+     "sources": [
+      {
+       "name": "GM News - 2025 Corvette ZR1 press release + spec sheet (2024-07-25)",
+       "url": "https://news.gm.com/home.detail.html/Pages/news/us/en/2024/jul/0725-zr1.html",
+       "says": "The LT7 engine produces 1,064 horsepower at 7,000 rpm and 828 lb-ft of torque at 6,000 rpm, per SAE guidelines"
+      },
+      {
+       "name": "Car and Driver - 2025 Chevy Corvette ZR1 revealed (E. Stafford, 2024-07-25)",
+       "url": "https://www.caranddriver.com/news/a61692733/2025-chevrolet-corvette-zr1-revealed/",
+       "says": "1064-hp twin-turbo 5.5-liter V-8"
+      },
+      {
+       "name": "MotorTrend - 2025 Corvette ZR1 LT7 V8 engine deep dive (Eric Tingwall)",
+       "url": "https://www.motortrend.com/news/2025-chevrolet-corvette-zr1-lt7-v8-engine-deep-dive/",
+       "says": "1,064 horsepower at 7,000 rpm"
+      },
+      {
+       "name": "Hagerty - Epic Engine: How the ZR1's LT7 Makes Its 1064 HP (Don Sherman, 2024-10-08)",
+       "url": "https://www.hagerty.com/media/?p=436264",
+       "says": "How the ZR1's LT7 Makes Its Magnificent 1064 HP"
+      },
+      {
+       "name": "Wikipedia - Chevrolet Gemini small-block engine (+ Chevrolet Corvette (C8); Wikipedia counted once)",
+       "url": "https://en.wikipedia.org/wiki/Chevrolet_Gemini_small-block_engine",
+       "says": "1,064 hp (793 kW) at 7,000 RPM"
+      },
+      {
+       "name": "Kelley Blue Book - 2026 Chevrolet Corvette review/specs",
+       "url": "https://www.kbb.com/chevrolet/corvette/2026/",
+       "says": "Horsepower 490 - 1,064 hp; V8, Twin Turbo, 5.5 Liter"
+      }
+     ]
+    },
+    {
+     "year": 2026,
+     "hp": 1064,
+     "hp_basis": "SAE net, engine only (1,250 hp combined with front e-motor)",
+     "compression_ratio": 9.8,
+     "code": "LT7 (Corvette ZR1X hybrid AWD)",
+     "induction": "twin turbo, DI+PFI",
+     "sources": [
+      {
+       "name": "GM News - 5 jaw-dropping facts about the 2026 Corvette ZR1X (2025-07-03)",
+       "url": "https://news.gm.com/home.detail.html/Pages/topic/us/en/2025/jul/0703-5-jaw-dropping-facts-2026-Corvette-ZR1X.html",
+       "says": "takes the 1,064-horsepower V8 engine from the ZR1 and pairs it with an electrified front-axle motor ... 1,250 combined horsepower"
+      },
+      {
+       "name": "Car and Driver - 2026 Chevy Corvette ZR1X revealed (J. Fitzgerald, 2025-06-17)",
+       "url": "https://www.caranddriver.com/news/a65079561/2026-chevrolet-corvette-zr1x-revealed/",
+       "says": "pairs the regular ZR1's 1064-hp twin-turbo LT7 V-8 with an improved version of the E-Ray's hybrid system, making 1250 combined horsepower"
+      },
+      {
+       "name": "Wikipedia - Chevrolet Corvette (C8)",
+       "url": "https://en.wikipedia.org/wiki/Chevrolet_Corvette_(C8)",
+       "says": "1,064 hp (ZR1); 1,250 hp (ZR1X)"
+      },
+      {
+       "name": "EPA fueleconomy.gov vehicle data",
+       "url": "https://www.fueleconomy.gov/feg/download.shtml",
+       "says": "2026: 5.5 L V8 turbo SIDI Hybrid 'Corvette ZR1X'"
+      }
+     ],
+     "note": "Engine rating unchanged at 1,064 hp; 1,250 is combined system output (front motor 186 hp per GM). Wikipedia C8 article is the single Wikipedia source for this row."
+    }
+   ],
+   "unverified": {
+    "rod_length_in": "Not published; sources only say LT7 forged titanium rods are shorter than the LT6's."
+   },
+   "unverified_variants": []
+  },
+  {
+   "id": "gm-133-i4-ln2",
+   "name": "GM 2.2 OHV inline-four LN2 (133 ci)",
+   "fields": {
+    "stroke_in": {
+     "value": 3.4646,
+     "sources": [
+      {
+       "name": "GM Heritage Center 1993 Chevrolet Corsica information kit (MVMA specs)",
+       "url": "https://www.gm.com/content/dam/company/no_search/heritage-archive-docs/vehicle-information-kits/chevrolet/1993-Chevrolet-Corsica.pdf",
+       "says": "2.2 LITER L4 (133 CID) MULTI-PORT FUEL INJECTION RPO LN2 ... Bore 89.0 mm (3.50 in.), Stroke 88.0 mm (3.46 in.)"
+      },
+      {
+       "name": "Wikipedia: General Motors 122 engine",
+       "url": "https://en.wikipedia.org/wiki/General_Motors_122_engine",
+       "says": "stroke 88 mm (3.46 in) (2.2)"
+      },
+      {
+       "name": "Engine Builder magazine: Rebuilding the GM / Chevy 2.2L Engine (Doug Anderson, July 2000)",
+       "url": "https://www.enginebuildermag.com/2000/07/rebuilding-the-chevy-2-2l-engine/",
+       "says": "In 1990, the stroke was increased from 3.15″ to 3.46″ to make the 2.0L into a 2.2L."
+      }
+     ],
+     "note": "88.0 mm = 3.4646 in (GM rounds to 3.46). Same figure in the 1994 Cavalier kit."
+    },
+    "displacement_ci": {
+     "value": 133,
+     "sources": [
+      {
+       "name": "GM Heritage Center 1993 Chevrolet Corsica information kit",
+       "url": "https://www.gm.com/content/dam/company/no_search/heritage-archive-docs/vehicle-information-kits/chevrolet/1993-Chevrolet-Corsica.pdf",
+       "says": "LN2 2.2 (133) Multi-Port Fuel Injection 9.0:1 82 (110) @ 5200"
+      },
+      {
+       "name": "Consumer Guide: 1990-96 Oldsmobile Cutlass Ciera (used-car review)",
+       "url": "https://consumerguide.com/used/1990-96-oldsmobile-cutlass-ciera/",
+       "says": "ohv I4, 2.2/133, 120 hp, 130 lb-ft"
+      },
+      {
+       "name": "Wikipedia: General Motors 122 engine",
+       "url": "https://en.wikipedia.org/wiki/General_Motors_122_engine",
+       "says": "2,189 cc (133.6 cu in)"
+      }
+     ],
+     "note": "2,189 cc = 133.6 ci; GM and Olds literature say 133; NHRA (1998-99) rounds to 134."
+    },
+    "displacement_l": {
+     "value": 2.2,
+     "sources": [
+      {
+       "name": "GM Heritage Center 1993 Chevrolet Corsica information kit",
+       "url": "https://www.gm.com/content/dam/company/no_search/heritage-archive-docs/vehicle-information-kits/chevrolet/1993-Chevrolet-Corsica.pdf",
+       "says": "2.2 LITER L4 (133 CID)"
+      },
+      {
+       "name": "EPA fueleconomy.gov vehicle data",
+       "url": "https://www.fueleconomy.gov/feg/download.shtml",
+       "says": "1993, 1994 Cutlass Ciera and 1996 Ciera SL: 2.2 L 4-cyl"
+      },
+      {
+       "name": "Consumer Guide: 1990-96 Oldsmobile Cutlass Ciera",
+       "url": "https://consumerguide.com/used/1990-96-oldsmobile-cutlass-ciera/",
+       "says": "2.2/133"
+      },
+      {
+       "name": "Wikipedia: General Motors 122 engine",
+       "url": "https://en.wikipedia.org/wiki/General_Motors_122_engine",
+       "says": "2,189 cc"
+      },
+      {
+       "name": "Engine Builder magazine (2000)",
+       "url": "https://www.enginebuildermag.com/2000/07/rebuilding-the-chevy-2-2l-engine/",
+       "says": "Rebuilding the GM / Chevy 2.2L Engine"
+      }
+     ],
+     "note": ""
+    },
+    "num_cylinders": {
+     "value": 4,
+     "sources": [
+      {
+       "name": "GM Heritage Center 1993 Chevrolet Corsica information kit",
+       "url": "https://www.gm.com/content/dam/company/no_search/heritage-archive-docs/vehicle-information-kits/chevrolet/1993-Chevrolet-Corsica.pdf",
+       "says": "No. of cylinders 4"
+      },
+      {
+       "name": "EPA fueleconomy.gov vehicle data",
+       "url": "https://www.fueleconomy.gov/feg/download.shtml",
+       "says": "2.2 L 4-cyl"
+      },
+      {
+       "name": "Consumer Guide: 1990-96 Oldsmobile Cutlass Ciera",
+       "url": "https://consumerguide.com/used/1990-96-oldsmobile-cutlass-ciera/",
+       "says": "ohv I4"
+      },
+      {
+       "name": "Wikipedia: General Motors 122 engine",
+       "url": "https://en.wikipedia.org/wiki/General_Motors_122_engine",
+       "says": "straight-four engine"
+      }
+     ],
+     "note": ""
+    },
+    "configuration": {
+     "value": "Inline-four, transverse (FWD)",
+     "sources": [
+      {
+       "name": "GM Heritage Center 1993 Chevrolet Corsica information kit",
+       "url": "https://www.gm.com/content/dam/company/no_search/heritage-archive-docs/vehicle-information-kits/chevrolet/1993-Chevrolet-Corsica.pdf",
+       "says": "Type: Inline, Front, Transverse - OHV"
+      },
+      {
+       "name": "Consumer Guide: 1990-96 Oldsmobile Cutlass Ciera",
+       "url": "https://consumerguide.com/used/1990-96-oldsmobile-cutlass-ciera/",
+       "says": "ohv I4"
+      },
+      {
+       "name": "Wikipedia: General Motors 122 engine",
+       "url": "https://en.wikipedia.org/wiki/General_Motors_122_engine",
+       "says": "configuration: Naturally aspirated straight-four engine"
+      }
+     ],
+     "note": ""
+    },
+    "valvetrain": {
+     "value": "OHV pushrod, 2 valves per cylinder (roller lifters from 1994)",
+     "sources": [
+      {
+       "name": "GM Heritage Center 1993 Corsica / 1994 Cavalier information kits",
+       "url": "https://www.gm.com/content/dam/company/no_search/heritage-archive-docs/vehicle-information-kits/chevrolet/1994-Chevrolet-Cavalier.pdf",
+       "says": "Inline, Front, Transverse - OHV; Number intake/exhaust valves 4/4; hydraulic lifters standard"
+      },
+      {
+       "name": "Wikipedia: General Motors 122 engine",
+       "url": "https://en.wikipedia.org/wiki/General_Motors_122_engine",
+       "says": "OHV 2 valves x cyl."
+      },
+      {
+       "name": "Consumer Guide: 1990-96 Oldsmobile Cutlass Ciera",
+       "url": "https://consumerguide.com/used/1990-96-oldsmobile-cutlass-ciera/",
+       "says": "ohv I4"
+      },
+      {
+       "name": "Engine Builder magazine (2000)",
+       "url": "https://www.enginebuildermag.com/2000/07/rebuilding-the-chevy-2-2l-engine/",
+       "says": "this four cylinder, pushrod motor ... The new 'Generation II' engine came with a roller cam (1994)"
+      }
+     ],
+     "note": ""
+    },
+    "block_material": {
+     "value": "Cast iron",
+     "sources": [
+      {
+       "name": "GM Heritage Center 1993 Chevrolet Corsica information kit",
+       "url": "https://www.gm.com/content/dam/company/no_search/heritage-archive-docs/vehicle-information-kits/chevrolet/1993-Chevrolet-Corsica.pdf",
+       "says": "Cyl blck matl & mass: Cast Iron, 40 (88)"
+      },
+      {
+       "name": "Wikipedia: General Motors 122 engine",
+       "url": "https://en.wikipedia.org/wiki/General_Motors_122_engine",
+       "says": "block: Cast iron"
+      },
+      {
+       "name": "Hooniverse: Lamest Classics - the new-for-'95 Chevy Cavalier (Jan 16 2020)",
+       "url": "https://www.hooniverse.com/?p=279588",
+       "says": "the base 2.2-liter pushrod engine ... a coarse and wheezy hunk of iron with an aluminum head"
+      }
+     ],
+     "note": "Hooniverse (enthusiast blog) is the weakest of the three."
+    },
+    "head_material": {
+     "value": "Aluminum",
+     "sources": [
+      {
+       "name": "GM Heritage Center 1993 Chevrolet Corsica information kit",
+       "url": "https://www.gm.com/content/dam/company/no_search/heritage-archive-docs/vehicle-information-kits/chevrolet/1993-Chevrolet-Corsica.pdf",
+       "says": "Cyl. head material & mass: Aluminum, 9.7 (21.3)"
+      },
+      {
+       "name": "Wikipedia: General Motors 122 engine",
+       "url": "https://en.wikipedia.org/wiki/General_Motors_122_engine",
+       "says": "head: Aluminum (1987-2003)"
+      },
+      {
+       "name": "Engine Builder magazine (2000)",
+       "url": "https://www.enginebuildermag.com/2000/07/rebuilding-the-chevy-2-2l-engine/",
+       "says": "The 2.0L was upgraded in 1987 with the addition of an aluminum head"
+      },
+      {
+       "name": "Hooniverse: Lamest Classics - the new-for-'95 Chevy Cavalier",
+       "url": "https://www.hooniverse.com/?p=279588",
+       "says": "hunk of iron with an aluminum head"
+      }
+     ],
+     "note": "Brief asked whether the head was iron: no, aluminum (iron heads ended with the 1986 2.0)."
+    },
+    "induction": {
+     "value": "Multi-port fuel injection (MPFI); sequential port injection later in the run",
+     "sources": [
+      {
+       "name": "GM Heritage Center 1993 Chevrolet Corsica information kit",
+       "url": "https://www.gm.com/content/dam/company/no_search/heritage-archive-docs/vehicle-information-kits/chevrolet/1993-Chevrolet-Corsica.pdf",
+       "says": "LN2 2.2 (133) Multi-Port Fuel Injection"
+      },
+      {
+       "name": "EPA fueleconomy.gov vehicle data",
+       "url": "https://www.fueleconomy.gov/feg/download.shtml",
+       "says": "1994 Cutlass Ciera / 1996 Ciera SL: 2.2 L 4-cyl (FFS) (MPFI)"
+      },
+      {
+       "name": "Wikipedia: General Motors 122 engine",
+       "url": "https://en.wikipedia.org/wiki/General_Motors_122_engine",
+       "says": "For 1992, the 2.2 received multi-port fuel injection (MPFI) ... In 1994, all 2.2-liter engines were updated to sequential multi-port fuel injection"
+      },
+      {
+       "name": "Consumer Guide: 1990-96 Chevrolet Corsica",
+       "url": "https://consumerguide.com/used/1990-96-chevrolet-corsica/",
+       "says": "a new fuel injection system introduced in 1992 boosted output of the 2.2-liter from 95 to 110 hp"
+      },
+      {
+       "name": "Engine Builder magazine (2000)",
+       "url": "https://www.enginebuildermag.com/2000/07/rebuilding-the-chevy-2-2l-engine/",
+       "says": "Chevy switched to sequential port fuel injection on the 2.2L in '96"
+      }
+     ],
+     "note": "1993 was already MPFI, not TBI (TBI 2.2 was 1990-91). When it became sequential is disputed: Wikipedia says 1994, Engine Builder says 1996 (cam sensor added to the 1996 block)."
+    },
+    "compression_ratio": {
+     "value": 9.0,
+     "sources": [
+      {
+       "name": "GM Heritage Center 1993 Chevrolet Corsica information kit",
+       "url": "https://www.gm.com/content/dam/company/no_search/heritage-archive-docs/vehicle-information-kits/chevrolet/1993-Chevrolet-Corsica.pdf",
+       "says": "LN2 2.2 (133) Multi-Port Fuel Injection 9.0:1"
+      },
+      {
+       "name": "Wikipedia: General Motors 122 engine (infobox)",
+       "url": "https://en.wikipedia.org/wiki/General_Motors_122_engine",
+       "says": "compression 9.0:1"
+      },
+      {
+       "name": "NHRA engine blueprints CHEV-98 / CHEV-99 (2.2, 134 ci, 120 hp)",
+       "url": "https://www.nhra.net/tech_specs/engine/blueprints/CHEV-98.rtf",
+       "says": "compression 9.0"
+      }
+     ],
+     "note": "NHRA has no 1993-96 2.2 row; the 1998-99 120-hp 2.2 is the same LN2 family. No 1994-96 factory figure checked."
+    },
+    "years": {
+     "value": "1993-1996 in the Oldsmobile Cutlass Ciera / Ciera (the LN2 2.2 MPFI was built 1992-2002 overall)",
+     "sources": [
+      {
+       "name": "Oldsmobile 1993 Full Line and 1994/1995/1996 Ciera catalogs (GM factory literature)",
+       "url": "https://oldcarbrochures.org/United%20States/Oldsmobile/1993-Oldsmobile/1993-Oldsmobile-Full-Line-Prestige-Brochure/index.html",
+       "says": "1993: 2.2-liter (133 cu. in.) L4 110 @ 5200, multiport, Standard on S; 1996: Standard features include a fuel-injected 2.2-liter engine"
+      },
+      {
+       "name": "EPA fueleconomy.gov vehicle data",
+       "url": "https://www.fueleconomy.gov/feg/download.shtml",
+       "says": "1993 Cutlass Ciera/Cruiser, 1994 Cutlass Ciera, 1996 Ciera SL: 2.2 L 4-cyl (no 1995 row in the extract)"
+      },
+      {
+       "name": "Wikipedia: General Motors 122 engine",
+       "url": "https://en.wikipedia.org/wiki/General_Motors_122_engine",
+       "says": "LN2 applications: 1993-1996 Oldsmobile Cutlass Ciera; 1993-1996 Buick Century"
+      }
+     ],
+     "note": "Consumer Guide says the four was dropped for 1993 and the 2.2 arrived as the new base engine for 1994; the 1993 Olds catalog, the 1993 EPA listing and Wikipedia contradict it."
+    }
+   },
+   "variants": [
+    {
+     "year": 1993,
+     "hp": 110,
+     "hp_basis": "SAE net",
+     "compression_ratio": 9.0,
+     "code": "LN2",
+     "induction": "MPFI",
+     "sources": [
+      {
+       "name": "Oldsmobile 1993 Full Line Prestige catalog + GM Heritage 1993 Chevrolet Corsica kit (GM, one source)",
+       "url": "https://oldcarbrochures.org/United%20States/Oldsmobile/1993-Oldsmobile/1993-Oldsmobile-Full-Line-Prestige-Brochure/index.html",
+       "says": "CUTLASS CIERA: 2.2-liter (133 cu. in.) L4 110 @ 5200, 130 @ 3200, multiport; Corsica kit: LN2 2.2 (133) MPFI 9.0:1 82 (110) @ 5200"
+      },
+      {
+       "name": "Wikipedia: Oldsmobile Cutlass Ciera / General Motors 122 engine",
+       "url": "https://en.wikipedia.org/wiki/Oldsmobile_Cutlass_Ciera",
+       "says": "1993 2.2 L 2200 I4 110 hp; 1992 MPFI 2.2 110 hp"
+      },
+      {
+       "name": "Consumer Guide: 1990-96 Chevrolet Corsica",
+       "url": "https://consumerguide.com/used/1990-96-chevrolet-corsica/",
+       "says": "1992: Output of the base engine grew to 110 horsepower ... then to 120 for '94"
+      }
+     ],
+     "note": "Consumer Guide's 110 hp is for the same LN2 in the Corsica (1992-93); its Ciera page wrongly says there was no four for 1993."
+    },
+    {
+     "year": "1994-1996",
+     "hp": 120,
+     "hp_basis": "SAE net",
+     "compression_ratio": null,
+     "code": "LN2",
+     "induction": "MPFI (sequential from 1994 per Wikipedia, 1996 per Engine Builder)",
+     "sources": [
+      {
+       "name": "Oldsmobile 1994 Cutlass Ciera, 1995 and 1996 Ciera catalogs (GM factory literature)",
+       "url": "https://oldcarbrochures.org/United%20States/Oldsmobile/1994-Oldsmobile/1994-Oldsmobile-Cutlass-Ciera-Brochure/index.html",
+       "says": "1994: 2.2-Liter 120 @ 5200, 130 @ 3200, multiport; 1995/1996 POWER TEAMS 2.2 liters (133 cu in) 120 @ 5200"
+      },
+      {
+       "name": "Consumer Guide: 1990-96 Oldsmobile Cutlass Ciera",
+       "url": "https://consumerguide.com/used/1990-96-oldsmobile-cutlass-ciera/",
+       "says": "The new base engine is a 120-horsepower, 2.2-liter 4-cylinder, paired with a 3-speed automatic; ohv I4 2.2/133 120 hp"
+      },
+      {
+       "name": "Wikipedia: Oldsmobile Cutlass Ciera / General Motors 122 engine",
+       "url": "https://en.wikipedia.org/wiki/Oldsmobile_Cutlass_Ciera",
+       "says": "1994-1996 2.2 L 2200 I4 120 hp; 1994 ... power increased to 120 hp"
+      }
+     ],
+     "note": "Sold as 'Oldsmobile Ciera' for 1996."
+    }
+   ],
+   "unverified": {
+    "bore_in": "3.5039 in (89.0 mm): GM Heritage 1993 Corsica and 1994 Cavalier kits ('89.0 mm (3.50 in.)') and Wikipedia ('89 mm'). Only 2 independent; Engine Builder gives only the stroke change. All other hits were spec sites (fastcarcheck, ultimatespecs, automobile-catalog), which are excluded.",
+    "rod_length_in": "5.59 in (141.95 mm): GM Heritage 1994 Cavalier kit only ('Connecting Rods ... Length 141.95 (5.59 in.)'). No second source.",
+    "firing_order": "1-3-4-2: GM Heritage 1993 Corsica kit only (MVMA 'Firing order 1-3-4-2'). Other hits were repair-advice blogs/firing-order sites, which are excluded.",
+    "fuel_type": "Gasoline (unleaded, 87 AKI): GM 1993/1994 kits ('Fuel required Unleaded; antiknock index 87') and Wikipedia infobox (Gasoline). Only 2."
+   },
+   "unverified_variants": []
+  },
+  {
+   "id": "isuzu-111-diesel-lj5",
+   "name": "Isuzu 4FB1 1.8 L (111 ci) diesel four (Chevrolet RPO LJ5)",
+   "fields": {
+    "bore_in": {
+     "value": 3.3071,
+     "sources": [
+      {
+       "name": "GM Heritage Center 1984 Chevrolet Chevette information kit (MVMA spec pages)",
+       "url": "https://www.gm.com/content/dam/company/no_search/heritage-archive-docs/vehicle-information-kits/chevrolet/1984-Chevrolet-Chevette.pdf",
+       "says": "ENGINE - GENERAL, 1.8 Liter L-4 (111 CID) RPO LJ5: Bore 84 (3.31)"
+      },
+      {
+       "name": "Wikipedia: List of Isuzu engines (4FB1)",
+       "url": "https://en.wikipedia.org/wiki/List_of_Isuzu_engines",
+       "says": "4FB1: 84 mm x 82 mm"
+      },
+      {
+       "name": "Standard Catalog of American Cars 1976-1986 (Krause/Motorbooks); same text in Standard Catalog of Chevrolet 1912-2003 (counted once)",
+       "url": "https://books.google.com/books?id=xTM2Ixfev5QC",
+       "says": "Bore & stroke: 3.31 x 3.23 in."
+      },
+      {
+       "name": "Motor Trend (1981) Chevette Diesel test, Google Books snippet",
+       "url": "https://books.google.com/books?id=aYA9AQAAIAAJ",
+       "says": "Diesel Chevette ... 3.31 x 3.23 in. (84 x 82 mm)"
+      },
+      {
+       "name": "Chilton's Auto Repair Manual 1982 / 1983 (Chilton/Nichols), Google Books snippet",
+       "url": "https://books.google.com/books?id=_uq86pJjhR8C",
+       "says": "3.31 x 3.23 22.0:1 ... Diesel Injection"
+      }
+     ],
+     "note": "84 mm (maker's metric figure); sources print 3.31 in."
+    },
+    "stroke_in": {
+     "value": 3.2283,
+     "sources": [
+      {
+       "name": "GM Heritage Center 1984 Chevrolet Chevette information kit (MVMA spec pages)",
+       "url": "https://www.gm.com/content/dam/company/no_search/heritage-archive-docs/vehicle-information-kits/chevrolet/1984-Chevrolet-Chevette.pdf",
+       "says": "Stroke 82 (3.23)"
+      },
+      {
+       "name": "Wikipedia: List of Isuzu engines (4FB1)",
+       "url": "https://en.wikipedia.org/wiki/List_of_Isuzu_engines",
+       "says": "82 mm (3.2 in)"
+      },
+      {
+       "name": "Standard Catalog of American Cars 1976-1986 (Krause/Motorbooks); same text in Standard Catalog of Chevrolet 1912-2003 (counted once)",
+       "url": "https://books.google.com/books?id=xTM2Ixfev5QC",
+       "says": "Bore & stroke: 3.31 x 3.23 in."
+      },
+      {
+       "name": "Motor Trend (1981) Chevette Diesel test, Google Books snippet",
+       "url": "https://books.google.com/books?id=aYA9AQAAIAAJ",
+       "says": "Diesel Chevette ... 3.31 x 3.23 in. (84 x 82 mm)"
+      }
+     ],
+     "note": "82 mm (maker's metric figure); sources print 3.23 in."
+    },
+    "displacement_ci": {
+     "value": 111,
+     "sources": [
+      {
+       "name": "GM Heritage Center 1984 Chevrolet Chevette information kit (MVMA spec pages)",
+       "url": "https://www.gm.com/content/dam/company/no_search/heritage-archive-docs/vehicle-information-kits/chevrolet/1984-Chevrolet-Chevette.pdf",
+       "says": "1.8 Liter L-4 (111 CID) Fuel Injection (Diesel) RPO LJ5"
+      },
+      {
+       "name": "Standard Catalog of American Cars 1976-1986 (Krause/Motorbooks); same text in Standard Catalog of Chevrolet 1912-2003 (counted once)",
+       "url": "https://books.google.com/books?id=xTM2Ixfev5QC",
+       "says": "Displacement: 111 cid (1.8 liters)"
+      },
+      {
+       "name": "World Cars 1985 (Automobile Club of Italy), Google Books snippet",
+       "url": "https://books.google.com/books?id=ondTAAAAMAAJ",
+       "says": "diesel; 111 cu in, 1,819 cc (3.31 x 3.23 in, 84 x 82 mm)"
+      },
+      {
+       "name": "Wikipedia: Chevrolet Chevette",
+       "url": "https://en.wikipedia.org/wiki/Chevrolet_Chevette",
+       "says": "1,817 cc (110.9 cu in) 4FB1 OHC diesel I4; 51 hp (38 kW); late-1981 availability"
+      }
+     ],
+     "note": "1,817 cc (110.9 ci) per Wikipedia; World Cars prints 1,819 cc."
+    },
+    "displacement_l": {
+     "value": 1.8,
+     "sources": [
+      {
+       "name": "GM Heritage Center 1984 Chevrolet Chevette information kit (MVMA spec pages)",
+       "url": "https://www.gm.com/content/dam/company/no_search/heritage-archive-docs/vehicle-information-kits/chevrolet/1984-Chevrolet-Chevette.pdf",
+       "says": "1.8 Liter L-4"
+      },
+      {
+       "name": "Standard Catalog of American Cars 1976-1986 (Krause/Motorbooks); same text in Standard Catalog of Chevrolet 1912-2003 (counted once)",
+       "url": "https://books.google.com/books?id=xTM2Ixfev5QC",
+       "says": "111 cid (1.8 liters)"
+      },
+      {
+       "name": "Wikipedia: Chevrolet Chevette",
+       "url": "https://en.wikipedia.org/wiki/Chevrolet_Chevette",
+       "says": "1,817 cc (110.9 cu in) 4FB1 OHC diesel I4; 51 hp (38 kW); late-1981 availability"
+      },
+      {
+       "name": "EPA fueleconomy.gov vehicle data",
+       "url": "https://www.fueleconomy.gov/feg/download.shtml",
+       "says": "1984-86 Chevette 1.8 L 4-cyl (DIESEL)"
+      },
+      {
+       "name": "Christian Science Monitor: Chevette diesel makes a perky bid to top its class (Dec 4 1981)",
+       "url": "https://www.csmonitor.com/1981/1204/120432.html",
+       "says": "1.8-liter diesel built by Isuzu ... 51 horsepower at 5,000 rpm"
+      }
+     ],
+     "note": ""
+    },
+    "num_cylinders": {
+     "value": 4,
+     "sources": [
+      {
+       "name": "GM Heritage Center 1984 Chevrolet Chevette information kit (MVMA spec pages)",
+       "url": "https://www.gm.com/content/dam/company/no_search/heritage-archive-docs/vehicle-information-kits/chevrolet/1984-Chevrolet-Chevette.pdf",
+       "says": "No. of cylinders 4; L-4"
+      },
+      {
+       "name": "Standard Catalog of American Cars 1976-1986 (Krause/Motorbooks); same text in Standard Catalog of Chevrolet 1912-2003 (counted once)",
+       "url": "https://books.google.com/books?id=xTM2Ixfev5QC",
+       "says": "Inline. Overhead cam. Four-cylinder."
+      },
+      {
+       "name": "Wikipedia: Chevrolet Chevette",
+       "url": "https://en.wikipedia.org/wiki/Chevrolet_Chevette",
+       "says": "1,817 cc (110.9 cu in) 4FB1 OHC diesel I4; 51 hp (38 kW); late-1981 availability"
+      },
+      {
+       "name": "EPA fueleconomy.gov vehicle data",
+       "url": "https://www.fueleconomy.gov/feg/download.shtml",
+       "says": "1.8 L 4-cyl"
+      }
+     ],
+     "note": ""
+    },
+    "configuration": {
+     "value": "inline-four",
+     "sources": [
+      {
+       "name": "GM Heritage Center 1984 Chevrolet Chevette information kit (MVMA spec pages)",
+       "url": "https://www.gm.com/content/dam/company/no_search/heritage-archive-docs/vehicle-information-kits/chevrolet/1984-Chevrolet-Chevette.pdf",
+       "says": "Type: OHC, In line, Front, Longitudinal"
+      },
+      {
+       "name": "Standard Catalog of American Cars 1976-1986 (Krause/Motorbooks); same text in Standard Catalog of Chevrolet 1912-2003 (counted once)",
+       "url": "https://books.google.com/books?id=xTM2Ixfev5QC",
+       "says": "Inline ... Four-cylinder"
+      },
+      {
+       "name": "Wikipedia: Chevrolet Chevette",
+       "url": "https://en.wikipedia.org/wiki/Chevrolet_Chevette",
+       "says": "1,817 cc (110.9 cu in) 4FB1 OHC diesel I4; 51 hp (38 kW); late-1981 availability"
+      },
+      {
+       "name": "The Autopian: 1982 Chevy Chevette Diesel vs 2013 Nissan Leaf",
+       "url": "https://www.theautopian.com/how-are-you-getting-by-without-gas-1982-chevy-chevette-diesel-vs-2013-nissan-leaf/",
+       "says": "1.8-liter OHC diesel inline 4"
+      }
+     ],
+     "note": ""
+    },
+    "valvetrain": {
+     "value": "SOHC",
+     "sources": [
+      {
+       "name": "GM Heritage Center 1984 Chevrolet Chevette information kit (MVMA spec pages)",
+       "url": "https://www.gm.com/content/dam/company/no_search/heritage-archive-docs/vehicle-information-kits/chevrolet/1984-Chevrolet-Chevette.pdf",
+       "says": "Type & description: OHC, In line; Camshaft location: in cylinder head; mechanical valve lash adjusters"
+      },
+      {
+       "name": "Standard Catalog of American Cars 1976-1986 (Krause/Motorbooks); same text in Standard Catalog of Chevrolet 1912-2003 (counted once)",
+       "url": "https://books.google.com/books?id=xTM2Ixfev5QC",
+       "says": "Overhead cam"
+      },
+      {
+       "name": "Wikipedia: List of Isuzu engines (4FB1)",
+       "url": "https://en.wikipedia.org/wiki/List_of_Isuzu_engines",
+       "says": "8 Valve SOHC"
+      },
+      {
+       "name": "Curbside Classic (P. Niedermeyer)",
+       "url": "https://www.curbsideclassic.com/curbside-classics-asian/curbside-classic-1982-isuzu-i-mark-diesel-still-clattering-away/",
+       "says": "the 1.8 overhead cam diesel was newly developed for the I-Mark ... it was also the Isuzu diesel that was available as an option in the Chevette"
+      }
+     ],
+     "note": "2 valves per cylinder (8 valves) stated only by Wikipedia."
+    },
+    "compression_ratio": {
+     "value": 22.0,
+     "sources": [
+      {
+       "name": "GM Heritage Center 1984 Chevrolet Chevette information kit (MVMA spec pages)",
+       "url": "https://www.gm.com/content/dam/company/no_search/heritage-archive-docs/vehicle-information-kits/chevrolet/1984-Chevrolet-Chevette.pdf",
+       "says": "Power Teams: L-4 1.8 Liter (111 CID) LJ5 F.I. Diesel, Compr Ratio 22.0:1"
+      },
+      {
+       "name": "Standard Catalog of American Cars 1976-1986 (Krause/Motorbooks); same text in Standard Catalog of Chevrolet 1912-2003 (counted once)",
+       "url": "https://books.google.com/books?id=xTM2Ixfev5QC",
+       "says": "Compression ratio: 22.0:1"
+      },
+      {
+       "name": "Chilton's Auto Repair Manual 1982 / 1983 (Chilton/Nichols), Google Books snippet",
+       "url": "https://books.google.com/books?id=_uq86pJjhR8C",
+       "says": "3.31 x 3.23 22.0:1"
+      },
+      {
+       "name": "Fix Your Chevrolet (Goodheart-Willcox, 1983), Google Books snippet",
+       "url": "https://books.google.com/books?id=sAvTBQZ5ij8C",
+       "says": "3.31x3.23 51 @ ... 22.0 Diesel"
+      }
+     ],
+     "note": ""
+    },
+    "induction": {
+     "value": "mechanical diesel fuel injection (Bosch VE-type pump), naturally aspirated",
+     "sources": [
+      {
+       "name": "GM Heritage Center 1984 Chevrolet Chevette information kit (MVMA spec pages)",
+       "url": "https://www.gm.com/content/dam/company/no_search/heritage-archive-docs/vehicle-information-kits/chevrolet/1984-Chevrolet-Chevette.pdf",
+       "says": "Fuel Injection (Diesel); fuel injection pump Diesel Kiki, Bosch VE; turbo manufacturer --"
+      },
+      {
+       "name": "Chilton's Auto Repair Manual 1982 / 1983 (Chilton/Nichols), Google Books snippet",
+       "url": "https://books.google.com/books?id=_uq86pJjhR8C",
+       "says": "Diesel Injection"
+      },
+      {
+       "name": "Curbside Classic (P. Niedermeyer)",
+       "url": "https://www.curbsideclassic.com/curbside-classics-american/curbside-classic-1981-chevrolet-chevette-diesel-christmas-in-june/",
+       "says": "The naturally-aspirated indirect-injection 1.9 L [sic] Isuzu four was rated at 51 hp"
+      }
+     ],
+     "note": "Indirect injection (Ricardo Comet V prechamber per GM kit) - see unverified."
+    },
+    "fuel_type": {
+     "value": "diesel",
+     "sources": [
+      {
+       "name": "GM Heritage Center 1984 Chevrolet Chevette information kit (MVMA spec pages)",
+       "url": "https://www.gm.com/content/dam/company/no_search/heritage-archive-docs/vehicle-information-kits/chevrolet/1984-Chevrolet-Chevette.pdf",
+       "says": "Recommended fuel: Diesel #2"
+      },
+      {
+       "name": "Standard Catalog of American Cars 1976-1986 (Krause/Motorbooks); same text in Standard Catalog of Chevrolet 1912-2003 (counted once)",
+       "url": "https://books.google.com/books?id=xTM2Ixfev5QC",
+       "says": "CHEVETTE DIESEL FOUR-CYL"
+      },
+      {
+       "name": "Wikipedia: Chevrolet Chevette",
+       "url": "https://en.wikipedia.org/wiki/Chevrolet_Chevette",
+       "says": "1,817 cc (110.9 cu in) 4FB1 OHC diesel I4; 51 hp (38 kW); late-1981 availability"
+      },
+      {
+       "name": "EPA fueleconomy.gov vehicle data",
+       "url": "https://www.fueleconomy.gov/feg/download.shtml",
+       "says": "Chevette 1.8 L (DIESEL)"
+      }
+     ],
+     "note": ""
+    },
+    "years": {
+     "value": "1981-1986 (Chevette; introduced late in the 1981 model year)",
+     "sources": [
+      {
+       "name": "GM Heritage Center Chevette information kits 1981-1986",
+       "url": "https://www.gm.com/content/dam/company/no_search/heritage-archive-docs/vehicle-information-kits/chevrolet/1981-Chevrolet-Chevette.pdf",
+       "says": "1981 MVMA pages revised 2-81 add 1.8 Liter L-4 fuel injection (diesel); LJ5 in Power Teams 1982-1986"
+      },
+      {
+       "name": "Wikipedia: Chevrolet Chevette",
+       "url": "https://en.wikipedia.org/wiki/Chevrolet_Chevette",
+       "says": "In August 1981, a diesel engine option was new with a late 1981 availability ... 324 diesel Chevettes sold in 1986 ... dropped the diesel for 1987"
+      },
+      {
+       "name": "Standard Catalog of American Cars 1976-1986 (Krause/Motorbooks); same text in Standard Catalog of Chevrolet 1912-2003 (counted once)",
+       "url": "https://books.google.com/books?id=xTM2Ixfev5QC",
+       "says": "diesel engine, supplied by Isuzu, became available in Chevettes ..."
+      },
+      {
+       "name": "EPA fueleconomy.gov vehicle data",
+       "url": "https://www.fueleconomy.gov/feg/download.shtml",
+       "says": "Chevette 1.8 L diesel rows 1984, 1985, 1986"
+      }
+     ],
+     "note": "Also Pontiac T1000/1000 (Wikipedia). Isuzu used the 4FB1 in the I-Mark/Gemini, 1979-87."
+    }
+   },
+   "variants": [
+    {
+     "year": "1981-1986",
+     "hp": 51,
+     "hp_basis": "SAE net",
+     "compression_ratio": 22.0,
+     "code": "LJ5",
+     "induction": "diesel fuel injection",
+     "sources": [
+      {
+       "name": "GM Heritage Center 1984 Chevrolet Chevette information kit (MVMA spec pages)",
+       "url": "https://www.gm.com/content/dam/company/no_search/heritage-archive-docs/vehicle-information-kits/chevrolet/1984-Chevrolet-Chevette.pdf",
+       "says": "38 kW (51) @ 5000; 98 N-m (72) @ 2000 (also 1982, 1983, 1985, 1986 kits)"
+      },
+      {
+       "name": "Wikipedia: Chevrolet Chevette",
+       "url": "https://en.wikipedia.org/wiki/Chevrolet_Chevette",
+       "says": "1,817 cc (110.9 cu in) 4FB1 OHC diesel I4; 51 hp (38 kW); late-1981 availability"
+      },
+      {
+       "name": "Standard Catalog of American Cars 1976-1986 (Krause/Motorbooks); same text in Standard Catalog of Chevrolet 1912-2003 (counted once)",
+       "url": "https://books.google.com/books?id=xTM2Ixfev5QC",
+       "says": "Brake horsepower: 51 at 5200 rpm"
+      },
+      {
+       "name": "Christian Science Monitor: Chevette diesel makes a perky bid to top its class (Dec 4 1981)",
+       "url": "https://www.csmonitor.com/1981/1204/120432.html",
+       "says": "1.8-liter diesel built by Isuzu ... 51 horsepower at 5,000 rpm"
+      },
+      {
+       "name": "The Truth About Cars: Junkyard Find 1984 Chevrolet Chevette CS Diesel",
+       "url": "https://www.thetruthaboutcars.com/2013/12/junkyard-find-1984-chevrolet-chevette-cs-diesel/",
+       "says": "the 51-horse Isuzu diesel"
+      }
+     ],
+     "note": "Peak rpm disagreement: GM kits and CSM say 5000 rpm; Standard Catalog says 5200 rpm. SAE abstract 820116 gives 38 kW/5000 rpm (Isuzu). Rating unchanged every year."
+    }
+   ],
+   "unverified": {
+    "block_material": "Cast iron per Standard Catalog of American Cars ('Cast iron block and head'). The GM 1984 MVMA page leaves the diesel column blank for block material. Only one source.",
+    "head_material": "Cast iron per Standard Catalog only. GM 1984 MVMA page shows '--' for the diesel's head material. Aluminum not found in any source. One source.",
+    "firing_order": "GM 1984 MVMA page prints 1-3-4-2 only in the gasoline L17 column, with the diesel column empty. No source states it for the 4FB1.",
+    "induction_detail": "Indirect injection / prechamber: GM kit ('Pre-chamber design: Ricardo Comet V') and Curbside Classic ('naturally-aspirated indirect-injection'). Only 2 sources.",
+    "valves_per_cylinder": "2 (8-valve SOHC) per Wikipedia only.",
+    "engine_name": "Isuzu code 4FB1 per Wikipedia (Chevette and List of Isuzu engines; counted once). Not C180/C223, which are other Isuzu engines. No second source names 4FB1 for the Chevette."
+   },
+   "unverified_variants": []
+  }
+ ]
+}

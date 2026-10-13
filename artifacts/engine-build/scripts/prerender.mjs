@@ -581,7 +581,7 @@ function engineEntry(e) {
       ${factoryCarsHtml(e.factoryCars, "Factory cars with this engine")}
       ${vehiclesHtml}
       ${e.relatedEngines?.length ? `<h2>Similar engines</h2>
-      <ul>${e.relatedEngines.map((r) => `<li><a href="${r.url}">${escapeHtml(r.manufacturerName + " " + r.displayName)}</a>${r.displacement_ci != null ? ` — ${r.displacement_ci} ci` : ""}</li>`).join("")}</ul>` : ""}
+      <ul>${e.relatedEngines.map((r) => `<li><a href="${r.url}">${escapeHtml(r.label)}</a>${r.displacement_ci != null ? ` — ${r.displacement_ci} ci` : ""}</li>`).join("")}</ul>` : ""}
       <p><a href="${e.familyUrl}">← All ${escapeHtml(e.familyName)} engines</a></p>`;
 
   return {

@@ -1,0 +1,245 @@
+{
+ "name": "GM Ecotec 2.5 L Gen III inline-four, RPO LKW (iVLC, start/stop)",
+ "fields": {
+  "displacement_l": {
+   "value": 2.5,
+   "sources": [
+    {
+     "name": "GM/Chevrolet media - 2014 Chevrolet Impala specifications (media.chevrolet.com, archived)",
+     "url": "https://web.archive.org/web/2016/http://media.chevrolet.com/media/us/en/chevrolet/vehicles/impala/2014.tab1.html",
+     "says": "Ecotec 2.5L DOHC I-4; Displacement (cu in / cc): 150 / 2457"
+    },
+    {
+     "name": "Wikipedia - GM Ecotec engine (Gen III 2.5 LCV/LKW)",
+     "url": "https://en.wikipedia.org/wiki/GM_Ecotec_engine",
+     "says": "Displacement for the 2.5 L engine is 2,457 cc"
+    },
+    {
+     "name": "EPA fueleconomy.gov vehicle data",
+     "url": "https://www.fueleconomy.gov/feg/download.shtml",
+     "says": "2014-2019 Impala 2.5 L 4-cyl SIDI"
+    },
+    {
+     "name": "Green Car Reports - 2014 Chevrolet Impala 2.5-liter four-cylinder quick drive",
+     "url": "https://www.greencarreports.com/news/1084370_2014-chevrolet-impala-2-5-liter-four-cylinder-quick-drive",
+     "says": "196-hp, 2.5-liter four-cylinder Ecotec engine"
+    },
+    {
+     "name": "Kelley Blue Book - 2017 Chevrolet Impala review/specs",
+     "url": "https://www.kbb.com/chevrolet/impala/2017/",
+     "says": "2.5-liter inline-4 197 horsepower @ 6,300 rpm"
+    }
+   ],
+   "note": ""
+  },
+  "num_cylinders": {
+   "value": 4,
+   "sources": [
+    {
+     "name": "GM/Chevrolet media - 2014 Chevrolet Impala specifications (media.chevrolet.com, archived)",
+     "url": "https://web.archive.org/web/2016/http://media.chevrolet.com/media/us/en/chevrolet/vehicles/impala/2014.tab1.html",
+     "says": "Ecotec 2.5L DOHC I-4"
+    },
+    {
+     "name": "Wikipedia - GM Ecotec engine (Gen III 2.5 LCV/LKW)",
+     "url": "https://en.wikipedia.org/wiki/GM_Ecotec_engine",
+     "says": "family of inline-four engines"
+    },
+    {
+     "name": "EPA fueleconomy.gov vehicle data",
+     "url": "https://www.fueleconomy.gov/feg/download.shtml",
+     "says": "2.5 L 4-cyl"
+    },
+    {
+     "name": "Green Car Reports - 2014 Chevrolet Impala 2.5-liter four-cylinder quick drive",
+     "url": "https://www.greencarreports.com/news/1084370_2014-chevrolet-impala-2-5-liter-four-cylinder-quick-drive",
+     "says": "2.5-liter four-cylinder"
+    }
+   ],
+   "note": ""
+  },
+  "configuration": {
+   "value": "inline-4",
+   "sources": [
+    {
+     "name": "GM/Chevrolet media - 2014 Chevrolet Impala specifications (media.chevrolet.com, archived)",
+     "url": "https://web.archive.org/web/2016/http://media.chevrolet.com/media/us/en/chevrolet/vehicles/impala/2014.tab1.html",
+     "says": "Ecotec 2.5L DOHC I-4"
+    },
+    {
+     "name": "Wikipedia - GM Ecotec engine (Gen III 2.5 LCV/LKW)",
+     "url": "https://en.wikipedia.org/wiki/GM_Ecotec_engine",
+     "says": "inline-four"
+    },
+    {
+     "name": "Kelley Blue Book - 2017 Chevrolet Impala review/specs",
+     "url": "https://www.kbb.com/chevrolet/impala/2017/",
+     "says": "2.5-liter inline-4"
+    },
+    {
+     "name": "AutoGuide - 2014 Chevrolet Impala 2.5L 4-Cyl Review (Luke Vandezande, 2013-06-12)",
+     "url": "https://www.autoguide.com/manufacturer/chevrolet/2014-chevrolet-impala-25l-4cyl-review-2667.html",
+     "says": "2.5L 4-cylinder"
+    }
+   ],
+   "note": ""
+  },
+  "valvetrain": {
+   "value": "DOHC, 4 valves/cyl (16-valve), intake variable valve lift (iVLC) + VVT",
+   "sources": [
+    {
+     "name": "GM/Chevrolet media - 2015/2016 Chevrolet Impala specifications (same GM source, archived)",
+     "url": "https://web.archive.org/web/2017/http://media.chevrolet.com/media/us/en/chevrolet/vehicles/impala/2015.tab1.html",
+     "says": "Valvetrain: DOHC iVLC, four valves per cylinder, continuously variable valve timing"
+    },
+    {
+     "name": "Wikipedia - GM Ecotec engine (Gen III 2.5 LCV/LKW)",
+     "url": "https://en.wikipedia.org/wiki/GM_Ecotec_engine",
+     "says": "dual overhead camshafts with continuously variable valve timing; LKW adds Intake Valve Lift Control two-stage variable valve lift"
+    },
+    {
+     "name": "Green Car Reports - 2014 Chevrolet Impala 2.5-liter four-cylinder quick drive",
+     "url": "https://www.greencarreports.com/news/1084370_2014-chevrolet-impala-2-5-liter-four-cylinder-quick-drive",
+     "says": "Not only does it have dual overhead cams and variable valve timing, but ... added variable lift to the intake valves"
+    }
+   ],
+   "note": "GCR confirms DOHC + intake variable lift; the 4-valves-per-cylinder count is GM (+ Wikipedia's general Ecotec description) only."
+  },
+  "induction": {
+   "value": "naturally aspirated; direct injection (SIDI)",
+   "sources": [
+    {
+     "name": "GM/Chevrolet media - 2014 Chevrolet Impala specifications (media.chevrolet.com, archived)",
+     "url": "https://web.archive.org/web/2016/http://media.chevrolet.com/media/us/en/chevrolet/vehicles/impala/2014.tab1.html",
+     "says": "Fuel delivery: high-pressure direct injection and electronic throttle control"
+    },
+    {
+     "name": "Wikipedia - GM Ecotec engine (Gen III 2.5 LCV/LKW)",
+     "url": "https://en.wikipedia.org/wiki/GM_Ecotec_engine",
+     "says": "high-pressure returnless direct-injection fuel system"
+    },
+    {
+     "name": "AutoGuide - 2014 Chevrolet Impala 2.5L 4-Cyl Review (Luke Vandezande, 2013-06-12)",
+     "url": "https://www.autoguide.com/manufacturer/chevrolet/2014-chevrolet-impala-25l-4cyl-review-2667.html",
+     "says": "direct injection plays a big role"
+    },
+    {
+     "name": "The Truth About Cars - Review: 2014 Chevrolet Impala (2013-08)",
+     "url": "https://www.thetruthaboutcars.com/2013/08/review-2014-chevrolet-impala-with-video/",
+     "says": "a 2.5L direct-injection four-cylinder engine"
+    },
+    {
+     "name": "EPA fueleconomy.gov vehicle data",
+     "url": "https://www.fueleconomy.gov/feg/download.shtml",
+     "says": "2.5 L 4-cyl SIDI"
+    }
+   ],
+   "note": ""
+  },
+  "years": {
+   "value": "2014-2019 (Chevrolet Impala); also 2014-2015 Chevrolet Malibu",
+   "sources": [
+    {
+     "name": "Chevrolet 2014 Impala US sales brochure (GM; local copy impm/broch/2014.txt)",
+     "url": "https://www.auto-brochures.com/makes/Chevrolet/Impala/Chevrolet_US%20Impala_2014.pdf",
+     "says": "ECOTEC 2.5L DOHC 4-cylinder with direct injection ... 196 hp"
+    },
+    {
+     "name": "Wikipedia - GM Ecotec engine (Gen III 2.5 LCV/LKW)",
+     "url": "https://en.wikipedia.org/wiki/GM_Ecotec_engine",
+     "says": "LKW: 2014-2019 Chevrolet Impala; 2014-2015 Chevrolet Malibu"
+    },
+    {
+     "name": "Kelley Blue Book - 2014 Chevrolet Impala review/specs",
+     "url": "https://www.kbb.com/chevrolet/impala/2014/",
+     "says": "The 2.5-liter 4-cylinder offers 196 horsepower"
+    },
+    {
+     "name": "Kelley Blue Book - 2019 Chevrolet Impala review/specs",
+     "url": "https://www.kbb.com/chevrolet/impala/2019/",
+     "says": "Horsepower 197 - 305 hp; 4-Cyl, ECOTEC, 2.5 Liter"
+    },
+    {
+     "name": "EPA fueleconomy.gov vehicle data",
+     "url": "https://www.fueleconomy.gov/feg/download.shtml",
+     "says": "Impala 2.5 L 4-cyl SIDI listed 2014-2019"
+    }
+   ],
+   "note": "Impala is the verified application; Malibu use per Wikipedia + GM Authority only. (The 2014-2016 'Impala Limited' W-body used other engines.)"
+  }
+ },
+ "variants": [
+  {
+   "year": "2014-2016",
+   "hp": 196,
+   "hp_basis": "SAE net (SAE certified) @ 6,300 rpm",
+   "compression_ratio": null,
+   "code": "LKW (Impala)",
+   "induction": "DI",
+   "sources": [
+    {
+     "name": "Chevrolet 2014 Impala US sales brochure (GM; local copy impm/broch/2014.txt)",
+     "url": "https://www.auto-brochures.com/makes/Chevrolet/Impala/Chevrolet_US%20Impala_2014.pdf",
+     "says": "2014/2015/2016 brochures: ECOTEC 2.5L DOHC ... 196 hp @ 6300 rpm, 186 lb.-ft. @ 4400"
+    },
+    {
+     "name": "GM/Chevrolet media - 2015/2016 Chevrolet Impala specifications (same GM source, archived)",
+     "url": "https://web.archive.org/web/2017/http://media.chevrolet.com/media/us/en/chevrolet/vehicles/impala/2015.tab1.html",
+     "says": "Horsepower: 196 / 146 @ 6300 (SAE certified) [2014, 2015, 2016 GM spec pages]"
+    },
+    {
+     "name": "Wikipedia - GM Ecotec engine (Gen III 2.5 LCV/LKW)",
+     "url": "https://en.wikipedia.org/wiki/GM_Ecotec_engine",
+     "says": "LKW 2014-2019 Chevrolet Impala 196-197 hp @ 6300 rpm"
+    },
+    {
+     "name": "Kelley Blue Book - 2015 Chevrolet Impala review/specs",
+     "url": "https://www.kbb.com/chevrolet/impala/2015/",
+     "says": "For 2015 ... a 2.5-liter that puts out an adequate 196 horsepower (KBB 2014 and 2016 pages likewise 196)"
+    },
+    {
+     "name": "Green Car Reports - 2014 Chevrolet Impala 2.5-liter four-cylinder quick drive",
+     "url": "https://www.greencarreports.com/news/1084370_2014-chevrolet-impala-2-5-liter-four-cylinder-quick-drive",
+     "says": "196-hp, 2.5-liter four-cylinder Ecotec [2014]"
+    }
+   ],
+   "note": "Brochure and GM media spec page are the same maker (one source)."
+  },
+  {
+   "year": "2017-2019",
+   "hp": 197,
+   "hp_basis": "SAE net @ 6,300 rpm",
+   "compression_ratio": null,
+   "code": "LKW (Impala, stop/start)",
+   "induction": "DI",
+   "sources": [
+    {
+     "name": "Chevrolet 2017 Impala US sales brochure (GM; local copy impm/broch/2017.txt)",
+     "url": "https://www.auto-brochures.com/makes/Chevrolet/Impala/Chevrolet_US%20Impala_2017.pdf",
+     "says": "2017/2018/2019 brochures: ECOTEC 2.5L DOHC ... 197 hp @ 6300 rpm, 191 lb.-ft. @ 4400"
+    },
+    {
+     "name": "Wikipedia - GM Ecotec engine (Gen III 2.5 LCV/LKW)",
+     "url": "https://en.wikipedia.org/wiki/GM_Ecotec_engine",
+     "says": "196-197 hp @ 6300 rpm"
+    },
+    {
+     "name": "Kelley Blue Book - 2017 Chevrolet Impala review/specs",
+     "url": "https://www.kbb.com/chevrolet/impala/2017/",
+     "says": "2.5-liter inline-4 197 horsepower @ 6,300 rpm, 191 lb-ft @ 4,400 (KBB 2018 and 2019: 197 - 305 hp)"
+    }
+   ]
+  }
+ ],
+ "unverified": {
+  "bore_in": "3.4646 in (88 mm) - GM Impala spec sheet '3.46 x 3.97 / 88 x 101'; Wikipedia '88.0 mm'; GM Authority reprints the GM Powertrain sheet '88.00 x 101.00mm' (same GM source). No third independent source found.",
+  "stroke_in": "3.9764 in (101 mm, GM) - GM '3.97 in / 101 mm'; Wikipedia '100.8 mm' (3.9685 in). Only GM + Wikipedia; small 101 vs 100.8 mm discrepancy.",
+  "displacement_ci": "150 ci (2,457 cc) - GM '150 / 2457'; Wikipedia '2,457 cc' (= 149.9 ci). NOTE the id's 152 is nominal 2.5 L x 61.02; actual is 150. Only GM + Wikipedia (EPA gives 2.5 L only).",
+  "compression_ratio": "GM Impala spec sheets (2014, 2015, 2016): 11.25:1. Wikipedia and the GM Powertrain sheet (via GM Authority): 11.3:1 (rounded). Only 2 independent sources (GM, Wikipedia); they agree within rounding.",
+  "firing_order": "1-3-4-2 - only in the GM Powertrain spec sheet as reprinted by GM Authority. Not found anywhere else.",
+  "block_material": "Aluminum - GM spec sheet 'cast aluminum' (2014) / 'lost foam cast aluminum' (2015-16); GM Powertrain text (via GM Authority) 'cast aluminum cylinder block with cast-in iron liners'. Wikipedia mentions only the aluminium bedplate. Only GM confirms.",
+  "head_material": "Aluminum - GM spec sheet 'cast aluminum'; GM Powertrain text (via GM Authority) '356T6 aluminum cylinder head'. Only GM.",
+  "fuel_type": "Regular unleaded gasoline (E85-capable per GM Powertrain sheet 'E0-E100' via GM Authority) - GM spec 'Recommended fuel: regular unleaded'; Wikipedia 'Gasoline'. Only 2 sources (EPA excluded for fuel)."
+ },
+ "unverified_variants": []
+}

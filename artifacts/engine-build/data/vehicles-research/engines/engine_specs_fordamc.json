@@ -1,0 +1,3970 @@
+{
+ "job": "fordamc",
+ "generated": "2026-10-12",
+ "engines": [
+  {
+   "id": "ford-223-mileage-maker",
+   "name": "Ford 223 \"Mileage Maker\" (I-Block) inline-six",
+   "fields": {
+    "bore_in": {
+     "value": 3.625,
+     "sources": [
+      {
+       "name": "Over-Drive Magazine 1957 Ford cars fact sheet",
+       "url": "https://over-drive-magazine.com/2025/06/01/1957-ford-cars-fact-sheet/",
+       "says": "Bore and stroke: 3.62 x 3.60 inches"
+      },
+      {
+       "name": "The Classic Ford - 1957 Ford Engines (archived)",
+       "url": "https://web.archive.org/web/2017/http://www.theclassicford.com/1957_ford_engines.htm",
+       "says": "Bore: 3.62 Stroke: 3.60 inches"
+      },
+      {
+       "name": "Galaxie Club of America, 1959 specifications page",
+       "url": "https://www.galaxieclub.com/1959Specs.html",
+       "says": "6 cyl. OHV 223 Cu. In. 3 5/8 x 3 19/32"
+      },
+      {
+       "name": "Wikipedia - Ford straight-six engine",
+       "url": "https://en.wikipedia.org/wiki/Ford_straight-six_engine",
+       "says": "bore 3.625 in (92 mm) (223)"
+      }
+     ],
+     "note": "3-5/8 in. Over-Drive and The Classic Ford round to 3.62."
+    },
+    "stroke_in": {
+     "value": 3.6,
+     "sources": [
+      {
+       "name": "Over-Drive Magazine 1957 Ford cars fact sheet",
+       "url": "https://over-drive-magazine.com/2025/06/01/1957-ford-cars-fact-sheet/",
+       "says": "Bore and stroke: 3.62 x 3.60 inches"
+      },
+      {
+       "name": "The Classic Ford - 1957 Ford Engines (archived)",
+       "url": "https://web.archive.org/web/2017/http://www.theclassicford.com/1957_ford_engines.htm",
+       "says": "Stroke: 3.60 inches"
+      },
+      {
+       "name": "Galaxie Club of America, 1962 specifications page",
+       "url": "https://www.galaxieclub.com/1962Specs.html",
+       "says": "223 Cu. In. 3.62 x 3.60"
+      },
+      {
+       "name": "Wikipedia - Ford straight-six engine",
+       "url": "https://en.wikipedia.org/wiki/Ford_straight-six_engine",
+       "says": "stroke 3.6 in (91 mm) (215 and 223)"
+      }
+     ],
+     "note": "Galaxie Club's 1959-60 pages print the stroke as 3-19/32 (3.594); its 1962 page prints 3.60."
+    },
+    "displacement_ci": {
+     "value": 223,
+     "sources": [
+      {
+       "name": "Over-Drive Magazine 1957 Ford cars fact sheet",
+       "url": "https://over-drive-magazine.com/2025/06/01/1957-ford-cars-fact-sheet/",
+       "says": "Displacement: 223 cubic inches"
+      },
+      {
+       "name": "The Classic Ford - 1957 Ford Engines (archived)",
+       "url": "https://web.archive.org/web/2017/http://www.theclassicford.com/1957_ford_engines.htm",
+       "says": "223 cubic inch displacement"
+      },
+      {
+       "name": "Galaxie Club of America, 1960 specifications page",
+       "url": "https://www.galaxieclub.com/1960Specs.html",
+       "says": "6 cyl. OHV 223 Cu. In."
+      },
+      {
+       "name": "Wikipedia - Ford straight-six engine",
+       "url": "https://en.wikipedia.org/wiki/Ford_straight-six_engine",
+       "says": "223 cu in (3,653 cc)"
+      }
+     ],
+     "note": ""
+    },
+    "displacement_l": {
+     "value": 3.7,
+     "sources": [
+      {
+       "name": "Wikipedia - Ford straight-six engine",
+       "url": "https://en.wikipedia.org/wiki/Ford_straight-six_engine",
+       "says": "223 cu in (3,653 cc)"
+      },
+      {
+       "name": "Over-Drive Magazine 1957 Ford cars fact sheet",
+       "url": "https://over-drive-magazine.com/2025/06/01/1957-ford-cars-fact-sheet/",
+       "says": "223 cubic inches (converted)"
+      },
+      {
+       "name": "The Classic Ford - 1957 Ford Engines (archived)",
+       "url": "https://web.archive.org/web/2017/http://www.theclassicford.com/1957_ford_engines.htm",
+       "says": "223 cubic inch (converted)"
+      }
+     ],
+     "note": "223 ci = 3,654 cc (3.65 L). Converted from the ci figure."
+    },
+    "num_cylinders": {
+     "value": 6,
+     "sources": [
+      {
+       "name": "Over-Drive Magazine 1957 Ford cars fact sheet",
+       "url": "https://over-drive-magazine.com/2025/06/01/1957-ford-cars-fact-sheet/",
+       "says": "223 CID I-6"
+      },
+      {
+       "name": "Galaxie Club of America, 1960 specifications page",
+       "url": "https://www.galaxieclub.com/1960Specs.html",
+       "says": "6 cyl. OHV 223"
+      },
+      {
+       "name": "Wikipedia - Ford straight-six engine",
+       "url": "https://en.wikipedia.org/wiki/Ford_straight-six_engine",
+       "says": "straight-six"
+      }
+     ],
+     "note": ""
+    },
+    "configuration": {
+     "value": "inline-six",
+     "sources": [
+      {
+       "name": "Over-Drive Magazine 1957 Ford cars fact sheet",
+       "url": "https://over-drive-magazine.com/2025/06/01/1957-ford-cars-fact-sheet/",
+       "says": "223 CID I-6"
+      },
+      {
+       "name": "Wikipedia - Ford straight-six engine",
+       "url": "https://en.wikipedia.org/wiki/Ford_straight-six_engine",
+       "says": "Ford straight-six engine, second generation (Mileage Maker / I-Block)"
+      },
+      {
+       "name": "Mac's Motor City Garage - Video: Selling the 1954 Ford I-Block Six",
+       "url": "https://macsmotorcitygarage.com/video-selling-the-1954-ford-i-block-six/",
+       "says": "Displacement was increased from 215.3 to 223 cubic inches for '54 ... 115 hp ... remained in the Ford lineup through 1964, often marketed as the 'Mileage Maker.'"
+      },
+      {
+       "name": "Galaxie Club of America, 1960 specifications page",
+       "url": "https://www.galaxieclub.com/1960Specs.html",
+       "says": "6 cyl. OHV 223 Cu. In."
+      }
+     ],
+     "note": ""
+    },
+    "valvetrain": {
+     "value": "OHV, 2 valves per cylinder, mechanical lifters",
+     "sources": [
+      {
+       "name": "Over-Drive Magazine 1957 Ford cars fact sheet",
+       "url": "https://over-drive-magazine.com/2025/06/01/1957-ford-cars-fact-sheet/",
+       "says": "Overhead valves ... Valve Lifters: Mechanical"
+      },
+      {
+       "name": "The Classic Ford - 1957 Ford Engines (archived)",
+       "url": "https://web.archive.org/web/2017/http://www.theclassicford.com/1957_ford_engines.htm",
+       "says": "Cast-iron, Overhead valve design"
+      },
+      {
+       "name": "Galaxie Club of America, 1960 specifications page",
+       "url": "https://www.galaxieclub.com/1960Specs.html",
+       "says": "6 cyl. OHV 223 ... Type of Valve Lifter: Mech.Adj."
+      },
+      {
+       "name": "Wikipedia - Ford straight-six engine",
+       "url": "https://en.wikipedia.org/wiki/Ford_straight-six_engine",
+       "says": "OHV; shared the entire valve train with the Y-block"
+      }
+     ],
+     "note": "2 valves/cyl is implicit in every source's conventional OHV description; none states a count."
+    },
+    "block_material": {
+     "value": "cast iron",
+     "sources": [
+      {
+       "name": "Over-Drive Magazine 1957 Ford cars fact sheet",
+       "url": "https://over-drive-magazine.com/2025/06/01/1957-ford-cars-fact-sheet/",
+       "says": "Overhead valves. Cast iron block. Four main bearings."
+      },
+      {
+       "name": "The Classic Ford - 1957 Ford Engines (archived)",
+       "url": "https://web.archive.org/web/2017/http://www.theclassicford.com/1957_ford_engines.htm",
+       "says": "Cast-iron, Overhead valve design ... 4 Main bearings"
+      },
+      {
+       "name": "Wikipedia - Ford straight-six engine",
+       "url": "https://en.wikipedia.org/wiki/Ford_straight-six_engine",
+       "says": "cylinder block material: cast iron"
+      }
+     ],
+     "note": ""
+    },
+    "induction": {
+     "value": "carburetor, single 1-bbl (Holley; Autolite 1100 on late trucks)",
+     "sources": [
+      {
+       "name": "Over-Drive Magazine 1957 Ford cars fact sheet",
+       "url": "https://over-drive-magazine.com/2025/06/01/1957-ford-cars-fact-sheet/",
+       "says": "Carburetor: Holley single-barrel 1904"
+      },
+      {
+       "name": "The Classic Ford - 1957 Ford Engines (archived)",
+       "url": "https://web.archive.org/web/2017/http://www.theclassicford.com/1957_ford_engines.htm",
+       "says": "Holly single barrel carburetor"
+      },
+      {
+       "name": "conceptcarz - 1959 Ford Galaxie specifications",
+       "url": "https://www.conceptcarz.com/s8891/ford-galaxie.aspx",
+       "says": "223 inline 6, 145 bhp, Holley 1-bbl"
+      },
+      {
+       "name": "Wikipedia - Ford straight-six engine",
+       "url": "https://en.wikipedia.org/wiki/Ford_straight-six_engine",
+       "says": "1963-1964 trucks used the Autolite 1100 carburetor"
+      }
+     ],
+     "note": ""
+    },
+    "years": {
+     "value": "1954-1964",
+     "sources": [
+      {
+       "name": "Mac's Motor City Garage - Video: Selling the 1954 Ford I-Block Six",
+       "url": "https://macsmotorcitygarage.com/video-selling-the-1954-ford-i-block-six/",
+       "says": "Displacement was increased from 215.3 to 223 cubic inches for '54 ... 115 hp ... remained in the Ford lineup through 1964, often marketed as the 'Mileage Maker.'"
+      },
+      {
+       "name": "Over-Drive Magazine 1954 Ford cars fact sheet",
+       "url": "https://over-drive-magazine.com/2025/10/06/1954-ford-cars-fact-sheet/",
+       "says": "115 HP 223 CID I-6 (first year)"
+      },
+      {
+       "name": "Over-Drive Magazine 1964 Ford cars fact sheet",
+       "url": "https://over-drive-magazine.com/2023/12/19/1964-ford-full-size-cars-fact-sheet/",
+       "says": "223 CID I-6. Engine Code 'V' ... 138 @ 4200"
+      },
+      {
+       "name": "Wikipedia - Ford straight-six engine",
+       "url": "https://en.wikipedia.org/wiki/Ford_straight-six_engine",
+       "says": "The 215 grew to 223 cu in for the 1954 F-Series ... second generation produced 1952 through 1964"
+      }
+     ],
+     "note": "Cars and F-Series trucks. Fairlane until 1961 (per Wikipedia), full-size Ford/Galaxie through 1964."
+    }
+   },
+   "variants": [
+    {
+     "year": 1955,
+     "hp": 120,
+     "hp_basis": "gross",
+     "compression_ratio": 7.5,
+     "code": "A-code",
+     "induction": "1-bbl",
+     "sources": [
+      {
+       "name": "Ford 1955 Full Line Prestige brochure + 1955 Ford foldout, spec pages",
+       "url": "https://oldcarbrochures.org/United%20States/Ford/1955_Ford/1955-Ford-Full-Line-Prestige-Brochure/index.html",
+       "says": "I-Block Six engine: 223 cu. in. (no hp printed)"
+      },
+      {
+       "name": "Over-Drive Magazine 1955 Ford cars fact sheet",
+       "url": "https://over-drive-magazine.com/2025/08/25/1955-ford-cars-fact-sheet/",
+       "says": "223 I-6 120 hp, code A"
+      },
+      {
+       "name": "The Classic Ford - 1955 Ford Engines (archived)",
+       "url": "https://web.archive.org/web/2017/http://www.theclassicford.com/1955_ford_engines.htm",
+       "says": "Base 6 cyl, code A, 223 cid, 120 bhp @ 4000"
+      },
+      {
+       "name": "Wikipedia - Ford straight-six engine",
+       "url": "https://en.wikipedia.org/wiki/Ford_straight-six_engine",
+       "says": "223 Mileage Maker six offered in 1955 Fairlane; 120 hp in 1954-55 cars"
+      }
+     ],
+     "note": ""
+    },
+    {
+     "year": 1956,
+     "hp": 137,
+     "hp_basis": "gross",
+     "compression_ratio": 8.0,
+     "code": "A-code",
+     "induction": "1-bbl",
+     "sources": [
+      {
+       "name": "Ford 1956 brochure (spec page) + revised 1956 brochure",
+       "url": "https://oldcarbrochures.org/United%20States/Ford/1956%20Ford/1956-Ford-Brochure/index.html",
+       "says": "Ford I-6 (all models, all transmissions) 137 hp, 223 cu. in."
+      },
+      {
+       "name": "Over-Drive Magazine 1956 Ford cars fact sheet",
+       "url": "https://over-drive-magazine.com/2022/09/20/1956-ford-cars-fact-sheet/",
+       "says": "223 I-6 137 hp"
+      },
+      {
+       "name": "The Classic Ford - 1956 Ford Engines (archived)",
+       "url": "https://web.archive.org/web/2017/http://www.theclassicford.com/1956_ford_engines.htm",
+       "says": "code A, 223 cid, 137 bhp"
+      }
+     ],
+     "note": ""
+    },
+    {
+     "year": 1957,
+     "hp": 144,
+     "hp_basis": "gross",
+     "compression_ratio": 8.6,
+     "code": "A-code",
+     "induction": "1-bbl",
+     "sources": [
+      {
+       "name": "Ford 1957 Fairlane brochure (10-56) + 1957 lineup foldout (04-57)",
+       "url": "https://oldcarbrochures.org/United%20States/Ford/1957_Ford/1957-Ford-Fairlane-Brochure%201956-10/index.html",
+       "says": "144-hp Mileage Maker Six, 223 cu. in."
+      },
+      {
+       "name": "Over-Drive Magazine 1957 Ford cars fact sheet",
+       "url": "https://over-drive-magazine.com/2025/06/01/1957-ford-cars-fact-sheet/",
+       "says": "223 I-6 144 hp, code A"
+      },
+      {
+       "name": "The Classic Ford - 1957 Ford Engines (archived)",
+       "url": "https://web.archive.org/web/2017/http://www.theclassicford.com/1957_ford_engines.htm",
+       "says": "code A, 223 cid, 144 bhp"
+      },
+      {
+       "name": "Wikipedia - Ford Fairlane (Americas)",
+       "url": "https://en.wikipedia.org/wiki/Ford_Fairlane_(Americas)",
+       "says": "223 Mileage Maker I6 listed for 1957-59 Fairlane"
+      }
+     ],
+     "note": ""
+    },
+    {
+     "year": 1958,
+     "hp": 145,
+     "hp_basis": "gross",
+     "compression_ratio": 8.6,
+     "code": "A-code",
+     "induction": "1-bbl",
+     "sources": [
+      {
+       "name": "Ford 1958 full line foldout (4-58), spec panel",
+       "url": "https://oldcarbrochures.org/United%20States/Ford/1958_Ford/1958%20Ford%20Full%20Line%20Foldout%20%284-58%29/index.html",
+       "says": "145-hp Mileage Maker Six 223 cu. in. (all models except Skyliner)"
+      },
+      {
+       "name": "Over-Drive Magazine 1958 Ford cars fact sheet",
+       "url": "https://over-drive-magazine.com/2025/09/17/1958-ford-cars-fact-sheet/",
+       "says": "223 I-6 145 hp, code A"
+      },
+      {
+       "name": "The Classic Ford - 1958 Ford Engines (archived)",
+       "url": "https://web.archive.org/web/2017/http://www.theclassicford.com/1958_ford_engines.htm",
+       "says": "code A, 223 cid, 145 bhp"
+      },
+      {
+       "name": "Wikipedia - Ford Fairlane (Americas)",
+       "url": "https://en.wikipedia.org/wiki/Ford_Fairlane_(Americas)",
+       "says": "223 Mileage Maker I6 listed for 1957-59 Fairlane"
+      }
+     ],
+     "note": ""
+    },
+    {
+     "year": 1959,
+     "hp": 145,
+     "hp_basis": "gross",
+     "compression_ratio": 8.4,
+     "code": "A-code",
+     "induction": "1-bbl",
+     "sources": [
+      {
+       "name": "Ford 1959 full line brochure (09-58), spec panel",
+       "url": "https://oldcarbrochures.org/United%20States/Ford/1959_Ford/1959-Ford-Full-Line-09-58/index.html",
+       "says": "145-hp Mileage Maker Six 223 cu. in. (all models except Skyliner)"
+      },
+      {
+       "name": "Over-Drive Magazine 1959 Ford cars fact sheet",
+       "url": "https://over-drive-magazine.com/2025/10/09/1959-ford-cars-fact-sheet/",
+       "says": "223 I-6 145 hp, code A"
+      },
+      {
+       "name": "The Classic Ford - 1959 Ford Engines (archived)",
+       "url": "https://web.archive.org/web/2017/http://www.theclassicford.com/1959_ford_engines.htm",
+       "says": "code A, 223 cid, 145 bhp"
+      },
+      {
+       "name": "Wikipedia - Ford Fairlane (Americas)",
+       "url": "https://en.wikipedia.org/wiki/Ford_Fairlane_(Americas)",
+       "says": "223 Mileage Maker I6 listed for 1957-59 Fairlane"
+      },
+      {
+       "name": "Ford 1959 full-line brochure (Oct 1958), engine specifications page",
+       "url": "https://oldcarbrochures.org/United%20States/Ford/1959_Ford/1959-Ford-Full-Line-10-59/index.html",
+       "says": "145-hp Mileage Maker Six, 223 cu. in."
+      },
+      {
+       "name": "Galaxie Club of America, 1959 specifications page",
+       "url": "https://www.galaxieclub.com/1959Specs.html",
+       "says": "6-cyl OHV 223, 145@4200"
+      },
+      {
+       "name": "conceptcarz - 1959 Ford Galaxie specifications",
+       "url": "https://www.conceptcarz.com/s8891/ford-galaxie.aspx",
+       "says": "223 inline 6, 145 bhp, Holley 1-bbl"
+      }
+     ],
+     "note": "CR: Galaxie Club 8.4:1; The Classic Ford prints 8.6:1."
+    },
+    {
+     "year": 1960,
+     "hp": 145,
+     "hp_basis": "gross",
+     "compression_ratio": 8.4,
+     "code": "V-code",
+     "induction": "1-bbl",
+     "sources": [
+      {
+       "name": "Ford 1960 brochure + 1960 full line foldout (Rev), spec panels",
+       "url": "https://oldcarbrochures.org/United%20States/Ford/1960_Ford/1960-Ford-Full-Line-Foldout/index.html",
+       "says": "145-hp Mileage Maker Six, 223 cu. in."
+      },
+      {
+       "name": "Over-Drive Magazine 1960 Ford cars fact sheet",
+       "url": "https://over-drive-magazine.com/2025/06/30/1960-ford-full-size-cars-fact-sheet/",
+       "says": "223 I-6 145 hp, code V"
+      },
+      {
+       "name": "The Classic Ford - 1960 Ford Engines (archived)",
+       "url": "https://web.archive.org/web/2017/http://www.theclassicford.com/1960_ford_engines.htm",
+       "says": "code V, 223 cid, 145 bhp"
+      },
+      {
+       "name": "Wikipedia - Ford Fairlane (Americas)",
+       "url": "https://en.wikipedia.org/wiki/Ford_Fairlane_(Americas)",
+       "says": "223 listed for 1960-61 Fairlane"
+      },
+      {
+       "name": "Ford 1960 brochure, specifications page",
+       "url": "https://oldcarbrochures.org/United%20States/Ford/1960_Ford/1960_Ford_Brochure/index.html",
+       "says": "145-hp Mileage Maker Six, 223 cu. in."
+      },
+      {
+       "name": "Galaxie Club of America, 1960 specifications page",
+       "url": "https://www.galaxieclub.com/1960Specs.html",
+       "says": "6-cyl OHV 223, 145@4000"
+      }
+     ],
+     "note": ""
+    },
+    {
+     "year": 1961,
+     "hp": 135,
+     "hp_basis": "gross",
+     "compression_ratio": 8.4,
+     "code": "V-code",
+     "induction": "1-bbl",
+     "sources": [
+      {
+       "name": "Ford 1961 Prestige brochure, '1961 Ford Specifications' page (Litho 8-60)",
+       "url": "https://oldcarbrochures.org/United%20States/Ford/1961_Ford/1961_Fords_Prestige_Brochure/index.html",
+       "says": "135-hp Mileage Maker Six (standard on all models), 223 cu. in."
+      },
+      {
+       "name": "Over-Drive Magazine 1961 Ford cars fact sheet",
+       "url": "https://over-drive-magazine.com/2025/08/10/1961-ford-full-size-cars-fact-sheet/",
+       "says": "223 I-6 135 hp, code V (tab header says 138)"
+      },
+      {
+       "name": "The Classic Ford - 1961 Ford Engines (archived)",
+       "url": "https://web.archive.org/web/2017/http://www.theclassicford.com/1961_ford_engines.htm",
+       "says": "code V, 223 cid, 135 bhp"
+      },
+      {
+       "name": "Galaxie Club of America, 1961 specifications page",
+       "url": "https://www.galaxieclub.com/1961Specs.html",
+       "says": "223 6-cyl, 135@4000"
+      }
+     ],
+     "note": "The Classic Ford prints 6.4:1 (typo); Galaxie Club 1962 page 8.4:1."
+    },
+    {
+     "year": 1962,
+     "hp": 138,
+     "hp_basis": "gross",
+     "compression_ratio": 8.4,
+     "code": "V-code",
+     "induction": "1-bbl",
+     "sources": [
+      {
+       "name": "Ford 1962 full-size prestige brochure (revised), specifications and engine pages",
+       "url": "https://oldcarbrochures.org/United%20States/Ford/1962_Ford/1962-Ford-Full-Size-Prestige-Brochure-Rev/index.html",
+       "says": "138-hp Mileage Maker Six"
+      },
+      {
+       "name": "Over-Drive Magazine, 1962 Ford Full Size Cars Fact Sheet",
+       "url": "https://over-drive-magazine.com/2023/10/09/1962-ford-full-size-cars-fact-sheet/",
+       "says": "223 I-6, 138 hp, Code V"
+      },
+      {
+       "name": "Wikipedia - Ford Galaxie",
+       "url": "https://en.wikipedia.org/wiki/Ford_Galaxie",
+       "says": "1962: the 223 Mileage Maker six was the base engine"
+      }
+     ],
+     "note": ""
+    },
+    {
+     "year": 1963,
+     "hp": 138,
+     "hp_basis": "gross",
+     "compression_ratio": null,
+     "code": "V-code",
+     "induction": "1-bbl",
+     "sources": [
+      {
+       "name": "Ford 1963 full-size brochure (original), Galaxie power-team chart",
+       "url": "https://oldcarbrochures.org/United%20States/Ford/1963_Ford/1963-Ford-Full-Size-Brochure/index.html",
+       "says": "Galaxie power teams: Mileage Maker Six 223, 138 hp"
+      },
+      {
+       "name": "Over-Drive Magazine, 1963 Ford Full Size Cars Fact Sheet",
+       "url": "https://over-drive-magazine.com/2023/10/27/1963-ford-full-size-cars-fact-sheet/",
+       "says": "223 I-6, 138 hp"
+      },
+      {
+       "name": "Galaxie Club of America, 1963 specifications page",
+       "url": "https://www.galaxieclub.com/1963Specs.html",
+       "says": "223 6-cyl 138@4200"
+      }
+     ],
+     "note": ""
+    },
+    {
+     "year": 1964,
+     "hp": 138,
+     "hp_basis": "gross",
+     "compression_ratio": null,
+     "code": "V-code",
+     "induction": "1-bbl",
+     "sources": [
+      {
+       "name": "Ford 1964 full-size brochure, \"14 Total Performance Power Teams\" chart p.20",
+       "url": "https://oldcarbrochures.org/United%20States/Ford/1964_Ford/1964-Ford-Full-Size-brochure/index.html",
+       "says": "Power-team chart: Mileage Maker Six 223, 138 @ 4200"
+      },
+      {
+       "name": "Over-Drive Magazine, 1964 Ford Full Size Cars Fact Sheet",
+       "url": "https://over-drive-magazine.com/2023/12/19/1964-ford-full-size-cars-fact-sheet/",
+       "says": "223 I-6, Code V, 138 hp"
+      },
+      {
+       "name": "Wikipedia - Ford straight-six engine",
+       "url": "https://en.wikipedia.org/wiki/Ford_straight-six_engine",
+       "says": "223 was the only inline-six in the Galaxie through 1964"
+      }
+     ],
+     "note": ""
+    }
+   ],
+   "unverified": {
+    "head_material": "Cast iron: Wikipedia (infobox) and The Classic Ford ('Cast-iron, Overhead valve design', engine-level). Only 2; Over-Drive names only the block.",
+    "rod_length_in": "Not found in any acceptable source.",
+    "firing_order": "1-5-3-6-2-4 appears only on itstillruns.com (content farm) and forums. Not counted.",
+    "fuel_type": "Gasoline (carbureted). Uncontested but no checked source states it explicitly.",
+    "compression_ratio": "Varies by year (7.2:1 in 1954 to 8.6:1 in 1957-58, 8.4:1 from 1959); see variants."
+   },
+   "unverified_variants": [
+    {
+     "year": 1954,
+     "hp": 115,
+     "hp_basis": "gross",
+     "compression_ratio": 7.2,
+     "code": "",
+     "induction": "1-bbl",
+     "sources": [
+      {
+       "name": "Over-Drive Magazine 1954 Ford cars fact sheet",
+       "url": "https://over-drive-magazine.com/2025/10/06/1954-ford-cars-fact-sheet/",
+       "says": "115 HP 223 CID I-6, 7.2:1, 115 @ 3900"
+      },
+      {
+       "name": "Mac's Motor City Garage - Video: Selling the 1954 Ford I-Block Six",
+       "url": "https://macsmotorcitygarage.com/video-selling-the-1954-ford-i-block-six/",
+       "says": "Displacement was increased from 215.3 to 223 cubic inches for '54 ... 115 hp ... remained in the Ford lineup through 1964, often marketed as the 'Mileage Maker.'"
+      }
+     ],
+     "note": "Wikipedia says 115 hp in trucks but 120 hp in 1954 cars; Over-Drive and Mac's say 115. Outside the vehicle-page range; not settled."
+    }
+   ]
+  },
+  {
+   "id": "ford-272-y-block",
+   "name": "Ford 272 Y-block V8",
+   "fields": {
+    "bore_in": {
+     "value": 3.625,
+     "sources": [
+      {
+       "name": "Over-Drive Magazine 1955 Ford cars fact sheet",
+       "url": "https://over-drive-magazine.com/2025/08/25/1955-ford-cars-fact-sheet/",
+       "says": "Bore and stroke: 3.62 x 3.30 inches"
+      },
+      {
+       "name": "The Classic Ford - 1955 Ford Engines (archived)",
+       "url": "https://web.archive.org/web/2017/http://www.theclassicford.com/1955_ford_engines.htm",
+       "says": "Bore: 3.62 Stroke: 3.30 inches"
+      },
+      {
+       "name": "Wikipedia - Ford Y-block engine",
+       "url": "https://en.wikipedia.org/wiki/Ford_Y-block_engine",
+       "says": "longer stroke (3.625 x 3.3 in)"
+      },
+      {
+       "name": "Ford Performance (fordracing.com) - Ford Y-Blocks (Ford's own history article)",
+       "url": "https://www.fordracing.com/articles/enthusiasts/newsroom/2024/12/ford-y-blocks",
+       "says": "272: 3.625 x 3.30 inches"
+      }
+     ],
+     "note": "3-5/8 in."
+    },
+    "stroke_in": {
+     "value": 3.3,
+     "sources": [
+      {
+       "name": "Over-Drive Magazine 1955 Ford cars fact sheet",
+       "url": "https://over-drive-magazine.com/2025/08/25/1955-ford-cars-fact-sheet/",
+       "says": "Bore and stroke: 3.62 x 3.30 inches"
+      },
+      {
+       "name": "The Classic Ford - 1955 Ford Engines (archived)",
+       "url": "https://web.archive.org/web/2017/http://www.theclassicford.com/1955_ford_engines.htm",
+       "says": "Stroke: 3.30 inches"
+      },
+      {
+       "name": "Wikipedia - Ford Y-block engine",
+       "url": "https://en.wikipedia.org/wiki/Ford_Y-block_engine",
+       "says": "3.625 x 3.3 in"
+      },
+      {
+       "name": "Ford Performance (fordracing.com) - Ford Y-Blocks (Ford's own history article)",
+       "url": "https://www.fordracing.com/articles/enthusiasts/newsroom/2024/12/ford-y-blocks",
+       "says": "272: 3.625 x 3.30 inches"
+      }
+     ],
+     "note": ""
+    },
+    "displacement_ci": {
+     "value": 272,
+     "sources": [
+      {
+       "name": "Over-Drive Magazine 1955 Ford cars fact sheet",
+       "url": "https://over-drive-magazine.com/2025/08/25/1955-ford-cars-fact-sheet/",
+       "says": "272 CID V-8"
+      },
+      {
+       "name": "The Classic Ford - 1955 Ford Engines (archived)",
+       "url": "https://web.archive.org/web/2017/http://www.theclassicford.com/1955_ford_engines.htm",
+       "says": "272 cubic inch displacement"
+      },
+      {
+       "name": "Wikipedia - Ford Y-block engine",
+       "url": "https://en.wikipedia.org/wiki/Ford_Y-block_engine",
+       "says": "4,465 cc (272 cu in)"
+      },
+      {
+       "name": "Ford Performance (fordracing.com) - Ford Y-Blocks (Ford's own history article)",
+       "url": "https://www.fordracing.com/articles/enthusiasts/newsroom/2024/12/ford-y-blocks",
+       "says": "272 cubic inches"
+      }
+     ],
+     "note": ""
+    },
+    "displacement_l": {
+     "value": 4.5,
+     "sources": [
+      {
+       "name": "Wikipedia - Ford Y-block engine",
+       "url": "https://en.wikipedia.org/wiki/Ford_Y-block_engine",
+       "says": "4,465 cc"
+      },
+      {
+       "name": "Over-Drive Magazine 1955 Ford cars fact sheet",
+       "url": "https://over-drive-magazine.com/2025/08/25/1955-ford-cars-fact-sheet/",
+       "says": "272 cubic inches (converted)"
+      },
+      {
+       "name": "Ford Performance (fordracing.com) - Ford Y-Blocks (Ford's own history article)",
+       "url": "https://www.fordracing.com/articles/enthusiasts/newsroom/2024/12/ford-y-blocks",
+       "says": "272 cubic inches (converted)"
+      }
+     ],
+     "note": "272 ci = 4,457 cc; Wikipedia gives 4,465 cc. 4.5 L either way."
+    },
+    "num_cylinders": {
+     "value": 8,
+     "sources": [
+      {
+       "name": "Over-Drive Magazine 1957 Ford cars fact sheet",
+       "url": "https://over-drive-magazine.com/2025/06/01/1957-ford-cars-fact-sheet/",
+       "says": "272 CID V-8"
+      },
+      {
+       "name": "Wikipedia - Ford Y-block engine",
+       "url": "https://en.wikipedia.org/wiki/Ford_Y-block_engine",
+       "says": "V8"
+      },
+      {
+       "name": "Ford Performance (fordracing.com) - Ford Y-Blocks (Ford's own history article)",
+       "url": "https://www.fordracing.com/articles/enthusiasts/newsroom/2024/12/ford-y-blocks",
+       "says": "272 cubic inches (Y-block V8)"
+      }
+     ],
+     "note": ""
+    },
+    "configuration": {
+     "value": "V8 (90-degree Y-block)",
+     "sources": [
+      {
+       "name": "Over-Drive Magazine 1957 Ford cars fact sheet",
+       "url": "https://over-drive-magazine.com/2025/06/01/1957-ford-cars-fact-sheet/",
+       "says": "272 CID V-8"
+      },
+      {
+       "name": "Wikipedia - Ford Y-block engine",
+       "url": "https://en.wikipedia.org/wiki/Ford_Y-block_engine",
+       "says": "Small-block OHV V8; deep skirting makes the block resemble a Y"
+      },
+      {
+       "name": "Ford Performance (fordracing.com) - Ford Y-Blocks (Ford's own history article)",
+       "url": "https://www.fordracing.com/articles/enthusiasts/newsroom/2024/12/ford-y-blocks",
+       "says": "Y-block V8"
+      },
+      {
+       "name": "Engine Labs - Historic Engines: The Ford Y-Block V8 of the 1950s",
+       "url": "https://www.enginelabs.com/news/historic-engines-the-ford-y-block-v8-of-the-1950s/",
+       "says": "Ford Y-block V8"
+      }
+     ],
+     "note": ""
+    },
+    "valvetrain": {
+     "value": "OHV, 2 valves per cylinder, shaft-mounted rockers, mechanical lifters",
+     "sources": [
+      {
+       "name": "Over-Drive Magazine 1957 Ford cars fact sheet",
+       "url": "https://over-drive-magazine.com/2025/06/01/1957-ford-cars-fact-sheet/",
+       "says": "Overhead valves ... Valve lifters: Mechanical"
+      },
+      {
+       "name": "Wikipedia - Ford Y-block engine",
+       "url": "https://en.wikipedia.org/wiki/Ford_Y-block_engine",
+       "says": "overhead valve V8 ... oil fed to the rocker arm shafts"
+      },
+      {
+       "name": "Ford Performance (fordracing.com) - Ford Y-Blocks (Ford's own history article)",
+       "url": "https://www.fordracing.com/articles/enthusiasts/newsroom/2024/12/ford-y-blocks",
+       "says": "Overhead-valve arrangement ... mushroom tappets"
+      },
+      {
+       "name": "Engine Labs - Historic Engines: The Ford Y-Block V8 of the 1950s",
+       "url": "https://www.enginelabs.com/news/historic-engines-the-ford-y-block-v8-of-the-1950s/",
+       "says": "Solid lifters were employed"
+      }
+     ],
+     "note": "2 valves/cyl implicit (conventional OHV); no source states the count."
+    },
+    "block_material": {
+     "value": "cast iron",
+     "sources": [
+      {
+       "name": "Over-Drive Magazine 1957 Ford cars fact sheet",
+       "url": "https://over-drive-magazine.com/2025/06/01/1957-ford-cars-fact-sheet/",
+       "says": "Cast iron block. Five main bearings."
+      },
+      {
+       "name": "Ford Performance (fordracing.com) - Ford Y-Blocks (Ford's own history article)",
+       "url": "https://www.fordracing.com/articles/enthusiasts/newsroom/2024/12/ford-y-blocks",
+       "says": "cast iron"
+      },
+      {
+       "name": "The Classic Ford - 1957 Ford Engines (archived)",
+       "url": "https://web.archive.org/web/2017/http://www.theclassicford.com/1957_ford_engines.htm",
+       "says": "Cast-Iron, Overhead valve design ... 5 Main bearings"
+      }
+     ],
+     "note": ""
+    },
+    "induction": {
+     "value": "carburetor: 2-bbl Holley standard; 4-bbl Holley Power Pack (1955)",
+     "sources": [
+      {
+       "name": "Over-Drive Magazine 1955 Ford cars fact sheet",
+       "url": "https://over-drive-magazine.com/2025/08/25/1955-ford-cars-fact-sheet/",
+       "says": "Holley two-barrel ... 'Power Pack' Holley four-barrel"
+      },
+      {
+       "name": "The Classic Ford - 1955 Ford Engines (archived)",
+       "url": "https://web.archive.org/web/2017/http://www.theclassicford.com/1955_ford_engines.htm",
+       "says": "Holley two-barrel carburetor ... Holley four-barrel carburetor (Power Pack)"
+      },
+      {
+       "name": "Wikipedia - Ford Y-block engine",
+       "url": "https://en.wikipedia.org/wiki/Ford_Y-block_engine",
+       "says": "U-code featured a two barrel Holley carburetor ... 'Power Pack' M-code used a four barrel Holley"
+      }
+     ],
+     "note": ""
+    },
+    "years": {
+     "value": "1955-1957 (US Ford cars)",
+     "sources": [
+      {
+       "name": "Ford Performance (fordracing.com) - Ford Y-Blocks (Ford's own history article)",
+       "url": "https://www.fordracing.com/articles/enthusiasts/newsroom/2024/12/ford-y-blocks",
+       "says": "272 ... Years: 1955-1957"
+      },
+      {
+       "name": "Wikipedia - Ford Y-block engine",
+       "url": "https://en.wikipedia.org/wiki/Ford_Y-block_engine",
+       "says": "introduced 1955 ... A final version of the 272 in the US was released in 1957 as the B-code"
+      },
+      {
+       "name": "Over-Drive Magazine 1958 Ford cars fact sheet",
+       "url": "https://over-drive-magazine.com/2025/09/17/1958-ford-cars-fact-sheet/",
+       "says": "1958 lineup: 223 I-6, 292, 332, 352, 361 - no 272"
+      },
+      {
+       "name": "Over-Drive Magazine 1955 Ford cars fact sheet",
+       "url": "https://over-drive-magazine.com/2025/08/25/1955-ford-cars-fact-sheet/",
+       "says": "272 CID V-8 new for 1955"
+      }
+     ],
+     "note": "Kept in production abroad (Ford Australia, Brazil) later; trucks not checked."
+    }
+   },
+   "variants": [
+    {
+     "year": 1955,
+     "hp": 162,
+     "hp_basis": "gross",
+     "compression_ratio": 7.6,
+     "code": "U-code",
+     "induction": "2-bbl Holley",
+     "sources": [
+      {
+       "name": "Ford 1955 Full Line Prestige brochure + 1955 Ford foldout, spec pages",
+       "url": "https://oldcarbrochures.org/United%20States/Ford/1955_Ford/1955-Ford-Full-Line-Prestige-Brochure/index.html",
+       "says": "Y-Block V-8: 272 cu. in., dual exhaust on Fairlane and wagons (no hp printed)"
+      },
+      {
+       "name": "Over-Drive Magazine 1955 Ford cars fact sheet",
+       "url": "https://over-drive-magazine.com/2025/08/25/1955-ford-cars-fact-sheet/",
+       "says": "272 V-8 162 hp"
+      },
+      {
+       "name": "The Classic Ford - 1955 Ford Engines (archived)",
+       "url": "https://web.archive.org/web/2017/http://www.theclassicford.com/1955_ford_engines.htm",
+       "says": "V8 code U, 272 cid, 162 bhp, Holley 2-bbl"
+      },
+      {
+       "name": "Wikipedia - Ford Y-block engine",
+       "url": "https://en.wikipedia.org/wiki/Ford_Y-block_engine",
+       "says": "1955 U-code 272 2-bbl rated 162 bhp"
+      },
+      {
+       "name": "Ford Performance (fordracing.com) - Ford Y-Blocks (Ford's own history article)",
+       "url": "https://www.fordracing.com/articles/enthusiasts/newsroom/2024/12/ford-y-blocks",
+       "says": "1955: 162 hp (two-barrel, 7.6:1 compression)"
+      },
+      {
+       "name": "Engine Labs - Historic Engines: The Ford Y-Block V8 of the 1950s",
+       "url": "https://www.enginelabs.com/news/historic-engines-the-ford-y-block-v8-of-the-1950s/",
+       "says": "1955 272: 162 horsepower"
+      }
+     ],
+     "note": "CR: Over-Drive and Ford Performance 7.6:1; The Classic Ford 8.1:1."
+    },
+    {
+     "year": 1955,
+     "hp": 182,
+     "hp_basis": "gross",
+     "compression_ratio": 7.6,
+     "code": "M-code (Power Pack)",
+     "induction": "4-bbl Holley",
+     "sources": [
+      {
+       "name": "Over-Drive Magazine 1955 Ford cars fact sheet",
+       "url": "https://over-drive-magazine.com/2025/08/25/1955-ford-cars-fact-sheet/",
+       "says": "272 Power Pack V-8 182 hp"
+      },
+      {
+       "name": "The Classic Ford - 1955 Ford Engines (archived)",
+       "url": "https://web.archive.org/web/2017/http://www.theclassicford.com/1955_ford_engines.htm",
+       "says": "V8 code M, 272 cid, 182 bhp, Holley 4-bbl (Power Pack)"
+      },
+      {
+       "name": "Wikipedia - Ford Y-block engine",
+       "url": "https://en.wikipedia.org/wiki/Ford_Y-block_engine",
+       "says": "optional 'Power Pack' M-code 272 4-bbl rated 182 bhp"
+      }
+     ],
+     "note": "Code letter disputed: Wikipedia and The Classic Ford say M; Over-Drive prints U. Ford's 1955 brochures name only the 272."
+    },
+    {
+     "year": 1956,
+     "hp": 173,
+     "hp_basis": "gross",
+     "compression_ratio": 8.0,
+     "code": "U-code (manual)",
+     "induction": "2-bbl Holley",
+     "sources": [
+      {
+       "name": "Over-Drive Magazine 1956 Ford cars fact sheet",
+       "url": "https://over-drive-magazine.com/2022/09/20/1956-ford-cars-fact-sheet/",
+       "says": "272 CID V-8 - Manual Transmission Only, code U, 8.0:1, 173 @ 4400"
+      },
+      {
+       "name": "The Classic Ford - 1956 Ford Engines (archived)",
+       "url": "https://web.archive.org/web/2017/http://www.theclassicford.com/1956_ford_engines.htm",
+       "says": "V8 (Serial No. Code U): 272 ... 173 brake horsepower @ 4400 rpm"
+      },
+      {
+       "name": "Wikipedia - Ford Y-block engine",
+       "url": "https://en.wikipedia.org/wiki/Ford_Y-block_engine",
+       "says": "In 1956 the U-code was updated to produce 173 bhp at 4,400 rpm ... with a manual transmission"
+      },
+      {
+       "name": "Ford Performance (fordracing.com) - Ford Y-Blocks (Ford's own history article)",
+       "url": "https://www.fordracing.com/articles/enthusiasts/newsroom/2024/12/ford-y-blocks",
+       "says": "1956: 173 hp (two-barrel, 8.0:1 compression)"
+      }
+     ],
+     "note": "Mainline/Customline V-8 in 1956; Fairlanes got the 292 as their V-8."
+    },
+    {
+     "year": 1956,
+     "hp": 176,
+     "hp_basis": "gross",
+     "compression_ratio": 8.4,
+     "code": "U-code (Fordomatic)",
+     "induction": "2-bbl Holley",
+     "sources": [
+      {
+       "name": "Over-Drive Magazine 1956 Ford cars fact sheet",
+       "url": "https://over-drive-magazine.com/2022/09/20/1956-ford-cars-fact-sheet/",
+       "says": "272 CID V-8 - Automatic Transmission Only, code U, 8.4:1, 176 @ 4400"
+      },
+      {
+       "name": "The Classic Ford - 1956 Ford Engines (archived)",
+       "url": "https://web.archive.org/web/2017/http://www.theclassicford.com/1956_ford_engines.htm",
+       "says": "176 brake horsepower @ 4400 rpm w/Ford-O-Matic"
+      },
+      {
+       "name": "Wikipedia - Ford Y-block engine",
+       "url": "https://en.wikipedia.org/wiki/Ford_Y-block_engine",
+       "says": "or 176 bhp at 4,400 rpm ... with an automatic transmission"
+      }
+     ],
+     "note": ""
+    },
+    {
+     "year": 1957,
+     "hp": 190,
+     "hp_basis": "gross",
+     "compression_ratio": 8.6,
+     "code": "B-code",
+     "induction": "2-bbl",
+     "sources": [
+      {
+       "name": "Over-Drive Magazine 1957 Ford cars fact sheet",
+       "url": "https://over-drive-magazine.com/2025/06/01/1957-ford-cars-fact-sheet/",
+       "says": "272 CID 2-Barrel V-8, code U ... 190 HP 272 CID V-8 (lineup)"
+      },
+      {
+       "name": "The Classic Ford - 1957 Ford Engines (archived)",
+       "url": "https://web.archive.org/web/2017/http://www.theclassicford.com/1957_ford_engines.htm",
+       "says": "V8 (Serial No. Code B): 272 ... 8.6:1 ... 190 brake horsepower @ 4500 rpm"
+      },
+      {
+       "name": "Wikipedia - Ford Y-block engine",
+       "url": "https://en.wikipedia.org/wiki/Ford_Y-block_engine",
+       "says": "A final version of the 272 in the US was released in 1957 as the B-code ... 190 bhp at 4,500 rpm"
+      },
+      {
+       "name": "Ford Performance (fordracing.com) - Ford Y-Blocks (Ford's own history article)",
+       "url": "https://www.fordracing.com/articles/enthusiasts/newsroom/2024/12/ford-y-blocks",
+       "says": "1957: 190 hp (8.6:1 compression)"
+      }
+     ],
+     "note": "Over-Drive's 1957 detail block still shows the 1956 173-hp/8.0:1 figures under the 272 heading; its lineup lists 190 hp."
+    }
+   ],
+   "unverified": {
+    "head_material": "Cast iron: Ford Performance's Y-block article and The Classic Ford (engine-level 'Cast-Iron'). Only 2.",
+    "rod_length_in": "Not found in any acceptable source.",
+    "firing_order": "1-5-4-8-6-3-7-2 is widely quoted, but only forums and content farms turned up. Not counted.",
+    "fuel_type": "Gasoline (carbureted). Uncontested but no checked source states it explicitly.",
+    "compression_ratio": "Varies by year and transmission; see variants."
+   },
+   "unverified_variants": []
+  },
+  {
+   "id": "ford-292-y-block",
+   "name": "Ford 292 Y-block V8",
+   "fields": {
+    "bore_in": {
+     "value": 3.75,
+     "sources": [
+      {
+       "name": "Over-Drive Magazine 1960 Ford cars fact sheet",
+       "url": "https://over-drive-magazine.com/2025/06/30/1960-ford-full-size-cars-fact-sheet/",
+       "says": "Bore and stroke: 3.75 x 3.30 inches"
+      },
+      {
+       "name": "The Classic Ford - 1957 Ford Engines (archived)",
+       "url": "https://web.archive.org/web/2017/http://www.theclassicford.com/1957_ford_engines.htm",
+       "says": "Bore: 3.75 Stroke: 3.30 inches"
+      },
+      {
+       "name": "Galaxie Club of America, 1960 specifications page",
+       "url": "https://www.galaxieclub.com/1960Specs.html",
+       "says": "V8 OHV 292 Cu.In. 3 3/4 x 3 19/64"
+      },
+      {
+       "name": "Wikipedia - Ford Y-block engine",
+       "url": "https://en.wikipedia.org/wiki/Ford_Y-block_engine",
+       "says": "larger 3.75 in (95.25 mm) bore"
+      },
+      {
+       "name": "Ford Performance (fordracing.com) - Ford Y-Blocks (Ford's own history article)",
+       "url": "https://www.fordracing.com/articles/enthusiasts/newsroom/2024/12/ford-y-blocks",
+       "says": "292: 3.75 x 3.30 inches"
+      }
+     ],
+     "note": ""
+    },
+    "stroke_in": {
+     "value": 3.3,
+     "sources": [
+      {
+       "name": "Over-Drive Magazine 1960 Ford cars fact sheet",
+       "url": "https://over-drive-magazine.com/2025/06/30/1960-ford-full-size-cars-fact-sheet/",
+       "says": "Bore and stroke: 3.75 x 3.30 inches"
+      },
+      {
+       "name": "The Classic Ford - 1957 Ford Engines (archived)",
+       "url": "https://web.archive.org/web/2017/http://www.theclassicford.com/1957_ford_engines.htm",
+       "says": "Stroke: 3.30 inches"
+      },
+      {
+       "name": "Galaxie Club of America, 1962 specifications page",
+       "url": "https://www.galaxieclub.com/1962Specs.html",
+       "says": "V8 OHV 292 Cu.In. 3.75 x 3.30"
+      },
+      {
+       "name": "Wikipedia - Ford Y-block engine",
+       "url": "https://en.wikipedia.org/wiki/Ford_Y-block_engine",
+       "says": "shared the 3.3 in (83.82 mm) stroke of the 272"
+      },
+      {
+       "name": "Ford Performance (fordracing.com) - Ford Y-Blocks (Ford's own history article)",
+       "url": "https://www.fordracing.com/articles/enthusiasts/newsroom/2024/12/ford-y-blocks",
+       "says": "292: 3.75 x 3.30 inches"
+      }
+     ],
+     "note": "Galaxie Club's 1959-60 pages print 3-19/64 (3.297)."
+    },
+    "displacement_ci": {
+     "value": 292,
+     "sources": [
+      {
+       "name": "Over-Drive Magazine 1960 Ford cars fact sheet",
+       "url": "https://over-drive-magazine.com/2025/06/30/1960-ford-full-size-cars-fact-sheet/",
+       "says": "292 CID V-8"
+      },
+      {
+       "name": "The Classic Ford - 1957 Ford Engines (archived)",
+       "url": "https://web.archive.org/web/2017/http://www.theclassicford.com/1957_ford_engines.htm",
+       "says": "292 cubic inch displacement"
+      },
+      {
+       "name": "Galaxie Club of America, 1960 specifications page",
+       "url": "https://www.galaxieclub.com/1960Specs.html",
+       "says": "292 Cu.In."
+      },
+      {
+       "name": "Wikipedia - Ford Y-block engine",
+       "url": "https://en.wikipedia.org/wiki/Ford_Y-block_engine",
+       "says": "4,778 cc (292 cu in)"
+      },
+      {
+       "name": "Ford Performance (fordracing.com) - Ford Y-Blocks (Ford's own history article)",
+       "url": "https://www.fordracing.com/articles/enthusiasts/newsroom/2024/12/ford-y-blocks",
+       "says": "292 cubic inches"
+      }
+     ],
+     "note": ""
+    },
+    "displacement_l": {
+     "value": 4.8,
+     "sources": [
+      {
+       "name": "Wikipedia - Ford Y-block engine",
+       "url": "https://en.wikipedia.org/wiki/Ford_Y-block_engine",
+       "says": "4,778 cc"
+      },
+      {
+       "name": "Over-Drive Magazine 1960 Ford cars fact sheet",
+       "url": "https://over-drive-magazine.com/2025/06/30/1960-ford-full-size-cars-fact-sheet/",
+       "says": "292 cubic inches (converted)"
+      },
+      {
+       "name": "Ford Performance (fordracing.com) - Ford Y-Blocks (Ford's own history article)",
+       "url": "https://www.fordracing.com/articles/enthusiasts/newsroom/2024/12/ford-y-blocks",
+       "says": "292 cubic inches (converted)"
+      }
+     ],
+     "note": "292 ci = 4,785 cc; Wikipedia 4,778 cc. 4.8 L."
+    },
+    "num_cylinders": {
+     "value": 8,
+     "sources": [
+      {
+       "name": "Over-Drive Magazine 1957 Ford cars fact sheet",
+       "url": "https://over-drive-magazine.com/2025/06/01/1957-ford-cars-fact-sheet/",
+       "says": "292 CID V-8"
+      },
+      {
+       "name": "Wikipedia - Ford Y-block engine",
+       "url": "https://en.wikipedia.org/wiki/Ford_Y-block_engine",
+       "says": "V8"
+      },
+      {
+       "name": "Ford Performance (fordracing.com) - Ford Y-Blocks (Ford's own history article)",
+       "url": "https://www.fordracing.com/articles/enthusiasts/newsroom/2024/12/ford-y-blocks",
+       "says": "292 cubic inches (Y-block V8)"
+      }
+     ],
+     "note": ""
+    },
+    "configuration": {
+     "value": "V8 (90-degree Y-block)",
+     "sources": [
+      {
+       "name": "Over-Drive Magazine 1957 Ford cars fact sheet",
+       "url": "https://over-drive-magazine.com/2025/06/01/1957-ford-cars-fact-sheet/",
+       "says": "292 CID V-8"
+      },
+      {
+       "name": "Wikipedia - Ford Y-block engine",
+       "url": "https://en.wikipedia.org/wiki/Ford_Y-block_engine",
+       "says": "Small-block OHV V8; deep skirting makes the block resemble a Y"
+      },
+      {
+       "name": "Ford Performance (fordracing.com) - Ford Y-Blocks (Ford's own history article)",
+       "url": "https://www.fordracing.com/articles/enthusiasts/newsroom/2024/12/ford-y-blocks",
+       "says": "Y-block V8"
+      },
+      {
+       "name": "Engine Labs - Historic Engines: The Ford Y-Block V8 of the 1950s",
+       "url": "https://www.enginelabs.com/news/historic-engines-the-ford-y-block-v8-of-the-1950s/",
+       "says": "Ford Y-block V8"
+      }
+     ],
+     "note": ""
+    },
+    "valvetrain": {
+     "value": "OHV, 2 valves per cylinder, shaft-mounted rockers, mechanical lifters",
+     "sources": [
+      {
+       "name": "Over-Drive Magazine 1957 Ford cars fact sheet",
+       "url": "https://over-drive-magazine.com/2025/06/01/1957-ford-cars-fact-sheet/",
+       "says": "Overhead valves ... Valve lifters: Mechanical"
+      },
+      {
+       "name": "Wikipedia - Ford Y-block engine",
+       "url": "https://en.wikipedia.org/wiki/Ford_Y-block_engine",
+       "says": "overhead valve V8 ... oil fed to the rocker arm shafts"
+      },
+      {
+       "name": "Ford Performance (fordracing.com) - Ford Y-Blocks (Ford's own history article)",
+       "url": "https://www.fordracing.com/articles/enthusiasts/newsroom/2024/12/ford-y-blocks",
+       "says": "Overhead-valve arrangement ... mushroom tappets"
+      },
+      {
+       "name": "Engine Labs - Historic Engines: The Ford Y-Block V8 of the 1950s",
+       "url": "https://www.enginelabs.com/news/historic-engines-the-ford-y-block-v8-of-the-1950s/",
+       "says": "Solid lifters were employed"
+      }
+     ],
+     "note": "2 valves/cyl implicit (conventional OHV); no source states the count."
+    },
+    "block_material": {
+     "value": "cast iron",
+     "sources": [
+      {
+       "name": "Over-Drive Magazine 1957 Ford cars fact sheet",
+       "url": "https://over-drive-magazine.com/2025/06/01/1957-ford-cars-fact-sheet/",
+       "says": "Cast iron block. Five main bearings."
+      },
+      {
+       "name": "Ford Performance (fordracing.com) - Ford Y-Blocks (Ford's own history article)",
+       "url": "https://www.fordracing.com/articles/enthusiasts/newsroom/2024/12/ford-y-blocks",
+       "says": "cast iron"
+      },
+      {
+       "name": "The Classic Ford - 1957 Ford Engines (archived)",
+       "url": "https://web.archive.org/web/2017/http://www.theclassicford.com/1957_ford_engines.htm",
+       "says": "Cast-Iron, Overhead valve design ... 5 Main bearings"
+      }
+     ],
+     "note": ""
+    },
+    "induction": {
+     "value": "carburetor: 4-bbl Holley (1955-56), 2-bbl (1957-62)",
+     "sources": [
+      {
+       "name": "Over-Drive Magazine 1960 Ford cars fact sheet",
+       "url": "https://over-drive-magazine.com/2025/06/30/1960-ford-full-size-cars-fact-sheet/",
+       "says": "Holley two-barrel"
+      },
+      {
+       "name": "Over-Drive Magazine 1956 Ford cars fact sheet",
+       "url": "https://over-drive-magazine.com/2022/09/20/1956-ford-cars-fact-sheet/",
+       "says": "Holley four-barrel #1163/#1164"
+      },
+      {
+       "name": "The Classic Ford - 1960 Ford Engines (archived)",
+       "url": "https://web.archive.org/web/2017/http://www.theclassicford.com/1960_ford_engines.htm",
+       "says": "Holley two-barrel carburetor"
+      },
+      {
+       "name": "Wikipedia - Ford Y-block engine",
+       "url": "https://en.wikipedia.org/wiki/Ford_Y-block_engine",
+       "says": "P-code ... (1955); C-code engine option (1957)"
+      },
+      {
+       "name": "Galaxie Club of America, 1960 specifications page",
+       "url": "https://www.galaxieclub.com/1960Specs.html",
+       "says": "292 2V"
+      }
+     ],
+     "note": "Over-Drive and The Classic Ford count once each across their year pages."
+    },
+    "years": {
+     "value": "1955-1962 (US cars); trucks to 1964",
+     "sources": [
+      {
+       "name": "Ford Performance (fordracing.com) - Ford Y-Blocks (Ford's own history article)",
+       "url": "https://www.fordracing.com/articles/enthusiasts/newsroom/2024/12/ford-y-blocks",
+       "says": "292 ... Years: 1955-1962"
+      },
+      {
+       "name": "Wikipedia - Ford Y-block engine",
+       "url": "https://en.wikipedia.org/wiki/Ford_Y-block_engine",
+       "says": "carrying on until 1962 in U.S. cars and until 1964 in U.S. trucks"
+      },
+      {
+       "name": "Over-Drive Magazine 1962 Ford cars fact sheet",
+       "url": "https://over-drive-magazine.com/2023/10/09/1962-ford-full-size-cars-fact-sheet/",
+       "says": "292 CID V-8 Base V-8, Engine Code W, 170 hp (last year in Galaxie)"
+      },
+      {
+       "name": "Over-Drive Magazine 1955 Ford cars fact sheet",
+       "url": "https://over-drive-magazine.com/2025/08/25/1955-ford-cars-fact-sheet/",
+       "says": "Thunderbird V-8 292, code P (first year)"
+      },
+      {
+       "name": "Engine Labs - Historic Engines: The Ford Y-Block V8 of the 1950s",
+       "url": "https://www.enginelabs.com/news/historic-engines-the-ford-y-block-v8-of-the-1950s/",
+       "says": "replaced the Y-block with the Windsor small block in 1962"
+      }
+     ],
+     "note": "Truck end-year (1964) rests on Wikipedia only; Wikipedia's Y-block article says Ford pickups used the 292 as late as 1965. Argentina/Brazil built it into the 1980s."
+    }
+   },
+   "variants": [
+    {
+     "year": 1955,
+     "hp": 193,
+     "hp_basis": "gross",
+     "compression_ratio": 8.1,
+     "code": "P-code (manual)",
+     "induction": "4-bbl Holley",
+     "sources": [
+      {
+       "name": "Over-Drive Magazine 1955 Ford cars fact sheet",
+       "url": "https://over-drive-magazine.com/2025/08/25/1955-ford-cars-fact-sheet/",
+       "says": "Thunderbird V-8 Standard Transmission, code P, 8.1:1, 193 @ 4400, Holley four-barrel"
+      },
+      {
+       "name": "Wikipedia - Ford Y-block engine",
+       "url": "https://en.wikipedia.org/wiki/Ford_Y-block_engine",
+       "says": "P-code 'Thunderbird V8' ... manual transmission ... 8.1:1 ... 193 bhp at 4,400 rpm"
+      },
+      {
+       "name": "Engine Labs - Historic Engines: The Ford Y-Block V8 of the 1950s",
+       "url": "https://www.enginelabs.com/news/historic-engines-the-ford-y-block-v8-of-the-1950s/",
+       "says": "1955 292 cubic inches: 193 horsepower"
+      }
+     ],
+     "note": "1955 Ford-brand use was the Thunderbird; Ford's 1955 car brochures and The Classic Ford list no 292 for Ford cars, so a 1955 Fairlane fitment is disputed (Over-Drive and Wikipedia's Fairlane article say it was offered)."
+    },
+    {
+     "year": 1955,
+     "hp": 198,
+     "hp_basis": "gross",
+     "compression_ratio": 8.5,
+     "code": "P-code (Fordomatic)",
+     "induction": "4-bbl Holley",
+     "sources": [
+      {
+       "name": "Over-Drive Magazine 1955 Ford cars fact sheet",
+       "url": "https://over-drive-magazine.com/2025/08/25/1955-ford-cars-fact-sheet/",
+       "says": "Thunderbird V-8 Automatic Transmission Only, code P, 8.5:1, 198 @ 4400"
+      },
+      {
+       "name": "Wikipedia - Ford Y-block engine",
+       "url": "https://en.wikipedia.org/wiki/Ford_Y-block_engine",
+       "says": "automatic transmission ... 8.5:1 with a quoted 198 bhp at 4,400 rpm"
+      },
+      {
+       "name": "Ford Performance (fordracing.com) - Ford Y-Blocks (Ford's own history article)",
+       "url": "https://www.fordracing.com/articles/enthusiasts/newsroom/2024/12/ford-y-blocks",
+       "says": "1955: 198 hp (four-barrel, 8.5:1 compression)"
+      }
+     ],
+     "note": "Same Fairlane-availability caveat as the 193-hp version."
+    },
+    {
+     "year": 1956,
+     "hp": 200,
+     "hp_basis": "gross",
+     "compression_ratio": 8.0,
+     "code": "M-code (manual)",
+     "induction": "4-bbl Holley",
+     "sources": [
+      {
+       "name": "Ford 1956 brochure (spec page) + revised 1956 brochure",
+       "url": "https://oldcarbrochures.org/United%20States/Ford/1956%20Ford/1956-Ford-Brochure/index.html",
+       "says": "Thunderbird Y-8 (for Fairlane series and wagons) 292 cu. in., 4-venturi, dual exhaust; 200 hp with Standard or Overdrive"
+      },
+      {
+       "name": "Over-Drive Magazine 1956 Ford cars fact sheet",
+       "url": "https://over-drive-magazine.com/2022/09/20/1956-ford-cars-fact-sheet/",
+       "says": "292 V-8 200 hp SMT"
+      },
+      {
+       "name": "The Classic Ford - 1956 Ford Engines (archived)",
+       "url": "https://web.archive.org/web/2017/http://www.theclassicford.com/1956_ford_engines.htm",
+       "says": "code M, 292 cid, 200 bhp"
+      },
+      {
+       "name": "Wikipedia - Ford Y-block engine",
+       "url": "https://en.wikipedia.org/wiki/Ford_Y-block_engine",
+       "says": "M-code 292 Thunderbird V8 optional on all Fords; 200 bhp manual"
+      }
+     ],
+     "note": ""
+    },
+    {
+     "year": 1956,
+     "hp": 202,
+     "hp_basis": "gross",
+     "compression_ratio": 8.4,
+     "code": "M-code (Fordomatic)",
+     "induction": "4-bbl Holley",
+     "sources": [
+      {
+       "name": "Ford 1956 brochure (spec page) + revised 1956 brochure",
+       "url": "https://oldcarbrochures.org/United%20States/Ford/1956%20Ford/1956-Ford-Brochure/index.html",
+       "says": "292 Thunderbird Y-8 202 hp with Fordomatic Drive"
+      },
+      {
+       "name": "Over-Drive Magazine 1956 Ford cars fact sheet",
+       "url": "https://over-drive-magazine.com/2022/09/20/1956-ford-cars-fact-sheet/",
+       "says": "292 V-8 202 hp AMT"
+      },
+      {
+       "name": "The Classic Ford - 1956 Ford Engines (archived)",
+       "url": "https://web.archive.org/web/2017/http://www.theclassicford.com/1956_ford_engines.htm",
+       "says": "292 cid 202 bhp w/Ford-O-Matic"
+      },
+      {
+       "name": "Wikipedia - Ford Y-block engine",
+       "url": "https://en.wikipedia.org/wiki/Ford_Y-block_engine",
+       "says": "automatic 292 rated 202 bhp"
+      },
+      {
+       "name": "Old Cars Weekly - Car of the Week: 1956 Ford Fairlane",
+       "url": "https://www.oldcarsweekly.com/features/car-of-the-week-1956-ford-fairlane",
+       "says": "1956 Ford Thunderbird Y-8, 292 cid, four-barrel, 202 hp"
+      },
+      {
+       "name": "Ford Performance (fordracing.com) - Ford Y-Blocks (Ford's own history article)",
+       "url": "https://www.fordracing.com/articles/enthusiasts/newsroom/2024/12/ford-y-blocks",
+       "says": "1956: 202 hp (8.4:1 compression at 4600 rpm)"
+      }
+     ],
+     "note": "Ford Performance attaches 202 hp to stick-shift T-Birds; Ford's 1956 car brochure, Over-Drive, The Classic Ford and Wikipedia give 202 with Fordomatic."
+    },
+    {
+     "year": 1957,
+     "hp": 212,
+     "hp_basis": "gross",
+     "compression_ratio": null,
+     "code": "C-code",
+     "induction": "2-bbl",
+     "sources": [
+      {
+       "name": "Ford 1957 Fairlane brochure (10-56) + 1957 lineup foldout (04-57)",
+       "url": "https://oldcarbrochures.org/United%20States/Ford/1957_Ford/1957-Ford-Fairlane-Brochure%201956-10/index.html",
+       "says": "Fairlanes and Station Wagon series: the 212-hp Thunderbird 292 V-8"
+      },
+      {
+       "name": "Over-Drive Magazine 1957 Ford cars fact sheet",
+       "url": "https://over-drive-magazine.com/2025/06/01/1957-ford-cars-fact-sheet/",
+       "says": "292 V-8 212 hp"
+      },
+      {
+       "name": "The Classic Ford - 1957 Ford Engines (archived)",
+       "url": "https://web.archive.org/web/2017/http://www.theclassicford.com/1957_ford_engines.htm",
+       "says": "code C, 292 cid, 212 bhp"
+      },
+      {
+       "name": "Wikipedia - Ford Y-block engine",
+       "url": "https://en.wikipedia.org/wiki/Ford_Y-block_engine",
+       "says": "1957 C-code 292: 206 bhp manual / 212 bhp automatic"
+      },
+      {
+       "name": "Ford Performance (fordracing.com) - Ford Y-Blocks (Ford's own history article)",
+       "url": "https://www.fordracing.com/articles/enthusiasts/newsroom/2024/12/ford-y-blocks",
+       "says": "1957: 212 hp (9.1:1 compression)"
+      }
+     ],
+     "note": "CR disputed: Wikipedia/Ford Performance/The Classic Ford 9.1:1, Over-Drive 8.4:1. Wikipedia (1957 shop manual) splits it 206 hp manual / 212 hp automatic. The Classic Ford wrongly says 4-bbl."
+    },
+    {
+     "year": 1958,
+     "hp": 205,
+     "hp_basis": "gross",
+     "compression_ratio": 9.1,
+     "code": "C-code",
+     "induction": "2-bbl",
+     "sources": [
+      {
+       "name": "Ford 1958 full line foldout (4-58), spec panel",
+       "url": "https://oldcarbrochures.org/United%20States/Ford/1958_Ford/1958%20Ford%20Full%20Line%20Foldout%20%284-58%29/index.html",
+       "says": "205-hp Ford 292 V-8 (optional on all models)"
+      },
+      {
+       "name": "Over-Drive Magazine 1958 Ford cars fact sheet",
+       "url": "https://over-drive-magazine.com/2025/09/17/1958-ford-cars-fact-sheet/",
+       "says": "292 V-8 205 hp"
+      },
+      {
+       "name": "The Classic Ford - 1958 Ford Engines (archived)",
+       "url": "https://web.archive.org/web/2017/http://www.theclassicford.com/1958_ford_engines.htm",
+       "says": "code C, 292 cid, 205 bhp"
+      },
+      {
+       "name": "Wikipedia - Ford Fairlane (Americas)",
+       "url": "https://en.wikipedia.org/wiki/Ford_Fairlane_(Americas)",
+       "says": "292 Thunderbird V8 listed for 1957-59 Fairlane"
+      }
+     ],
+     "note": ""
+    },
+    {
+     "year": 1959,
+     "hp": 200,
+     "hp_basis": "gross",
+     "compression_ratio": 8.8,
+     "code": "C-code",
+     "induction": "2-bbl",
+     "sources": [
+      {
+       "name": "Ford 1959 full line brochure (09-58), spec panel",
+       "url": "https://oldcarbrochures.org/United%20States/Ford/1959_Ford/1959-Ford-Full-Line-09-58/index.html",
+       "says": "200-hp Thunderbird 292 V-8"
+      },
+      {
+       "name": "Over-Drive Magazine 1959 Ford cars fact sheet",
+       "url": "https://over-drive-magazine.com/2025/10/09/1959-ford-cars-fact-sheet/",
+       "says": "292 V-8 200 hp"
+      },
+      {
+       "name": "The Classic Ford - 1959 Ford Engines (archived)",
+       "url": "https://web.archive.org/web/2017/http://www.theclassicford.com/1959_ford_engines.htm",
+       "says": "code C, 292 cid, 200 bhp"
+      },
+      {
+       "name": "Wikipedia - Ford Fairlane (Americas)",
+       "url": "https://en.wikipedia.org/wiki/Ford_Fairlane_(Americas)",
+       "says": "292 Thunderbird V8 listed for 1957-59 Fairlane"
+      },
+      {
+       "name": "Ford 1959 full-line brochure (Oct 1958), engine specifications page",
+       "url": "https://oldcarbrochures.org/United%20States/Ford/1959_Ford/1959-Ford-Full-Line-10-59/index.html",
+       "says": "200-hp Thunderbird 292 V-8 (standard V-8 on all models)"
+      },
+      {
+       "name": "Galaxie Club of America, 1959 specifications page",
+       "url": "https://www.galaxieclub.com/1959Specs.html",
+       "says": "V8 OHV 292, 200@4400"
+      },
+      {
+       "name": "conceptcarz - 1959 Ford Galaxie specifications",
+       "url": "https://www.conceptcarz.com/s8891/ford-galaxie.aspx",
+       "says": "292 V8, 200 bhp, Holley 2-bbl"
+      }
+     ],
+     "note": "The Classic Ford prints 8.1:1; Galaxie Club 8.8:1."
+    },
+    {
+     "year": 1960,
+     "hp": 185,
+     "hp_basis": "gross",
+     "compression_ratio": 8.8,
+     "code": "W-code",
+     "induction": "2-bbl",
+     "sources": [
+      {
+       "name": "Ford 1960 brochure + 1960 full line foldout (Rev), spec panels",
+       "url": "https://oldcarbrochures.org/United%20States/Ford/1960_Ford/1960-Ford-Full-Line-Foldout/index.html",
+       "says": "185-hp Thunderbird 292 V-8 (standard V-8 on all models)"
+      },
+      {
+       "name": "Over-Drive Magazine 1960 Ford cars fact sheet",
+       "url": "https://over-drive-magazine.com/2025/06/30/1960-ford-full-size-cars-fact-sheet/",
+       "says": "292 V-8 185 hp, code W"
+      },
+      {
+       "name": "The Classic Ford - 1960 Ford Engines (archived)",
+       "url": "https://web.archive.org/web/2017/http://www.theclassicford.com/1960_ford_engines.htm",
+       "says": "code W, 292 cid, 185 bhp"
+      },
+      {
+       "name": "Old Cars Weekly - Car of the Week: 1960 Ford Fairlane 500",
+       "url": "https://www.oldcarsweekly.com/features/car-of-the-week-1960-ford-fairlane-500-article",
+       "says": "smallest 1960 Ford V-8: 292, 185 hp"
+      },
+      {
+       "name": "Ford 1960 brochure, specifications page",
+       "url": "https://oldcarbrochures.org/United%20States/Ford/1960_Ford/1960_Ford_Brochure/index.html",
+       "says": "185-hp Thunderbird 292 V-8 (standard V-8 on all models)"
+      },
+      {
+       "name": "Galaxie Club of America, 1960 specifications page",
+       "url": "https://www.galaxieclub.com/1960Specs.html",
+       "says": "V8 OHV 292, 185@4200"
+      }
+     ],
+     "note": ""
+    },
+    {
+     "year": 1961,
+     "hp": 175,
+     "hp_basis": "gross",
+     "compression_ratio": 8.8,
+     "code": "W-code",
+     "induction": "2-bbl",
+     "sources": [
+      {
+       "name": "Ford 1961 Prestige brochure, '1961 Ford Specifications' page (Litho 8-60)",
+       "url": "https://oldcarbrochures.org/United%20States/Ford/1961_Ford/1961_Fords_Prestige_Brochure/index.html",
+       "says": "175-hp Thunderbird 292 V-8 (optional on all models)"
+      },
+      {
+       "name": "Over-Drive Magazine 1961 Ford cars fact sheet",
+       "url": "https://over-drive-magazine.com/2025/08/10/1961-ford-full-size-cars-fact-sheet/",
+       "says": "292 V-8 175 hp, code W"
+      },
+      {
+       "name": "The Classic Ford - 1961 Ford Engines (archived)",
+       "url": "https://web.archive.org/web/2017/http://www.theclassicford.com/1961_ford_engines.htm",
+       "says": "code W, 292 cid, 175 bhp"
+      },
+      {
+       "name": "Galaxie Club of America, 1961 specifications page",
+       "url": "https://www.galaxieclub.com/1961Specs.html",
+       "says": "292 V8, 175@4200"
+      }
+     ],
+     "note": ""
+    },
+    {
+     "year": 1962,
+     "hp": 170,
+     "hp_basis": "gross",
+     "compression_ratio": 8.8,
+     "code": "W-code",
+     "induction": "2-bbl",
+     "sources": [
+      {
+       "name": "Ford 1962 full-line foldout (02-62), power teams",
+       "url": "https://oldcarbrochures.org/United%20States/Ford/1962_Ford/1962-Ford-Full-Line-Foldout-02-62/index.html",
+       "says": "170-hp 292 V-8, std. on 500/XLs, optional on others"
+      },
+      {
+       "name": "Over-Drive Magazine, 1962 Ford Full Size Cars Fact Sheet",
+       "url": "https://over-drive-magazine.com/2023/10/09/1962-ford-full-size-cars-fact-sheet/",
+       "says": "292 V-8, 170 hp, Code W"
+      },
+      {
+       "name": "Wikipedia - Ford Galaxie",
+       "url": "https://en.wikipedia.org/wiki/Ford_Galaxie",
+       "says": "1962: the 292 V8 was standard on the 500/XL"
+      }
+     ],
+     "note": ""
+    }
+   ],
+   "unverified": {
+    "head_material": "Cast iron: Ford Performance's Y-block article and The Classic Ford (engine-level 'Cast-Iron'). Only 2.",
+    "rod_length_in": "Not found in any acceptable source.",
+    "firing_order": "1-5-4-8-6-3-7-2 is widely quoted, but only forums and content farms turned up. Not counted.",
+    "fuel_type": "Gasoline (carbureted). Uncontested but no checked source states it explicitly.",
+    "compression_ratio": "Varies by year and transmission; see variants."
+   },
+   "unverified_variants": []
+  },
+  {
+   "id": "ford-312-y-block",
+   "name": "Ford 312 Y-block V8",
+   "fields": {
+    "bore_in": {
+     "value": 3.8,
+     "sources": [
+      {
+       "name": "Over-Drive Magazine 1957 Ford cars fact sheet",
+       "url": "https://over-drive-magazine.com/2025/06/01/1957-ford-cars-fact-sheet/",
+       "says": "Bore and stroke: 3.80 x 3.44 inches"
+      },
+      {
+       "name": "Wikipedia - Ford Y-block engine",
+       "url": "https://en.wikipedia.org/wiki/Ford_Y-block_engine",
+       "says": "Bore x stroke dimensions were 3.80 x 3.44 in"
+      },
+      {
+       "name": "Ford Performance (fordracing.com) - Ford Y-Blocks (Ford's own history article)",
+       "url": "https://www.fordracing.com/articles/enthusiasts/newsroom/2024/12/ford-y-blocks",
+       "says": "312: 3.80 x 3.44 inches"
+      },
+      {
+       "name": "Over-Drive Magazine 1956 Ford cars fact sheet",
+       "url": "https://over-drive-magazine.com/2022/09/20/1956-ford-cars-fact-sheet/",
+       "says": "Bore and stroke: 3.80 x 3.44 inches"
+      }
+     ],
+     "note": "The Classic Ford prints 3.60 for the 312 bore (typo; 3.60 x 3.44 x 8 = 280 ci). Over-Drive 1956 and 1957 count as one source."
+    },
+    "stroke_in": {
+     "value": 3.44,
+     "sources": [
+      {
+       "name": "Over-Drive Magazine 1957 Ford cars fact sheet",
+       "url": "https://over-drive-magazine.com/2025/06/01/1957-ford-cars-fact-sheet/",
+       "says": "Bore and stroke: 3.80 x 3.44 inches"
+      },
+      {
+       "name": "The Classic Ford - 1957 Ford Engines (archived)",
+       "url": "https://web.archive.org/web/2017/http://www.theclassicford.com/1957_ford_engines.htm",
+       "says": "Stroke: 3.44 inches"
+      },
+      {
+       "name": "Wikipedia - Ford Y-block engine",
+       "url": "https://en.wikipedia.org/wiki/Ford_Y-block_engine",
+       "says": "3.80 x 3.44 in"
+      },
+      {
+       "name": "Ford Performance (fordracing.com) - Ford Y-Blocks (Ford's own history article)",
+       "url": "https://www.fordracing.com/articles/enthusiasts/newsroom/2024/12/ford-y-blocks",
+       "says": "312: 3.80 x 3.44 inches"
+      }
+     ],
+     "note": ""
+    },
+    "displacement_ci": {
+     "value": 312,
+     "sources": [
+      {
+       "name": "Over-Drive Magazine 1957 Ford cars fact sheet",
+       "url": "https://over-drive-magazine.com/2025/06/01/1957-ford-cars-fact-sheet/",
+       "says": "Displacement: 312 cubic inches"
+      },
+      {
+       "name": "The Classic Ford - 1957 Ford Engines (archived)",
+       "url": "https://web.archive.org/web/2017/http://www.theclassicford.com/1957_ford_engines.htm",
+       "says": "312 cubic inch displacement"
+      },
+      {
+       "name": "Wikipedia - Ford Y-block engine",
+       "url": "https://en.wikipedia.org/wiki/Ford_Y-block_engine",
+       "says": "312 cu in (5.1 L)"
+      },
+      {
+       "name": "Ford Performance (fordracing.com) - Ford Y-Blocks (Ford's own history article)",
+       "url": "https://www.fordracing.com/articles/enthusiasts/newsroom/2024/12/ford-y-blocks",
+       "says": "312 cubic inches"
+      }
+     ],
+     "note": ""
+    },
+    "displacement_l": {
+     "value": 5.1,
+     "sources": [
+      {
+       "name": "Wikipedia - Ford Y-block engine",
+       "url": "https://en.wikipedia.org/wiki/Ford_Y-block_engine",
+       "says": "312 cu in (5.1 L)"
+      },
+      {
+       "name": "Over-Drive Magazine 1957 Ford cars fact sheet",
+       "url": "https://over-drive-magazine.com/2025/06/01/1957-ford-cars-fact-sheet/",
+       "says": "312 cubic inches (converted)"
+      },
+      {
+       "name": "Ford Performance (fordracing.com) - Ford Y-Blocks (Ford's own history article)",
+       "url": "https://www.fordracing.com/articles/enthusiasts/newsroom/2024/12/ford-y-blocks",
+       "says": "312 cubic inches (converted)"
+      }
+     ],
+     "note": "312 ci = 5,113 cc."
+    },
+    "num_cylinders": {
+     "value": 8,
+     "sources": [
+      {
+       "name": "Over-Drive Magazine 1957 Ford cars fact sheet",
+       "url": "https://over-drive-magazine.com/2025/06/01/1957-ford-cars-fact-sheet/",
+       "says": "312 CID V-8"
+      },
+      {
+       "name": "Wikipedia - Ford Y-block engine",
+       "url": "https://en.wikipedia.org/wiki/Ford_Y-block_engine",
+       "says": "V8"
+      },
+      {
+       "name": "Ford Performance (fordracing.com) - Ford Y-Blocks (Ford's own history article)",
+       "url": "https://www.fordracing.com/articles/enthusiasts/newsroom/2024/12/ford-y-blocks",
+       "says": "312 cubic inches (Y-block V8)"
+      }
+     ],
+     "note": ""
+    },
+    "configuration": {
+     "value": "V8 (90-degree Y-block)",
+     "sources": [
+      {
+       "name": "Over-Drive Magazine 1957 Ford cars fact sheet",
+       "url": "https://over-drive-magazine.com/2025/06/01/1957-ford-cars-fact-sheet/",
+       "says": "312 CID V-8"
+      },
+      {
+       "name": "Wikipedia - Ford Y-block engine",
+       "url": "https://en.wikipedia.org/wiki/Ford_Y-block_engine",
+       "says": "Small-block OHV V8; deep skirting makes the block resemble a Y"
+      },
+      {
+       "name": "Ford Performance (fordracing.com) - Ford Y-Blocks (Ford's own history article)",
+       "url": "https://www.fordracing.com/articles/enthusiasts/newsroom/2024/12/ford-y-blocks",
+       "says": "Y-block V8"
+      },
+      {
+       "name": "Engine Labs - Historic Engines: The Ford Y-Block V8 of the 1950s",
+       "url": "https://www.enginelabs.com/news/historic-engines-the-ford-y-block-v8-of-the-1950s/",
+       "says": "Ford Y-block V8"
+      }
+     ],
+     "note": ""
+    },
+    "valvetrain": {
+     "value": "OHV, 2 valves per cylinder, shaft-mounted rockers, mechanical lifters",
+     "sources": [
+      {
+       "name": "Over-Drive Magazine 1957 Ford cars fact sheet",
+       "url": "https://over-drive-magazine.com/2025/06/01/1957-ford-cars-fact-sheet/",
+       "says": "Overhead valves ... Valve lifters: Mechanical"
+      },
+      {
+       "name": "Wikipedia - Ford Y-block engine",
+       "url": "https://en.wikipedia.org/wiki/Ford_Y-block_engine",
+       "says": "overhead valve V8 ... oil fed to the rocker arm shafts"
+      },
+      {
+       "name": "Ford Performance (fordracing.com) - Ford Y-Blocks (Ford's own history article)",
+       "url": "https://www.fordracing.com/articles/enthusiasts/newsroom/2024/12/ford-y-blocks",
+       "says": "Overhead-valve arrangement ... mushroom tappets"
+      },
+      {
+       "name": "Engine Labs - Historic Engines: The Ford Y-Block V8 of the 1950s",
+       "url": "https://www.enginelabs.com/news/historic-engines-the-ford-y-block-v8-of-the-1950s/",
+       "says": "Solid lifters were employed"
+      }
+     ],
+     "note": "2 valves/cyl implicit (conventional OHV); no source states the count."
+    },
+    "block_material": {
+     "value": "cast iron",
+     "sources": [
+      {
+       "name": "Over-Drive Magazine 1957 Ford cars fact sheet",
+       "url": "https://over-drive-magazine.com/2025/06/01/1957-ford-cars-fact-sheet/",
+       "says": "Cast iron block. Five main bearings."
+      },
+      {
+       "name": "Ford Performance (fordracing.com) - Ford Y-Blocks (Ford's own history article)",
+       "url": "https://www.fordracing.com/articles/enthusiasts/newsroom/2024/12/ford-y-blocks",
+       "says": "cast iron"
+      },
+      {
+       "name": "The Classic Ford - 1957 Ford Engines (archived)",
+       "url": "https://web.archive.org/web/2017/http://www.theclassicford.com/1957_ford_engines.htm",
+       "says": "Cast-Iron, Overhead valve design ... 5 Main bearings"
+      }
+     ],
+     "note": ""
+    },
+    "induction": {
+     "value": "carburetor: 4-bbl Holley; 1957 options of 2x4-bbl (E-code) and McCulloch/Paxton supercharger with 4-bbl (F-code)",
+     "sources": [
+      {
+       "name": "Over-Drive Magazine 1957 Ford cars fact sheet",
+       "url": "https://over-drive-magazine.com/2025/06/01/1957-ford-cars-fact-sheet/",
+       "says": "Holley 4150 four-barrel; two Holley 4000 four-barrels; Holley 4000 four-barrel (pressurized) with supercharger"
+      },
+      {
+       "name": "Wikipedia - Ford Y-block engine",
+       "url": "https://en.wikipedia.org/wiki/Ford_Y-block_engine",
+       "says": "single two- or four-barrel Holley, two four-barrel carburetors and with or without a McCulloch (Paxton) supercharger (1957 only)"
+      },
+      {
+       "name": "Ford Performance (fordracing.com) - Ford Y-Blocks (Ford's own history article)",
+       "url": "https://www.fordracing.com/articles/enthusiasts/newsroom/2024/12/ford-y-blocks",
+       "says": "245 hp (single carb); 270-385 hp (dual-carb options); 300 hp supercharged"
+      },
+      {
+       "name": "Mac's Motor City Garage - Market Watch: 1957 Ford Phase 1 Supercharged",
+       "url": "https://macsmotorcitygarage.com/market-watch-1957-ford-phase-1-supercharged/",
+       "says": "F-Code cars ... displacement of 312 cubic inches and boost capping out at around six psi ... nominally rated at 300 horsepower; Paxton-McCulloch VR57 blower"
+      }
+     ],
+     "note": ""
+    },
+    "years": {
+     "value": "1956-1957 in Ford cars (Mercury through 1960)",
+     "sources": [
+      {
+       "name": "Over-Drive Magazine 1956 Ford cars fact sheet",
+       "url": "https://over-drive-magazine.com/2022/09/20/1956-ford-cars-fact-sheet/",
+       "says": "This was the first year for the 312 CID 'Thunderbird Special' V-8"
+      },
+      {
+       "name": "Over-Drive Magazine 1958 Ford cars fact sheet",
+       "url": "https://over-drive-magazine.com/2025/09/17/1958-ford-cars-fact-sheet/",
+       "says": "the FE ... replaced the previous 'Thunderbird' 312 CID performance engines"
+      },
+      {
+       "name": "Wikipedia - Ford Y-block engine",
+       "url": "https://en.wikipedia.org/wiki/Ford_Y-block_engine",
+       "says": "came out for the 1956 model year ... last regular application ... certain 1960 Mercury models"
+      },
+      {
+       "name": "Ford Performance (fordracing.com) - Ford Y-Blocks (Ford's own history article)",
+       "url": "https://www.fordracing.com/articles/enthusiasts/newsroom/2024/12/ford-y-blocks",
+       "says": "312 ... Years: 1956-1960"
+      }
+     ],
+     "note": "Ford-car span 1956-57 rests on Over-Drive, Wikipedia and Ford's brochures; Mercury use through 1960 on Wikipedia and Ford Performance only."
+    }
+   },
+   "variants": [
+    {
+     "year": 1956,
+     "hp": 215,
+     "hp_basis": "gross",
+     "compression_ratio": 8.4,
+     "code": "P-code (manual/overdrive)",
+     "induction": "4-bbl Holley",
+     "sources": [
+      {
+       "name": "Ford 1956 brochure (spec page) + revised 1956 brochure",
+       "url": "https://oldcarbrochures.org/United%20States/Ford/1956%20Ford/1956-Ford-Brochure/index.html",
+       "says": "revised 1956 brochure adds 'Thunderbird Special' 312 V-8 (only the 225-hp Fordomatic rating is legible)"
+      },
+      {
+       "name": "Over-Drive Magazine 1956 Ford cars fact sheet",
+       "url": "https://over-drive-magazine.com/2022/09/20/1956-ford-cars-fact-sheet/",
+       "says": "312 V-8 215 hp SMT; first offered with overdrive only, later standard manual"
+      },
+      {
+       "name": "The Classic Ford - 1956 Ford Engines (archived)",
+       "url": "https://web.archive.org/web/2017/http://www.theclassicford.com/1956_ford_engines.htm",
+       "says": "code P, 312 cid, 215 bhp"
+      },
+      {
+       "name": "Wikipedia - Ford Fairlane (Americas)",
+       "url": "https://en.wikipedia.org/wiki/Ford_Fairlane_(Americas)",
+       "says": "1956 Fairlane: new 312 V-8 option up to 225 bhp"
+      },
+      {
+       "name": "Engine Labs - Historic Engines: The Ford Y-Block V8 of the 1950s",
+       "url": "https://www.enginelabs.com/news/historic-engines-the-ford-y-block-v8-of-the-1950s/",
+       "says": "312: 210, 215, 225, 235, or 245 horsepower depending on the model year"
+      }
+     ],
+     "note": ""
+    },
+    {
+     "year": 1956,
+     "hp": 225,
+     "hp_basis": "gross",
+     "compression_ratio": 9.0,
+     "code": "P-code (Fordomatic)",
+     "induction": "4-bbl Holley",
+     "sources": [
+      {
+       "name": "Ford 1956 brochure (spec page) + revised 1956 brochure",
+       "url": "https://oldcarbrochures.org/United%20States/Ford/1956%20Ford/1956-Ford-Brochure/index.html",
+       "says": "revised brochure: 'now available in every Fairlane is the magnificent 225-h.p. Thunderbird Special V-8 teamed with Fordomatic'"
+      },
+      {
+       "name": "Over-Drive Magazine 1956 Ford cars fact sheet",
+       "url": "https://over-drive-magazine.com/2022/09/20/1956-ford-cars-fact-sheet/",
+       "says": "312 V-8 225 hp AMT"
+      },
+      {
+       "name": "The Classic Ford - 1956 Ford Engines (archived)",
+       "url": "https://web.archive.org/web/2017/http://www.theclassicford.com/1956_ford_engines.htm",
+       "says": "312 cid 225 bhp w/Ford-O-Matic"
+      },
+      {
+       "name": "Wikipedia - Ford Fairlane (Americas)",
+       "url": "https://en.wikipedia.org/wiki/Ford_Fairlane_(Americas)",
+       "says": "312 available up to 225 bhp"
+      },
+      {
+       "name": "Ford Performance (fordracing.com) - Ford Y-Blocks (Ford's own history article)",
+       "url": "https://www.fordracing.com/articles/enthusiasts/newsroom/2024/12/ford-y-blocks",
+       "says": "1956: 225 hp (four-barrel, 8.4:1 compression at 4600 rpm)"
+      }
+     ],
+     "note": "CR disputed: Over-Drive 9.0:1, Ford Performance 8.4:1 (The Classic Ford's 6.4:1 is a typo)."
+    },
+    {
+     "year": 1957,
+     "hp": 245,
+     "hp_basis": "gross",
+     "compression_ratio": 9.7,
+     "code": "D-code",
+     "induction": "4-bbl Holley",
+     "sources": [
+      {
+       "name": "Ford 1957 Fairlane brochure (10-56) + 1957 lineup foldout (04-57)",
+       "url": "https://oldcarbrochures.org/United%20States/Ford/1957_Ford/1957-Ford-Fairlane-Brochure%201956-10/index.html",
+       "says": "245-hp Thunderbird 312 Special V-8 optional in all series"
+      },
+      {
+       "name": "Over-Drive Magazine 1957 Ford cars fact sheet",
+       "url": "https://over-drive-magazine.com/2025/06/01/1957-ford-cars-fact-sheet/",
+       "says": "312 V-8 245 hp"
+      },
+      {
+       "name": "The Classic Ford - 1957 Ford Engines (archived)",
+       "url": "https://web.archive.org/web/2017/http://www.theclassicford.com/1957_ford_engines.htm",
+       "says": "code D, 312 cid, 245 bhp, 4-bbl"
+      },
+      {
+       "name": "Wikipedia - Ford Fairlane (Americas)",
+       "url": "https://en.wikipedia.org/wiki/Ford_Fairlane_(Americas)",
+       "says": "312 Thunderbird V8 listed for 1957 Fairlane"
+      },
+      {
+       "name": "Ford Performance (fordracing.com) - Ford Y-Blocks (Ford's own history article)",
+       "url": "https://www.fordracing.com/articles/enthusiasts/newsroom/2024/12/ford-y-blocks",
+       "says": "1957: 245 hp (single carb, 9.7:1)"
+      },
+      {
+       "name": "Old Cars Weekly - Vintage Muscle: the '57 Thunderbird F-Code",
+       "url": "https://www.oldcarsweekly.com/blogs/vintage-muscle-the-1957-thunderbird-f-code",
+       "says": "D-code: 312-cid V-8 with a four-barrel carburetor; F-code: 312 cid V-8 with four-barrel carburetor and a Paxton McCulloch VR57 supercharger; special head reduced compression to 8.5:1"
+      }
+     ],
+     "note": "Single four-barrel. Note: the 245-hp engine is the D-code; the dual-quad E-code is 270 hp."
+    },
+    {
+     "year": 1957,
+     "hp": 270,
+     "hp_basis": "gross",
+     "compression_ratio": 9.7,
+     "code": "E-code",
+     "induction": "2x4-bbl Holley",
+     "sources": [
+      {
+       "name": "Ford 1957 Fairlane brochure (10-56) + 1957 lineup foldout (04-57)",
+       "url": "https://oldcarbrochures.org/United%20States/Ford/1957_Ford/1957-Ford-Fairlane-Brochure%201956-10/index.html",
+       "says": "special high-performance 270-hp Thunderbird 312 Super V-8 (twin 4-venturi); 'all engines available in all models'"
+      },
+      {
+       "name": "Over-Drive Magazine 1957 Ford cars fact sheet",
+       "url": "https://over-drive-magazine.com/2025/06/01/1957-ford-cars-fact-sheet/",
+       "says": "312 V-8 270 hp"
+      },
+      {
+       "name": "Wikipedia - Ford Y-block engine",
+       "url": "https://en.wikipedia.org/wiki/Ford_Y-block_engine",
+       "says": "1957 312 offered with two four-barrel carburetors"
+      },
+      {
+       "name": "Sports Car Market - 1957 Ford Thunderbird E-code profile",
+       "url": "https://www.sportscarmarket.com/profile/1957-ford-thunderbird-e-code",
+       "says": "the optional 312-ci E-code variant, producing 270 horsepower through a modified Holley dual 4-barrel setup"
+      },
+      {
+       "name": "Ford Performance (fordracing.com) - Ford Y-Blocks (Ford's own history article)",
+       "url": "https://www.fordracing.com/articles/enthusiasts/newsroom/2024/12/ford-y-blocks",
+       "says": "1957: 270-385 hp (dual-carb options)"
+      }
+     ],
+     "note": ""
+    },
+    {
+     "year": 1957,
+     "hp": 300,
+     "hp_basis": "gross",
+     "compression_ratio": null,
+     "code": "F-code (supercharged)",
+     "induction": "4-bbl Holley + McCulloch/Paxton VR57 supercharger",
+     "sources": [
+      {
+       "name": "Ford 1957 Fairlane brochure (10-56) + 1957 lineup foldout (04-57)",
+       "url": "https://oldcarbrochures.org/United%20States/Ford/1957_Ford/1957-Ford-Fairlane-Brochure%201956-10/index.html",
+       "says": "lineup foldout (04-57): 'available in every Series, the special 300-hp Thunderbird 312 Supercharged V-8'"
+      },
+      {
+       "name": "Over-Drive Magazine 1957 Ford cars fact sheet",
+       "url": "https://over-drive-magazine.com/2025/06/01/1957-ford-cars-fact-sheet/",
+       "says": "312 Supercharged V-8 300 hp"
+      },
+      {
+       "name": "Wikipedia - Ford Y-block engine",
+       "url": "https://en.wikipedia.org/wiki/Ford_Y-block_engine",
+       "says": "312 offered with a McCulloch (Paxton) supercharger in 1957 only"
+      },
+      {
+       "name": "Mac's Motor City Garage - Market Watch: 1957 Ford Phase 1 Supercharged",
+       "url": "https://macsmotorcitygarage.com/market-watch-1957-ford-phase-1-supercharged/",
+       "says": "F-Code cars ... displacement of 312 cubic inches and boost capping out at around six psi ... nominally rated at 300 horsepower; Paxton-McCulloch VR57 blower"
+      },
+      {
+       "name": "Ford Performance (fordracing.com) - Ford Y-Blocks (Ford's own history article)",
+       "url": "https://www.fordracing.com/articles/enthusiasts/newsroom/2024/12/ford-y-blocks",
+       "says": "300 hp supercharged (street tune) or 340 hp (competition tune)"
+      }
+     ],
+     "note": "1957 only, mid-year. CR disputed: Over-Drive 8.6:1, Old Cars Weekly 8.5:1. Old Cars Weekly quotes 325-340 hp rather than the advertised 300; Mac's notes tests suggested nearer 400."
+    }
+   ],
+   "unverified": {
+    "head_material": "Cast iron: Ford Performance's Y-block article and The Classic Ford (engine-level 'Cast-Iron'). Only 2.",
+    "rod_length_in": "Not found in any acceptable source.",
+    "firing_order": "1-5-4-8-6-3-7-2 is widely quoted, but only forums and content farms turned up. Not counted.",
+    "fuel_type": "Gasoline (carbureted). Uncontested but no checked source states it explicitly.",
+    "compression_ratio": "Varies by year and transmission; see variants."
+   },
+   "unverified_variants": [
+    {
+     "year": 1957,
+     "hp": 285,
+     "hp_basis": "gross",
+     "compression_ratio": 10.0,
+     "code": "E-code (racing tune)",
+     "induction": "2x4-bbl",
+     "sources": [
+      {
+       "name": "Ford 1957 Fairlane brochure (10-56) + 1957 lineup foldout (04-57)",
+       "url": "https://oldcarbrochures.org/United%20States/Ford/1957_Ford/1957-Ford-Fairlane-Brochure%201956-10/index.html",
+       "says": "'extra-high-performance Thunderbird 312 Super V-8 delivering up to 285 hp'"
+      },
+      {
+       "name": "Over-Drive Magazine 1957 Ford cars fact sheet",
+       "url": "https://over-drive-magazine.com/2025/06/01/1957-ford-cars-fact-sheet/",
+       "says": "312 V-8 285 hp - NOT available to the general public, delivered to selected race teams"
+      },
+      {
+       "name": "Wikipedia - Ford Y-block engine",
+       "url": "https://en.wikipedia.org/wiki/Ford_Y-block_engine",
+       "says": "1957 312 with two four-barrels"
+      }
+     ],
+     "note": "Ford's 1957 Fairlane brochure advertises 'up to 285 hp'; Over-Drive says it went only to selected race teams. Treat as racing/special order."
+    },
+    {
+     "year": 1956,
+     "hp": 260,
+     "hp_basis": "gross",
+     "compression_ratio": 9.5,
+     "code": "dual-quad (special order)",
+     "induction": "2x4-bbl",
+     "sources": [
+      {
+       "name": "Over-Drive Magazine 1956 Ford cars fact sheet",
+       "url": "https://over-drive-magazine.com/2022/09/20/1956-ford-cars-fact-sheet/",
+       "says": "312 CID Dual 4-barrel V-8 (Special Order), code R, 9.5:1, 260 @ 4600; not fitted to Ford-O-Matic cars; made available July 1956"
+      },
+      {
+       "name": "Wikipedia - Ford Y-block engine",
+       "url": "https://en.wikipedia.org/wiki/Ford_Y-block_engine",
+       "says": "Mercury dealer-installed 'M 260' kit (January 1956) with two four-barrels advertised at 260 hp"
+      }
+     ],
+     "note": "Only Over-Drive documents it for Ford cars; Wikipedia's 260 is a Mercury kit."
+    },
+    {
+     "year": 1957,
+     "hp": 340,
+     "hp_basis": "gross",
+     "compression_ratio": 8.6,
+     "code": "F-code (NASCAR/race)",
+     "induction": "supercharged",
+     "sources": [
+      {
+       "name": "Over-Drive Magazine 1957 Ford cars fact sheet",
+       "url": "https://over-drive-magazine.com/2025/06/01/1957-ford-cars-fact-sheet/",
+       "says": "Thunderbird Supercharged (Race Only) V-8, 340 @ 5400; not available to the general public"
+      },
+      {
+       "name": "Ford Performance (fordracing.com) - Ford Y-Blocks (Ford's own history article)",
+       "url": "https://www.fordracing.com/articles/enthusiasts/newsroom/2024/12/ford-y-blocks",
+       "says": "340 hp (competition tune)"
+      }
+     ],
+     "note": "Race-only; 2 sources."
+    }
+   ]
+  },
+  {
+   "id": "ford-zetec-2-0",
+   "name": "Ford 2.0 Zetec DOHC 16-valve inline-four",
+   "fields": {
+    "bore_in": {
+     "value": 3.3386,
+     "sources": [
+      {
+       "name": "Wikipedia: Ford Zeta engine",
+       "url": "https://en.wikipedia.org/wiki/Ford_Zeta_engine",
+       "says": "The 2.0 L Zetec shared its 84.8 mm (3.339 in) bore and 88.0 mm (3.465 in) stroke with ... the 2.0 L 2-valve CVH"
+      },
+      {
+       "name": "MAHLE Motorsports piston spec sheet: Ford Zetec 2.0L SCCA",
+       "url": "https://www.mahle.com/media/usa/motorsports/ford-zetec-webpage-2.pdf",
+       "says": "Bore 3.339 (stock), Stroke 3.460, Rod 5.483"
+      },
+      {
+       "name": "UK Cougar Club: technical specifications (Ford Cougar 2.0 Zetec)",
+       "url": "https://ukcougar.club/pages/technical-specifications",
+       "says": "Bore 84.8mm"
+      },
+      {
+       "name": "Engine Builder (Doug Kaufman, May 2008): Labor Costing Study: Ford 2.0L Zetec",
+       "url": "https://www.enginebuildermag.com/?p=3071",
+       "says": "2.0L Zetec that had a 3.339\" (84.8 mm) bore"
+      }
+     ],
+     "note": "84.8 mm (Ford metric spec) = 3.3386 in. Engine Builder wording closely mirrors Wikipedia's; count them together if strict."
+    },
+    "stroke_in": {
+     "value": 3.4646,
+     "sources": [
+      {
+       "name": "Wikipedia: Ford Zeta engine",
+       "url": "https://en.wikipedia.org/wiki/Ford_Zeta_engine",
+       "says": "88.0 mm (3.465 in) stroke"
+      },
+      {
+       "name": "UK Cougar Club: technical specifications",
+       "url": "https://ukcougar.club/pages/technical-specifications",
+       "says": "Stroke 88.0mm"
+      },
+      {
+       "name": "Engine Builder (Doug Kaufman, 2008)",
+       "url": "https://www.enginebuildermag.com/?p=3071",
+       "says": "3.465\" (88 mm) stroke"
+      },
+      {
+       "name": "MAHLE Motorsports piston spec sheet",
+       "url": "https://www.mahle.com/media/usa/motorsports/ford-zetec-webpage-2.pdf",
+       "says": "Stroke 3.460"
+      }
+     ],
+     "note": "88.0 mm = 3.4646 in. MAHLE lists 3.460 (rounded). Engine Builder phrasing mirrors Wikipedia, so MAHLE serves as the independent third."
+    },
+    "displacement_ci": {
+     "value": 121,
+     "sources": [
+      {
+       "name": "Ford: 2002 Mercury Cougar Owner's Guide, Engine Data table (p.201) [Ford material = one source with brochure/Ford Performance]",
+       "url": "https://www.manua.ls/mercury/cougar-2002/manual?p=201",
+       "says": "Engine 2.0L: Cubic inches 121"
+      },
+      {
+       "name": "Consumer Guide: 1999-02 Mercury Cougar",
+       "url": "https://consumerguide.com/used/1999-02-mercury-cougar/",
+       "says": "dohc I4, Engine Size (liters/cubic inches) 2.0/121"
+      },
+      {
+       "name": "The Auto Channel (Matt/Bob Hagin): 2000 Ford Focus review",
+       "url": "https://www.theautochannel.com/vehicles/new/reviews/2000/gap0018.html",
+       "says": "DOHC 16-valve 2.0 Liter I4 w/SEFI, 121 cid/1988 cc"
+      },
+      {
+       "name": "Wikipedia: Ford Zeta engine",
+       "url": "https://en.wikipedia.org/wiki/Ford_Zeta_engine",
+       "says": "1988 cc / 1989 cc (121.3-121.4 cu in)"
+      }
+     ],
+     "note": "84.8 x 88.0 mm x 4 = 1988 cc = 121.3 ci. Ford quotes 1988 or 1989 cc in different documents. The 122 ci figure (Auto123, task note) is a rounding error; 121 is correct."
+    },
+    "displacement_l": {
+     "value": 2.0,
+     "sources": [
+      {
+       "name": "Mercury 2000 Cougar brochure, specifications page (p.11 image)",
+       "url": "https://oldcarbrochures.org/United%20States/Mercury/2000-Mercury/2000%20Mercury%20Cougar-2022-10-1%2010.12.25/index.html",
+       "says": "Displacement 2.0 liter"
+      },
+      {
+       "name": "Consumer Guide",
+       "url": "https://consumerguide.com/used/1999-02-mercury-cougar/",
+       "says": "2.0/121"
+      },
+      {
+       "name": "Machine Design: 1999 Mercury Cougar",
+       "url": "https://www.machinedesign.com/archive/article/21818535/1999-mercury-cougar",
+       "says": "standard 2.0-liter 16-valve Zetec"
+      },
+      {
+       "name": "EPA fueleconomy.gov: 1999 Mercury Cougar (15000)",
+       "url": "https://www.fueleconomy.gov/ws/rest/vehicle/15000",
+       "says": "displ 2.0, 4 cyl"
+      },
+      {
+       "name": "Wikipedia: Mercury Cougar",
+       "url": "https://en.wikipedia.org/wiki/Mercury_Cougar",
+       "says": "2.0 L Zetec straight-4"
+      }
+     ],
+     "note": ""
+    },
+    "num_cylinders": {
+     "value": 4,
+     "sources": [
+      {
+       "name": "Mercury 2000 Cougar brochure, specifications page (p.11 image)",
+       "url": "https://oldcarbrochures.org/United%20States/Mercury/2000-Mercury/2000%20Mercury%20Cougar-2022-10-1%2010.12.25/index.html",
+       "says": "DOHC 16-valve Zetec I-4"
+      },
+      {
+       "name": "EPA fueleconomy.gov (15000)",
+       "url": "https://www.fueleconomy.gov/ws/rest/vehicle/15000",
+       "says": "cylinders 4"
+      },
+      {
+       "name": "Consumer Guide",
+       "url": "https://consumerguide.com/used/1999-02-mercury-cougar/",
+       "says": "dohc I4"
+      },
+      {
+       "name": "Wikipedia: Ford Zeta engine",
+       "url": "https://en.wikipedia.org/wiki/Ford_Zeta_engine",
+       "says": "configuration I4"
+      }
+     ],
+     "note": ""
+    },
+    "configuration": {
+     "value": "inline-four",
+     "sources": [
+      {
+       "name": "Mercury 2000 Cougar brochure, specifications page (p.11 image)",
+       "url": "https://oldcarbrochures.org/United%20States/Mercury/2000-Mercury/2000%20Mercury%20Cougar-2022-10-1%2010.12.25/index.html",
+       "says": "Zetec I-4"
+      },
+      {
+       "name": "Consumer Guide",
+       "url": "https://consumerguide.com/used/1999-02-mercury-cougar/",
+       "says": "dohc I4"
+      },
+      {
+       "name": "Wikipedia: Ford Zeta engine",
+       "url": "https://en.wikipedia.org/wiki/Ford_Zeta_engine",
+       "says": "straight four, double overhead cam"
+      }
+     ],
+     "note": "Transverse, front-wheel drive in the Cougar."
+    },
+    "valvetrain": {
+     "value": "DOHC, 4 valves per cylinder (16-valve)",
+     "sources": [
+      {
+       "name": "Mercury 2000 Cougar brochure, specifications page (p.11 image)",
+       "url": "https://oldcarbrochures.org/United%20States/Mercury/2000-Mercury/2000%20Mercury%20Cougar-2022-10-1%2010.12.25/index.html",
+       "says": "DOHC 16-valve Zetec I-4"
+      },
+      {
+       "name": "Machine Design",
+       "url": "https://www.machinedesign.com/archive/article/21818535/1999-mercury-cougar",
+       "says": "2.0-liter 16-valve Zetec"
+      },
+      {
+       "name": "Consumer Guide",
+       "url": "https://consumerguide.com/used/1999-02-mercury-cougar/",
+       "says": "dohc I4"
+      },
+      {
+       "name": "Wikipedia: Ford Zeta engine",
+       "url": "https://en.wikipedia.org/wiki/Ford_Zeta_engine",
+       "says": "16 Valve DOHC head"
+      }
+     ],
+     "note": "US-market Zetec (ZX2/Contour/Cougar) has variable exhaust-cam timing per Wikipedia (single source)."
+    },
+    "block_material": {
+     "value": "cast iron",
+     "sources": [
+      {
+       "name": "Ford Performance: Ford Engine History (PDF)",
+       "url": "https://performanceparts.ford.com/download/pdfs/EngineHistory.pdf",
+       "says": "1.8L/2.0L DOHC Zetec engines ... this iron-block four-valve was developed for the 1994 Mondeo/Contour"
+      },
+      {
+       "name": "Wikipedia: Ford Zeta engine",
+       "url": "https://en.wikipedia.org/wiki/Ford_Zeta_engine",
+       "says": "block: Cast iron"
+      },
+      {
+       "name": "UK Cougar Club: technical specifications",
+       "url": "https://ukcougar.club/pages/technical-specifications",
+       "says": "Cylinder block: Cast iron"
+      }
+     ],
+     "note": ""
+    },
+    "induction": {
+     "value": "sequential multi-port electronic fuel injection",
+     "sources": [
+      {
+       "name": "Mercury 2000 Cougar brochure, specifications page (p.11 image)",
+       "url": "https://oldcarbrochures.org/United%20States/Mercury/2000-Mercury/2000%20Mercury%20Cougar-2022-10-1%2010.12.25/index.html",
+       "says": "Fuel delivery: Sequential multi-port electronic fuel injection"
+      },
+      {
+       "name": "Wikipedia: Ford Zeta engine",
+       "url": "https://en.wikipedia.org/wiki/Ford_Zeta_engine",
+       "says": "fuelsystem: Multi-port fuel injection"
+      },
+      {
+       "name": "UK Cougar Club",
+       "url": "https://ukcougar.club/pages/technical-specifications",
+       "says": "Sequential electronic fuel injection (SEFI)"
+      },
+      {
+       "name": "The Auto Channel: 2000 Ford Focus",
+       "url": "https://www.theautochannel.com/vehicles/new/reviews/2000/gap0018.html",
+       "says": "2.0 Liter I4 w/SEFI"
+      }
+     ],
+     "note": "Naturally aspirated."
+    },
+    "fuel_type": {
+     "value": "gasoline (87 octane regular)",
+     "sources": [
+      {
+       "name": "Ford: 2002 Mercury Cougar Owner's Guide, Engine Data table (p.201) [Ford material = one source with brochure/Ford Performance]",
+       "url": "https://www.manua.ls/mercury/cougar-2002/manual?p=201",
+       "says": "Required fuel 87 octane"
+      },
+      {
+       "name": "EPA fueleconomy.gov (15000)",
+       "url": "https://www.fueleconomy.gov/ws/rest/vehicle/15000",
+       "says": "fuelType1 Regular Gasoline"
+      },
+      {
+       "name": "Wikipedia: Ford Zeta engine",
+       "url": "https://en.wikipedia.org/wiki/Ford_Zeta_engine",
+       "says": "fueltype Gasoline"
+      }
+     ],
+     "note": ""
+    }
+   },
+   "variants": [
+    {
+     "year": 1999,
+     "hp": 125,
+     "hp_basis": "net",
+     "rpm": 5500,
+     "compression_ratio": 9.6,
+     "code": "Cougar 2.0 Zetec I-4 (base)",
+     "induction": "sequential multi-port EFI",
+     "sources": [
+      {
+       "name": "Consumer Guide: 1999-02 Mercury Cougar",
+       "url": "https://consumerguide.com/used/1999-02-mercury-cougar/",
+       "says": "dohc I4 2.0/121, Engine HP 125 (all years 1999-02)"
+      },
+      {
+       "name": "Wikipedia: Mercury Cougar",
+       "url": "https://en.wikipedia.org/wiki/Mercury_Cougar",
+       "says": "1999-2002 ... 2.0 L Zetec straight-4 engine with 125 hp"
+      },
+      {
+       "name": "Machine Design: 1999 Mercury Cougar",
+       "url": "https://www.machinedesign.com/archive/article/21818535/1999-mercury-cougar",
+       "says": "standard 2.0-liter 16-valve Zetec engine delivers 125 hp at 5,500 rpm"
+      }
+     ],
+     "note": "Auto123 used-car review claims 130 hp @ 6000 for 1999-2000; contradicted by Mercury's own 2000 brochure (125 @ 5500) and all other sources - likely confused with the 130 hp Escort ZX2 tune. CR 9.6:1 per Ford brochure/Wikipedia only (engine-level CR unverified)."
+    },
+    {
+     "year": 2000,
+     "hp": 125,
+     "hp_basis": "net",
+     "rpm": 5500,
+     "compression_ratio": 9.6,
+     "code": "Cougar 2.0 Zetec I-4 (base)",
+     "induction": "sequential multi-port EFI",
+     "sources": [
+      {
+       "name": "Mercury 2000 Cougar brochure, specifications",
+       "url": "https://oldcarbrochures.org/United%20States/Mercury/2000-Mercury/2000%20Mercury%20Cougar-2022-10-1%2010.12.25/index.html",
+       "says": "Zetec I-4 2.0 liter, Horsepower (SAE net) 125 @ 5500 rpm, CR 9.6:1"
+      },
+      {
+       "name": "Consumer Guide: 1999-02 Mercury Cougar",
+       "url": "https://consumerguide.com/used/1999-02-mercury-cougar/",
+       "says": "dohc I4 2.0/121, Engine HP 125 (all years 1999-02)"
+      },
+      {
+       "name": "Wikipedia: Mercury Cougar",
+       "url": "https://en.wikipedia.org/wiki/Mercury_Cougar",
+       "says": "1999-2002 ... 2.0 L Zetec straight-4 engine with 125 hp"
+      },
+      {
+       "name": "Consumer Reports: 2000 Mercury Cougar overview",
+       "url": "https://espanol.consumerreports.org/cars/mercury/cougar/2000/overview",
+       "says": "The Cougar comes with a 2.0-liter, 125-hp Four or a 2.5-liter, 170-hp V6"
+      }
+     ],
+     "note": "Auto123 used-car review claims 130 hp @ 6000 for 1999-2000; contradicted by Mercury's own 2000 brochure (125 @ 5500) and all other sources - likely confused with the 130 hp Escort ZX2 tune. CR 9.6:1 per Ford brochure/Wikipedia only (engine-level CR unverified)."
+    },
+    {
+     "year": 2001,
+     "hp": 125,
+     "hp_basis": "net",
+     "rpm": 5500,
+     "compression_ratio": 9.6,
+     "code": "Cougar 2.0 Zetec I-4 (base)",
+     "induction": "sequential multi-port EFI",
+     "sources": [
+      {
+       "name": "Consumer Guide: 1999-02 Mercury Cougar",
+       "url": "https://consumerguide.com/used/1999-02-mercury-cougar/",
+       "says": "dohc I4 2.0/121, Engine HP 125 (all years 1999-02)"
+      },
+      {
+       "name": "Wikipedia: Mercury Cougar",
+       "url": "https://en.wikipedia.org/wiki/Mercury_Cougar",
+       "says": "1999-2002 ... 2.0 L Zetec straight-4 engine with 125 hp"
+      },
+      {
+       "name": "Consumer Reports: 2001 Mercury Cougar overview",
+       "url": "https://espanol.consumerreports.org/cars/mercury/cougar/2001/overview",
+       "says": "The Cougar comes with a 2.0-liter, 125-hp Four or a 2.5-liter, 170-hp V6"
+      }
+     ],
+     "note": "CR 9.6:1 per Ford brochure/Wikipedia only (engine-level CR unverified)."
+    },
+    {
+     "year": 2002,
+     "hp": 125,
+     "hp_basis": "net",
+     "rpm": 5500,
+     "compression_ratio": 9.6,
+     "code": "Cougar 2.0 Zetec I-4 (base)",
+     "induction": "sequential multi-port EFI",
+     "sources": [
+      {
+       "name": "Consumer Guide: 1999-02 Mercury Cougar",
+       "url": "https://consumerguide.com/used/1999-02-mercury-cougar/",
+       "says": "dohc I4 2.0/121, Engine HP 125 (all years 1999-02)"
+      },
+      {
+       "name": "Wikipedia: Mercury Cougar",
+       "url": "https://en.wikipedia.org/wiki/Mercury_Cougar",
+       "says": "1999-2002 ... 2.0 L Zetec straight-4 engine with 125 hp"
+      },
+      {
+       "name": "Consumer Reports: 2002 Mercury Cougar overview",
+       "url": "https://espanol.consumerreports.org/cars/mercury/cougar/2002/overview",
+       "says": "The Cougar comes with a 2.0-liter, 125-hp Four or a 2.5-liter, 170-hp V6"
+      }
+     ],
+     "note": "CR 9.6:1 per Ford brochure/Wikipedia only (engine-level CR unverified)."
+    }
+   ],
+   "unverified": {
+    "compression_ratio": "9.6:1 for the US Cougar 2.0 per Mercury 2000 Cougar brochure spec page (read from page image) and Wikipedia Zeta infobox (lists 9.6:1 and 10.2:1, the latter SVT Focus). Only 2 sources. UK Cougar Club says 10.0:1 for the European Ford Cougar 2.0 Zetec-E (130 PS tune) - different market tune; do not mix.",
+    "head_material": "aluminum - Wikipedia ('head: Aluminum') and UK Cougar Club ('Precision die cast aluminium alloy'); no third independent source found.",
+    "firing_order": "1-3-4-2 - Ford 2002 Mercury Cougar Owner's Guide Engine Data table only (https://www.manua.ls/mercury/cougar-2002/manual?p=201). Not in Wikipedia; no Chilton/Haynes excerpt reachable.",
+    "rod_length_in": "5.483 in (~139.3 mm) - MAHLE Motorsports Zetec 2.0L piston sheet only. Single source.",
+    "years": "Zeta/Zetec family 1991 - Dec 2004 (Wikipedia; final Zeta-Zetec built Dec 10, 2004 at Bridgend). North American 2.0 applications: Contour/Mystique 1995-2000, Escort ZX2 1998-2003, Cougar 1999-2002, Focus 2000-2004, Escape/Tribute 2001-2004 (Wikipedia); Engine Builder (2008) lists Focus/Escape 2000-2003; Ford Engine History says developed for the 1994 Mondeo/Contour. Start/end years not confirmed by 3 agreeing sources. Cougar use 1999-2002 is confirmed (Wikipedia, Consumer Guide, EPA, Engine Builder)."
+   },
+   "unverified_variants": []
+  },
+  {
+   "id": "ford-duratec-2-5",
+   "name": "Ford 2.5 Duratec 25 DOHC 24-valve 60-degree V6",
+   "fields": {
+    "bore_in": {
+     "value": 3.2441,
+     "sources": [
+      {
+       "name": "Wikipedia: Ford Duratec V6 engine",
+       "url": "https://en.wikipedia.org/wiki/Ford_Duratec_V6_engine",
+       "says": "Duratec 25 ... Bore and stroke is 82.4 x 79.5 mm (3.24 x 3.13 in)"
+      },
+      {
+       "name": "Tomorrow's Technician (Larry Carley, 2012): Engine Series: A Decade of the Duratec 30",
+       "url": "https://www.tomorrowstechnician.com/engine-series-a-decade-of-the-duratec-30/",
+       "says": "same 79.5 mm stroke crankshaft, but the 3.0L engine has larger cylinder bores (89 mm versus 82.4 mm in the 2.5L Duratec)"
+      },
+      {
+       "name": "UK Cougar Club: technical specifications (Ford Cougar 2.5 V6)",
+       "url": "https://ukcougar.club/pages/technical-specifications",
+       "says": "Bore 82.4mm"
+      }
+     ],
+     "note": "82.4 mm = 3.2441 in. (Wikipedia elsewhere gives 82.42 mm; parts catalogs show 82.3 mm.)"
+    },
+    "stroke_in": {
+     "value": 3.1299,
+     "sources": [
+      {
+       "name": "Wikipedia: Ford Duratec V6 engine",
+       "url": "https://en.wikipedia.org/wiki/Ford_Duratec_V6_engine",
+       "says": "82.4 x 79.5 mm"
+      },
+      {
+       "name": "Tomorrow's Technician (Larry Carley)",
+       "url": "https://www.tomorrowstechnician.com/engine-series-a-decade-of-the-duratec-30/",
+       "says": "same 79.5 mm stroke crankshaft"
+      },
+      {
+       "name": "UK Cougar Club",
+       "url": "https://ukcougar.club/pages/technical-specifications",
+       "says": "Stroke 79.5mm"
+      }
+     ],
+     "note": "79.5 mm = 3.1299 in."
+    },
+    "displacement_ci": {
+     "value": 155,
+     "sources": [
+      {
+       "name": "Consumer Guide: 1999-02 Mercury Cougar",
+       "url": "https://consumerguide.com/used/1999-02-mercury-cougar/",
+       "says": "dohc V6, 2.5/155"
+      },
+      {
+       "name": "The Auto Channel: 1998 Ford Contour review (spec box)",
+       "url": "https://theautochannel.com/vehicles/new/reviews/1998/russ091297.html",
+       "says": "2.5 liters / 155 cu. in."
+      },
+      {
+       "name": "Wikipedia: Ford Duratec V6 engine",
+       "url": "https://en.wikipedia.org/wiki/Ford_Duratec_V6_engine",
+       "says": "2.5 L (2544 cc) [155.2 cu in]"
+      }
+     ],
+     "note": "2544 cc = 155.2 ci. Disagreement: the Ford 2002 Cougar Owner's Guide Engine Data table prints 'Cubic inches 152' for the 2.5L - inconsistent with 82.4 x 79.5 mm x 6."
+    },
+    "displacement_l": {
+     "value": 2.5,
+     "sources": [
+      {
+       "name": "Mercury 2000 Cougar brochure, specifications",
+       "url": "https://oldcarbrochures.org/United%20States/Mercury/2000-Mercury/2000%20Mercury%20Cougar-2022-10-1%2010.12.25/index.html",
+       "says": "Displacement 2.5 liter"
+      },
+      {
+       "name": "Consumer Guide",
+       "url": "https://consumerguide.com/used/1999-02-mercury-cougar/",
+       "says": "2.5/155"
+      },
+      {
+       "name": "Machine Design: 1999 Mercury Cougar",
+       "url": "https://www.machinedesign.com/archive/article/21818535/1999-mercury-cougar",
+       "says": "24-valve 2.5-liter Duratec V6"
+      },
+      {
+       "name": "EPA fueleconomy.gov (15002)",
+       "url": "https://www.fueleconomy.gov/ws/rest/vehicle/15002",
+       "says": "displ 2.5, 6 cyl"
+      },
+      {
+       "name": "Wikipedia: Ford Duratec V6 engine",
+       "url": "https://en.wikipedia.org/wiki/Ford_Duratec_V6_engine",
+       "says": "2.5 L (2544 cc)"
+      }
+     ],
+     "note": "2544 cc (Wikipedia, UK Cougar Club)."
+    },
+    "num_cylinders": {
+     "value": 6,
+     "sources": [
+      {
+       "name": "Mercury 2000 Cougar brochure",
+       "url": "https://oldcarbrochures.org/United%20States/Mercury/2000-Mercury/2000%20Mercury%20Cougar-2022-10-1%2010.12.25/index.html",
+       "says": "DOHC 24-valve Duratec V6"
+      },
+      {
+       "name": "EPA fueleconomy.gov (15002)",
+       "url": "https://www.fueleconomy.gov/ws/rest/vehicle/15002",
+       "says": "cylinders 6"
+      },
+      {
+       "name": "Consumer Guide",
+       "url": "https://consumerguide.com/used/1999-02-mercury-cougar/",
+       "says": "dohc V6"
+      }
+     ],
+     "note": ""
+    },
+    "configuration": {
+     "value": "V6 (60-degree)",
+     "sources": [
+      {
+       "name": "Wikipedia: Ford Duratec V6 engine",
+       "url": "https://en.wikipedia.org/wiki/Ford_Duratec_V6_engine",
+       "says": "2.5 L (2544 cc) 60 deg V6"
+      },
+      {
+       "name": "Tomorrow's Technician (Larry Carley)",
+       "url": "https://www.tomorrowstechnician.com/engine-series-a-decade-of-the-duratec-30/",
+       "says": "the 2.5L Duratec 60 deg V6 that was introduced in the 1994 Ford Contour"
+      },
+      {
+       "name": "Mercury 2000 Cougar brochure",
+       "url": "https://oldcarbrochures.org/United%20States/Mercury/2000-Mercury/2000%20Mercury%20Cougar-2022-10-1%2010.12.25/index.html",
+       "says": "Duratec V6"
+      },
+      {
+       "name": "Consumer Guide",
+       "url": "https://consumerguide.com/used/1999-02-mercury-cougar/",
+       "says": "dohc V6"
+      }
+     ],
+     "note": "V6 confirmed by 4 sources; the 60-degree bank angle by Wikipedia and Carley only."
+    },
+    "compression_ratio": {
+     "value": 9.7,
+     "sources": [
+      {
+       "name": "Mercury 2000 Cougar brochure, specifications (page image)",
+       "url": "https://oldcarbrochures.org/United%20States/Mercury/2000-Mercury/2000%20Mercury%20Cougar-2022-10-1%2010.12.25/index.html",
+       "says": "V6 Compression ratio 9.7:1"
+      },
+      {
+       "name": "UK Cougar Club",
+       "url": "https://ukcougar.club/pages/technical-specifications",
+       "says": "Compression ratio 9.7:1"
+      },
+      {
+       "name": "Wikipedia: Ford Duratec V6 engine",
+       "url": "https://en.wikipedia.org/wiki/Ford_Duratec_V6_engine",
+       "says": "compression 9.7:1-10.0:1 (family range)"
+      }
+     ],
+     "note": "9.7:1 for the Cougar 2.5; Wikipedia gives a family range 9.7-10.0:1."
+    },
+    "valvetrain": {
+     "value": "DOHC, 4 valves per cylinder (24-valve)",
+     "sources": [
+      {
+       "name": "Mercury 2000 Cougar brochure",
+       "url": "https://oldcarbrochures.org/United%20States/Mercury/2000-Mercury/2000%20Mercury%20Cougar-2022-10-1%2010.12.25/index.html",
+       "says": "DOHC 24-valve Duratec V6"
+      },
+      {
+       "name": "Machine Design",
+       "url": "https://www.machinedesign.com/archive/article/21818535/1999-mercury-cougar",
+       "says": "24-valve 2.5-liter Duratec V6"
+      },
+      {
+       "name": "Wikipedia: Ford Duratec V6 engine",
+       "url": "https://en.wikipedia.org/wiki/Ford_Duratec_V6_engine",
+       "says": "dual overhead cam ... 4 valves"
+      },
+      {
+       "name": "Australian Car Reviews: Ford Cougar 1999-04",
+       "url": "https://australiancar.reviews/review-ford-cougar-1999-04/",
+       "says": "double overhead camshafts, four valves per cylinder"
+      }
+     ],
+     "note": "Chain-driven cams, roller finger followers (Ford Engine History, UK Cougar Club)."
+    },
+    "block_material": {
+     "value": "aluminum (cast-iron cylinder liners)",
+     "sources": [
+      {
+       "name": "Ford Performance: Ford Engine History (PDF)",
+       "url": "https://performanceparts.ford.com/download/pdfs/EngineHistory.pdf",
+       "says": "2.0L/2.5L/3.0L DOHC 4V Duratec ... An aluminum block casting process was licensed from Cosworth"
+      },
+      {
+       "name": "Wikipedia: Ford Duratec V6 engine",
+       "url": "https://en.wikipedia.org/wiki/Ford_Duratec_V6_engine",
+       "says": "aluminum-block ... with cast iron cylinder liners"
+      },
+      {
+       "name": "The Auto Channel: 1998 Ford Contour review",
+       "url": "https://theautochannel.com/vehicles/new/reviews/1998/russ091297.html",
+       "says": "aluminum alloy V6, dual overhead cams, 24 valves"
+      },
+      {
+       "name": "Australian Car Reviews: Ford Cougar 1999-04",
+       "url": "https://australiancar.reviews/review-ford-cougar-1999-04/",
+       "says": "all-alloy construction"
+      },
+      {
+       "name": "Tomorrow's Technician (Larry Carley)",
+       "url": "https://www.tomorrowstechnician.com/engine-series-a-decade-of-the-duratec-30/",
+       "says": "aluminum block with cast-iron cylinder liners (3.0L, 'essentially a larger version of the 2.5L Duratec')"
+      }
+     ],
+     "note": ""
+    },
+    "head_material": {
+     "value": "aluminum",
+     "sources": [
+      {
+       "name": "Ford Performance: Ford Engine History (PDF)",
+       "url": "https://performanceparts.ford.com/download/pdfs/EngineHistory.pdf",
+       "says": "Roller finger follower (RFF) aluminum cylinder heads"
+      },
+      {
+       "name": "Wikipedia: Ford Duratec V6 engine",
+       "url": "https://en.wikipedia.org/wiki/Ford_Duratec_V6_engine",
+       "says": "head: Aluminum"
+      },
+      {
+       "name": "UK Cougar Club",
+       "url": "https://ukcougar.club/pages/technical-specifications",
+       "says": "Precision sand cast aluminium alloy (head)"
+      },
+      {
+       "name": "Australian Car Reviews",
+       "url": "https://australiancar.reviews/review-ford-cougar-1999-04/",
+       "says": "all-alloy construction"
+      }
+     ],
+     "note": ""
+    },
+    "induction": {
+     "value": "sequential multi-port electronic fuel injection",
+     "sources": [
+      {
+       "name": "Mercury 2000 Cougar brochure",
+       "url": "https://oldcarbrochures.org/United%20States/Mercury/2000-Mercury/2000%20Mercury%20Cougar-2022-10-1%2010.12.25/index.html",
+       "says": "Sequential multi-port electronic fuel injection"
+      },
+      {
+       "name": "Wikipedia: Ford Duratec V6 engine",
+       "url": "https://en.wikipedia.org/wiki/Ford_Duratec_V6_engine",
+       "says": "Sequential multi-port fuel injection"
+      },
+      {
+       "name": "UK Cougar Club",
+       "url": "https://ukcougar.club/pages/technical-specifications",
+       "says": "Sequential electronic fuel injection (SEFI) with top-fed low-inertia injectors"
+      }
+     ],
+     "note": "Naturally aspirated; dual-stage variable intake (Wikipedia, Australian Car Reviews)."
+    },
+    "fuel_type": {
+     "value": "gasoline (87 octane regular)",
+     "sources": [
+      {
+       "name": "Ford: 2002 Mercury Cougar Owner's Guide, Engine Data table (p.201) [Ford material = one source with brochure/Ford Performance]",
+       "url": "https://www.manua.ls/mercury/cougar-2002/manual?p=201",
+       "says": "2.5L Required fuel 87 octane"
+      },
+      {
+       "name": "EPA fueleconomy.gov (15002)",
+       "url": "https://www.fueleconomy.gov/ws/rest/vehicle/15002",
+       "says": "Regular Gasoline"
+      },
+      {
+       "name": "Wikipedia: Mercury Cougar",
+       "url": "https://en.wikipedia.org/wiki/Mercury_Cougar",
+       "says": "2.5 L Duratec V6 (gasoline)"
+      }
+     ],
+     "note": ""
+    }
+   },
+   "variants": [
+    {
+     "year": 1999,
+     "hp": 170,
+     "hp_basis": "net",
+     "rpm": 6250,
+     "compression_ratio": 9.7,
+     "code": "Cougar V6 2.5 Duratec",
+     "induction": "sequential multi-port EFI",
+     "sources": [
+      {
+       "name": "Consumer Guide: 1999-02 Mercury Cougar",
+       "url": "https://consumerguide.com/used/1999-02-mercury-cougar/",
+       "says": "dohc V6 2.5/155, Engine HP 170 (all years)"
+      },
+      {
+       "name": "Wikipedia: Mercury Cougar",
+       "url": "https://en.wikipedia.org/wiki/Mercury_Cougar",
+       "says": "2.5 L Duratec V6 with 170 hp"
+      },
+      {
+       "name": "Auto123: 1999-2002 Mercury Cougar used review",
+       "url": "https://www.auto123.com/en/news/1999-2002-mercury-cougar/54193/?page=3",
+       "says": "2.5-liter V6 constant 1999-2002: 170 hp @ 6250"
+      },
+      {
+       "name": "Machine Design: 1999 Mercury Cougar",
+       "url": "https://www.machinedesign.com/archive/article/21818535/1999-mercury-cougar",
+       "says": "optional 24-valve 2.5-liter Duratec V6 delivers 170 hp at 6,250 rpm"
+      }
+     ],
+     "note": ""
+    },
+    {
+     "year": 2000,
+     "hp": 170,
+     "hp_basis": "net",
+     "rpm": 6250,
+     "compression_ratio": 9.7,
+     "code": "Cougar V6 2.5 Duratec",
+     "induction": "sequential multi-port EFI",
+     "sources": [
+      {
+       "name": "Mercury 2000 Cougar brochure, specifications",
+       "url": "https://oldcarbrochures.org/United%20States/Mercury/2000-Mercury/2000%20Mercury%20Cougar-2022-10-1%2010.12.25/index.html",
+       "says": "Duratec V6 2.5 liter, 170 @ 6250 rpm, CR 9.7:1"
+      },
+      {
+       "name": "Consumer Guide: 1999-02 Mercury Cougar",
+       "url": "https://consumerguide.com/used/1999-02-mercury-cougar/",
+       "says": "dohc V6 2.5/155, Engine HP 170 (all years)"
+      },
+      {
+       "name": "Wikipedia: Mercury Cougar",
+       "url": "https://en.wikipedia.org/wiki/Mercury_Cougar",
+       "says": "2.5 L Duratec V6 with 170 hp"
+      },
+      {
+       "name": "Auto123: 1999-2002 Mercury Cougar used review",
+       "url": "https://www.auto123.com/en/news/1999-2002-mercury-cougar/54193/?page=3",
+       "says": "2.5-liter V6 constant 1999-2002: 170 hp @ 6250"
+      },
+      {
+       "name": "Consumer Reports: 2000 Mercury Cougar overview",
+       "url": "https://espanol.consumerreports.org/cars/mercury/cougar/2000/overview",
+       "says": "2.5-liter, 170-hp V6"
+      }
+     ],
+     "note": ""
+    },
+    {
+     "year": 2001,
+     "hp": 170,
+     "hp_basis": "net",
+     "rpm": 6250,
+     "compression_ratio": 9.7,
+     "code": "Cougar V6 2.5 Duratec",
+     "induction": "sequential multi-port EFI",
+     "sources": [
+      {
+       "name": "Consumer Guide: 1999-02 Mercury Cougar",
+       "url": "https://consumerguide.com/used/1999-02-mercury-cougar/",
+       "says": "dohc V6 2.5/155, Engine HP 170 (all years)"
+      },
+      {
+       "name": "Wikipedia: Mercury Cougar",
+       "url": "https://en.wikipedia.org/wiki/Mercury_Cougar",
+       "says": "2.5 L Duratec V6 with 170 hp"
+      },
+      {
+       "name": "Auto123: 1999-2002 Mercury Cougar used review",
+       "url": "https://www.auto123.com/en/news/1999-2002-mercury-cougar/54193/?page=3",
+       "says": "2.5-liter V6 constant 1999-2002: 170 hp @ 6250"
+      },
+      {
+       "name": "Consumer Reports: 2001 Mercury Cougar overview",
+       "url": "https://espanol.consumerreports.org/cars/mercury/cougar/2001/overview",
+       "says": "2.5-liter, 170-hp V6"
+      }
+     ],
+     "note": ""
+    },
+    {
+     "year": 2002,
+     "hp": 170,
+     "hp_basis": "net",
+     "rpm": 6250,
+     "compression_ratio": 9.7,
+     "code": "Cougar V6 2.5 Duratec",
+     "induction": "sequential multi-port EFI",
+     "sources": [
+      {
+       "name": "Consumer Guide: 1999-02 Mercury Cougar",
+       "url": "https://consumerguide.com/used/1999-02-mercury-cougar/",
+       "says": "dohc V6 2.5/155, Engine HP 170 (all years)"
+      },
+      {
+       "name": "Wikipedia: Mercury Cougar",
+       "url": "https://en.wikipedia.org/wiki/Mercury_Cougar",
+       "says": "2.5 L Duratec V6 with 170 hp"
+      },
+      {
+       "name": "Auto123: 1999-2002 Mercury Cougar used review",
+       "url": "https://www.auto123.com/en/news/1999-2002-mercury-cougar/54193/?page=3",
+       "says": "2.5-liter V6 constant 1999-2002: 170 hp @ 6250"
+      },
+      {
+       "name": "Consumer Reports: 2002 Mercury Cougar overview",
+       "url": "https://espanol.consumerreports.org/cars/mercury/cougar/2002/overview",
+       "says": "2.5-liter, 170-hp V6"
+      }
+     ],
+     "note": ""
+    }
+   ],
+   "unverified": {
+    "firing_order": "1-4-2-5-3-6 - Ford 2002 Mercury Cougar Owner's Guide Engine Data table (p.201) and Tomorrow's Technician/Larry Carley (stated for the Duratec 30 3.0L, which shares the architecture). Only 2 sources, and one is for the 3.0.",
+    "rod_length_in": "Not found in any reputable source.",
+    "years": "Wikipedia: Duratec 25 introduced 1994 (Mondeo/Contour); Carley: introduced in the 1994 Ford Contour; Ford Engine History: developed for the 1994 Contour. US applications Contour/Mystique 1995-2000, Cougar 1999-2002. End of 2544 cc production not confirmed (Wikipedia says Mazda MPV used a 2495 cc version; the Duratec family ran 1993-2012). Start (1994 / MY1995 in the US) has 3 sources; end year does not."
+   },
+   "unverified_variants": []
+  },
+  {
+   "id": "amc-290",
+   "name": "AMC 290 V8 (Gen 2 'Typhoon')",
+   "fields": {
+    "bore_in": {
+     "value": 3.75,
+     "sources": [
+      {
+       "name": "NHRA engine blueprint AMER-68",
+       "url": "https://www.nhra.net/tech_specs/engine/blueprints/AMER-68.rtf",
+       "says": "ameri_1968_290_200hp: 290 ci, 8 cyl, bore 3.75, stroke 3.28, rod 5.875, CR 9.0, 1x2-bbl, 1.6 rockers, hydraulic lifters; ameri_1968_290_225hp: CR 10.0, 1x4-bbl"
+      },
+      {
+       "name": "AMC 1968 full-line brochure (revised), Engines specification table [AMC]",
+       "url": "https://oldcarbrochures.org/United%20States/AMC/1968_AMC/1968%20AMC%20Full%20Line%20-%20Revised/index.html",
+       "says": "'290' V-8: 200 @ 4600, 2-Barrel, 9.0:1/Regular, 3.75\" x 3.28\"; 225 @ 4700, 4-Barrel, 10.0:1/Premium, 3.75\" x 3.28\""
+      },
+      {
+       "name": "Wikipedia - AMC V8 engine",
+       "url": "https://en.wikipedia.org/wiki/AMC_V8_engine",
+       "says": "290: bore and stroke 3.75 x 3.28 in; 200 or 225 hp with 2-bbl or 4-bbl; built mid-1966 through 1969; infobox OHV 2 valves x cyl, gasoline; table 1968/69 290-2B 9.0:1, 290-4B 10.0:1 (1967 290-2B 8.7:1)"
+      },
+      {
+       "name": "Mac's Motor City Garage - Inside the American Motors Gen 2/Gen 3 V8, 1966-91 (Bill McGuire)",
+       "url": "https://macsmotorcitygarage.com/inside-the-american-motors-gen-2-gen-3-v8-1966-91/",
+       "says": "290 introduced mid-season 1966 in the Rambler Rogue, 3.75-in bore and 3.28-in stroke; Gen 3 304/360 (1970) got a longer 3.440-in stroke"
+      },
+      {
+       "name": "Super Stock & Drag Illustrated, Aug 1972, AMC V8 article (reprinted on wagoneers.com; AHPS specification page repeats the same text, counted once)",
+       "url": "https://wagoneers.com/tech/Engines/SuperStockAndDragIllustrated-Aug-1972.html",
+       "says": "3.75\" bore and 3.28\" stroke for the 290; the 290-360 rods are all 5.875\" long; 1.787\" intake and 1.406\" exhaust valves; aluminum roller-tip rockers; hydraulic camshafts"
+      }
+     ],
+     "note": "95.3 mm"
+    },
+    "stroke_in": {
+     "value": 3.28,
+     "sources": [
+      {
+       "name": "NHRA engine blueprint AMER-68",
+       "url": "https://www.nhra.net/tech_specs/engine/blueprints/AMER-68.rtf",
+       "says": "ameri_1968_290_200hp: 290 ci, 8 cyl, bore 3.75, stroke 3.28, rod 5.875, CR 9.0, 1x2-bbl, 1.6 rockers, hydraulic lifters; ameri_1968_290_225hp: CR 10.0, 1x4-bbl"
+      },
+      {
+       "name": "AMC 1968 full-line brochure (revised), Engines specification table [AMC]",
+       "url": "https://oldcarbrochures.org/United%20States/AMC/1968_AMC/1968%20AMC%20Full%20Line%20-%20Revised/index.html",
+       "says": "'290' V-8: 200 @ 4600, 2-Barrel, 9.0:1/Regular, 3.75\" x 3.28\"; 225 @ 4700, 4-Barrel, 10.0:1/Premium, 3.75\" x 3.28\""
+      },
+      {
+       "name": "Wikipedia - AMC V8 engine",
+       "url": "https://en.wikipedia.org/wiki/AMC_V8_engine",
+       "says": "290: bore and stroke 3.75 x 3.28 in; 200 or 225 hp with 2-bbl or 4-bbl; built mid-1966 through 1969; infobox OHV 2 valves x cyl, gasoline; table 1968/69 290-2B 9.0:1, 290-4B 10.0:1 (1967 290-2B 8.7:1)"
+      },
+      {
+       "name": "Mac's Motor City Garage - Inside the American Motors Gen 2/Gen 3 V8, 1966-91 (Bill McGuire)",
+       "url": "https://macsmotorcitygarage.com/inside-the-american-motors-gen-2-gen-3-v8-1966-91/",
+       "says": "290 introduced mid-season 1966 in the Rambler Rogue, 3.75-in bore and 3.28-in stroke; Gen 3 304/360 (1970) got a longer 3.440-in stroke"
+      },
+      {
+       "name": "Super Stock & Drag Illustrated, Aug 1972, AMC V8 article (reprinted on wagoneers.com; AHPS specification page repeats the same text, counted once)",
+       "url": "https://wagoneers.com/tech/Engines/SuperStockAndDragIllustrated-Aug-1972.html",
+       "says": "3.75\" bore and 3.28\" stroke for the 290; the 290-360 rods are all 5.875\" long; 1.787\" intake and 1.406\" exhaust valves; aluminum roller-tip rockers; hydraulic camshafts"
+      }
+     ],
+     "note": "83.3 mm"
+    },
+    "displacement_ci": {
+     "value": 290,
+     "sources": [
+      {
+       "name": "NHRA engine blueprint AMER-68",
+       "url": "https://www.nhra.net/tech_specs/engine/blueprints/AMER-68.rtf",
+       "says": "ameri_1968_290_200hp: 290 ci, 8 cyl, bore 3.75, stroke 3.28, rod 5.875, CR 9.0, 1x2-bbl, 1.6 rockers, hydraulic lifters; ameri_1968_290_225hp: CR 10.0, 1x4-bbl"
+      },
+      {
+       "name": "AMC 1968 full-line brochure (revised), Engines specification table [AMC]",
+       "url": "https://oldcarbrochures.org/United%20States/AMC/1968_AMC/1968%20AMC%20Full%20Line%20-%20Revised/index.html",
+       "says": "'290' V-8: 200 @ 4600, 2-Barrel, 9.0:1/Regular, 3.75\" x 3.28\"; 225 @ 4700, 4-Barrel, 10.0:1/Premium, 3.75\" x 3.28\""
+      },
+      {
+       "name": "Wikipedia - AMC V8 engine",
+       "url": "https://en.wikipedia.org/wiki/AMC_V8_engine",
+       "says": "290: bore and stroke 3.75 x 3.28 in; 200 or 225 hp with 2-bbl or 4-bbl; built mid-1966 through 1969; infobox OHV 2 valves x cyl, gasoline; table 1968/69 290-2B 9.0:1, 290-4B 10.0:1 (1967 290-2B 8.7:1)"
+      },
+      {
+       "name": "conceptcarz - 1969 AMC Javelin specifications",
+       "url": "https://www.conceptcarz.com/s2626/amc-javelin.aspx",
+       "says": "289.8 cu in, 225 BHP @ 4700"
+      }
+     ],
+     "note": "Nominal 290; exact 289.8 ci from 3.75 x 3.28 x 8 (conceptcarz prints 289.8)."
+    },
+    "displacement_l": {
+     "value": 4.75,
+     "sources": [
+      {
+       "name": "NHRA engine blueprint AMER-68",
+       "url": "https://www.nhra.net/tech_specs/engine/blueprints/AMER-68.rtf",
+       "says": "ameri_1968_290_200hp: 290 ci, 8 cyl, bore 3.75, stroke 3.28, rod 5.875, CR 9.0, 1x2-bbl, 1.6 rockers, hydraulic lifters; ameri_1968_290_225hp: CR 10.0, 1x4-bbl"
+      },
+      {
+       "name": "AMC 1968 full-line brochure (revised), Engines specification table [AMC]",
+       "url": "https://oldcarbrochures.org/United%20States/AMC/1968_AMC/1968%20AMC%20Full%20Line%20-%20Revised/index.html",
+       "says": "'290' V-8: 200 @ 4600, 2-Barrel, 9.0:1/Regular, 3.75\" x 3.28\"; 225 @ 4700, 4-Barrel, 10.0:1/Premium, 3.75\" x 3.28\""
+      },
+      {
+       "name": "Wikipedia - AMC V8 engine",
+       "url": "https://en.wikipedia.org/wiki/AMC_V8_engine",
+       "says": "290: bore and stroke 3.75 x 3.28 in; 200 or 225 hp with 2-bbl or 4-bbl; built mid-1966 through 1969; infobox OHV 2 valves x cyl, gasoline; table 1968/69 290-2B 9.0:1, 290-4B 10.0:1 (1967 290-2B 8.7:1)"
+      }
+     ],
+     "note": "Computed from the verified bore/stroke (4,749 cc); Wikipedia rounds to 4.8 L; AMC/NHRA give 290 ci only."
+    },
+    "num_cylinders": {
+     "value": 8,
+     "sources": [
+      {
+       "name": "NHRA engine blueprint AMER-68",
+       "url": "https://www.nhra.net/tech_specs/engine/blueprints/AMER-68.rtf",
+       "says": "ameri_1968_290_200hp: 290 ci, 8 cyl, bore 3.75, stroke 3.28, rod 5.875, CR 9.0, 1x2-bbl, 1.6 rockers, hydraulic lifters; ameri_1968_290_225hp: CR 10.0, 1x4-bbl"
+      },
+      {
+       "name": "AMC 1968 full-line brochure (revised), Engines specification table [AMC]",
+       "url": "https://oldcarbrochures.org/United%20States/AMC/1968_AMC/1968%20AMC%20Full%20Line%20-%20Revised/index.html",
+       "says": "'290' V-8: 200 @ 4600, 2-Barrel, 9.0:1/Regular, 3.75\" x 3.28\"; 225 @ 4700, 4-Barrel, 10.0:1/Premium, 3.75\" x 3.28\""
+      },
+      {
+       "name": "Wikipedia - AMC V8 engine",
+       "url": "https://en.wikipedia.org/wiki/AMC_V8_engine",
+       "says": "290: bore and stroke 3.75 x 3.28 in; 200 or 225 hp with 2-bbl or 4-bbl; built mid-1966 through 1969; infobox OHV 2 valves x cyl, gasoline; table 1968/69 290-2B 9.0:1, 290-4B 10.0:1 (1967 290-2B 8.7:1)"
+      },
+      {
+       "name": "Mac's Motor City Garage - Inside the American Motors Gen 2/Gen 3 V8, 1966-91 (Bill McGuire)",
+       "url": "https://macsmotorcitygarage.com/inside-the-american-motors-gen-2-gen-3-v8-1966-91/",
+       "says": "290 introduced mid-season 1966 in the Rambler Rogue, 3.75-in bore and 3.28-in stroke; Gen 3 304/360 (1970) got a longer 3.440-in stroke"
+      }
+     ],
+     "note": ""
+    },
+    "configuration": {
+     "value": "V8",
+     "sources": [
+      {
+       "name": "AMC 1968 full-line brochure (revised), Engines specification table [AMC]",
+       "url": "https://oldcarbrochures.org/United%20States/AMC/1968_AMC/1968%20AMC%20Full%20Line%20-%20Revised/index.html",
+       "says": "'290' V-8: 200 @ 4600, 2-Barrel, 9.0:1/Regular, 3.75\" x 3.28\"; 225 @ 4700, 4-Barrel, 10.0:1/Premium, 3.75\" x 3.28\""
+      },
+      {
+       "name": "Wikipedia - AMC V8 engine",
+       "url": "https://en.wikipedia.org/wiki/AMC_V8_engine",
+       "says": "290: bore and stroke 3.75 x 3.28 in; 200 or 225 hp with 2-bbl or 4-bbl; built mid-1966 through 1969; infobox OHV 2 valves x cyl, gasoline; table 1968/69 290-2B 9.0:1, 290-4B 10.0:1 (1967 290-2B 8.7:1)"
+      },
+      {
+       "name": "Mac's Motor City Garage - Inside the American Motors Gen 2/Gen 3 V8, 1966-91 (Bill McGuire)",
+       "url": "https://macsmotorcitygarage.com/inside-the-american-motors-gen-2-gen-3-v8-1966-91/",
+       "says": "290 introduced mid-season 1966 in the Rambler Rogue, 3.75-in bore and 3.28-in stroke; Gen 3 304/360 (1970) got a longer 3.440-in stroke"
+      },
+      {
+       "name": "NHRA engine blueprint AMER-68",
+       "url": "https://www.nhra.net/tech_specs/engine/blueprints/AMER-68.rtf",
+       "says": "ameri_1968_290_200hp: 290 ci, 8 cyl, bore 3.75, stroke 3.28, rod 5.875, CR 9.0, 1x2-bbl, 1.6 rockers, hydraulic lifters; ameri_1968_290_225hp: CR 10.0, 1x4-bbl"
+      }
+     ],
+     "note": "90-degree bank angle per Wikipedia infobox only."
+    },
+    "valvetrain": {
+     "value": "OHV pushrod, 2 valves/cyl, hydraulic lifters",
+     "sources": [
+      {
+       "name": "Wikipedia - AMC V8 engine",
+       "url": "https://en.wikipedia.org/wiki/AMC_V8_engine",
+       "says": "290: bore and stroke 3.75 x 3.28 in; 200 or 225 hp with 2-bbl or 4-bbl; built mid-1966 through 1969; infobox OHV 2 valves x cyl, gasoline; table 1968/69 290-2B 9.0:1, 290-4B 10.0:1 (1967 290-2B 8.7:1)"
+      },
+      {
+       "name": "NHRA engine blueprint AMER-68",
+       "url": "https://www.nhra.net/tech_specs/engine/blueprints/AMER-68.rtf",
+       "says": "ameri_1968_290_200hp: 290 ci, 8 cyl, bore 3.75, stroke 3.28, rod 5.875, CR 9.0, 1x2-bbl, 1.6 rockers, hydraulic lifters; ameri_1968_290_225hp: CR 10.0, 1x4-bbl"
+      },
+      {
+       "name": "Super Stock & Drag Illustrated, Aug 1972, AMC V8 article (reprinted on wagoneers.com; AHPS specification page repeats the same text, counted once)",
+       "url": "https://wagoneers.com/tech/Engines/SuperStockAndDragIllustrated-Aug-1972.html",
+       "says": "3.75\" bore and 3.28\" stroke for the 290; the 290-360 rods are all 5.875\" long; 1.787\" intake and 1.406\" exhaust valves; aluminum roller-tip rockers; hydraulic camshafts"
+      }
+     ],
+     "note": "Wikipedia: OHV 2 valves x cyl; NHRA: 1.6 rocker ratio, hydraulic lifters; SS&DI: 1.787 in intake / 1.406 in exhaust valves, rockers, hydraulic cams."
+    },
+    "compression_ratio": {
+     "value": "9.0:1 (2-bbl) / 10.0:1 (4-bbl), 1968-69",
+     "sources": [
+      {
+       "name": "AMC 1968 full-line brochure (revised), Engines specification table [AMC]",
+       "url": "https://oldcarbrochures.org/United%20States/AMC/1968_AMC/1968%20AMC%20Full%20Line%20-%20Revised/index.html",
+       "says": "'290' V-8: 200 @ 4600, 2-Barrel, 9.0:1/Regular, 3.75\" x 3.28\"; 225 @ 4700, 4-Barrel, 10.0:1/Premium, 3.75\" x 3.28\""
+      },
+      {
+       "name": "AMC 1969 full-line brochure, Engines chart [AMC] (same maker as 1968 brochure)",
+       "url": "https://oldcarbrochures.org/United%20States/AMC/1969_AMC/1969_AMC_Full_Line_Brochure/index.html",
+       "says": "290 V-8 2-barrel 200 @ 4600 9.0:1/Reg.; 4-barrel 225 @ 4700 10.0:1/Pre.; bore x stroke 3.75\" x 3.28\""
+      },
+      {
+       "name": "NHRA engine blueprint AMER-68",
+       "url": "https://www.nhra.net/tech_specs/engine/blueprints/AMER-68.rtf",
+       "says": "ameri_1968_290_200hp: 290 ci, 8 cyl, bore 3.75, stroke 3.28, rod 5.875, CR 9.0, 1x2-bbl, 1.6 rockers, hydraulic lifters; ameri_1968_290_225hp: CR 10.0, 1x4-bbl"
+      },
+      {
+       "name": "Wikipedia - AMC V8 engine",
+       "url": "https://en.wikipedia.org/wiki/AMC_V8_engine",
+       "says": "290: bore and stroke 3.75 x 3.28 in; 200 or 225 hp with 2-bbl or 4-bbl; built mid-1966 through 1969; infobox OHV 2 valves x cyl, gasoline; table 1968/69 290-2B 9.0:1, 290-4B 10.0:1 (1967 290-2B 8.7:1)"
+      }
+     ],
+     "note": "AMC 1968 and 1969 brochures are one maker source. For 1966-67 2-bbl, Wikipedia and AHPS give 8.7:1 while NHRA AMER-66/67 give 9.0:1 (disagreement)."
+    },
+    "induction": {
+     "value": "Carburetor, 2-bbl or 4-bbl, naturally aspirated",
+     "sources": [
+      {
+       "name": "AMC 1968 full-line brochure (revised), Engines specification table [AMC]",
+       "url": "https://oldcarbrochures.org/United%20States/AMC/1968_AMC/1968%20AMC%20Full%20Line%20-%20Revised/index.html",
+       "says": "'290' V-8: 200 @ 4600, 2-Barrel, 9.0:1/Regular, 3.75\" x 3.28\"; 225 @ 4700, 4-Barrel, 10.0:1/Premium, 3.75\" x 3.28\""
+      },
+      {
+       "name": "NHRA engine blueprint AMER-68",
+       "url": "https://www.nhra.net/tech_specs/engine/blueprints/AMER-68.rtf",
+       "says": "ameri_1968_290_200hp: 290 ci, 8 cyl, bore 3.75, stroke 3.28, rod 5.875, CR 9.0, 1x2-bbl, 1.6 rockers, hydraulic lifters; ameri_1968_290_225hp: CR 10.0, 1x4-bbl"
+      },
+      {
+       "name": "Wikipedia - AMC V8 engine",
+       "url": "https://en.wikipedia.org/wiki/AMC_V8_engine",
+       "says": "290: bore and stroke 3.75 x 3.28 in; 200 or 225 hp with 2-bbl or 4-bbl; built mid-1966 through 1969; infobox OHV 2 valves x cyl, gasoline; table 1968/69 290-2B 9.0:1, 290-4B 10.0:1 (1967 290-2B 8.7:1)"
+      },
+      {
+       "name": "MuscleCarFacts - 1968 Javelin",
+       "url": "https://www.musclecarfacts.com/amc-javelin/116-1968-javelin/",
+       "says": "290ci 200 hp @ 4600 rpm; four-barrel 290 optional"
+      }
+     ],
+     "note": ""
+    },
+    "fuel_type": {
+     "value": "Gasoline (2-bbl regular, 4-bbl premium)",
+     "sources": [
+      {
+       "name": "AMC 1968 full-line brochure (revised), Engines specification table [AMC]",
+       "url": "https://oldcarbrochures.org/United%20States/AMC/1968_AMC/1968%20AMC%20Full%20Line%20-%20Revised/index.html",
+       "says": "'290' V-8: 200 @ 4600, 2-Barrel, 9.0:1/Regular, 3.75\" x 3.28\"; 225 @ 4700, 4-Barrel, 10.0:1/Premium, 3.75\" x 3.28\""
+      },
+      {
+       "name": "Wikipedia - AMC V8 engine",
+       "url": "https://en.wikipedia.org/wiki/AMC_V8_engine",
+       "says": "290: bore and stroke 3.75 x 3.28 in; 200 or 225 hp with 2-bbl or 4-bbl; built mid-1966 through 1969; infobox OHV 2 valves x cyl, gasoline; table 1968/69 290-2B 9.0:1, 290-4B 10.0:1 (1967 290-2B 8.7:1)"
+      },
+      {
+       "name": "NHRA engine blueprint AMER-68",
+       "url": "https://www.nhra.net/tech_specs/engine/blueprints/AMER-68.rtf",
+       "says": "ameri_1968_290_200hp: 290 ci, 8 cyl, bore 3.75, stroke 3.28, rod 5.875, CR 9.0, 1x2-bbl, 1.6 rockers, hydraulic lifters; ameri_1968_290_225hp: CR 10.0, 1x4-bbl"
+      }
+     ],
+     "note": "AMC: 9.0:1/Regular, 10.0:1/Premium; Wikipedia infobox: gasoline; NHRA lists it among carbureted gasoline stock-class engines (implicit)."
+    },
+    "years": {
+     "value": "mid-1966 to 1969 model years",
+     "sources": [
+      {
+       "name": "Wikipedia - AMC V8 engine",
+       "url": "https://en.wikipedia.org/wiki/AMC_V8_engine",
+       "says": "290: bore and stroke 3.75 x 3.28 in; 200 or 225 hp with 2-bbl or 4-bbl; built mid-1966 through 1969; infobox OHV 2 valves x cyl, gasoline; table 1968/69 290-2B 9.0:1, 290-4B 10.0:1 (1967 290-2B 8.7:1)"
+      },
+      {
+       "name": "Auto History Preservation Society (AMC) - Gen 2 Short-Deck AMC V8 General Information",
+       "url": "https://autohistorypreservationsociety.org/?p=6955",
+       "says": "bore of 3.75\" and stroke of 3.28\"; 290 2-bbl 8.7:1 (200 hp), 4-bbl 10.0:1 (225 hp); manufactured from 1966 through 1969"
+      },
+      {
+       "name": "Mac's Motor City Garage - Inside the American Motors Gen 2/Gen 3 V8, 1966-91 (Bill McGuire)",
+       "url": "https://macsmotorcitygarage.com/inside-the-american-motors-gen-2-gen-3-v8-1966-91/",
+       "says": "290 introduced mid-season 1966 in the Rambler Rogue, 3.75-in bore and 3.28-in stroke; Gen 3 304/360 (1970) got a longer 3.440-in stroke"
+      },
+      {
+       "name": "NHRA engine blueprint AMER-66",
+       "url": "https://www.nhra.net/tech_specs/engine/blueprints/AMER-66.rtf",
+       "says": "ameri_1966_290: 200 hp 2-bbl 9.0:1 / 225 hp 4-bbl 10.0:1; bore 3.75, stroke 3.28, rod 5.875"
+      },
+      {
+       "name": "NHRA engine blueprint AMER-69",
+       "url": "https://www.nhra.net/tech_specs/engine/blueprints/AMER-69.rtf",
+       "says": "ameri_1969_290: 200 hp 2-bbl 9.0:1 / 225 hp 4-bbl 10.0:1; bore 3.75, stroke 3.28, rod 5.875"
+      }
+     ],
+     "note": "Mac's: introduced mid-season 1966 in the Rambler Rogue; replaced by the 304 for 1970."
+    }
+   },
+   "variants": [
+    {
+     "year": 1966,
+     "hp": 200,
+     "hp_basis": "gross",
+     "compression_ratio": null,
+     "code": "290-2V",
+     "induction": "2-bbl",
+     "sources": [
+      {
+       "name": "NHRA engine blueprint AMER-66",
+       "url": "https://www.nhra.net/tech_specs/engine/blueprints/AMER-66.rtf",
+       "says": "ameri_1966_290: 200 hp 2-bbl 9.0:1 / 225 hp 4-bbl 10.0:1; bore 3.75, stroke 3.28, rod 5.875"
+      },
+      {
+       "name": "Wikipedia - AMC V8 engine",
+       "url": "https://en.wikipedia.org/wiki/AMC_V8_engine",
+       "says": "290: bore and stroke 3.75 x 3.28 in; 200 or 225 hp with 2-bbl or 4-bbl; built mid-1966 through 1969; infobox OHV 2 valves x cyl, gasoline; table 1968/69 290-2B 9.0:1, 290-4B 10.0:1 (1967 290-2B 8.7:1)"
+      },
+      {
+       "name": "Auto History Preservation Society (AMC) - Gen 2 Short-Deck AMC V8 General Information",
+       "url": "https://autohistorypreservationsociety.org/?p=6955",
+       "says": "bore of 3.75\" and stroke of 3.28\"; 290 2-bbl 8.7:1 (200 hp), 4-bbl 10.0:1 (225 hp); manufactured from 1966 through 1969"
+      },
+      {
+       "name": "JustCars - 1966 Rambler American Spotlight",
+       "url": "https://justcars.com.au/news-and-reviews/1966-rambler-american-spotlight/9792",
+       "says": "The 290ci V8 also made its debut in 1966, available in two different power options, 200bhp or 225bhp"
+      }
+     ],
+     "note": "Rambler American Rogue (mid-year). CR disputed: NHRA 9.0:1, Wikipedia/AHPS 8.7:1."
+    },
+    {
+     "year": 1966,
+     "hp": 225,
+     "hp_basis": "gross",
+     "compression_ratio": 10.0,
+     "code": "290-4V",
+     "induction": "4-bbl",
+     "sources": [
+      {
+       "name": "NHRA engine blueprint AMER-66",
+       "url": "https://www.nhra.net/tech_specs/engine/blueprints/AMER-66.rtf",
+       "says": "ameri_1966_290: 200 hp 2-bbl 9.0:1 / 225 hp 4-bbl 10.0:1; bore 3.75, stroke 3.28, rod 5.875"
+      },
+      {
+       "name": "Auto History Preservation Society (AMC) - Gen 2 Short-Deck AMC V8 General Information",
+       "url": "https://autohistorypreservationsociety.org/?p=6955",
+       "says": "bore of 3.75\" and stroke of 3.28\"; 290 2-bbl 8.7:1 (200 hp), 4-bbl 10.0:1 (225 hp); manufactured from 1966 through 1969"
+      },
+      {
+       "name": "JustCars - 1966 Rambler American Spotlight",
+       "url": "https://justcars.com.au/news-and-reviews/1966-rambler-american-spotlight/9792",
+       "says": "The 290ci V8 also made its debut in 1966, available in two different power options, 200bhp or 225bhp"
+      },
+      {
+       "name": "Wikipedia - AMC V8 engine",
+       "url": "https://en.wikipedia.org/wiki/AMC_V8_engine",
+       "says": "290: bore and stroke 3.75 x 3.28 in; 200 or 225 hp with 2-bbl or 4-bbl; built mid-1966 through 1969; infobox OHV 2 valves x cyl, gasoline; table 1968/69 290-2B 9.0:1, 290-4B 10.0:1 (1967 290-2B 8.7:1)"
+      }
+     ],
+     "note": "Rambler American Rogue (mid-year)."
+    },
+    {
+     "year": 1967,
+     "hp": 200,
+     "hp_basis": "gross",
+     "compression_ratio": null,
+     "code": "290-2V",
+     "induction": "2-bbl",
+     "sources": [
+      {
+       "name": "NHRA engine blueprint AMER-67",
+       "url": "https://www.nhra.net/tech_specs/engine/blueprints/AMER-67.rtf",
+       "says": "ameri_1967_290: 200 hp 2-bbl 9.0:1 / 225 hp 4-bbl 10.0:1; bore 3.75, stroke 3.28, rod 5.875"
+      },
+      {
+       "name": "Wikipedia - AMC V8 engine",
+       "url": "https://en.wikipedia.org/wiki/AMC_V8_engine",
+       "says": "290: bore and stroke 3.75 x 3.28 in; 200 or 225 hp with 2-bbl or 4-bbl; built mid-1966 through 1969; infobox OHV 2 valves x cyl, gasoline; table 1968/69 290-2B 9.0:1, 290-4B 10.0:1 (1967 290-2B 8.7:1)"
+      },
+      {
+       "name": "Auto History Preservation Society (AMC) - Gen 2 Short-Deck AMC V8 General Information",
+       "url": "https://autohistorypreservationsociety.org/?p=6955",
+       "says": "bore of 3.75\" and stroke of 3.28\"; 290 2-bbl 8.7:1 (200 hp), 4-bbl 10.0:1 (225 hp); manufactured from 1966 through 1969"
+      }
+     ],
+     "note": "CR disputed: NHRA 9.0:1, Wikipedia 8.7:1. Wikipedia gives 200 @ 4700."
+    },
+    {
+     "year": 1967,
+     "hp": 225,
+     "hp_basis": "gross",
+     "compression_ratio": 10.0,
+     "code": "290-4V",
+     "induction": "4-bbl",
+     "sources": [
+      {
+       "name": "NHRA engine blueprint AMER-67",
+       "url": "https://www.nhra.net/tech_specs/engine/blueprints/AMER-67.rtf",
+       "says": "ameri_1967_290: 200 hp 2-bbl 9.0:1 / 225 hp 4-bbl 10.0:1; bore 3.75, stroke 3.28, rod 5.875"
+      },
+      {
+       "name": "Wikipedia - AMC V8 engine",
+       "url": "https://en.wikipedia.org/wiki/AMC_V8_engine",
+       "says": "290: bore and stroke 3.75 x 3.28 in; 200 or 225 hp with 2-bbl or 4-bbl; built mid-1966 through 1969; infobox OHV 2 valves x cyl, gasoline; table 1968/69 290-2B 9.0:1, 290-4B 10.0:1 (1967 290-2B 8.7:1)"
+      },
+      {
+       "name": "Auto History Preservation Society (AMC) - Gen 2 Short-Deck AMC V8 General Information",
+       "url": "https://autohistorypreservationsociety.org/?p=6955",
+       "says": "bore of 3.75\" and stroke of 3.28\"; 290 2-bbl 8.7:1 (200 hp), 4-bbl 10.0:1 (225 hp); manufactured from 1966 through 1969"
+      }
+     ],
+     "note": "Wikipedia gives 225 @ 4800."
+    },
+    {
+     "year": 1968,
+     "hp": 200,
+     "hp_basis": "gross",
+     "compression_ratio": 9.0,
+     "code": "290-2V",
+     "induction": "2-bbl",
+     "sources": [
+      {
+       "name": "AMC 1968 full-line brochure (revised), Engines specification table [AMC]",
+       "url": "https://oldcarbrochures.org/United%20States/AMC/1968_AMC/1968%20AMC%20Full%20Line%20-%20Revised/index.html",
+       "says": "'290' V-8: 200 @ 4600, 2-Barrel, 9.0:1/Regular, 3.75\" x 3.28\"; 225 @ 4700, 4-Barrel, 10.0:1/Premium, 3.75\" x 3.28\""
+      },
+      {
+       "name": "NHRA engine blueprint AMER-68",
+       "url": "https://www.nhra.net/tech_specs/engine/blueprints/AMER-68.rtf",
+       "says": "ameri_1968_290_200hp: 290 ci, 8 cyl, bore 3.75, stroke 3.28, rod 5.875, CR 9.0, 1x2-bbl, 1.6 rockers, hydraulic lifters; ameri_1968_290_225hp: CR 10.0, 1x4-bbl"
+      },
+      {
+       "name": "Wikipedia - AMC V8 engine",
+       "url": "https://en.wikipedia.org/wiki/AMC_V8_engine",
+       "says": "290: bore and stroke 3.75 x 3.28 in; 200 or 225 hp with 2-bbl or 4-bbl; built mid-1966 through 1969; infobox OHV 2 valves x cyl, gasoline; table 1968/69 290-2B 9.0:1, 290-4B 10.0:1 (1967 290-2B 8.7:1)"
+      },
+      {
+       "name": "MuscleCarFacts - 1968 Javelin",
+       "url": "https://www.musclecarfacts.com/amc-javelin/116-1968-javelin/",
+       "says": "290ci 200 hp @ 4600 rpm; four-barrel 290 optional"
+      }
+     ],
+     "note": "200 @ 4600; Javelin, American, Rebel, Ambassador"
+    },
+    {
+     "year": 1968,
+     "hp": 225,
+     "hp_basis": "gross",
+     "compression_ratio": 10.0,
+     "code": "290-4V",
+     "induction": "4-bbl",
+     "sources": [
+      {
+       "name": "AMC 1968 full-line brochure (revised), Engines specification table [AMC]",
+       "url": "https://oldcarbrochures.org/United%20States/AMC/1968_AMC/1968%20AMC%20Full%20Line%20-%20Revised/index.html",
+       "says": "'290' V-8: 200 @ 4600, 2-Barrel, 9.0:1/Regular, 3.75\" x 3.28\"; 225 @ 4700, 4-Barrel, 10.0:1/Premium, 3.75\" x 3.28\""
+      },
+      {
+       "name": "NHRA engine blueprint AMER-68",
+       "url": "https://www.nhra.net/tech_specs/engine/blueprints/AMER-68.rtf",
+       "says": "ameri_1968_290_200hp: 290 ci, 8 cyl, bore 3.75, stroke 3.28, rod 5.875, CR 9.0, 1x2-bbl, 1.6 rockers, hydraulic lifters; ameri_1968_290_225hp: CR 10.0, 1x4-bbl"
+      },
+      {
+       "name": "Wikipedia - AMC V8 engine",
+       "url": "https://en.wikipedia.org/wiki/AMC_V8_engine",
+       "says": "290: bore and stroke 3.75 x 3.28 in; 200 or 225 hp with 2-bbl or 4-bbl; built mid-1966 through 1969; infobox OHV 2 valves x cyl, gasoline; table 1968/69 290-2B 9.0:1, 290-4B 10.0:1 (1967 290-2B 8.7:1)"
+      },
+      {
+       "name": "Old Cars Weekly - Little AMX was not short on performance (1968 AMX)",
+       "url": "https://www.oldcarsweekly.com/features/little-amx-was-not-short-on-performance",
+       "says": "290-cid 225-hp V-8"
+      },
+      {
+       "name": "AMC 1968 'AMX Story' brochure [AMC] (same maker source as AMC brochures)",
+       "url": "https://oldcarbrochures.org/United%20States/AMC/1968_AMC/1968%20AMX%20Story/index.html",
+       "says": "Standard 290 CID 225 HP V-8 with 4-barrel carburetor"
+      }
+     ],
+     "note": "225 @ 4700; standard in AMX, optional Javelin/American"
+    },
+    {
+     "year": 1969,
+     "hp": 200,
+     "hp_basis": "gross",
+     "compression_ratio": 9.0,
+     "code": "290-2V",
+     "induction": "2-bbl",
+     "sources": [
+      {
+       "name": "AMC 1969 full-line brochure, Engines chart [AMC] (same maker as 1968 brochure)",
+       "url": "https://oldcarbrochures.org/United%20States/AMC/1969_AMC/1969_AMC_Full_Line_Brochure/index.html",
+       "says": "290 V-8 2-barrel 200 @ 4600 9.0:1/Reg.; 4-barrel 225 @ 4700 10.0:1/Pre.; bore x stroke 3.75\" x 3.28\""
+      },
+      {
+       "name": "NHRA engine blueprint AMER-69",
+       "url": "https://www.nhra.net/tech_specs/engine/blueprints/AMER-69.rtf",
+       "says": "ameri_1969_290: 200 hp 2-bbl 9.0:1 / 225 hp 4-bbl 10.0:1; bore 3.75, stroke 3.28, rod 5.875"
+      },
+      {
+       "name": "Wikipedia - AMC V8 engine",
+       "url": "https://en.wikipedia.org/wiki/AMC_V8_engine",
+       "says": "290: bore and stroke 3.75 x 3.28 in; 200 or 225 hp with 2-bbl or 4-bbl; built mid-1966 through 1969; infobox OHV 2 valves x cyl, gasoline; table 1968/69 290-2B 9.0:1, 290-4B 10.0:1 (1967 290-2B 8.7:1)"
+      },
+      {
+       "name": "MuscleCarFacts - 1969 Javelin",
+       "url": "https://www.musclecarfacts.com/amc-javelin/117-1969-javelin/",
+       "says": "290ci 200 hp @ 4600 rpm; 290ci 225 hp @ 4700 rpm"
+      }
+     ],
+     "note": "200 @ 4600"
+    },
+    {
+     "year": 1969,
+     "hp": 225,
+     "hp_basis": "gross",
+     "compression_ratio": 10.0,
+     "code": "290-4V",
+     "induction": "4-bbl",
+     "sources": [
+      {
+       "name": "AMC 1969 full-line brochure, Engines chart [AMC] (same maker as 1968 brochure)",
+       "url": "https://oldcarbrochures.org/United%20States/AMC/1969_AMC/1969_AMC_Full_Line_Brochure/index.html",
+       "says": "290 V-8 2-barrel 200 @ 4600 9.0:1/Reg.; 4-barrel 225 @ 4700 10.0:1/Pre.; bore x stroke 3.75\" x 3.28\""
+      },
+      {
+       "name": "NHRA engine blueprint AMER-69",
+       "url": "https://www.nhra.net/tech_specs/engine/blueprints/AMER-69.rtf",
+       "says": "ameri_1969_290: 200 hp 2-bbl 9.0:1 / 225 hp 4-bbl 10.0:1; bore 3.75, stroke 3.28, rod 5.875"
+      },
+      {
+       "name": "Wikipedia - AMC V8 engine",
+       "url": "https://en.wikipedia.org/wiki/AMC_V8_engine",
+       "says": "290: bore and stroke 3.75 x 3.28 in; 200 or 225 hp with 2-bbl or 4-bbl; built mid-1966 through 1969; infobox OHV 2 valves x cyl, gasoline; table 1968/69 290-2B 9.0:1, 290-4B 10.0:1 (1967 290-2B 8.7:1)"
+      },
+      {
+       "name": "MuscleCarFacts - 1969 Javelin",
+       "url": "https://www.musclecarfacts.com/amc-javelin/117-1969-javelin/",
+       "says": "290ci 200 hp @ 4600 rpm; 290ci 225 hp @ 4700 rpm"
+      },
+      {
+       "name": "conceptcarz - 1969 AMC Javelin specifications",
+       "url": "https://www.conceptcarz.com/s2626/amc-javelin.aspx",
+       "says": "289.8 cu in, 225 BHP @ 4700"
+      }
+     ],
+     "note": "225 @ 4700; standard in AMX"
+    }
+   ],
+   "unverified": {
+    "rod_length_in": "5.875 in - NHRA AMER-66..69 and Super Stock & Drag Illustrated Aug 1972 (AHPS repeats SS&DI text verbatim, counted once). Only 2 independent sources.",
+    "firing_order": "1-8-4-3-6-5-7-2 is the commonly cited AMC Gen 2/3 V8 order, but no reputable source found stating it for the 290 (only offroaders.com / parts pages for 304/360).",
+    "block_material": "Cast iron (thinwall) expected - SS&DI 1972 says blocks are 'thinwall castings', cranks/rods nodular iron; Wikipedia says 'thin-wall' casting but not the metal. Fewer than 3 sources state cast iron.",
+    "head_material": "Cast iron expected; no source found explicitly stating it for the 290."
+   },
+   "unverified_variants": []
+  }
+ ],
+ "geometry_fixes": [
+  {
+   "id": "ford-fe-390",
+   "name": "Ford 390 FE V8",
+   "bore_in": {
+    "value": 4.05,
+    "precise": 4.05,
+    "sources": [
+     {
+      "name": "NHRA engine blueprint FORD-68",
+      "url": "https://www.nhra.net/tech_specs/engine/blueprints/FORD-68.rtf",
+      "says": "F-390 families (1968, also FORD-69/70): bore 4.052"
+     },
+     {
+      "name": "Wikipedia - Ford FE engine",
+      "url": "https://en.wikipedia.org/wiki/Ford_FE_engine",
+      "says": "bore of 4.0502 inches (102.88 mm), stroke of 3.785 inches (96.14 mm)"
+     },
+     {
+      "name": "Over-Drive Magazine - The Ford FE Series V-8",
+      "url": "https://over-drive-magazine.com/2023/02/14/the-ford-fe-series-v-8/",
+      "says": "Bore and stroke: 4.05 x 3.78 inches (1961-1968 390 variants)"
+     },
+     {
+      "name": "Mercury 1967 Cougar brochure, power-team page (Ford factory)",
+      "url": "https://oldcarbrochures.org/United%20States/Mercury/1967%20Mercury/1967-Mercury-Cougar-Brochure/index.html",
+      "says": "Marauder 390 GT V-8 ... 4.05 x 3.78"
+     }
+    ],
+    "note": "Nominal 4.05 in Ford, Over-Drive and (4.0502) Wikipedia; NHRA prints 4.052. Use 4.05 (precise 4.0500); keep 4.052 as the NHRA blueprint figure, which only NHRA gives."
+   },
+   "stroke_in": {
+    "value": 3.78,
+    "precise": 3.784,
+    "sources": [
+     {
+      "name": "NHRA engine blueprint FORD-68",
+      "url": "https://www.nhra.net/tech_specs/engine/blueprints/FORD-68.rtf",
+      "says": "F-390 families: stroke 3.784"
+     },
+     {
+      "name": "Wikipedia - Ford FE engine",
+      "url": "https://en.wikipedia.org/wiki/Ford_FE_engine",
+      "says": "stroke of 3.785 inches (96.14 mm)"
+     },
+     {
+      "name": "Over-Drive Magazine - The Ford FE Series V-8",
+      "url": "https://over-drive-magazine.com/2023/02/14/the-ford-fe-series-v-8/",
+      "says": "Bore and stroke: 4.05 x 3.78 inches"
+     },
+     {
+      "name": "Mercury 1967 Cougar brochure, power-team page (Ford factory)",
+      "url": "https://oldcarbrochures.org/United%20States/Mercury/1967%20Mercury/1967-Mercury-Cougar-Brochure/index.html",
+      "says": "4.05 x 3.78"
+     }
+    ],
+    "note": "Ford/Over-Drive round to 3.78. Precise 3.784 (NHRA; Jalopnik gives 3.784 for the 427, which shares the 390 crank) vs Wikipedia 3.785. 4.05 x 3.784 x 8 cyl = 390.0 ci."
+   },
+   "displacement_ci": {
+    "value": 390,
+    "sources": [
+     {
+      "name": "NHRA engine blueprint FORD-68",
+      "url": "https://www.nhra.net/tech_specs/engine/blueprints/FORD-68.rtf",
+      "says": "390"
+     },
+     {
+      "name": "Wikipedia - Ford FE engine",
+      "url": "https://en.wikipedia.org/wiki/Ford_FE_engine",
+      "says": "390"
+     },
+     {
+      "name": "Over-Drive Magazine - The Ford FE Series V-8",
+      "url": "https://over-drive-magazine.com/2023/02/14/the-ford-fe-series-v-8/",
+      "says": "390 CID"
+     },
+     {
+      "name": "Mercury 1967 Cougar brochure, power-team page (Ford factory)",
+      "url": "https://oldcarbrochures.org/United%20States/Mercury/1967%20Mercury/1967-Mercury-Cougar-Brochure/index.html",
+      "says": "Marauder 390"
+     }
+    ],
+    "note": ""
+   }
+  },
+  {
+   "id": "ford-fe-427",
+   "name": "Ford 427 FE V8",
+   "bore_in": {
+    "value": 4.23,
+    "precise": 4.232,
+    "sources": [
+     {
+      "name": "NHRA engine blueprint FORD-68",
+      "url": "https://www.nhra.net/tech_specs/engine/blueprints/FORD-68.rtf",
+      "says": "F-427 (1968, 390 hp): bore 4.232"
+     },
+     {
+      "name": "Wikipedia - Ford FE engine",
+      "url": "https://en.wikipedia.org/wiki/Ford_FE_engine",
+      "says": "bore was increased to 4.232 inches (107.49 mm)"
+     },
+     {
+      "name": "Jalopnik (Paul Stadden, Nov 25 2025) - Ford 427 vs 428 engines: the differences",
+      "url": "https://www.jalopnik.com/2031962/ford-427-vs-428-engines-differences/",
+      "says": "a bore of 4.232 inches and a stroke of 3.784 inches"
+     },
+     {
+      "name": "Jalopnik (Paul Stadden, Nov 2025) - Ford 427 vs Chevy 427 (same outlet/author as above: counts once)",
+      "url": "https://jalopnik.com/2032688/ford-vs-chevy-427-big-block-engines-comparison/",
+      "says": "4.232-inch bore and 3.784-inch stroke ... 425.82 cubic inches of actual displacement"
+     },
+     {
+      "name": "Mercury 1968 Cougar brochure, power-team page (Ford factory)",
+      "url": "https://oldcarbrochures.org/United%20States/Mercury/1968%20Mercury/1968-Mercury-Cougar-Brochure/index.html",
+      "says": "Cougar 427 E V-8, 4-bbl, 390 hp @ 5600, 4.23 x 3.78"
+     },
+     {
+      "name": "Over-Drive Magazine - The Ford FE Series V-8",
+      "url": "https://over-drive-magazine.com/2023/02/14/the-ford-fe-series-v-8/",
+      "says": "Bore and stroke: 4.24 x 3.78 inches (1963-1967); 4.23 x 3.78 inches (1968 Cougar)"
+     }
+    ],
+    "note": "Precise 4.232: NHRA, Wikipedia and Jalopnik agree (two Jalopnik pages count once). 4.2328 appears only in search-engine summaries / copied spec pages, not in any reputable source read; 4.2346 was not found anywhere reputable. Over-Drive's 4.24 (1963-67) is a round-up of the same bore; 1968 Mercury literature prints 4.23. 4.232 x 3.784 = 425.8 ci actual."
+   },
+   "stroke_in": {
+    "value": 3.78,
+    "precise": 3.784,
+    "sources": [
+     {
+      "name": "NHRA engine blueprint FORD-68",
+      "url": "https://www.nhra.net/tech_specs/engine/blueprints/FORD-68.rtf",
+      "says": "F-427: stroke 3.784"
+     },
+     {
+      "name": "Wikipedia - Ford FE engine",
+      "url": "https://en.wikipedia.org/wiki/Ford_FE_engine",
+      "says": "stroke was the same as the 390 at 3.785 inches (96.14 mm)"
+     },
+     {
+      "name": "Jalopnik (Paul Stadden, Nov 25 2025) - Ford 427 vs 428 engines: the differences",
+      "url": "https://www.jalopnik.com/2031962/ford-427-vs-428-engines-differences/",
+      "says": "a stroke of 3.784 inches"
+     },
+     {
+      "name": "Over-Drive Magazine - The Ford FE Series V-8",
+      "url": "https://over-drive-magazine.com/2023/02/14/the-ford-fe-series-v-8/",
+      "says": "4.24 x 3.78 / 4.23 x 3.78"
+     },
+     {
+      "name": "Mercury 1968 Cougar brochure, power-team page (Ford factory)",
+      "url": "https://oldcarbrochures.org/United%20States/Mercury/1968%20Mercury/1968-Mercury-Cougar-Brochure/index.html",
+      "says": "4.23 x 3.78"
+     }
+    ],
+    "note": "Same stroke as the 390. 3.784 (NHRA, Jalopnik) vs Wikipedia 3.785; use 3.784."
+   },
+   "displacement_ci": {
+    "value": 427,
+    "sources": [
+     {
+      "name": "NHRA engine blueprint FORD-68",
+      "url": "https://www.nhra.net/tech_specs/engine/blueprints/FORD-68.rtf",
+      "says": "427"
+     },
+     {
+      "name": "Wikipedia - Ford FE engine",
+      "url": "https://en.wikipedia.org/wiki/Ford_FE_engine",
+      "says": "427"
+     },
+     {
+      "name": "Mercury 1968 Cougar brochure, power-team page (Ford factory)",
+      "url": "https://oldcarbrochures.org/United%20States/Mercury/1968%20Mercury/1968-Mercury-Cougar-Brochure/index.html",
+      "says": "Cougar 427 E"
+     },
+     {
+      "name": "Jalopnik (Paul Stadden, Nov 2025) - Ford 427 vs Chevy 427 (same outlet/author as above: counts once)",
+      "url": "https://jalopnik.com/2032688/ford-vs-chevy-427-big-block-engines-comparison/",
+      "says": "marketed as a 427; 425.82 ci actual"
+     }
+    ],
+    "note": "Nominal 427; actual about 425.8 ci."
+   }
+  },
+  {
+   "id": "ford-fe-428",
+   "name": "Ford 428 FE V8",
+   "bore_in": {
+    "value": 4.13,
+    "precise": 4.132,
+    "sources": [
+     {
+      "name": "NHRA engine blueprint FORD-68",
+      "url": "https://www.nhra.net/tech_specs/engine/blueprints/FORD-68.rtf",
+      "says": "F-428 (340/360 hp), and 428 CJ in FORD-69/70: bore 4.132"
+     },
+     {
+      "name": "Wikipedia - Ford FE engine",
+      "url": "https://en.wikipedia.org/wiki/Ford_FE_engine",
+      "says": "4.13 in (104.90 mm) bore and a 3.98 in (101.09 mm) stroke"
+     },
+     {
+      "name": "Jalopnik (Paul Stadden, Nov 25 2025) - Ford 427 vs 428 engines: the differences",
+      "url": "https://www.jalopnik.com/2031962/ford-427-vs-428-engines-differences/",
+      "says": "a 4.132-inch bore and a 3.984-inch stroke"
+     },
+     {
+      "name": "Over-Drive Magazine - The Ford FE Series V-8",
+      "url": "https://over-drive-magazine.com/2023/02/14/the-ford-fe-series-v-8/",
+      "says": "Bore and stroke: 4.13 x 3.98 inches (all 1966-1970 variants)"
+     },
+     {
+      "name": "Mercury 1968 Cougar brochure, power-team page (Ford factory)",
+      "url": "https://oldcarbrochures.org/United%20States/Mercury/1968%20Mercury/1968-Mercury-Cougar-Brochure/index.html",
+      "says": "428 CID Cobra Jet V-8, 335 HP @ 5400, 4.13 x 3.98"
+     }
+    ],
+    "note": "4.13 rounded (Ford, Wikipedia, Over-Drive); precise 4.132 (NHRA, Jalopnik)."
+   },
+   "stroke_in": {
+    "value": 3.98,
+    "precise": 3.984,
+    "sources": [
+     {
+      "name": "NHRA engine blueprint FORD-68",
+      "url": "https://www.nhra.net/tech_specs/engine/blueprints/FORD-68.rtf",
+      "says": "F-428: stroke 3.984"
+     },
+     {
+      "name": "Wikipedia - Ford FE engine",
+      "url": "https://en.wikipedia.org/wiki/Ford_FE_engine",
+      "says": "3.98 in (101.09 mm) stroke"
+     },
+     {
+      "name": "Jalopnik (Paul Stadden, Nov 25 2025) - Ford 427 vs 428 engines: the differences",
+      "url": "https://www.jalopnik.com/2031962/ford-427-vs-428-engines-differences/",
+      "says": "a 3.984-inch stroke"
+     },
+     {
+      "name": "Over-Drive Magazine - The Ford FE Series V-8",
+      "url": "https://over-drive-magazine.com/2023/02/14/the-ford-fe-series-v-8/",
+      "says": "4.13 x 3.98"
+     },
+     {
+      "name": "Mercury 1968 Cougar brochure, power-team page (Ford factory)",
+      "url": "https://oldcarbrochures.org/United%20States/Mercury/1968%20Mercury/1968-Mercury-Cougar-Brochure/index.html",
+      "says": "4.13 x 3.98"
+     }
+    ],
+    "note": "3.98 rounded; precise 3.984 (NHRA, Jalopnik). 4.132 x 3.984 = 427.4 ci actual."
+   },
+   "displacement_ci": {
+    "value": 428,
+    "sources": [
+     {
+      "name": "NHRA engine blueprint FORD-68",
+      "url": "https://www.nhra.net/tech_specs/engine/blueprints/FORD-68.rtf",
+      "says": "428"
+     },
+     {
+      "name": "Wikipedia - Ford FE engine",
+      "url": "https://en.wikipedia.org/wiki/Ford_FE_engine",
+      "says": "428"
+     },
+     {
+      "name": "Over-Drive Magazine - The Ford FE Series V-8",
+      "url": "https://over-drive-magazine.com/2023/02/14/the-ford-fe-series-v-8/",
+      "says": "428 CID"
+     },
+     {
+      "name": "Mercury 1968 Cougar brochure, power-team page (Ford factory)",
+      "url": "https://oldcarbrochures.org/United%20States/Mercury/1968%20Mercury/1968-Mercury-Cougar-Brochure/index.html",
+      "says": "428 CID Cobra Jet"
+     }
+    ],
+    "note": ""
+   }
+  },
+  {
+   "id": "ford-385-429",
+   "name": "Ford 429 385-series V8",
+   "bore_in": {
+    "value": 4.36,
+    "precise": 4.362,
+    "sources": [
+     {
+      "name": "NHRA engine blueprints FORD-69 / FORD-70",
+      "url": "https://www.nhra.net/tech_specs/engine/blueprints/FORD-69.rtf",
+      "says": "429 (1969/1970 incl. CJ): bore 4.362; FORD-73 also 4.362"
+     },
+     {
+      "name": "Wikipedia - Ford 385 engine",
+      "url": "https://en.wikipedia.org/wiki/Ford_385_engine",
+      "says": "Bore x stroke: 4.360 in x 3.59 in (110.7 mm x 91.2 mm)"
+     },
+     {
+      "name": "Engine Builder Magazine (Bob McDonald) - Building A Ford 460 Stroker",
+      "url": "https://www.enginebuildermag.com/2017/03/building-ford-460-stroker/",
+      "says": "Both blocks [429 and 460] share the same bore of 4.36\" but have different strokes"
+     },
+     {
+      "name": "Driving Line (Benjamin Hunting, Feb 11 2021) - A History of the Ford 429ci V8",
+      "url": "https://www.drivingline.com/articles/a-history-of-the-ford-429-v8-the-blue-ovals-final-big-block-muscle-car-blast/",
+      "says": "The engine, which offered a 4.36 inch bore and a 3.59 inch stroke"
+     },
+     {
+      "name": "Over-Drive Magazine - 1970 Ford Fairlane-Torino Fact Sheet",
+      "url": "https://over-drive-magazine.com/2023/02/05/1970-ford-fairlane-torino-fact-sheet/",
+      "says": "429 CID Thunder Jet / Cobra Jet / Super Cobra Jet: Bore and stroke: 4.36 x 3.59 inches"
+     },
+     {
+      "name": "Ford 1969 Thunderbird brochure, specifications (Ford factory)",
+      "url": "https://oldcarbrochures.org/United%20States/Ford_Thunderbird/1969-Ford-Thunderbird/1969-Ford-Thunderbird-Brochure/index.html",
+      "says": "429-cu. in. Thunder Jet V-8 with 360 hp; 4.36 x 3.59"
+     }
+    ],
+    "note": "Every non-NHRA source prints 4.36 (Wikipedia 4.360); only NHRA prints 4.362. Publish 4.36; 4.362 rests on NHRA alone, so 4.360 is the 3-source precise value."
+   },
+   "stroke_in": {
+    "value": 3.59,
+    "precise": 3.59,
+    "sources": [
+     {
+      "name": "NHRA engine blueprints FORD-69 / FORD-70",
+      "url": "https://www.nhra.net/tech_specs/engine/blueprints/FORD-69.rtf",
+      "says": "429: stroke 3.59 (FORD-69, -70, -73)"
+     },
+     {
+      "name": "Wikipedia - Ford 385 engine",
+      "url": "https://en.wikipedia.org/wiki/Ford_385_engine",
+      "says": "4.360 in x 3.59 in"
+     },
+     {
+      "name": "Engine Builder Magazine (Bob McDonald) - Building A Ford 460 Stroker",
+      "url": "https://www.enginebuildermag.com/2017/03/building-ford-460-stroker/",
+      "says": "The 429 has a stroke of 3.59\""
+     },
+     {
+      "name": "Driving Line (Benjamin Hunting, Feb 11 2021) - A History of the Ford 429ci V8",
+      "url": "https://www.drivingline.com/articles/a-history-of-the-ford-429-v8-the-blue-ovals-final-big-block-muscle-car-blast/",
+      "says": "a 3.59 inch stroke"
+     },
+     {
+      "name": "Over-Drive Magazine - 1970 Ford Fairlane-Torino Fact Sheet",
+      "url": "https://over-drive-magazine.com/2023/02/05/1970-ford-fairlane-torino-fact-sheet/",
+      "says": "4.36 x 3.59"
+     },
+     {
+      "name": "Ford 1969 Thunderbird brochure, specifications (Ford factory)",
+      "url": "https://oldcarbrochures.org/United%20States/Ford_Thunderbird/1969-Ford-Thunderbird/1969-Ford-Thunderbird-Brochure/index.html",
+      "says": "4.36 x 3.59"
+     }
+    ],
+    "note": "All sources, NHRA included, give 3.59 (3.590). 4.36 x 3.59 = 428.8 ci; 4.362 x 3.59 = 429.2 ci."
+   },
+   "displacement_ci": {
+    "value": 429,
+    "sources": [
+     {
+      "name": "NHRA engine blueprints FORD-69 / FORD-70",
+      "url": "https://www.nhra.net/tech_specs/engine/blueprints/FORD-69.rtf",
+      "says": "429"
+     },
+     {
+      "name": "Wikipedia - Ford 385 engine",
+      "url": "https://en.wikipedia.org/wiki/Ford_385_engine",
+      "says": "429"
+     },
+     {
+      "name": "Over-Drive Magazine - 1970 Ford Fairlane-Torino Fact Sheet",
+      "url": "https://over-drive-magazine.com/2023/02/05/1970-ford-fairlane-torino-fact-sheet/",
+      "says": "429 CID"
+     },
+     {
+      "name": "Driving Line (Benjamin Hunting, Feb 11 2021) - A History of the Ford 429ci V8",
+      "url": "https://www.drivingline.com/articles/a-history-of-the-ford-429-v8-the-blue-ovals-final-big-block-muscle-car-blast/",
+      "says": "429ci"
+     }
+    ],
+    "note": ""
+   }
+  },
+  {
+   "id": "ford-385-460",
+   "name": "Ford 460 385-series V8",
+   "bore_in": {
+    "value": 4.36,
+    "precise": 4.362,
+    "sources": [
+     {
+      "name": "NHRA engine blueprint FORD-73",
+      "url": "https://www.nhra.net/tech_specs/engine/blueprints/FORD-73.rtf",
+      "says": "460: bore 4.362"
+     },
+     {
+      "name": "Wikipedia - Ford 385 engine",
+      "url": "https://en.wikipedia.org/wiki/Ford_385_engine",
+      "says": "460 Bore x stroke: 4.360 in x 3.85 in (110.7 mm x 97.8 mm)"
+     },
+     {
+      "name": "Engine Builder Magazine (Bob McDonald) - Building A Ford 460 Stroker",
+      "url": "https://www.enginebuildermag.com/2017/03/building-ford-460-stroker/",
+      "says": "Both blocks [429 and 460] share the same bore of 4.36\""
+     }
+    ],
+    "note": "Same bore as the 429. Non-NHRA sources print 4.36/4.360; NHRA 4.362 (single source for the 3rd decimal). Ford factory literature (e.g. the 1972 Torino brochure the caller already holds) would be a 4th source if it prints 4.36 x 3.85; not re-read here. Driving Line's 460 history (https://www.drivingline.com/articles/a-history-of-the-ford-460-the-blue-ovals-longest-lasting-truck-big-block-v8/) gives no bore. No Over-Drive 460-era fact sheet exists."
+   },
+   "stroke_in": {
+    "value": 3.85,
+    "precise": 3.85,
+    "sources": [
+     {
+      "name": "NHRA engine blueprint FORD-73",
+      "url": "https://www.nhra.net/tech_specs/engine/blueprints/FORD-73.rtf",
+      "says": "460: stroke 3.85"
+     },
+     {
+      "name": "Wikipedia - Ford 385 engine",
+      "url": "https://en.wikipedia.org/wiki/Ford_385_engine",
+      "says": "4.360 in x 3.85 in"
+     },
+     {
+      "name": "Engine Builder Magazine (Bob McDonald) - Building A Ford 460 Stroker",
+      "url": "https://www.enginebuildermag.com/2017/03/building-ford-460-stroker/",
+      "says": "the 460 has a stroke of 3.85\""
+     },
+     {
+      "name": "Driving Line (Benjamin Hunting, Feb 11 2021) - A History of the Ford 429ci V8",
+      "url": "https://www.drivingline.com/articles/a-history-of-the-ford-429-v8-the-blue-ovals-final-big-block-muscle-car-blast/",
+      "says": "[the 385 series is] named after the latter's [460's] 3.85 inch stroke"
+     }
+    ],
+    "note": "All sources 3.85 (3.850). 4.36 x 3.85 = 459.9 ci; 4.362 x 3.85 = 460.3 ci."
+   },
+   "displacement_ci": {
+    "value": 460,
+    "sources": [
+     {
+      "name": "NHRA engine blueprint FORD-73",
+      "url": "https://www.nhra.net/tech_specs/engine/blueprints/FORD-73.rtf",
+      "says": "460"
+     },
+     {
+      "name": "Wikipedia - Ford 385 engine",
+      "url": "https://en.wikipedia.org/wiki/Ford_385_engine",
+      "says": "460"
+     },
+     {
+      "name": "Engine Builder Magazine (Bob McDonald) - Building A Ford 460 Stroker",
+      "url": "https://www.enginebuildermag.com/2017/03/building-ford-460-stroker/",
+      "says": "460"
+     }
+    ],
+    "note": ""
+   }
+  }
+ ]
+}

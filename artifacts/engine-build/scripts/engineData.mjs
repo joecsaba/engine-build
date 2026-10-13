@@ -720,6 +720,11 @@ export function loadEngineData() {
     displayName: e.displayName,
     familyName: e.familyName,
     manufacturerName: e.manufacturerName,
+    // "Chevrolet 350ci · 4.001 × 3.484" already starts with the maker; a bare
+    // code ("LT1") does not.
+    label: String(e.displayName ?? "").startsWith(`${e.manufacturerName} `)
+      ? e.displayName
+      : `${e.manufacturerName} ${e.displayName}`,
     displacement_ci: e.displacement_ci,
   });
 

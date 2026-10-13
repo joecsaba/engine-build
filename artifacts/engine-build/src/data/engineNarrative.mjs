@@ -27,7 +27,12 @@ function nameFor(e) {
   // A bare variant code ("R", "J") is not a name a reader recognises; say
   // which family it belongs to.
   const code = String(e.displayName ?? "").trim();
-  if (code.length <= 3 && e.familyName) return `${e.manufacturerName ?? ""} ${e.familyName} (${code})`.trim();
+  if (code.length <= 3 && e.familyName) {
+    // "Chevrolet 333ci" already names the maker; don't say it twice.
+    const mfr = e.manufacturerName ?? "";
+    const fam = mfr && e.familyName.startsWith(`${mfr} `) ? e.familyName : `${mfr} ${e.familyName}`;
+    return `${fam.trim()} (${code})`;
+  }
   return base || "This engine";
 }
 

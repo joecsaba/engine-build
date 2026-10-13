@@ -1,0 +1,332 @@
+{
+ "name": "GM 2.2 OHV inline-four LN2 (133 ci)",
+ "fields": {
+  "stroke_in": {
+   "value": 3.4646,
+   "sources": [
+    {
+     "name": "GM Heritage Center 1993 Chevrolet Corsica information kit (MVMA specs)",
+     "url": "https://www.gm.com/content/dam/company/no_search/heritage-archive-docs/vehicle-information-kits/chevrolet/1993-Chevrolet-Corsica.pdf",
+     "says": "2.2 LITER L4 (133 CID) MULTI-PORT FUEL INJECTION RPO LN2 ... Bore 89.0 mm (3.50 in.), Stroke 88.0 mm (3.46 in.)"
+    },
+    {
+     "name": "Wikipedia: General Motors 122 engine",
+     "url": "https://en.wikipedia.org/wiki/General_Motors_122_engine",
+     "says": "stroke 88 mm (3.46 in) (2.2)"
+    },
+    {
+     "name": "Engine Builder magazine: Rebuilding the GM / Chevy 2.2L Engine (Doug Anderson, July 2000)",
+     "url": "https://www.enginebuildermag.com/2000/07/rebuilding-the-chevy-2-2l-engine/",
+     "says": "In 1990, the stroke was increased from 3.15″ to 3.46″ to make the 2.0L into a 2.2L."
+    }
+   ],
+   "note": "88.0 mm = 3.4646 in (GM rounds to 3.46). Same figure in the 1994 Cavalier kit."
+  },
+  "displacement_ci": {
+   "value": 133,
+   "sources": [
+    {
+     "name": "GM Heritage Center 1993 Chevrolet Corsica information kit",
+     "url": "https://www.gm.com/content/dam/company/no_search/heritage-archive-docs/vehicle-information-kits/chevrolet/1993-Chevrolet-Corsica.pdf",
+     "says": "LN2 2.2 (133) Multi-Port Fuel Injection 9.0:1 82 (110) @ 5200"
+    },
+    {
+     "name": "Consumer Guide: 1990-96 Oldsmobile Cutlass Ciera (used-car review)",
+     "url": "https://consumerguide.com/used/1990-96-oldsmobile-cutlass-ciera/",
+     "says": "ohv I4, 2.2/133, 120 hp, 130 lb-ft"
+    },
+    {
+     "name": "Wikipedia: General Motors 122 engine",
+     "url": "https://en.wikipedia.org/wiki/General_Motors_122_engine",
+     "says": "2,189 cc (133.6 cu in)"
+    }
+   ],
+   "note": "2,189 cc = 133.6 ci; GM and Olds literature say 133; NHRA (1998-99) rounds to 134."
+  },
+  "displacement_l": {
+   "value": 2.2,
+   "sources": [
+    {
+     "name": "GM Heritage Center 1993 Chevrolet Corsica information kit",
+     "url": "https://www.gm.com/content/dam/company/no_search/heritage-archive-docs/vehicle-information-kits/chevrolet/1993-Chevrolet-Corsica.pdf",
+     "says": "2.2 LITER L4 (133 CID)"
+    },
+    {
+     "name": "EPA fueleconomy.gov vehicle data",
+     "url": "https://www.fueleconomy.gov/feg/download.shtml",
+     "says": "1993, 1994 Cutlass Ciera and 1996 Ciera SL: 2.2 L 4-cyl"
+    },
+    {
+     "name": "Consumer Guide: 1990-96 Oldsmobile Cutlass Ciera",
+     "url": "https://consumerguide.com/used/1990-96-oldsmobile-cutlass-ciera/",
+     "says": "2.2/133"
+    },
+    {
+     "name": "Wikipedia: General Motors 122 engine",
+     "url": "https://en.wikipedia.org/wiki/General_Motors_122_engine",
+     "says": "2,189 cc"
+    },
+    {
+     "name": "Engine Builder magazine (2000)",
+     "url": "https://www.enginebuildermag.com/2000/07/rebuilding-the-chevy-2-2l-engine/",
+     "says": "Rebuilding the GM / Chevy 2.2L Engine"
+    }
+   ],
+   "note": ""
+  },
+  "num_cylinders": {
+   "value": 4,
+   "sources": [
+    {
+     "name": "GM Heritage Center 1993 Chevrolet Corsica information kit",
+     "url": "https://www.gm.com/content/dam/company/no_search/heritage-archive-docs/vehicle-information-kits/chevrolet/1993-Chevrolet-Corsica.pdf",
+     "says": "No. of cylinders 4"
+    },
+    {
+     "name": "EPA fueleconomy.gov vehicle data",
+     "url": "https://www.fueleconomy.gov/feg/download.shtml",
+     "says": "2.2 L 4-cyl"
+    },
+    {
+     "name": "Consumer Guide: 1990-96 Oldsmobile Cutlass Ciera",
+     "url": "https://consumerguide.com/used/1990-96-oldsmobile-cutlass-ciera/",
+     "says": "ohv I4"
+    },
+    {
+     "name": "Wikipedia: General Motors 122 engine",
+     "url": "https://en.wikipedia.org/wiki/General_Motors_122_engine",
+     "says": "straight-four engine"
+    }
+   ],
+   "note": ""
+  },
+  "configuration": {
+   "value": "Inline-four, transverse (FWD)",
+   "sources": [
+    {
+     "name": "GM Heritage Center 1993 Chevrolet Corsica information kit",
+     "url": "https://www.gm.com/content/dam/company/no_search/heritage-archive-docs/vehicle-information-kits/chevrolet/1993-Chevrolet-Corsica.pdf",
+     "says": "Type: Inline, Front, Transverse - OHV"
+    },
+    {
+     "name": "Consumer Guide: 1990-96 Oldsmobile Cutlass Ciera",
+     "url": "https://consumerguide.com/used/1990-96-oldsmobile-cutlass-ciera/",
+     "says": "ohv I4"
+    },
+    {
+     "name": "Wikipedia: General Motors 122 engine",
+     "url": "https://en.wikipedia.org/wiki/General_Motors_122_engine",
+     "says": "configuration: Naturally aspirated straight-four engine"
+    }
+   ],
+   "note": ""
+  },
+  "valvetrain": {
+   "value": "OHV pushrod, 2 valves per cylinder (roller lifters from 1994)",
+   "sources": [
+    {
+     "name": "GM Heritage Center 1993 Corsica / 1994 Cavalier information kits",
+     "url": "https://www.gm.com/content/dam/company/no_search/heritage-archive-docs/vehicle-information-kits/chevrolet/1994-Chevrolet-Cavalier.pdf",
+     "says": "Inline, Front, Transverse - OHV; Number intake/exhaust valves 4/4; hydraulic lifters standard"
+    },
+    {
+     "name": "Wikipedia: General Motors 122 engine",
+     "url": "https://en.wikipedia.org/wiki/General_Motors_122_engine",
+     "says": "OHV 2 valves x cyl."
+    },
+    {
+     "name": "Consumer Guide: 1990-96 Oldsmobile Cutlass Ciera",
+     "url": "https://consumerguide.com/used/1990-96-oldsmobile-cutlass-ciera/",
+     "says": "ohv I4"
+    },
+    {
+     "name": "Engine Builder magazine (2000)",
+     "url": "https://www.enginebuildermag.com/2000/07/rebuilding-the-chevy-2-2l-engine/",
+     "says": "this four cylinder, pushrod motor ... The new 'Generation II' engine came with a roller cam (1994)"
+    }
+   ],
+   "note": ""
+  },
+  "block_material": {
+   "value": "Cast iron",
+   "sources": [
+    {
+     "name": "GM Heritage Center 1993 Chevrolet Corsica information kit",
+     "url": "https://www.gm.com/content/dam/company/no_search/heritage-archive-docs/vehicle-information-kits/chevrolet/1993-Chevrolet-Corsica.pdf",
+     "says": "Cyl blck matl & mass: Cast Iron, 40 (88)"
+    },
+    {
+     "name": "Wikipedia: General Motors 122 engine",
+     "url": "https://en.wikipedia.org/wiki/General_Motors_122_engine",
+     "says": "block: Cast iron"
+    },
+    {
+     "name": "Hooniverse: Lamest Classics - the new-for-'95 Chevy Cavalier (Jan 16 2020)",
+     "url": "https://www.hooniverse.com/?p=279588",
+     "says": "the base 2.2-liter pushrod engine ... a coarse and wheezy hunk of iron with an aluminum head"
+    }
+   ],
+   "note": "Hooniverse (enthusiast blog) is the weakest of the three."
+  },
+  "head_material": {
+   "value": "Aluminum",
+   "sources": [
+    {
+     "name": "GM Heritage Center 1993 Chevrolet Corsica information kit",
+     "url": "https://www.gm.com/content/dam/company/no_search/heritage-archive-docs/vehicle-information-kits/chevrolet/1993-Chevrolet-Corsica.pdf",
+     "says": "Cyl. head material & mass: Aluminum, 9.7 (21.3)"
+    },
+    {
+     "name": "Wikipedia: General Motors 122 engine",
+     "url": "https://en.wikipedia.org/wiki/General_Motors_122_engine",
+     "says": "head: Aluminum (1987-2003)"
+    },
+    {
+     "name": "Engine Builder magazine (2000)",
+     "url": "https://www.enginebuildermag.com/2000/07/rebuilding-the-chevy-2-2l-engine/",
+     "says": "The 2.0L was upgraded in 1987 with the addition of an aluminum head"
+    },
+    {
+     "name": "Hooniverse: Lamest Classics - the new-for-'95 Chevy Cavalier",
+     "url": "https://www.hooniverse.com/?p=279588",
+     "says": "hunk of iron with an aluminum head"
+    }
+   ],
+   "note": "Brief asked whether the head was iron: no, aluminum (iron heads ended with the 1986 2.0)."
+  },
+  "induction": {
+   "value": "Multi-port fuel injection (MPFI); sequential port injection later in the run",
+   "sources": [
+    {
+     "name": "GM Heritage Center 1993 Chevrolet Corsica information kit",
+     "url": "https://www.gm.com/content/dam/company/no_search/heritage-archive-docs/vehicle-information-kits/chevrolet/1993-Chevrolet-Corsica.pdf",
+     "says": "LN2 2.2 (133) Multi-Port Fuel Injection"
+    },
+    {
+     "name": "EPA fueleconomy.gov vehicle data",
+     "url": "https://www.fueleconomy.gov/feg/download.shtml",
+     "says": "1994 Cutlass Ciera / 1996 Ciera SL: 2.2 L 4-cyl (FFS) (MPFI)"
+    },
+    {
+     "name": "Wikipedia: General Motors 122 engine",
+     "url": "https://en.wikipedia.org/wiki/General_Motors_122_engine",
+     "says": "For 1992, the 2.2 received multi-port fuel injection (MPFI) ... In 1994, all 2.2-liter engines were updated to sequential multi-port fuel injection"
+    },
+    {
+     "name": "Consumer Guide: 1990-96 Chevrolet Corsica",
+     "url": "https://consumerguide.com/used/1990-96-chevrolet-corsica/",
+     "says": "a new fuel injection system introduced in 1992 boosted output of the 2.2-liter from 95 to 110 hp"
+    },
+    {
+     "name": "Engine Builder magazine (2000)",
+     "url": "https://www.enginebuildermag.com/2000/07/rebuilding-the-chevy-2-2l-engine/",
+     "says": "Chevy switched to sequential port fuel injection on the 2.2L in '96"
+    }
+   ],
+   "note": "1993 was already MPFI, not TBI (TBI 2.2 was 1990-91). When it became sequential is disputed: Wikipedia says 1994, Engine Builder says 1996 (cam sensor added to the 1996 block)."
+  },
+  "compression_ratio": {
+   "value": 9.0,
+   "sources": [
+    {
+     "name": "GM Heritage Center 1993 Chevrolet Corsica information kit",
+     "url": "https://www.gm.com/content/dam/company/no_search/heritage-archive-docs/vehicle-information-kits/chevrolet/1993-Chevrolet-Corsica.pdf",
+     "says": "LN2 2.2 (133) Multi-Port Fuel Injection 9.0:1"
+    },
+    {
+     "name": "Wikipedia: General Motors 122 engine (infobox)",
+     "url": "https://en.wikipedia.org/wiki/General_Motors_122_engine",
+     "says": "compression 9.0:1"
+    },
+    {
+     "name": "NHRA engine blueprints CHEV-98 / CHEV-99 (2.2, 134 ci, 120 hp)",
+     "url": "https://www.nhra.net/tech_specs/engine/blueprints/CHEV-98.rtf",
+     "says": "compression 9.0"
+    }
+   ],
+   "note": "NHRA has no 1993-96 2.2 row; the 1998-99 120-hp 2.2 is the same LN2 family. No 1994-96 factory figure checked."
+  },
+  "years": {
+   "value": "1993-1996 in the Oldsmobile Cutlass Ciera / Ciera (the LN2 2.2 MPFI was built 1992-2002 overall)",
+   "sources": [
+    {
+     "name": "Oldsmobile 1993 Full Line and 1994/1995/1996 Ciera catalogs (GM factory literature)",
+     "url": "https://oldcarbrochures.org/United%20States/Oldsmobile/1993-Oldsmobile/1993-Oldsmobile-Full-Line-Prestige-Brochure/index.html",
+     "says": "1993: 2.2-liter (133 cu. in.) L4 110 @ 5200, multiport, Standard on S; 1996: Standard features include a fuel-injected 2.2-liter engine"
+    },
+    {
+     "name": "EPA fueleconomy.gov vehicle data",
+     "url": "https://www.fueleconomy.gov/feg/download.shtml",
+     "says": "1993 Cutlass Ciera/Cruiser, 1994 Cutlass Ciera, 1996 Ciera SL: 2.2 L 4-cyl (no 1995 row in the extract)"
+    },
+    {
+     "name": "Wikipedia: General Motors 122 engine",
+     "url": "https://en.wikipedia.org/wiki/General_Motors_122_engine",
+     "says": "LN2 applications: 1993-1996 Oldsmobile Cutlass Ciera; 1993-1996 Buick Century"
+    }
+   ],
+   "note": "Consumer Guide says the four was dropped for 1993 and the 2.2 arrived as the new base engine for 1994; the 1993 Olds catalog, the 1993 EPA listing and Wikipedia contradict it."
+  }
+ },
+ "variants": [
+  {
+   "year": 1993,
+   "hp": 110,
+   "hp_basis": "SAE net",
+   "compression_ratio": 9.0,
+   "code": "LN2",
+   "induction": "MPFI",
+   "sources": [
+    {
+     "name": "Oldsmobile 1993 Full Line Prestige catalog + GM Heritage 1993 Chevrolet Corsica kit (GM, one source)",
+     "url": "https://oldcarbrochures.org/United%20States/Oldsmobile/1993-Oldsmobile/1993-Oldsmobile-Full-Line-Prestige-Brochure/index.html",
+     "says": "CUTLASS CIERA: 2.2-liter (133 cu. in.) L4 110 @ 5200, 130 @ 3200, multiport; Corsica kit: LN2 2.2 (133) MPFI 9.0:1 82 (110) @ 5200"
+    },
+    {
+     "name": "Wikipedia: Oldsmobile Cutlass Ciera / General Motors 122 engine",
+     "url": "https://en.wikipedia.org/wiki/Oldsmobile_Cutlass_Ciera",
+     "says": "1993 2.2 L 2200 I4 110 hp; 1992 MPFI 2.2 110 hp"
+    },
+    {
+     "name": "Consumer Guide: 1990-96 Chevrolet Corsica",
+     "url": "https://consumerguide.com/used/1990-96-chevrolet-corsica/",
+     "says": "1992: Output of the base engine grew to 110 horsepower ... then to 120 for '94"
+    }
+   ],
+   "note": "Consumer Guide's 110 hp is for the same LN2 in the Corsica (1992-93); its Ciera page wrongly says there was no four for 1993."
+  },
+  {
+   "year": "1994-1996",
+   "hp": 120,
+   "hp_basis": "SAE net",
+   "compression_ratio": null,
+   "code": "LN2",
+   "induction": "MPFI (sequential from 1994 per Wikipedia, 1996 per Engine Builder)",
+   "sources": [
+    {
+     "name": "Oldsmobile 1994 Cutlass Ciera, 1995 and 1996 Ciera catalogs (GM factory literature)",
+     "url": "https://oldcarbrochures.org/United%20States/Oldsmobile/1994-Oldsmobile/1994-Oldsmobile-Cutlass-Ciera-Brochure/index.html",
+     "says": "1994: 2.2-Liter 120 @ 5200, 130 @ 3200, multiport; 1995/1996 POWER TEAMS 2.2 liters (133 cu in) 120 @ 5200"
+    },
+    {
+     "name": "Consumer Guide: 1990-96 Oldsmobile Cutlass Ciera",
+     "url": "https://consumerguide.com/used/1990-96-oldsmobile-cutlass-ciera/",
+     "says": "The new base engine is a 120-horsepower, 2.2-liter 4-cylinder, paired with a 3-speed automatic; ohv I4 2.2/133 120 hp"
+    },
+    {
+     "name": "Wikipedia: Oldsmobile Cutlass Ciera / General Motors 122 engine",
+     "url": "https://en.wikipedia.org/wiki/Oldsmobile_Cutlass_Ciera",
+     "says": "1994-1996 2.2 L 2200 I4 120 hp; 1994 ... power increased to 120 hp"
+    }
+   ],
+   "note": "Sold as 'Oldsmobile Ciera' for 1996."
+  }
+ ],
+ "unverified": {
+  "bore_in": "3.5039 in (89.0 mm): GM Heritage 1993 Corsica and 1994 Cavalier kits ('89.0 mm (3.50 in.)') and Wikipedia ('89 mm'). Only 2 independent; Engine Builder gives only the stroke change. All other hits were spec sites (fastcarcheck, ultimatespecs, automobile-catalog), which are excluded.",
+  "rod_length_in": "5.59 in (141.95 mm): GM Heritage 1994 Cavalier kit only ('Connecting Rods ... Length 141.95 (5.59 in.)'). No second source.",
+  "firing_order": "1-3-4-2: GM Heritage 1993 Corsica kit only (MVMA 'Firing order 1-3-4-2'). Other hits were repair-advice blogs/firing-order sites, which are excluded.",
+  "fuel_type": "Gasoline (unleaded, 87 AKI): GM 1993/1994 kits ('Fuel required Unleaded; antiknock index 87') and Wikipedia infobox (Gasoline). Only 2."
+ },
+ "unverified_variants": []
+}

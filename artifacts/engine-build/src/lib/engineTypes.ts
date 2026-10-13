@@ -86,6 +86,7 @@ export interface EngineRecord {
     displayName: string;
     familyName: string;
     manufacturerName: string;
+    label: string;
     displacement_ci: number | null;
   }[];
   vehicles: EngineVehicle[];

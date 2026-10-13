@@ -139,6 +139,9 @@ for fn in spec["files"]:
             # verified displacement corrections (the Mustang's 3.9 Essex is 237 ci, not 238)
             if k in spec.get("cid_fix", {}):
                 e = {**e, "cid": spec["cid_fix"][k]}
+            # model-wide corrections: the research rounded metric sizes differently (LT6 5.5 L = 333 ci)
+            if str(e.get("cid")) in spec.get("cid_remap", {}):
+                e = {**e, "cid": spec["cid_remap"][str(e["cid"])]}
             raw = list(e.get("sources") or []) + spec.get("add_sources", {}).get(k, [])
             srcs, seen = [], set()
             for s in raw:

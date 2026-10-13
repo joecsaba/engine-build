@@ -1,0 +1,460 @@
+{
+ "name": "Ford FE 390/427/428 and 385-series 429/460 bore and stroke",
+ "fields": {
+  "ford-fe-390": {
+   "id": "ford-fe-390",
+   "name": "Ford 390 FE V8",
+   "bore_in": {
+    "value": 4.05,
+    "precise": 4.05,
+    "sources": [
+     {
+      "name": "NHRA engine blueprint FORD-68",
+      "url": "https://www.nhra.net/tech_specs/engine/blueprints/FORD-68.rtf",
+      "says": "F-390 families (1968, also FORD-69/70): bore 4.052"
+     },
+     {
+      "name": "Wikipedia - Ford FE engine",
+      "url": "https://en.wikipedia.org/wiki/Ford_FE_engine",
+      "says": "bore of 4.0502 inches (102.88 mm), stroke of 3.785 inches (96.14 mm)"
+     },
+     {
+      "name": "Over-Drive Magazine - The Ford FE Series V-8",
+      "url": "https://over-drive-magazine.com/2023/02/14/the-ford-fe-series-v-8/",
+      "says": "Bore and stroke: 4.05 x 3.78 inches (1961-1968 390 variants)"
+     },
+     {
+      "name": "Mercury 1967 Cougar brochure, power-team page (Ford factory)",
+      "url": "https://oldcarbrochures.org/United%20States/Mercury/1967%20Mercury/1967-Mercury-Cougar-Brochure/index.html",
+      "says": "Marauder 390 GT V-8 ... 4.05 x 3.78"
+     }
+    ],
+    "note": "Nominal 4.05 in Ford, Over-Drive and (4.0502) Wikipedia; NHRA prints 4.052. Use 4.05 (precise 4.0500); keep 4.052 as the NHRA blueprint figure, which only NHRA gives."
+   },
+   "stroke_in": {
+    "value": 3.78,
+    "precise": 3.784,
+    "sources": [
+     {
+      "name": "NHRA engine blueprint FORD-68",
+      "url": "https://www.nhra.net/tech_specs/engine/blueprints/FORD-68.rtf",
+      "says": "F-390 families: stroke 3.784"
+     },
+     {
+      "name": "Wikipedia - Ford FE engine",
+      "url": "https://en.wikipedia.org/wiki/Ford_FE_engine",
+      "says": "stroke of 3.785 inches (96.14 mm)"
+     },
+     {
+      "name": "Over-Drive Magazine - The Ford FE Series V-8",
+      "url": "https://over-drive-magazine.com/2023/02/14/the-ford-fe-series-v-8/",
+      "says": "Bore and stroke: 4.05 x 3.78 inches"
+     },
+     {
+      "name": "Mercury 1967 Cougar brochure, power-team page (Ford factory)",
+      "url": "https://oldcarbrochures.org/United%20States/Mercury/1967%20Mercury/1967-Mercury-Cougar-Brochure/index.html",
+      "says": "4.05 x 3.78"
+     }
+    ],
+    "note": "Ford/Over-Drive round to 3.78. Precise 3.784 (NHRA; Jalopnik gives 3.784 for the 427, which shares the 390 crank) vs Wikipedia 3.785. 4.05 x 3.784 x 8 cyl = 390.0 ci."
+   },
+   "displacement_ci": {
+    "value": 390,
+    "sources": [
+     {
+      "name": "NHRA engine blueprint FORD-68",
+      "url": "https://www.nhra.net/tech_specs/engine/blueprints/FORD-68.rtf",
+      "says": "390"
+     },
+     {
+      "name": "Wikipedia - Ford FE engine",
+      "url": "https://en.wikipedia.org/wiki/Ford_FE_engine",
+      "says": "390"
+     },
+     {
+      "name": "Over-Drive Magazine - The Ford FE Series V-8",
+      "url": "https://over-drive-magazine.com/2023/02/14/the-ford-fe-series-v-8/",
+      "says": "390 CID"
+     },
+     {
+      "name": "Mercury 1967 Cougar brochure, power-team page (Ford factory)",
+      "url": "https://oldcarbrochures.org/United%20States/Mercury/1967%20Mercury/1967-Mercury-Cougar-Brochure/index.html",
+      "says": "Marauder 390"
+     }
+    ],
+    "note": ""
+   }
+  },
+  "ford-fe-427": {
+   "id": "ford-fe-427",
+   "name": "Ford 427 FE V8",
+   "bore_in": {
+    "value": 4.23,
+    "precise": 4.232,
+    "sources": [
+     {
+      "name": "NHRA engine blueprint FORD-68",
+      "url": "https://www.nhra.net/tech_specs/engine/blueprints/FORD-68.rtf",
+      "says": "F-427 (1968, 390 hp): bore 4.232"
+     },
+     {
+      "name": "Wikipedia - Ford FE engine",
+      "url": "https://en.wikipedia.org/wiki/Ford_FE_engine",
+      "says": "bore was increased to 4.232 inches (107.49 mm)"
+     },
+     {
+      "name": "Jalopnik (Paul Stadden, Nov 25 2025) - Ford 427 vs 428 engines: the differences",
+      "url": "https://www.jalopnik.com/2031962/ford-427-vs-428-engines-differences/",
+      "says": "a bore of 4.232 inches and a stroke of 3.784 inches"
+     },
+     {
+      "name": "Jalopnik (Paul Stadden, Nov 2025) - Ford 427 vs Chevy 427 (same outlet/author as above: counts once)",
+      "url": "https://jalopnik.com/2032688/ford-vs-chevy-427-big-block-engines-comparison/",
+      "says": "4.232-inch bore and 3.784-inch stroke ... 425.82 cubic inches of actual displacement"
+     },
+     {
+      "name": "Mercury 1968 Cougar brochure, power-team page (Ford factory)",
+      "url": "https://oldcarbrochures.org/United%20States/Mercury/1968%20Mercury/1968-Mercury-Cougar-Brochure/index.html",
+      "says": "Cougar 427 E V-8, 4-bbl, 390 hp @ 5600, 4.23 x 3.78"
+     },
+     {
+      "name": "Over-Drive Magazine - The Ford FE Series V-8",
+      "url": "https://over-drive-magazine.com/2023/02/14/the-ford-fe-series-v-8/",
+      "says": "Bore and stroke: 4.24 x 3.78 inches (1963-1967); 4.23 x 3.78 inches (1968 Cougar)"
+     }
+    ],
+    "note": "Precise 4.232: NHRA, Wikipedia and Jalopnik agree (two Jalopnik pages count once). 4.2328 appears only in search-engine summaries / copied spec pages, not in any reputable source read; 4.2346 was not found anywhere reputable. Over-Drive's 4.24 (1963-67) is a round-up of the same bore; 1968 Mercury literature prints 4.23. 4.232 x 3.784 = 425.8 ci actual."
+   },
+   "stroke_in": {
+    "value": 3.78,
+    "precise": 3.784,
+    "sources": [
+     {
+      "name": "NHRA engine blueprint FORD-68",
+      "url": "https://www.nhra.net/tech_specs/engine/blueprints/FORD-68.rtf",
+      "says": "F-427: stroke 3.784"
+     },
+     {
+      "name": "Wikipedia - Ford FE engine",
+      "url": "https://en.wikipedia.org/wiki/Ford_FE_engine",
+      "says": "stroke was the same as the 390 at 3.785 inches (96.14 mm)"
+     },
+     {
+      "name": "Jalopnik (Paul Stadden, Nov 25 2025) - Ford 427 vs 428 engines: the differences",
+      "url": "https://www.jalopnik.com/2031962/ford-427-vs-428-engines-differences/",
+      "says": "a stroke of 3.784 inches"
+     },
+     {
+      "name": "Over-Drive Magazine - The Ford FE Series V-8",
+      "url": "https://over-drive-magazine.com/2023/02/14/the-ford-fe-series-v-8/",
+      "says": "4.24 x 3.78 / 4.23 x 3.78"
+     },
+     {
+      "name": "Mercury 1968 Cougar brochure, power-team page (Ford factory)",
+      "url": "https://oldcarbrochures.org/United%20States/Mercury/1968%20Mercury/1968-Mercury-Cougar-Brochure/index.html",
+      "says": "4.23 x 3.78"
+     }
+    ],
+    "note": "Same stroke as the 390. 3.784 (NHRA, Jalopnik) vs Wikipedia 3.785; use 3.784."
+   },
+   "displacement_ci": {
+    "value": 427,
+    "sources": [
+     {
+      "name": "NHRA engine blueprint FORD-68",
+      "url": "https://www.nhra.net/tech_specs/engine/blueprints/FORD-68.rtf",
+      "says": "427"
+     },
+     {
+      "name": "Wikipedia - Ford FE engine",
+      "url": "https://en.wikipedia.org/wiki/Ford_FE_engine",
+      "says": "427"
+     },
+     {
+      "name": "Mercury 1968 Cougar brochure, power-team page (Ford factory)",
+      "url": "https://oldcarbrochures.org/United%20States/Mercury/1968%20Mercury/1968-Mercury-Cougar-Brochure/index.html",
+      "says": "Cougar 427 E"
+     },
+     {
+      "name": "Jalopnik (Paul Stadden, Nov 2025) - Ford 427 vs Chevy 427 (same outlet/author as above: counts once)",
+      "url": "https://jalopnik.com/2032688/ford-vs-chevy-427-big-block-engines-comparison/",
+      "says": "marketed as a 427; 425.82 ci actual"
+     }
+    ],
+    "note": "Nominal 427; actual about 425.8 ci."
+   }
+  },
+  "ford-fe-428": {
+   "id": "ford-fe-428",
+   "name": "Ford 428 FE V8",
+   "bore_in": {
+    "value": 4.13,
+    "precise": 4.132,
+    "sources": [
+     {
+      "name": "NHRA engine blueprint FORD-68",
+      "url": "https://www.nhra.net/tech_specs/engine/blueprints/FORD-68.rtf",
+      "says": "F-428 (340/360 hp), and 428 CJ in FORD-69/70: bore 4.132"
+     },
+     {
+      "name": "Wikipedia - Ford FE engine",
+      "url": "https://en.wikipedia.org/wiki/Ford_FE_engine",
+      "says": "4.13 in (104.90 mm) bore and a 3.98 in (101.09 mm) stroke"
+     },
+     {
+      "name": "Jalopnik (Paul Stadden, Nov 25 2025) - Ford 427 vs 428 engines: the differences",
+      "url": "https://www.jalopnik.com/2031962/ford-427-vs-428-engines-differences/",
+      "says": "a 4.132-inch bore and a 3.984-inch stroke"
+     },
+     {
+      "name": "Over-Drive Magazine - The Ford FE Series V-8",
+      "url": "https://over-drive-magazine.com/2023/02/14/the-ford-fe-series-v-8/",
+      "says": "Bore and stroke: 4.13 x 3.98 inches (all 1966-1970 variants)"
+     },
+     {
+      "name": "Mercury 1968 Cougar brochure, power-team page (Ford factory)",
+      "url": "https://oldcarbrochures.org/United%20States/Mercury/1968%20Mercury/1968-Mercury-Cougar-Brochure/index.html",
+      "says": "428 CID Cobra Jet V-8, 335 HP @ 5400, 4.13 x 3.98"
+     }
+    ],
+    "note": "4.13 rounded (Ford, Wikipedia, Over-Drive); precise 4.132 (NHRA, Jalopnik)."
+   },
+   "stroke_in": {
+    "value": 3.98,
+    "precise": 3.984,
+    "sources": [
+     {
+      "name": "NHRA engine blueprint FORD-68",
+      "url": "https://www.nhra.net/tech_specs/engine/blueprints/FORD-68.rtf",
+      "says": "F-428: stroke 3.984"
+     },
+     {
+      "name": "Wikipedia - Ford FE engine",
+      "url": "https://en.wikipedia.org/wiki/Ford_FE_engine",
+      "says": "3.98 in (101.09 mm) stroke"
+     },
+     {
+      "name": "Jalopnik (Paul Stadden, Nov 25 2025) - Ford 427 vs 428 engines: the differences",
+      "url": "https://www.jalopnik.com/2031962/ford-427-vs-428-engines-differences/",
+      "says": "a 3.984-inch stroke"
+     },
+     {
+      "name": "Over-Drive Magazine - The Ford FE Series V-8",
+      "url": "https://over-drive-magazine.com/2023/02/14/the-ford-fe-series-v-8/",
+      "says": "4.13 x 3.98"
+     },
+     {
+      "name": "Mercury 1968 Cougar brochure, power-team page (Ford factory)",
+      "url": "https://oldcarbrochures.org/United%20States/Mercury/1968%20Mercury/1968-Mercury-Cougar-Brochure/index.html",
+      "says": "4.13 x 3.98"
+     }
+    ],
+    "note": "3.98 rounded; precise 3.984 (NHRA, Jalopnik). 4.132 x 3.984 = 427.4 ci actual."
+   },
+   "displacement_ci": {
+    "value": 428,
+    "sources": [
+     {
+      "name": "NHRA engine blueprint FORD-68",
+      "url": "https://www.nhra.net/tech_specs/engine/blueprints/FORD-68.rtf",
+      "says": "428"
+     },
+     {
+      "name": "Wikipedia - Ford FE engine",
+      "url": "https://en.wikipedia.org/wiki/Ford_FE_engine",
+      "says": "428"
+     },
+     {
+      "name": "Over-Drive Magazine - The Ford FE Series V-8",
+      "url": "https://over-drive-magazine.com/2023/02/14/the-ford-fe-series-v-8/",
+      "says": "428 CID"
+     },
+     {
+      "name": "Mercury 1968 Cougar brochure, power-team page (Ford factory)",
+      "url": "https://oldcarbrochures.org/United%20States/Mercury/1968%20Mercury/1968-Mercury-Cougar-Brochure/index.html",
+      "says": "428 CID Cobra Jet"
+     }
+    ],
+    "note": ""
+   }
+  },
+  "ford-385-429": {
+   "id": "ford-385-429",
+   "name": "Ford 429 385-series V8",
+   "bore_in": {
+    "value": 4.36,
+    "precise": 4.362,
+    "sources": [
+     {
+      "name": "NHRA engine blueprints FORD-69 / FORD-70",
+      "url": "https://www.nhra.net/tech_specs/engine/blueprints/FORD-69.rtf",
+      "says": "429 (1969/1970 incl. CJ): bore 4.362; FORD-73 also 4.362"
+     },
+     {
+      "name": "Wikipedia - Ford 385 engine",
+      "url": "https://en.wikipedia.org/wiki/Ford_385_engine",
+      "says": "Bore x stroke: 4.360 in x 3.59 in (110.7 mm x 91.2 mm)"
+     },
+     {
+      "name": "Engine Builder Magazine (Bob McDonald) - Building A Ford 460 Stroker",
+      "url": "https://www.enginebuildermag.com/2017/03/building-ford-460-stroker/",
+      "says": "Both blocks [429 and 460] share the same bore of 4.36\" but have different strokes"
+     },
+     {
+      "name": "Driving Line (Benjamin Hunting, Feb 11 2021) - A History of the Ford 429ci V8",
+      "url": "https://www.drivingline.com/articles/a-history-of-the-ford-429-v8-the-blue-ovals-final-big-block-muscle-car-blast/",
+      "says": "The engine, which offered a 4.36 inch bore and a 3.59 inch stroke"
+     },
+     {
+      "name": "Over-Drive Magazine - 1970 Ford Fairlane-Torino Fact Sheet",
+      "url": "https://over-drive-magazine.com/2023/02/05/1970-ford-fairlane-torino-fact-sheet/",
+      "says": "429 CID Thunder Jet / Cobra Jet / Super Cobra Jet: Bore and stroke: 4.36 x 3.59 inches"
+     },
+     {
+      "name": "Ford 1969 Thunderbird brochure, specifications (Ford factory)",
+      "url": "https://oldcarbrochures.org/United%20States/Ford_Thunderbird/1969-Ford-Thunderbird/1969-Ford-Thunderbird-Brochure/index.html",
+      "says": "429-cu. in. Thunder Jet V-8 with 360 hp; 4.36 x 3.59"
+     }
+    ],
+    "note": "Every non-NHRA source prints 4.36 (Wikipedia 4.360); only NHRA prints 4.362. Publish 4.36; 4.362 rests on NHRA alone, so 4.360 is the 3-source precise value."
+   },
+   "stroke_in": {
+    "value": 3.59,
+    "precise": 3.59,
+    "sources": [
+     {
+      "name": "NHRA engine blueprints FORD-69 / FORD-70",
+      "url": "https://www.nhra.net/tech_specs/engine/blueprints/FORD-69.rtf",
+      "says": "429: stroke 3.59 (FORD-69, -70, -73)"
+     },
+     {
+      "name": "Wikipedia - Ford 385 engine",
+      "url": "https://en.wikipedia.org/wiki/Ford_385_engine",
+      "says": "4.360 in x 3.59 in"
+     },
+     {
+      "name": "Engine Builder Magazine (Bob McDonald) - Building A Ford 460 Stroker",
+      "url": "https://www.enginebuildermag.com/2017/03/building-ford-460-stroker/",
+      "says": "The 429 has a stroke of 3.59\""
+     },
+     {
+      "name": "Driving Line (Benjamin Hunting, Feb 11 2021) - A History of the Ford 429ci V8",
+      "url": "https://www.drivingline.com/articles/a-history-of-the-ford-429-v8-the-blue-ovals-final-big-block-muscle-car-blast/",
+      "says": "a 3.59 inch stroke"
+     },
+     {
+      "name": "Over-Drive Magazine - 1970 Ford Fairlane-Torino Fact Sheet",
+      "url": "https://over-drive-magazine.com/2023/02/05/1970-ford-fairlane-torino-fact-sheet/",
+      "says": "4.36 x 3.59"
+     },
+     {
+      "name": "Ford 1969 Thunderbird brochure, specifications (Ford factory)",
+      "url": "https://oldcarbrochures.org/United%20States/Ford_Thunderbird/1969-Ford-Thunderbird/1969-Ford-Thunderbird-Brochure/index.html",
+      "says": "4.36 x 3.59"
+     }
+    ],
+    "note": "All sources, NHRA included, give 3.59 (3.590). 4.36 x 3.59 = 428.8 ci; 4.362 x 3.59 = 429.2 ci."
+   },
+   "displacement_ci": {
+    "value": 429,
+    "sources": [
+     {
+      "name": "NHRA engine blueprints FORD-69 / FORD-70",
+      "url": "https://www.nhra.net/tech_specs/engine/blueprints/FORD-69.rtf",
+      "says": "429"
+     },
+     {
+      "name": "Wikipedia - Ford 385 engine",
+      "url": "https://en.wikipedia.org/wiki/Ford_385_engine",
+      "says": "429"
+     },
+     {
+      "name": "Over-Drive Magazine - 1970 Ford Fairlane-Torino Fact Sheet",
+      "url": "https://over-drive-magazine.com/2023/02/05/1970-ford-fairlane-torino-fact-sheet/",
+      "says": "429 CID"
+     },
+     {
+      "name": "Driving Line (Benjamin Hunting, Feb 11 2021) - A History of the Ford 429ci V8",
+      "url": "https://www.drivingline.com/articles/a-history-of-the-ford-429-v8-the-blue-ovals-final-big-block-muscle-car-blast/",
+      "says": "429ci"
+     }
+    ],
+    "note": ""
+   }
+  },
+  "ford-385-460": {
+   "id": "ford-385-460",
+   "name": "Ford 460 385-series V8",
+   "bore_in": {
+    "value": 4.36,
+    "precise": 4.362,
+    "sources": [
+     {
+      "name": "NHRA engine blueprint FORD-73",
+      "url": "https://www.nhra.net/tech_specs/engine/blueprints/FORD-73.rtf",
+      "says": "460: bore 4.362"
+     },
+     {
+      "name": "Wikipedia - Ford 385 engine",
+      "url": "https://en.wikipedia.org/wiki/Ford_385_engine",
+      "says": "460 Bore x stroke: 4.360 in x 3.85 in (110.7 mm x 97.8 mm)"
+     },
+     {
+      "name": "Engine Builder Magazine (Bob McDonald) - Building A Ford 460 Stroker",
+      "url": "https://www.enginebuildermag.com/2017/03/building-ford-460-stroker/",
+      "says": "Both blocks [429 and 460] share the same bore of 4.36\""
+     }
+    ],
+    "note": "Same bore as the 429. Non-NHRA sources print 4.36/4.360; NHRA 4.362 (single source for the 3rd decimal). Ford factory literature (e.g. the 1972 Torino brochure the caller already holds) would be a 4th source if it prints 4.36 x 3.85; not re-read here. Driving Line's 460 history (https://www.drivingline.com/articles/a-history-of-the-ford-460-the-blue-ovals-longest-lasting-truck-big-block-v8/) gives no bore. No Over-Drive 460-era fact sheet exists."
+   },
+   "stroke_in": {
+    "value": 3.85,
+    "precise": 3.85,
+    "sources": [
+     {
+      "name": "NHRA engine blueprint FORD-73",
+      "url": "https://www.nhra.net/tech_specs/engine/blueprints/FORD-73.rtf",
+      "says": "460: stroke 3.85"
+     },
+     {
+      "name": "Wikipedia - Ford 385 engine",
+      "url": "https://en.wikipedia.org/wiki/Ford_385_engine",
+      "says": "4.360 in x 3.85 in"
+     },
+     {
+      "name": "Engine Builder Magazine (Bob McDonald) - Building A Ford 460 Stroker",
+      "url": "https://www.enginebuildermag.com/2017/03/building-ford-460-stroker/",
+      "says": "the 460 has a stroke of 3.85\""
+     },
+     {
+      "name": "Driving Line (Benjamin Hunting, Feb 11 2021) - A History of the Ford 429ci V8",
+      "url": "https://www.drivingline.com/articles/a-history-of-the-ford-429-v8-the-blue-ovals-final-big-block-muscle-car-blast/",
+      "says": "[the 385 series is] named after the latter's [460's] 3.85 inch stroke"
+     }
+    ],
+    "note": "All sources 3.85 (3.850). 4.36 x 3.85 = 459.9 ci; 4.362 x 3.85 = 460.3 ci."
+   },
+   "displacement_ci": {
+    "value": 460,
+    "sources": [
+     {
+      "name": "NHRA engine blueprint FORD-73",
+      "url": "https://www.nhra.net/tech_specs/engine/blueprints/FORD-73.rtf",
+      "says": "460"
+     },
+     {
+      "name": "Wikipedia - Ford 385 engine",
+      "url": "https://en.wikipedia.org/wiki/Ford_385_engine",
+      "says": "460"
+     },
+     {
+      "name": "Engine Builder Magazine (Bob McDonald) - Building A Ford 460 Stroker",
+      "url": "https://www.enginebuildermag.com/2017/03/building-ford-460-stroker/",
+      "says": "460"
+     }
+    ],
+    "note": ""
+   }
+  }
+ }
+}

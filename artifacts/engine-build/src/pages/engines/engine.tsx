@@ -242,7 +242,7 @@ export default function EnginePage() {
               {rec.relatedEngines.map((r) => (
                 <li key={r.url}>
                   <Link href={r.url} className="text-[#E85D04] hover:underline">
-                    {r.manufacturerName} {r.displayName}
+                    {r.label}
                   </Link>
                   {r.displacement_ci != null && (
                     <span className="text-muted-foreground"> — {r.displacement_ci} ci</span>

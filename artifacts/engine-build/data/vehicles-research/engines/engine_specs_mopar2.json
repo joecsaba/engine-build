@@ -1,0 +1,2757 @@
+{
+ "job": "mopar2",
+ "engines": [
+  {
+   "id": "dodge-241-red-ram-hemi",
+   "name": "Dodge Red Ram 241 Hemi V8",
+   "fields": {
+    "bore_in": {
+     "value": 3.4375,
+     "sources": [
+      {
+       "name": "Dodge factory brochure: 1953 Dodge Engines (Red Ram V-Eight specifications, p.18-19)",
+       "url": "https://oldcarbrochures.org/United%20States/Dodge/1953_Dodge/1953-Dodge-Engines-Brochure/slides/1953_Dodge_Engines-18-19.html",
+       "says": "Bore, 3-7/16 inches"
+      },
+      {
+       "name": "Wikipedia: Chrysler Hemi engine (Dodge section; cites Standard Catalog of Chrysler)",
+       "url": "https://en.wikipedia.org/wiki/Chrysler_Hemi_engine",
+       "says": "Bore was 3.4375 in"
+      },
+      {
+       "name": "Mac's Motor City Garage: Chrysler's Smallest Hemi, the 1953-57 Dodge Red Ram V8",
+       "url": "https://macsmotorcitygarage.com/chryslers-smallest-hemi-the-1953-57-dodge-red-ram-v8/",
+       "says": "bore of 3.4375 in. (87.3 mm)"
+      },
+      {
+       "name": "Over-Drive Magazine (classic-car fact site): 1953-1957 Dodge Hemi V-8 Engine Facts",
+       "url": "https://over-drive-magazine.com/2026/04/16/1953-1957-dodge-hemi-v-8-engine-facts/",
+       "says": "Bore/Stroke 3.4375 x 3.25 inches"
+      }
+     ],
+     "note": "3-7/16 in (87.3 mm)."
+    },
+    "stroke_in": {
+     "value": 3.25,
+     "sources": [
+      {
+       "name": "Dodge factory brochure: 1953 Dodge Engines (Red Ram V-Eight specifications, p.18-19)",
+       "url": "https://oldcarbrochures.org/United%20States/Dodge/1953_Dodge/1953-Dodge-Engines-Brochure/slides/1953_Dodge_Engines-18-19.html",
+       "says": "stroke, 3-1/4 inches"
+      },
+      {
+       "name": "Wikipedia: Chrysler Hemi engine (Dodge section; cites Standard Catalog of Chrysler)",
+       "url": "https://en.wikipedia.org/wiki/Chrysler_Hemi_engine",
+       "says": "stroke was 3.25 in"
+      },
+      {
+       "name": "Mac's Motor City Garage: Chrysler's Smallest Hemi, the 1953-57 Dodge Red Ram V8",
+       "url": "https://macsmotorcitygarage.com/chryslers-smallest-hemi-the-1953-57-dodge-red-ram-v8/",
+       "says": "stroke of 3.25 in (82.6 mm)"
+      },
+      {
+       "name": "Over-Drive Magazine (classic-car fact site): 1953-1957 Dodge Hemi V-8 Engine Facts",
+       "url": "https://over-drive-magazine.com/2026/04/16/1953-1957-dodge-hemi-v-8-engine-facts/",
+       "says": "3.4375 x 3.25 inches"
+      }
+     ],
+     "note": ""
+    },
+    "displacement_ci": {
+     "value": 241,
+     "sources": [
+      {
+       "name": "Dodge factory brochure: 1953 Dodge Engines (Red Ram V-Eight specifications, p.18-19)",
+       "url": "https://oldcarbrochures.org/United%20States/Dodge/1953_Dodge/1953-Dodge-Engines-Brochure/slides/1953_Dodge_Engines-18-19.html",
+       "says": "Piston displacement, 241.4 cubic inches"
+      },
+      {
+       "name": "Wikipedia: Chrysler Hemi engine (Dodge section; cites Standard Catalog of Chrysler)",
+       "url": "https://en.wikipedia.org/wiki/Chrysler_Hemi_engine",
+       "says": "241.3 cu in, introduced 1953"
+      },
+      {
+       "name": "Mac's Motor City Garage: Chrysler's Smallest Hemi, the 1953-57 Dodge Red Ram V8",
+       "url": "https://macsmotorcitygarage.com/chryslers-smallest-hemi-the-1953-57-dodge-red-ram-v8/",
+       "says": "241 cubic-inch displacement"
+      },
+      {
+       "name": "Over-Drive Magazine (classic-car fact site): 1953-1957 Dodge Hemi V-8 Engine Facts",
+       "url": "https://over-drive-magazine.com/2026/04/16/1953-1957-dodge-hemi-v-8-engine-facts/",
+       "says": "241.3 CID"
+      }
+     ],
+     "note": "Exact 241.3-241.4 ci."
+    },
+    "displacement_l": {
+     "value": 4.0,
+     "sources": [
+      {
+       "name": "Wikipedia: Chrysler Hemi engine (Dodge section; cites Standard Catalog of Chrysler)",
+       "url": "https://en.wikipedia.org/wiki/Chrysler_Hemi_engine",
+       "says": "241.3 cu in (4.0 L)"
+      },
+      {
+       "name": "Mac's Motor City Garage: Chrysler's Smallest Hemi, the 1953-57 Dodge Red Ram V8",
+       "url": "https://macsmotorcitygarage.com/chryslers-smallest-hemi-the-1953-57-dodge-red-ram-v8/",
+       "says": "very nearly 4.0 liters"
+      },
+      {
+       "name": "Dodge factory brochure: 1953 Dodge Engines (Red Ram V-Eight specifications, p.18-19)",
+       "url": "https://oldcarbrochures.org/United%20States/Dodge/1953_Dodge/1953-Dodge-Engines-Brochure/slides/1953_Dodge_Engines-18-19.html",
+       "says": "241.4 ci (= 3.96 L)"
+      }
+     ],
+     "note": "3.96 L exact; 4.0 L rounded."
+    },
+    "num_cylinders": {
+     "value": 8,
+     "sources": [
+      {
+       "name": "Dodge factory brochure: 1953 Dodge Engines (Red Ram V-Eight specifications, p.18-19)",
+       "url": "https://oldcarbrochures.org/United%20States/Dodge/1953_Dodge/1953-Dodge-Engines-Brochure/slides/1953_Dodge_Engines-18-19.html",
+       "says": "90 degree V-block with 8 cylinders"
+      },
+      {
+       "name": "Wikipedia: Chrysler Hemi engine (Dodge section; cites Standard Catalog of Chrysler)",
+       "url": "https://en.wikipedia.org/wiki/Chrysler_Hemi_engine",
+       "says": "V8"
+      },
+      {
+       "name": "Mac's Motor City Garage: Chrysler's Smallest Hemi, the 1953-57 Dodge Red Ram V8",
+       "url": "https://macsmotorcitygarage.com/chryslers-smallest-hemi-the-1953-57-dodge-red-ram-v8/",
+       "says": "Dodge Red Ram V8"
+      }
+     ],
+     "note": ""
+    },
+    "configuration": {
+     "value": "V8 (90-degree)",
+     "sources": [
+      {
+       "name": "Dodge factory brochure: 1953 Dodge Engines (Red Ram V-Eight specifications, p.18-19)",
+       "url": "https://oldcarbrochures.org/United%20States/Dodge/1953_Dodge/1953-Dodge-Engines-Brochure/slides/1953_Dodge_Engines-18-19.html",
+       "says": "overhead valve, 90 degree V-block with 8 cylinders"
+      },
+      {
+       "name": "Wikipedia: Chrysler Hemi engine (Dodge section; cites Standard Catalog of Chrysler)",
+       "url": "https://en.wikipedia.org/wiki/Chrysler_Hemi_engine",
+       "says": "V8"
+      },
+      {
+       "name": "Mac's Motor City Garage: Chrysler's Smallest Hemi, the 1953-57 Dodge Red Ram V8",
+       "url": "https://macsmotorcitygarage.com/chryslers-smallest-hemi-the-1953-57-dodge-red-ram-v8/",
+       "says": "V8"
+      },
+      {
+       "name": "Dodge factory 1955 Data Book (Oct 1954), Engine specifications p.H-4/H-5",
+       "url": "https://oldcarbrochures.org/United%20States/Dodge/1955_Dodge/1955-Dodge-Data-Book/slides/1955_Dodge_Data_Book-H-04-05.html",
+       "says": "Eights - 90 deg V (1955 Dodge V8s)"
+      }
+     ],
+     "note": ""
+    },
+    "valvetrain": {
+     "value": "OHV pushrod, 2 valves/cyl, hemispherical chambers, dual rocker shafts per bank, hydraulic lifters",
+     "sources": [
+      {
+       "name": "Dodge factory brochure: 1953 Dodge Engines (Red Ram V-Eight specifications, p.18-19)",
+       "url": "https://oldcarbrochures.org/United%20States/Dodge/1953_Dodge/1953-Dodge-Engines-Brochure/slides/1953_Dodge_Engines-18-19.html",
+       "says": "overhead valve; hemispherical combustion chamber"
+      },
+      {
+       "name": "Wikipedia: Chrysler Hemi engine (Dodge section; cites Standard Catalog of Chrysler)",
+       "url": "https://en.wikipedia.org/wiki/Chrysler_Hemi_engine",
+       "says": "OHV 2 valves per cylinder (first-gen infobox)"
+      },
+      {
+       "name": "Mac's Motor City Garage: Chrysler's Smallest Hemi, the 1953-57 Dodge Red Ram V8",
+       "url": "https://macsmotorcitygarage.com/chryslers-smallest-hemi-the-1953-57-dodge-red-ram-v8/",
+       "says": "dual rocker shafts per bank; hemi combustion chambers"
+      },
+      {
+       "name": "Over-Drive Magazine (classic-car fact site): 1953-1957 Dodge Hemi V-8 Engine Facts",
+       "url": "https://over-drive-magazine.com/2026/04/16/1953-1957-dodge-hemi-v-8-engine-facts/",
+       "says": "Valve lifters: Hydraulic; Hemispherical Combustion Chambers"
+      }
+     ],
+     "note": ""
+    },
+    "induction": {
+     "value": "Carburetor, single 2-barrel (Stromberg)",
+     "sources": [
+      {
+       "name": "Dodge factory brochure: 1953 Dodge full line, specifications p.6",
+       "url": "https://oldcarbrochures.org/United%20States/Dodge/1953_Dodge/1953_Dodge_Brochure/slides/1953_Dodge-06.html",
+       "says": "FUEL SYSTEM: Dual-downdraft carburetor"
+      },
+      {
+       "name": "Over-Drive Magazine (classic-car fact site): 1953-1957 Dodge Hemi V-8 Engine Facts",
+       "url": "https://over-drive-magazine.com/2026/04/16/1953-1957-dodge-hemi-v-8-engine-facts/",
+       "says": "Stromberg two-barrel model WW3-108 (1953 and 1954)"
+      },
+      {
+       "name": "Hagerty Valuation Tools: 1954 Dodge Coronet (search excerpt)",
+       "url": "https://www.hagerty.com/valuation-tools/dodge/coronet/1954",
+       "says": "1954 Coronet 8-cyl 241cid/150hp 2bbl"
+      }
+     ],
+     "note": ""
+    },
+    "fuel_type": {
+     "value": "Gasoline (regular grade)",
+     "sources": [
+      {
+       "name": "Dodge factory brochure: 1953 Dodge Engines (Red Ram V-Eight specifications, p.18-19)",
+       "url": "https://oldcarbrochures.org/United%20States/Dodge/1953_Dodge/1953-Dodge-Engines-Brochure/slides/1953_Dodge_Engines-18-19.html",
+       "says": "delivers its amazing performance on regular grade gasoline"
+      },
+      {
+       "name": "Mac's Motor City Garage: Chrysler's Smallest Hemi, the 1953-57 Dodge Red Ram V8",
+       "url": "https://macsmotorcitygarage.com/chryslers-smallest-hemi-the-1953-57-dodge-red-ram-v8/",
+       "says": "7.1:1 compression ratio, which allowed the engine to run on regular gas"
+      },
+      {
+       "name": "Wikipedia: Chrysler Hemi engine (Dodge section; cites Standard Catalog of Chrysler)",
+       "url": "https://en.wikipedia.org/wiki/Chrysler_Hemi_engine",
+       "says": "fueltype = Gasoline (first-gen infobox)"
+      }
+     ],
+     "note": ""
+    },
+    "compression_ratio": {
+     "value": "7.1:1 (1953); 7.5:1 (1954 Coronet and up)",
+     "sources": [
+      {
+       "name": "Dodge factory brochure: 1953 Dodge Engines (Red Ram V-Eight specifications, p.18-19)",
+       "url": "https://oldcarbrochures.org/United%20States/Dodge/1953_Dodge/1953-Dodge-Engines-Brochure/slides/1953_Dodge_Engines-18-19.html",
+       "says": "Compression ratio, 7.1 to 1"
+      },
+      {
+       "name": "Mac's Motor City Garage: Chrysler's Smallest Hemi, the 1953-57 Dodge Red Ram V8",
+       "url": "https://macsmotorcitygarage.com/chryslers-smallest-hemi-the-1953-57-dodge-red-ram-v8/",
+       "says": "7.1:1 compression ratio"
+      },
+      {
+       "name": "Over-Drive Magazine (classic-car fact site): 1953-1957 Dodge Hemi V-8 Engine Facts",
+       "url": "https://over-drive-magazine.com/2026/04/16/1953-1957-dodge-hemi-v-8-engine-facts/",
+       "says": "1953 7.1:1; 1954 7.5:1"
+      },
+      {
+       "name": "Dodge factory brochure: 1954 Dodge, Coronet p.9 / specifications p.12",
+       "url": "https://oldcarbrochures.org/United%20States/Dodge/1954_Dodge/1954_Dodge_Brochure/slides/1954_Dodge-12.html",
+       "says": "higher compression ratio of 7.5 to 1 ... 150 horsepower"
+      },
+      {
+       "name": "Wikipedia: Chrysler Hemi engine (Dodge section; cites Standard Catalog of Chrysler)",
+       "url": "https://en.wikipedia.org/wiki/Chrysler_Hemi_engine",
+       "says": "1953 7.0:1; 1954 senior Dodges 7.5:1"
+      }
+     ],
+     "note": "DISAGREEMENT: Wikipedia (citing Standard Catalog) gives 7.0:1 for 1953 and the 1954 Meadowbrook; factory brochure, Mac's and Over-Drive say 7.1:1."
+    },
+    "years": {
+     "value": "1953-1954 (Dodge cars)",
+     "sources": [
+      {
+       "name": "Wikipedia: Chrysler Hemi engine (Dodge section; cites Standard Catalog of Chrysler)",
+       "url": "https://en.wikipedia.org/wiki/Chrysler_Hemi_engine",
+       "says": "introduced 1953 ... only lasted two years, replaced by the 270 for 1955"
+      },
+      {
+       "name": "Mac's Motor City Garage: Chrysler's Smallest Hemi, the 1953-57 Dodge Red Ram V8",
+       "url": "https://macsmotorcitygarage.com/chryslers-smallest-hemi-the-1953-57-dodge-red-ram-v8/",
+       "says": "1953-1954: 241 CID; 270 in 1955"
+      },
+      {
+       "name": "Over-Drive Magazine (classic-car fact site): 1953-1957 Dodge Hemi V-8 Engine Facts",
+       "url": "https://over-drive-magazine.com/2026/04/16/1953-1957-dodge-hemi-v-8-engine-facts/",
+       "says": "1953-1954: 241.3 CID"
+      },
+      {
+       "name": "Dodge factory brochure: 1954 Dodge, Coronet p.9 / specifications p.12",
+       "url": "https://oldcarbrochures.org/United%20States/Dodge/1954_Dodge/1954_Dodge_Brochure/slides/1954_Dodge-12.html",
+       "says": "1954 Red Ram V-8 150 hp"
+      }
+     ],
+     "note": "Also used in Dodge trucks as the PowerDome (not covered here)."
+    }
+   },
+   "variants": [
+    {
+     "year": 1953,
+     "hp": 140,
+     "hp_basis": "gross",
+     "compression_ratio": 7.1,
+     "code": "Red Ram V-8",
+     "induction": "2-bbl",
+     "sources": [
+      {
+       "name": "Dodge factory brochure: 1953 Dodge full line, specifications p.6",
+       "url": "https://oldcarbrochures.org/United%20States/Dodge/1953_Dodge/1953_Dodge_Brochure/slides/1953_Dodge-06.html",
+       "says": "Red Ram ... Maximum brake horsepower, 140 at 4400 rpm"
+      },
+      {
+       "name": "Wikipedia: Chrysler Hemi engine (Dodge section; cites Standard Catalog of Chrysler)",
+       "url": "https://en.wikipedia.org/wiki/Chrysler_Hemi_engine",
+       "says": "the 241 produced 140 bhp"
+      },
+      {
+       "name": "MoTales (David Zatz, ex-Allpar): Original Hemi V8",
+       "url": "https://www.motales.com/engines/original-hemi.php",
+       "says": "1953-4 (241): 140 hp / 220 lb-ft"
+      },
+      {
+       "name": "Over-Drive Magazine (classic-car fact site): 1953-1957 Dodge Hemi V-8 Engine Facts",
+       "url": "https://over-drive-magazine.com/2026/04/16/1953-1957-dodge-hemi-v-8-engine-facts/",
+       "says": "1953: 7.1:1, 140 @ 4400"
+      },
+      {
+       "name": "Hagerty Valuation Tools: 1953 Dodge Coronet (login-walled; seen via search excerpt)",
+       "url": "https://www.hagerty.com/valuation-tools/dodge/coronet/1953",
+       "says": "configurations 241cid/140hp"
+      }
+     ]
+    },
+    {
+     "year": 1954,
+     "hp": 150,
+     "hp_basis": "gross",
+     "compression_ratio": 7.5,
+     "code": "Red Ram V-8 (Coronet/Royal)",
+     "induction": "2-bbl",
+     "sources": [
+      {
+       "name": "Dodge factory brochure: 1954 Dodge, Coronet p.9 / specifications p.12",
+       "url": "https://oldcarbrochures.org/United%20States/Dodge/1954_Dodge/1954_Dodge_Brochure/slides/1954_Dodge-12.html",
+       "says": "Red Ram 150 V-8 ... 7.5 to 1 ... 150 horsepower"
+      },
+      {
+       "name": "Wikipedia: Chrysler Hemi engine (Dodge section; cites Standard Catalog of Chrysler)",
+       "url": "https://en.wikipedia.org/wiki/Chrysler_Hemi_engine",
+       "says": "For 1954, the more senior Dodges received 7.5:1, 150 bhp"
+      },
+      {
+       "name": "Over-Drive Magazine (classic-car fact site): 1953-1957 Dodge Hemi V-8 Engine Facts",
+       "url": "https://over-drive-magazine.com/2026/04/16/1953-1957-dodge-hemi-v-8-engine-facts/",
+       "says": "1954: 7.5:1, 150 @ 4400"
+      },
+      {
+       "name": "Hagerty Valuation Tools: 1954 Dodge Coronet (search excerpt)",
+       "url": "https://www.hagerty.com/valuation-tools/dodge/coronet/1954",
+       "says": "1954 Coronet 241cid/150hp 2bbl"
+      }
+     ]
+    }
+   ],
+   "unverified": {
+    "rod_length_in": "5.936 in: Over-Drive Magazine only.",
+    "firing_order": "Not found in any acceptable source for the Dodge Red Ram (1-8-4-3-6-5-7-2 is the usual Chrysler V8 order but unsourced for this engine).",
+    "block_material": "Cast iron: Wikipedia (first-gen Hemi infobox) and Over-Drive only (2 sources).",
+    "head_material": "Cast iron presumed; Wikipedia infobox says \"Aluminum / Cast iron\" for the whole family; no Dodge-specific source."
+   },
+   "unverified_variants": [
+    {
+     "year": 1954,
+     "hp": 140,
+     "code": "Meadowbrook (7.0:1)",
+     "found": "Wikipedia only (1954 Meadowbrook kept the 140 hp, 7.0:1 version). Not a Coronet rating."
+    }
+   ]
+  },
+  {
+   "id": "dodge-270-red-ram",
+   "name": "Dodge 270 V8 (Super Red Ram Hemi / Red Ram poly)",
+   "fields": {
+    "bore_in": {
+     "value": 3.625,
+     "sources": [
+      {
+       "name": "Dodge factory 1955 Data Book (Oct 1954), Engine specifications p.H-4/H-5",
+       "url": "https://oldcarbrochures.org/United%20States/Dodge/1955_Dodge/1955-Dodge-Data-Book/slides/1955_Dodge_Data_Book-H-04-05.html",
+       "says": "Eights - 3.63\" x 3.256\""
+      },
+      {
+       "name": "Wikipedia: Chrysler Hemi engine (Dodge section; cites Standard Catalog of Chrysler)",
+       "url": "https://en.wikipedia.org/wiki/Chrysler_Hemi_engine",
+       "says": "Bore was 3.625 in"
+      },
+      {
+       "name": "MoTales (David Zatz): Poly engines",
+       "url": "https://www.motales.com/engines/poly.php",
+       "says": "270: bore 3.625, stroke 3.25"
+      },
+      {
+       "name": "Over-Drive Magazine (classic-car fact site): 1953-1957 Dodge Hemi V-8 Engine Facts",
+       "url": "https://over-drive-magazine.com/2026/04/16/1953-1957-dodge-hemi-v-8-engine-facts/",
+       "says": "3.625 x 3.250 inches"
+      }
+     ],
+     "note": "Factory prints 3.63."
+    },
+    "stroke_in": {
+     "value": 3.25,
+     "sources": [
+      {
+       "name": "Dodge factory 1955 Data Book (Oct 1954), Engine specifications p.H-4/H-5",
+       "url": "https://oldcarbrochures.org/United%20States/Dodge/1955_Dodge/1955-Dodge-Data-Book/slides/1955_Dodge_Data_Book-H-04-05.html",
+       "says": "3.63\" x 3.256\""
+      },
+      {
+       "name": "Wikipedia: Chrysler Hemi engine (Dodge section; cites Standard Catalog of Chrysler)",
+       "url": "https://en.wikipedia.org/wiki/Chrysler_Hemi_engine",
+       "says": "stroke was 3.25 in"
+      },
+      {
+       "name": "MoTales (David Zatz): Poly engines",
+       "url": "https://www.motales.com/engines/poly.php",
+       "says": "stroke 3.25"
+      },
+      {
+       "name": "Over-Drive Magazine (classic-car fact site): 1953-1957 Dodge Hemi V-8 Engine Facts",
+       "url": "https://over-drive-magazine.com/2026/04/16/1953-1957-dodge-hemi-v-8-engine-facts/",
+       "says": "3.625 x 3.250"
+      }
+     ],
+     "note": "Factory 1955-56 literature gives 3.256 in."
+    },
+    "displacement_ci": {
+     "value": 270,
+     "sources": [
+      {
+       "name": "Dodge factory 1955 Data Book (Oct 1954), Engine specifications p.H-4/H-5",
+       "url": "https://oldcarbrochures.org/United%20States/Dodge/1955_Dodge/1955-Dodge-Data-Book/slides/1955_Dodge_Data_Book-H-04-05.html",
+       "says": "Piston displacement Eights - 270"
+      },
+      {
+       "name": "Wikipedia: Chrysler Hemi engine (Dodge section; cites Standard Catalog of Chrysler)",
+       "url": "https://en.wikipedia.org/wiki/Chrysler_Hemi_engine",
+       "says": "displaced 270 cu in"
+      },
+      {
+       "name": "MoTales (David Zatz): Poly engines",
+       "url": "https://www.motales.com/engines/poly.php",
+       "says": "270 cubic inch displacement"
+      },
+      {
+       "name": "Over-Drive Magazine (classic-car fact site): 1953-1957 Dodge Hemi V-8 Engine Facts",
+       "url": "https://over-drive-magazine.com/2026/04/16/1953-1957-dodge-hemi-v-8-engine-facts/",
+       "says": "269 CID (cited as 270 CID)"
+      }
+     ],
+     "note": ""
+    },
+    "displacement_l": {
+     "value": 4.4,
+     "sources": [
+      {
+       "name": "Wikipedia: Chrysler Hemi engine (Dodge section; cites Standard Catalog of Chrysler)",
+       "url": "https://en.wikipedia.org/wiki/Chrysler_Hemi_engine",
+       "says": "270 cu in (4.4 L)"
+      },
+      {
+       "name": "Dodge factory 1955 Data Book (Oct 1954), Engine specifications p.H-4/H-5",
+       "url": "https://oldcarbrochures.org/United%20States/Dodge/1955_Dodge/1955-Dodge-Data-Book/slides/1955_Dodge_Data_Book-H-04-05.html",
+       "says": "270 ci (= 4.42 L)"
+      },
+      {
+       "name": "MoTales (David Zatz): Poly engines",
+       "url": "https://www.motales.com/engines/poly.php",
+       "says": "270 ci (= 4.42 L)"
+      }
+     ],
+     "note": "4.42 L exact."
+    },
+    "num_cylinders": {
+     "value": 8,
+     "sources": [
+      {
+       "name": "Dodge factory 1955 Data Book (Oct 1954), Engine specifications p.H-4/H-5",
+       "url": "https://oldcarbrochures.org/United%20States/Dodge/1955_Dodge/1955-Dodge-Data-Book/slides/1955_Dodge_Data_Book-H-04-05.html",
+       "says": "Eights - 90 deg V"
+      },
+      {
+       "name": "Wikipedia: Chrysler Hemi engine (Dodge section; cites Standard Catalog of Chrysler)",
+       "url": "https://en.wikipedia.org/wiki/Chrysler_Hemi_engine",
+       "says": "V8"
+      },
+      {
+       "name": "Dodge factory 1955 foldout, specifications",
+       "url": "https://oldcarbrochures.org/United%20States/Dodge/1955_Dodge/1955_Dodge_Brochure/slides/1955_Dodge_Foldout-01-03.html",
+       "says": "Eight-cylinder, overhead valve, V-type"
+      }
+     ],
+     "note": ""
+    },
+    "configuration": {
+     "value": "V8 (90-degree)",
+     "sources": [
+      {
+       "name": "Dodge factory 1955 Data Book (Oct 1954), Engine specifications p.H-4/H-5",
+       "url": "https://oldcarbrochures.org/United%20States/Dodge/1955_Dodge/1955-Dodge-Data-Book/slides/1955_Dodge_Data_Book-H-04-05.html",
+       "says": "Number of cylinders and type: Eights - 90 deg V"
+      },
+      {
+       "name": "Wikipedia: Chrysler Hemi engine (Dodge section; cites Standard Catalog of Chrysler)",
+       "url": "https://en.wikipedia.org/wiki/Chrysler_Hemi_engine",
+       "says": "V8"
+      },
+      {
+       "name": "Dodge factory 1955 foldout, specifications",
+       "url": "https://oldcarbrochures.org/United%20States/Dodge/1955_Dodge/1955_Dodge_Brochure/slides/1955_Dodge_Foldout-01-03.html",
+       "says": "V-type eight"
+      }
+     ],
+     "note": ""
+    },
+    "valvetrain": {
+     "value": "OHV pushrod, 2 valves/cyl, hydraulic lifters. Head depends on version: Super Red Ram = hemispherical (dual rocker shafts); Red Ram = polyspherical (single rocker shaft)",
+     "sources": [
+      {
+       "name": "Dodge factory 1955 Data Book (Oct 1954), Engine specifications p.H-4/H-5",
+       "url": "https://oldcarbrochures.org/United%20States/Dodge/1955_Dodge/1955-Dodge-Data-Book/slides/1955_Dodge_Data_Book-H-04-05.html",
+       "says": "Valve arrangement Eights - Overhead; Combustion chamber: Super Red Ram - Hemispherical, Red Ram - Polyspherical; Valve tappet type Eights - Hydraulic self-adjusting (p.H-6)"
+      },
+      {
+       "name": "MoTales (David Zatz): Poly engines",
+       "url": "https://www.motales.com/engines/poly.php",
+       "says": "Dodge had their own poly engines ... 270, 175 bhp"
+      },
+      {
+       "name": "Wikipedia: Chrysler Hemi engine (Dodge section; cites Standard Catalog of Chrysler)",
+       "url": "https://en.wikipedia.org/wiki/Chrysler_Hemi_engine",
+       "says": "Red Ram Hemi 270 ... not the same as the 270 poly-head; poly heads = single rocker shaft"
+      },
+      {
+       "name": "Over-Drive Magazine (classic-car fact site): 1953-1957 Dodge Hemi V-8 Engine Facts",
+       "url": "https://over-drive-magazine.com/2026/04/16/1953-1957-dodge-hemi-v-8-engine-facts/",
+       "says": "1955 270: Valve lifters Hydraulic"
+      }
+     ],
+     "note": ""
+    },
+    "compression_ratio": {
+     "value": "7.6:1 (1955); 8.0:1 (1956)",
+     "sources": [
+      {
+       "name": "Dodge factory 1955 Data Book (Oct 1954), Engine specifications p.H-4/H-5",
+       "url": "https://oldcarbrochures.org/United%20States/Dodge/1955_Dodge/1955-Dodge-Data-Book/slides/1955_Dodge_Data_Book-H-04-05.html",
+       "says": "Eights - 7.6 to 1"
+      },
+      {
+       "name": "Wikipedia: Chrysler Hemi engine (Dodge section; cites Standard Catalog of Chrysler)",
+       "url": "https://en.wikipedia.org/wiki/Chrysler_Hemi_engine",
+       "says": "compression ratio of 7.6:1"
+      },
+      {
+       "name": "Over-Drive Magazine (classic-car fact site): 1953-1957 Dodge Hemi V-8 Engine Facts",
+       "url": "https://over-drive-magazine.com/2026/04/16/1953-1957-dodge-hemi-v-8-engine-facts/",
+       "says": "1955 270: 7.6:1"
+      },
+      {
+       "name": "Dodge factory 1956 Full Line Folder (DMA-2667), specifications p.8",
+       "url": "https://oldcarbrochures.org/United%20States/Dodge/1956_Dodge/1956_Dodge_Full_Line_Folder/slides/1956_Dodge_Full_Line_Folder-08.html",
+       "says": "1956 Red Ram V-8: compression ratio 8.0 to 1, 270 cu in"
+      },
+      {
+       "name": "MoTales (David Zatz): Poly engines",
+       "url": "https://www.motales.com/engines/poly.php",
+       "says": "1956: 270 continued at 189 hp (8.0:1)"
+      },
+      {
+       "name": "Over-Drive Magazine: 1956 Dodge Facts, Figures, and Specifications",
+       "url": "https://over-drive-magazine.com/2025/08/06/1956-dodge-fact-sheet/",
+       "says": "1956 270: 8.0:1"
+      }
+     ],
+     "note": ""
+    },
+    "induction": {
+     "value": "Carburetor: 2-bbl (Red Ram, Super Red Ram) or 4-bbl Carter WCFB (1955 Power Pack)",
+     "sources": [
+      {
+       "name": "Dodge factory 1955 foldout, specifications",
+       "url": "https://oldcarbrochures.org/United%20States/Dodge/1955_Dodge/1955_Dodge_Brochure/slides/1955_Dodge_Foldout-01-03.html",
+       "says": "Power package (4-barrel carburetor, dual exhaust) ... boosts horsepower to 193"
+      },
+      {
+       "name": "Over-Drive Magazine (classic-car fact site): 1953-1957 Dodge Hemi V-8 Engine Facts",
+       "url": "https://over-drive-magazine.com/2026/04/16/1953-1957-dodge-hemi-v-8-engine-facts/",
+       "says": "Stromberg two-barrel WW3-120; Carter WCFB 4-barrel 2253S"
+      },
+      {
+       "name": "Wikipedia: Chrysler Hemi engine (Dodge section; cites Standard Catalog of Chrysler)",
+       "url": "https://en.wikipedia.org/wiki/Chrysler_Hemi_engine",
+       "says": "Super Red Ram featured a four-barrel carburetor and produced 193 bhp"
+      },
+      {
+       "name": "MoTales (David Zatz): Poly engines",
+       "url": "https://www.motales.com/engines/poly.php",
+       "says": "270 ... 175 bhp, 2V"
+      }
+     ],
+     "note": ""
+    },
+    "years": {
+     "value": "1955-1956",
+     "sources": [
+      {
+       "name": "Wikipedia: Chrysler Hemi engine (Dodge section; cites Standard Catalog of Chrysler)",
+       "url": "https://en.wikipedia.org/wiki/Chrysler_Hemi_engine",
+       "says": "used in premium 1955 and 1956 Dodge vehicles"
+      },
+      {
+       "name": "MoTales (David Zatz): Poly engines",
+       "url": "https://www.motales.com/engines/poly.php",
+       "says": "1955 270 ... the 270 continued in 1956"
+      },
+      {
+       "name": "Dodge factory 1955 Data Book (Oct 1954), Engine specifications p.H-4/H-5",
+       "url": "https://oldcarbrochures.org/United%20States/Dodge/1955_Dodge/1955-Dodge-Data-Book/slides/1955_Dodge_Data_Book-H-04-05.html",
+       "says": "1955 Data Book: 270 Eights"
+      },
+      {
+       "name": "Dodge factory 1956 Full Line Folder (DMA-2667), specifications p.8",
+       "url": "https://oldcarbrochures.org/United%20States/Dodge/1956_Dodge/1956_Dodge_Full_Line_Folder/slides/1956_Dodge_Full_Line_Folder-08.html",
+       "says": "1956 folder: Red Ram V-8 270 cu in"
+      }
+     ],
+     "note": ""
+    }
+   },
+   "variants": [
+    {
+     "year": 1955,
+     "hp": 183,
+     "hp_basis": "gross",
+     "compression_ratio": 7.6,
+     "code": "Super Red Ram (hemi), 2-bbl",
+     "induction": "2-bbl",
+     "sources": [
+      {
+       "name": "Dodge factory 1955 Data Book (Oct 1954), Engine specifications p.H-4/H-5",
+       "url": "https://oldcarbrochures.org/United%20States/Dodge/1955_Dodge/1955-Dodge-Data-Book/slides/1955_Dodge_Data_Book-H-04-05.html",
+       "says": "Super Red Ram - 183 at 4400 r.p.m."
+      },
+      {
+       "name": "MoTales (David Zatz, ex-Allpar): Original Hemi V8",
+       "url": "https://www.motales.com/engines/original-hemi.php",
+       "says": "1955 (270): 183 hp (245 lb-ft)"
+      },
+      {
+       "name": "Over-Drive Magazine (classic-car fact site): 1953-1957 Dodge Hemi V-8 Engine Facts",
+       "url": "https://over-drive-magazine.com/2026/04/16/1953-1957-dodge-hemi-v-8-engine-facts/",
+       "says": "Super Red Ram 183 @ 4400 (2-barrel)"
+      },
+      {
+       "name": "Wikipedia: Chrysler Hemi engine (Dodge section; cites Standard Catalog of Chrysler)",
+       "url": "https://en.wikipedia.org/wiki/Chrysler_Hemi_engine",
+       "says": "In the Dodge Coronet, the 270 produced 183 bhp"
+      }
+     ],
+     "note": "Factory 1955 foldout lists it as the Custom Royal engine; Wikipedia says Coronet."
+    },
+    {
+     "year": 1955,
+     "hp": 193,
+     "hp_basis": "gross",
+     "compression_ratio": 7.6,
+     "code": "Super Red Ram (hemi) with Power Pack (4-bbl, dual exhaust)",
+     "induction": "4-bbl",
+     "sources": [
+      {
+       "name": "Dodge factory 1955 Data Book (Oct 1954), Engine specifications p.H-4/H-5",
+       "url": "https://oldcarbrochures.org/United%20States/Dodge/1955_Dodge/1955-Dodge-Data-Book/slides/1955_Dodge_Data_Book-H-04-05.html",
+       "says": "*193 at 4400 r.p.m. with Power Pack"
+      },
+      {
+       "name": "Dodge factory 1955 foldout, specifications",
+       "url": "https://oldcarbrochures.org/United%20States/Dodge/1955_Dodge/1955_Dodge_Brochure/slides/1955_Dodge_Foldout-01-03.html",
+       "says": "power package ... optional on Custom Royal, Royal and Coronet, boosts horsepower to 193"
+      },
+      {
+       "name": "Wikipedia: Chrysler Hemi engine (Dodge section; cites Standard Catalog of Chrysler)",
+       "url": "https://en.wikipedia.org/wiki/Chrysler_Hemi_engine",
+       "says": "Super Red Ram four-barrel, 193 bhp"
+      },
+      {
+       "name": "MoTales (David Zatz, ex-Allpar): Original Hemi V8",
+       "url": "https://www.motales.com/engines/original-hemi.php",
+       "says": "193 hp (with Power Pack)"
+      },
+      {
+       "name": "Over-Drive Magazine (classic-car fact site): 1953-1957 Dodge Hemi V-8 Engine Facts",
+       "url": "https://over-drive-magazine.com/2026/04/16/1953-1957-dodge-hemi-v-8-engine-facts/",
+       "says": "193 @ 4400 (4-barrel)"
+      }
+     ]
+    },
+    {
+     "year": 1955,
+     "hp": 175,
+     "hp_basis": "gross",
+     "compression_ratio": 7.6,
+     "code": "Red Ram (POLYSPHERICAL head, not hemi) - standard Coronet/Royal V8",
+     "induction": "2-bbl",
+     "sources": [
+      {
+       "name": "Dodge factory 1955 Data Book (Oct 1954), Engine specifications p.H-4/H-5",
+       "url": "https://oldcarbrochures.org/United%20States/Dodge/1955_Dodge/1955-Dodge-Data-Book/slides/1955_Dodge_Data_Book-H-04-05.html",
+       "says": "Red Ram - Polyspherical ... Red Ram - 175 at 4400 r.p.m."
+      },
+      {
+       "name": "MoTales (David Zatz): Poly engines",
+       "url": "https://www.motales.com/engines/poly.php",
+       "says": "270 poly: 175 bhp, 240 lb-ft, 2V"
+      },
+      {
+       "name": "Dodge factory 1955 foldout, specifications",
+       "url": "https://oldcarbrochures.org/United%20States/Dodge/1955_Dodge/1955_Dodge_Brochure/slides/1955_Dodge_Foldout-01-03.html",
+       "says": "Coronet V-8 Red Ram ... 175 horsepower at 4400 rpm"
+      },
+      {
+       "name": "Curbside Classic: 1955 Dodge Coronet - That Thing Got A Hemi, Poly Or Flat Head? (page 403 to fetch; seen via search excerpt)",
+       "url": "https://www.curbsideclassic.com/curbside-classics-american/1955-dodge-coronet-that-thing-got-a-hemi-poly-or-flat-head/",
+       "says": "polyspherical-head Red Ram and hemi-head Super Red Ram, 175 and 183 gross horsepower"
+      }
+     ],
+     "note": "Poly-head version, NOT a Hemi rating. Curbside Classic seen only via search excerpt."
+    },
+    {
+     "year": 1956,
+     "hp": 189,
+     "hp_basis": "gross",
+     "compression_ratio": 8.0,
+     "code": "Red Ram (polyspherical) 270 - standard Coronet V8",
+     "induction": "2-bbl",
+     "sources": [
+      {
+       "name": "MoTales (David Zatz): Poly engines",
+       "url": "https://www.motales.com/engines/poly.php",
+       "says": "The 270 continued at 189 hp (8.0:1)"
+      },
+      {
+       "name": "Over-Drive Magazine: 1956 Dodge Facts, Figures, and Specifications",
+       "url": "https://over-drive-magazine.com/2025/08/06/1956-dodge-fact-sheet/",
+       "says": "270: 8.0:1, 189 @ 4400, Stromberg 2-bbl, polyspheric head"
+      },
+      {
+       "name": "conceptcarz.com 1956 Dodge Coronet engine table (unattributed; weak corroboration)",
+       "url": "https://www.conceptcarz.com/s1982/Dodge-Coronet.aspx",
+       "says": "V8 270 CID 189 hp"
+      },
+      {
+       "name": "Dodge factory 1956 Full Line Folder (DMA-2667), specifications p.8",
+       "url": "https://oldcarbrochures.org/United%20States/Dodge/1956_Dodge/1956_Dodge_Full_Line_Folder/slides/1956_Dodge_Full_Line_Folder-08.html",
+       "says": "Red Ram V-8 ... 8.0 to 1 ... 270 cu in (no hp printed)"
+      }
+     ],
+     "note": "Poly-head, not a Hemi."
+    }
+   ],
+   "unverified": {
+    "rod_length_in": "5.936 in (unchanged from 241): Over-Drive only.",
+    "firing_order": "Not found.",
+    "block_material": "Cast iron: Wikipedia, Over-Drive only.",
+    "head_material": "Factory 1955 Data Book: poly Red Ram head \"hard high-nickel alloy iron\" (p.D-16/17); no 3-source confirmation, and nothing found for the hemi head.",
+    "fuel_type": "Gasoline (carbureted, obvious) but stated explicitly only by Wikipedia infobox."
+   },
+   "unverified_variants": [],
+   "notes": "DISAGREEMENT on which 1955 Coronet engine was the Hemi: factory 1955 Data Book says the 175-hp Red Ram is POLYSPHERICAL and the 183/193-hp Super Red Ram is HEMI; Wikipedia (Standard Catalog) says the Coronet 270 Hemi made 183. Treat the 175 and 189 ratings as poly-head versions of the same 270 bottom end."
+  },
+  {
+   "id": "dodge-315-d500-hemi",
+   "name": "Dodge 315 V8 (D-500 Hemi; Super Red Ram poly)",
+   "fields": {
+    "bore_in": {
+     "value": 3.625,
+     "sources": [
+      {
+       "name": "Dodge factory 1956 Full Line Folder (DMA-2667), specifications p.8",
+       "url": "https://oldcarbrochures.org/United%20States/Dodge/1956_Dodge/1956_Dodge_Full_Line_Folder/slides/1956_Dodge_Full_Line_Folder-08.html",
+       "says": "Super Red Ram V-8: Bore, 3.63 in. Stroke, 3.80 in. 315 cu in"
+      },
+      {
+       "name": "MoTales (David Zatz): Poly engines",
+       "url": "https://www.motales.com/engines/poly.php",
+       "says": "315: bore 3.625, stroke 3.8"
+      },
+      {
+       "name": "Over-Drive Magazine (classic-car fact site): 1953-1957 Dodge Hemi V-8 Engine Facts",
+       "url": "https://over-drive-magazine.com/2026/04/16/1953-1957-dodge-hemi-v-8-engine-facts/",
+       "says": "1956 315: 3.625 x 3.80"
+      },
+      {
+       "name": "Over-Drive Magazine: 1956 Dodge Facts, Figures, and Specifications",
+       "url": "https://over-drive-magazine.com/2025/08/06/1956-dodge-fact-sheet/",
+       "says": "D-500: 3.63 x 3.80"
+      }
+     ],
+     "note": "Factory 3.63. Over-Drive's 1956 fact sheet also prints 3.763 for the poly 315 (typo)."
+    },
+    "stroke_in": {
+     "value": 3.8,
+     "sources": [
+      {
+       "name": "Dodge factory 1956 Full Line Folder (DMA-2667), specifications p.8",
+       "url": "https://oldcarbrochures.org/United%20States/Dodge/1956_Dodge/1956_Dodge_Full_Line_Folder/slides/1956_Dodge_Full_Line_Folder-08.html",
+       "says": "Stroke, 3.80 in"
+      },
+      {
+       "name": "Wikipedia: Chrysler Hemi engine (Dodge section; cites Standard Catalog of Chrysler)",
+       "url": "https://en.wikipedia.org/wiki/Chrysler_Hemi_engine",
+       "says": "longer 3.80 in stroke and a taller raised-deck block"
+      },
+      {
+       "name": "MoTales (David Zatz): Poly engines",
+       "url": "https://www.motales.com/engines/poly.php",
+       "says": "stroke 3.8"
+      },
+      {
+       "name": "Over-Drive Magazine (classic-car fact site): 1953-1957 Dodge Hemi V-8 Engine Facts",
+       "url": "https://over-drive-magazine.com/2026/04/16/1953-1957-dodge-hemi-v-8-engine-facts/",
+       "says": "3.80 inches"
+      }
+     ],
+     "note": ""
+    },
+    "displacement_ci": {
+     "value": 315,
+     "sources": [
+      {
+       "name": "Dodge factory 1956 Full Line Folder (DMA-2667), specifications p.8",
+       "url": "https://oldcarbrochures.org/United%20States/Dodge/1956_Dodge/1956_Dodge_Full_Line_Folder/slides/1956_Dodge_Full_Line_Folder-08.html",
+       "says": "Piston displacement, 315 cu in"
+      },
+      {
+       "name": "Wikipedia: Chrysler Hemi engine (Dodge section; cites Standard Catalog of Chrysler)",
+       "url": "https://en.wikipedia.org/wiki/Chrysler_Hemi_engine",
+       "says": "increased the displacement to 315 cu in"
+      },
+      {
+       "name": "MoTales (David Zatz): Poly engines",
+       "url": "https://www.motales.com/engines/poly.php",
+       "says": "A new 315 cubic inch engine"
+      },
+      {
+       "name": "Over-Drive Magazine (classic-car fact site): 1953-1957 Dodge Hemi V-8 Engine Facts",
+       "url": "https://over-drive-magazine.com/2026/04/16/1953-1957-dodge-hemi-v-8-engine-facts/",
+       "says": "315 CID"
+      }
+     ],
+     "note": ""
+    },
+    "displacement_l": {
+     "value": 5.2,
+     "sources": [
+      {
+       "name": "Wikipedia: Chrysler Hemi engine (Dodge section; cites Standard Catalog of Chrysler)",
+       "url": "https://en.wikipedia.org/wiki/Chrysler_Hemi_engine",
+       "says": "315 cu in (5.2 L)"
+      },
+      {
+       "name": "Dodge factory 1956 Full Line Folder (DMA-2667), specifications p.8",
+       "url": "https://oldcarbrochures.org/United%20States/Dodge/1956_Dodge/1956_Dodge_Full_Line_Folder/slides/1956_Dodge_Full_Line_Folder-08.html",
+       "says": "315 ci (= 5.16 L)"
+      },
+      {
+       "name": "MoTales (David Zatz): Poly engines",
+       "url": "https://www.motales.com/engines/poly.php",
+       "says": "315 ci (= 5.16 L)"
+      }
+     ],
+     "note": "5.16 L exact."
+    },
+    "num_cylinders": {
+     "value": 8,
+     "sources": [
+      {
+       "name": "Dodge factory 1956 Full Line Folder (DMA-2667), specifications p.8",
+       "url": "https://oldcarbrochures.org/United%20States/Dodge/1956_Dodge/1956_Dodge_Full_Line_Folder/slides/1956_Dodge_Full_Line_Folder-08.html",
+       "says": "Eight-cylinder, overhead valve, V-type"
+      },
+      {
+       "name": "Wikipedia: Chrysler Hemi engine (Dodge section; cites Standard Catalog of Chrysler)",
+       "url": "https://en.wikipedia.org/wiki/Chrysler_Hemi_engine",
+       "says": "V8"
+      },
+      {
+       "name": "Over-Drive Magazine: 1956 Dodge Facts, Figures, and Specifications",
+       "url": "https://over-drive-magazine.com/2025/08/06/1956-dodge-fact-sheet/",
+       "says": "315 CID V-8"
+      }
+     ],
+     "note": ""
+    },
+    "configuration": {
+     "value": "V8 (90-degree)",
+     "sources": [
+      {
+       "name": "Dodge factory 1956 Full Line Folder (DMA-2667), specifications p.8",
+       "url": "https://oldcarbrochures.org/United%20States/Dodge/1956_Dodge/1956_Dodge_Full_Line_Folder/slides/1956_Dodge_Full_Line_Folder-08.html",
+       "says": "V-type eight"
+      },
+      {
+       "name": "Wikipedia: Chrysler Hemi engine (Dodge section; cites Standard Catalog of Chrysler)",
+       "url": "https://en.wikipedia.org/wiki/Chrysler_Hemi_engine",
+       "says": "V8"
+      },
+      {
+       "name": "Over-Drive Magazine: 1956 Dodge Facts, Figures, and Specifications",
+       "url": "https://over-drive-magazine.com/2025/08/06/1956-dodge-fact-sheet/",
+       "says": "V-8"
+      }
+     ],
+     "note": "90-degree angle per 1955 Data Book for the same family."
+    },
+    "valvetrain": {
+     "value": "OHV pushrod, 2 valves/cyl. D-500 = hemispherical heads (dual rocker shafts, larger valves); base Super Red Ram = polyspherical heads",
+     "sources": [
+      {
+       "name": "Wikipedia: Chrysler Hemi engine (Dodge section; cites Standard Catalog of Chrysler)",
+       "url": "https://en.wikipedia.org/wiki/Chrysler_Hemi_engine",
+       "says": "used polyspheric rather than hemi heads on the base version; D-500 had a larger-valved hemispherical head"
+      },
+      {
+       "name": "Over-Drive Magazine: 1956 Dodge Facts, Figures, and Specifications",
+       "url": "https://over-drive-magazine.com/2025/08/06/1956-dodge-fact-sheet/",
+       "says": "315 2-bbl/4-bbl: polyspheric head; D-500: hemispherical head"
+      },
+      {
+       "name": "MoTales (David Zatz): Poly engines",
+       "url": "https://www.motales.com/engines/poly.php",
+       "says": "315 poly 218/230 hp"
+      },
+      {
+       "name": "Over-Drive Magazine (classic-car fact site): 1953-1957 Dodge Hemi V-8 Engine Facts",
+       "url": "https://over-drive-magazine.com/2026/04/16/1953-1957-dodge-hemi-v-8-engine-facts/",
+       "says": "D-500 hydraulic lifters (D-500-1 mechanical)"
+      }
+     ],
+     "note": ""
+    },
+    "compression_ratio": {
+     "value": "8.0:1 (Super Red Ram poly); 9.25:1 (D-500 hemi)",
+     "sources": [
+      {
+       "name": "Dodge factory 1956 Full Line Folder (DMA-2667), specifications p.8",
+       "url": "https://oldcarbrochures.org/United%20States/Dodge/1956_Dodge/1956_Dodge_Full_Line_Folder/slides/1956_Dodge_Full_Line_Folder-08.html",
+       "says": "Super Red Ram V-8: compression ratio 8.0 to 1"
+      },
+      {
+       "name": "Over-Drive Magazine: 1956 Dodge Facts, Figures, and Specifications",
+       "url": "https://over-drive-magazine.com/2025/08/06/1956-dodge-fact-sheet/",
+       "says": "315 poly 8.0:1; D-500 9.25:1"
+      },
+      {
+       "name": "Over-Drive Magazine (classic-car fact site): 1953-1957 Dodge Hemi V-8 Engine Facts",
+       "url": "https://over-drive-magazine.com/2026/04/16/1953-1957-dodge-hemi-v-8-engine-facts/",
+       "says": "D-500 9.25:1"
+      },
+      {
+       "name": "Hooniverse: Obscure Muscle Car Garage, the 1956-61 Dodge D-500",
+       "url": "https://www.hooniverse.com/hooniverse-obscure-muscle-car-garage-the-1956-61-dodge-d-500/",
+       "says": "higher compression (9.25:1)"
+      },
+      {
+       "name": "Wikipedia: Dodge Coronet (D-500 text)",
+       "url": "https://en.wikipedia.org/wiki/Dodge_Coronet",
+       "says": "D-500 (315 hemi, 9.25:1, 4-bbl Carter WCFB)"
+      }
+     ],
+     "note": "9.25:1 D-500 from Over-Drive, Hooniverse, Wikipedia (Hooniverse text closely follows Wikipedia); no factory figure seen for the D-500."
+    },
+    "induction": {
+     "value": "Carburetor: 2-bbl (Super Red Ram) or 4-bbl Carter WCFB (Super-Powered Super Red Ram, D-500); dual 4-bbl on race-only D-500-1",
+     "sources": [
+      {
+       "name": "Dodge factory 1956 Full Line Folder (DMA-2667), specifications p.8",
+       "url": "https://oldcarbrochures.org/United%20States/Dodge/1956_Dodge/1956_Dodge_Full_Line_Folder/slides/1956_Dodge_Full_Line_Folder-08.html",
+       "says": "Super-Powered Super Red Ram V-8: Especially equipped with 4-barrel carburetor, dual exhaust"
+      },
+      {
+       "name": "Over-Drive Magazine: 1956 Dodge Facts, Figures, and Specifications",
+       "url": "https://over-drive-magazine.com/2025/08/06/1956-dodge-fact-sheet/",
+       "says": "Stromberg 2-bbl; Carter 4-bbl WCFB-2303S; D-500 Carter WCFB 2443SA; D-500-1 dual Carter WCFB"
+      },
+      {
+       "name": "Wikipedia: Chrysler Hemi engine (Dodge section; cites Standard Catalog of Chrysler)",
+       "url": "https://en.wikipedia.org/wiki/Chrysler_Hemi_engine",
+       "says": "D-500 had a four-barrel carburetor; D-500-1 pair of Carter WCFB"
+      },
+      {
+       "name": "MoTales (David Zatz): Poly engines",
+       "url": "https://www.motales.com/engines/poly.php",
+       "says": "315 2V/4V"
+      }
+     ],
+     "note": ""
+    },
+    "years": {
+     "value": "1956 only (Dodge cars)",
+     "sources": [
+      {
+       "name": "Wikipedia: Chrysler Hemi engine (Dodge section; cites Standard Catalog of Chrysler)",
+       "url": "https://en.wikipedia.org/wiki/Chrysler_Hemi_engine",
+       "says": "For 1956, Dodge increased the displacement to 315"
+      },
+      {
+       "name": "MoTales (David Zatz): Poly engines",
+       "url": "https://www.motales.com/engines/poly.php",
+       "says": "1956 ... a new 315 cubic inch engine"
+      },
+      {
+       "name": "Over-Drive Magazine: 1956 Dodge Facts, Figures, and Specifications",
+       "url": "https://over-drive-magazine.com/2025/08/06/1956-dodge-fact-sheet/",
+       "says": "1956 Dodge 315"
+      },
+      {
+       "name": "Dodge factory 1956 Full Line Folder (DMA-2667), specifications p.8",
+       "url": "https://oldcarbrochures.org/United%20States/Dodge/1956_Dodge/1956_Dodge_Full_Line_Folder/slides/1956_Dodge_Full_Line_Folder-08.html",
+       "says": "1956 Full Line Folder 315"
+      }
+     ],
+     "note": "Replaced by the 325 for 1957."
+    }
+   },
+   "variants": [
+    {
+     "year": 1956,
+     "hp": 260,
+     "hp_basis": "gross",
+     "compression_ratio": 9.25,
+     "code": "D-500 (hemi), Carter 4-bbl",
+     "induction": "4-bbl",
+     "sources": [
+      {
+       "name": "Wikipedia: 1955 Dodge (covers 1955-56)",
+       "url": "https://en.wikipedia.org/wiki/1955_Dodge",
+       "says": "D-500 (315 Hemi-head V8): 260 hp and 330 lb-ft with four-barrel Carter"
+      },
+      {
+       "name": "MoTales (David Zatz, ex-Allpar): Original Hemi V8",
+       "url": "https://www.motales.com/engines/original-hemi.php",
+       "says": "1956 D500 (315): 260 hp / 330 lb-ft"
+      },
+      {
+       "name": "Over-Drive Magazine (classic-car fact site): 1953-1957 Dodge Hemi V-8 Engine Facts",
+       "url": "https://over-drive-magazine.com/2026/04/16/1953-1957-dodge-hemi-v-8-engine-facts/",
+       "says": "D-500 260 @ 4800"
+      },
+      {
+       "name": "Over-Drive Magazine: 1956 Dodge Facts, Figures, and Specifications",
+       "url": "https://over-drive-magazine.com/2025/08/06/1956-dodge-fact-sheet/",
+       "says": "D-500: 260 @ 4800, 9.25:1, hemispherical head"
+      },
+      {
+       "name": "Hooniverse: Obscure Muscle Car Garage, the 1956-61 Dodge D-500",
+       "url": "https://www.hooniverse.com/hooniverse-obscure-muscle-car-garage-the-1956-61-dodge-d-500/",
+       "says": "four-barrel Carter ... 260 hp and 330 ft lb"
+      }
+     ]
+    },
+    {
+     "year": 1956,
+     "hp": 230,
+     "hp_basis": "gross",
+     "compression_ratio": 8.0,
+     "code": "Super-Powered Super Red Ram (POLYSPHERICAL, 4-bbl, dual exhaust) - NOT a Hemi",
+     "induction": "4-bbl",
+     "sources": [
+      {
+       "name": "MoTales (David Zatz): Poly engines",
+       "url": "https://www.motales.com/engines/poly.php",
+       "says": "a four-barrel version was rated at 230 hp and 316 lb-ft"
+      },
+      {
+       "name": "Over-Drive Magazine: 1956 Dodge Facts, Figures, and Specifications",
+       "url": "https://over-drive-magazine.com/2025/08/06/1956-dodge-fact-sheet/",
+       "says": "315 4-barrel Power Pack: 230 @ 4400, 8.0:1, polyspheric head"
+      },
+      {
+       "name": "conceptcarz.com 1956 Dodge Coronet engine table (unattributed; weak corroboration)",
+       "url": "https://www.conceptcarz.com/s1982/Dodge-Coronet.aspx",
+       "says": "V8 315 CID 218/230 hp"
+      },
+      {
+       "name": "Dodge factory 1956 Full Line Folder (DMA-2667), specifications p.8",
+       "url": "https://oldcarbrochures.org/United%20States/Dodge/1956_Dodge/1956_Dodge_Full_Line_Folder/slides/1956_Dodge_Full_Line_Folder-08.html",
+       "says": "Super-Powered Super Red Ram V-8 (4-bbl) available on Coronet V-8s at extra cost (no hp printed)"
+      }
+     ],
+     "note": "The 230 hp rating belongs to the poly-head 315, not the D-500 Hemi."
+    },
+    {
+     "year": 1956,
+     "hp": 218,
+     "hp_basis": "gross",
+     "compression_ratio": 8.0,
+     "code": "Super Red Ram (polyspherical, 2-bbl) - Royal/Custom Royal standard",
+     "induction": "2-bbl",
+     "sources": [
+      {
+       "name": "MoTales (David Zatz): Poly engines",
+       "url": "https://www.motales.com/engines/poly.php",
+       "says": "two-barrel for the Royal and Custom Royal, claiming 218 hp"
+      },
+      {
+       "name": "Over-Drive Magazine: 1956 Dodge Facts, Figures, and Specifications",
+       "url": "https://over-drive-magazine.com/2025/08/06/1956-dodge-fact-sheet/",
+       "says": "315 2-barrel: 218 @ 4400, polyspheric"
+      },
+      {
+       "name": "conceptcarz.com 1956 Dodge Coronet engine table (unattributed; weak corroboration)",
+       "url": "https://www.conceptcarz.com/s1982/Dodge-Coronet.aspx",
+       "says": "V8 315 CID 218/230 hp"
+      }
+     ],
+     "note": "Not a Coronet standard engine; poly-head."
+    }
+   ],
+   "unverified": {
+    "rod_length_in": "6.62 in: Over-Drive only.",
+    "firing_order": "Not found.",
+    "block_material": "Cast iron: Wikipedia, Over-Drive only.",
+    "head_material": "Not found (cast iron presumed).",
+    "fuel_type": "Gasoline (carbureted, obvious) but stated explicitly only by Wikipedia infobox."
+   },
+   "unverified_variants": [
+    {
+     "year": 1956,
+     "hp": "285 or 295",
+     "code": "D-500-1 / Dash-One (race package, dual 4-bbl)",
+     "found": "Wikipedia 1955 Dodge 285 hp; MoTales 295; Over-Drive 295 (D-500-1) and 290-295; Mac's 296. Sources disagree; competition-only package."
+    }
+   ]
+  },
+  {
+   "id": "dodge-325-red-ram",
+   "name": "Dodge 325 V8 (Red Ram / Super Red Ram poly; D-500 Hemi)",
+   "fields": {
+    "bore_in": {
+     "value": 3.6875,
+     "sources": [
+      {
+       "name": "Dodge factory 1957 full-line catalog, engine specifications p.12",
+       "url": "https://oldcarbrochures.org/United%20States/Dodge/1957_Dodge/1957_Dodge_Brochure/slides/1957_Dodge-12.html",
+       "says": "Bore, 3.69 in. Stroke, 3.80 in. 325 cubic in"
+      },
+      {
+       "name": "Wikipedia: Chrysler Hemi engine (Dodge section; cites Standard Catalog of Chrysler)",
+       "url": "https://en.wikipedia.org/wiki/Chrysler_Hemi_engine",
+       "says": "3-11/16 in bore and 3.80 in stroke"
+      },
+      {
+       "name": "MoTales (David Zatz): Poly engines",
+       "url": "https://www.motales.com/engines/poly.php",
+       "says": "325: bore 3.69, stroke 3.8"
+      },
+      {
+       "name": "Over-Drive Magazine: 1957 Dodge Facts, Figures, and Specifications",
+       "url": "https://over-drive-magazine.com/2025/09/24/1957-dodge-fact-sheet/",
+       "says": "3.69 x 3.80 inches"
+      }
+     ],
+     "note": "3-11/16 in nominal; factory 1957 prints 3.69, factory 1958 prints 3.68."
+    },
+    "stroke_in": {
+     "value": 3.8,
+     "sources": [
+      {
+       "name": "Dodge factory 1957 full-line catalog, engine specifications p.12",
+       "url": "https://oldcarbrochures.org/United%20States/Dodge/1957_Dodge/1957_Dodge_Brochure/slides/1957_Dodge-12.html",
+       "says": "Stroke, 3.80 in"
+      },
+      {
+       "name": "Wikipedia: Chrysler Hemi engine (Dodge section; cites Standard Catalog of Chrysler)",
+       "url": "https://en.wikipedia.org/wiki/Chrysler_Hemi_engine",
+       "says": "3.80 in stroke"
+      },
+      {
+       "name": "MoTales (David Zatz): Poly engines",
+       "url": "https://www.motales.com/engines/poly.php",
+       "says": "kept the 315's stroke"
+      },
+      {
+       "name": "Over-Drive Magazine: 1957 Dodge Facts, Figures, and Specifications",
+       "url": "https://over-drive-magazine.com/2025/09/24/1957-dodge-fact-sheet/",
+       "says": "3.80"
+      }
+     ],
+     "note": ""
+    },
+    "displacement_ci": {
+     "value": 325,
+     "sources": [
+      {
+       "name": "Dodge factory 1957 full-line catalog, engine specifications p.12",
+       "url": "https://oldcarbrochures.org/United%20States/Dodge/1957_Dodge/1957_Dodge_Brochure/slides/1957_Dodge-12.html",
+       "says": "Piston displacement, 325 cubic in"
+      },
+      {
+       "name": "Wikipedia: Chrysler Hemi engine (Dodge section; cites Standard Catalog of Chrysler)",
+       "url": "https://en.wikipedia.org/wiki/Chrysler_Hemi_engine",
+       "says": "325 cu in Super Red Ram for 1957"
+      },
+      {
+       "name": "MoTales (David Zatz): Poly engines",
+       "url": "https://www.motales.com/engines/poly.php",
+       "says": "The new 325 cubic inch engine"
+      },
+      {
+       "name": "Over-Drive Magazine: 1957 Dodge Facts, Figures, and Specifications",
+       "url": "https://over-drive-magazine.com/2025/09/24/1957-dodge-fact-sheet/",
+       "says": "325 CID"
+      },
+      {
+       "name": "Dodge factory 1958 full-line brochure (DMA-4000), specifications p.12",
+       "url": "https://oldcarbrochures.org/United%20States/Dodge/1958-Dodge/1958-Dodge-Full-Line-Brochure/slides/1958_Dodge-12.html",
+       "says": "325 cu in"
+      }
+     ],
+     "note": ""
+    },
+    "displacement_l": {
+     "value": 5.3,
+     "sources": [
+      {
+       "name": "Wikipedia: Chrysler Hemi engine (Dodge section; cites Standard Catalog of Chrysler)",
+       "url": "https://en.wikipedia.org/wiki/Chrysler_Hemi_engine",
+       "says": "325 cu in (5.3 L)"
+      },
+      {
+       "name": "Dodge factory 1957 full-line catalog, engine specifications p.12",
+       "url": "https://oldcarbrochures.org/United%20States/Dodge/1957_Dodge/1957_Dodge_Brochure/slides/1957_Dodge-12.html",
+       "says": "325 ci (= 5.33 L)"
+      },
+      {
+       "name": "MoTales (David Zatz): Poly engines",
+       "url": "https://www.motales.com/engines/poly.php",
+       "says": "325 ci (= 5.33 L)"
+      }
+     ],
+     "note": ""
+    },
+    "num_cylinders": {
+     "value": 8,
+     "sources": [
+      {
+       "name": "Dodge factory 1957 full-line catalog, engine specifications p.12",
+       "url": "https://oldcarbrochures.org/United%20States/Dodge/1957_Dodge/1957_Dodge_Brochure/slides/1957_Dodge-12.html",
+       "says": "Eight-cylinder, overhead valve, V-type"
+      },
+      {
+       "name": "Wikipedia: Chrysler Hemi engine (Dodge section; cites Standard Catalog of Chrysler)",
+       "url": "https://en.wikipedia.org/wiki/Chrysler_Hemi_engine",
+       "says": "V8"
+      },
+      {
+       "name": "Over-Drive Magazine: 1957 Dodge Facts, Figures, and Specifications",
+       "url": "https://over-drive-magazine.com/2025/09/24/1957-dodge-fact-sheet/",
+       "says": "325 CID V-8"
+      }
+     ],
+     "note": ""
+    },
+    "configuration": {
+     "value": "V8 (90-degree)",
+     "sources": [
+      {
+       "name": "Dodge factory 1957 full-line catalog, engine specifications p.12",
+       "url": "https://oldcarbrochures.org/United%20States/Dodge/1957_Dodge/1957_Dodge_Brochure/slides/1957_Dodge-12.html",
+       "says": "Eight-cylinder ... V-type"
+      },
+      {
+       "name": "Wikipedia: Chrysler Hemi engine (Dodge section; cites Standard Catalog of Chrysler)",
+       "url": "https://en.wikipedia.org/wiki/Chrysler_Hemi_engine",
+       "says": "V8"
+      },
+      {
+       "name": "Over-Drive Magazine: 1957 Dodge Facts, Figures, and Specifications",
+       "url": "https://over-drive-magazine.com/2025/09/24/1957-dodge-fact-sheet/",
+       "says": "V-8"
+      }
+     ],
+     "note": ""
+    },
+    "valvetrain": {
+     "value": "OHV pushrod, 2 valves/cyl, hydraulic lifters. Red Ram / Super Red Ram = POLYSPHERICAL heads (KDS); D-500 = hemispherical heads with double rocker arms (KD-500)",
+     "sources": [
+      {
+       "name": "Dodge factory 1957 full-line catalog, engine specifications p.12",
+       "url": "https://oldcarbrochures.org/United%20States/Dodge/1957_Dodge/1957_Dodge_Brochure/slides/1957_Dodge-12.html",
+       "says": "D-500: Full hemispherical combustion chamber with double rocker arms (Red Ram/Super Red Ram listed without)"
+      },
+      {
+       "name": "Wikipedia: Chrysler Hemi engine (Dodge section; cites Standard Catalog of Chrysler)",
+       "url": "https://en.wikipedia.org/wiki/Chrysler_Hemi_engine",
+       "says": "polyspheric chambered head (KDS) in its base version; KD-500 with hemi heads; all engines had hydraulic lifters"
+      },
+      {
+       "name": "Over-Drive Magazine: 1957 Dodge Facts, Figures, and Specifications",
+       "url": "https://over-drive-magazine.com/2025/09/24/1957-dodge-fact-sheet/",
+       "says": "2-bbl and 4-bbl: polyspheric head; D-500: hemispherical"
+      },
+      {
+       "name": "Over-Drive Magazine: 1958 Dodge Facts, Figures, and Specifications",
+       "url": "https://over-drive-magazine.com/2026/02/09/1958-dodge-fact-sheet/",
+       "says": "1958 325 2-bbl/4-bbl: polyspheric head"
+      },
+      {
+       "name": "MoTales (David Zatz): Poly engines",
+       "url": "https://www.motales.com/engines/poly.php",
+       "says": "1957-58 325 poly 245/265 bhp"
+      }
+     ],
+     "note": ""
+    },
+    "induction": {
+     "value": "Carburetor: 2-bbl (Red Ram), 4-bbl (Super Red Ram, D-500), dual 4-bbl (1957 D-500 option)",
+     "sources": [
+      {
+       "name": "Dodge factory 1957 full-line catalog, engine specifications p.12",
+       "url": "https://oldcarbrochures.org/United%20States/Dodge/1957_Dodge/1957_Dodge_Brochure/slides/1957_Dodge-12.html",
+       "says": "Red Ram dual downdraft; Super Red Ram 4-bbl; D-500 special dual four-barrel carburetors also available"
+      },
+      {
+       "name": "Over-Drive Magazine: 1957 Dodge Facts, Figures, and Specifications",
+       "url": "https://over-drive-magazine.com/2025/09/24/1957-dodge-fact-sheet/",
+       "says": "Stromberg 2-bbl; Carter WCFB 4-bbl; two Carter 4-bbl on D-500"
+      },
+      {
+       "name": "MoTales (David Zatz): Poly engines",
+       "url": "https://www.motales.com/engines/poly.php",
+       "says": "325 2V/4V"
+      },
+      {
+       "name": "Wikipedia: Chrysler Hemi engine (Dodge section; cites Standard Catalog of Chrysler)",
+       "url": "https://en.wikipedia.org/wiki/Chrysler_Hemi_engine",
+       "says": "KD-500-1 came with dual four-barrel carburetors"
+      }
+     ],
+     "note": ""
+    },
+    "years": {
+     "value": "1957-1958",
+     "sources": [
+      {
+       "name": "Dodge factory 1957 full-line catalog, engine specifications p.12",
+       "url": "https://oldcarbrochures.org/United%20States/Dodge/1957_Dodge/1957_Dodge_Brochure/slides/1957_Dodge-12.html",
+       "says": "1957 Red Ram / Super Red Ram / D-500 325"
+      },
+      {
+       "name": "Dodge factory 1958 full-line brochure (DMA-4000), specifications p.12",
+       "url": "https://oldcarbrochures.org/United%20States/Dodge/1958-Dodge/1958-Dodge-Full-Line-Brochure/slides/1958_Dodge-12.html",
+       "says": "1958 Red Ram / Super Red Ram 325"
+      },
+      {
+       "name": "MoTales (David Zatz): Poly engines",
+       "url": "https://www.motales.com/engines/poly.php",
+       "says": "1957-58 325 Poly"
+      },
+      {
+       "name": "Over-Drive Magazine: 1958 Dodge Facts, Figures, and Specifications",
+       "url": "https://over-drive-magazine.com/2026/02/09/1958-dodge-fact-sheet/",
+       "says": "1958 325 CID V-8"
+      }
+     ],
+     "note": "Hemi-head D-500 325 was 1957 only; for 1958 the D-500 became the 361 B wedge."
+    }
+   },
+   "variants": [
+    {
+     "year": 1957,
+     "hp": 245,
+     "hp_basis": "gross",
+     "compression_ratio": 8.5,
+     "code": "Red Ram (POLY), 2-bbl - standard Coronet V8",
+     "induction": "2-bbl",
+     "sources": [
+      {
+       "name": "MoTales (David Zatz): Poly engines",
+       "url": "https://www.motales.com/engines/poly.php",
+       "says": "The two-barrel was good for 245 bhp"
+      },
+      {
+       "name": "Over-Drive Magazine: 1957 Dodge Facts, Figures, and Specifications",
+       "url": "https://over-drive-magazine.com/2025/09/24/1957-dodge-fact-sheet/",
+       "says": "325 2-bbl: 245 @ 4400, polyspheric"
+      },
+      {
+       "name": "Hagerty Valuation Tools: 1957 Dodge Coronet (search excerpt)",
+       "url": "https://www.hagerty.com/apps/valuationtools/1957-Dodge-Coronet",
+       "says": "1957 Coronet 8-cyl 325cid/245hp 2bbl"
+      },
+      {
+       "name": "conceptcarz.com 1957 Dodge Coronet engine table (unattributed; weak corroboration)",
+       "url": "https://www.conceptcarz.com/s14782/dodge-coronet.aspx",
+       "says": "325 CID 245 hp"
+      }
+     ]
+    },
+    {
+     "year": 1957,
+     "hp": 285,
+     "hp_basis": "gross",
+     "compression_ratio": 9.25,
+     "code": "D-500 (HEMI), 4-bbl",
+     "induction": "4-bbl",
+     "sources": [
+      {
+       "name": "MoTales (David Zatz, ex-Allpar): Original Hemi V8",
+       "url": "https://www.motales.com/engines/original-hemi.php",
+       "says": "1957 D500 (325): 285 hp / 345 lb-ft"
+      },
+      {
+       "name": "Over-Drive Magazine: 1957 Dodge Facts, Figures, and Specifications",
+       "url": "https://over-drive-magazine.com/2025/09/24/1957-dodge-fact-sheet/",
+       "says": "D-500 285 @ 4800, hemispherical"
+      },
+      {
+       "name": "Over-Drive Magazine (classic-car fact site): 1953-1957 Dodge Hemi V-8 Engine Facts",
+       "url": "https://over-drive-magazine.com/2026/04/16/1953-1957-dodge-hemi-v-8-engine-facts/",
+       "says": "285 @ 4800"
+      },
+      {
+       "name": "Hagerty Valuation Tools: 1957 Dodge Coronet (search excerpt)",
+       "url": "https://www.hagerty.com/apps/valuationtools/1957-Dodge-Coronet",
+       "says": "325 CID 285 HP variant (sales data)"
+      },
+      {
+       "name": "Dodge factory 1957 full-line catalog, engine specifications p.12",
+       "url": "https://oldcarbrochures.org/United%20States/Dodge/1957_Dodge/1957_Dodge_Brochure/slides/1957_Dodge-12.html",
+       "says": "D-500 available at extra cost on Coronet V-8 (no hp printed)"
+      }
+     ]
+    },
+    {
+     "year": 1957,
+     "hp": 310,
+     "hp_basis": "gross",
+     "compression_ratio": 9.25,
+     "code": "D-500 (HEMI) with dual 4-bbl",
+     "induction": "2x4-bbl",
+     "sources": [
+      {
+       "name": "MoTales (David Zatz, ex-Allpar): Original Hemi V8",
+       "url": "https://www.motales.com/engines/original-hemi.php",
+       "says": "310 hp / 350 lb-ft"
+      },
+      {
+       "name": "Over-Drive Magazine: 1957 Dodge Facts, Figures, and Specifications",
+       "url": "https://over-drive-magazine.com/2025/09/24/1957-dodge-fact-sheet/",
+       "says": "Dual 4-barrel D-500 310 @ 4800"
+      },
+      {
+       "name": "Over-Drive Magazine (classic-car fact site): 1953-1957 Dodge Hemi V-8 Engine Facts",
+       "url": "https://over-drive-magazine.com/2026/04/16/1953-1957-dodge-hemi-v-8-engine-facts/",
+       "says": "310 @ 4800"
+      },
+      {
+       "name": "conceptcarz.com 1957 Dodge Coronet engine table (unattributed; weak corroboration)",
+       "url": "https://www.conceptcarz.com/s14782/dodge-coronet.aspx",
+       "says": "325 CID 310 hp (D-500)"
+      }
+     ]
+    },
+    {
+     "year": 1958,
+     "hp": 265,
+     "hp_basis": "gross",
+     "compression_ratio": 9.0,
+     "code": "Super Red Ram (POLY), 4-bbl",
+     "induction": "4-bbl",
+     "sources": [
+      {
+       "name": "MoTales (David Zatz): Poly engines",
+       "url": "https://www.motales.com/engines/poly.php",
+       "says": "the four-barrel, 265 bhp and 355 lb-ft (1957-58 325)"
+      },
+      {
+       "name": "Over-Drive Magazine: 1958 Dodge Facts, Figures, and Specifications",
+       "url": "https://over-drive-magazine.com/2026/02/09/1958-dodge-fact-sheet/",
+       "says": "325 4-barrel Power Pack: 265 hp, polyspheric"
+      },
+      {
+       "name": "conceptcarz.com 1958 Dodge Coronet engine table (unattributed; weak corroboration)",
+       "url": "https://www.conceptcarz.com/w14627/dodge-coronet.aspx",
+       "says": "325 CID 265 hp"
+      }
+     ],
+     "note": "Factory 1958 brochure lists the Super Red Ram as standard on Royal V-8 only (not a listed Coronet option)."
+    }
+   ],
+   "unverified": {
+    "rod_length_in": "6.62 in (raised-deck 315/325): Over-Drive (315) only.",
+    "firing_order": "Not found.",
+    "block_material": "Cast iron: Wikipedia, Over-Drive only.",
+    "head_material": "Not found.",
+    "fuel_type": "Gasoline (carbureted, obvious) but stated explicitly only by Wikipedia infobox.",
+    "compression_ratio": "Factory and Over-Drive only (2 sources) for each figure: 8.5:1 (1957 Red Ram/Super Red Ram), 9.0:1 (1958 Red Ram/Super Red Ram), 9.25:1 (1957 D-500 hemi)."
+   },
+   "unverified_variants": [
+    {
+     "year": 1957,
+     "hp": 260,
+     "code": "Super Red Ram (poly) 4-bbl",
+     "found": "Over-Drive 1957 (260) and conceptcarz (260); MoTales gives 265 for the 1957-58 four-barrel. 2 sources, disputed."
+    },
+    {
+     "year": 1958,
+     "hp": 252,
+     "code": "Red Ram (poly) 2-bbl, standard Coronet V8",
+     "found": "Over-Drive 1958 (252) and Hagerty 1958 Coronet (325cid/252hp 2bbl): 2 sources. conceptcarz and MoTales give 245 (the 1957 figure)."
+    }
+   ],
+   "notes": "The 1957-58 Red Ram and Super Red Ram 325s (245-265 hp) were POLY-HEAD engines; only the 1957 D-500 (285/310 hp) was a Hemi. The 1957 D-501 (340 hp) was a Chrysler 354 Hemi, a different engine."
+  },
+  {
+   "id": "dodge-326-a-poly",
+   "name": "Dodge 326 Red Ram V8 (A-engine, polyspherical)",
+   "fields": {
+    "bore_in": {
+     "value": 3.95,
+     "sources": [
+      {
+       "name": "Dodge factory 1959 brochure, engine specifications p.14",
+       "url": "https://oldcarbrochures.org/United%20States/Dodge/1959_Dodge/1959_Dodge_Brochure/slides/1959_Dodge-14.html",
+       "says": "Bore, 3.95 in. Stroke, 3.31 in. 326 cu in"
+      },
+      {
+       "name": "Wikipedia: Chrysler A engine",
+       "url": "https://en.wikipedia.org/wiki/Chrysler_A_engine",
+       "says": "3-61/64 in (3.95 in), largest bore of any A engine"
+      },
+      {
+       "name": "MoTales: All the Mopar V8 engines (index table)",
+       "url": "https://www.motales.com/engines/V8/index.php",
+       "says": "326, 1959: bore 3.95, stroke 3.31"
+      },
+      {
+       "name": "Over-Drive Magazine: 1959 Dodge Facts, Figures, and Specifications",
+       "url": "https://over-drive-magazine.com/2026/02/20/1959-dodge-fact-sheet/",
+       "says": "3.95 x 3.31 inches"
+      },
+      {
+       "name": "Poly318.com (Justin Lotspeich, poly-engine specialist site): Poly A-block engine specifications",
+       "url": "https://poly318.com/poly-318-engine-specifications/",
+       "says": "326: bore 3.95"
+      }
+     ],
+     "note": "3-61/64 in nominal (3.953)."
+    },
+    "stroke_in": {
+     "value": 3.3125,
+     "sources": [
+      {
+       "name": "Dodge factory 1959 brochure, engine specifications p.14",
+       "url": "https://oldcarbrochures.org/United%20States/Dodge/1959_Dodge/1959_Dodge_Brochure/slides/1959_Dodge-14.html",
+       "says": "Stroke, 3.31 in"
+      },
+      {
+       "name": "Wikipedia: Chrysler A engine",
+       "url": "https://en.wikipedia.org/wiki/Chrysler_A_engine",
+       "says": "same 3-5/16 in stroke as the 318"
+      },
+      {
+       "name": "MoTales: All the Mopar V8 engines (index table)",
+       "url": "https://www.motales.com/engines/V8/index.php",
+       "says": "stroke 3.31"
+      },
+      {
+       "name": "Over-Drive Magazine: 1959 Dodge Facts, Figures, and Specifications",
+       "url": "https://over-drive-magazine.com/2026/02/20/1959-dodge-fact-sheet/",
+       "says": "3.31"
+      },
+      {
+       "name": "Poly318.com (Justin Lotspeich, poly-engine specialist site): Poly A-block engine specifications",
+       "url": "https://poly318.com/poly-318-engine-specifications/",
+       "says": "stroke 3.31"
+      }
+     ],
+     "note": "3-5/16 in; printed 3.31."
+    },
+    "displacement_ci": {
+     "value": 326,
+     "sources": [
+      {
+       "name": "Dodge factory 1959 brochure, engine specifications p.14",
+       "url": "https://oldcarbrochures.org/United%20States/Dodge/1959_Dodge/1959_Dodge_Brochure/slides/1959_Dodge-14.html",
+       "says": "Piston displacement, 326 cu in"
+      },
+      {
+       "name": "Wikipedia: Chrysler A engine",
+       "url": "https://en.wikipedia.org/wiki/Chrysler_A_engine",
+       "says": "325.25 cu in (marketed 326)"
+      },
+      {
+       "name": "MoTales: A-series V8 engines",
+       "url": "https://www.motales.com/engines/A-V8.php",
+       "says": "the 326 cubic inch A-series V8"
+      },
+      {
+       "name": "Over-Drive Magazine: 1959 Dodge Facts, Figures, and Specifications",
+       "url": "https://over-drive-magazine.com/2026/02/20/1959-dodge-fact-sheet/",
+       "says": "326 CID"
+      }
+     ],
+     "note": "Actual 325.3 ci."
+    },
+    "displacement_l": {
+     "value": 5.3,
+     "sources": [
+      {
+       "name": "Wikipedia: Chrysler A engine",
+       "url": "https://en.wikipedia.org/wiki/Chrysler_A_engine",
+       "says": "325.25 cu in (5,330 cc)"
+      },
+      {
+       "name": "Dodge factory 1959 brochure, engine specifications p.14",
+       "url": "https://oldcarbrochures.org/United%20States/Dodge/1959_Dodge/1959_Dodge_Brochure/slides/1959_Dodge-14.html",
+       "says": "326 ci (= 5.33 L)"
+      },
+      {
+       "name": "MoTales: A-series V8 engines",
+       "url": "https://www.motales.com/engines/A-V8.php",
+       "says": "326 ci (= 5.34 L)"
+      }
+     ],
+     "note": ""
+    },
+    "num_cylinders": {
+     "value": 8,
+     "sources": [
+      {
+       "name": "Dodge factory 1959 brochure, engine specifications p.14",
+       "url": "https://oldcarbrochures.org/United%20States/Dodge/1959_Dodge/1959_Dodge_Brochure/slides/1959_Dodge-14.html",
+       "says": "Eight-cylinder, overhead valve, V-type"
+      },
+      {
+       "name": "Wikipedia: Chrysler A engine",
+       "url": "https://en.wikipedia.org/wiki/Chrysler_A_engine",
+       "says": "V8"
+      },
+      {
+       "name": "Over-Drive Magazine: 1959 Dodge Facts, Figures, and Specifications",
+       "url": "https://over-drive-magazine.com/2026/02/20/1959-dodge-fact-sheet/",
+       "says": "326 CID V-8"
+      }
+     ],
+     "note": ""
+    },
+    "configuration": {
+     "value": "V8 (90-degree)",
+     "sources": [
+      {
+       "name": "Dodge factory 1959 brochure, engine specifications p.14",
+       "url": "https://oldcarbrochures.org/United%20States/Dodge/1959_Dodge/1959_Dodge_Brochure/slides/1959_Dodge-14.html",
+       "says": "V-type eight"
+      },
+      {
+       "name": "Wikipedia: Chrysler A engine",
+       "url": "https://en.wikipedia.org/wiki/Chrysler_A_engine",
+       "says": "V8"
+      },
+      {
+       "name": "Over-Drive Magazine: 1959 Dodge Facts, Figures, and Specifications",
+       "url": "https://over-drive-magazine.com/2026/02/20/1959-dodge-fact-sheet/",
+       "says": "V-8"
+      }
+     ],
+     "note": ""
+    },
+    "valvetrain": {
+     "value": "OHV pushrod, 2 valves/cyl, polyspherical chambers, hydraulic lifters (the only hydraulic-lifter A engine)",
+     "sources": [
+      {
+       "name": "Wikipedia: Chrysler A engine",
+       "url": "https://en.wikipedia.org/wiki/Chrysler_A_engine",
+       "says": "OHV 2 valves x cyl; uses hydraulic valve lifters, unlike the other A engines"
+      },
+      {
+       "name": "MoTales: A-series V8 engines",
+       "url": "https://www.motales.com/engines/A-V8.php",
+       "says": "the only A engine with hydraulic valve lifters"
+      },
+      {
+       "name": "Over-Drive Magazine: 1959 Dodge Facts, Figures, and Specifications",
+       "url": "https://over-drive-magazine.com/2026/02/20/1959-dodge-fact-sheet/",
+       "says": "Overhead valves, polyspheric head"
+      },
+      {
+       "name": "Poly318.com (Justin Lotspeich, poly-engine specialist site): Poly A-block engine specifications",
+       "url": "https://poly318.com/poly-318-engine-specifications/",
+       "says": "326 in the poly A-block family"
+      },
+      {
+       "name": "Dodge factory 1959 brochure, engine specifications p.14",
+       "url": "https://oldcarbrochures.org/United%20States/Dodge/1959_Dodge/1959_Dodge_Brochure/slides/1959_Dodge-14.html",
+       "says": "overhead valve"
+      }
+     ],
+     "note": ""
+    },
+    "compression_ratio": {
+     "value": "9.2:1",
+     "sources": [
+      {
+       "name": "Dodge factory 1959 brochure, engine specifications p.14",
+       "url": "https://oldcarbrochures.org/United%20States/Dodge/1959_Dodge/1959_Dodge_Brochure/slides/1959_Dodge-14.html",
+       "says": "Compression ratio, 9.2 to 1"
+      },
+      {
+       "name": "Over-Drive Magazine: 1959 Dodge Facts, Figures, and Specifications",
+       "url": "https://over-drive-magazine.com/2026/02/20/1959-dodge-fact-sheet/",
+       "says": "Compression ratio 9.2:1"
+      },
+      {
+       "name": "Poly318.com (Justin Lotspeich, poly-engine specialist site): Poly A-block engine specifications",
+       "url": "https://poly318.com/poly-318-engine-specifications/",
+       "says": "326 compression 9.2:1"
+      }
+     ],
+     "note": ""
+    },
+    "induction": {
+     "value": "Carburetor, single 2-barrel (Stromberg)",
+     "sources": [
+      {
+       "name": "Dodge factory 1959 brochure, engine specifications p.14",
+       "url": "https://oldcarbrochures.org/United%20States/Dodge/1959_Dodge/1959_Dodge_Brochure/slides/1959_Dodge-14.html",
+       "says": "Dual downdraft carburetion"
+      },
+      {
+       "name": "MoTales: A-series V8 engines",
+       "url": "https://www.motales.com/engines/A-V8.php",
+       "says": "255 hp and 350 lb-ft with a two-barrel carburetor"
+      },
+      {
+       "name": "Hagerty Valuation Tools: 1959 Dodge Coronet (search excerpt)",
+       "url": "https://www.hagerty.com/valuation-tools/dodge/coronet/1959",
+       "says": "configurations 326cid/255hp 2bbl"
+      }
+     ],
+     "note": ""
+    },
+    "years": {
+     "value": "1959 only",
+     "sources": [
+      {
+       "name": "Dodge factory 1959 brochure, engine specifications p.14",
+       "url": "https://oldcarbrochures.org/United%20States/Dodge/1959_Dodge/1959_Dodge_Brochure/slides/1959_Dodge-14.html",
+       "says": "1959: new 255 hp 326 HC-HE Red Ram V-8 on Coronet"
+      },
+      {
+       "name": "Wikipedia: Chrysler A engine",
+       "url": "https://en.wikipedia.org/wiki/Chrysler_A_engine",
+       "says": "introduced in 1959 Dodges"
+      },
+      {
+       "name": "MoTales: A-series V8 engines",
+       "url": "https://www.motales.com/engines/A-V8.php",
+       "says": "only needed for the 1959 Dodge cars ... not to return for 1960"
+      },
+      {
+       "name": "Poly318.com (Justin Lotspeich, poly-engine specialist site): Poly A-block engine specifications",
+       "url": "https://poly318.com/poly-318-engine-specifications/",
+       "says": "326: 1959"
+      }
+     ],
+     "note": ""
+    }
+   },
+   "variants": [
+    {
+     "year": 1959,
+     "hp": 255,
+     "hp_basis": "gross",
+     "compression_ratio": 9.2,
+     "code": "Red Ram (HC-HE), poly A-engine 2-bbl - standard Coronet V8",
+     "induction": "2-bbl",
+     "sources": [
+      {
+       "name": "Dodge factory 1959 brochure, engine specifications p.14",
+       "url": "https://oldcarbrochures.org/United%20States/Dodge/1959_Dodge/1959_Dodge_Brochure/slides/1959_Dodge-14.html",
+       "says": "Red Ram V-8 ... 326 cu in ... Horsepower 255 at 4400 RPM"
+      },
+      {
+       "name": "MoTales: A-series V8 engines",
+       "url": "https://www.motales.com/engines/A-V8.php",
+       "says": "the 326 was rated at 255 hp and 350 pound-feet"
+      },
+      {
+       "name": "Over-Drive Magazine: 1959 Dodge Facts, Figures, and Specifications",
+       "url": "https://over-drive-magazine.com/2026/02/20/1959-dodge-fact-sheet/",
+       "says": "255 @ 4400"
+      },
+      {
+       "name": "Hagerty Valuation Tools: 1959 Dodge Coronet (search excerpt)",
+       "url": "https://www.hagerty.com/valuation-tools/dodge/coronet/1959",
+       "says": "326cid/255hp 2bbl"
+      },
+      {
+       "name": "Poly318.com (Justin Lotspeich, poly-engine specialist site): Poly A-block engine specifications",
+       "url": "https://poly318.com/poly-318-engine-specifications/",
+       "says": "255 @ 4,400"
+      }
+     ]
+    }
+   ],
+   "unverified": {
+    "block_material": "Cast iron: explicitly stated by Wikipedia only (A-engine infobox).",
+    "head_material": "Cast iron: Wikipedia only.",
+    "rod_length_in": "6.123 in (A-engine poly rod): Poly318.com only.",
+    "firing_order": "1-8-4-3-6-5-7-2: Poly318.com figure for all A-block engines only.",
+    "fuel_type": "Gasoline (carbureted, obvious) but stated explicitly only by Wikipedia infobox."
+   },
+   "unverified_variants": [],
+   "notes": "ANSWER: the 1959 Dodge 326 is a POLY-head (polyspherical) A-engine wedge-type relative of the Plymouth 318, NOT a Hemi and NOT a B wedge. It is unrelated to the 1957-58 Dodge 325 (which used the Dodge Hemi-family bottom end)."
+  },
+  {
+   "id": "chrysler-350-b",
+   "name": "Chrysler 350 B-engine wedge V8 (Dodge Ram-Fire)",
+   "fields": {
+    "bore_in": {
+     "value": 4.0625,
+     "sources": [
+      {
+       "name": "Dodge factory 1958 full-line brochure (DMA-4000), specifications p.12",
+       "url": "https://oldcarbrochures.org/United%20States/Dodge/1958-Dodge/1958-Dodge-Full-Line-Brochure/slides/1958_Dodge-12.html",
+       "says": "Ram-Fire: Bore, 4.06 in. Stroke, 3.38 in. 350 cu in"
+      },
+      {
+       "name": "Wikipedia: Chrysler B engine",
+       "url": "https://en.wikipedia.org/wiki/Chrysler_B_engine",
+       "says": "bore of 4-1/16 in (4.06 in)"
+      },
+      {
+       "name": "MoTales: B-Engines",
+       "url": "https://www.motales.com/engines/B-V8.php",
+       "says": "350: Bore 4.06"
+      },
+      {
+       "name": "Over-Drive Magazine: 1958 Dodge Facts, Figures, and Specifications",
+       "url": "https://over-drive-magazine.com/2026/02/09/1958-dodge-fact-sheet/",
+       "says": "350: 4.06 x 3.38"
+      }
+     ],
+     "note": "4-1/16 in nominal; printed 4.06."
+    },
+    "stroke_in": {
+     "value": 3.375,
+     "sources": [
+      {
+       "name": "Dodge factory 1958 full-line brochure (DMA-4000), specifications p.12",
+       "url": "https://oldcarbrochures.org/United%20States/Dodge/1958-Dodge/1958-Dodge-Full-Line-Brochure/slides/1958_Dodge-12.html",
+       "says": "Stroke, 3.38 in"
+      },
+      {
+       "name": "Wikipedia: Chrysler B engine",
+       "url": "https://en.wikipedia.org/wiki/Chrysler_B_engine",
+       "says": "3-3/8 in stroke, all low-block B engines"
+      },
+      {
+       "name": "Over-Drive Magazine: 1958 Dodge Facts, Figures, and Specifications",
+       "url": "https://over-drive-magazine.com/2026/02/09/1958-dodge-fact-sheet/",
+       "says": "3.38"
+      }
+     ],
+     "note": "3-3/8 in nominal; printed 3.38."
+    },
+    "displacement_ci": {
+     "value": 350,
+     "sources": [
+      {
+       "name": "Dodge factory 1958 full-line brochure (DMA-4000), specifications p.12",
+       "url": "https://oldcarbrochures.org/United%20States/Dodge/1958-Dodge/1958-Dodge-Full-Line-Brochure/slides/1958_Dodge-12.html",
+       "says": "Piston displacement, 350 cu in"
+      },
+      {
+       "name": "Wikipedia: Chrysler B engine",
+       "url": "https://en.wikipedia.org/wiki/Chrysler_B_engine",
+       "says": "350 cu in (5,735 cc)"
+      },
+      {
+       "name": "MoTales: B-Engines",
+       "url": "https://www.motales.com/engines/B-V8.php",
+       "says": "The 350 was a single-year engine"
+      },
+      {
+       "name": "Over-Drive Magazine: 1958 Dodge Facts, Figures, and Specifications",
+       "url": "https://over-drive-magazine.com/2026/02/09/1958-dodge-fact-sheet/",
+       "says": "350 CID"
+      }
+     ],
+     "note": ""
+    },
+    "displacement_l": {
+     "value": 5.7,
+     "sources": [
+      {
+       "name": "Wikipedia: Chrysler B engine",
+       "url": "https://en.wikipedia.org/wiki/Chrysler_B_engine",
+       "says": "350 cu in (5,735 cc)"
+      },
+      {
+       "name": "Dodge factory 1958 full-line brochure (DMA-4000), specifications p.12",
+       "url": "https://oldcarbrochures.org/United%20States/Dodge/1958-Dodge/1958-Dodge-Full-Line-Brochure/slides/1958_Dodge-12.html",
+       "says": "350 ci (= 5.74 L)"
+      },
+      {
+       "name": "Over-Drive Magazine: 1958 Dodge Facts, Figures, and Specifications",
+       "url": "https://over-drive-magazine.com/2026/02/09/1958-dodge-fact-sheet/",
+       "says": "350 ci (= 5.74 L)"
+      }
+     ],
+     "note": ""
+    },
+    "num_cylinders": {
+     "value": 8,
+     "sources": [
+      {
+       "name": "Dodge factory 1958 full-line brochure (DMA-4000), specifications p.12",
+       "url": "https://oldcarbrochures.org/United%20States/Dodge/1958-Dodge/1958-Dodge-Full-Line-Brochure/slides/1958_Dodge-12.html",
+       "says": "Eight-cylinder, overhead valve, V-type"
+      },
+      {
+       "name": "Wikipedia: Chrysler B engine",
+       "url": "https://en.wikipedia.org/wiki/Chrysler_B_engine",
+       "says": "V8"
+      },
+      {
+       "name": "Over-Drive Magazine: 1958 Dodge Facts, Figures, and Specifications",
+       "url": "https://over-drive-magazine.com/2026/02/09/1958-dodge-fact-sheet/",
+       "says": "350 CID V-8"
+      }
+     ],
+     "note": ""
+    },
+    "configuration": {
+     "value": "V8 (90-degree)",
+     "sources": [
+      {
+       "name": "Dodge factory 1958 full-line brochure (DMA-4000), specifications p.12",
+       "url": "https://oldcarbrochures.org/United%20States/Dodge/1958-Dodge/1958-Dodge-Full-Line-Brochure/slides/1958_Dodge-12.html",
+       "says": "V-type eight"
+      },
+      {
+       "name": "Wikipedia: Chrysler B engine",
+       "url": "https://en.wikipedia.org/wiki/Chrysler_B_engine",
+       "says": "V8"
+      },
+      {
+       "name": "MoTales: B-Engines",
+       "url": "https://www.motales.com/engines/B-V8.php",
+       "says": "B-engine V8"
+      }
+     ],
+     "note": ""
+    },
+    "valvetrain": {
+     "value": "OHV pushrod, 2 valves/cyl, wedge combustion chambers",
+     "sources": [
+      {
+       "name": "Wikipedia: Chrysler B engine",
+       "url": "https://en.wikipedia.org/wiki/Chrysler_B_engine",
+       "says": "OHV 2 valves x cyl."
+      },
+      {
+       "name": "Dodge factory 1958 full-line brochure (DMA-4000), specifications p.12",
+       "url": "https://oldcarbrochures.org/United%20States/Dodge/1958-Dodge/1958-Dodge-Full-Line-Brochure/slides/1958_Dodge-12.html",
+       "says": "overhead valve (1958 B engines: wedge-type combustion chamber)"
+      },
+      {
+       "name": "MoTales: B-Engines",
+       "url": "https://www.motales.com/engines/B-V8.php",
+       "says": "B-engine wedge V8"
+      }
+     ],
+     "note": "Over-Drive's 1958 sheet wrongly labels the 350 \"hemispherical head\"."
+    },
+    "compression_ratio": {
+     "value": "10.0:1",
+     "sources": [
+      {
+       "name": "Dodge factory 1958 full-line brochure (DMA-4000), specifications p.12",
+       "url": "https://oldcarbrochures.org/United%20States/Dodge/1958-Dodge/1958-Dodge-Full-Line-Brochure/slides/1958_Dodge-12.html",
+       "says": "Compression ratio, 10.00 to 1"
+      },
+      {
+       "name": "MoTales: B-Engines",
+       "url": "https://www.motales.com/engines/B-V8.php",
+       "says": "10:1 compression (1958)"
+      },
+      {
+       "name": "Over-Drive Magazine: 1958 Dodge Facts, Figures, and Specifications",
+       "url": "https://over-drive-magazine.com/2026/02/09/1958-dodge-fact-sheet/",
+       "says": "10.0:1"
+      }
+     ],
+     "note": ""
+    },
+    "induction": {
+     "value": "Carburetor, single 4-barrel (Carter) on the Dodge Ram-Fire",
+     "sources": [
+      {
+       "name": "Dodge factory 1958 full-line brochure (DMA-4000), specifications p.12",
+       "url": "https://oldcarbrochures.org/United%20States/Dodge/1958-Dodge/1958-Dodge-Full-Line-Brochure/slides/1958_Dodge-12.html",
+       "says": "Four-barrel carburetor"
+      },
+      {
+       "name": "Over-Drive Magazine: 1958 Dodge Facts, Figures, and Specifications",
+       "url": "https://over-drive-magazine.com/2026/02/09/1958-dodge-fact-sheet/",
+       "says": "Carter AFB 4-barrel"
+      },
+      {
+       "name": "Hagerty Valuation Tools: 1958 Dodge Custom Sierra (search excerpt)",
+       "url": "https://hagerty.ca/apps/ValuationTools/1958-Dodge-Custom_Sierra",
+       "says": "1958 Custom Sierra 350cid/295hp 4-barrel"
+      }
+     ],
+     "note": "DISAGREEMENT: Wikipedia (1958 Dodge) says 2-bbl standard / 4-bbl 300 hp on Custom Royal. DeSoto's 350 used a 2-bbl (MoTales)."
+    },
+    "years": {
+     "value": "1958 only",
+     "sources": [
+      {
+       "name": "MoTales: B-Engines",
+       "url": "https://www.motales.com/engines/B-V8.php",
+       "says": "The 350 was a single-year engine"
+      },
+      {
+       "name": "Wikipedia: Chrysler B engine",
+       "url": "https://en.wikipedia.org/wiki/Chrysler_B_engine",
+       "says": "1958 DeSoto Firesweep, 1958 Dodge Coronet, 1958 Plymouth Fury"
+      },
+      {
+       "name": "Dodge factory 1958 full-line brochure (DMA-4000), specifications p.12",
+       "url": "https://oldcarbrochures.org/United%20States/Dodge/1958-Dodge/1958-Dodge-Full-Line-Brochure/slides/1958_Dodge-12.html",
+       "says": "1958 Ram-Fire 350"
+      },
+      {
+       "name": "Over-Drive Magazine: 1958 Dodge Facts, Figures, and Specifications",
+       "url": "https://over-drive-magazine.com/2026/02/09/1958-dodge-fact-sheet/",
+       "says": "1958 350 CID V-8"
+      }
+     ],
+     "note": ""
+    }
+   },
+   "variants": [
+    {
+     "year": 1958,
+     "hp": 295,
+     "hp_basis": "gross",
+     "compression_ratio": 10.0,
+     "code": "Ram-Fire 350, 4-bbl, dual exhaust (std Custom Royal and station wagons)",
+     "induction": "4-bbl",
+     "sources": [
+      {
+       "name": "Hagerty Valuation Tools: 1958 Dodge Custom Sierra (search excerpt)",
+       "url": "https://hagerty.ca/apps/ValuationTools/1958-Dodge-Custom_Sierra",
+       "says": "1958 Custom Sierra 8-cyl 350cid/295hp 4-barrel"
+      },
+      {
+       "name": "Over-Drive Magazine: 1958 Dodge Facts, Figures, and Specifications",
+       "url": "https://over-drive-magazine.com/2026/02/09/1958-dodge-fact-sheet/",
+       "says": "350 CID: 295 hp, Carter AFB 4-barrel"
+      },
+      {
+       "name": "conceptcarz.com 1958 Dodge Coronet engine table (unattributed; weak corroboration)",
+       "url": "https://www.conceptcarz.com/w14627/dodge-coronet.aspx",
+       "says": "8-cyl 350 CID 295 hp"
+      },
+      {
+       "name": "Dodge factory 1958 full-line brochure (DMA-4000), specifications p.12",
+       "url": "https://oldcarbrochures.org/United%20States/Dodge/1958-Dodge/1958-Dodge-Full-Line-Brochure/slides/1958_Dodge-12.html",
+       "says": "Ram-Fire: standard on Custom Royal and Station Wagon models (no hp printed)"
+      }
+     ],
+     "note": "Wikipedia (1958 Dodge) gives 300 hp for a 4-bbl option; not adopted."
+    }
+   ],
+   "unverified": {
+    "rod_length_in": "6.358 in (all low-block B): Wikipedia only for 1958 (NHRA blueprints with 6.358 start at 1966).",
+    "firing_order": "1-8-4-3-6-5-7-2 (B family): no 350-specific source.",
+    "block_material": "Cast iron: Wikipedia only.",
+    "head_material": "Cast iron: Wikipedia only.",
+    "fuel_type": "Gasoline (carbureted, obvious) but stated explicitly only by Wikipedia infobox."
+   },
+   "unverified_variants": [],
+   "notes": "Distinct from the 361/383: smaller 4.06 bore, same 3.38 stroke. 1958 only."
+  },
+  {
+   "id": "fiat-chrysler-1-4-multiair-turbo",
+   "name": "Fiat/Chrysler 1.4L MultiAir Turbo I4 (FIRE family)",
+   "fields": {
+    "bore_in": {
+     "value": 2.8346,
+     "sources": [
+      {
+       "name": "Stellantis (Chrysler Group) media: 2013 Dodge Dart powertrain lineup incl. 1.4L MultiAir Turbo (release 11858; Canada version 11987)",
+       "url": "https://media.stellantisnorthamerica.com/newsrelease.do?id=11858",
+       "says": "The bore is 72 mm and stroke 84 mm for a total displacement of 1,368 cc"
+      },
+      {
+       "name": "Ward's (WardsAuto), Mar 5 2012: Fiat 500 Gets Big Boost With Turbo Abarth (same 1.4 MultiAir Turbo)",
+       "url": "https://www.wardsauto.com/test-drives-new-vehicles/fiat-500-gets-big-boost-with-turbo-abarth",
+       "says": "Bore x stroke 72 x 84 mm"
+      },
+      {
+       "name": "Wikipedia: Fiat FIRE engine",
+       "url": "https://en.wikipedia.org/wiki/Fiat_FIRE_engine",
+       "says": "72 mm x 84 mm bore x stroke (1.4 L)"
+      }
+     ],
+     "note": "72.0 mm."
+    },
+    "stroke_in": {
+     "value": 3.3071,
+     "sources": [
+      {
+       "name": "Stellantis (Chrysler Group) media: 2013 Dodge Dart powertrain lineup incl. 1.4L MultiAir Turbo (release 11858; Canada version 11987)",
+       "url": "https://media.stellantisnorthamerica.com/newsrelease.do?id=11858",
+       "says": "stroke 84 mm"
+      },
+      {
+       "name": "Ward's (WardsAuto), Mar 5 2012: Fiat 500 Gets Big Boost With Turbo Abarth (same 1.4 MultiAir Turbo)",
+       "url": "https://www.wardsauto.com/test-drives-new-vehicles/fiat-500-gets-big-boost-with-turbo-abarth",
+       "says": "72 x 84 mm"
+      },
+      {
+       "name": "Wikipedia: Fiat FIRE engine",
+       "url": "https://en.wikipedia.org/wiki/Fiat_FIRE_engine",
+       "says": "72 mm x 84 mm"
+      }
+     ],
+     "note": "84.0 mm."
+    },
+    "displacement_ci": {
+     "value": 83,
+     "sources": [
+      {
+       "name": "The Auto Channel (Carey Russ): 2013 Fiat 500 Abarth review, specifications",
+       "url": "https://www.theautochannel.com/news/2013/04/12/072293-2013-fiat-500-abarth-carey-russ-review.html",
+       "says": "1.4 liters / 83 cu. in."
+      },
+      {
+       "name": "Stellantis (Chrysler Group) media: 2013 Dodge Dart powertrain lineup incl. 1.4L MultiAir Turbo (release 11858; Canada version 11987)",
+       "url": "https://media.stellantisnorthamerica.com/newsrelease.do?id=11858",
+       "says": "1,368 cc (= 83.5 ci)"
+      },
+      {
+       "name": "Wikipedia: Fiat FIRE engine",
+       "url": "https://en.wikipedia.org/wiki/Fiat_FIRE_engine",
+       "says": "1,368 cc"
+      }
+     ],
+     "note": "1,368 cc = 83.5 ci."
+    },
+    "displacement_l": {
+     "value": 1.4,
+     "sources": [
+      {
+       "name": "Stellantis (Chrysler Group) media: 2013 Dodge Dart powertrain lineup incl. 1.4L MultiAir Turbo (release 11858; Canada version 11987)",
+       "url": "https://media.stellantisnorthamerica.com/newsrelease.do?id=11858",
+       "says": "1,368 cc"
+      },
+      {
+       "name": "Wikipedia: Fiat FIRE engine",
+       "url": "https://en.wikipedia.org/wiki/Fiat_FIRE_engine",
+       "says": "1.4 L (1,368 cc)"
+      },
+      {
+       "name": "EPA fueleconomy.gov: 2013 Dodge Dart 1.4 L Turbo (vehicle 32403; 2013-2016 Dart/Dart Aero 1.4T listed)",
+       "url": "https://www.fueleconomy.gov/ws/rest/vehicle/32403",
+       "says": "displ 1.4"
+      },
+      {
+       "name": "The Auto Channel (Carey Russ): 2013 Fiat 500 Abarth review, specifications",
+       "url": "https://www.theautochannel.com/news/2013/04/12/072293-2013-fiat-500-abarth-carey-russ-review.html",
+       "says": "1.4 liters"
+      }
+     ],
+     "note": ""
+    },
+    "num_cylinders": {
+     "value": 4,
+     "sources": [
+      {
+       "name": "EPA fueleconomy.gov: 2013 Dodge Dart 1.4 L Turbo (vehicle 32403; 2013-2016 Dart/Dart Aero 1.4T listed)",
+       "url": "https://www.fueleconomy.gov/ws/rest/vehicle/32403",
+       "says": "cylinders 4"
+      },
+      {
+       "name": "The Auto Channel (Carey Russ): 2013 Fiat 500 Abarth review, specifications",
+       "url": "https://www.theautochannel.com/news/2013/04/12/072293-2013-fiat-500-abarth-carey-russ-review.html",
+       "says": "inline 4-cylinder"
+      },
+      {
+       "name": "Ward's (WardsAuto), Mar 5 2012: Fiat 500 Gets Big Boost With Turbo Abarth (same 1.4 MultiAir Turbo)",
+       "url": "https://www.wardsauto.com/test-drives-new-vehicles/fiat-500-gets-big-boost-with-turbo-abarth",
+       "says": "SOHC 4-cyl."
+      }
+     ],
+     "note": ""
+    },
+    "configuration": {
+     "value": "Inline-four",
+     "sources": [
+      {
+       "name": "The Auto Channel (Carey Russ): 2013 Fiat 500 Abarth review, specifications",
+       "url": "https://www.theautochannel.com/news/2013/04/12/072293-2013-fiat-500-abarth-carey-russ-review.html",
+       "says": "MultiAir 16-valve inline 4-cylinder"
+      },
+      {
+       "name": "Ward's (WardsAuto), Mar 5 2012: Fiat 500 Gets Big Boost With Turbo Abarth (same 1.4 MultiAir Turbo)",
+       "url": "https://www.wardsauto.com/test-drives-new-vehicles/fiat-500-gets-big-boost-with-turbo-abarth",
+       "says": "SOHC 4-cyl"
+      },
+      {
+       "name": "Wikipedia: Fiat FIRE engine",
+       "url": "https://en.wikipedia.org/wiki/Fiat_FIRE_engine",
+       "says": "FIRE straight-four family"
+      },
+      {
+       "name": "EPA fueleconomy.gov: 2013 Dodge Dart 1.4 L Turbo (vehicle 32403; 2013-2016 Dart/Dart Aero 1.4T listed)",
+       "url": "https://www.fueleconomy.gov/ws/rest/vehicle/32403",
+       "says": "4 cyl"
+      }
+     ],
+     "note": ""
+    },
+    "valvetrain": {
+     "value": "SOHC, 4 valves/cyl (16V); exhaust valves cam-driven, intake valves electro-hydraulic MultiAir (variable timing and lift)",
+     "sources": [
+      {
+       "name": "Ward's (WardsAuto), Mar 5 2012: Fiat 500 Gets Big Boost With Turbo Abarth (same 1.4 MultiAir Turbo)",
+       "url": "https://www.wardsauto.com/test-drives-new-vehicles/fiat-500-gets-big-boost-with-turbo-abarth",
+       "says": "1.4L turbocharged MultiAir port-injection SOHC 4-cyl."
+      },
+      {
+       "name": "The Auto Channel (Carey Russ): 2013 Fiat 500 Abarth review, specifications",
+       "url": "https://www.theautochannel.com/news/2013/04/12/072293-2013-fiat-500-abarth-carey-russ-review.html",
+       "says": "SOHC turbocharged, intercooled, MultiAir 16-valve"
+      },
+      {
+       "name": "Wikipedia: Fiat FIRE engine",
+       "url": "https://en.wikipedia.org/wiki/Fiat_FIRE_engine",
+       "says": "16V MultiAir Turbo; electro-hydraulic intake valve driving with variable timing, lift and profile"
+      },
+      {
+       "name": "Stellantis (Chrysler Group) media: 2013 Dodge Dart powertrain lineup incl. 1.4L MultiAir Turbo (release 11858; Canada version 11987)",
+       "url": "https://media.stellantisnorthamerica.com/newsrelease.do?id=11858",
+       "says": "MultiAir is an electro-hydraulic system that can control intake air, cylinder by cylinder"
+      }
+     ],
+     "note": ""
+    },
+    "compression_ratio": {
+     "value": "9.8:1",
+     "sources": [
+      {
+       "name": "Stellantis (Chrysler Group) media: 2013 Dodge Dart powertrain lineup incl. 1.4L MultiAir Turbo (release 11858; Canada version 11987)",
+       "url": "https://media.stellantisnorthamerica.com/newsrelease.do?id=11858",
+       "says": "compression ratio of 9.8:1 (Canadian release 11987; US release prints \"9.8:18:1\", a typo)"
+      },
+      {
+       "name": "Ward's (WardsAuto), Mar 5 2012: Fiat 500 Gets Big Boost With Turbo Abarth (same 1.4 MultiAir Turbo)",
+       "url": "https://www.wardsauto.com/test-drives-new-vehicles/fiat-500-gets-big-boost-with-turbo-abarth",
+       "says": "Compression ratio 9.8:1"
+      },
+      {
+       "name": "The Auto Channel (Carey Russ): 2013 Fiat 500 Abarth review, specifications",
+       "url": "https://www.theautochannel.com/news/2013/04/12/072293-2013-fiat-500-abarth-carey-russ-review.html",
+       "says": "9.8:1"
+      }
+     ],
+     "note": ""
+    },
+    "block_material": {
+     "value": "Cast iron (structural aluminum bedplate)",
+     "sources": [
+      {
+       "name": "Stellantis (Chrysler Group) media: 2013 Dodge Dart powertrain lineup incl. 1.4L MultiAir Turbo (release 11858; Canada version 11987)",
+       "url": "https://media.stellantisnorthamerica.com/newsrelease.do?id=11858",
+       "says": "durable cast-iron block and a structural aluminum bedplate"
+      },
+      {
+       "name": "Ward's (WardsAuto), Mar 5 2012: Fiat 500 Gets Big Boost With Turbo Abarth (same 1.4 MultiAir Turbo)",
+       "url": "https://www.wardsauto.com/test-drives-new-vehicles/fiat-500-gets-big-boost-with-turbo-abarth",
+       "says": "cast-iron block/aluminum head"
+      },
+      {
+       "name": "The Auto Channel (Carey Russ): 2013 Fiat 500 Abarth review, specifications",
+       "url": "https://www.theautochannel.com/news/2013/04/12/072293-2013-fiat-500-abarth-carey-russ-review.html",
+       "says": "cast iron block beneath an aluminum head"
+      },
+      {
+       "name": "Wikipedia: Fiat FIRE engine",
+       "url": "https://en.wikipedia.org/wiki/Fiat_FIRE_engine",
+       "says": "block: Cast iron"
+      }
+     ],
+     "note": ""
+    },
+    "head_material": {
+     "value": "Aluminum",
+     "sources": [
+      {
+       "name": "Ward's (WardsAuto), Mar 5 2012: Fiat 500 Gets Big Boost With Turbo Abarth (same 1.4 MultiAir Turbo)",
+       "url": "https://www.wardsauto.com/test-drives-new-vehicles/fiat-500-gets-big-boost-with-turbo-abarth",
+       "says": "cast-iron block/aluminum head"
+      },
+      {
+       "name": "The Auto Channel (Carey Russ): 2013 Fiat 500 Abarth review, specifications",
+       "url": "https://www.theautochannel.com/news/2013/04/12/072293-2013-fiat-500-abarth-carey-russ-review.html",
+       "says": "aluminum head"
+      },
+      {
+       "name": "Wikipedia: Fiat FIRE engine",
+       "url": "https://en.wikipedia.org/wiki/Fiat_FIRE_engine",
+       "says": "head: aluminium"
+      }
+     ],
+     "note": ""
+    },
+    "induction": {
+     "value": "Turbocharged (single turbo, intercooled), fuel-injected",
+     "sources": [
+      {
+       "name": "Stellantis (Chrysler Group) media: 2013 Dodge Dart powertrain lineup incl. 1.4L MultiAir Turbo (release 11858; Canada version 11987)",
+       "url": "https://media.stellantisnorthamerica.com/newsrelease.do?id=11858",
+       "says": "Intercooled Turbocharger provides 160 Horsepower; single turbocharger"
+      },
+      {
+       "name": "Ward's (WardsAuto), Mar 5 2012: Fiat 500 Gets Big Boost With Turbo Abarth (same 1.4 MultiAir Turbo)",
+       "url": "https://www.wardsauto.com/test-drives-new-vehicles/fiat-500-gets-big-boost-with-turbo-abarth",
+       "says": "turbocharged MultiAir port-injection; twin intercoolers (Abarth)"
+      },
+      {
+       "name": "The Auto Channel (Carey Russ): 2013 Fiat 500 Abarth review, specifications",
+       "url": "https://www.theautochannel.com/news/2013/04/12/072293-2013-fiat-500-abarth-carey-russ-review.html",
+       "says": "turbocharged, intercooled"
+      },
+      {
+       "name": "EPA fueleconomy.gov: 2013 Dodge Dart 1.4 L Turbo (vehicle 32403; 2013-2016 Dart/Dart Aero 1.4T listed)",
+       "url": "https://www.fueleconomy.gov/ws/rest/vehicle/32403",
+       "says": "tCharger T (turbo)"
+      }
+     ],
+     "note": "Port (multipoint) injection stated by Wards only; see unverified."
+    },
+    "years": {
+     "value": "2013-2016 in the Dodge Dart (engine also used in Fiat 500 Abarth etc. from 2012 in the US)",
+     "sources": [
+      {
+       "name": "Wikipedia: Dodge Dart (PF)",
+       "url": "https://en.wikipedia.org/wiki/Dodge_Dart_(PF)",
+       "says": "1.4 L MultiAir turbo, 2013-2016 Dart"
+      },
+      {
+       "name": "MoTales: New Dodge Dart 2013-16",
+       "url": "https://www.motales.com/cars/Dodge/new-dart.php",
+       "says": "Aero trim (2013+) ... standard engine in the 2016 \"Turbo\" model"
+      },
+      {
+       "name": "EPA fueleconomy.gov: 2013 Dodge Dart 1.4 L Turbo (vehicle 32403; 2013-2016 Dart/Dart Aero 1.4T listed)",
+       "url": "https://www.fueleconomy.gov/ws/rest/vehicle/32403",
+       "says": "1.4 L turbo Dart listed 2013, 2014, 2015, 2016"
+      },
+      {
+       "name": "Wikipedia: Fiat FIRE engine",
+       "url": "https://en.wikipedia.org/wiki/Fiat_FIRE_engine",
+       "says": "Dodge Dart (PF) (2013-2016)"
+      }
+     ],
+     "note": ""
+    }
+   },
+   "variants": [
+    {
+     "year": 2013,
+     "hp": 160,
+     "hp_basis": "net (SAE)",
+     "compression_ratio": 9.8,
+     "code": "1.4L MultiAir Intercooled Turbo (Rallye, Limited, Aero)",
+     "induction": "turbo, port injection",
+     "sources": [
+      {
+       "name": "Stellantis media: Dodge Hits Bull's Eye With All-new Compact Car - The Dodge Dart",
+       "url": "https://media.stellantisnorthamerica.com/newsrelease.do?id=12885",
+       "says": "160 hp 1.4-liter MultiAir Intercooled Turbo"
+      },
+      {
+       "name": "Wikipedia: Dodge Dart (PF)",
+       "url": "https://en.wikipedia.org/wiki/Dodge_Dart_(PF)",
+       "says": "1.4 L MultiAir turbo 160 hp"
+      },
+      {
+       "name": "Auto123: 2013 Dodge Dart preview (search excerpt)",
+       "url": "https://www.auto123.com/en/news/2013-dodge-dart-preview/56213/",
+       "says": "1.4L MultiAir 160 hp, 184 lb-ft"
+      },
+      {
+       "name": "MoTales: New Dodge Dart 2013-16",
+       "url": "https://www.motales.com/cars/Dodge/new-dart.php",
+       "says": "160 horsepower and 184 pound-feet"
+      }
+     ]
+    },
+    {
+     "year": 2014,
+     "hp": 160,
+     "hp_basis": "net (SAE)",
+     "compression_ratio": 9.8,
+     "code": "1.4L MultiAir Turbo (Aero)",
+     "induction": "turbo, port injection",
+     "sources": [
+      {
+       "name": "Stellantis media: Dodge Simplifies Dart Lineup for 2014",
+       "url": "https://media.stellantisnorthamerica.com/newsrelease.do?id=14675",
+       "says": "2014 Dart Aero: 1.4-liter MultiAir Turbo, 160 hp"
+      },
+      {
+       "name": "Wikipedia: Dodge Dart (PF)",
+       "url": "https://en.wikipedia.org/wiki/Dodge_Dart_(PF)",
+       "says": "Aero offered the 1.4 MultiAir turbo, 160 hp"
+      },
+      {
+       "name": "MoTales: New Dodge Dart 2013-16",
+       "url": "https://www.motales.com/cars/Dodge/new-dart.php",
+       "says": "160 horsepower"
+      }
+     ]
+    },
+    {
+     "year": 2015,
+     "hp": 160,
+     "hp_basis": "net (SAE)",
+     "compression_ratio": 9.8,
+     "code": "1.4L MultiAir Turbo (Aero)",
+     "induction": "turbo, port injection",
+     "sources": [
+      {
+       "name": "Wikipedia: Dodge Dart (PF)",
+       "url": "https://en.wikipedia.org/wiki/Dodge_Dart_(PF)",
+       "says": "1.4 MultiAir turbo 160 hp"
+      },
+      {
+       "name": "Autoblog: 2015 Dodge Dart review (search excerpt)",
+       "url": "https://www.autoblog.com/buy/2015-Dodge-Dart/review/",
+       "says": "160-hp 1.4 turbo (Aero)"
+      },
+      {
+       "name": "MoTales: New Dodge Dart 2013-16",
+       "url": "https://www.motales.com/cars/Dodge/new-dart.php",
+       "says": "160 horsepower"
+      }
+     ]
+    },
+    {
+     "year": 2016,
+     "hp": 160,
+     "hp_basis": "net (SAE)",
+     "compression_ratio": 9.8,
+     "code": "1.4L MultiAir Turbo (Aero / Turbo model)",
+     "induction": "turbo, port injection",
+     "sources": [
+      {
+       "name": "Wikipedia: Dodge Dart (PF)",
+       "url": "https://en.wikipedia.org/wiki/Dodge_Dart_(PF)",
+       "says": "1.4 MultiAir turbo 160 hp"
+      },
+      {
+       "name": "Autoblog: 2016 Dodge Dart review (search excerpt)",
+       "url": "https://www.autoblog.com/buy/2016-Dodge-Dart/review/",
+       "says": "160-hp 1.4 turbo (Aero)"
+      },
+      {
+       "name": "MoTales: New Dodge Dart 2013-16",
+       "url": "https://www.motales.com/cars/Dodge/new-dart.php",
+       "says": "160 hp; standard in the 2016 Turbo model"
+      },
+      {
+       "name": "Dodge 2016 Dart brochure (PDF)",
+       "url": "https://www.dodge.com/assets/pdf/brochure/2016dart.pdf",
+       "says": "1.4L intercooled turbo with MultiAir, 160 hp"
+      }
+     ]
+    }
+   ],
+   "unverified": {
+    "firing_order": "1-3-4-2 expected for an inline-four but no source found.",
+    "rod_length_in": "Not published (forged-steel rods confirmed by Stellantis, length not given).",
+    "fuel_type": "Gasoline; EPA lists Premium Gasoline for the 2013-16 Dart 1.4T. No 3-source octane statement.",
+    "induction_injection_type": "Port fuel injection: Wards (Abarth) only."
+   },
+   "unverified_variants": [],
+   "notes": "Fiat and Chrysler/Stellantis material counted as one manufacturer source. Torque (184 lb-ft) not collected."
+  },
+  {
+   "id": "mitsubishi-4g32-1-6",
+   "name": "Mitsubishi 4G32 Saturn 1.6L I4 (Silent Shaft, MCA-Jet)",
+   "fields": {
+    "bore_in": {
+     "value": 3.03,
+     "sources": [
+      {
+       "name": "Dodge factory 1979 Challenger brochure (Form 81-307-9020), engine specifications p.8",
+       "url": "https://www.oldcarbrochures.org/United%20States/Dodge/1979_Dodge/1979_Dodge_Challenger_Brochure/slides/1979_Dodge_Challenger-08.html",
+       "says": "Bore & Stroke: 3.03\" x 3.39\" (1.6 litre)"
+      },
+      {
+       "name": "NHRA engine blueprint CHRY-78 (imports section)",
+       "url": "https://www.nhra.net/tech_specs/engine/blueprints/CHRY-78.rtf",
+       "says": "98 ci: bore 3.030, stroke 3.390"
+      },
+      {
+       "name": "Wikipedia: Mitsubishi Saturn engine (4G32)",
+       "url": "https://en.wikipedia.org/wiki/Mitsubishi_Saturn_engine",
+       "says": "77 mm x 86 mm (3.03 in x 3.39 in)"
+      }
+     ],
+     "note": "Maker figure 76.9 mm (= 3.0276 in); Wikipedia rounds to 77 mm."
+    },
+    "stroke_in": {
+     "value": 3.39,
+     "sources": [
+      {
+       "name": "Dodge factory 1979 Challenger brochure (Form 81-307-9020), engine specifications p.8",
+       "url": "https://www.oldcarbrochures.org/United%20States/Dodge/1979_Dodge/1979_Dodge_Challenger_Brochure/slides/1979_Dodge_Challenger-08.html",
+       "says": "3.39\""
+      },
+      {
+       "name": "NHRA engine blueprint CHRY-78 (imports section)",
+       "url": "https://www.nhra.net/tech_specs/engine/blueprints/CHRY-78.rtf",
+       "says": "stroke 3.390"
+      },
+      {
+       "name": "Wikipedia: Mitsubishi Saturn engine (4G32)",
+       "url": "https://en.wikipedia.org/wiki/Mitsubishi_Saturn_engine",
+       "says": "86 mm (3.39 in)"
+      }
+     ],
+     "note": "86.0 mm = 3.3858 in. The 1978 Challenger brochure misprints 3.09."
+    },
+    "displacement_ci": {
+     "value": 98,
+     "sources": [
+      {
+       "name": "NHRA engine blueprint CHRY-78 (imports section)",
+       "url": "https://www.nhra.net/tech_specs/engine/blueprints/CHRY-78.rtf",
+       "says": "98 ci, 4 cyl"
+      },
+      {
+       "name": "NHRA Stock Car Classification Guide (1978DOD / 1979DOD sheets)",
+       "url": "nhra_challenger.json / scc_rows.json (scratchpad)",
+       "says": "1978 Challenger 98 ci / 77 hp (C-098-01)"
+      },
+      {
+       "name": "Wikipedia: Mitsubishi Saturn engine (4G32)",
+       "url": "https://en.wikipedia.org/wiki/Mitsubishi_Saturn_engine",
+       "says": "1,597 cc (= 97.5 ci)"
+      },
+      {
+       "name": "Dodge factory 1979 Challenger brochure (Form 81-307-9020), engine specifications p.8",
+       "url": "https://www.oldcarbrochures.org/United%20States/Dodge/1979_Dodge/1979_Dodge_Challenger_Brochure/slides/1979_Dodge_Challenger-08.html",
+       "says": "1.6-litre"
+      }
+     ],
+     "note": "97.5 ci exact. NHRA blueprint and SCC are one source."
+    },
+    "displacement_l": {
+     "value": 1.6,
+     "sources": [
+      {
+       "name": "Dodge factory 1978 Challenger brochure (Form 81-205-8005), engine page p.8",
+       "url": "https://www.oldcarbrochures.org/United%20States/Dodge/1978_Dodge/1978-Dodge-Challenger-Brochure/slides/1978_Dodge_Challenger-08.html",
+       "says": "1.6 litre Silent Shaft with MCA-Jet System"
+      },
+      {
+       "name": "Wikipedia: Mitsubishi Saturn engine (4G32)",
+       "url": "https://en.wikipedia.org/wiki/Mitsubishi_Saturn_engine",
+       "says": "1.6 L (1,597 cc)"
+      },
+      {
+       "name": "NHRA engine blueprint CHRY-78 (imports section)",
+       "url": "https://www.nhra.net/tech_specs/engine/blueprints/CHRY-78.rtf",
+       "says": "98 ci (= 1.6 L)"
+      },
+      {
+       "name": "Mac's Motor City Garage: Another kind of Dodge Challenger, the Mitsubishi years",
+       "url": "https://macsmotorcitygarage.com/another-kind-of-dodge-challenger-the-mitsubishi-years-1978-1984/",
+       "says": "a standard 1.6 liter unit"
+      }
+     ],
+     "note": ""
+    },
+    "num_cylinders": {
+     "value": 4,
+     "sources": [
+      {
+       "name": "Dodge factory 1979 Challenger brochure (Form 81-307-9020), engine specifications p.8",
+       "url": "https://www.oldcarbrochures.org/United%20States/Dodge/1979_Dodge/1979_Dodge_Challenger_Brochure/slides/1979_Dodge_Challenger-08.html",
+       "says": "Four-cylinder"
+      },
+      {
+       "name": "NHRA engine blueprint CHRY-78 (imports section)",
+       "url": "https://www.nhra.net/tech_specs/engine/blueprints/CHRY-78.rtf",
+       "says": "4 cylinders"
+      },
+      {
+       "name": "Wikipedia: Mitsubishi Saturn engine (4G32)",
+       "url": "https://en.wikipedia.org/wiki/Mitsubishi_Saturn_engine",
+       "says": "inline-four"
+      },
+      {
+       "name": "Mac's Motor City Garage: Another kind of Dodge Challenger, the Mitsubishi years",
+       "url": "https://macsmotorcitygarage.com/another-kind-of-dodge-challenger-the-mitsubishi-years-1978-1984/",
+       "says": "Two four-cylinder engines"
+      }
+     ],
+     "note": ""
+    },
+    "configuration": {
+     "value": "Inline-four",
+     "sources": [
+      {
+       "name": "Dodge factory 1978 Challenger brochure (Form 81-205-8005), engine page p.8",
+       "url": "https://www.oldcarbrochures.org/United%20States/Dodge/1978_Dodge/1978-Dodge-Challenger-Brochure/slides/1978_Dodge_Challenger-08.html",
+       "says": "Four-cylinder overhead cam"
+      },
+      {
+       "name": "Wikipedia: Mitsubishi Saturn engine (4G32)",
+       "url": "https://en.wikipedia.org/wiki/Mitsubishi_Saturn_engine",
+       "says": "straight-four"
+      },
+      {
+       "name": "Mac's Motor City Garage: Another kind of Dodge Challenger, the Mitsubishi years",
+       "url": "https://macsmotorcitygarage.com/another-kind-of-dodge-challenger-the-mitsubishi-years-1978-1984/",
+       "says": "four-cylinder"
+      }
+     ],
+     "note": ""
+    },
+    "induction": {
+     "value": "Carburetor, single 2-barrel (Mikuni)",
+     "sources": [
+      {
+       "name": "Dodge factory 1978 Challenger brochure (Form 81-205-8005), engine page p.8",
+       "url": "https://www.oldcarbrochures.org/United%20States/Dodge/1978_Dodge/1978-Dodge-Challenger-Brochure/slides/1978_Dodge_Challenger-08.html",
+       "says": "Carburetor: Two-barrel"
+      },
+      {
+       "name": "Dodge factory 1979 Challenger brochure (Form 81-307-9020), engine specifications p.8",
+       "url": "https://www.oldcarbrochures.org/United%20States/Dodge/1979_Dodge/1979_Dodge_Challenger_Brochure/slides/1979_Dodge_Challenger-08.html",
+       "says": "Two-barrel"
+      },
+      {
+       "name": "NHRA engine blueprint CHRY-78 (imports section)",
+       "url": "https://www.nhra.net/tech_specs/engine/blueprints/CHRY-78.rtf",
+       "says": "Ind. 1-2, MK (Mikuni) 28-32 DIDTA"
+      },
+      {
+       "name": "Wikipedia: Mitsubishi Saturn engine (4G32)",
+       "url": "https://en.wikipedia.org/wiki/Mitsubishi_Saturn_engine",
+       "says": "single down draught carburetor (Mikuni-built)"
+      }
+     ],
+     "note": ""
+    },
+    "fuel_type": {
+     "value": "Gasoline (unleaded regular)",
+     "sources": [
+      {
+       "name": "Dodge factory 1979 Challenger brochure (Form 81-307-9020), engine specifications p.8",
+       "url": "https://www.oldcarbrochures.org/United%20States/Dodge/1979_Dodge/1979_Dodge_Challenger_Brochure/slides/1979_Dodge_Challenger-08.html",
+       "says": "Recommended fuel: Unleaded regular"
+      },
+      {
+       "name": "Wikipedia: Mitsubishi Saturn engine (4G32)",
+       "url": "https://en.wikipedia.org/wiki/Mitsubishi_Saturn_engine",
+       "says": "fueltype = Gasoline"
+      },
+      {
+       "name": "NHRA engine blueprint CHRY-78 (imports section)",
+       "url": "https://www.nhra.net/tech_specs/engine/blueprints/CHRY-78.rtf",
+       "says": "gasoline carbureted"
+      }
+     ],
+     "note": ""
+    },
+    "years": {
+     "value": "1978-1979 in the Dodge Challenger (4G32 introduced 1970 in Japan)",
+     "sources": [
+      {
+       "name": "Dodge factory 1978 Challenger brochure (Form 81-205-8005), engine page p.8",
+       "url": "https://www.oldcarbrochures.org/United%20States/Dodge/1978_Dodge/1978-Dodge-Challenger-Brochure/slides/1978_Dodge_Challenger-08.html",
+       "says": "1978: standard 1.6 litre"
+      },
+      {
+       "name": "Dodge factory 1979 Challenger brochure (Form 81-307-9020), engine specifications p.8",
+       "url": "https://www.oldcarbrochures.org/United%20States/Dodge/1979_Dodge/1979_Dodge_Challenger_Brochure/slides/1979_Dodge_Challenger-08.html",
+       "says": "1979: Std 1.6 litre"
+      },
+      {
+       "name": "NHRA Stock Car Classification Guide (1978DOD / 1979DOD sheets)",
+       "url": "nhra_challenger.json / scc_rows.json (scratchpad)",
+       "says": "1978 and 1979 Challenger 98 ci rows; none for 1980"
+      },
+      {
+       "name": "Wikipedia: Dodge Challenger (second generation)",
+       "url": "https://en.wikipedia.org/wiki/Dodge_Challenger",
+       "says": "second-generation Challenger 1.6 L and 2.6 L"
+      }
+     ],
+     "note": "1980 Dodge Imports brochure lists only the 2.6 for Challenger."
+    }
+   },
+   "variants": [
+    {
+     "year": 1978,
+     "hp": 77,
+     "hp_basis": "net (SAE)",
+     "compression_ratio": 8.5,
+     "code": "1.6 Silent Shaft with MCA-Jet (standard Challenger engine)",
+     "induction": "2-bbl",
+     "sources": [
+      {
+       "name": "NHRA Stock Car Classification Guide (1978DOD / 1979DOD sheets)",
+       "url": "nhra_challenger.json / scc_rows.json (scratchpad)",
+       "says": "1978 CHALLENGER 98 ci / 77 hp"
+      },
+      {
+       "name": "Stellantis media: Dodge Challenger: History of the Dodge Pony Car (2008)",
+       "url": "https://media.stellantisnorthamerica.com/newsrelease.do?id=7665",
+       "says": "standard 1.6-liter, 77-horsepower I-4"
+      },
+      {
+       "name": "Wikipedia: Dodge Challenger (second generation)",
+       "url": "https://en.wikipedia.org/wiki/Dodge_Challenger",
+       "says": "1.6 L ... 77 hp with the introduction of MCA-Jet"
+      }
+     ]
+    }
+   ],
+   "unverified": {
+    "valvetrain": "SOHC, 2 main valves/cyl plus MCA-Jet auxiliary jet valve, twin Silent Shaft balance shafts: factory brochures (\"overhead cam\", jet valve, two counterbalancing shafts) and Wikipedia (\"eight-valve SOHC\") only. 2 sources.",
+    "compression_ratio": "DISAGREEMENT: factory 1978 and 1979 Challenger brochures 8.5:1; NHRA CHRY-78 9.00; Wikipedia 9.5:1 (generic 4G32).",
+    "block_material": "Cast iron: Wikipedia only (factory brochure silent).",
+    "head_material": "Aluminum: factory 1978 brochure (\"aluminum cylinder heads, hemispherical combustion chambers\") and Wikipedia. 2 sources.",
+    "rod_length_in": "6.051 in: NHRA CHRY-78 only.",
+    "firing_order": "1-3-4-2: Wikipedia only."
+   },
+   "unverified_variants": [
+    {
+     "year": 1979,
+     "hp": 80,
+     "hp_basis": "net",
+     "code": "1.6 Silent Shaft MCA-Jet",
+     "found": "NHRA SCC 1979 (80 hp) only; factory 1979 brochure prints no hp; Stellantis history and Wikipedia give 77 (the 1978 figure)."
+    }
+   ],
+   "notes": "Bore/stroke given by the maker in mm (76.9 x 86.0); converted to inches above."
+  }
+ ]
+}

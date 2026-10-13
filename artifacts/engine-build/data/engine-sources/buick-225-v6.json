@@ -1,0 +1,392 @@
+{
+ "name": "Buick 225 V6 (Fireball / Wildcat V-6; Olds Econ-O-Way; Jeep Dauntless)",
+ "fields": {
+  "bore_in": {
+   "value": 3.75,
+   "sources": [
+    {
+     "name": "Oldsmobile 1965 Dealer SPECS (GM factory literature, oldcarbrochures.org)",
+     "url": "https://www.oldcarbrochures.org/United%20States/Oldsmobile/1965%20Oldsmobile/1965-Oldsmobile-Dealer-SPECS/index.html",
+     "says": "155-hp Econ-O-Way: 155 at 4400, 225 [lb-ft], 225 [cu in], bore 3.75, stroke 3.40, 9.0, 1 [bbl], Regular"
+    },
+    {
+     "name": "NHRA engine blueprints BUI-64..67 / OLDS-64, OLDS-65",
+     "url": "https://www.nhra.net/tech_specs/engine/blueprints/BUI-64.rtf",
+     "says": "225, bore 3.75, stroke 3.40"
+    },
+    {
+     "name": "Over-Drive Magazine: 1964 Buick Mid-Size Cars Fact Sheet",
+     "url": "https://over-drive-magazine.com/2025/03/28/1964-buick-mid-size-car-fact-sheet/",
+     "says": "Bore and stroke: 3.750 x 3.400 inches"
+    },
+    {
+     "name": "Wikipedia: Buick V6 engine (225)",
+     "url": "https://en.wikipedia.org/wiki/Buick_V6_engine",
+     "says": "The bore was increased to 3.75 in, and stroke increased to 3.4 in"
+    },
+    {
+     "name": "Ate Up With Motor: Buick V6 history",
+     "url": "https://ateupwithmotor.com/model-histories/buick-special-skylark-rover-V8-3800-v6-history/",
+     "says": "Buick engineers increased the V6's bore from 3.75 to 3.80 inches (for 1975)"
+    }
+   ],
+   "note": ""
+  },
+  "stroke_in": {
+   "value": 3.4,
+   "sources": [
+    {
+     "name": "Oldsmobile 1965 Dealer SPECS (GM factory literature)",
+     "url": "https://www.oldcarbrochures.org/United%20States/Oldsmobile/1965%20Oldsmobile/1965-Oldsmobile-Dealer-SPECS/index.html",
+     "says": "bore 3.75, stroke 3.40"
+    },
+    {
+     "name": "NHRA engine blueprints BUI-64..67 / OLDS-64, OLDS-65",
+     "url": "https://www.nhra.net/tech_specs/engine/blueprints/BUI-66.rtf",
+     "says": "stroke 3.40"
+    },
+    {
+     "name": "Over-Drive Magazine: 1966 Buick Mid-Size Cars Fact Sheet",
+     "url": "https://over-drive-magazine.com/2024/01/03/1966-buick-mid-size-cars-fact-sheet/",
+     "says": "3.750 x 3.400 inches"
+    },
+    {
+     "name": "Wikipedia: Buick V6 engine (225)",
+     "url": "https://en.wikipedia.org/wiki/Buick_V6_engine",
+     "says": "stroke increased to 3.4 in"
+    }
+   ],
+   "note": ""
+  },
+  "displacement_ci": {
+   "value": 225,
+   "sources": [
+    {
+     "name": "Oldsmobile 1965 Dealer SPECS (GM factory literature)",
+     "url": "https://www.oldcarbrochures.org/United%20States/Oldsmobile/1965%20Oldsmobile/1965-Oldsmobile-Dealer-SPECS/index.html",
+     "says": "Displacement (cu. in.) 225"
+    },
+    {
+     "name": "NHRA engine blueprints BUI-64..67",
+     "url": "https://www.nhra.net/tech_specs/engine/blueprints/BUI-64.rtf",
+     "says": "displacement 225"
+    },
+    {
+     "name": "Over-Drive Magazine: 1964 Buick Mid-Size Cars Fact Sheet",
+     "url": "https://over-drive-magazine.com/2025/03/28/1964-buick-mid-size-car-fact-sheet/",
+     "says": "Displacement: 225 cubic inches"
+    },
+    {
+     "name": "Wikipedia: Buick V6 engine (225)",
+     "url": "https://en.wikipedia.org/wiki/Buick_V6_engine",
+     "says": "3,692 cc (225 cu in)"
+    },
+    {
+     "name": "Ate Up With Motor: Buick V6 history",
+     "url": "https://ateupwithmotor.com/model-histories/buick-special-skylark-rover-V8-3800-v6-history/",
+     "says": "bringing the V6's displacement to 225 cu. in. (3,692 cc)"
+    }
+   ],
+   "note": ""
+  },
+  "num_cylinders": {
+   "value": 6,
+   "sources": [
+    {
+     "name": "Oldsmobile 1965 Dealer SPECS (GM factory literature)",
+     "url": "https://www.oldcarbrochures.org/United%20States/Oldsmobile/1965%20Oldsmobile/1965-Oldsmobile-Dealer-SPECS/index.html",
+     "says": "155-hp Econ-O-Way V-6"
+    },
+    {
+     "name": "Over-Drive Magazine: 1964 Buick Mid-Size Cars Fact Sheet",
+     "url": "https://over-drive-magazine.com/2025/03/28/1964-buick-mid-size-car-fact-sheet/",
+     "says": "155 HP 225 CID V-6"
+    },
+    {
+     "name": "Wikipedia: Buick V6 engine",
+     "url": "https://en.wikipedia.org/wiki/Buick_V6_engine",
+     "says": "225 ... V6"
+    },
+    {
+     "name": "Ate Up With Motor: Buick V6 history",
+     "url": "https://ateupwithmotor.com/model-histories/buick-special-skylark-rover-V8-3800-v6-history/",
+     "says": "the V6's displacement to 225 cu. in."
+    }
+   ],
+   "note": ""
+  },
+  "configuration": {
+   "value": "90-degree V6, odd-fire (three shared crankpins 120 degrees apart; firing intervals alternate 90/150 degrees)",
+   "sources": [
+    {
+     "name": "Wikipedia: Buick V6 engine",
+     "url": "https://en.wikipedia.org/wiki/Buick_V6_engine",
+     "says": "90 deg bank ... uneven firing pattern due to the crankshaft having only three crank pins set at 120 deg apart"
+    },
+    {
+     "name": "Ate Up With Motor: Buick V6 history",
+     "url": "https://ateupwithmotor.com/model-histories/buick-special-skylark-rover-V8-3800-v6-history/",
+     "says": "90-degree bank angle ... in the production Fireball V6, [firing intervals] alternated between 150 and 90 degrees of crankshaft rotation"
+    },
+    {
+     "name": "Novak: Guide to the Buick 90 Degree V6",
+     "url": "https://www.novak-adapt.com/knowledge/engines/buick-90-v6.html",
+     "says": "odd-fire design ... unevenly spaced (at 90-150-90-etc.) firing impulses"
+    }
+   ],
+   "note": ""
+  },
+  "compression_ratio": {
+   "value": 9.0,
+   "sources": [
+    {
+     "name": "Oldsmobile 1965 Dealer SPECS (GM factory literature); TeamBuick reprint of Buick service-manual specs (same GM source)",
+     "url": "https://www.oldcarbrochures.org/United%20States/Oldsmobile/1965%20Oldsmobile/1965-Oldsmobile-Dealer-SPECS/index.html",
+     "says": "Econ-O-Way V-6 compression ratio 9.0; TeamBuick: 'Compression Ratio 9.0 to 1'"
+    },
+    {
+     "name": "NHRA engine blueprints BUI-64..67 / OLDS-64, OLDS-65",
+     "url": "https://www.nhra.net/tech_specs/engine/blueprints/BUI-67.rtf",
+     "says": "compression 9.0 (155 hp 1964-65, 160 hp 1966-67)"
+    },
+    {
+     "name": "Over-Drive Magazine: 1964 and 1966 Buick Mid-Size Fact Sheets",
+     "url": "https://over-drive-magazine.com/2024/01/03/1966-buick-mid-size-cars-fact-sheet/",
+     "says": "Compression ratio: 9.00:1 (both years)"
+    }
+   ],
+   "note": ""
+  },
+  "firing_order": {
+   "value": "1-6-5-4-3-2",
+   "sources": [
+    {
+     "name": "TeamBuick: General Specifications for the 198 and 225 V-6 ('compiled from original Buick service manuals'); counted as the GM source",
+     "url": "https://www.teambuick.com/reference/225_v6_engine_specs.php",
+     "says": "Firing Order 1-6-5-4-3-2"
+    },
+    {
+     "name": "Ate Up With Motor: Buick V6 history",
+     "url": "https://ateupwithmotor.com/model-histories/buick-special-skylark-rover-V8-3800-v6-history/",
+     "says": "the engine would always fire across banks (firing order was 1-6-5-4-3-2)"
+    },
+    {
+     "name": "Novak: Guide to the Buick 90 Degree V6",
+     "url": "https://www.novak-adapt.com/knowledge/engines/buick-90-v6.html",
+     "says": "All Buick V6's feature a 1-6-5-4-3-2 firing order."
+    },
+    {
+     "name": "Wikipedia: Buick V6 engine",
+     "url": "https://en.wikipedia.org/wiki/Buick_V6_engine",
+     "says": "The firing order is 1-6-5-4-3-2."
+    }
+   ],
+   "note": ""
+  },
+  "valvetrain": {
+   "value": "OHV pushrod, 2 valves per cylinder, hydraulic lifters",
+   "sources": [
+    {
+     "name": "Over-Drive Magazine: 1964 Buick Mid-Size Cars Fact Sheet",
+     "url": "https://over-drive-magazine.com/2025/03/28/1964-buick-mid-size-car-fact-sheet/",
+     "says": "Overhead valves ... Valve lifters: Hydraulic"
+    },
+    {
+     "name": "NHRA engine blueprints BUI-64..67",
+     "url": "https://www.nhra.net/tech_specs/engine/blueprints/BUI-65.rtf",
+     "says": "rocker ratio 1.6, hydraulic lifters, intake valve 1.63, exhaust valve 1.38"
+    },
+    {
+     "name": "Wikipedia: Buick V6 engine (infobox)",
+     "url": "https://en.wikipedia.org/wiki/Buick_V6_engine",
+     "says": "OHV 2 valves x cyl."
+    },
+    {
+     "name": "TeamBuick (Buick service-manual specs; GM)",
+     "url": "https://www.teambuick.com/reference/225_v6_engine_specs.php",
+     "says": "Valve Arrangement: In Head"
+    }
+   ],
+   "note": ""
+  },
+  "block_material": {
+   "value": "Cast iron",
+   "sources": [
+    {
+     "name": "TeamBuick (Buick service-manual specs; GM)",
+     "url": "https://www.teambuick.com/reference/225_v6_engine_specs.php",
+     "says": "Block material: Cast Iron"
+    },
+    {
+     "name": "Over-Drive Magazine: 1964 Buick Mid-Size Cars Fact Sheet",
+     "url": "https://over-drive-magazine.com/2025/03/28/1964-buick-mid-size-car-fact-sheet/",
+     "says": "Cast iron block"
+    },
+    {
+     "name": "Wikipedia: Buick V6 engine",
+     "url": "https://en.wikipedia.org/wiki/Buick_V6_engine",
+     "says": "block: Cast iron"
+    },
+    {
+     "name": "Ate Up With Motor: Buick V6 history",
+     "url": "https://ateupwithmotor.com/model-histories/buick-special-skylark-rover-V8-3800-v6-history/",
+     "says": "the production engine reverted to cast iron"
+    }
+   ],
+   "note": ""
+  },
+  "head_material": {
+   "value": "Cast iron",
+   "sources": [
+    {
+     "name": "TeamBuick (Buick service-manual specs; GM)",
+     "url": "https://www.teambuick.com/reference/225_v6_engine_specs.php",
+     "says": "Head material: Cast Iron"
+    },
+    {
+     "name": "Wikipedia: Buick V6 engine (infobox)",
+     "url": "https://en.wikipedia.org/wiki/Buick_V6_engine",
+     "says": "head: Cast iron"
+    },
+    {
+     "name": "Ate Up With Motor: Buick V6 history",
+     "url": "https://ateupwithmotor.com/model-histories/buick-special-skylark-rover-V8-3800-v6-history/",
+     "says": "The earliest prototypes of the Fireball V6 were aluminum, but the production engine reverted to cast iron"
+    }
+   ],
+   "note": "AUWM's statement covers the engine as a whole, not the head specifically."
+  },
+  "induction": {
+   "value": "Carbureted: Rochester 1-bbl (1964-65), Rochester 2-bbl (1966-67)",
+   "sources": [
+    {
+     "name": "Over-Drive Magazine: 1964 and 1966 Buick Mid-Size Fact Sheets",
+     "url": "https://over-drive-magazine.com/2024/01/03/1966-buick-mid-size-cars-fact-sheet/",
+     "says": "1964: Rochester BC one-barrel; 1966: Rochester 2CG Two-barrel"
+    },
+    {
+     "name": "NHRA engine blueprints BUI-64..67",
+     "url": "https://www.nhra.net/tech_specs/engine/blueprints/BUI-66.rtf",
+     "says": "induction 1-1 Rochester (1964-65), 1-2 Rochester (1966-67)"
+    },
+    {
+     "name": "Wikipedia: Buick V6 engine (225)",
+     "url": "https://en.wikipedia.org/wiki/Buick_V6_engine",
+     "says": "1964-1965 single barrel Rochester MonoJet ... In 1966-1967, the 1-barrel was replaced with a 2-barrel Rochester 2GV"
+    },
+    {
+     "name": "Oldsmobile 1965 Dealer SPECS (GM factory literature)",
+     "url": "https://www.oldcarbrochures.org/United%20States/Oldsmobile/1965%20Oldsmobile/1965-Oldsmobile-Dealer-SPECS/index.html",
+     "says": "Carburetor (no. [of barrels]) 1"
+    }
+   ],
+   "note": "Carburetor model names differ: Over-Drive '2CG' vs Wikipedia '2GV'; Over-Drive 1964 'BC' vs Wikipedia 'MonoJet'."
+  },
+  "years": {
+   "value": "1964-1967 (Buick Special/Skylark); 1964-1965 Oldsmobile F-85/Cutlass; Kaiser Jeep Dauntless 225 from 1965/66",
+   "sources": [
+    {
+     "name": "Wikipedia: Buick V6 engine (225 / Dauntless)",
+     "url": "https://en.wikipedia.org/wiki/Buick_V6_engine",
+     "says": "used in Buick's Special and Skylark from 1964 to 1967 and Oldsmobile's F-85/Cutlass for 1964 and 1965 ... In 1965, Kaiser-Jeep began using the Buick 225"
+    },
+    {
+     "name": "NHRA engine blueprints BUI-64, BUI-65, BUI-66, BUI-67, OLDS-64, OLDS-65",
+     "url": "https://www.nhra.net/tech_specs/engine/blueprints/BUI-67.rtf",
+     "says": "225 V6 listed for Buick 1964-1967 and Oldsmobile 1964-1965"
+    },
+    {
+     "name": "Over-Drive Magazine: 1964 and 1967 Buick Mid-Size Fact Sheets",
+     "url": "https://over-drive-magazine.com/2024/01/10/1967-buick-mid-size-cars-fact-sheet/",
+     "says": "1964: 155 HP 225 CID V-6; 1967: 160 HP 225 CID V-6, 2-door coupe only"
+    },
+    {
+     "name": "Buick 1964-1967 brochures (GM factory literature, oldcarbrochures.org)",
+     "url": "https://oldcarbrochures.org/United%20States/Buick/1967_Buick/1967%20Buick%20Full%20Line/index.html",
+     "says": "1964: '155 Horsepower Fireball V6'; 1967: 'Skylark's 225 cubic inch V-6'"
+    }
+   ],
+   "note": "Ate Up With Motor says the V6 grew to 225 'for 1965'; the 1964 225 is documented by NHRA, Over-Drive, the Buick 1964 brochure and Wikipedia. AUWM says the first factory V6 CJ-5s were 1966 models; Wikipedia says Kaiser-Jeep began using it in 1965."
+  }
+ },
+ "variants": [
+  {
+   "year": "1964-1965",
+   "hp": 155,
+   "hp_basis": "gross",
+   "compression_ratio": 9.0,
+   "code": "Fireball V6 (Buick); Econ-O-Way V-6 (Olds F-85); RPO KH 1964 / LH 1965 per Wikipedia",
+   "induction": "1-bbl",
+   "sources": [
+    {
+     "name": "Buick 1964/1965 prestige brochures + Oldsmobile 1965 Dealer SPECS (GM factory literature)",
+     "url": "https://www.oldcarbrochures.org/United%20States/Oldsmobile/1965%20Oldsmobile/1965-Oldsmobile-Dealer-SPECS/index.html",
+     "says": "Buick: '155 Horsepower Fireball V6'; Olds: '155-hp Econ-O-Way 155 at 4400 ... 9.0 ... 1'"
+    },
+    {
+     "name": "Over-Drive Magazine: 1964 and 1965 Buick Mid-Size Fact Sheets",
+     "url": "https://over-drive-magazine.com/2025/03/28/1964-buick-mid-size-car-fact-sheet/",
+     "says": "155 HP 225 CID V-6, 155 @ 4400"
+    },
+    {
+     "name": "NHRA engine blueprints BUI-64, BUI-65, OLDS-64, OLDS-65",
+     "url": "https://www.nhra.net/tech_specs/engine/blueprints/OLDS-64.rtf",
+     "says": "225, 155 hp, 9.0, 1-1 Rochester"
+    },
+    {
+     "name": "Wikipedia: Buick V6 engine / Buick Skylark",
+     "url": "https://en.wikipedia.org/wiki/Buick_V6_engine",
+     "says": "1964-1965 models featured a single barrel Rochester MonoJet, producing 155 hp"
+    },
+    {
+     "name": "Ate Up With Motor: Buick V6 history",
+     "url": "https://ateupwithmotor.com/model-histories/buick-special-skylark-rover-V8-3800-v6-history/",
+     "says": "In this form, the V6 had 155 gross hp"
+    }
+   ],
+   "note": "Same rating in the 1964-65 Olds F-85/Cutlass. RPO codes come from Wikipedia only."
+  },
+  {
+   "year": "1966-1967",
+   "hp": 160,
+   "hp_basis": "gross",
+   "compression_ratio": 9.0,
+   "code": "Wildcat V-6 (1966 Buick name); RPO MH 1966 / NH 1967 per Wikipedia",
+   "induction": "2-bbl",
+   "sources": [
+    {
+     "name": "Buick 1966 prestige brochure (GM factory literature)",
+     "url": "https://oldcarbrochures.org/United%20States/Buick/1966_Buick/1966_Buick_Prestige_Brochure/index.html",
+     "says": "Skylark's 160-horsepower Wildcat V-6 engine"
+    },
+    {
+     "name": "Over-Drive Magazine: 1966 Buick Mid-Size Cars Fact Sheet",
+     "url": "https://over-drive-magazine.com/2024/01/03/1966-buick-mid-size-cars-fact-sheet/",
+     "says": "160 @ 4200 RPM; Rochester 2CG Two-barrel; 9.00:1"
+    },
+    {
+     "name": "NHRA engine blueprints BUI-66, BUI-67",
+     "url": "https://www.nhra.net/tech_specs/engine/blueprints/BUI-66.rtf",
+     "says": "225, 160 hp, 9.0, 1-2 Rochester"
+    },
+    {
+     "name": "Ate Up With Motor: Buick V6 history",
+     "url": "https://ateupwithmotor.com/model-histories/buick-special-skylark-rover-V8-3800-v6-history/",
+     "says": "raised in 1966 to 160 hp (119 kW)"
+    },
+    {
+     "name": "Wikipedia: Buick V6 engine",
+     "url": "https://en.wikipedia.org/wiki/Buick_V6_engine",
+     "says": "In 1966-1967 ... 2-barrel Rochester 2GV, giving the engine a 5-horsepower boost to 160 hp"
+    }
+   ],
+   "note": "Peak rpm differs: Over-Drive 1966 '160 @ 4200'; TeamBuick's service-manual compilation '160 BHP @ 4400'. 1967: Skylark thin-pillar coupe only (Over-Drive: 894 built)."
+  }
+ ],
+ "unverified": {
+  "displacement_l": "3.7 L: Wikipedia (3,692 cc) and Ate Up With Motor (3,692 cc). Only 2 give it in metric; it is a straight conversion of the verified 225 ci (3.75 x 3.40 in x 6 = 3,692 cc).",
+  "rod_length_in": "5.96 in: NHRA BUI-64..67 (5.96) / OLDS-64, OLDS-65 (5.965) and TeamBuick's Buick service-manual compilation ('Connecting Rod Length 5.960'). Only 2 independent (NHRA + GM).",
+  "fuel_type": "Gasoline, regular grade: Oldsmobile 1965 Dealer SPECS ('Fuel recommended: Regular') and Wikipedia infobox (gasoline). Only 2."
+ },
+ "unverified_variants": []
+}

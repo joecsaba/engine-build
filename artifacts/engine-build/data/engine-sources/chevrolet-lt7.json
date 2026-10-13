@@ -1,0 +1,456 @@
+{
+ "name": "Chevrolet LT7 5.5 L twin-turbo flat-plane-crank DOHC V8 (Gemini small-block)",
+ "fields": {
+  "bore_in": {
+   "value": 4.1043,
+   "sources": [
+    {
+     "name": "GM News - 2025 Corvette ZR1 press release + spec sheet (2024-07-25)",
+     "url": "https://news.gm.com/home.detail.html/Pages/news/us/en/2024/jul/0725-zr1.html",
+     "says": "Bore & stroke (in. / mm): 4.104 x 3.150 / 104.25 x 80"
+    },
+    {
+     "name": "MotorTrend - 2025 Corvette ZR1 LT7 V8 engine deep dive (Eric Tingwall)",
+     "url": "https://www.motortrend.com/news/2025-chevrolet-corvette-zr1-lt7-v8-engine-deep-dive/",
+     "says": "the same 104.25-millimeter bore and 80-millimeter stroke"
+    },
+    {
+     "name": "Race Engine Technology - Chevrolet LT7 V8 turbo",
+     "url": "https://www.raceenginetechnology.com/News/chevrolet-lt7-v8-turbo",
+     "says": "the bore is 104.25 mm (4.104 in)"
+    },
+    {
+     "name": "Hagerty - Epic Engine: How the ZR1's LT7 Makes Its 1064 HP (Don Sherman, 2024-10-08)",
+     "url": "https://www.hagerty.com/media/?p=436264",
+     "says": "largest possible bore - 4.104-in"
+    },
+    {
+     "name": "Street Machine (AU) - Inside the C8 ZR1 Corvette's 1064hp twin-turbo LT7 V8 (Iain Kelly)",
+     "url": "https://www.streetmachine.com.au/features/c8-zr1-corvette-1064hp-quad-cam-twin-turbo-lt7-v8",
+     "says": "The LT6 and LT7 share the same 104.25mm bore and short 80mm stroke"
+    },
+    {
+     "name": "Wikipedia - Chevrolet Gemini small-block engine (+ Chevrolet Corvette (C8); Wikipedia counted once)",
+     "url": "https://en.wikipedia.org/wiki/Chevrolet_Gemini_small-block_engine",
+     "says": "Cylinder bore: 104.25 mm"
+    }
+   ],
+   "note": "Maker figure 104.25 mm (= 4.1043 in). Hagerty prints 104.24 mm - typo."
+  },
+  "stroke_in": {
+   "value": 3.1496,
+   "sources": [
+    {
+     "name": "GM News - 2025 Corvette ZR1 press release + spec sheet (2024-07-25)",
+     "url": "https://news.gm.com/home.detail.html/Pages/news/us/en/2024/jul/0725-zr1.html",
+     "says": "4.104 x 3.150 / 104.25 x 80"
+    },
+    {
+     "name": "MotorTrend - 2025 Corvette ZR1 LT7 V8 engine deep dive (Eric Tingwall)",
+     "url": "https://www.motortrend.com/news/2025-chevrolet-corvette-zr1-lt7-v8-engine-deep-dive/",
+     "says": "80-millimeter stroke"
+    },
+    {
+     "name": "Hagerty - Epic Engine: How the ZR1's LT7 Makes Its 1064 HP (Don Sherman, 2024-10-08)",
+     "url": "https://www.hagerty.com/media/?p=436264",
+     "says": "The 3.150-in (80 mm) stroke"
+    },
+    {
+     "name": "Race Engine Technology - Chevrolet LT7 V8 turbo",
+     "url": "https://www.raceenginetechnology.com/News/chevrolet-lt7-v8-turbo",
+     "says": "the stroke 80 mm (3.100 in) [sic]"
+    },
+    {
+     "name": "Wikipedia - Chevrolet Gemini small-block engine (+ Chevrolet Corvette (C8); Wikipedia counted once)",
+     "url": "https://en.wikipedia.org/wiki/Chevrolet_Gemini_small-block_engine",
+     "says": "Piston stroke: 80 mm"
+    }
+   ],
+   "note": "Maker figure 80 mm (= 3.1496 in). RET's inch conversion 3.100 is a typo."
+  },
+  "displacement_ci": {
+   "value": 333,
+   "sources": [
+    {
+     "name": "Hagerty - Epic Engine: How the ZR1's LT7 Makes Its 1064 HP (Don Sherman, 2024-10-08)",
+     "url": "https://www.hagerty.com/media/?p=436264",
+     "says": "5.5 liters (333 cubic inches)"
+    },
+    {
+     "name": "Race Engine Technology - Chevrolet LT7 V8 turbo",
+     "url": "https://www.raceenginetechnology.com/News/chevrolet-lt7-v8-turbo",
+     "says": "for 5463 cc"
+    },
+    {
+     "name": "Wikipedia - Chevrolet Gemini small-block engine (+ Chevrolet Corvette (C8); Wikipedia counted once)",
+     "url": "https://en.wikipedia.org/wiki/Chevrolet_Gemini_small-block_engine",
+     "says": "5,463 cc (333.4 cu in)"
+    }
+   ],
+   "note": "5,463 cc = 333.4 ci; the brief's 336 is nominal."
+  },
+  "displacement_l": {
+   "value": 5.5,
+   "sources": [
+    {
+     "name": "GM News - 2025 Corvette ZR1 press release + spec sheet (2024-07-25)",
+     "url": "https://news.gm.com/home.detail.html/Pages/news/us/en/2024/jul/0725-zr1.html",
+     "says": "LT7 Twin-Turbocharged 5.5L DOHC VVT DI"
+    },
+    {
+     "name": "Car and Driver - 2025 Chevy Corvette ZR1 revealed (E. Stafford, 2024-07-25)",
+     "url": "https://www.caranddriver.com/news/a61692733/2025-chevrolet-corvette-zr1-revealed/",
+     "says": "1064-hp twin-turbo 5.5-liter V-8"
+    },
+    {
+     "name": "MotorTrend - 2025 Corvette ZR1 LT7 V8 engine deep dive (Eric Tingwall)",
+     "url": "https://www.motortrend.com/news/2025-chevrolet-corvette-zr1-lt7-v8-engine-deep-dive/",
+     "says": "5.5 liters of displacement"
+    },
+    {
+     "name": "EPA fueleconomy.gov vehicle data",
+     "url": "https://www.fueleconomy.gov/feg/download.shtml",
+     "says": "2025-2026 Corvette ZR1: 5.5 L V8 turbo SIDI"
+    }
+   ],
+   "note": ""
+  },
+  "num_cylinders": {
+   "value": 8,
+   "sources": [
+    {
+     "name": "GM News - 2025 Corvette ZR1 press release + spec sheet (2024-07-25)",
+     "url": "https://news.gm.com/home.detail.html/Pages/news/us/en/2024/jul/0725-zr1.html",
+     "says": "5.5L, twin-turbocharged DOHC flat-plane crank V8"
+    },
+    {
+     "name": "Car and Driver - 2025 Chevy Corvette ZR1 revealed (E. Stafford, 2024-07-25)",
+     "url": "https://www.caranddriver.com/news/a61692733/2025-chevrolet-corvette-zr1-revealed/",
+     "says": "twin-turbo 5.5-liter V-8"
+    },
+    {
+     "name": "EPA fueleconomy.gov vehicle data",
+     "url": "https://www.fueleconomy.gov/feg/download.shtml",
+     "says": "5.5 L V8 turbo"
+    },
+    {
+     "name": "Race Engine Technology - Chevrolet LT7 V8 turbo",
+     "url": "https://www.raceenginetechnology.com/News/chevrolet-lt7-v8-turbo",
+     "says": "These 90 degree bank angle engines"
+    }
+   ],
+   "note": ""
+  },
+  "configuration": {
+   "value": "90-degree V8, flat-plane crankshaft",
+   "sources": [
+    {
+     "name": "GM News - 2025 Corvette ZR1 press release + spec sheet (2024-07-25)",
+     "url": "https://news.gm.com/home.detail.html/Pages/news/us/en/2024/jul/0725-zr1.html",
+     "says": "DOHC flat-plane crank V8"
+    },
+    {
+     "name": "Race Engine Technology - Chevrolet LT7 V8 turbo",
+     "url": "https://www.raceenginetechnology.com/News/chevrolet-lt7-v8-turbo",
+     "says": "90 degree bank angle ... flat plane crankshaft"
+    },
+    {
+     "name": "Hagerty - Epic Engine: How the ZR1's LT7 Makes Its 1064 HP (Don Sherman, 2024-10-08)",
+     "url": "https://www.hagerty.com/media/?p=436264",
+     "says": "The flat-plane crankshaft alternates combustion events bank to bank"
+    },
+    {
+     "name": "MotorTrend - 2025 Corvette ZR1 LT7 V8 engine deep dive (Eric Tingwall)",
+     "url": "https://www.motortrend.com/news/2025-chevrolet-corvette-zr1-lt7-v8-engine-deep-dive/",
+     "says": "flat-plane crankshaft"
+    }
+   ],
+   "note": ""
+  },
+  "firing_order": {
+   "value": "1-4-3-8-7-6-5-2",
+   "sources": [
+    {
+     "name": "GM News - 2025 Corvette ZR1 press release + spec sheet (2024-07-25)",
+     "url": "https://news.gm.com/home.detail.html/Pages/news/us/en/2024/jul/0725-zr1.html",
+     "says": "Firing Order: 1-4-3-8-7-6-5-2"
+    },
+    {
+     "name": "Race Engine Technology - Chevrolet LT7 V8 turbo",
+     "url": "https://www.raceenginetechnology.com/News/chevrolet-lt7-v8-turbo",
+     "says": "The firing order is 1-4-3-8-7-6-5-2"
+    },
+    {
+     "name": "Street Machine (AU) - Inside the C8 ZR1 Corvette's 1064hp twin-turbo LT7 V8 (Iain Kelly)",
+     "url": "https://www.streetmachine.com.au/features/c8-zr1-corvette-1064hp-quad-cam-twin-turbo-lt7-v8",
+     "says": "Firing order: 1-4-3-8-7-6-5-2"
+    }
+   ],
+   "note": ""
+  },
+  "valvetrain": {
+   "value": "DOHC, 4 valves/cyl (32-valve), mechanical finger followers",
+   "sources": [
+    {
+     "name": "GM News - 2025 Corvette ZR1 press release + spec sheet (2024-07-25)",
+     "url": "https://news.gm.com/home.detail.html/Pages/news/us/en/2024/jul/0725-zr1.html",
+     "says": "Dual overhead camshafts (four valves per cylinder) with mechanical finger-follower valvetrain"
+    },
+    {
+     "name": "Race Engine Technology - Chevrolet LT7 V8 turbo",
+     "url": "https://www.raceenginetechnology.com/News/chevrolet-lt7-v8-turbo",
+     "says": "twin overhead camshafts operating four valves per cylinder"
+    },
+    {
+     "name": "Hagerty - Epic Engine: How the ZR1's LT7 Makes Its 1064 HP (Don Sherman, 2024-10-08)",
+     "url": "https://www.hagerty.com/media/?p=436264",
+     "says": "32-Valve Dual-Overhead-Cam Heads"
+    },
+    {
+     "name": "MotorTrend - 2025 Corvette ZR1 LT7 V8 engine deep dive (Eric Tingwall)",
+     "url": "https://www.motortrend.com/news/2025-chevrolet-corvette-zr1-lt7-v8-engine-deep-dive/",
+     "says": "dual-overhead-camshaft valvetrain with rigid mechanical finger followers"
+    }
+   ],
+   "note": ""
+  },
+  "block_material": {
+   "value": "aluminum (A319, cast-in iron liners)",
+   "sources": [
+    {
+     "name": "GM News - 2025 Corvette ZR1 press release + spec sheet (2024-07-25)",
+     "url": "https://news.gm.com/home.detail.html/Pages/news/us/en/2024/jul/0725-zr1.html",
+     "says": "Block Material: A319 cast aluminum with cast-in iron cylinder liners"
+    },
+    {
+     "name": "Hagerty - Epic Engine: How the ZR1's LT7 Makes Its 1064 HP (Don Sherman, 2024-10-08)",
+     "url": "https://www.hagerty.com/media/?p=436264",
+     "says": "the LT7's cylinder block is a two-piece A319-aluminum casting"
+    },
+    {
+     "name": "Race Engine Technology - Chevrolet LT7 V8 turbo",
+     "url": "https://www.raceenginetechnology.com/News/chevrolet-lt7-v8-turbo",
+     "says": "The sand cast block is aluminium"
+    },
+    {
+     "name": "Street Machine (AU) - Inside the C8 ZR1 Corvette's 1064hp twin-turbo LT7 V8 (Iain Kelly)",
+     "url": "https://www.streetmachine.com.au/features/c8-zr1-corvette-1064hp-quad-cam-twin-turbo-lt7-v8",
+     "says": "Block: Alloy"
+    }
+   ],
+   "note": ""
+  },
+  "head_material": {
+   "value": "aluminum (A356-T6)",
+   "sources": [
+    {
+     "name": "GM News - 2025 Corvette ZR1 press release + spec sheet (2024-07-25)",
+     "url": "https://news.gm.com/home.detail.html/Pages/news/us/en/2024/jul/0725-zr1.html",
+     "says": "Cylinder Head Material: A356 T6 cast aluminum"
+    },
+    {
+     "name": "Race Engine Technology - Chevrolet LT7 V8 turbo",
+     "url": "https://www.raceenginetechnology.com/News/chevrolet-lt7-v8-turbo",
+     "says": "aluminium as are the CNC-machined cylinder heads"
+    },
+    {
+     "name": "Street Machine (AU) - Inside the C8 ZR1 Corvette's 1064hp twin-turbo LT7 V8 (Iain Kelly)",
+     "url": "https://www.streetmachine.com.au/features/c8-zr1-corvette-1064hp-quad-cam-twin-turbo-lt7-v8",
+     "says": "Heads: DOHC alloy"
+    }
+   ],
+   "note": ""
+  },
+  "compression_ratio": {
+   "value": 9.8,
+   "sources": [
+    {
+     "name": "GM News - 2025 Corvette ZR1 press release + spec sheet (2024-07-25)",
+     "url": "https://news.gm.com/home.detail.html/Pages/news/us/en/2024/jul/0725-zr1.html",
+     "says": "Compression Ratio: 9.8:1"
+    },
+    {
+     "name": "Car and Driver - 2025 Chevy Corvette ZR1 revealed (E. Stafford, 2024-07-25)",
+     "url": "https://www.caranddriver.com/news/a61692733/2025-chevrolet-corvette-zr1-revealed/",
+     "says": "lower compression ratio of 9.8:1 (versus the LT6's 12.5:1)"
+    },
+    {
+     "name": "MotorTrend - 2025 Corvette ZR1 LT7 V8 engine deep dive (Eric Tingwall)",
+     "url": "https://www.motortrend.com/news/2025-chevrolet-corvette-zr1-lt7-v8-engine-deep-dive/",
+     "says": "drops the compression ratio from 12.5:1 to 9.8:1"
+    },
+    {
+     "name": "Hagerty - Epic Engine: How the ZR1's LT7 Makes Its 1064 HP (Don Sherman, 2024-10-08)",
+     "url": "https://www.hagerty.com/media/?p=436264",
+     "says": "9.8:1 compression ratio"
+    },
+    {
+     "name": "Race Engine Technology - Chevrolet LT7 V8 turbo",
+     "url": "https://www.raceenginetechnology.com/News/chevrolet-lt7-v8-turbo",
+     "says": "compression ratio of 9.8:1"
+    }
+   ],
+   "note": ""
+  },
+  "induction": {
+   "value": "twin turbochargers (water-to-air charge coolers); direct + port fuel injection (16 injectors); dry sump",
+   "sources": [
+    {
+     "name": "GM News - 2025 Corvette ZR1 press release + spec sheet (2024-07-25)",
+     "url": "https://news.gm.com/home.detail.html/Pages/news/us/en/2024/jul/0725-zr1.html",
+     "says": "Fuel Delivery: PDI (DI ... & Port Fuel Injection); Charging: Twin 76 mono-scroll ... turbos; Seven-stage dry sump"
+    },
+    {
+     "name": "Car and Driver - 2025 Chevy Corvette ZR1 revealed (E. Stafford, 2024-07-25)",
+     "url": "https://www.caranddriver.com/news/a61692733/2025-chevrolet-corvette-zr1-revealed/",
+     "says": "both port and direct fuel injection"
+    },
+    {
+     "name": "MotorTrend - 2025 Corvette ZR1 LT7 V8 engine deep dive (Eric Tingwall)",
+     "url": "https://www.motortrend.com/news/2025-chevrolet-corvette-zr1-lt7-v8-engine-deep-dive/",
+     "says": "the LT7 supplements the LT6's direct injection with a port-injection system ... all 16 injectors"
+    },
+    {
+     "name": "Race Engine Technology - Chevrolet LT7 V8 turbo",
+     "url": "https://www.raceenginetechnology.com/News/chevrolet-lt7-v8-turbo",
+     "says": "The LT7 employs a combination of direct and port injection"
+    },
+    {
+     "name": "Street Machine (AU) - Inside the C8 ZR1 Corvette's 1064hp twin-turbo LT7 V8 (Iain Kelly)",
+     "url": "https://www.streetmachine.com.au/features/c8-zr1-corvette-1064hp-quad-cam-twin-turbo-lt7-v8",
+     "says": "EFI: PDI (port and direct injection); Turbos: BorgWarner 76mm"
+    },
+    {
+     "name": "EPA fueleconomy.gov vehicle data",
+     "url": "https://www.fueleconomy.gov/feg/download.shtml",
+     "says": "5.5 L V8 turbo SIDI"
+    }
+   ],
+   "note": ""
+  },
+  "fuel_type": {
+   "value": "premium unleaded gasoline",
+   "sources": [
+    {
+     "name": "MotorTrend - 2025 Corvette ZR1 LT7 V8 engine deep dive (Eric Tingwall)",
+     "url": "https://www.motortrend.com/news/2025-chevrolet-corvette-zr1-lt7-v8-engine-deep-dive/",
+     "says": "feed the machine premium unleaded at a rate of two gallons per minute"
+    },
+    {
+     "name": "Hagerty - Epic Engine: How the ZR1's LT7 Makes Its 1064 HP (Don Sherman, 2024-10-08)",
+     "url": "https://www.hagerty.com/media/?p=436264",
+     "says": "two gallons of premium-unleaded fuel per minute"
+    },
+    {
+     "name": "Wikipedia - Chevrolet Gemini small-block engine (+ Chevrolet Corvette (C8); Wikipedia counted once)",
+     "url": "https://en.wikipedia.org/wiki/Chevrolet_Gemini_small-block_engine",
+     "says": "Fuel type: Gasoline"
+    }
+   ],
+   "note": "Wikipedia confirms gasoline only; 'premium' from MotorTrend + Hagerty."
+  },
+  "years": {
+   "value": "2025-2026 model years (Corvette ZR1 2025-; ZR1X 2026-)",
+   "sources": [
+    {
+     "name": "GM News - 2025 Corvette ZR1 press release + spec sheet (2024-07-25)",
+     "url": "https://news.gm.com/home.detail.html/Pages/news/us/en/2024/jul/0725-zr1.html",
+     "says": "2025 Chevrolet Corvette ZR1 ... LT7"
+    },
+    {
+     "name": "Car and Driver - 2025 Chevy Corvette ZR1 revealed (E. Stafford, 2024-07-25)",
+     "url": "https://www.caranddriver.com/news/a61692733/2025-chevrolet-corvette-zr1-revealed/",
+     "says": "The 2025 Chevy Corvette ZR1 has a 1064-hp twin-turbo 5.5-liter V-8"
+    },
+    {
+     "name": "Wikipedia - Chevrolet Gemini small-block engine (+ Chevrolet Corvette (C8); Wikipedia counted once)",
+     "url": "https://en.wikipedia.org/wiki/Chevrolet_Gemini_small-block_engine",
+     "says": "2025-present Chevrolet Corvette ZR1"
+    },
+    {
+     "name": "EPA fueleconomy.gov vehicle data",
+     "url": "https://www.fueleconomy.gov/feg/download.shtml",
+     "says": "Corvette ZR1 5.5 L V8 turbo 2025, 2026; ZR1X 2026"
+    }
+   ],
+   "note": ""
+  }
+ },
+ "variants": [
+  {
+   "year": "2025-2026",
+   "hp": 1064,
+   "hp_basis": "SAE net (per SAE guidelines) @ 7,000 rpm",
+   "compression_ratio": 9.8,
+   "code": "LT7 (Corvette ZR1)",
+   "induction": "twin turbo, DI+PFI",
+   "sources": [
+    {
+     "name": "GM News - 2025 Corvette ZR1 press release + spec sheet (2024-07-25)",
+     "url": "https://news.gm.com/home.detail.html/Pages/news/us/en/2024/jul/0725-zr1.html",
+     "says": "The LT7 engine produces 1,064 horsepower at 7,000 rpm and 828 lb-ft of torque at 6,000 rpm, per SAE guidelines"
+    },
+    {
+     "name": "Car and Driver - 2025 Chevy Corvette ZR1 revealed (E. Stafford, 2024-07-25)",
+     "url": "https://www.caranddriver.com/news/a61692733/2025-chevrolet-corvette-zr1-revealed/",
+     "says": "1064-hp twin-turbo 5.5-liter V-8"
+    },
+    {
+     "name": "MotorTrend - 2025 Corvette ZR1 LT7 V8 engine deep dive (Eric Tingwall)",
+     "url": "https://www.motortrend.com/news/2025-chevrolet-corvette-zr1-lt7-v8-engine-deep-dive/",
+     "says": "1,064 horsepower at 7,000 rpm"
+    },
+    {
+     "name": "Hagerty - Epic Engine: How the ZR1's LT7 Makes Its 1064 HP (Don Sherman, 2024-10-08)",
+     "url": "https://www.hagerty.com/media/?p=436264",
+     "says": "How the ZR1's LT7 Makes Its Magnificent 1064 HP"
+    },
+    {
+     "name": "Wikipedia - Chevrolet Gemini small-block engine (+ Chevrolet Corvette (C8); Wikipedia counted once)",
+     "url": "https://en.wikipedia.org/wiki/Chevrolet_Gemini_small-block_engine",
+     "says": "1,064 hp (793 kW) at 7,000 RPM"
+    },
+    {
+     "name": "Kelley Blue Book - 2026 Chevrolet Corvette review/specs",
+     "url": "https://www.kbb.com/chevrolet/corvette/2026/",
+     "says": "Horsepower 490 - 1,064 hp; V8, Twin Turbo, 5.5 Liter"
+    }
+   ]
+  },
+  {
+   "year": 2026,
+   "hp": 1064,
+   "hp_basis": "SAE net, engine only (1,250 hp combined with front e-motor)",
+   "compression_ratio": 9.8,
+   "code": "LT7 (Corvette ZR1X hybrid AWD)",
+   "induction": "twin turbo, DI+PFI",
+   "sources": [
+    {
+     "name": "GM News - 5 jaw-dropping facts about the 2026 Corvette ZR1X (2025-07-03)",
+     "url": "https://news.gm.com/home.detail.html/Pages/topic/us/en/2025/jul/0703-5-jaw-dropping-facts-2026-Corvette-ZR1X.html",
+     "says": "takes the 1,064-horsepower V8 engine from the ZR1 and pairs it with an electrified front-axle motor ... 1,250 combined horsepower"
+    },
+    {
+     "name": "Car and Driver - 2026 Chevy Corvette ZR1X revealed (J. Fitzgerald, 2025-06-17)",
+     "url": "https://www.caranddriver.com/news/a65079561/2026-chevrolet-corvette-zr1x-revealed/",
+     "says": "pairs the regular ZR1's 1064-hp twin-turbo LT7 V-8 with an improved version of the E-Ray's hybrid system, making 1250 combined horsepower"
+    },
+    {
+     "name": "Wikipedia - Chevrolet Corvette (C8)",
+     "url": "https://en.wikipedia.org/wiki/Chevrolet_Corvette_(C8)",
+     "says": "1,064 hp (ZR1); 1,250 hp (ZR1X)"
+    },
+    {
+     "name": "EPA fueleconomy.gov vehicle data",
+     "url": "https://www.fueleconomy.gov/feg/download.shtml",
+     "says": "2026: 5.5 L V8 turbo SIDI Hybrid 'Corvette ZR1X'"
+    }
+   ],
+   "note": "Engine rating unchanged at 1,064 hp; 1,250 is combined system output (front motor 186 hp per GM). Wikipedia C8 article is the single Wikipedia source for this row."
+  }
+ ],
+ "unverified": {
+  "rod_length_in": "Not published; sources only say LT7 forged titanium rods are shorter than the LT6's."
+ },
+ "unverified_variants": []
+}

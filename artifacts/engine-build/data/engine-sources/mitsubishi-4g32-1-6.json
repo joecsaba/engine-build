@@ -1,0 +1,263 @@
+{
+ "name": "Mitsubishi 4G32 Saturn 1.6L I4 (Silent Shaft, MCA-Jet)",
+ "fields": {
+  "bore_in": {
+   "value": 3.03,
+   "sources": [
+    {
+     "name": "Dodge factory 1979 Challenger brochure (Form 81-307-9020), engine specifications p.8",
+     "url": "https://www.oldcarbrochures.org/United%20States/Dodge/1979_Dodge/1979_Dodge_Challenger_Brochure/slides/1979_Dodge_Challenger-08.html",
+     "says": "Bore & Stroke: 3.03\" x 3.39\" (1.6 litre)"
+    },
+    {
+     "name": "NHRA engine blueprint CHRY-78 (imports section)",
+     "url": "https://www.nhra.net/tech_specs/engine/blueprints/CHRY-78.rtf",
+     "says": "98 ci: bore 3.030, stroke 3.390"
+    },
+    {
+     "name": "Wikipedia: Mitsubishi Saturn engine (4G32)",
+     "url": "https://en.wikipedia.org/wiki/Mitsubishi_Saturn_engine",
+     "says": "77 mm x 86 mm (3.03 in x 3.39 in)"
+    }
+   ],
+   "note": "Maker figure 76.9 mm (= 3.0276 in); Wikipedia rounds to 77 mm."
+  },
+  "stroke_in": {
+   "value": 3.39,
+   "sources": [
+    {
+     "name": "Dodge factory 1979 Challenger brochure (Form 81-307-9020), engine specifications p.8",
+     "url": "https://www.oldcarbrochures.org/United%20States/Dodge/1979_Dodge/1979_Dodge_Challenger_Brochure/slides/1979_Dodge_Challenger-08.html",
+     "says": "3.39\""
+    },
+    {
+     "name": "NHRA engine blueprint CHRY-78 (imports section)",
+     "url": "https://www.nhra.net/tech_specs/engine/blueprints/CHRY-78.rtf",
+     "says": "stroke 3.390"
+    },
+    {
+     "name": "Wikipedia: Mitsubishi Saturn engine (4G32)",
+     "url": "https://en.wikipedia.org/wiki/Mitsubishi_Saturn_engine",
+     "says": "86 mm (3.39 in)"
+    }
+   ],
+   "note": "86.0 mm = 3.3858 in. The 1978 Challenger brochure misprints 3.09."
+  },
+  "displacement_ci": {
+   "value": 98,
+   "sources": [
+    {
+     "name": "NHRA engine blueprint CHRY-78 (imports section)",
+     "url": "https://www.nhra.net/tech_specs/engine/blueprints/CHRY-78.rtf",
+     "says": "98 ci, 4 cyl"
+    },
+    {
+     "name": "NHRA Stock Car Classification Guide (1978DOD / 1979DOD sheets)",
+     "url": "nhra_challenger.json / scc_rows.json (scratchpad)",
+     "says": "1978 Challenger 98 ci / 77 hp (C-098-01)"
+    },
+    {
+     "name": "Wikipedia: Mitsubishi Saturn engine (4G32)",
+     "url": "https://en.wikipedia.org/wiki/Mitsubishi_Saturn_engine",
+     "says": "1,597 cc (= 97.5 ci)"
+    },
+    {
+     "name": "Dodge factory 1979 Challenger brochure (Form 81-307-9020), engine specifications p.8",
+     "url": "https://www.oldcarbrochures.org/United%20States/Dodge/1979_Dodge/1979_Dodge_Challenger_Brochure/slides/1979_Dodge_Challenger-08.html",
+     "says": "1.6-litre"
+    }
+   ],
+   "note": "97.5 ci exact. NHRA blueprint and SCC are one source."
+  },
+  "displacement_l": {
+   "value": 1.6,
+   "sources": [
+    {
+     "name": "Dodge factory 1978 Challenger brochure (Form 81-205-8005), engine page p.8",
+     "url": "https://www.oldcarbrochures.org/United%20States/Dodge/1978_Dodge/1978-Dodge-Challenger-Brochure/slides/1978_Dodge_Challenger-08.html",
+     "says": "1.6 litre Silent Shaft with MCA-Jet System"
+    },
+    {
+     "name": "Wikipedia: Mitsubishi Saturn engine (4G32)",
+     "url": "https://en.wikipedia.org/wiki/Mitsubishi_Saturn_engine",
+     "says": "1.6 L (1,597 cc)"
+    },
+    {
+     "name": "NHRA engine blueprint CHRY-78 (imports section)",
+     "url": "https://www.nhra.net/tech_specs/engine/blueprints/CHRY-78.rtf",
+     "says": "98 ci (= 1.6 L)"
+    },
+    {
+     "name": "Mac's Motor City Garage: Another kind of Dodge Challenger, the Mitsubishi years",
+     "url": "https://macsmotorcitygarage.com/another-kind-of-dodge-challenger-the-mitsubishi-years-1978-1984/",
+     "says": "a standard 1.6 liter unit"
+    }
+   ],
+   "note": ""
+  },
+  "num_cylinders": {
+   "value": 4,
+   "sources": [
+    {
+     "name": "Dodge factory 1979 Challenger brochure (Form 81-307-9020), engine specifications p.8",
+     "url": "https://www.oldcarbrochures.org/United%20States/Dodge/1979_Dodge/1979_Dodge_Challenger_Brochure/slides/1979_Dodge_Challenger-08.html",
+     "says": "Four-cylinder"
+    },
+    {
+     "name": "NHRA engine blueprint CHRY-78 (imports section)",
+     "url": "https://www.nhra.net/tech_specs/engine/blueprints/CHRY-78.rtf",
+     "says": "4 cylinders"
+    },
+    {
+     "name": "Wikipedia: Mitsubishi Saturn engine (4G32)",
+     "url": "https://en.wikipedia.org/wiki/Mitsubishi_Saturn_engine",
+     "says": "inline-four"
+    },
+    {
+     "name": "Mac's Motor City Garage: Another kind of Dodge Challenger, the Mitsubishi years",
+     "url": "https://macsmotorcitygarage.com/another-kind-of-dodge-challenger-the-mitsubishi-years-1978-1984/",
+     "says": "Two four-cylinder engines"
+    }
+   ],
+   "note": ""
+  },
+  "configuration": {
+   "value": "Inline-four",
+   "sources": [
+    {
+     "name": "Dodge factory 1978 Challenger brochure (Form 81-205-8005), engine page p.8",
+     "url": "https://www.oldcarbrochures.org/United%20States/Dodge/1978_Dodge/1978-Dodge-Challenger-Brochure/slides/1978_Dodge_Challenger-08.html",
+     "says": "Four-cylinder overhead cam"
+    },
+    {
+     "name": "Wikipedia: Mitsubishi Saturn engine (4G32)",
+     "url": "https://en.wikipedia.org/wiki/Mitsubishi_Saturn_engine",
+     "says": "straight-four"
+    },
+    {
+     "name": "Mac's Motor City Garage: Another kind of Dodge Challenger, the Mitsubishi years",
+     "url": "https://macsmotorcitygarage.com/another-kind-of-dodge-challenger-the-mitsubishi-years-1978-1984/",
+     "says": "four-cylinder"
+    }
+   ],
+   "note": ""
+  },
+  "induction": {
+   "value": "Carburetor, single 2-barrel (Mikuni)",
+   "sources": [
+    {
+     "name": "Dodge factory 1978 Challenger brochure (Form 81-205-8005), engine page p.8",
+     "url": "https://www.oldcarbrochures.org/United%20States/Dodge/1978_Dodge/1978-Dodge-Challenger-Brochure/slides/1978_Dodge_Challenger-08.html",
+     "says": "Carburetor: Two-barrel"
+    },
+    {
+     "name": "Dodge factory 1979 Challenger brochure (Form 81-307-9020), engine specifications p.8",
+     "url": "https://www.oldcarbrochures.org/United%20States/Dodge/1979_Dodge/1979_Dodge_Challenger_Brochure/slides/1979_Dodge_Challenger-08.html",
+     "says": "Two-barrel"
+    },
+    {
+     "name": "NHRA engine blueprint CHRY-78 (imports section)",
+     "url": "https://www.nhra.net/tech_specs/engine/blueprints/CHRY-78.rtf",
+     "says": "Ind. 1-2, MK (Mikuni) 28-32 DIDTA"
+    },
+    {
+     "name": "Wikipedia: Mitsubishi Saturn engine (4G32)",
+     "url": "https://en.wikipedia.org/wiki/Mitsubishi_Saturn_engine",
+     "says": "single down draught carburetor (Mikuni-built)"
+    }
+   ],
+   "note": ""
+  },
+  "fuel_type": {
+   "value": "Gasoline (unleaded regular)",
+   "sources": [
+    {
+     "name": "Dodge factory 1979 Challenger brochure (Form 81-307-9020), engine specifications p.8",
+     "url": "https://www.oldcarbrochures.org/United%20States/Dodge/1979_Dodge/1979_Dodge_Challenger_Brochure/slides/1979_Dodge_Challenger-08.html",
+     "says": "Recommended fuel: Unleaded regular"
+    },
+    {
+     "name": "Wikipedia: Mitsubishi Saturn engine (4G32)",
+     "url": "https://en.wikipedia.org/wiki/Mitsubishi_Saturn_engine",
+     "says": "fueltype = Gasoline"
+    },
+    {
+     "name": "NHRA engine blueprint CHRY-78 (imports section)",
+     "url": "https://www.nhra.net/tech_specs/engine/blueprints/CHRY-78.rtf",
+     "says": "gasoline carbureted"
+    }
+   ],
+   "note": ""
+  },
+  "years": {
+   "value": "1978-1979 in the Dodge Challenger (4G32 introduced 1970 in Japan)",
+   "sources": [
+    {
+     "name": "Dodge factory 1978 Challenger brochure (Form 81-205-8005), engine page p.8",
+     "url": "https://www.oldcarbrochures.org/United%20States/Dodge/1978_Dodge/1978-Dodge-Challenger-Brochure/slides/1978_Dodge_Challenger-08.html",
+     "says": "1978: standard 1.6 litre"
+    },
+    {
+     "name": "Dodge factory 1979 Challenger brochure (Form 81-307-9020), engine specifications p.8",
+     "url": "https://www.oldcarbrochures.org/United%20States/Dodge/1979_Dodge/1979_Dodge_Challenger_Brochure/slides/1979_Dodge_Challenger-08.html",
+     "says": "1979: Std 1.6 litre"
+    },
+    {
+     "name": "NHRA Stock Car Classification Guide (1978DOD / 1979DOD sheets)",
+     "url": "nhra_challenger.json / scc_rows.json (scratchpad)",
+     "says": "1978 and 1979 Challenger 98 ci rows; none for 1980"
+    },
+    {
+     "name": "Wikipedia: Dodge Challenger (second generation)",
+     "url": "https://en.wikipedia.org/wiki/Dodge_Challenger",
+     "says": "second-generation Challenger 1.6 L and 2.6 L"
+    }
+   ],
+   "note": "1980 Dodge Imports brochure lists only the 2.6 for Challenger."
+  }
+ },
+ "variants": [
+  {
+   "year": 1978,
+   "hp": 77,
+   "hp_basis": "net (SAE)",
+   "compression_ratio": 8.5,
+   "code": "1.6 Silent Shaft with MCA-Jet (standard Challenger engine)",
+   "induction": "2-bbl",
+   "sources": [
+    {
+     "name": "NHRA Stock Car Classification Guide (1978DOD / 1979DOD sheets)",
+     "url": "nhra_challenger.json / scc_rows.json (scratchpad)",
+     "says": "1978 CHALLENGER 98 ci / 77 hp"
+    },
+    {
+     "name": "Stellantis media: Dodge Challenger: History of the Dodge Pony Car (2008)",
+     "url": "https://media.stellantisnorthamerica.com/newsrelease.do?id=7665",
+     "says": "standard 1.6-liter, 77-horsepower I-4"
+    },
+    {
+     "name": "Wikipedia: Dodge Challenger (second generation)",
+     "url": "https://en.wikipedia.org/wiki/Dodge_Challenger",
+     "says": "1.6 L ... 77 hp with the introduction of MCA-Jet"
+    }
+   ]
+  }
+ ],
+ "unverified": {
+  "valvetrain": "SOHC, 2 main valves/cyl plus MCA-Jet auxiliary jet valve, twin Silent Shaft balance shafts: factory brochures (\"overhead cam\", jet valve, two counterbalancing shafts) and Wikipedia (\"eight-valve SOHC\") only. 2 sources.",
+  "compression_ratio": "DISAGREEMENT: factory 1978 and 1979 Challenger brochures 8.5:1; NHRA CHRY-78 9.00; Wikipedia 9.5:1 (generic 4G32).",
+  "block_material": "Cast iron: Wikipedia only (factory brochure silent).",
+  "head_material": "Aluminum: factory 1978 brochure (\"aluminum cylinder heads, hemispherical combustion chambers\") and Wikipedia. 2 sources.",
+  "rod_length_in": "6.051 in: NHRA CHRY-78 only.",
+  "firing_order": "1-3-4-2: Wikipedia only."
+ },
+ "unverified_variants": [
+  {
+   "year": 1979,
+   "hp": 80,
+   "hp_basis": "net",
+   "code": "1.6 Silent Shaft MCA-Jet",
+   "found": "NHRA SCC 1979 (80 hp) only; factory 1979 brochure prints no hp; Stellantis history and Wikipedia give 77 (the 1978 figure)."
+  }
+ ]
+}

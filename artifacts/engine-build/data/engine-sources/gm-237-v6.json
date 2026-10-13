@@ -1,0 +1,310 @@
+{
+ "name": "GM 3.9 L (237 ci) High Value V6 (3900)",
+ "fields": {
+  "displacement_ci": {
+   "value": 237,
+   "sources": [
+    {
+     "name": "GM Heritage Center 2006 Chevrolet Monte Carlo / Impala information kits (spec sheet + Engine Mechanical specs)",
+     "url": "https://www.gm.com/content/dam/company/no_search/heritage-archive-docs/vehicle-information-kits/chevrolet/2006-Chevrolet-Monte-Carlo.pdf",
+     "says": "3900 3.9L V-6: Displacement (cu in / cc) 237 / 3880"
+    },
+    {
+     "name": "Wikipedia: GM High Value engine",
+     "url": "https://en.wikipedia.org/wiki/GM_High_Value_engine",
+     "says": "236.8 cu in (3,880 cc)"
+    },
+    {
+     "name": "NHRA Stock Car Classification Guide (scratchpad scc_rows.json)",
+     "url": "https://www.nhra.net/",
+     "says": "2007-08 Impala, 2006-07 Malibu, G6: 237 ci, family GM-237-01"
+    },
+    {
+     "name": "The Auto Channel (Carey Russ): 2006 Pontiac G6 GTP review",
+     "url": "https://theautochannel.com/news/2006/07/13/014646.html",
+     "says": "12-valve pushrod overhead valve V6 with variable cam phasing; 3.9 liters / 237 cu. in."
+    }
+   ],
+   "note": ""
+  },
+  "displacement_l": {
+   "value": 3.9,
+   "sources": [
+    {
+     "name": "GM Heritage Center 2006 Chevrolet Monte Carlo / Impala information kits (spec sheet + Engine Mechanical specs)",
+     "url": "https://www.gm.com/content/dam/company/no_search/heritage-archive-docs/vehicle-information-kits/chevrolet/2006-Chevrolet-Monte-Carlo.pdf",
+     "says": "3.9L V-6, 237 / 3880"
+    },
+    {
+     "name": "Wikipedia: GM High Value engine",
+     "url": "https://en.wikipedia.org/wiki/GM_High_Value_engine",
+     "says": "3.9 L"
+    },
+    {
+     "name": "EPA fueleconomy.gov vehicle data",
+     "url": "https://www.fueleconomy.gov/feg/download.shtml",
+     "says": "2006-2011 Impala and 2006 Monte Carlo: 3.9 L 6-cyl"
+    },
+    {
+     "name": "MotorWeek: 2006 Chevrolet Impala road test",
+     "url": "https://motorweek.org/road_tests/2006_chevrolet_impala/",
+     "says": "3.9-liter ... push-rod ... variable valve timing; 240 horsepower, 242 pound feet"
+    },
+    {
+     "name": "Consumer Guide: 2006-14 Chevrolet Impala used-car review",
+     "url": "https://consumerguide.com/used/2006-14-chevrolet-impalaimpala-limited/",
+     "says": "242-horsepower, 3.9-liter V6"
+    }
+   ],
+   "note": "3,880 cc"
+  },
+  "num_cylinders": {
+   "value": 6,
+   "sources": [
+    {
+     "name": "GM Heritage Center 2006 Chevrolet Monte Carlo / Impala information kits (spec sheet + Engine Mechanical specs)",
+     "url": "https://www.gm.com/content/dam/company/no_search/heritage-archive-docs/vehicle-information-kits/chevrolet/2006-Chevrolet-Monte-Carlo.pdf",
+     "says": "60 degree V-6"
+    },
+    {
+     "name": "Wikipedia: GM High Value engine",
+     "url": "https://en.wikipedia.org/wiki/GM_High_Value_engine",
+     "says": "V6"
+    },
+    {
+     "name": "EPA fueleconomy.gov vehicle data",
+     "url": "https://www.fueleconomy.gov/feg/download.shtml",
+     "says": "3.9 L 6-cyl"
+    }
+   ],
+   "note": ""
+  },
+  "configuration": {
+   "value": "V6",
+   "sources": [
+    {
+     "name": "GM Heritage Center 2006 Chevrolet Monte Carlo / Impala information kits (spec sheet + Engine Mechanical specs)",
+     "url": "https://www.gm.com/content/dam/company/no_search/heritage-archive-docs/vehicle-information-kits/chevrolet/2006-Chevrolet-Monte-Carlo.pdf",
+     "says": "Engine Type: 60 degree V-6"
+    },
+    {
+     "name": "Wikipedia: GM High Value engine",
+     "url": "https://en.wikipedia.org/wiki/GM_High_Value_engine",
+     "says": "60-degree V6 (High Value family)"
+    },
+    {
+     "name": "The Auto Channel (Carey Russ): 2006 Pontiac G6 GTP review",
+     "url": "https://theautochannel.com/news/2006/07/13/014646.html",
+     "says": "12-valve pushrod overhead valve V6 with variable cam phasing; 3.9 liters / 237 cu. in."
+    },
+    {
+     "name": "MotorWeek: 2006 Chevrolet Impala road test",
+     "url": "https://motorweek.org/road_tests/2006_chevrolet_impala/",
+     "says": "3.9-liter ... push-rod ... variable valve timing; 240 horsepower, 242 pound feet"
+    }
+   ],
+   "note": "60-degree V angle stated by GM and Wikipedia only (2 sources)."
+  },
+  "valvetrain": {
+   "value": "OHV pushrod, 2 valves per cylinder, cam phaser variable valve timing",
+   "sources": [
+    {
+     "name": "GM Heritage Center 2006 Chevrolet Monte Carlo / Impala information kits (spec sheet + Engine Mechanical specs)",
+     "url": "https://www.gm.com/content/dam/company/no_search/heritage-archive-docs/vehicle-information-kits/chevrolet/2006-Chevrolet-Monte-Carlo.pdf",
+     "says": "overhead valve, 2 valves per cylinder, continuously variable valve timing"
+    },
+    {
+     "name": "Wikipedia: GM High Value engine",
+     "url": "https://en.wikipedia.org/wiki/GM_High_Value_engine",
+     "says": "OHV with VVT ... roller rocker arms ... Variable Cam Timing"
+    },
+    {
+     "name": "The Auto Channel (Carey Russ): 2006 Pontiac G6 GTP review",
+     "url": "https://theautochannel.com/news/2006/07/13/014646.html",
+     "says": "12-valve pushrod overhead valve V6 with variable cam phasing; 3.9 liters / 237 cu. in."
+    },
+    {
+     "name": "Auto123: 2006 Pontiac G6 GTP coupe road test",
+     "url": "https://www.auto123.com/en/news/2006-pontiac-g6-gtp-coupe-road-test/53786/?page=3",
+     "says": "only 2-valves per cylinder, yet variable intake valve timing and a variable intake manifold"
+    },
+    {
+     "name": "MotorWeek: 2006 Chevrolet Impala road test",
+     "url": "https://motorweek.org/road_tests/2006_chevrolet_impala/",
+     "says": "3.9-liter ... push-rod ... variable valve timing; 240 horsepower, 242 pound feet"
+    }
+   ],
+   "note": ""
+  },
+  "induction": {
+   "value": "sequential multiport fuel injection, naturally aspirated",
+   "sources": [
+    {
+     "name": "GM Heritage Center 2006 Chevrolet Monte Carlo / Impala information kits (spec sheet + Engine Mechanical specs)",
+     "url": "https://www.gm.com/content/dam/company/no_search/heritage-archive-docs/vehicle-information-kits/chevrolet/2006-Chevrolet-Monte-Carlo.pdf",
+     "says": "sequential fuel injection"
+    },
+    {
+     "name": "Wikipedia: GM High Value engine",
+     "url": "https://en.wikipedia.org/wiki/GM_High_Value_engine",
+     "says": "Sequential multi-port fuel injection"
+    },
+    {
+     "name": "EPA fueleconomy.gov vehicle data",
+     "url": "https://www.fueleconomy.gov/feg/download.shtml",
+     "says": "2006 Impala 3.9 L: 'FFS MPFI'"
+    }
+   ],
+   "note": ""
+  },
+  "fuel_type": {
+   "value": "gasoline; E85 FlexFuel-capable in later Impala versions",
+   "sources": [
+    {
+     "name": "GM Heritage Center 2006 Chevrolet Monte Carlo / Impala information kits (spec sheet + Engine Mechanical specs)",
+     "url": "https://www.gm.com/content/dam/company/no_search/heritage-archive-docs/vehicle-information-kits/chevrolet/2006-Chevrolet-Monte-Carlo.pdf",
+     "says": "Fuel: regular unleaded (2006)"
+    },
+    {
+     "name": "Chevrolet 2009 / 2011 Impala US sales brochures (auto-brochures.com)",
+     "url": "https://www.auto-brochures.com/makes/Chevrolet/Impala/Chevrolet_US%20Impala_2009.pdf",
+     "says": "233-hp 3.9L V6 engine with E85 FlexFuel capability"
+    },
+    {
+     "name": "Wikipedia: GM High Value engine",
+     "url": "https://en.wikipedia.org/wiki/GM_High_Value_engine",
+     "says": "flexible-fuel variants (LGD, LZG) support E85"
+    },
+    {
+     "name": "EPA fueleconomy.gov vehicle data",
+     "url": "https://www.fueleconomy.gov/feg/download.shtml",
+     "says": "Impala 3.9 L flagged FFV for 2010 and 2011"
+    },
+    {
+     "name": "Consumer Guide: 2006-14 Chevrolet Impala used-car review",
+     "url": "https://consumerguide.com/used/2006-14-chevrolet-impalaimpala-limited/",
+     "says": "the available 3.9-liter V6 joined its 3.5-liter sibling in being able to run on E85"
+    }
+   ],
+   "note": "GM brochure counted with the GM kits as one manufacturer source. Start year of FlexFuel disputed: Consumer Guide says 2008, GM brochures/Wikipedia 2009, EPA flags FFV from 2010."
+  },
+  "years": {
+   "value": "2006-2011 (Impala 2006-2011; Monte Carlo 2006-2007)",
+   "sources": [
+    {
+     "name": "GM Heritage Center Impala/Monte Carlo kits 2006-07 and Chevrolet Impala brochures 2009-11",
+     "url": "https://www.gm.com/content/dam/company/no_search/heritage-archive-docs/vehicle-information-kits/chevrolet/2006-Chevrolet-Impala.pdf",
+     "says": "3.9L in 2006/2007 Impala and 2006 Monte Carlo kits; 3.9L V6 in 2009-2011 Impala brochures"
+    },
+    {
+     "name": "Wikipedia: GM High Value engine",
+     "url": "https://en.wikipedia.org/wiki/GM_High_Value_engine",
+     "says": "Impala and Monte Carlo among applications, 2006-on"
+    },
+    {
+     "name": "EPA fueleconomy.gov vehicle data",
+     "url": "https://www.fueleconomy.gov/feg/download.shtml",
+     "says": "Impala 3.9 L rows 2006-2011; Monte Carlo 3.9 L 2006"
+    },
+    {
+     "name": "Consumer Guide: 2006-14 Chevrolet Impala used-car review",
+     "url": "https://consumerguide.com/used/2006-14-chevrolet-impalaimpala-limited/",
+     "says": "3.9 V6 offered 2006 through 2011; replaced by a 300-horsepower 3.6-liter V6 in 2012"
+    }
+   ],
+   "note": "Family also used in the Pontiac G6, Malibu SS, GM minivans and 2009-11 Buick Lucerne (Wikipedia)."
+  }
+ },
+ "variants": [
+  {
+   "year": 2006,
+   "hp": 242,
+   "hp_basis": "SAE net",
+   "code": "LZ9",
+   "applies_to": "Impala LT/LTZ, Monte Carlo LT 3.9/LTZ",
+   "sources": [
+    {
+     "name": "GM Heritage Center 2006 Impala and Monte Carlo information kits",
+     "url": "https://www.gm.com/content/dam/company/no_search/heritage-archive-docs/vehicle-information-kits/chevrolet/2006-Chevrolet-Impala.pdf",
+     "says": "new 242-horsepower 3.9L V-6, 242 lb-ft; RPO LZ9"
+    },
+    {
+     "name": "Wikipedia: Chevrolet Impala / Chevrolet Monte Carlo engine tables",
+     "url": "https://en.wikipedia.org/wiki/Chevrolet_Impala",
+     "says": "2006 3.9 L LZ9 V6, 242 hp"
+    },
+    {
+     "name": "Consumer Guide: 2006-07 Chevrolet Monte Carlo used-car review",
+     "url": "https://consumerguide.com/used/2006-07-chevrolet-monte-carlo/",
+     "says": "LT 3.9 and LTZ contained a 242-horsepower 3.9-liter V6 (later rated at 233 hp)"
+    },
+    {
+     "name": "Consumer Guide: 2006-14 Chevrolet Impala used-car review",
+     "url": "https://consumerguide.com/used/2006-14-chevrolet-impalaimpala-limited/",
+     "says": "242-horsepower, 3.9-liter V6"
+    }
+   ],
+   "note": "MotorWeek's 2006 Impala test says 240 hp, the LZ9 figure GM used in the G6 and Malibu. GM and Consumer Guide say 242 for the Impala and Monte Carlo."
+  },
+  {
+   "year": "2007-2008",
+   "hp": 233,
+   "hp_basis": "SAE net",
+   "code": "LZ8 (Active Fuel Management)",
+   "applies_to": "Impala LT/LTZ",
+   "sources": [
+    {
+     "name": "GM Heritage Center 2007 Chevrolet Impala information kit",
+     "url": "https://www.gm.com/content/dam/company/no_search/heritage-archive-docs/vehicle-information-kits/chevrolet/2007-Chevrolet-Impala.pdf",
+     "says": "233-horsepower 3.9L V-6, 240 lb-ft; RPO LZ8 with Active Fuel Management"
+    },
+    {
+     "name": "Wikipedia: Chevrolet Impala (ninth generation engine table)",
+     "url": "https://en.wikipedia.org/wiki/Chevrolet_Impala",
+     "says": "2007-2008 3.9 L V6, 233 hp / 240 lb-ft; Active Fuel Management"
+    },
+    {
+     "name": "NHRA Stock Car Classification Guide (scratchpad scc_rows.json)",
+     "url": "https://www.nhra.net/",
+     "says": "2007 and 2008 Impala: 237 ci / 233 hp, GM-237-01"
+    },
+    {
+     "name": "Consumer Guide: 2006-14 Chevrolet Impala used-car review",
+     "url": "https://consumerguide.com/used/2006-14-chevrolet-impalaimpala-limited/",
+     "says": "later 233 hp"
+    }
+   ],
+   "note": ""
+  }
+ ],
+ "unverified": {
+  "bore_in": "3.8976 in (99 mm). Sources: GM 2006 Monte Carlo kit ('3.90 x 3.31 / 99 x 84', engine mechanical specs 'Bore 99 mm') and Wikipedia ('99 mm x 84 mm'). No third acceptable source found; the other hits were content farms.",
+  "stroke_in": "3.3071 in (84 mm). GM kit + Wikipedia only.",
+  "compression_ratio": "9.8:1 (GM 2006 Monte Carlo kit, engine mechanical specs, LZ9). No second source.",
+  "firing_order": "1-2-3-4-5-6 (GM 2006 Monte Carlo kit engine mechanical specs, OCR '123456'). No second source.",
+  "block_material": "Cast iron (GM kit spec sheet 'cast iron'; Wikipedia overview table). 2 sources.",
+  "head_material": "Cast aluminum (GM kit spec sheet; Wikipedia). 2 sources.",
+  "rod_length_in": "The GM kit OCR is garbled ('1 50 mm'?). Not usable, no other source."
+ },
+ "unverified_variants": [
+  {
+   "year": "2009-2010",
+   "hp": 233,
+   "code": "LGD/LZG FlexFuel (codes per Wikipedia only)",
+   "found": "GM 2009 and 2010 Impala brochures say 233 hp with E85 capability. Wikipedia says 230 hp / 235 lb-ft for 2009-2011. EPA confirms 3.9 L only. The rating is disputed and no third source gives hp."
+  },
+  {
+   "year": 2011,
+   "hp": 230,
+   "code": "LGD/LZG FlexFuel",
+   "found": "GM 2011 Impala brochure says 230 hp @ 5700, 235 lb-ft. Wikipedia says 230 hp. Only 2 sources state hp."
+  },
+  {
+   "year": 2007,
+   "hp": 233,
+   "code": "LZ8?",
+   "applies_to": "Monte Carlo",
+   "found": "Consumer Guide: Monte Carlo 3.9 'later rated at 233 hp'. The GM 2007 Monte Carlo kit URL returns the 2006 file. One source."
+  }
+ ]
+}

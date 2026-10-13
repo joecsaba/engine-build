@@ -1,0 +1,433 @@
+{
+ "name": "Ford 2.5 Duratec 25 DOHC 24-valve 60-degree V6",
+ "fields": {
+  "bore_in": {
+   "value": 3.2441,
+   "sources": [
+    {
+     "name": "Wikipedia: Ford Duratec V6 engine",
+     "url": "https://en.wikipedia.org/wiki/Ford_Duratec_V6_engine",
+     "says": "Duratec 25 ... Bore and stroke is 82.4 x 79.5 mm (3.24 x 3.13 in)"
+    },
+    {
+     "name": "Tomorrow's Technician (Larry Carley, 2012): Engine Series: A Decade of the Duratec 30",
+     "url": "https://www.tomorrowstechnician.com/engine-series-a-decade-of-the-duratec-30/",
+     "says": "same 79.5 mm stroke crankshaft, but the 3.0L engine has larger cylinder bores (89 mm versus 82.4 mm in the 2.5L Duratec)"
+    },
+    {
+     "name": "UK Cougar Club: technical specifications (Ford Cougar 2.5 V6)",
+     "url": "https://ukcougar.club/pages/technical-specifications",
+     "says": "Bore 82.4mm"
+    }
+   ],
+   "note": "82.4 mm = 3.2441 in. (Wikipedia elsewhere gives 82.42 mm; parts catalogs show 82.3 mm.)"
+  },
+  "stroke_in": {
+   "value": 3.1299,
+   "sources": [
+    {
+     "name": "Wikipedia: Ford Duratec V6 engine",
+     "url": "https://en.wikipedia.org/wiki/Ford_Duratec_V6_engine",
+     "says": "82.4 x 79.5 mm"
+    },
+    {
+     "name": "Tomorrow's Technician (Larry Carley)",
+     "url": "https://www.tomorrowstechnician.com/engine-series-a-decade-of-the-duratec-30/",
+     "says": "same 79.5 mm stroke crankshaft"
+    },
+    {
+     "name": "UK Cougar Club",
+     "url": "https://ukcougar.club/pages/technical-specifications",
+     "says": "Stroke 79.5mm"
+    }
+   ],
+   "note": "79.5 mm = 3.1299 in."
+  },
+  "displacement_ci": {
+   "value": 155,
+   "sources": [
+    {
+     "name": "Consumer Guide: 1999-02 Mercury Cougar",
+     "url": "https://consumerguide.com/used/1999-02-mercury-cougar/",
+     "says": "dohc V6, 2.5/155"
+    },
+    {
+     "name": "The Auto Channel: 1998 Ford Contour review (spec box)",
+     "url": "https://theautochannel.com/vehicles/new/reviews/1998/russ091297.html",
+     "says": "2.5 liters / 155 cu. in."
+    },
+    {
+     "name": "Wikipedia: Ford Duratec V6 engine",
+     "url": "https://en.wikipedia.org/wiki/Ford_Duratec_V6_engine",
+     "says": "2.5 L (2544 cc) [155.2 cu in]"
+    }
+   ],
+   "note": "2544 cc = 155.2 ci. Disagreement: the Ford 2002 Cougar Owner's Guide Engine Data table prints 'Cubic inches 152' for the 2.5L - inconsistent with 82.4 x 79.5 mm x 6."
+  },
+  "displacement_l": {
+   "value": 2.5,
+   "sources": [
+    {
+     "name": "Mercury 2000 Cougar brochure, specifications",
+     "url": "https://oldcarbrochures.org/United%20States/Mercury/2000-Mercury/2000%20Mercury%20Cougar-2022-10-1%2010.12.25/index.html",
+     "says": "Displacement 2.5 liter"
+    },
+    {
+     "name": "Consumer Guide",
+     "url": "https://consumerguide.com/used/1999-02-mercury-cougar/",
+     "says": "2.5/155"
+    },
+    {
+     "name": "Machine Design: 1999 Mercury Cougar",
+     "url": "https://www.machinedesign.com/archive/article/21818535/1999-mercury-cougar",
+     "says": "24-valve 2.5-liter Duratec V6"
+    },
+    {
+     "name": "EPA fueleconomy.gov (15002)",
+     "url": "https://www.fueleconomy.gov/ws/rest/vehicle/15002",
+     "says": "displ 2.5, 6 cyl"
+    },
+    {
+     "name": "Wikipedia: Ford Duratec V6 engine",
+     "url": "https://en.wikipedia.org/wiki/Ford_Duratec_V6_engine",
+     "says": "2.5 L (2544 cc)"
+    }
+   ],
+   "note": "2544 cc (Wikipedia, UK Cougar Club)."
+  },
+  "num_cylinders": {
+   "value": 6,
+   "sources": [
+    {
+     "name": "Mercury 2000 Cougar brochure",
+     "url": "https://oldcarbrochures.org/United%20States/Mercury/2000-Mercury/2000%20Mercury%20Cougar-2022-10-1%2010.12.25/index.html",
+     "says": "DOHC 24-valve Duratec V6"
+    },
+    {
+     "name": "EPA fueleconomy.gov (15002)",
+     "url": "https://www.fueleconomy.gov/ws/rest/vehicle/15002",
+     "says": "cylinders 6"
+    },
+    {
+     "name": "Consumer Guide",
+     "url": "https://consumerguide.com/used/1999-02-mercury-cougar/",
+     "says": "dohc V6"
+    }
+   ],
+   "note": ""
+  },
+  "configuration": {
+   "value": "V6 (60-degree)",
+   "sources": [
+    {
+     "name": "Wikipedia: Ford Duratec V6 engine",
+     "url": "https://en.wikipedia.org/wiki/Ford_Duratec_V6_engine",
+     "says": "2.5 L (2544 cc) 60 deg V6"
+    },
+    {
+     "name": "Tomorrow's Technician (Larry Carley)",
+     "url": "https://www.tomorrowstechnician.com/engine-series-a-decade-of-the-duratec-30/",
+     "says": "the 2.5L Duratec 60 deg V6 that was introduced in the 1994 Ford Contour"
+    },
+    {
+     "name": "Mercury 2000 Cougar brochure",
+     "url": "https://oldcarbrochures.org/United%20States/Mercury/2000-Mercury/2000%20Mercury%20Cougar-2022-10-1%2010.12.25/index.html",
+     "says": "Duratec V6"
+    },
+    {
+     "name": "Consumer Guide",
+     "url": "https://consumerguide.com/used/1999-02-mercury-cougar/",
+     "says": "dohc V6"
+    }
+   ],
+   "note": "V6 confirmed by 4 sources; the 60-degree bank angle by Wikipedia and Carley only."
+  },
+  "compression_ratio": {
+   "value": 9.7,
+   "sources": [
+    {
+     "name": "Mercury 2000 Cougar brochure, specifications (page image)",
+     "url": "https://oldcarbrochures.org/United%20States/Mercury/2000-Mercury/2000%20Mercury%20Cougar-2022-10-1%2010.12.25/index.html",
+     "says": "V6 Compression ratio 9.7:1"
+    },
+    {
+     "name": "UK Cougar Club",
+     "url": "https://ukcougar.club/pages/technical-specifications",
+     "says": "Compression ratio 9.7:1"
+    },
+    {
+     "name": "Wikipedia: Ford Duratec V6 engine",
+     "url": "https://en.wikipedia.org/wiki/Ford_Duratec_V6_engine",
+     "says": "compression 9.7:1-10.0:1 (family range)"
+    }
+   ],
+   "note": "9.7:1 for the Cougar 2.5; Wikipedia gives a family range 9.7-10.0:1."
+  },
+  "valvetrain": {
+   "value": "DOHC, 4 valves per cylinder (24-valve)",
+   "sources": [
+    {
+     "name": "Mercury 2000 Cougar brochure",
+     "url": "https://oldcarbrochures.org/United%20States/Mercury/2000-Mercury/2000%20Mercury%20Cougar-2022-10-1%2010.12.25/index.html",
+     "says": "DOHC 24-valve Duratec V6"
+    },
+    {
+     "name": "Machine Design",
+     "url": "https://www.machinedesign.com/archive/article/21818535/1999-mercury-cougar",
+     "says": "24-valve 2.5-liter Duratec V6"
+    },
+    {
+     "name": "Wikipedia: Ford Duratec V6 engine",
+     "url": "https://en.wikipedia.org/wiki/Ford_Duratec_V6_engine",
+     "says": "dual overhead cam ... 4 valves"
+    },
+    {
+     "name": "Australian Car Reviews: Ford Cougar 1999-04",
+     "url": "https://australiancar.reviews/review-ford-cougar-1999-04/",
+     "says": "double overhead camshafts, four valves per cylinder"
+    }
+   ],
+   "note": "Chain-driven cams, roller finger followers (Ford Engine History, UK Cougar Club)."
+  },
+  "block_material": {
+   "value": "aluminum (cast-iron cylinder liners)",
+   "sources": [
+    {
+     "name": "Ford Performance: Ford Engine History (PDF)",
+     "url": "https://performanceparts.ford.com/download/pdfs/EngineHistory.pdf",
+     "says": "2.0L/2.5L/3.0L DOHC 4V Duratec ... An aluminum block casting process was licensed from Cosworth"
+    },
+    {
+     "name": "Wikipedia: Ford Duratec V6 engine",
+     "url": "https://en.wikipedia.org/wiki/Ford_Duratec_V6_engine",
+     "says": "aluminum-block ... with cast iron cylinder liners"
+    },
+    {
+     "name": "The Auto Channel: 1998 Ford Contour review",
+     "url": "https://theautochannel.com/vehicles/new/reviews/1998/russ091297.html",
+     "says": "aluminum alloy V6, dual overhead cams, 24 valves"
+    },
+    {
+     "name": "Australian Car Reviews: Ford Cougar 1999-04",
+     "url": "https://australiancar.reviews/review-ford-cougar-1999-04/",
+     "says": "all-alloy construction"
+    },
+    {
+     "name": "Tomorrow's Technician (Larry Carley)",
+     "url": "https://www.tomorrowstechnician.com/engine-series-a-decade-of-the-duratec-30/",
+     "says": "aluminum block with cast-iron cylinder liners (3.0L, 'essentially a larger version of the 2.5L Duratec')"
+    }
+   ],
+   "note": ""
+  },
+  "head_material": {
+   "value": "aluminum",
+   "sources": [
+    {
+     "name": "Ford Performance: Ford Engine History (PDF)",
+     "url": "https://performanceparts.ford.com/download/pdfs/EngineHistory.pdf",
+     "says": "Roller finger follower (RFF) aluminum cylinder heads"
+    },
+    {
+     "name": "Wikipedia: Ford Duratec V6 engine",
+     "url": "https://en.wikipedia.org/wiki/Ford_Duratec_V6_engine",
+     "says": "head: Aluminum"
+    },
+    {
+     "name": "UK Cougar Club",
+     "url": "https://ukcougar.club/pages/technical-specifications",
+     "says": "Precision sand cast aluminium alloy (head)"
+    },
+    {
+     "name": "Australian Car Reviews",
+     "url": "https://australiancar.reviews/review-ford-cougar-1999-04/",
+     "says": "all-alloy construction"
+    }
+   ],
+   "note": ""
+  },
+  "induction": {
+   "value": "sequential multi-port electronic fuel injection",
+   "sources": [
+    {
+     "name": "Mercury 2000 Cougar brochure",
+     "url": "https://oldcarbrochures.org/United%20States/Mercury/2000-Mercury/2000%20Mercury%20Cougar-2022-10-1%2010.12.25/index.html",
+     "says": "Sequential multi-port electronic fuel injection"
+    },
+    {
+     "name": "Wikipedia: Ford Duratec V6 engine",
+     "url": "https://en.wikipedia.org/wiki/Ford_Duratec_V6_engine",
+     "says": "Sequential multi-port fuel injection"
+    },
+    {
+     "name": "UK Cougar Club",
+     "url": "https://ukcougar.club/pages/technical-specifications",
+     "says": "Sequential electronic fuel injection (SEFI) with top-fed low-inertia injectors"
+    }
+   ],
+   "note": "Naturally aspirated; dual-stage variable intake (Wikipedia, Australian Car Reviews)."
+  },
+  "fuel_type": {
+   "value": "gasoline (87 octane regular)",
+   "sources": [
+    {
+     "name": "Ford: 2002 Mercury Cougar Owner's Guide, Engine Data table (p.201) [Ford material = one source with brochure/Ford Performance]",
+     "url": "https://www.manua.ls/mercury/cougar-2002/manual?p=201",
+     "says": "2.5L Required fuel 87 octane"
+    },
+    {
+     "name": "EPA fueleconomy.gov (15002)",
+     "url": "https://www.fueleconomy.gov/ws/rest/vehicle/15002",
+     "says": "Regular Gasoline"
+    },
+    {
+     "name": "Wikipedia: Mercury Cougar",
+     "url": "https://en.wikipedia.org/wiki/Mercury_Cougar",
+     "says": "2.5 L Duratec V6 (gasoline)"
+    }
+   ],
+   "note": ""
+  }
+ },
+ "variants": [
+  {
+   "year": 1999,
+   "hp": 170,
+   "hp_basis": "net",
+   "rpm": 6250,
+   "compression_ratio": 9.7,
+   "code": "Cougar V6 2.5 Duratec",
+   "induction": "sequential multi-port EFI",
+   "sources": [
+    {
+     "name": "Consumer Guide: 1999-02 Mercury Cougar",
+     "url": "https://consumerguide.com/used/1999-02-mercury-cougar/",
+     "says": "dohc V6 2.5/155, Engine HP 170 (all years)"
+    },
+    {
+     "name": "Wikipedia: Mercury Cougar",
+     "url": "https://en.wikipedia.org/wiki/Mercury_Cougar",
+     "says": "2.5 L Duratec V6 with 170 hp"
+    },
+    {
+     "name": "Auto123: 1999-2002 Mercury Cougar used review",
+     "url": "https://www.auto123.com/en/news/1999-2002-mercury-cougar/54193/?page=3",
+     "says": "2.5-liter V6 constant 1999-2002: 170 hp @ 6250"
+    },
+    {
+     "name": "Machine Design: 1999 Mercury Cougar",
+     "url": "https://www.machinedesign.com/archive/article/21818535/1999-mercury-cougar",
+     "says": "optional 24-valve 2.5-liter Duratec V6 delivers 170 hp at 6,250 rpm"
+    }
+   ],
+   "note": ""
+  },
+  {
+   "year": 2000,
+   "hp": 170,
+   "hp_basis": "net",
+   "rpm": 6250,
+   "compression_ratio": 9.7,
+   "code": "Cougar V6 2.5 Duratec",
+   "induction": "sequential multi-port EFI",
+   "sources": [
+    {
+     "name": "Mercury 2000 Cougar brochure, specifications",
+     "url": "https://oldcarbrochures.org/United%20States/Mercury/2000-Mercury/2000%20Mercury%20Cougar-2022-10-1%2010.12.25/index.html",
+     "says": "Duratec V6 2.5 liter, 170 @ 6250 rpm, CR 9.7:1"
+    },
+    {
+     "name": "Consumer Guide: 1999-02 Mercury Cougar",
+     "url": "https://consumerguide.com/used/1999-02-mercury-cougar/",
+     "says": "dohc V6 2.5/155, Engine HP 170 (all years)"
+    },
+    {
+     "name": "Wikipedia: Mercury Cougar",
+     "url": "https://en.wikipedia.org/wiki/Mercury_Cougar",
+     "says": "2.5 L Duratec V6 with 170 hp"
+    },
+    {
+     "name": "Auto123: 1999-2002 Mercury Cougar used review",
+     "url": "https://www.auto123.com/en/news/1999-2002-mercury-cougar/54193/?page=3",
+     "says": "2.5-liter V6 constant 1999-2002: 170 hp @ 6250"
+    },
+    {
+     "name": "Consumer Reports: 2000 Mercury Cougar overview",
+     "url": "https://espanol.consumerreports.org/cars/mercury/cougar/2000/overview",
+     "says": "2.5-liter, 170-hp V6"
+    }
+   ],
+   "note": ""
+  },
+  {
+   "year": 2001,
+   "hp": 170,
+   "hp_basis": "net",
+   "rpm": 6250,
+   "compression_ratio": 9.7,
+   "code": "Cougar V6 2.5 Duratec",
+   "induction": "sequential multi-port EFI",
+   "sources": [
+    {
+     "name": "Consumer Guide: 1999-02 Mercury Cougar",
+     "url": "https://consumerguide.com/used/1999-02-mercury-cougar/",
+     "says": "dohc V6 2.5/155, Engine HP 170 (all years)"
+    },
+    {
+     "name": "Wikipedia: Mercury Cougar",
+     "url": "https://en.wikipedia.org/wiki/Mercury_Cougar",
+     "says": "2.5 L Duratec V6 with 170 hp"
+    },
+    {
+     "name": "Auto123: 1999-2002 Mercury Cougar used review",
+     "url": "https://www.auto123.com/en/news/1999-2002-mercury-cougar/54193/?page=3",
+     "says": "2.5-liter V6 constant 1999-2002: 170 hp @ 6250"
+    },
+    {
+     "name": "Consumer Reports: 2001 Mercury Cougar overview",
+     "url": "https://espanol.consumerreports.org/cars/mercury/cougar/2001/overview",
+     "says": "2.5-liter, 170-hp V6"
+    }
+   ],
+   "note": ""
+  },
+  {
+   "year": 2002,
+   "hp": 170,
+   "hp_basis": "net",
+   "rpm": 6250,
+   "compression_ratio": 9.7,
+   "code": "Cougar V6 2.5 Duratec",
+   "induction": "sequential multi-port EFI",
+   "sources": [
+    {
+     "name": "Consumer Guide: 1999-02 Mercury Cougar",
+     "url": "https://consumerguide.com/used/1999-02-mercury-cougar/",
+     "says": "dohc V6 2.5/155, Engine HP 170 (all years)"
+    },
+    {
+     "name": "Wikipedia: Mercury Cougar",
+     "url": "https://en.wikipedia.org/wiki/Mercury_Cougar",
+     "says": "2.5 L Duratec V6 with 170 hp"
+    },
+    {
+     "name": "Auto123: 1999-2002 Mercury Cougar used review",
+     "url": "https://www.auto123.com/en/news/1999-2002-mercury-cougar/54193/?page=3",
+     "says": "2.5-liter V6 constant 1999-2002: 170 hp @ 6250"
+    },
+    {
+     "name": "Consumer Reports: 2002 Mercury Cougar overview",
+     "url": "https://espanol.consumerreports.org/cars/mercury/cougar/2002/overview",
+     "says": "2.5-liter, 170-hp V6"
+    }
+   ],
+   "note": ""
+  }
+ ],
+ "unverified": {
+  "firing_order": "1-4-2-5-3-6 - Ford 2002 Mercury Cougar Owner's Guide Engine Data table (p.201) and Tomorrow's Technician/Larry Carley (stated for the Duratec 30 3.0L, which shares the architecture). Only 2 sources, and one is for the 3.0.",
+  "rod_length_in": "Not found in any reputable source.",
+  "years": "Wikipedia: Duratec 25 introduced 1994 (Mondeo/Contour); Carley: introduced in the 1994 Ford Contour; Ford Engine History: developed for the 1994 Contour. US applications Contour/Mystique 1995-2000, Cougar 1999-2002. End of 2544 cc production not confirmed (Wikipedia says Mazda MPV used a 2495 cc version; the Duratec family ran 1993-2012). Start (1994 / MY1995 in the US) has 3 sources; end year does not."
+ },
+ "unverified_variants": []
+}

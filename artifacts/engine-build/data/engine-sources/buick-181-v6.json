@@ -1,0 +1,287 @@
+{
+ "name": "Buick 3.0 V6 (181 ci) LK9 / LN7",
+ "fields": {
+  "displacement_ci": {
+   "value": 181,
+   "sources": [
+    {
+     "name": "Oldsmobile 1986 Fuel Economy Estimate Sheet (Aug 26 1985), in 1986 Mid-Size catalog (GM factory literature, oldcarbrochures.org)",
+     "url": "https://oldcarbrochures.org/United%20States/Oldsmobile/1986%20Oldsmobile/1986%20Oldsmobile%20Midsize%20-%202/index.html",
+     "says": "CALAIS 3.0-liter (181 CID) V6 MFI"
+    },
+    {
+     "name": "NHRA engine blueprints BUI-83 / BUI-85 / OLDS-86 / PONT-85",
+     "url": "https://www.nhra.net/tech_specs/engine/blueprints/BUI-83.rtf",
+     "says": "displacement 181 (110 hp 2-bbl 1983; 125 hp 1985-88)"
+    },
+    {
+     "name": "Wikipedia: Buick V6 engine (LK9)",
+     "url": "https://en.wikipedia.org/wiki/Buick_V6_engine",
+     "says": "A small 2,966 cc (181 cu in) version of the Buick V6 ... Introduced in 1982"
+    },
+    {
+     "name": "Ate Up With Motor (Aaron Severson): Buick Special / Rover V8 / 3800 V6 history",
+     "url": "https://ateupwithmotor.com/model-histories/buick-special-skylark-rover-V8-3800-v6-history/",
+     "says": "for 1982 by a short-stroke 181 cu. in. (2,996 cc) engine"
+    }
+   ],
+   "note": "2,966 cc. The 1988 Olds Mid-Size catalog's Calais spec table misprints '3.0-liter (183 cu. in.)'; Ate Up With Motor's '2,996 cc' is a typo for 2,966 (3.80 x 2.66 x 6 cyl = 181 ci)."
+  },
+  "displacement_l": {
+   "value": 3.0,
+   "sources": [
+    {
+     "name": "Oldsmobile 1982 Small Size catalog (GM factory literature)",
+     "url": "https://oldcarbrochures.org/United%20States/Oldsmobile/1982%20Oldsmobile/1982_Oldsmobile_Small_Size_Brochure/index.html",
+     "says": "A 3.0-liter V6 engine is available, too"
+    },
+    {
+     "name": "EPA fueleconomy.gov vehicle data",
+     "url": "https://www.fueleconomy.gov/feg/download.shtml",
+     "says": "1984-85 Cutlass Ciera, 1985-88 Calais: 3.0 L 6-cyl"
+    },
+    {
+     "name": "Wikipedia: Buick V6 engine (LK9)",
+     "url": "https://en.wikipedia.org/wiki/Buick_V6_engine",
+     "says": "2,966 cc (181 cu in)"
+    },
+    {
+     "name": "Curbside Classic: Curbside Unicorns - The Sporty FWD Oldsmobiles of the 1980s",
+     "url": "https://www.curbsideclassic.com/automotive-histories/curbside-unicorns-the-sporty-oldsmobiles-of-the-1980s/",
+     "says": "Buick's new 3.0 V6 (110 hp, 145 lb-ft)"
+    }
+   ],
+   "note": ""
+  },
+  "num_cylinders": {
+   "value": 6,
+   "sources": [
+    {
+     "name": "Oldsmobile 1988 Mid-Size catalog p.18 (GM factory literature)",
+     "url": "https://oldcarbrochures.org/United%20States/Oldsmobile/1988-Oldsmobile/1988-Oldsmobile-Mid-Size-Brochure/index.html",
+     "says": "Cutlass Calais powertrain specifications: 3.0-liter ... Engine: V6"
+    },
+    {
+     "name": "EPA fueleconomy.gov vehicle data",
+     "url": "https://www.fueleconomy.gov/feg/download.shtml",
+     "says": "3.0 L 6-cyl"
+    },
+    {
+     "name": "Wikipedia: Buick V6 engine",
+     "url": "https://en.wikipedia.org/wiki/Buick_V6_engine",
+     "says": "LK9 ... version of the Buick V6"
+    },
+    {
+     "name": "Curbside Classic: Sporty FWD Oldsmobiles of the 1980s",
+     "url": "https://www.curbsideclassic.com/automotive-histories/curbside-unicorns-the-sporty-oldsmobiles-of-the-1980s/",
+     "says": "fuel-injected Buick 3.0 V6 (125 hp, 150 lb-ft)"
+    }
+   ],
+   "note": ""
+  },
+  "configuration": {
+   "value": "90-degree V6, transverse (FWD), even-fire",
+   "sources": [
+    {
+     "name": "Wikipedia: Buick V6 engine",
+     "url": "https://en.wikipedia.org/wiki/Buick_V6_engine",
+     "says": "configuration 90 deg V6; LK9 'a lower deck version of the 3.8 designed for transverse application'; the 3.8 became even-firing (split-pin crank) in 1977"
+    },
+    {
+     "name": "Ate Up With Motor: Buick V6 history",
+     "url": "https://ateupwithmotor.com/model-histories/buick-special-skylark-rover-V8-3800-v6-history/",
+     "says": "shared the 90-degree bank angle of the 215 aluminum V8 ... version of the Even-Fire V6 ... and for 1982 by a short-stroke 181 cu. in. engine"
+    },
+    {
+     "name": "Novak: Guide to the Buick 90 Degree V6",
+     "url": "https://www.novak-adapt.com/knowledge/engines/buick-90-v6.html",
+     "says": "Buick 90 degree V6; in mid-1977 the 231 was converted to 'even-fire'"
+    }
+   ],
+   "note": "Brief asked whether the 1982-85 3.0 was odd-fire: no. Ate Up With Motor explicitly lists the 181 as a version of the Even-Fire V6, and Wikipedia calls it a lower-deck 3.8 (even-fire since 1977). Only AUWM states even-fire for the 3.0 directly; Wikipedia and Novak support it at family level."
+  },
+  "valvetrain": {
+   "value": "OHV pushrod, 2 valves per cylinder, hydraulic lifters",
+   "sources": [
+    {
+     "name": "Wikipedia: Buick V6 engine (infobox)",
+     "url": "https://en.wikipedia.org/wiki/Buick_V6_engine",
+     "says": "valvetrain: OHV 2 valves x cyl."
+    },
+    {
+     "name": "NHRA engine blueprints OLDS-85 / BUI-84 (181)",
+     "url": "https://www.nhra.net/tech_specs/engine/blueprints/OLDS-85.rtf",
+     "says": "rocker ratio 1.55, hydraulic lifters, intake valve 1.71, exhaust valve listed (one each)"
+    },
+    {
+     "name": "Ate Up With Motor: Buick V6 history",
+     "url": "https://ateupwithmotor.com/model-histories/buick-special-skylark-rover-V8-3800-v6-history/",
+     "says": "Both were cast iron OHV engines (Fireball V6 family)"
+    }
+   ],
+   "note": "Wikipedia and AUWM are family-level statements; NHRA is 181-specific."
+  },
+  "block_material": {
+   "value": "Cast iron",
+   "sources": [
+    {
+     "name": "Wikipedia: Buick V6 engine (infobox)",
+     "url": "https://en.wikipedia.org/wiki/Buick_V6_engine",
+     "says": "block: Cast iron"
+    },
+    {
+     "name": "Ate Up With Motor: Buick V6 history",
+     "url": "https://ateupwithmotor.com/model-histories/buick-special-skylark-rover-V8-3800-v6-history/",
+     "says": "the production engine reverted to cast iron (the 181 is a version of the same V6)"
+    },
+    {
+     "name": "Novak: Guide to the Buick 90 Degree V6",
+     "url": "https://www.novak-adapt.com/knowledge/engines/buick-90-v6.html",
+     "says": "set its sights on the iron block Fireball"
+    }
+   ],
+   "note": "All three are family-level statements about the Buick 90-degree V6; none is specific to the 3.0."
+  },
+  "firing_order": {
+   "value": "1-6-5-4-3-2",
+   "sources": [
+    {
+     "name": "Wikipedia: Buick V6 engine",
+     "url": "https://en.wikipedia.org/wiki/Buick_V6_engine",
+     "says": "cylinders numbered 1-3-5 on the left-hand bank (front bank for FWD) and 2-4-6 on the right-hand bank ... The firing order is 1-6-5-4-3-2."
+    },
+    {
+     "name": "Novak: Guide to the Buick 90 Degree V6",
+     "url": "https://www.novak-adapt.com/knowledge/engines/buick-90-v6.html",
+     "says": "All Buick V6's feature a 1-6-5-4-3-2 firing order."
+    },
+    {
+     "name": "Ate Up With Motor: Buick V6 history",
+     "url": "https://ateupwithmotor.com/model-histories/buick-special-skylark-rover-V8-3800-v6-history/",
+     "says": "firing order was 1-6-5-4-3-2 (Fireball V6)"
+    }
+   ],
+   "note": "Family-level statements; no 3.0-specific factory source checked."
+  },
+  "induction": {
+   "value": "LK9: Rochester E2ME 2-bbl carburetor (1982-85); LN7: multi-port fuel injection (1985-88)",
+   "sources": [
+    {
+     "name": "Oldsmobile 1982 Small Size catalog + 1988 Mid-Size catalog (GM factory literature)",
+     "url": "https://oldcarbrochures.org/United%20States/Oldsmobile/1988-Oldsmobile/1988-Oldsmobile-Mid-Size-Brochure/index.html",
+     "says": "1982 power teams '3.0/V6 2-Barrel'; 1988 Calais 3.0: 'Fuel management, fuel-injected: Multiport'"
+    },
+    {
+     "name": "Wikipedia: Buick V6 engine (LK9/LN7)",
+     "url": "https://en.wikipedia.org/wiki/Buick_V6_engine",
+     "says": "LK9 used a Rochester E2ME 2-bbl carburetor ... The LN7 is a multiport fuel injected version of the LK9"
+    },
+    {
+     "name": "NHRA engine blueprints BUI-83 / OLDS-85",
+     "url": "https://www.nhra.net/tech_specs/engine/blueprints/BUI-83.rtf",
+     "says": "181, 110 hp, induction 1-2, Rochester"
+    },
+    {
+     "name": "Curbside Classic: Sporty FWD Oldsmobiles of the 1980s",
+     "url": "https://www.curbsideclassic.com/automotive-histories/curbside-unicorns-the-sporty-oldsmobiles-of-the-1980s/",
+     "says": "fuel-injected Buick 3.0 V6 (125 hp, 150 lb-ft)"
+    }
+   ],
+   "note": ""
+  },
+  "years": {
+   "value": "1982-1988 (LK9 1982-1985, LN7 1985-1988)",
+   "sources": [
+    {
+     "name": "Wikipedia: Buick V6 engine (LK9/LN7)",
+     "url": "https://en.wikipedia.org/wiki/Buick_V6_engine",
+     "says": "Introduced in 1982 ... LK9 applications 1982-1985; LN7 introduced for 1985 ... replaced in 1989 with the 3.3"
+    },
+    {
+     "name": "Ate Up With Motor: Buick V6 history",
+     "url": "https://ateupwithmotor.com/model-histories/buick-special-skylark-rover-V8-3800-v6-history/",
+     "says": "for 1982 by a short-stroke 181 cu. in. engine"
+    },
+    {
+     "name": "Oldsmobile 1982 and 1988 catalogs (GM factory literature)",
+     "url": "https://oldcarbrochures.org/United%20States/Oldsmobile/1988-Oldsmobile/1988-Oldsmobile-Mid-Size-Brochure/index.html",
+     "says": "1982 Ciera: 3.0 V6 available; 1988 Cutlass Calais: available 3.0-liter 125 @ 4900"
+    },
+    {
+     "name": "NHRA engine blueprints BUI-83 .. BUI-88",
+     "url": "https://www.nhra.net/tech_specs/engine/blueprints/BUI-88.rtf",
+     "says": "181 listed 1983, 1984, 1985, 1986, 1988"
+    }
+   ],
+   "note": ""
+  }
+ },
+ "variants": [
+  {
+   "year": "1982-1985",
+   "hp": 110,
+   "hp_basis": "SAE net",
+   "compression_ratio": null,
+   "code": "LK9 (VIN E)",
+   "induction": "2-bbl (Rochester E2ME)",
+   "sources": [
+    {
+     "name": "Wikipedia: Buick V6 engine / Oldsmobile Cutlass Ciera",
+     "url": "https://en.wikipedia.org/wiki/Buick_V6_engine",
+     "says": "LK9 1982-1985 110 hp at 4,800 rpm; Ciera table 1982-1985 3.0 L LK9 V6 110 hp"
+    },
+    {
+     "name": "Curbside Classic: Sporty FWD Oldsmobiles of the 1980s",
+     "url": "https://www.curbsideclassic.com/automotive-histories/curbside-unicorns-the-sporty-oldsmobiles-of-the-1980s/",
+     "says": "initial Ciera options included Buick's new 3.0 V6 (110 hp, 145 lb-ft)"
+    },
+    {
+     "name": "NHRA engine blueprints BUI-83 / OLDS-85",
+     "url": "https://www.nhra.net/tech_specs/engine/blueprints/BUI-83.rtf",
+     "says": "1983 Buick 181 110 hp 1-2 Rochester; 1985 Olds 181 110 hp 1-2"
+    }
+   ],
+   "note": "Used in 1982-85 Buick Century and Oldsmobile Cutlass Ciera (also 1985 Electra/98 per Wikipedia). NHRA's 1984 and 1985 Buick sheets list 112 and 111 hp for the 181 2-bbl; the 1983 Buick and 1985 Olds sheets give 110. Olds catalogs list the 3.0 2-bbl but print no hp figure. No 1982-specific third source beyond Wikipedia and Curbside Classic (NHRA starts at 1983)."
+  },
+  {
+   "year": "1985-1988",
+   "hp": 125,
+   "hp_basis": "SAE net",
+   "compression_ratio": null,
+   "code": "LN7 (VIN L)",
+   "induction": "MPFI",
+   "sources": [
+    {
+     "name": "Oldsmobile 1988 Mid-Size catalog p.18 + 1986 Fuel Economy Estimate Sheet (GM factory literature)",
+     "url": "https://oldcarbrochures.org/United%20States/Oldsmobile/1988-Oldsmobile/1988-Oldsmobile-Mid-Size-Brochure/index.html",
+     "says": "3.0-liter ... 125 @ 4900, 150 @ 2400, Multiport; 1986 sheet: 3.0-liter (181 CID) V6 MFI, LN7, VIN L"
+    },
+    {
+     "name": "Wikipedia: Buick V6 engine (LN7) / Oldsmobile Cutlass Calais",
+     "url": "https://en.wikipedia.org/wiki/Buick_V6_engine",
+     "says": "LN7 125 hp at 4,900 rpm, 150 lb-ft at 2,400 rpm"
+    },
+    {
+     "name": "Curbside Classic: Sporty FWD Oldsmobiles of the 1980s",
+     "url": "https://www.curbsideclassic.com/automotive-histories/curbside-unicorns-the-sporty-oldsmobiles-of-the-1980s/",
+     "says": "Calais: fuel-injected Buick 3.0 V6 (125 hp, 150 lb-ft)"
+    },
+    {
+     "name": "NHRA engine blueprints BUI-85/86/88, OLDS-86/88, PONT-85/86",
+     "url": "https://www.nhra.net/tech_specs/engine/blueprints/BUI-86.rtf",
+     "says": "181, 125 hp"
+    }
+   ],
+   "note": "Used in 1985-88 Olds Calais, 1986-88 Buick Skylark / 1985-87 Somerset, 1985-86 Pontiac Grand Am. The earlier Skylark check found NHRA's 1987 sheet showing 130 hp; every other source gives 125."
+  }
+ ],
+ "unverified": {
+  "bore_in": "3.80 in: Oldsmobile 1988 Mid-Size catalog p.18 (Calais spec table 'Bore/Stroke (in.) 3.800/2.660') and Wikipedia ('same bore size as its larger sibling' = 3.8 in). Only 2 independent. Over-Drive's Buick V6 article copies Wikipedia word for word; spec sites (automobile-catalog, ultimatespecs) are excluded and some wrongly give 3.96. NHRA 181 rows have no bore.",
+  "stroke_in": "2.66 in: same two sources (Olds 1988 catalog '3.800/2.660'; Wikipedia 'smaller stroke of 2.66 in'). AUWM says only 'short-stroke'. Only 2.",
+  "compression_ratio": "DISPUTED. LK9: Wikipedia 8.45:1 (1982-83) / 8.4:1 (1984-85); NHRA blueprint figures 9.67 (1983) and 8.99 (1984-85) are not advertised ratings. LN7: Wikipedia 9.0:1; Olds 1988 catalog prints 8.5 to 1 (the same figure in every column of that table, so possibly a template error); NHRA lists 9.54-9.58. No three sources agree.",
+  "head_material": "Cast iron: Wikipedia infobox (Buick V6 family) and Ate Up With Motor (production Fireball V6 'reverted to cast iron'). Family-level only, 2 sources.",
+  "fuel_type": "Gasoline: Wikipedia infobox only (the EPA rows checked carry no fuel field). Unverified.",
+  "rod_length_in": "Not found in any acceptable source (NHRA 181 rows have no rod length)."
+ },
+ "unverified_variants": []
+}

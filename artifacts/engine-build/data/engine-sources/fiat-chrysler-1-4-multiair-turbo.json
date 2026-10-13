@@ -1,0 +1,406 @@
+{
+ "name": "Fiat/Chrysler 1.4L MultiAir Turbo I4 (FIRE family)",
+ "fields": {
+  "bore_in": {
+   "value": 2.8346,
+   "sources": [
+    {
+     "name": "Stellantis (Chrysler Group) media: 2013 Dodge Dart powertrain lineup incl. 1.4L MultiAir Turbo (release 11858; Canada version 11987)",
+     "url": "https://media.stellantisnorthamerica.com/newsrelease.do?id=11858",
+     "says": "The bore is 72 mm and stroke 84 mm for a total displacement of 1,368 cc"
+    },
+    {
+     "name": "Ward's (WardsAuto), Mar 5 2012: Fiat 500 Gets Big Boost With Turbo Abarth (same 1.4 MultiAir Turbo)",
+     "url": "https://www.wardsauto.com/test-drives-new-vehicles/fiat-500-gets-big-boost-with-turbo-abarth",
+     "says": "Bore x stroke 72 x 84 mm"
+    },
+    {
+     "name": "Wikipedia: Fiat FIRE engine",
+     "url": "https://en.wikipedia.org/wiki/Fiat_FIRE_engine",
+     "says": "72 mm x 84 mm bore x stroke (1.4 L)"
+    }
+   ],
+   "note": "72.0 mm."
+  },
+  "stroke_in": {
+   "value": 3.3071,
+   "sources": [
+    {
+     "name": "Stellantis (Chrysler Group) media: 2013 Dodge Dart powertrain lineup incl. 1.4L MultiAir Turbo (release 11858; Canada version 11987)",
+     "url": "https://media.stellantisnorthamerica.com/newsrelease.do?id=11858",
+     "says": "stroke 84 mm"
+    },
+    {
+     "name": "Ward's (WardsAuto), Mar 5 2012: Fiat 500 Gets Big Boost With Turbo Abarth (same 1.4 MultiAir Turbo)",
+     "url": "https://www.wardsauto.com/test-drives-new-vehicles/fiat-500-gets-big-boost-with-turbo-abarth",
+     "says": "72 x 84 mm"
+    },
+    {
+     "name": "Wikipedia: Fiat FIRE engine",
+     "url": "https://en.wikipedia.org/wiki/Fiat_FIRE_engine",
+     "says": "72 mm x 84 mm"
+    }
+   ],
+   "note": "84.0 mm."
+  },
+  "displacement_ci": {
+   "value": 83,
+   "sources": [
+    {
+     "name": "The Auto Channel (Carey Russ): 2013 Fiat 500 Abarth review, specifications",
+     "url": "https://www.theautochannel.com/news/2013/04/12/072293-2013-fiat-500-abarth-carey-russ-review.html",
+     "says": "1.4 liters / 83 cu. in."
+    },
+    {
+     "name": "Stellantis (Chrysler Group) media: 2013 Dodge Dart powertrain lineup incl. 1.4L MultiAir Turbo (release 11858; Canada version 11987)",
+     "url": "https://media.stellantisnorthamerica.com/newsrelease.do?id=11858",
+     "says": "1,368 cc (= 83.5 ci)"
+    },
+    {
+     "name": "Wikipedia: Fiat FIRE engine",
+     "url": "https://en.wikipedia.org/wiki/Fiat_FIRE_engine",
+     "says": "1,368 cc"
+    }
+   ],
+   "note": "1,368 cc = 83.5 ci."
+  },
+  "displacement_l": {
+   "value": 1.4,
+   "sources": [
+    {
+     "name": "Stellantis (Chrysler Group) media: 2013 Dodge Dart powertrain lineup incl. 1.4L MultiAir Turbo (release 11858; Canada version 11987)",
+     "url": "https://media.stellantisnorthamerica.com/newsrelease.do?id=11858",
+     "says": "1,368 cc"
+    },
+    {
+     "name": "Wikipedia: Fiat FIRE engine",
+     "url": "https://en.wikipedia.org/wiki/Fiat_FIRE_engine",
+     "says": "1.4 L (1,368 cc)"
+    },
+    {
+     "name": "EPA fueleconomy.gov: 2013 Dodge Dart 1.4 L Turbo (vehicle 32403; 2013-2016 Dart/Dart Aero 1.4T listed)",
+     "url": "https://www.fueleconomy.gov/ws/rest/vehicle/32403",
+     "says": "displ 1.4"
+    },
+    {
+     "name": "The Auto Channel (Carey Russ): 2013 Fiat 500 Abarth review, specifications",
+     "url": "https://www.theautochannel.com/news/2013/04/12/072293-2013-fiat-500-abarth-carey-russ-review.html",
+     "says": "1.4 liters"
+    }
+   ],
+   "note": ""
+  },
+  "num_cylinders": {
+   "value": 4,
+   "sources": [
+    {
+     "name": "EPA fueleconomy.gov: 2013 Dodge Dart 1.4 L Turbo (vehicle 32403; 2013-2016 Dart/Dart Aero 1.4T listed)",
+     "url": "https://www.fueleconomy.gov/ws/rest/vehicle/32403",
+     "says": "cylinders 4"
+    },
+    {
+     "name": "The Auto Channel (Carey Russ): 2013 Fiat 500 Abarth review, specifications",
+     "url": "https://www.theautochannel.com/news/2013/04/12/072293-2013-fiat-500-abarth-carey-russ-review.html",
+     "says": "inline 4-cylinder"
+    },
+    {
+     "name": "Ward's (WardsAuto), Mar 5 2012: Fiat 500 Gets Big Boost With Turbo Abarth (same 1.4 MultiAir Turbo)",
+     "url": "https://www.wardsauto.com/test-drives-new-vehicles/fiat-500-gets-big-boost-with-turbo-abarth",
+     "says": "SOHC 4-cyl."
+    }
+   ],
+   "note": ""
+  },
+  "configuration": {
+   "value": "Inline-four",
+   "sources": [
+    {
+     "name": "The Auto Channel (Carey Russ): 2013 Fiat 500 Abarth review, specifications",
+     "url": "https://www.theautochannel.com/news/2013/04/12/072293-2013-fiat-500-abarth-carey-russ-review.html",
+     "says": "MultiAir 16-valve inline 4-cylinder"
+    },
+    {
+     "name": "Ward's (WardsAuto), Mar 5 2012: Fiat 500 Gets Big Boost With Turbo Abarth (same 1.4 MultiAir Turbo)",
+     "url": "https://www.wardsauto.com/test-drives-new-vehicles/fiat-500-gets-big-boost-with-turbo-abarth",
+     "says": "SOHC 4-cyl"
+    },
+    {
+     "name": "Wikipedia: Fiat FIRE engine",
+     "url": "https://en.wikipedia.org/wiki/Fiat_FIRE_engine",
+     "says": "FIRE straight-four family"
+    },
+    {
+     "name": "EPA fueleconomy.gov: 2013 Dodge Dart 1.4 L Turbo (vehicle 32403; 2013-2016 Dart/Dart Aero 1.4T listed)",
+     "url": "https://www.fueleconomy.gov/ws/rest/vehicle/32403",
+     "says": "4 cyl"
+    }
+   ],
+   "note": ""
+  },
+  "valvetrain": {
+   "value": "SOHC, 4 valves/cyl (16V); exhaust valves cam-driven, intake valves electro-hydraulic MultiAir (variable timing and lift)",
+   "sources": [
+    {
+     "name": "Ward's (WardsAuto), Mar 5 2012: Fiat 500 Gets Big Boost With Turbo Abarth (same 1.4 MultiAir Turbo)",
+     "url": "https://www.wardsauto.com/test-drives-new-vehicles/fiat-500-gets-big-boost-with-turbo-abarth",
+     "says": "1.4L turbocharged MultiAir port-injection SOHC 4-cyl."
+    },
+    {
+     "name": "The Auto Channel (Carey Russ): 2013 Fiat 500 Abarth review, specifications",
+     "url": "https://www.theautochannel.com/news/2013/04/12/072293-2013-fiat-500-abarth-carey-russ-review.html",
+     "says": "SOHC turbocharged, intercooled, MultiAir 16-valve"
+    },
+    {
+     "name": "Wikipedia: Fiat FIRE engine",
+     "url": "https://en.wikipedia.org/wiki/Fiat_FIRE_engine",
+     "says": "16V MultiAir Turbo; electro-hydraulic intake valve driving with variable timing, lift and profile"
+    },
+    {
+     "name": "Stellantis (Chrysler Group) media: 2013 Dodge Dart powertrain lineup incl. 1.4L MultiAir Turbo (release 11858; Canada version 11987)",
+     "url": "https://media.stellantisnorthamerica.com/newsrelease.do?id=11858",
+     "says": "MultiAir is an electro-hydraulic system that can control intake air, cylinder by cylinder"
+    }
+   ],
+   "note": ""
+  },
+  "compression_ratio": {
+   "value": "9.8:1",
+   "sources": [
+    {
+     "name": "Stellantis (Chrysler Group) media: 2013 Dodge Dart powertrain lineup incl. 1.4L MultiAir Turbo (release 11858; Canada version 11987)",
+     "url": "https://media.stellantisnorthamerica.com/newsrelease.do?id=11858",
+     "says": "compression ratio of 9.8:1 (Canadian release 11987; US release prints \"9.8:18:1\", a typo)"
+    },
+    {
+     "name": "Ward's (WardsAuto), Mar 5 2012: Fiat 500 Gets Big Boost With Turbo Abarth (same 1.4 MultiAir Turbo)",
+     "url": "https://www.wardsauto.com/test-drives-new-vehicles/fiat-500-gets-big-boost-with-turbo-abarth",
+     "says": "Compression ratio 9.8:1"
+    },
+    {
+     "name": "The Auto Channel (Carey Russ): 2013 Fiat 500 Abarth review, specifications",
+     "url": "https://www.theautochannel.com/news/2013/04/12/072293-2013-fiat-500-abarth-carey-russ-review.html",
+     "says": "9.8:1"
+    }
+   ],
+   "note": ""
+  },
+  "block_material": {
+   "value": "Cast iron (structural aluminum bedplate)",
+   "sources": [
+    {
+     "name": "Stellantis (Chrysler Group) media: 2013 Dodge Dart powertrain lineup incl. 1.4L MultiAir Turbo (release 11858; Canada version 11987)",
+     "url": "https://media.stellantisnorthamerica.com/newsrelease.do?id=11858",
+     "says": "durable cast-iron block and a structural aluminum bedplate"
+    },
+    {
+     "name": "Ward's (WardsAuto), Mar 5 2012: Fiat 500 Gets Big Boost With Turbo Abarth (same 1.4 MultiAir Turbo)",
+     "url": "https://www.wardsauto.com/test-drives-new-vehicles/fiat-500-gets-big-boost-with-turbo-abarth",
+     "says": "cast-iron block/aluminum head"
+    },
+    {
+     "name": "The Auto Channel (Carey Russ): 2013 Fiat 500 Abarth review, specifications",
+     "url": "https://www.theautochannel.com/news/2013/04/12/072293-2013-fiat-500-abarth-carey-russ-review.html",
+     "says": "cast iron block beneath an aluminum head"
+    },
+    {
+     "name": "Wikipedia: Fiat FIRE engine",
+     "url": "https://en.wikipedia.org/wiki/Fiat_FIRE_engine",
+     "says": "block: Cast iron"
+    }
+   ],
+   "note": ""
+  },
+  "head_material": {
+   "value": "Aluminum",
+   "sources": [
+    {
+     "name": "Ward's (WardsAuto), Mar 5 2012: Fiat 500 Gets Big Boost With Turbo Abarth (same 1.4 MultiAir Turbo)",
+     "url": "https://www.wardsauto.com/test-drives-new-vehicles/fiat-500-gets-big-boost-with-turbo-abarth",
+     "says": "cast-iron block/aluminum head"
+    },
+    {
+     "name": "The Auto Channel (Carey Russ): 2013 Fiat 500 Abarth review, specifications",
+     "url": "https://www.theautochannel.com/news/2013/04/12/072293-2013-fiat-500-abarth-carey-russ-review.html",
+     "says": "aluminum head"
+    },
+    {
+     "name": "Wikipedia: Fiat FIRE engine",
+     "url": "https://en.wikipedia.org/wiki/Fiat_FIRE_engine",
+     "says": "head: aluminium"
+    }
+   ],
+   "note": ""
+  },
+  "induction": {
+   "value": "Turbocharged (single turbo, intercooled), fuel-injected",
+   "sources": [
+    {
+     "name": "Stellantis (Chrysler Group) media: 2013 Dodge Dart powertrain lineup incl. 1.4L MultiAir Turbo (release 11858; Canada version 11987)",
+     "url": "https://media.stellantisnorthamerica.com/newsrelease.do?id=11858",
+     "says": "Intercooled Turbocharger provides 160 Horsepower; single turbocharger"
+    },
+    {
+     "name": "Ward's (WardsAuto), Mar 5 2012: Fiat 500 Gets Big Boost With Turbo Abarth (same 1.4 MultiAir Turbo)",
+     "url": "https://www.wardsauto.com/test-drives-new-vehicles/fiat-500-gets-big-boost-with-turbo-abarth",
+     "says": "turbocharged MultiAir port-injection; twin intercoolers (Abarth)"
+    },
+    {
+     "name": "The Auto Channel (Carey Russ): 2013 Fiat 500 Abarth review, specifications",
+     "url": "https://www.theautochannel.com/news/2013/04/12/072293-2013-fiat-500-abarth-carey-russ-review.html",
+     "says": "turbocharged, intercooled"
+    },
+    {
+     "name": "EPA fueleconomy.gov: 2013 Dodge Dart 1.4 L Turbo (vehicle 32403; 2013-2016 Dart/Dart Aero 1.4T listed)",
+     "url": "https://www.fueleconomy.gov/ws/rest/vehicle/32403",
+     "says": "tCharger T (turbo)"
+    }
+   ],
+   "note": "Port (multipoint) injection stated by Wards only; see unverified."
+  },
+  "years": {
+   "value": "2013-2016 in the Dodge Dart (engine also used in Fiat 500 Abarth etc. from 2012 in the US)",
+   "sources": [
+    {
+     "name": "Wikipedia: Dodge Dart (PF)",
+     "url": "https://en.wikipedia.org/wiki/Dodge_Dart_(PF)",
+     "says": "1.4 L MultiAir turbo, 2013-2016 Dart"
+    },
+    {
+     "name": "MoTales: New Dodge Dart 2013-16",
+     "url": "https://www.motales.com/cars/Dodge/new-dart.php",
+     "says": "Aero trim (2013+) ... standard engine in the 2016 \"Turbo\" model"
+    },
+    {
+     "name": "EPA fueleconomy.gov: 2013 Dodge Dart 1.4 L Turbo (vehicle 32403; 2013-2016 Dart/Dart Aero 1.4T listed)",
+     "url": "https://www.fueleconomy.gov/ws/rest/vehicle/32403",
+     "says": "1.4 L turbo Dart listed 2013, 2014, 2015, 2016"
+    },
+    {
+     "name": "Wikipedia: Fiat FIRE engine",
+     "url": "https://en.wikipedia.org/wiki/Fiat_FIRE_engine",
+     "says": "Dodge Dart (PF) (2013-2016)"
+    }
+   ],
+   "note": ""
+  }
+ },
+ "variants": [
+  {
+   "year": 2013,
+   "hp": 160,
+   "hp_basis": "net (SAE)",
+   "compression_ratio": 9.8,
+   "code": "1.4L MultiAir Intercooled Turbo (Rallye, Limited, Aero)",
+   "induction": "turbo, port injection",
+   "sources": [
+    {
+     "name": "Stellantis media: Dodge Hits Bull's Eye With All-new Compact Car - The Dodge Dart",
+     "url": "https://media.stellantisnorthamerica.com/newsrelease.do?id=12885",
+     "says": "160 hp 1.4-liter MultiAir Intercooled Turbo"
+    },
+    {
+     "name": "Wikipedia: Dodge Dart (PF)",
+     "url": "https://en.wikipedia.org/wiki/Dodge_Dart_(PF)",
+     "says": "1.4 L MultiAir turbo 160 hp"
+    },
+    {
+     "name": "Auto123: 2013 Dodge Dart preview (search excerpt)",
+     "url": "https://www.auto123.com/en/news/2013-dodge-dart-preview/56213/",
+     "says": "1.4L MultiAir 160 hp, 184 lb-ft"
+    },
+    {
+     "name": "MoTales: New Dodge Dart 2013-16",
+     "url": "https://www.motales.com/cars/Dodge/new-dart.php",
+     "says": "160 horsepower and 184 pound-feet"
+    }
+   ]
+  },
+  {
+   "year": 2014,
+   "hp": 160,
+   "hp_basis": "net (SAE)",
+   "compression_ratio": 9.8,
+   "code": "1.4L MultiAir Turbo (Aero)",
+   "induction": "turbo, port injection",
+   "sources": [
+    {
+     "name": "Stellantis media: Dodge Simplifies Dart Lineup for 2014",
+     "url": "https://media.stellantisnorthamerica.com/newsrelease.do?id=14675",
+     "says": "2014 Dart Aero: 1.4-liter MultiAir Turbo, 160 hp"
+    },
+    {
+     "name": "Wikipedia: Dodge Dart (PF)",
+     "url": "https://en.wikipedia.org/wiki/Dodge_Dart_(PF)",
+     "says": "Aero offered the 1.4 MultiAir turbo, 160 hp"
+    },
+    {
+     "name": "MoTales: New Dodge Dart 2013-16",
+     "url": "https://www.motales.com/cars/Dodge/new-dart.php",
+     "says": "160 horsepower"
+    }
+   ]
+  },
+  {
+   "year": 2015,
+   "hp": 160,
+   "hp_basis": "net (SAE)",
+   "compression_ratio": 9.8,
+   "code": "1.4L MultiAir Turbo (Aero)",
+   "induction": "turbo, port injection",
+   "sources": [
+    {
+     "name": "Wikipedia: Dodge Dart (PF)",
+     "url": "https://en.wikipedia.org/wiki/Dodge_Dart_(PF)",
+     "says": "1.4 MultiAir turbo 160 hp"
+    },
+    {
+     "name": "Autoblog: 2015 Dodge Dart review (search excerpt)",
+     "url": "https://www.autoblog.com/buy/2015-Dodge-Dart/review/",
+     "says": "160-hp 1.4 turbo (Aero)"
+    },
+    {
+     "name": "MoTales: New Dodge Dart 2013-16",
+     "url": "https://www.motales.com/cars/Dodge/new-dart.php",
+     "says": "160 horsepower"
+    }
+   ]
+  },
+  {
+   "year": 2016,
+   "hp": 160,
+   "hp_basis": "net (SAE)",
+   "compression_ratio": 9.8,
+   "code": "1.4L MultiAir Turbo (Aero / Turbo model)",
+   "induction": "turbo, port injection",
+   "sources": [
+    {
+     "name": "Wikipedia: Dodge Dart (PF)",
+     "url": "https://en.wikipedia.org/wiki/Dodge_Dart_(PF)",
+     "says": "1.4 MultiAir turbo 160 hp"
+    },
+    {
+     "name": "Autoblog: 2016 Dodge Dart review (search excerpt)",
+     "url": "https://www.autoblog.com/buy/2016-Dodge-Dart/review/",
+     "says": "160-hp 1.4 turbo (Aero)"
+    },
+    {
+     "name": "MoTales: New Dodge Dart 2013-16",
+     "url": "https://www.motales.com/cars/Dodge/new-dart.php",
+     "says": "160 hp; standard in the 2016 Turbo model"
+    },
+    {
+     "name": "Dodge 2016 Dart brochure (PDF)",
+     "url": "https://www.dodge.com/assets/pdf/brochure/2016dart.pdf",
+     "says": "1.4L intercooled turbo with MultiAir, 160 hp"
+    }
+   ]
+  }
+ ],
+ "unverified": {
+  "firing_order": "1-3-4-2 expected for an inline-four but no source found.",
+  "rod_length_in": "Not published (forged-steel rods confirmed by Stellantis, length not given).",
+  "fuel_type": "Gasoline; EPA lists Premium Gasoline for the 2013-16 Dart 1.4T. No 3-source octane statement.",
+  "induction_injection_type": "Port fuel injection: Wards (Abarth) only."
+ },
+ "unverified_variants": []
+}

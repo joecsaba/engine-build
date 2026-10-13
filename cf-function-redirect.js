@@ -81,7 +81,22 @@ function handler(event) {
     '/engines/chevrolet/chevrolet-427ci/427ci-4-125x4-14-9cr': '/engines/chevrolet/chevrolet-427ci/427ci-4-125x4',
     // Chrysler B 383: bore/stroke corrected to 4.25 x 3.375 (2026-10-12); the
     // 10:1 records now share one page.
-    '/engines/plymouth/b/383-b-v8': '/engines/plymouth/b/e'
+    '/engines/plymouth/b/383-b-v8': '/engines/plymouth/b/e',
+    // Ford FE 428 and 385-series 429/460 bore/stroke corrected (2026-10-12):
+    // the NHRA 428 records now match the FE page instead of standing alone,
+    // and the 429/460 pages merged once their two bore figures became one.
+    '/engines/ford/ford-428ci': '/engines/mercury/fe/428',
+    '/engines/ford/ford-428ci/428ci-4-132x3-984': '/engines/mercury/fe/428-cobra-jet-v8',
+    '/engines/ford/ford-428ci/428ci-4-132x3-984-11cr': '/engines/mercury/fe/428',
+    '/engines/shelby/shelby-428ci': '/engines/mercury/fe/428',
+    '/engines/shelby/shelby-428ci/428ci-4-132x3-984': '/engines/mercury/fe/428-cobra-jet-v8',
+    '/engines/shelby/shelby-428ci/428ci-4-132x3-984-11-6cr': '/engines/mercury/fe/428',
+    '/engines/mercury/385/429-10-5cr': '/engines/mercury/385/429',
+    '/engines/mercury/385/460-low-comp': '/engines/mercury/385/460ci-4-36x3-85',
+    '/engines/mercury/385/460-8cr': '/engines/mercury/385/460ci-4-36x3-85',
+    // The Buick-built 225 V6 sold in the 1964 Oldsmobile F-85 now has its own page.
+    '/engines/oldsmobile/oldsmobile-225ci': '/engines/buick/buick-225ci',
+    '/engines/oldsmobile/oldsmobile-225ci/225ci-3-75x3-4': '/engines/buick/buick-225ci/225ci-3-75x3-4'
   };
   var corrected = CORRECTED[uri.replace(/\/$/, '')];
   if (corrected) {

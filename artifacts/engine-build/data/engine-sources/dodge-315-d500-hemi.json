@@ -1,0 +1,364 @@
+{
+ "name": "Dodge 315 V8 (D-500 Hemi; Super Red Ram poly)",
+ "fields": {
+  "bore_in": {
+   "value": 3.625,
+   "sources": [
+    {
+     "name": "Dodge factory 1956 Full Line Folder (DMA-2667), specifications p.8",
+     "url": "https://oldcarbrochures.org/United%20States/Dodge/1956_Dodge/1956_Dodge_Full_Line_Folder/slides/1956_Dodge_Full_Line_Folder-08.html",
+     "says": "Super Red Ram V-8: Bore, 3.63 in. Stroke, 3.80 in. 315 cu in"
+    },
+    {
+     "name": "MoTales (David Zatz): Poly engines",
+     "url": "https://www.motales.com/engines/poly.php",
+     "says": "315: bore 3.625, stroke 3.8"
+    },
+    {
+     "name": "Over-Drive Magazine (classic-car fact site): 1953-1957 Dodge Hemi V-8 Engine Facts",
+     "url": "https://over-drive-magazine.com/2026/04/16/1953-1957-dodge-hemi-v-8-engine-facts/",
+     "says": "1956 315: 3.625 x 3.80"
+    },
+    {
+     "name": "Over-Drive Magazine: 1956 Dodge Facts, Figures, and Specifications",
+     "url": "https://over-drive-magazine.com/2025/08/06/1956-dodge-fact-sheet/",
+     "says": "D-500: 3.63 x 3.80"
+    }
+   ],
+   "note": "Factory 3.63. Over-Drive's 1956 fact sheet also prints 3.763 for the poly 315 (typo)."
+  },
+  "stroke_in": {
+   "value": 3.8,
+   "sources": [
+    {
+     "name": "Dodge factory 1956 Full Line Folder (DMA-2667), specifications p.8",
+     "url": "https://oldcarbrochures.org/United%20States/Dodge/1956_Dodge/1956_Dodge_Full_Line_Folder/slides/1956_Dodge_Full_Line_Folder-08.html",
+     "says": "Stroke, 3.80 in"
+    },
+    {
+     "name": "Wikipedia: Chrysler Hemi engine (Dodge section; cites Standard Catalog of Chrysler)",
+     "url": "https://en.wikipedia.org/wiki/Chrysler_Hemi_engine",
+     "says": "longer 3.80 in stroke and a taller raised-deck block"
+    },
+    {
+     "name": "MoTales (David Zatz): Poly engines",
+     "url": "https://www.motales.com/engines/poly.php",
+     "says": "stroke 3.8"
+    },
+    {
+     "name": "Over-Drive Magazine (classic-car fact site): 1953-1957 Dodge Hemi V-8 Engine Facts",
+     "url": "https://over-drive-magazine.com/2026/04/16/1953-1957-dodge-hemi-v-8-engine-facts/",
+     "says": "3.80 inches"
+    }
+   ],
+   "note": ""
+  },
+  "displacement_ci": {
+   "value": 315,
+   "sources": [
+    {
+     "name": "Dodge factory 1956 Full Line Folder (DMA-2667), specifications p.8",
+     "url": "https://oldcarbrochures.org/United%20States/Dodge/1956_Dodge/1956_Dodge_Full_Line_Folder/slides/1956_Dodge_Full_Line_Folder-08.html",
+     "says": "Piston displacement, 315 cu in"
+    },
+    {
+     "name": "Wikipedia: Chrysler Hemi engine (Dodge section; cites Standard Catalog of Chrysler)",
+     "url": "https://en.wikipedia.org/wiki/Chrysler_Hemi_engine",
+     "says": "increased the displacement to 315 cu in"
+    },
+    {
+     "name": "MoTales (David Zatz): Poly engines",
+     "url": "https://www.motales.com/engines/poly.php",
+     "says": "A new 315 cubic inch engine"
+    },
+    {
+     "name": "Over-Drive Magazine (classic-car fact site): 1953-1957 Dodge Hemi V-8 Engine Facts",
+     "url": "https://over-drive-magazine.com/2026/04/16/1953-1957-dodge-hemi-v-8-engine-facts/",
+     "says": "315 CID"
+    }
+   ],
+   "note": ""
+  },
+  "displacement_l": {
+   "value": 5.2,
+   "sources": [
+    {
+     "name": "Wikipedia: Chrysler Hemi engine (Dodge section; cites Standard Catalog of Chrysler)",
+     "url": "https://en.wikipedia.org/wiki/Chrysler_Hemi_engine",
+     "says": "315 cu in (5.2 L)"
+    },
+    {
+     "name": "Dodge factory 1956 Full Line Folder (DMA-2667), specifications p.8",
+     "url": "https://oldcarbrochures.org/United%20States/Dodge/1956_Dodge/1956_Dodge_Full_Line_Folder/slides/1956_Dodge_Full_Line_Folder-08.html",
+     "says": "315 ci (= 5.16 L)"
+    },
+    {
+     "name": "MoTales (David Zatz): Poly engines",
+     "url": "https://www.motales.com/engines/poly.php",
+     "says": "315 ci (= 5.16 L)"
+    }
+   ],
+   "note": "5.16 L exact."
+  },
+  "num_cylinders": {
+   "value": 8,
+   "sources": [
+    {
+     "name": "Dodge factory 1956 Full Line Folder (DMA-2667), specifications p.8",
+     "url": "https://oldcarbrochures.org/United%20States/Dodge/1956_Dodge/1956_Dodge_Full_Line_Folder/slides/1956_Dodge_Full_Line_Folder-08.html",
+     "says": "Eight-cylinder, overhead valve, V-type"
+    },
+    {
+     "name": "Wikipedia: Chrysler Hemi engine (Dodge section; cites Standard Catalog of Chrysler)",
+     "url": "https://en.wikipedia.org/wiki/Chrysler_Hemi_engine",
+     "says": "V8"
+    },
+    {
+     "name": "Over-Drive Magazine: 1956 Dodge Facts, Figures, and Specifications",
+     "url": "https://over-drive-magazine.com/2025/08/06/1956-dodge-fact-sheet/",
+     "says": "315 CID V-8"
+    }
+   ],
+   "note": ""
+  },
+  "configuration": {
+   "value": "V8 (90-degree)",
+   "sources": [
+    {
+     "name": "Dodge factory 1956 Full Line Folder (DMA-2667), specifications p.8",
+     "url": "https://oldcarbrochures.org/United%20States/Dodge/1956_Dodge/1956_Dodge_Full_Line_Folder/slides/1956_Dodge_Full_Line_Folder-08.html",
+     "says": "V-type eight"
+    },
+    {
+     "name": "Wikipedia: Chrysler Hemi engine (Dodge section; cites Standard Catalog of Chrysler)",
+     "url": "https://en.wikipedia.org/wiki/Chrysler_Hemi_engine",
+     "says": "V8"
+    },
+    {
+     "name": "Over-Drive Magazine: 1956 Dodge Facts, Figures, and Specifications",
+     "url": "https://over-drive-magazine.com/2025/08/06/1956-dodge-fact-sheet/",
+     "says": "V-8"
+    }
+   ],
+   "note": "90-degree angle per 1955 Data Book for the same family."
+  },
+  "valvetrain": {
+   "value": "OHV pushrod, 2 valves/cyl. D-500 = hemispherical heads (dual rocker shafts, larger valves); base Super Red Ram = polyspherical heads",
+   "sources": [
+    {
+     "name": "Wikipedia: Chrysler Hemi engine (Dodge section; cites Standard Catalog of Chrysler)",
+     "url": "https://en.wikipedia.org/wiki/Chrysler_Hemi_engine",
+     "says": "used polyspheric rather than hemi heads on the base version; D-500 had a larger-valved hemispherical head"
+    },
+    {
+     "name": "Over-Drive Magazine: 1956 Dodge Facts, Figures, and Specifications",
+     "url": "https://over-drive-magazine.com/2025/08/06/1956-dodge-fact-sheet/",
+     "says": "315 2-bbl/4-bbl: polyspheric head; D-500: hemispherical head"
+    },
+    {
+     "name": "MoTales (David Zatz): Poly engines",
+     "url": "https://www.motales.com/engines/poly.php",
+     "says": "315 poly 218/230 hp"
+    },
+    {
+     "name": "Over-Drive Magazine (classic-car fact site): 1953-1957 Dodge Hemi V-8 Engine Facts",
+     "url": "https://over-drive-magazine.com/2026/04/16/1953-1957-dodge-hemi-v-8-engine-facts/",
+     "says": "D-500 hydraulic lifters (D-500-1 mechanical)"
+    }
+   ],
+   "note": ""
+  },
+  "compression_ratio": {
+   "value": "8.0:1 (Super Red Ram poly); 9.25:1 (D-500 hemi)",
+   "sources": [
+    {
+     "name": "Dodge factory 1956 Full Line Folder (DMA-2667), specifications p.8",
+     "url": "https://oldcarbrochures.org/United%20States/Dodge/1956_Dodge/1956_Dodge_Full_Line_Folder/slides/1956_Dodge_Full_Line_Folder-08.html",
+     "says": "Super Red Ram V-8: compression ratio 8.0 to 1"
+    },
+    {
+     "name": "Over-Drive Magazine: 1956 Dodge Facts, Figures, and Specifications",
+     "url": "https://over-drive-magazine.com/2025/08/06/1956-dodge-fact-sheet/",
+     "says": "315 poly 8.0:1; D-500 9.25:1"
+    },
+    {
+     "name": "Over-Drive Magazine (classic-car fact site): 1953-1957 Dodge Hemi V-8 Engine Facts",
+     "url": "https://over-drive-magazine.com/2026/04/16/1953-1957-dodge-hemi-v-8-engine-facts/",
+     "says": "D-500 9.25:1"
+    },
+    {
+     "name": "Hooniverse: Obscure Muscle Car Garage, the 1956-61 Dodge D-500",
+     "url": "https://www.hooniverse.com/hooniverse-obscure-muscle-car-garage-the-1956-61-dodge-d-500/",
+     "says": "higher compression (9.25:1)"
+    },
+    {
+     "name": "Wikipedia: Dodge Coronet (D-500 text)",
+     "url": "https://en.wikipedia.org/wiki/Dodge_Coronet",
+     "says": "D-500 (315 hemi, 9.25:1, 4-bbl Carter WCFB)"
+    }
+   ],
+   "note": "9.25:1 D-500 from Over-Drive, Hooniverse, Wikipedia (Hooniverse text closely follows Wikipedia); no factory figure seen for the D-500."
+  },
+  "induction": {
+   "value": "Carburetor: 2-bbl (Super Red Ram) or 4-bbl Carter WCFB (Super-Powered Super Red Ram, D-500); dual 4-bbl on race-only D-500-1",
+   "sources": [
+    {
+     "name": "Dodge factory 1956 Full Line Folder (DMA-2667), specifications p.8",
+     "url": "https://oldcarbrochures.org/United%20States/Dodge/1956_Dodge/1956_Dodge_Full_Line_Folder/slides/1956_Dodge_Full_Line_Folder-08.html",
+     "says": "Super-Powered Super Red Ram V-8: Especially equipped with 4-barrel carburetor, dual exhaust"
+    },
+    {
+     "name": "Over-Drive Magazine: 1956 Dodge Facts, Figures, and Specifications",
+     "url": "https://over-drive-magazine.com/2025/08/06/1956-dodge-fact-sheet/",
+     "says": "Stromberg 2-bbl; Carter 4-bbl WCFB-2303S; D-500 Carter WCFB 2443SA; D-500-1 dual Carter WCFB"
+    },
+    {
+     "name": "Wikipedia: Chrysler Hemi engine (Dodge section; cites Standard Catalog of Chrysler)",
+     "url": "https://en.wikipedia.org/wiki/Chrysler_Hemi_engine",
+     "says": "D-500 had a four-barrel carburetor; D-500-1 pair of Carter WCFB"
+    },
+    {
+     "name": "MoTales (David Zatz): Poly engines",
+     "url": "https://www.motales.com/engines/poly.php",
+     "says": "315 2V/4V"
+    }
+   ],
+   "note": ""
+  },
+  "years": {
+   "value": "1956 only (Dodge cars)",
+   "sources": [
+    {
+     "name": "Wikipedia: Chrysler Hemi engine (Dodge section; cites Standard Catalog of Chrysler)",
+     "url": "https://en.wikipedia.org/wiki/Chrysler_Hemi_engine",
+     "says": "For 1956, Dodge increased the displacement to 315"
+    },
+    {
+     "name": "MoTales (David Zatz): Poly engines",
+     "url": "https://www.motales.com/engines/poly.php",
+     "says": "1956 ... a new 315 cubic inch engine"
+    },
+    {
+     "name": "Over-Drive Magazine: 1956 Dodge Facts, Figures, and Specifications",
+     "url": "https://over-drive-magazine.com/2025/08/06/1956-dodge-fact-sheet/",
+     "says": "1956 Dodge 315"
+    },
+    {
+     "name": "Dodge factory 1956 Full Line Folder (DMA-2667), specifications p.8",
+     "url": "https://oldcarbrochures.org/United%20States/Dodge/1956_Dodge/1956_Dodge_Full_Line_Folder/slides/1956_Dodge_Full_Line_Folder-08.html",
+     "says": "1956 Full Line Folder 315"
+    }
+   ],
+   "note": "Replaced by the 325 for 1957."
+  }
+ },
+ "variants": [
+  {
+   "year": 1956,
+   "hp": 260,
+   "hp_basis": "gross",
+   "compression_ratio": 9.25,
+   "code": "D-500 (hemi), Carter 4-bbl",
+   "induction": "4-bbl",
+   "sources": [
+    {
+     "name": "Wikipedia: 1955 Dodge (covers 1955-56)",
+     "url": "https://en.wikipedia.org/wiki/1955_Dodge",
+     "says": "D-500 (315 Hemi-head V8): 260 hp and 330 lb-ft with four-barrel Carter"
+    },
+    {
+     "name": "MoTales (David Zatz, ex-Allpar): Original Hemi V8",
+     "url": "https://www.motales.com/engines/original-hemi.php",
+     "says": "1956 D500 (315): 260 hp / 330 lb-ft"
+    },
+    {
+     "name": "Over-Drive Magazine (classic-car fact site): 1953-1957 Dodge Hemi V-8 Engine Facts",
+     "url": "https://over-drive-magazine.com/2026/04/16/1953-1957-dodge-hemi-v-8-engine-facts/",
+     "says": "D-500 260 @ 4800"
+    },
+    {
+     "name": "Over-Drive Magazine: 1956 Dodge Facts, Figures, and Specifications",
+     "url": "https://over-drive-magazine.com/2025/08/06/1956-dodge-fact-sheet/",
+     "says": "D-500: 260 @ 4800, 9.25:1, hemispherical head"
+    },
+    {
+     "name": "Hooniverse: Obscure Muscle Car Garage, the 1956-61 Dodge D-500",
+     "url": "https://www.hooniverse.com/hooniverse-obscure-muscle-car-garage-the-1956-61-dodge-d-500/",
+     "says": "four-barrel Carter ... 260 hp and 330 ft lb"
+    }
+   ]
+  },
+  {
+   "year": 1956,
+   "hp": 230,
+   "hp_basis": "gross",
+   "compression_ratio": 8.0,
+   "code": "Super-Powered Super Red Ram (POLYSPHERICAL, 4-bbl, dual exhaust) - NOT a Hemi",
+   "induction": "4-bbl",
+   "sources": [
+    {
+     "name": "MoTales (David Zatz): Poly engines",
+     "url": "https://www.motales.com/engines/poly.php",
+     "says": "a four-barrel version was rated at 230 hp and 316 lb-ft"
+    },
+    {
+     "name": "Over-Drive Magazine: 1956 Dodge Facts, Figures, and Specifications",
+     "url": "https://over-drive-magazine.com/2025/08/06/1956-dodge-fact-sheet/",
+     "says": "315 4-barrel Power Pack: 230 @ 4400, 8.0:1, polyspheric head"
+    },
+    {
+     "name": "conceptcarz.com 1956 Dodge Coronet engine table (unattributed; weak corroboration)",
+     "url": "https://www.conceptcarz.com/s1982/Dodge-Coronet.aspx",
+     "says": "V8 315 CID 218/230 hp"
+    },
+    {
+     "name": "Dodge factory 1956 Full Line Folder (DMA-2667), specifications p.8",
+     "url": "https://oldcarbrochures.org/United%20States/Dodge/1956_Dodge/1956_Dodge_Full_Line_Folder/slides/1956_Dodge_Full_Line_Folder-08.html",
+     "says": "Super-Powered Super Red Ram V-8 (4-bbl) available on Coronet V-8s at extra cost (no hp printed)"
+    }
+   ],
+   "note": "The 230 hp rating belongs to the poly-head 315, not the D-500 Hemi."
+  },
+  {
+   "year": 1956,
+   "hp": 218,
+   "hp_basis": "gross",
+   "compression_ratio": 8.0,
+   "code": "Super Red Ram (polyspherical, 2-bbl) - Royal/Custom Royal standard",
+   "induction": "2-bbl",
+   "sources": [
+    {
+     "name": "MoTales (David Zatz): Poly engines",
+     "url": "https://www.motales.com/engines/poly.php",
+     "says": "two-barrel for the Royal and Custom Royal, claiming 218 hp"
+    },
+    {
+     "name": "Over-Drive Magazine: 1956 Dodge Facts, Figures, and Specifications",
+     "url": "https://over-drive-magazine.com/2025/08/06/1956-dodge-fact-sheet/",
+     "says": "315 2-barrel: 218 @ 4400, polyspheric"
+    },
+    {
+     "name": "conceptcarz.com 1956 Dodge Coronet engine table (unattributed; weak corroboration)",
+     "url": "https://www.conceptcarz.com/s1982/Dodge-Coronet.aspx",
+     "says": "V8 315 CID 218/230 hp"
+    }
+   ],
+   "note": "Not a Coronet standard engine; poly-head."
+  }
+ ],
+ "unverified": {
+  "rod_length_in": "6.62 in: Over-Drive only.",
+  "firing_order": "Not found.",
+  "block_material": "Cast iron: Wikipedia, Over-Drive only.",
+  "head_material": "Not found (cast iron presumed).",
+  "fuel_type": "Gasoline (carbureted, obvious) but stated explicitly only by Wikipedia infobox."
+ },
+ "unverified_variants": [
+  {
+   "year": 1956,
+   "hp": "285 or 295",
+   "code": "D-500-1 / Dash-One (race package, dual 4-bbl)",
+   "found": "Wikipedia 1955 Dodge 285 hp; MoTales 295; Over-Drive 295 (D-500-1) and 290-295; Mac's 296. Sources disagree; competition-only package."
+  }
+ ]
+}

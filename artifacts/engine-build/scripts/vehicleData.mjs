@@ -152,7 +152,9 @@ export function linkVehicles(vehicles, engineData) {
     for (const c of list) {
       const k = c.vehicle;
       if (!by.has(k)) by.set(k, { vehicle: k, url: c.url.split("#")[0], rows: [] });
-      by.get(k).rows.push(c);
+      // Two trims with the same engine and rating (ZR1 and ZR1X) are one row here.
+      const rows = by.get(k).rows;
+      if (!rows.some((r) => r.year === c.year && r.hp === c.hp && r.code === c.code)) rows.push(c);
     }
     return [...by.values()]
       .map((g) => ({ ...g, rows: g.rows.sort((a, b) => a.year - b.year || (a.hp ?? 0) - (b.hp ?? 0)) }))

@@ -24,6 +24,7 @@ S["corvette"] = dict(make="Chevrolet", model="Corvette", makeSlug="chevrolet", s
     G("c7", "C7", 2014, 2019, "The C7 used the direct-injected LT1, the supercharged LT4 in the Z06 from 2015, and the 755 hp supercharged LT5 in the 2019 ZR1."),
     G("c8", "C8", 2020, 2026, "The mid-engine C8 uses the LT2. The Z06 adds the flat-plane-crank LT6, the E-Ray pairs the LT2 with an electric front axle, and the ZR1 and ZR1X use the twin-turbocharged LT7.")],
   files=["verify_corvette-1953-1982.json", "verify_corvette-1984-2026.json"],
+  cid_remap={"336": 333},
   notes={"1957|283|283": "Ramjet fuel injection.", "1957|283|250": "Ramjet fuel injection.",
          "1960|283|275": "Ramjet fuel injection. Also published as 250 hp.",
          "1960|283|315": "Ramjet fuel injection. Also published as 290 hp.",
@@ -58,6 +59,7 @@ S["impala"] = dict(make="Chevrolet", model="Impala", makeSlug="chevrolet", slug=
     G("1994-1996", "Impala SS", 1994, 1996, "The Impala SS used the 5.7 LT1 V8, rated at 260 hp, in the Caprice body."),
     G("2000-2020", "2000–2020", 2000, 2020, "The front-drive Impala used GM's 60-degree V6s, a supercharged 3800 in the 2004–2005 SS, a 5.3 V8 in the 2006–2009 SS, and from 2012 the 3.6 V6, with a 2.5 four from 2014.")],
   files=["verify_impala-1958-1985.json", "verify_impala-modern.json"],
+  cid_remap={"152": 150},
   code_notes={"LF9": "Oldsmobile-built diesel.", "Z11": "Factory drag-racing package."})
 
 S["challenger"] = dict(make="Dodge", model="Challenger", makeSlug="dodge", slug="challenger",
@@ -69,6 +71,7 @@ S["challenger"] = dict(make="Dodge", model="Challenger", makeSlug="dodge", slug=
     G("1978-1983", "1978–1983", 1978, 1983, "The second Challenger was a Mitsubishi-built coupe with Mitsubishi 1.6 and 2.6 four-cylinder engines."),
     G("2008-2023", "2008–2023", 2008, 2023, "The modern Challenger ran from V6s through the 5.7, 6.1 and 6.4 Hemi V8s to the supercharged 6.2 Hellcat family, which ended with the 807 hp Jailbreak. The 2018 Demon and 2023 Demon 170 were limited-production drag-oriented models whose top ratings need race fuel or E85.")],
   files=["verify_challenger.json"],
+  cid_remap={"98": 97},
   ranges={"1982|156|105": [100, 105], "1983|156|105": [103, 105]},
   notes={"1970|340|290": "Challenger T/A, three two-barrel carburetors."},
   trim_notes={r"Demon 170": "Rated on E85 fuel.", r"Demon": "Rated on 100-octane fuel; 808 hp on 91 octane."})
@@ -152,10 +155,10 @@ S["gtx"] = dict(make="Plymouth", model="GTX", makeSlug="plymouth", slug="gtx",
 
 S["coronet"] = dict(make="Dodge", model="Coronet", makeSlug="dodge", slug="coronet",
   title="Dodge Coronet Engines by Year (1949–1976)",
-  description="Every factory engine in the Dodge Coronet and Super Bee by year: Red Ram Hemi V8s of the 1950s, then the 383 Magnum, 440 Six Pack and 426 Hemi of 1965–1976.",
+  description="Every factory engine in the Dodge Coronet and Super Bee by year: 1950s Hemi and poly-head V8s, then the 383 Magnum, 440 Six Pack and 426 Hemi of 1965–1976.",
   intro=["Dodge used the Coronet name on its full-size cars from 1949 to 1959 and on its mid-size cars from 1965 to 1976. The Super Bee (1968–1970) and R/T were Coronet models, and the trims column marks the engines only they got.", PICK],
   generations=[
-    G("1949-1959", "1949–1959", 1949, 1959, "The early Coronet used Dodge's 230 flathead six and, from 1953, the Red Ram Hemi V8, later joined by wedge-head V8s up to the 383. The D-500 packages were Dodge's performance engines."),
+    G("1949-1959", "1949–1959", 1949, 1959, "The early Coronet used Dodge's 230 flathead six and, from 1953, V8s. The 1953–1954 241 was the Red Ram Hemi. From 1955 Dodge built Hemi-head versions and lower-cost poly-head versions of its V8s, and from 1958 it added wedge-head B engines. The D-500 packages were Dodge's performance engines."),
     G("1965-1970", "1965–1970", 1965, 1970, "The mid-size Coronet ran from the slant six to the 426 Street Hemi. The R/T came with the 440 Magnum, the Super Bee with the 383 Magnum, and the 440 Six Pack arrived during 1969. Ratings are gross."),
     G("1971-1976", "1971–1976", 1971, 1976, "The last Coronets were mainly sedans and wagons, with the slant six, 318, 360 and 400. Ratings are SAE net from 1972.")],
   files=["verify_coronet.json"],
@@ -185,7 +188,7 @@ S["cougar"] = dict(make="Mercury", model="Cougar", makeSlug="mercury", slug="cou
     G("1989-1997", "1989–1997", 1989, 1997, "The MN12 Cougar offered the 3.8 V6, supercharged in the 1989–1990 XR-7, and V8s: the 5.0 and, from 1994, the 4.6."),
     G("1999-2002", "1999–2002", 1999, 2002, "The last Cougar was a front-drive hatchback with Ford's 2.0 Zetec four and 2.5 Duratec V6.")],
   files=["verify_cougar.json"],
-  no_link=[{"cid": 122, "years": [1999, 2002]}],
+  cid_remap={"122": 121, "153": 155},
   ranges={"1972|351|262": [248, 262], "1973|351|168": [168, 173], "1973|351|264": [253, 264],
           "1977|302|130": [130, 137], "1978|400|160": [160, 166], "1979|302|133": [130, 133]},
   notes={"1969|302|290": "Boss 302, Eliminator.", "1970|302|290": "Boss 302, Eliminator.",
@@ -351,6 +354,23 @@ S["grand-prix"] = dict(make="Pontiac", model="Grand Prix", makeSlug="pontiac", s
   files=["verify_grand-prix-1962-1987.json", "verify_grand-prix-1988-2008.json"],
   built_by_notes=True, own_division="^Pontiac",
   code_notes={"LG5": "Turbocharged; converted by ASC/McLaren for Pontiac.", "LF9": "Oldsmobile-built diesel."})
+
+S["thunderbird"] = dict(make="Ford", model="Thunderbird", makeSlug="ford", slug="thunderbird",
+  title="Ford Thunderbird Engines by Year (1955–2005)",
+  description="Every factory engine in the Ford Thunderbird by year: the 292 and supercharged 312, the 352, 390, 428, 429 and 460, the Turbo Coupe and the Super Coupe.",
+  intro=["Ford built the Thunderbird from 1955 to 1997 and again from 2002 to 2005, starting as a two-seater and growing into a four-seat personal luxury car. Its engines ran from the Y-block V8s to the 460, and later included the Turbo Coupe's 2.3 turbo four and the Super Coupe's supercharged 3.8.", PICK],
+  generations=[
+    G("1955-1957", "1955–1957", 1955, 1957, "The two-seat Thunderbird used the 292 and 312 Y-block V8s; the 1957 F-code 312 was supercharged."),
+    G("1958-1966", "1958–1966", 1958, 1966, "The four-seat Thunderbird used the 352, the 430 shared with Lincoln in 1959–1960, then the 390, including the 1962–1963 M-code with three two-barrel carburetors, and the 428 for 1966."),
+    G("1967-1976", "1967–1976", 1967, 1976, "The Thunderbird used the 390, 428 and 429 and, from 1972, the 460. Ratings are SAE net from 1972."),
+    G("1977-1979", "1977–1979", 1977, 1979, "The downsized Thunderbird shared Ford's intermediate engines: the 302, 351 and 400."),
+    G("1980-1997", "1980–1997", 1980, 1997, "The Fox and MN12 Thunderbirds offered sixes, the 3.8 V6, the 5.0 and 4.6 V8s, the 1983–1988 Turbo Coupe's 2.3 turbo four, and the 1989–1995 Super Coupe's supercharged 3.8."),
+    G("2002-2005", "2002–2005", 2002, 2005, "The retro Thunderbird used a 3.9 four-cam V8 shared with the Lincoln LS.")],
+  files=["verify_thunderbird-1955-1979.json", "verify_thunderbird-1980-2005.json"],
+  include=["1979|302|133", "1979|351|142", "1979|351|151"],
+  ranges={"1975|460|220": [218, 224], "1978|400|166": [160, 166], "1981|200|88": [88, 94], "1982|255|122": [111, 122]},
+  notes={"1957|312|300": "Supercharged F-code.", "1962|390|340": "M-code, three two-barrel carburetors.",
+         "1963|390|340": "M-code, three two-barrel carburetors.", "1968|390|315": "Standard until January 1, 1968, when the 429 replaced it."})
 
 # Independent third sources found in follow-up passes (third_source_found_*.json).
 by_model = {f'{v["make"]} {v["model"]}': k for k, v in S.items()}
