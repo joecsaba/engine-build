@@ -82,15 +82,8 @@ function handler(event) {
     // Chrysler B 383: bore/stroke corrected to 4.25 x 3.375 (2026-10-12); the
     // 10:1 records now share one page.
     '/engines/plymouth/b/383-b-v8': '/engines/plymouth/b/e',
-    // Ford FE 428 and 385-series 429/460 bore/stroke corrected (2026-10-12):
-    // the NHRA 428 records now match the FE page instead of standing alone,
-    // and the 429/460 pages merged once their two bore figures became one.
-    '/engines/ford/ford-428ci': '/engines/mercury/fe/428',
-    '/engines/ford/ford-428ci/428ci-4-132x3-984': '/engines/mercury/fe/428-cobra-jet-v8',
-    '/engines/ford/ford-428ci/428ci-4-132x3-984-11cr': '/engines/mercury/fe/428',
-    '/engines/shelby/shelby-428ci': '/engines/mercury/fe/428',
-    '/engines/shelby/shelby-428ci/428ci-4-132x3-984': '/engines/mercury/fe/428-cobra-jet-v8',
-    '/engines/shelby/shelby-428ci/428ci-4-132x3-984-11-6cr': '/engines/mercury/fe/428',
+    // 385-series 429/460 bore/stroke corrected (2026-10-12): the pages merged
+    // once their two bore figures became one.
     '/engines/mercury/385/429-10-5cr': '/engines/mercury/385/429',
     '/engines/mercury/385/460-low-comp': '/engines/mercury/385/460ci-4-36x3-85',
     '/engines/mercury/385/460-8cr': '/engines/mercury/385/460ci-4-36x3-85',
@@ -106,7 +99,37 @@ function handler(event) {
     '/engines/jeep/hurricane/f4-134': '/engines/jeep/hurricane-f-head/f4-134',
     '/engines/mercury/zetec/2-5l-v6': '/engines/mercury/duratec/155ci-3-244x3-13',
     '/engines/mercury/zetec/2-5l-duratec-v6': '/engines/mercury/duratec/155ci-3-244x3-13',
-    '/engines/pontiac/pontiac-346ci/ponti-2004-346-350hp': '/engines/pontiac/pontiac-346ci/346ci-3-898x3-622'
+    '/engines/pontiac/pontiac-346ci/ponti-2004-346-350hp': '/engines/pontiac/pontiac-346ci/346ci-3-898x3-622',
+    // Geometry audit (2026-10-13): bore/stroke corrected or withheld; the
+    // GMC-filed Buick V8 family (all records wrong) and a made-up Northstar removed.
+    '/engines/acura/honda-j-series/jnc1': '/engines/acura/honda-j-series',
+    '/engines/audi/ea837/auk-bkh-bpk-cala': '/engines/audi/ea837',
+    '/engines/cadillac/ecotec/20t-lsy': '/engines/cadillac/ecotec',
+    '/engines/cadillac/ecotec/20t-lsv': '/engines/cadillac/ecotec',
+    '/engines/cadillac/northstar/lk8': '/engines/cadillac/northstar',
+    '/engines/ford/power-stroke-6-7/407ci-3-85x4-252': '/engines/ford/power-stroke-6-7/406ci-3-9x4-25',
+    '/engines/gmc/buick-v8/430': '/engines/buick/buick-430ci',
+    '/engines/gmc/buick-v8/425': '/engines/buick/buick-425ci',
+    '/engines/gmc/buick-v8/401': '/engines/buick/buick-401ci',
+    '/engines/gmc/buick-v8/400': '/engines/buick/buick-400ci',
+    '/engines/gmc/buick-v8/364': '/engines/buick/buick-364ci',
+    '/engines/gmc/buick-v8/350': '/engines/buick/buick-small-block-v8',
+    '/engines/gmc/buick-v8/340': '/engines/buick/buick-340ci',
+    '/engines/gmc/buick-v8/322': '/engines/buick/nailhead-v8',
+    '/engines/gmc/buick-v8/300': '/engines/buick/buick-300ci',
+    '/engines/gmc/buick-v8/264': '/engines/buick/nailhead-v8',
+    '/engines/gmc/ecotec-i4/laf': '/engines/gmc/ecotec-i4',
+    '/engines/gmc/high-feature-v6/217ci-3-74x3-378': '/engines/gmc/high-feature-v6/223ci-3-74x3-378',
+    '/engines/jeep/amc-v8/401-8-25cr': '/engines/jeep/amc-v8',
+    '/engines/oldsmobile/oldsmobile-207ci/207ci-3-62x2-31': '/engines/oldsmobile/oldsmobile-207ci',
+    '/engines/plymouth/rb/426-maxwedge': '/engines/plymouth/rb/426ci-4-25x3-75',
+    '/engines/plymouth/rb/426-wedge': '/engines/plymouth/rb/426ci-4-25x3-75',
+    '/engines/pontiac/pontiac-135ci/135ci-3-386x3-386': '/engines/pontiac',
+    '/engines/pontiac/pontiac-207ci/207ci-3-62x2-31': '/engines/pontiac/pontiac-207ci',
+    '/engines/subaru/fa/24-na': '/engines/subaru/fa',
+    '/engines/subaru/fa/subaru-fa24t': '/engines/subaru/fa',
+    '/engines/gmc/buick-v8': '/engines/buick',
+    '/engines/pontiac/pontiac-135ci': '/engines/pontiac'
   };
   var corrected = CORRECTED[uri.replace(/\/$/, '')];
   if (corrected) {

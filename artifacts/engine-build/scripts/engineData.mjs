@@ -539,6 +539,10 @@ export function loadEngineData() {
       const k = geoKey(r.bore_in, r.stroke_in, r.num_cylinders);
       const target = k ? byGeo.get(k) : null;
       if (!target) { if (k) leftovers.push(r); continue; }
+      // An undated family record (a "Buick Small-Block V8 · 340" page with no
+      // model years) must not swallow the dated NHRA rows: they still get their
+      // own year-by-year "<mfr>-<ci>ci" pages, which is where vehicle rows link.
+      if (target.yearMin == null && r.year != null) leftovers.push(r);
 
       const head = target.head ?? {};
       let touched = false;

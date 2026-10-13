@@ -49,10 +49,18 @@ Sources stay private. Half-ton / light-duty models only unless noted.
 - Mitsubishi 6DR5 4.0 diesel (243 ci) — Dodge D150 1978
 - Chrysler 3.2 Pentastar V6 (198 ci) — Cherokee KL 2014–2022 (Pentastar page has only the 3.6)
 - DONE 2026-10-13: Buick 350 V8 1968–1978 records (3.80 x 3.85) and Jeep Dauntless 350. Still unverified: 1971 4-bbl 260, 1972, 1974, 1979–80 ratings.
-- Buick 300 / 340 / 400 records look wrong (bore 3.7992 on all; 300 stroke 3.311, 340 stroke 3.752, 400 bore 4.126 x 3.7992). Real: 300 = 3.75 x 3.40, 340 = 3.75 x 3.85, 400 = 4.04 x 3.90. Verify and fix with redirects.
+- DONE 2026-10-13 (geometry audit): Buick 300 / 340 / 400 records look wrong (bore 3.7992 on all; 300 stroke 3.311, 340 stroke 3.752, 400 bore 4.126 x 3.7992). Real: 300 = 3.75 x 3.40, 340 = 3.75 x 3.85, 400 = 4.04 x 3.90. Verify and fix with redirects.
 
 ## Other leftovers
 - Dodge D-series: 1961, 1968, 1969 and 1989 have no engine with 3 sources yet (no brochures found) — retry.
 - Two-source rows to retry for a third source: El Camino 1965–68 sixes, early-80s GM diesels/V6s,
   1949–54 Coronet sixes, 1956–57 D-500 rows.
 - ford-429ci 2016 record (4.08 x 4.1) looks like a different engine (7.3 Godzilla?) — verify or drop.
+
+## Geometry audit 2026-10-13 (data/engine-sources/geometry-audit-2026-10-13.json)
+89 records corrected (3+ sources), 17 displacements recomputed, 12 withheld (bore/stroke null) until verified:
+- Cadillac 2.0T LSY; Ecotec 2.4 LAF (record looks like the 1.4T LUV); Ecotec 2.2 L61 (Sunfire 2000-01 was the LN2);
+  Saturn 1.9; Audi 3.2 CALA (needs its own record); Honda JNC1 (NSX 3.5TT 91 x 89.5 mm filed as a J30).
+- Northstar "LK8" removed (no such code). Northstar LC3 4.4 = 91 x 84 mm (GM-only source so far).
+- GMC-filed "Buick V8" family removed. Mazda rotary records carry meaningless bore/stroke (leave or blank).
+- Families that mix unrelated engines under one name: check new ones with scratchpad audit_engines.mjs.
