@@ -385,6 +385,6 @@ for fn in ("third_source_found_elc.json", "third_source_found_rest.json"):
 os.makedirs(os.path.join(SP, "vspecs"), exist_ok=True)
 for k, v in S.items():
     if ONLY and k not in ONLY: continue
-    v.setdefault("draft", True)
+    pass  # batch 2/3 approved and published 2026-10-12; new models should set draft=True
     json.dump(v, open(os.path.join(SP, "vspecs", f"{k}.json"), "w", encoding="utf-8"), ensure_ascii=False, indent=1)
 print("specs:", ", ".join(k for k in S if not ONLY or k in ONLY))
