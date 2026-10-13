@@ -1,0 +1,813 @@
+{
+ "vehicle": "jeep-comanche-1986-1992",
+ "notes": "Jeep Comanche (MJ), 1986-1992, 2WD and 4WD with the same engines. NHRA has no rows. Every engine-year has 3+ independent sources for availability. Ratings are SAE net; each note says which sources give the hp (several rest on Wikipedia alone). Haynes coverage counts only for the gas engines.",
+ "years": {
+  "1986": [
+   {
+    "gen": "mj",
+    "cid": 150,
+    "hp": 117,
+    "hp_basis": "net",
+    "name": "2.5L / 150 I4",
+    "rpo": "AMC 150 TBI",
+    "common_name": "AMC 2.5 four",
+    "trims": [
+     "std",
+     "2WD/4WD"
+    ],
+    "nhra": false,
+    "sources": [
+     {
+      "name": "AMC Jeep 1986 Comanche brochure (pp.4-5, 16-21)",
+      "url": "https://oldcarbrochures.org/United%20States/Jeep/1986-Jeep/1986-Jeep-Commanche-Brpchure/index.html",
+      "says": "Standard 2.5 litre (150 CID) 4-cyl, 9.2:1, electronic (throttle body) injection; now rated at 117 horsepower"
+     },
+     {
+      "name": "EPA fueleconomy.gov vehicle data",
+      "url": "https://www.fueleconomy.gov/feg/download.shtml",
+      "says": "1986: 2.5L 4-cyl Comanche 2WD and 4WD"
+     },
+     {
+      "name": "Wikipedia - Jeep Comanche",
+      "url": "https://en.wikipedia.org/wiki/Jeep_Comanche",
+      "says": "2.5 L I4 117 hp @ 5000, Renix TBI, 1986"
+     },
+     {
+      "name": "JeepTech (offroaders.com) - Jeep Comanche (MJ)",
+      "url": "https://offroaders.com/tech/jeep/Jeep-Comanche.htm",
+      "says": "The MJ came with the AMC 2.5L I4 engine standard"
+     },
+     {
+      "name": "Haynes Repair Manual - Jeep Cherokee, Comanche & Wagoneer Limited 1984-2001 (coverage)",
+      "url": "https://us.haynes.com/products/classic-collectors-edition-jeep-cherokee-comanche-wagoneer-limited-2wd-4wd-gas-1984-2001-haynes-repair-manual",
+      "says": "Covers Comanche gas engines incl. 2.5L four"
+     }
+    ],
+    "independent_sources": [
+     "AMC/Jeep/Chrysler factory material",
+     "EPA",
+     "Haynes",
+     "JeepTech",
+     "Wikipedia"
+    ],
+    "status": "three_sources_not_nhra",
+    "note": "117 hp confirmed by the 1986 Comanche brochure and Wikipedia; EPA, JeepTech and Haynes confirm the engine only. TBI new for 1986."
+   },
+   {
+    "gen": "mj",
+    "cid": 173,
+    "hp": 115,
+    "hp_basis": "net",
+    "name": "2.8L / 173 V6",
+    "rpo": "GM LR2",
+    "common_name": "GM 2.8 V6",
+    "trims": [
+     "opt (requires power steering; NA 4-speed)",
+     "2WD/4WD"
+    ],
+    "nhra": false,
+    "sources": [
+     {
+      "name": "AMC Jeep 1986 Comanche brochure (pp.4-5, 16-21)",
+      "url": "https://oldcarbrochures.org/United%20States/Jeep/1986-Jeep/1986-Jeep-Commanche-Brpchure/index.html",
+      "says": "Optional 2.8 litre (173 CID) V-6, 8.5:1, 2-bbl carburetor"
+     },
+     {
+      "name": "EPA fueleconomy.gov vehicle data",
+      "url": "https://www.fueleconomy.gov/feg/download.shtml",
+      "says": "1986: 2.8L 6-cyl Comanche 2WD and 4WD"
+     },
+     {
+      "name": "Wikipedia - Jeep Comanche",
+      "url": "https://en.wikipedia.org/wiki/Jeep_Comanche",
+      "says": "2.8 L V6 LR2, 115 hp @ 4800 (cites Popular Science Feb 1986), 1986 only"
+     },
+     {
+      "name": "JeepTech (offroaders.com) - Jeep Comanche (MJ)",
+      "url": "https://offroaders.com/tech/jeep/Jeep-Comanche.htm",
+      "says": "the GM 2.8L V6 optionally in '86"
+     },
+     {
+      "name": "Haynes Repair Manual - Jeep Cherokee, Comanche & Wagoneer Limited 1984-2001 (coverage)",
+      "url": "https://us.haynes.com/products/classic-collectors-edition-jeep-cherokee-comanche-wagoneer-limited-2wd-4wd-gas-1984-2001-haynes-repair-manual",
+      "says": "Covers Comanche gas engines incl. 2.8L V6"
+     }
+    ],
+    "independent_sources": [
+     "AMC/Jeep/Chrysler factory material",
+     "EPA",
+     "Haynes",
+     "JeepTech",
+     "Wikipedia"
+    ],
+    "status": "three_sources_not_nhra",
+    "note": "1986 only; replaced by the 4.0 for 1987. 115 hp is from Wikipedia (and the 1986 Cherokee brochure, per verify_jeep-cherokee); the Comanche brochure gives no figure."
+   },
+   {
+    "gen": "mj",
+    "cid": 126,
+    "hp": 85,
+    "hp_basis": "net",
+    "name": "2.1L turbodiesel I4",
+    "rpo": "Renault J8S",
+    "common_name": "Renault 2.1 turbodiesel",
+    "trims": [
+     "opt (5-speed only)",
+     "2WD/4WD"
+    ],
+    "nhra": false,
+    "sources": [
+     {
+      "name": "AMC Jeep 1986 Comanche brochure (pp.4-5, 16-21)",
+      "url": "https://oldcarbrochures.org/United%20States/Jeep/1986-Jeep/1986-Jeep-Commanche-Brpchure/index.html",
+      "says": "Optional 2.1 litre (126 CID) 4-cyl intercooled turbo-diesel, 21.5:1"
+     },
+     {
+      "name": "EPA fueleconomy.gov vehicle data",
+      "url": "https://www.fueleconomy.gov/feg/download.shtml",
+      "says": "1986: 2.1L 4-cyl turbo diesel, Comanche 2WD and 4WD"
+     },
+     {
+      "name": "Wikipedia - Jeep Comanche",
+      "url": "https://en.wikipedia.org/wiki/Jeep_Comanche",
+      "says": "2.1 L TurboDiesel, Renault J8S, 85 hp @ 3750, 1986-1987"
+     },
+     {
+      "name": "Diesel World - The 1985 Jeep Cherokee Diesel",
+      "url": "https://www.dieselworldmag.com/diesel-cars/2-1l-jeep-diesel/",
+      "says": "Renault 2.1L intercooled turbodiesel, 85 hp; offered in North American Jeeps through 87"
+     },
+     {
+      "name": "JeepTech (offroaders.com) - Jeep Comanche (MJ)",
+      "url": "https://offroaders.com/tech/jeep/Jeep-Comanche.htm",
+      "says": "Some models were available with the 2.1 L Renault Diesel I4"
+     }
+    ],
+    "independent_sources": [
+     "AMC/Jeep/Chrysler factory material",
+     "Diesel World",
+     "EPA",
+     "JeepTech",
+     "Wikipedia"
+    ],
+    "status": "three_sources_not_nhra",
+    "note": "85 hp per Wikipedia and Diesel World."
+   }
+  ],
+  "1987": [
+   {
+    "gen": "mj",
+    "cid": 150,
+    "hp": 121,
+    "hp_basis": "net",
+    "name": "2.5L / 150 I4",
+    "rpo": "AMC 150 TBI",
+    "common_name": "AMC 2.5 four",
+    "trims": [
+     "std",
+     "2WD/4WD"
+    ],
+    "nhra": false,
+    "sources": [
+     {
+      "name": "EPA fueleconomy.gov vehicle data",
+      "url": "https://www.fueleconomy.gov/feg/download.shtml",
+      "says": "1987: 2.5L 4-cyl Comanche 2WD and 4WD"
+     },
+     {
+      "name": "Wikipedia - Jeep Comanche",
+      "url": "https://en.wikipedia.org/wiki/Jeep_Comanche",
+      "says": "2.5 L 121 hp @ 5000, Renix TBI, 1987-1990"
+     },
+     {
+      "name": "JeepTech (offroaders.com) - Jeep Comanche (MJ)",
+      "url": "https://offroaders.com/tech/jeep/Jeep-Comanche.htm",
+      "says": "The MJ came with the AMC 2.5L I4 engine standard"
+     },
+     {
+      "name": "Haynes Repair Manual - Jeep Cherokee, Comanche & Wagoneer Limited 1984-2001 (coverage)",
+      "url": "https://us.haynes.com/products/classic-collectors-edition-jeep-cherokee-comanche-wagoneer-limited-2wd-4wd-gas-1984-2001-haynes-repair-manual",
+      "says": "Covers Comanche gas engines incl. 2.5L four"
+     }
+    ],
+    "independent_sources": [
+     "EPA",
+     "Haynes",
+     "JeepTech",
+     "Wikipedia"
+    ],
+    "status": "three_sources_not_nhra",
+    "note": "121 hp per Wikipedia (1987-90); the 1989 Jeep brochure gives 121 for the same engine. EPA, JeepTech and Haynes confirm the engine."
+   },
+   {
+    "gen": "mj",
+    "cid": 126,
+    "hp": 85,
+    "hp_basis": "net",
+    "name": "2.1L turbodiesel I4",
+    "rpo": "Renault J8S",
+    "common_name": "Renault 2.1 turbodiesel",
+    "trims": [
+     "opt",
+     "EPA lists 2WD only"
+    ],
+    "nhra": false,
+    "sources": [
+     {
+      "name": "EPA fueleconomy.gov vehicle data",
+      "url": "https://www.fueleconomy.gov/feg/download.shtml",
+      "says": "1987: 2.1L 4-cyl turbo diesel, Comanche 2WD only"
+     },
+     {
+      "name": "Wikipedia - Jeep Comanche",
+      "url": "https://en.wikipedia.org/wiki/Jeep_Comanche",
+      "says": "2.1 L TurboDiesel 1986-1987"
+     },
+     {
+      "name": "Diesel World - The 1985 Jeep Cherokee Diesel",
+      "url": "https://www.dieselworldmag.com/diesel-cars/2-1l-jeep-diesel/",
+      "says": "offered in North American Jeeps through 87"
+     }
+    ],
+    "independent_sources": [
+     "Diesel World",
+     "EPA",
+     "Wikipedia"
+    ],
+    "status": "three_sources_not_nhra",
+    "note": "Last year. EPA 1987 has only a 2WD row; whether 4WD diesels were sold in the US in 1987 is not established."
+   },
+   {
+    "gen": "mj",
+    "cid": 242,
+    "hp": 173,
+    "hp_basis": "net",
+    "name": "4.0L / 242 I6",
+    "rpo": "AMC 242 MPI",
+    "common_name": "Power-Tech Six",
+    "trims": [
+     "opt",
+     "2WD/4WD"
+    ],
+    "nhra": false,
+    "sources": [
+     {
+      "name": "Jeep 1987 full-line brochure, pp.3 and 5",
+      "url": "https://oldcarbrochures.org/United%20States/Jeep/1987-Jeep/1987-Jeep-Full-Line-Brochure/index.html",
+      "says": "Power-Tech Six: all-new 4.0 litre six, multi-point injection, 173 horsepower @ 4,500 rpm (1987 models); Comanche on p.3"
+     },
+     {
+      "name": "EPA fueleconomy.gov vehicle data",
+      "url": "https://www.fueleconomy.gov/feg/download.shtml",
+      "says": "1987: 4.0L 6-cyl Comanche 2WD and 4WD"
+     },
+     {
+      "name": "Wikipedia - Jeep Comanche",
+      "url": "https://en.wikipedia.org/wiki/Jeep_Comanche",
+      "says": "4.0 L I6 173 hp @ 4500, Renix MPI, 1987"
+     },
+     {
+      "name": "JeepTech (offroaders.com) - Jeep Comanche (MJ)",
+      "url": "https://offroaders.com/tech/jeep/Jeep-Comanche.htm",
+      "says": "The AMC 4.0L I6 was introduced in 1987"
+     },
+     {
+      "name": "Haynes Repair Manual - Jeep Cherokee, Comanche & Wagoneer Limited 1984-2001 (coverage)",
+      "url": "https://us.haynes.com/products/classic-collectors-edition-jeep-cherokee-comanche-wagoneer-limited-2wd-4wd-gas-1984-2001-haynes-repair-manual",
+      "says": "Covers Comanche gas engines incl. 4.0L six"
+     }
+    ],
+    "independent_sources": [
+     "AMC/Jeep/Chrysler factory material",
+     "EPA",
+     "Haynes",
+     "JeepTech",
+     "Wikipedia"
+    ],
+    "status": "three_sources_not_nhra",
+    "note": "New for 1987, replacing the 2.8 V6. 173 hp per the 1987 brochure and Wikipedia."
+   }
+  ],
+  "1988": [
+   {
+    "gen": "mj",
+    "cid": 150,
+    "hp": 121,
+    "hp_basis": "net",
+    "name": "2.5L / 150 I4",
+    "rpo": "AMC 150 TBI",
+    "common_name": "AMC 2.5 four",
+    "trims": [
+     "std",
+     "2WD/4WD"
+    ],
+    "nhra": false,
+    "sources": [
+     {
+      "name": "EPA fueleconomy.gov vehicle data",
+      "url": "https://www.fueleconomy.gov/feg/download.shtml",
+      "says": "1988: 2.5L 4-cyl Comanche 2WD and 4WD"
+     },
+     {
+      "name": "Wikipedia - Jeep Comanche",
+      "url": "https://en.wikipedia.org/wiki/Jeep_Comanche",
+      "says": "2.5 L 121 hp @ 5000, Renix TBI, 1987-1990"
+     },
+     {
+      "name": "JeepTech (offroaders.com) - Jeep Comanche (MJ)",
+      "url": "https://offroaders.com/tech/jeep/Jeep-Comanche.htm",
+      "says": "The MJ came with the AMC 2.5L I4 engine standard"
+     },
+     {
+      "name": "Haynes Repair Manual - Jeep Cherokee, Comanche & Wagoneer Limited 1984-2001 (coverage)",
+      "url": "https://us.haynes.com/products/classic-collectors-edition-jeep-cherokee-comanche-wagoneer-limited-2wd-4wd-gas-1984-2001-haynes-repair-manual",
+      "says": "Covers Comanche gas engines incl. 2.5L four"
+     }
+    ],
+    "independent_sources": [
+     "EPA",
+     "Haynes",
+     "JeepTech",
+     "Wikipedia"
+    ],
+    "status": "three_sources_not_nhra",
+    "note": "121 hp per Wikipedia (1987-90) and the 1989 Jeep full-line brochure's rating for the 2.5 TBI (1989 rating; same engine)."
+   },
+   {
+    "gen": "mj",
+    "cid": 242,
+    "hp": 177,
+    "hp_basis": "net",
+    "name": "4.0L / 242 I6",
+    "rpo": "AMC 242 MPI",
+    "common_name": "Power-Tech Six",
+    "trims": [
+     "opt",
+     "2WD/4WD"
+    ],
+    "nhra": false,
+    "sources": [
+     {
+      "name": "EPA fueleconomy.gov vehicle data",
+      "url": "https://www.fueleconomy.gov/feg/download.shtml",
+      "says": "1988: 4.0L 6-cyl Comanche 2WD and 4WD"
+     },
+     {
+      "name": "Wikipedia - Jeep Comanche",
+      "url": "https://en.wikipedia.org/wiki/Jeep_Comanche",
+      "says": "4.0 L 177 hp @ 4500, 1988-1990"
+     },
+     {
+      "name": "JeepTech (offroaders.com) - Jeep Comanche (MJ)",
+      "url": "https://offroaders.com/tech/jeep/Jeep-Comanche.htm",
+      "says": "The AMC 4.0L I6 was introduced in 1987"
+     },
+     {
+      "name": "Haynes Repair Manual - Jeep Cherokee, Comanche & Wagoneer Limited 1984-2001 (coverage)",
+      "url": "https://us.haynes.com/products/classic-collectors-edition-jeep-cherokee-comanche-wagoneer-limited-2wd-4wd-gas-1984-2001-haynes-repair-manual",
+      "says": "Covers Comanche gas engines incl. 4.0L six"
+     }
+    ],
+    "independent_sources": [
+     "EPA",
+     "Haynes",
+     "JeepTech",
+     "Wikipedia"
+    ],
+    "status": "three_sources_not_nhra",
+    "note": "177 hp per Wikipedia (1988-90) and the 1989 Jeep full-line brochure (1989 rating; same engine). The 2.1 diesel has no EPA rows from 1988 on."
+   }
+  ],
+  "1989": [
+   {
+    "gen": "mj",
+    "cid": 150,
+    "hp": 121,
+    "hp_basis": "net",
+    "name": "2.5L / 150 I4",
+    "rpo": "AMC 150 TBI",
+    "common_name": "AMC 2.5 four",
+    "trims": [
+     "std",
+     "2WD/4WD"
+    ],
+    "nhra": false,
+    "sources": [
+     {
+      "name": "Jeep 1989 full-line (small) brochure, pp.14-15 Comanche",
+      "url": "https://oldcarbrochures.org/United%20States/Jeep/1989-Jeep/1989-Jeep-Full-Line-Small-Brochure/index.html",
+      "says": "Comanche: standard 2.5 litre TBI 4-cylinder, optional 4.0 litre Power-Tech Six; same brochure: 2.5 TBI 'with 121 horsepower', 4.0 MPI Power-Tech Six 'delivers 177 horsepower'"
+     },
+     {
+      "name": "EPA fueleconomy.gov vehicle data",
+      "url": "https://www.fueleconomy.gov/feg/download.shtml",
+      "says": "1989: 2.5L 4-cyl Comanche 2WD and 4WD"
+     },
+     {
+      "name": "Wikipedia - Jeep Comanche",
+      "url": "https://en.wikipedia.org/wiki/Jeep_Comanche",
+      "says": "2.5 L 121 hp @ 5000, Renix TBI, 1987-1990"
+     },
+     {
+      "name": "JeepTech (offroaders.com) - Jeep Comanche (MJ)",
+      "url": "https://offroaders.com/tech/jeep/Jeep-Comanche.htm",
+      "says": "The MJ came with the AMC 2.5L I4 engine standard"
+     },
+     {
+      "name": "Haynes Repair Manual - Jeep Cherokee, Comanche & Wagoneer Limited 1984-2001 (coverage)",
+      "url": "https://us.haynes.com/products/classic-collectors-edition-jeep-cherokee-comanche-wagoneer-limited-2wd-4wd-gas-1984-2001-haynes-repair-manual",
+      "says": "Covers Comanche gas engines incl. 2.5L four"
+     }
+    ],
+    "independent_sources": [
+     "AMC/Jeep/Chrysler factory material",
+     "EPA",
+     "Haynes",
+     "JeepTech",
+     "Wikipedia"
+    ],
+    "status": "three_sources_not_nhra",
+    "note": "121 hp per Wikipedia (1987-90) and the 1989 Jeep full-line brochure's rating for the 2.5 TBI."
+   },
+   {
+    "gen": "mj",
+    "cid": 242,
+    "hp": 177,
+    "hp_basis": "net",
+    "name": "4.0L / 242 I6",
+    "rpo": "AMC 242 MPI",
+    "common_name": "Power-Tech Six",
+    "trims": [
+     "opt",
+     "2WD/4WD"
+    ],
+    "nhra": false,
+    "sources": [
+     {
+      "name": "Jeep 1989 full-line (small) brochure, pp.14-15 Comanche",
+      "url": "https://oldcarbrochures.org/United%20States/Jeep/1989-Jeep/1989-Jeep-Full-Line-Small-Brochure/index.html",
+      "says": "Comanche: standard 2.5 litre TBI 4-cylinder, optional 4.0 litre Power-Tech Six; same brochure: 2.5 TBI 'with 121 horsepower', 4.0 MPI Power-Tech Six 'delivers 177 horsepower'"
+     },
+     {
+      "name": "EPA fueleconomy.gov vehicle data",
+      "url": "https://www.fueleconomy.gov/feg/download.shtml",
+      "says": "1989: 4.0L 6-cyl Comanche 2WD and 4WD"
+     },
+     {
+      "name": "Wikipedia - Jeep Comanche",
+      "url": "https://en.wikipedia.org/wiki/Jeep_Comanche",
+      "says": "4.0 L 177 hp @ 4500, 1988-1990"
+     },
+     {
+      "name": "JeepTech (offroaders.com) - Jeep Comanche (MJ)",
+      "url": "https://offroaders.com/tech/jeep/Jeep-Comanche.htm",
+      "says": "The AMC 4.0L I6 was introduced in 1987"
+     },
+     {
+      "name": "Haynes Repair Manual - Jeep Cherokee, Comanche & Wagoneer Limited 1984-2001 (coverage)",
+      "url": "https://us.haynes.com/products/classic-collectors-edition-jeep-cherokee-comanche-wagoneer-limited-2wd-4wd-gas-1984-2001-haynes-repair-manual",
+      "says": "Covers Comanche gas engines incl. 4.0L six"
+     }
+    ],
+    "independent_sources": [
+     "AMC/Jeep/Chrysler factory material",
+     "EPA",
+     "Haynes",
+     "JeepTech",
+     "Wikipedia"
+    ],
+    "status": "three_sources_not_nhra",
+    "note": "177 hp per Wikipedia (1988-90) and the 1989 Jeep full-line brochure. The 2.1 diesel has no EPA rows from 1988 on."
+   }
+  ],
+  "1990": [
+   {
+    "gen": "mj",
+    "cid": 150,
+    "hp": 121,
+    "hp_basis": "net",
+    "name": "2.5L / 150 I4",
+    "rpo": "AMC 150 TBI",
+    "common_name": "AMC 2.5 four",
+    "trims": [
+     "std",
+     "2WD/4WD"
+    ],
+    "nhra": false,
+    "sources": [
+     {
+      "name": "EPA fueleconomy.gov vehicle data",
+      "url": "https://www.fueleconomy.gov/feg/download.shtml",
+      "says": "1990: 2.5L 4-cyl Comanche 2WD and 4WD"
+     },
+     {
+      "name": "Wikipedia - Jeep Comanche",
+      "url": "https://en.wikipedia.org/wiki/Jeep_Comanche",
+      "says": "2.5 L 121 hp @ 5000, Renix TBI, 1987-1990"
+     },
+     {
+      "name": "JeepTech (offroaders.com) - Jeep Comanche (MJ)",
+      "url": "https://offroaders.com/tech/jeep/Jeep-Comanche.htm",
+      "says": "The MJ came with the AMC 2.5L I4 engine standard"
+     },
+     {
+      "name": "Haynes Repair Manual - Jeep Cherokee, Comanche & Wagoneer Limited 1984-2001 (coverage)",
+      "url": "https://us.haynes.com/products/classic-collectors-edition-jeep-cherokee-comanche-wagoneer-limited-2wd-4wd-gas-1984-2001-haynes-repair-manual",
+      "says": "Covers Comanche gas engines incl. 2.5L four"
+     }
+    ],
+    "independent_sources": [
+     "EPA",
+     "Haynes",
+     "JeepTech",
+     "Wikipedia"
+    ],
+    "status": "three_sources_not_nhra",
+    "note": "121 hp per Wikipedia (1987-90) and the 1989 Jeep full-line brochure's rating for the 2.5 TBI (1989 rating; same engine)."
+   },
+   {
+    "gen": "mj",
+    "cid": 242,
+    "hp": 177,
+    "hp_basis": "net",
+    "name": "4.0L / 242 I6",
+    "rpo": "AMC 242 MPI",
+    "common_name": "Power-Tech Six",
+    "trims": [
+     "opt",
+     "2WD/4WD"
+    ],
+    "nhra": false,
+    "sources": [
+     {
+      "name": "EPA fueleconomy.gov vehicle data",
+      "url": "https://www.fueleconomy.gov/feg/download.shtml",
+      "says": "1990: 4.0L 6-cyl Comanche 2WD and 4WD"
+     },
+     {
+      "name": "Wikipedia - Jeep Comanche",
+      "url": "https://en.wikipedia.org/wiki/Jeep_Comanche",
+      "says": "4.0 L 177 hp @ 4500, 1988-1990"
+     },
+     {
+      "name": "JeepTech (offroaders.com) - Jeep Comanche (MJ)",
+      "url": "https://offroaders.com/tech/jeep/Jeep-Comanche.htm",
+      "says": "The AMC 4.0L I6 was introduced in 1987"
+     },
+     {
+      "name": "Haynes Repair Manual - Jeep Cherokee, Comanche & Wagoneer Limited 1984-2001 (coverage)",
+      "url": "https://us.haynes.com/products/classic-collectors-edition-jeep-cherokee-comanche-wagoneer-limited-2wd-4wd-gas-1984-2001-haynes-repair-manual",
+      "says": "Covers Comanche gas engines incl. 4.0L six"
+     }
+    ],
+    "independent_sources": [
+     "EPA",
+     "Haynes",
+     "JeepTech",
+     "Wikipedia"
+    ],
+    "status": "three_sources_not_nhra",
+    "note": "177 hp per Wikipedia (1988-90) and the 1989 Jeep full-line brochure (1989 rating; same engine). The 2.1 diesel has no EPA rows from 1988 on."
+   }
+  ],
+  "1991": [
+   {
+    "gen": "mj",
+    "cid": 150,
+    "hp": null,
+    "hp_basis": "net",
+    "name": "2.5L / 150 I4",
+    "rpo": "AMC 150 MPI",
+    "common_name": "AMC 2.5 four",
+    "trims": [
+     "std",
+     "2WD/4WD"
+    ],
+    "nhra": false,
+    "sources": [
+     {
+      "name": "EPA fueleconomy.gov vehicle data",
+      "url": "https://www.fueleconomy.gov/feg/download.shtml",
+      "says": "1991: 2.5L 4-cyl Comanche 2WD and 4WD"
+     },
+     {
+      "name": "Wikipedia - Jeep Comanche",
+      "url": "https://en.wikipedia.org/wiki/Jeep_Comanche",
+      "says": "2.5 L 130 hp @ 5250, Chrysler MPI, 1991-1992"
+     },
+     {
+      "name": "JeepTech (offroaders.com) - Jeep Comanche (MJ)",
+      "url": "https://offroaders.com/tech/jeep/Jeep-Comanche.htm",
+      "says": "The MJ came with the AMC 2.5L I4 engine standard"
+     },
+     {
+      "name": "Haynes Repair Manual - Jeep Cherokee, Comanche & Wagoneer Limited 1984-2001 (coverage)",
+      "url": "https://us.haynes.com/products/classic-collectors-edition-jeep-cherokee-comanche-wagoneer-limited-2wd-4wd-gas-1984-2001-haynes-repair-manual",
+      "says": "Covers Comanche gas engines incl. 2.5L four"
+     }
+    ],
+    "independent_sources": [
+     "EPA",
+     "Haynes",
+     "JeepTech",
+     "Wikipedia"
+    ],
+    "status": "three_sources_not_nhra",
+    "note": "Chrysler MPI from 1991. hp withheld (null): only Wikipedia gives 130 hp."
+   },
+   {
+    "gen": "mj",
+    "cid": 242,
+    "hp": 190,
+    "hp_basis": "net",
+    "name": "4.0L / 242 I6",
+    "rpo": "AMC 242 H.O.",
+    "common_name": "Power-Tech Six High Output",
+    "trims": [
+     "opt (std Eliminator)",
+     "2WD/4WD"
+    ],
+    "nhra": false,
+    "sources": [
+     {
+      "name": "EPA fueleconomy.gov vehicle data",
+      "url": "https://www.fueleconomy.gov/feg/download.shtml",
+      "says": "1991: 4.0L 6-cyl Comanche 2WD and 4WD"
+     },
+     {
+      "name": "Wikipedia - Jeep Comanche",
+      "url": "https://en.wikipedia.org/wiki/Jeep_Comanche",
+      "says": "4.0 L 190 hp @ 4750, Chrysler MPI 'High Output', 1991-1992"
+     },
+     {
+      "name": "JeepTech (offroaders.com) - Jeep Comanche (MJ)",
+      "url": "https://offroaders.com/tech/jeep/Jeep-Comanche.htm",
+      "says": "The AMC 4.0L I6 was introduced in 1987"
+     },
+     {
+      "name": "Haynes Repair Manual - Jeep Cherokee, Comanche & Wagoneer Limited 1984-2001 (coverage)",
+      "url": "https://us.haynes.com/products/classic-collectors-edition-jeep-cherokee-comanche-wagoneer-limited-2wd-4wd-gas-1984-2001-haynes-repair-manual",
+      "says": "Covers Comanche gas engines incl. 4.0L six"
+     }
+    ],
+    "independent_sources": [
+     "EPA",
+     "Haynes",
+     "JeepTech",
+     "Wikipedia"
+    ],
+    "status": "three_sources_not_nhra",
+    "note": "High Output from 1991; 190 hp per Wikipedia (1991-92); the 1992 brochure gives 190 for the same H.O. engine."
+   }
+  ],
+  "1992": [
+   {
+    "gen": "mj",
+    "cid": 150,
+    "hp": null,
+    "hp_basis": "net",
+    "name": "2.5L / 150 I4",
+    "rpo": "AMC 150 MPI",
+    "common_name": "AMC 2.5 four",
+    "trims": [
+     "std",
+     "2WD/4WD"
+    ],
+    "nhra": false,
+    "sources": [
+     {
+      "name": "Jeep 1992 full-line brochure, pp.10-11 Comanche",
+      "url": "https://oldcarbrochures.org/United%20States/Jeep/1992%20Jeep/1992%20Jeep%20Full%20Line/index.html",
+      "says": "2.5 litre std on Comanche Base, Sport, Pioneer; high-output 4.0 Power-Tech Six std on Eliminator, 190 horsepower, 225 ft-lb"
+     },
+     {
+      "name": "EPA fueleconomy.gov vehicle data",
+      "url": "https://www.fueleconomy.gov/feg/download.shtml",
+      "says": "1992: 2.5L 4-cyl Comanche 2WD and 4WD"
+     },
+     {
+      "name": "Wikipedia - Jeep Comanche",
+      "url": "https://en.wikipedia.org/wiki/Jeep_Comanche",
+      "says": "2.5 L 130 hp @ 5250, Chrysler MPI, 1991-1992"
+     },
+     {
+      "name": "JeepTech (offroaders.com) - Jeep Comanche (MJ)",
+      "url": "https://offroaders.com/tech/jeep/Jeep-Comanche.htm",
+      "says": "The MJ came with the AMC 2.5L I4 engine standard"
+     },
+     {
+      "name": "Haynes Repair Manual - Jeep Cherokee, Comanche & Wagoneer Limited 1984-2001 (coverage)",
+      "url": "https://us.haynes.com/products/classic-collectors-edition-jeep-cherokee-comanche-wagoneer-limited-2wd-4wd-gas-1984-2001-haynes-repair-manual",
+      "says": "Covers Comanche gas engines incl. 2.5L four"
+     }
+    ],
+    "independent_sources": [
+     "AMC/Jeep/Chrysler factory material",
+     "EPA",
+     "Haynes",
+     "JeepTech",
+     "Wikipedia"
+    ],
+    "status": "three_sources_not_nhra",
+    "note": "Chrysler MPI from 1991. hp withheld (null): only Wikipedia gives 130 hp (the 1992 brochure gives no four-cylinder figure)."
+   },
+   {
+    "gen": "mj",
+    "cid": 242,
+    "hp": 190,
+    "hp_basis": "net",
+    "name": "4.0L / 242 I6",
+    "rpo": "AMC 242 H.O.",
+    "common_name": "Power-Tech Six High Output",
+    "trims": [
+     "opt (std Eliminator)",
+     "2WD/4WD"
+    ],
+    "nhra": false,
+    "sources": [
+     {
+      "name": "Jeep 1992 full-line brochure, pp.10-11 Comanche",
+      "url": "https://oldcarbrochures.org/United%20States/Jeep/1992%20Jeep/1992%20Jeep%20Full%20Line/index.html",
+      "says": "2.5 litre std on Comanche Base, Sport, Pioneer; high-output 4.0 Power-Tech Six std on Eliminator, 190 horsepower, 225 ft-lb"
+     },
+     {
+      "name": "EPA fueleconomy.gov vehicle data",
+      "url": "https://www.fueleconomy.gov/feg/download.shtml",
+      "says": "1992: 4.0L 6-cyl Comanche 2WD and 4WD"
+     },
+     {
+      "name": "Wikipedia - Jeep Comanche",
+      "url": "https://en.wikipedia.org/wiki/Jeep_Comanche",
+      "says": "4.0 L 190 hp @ 4750, Chrysler MPI 'High Output', 1991-1992"
+     },
+     {
+      "name": "JeepTech (offroaders.com) - Jeep Comanche (MJ)",
+      "url": "https://offroaders.com/tech/jeep/Jeep-Comanche.htm",
+      "says": "The AMC 4.0L I6 was introduced in 1987"
+     },
+     {
+      "name": "Haynes Repair Manual - Jeep Cherokee, Comanche & Wagoneer Limited 1984-2001 (coverage)",
+      "url": "https://us.haynes.com/products/classic-collectors-edition-jeep-cherokee-comanche-wagoneer-limited-2wd-4wd-gas-1984-2001-haynes-repair-manual",
+      "says": "Covers Comanche gas engines incl. 4.0L six"
+     }
+    ],
+    "independent_sources": [
+     "AMC/Jeep/Chrysler factory material",
+     "EPA",
+     "Haynes",
+     "JeepTech",
+     "Wikipedia"
+    ],
+    "status": "three_sources_not_nhra",
+    "note": "High Output from 1991; 190 hp per Wikipedia (1991-92) and the 1992 brochure."
+   }
+  ]
+ },
+ "source_index": [
+  {
+   "name": "AMC Jeep 1986 Comanche brochure (pp.4-5, 16-21)",
+   "url": "https://oldcarbrochures.org/United%20States/Jeep/1986-Jeep/1986-Jeep-Commanche-Brpchure/index.html",
+   "type": "manufacturer"
+  },
+  {
+   "name": "EPA fueleconomy.gov vehicle data",
+   "url": "https://www.fueleconomy.gov/feg/download.shtml",
+   "type": "government"
+  },
+  {
+   "name": "Wikipedia - Jeep Comanche",
+   "url": "https://en.wikipedia.org/wiki/Jeep_Comanche",
+   "type": "wikipedia"
+  },
+  {
+   "name": "JeepTech (offroaders.com) - Jeep Comanche (MJ)",
+   "url": "https://offroaders.com/tech/jeep/Jeep-Comanche.htm",
+   "type": "publication"
+  },
+  {
+   "name": "Haynes Repair Manual - Jeep Cherokee, Comanche & Wagoneer Limited 1984-2001 (coverage)",
+   "url": "https://us.haynes.com/products/classic-collectors-edition-jeep-cherokee-comanche-wagoneer-limited-2wd-4wd-gas-1984-2001-haynes-repair-manual",
+   "type": "publication"
+  },
+  {
+   "name": "Diesel World - The 1985 Jeep Cherokee Diesel",
+   "url": "https://www.dieselworldmag.com/diesel-cars/2-1l-jeep-diesel/",
+   "type": "publication"
+  },
+  {
+   "name": "Jeep 1987 full-line brochure, pp.3 and 5",
+   "url": "https://oldcarbrochures.org/United%20States/Jeep/1987-Jeep/1987-Jeep-Full-Line-Brochure/index.html",
+   "type": "manufacturer"
+  },
+  {
+   "name": "Jeep 1989 full-line (small) brochure, pp.14-15 Comanche",
+   "url": "https://oldcarbrochures.org/United%20States/Jeep/1989-Jeep/1989-Jeep-Full-Line-Small-Brochure/index.html",
+   "type": "manufacturer"
+  },
+  {
+   "name": "Jeep 1992 full-line brochure, pp.10-11 Comanche",
+   "url": "https://oldcarbrochures.org/United%20States/Jeep/1992%20Jeep/1992%20Jeep%20Full%20Line/index.html",
+   "type": "manufacturer"
+  }
+ ]
+}

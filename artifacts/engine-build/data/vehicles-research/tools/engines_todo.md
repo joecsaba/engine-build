@@ -40,3 +40,12 @@ or 2 reputable sources that agree (second pass). Specs go in public/data/engines
 - Mazda rotary records carry meaningless bore/stroke.
 
 ## New trucks wave (added as their research comes in)
+| Engine | Size | Used in |
+|---|---|---|
+| GM/Isuzu 1.9 four (LR1) | 119 ci | S-10 1982–1985 |
+| GM 2.0 four (LQ2) | 121 ci | S-10 1983–1984 |
+| Isuzu 2.2 diesel (LQ7) | 137 ci | S-10 1984–1985 |
+
+## Data to re-check
+- C/K Pickup 1994 5.7 L05: page shows 200 hp; the K5 Blazer research found 210 hp for the same engine (Wikipedia Blazer article + Consumer Guide).
+- K5 Blazer 1980: every engine has only 2 sources that don't fully agree — year left empty.

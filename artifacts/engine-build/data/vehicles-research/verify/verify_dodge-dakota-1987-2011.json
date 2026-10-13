@@ -1,0 +1,3054 @@
+{
+ "vehicle": "dodge-dakota-1987-2011",
+ "years": {
+  "1987": [
+   {
+    "gen": "gen1",
+    "cid": 135,
+    "hp": 96,
+    "hp_basis": "SAE net",
+    "name": "2.2L / 135 I4",
+    "rpo": "Chrysler K 2.2 (2-bbl)",
+    "common_name": "2.2 K-car four",
+    "trims": [
+     "base (2WD)"
+    ],
+    "nhra": true,
+    "sources": [
+     {
+      "name": "NHRA Stock Car Classification Guide ('DAKOTA' heading)",
+      "url": "nhra_dodge-dakota-1987-2011.json",
+      "says": "1987 DAKOTA: 135 ci / 96 hp"
+     },
+     {
+      "name": "Flory, American Light Trucks and Utility Vehicles 1967-1989 (McFarland 2019), Dodge chapter (Google Books snippets)",
+      "url": "https://books.google.com/books?id=Az-7DwAAQBAJ",
+      "says": "1987 Dodge engine table: 135 CID (2.2L), 2-bbl., OHC 4-cyl. 96 @ 5200 / 121 @ 3200, VIN C; Dakota launched with the Caravan's 2.2L four"
+     },
+     {
+      "name": "Wikipedia - Dodge Dakota + Shelby Dakota (counted as one source)",
+      "url": "https://en.wikipedia.org/wiki/Dodge_Dakota",
+      "says": "2.2 L (135 cu in) K I4, SOHC, 94 hp, 1987-1988"
+     },
+     {
+      "name": "EPA fueleconomy.gov vehicle data",
+      "url": "https://www.fueleconomy.gov/feg/download.shtml",
+      "says": "1987 Dakota: 2.2 L 4-cyl listed"
+     }
+    ],
+    "independent_sources": 4,
+    "status": "confirmed",
+    "note": "Wikipedia gives 94 hp; NHRA and Flory's factory-data table give 96 hp. Recorded 96."
+   },
+   {
+    "gen": "gen1",
+    "cid": 239,
+    "hp": 125,
+    "hp_basis": "SAE net",
+    "name": "3.9L / 239 V6",
+    "rpo": "LA 3.9 (2-bbl)",
+    "common_name": "3.9 V6",
+    "trims": [
+     "optional 2WD",
+     "std 4WD"
+    ],
+    "nhra": true,
+    "sources": [
+     {
+      "name": "NHRA Stock Car Classification Guide ('DAKOTA' heading)",
+      "url": "nhra_dodge-dakota-1987-2011.json",
+      "says": "1987 DAKOTA: 238 ci / 125 hp"
+     },
+     {
+      "name": "Flory, American Light Trucks and Utility Vehicles 1967-1989 (McFarland 2019), Dodge chapter (Google Books snippets)",
+      "url": "https://books.google.com/books?id=Az-7DwAAQBAJ",
+      "says": "1987: 239 CID (3.9L), 2-bbl. V6 125 @ 4000 / 195 @ 2000; all-new V6 derived from the 318 V8"
+     },
+     {
+      "name": "Wikipedia - Dodge Dakota + Shelby Dakota (counted as one source)",
+      "url": "https://en.wikipedia.org/wiki/Dodge_Dakota",
+      "says": "3.9 L LA V6, 125 hp, 1987-1991"
+     },
+     {
+      "name": "EPA fueleconomy.gov vehicle data",
+      "url": "https://www.fueleconomy.gov/feg/download.shtml",
+      "says": "1987 Dakota: 3.9 L 6-cyl listed"
+     }
+    ],
+    "independent_sources": 4,
+    "status": "confirmed",
+    "note": "Carbureted (2-bbl) in 1987; throttle-body EFI from 1988 per Flory."
+   }
+  ],
+  "1988": [
+   {
+    "gen": "gen1",
+    "cid": 135,
+    "hp": 96,
+    "hp_basis": "SAE net",
+    "name": "2.2L / 135 I4",
+    "rpo": "Chrysler K 2.2 (2-bbl)",
+    "common_name": "2.2 K-car four",
+    "trims": [
+     "base (2WD)"
+    ],
+    "nhra": false,
+    "sources": [
+     {
+      "name": "Flory, American Light Trucks and Utility Vehicles 1967-1989 (McFarland 2019), Dodge chapter (Google Books snippets)",
+      "url": "https://books.google.com/books?id=Az-7DwAAQBAJ",
+      "says": "1988 Dodge engine table lists 135 CID (2.2L) 2-bbl OHC 4-cyl, about 96 @ 5200 (snippet OCR reads '91')"
+     },
+     {
+      "name": "Wikipedia - Dodge Dakota + Shelby Dakota (counted as one source)",
+      "url": "https://en.wikipedia.org/wiki/Dodge_Dakota",
+      "says": "2.2 L K I4, 94 hp, 1987-1988"
+     },
+     {
+      "name": "EPA fueleconomy.gov vehicle data",
+      "url": "https://www.fueleconomy.gov/feg/download.shtml",
+      "says": "1988 Dakota: 2.2 L 4-cyl (no 2.5 L row) listed"
+     }
+    ],
+    "independent_sources": 3,
+    "status": "three_sources_not_nhra",
+    "note": "NHRA 1988 lists no 135 ci row (it lists 153 ci / 96 and 100 hp instead; see the 2.5 entry). Rating: Wikipedia 94 hp; the 1987 figure of 96 hp is carried over because Flory's 1988 snippet is not cleanly legible."
+   },
+   {
+    "gen": "gen1",
+    "cid": 153,
+    "hp": null,
+    "hp_basis": "SAE net",
+    "name": "2.5L / 153 I4",
+    "rpo": "Chrysler K 2.5 (TBI)",
+    "common_name": "2.5 K-car four",
+    "trims": [
+     "unverified"
+    ],
+    "nhra": true,
+    "sources": [
+     {
+      "name": "NHRA Stock Car Classification Guide ('DAKOTA' heading)",
+      "url": "nhra_dodge-dakota-1987-2011.json",
+      "says": "1988 DAKOTA: 153 ci / 96 hp and 153 ci / 100 hp"
+     }
+    ],
+    "independent_sources": 1,
+    "status": "nhra_only",
+    "note": "Only NHRA lists a 2.5 in the 1988 Dakota. EPA has only the 2.2 for 1988 and Wikipedia dates the 2.5 from 1989; Flory's 1988 table lists a 153 CID TBI 96 @ 4400 but the snippet does not tie it to the Dakota (the Caravan used it). Probably NHRA carrying the 1989 engine back a year; hp withheld."
+   },
+   {
+    "gen": "gen1",
+    "cid": 239,
+    "hp": 125,
+    "hp_basis": "SAE net",
+    "name": "3.9L / 239 V6",
+    "rpo": "LA 3.9 (TBI)",
+    "common_name": "3.9 V6",
+    "trims": [
+     "optional 2WD",
+     "std 4WD"
+    ],
+    "nhra": true,
+    "sources": [
+     {
+      "name": "NHRA Stock Car Classification Guide ('DAKOTA' heading)",
+      "url": "nhra_dodge-dakota-1987-2011.json",
+      "says": "1988 DAKOTA: 238 ci / 125 hp"
+     },
+     {
+      "name": "Flory, American Light Trucks and Utility Vehicles 1967-1989 (McFarland 2019), Dodge chapter (Google Books snippets)",
+      "url": "https://books.google.com/books?id=Az-7DwAAQBAJ",
+      "says": "1988: 239 CID (3.9L), EFI V6 125 @ 4000, VIN M"
+     },
+     {
+      "name": "Wikipedia - Dodge Dakota + Shelby Dakota (counted as one source)",
+      "url": "https://en.wikipedia.org/wiki/Dodge_Dakota",
+      "says": "3.9 L LA V6, 125 hp, 1987-1991"
+     },
+     {
+      "name": "EPA fueleconomy.gov vehicle data",
+      "url": "https://www.fueleconomy.gov/feg/download.shtml",
+      "says": "1988 Dakota: 3.9 L 6-cyl listed"
+     }
+    ],
+    "independent_sources": 4,
+    "status": "confirmed",
+    "note": "Dakota Sport introduced January 1988 (Flory)."
+   }
+  ],
+  "1989": [
+   {
+    "gen": "gen1",
+    "cid": 153,
+    "hp": 100,
+    "hp_basis": "SAE net",
+    "name": "2.5L / 153 I4",
+    "rpo": "Chrysler K 2.5 (TBI)",
+    "common_name": "2.5 K-car four",
+    "trims": [
+     "base (2WD)"
+    ],
+    "nhra": true,
+    "sources": [
+     {
+      "name": "NHRA Stock Car Classification Guide ('DAKOTA' heading)",
+      "url": "nhra_dodge-dakota-1987-2011.json",
+      "says": "1989 DAKOTA: 153 ci / 100 hp (also a 96 hp row)"
+     },
+     {
+      "name": "Flory, American Light Trucks and Utility Vehicles 1967-1989 (McFarland 2019), Dodge chapter (Google Books snippets)",
+      "url": "https://books.google.com/books?id=Az-7DwAAQBAJ",
+      "says": "1989: 153 CID (2.5L), EFI 4-cyl 100 @ 4800 / 135 @ 2800, VIN K"
+     },
+     {
+      "name": "Wikipedia - Dodge Dakota + Shelby Dakota (counted as one source)",
+      "url": "https://en.wikipedia.org/wiki/Dodge_Dakota",
+      "says": "2.5 L K I4, 100 hp, 1989-1995"
+     },
+     {
+      "name": "EPA fueleconomy.gov vehicle data",
+      "url": "https://www.fueleconomy.gov/feg/download.shtml",
+      "says": "1989 Dakota: 2.5 L 4-cyl listed"
+     }
+    ],
+    "independent_sources": 4,
+    "status": "confirmed",
+    "note": "NHRA also carries a 96 hp row for the 2.5 (probably an earlier car rating). Dakota Sport Convertible introduced mid-year (Flory)."
+   },
+   {
+    "gen": "gen1",
+    "cid": 239,
+    "hp": 125,
+    "hp_basis": "SAE net",
+    "name": "3.9L / 239 V6",
+    "rpo": "LA 3.9 (TBI)",
+    "common_name": "3.9 V6",
+    "trims": [
+     "optional 2WD",
+     "std 4WD"
+    ],
+    "nhra": true,
+    "sources": [
+     {
+      "name": "NHRA Stock Car Classification Guide ('DAKOTA' heading)",
+      "url": "nhra_dodge-dakota-1987-2011.json",
+      "says": "1989 DAKOTA: 238 ci / 125 hp"
+     },
+     {
+      "name": "Wikipedia - Dodge Dakota + Shelby Dakota (counted as one source)",
+      "url": "https://en.wikipedia.org/wiki/Dodge_Dakota",
+      "says": "3.9 L LA V6, 125 hp, 1987-1991"
+     },
+     {
+      "name": "EPA fueleconomy.gov vehicle data",
+      "url": "https://www.fueleconomy.gov/feg/download.shtml",
+      "says": "1989 Dakota: 3.9 L 6-cyl listed"
+     }
+    ],
+    "independent_sources": 3,
+    "status": "confirmed",
+    "note": ""
+   },
+   {
+    "gen": "gen1",
+    "cid": 318,
+    "hp": 175,
+    "hp_basis": "SAE net",
+    "name": "5.2L / 318 V8",
+    "rpo": "LA 5.2 (TBI)",
+    "common_name": "Shelby Dakota 5.2",
+    "trims": [
+     "Shelby Dakota only (2WD, automatic)"
+    ],
+    "nhra": true,
+    "sources": [
+     {
+      "name": "NHRA Stock Car Classification Guide ('DAKOTA' heading)",
+      "url": "nhra_dodge-dakota-1987-2011.json",
+      "says": "1989 DAKOTA: 318 ci / 175 hp"
+     },
+     {
+      "name": "Wikipedia - Dodge Dakota + Shelby Dakota (counted as one source)",
+      "url": "https://en.wikipedia.org/wiki/Dodge_Dakota",
+      "says": "Shelby Dakota: 3.9 V6 replaced by a TBI 5.2 L V8; electric fans add 5 hp; 175 hp @ 4000 and 270 lb-ft"
+     },
+     {
+      "name": "Shelby American registry - 1989 Shelby Dakota",
+      "url": "https://shelbyregistry.com/1989dakota.html",
+      "says": "stock 125 hp 3.9 V6 replaced with the factory TBI 5.2L V8: 175 hp / 270 lb-ft; 1,475 built (480 white, 995 red)"
+     },
+     {
+      "name": "Street Muscle Magazine - 1989 Dodge Shelby Dakota",
+      "url": "https://www.streetmusclemag.com/news/1989-dodge-shelby-dakota/",
+      "says": "5.2 liter V8, 175 horsepower and 270 ft-lbs; 1,475 built"
+     },
+     {
+      "name": "EPA fueleconomy.gov vehicle data",
+      "url": "https://www.fueleconomy.gov/feg/download.shtml",
+      "says": "1989 Dakota: 5.2 L 8-cyl listed"
+     },
+     {
+      "name": "Flory, American Light Trucks and Utility Vehicles 1967-1989 (McFarland 2019), Dodge chapter (Google Books snippets)",
+      "url": "https://books.google.com/books?id=Az-7DwAAQBAJ",
+      "says": "1989 text mentions the Shelby Dakotas"
+     }
+    ],
+    "independent_sources": 6,
+    "status": "confirmed",
+    "note": "Shelby-built package on Dodge Dakota Sport trucks, sold through Dodge dealers (a factory Shelby package, not a dealer conversion). 1989 only. NHRA's other 1989 V8 rows (318/147, 360/175) are full-size D-series figures."
+   }
+  ],
+  "1990": [
+   {
+    "gen": "gen1",
+    "cid": 153,
+    "hp": null,
+    "hp_basis": "SAE net",
+    "name": "2.5L / 153 I4",
+    "rpo": "Chrysler K 2.5 (TBI)",
+    "common_name": "2.5 K-car four",
+    "trims": [
+     "base (2WD)"
+    ],
+    "nhra": true,
+    "sources": [
+     {
+      "name": "NHRA Stock Car Classification Guide ('DAKOTA' heading)",
+      "url": "nhra_dodge-dakota-1987-2011.json",
+      "says": "1990 DAKOTA: 153 ci / 117 hp"
+     },
+     {
+      "name": "Wikipedia - Dodge Dakota + Shelby Dakota (counted as one source)",
+      "url": "https://en.wikipedia.org/wiki/Dodge_Dakota",
+      "says": "2.5 L K I4, 100 hp, 1989-1995"
+     },
+     {
+      "name": "EPA fueleconomy.gov vehicle data",
+      "url": "https://www.fueleconomy.gov/feg/download.shtml",
+      "says": "1990 Dakota: 2.5 L 4-cyl listed"
+     },
+     {
+      "name": "Dodge 1990 Dakota brochure (Dodge/Chrysler material - one source with the other Dodge items)",
+      "url": "https://oldcarbrochures.org/United%20States/Chrysler%20Trucks%20and%20Vans/1990-Trucks-and-Vans/1990n-Dodge-Dakota-Brochure/index.html",
+      "says": "1990 Dakota brochure: 'An improved 2.5-liter EFI engine' standard on 4x2 models (no rating legible)"
+     }
+    ],
+    "independent_sources": 4,
+    "status": "disputed",
+    "note": "Existence confirmed by 3+ sources. Rating conflict: NHRA 117 hp (KBB also shows 117 @ 5250 for 1992) against Wikipedia 100 hp (one figure for 1989-95). The Dodge brochure calls the 1990 engine 'improved' but gives no figure. hp withheld."
+   },
+   {
+    "gen": "gen1",
+    "cid": 239,
+    "hp": 125,
+    "hp_basis": "SAE net",
+    "name": "3.9L / 239 V6",
+    "rpo": "LA 3.9 (TBI)",
+    "common_name": "3.9 V6",
+    "trims": [
+     "optional 2WD",
+     "std 4WD",
+     "std Sport"
+    ],
+    "nhra": true,
+    "sources": [
+     {
+      "name": "NHRA Stock Car Classification Guide ('DAKOTA' heading)",
+      "url": "nhra_dodge-dakota-1987-2011.json",
+      "says": "1990 DAKOTA: 238 ci / 125 hp"
+     },
+     {
+      "name": "Wikipedia - Dodge Dakota + Shelby Dakota (counted as one source)",
+      "url": "https://en.wikipedia.org/wiki/Dodge_Dakota",
+      "says": "3.9 L LA V6, 125 hp, 1987-1991"
+     },
+     {
+      "name": "EPA fueleconomy.gov vehicle data",
+      "url": "https://www.fueleconomy.gov/feg/download.shtml",
+      "says": "1990 Dakota: 3.9 L 6-cyl listed"
+     },
+     {
+      "name": "Dodge 1990 Dakota brochure (Dodge/Chrysler material - one source with the other Dodge items)",
+      "url": "https://oldcarbrochures.org/United%20States/Chrysler%20Trucks%20and%20Vans/1990-Trucks-and-Vans/1990n-Dodge-Dakota-Brochure/index.html",
+      "says": "1990 Dakota brochure: 3.9-liter EFI V-6 standard on Dakota 4x4 and Sport, optional on 4x2"
+     }
+    ],
+    "independent_sources": 4,
+    "status": "confirmed",
+    "note": ""
+   }
+  ],
+  "1991": [
+   {
+    "gen": "gen1",
+    "cid": 153,
+    "hp": null,
+    "hp_basis": "SAE net",
+    "name": "2.5L / 153 I4",
+    "rpo": "Chrysler K 2.5 (TBI)",
+    "common_name": "2.5 K-car four",
+    "trims": [
+     "base (2WD)"
+    ],
+    "nhra": true,
+    "sources": [
+     {
+      "name": "NHRA Stock Car Classification Guide ('DAKOTA' heading)",
+      "url": "nhra_dodge-dakota-1987-2011.json",
+      "says": "1991 DAKOTA: 153 ci / 117 hp"
+     },
+     {
+      "name": "Wikipedia - Dodge Dakota + Shelby Dakota (counted as one source)",
+      "url": "https://en.wikipedia.org/wiki/Dodge_Dakota",
+      "says": "2.5 L K I4, 100 hp, 1989-1995"
+     },
+     {
+      "name": "EPA fueleconomy.gov vehicle data",
+      "url": "https://www.fueleconomy.gov/feg/download.shtml",
+      "says": "1991 Dakota: 2.5 L 4-cyl listed"
+     }
+    ],
+    "independent_sources": 3,
+    "status": "disputed",
+    "note": "Existence confirmed by 3+ sources. Rating conflict: NHRA 117 hp (KBB also shows 117 @ 5250 for 1992) against Wikipedia 100 hp (one figure for 1989-95). The Dodge brochure calls the 1990 engine 'improved' but gives no figure. hp withheld."
+   },
+   {
+    "gen": "gen1",
+    "cid": 239,
+    "hp": 125,
+    "hp_basis": "SAE net",
+    "name": "3.9L / 239 V6",
+    "rpo": "LA 3.9 (TBI)",
+    "common_name": "3.9 V6",
+    "trims": [
+     "optional 2WD",
+     "std 4WD",
+     "std Sport"
+    ],
+    "nhra": true,
+    "sources": [
+     {
+      "name": "NHRA Stock Car Classification Guide ('DAKOTA' heading)",
+      "url": "nhra_dodge-dakota-1987-2011.json",
+      "says": "1991 DAKOTA: 238 ci / 125 hp"
+     },
+     {
+      "name": "Wikipedia - Dodge Dakota + Shelby Dakota (counted as one source)",
+      "url": "https://en.wikipedia.org/wiki/Dodge_Dakota",
+      "says": "3.9 L LA V6, 125 hp, 1987-1991"
+     },
+     {
+      "name": "EPA fueleconomy.gov vehicle data",
+      "url": "https://www.fueleconomy.gov/feg/download.shtml",
+      "says": "1991 Dakota: 3.9 L 6-cyl listed"
+     }
+    ],
+    "independent_sources": 3,
+    "status": "confirmed",
+    "note": ""
+   },
+   {
+    "gen": "gen1",
+    "cid": 318,
+    "hp": 170,
+    "hp_basis": "SAE net",
+    "name": "5.2L / 318 V8",
+    "rpo": "LA 5.2 (TBI)",
+    "common_name": "5.2 V8",
+    "trims": [
+     "optional"
+    ],
+    "nhra": true,
+    "sources": [
+     {
+      "name": "NHRA Stock Car Classification Guide ('DAKOTA' heading)",
+      "url": "nhra_dodge-dakota-1987-2011.json",
+      "says": "1991 DAKOTA: 318 ci / 170 hp"
+     },
+     {
+      "name": "Dodge 1991 Truck foldout (Dodge/Chrysler material)",
+      "url": "https://oldcarbrochures.org/United%20States/Chrysler%20Trucks%20and%20Vans/1991-Trucks-and-Vans/1991-Dodge-Truck-Foldout/index.html",
+      "says": "New V8 Power For Dakota: optional EFI 5.2-liter (318 cu. in.) V8 ... 260 lb-ft @ 2,000 rpm and 170 horsepower at 4,000 rpm"
+     },
+     {
+      "name": "Wikipedia - Dodge Dakota + Shelby Dakota (counted as one source)",
+      "url": "https://en.wikipedia.org/wiki/Dodge_Dakota",
+      "says": "optional 170 hp 5.2 L V8 (1991)"
+     },
+     {
+      "name": "EPA fueleconomy.gov vehicle data",
+      "url": "https://www.fueleconomy.gov/feg/download.shtml",
+      "says": "1991 Dakota: 5.2 L 8-cyl listed"
+     }
+    ],
+    "independent_sources": 4,
+    "status": "confirmed",
+    "note": "First regular-production Dakota V8. NHRA also lists 318/170 for 1990 and 360/190 and 360/205 for 1990-91; EPA has no V8 Dakota for 1990 and Dodge calls the 5.2 new for 1991, so those rows are not Dakota engines."
+   }
+  ],
+  "1992": [
+   {
+    "gen": "gen1",
+    "cid": 153,
+    "hp": 100,
+    "hp_basis": "SAE net",
+    "name": "2.5L / 153 I4",
+    "rpo": "Chrysler K 2.5 (TBI)",
+    "common_name": "2.5 K-car four",
+    "trims": [
+     "base (2WD)"
+    ],
+    "nhra": true,
+    "sources": [
+     {
+      "name": "NHRA Stock Car Classification Guide ('DAKOTA' heading)",
+      "url": "nhra_dodge-dakota-1987-2011.json",
+      "says": "1992 DAKOTA: 153 ci / 100 hp"
+     },
+     {
+      "name": "Wikipedia - Dodge Dakota + Shelby Dakota (counted as one source)",
+      "url": "https://en.wikipedia.org/wiki/Dodge_Dakota",
+      "says": "2.5 L K I4, 100 hp, 1989-1995"
+     },
+     {
+      "name": "Kelley Blue Book - Dodge Dakota specs pages (per year/cab, e.g. /dodge/dakota-regular-cab/<year>/specs/)",
+      "url": "https://www.kbb.com/dodge/dakota/",
+      "says": "1992 Dakota specs: 4-Cyl 2.5 Liter available; KBB lists 117 @ 5250 RPM"
+     },
+     {
+      "name": "EPA fueleconomy.gov vehicle data",
+      "url": "https://www.fueleconomy.gov/feg/download.shtml",
+      "says": "1992 Dakota: 2.5 L 4-cyl listed"
+     }
+    ],
+    "independent_sources": 4,
+    "status": "confirmed",
+    "note": "NHRA and Wikipedia give 100 hp; KBB gives 117 hp. Recorded 100."
+   },
+   {
+    "gen": "gen1",
+    "cid": 239,
+    "hp": 180,
+    "hp_basis": "SAE net",
+    "name": "3.9L / 239 V6",
+    "rpo": "Magnum 3.9",
+    "common_name": "3.9 Magnum V6",
+    "trims": [
+     "optional 2WD",
+     "std 4WD"
+    ],
+    "nhra": true,
+    "sources": [
+     {
+      "name": "NHRA Stock Car Classification Guide ('DAKOTA' heading)",
+      "url": "nhra_dodge-dakota-1987-2011.json",
+      "says": "1992 DAKOTA: 238 ci / 180 hp"
+     },
+     {
+      "name": "Wikipedia - Dodge Dakota + Shelby Dakota (counted as one source)",
+      "url": "https://en.wikipedia.org/wiki/Dodge_Dakota",
+      "says": "3.9 L Magnum V6, 180 hp, 1992-93"
+     },
+     {
+      "name": "Kelley Blue Book - Dodge Dakota specs pages (per year/cab, e.g. /dodge/dakota-regular-cab/<year>/specs/)",
+      "url": "https://www.kbb.com/dodge/dakota/",
+      "says": "1992 Dakota specs: V6 3.9 Liter 180 @ 4800 RPM"
+     },
+     {
+      "name": "EPA fueleconomy.gov vehicle data",
+      "url": "https://www.fueleconomy.gov/feg/download.shtml",
+      "says": "1992 Dakota: 3.9 L 6-cyl listed"
+     }
+    ],
+    "independent_sources": 4,
+    "status": "confirmed",
+    "note": "Magnum (multi-point EFI) update for 1992."
+   },
+   {
+    "gen": "gen1",
+    "cid": 318,
+    "hp": 230,
+    "hp_basis": "SAE net",
+    "name": "5.2L / 318 V8",
+    "rpo": "Magnum 5.2",
+    "common_name": "5.2 Magnum V8",
+    "trims": [
+     "optional"
+    ],
+    "nhra": true,
+    "sources": [
+     {
+      "name": "NHRA Stock Car Classification Guide ('DAKOTA' heading)",
+      "url": "nhra_dodge-dakota-1987-2011.json",
+      "says": "1992 DAKOTA: 318 ci / 230 hp"
+     },
+     {
+      "name": "Wikipedia - Dodge Dakota + Shelby Dakota (counted as one source)",
+      "url": "https://en.wikipedia.org/wiki/Dodge_Dakota",
+      "says": "5.2 L Magnum V8, 230 hp, 1992-93"
+     },
+     {
+      "name": "Kelley Blue Book - Dodge Dakota specs pages (per year/cab, e.g. /dodge/dakota-regular-cab/<year>/specs/)",
+      "url": "https://www.kbb.com/dodge/dakota/",
+      "says": "1992 Dakota specs: V8 5.2 Liter in available engines"
+     },
+     {
+      "name": "EPA fueleconomy.gov vehicle data",
+      "url": "https://www.fueleconomy.gov/feg/download.shtml",
+      "says": "1992 Dakota: 5.2 L 8-cyl listed"
+     }
+    ],
+    "independent_sources": 4,
+    "status": "confirmed",
+    "note": ""
+   }
+  ],
+  "1993": [
+   {
+    "gen": "gen1",
+    "cid": 153,
+    "hp": 99,
+    "hp_basis": "SAE net",
+    "name": "2.5L / 153 I4",
+    "rpo": "Chrysler K 2.5 (TBI)",
+    "common_name": "2.5 K-car four",
+    "trims": [
+     "base (2WD)"
+    ],
+    "nhra": true,
+    "sources": [
+     {
+      "name": "NHRA Stock Car Classification Guide ('DAKOTA' heading)",
+      "url": "nhra_dodge-dakota-1987-2011.json",
+      "says": "1993 DAKOTA: 153 ci / 99 hp"
+     },
+     {
+      "name": "Kelley Blue Book - Dodge Dakota specs pages (per year/cab, e.g. /dodge/dakota-regular-cab/<year>/specs/)",
+      "url": "https://www.kbb.com/dodge/dakota/",
+      "says": "1993 Dakota specs: 4-Cyl 2.5 Liter 99 @ 4500 RPM"
+     },
+     {
+      "name": "Wikipedia - Dodge Dakota + Shelby Dakota (counted as one source)",
+      "url": "https://en.wikipedia.org/wiki/Dodge_Dakota",
+      "says": "2.5 L K I4, 100 hp"
+     },
+     {
+      "name": "EPA fueleconomy.gov vehicle data",
+      "url": "https://www.fueleconomy.gov/feg/download.shtml",
+      "says": "1993 Dakota: 2.5 L 4-cyl listed"
+     }
+    ],
+    "independent_sources": 4,
+    "status": "confirmed",
+    "note": "Wikipedia rounds to 100 hp."
+   },
+   {
+    "gen": "gen1",
+    "cid": 239,
+    "hp": 180,
+    "hp_basis": "SAE net",
+    "name": "3.9L / 239 V6",
+    "rpo": "Magnum 3.9",
+    "common_name": "3.9 Magnum V6",
+    "trims": [
+     "optional 2WD",
+     "std 4WD"
+    ],
+    "nhra": true,
+    "sources": [
+     {
+      "name": "NHRA Stock Car Classification Guide ('DAKOTA' heading)",
+      "url": "nhra_dodge-dakota-1987-2011.json",
+      "says": "1993 DAKOTA: 239 ci / 180 hp"
+     },
+     {
+      "name": "Wikipedia - Dodge Dakota + Shelby Dakota (counted as one source)",
+      "url": "https://en.wikipedia.org/wiki/Dodge_Dakota",
+      "says": "3.9 L Magnum V6, 180 hp, 1992-93"
+     },
+     {
+      "name": "Kelley Blue Book - Dodge Dakota specs pages (per year/cab, e.g. /dodge/dakota-regular-cab/<year>/specs/)",
+      "url": "https://www.kbb.com/dodge/dakota/",
+      "says": "1993 Dakota specs: V6 3.9 Liter 180 @ 4800 RPM"
+     },
+     {
+      "name": "EPA fueleconomy.gov vehicle data",
+      "url": "https://www.fueleconomy.gov/feg/download.shtml",
+      "says": "1993 Dakota: 3.9 L 6-cyl listed"
+     }
+    ],
+    "independent_sources": 4,
+    "status": "confirmed",
+    "note": ""
+   },
+   {
+    "gen": "gen1",
+    "cid": 318,
+    "hp": 230,
+    "hp_basis": "SAE net",
+    "name": "5.2L / 318 V8",
+    "rpo": "Magnum 5.2",
+    "common_name": "5.2 Magnum V8",
+    "trims": [
+     "optional"
+    ],
+    "nhra": true,
+    "sources": [
+     {
+      "name": "NHRA Stock Car Classification Guide ('DAKOTA' heading)",
+      "url": "nhra_dodge-dakota-1987-2011.json",
+      "says": "1993 DAKOTA: 318 ci / 230 hp"
+     },
+     {
+      "name": "Wikipedia - Dodge Dakota + Shelby Dakota (counted as one source)",
+      "url": "https://en.wikipedia.org/wiki/Dodge_Dakota",
+      "says": "5.2 L Magnum V8, 230 hp, 1992-93"
+     },
+     {
+      "name": "Kelley Blue Book - Dodge Dakota specs pages (per year/cab, e.g. /dodge/dakota-regular-cab/<year>/specs/)",
+      "url": "https://www.kbb.com/dodge/dakota/",
+      "says": "1993 Dakota specs: V8 5.2 Liter in available engines"
+     },
+     {
+      "name": "EPA fueleconomy.gov vehicle data",
+      "url": "https://www.fueleconomy.gov/feg/download.shtml",
+      "says": "1993 Dakota: 5.2 L 8-cyl listed"
+     },
+     {
+      "name": "Dodge 1993 Cars & Trucks brochure (Dodge/Chrysler material)",
+      "url": "https://oldcarbrochures.org/United%20States/Chrysler%20Trucks%20and%20Vans/1993-Trucks-and-Vans/1993-Dodge-Cars--Trucks-Brochure/index.html",
+      "says": "1993 brochure: 'An available MAGNUM 5.2-liter V8' in the Dakota"
+     }
+    ],
+    "independent_sources": 5,
+    "status": "confirmed",
+    "note": ""
+   }
+  ],
+  "1994": [
+   {
+    "gen": "gen1",
+    "cid": 153,
+    "hp": 99,
+    "hp_basis": "SAE net",
+    "name": "2.5L / 153 I4",
+    "rpo": "Chrysler K 2.5 (TBI)",
+    "common_name": "2.5 K-car four",
+    "trims": [
+     "base (2WD regular cab)"
+    ],
+    "nhra": true,
+    "sources": [
+     {
+      "name": "NHRA Stock Car Classification Guide ('DAKOTA' heading)",
+      "url": "nhra_dodge-dakota-1987-2011.json",
+      "says": "1994 DAKOTA: 153 ci / 99 hp"
+     },
+     {
+      "name": "Kelley Blue Book - Dodge Dakota specs pages (per year/cab, e.g. /dodge/dakota-regular-cab/<year>/specs/)",
+      "url": "https://www.kbb.com/dodge/dakota/",
+      "says": "1994 Dakota specs: 4-Cyl 2.5 Liter 99 @ 4500 RPM"
+     },
+     {
+      "name": "Wikipedia - Dodge Dakota + Shelby Dakota (counted as one source)",
+      "url": "https://en.wikipedia.org/wiki/Dodge_Dakota",
+      "says": "2.5 L K I4, 100 hp, 1989-1995"
+     },
+     {
+      "name": "EPA fueleconomy.gov vehicle data",
+      "url": "https://www.fueleconomy.gov/feg/download.shtml",
+      "says": "1994 Dakota: 2.5 L 4-cyl listed"
+     }
+    ],
+    "independent_sources": 4,
+    "status": "confirmed",
+    "note": "Wikipedia gives 100 hp."
+   },
+   {
+    "gen": "gen1",
+    "cid": 239,
+    "hp": 175,
+    "hp_basis": "SAE net",
+    "name": "3.9L / 239 V6",
+    "rpo": "Magnum 3.9",
+    "common_name": "3.9 Magnum V6",
+    "trims": [
+     "optional 2WD",
+     "std 4WD"
+    ],
+    "nhra": true,
+    "sources": [
+     {
+      "name": "NHRA Stock Car Classification Guide ('DAKOTA' heading)",
+      "url": "nhra_dodge-dakota-1987-2011.json",
+      "says": "1994 DAKOTA: 239 ci / 175 hp"
+     },
+     {
+      "name": "Wikipedia - Dodge Dakota + Shelby Dakota (counted as one source)",
+      "url": "https://en.wikipedia.org/wiki/Dodge_Dakota",
+      "says": "3.9 L Magnum V6, 175 hp, 1994-96"
+     },
+     {
+      "name": "Kelley Blue Book - Dodge Dakota specs pages (per year/cab, e.g. /dodge/dakota-regular-cab/<year>/specs/)",
+      "url": "https://www.kbb.com/dodge/dakota/",
+      "says": "1994 Dakota specs: V6 3.9 Liter 180 @ 4800 RPM"
+     },
+     {
+      "name": "EPA fueleconomy.gov vehicle data",
+      "url": "https://www.fueleconomy.gov/feg/download.shtml",
+      "says": "1994 Dakota: 3.9 L 6-cyl listed"
+     }
+    ],
+    "independent_sources": 4,
+    "status": "confirmed",
+    "note": "KBB still shows 180 hp for 1994."
+   },
+   {
+    "gen": "gen1",
+    "cid": 318,
+    "hp": 220,
+    "hp_basis": "SAE net",
+    "name": "5.2L / 318 V8",
+    "rpo": "Magnum 5.2",
+    "common_name": "5.2 Magnum V8",
+    "trims": [
+     "optional"
+    ],
+    "nhra": true,
+    "sources": [
+     {
+      "name": "NHRA Stock Car Classification Guide ('DAKOTA' heading)",
+      "url": "nhra_dodge-dakota-1987-2011.json",
+      "says": "1994 DAKOTA: 318 ci / 220 hp"
+     },
+     {
+      "name": "The Auto Channel - 1997 Dodge Dakota Club Cab 4x4 Sport review",
+      "url": "https://theautochannel.com/vehicles/new/reviews/1997/nhromiak01109706.html",
+      "says": "1997 review: 'The 5.2-liter Magnum engine now carries 10 more horsepower (230)', i.e. 220 hp before 1997"
+     },
+     {
+      "name": "EPA fueleconomy.gov vehicle data",
+      "url": "https://www.fueleconomy.gov/feg/download.shtml",
+      "says": "1994 Dakota: 5.2 L 8-cyl listed"
+     },
+     {
+      "name": "Wikipedia - Dodge Dakota + Shelby Dakota (counted as one source)",
+      "url": "https://en.wikipedia.org/wiki/Dodge_Dakota",
+      "says": "5.2 L Magnum V8, 225 hp, 1994-96"
+     }
+    ],
+    "independent_sources": 4,
+    "status": "confirmed",
+    "note": "Wikipedia gives 225 hp; NHRA's 220 and The Auto Channel's '+10 hp to 230 for 1997' give 220. Recorded 220."
+   }
+  ],
+  "1995": [
+   {
+    "gen": "gen1",
+    "cid": 153,
+    "hp": 99,
+    "hp_basis": "SAE net",
+    "name": "2.5L / 153 I4",
+    "rpo": "Chrysler K 2.5 (TBI)",
+    "common_name": "2.5 K-car four",
+    "trims": [
+     "base (2WD regular cab)"
+    ],
+    "nhra": true,
+    "sources": [
+     {
+      "name": "NHRA Stock Car Classification Guide ('DAKOTA' heading)",
+      "url": "nhra_dodge-dakota-1987-2011.json",
+      "says": "1995 DAKOTA: 153 ci / 99 hp"
+     },
+     {
+      "name": "Kelley Blue Book - Dodge Dakota specs pages (per year/cab, e.g. /dodge/dakota-regular-cab/<year>/specs/)",
+      "url": "https://www.kbb.com/dodge/dakota/",
+      "says": "1995 Dakota specs: 4-Cyl 2.5 Liter listed (no rating shown)"
+     },
+     {
+      "name": "Wikipedia - Dodge Dakota + Shelby Dakota (counted as one source)",
+      "url": "https://en.wikipedia.org/wiki/Dodge_Dakota",
+      "says": "2.5 L K I4, 100 hp, 1989-1995"
+     },
+     {
+      "name": "EPA fueleconomy.gov vehicle data",
+      "url": "https://www.fueleconomy.gov/feg/download.shtml",
+      "says": "1995 Dakota: 2.5 L 4-cyl listed"
+     }
+    ],
+    "independent_sources": 4,
+    "status": "confirmed",
+    "note": "Wikipedia gives 100 hp. The 1995 figure rests on NHRA (KBB shows 99 hp for 1993-94)."
+   },
+   {
+    "gen": "gen1",
+    "cid": 239,
+    "hp": 175,
+    "hp_basis": "SAE net",
+    "name": "3.9L / 239 V6",
+    "rpo": "Magnum 3.9",
+    "common_name": "3.9 Magnum V6",
+    "trims": [
+     "optional 2WD",
+     "std 4WD"
+    ],
+    "nhra": true,
+    "sources": [
+     {
+      "name": "NHRA Stock Car Classification Guide ('DAKOTA' heading)",
+      "url": "nhra_dodge-dakota-1987-2011.json",
+      "says": "1995 DAKOTA: 239 ci / 175 hp"
+     },
+     {
+      "name": "Wikipedia - Dodge Dakota + Shelby Dakota (counted as one source)",
+      "url": "https://en.wikipedia.org/wiki/Dodge_Dakota",
+      "says": "3.9 L Magnum V6, 175 hp, 1994-96"
+     },
+     {
+      "name": "Kelley Blue Book - Dodge Dakota specs pages (per year/cab, e.g. /dodge/dakota-regular-cab/<year>/specs/)",
+      "url": "https://www.kbb.com/dodge/dakota/",
+      "says": "1995 Dakota specs: V6 3.9 Liter 175 @ 4800 RPM"
+     },
+     {
+      "name": "EPA fueleconomy.gov vehicle data",
+      "url": "https://www.fueleconomy.gov/feg/download.shtml",
+      "says": "1995 Dakota: 3.9 L 6-cyl listed"
+     }
+    ],
+    "independent_sources": 4,
+    "status": "confirmed",
+    "note": ""
+   },
+   {
+    "gen": "gen1",
+    "cid": 318,
+    "hp": 220,
+    "hp_basis": "SAE net",
+    "name": "5.2L / 318 V8",
+    "rpo": "Magnum 5.2",
+    "common_name": "5.2 Magnum V8",
+    "trims": [
+     "optional"
+    ],
+    "nhra": true,
+    "sources": [
+     {
+      "name": "NHRA Stock Car Classification Guide ('DAKOTA' heading)",
+      "url": "nhra_dodge-dakota-1987-2011.json",
+      "says": "1995 DAKOTA: 318 ci / 220 hp"
+     },
+     {
+      "name": "The Auto Channel - 1997 Dodge Dakota Club Cab 4x4 Sport review",
+      "url": "https://theautochannel.com/vehicles/new/reviews/1997/nhromiak01109706.html",
+      "says": "1997 review: 'The 5.2-liter Magnum engine now carries 10 more horsepower (230)', i.e. 220 hp before 1997"
+     },
+     {
+      "name": "EPA fueleconomy.gov vehicle data",
+      "url": "https://www.fueleconomy.gov/feg/download.shtml",
+      "says": "1995 Dakota: 5.2 L 8-cyl listed"
+     },
+     {
+      "name": "Wikipedia - Dodge Dakota + Shelby Dakota (counted as one source)",
+      "url": "https://en.wikipedia.org/wiki/Dodge_Dakota",
+      "says": "5.2 L Magnum V8, 225 hp, 1994-96"
+     },
+     {
+      "name": "Dodge 1995 Full Line brochure (Dodge/Chrysler material)",
+      "url": "https://oldcarbrochures.org/United%20States/Chrysler%20Trucks%20and%20Vans/1995-Trucks-and-Vans/1995-Dodge-Full-Line-Brochure/index.html",
+      "says": "1995 brochure: Dakota's three engines - economical 2.5-liter, Magnum 3.9-liter V6 and 5.2-liter V8"
+     }
+    ],
+    "independent_sources": 5,
+    "status": "confirmed",
+    "note": "Wikipedia gives 225 hp; NHRA's 220 and The Auto Channel's '+10 hp to 230 for 1997' give 220. Recorded 220."
+   }
+  ],
+  "1996": [
+   {
+    "gen": "gen1",
+    "cid": 150,
+    "hp": 120,
+    "hp_basis": "SAE net",
+    "name": "2.5L / 150 I4",
+    "rpo": "AMC/Jeep 2.5 (MPI)",
+    "common_name": "2.5 Jeep four",
+    "trims": [
+     "base (2WD)"
+    ],
+    "nhra": true,
+    "sources": [
+     {
+      "name": "NHRA Stock Car Classification Guide ('DAKOTA' heading)",
+      "url": "nhra_dodge-dakota-1987-2011.json",
+      "says": "1996 DAKOTA: 153 ci / 120 hp (family C-151)"
+     },
+     {
+      "name": "Kelley Blue Book - Dodge Dakota specs pages (per year/cab, e.g. /dodge/dakota-regular-cab/<year>/specs/)",
+      "url": "https://www.kbb.com/dodge/dakota/",
+      "says": "1996 Dakota specs: 4-Cyl 2.5 Liter 120 @ 5200 RPM"
+     },
+     {
+      "name": "Wikipedia - Dodge Dakota + Shelby Dakota (counted as one source)",
+      "url": "https://en.wikipedia.org/wiki/Dodge_Dakota",
+      "says": "2.5 L AMC I4, 120 hp, replaced the K-based engine in 1996"
+     },
+     {
+      "name": "EPA fueleconomy.gov vehicle data",
+      "url": "https://www.fueleconomy.gov/feg/download.shtml",
+      "says": "1996 Dakota: 2.5 L 4-cyl listed"
+     }
+    ],
+    "independent_sources": 4,
+    "status": "confirmed",
+    "note": "1996 switch from the Chrysler K 2.5 to the AMC/Jeep 150 cu in four. NHRA's heading says 153 ci but its family code (C-151) differs from the K engine's. NHRA also lists 360 ci / 230 hp for 1996; EPA has no 5.9 Dakota before 1998, so that row is not a Dakota engine."
+   },
+   {
+    "gen": "gen1",
+    "cid": 239,
+    "hp": 175,
+    "hp_basis": "SAE net",
+    "name": "3.9L / 239 V6",
+    "rpo": "Magnum 3.9",
+    "common_name": "3.9 Magnum V6",
+    "trims": [
+     "optional 2WD",
+     "std 4WD"
+    ],
+    "nhra": true,
+    "sources": [
+     {
+      "name": "NHRA Stock Car Classification Guide ('DAKOTA' heading)",
+      "url": "nhra_dodge-dakota-1987-2011.json",
+      "says": "1996 DAKOTA: 238 ci / 175 hp"
+     },
+     {
+      "name": "Wikipedia - Dodge Dakota + Shelby Dakota (counted as one source)",
+      "url": "https://en.wikipedia.org/wiki/Dodge_Dakota",
+      "says": "3.9 L Magnum V6, 175 hp, 1994-96"
+     },
+     {
+      "name": "Kelley Blue Book - Dodge Dakota specs pages (per year/cab, e.g. /dodge/dakota-regular-cab/<year>/specs/)",
+      "url": "https://www.kbb.com/dodge/dakota/",
+      "says": "1996 Dakota specs: V6 3.9 Liter 175 @ 4800 RPM"
+     },
+     {
+      "name": "EPA fueleconomy.gov vehicle data",
+      "url": "https://www.fueleconomy.gov/feg/download.shtml",
+      "says": "1996 Dakota: 3.9 L 6-cyl listed"
+     }
+    ],
+    "independent_sources": 4,
+    "status": "confirmed",
+    "note": ""
+   },
+   {
+    "gen": "gen1",
+    "cid": 318,
+    "hp": 220,
+    "hp_basis": "SAE net",
+    "name": "5.2L / 318 V8",
+    "rpo": "Magnum 5.2",
+    "common_name": "5.2 Magnum V8",
+    "trims": [
+     "optional"
+    ],
+    "nhra": true,
+    "sources": [
+     {
+      "name": "NHRA Stock Car Classification Guide ('DAKOTA' heading)",
+      "url": "nhra_dodge-dakota-1987-2011.json",
+      "says": "1996 DAKOTA: 318 ci / 220 hp"
+     },
+     {
+      "name": "The Auto Channel - 1997 Dodge Dakota Club Cab 4x4 Sport review",
+      "url": "https://theautochannel.com/vehicles/new/reviews/1997/nhromiak01109706.html",
+      "says": "1997 review: 'The 5.2-liter Magnum engine now carries 10 more horsepower (230)', i.e. 220 hp before 1997"
+     },
+     {
+      "name": "EPA fueleconomy.gov vehicle data",
+      "url": "https://www.fueleconomy.gov/feg/download.shtml",
+      "says": "1996 Dakota: 5.2 L 8-cyl listed"
+     },
+     {
+      "name": "Wikipedia - Dodge Dakota + Shelby Dakota (counted as one source)",
+      "url": "https://en.wikipedia.org/wiki/Dodge_Dakota",
+      "says": "5.2 L Magnum V8, 225 hp, 1994-96"
+     }
+    ],
+    "independent_sources": 4,
+    "status": "confirmed",
+    "note": "Wikipedia gives 225 hp; NHRA's 220 and The Auto Channel's '+10 hp to 230 for 1997' give 220. Recorded 220."
+   }
+  ],
+  "1997": [
+   {
+    "gen": "gen2",
+    "cid": 150,
+    "hp": 120,
+    "hp_basis": "SAE net",
+    "name": "2.5L / 150 I4",
+    "rpo": "AMC/Jeep 2.5 (MPI)",
+    "common_name": "2.5 Jeep four",
+    "trims": [
+     "base (2WD regular cab)"
+    ],
+    "nhra": true,
+    "sources": [
+     {
+      "name": "NHRA Stock Car Classification Guide ('DAKOTA' heading)",
+      "url": "nhra_dodge-dakota-1987-2011.json",
+      "says": "1997 DAKOTA: 153 ci / 120 hp"
+     },
+     {
+      "name": "Dodge 1997 Dakota Pickup folder (Dodge/Chrysler material)",
+      "url": "https://oldcarbrochures.org/United%20States/Chrysler%20Trucks%20and%20Vans/1997-Trucks-%26-Vans/1997-Dodge-Dakota-Pickup-Folder/index.html",
+      "says": "comparison chart: 2.5L I-4 H.P. 120, torque 145 @ 3250 rpm"
+     },
+     {
+      "name": "Consumer Guide - 1997-04 Dodge Dakota used-vehicle review",
+      "url": "https://consumerguide.com/used/1997-04-dodge-dakota/",
+      "says": "2.5-liter 4-cylinder with 120 horsepower (1997-2002); dropped for 2003"
+     },
+     {
+      "name": "Wikipedia - Dodge Dakota + Shelby Dakota (counted as one source)",
+      "url": "https://en.wikipedia.org/wiki/Dodge_Dakota",
+      "says": "2.5 L AMC I4, 120 hp, 1997-2002"
+     },
+     {
+      "name": "EPA fueleconomy.gov vehicle data",
+      "url": "https://www.fueleconomy.gov/feg/download.shtml",
+      "says": "1997 Dakota: 2.5 L 4-cyl listed"
+     }
+    ],
+    "independent_sources": 5,
+    "status": "confirmed",
+    "note": ""
+   },
+   {
+    "gen": "gen2",
+    "cid": 239,
+    "hp": 175,
+    "hp_basis": "SAE net",
+    "name": "3.9L / 239 V6",
+    "rpo": "Magnum 3.9",
+    "common_name": "3.9 Magnum V6",
+    "trims": [
+     "std V6 / optional"
+    ],
+    "nhra": true,
+    "sources": [
+     {
+      "name": "NHRA Stock Car Classification Guide ('DAKOTA' heading)",
+      "url": "nhra_dodge-dakota-1987-2011.json",
+      "says": "1997 DAKOTA: 238 ci / 175 hp"
+     },
+     {
+      "name": "Consumer Guide - 1997-04 Dodge Dakota used-vehicle review",
+      "url": "https://consumerguide.com/used/1997-04-dodge-dakota/",
+      "says": "3.9-liter V6 that produced 175 horsepower (1997-2003); replaced by the 3.7 for 2004"
+     },
+     {
+      "name": "Wikipedia - Dodge Dakota + Shelby Dakota (counted as one source)",
+      "url": "https://en.wikipedia.org/wiki/Dodge_Dakota",
+      "says": "3.9 L Magnum V6, 175 hp, 1997-2003"
+     },
+     {
+      "name": "EPA fueleconomy.gov vehicle data",
+      "url": "https://www.fueleconomy.gov/feg/download.shtml",
+      "says": "1997 Dakota: 3.9 L 6-cyl listed"
+     },
+     {
+      "name": "Kelley Blue Book - Dodge Dakota specs pages (per year/cab, e.g. /dodge/dakota-regular-cab/<year>/specs/)",
+      "url": "https://www.kbb.com/dodge/dakota/",
+      "says": "1997 Dakota specs: V6 3.9 Liter 175 @ 4800 RPM"
+     },
+     {
+      "name": "The Auto Channel - 1997 Dodge Dakota Club Cab 4x4 Sport review",
+      "url": "https://theautochannel.com/vehicles/new/reviews/1997/nhromiak01109706.html",
+      "says": "available with a 3.9-liter 175hp V-6"
+     }
+    ],
+    "independent_sources": 6,
+    "status": "confirmed",
+    "note": ""
+   },
+   {
+    "gen": "gen2",
+    "cid": 318,
+    "hp": 230,
+    "hp_basis": "SAE net",
+    "name": "5.2L / 318 V8",
+    "rpo": "Magnum 5.2",
+    "common_name": "5.2 Magnum V8",
+    "trims": [
+     "optional"
+    ],
+    "nhra": true,
+    "sources": [
+     {
+      "name": "Dodge 1997 Dakota Pickup folder (Dodge/Chrysler material)",
+      "url": "https://oldcarbrochures.org/United%20States/Chrysler%20Trucks%20and%20Vans/1997-Trucks-%26-Vans/1997-Dodge-Dakota-Pickup-Folder/index.html",
+      "says": "choice of Magnum engines ... a 230-horsepower V8 - the only V-8 in the class; chart: 5.2L V-8 H.P. 230 @ 4400 rpm, torque 300 @ 3200"
+     },
+     {
+      "name": "Consumer Guide - 1997-04 Dodge Dakota used-vehicle review",
+      "url": "https://consumerguide.com/used/1997-04-dodge-dakota/",
+      "says": "a 5.2-liter V8 with 230 horsepower (1997-1999)"
+     },
+     {
+      "name": "The Auto Channel - 1997 Dodge Dakota Club Cab 4x4 Sport review",
+      "url": "https://theautochannel.com/vehicles/new/reviews/1997/nhromiak01109706.html",
+      "says": "5.2-liter Magnum V-8, 230hp @4400 rpm / 300 lb-ft @3200 rpm; 'now carries 10 more horsepower (230)'"
+     },
+     {
+      "name": "EPA fueleconomy.gov vehicle data",
+      "url": "https://www.fueleconomy.gov/feg/download.shtml",
+      "says": "1997 Dakota: 5.2 L 8-cyl listed"
+     },
+     {
+      "name": "NHRA Stock Car Classification Guide ('DAKOTA' heading)",
+      "url": "nhra_dodge-dakota-1987-2011.json",
+      "says": "1997 DAKOTA: 318 ci / 220 hp"
+     },
+     {
+      "name": "Wikipedia - Dodge Dakota + Shelby Dakota (counted as one source)",
+      "url": "https://en.wikipedia.org/wiki/Dodge_Dakota",
+      "says": "5.2 L Magnum V8, 225 hp, 1997-1999"
+     }
+    ],
+    "independent_sources": 6,
+    "status": "three_sources_not_nhra",
+    "note": "Dodge, Consumer Guide and The Auto Channel give 230 hp; NHRA keeps the 1996 figure (220) and Wikipedia gives 225. Recorded 230. NHRA's 1997 360/250 row is the 1998 R/T engine (the R/T went on sale in spring 1998)."
+   }
+  ],
+  "1998": [
+   {
+    "gen": "gen2",
+    "cid": 150,
+    "hp": 120,
+    "hp_basis": "SAE net",
+    "name": "2.5L / 150 I4",
+    "rpo": "AMC/Jeep 2.5 (MPI)",
+    "common_name": "2.5 Jeep four",
+    "trims": [
+     "base (2WD regular cab)"
+    ],
+    "nhra": true,
+    "sources": [
+     {
+      "name": "NHRA Stock Car Classification Guide ('DAKOTA' heading)",
+      "url": "nhra_dodge-dakota-1987-2011.json",
+      "says": "1998 DAKOTA: 153 ci / 120 hp"
+     },
+     {
+      "name": "Consumer Guide - 1997-04 Dodge Dakota used-vehicle review",
+      "url": "https://consumerguide.com/used/1997-04-dodge-dakota/",
+      "says": "2.5-liter 4-cylinder with 120 horsepower (1997-2002); dropped for 2003"
+     },
+     {
+      "name": "Wikipedia - Dodge Dakota + Shelby Dakota (counted as one source)",
+      "url": "https://en.wikipedia.org/wiki/Dodge_Dakota",
+      "says": "2.5 L AMC I4, 120 hp, 1997-2002"
+     },
+     {
+      "name": "EPA fueleconomy.gov vehicle data",
+      "url": "https://www.fueleconomy.gov/feg/download.shtml",
+      "says": "1998 Dakota: 2.5 L 4-cyl listed"
+     }
+    ],
+    "independent_sources": 4,
+    "status": "confirmed",
+    "note": ""
+   },
+   {
+    "gen": "gen2",
+    "cid": 239,
+    "hp": 175,
+    "hp_basis": "SAE net",
+    "name": "3.9L / 239 V6",
+    "rpo": "Magnum 3.9",
+    "common_name": "3.9 Magnum V6",
+    "trims": [
+     "std V6 / optional"
+    ],
+    "nhra": true,
+    "sources": [
+     {
+      "name": "NHRA Stock Car Classification Guide ('DAKOTA' heading)",
+      "url": "nhra_dodge-dakota-1987-2011.json",
+      "says": "1998 DAKOTA: 238 ci / 175 hp"
+     },
+     {
+      "name": "Consumer Guide - 1997-04 Dodge Dakota used-vehicle review",
+      "url": "https://consumerguide.com/used/1997-04-dodge-dakota/",
+      "says": "3.9-liter V6 that produced 175 horsepower (1997-2003); replaced by the 3.7 for 2004"
+     },
+     {
+      "name": "Wikipedia - Dodge Dakota + Shelby Dakota (counted as one source)",
+      "url": "https://en.wikipedia.org/wiki/Dodge_Dakota",
+      "says": "3.9 L Magnum V6, 175 hp, 1997-2003"
+     },
+     {
+      "name": "EPA fueleconomy.gov vehicle data",
+      "url": "https://www.fueleconomy.gov/feg/download.shtml",
+      "says": "1998 Dakota: 3.9 L 6-cyl listed"
+     },
+     {
+      "name": "Kelley Blue Book - Dodge Dakota specs pages (per year/cab, e.g. /dodge/dakota-regular-cab/<year>/specs/)",
+      "url": "https://www.kbb.com/dodge/dakota/",
+      "says": "1998 Dakota specs: V6 3.9 Liter 175 @ 4800 RPM"
+     }
+    ],
+    "independent_sources": 5,
+    "status": "confirmed",
+    "note": ""
+   },
+   {
+    "gen": "gen2",
+    "cid": 318,
+    "hp": 230,
+    "hp_basis": "SAE net",
+    "name": "5.2L / 318 V8",
+    "rpo": "Magnum 5.2",
+    "common_name": "5.2 Magnum V8",
+    "trims": [
+     "optional"
+    ],
+    "nhra": true,
+    "sources": [
+     {
+      "name": "NHRA Stock Car Classification Guide ('DAKOTA' heading)",
+      "url": "nhra_dodge-dakota-1987-2011.json",
+      "says": "1998 DAKOTA: 318 ci / 230 hp"
+     },
+     {
+      "name": "Consumer Guide - 1997-04 Dodge Dakota used-vehicle review",
+      "url": "https://consumerguide.com/used/1997-04-dodge-dakota/",
+      "says": "a 5.2-liter V8 with 230 horsepower (1997-1999); replaced by the 4.7 for 2000"
+     },
+     {
+      "name": "Kelley Blue Book - Dodge Dakota specs pages (per year/cab, e.g. /dodge/dakota-regular-cab/<year>/specs/)",
+      "url": "https://www.kbb.com/dodge/dakota/",
+      "says": "1998 Dakota specs: V8 5.2 Liter in available engines"
+     },
+     {
+      "name": "EPA fueleconomy.gov vehicle data",
+      "url": "https://www.fueleconomy.gov/feg/download.shtml",
+      "says": "1998 Dakota: 5.2 L 8-cyl listed"
+     },
+     {
+      "name": "Wikipedia - Dodge Dakota + Shelby Dakota (counted as one source)",
+      "url": "https://en.wikipedia.org/wiki/Dodge_Dakota",
+      "says": "5.2 L Magnum V8, 225 hp"
+     }
+    ],
+    "independent_sources": 5,
+    "status": "confirmed",
+    "note": "Wikipedia gives 225 hp."
+   },
+   {
+    "gen": "gen2",
+    "cid": 360,
+    "hp": 250,
+    "hp_basis": "SAE net",
+    "name": "5.9L / 360 V8",
+    "rpo": "Magnum 5.9",
+    "common_name": "5.9 Magnum V8 (R/T)",
+    "trims": [
+     "R/T (regular and Club Cab, 2WD)"
+    ],
+    "nhra": true,
+    "sources": [
+     {
+      "name": "NHRA Stock Car Classification Guide ('DAKOTA' heading)",
+      "url": "nhra_dodge-dakota-1987-2011.json",
+      "says": "1998 DAKOTA: 360 ci / 250 hp"
+     },
+     {
+      "name": "Consumer Guide - 1997-04 Dodge Dakota used-vehicle review",
+      "url": "https://consumerguide.com/used/1997-04-dodge-dakota/",
+      "says": "Dakota R/T arrived (1998) packing a 250-horsepower 5.9-liter V8; 2003: 245-250 hp; the 245-hp 5.9 dropped for '04"
+     },
+     {
+      "name": "Wikipedia - Dodge Dakota + Shelby Dakota (counted as one source)",
+      "url": "https://en.wikipedia.org/wiki/Dodge_Dakota",
+      "says": "5.9 L Magnum V8, 250 hp, R/T, 1998-2003"
+     },
+     {
+      "name": "EPA fueleconomy.gov vehicle data",
+      "url": "https://www.fueleconomy.gov/feg/download.shtml",
+      "says": "1998 Dakota: 5.9 L 8-cyl listed"
+     },
+     {
+      "name": "Kelley Blue Book - Dodge Dakota specs pages (per year/cab, e.g. /dodge/dakota-regular-cab/<year>/specs/)",
+      "url": "https://www.kbb.com/dodge/dakota/",
+      "says": "1998 Dakota specs: V8 5.9 Liter 250 @ 4400 RPM"
+     },
+     {
+      "name": "Hooniverse - Obscure Muscle Car Garage: The Dodge Dakota 5.9 R/T",
+      "url": "https://www.hooniverse.com/hooniverse-obscure-muscle-car-garage-the-dodge-dakota-5-9-r-t/",
+      "says": "R/T on sale spring 1998, 250 hp / 345 lb-ft Magnum 360, built through 2003"
+     }
+    ],
+    "independent_sources": 6,
+    "status": "confirmed",
+    "note": "Introduced mid-year (spring 1998)."
+   }
+  ],
+  "1999": [
+   {
+    "gen": "gen2",
+    "cid": 150,
+    "hp": 120,
+    "hp_basis": "SAE net",
+    "name": "2.5L / 150 I4",
+    "rpo": "AMC/Jeep 2.5 (MPI)",
+    "common_name": "2.5 Jeep four",
+    "trims": [
+     "base (2WD regular cab)"
+    ],
+    "nhra": true,
+    "sources": [
+     {
+      "name": "NHRA Stock Car Classification Guide ('DAKOTA' heading)",
+      "url": "nhra_dodge-dakota-1987-2011.json",
+      "says": "1999 DAKOTA: 153 ci / 120 hp"
+     },
+     {
+      "name": "Consumer Guide - 1997-04 Dodge Dakota used-vehicle review",
+      "url": "https://consumerguide.com/used/1997-04-dodge-dakota/",
+      "says": "2.5-liter 4-cylinder with 120 horsepower (1997-2002); dropped for 2003"
+     },
+     {
+      "name": "Wikipedia - Dodge Dakota + Shelby Dakota (counted as one source)",
+      "url": "https://en.wikipedia.org/wiki/Dodge_Dakota",
+      "says": "2.5 L AMC I4, 120 hp, 1997-2002"
+     },
+     {
+      "name": "EPA fueleconomy.gov vehicle data",
+      "url": "https://www.fueleconomy.gov/feg/download.shtml",
+      "says": "1999 Dakota: 2.5 L 4-cyl listed"
+     }
+    ],
+    "independent_sources": 4,
+    "status": "confirmed",
+    "note": ""
+   },
+   {
+    "gen": "gen2",
+    "cid": 239,
+    "hp": 175,
+    "hp_basis": "SAE net",
+    "name": "3.9L / 239 V6",
+    "rpo": "Magnum 3.9",
+    "common_name": "3.9 Magnum V6",
+    "trims": [
+     "std V6 / optional"
+    ],
+    "nhra": true,
+    "sources": [
+     {
+      "name": "NHRA Stock Car Classification Guide ('DAKOTA' heading)",
+      "url": "nhra_dodge-dakota-1987-2011.json",
+      "says": "1999 DAKOTA: 238 ci / 175 hp"
+     },
+     {
+      "name": "Consumer Guide - 1997-04 Dodge Dakota used-vehicle review",
+      "url": "https://consumerguide.com/used/1997-04-dodge-dakota/",
+      "says": "3.9-liter V6 that produced 175 horsepower (1997-2003); replaced by the 3.7 for 2004"
+     },
+     {
+      "name": "Wikipedia - Dodge Dakota + Shelby Dakota (counted as one source)",
+      "url": "https://en.wikipedia.org/wiki/Dodge_Dakota",
+      "says": "3.9 L Magnum V6, 175 hp, 1997-2003"
+     },
+     {
+      "name": "EPA fueleconomy.gov vehicle data",
+      "url": "https://www.fueleconomy.gov/feg/download.shtml",
+      "says": "1999 Dakota: 3.9 L 6-cyl listed"
+     },
+     {
+      "name": "Kelley Blue Book - Dodge Dakota specs pages (per year/cab, e.g. /dodge/dakota-regular-cab/<year>/specs/)",
+      "url": "https://www.kbb.com/dodge/dakota/",
+      "says": "1999 Dakota specs: V6 3.9 Liter 175 @ 4800 RPM"
+     }
+    ],
+    "independent_sources": 5,
+    "status": "confirmed",
+    "note": ""
+   },
+   {
+    "gen": "gen2",
+    "cid": 318,
+    "hp": 230,
+    "hp_basis": "SAE net",
+    "name": "5.2L / 318 V8",
+    "rpo": "Magnum 5.2",
+    "common_name": "5.2 Magnum V8",
+    "trims": [
+     "optional"
+    ],
+    "nhra": true,
+    "sources": [
+     {
+      "name": "NHRA Stock Car Classification Guide ('DAKOTA' heading)",
+      "url": "nhra_dodge-dakota-1987-2011.json",
+      "says": "1999 DAKOTA: 318 ci / 230 hp"
+     },
+     {
+      "name": "Consumer Guide - 1997-04 Dodge Dakota used-vehicle review",
+      "url": "https://consumerguide.com/used/1997-04-dodge-dakota/",
+      "says": "a 5.2-liter V8 with 230 horsepower (1997-1999); replaced by the 4.7 for 2000"
+     },
+     {
+      "name": "Kelley Blue Book - Dodge Dakota specs pages (per year/cab, e.g. /dodge/dakota-regular-cab/<year>/specs/)",
+      "url": "https://www.kbb.com/dodge/dakota/",
+      "says": "1999 Dakota specs: V8 5.2 Liter in available engines"
+     },
+     {
+      "name": "EPA fueleconomy.gov vehicle data",
+      "url": "https://www.fueleconomy.gov/feg/download.shtml",
+      "says": "1999 Dakota: 5.2 L 8-cyl listed"
+     },
+     {
+      "name": "Wikipedia - Dodge Dakota + Shelby Dakota (counted as one source)",
+      "url": "https://en.wikipedia.org/wiki/Dodge_Dakota",
+      "says": "5.2 L Magnum V8, 225 hp"
+     }
+    ],
+    "independent_sources": 5,
+    "status": "confirmed",
+    "note": "Wikipedia gives 225 hp."
+   },
+   {
+    "gen": "gen2",
+    "cid": 360,
+    "hp": 250,
+    "hp_basis": "SAE net",
+    "name": "5.9L / 360 V8",
+    "rpo": "Magnum 5.9",
+    "common_name": "5.9 Magnum V8 (R/T)",
+    "trims": [
+     "R/T (regular and Club Cab, 2WD)"
+    ],
+    "nhra": true,
+    "sources": [
+     {
+      "name": "NHRA Stock Car Classification Guide ('DAKOTA' heading)",
+      "url": "nhra_dodge-dakota-1987-2011.json",
+      "says": "1999 DAKOTA: 360 ci / 250 hp and 245 hp"
+     },
+     {
+      "name": "Consumer Guide - 1997-04 Dodge Dakota used-vehicle review",
+      "url": "https://consumerguide.com/used/1997-04-dodge-dakota/",
+      "says": "Dakota R/T arrived (1998) packing a 250-horsepower 5.9-liter V8; 2003: 245-250 hp; the 245-hp 5.9 dropped for '04"
+     },
+     {
+      "name": "Wikipedia - Dodge Dakota + Shelby Dakota (counted as one source)",
+      "url": "https://en.wikipedia.org/wiki/Dodge_Dakota",
+      "says": "5.9 L Magnum V8, 250 hp, R/T, 1998-2003"
+     },
+     {
+      "name": "EPA fueleconomy.gov vehicle data",
+      "url": "https://www.fueleconomy.gov/feg/download.shtml",
+      "says": "1999 Dakota: 5.9 L 8-cyl listed"
+     },
+     {
+      "name": "Kelley Blue Book - Dodge Dakota specs pages (per year/cab, e.g. /dodge/dakota-regular-cab/<year>/specs/)",
+      "url": "https://www.kbb.com/dodge/dakota/",
+      "says": "1999 Dakota specs: V8 5.9 Liter 250 @ 4400 RPM"
+     }
+    ],
+    "independent_sources": 5,
+    "status": "confirmed",
+    "note": "NHRA also lists 245 hp (probably a low-emission rating)."
+   }
+  ],
+  "2000": [
+   {
+    "gen": "gen2",
+    "cid": 150,
+    "hp": 120,
+    "hp_basis": "SAE net",
+    "name": "2.5L / 150 I4",
+    "rpo": "AMC/Jeep 2.5 (MPI)",
+    "common_name": "2.5 Jeep four",
+    "trims": [
+     "base (2WD regular cab)"
+    ],
+    "nhra": true,
+    "sources": [
+     {
+      "name": "NHRA Stock Car Classification Guide ('DAKOTA' heading)",
+      "url": "nhra_dodge-dakota-1987-2011.json",
+      "says": "2000 DAKOTA: 153 ci / 120 hp"
+     },
+     {
+      "name": "Consumer Guide - 1997-04 Dodge Dakota used-vehicle review",
+      "url": "https://consumerguide.com/used/1997-04-dodge-dakota/",
+      "says": "2.5-liter 4-cylinder with 120 horsepower (1997-2002); dropped for 2003"
+     },
+     {
+      "name": "Wikipedia - Dodge Dakota + Shelby Dakota (counted as one source)",
+      "url": "https://en.wikipedia.org/wiki/Dodge_Dakota",
+      "says": "2.5 L AMC I4, 120 hp, 1997-2002"
+     },
+     {
+      "name": "EPA fueleconomy.gov vehicle data",
+      "url": "https://www.fueleconomy.gov/feg/download.shtml",
+      "says": "2000 Dakota: 2.5 L 4-cyl listed"
+     }
+    ],
+    "independent_sources": 4,
+    "status": "confirmed",
+    "note": ""
+   },
+   {
+    "gen": "gen2",
+    "cid": 239,
+    "hp": 175,
+    "hp_basis": "SAE net",
+    "name": "3.9L / 239 V6",
+    "rpo": "Magnum 3.9",
+    "common_name": "3.9 Magnum V6",
+    "trims": [
+     "std V6 / optional"
+    ],
+    "nhra": true,
+    "sources": [
+     {
+      "name": "NHRA Stock Car Classification Guide ('DAKOTA' heading)",
+      "url": "nhra_dodge-dakota-1987-2011.json",
+      "says": "2000 DAKOTA: 238 ci / 175 hp"
+     },
+     {
+      "name": "Consumer Guide - 1997-04 Dodge Dakota used-vehicle review",
+      "url": "https://consumerguide.com/used/1997-04-dodge-dakota/",
+      "says": "3.9-liter V6 that produced 175 horsepower (1997-2003); replaced by the 3.7 for 2004"
+     },
+     {
+      "name": "Wikipedia - Dodge Dakota + Shelby Dakota (counted as one source)",
+      "url": "https://en.wikipedia.org/wiki/Dodge_Dakota",
+      "says": "3.9 L Magnum V6, 175 hp, 1997-2003"
+     },
+     {
+      "name": "EPA fueleconomy.gov vehicle data",
+      "url": "https://www.fueleconomy.gov/feg/download.shtml",
+      "says": "2000 Dakota: 3.9 L 6-cyl listed"
+     },
+     {
+      "name": "Kelley Blue Book - Dodge Dakota specs pages (per year/cab, e.g. /dodge/dakota-regular-cab/<year>/specs/)",
+      "url": "https://www.kbb.com/dodge/dakota/",
+      "says": "2000 Dakota specs: V6 3.9 Liter 175 @ 4800 RPM"
+     }
+    ],
+    "independent_sources": 5,
+    "status": "confirmed",
+    "note": ""
+   },
+   {
+    "gen": "gen2",
+    "cid": 287,
+    "hp": 235,
+    "hp_basis": "SAE net",
+    "name": "4.7L / 287 V8",
+    "rpo": "PowerTech 4.7 (EVA)",
+    "common_name": "4.7 PowerTech V8",
+    "trims": [
+     "optional"
+    ],
+    "nhra": true,
+    "sources": [
+     {
+      "name": "NHRA Stock Car Classification Guide ('DAKOTA' heading)",
+      "url": "nhra_dodge-dakota-1987-2011.json",
+      "says": "2000 DAKOTA: 287 ci / 235 hp"
+     },
+     {
+      "name": "Consumer Guide - 1997-04 Dodge Dakota used-vehicle review",
+      "url": "https://consumerguide.com/used/1997-04-dodge-dakota/",
+      "says": "a 235-horsepower 4.7-liter V8 replaced the 5.2 (2000); 230-235 hp over 2001-2004"
+     },
+     {
+      "name": "Wikipedia - Dodge Dakota + Shelby Dakota (counted as one source)",
+      "url": "https://en.wikipedia.org/wiki/Dodge_Dakota",
+      "says": "4.7 L PowerTech V8, 230 hp, 2000-2004"
+     },
+     {
+      "name": "EPA fueleconomy.gov vehicle data",
+      "url": "https://www.fueleconomy.gov/feg/download.shtml",
+      "says": "2000 Dakota: 4.7 L 8-cyl listed"
+     },
+     {
+      "name": "Kelley Blue Book - Dodge Dakota specs pages (per year/cab, e.g. /dodge/dakota-regular-cab/<year>/specs/)",
+      "url": "https://www.kbb.com/dodge/dakota/",
+      "says": "2000 Dakota specs: V8 4.7 Liter 235 @ 4800 RPM"
+     },
+     {
+      "name": "WardsAuto - New Wheels: Dodge Dakota Gets Two New Doors, One New V-8 (2000 model)",
+      "url": "https://www.wardsauto.com/news-analysis/new-wheels-dodge-dakota-gets-two-new-doors-one-new-v-8",
+      "says": "4.7L SOHC V8 generates 235 hp and 295 lb-ft; LEV-capable versions deliver 5 hp less"
+     }
+    ],
+    "independent_sources": 6,
+    "status": "confirmed",
+    "note": "Two factory ratings: 235 hp, and 230 hp for low-emission (LEV) calibrations (WardsAuto). NHRA, KBB, Wikipedia and Consumer Guide split between 230 and 235 by year; 235 recorded as the headline figure."
+   },
+   {
+    "gen": "gen2",
+    "cid": 360,
+    "hp": 250,
+    "hp_basis": "SAE net",
+    "name": "5.9L / 360 V8",
+    "rpo": "Magnum 5.9",
+    "common_name": "5.9 Magnum V8 (R/T)",
+    "trims": [
+     "R/T (regular and Club Cab, 2WD)"
+    ],
+    "nhra": true,
+    "sources": [
+     {
+      "name": "NHRA Stock Car Classification Guide ('DAKOTA' heading)",
+      "url": "nhra_dodge-dakota-1987-2011.json",
+      "says": "2000 DAKOTA: 360 ci / 245 hp"
+     },
+     {
+      "name": "Consumer Guide - 1997-04 Dodge Dakota used-vehicle review",
+      "url": "https://consumerguide.com/used/1997-04-dodge-dakota/",
+      "says": "Dakota R/T arrived (1998) packing a 250-horsepower 5.9-liter V8; 2003: 245-250 hp; the 245-hp 5.9 dropped for '04"
+     },
+     {
+      "name": "Wikipedia - Dodge Dakota + Shelby Dakota (counted as one source)",
+      "url": "https://en.wikipedia.org/wiki/Dodge_Dakota",
+      "says": "5.9 L Magnum V8, 250 hp, R/T, 1998-2003"
+     },
+     {
+      "name": "EPA fueleconomy.gov vehicle data",
+      "url": "https://www.fueleconomy.gov/feg/download.shtml",
+      "says": "2000 Dakota: 5.9 L 8-cyl listed"
+     },
+     {
+      "name": "Kelley Blue Book - Dodge Dakota specs pages (per year/cab, e.g. /dodge/dakota-regular-cab/<year>/specs/)",
+      "url": "https://www.kbb.com/dodge/dakota/",
+      "says": "2000 Dakota specs: V8 5.9 Liter 250 @ 4400 RPM"
+     }
+    ],
+    "independent_sources": 5,
+    "status": "three_sources_not_nhra",
+    "note": "NHRA lists only 245 hp for 2000; KBB, Consumer Guide and Wikipedia give 250. 245 is probably a low-emission/California rating."
+   }
+  ],
+  "2001": [
+   {
+    "gen": "gen2",
+    "cid": 150,
+    "hp": 120,
+    "hp_basis": "SAE net",
+    "name": "2.5L / 150 I4",
+    "rpo": "AMC/Jeep 2.5 (MPI)",
+    "common_name": "2.5 Jeep four",
+    "trims": [
+     "base (2WD regular cab)"
+    ],
+    "nhra": true,
+    "sources": [
+     {
+      "name": "NHRA Stock Car Classification Guide ('DAKOTA' heading)",
+      "url": "nhra_dodge-dakota-1987-2011.json",
+      "says": "2001 DAKOTA: 153 ci / 120 hp"
+     },
+     {
+      "name": "Consumer Guide - 1997-04 Dodge Dakota used-vehicle review",
+      "url": "https://consumerguide.com/used/1997-04-dodge-dakota/",
+      "says": "2.5-liter 4-cylinder with 120 horsepower (1997-2002); dropped for 2003"
+     },
+     {
+      "name": "Wikipedia - Dodge Dakota + Shelby Dakota (counted as one source)",
+      "url": "https://en.wikipedia.org/wiki/Dodge_Dakota",
+      "says": "2.5 L AMC I4, 120 hp, 1997-2002"
+     },
+     {
+      "name": "EPA fueleconomy.gov vehicle data",
+      "url": "https://www.fueleconomy.gov/feg/download.shtml",
+      "says": "2001 Dakota: 2.5 L 4-cyl listed"
+     }
+    ],
+    "independent_sources": 4,
+    "status": "confirmed",
+    "note": ""
+   },
+   {
+    "gen": "gen2",
+    "cid": 239,
+    "hp": 175,
+    "hp_basis": "SAE net",
+    "name": "3.9L / 239 V6",
+    "rpo": "Magnum 3.9",
+    "common_name": "3.9 Magnum V6",
+    "trims": [
+     "std V6 / optional"
+    ],
+    "nhra": true,
+    "sources": [
+     {
+      "name": "NHRA Stock Car Classification Guide ('DAKOTA' heading)",
+      "url": "nhra_dodge-dakota-1987-2011.json",
+      "says": "2001 DAKOTA: 238 ci / 175 hp"
+     },
+     {
+      "name": "Consumer Guide - 1997-04 Dodge Dakota used-vehicle review",
+      "url": "https://consumerguide.com/used/1997-04-dodge-dakota/",
+      "says": "3.9-liter V6 that produced 175 horsepower (1997-2003); replaced by the 3.7 for 2004"
+     },
+     {
+      "name": "Wikipedia - Dodge Dakota + Shelby Dakota (counted as one source)",
+      "url": "https://en.wikipedia.org/wiki/Dodge_Dakota",
+      "says": "3.9 L Magnum V6, 175 hp, 1997-2003"
+     },
+     {
+      "name": "EPA fueleconomy.gov vehicle data",
+      "url": "https://www.fueleconomy.gov/feg/download.shtml",
+      "says": "2001 Dakota: 3.9 L 6-cyl listed"
+     },
+     {
+      "name": "Kelley Blue Book - Dodge Dakota specs pages (per year/cab, e.g. /dodge/dakota-regular-cab/<year>/specs/)",
+      "url": "https://www.kbb.com/dodge/dakota/",
+      "says": "2001 Dakota specs: V6 3.9 Liter 175 @ 4800 RPM"
+     }
+    ],
+    "independent_sources": 5,
+    "status": "confirmed",
+    "note": ""
+   },
+   {
+    "gen": "gen2",
+    "cid": 287,
+    "hp": 235,
+    "hp_basis": "SAE net",
+    "name": "4.7L / 287 V8",
+    "rpo": "PowerTech 4.7 (EVA)",
+    "common_name": "4.7 PowerTech V8",
+    "trims": [
+     "optional"
+    ],
+    "nhra": true,
+    "sources": [
+     {
+      "name": "NHRA Stock Car Classification Guide ('DAKOTA' heading)",
+      "url": "nhra_dodge-dakota-1987-2011.json",
+      "says": "2001 DAKOTA: 287 ci / 230 hp"
+     },
+     {
+      "name": "Consumer Guide - 1997-04 Dodge Dakota used-vehicle review",
+      "url": "https://consumerguide.com/used/1997-04-dodge-dakota/",
+      "says": "a 235-horsepower 4.7-liter V8 replaced the 5.2 (2000); 230-235 hp over 2001-2004"
+     },
+     {
+      "name": "Wikipedia - Dodge Dakota + Shelby Dakota (counted as one source)",
+      "url": "https://en.wikipedia.org/wiki/Dodge_Dakota",
+      "says": "4.7 L PowerTech V8, 230 hp, 2000-2004"
+     },
+     {
+      "name": "EPA fueleconomy.gov vehicle data",
+      "url": "https://www.fueleconomy.gov/feg/download.shtml",
+      "says": "2001 Dakota: 4.7 L 8-cyl listed"
+     },
+     {
+      "name": "Kelley Blue Book - Dodge Dakota specs pages (per year/cab, e.g. /dodge/dakota-regular-cab/<year>/specs/)",
+      "url": "https://www.kbb.com/dodge/dakota/",
+      "says": "2001 Dakota specs: V8 4.7 Liter 230 @ 4800 RPM"
+     }
+    ],
+    "independent_sources": 5,
+    "status": "confirmed",
+    "note": "Two factory ratings: 235 hp, and 230 hp for low-emission (LEV) calibrations (WardsAuto). NHRA, KBB, Wikipedia and Consumer Guide split between 230 and 235 by year; 235 recorded as the headline figure."
+   },
+   {
+    "gen": "gen2",
+    "cid": 360,
+    "hp": 250,
+    "hp_basis": "SAE net",
+    "name": "5.9L / 360 V8",
+    "rpo": "Magnum 5.9",
+    "common_name": "5.9 Magnum V8 (R/T)",
+    "trims": [
+     "R/T (regular and Club Cab, 2WD)"
+    ],
+    "nhra": true,
+    "sources": [
+     {
+      "name": "NHRA Stock Car Classification Guide ('DAKOTA' heading)",
+      "url": "nhra_dodge-dakota-1987-2011.json",
+      "says": "2001 DAKOTA: 360 ci / 250 hp"
+     },
+     {
+      "name": "Consumer Guide - 1997-04 Dodge Dakota used-vehicle review",
+      "url": "https://consumerguide.com/used/1997-04-dodge-dakota/",
+      "says": "Dakota R/T arrived (1998) packing a 250-horsepower 5.9-liter V8; 2003: 245-250 hp; the 245-hp 5.9 dropped for '04"
+     },
+     {
+      "name": "Wikipedia - Dodge Dakota + Shelby Dakota (counted as one source)",
+      "url": "https://en.wikipedia.org/wiki/Dodge_Dakota",
+      "says": "5.9 L Magnum V8, 250 hp, R/T, 1998-2003"
+     },
+     {
+      "name": "EPA fueleconomy.gov vehicle data",
+      "url": "https://www.fueleconomy.gov/feg/download.shtml",
+      "says": "2001 Dakota: 5.9 L 8-cyl listed"
+     },
+     {
+      "name": "Kelley Blue Book - Dodge Dakota specs pages (per year/cab, e.g. /dodge/dakota-regular-cab/<year>/specs/)",
+      "url": "https://www.kbb.com/dodge/dakota/",
+      "says": "2001 Dakota specs: V8 5.9 Liter 250 @ 4400 RPM"
+     }
+    ],
+    "independent_sources": 5,
+    "status": "confirmed",
+    "note": ""
+   }
+  ],
+  "2002": [
+   {
+    "gen": "gen2",
+    "cid": 150,
+    "hp": 120,
+    "hp_basis": "SAE net",
+    "name": "2.5L / 150 I4",
+    "rpo": "AMC/Jeep 2.5 (MPI)",
+    "common_name": "2.5 Jeep four",
+    "trims": [
+     "base (2WD regular cab)"
+    ],
+    "nhra": true,
+    "sources": [
+     {
+      "name": "NHRA Stock Car Classification Guide ('DAKOTA' heading)",
+      "url": "nhra_dodge-dakota-1987-2011.json",
+      "says": "2002 DAKOTA: 153 ci / 120 hp"
+     },
+     {
+      "name": "Consumer Guide - 1997-04 Dodge Dakota used-vehicle review",
+      "url": "https://consumerguide.com/used/1997-04-dodge-dakota/",
+      "says": "2.5-liter 4-cylinder with 120 horsepower (1997-2002); dropped for 2003"
+     },
+     {
+      "name": "Wikipedia - Dodge Dakota + Shelby Dakota (counted as one source)",
+      "url": "https://en.wikipedia.org/wiki/Dodge_Dakota",
+      "says": "2.5 L AMC I4, 120 hp, 1997-2002"
+     },
+     {
+      "name": "EPA fueleconomy.gov vehicle data",
+      "url": "https://www.fueleconomy.gov/feg/download.shtml",
+      "says": "2002 Dakota: 2.5 L 4-cyl listed"
+     }
+    ],
+    "independent_sources": 4,
+    "status": "confirmed",
+    "note": ""
+   },
+   {
+    "gen": "gen2",
+    "cid": 239,
+    "hp": 175,
+    "hp_basis": "SAE net",
+    "name": "3.9L / 239 V6",
+    "rpo": "Magnum 3.9",
+    "common_name": "3.9 Magnum V6",
+    "trims": [
+     "std V6 / optional"
+    ],
+    "nhra": false,
+    "sources": [
+     {
+      "name": "Consumer Guide - 1997-04 Dodge Dakota used-vehicle review",
+      "url": "https://consumerguide.com/used/1997-04-dodge-dakota/",
+      "says": "3.9-liter V6 that produced 175 horsepower (1997-2003); replaced by the 3.7 for 2004"
+     },
+     {
+      "name": "Wikipedia - Dodge Dakota + Shelby Dakota (counted as one source)",
+      "url": "https://en.wikipedia.org/wiki/Dodge_Dakota",
+      "says": "3.9 L Magnum V6, 175 hp, 1997-2003"
+     },
+     {
+      "name": "EPA fueleconomy.gov vehicle data",
+      "url": "https://www.fueleconomy.gov/feg/download.shtml",
+      "says": "2002 Dakota: 3.9 L 6-cyl listed"
+     },
+     {
+      "name": "Kelley Blue Book - Dodge Dakota specs pages (per year/cab, e.g. /dodge/dakota-regular-cab/<year>/specs/)",
+      "url": "https://www.kbb.com/dodge/dakota/",
+      "says": "2002 Dakota specs: V6 3.9 Liter 175 @ 4800 RPM"
+     }
+    ],
+    "independent_sources": 4,
+    "status": "three_sources_not_nhra",
+    "note": "NHRA 2002 lists no 3.9 row."
+   },
+   {
+    "gen": "gen2",
+    "cid": 287,
+    "hp": 235,
+    "hp_basis": "SAE net",
+    "name": "4.7L / 287 V8",
+    "rpo": "PowerTech 4.7 (EVA)",
+    "common_name": "4.7 PowerTech V8",
+    "trims": [
+     "optional"
+    ],
+    "nhra": false,
+    "sources": [
+     {
+      "name": "Consumer Guide - 1997-04 Dodge Dakota used-vehicle review",
+      "url": "https://consumerguide.com/used/1997-04-dodge-dakota/",
+      "says": "a 235-horsepower 4.7-liter V8 replaced the 5.2 (2000); 230-235 hp over 2001-2004"
+     },
+     {
+      "name": "Wikipedia - Dodge Dakota + Shelby Dakota (counted as one source)",
+      "url": "https://en.wikipedia.org/wiki/Dodge_Dakota",
+      "says": "4.7 L PowerTech V8, 230 hp, 2000-2004"
+     },
+     {
+      "name": "EPA fueleconomy.gov vehicle data",
+      "url": "https://www.fueleconomy.gov/feg/download.shtml",
+      "says": "2002 Dakota: 4.7 L 8-cyl listed"
+     },
+     {
+      "name": "Kelley Blue Book - Dodge Dakota specs pages (per year/cab, e.g. /dodge/dakota-regular-cab/<year>/specs/)",
+      "url": "https://www.kbb.com/dodge/dakota/",
+      "says": "2002 Dakota specs: V8 4.7 Liter 235 @ 4800 RPM"
+     }
+    ],
+    "independent_sources": 4,
+    "status": "three_sources_not_nhra",
+    "note": "Two factory ratings: 235 hp, and 230 hp for low-emission (LEV) calibrations (WardsAuto). NHRA, KBB, Wikipedia and Consumer Guide split between 230 and 235 by year; 235 recorded as the headline figure."
+   },
+   {
+    "gen": "gen2",
+    "cid": 360,
+    "hp": 250,
+    "hp_basis": "SAE net",
+    "name": "5.9L / 360 V8",
+    "rpo": "Magnum 5.9",
+    "common_name": "5.9 Magnum V8 (R/T)",
+    "trims": [
+     "R/T (regular and Club Cab, 2WD)"
+    ],
+    "nhra": true,
+    "sources": [
+     {
+      "name": "NHRA Stock Car Classification Guide ('DAKOTA' heading)",
+      "url": "nhra_dodge-dakota-1987-2011.json",
+      "says": "2002 DAKOTA: 360 ci / 250 hp"
+     },
+     {
+      "name": "Consumer Guide - 1997-04 Dodge Dakota used-vehicle review",
+      "url": "https://consumerguide.com/used/1997-04-dodge-dakota/",
+      "says": "Dakota R/T arrived (1998) packing a 250-horsepower 5.9-liter V8; 2003: 245-250 hp; the 245-hp 5.9 dropped for '04"
+     },
+     {
+      "name": "Wikipedia - Dodge Dakota + Shelby Dakota (counted as one source)",
+      "url": "https://en.wikipedia.org/wiki/Dodge_Dakota",
+      "says": "5.9 L Magnum V8, 250 hp, R/T, 1998-2003"
+     },
+     {
+      "name": "EPA fueleconomy.gov vehicle data",
+      "url": "https://www.fueleconomy.gov/feg/download.shtml",
+      "says": "2002 Dakota: 5.9 L 8-cyl listed"
+     },
+     {
+      "name": "Kelley Blue Book - Dodge Dakota specs pages (per year/cab, e.g. /dodge/dakota-regular-cab/<year>/specs/)",
+      "url": "https://www.kbb.com/dodge/dakota/",
+      "says": "2002 Dakota specs: V8 5.9 Liter 250 @ 4400 RPM"
+     }
+    ],
+    "independent_sources": 5,
+    "status": "confirmed",
+    "note": ""
+   }
+  ],
+  "2003": [
+   {
+    "gen": "gen2",
+    "cid": 239,
+    "hp": 175,
+    "hp_basis": "SAE net",
+    "name": "3.9L / 239 V6",
+    "rpo": "Magnum 3.9",
+    "common_name": "3.9 Magnum V6",
+    "trims": [
+     "std V6 / optional"
+    ],
+    "nhra": true,
+    "sources": [
+     {
+      "name": "NHRA Stock Car Classification Guide ('DAKOTA' heading)",
+      "url": "nhra_dodge-dakota-1987-2011.json",
+      "says": "2003 DAKOTA: 238 ci / 175 hp"
+     },
+     {
+      "name": "Consumer Guide - 1997-04 Dodge Dakota used-vehicle review",
+      "url": "https://consumerguide.com/used/1997-04-dodge-dakota/",
+      "says": "3.9-liter V6 that produced 175 horsepower (1997-2003); replaced by the 3.7 for 2004"
+     },
+     {
+      "name": "Wikipedia - Dodge Dakota + Shelby Dakota (counted as one source)",
+      "url": "https://en.wikipedia.org/wiki/Dodge_Dakota",
+      "says": "3.9 L Magnum V6, 175 hp, 1997-2003"
+     },
+     {
+      "name": "EPA fueleconomy.gov vehicle data",
+      "url": "https://www.fueleconomy.gov/feg/download.shtml",
+      "says": "2003 Dakota: 3.9 L 6-cyl listed"
+     },
+     {
+      "name": "Kelley Blue Book - Dodge Dakota specs pages (per year/cab, e.g. /dodge/dakota-regular-cab/<year>/specs/)",
+      "url": "https://www.kbb.com/dodge/dakota/",
+      "says": "2003 Dakota specs: V6 3.9 Liter 175 @ 4800 RPM"
+     }
+    ],
+    "independent_sources": 5,
+    "status": "confirmed",
+    "note": ""
+   },
+   {
+    "gen": "gen2",
+    "cid": 287,
+    "hp": 235,
+    "hp_basis": "SAE net",
+    "name": "4.7L / 287 V8",
+    "rpo": "PowerTech 4.7 (EVA)",
+    "common_name": "4.7 PowerTech V8",
+    "trims": [
+     "optional"
+    ],
+    "nhra": true,
+    "sources": [
+     {
+      "name": "NHRA Stock Car Classification Guide ('DAKOTA' heading)",
+      "url": "nhra_dodge-dakota-1987-2011.json",
+      "says": "2003 DAKOTA: 287 ci / 235 hp"
+     },
+     {
+      "name": "Consumer Guide - 1997-04 Dodge Dakota used-vehicle review",
+      "url": "https://consumerguide.com/used/1997-04-dodge-dakota/",
+      "says": "a 235-horsepower 4.7-liter V8 replaced the 5.2 (2000); 230-235 hp over 2001-2004"
+     },
+     {
+      "name": "Wikipedia - Dodge Dakota + Shelby Dakota (counted as one source)",
+      "url": "https://en.wikipedia.org/wiki/Dodge_Dakota",
+      "says": "4.7 L PowerTech V8, 230 hp, 2000-2004"
+     },
+     {
+      "name": "EPA fueleconomy.gov vehicle data",
+      "url": "https://www.fueleconomy.gov/feg/download.shtml",
+      "says": "2003 Dakota: 4.7 L 8-cyl listed"
+     },
+     {
+      "name": "Kelley Blue Book - Dodge Dakota specs pages (per year/cab, e.g. /dodge/dakota-regular-cab/<year>/specs/)",
+      "url": "https://www.kbb.com/dodge/dakota/",
+      "says": "2003 Dakota specs: V8 4.7 Liter 235 @ 4800 RPM"
+     }
+    ],
+    "independent_sources": 5,
+    "status": "confirmed",
+    "note": "Two factory ratings: 235 hp, and 230 hp for low-emission (LEV) calibrations (WardsAuto). NHRA, KBB, Wikipedia and Consumer Guide split between 230 and 235 by year; 235 recorded as the headline figure. 5-speed automatic available from 2003 (Consumer Guide)."
+   },
+   {
+    "gen": "gen2",
+    "cid": 360,
+    "hp": 250,
+    "hp_basis": "SAE net",
+    "name": "5.9L / 360 V8",
+    "rpo": "Magnum 5.9",
+    "common_name": "5.9 Magnum V8 (R/T)",
+    "trims": [
+     "R/T (regular and Club Cab, 2WD)"
+    ],
+    "nhra": true,
+    "sources": [
+     {
+      "name": "NHRA Stock Car Classification Guide ('DAKOTA' heading)",
+      "url": "nhra_dodge-dakota-1987-2011.json",
+      "says": "2003 DAKOTA: 360 ci / 250 hp and 245 hp"
+     },
+     {
+      "name": "Consumer Guide - 1997-04 Dodge Dakota used-vehicle review",
+      "url": "https://consumerguide.com/used/1997-04-dodge-dakota/",
+      "says": "Dakota R/T arrived (1998) packing a 250-horsepower 5.9-liter V8; 2003: 245-250 hp; the 245-hp 5.9 dropped for '04"
+     },
+     {
+      "name": "Wikipedia - Dodge Dakota + Shelby Dakota (counted as one source)",
+      "url": "https://en.wikipedia.org/wiki/Dodge_Dakota",
+      "says": "5.9 L Magnum V8, 250 hp, R/T, 1998-2003"
+     },
+     {
+      "name": "EPA fueleconomy.gov vehicle data",
+      "url": "https://www.fueleconomy.gov/feg/download.shtml",
+      "says": "2003 Dakota: 5.9 L 8-cyl listed"
+     }
+    ],
+    "independent_sources": 4,
+    "status": "confirmed",
+    "note": "Consumer Guide gives 245-250 hp for 2003 and calls it the 245-hp 5.9 when it was dropped for 2004; the R/T's last year."
+   }
+  ],
+  "2004": [
+   {
+    "gen": "gen2",
+    "cid": 226,
+    "hp": 210,
+    "hp_basis": "SAE net",
+    "name": "3.7L / 226 V6",
+    "rpo": "PowerTech 3.7 (EKG)",
+    "common_name": "3.7 PowerTech V6",
+    "trims": [
+     "std"
+    ],
+    "nhra": true,
+    "sources": [
+     {
+      "name": "Consumer Guide - 1997-04 Dodge Dakota used-vehicle review",
+      "url": "https://consumerguide.com/used/1997-04-dodge-dakota/",
+      "says": "2004: replaced the 175-hp 3.9-liter V6 with a 210-hp 3.7-liter V6"
+     },
+     {
+      "name": "Wikipedia - Dodge Dakota + Shelby Dakota (counted as one source)",
+      "url": "https://en.wikipedia.org/wiki/Dodge_Dakota",
+      "says": "3.7 L PowerTech V6, 210 hp, 2004"
+     },
+     {
+      "name": "Kelley Blue Book - Dodge Dakota specs pages (per year/cab, e.g. /dodge/dakota-regular-cab/<year>/specs/)",
+      "url": "https://www.kbb.com/dodge/dakota/",
+      "says": "2004 Dakota specs: V6 3.7 Liter 210 @ 5200 RPM"
+     },
+     {
+      "name": "EPA fueleconomy.gov vehicle data",
+      "url": "https://www.fueleconomy.gov/feg/download.shtml",
+      "says": "2004 Dakota: 3.7 L 6-cyl listed"
+     },
+     {
+      "name": "NHRA Stock Car Classification Guide ('DAKOTA' heading)",
+      "url": "nhra_dodge-dakota-1987-2011.json",
+      "says": "2004 DAKOTA: 226 ci / 215 hp"
+     }
+    ],
+    "independent_sources": 5,
+    "status": "three_sources_not_nhra",
+    "note": "NHRA lists 215 hp; Consumer Guide, Wikipedia and KBB give 210. Recorded 210."
+   },
+   {
+    "gen": "gen2",
+    "cid": 287,
+    "hp": 235,
+    "hp_basis": "SAE net",
+    "name": "4.7L / 287 V8",
+    "rpo": "PowerTech 4.7 (EVA)",
+    "common_name": "4.7 PowerTech V8",
+    "trims": [
+     "optional"
+    ],
+    "nhra": true,
+    "sources": [
+     {
+      "name": "NHRA Stock Car Classification Guide ('DAKOTA' heading)",
+      "url": "nhra_dodge-dakota-1987-2011.json",
+      "says": "2004 DAKOTA: 287 ci / 235 hp"
+     },
+     {
+      "name": "Consumer Guide - 1997-04 Dodge Dakota used-vehicle review",
+      "url": "https://consumerguide.com/used/1997-04-dodge-dakota/",
+      "says": "a 235-horsepower 4.7-liter V8 replaced the 5.2 (2000); 230-235 hp over 2001-2004"
+     },
+     {
+      "name": "Wikipedia - Dodge Dakota + Shelby Dakota (counted as one source)",
+      "url": "https://en.wikipedia.org/wiki/Dodge_Dakota",
+      "says": "4.7 L PowerTech V8, 230 hp, 2000-2004"
+     },
+     {
+      "name": "EPA fueleconomy.gov vehicle data",
+      "url": "https://www.fueleconomy.gov/feg/download.shtml",
+      "says": "2004 Dakota: 4.7 L 8-cyl listed"
+     },
+     {
+      "name": "Kelley Blue Book - Dodge Dakota specs pages (per year/cab, e.g. /dodge/dakota-regular-cab/<year>/specs/)",
+      "url": "https://www.kbb.com/dodge/dakota/",
+      "says": "2004 Dakota specs: V8 4.7 Liter 230 @ 4800 RPM"
+     }
+    ],
+    "independent_sources": 5,
+    "status": "confirmed",
+    "note": "Two factory ratings: 235 hp, and 230 hp for low-emission (LEV) calibrations (WardsAuto). NHRA, KBB, Wikipedia and Consumer Guide split between 230 and 235 by year; 235 recorded as the headline figure."
+   }
+  ],
+  "2005": [
+   {
+    "gen": "gen3",
+    "cid": 226,
+    "hp": 210,
+    "hp_basis": "SAE net",
+    "name": "3.7L / 226 V6",
+    "rpo": "PowerTech 3.7 (EKG)",
+    "common_name": "3.7 PowerTech V6",
+    "trims": [
+     "std"
+    ],
+    "nhra": false,
+    "sources": [
+     {
+      "name": "Consumer Guide - 2005-11 Dodge Dakota used-vehicle review",
+      "url": "https://consumerguide.com/used/2005-11-dodge-dakota/",
+      "says": "210-hp V6 standard; the 3.7 remained the base engine through 2011"
+     },
+     {
+      "name": "Wikipedia - Dodge Dakota + Shelby Dakota (counted as one source)",
+      "url": "https://en.wikipedia.org/wiki/Dodge_Dakota",
+      "says": "3.7 L PowerTech V6, 210 hp"
+     },
+     {
+      "name": "EPA fueleconomy.gov vehicle data",
+      "url": "https://www.fueleconomy.gov/feg/download.shtml",
+      "says": "2005 Dakota: 3.7 L 6-cyl listed"
+     }
+    ],
+    "independent_sources": 3,
+    "status": "three_sources_not_nhra",
+    "note": ""
+   },
+   {
+    "gen": "gen3",
+    "cid": 287,
+    "hp": 230,
+    "hp_basis": "SAE net",
+    "name": "4.7L / 287 V8",
+    "rpo": "PowerTech 4.7 (EVA)",
+    "common_name": "4.7 PowerTech V8",
+    "trims": [
+     "optional"
+    ],
+    "nhra": false,
+    "sources": [
+     {
+      "name": "Consumer Guide - 2005-11 Dodge Dakota used-vehicle review",
+      "url": "https://consumerguide.com/used/2005-11-dodge-dakota/",
+      "says": "230-hp V8 optional"
+     },
+     {
+      "name": "Wikipedia - Dodge Dakota + Shelby Dakota (counted as one source)",
+      "url": "https://en.wikipedia.org/wiki/Dodge_Dakota",
+      "says": "4.7 L PowerTech V8, 230 hp"
+     },
+     {
+      "name": "Kelley Blue Book - Dodge Dakota specs pages (per year/cab, e.g. /dodge/dakota-regular-cab/<year>/specs/)",
+      "url": "https://www.kbb.com/dodge/dakota/",
+      "says": "2005 Dakota specs: V8 4.7 Liter 230 @ 4600 RPM"
+     },
+     {
+      "name": "EPA fueleconomy.gov vehicle data",
+      "url": "https://www.fueleconomy.gov/feg/download.shtml",
+      "says": "2005 Dakota: 4.7 L 8-cyl listed"
+     },
+     {
+      "name": "Chrysler release 'New 2008 Dodge Dakota: More Power...' Aug 31 2007 (Dodge/Chrysler material)",
+      "url": "https://media.stellantisnorthamerica.com/newsrelease.do?id=7337",
+      "says": "2008 release: the new 4.7 V8's 302 hp is a 31 percent increase (i.e. over 230 hp)"
+     }
+    ],
+    "independent_sources": 5,
+    "status": "three_sources_not_nhra",
+    "note": ""
+   },
+   {
+    "gen": "gen3",
+    "cid": 287,
+    "hp": 260,
+    "hp_basis": "SAE net",
+    "name": "4.7L / 287 V8 High Output",
+    "rpo": "PowerTech 4.7 H.O.",
+    "common_name": "4.7 H.O. V8",
+    "trims": [
+     "optional (select trims)"
+    ],
+    "nhra": false,
+    "sources": [
+     {
+      "name": "Consumer Guide - 2005-11 Dodge Dakota used-vehicle review",
+      "url": "https://consumerguide.com/used/2005-11-dodge-dakota/",
+      "says": "High Output 260-hp V8 available for select trims; replaced for 2008"
+     },
+     {
+      "name": "Wikipedia - Dodge Dakota + Shelby Dakota (counted as one source)",
+      "url": "https://en.wikipedia.org/wiki/Dodge_Dakota",
+      "says": "4.7 L high-output V8, 260 hp"
+     },
+     {
+      "name": "Chrysler release 'New 2008 Dodge Dakota: More Power...' Aug 31 2007 (Dodge/Chrysler material)",
+      "url": "https://media.stellantisnorthamerica.com/newsrelease.do?id=7337",
+      "says": "2008 release: the new V8 replaces the previous 260 hp High Output 4.7"
+     },
+     {
+      "name": "EPA fueleconomy.gov vehicle data",
+      "url": "https://www.fueleconomy.gov/feg/download.shtml",
+      "says": "2005 Dakota: 4.7 L 8-cyl (EPA cannot separate the H.O.) listed"
+     },
+     {
+      "name": "Auto123 - 2005 Dodge Dakota preview (K. Soltani, Feb 9 2004)",
+      "url": "https://www.auto123.com/en/news/2005-dodge-dakota-preview/43905/?page=3",
+      "says": "high-output 4.7-L V8 boasts more than 250 horsepower and over 300 lb-ft"
+     }
+    ],
+    "independent_sources": 5,
+    "status": "three_sources_not_nhra",
+    "note": ""
+   }
+  ],
+  "2006": [
+   {
+    "gen": "gen3",
+    "cid": 226,
+    "hp": 210,
+    "hp_basis": "SAE net",
+    "name": "3.7L / 226 V6",
+    "rpo": "PowerTech 3.7 (EKG)",
+    "common_name": "3.7 PowerTech V6",
+    "trims": [
+     "std"
+    ],
+    "nhra": false,
+    "sources": [
+     {
+      "name": "Consumer Guide - 2005-11 Dodge Dakota used-vehicle review",
+      "url": "https://consumerguide.com/used/2005-11-dodge-dakota/",
+      "says": "210-hp V6 standard; the 3.7 remained the base engine through 2011"
+     },
+     {
+      "name": "Wikipedia - Dodge Dakota + Shelby Dakota (counted as one source)",
+      "url": "https://en.wikipedia.org/wiki/Dodge_Dakota",
+      "says": "3.7 L PowerTech V6, 210 hp"
+     },
+     {
+      "name": "EPA fueleconomy.gov vehicle data",
+      "url": "https://www.fueleconomy.gov/feg/download.shtml",
+      "says": "2006 Dakota: 3.7 L 6-cyl listed"
+     }
+    ],
+    "independent_sources": 3,
+    "status": "three_sources_not_nhra",
+    "note": ""
+   },
+   {
+    "gen": "gen3",
+    "cid": 287,
+    "hp": 230,
+    "hp_basis": "SAE net",
+    "name": "4.7L / 287 V8",
+    "rpo": "PowerTech 4.7 (EVA)",
+    "common_name": "4.7 PowerTech V8",
+    "trims": [
+     "optional"
+    ],
+    "nhra": false,
+    "sources": [
+     {
+      "name": "Consumer Guide - 2005-11 Dodge Dakota used-vehicle review",
+      "url": "https://consumerguide.com/used/2005-11-dodge-dakota/",
+      "says": "230-hp V8 optional"
+     },
+     {
+      "name": "Wikipedia - Dodge Dakota + Shelby Dakota (counted as one source)",
+      "url": "https://en.wikipedia.org/wiki/Dodge_Dakota",
+      "says": "4.7 L PowerTech V8, 230 hp"
+     },
+     {
+      "name": "Kelley Blue Book - Dodge Dakota specs pages (per year/cab, e.g. /dodge/dakota-regular-cab/<year>/specs/)",
+      "url": "https://www.kbb.com/dodge/dakota/",
+      "says": "2006 Dakota specs: V8 4.7 Liter 230 @ 4600 RPM"
+     },
+     {
+      "name": "EPA fueleconomy.gov vehicle data",
+      "url": "https://www.fueleconomy.gov/feg/download.shtml",
+      "says": "2006 Dakota: 4.7 L 8-cyl listed"
+     },
+     {
+      "name": "Chrysler release 'New 2008 Dodge Dakota: More Power...' Aug 31 2007 (Dodge/Chrysler material)",
+      "url": "https://media.stellantisnorthamerica.com/newsrelease.do?id=7337",
+      "says": "2008 release: the new 4.7 V8's 302 hp is a 31 percent increase (i.e. over 230 hp)"
+     }
+    ],
+    "independent_sources": 5,
+    "status": "three_sources_not_nhra",
+    "note": ""
+   },
+   {
+    "gen": "gen3",
+    "cid": 287,
+    "hp": 260,
+    "hp_basis": "SAE net",
+    "name": "4.7L / 287 V8 High Output",
+    "rpo": "PowerTech 4.7 H.O.",
+    "common_name": "4.7 H.O. V8",
+    "trims": [
+     "optional (select trims)"
+    ],
+    "nhra": false,
+    "sources": [
+     {
+      "name": "Consumer Guide - 2005-11 Dodge Dakota used-vehicle review",
+      "url": "https://consumerguide.com/used/2005-11-dodge-dakota/",
+      "says": "High Output 260-hp V8 available for select trims; replaced for 2008"
+     },
+     {
+      "name": "Wikipedia - Dodge Dakota + Shelby Dakota (counted as one source)",
+      "url": "https://en.wikipedia.org/wiki/Dodge_Dakota",
+      "says": "4.7 L high-output V8, 260 hp"
+     },
+     {
+      "name": "Chrysler release 'New 2008 Dodge Dakota: More Power...' Aug 31 2007 (Dodge/Chrysler material)",
+      "url": "https://media.stellantisnorthamerica.com/newsrelease.do?id=7337",
+      "says": "2008 release: the new V8 replaces the previous 260 hp High Output 4.7"
+     },
+     {
+      "name": "EPA fueleconomy.gov vehicle data",
+      "url": "https://www.fueleconomy.gov/feg/download.shtml",
+      "says": "2006 Dakota: 4.7 L 8-cyl (EPA cannot separate the H.O.) listed"
+     }
+    ],
+    "independent_sources": 4,
+    "status": "three_sources_not_nhra",
+    "note": ""
+   }
+  ],
+  "2007": [
+   {
+    "gen": "gen3",
+    "cid": 226,
+    "hp": 210,
+    "hp_basis": "SAE net",
+    "name": "3.7L / 226 V6",
+    "rpo": "PowerTech 3.7 (EKG)",
+    "common_name": "3.7 PowerTech V6",
+    "trims": [
+     "std"
+    ],
+    "nhra": false,
+    "sources": [
+     {
+      "name": "Consumer Guide - 2005-11 Dodge Dakota used-vehicle review",
+      "url": "https://consumerguide.com/used/2005-11-dodge-dakota/",
+      "says": "210-hp V6 standard; the 3.7 remained the base engine through 2011"
+     },
+     {
+      "name": "Wikipedia - Dodge Dakota + Shelby Dakota (counted as one source)",
+      "url": "https://en.wikipedia.org/wiki/Dodge_Dakota",
+      "says": "3.7 L PowerTech V6, 210 hp"
+     },
+     {
+      "name": "EPA fueleconomy.gov vehicle data",
+      "url": "https://www.fueleconomy.gov/feg/download.shtml",
+      "says": "2007 Dakota: 3.7 L 6-cyl listed"
+     }
+    ],
+    "independent_sources": 3,
+    "status": "three_sources_not_nhra",
+    "note": ""
+   },
+   {
+    "gen": "gen3",
+    "cid": 287,
+    "hp": 230,
+    "hp_basis": "SAE net",
+    "name": "4.7L / 287 V8",
+    "rpo": "PowerTech 4.7 (EVA)",
+    "common_name": "4.7 PowerTech V8",
+    "trims": [
+     "optional"
+    ],
+    "nhra": false,
+    "sources": [
+     {
+      "name": "Consumer Guide - 2005-11 Dodge Dakota used-vehicle review",
+      "url": "https://consumerguide.com/used/2005-11-dodge-dakota/",
+      "says": "230-hp V8 optional"
+     },
+     {
+      "name": "Wikipedia - Dodge Dakota + Shelby Dakota (counted as one source)",
+      "url": "https://en.wikipedia.org/wiki/Dodge_Dakota",
+      "says": "4.7 L PowerTech V8, 230 hp"
+     },
+     {
+      "name": "Kelley Blue Book - Dodge Dakota specs pages (per year/cab, e.g. /dodge/dakota-regular-cab/<year>/specs/)",
+      "url": "https://www.kbb.com/dodge/dakota/",
+      "says": "2007 Dakota specs: V8 4.7 Liter 230 @ 4400 RPM"
+     },
+     {
+      "name": "EPA fueleconomy.gov vehicle data",
+      "url": "https://www.fueleconomy.gov/feg/download.shtml",
+      "says": "2007 Dakota: 4.7 L 8-cyl listed"
+     },
+     {
+      "name": "Chrysler release 'New 2008 Dodge Dakota: More Power...' Aug 31 2007 (Dodge/Chrysler material)",
+      "url": "https://media.stellantisnorthamerica.com/newsrelease.do?id=7337",
+      "says": "2008 release: the new 4.7 V8's 302 hp is a 31 percent increase (i.e. over 230 hp)"
+     }
+    ],
+    "independent_sources": 5,
+    "status": "three_sources_not_nhra",
+    "note": "KBB 2007 also lists a 'V8, Flex Fuel, 4.7 Liter' option (E85-capable version), not separately rated."
+   },
+   {
+    "gen": "gen3",
+    "cid": 287,
+    "hp": 260,
+    "hp_basis": "SAE net",
+    "name": "4.7L / 287 V8 High Output",
+    "rpo": "PowerTech 4.7 H.O.",
+    "common_name": "4.7 H.O. V8",
+    "trims": [
+     "optional (select trims)"
+    ],
+    "nhra": false,
+    "sources": [
+     {
+      "name": "Consumer Guide - 2005-11 Dodge Dakota used-vehicle review",
+      "url": "https://consumerguide.com/used/2005-11-dodge-dakota/",
+      "says": "High Output 260-hp V8 available for select trims; replaced for 2008"
+     },
+     {
+      "name": "Wikipedia - Dodge Dakota + Shelby Dakota (counted as one source)",
+      "url": "https://en.wikipedia.org/wiki/Dodge_Dakota",
+      "says": "4.7 L high-output V8, 260 hp"
+     },
+     {
+      "name": "Chrysler release 'New 2008 Dodge Dakota: More Power...' Aug 31 2007 (Dodge/Chrysler material)",
+      "url": "https://media.stellantisnorthamerica.com/newsrelease.do?id=7337",
+      "says": "2008 release: the new V8 replaces the previous 260 hp High Output 4.7"
+     },
+     {
+      "name": "EPA fueleconomy.gov vehicle data",
+      "url": "https://www.fueleconomy.gov/feg/download.shtml",
+      "says": "2007 Dakota: 4.7 L 8-cyl (EPA cannot separate the H.O.) listed"
+     },
+     {
+      "name": "Kelley Blue Book - Dodge Dakota specs pages (per year/cab, e.g. /dodge/dakota-regular-cab/<year>/specs/)",
+      "url": "https://www.kbb.com/dodge/dakota/",
+      "says": "2007 Dakota specs: 'V8, HO, 4.7 Liter' in available engines"
+     }
+    ],
+    "independent_sources": 5,
+    "status": "three_sources_not_nhra",
+    "note": ""
+   }
+  ],
+  "2008": [
+   {
+    "gen": "gen3",
+    "cid": 226,
+    "hp": 210,
+    "hp_basis": "SAE net",
+    "name": "3.7L / 226 V6",
+    "rpo": "PowerTech 3.7 (EKG)",
+    "common_name": "3.7 PowerTech V6",
+    "trims": [
+     "std"
+    ],
+    "nhra": false,
+    "sources": [
+     {
+      "name": "Chrysler release 'New 2008 Dodge Dakota: More Power...' Aug 31 2007 (Dodge/Chrysler material)",
+      "url": "https://media.stellantisnorthamerica.com/newsrelease.do?id=7337",
+      "says": "standard 3.7-liter Magnum V-6 engine producing 210 horsepower and 235 lb-ft"
+     },
+     {
+      "name": "Consumer Guide - 2005-11 Dodge Dakota used-vehicle review",
+      "url": "https://consumerguide.com/used/2005-11-dodge-dakota/",
+      "says": "210-hp V6 standard; the 3.7 remained the base engine through 2011"
+     },
+     {
+      "name": "Wikipedia - Dodge Dakota + Shelby Dakota (counted as one source)",
+      "url": "https://en.wikipedia.org/wiki/Dodge_Dakota",
+      "says": "3.7 L PowerTech V6, 210 hp"
+     },
+     {
+      "name": "EPA fueleconomy.gov vehicle data",
+      "url": "https://www.fueleconomy.gov/feg/download.shtml",
+      "says": "2008 Dakota: 3.7 L 6-cyl listed"
+     },
+     {
+      "name": "Kelley Blue Book - Dodge Dakota specs pages (per year/cab, e.g. /dodge/dakota-regular-cab/<year>/specs/)",
+      "url": "https://www.kbb.com/dodge/dakota/",
+      "says": "2008 Dakota specs: V6 3.7 Liter 210 @ 5200 RPM"
+     }
+    ],
+    "independent_sources": 5,
+    "status": "three_sources_not_nhra",
+    "note": ""
+   },
+   {
+    "gen": "gen3",
+    "cid": 287,
+    "hp": 302,
+    "hp_basis": "SAE net",
+    "name": "4.7L / 287 V8 (2008 redesign)",
+    "rpo": "PowerTech 4.7 (EVE)",
+    "common_name": "4.7 V8 (302 hp, FFV)",
+    "trims": [
+     "optional"
+    ],
+    "nhra": false,
+    "sources": [
+     {
+      "name": "Chrysler release 'New 2008 Dodge Dakota: More Power...' Aug 31 2007 (Dodge/Chrysler material)",
+      "url": "https://media.stellantisnorthamerica.com/newsrelease.do?id=7337",
+      "says": "new 4.7-liter V-8: 302 horsepower (225 kW) and 329 lb-ft; two plugs per cylinder; E85-capable (FFV)"
+     },
+     {
+      "name": "Consumer Guide - 2005-11 Dodge Dakota used-vehicle review",
+      "url": "https://consumerguide.com/used/2005-11-dodge-dakota/",
+      "says": "New for '08 was a 302-hp 4.7-liter V8 that replaced V8s of 230 and 260 hp; flex-fuel 4.7 continued 2009-2011"
+     },
+     {
+      "name": "EPA fueleconomy.gov vehicle data",
+      "url": "https://www.fueleconomy.gov/feg/download.shtml",
+      "says": "2008 Dakota: 4.7 L 8-cyl (GAS 330 / FFV) listed"
+     },
+     {
+      "name": "Wikipedia - Dodge Dakota + Shelby Dakota (counted as one source)",
+      "url": "https://en.wikipedia.org/wiki/Dodge_Dakota",
+      "says": "new 4.7 L V8 produced 310 hp and 330 lb-ft (2008-2011)"
+     },
+     {
+      "name": "Kelley Blue Book - Dodge Dakota specs pages (per year/cab, e.g. /dodge/dakota-regular-cab/<year>/specs/)",
+      "url": "https://www.kbb.com/dodge/dakota/",
+      "says": "2008 Dakota specs: V8 FFV 4.7 Liter 302 @ 5650 RPM"
+     }
+    ],
+    "independent_sources": 5,
+    "status": "three_sources_not_nhra",
+    "note": "Wikipedia gives 310 hp (the Ram 1500 figure); Dodge, Consumer Guide and KBB give 302 for the Dakota. Recorded 302."
+   }
+  ],
+  "2009": [
+   {
+    "gen": "gen3",
+    "cid": 226,
+    "hp": 210,
+    "hp_basis": "SAE net",
+    "name": "3.7L / 226 V6",
+    "rpo": "PowerTech 3.7 (EKG)",
+    "common_name": "3.7 PowerTech V6",
+    "trims": [
+     "std"
+    ],
+    "nhra": false,
+    "sources": [
+     {
+      "name": "Consumer Guide - 2005-11 Dodge Dakota used-vehicle review",
+      "url": "https://consumerguide.com/used/2005-11-dodge-dakota/",
+      "says": "210-hp V6 standard; the 3.7 remained the base engine through 2011"
+     },
+     {
+      "name": "Wikipedia - Dodge Dakota + Shelby Dakota (counted as one source)",
+      "url": "https://en.wikipedia.org/wiki/Dodge_Dakota",
+      "says": "3.7 L PowerTech V6, 210 hp"
+     },
+     {
+      "name": "EPA fueleconomy.gov vehicle data",
+      "url": "https://www.fueleconomy.gov/feg/download.shtml",
+      "says": "2009 Dakota: 3.7 L 6-cyl listed"
+     },
+     {
+      "name": "Kelley Blue Book - Dodge Dakota specs pages (per year/cab, e.g. /dodge/dakota-regular-cab/<year>/specs/)",
+      "url": "https://www.kbb.com/dodge/dakota/",
+      "says": "2009 Dakota specs: V6 3.7 Liter 210 @ 5200 RPM"
+     }
+    ],
+    "independent_sources": 4,
+    "status": "three_sources_not_nhra",
+    "note": ""
+   },
+   {
+    "gen": "gen3",
+    "cid": 287,
+    "hp": 302,
+    "hp_basis": "SAE net",
+    "name": "4.7L / 287 V8 (2008 redesign)",
+    "rpo": "PowerTech 4.7 (EVE)",
+    "common_name": "4.7 V8 (302 hp, FFV)",
+    "trims": [
+     "optional"
+    ],
+    "nhra": false,
+    "sources": [
+     {
+      "name": "Consumer Guide - 2005-11 Dodge Dakota used-vehicle review",
+      "url": "https://consumerguide.com/used/2005-11-dodge-dakota/",
+      "says": "New for '08 was a 302-hp 4.7-liter V8 that replaced V8s of 230 and 260 hp; flex-fuel 4.7 continued 2009-2011"
+     },
+     {
+      "name": "EPA fueleconomy.gov vehicle data",
+      "url": "https://www.fueleconomy.gov/feg/download.shtml",
+      "says": "2009 Dakota: 4.7 L 8-cyl (GAS 330 / FFV) listed"
+     },
+     {
+      "name": "Wikipedia - Dodge Dakota + Shelby Dakota (counted as one source)",
+      "url": "https://en.wikipedia.org/wiki/Dodge_Dakota",
+      "says": "new 4.7 L V8 produced 310 hp and 330 lb-ft (2008-2011)"
+     },
+     {
+      "name": "Kelley Blue Book - Dodge Dakota specs pages (per year/cab, e.g. /dodge/dakota-regular-cab/<year>/specs/)",
+      "url": "https://www.kbb.com/dodge/dakota/",
+      "says": "2009 Dakota specs: V8 FFV 4.7 Liter 302 @ 5650 RPM"
+     }
+    ],
+    "independent_sources": 4,
+    "status": "three_sources_not_nhra",
+    "note": "Wikipedia gives 310 hp (the Ram 1500 figure); Dodge, Consumer Guide and KBB give 302 for the Dakota. Recorded 302. Manual transmission and AWD dropped for 2009 (Consumer Guide)."
+   }
+  ],
+  "2010": [
+   {
+    "gen": "gen3",
+    "cid": 226,
+    "hp": 210,
+    "hp_basis": "SAE net",
+    "name": "3.7L / 226 V6",
+    "rpo": "PowerTech 3.7 (EKG)",
+    "common_name": "3.7 PowerTech V6",
+    "trims": [
+     "std"
+    ],
+    "nhra": false,
+    "sources": [
+     {
+      "name": "Consumer Guide - 2005-11 Dodge Dakota used-vehicle review",
+      "url": "https://consumerguide.com/used/2005-11-dodge-dakota/",
+      "says": "210-hp V6 standard; the 3.7 remained the base engine through 2011"
+     },
+     {
+      "name": "Wikipedia - Dodge Dakota + Shelby Dakota (counted as one source)",
+      "url": "https://en.wikipedia.org/wiki/Dodge_Dakota",
+      "says": "3.7 L PowerTech V6, 210 hp"
+     },
+     {
+      "name": "EPA fueleconomy.gov vehicle data",
+      "url": "https://www.fueleconomy.gov/feg/download.shtml",
+      "says": "2010 Dakota: 3.7 L 6-cyl listed"
+     },
+     {
+      "name": "Kelley Blue Book - Dodge Dakota specs pages (per year/cab, e.g. /dodge/dakota-regular-cab/<year>/specs/)",
+      "url": "https://www.kbb.com/dodge/dakota/",
+      "says": "2010 Dakota specs: V6 3.7 Liter 210 @ 5200 RPM"
+     }
+    ],
+    "independent_sources": 4,
+    "status": "three_sources_not_nhra",
+    "note": ""
+   },
+   {
+    "gen": "gen3",
+    "cid": 287,
+    "hp": 302,
+    "hp_basis": "SAE net",
+    "name": "4.7L / 287 V8 (2008 redesign)",
+    "rpo": "PowerTech 4.7 (EVE)",
+    "common_name": "4.7 V8 (302 hp, FFV)",
+    "trims": [
+     "optional"
+    ],
+    "nhra": false,
+    "sources": [
+     {
+      "name": "Consumer Guide - 2005-11 Dodge Dakota used-vehicle review",
+      "url": "https://consumerguide.com/used/2005-11-dodge-dakota/",
+      "says": "New for '08 was a 302-hp 4.7-liter V8 that replaced V8s of 230 and 260 hp; flex-fuel 4.7 continued 2009-2011"
+     },
+     {
+      "name": "EPA fueleconomy.gov vehicle data",
+      "url": "https://www.fueleconomy.gov/feg/download.shtml",
+      "says": "2010 Dakota: 4.7 L 8-cyl (FFV) listed"
+     },
+     {
+      "name": "Wikipedia - Dodge Dakota + Shelby Dakota (counted as one source)",
+      "url": "https://en.wikipedia.org/wiki/Dodge_Dakota",
+      "says": "new 4.7 L V8 produced 310 hp and 330 lb-ft (2008-2011)"
+     },
+     {
+      "name": "Kelley Blue Book - Dodge Dakota specs pages (per year/cab, e.g. /dodge/dakota-regular-cab/<year>/specs/)",
+      "url": "https://www.kbb.com/dodge/dakota/",
+      "says": "2010 Dakota specs: V8 FFV 4.7 Liter 302 @ 5650 RPM"
+     }
+    ],
+    "independent_sources": 4,
+    "status": "three_sources_not_nhra",
+    "note": "Wikipedia gives 310 hp (the Ram 1500 figure); Dodge, Consumer Guide and KBB give 302 for the Dakota. Recorded 302."
+   }
+  ],
+  "2011": [
+   {
+    "gen": "gen3",
+    "cid": 226,
+    "hp": 210,
+    "hp_basis": "SAE net",
+    "name": "3.7L / 226 V6",
+    "rpo": "PowerTech 3.7 (EKG)",
+    "common_name": "3.7 PowerTech V6",
+    "trims": [
+     "std"
+    ],
+    "nhra": false,
+    "sources": [
+     {
+      "name": "Consumer Guide - 2005-11 Dodge Dakota used-vehicle review",
+      "url": "https://consumerguide.com/used/2005-11-dodge-dakota/",
+      "says": "210-hp V6 standard; the 3.7 remained the base engine through 2011"
+     },
+     {
+      "name": "Wikipedia - Dodge Dakota + Shelby Dakota (counted as one source)",
+      "url": "https://en.wikipedia.org/wiki/Dodge_Dakota",
+      "says": "3.7 L PowerTech V6, 210 hp"
+     },
+     {
+      "name": "EPA fueleconomy.gov vehicle data",
+      "url": "https://www.fueleconomy.gov/feg/download.shtml",
+      "says": "2011 Dakota: 3.7 L 6-cyl listed"
+     }
+    ],
+    "independent_sources": 3,
+    "status": "three_sources_not_nhra",
+    "note": "Badged Ram Dakota for 2011."
+   },
+   {
+    "gen": "gen3",
+    "cid": 287,
+    "hp": 302,
+    "hp_basis": "SAE net",
+    "name": "4.7L / 287 V8 (2008 redesign)",
+    "rpo": "PowerTech 4.7 (EVE)",
+    "common_name": "4.7 V8 (302 hp, FFV)",
+    "trims": [
+     "optional"
+    ],
+    "nhra": false,
+    "sources": [
+     {
+      "name": "Consumer Guide - 2005-11 Dodge Dakota used-vehicle review",
+      "url": "https://consumerguide.com/used/2005-11-dodge-dakota/",
+      "says": "New for '08 was a 302-hp 4.7-liter V8 that replaced V8s of 230 and 260 hp; flex-fuel 4.7 continued 2009-2011"
+     },
+     {
+      "name": "EPA fueleconomy.gov vehicle data",
+      "url": "https://www.fueleconomy.gov/feg/download.shtml",
+      "says": "2011 Dakota: 4.7 L 8-cyl (FFV) listed"
+     },
+     {
+      "name": "Wikipedia - Dodge Dakota + Shelby Dakota (counted as one source)",
+      "url": "https://en.wikipedia.org/wiki/Dodge_Dakota",
+      "says": "new 4.7 L V8 produced 310 hp and 330 lb-ft (2008-2011)"
+     }
+    ],
+    "independent_sources": 3,
+    "status": "three_sources_not_nhra",
+    "note": "Wikipedia gives 310 hp (the Ram 1500 figure); Dodge, Consumer Guide and KBB give 302 for the Dakota. Recorded 302. Badged Ram Dakota for 2011."
+   }
+  ]
+ },
+ "source_index": [
+  {
+   "name": "NHRA Stock Car Classification Guide ('DAKOTA' heading)",
+   "url": "nhra_dodge-dakota-1987-2011.json",
+   "type": "nhra"
+  },
+  {
+   "name": "EPA fueleconomy.gov vehicle data",
+   "url": "https://www.fueleconomy.gov/feg/download.shtml",
+   "type": "government"
+  },
+  {
+   "name": "Wikipedia - Dodge Dakota + Shelby Dakota (counted as one source)",
+   "url": "https://en.wikipedia.org/wiki/Dodge_Dakota",
+   "type": "wikipedia"
+  },
+  {
+   "name": "Dodge 1990 Dakota brochure (Dodge/Chrysler material - one source with the other Dodge items)",
+   "url": "https://oldcarbrochures.org/United%20States/Chrysler%20Trucks%20and%20Vans/1990-Trucks-and-Vans/1990n-Dodge-Dakota-Brochure/index.html",
+   "type": "manufacturer"
+  },
+  {
+   "name": "Dodge 1991 Truck foldout (Dodge/Chrysler material)",
+   "url": "https://oldcarbrochures.org/United%20States/Chrysler%20Trucks%20and%20Vans/1991-Trucks-and-Vans/1991-Dodge-Truck-Foldout/index.html",
+   "type": "manufacturer"
+  },
+  {
+   "name": "Dodge 1993 Cars & Trucks brochure (Dodge/Chrysler material)",
+   "url": "https://oldcarbrochures.org/United%20States/Chrysler%20Trucks%20and%20Vans/1993-Trucks-and-Vans/1993-Dodge-Cars--Trucks-Brochure/index.html",
+   "type": "manufacturer"
+  },
+  {
+   "name": "Dodge 1995 Full Line brochure (Dodge/Chrysler material)",
+   "url": "https://oldcarbrochures.org/United%20States/Chrysler%20Trucks%20and%20Vans/1995-Trucks-and-Vans/1995-Dodge-Full-Line-Brochure/index.html",
+   "type": "manufacturer"
+  },
+  {
+   "name": "Dodge 1997 Dakota Pickup folder (Dodge/Chrysler material)",
+   "url": "https://oldcarbrochures.org/United%20States/Chrysler%20Trucks%20and%20Vans/1997-Trucks-%26-Vans/1997-Dodge-Dakota-Pickup-Folder/index.html",
+   "type": "manufacturer"
+  },
+  {
+   "name": "Chrysler release 'New 2008 Dodge Dakota: More Power...' Aug 31 2007 (Dodge/Chrysler material)",
+   "url": "https://media.stellantisnorthamerica.com/newsrelease.do?id=7337",
+   "type": "manufacturer"
+  },
+  {
+   "name": "Flory, American Light Trucks and Utility Vehicles 1967-1989 (McFarland 2019), Dodge chapter (Google Books snippets)",
+   "url": "https://books.google.com/books?id=Az-7DwAAQBAJ",
+   "type": "publication"
+  },
+  {
+   "name": "Consumer Guide - 1997-04 Dodge Dakota used-vehicle review",
+   "url": "https://consumerguide.com/used/1997-04-dodge-dakota/",
+   "type": "publication"
+  },
+  {
+   "name": "Consumer Guide - 2005-11 Dodge Dakota used-vehicle review",
+   "url": "https://consumerguide.com/used/2005-11-dodge-dakota/",
+   "type": "publication"
+  },
+  {
+   "name": "Kelley Blue Book - Dodge Dakota specs pages (per year/cab, e.g. /dodge/dakota-regular-cab/<year>/specs/)",
+   "url": "https://www.kbb.com/dodge/dakota/",
+   "type": "publication"
+  },
+  {
+   "name": "The Auto Channel - 1997 Dodge Dakota Club Cab 4x4 Sport review",
+   "url": "https://theautochannel.com/vehicles/new/reviews/1997/nhromiak01109706.html",
+   "type": "publication"
+  },
+  {
+   "name": "WardsAuto - New Wheels: Dodge Dakota Gets Two New Doors, One New V-8 (2000 model)",
+   "url": "https://www.wardsauto.com/news-analysis/new-wheels-dodge-dakota-gets-two-new-doors-one-new-v-8",
+   "type": "publication"
+  },
+  {
+   "name": "Shelby American registry - 1989 Shelby Dakota",
+   "url": "https://shelbyregistry.com/1989dakota.html",
+   "type": "registry"
+  },
+  {
+   "name": "Street Muscle Magazine - 1989 Dodge Shelby Dakota",
+   "url": "https://www.streetmusclemag.com/news/1989-dodge-shelby-dakota/",
+   "type": "publication"
+  },
+  {
+   "name": "Hooniverse - Obscure Muscle Car Garage: The Dodge Dakota 5.9 R/T",
+   "url": "https://www.hooniverse.com/hooniverse-obscure-muscle-car-garage-the-dodge-dakota-5-9-r-t/",
+   "type": "publication"
+  },
+  {
+   "name": "Auto123 - 2005 Dodge Dakota preview (K. Soltani, Feb 9 2004)",
+   "url": "https://www.auto123.com/en/news/2005-dodge-dakota-preview/43905/?page=3",
+   "type": "publication"
+  }
+ ],
+ "notes": "Source rule: all Dodge/Chrysler material counts as one source; Wikipedia articles one; EPA one; NHRA one. independent_sources counts the distinct independent sources cited (EPA confirms displacement/cylinders only). NHRA's DAKOTA heading mixes in full-size D-series rows for 1987-1991 (225 slant six, 318/147-175, 360/175-205) and lists a 360 for 1996-1997; these are left out. allpar not used (blocked). Ratings are SAE net."
+}

@@ -1,0 +1,1840 @@
+{
+ "vehicle": "jeep-jseries-1972-1988",
+ "notes": "Jeep J-series full-size pickup, 1972-1988 (the 1963-1971 Gladiator years are a separate job). Before 1974 the trucks were designated by wheelbase/GVW (J-2000/J-4000 series, 5000-8000 GVW); the J10 (lighter, 119/131 in. WB) and J20 (heavier, 131 in. WB, 6800-8400 GVW) names start in 1974. No engine was J20-only. The 258 six was never offered in the J20 (J10/light-GVW only), and the 1973 360 4-bbl was listed only for 5000-6000 GVW trucks. The J20 (and the 1972-73 7000/8000 GVW trucks) always had the 360 2-bbl standard. NHRA has no rows. Net hp is given only where factory tables state it (1972-73); later truck literature gives none. Mexican VAM trucks (J-364, 282 six) are excluded.",
+ "years": {
+  "1972": [
+   {
+    "gen": "amc",
+    "cid": 258,
+    "hp": 110,
+    "hp_basis": "net",
+    "name": "4.2L / 258 I6 1-bbl",
+    "rpo": "AMC 258",
+    "common_name": "258 Six",
+    "trims": [
+     "5000/6000 GVW trucks (light series, J10 predecessor) std"
+    ],
+    "nhra": false,
+    "sources": [
+     {
+      "name": "AMC Jeep 1972 full-line folder, Engines table",
+      "url": "https://oldcarbrochures.org/United%20States/Jeep/1972-Jeep/1972-Jeep-Full-Line-Folder/index.html",
+      "says": "258-6, 110 net hp @ 3500; standard Wagoneer and 5000 & 6000 GVW Truck"
+     },
+     {
+      "name": "Wikipedia - Jeep Gladiator (SJ) [J-series]",
+      "url": "https://en.wikipedia.org/wiki/Jeep_Gladiator_(SJ)",
+      "says": "AMC 258 I6 introduced in 1972 and offered through 1988"
+     },
+     {
+      "name": "International Full Size Jeep Association - FSJ Drivetrain Database (Trucks table)",
+      "url": "https://ifsja.org/tech/figures/db.html",
+      "says": "Trucks: 258 OHV I-6 AMC 1971-87"
+     }
+    ],
+    "independent_sources": [
+     "AMC/Jeep/Chrysler factory material",
+     "IFSJA",
+     "Wikipedia"
+    ],
+    "status": "three_sources_not_nhra",
+    "note": "Before 1974 trucks were named by wheelbase/GVW (J-2000/J-4000 series), not J10/J20. IFSJA's engine table gives 150 hp for 1971-72, a gross figure; the 1972 AMC table gives 110 net."
+   },
+   {
+    "gen": "amc",
+    "cid": 304,
+    "hp": 150,
+    "hp_basis": "net",
+    "name": "5.0L / 304 V8 2-bbl",
+    "rpo": "AMC 304",
+    "common_name": "304 V8",
+    "trims": [
+     "5000/6000 GVW trucks opt (all models except 7000 & 8000 GVW Truck)"
+    ],
+    "nhra": false,
+    "sources": [
+     {
+      "name": "AMC Jeep 1972 full-line folder, Engines table",
+      "url": "https://oldcarbrochures.org/United%20States/Jeep/1972-Jeep/1972-Jeep-Full-Line-Folder/index.html",
+      "says": "304 V-8, 150 net hp @ 4200; optional all models except 7000 & 8000 GVW Truck"
+     },
+     {
+      "name": "Wikipedia - Jeep Gladiator (SJ) [J-series]",
+      "url": "https://en.wikipedia.org/wiki/Jeep_Gladiator_(SJ)",
+      "says": "From 1971 to 1972 Jeep pickups offered the AMC 304 V8 as an optional engine"
+     },
+     {
+      "name": "International Full Size Jeep Association - FSJ Drivetrain Database (Trucks table)",
+      "url": "https://ifsja.org/tech/figures/db.html",
+      "says": "Trucks: 304 V8 AMC 1971-72"
+     }
+    ],
+    "independent_sources": [
+     "AMC/Jeep/Chrysler factory material",
+     "IFSJA",
+     "Wikipedia"
+    ],
+    "status": "three_sources_not_nhra",
+    "note": "Wikipedia gives 210 hp, the 1971 gross rating. Last year for the 304 in Jeep trucks."
+   },
+   {
+    "gen": "amc",
+    "cid": 360,
+    "hp": 175,
+    "hp_basis": "net",
+    "name": "5.9L / 360 V8 2-bbl",
+    "rpo": "AMC 360",
+    "common_name": "360 V8",
+    "trims": [
+     "7000/8000 GVW trucks (J20 predecessor) std",
+     "5000/6000 GVW opt"
+    ],
+    "nhra": false,
+    "sources": [
+     {
+      "name": "AMC Jeep 1972 full-line folder, Engines table",
+      "url": "https://oldcarbrochures.org/United%20States/Jeep/1972-Jeep/1972-Jeep-Full-Line-Folder/index.html",
+      "says": "360 V-8, 175 net hp @ 4000; standard 7000 & 8000 GVW Truck, optional Wagoneer and 5000 & 6000 GVW Truck"
+     },
+     {
+      "name": "Wikipedia - Jeep Gladiator (SJ) [J-series]",
+      "url": "https://en.wikipedia.org/wiki/Jeep_Gladiator_(SJ)",
+      "says": "AMC 360 offered 1971 through 1988"
+     },
+     {
+      "name": "International Full Size Jeep Association - FSJ Drivetrain Database (Trucks table)",
+      "url": "https://ifsja.org/tech/figures/db.html",
+      "says": "Trucks: 360 V8 AMC 1971-87"
+     }
+    ],
+    "independent_sources": [
+     "AMC/Jeep/Chrysler factory material",
+     "IFSJA",
+     "Wikipedia"
+    ],
+    "status": "three_sources_not_nhra",
+    "note": "Only engine for the 7000/8000 GVW trucks."
+   }
+  ],
+  "1973": [
+   {
+    "gen": "amc",
+    "cid": 258,
+    "hp": 110,
+    "hp_basis": "net",
+    "name": "4.2L / 258 I6 1-bbl",
+    "rpo": "AMC 258",
+    "common_name": "258 Six",
+    "trims": [
+     "5000-6000 GVW std"
+    ],
+    "nhra": false,
+    "sources": [
+     {
+      "name": "AMC Jeep 1973 full-line brochure, p.8 Jeep Truck Engines table",
+      "url": "https://oldcarbrochures.org/United%20States/Jeep/1973-Jeep/1973-Jeep-Full-Line-Brochure/index.html",
+      "says": "258 6-cyl 1 barrel, 110 @ 3500 net; standard 5000-6000 gvw"
+     },
+     {
+      "name": "Wikipedia - Jeep Gladiator (SJ) [J-series]",
+      "url": "https://en.wikipedia.org/wiki/Jeep_Gladiator_(SJ)",
+      "says": "AMC 258 I6 introduced in 1972 and offered through 1988"
+     },
+     {
+      "name": "International Full Size Jeep Association - FSJ Drivetrain Database (Trucks table)",
+      "url": "https://ifsja.org/tech/figures/db.html",
+      "says": "Trucks: 258 OHV I-6 AMC 1971-87"
+     },
+     {
+      "name": "International Full Size Jeep Association - FSJ engine table",
+      "url": "https://ifsja.org/tech/figures/engines.html",
+      "says": "258 I6 73-77 110 HP 1bbl"
+     }
+    ],
+    "independent_sources": [
+     "AMC/Jeep/Chrysler factory material",
+     "IFSJA",
+     "Wikipedia"
+    ],
+    "status": "three_sources_not_nhra",
+    "note": "304 dropped from trucks for 1973 (the truck table lists only the 258 and 360)."
+   },
+   {
+    "gen": "amc",
+    "cid": 360,
+    "hp": 175,
+    "hp_basis": "net",
+    "name": "5.9L / 360 V8 2-bbl",
+    "rpo": "AMC 360",
+    "common_name": "360 V8",
+    "trims": [
+     "7000-8000 GVW std",
+     "5000-6000 GVW opt"
+    ],
+    "nhra": false,
+    "sources": [
+     {
+      "name": "AMC Jeep 1973 full-line brochure, p.8 Jeep Truck Engines table",
+      "url": "https://oldcarbrochures.org/United%20States/Jeep/1973-Jeep/1973-Jeep-Full-Line-Brochure/index.html",
+      "says": "360-V8 2 barrel, 175 @ 4000 net; standard 7000-8000 gvw, optional 5000-6000 gvw"
+     },
+     {
+      "name": "Wikipedia - Jeep Gladiator (SJ) [J-series]",
+      "url": "https://en.wikipedia.org/wiki/Jeep_Gladiator_(SJ)",
+      "says": "AMC 360 offered 1971 through 1988"
+     },
+     {
+      "name": "International Full Size Jeep Association - FSJ Drivetrain Database (Trucks table)",
+      "url": "https://ifsja.org/tech/figures/db.html",
+      "says": "Trucks: 360 V8 AMC 1971-87"
+     },
+     {
+      "name": "International Full Size Jeep Association - FSJ engine table",
+      "url": "https://ifsja.org/tech/figures/engines.html",
+      "says": "360 V8 73-78 175 HP 2bbl"
+     }
+    ],
+    "independent_sources": [
+     "AMC/Jeep/Chrysler factory material",
+     "IFSJA",
+     "Wikipedia"
+    ],
+    "status": "three_sources_not_nhra",
+    "note": ""
+   },
+   {
+    "gen": "amc",
+    "cid": 360,
+    "hp": 195,
+    "hp_basis": "net",
+    "name": "5.9L / 360 V8 4-bbl",
+    "rpo": "AMC 360 4-bbl",
+    "common_name": "360 V8 4-bbl",
+    "trims": [
+     "5000-6000 GVW opt only"
+    ],
+    "nhra": false,
+    "sources": [
+     {
+      "name": "AMC Jeep 1973 full-line brochure, p.8 Jeep Truck Engines table",
+      "url": "https://oldcarbrochures.org/United%20States/Jeep/1973-Jeep/1973-Jeep-Full-Line-Brochure/index.html",
+      "says": "360-V8 4 barrel, 195 @ 4400 net; optional 5000-6000 gvw (not listed for 7000-8000)"
+     },
+     {
+      "name": "International Full Size Jeep Association - FSJ engine table",
+      "url": "https://ifsja.org/tech/figures/engines.html",
+      "says": "360 V8 73-78 195 HP 4bbl (FSJ-wide, not truck-specific)"
+     },
+     {
+      "name": "Wikipedia - Jeep Gladiator (SJ) [J-series]",
+      "url": "https://en.wikipedia.org/wiki/Jeep_Gladiator_(SJ)",
+      "says": "later 360s produced 195 hp"
+     }
+    ],
+    "independent_sources": [
+     "AMC/Jeep/Chrysler factory material",
+     "IFSJA",
+     "Wikipedia"
+    ],
+    "status": "three_sources_not_nhra",
+    "note": "Wikipedia's 195 hp statement is undated; IFSJA's table covers all full-size Jeeps, not trucks specifically."
+   }
+  ],
+  "1974": [
+   {
+    "gen": "amc",
+    "cid": 258,
+    "hp": null,
+    "hp_basis": "net",
+    "name": "4.2L / 258 I6",
+    "rpo": "AMC 258",
+    "common_name": "258 Six",
+    "trims": [
+     "J10 std (inferred)",
+     "NA J20"
+    ],
+    "nhra": false,
+    "sources": [
+     {
+      "name": "Wikipedia - Jeep Gladiator (SJ) [J-series]",
+      "url": "https://en.wikipedia.org/wiki/Jeep_Gladiator_(SJ)",
+      "says": "AMC 258 I6 introduced in 1972 and offered through 1988"
+     },
+     {
+      "name": "International Full Size Jeep Association - FSJ Drivetrain Database (Trucks table)",
+      "url": "https://ifsja.org/tech/figures/db.html",
+      "says": "Trucks: 258 OHV I-6 AMC 1971-87"
+     }
+    ],
+    "independent_sources": [
+     "IFSJA",
+     "Wikipedia"
+    ],
+    "status": "two_sources_agree",
+    "note": "No 1974/1975 truck literature found (oldcarbrochures has none; jeep.com history returns 403). Two sources agree, and the 1973 and 1976 factory tables on either side show the 258 standard on light trucks/J10. Net hp withheld: the truck literature found from 1974 on gives no ratings, and IFSJA's FSJ-wide table mixes gross and net figures (Wikipedia's J-series hp figures are also mixed gross/net)."
+   },
+   {
+    "gen": "amc",
+    "cid": 360,
+    "hp": null,
+    "hp_basis": "net",
+    "name": "5.9L / 360 V8 2-bbl",
+    "rpo": "AMC 360",
+    "common_name": "360 V8",
+    "trims": [
+     "J20 std",
+     "J10 opt"
+    ],
+    "nhra": false,
+    "sources": [
+     {
+      "name": "Wikipedia - Jeep Gladiator (SJ) [J-series]",
+      "url": "https://en.wikipedia.org/wiki/Jeep_Gladiator_(SJ)",
+      "says": "AMC 360 offered 1971 through 1988"
+     },
+     {
+      "name": "International Full Size Jeep Association - FSJ Drivetrain Database (Trucks table)",
+      "url": "https://ifsja.org/tech/figures/db.html",
+      "says": "Trucks: 360 V8 AMC 1971-87"
+     }
+    ],
+    "independent_sources": [
+     "IFSJA",
+     "Wikipedia"
+    ],
+    "status": "two_sources_agree",
+    "note": "Two sources agree; the 1973 and 1976 factory tables on either side agree. Net hp withheld: the truck literature found from 1974 on gives no ratings, and IFSJA's FSJ-wide table mixes gross and net figures (Wikipedia's J-series hp figures are also mixed gross/net)."
+   },
+   {
+    "gen": "amc",
+    "cid": 360,
+    "hp": null,
+    "hp_basis": "net",
+    "name": "5.9L / 360 V8 4-bbl",
+    "rpo": "AMC 360 4-bbl",
+    "common_name": "360 V8 4-bbl",
+    "trims": [
+     "J10/J20 opt"
+    ],
+    "nhra": false,
+    "sources": [
+     {
+      "name": "International Full Size Jeep Association - FSJ engine table",
+      "url": "https://ifsja.org/tech/figures/engines.html",
+      "says": "360 V8 73-78 195 HP 4bbl (FSJ-wide, not truck-specific)"
+     }
+    ],
+    "independent_sources": [
+     "IFSJA"
+    ],
+    "status": "disputed",
+    "note": "Single source: only IFSJA's FSJ-wide table supports a 4-bbl 360 in 1974-75 trucks, along with the 1973 and 1976 brochures on either side; wagoneers.com's year table covers the Wagoneer only. Net hp withheld: the truck literature found from 1974 on gives no ratings, and IFSJA's FSJ-wide table mixes gross and net figures (Wikipedia's J-series hp figures are also mixed gross/net)."
+   },
+   {
+    "gen": "amc",
+    "cid": 401,
+    "hp": null,
+    "hp_basis": "net",
+    "name": "6.6L / 401 V8 4-bbl",
+    "rpo": "AMC 401",
+    "common_name": "401 V8",
+    "trims": [
+     "J10/J20 opt"
+    ],
+    "nhra": false,
+    "sources": [
+     {
+      "name": "Wikipedia - Jeep Gladiator (SJ) [J-series]",
+      "url": "https://en.wikipedia.org/wiki/Jeep_Gladiator_(SJ)",
+      "says": "AMC 401 offered from 1974 through 1978"
+     },
+     {
+      "name": "International Full Size Jeep Association - FSJ Drivetrain Database (Trucks table)",
+      "url": "https://ifsja.org/tech/figures/db.html",
+      "says": "Trucks: 401 V8 AMC 1974-78"
+     },
+     {
+      "name": "JeepTech (offroaders.com/jeepfan.com) - AMC 401 V8",
+      "url": "https://jeepfan.com/tech/jeeptech/gnu-engine-factory401v8.htm",
+      "says": "401 introduced in 1974 as an optional engine for J-series pickups and Wagoneers"
+     }
+    ],
+    "independent_sources": [
+     "IFSJA",
+     "JeepTech",
+     "Wikipedia"
+    ],
+    "status": "three_sources_not_nhra",
+    "note": "New for 1974. JeepTech gives 215 hp net @ 4400; not confirmed by a second source for trucks, so hp withheld."
+   }
+  ],
+  "1975": [
+   {
+    "gen": "amc",
+    "cid": 258,
+    "hp": null,
+    "hp_basis": "net",
+    "name": "4.2L / 258 I6",
+    "rpo": "AMC 258",
+    "common_name": "258 Six",
+    "trims": [
+     "J10 std (inferred)",
+     "NA J20"
+    ],
+    "nhra": false,
+    "sources": [
+     {
+      "name": "Wikipedia - Jeep Gladiator (SJ) [J-series]",
+      "url": "https://en.wikipedia.org/wiki/Jeep_Gladiator_(SJ)",
+      "says": "AMC 258 I6 introduced in 1972 and offered through 1988"
+     },
+     {
+      "name": "International Full Size Jeep Association - FSJ Drivetrain Database (Trucks table)",
+      "url": "https://ifsja.org/tech/figures/db.html",
+      "says": "Trucks: 258 OHV I-6 AMC 1971-87"
+     }
+    ],
+    "independent_sources": [
+     "IFSJA",
+     "Wikipedia"
+    ],
+    "status": "two_sources_agree",
+    "note": "No 1974/1975 truck literature found (oldcarbrochures has none; jeep.com history returns 403). Two sources agree, and the 1973 and 1976 factory tables on either side show the 258 standard on light trucks/J10. Net hp withheld: the truck literature found from 1974 on gives no ratings, and IFSJA's FSJ-wide table mixes gross and net figures (Wikipedia's J-series hp figures are also mixed gross/net)."
+   },
+   {
+    "gen": "amc",
+    "cid": 360,
+    "hp": null,
+    "hp_basis": "net",
+    "name": "5.9L / 360 V8 2-bbl",
+    "rpo": "AMC 360",
+    "common_name": "360 V8",
+    "trims": [
+     "J20 std",
+     "J10 opt"
+    ],
+    "nhra": false,
+    "sources": [
+     {
+      "name": "Wikipedia - Jeep Gladiator (SJ) [J-series]",
+      "url": "https://en.wikipedia.org/wiki/Jeep_Gladiator_(SJ)",
+      "says": "AMC 360 offered 1971 through 1988"
+     },
+     {
+      "name": "International Full Size Jeep Association - FSJ Drivetrain Database (Trucks table)",
+      "url": "https://ifsja.org/tech/figures/db.html",
+      "says": "Trucks: 360 V8 AMC 1971-87"
+     }
+    ],
+    "independent_sources": [
+     "IFSJA",
+     "Wikipedia"
+    ],
+    "status": "two_sources_agree",
+    "note": "Two sources agree; the 1973 and 1976 factory tables on either side agree. Net hp withheld: the truck literature found from 1974 on gives no ratings, and IFSJA's FSJ-wide table mixes gross and net figures (Wikipedia's J-series hp figures are also mixed gross/net)."
+   },
+   {
+    "gen": "amc",
+    "cid": 360,
+    "hp": null,
+    "hp_basis": "net",
+    "name": "5.9L / 360 V8 4-bbl",
+    "rpo": "AMC 360 4-bbl",
+    "common_name": "360 V8 4-bbl",
+    "trims": [
+     "J10/J20 opt"
+    ],
+    "nhra": false,
+    "sources": [
+     {
+      "name": "International Full Size Jeep Association - FSJ engine table",
+      "url": "https://ifsja.org/tech/figures/engines.html",
+      "says": "360 V8 73-78 195 HP 4bbl (FSJ-wide, not truck-specific)"
+     }
+    ],
+    "independent_sources": [
+     "IFSJA"
+    ],
+    "status": "disputed",
+    "note": "Single source: only IFSJA's FSJ-wide table supports a 4-bbl 360 in 1974-75 trucks, along with the 1973 and 1976 brochures on either side; wagoneers.com's year table covers the Wagoneer only. Net hp withheld: the truck literature found from 1974 on gives no ratings, and IFSJA's FSJ-wide table mixes gross and net figures (Wikipedia's J-series hp figures are also mixed gross/net)."
+   },
+   {
+    "gen": "amc",
+    "cid": 401,
+    "hp": null,
+    "hp_basis": "net",
+    "name": "6.6L / 401 V8 4-bbl",
+    "rpo": "AMC 401",
+    "common_name": "401 V8",
+    "trims": [
+     "J10/J20 opt"
+    ],
+    "nhra": false,
+    "sources": [
+     {
+      "name": "Wikipedia - Jeep Gladiator (SJ) [J-series]",
+      "url": "https://en.wikipedia.org/wiki/Jeep_Gladiator_(SJ)",
+      "says": "AMC 401 offered from 1974 through 1978"
+     },
+     {
+      "name": "International Full Size Jeep Association - FSJ Drivetrain Database (Trucks table)",
+      "url": "https://ifsja.org/tech/figures/db.html",
+      "says": "Trucks: 401 V8 AMC 1974-78"
+     },
+     {
+      "name": "JeepTech (offroaders.com/jeepfan.com) - AMC 401 V8",
+      "url": "https://jeepfan.com/tech/jeeptech/gnu-engine-factory401v8.htm",
+      "says": "401 introduced in 1974 as an optional engine for J-series pickups and Wagoneers"
+     }
+    ],
+    "independent_sources": [
+     "IFSJA",
+     "JeepTech",
+     "Wikipedia"
+    ],
+    "status": "three_sources_not_nhra",
+    "note": "JeepTech gives 215 hp net @ 4400; not confirmed by a second source for trucks, so hp withheld."
+   }
+  ],
+  "1976": [
+   {
+    "gen": "amc",
+    "cid": 258,
+    "hp": null,
+    "hp_basis": "net",
+    "name": "4.2L / 258 I6 1-bbl",
+    "rpo": "AMC 258",
+    "common_name": "258 Six",
+    "trims": [
+     "J10 std",
+     "NA J20",
+     "NA California"
+    ],
+    "nhra": false,
+    "sources": [
+     {
+      "name": "AMC Jeep 1976 full-line brochure, p.29 Engine Availability chart",
+      "url": "https://oldcarbrochures.org/United%20States/Jeep/1976-Jeep/1976-Jeep-Full-Line-Brochure/slides/1976_Jeep_Full_Line-29.html",
+      "says": "258-1bbl 6 cyl: J-10 Std.** (N.A. in California); J-20 N.A."
+     },
+     {
+      "name": "Wikipedia - Jeep Gladiator (SJ) [J-series]",
+      "url": "https://en.wikipedia.org/wiki/Jeep_Gladiator_(SJ)",
+      "says": "AMC 258 I6 introduced in 1972 and offered through 1988"
+     },
+     {
+      "name": "International Full Size Jeep Association - FSJ Drivetrain Database (Trucks table)",
+      "url": "https://ifsja.org/tech/figures/db.html",
+      "says": "Trucks: 258 OHV I-6 AMC 1971-87"
+     }
+    ],
+    "independent_sources": [
+     "AMC/Jeep/Chrysler factory material",
+     "IFSJA",
+     "Wikipedia"
+    ],
+    "status": "three_sources_not_nhra",
+    "note": "Net hp withheld: the truck literature found from 1974 on gives no ratings, and IFSJA's FSJ-wide table mixes gross and net figures (Wikipedia's J-series hp figures are also mixed gross/net)."
+   },
+   {
+    "gen": "amc",
+    "cid": 360,
+    "hp": null,
+    "hp_basis": "net",
+    "name": "5.9L / 360 V8 2-bbl",
+    "rpo": "AMC 360",
+    "common_name": "360 V8",
+    "trims": [
+     "J20 std",
+     "J10 opt",
+     "NA California"
+    ],
+    "nhra": false,
+    "sources": [
+     {
+      "name": "AMC Jeep 1976 full-line brochure, p.29 Engine Availability chart",
+      "url": "https://oldcarbrochures.org/United%20States/Jeep/1976-Jeep/1976-Jeep-Full-Line-Brochure/slides/1976_Jeep_Full_Line-29.html",
+      "says": "360-2bbl V8: J-10 Opt.**, J-20 Std.** (**N.A. in California)"
+     },
+     {
+      "name": "Wikipedia - Jeep Gladiator (SJ) [J-series]",
+      "url": "https://en.wikipedia.org/wiki/Jeep_Gladiator_(SJ)",
+      "says": "AMC 360 offered 1971 through 1988"
+     },
+     {
+      "name": "International Full Size Jeep Association - FSJ Drivetrain Database (Trucks table)",
+      "url": "https://ifsja.org/tech/figures/db.html",
+      "says": "Trucks: 360 V8 AMC 1971-87"
+     }
+    ],
+    "independent_sources": [
+     "AMC/Jeep/Chrysler factory material",
+     "IFSJA",
+     "Wikipedia"
+    ],
+    "status": "three_sources_not_nhra",
+    "note": "Net hp withheld: the truck literature found from 1974 on gives no ratings, and IFSJA's FSJ-wide table mixes gross and net figures (Wikipedia's J-series hp figures are also mixed gross/net)."
+   },
+   {
+    "gen": "amc",
+    "cid": 360,
+    "hp": null,
+    "hp_basis": "net",
+    "name": "5.9L / 360 V8 4-bbl",
+    "rpo": "AMC 360 4-bbl",
+    "common_name": "360 V8 4-bbl",
+    "trims": [
+     "J10/J20 opt",
+     "std in California"
+    ],
+    "nhra": false,
+    "sources": [
+     {
+      "name": "AMC Jeep 1976 full-line brochure, p.29 Engine Availability chart",
+      "url": "https://oldcarbrochures.org/United%20States/Jeep/1976-Jeep/1976-Jeep-Full-Line-Brochure/slides/1976_Jeep_Full_Line-29.html",
+      "says": "360-4bbl V8: J-10 Opt., J-20 Opt.; 360-4bbl V8 std. in Calif."
+     },
+     {
+      "name": "International Full Size Jeep Association - FSJ engine table",
+      "url": "https://ifsja.org/tech/figures/engines.html",
+      "says": "360 V8 73-78 195 HP 4bbl (FSJ-wide, not truck-specific)"
+     }
+    ],
+    "independent_sources": [
+     "AMC/Jeep/Chrysler factory material",
+     "IFSJA"
+    ],
+    "status": "two_sources_agree",
+    "note": "California pickups got the 360 4-bbl as standard. Net hp withheld: the truck literature found from 1974 on gives no ratings, and IFSJA's FSJ-wide table mixes gross and net figures (Wikipedia's J-series hp figures are also mixed gross/net)."
+   },
+   {
+    "gen": "amc",
+    "cid": 401,
+    "hp": null,
+    "hp_basis": "net",
+    "name": "6.6L / 401 V8 4-bbl",
+    "rpo": "AMC 401",
+    "common_name": "401 V8",
+    "trims": [
+     "J10/J20 opt"
+    ],
+    "nhra": false,
+    "sources": [
+     {
+      "name": "AMC Jeep 1976 full-line brochure, p.29 Engine Availability chart",
+      "url": "https://oldcarbrochures.org/United%20States/Jeep/1976-Jeep/1976-Jeep-Full-Line-Brochure/slides/1976_Jeep_Full_Line-29.html",
+      "says": "401-4bbl V8: J-10 Opt., J-20 Opt."
+     },
+     {
+      "name": "Wikipedia - Jeep Gladiator (SJ) [J-series]",
+      "url": "https://en.wikipedia.org/wiki/Jeep_Gladiator_(SJ)",
+      "says": "AMC 401 offered from 1974 through 1978"
+     },
+     {
+      "name": "International Full Size Jeep Association - FSJ Drivetrain Database (Trucks table)",
+      "url": "https://ifsja.org/tech/figures/db.html",
+      "says": "Trucks: 401 V8 AMC 1974-78"
+     },
+     {
+      "name": "JeepTech (offroaders.com/jeepfan.com) - AMC 401 V8",
+      "url": "https://jeepfan.com/tech/jeeptech/gnu-engine-factory401v8.htm",
+      "says": "401 introduced in 1974 as an optional engine for J-series pickups and Wagoneers"
+     }
+    ],
+    "independent_sources": [
+     "AMC/Jeep/Chrysler factory material",
+     "IFSJA",
+     "JeepTech",
+     "Wikipedia"
+    ],
+    "status": "three_sources_not_nhra",
+    "note": "Net hp withheld: the truck literature found from 1974 on gives no ratings, and IFSJA's FSJ-wide table mixes gross and net figures (Wikipedia's J-series hp figures are also mixed gross/net)."
+   }
+  ],
+  "1977": [
+   {
+    "gen": "amc",
+    "cid": 258,
+    "hp": null,
+    "hp_basis": "net",
+    "name": "4.2L / 258 I6 2-bbl",
+    "rpo": "AMC 258",
+    "common_name": "258 Six",
+    "trims": [
+     "J10 std",
+     "NA J20",
+     "NA California"
+    ],
+    "nhra": false,
+    "sources": [
+     {
+      "name": "AMC Jeep 1977 full-line brochure, p.27 Pickup Engine Availability",
+      "url": "https://oldcarbrochures.org/United%20States/Jeep/1977-Jeep/1977%20Jeep%20Full%20Line/index.html",
+      "says": "258 CID Six 2-bbl 8.0:1: J-10 STD.*, J-20 N.A. (*not available in California)"
+     },
+     {
+      "name": "Wikipedia - Jeep Gladiator (SJ) [J-series]",
+      "url": "https://en.wikipedia.org/wiki/Jeep_Gladiator_(SJ)",
+      "says": "1977 J-10: more powerful 258 six; J-20s included the 360 V8 (cites Popular Mechanics Dec 1976)"
+     },
+     {
+      "name": "International Full Size Jeep Association - FSJ Drivetrain Database (Trucks table)",
+      "url": "https://ifsja.org/tech/figures/db.html",
+      "says": "Trucks: 258 OHV I-6 AMC 1971-87"
+     }
+    ],
+    "independent_sources": [
+     "AMC/Jeep/Chrysler factory material",
+     "IFSJA",
+     "Wikipedia"
+    ],
+    "status": "three_sources_not_nhra",
+    "note": "Six moved to a 2-bbl carburetor for 1977. Net hp withheld: the truck literature found from 1974 on gives no ratings, and IFSJA's FSJ-wide table mixes gross and net figures (Wikipedia's J-series hp figures are also mixed gross/net)."
+   },
+   {
+    "gen": "amc",
+    "cid": 360,
+    "hp": null,
+    "hp_basis": "net",
+    "name": "5.9L / 360 V8 2-bbl",
+    "rpo": "AMC 360",
+    "common_name": "360 V8",
+    "trims": [
+     "J20 std",
+     "J10 opt",
+     "NA California"
+    ],
+    "nhra": false,
+    "sources": [
+     {
+      "name": "AMC Jeep 1977 full-line brochure, p.27 Pickup Engine Availability",
+      "url": "https://oldcarbrochures.org/United%20States/Jeep/1977-Jeep/1977%20Jeep%20Full%20Line/index.html",
+      "says": "360 CID V-8 2-bbl: J-10 OPT.*, J-20 STD.*"
+     },
+     {
+      "name": "Wikipedia - Jeep Gladiator (SJ) [J-series]",
+      "url": "https://en.wikipedia.org/wiki/Jeep_Gladiator_(SJ)",
+      "says": "1977 J-20s included AMC's 360 V8"
+     },
+     {
+      "name": "International Full Size Jeep Association - FSJ Drivetrain Database (Trucks table)",
+      "url": "https://ifsja.org/tech/figures/db.html",
+      "says": "Trucks: 360 V8 AMC 1971-87"
+     }
+    ],
+    "independent_sources": [
+     "AMC/Jeep/Chrysler factory material",
+     "IFSJA",
+     "Wikipedia"
+    ],
+    "status": "three_sources_not_nhra",
+    "note": "Net hp withheld: the truck literature found from 1974 on gives no ratings, and IFSJA's FSJ-wide table mixes gross and net figures (Wikipedia's J-series hp figures are also mixed gross/net)."
+   },
+   {
+    "gen": "amc",
+    "cid": 360,
+    "hp": null,
+    "hp_basis": "net",
+    "name": "5.9L / 360 V8 4-bbl",
+    "rpo": "AMC 360 4-bbl",
+    "common_name": "360 V8 4-bbl",
+    "trims": [
+     "J10/J20 opt",
+     "std in California"
+    ],
+    "nhra": false,
+    "sources": [
+     {
+      "name": "AMC Jeep 1977 full-line brochure, p.27 Pickup Engine Availability",
+      "url": "https://oldcarbrochures.org/United%20States/Jeep/1977-Jeep/1977%20Jeep%20Full%20Line/index.html",
+      "says": "360 CID V-8 4-bbl: J-10 OPT., J-20 OPT. (360 4-bbl std. in California)"
+     },
+     {
+      "name": "International Full Size Jeep Association - FSJ engine table",
+      "url": "https://ifsja.org/tech/figures/engines.html",
+      "says": "360 V8 73-78 195 HP 4bbl (FSJ-wide, not truck-specific)"
+     }
+    ],
+    "independent_sources": [
+     "AMC/Jeep/Chrysler factory material",
+     "IFSJA"
+    ],
+    "status": "two_sources_agree",
+    "note": "Net hp withheld: the truck literature found from 1974 on gives no ratings, and IFSJA's FSJ-wide table mixes gross and net figures (Wikipedia's J-series hp figures are also mixed gross/net)."
+   },
+   {
+    "gen": "amc",
+    "cid": 401,
+    "hp": null,
+    "hp_basis": "net",
+    "name": "6.6L / 401 V8 4-bbl",
+    "rpo": "AMC 401",
+    "common_name": "401 V8",
+    "trims": [
+     "J10/J20 opt"
+    ],
+    "nhra": false,
+    "sources": [
+     {
+      "name": "AMC Jeep 1977 full-line brochure, p.27 Pickup Engine Availability",
+      "url": "https://oldcarbrochures.org/United%20States/Jeep/1977-Jeep/1977%20Jeep%20Full%20Line/index.html",
+      "says": "401 CID V-8 4-bbl: J-10 OPT., J-20 OPT."
+     },
+     {
+      "name": "Wikipedia - Jeep Gladiator (SJ) [J-series]",
+      "url": "https://en.wikipedia.org/wiki/Jeep_Gladiator_(SJ)",
+      "says": "For 1977 the 401 engine was optional"
+     },
+     {
+      "name": "International Full Size Jeep Association - FSJ Drivetrain Database (Trucks table)",
+      "url": "https://ifsja.org/tech/figures/db.html",
+      "says": "Trucks: 401 V8 AMC 1974-78"
+     },
+     {
+      "name": "JeepTech (offroaders.com/jeepfan.com) - AMC 401 V8",
+      "url": "https://jeepfan.com/tech/jeeptech/gnu-engine-factory401v8.htm",
+      "says": "401 introduced in 1974 as an optional engine for J-series pickups and Wagoneers"
+     }
+    ],
+    "independent_sources": [
+     "AMC/Jeep/Chrysler factory material",
+     "IFSJA",
+     "JeepTech",
+     "Wikipedia"
+    ],
+    "status": "three_sources_not_nhra",
+    "note": "Net hp withheld: the truck literature found from 1974 on gives no ratings, and IFSJA's FSJ-wide table mixes gross and net figures (Wikipedia's J-series hp figures are also mixed gross/net)."
+   }
+  ],
+  "1978": [
+   {
+    "gen": "amc",
+    "cid": 258,
+    "hp": null,
+    "hp_basis": "net",
+    "name": "4.2L / 258 I6 2-bbl",
+    "rpo": "AMC 258",
+    "common_name": "258 Six",
+    "trims": [
+     "J10 std",
+     "NA J20"
+    ],
+    "nhra": false,
+    "sources": [
+     {
+      "name": "AMC Jeep 1978 full-line brochure, p.27 Pickup Engine Availability",
+      "url": "https://oldcarbrochures.org/United%20States/Jeep/1978_Jeep/1978_Jeep_Full_Line_Brochure/index.html",
+      "says": "258 CID Six 2-bbl: J-10 Std., J-20 NA"
+     },
+     {
+      "name": "Wikipedia - Jeep Gladiator (SJ) [J-series]",
+      "url": "https://en.wikipedia.org/wiki/Jeep_Gladiator_(SJ)",
+      "says": "AMC 258 I6 introduced in 1972 and offered through 1988"
+     },
+     {
+      "name": "International Full Size Jeep Association - FSJ Drivetrain Database (Trucks table)",
+      "url": "https://ifsja.org/tech/figures/db.html",
+      "says": "Trucks: 258 OHV I-6 AMC 1971-87"
+     }
+    ],
+    "independent_sources": [
+     "AMC/Jeep/Chrysler factory material",
+     "IFSJA",
+     "Wikipedia"
+    ],
+    "status": "three_sources_not_nhra",
+    "note": "Net hp withheld: the truck literature found from 1974 on gives no ratings, and IFSJA's FSJ-wide table mixes gross and net figures (Wikipedia's J-series hp figures are also mixed gross/net)."
+   },
+   {
+    "gen": "amc",
+    "cid": 360,
+    "hp": null,
+    "hp_basis": "net",
+    "name": "5.9L / 360 V8 2-bbl",
+    "rpo": "AMC 360",
+    "common_name": "360 V8",
+    "trims": [
+     "J20 std",
+     "J10 opt"
+    ],
+    "nhra": false,
+    "sources": [
+     {
+      "name": "AMC Jeep 1978 full-line brochure, p.27 Pickup Engine Availability",
+      "url": "https://oldcarbrochures.org/United%20States/Jeep/1978_Jeep/1978_Jeep_Full_Line_Brochure/index.html",
+      "says": "360 CID V-8 2-bbl: J-10 Opt., J-20 Std.; footnote: only available engine for Pickups sold in California"
+     },
+     {
+      "name": "Wikipedia - Jeep Gladiator (SJ) [J-series]",
+      "url": "https://en.wikipedia.org/wiki/Jeep_Gladiator_(SJ)",
+      "says": "AMC 360 offered 1971 through 1988"
+     },
+     {
+      "name": "International Full Size Jeep Association - FSJ Drivetrain Database (Trucks table)",
+      "url": "https://ifsja.org/tech/figures/db.html",
+      "says": "Trucks: 360 V8 AMC 1971-87"
+     }
+    ],
+    "independent_sources": [
+     "AMC/Jeep/Chrysler factory material",
+     "IFSJA",
+     "Wikipedia"
+    ],
+    "status": "three_sources_not_nhra",
+    "note": "The 1978 chart's California footnote attaches to a 360 entry; the OCR does not show whether it is the 2-bbl or the 4-bbl (in 1976-77 the 4-bbl was the California engine). Net hp withheld: the truck literature found from 1974 on gives no ratings, and IFSJA's FSJ-wide table mixes gross and net figures (Wikipedia's J-series hp figures are also mixed gross/net)."
+   },
+   {
+    "gen": "amc",
+    "cid": 360,
+    "hp": null,
+    "hp_basis": "net",
+    "name": "5.9L / 360 V8 4-bbl",
+    "rpo": "AMC 360 4-bbl",
+    "common_name": "360 V8 4-bbl",
+    "trims": [
+     "J10/J20 opt"
+    ],
+    "nhra": false,
+    "sources": [
+     {
+      "name": "AMC Jeep 1978 full-line brochure, p.27 Pickup Engine Availability",
+      "url": "https://oldcarbrochures.org/United%20States/Jeep/1978_Jeep/1978_Jeep_Full_Line_Brochure/index.html",
+      "says": "360 CID V-8 4-bbl: J-10 Opt., J-20 Opt."
+     },
+     {
+      "name": "International Full Size Jeep Association - FSJ engine table",
+      "url": "https://ifsja.org/tech/figures/engines.html",
+      "says": "360 V8 73-78 195 HP 4bbl (FSJ-wide, not truck-specific)"
+     }
+    ],
+    "independent_sources": [
+     "AMC/Jeep/Chrysler factory material",
+     "IFSJA"
+    ],
+    "status": "two_sources_agree",
+    "note": "Last year for the 4-bbl 360. Net hp withheld: the truck literature found from 1974 on gives no ratings, and IFSJA's FSJ-wide table mixes gross and net figures (Wikipedia's J-series hp figures are also mixed gross/net)."
+   },
+   {
+    "gen": "amc",
+    "cid": 401,
+    "hp": null,
+    "hp_basis": "net",
+    "name": "6.6L / 401 V8 4-bbl",
+    "rpo": "AMC 401",
+    "common_name": "401 V8",
+    "trims": [
+     "J10/J20 opt"
+    ],
+    "nhra": false,
+    "sources": [
+     {
+      "name": "AMC Jeep 1978 full-line brochure, p.27 Pickup Engine Availability",
+      "url": "https://oldcarbrochures.org/United%20States/Jeep/1978_Jeep/1978_Jeep_Full_Line_Brochure/index.html",
+      "says": "401 CID V-8 4-bbl: J-10 Opt., J-20 Opt."
+     },
+     {
+      "name": "Wikipedia - Jeep Gladiator (SJ) [J-series]",
+      "url": "https://en.wikipedia.org/wiki/Jeep_Gladiator_(SJ)",
+      "says": "AMC 401 offered from 1974 through 1978"
+     },
+     {
+      "name": "International Full Size Jeep Association - FSJ Drivetrain Database (Trucks table)",
+      "url": "https://ifsja.org/tech/figures/db.html",
+      "says": "Trucks: 401 V8 AMC 1974-78"
+     },
+     {
+      "name": "JeepTech (offroaders.com/jeepfan.com) - AMC 401 V8",
+      "url": "https://jeepfan.com/tech/jeeptech/gnu-engine-factory401v8.htm",
+      "says": "401 introduced in 1974 as an optional engine for J-series pickups and Wagoneers"
+     }
+    ],
+    "independent_sources": [
+     "AMC/Jeep/Chrysler factory material",
+     "IFSJA",
+     "JeepTech",
+     "Wikipedia"
+    ],
+    "status": "three_sources_not_nhra",
+    "note": "Last year for the 401. Net hp withheld: the truck literature found from 1974 on gives no ratings, and IFSJA's FSJ-wide table mixes gross and net figures (Wikipedia's J-series hp figures are also mixed gross/net)."
+   }
+  ],
+  "1979": [
+   {
+    "gen": "amc",
+    "cid": 258,
+    "hp": null,
+    "hp_basis": "net",
+    "name": "4.2L / 258 I6 2-bbl",
+    "rpo": "AMC 258",
+    "common_name": "258 Six",
+    "trims": [
+     "J10 std",
+     "NA J20",
+     "NA California"
+    ],
+    "nhra": false,
+    "sources": [
+     {
+      "name": "AMC Jeep 1979 full-line brochure, p.25 Pickup Engine Availability",
+      "url": "https://oldcarbrochures.org/United%20States/Jeep/1979-Jeep/1979-Jeep-Full-Line-Brochure/index.html",
+      "says": "258 CID Six 2-bbl: J-10 Std., J-20 N.A."
+     },
+     {
+      "name": "Wikipedia - Jeep Gladiator (SJ) [J-series]",
+      "url": "https://en.wikipedia.org/wiki/Jeep_Gladiator_(SJ)",
+      "says": "AMC 258 I6 introduced in 1972 and offered through 1988"
+     },
+     {
+      "name": "International Full Size Jeep Association - FSJ Drivetrain Database (Trucks table)",
+      "url": "https://ifsja.org/tech/figures/db.html",
+      "says": "Trucks: 258 OHV I-6 AMC 1971-87"
+     }
+    ],
+    "independent_sources": [
+     "AMC/Jeep/Chrysler factory material",
+     "IFSJA",
+     "Wikipedia"
+    ],
+    "status": "three_sources_not_nhra",
+    "note": "wagoneers.com's year table shows no six for 1979-80, but that table is for the Wagoneer; the pickup chart lists the 258 as J10 standard. Net hp withheld: the truck literature found from 1974 on gives no ratings, and IFSJA's FSJ-wide table mixes gross and net figures (Wikipedia's J-series hp figures are also mixed gross/net)."
+   },
+   {
+    "gen": "amc",
+    "cid": 360,
+    "hp": null,
+    "hp_basis": "net",
+    "name": "5.9L / 360 V8 2-bbl",
+    "rpo": "AMC 360",
+    "common_name": "360 V8",
+    "trims": [
+     "J20 std",
+     "J10 opt",
+     "only engine in California"
+    ],
+    "nhra": false,
+    "sources": [
+     {
+      "name": "AMC Jeep 1979 full-line brochure, p.25 Pickup Engine Availability",
+      "url": "https://oldcarbrochures.org/United%20States/Jeep/1979-Jeep/1979-Jeep-Full-Line-Brochure/index.html",
+      "says": "360 CID V-8 2-bbl: J-10 opt.*, J-20 Std.* (*only engine available for Pickups sold in California)"
+     },
+     {
+      "name": "Wikipedia - Jeep Gladiator (SJ) [J-series]",
+      "url": "https://en.wikipedia.org/wiki/Jeep_Gladiator_(SJ)",
+      "says": "AMC 360 offered 1971 through 1988"
+     },
+     {
+      "name": "International Full Size Jeep Association - FSJ Drivetrain Database (Trucks table)",
+      "url": "https://ifsja.org/tech/figures/db.html",
+      "says": "Trucks: 360 V8 AMC 1971-87"
+     }
+    ],
+    "independent_sources": [
+     "AMC/Jeep/Chrysler factory material",
+     "IFSJA",
+     "Wikipedia"
+    ],
+    "status": "three_sources_not_nhra",
+    "note": "360 4-bbl and 401 dropped for 1979. Net hp withheld: the truck literature found from 1974 on gives no ratings, and IFSJA's FSJ-wide table mixes gross and net figures (Wikipedia's J-series hp figures are also mixed gross/net)."
+   }
+  ],
+  "1980": [
+   {
+    "gen": "amc",
+    "cid": 258,
+    "hp": null,
+    "hp_basis": "net",
+    "name": "4.2L / 258 I6 2-bbl",
+    "rpo": "AMC 258",
+    "common_name": "258 Six",
+    "trims": [
+     "J10 std",
+     "NA J20",
+     "NA California"
+    ],
+    "nhra": false,
+    "sources": [
+     {
+      "name": "AMC Jeep 1980 full-line brochure, pp.24-25 Pickup Engine Availability",
+      "url": "https://oldcarbrochures.org/United%20States/Jeep/1980_Jeep/1980-Jeep-Full-Line-Brochure/index.html",
+      "says": "258 CID Six 2-bbl 8.0:1: std. J-10"
+     },
+     {
+      "name": "Wikipedia - Jeep Gladiator (SJ) [J-series]",
+      "url": "https://en.wikipedia.org/wiki/Jeep_Gladiator_(SJ)",
+      "says": "AMC 258 I6 introduced in 1972 and offered through 1988"
+     },
+     {
+      "name": "International Full Size Jeep Association - FSJ Drivetrain Database (Trucks table)",
+      "url": "https://ifsja.org/tech/figures/db.html",
+      "says": "Trucks: 258 OHV I-6 AMC 1971-87"
+     }
+    ],
+    "independent_sources": [
+     "AMC/Jeep/Chrysler factory material",
+     "IFSJA",
+     "Wikipedia"
+    ],
+    "status": "three_sources_not_nhra",
+    "note": "Net hp withheld: the truck literature found from 1974 on gives no ratings, and IFSJA's FSJ-wide table mixes gross and net figures (Wikipedia's J-series hp figures are also mixed gross/net)."
+   },
+   {
+    "gen": "amc",
+    "cid": 360,
+    "hp": null,
+    "hp_basis": "net",
+    "name": "5.9L / 360 V8 2-bbl",
+    "rpo": "AMC 360",
+    "common_name": "360 V8",
+    "trims": [
+     "J20 std",
+     "J10 opt",
+     "only engine in California"
+    ],
+    "nhra": false,
+    "sources": [
+     {
+      "name": "AMC Jeep 1980 full-line brochure, pp.24-25 Pickup Engine Availability",
+      "url": "https://oldcarbrochures.org/United%20States/Jeep/1980_Jeep/1980-Jeep-Full-Line-Brochure/index.html",
+      "says": "360 CID V-8 2-bbl 8.25:1: std. J-20, opt. J-10; *only engine available for Pickups sold in California"
+     },
+     {
+      "name": "Wikipedia - Jeep Gladiator (SJ) [J-series]",
+      "url": "https://en.wikipedia.org/wiki/Jeep_Gladiator_(SJ)",
+      "says": "AMC 360 offered 1971 through 1988"
+     },
+     {
+      "name": "International Full Size Jeep Association - FSJ Drivetrain Database (Trucks table)",
+      "url": "https://ifsja.org/tech/figures/db.html",
+      "says": "Trucks: 360 V8 AMC 1971-87"
+     }
+    ],
+    "independent_sources": [
+     "AMC/Jeep/Chrysler factory material",
+     "IFSJA",
+     "Wikipedia"
+    ],
+    "status": "three_sources_not_nhra",
+    "note": "Net hp withheld: the truck literature found from 1974 on gives no ratings, and IFSJA's FSJ-wide table mixes gross and net figures (Wikipedia's J-series hp figures are also mixed gross/net)."
+   }
+  ],
+  "1981": [
+   {
+    "gen": "amc",
+    "cid": 258,
+    "hp": null,
+    "hp_basis": "net",
+    "name": "4.2L / 258 I6 2-bbl",
+    "rpo": "AMC 258",
+    "common_name": "258 Six",
+    "trims": [
+     "J10 std",
+     "NA J20"
+    ],
+    "nhra": false,
+    "sources": [
+     {
+      "name": "AMC Jeep 1981 Pickup brochure, p.12 Pickup Engine Availability",
+      "url": "https://oldcarbrochures.org/United%20States/Jeep/1981_Jeep/1981-Jeep-Pickup-Brochure/index.html",
+      "says": "258 CID Six 2-bbl 8.3:1: std. J-10; the standard J-10 powerteam is the 258 CID (4.2 liter) Six, 90 lbs. leaner this year"
+     },
+     {
+      "name": "Wikipedia - Jeep Gladiator (SJ) [J-series]",
+      "url": "https://en.wikipedia.org/wiki/Jeep_Gladiator_(SJ)",
+      "says": "AMC 258 I6 introduced in 1972 and offered through 1988"
+     },
+     {
+      "name": "International Full Size Jeep Association - FSJ Drivetrain Database (Trucks table)",
+      "url": "https://ifsja.org/tech/figures/db.html",
+      "says": "Trucks: 258 OHV I-6 AMC 1971-87"
+     }
+    ],
+    "independent_sources": [
+     "AMC/Jeep/Chrysler factory material",
+     "IFSJA",
+     "Wikipedia"
+    ],
+    "status": "three_sources_not_nhra",
+    "note": "Net hp withheld: the truck literature found from 1974 on gives no ratings, and IFSJA's FSJ-wide table mixes gross and net figures (Wikipedia's J-series hp figures are also mixed gross/net)."
+   },
+   {
+    "gen": "amc",
+    "cid": 360,
+    "hp": null,
+    "hp_basis": "net",
+    "name": "5.9L / 360 V8 2-bbl",
+    "rpo": "AMC 360",
+    "common_name": "360 V8",
+    "trims": [
+     "J20 std",
+     "J10 opt",
+     "NA California"
+    ],
+    "nhra": false,
+    "sources": [
+     {
+      "name": "AMC Jeep 1981 Pickup brochure, p.12 Pickup Engine Availability",
+      "url": "https://oldcarbrochures.org/United%20States/Jeep/1981_Jeep/1981-Jeep-Pickup-Brochure/index.html",
+      "says": "360 CID V-8 2-bbl 8.25:1: std. J-20, opt. J-10; not available in California"
+     },
+     {
+      "name": "Wikipedia - Jeep Gladiator (SJ) [J-series]",
+      "url": "https://en.wikipedia.org/wiki/Jeep_Gladiator_(SJ)",
+      "says": "AMC 360 offered 1971 through 1988"
+     },
+     {
+      "name": "International Full Size Jeep Association - FSJ Drivetrain Database (Trucks table)",
+      "url": "https://ifsja.org/tech/figures/db.html",
+      "says": "Trucks: 360 V8 AMC 1971-87"
+     }
+    ],
+    "independent_sources": [
+     "AMC/Jeep/Chrysler factory material",
+     "IFSJA",
+     "Wikipedia"
+    ],
+    "status": "three_sources_not_nhra",
+    "note": "Net hp withheld: the truck literature found from 1974 on gives no ratings, and IFSJA's FSJ-wide table mixes gross and net figures (Wikipedia's J-series hp figures are also mixed gross/net)."
+   }
+  ],
+  "1982": [
+   {
+    "gen": "amc",
+    "cid": 258,
+    "hp": null,
+    "hp_basis": "net",
+    "name": "4.2L / 258 I6 2-bbl",
+    "rpo": "AMC 258",
+    "common_name": "258 Six",
+    "trims": [
+     "J10 std",
+     "NA J20"
+    ],
+    "nhra": false,
+    "sources": [
+     {
+      "name": "AMC Jeep 1982 Pickup brochure, pp.3-4",
+      "url": "https://oldcarbrochures.org/United%20States/Jeep/1982_Jeep/1982-Jeep-Pickup-Brochure/index.html",
+      "says": "258 CID Six 2-bbl: std. J-10; standard J-10 powerteam includes a 258 CID Six with electronic fuel and spark controls"
+     },
+     {
+      "name": "Wikipedia - Jeep Gladiator (SJ) [J-series]",
+      "url": "https://en.wikipedia.org/wiki/Jeep_Gladiator_(SJ)",
+      "says": "AMC 258 I6 introduced in 1972 and offered through 1988"
+     },
+     {
+      "name": "International Full Size Jeep Association - FSJ Drivetrain Database (Trucks table)",
+      "url": "https://ifsja.org/tech/figures/db.html",
+      "says": "Trucks: 258 OHV I-6 AMC 1971-87"
+     }
+    ],
+    "independent_sources": [
+     "AMC/Jeep/Chrysler factory material",
+     "IFSJA",
+     "Wikipedia"
+    ],
+    "status": "three_sources_not_nhra",
+    "note": "Net hp withheld: the truck literature found from 1974 on gives no ratings, and IFSJA's FSJ-wide table mixes gross and net figures (Wikipedia's J-series hp figures are also mixed gross/net)."
+   },
+   {
+    "gen": "amc",
+    "cid": 360,
+    "hp": null,
+    "hp_basis": "net",
+    "name": "5.9L / 360 V8 2-bbl",
+    "rpo": "AMC 360",
+    "common_name": "360 V8",
+    "trims": [
+     "J20 std",
+     "J10 opt"
+    ],
+    "nhra": false,
+    "sources": [
+     {
+      "name": "AMC Jeep 1982 Pickup brochure, pp.3-4",
+      "url": "https://oldcarbrochures.org/United%20States/Jeep/1982_Jeep/1982-Jeep-Pickup-Brochure/index.html",
+      "says": "360 CID V-8 2-bbl: std. J-20, opt. J-10 (footnoted)"
+     },
+     {
+      "name": "Wikipedia - Jeep Gladiator (SJ) [J-series]",
+      "url": "https://en.wikipedia.org/wiki/Jeep_Gladiator_(SJ)",
+      "says": "AMC 360 offered 1971 through 1988"
+     },
+     {
+      "name": "International Full Size Jeep Association - FSJ Drivetrain Database (Trucks table)",
+      "url": "https://ifsja.org/tech/figures/db.html",
+      "says": "Trucks: 360 V8 AMC 1971-87"
+     }
+    ],
+    "independent_sources": [
+     "AMC/Jeep/Chrysler factory material",
+     "IFSJA",
+     "Wikipedia"
+    ],
+    "status": "three_sources_not_nhra",
+    "note": "Net hp withheld: the truck literature found from 1974 on gives no ratings, and IFSJA's FSJ-wide table mixes gross and net figures (Wikipedia's J-series hp figures are also mixed gross/net)."
+   }
+  ],
+  "1983": [
+   {
+    "gen": "amc",
+    "cid": 258,
+    "hp": null,
+    "hp_basis": "net",
+    "name": "4.2L / 258 I6 2-bbl",
+    "rpo": "AMC 258",
+    "common_name": "258 Six",
+    "trims": [
+     "J10 (models 25/26) std",
+     "NA J20"
+    ],
+    "nhra": false,
+    "sources": [
+     {
+      "name": "AMC 1983 Jeep Product Information (dealer data book, archive.org)",
+      "url": "https://archive.org/details/amc-1983-jeep-product-information",
+      "says": "Jeep Truck J-10 (25) 119 in. and J-10 (26) 131 in.: standard 258 6-cyl 2-bbl; 4.2 liter standard on Pickup models 25 and 26"
+     },
+     {
+      "name": "Wikipedia - Jeep Gladiator (SJ) [J-series]",
+      "url": "https://en.wikipedia.org/wiki/Jeep_Gladiator_(SJ)",
+      "says": "AMC 258 I6 introduced in 1972 and offered through 1988"
+     },
+     {
+      "name": "International Full Size Jeep Association - FSJ Drivetrain Database (Trucks table)",
+      "url": "https://ifsja.org/tech/figures/db.html",
+      "says": "Trucks: 258 OHV I-6 AMC 1971-87"
+     }
+    ],
+    "independent_sources": [
+     "AMC/Jeep/Chrysler factory material",
+     "IFSJA",
+     "Wikipedia"
+    ],
+    "status": "three_sources_not_nhra",
+    "note": "oldcarbrochures' '1983 Jeep Pickup' is a Mexican VAM brochure (J-364) and was not used. Net hp withheld: the truck literature found from 1974 on gives no ratings, and IFSJA's FSJ-wide table mixes gross and net figures (Wikipedia's J-series hp figures are also mixed gross/net)."
+   },
+   {
+    "gen": "amc",
+    "cid": 360,
+    "hp": null,
+    "hp_basis": "net",
+    "name": "5.9L / 360 V8 2-bbl",
+    "rpo": "AMC 360",
+    "common_name": "360 V8",
+    "trims": [
+     "J20 (model 27) std",
+     "J10 opt"
+    ],
+    "nhra": false,
+    "sources": [
+     {
+      "name": "AMC 1983 Jeep Product Information (dealer data book, archive.org)",
+      "url": "https://archive.org/details/amc-1983-jeep-product-information",
+      "says": "J-10 optional 360 V-8 2-bbl; J-20 (27) standard 360 V-8 2-bbl, optional: None; 5.9 liter standard on Pickup model 27"
+     },
+     {
+      "name": "Wikipedia - Jeep Gladiator (SJ) [J-series]",
+      "url": "https://en.wikipedia.org/wiki/Jeep_Gladiator_(SJ)",
+      "says": "AMC 360 offered 1971 through 1988"
+     },
+     {
+      "name": "International Full Size Jeep Association - FSJ Drivetrain Database (Trucks table)",
+      "url": "https://ifsja.org/tech/figures/db.html",
+      "says": "Trucks: 360 V8 AMC 1971-87"
+     }
+    ],
+    "independent_sources": [
+     "AMC/Jeep/Chrysler factory material",
+     "IFSJA",
+     "Wikipedia"
+    ],
+    "status": "three_sources_not_nhra",
+    "note": "Net hp withheld: the truck literature found from 1974 on gives no ratings, and IFSJA's FSJ-wide table mixes gross and net figures (Wikipedia's J-series hp figures are also mixed gross/net)."
+   }
+  ],
+  "1984": [
+   {
+    "gen": "amc",
+    "cid": 258,
+    "hp": null,
+    "hp_basis": "net",
+    "name": "4.2L / 258 I6 2-bbl",
+    "rpo": "AMC 258",
+    "common_name": "258 Six",
+    "trims": [
+     "J10 std",
+     "NA J20"
+    ],
+    "nhra": false,
+    "sources": [
+     {
+      "name": "AMC Jeep 1984 full-line brochure, p.13 options",
+      "url": "https://oldcarbrochures.org/United%20States/Jeep/1984-Jeep/1984-Jeep-Full-Line/index.html",
+      "says": "Engines: 4.2 liter (258 CID) 6-cyl. (NA J-20); 5.9 liter V-8 (J-10, standard J-20)"
+     },
+     {
+      "name": "EPA fueleconomy.gov vehicle data",
+      "url": "https://www.fueleconomy.gov/feg/download.shtml",
+      "says": "1984: 4.2L 6-cyl J-10 Pickup 4WD"
+     },
+     {
+      "name": "Wikipedia - Jeep Gladiator (SJ) [J-series]",
+      "url": "https://en.wikipedia.org/wiki/Jeep_Gladiator_(SJ)",
+      "says": "AMC 258 I6 introduced in 1972 and offered through 1988"
+     },
+     {
+      "name": "International Full Size Jeep Association - FSJ Drivetrain Database (Trucks table)",
+      "url": "https://ifsja.org/tech/figures/db.html",
+      "says": "Trucks: 258 OHV I-6 AMC 1971-87"
+     }
+    ],
+    "independent_sources": [
+     "AMC/Jeep/Chrysler factory material",
+     "EPA",
+     "IFSJA",
+     "Wikipedia"
+    ],
+    "status": "three_sources_not_nhra",
+    "note": "EPA 1984 also lists Scrambler (CJ-8) pickups; those are not J-series. Net hp withheld: the truck literature found from 1974 on gives no ratings, and IFSJA's FSJ-wide table mixes gross and net figures (Wikipedia's J-series hp figures are also mixed gross/net)."
+   },
+   {
+    "gen": "amc",
+    "cid": 360,
+    "hp": null,
+    "hp_basis": "net",
+    "name": "5.9L / 360 V8 2-bbl",
+    "rpo": "AMC 360",
+    "common_name": "360 V8",
+    "trims": [
+     "J20 std",
+     "J10 opt"
+    ],
+    "nhra": false,
+    "sources": [
+     {
+      "name": "AMC Jeep 1984 full-line brochure, p.13 options",
+      "url": "https://oldcarbrochures.org/United%20States/Jeep/1984-Jeep/1984-Jeep-Full-Line/index.html",
+      "says": "5.9 liter (360 CID) V-8 (J-10, standard J-20)"
+     },
+     {
+      "name": "EPA fueleconomy.gov vehicle data",
+      "url": "https://www.fueleconomy.gov/feg/download.shtml",
+      "says": "1984: 5.9L 8-cyl J-10 Pickup 4WD"
+     },
+     {
+      "name": "Wikipedia - Jeep Gladiator (SJ) [J-series]",
+      "url": "https://en.wikipedia.org/wiki/Jeep_Gladiator_(SJ)",
+      "says": "AMC 360 offered 1971 through 1988"
+     },
+     {
+      "name": "International Full Size Jeep Association - FSJ Drivetrain Database (Trucks table)",
+      "url": "https://ifsja.org/tech/figures/db.html",
+      "says": "Trucks: 360 V8 AMC 1971-87"
+     }
+    ],
+    "independent_sources": [
+     "AMC/Jeep/Chrysler factory material",
+     "EPA",
+     "IFSJA",
+     "Wikipedia"
+    ],
+    "status": "three_sources_not_nhra",
+    "note": "EPA 1984 has J-10 rows only (no J-20 row that year). Net hp withheld: the truck literature found from 1974 on gives no ratings, and IFSJA's FSJ-wide table mixes gross and net figures (Wikipedia's J-series hp figures are also mixed gross/net)."
+   }
+  ],
+  "1985": [
+   {
+    "gen": "amc",
+    "cid": 258,
+    "hp": null,
+    "hp_basis": "net",
+    "name": "4.2L / 258 I6 2-bbl",
+    "rpo": "AMC 258",
+    "common_name": "258 Six",
+    "trims": [
+     "J10 std",
+     "NA J20"
+    ],
+    "nhra": false,
+    "sources": [
+     {
+      "name": "EPA fueleconomy.gov vehicle data",
+      "url": "https://www.fueleconomy.gov/feg/download.shtml",
+      "says": "1985: 4.2L 6-cyl J-10 Pickup Truck"
+     },
+     {
+      "name": "Wikipedia - Jeep Gladiator (SJ) [J-series]",
+      "url": "https://en.wikipedia.org/wiki/Jeep_Gladiator_(SJ)",
+      "says": "AMC 258 I6 introduced in 1972 and offered through 1988"
+     },
+     {
+      "name": "International Full Size Jeep Association - FSJ Drivetrain Database (Trucks table)",
+      "url": "https://ifsja.org/tech/figures/db.html",
+      "says": "Trucks: 258 OHV I-6 AMC 1971-87"
+     }
+    ],
+    "independent_sources": [
+     "EPA",
+     "IFSJA",
+     "Wikipedia"
+    ],
+    "status": "three_sources_not_nhra",
+    "note": "No usable US truck spec page found for this year (the 1985 brochure page is unreadable; the 1986 handout names no engines). Net hp withheld: the truck literature found from 1974 on gives no ratings, and IFSJA's FSJ-wide table mixes gross and net figures (Wikipedia's J-series hp figures are also mixed gross/net)."
+   },
+   {
+    "gen": "amc",
+    "cid": 360,
+    "hp": null,
+    "hp_basis": "net",
+    "name": "5.9L / 360 V8 2-bbl",
+    "rpo": "AMC 360",
+    "common_name": "360 V8",
+    "trims": [
+     "J20 std",
+     "J10 opt"
+    ],
+    "nhra": false,
+    "sources": [
+     {
+      "name": "EPA fueleconomy.gov vehicle data",
+      "url": "https://www.fueleconomy.gov/feg/download.shtml",
+      "says": "1985: 5.9L 8-cyl J-10 and J-20 Pickup Truck"
+     },
+     {
+      "name": "Wikipedia - Jeep Gladiator (SJ) [J-series]",
+      "url": "https://en.wikipedia.org/wiki/Jeep_Gladiator_(SJ)",
+      "says": "AMC 360 offered 1971 through 1988"
+     },
+     {
+      "name": "International Full Size Jeep Association - FSJ Drivetrain Database (Trucks table)",
+      "url": "https://ifsja.org/tech/figures/db.html",
+      "says": "Trucks: 360 V8 AMC 1971-87"
+     }
+    ],
+    "independent_sources": [
+     "EPA",
+     "IFSJA",
+     "Wikipedia"
+    ],
+    "status": "three_sources_not_nhra",
+    "note": "Net hp withheld: the truck literature found from 1974 on gives no ratings, and IFSJA's FSJ-wide table mixes gross and net figures (Wikipedia's J-series hp figures are also mixed gross/net)."
+   }
+  ],
+  "1986": [
+   {
+    "gen": "amc",
+    "cid": 258,
+    "hp": null,
+    "hp_basis": "net",
+    "name": "4.2L / 258 I6 2-bbl",
+    "rpo": "AMC 258",
+    "common_name": "258 Six",
+    "trims": [
+     "J10 std",
+     "NA J20"
+    ],
+    "nhra": false,
+    "sources": [
+     {
+      "name": "EPA fueleconomy.gov vehicle data",
+      "url": "https://www.fueleconomy.gov/feg/download.shtml",
+      "says": "1986: 4.2L 6-cyl J-10 Pickup Truck"
+     },
+     {
+      "name": "Wikipedia - Jeep Gladiator (SJ) [J-series]",
+      "url": "https://en.wikipedia.org/wiki/Jeep_Gladiator_(SJ)",
+      "says": "AMC 258 I6 introduced in 1972 and offered through 1988"
+     },
+     {
+      "name": "International Full Size Jeep Association - FSJ Drivetrain Database (Trucks table)",
+      "url": "https://ifsja.org/tech/figures/db.html",
+      "says": "Trucks: 258 OHV I-6 AMC 1971-87"
+     }
+    ],
+    "independent_sources": [
+     "EPA",
+     "IFSJA",
+     "Wikipedia"
+    ],
+    "status": "three_sources_not_nhra",
+    "note": "No usable US truck spec page found for this year (the 1985 brochure page is unreadable; the 1986 handout names no engines). Net hp withheld: the truck literature found from 1974 on gives no ratings, and IFSJA's FSJ-wide table mixes gross and net figures (Wikipedia's J-series hp figures are also mixed gross/net)."
+   },
+   {
+    "gen": "amc",
+    "cid": 360,
+    "hp": null,
+    "hp_basis": "net",
+    "name": "5.9L / 360 V8 2-bbl",
+    "rpo": "AMC 360",
+    "common_name": "360 V8",
+    "trims": [
+     "J20 std",
+     "J10 opt"
+    ],
+    "nhra": false,
+    "sources": [
+     {
+      "name": "EPA fueleconomy.gov vehicle data",
+      "url": "https://www.fueleconomy.gov/feg/download.shtml",
+      "says": "1986: 5.9L 8-cyl J-10 and J-20 Pickup Truck"
+     },
+     {
+      "name": "Wikipedia - Jeep Gladiator (SJ) [J-series]",
+      "url": "https://en.wikipedia.org/wiki/Jeep_Gladiator_(SJ)",
+      "says": "AMC 360 offered 1971 through 1988"
+     },
+     {
+      "name": "International Full Size Jeep Association - FSJ Drivetrain Database (Trucks table)",
+      "url": "https://ifsja.org/tech/figures/db.html",
+      "says": "Trucks: 360 V8 AMC 1971-87"
+     }
+    ],
+    "independent_sources": [
+     "EPA",
+     "IFSJA",
+     "Wikipedia"
+    ],
+    "status": "three_sources_not_nhra",
+    "note": "Net hp withheld: the truck literature found from 1974 on gives no ratings, and IFSJA's FSJ-wide table mixes gross and net figures (Wikipedia's J-series hp figures are also mixed gross/net)."
+   }
+  ],
+  "1987": [
+   {
+    "gen": "amc",
+    "cid": 258,
+    "hp": null,
+    "hp_basis": "net",
+    "name": "4.2L / 258 I6 2-bbl",
+    "rpo": "AMC 258",
+    "common_name": "258 Six",
+    "trims": [
+     "J10 std",
+     "NA J20"
+    ],
+    "nhra": false,
+    "sources": [
+     {
+      "name": "EPA fueleconomy.gov vehicle data",
+      "url": "https://www.fueleconomy.gov/feg/download.shtml",
+      "says": "1987: 4.2L 6-cyl J-10 Pickup Truck 4WD"
+     },
+     {
+      "name": "Wikipedia - Jeep Gladiator (SJ) [J-series]",
+      "url": "https://en.wikipedia.org/wiki/Jeep_Gladiator_(SJ)",
+      "says": "AMC 258 I6 introduced in 1972 and offered through 1988"
+     },
+     {
+      "name": "International Full Size Jeep Association - FSJ Drivetrain Database (Trucks table)",
+      "url": "https://ifsja.org/tech/figures/db.html",
+      "says": "Trucks: 258 OHV I-6 AMC 1971-87"
+     }
+    ],
+    "independent_sources": [
+     "EPA",
+     "IFSJA",
+     "Wikipedia"
+    ],
+    "status": "three_sources_not_nhra",
+    "note": "The 1987 brochure names only the V8 ('optional J-10, standard J-20'), which implies a different standard J-10 engine. Net hp withheld: the truck literature found from 1974 on gives no ratings, and IFSJA's FSJ-wide table mixes gross and net figures (Wikipedia's J-series hp figures are also mixed gross/net)."
+   },
+   {
+    "gen": "amc",
+    "cid": 360,
+    "hp": null,
+    "hp_basis": "net",
+    "name": "5.9L / 360 V8 2-bbl",
+    "rpo": "AMC 360",
+    "common_name": "360 V8",
+    "trims": [
+     "J20 std",
+     "J10 opt"
+    ],
+    "nhra": false,
+    "sources": [
+     {
+      "name": "Jeep 1987 full-line brochure, pp.3 and 5",
+      "url": "https://oldcarbrochures.org/United%20States/Jeep/1987-Jeep/1987-Jeep-Full-Line-Brochure/index.html",
+      "says": "J-10 & J-20 Pickups: 5.9 litre V8 power (optional J-10, standard J-20)"
+     },
+     {
+      "name": "EPA fueleconomy.gov vehicle data",
+      "url": "https://www.fueleconomy.gov/feg/download.shtml",
+      "says": "1987: 5.9L 8-cyl J-10 and J-20 Pickup Truck 4WD"
+     },
+     {
+      "name": "Wikipedia - Jeep Gladiator (SJ) [J-series]",
+      "url": "https://en.wikipedia.org/wiki/Jeep_Gladiator_(SJ)",
+      "says": "AMC 360 offered 1971 through 1988"
+     },
+     {
+      "name": "International Full Size Jeep Association - FSJ Drivetrain Database (Trucks table)",
+      "url": "https://ifsja.org/tech/figures/db.html",
+      "says": "Trucks: 360 V8 AMC 1971-87"
+     }
+    ],
+    "independent_sources": [
+     "AMC/Jeep/Chrysler factory material",
+     "EPA",
+     "IFSJA",
+     "Wikipedia"
+    ],
+    "status": "three_sources_not_nhra",
+    "note": "Net hp withheld: the truck literature found from 1974 on gives no ratings, and IFSJA's FSJ-wide table mixes gross and net figures (Wikipedia's J-series hp figures are also mixed gross/net)."
+   }
+  ],
+  "1988": [
+   {
+    "gen": "amc",
+    "cid": 258,
+    "hp": null,
+    "hp_basis": "net",
+    "name": "4.2L / 258 I6 2-bbl",
+    "rpo": "AMC 258",
+    "common_name": "258 Six",
+    "trims": [
+     "J10 std",
+     "NA J20"
+    ],
+    "nhra": false,
+    "sources": [
+     {
+      "name": "EPA fueleconomy.gov vehicle data",
+      "url": "https://www.fueleconomy.gov/feg/download.shtml",
+      "says": "1988: 4.2L 6-cyl J-10 Pickup Truck 4WD"
+     },
+     {
+      "name": "Wikipedia - Jeep Gladiator (SJ) [J-series]",
+      "url": "https://en.wikipedia.org/wiki/Jeep_Gladiator_(SJ)",
+      "says": "AMC 258 I6 introduced in 1972 and offered through 1988"
+     }
+    ],
+    "independent_sources": [
+     "EPA",
+     "Wikipedia"
+    ],
+    "status": "two_sources_agree",
+    "note": "Final J-series year. IFSJA's truck table ends the 258 and 360 at 1987, which conflicts with EPA's 1988 rows; no 1988 J-series factory literature found. Net hp withheld: the truck literature found from 1974 on gives no ratings, and IFSJA's FSJ-wide table mixes gross and net figures (Wikipedia's J-series hp figures are also mixed gross/net)."
+   },
+   {
+    "gen": "amc",
+    "cid": 360,
+    "hp": null,
+    "hp_basis": "net",
+    "name": "5.9L / 360 V8 2-bbl",
+    "rpo": "AMC 360",
+    "common_name": "360 V8",
+    "trims": [
+     "J20 std",
+     "J10 opt"
+    ],
+    "nhra": false,
+    "sources": [
+     {
+      "name": "EPA fueleconomy.gov vehicle data",
+      "url": "https://www.fueleconomy.gov/feg/download.shtml",
+      "says": "1988: 5.9L 8-cyl J-10 and J-20 Pickup Truck 4WD"
+     },
+     {
+      "name": "Wikipedia - Jeep Gladiator (SJ) [J-series]",
+      "url": "https://en.wikipedia.org/wiki/Jeep_Gladiator_(SJ)",
+      "says": "AMC 360 offered 1971 through 1988"
+     }
+    ],
+    "independent_sources": [
+     "EPA",
+     "Wikipedia"
+    ],
+    "status": "two_sources_agree",
+    "note": "Final J-series year. IFSJA's truck table ends at 1987. Net hp withheld: the truck literature found from 1974 on gives no ratings, and IFSJA's FSJ-wide table mixes gross and net figures (Wikipedia's J-series hp figures are also mixed gross/net)."
+   }
+  ]
+ },
+ "source_index": [
+  {
+   "name": "AMC Jeep 1972 full-line folder, Engines table",
+   "url": "https://oldcarbrochures.org/United%20States/Jeep/1972-Jeep/1972-Jeep-Full-Line-Folder/index.html",
+   "type": "manufacturer"
+  },
+  {
+   "name": "Wikipedia - Jeep Gladiator (SJ) [J-series]",
+   "url": "https://en.wikipedia.org/wiki/Jeep_Gladiator_(SJ)",
+   "type": "wikipedia"
+  },
+  {
+   "name": "International Full Size Jeep Association - FSJ Drivetrain Database (Trucks table)",
+   "url": "https://ifsja.org/tech/figures/db.html",
+   "type": "registry"
+  },
+  {
+   "name": "AMC Jeep 1973 full-line brochure, p.8 Jeep Truck Engines table",
+   "url": "https://oldcarbrochures.org/United%20States/Jeep/1973-Jeep/1973-Jeep-Full-Line-Brochure/index.html",
+   "type": "manufacturer"
+  },
+  {
+   "name": "International Full Size Jeep Association - FSJ engine table",
+   "url": "https://ifsja.org/tech/figures/engines.html",
+   "type": "registry"
+  },
+  {
+   "name": "JeepTech (offroaders.com/jeepfan.com) - AMC 401 V8",
+   "url": "https://jeepfan.com/tech/jeeptech/gnu-engine-factory401v8.htm",
+   "type": "publication"
+  },
+  {
+   "name": "AMC Jeep 1976 full-line brochure, p.29 Engine Availability chart",
+   "url": "https://oldcarbrochures.org/United%20States/Jeep/1976-Jeep/1976-Jeep-Full-Line-Brochure/slides/1976_Jeep_Full_Line-29.html",
+   "type": "manufacturer"
+  },
+  {
+   "name": "AMC Jeep 1977 full-line brochure, p.27 Pickup Engine Availability",
+   "url": "https://oldcarbrochures.org/United%20States/Jeep/1977-Jeep/1977%20Jeep%20Full%20Line/index.html",
+   "type": "manufacturer"
+  },
+  {
+   "name": "AMC Jeep 1978 full-line brochure, p.27 Pickup Engine Availability",
+   "url": "https://oldcarbrochures.org/United%20States/Jeep/1978_Jeep/1978_Jeep_Full_Line_Brochure/index.html",
+   "type": "manufacturer"
+  },
+  {
+   "name": "AMC Jeep 1979 full-line brochure, p.25 Pickup Engine Availability",
+   "url": "https://oldcarbrochures.org/United%20States/Jeep/1979-Jeep/1979-Jeep-Full-Line-Brochure/index.html",
+   "type": "manufacturer"
+  },
+  {
+   "name": "AMC Jeep 1980 full-line brochure, pp.24-25 Pickup Engine Availability",
+   "url": "https://oldcarbrochures.org/United%20States/Jeep/1980_Jeep/1980-Jeep-Full-Line-Brochure/index.html",
+   "type": "manufacturer"
+  },
+  {
+   "name": "AMC Jeep 1981 Pickup brochure, p.12 Pickup Engine Availability",
+   "url": "https://oldcarbrochures.org/United%20States/Jeep/1981_Jeep/1981-Jeep-Pickup-Brochure/index.html",
+   "type": "manufacturer"
+  },
+  {
+   "name": "AMC Jeep 1982 Pickup brochure, pp.3-4",
+   "url": "https://oldcarbrochures.org/United%20States/Jeep/1982_Jeep/1982-Jeep-Pickup-Brochure/index.html",
+   "type": "manufacturer"
+  },
+  {
+   "name": "AMC 1983 Jeep Product Information (dealer data book, archive.org)",
+   "url": "https://archive.org/details/amc-1983-jeep-product-information",
+   "type": "manufacturer"
+  },
+  {
+   "name": "AMC Jeep 1984 full-line brochure, p.13 options",
+   "url": "https://oldcarbrochures.org/United%20States/Jeep/1984-Jeep/1984-Jeep-Full-Line/index.html",
+   "type": "manufacturer"
+  },
+  {
+   "name": "EPA fueleconomy.gov vehicle data",
+   "url": "https://www.fueleconomy.gov/feg/download.shtml",
+   "type": "government"
+  },
+  {
+   "name": "Jeep 1987 full-line brochure, pp.3 and 5",
+   "url": "https://oldcarbrochures.org/United%20States/Jeep/1987-Jeep/1987-Jeep-Full-Line-Brochure/index.html",
+   "type": "manufacturer"
+  }
+ ]
+}

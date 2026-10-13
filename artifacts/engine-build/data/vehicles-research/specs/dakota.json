@@ -1,0 +1,94 @@
+{
+ "make": "Dodge",
+ "model": "Dakota",
+ "makeSlug": "dodge",
+ "slug": "dakota",
+ "title": "Dodge Dakota Engines by Year (1987–2011)",
+ "description": "Every factory engine in the Dodge Dakota by year, 1987–2011: the 2.2 and 2.5 fours, the 3.9 V6, 5.2 and 5.9 Magnum V8s, the Shelby and R/T, and the 3.7 and 4.7.",
+ "intro": [
+  "Dodge's midsize Dakota pickup ran from 1987 to 2011, sold as the Ram Dakota for its final year. It was the first midsize pickup offered with a V8.",
+  "Pick a year to see every engine offered that model year, with its code, rated horsepower and the trims it came in. Each engine links to its full specs."
+ ],
+ "generations": [
+  {
+   "key": "gen1",
+   "name": "1987–1996",
+   "years": [
+    1987,
+    1996
+   ],
+   "intro": [
+    "The first Dakota used the 2.2 and 2.5 fours and the 3.9 V6, then the 5.2 V8 from 1991 and Magnum engines from 1992. The 1989 Shelby Dakota had a 5.2 V8."
+   ]
+  },
+  {
+   "key": "gen2",
+   "name": "1997–2004",
+   "years": [
+    1997,
+    2004
+   ],
+   "intro": [
+    "The second Dakota offered the 2.5 four, the 3.9 V6, the 5.2 and, in the 1998–2003 R/T, the 5.9 V8, with the 4.7 V8 from 2000 and the 3.7 V6 for 2004."
+   ]
+  },
+  {
+   "key": "gen3",
+   "name": "2005–2011",
+   "years": [
+    2005,
+    2011
+   ],
+   "intro": [
+    "The last Dakota used the 3.7 V6 and the 4.7 V8, with a high-output 4.7 through 2007."
+   ]
+  }
+ ],
+ "files": [
+  "verify_dodge-dakota-1987-2011.json"
+ ],
+ "merge_trims": true,
+ "family_overrides": [
+  {
+   "years": [
+    2004,
+    2011
+   ],
+   "cid": [
+    226
+   ],
+   "url": "/engines/ram/powertech"
+  },
+  {
+   "years": [
+    1998,
+    2003
+   ],
+   "cid": [
+    360
+   ],
+   "url": "/engines/ram/magnum"
+  },
+  {
+   "years": [
+    1996,
+    2002
+   ],
+   "cid": [
+    150
+   ],
+   "url": "/engines/jeep/amc-i4"
+  }
+ ],
+ "ranges": {
+  "1990|153|None": [
+   100,
+   117
+  ],
+  "1991|153|None": [
+   100,
+   117
+  ]
+ },
+ "draft": true
+}

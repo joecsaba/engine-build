@@ -1,0 +1,65 @@
+{
+ "make": "Chevrolet",
+ "model": "S-10",
+ "makeSlug": "chevrolet",
+ "slug": "s-10",
+ "title": "Chevrolet S-10 Engines by Year (1982–2004)",
+ "description": "Every factory engine in the Chevrolet S-10 pickup by year, 1982–2004: the 1.9, 2.0, 2.2 and 2.5 fours, the Isuzu diesel, the 2.8 V6 and the 4.3 Vortec V6.",
+ "intro": [
+  "Chevrolet's compact S-10 pickup ran from 1982 to 2004 in two generations; four-wheel-drive versions were badged T10 at first. The S-10 Blazer SUV is not included.",
+  "Pick a year to see every engine offered that model year, with its code, rated horsepower and the trims it came in. Each engine links to its full specs."
+ ],
+ "generations": [
+  {
+   "key": "gen1",
+   "name": "1982–1993",
+   "years": [
+    1982,
+    1993
+   ],
+   "intro": [
+    "The first S-10 used GM's 1.9 and 2.0 fours, the Iron Duke 2.5, a 2.2 Isuzu diesel for 1984–1985 and the 2.8 V6. The 4.3 V6 arrived during 1988, with a high-output version from 1992."
+   ]
+  },
+  {
+   "key": "gen2",
+   "name": "1994–2004",
+   "years": [
+    1994,
+    2004
+   ],
+   "intro": [
+    "The second S-10 offered the 2.2 four and the 4.3 Vortec V6 in standard and high-output form. The last 2004 trucks were Crew Cab 4x4s with the 4.3."
+   ]
+  }
+ ],
+ "files": [
+  "verify_chevrolet-s10-1982-2004.json"
+ ],
+ "merge_trims": true,
+ "names": {
+  "1982|119|82": "1.9L / 119 inline-four",
+  "1983|119|82": "1.9L / 119 inline-four",
+  "1984|119|82": "1.9L / 119 inline-four",
+  "1985|119|82": "1.9L / 119 inline-four"
+ },
+ "ranges": {
+  "1985|173|None": [
+   110,
+   115
+  ],
+  "1995|262|None": [
+   180,
+   191
+  ],
+  "1996|262|None": [
+   170,
+   175
+  ],
+  "1997|262|None": [
+   170,
+   175
+  ]
+ },
+ "draft": true
+}
