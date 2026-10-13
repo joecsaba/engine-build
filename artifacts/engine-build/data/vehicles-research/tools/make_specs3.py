@@ -108,7 +108,7 @@ S["ck-pickup"] = dict(make="Chevrolet", model="C/K Pickup", makeSlug="chevrolet"
 
 S["silverado"] = dict(make="Chevrolet", model="Silverado 1500", makeSlug="chevrolet", slug="silverado-1500",
   title="Chevrolet Silverado 1500 Engines by Year",
-  description="Every factory engine in the Chevrolet Silverado 1500 by year, 1999–2026: Vortec V6 and V8s, the SS 6.0, the 6.2 V8, the 2.7 TurboMax, the Duramax 3.0 and the EV.",
+  description="Every factory engine in the Chevrolet Silverado 1500 by year, 1999–2026: Vortec V6 and V8s, the SS 6.0, the 6.2 V8, 2.7 TurboMax, Duramax 3.0 and the EV.",
   intro=["The Silverado replaced the C/K 1500 for 1999 and has been built in four generations. This page covers the half-ton Silverado 1500; the 1500HD of 2001–2007 was built on the heavy-duty chassis and is not included.", PICK],
   generations=[
     G("gmt800", "GMT800", 1999, 2006, "The first Silverado used the 4.3 V6 and Vortec 4.8, 5.3 and 6.0 V8s. The 2003–2007 Silverado SS used a 345 hp 6.0, and a mild hybrid ran from 2004."),
@@ -121,7 +121,7 @@ S["silverado"] = dict(make="Chevrolet", model="Silverado 1500", makeSlug="chevro
 
 S["f-100"] = dict(make="Ford", model="F-100", makeSlug="ford", slug="f-100",
   title="Ford F-100 Engines by Year (1953–1983)",
-  description="Every factory engine in the Ford F-100 half-ton pickup by year, 1953–1983: flathead and Y-block V8s, the 223, 240 and 300 sixes, FE 352, 360 and 390, and the 302.",
+  description="Every factory engine in the Ford F-100 pickup by year, 1953–1983: flathead and Y-block V8s, the 223, 240 and 300 sixes, FE 352, 360 and 390, and the 302.",
   intro=["The F-100 was Ford's half-ton pickup from 1953 to 1983. The F-150 joined it for 1975 as a heavier-rated half-ton and replaced it after 1983. Four-wheel drive was offered from 1959 to 1976.", PICK],
   generations=[
     G("gen2", "1953–1956", 1953, 1956, "The first F-100 used the 215 and 223 sixes and the 239 flathead V8, replaced by the overhead-valve Y-block for 1954."),
