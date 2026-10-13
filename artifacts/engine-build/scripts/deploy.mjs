@@ -48,7 +48,8 @@ const NEEDS_SHELL = process.platform === "win32";
 
 function run(cmd, cmdArgs, opts = {}) {
   if (dryRun) { console.log(`    would run: ${cmd} ${cmdArgs.join(" ")}`); return { stdout: "", status: 0 }; }
-  const r = spawnSync(cmd, cmdArgs, { encoding: "utf8", shell: NEEDS_SHELL, cwd: opts.cwd ?? ROOT, ...opts });
+  // maxBuffer: an S3 sync of a few thousand changed files prints more than the 1 MB default
+  const r = spawnSync(cmd, cmdArgs, { encoding: "utf8", shell: NEEDS_SHELL, cwd: opts.cwd ?? ROOT, maxBuffer: 256 * 1024 * 1024, ...opts });
   if (r.error) fail(`${cmd}: ${r.error.message}`);
   if (r.status !== 0) {
     process.stderr.write(r.stderr || r.stdout || "");
