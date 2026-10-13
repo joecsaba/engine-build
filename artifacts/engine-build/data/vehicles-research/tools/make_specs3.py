@@ -168,9 +168,23 @@ S["f-150"] = dict(make="Ford", model="F-150", makeSlug="ford", slug="f-150",
   files=["verify_ford-f150-1975-1996.json", "verify_ford-f150-1997-2014.json", "verify_ford-f150-2015-2026.json"],
   merge_trims=True,
   exclude={"1993|351|210": "1993 rating is 200; 210 is the 1992 and 1994 figure"},
+  cid_remap={"226": 227},  # the 3.7 Cyclone V6 is 3,726 cc
+  # the 4.2 Essex V6 and the 3.0 Power Stroke have no page; their same-size pages are other engines
+  no_link=[{"cid": 256, "years": [1997, 2008]}, {"cid": 183, "years": [2018, 2021]}],
   names={f"{y}|204|290": "3.3L / 204 V6" for y in range(2018, 2024)},
   notes={**{f"{y}|213|430": "Hybrid: 430 hp is the combined output of the 3.5 EcoBoost V6 and the electric motor." for y in range(2021, 2027)},
          **{f"{y}|None|452": "452 hp with the standard-range battery; 580 hp with the extended-range battery." for y in range(2022, 2026)}})
+
+S["d-series"] = dict(make="Dodge", model="D-Series Pickup", makeSlug="dodge", slug="d-series",
+  title="Dodge D-Series Engines by Year (1961–1993)",
+  description="Every factory engine in the Dodge D100, D150, W100 and W150 pickup by year, 1961–1993: slant sixes, LA and B V8s, the Li'l Red Express 360 and Magnums.",
+  intro=["Dodge's D-series pickups ran from 1961 to 1993; D means two-wheel drive and W four-wheel drive, sold as the Power Wagon. This page covers the half-tons: the D100 and W100, renamed D150 and W150 from 1978. The 1994 Ram 1500 replaced them.", PICK],
+  generations=[
+    G("gen1", "1961–1971", 1961, 1971, "The first D-series used the 170 and 225 slant sixes and the 318 V8, with the 383 from 1967. In 1964–1966 Dodge offered a high-performance package with the 413 and then the 426 wedge."),
+    G("gen2", "1972–1980", 1972, 1980, "The 1972 redesign offered the 225 six and the 318, 360, 400 and 440 V8s. The 1978–1979 Li'l Red Express used a 225 hp 360, and a Mitsubishi diesel was listed for 1978. Ratings are SAE net from 1972."),
+    G("gen3", "1981–1993", 1981, 1993, "The restyled trucks used the 225 six and the 318 and 360 V8s, then the 3.9 V6 from 1988 and fuel-injected Magnum engines from 1992.")],
+  files=["verify_dodge-dseries-1961-1993.json"],
+  merge_trims=True, desc_regex=r"\b[1-4]-bbl\b|\bTBI\b")
 
 # Third sources found in follow-up passes, matched to the model they cover.
 for fn, slug in (("third_source_found_cj.json", "cj"),):

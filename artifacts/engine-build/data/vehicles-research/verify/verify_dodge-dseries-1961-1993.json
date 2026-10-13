@@ -1,0 +1,4810 @@
+{
+ "vehicle": "dodge-dseries-1961-1993",
+ "notes": "Dodge half-ton D100/W100 (to mid-1977), D150/W150 (from mid-1977; D100 merged into D150 for 1980). 2WD D and 4WD W counted as one model. Ratings: gross through 1971, SAE net 1972+; 1970s-80s Dodge truck ratings vary with GVWR/emissions (light-duty vs heavy-duty vs California) - light-duty federal used where a source gives it; hp null where no rating was found. Independent source groups: Drivingline 1972-80 article (generation-level statements only), Dodge literature (all brochures = 1), Wikipedia (1), Flory McFarland book (1; Google Books snippets only - many rows visible without ratings), EPA (1984+), NHRA (1986, 1992, 1993 only), Curbside Classic (several articles = 1), Old Cars Weekly, The Autopian, Jalopnik, Mopar Connection Magazine, Consumer Guide. No Dodge pickup brochure online for 1961, 1965, 1968, 1969, 1972, 1973, 1984 (file is vans only), 1985, 1986, 1989, 1992; 1975 scan OCR unusable. Hagerty valuation pages now require login; allpar blocked. Exclusions: Cummins 5.9 turbodiesel (1989-93) was D/W250 and 350 only (Dodge 1990, 1991, 1993 brochures; Consumer Guide) - skipped. Ramcharger is a separate model (AD-platform sibling) - skipped. 1962 Perkins 6.354 diesel: Wikipedia and Curbside Classic call it a 1962 D-series option, but Dodge's 1963 brochure shows it only in PD/PC500-600 medium trucks and no half-ton source was found - not entered. 1964-66 413/426 High Performance Package was a factory option (~50 built). Warlock (1976-79) and Macho Power Wagon (1977-80) used the regular D/W150 engine list (Macho: 318 standard per the 1978 brochure, 360 optional) - no separate entries. Midnite Express (1978) is a dealer conversion.",
+ "years": {
+  "1961": [
+   {
+    "gen": "gen1",
+    "cid": 170,
+    "hp": 101,
+    "hp_basis": "gross",
+    "name": "2.8L / 170 Slant Six",
+    "rpo": "",
+    "common_name": "Slant Six 170",
+    "trims": [
+     "D100 (2WD) only"
+    ],
+    "nhra": false,
+    "sources": [
+     {
+      "name": "Curbside Classic - The Little Engines That Could, Part 2: How 170 Cubic Inches Of Dodge Rammed A Challenge By Volkswagen",
+      "url": "https://www.curbsideclassic.com/blog/brochure-capsule-the-little-engines-that-could-part-2/",
+      "says": "Starting in 1961 a 170 cu in slant six could be had in a half-ton pickup; limited to half-tons; 101 gross hp; by 1964 a zero-cost option as the 225 became standard; gone from pickups for 1966"
+     },
+     {
+      "name": "Wikipedia - Dodge D series (with Chrysler LA engine article; counted once)",
+      "url": "https://en.wikipedia.org/wiki/Dodge_D_series",
+      "says": "Gen-1 (1961-65) engine list: 170 cu in Slant-six I6, 225 Slant-six, 318 A V8"
+     }
+    ],
+    "independent_sources": 2,
+    "status": "two_sources_not_nhra",
+    "note": "Economy six for the half-ton only. CC: standard on half-tons at first, a no-cost option once the 225 became standard by 1964."
+   },
+   {
+    "gen": "gen1",
+    "cid": 225,
+    "hp": 140,
+    "hp_basis": "gross",
+    "name": "3.7L / 225 Slant Six",
+    "rpo": "",
+    "common_name": "Slant Six 225",
+    "trims": [
+     "D100",
+     "W100"
+    ],
+    "nhra": false,
+    "sources": [
+     {
+      "name": "Wikipedia - Dodge D series (with Chrysler LA engine article; counted once)",
+      "url": "https://en.wikipedia.org/wiki/Dodge_D_series",
+      "says": "Gen-1 engine list: 225 cu in Slant-six (base power plant)"
+     },
+     {
+      "name": "Curbside Classic - The Little Engines That Could, Part 2: How 170 Cubic Inches Of Dodge Rammed A Challenge By Volkswagen",
+      "url": "https://www.curbsideclassic.com/blog/brochure-capsule-the-little-engines-that-could-part-2/",
+      "says": "1961 saw the introduction of the 225 cu in slant six in Dodge trucks"
+     },
+     {
+      "name": "Curbside Classic - Truckstop Classic: 1967 Dodge D-200 Camper Special (P. Niedermeyer)",
+      "url": "https://curbsideclassic.com/curbside-classics-american/truckstop-classic-1967-dodge-d-200-camper-special-were-number-three-so-we-try-harder-dude/",
+      "says": "New D Series arrived in 1961; standard engine across the truck line was the 225 cu in slant six"
+     }
+    ],
+    "independent_sources": 2,
+    "status": "two_sources_not_nhra",
+    "note": "No 1961 Dodge truck brochure found online; Wikipedia and Curbside Classic (two CC articles, counted once) only."
+   },
+   {
+    "gen": "gen1",
+    "cid": 318,
+    "hp": 200,
+    "hp_basis": "gross",
+    "name": "5.2L / 318 V8 (poly A)",
+    "rpo": "",
+    "common_name": "Poly 318",
+    "trims": [
+     "D100",
+     "W100"
+    ],
+    "nhra": false,
+    "sources": [
+     {
+      "name": "Wikipedia - Dodge D series (with Chrysler LA engine article; counted once)",
+      "url": "https://en.wikipedia.org/wiki/Dodge_D_series",
+      "says": "Gen-1: 318 A (poly) V8 the smallest V8 option; replaced by LA-series engines in mid-1965"
+     },
+     {
+      "name": "Curbside Classic - Truckstop Classic: 1967 Dodge D-200 Camper Special (P. Niedermeyer)",
+      "url": "https://curbsideclassic.com/curbside-classics-american/truckstop-classic-1967-dodge-d-200-camper-special-were-number-three-so-we-try-harder-dude/",
+      "says": "Both 318s (poly and LA) were the most common truck V8s of the era"
+     }
+    ],
+    "independent_sources": 2,
+    "status": "two_sources_not_nhra",
+    "note": "No 1961 Dodge truck brochure online."
+   }
+  ],
+  "1962": [
+   {
+    "gen": "gen1",
+    "cid": 170,
+    "hp": 101,
+    "hp_basis": "gross",
+    "name": "2.8L / 170 Slant Six",
+    "rpo": "",
+    "common_name": "Slant Six 170",
+    "trims": [
+     "D100 (2WD) only"
+    ],
+    "nhra": false,
+    "sources": [
+     {
+      "name": "Dodge 1962 D-Series Trucks brochure",
+      "url": "https://oldcarbrochures.org/United%20States/Chrysler%20Trucks%20and%20Vans/1962-Trucks/1962%20Dodge%20D-Series%20Trucks/index.html",
+      "says": "170 cu in economy Slant Six available in D100 models; 170.2 cu in, gross hp 101 @ 4000"
+     },
+     {
+      "name": "Curbside Classic - The Little Engines That Could, Part 2: How 170 Cubic Inches Of Dodge Rammed A Challenge By Volkswagen",
+      "url": "https://www.curbsideclassic.com/blog/brochure-capsule-the-little-engines-that-could-part-2/",
+      "says": "Starting in 1961 a 170 cu in slant six could be had in a half-ton pickup; limited to half-tons; 101 gross hp; by 1964 a zero-cost option as the 225 became standard; gone from pickups for 1966"
+     },
+     {
+      "name": "Wikipedia - Dodge D series (with Chrysler LA engine article; counted once)",
+      "url": "https://en.wikipedia.org/wiki/Dodge_D_series",
+      "says": "Gen-1 (1961-65) engine list: 170 cu in Slant-six I6, 225 Slant-six, 318 A V8"
+     }
+    ],
+    "independent_sources": 3,
+    "status": "three_sources_not_nhra",
+    "note": "Economy six for the half-ton only. CC: standard on half-tons at first, a no-cost option once the 225 became standard by 1964."
+   },
+   {
+    "gen": "gen1",
+    "cid": 225,
+    "hp": 140,
+    "hp_basis": "gross",
+    "name": "3.7L / 225 Slant Six",
+    "rpo": "",
+    "common_name": "Slant Six 225",
+    "trims": [
+     "D100",
+     "W100"
+    ],
+    "nhra": false,
+    "sources": [
+     {
+      "name": "Wikipedia - Dodge D series (with Chrysler LA engine article; counted once)",
+      "url": "https://en.wikipedia.org/wiki/Dodge_D_series",
+      "says": "Gen-1 engine list: 225 cu in Slant-six (base power plant)"
+     },
+     {
+      "name": "Dodge 1962 D-Series Trucks brochure",
+      "url": "https://oldcarbrochures.org/United%20States/Chrysler%20Trucks%20and%20Vans/1962-Trucks/1962%20Dodge%20D-Series%20Trucks/index.html",
+      "says": "O.H.V. Six 225: 224.7 cu in, gross horsepower 140 @ 3900"
+     },
+     {
+      "name": "Jalopnik - 1962 Dodge D100 Pickup Truck (M. Martin, Apr 21 2008)",
+      "url": "https://www.jalopnik.com/1962-dodge-d100-pickup-truck-381729/",
+      "says": "Standard engine in these trucks ('62/'63) was the 225 Slant Six, 140 hp, 318 A engine optional"
+     },
+     {
+      "name": "Curbside Classic - CC Outtake: 1962-1964 Dodge D100 Pickup",
+      "url": "https://www.curbsideclassic.com/blog/cc-outtake/cc-outtake-1962-1964-dodge-d100-pickup-a-face-from-the-past/",
+      "says": "1962-64 D100: standard 225 slant six rated 140 gross hp; 200 hp 318 optional"
+     }
+    ],
+    "independent_sources": 4,
+    "status": "three_sources_not_nhra",
+    "note": ""
+   },
+   {
+    "gen": "gen1",
+    "cid": 318,
+    "hp": 200,
+    "hp_basis": "gross",
+    "name": "5.2L / 318 V8 (poly A)",
+    "rpo": "",
+    "common_name": "Poly 318",
+    "trims": [
+     "D100",
+     "W100"
+    ],
+    "nhra": false,
+    "sources": [
+     {
+      "name": "Wikipedia - Dodge D series (with Chrysler LA engine article; counted once)",
+      "url": "https://en.wikipedia.org/wiki/Dodge_D_series",
+      "says": "Gen-1: 318 A (poly) V8 the smallest V8 option; replaced by LA-series engines in mid-1965"
+     },
+     {
+      "name": "Dodge 1962 D-Series Trucks brochure",
+      "url": "https://oldcarbrochures.org/United%20States/Chrysler%20Trucks%20and%20Vans/1962-Trucks/1962%20Dodge%20D-Series%20Trucks/index.html",
+      "says": "O.H.V. V-8 318: 318.14 cu in, gross horsepower 200 @ 3900"
+     },
+     {
+      "name": "Jalopnik - 1962 Dodge D100 Pickup Truck (M. Martin, Apr 21 2008)",
+      "url": "https://www.jalopnik.com/1962-dodge-d100-pickup-truck-381729/",
+      "says": "318 A engine available for more power"
+     },
+     {
+      "name": "Curbside Classic - CC Outtake: 1962-1964 Dodge D100 Pickup",
+      "url": "https://www.curbsideclassic.com/blog/cc-outtake/cc-outtake-1962-1964-dodge-d100-pickup-a-face-from-the-past/",
+      "says": "200 hp 318 V8 optional"
+     }
+    ],
+    "independent_sources": 4,
+    "status": "three_sources_not_nhra",
+    "note": ""
+   }
+  ],
+  "1963": [
+   {
+    "gen": "gen1",
+    "cid": 170,
+    "hp": 101,
+    "hp_basis": "gross",
+    "name": "2.8L / 170 Slant Six",
+    "rpo": "",
+    "common_name": "Slant Six 170",
+    "trims": [
+     "D100 (2WD) only"
+    ],
+    "nhra": false,
+    "sources": [
+     {
+      "name": "Curbside Classic - The Little Engines That Could, Part 2: How 170 Cubic Inches Of Dodge Rammed A Challenge By Volkswagen",
+      "url": "https://www.curbsideclassic.com/blog/brochure-capsule-the-little-engines-that-could-part-2/",
+      "says": "Starting in 1961 a 170 cu in slant six could be had in a half-ton pickup; limited to half-tons; 101 gross hp; by 1964 a zero-cost option as the 225 became standard; gone from pickups for 1966"
+     },
+     {
+      "name": "Wikipedia - Dodge D series (with Chrysler LA engine article; counted once)",
+      "url": "https://en.wikipedia.org/wiki/Dodge_D_series",
+      "says": "Gen-1 (1961-65) engine list: 170 cu in Slant-six I6, 225 Slant-six, 318 A V8"
+     }
+    ],
+    "independent_sources": 2,
+    "status": "two_sources_not_nhra",
+    "note": "Economy six for the half-ton only. CC: standard on half-tons at first, a no-cost option once the 225 became standard by 1964. 1963 full-line brochure mentions the 170 only for P100/P200 forward-control models; half-ton availability rests on CC and Wikipedia."
+   },
+   {
+    "gen": "gen1",
+    "cid": 225,
+    "hp": 140,
+    "hp_basis": "gross",
+    "name": "3.7L / 225 Slant Six",
+    "rpo": "",
+    "common_name": "Slant Six 225",
+    "trims": [
+     "D100",
+     "W100"
+    ],
+    "nhra": false,
+    "sources": [
+     {
+      "name": "Wikipedia - Dodge D series (with Chrysler LA engine article; counted once)",
+      "url": "https://en.wikipedia.org/wiki/Dodge_D_series",
+      "says": "Gen-1 engine list: 225 cu in Slant-six (base power plant)"
+     },
+     {
+      "name": "Dodge 1963 Truck brochure (full line)",
+      "url": "https://oldcarbrochures.org/United%20States/Chrysler%20Trucks%20and%20Vans/1963_Trucks_and_Vans/1963_Dodge_Truck_Brochure/index.html",
+      "says": "Utiline/Sweptline pickups and W100: 140 hp Six, optional 200 hp V8"
+     },
+     {
+      "name": "Curbside Classic - CC Outtake: 1962-1964 Dodge D100 Pickup",
+      "url": "https://www.curbsideclassic.com/blog/cc-outtake/cc-outtake-1962-1964-dodge-d100-pickup-a-face-from-the-past/",
+      "says": "1962-64 D100: standard 225 slant six rated 140 gross hp"
+     },
+     {
+      "name": "Jalopnik - 1962 Dodge D100 Pickup Truck (M. Martin, Apr 21 2008)",
+      "url": "https://www.jalopnik.com/1962-dodge-d100-pickup-truck-381729/",
+      "says": "'62 or '63 D100: 225 Slant Six standard, 140 hp"
+     }
+    ],
+    "independent_sources": 4,
+    "status": "three_sources_not_nhra",
+    "note": ""
+   },
+   {
+    "gen": "gen1",
+    "cid": 318,
+    "hp": 200,
+    "hp_basis": "gross",
+    "name": "5.2L / 318 V8 (poly A)",
+    "rpo": "",
+    "common_name": "Poly 318",
+    "trims": [
+     "D100",
+     "W100"
+    ],
+    "nhra": false,
+    "sources": [
+     {
+      "name": "Wikipedia - Dodge D series (with Chrysler LA engine article; counted once)",
+      "url": "https://en.wikipedia.org/wiki/Dodge_D_series",
+      "says": "Gen-1: 318 A (poly) V8 the smallest V8 option; replaced by LA-series engines in mid-1965"
+     },
+     {
+      "name": "Dodge 1963 Truck brochure (full line)",
+      "url": "https://oldcarbrochures.org/United%20States/Chrysler%20Trucks%20and%20Vans/1963_Trucks_and_Vans/1963_Dodge_Truck_Brochure/index.html",
+      "says": "Optional 200 hp V8 (Utiline, W100 Sweptline)"
+     },
+     {
+      "name": "Curbside Classic - CC Outtake: 1962-1964 Dodge D100 Pickup",
+      "url": "https://www.curbsideclassic.com/blog/cc-outtake/cc-outtake-1962-1964-dodge-d100-pickup-a-face-from-the-past/",
+      "says": "200 hp 318 V8 optional"
+     },
+     {
+      "name": "Jalopnik - 1962 Dodge D100 Pickup Truck (M. Martin, Apr 21 2008)",
+      "url": "https://www.jalopnik.com/1962-dodge-d100-pickup-truck-381729/",
+      "says": "318 A engine optional"
+     }
+    ],
+    "independent_sources": 4,
+    "status": "three_sources_not_nhra",
+    "note": ""
+   }
+  ],
+  "1964": [
+   {
+    "gen": "gen1",
+    "cid": 170,
+    "hp": 101,
+    "hp_basis": "gross",
+    "name": "2.8L / 170 Slant Six",
+    "rpo": "",
+    "common_name": "Slant Six 170",
+    "trims": [
+     "D100 (2WD) only"
+    ],
+    "nhra": false,
+    "sources": [
+     {
+      "name": "Curbside Classic - The Little Engines That Could, Part 2: How 170 Cubic Inches Of Dodge Rammed A Challenge By Volkswagen",
+      "url": "https://www.curbsideclassic.com/blog/brochure-capsule-the-little-engines-that-could-part-2/",
+      "says": "Starting in 1961 a 170 cu in slant six could be had in a half-ton pickup; limited to half-tons; 101 gross hp; by 1964 a zero-cost option as the 225 became standard; gone from pickups for 1966"
+     },
+     {
+      "name": "Wikipedia - Dodge D series (with Chrysler LA engine article; counted once)",
+      "url": "https://en.wikipedia.org/wiki/Dodge_D_series",
+      "says": "Gen-1 (1961-65) engine list: 170 cu in Slant-six I6, 225 Slant-six, 318 A V8"
+     }
+    ],
+    "independent_sources": 2,
+    "status": "two_sources_not_nhra",
+    "note": "Economy six for the half-ton only. CC: standard on half-tons at first, a no-cost option once the 225 became standard by 1964."
+   },
+   {
+    "gen": "gen1",
+    "cid": 225,
+    "hp": 140,
+    "hp_basis": "gross",
+    "name": "3.7L / 225 Slant Six",
+    "rpo": "",
+    "common_name": "Slant Six 225",
+    "trims": [
+     "D100",
+     "W100"
+    ],
+    "nhra": false,
+    "sources": [
+     {
+      "name": "Wikipedia - Dodge D series (with Chrysler LA engine article; counted once)",
+      "url": "https://en.wikipedia.org/wiki/Dodge_D_series",
+      "says": "Gen-1 engine list: 225 cu in Slant-six (base power plant)"
+     },
+     {
+      "name": "Dodge 1964 Custom Sports Special folder (filed under 1965 on the site; slides named 1964)",
+      "url": "https://oldcarbrochures.org/United%20States/Chrysler%20Trucks%20and%20Vans/1965-Trucks-and-Vans/1965%20Dodge%20Custom%20Sports%20Special%20Folder/index.html",
+      "says": "Custom Sports Special: power from the 225 cu in Slant Six to the 426 V8"
+     },
+     {
+      "name": "Curbside Classic - CC Outtake: 1962-1964 Dodge D100 Pickup",
+      "url": "https://www.curbsideclassic.com/blog/cc-outtake/cc-outtake-1962-1964-dodge-d100-pickup-a-face-from-the-past/",
+      "says": "1962-64 D100: standard 225 slant six, 140 gross hp"
+     },
+     {
+      "name": "Old Cars Weekly - MoPar + Truck = Muscle (A. Van Bogart, Dec 19 2022)",
+      "url": "https://www.oldcarsweekly.com/features/mopar-truck-muscle",
+      "says": "If the CSS owner didn't order the HPP, the base 225-cid Slant Six was standard"
+     },
+     {
+      "name": "The Autopian - One Of The Rarest Classic Muscle Cars Is A Dodge Pickup Truck With A 426 V8 (M. Streeter, Mar 6 2025)",
+      "url": "https://www.theautopian.com/one-of-the-rarest-classic-muscle-cars-is-a-dodge-pickup-truck-with-a-426-v8/",
+      "says": "D100 CSS could be ordered with a 225 Slant Six making 140 HP"
+     }
+    ],
+    "independent_sources": 5,
+    "status": "three_sources_not_nhra",
+    "note": ""
+   },
+   {
+    "gen": "gen1",
+    "cid": 318,
+    "hp": 200,
+    "hp_basis": "gross",
+    "name": "5.2L / 318 V8 (poly A)",
+    "rpo": "",
+    "common_name": "Poly 318",
+    "trims": [
+     "D100",
+     "W100"
+    ],
+    "nhra": false,
+    "sources": [
+     {
+      "name": "Wikipedia - Dodge D series (with Chrysler LA engine article; counted once)",
+      "url": "https://en.wikipedia.org/wiki/Dodge_D_series",
+      "says": "Gen-1: 318 A (poly) V8 the smallest V8 option; replaced by LA-series engines in mid-1965"
+     },
+     {
+      "name": "Curbside Classic - CC Outtake: 1962-1964 Dodge D100 Pickup",
+      "url": "https://www.curbsideclassic.com/blog/cc-outtake/cc-outtake-1962-1964-dodge-d100-pickup-a-face-from-the-past/",
+      "says": "200 hp 318 V8 optional"
+     },
+     {
+      "name": "Old Cars Weekly - MoPar + Truck = Muscle (A. Van Bogart, Dec 19 2022)",
+      "url": "https://www.oldcarsweekly.com/features/mopar-truck-muscle",
+      "says": "318-cid V-8 optional (CSS without HPP)"
+     },
+     {
+      "name": "The Autopian - One Of The Rarest Classic Muscle Cars Is A Dodge Pickup Truck With A 426 V8 (M. Streeter, Mar 6 2025)",
+      "url": "https://www.theautopian.com/one-of-the-rarest-classic-muscle-cars-is-a-dodge-pickup-truck-with-a-426-v8/",
+      "says": "standard 202 HP 318 V8 (Motor Trend, April 1964, CSS test truck)"
+     }
+    ],
+    "independent_sources": 4,
+    "status": "three_sources_not_nhra",
+    "note": "Autopian/Motor Trend give 202 hp for a 1964 CSS; Dodge truck literature uses 200 hp (202 hp 'Premium' 318 in heavier W-series per 1966 4WD brochure)."
+   },
+   {
+    "gen": "gen1",
+    "cid": 413,
+    "hp": 360,
+    "hp_basis": "gross",
+    "name": "6.8L / 413 V8 (HPP)",
+    "rpo": "High Performance Package",
+    "common_name": "413 wedge",
+    "trims": [
+     "D100 122-in. wb",
+     "CSS or base"
+    ],
+    "nhra": false,
+    "sources": [
+     {
+      "name": "Wikipedia - Dodge D series (with Chrysler LA engine article; counted once)",
+      "url": "https://en.wikipedia.org/wiki/Dodge_D_series",
+      "says": "Optional high-performance package with the 413 wedge V8 for 1964 and 426 for 1965"
+     },
+     {
+      "name": "Old Cars Weekly - MoPar + Truck = Muscle (A. Van Bogart, Dec 19 2022)",
+      "url": "https://www.oldcarsweekly.com/features/mopar-truck-muscle",
+      "says": "For 1964 Dodge officially offered a 413-powered HPP on 122-in. D100/D200; four-barrel 413 offering 360 hp; soon after start of 1964 production replaced by 426"
+     },
+     {
+      "name": "The Autopian - One Of The Rarest Classic Muscle Cars Is A Dodge Pickup Truck With A 426 V8 (M. Streeter, Mar 6 2025)",
+      "url": "https://www.theautopian.com/one-of-the-rarest-classic-muscle-cars-is-a-dodge-pickup-truck-with-a-426-v8/",
+      "says": "413 Street Wedge four-barrel dual-exhaust V8 rated 360 HP, later replaced by a 365 HP 426 Wedge"
+     }
+    ],
+    "independent_sources": 3,
+    "status": "three_sources_not_nhra",
+    "note": "Early-1964 only. The Dodge 1964 CSS folder already lists the 426, not the 413."
+   },
+   {
+    "gen": "gen1",
+    "cid": 426,
+    "hp": 365,
+    "hp_basis": "gross",
+    "name": "7.0L / 426 Wedge V8 (HPP)",
+    "rpo": "High Performance Package",
+    "common_name": "426 Street Wedge",
+    "trims": [
+     "D100/D200 2WD only",
+     "Custom Sports Special or base"
+    ],
+    "nhra": false,
+    "sources": [
+     {
+      "name": "Wikipedia - Dodge D series (with Chrysler LA engine article; counted once)",
+      "url": "https://en.wikipedia.org/wiki/Dodge_D_series",
+      "says": "HPP: 413 for 1964 and 426 cu in (365 hp) for 1965; offered 1964 to early 1966"
+     },
+     {
+      "name": "Dodge 1964 Custom Sports Special folder (filed under 1965 on the site; slides named 1964)",
+      "url": "https://oldcarbrochures.org/United%20States/Chrysler%20Trucks%20and%20Vans/1965-Trucks-and-Vans/1965%20Dodge%20Custom%20Sports%20Special%20Folder/index.html",
+      "says": "426 cubic inch Dodge V8 developing 365 hp, available in D100 Sweptline or Utiline; automatic, rear axle struts, dual exhaust, tach mandatory"
+     },
+     {
+      "name": "Old Cars Weekly - MoPar + Truck = Muscle (A. Van Bogart, Dec 19 2022)",
+      "url": "https://www.oldcarsweekly.com/features/mopar-truck-muscle",
+      "says": "Soon after the start of 1964 production the 413 was replaced by the 426 Street Wedge of 365 hp"
+     },
+     {
+      "name": "The Autopian - One Of The Rarest Classic Muscle Cars Is A Dodge Pickup Truck With A 426 V8 (M. Streeter, Mar 6 2025)",
+      "url": "https://www.theautopian.com/one-of-the-rarest-classic-muscle-cars-is-a-dodge-pickup-truck-with-a-426-v8/",
+      "says": "413 replaced with a 365 HP 426 Wedge; HPP ~50 units in 1964-1965"
+     },
+     {
+      "name": "Curbside Classic - CC Outtake: 1962-1964 Dodge D100 Pickup",
+      "url": "https://www.curbsideclassic.com/blog/cc-outtake/cc-outtake-1962-1964-dodge-d100-pickup-a-face-from-the-past/",
+      "says": "CSS with a 365 hp 426 wedge"
+     }
+    ],
+    "independent_sources": 5,
+    "status": "three_sources_not_nhra",
+    "note": "Wikipedia says the 1964 HPP used the 413 and the 426 came for 1965; Dodge's 1964 CSS folder, OCW and Autopian say the 426 replaced the 413 early in 1964. Both recorded for 1964."
+   }
+  ],
+  "1965": [
+   {
+    "gen": "gen1",
+    "cid": 170,
+    "hp": 101,
+    "hp_basis": "gross",
+    "name": "2.8L / 170 Slant Six",
+    "rpo": "",
+    "common_name": "Slant Six 170",
+    "trims": [
+     "D100 (2WD) only"
+    ],
+    "nhra": false,
+    "sources": [
+     {
+      "name": "Curbside Classic - The Little Engines That Could, Part 2: How 170 Cubic Inches Of Dodge Rammed A Challenge By Volkswagen",
+      "url": "https://www.curbsideclassic.com/blog/brochure-capsule-the-little-engines-that-could-part-2/",
+      "says": "Starting in 1961 a 170 cu in slant six could be had in a half-ton pickup; limited to half-tons; 101 gross hp; by 1964 a zero-cost option as the 225 became standard; gone from pickups for 1966"
+     },
+     {
+      "name": "Wikipedia - Dodge D series (with Chrysler LA engine article; counted once)",
+      "url": "https://en.wikipedia.org/wiki/Dodge_D_series",
+      "says": "Gen-1 (1961-65) engine list: 170 cu in Slant-six I6, 225 Slant-six, 318 A V8"
+     }
+    ],
+    "independent_sources": 2,
+    "status": "two_sources_not_nhra",
+    "note": "Economy six for the half-ton only. CC: standard on half-tons at first, a no-cost option once the 225 became standard by 1964."
+   },
+   {
+    "gen": "gen1",
+    "cid": 225,
+    "hp": 140,
+    "hp_basis": "gross",
+    "name": "3.7L / 225 Slant Six",
+    "rpo": "",
+    "common_name": "Slant Six 225",
+    "trims": [
+     "D100",
+     "W100"
+    ],
+    "nhra": false,
+    "sources": [
+     {
+      "name": "Wikipedia - Dodge D series (with Chrysler LA engine article; counted once)",
+      "url": "https://en.wikipedia.org/wiki/Dodge_D_series",
+      "says": "Gen-1 engine list: 225 cu in Slant-six (base power plant)"
+     },
+     {
+      "name": "Old Cars Weekly - MoPar + Truck = Muscle (A. Van Bogart, Dec 19 2022)",
+      "url": "https://www.oldcarsweekly.com/features/mopar-truck-muscle",
+      "says": "CSS (1964-67): base 225-cid Slant Six standard, 318 optional"
+     },
+     {
+      "name": "The Autopian - One Of The Rarest Classic Muscle Cars Is A Dodge Pickup Truck With A 426 V8 (M. Streeter, Mar 6 2025)",
+      "url": "https://www.theautopian.com/one-of-the-rarest-classic-muscle-cars-is-a-dodge-pickup-truck-with-a-426-v8/",
+      "says": "CSS with 225 Slant Six making 140 HP"
+     }
+    ],
+    "independent_sources": 3,
+    "status": "three_sources_not_nhra",
+    "note": "No 1965 Dodge pickup brochure online; OCW/Autopian speak of the CSS 1964-67 generally."
+   },
+   {
+    "gen": "gen1",
+    "cid": 318,
+    "hp": 200,
+    "hp_basis": "gross",
+    "name": "5.2L / 318 V8 (A, then LA)",
+    "rpo": "",
+    "common_name": "318 (A, then LA)",
+    "trims": [
+     "D100",
+     "W100"
+    ],
+    "nhra": false,
+    "sources": [
+     {
+      "name": "Wikipedia - Dodge D series (with Chrysler LA engine article; counted once)",
+      "url": "https://en.wikipedia.org/wiki/Dodge_D_series",
+      "says": "Gen-1: 318 A (poly) V8 the smallest V8 option; replaced by LA-series engines in mid-1965"
+     },
+     {
+      "name": "Old Cars Weekly - MoPar + Truck = Muscle (A. Van Bogart, Dec 19 2022)",
+      "url": "https://www.oldcarsweekly.com/features/mopar-truck-muscle",
+      "says": "318-cid V-8 optional on CSS (1964-67)"
+     },
+     {
+      "name": "Curbside Classic - Truckstop Classic: 1967 Dodge D-200 Camper Special (P. Niedermeyer)",
+      "url": "https://curbsideclassic.com/curbside-classics-american/truckstop-classic-1967-dodge-d-200-camper-special-were-number-three-so-we-try-harder-dude/",
+      "says": "'the new-for-1967 LA 318, not the old poly 318'"
+     }
+    ],
+    "independent_sources": 3,
+    "status": "three_sources_not_nhra",
+    "note": "Mid-1965: poly A-318 replaced by LA-318 (Wikipedia). 200 hp taken from 1964/1966 literature; no 1965 brochure online."
+   },
+   {
+    "gen": "gen1",
+    "cid": 426,
+    "hp": 365,
+    "hp_basis": "gross",
+    "name": "7.0L / 426 Wedge V8 (HPP)",
+    "rpo": "High Performance Package",
+    "common_name": "426 Street Wedge",
+    "trims": [
+     "D100/D200 2WD only",
+     "Custom Sports Special or base"
+    ],
+    "nhra": false,
+    "sources": [
+     {
+      "name": "Wikipedia - Dodge D series (with Chrysler LA engine article; counted once)",
+      "url": "https://en.wikipedia.org/wiki/Dodge_D_series",
+      "says": "HPP: 413 for 1964 and 426 cu in (365 hp) for 1965; offered 1964 to early 1966"
+     },
+     {
+      "name": "Old Cars Weekly - MoPar + Truck = Muscle (A. Van Bogart, Dec 19 2022)",
+      "url": "https://www.oldcarsweekly.com/features/mopar-truck-muscle",
+      "says": "426 Street Wedge 365 hp; HPP discontinued after 1966"
+     },
+     {
+      "name": "The Autopian - One Of The Rarest Classic Muscle Cars Is A Dodge Pickup Truck With A 426 V8 (M. Streeter, Mar 6 2025)",
+      "url": "https://www.theautopian.com/one-of-the-rarest-classic-muscle-cars-is-a-dodge-pickup-truck-with-a-426-v8/",
+      "says": "426 Wedge 365 HP; HPP 1964-1965"
+     },
+     {
+      "name": "Curbside Classic - Truckstop Classic: 1967 Dodge D-200 Camper Special (P. Niedermeyer)",
+      "url": "https://curbsideclassic.com/curbside-classics-american/truckstop-classic-1967-dodge-d-200-camper-special-were-number-three-so-we-try-harder-dude/",
+      "says": "Even the 426 wedge with 365 horsepower was available"
+     }
+    ],
+    "independent_sources": 4,
+    "status": "three_sources_not_nhra",
+    "note": ""
+   }
+  ],
+  "1966": [
+   {
+    "gen": "gen1",
+    "cid": 225,
+    "hp": 140,
+    "hp_basis": "gross",
+    "name": "3.7L / 225 Slant Six",
+    "rpo": "",
+    "common_name": "Slant Six 225",
+    "trims": [
+     "D100",
+     "W100"
+    ],
+    "nhra": false,
+    "sources": [
+     {
+      "name": "Wikipedia - Dodge D series (with Chrysler LA engine article; counted once)",
+      "url": "https://en.wikipedia.org/wiki/Dodge_D_series",
+      "says": "Gen-1 engine list: 225 cu in Slant-six (base power plant)"
+     },
+     {
+      "name": "Dodge 1966 Pickups brochure",
+      "url": "https://oldcarbrochures.org/United%20States/Chrysler%20Trucks%20and%20Vans/1966-Trucks-and-Vans/1966-Dodge-Pickups-Brochure/index.html",
+      "says": "Standard 140 hp, 225 cu in Dodge Slant Six engine (D100 Sweptline/Utiline); spec table 140 HP, 225"
+     },
+     {
+      "name": "Dodge 1966 4-Wheel-Drive Trucks brochure",
+      "url": "https://oldcarbrochures.org/United%20States/Chrysler%20Trucks%20and%20Vans/1966-Trucks-and-Vans/1966-Dodge-4WD-Truck-Brochure/index.html",
+      "says": "W100: 225, 140 HP"
+     },
+     {
+      "name": "Old Cars Weekly - MoPar + Truck = Muscle (A. Van Bogart, Dec 19 2022)",
+      "url": "https://www.oldcarsweekly.com/features/mopar-truck-muscle",
+      "says": "CSS (1964-67): base 225 Slant Six"
+     }
+    ],
+    "independent_sources": 3,
+    "status": "three_sources_not_nhra",
+    "note": ""
+   },
+   {
+    "gen": "gen1",
+    "cid": 318,
+    "hp": 200,
+    "hp_basis": "gross",
+    "name": "5.2L / 318 V8 (LA)",
+    "rpo": "",
+    "common_name": "LA 318",
+    "trims": [
+     "D100",
+     "W100"
+    ],
+    "nhra": false,
+    "sources": [
+     {
+      "name": "Dodge 1966 Pickups brochure",
+      "url": "https://oldcarbrochures.org/United%20States/Chrysler%20Trucks%20and%20Vans/1966-Trucks-and-Vans/1966-Dodge-Pickups-Brochure/index.html",
+      "says": "Optional 200 HP 318 V8, 318.14 cu in, 200 @ 3900 RPM"
+     },
+     {
+      "name": "Dodge 1966 4-Wheel-Drive Trucks brochure",
+      "url": "https://oldcarbrochures.org/United%20States/Chrysler%20Trucks%20and%20Vans/1966-Trucks-and-Vans/1966-Dodge-4WD-Truck-Brochure/index.html",
+      "says": "W100: 318, 200 HP"
+     },
+     {
+      "name": "Wikipedia - Dodge D series (with Chrysler LA engine article; counted once)",
+      "url": "https://en.wikipedia.org/wiki/Dodge_D_series",
+      "says": "Mid-1965 A-series V8 replaced by LA series"
+     },
+     {
+      "name": "Old Cars Weekly - MoPar + Truck = Muscle (A. Van Bogart, Dec 19 2022)",
+      "url": "https://www.oldcarsweekly.com/features/mopar-truck-muscle",
+      "says": "318-cid V-8 optional on CSS (1964-67)"
+     }
+    ],
+    "independent_sources": 3,
+    "status": "three_sources_not_nhra",
+    "note": ""
+   },
+   {
+    "gen": "gen1",
+    "cid": 426,
+    "hp": 365,
+    "hp_basis": "gross",
+    "name": "7.0L / 426 Wedge V8 (HPP)",
+    "rpo": "High Performance Package",
+    "common_name": "426 Street Wedge",
+    "trims": [
+     "D100/D200 2WD only",
+     "Custom Sports Special or base"
+    ],
+    "nhra": false,
+    "sources": [
+     {
+      "name": "Wikipedia - Dodge D series (with Chrysler LA engine article; counted once)",
+      "url": "https://en.wikipedia.org/wiki/Dodge_D_series",
+      "says": "HPP: 413 for 1964 and 426 cu in (365 hp) for 1965; offered 1964 to early 1966"
+     },
+     {
+      "name": "Dodge 1966 Pickups brochure",
+      "url": "https://oldcarbrochures.org/United%20States/Chrysler%20Trucks%20and%20Vans/1966-Trucks-and-Vans/1966-Dodge-Pickups-Brochure/index.html",
+      "says": "Optional on D100, D200 models only, the Dodge 426 V8 that churns out 365 horsepower"
+     },
+     {
+      "name": "Old Cars Weekly - MoPar + Truck = Muscle (A. Van Bogart, Dec 19 2022)",
+      "url": "https://www.oldcarsweekly.com/features/mopar-truck-muscle",
+      "says": "HPP discontinued after 1966"
+     },
+     {
+      "name": "Curbside Classic - Truckstop Classic: 1967 Dodge D-200 Camper Special (P. Niedermeyer)",
+      "url": "https://curbsideclassic.com/curbside-classics-american/truckstop-classic-1967-dodge-d-200-camper-special-were-number-three-so-we-try-harder-dude/",
+      "says": "426 wedge with 365 hp was available"
+     }
+    ],
+    "independent_sources": 4,
+    "status": "three_sources_not_nhra",
+    "note": "Wikipedia: HPP offered only until early 1966. Autopian says HPP sold 1964-65 (~50 units)."
+   }
+  ],
+  "1967": [
+   {
+    "gen": "gen1",
+    "cid": 225,
+    "hp": 140,
+    "hp_basis": "gross",
+    "name": "3.7L / 225 Slant Six",
+    "rpo": "",
+    "common_name": "Slant Six 225",
+    "trims": [
+     "D100",
+     "W100"
+    ],
+    "nhra": false,
+    "sources": [
+     {
+      "name": "Wikipedia - Dodge D series (with Chrysler LA engine article; counted once)",
+      "url": "https://en.wikipedia.org/wiki/Dodge_D_series",
+      "says": "Gen-1 (1965-71) engine list incl. 225 Slant-6"
+     },
+     {
+      "name": "Dodge 1967 Pickups brochure",
+      "url": "https://oldcarbrochures.org/United%20States/Chrysler%20Trucks%20and%20Vans/1967-Trucks-and-Vans/1967-Dodge-Pickups-Brochure/index.html",
+      "says": "Standard 140-hp, 225-cu.-in. Dodge Slant Six (D100)"
+     },
+     {
+      "name": "Flory, American Light Trucks and Utility Vehicles 1967-1989 (McFarland 2019), Dodge chapter (Google Books snippet)",
+      "url": "https://books.google.com/books?id=Az-7DwAAQBAJ&pg=PA34",
+      "says": "1967 Dodge powertrain table (Slant Six engines listed; gross ratings)"
+     },
+     {
+      "name": "Curbside Classic - Truckstop Classic: 1967 Dodge D-200 Camper Special (P. Niedermeyer)",
+      "url": "https://curbsideclassic.com/curbside-classics-american/truckstop-classic-1967-dodge-d-200-camper-special-were-number-three-so-we-try-harder-dude/",
+      "says": "standard engine across the truck line was the 225 slant six"
+     }
+    ],
+    "independent_sources": 4,
+    "status": "three_sources_not_nhra",
+    "note": ""
+   },
+   {
+    "gen": "gen1",
+    "cid": 318,
+    "hp": 210,
+    "hp_basis": "gross",
+    "name": "5.2L / 318 V8 (LA)",
+    "rpo": "",
+    "common_name": "LA 318",
+    "trims": [
+     "D100",
+     "W100"
+    ],
+    "nhra": false,
+    "sources": [
+     {
+      "name": "Wikipedia - Dodge D series (with Chrysler LA engine article; counted once)",
+      "url": "https://en.wikipedia.org/wiki/Dodge_D_series",
+      "says": "Gen-1 (1965-71) engine list incl. 318 LA V8"
+     },
+     {
+      "name": "Dodge 1967 Pickups brochure",
+      "url": "https://oldcarbrochures.org/United%20States/Chrysler%20Trucks%20and%20Vans/1967-Trucks-and-Vans/1967-Dodge-Pickups-Brochure/index.html",
+      "says": "Optional 210-hp 318 V8 on all pickups; 210 @ 4000 RPM"
+     },
+     {
+      "name": "Curbside Classic - Truckstop Classic: 1967 Dodge D-200 Camper Special (P. Niedermeyer)",
+      "url": "https://curbsideclassic.com/curbside-classics-american/truckstop-classic-1967-dodge-d-200-camper-special-were-number-three-so-we-try-harder-dude/",
+      "says": "This Camper Special packs a 318, de-rated for truck duty to 210 (gross) hp; new-for-1967 LA 318"
+     }
+    ],
+    "independent_sources": 3,
+    "status": "three_sources_not_nhra",
+    "note": ""
+   },
+   {
+    "gen": "gen1",
+    "cid": 383,
+    "hp": 258,
+    "hp_basis": "gross",
+    "name": "6.3L / 383 V8 2-bbl",
+    "rpo": "",
+    "common_name": "383 B",
+    "trims": [
+     "D100 only (2WD)"
+    ],
+    "nhra": false,
+    "sources": [
+     {
+      "name": "Wikipedia - Dodge D series (with Chrysler LA engine article; counted once)",
+      "url": "https://en.wikipedia.org/wiki/Dodge_D_series",
+      "says": "In 1967 the D-series received big-block 383 2-barrel engines as a standard option"
+     },
+     {
+      "name": "Dodge 1967 Pickups brochure",
+      "url": "https://oldcarbrochures.org/United%20States/Chrysler%20Trucks%20and%20Vans/1967-Trucks-and-Vans/1967-Dodge-Pickups-Brochure/index.html",
+      "says": "Optional 258-hp 383 V8, optional on D100, D200, D300 (not listed for W100); 258 @ 4400"
+     },
+     {
+      "name": "Curbside Classic - Truckstop Classic: 1967 Dodge D-200 Camper Special (P. Niedermeyer)",
+      "url": "https://curbsideclassic.com/curbside-classics-american/truckstop-classic-1967-dodge-d-200-camper-special-were-number-three-so-we-try-harder-dude/",
+      "says": "in 1967 the 383 was also available"
+     },
+     {
+      "name": "Flory, American Light Trucks and Utility Vehicles 1967-1989 (McFarland 2019), Dodge chapter (Google Books snippet)",
+      "url": "https://books.google.com/books?id=Az-7DwAAQBAJ&pg=PA34",
+      "says": "1967 Dodge powertrain table (383 search hit)"
+     }
+    ],
+    "independent_sources": 4,
+    "status": "three_sources_not_nhra",
+    "note": "1967 brochure lists the 383 only for D100/D200/D300."
+   }
+  ],
+  "1968": [
+   {
+    "gen": "gen1",
+    "cid": 225,
+    "hp": 140,
+    "hp_basis": "gross",
+    "name": "3.7L / 225 Slant Six",
+    "rpo": "",
+    "common_name": "Slant Six 225",
+    "trims": [
+     "D100",
+     "W100"
+    ],
+    "nhra": false,
+    "sources": [
+     {
+      "name": "Wikipedia - Dodge D series (with Chrysler LA engine article; counted once)",
+      "url": "https://en.wikipedia.org/wiki/Dodge_D_series",
+      "says": "Gen-1 (1965-71) engine list incl. 225 Slant-6"
+     },
+     {
+      "name": "Flory, American Light Trucks and Utility Vehicles 1967-1989 (McFarland 2019), Dodge chapter (Google Books snippet)",
+      "url": "https://books.google.com/books?id=Az-7DwAAQBAJ&pg=PA82",
+      "says": "Slant Six 225 CID (3.7L), 1-bbl., 140 @ 3900 / 215 @ 1600 (gross), S on trucks"
+     }
+    ],
+    "independent_sources": 2,
+    "status": "two_sources_not_nhra",
+    "note": "No 1968 Dodge pickup brochure online."
+   },
+   {
+    "gen": "gen1",
+    "cid": 318,
+    "hp": 210,
+    "hp_basis": "gross",
+    "name": "5.2L / 318 V8 (LA)",
+    "rpo": "",
+    "common_name": "LA 318",
+    "trims": [
+     "D100",
+     "W100"
+    ],
+    "nhra": false,
+    "sources": [
+     {
+      "name": "Wikipedia - Dodge D series (with Chrysler LA engine article; counted once)",
+      "url": "https://en.wikipedia.org/wiki/Dodge_D_series",
+      "says": "Gen-1 (1965-71) engine list incl. 318 LA V8"
+     },
+     {
+      "name": "Flory, American Light Trucks and Utility Vehicles 1967-1989 (McFarland 2019), Dodge chapter (Google Books snippet)",
+      "url": "https://books.google.com/books?id=Az-7DwAAQBAJ&pg=PA82",
+      "says": "1968 Dodge powertrain table (318 CID V8 search hit; rating not visible in snippet)"
+     }
+    ],
+    "independent_sources": 2,
+    "status": "two_sources_not_nhra",
+    "note": "1968/1969: no brochure online; 210 hp from 1967 and 1970 literature."
+   },
+   {
+    "gen": "gen1",
+    "cid": 383,
+    "hp": 258,
+    "hp_basis": "gross",
+    "name": "6.3L / 383 V8 2-bbl",
+    "rpo": "",
+    "common_name": "383 B",
+    "trims": [
+     "D100",
+     "W100"
+    ],
+    "nhra": false,
+    "sources": [
+     {
+      "name": "Wikipedia - Dodge D series (with Chrysler LA engine article; counted once)",
+      "url": "https://en.wikipedia.org/wiki/Dodge_D_series",
+      "says": "In 1967 the D-series received big-block 383 2-barrel engines as a standard option"
+     },
+     {
+      "name": "Flory, American Light Trucks and Utility Vehicles 1967-1989 (McFarland 2019), Dodge chapter (Google Books snippet)",
+      "url": "https://books.google.com/books?id=Az-7DwAAQBAJ&pg=PA82",
+      "says": "1968 Dodge powertrain table (383 search hit; rating not visible in snippet)"
+     }
+    ],
+    "independent_sources": 2,
+    "status": "two_sources_not_nhra",
+    "note": "Only Wikipedia (from 1967 on) and a Flory search hit without the rating; no 1968 brochure online."
+   }
+  ],
+  "1969": [
+   {
+    "gen": "gen1",
+    "cid": 225,
+    "hp": 140,
+    "hp_basis": "gross",
+    "name": "3.7L / 225 Slant Six",
+    "rpo": "",
+    "common_name": "Slant Six 225",
+    "trims": [
+     "D100",
+     "W100"
+    ],
+    "nhra": false,
+    "sources": [
+     {
+      "name": "Wikipedia - Dodge D series (with Chrysler LA engine article; counted once)",
+      "url": "https://en.wikipedia.org/wiki/Dodge_D_series",
+      "says": "Gen-1 (1965-71) engine list incl. 225 Slant-6"
+     },
+     {
+      "name": "Flory, American Light Trucks and Utility Vehicles 1967-1989 (McFarland 2019), Dodge chapter (Google Books snippet)",
+      "url": "https://books.google.com/books?id=Az-7DwAAQBAJ&pg=PA131",
+      "says": "1969 Dodge powertrain table (gross ratings listed as net unavailable); 225 Slant Six listed"
+     }
+    ],
+    "independent_sources": 2,
+    "status": "two_sources_not_nhra",
+    "note": "No 1969 Dodge pickup brochure online; Flory snippet confirms the Slant Six 225 row but not the rating."
+   },
+   {
+    "gen": "gen1",
+    "cid": 318,
+    "hp": 210,
+    "hp_basis": "gross",
+    "name": "5.2L / 318 V8 (LA)",
+    "rpo": "",
+    "common_name": "LA 318",
+    "trims": [
+     "D100",
+     "W100"
+    ],
+    "nhra": false,
+    "sources": [
+     {
+      "name": "Wikipedia - Dodge D series (with Chrysler LA engine article; counted once)",
+      "url": "https://en.wikipedia.org/wiki/Dodge_D_series",
+      "says": "Gen-1 (1965-71) engine list incl. 318 LA V8"
+     },
+     {
+      "name": "Flory, American Light Trucks and Utility Vehicles 1967-1989 (McFarland 2019), Dodge chapter (Google Books snippet)",
+      "url": "https://books.google.com/books?id=Az-7DwAAQBAJ&pg=PA131",
+      "says": "1969 Dodge powertrain table, 318 CID (5.2L) row (rating not visible in snippet)"
+     }
+    ],
+    "independent_sources": 2,
+    "status": "two_sources_not_nhra",
+    "note": "1968/1969: no brochure online; 210 hp from 1967 and 1970 literature."
+   },
+   {
+    "gen": "gen1",
+    "cid": 383,
+    "hp": 258,
+    "hp_basis": "gross",
+    "name": "6.3L / 383 V8 2-bbl",
+    "rpo": "",
+    "common_name": "383 B",
+    "trims": [
+     "D100",
+     "W100"
+    ],
+    "nhra": false,
+    "sources": [
+     {
+      "name": "Wikipedia - Dodge D series (with Chrysler LA engine article; counted once)",
+      "url": "https://en.wikipedia.org/wiki/Dodge_D_series",
+      "says": "In 1967 the D-series received big-block 383 2-barrel engines as a standard option"
+     },
+     {
+      "name": "Flory, American Light Trucks and Utility Vehicles 1967-1989 (McFarland 2019), Dodge chapter (Google Books snippet)",
+      "url": "https://books.google.com/books?id=Az-7DwAAQBAJ&pg=PA131",
+      "says": "383 CID (6.3L), 2-bbl., V8 258 @ 4400 / 375 @ 2800 (gross)"
+     }
+    ],
+    "independent_sources": 2,
+    "status": "two_sources_not_nhra",
+    "note": "No 1969 brochure online."
+   }
+  ],
+  "1970": [
+   {
+    "gen": "gen1",
+    "cid": 225,
+    "hp": 140,
+    "hp_basis": "gross",
+    "name": "3.7L / 225 Slant Six",
+    "rpo": "",
+    "common_name": "Slant Six 225",
+    "trims": [
+     "D100",
+     "W100"
+    ],
+    "nhra": false,
+    "sources": [
+     {
+      "name": "Wikipedia - Dodge D series (with Chrysler LA engine article; counted once)",
+      "url": "https://en.wikipedia.org/wiki/Dodge_D_series",
+      "says": "Gen-1 (1965-71) engine list incl. 225 Slant-6"
+     },
+     {
+      "name": "Dodge 1970 Pickups and Stakes brochure",
+      "url": "https://oldcarbrochures.org/United%20States/Chrysler%20Trucks%20and%20Vans/1970-Trucks-and-Vans/1970-Dodge-Pickups-and-Stakes-Brochure/index.html",
+      "says": "Pickups' standard engines the 225 Slant Six and the 318 V8; 140 horsepower from 225 cubic inches"
+     },
+     {
+      "name": "Flory, American Light Trucks and Utility Vehicles 1967-1989 (McFarland 2019), Dodge chapter (Google Books snippet)",
+      "url": "https://books.google.com/books?id=Az-7DwAAQBAJ&pg=PA179",
+      "says": "Slant Six 225 CID (3.7L) listed, D100/D200/D300 columns"
+     }
+    ],
+    "independent_sources": 3,
+    "status": "three_sources_not_nhra",
+    "note": ""
+   },
+   {
+    "gen": "gen1",
+    "cid": 318,
+    "hp": 210,
+    "hp_basis": "gross",
+    "name": "5.2L / 318 V8 (LA)",
+    "rpo": "",
+    "common_name": "LA 318",
+    "trims": [
+     "D100",
+     "W100"
+    ],
+    "nhra": false,
+    "sources": [
+     {
+      "name": "Wikipedia - Dodge D series (with Chrysler LA engine article; counted once)",
+      "url": "https://en.wikipedia.org/wiki/Dodge_D_series",
+      "says": "Gen-1 (1965-71) engine list incl. 318 LA V8"
+     },
+     {
+      "name": "Dodge 1970 Pickups and Stakes brochure",
+      "url": "https://oldcarbrochures.org/United%20States/Chrysler%20Trucks%20and%20Vans/1970-Trucks-and-Vans/1970-Dodge-Pickups-and-Stakes-Brochure/index.html",
+      "says": "A 210-horsepower V8 that is standard on V8 models; spec table 210-HP 318"
+     },
+     {
+      "name": "Flory, American Light Trucks and Utility Vehicles 1967-1989 (McFarland 2019), Dodge chapter (Google Books snippet)",
+      "url": "https://books.google.com/books?id=Az-7DwAAQBAJ&pg=PA179",
+      "says": "318 CID (5.2L), 2-bbl., 210 @ 4000 / 318 @ 2800 (gross)"
+     }
+    ],
+    "independent_sources": 3,
+    "status": "three_sources_not_nhra",
+    "note": ""
+   },
+   {
+    "gen": "gen1",
+    "cid": 383,
+    "hp": 258,
+    "hp_basis": "gross",
+    "name": "6.3L / 383 V8 2-bbl",
+    "rpo": "",
+    "common_name": "383 B",
+    "trims": [
+     "D100",
+     "W100"
+    ],
+    "nhra": false,
+    "sources": [
+     {
+      "name": "Wikipedia - Dodge D series (with Chrysler LA engine article; counted once)",
+      "url": "https://en.wikipedia.org/wiki/Dodge_D_series",
+      "says": "In 1967 the D-series received big-block 383 2-barrel engines as a standard option"
+     },
+     {
+      "name": "Dodge 1970 Pickups and Stakes brochure",
+      "url": "https://oldcarbrochures.org/United%20States/Chrysler%20Trucks%20and%20Vans/1970-Trucks-and-Vans/1970-Dodge-Pickups-and-Stakes-Brochure/index.html",
+      "says": "383 V8 for additional power in D100/D200/D300 and W100/W200 models; 258-hp V8 engine option"
+     },
+     {
+      "name": "Flory, American Light Trucks and Utility Vehicles 1967-1989 (McFarland 2019), Dodge chapter (Google Books snippet)",
+      "url": "https://books.google.com/books?id=Az-7DwAAQBAJ&pg=PA179",
+      "says": "383 CID (6.3L), 2-bbl., V8 258 @ 4400 / 375 @ 2800 (gross)"
+     }
+    ],
+    "independent_sources": 3,
+    "status": "three_sources_not_nhra",
+    "note": ""
+   }
+  ],
+  "1971": [
+   {
+    "gen": "gen1",
+    "cid": 225,
+    "hp": 140,
+    "hp_basis": "gross",
+    "name": "3.7L / 225 Slant Six",
+    "rpo": "",
+    "common_name": "Slant Six 225",
+    "trims": [
+     "D100",
+     "W100"
+    ],
+    "nhra": false,
+    "sources": [
+     {
+      "name": "Wikipedia - Dodge D series (with Chrysler LA engine article; counted once)",
+      "url": "https://en.wikipedia.org/wiki/Dodge_D_series",
+      "says": "Gen-1 (1965-71) engine list incl. 225 Slant-6"
+     },
+     {
+      "name": "Dodge 1971 Light Duty Trucks brochure",
+      "url": "https://oldcarbrochures.org/United%20States/Chrysler%20Trucks%20and%20Vans/1971-Trucks-and-Vans/1971-Dodge-Light-Duty-Trucks-Brochure/index.html",
+      "says": "225 Slant Six standard on most light-duty pickups; 140 hp"
+     },
+     {
+      "name": "Flory, American Light Trucks and Utility Vehicles 1967-1989 (McFarland 2019), Dodge chapter (Google Books snippet)",
+      "url": "https://books.google.com/books?id=Az-7DwAAQBAJ&pg=PA229",
+      "says": "1971 Dodge: 225 standard except Sweptline Special"
+     }
+    ],
+    "independent_sources": 3,
+    "status": "three_sources_not_nhra",
+    "note": ""
+   },
+   {
+    "gen": "gen1",
+    "cid": 318,
+    "hp": 210,
+    "hp_basis": "gross",
+    "name": "5.2L / 318 V8 (LA)",
+    "rpo": "",
+    "common_name": "LA 318",
+    "trims": [
+     "D100",
+     "W100"
+    ],
+    "nhra": false,
+    "sources": [
+     {
+      "name": "Wikipedia - Dodge D series (with Chrysler LA engine article; counted once)",
+      "url": "https://en.wikipedia.org/wiki/Dodge_D_series",
+      "says": "Gen-1 (1965-71) engine list incl. 318 LA V8"
+     },
+     {
+      "name": "Dodge 1971 Light Duty Trucks brochure",
+      "url": "https://oldcarbrochures.org/United%20States/Chrysler%20Trucks%20and%20Vans/1971-Trucks-and-Vans/1971-Dodge-Light-Duty-Trucks-Brochure/index.html",
+      "says": "318 V8, a 210-horsepower standard V8 on V8 models"
+     },
+     {
+      "name": "Flory, American Light Trucks and Utility Vehicles 1967-1989 (McFarland 2019), Dodge chapter (Google Books snippet)",
+      "url": "https://books.google.com/books?id=Az-7DwAAQBAJ&pg=PA229",
+      "says": "318 CID V8 example VIN for a 1971 D-100 Sweptline"
+     }
+    ],
+    "independent_sources": 3,
+    "status": "three_sources_not_nhra",
+    "note": ""
+   },
+   {
+    "gen": "gen1",
+    "cid": 383,
+    "hp": 258,
+    "hp_basis": "gross",
+    "name": "6.3L / 383 V8 2-bbl",
+    "rpo": "",
+    "common_name": "383 B",
+    "trims": [
+     "D100",
+     "W100"
+    ],
+    "nhra": false,
+    "sources": [
+     {
+      "name": "Wikipedia - Dodge D series (with Chrysler LA engine article; counted once)",
+      "url": "https://en.wikipedia.org/wiki/Dodge_D_series",
+      "says": "In 1967 the D-series received big-block 383 2-barrel engines as a standard option"
+     },
+     {
+      "name": "Dodge 1971 Light Duty Trucks brochure",
+      "url": "https://oldcarbrochures.org/United%20States/Chrysler%20Trucks%20and%20Vans/1971-Trucks-and-Vans/1971-Dodge-Light-Duty-Trucks-Brochure/index.html",
+      "says": "383 cubic inch V8 offered as an extra-cost option; 258-hp 383-cu.-in. V8"
+     },
+     {
+      "name": "Flory, American Light Trucks and Utility Vehicles 1967-1989 (McFarland 2019), Dodge chapter (Google Books snippet)",
+      "url": "https://books.google.com/books?id=Az-7DwAAQBAJ&pg=PA230",
+      "says": "383 CID (6.3L), 2-bbl., V8 258 @ 4400 / 375 @ 2800, D100/D200/D300 columns"
+     }
+    ],
+    "independent_sources": 3,
+    "status": "three_sources_not_nhra",
+    "note": ""
+   },
+   {
+    "gen": "gen1",
+    "cid": 198,
+    "hp": 120,
+    "hp_basis": "gross",
+    "name": "3.2L / 198 Slant Six",
+    "rpo": "",
+    "common_name": "Slant Six 198",
+    "trims": [
+     "D100 Sweptline Special only"
+    ],
+    "nhra": false,
+    "sources": [
+     {
+      "name": "Dodge 1971 Light Duty Trucks brochure",
+      "url": "https://oldcarbrochures.org/United%20States/Chrysler%20Trucks%20and%20Vans/1971-Trucks-and-Vans/1971-Dodge-Light-Duty-Trucks-Brochure/index.html",
+      "says": "Sweptline Special: rugged 198-cubic-inch Six engine and manual 3-speed; 120-hp, 198-cu.-in. Dodge Slant engine (Sweptline Special)"
+     },
+     {
+      "name": "Flory, American Light Trucks and Utility Vehicles 1967-1989 (McFarland 2019), Dodge chapter (Google Books snippet)",
+      "url": "https://books.google.com/books?id=Az-7DwAAQBAJ&pg=PA229",
+      "says": "Sweptline Special at a minimum price, including the 198 CID 6-cylinder engine and three-speed manual as the sole powertrain"
+     }
+    ],
+    "independent_sources": 2,
+    "status": "two_sources_not_nhra",
+    "note": "Wikipedia's D-series article does not list the 198. Flory's 1970 table (p.179) shows a Slant Six 198 CID 120 @ 4000 row, but the visible column is Sportsman (van); the 1970 Dodge pickup brochure does not list it, so no 1970 entry."
+   }
+  ],
+  "1972": [
+   {
+    "gen": "gen2",
+    "cid": 225,
+    "hp": 110,
+    "hp_basis": "net",
+    "name": "3.7L / 225 Slant Six",
+    "rpo": "",
+    "common_name": "Slant Six 225",
+    "trims": [
+     "D100/D150",
+     "W100/W150"
+    ],
+    "nhra": false,
+    "sources": [
+     {
+      "name": "Wikipedia - Dodge D series (with Chrysler LA engine article; counted once)",
+      "url": "https://en.wikipedia.org/wiki/Dodge_D_series",
+      "says": "Gen-2 (1972-80) engine list: 225 Slant-6"
+     },
+     {
+      "name": "Drivingline - Uncommon Haulers: 1972-1980 Dodge D-Series Pickup Trucks (B. Hunting, Apr 20 2019)",
+      "url": "https://www.drivingline.com/articles/uncommon-haulers-1972-1980-dodge-d-series-pickup-trucks/",
+      "says": "1972-1980 D-series: the Chrysler slant six in 225 ci form (generation-level statement)"
+     },
+     {
+      "name": "Flory, American Light Trucks and Utility Vehicles 1967-1989 (McFarland 2019), Dodge chapter (Google Books snippet)",
+      "url": "https://books.google.com/books?id=Az-7DwAAQBAJ&pg=PA284",
+      "says": "1972 Dodge D100/D200/D300 powertrain table, Slant Six 225 row (rating not visible in snippet)"
+     }
+    ],
+    "independent_sources": 3,
+    "status": "three_sources_not_nhra",
+    "note": "Rating from Flory's 1973 table; 1972 figure not seen."
+   },
+   {
+    "gen": "gen2",
+    "cid": 318,
+    "hp": 150,
+    "hp_basis": "net",
+    "name": "5.2L / 318 V8",
+    "rpo": "",
+    "common_name": "LA 318",
+    "trims": [
+     "D100/D150",
+     "W100/W150"
+    ],
+    "nhra": false,
+    "sources": [
+     {
+      "name": "Wikipedia - Dodge D series (with Chrysler LA engine article; counted once)",
+      "url": "https://en.wikipedia.org/wiki/Dodge_D_series",
+      "says": "Gen-2 engine list: 318 LA V8"
+     },
+     {
+      "name": "Drivingline - Uncommon Haulers: 1972-1980 Dodge D-Series Pickup Trucks (B. Hunting, Apr 20 2019)",
+      "url": "https://www.drivingline.com/articles/uncommon-haulers-1972-1980-dodge-d-series-pickup-trucks/",
+      "says": "1972-1980: a 160hp 318 CID V8 one of the most common drivetrains (generation-level; 160 hp differs from Dodge/Flory 150)"
+     },
+     {
+      "name": "Flory, American Light Trucks and Utility Vehicles 1967-1989 (McFarland 2019), Dodge chapter (Google Books snippet)",
+      "url": "https://books.google.com/books?id=Az-7DwAAQBAJ&pg=PA284",
+      "says": "318 CID (5.2L), 2-bbl., 150 @ 4000 / 245 @ 1600 (net), D100/D200/D300 table"
+     }
+    ],
+    "independent_sources": 3,
+    "status": "three_sources_not_nhra",
+    "note": ""
+   },
+   {
+    "gen": "gen2",
+    "cid": 360,
+    "hp": 180,
+    "hp_basis": "net",
+    "name": "5.9L / 360 V8 2-bbl",
+    "rpo": "",
+    "common_name": "LA 360",
+    "trims": [
+     "D100/D150",
+     "W100/W150"
+    ],
+    "nhra": false,
+    "sources": [
+     {
+      "name": "Wikipedia - Dodge D series (with Chrysler LA engine article; counted once)",
+      "url": "https://en.wikipedia.org/wiki/Dodge_D_series",
+      "says": "Gen-2 engine list: 360 LA V8"
+     },
+     {
+      "name": "Drivingline - Uncommon Haulers: 1972-1980 Dodge D-Series Pickup Trucks (B. Hunting, Apr 20 2019)",
+      "url": "https://www.drivingline.com/articles/uncommon-haulers-1972-1980-dodge-d-series-pickup-trucks/",
+      "says": "1972-1980: a 360 CID V8 good for 180hp among the most common drivetrains (generation-level)"
+     },
+     {
+      "name": "Flory, American Light Trucks and Utility Vehicles 1967-1989 (McFarland 2019), Dodge chapter (Google Books snippet)",
+      "url": "https://books.google.com/books?id=Az-7DwAAQBAJ&pg=PA285",
+      "says": "360 CID (5.9L), 2-bbl., 180 @ 4000 / 295 @ 2400, code F, D100/D200/D300 columns"
+     }
+    ],
+    "independent_sources": 3,
+    "status": "three_sources_not_nhra",
+    "note": ""
+   },
+   {
+    "gen": "gen2",
+    "cid": 400,
+    "hp": 200,
+    "hp_basis": "net",
+    "name": "6.6L / 400 V8 2-bbl",
+    "rpo": "",
+    "common_name": "400 B",
+    "trims": [
+     "D100/D150",
+     "W100/W150"
+    ],
+    "nhra": false,
+    "sources": [
+     {
+      "name": "Wikipedia - Dodge D series (with Chrysler LA engine article; counted once)",
+      "url": "https://en.wikipedia.org/wiki/Dodge_D_series",
+      "says": "Gen-2 engine list: 400 B V8; 440 replaced the 400 for 1974, 400 available again for 1976; 400 and 440 dropped for 1979"
+     },
+     {
+      "name": "Drivingline - Uncommon Haulers: 1972-1980 Dodge D-Series Pickup Trucks (B. Hunting, Apr 20 2019)",
+      "url": "https://www.drivingline.com/articles/uncommon-haulers-1972-1980-dodge-d-series-pickup-trucks/",
+      "says": "1972-1980: Dodge also offered optional 400 ci (200hp) engines (generation-level)"
+     },
+     {
+      "name": "Flory, American Light Trucks and Utility Vehicles 1967-1989 (McFarland 2019), Dodge chapter (Google Books snippet)",
+      "url": "https://books.google.com/books?id=Az-7DwAAQBAJ&pg=PA285",
+      "says": "400 CID (6.6L), 2-bbl., V8 200 @ 4000 / 320 @ 2400, code J (footnote 7)"
+     }
+    ],
+    "independent_sources": 3,
+    "status": "three_sources_not_nhra",
+    "note": ""
+   }
+  ],
+  "1973": [
+   {
+    "gen": "gen2",
+    "cid": 225,
+    "hp": 110,
+    "hp_basis": "net",
+    "name": "3.7L / 225 Slant Six",
+    "rpo": "",
+    "common_name": "Slant Six 225",
+    "trims": [
+     "D100/D150",
+     "W100/W150"
+    ],
+    "nhra": false,
+    "sources": [
+     {
+      "name": "Wikipedia - Dodge D series (with Chrysler LA engine article; counted once)",
+      "url": "https://en.wikipedia.org/wiki/Dodge_D_series",
+      "says": "Gen-2 (1972-80) engine list: 225 Slant-6"
+     },
+     {
+      "name": "Drivingline - Uncommon Haulers: 1972-1980 Dodge D-Series Pickup Trucks (B. Hunting, Apr 20 2019)",
+      "url": "https://www.drivingline.com/articles/uncommon-haulers-1972-1980-dodge-d-series-pickup-trucks/",
+      "says": "1972-1980 D-series: the Chrysler slant six in 225 ci form (generation-level statement)"
+     },
+     {
+      "name": "Flory, American Light Trucks and Utility Vehicles 1967-1989 (McFarland 2019), Dodge chapter (Google Books snippet)",
+      "url": "https://books.google.com/books?id=Az-7DwAAQBAJ&pg=PA341",
+      "says": "Slant Six 225 CID (3.7L), 1-bbl., 110 @ 4000 / 185 @ 2000, S (standard) in D100/D200/D300 columns"
+     }
+    ],
+    "independent_sources": 3,
+    "status": "three_sources_not_nhra",
+    "note": "No 1973 Dodge pickup brochure online."
+   },
+   {
+    "gen": "gen2",
+    "cid": 318,
+    "hp": 150,
+    "hp_basis": "net",
+    "name": "5.2L / 318 V8",
+    "rpo": "",
+    "common_name": "LA 318",
+    "trims": [
+     "D100/D150",
+     "W100/W150"
+    ],
+    "nhra": false,
+    "sources": [
+     {
+      "name": "Wikipedia - Dodge D series (with Chrysler LA engine article; counted once)",
+      "url": "https://en.wikipedia.org/wiki/Dodge_D_series",
+      "says": "Gen-2 engine list: 318 LA V8"
+     },
+     {
+      "name": "Drivingline - Uncommon Haulers: 1972-1980 Dodge D-Series Pickup Trucks (B. Hunting, Apr 20 2019)",
+      "url": "https://www.drivingline.com/articles/uncommon-haulers-1972-1980-dodge-d-series-pickup-trucks/",
+      "says": "1972-1980: a 160hp 318 CID V8 one of the most common drivetrains (generation-level; 160 hp differs from Dodge/Flory 150)"
+     },
+     {
+      "name": "Flory, American Light Trucks and Utility Vehicles 1967-1989 (McFarland 2019), Dodge chapter (Google Books snippet)",
+      "url": "https://books.google.com/books?id=Az-7DwAAQBAJ&pg=PA341",
+      "says": "1973 Dodge powertrain table, 318 CID (5.2L) row (rating not visible)"
+     }
+    ],
+    "independent_sources": 3,
+    "status": "three_sources_not_nhra",
+    "note": "150 hp carried from the 1972 and 1976-1979 figures; not seen for this year."
+   },
+   {
+    "gen": "gen2",
+    "cid": 360,
+    "hp": 180,
+    "hp_basis": "net",
+    "name": "5.9L / 360 V8 2-bbl",
+    "rpo": "",
+    "common_name": "LA 360",
+    "trims": [
+     "D100/D150",
+     "W100/W150"
+    ],
+    "nhra": false,
+    "sources": [
+     {
+      "name": "Wikipedia - Dodge D series (with Chrysler LA engine article; counted once)",
+      "url": "https://en.wikipedia.org/wiki/Dodge_D_series",
+      "says": "Gen-2 engine list: 360 LA V8"
+     },
+     {
+      "name": "Drivingline - Uncommon Haulers: 1972-1980 Dodge D-Series Pickup Trucks (B. Hunting, Apr 20 2019)",
+      "url": "https://www.drivingline.com/articles/uncommon-haulers-1972-1980-dodge-d-series-pickup-trucks/",
+      "says": "1972-1980: a 360 CID V8 good for 180hp among the most common drivetrains (generation-level)"
+     },
+     {
+      "name": "Flory, American Light Trucks and Utility Vehicles 1967-1989 (McFarland 2019), Dodge chapter (Google Books snippet)",
+      "url": "https://books.google.com/books?id=Az-7DwAAQBAJ&pg=PA341",
+      "says": "360 CID (5.9L), 2-bbl., V8 180 @ 4000 / 295 @ 2400, code F"
+     }
+    ],
+    "independent_sources": 3,
+    "status": "three_sources_not_nhra",
+    "note": ""
+   },
+   {
+    "gen": "gen2",
+    "cid": 400,
+    "hp": 200,
+    "hp_basis": "net",
+    "name": "6.6L / 400 V8 2-bbl",
+    "rpo": "",
+    "common_name": "400 B",
+    "trims": [
+     "D100/D150",
+     "W100/W150"
+    ],
+    "nhra": false,
+    "sources": [
+     {
+      "name": "Wikipedia - Dodge D series (with Chrysler LA engine article; counted once)",
+      "url": "https://en.wikipedia.org/wiki/Dodge_D_series",
+      "says": "Gen-2 engine list: 400 B V8; 440 replaced the 400 for 1974, 400 available again for 1976; 400 and 440 dropped for 1979"
+     },
+     {
+      "name": "Drivingline - Uncommon Haulers: 1972-1980 Dodge D-Series Pickup Trucks (B. Hunting, Apr 20 2019)",
+      "url": "https://www.drivingline.com/articles/uncommon-haulers-1972-1980-dodge-d-series-pickup-trucks/",
+      "says": "1972-1980: Dodge also offered optional 400 ci (200hp) engines (generation-level)"
+     },
+     {
+      "name": "Flory, American Light Trucks and Utility Vehicles 1967-1989 (McFarland 2019), Dodge chapter (Google Books snippet)",
+      "url": "https://books.google.com/books?id=Az-7DwAAQBAJ&pg=PA341",
+      "says": "400 CID (6.6L), 2-bbl., V8 200 @ 4000 / 320 @ 2400, code J"
+     }
+    ],
+    "independent_sources": 3,
+    "status": "three_sources_not_nhra",
+    "note": ""
+   }
+  ],
+  "1974": [
+   {
+    "gen": "gen2",
+    "cid": 225,
+    "hp": null,
+    "hp_basis": "net",
+    "name": "3.7L / 225 Slant Six",
+    "rpo": "",
+    "common_name": "Slant Six 225",
+    "trims": [
+     "D100/D150",
+     "W100/W150"
+    ],
+    "nhra": false,
+    "sources": [
+     {
+      "name": "Wikipedia - Dodge D series (with Chrysler LA engine article; counted once)",
+      "url": "https://en.wikipedia.org/wiki/Dodge_D_series",
+      "says": "Gen-2 (1972-80) engine list: 225 Slant-6"
+     },
+     {
+      "name": "Drivingline - Uncommon Haulers: 1972-1980 Dodge D-Series Pickup Trucks (B. Hunting, Apr 20 2019)",
+      "url": "https://www.drivingline.com/articles/uncommon-haulers-1972-1980-dodge-d-series-pickup-trucks/",
+      "says": "1972-1980 D-series: the Chrysler slant six in 225 ci form (generation-level statement)"
+     },
+     {
+      "name": "Dodge 1974 Power Wagons foldout",
+      "url": "https://oldcarbrochures.org/United%20States/Chrysler%20Trucks%20and%20Vans/1974-Trucks-and-Vans/1974%20Dodge%20Power%20Wagons%20Foldout/index.html",
+      "says": "W100: 225 and 318 listed (axle ratios 3.9/3.55 for 225, 318)"
+     },
+     {
+      "name": "Flory, American Light Trucks and Utility Vehicles 1967-1989 (McFarland 2019), Dodge chapter (Google Books snippet)",
+      "url": "https://books.google.com/books?id=Az-7DwAAQBAJ&pg=PA397",
+      "says": "1974 Dodge D100/D200/D300 powertrain table (225 search hit)"
+     }
+    ],
+    "independent_sources": 4,
+    "status": "three_sources_not_nhra",
+    "note": "Net rating for 1974 not found."
+   },
+   {
+    "gen": "gen2",
+    "cid": 318,
+    "hp": 150,
+    "hp_basis": "net",
+    "name": "5.2L / 318 V8",
+    "rpo": "",
+    "common_name": "LA 318",
+    "trims": [
+     "D100/D150",
+     "W100/W150"
+    ],
+    "nhra": false,
+    "sources": [
+     {
+      "name": "Wikipedia - Dodge D series (with Chrysler LA engine article; counted once)",
+      "url": "https://en.wikipedia.org/wiki/Dodge_D_series",
+      "says": "Gen-2 engine list: 318 LA V8"
+     },
+     {
+      "name": "Drivingline - Uncommon Haulers: 1972-1980 Dodge D-Series Pickup Trucks (B. Hunting, Apr 20 2019)",
+      "url": "https://www.drivingline.com/articles/uncommon-haulers-1972-1980-dodge-d-series-pickup-trucks/",
+      "says": "1972-1980: a 160hp 318 CID V8 one of the most common drivetrains (generation-level; 160 hp differs from Dodge/Flory 150)"
+     },
+     {
+      "name": "Dodge 1974 Power Wagons foldout",
+      "url": "https://oldcarbrochures.org/United%20States/Chrysler%20Trucks%20and%20Vans/1974-Trucks-and-Vans/1974%20Dodge%20Power%20Wagons%20Foldout/index.html",
+      "says": "W100: 225, 318 listed"
+     },
+     {
+      "name": "Flory, American Light Trucks and Utility Vehicles 1967-1989 (McFarland 2019), Dodge chapter (Google Books snippet)",
+      "url": "https://books.google.com/books?id=Az-7DwAAQBAJ&pg=PA397",
+      "says": "VIN example: 1974 Dodge D-100 Sweptline with a 318 CID V8"
+     }
+    ],
+    "independent_sources": 4,
+    "status": "three_sources_not_nhra",
+    "note": "150 hp carried from the 1972 and 1976-1979 figures; not seen for this year."
+   },
+   {
+    "gen": "gen2",
+    "cid": 360,
+    "hp": 180,
+    "hp_basis": "net",
+    "name": "5.9L / 360 V8 2-bbl",
+    "rpo": "",
+    "common_name": "LA 360",
+    "trims": [
+     "D100/D150",
+     "W100/W150"
+    ],
+    "nhra": false,
+    "sources": [
+     {
+      "name": "Wikipedia - Dodge D series (with Chrysler LA engine article; counted once)",
+      "url": "https://en.wikipedia.org/wiki/Dodge_D_series",
+      "says": "Gen-2 engine list: 360 LA V8"
+     },
+     {
+      "name": "Drivingline - Uncommon Haulers: 1972-1980 Dodge D-Series Pickup Trucks (B. Hunting, Apr 20 2019)",
+      "url": "https://www.drivingline.com/articles/uncommon-haulers-1972-1980-dodge-d-series-pickup-trucks/",
+      "says": "1972-1980: a 360 CID V8 good for 180hp among the most common drivetrains (generation-level)"
+     },
+     {
+      "name": "Dodge 1974 Power Wagons foldout",
+      "url": "https://oldcarbrochures.org/United%20States/Chrysler%20Trucks%20and%20Vans/1974-Trucks-and-Vans/1974%20Dodge%20Power%20Wagons%20Foldout/index.html",
+      "says": "360 listed (W200; W100 column shows 225/318)"
+     },
+     {
+      "name": "Flory, American Light Trucks and Utility Vehicles 1967-1989 (McFarland 2019), Dodge chapter (Google Books snippet)",
+      "url": "https://books.google.com/books?id=Az-7DwAAQBAJ&pg=PA398",
+      "says": "360 CID (5.9L), 2-bbl., V8 180 @ 4000 / 295 @ 2400, code F, D100/D200/D300 table"
+     }
+    ],
+    "independent_sources": 4,
+    "status": "three_sources_not_nhra",
+    "note": "1974 W100 spec column shows only 225/318; 360 confirmed for D100 via Flory."
+   },
+   {
+    "gen": "gen2",
+    "cid": 400,
+    "hp": null,
+    "hp_basis": "net",
+    "name": "6.6L / 400 V8 2-bbl",
+    "rpo": "",
+    "common_name": "400 B",
+    "trims": [
+     "D100/D150",
+     "W100/W150"
+    ],
+    "nhra": false,
+    "sources": [
+     {
+      "name": "Wikipedia - Dodge D series (with Chrysler LA engine article; counted once)",
+      "url": "https://en.wikipedia.org/wiki/Dodge_D_series",
+      "says": "Gen-2 engine list: 400 B V8; 440 replaced the 400 for 1974, 400 available again for 1976; 400 and 440 dropped for 1979"
+     },
+     {
+      "name": "Drivingline - Uncommon Haulers: 1972-1980 Dodge D-Series Pickup Trucks (B. Hunting, Apr 20 2019)",
+      "url": "https://www.drivingline.com/articles/uncommon-haulers-1972-1980-dodge-d-series-pickup-trucks/",
+      "says": "1972-1980: Dodge also offered optional 400 ci (200hp) engines (generation-level)"
+     },
+     {
+      "name": "Flory, American Light Trucks and Utility Vehicles 1967-1989 (McFarland 2019), Dodge chapter (Google Books snippet)",
+      "url": "https://books.google.com/books?id=Az-7DwAAQBAJ&pg=PA398",
+      "says": "400 CID (6.6L), 2-bbl. row in the 1974 D100/D200/D300 table"
+     }
+    ],
+    "independent_sources": 3,
+    "status": "disputed",
+    "note": "Wikipedia says the 440 replaced the 400 for 1974, but Flory's 1974 Dodge table still lists a 400 2-bbl."
+   },
+   {
+    "gen": "gen2",
+    "cid": 440,
+    "hp": null,
+    "hp_basis": "net",
+    "name": "7.2L / 440 V8 4-bbl",
+    "rpo": "",
+    "common_name": "440 RB",
+    "trims": [
+     "D100/D150",
+     "W100/W150 (4WD from 1975)"
+    ],
+    "nhra": false,
+    "sources": [
+     {
+      "name": "Wikipedia - Dodge D series (with Chrysler LA engine article; counted once)",
+      "url": "https://en.wikipedia.org/wiki/Dodge_D_series",
+      "says": "440 replaced the 400 as an option for 1974; 1975: 440 became optional for 4WD; 1979: 440 dropped"
+     },
+     {
+      "name": "Drivingline - Uncommon Haulers: 1972-1980 Dodge D-Series Pickup Trucks (B. Hunting, Apr 20 2019)",
+      "url": "https://www.drivingline.com/articles/uncommon-haulers-1972-1980-dodge-d-series-pickup-trucks/",
+      "says": "1972-1980: optional 440 ci (255hp) engine, often in the special-edition trucks (generation-level; 255 hp is not a factory net truck figure)"
+     },
+     {
+      "name": "Flory, American Light Trucks and Utility Vehicles 1967-1989 (McFarland 2019), Dodge chapter (Google Books snippet)",
+      "url": "https://books.google.com/books?id=Az-7DwAAQBAJ&pg=PA398",
+      "says": "1974 D100/D200/D300 table (440 search hit)"
+     }
+    ],
+    "independent_sources": 3,
+    "status": "three_sources_not_nhra",
+    "note": "Rating not found for this year."
+   }
+  ],
+  "1975": [
+   {
+    "gen": "gen2",
+    "cid": 225,
+    "hp": null,
+    "hp_basis": "net",
+    "name": "3.7L / 225 Slant Six",
+    "rpo": "",
+    "common_name": "Slant Six 225",
+    "trims": [
+     "D100/D150",
+     "W100/W150"
+    ],
+    "nhra": false,
+    "sources": [
+     {
+      "name": "Wikipedia - Dodge D series (with Chrysler LA engine article; counted once)",
+      "url": "https://en.wikipedia.org/wiki/Dodge_D_series",
+      "says": "Gen-2 (1972-80) engine list: 225 Slant-6"
+     },
+     {
+      "name": "Drivingline - Uncommon Haulers: 1972-1980 Dodge D-Series Pickup Trucks (B. Hunting, Apr 20 2019)",
+      "url": "https://www.drivingline.com/articles/uncommon-haulers-1972-1980-dodge-d-series-pickup-trucks/",
+      "says": "1972-1980 D-series: the Chrysler slant six in 225 ci form (generation-level statement)"
+     },
+     {
+      "name": "Flory, American Light Trucks and Utility Vehicles 1967-1989 (McFarland 2019), Dodge chapter (Google Books snippet)",
+      "url": "https://books.google.com/books?id=Az-7DwAAQBAJ&pg=PA457",
+      "says": "1975 Dodge D100 powertrain table (Slant Six 225 search hit; rating not visible)"
+     }
+    ],
+    "independent_sources": 3,
+    "status": "three_sources_not_nhra",
+    "note": "No 1975 rating found; the 1975 Dodge Pickups brochure scan OCR'd poorly."
+   },
+   {
+    "gen": "gen2",
+    "cid": 318,
+    "hp": 150,
+    "hp_basis": "net",
+    "name": "5.2L / 318 V8",
+    "rpo": "",
+    "common_name": "LA 318",
+    "trims": [
+     "D100/D150",
+     "W100/W150"
+    ],
+    "nhra": false,
+    "sources": [
+     {
+      "name": "Wikipedia - Dodge D series (with Chrysler LA engine article; counted once)",
+      "url": "https://en.wikipedia.org/wiki/Dodge_D_series",
+      "says": "Gen-2 engine list: 318 LA V8"
+     },
+     {
+      "name": "Drivingline - Uncommon Haulers: 1972-1980 Dodge D-Series Pickup Trucks (B. Hunting, Apr 20 2019)",
+      "url": "https://www.drivingline.com/articles/uncommon-haulers-1972-1980-dodge-d-series-pickup-trucks/",
+      "says": "1972-1980: a 160hp 318 CID V8 one of the most common drivetrains (generation-level; 160 hp differs from Dodge/Flory 150)"
+     },
+     {
+      "name": "Flory, American Light Trucks and Utility Vehicles 1967-1989 (McFarland 2019), Dodge chapter (Google Books snippet)",
+      "url": "https://books.google.com/books?id=Az-7DwAAQBAJ&pg=PA457",
+      "says": "VIN example: 1975 Dodge D-100 Sweptline, 318 CID V8 engine"
+     }
+    ],
+    "independent_sources": 3,
+    "status": "three_sources_not_nhra",
+    "note": "150 hp carried from the 1972 and 1976-1979 figures; not seen for this year."
+   },
+   {
+    "gen": "gen2",
+    "cid": 360,
+    "hp": null,
+    "hp_basis": "net",
+    "name": "5.9L / 360 V8",
+    "rpo": "",
+    "common_name": "LA 360",
+    "trims": [
+     "D100/D150",
+     "W100/W150"
+    ],
+    "nhra": false,
+    "sources": [
+     {
+      "name": "Wikipedia - Dodge D series (with Chrysler LA engine article; counted once)",
+      "url": "https://en.wikipedia.org/wiki/Dodge_D_series",
+      "says": "Gen-2 engine list: 360 LA V8"
+     },
+     {
+      "name": "Drivingline - Uncommon Haulers: 1972-1980 Dodge D-Series Pickup Trucks (B. Hunting, Apr 20 2019)",
+      "url": "https://www.drivingline.com/articles/uncommon-haulers-1972-1980-dodge-d-series-pickup-trucks/",
+      "says": "1972-1980: a 360 CID V8 good for 180hp among the most common drivetrains (generation-level)"
+     },
+     {
+      "name": "Flory, American Light Trucks and Utility Vehicles 1967-1989 (McFarland 2019), Dodge chapter (Google Books snippet)",
+      "url": "https://books.google.com/books?id=Az-7DwAAQBAJ&pg=PA457",
+      "says": "1975 Dodge D100 powertrain table (360 search hit; rating not visible)"
+     }
+    ],
+    "independent_sources": 3,
+    "status": "three_sources_not_nhra",
+    "note": "Rating not found for this year."
+   },
+   {
+    "gen": "gen2",
+    "cid": 440,
+    "hp": null,
+    "hp_basis": "net",
+    "name": "7.2L / 440 V8 4-bbl",
+    "rpo": "",
+    "common_name": "440 RB",
+    "trims": [
+     "D100/D150",
+     "W100/W150 (4WD from 1975)"
+    ],
+    "nhra": false,
+    "sources": [
+     {
+      "name": "Wikipedia - Dodge D series (with Chrysler LA engine article; counted once)",
+      "url": "https://en.wikipedia.org/wiki/Dodge_D_series",
+      "says": "440 replaced the 400 as an option for 1974; 1975: 440 became optional for 4WD; 1979: 440 dropped"
+     },
+     {
+      "name": "Drivingline - Uncommon Haulers: 1972-1980 Dodge D-Series Pickup Trucks (B. Hunting, Apr 20 2019)",
+      "url": "https://www.drivingline.com/articles/uncommon-haulers-1972-1980-dodge-d-series-pickup-trucks/",
+      "says": "1972-1980: optional 440 ci (255hp) engine, often in the special-edition trucks (generation-level; 255 hp is not a factory net truck figure)"
+     },
+     {
+      "name": "Flory, American Light Trucks and Utility Vehicles 1967-1989 (McFarland 2019), Dodge chapter (Google Books snippet)",
+      "url": "https://books.google.com/books?id=Az-7DwAAQBAJ&pg=PA457",
+      "says": "1975 D100 table (440 search hit)"
+     }
+    ],
+    "independent_sources": 3,
+    "status": "three_sources_not_nhra",
+    "note": "Rating not found for this year."
+   },
+   {
+    "gen": "gen2",
+    "cid": 400,
+    "hp": null,
+    "hp_basis": "net",
+    "name": "6.6L / 400 V8",
+    "rpo": "",
+    "common_name": "400 B",
+    "trims": [
+     "D100",
+     "W100"
+    ],
+    "nhra": false,
+    "sources": [
+     {
+      "name": "Wikipedia - Dodge D series (with Chrysler LA engine article; counted once)",
+      "url": "https://en.wikipedia.org/wiki/Dodge_D_series",
+      "says": "440 replaced the 400 for 1974; 400 available again for 1976"
+     }
+    ],
+    "independent_sources": 1,
+    "status": "excluded_not_produced",
+    "note": "Entered only to mark a gap: no source shows a 400 in 1975 half-tons; Wikipedia implies none."
+   }
+  ],
+  "1976": [
+   {
+    "gen": "gen2",
+    "cid": 225,
+    "hp": null,
+    "hp_basis": "net",
+    "name": "3.7L / 225 Slant Six",
+    "rpo": "",
+    "common_name": "Slant Six 225",
+    "trims": [
+     "D100/D150",
+     "W100/W150"
+    ],
+    "nhra": false,
+    "sources": [
+     {
+      "name": "Wikipedia - Dodge D series (with Chrysler LA engine article; counted once)",
+      "url": "https://en.wikipedia.org/wiki/Dodge_D_series",
+      "says": "Gen-2 (1972-80) engine list: 225 Slant-6"
+     },
+     {
+      "name": "Drivingline - Uncommon Haulers: 1972-1980 Dodge D-Series Pickup Trucks (B. Hunting, Apr 20 2019)",
+      "url": "https://www.drivingline.com/articles/uncommon-haulers-1972-1980-dodge-d-series-pickup-trucks/",
+      "says": "1972-1980 D-series: the Chrysler slant six in 225 ci form (generation-level statement)"
+     },
+     {
+      "name": "Dodge 1976 Pickups brochure",
+      "url": "https://oldcarbrochures.org/United%20States/Chrysler%20Trucks%20and%20Vans/1976-Trucks-and-Vans/1976-Dodge-Pickups-Brochure/index.html",
+      "says": "225 Slant Six and 318 V8 are standard power plants for D100, D200, D300, W100, W200 pickups"
+     }
+    ],
+    "independent_sources": 3,
+    "status": "three_sources_not_nhra",
+    "note": "Net rating for 1976 not found (Flory's 1976 Plymouth truck table: 105 @ 3600)."
+   },
+   {
+    "gen": "gen2",
+    "cid": 318,
+    "hp": 150,
+    "hp_basis": "net",
+    "name": "5.2L / 318 V8",
+    "rpo": "",
+    "common_name": "LA 318",
+    "trims": [
+     "D100/D150",
+     "W100/W150"
+    ],
+    "nhra": false,
+    "sources": [
+     {
+      "name": "Wikipedia - Dodge D series (with Chrysler LA engine article; counted once)",
+      "url": "https://en.wikipedia.org/wiki/Dodge_D_series",
+      "says": "Gen-2 engine list: 318 LA V8"
+     },
+     {
+      "name": "Drivingline - Uncommon Haulers: 1972-1980 Dodge D-Series Pickup Trucks (B. Hunting, Apr 20 2019)",
+      "url": "https://www.drivingline.com/articles/uncommon-haulers-1972-1980-dodge-d-series-pickup-trucks/",
+      "says": "1972-1980: a 160hp 318 CID V8 one of the most common drivetrains (generation-level; 160 hp differs from Dodge/Flory 150)"
+     },
+     {
+      "name": "Dodge 1976 Pickups brochure",
+      "url": "https://oldcarbrochures.org/United%20States/Chrysler%20Trucks%20and%20Vans/1976-Trucks-and-Vans/1976-Dodge-Pickups-Brochure/index.html",
+      "says": "225 Slant Six and Dodge 318 V8 standard power plants for D100/W100"
+     },
+     {
+      "name": "Flory, American Light Trucks and Utility Vehicles 1967-1989 (McFarland 2019), Dodge chapter (Google Books snippet)",
+      "url": "https://books.google.com/books?id=Az-7DwAAQBAJ&pg=PA517",
+      "says": "318 CID (5.2L), 2-bbl., V8 150 @ 4000 / 255 @ 2000, code E"
+     }
+    ],
+    "independent_sources": 4,
+    "status": "three_sources_not_nhra",
+    "note": ""
+   },
+   {
+    "gen": "gen2",
+    "cid": 360,
+    "hp": null,
+    "hp_basis": "net",
+    "name": "5.9L / 360 V8",
+    "rpo": "",
+    "common_name": "LA 360",
+    "trims": [
+     "D100/D150",
+     "W100/W150"
+    ],
+    "nhra": false,
+    "sources": [
+     {
+      "name": "Wikipedia - Dodge D series (with Chrysler LA engine article; counted once)",
+      "url": "https://en.wikipedia.org/wiki/Dodge_D_series",
+      "says": "Gen-2 engine list: 360 LA V8"
+     },
+     {
+      "name": "Drivingline - Uncommon Haulers: 1972-1980 Dodge D-Series Pickup Trucks (B. Hunting, Apr 20 2019)",
+      "url": "https://www.drivingline.com/articles/uncommon-haulers-1972-1980-dodge-d-series-pickup-trucks/",
+      "says": "1972-1980: a 360 CID V8 good for 180hp among the most common drivetrains (generation-level)"
+     },
+     {
+      "name": "Dodge 1976 Pickups brochure",
+      "url": "https://oldcarbrochures.org/United%20States/Chrysler%20Trucks%20and%20Vans/1976-Trucks-and-Vans/1976-Dodge-Pickups-Brochure/index.html",
+      "says": "Optional choices include the 360-, 400- and 440-cubic-inch V8s; W100 spec column lists 318-1, 360"
+     },
+     {
+      "name": "Flory, American Light Trucks and Utility Vehicles 1967-1989 (McFarland 2019), Dodge chapter (Google Books snippet)",
+      "url": "https://books.google.com/books?id=Az-7DwAAQBAJ&pg=PA517",
+      "says": "1976 Dodge table: 360 CID (5.9L) row"
+     }
+    ],
+    "independent_sources": 4,
+    "status": "three_sources_not_nhra",
+    "note": "Rating not found for this year."
+   },
+   {
+    "gen": "gen2",
+    "cid": 400,
+    "hp": null,
+    "hp_basis": "net",
+    "name": "6.6L / 400 V8",
+    "rpo": "",
+    "common_name": "400 B",
+    "trims": [
+     "D100/D150",
+     "W100/W150"
+    ],
+    "nhra": false,
+    "sources": [
+     {
+      "name": "Wikipedia - Dodge D series (with Chrysler LA engine article; counted once)",
+      "url": "https://en.wikipedia.org/wiki/Dodge_D_series",
+      "says": "Gen-2 engine list: 400 B V8; 440 replaced the 400 for 1974, 400 available again for 1976; 400 and 440 dropped for 1979"
+     },
+     {
+      "name": "Drivingline - Uncommon Haulers: 1972-1980 Dodge D-Series Pickup Trucks (B. Hunting, Apr 20 2019)",
+      "url": "https://www.drivingline.com/articles/uncommon-haulers-1972-1980-dodge-d-series-pickup-trucks/",
+      "says": "1972-1980: Dodge also offered optional 400 ci (200hp) engines (generation-level)"
+     },
+     {
+      "name": "Dodge 1976 Pickups brochure",
+      "url": "https://oldcarbrochures.org/United%20States/Chrysler%20Trucks%20and%20Vans/1976-Trucks-and-Vans/1976-Dodge-Pickups-Brochure/index.html",
+      "says": "Optional 360-, 400- and 440-cubic-inch V8s; spec table lists 400"
+     },
+     {
+      "name": "Flory, American Light Trucks and Utility Vehicles 1967-1989 (McFarland 2019), Dodge chapter (Google Books snippet)",
+      "url": "https://books.google.com/books?id=Az-7DwAAQBAJ&pg=PA517",
+      "says": "400 CID (6.6L) row, 1976 table"
+     }
+    ],
+    "independent_sources": 4,
+    "status": "three_sources_not_nhra",
+    "note": "Rating not found."
+   },
+   {
+    "gen": "gen2",
+    "cid": 440,
+    "hp": null,
+    "hp_basis": "net",
+    "name": "7.2L / 440 V8 4-bbl",
+    "rpo": "",
+    "common_name": "440 RB",
+    "trims": [
+     "D100/D150",
+     "W100/W150 (4WD from 1975)"
+    ],
+    "nhra": false,
+    "sources": [
+     {
+      "name": "Wikipedia - Dodge D series (with Chrysler LA engine article; counted once)",
+      "url": "https://en.wikipedia.org/wiki/Dodge_D_series",
+      "says": "440 replaced the 400 as an option for 1974; 1975: 440 became optional for 4WD; 1979: 440 dropped"
+     },
+     {
+      "name": "Drivingline - Uncommon Haulers: 1972-1980 Dodge D-Series Pickup Trucks (B. Hunting, Apr 20 2019)",
+      "url": "https://www.drivingline.com/articles/uncommon-haulers-1972-1980-dodge-d-series-pickup-trucks/",
+      "says": "1972-1980: optional 440 ci (255hp) engine, often in the special-edition trucks (generation-level; 255 hp is not a factory net truck figure)"
+     },
+     {
+      "name": "Dodge 1976 Pickups brochure",
+      "url": "https://oldcarbrochures.org/United%20States/Chrysler%20Trucks%20and%20Vans/1976-Trucks-and-Vans/1976-Dodge-Pickups-Brochure/index.html",
+      "says": "Optional 360-, 400- and 440-cubic-inch V8s; D200 column lists 440"
+     },
+     {
+      "name": "Flory, American Light Trucks and Utility Vehicles 1967-1989 (McFarland 2019), Dodge chapter (Google Books snippet)",
+      "url": "https://books.google.com/books?id=Az-7DwAAQBAJ&pg=PA517",
+      "says": "440 row, 1976 table ($493 option)"
+     }
+    ],
+    "independent_sources": 4,
+    "status": "three_sources_not_nhra",
+    "note": "Rating not found for this year."
+   }
+  ],
+  "1977": [
+   {
+    "gen": "gen2",
+    "cid": 225,
+    "hp": 105,
+    "hp_basis": "net",
+    "name": "3.7L / 225 Slant Six",
+    "rpo": "",
+    "common_name": "Super Slant Six 225",
+    "trims": [
+     "D100/D150",
+     "W100/W150"
+    ],
+    "nhra": false,
+    "sources": [
+     {
+      "name": "Wikipedia - Dodge D series (with Chrysler LA engine article; counted once)",
+      "url": "https://en.wikipedia.org/wiki/Dodge_D_series",
+      "says": "Gen-2 (1972-80) engine list: 225 Slant-6"
+     },
+     {
+      "name": "Drivingline - Uncommon Haulers: 1972-1980 Dodge D-Series Pickup Trucks (B. Hunting, Apr 20 2019)",
+      "url": "https://www.drivingline.com/articles/uncommon-haulers-1972-1980-dodge-d-series-pickup-trucks/",
+      "says": "1972-1980 D-series: the Chrysler slant six in 225 ci form (generation-level statement)"
+     },
+     {
+      "name": "Dodge 1977 Pickups brochure",
+      "url": "https://oldcarbrochures.org/United%20States/Chrysler%20Trucks%20and%20Vans/1977_Trucks-Vans/1977_Dodge_Pickups/index.html",
+      "says": "225 Six standard; new 225 Slant Six (2-bbl) for 6,100-lb GVW D100/W100 and all 200/300 models"
+     },
+     {
+      "name": "Flory, American Light Trucks and Utility Vehicles 1967-1989 (McFarland 2019), Dodge chapter (Google Books snippet)",
+      "url": "https://books.google.com/books?id=Az-7DwAAQBAJ&pg=PA574",
+      "says": "Slant Six 225 1-bbl., 105 @ 3600 / 175 @ 2000, standard, D100 column"
+     }
+    ],
+    "independent_sources": 4,
+    "status": "three_sources_not_nhra",
+    "note": "1977: 1-bbl 225 in D100 up to 6,000 lb GVW; 2-bbl 'Super Slant Six' in 6,100-lb D100/W100 (became D150/W150 mid-year)."
+   },
+   {
+    "gen": "gen2",
+    "cid": 318,
+    "hp": 150,
+    "hp_basis": "net",
+    "name": "5.2L / 318 V8",
+    "rpo": "",
+    "common_name": "LA 318",
+    "trims": [
+     "D100/D150",
+     "W100/W150"
+    ],
+    "nhra": false,
+    "sources": [
+     {
+      "name": "Wikipedia - Dodge D series (with Chrysler LA engine article; counted once)",
+      "url": "https://en.wikipedia.org/wiki/Dodge_D_series",
+      "says": "Gen-2 engine list: 318 LA V8"
+     },
+     {
+      "name": "Drivingline - Uncommon Haulers: 1972-1980 Dodge D-Series Pickup Trucks (B. Hunting, Apr 20 2019)",
+      "url": "https://www.drivingline.com/articles/uncommon-haulers-1972-1980-dodge-d-series-pickup-trucks/",
+      "says": "1972-1980: a 160hp 318 CID V8 one of the most common drivetrains (generation-level; 160 hp differs from Dodge/Flory 150)"
+     },
+     {
+      "name": "Dodge 1977 Pickups brochure",
+      "url": "https://oldcarbrochures.org/United%20States/Chrysler%20Trucks%20and%20Vans/1977_Trucks-Vans/1977_Dodge_Pickups/index.html",
+      "says": "Husky 318 V8 also standard"
+     },
+     {
+      "name": "Flory, American Light Trucks and Utility Vehicles 1967-1989 (McFarland 2019), Dodge chapter (Google Books snippet)",
+      "url": "https://books.google.com/books?id=Az-7DwAAQBAJ&pg=PA575",
+      "says": "318 CID (5.2L), 2-bbl., V8 150 @ 4000 / 255 @ 2000, code E, D100 column"
+     }
+    ],
+    "independent_sources": 4,
+    "status": "three_sources_not_nhra",
+    "note": ""
+   },
+   {
+    "gen": "gen2",
+    "cid": 360,
+    "hp": null,
+    "hp_basis": "net",
+    "name": "5.9L / 360 V8",
+    "rpo": "",
+    "common_name": "LA 360",
+    "trims": [
+     "D100/D150",
+     "W100/W150"
+    ],
+    "nhra": false,
+    "sources": [
+     {
+      "name": "Wikipedia - Dodge D series (with Chrysler LA engine article; counted once)",
+      "url": "https://en.wikipedia.org/wiki/Dodge_D_series",
+      "says": "Gen-2 engine list: 360 LA V8"
+     },
+     {
+      "name": "Drivingline - Uncommon Haulers: 1972-1980 Dodge D-Series Pickup Trucks (B. Hunting, Apr 20 2019)",
+      "url": "https://www.drivingline.com/articles/uncommon-haulers-1972-1980-dodge-d-series-pickup-trucks/",
+      "says": "1972-1980: a 360 CID V8 good for 180hp among the most common drivetrains (generation-level)"
+     },
+     {
+      "name": "Dodge 1977 Pickups brochure",
+      "url": "https://oldcarbrochures.org/United%20States/Chrysler%20Trucks%20and%20Vans/1977_Trucks-Vans/1977_Dodge_Pickups/index.html",
+      "says": "Optional 360-, 400-, and 440-cubic-inch V8s"
+     },
+     {
+      "name": "Flory, American Light Trucks and Utility Vehicles 1967-1989 (McFarland 2019), Dodge chapter (Google Books snippet)",
+      "url": "https://books.google.com/books?id=Az-7DwAAQBAJ&pg=PA575",
+      "says": "1977 Dodge D100 table (360 search hit)"
+     }
+    ],
+    "independent_sources": 4,
+    "status": "three_sources_not_nhra",
+    "note": "Rating not found for this year."
+   },
+   {
+    "gen": "gen2",
+    "cid": 400,
+    "hp": null,
+    "hp_basis": "net",
+    "name": "6.6L / 400 V8",
+    "rpo": "",
+    "common_name": "400 B",
+    "trims": [
+     "D100/D150",
+     "W100/W150"
+    ],
+    "nhra": false,
+    "sources": [
+     {
+      "name": "Wikipedia - Dodge D series (with Chrysler LA engine article; counted once)",
+      "url": "https://en.wikipedia.org/wiki/Dodge_D_series",
+      "says": "Gen-2 engine list: 400 B V8; 440 replaced the 400 for 1974, 400 available again for 1976; 400 and 440 dropped for 1979"
+     },
+     {
+      "name": "Drivingline - Uncommon Haulers: 1972-1980 Dodge D-Series Pickup Trucks (B. Hunting, Apr 20 2019)",
+      "url": "https://www.drivingline.com/articles/uncommon-haulers-1972-1980-dodge-d-series-pickup-trucks/",
+      "says": "1972-1980: Dodge also offered optional 400 ci (200hp) engines (generation-level)"
+     },
+     {
+      "name": "Dodge 1977 Pickups brochure",
+      "url": "https://oldcarbrochures.org/United%20States/Chrysler%20Trucks%20and%20Vans/1977_Trucks-Vans/1977_Dodge_Pickups/index.html",
+      "says": "Optional 360-, 400-, and 440-cubic-inch V8s"
+     },
+     {
+      "name": "Flory, American Light Trucks and Utility Vehicles 1967-1989 (McFarland 2019), Dodge chapter (Google Books snippet)",
+      "url": "https://books.google.com/books?id=Az-7DwAAQBAJ&pg=PA575",
+      "says": "1977 table (400 search hit)"
+     }
+    ],
+    "independent_sources": 4,
+    "status": "three_sources_not_nhra",
+    "note": "Rating not found."
+   },
+   {
+    "gen": "gen2",
+    "cid": 440,
+    "hp": 220,
+    "hp_basis": "net",
+    "name": "7.2L / 440 V8 4-bbl",
+    "rpo": "",
+    "common_name": "440 RB",
+    "trims": [
+     "D100/D150",
+     "W100/W150 (4WD from 1975)"
+    ],
+    "nhra": false,
+    "sources": [
+     {
+      "name": "Wikipedia - Dodge D series (with Chrysler LA engine article; counted once)",
+      "url": "https://en.wikipedia.org/wiki/Dodge_D_series",
+      "says": "440 replaced the 400 as an option for 1974; 1975: 440 became optional for 4WD; 1979: 440 dropped"
+     },
+     {
+      "name": "Drivingline - Uncommon Haulers: 1972-1980 Dodge D-Series Pickup Trucks (B. Hunting, Apr 20 2019)",
+      "url": "https://www.drivingline.com/articles/uncommon-haulers-1972-1980-dodge-d-series-pickup-trucks/",
+      "says": "1972-1980: optional 440 ci (255hp) engine, often in the special-edition trucks (generation-level; 255 hp is not a factory net truck figure)"
+     },
+     {
+      "name": "Dodge 1977 Pickups brochure",
+      "url": "https://oldcarbrochures.org/United%20States/Chrysler%20Trucks%20and%20Vans/1977_Trucks-Vans/1977_Dodge_Pickups/index.html",
+      "says": "Optional 360-, 400-, and 440-cubic-inch V8s"
+     },
+     {
+      "name": "Flory, American Light Trucks and Utility Vehicles 1967-1989 (McFarland 2019), Dodge chapter (Google Books snippet)",
+      "url": "https://books.google.com/books?id=Az-7DwAAQBAJ&pg=PA575",
+      "says": "440 CID (7.2L), 4-bbl., V8 220 @ 4000 / 300 @ 2400, code D"
+     }
+    ],
+    "independent_sources": 4,
+    "status": "three_sources_not_nhra",
+    "note": ""
+   }
+  ],
+  "1978": [
+   {
+    "gen": "gen2",
+    "cid": 225,
+    "hp": 105,
+    "hp_basis": "net",
+    "name": "3.7L / 225 Slant Six",
+    "rpo": "",
+    "common_name": "Super Slant Six 225",
+    "trims": [
+     "D100/D150",
+     "W100/W150"
+    ],
+    "nhra": false,
+    "sources": [
+     {
+      "name": "Wikipedia - Dodge D series (with Chrysler LA engine article; counted once)",
+      "url": "https://en.wikipedia.org/wiki/Dodge_D_series",
+      "says": "Gen-2 (1972-80) engine list: 225 Slant-6"
+     },
+     {
+      "name": "Drivingline - Uncommon Haulers: 1972-1980 Dodge D-Series Pickup Trucks (B. Hunting, Apr 20 2019)",
+      "url": "https://www.drivingline.com/articles/uncommon-haulers-1972-1980-dodge-d-series-pickup-trucks/",
+      "says": "1972-1980 D-series: the Chrysler slant six in 225 ci form (generation-level statement)"
+     },
+     {
+      "name": "Dodge 1978 Pickups brochure",
+      "url": "https://oldcarbrochures.org/United%20States/Chrysler%20Trucks%20and%20Vans/1978_Trucks-Vans/1978_Dodge_Pickups/index.html",
+      "says": "New 225-cubic-inch Super Slant Six standard, two-barrel; spec table 225 SIX for D100/D150"
+     },
+     {
+      "name": "Flory, American Light Trucks and Utility Vehicles 1967-1989 (McFarland 2019), Dodge chapter (Google Books snippet)",
+      "url": "https://books.google.com/books?id=Az-7DwAAQBAJ&pg=PA636",
+      "says": "Slant Six 225 CID (3.7L), 2-bbl., 105 @ 3600 / 175 @ 2000, code C, standard"
+     }
+    ],
+    "independent_sources": 4,
+    "status": "three_sources_not_nhra",
+    "note": "1978 '225 Super Slant Six' 2-bbl."
+   },
+   {
+    "gen": "gen2",
+    "cid": 318,
+    "hp": 150,
+    "hp_basis": "net",
+    "name": "5.2L / 318 V8",
+    "rpo": "",
+    "common_name": "LA 318",
+    "trims": [
+     "D100/D150",
+     "W100/W150"
+    ],
+    "nhra": false,
+    "sources": [
+     {
+      "name": "Wikipedia - Dodge D series (with Chrysler LA engine article; counted once)",
+      "url": "https://en.wikipedia.org/wiki/Dodge_D_series",
+      "says": "Gen-2 engine list: 318 LA V8"
+     },
+     {
+      "name": "Drivingline - Uncommon Haulers: 1972-1980 Dodge D-Series Pickup Trucks (B. Hunting, Apr 20 2019)",
+      "url": "https://www.drivingline.com/articles/uncommon-haulers-1972-1980-dodge-d-series-pickup-trucks/",
+      "says": "1972-1980: a 160hp 318 CID V8 one of the most common drivetrains (generation-level; 160 hp differs from Dodge/Flory 150)"
+     },
+     {
+      "name": "Dodge 1978 Pickups brochure",
+      "url": "https://oldcarbrochures.org/United%20States/Chrysler%20Trucks%20and%20Vans/1978_Trucks-Vans/1978_Dodge_Pickups/index.html",
+      "says": "Choose 318-cubic-inch V8 for light-duty; spec table 318 V8 for D100/D150; Macho Power Wagon with 318 V8 power"
+     },
+     {
+      "name": "Flory, American Light Trucks and Utility Vehicles 1967-1989 (McFarland 2019), Dodge chapter (Google Books snippet)",
+      "url": "https://books.google.com/books?id=Az-7DwAAQBAJ&pg=PA636",
+      "says": "318 CID (5.2L), 2-bbl., V8 150 @ 4000 / 255 @ 2000, code E"
+     }
+    ],
+    "independent_sources": 4,
+    "status": "three_sources_not_nhra",
+    "note": ""
+   },
+   {
+    "gen": "gen2",
+    "cid": 360,
+    "hp": 185,
+    "hp_basis": "net",
+    "name": "5.9L / 360 V8 2-bbl / 4-bbl",
+    "rpo": "",
+    "common_name": "LA 360",
+    "trims": [
+     "D100/D150",
+     "W100/W150"
+    ],
+    "nhra": false,
+    "sources": [
+     {
+      "name": "Wikipedia - Dodge D series (with Chrysler LA engine article; counted once)",
+      "url": "https://en.wikipedia.org/wiki/Dodge_D_series",
+      "says": "Gen-2 engine list: 360 LA V8"
+     },
+     {
+      "name": "Drivingline - Uncommon Haulers: 1972-1980 Dodge D-Series Pickup Trucks (B. Hunting, Apr 20 2019)",
+      "url": "https://www.drivingline.com/articles/uncommon-haulers-1972-1980-dodge-d-series-pickup-trucks/",
+      "says": "1972-1980: a 360 CID V8 good for 180hp among the most common drivetrains (generation-level)"
+     },
+     {
+      "name": "Dodge 1978 Pickups brochure",
+      "url": "https://oldcarbrochures.org/United%20States/Chrysler%20Trucks%20and%20Vans/1978_Trucks-Vans/1978_Dodge_Pickups/index.html",
+      "says": "Three V8s: 360-, 400-, 440-; spec table 318 V8, 360 V8 for D100/D150"
+     },
+     {
+      "name": "Flory, American Light Trucks and Utility Vehicles 1967-1989 (McFarland 2019), Dodge chapter (Google Books snippet)",
+      "url": "https://books.google.com/books?id=Az-7DwAAQBAJ&pg=PA636",
+      "says": "360 CID (5.9L), 2-bbl., V8 185 @ 4000 / 290 @ 2400, code F; p.637: 360 4-bbl 185 @ 4000, code K, 'D100 & D150' columns"
+     }
+    ],
+    "independent_sources": 4,
+    "status": "three_sources_not_nhra",
+    "note": "Light-duty vs heavy-duty ratings differ; 185 hp is Flory's figure for both 2-bbl and 4-bbl."
+   },
+   {
+    "gen": "gen2",
+    "cid": 400,
+    "hp": null,
+    "hp_basis": "net",
+    "name": "6.6L / 400 V8",
+    "rpo": "",
+    "common_name": "400 B",
+    "trims": [
+     "D100/D150",
+     "W100/W150"
+    ],
+    "nhra": false,
+    "sources": [
+     {
+      "name": "Wikipedia - Dodge D series (with Chrysler LA engine article; counted once)",
+      "url": "https://en.wikipedia.org/wiki/Dodge_D_series",
+      "says": "Gen-2 engine list: 400 B V8; 440 replaced the 400 for 1974, 400 available again for 1976; 400 and 440 dropped for 1979"
+     },
+     {
+      "name": "Drivingline - Uncommon Haulers: 1972-1980 Dodge D-Series Pickup Trucks (B. Hunting, Apr 20 2019)",
+      "url": "https://www.drivingline.com/articles/uncommon-haulers-1972-1980-dodge-d-series-pickup-trucks/",
+      "says": "1972-1980: Dodge also offered optional 400 ci (200hp) engines (generation-level)"
+     },
+     {
+      "name": "Dodge 1978 Pickups brochure",
+      "url": "https://oldcarbrochures.org/United%20States/Chrysler%20Trucks%20and%20Vans/1978_Trucks-Vans/1978_Dodge_Pickups/index.html",
+      "says": "Spec table: 225 SIX, 318 V8, 360, 400 V8, 440 V8, 243 DIESEL"
+     },
+     {
+      "name": "Flory, American Light Trucks and Utility Vehicles 1967-1989 (McFarland 2019), Dodge chapter (Google Books snippet)",
+      "url": "https://books.google.com/books?id=Az-7DwAAQBAJ&pg=PA637",
+      "says": "1978 D100 & D150 table (400 search hit)"
+     }
+    ],
+    "independent_sources": 4,
+    "status": "three_sources_not_nhra",
+    "note": "Rating not found."
+   },
+   {
+    "gen": "gen2",
+    "cid": 440,
+    "hp": 220,
+    "hp_basis": "net",
+    "name": "7.2L / 440 V8 4-bbl",
+    "rpo": "",
+    "common_name": "440 RB",
+    "trims": [
+     "D100/D150",
+     "W100/W150 (4WD from 1975)"
+    ],
+    "nhra": false,
+    "sources": [
+     {
+      "name": "Wikipedia - Dodge D series (with Chrysler LA engine article; counted once)",
+      "url": "https://en.wikipedia.org/wiki/Dodge_D_series",
+      "says": "440 replaced the 400 as an option for 1974; 1975: 440 became optional for 4WD; 1979: 440 dropped"
+     },
+     {
+      "name": "Drivingline - Uncommon Haulers: 1972-1980 Dodge D-Series Pickup Trucks (B. Hunting, Apr 20 2019)",
+      "url": "https://www.drivingline.com/articles/uncommon-haulers-1972-1980-dodge-d-series-pickup-trucks/",
+      "says": "1972-1980: optional 440 ci (255hp) engine, often in the special-edition trucks (generation-level; 255 hp is not a factory net truck figure)"
+     },
+     {
+      "name": "Dodge 1978 Pickups brochure",
+      "url": "https://oldcarbrochures.org/United%20States/Chrysler%20Trucks%20and%20Vans/1978_Trucks-Vans/1978_Dodge_Pickups/index.html",
+      "says": "Spec table lists 440 V8 for D100/D150 and D200"
+     },
+     {
+      "name": "Flory, American Light Trucks and Utility Vehicles 1967-1989 (McFarland 2019), Dodge chapter (Google Books snippet)",
+      "url": "https://books.google.com/books?id=Az-7DwAAQBAJ&pg=PA637",
+      "says": "440 CID (7.2L), 220 @ 4000, 1978 table"
+     }
+    ],
+    "independent_sources": 4,
+    "status": "three_sources_not_nhra",
+    "note": ""
+   },
+   {
+    "gen": "gen2",
+    "cid": 243,
+    "hp": 105,
+    "hp_basis": "net",
+    "name": "4.0L / 243 Mitsubishi 6DR5 diesel I6",
+    "rpo": "VIN code H",
+    "common_name": "Mitsubishi diesel",
+    "trims": [
+     "D150/W150 (and D/W200)",
+     "not California"
+    ],
+    "nhra": false,
+    "sources": [
+     {
+      "name": "Dodge 1978 Pickups brochure",
+      "url": "https://oldcarbrochures.org/United%20States/Chrysler%20Trucks%20and%20Vans/1978_Trucks-Vans/1978_Dodge_Pickups/index.html",
+      "says": "New optional 243-cubic-inch Six diesel; spec table lists 243 DIESEL for D100/D150 and D200"
+     },
+     {
+      "name": "Wikipedia - Dodge D series (with Chrysler LA engine article; counted once)",
+      "url": "https://en.wikipedia.org/wiki/Dodge_D_series",
+      "says": "1978: 243 cu in diesel available in D/W 150 and 200 (except California); 6DR5 105 hp @ 3500; ~2,835 built"
+     },
+     {
+      "name": "Flory, American Light Trucks and Utility Vehicles 1967-1989 (McFarland 2019), Dodge chapter (Google Books snippet)",
+      "url": "https://books.google.com/books?id=Az-7DwAAQBAJ&pg=PA636",
+      "says": "Diesel Six 243 CID (4.0L), 6-cyl., 105 @ 3500 / 163 @ 2200, code H"
+     },
+     {
+      "name": "Curbside Classic - The Case Of The Very Rare 1978 Dodge Diesel Pickup (P. Niedermeyer, 2012, upd. 2026)",
+      "url": "https://www.curbsideclassic.com/automotive-histories/automotive-history-the-case-of-the-very-rare-1978-dodge-diesel-pickup-and-the-non-existent-diesel-van/",
+      "says": "6DR5 diesel available in the 1978 (and possibly 1979) D100, D200; 105 hp, 163 lb-ft; ~2,835 built"
+     },
+     {
+      "name": "Drivingline - Uncommon Haulers: 1972-1980 Dodge D-Series Pickup Trucks (B. Hunting, Apr 20 2019)",
+      "url": "https://www.drivingline.com/articles/uncommon-haulers-1972-1980-dodge-d-series-pickup-trucks/",
+      "says": "a rare Mitsubishi-sourced six-cylinder diesel (105 horsepower, 169 lb-ft) toward the decade's end"
+     }
+    ],
+    "independent_sources": 5,
+    "status": "three_sources_not_nhra",
+    "note": ""
+   },
+   {
+    "gen": "gen2",
+    "cid": 360,
+    "hp": 225,
+    "hp_basis": "net",
+    "name": "5.9L / 360 V8 4-bbl (EH1)",
+    "rpo": "EH1",
+    "common_name": "Li'l Red Express 360",
+    "trims": [
+     "D150 Utiline Li'l Red Express only"
+    ],
+    "nhra": false,
+    "sources": [
+     {
+      "name": "Dodge 1978 Li'l Red Express Truck folder",
+      "url": "https://oldcarbrochures.org/United%20States/Chrysler%20Trucks%20and%20Vans/1978_Trucks-Vans/1978_Dodge_Lil_Red_Truck/index.html",
+      "says": "360 V-8 engine with 4-barrel carburetor (EH1), automatic, power steering, 6,100-lb GVW (YW4)"
+     },
+     {
+      "name": "Wikipedia - Dodge D series (with Chrysler LA engine article; counted once)",
+      "url": "https://en.wikipedia.org/wiki/Dodge_D_series",
+      "says": "LA 360: 1978-1979 Li'l Red Express used a special high-performance 360 4-bbl, production code EH1, rated 225 SAE net hp"
+     },
+     {
+      "name": "Mopar Connection Magazine - Kori Alexander's 1978 Dodge Lil' Red Express (C. Krueger, Sep 19 2019)",
+      "url": "https://moparconnectionmagazine.com/?p=26959",
+      "says": "special high-performance 360-4 barrel producing 225 horsepower; modified police units with a 340 camshaft and valve springs"
+     },
+     {
+      "name": "Flory, American Light Trucks and Utility Vehicles 1967-1989 (McFarland 2019), Dodge chapter (Google Books snippet)",
+      "url": "https://books.google.com/books?id=Az-7DwAAQBAJ&pg=PA634",
+      "says": "1978: mid-year Li'l Red Express Truck, 360 CID four-barrel V8, vertical exhaust stacks"
+     }
+    ],
+    "independent_sources": 4,
+    "status": "three_sources_not_nhra",
+    "note": "No catalytic converter (over 6,000 lb GVW). Midnite Express (1978) was a dealer conversion."
+   },
+   {
+    "gen": "gen2",
+    "cid": 440,
+    "hp": null,
+    "hp_basis": "net",
+    "name": "7.2L / 440 V8 (Midnite Express)",
+    "rpo": "",
+    "common_name": "Midnite Express",
+    "trims": [
+     "dealer-built Warlock conversions"
+    ],
+    "nhra": false,
+    "sources": [
+     {
+      "name": "Wikipedia - Dodge D series (with Chrysler LA engine article; counted once)",
+      "url": "https://en.wikipedia.org/wiki/Dodge_D_series",
+      "says": "Midnite Express was a dealer-installed package on Warlocks; most powered by the 440"
+     }
+    ],
+    "independent_sources": 1,
+    "status": "dealer_conversion",
+    "note": "Not a factory package."
+   }
+  ],
+  "1979": [
+   {
+    "gen": "gen2",
+    "cid": 225,
+    "hp": 110,
+    "hp_basis": "net",
+    "name": "3.7L / 225 Slant Six",
+    "rpo": "",
+    "common_name": "Super Slant Six 225",
+    "trims": [
+     "D100/D150",
+     "W100/W150"
+    ],
+    "nhra": false,
+    "sources": [
+     {
+      "name": "Wikipedia - Dodge D series (with Chrysler LA engine article; counted once)",
+      "url": "https://en.wikipedia.org/wiki/Dodge_D_series",
+      "says": "Gen-2 (1972-80) engine list: 225 Slant-6"
+     },
+     {
+      "name": "Drivingline - Uncommon Haulers: 1972-1980 Dodge D-Series Pickup Trucks (B. Hunting, Apr 20 2019)",
+      "url": "https://www.drivingline.com/articles/uncommon-haulers-1972-1980-dodge-d-series-pickup-trucks/",
+      "says": "1972-1980 D-series: the Chrysler slant six in 225 ci form (generation-level statement)"
+     },
+     {
+      "name": "Dodge 1979 Trucks brochure (Engines for pickups table, p.5)",
+      "url": "https://oldcarbrochures.org/United%20States/Chrysler%20Trucks%20and%20Vans/1979%20Trucks%20and%20Vans/1979%20Dodge%20Trucks%20Brochure/index.html",
+      "says": "Engines for pickups (light-duty cycle, Federal): Six 225 c.i. 110 h.p. @ 3600, 175 lb-ft @ 1600"
+     },
+     {
+      "name": "Flory, American Light Trucks and Utility Vehicles 1967-1989 (McFarland 2019), Dodge chapter (Google Books snippet)",
+      "url": "https://books.google.com/books?id=Az-7DwAAQBAJ&pg=PA699",
+      "says": "1979 Dodge D150/D100 powertrain table (Super Slant Six listed)"
+     }
+    ],
+    "independent_sources": 4,
+    "status": "three_sources_not_nhra",
+    "note": "1979 brochure figure is light-duty federal."
+   },
+   {
+    "gen": "gen2",
+    "cid": 318,
+    "hp": 150,
+    "hp_basis": "net",
+    "name": "5.2L / 318 V8",
+    "rpo": "",
+    "common_name": "LA 318",
+    "trims": [
+     "D100/D150",
+     "W100/W150"
+    ],
+    "nhra": false,
+    "sources": [
+     {
+      "name": "Wikipedia - Dodge D series (with Chrysler LA engine article; counted once)",
+      "url": "https://en.wikipedia.org/wiki/Dodge_D_series",
+      "says": "Gen-2 engine list: 318 LA V8"
+     },
+     {
+      "name": "Drivingline - Uncommon Haulers: 1972-1980 Dodge D-Series Pickup Trucks (B. Hunting, Apr 20 2019)",
+      "url": "https://www.drivingline.com/articles/uncommon-haulers-1972-1980-dodge-d-series-pickup-trucks/",
+      "says": "1972-1980: a 160hp 318 CID V8 one of the most common drivetrains (generation-level; 160 hp differs from Dodge/Flory 150)"
+     },
+     {
+      "name": "Dodge 1979 Trucks brochure (Engines for pickups table, p.5)",
+      "url": "https://oldcarbrochures.org/United%20States/Chrysler%20Trucks%20and%20Vans/1979%20Trucks%20and%20Vans/1979%20Dodge%20Trucks%20Brochure/index.html",
+      "says": "V-8 318 c.i. 150 h.p. @ 4000 (light-duty, Federal)"
+     },
+     {
+      "name": "Flory, American Light Trucks and Utility Vehicles 1967-1989 (McFarland 2019), Dodge chapter (Google Books snippet)",
+      "url": "https://books.google.com/books?id=Az-7DwAAQBAJ&pg=PA700",
+      "says": "318 CID (5.2L), 2-bbl. and 318 CID (5.2L), 4-bbl. rows, D150/D100 columns"
+     }
+    ],
+    "independent_sources": 4,
+    "status": "three_sources_not_nhra",
+    "note": "1979: a 318 4-bbl was also listed (Flory); rating not seen."
+   },
+   {
+    "gen": "gen2",
+    "cid": 360,
+    "hp": 160,
+    "hp_basis": "net",
+    "name": "5.9L / 360 V8 2-bbl / 4-bbl",
+    "rpo": "",
+    "common_name": "LA 360",
+    "trims": [
+     "D100/D150",
+     "W100/W150"
+    ],
+    "nhra": false,
+    "sources": [
+     {
+      "name": "Wikipedia - Dodge D series (with Chrysler LA engine article; counted once)",
+      "url": "https://en.wikipedia.org/wiki/Dodge_D_series",
+      "says": "Gen-2 engine list: 360 LA V8"
+     },
+     {
+      "name": "Drivingline - Uncommon Haulers: 1972-1980 Dodge D-Series Pickup Trucks (B. Hunting, Apr 20 2019)",
+      "url": "https://www.drivingline.com/articles/uncommon-haulers-1972-1980-dodge-d-series-pickup-trucks/",
+      "says": "1972-1980: a 360 CID V8 good for 180hp among the most common drivetrains (generation-level)"
+     },
+     {
+      "name": "Dodge 1979 Trucks brochure (Engines for pickups table, p.5)",
+      "url": "https://oldcarbrochures.org/United%20States/Chrysler%20Trucks%20and%20Vans/1979%20Trucks%20and%20Vans/1979%20Dodge%20Trucks%20Brochure/index.html",
+      "says": "V-8 360 c.i. 160 h.p. @ 3600 (light-duty, Federal)"
+     },
+     {
+      "name": "Flory, American Light Trucks and Utility Vehicles 1967-1989 (McFarland 2019), Dodge chapter (Google Books snippet)",
+      "url": "https://books.google.com/books?id=Az-7DwAAQBAJ&pg=PA701",
+      "says": "360 CID (5.9L), 4-bbl., V8 185 @ 4000 / 290 @ 2400, D150 & D100 columns"
+     }
+    ],
+    "independent_sources": 4,
+    "status": "three_sources_not_nhra",
+    "note": "Dodge 1979 light-duty federal table 160 hp; Flory 185 hp (4-bbl, likely heavy-duty rating)."
+   },
+   {
+    "gen": "gen2",
+    "cid": 243,
+    "hp": 100,
+    "hp_basis": "net",
+    "name": "4.0L / 243 Mitsubishi 6DR5 diesel I6",
+    "rpo": "VIN code H",
+    "common_name": "Mitsubishi diesel",
+    "trims": [
+     "selected models",
+     "not California",
+     "late availability"
+    ],
+    "nhra": false,
+    "sources": [
+     {
+      "name": "Dodge 1979 Trucks brochure (Engines for pickups table, p.5)",
+      "url": "https://oldcarbrochures.org/United%20States/Chrysler%20Trucks%20and%20Vans/1979%20Trucks%20and%20Vans/1979%20Dodge%20Trucks%20Brochure/index.html",
+      "says": "Six (diesel) 243 c.i. 100 h.p. @ 3700, 165 lb-ft @ 2200; late availability, N/A in California; 'available on selected models'"
+     },
+     {
+      "name": "Wikipedia - Dodge D series (with Chrysler LA engine article; counted once)",
+      "url": "https://en.wikipedia.org/wiki/Dodge_D_series",
+      "says": "Listed for 1979 as well but it is uncertain whether any were built"
+     },
+     {
+      "name": "Curbside Classic - The Case Of The Very Rare 1978 Dodge Diesel Pickup (P. Niedermeyer, 2012, upd. 2026)",
+      "url": "https://www.curbsideclassic.com/automotive-histories/automotive-history-the-case-of-the-very-rare-1978-dodge-diesel-pickup-and-the-non-existent-diesel-van/",
+      "says": "available in 1978 (and possibly 1979)"
+     }
+    ],
+    "independent_sources": 3,
+    "status": "disputed",
+    "note": "Listed for 1979 but production is unconfirmed (Wikipedia, Curbside Classic)."
+   },
+   {
+    "gen": "gen2",
+    "cid": 360,
+    "hp": 225,
+    "hp_basis": "net",
+    "name": "5.9L / 360 V8 4-bbl (EH1)",
+    "rpo": "EH1",
+    "common_name": "Li'l Red Express 360",
+    "trims": [
+     "D150 Utiline Li'l Red Express only"
+    ],
+    "nhra": false,
+    "sources": [
+     {
+      "name": "Dodge 1979 Li'l Red Express Truck folder",
+      "url": "https://oldcarbrochures.org/United%20States/Chrysler%20Trucks%20and%20Vans/1979%20Trucks%20and%20Vans/1979%20Dodge%20LRT%20Express%20Folder/index.html",
+      "says": "360 V-8 engine with 4-barrel carburetor (EH1), automatic, power steering"
+     },
+     {
+      "name": "Wikipedia - Dodge D series (with Chrysler LA engine article; counted once)",
+      "url": "https://en.wikipedia.org/wiki/Dodge_D_series",
+      "says": "LA 360: 1978-1979 Li'l Red Express used a special high-performance 360 4-bbl, production code EH1, rated 225 SAE net hp"
+     },
+     {
+      "name": "Mopar Connection Magazine - Kori Alexander's 1978 Dodge Lil' Red Express (C. Krueger, Sep 19 2019)",
+      "url": "https://moparconnectionmagazine.com/?p=26959",
+      "says": "special high-performance 360-4 barrel producing 225 horsepower; modified police units with a 340 camshaft and valve springs"
+     },
+     {
+      "name": "Flory, American Light Trucks and Utility Vehicles 1967-1989 (McFarland 2019), Dodge chapter (Google Books snippet)",
+      "url": "https://books.google.com/books?id=Az-7DwAAQBAJ&pg=PA697",
+      "says": "1979: Li'l Red Express Truck continued in the Adult Toys catalog"
+     }
+    ],
+    "independent_sources": 4,
+    "status": "three_sources_not_nhra",
+    "note": "1978 trucks were over 6,000 lb GVW and had no catalytic converter; 1979 got catalysts. 225 hp is the commonly cited figure for both years; no separate 1979 factory rating found."
+   }
+  ],
+  "1980": [
+   {
+    "gen": "gen2",
+    "cid": 225,
+    "hp": null,
+    "hp_basis": "net",
+    "name": "3.7L / 225 Slant Six",
+    "rpo": "",
+    "common_name": "Super Slant Six 225",
+    "trims": [
+     "D100/D150",
+     "W100/W150"
+    ],
+    "nhra": false,
+    "sources": [
+     {
+      "name": "Wikipedia - Dodge D series (with Chrysler LA engine article; counted once)",
+      "url": "https://en.wikipedia.org/wiki/Dodge_D_series",
+      "says": "Gen-2 (1972-80) engine list: 225 Slant-6"
+     },
+     {
+      "name": "Drivingline - Uncommon Haulers: 1972-1980 Dodge D-Series Pickup Trucks (B. Hunting, Apr 20 2019)",
+      "url": "https://www.drivingline.com/articles/uncommon-haulers-1972-1980-dodge-d-series-pickup-trucks/",
+      "says": "1972-1980 D-series: the Chrysler slant six in 225 ci form (generation-level statement)"
+     },
+     {
+      "name": "Dodge 1980 Pickup brochure",
+      "url": "https://oldcarbrochures.org/United%20States/Chrysler%20Trucks%20and%20Vans/1980_Trucks-Vans/1980-Dodge-Pickup-Brochure/index.html",
+      "says": "3.7-liter (225 CID) Slant Six standard on D150/W150 115- and 131-inch conventional cab"
+     },
+     {
+      "name": "Dodge 1980 Power Wagons brochure",
+      "url": "https://oldcarbrochures.org/United%20States/Chrysler%20Trucks%20and%20Vans/1980_Trucks-Vans/1980_Dodge_Power_Wagons/index.html",
+      "says": "Standard 3.7-liter (225 CID) Slant Six on W150 115/131-in. conventional cab pickups"
+     },
+     {
+      "name": "Flory, American Light Trucks and Utility Vehicles 1967-1989 (McFarland 2019), Dodge chapter (Google Books snippet)",
+      "url": "https://books.google.com/books?id=Az-7DwAAQBAJ&pg=PA764",
+      "says": "1980 Dodge powertrain table: Super Slant Six 225 CID (3.7L), 2-bbl."
+     }
+    ],
+    "independent_sources": 4,
+    "status": "three_sources_not_nhra",
+    "note": "1980 rating not found in snippets (1981 1-bbl figure 95 hp)."
+   },
+   {
+    "gen": "gen2",
+    "cid": 318,
+    "hp": 135,
+    "hp_basis": "net",
+    "name": "5.2L / 318 V8",
+    "rpo": "",
+    "common_name": "LA 318",
+    "trims": [
+     "D100/D150",
+     "W100/W150"
+    ],
+    "nhra": false,
+    "sources": [
+     {
+      "name": "Wikipedia - Dodge D series (with Chrysler LA engine article; counted once)",
+      "url": "https://en.wikipedia.org/wiki/Dodge_D_series",
+      "says": "Gen-2 engine list: 318 LA V8"
+     },
+     {
+      "name": "Drivingline - Uncommon Haulers: 1972-1980 Dodge D-Series Pickup Trucks (B. Hunting, Apr 20 2019)",
+      "url": "https://www.drivingline.com/articles/uncommon-haulers-1972-1980-dodge-d-series-pickup-trucks/",
+      "says": "1972-1980: a 160hp 318 CID V8 one of the most common drivetrains (generation-level; 160 hp differs from Dodge/Flory 150)"
+     },
+     {
+      "name": "Dodge 1980 Pickup brochure",
+      "url": "https://oldcarbrochures.org/United%20States/Chrysler%20Trucks%20and%20Vans/1980_Trucks-Vans/1980-Dodge-Pickup-Brochure/index.html",
+      "says": "5.2-liter (318 CID) V-8 optional for D150/W150 (standard with Club Cab)"
+     },
+     {
+      "name": "Dodge 1980 Power Wagons brochure",
+      "url": "https://oldcarbrochures.org/United%20States/Chrysler%20Trucks%20and%20Vans/1980_Trucks-Vans/1980_Dodge_Power_Wagons/index.html",
+      "says": "optional 5.2-liter (318 CID) V-8, standard on W150 Club Cab"
+     },
+     {
+      "name": "Flory, American Light Trucks and Utility Vehicles 1967-1989 (McFarland 2019), Dodge chapter (Google Books snippet)",
+      "url": "https://books.google.com/books?id=Az-7DwAAQBAJ&pg=PA764",
+      "says": "318 CID (5.2L), 2-bbl., V8 135 @ 4000 / 240 @ 2000, code E"
+     }
+    ],
+    "independent_sources": 4,
+    "status": "three_sources_not_nhra",
+    "note": ""
+   },
+   {
+    "gen": "gen2",
+    "cid": 360,
+    "hp": null,
+    "hp_basis": "net",
+    "name": "5.9L / 360 V8 4-bbl",
+    "rpo": "",
+    "common_name": "LA 360",
+    "trims": [
+     "D100/D150",
+     "W100/W150"
+    ],
+    "nhra": false,
+    "sources": [
+     {
+      "name": "Wikipedia - Dodge D series (with Chrysler LA engine article; counted once)",
+      "url": "https://en.wikipedia.org/wiki/Dodge_D_series",
+      "says": "Gen-2 engine list: 360 LA V8"
+     },
+     {
+      "name": "Drivingline - Uncommon Haulers: 1972-1980 Dodge D-Series Pickup Trucks (B. Hunting, Apr 20 2019)",
+      "url": "https://www.drivingline.com/articles/uncommon-haulers-1972-1980-dodge-d-series-pickup-trucks/",
+      "says": "1972-1980: a 360 CID V8 good for 180hp among the most common drivetrains (generation-level)"
+     },
+     {
+      "name": "Dodge 1980 Pickup brochure",
+      "url": "https://oldcarbrochures.org/United%20States/Chrysler%20Trucks%20and%20Vans/1980_Trucks-Vans/1980-Dodge-Pickup-Brochure/index.html",
+      "says": "5.9-liter (360 CID) available"
+     },
+     {
+      "name": "Dodge 1980 Power Wagons brochure",
+      "url": "https://oldcarbrochures.org/United%20States/Chrysler%20Trucks%20and%20Vans/1980_Trucks-Vans/1980_Dodge_Power_Wagons/index.html",
+      "says": "optional 5.9-liter (360 CID) V-8"
+     },
+     {
+      "name": "Flory, American Light Trucks and Utility Vehicles 1967-1989 (McFarland 2019), Dodge chapter (Google Books snippet)",
+      "url": "https://books.google.com/books?id=Az-7DwAAQBAJ&pg=PA764",
+      "says": "1980 Dodge table: 360 CID (5.9L), 4-bbl., V8"
+     }
+    ],
+    "independent_sources": 4,
+    "status": "three_sources_not_nhra",
+    "note": "Rating not found for this year."
+   }
+  ],
+  "1981": [
+   {
+    "gen": "gen3",
+    "cid": 225,
+    "hp": 95,
+    "hp_basis": "net",
+    "name": "3.7L / 225 Slant Six 1-bbl",
+    "rpo": "",
+    "common_name": "Slant Six 225",
+    "trims": [
+     "D150",
+     "W150"
+    ],
+    "nhra": false,
+    "sources": [
+     {
+      "name": "Wikipedia - Dodge D series (with Chrysler LA engine article; counted once)",
+      "url": "https://en.wikipedia.org/wiki/Dodge_D_series",
+      "says": "1981-93: base 225 slant-6 (top-fed hydraulic tappets); replaced by the 3.9 V6 for 1988"
+     },
+     {
+      "name": "Dodge 1981 Pickups brochure",
+      "url": "https://oldcarbrochures.org/United%20States/Chrysler%20Trucks%20and%20Vans/1981%20Trucks%20and%20Vans/1981%20Dodge%20Pickups%20Brochure/index.html",
+      "says": "Standard 3.7-liter (225 CID) Slant Six (D150 and W150 115-inch and 131-inch wheelbases)"
+     },
+     {
+      "name": "Flory, American Light Trucks and Utility Vehicles 1967-1989 (McFarland 2019), Dodge chapter (Google Books snippet)",
+      "url": "https://books.google.com/books?id=Az-7DwAAQBAJ&pg=PA826",
+      "says": "225 CID (3.7L), 1-bbl., 6-cyl. 95 @ 3600 / 170 @ 1600, code E, D150 column"
+     }
+    ],
+    "independent_sources": 3,
+    "status": "three_sources_not_nhra",
+    "note": ""
+   },
+   {
+    "gen": "gen3",
+    "cid": 318,
+    "hp": 135,
+    "hp_basis": "net",
+    "name": "5.2L / 318 V8 2-bbl",
+    "rpo": "",
+    "common_name": "LA 318",
+    "trims": [
+     "D150",
+     "W150"
+    ],
+    "nhra": false,
+    "sources": [
+     {
+      "name": "Wikipedia - Dodge D series (with Chrysler LA engine article; counted once)",
+      "url": "https://en.wikipedia.org/wiki/Dodge_D_series",
+      "says": "1981-93: 318 LA V8 offered"
+     },
+     {
+      "name": "Dodge 1981 Pickups brochure",
+      "url": "https://oldcarbrochures.org/United%20States/Chrysler%20Trucks%20and%20Vans/1981%20Trucks%20and%20Vans/1981%20Dodge%20Pickups%20Brochure/index.html",
+      "says": "Optional for D150/W150: 5.2-liter (318 CID) two-barrel or four-barrel V8"
+     },
+     {
+      "name": "Flory, American Light Trucks and Utility Vehicles 1967-1989 (McFarland 2019), Dodge chapter (Google Books snippet)",
+      "url": "https://books.google.com/books?id=Az-7DwAAQBAJ&pg=PA826",
+      "says": "318 CID (5.2L), 2-bbl., V8 135 @ 4000 / 240 @ 2000, codes K/L"
+     }
+    ],
+    "independent_sources": 3,
+    "status": "three_sources_not_nhra",
+    "note": ""
+   },
+   {
+    "gen": "gen3",
+    "cid": 318,
+    "hp": null,
+    "hp_basis": "net",
+    "name": "5.2L / 318 V8 4-bbl",
+    "rpo": "",
+    "common_name": "LA 318 4-bbl",
+    "trims": [
+     "D150",
+     "W150"
+    ],
+    "nhra": false,
+    "sources": [
+     {
+      "name": "Wikipedia - Dodge D series (with Chrysler LA engine article; counted once)",
+      "url": "https://en.wikipedia.org/wiki/Dodge_D_series",
+      "says": "1981-93: 318 LA V8 offered"
+     },
+     {
+      "name": "Dodge 1981 Pickups brochure",
+      "url": "https://oldcarbrochures.org/United%20States/Chrysler%20Trucks%20and%20Vans/1981%20Trucks%20and%20Vans/1981%20Dodge%20Pickups%20Brochure/index.html",
+      "says": "Optional 5.2-liter (318 CID) four-barrel V8 for D150/W150"
+     },
+     {
+      "name": "Flory, American Light Trucks and Utility Vehicles 1967-1989 (McFarland 2019), Dodge chapter (Google Books snippet)",
+      "url": "https://books.google.com/books?id=Az-7DwAAQBAJ&pg=PA826",
+      "says": "318 CID (5.2L), 4-bbl., V8 row, D150 column"
+     }
+    ],
+    "independent_sources": 3,
+    "status": "three_sources_not_nhra",
+    "note": "4-bbl 318 also appears in Flory's 1982-1985 tables (not individually verified)."
+   },
+   {
+    "gen": "gen3",
+    "cid": 360,
+    "hp": null,
+    "hp_basis": "net",
+    "name": "5.9L / 360 V8 4-bbl",
+    "rpo": "",
+    "common_name": "LA 360",
+    "trims": [
+     "D150",
+     "W150"
+    ],
+    "nhra": false,
+    "sources": [
+     {
+      "name": "Wikipedia - Dodge D series (with Chrysler LA engine article; counted once)",
+      "url": "https://en.wikipedia.org/wiki/Dodge_D_series",
+      "says": "1981-93: 360 LA V8 offered"
+     },
+     {
+      "name": "Dodge 1981 Pickups brochure",
+      "url": "https://oldcarbrochures.org/United%20States/Chrysler%20Trucks%20and%20Vans/1981%20Trucks%20and%20Vans/1981%20Dodge%20Pickups%20Brochure/index.html",
+      "says": "Or an even bigger 5.9-liter (360 CID) four-barrel V8 is available (D150/W150 optional power)"
+     },
+     {
+      "name": "Flory, American Light Trucks and Utility Vehicles 1967-1989 (McFarland 2019), Dodge chapter (Google Books snippet)",
+      "url": "https://books.google.com/books?id=Az-7DwAAQBAJ&pg=PA826",
+      "says": "360 CID (5.9L), 4-bbl., V8 row"
+     }
+    ],
+    "independent_sources": 3,
+    "status": "three_sources_not_nhra",
+    "note": "Rating not found."
+   }
+  ],
+  "1982": [
+   {
+    "gen": "gen3",
+    "cid": 225,
+    "hp": 95,
+    "hp_basis": "net",
+    "name": "3.7L / 225 Slant Six 1-bbl",
+    "rpo": "",
+    "common_name": "Slant Six 225",
+    "trims": [
+     "D150",
+     "W150"
+    ],
+    "nhra": false,
+    "sources": [
+     {
+      "name": "Wikipedia - Dodge D series (with Chrysler LA engine article; counted once)",
+      "url": "https://en.wikipedia.org/wiki/Dodge_D_series",
+      "says": "1981-93: base 225 slant-6 (top-fed hydraulic tappets); replaced by the 3.9 V6 for 1988"
+     },
+     {
+      "name": "Dodge (Canada) 1982 Ram Trucks brochure",
+      "url": "https://oldcarbrochures.org/United%20States/Chrysler%20Trucks%20and%20Vans/1982%20Trucks%20and%20Vans/1982-Dodge-Ram-Trucks-Brochure/index.html",
+      "says": "3.7 Litre (225) 1-bbl. Slant-Six with 4-speed overdrive manual base on D150, W150 115/131-in."
+     },
+     {
+      "name": "Flory, American Light Trucks and Utility Vehicles 1967-1989 (McFarland 2019), Dodge chapter (Google Books snippet)",
+      "url": "https://books.google.com/books?id=Az-7DwAAQBAJ&pg=PA888",
+      "says": "225 CID (3.7L), 1-bbl., 6-cyl. 95 @ 3600 / 170 @ 1600, code E"
+     }
+    ],
+    "independent_sources": 3,
+    "status": "three_sources_not_nhra",
+    "note": ""
+   },
+   {
+    "gen": "gen3",
+    "cid": 318,
+    "hp": 135,
+    "hp_basis": "net",
+    "name": "5.2L / 318 V8 2-bbl",
+    "rpo": "",
+    "common_name": "LA 318",
+    "trims": [
+     "D150",
+     "W150"
+    ],
+    "nhra": false,
+    "sources": [
+     {
+      "name": "Wikipedia - Dodge D series (with Chrysler LA engine article; counted once)",
+      "url": "https://en.wikipedia.org/wiki/Dodge_D_series",
+      "says": "1981-93: 318 LA V8 offered"
+     },
+     {
+      "name": "Dodge (Canada) 1982 Ram Trucks brochure",
+      "url": "https://oldcarbrochures.org/United%20States/Chrysler%20Trucks%20and%20Vans/1982%20Trucks%20and%20Vans/1982-Dodge-Ram-Trucks-Brochure/index.html",
+      "says": "5.2 Litre (318) 2-bbl. with wide-ratio 4-speed manual on D150, W150 149-in. Club Cab"
+     },
+     {
+      "name": "Flory, American Light Trucks and Utility Vehicles 1967-1989 (McFarland 2019), Dodge chapter (Google Books snippet)",
+      "url": "https://books.google.com/books?id=Az-7DwAAQBAJ&pg=PA888",
+      "says": "318 CID (5.2L), 2-bbl., V8 135 @ 4000 / 255 @ 2000, code P"
+     }
+    ],
+    "independent_sources": 3,
+    "status": "three_sources_not_nhra",
+    "note": ""
+   },
+   {
+    "gen": "gen3",
+    "cid": 360,
+    "hp": null,
+    "hp_basis": "net",
+    "name": "5.9L / 360 V8 4-bbl",
+    "rpo": "",
+    "common_name": "LA 360",
+    "trims": [
+     "D150",
+     "W150"
+    ],
+    "nhra": false,
+    "sources": [
+     {
+      "name": "Wikipedia - Dodge D series (with Chrysler LA engine article; counted once)",
+      "url": "https://en.wikipedia.org/wiki/Dodge_D_series",
+      "says": "1981-93: 360 LA V8 offered"
+     },
+     {
+      "name": "Flory, American Light Trucks and Utility Vehicles 1967-1989 (McFarland 2019), Dodge chapter (Google Books snippet)",
+      "url": "https://books.google.com/books?id=Az-7DwAAQBAJ&pg=PA888",
+      "says": "1982 D150 table: 360 row"
+     }
+    ],
+    "independent_sources": 2,
+    "status": "two_sources_not_nhra",
+    "note": "Only Wikipedia + a Flory search hit; the 1982 brochure scan is the Canadian full line and does not show a 150-series 360."
+   }
+  ],
+  "1983": [
+   {
+    "gen": "gen3",
+    "cid": 225,
+    "hp": 95,
+    "hp_basis": "net",
+    "name": "3.7L / 225 Slant Six 1-bbl",
+    "rpo": "",
+    "common_name": "Slant Six 225",
+    "trims": [
+     "D150",
+     "W150"
+    ],
+    "nhra": false,
+    "sources": [
+     {
+      "name": "Wikipedia - Dodge D series (with Chrysler LA engine article; counted once)",
+      "url": "https://en.wikipedia.org/wiki/Dodge_D_series",
+      "says": "1981-93: base 225 slant-6 (top-fed hydraulic tappets); replaced by the 3.9 V6 for 1988"
+     },
+     {
+      "name": "Dodge 1983 Ram Pickups brochure (Engine Specifications table, p.13)",
+      "url": "https://oldcarbrochures.org/United%20States/Chrysler%20Trucks%20and%20Vans/1983-Trucks-and-Vans/1983%20Dodge%20Ram%20Pickups/index.html",
+      "says": "3.7-liter 225 1-bbl 95 @ 3,600 (light-duty, 49 states); 2-bbl 100 @ 3,600; California 84 @ 3,600"
+     },
+     {
+      "name": "Flory, American Light Trucks and Utility Vehicles 1967-1989 (McFarland 2019), Dodge chapter (Google Books snippet)",
+      "url": "https://books.google.com/books?id=Az-7DwAAQBAJ&pg=PA950",
+      "says": "1983 D150 table (225 CID 6-cyl. listed)"
+     }
+    ],
+    "independent_sources": 3,
+    "status": "three_sources_not_nhra",
+    "note": "1983 brochure: 2-bbl 225 rated 100 hp, California 84 hp."
+   },
+   {
+    "gen": "gen3",
+    "cid": 318,
+    "hp": 150,
+    "hp_basis": "net",
+    "name": "5.2L / 318 V8 2-bbl",
+    "rpo": "",
+    "common_name": "LA 318",
+    "trims": [
+     "D150",
+     "W150"
+    ],
+    "nhra": false,
+    "sources": [
+     {
+      "name": "Wikipedia - Dodge D series (with Chrysler LA engine article; counted once)",
+      "url": "https://en.wikipedia.org/wiki/Dodge_D_series",
+      "says": "1981-93: 318 LA V8 offered"
+     },
+     {
+      "name": "Dodge 1983 Ram Pickups brochure (Engine Specifications table, p.13)",
+      "url": "https://oldcarbrochures.org/United%20States/Chrysler%20Trucks%20and%20Vans/1983-Trucks-and-Vans/1983%20Dodge%20Ram%20Pickups/index.html",
+      "says": "5.2-liter 318 2-bbl 150 @ 4,400 / 255 @ 2,000 (light-duty, 49 states); California 143 @ 3,600; optional for D150, W150, D250"
+     },
+     {
+      "name": "Flory, American Light Trucks and Utility Vehicles 1967-1989 (McFarland 2019), Dodge chapter (Google Books snippet)",
+      "url": "https://books.google.com/books?id=Az-7DwAAQBAJ&pg=PA950",
+      "says": "1983 D150 table (318 CID rows)"
+     }
+    ],
+    "independent_sources": 3,
+    "status": "three_sources_not_nhra",
+    "note": "Flory 1981-82: 135 hp; 1983 Dodge light-duty: 150 hp."
+   },
+   {
+    "gen": "gen3",
+    "cid": 318,
+    "hp": 167,
+    "hp_basis": "net",
+    "name": "5.2L / 318 V8 4-bbl",
+    "rpo": "",
+    "common_name": "LA 318 4-bbl",
+    "trims": [
+     "D150",
+     "W150"
+    ],
+    "nhra": false,
+    "sources": [
+     {
+      "name": "Wikipedia - Dodge D series (with Chrysler LA engine article; counted once)",
+      "url": "https://en.wikipedia.org/wiki/Dodge_D_series",
+      "says": "1981-93: 318 LA V8 offered"
+     },
+     {
+      "name": "Dodge 1983 Ram Pickups brochure (Engine Specifications table, p.13)",
+      "url": "https://oldcarbrochures.org/United%20States/Chrysler%20Trucks%20and%20Vans/1983-Trucks-and-Vans/1983%20Dodge%20Ram%20Pickups/index.html",
+      "says": "5.2-liter 318 4-bbl 167 @ 4,000 / 245 @ 2,000 (light-duty, 49 states)"
+     },
+     {
+      "name": "Flory, American Light Trucks and Utility Vehicles 1967-1989 (McFarland 2019), Dodge chapter (Google Books snippet)",
+      "url": "https://books.google.com/books?id=Az-7DwAAQBAJ&pg=PA950",
+      "says": "318 CID (5.2L), 4-bbl., V8 167 @ 4000 / 245 @ 2000, code U"
+     }
+    ],
+    "independent_sources": 3,
+    "status": "three_sources_not_nhra",
+    "note": ""
+   },
+   {
+    "gen": "gen3",
+    "cid": 360,
+    "hp": 190,
+    "hp_basis": "net",
+    "name": "5.9L / 360 V8 4-bbl",
+    "rpo": "",
+    "common_name": "LA 360",
+    "trims": [
+     "D350/W350 only per 1983 brochure"
+    ],
+    "nhra": false,
+    "sources": [
+     {
+      "name": "Dodge 1983 Ram Pickups brochure (Engine Specifications table, p.13)",
+      "url": "https://oldcarbrochures.org/United%20States/Chrysler%20Trucks%20and%20Vans/1983-Trucks-and-Vans/1983%20Dodge%20Ram%20Pickups/index.html",
+      "says": "A 5.9-liter 360 CID four-barrel V8 is available on D350 and W350 models; heavy-duty table 190 @ 4,000 (49 states), 170 (Calif.)"
+     },
+     {
+      "name": "Flory, American Light Trucks and Utility Vehicles 1967-1989 (McFarland 2019), Dodge chapter (Google Books snippet)",
+      "url": "https://books.google.com/books?id=Az-7DwAAQBAJ&pg=PA950",
+      "says": "360 CID (5.9L), 4-bbl., V8 190 @ 4000 / 265 @ 3200, code W (column not visible)"
+     },
+     {
+      "name": "Wikipedia - Dodge D series (with Chrysler LA engine article; counted once)",
+      "url": "https://en.wikipedia.org/wiki/Dodge_D_series",
+      "says": "1981-93: 360 offered (series not specified)"
+     }
+    ],
+    "independent_sources": 3,
+    "status": "disputed",
+    "note": "Dodge's 1983 Ram Pickups brochure limits the 360 to D350/W350 that year; in 1981 and 1984+ it was a D/W150 option. Not confirmed for the half-ton in 1983."
+   }
+  ],
+  "1984": [
+   {
+    "gen": "gen3",
+    "cid": 225,
+    "hp": 95,
+    "hp_basis": "net",
+    "name": "3.7L / 225 Slant Six 1-bbl",
+    "rpo": "",
+    "common_name": "Slant Six 225",
+    "trims": [
+     "D150",
+     "W150"
+    ],
+    "nhra": false,
+    "sources": [
+     {
+      "name": "Wikipedia - Dodge D series (with Chrysler LA engine article; counted once)",
+      "url": "https://en.wikipedia.org/wiki/Dodge_D_series",
+      "says": "1981-93: base 225 slant-6 (top-fed hydraulic tappets); replaced by the 3.9 V6 for 1988"
+     },
+     {
+      "name": "EPA fueleconomy.gov vehicle data",
+      "url": "https://www.fueleconomy.gov/feg/download.shtml",
+      "says": "1984: 3.7 L 6-cyl in D100/D150 2WD and W100/W150 4WD"
+     },
+     {
+      "name": "Flory, American Light Trucks and Utility Vehicles 1967-1989 (McFarland 2019), Dodge chapter (Google Books snippet)",
+      "url": "https://books.google.com/books?id=Az-7DwAAQBAJ&pg=PA1012",
+      "says": "225 CID (3.7L), 1-bbl., 6-cyl. 95 @ 3600 / 170 @ 1600, code H"
+     }
+    ],
+    "independent_sources": 3,
+    "status": "three_sources_not_nhra",
+    "note": ""
+   },
+   {
+    "gen": "gen3",
+    "cid": 318,
+    "hp": null,
+    "hp_basis": "net",
+    "name": "5.2L / 318 V8 2-bbl",
+    "rpo": "",
+    "common_name": "LA 318",
+    "trims": [
+     "D150",
+     "W150"
+    ],
+    "nhra": false,
+    "sources": [
+     {
+      "name": "Wikipedia - Dodge D series (with Chrysler LA engine article; counted once)",
+      "url": "https://en.wikipedia.org/wiki/Dodge_D_series",
+      "says": "1981-93: 318 LA V8 offered"
+     },
+     {
+      "name": "EPA fueleconomy.gov vehicle data",
+      "url": "https://www.fueleconomy.gov/feg/download.shtml",
+      "says": "1984: 5.2 L 8-cyl in D100/D150 2WD and W100/W150 4WD"
+     },
+     {
+      "name": "Flory, American Light Trucks and Utility Vehicles 1967-1989 (McFarland 2019), Dodge chapter (Google Books snippet)",
+      "url": "https://books.google.com/books?id=Az-7DwAAQBAJ&pg=PA1012",
+      "says": "1984 table: 318 CID (5.2L), 2-bbl., V8 row"
+     }
+    ],
+    "independent_sources": 3,
+    "status": "three_sources_not_nhra",
+    "note": "Rating not found for 1984."
+   },
+   {
+    "gen": "gen3",
+    "cid": 360,
+    "hp": null,
+    "hp_basis": "net",
+    "name": "5.9L / 360 V8 4-bbl",
+    "rpo": "",
+    "common_name": "LA 360",
+    "trims": [
+     "D150",
+     "W150"
+    ],
+    "nhra": false,
+    "sources": [
+     {
+      "name": "Wikipedia - Dodge D series (with Chrysler LA engine article; counted once)",
+      "url": "https://en.wikipedia.org/wiki/Dodge_D_series",
+      "says": "1981-93: 360 LA V8 offered"
+     },
+     {
+      "name": "EPA fueleconomy.gov vehicle data",
+      "url": "https://www.fueleconomy.gov/feg/download.shtml",
+      "says": "1984: 5.9 L 8-cyl in D100/D150 2WD and W100/W150 4WD"
+     },
+     {
+      "name": "Flory, American Light Trucks and Utility Vehicles 1967-1989 (McFarland 2019), Dodge chapter (Google Books snippet)",
+      "url": "https://books.google.com/books?id=Az-7DwAAQBAJ&pg=PA1012",
+      "says": "1984 table (360 search hit)"
+     }
+    ],
+    "independent_sources": 3,
+    "status": "three_sources_not_nhra",
+    "note": "Rating not found."
+   }
+  ],
+  "1985": [
+   {
+    "gen": "gen3",
+    "cid": 225,
+    "hp": 95,
+    "hp_basis": "net",
+    "name": "3.7L / 225 Slant Six 1-bbl",
+    "rpo": "",
+    "common_name": "Slant Six 225",
+    "trims": [
+     "D150",
+     "W150"
+    ],
+    "nhra": false,
+    "sources": [
+     {
+      "name": "Wikipedia - Dodge D series (with Chrysler LA engine article; counted once)",
+      "url": "https://en.wikipedia.org/wiki/Dodge_D_series",
+      "says": "1981-93: base 225 slant-6 (top-fed hydraulic tappets); replaced by the 3.9 V6 for 1988"
+     },
+     {
+      "name": "EPA fueleconomy.gov vehicle data",
+      "url": "https://www.fueleconomy.gov/feg/download.shtml",
+      "says": "1985: 3.7 L 6-cyl in D100/D150 2WD and W100/W150 4WD"
+     },
+     {
+      "name": "Flory, American Light Trucks and Utility Vehicles 1967-1989 (McFarland 2019), Dodge chapter (Google Books snippet)",
+      "url": "https://books.google.com/books?id=Az-7DwAAQBAJ&pg=PA1080",
+      "says": "225 CID (3.7L), 1-bbl., 6-cyl. 95 @ 3600 / 170 @ 1600, code H"
+     }
+    ],
+    "independent_sources": 3,
+    "status": "three_sources_not_nhra",
+    "note": ""
+   },
+   {
+    "gen": "gen3",
+    "cid": 318,
+    "hp": null,
+    "hp_basis": "net",
+    "name": "5.2L / 318 V8 2-bbl",
+    "rpo": "",
+    "common_name": "LA 318",
+    "trims": [
+     "D150",
+     "W150"
+    ],
+    "nhra": false,
+    "sources": [
+     {
+      "name": "Wikipedia - Dodge D series (with Chrysler LA engine article; counted once)",
+      "url": "https://en.wikipedia.org/wiki/Dodge_D_series",
+      "says": "1981-93: 318 LA V8 offered"
+     },
+     {
+      "name": "EPA fueleconomy.gov vehicle data",
+      "url": "https://www.fueleconomy.gov/feg/download.shtml",
+      "says": "1985: 5.2 L 8-cyl in D100/D150 2WD and W100/W150 4WD"
+     },
+     {
+      "name": "Flory, American Light Trucks and Utility Vehicles 1967-1989 (McFarland 2019), Dodge chapter (Google Books snippet)",
+      "url": "https://books.google.com/books?id=Az-7DwAAQBAJ&pg=PA1080",
+      "says": "1985 table: 318 row"
+     }
+    ],
+    "independent_sources": 3,
+    "status": "three_sources_not_nhra",
+    "note": "Rating not found for 1985."
+   },
+   {
+    "gen": "gen3",
+    "cid": 360,
+    "hp": 175,
+    "hp_basis": "net",
+    "name": "5.9L / 360 V8 4-bbl",
+    "rpo": "",
+    "common_name": "LA 360",
+    "trims": [
+     "D150",
+     "W150"
+    ],
+    "nhra": false,
+    "sources": [
+     {
+      "name": "Wikipedia - Dodge D series (with Chrysler LA engine article; counted once)",
+      "url": "https://en.wikipedia.org/wiki/Dodge_D_series",
+      "says": "1981-93: 360 LA V8 offered"
+     },
+     {
+      "name": "EPA fueleconomy.gov vehicle data",
+      "url": "https://www.fueleconomy.gov/feg/download.shtml",
+      "says": "1985: 5.9 L 8-cyl in D100/D150 2WD and W100/W150 4WD"
+     },
+     {
+      "name": "Flory, American Light Trucks and Utility Vehicles 1967-1989 (McFarland 2019), Dodge chapter (Google Books snippet)",
+      "url": "https://books.google.com/books?id=Az-7DwAAQBAJ&pg=PA1081",
+      "says": "360 CID (5.9L), 4-bbl., V8 175 @ 4000 / 280 @ 2000, code W, 'Ram D100/D150' columns"
+     }
+    ],
+    "independent_sources": 3,
+    "status": "three_sources_not_nhra",
+    "note": ""
+   }
+  ],
+  "1986": [
+   {
+    "gen": "gen3",
+    "cid": 225,
+    "hp": 95,
+    "hp_basis": "net",
+    "name": "3.7L / 225 Slant Six 1-bbl",
+    "rpo": "",
+    "common_name": "Slant Six 225",
+    "trims": [
+     "D150",
+     "W150"
+    ],
+    "nhra": true,
+    "sources": [
+     {
+      "name": "Wikipedia - Dodge D series (with Chrysler LA engine article; counted once)",
+      "url": "https://en.wikipedia.org/wiki/Dodge_D_series",
+      "says": "1981-93: base 225 slant-6 (top-fed hydraulic tappets); replaced by the 3.9 V6 for 1988"
+     },
+     {
+      "name": "EPA fueleconomy.gov vehicle data",
+      "url": "https://www.fueleconomy.gov/feg/download.shtml",
+      "says": "1986: 3.7 L 6-cyl in D100/D150 2WD and W100/W150 4WD"
+     },
+     {
+      "name": "Flory, American Light Trucks and Utility Vehicles 1967-1989 (McFarland 2019), Dodge chapter (Google Books snippet)",
+      "url": "https://books.google.com/books?id=Az-7DwAAQBAJ&pg=PA1145",
+      "says": "225 CID (3.7L), 1-bbl. row, 1986 table"
+     },
+     {
+      "name": "NHRA Stock Car Classification Guide (nhra_dodge-dseries-1961-1993.json)",
+      "url": "nhra_dodge-dseries-1961-1993.json",
+      "says": "1986 RAM: 225 ci / 95 hp, C-225-04"
+     }
+    ],
+    "independent_sources": 3,
+    "status": "confirmed",
+    "note": ""
+   },
+   {
+    "gen": "gen3",
+    "cid": 318,
+    "hp": 145,
+    "hp_basis": "net",
+    "name": "5.2L / 318 V8 2-bbl",
+    "rpo": "",
+    "common_name": "LA 318",
+    "trims": [
+     "D150",
+     "W150"
+    ],
+    "nhra": true,
+    "sources": [
+     {
+      "name": "Wikipedia - Dodge D series (with Chrysler LA engine article; counted once)",
+      "url": "https://en.wikipedia.org/wiki/Dodge_D_series",
+      "says": "1981-93: 318 LA V8 offered"
+     },
+     {
+      "name": "EPA fueleconomy.gov vehicle data",
+      "url": "https://www.fueleconomy.gov/feg/download.shtml",
+      "says": "1986: 5.2 L 8-cyl in D100/D150 2WD and W100/W150 4WD"
+     },
+     {
+      "name": "Flory, American Light Trucks and Utility Vehicles 1967-1989 (McFarland 2019), Dodge chapter (Google Books snippet)",
+      "url": "https://books.google.com/books?id=Az-7DwAAQBAJ&pg=PA1145",
+      "says": "318 CID (5.2L), 2-bbl., V8 150 @ 4000 / 255 @ 2000, code T"
+     },
+     {
+      "name": "NHRA Stock Car Classification Guide (nhra_dodge-dseries-1961-1993.json)",
+      "url": "nhra_dodge-dseries-1961-1993.json",
+      "says": "1986 RAM: 318 ci / 145 hp (C-318-34)"
+     }
+    ],
+    "independent_sources": 3,
+    "status": "confirmed",
+    "note": "NHRA lists 145 hp; Flory's 1986 table gives 150 @ 4000. 145 recorded (matches 1987)."
+   },
+   {
+    "gen": "gen3",
+    "cid": 318,
+    "hp": 165,
+    "hp_basis": "net",
+    "name": "5.2L / 318 V8 4-bbl",
+    "rpo": "",
+    "common_name": "LA 318 4-bbl",
+    "trims": [
+     "D150",
+     "W150"
+    ],
+    "nhra": true,
+    "sources": [
+     {
+      "name": "Wikipedia - Dodge D series (with Chrysler LA engine article; counted once)",
+      "url": "https://en.wikipedia.org/wiki/Dodge_D_series",
+      "says": "1981-93: 318 LA V8 offered"
+     },
+     {
+      "name": "NHRA Stock Car Classification Guide (nhra_dodge-dseries-1961-1993.json)",
+      "url": "nhra_dodge-dseries-1961-1993.json",
+      "says": "1986 RAM: 318 ci / 165 hp (C-318-13)"
+     },
+     {
+      "name": "EPA fueleconomy.gov vehicle data",
+      "url": "https://www.fueleconomy.gov/feg/download.shtml",
+      "says": "1986: 5.2 L 8-cyl in D100/D150 2WD and W100/W150 4WD"
+     }
+    ],
+    "independent_sources": 2,
+    "status": "confirmed",
+    "note": "Only NHRA, EPA (cannot separate 2-bbl/4-bbl) and Wikipedia (generic)."
+   },
+   {
+    "gen": "gen3",
+    "cid": 360,
+    "hp": 180,
+    "hp_basis": "net",
+    "name": "5.9L / 360 V8 4-bbl",
+    "rpo": "",
+    "common_name": "LA 360",
+    "trims": [
+     "D150",
+     "W150"
+    ],
+    "nhra": true,
+    "sources": [
+     {
+      "name": "Wikipedia - Dodge D series (with Chrysler LA engine article; counted once)",
+      "url": "https://en.wikipedia.org/wiki/Dodge_D_series",
+      "says": "1981-93: 360 LA V8 offered"
+     },
+     {
+      "name": "EPA fueleconomy.gov vehicle data",
+      "url": "https://www.fueleconomy.gov/feg/download.shtml",
+      "says": "1986: 5.9 L 8-cyl in D100/D150 2WD and W100/W150 4WD"
+     },
+     {
+      "name": "Flory, American Light Trucks and Utility Vehicles 1967-1989 (McFarland 2019), Dodge chapter (Google Books snippet)",
+      "url": "https://books.google.com/books?id=Az-7DwAAQBAJ&pg=PA1145",
+      "says": "360 CID (5.9L), 4-bbl., V8 175 @ 4000 / 280 @ 2000, code W"
+     },
+     {
+      "name": "NHRA Stock Car Classification Guide (nhra_dodge-dseries-1961-1993.json)",
+      "url": "nhra_dodge-dseries-1961-1993.json",
+      "says": "1986 RAM: 360 ci / 170 hp (C-360-16) and 360 ci / 180 hp (C-360-09)"
+     }
+    ],
+    "independent_sources": 3,
+    "status": "disputed",
+    "note": "Engine confirmed; rating disputed: NHRA lists 170 and 180 hp rows, Flory gives 175."
+   }
+  ],
+  "1987": [
+   {
+    "gen": "gen3",
+    "cid": 225,
+    "hp": 95,
+    "hp_basis": "net",
+    "name": "3.7L / 225 Slant Six 1-bbl",
+    "rpo": "",
+    "common_name": "Slant Six 225",
+    "trims": [
+     "D150",
+     "W150"
+    ],
+    "nhra": false,
+    "sources": [
+     {
+      "name": "Wikipedia - Dodge D series (with Chrysler LA engine article; counted once)",
+      "url": "https://en.wikipedia.org/wiki/Dodge_D_series",
+      "says": "1981-93: base 225 slant-6 (top-fed hydraulic tappets); replaced by the 3.9 V6 for 1988"
+     },
+     {
+      "name": "EPA fueleconomy.gov vehicle data",
+      "url": "https://www.fueleconomy.gov/feg/download.shtml",
+      "says": "1987: 3.7 L 6-cyl in D100/D150 2WD and W100/W150 4WD"
+     },
+     {
+      "name": "Dodge 1987 Pickup brochure",
+      "url": "https://oldcarbrochures.org/United%20States/Chrysler%20Trucks%20and%20Vans/1987%20Trucks%20and%20Vans/1987%20Dodge%20Pickup/index.html",
+      "says": "Standard engine in W150 models is the 3.7-liter 225 CID Slant Six"
+     }
+    ],
+    "independent_sources": 3,
+    "status": "three_sources_not_nhra",
+    "note": "Last year of the Slant Six in the half-ton."
+   },
+   {
+    "gen": "gen3",
+    "cid": 318,
+    "hp": 145,
+    "hp_basis": "net",
+    "name": "5.2L / 318 V8 2-bbl",
+    "rpo": "",
+    "common_name": "LA 318",
+    "trims": [
+     "D150",
+     "W150"
+    ],
+    "nhra": false,
+    "sources": [
+     {
+      "name": "Wikipedia - Dodge D series (with Chrysler LA engine article; counted once)",
+      "url": "https://en.wikipedia.org/wiki/Dodge_D_series",
+      "says": "1981-93: 318 LA V8 offered"
+     },
+     {
+      "name": "EPA fueleconomy.gov vehicle data",
+      "url": "https://www.fueleconomy.gov/feg/download.shtml",
+      "says": "1987: 5.2 L 8-cyl in D100/D150 2WD and W100/W150 4WD"
+     },
+     {
+      "name": "Dodge 1987 Pickup brochure",
+      "url": "https://oldcarbrochures.org/United%20States/Chrysler%20Trucks%20and%20Vans/1987%20Trucks%20and%20Vans/1987%20Dodge%20Pickup/index.html",
+      "says": "Other power choices include the 5.2-liter 318 CID V8 and the 5.9-liter 360 CID V8"
+     },
+     {
+      "name": "Flory, American Light Trucks and Utility Vehicles 1967-1989 (McFarland 2019), Dodge chapter (Google Books snippet)",
+      "url": "https://books.google.com/books?id=Az-7DwAAQBAJ&pg=PA1211",
+      "says": "318 CID (5.2L), 145 @ 3600, code T"
+     }
+    ],
+    "independent_sources": 4,
+    "status": "three_sources_not_nhra",
+    "note": ""
+   },
+   {
+    "gen": "gen3",
+    "cid": 360,
+    "hp": null,
+    "hp_basis": "net",
+    "name": "5.9L / 360 V8 4-bbl",
+    "rpo": "",
+    "common_name": "LA 360",
+    "trims": [
+     "D150",
+     "W150"
+    ],
+    "nhra": false,
+    "sources": [
+     {
+      "name": "Wikipedia - Dodge D series (with Chrysler LA engine article; counted once)",
+      "url": "https://en.wikipedia.org/wiki/Dodge_D_series",
+      "says": "1981-93: 360 LA V8 offered"
+     },
+     {
+      "name": "EPA fueleconomy.gov vehicle data",
+      "url": "https://www.fueleconomy.gov/feg/download.shtml",
+      "says": "1987: 5.9 L 8-cyl in D100/D150 2WD and W100/W150 4WD"
+     },
+     {
+      "name": "Dodge 1987 Pickup brochure",
+      "url": "https://oldcarbrochures.org/United%20States/Chrysler%20Trucks%20and%20Vans/1987%20Trucks%20and%20Vans/1987%20Dodge%20Pickup/index.html",
+      "says": "W150: the commanding 5.9-liter 360 CID V8 optional"
+     }
+    ],
+    "independent_sources": 3,
+    "status": "three_sources_not_nhra",
+    "note": "Rating not found."
+   }
+  ],
+  "1988": [
+   {
+    "gen": "gen3",
+    "cid": 239,
+    "hp": 125,
+    "hp_basis": "net",
+    "name": "3.9L / 239 V6 TBI",
+    "rpo": "",
+    "common_name": "LA 3.9 V6",
+    "trims": [
+     "D150 (EPA 2WD only in 1988)"
+    ],
+    "nhra": false,
+    "sources": [
+     {
+      "name": "Wikipedia - Dodge D series (with Chrysler LA engine article; counted once)",
+      "url": "https://en.wikipedia.org/wiki/Dodge_D_series",
+      "says": "The slant-6 was replaced by the 3.9 L V6 for 1988"
+     },
+     {
+      "name": "EPA fueleconomy.gov vehicle data",
+      "url": "https://www.fueleconomy.gov/feg/download.shtml",
+      "says": "1988: 3.9 L 6-cyl in D100/D150 2WD and W100/W150 4WD"
+     },
+     {
+      "name": "Dodge 1988 Full-Size Pickups brochure",
+      "url": "https://oldcarbrochures.org/United%20States/Chrysler%20Trucks%20and%20Vans/1988%20Trucks%20and%20Vans/1988%20Dodge%20Full-Size%20Pickups/index.html",
+      "says": "New 3.9-liter V-6 with electronic fuel injection, 125 hp @ 4,000 rpm, 195 lb-ft @ 2,000 (Ram 150)"
+     },
+     {
+      "name": "Flory, American Light Trucks and Utility Vehicles 1967-1989 (McFarland 2019), Dodge chapter (Google Books snippet)",
+      "url": "https://books.google.com/books?id=Az-7DwAAQBAJ&pg=PA1278",
+      "says": "239 CID (3.9L), EFI, V6 125 @ 4000 / 195 @ 2000, code M"
+     }
+    ],
+    "independent_sources": 4,
+    "status": "three_sources_not_nhra",
+    "note": "1988 EPA lists the 3.9 for the 2WD only."
+   },
+   {
+    "gen": "gen3",
+    "cid": 318,
+    "hp": 170,
+    "hp_basis": "net",
+    "name": "5.2L / 318 V8 TBI",
+    "rpo": "",
+    "common_name": "LA 318 EFI",
+    "trims": [
+     "D150",
+     "W150"
+    ],
+    "nhra": false,
+    "sources": [
+     {
+      "name": "Wikipedia - Dodge D series (with Chrysler LA engine article; counted once)",
+      "url": "https://en.wikipedia.org/wiki/Dodge_D_series",
+      "says": "318 LA V8; throttle-body EFI for trucks 1988-1991"
+     },
+     {
+      "name": "EPA fueleconomy.gov vehicle data",
+      "url": "https://www.fueleconomy.gov/feg/download.shtml",
+      "says": "1988: 5.2 L 8-cyl in D100/D150 2WD and W100/W150 4WD"
+     },
+     {
+      "name": "Dodge 1988 Full-Size Pickups brochure",
+      "url": "https://oldcarbrochures.org/United%20States/Chrysler%20Trucks%20and%20Vans/1988%20Trucks%20and%20Vans/1988%20Dodge%20Full-Size%20Pickups/index.html",
+      "says": "5.2-liter EFI engine develops 170 horsepower at 4,000 rpm and 260 lb-ft at 2,000; standard on Power Ram W150"
+     }
+    ],
+    "independent_sources": 3,
+    "status": "three_sources_not_nhra",
+    "note": "Flory's 1988 table snippet reads '318 CID (5.2L), 145 @ 3600 / EFI ... 260 @ 2000'; Dodge says 170 @ 4000. Dodge figure used."
+   },
+   {
+    "gen": "gen3",
+    "cid": 360,
+    "hp": 185,
+    "hp_basis": "net",
+    "name": "5.9L / 360 V8 4-bbl",
+    "rpo": "",
+    "common_name": "LA 360",
+    "trims": [
+     "D150",
+     "W150"
+    ],
+    "nhra": false,
+    "sources": [
+     {
+      "name": "Wikipedia - Dodge D series (with Chrysler LA engine article; counted once)",
+      "url": "https://en.wikipedia.org/wiki/Dodge_D_series",
+      "says": "360 LA V8 offered 1981-93; engine table gives 193 hp for 1988-93"
+     },
+     {
+      "name": "EPA fueleconomy.gov vehicle data",
+      "url": "https://www.fueleconomy.gov/feg/download.shtml",
+      "says": "1988: 5.9 L 8-cyl in D100/D150 2WD and W100/W150 4WD"
+     },
+     {
+      "name": "Dodge 1988 Full-Size Pickups brochure",
+      "url": "https://oldcarbrochures.org/United%20States/Chrysler%20Trucks%20and%20Vans/1988%20Trucks%20and%20Vans/1988%20Dodge%20Full-Size%20Pickups/index.html",
+      "says": "360 CID V-8 available, 185 hp @ 4,000 rpm and 283 lb-ft @ 1,600"
+     },
+     {
+      "name": "Flory, American Light Trucks and Utility Vehicles 1967-1989 (McFarland 2019), Dodge chapter (Google Books snippet)",
+      "url": "https://books.google.com/books?id=Az-7DwAAQBAJ&pg=PA1279",
+      "says": "360 CID (5.9L), 4-bbl., V8 190 @ 4000 / 285 @ 2000, code W"
+     }
+    ],
+    "independent_sources": 4,
+    "status": "three_sources_not_nhra",
+    "note": "Dodge 1988 brochure 185 hp; Flory 190 hp; Wikipedia table 193 hp (1988-93)."
+   }
+  ],
+  "1989": [
+   {
+    "gen": "gen3",
+    "cid": 239,
+    "hp": 125,
+    "hp_basis": "net",
+    "name": "3.9L / 239 V6 TBI",
+    "rpo": "",
+    "common_name": "LA 3.9 V6",
+    "trims": [
+     "D150",
+     "W150"
+    ],
+    "nhra": false,
+    "sources": [
+     {
+      "name": "Wikipedia - Dodge D series (with Chrysler LA engine article; counted once)",
+      "url": "https://en.wikipedia.org/wiki/Dodge_D_series",
+      "says": "The slant-6 was replaced by the 3.9 L V6 for 1988"
+     },
+     {
+      "name": "EPA fueleconomy.gov vehicle data",
+      "url": "https://www.fueleconomy.gov/feg/download.shtml",
+      "says": "1989: 3.9 L 6-cyl in D100/D150 2WD and W100/W150 4WD"
+     }
+    ],
+    "independent_sources": 2,
+    "status": "two_sources_not_nhra",
+    "note": "No 1989 brochure online; Wikipedia + EPA only."
+   },
+   {
+    "gen": "gen3",
+    "cid": 318,
+    "hp": 170,
+    "hp_basis": "net",
+    "name": "5.2L / 318 V8 TBI",
+    "rpo": "",
+    "common_name": "LA 318 EFI",
+    "trims": [
+     "D150",
+     "W150"
+    ],
+    "nhra": false,
+    "sources": [
+     {
+      "name": "Wikipedia - Dodge D series (with Chrysler LA engine article; counted once)",
+      "url": "https://en.wikipedia.org/wiki/Dodge_D_series",
+      "says": "318 LA V8; throttle-body EFI for trucks 1988-1991"
+     },
+     {
+      "name": "EPA fueleconomy.gov vehicle data",
+      "url": "https://www.fueleconomy.gov/feg/download.shtml",
+      "says": "1989: 5.2 L 8-cyl in D100/D150 2WD and W100/W150 4WD"
+     }
+    ],
+    "independent_sources": 2,
+    "status": "two_sources_not_nhra",
+    "note": "No 1989 brochure online; Wikipedia + EPA only."
+   },
+   {
+    "gen": "gen3",
+    "cid": 360,
+    "hp": 190,
+    "hp_basis": "net",
+    "name": "5.9L / 360 V8 TBI",
+    "rpo": "",
+    "common_name": "LA 360",
+    "trims": [
+     "D150",
+     "W150"
+    ],
+    "nhra": false,
+    "sources": [
+     {
+      "name": "Wikipedia - Dodge D series (with Chrysler LA engine article; counted once)",
+      "url": "https://en.wikipedia.org/wiki/Dodge_D_series",
+      "says": "360 LA V8 offered 1981-93; engine table gives 193 hp for 1988-93"
+     },
+     {
+      "name": "EPA fueleconomy.gov vehicle data",
+      "url": "https://www.fueleconomy.gov/feg/download.shtml",
+      "says": "1989: 5.9 L 8-cyl in D100/D150 2WD and W100/W150 4WD"
+     }
+    ],
+    "independent_sources": 2,
+    "status": "two_sources_not_nhra",
+    "note": "Carbureted through 1988; TBI from 1989 (Wikipedia LA)."
+   }
+  ],
+  "1990": [
+   {
+    "gen": "gen3",
+    "cid": 239,
+    "hp": 125,
+    "hp_basis": "net",
+    "name": "3.9L / 239 V6 TBI",
+    "rpo": "",
+    "common_name": "LA 3.9 V6",
+    "trims": [
+     "D150",
+     "W150"
+    ],
+    "nhra": false,
+    "sources": [
+     {
+      "name": "Wikipedia - Dodge D series (with Chrysler LA engine article; counted once)",
+      "url": "https://en.wikipedia.org/wiki/Dodge_D_series",
+      "says": "The slant-6 was replaced by the 3.9 L V6 for 1988"
+     },
+     {
+      "name": "EPA fueleconomy.gov vehicle data",
+      "url": "https://www.fueleconomy.gov/feg/download.shtml",
+      "says": "1990: 3.9 L 6-cyl in D100/D150 2WD and W100/W150 4WD"
+     },
+     {
+      "name": "Dodge 1990 Ram Pickups brochure",
+      "url": "https://oldcarbrochures.org/United%20States/Chrysler%20Trucks%20and%20Vans/1990-Trucks-and-Vans/1990-Dodge-Ram-Pickups-Brochure/index.html",
+      "says": "Standard 3.9-liter EFI V-6, 125 horsepower at 4,000 rpm (D150)"
+     },
+     {
+      "name": "Dodge 1990 Trucks brochure",
+      "url": "https://oldcarbrochures.org/United%20States/Chrysler%20Trucks%20and%20Vans/1990-Trucks-and-Vans/1990-Dodge-Trucks-Brochure/index.html",
+      "says": "Ram D150 features a standard 3.9-liter EFI engine"
+     },
+     {
+      "name": "Consumer Guide - 1990-93 Dodge Ram Pickup (used-vehicle review, specifications)",
+      "url": "https://consumerguide.com/used/1990-93-dodge-ram-pickup",
+      "says": "3.9L V6 125 hp until 1992"
+     }
+    ],
+    "independent_sources": 4,
+    "status": "three_sources_not_nhra",
+    "note": ""
+   },
+   {
+    "gen": "gen3",
+    "cid": 318,
+    "hp": 170,
+    "hp_basis": "net",
+    "name": "5.2L / 318 V8 TBI",
+    "rpo": "",
+    "common_name": "LA 318 EFI",
+    "trims": [
+     "D150",
+     "W150"
+    ],
+    "nhra": false,
+    "sources": [
+     {
+      "name": "Wikipedia - Dodge D series (with Chrysler LA engine article; counted once)",
+      "url": "https://en.wikipedia.org/wiki/Dodge_D_series",
+      "says": "318 LA V8; throttle-body EFI for trucks 1988-1991"
+     },
+     {
+      "name": "EPA fueleconomy.gov vehicle data",
+      "url": "https://www.fueleconomy.gov/feg/download.shtml",
+      "says": "1990: 5.2 L 8-cyl in D100/D150 2WD and W100/W150 4WD"
+     },
+     {
+      "name": "Consumer Guide - 1990-93 Dodge Ram Pickup (used-vehicle review, specifications)",
+      "url": "https://consumerguide.com/used/1990-93-dodge-ram-pickup",
+      "says": "5.2L V8 170 hp (1990-91); went to 230 hp for 1992"
+     }
+    ],
+    "independent_sources": 3,
+    "status": "three_sources_not_nhra",
+    "note": ""
+   },
+   {
+    "gen": "gen3",
+    "cid": 360,
+    "hp": 190,
+    "hp_basis": "net",
+    "name": "5.9L / 360 V8 TBI",
+    "rpo": "",
+    "common_name": "LA 360",
+    "trims": [
+     "D150",
+     "W150"
+    ],
+    "nhra": false,
+    "sources": [
+     {
+      "name": "Wikipedia - Dodge D series (with Chrysler LA engine article; counted once)",
+      "url": "https://en.wikipedia.org/wiki/Dodge_D_series",
+      "says": "360 LA V8 offered 1981-93; engine table gives 193 hp for 1988-93"
+     },
+     {
+      "name": "EPA fueleconomy.gov vehicle data",
+      "url": "https://www.fueleconomy.gov/feg/download.shtml",
+      "says": "1990: 5.9 L 8-cyl in D100/D150 2WD and W100/W150 4WD"
+     },
+     {
+      "name": "Consumer Guide - 1990-93 Dodge Ram Pickup (used-vehicle review, specifications)",
+      "url": "https://consumerguide.com/used/1990-93-dodge-ram-pickup",
+      "says": "5.9L V8 190 hp until 1993 (MPI, 230 hp)"
+     }
+    ],
+    "independent_sources": 3,
+    "status": "three_sources_not_nhra",
+    "note": ""
+   }
+  ],
+  "1991": [
+   {
+    "gen": "gen3",
+    "cid": 239,
+    "hp": 125,
+    "hp_basis": "net",
+    "name": "3.9L / 239 V6 TBI",
+    "rpo": "",
+    "common_name": "LA 3.9 V6",
+    "trims": [
+     "D150",
+     "W150"
+    ],
+    "nhra": false,
+    "sources": [
+     {
+      "name": "Wikipedia - Dodge D series (with Chrysler LA engine article; counted once)",
+      "url": "https://en.wikipedia.org/wiki/Dodge_D_series",
+      "says": "The slant-6 was replaced by the 3.9 L V6 for 1988"
+     },
+     {
+      "name": "EPA fueleconomy.gov vehicle data",
+      "url": "https://www.fueleconomy.gov/feg/download.shtml",
+      "says": "1991: 3.9 L 6-cyl in D100/D150 2WD and W100/W150 4WD"
+     },
+     {
+      "name": "Consumer Guide - 1990-93 Dodge Ram Pickup (used-vehicle review, specifications)",
+      "url": "https://consumerguide.com/used/1990-93-dodge-ram-pickup",
+      "says": "3.9L V6 went from 125 to 180 hp for 1992"
+     }
+    ],
+    "independent_sources": 3,
+    "status": "three_sources_not_nhra",
+    "note": ""
+   },
+   {
+    "gen": "gen3",
+    "cid": 318,
+    "hp": 170,
+    "hp_basis": "net",
+    "name": "5.2L / 318 V8 TBI",
+    "rpo": "",
+    "common_name": "LA 318 EFI",
+    "trims": [
+     "D150",
+     "W150"
+    ],
+    "nhra": false,
+    "sources": [
+     {
+      "name": "Wikipedia - Dodge D series (with Chrysler LA engine article; counted once)",
+      "url": "https://en.wikipedia.org/wiki/Dodge_D_series",
+      "says": "318 LA V8; throttle-body EFI for trucks 1988-1991"
+     },
+     {
+      "name": "EPA fueleconomy.gov vehicle data",
+      "url": "https://www.fueleconomy.gov/feg/download.shtml",
+      "says": "1991: 5.2 L 8-cyl in D100/D150 2WD and W100/W150 4WD"
+     },
+     {
+      "name": "Dodge 1991 Truck foldout",
+      "url": "https://oldcarbrochures.org/United%20States/Chrysler%20Trucks%20and%20Vans/1991-Trucks-and-Vans/1991-Dodge-Truck-Foldout/index.html",
+      "says": "EFI 5.2-liter (318) V8 170 hp @ 4,000, 260 lb-ft @ 2,000 (Dakota text, same engine)"
+     },
+     {
+      "name": "Consumer Guide - 1990-93 Dodge Ram Pickup (used-vehicle review, specifications)",
+      "url": "https://consumerguide.com/used/1990-93-dodge-ram-pickup",
+      "says": "5.2L V8 170 hp until 1992"
+     }
+    ],
+    "independent_sources": 4,
+    "status": "three_sources_not_nhra",
+    "note": ""
+   },
+   {
+    "gen": "gen3",
+    "cid": 360,
+    "hp": 190,
+    "hp_basis": "net",
+    "name": "5.9L / 360 V8 TBI",
+    "rpo": "",
+    "common_name": "LA 360",
+    "trims": [
+     "D150",
+     "W150"
+    ],
+    "nhra": false,
+    "sources": [
+     {
+      "name": "Wikipedia - Dodge D series (with Chrysler LA engine article; counted once)",
+      "url": "https://en.wikipedia.org/wiki/Dodge_D_series",
+      "says": "360 LA V8 offered 1981-93; engine table gives 193 hp for 1988-93"
+     },
+     {
+      "name": "EPA fueleconomy.gov vehicle data",
+      "url": "https://www.fueleconomy.gov/feg/download.shtml",
+      "says": "1991: 5.9 L 8-cyl in D100/D150 2WD and W100/W150 4WD"
+     },
+     {
+      "name": "Consumer Guide - 1990-93 Dodge Ram Pickup (used-vehicle review, specifications)",
+      "url": "https://consumerguide.com/used/1990-93-dodge-ram-pickup",
+      "says": "5.9L V8 190 hp until 1993 (MPI, 230 hp)"
+     }
+    ],
+    "independent_sources": 3,
+    "status": "three_sources_not_nhra",
+    "note": ""
+   }
+  ],
+  "1992": [
+   {
+    "gen": "gen3",
+    "cid": 360,
+    "hp": 190,
+    "hp_basis": "net",
+    "name": "5.9L / 360 V8 TBI",
+    "rpo": "",
+    "common_name": "LA 360",
+    "trims": [
+     "D150",
+     "W150"
+    ],
+    "nhra": true,
+    "sources": [
+     {
+      "name": "Wikipedia - Dodge D series (with Chrysler LA engine article; counted once)",
+      "url": "https://en.wikipedia.org/wiki/Dodge_D_series",
+      "says": "360 LA V8 offered 1981-93; engine table gives 193 hp for 1988-93"
+     },
+     {
+      "name": "EPA fueleconomy.gov vehicle data",
+      "url": "https://www.fueleconomy.gov/feg/download.shtml",
+      "says": "1992: 5.9 L 8-cyl in D100/D150 2WD and W100/W150 4WD"
+     },
+     {
+      "name": "Consumer Guide - 1990-93 Dodge Ram Pickup (used-vehicle review, specifications)",
+      "url": "https://consumerguide.com/used/1990-93-dodge-ram-pickup",
+      "says": "5.9L V8 190 hp until 1993 (MPI, 230 hp)"
+     },
+     {
+      "name": "NHRA Stock Car Classification Guide (nhra_dodge-dseries-1961-1993.json)",
+      "url": "nhra_dodge-dseries-1961-1993.json",
+      "says": "1992 D150: 360 ci / 190 hp (C-360-07) and 360 ci / 205 hp (C-360-06)"
+     }
+    ],
+    "independent_sources": 3,
+    "status": "confirmed",
+    "note": "NHRA also lists a 360/205 row; Consumer Guide 190."
+   },
+   {
+    "gen": "gen3",
+    "cid": 239,
+    "hp": 180,
+    "hp_basis": "net",
+    "name": "3.9L / 239 Magnum V6",
+    "rpo": "Magnum 3.9",
+    "common_name": "Magnum 3.9",
+    "trims": [
+     "D150",
+     "W150"
+    ],
+    "nhra": false,
+    "sources": [
+     {
+      "name": "Wikipedia - Dodge D series (with Chrysler LA engine article; counted once)",
+      "url": "https://en.wikipedia.org/wiki/Dodge_D_series",
+      "says": "1992: V6 and V8s became Magnum engines; Magnum 3.9 180 hp"
+     },
+     {
+      "name": "EPA fueleconomy.gov vehicle data",
+      "url": "https://www.fueleconomy.gov/feg/download.shtml",
+      "says": "1992: 3.9 L 6-cyl in D100/D150 2WD and W100/W150 4WD"
+     },
+     {
+      "name": "Consumer Guide - 1990-93 Dodge Ram Pickup (used-vehicle review, specifications)",
+      "url": "https://consumerguide.com/used/1990-93-dodge-ram-pickup",
+      "says": "1992: V6 leaped from 125 to 180 horsepower (Magnum)"
+     }
+    ],
+    "independent_sources": 3,
+    "status": "three_sources_not_nhra",
+    "note": "NHRA has no 1992 row for the V6."
+   },
+   {
+    "gen": "gen3",
+    "cid": 318,
+    "hp": 230,
+    "hp_basis": "net",
+    "name": "5.2L / 318 Magnum V8",
+    "rpo": "Magnum 5.2",
+    "common_name": "Magnum 5.2",
+    "trims": [
+     "D150",
+     "W150"
+    ],
+    "nhra": false,
+    "sources": [
+     {
+      "name": "Wikipedia - Dodge D series (with Chrysler LA engine article; counted once)",
+      "url": "https://en.wikipedia.org/wiki/Dodge_D_series",
+      "says": "Magnum 5.2 introduced 1992"
+     },
+     {
+      "name": "EPA fueleconomy.gov vehicle data",
+      "url": "https://www.fueleconomy.gov/feg/download.shtml",
+      "says": "1992: 5.2 L 8-cyl in D100/D150 2WD and W100/W150 4WD"
+     },
+     {
+      "name": "Consumer Guide - 1990-93 Dodge Ram Pickup (used-vehicle review, specifications)",
+      "url": "https://consumerguide.com/used/1990-93-dodge-ram-pickup",
+      "says": "1992: 5.2-liter V8 went from 170 to 230 horsepower (Magnum)"
+     }
+    ],
+    "independent_sources": 3,
+    "status": "three_sources_not_nhra",
+    "note": "NHRA has no 1992 row for the 318."
+   }
+  ],
+  "1993": [
+   {
+    "gen": "gen3",
+    "cid": 239,
+    "hp": 180,
+    "hp_basis": "net",
+    "name": "3.9L / 239 Magnum V6",
+    "rpo": "Magnum 3.9",
+    "common_name": "Magnum 3.9",
+    "trims": [
+     "D150",
+     "W150"
+    ],
+    "nhra": true,
+    "sources": [
+     {
+      "name": "Wikipedia - Dodge D series (with Chrysler LA engine article; counted once)",
+      "url": "https://en.wikipedia.org/wiki/Dodge_D_series",
+      "says": "1992: V6 and V8s became Magnum engines; Magnum 3.9 180 hp"
+     },
+     {
+      "name": "EPA fueleconomy.gov vehicle data",
+      "url": "https://www.fueleconomy.gov/feg/download.shtml",
+      "says": "1993: 3.9 L 6-cyl in D100/D150 2WD and W100/W150 4WD"
+     },
+     {
+      "name": "Dodge 1993 Pickup Prestige brochure (engine captions pp.3-4)",
+      "url": "https://oldcarbrochures.org/United%20States/Chrysler%20Trucks%20and%20Vans/1993-Trucks-and-Vans/1993-Dodge-Pickup-Prestige-Brochure/index.html",
+      "says": "MAGNUM 3.9-liter V6: 180 horsepower @ 4,800 rpm; Ram Pickup 220 lb-ft @ 3,200"
+     },
+     {
+      "name": "Consumer Guide - 1990-93 Dodge Ram Pickup (used-vehicle review, specifications)",
+      "url": "https://consumerguide.com/used/1990-93-dodge-ram-pickup",
+      "says": "3.9L V6 180 hp"
+     },
+     {
+      "name": "NHRA Stock Car Classification Guide (nhra_dodge-dseries-1961-1993.json)",
+      "url": "nhra_dodge-dseries-1961-1993.json",
+      "says": "1993 D150: 239 ci / 180 hp (C-238-02)"
+     }
+    ],
+    "independent_sources": 4,
+    "status": "confirmed",
+    "note": ""
+   },
+   {
+    "gen": "gen3",
+    "cid": 318,
+    "hp": 230,
+    "hp_basis": "net",
+    "name": "5.2L / 318 Magnum V8",
+    "rpo": "Magnum 5.2",
+    "common_name": "Magnum 5.2",
+    "trims": [
+     "D150",
+     "W150"
+    ],
+    "nhra": true,
+    "sources": [
+     {
+      "name": "Wikipedia - Dodge D series (with Chrysler LA engine article; counted once)",
+      "url": "https://en.wikipedia.org/wiki/Dodge_D_series",
+      "says": "Magnum 5.2 introduced 1992"
+     },
+     {
+      "name": "EPA fueleconomy.gov vehicle data",
+      "url": "https://www.fueleconomy.gov/feg/download.shtml",
+      "says": "1993: 5.2 L 8-cyl in D100/D150 2WD and W100/W150 4WD"
+     },
+     {
+      "name": "Dodge 1993 Pickup Prestige brochure (engine captions pp.3-4)",
+      "url": "https://oldcarbrochures.org/United%20States/Chrysler%20Trucks%20and%20Vans/1993-Trucks-and-Vans/1993-Dodge-Pickup-Prestige-Brochure/index.html",
+      "says": "MAGNUM 5.2-liter V8: 230 horsepower @ 4,800 rpm, 280 lb-ft @ 3,200"
+     },
+     {
+      "name": "Consumer Guide - 1990-93 Dodge Ram Pickup (used-vehicle review, specifications)",
+      "url": "https://consumerguide.com/used/1990-93-dodge-ram-pickup",
+      "says": "5.2L V8 230 hp"
+     },
+     {
+      "name": "NHRA Stock Car Classification Guide (nhra_dodge-dseries-1961-1993.json)",
+      "url": "nhra_dodge-dseries-1961-1993.json",
+      "says": "1993 D150: 318 ci / 230 hp (C-318-23)"
+     }
+    ],
+    "independent_sources": 4,
+    "status": "confirmed",
+    "note": ""
+   },
+   {
+    "gen": "gen3",
+    "cid": 360,
+    "hp": 230,
+    "hp_basis": "net",
+    "name": "5.9L / 360 Magnum V8",
+    "rpo": "Magnum 5.9",
+    "common_name": "Magnum 5.9",
+    "trims": [
+     "D150",
+     "W150"
+    ],
+    "nhra": true,
+    "sources": [
+     {
+      "name": "Dodge 1993 Pickup Prestige brochure (engine captions pp.3-4)",
+      "url": "https://oldcarbrochures.org/United%20States/Chrysler%20Trucks%20and%20Vans/1993-Trucks-and-Vans/1993-Dodge-Pickup-Prestige-Brochure/index.html",
+      "says": "New MAGNUM 5.9-liter V8: 230 hp @ 4,000 rpm, 325 lb-ft @ 3,200 (light-duty cycle)"
+     },
+     {
+      "name": "Wikipedia - Dodge D series (with Chrysler LA engine article; counted once)",
+      "url": "https://en.wikipedia.org/wiki/Dodge_D_series",
+      "says": "1993: Magnum 5.9 L V8, standard 5.9 produced 230 hp"
+     },
+     {
+      "name": "EPA fueleconomy.gov vehicle data",
+      "url": "https://www.fueleconomy.gov/feg/download.shtml",
+      "says": "1993: 5.9 L 8-cyl in D100/D150 2WD and W100/W150 4WD"
+     },
+     {
+      "name": "Consumer Guide - 1990-93 Dodge Ram Pickup (used-vehicle review, specifications)",
+      "url": "https://consumerguide.com/used/1990-93-dodge-ram-pickup",
+      "says": "1993: 5.9-liter got multi-point injection, 190 to 230 hp"
+     },
+     {
+      "name": "NHRA Stock Car Classification Guide (nhra_dodge-dseries-1961-1993.json)",
+      "url": "nhra_dodge-dseries-1961-1993.json",
+      "says": "1993 D150: 360 ci / 230 hp (C-360-02)"
+     }
+    ],
+    "independent_sources": 4,
+    "status": "confirmed",
+    "note": ""
+   }
+  ]
+ },
+ "source_index": [
+  {
+   "name": "Curbside Classic - The Little Engines That Could, Part 2: How 170 Cubic Inches Of Dodge Rammed A Challenge By Volkswagen",
+   "url": "https://www.curbsideclassic.com/blog/brochure-capsule-the-little-engines-that-could-part-2/",
+   "type": "publication"
+  },
+  {
+   "name": "Wikipedia - Dodge D series (with Chrysler LA engine article; counted once)",
+   "url": "https://en.wikipedia.org/wiki/Dodge_D_series",
+   "type": "wikipedia"
+  },
+  {
+   "name": "Curbside Classic - Truckstop Classic: 1967 Dodge D-200 Camper Special (P. Niedermeyer)",
+   "url": "https://curbsideclassic.com/curbside-classics-american/truckstop-classic-1967-dodge-d-200-camper-special-were-number-three-so-we-try-harder-dude/",
+   "type": "publication"
+  },
+  {
+   "name": "Dodge 1962 D-Series Trucks brochure",
+   "url": "https://oldcarbrochures.org/United%20States/Chrysler%20Trucks%20and%20Vans/1962-Trucks/1962%20Dodge%20D-Series%20Trucks/index.html",
+   "type": "manufacturer"
+  },
+  {
+   "name": "Jalopnik - 1962 Dodge D100 Pickup Truck (M. Martin, Apr 21 2008)",
+   "url": "https://www.jalopnik.com/1962-dodge-d100-pickup-truck-381729/",
+   "type": "publication"
+  },
+  {
+   "name": "Curbside Classic - CC Outtake: 1962-1964 Dodge D100 Pickup",
+   "url": "https://www.curbsideclassic.com/blog/cc-outtake/cc-outtake-1962-1964-dodge-d100-pickup-a-face-from-the-past/",
+   "type": "publication"
+  },
+  {
+   "name": "Dodge 1963 Truck brochure (full line)",
+   "url": "https://oldcarbrochures.org/United%20States/Chrysler%20Trucks%20and%20Vans/1963_Trucks_and_Vans/1963_Dodge_Truck_Brochure/index.html",
+   "type": "manufacturer"
+  },
+  {
+   "name": "Dodge 1964 Custom Sports Special folder (filed under 1965 on the site; slides named 1964)",
+   "url": "https://oldcarbrochures.org/United%20States/Chrysler%20Trucks%20and%20Vans/1965-Trucks-and-Vans/1965%20Dodge%20Custom%20Sports%20Special%20Folder/index.html",
+   "type": "manufacturer"
+  },
+  {
+   "name": "Old Cars Weekly - MoPar + Truck = Muscle (A. Van Bogart, Dec 19 2022)",
+   "url": "https://www.oldcarsweekly.com/features/mopar-truck-muscle",
+   "type": "publication"
+  },
+  {
+   "name": "The Autopian - One Of The Rarest Classic Muscle Cars Is A Dodge Pickup Truck With A 426 V8 (M. Streeter, Mar 6 2025)",
+   "url": "https://www.theautopian.com/one-of-the-rarest-classic-muscle-cars-is-a-dodge-pickup-truck-with-a-426-v8/",
+   "type": "publication"
+  },
+  {
+   "name": "Dodge 1966 Pickups brochure",
+   "url": "https://oldcarbrochures.org/United%20States/Chrysler%20Trucks%20and%20Vans/1966-Trucks-and-Vans/1966-Dodge-Pickups-Brochure/index.html",
+   "type": "manufacturer"
+  },
+  {
+   "name": "Dodge 1966 4-Wheel-Drive Trucks brochure",
+   "url": "https://oldcarbrochures.org/United%20States/Chrysler%20Trucks%20and%20Vans/1966-Trucks-and-Vans/1966-Dodge-4WD-Truck-Brochure/index.html",
+   "type": "manufacturer"
+  },
+  {
+   "name": "Dodge 1967 Pickups brochure",
+   "url": "https://oldcarbrochures.org/United%20States/Chrysler%20Trucks%20and%20Vans/1967-Trucks-and-Vans/1967-Dodge-Pickups-Brochure/index.html",
+   "type": "manufacturer"
+  },
+  {
+   "name": "Flory, American Light Trucks and Utility Vehicles 1967-1989 (McFarland 2019), Dodge chapter (Google Books snippet)",
+   "url": "https://books.google.com/books?id=Az-7DwAAQBAJ&pg=PA34",
+   "type": "publication"
+  },
+  {
+   "name": "Flory, American Light Trucks and Utility Vehicles 1967-1989 (McFarland 2019), Dodge chapter (Google Books snippet)",
+   "url": "https://books.google.com/books?id=Az-7DwAAQBAJ&pg=PA82",
+   "type": "publication"
+  },
+  {
+   "name": "Flory, American Light Trucks and Utility Vehicles 1967-1989 (McFarland 2019), Dodge chapter (Google Books snippet)",
+   "url": "https://books.google.com/books?id=Az-7DwAAQBAJ&pg=PA131",
+   "type": "publication"
+  },
+  {
+   "name": "Dodge 1970 Pickups and Stakes brochure",
+   "url": "https://oldcarbrochures.org/United%20States/Chrysler%20Trucks%20and%20Vans/1970-Trucks-and-Vans/1970-Dodge-Pickups-and-Stakes-Brochure/index.html",
+   "type": "manufacturer"
+  },
+  {
+   "name": "Flory, American Light Trucks and Utility Vehicles 1967-1989 (McFarland 2019), Dodge chapter (Google Books snippet)",
+   "url": "https://books.google.com/books?id=Az-7DwAAQBAJ&pg=PA179",
+   "type": "publication"
+  },
+  {
+   "name": "Dodge 1971 Light Duty Trucks brochure",
+   "url": "https://oldcarbrochures.org/United%20States/Chrysler%20Trucks%20and%20Vans/1971-Trucks-and-Vans/1971-Dodge-Light-Duty-Trucks-Brochure/index.html",
+   "type": "manufacturer"
+  },
+  {
+   "name": "Flory, American Light Trucks and Utility Vehicles 1967-1989 (McFarland 2019), Dodge chapter (Google Books snippet)",
+   "url": "https://books.google.com/books?id=Az-7DwAAQBAJ&pg=PA229",
+   "type": "publication"
+  },
+  {
+   "name": "Flory, American Light Trucks and Utility Vehicles 1967-1989 (McFarland 2019), Dodge chapter (Google Books snippet)",
+   "url": "https://books.google.com/books?id=Az-7DwAAQBAJ&pg=PA230",
+   "type": "publication"
+  },
+  {
+   "name": "Drivingline - Uncommon Haulers: 1972-1980 Dodge D-Series Pickup Trucks (B. Hunting, Apr 20 2019)",
+   "url": "https://www.drivingline.com/articles/uncommon-haulers-1972-1980-dodge-d-series-pickup-trucks/",
+   "type": "publication"
+  },
+  {
+   "name": "Flory, American Light Trucks and Utility Vehicles 1967-1989 (McFarland 2019), Dodge chapter (Google Books snippet)",
+   "url": "https://books.google.com/books?id=Az-7DwAAQBAJ&pg=PA284",
+   "type": "publication"
+  },
+  {
+   "name": "Flory, American Light Trucks and Utility Vehicles 1967-1989 (McFarland 2019), Dodge chapter (Google Books snippet)",
+   "url": "https://books.google.com/books?id=Az-7DwAAQBAJ&pg=PA285",
+   "type": "publication"
+  },
+  {
+   "name": "Flory, American Light Trucks and Utility Vehicles 1967-1989 (McFarland 2019), Dodge chapter (Google Books snippet)",
+   "url": "https://books.google.com/books?id=Az-7DwAAQBAJ&pg=PA341",
+   "type": "publication"
+  },
+  {
+   "name": "Dodge 1974 Power Wagons foldout",
+   "url": "https://oldcarbrochures.org/United%20States/Chrysler%20Trucks%20and%20Vans/1974-Trucks-and-Vans/1974%20Dodge%20Power%20Wagons%20Foldout/index.html",
+   "type": "manufacturer"
+  },
+  {
+   "name": "Flory, American Light Trucks and Utility Vehicles 1967-1989 (McFarland 2019), Dodge chapter (Google Books snippet)",
+   "url": "https://books.google.com/books?id=Az-7DwAAQBAJ&pg=PA397",
+   "type": "publication"
+  },
+  {
+   "name": "Flory, American Light Trucks and Utility Vehicles 1967-1989 (McFarland 2019), Dodge chapter (Google Books snippet)",
+   "url": "https://books.google.com/books?id=Az-7DwAAQBAJ&pg=PA398",
+   "type": "publication"
+  },
+  {
+   "name": "Flory, American Light Trucks and Utility Vehicles 1967-1989 (McFarland 2019), Dodge chapter (Google Books snippet)",
+   "url": "https://books.google.com/books?id=Az-7DwAAQBAJ&pg=PA457",
+   "type": "publication"
+  },
+  {
+   "name": "Dodge 1976 Pickups brochure",
+   "url": "https://oldcarbrochures.org/United%20States/Chrysler%20Trucks%20and%20Vans/1976-Trucks-and-Vans/1976-Dodge-Pickups-Brochure/index.html",
+   "type": "manufacturer"
+  },
+  {
+   "name": "Flory, American Light Trucks and Utility Vehicles 1967-1989 (McFarland 2019), Dodge chapter (Google Books snippet)",
+   "url": "https://books.google.com/books?id=Az-7DwAAQBAJ&pg=PA517",
+   "type": "publication"
+  },
+  {
+   "name": "Dodge 1977 Pickups brochure",
+   "url": "https://oldcarbrochures.org/United%20States/Chrysler%20Trucks%20and%20Vans/1977_Trucks-Vans/1977_Dodge_Pickups/index.html",
+   "type": "manufacturer"
+  },
+  {
+   "name": "Flory, American Light Trucks and Utility Vehicles 1967-1989 (McFarland 2019), Dodge chapter (Google Books snippet)",
+   "url": "https://books.google.com/books?id=Az-7DwAAQBAJ&pg=PA574",
+   "type": "publication"
+  },
+  {
+   "name": "Flory, American Light Trucks and Utility Vehicles 1967-1989 (McFarland 2019), Dodge chapter (Google Books snippet)",
+   "url": "https://books.google.com/books?id=Az-7DwAAQBAJ&pg=PA575",
+   "type": "publication"
+  },
+  {
+   "name": "Dodge 1978 Pickups brochure",
+   "url": "https://oldcarbrochures.org/United%20States/Chrysler%20Trucks%20and%20Vans/1978_Trucks-Vans/1978_Dodge_Pickups/index.html",
+   "type": "manufacturer"
+  },
+  {
+   "name": "Flory, American Light Trucks and Utility Vehicles 1967-1989 (McFarland 2019), Dodge chapter (Google Books snippet)",
+   "url": "https://books.google.com/books?id=Az-7DwAAQBAJ&pg=PA636",
+   "type": "publication"
+  },
+  {
+   "name": "Flory, American Light Trucks and Utility Vehicles 1967-1989 (McFarland 2019), Dodge chapter (Google Books snippet)",
+   "url": "https://books.google.com/books?id=Az-7DwAAQBAJ&pg=PA637",
+   "type": "publication"
+  },
+  {
+   "name": "Curbside Classic - The Case Of The Very Rare 1978 Dodge Diesel Pickup (P. Niedermeyer, 2012, upd. 2026)",
+   "url": "https://www.curbsideclassic.com/automotive-histories/automotive-history-the-case-of-the-very-rare-1978-dodge-diesel-pickup-and-the-non-existent-diesel-van/",
+   "type": "publication"
+  },
+  {
+   "name": "Dodge 1978 Li'l Red Express Truck folder",
+   "url": "https://oldcarbrochures.org/United%20States/Chrysler%20Trucks%20and%20Vans/1978_Trucks-Vans/1978_Dodge_Lil_Red_Truck/index.html",
+   "type": "manufacturer"
+  },
+  {
+   "name": "Mopar Connection Magazine - Kori Alexander's 1978 Dodge Lil' Red Express (C. Krueger, Sep 19 2019)",
+   "url": "https://moparconnectionmagazine.com/?p=26959",
+   "type": "publication"
+  },
+  {
+   "name": "Flory, American Light Trucks and Utility Vehicles 1967-1989 (McFarland 2019), Dodge chapter (Google Books snippet)",
+   "url": "https://books.google.com/books?id=Az-7DwAAQBAJ&pg=PA634",
+   "type": "publication"
+  },
+  {
+   "name": "Dodge 1979 Trucks brochure (Engines for pickups table, p.5)",
+   "url": "https://oldcarbrochures.org/United%20States/Chrysler%20Trucks%20and%20Vans/1979%20Trucks%20and%20Vans/1979%20Dodge%20Trucks%20Brochure/index.html",
+   "type": "manufacturer"
+  },
+  {
+   "name": "Flory, American Light Trucks and Utility Vehicles 1967-1989 (McFarland 2019), Dodge chapter (Google Books snippet)",
+   "url": "https://books.google.com/books?id=Az-7DwAAQBAJ&pg=PA699",
+   "type": "publication"
+  },
+  {
+   "name": "Flory, American Light Trucks and Utility Vehicles 1967-1989 (McFarland 2019), Dodge chapter (Google Books snippet)",
+   "url": "https://books.google.com/books?id=Az-7DwAAQBAJ&pg=PA700",
+   "type": "publication"
+  },
+  {
+   "name": "Flory, American Light Trucks and Utility Vehicles 1967-1989 (McFarland 2019), Dodge chapter (Google Books snippet)",
+   "url": "https://books.google.com/books?id=Az-7DwAAQBAJ&pg=PA701",
+   "type": "publication"
+  },
+  {
+   "name": "Dodge 1979 Li'l Red Express Truck folder",
+   "url": "https://oldcarbrochures.org/United%20States/Chrysler%20Trucks%20and%20Vans/1979%20Trucks%20and%20Vans/1979%20Dodge%20LRT%20Express%20Folder/index.html",
+   "type": "manufacturer"
+  },
+  {
+   "name": "Flory, American Light Trucks and Utility Vehicles 1967-1989 (McFarland 2019), Dodge chapter (Google Books snippet)",
+   "url": "https://books.google.com/books?id=Az-7DwAAQBAJ&pg=PA697",
+   "type": "publication"
+  },
+  {
+   "name": "Dodge 1980 Pickup brochure",
+   "url": "https://oldcarbrochures.org/United%20States/Chrysler%20Trucks%20and%20Vans/1980_Trucks-Vans/1980-Dodge-Pickup-Brochure/index.html",
+   "type": "manufacturer"
+  },
+  {
+   "name": "Dodge 1980 Power Wagons brochure",
+   "url": "https://oldcarbrochures.org/United%20States/Chrysler%20Trucks%20and%20Vans/1980_Trucks-Vans/1980_Dodge_Power_Wagons/index.html",
+   "type": "manufacturer"
+  },
+  {
+   "name": "Flory, American Light Trucks and Utility Vehicles 1967-1989 (McFarland 2019), Dodge chapter (Google Books snippet)",
+   "url": "https://books.google.com/books?id=Az-7DwAAQBAJ&pg=PA764",
+   "type": "publication"
+  },
+  {
+   "name": "Dodge 1981 Pickups brochure",
+   "url": "https://oldcarbrochures.org/United%20States/Chrysler%20Trucks%20and%20Vans/1981%20Trucks%20and%20Vans/1981%20Dodge%20Pickups%20Brochure/index.html",
+   "type": "manufacturer"
+  },
+  {
+   "name": "Flory, American Light Trucks and Utility Vehicles 1967-1989 (McFarland 2019), Dodge chapter (Google Books snippet)",
+   "url": "https://books.google.com/books?id=Az-7DwAAQBAJ&pg=PA826",
+   "type": "publication"
+  },
+  {
+   "name": "Dodge (Canada) 1982 Ram Trucks brochure",
+   "url": "https://oldcarbrochures.org/United%20States/Chrysler%20Trucks%20and%20Vans/1982%20Trucks%20and%20Vans/1982-Dodge-Ram-Trucks-Brochure/index.html",
+   "type": "manufacturer"
+  },
+  {
+   "name": "Flory, American Light Trucks and Utility Vehicles 1967-1989 (McFarland 2019), Dodge chapter (Google Books snippet)",
+   "url": "https://books.google.com/books?id=Az-7DwAAQBAJ&pg=PA888",
+   "type": "publication"
+  },
+  {
+   "name": "Dodge 1983 Ram Pickups brochure (Engine Specifications table, p.13)",
+   "url": "https://oldcarbrochures.org/United%20States/Chrysler%20Trucks%20and%20Vans/1983-Trucks-and-Vans/1983%20Dodge%20Ram%20Pickups/index.html",
+   "type": "manufacturer"
+  },
+  {
+   "name": "Flory, American Light Trucks and Utility Vehicles 1967-1989 (McFarland 2019), Dodge chapter (Google Books snippet)",
+   "url": "https://books.google.com/books?id=Az-7DwAAQBAJ&pg=PA950",
+   "type": "publication"
+  },
+  {
+   "name": "EPA fueleconomy.gov vehicle data",
+   "url": "https://www.fueleconomy.gov/feg/download.shtml",
+   "type": "government"
+  },
+  {
+   "name": "Flory, American Light Trucks and Utility Vehicles 1967-1989 (McFarland 2019), Dodge chapter (Google Books snippet)",
+   "url": "https://books.google.com/books?id=Az-7DwAAQBAJ&pg=PA1012",
+   "type": "publication"
+  },
+  {
+   "name": "Flory, American Light Trucks and Utility Vehicles 1967-1989 (McFarland 2019), Dodge chapter (Google Books snippet)",
+   "url": "https://books.google.com/books?id=Az-7DwAAQBAJ&pg=PA1080",
+   "type": "publication"
+  },
+  {
+   "name": "Flory, American Light Trucks and Utility Vehicles 1967-1989 (McFarland 2019), Dodge chapter (Google Books snippet)",
+   "url": "https://books.google.com/books?id=Az-7DwAAQBAJ&pg=PA1081",
+   "type": "publication"
+  },
+  {
+   "name": "Flory, American Light Trucks and Utility Vehicles 1967-1989 (McFarland 2019), Dodge chapter (Google Books snippet)",
+   "url": "https://books.google.com/books?id=Az-7DwAAQBAJ&pg=PA1145",
+   "type": "publication"
+  },
+  {
+   "name": "NHRA Stock Car Classification Guide (nhra_dodge-dseries-1961-1993.json)",
+   "url": "nhra_dodge-dseries-1961-1993.json",
+   "type": "nhra"
+  },
+  {
+   "name": "Dodge 1987 Pickup brochure",
+   "url": "https://oldcarbrochures.org/United%20States/Chrysler%20Trucks%20and%20Vans/1987%20Trucks%20and%20Vans/1987%20Dodge%20Pickup/index.html",
+   "type": "manufacturer"
+  },
+  {
+   "name": "Flory, American Light Trucks and Utility Vehicles 1967-1989 (McFarland 2019), Dodge chapter (Google Books snippet)",
+   "url": "https://books.google.com/books?id=Az-7DwAAQBAJ&pg=PA1211",
+   "type": "publication"
+  },
+  {
+   "name": "Dodge 1988 Full-Size Pickups brochure",
+   "url": "https://oldcarbrochures.org/United%20States/Chrysler%20Trucks%20and%20Vans/1988%20Trucks%20and%20Vans/1988%20Dodge%20Full-Size%20Pickups/index.html",
+   "type": "manufacturer"
+  },
+  {
+   "name": "Flory, American Light Trucks and Utility Vehicles 1967-1989 (McFarland 2019), Dodge chapter (Google Books snippet)",
+   "url": "https://books.google.com/books?id=Az-7DwAAQBAJ&pg=PA1278",
+   "type": "publication"
+  },
+  {
+   "name": "Flory, American Light Trucks and Utility Vehicles 1967-1989 (McFarland 2019), Dodge chapter (Google Books snippet)",
+   "url": "https://books.google.com/books?id=Az-7DwAAQBAJ&pg=PA1279",
+   "type": "publication"
+  },
+  {
+   "name": "Dodge 1990 Ram Pickups brochure",
+   "url": "https://oldcarbrochures.org/United%20States/Chrysler%20Trucks%20and%20Vans/1990-Trucks-and-Vans/1990-Dodge-Ram-Pickups-Brochure/index.html",
+   "type": "manufacturer"
+  },
+  {
+   "name": "Dodge 1990 Trucks brochure",
+   "url": "https://oldcarbrochures.org/United%20States/Chrysler%20Trucks%20and%20Vans/1990-Trucks-and-Vans/1990-Dodge-Trucks-Brochure/index.html",
+   "type": "manufacturer"
+  },
+  {
+   "name": "Consumer Guide - 1990-93 Dodge Ram Pickup (used-vehicle review, specifications)",
+   "url": "https://consumerguide.com/used/1990-93-dodge-ram-pickup",
+   "type": "publication"
+  },
+  {
+   "name": "Dodge 1991 Truck foldout",
+   "url": "https://oldcarbrochures.org/United%20States/Chrysler%20Trucks%20and%20Vans/1991-Trucks-and-Vans/1991-Dodge-Truck-Foldout/index.html",
+   "type": "manufacturer"
+  },
+  {
+   "name": "Dodge 1993 Pickup Prestige brochure (engine captions pp.3-4)",
+   "url": "https://oldcarbrochures.org/United%20States/Chrysler%20Trucks%20and%20Vans/1993-Trucks-and-Vans/1993-Dodge-Pickup-Prestige-Brochure/index.html",
+   "type": "manufacturer"
+  }
+ ]
+}

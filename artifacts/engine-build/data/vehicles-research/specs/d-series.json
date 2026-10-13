@@ -1,0 +1,53 @@
+{
+ "make": "Dodge",
+ "model": "D-Series Pickup",
+ "makeSlug": "dodge",
+ "slug": "d-series",
+ "title": "Dodge D-Series Engines by Year (1961–1993)",
+ "description": "Every factory engine in the Dodge D100, D150, W100 and W150 pickup by year, 1961–1993: slant sixes, LA and B V8s, the Li'l Red Express 360 and Magnums.",
+ "intro": [
+  "Dodge's D-series pickups ran from 1961 to 1993; D means two-wheel drive and W four-wheel drive, sold as the Power Wagon. This page covers the half-tons: the D100 and W100, renamed D150 and W150 from 1978. The 1994 Ram 1500 replaced them.",
+  "Pick a year to see every engine offered that model year, with its code, rated horsepower and the trims it came in. Each engine links to its full specs."
+ ],
+ "generations": [
+  {
+   "key": "gen1",
+   "name": "1961–1971",
+   "years": [
+    1961,
+    1971
+   ],
+   "intro": [
+    "The first D-series used the 170 and 225 slant sixes and the 318 V8, with the 383 from 1967. In 1964–1966 Dodge offered a high-performance package with the 413 and then the 426 wedge."
+   ]
+  },
+  {
+   "key": "gen2",
+   "name": "1972–1980",
+   "years": [
+    1972,
+    1980
+   ],
+   "intro": [
+    "The 1972 redesign offered the 225 six and the 318, 360, 400 and 440 V8s. The 1978–1979 Li'l Red Express used a 225 hp 360, and a Mitsubishi diesel was listed for 1978. Ratings are SAE net from 1972."
+   ]
+  },
+  {
+   "key": "gen3",
+   "name": "1981–1993",
+   "years": [
+    1981,
+    1993
+   ],
+   "intro": [
+    "The restyled trucks used the 225 six and the 318 and 360 V8s, then the 3.9 V6 from 1988 and fuel-injected Magnum engines from 1992."
+   ]
+  }
+ ],
+ "files": [
+  "verify_dodge-dseries-1961-1993.json"
+ ],
+ "merge_trims": true,
+ "desc_regex": "\\b[1-4]-bbl\\b|\\bTBI\\b",
+ "draft": true
+}

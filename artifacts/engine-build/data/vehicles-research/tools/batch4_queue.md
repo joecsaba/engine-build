@@ -43,8 +43,13 @@ Sources stay private. Half-ton / light-duty models only unless noted.
 - Ford 262 truck six (1961–1964) — F-100 1964
 - Ford 300 six (1965–1996) — F-100, F-150 (big gap: no page at all)
 - Ford FE 360 truck V8 (1968–1976) — F-100
+- Ford 4.2 Essex V6 (256 ci) — F-150 1997–2008 (left unlinked; the same-size page is the Cologne)
+- Ford 3.0 Power Stroke V6 diesel (183 ci) — F-150 2018–2021 (left unlinked; not the Audi EA896)
+- Ford 3.3 Ti-VCT V6 (204 ci), 6.2 Boss V8 (379 ci), 5.2 Predator supercharged V8 (317 ci) — F-150
+- Mitsubishi 6DR5 4.0 diesel (243 ci) — Dodge D150 1978
 
 ## Other leftovers
+- Dodge D-series: 1961, 1968, 1969 and 1989 have no engine with 3 sources yet (no brochures found) — retry.
 - Two-source rows to retry for a third source: El Camino 1965–68 sixes, early-80s GM diesels/V6s,
   1949–54 Coronet sixes, 1956–57 D-500 rows.
 - ford-429ci 2016 record (4.08 x 4.1) looks like a different engine (7.3 Godzilla?) — verify or drop.

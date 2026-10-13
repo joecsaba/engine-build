@@ -216,6 +216,11 @@ for fn in spec["files"]:
                 rec["name"] = label.replace("(", "").replace(")", "").replace("M-FR500-CJ, ", "Cobra Jet ")
                 rec["code"] = None
             if k in spec.get("names", {}): rec["name"] = spec["names"][k]
+            # desc_regex: pull a distinguishing detail ("4-bbl") from the research name
+            # when the entry has no code, so two ratings of one engine read differently.
+            if spec.get("desc_regex") and not rec.get("desc"):
+                m_ = re.search(spec["desc_regex"], f'{e.get("name") or ""} {e.get("common_name") or ""}', re.I)
+                if m_: rec["desc"] = m_.group(0)
             if is_diesel(e): rec["diesel"] = True
             if e.get("hp_disputed") and not rec["note"]:
                 rec["note"] = "Published ratings for this engine vary."
