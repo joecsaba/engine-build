@@ -1,5 +1,11 @@
 # Engines that need spec pages (user asked to keep this list, 2026-10-13)
 
+Every engine a visitor selects should open that engine's own page, not the family list (user, 2026-10-13).
+vehicle_engine_records.mjs builds a dated page per engine code from the verified vehicle rows plus the
+family's verified bore/stroke; re-run it after adding vehicles. As of 2026-10-13: 4,781 of 5,357 vehicle
+engine rows open a specific engine page, 274 still open a family page (families holding two different
+engines of the same size: fix the family, then re-run), 191 have no page (listed below).
+
 Vehicle pages list these engines, but there is no engine page with verified specs to link to.
 Regenerate the live list with `node data/vehicles-research/tools/engine_gaps.mjs` (run from
 artifacts/engine-build, with VEHICLE_DRAFTS=1 to include drafts). Source rule: 3 independent sources,
@@ -51,5 +57,7 @@ or 2 reputable sources that agree (second pass). Specs go in public/data/engines
 | Mitsubishi 4D55T 2.3 turbodiesel | 143 ci | Ranger 1985–1987 |
 
 ## Data to re-check
+- Chevrolet 262ci 1985 130 hp gas record carries the Olds diesel 4.3 bore/stroke (4.057 x 3.385); the gas 4.3 is 4.00 x 3.48.
+- Mercury "Cologne" family includes 1961-62 170 ci records (the Falcon six), which are not Cologne engines.
 - C/K Pickup 1994 5.7 L05: page shows 200 hp; the K5 Blazer research found 210 hp for the same engine (Wikipedia Blazer article + Consumer Guide).
 - K5 Blazer 1980: every engine has only 2 sources that don't fully agree — year left empty.

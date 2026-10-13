@@ -533,6 +533,7 @@ function engineEntry(e) {
         ${breadcrumbHtml(crumbs)}
       </nav>
       <h1>${escapeHtml(title)}</h1>
+      <p><a href="${e.familyUrl}">See other engines in this family</a></p>
       <p>${escapeHtml(description)}</p>
       ${engineNarrative(e).map((para) => `<p>${escapeHtml(para)}</p>`).join("")}
       <h2>Dimensions</h2>

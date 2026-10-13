@@ -95,10 +95,15 @@ export default function EnginePage() {
           <h1 className="text-4xl font-bold mb-1">{title}</h1>
           <p className="text-muted-foreground">{description}</p>
         </div>
-        <Button variant="outline" onClick={() => window.print()} className="print:hidden">
-          <Printer className="w-4 h-4 mr-2" />
-          Print
-        </Button>
+        <div className="flex gap-2 flex-wrap print:hidden">
+          <Button variant="outline" asChild>
+            <Link href={rec.familyUrl}>See other engines in this family</Link>
+          </Button>
+          <Button variant="outline" onClick={() => window.print()}>
+            <Printer className="w-4 h-4 mr-2" />
+            Print
+          </Button>
+        </div>
       </div>
 
       {/* Computed from this engine's own numbers — see src/data/engineNarrative.mjs.

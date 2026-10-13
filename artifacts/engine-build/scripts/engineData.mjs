@@ -279,7 +279,11 @@ export function loadEngineData() {
       // Core dimensions required to publish.
       if (num(e.bore_in) == null || num(e.stroke_in) == null ||
           num(e.displacement_ci) == null || num(e.num_cylinders) == null) continue;
-      const key = [e.bore_in, e.stroke_in, e.displacement_ci, e.num_cylinders, e.compression_ratio].join("|");
+      // Records built from the verified vehicle pages carry page_code (the engine
+      // code, "L35") so each code gets its own page; older records have none and
+      // keep their existing grouping (and URLs).
+      const key = [e.bore_in, e.stroke_in, e.displacement_ci, e.num_cylinders, e.compression_ratio].join("|") +
+        (e.page_code ? `|${e.page_code}` : "");
       if (!groups.has(key)) groups.set(key, []);
       groups.get(key).push(e);
     }
@@ -317,8 +321,15 @@ export function loadEngineData() {
         return b && s ? `${d}-${b}x${s}` : d;
       };
 
+      // Pages built from the vehicle data with no engine code ("301ci" in 1977-1979
+      // Buicks) are named for the size and the years they cover.
+      const isGen = group.every((e) => e.origin === "vehicle-pages");
+      const genYears = group.map((e) => e.year).filter(Boolean);
+      const genSpan = genYears.length ? (Math.min(...genYears) === Math.max(...genYears)
+        ? `${Math.min(...genYears)}` : `${Math.min(...genYears)}-${Math.max(...genYears)}`) : "";
+      const genSlug = isGen && !sharedCode ? `${rep.page_code ?? geomSlug()}${genSpan ? "-" + genSpan : ""}` : null;
       let slug = hyphenate(
-        sharedCode ??
+        sharedCode ?? genSlug ??
         (group.length === 1
           ? (stripPrefix(rep.engine_id, f.family_slug) ??
              stripPrefix(rep.engine_id, f.manufacturer_slug) ??
@@ -360,10 +371,17 @@ export function loadEngineData() {
       // Display name follows the same logic as the slug, but reads like a human
       // wrote it. A geometry-derived slug must not become "350CI-4X3.48".
       const famNameEarly = f.family_name || titleize(famSeg);
+      // A lone record named from an id like "chevr_1975_262_110hp" must not show
+      // as "Chevr 1975 262 110HP": say the family, year and rating instead.
+      const idLike = /^[a-z]+-\d{4}-\d+-\d+hp$/.test(slug);
+      const idName = `${famNameEarly}${rep.year ? ` (${rep.year})` : ""}` +
+        (num(rep.advertised_hp) != null ? ` · ${num(rep.advertised_hp)} hp` : "");
       const displayName = sharedCode
         ? sharedCode
+        : genSlug
+          ? `${famNameEarly}${genSpan ? ` (${genSpan.replace("-", "–")})` : ""}`
         : group.length === 1
-          ? titleize(slug)
+          ? (idLike ? idName : titleize(slug))
           : `${famNameEarly} · ${rep.bore_in?.toFixed(3)}" × ${rep.stroke_in?.toFixed(3)}"` +
             (rep.compression_ratio != null ? ` · ${rep.compression_ratio}:1` : "");
       const famName = famNameEarly;
@@ -383,6 +401,8 @@ export function loadEngineData() {
         const startsWithMfr = famNameEarly.toLowerCase().startsWith(mfrNameEarly(f, mfrByslug, mfrSeg).toLowerCase());
         const mfr = mfrNameEarly(f, mfrByslug, mfrSeg);
         if (sharedCode) return `${mfr} ${sharedCode}`;
+        if (genSlug) return startsWithMfr ? displayName : `${mfr} ${displayName}`;
+        if (group.length === 1 && idLike) return startsWithMfr ? idName : `${mfr} ${idName}`;
         if (group.length === 1) return `${mfr} ${titleize(slug)}`;
         // Cluster: lead with the family, then the most distinguishing figure.
         const base = startsWithMfr ? famNameEarly : `${mfr} ${famNameEarly}`;
@@ -393,6 +413,9 @@ export function loadEngineData() {
       const mfrName = f.manufacturer_name || mfrByslug.get(f.manufacturer_slug)?.name || titleize(mfrSeg);
 
       famEngines.push({
+        // built from the verified vehicle pages (vehicle_engine_records.mjs); such
+        // pages never absorb NHRA rows, which keep their own year-by-year pages
+        generated: group.every((e) => e.origin === "vehicle-pages"),
         url: `${famUrl}/${slug}`,
         slug,
         engine_id: rep.engine_id,
@@ -416,7 +439,12 @@ export function loadEngineData() {
         rod_length_in: num(rep.rod_length_in),
         deck_height_in: num(rep.deck_height_in),
         // description
-        configuration: rep.configuration ?? doc.configuration ?? null,
+        // the family default only when it fits this record (a 262 family can hold a V8 and a V6)
+        configuration: rep.configuration ?? (() => {
+          const c = doc.configuration, n = num(rep.num_cylinders);
+          const m = /(\d+)/.exec(String(c ?? ""));
+          return c && n && m && Number(m[1]) !== n ? null : (c ?? null);
+        })(),
         block_material: rep.block_material ?? null,
         head_material: rep.head_material ?? null,
         valvetrain: rep.valvetrain ?? null,
@@ -530,6 +558,7 @@ export function loadEngineData() {
   if (nhra.engines.length) {
     const byGeo = new Map();
     for (const e of outEngines) {
+      if (e.generated) continue;
       const k = geoKey(e.bore_in, e.stroke_in, e.num_cylinders);
       if (k && !byGeo.has(k)) byGeo.set(k, e);
     }

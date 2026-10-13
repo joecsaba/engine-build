@@ -118,11 +118,30 @@ export function linkVehicles(vehicles, engineData) {
         cands = cands.filter(near);
       }
       // Same manufacturer first: a Pontiac 400 must not borrow a Chevy 400.
+      const allMakers = cands;
       const own = cands.filter((e) => e.manufacturerSlug === makers[0]);
       if (own.length) cands = own;
 
+      // Every engine row should open its own engine page (user, 2026-10-13):
+      //  1. a page with this model year and rating;
+      //  2. a page with this engine code in this model year (a rating range or no
+      //     rating can still name its engine: "L35");
+      //  3. a page carrying this code at all (pages built without model years).
+      // Codes are specific enough to search every maker's pages (a Buick Regal's
+      // LH0 V6 lives on a Pontiac page). Where several pages fit, prefer the one
+      // with the code, then a long-standing page over one built from vehicle data.
+      const code = String(ve.code ?? "").toUpperCase();
+      const hasCode = (e, yr) => code && (e.variants ?? []).some((x) => (yr == null || x.year === yr) &&
+        (x.codes ?? []).some((c) => String(c).toUpperCase() === code));
+      const pick = (list) => !list.length ? null : list.length === 1 ? list[0]
+        : list.find((e) => hasCode(e)) ?? list.find((e) => !e.generated) ?? list[0];
       const exact = cands.filter((e) => (e.variants ?? []).some((x) => x.year === ve.year && x.hp === ve.hp));
-      const engine = exact.length === 1 ? exact[0] : null;
+      const t1 = pick(exact), t2 = t1 ? null : pick(allMakers.filter((e) => hasCode(e, ve.year)));
+      const t3 = t1 || t2 ? null : pick(allMakers.filter((e) => hasCode(e)));
+      const engine = t1 ?? t2 ?? t3;
+      // tier 3 (a page with the code but not this year) is a fallback: the record
+      // generator builds a dated page for such rows (vehicle_engine_records.mjs)
+      ve.linkTier = t1 ? 1 : t2 ? 2 : t3 ? 3 : null;
 
       // Family: prefer the family with a dated record closest to this model
       // year (a 1972 Buick 350 belongs with Buick's 1968-1978 350, not with
