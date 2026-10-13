@@ -59,8 +59,9 @@ Sources stay private. Half-ton / light-duty models only unless noted.
 
 ## Geometry audit 2026-10-13 (data/engine-sources/geometry-audit-2026-10-13.json)
 89 records corrected (3+ sources), 17 displacements recomputed, 12 withheld (bore/stroke null) until verified:
-- Cadillac 2.0T LSY; Ecotec 2.4 LAF (record looks like the 1.4T LUV); Ecotec 2.2 L61 (Sunfire 2000-01 was the LN2);
-  Saturn 1.9; Audi 3.2 CALA (needs its own record); Honda JNC1 (NSX 3.5TT 91 x 89.5 mm filed as a J30).
+- RESTORED 2026-10-13: Cadillac 2.0T LSY, 1.4T LUV (was labeled LAF), NSX JNC1 (hp removed pending verification).
+- Still withheld (2 sources each): Ecotec 2.2 L61 (Sunfire 2000-01 was the LN2, also 2 sources), Saturn 1.9,
+  Northstar LC3 4.4 stroke, Audi 3.2 CALA (Audi documents conflict: 85.5 vs 84.5 mm bore).
 - Northstar "LK8" removed (no such code). Northstar LC3 4.4 = 91 x 84 mm (GM-only source so far).
 - GMC-filed "Buick V8" family removed. Mazda rotary records carry meaningless bore/stroke (leave or blank).
 - Families that mix unrelated engines under one name: check new ones with scratchpad audit_engines.mjs.

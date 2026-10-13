@@ -102,10 +102,9 @@ function handler(event) {
     '/engines/pontiac/pontiac-346ci/ponti-2004-346-350hp': '/engines/pontiac/pontiac-346ci/346ci-3-898x3-622',
     // Geometry audit (2026-10-13): bore/stroke corrected or withheld; the
     // GMC-filed Buick V8 family (all records wrong) and a made-up Northstar removed.
-    '/engines/acura/honda-j-series/jnc1': '/engines/acura/honda-j-series',
     '/engines/audi/ea837/auk-bkh-bpk-cala': '/engines/audi/ea837',
-    '/engines/cadillac/ecotec/20t-lsy': '/engines/cadillac/ecotec',
-    '/engines/cadillac/ecotec/20t-lsv': '/engines/cadillac/ecotec',
+    '/engines/cadillac/ecotec/20t-lsy': '/engines/cadillac/ecotec/lsy',
+    '/engines/cadillac/ecotec/20t-lsv': '/engines/cadillac/ecotec/lsy',
     '/engines/cadillac/northstar/lk8': '/engines/cadillac/northstar',
     '/engines/ford/power-stroke-6-7/407ci-3-85x4-252': '/engines/ford/power-stroke-6-7/406ci-3-9x4-25',
     '/engines/gmc/buick-v8/430': '/engines/buick/buick-430ci',
@@ -118,7 +117,7 @@ function handler(event) {
     '/engines/gmc/buick-v8/322': '/engines/buick/nailhead-v8',
     '/engines/gmc/buick-v8/300': '/engines/buick/buick-300ci',
     '/engines/gmc/buick-v8/264': '/engines/buick/nailhead-v8',
-    '/engines/gmc/ecotec-i4/laf': '/engines/gmc/ecotec-i4',
+    '/engines/gmc/ecotec-i4/laf': '/engines/gmc/ecotec-i4/luv',
     '/engines/gmc/high-feature-v6/217ci-3-74x3-378': '/engines/gmc/high-feature-v6/223ci-3-74x3-378',
     '/engines/jeep/amc-v8/401-8-25cr': '/engines/jeep/amc-v8',
     '/engines/oldsmobile/oldsmobile-207ci/207ci-3-62x2-31': '/engines/oldsmobile/oldsmobile-207ci',
