@@ -99,7 +99,14 @@ function handler(event) {
     '/engines/oldsmobile/oldsmobile-225ci/225ci-3-75x3-4': '/engines/buick/buick-225ci/225ci-3-75x3-4',
     // Buick 350: the one undated record (3.80 x 3.80, a copied bore) replaced by
     // verified 1968-1978 records at 3.80 x 3.85 (2026-10-13).
-    '/engines/buick/buick-small-block-v8/350': '/engines/buick/buick-small-block-v8/350ci-3-8x3-85-10-25cr'
+    '/engines/buick/buick-small-block-v8/350': '/engines/buick/buick-small-block-v8/350ci-3-8x3-85-10-25cr',
+    // Family audit (2026-10-13): the Willys F-head four left the modern
+    // Hurricane family; Duratec V6s misfiled under Zetec; the 2004 GTO LS1
+    // was marked six-cylinder.
+    '/engines/jeep/hurricane/f4-134': '/engines/jeep/hurricane-f-head/f4-134',
+    '/engines/mercury/zetec/2-5l-v6': '/engines/mercury/duratec/155ci-3-244x3-13',
+    '/engines/mercury/zetec/2-5l-duratec-v6': '/engines/mercury/duratec/155ci-3-244x3-13',
+    '/engines/pontiac/pontiac-346ci/ponti-2004-346-350hp': '/engines/pontiac/pontiac-346ci/346ci-3-898x3-622'
   };
   var corrected = CORRECTED[uri.replace(/\/$/, '')];
   if (corrected) {
