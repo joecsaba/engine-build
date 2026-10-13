@@ -216,6 +216,10 @@ for fn in spec["files"]:
                 rec["name"] = label.replace("(", "").replace(")", "").replace("M-FR500-CJ, ", "Cobra Jet ")
                 rec["code"] = None
             if k in spec.get("names", {}): rec["name"] = spec["names"][k]
+            # desc_strip: regexes removed from the engine description (research detail
+            # like "; 1-bbl 1983-84, EFI 1985-88" belongs in the year rows, not the name)
+            for rx in spec.get("desc_strip", []):
+                if rec.get("desc"): rec["desc"] = re.sub(rx, "", rec["desc"]).strip(" ,;") or None
             # desc_regex: pull a distinguishing detail ("4-bbl") from the research name
             # when the entry has no code, so two ratings of one engine read differently.
             if spec.get("desc_regex") and not rec.get("desc"):

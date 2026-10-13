@@ -44,7 +44,7 @@ S["bronco"] = dict(make="Ford", model="Bronco", makeSlug="ford", slug="bronco",
 
 S["dakota"] = dict(make="Dodge", model="Dakota", makeSlug="dodge", slug="dakota",
   title="Dodge Dakota Engines by Year (1987–2011)",
-  description="Every factory engine in the Dodge Dakota by year, 1987–2011: the 2.2 and 2.5 fours, the 3.9 V6, 5.2 and 5.9 Magnum V8s, the Shelby and R/T, and the 3.7 and 4.7.",
+  description="Every factory engine in the Dodge Dakota by year, 1987–2011: the 2.2 and 2.5 fours, 3.9 V6, 5.2 and 5.9 Magnum V8s, the Shelby and R/T, and the 3.7 and 4.7.",
   intro=["Dodge's midsize Dakota pickup ran from 1987 to 2011, sold as the Ram Dakota for its final year. It was the first midsize pickup offered with a V8.", PICK],
   generations=[
     G("gen1", "1987–1996", 1987, 1996, "The first Dakota used the 2.2 and 2.5 fours and the 3.9 V6, then the 5.2 V8 from 1991 and Magnum engines from 1992. The 1989 Shelby Dakota had a 5.2 V8."),
@@ -69,6 +69,22 @@ S["comanche"] = dict(make="Jeep", model="Comanche", makeSlug="jeep", slug="coman
   intro=["The Comanche was a compact pickup built on the Cherokee XJ from 1986 to 1992.", PICK],
   generations=[G("mj", "MJ", 1986, 1992, "It shared the Cherokee's engines: the 2.5 four, a GM 2.8 V6 for 1986, a Renault 2.1 turbodiesel for 1986–1987, and the 4.0 six from 1987.")],
   files=["verify_jeep-comanche-1986-1992.json"], merge_trims=True)
+
+S["ranger"] = dict(make="Ford", model="Ranger", makeSlug="ford", slug="ranger",
+  title="Ford Ranger Engines by Year",
+  description="Every factory engine in the Ford Ranger by year: Lima fours, Cologne and Vulcan V6s, the 4.0 V6s, two early diesels, the Ranger EV and the EcoBoost engines.",
+  intro=["Ford sold the compact Ranger in the US from 1983 to 2011, then brought back a midsize Ranger for 2019. There was no US model for 2012–2018. The Mazda B-series twin is not included.", PICK],
+  generations=[
+    G("gen1", "1983–1992", 1983, 1992, "The first Ranger used the 2.0 and 2.3 Lima fours, the 2.8 and 2.9 Cologne V6s and two diesels: a Perkins 2.2 for 1983–1984 and a Mitsubishi 2.3 turbodiesel for 1985–1987. The 4.0 V6 arrived for 1990 and the 3.0 Vulcan V6 for 1991."),
+    G("gen2", "1993–1997", 1993, 1997, "The 2.3 four, the 3.0 and the 4.0 V6."),
+    G("gen3", "1998–2011", 1998, 2011, "The 2.5 four replaced the 2.3 for 1998, and the 2.3 Duratec four and the overhead-cam 4.0 V6 arrived for 2001. Ford also sold an electric Ranger EV for 1998–2001."),
+    G("gen4", "2019–2023", 2019, 2023, "The returning Ranger used the 2.3 EcoBoost four."),
+    G("gen5", "2024–2026", 2024, 2026, "The current Ranger adds the 2.7 EcoBoost V6, and the Ranger Raptor uses a 3.0 EcoBoost V6.")],
+  files=["verify_ford-ranger-1983-2012.json", "verify_ford-ranger-2019-2026.json"], merge_trims=True,
+  desc_strip=[r";.*$", r",\s*built by .*$", r"^\d\.\dL\s+"],
+  family_overrides=[{"years": [1983, 1988], "cid": [122], "url": "/engines/ford/ford-122ci"},
+                    {"years": [1991, 2008], "cid": [182], "url": "/engines/mercury/vulcan"}],
+  no_link=[{"cid": 153, "years": [1998, 2001]}, {"cid": 134, "years": [1983, 1984]}])
 
 os.makedirs(os.path.join(SP, "vspecs"), exist_ok=True)
 for k, v in S.items():

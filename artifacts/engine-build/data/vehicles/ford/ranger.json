@@ -1,0 +1,4186 @@
+{
+ "make": "Ford",
+ "model": "Ranger",
+ "title": "Ford Ranger Engines by Year",
+ "description": "Every factory engine in the Ford Ranger by year: Lima fours, Cologne and Vulcan V6s, the 4.0 V6s, two early diesels, the Ranger EV and the EcoBoost engines.",
+ "intro": [
+  "Ford sold the compact Ranger in the US from 1983 to 2011, then brought back a midsize Ranger for 2019. There was no US model for 2012–2018. The Mazda B-series twin is not included.",
+  "Pick a year to see every engine offered that model year, with its code, rated horsepower and the trims it came in. Each engine links to its full specs."
+ ],
+ "generations": [
+  {
+   "key": "gen1",
+   "name": "1983–1992",
+   "years": [
+    1983,
+    1992
+   ],
+   "intro": [
+    "The first Ranger used the 2.0 and 2.3 Lima fours, the 2.8 and 2.9 Cologne V6s and two diesels: a Perkins 2.2 for 1983–1984 and a Mitsubishi 2.3 turbodiesel for 1985–1987. The 4.0 V6 arrived for 1990 and the 3.0 Vulcan V6 for 1991."
+   ]
+  },
+  {
+   "key": "gen2",
+   "name": "1993–1997",
+   "years": [
+    1993,
+    1997
+   ],
+   "intro": [
+    "The 2.3 four, the 3.0 and the 4.0 V6."
+   ]
+  },
+  {
+   "key": "gen3",
+   "name": "1998–2011",
+   "years": [
+    1998,
+    2011
+   ],
+   "intro": [
+    "The 2.5 four replaced the 2.3 for 1998, and the 2.3 Duratec four and the overhead-cam 4.0 V6 arrived for 2001. Ford also sold an electric Ranger EV for 1998–2001."
+   ]
+  },
+  {
+   "key": "gen4",
+   "name": "2019–2023",
+   "years": [
+    2019,
+    2023
+   ],
+   "intro": [
+    "The returning Ranger used the 2.3 EcoBoost four."
+   ]
+  },
+  {
+   "key": "gen5",
+   "name": "2024–2026",
+   "years": [
+    2024,
+    2026
+   ],
+   "intro": [
+    "The current Ranger adds the 2.7 EcoBoost V6, and the Ranger Raptor uses a 3.0 EcoBoost V6."
+   ]
+  }
+ ],
+ "draft": true,
+ "engines": [
+  {
+   "year": 1983,
+   "gen": "gen1",
+   "cid": 122,
+   "cyl": 4,
+   "name": "2.0L / 122 inline-four",
+   "code": null,
+   "desc": "Lima I4, 2-bbl",
+   "hp": 73,
+   "hpBasis": "net",
+   "trims": [
+    "Ranger 4x2 (base / \"S\")"
+   ],
+   "note": null,
+   "nhra": false,
+   "sources": [
+    {
+     "name": "Ford 1983 Ranger brochure (1983_ford_ranger_brochure-1.pdf)",
+     "url": "https://www.therangerstation.com/resources/pdf_documents/1983_ford_ranger_brochure-1.pdf"
+    },
+    {
+     "name": "Wikipedia - Ford Ranger (Americas)",
+     "url": "https://en.wikipedia.org/wiki/Ford_Ranger_(Americas)"
+    },
+    {
+     "name": "The Ranger Station - Ford Ranger engine ratings table",
+     "url": "https://www.therangerstation.com/tech/ford-ranger-engine-ratings"
+    },
+    {
+     "name": "Diesel Hub - Ford Ranger Diesel History (1983-1986)",
+     "url": "https://www.dieselhub.com/rigs/ford-ranger-diesel.html"
+    },
+    {
+     "name": "Mini-Truck magazine, Dec 1981, \"Development of the Ranger\" (J. Clark), pp.26-31",
+     "url": "http://www.therangerstation.com/resources/pdf_documents/ranger.pdf"
+    }
+   ],
+   "sourceCount": 5,
+   "linkFamily": "/engines/ford/ford-122ci"
+  },
+  {
+   "year": 1983,
+   "gen": "gen1",
+   "cid": 134,
+   "cyl": 4,
+   "name": "2.2L / 134 inline-four diesel",
+   "code": null,
+   "desc": "Perkins 4.135 diesel",
+   "hp": 59,
+   "hpBasis": "net",
+   "trims": [
+    "Ranger 4x2 only"
+   ],
+   "note": null,
+   "nhra": false,
+   "sources": [
+    {
+     "name": "Ford 1983 Ranger brochure (1983_ford_ranger_diesel_brochure.pdf)",
+     "url": "https://www.therangerstation.com/resources/pdf_documents/1983_ford_ranger_diesel_brochure.pdf"
+    },
+    {
+     "name": "Wikipedia - Ford Ranger (Americas)",
+     "url": "https://en.wikipedia.org/wiki/Ford_Ranger_(Americas)"
+    },
+    {
+     "name": "The Ranger Station - 1983-1987 Ranger 2.2 & 2.3 diesels (spec tables)",
+     "url": "https://www.therangerstation.com/tech/1983-1987-ford-ranger-2-2-2-3-diesels"
+    },
+    {
+     "name": "Diesel Hub - Ford Ranger Diesel History (1983-1986)",
+     "url": "https://www.dieselhub.com/rigs/ford-ranger-diesel.html"
+    }
+   ],
+   "sourceCount": 4,
+   "diesel": true,
+   "noLink": true
+  },
+  {
+   "year": 1983,
+   "gen": "gen1",
+   "cid": 140,
+   "cyl": 4,
+   "name": "2.3L / 140 inline-four",
+   "code": null,
+   "desc": "Lima I4",
+   "hp": null,
+   "hpBasis": "net",
+   "trims": [
+    "Ranger 4x2",
+    "Ranger 4x4"
+   ],
+   "note": null,
+   "nhra": false,
+   "sources": [
+    {
+     "name": "Ford 1983 Ranger brochure (1983_ford_ranger_brochure-1.pdf)",
+     "url": "https://www.therangerstation.com/resources/pdf_documents/1983_ford_ranger_brochure-1.pdf"
+    },
+    {
+     "name": "Wikipedia - Ford Ranger (Americas)",
+     "url": "https://en.wikipedia.org/wiki/Ford_Ranger_(Americas)"
+    },
+    {
+     "name": "The Ranger Station - Ford Ranger engine ratings table",
+     "url": "https://www.therangerstation.com/tech/ford-ranger-engine-ratings"
+    },
+    {
+     "name": "Mini-Truck magazine, Dec 1981, \"Development of the Ranger\" (J. Clark), pp.26-31",
+     "url": "http://www.therangerstation.com/resources/pdf_documents/ranger.pdf"
+    }
+   ],
+   "sourceCount": 4
+  },
+  {
+   "year": 1983,
+   "gen": "gen1",
+   "cid": 171,
+   "cyl": 6,
+   "name": "2.8L / 171 V6",
+   "code": null,
+   "desc": "Cologne V6, 2-bbl",
+   "hp": 115,
+   "hpBasis": "net",
+   "trims": [
+    "Ranger 4x2",
+    "Ranger 4x4"
+   ],
+   "note": null,
+   "nhra": false,
+   "sources": [
+    {
+     "name": "Ford 1983 Ranger brochure (1983_ford_ranger_V-6_brochure.pdf)",
+     "url": "https://www.therangerstation.com/resources/pdf_documents/1983_ford_ranger_V-6_brochure.pdf"
+    },
+    {
+     "name": "Wikipedia - Ford Ranger (Americas)",
+     "url": "https://en.wikipedia.org/wiki/Ford_Ranger_(Americas)"
+    },
+    {
+     "name": "The Ranger Station - Ford Ranger engine ratings table",
+     "url": "https://www.therangerstation.com/tech/ford-ranger-engine-ratings"
+    },
+    {
+     "name": "Diesel Hub - Ford Ranger Diesel History (1983-1986)",
+     "url": "https://www.dieselhub.com/rigs/ford-ranger-diesel.html"
+    }
+   ],
+   "sourceCount": 4
+  },
+  {
+   "year": 1984,
+   "gen": "gen1",
+   "cid": 122,
+   "cyl": 4,
+   "name": "2.0L / 122 inline-four",
+   "code": null,
+   "desc": "Lima I4, 2-bbl",
+   "hp": 73,
+   "hpBasis": "net",
+   "trims": [
+    "Ranger 4x2 (base / \"S\")"
+   ],
+   "note": null,
+   "nhra": false,
+   "sources": [
+    {
+     "name": "Ford 1984 Ranger brochure",
+     "url": "https://www.therangerstation.com/resources/pdf_documents/1984_ford_ranger_brochure.pdf"
+    },
+    {
+     "name": "Wikipedia - Ford Ranger (Americas)",
+     "url": "https://en.wikipedia.org/wiki/Ford_Ranger_(Americas)"
+    },
+    {
+     "name": "EPA fueleconomy.gov vehicle data",
+     "url": "https://www.fueleconomy.gov/feg/download.shtml"
+    },
+    {
+     "name": "The Ranger Station - Ford Ranger engine ratings table",
+     "url": "https://www.therangerstation.com/tech/ford-ranger-engine-ratings"
+    },
+    {
+     "name": "Diesel Hub - Ford Ranger Diesel History (1983-1986)",
+     "url": "https://www.dieselhub.com/rigs/ford-ranger-diesel.html"
+    }
+   ],
+   "sourceCount": 5,
+   "linkFamily": "/engines/ford/ford-122ci"
+  },
+  {
+   "year": 1984,
+   "gen": "gen1",
+   "cid": 134,
+   "cyl": 4,
+   "name": "2.2L / 134 inline-four diesel",
+   "code": null,
+   "desc": "Perkins 4.135 diesel",
+   "hp": 59,
+   "hpBasis": "net",
+   "trims": [
+    "Ranger 4x2 only"
+   ],
+   "note": null,
+   "nhra": false,
+   "sources": [
+    {
+     "name": "Ford 1984 Ranger brochure",
+     "url": "https://www.therangerstation.com/resources/pdf_documents/1984_ford_ranger_brochure.pdf"
+    },
+    {
+     "name": "Wikipedia - Ford Ranger (Americas)",
+     "url": "https://en.wikipedia.org/wiki/Ford_Ranger_(Americas)"
+    },
+    {
+     "name": "EPA fueleconomy.gov vehicle data",
+     "url": "https://www.fueleconomy.gov/feg/download.shtml"
+    },
+    {
+     "name": "The Ranger Station - 1983-1987 Ranger 2.2 & 2.3 diesels (spec tables)",
+     "url": "https://www.therangerstation.com/tech/1983-1987-ford-ranger-2-2-2-3-diesels"
+    },
+    {
+     "name": "Diesel Hub - Ford Ranger Diesel History (1983-1986)",
+     "url": "https://www.dieselhub.com/rigs/ford-ranger-diesel.html"
+    }
+   ],
+   "sourceCount": 5,
+   "diesel": true,
+   "noLink": true
+  },
+  {
+   "year": 1984,
+   "gen": "gen1",
+   "cid": 140,
+   "cyl": 4,
+   "name": "2.3L / 140 inline-four",
+   "code": null,
+   "desc": "Lima I4",
+   "hp": null,
+   "hpBasis": "net",
+   "trims": [
+    "Ranger 4x2",
+    "Ranger 4x4"
+   ],
+   "note": null,
+   "nhra": false,
+   "sources": [
+    {
+     "name": "Ford 1984 Ranger brochure",
+     "url": "https://www.therangerstation.com/resources/pdf_documents/1984_ford_ranger_brochure.pdf"
+    },
+    {
+     "name": "Wikipedia - Ford Ranger (Americas)",
+     "url": "https://en.wikipedia.org/wiki/Ford_Ranger_(Americas)"
+    },
+    {
+     "name": "EPA fueleconomy.gov vehicle data",
+     "url": "https://www.fueleconomy.gov/feg/download.shtml"
+    },
+    {
+     "name": "The Ranger Station - Ford Ranger engine ratings table",
+     "url": "https://www.therangerstation.com/tech/ford-ranger-engine-ratings"
+    }
+   ],
+   "sourceCount": 4
+  },
+  {
+   "year": 1984,
+   "gen": "gen1",
+   "cid": 171,
+   "cyl": 6,
+   "name": "2.8L / 171 V6",
+   "code": null,
+   "desc": "Cologne V6, 2-bbl",
+   "hp": 115,
+   "hpBasis": "net",
+   "trims": [
+    "Ranger 4x2",
+    "Ranger 4x4"
+   ],
+   "note": null,
+   "nhra": false,
+   "sources": [
+    {
+     "name": "Ford 1984 Ranger brochure",
+     "url": "https://www.therangerstation.com/resources/pdf_documents/1984_ford_ranger_brochure.pdf"
+    },
+    {
+     "name": "Wikipedia - Ford Ranger (Americas)",
+     "url": "https://en.wikipedia.org/wiki/Ford_Ranger_(Americas)"
+    },
+    {
+     "name": "EPA fueleconomy.gov vehicle data",
+     "url": "https://www.fueleconomy.gov/feg/download.shtml"
+    },
+    {
+     "name": "The Ranger Station - Ford Ranger engine ratings table",
+     "url": "https://www.therangerstation.com/tech/ford-ranger-engine-ratings"
+    },
+    {
+     "name": "Diesel Hub - Ford Ranger Diesel History (1983-1986)",
+     "url": "https://www.dieselhub.com/rigs/ford-ranger-diesel.html"
+    }
+   ],
+   "sourceCount": 5
+  },
+  {
+   "year": 1985,
+   "gen": "gen1",
+   "cid": 122,
+   "cyl": 4,
+   "name": "2.0L / 122 inline-four",
+   "code": null,
+   "desc": "Lima I4, 2-bbl",
+   "hp": 73,
+   "hpBasis": "net",
+   "trims": [
+    "Ranger 4x2 (base / \"S\")"
+   ],
+   "note": null,
+   "nhra": false,
+   "sources": [
+    {
+     "name": "Ford 1985 Ranger brochure",
+     "url": "https://www.therangerstation.com/resources/pdf_documents/1985_ford_ranger_brochure.pdf"
+    },
+    {
+     "name": "Wikipedia - Ford Ranger (Americas)",
+     "url": "https://en.wikipedia.org/wiki/Ford_Ranger_(Americas)"
+    },
+    {
+     "name": "EPA fueleconomy.gov vehicle data",
+     "url": "https://www.fueleconomy.gov/feg/download.shtml"
+    },
+    {
+     "name": "The Ranger Station - Ford Ranger engine ratings table",
+     "url": "https://www.therangerstation.com/tech/ford-ranger-engine-ratings"
+    }
+   ],
+   "sourceCount": 4,
+   "linkFamily": "/engines/ford/ford-122ci"
+  },
+  {
+   "year": 1985,
+   "gen": "gen1",
+   "cid": 140,
+   "cyl": 4,
+   "name": "2.3L / 140 inline-four",
+   "code": null,
+   "desc": "Lima I4",
+   "hp": null,
+   "hpBasis": "net",
+   "trims": [
+    "Ranger 4x2",
+    "Ranger 4x4"
+   ],
+   "note": null,
+   "nhra": false,
+   "sources": [
+    {
+     "name": "Ford 1985 Ranger brochure",
+     "url": "https://www.therangerstation.com/resources/pdf_documents/1985_ford_ranger_brochure.pdf"
+    },
+    {
+     "name": "Wikipedia - Ford Ranger (Americas)",
+     "url": "https://en.wikipedia.org/wiki/Ford_Ranger_(Americas)"
+    },
+    {
+     "name": "EPA fueleconomy.gov vehicle data",
+     "url": "https://www.fueleconomy.gov/feg/download.shtml"
+    },
+    {
+     "name": "The Ranger Station - Ford Ranger engine ratings table",
+     "url": "https://www.therangerstation.com/tech/ford-ranger-engine-ratings"
+    }
+   ],
+   "sourceCount": 4
+  },
+  {
+   "year": 1985,
+   "gen": "gen1",
+   "cid": 143,
+   "cyl": 4,
+   "name": "2.3L / 143 inline-four diesel",
+   "code": null,
+   "desc": "Mitsubishi 4D55T turbodiesel",
+   "hp": 86,
+   "hpBasis": "net",
+   "trims": [
+    "Ranger 4x2",
+    "Ranger 4x4"
+   ],
+   "note": null,
+   "nhra": false,
+   "sources": [
+    {
+     "name": "Ford 1985 Trucks brochure (revised), Ranger page",
+     "url": "https://oldcarbrochures.org/United%20States/Ford%20Motor%20Company%20Trucks-Vans/1985%20Trucks/1985%20Ford%20Trucks%20%28Rev%29/index.html"
+    },
+    {
+     "name": "Wikipedia - Ford Ranger (Americas)",
+     "url": "https://en.wikipedia.org/wiki/Ford_Ranger_(Americas)"
+    },
+    {
+     "name": "EPA fueleconomy.gov vehicle data",
+     "url": "https://www.fueleconomy.gov/feg/download.shtml"
+    },
+    {
+     "name": "The Ranger Station - 1983-1987 Ranger 2.2 & 2.3 diesels (spec tables)",
+     "url": "https://www.therangerstation.com/tech/1983-1987-ford-ranger-2-2-2-3-diesels"
+    },
+    {
+     "name": "Diesel Hub - Ford Ranger Diesel History (1983-1986)",
+     "url": "https://www.dieselhub.com/rigs/ford-ranger-diesel.html"
+    }
+   ],
+   "sourceCount": 5,
+   "diesel": true
+  },
+  {
+   "year": 1985,
+   "gen": "gen1",
+   "cid": 171,
+   "cyl": 6,
+   "name": "2.8L / 171 V6",
+   "code": null,
+   "desc": "Cologne V6, 2-bbl",
+   "hp": 115,
+   "hpBasis": "net",
+   "trims": [
+    "Ranger 4x2",
+    "Ranger 4x4"
+   ],
+   "note": null,
+   "nhra": false,
+   "sources": [
+    {
+     "name": "Ford 1985 Ranger brochure",
+     "url": "https://www.therangerstation.com/resources/pdf_documents/1985_ford_ranger_brochure.pdf"
+    },
+    {
+     "name": "Wikipedia - Ford Ranger (Americas)",
+     "url": "https://en.wikipedia.org/wiki/Ford_Ranger_(Americas)"
+    },
+    {
+     "name": "EPA fueleconomy.gov vehicle data",
+     "url": "https://www.fueleconomy.gov/feg/download.shtml"
+    },
+    {
+     "name": "The Ranger Station - Ford Ranger engine ratings table",
+     "url": "https://www.therangerstation.com/tech/ford-ranger-engine-ratings"
+    },
+    {
+     "name": "Diesel Hub - Ford Ranger Diesel History (1983-1986)",
+     "url": "https://www.dieselhub.com/rigs/ford-ranger-diesel.html"
+    }
+   ],
+   "sourceCount": 5
+  },
+  {
+   "year": 1986,
+   "gen": "gen1",
+   "cid": 122,
+   "cyl": 4,
+   "name": "2.0L / 122 inline-four",
+   "code": null,
+   "desc": "Lima I4, 2-bbl",
+   "hp": 73,
+   "hpBasis": "net",
+   "trims": [
+    "Ranger 4x2 (base / \"S\")"
+   ],
+   "note": null,
+   "nhra": false,
+   "sources": [
+    {
+     "name": "Ford 1986 Ranger brochure",
+     "url": "https://www.therangerstation.com/resources/pdf_documents/1986_ford_ranger_brochure.pdf"
+    },
+    {
+     "name": "Wikipedia - Ford Ranger (Americas)",
+     "url": "https://en.wikipedia.org/wiki/Ford_Ranger_(Americas)"
+    },
+    {
+     "name": "EPA fueleconomy.gov vehicle data",
+     "url": "https://www.fueleconomy.gov/feg/download.shtml"
+    },
+    {
+     "name": "The Ranger Station - Ford Ranger engine ratings table",
+     "url": "https://www.therangerstation.com/tech/ford-ranger-engine-ratings"
+    }
+   ],
+   "sourceCount": 4,
+   "linkFamily": "/engines/ford/ford-122ci"
+  },
+  {
+   "year": 1986,
+   "gen": "gen1",
+   "cid": 140,
+   "cyl": 4,
+   "name": "2.3L / 140 inline-four",
+   "code": null,
+   "desc": "Lima I4",
+   "hp": 90,
+   "hpBasis": "net",
+   "trims": [
+    "Ranger 4x2",
+    "Ranger 4x4"
+   ],
+   "note": null,
+   "nhra": false,
+   "sources": [
+    {
+     "name": "Ford 1986 Ranger brochure",
+     "url": "https://www.therangerstation.com/resources/pdf_documents/1986_ford_ranger_brochure.pdf"
+    },
+    {
+     "name": "Wikipedia - Ford Ranger (Americas)",
+     "url": "https://en.wikipedia.org/wiki/Ford_Ranger_(Americas)"
+    },
+    {
+     "name": "EPA fueleconomy.gov vehicle data",
+     "url": "https://www.fueleconomy.gov/feg/download.shtml"
+    },
+    {
+     "name": "The Ranger Station - Ford Ranger engine ratings table",
+     "url": "https://www.therangerstation.com/tech/ford-ranger-engine-ratings"
+    }
+   ],
+   "sourceCount": 4
+  },
+  {
+   "year": 1986,
+   "gen": "gen1",
+   "cid": 143,
+   "cyl": 4,
+   "name": "2.3L / 143 inline-four diesel",
+   "code": null,
+   "desc": "Mitsubishi 4D55T turbodiesel",
+   "hp": 86,
+   "hpBasis": "net",
+   "trims": [
+    "Ranger 4x2",
+    "Ranger 4x4"
+   ],
+   "note": null,
+   "nhra": false,
+   "sources": [
+    {
+     "name": "Ford 1986 Ranger brochure",
+     "url": "https://www.therangerstation.com/resources/pdf_documents/1986_ford_ranger_brochure.pdf"
+    },
+    {
+     "name": "Wikipedia - Ford Ranger (Americas)",
+     "url": "https://en.wikipedia.org/wiki/Ford_Ranger_(Americas)"
+    },
+    {
+     "name": "EPA fueleconomy.gov vehicle data",
+     "url": "https://www.fueleconomy.gov/feg/download.shtml"
+    },
+    {
+     "name": "The Ranger Station - 1983-1987 Ranger 2.2 & 2.3 diesels (spec tables)",
+     "url": "https://www.therangerstation.com/tech/1983-1987-ford-ranger-2-2-2-3-diesels"
+    },
+    {
+     "name": "Diesel Hub - Ford Ranger Diesel History (1983-1986)",
+     "url": "https://www.dieselhub.com/rigs/ford-ranger-diesel.html"
+    }
+   ],
+   "sourceCount": 5,
+   "diesel": true
+  },
+  {
+   "year": 1986,
+   "gen": "gen1",
+   "cid": 177,
+   "cyl": 6,
+   "name": "2.9L / 177 V6",
+   "code": null,
+   "desc": "Cologne V6 EFI",
+   "hp": 140,
+   "hpBasis": "net",
+   "trims": [
+    "Ranger 4x2",
+    "Ranger 4x4"
+   ],
+   "note": null,
+   "nhra": false,
+   "sources": [
+    {
+     "name": "Ford 1986 Ranger brochure",
+     "url": "https://www.therangerstation.com/resources/pdf_documents/1986_ford_ranger_brochure.pdf"
+    },
+    {
+     "name": "Wikipedia - Ford Ranger (Americas)",
+     "url": "https://en.wikipedia.org/wiki/Ford_Ranger_(Americas)"
+    },
+    {
+     "name": "EPA fueleconomy.gov vehicle data",
+     "url": "https://www.fueleconomy.gov/feg/download.shtml"
+    },
+    {
+     "name": "The Ranger Station - Ford Ranger engine ratings table",
+     "url": "https://www.therangerstation.com/tech/ford-ranger-engine-ratings"
+    }
+   ],
+   "sourceCount": 4
+  },
+  {
+   "year": 1987,
+   "gen": "gen1",
+   "cid": 122,
+   "cyl": 4,
+   "name": "2.0L / 122 inline-four",
+   "code": null,
+   "desc": "Lima I4, 2-bbl",
+   "hp": null,
+   "hpBasis": "net",
+   "trims": [
+    "Ranger 4x2 (base / \"S\")"
+   ],
+   "note": null,
+   "nhra": false,
+   "sources": [
+    {
+     "name": "Ford 1987 Ranger brochure",
+     "url": "https://www.therangerstation.com/resources/pdf_documents/1987_ford_ranger_brochure.pdf"
+    },
+    {
+     "name": "Wikipedia - Ford Ranger (Americas)",
+     "url": "https://en.wikipedia.org/wiki/Ford_Ranger_(Americas)"
+    },
+    {
+     "name": "EPA fueleconomy.gov vehicle data",
+     "url": "https://www.fueleconomy.gov/feg/download.shtml"
+    },
+    {
+     "name": "The Ranger Station - Ford Ranger engine ratings table",
+     "url": "https://www.therangerstation.com/tech/ford-ranger-engine-ratings"
+    }
+   ],
+   "sourceCount": 4,
+   "linkFamily": "/engines/ford/ford-122ci"
+  },
+  {
+   "year": 1987,
+   "gen": "gen1",
+   "cid": 140,
+   "cyl": 4,
+   "name": "2.3L / 140 inline-four",
+   "code": null,
+   "desc": "Lima I4",
+   "hp": 90,
+   "hpBasis": "net",
+   "trims": [
+    "Ranger 4x2",
+    "Ranger 4x4"
+   ],
+   "note": null,
+   "nhra": false,
+   "sources": [
+    {
+     "name": "Ford 1987 Ranger brochure",
+     "url": "https://www.therangerstation.com/resources/pdf_documents/1987_ford_ranger_brochure.pdf"
+    },
+    {
+     "name": "Wikipedia - Ford Ranger (Americas)",
+     "url": "https://en.wikipedia.org/wiki/Ford_Ranger_(Americas)"
+    },
+    {
+     "name": "EPA fueleconomy.gov vehicle data",
+     "url": "https://www.fueleconomy.gov/feg/download.shtml"
+    },
+    {
+     "name": "The Ranger Station - Ford Ranger engine ratings table",
+     "url": "https://www.therangerstation.com/tech/ford-ranger-engine-ratings"
+    }
+   ],
+   "sourceCount": 4
+  },
+  {
+   "year": 1987,
+   "gen": "gen1",
+   "cid": 143,
+   "cyl": 4,
+   "name": "2.3L / 143 inline-four diesel",
+   "code": null,
+   "desc": "Mitsubishi 4D55T turbodiesel",
+   "hp": 86,
+   "hpBasis": "net",
+   "trims": [
+    "Ranger 4x2",
+    "Ranger 4x4"
+   ],
+   "note": null,
+   "nhra": false,
+   "sources": [
+    {
+     "name": "Ford 1987 Ranger brochure",
+     "url": "https://www.therangerstation.com/resources/pdf_documents/1987_ford_ranger_brochure.pdf"
+    },
+    {
+     "name": "Wikipedia - Ford Ranger (Americas)",
+     "url": "https://en.wikipedia.org/wiki/Ford_Ranger_(Americas)"
+    },
+    {
+     "name": "EPA fueleconomy.gov vehicle data",
+     "url": "https://www.fueleconomy.gov/feg/download.shtml"
+    },
+    {
+     "name": "The Ranger Station - 1983-1987 Ranger 2.2 & 2.3 diesels (spec tables)",
+     "url": "https://www.therangerstation.com/tech/1983-1987-ford-ranger-2-2-2-3-diesels"
+    }
+   ],
+   "sourceCount": 4,
+   "diesel": true
+  },
+  {
+   "year": 1987,
+   "gen": "gen1",
+   "cid": 177,
+   "cyl": 6,
+   "name": "2.9L / 177 V6",
+   "code": null,
+   "desc": "Cologne V6 EFI",
+   "hp": 140,
+   "hpBasis": "net",
+   "trims": [
+    "Ranger 4x2",
+    "Ranger 4x4"
+   ],
+   "note": null,
+   "nhra": false,
+   "sources": [
+    {
+     "name": "Ford 1987 Ranger brochure",
+     "url": "https://www.therangerstation.com/resources/pdf_documents/1987_ford_ranger_brochure.pdf"
+    },
+    {
+     "name": "Wikipedia - Ford Ranger (Americas)",
+     "url": "https://en.wikipedia.org/wiki/Ford_Ranger_(Americas)"
+    },
+    {
+     "name": "EPA fueleconomy.gov vehicle data",
+     "url": "https://www.fueleconomy.gov/feg/download.shtml"
+    },
+    {
+     "name": "The Ranger Station - Ford Ranger engine ratings table",
+     "url": "https://www.therangerstation.com/tech/ford-ranger-engine-ratings"
+    }
+   ],
+   "sourceCount": 4
+  },
+  {
+   "year": 1988,
+   "gen": "gen1",
+   "cid": 122,
+   "cyl": 4,
+   "name": "2.0L / 122 inline-four",
+   "code": null,
+   "desc": "Lima I4, 2-bbl",
+   "hp": null,
+   "hpBasis": "net",
+   "trims": [
+    "Ranger 4x2 (base / \"S\")"
+   ],
+   "note": null,
+   "nhra": false,
+   "sources": [
+    {
+     "name": "Ford 1988 Ranger brochure",
+     "url": "https://www.therangerstation.com/resources/pdf_documents/1988_ford_ranger_brochure.pdf"
+    },
+    {
+     "name": "Wikipedia - Ford Ranger (Americas)",
+     "url": "https://en.wikipedia.org/wiki/Ford_Ranger_(Americas)"
+    },
+    {
+     "name": "EPA fueleconomy.gov vehicle data",
+     "url": "https://www.fueleconomy.gov/feg/download.shtml"
+    },
+    {
+     "name": "The Ranger Station - Ford Ranger engine ratings table",
+     "url": "https://www.therangerstation.com/tech/ford-ranger-engine-ratings"
+    }
+   ],
+   "sourceCount": 4,
+   "linkFamily": "/engines/ford/ford-122ci"
+  },
+  {
+   "year": 1988,
+   "gen": "gen1",
+   "cid": 140,
+   "cyl": 4,
+   "name": "2.3L / 140 inline-four",
+   "code": null,
+   "desc": "Lima I4",
+   "hp": 90,
+   "hpBasis": "net",
+   "trims": [
+    "Ranger 4x2",
+    "Ranger 4x4"
+   ],
+   "note": null,
+   "nhra": false,
+   "sources": [
+    {
+     "name": "Ford 1988 Ranger brochure",
+     "url": "https://www.therangerstation.com/resources/pdf_documents/1988_ford_ranger_brochure.pdf"
+    },
+    {
+     "name": "Wikipedia - Ford Ranger (Americas)",
+     "url": "https://en.wikipedia.org/wiki/Ford_Ranger_(Americas)"
+    },
+    {
+     "name": "EPA fueleconomy.gov vehicle data",
+     "url": "https://www.fueleconomy.gov/feg/download.shtml"
+    },
+    {
+     "name": "The Ranger Station - Ford Ranger engine ratings table",
+     "url": "https://www.therangerstation.com/tech/ford-ranger-engine-ratings"
+    }
+   ],
+   "sourceCount": 4
+  },
+  {
+   "year": 1988,
+   "gen": "gen1",
+   "cid": 177,
+   "cyl": 6,
+   "name": "2.9L / 177 V6",
+   "code": null,
+   "desc": "Cologne V6 EFI",
+   "hp": 140,
+   "hpBasis": "net",
+   "trims": [
+    "Ranger 4x2",
+    "Ranger 4x4"
+   ],
+   "note": null,
+   "nhra": false,
+   "sources": [
+    {
+     "name": "Ford 1988 Ranger brochure",
+     "url": "https://www.therangerstation.com/resources/pdf_documents/1988_ford_ranger_brochure.pdf"
+    },
+    {
+     "name": "Wikipedia - Ford Ranger (Americas)",
+     "url": "https://en.wikipedia.org/wiki/Ford_Ranger_(Americas)"
+    },
+    {
+     "name": "EPA fueleconomy.gov vehicle data",
+     "url": "https://www.fueleconomy.gov/feg/download.shtml"
+    },
+    {
+     "name": "The Ranger Station - Ford Ranger engine ratings table",
+     "url": "https://www.therangerstation.com/tech/ford-ranger-engine-ratings"
+    }
+   ],
+   "sourceCount": 4
+  },
+  {
+   "year": 1989,
+   "gen": "gen1",
+   "cid": 140,
+   "cyl": 4,
+   "name": "2.3L / 140 inline-four",
+   "code": null,
+   "desc": "Lima I4",
+   "hp": 100,
+   "hpBasis": "net",
+   "trims": [
+    "Ranger 4x2",
+    "Ranger 4x4"
+   ],
+   "note": null,
+   "nhra": false,
+   "sources": [
+    {
+     "name": "Ford 1989 Ranger brochure",
+     "url": "https://www.therangerstation.com/resources/pdf_documents/1989_ford_ranger_brochure.pdf"
+    },
+    {
+     "name": "Wikipedia - Ford Ranger (Americas)",
+     "url": "https://en.wikipedia.org/wiki/Ford_Ranger_(Americas)"
+    },
+    {
+     "name": "EPA fueleconomy.gov vehicle data",
+     "url": "https://www.fueleconomy.gov/feg/download.shtml"
+    },
+    {
+     "name": "The Ranger Station - Ford Ranger engine ratings table",
+     "url": "https://www.therangerstation.com/tech/ford-ranger-engine-ratings"
+    }
+   ],
+   "sourceCount": 4
+  },
+  {
+   "year": 1989,
+   "gen": "gen1",
+   "cid": 177,
+   "cyl": 6,
+   "name": "2.9L / 177 V6",
+   "code": null,
+   "desc": "Cologne V6 EFI",
+   "hp": 140,
+   "hpBasis": "net",
+   "trims": [
+    "Ranger 4x2",
+    "Ranger 4x4"
+   ],
+   "note": null,
+   "nhra": false,
+   "sources": [
+    {
+     "name": "Ford 1989 Ranger brochure",
+     "url": "https://www.therangerstation.com/resources/pdf_documents/1989_ford_ranger_brochure.pdf"
+    },
+    {
+     "name": "Wikipedia - Ford Ranger (Americas)",
+     "url": "https://en.wikipedia.org/wiki/Ford_Ranger_(Americas)"
+    },
+    {
+     "name": "EPA fueleconomy.gov vehicle data",
+     "url": "https://www.fueleconomy.gov/feg/download.shtml"
+    },
+    {
+     "name": "The Ranger Station - Ford Ranger engine ratings table",
+     "url": "https://www.therangerstation.com/tech/ford-ranger-engine-ratings"
+    }
+   ],
+   "sourceCount": 4
+  },
+  {
+   "year": 1990,
+   "gen": "gen1",
+   "cid": 140,
+   "cyl": 4,
+   "name": "2.3L / 140 inline-four",
+   "code": null,
+   "desc": "Lima I4",
+   "hp": 100,
+   "hpBasis": "net",
+   "trims": [
+    "Ranger 4x2",
+    "Ranger 4x4"
+   ],
+   "note": null,
+   "nhra": false,
+   "sources": [
+    {
+     "name": "Ford 1990 Ranger brochure",
+     "url": "https://www.therangerstation.com/resources/pdf_documents/1990_ford_ranger_brochure.pdf"
+    },
+    {
+     "name": "Wikipedia - Ford Ranger (Americas)",
+     "url": "https://en.wikipedia.org/wiki/Ford_Ranger_(Americas)"
+    },
+    {
+     "name": "EPA fueleconomy.gov vehicle data",
+     "url": "https://www.fueleconomy.gov/feg/download.shtml"
+    },
+    {
+     "name": "The Ranger Station - Ford Ranger engine ratings table",
+     "url": "https://www.therangerstation.com/tech/ford-ranger-engine-ratings"
+    }
+   ],
+   "sourceCount": 4
+  },
+  {
+   "year": 1990,
+   "gen": "gen1",
+   "cid": 177,
+   "cyl": 6,
+   "name": "2.9L / 177 V6",
+   "code": null,
+   "desc": "Cologne V6 EFI",
+   "hp": 140,
+   "hpBasis": "net",
+   "trims": [
+    "Ranger 4x2",
+    "Ranger 4x4"
+   ],
+   "note": null,
+   "nhra": false,
+   "sources": [
+    {
+     "name": "Ford 1990 Ranger brochure",
+     "url": "https://www.therangerstation.com/resources/pdf_documents/1990_ford_ranger_brochure.pdf"
+    },
+    {
+     "name": "Wikipedia - Ford Ranger (Americas)",
+     "url": "https://en.wikipedia.org/wiki/Ford_Ranger_(Americas)"
+    },
+    {
+     "name": "EPA fueleconomy.gov vehicle data",
+     "url": "https://www.fueleconomy.gov/feg/download.shtml"
+    },
+    {
+     "name": "The Ranger Station - Ford Ranger engine ratings table",
+     "url": "https://www.therangerstation.com/tech/ford-ranger-engine-ratings"
+    }
+   ],
+   "sourceCount": 4
+  },
+  {
+   "year": 1990,
+   "gen": "gen1",
+   "cid": 245,
+   "cyl": 6,
+   "name": "4.0L / 245 V6",
+   "code": null,
+   "desc": "Cologne OHV V6 EFI",
+   "hp": null,
+   "hpBasis": "net",
+   "trims": [
+    "Ranger 4x2",
+    "Ranger 4x4"
+   ],
+   "note": null,
+   "nhra": false,
+   "sources": [
+    {
+     "name": "Ford 1990 Ranger brochure",
+     "url": "https://www.therangerstation.com/resources/pdf_documents/1990_ford_ranger_brochure.pdf"
+    },
+    {
+     "name": "Wikipedia - Ford Ranger (Americas)",
+     "url": "https://en.wikipedia.org/wiki/Ford_Ranger_(Americas)"
+    },
+    {
+     "name": "EPA fueleconomy.gov vehicle data",
+     "url": "https://www.fueleconomy.gov/feg/download.shtml"
+    },
+    {
+     "name": "The Ranger Station - Ford Ranger engine ratings table",
+     "url": "https://www.therangerstation.com/tech/ford-ranger-engine-ratings"
+    }
+   ],
+   "sourceCount": 4
+  },
+  {
+   "year": 1991,
+   "gen": "gen1",
+   "cid": 140,
+   "cyl": 4,
+   "name": "2.3L / 140 inline-four",
+   "code": null,
+   "desc": "Lima I4",
+   "hp": 100,
+   "hpBasis": "net",
+   "trims": [
+    "Ranger 4x2",
+    "Ranger 4x4"
+   ],
+   "note": null,
+   "nhra": true,
+   "sources": [
+    {
+     "name": "Ford 1991 Ranger brochure (Ranger Power page, pp.16-17)",
+     "url": "https://oldcarbrochures.org/United%20States/Ford%20Motor%20Company%20Trucks-Vans/1991-Trucks-Vans/1991-Ford-Ranger-Brochure/index.html"
+    },
+    {
+     "name": "Wikipedia - Ford Ranger (Americas)",
+     "url": "https://en.wikipedia.org/wiki/Ford_Ranger_(Americas)"
+    },
+    {
+     "name": "EPA fueleconomy.gov vehicle data",
+     "url": "https://www.fueleconomy.gov/feg/download.shtml"
+    },
+    {
+     "name": "The Ranger Station - Ford Ranger engine ratings table",
+     "url": "https://www.therangerstation.com/tech/ford-ranger-engine-ratings"
+    }
+   ],
+   "sourceCount": 5
+  },
+  {
+   "year": 1991,
+   "gen": "gen1",
+   "cid": 177,
+   "cyl": 6,
+   "name": "2.9L / 177 V6",
+   "code": null,
+   "desc": "Cologne V6 EFI",
+   "hp": 140,
+   "hpBasis": "net",
+   "trims": [
+    "Ranger 4x4 only"
+   ],
+   "note": null,
+   "nhra": true,
+   "sources": [
+    {
+     "name": "Ford 1991 Ranger brochure (Ranger Power page, pp.16-17)",
+     "url": "https://oldcarbrochures.org/United%20States/Ford%20Motor%20Company%20Trucks-Vans/1991-Trucks-Vans/1991-Ford-Ranger-Brochure/index.html"
+    },
+    {
+     "name": "Wikipedia - Ford Ranger (Americas)",
+     "url": "https://en.wikipedia.org/wiki/Ford_Ranger_(Americas)"
+    },
+    {
+     "name": "EPA fueleconomy.gov vehicle data",
+     "url": "https://www.fueleconomy.gov/feg/download.shtml"
+    },
+    {
+     "name": "The Ranger Station - Ford Ranger engine ratings table",
+     "url": "https://www.therangerstation.com/tech/ford-ranger-engine-ratings"
+    }
+   ],
+   "sourceCount": 5
+  },
+  {
+   "year": 1991,
+   "gen": "gen1",
+   "cid": 182,
+   "cyl": 6,
+   "name": "3.0L / 182 V6",
+   "code": null,
+   "desc": "Vulcan V6",
+   "hp": 145,
+   "hpBasis": "net",
+   "trims": [
+    "Ranger 4x2 only"
+   ],
+   "note": null,
+   "nhra": true,
+   "sources": [
+    {
+     "name": "Ford 1991 Ranger brochure (Ranger Power page, pp.16-17)",
+     "url": "https://oldcarbrochures.org/United%20States/Ford%20Motor%20Company%20Trucks-Vans/1991-Trucks-Vans/1991-Ford-Ranger-Brochure/index.html"
+    },
+    {
+     "name": "Wikipedia - Ford Ranger (Americas)",
+     "url": "https://en.wikipedia.org/wiki/Ford_Ranger_(Americas)"
+    },
+    {
+     "name": "EPA fueleconomy.gov vehicle data",
+     "url": "https://www.fueleconomy.gov/feg/download.shtml"
+    },
+    {
+     "name": "The Ranger Station - Ford Ranger engine ratings table",
+     "url": "https://www.therangerstation.com/tech/ford-ranger-engine-ratings"
+    }
+   ],
+   "sourceCount": 5,
+   "linkFamily": "/engines/mercury/vulcan"
+  },
+  {
+   "year": 1991,
+   "gen": "gen1",
+   "cid": 245,
+   "cyl": 6,
+   "name": "4.0L / 245 V6",
+   "code": null,
+   "desc": "Cologne OHV V6 EFI",
+   "hp": 160,
+   "hpBasis": "net",
+   "trims": [
+    "Ranger 4x2",
+    "Ranger 4x4"
+   ],
+   "note": null,
+   "nhra": true,
+   "sources": [
+    {
+     "name": "Ford 1991 Ranger brochure (Ranger Power page, pp.16-17)",
+     "url": "https://oldcarbrochures.org/United%20States/Ford%20Motor%20Company%20Trucks-Vans/1991-Trucks-Vans/1991-Ford-Ranger-Brochure/index.html"
+    },
+    {
+     "name": "Wikipedia - Ford Ranger (Americas)",
+     "url": "https://en.wikipedia.org/wiki/Ford_Ranger_(Americas)"
+    },
+    {
+     "name": "EPA fueleconomy.gov vehicle data",
+     "url": "https://www.fueleconomy.gov/feg/download.shtml"
+    },
+    {
+     "name": "The Ranger Station - Ford Ranger engine ratings table",
+     "url": "https://www.therangerstation.com/tech/ford-ranger-engine-ratings"
+    }
+   ],
+   "sourceCount": 5
+  },
+  {
+   "year": 1992,
+   "gen": "gen1",
+   "cid": 140,
+   "cyl": 4,
+   "name": "2.3L / 140 inline-four",
+   "code": null,
+   "desc": "Lima I4",
+   "hp": 100,
+   "hpBasis": "net",
+   "trims": [
+    "Ranger 4x2",
+    "Ranger 4x4"
+   ],
+   "note": null,
+   "nhra": true,
+   "sources": [
+    {
+     "name": "Ford 1992 Ranger brochure",
+     "url": "https://www.therangerstation.com/resources/pdf_documents/1992_ford_ranger_brochure.pdf"
+    },
+    {
+     "name": "Wikipedia - Ford Ranger (Americas)",
+     "url": "https://en.wikipedia.org/wiki/Ford_Ranger_(Americas)"
+    },
+    {
+     "name": "EPA fueleconomy.gov vehicle data",
+     "url": "https://www.fueleconomy.gov/feg/download.shtml"
+    },
+    {
+     "name": "The Ranger Station - Ford Ranger engine ratings table",
+     "url": "https://www.therangerstation.com/tech/ford-ranger-engine-ratings"
+    }
+   ],
+   "sourceCount": 5
+  },
+  {
+   "year": 1992,
+   "gen": "gen1",
+   "cid": 177,
+   "cyl": 6,
+   "name": "2.9L / 177 V6",
+   "code": null,
+   "desc": "Cologne V6 EFI",
+   "hp": 140,
+   "hpBasis": "net",
+   "trims": [
+    "Ranger 4x4 only"
+   ],
+   "note": null,
+   "nhra": false,
+   "sources": [
+    {
+     "name": "Ford 1992 Ranger brochure",
+     "url": "https://www.therangerstation.com/resources/pdf_documents/1992_ford_ranger_brochure.pdf"
+    },
+    {
+     "name": "Wikipedia - Ford Ranger (Americas)",
+     "url": "https://en.wikipedia.org/wiki/Ford_Ranger_(Americas)"
+    },
+    {
+     "name": "EPA fueleconomy.gov vehicle data",
+     "url": "https://www.fueleconomy.gov/feg/download.shtml"
+    },
+    {
+     "name": "The Ranger Station - Ford Ranger engine ratings table",
+     "url": "https://www.therangerstation.com/tech/ford-ranger-engine-ratings"
+    }
+   ],
+   "sourceCount": 4
+  },
+  {
+   "year": 1992,
+   "gen": "gen1",
+   "cid": 182,
+   "cyl": 6,
+   "name": "3.0L / 182 V6",
+   "code": null,
+   "desc": "Vulcan V6",
+   "hp": 145,
+   "hpBasis": "net",
+   "trims": [
+    "Ranger 4x2 only"
+   ],
+   "note": null,
+   "nhra": true,
+   "sources": [
+    {
+     "name": "Ford 1992 Ranger brochure",
+     "url": "https://www.therangerstation.com/resources/pdf_documents/1992_ford_ranger_brochure.pdf"
+    },
+    {
+     "name": "Wikipedia - Ford Ranger (Americas)",
+     "url": "https://en.wikipedia.org/wiki/Ford_Ranger_(Americas)"
+    },
+    {
+     "name": "EPA fueleconomy.gov vehicle data",
+     "url": "https://www.fueleconomy.gov/feg/download.shtml"
+    },
+    {
+     "name": "The Ranger Station - Ford Ranger engine ratings table",
+     "url": "https://www.therangerstation.com/tech/ford-ranger-engine-ratings"
+    }
+   ],
+   "sourceCount": 5,
+   "linkFamily": "/engines/mercury/vulcan"
+  },
+  {
+   "year": 1992,
+   "gen": "gen1",
+   "cid": 245,
+   "cyl": 6,
+   "name": "4.0L / 245 V6",
+   "code": null,
+   "desc": "Cologne OHV V6 EFI",
+   "hp": 160,
+   "hpBasis": "net",
+   "trims": [
+    "Ranger 4x2",
+    "Ranger 4x4"
+   ],
+   "note": null,
+   "nhra": true,
+   "sources": [
+    {
+     "name": "Ford 1992 Ranger brochure",
+     "url": "https://www.therangerstation.com/resources/pdf_documents/1992_ford_ranger_brochure.pdf"
+    },
+    {
+     "name": "Wikipedia - Ford Ranger (Americas)",
+     "url": "https://en.wikipedia.org/wiki/Ford_Ranger_(Americas)"
+    },
+    {
+     "name": "EPA fueleconomy.gov vehicle data",
+     "url": "https://www.fueleconomy.gov/feg/download.shtml"
+    },
+    {
+     "name": "The Ranger Station - Ford Ranger engine ratings table",
+     "url": "https://www.therangerstation.com/tech/ford-ranger-engine-ratings"
+    }
+   ],
+   "sourceCount": 5
+  },
+  {
+   "year": 1993,
+   "gen": "gen2",
+   "cid": 140,
+   "cyl": 4,
+   "name": "2.3L / 140 inline-four",
+   "code": null,
+   "desc": "Lima I4",
+   "hp": 98,
+   "hpBasis": "net",
+   "trims": [
+    "Ranger 4x2",
+    "Ranger 4x4"
+   ],
+   "note": null,
+   "nhra": true,
+   "sources": [
+    {
+     "name": "Ford 1993 Ranger brochure",
+     "url": "https://www.therangerstation.com/resources/pdf_documents/1993_ford_ranger_brochure.pdf"
+    },
+    {
+     "name": "Wikipedia - Ford Ranger (Americas)",
+     "url": "https://en.wikipedia.org/wiki/Ford_Ranger_(Americas)"
+    },
+    {
+     "name": "EPA fueleconomy.gov vehicle data",
+     "url": "https://www.fueleconomy.gov/feg/download.shtml"
+    },
+    {
+     "name": "The Ranger Station - Ford Ranger engine ratings table",
+     "url": "https://www.therangerstation.com/tech/ford-ranger-engine-ratings"
+    }
+   ],
+   "sourceCount": 5
+  },
+  {
+   "year": 1993,
+   "gen": "gen2",
+   "cid": 182,
+   "cyl": 6,
+   "name": "3.0L / 182 V6",
+   "code": null,
+   "desc": "Vulcan V6",
+   "hp": null,
+   "hpBasis": "net",
+   "trims": [
+    "Ranger 4x2",
+    "Ranger 4x4"
+   ],
+   "note": null,
+   "nhra": true,
+   "sources": [
+    {
+     "name": "Ford 1993 Ranger brochure",
+     "url": "https://www.therangerstation.com/resources/pdf_documents/1993_ford_ranger_brochure.pdf"
+    },
+    {
+     "name": "Wikipedia - Ford Ranger (Americas)",
+     "url": "https://en.wikipedia.org/wiki/Ford_Ranger_(Americas)"
+    },
+    {
+     "name": "EPA fueleconomy.gov vehicle data",
+     "url": "https://www.fueleconomy.gov/feg/download.shtml"
+    },
+    {
+     "name": "The Ranger Station - Ford Ranger engine ratings table",
+     "url": "https://www.therangerstation.com/tech/ford-ranger-engine-ratings"
+    }
+   ],
+   "sourceCount": 5,
+   "linkFamily": "/engines/mercury/vulcan"
+  },
+  {
+   "year": 1993,
+   "gen": "gen2",
+   "cid": 245,
+   "cyl": 6,
+   "name": "4.0L / 245 V6",
+   "code": null,
+   "desc": "Cologne OHV V6 EFI",
+   "hp": 160,
+   "hpBasis": "net",
+   "trims": [
+    "Ranger 4x2",
+    "Ranger 4x4"
+   ],
+   "note": null,
+   "nhra": true,
+   "sources": [
+    {
+     "name": "Ford 1993 Ranger brochure",
+     "url": "https://www.therangerstation.com/resources/pdf_documents/1993_ford_ranger_brochure.pdf"
+    },
+    {
+     "name": "Wikipedia - Ford Ranger (Americas)",
+     "url": "https://en.wikipedia.org/wiki/Ford_Ranger_(Americas)"
+    },
+    {
+     "name": "EPA fueleconomy.gov vehicle data",
+     "url": "https://www.fueleconomy.gov/feg/download.shtml"
+    },
+    {
+     "name": "The Ranger Station - Ford Ranger engine ratings table",
+     "url": "https://www.therangerstation.com/tech/ford-ranger-engine-ratings"
+    }
+   ],
+   "sourceCount": 5
+  },
+  {
+   "year": 1994,
+   "gen": "gen2",
+   "cid": 140,
+   "cyl": 4,
+   "name": "2.3L / 140 inline-four",
+   "code": null,
+   "desc": "Lima I4",
+   "hp": 98,
+   "hpBasis": "net",
+   "trims": [
+    "Ranger 4x2",
+    "Ranger 4x4"
+   ],
+   "note": null,
+   "nhra": false,
+   "sources": [
+    {
+     "name": "Ford 1994 Ranger brochure",
+     "url": "https://www.therangerstation.com/resources/pdf_documents/1994_ford_ranger_brochure.pdf"
+    },
+    {
+     "name": "Wikipedia - Ford Ranger (Americas)",
+     "url": "https://en.wikipedia.org/wiki/Ford_Ranger_(Americas)"
+    },
+    {
+     "name": "EPA fueleconomy.gov vehicle data",
+     "url": "https://www.fueleconomy.gov/feg/download.shtml"
+    },
+    {
+     "name": "The Ranger Station - Ford Ranger engine ratings table",
+     "url": "https://www.therangerstation.com/tech/ford-ranger-engine-ratings"
+    }
+   ],
+   "sourceCount": 4
+  },
+  {
+   "year": 1994,
+   "gen": "gen2",
+   "cid": 182,
+   "cyl": 6,
+   "name": "3.0L / 182 V6",
+   "code": null,
+   "desc": "Vulcan V6",
+   "hp": 140,
+   "hpBasis": "net",
+   "trims": [
+    "Ranger 4x2",
+    "Ranger 4x4"
+   ],
+   "note": null,
+   "nhra": false,
+   "sources": [
+    {
+     "name": "Ford 1994 Ranger brochure",
+     "url": "https://www.therangerstation.com/resources/pdf_documents/1994_ford_ranger_brochure.pdf"
+    },
+    {
+     "name": "Wikipedia - Ford Ranger (Americas)",
+     "url": "https://en.wikipedia.org/wiki/Ford_Ranger_(Americas)"
+    },
+    {
+     "name": "EPA fueleconomy.gov vehicle data",
+     "url": "https://www.fueleconomy.gov/feg/download.shtml"
+    },
+    {
+     "name": "The Ranger Station - Ford Ranger engine ratings table",
+     "url": "https://www.therangerstation.com/tech/ford-ranger-engine-ratings"
+    }
+   ],
+   "sourceCount": 4,
+   "linkFamily": "/engines/mercury/vulcan"
+  },
+  {
+   "year": 1994,
+   "gen": "gen2",
+   "cid": 245,
+   "cyl": 6,
+   "name": "4.0L / 245 V6",
+   "code": null,
+   "desc": "Cologne OHV V6 EFI",
+   "hp": 160,
+   "hpBasis": "net",
+   "trims": [
+    "Ranger 4x2",
+    "Ranger 4x4"
+   ],
+   "note": null,
+   "nhra": false,
+   "sources": [
+    {
+     "name": "Ford 1994 Ranger brochure",
+     "url": "https://www.therangerstation.com/resources/pdf_documents/1994_ford_ranger_brochure.pdf"
+    },
+    {
+     "name": "Wikipedia - Ford Ranger (Americas)",
+     "url": "https://en.wikipedia.org/wiki/Ford_Ranger_(Americas)"
+    },
+    {
+     "name": "EPA fueleconomy.gov vehicle data",
+     "url": "https://www.fueleconomy.gov/feg/download.shtml"
+    },
+    {
+     "name": "The Ranger Station - Ford Ranger engine ratings table",
+     "url": "https://www.therangerstation.com/tech/ford-ranger-engine-ratings"
+    }
+   ],
+   "sourceCount": 4
+  },
+  {
+   "year": 1995,
+   "gen": "gen2",
+   "cid": 140,
+   "cyl": 4,
+   "name": "2.3L / 140 inline-four",
+   "code": null,
+   "desc": "Lima I4",
+   "hp": 112,
+   "hpBasis": "net",
+   "trims": [
+    "Ranger 4x2",
+    "Ranger 4x4"
+   ],
+   "note": null,
+   "nhra": false,
+   "sources": [
+    {
+     "name": "Ford 1995 Ranger brochure",
+     "url": "https://www.therangerstation.com/resources/pdf_documents/1995_ford_ranger_brochure.pdf"
+    },
+    {
+     "name": "Wikipedia - Ford Ranger (Americas)",
+     "url": "https://en.wikipedia.org/wiki/Ford_Ranger_(Americas)"
+    },
+    {
+     "name": "EPA fueleconomy.gov vehicle data",
+     "url": "https://www.fueleconomy.gov/feg/download.shtml"
+    },
+    {
+     "name": "The Ranger Station - Ford Ranger engine ratings table",
+     "url": "https://www.therangerstation.com/tech/ford-ranger-engine-ratings"
+    }
+   ],
+   "sourceCount": 4
+  },
+  {
+   "year": 1995,
+   "gen": "gen2",
+   "cid": 182,
+   "cyl": 6,
+   "name": "3.0L / 182 V6",
+   "code": null,
+   "desc": "Vulcan V6",
+   "hp": 147,
+   "hpBasis": "net",
+   "trims": [
+    "Ranger 4x2",
+    "Ranger 4x4"
+   ],
+   "note": null,
+   "nhra": false,
+   "sources": [
+    {
+     "name": "Ford 1995 Ranger brochure",
+     "url": "https://www.therangerstation.com/resources/pdf_documents/1995_ford_ranger_brochure.pdf"
+    },
+    {
+     "name": "Wikipedia - Ford Ranger (Americas)",
+     "url": "https://en.wikipedia.org/wiki/Ford_Ranger_(Americas)"
+    },
+    {
+     "name": "EPA fueleconomy.gov vehicle data",
+     "url": "https://www.fueleconomy.gov/feg/download.shtml"
+    },
+    {
+     "name": "The Ranger Station - Ford Ranger engine ratings table",
+     "url": "https://www.therangerstation.com/tech/ford-ranger-engine-ratings"
+    }
+   ],
+   "sourceCount": 4,
+   "linkFamily": "/engines/mercury/vulcan"
+  },
+  {
+   "year": 1995,
+   "gen": "gen2",
+   "cid": 245,
+   "cyl": 6,
+   "name": "4.0L / 245 V6",
+   "code": null,
+   "desc": "Cologne OHV V6 EFI",
+   "hp": 160,
+   "hpBasis": "net",
+   "trims": [
+    "Ranger 4x2",
+    "Ranger 4x4"
+   ],
+   "note": null,
+   "nhra": false,
+   "sources": [
+    {
+     "name": "Ford 1995 Ranger brochure",
+     "url": "https://www.therangerstation.com/resources/pdf_documents/1995_ford_ranger_brochure.pdf"
+    },
+    {
+     "name": "Wikipedia - Ford Ranger (Americas)",
+     "url": "https://en.wikipedia.org/wiki/Ford_Ranger_(Americas)"
+    },
+    {
+     "name": "EPA fueleconomy.gov vehicle data",
+     "url": "https://www.fueleconomy.gov/feg/download.shtml"
+    },
+    {
+     "name": "The Ranger Station - Ford Ranger engine ratings table",
+     "url": "https://www.therangerstation.com/tech/ford-ranger-engine-ratings"
+    }
+   ],
+   "sourceCount": 4
+  },
+  {
+   "year": 1996,
+   "gen": "gen2",
+   "cid": 140,
+   "cyl": 4,
+   "name": "2.3L / 140 inline-four",
+   "code": null,
+   "desc": "Lima I4",
+   "hp": 112,
+   "hpBasis": "net",
+   "trims": [
+    "Ranger 4x2",
+    "Ranger 4x4"
+   ],
+   "note": null,
+   "nhra": false,
+   "sources": [
+    {
+     "name": "Ford 1996 Ranger brochure",
+     "url": "https://www.therangerstation.com/resources/pdf_documents/1996_ford_ranger_brochure.pdf"
+    },
+    {
+     "name": "Wikipedia - Ford Ranger (Americas)",
+     "url": "https://en.wikipedia.org/wiki/Ford_Ranger_(Americas)"
+    },
+    {
+     "name": "EPA fueleconomy.gov vehicle data",
+     "url": "https://www.fueleconomy.gov/feg/download.shtml"
+    },
+    {
+     "name": "The Ranger Station - Ford Ranger engine ratings table",
+     "url": "https://www.therangerstation.com/tech/ford-ranger-engine-ratings"
+    }
+   ],
+   "sourceCount": 4
+  },
+  {
+   "year": 1996,
+   "gen": "gen2",
+   "cid": 182,
+   "cyl": 6,
+   "name": "3.0L / 182 V6",
+   "code": null,
+   "desc": "Vulcan V6",
+   "hp": 147,
+   "hpBasis": "net",
+   "trims": [
+    "Ranger 4x2",
+    "Ranger 4x4"
+   ],
+   "note": null,
+   "nhra": false,
+   "sources": [
+    {
+     "name": "Ford 1996 Ranger brochure",
+     "url": "https://www.therangerstation.com/resources/pdf_documents/1996_ford_ranger_brochure.pdf"
+    },
+    {
+     "name": "Wikipedia - Ford Ranger (Americas)",
+     "url": "https://en.wikipedia.org/wiki/Ford_Ranger_(Americas)"
+    },
+    {
+     "name": "EPA fueleconomy.gov vehicle data",
+     "url": "https://www.fueleconomy.gov/feg/download.shtml"
+    },
+    {
+     "name": "The Ranger Station - Ford Ranger engine ratings table",
+     "url": "https://www.therangerstation.com/tech/ford-ranger-engine-ratings"
+    }
+   ],
+   "sourceCount": 4,
+   "linkFamily": "/engines/mercury/vulcan"
+  },
+  {
+   "year": 1996,
+   "gen": "gen2",
+   "cid": 245,
+   "cyl": 6,
+   "name": "4.0L / 245 V6",
+   "code": null,
+   "desc": "Cologne OHV V6 EFI",
+   "hp": 160,
+   "hpBasis": "net",
+   "trims": [
+    "Ranger 4x2",
+    "Ranger 4x4"
+   ],
+   "note": null,
+   "nhra": false,
+   "sources": [
+    {
+     "name": "Ford 1996 Ranger brochure",
+     "url": "https://www.therangerstation.com/resources/pdf_documents/1996_ford_ranger_brochure.pdf"
+    },
+    {
+     "name": "Wikipedia - Ford Ranger (Americas)",
+     "url": "https://en.wikipedia.org/wiki/Ford_Ranger_(Americas)"
+    },
+    {
+     "name": "EPA fueleconomy.gov vehicle data",
+     "url": "https://www.fueleconomy.gov/feg/download.shtml"
+    },
+    {
+     "name": "The Ranger Station - Ford Ranger engine ratings table",
+     "url": "https://www.therangerstation.com/tech/ford-ranger-engine-ratings"
+    }
+   ],
+   "sourceCount": 4
+  },
+  {
+   "year": 1997,
+   "gen": "gen2",
+   "cid": 140,
+   "cyl": 4,
+   "name": "2.3L / 140 inline-four",
+   "code": null,
+   "desc": "Lima I4",
+   "hp": 112,
+   "hpBasis": "net",
+   "trims": [
+    "Ranger 4x2",
+    "Ranger 4x4"
+   ],
+   "note": null,
+   "nhra": true,
+   "sources": [
+    {
+     "name": "Ford 1997 Ranger brochure",
+     "url": "https://www.therangerstation.com/resources/pdf_documents/1997_ford_ranger_brochure.pdf"
+    },
+    {
+     "name": "Wikipedia - Ford Ranger (Americas)",
+     "url": "https://en.wikipedia.org/wiki/Ford_Ranger_(Americas)"
+    },
+    {
+     "name": "EPA fueleconomy.gov vehicle data",
+     "url": "https://www.fueleconomy.gov/feg/download.shtml"
+    },
+    {
+     "name": "The Ranger Station - Ford Ranger engine ratings table",
+     "url": "https://www.therangerstation.com/tech/ford-ranger-engine-ratings"
+    }
+   ],
+   "sourceCount": 5
+  },
+  {
+   "year": 1997,
+   "gen": "gen2",
+   "cid": 182,
+   "cyl": 6,
+   "name": "3.0L / 182 V6",
+   "code": null,
+   "desc": "Vulcan V6",
+   "hp": 147,
+   "hpBasis": "net",
+   "trims": [
+    "Ranger 4x2",
+    "Ranger 4x4"
+   ],
+   "note": null,
+   "nhra": false,
+   "sources": [
+    {
+     "name": "Ford 1997 Ranger brochure",
+     "url": "https://www.therangerstation.com/resources/pdf_documents/1997_ford_ranger_brochure.pdf"
+    },
+    {
+     "name": "Wikipedia - Ford Ranger (Americas)",
+     "url": "https://en.wikipedia.org/wiki/Ford_Ranger_(Americas)"
+    },
+    {
+     "name": "EPA fueleconomy.gov vehicle data",
+     "url": "https://www.fueleconomy.gov/feg/download.shtml"
+    },
+    {
+     "name": "The Ranger Station - Ford Ranger engine ratings table",
+     "url": "https://www.therangerstation.com/tech/ford-ranger-engine-ratings"
+    }
+   ],
+   "sourceCount": 4,
+   "linkFamily": "/engines/mercury/vulcan"
+  },
+  {
+   "year": 1997,
+   "gen": "gen2",
+   "cid": 245,
+   "cyl": 6,
+   "name": "4.0L / 245 V6",
+   "code": null,
+   "desc": "Cologne OHV V6 EFI",
+   "hp": 160,
+   "hpBasis": "net",
+   "trims": [
+    "Ranger 4x2",
+    "Ranger 4x4"
+   ],
+   "note": null,
+   "nhra": false,
+   "sources": [
+    {
+     "name": "Ford 1997 Ranger brochure",
+     "url": "https://www.therangerstation.com/resources/pdf_documents/1997_ford_ranger_brochure.pdf"
+    },
+    {
+     "name": "Wikipedia - Ford Ranger (Americas)",
+     "url": "https://en.wikipedia.org/wiki/Ford_Ranger_(Americas)"
+    },
+    {
+     "name": "EPA fueleconomy.gov vehicle data",
+     "url": "https://www.fueleconomy.gov/feg/download.shtml"
+    },
+    {
+     "name": "The Ranger Station - Ford Ranger engine ratings table",
+     "url": "https://www.therangerstation.com/tech/ford-ranger-engine-ratings"
+    }
+   ],
+   "sourceCount": 4
+  },
+  {
+   "year": 1998,
+   "gen": "gen3",
+   "cid": 153,
+   "cyl": 4,
+   "name": "2.5L / 153 inline-four",
+   "code": null,
+   "desc": "Lima SOHC I4",
+   "hp": 119,
+   "hpBasis": "net",
+   "trims": [
+    "Ranger 4x2 only"
+   ],
+   "note": null,
+   "nhra": false,
+   "sources": [
+    {
+     "name": "Ford 1998 Ranger brochure",
+     "url": "https://www.therangerstation.com/resources/pdf_documents/1998_ford_ranger_brochure.pdf"
+    },
+    {
+     "name": "Wikipedia - Ford Ranger (Americas)",
+     "url": "https://en.wikipedia.org/wiki/Ford_Ranger_(Americas)"
+    },
+    {
+     "name": "EPA fueleconomy.gov vehicle data",
+     "url": "https://www.fueleconomy.gov/feg/download.shtml"
+    }
+   ],
+   "sourceCount": 3,
+   "noLink": true
+  },
+  {
+   "year": 1998,
+   "gen": "gen3",
+   "cid": 182,
+   "cyl": 6,
+   "name": "3.0L / 182 V6",
+   "code": null,
+   "desc": "Vulcan V6",
+   "hp": 150,
+   "hpBasis": "net",
+   "trims": [
+    "Ranger 4x2",
+    "Ranger 4x4"
+   ],
+   "note": null,
+   "nhra": false,
+   "sources": [
+    {
+     "name": "Ford 1998 Ranger brochure",
+     "url": "https://www.therangerstation.com/resources/pdf_documents/1998_ford_ranger_brochure.pdf"
+    },
+    {
+     "name": "Wikipedia - Ford Ranger (Americas)",
+     "url": "https://en.wikipedia.org/wiki/Ford_Ranger_(Americas)"
+    },
+    {
+     "name": "EPA fueleconomy.gov vehicle data",
+     "url": "https://www.fueleconomy.gov/feg/download.shtml"
+    }
+   ],
+   "sourceCount": 3,
+   "linkFamily": "/engines/mercury/vulcan"
+  },
+  {
+   "year": 1998,
+   "gen": "gen3",
+   "cid": 245,
+   "cyl": 6,
+   "name": "4.0L / 245 V6",
+   "code": null,
+   "desc": "Cologne OHV V6 EFI",
+   "hp": 160,
+   "hpBasis": "net",
+   "trims": [
+    "Ranger 4x2",
+    "Ranger 4x4"
+   ],
+   "note": null,
+   "nhra": false,
+   "sources": [
+    {
+     "name": "Ford 1998 Ranger brochure",
+     "url": "https://www.therangerstation.com/resources/pdf_documents/1998_ford_ranger_brochure.pdf"
+    },
+    {
+     "name": "Wikipedia - Ford Ranger (Americas)",
+     "url": "https://en.wikipedia.org/wiki/Ford_Ranger_(Americas)"
+    },
+    {
+     "name": "EPA fueleconomy.gov vehicle data",
+     "url": "https://www.fueleconomy.gov/feg/download.shtml"
+    },
+    {
+     "name": "The Ranger Station - Ford Ranger engine ratings table",
+     "url": "https://www.therangerstation.com/tech/ford-ranger-engine-ratings"
+    }
+   ],
+   "sourceCount": 4
+  },
+  {
+   "year": 1998,
+   "gen": "gen3",
+   "cid": null,
+   "cyl": null,
+   "name": "Ranger EV electric drive",
+   "code": null,
+   "desc": "3-phase AC induction motor",
+   "hp": 75,
+   "hpBasis": "net",
+   "trims": [
+    "Ranger EV 4x2 Regular Cab (mostly fleet lease)"
+   ],
+   "note": null,
+   "nhra": false,
+   "sources": [
+    {
+     "name": "Ford 1998 Ranger EV fact sheet / brochure",
+     "url": "https://www.therangerstation.com/resources/pdf_documents/1998_ford_ranger_electric_brochure.pdf"
+    },
+    {
+     "name": "Wikipedia - Ford Ranger EV",
+     "url": "https://en.wikipedia.org/wiki/Ford_Ranger_EV"
+    }
+   ],
+   "sourceCount": 2
+  },
+  {
+   "year": 1999,
+   "gen": "gen3",
+   "cid": 153,
+   "cyl": 4,
+   "name": "2.5L / 153 inline-four",
+   "code": null,
+   "desc": "Lima SOHC I4",
+   "hp": 119,
+   "hpBasis": "net",
+   "trims": [
+    "Ranger 4x2 only"
+   ],
+   "note": null,
+   "nhra": false,
+   "sources": [
+    {
+     "name": "Ford 1999 Ranger brochure",
+     "url": "https://www.therangerstation.com/resources/pdf_documents/1999_ford_ranger_brochure.pdf"
+    },
+    {
+     "name": "Wikipedia - Ford Ranger (Americas)",
+     "url": "https://en.wikipedia.org/wiki/Ford_Ranger_(Americas)"
+    },
+    {
+     "name": "EPA fueleconomy.gov vehicle data",
+     "url": "https://www.fueleconomy.gov/feg/download.shtml"
+    },
+    {
+     "name": "The Ranger Station - Ford Ranger engine ratings table",
+     "url": "https://www.therangerstation.com/tech/ford-ranger-engine-ratings"
+    }
+   ],
+   "sourceCount": 4,
+   "noLink": true
+  },
+  {
+   "year": 1999,
+   "gen": "gen3",
+   "cid": 182,
+   "cyl": 6,
+   "name": "3.0L / 182 V6",
+   "code": null,
+   "desc": "Vulcan V6",
+   "hp": 150,
+   "hpBasis": "net",
+   "trims": [
+    "Ranger 4x2",
+    "Ranger 4x4"
+   ],
+   "note": null,
+   "nhra": false,
+   "sources": [
+    {
+     "name": "Ford 1999 Ranger brochure",
+     "url": "https://www.therangerstation.com/resources/pdf_documents/1999_ford_ranger_brochure.pdf"
+    },
+    {
+     "name": "Wikipedia - Ford Ranger (Americas)",
+     "url": "https://en.wikipedia.org/wiki/Ford_Ranger_(Americas)"
+    },
+    {
+     "name": "EPA fueleconomy.gov vehicle data",
+     "url": "https://www.fueleconomy.gov/feg/download.shtml"
+    },
+    {
+     "name": "The Ranger Station - Ford Ranger engine ratings table",
+     "url": "https://www.therangerstation.com/tech/ford-ranger-engine-ratings"
+    }
+   ],
+   "sourceCount": 4,
+   "linkFamily": "/engines/mercury/vulcan"
+  },
+  {
+   "year": 1999,
+   "gen": "gen3",
+   "cid": 245,
+   "cyl": 6,
+   "name": "4.0L / 245 V6",
+   "code": null,
+   "desc": "Cologne OHV V6 EFI",
+   "hp": 160,
+   "hpBasis": "net",
+   "trims": [
+    "Ranger 4x2",
+    "Ranger 4x4"
+   ],
+   "note": null,
+   "nhra": false,
+   "sources": [
+    {
+     "name": "Ford 1999 Ranger brochure",
+     "url": "https://www.therangerstation.com/resources/pdf_documents/1999_ford_ranger_brochure.pdf"
+    },
+    {
+     "name": "Wikipedia - Ford Ranger (Americas)",
+     "url": "https://en.wikipedia.org/wiki/Ford_Ranger_(Americas)"
+    },
+    {
+     "name": "EPA fueleconomy.gov vehicle data",
+     "url": "https://www.fueleconomy.gov/feg/download.shtml"
+    },
+    {
+     "name": "The Ranger Station - Ford Ranger engine ratings table",
+     "url": "https://www.therangerstation.com/tech/ford-ranger-engine-ratings"
+    }
+   ],
+   "sourceCount": 4
+  },
+  {
+   "year": 1999,
+   "gen": "gen3",
+   "cid": null,
+   "cyl": null,
+   "name": "Ranger EV electric drive",
+   "code": null,
+   "desc": "3-phase AC induction motor",
+   "hp": null,
+   "hpBasis": "net",
+   "trims": [
+    "Ranger EV 4x2 Regular Cab (mostly fleet lease)"
+   ],
+   "note": null,
+   "nhra": false,
+   "sources": [
+    {
+     "name": "Wikipedia - Ford Ranger EV",
+     "url": "https://en.wikipedia.org/wiki/Ford_Ranger_EV"
+    },
+    {
+     "name": "EPA fueleconomy.gov vehicle data",
+     "url": "https://www.fueleconomy.gov/feg/download.shtml"
+    }
+   ],
+   "sourceCount": 2
+  },
+  {
+   "year": 2000,
+   "gen": "gen3",
+   "cid": 153,
+   "cyl": 4,
+   "name": "2.5L / 153 inline-four",
+   "code": null,
+   "desc": "Lima SOHC I4",
+   "hp": 119,
+   "hpBasis": "net",
+   "trims": [
+    "Ranger 4x2 only"
+   ],
+   "note": null,
+   "nhra": false,
+   "sources": [
+    {
+     "name": "Ford 2000 Ranger brochure",
+     "url": "https://www.therangerstation.com/resources/pdf_documents/2000_ford_ranger_brochure.pdf"
+    },
+    {
+     "name": "Wikipedia - Ford Ranger (Americas)",
+     "url": "https://en.wikipedia.org/wiki/Ford_Ranger_(Americas)"
+    },
+    {
+     "name": "EPA fueleconomy.gov vehicle data",
+     "url": "https://www.fueleconomy.gov/feg/download.shtml"
+    },
+    {
+     "name": "The Ranger Station - Ford Ranger engine ratings table",
+     "url": "https://www.therangerstation.com/tech/ford-ranger-engine-ratings"
+    }
+   ],
+   "sourceCount": 4,
+   "noLink": true
+  },
+  {
+   "year": 2000,
+   "gen": "gen3",
+   "cid": 182,
+   "cyl": 6,
+   "name": "3.0L / 182 V6",
+   "code": null,
+   "desc": "Vulcan V6",
+   "hp": 150,
+   "hpBasis": "net",
+   "trims": [
+    "Ranger 4x2",
+    "Ranger 4x4"
+   ],
+   "note": null,
+   "nhra": false,
+   "sources": [
+    {
+     "name": "Ford 2000 Ranger brochure",
+     "url": "https://www.therangerstation.com/resources/pdf_documents/2000_ford_ranger_brochure.pdf"
+    },
+    {
+     "name": "Wikipedia - Ford Ranger (Americas)",
+     "url": "https://en.wikipedia.org/wiki/Ford_Ranger_(Americas)"
+    },
+    {
+     "name": "EPA fueleconomy.gov vehicle data",
+     "url": "https://www.fueleconomy.gov/feg/download.shtml"
+    },
+    {
+     "name": "The Ranger Station - Ford Ranger engine ratings table",
+     "url": "https://www.therangerstation.com/tech/ford-ranger-engine-ratings"
+    }
+   ],
+   "sourceCount": 4,
+   "linkFamily": "/engines/mercury/vulcan"
+  },
+  {
+   "year": 2000,
+   "gen": "gen3",
+   "cid": 245,
+   "cyl": 6,
+   "name": "4.0L / 245 V6",
+   "code": null,
+   "desc": "Cologne OHV V6 EFI",
+   "hp": 160,
+   "hpBasis": "net",
+   "trims": [
+    "Ranger 4x2",
+    "Ranger 4x4"
+   ],
+   "note": null,
+   "nhra": false,
+   "sources": [
+    {
+     "name": "Ford 2000 Ranger brochure",
+     "url": "https://www.therangerstation.com/resources/pdf_documents/2000_ford_ranger_brochure.pdf"
+    },
+    {
+     "name": "Wikipedia - Ford Ranger (Americas)",
+     "url": "https://en.wikipedia.org/wiki/Ford_Ranger_(Americas)"
+    },
+    {
+     "name": "EPA fueleconomy.gov vehicle data",
+     "url": "https://www.fueleconomy.gov/feg/download.shtml"
+    },
+    {
+     "name": "The Ranger Station - Ford Ranger engine ratings table",
+     "url": "https://www.therangerstation.com/tech/ford-ranger-engine-ratings"
+    }
+   ],
+   "sourceCount": 4
+  },
+  {
+   "year": 2000,
+   "gen": "gen3",
+   "cid": null,
+   "cyl": null,
+   "name": "Ranger EV electric drive",
+   "code": null,
+   "desc": "3-phase AC induction motor",
+   "hp": null,
+   "hpBasis": "net",
+   "trims": [
+    "Ranger EV 4x2 Regular Cab (mostly fleet lease)"
+   ],
+   "note": null,
+   "nhra": false,
+   "sources": [
+    {
+     "name": "Wikipedia - Ford Ranger EV",
+     "url": "https://en.wikipedia.org/wiki/Ford_Ranger_EV"
+    },
+    {
+     "name": "EPA fueleconomy.gov vehicle data",
+     "url": "https://www.fueleconomy.gov/feg/download.shtml"
+    }
+   ],
+   "sourceCount": 2
+  },
+  {
+   "year": 2001,
+   "gen": "gen3",
+   "cid": 138,
+   "cyl": 4,
+   "name": "2.3L / 138 inline-four",
+   "code": null,
+   "desc": "Duratec DOHC 16V I4",
+   "hp": 135,
+   "hpBasis": "net",
+   "trims": [
+    "Ranger 4x2 only"
+   ],
+   "note": null,
+   "nhra": false,
+   "sources": [
+    {
+     "name": "Wikipedia - Ford Ranger (Americas)",
+     "url": "https://en.wikipedia.org/wiki/Ford_Ranger_(Americas)"
+    },
+    {
+     "name": "EPA fueleconomy.gov vehicle data",
+     "url": "https://www.fueleconomy.gov/feg/download.shtml"
+    },
+    {
+     "name": "The Ranger Station - Ranger 4-cylinder engines tech page",
+     "url": "https://therangerstation.com/tech_library/4cylinders.shtml"
+    }
+   ],
+   "sourceCount": 3
+  },
+  {
+   "year": 2001,
+   "gen": "gen3",
+   "cid": 153,
+   "cyl": 4,
+   "name": "2.5L / 153 inline-four",
+   "code": null,
+   "desc": "Lima SOHC I4",
+   "hp": 119,
+   "hpBasis": "net",
+   "trims": [
+    "Ranger 4x2 only"
+   ],
+   "note": null,
+   "nhra": false,
+   "sources": [
+    {
+     "name": "Ford 2001 Ranger brochure",
+     "url": "https://www.therangerstation.com/resources/pdf_documents/2001_ford_ranger_brochure.pdf"
+    },
+    {
+     "name": "Wikipedia - Ford Ranger (Americas)",
+     "url": "https://en.wikipedia.org/wiki/Ford_Ranger_(Americas)"
+    },
+    {
+     "name": "EPA fueleconomy.gov vehicle data",
+     "url": "https://www.fueleconomy.gov/feg/download.shtml"
+    }
+   ],
+   "sourceCount": 3,
+   "noLink": true
+  },
+  {
+   "year": 2001,
+   "gen": "gen3",
+   "cid": 182,
+   "cyl": 6,
+   "name": "3.0L / 182 V6",
+   "code": null,
+   "desc": "Vulcan V6",
+   "hp": 150,
+   "hpBasis": "net",
+   "trims": [
+    "Ranger 4x2",
+    "Ranger 4x4"
+   ],
+   "note": null,
+   "nhra": false,
+   "sources": [
+    {
+     "name": "Ford 2001 Ranger brochure",
+     "url": "https://www.therangerstation.com/resources/pdf_documents/2001_ford_ranger_brochure.pdf"
+    },
+    {
+     "name": "Wikipedia - Ford Ranger (Americas)",
+     "url": "https://en.wikipedia.org/wiki/Ford_Ranger_(Americas)"
+    },
+    {
+     "name": "EPA fueleconomy.gov vehicle data",
+     "url": "https://www.fueleconomy.gov/feg/download.shtml"
+    },
+    {
+     "name": "The Ranger Station - Ford Ranger engine ratings table",
+     "url": "https://www.therangerstation.com/tech/ford-ranger-engine-ratings"
+    }
+   ],
+   "sourceCount": 4,
+   "linkFamily": "/engines/mercury/vulcan"
+  },
+  {
+   "year": 2001,
+   "gen": "gen3",
+   "cid": 245,
+   "cyl": 6,
+   "name": "4.0L / 245 V6",
+   "code": null,
+   "desc": "Cologne SOHC V6",
+   "hp": 207,
+   "hpBasis": "net",
+   "trims": [
+    "Ranger 4x2",
+    "Ranger 4x4"
+   ],
+   "note": null,
+   "nhra": false,
+   "sources": [
+    {
+     "name": "Ford 2001 Ranger brochure",
+     "url": "https://www.therangerstation.com/resources/pdf_documents/2001_ford_ranger_brochure.pdf"
+    },
+    {
+     "name": "Wikipedia - Ford Ranger (Americas)",
+     "url": "https://en.wikipedia.org/wiki/Ford_Ranger_(Americas)"
+    },
+    {
+     "name": "EPA fueleconomy.gov vehicle data",
+     "url": "https://www.fueleconomy.gov/feg/download.shtml"
+    },
+    {
+     "name": "The Ranger Station - Ford Ranger engine ratings table",
+     "url": "https://www.therangerstation.com/tech/ford-ranger-engine-ratings"
+    }
+   ],
+   "sourceCount": 4
+  },
+  {
+   "year": 2001,
+   "gen": "gen3",
+   "cid": null,
+   "cyl": null,
+   "name": "Ranger EV electric drive",
+   "code": null,
+   "desc": "3-phase AC induction motor",
+   "hp": null,
+   "hpBasis": "net",
+   "trims": [
+    "Ranger EV 4x2 Regular Cab (mostly fleet lease)"
+   ],
+   "note": null,
+   "nhra": false,
+   "sources": [
+    {
+     "name": "Wikipedia - Ford Ranger EV",
+     "url": "https://en.wikipedia.org/wiki/Ford_Ranger_EV"
+    },
+    {
+     "name": "EPA fueleconomy.gov vehicle data",
+     "url": "https://www.fueleconomy.gov/feg/download.shtml"
+    }
+   ],
+   "sourceCount": 2
+  },
+  {
+   "year": 2002,
+   "gen": "gen3",
+   "cid": 138,
+   "cyl": 4,
+   "name": "2.3L / 138 inline-four",
+   "code": null,
+   "desc": "Duratec DOHC 16V I4",
+   "hp": 135,
+   "hpBasis": "net",
+   "trims": [
+    "Ranger 4x2 only"
+   ],
+   "note": null,
+   "nhra": false,
+   "sources": [
+    {
+     "name": "Ford 2002 Ranger brochure",
+     "url": "https://www.therangerstation.com/resources/pdf_documents/2002_ford_ranger_brochure.pdf"
+    },
+    {
+     "name": "Wikipedia - Ford Ranger (Americas)",
+     "url": "https://en.wikipedia.org/wiki/Ford_Ranger_(Americas)"
+    },
+    {
+     "name": "EPA fueleconomy.gov vehicle data",
+     "url": "https://www.fueleconomy.gov/feg/download.shtml"
+    },
+    {
+     "name": "The Ranger Station - Ford Ranger engine ratings table",
+     "url": "https://www.therangerstation.com/tech/ford-ranger-engine-ratings"
+    }
+   ],
+   "sourceCount": 4
+  },
+  {
+   "year": 2002,
+   "gen": "gen3",
+   "cid": 182,
+   "cyl": 6,
+   "name": "3.0L / 182 V6",
+   "code": null,
+   "desc": "Vulcan V6",
+   "hp": 154,
+   "hpBasis": "net",
+   "trims": [
+    "Ranger 4x2",
+    "Ranger 4x4"
+   ],
+   "note": null,
+   "nhra": false,
+   "sources": [
+    {
+     "name": "Ford 2002 Ranger brochure",
+     "url": "https://www.therangerstation.com/resources/pdf_documents/2002_ford_ranger_brochure.pdf"
+    },
+    {
+     "name": "Wikipedia - Ford Ranger (Americas)",
+     "url": "https://en.wikipedia.org/wiki/Ford_Ranger_(Americas)"
+    },
+    {
+     "name": "EPA fueleconomy.gov vehicle data",
+     "url": "https://www.fueleconomy.gov/feg/download.shtml"
+    },
+    {
+     "name": "The Ranger Station - Ford Ranger engine ratings table",
+     "url": "https://www.therangerstation.com/tech/ford-ranger-engine-ratings"
+    }
+   ],
+   "sourceCount": 4,
+   "linkFamily": "/engines/mercury/vulcan"
+  },
+  {
+   "year": 2002,
+   "gen": "gen3",
+   "cid": 245,
+   "cyl": 6,
+   "name": "4.0L / 245 V6",
+   "code": null,
+   "desc": "Cologne SOHC V6",
+   "hp": 207,
+   "hpBasis": "net",
+   "trims": [
+    "Ranger 4x2",
+    "Ranger 4x4"
+   ],
+   "note": null,
+   "nhra": false,
+   "sources": [
+    {
+     "name": "Ford 2002 Ranger brochure",
+     "url": "https://www.therangerstation.com/resources/pdf_documents/2002_ford_ranger_brochure.pdf"
+    },
+    {
+     "name": "Wikipedia - Ford Ranger (Americas)",
+     "url": "https://en.wikipedia.org/wiki/Ford_Ranger_(Americas)"
+    },
+    {
+     "name": "EPA fueleconomy.gov vehicle data",
+     "url": "https://www.fueleconomy.gov/feg/download.shtml"
+    },
+    {
+     "name": "The Ranger Station - Ford Ranger engine ratings table",
+     "url": "https://www.therangerstation.com/tech/ford-ranger-engine-ratings"
+    }
+   ],
+   "sourceCount": 4
+  },
+  {
+   "year": 2003,
+   "gen": "gen3",
+   "cid": 138,
+   "cyl": 4,
+   "name": "2.3L / 138 inline-four",
+   "code": null,
+   "desc": "Duratec DOHC 16V I4",
+   "hp": 143,
+   "hpBasis": "net",
+   "trims": [
+    "Ranger 4x2 only"
+   ],
+   "note": null,
+   "nhra": false,
+   "sources": [
+    {
+     "name": "Ford 2003 Ranger brochure",
+     "url": "https://www.therangerstation.com/resources/pdf_documents/2003_ford_ranger_brochure.pdf"
+    },
+    {
+     "name": "Wikipedia - Ford Ranger (Americas)",
+     "url": "https://en.wikipedia.org/wiki/Ford_Ranger_(Americas)"
+    },
+    {
+     "name": "EPA fueleconomy.gov vehicle data",
+     "url": "https://www.fueleconomy.gov/feg/download.shtml"
+    },
+    {
+     "name": "The Ranger Station - Ford Ranger engine ratings table",
+     "url": "https://www.therangerstation.com/tech/ford-ranger-engine-ratings"
+    }
+   ],
+   "sourceCount": 4
+  },
+  {
+   "year": 2003,
+   "gen": "gen3",
+   "cid": 182,
+   "cyl": 6,
+   "name": "3.0L / 182 V6",
+   "code": null,
+   "desc": "Vulcan V6",
+   "hp": 154,
+   "hpBasis": "net",
+   "trims": [
+    "Ranger 4x2",
+    "Ranger 4x4"
+   ],
+   "note": null,
+   "nhra": false,
+   "sources": [
+    {
+     "name": "Ford 2003 Ranger brochure",
+     "url": "https://www.therangerstation.com/resources/pdf_documents/2003_ford_ranger_brochure.pdf"
+    },
+    {
+     "name": "Wikipedia - Ford Ranger (Americas)",
+     "url": "https://en.wikipedia.org/wiki/Ford_Ranger_(Americas)"
+    },
+    {
+     "name": "EPA fueleconomy.gov vehicle data",
+     "url": "https://www.fueleconomy.gov/feg/download.shtml"
+    },
+    {
+     "name": "The Ranger Station - Ford Ranger engine ratings table",
+     "url": "https://www.therangerstation.com/tech/ford-ranger-engine-ratings"
+    }
+   ],
+   "sourceCount": 4,
+   "linkFamily": "/engines/mercury/vulcan"
+  },
+  {
+   "year": 2003,
+   "gen": "gen3",
+   "cid": 245,
+   "cyl": 6,
+   "name": "4.0L / 245 V6",
+   "code": null,
+   "desc": "Cologne SOHC V6",
+   "hp": 207,
+   "hpBasis": "net",
+   "trims": [
+    "Ranger 4x2",
+    "Ranger 4x4"
+   ],
+   "note": null,
+   "nhra": false,
+   "sources": [
+    {
+     "name": "Ford 2003 Ranger brochure",
+     "url": "https://www.therangerstation.com/resources/pdf_documents/2003_ford_ranger_brochure.pdf"
+    },
+    {
+     "name": "Wikipedia - Ford Ranger (Americas)",
+     "url": "https://en.wikipedia.org/wiki/Ford_Ranger_(Americas)"
+    },
+    {
+     "name": "EPA fueleconomy.gov vehicle data",
+     "url": "https://www.fueleconomy.gov/feg/download.shtml"
+    },
+    {
+     "name": "The Ranger Station - Ford Ranger engine ratings table",
+     "url": "https://www.therangerstation.com/tech/ford-ranger-engine-ratings"
+    }
+   ],
+   "sourceCount": 4
+  },
+  {
+   "year": 2004,
+   "gen": "gen3",
+   "cid": 138,
+   "cyl": 4,
+   "name": "2.3L / 138 inline-four",
+   "code": null,
+   "desc": "Duratec DOHC 16V I4",
+   "hp": 143,
+   "hpBasis": "net",
+   "trims": [
+    "Ranger 4x2 only"
+   ],
+   "note": null,
+   "nhra": false,
+   "sources": [
+    {
+     "name": "Ford 2004 Ranger brochure",
+     "url": "https://www.therangerstation.com/resources/pdf_documents/2004_ford_ranger_brochure.pdf"
+    },
+    {
+     "name": "Wikipedia - Ford Ranger (Americas)",
+     "url": "https://en.wikipedia.org/wiki/Ford_Ranger_(Americas)"
+    },
+    {
+     "name": "EPA fueleconomy.gov vehicle data",
+     "url": "https://www.fueleconomy.gov/feg/download.shtml"
+    },
+    {
+     "name": "The Ranger Station - Ford Ranger engine ratings table",
+     "url": "https://www.therangerstation.com/tech/ford-ranger-engine-ratings"
+    }
+   ],
+   "sourceCount": 4
+  },
+  {
+   "year": 2004,
+   "gen": "gen3",
+   "cid": 182,
+   "cyl": 6,
+   "name": "3.0L / 182 V6",
+   "code": null,
+   "desc": "Vulcan V6",
+   "hp": 148,
+   "hpBasis": "net",
+   "trims": [
+    "Ranger 4x2",
+    "Ranger 4x4"
+   ],
+   "note": null,
+   "nhra": false,
+   "sources": [
+    {
+     "name": "Ford 2004 Ranger brochure",
+     "url": "https://www.therangerstation.com/resources/pdf_documents/2004_ford_ranger_brochure.pdf"
+    },
+    {
+     "name": "Wikipedia - Ford Ranger (Americas)",
+     "url": "https://en.wikipedia.org/wiki/Ford_Ranger_(Americas)"
+    },
+    {
+     "name": "EPA fueleconomy.gov vehicle data",
+     "url": "https://www.fueleconomy.gov/feg/download.shtml"
+    },
+    {
+     "name": "The Ranger Station - Ford Ranger engine ratings table",
+     "url": "https://www.therangerstation.com/tech/ford-ranger-engine-ratings"
+    }
+   ],
+   "sourceCount": 4,
+   "linkFamily": "/engines/mercury/vulcan"
+  },
+  {
+   "year": 2004,
+   "gen": "gen3",
+   "cid": 245,
+   "cyl": 6,
+   "name": "4.0L / 245 V6",
+   "code": null,
+   "desc": "Cologne SOHC V6",
+   "hp": 207,
+   "hpBasis": "net",
+   "trims": [
+    "Ranger 4x2",
+    "Ranger 4x4"
+   ],
+   "note": null,
+   "nhra": false,
+   "sources": [
+    {
+     "name": "Ford 2004 Ranger brochure",
+     "url": "https://www.therangerstation.com/resources/pdf_documents/2004_ford_ranger_brochure.pdf"
+    },
+    {
+     "name": "Wikipedia - Ford Ranger (Americas)",
+     "url": "https://en.wikipedia.org/wiki/Ford_Ranger_(Americas)"
+    },
+    {
+     "name": "EPA fueleconomy.gov vehicle data",
+     "url": "https://www.fueleconomy.gov/feg/download.shtml"
+    },
+    {
+     "name": "The Ranger Station - Ford Ranger engine ratings table",
+     "url": "https://www.therangerstation.com/tech/ford-ranger-engine-ratings"
+    }
+   ],
+   "sourceCount": 4
+  },
+  {
+   "year": 2005,
+   "gen": "gen3",
+   "cid": 138,
+   "cyl": 4,
+   "name": "2.3L / 138 inline-four",
+   "code": null,
+   "desc": "Duratec DOHC 16V I4",
+   "hp": 143,
+   "hpBasis": "net",
+   "trims": [
+    "Ranger 4x2 only"
+   ],
+   "note": null,
+   "nhra": false,
+   "sources": [
+    {
+     "name": "Ford 2005 Ranger brochure",
+     "url": "https://www.therangerstation.com/resources/pdf_documents/2005_ford_ranger_brochure.pdf"
+    },
+    {
+     "name": "Wikipedia - Ford Ranger (Americas)",
+     "url": "https://en.wikipedia.org/wiki/Ford_Ranger_(Americas)"
+    },
+    {
+     "name": "EPA fueleconomy.gov vehicle data",
+     "url": "https://www.fueleconomy.gov/feg/download.shtml"
+    },
+    {
+     "name": "The Ranger Station - Ford Ranger engine ratings table",
+     "url": "https://www.therangerstation.com/tech/ford-ranger-engine-ratings"
+    }
+   ],
+   "sourceCount": 4
+  },
+  {
+   "year": 2005,
+   "gen": "gen3",
+   "cid": 182,
+   "cyl": 6,
+   "name": "3.0L / 182 V6",
+   "code": null,
+   "desc": "Vulcan V6",
+   "hp": 148,
+   "hpBasis": "net",
+   "trims": [
+    "Ranger 4x2",
+    "Ranger 4x4"
+   ],
+   "note": null,
+   "nhra": false,
+   "sources": [
+    {
+     "name": "Ford 2005 Ranger brochure",
+     "url": "https://www.therangerstation.com/resources/pdf_documents/2005_ford_ranger_brochure.pdf"
+    },
+    {
+     "name": "Wikipedia - Ford Ranger (Americas)",
+     "url": "https://en.wikipedia.org/wiki/Ford_Ranger_(Americas)"
+    },
+    {
+     "name": "EPA fueleconomy.gov vehicle data",
+     "url": "https://www.fueleconomy.gov/feg/download.shtml"
+    }
+   ],
+   "sourceCount": 3,
+   "linkFamily": "/engines/mercury/vulcan"
+  },
+  {
+   "year": 2005,
+   "gen": "gen3",
+   "cid": 245,
+   "cyl": 6,
+   "name": "4.0L / 245 V6",
+   "code": null,
+   "desc": "Cologne SOHC V6",
+   "hp": 207,
+   "hpBasis": "net",
+   "trims": [
+    "Ranger 4x2",
+    "Ranger 4x4"
+   ],
+   "note": null,
+   "nhra": false,
+   "sources": [
+    {
+     "name": "Ford 2005 Ranger brochure",
+     "url": "https://www.therangerstation.com/resources/pdf_documents/2005_ford_ranger_brochure.pdf"
+    },
+    {
+     "name": "Wikipedia - Ford Ranger (Americas)",
+     "url": "https://en.wikipedia.org/wiki/Ford_Ranger_(Americas)"
+    },
+    {
+     "name": "EPA fueleconomy.gov vehicle data",
+     "url": "https://www.fueleconomy.gov/feg/download.shtml"
+    },
+    {
+     "name": "The Ranger Station - Ford Ranger engine ratings table",
+     "url": "https://www.therangerstation.com/tech/ford-ranger-engine-ratings"
+    }
+   ],
+   "sourceCount": 4
+  },
+  {
+   "year": 2006,
+   "gen": "gen3",
+   "cid": 138,
+   "cyl": 4,
+   "name": "2.3L / 138 inline-four",
+   "code": null,
+   "desc": "Duratec DOHC 16V I4",
+   "hp": 143,
+   "hpBasis": "net",
+   "trims": [
+    "Ranger 4x2 only"
+   ],
+   "note": null,
+   "nhra": false,
+   "sources": [
+    {
+     "name": "Ford 2006 Ranger brochure",
+     "url": "https://www.therangerstation.com/resources/pdf_documents/2006_ford_ranger_brochure.pdf"
+    },
+    {
+     "name": "Wikipedia - Ford Ranger (Americas)",
+     "url": "https://en.wikipedia.org/wiki/Ford_Ranger_(Americas)"
+    },
+    {
+     "name": "EPA fueleconomy.gov vehicle data",
+     "url": "https://www.fueleconomy.gov/feg/download.shtml"
+    },
+    {
+     "name": "The Ranger Station - Ford Ranger engine ratings table",
+     "url": "https://www.therangerstation.com/tech/ford-ranger-engine-ratings"
+    }
+   ],
+   "sourceCount": 4
+  },
+  {
+   "year": 2006,
+   "gen": "gen3",
+   "cid": 182,
+   "cyl": 6,
+   "name": "3.0L / 182 V6",
+   "code": null,
+   "desc": "Vulcan V6",
+   "hp": 148,
+   "hpBasis": "net",
+   "trims": [
+    "Ranger 4x2",
+    "Ranger 4x4"
+   ],
+   "note": null,
+   "nhra": false,
+   "sources": [
+    {
+     "name": "Ford 2006 Ranger brochure",
+     "url": "https://www.therangerstation.com/resources/pdf_documents/2006_ford_ranger_brochure.pdf"
+    },
+    {
+     "name": "Wikipedia - Ford Ranger (Americas)",
+     "url": "https://en.wikipedia.org/wiki/Ford_Ranger_(Americas)"
+    },
+    {
+     "name": "EPA fueleconomy.gov vehicle data",
+     "url": "https://www.fueleconomy.gov/feg/download.shtml"
+    }
+   ],
+   "sourceCount": 3,
+   "linkFamily": "/engines/mercury/vulcan"
+  },
+  {
+   "year": 2006,
+   "gen": "gen3",
+   "cid": 245,
+   "cyl": 6,
+   "name": "4.0L / 245 V6",
+   "code": null,
+   "desc": "Cologne SOHC V6",
+   "hp": 207,
+   "hpBasis": "net",
+   "trims": [
+    "Ranger 4x2",
+    "Ranger 4x4"
+   ],
+   "note": null,
+   "nhra": false,
+   "sources": [
+    {
+     "name": "Ford 2006 Ranger brochure",
+     "url": "https://www.therangerstation.com/resources/pdf_documents/2006_ford_ranger_brochure.pdf"
+    },
+    {
+     "name": "Wikipedia - Ford Ranger (Americas)",
+     "url": "https://en.wikipedia.org/wiki/Ford_Ranger_(Americas)"
+    },
+    {
+     "name": "EPA fueleconomy.gov vehicle data",
+     "url": "https://www.fueleconomy.gov/feg/download.shtml"
+    },
+    {
+     "name": "The Ranger Station - Ford Ranger engine ratings table",
+     "url": "https://www.therangerstation.com/tech/ford-ranger-engine-ratings"
+    }
+   ],
+   "sourceCount": 4
+  },
+  {
+   "year": 2007,
+   "gen": "gen3",
+   "cid": 138,
+   "cyl": 4,
+   "name": "2.3L / 138 inline-four",
+   "code": null,
+   "desc": "Duratec DOHC 16V I4",
+   "hp": 143,
+   "hpBasis": "net",
+   "trims": [
+    "Ranger 4x2 only"
+   ],
+   "note": null,
+   "nhra": false,
+   "sources": [
+    {
+     "name": "Ford 2007 Ranger brochure",
+     "url": "https://www.therangerstation.com/resources/pdf_documents/2007_ford_ranger_brochure.pdf"
+    },
+    {
+     "name": "Wikipedia - Ford Ranger (Americas)",
+     "url": "https://en.wikipedia.org/wiki/Ford_Ranger_(Americas)"
+    },
+    {
+     "name": "EPA fueleconomy.gov vehicle data",
+     "url": "https://www.fueleconomy.gov/feg/download.shtml"
+    },
+    {
+     "name": "The Ranger Station - Ford Ranger engine ratings table",
+     "url": "https://www.therangerstation.com/tech/ford-ranger-engine-ratings"
+    }
+   ],
+   "sourceCount": 4
+  },
+  {
+   "year": 2007,
+   "gen": "gen3",
+   "cid": 182,
+   "cyl": 6,
+   "name": "3.0L / 182 V6",
+   "code": null,
+   "desc": "Vulcan V6",
+   "hp": 148,
+   "hpBasis": "net",
+   "trims": [
+    "Ranger 4x2",
+    "Ranger 4x4"
+   ],
+   "note": null,
+   "nhra": false,
+   "sources": [
+    {
+     "name": "Ford 2007 Ranger brochure",
+     "url": "https://www.therangerstation.com/resources/pdf_documents/2007_ford_ranger_brochure.pdf"
+    },
+    {
+     "name": "Wikipedia - Ford Ranger (Americas)",
+     "url": "https://en.wikipedia.org/wiki/Ford_Ranger_(Americas)"
+    },
+    {
+     "name": "EPA fueleconomy.gov vehicle data",
+     "url": "https://www.fueleconomy.gov/feg/download.shtml"
+    }
+   ],
+   "sourceCount": 3,
+   "linkFamily": "/engines/mercury/vulcan"
+  },
+  {
+   "year": 2007,
+   "gen": "gen3",
+   "cid": 245,
+   "cyl": 6,
+   "name": "4.0L / 245 V6",
+   "code": null,
+   "desc": "Cologne SOHC V6",
+   "hp": 207,
+   "hpBasis": "net",
+   "trims": [
+    "Ranger 4x2",
+    "Ranger 4x4"
+   ],
+   "note": null,
+   "nhra": false,
+   "sources": [
+    {
+     "name": "Ford 2007 Ranger brochure",
+     "url": "https://www.therangerstation.com/resources/pdf_documents/2007_ford_ranger_brochure.pdf"
+    },
+    {
+     "name": "Wikipedia - Ford Ranger (Americas)",
+     "url": "https://en.wikipedia.org/wiki/Ford_Ranger_(Americas)"
+    },
+    {
+     "name": "EPA fueleconomy.gov vehicle data",
+     "url": "https://www.fueleconomy.gov/feg/download.shtml"
+    },
+    {
+     "name": "The Ranger Station - Ford Ranger engine ratings table",
+     "url": "https://www.therangerstation.com/tech/ford-ranger-engine-ratings"
+    }
+   ],
+   "sourceCount": 4
+  },
+  {
+   "year": 2008,
+   "gen": "gen3",
+   "cid": 138,
+   "cyl": 4,
+   "name": "2.3L / 138 inline-four",
+   "code": null,
+   "desc": "Duratec DOHC 16V I4",
+   "hp": 143,
+   "hpBasis": "net",
+   "trims": [
+    "Ranger 4x2 only"
+   ],
+   "note": null,
+   "nhra": false,
+   "sources": [
+    {
+     "name": "Ford 2008 Ranger brochure",
+     "url": "https://www.therangerstation.com/resources/pdf_documents/2008_ford_ranger_brochure.pdf"
+    },
+    {
+     "name": "Wikipedia - Ford Ranger (Americas)",
+     "url": "https://en.wikipedia.org/wiki/Ford_Ranger_(Americas)"
+    },
+    {
+     "name": "EPA fueleconomy.gov vehicle data",
+     "url": "https://www.fueleconomy.gov/feg/download.shtml"
+    },
+    {
+     "name": "The Ranger Station - Ford Ranger engine ratings table",
+     "url": "https://www.therangerstation.com/tech/ford-ranger-engine-ratings"
+    }
+   ],
+   "sourceCount": 4
+  },
+  {
+   "year": 2008,
+   "gen": "gen3",
+   "cid": 182,
+   "cyl": 6,
+   "name": "3.0L / 182 V6",
+   "code": null,
+   "desc": "Vulcan V6",
+   "hp": 148,
+   "hpBasis": "net",
+   "trims": [
+    "Ranger 4x2",
+    "Ranger 4x4"
+   ],
+   "note": null,
+   "nhra": false,
+   "sources": [
+    {
+     "name": "Ford 2008 Ranger brochure",
+     "url": "https://www.therangerstation.com/resources/pdf_documents/2008_ford_ranger_brochure.pdf"
+    },
+    {
+     "name": "Wikipedia - Ford Ranger (Americas)",
+     "url": "https://en.wikipedia.org/wiki/Ford_Ranger_(Americas)"
+    },
+    {
+     "name": "EPA fueleconomy.gov vehicle data",
+     "url": "https://www.fueleconomy.gov/feg/download.shtml"
+    }
+   ],
+   "sourceCount": 3,
+   "linkFamily": "/engines/mercury/vulcan"
+  },
+  {
+   "year": 2008,
+   "gen": "gen3",
+   "cid": 245,
+   "cyl": 6,
+   "name": "4.0L / 245 V6",
+   "code": null,
+   "desc": "Cologne SOHC V6",
+   "hp": 207,
+   "hpBasis": "net",
+   "trims": [
+    "Ranger 4x2",
+    "Ranger 4x4"
+   ],
+   "note": null,
+   "nhra": false,
+   "sources": [
+    {
+     "name": "Ford 2008 Ranger brochure",
+     "url": "https://www.therangerstation.com/resources/pdf_documents/2008_ford_ranger_brochure.pdf"
+    },
+    {
+     "name": "Wikipedia - Ford Ranger (Americas)",
+     "url": "https://en.wikipedia.org/wiki/Ford_Ranger_(Americas)"
+    },
+    {
+     "name": "EPA fueleconomy.gov vehicle data",
+     "url": "https://www.fueleconomy.gov/feg/download.shtml"
+    },
+    {
+     "name": "The Ranger Station - Ford Ranger engine ratings table",
+     "url": "https://www.therangerstation.com/tech/ford-ranger-engine-ratings"
+    }
+   ],
+   "sourceCount": 4
+  },
+  {
+   "year": 2009,
+   "gen": "gen3",
+   "cid": 138,
+   "cyl": 4,
+   "name": "2.3L / 138 inline-four",
+   "code": null,
+   "desc": "Duratec DOHC 16V I4",
+   "hp": 143,
+   "hpBasis": "net",
+   "trims": [
+    "Ranger 4x2 only"
+   ],
+   "note": null,
+   "nhra": false,
+   "sources": [
+    {
+     "name": "Ford 2009 Ranger brochure",
+     "url": "https://www.therangerstation.com/resources/pdf_documents/2009_ford_ranger_brochure.pdf"
+    },
+    {
+     "name": "Wikipedia - Ford Ranger (Americas)",
+     "url": "https://en.wikipedia.org/wiki/Ford_Ranger_(Americas)"
+    },
+    {
+     "name": "EPA fueleconomy.gov vehicle data",
+     "url": "https://www.fueleconomy.gov/feg/download.shtml"
+    },
+    {
+     "name": "The Ranger Station - Ford Ranger engine ratings table",
+     "url": "https://www.therangerstation.com/tech/ford-ranger-engine-ratings"
+    }
+   ],
+   "sourceCount": 4
+  },
+  {
+   "year": 2009,
+   "gen": "gen3",
+   "cid": 245,
+   "cyl": 6,
+   "name": "4.0L / 245 V6",
+   "code": null,
+   "desc": "Cologne SOHC V6",
+   "hp": 207,
+   "hpBasis": "net",
+   "trims": [
+    "Ranger 4x2",
+    "Ranger 4x4"
+   ],
+   "note": null,
+   "nhra": false,
+   "sources": [
+    {
+     "name": "Ford 2009 Ranger brochure",
+     "url": "https://www.therangerstation.com/resources/pdf_documents/2009_ford_ranger_brochure.pdf"
+    },
+    {
+     "name": "Wikipedia - Ford Ranger (Americas)",
+     "url": "https://en.wikipedia.org/wiki/Ford_Ranger_(Americas)"
+    },
+    {
+     "name": "EPA fueleconomy.gov vehicle data",
+     "url": "https://www.fueleconomy.gov/feg/download.shtml"
+    },
+    {
+     "name": "The Ranger Station - Ford Ranger engine ratings table",
+     "url": "https://www.therangerstation.com/tech/ford-ranger-engine-ratings"
+    }
+   ],
+   "sourceCount": 4
+  },
+  {
+   "year": 2010,
+   "gen": "gen3",
+   "cid": 138,
+   "cyl": 4,
+   "name": "2.3L / 138 inline-four",
+   "code": null,
+   "desc": "Duratec DOHC 16V I4",
+   "hp": 143,
+   "hpBasis": "net",
+   "trims": [
+    "Ranger 4x2 only"
+   ],
+   "note": null,
+   "nhra": false,
+   "sources": [
+    {
+     "name": "Ford 2010 Ranger brochure",
+     "url": "https://www.therangerstation.com/resources/pdf_documents/2010_ford_ranger_brochure.pdf"
+    },
+    {
+     "name": "Wikipedia - Ford Ranger (Americas)",
+     "url": "https://en.wikipedia.org/wiki/Ford_Ranger_(Americas)"
+    },
+    {
+     "name": "EPA fueleconomy.gov vehicle data",
+     "url": "https://www.fueleconomy.gov/feg/download.shtml"
+    },
+    {
+     "name": "The Ranger Station - Ford Ranger engine ratings table",
+     "url": "https://www.therangerstation.com/tech/ford-ranger-engine-ratings"
+    }
+   ],
+   "sourceCount": 4
+  },
+  {
+   "year": 2010,
+   "gen": "gen3",
+   "cid": 245,
+   "cyl": 6,
+   "name": "4.0L / 245 V6",
+   "code": null,
+   "desc": "Cologne SOHC V6",
+   "hp": 207,
+   "hpBasis": "net",
+   "trims": [
+    "Ranger 4x2",
+    "Ranger 4x4"
+   ],
+   "note": null,
+   "nhra": false,
+   "sources": [
+    {
+     "name": "Ford 2010 Ranger brochure",
+     "url": "https://www.therangerstation.com/resources/pdf_documents/2010_ford_ranger_brochure.pdf"
+    },
+    {
+     "name": "Wikipedia - Ford Ranger (Americas)",
+     "url": "https://en.wikipedia.org/wiki/Ford_Ranger_(Americas)"
+    },
+    {
+     "name": "EPA fueleconomy.gov vehicle data",
+     "url": "https://www.fueleconomy.gov/feg/download.shtml"
+    },
+    {
+     "name": "The Ranger Station - Ford Ranger engine ratings table",
+     "url": "https://www.therangerstation.com/tech/ford-ranger-engine-ratings"
+    }
+   ],
+   "sourceCount": 4
+  },
+  {
+   "year": 2011,
+   "gen": "gen3",
+   "cid": 138,
+   "cyl": 4,
+   "name": "2.3L / 138 inline-four",
+   "code": null,
+   "desc": "Duratec DOHC 16V I4",
+   "hp": 143,
+   "hpBasis": "net",
+   "trims": [
+    "Ranger 4x2 only"
+   ],
+   "note": null,
+   "nhra": false,
+   "sources": [
+    {
+     "name": "Ford 2011 Ranger brochure",
+     "url": "https://www.therangerstation.com/resources/pdf_documents/2011_ford_ranger_brochure.pdf"
+    },
+    {
+     "name": "Wikipedia - Ford Ranger (Americas)",
+     "url": "https://en.wikipedia.org/wiki/Ford_Ranger_(Americas)"
+    },
+    {
+     "name": "EPA fueleconomy.gov vehicle data",
+     "url": "https://www.fueleconomy.gov/feg/download.shtml"
+    },
+    {
+     "name": "The Ranger Station - Ford Ranger engine ratings table",
+     "url": "https://www.therangerstation.com/tech/ford-ranger-engine-ratings"
+    }
+   ],
+   "sourceCount": 4
+  },
+  {
+   "year": 2011,
+   "gen": "gen3",
+   "cid": 245,
+   "cyl": 6,
+   "name": "4.0L / 245 V6",
+   "code": null,
+   "desc": "Cologne SOHC V6",
+   "hp": 207,
+   "hpBasis": "net",
+   "trims": [
+    "Ranger 4x2",
+    "Ranger 4x4"
+   ],
+   "note": null,
+   "nhra": false,
+   "sources": [
+    {
+     "name": "Ford 2011 Ranger brochure",
+     "url": "https://www.therangerstation.com/resources/pdf_documents/2011_ford_ranger_brochure.pdf"
+    },
+    {
+     "name": "Wikipedia - Ford Ranger (Americas)",
+     "url": "https://en.wikipedia.org/wiki/Ford_Ranger_(Americas)"
+    },
+    {
+     "name": "EPA fueleconomy.gov vehicle data",
+     "url": "https://www.fueleconomy.gov/feg/download.shtml"
+    },
+    {
+     "name": "The Ranger Station - Ford Ranger engine ratings table",
+     "url": "https://www.therangerstation.com/tech/ford-ranger-engine-ratings"
+    }
+   ],
+   "sourceCount": 4
+  },
+  {
+   "year": 2019,
+   "gen": "gen4",
+   "cid": 140,
+   "cyl": 4,
+   "name": "2.3L / 140 inline-four turbo",
+   "code": null,
+   "desc": "EcoBoost I4",
+   "hp": 270,
+   "hpBasis": "net",
+   "trims": [
+    "XL, XLT, Lariat (standard, only engine); Tremor pkg from 2021; 2WD and 4WD"
+   ],
+   "note": null,
+   "nhra": false,
+   "sources": [
+    {
+     "name": "Kelley Blue Book 2019 Ranger specs",
+     "url": "https://www.kbb.com/ford/ranger/2019/specs"
+    },
+    {
+     "name": "Wikipedia - Ford Ranger (T6)",
+     "url": "https://en.wikipedia.org/wiki/Ford_Ranger_(T6)"
+    },
+    {
+     "name": "EPA fueleconomy.gov vehicle data",
+     "url": "https://www.fueleconomy.gov/feg/download.shtml"
+    },
+    {
+     "name": "Ford 2019 Ranger power release",
+     "url": "https://www.conceptcarz.com/u28687/ford-ranger.aspx"
+    }
+   ],
+   "sourceCount": 4
+  },
+  {
+   "year": 2020,
+   "gen": "gen4",
+   "cid": 140,
+   "cyl": 4,
+   "name": "2.3L / 140 inline-four turbo",
+   "code": null,
+   "desc": "EcoBoost I4",
+   "hp": 270,
+   "hpBasis": "net",
+   "trims": [
+    "XL, XLT, Lariat (standard, only engine); Tremor pkg from 2021; 2WD and 4WD"
+   ],
+   "note": null,
+   "nhra": false,
+   "sources": [
+    {
+     "name": "Kelley Blue Book 2020 Ranger review",
+     "url": "https://www.kbb.com/ford/ranger/2020/"
+    },
+    {
+     "name": "Wikipedia - Ford Ranger (T6)",
+     "url": "https://en.wikipedia.org/wiki/Ford_Ranger_(T6)"
+    },
+    {
+     "name": "EPA fueleconomy.gov vehicle data",
+     "url": "https://www.fueleconomy.gov/feg/download.shtml"
+    }
+   ],
+   "sourceCount": 3
+  },
+  {
+   "year": 2021,
+   "gen": "gen4",
+   "cid": 140,
+   "cyl": 4,
+   "name": "2.3L / 140 inline-four turbo",
+   "code": null,
+   "desc": "EcoBoost I4",
+   "hp": 270,
+   "hpBasis": "net",
+   "trims": [
+    "XL, XLT, Lariat (standard, only engine); Tremor pkg from 2021; 2WD and 4WD"
+   ],
+   "note": null,
+   "nhra": false,
+   "sources": [
+    {
+     "name": "Kelley Blue Book 2021 Ranger specs",
+     "url": "https://www.kbb.com/ford/ranger/2021/specs"
+    },
+    {
+     "name": "Wikipedia - Ford Ranger (T6)",
+     "url": "https://en.wikipedia.org/wiki/Ford_Ranger_(T6)"
+    },
+    {
+     "name": "EPA fueleconomy.gov vehicle data",
+     "url": "https://www.fueleconomy.gov/feg/download.shtml"
+    }
+   ],
+   "sourceCount": 3
+  },
+  {
+   "year": 2022,
+   "gen": "gen4",
+   "cid": 140,
+   "cyl": 4,
+   "name": "2.3L / 140 inline-four turbo",
+   "code": null,
+   "desc": "EcoBoost I4",
+   "hp": 270,
+   "hpBasis": "net",
+   "trims": [
+    "XL, XLT, Lariat (standard, only engine); Tremor pkg from 2021; 2WD and 4WD"
+   ],
+   "note": null,
+   "nhra": false,
+   "sources": [
+    {
+     "name": "Kelley Blue Book 2022 Ranger specs",
+     "url": "https://www.kbb.com/ford/ranger/2022/specs"
+    },
+    {
+     "name": "Wikipedia - Ford Ranger (T6)",
+     "url": "https://en.wikipedia.org/wiki/Ford_Ranger_(T6)"
+    },
+    {
+     "name": "EPA fueleconomy.gov vehicle data",
+     "url": "https://www.fueleconomy.gov/feg/download.shtml"
+    }
+   ],
+   "sourceCount": 3
+  },
+  {
+   "year": 2023,
+   "gen": "gen4",
+   "cid": 140,
+   "cyl": 4,
+   "name": "2.3L / 140 inline-four turbo",
+   "code": null,
+   "desc": "EcoBoost I4",
+   "hp": 270,
+   "hpBasis": "net",
+   "trims": [
+    "XL, XLT, Lariat (standard, only engine); Tremor pkg from 2021; 2WD and 4WD"
+   ],
+   "note": null,
+   "nhra": false,
+   "sources": [
+    {
+     "name": "Kelley Blue Book 2023 Ranger specs",
+     "url": "https://www.kbb.com/ford/ranger/2023/specs"
+    },
+    {
+     "name": "Wikipedia - Ford Ranger (T6)",
+     "url": "https://en.wikipedia.org/wiki/Ford_Ranger_(T6)"
+    },
+    {
+     "name": "EPA fueleconomy.gov vehicle data",
+     "url": "https://www.fueleconomy.gov/feg/download.shtml"
+    }
+   ],
+   "sourceCount": 3
+  },
+  {
+   "year": 2024,
+   "gen": "gen5",
+   "cid": 140,
+   "cyl": 4,
+   "name": "2.3L / 140 inline-four turbo",
+   "code": null,
+   "desc": "EcoBoost I4",
+   "hp": 270,
+   "hpBasis": "net",
+   "trims": [
+    "XL, XLT, Lariat (standard); 2WD and 4WD"
+   ],
+   "note": null,
+   "nhra": false,
+   "sources": [
+    {
+     "name": "Kelley Blue Book 2024 Ranger review",
+     "url": "https://www.kbb.com/ford/ranger/2024/"
+    },
+    {
+     "name": "Wikipedia - Ford Ranger (T6)",
+     "url": "https://en.wikipedia.org/wiki/Ford_Ranger_(T6)"
+    },
+    {
+     "name": "EPA fueleconomy.gov vehicle data",
+     "url": "https://www.fueleconomy.gov/feg/download.shtml"
+    },
+    {
+     "name": "The Drive - 2024 Ranger arrives in US, 405-hp Raptor",
+     "url": "https://www.thedrive.com/news/2024-ford-ranger-arrives-in-us-with-new-look-more-engines-405-hp-raptor-trim"
+    }
+   ],
+   "sourceCount": 4
+  },
+  {
+   "year": 2024,
+   "gen": "gen5",
+   "cid": 164,
+   "cyl": 6,
+   "name": "2.7L / 164 V6 turbo",
+   "code": null,
+   "desc": "EcoBoost V6",
+   "hp": 315,
+   "hpBasis": "net",
+   "trims": [
+    "XLT, Lariat (option); EPA lists 4WD only"
+   ],
+   "note": null,
+   "nhra": false,
+   "sources": [
+    {
+     "name": "Kelley Blue Book 2024 Ranger review",
+     "url": "https://www.kbb.com/ford/ranger/2024/"
+    },
+    {
+     "name": "Wikipedia - Ford Ranger (T6)",
+     "url": "https://en.wikipedia.org/wiki/Ford_Ranger_(T6)"
+    },
+    {
+     "name": "EPA fueleconomy.gov vehicle data",
+     "url": "https://www.fueleconomy.gov/feg/download.shtml"
+    },
+    {
+     "name": "The Drive - 2024 Ranger arrives in US, 405-hp Raptor",
+     "url": "https://www.thedrive.com/news/2024-ford-ranger-arrives-in-us-with-new-look-more-engines-405-hp-raptor-trim"
+    }
+   ],
+   "sourceCount": 4
+  },
+  {
+   "year": 2024,
+   "gen": "gen5",
+   "cid": 183,
+   "cyl": 6,
+   "name": "3.0L / 183 V6 turbo",
+   "code": null,
+   "desc": "EcoBoost V6",
+   "hp": 405,
+   "hpBasis": "net",
+   "trims": [
+    "Raptor (4WD only)"
+   ],
+   "note": null,
+   "nhra": false,
+   "sources": [
+    {
+     "name": "Kelley Blue Book 2024 Ranger review",
+     "url": "https://www.kbb.com/ford/ranger/2024/"
+    },
+    {
+     "name": "Wikipedia - Ford Ranger (T6)",
+     "url": "https://en.wikipedia.org/wiki/Ford_Ranger_(T6)"
+    },
+    {
+     "name": "EPA fueleconomy.gov vehicle data",
+     "url": "https://www.fueleconomy.gov/feg/download.shtml"
+    },
+    {
+     "name": "The Drive - 2024 Ranger arrives in US, 405-hp Raptor",
+     "url": "https://www.thedrive.com/news/2024-ford-ranger-arrives-in-us-with-new-look-more-engines-405-hp-raptor-trim"
+    },
+    {
+     "name": "Kelley Blue Book 2024 Ranger specs",
+     "url": "https://www.kbb.com/ford/ranger/2024/specs"
+    }
+   ],
+   "sourceCount": 5
+  },
+  {
+   "year": 2025,
+   "gen": "gen5",
+   "cid": 140,
+   "cyl": 4,
+   "name": "2.3L / 140 inline-four turbo",
+   "code": null,
+   "desc": "EcoBoost I4",
+   "hp": 270,
+   "hpBasis": "net",
+   "trims": [
+    "XL, XLT, Lariat (standard); 2WD and 4WD"
+   ],
+   "note": null,
+   "nhra": false,
+   "sources": [
+    {
+     "name": "Kelley Blue Book 2025 Ranger review",
+     "url": "https://www.kbb.com/ford/ranger/2025/"
+    },
+    {
+     "name": "Wikipedia - Ford Ranger (T6)",
+     "url": "https://en.wikipedia.org/wiki/Ford_Ranger_(T6)"
+    },
+    {
+     "name": "EPA fueleconomy.gov vehicle data",
+     "url": "https://www.fueleconomy.gov/feg/download.shtml"
+    }
+   ],
+   "sourceCount": 3
+  },
+  {
+   "year": 2025,
+   "gen": "gen5",
+   "cid": 164,
+   "cyl": 6,
+   "name": "2.7L / 164 V6 turbo",
+   "code": null,
+   "desc": "EcoBoost V6",
+   "hp": 315,
+   "hpBasis": "net",
+   "trims": [
+    "XLT, Lariat (option); EPA lists 4WD only"
+   ],
+   "note": null,
+   "nhra": false,
+   "sources": [
+    {
+     "name": "Kelley Blue Book 2025 Ranger review",
+     "url": "https://www.kbb.com/ford/ranger/2025/"
+    },
+    {
+     "name": "Wikipedia - Ford Ranger (T6)",
+     "url": "https://en.wikipedia.org/wiki/Ford_Ranger_(T6)"
+    },
+    {
+     "name": "EPA fueleconomy.gov vehicle data",
+     "url": "https://www.fueleconomy.gov/feg/download.shtml"
+    }
+   ],
+   "sourceCount": 3
+  },
+  {
+   "year": 2025,
+   "gen": "gen5",
+   "cid": 183,
+   "cyl": 6,
+   "name": "3.0L / 183 V6 turbo",
+   "code": null,
+   "desc": "EcoBoost V6",
+   "hp": 405,
+   "hpBasis": "net",
+   "trims": [
+    "Raptor (4WD only)"
+   ],
+   "note": null,
+   "nhra": false,
+   "sources": [
+    {
+     "name": "Kelley Blue Book 2025 Ranger review",
+     "url": "https://www.kbb.com/ford/ranger/2025/"
+    },
+    {
+     "name": "Wikipedia - Ford Ranger (T6)",
+     "url": "https://en.wikipedia.org/wiki/Ford_Ranger_(T6)"
+    },
+    {
+     "name": "EPA fueleconomy.gov vehicle data",
+     "url": "https://www.fueleconomy.gov/feg/download.shtml"
+    }
+   ],
+   "sourceCount": 3
+  },
+  {
+   "year": 2026,
+   "gen": "gen5",
+   "cid": 140,
+   "cyl": 4,
+   "name": "2.3L / 140 inline-four turbo",
+   "code": null,
+   "desc": "EcoBoost I4",
+   "hp": 270,
+   "hpBasis": "net",
+   "trims": [
+    "XL, XLT, Lariat (standard); 2WD and 4WD"
+   ],
+   "note": null,
+   "nhra": false,
+   "sources": [
+    {
+     "name": "Kelley Blue Book 2026 Ranger review",
+     "url": "https://www.kbb.com/ford/ranger/2026/"
+    },
+    {
+     "name": "Wikipedia - Ford Ranger (T6)",
+     "url": "https://en.wikipedia.org/wiki/Ford_Ranger_(T6)"
+    },
+    {
+     "name": "EPA fueleconomy.gov vehicle data",
+     "url": "https://www.fueleconomy.gov/feg/download.shtml"
+    }
+   ],
+   "sourceCount": 3
+  },
+  {
+   "year": 2026,
+   "gen": "gen5",
+   "cid": 164,
+   "cyl": 6,
+   "name": "2.7L / 164 V6 turbo",
+   "code": null,
+   "desc": "EcoBoost V6",
+   "hp": 315,
+   "hpBasis": "net",
+   "trims": [
+    "XLT, Lariat (option); EPA lists 4WD only"
+   ],
+   "note": null,
+   "nhra": false,
+   "sources": [
+    {
+     "name": "Kelley Blue Book 2026 Ranger review",
+     "url": "https://www.kbb.com/ford/ranger/2026/"
+    },
+    {
+     "name": "Wikipedia - Ford Ranger (T6)",
+     "url": "https://en.wikipedia.org/wiki/Ford_Ranger_(T6)"
+    },
+    {
+     "name": "EPA fueleconomy.gov vehicle data",
+     "url": "https://www.fueleconomy.gov/feg/download.shtml"
+    }
+   ],
+   "sourceCount": 3
+  },
+  {
+   "year": 2026,
+   "gen": "gen5",
+   "cid": 183,
+   "cyl": 6,
+   "name": "3.0L / 183 V6 turbo",
+   "code": null,
+   "desc": "EcoBoost V6",
+   "hp": 405,
+   "hpBasis": "net",
+   "trims": [
+    "Raptor (4WD only)"
+   ],
+   "note": null,
+   "nhra": false,
+   "sources": [
+    {
+     "name": "Kelley Blue Book 2026 Ranger review",
+     "url": "https://www.kbb.com/ford/ranger/2026/"
+    },
+    {
+     "name": "Wikipedia - Ford Ranger (T6)",
+     "url": "https://en.wikipedia.org/wiki/Ford_Ranger_(T6)"
+    },
+    {
+     "name": "EPA fueleconomy.gov vehicle data",
+     "url": "https://www.fueleconomy.gov/feg/download.shtml"
+    }
+   ],
+   "sourceCount": 3
+  }
+ ],
+ "sources": [
+  {
+   "name": "EPA fueleconomy.gov vehicle data",
+   "url": "https://www.fueleconomy.gov/feg/download.shtml",
+   "type": "government"
+  },
+  {
+   "name": "Ford 1983 Ranger brochure (1983_ford_ranger_V-6_brochure.pdf)",
+   "url": "https://www.therangerstation.com/resources/pdf_documents/1983_ford_ranger_V-6_brochure.pdf",
+   "type": "manufacturer"
+  },
+  {
+   "name": "Ford 1983 Ranger brochure (1983_ford_ranger_brochure-1.pdf)",
+   "url": "https://www.therangerstation.com/resources/pdf_documents/1983_ford_ranger_brochure-1.pdf",
+   "type": "manufacturer"
+  },
+  {
+   "name": "Ford 1983 Ranger brochure (1983_ford_ranger_diesel_brochure.pdf)",
+   "url": "https://www.therangerstation.com/resources/pdf_documents/1983_ford_ranger_diesel_brochure.pdf",
+   "type": "manufacturer"
+  },
+  {
+   "name": "Ford 1984 Ranger brochure",
+   "url": "https://www.therangerstation.com/resources/pdf_documents/1984_ford_ranger_brochure.pdf",
+   "type": "manufacturer"
+  },
+  {
+   "name": "Ford 1985 Ranger brochure",
+   "url": "https://www.therangerstation.com/resources/pdf_documents/1985_ford_ranger_brochure.pdf",
+   "type": "manufacturer"
+  },
+  {
+   "name": "Ford 1985 Trucks brochure (revised), Ranger page",
+   "url": "https://oldcarbrochures.org/United%20States/Ford%20Motor%20Company%20Trucks-Vans/1985%20Trucks/1985%20Ford%20Trucks%20%28Rev%29/index.html",
+   "type": "manufacturer"
+  },
+  {
+   "name": "Ford 1986 Ranger brochure",
+   "url": "https://www.therangerstation.com/resources/pdf_documents/1986_ford_ranger_brochure.pdf",
+   "type": "manufacturer"
+  },
+  {
+   "name": "Ford 1987 Ranger brochure",
+   "url": "https://www.therangerstation.com/resources/pdf_documents/1987_ford_ranger_brochure.pdf",
+   "type": "manufacturer"
+  },
+  {
+   "name": "Ford 1988 Ranger brochure",
+   "url": "https://www.therangerstation.com/resources/pdf_documents/1988_ford_ranger_brochure.pdf",
+   "type": "manufacturer"
+  },
+  {
+   "name": "Ford 1989 Ranger brochure",
+   "url": "https://www.therangerstation.com/resources/pdf_documents/1989_ford_ranger_brochure.pdf",
+   "type": "manufacturer"
+  },
+  {
+   "name": "Ford 1990 Ranger brochure",
+   "url": "https://www.therangerstation.com/resources/pdf_documents/1990_ford_ranger_brochure.pdf",
+   "type": "manufacturer"
+  },
+  {
+   "name": "Ford 1991 Ranger brochure (Ranger Power page, pp.16-17)",
+   "url": "https://oldcarbrochures.org/United%20States/Ford%20Motor%20Company%20Trucks-Vans/1991-Trucks-Vans/1991-Ford-Ranger-Brochure/index.html",
+   "type": "manufacturer"
+  },
+  {
+   "name": "Ford 1992 Ranger brochure",
+   "url": "https://www.therangerstation.com/resources/pdf_documents/1992_ford_ranger_brochure.pdf",
+   "type": "manufacturer"
+  },
+  {
+   "name": "Ford 1993 Ranger brochure",
+   "url": "https://www.therangerstation.com/resources/pdf_documents/1993_ford_ranger_brochure.pdf",
+   "type": "manufacturer"
+  },
+  {
+   "name": "Ford 1994 Ranger brochure",
+   "url": "https://www.therangerstation.com/resources/pdf_documents/1994_ford_ranger_brochure.pdf",
+   "type": "manufacturer"
+  },
+  {
+   "name": "Ford 1995 Ranger brochure",
+   "url": "https://www.therangerstation.com/resources/pdf_documents/1995_ford_ranger_brochure.pdf",
+   "type": "manufacturer"
+  },
+  {
+   "name": "Ford 1996 Ranger brochure",
+   "url": "https://www.therangerstation.com/resources/pdf_documents/1996_ford_ranger_brochure.pdf",
+   "type": "manufacturer"
+  },
+  {
+   "name": "Ford 1997 Ranger brochure",
+   "url": "https://www.therangerstation.com/resources/pdf_documents/1997_ford_ranger_brochure.pdf",
+   "type": "manufacturer"
+  },
+  {
+   "name": "Ford 1998 Ranger EV fact sheet / brochure",
+   "url": "https://www.therangerstation.com/resources/pdf_documents/1998_ford_ranger_electric_brochure.pdf",
+   "type": "manufacturer"
+  },
+  {
+   "name": "Ford 1998 Ranger brochure",
+   "url": "https://www.therangerstation.com/resources/pdf_documents/1998_ford_ranger_brochure.pdf",
+   "type": "manufacturer"
+  },
+  {
+   "name": "Ford 1999 Ranger brochure",
+   "url": "https://www.therangerstation.com/resources/pdf_documents/1999_ford_ranger_brochure.pdf",
+   "type": "manufacturer"
+  },
+  {
+   "name": "Ford 2000 Ranger brochure",
+   "url": "https://www.therangerstation.com/resources/pdf_documents/2000_ford_ranger_brochure.pdf",
+   "type": "manufacturer"
+  },
+  {
+   "name": "Ford 2001 Ranger brochure",
+   "url": "https://www.therangerstation.com/resources/pdf_documents/2001_ford_ranger_brochure.pdf",
+   "type": "manufacturer"
+  },
+  {
+   "name": "Ford 2002 Ranger brochure",
+   "url": "https://www.therangerstation.com/resources/pdf_documents/2002_ford_ranger_brochure.pdf",
+   "type": "manufacturer"
+  },
+  {
+   "name": "Ford 2003 Ranger brochure",
+   "url": "https://www.therangerstation.com/resources/pdf_documents/2003_ford_ranger_brochure.pdf",
+   "type": "manufacturer"
+  },
+  {
+   "name": "Ford 2004 Ranger brochure",
+   "url": "https://www.therangerstation.com/resources/pdf_documents/2004_ford_ranger_brochure.pdf",
+   "type": "manufacturer"
+  },
+  {
+   "name": "Ford 2005 Ranger brochure",
+   "url": "https://www.therangerstation.com/resources/pdf_documents/2005_ford_ranger_brochure.pdf",
+   "type": "manufacturer"
+  },
+  {
+   "name": "Ford 2006 Ranger brochure",
+   "url": "https://www.therangerstation.com/resources/pdf_documents/2006_ford_ranger_brochure.pdf",
+   "type": "manufacturer"
+  },
+  {
+   "name": "Ford 2007 Ranger brochure",
+   "url": "https://www.therangerstation.com/resources/pdf_documents/2007_ford_ranger_brochure.pdf",
+   "type": "manufacturer"
+  },
+  {
+   "name": "Ford 2008 Ranger brochure",
+   "url": "https://www.therangerstation.com/resources/pdf_documents/2008_ford_ranger_brochure.pdf",
+   "type": "manufacturer"
+  },
+  {
+   "name": "Ford 2009 Ranger brochure",
+   "url": "https://www.therangerstation.com/resources/pdf_documents/2009_ford_ranger_brochure.pdf",
+   "type": "manufacturer"
+  },
+  {
+   "name": "Ford 2010 Ranger brochure",
+   "url": "https://www.therangerstation.com/resources/pdf_documents/2010_ford_ranger_brochure.pdf",
+   "type": "manufacturer"
+  },
+  {
+   "name": "Ford 2011 Ranger brochure",
+   "url": "https://www.therangerstation.com/resources/pdf_documents/2011_ford_ranger_brochure.pdf",
+   "type": "manufacturer"
+  },
+  {
+   "name": "Ford 2019 Ranger power release",
+   "url": "https://www.conceptcarz.com/u28687/ford-ranger.aspx",
+   "type": "manufacturer"
+  },
+  {
+   "name": "NHRA Stock Car Classification Guides",
+   "url": "https://www.nhraracer.com/stockcarclassification",
+   "type": "nhra"
+  },
+  {
+   "name": "Diesel Hub - Ford Ranger Diesel History (1983-1986)",
+   "url": "https://www.dieselhub.com/rigs/ford-ranger-diesel.html",
+   "type": "publication"
+  },
+  {
+   "name": "Kelley Blue Book 2019 Ranger specs",
+   "url": "https://www.kbb.com/ford/ranger/2019/specs",
+   "type": "publication"
+  },
+  {
+   "name": "Kelley Blue Book 2020 Ranger review",
+   "url": "https://www.kbb.com/ford/ranger/2020/",
+   "type": "publication"
+  },
+  {
+   "name": "Kelley Blue Book 2021 Ranger specs",
+   "url": "https://www.kbb.com/ford/ranger/2021/specs",
+   "type": "publication"
+  },
+  {
+   "name": "Kelley Blue Book 2022 Ranger specs",
+   "url": "https://www.kbb.com/ford/ranger/2022/specs",
+   "type": "publication"
+  },
+  {
+   "name": "Kelley Blue Book 2023 Ranger specs",
+   "url": "https://www.kbb.com/ford/ranger/2023/specs",
+   "type": "publication"
+  },
+  {
+   "name": "Kelley Blue Book 2024 Ranger review",
+   "url": "https://www.kbb.com/ford/ranger/2024/",
+   "type": "publication"
+  },
+  {
+   "name": "Kelley Blue Book 2024 Ranger specs",
+   "url": "https://www.kbb.com/ford/ranger/2024/specs",
+   "type": "publication"
+  },
+  {
+   "name": "Kelley Blue Book 2025 Ranger review",
+   "url": "https://www.kbb.com/ford/ranger/2025/",
+   "type": "publication"
+  },
+  {
+   "name": "Kelley Blue Book 2026 Ranger review",
+   "url": "https://www.kbb.com/ford/ranger/2026/",
+   "type": "publication"
+  },
+  {
+   "name": "Mini-Truck magazine, Dec 1981, \"Development of the Ranger\" (J. Clark), pp.26-31",
+   "url": "http://www.therangerstation.com/resources/pdf_documents/ranger.pdf",
+   "type": "publication"
+  },
+  {
+   "name": "The Drive - 2024 Ranger arrives in US, 405-hp Raptor",
+   "url": "https://www.thedrive.com/news/2024-ford-ranger-arrives-in-us-with-new-look-more-engines-405-hp-raptor-trim",
+   "type": "publication"
+  },
+  {
+   "name": "The Ranger Station - 1983-1987 Ranger 2.2 & 2.3 diesels (spec tables)",
+   "url": "https://www.therangerstation.com/tech/1983-1987-ford-ranger-2-2-2-3-diesels",
+   "type": "registry"
+  },
+  {
+   "name": "The Ranger Station - Ford Ranger engine ratings table",
+   "url": "https://www.therangerstation.com/tech/ford-ranger-engine-ratings",
+   "type": "registry"
+  },
+  {
+   "name": "The Ranger Station - Ranger 4-cylinder engines tech page",
+   "url": "https://therangerstation.com/tech_library/4cylinders.shtml",
+   "type": "registry"
+  },
+  {
+   "name": "Wikipedia - Ford Ranger (Americas)",
+   "url": "https://en.wikipedia.org/wiki/Ford_Ranger_(Americas)",
+   "type": "wikipedia"
+  },
+  {
+   "name": "Wikipedia - Ford Ranger (T6)",
+   "url": "https://en.wikipedia.org/wiki/Ford_Ranger_(T6)",
+   "type": "wikipedia"
+  },
+  {
+   "name": "Wikipedia - Ford Ranger EV",
+   "url": "https://en.wikipedia.org/wiki/Ford_Ranger_EV",
+   "type": "wikipedia"
+  }
+ ],
+ "excluded": [],
+ "method": "Every engine and year listed here was confirmed by at least three independent sources: the NHRA Stock Car Classification Guides, factory material such as GM Heritage Center information kits and sales brochures, EPA records and established references. Several Wikipedia articles count as one source. Where sources give different ratings, the factory figure is shown and the difference is noted. Factory race-only packages need two sources."
+}

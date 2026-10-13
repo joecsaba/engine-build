@@ -45,6 +45,10 @@ or 2 reputable sources that agree (second pass). Specs go in public/data/engines
 | GM/Isuzu 1.9 four (LR1) | 119 ci | S-10 1982–1985 |
 | GM 2.0 four (LQ2) | 121 ci | S-10 1983–1984 |
 | Isuzu 2.2 diesel (LQ7) | 137 ci | S-10 1984–1985 |
+| Ford 2.9 Cologne V6 | 177 ci | Ranger 1986–1992 |
+| Ford 2.5 Lima four | 153 ci | Ranger 1998–2001 (left unlinked; the same-size page is a Duratec) |
+| Perkins 4.135 2.2 diesel | 134 ci | Ranger 1983–1984 |
+| Mitsubishi 4D55T 2.3 turbodiesel | 143 ci | Ranger 1985–1987 |
 
 ## Data to re-check
 - C/K Pickup 1994 5.7 L05: page shows 200 hp; the K5 Blazer research found 210 hp for the same engine (Wikipedia Blazer article + Consumer Guide).
