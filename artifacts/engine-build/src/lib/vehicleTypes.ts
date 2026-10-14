@@ -19,7 +19,7 @@ export interface VehicleEngine {
   hp: number | null;
   /** Set when sources agree the engine was offered but publish different ratings. */
   hpRange?: [number, number];
-  hpBasis: "gross" | "net";
+  hpBasis: "gross" | "net" | "din";
   electric?: boolean;
   trims: string[];
   note: string | null;

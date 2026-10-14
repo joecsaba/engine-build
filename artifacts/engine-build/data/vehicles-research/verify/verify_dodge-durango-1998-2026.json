@@ -1,0 +1,3671 @@
+{
+ "vehicle": "dodge-durango-1998-2026",
+ "scope_note": "US-market Dodge Durango, all trims (R/T, Citadel, SRT/SRT 392, SRT Hellcat, R/T 392, 2009 HEMI Hybrid). 2WD/RWD and 4WD/AWD treated as one model. Independent-source groups: Dodge/Chrysler/FCA/Stellantis media = one; Wikipedia = one; EPA (size/cylinders only), Consumer Guide, KBB, MotorWeek, Auto123, Autotrader.ca, Guide Auto Web, The Truth About Cars each one. NHRA input file was empty, so nhra=false throughout. HP is SAE net. No source used states Chrysler sales codes (EZH, ERB etc.), so rpo holds engine family names only.",
+ "notes": [
+  "Production gap: no 2010 model year. Newark Assembly ended second-generation production on Dec 19, 2008 (last MY 2009); the third generation launched as a 2011 model.",
+  "Generations: gen1 1998-2003 (Dakota-based), gen2 2004-2009, gen3 2011-2026.",
+  "1998: 4WD V8 only (EPA). The 3.9 V6 named in 1998 launch coverage appeared for 1999 only; recorded as excluded_not_produced for 1998.",
+  "Shelby S.P.360 (1999-2000) is a dealer-sold conversion, not a factory engine.",
+  "2022: no SRT Hellcat. 2025: no 6.4 (SRT 392 dropped; lineup GT / R/T / SRT Hellcat). 2026: 6.4 returns as R/T 392; 5.7 becomes GT HEMI; V-6 dropped Aug 2025, then reinstated Nov 2025.",
+  "Not recorded: 2027 model year (announced by Dodge; outside scope). Police Special Service Durango (2014+) uses the same 3.6/5.7 engines."
+ ],
+ "years": {
+  "1998": [
+   {
+    "gen": "gen1",
+    "cid": 239,
+    "liters": 3.9,
+    "hp": null,
+    "hp_basis": "SAE net",
+    "name": "3.9L / 239 V6",
+    "rpo": "Magnum 3.9",
+    "common_name": "3.9 Magnum V6",
+    "trims": [],
+    "nhra": false,
+    "sources": [
+     {
+      "name": "MotorWeek - 1998 Dodge Durango road test",
+      "url": "https://motorweek.org/road_tests/1998_dodge_durango/",
+      "says": "1998 launch road test lists a 3.9-liter V6 as the base engine"
+     },
+     {
+      "name": "EPA fueleconomy.gov vehicle data",
+      "url": "https://www.fueleconomy.gov/feg/download.shtml",
+      "says": "1998 Durango: only 5.2 L and 5.9 L V8, 4WD"
+     },
+     {
+      "name": "Wikipedia - Dodge Durango",
+      "url": "https://en.wikipedia.org/wiki/Dodge_Durango",
+      "says": "3.9L Magnum V6 offered 1999 only"
+     },
+     {
+      "name": "Consumer Guide - 1998-03 Dodge Durango used-car review",
+      "url": "https://consumerguide.com/used/1998-03-dodge-durango/",
+      "says": "3.9-liter V6 'became available' (1999)"
+     }
+    ],
+    "independent_sources": 4,
+    "status": "excluded_not_produced",
+    "note": "Announced in 1998 launch coverage but not built for MY1998 (1998 was 4WD V8 only per EPA). Arrived for 1999."
+   },
+   {
+    "gen": "gen1",
+    "cid": 318,
+    "liters": 5.2,
+    "hp": 230,
+    "hp_basis": "SAE net",
+    "name": "5.2L / 318 V8",
+    "rpo": "Magnum 5.2",
+    "common_name": "5.2 Magnum V8",
+    "trims": [
+     "standard",
+     "4WD only (1998)"
+    ],
+    "nhra": false,
+    "sources": [
+     {
+      "name": "EPA fueleconomy.gov vehicle data",
+      "url": "https://www.fueleconomy.gov/feg/download.shtml",
+      "says": "1998 Durango: 5.2 L 8-cyl, 4WD"
+     },
+     {
+      "name": "Wikipedia - Dodge Durango",
+      "url": "https://en.wikipedia.org/wiki/Dodge_Durango",
+      "says": "5.2L Magnum V8 1998-2000, 230 hp"
+     },
+     {
+      "name": "Consumer Guide - 1998-03 Dodge Durango used-car review",
+      "url": "https://consumerguide.com/used/1998-03-dodge-durango/",
+      "says": "standard 5.2 V8, 230 horsepower"
+     },
+     {
+      "name": "MotorWeek - 1998 Dodge Durango road test",
+      "url": "https://motorweek.org/road_tests/1998_dodge_durango/",
+      "says": "5.2-liter V8 delivers 230 horsepower"
+     },
+     {
+      "name": "Kelley Blue Book - 1998 Dodge Durango review/specs",
+      "url": "https://www.kbb.com/dodge/durango/1998/",
+      "says": "1998: V8 5.2 L, 230 @ 4400 rpm"
+     }
+    ],
+    "independent_sources": 5,
+    "status": "three_sources_not_nhra"
+   },
+   {
+    "gen": "gen1",
+    "cid": 360,
+    "liters": 5.9,
+    "hp": 245,
+    "hp_basis": "SAE net",
+    "name": "5.9L / 360 V8",
+    "rpo": "Magnum 5.9",
+    "common_name": "5.9 Magnum V8",
+    "trims": [
+     "optional",
+     "4WD only (1998)"
+    ],
+    "nhra": false,
+    "sources": [
+     {
+      "name": "EPA fueleconomy.gov vehicle data",
+      "url": "https://www.fueleconomy.gov/feg/download.shtml",
+      "says": "1998 Durango: 5.9 L 8-cyl"
+     },
+     {
+      "name": "Wikipedia - Dodge Durango",
+      "url": "https://en.wikipedia.org/wiki/Dodge_Durango",
+      "says": "5.9L Magnum V8 1998-2003: 245 hp; listed 250 hp for 2000-2003"
+     },
+     {
+      "name": "Consumer Guide - 1998-03 Dodge Durango used-car review",
+      "url": "https://consumerguide.com/used/1998-03-dodge-durango/",
+      "says": "optional 5.9-liter V8, 245 horsepower, throughout the generation"
+     },
+     {
+      "name": "MotorWeek - 1998 Dodge Durango road test",
+      "url": "https://motorweek.org/road_tests/1998_dodge_durango/",
+      "says": "top-line engine is the 5.9-liter V8"
+     }
+    ],
+    "independent_sources": 4,
+    "status": "three_sources_not_nhra",
+    "note": "Optional. 245 hp per Wikipedia and Consumer Guide."
+   }
+  ],
+  "1999": [
+   {
+    "gen": "gen1",
+    "cid": 239,
+    "liters": 3.9,
+    "hp": 175,
+    "hp_basis": "SAE net",
+    "name": "3.9L / 239 V6",
+    "rpo": "Magnum 3.9",
+    "common_name": "3.9 Magnum V6",
+    "trims": [
+     "base"
+    ],
+    "nhra": false,
+    "sources": [
+     {
+      "name": "EPA fueleconomy.gov vehicle data",
+      "url": "https://www.fueleconomy.gov/feg/download.shtml",
+      "says": "1999 Durango: 3.9 L 6-cyl, 2WD and 4WD"
+     },
+     {
+      "name": "Wikipedia - Dodge Durango",
+      "url": "https://en.wikipedia.org/wiki/Dodge_Durango",
+      "says": "3.9L Magnum V6 (1999 only), 175 hp"
+     },
+     {
+      "name": "Consumer Guide - 1998-03 Dodge Durango used-car review",
+      "url": "https://consumerguide.com/used/1998-03-dodge-durango/",
+      "says": "3.9-liter V6 became available, 175 horsepower"
+     },
+     {
+      "name": "Kelley Blue Book - 1999 Dodge Durango review/specs",
+      "url": "https://www.kbb.com/dodge/durango/1999/",
+      "says": "1999 engines: 3.9L V6, 5.2L V8, 5.9L V8"
+     }
+    ],
+    "independent_sources": 4,
+    "status": "three_sources_not_nhra",
+    "note": "1999 model year only."
+   },
+   {
+    "gen": "gen1",
+    "cid": 318,
+    "liters": 5.2,
+    "hp": 230,
+    "hp_basis": "SAE net",
+    "name": "5.2L / 318 V8",
+    "rpo": "Magnum 5.2",
+    "common_name": "5.2 Magnum V8",
+    "trims": [
+     "2WD and 4WD"
+    ],
+    "nhra": false,
+    "sources": [
+     {
+      "name": "EPA fueleconomy.gov vehicle data",
+      "url": "https://www.fueleconomy.gov/feg/download.shtml",
+      "says": "1999 Durango: 5.2 L 8-cyl, 2WD and 4WD"
+     },
+     {
+      "name": "Wikipedia - Dodge Durango",
+      "url": "https://en.wikipedia.org/wiki/Dodge_Durango",
+      "says": "5.2L Magnum V8 1998-2000, 230 hp"
+     },
+     {
+      "name": "Consumer Guide - 1998-03 Dodge Durango used-car review",
+      "url": "https://consumerguide.com/used/1998-03-dodge-durango/",
+      "says": "5.2 V8, 230 horsepower"
+     },
+     {
+      "name": "Kelley Blue Book - 1999 Dodge Durango review/specs",
+      "url": "https://www.kbb.com/dodge/durango/1999/",
+      "says": "1999: V8 5.2 L, 230 @ 4400 rpm"
+     }
+    ],
+    "independent_sources": 4,
+    "status": "three_sources_not_nhra"
+   },
+   {
+    "gen": "gen1",
+    "cid": 360,
+    "liters": 5.9,
+    "hp": 245,
+    "hp_basis": "SAE net",
+    "name": "5.9L / 360 V8",
+    "rpo": "Magnum 5.9",
+    "common_name": "5.9 Magnum V8",
+    "trims": [
+     "optional"
+    ],
+    "nhra": false,
+    "sources": [
+     {
+      "name": "EPA fueleconomy.gov vehicle data",
+      "url": "https://www.fueleconomy.gov/feg/download.shtml",
+      "says": "1999 Durango: 5.9 L 8-cyl"
+     },
+     {
+      "name": "Wikipedia - Dodge Durango",
+      "url": "https://en.wikipedia.org/wiki/Dodge_Durango",
+      "says": "5.9L Magnum V8 1998-2003: 245 hp; listed 250 hp for 2000-2003"
+     },
+     {
+      "name": "Consumer Guide - 1998-03 Dodge Durango used-car review",
+      "url": "https://consumerguide.com/used/1998-03-dodge-durango/",
+      "says": "optional 5.9-liter V8, 245 horsepower, throughout the generation"
+     },
+     {
+      "name": "Kelley Blue Book - 1999 Dodge Durango review/specs",
+      "url": "https://www.kbb.com/dodge/durango/1999/",
+      "says": "1999 engines include 5.9L V8"
+     }
+    ],
+    "independent_sources": 4,
+    "status": "three_sources_not_nhra",
+    "note": "Optional. 245 hp per Wikipedia and Consumer Guide."
+   },
+   {
+    "gen": "gen1",
+    "cid": 360,
+    "liters": 5.9,
+    "hp": 360,
+    "hp_basis": "SAE net (Shelby claim)",
+    "name": "5.9L / 360 supercharged V8",
+    "rpo": "Shelby S.P.360",
+    "common_name": "Shelby SP360",
+    "trims": [
+     "Shelby S.P.360"
+    ],
+    "nhra": false,
+    "sources": [
+     {
+      "name": "Wikipedia - Dodge Durango",
+      "url": "https://en.wikipedia.org/wiki/Dodge_Durango",
+      "says": "1999-2000 limited-edition Shelby S.P.360, supercharged 5.9 Magnum, 360 hp / 412 lb-ft"
+     },
+     {
+      "name": "The Truth About Cars - Rare Rides: 1999 Dodge Durango Shelby SP-360",
+      "url": "https://thetruthaboutcars.com/2020/09/rare-rides-a-1999-dodge-durango-shelby-sp-360-a-subtle-family-suv/",
+      "says": "1999 Durango Shelby SP-360: supercharged 5.9; about 300 built 1999-2000"
+     }
+    ],
+    "independent_sources": 2,
+    "status": "dealer_conversion",
+    "note": "Conversion of new Durangos by Shelby / Performance West Group, sold through Dodge dealers; not a Chrysler factory engine. About 300 built over 1999-2000."
+   }
+  ],
+  "2000": [
+   {
+    "gen": "gen1",
+    "cid": 360,
+    "liters": 5.9,
+    "hp": 360,
+    "hp_basis": "SAE net (Shelby claim)",
+    "name": "5.9L / 360 supercharged V8",
+    "rpo": "Shelby S.P.360",
+    "common_name": "Shelby SP360",
+    "trims": [
+     "Shelby S.P.360"
+    ],
+    "nhra": false,
+    "sources": [
+     {
+      "name": "Wikipedia - Dodge Durango",
+      "url": "https://en.wikipedia.org/wiki/Dodge_Durango",
+      "says": "1999-2000 limited-edition Shelby S.P.360, supercharged 5.9 Magnum, 360 hp / 412 lb-ft"
+     },
+     {
+      "name": "The Truth About Cars - Rare Rides: 1999 Dodge Durango Shelby SP-360",
+      "url": "https://thetruthaboutcars.com/2020/09/rare-rides-a-1999-dodge-durango-shelby-sp-360-a-subtle-family-suv/",
+      "says": "1999 Durango Shelby SP-360: supercharged 5.9; about 300 built 1999-2000"
+     }
+    ],
+    "independent_sources": 2,
+    "status": "dealer_conversion",
+    "note": "Conversion of new Durangos by Shelby / Performance West Group, sold through Dodge dealers; not a Chrysler factory engine. About 300 built over 1999-2000."
+   },
+   {
+    "gen": "gen1",
+    "cid": 287,
+    "liters": 4.7,
+    "hp": 235,
+    "hp_basis": "SAE net",
+    "name": "4.7L / 287 V8",
+    "rpo": "PowerTech 4.7",
+    "common_name": "4.7 PowerTech (Magnum) SOHC V8",
+    "trims": [
+     "standard 4WD",
+     "2WD"
+    ],
+    "nhra": false,
+    "sources": [
+     {
+      "name": "EPA fueleconomy.gov vehicle data",
+      "url": "https://www.fueleconomy.gov/feg/download.shtml",
+      "says": "2000 Durango: 4.7 L 8-cyl, 2WD and 4WD"
+     },
+     {
+      "name": "Wikipedia - Dodge Durango",
+      "url": "https://en.wikipedia.org/wiki/Dodge_Durango",
+      "says": "4.7L PowerTech V8 2000-2003, 235 hp"
+     },
+     {
+      "name": "Consumer Guide - 1998-03 Dodge Durango used-car review",
+      "url": "https://consumerguide.com/used/1998-03-dodge-durango/",
+      "says": "4.7 V8 introduced 2000, 235 horsepower, standard in 4WD models"
+     },
+     {
+      "name": "Auto123 - 2-wheel-drive sport-utes disappear from Chrysler lineup (2000 Durango)",
+      "url": "https://www.auto123.com/en/news/2-wheel-drive-sport-utes-disappear-from-chrysler-lineup/46697/",
+      "says": "standard 4.7-litre SOHC Magnum V8, 235 hp at 4800 rpm"
+     },
+     {
+      "name": "Kelley Blue Book - 2000 Dodge Durango review/specs",
+      "url": "https://www.kbb.com/dodge/durango/2000/",
+      "says": "2000: V8 4.7 L, 235 @ 4800 rpm"
+     }
+    ],
+    "independent_sources": 5,
+    "status": "three_sources_not_nhra",
+    "note": "New for 2000. Period Chrysler literature called it the 4.7 Magnum; later PowerTech."
+   },
+   {
+    "gen": "gen1",
+    "cid": 318,
+    "liters": 5.2,
+    "hp": 230,
+    "hp_basis": "SAE net",
+    "name": "5.2L / 318 V8",
+    "rpo": "Magnum 5.2",
+    "common_name": "5.2 Magnum V8",
+    "trims": [
+     "2WD only"
+    ],
+    "nhra": false,
+    "sources": [
+     {
+      "name": "EPA fueleconomy.gov vehicle data",
+      "url": "https://www.fueleconomy.gov/feg/download.shtml",
+      "says": "2000 Durango: 5.2 L 8-cyl, 2WD only"
+     },
+     {
+      "name": "Wikipedia - Dodge Durango",
+      "url": "https://en.wikipedia.org/wiki/Dodge_Durango",
+      "says": "5.2L Magnum V8 1998-2000, 230 hp"
+     },
+     {
+      "name": "Consumer Guide - 1998-03 Dodge Durango used-car review",
+      "url": "https://consumerguide.com/used/1998-03-dodge-durango/",
+      "says": "5.2 remained standard on 2WD Durangos through 2000"
+     },
+     {
+      "name": "Auto123 - Sportier sport-ute coming (2000 Durango Sport)",
+      "url": "https://www.auto123.com/en/news/sportier-sport-ute-coming/46739/",
+      "says": "5.2-litre V-8 in the 2WD model, 230 hp"
+     }
+    ],
+    "independent_sources": 4,
+    "status": "three_sources_not_nhra",
+    "note": "Last year; 2WD only."
+   },
+   {
+    "gen": "gen1",
+    "cid": 360,
+    "liters": 5.9,
+    "hp": 245,
+    "hp_basis": "SAE net",
+    "name": "5.9L / 360 V8",
+    "rpo": "Magnum 5.9",
+    "common_name": "5.9 Magnum V8",
+    "trims": [
+     "optional (not on Sport)"
+    ],
+    "nhra": false,
+    "sources": [
+     {
+      "name": "EPA fueleconomy.gov vehicle data",
+      "url": "https://www.fueleconomy.gov/feg/download.shtml",
+      "says": "2000 Durango: 5.9 L 8-cyl"
+     },
+     {
+      "name": "Wikipedia - Dodge Durango",
+      "url": "https://en.wikipedia.org/wiki/Dodge_Durango",
+      "says": "5.9L Magnum V8 1998-2003: 245 hp; listed 250 hp for 2000-2003"
+     },
+     {
+      "name": "Consumer Guide - 1998-03 Dodge Durango used-car review",
+      "url": "https://consumerguide.com/used/1998-03-dodge-durango/",
+      "says": "optional 5.9-liter V8, 245 horsepower, throughout the generation"
+     },
+     {
+      "name": "Auto123 - 2-wheel-drive sport-utes disappear from Chrysler lineup (2000 Durango)",
+      "url": "https://www.auto123.com/en/news/2-wheel-drive-sport-utes-disappear-from-chrysler-lineup/46697/",
+      "says": "5.9-litre V8, 245 horsepower at 4000 rpm"
+     }
+    ],
+    "independent_sources": 4,
+    "status": "three_sources_not_nhra",
+    "note": "Optional. Wikipedia lists 250 hp for 2000-2003; Consumer Guide, Auto123 (2000) and MotorWeek (2002 R/T) give 245. Recorded 245."
+   }
+  ],
+  "2001": [
+   {
+    "gen": "gen1",
+    "cid": 287,
+    "liters": 4.7,
+    "hp": 235,
+    "hp_basis": "SAE net",
+    "name": "4.7L / 287 V8",
+    "rpo": "PowerTech 4.7",
+    "common_name": "4.7 PowerTech SOHC V8",
+    "trims": [
+     "standard"
+    ],
+    "nhra": false,
+    "sources": [
+     {
+      "name": "EPA fueleconomy.gov vehicle data",
+      "url": "https://www.fueleconomy.gov/feg/download.shtml",
+      "says": "2001 Durango: 4.7 L 8-cyl, 2WD and 4WD"
+     },
+     {
+      "name": "Wikipedia - Dodge Durango",
+      "url": "https://en.wikipedia.org/wiki/Dodge_Durango",
+      "says": "4.7L PowerTech V8 2000-2003, 235 hp"
+     },
+     {
+      "name": "Consumer Guide - 1998-03 Dodge Durango used-car review",
+      "url": "https://consumerguide.com/used/1998-03-dodge-durango/",
+      "says": "4.7 V8, 235 horsepower"
+     },
+     {
+      "name": "Kelley Blue Book - 2001 Dodge Durango review/specs",
+      "url": "https://www.kbb.com/dodge/durango/2001/",
+      "says": "2001: V8 4.7 L, 235 @ 4800 rpm"
+     }
+    ],
+    "independent_sources": 4,
+    "status": "three_sources_not_nhra"
+   },
+   {
+    "gen": "gen1",
+    "cid": 360,
+    "liters": 5.9,
+    "hp": 245,
+    "hp_basis": "SAE net",
+    "name": "5.9L / 360 V8",
+    "rpo": "Magnum 5.9",
+    "common_name": "5.9 Magnum V8",
+    "trims": [
+     "optional (SLT/SLT Plus)",
+     "standard R/T"
+    ],
+    "nhra": false,
+    "sources": [
+     {
+      "name": "EPA fueleconomy.gov vehicle data",
+      "url": "https://www.fueleconomy.gov/feg/download.shtml",
+      "says": "2001 Durango: 5.9 L 8-cyl"
+     },
+     {
+      "name": "Wikipedia - Dodge Durango",
+      "url": "https://en.wikipedia.org/wiki/Dodge_Durango",
+      "says": "5.9L Magnum V8 1998-2003: 245 hp; listed 250 hp for 2000-2003"
+     },
+     {
+      "name": "Consumer Guide - 1998-03 Dodge Durango used-car review",
+      "url": "https://consumerguide.com/used/1998-03-dodge-durango/",
+      "says": "optional 5.9-liter V8, 245 horsepower, throughout the generation"
+     },
+     {
+      "name": "Kelley Blue Book - 2001 Dodge Durango review/specs",
+      "url": "https://www.kbb.com/dodge/durango/2001/",
+      "says": "2001: 5.9L V8 offered (R/T)"
+     }
+    ],
+    "independent_sources": 4,
+    "status": "three_sources_not_nhra",
+    "note": "Optional. Wikipedia lists 250 hp for 2000-2003; Consumer Guide, Auto123 (2000) and MotorWeek (2002 R/T) give 245. Recorded 245."
+   },
+   {
+    "gen": "gen1",
+    "cid": 360,
+    "liters": 5.9,
+    "hp": 250,
+    "hp_basis": "SAE net",
+    "name": "5.9L / 360 V8 (R/T)",
+    "rpo": "Magnum 5.9",
+    "common_name": "5.9 Magnum V8 (R/T tune)",
+    "trims": [
+     "R/T (4WD)"
+    ],
+    "nhra": false,
+    "sources": [
+     {
+      "name": "Wikipedia - Dodge Durango",
+      "url": "https://en.wikipedia.org/wiki/Dodge_Durango",
+      "says": "R/T: performance-tuned 5.9 L Magnum V8; 5.9 rated 250 hp / 345 lb-ft 2000-2003"
+     },
+     {
+      "name": "Autotrader.ca research - 2003 Dodge Durango trims",
+      "url": "https://www.autotrader.ca/research/dodge/durango/2003/",
+      "says": "2003 R/T 5.9: 245-250 hp"
+     },
+     {
+      "name": "MotorWeek - 2002 Dodge Durango R/T road test",
+      "url": "https://www.motorweek.org/reviews/road_tests/2002_dodge_durango_r_t_program_2110",
+      "says": "2002 R/T: 245 hp and 335 lb-ft"
+     },
+     {
+      "name": "Consumer Guide - 1998-03 Dodge Durango used-car review",
+      "url": "https://consumerguide.com/used/1998-03-dodge-durango/",
+      "says": "R/T featured the 5.9-liter engine (from 2001)"
+     }
+    ],
+    "independent_sources": 4,
+    "status": "disputed",
+    "note": "Same engine as the optional 5.9 with revised ECU tune and freer exhaust. R/T rating disputed: 250 hp/345 lb-ft (Wikipedia, Autotrader.ca upper figure) vs 245/335 (MotorWeek, Consumer Guide). No factory sheet found. Wikipedia dates the R/T from 2000, Consumer Guide from 2001; recorded from 2001."
+   }
+  ],
+  "2002": [
+   {
+    "gen": "gen1",
+    "cid": 287,
+    "liters": 4.7,
+    "hp": 235,
+    "hp_basis": "SAE net",
+    "name": "4.7L / 287 V8",
+    "rpo": "PowerTech 4.7",
+    "common_name": "4.7 PowerTech SOHC V8",
+    "trims": [
+     "standard"
+    ],
+    "nhra": false,
+    "sources": [
+     {
+      "name": "EPA fueleconomy.gov vehicle data",
+      "url": "https://www.fueleconomy.gov/feg/download.shtml",
+      "says": "2002 Durango: 4.7 L 8-cyl, 2WD and 4WD"
+     },
+     {
+      "name": "Wikipedia - Dodge Durango",
+      "url": "https://en.wikipedia.org/wiki/Dodge_Durango",
+      "says": "4.7L PowerTech V8 2000-2003, 235 hp"
+     },
+     {
+      "name": "Consumer Guide - 1998-03 Dodge Durango used-car review",
+      "url": "https://consumerguide.com/used/1998-03-dodge-durango/",
+      "says": "4.7 V8, 235 horsepower"
+     },
+     {
+      "name": "MotorWeek - 2002 Dodge Durango R/T road test",
+      "url": "https://www.motorweek.org/reviews/road_tests/2002_dodge_durango_r_t_program_2110",
+      "says": "R/T's 5.9 compared with the 4.7-liter version tested earlier"
+     }
+    ],
+    "independent_sources": 4,
+    "status": "three_sources_not_nhra"
+   },
+   {
+    "gen": "gen1",
+    "cid": 360,
+    "liters": 5.9,
+    "hp": 245,
+    "hp_basis": "SAE net",
+    "name": "5.9L / 360 V8",
+    "rpo": "Magnum 5.9",
+    "common_name": "5.9 Magnum V8",
+    "trims": [
+     "optional (SLT/SLT Plus)",
+     "standard R/T"
+    ],
+    "nhra": false,
+    "sources": [
+     {
+      "name": "EPA fueleconomy.gov vehicle data",
+      "url": "https://www.fueleconomy.gov/feg/download.shtml",
+      "says": "2002 Durango: 5.9 L 8-cyl"
+     },
+     {
+      "name": "Wikipedia - Dodge Durango",
+      "url": "https://en.wikipedia.org/wiki/Dodge_Durango",
+      "says": "5.9L Magnum V8 1998-2003: 245 hp; listed 250 hp for 2000-2003"
+     },
+     {
+      "name": "Consumer Guide - 1998-03 Dodge Durango used-car review",
+      "url": "https://consumerguide.com/used/1998-03-dodge-durango/",
+      "says": "optional 5.9-liter V8, 245 horsepower, throughout the generation"
+     },
+     {
+      "name": "MotorWeek - 2002 Dodge Durango R/T road test",
+      "url": "https://www.motorweek.org/reviews/road_tests/2002_dodge_durango_r_t_program_2110",
+      "says": "2002 R/T: 5.9-liter Magnum V8, 245 hp, 335 lb-ft"
+     }
+    ],
+    "independent_sources": 4,
+    "status": "three_sources_not_nhra",
+    "note": "Optional. Wikipedia lists 250 hp for 2000-2003; Consumer Guide, Auto123 (2000) and MotorWeek (2002 R/T) give 245. Recorded 245."
+   },
+   {
+    "gen": "gen1",
+    "cid": 360,
+    "liters": 5.9,
+    "hp": 250,
+    "hp_basis": "SAE net",
+    "name": "5.9L / 360 V8 (R/T)",
+    "rpo": "Magnum 5.9",
+    "common_name": "5.9 Magnum V8 (R/T tune)",
+    "trims": [
+     "R/T (4WD)"
+    ],
+    "nhra": false,
+    "sources": [
+     {
+      "name": "Wikipedia - Dodge Durango",
+      "url": "https://en.wikipedia.org/wiki/Dodge_Durango",
+      "says": "R/T: performance-tuned 5.9 L Magnum V8; 5.9 rated 250 hp / 345 lb-ft 2000-2003"
+     },
+     {
+      "name": "Autotrader.ca research - 2003 Dodge Durango trims",
+      "url": "https://www.autotrader.ca/research/dodge/durango/2003/",
+      "says": "2003 R/T 5.9: 245-250 hp"
+     },
+     {
+      "name": "MotorWeek - 2002 Dodge Durango R/T road test",
+      "url": "https://www.motorweek.org/reviews/road_tests/2002_dodge_durango_r_t_program_2110",
+      "says": "2002 R/T: 245 hp and 335 lb-ft"
+     },
+     {
+      "name": "Consumer Guide - 1998-03 Dodge Durango used-car review",
+      "url": "https://consumerguide.com/used/1998-03-dodge-durango/",
+      "says": "R/T featured the 5.9-liter engine (from 2001)"
+     }
+    ],
+    "independent_sources": 4,
+    "status": "disputed",
+    "note": "Same engine as the optional 5.9 with revised ECU tune and freer exhaust. R/T rating disputed: 250 hp/345 lb-ft (Wikipedia, Autotrader.ca upper figure) vs 245/335 (MotorWeek, Consumer Guide). No factory sheet found. Wikipedia dates the R/T from 2000, Consumer Guide from 2001; recorded from 2001."
+   }
+  ],
+  "2003": [
+   {
+    "gen": "gen1",
+    "cid": 287,
+    "liters": 4.7,
+    "hp": 235,
+    "hp_basis": "SAE net",
+    "name": "4.7L / 287 V8",
+    "rpo": "PowerTech 4.7",
+    "common_name": "4.7 PowerTech SOHC V8",
+    "trims": [
+     "standard"
+    ],
+    "nhra": false,
+    "sources": [
+     {
+      "name": "EPA fueleconomy.gov vehicle data",
+      "url": "https://www.fueleconomy.gov/feg/download.shtml",
+      "says": "2003 Durango: 4.7 L 8-cyl, 2WD and 4WD"
+     },
+     {
+      "name": "Wikipedia - Dodge Durango",
+      "url": "https://en.wikipedia.org/wiki/Dodge_Durango",
+      "says": "4.7L PowerTech V8 2000-2003, 235 hp"
+     },
+     {
+      "name": "Consumer Guide - 1998-03 Dodge Durango used-car review",
+      "url": "https://consumerguide.com/used/1998-03-dodge-durango/",
+      "says": "4.7 V8, 235 horsepower"
+     },
+     {
+      "name": "Kelley Blue Book - 2003 Dodge Durango review/specs",
+      "url": "https://www.kbb.com/dodge/durango/2003/",
+      "says": "2003: V8 4.7 L, 235 @ 4800 rpm"
+     }
+    ],
+    "independent_sources": 4,
+    "status": "three_sources_not_nhra",
+    "note": "Autotrader.ca's 2003 trim data shows 230 hp; not supported elsewhere."
+   },
+   {
+    "gen": "gen1",
+    "cid": 360,
+    "liters": 5.9,
+    "hp": 245,
+    "hp_basis": "SAE net",
+    "name": "5.9L / 360 V8",
+    "rpo": "Magnum 5.9",
+    "common_name": "5.9 Magnum V8",
+    "trims": [
+     "optional (SLT/SLT Plus)",
+     "standard R/T"
+    ],
+    "nhra": false,
+    "sources": [
+     {
+      "name": "EPA fueleconomy.gov vehicle data",
+      "url": "https://www.fueleconomy.gov/feg/download.shtml",
+      "says": "2003 Durango: 5.9 L 8-cyl"
+     },
+     {
+      "name": "Wikipedia - Dodge Durango",
+      "url": "https://en.wikipedia.org/wiki/Dodge_Durango",
+      "says": "5.9L Magnum V8 1998-2003: 245 hp; listed 250 hp for 2000-2003"
+     },
+     {
+      "name": "Consumer Guide - 1998-03 Dodge Durango used-car review",
+      "url": "https://consumerguide.com/used/1998-03-dodge-durango/",
+      "says": "optional 5.9-liter V8, 245 horsepower, throughout the generation"
+     },
+     {
+      "name": "Kelley Blue Book - 2003 Dodge Durango review/specs",
+      "url": "https://www.kbb.com/dodge/durango/2003/",
+      "says": "2003: 5.9L V8 offered (R/T)"
+     }
+    ],
+    "independent_sources": 4,
+    "status": "three_sources_not_nhra",
+    "note": "Optional. Wikipedia lists 250 hp for 2000-2003; Consumer Guide, Auto123 (2000) and MotorWeek (2002 R/T) give 245. Recorded 245."
+   },
+   {
+    "gen": "gen1",
+    "cid": 360,
+    "liters": 5.9,
+    "hp": 250,
+    "hp_basis": "SAE net",
+    "name": "5.9L / 360 V8 (R/T)",
+    "rpo": "Magnum 5.9",
+    "common_name": "5.9 Magnum V8 (R/T tune)",
+    "trims": [
+     "R/T (4WD)"
+    ],
+    "nhra": false,
+    "sources": [
+     {
+      "name": "Wikipedia - Dodge Durango",
+      "url": "https://en.wikipedia.org/wiki/Dodge_Durango",
+      "says": "R/T: performance-tuned 5.9 L Magnum V8; 5.9 rated 250 hp / 345 lb-ft 2000-2003"
+     },
+     {
+      "name": "Autotrader.ca research - 2003 Dodge Durango trims",
+      "url": "https://www.autotrader.ca/research/dodge/durango/2003/",
+      "says": "2003 R/T 5.9: 245-250 hp"
+     },
+     {
+      "name": "MotorWeek - 2002 Dodge Durango R/T road test",
+      "url": "https://www.motorweek.org/reviews/road_tests/2002_dodge_durango_r_t_program_2110",
+      "says": "2002 R/T: 245 hp and 335 lb-ft"
+     },
+     {
+      "name": "Consumer Guide - 1998-03 Dodge Durango used-car review",
+      "url": "https://consumerguide.com/used/1998-03-dodge-durango/",
+      "says": "R/T featured the 5.9-liter engine (from 2001)"
+     }
+    ],
+    "independent_sources": 4,
+    "status": "disputed",
+    "note": "Same engine as the optional 5.9 with revised ECU tune and freer exhaust. R/T rating disputed: 250 hp/345 lb-ft (Wikipedia, Autotrader.ca upper figure) vs 245/335 (MotorWeek, Consumer Guide). No factory sheet found. Wikipedia dates the R/T from 2000, Consumer Guide from 2001; recorded from 2001."
+   }
+  ],
+  "2004": [
+   {
+    "gen": "gen2",
+    "cid": 226,
+    "liters": 3.7,
+    "hp": 210,
+    "hp_basis": "SAE net",
+    "name": "3.7L / 226 V6",
+    "rpo": "PowerTech 3.7",
+    "common_name": "3.7 PowerTech (Magnum) V6",
+    "trims": [
+     "base, 2WD only"
+    ],
+    "nhra": false,
+    "sources": [
+     {
+      "name": "Stellantis Media - 2004 Dodge Durango Specifications",
+      "url": "https://media.stellantisnorthamerica.com/newsrelease.do?id=412&fIId=43",
+      "says": "2004: 3.7-liter V-6, 210 hp"
+     },
+     {
+      "name": "EPA fueleconomy.gov vehicle data",
+      "url": "https://www.fueleconomy.gov/feg/download.shtml",
+      "says": "2004 Durango: 3.7 L 6-cyl, 2WD only"
+     },
+     {
+      "name": "Wikipedia - Dodge Durango",
+      "url": "https://en.wikipedia.org/wiki/Dodge_Durango",
+      "says": "3.7L Magnum V6 2004-2009, 210 hp"
+     },
+     {
+      "name": "Consumer Guide - 2004-09 Dodge Durango used-car review",
+      "url": "https://consumerguide.com/used/2004-09-dodge-durango/",
+      "says": "3.7-liter V6, 210 horsepower"
+     }
+    ],
+    "independent_sources": 4,
+    "status": "three_sources_not_nhra",
+    "note": "EPA lists the V6 in 2WD Durangos only."
+   },
+   {
+    "gen": "gen2",
+    "cid": 287,
+    "liters": 4.7,
+    "hp": 230,
+    "hp_basis": "SAE net",
+    "name": "4.7L / 287 V8",
+    "rpo": "PowerTech 4.7",
+    "common_name": "4.7 PowerTech SOHC V8",
+    "trims": [
+     "optional"
+    ],
+    "nhra": false,
+    "sources": [
+     {
+      "name": "Stellantis Media - 2004 Dodge Durango Specifications",
+      "url": "https://media.stellantisnorthamerica.com/newsrelease.do?id=412&fIId=43",
+      "says": "2004: 4.7-liter V-8, 230 hp"
+     },
+     {
+      "name": "EPA fueleconomy.gov vehicle data",
+      "url": "https://www.fueleconomy.gov/feg/download.shtml",
+      "says": "2004 Durango: 4.7 L 8-cyl, 2WD and 4WD"
+     },
+     {
+      "name": "Wikipedia - Dodge Durango",
+      "url": "https://en.wikipedia.org/wiki/Dodge_Durango",
+      "says": "4.7L V8 2004-2007, 235 hp"
+     },
+     {
+      "name": "Consumer Guide - 2004-09 Dodge Durango used-car review",
+      "url": "https://consumerguide.com/used/2004-09-dodge-durango/",
+      "says": "2004-07: 4.7-liter V8, 230 horsepower (2008 text: replaced a 235-hp 4.7)"
+     }
+    ],
+    "independent_sources": 4,
+    "status": "three_sources_not_nhra",
+    "note": "Dodge 2004/2005/2007 material and Consumer Guide give 230 hp; Wikipedia 235 (Dodge 2005 also prints '(175 kW)', which equals 235 hp). Recorded 230 (factory)."
+   },
+   {
+    "gen": "gen2",
+    "cid": 345,
+    "liters": 5.7,
+    "hp": 335,
+    "hp_basis": "SAE net",
+    "name": "5.7L / 345 V8",
+    "rpo": "Hemi 5.7",
+    "common_name": "5.7 Hemi",
+    "trims": [
+     "optional"
+    ],
+    "nhra": false,
+    "sources": [
+     {
+      "name": "Stellantis Media - 2004 Dodge Durango Specifications",
+      "url": "https://media.stellantisnorthamerica.com/newsrelease.do?id=412&fIId=43",
+      "says": "2004: 5.7-liter HEMI, 335 hp"
+     },
+     {
+      "name": "EPA fueleconomy.gov vehicle data",
+      "url": "https://www.fueleconomy.gov/feg/download.shtml",
+      "says": "2004 Durango: 5.7 L 8-cyl, 2WD and 4WD"
+     },
+     {
+      "name": "Wikipedia - Dodge Durango",
+      "url": "https://en.wikipedia.org/wiki/Dodge_Durango",
+      "says": "5.7L Hemi V8 2004-2008, 335 hp"
+     },
+     {
+      "name": "Consumer Guide - 2004-09 Dodge Durango used-car review",
+      "url": "https://consumerguide.com/used/2004-09-dodge-durango/",
+      "says": "5.7-liter Hemi V8, 335 horsepower"
+     }
+    ],
+    "independent_sources": 4,
+    "status": "three_sources_not_nhra"
+   }
+  ],
+  "2005": [
+   {
+    "gen": "gen2",
+    "cid": 226,
+    "liters": 3.7,
+    "hp": 210,
+    "hp_basis": "SAE net",
+    "name": "3.7L / 226 V6",
+    "rpo": "PowerTech 3.7",
+    "common_name": "3.7 PowerTech (Magnum) V6",
+    "trims": [
+     "base, 2WD only"
+    ],
+    "nhra": false,
+    "sources": [
+     {
+      "name": "Stellantis Media - Dodge Durango What's New for 2005",
+      "url": "https://media.stellantisnorthamerica.com/newsrelease.do?id=457&fIId=123&mid=5",
+      "says": "2005: 3.7-liter V-6, 210 hp"
+     },
+     {
+      "name": "EPA fueleconomy.gov vehicle data",
+      "url": "https://www.fueleconomy.gov/feg/download.shtml",
+      "says": "2005 Durango: 3.7 L 6-cyl, 2WD only"
+     },
+     {
+      "name": "Wikipedia - Dodge Durango",
+      "url": "https://en.wikipedia.org/wiki/Dodge_Durango",
+      "says": "3.7L Magnum V6 2004-2009, 210 hp"
+     },
+     {
+      "name": "Consumer Guide - 2004-09 Dodge Durango used-car review",
+      "url": "https://consumerguide.com/used/2004-09-dodge-durango/",
+      "says": "3.7-liter V6, 210 horsepower"
+     }
+    ],
+    "independent_sources": 4,
+    "status": "three_sources_not_nhra",
+    "note": "EPA lists the V6 in 2WD Durangos only."
+   },
+   {
+    "gen": "gen2",
+    "cid": 287,
+    "liters": 4.7,
+    "hp": 230,
+    "hp_basis": "SAE net",
+    "name": "4.7L / 287 V8",
+    "rpo": "PowerTech 4.7",
+    "common_name": "4.7 PowerTech SOHC V8",
+    "trims": [
+     "optional"
+    ],
+    "nhra": false,
+    "sources": [
+     {
+      "name": "Stellantis Media - Dodge Durango What's New for 2005",
+      "url": "https://media.stellantisnorthamerica.com/newsrelease.do?id=457&fIId=123&mid=5",
+      "says": "2005: 4.7-liter V-8, 230 hp"
+     },
+     {
+      "name": "EPA fueleconomy.gov vehicle data",
+      "url": "https://www.fueleconomy.gov/feg/download.shtml",
+      "says": "2005 Durango: 4.7 L 8-cyl, 2WD and 4WD"
+     },
+     {
+      "name": "Wikipedia - Dodge Durango",
+      "url": "https://en.wikipedia.org/wiki/Dodge_Durango",
+      "says": "4.7L V8 2004-2007, 235 hp"
+     },
+     {
+      "name": "Consumer Guide - 2004-09 Dodge Durango used-car review",
+      "url": "https://consumerguide.com/used/2004-09-dodge-durango/",
+      "says": "2004-07: 4.7-liter V8, 230 horsepower (2008 text: replaced a 235-hp 4.7)"
+     }
+    ],
+    "independent_sources": 4,
+    "status": "three_sources_not_nhra",
+    "note": "Dodge 2004/2005/2007 material and Consumer Guide give 230 hp; Wikipedia 235 (Dodge 2005 also prints '(175 kW)', which equals 235 hp). Recorded 230 (factory)."
+   },
+   {
+    "gen": "gen2",
+    "cid": 345,
+    "liters": 5.7,
+    "hp": 335,
+    "hp_basis": "SAE net",
+    "name": "5.7L / 345 V8",
+    "rpo": "Hemi 5.7",
+    "common_name": "5.7 Hemi",
+    "trims": [
+     "optional"
+    ],
+    "nhra": false,
+    "sources": [
+     {
+      "name": "Stellantis Media - Dodge Durango What's New for 2005",
+      "url": "https://media.stellantisnorthamerica.com/newsrelease.do?id=457&fIId=123&mid=5",
+      "says": "2005: 5.7-liter HEMI, 335 hp"
+     },
+     {
+      "name": "EPA fueleconomy.gov vehicle data",
+      "url": "https://www.fueleconomy.gov/feg/download.shtml",
+      "says": "2005 Durango: 5.7 L 8-cyl, 2WD and 4WD"
+     },
+     {
+      "name": "Wikipedia - Dodge Durango",
+      "url": "https://en.wikipedia.org/wiki/Dodge_Durango",
+      "says": "5.7L Hemi V8 2004-2008, 335 hp"
+     },
+     {
+      "name": "Consumer Guide - 2004-09 Dodge Durango used-car review",
+      "url": "https://consumerguide.com/used/2004-09-dodge-durango/",
+      "says": "5.7-liter Hemi V8, 335 horsepower"
+     }
+    ],
+    "independent_sources": 4,
+    "status": "three_sources_not_nhra",
+    "note": "MDS cylinder deactivation from 2005."
+   }
+  ],
+  "2006": [
+   {
+    "gen": "gen2",
+    "cid": 226,
+    "liters": 3.7,
+    "hp": 210,
+    "hp_basis": "SAE net",
+    "name": "3.7L / 226 V6",
+    "rpo": "PowerTech 3.7",
+    "common_name": "3.7 PowerTech (Magnum) V6",
+    "trims": [
+     "base, 2WD only"
+    ],
+    "nhra": false,
+    "sources": [
+     {
+      "name": "EPA fueleconomy.gov vehicle data",
+      "url": "https://www.fueleconomy.gov/feg/download.shtml",
+      "says": "2006 Durango: 3.7 L 6-cyl, 2WD only"
+     },
+     {
+      "name": "Wikipedia - Dodge Durango",
+      "url": "https://en.wikipedia.org/wiki/Dodge_Durango",
+      "says": "3.7L Magnum V6 2004-2009, 210 hp"
+     },
+     {
+      "name": "Consumer Guide - 2004-09 Dodge Durango used-car review",
+      "url": "https://consumerguide.com/used/2004-09-dodge-durango/",
+      "says": "3.7-liter V6, 210 horsepower"
+     }
+    ],
+    "independent_sources": 3,
+    "status": "three_sources_not_nhra",
+    "note": "EPA lists the V6 in 2WD Durangos only."
+   },
+   {
+    "gen": "gen2",
+    "cid": 287,
+    "liters": 4.7,
+    "hp": 230,
+    "hp_basis": "SAE net",
+    "name": "4.7L / 287 V8",
+    "rpo": "PowerTech 4.7",
+    "common_name": "4.7 PowerTech SOHC V8",
+    "trims": [
+     "optional",
+     "E85 FFV available"
+    ],
+    "nhra": false,
+    "sources": [
+     {
+      "name": "EPA fueleconomy.gov vehicle data",
+      "url": "https://www.fueleconomy.gov/feg/download.shtml",
+      "says": "2006 Durango: 4.7 L 8-cyl, 2WD and 4WD incl. FFV"
+     },
+     {
+      "name": "Wikipedia - Dodge Durango",
+      "url": "https://en.wikipedia.org/wiki/Dodge_Durango",
+      "says": "4.7L V8 2004-2007, 235 hp"
+     },
+     {
+      "name": "Consumer Guide - 2004-09 Dodge Durango used-car review",
+      "url": "https://consumerguide.com/used/2004-09-dodge-durango/",
+      "says": "2004-07: 4.7-liter V8, 230 horsepower (2008 text: replaced a 235-hp 4.7)"
+     }
+    ],
+    "independent_sources": 3,
+    "status": "three_sources_not_nhra",
+    "note": "Dodge 2004/2005/2007 material and Consumer Guide give 230 hp; Wikipedia 235 (Dodge 2005 also prints '(175 kW)', which equals 235 hp). Recorded 230 (factory)."
+   },
+   {
+    "gen": "gen2",
+    "cid": 345,
+    "liters": 5.7,
+    "hp": 335,
+    "hp_basis": "SAE net",
+    "name": "5.7L / 345 V8",
+    "rpo": "Hemi 5.7",
+    "common_name": "5.7 Hemi",
+    "trims": [
+     "optional"
+    ],
+    "nhra": false,
+    "sources": [
+     {
+      "name": "EPA fueleconomy.gov vehicle data",
+      "url": "https://www.fueleconomy.gov/feg/download.shtml",
+      "says": "2006 Durango: 5.7 L 8-cyl, 2WD and 4WD"
+     },
+     {
+      "name": "Wikipedia - Dodge Durango",
+      "url": "https://en.wikipedia.org/wiki/Dodge_Durango",
+      "says": "5.7L Hemi V8 2004-2008, 335 hp"
+     },
+     {
+      "name": "Consumer Guide - 2004-09 Dodge Durango used-car review",
+      "url": "https://consumerguide.com/used/2004-09-dodge-durango/",
+      "says": "5.7-liter Hemi V8, 335 horsepower"
+     }
+    ],
+    "independent_sources": 3,
+    "status": "three_sources_not_nhra",
+    "note": "MDS cylinder deactivation from 2005."
+   }
+  ],
+  "2007": [
+   {
+    "gen": "gen2",
+    "cid": 226,
+    "liters": 3.7,
+    "hp": 210,
+    "hp_basis": "SAE net",
+    "name": "3.7L / 226 V6",
+    "rpo": "PowerTech 3.7",
+    "common_name": "3.7 PowerTech (Magnum) V6",
+    "trims": [
+     "base, 2WD only"
+    ],
+    "nhra": false,
+    "sources": [
+     {
+      "name": "Stellantis Media - 2007 Dodge Durango: Bold New Look",
+      "url": "https://media.stellantisnorthamerica.com/newsrelease.do?id=4980",
+      "says": "2007: 3.7-liter V-6, 210 hp"
+     },
+     {
+      "name": "EPA fueleconomy.gov vehicle data",
+      "url": "https://www.fueleconomy.gov/feg/download.shtml",
+      "says": "2007 Durango: 3.7 L 6-cyl, 2WD only"
+     },
+     {
+      "name": "Wikipedia - Dodge Durango",
+      "url": "https://en.wikipedia.org/wiki/Dodge_Durango",
+      "says": "3.7L Magnum V6 2004-2009, 210 hp"
+     },
+     {
+      "name": "Consumer Guide - 2004-09 Dodge Durango used-car review",
+      "url": "https://consumerguide.com/used/2004-09-dodge-durango/",
+      "says": "3.7-liter V6, 210 horsepower"
+     }
+    ],
+    "independent_sources": 4,
+    "status": "three_sources_not_nhra",
+    "note": "EPA lists the V6 in 2WD Durangos only."
+   },
+   {
+    "gen": "gen2",
+    "cid": 287,
+    "liters": 4.7,
+    "hp": 230,
+    "hp_basis": "SAE net",
+    "name": "4.7L / 287 V8",
+    "rpo": "PowerTech 4.7",
+    "common_name": "4.7 PowerTech SOHC V8",
+    "trims": [
+     "optional",
+     "E85 FFV available"
+    ],
+    "nhra": false,
+    "sources": [
+     {
+      "name": "Stellantis Media - 2007 Dodge Durango: Bold New Look",
+      "url": "https://media.stellantisnorthamerica.com/newsrelease.do?id=4980",
+      "says": "2007: 4.7-liter V-8, 230 hp"
+     },
+     {
+      "name": "EPA fueleconomy.gov vehicle data",
+      "url": "https://www.fueleconomy.gov/feg/download.shtml",
+      "says": "2007 Durango: 4.7 L 8-cyl, 2WD and 4WD incl. FFV"
+     },
+     {
+      "name": "Wikipedia - Dodge Durango",
+      "url": "https://en.wikipedia.org/wiki/Dodge_Durango",
+      "says": "4.7L V8 2004-2007, 235 hp"
+     },
+     {
+      "name": "Consumer Guide - 2004-09 Dodge Durango used-car review",
+      "url": "https://consumerguide.com/used/2004-09-dodge-durango/",
+      "says": "2004-07: 4.7-liter V8, 230 horsepower (2008 text: replaced a 235-hp 4.7)"
+     }
+    ],
+    "independent_sources": 4,
+    "status": "three_sources_not_nhra",
+    "note": "Dodge 2004/2005/2007 material and Consumer Guide give 230 hp; Wikipedia 235 (Dodge 2005 also prints '(175 kW)', which equals 235 hp). Recorded 230 (factory)."
+   },
+   {
+    "gen": "gen2",
+    "cid": 345,
+    "liters": 5.7,
+    "hp": 335,
+    "hp_basis": "SAE net",
+    "name": "5.7L / 345 V8",
+    "rpo": "Hemi 5.7",
+    "common_name": "5.7 Hemi",
+    "trims": [
+     "optional"
+    ],
+    "nhra": false,
+    "sources": [
+     {
+      "name": "Stellantis Media - 2007 Dodge Durango: Bold New Look",
+      "url": "https://media.stellantisnorthamerica.com/newsrelease.do?id=4980",
+      "says": "2007: 5.7-liter HEMI, 335 hp"
+     },
+     {
+      "name": "EPA fueleconomy.gov vehicle data",
+      "url": "https://www.fueleconomy.gov/feg/download.shtml",
+      "says": "2007 Durango: 5.7 L 8-cyl, 2WD and 4WD"
+     },
+     {
+      "name": "Wikipedia - Dodge Durango",
+      "url": "https://en.wikipedia.org/wiki/Dodge_Durango",
+      "says": "5.7L Hemi V8 2004-2008, 335 hp"
+     },
+     {
+      "name": "Consumer Guide - 2004-09 Dodge Durango used-car review",
+      "url": "https://consumerguide.com/used/2004-09-dodge-durango/",
+      "says": "5.7-liter Hemi V8, 335 horsepower"
+     }
+    ],
+    "independent_sources": 4,
+    "status": "three_sources_not_nhra",
+    "note": "MDS cylinder deactivation from 2005."
+   }
+  ],
+  "2008": [
+   {
+    "gen": "gen2",
+    "cid": 226,
+    "liters": 3.7,
+    "hp": 210,
+    "hp_basis": "SAE net",
+    "name": "3.7L / 226 V6",
+    "rpo": "PowerTech 3.7",
+    "common_name": "3.7 PowerTech (Magnum) V6",
+    "trims": [
+     "base, 2WD only"
+    ],
+    "nhra": false,
+    "sources": [
+     {
+      "name": "Stellantis Media - 2008 Dodge Durango's New 4.7-liter V-8",
+      "url": "https://media.stellantisnorthamerica.com/newsrelease.do?id=7228&mid=287",
+      "says": "2008: 3.7-liter V-6, 210 hp"
+     },
+     {
+      "name": "EPA fueleconomy.gov vehicle data",
+      "url": "https://www.fueleconomy.gov/feg/download.shtml",
+      "says": "2008 Durango: 3.7 L 6-cyl, 2WD only"
+     },
+     {
+      "name": "Wikipedia - Dodge Durango",
+      "url": "https://en.wikipedia.org/wiki/Dodge_Durango",
+      "says": "3.7L Magnum V6 2004-2009, 210 hp"
+     },
+     {
+      "name": "Consumer Guide - 2004-09 Dodge Durango used-car review",
+      "url": "https://consumerguide.com/used/2004-09-dodge-durango/",
+      "says": "3.7-liter V6, 210 horsepower"
+     }
+    ],
+    "independent_sources": 4,
+    "status": "three_sources_not_nhra",
+    "note": "EPA lists the V6 in 2WD Durangos only."
+   },
+   {
+    "gen": "gen2",
+    "cid": 287,
+    "liters": 4.7,
+    "hp": 303,
+    "hp_basis": "SAE net",
+    "name": "4.7L / 287 V8",
+    "rpo": "PowerTech 4.7 (2008 redesign)",
+    "common_name": "4.7 V8 (high-output, flex-fuel)",
+    "trims": [
+     "optional",
+     "E85 FFV"
+    ],
+    "nhra": false,
+    "sources": [
+     {
+      "name": "Stellantis Media - 2008 Dodge Durango's New 4.7-liter V-8",
+      "url": "https://media.stellantisnorthamerica.com/newsrelease.do?id=7228&mid=287",
+      "says": "4.7-liter V-8, 303 hp (226 kW), E85-capable"
+     },
+     {
+      "name": "EPA fueleconomy.gov vehicle data",
+      "url": "https://www.fueleconomy.gov/feg/download.shtml",
+      "says": "2008 Durango: 4.7 L 8-cyl, 2WD and 4WD, FFV"
+     },
+     {
+      "name": "Wikipedia - Dodge Durango",
+      "url": "https://en.wikipedia.org/wiki/Dodge_Durango",
+      "says": "4.7L V8 2008-2009, 303 hp"
+     },
+     {
+      "name": "Consumer Guide - 2004-09 Dodge Durango used-car review",
+      "url": "https://consumerguide.com/used/2004-09-dodge-durango/",
+      "says": "more powerful 303-hp 4.7 V8 replaced 235-hp 4.7"
+     },
+     {
+      "name": "Kelley Blue Book - 2008 Dodge Durango review/specs",
+      "url": "https://www.kbb.com/dodge/durango/2008/",
+      "says": "2008: V8 Flex Fuel 4.7 L, 303 @ 5650 rpm"
+     }
+    ],
+    "independent_sources": 5,
+    "status": "three_sources_not_nhra",
+    "note": "Redesigned 4.7 for 2008."
+   },
+   {
+    "gen": "gen2",
+    "cid": 345,
+    "liters": 5.7,
+    "hp": 335,
+    "hp_basis": "SAE net",
+    "name": "5.7L / 345 V8",
+    "rpo": "Hemi 5.7",
+    "common_name": "5.7 Hemi",
+    "trims": [
+     "optional"
+    ],
+    "nhra": false,
+    "sources": [
+     {
+      "name": "EPA fueleconomy.gov vehicle data",
+      "url": "https://www.fueleconomy.gov/feg/download.shtml",
+      "says": "2008 Durango: 5.7 L 8-cyl, 2WD and 4WD"
+     },
+     {
+      "name": "Wikipedia - Dodge Durango",
+      "url": "https://en.wikipedia.org/wiki/Dodge_Durango",
+      "says": "5.7L Hemi V8 2004-2008, 335 hp"
+     },
+     {
+      "name": "Consumer Guide - 2004-09 Dodge Durango used-car review",
+      "url": "https://consumerguide.com/used/2004-09-dodge-durango/",
+      "says": "5.7-liter Hemi V8, 335 horsepower"
+     },
+     {
+      "name": "Kelley Blue Book - 2008 Dodge Durango review/specs",
+      "url": "https://www.kbb.com/dodge/durango/2008/",
+      "says": "2008: 5.7 V8 HEMI 335 hp @ 5200 rpm"
+     },
+     {
+      "name": "Stellantis Media - 2008 Dodge Durango's New 4.7-liter V-8",
+      "url": "https://media.stellantisnorthamerica.com/newsrelease.do?id=7228&mid=287",
+      "says": "2008: 5.7-liter HEMI 330 hp (246 kW), 375 lb-ft"
+     }
+    ],
+    "independent_sources": 5,
+    "status": "three_sources_not_nhra",
+    "note": "MDS cylinder deactivation from 2005. Dodge's 2008 4.7 release lists the Hemi at 330 hp/375 lb-ft; Wikipedia, Consumer Guide and KBB give 335. Recorded 335."
+   }
+  ],
+  "2009": [
+   {
+    "gen": "gen2",
+    "cid": 226,
+    "liters": 3.7,
+    "hp": 210,
+    "hp_basis": "SAE net",
+    "name": "3.7L / 226 V6",
+    "rpo": "PowerTech 3.7",
+    "common_name": "3.7 PowerTech (Magnum) V6",
+    "trims": [
+     "base, 2WD only"
+    ],
+    "nhra": false,
+    "sources": [
+     {
+      "name": "Stellantis Media - 2009 Dodge Durango Offers Hybrid Efficiency",
+      "url": "https://media.stellantisnorthamerica.com/newsrelease.do?id=8094",
+      "says": "2009: 3.7-liter V-6, 210 hp"
+     },
+     {
+      "name": "EPA fueleconomy.gov vehicle data",
+      "url": "https://www.fueleconomy.gov/feg/download.shtml",
+      "says": "2009 Durango: 3.7 L 6-cyl, 2WD only"
+     },
+     {
+      "name": "Wikipedia - Dodge Durango",
+      "url": "https://en.wikipedia.org/wiki/Dodge_Durango",
+      "says": "3.7L Magnum V6 2004-2009, 210 hp"
+     },
+     {
+      "name": "Consumer Guide - 2004-09 Dodge Durango used-car review",
+      "url": "https://consumerguide.com/used/2004-09-dodge-durango/",
+      "says": "3.7-liter V6, 210 horsepower"
+     }
+    ],
+    "independent_sources": 4,
+    "status": "three_sources_not_nhra",
+    "note": "EPA lists the V6 in 2WD Durangos only."
+   },
+   {
+    "gen": "gen2",
+    "cid": 287,
+    "liters": 4.7,
+    "hp": 303,
+    "hp_basis": "SAE net",
+    "name": "4.7L / 287 V8",
+    "rpo": "PowerTech 4.7 (2008 redesign)",
+    "common_name": "4.7 V8 (high-output, flex-fuel)",
+    "trims": [
+     "optional",
+     "E85 FFV"
+    ],
+    "nhra": false,
+    "sources": [
+     {
+      "name": "Stellantis Media - 2009 Dodge Durango Offers Hybrid Efficiency",
+      "url": "https://media.stellantisnorthamerica.com/newsrelease.do?id=8094",
+      "says": "4.7-liter V-8, 303 hp (226 kW), E85-capable"
+     },
+     {
+      "name": "EPA fueleconomy.gov vehicle data",
+      "url": "https://www.fueleconomy.gov/feg/download.shtml",
+      "says": "2009 Durango: 4.7 L 8-cyl, 2WD and 4WD, FFV"
+     },
+     {
+      "name": "Wikipedia - Dodge Durango",
+      "url": "https://en.wikipedia.org/wiki/Dodge_Durango",
+      "says": "4.7L V8 2008-2009, 303 hp"
+     },
+     {
+      "name": "Consumer Guide - 2004-09 Dodge Durango used-car review",
+      "url": "https://consumerguide.com/used/2004-09-dodge-durango/",
+      "says": "more powerful 303-hp 4.7 V8 replaced 235-hp 4.7"
+     },
+     {
+      "name": "Kelley Blue Book - 2009 Dodge Durango review/specs",
+      "url": "https://www.kbb.com/dodge/durango/2009/",
+      "says": "2009: V8 Flex Fuel 4.7 L, 303 @ 5650 rpm"
+     }
+    ],
+    "independent_sources": 5,
+    "status": "three_sources_not_nhra",
+    "note": "Redesigned 4.7 for 2008."
+   },
+   {
+    "gen": "gen2",
+    "cid": 345,
+    "liters": 5.7,
+    "hp": 376,
+    "hp_basis": "SAE net",
+    "name": "5.7L / 345 V8",
+    "rpo": "Hemi 5.7 VVT",
+    "common_name": "5.7 Hemi (VVT, MDS)",
+    "trims": [
+     "optional"
+    ],
+    "nhra": false,
+    "sources": [
+     {
+      "name": "Stellantis Media - 2009 Dodge Durango Offers Hybrid Efficiency",
+      "url": "https://media.stellantisnorthamerica.com/newsrelease.do?id=8094",
+      "says": "5.7-liter HEMI V-8, 376 hp (280 kW) and 401 lb-ft, MDS"
+     },
+     {
+      "name": "Wikipedia - Dodge Durango",
+      "url": "https://en.wikipedia.org/wiki/Dodge_Durango",
+      "says": "5.7L Hemi V8 (2009), 376 hp, 401 lb-ft"
+     },
+     {
+      "name": "EPA fueleconomy.gov vehicle data",
+      "url": "https://www.fueleconomy.gov/feg/download.shtml",
+      "says": "2009 Durango: 5.7 L 8-cyl, 2WD and 4WD"
+     },
+     {
+      "name": "Consumer Guide - 2004-09 Dodge Durango used-car review",
+      "url": "https://consumerguide.com/used/2004-09-dodge-durango/",
+      "says": "available Hemi boosted to 356 hp, a gain of 21"
+     },
+     {
+      "name": "Kelley Blue Book - 2009 Dodge Durango review/specs",
+      "url": "https://www.kbb.com/dodge/durango/2009/",
+      "says": "2009 Limited: V8 HEMI 5.7, 335 @ 5200 rpm (carryover figure)"
+     }
+    ],
+    "independent_sources": 5,
+    "status": "three_sources_not_nhra",
+    "note": "New VVT Hemi. Factory (376 hp = 280 kW, consistent) and Wikipedia agree; Consumer Guide prints 356, KBB shows the old 335. Recorded 376."
+   },
+   {
+    "gen": "gen2",
+    "cid": 345,
+    "liters": 5.7,
+    "hp": 385,
+    "hp_basis": "combined system (hybrid)",
+    "name": "5.7L / 345 V8 Two-Mode Hybrid",
+    "rpo": "Hemi 5.7 Hybrid",
+    "common_name": "Durango HEMI Hybrid",
+    "trims": [
+     "Limited HEV, 4WD only"
+    ],
+    "nhra": false,
+    "sources": [
+     {
+      "name": "Stellantis Media - 2009 Dodge Durango Offers Hybrid Efficiency",
+      "url": "https://media.stellantisnorthamerica.com/newsrelease.do?id=8094",
+      "says": "two-mode hybrid with 5.7 HEMI: total 385 hp (287 kW) and 380 lb-ft"
+     },
+     {
+      "name": "Stellantis Media - New 2009 Chrysler Aspen HEMI Hybrid and Dodge Durango HEMI Hybrid",
+      "url": "https://media.stellantisnorthamerica.com/newsrelease.do?id=7464&mid=195",
+      "says": "total system output 385 horsepower"
+     },
+     {
+      "name": "Guide Auto Web (The Car Guide) - 2009 Dodge Durango",
+      "url": "https://www.guideautoweb.com/en/makes/dodge/durango/2009/",
+      "says": "5.7 V8 coupled to two electric motors, combined 385 horsepower"
+     },
+     {
+      "name": "EPA fueleconomy.gov vehicle data",
+      "url": "https://www.fueleconomy.gov/feg/download.shtml",
+      "says": "2009 Durango: Durango HEV: 5.7 L 8-cyl Hybrid"
+     },
+     {
+      "name": "Wikipedia - Dodge Durango",
+      "url": "https://en.wikipedia.org/wiki/Dodge_Durango",
+      "says": "5.7L Hemi V8 Hybrid (2009): engine 360 hp plus electric motors 87 hp"
+     },
+     {
+      "name": "Consumer Guide - 2004-09 Dodge Durango used-car review",
+      "url": "https://consumerguide.com/used/2004-09-dodge-durango/",
+      "says": "gas/electric Hybrid model added for 2009: 5.7 V8 w/cylinder deactivation, electric drive motor, CVT"
+     }
+    ],
+    "independent_sources": 5,
+    "status": "three_sources_not_nhra",
+    "note": "hp = combined system rating (Dodge, Guide Auto Web). Engine-only figure unverified: Wikipedia 360 hp, KBB 345 hp @ 5300. Built only in late 2008 before Newark Assembly closed (Dec 2008); very low volume."
+   }
+  ],
+  "2011": [
+   {
+    "gen": "gen3",
+    "cid": 220,
+    "liters": 3.6,
+    "hp": 290,
+    "hp_basis": "SAE net",
+    "name": "3.6L / 220 V6",
+    "rpo": "Pentastar 3.6",
+    "common_name": "Pentastar V6",
+    "trims": [
+     "SXT",
+     "Crew/Limited",
+     "Citadel"
+    ],
+    "nhra": false,
+    "sources": [
+     {
+      "name": "Stellantis Media - 2011 Dodge Durango press kit",
+      "url": "https://media.stellantisnorthamerica.com/newsrelease.do?id=10265&fIId=10194&mid=287",
+      "says": "2011: 3.6 Pentastar V-6, 290 hp"
+     },
+     {
+      "name": "EPA fueleconomy.gov vehicle data",
+      "url": "https://www.fueleconomy.gov/feg/download.shtml",
+      "says": "2011 Durango: 3.6 L 6-cyl, FFV"
+     },
+     {
+      "name": "Wikipedia - Dodge Durango",
+      "url": "https://en.wikipedia.org/wiki/Dodge_Durango",
+      "says": "3.6L Pentastar V6 2011-present: 290 hp; 293 (single exhaust)/295 (dual exhaust) later"
+     },
+     {
+      "name": "Kelley Blue Book - 2011 Dodge Durango review/specs",
+      "url": "https://www.kbb.com/dodge/durango/2011/",
+      "says": "2011: 3.6 V6, 290 @ 6400 hp"
+     }
+    ],
+    "independent_sources": 4,
+    "status": "three_sources_not_nhra",
+    "note": "Flex-fuel (E85) per EPA."
+   },
+   {
+    "gen": "gen3",
+    "cid": 345,
+    "liters": 5.7,
+    "hp": 360,
+    "hp_basis": "SAE net",
+    "name": "5.7L / 345 V8",
+    "rpo": "Hemi 5.7 (VVT, MDS)",
+    "common_name": "5.7 Hemi",
+    "trims": [
+     "R/T",
+     "Citadel (optional)"
+    ],
+    "nhra": false,
+    "sources": [
+     {
+      "name": "Stellantis Media - 2011 Dodge Durango press kit",
+      "url": "https://media.stellantisnorthamerica.com/newsrelease.do?id=10265&fIId=10194&mid=287",
+      "says": "2011: 5.7 HEMI V-8, 360 hp, 390 lb-ft"
+     },
+     {
+      "name": "EPA fueleconomy.gov vehicle data",
+      "url": "https://www.fueleconomy.gov/feg/download.shtml",
+      "says": "2011 Durango: 5.7 L 8-cyl, RWD/AWD"
+     },
+     {
+      "name": "Wikipedia - Dodge Durango",
+      "url": "https://en.wikipedia.org/wiki/Dodge_Durango",
+      "says": "5.7L Hemi V8 2011-present, 360 hp @ 5150"
+     },
+     {
+      "name": "Kelley Blue Book - 2011 Dodge Durango review/specs",
+      "url": "https://www.kbb.com/dodge/durango/2011/",
+      "says": "2011: 5.7 V8, 360 hp"
+     }
+    ],
+    "independent_sources": 4,
+    "status": "three_sources_not_nhra"
+   }
+  ],
+  "2012": [
+   {
+    "gen": "gen3",
+    "cid": 220,
+    "liters": 3.6,
+    "hp": 290,
+    "hp_basis": "SAE net",
+    "name": "3.6L / 220 V6",
+    "rpo": "Pentastar 3.6",
+    "common_name": "Pentastar V6",
+    "trims": [
+     "SXT",
+     "Crew/Limited",
+     "Citadel"
+    ],
+    "nhra": false,
+    "sources": [
+     {
+      "name": "Stellantis Media - 2012 Dodge Durango press kit",
+      "url": "https://media.stellantisnorthamerica.com/newsrelease.do?id=11402&mid=287",
+      "says": "2012: 3.6 Pentastar V-6, 290 hp"
+     },
+     {
+      "name": "EPA fueleconomy.gov vehicle data",
+      "url": "https://www.fueleconomy.gov/feg/download.shtml",
+      "says": "2012 Durango: 3.6 L 6-cyl, FFV"
+     },
+     {
+      "name": "Wikipedia - Dodge Durango",
+      "url": "https://en.wikipedia.org/wiki/Dodge_Durango",
+      "says": "3.6L Pentastar V6 2011-present: 290 hp; 293 (single exhaust)/295 (dual exhaust) later"
+     },
+     {
+      "name": "Kelley Blue Book - 2012 Dodge Durango review/specs",
+      "url": "https://www.kbb.com/dodge/durango/2012/",
+      "says": "2012: 3.6 V6, 290 @ 6400 hp"
+     }
+    ],
+    "independent_sources": 4,
+    "status": "three_sources_not_nhra",
+    "note": "Flex-fuel (E85) per EPA."
+   },
+   {
+    "gen": "gen3",
+    "cid": 345,
+    "liters": 5.7,
+    "hp": 360,
+    "hp_basis": "SAE net",
+    "name": "5.7L / 345 V8",
+    "rpo": "Hemi 5.7 (VVT, MDS)",
+    "common_name": "5.7 Hemi",
+    "trims": [
+     "R/T",
+     "Citadel (optional)"
+    ],
+    "nhra": false,
+    "sources": [
+     {
+      "name": "Stellantis Media - 2012 Dodge Durango press kit",
+      "url": "https://media.stellantisnorthamerica.com/newsrelease.do?id=11402&mid=287",
+      "says": "2012: 5.7 HEMI V-8, 360 hp, 390 lb-ft"
+     },
+     {
+      "name": "EPA fueleconomy.gov vehicle data",
+      "url": "https://www.fueleconomy.gov/feg/download.shtml",
+      "says": "2012 Durango: 5.7 L 8-cyl, RWD/AWD"
+     },
+     {
+      "name": "Wikipedia - Dodge Durango",
+      "url": "https://en.wikipedia.org/wiki/Dodge_Durango",
+      "says": "5.7L Hemi V8 2011-present, 360 hp @ 5150"
+     },
+     {
+      "name": "Kelley Blue Book - 2012 Dodge Durango review/specs",
+      "url": "https://www.kbb.com/dodge/durango/2012/",
+      "says": "2012: 5.7 V8, 360 hp"
+     }
+    ],
+    "independent_sources": 4,
+    "status": "three_sources_not_nhra"
+   }
+  ],
+  "2013": [
+   {
+    "gen": "gen3",
+    "cid": 220,
+    "liters": 3.6,
+    "hp": 290,
+    "hp_basis": "SAE net",
+    "name": "3.6L / 220 V6",
+    "rpo": "Pentastar 3.6",
+    "common_name": "Pentastar V6",
+    "trims": [
+     "SXT",
+     "Crew/Limited",
+     "Citadel"
+    ],
+    "nhra": false,
+    "sources": [
+     {
+      "name": "Stellantis Media - Dodge Durango Rallye Appearance Package (2013)",
+      "url": "https://media.stellantisnorthamerica.com/newsrelease.do?id=12858&mid=5",
+      "says": "2013: Pentastar V-6 290 hp (295 hp Rallye/Blacktop/Citadel, dual exhaust)"
+     },
+     {
+      "name": "EPA fueleconomy.gov vehicle data",
+      "url": "https://www.fueleconomy.gov/feg/download.shtml",
+      "says": "2013 Durango: 3.6 L 6-cyl, FFV"
+     },
+     {
+      "name": "Wikipedia - Dodge Durango",
+      "url": "https://en.wikipedia.org/wiki/Dodge_Durango",
+      "says": "3.6L Pentastar V6 2011-present: 290 hp; 293 (single exhaust)/295 (dual exhaust) later"
+     },
+     {
+      "name": "Kelley Blue Book - 2013 Dodge Durango review/specs",
+      "url": "https://www.kbb.com/dodge/durango/2013/",
+      "says": "2013: 3.6 V6, 290 @ 6400 hp"
+     }
+    ],
+    "independent_sources": 4,
+    "status": "three_sources_not_nhra",
+    "note": "Base 290 hp; 295 hp with dual exhaust (Rallye, Blacktop, Citadel). KBB shows 293-295 for 2016-2018; Dodge sheets say 290/295. Flex-fuel (E85) per EPA."
+   },
+   {
+    "gen": "gen3",
+    "cid": 345,
+    "liters": 5.7,
+    "hp": 360,
+    "hp_basis": "SAE net",
+    "name": "5.7L / 345 V8",
+    "rpo": "Hemi 5.7 (VVT, MDS)",
+    "common_name": "5.7 Hemi",
+    "trims": [
+     "R/T",
+     "Citadel (optional)"
+    ],
+    "nhra": false,
+    "sources": [
+     {
+      "name": "Stellantis Media - Dodge Durango Rallye Appearance Package (2013)",
+      "url": "https://media.stellantisnorthamerica.com/newsrelease.do?id=12858&mid=5",
+      "says": "2013: 5.7 HEMI V-8, 360 hp, 390 lb-ft"
+     },
+     {
+      "name": "EPA fueleconomy.gov vehicle data",
+      "url": "https://www.fueleconomy.gov/feg/download.shtml",
+      "says": "2013 Durango: 5.7 L 8-cyl, RWD/AWD"
+     },
+     {
+      "name": "Wikipedia - Dodge Durango",
+      "url": "https://en.wikipedia.org/wiki/Dodge_Durango",
+      "says": "5.7L Hemi V8 2011-present, 360 hp @ 5150"
+     },
+     {
+      "name": "Kelley Blue Book - 2013 Dodge Durango review/specs",
+      "url": "https://www.kbb.com/dodge/durango/2013/",
+      "says": "2013: 5.7 V8, 360 hp"
+     }
+    ],
+    "independent_sources": 4,
+    "status": "three_sources_not_nhra"
+   }
+  ],
+  "2014": [
+   {
+    "gen": "gen3",
+    "cid": 220,
+    "liters": 3.6,
+    "hp": 290,
+    "hp_basis": "SAE net",
+    "name": "3.6L / 220 V6",
+    "rpo": "Pentastar 3.6",
+    "common_name": "Pentastar V6",
+    "trims": [
+     "SXT",
+     "Crew/Limited",
+     "Citadel"
+    ],
+    "nhra": false,
+    "sources": [
+     {
+      "name": "Stellantis Media - The New 2014 Dodge Durango",
+      "url": "https://media.stellantisnorthamerica.com/newsrelease.do?id=14010",
+      "says": "2014: Pentastar V-6 290 hp (295 hp Rallye/Blacktop/Citadel, dual exhaust)"
+     },
+     {
+      "name": "EPA fueleconomy.gov vehicle data",
+      "url": "https://www.fueleconomy.gov/feg/download.shtml",
+      "says": "2014 Durango: 3.6 L 6-cyl, FFV"
+     },
+     {
+      "name": "Wikipedia - Dodge Durango",
+      "url": "https://en.wikipedia.org/wiki/Dodge_Durango",
+      "says": "3.6L Pentastar V6 2011-present: 290 hp; 293 (single exhaust)/295 (dual exhaust) later"
+     },
+     {
+      "name": "Kelley Blue Book - 2014 Dodge Durango review/specs",
+      "url": "https://www.kbb.com/dodge/durango/2014/",
+      "says": "2014: 3.6 V6, 290 @ 6400 hp"
+     }
+    ],
+    "independent_sources": 4,
+    "status": "three_sources_not_nhra",
+    "note": "Base 290 hp; 295 hp with dual exhaust (Rallye, Blacktop, Citadel). KBB shows 293-295 for 2016-2018; Dodge sheets say 290/295. Flex-fuel (E85) per EPA."
+   },
+   {
+    "gen": "gen3",
+    "cid": 345,
+    "liters": 5.7,
+    "hp": 360,
+    "hp_basis": "SAE net",
+    "name": "5.7L / 345 V8",
+    "rpo": "Hemi 5.7 (VVT, MDS)",
+    "common_name": "5.7 Hemi",
+    "trims": [
+     "R/T",
+     "Citadel (optional)"
+    ],
+    "nhra": false,
+    "sources": [
+     {
+      "name": "Stellantis Media - The New 2014 Dodge Durango",
+      "url": "https://media.stellantisnorthamerica.com/newsrelease.do?id=14010",
+      "says": "2014: 5.7 HEMI V-8, 360 hp, 390 lb-ft"
+     },
+     {
+      "name": "EPA fueleconomy.gov vehicle data",
+      "url": "https://www.fueleconomy.gov/feg/download.shtml",
+      "says": "2014 Durango: 5.7 L 8-cyl, RWD/AWD"
+     },
+     {
+      "name": "Wikipedia - Dodge Durango",
+      "url": "https://en.wikipedia.org/wiki/Dodge_Durango",
+      "says": "5.7L Hemi V8 2011-present, 360 hp @ 5150"
+     },
+     {
+      "name": "Kelley Blue Book - 2014 Dodge Durango review/specs",
+      "url": "https://www.kbb.com/dodge/durango/2014/",
+      "says": "2014: 5.7 V8, 360 hp"
+     }
+    ],
+    "independent_sources": 4,
+    "status": "three_sources_not_nhra"
+   }
+  ],
+  "2015": [
+   {
+    "gen": "gen3",
+    "cid": 220,
+    "liters": 3.6,
+    "hp": 290,
+    "hp_basis": "SAE net",
+    "name": "3.6L / 220 V6",
+    "rpo": "Pentastar 3.6",
+    "common_name": "Pentastar V6",
+    "trims": [
+     "SXT",
+     "Crew/Limited",
+     "Citadel"
+    ],
+    "nhra": false,
+    "sources": [
+     {
+      "name": "Stellantis Media - 2015 Dodge Durango",
+      "url": "https://media.stellantisnorthamerica.com/newsrelease.do?id=15849&mid=287",
+      "says": "2015: Pentastar V-6 290 hp (295 hp Rallye/Blacktop/Citadel, dual exhaust)"
+     },
+     {
+      "name": "EPA fueleconomy.gov vehicle data",
+      "url": "https://www.fueleconomy.gov/feg/download.shtml",
+      "says": "2015 Durango: 3.6 L 6-cyl, FFV"
+     },
+     {
+      "name": "Wikipedia - Dodge Durango",
+      "url": "https://en.wikipedia.org/wiki/Dodge_Durango",
+      "says": "3.6L Pentastar V6 2011-present: 290 hp; 293 (single exhaust)/295 (dual exhaust) later"
+     },
+     {
+      "name": "Kelley Blue Book - 2015 Dodge Durango review/specs",
+      "url": "https://www.kbb.com/dodge/durango/2015/",
+      "says": "2015: 3.6 V6, 290 hp"
+     }
+    ],
+    "independent_sources": 4,
+    "status": "three_sources_not_nhra",
+    "note": "Base 290 hp; 295 hp with dual exhaust (Rallye, Blacktop, Citadel). KBB shows 293-295 for 2016-2018; Dodge sheets say 290/295. Flex-fuel (E85) per EPA."
+   },
+   {
+    "gen": "gen3",
+    "cid": 345,
+    "liters": 5.7,
+    "hp": 360,
+    "hp_basis": "SAE net",
+    "name": "5.7L / 345 V8",
+    "rpo": "Hemi 5.7 (VVT, MDS)",
+    "common_name": "5.7 Hemi",
+    "trims": [
+     "R/T",
+     "Citadel (optional)"
+    ],
+    "nhra": false,
+    "sources": [
+     {
+      "name": "Stellantis Media - 2015 Dodge Durango",
+      "url": "https://media.stellantisnorthamerica.com/newsrelease.do?id=15849&mid=287",
+      "says": "2015: 5.7 HEMI V-8, 360 hp, 390 lb-ft"
+     },
+     {
+      "name": "EPA fueleconomy.gov vehicle data",
+      "url": "https://www.fueleconomy.gov/feg/download.shtml",
+      "says": "2015 Durango: 5.7 L 8-cyl, RWD/AWD"
+     },
+     {
+      "name": "Wikipedia - Dodge Durango",
+      "url": "https://en.wikipedia.org/wiki/Dodge_Durango",
+      "says": "5.7L Hemi V8 2011-present, 360 hp @ 5150"
+     },
+     {
+      "name": "Kelley Blue Book - 2015 Dodge Durango review/specs",
+      "url": "https://www.kbb.com/dodge/durango/2015/",
+      "says": "2015: 5.7 V8, 360 hp"
+     }
+    ],
+    "independent_sources": 4,
+    "status": "three_sources_not_nhra"
+   }
+  ],
+  "2016": [
+   {
+    "gen": "gen3",
+    "cid": 220,
+    "liters": 3.6,
+    "hp": 290,
+    "hp_basis": "SAE net",
+    "name": "3.6L / 220 V6",
+    "rpo": "Pentastar 3.6",
+    "common_name": "Pentastar V6",
+    "trims": [
+     "SXT",
+     "Crew/Limited",
+     "Citadel"
+    ],
+    "nhra": false,
+    "sources": [
+     {
+      "name": "Stellantis Media - 2016 Dodge Durango",
+      "url": "https://media.stellantisnorthamerica.com/newsrelease.do?id=16749",
+      "says": "2016: Pentastar V-6 290 hp (295 hp Rallye/Blacktop/Citadel, dual exhaust)"
+     },
+     {
+      "name": "EPA fueleconomy.gov vehicle data",
+      "url": "https://www.fueleconomy.gov/feg/download.shtml",
+      "says": "2016 Durango: 3.6 L 6-cyl"
+     },
+     {
+      "name": "Wikipedia - Dodge Durango",
+      "url": "https://en.wikipedia.org/wiki/Dodge_Durango",
+      "says": "3.6L Pentastar V6 2011-present: 290 hp; 293 (single exhaust)/295 (dual exhaust) later"
+     },
+     {
+      "name": "Kelley Blue Book - 2016 Dodge Durango review/specs",
+      "url": "https://www.kbb.com/dodge/durango/2016/",
+      "says": "2016: 3.6 V6, 295 hp"
+     }
+    ],
+    "independent_sources": 4,
+    "status": "three_sources_not_nhra",
+    "note": "Base 290 hp; 295 hp with dual exhaust (Rallye, Blacktop, Citadel). KBB shows 293-295 for 2016-2018; Dodge sheets say 290/295."
+   },
+   {
+    "gen": "gen3",
+    "cid": 345,
+    "liters": 5.7,
+    "hp": 360,
+    "hp_basis": "SAE net",
+    "name": "5.7L / 345 V8",
+    "rpo": "Hemi 5.7 (VVT, MDS)",
+    "common_name": "5.7 Hemi",
+    "trims": [
+     "R/T",
+     "Citadel (optional)"
+    ],
+    "nhra": false,
+    "sources": [
+     {
+      "name": "Stellantis Media - 2016 Dodge Durango",
+      "url": "https://media.stellantisnorthamerica.com/newsrelease.do?id=16749",
+      "says": "2016: 5.7 HEMI V-8, 360 hp, 390 lb-ft"
+     },
+     {
+      "name": "EPA fueleconomy.gov vehicle data",
+      "url": "https://www.fueleconomy.gov/feg/download.shtml",
+      "says": "2016 Durango: 5.7 L 8-cyl, RWD/AWD"
+     },
+     {
+      "name": "Wikipedia - Dodge Durango",
+      "url": "https://en.wikipedia.org/wiki/Dodge_Durango",
+      "says": "5.7L Hemi V8 2011-present, 360 hp @ 5150"
+     },
+     {
+      "name": "Kelley Blue Book - 2016 Dodge Durango review/specs",
+      "url": "https://www.kbb.com/dodge/durango/2016/",
+      "says": "2016: 5.7 V8, 360 hp"
+     }
+    ],
+    "independent_sources": 4,
+    "status": "three_sources_not_nhra"
+   }
+  ],
+  "2017": [
+   {
+    "gen": "gen3",
+    "cid": 220,
+    "liters": 3.6,
+    "hp": 290,
+    "hp_basis": "SAE net",
+    "name": "3.6L / 220 V6",
+    "rpo": "Pentastar 3.6",
+    "common_name": "Pentastar V6",
+    "trims": [
+     "SXT",
+     "Crew/Limited",
+     "Citadel"
+    ],
+    "nhra": false,
+    "sources": [
+     {
+      "name": "Stellantis Media - 2017 Dodge Durango Fact Sheet",
+      "url": "https://media.stellantisnorthamerica.com/newsrelease.do?id=17597",
+      "says": "2017: Pentastar V-6 290 hp (295 hp Rallye/Blacktop/Citadel, dual exhaust)"
+     },
+     {
+      "name": "EPA fueleconomy.gov vehicle data",
+      "url": "https://www.fueleconomy.gov/feg/download.shtml",
+      "says": "2017 Durango: 3.6 L 6-cyl"
+     },
+     {
+      "name": "Wikipedia - Dodge Durango",
+      "url": "https://en.wikipedia.org/wiki/Dodge_Durango",
+      "says": "3.6L Pentastar V6 2011-present: 290 hp; 293 (single exhaust)/295 (dual exhaust) later"
+     },
+     {
+      "name": "Kelley Blue Book - 2017 Dodge Durango review/specs",
+      "url": "https://www.kbb.com/dodge/durango/2017/",
+      "says": "2017: 3.6 V6, 295 @ 6400 (dual exhaust) hp"
+     }
+    ],
+    "independent_sources": 4,
+    "status": "three_sources_not_nhra",
+    "note": "Base 290 hp; 295 hp with dual exhaust (Rallye, Blacktop, Citadel). KBB shows 293-295 for 2016-2018; Dodge sheets say 290/295."
+   },
+   {
+    "gen": "gen3",
+    "cid": 345,
+    "liters": 5.7,
+    "hp": 360,
+    "hp_basis": "SAE net",
+    "name": "5.7L / 345 V8",
+    "rpo": "Hemi 5.7 (VVT, MDS)",
+    "common_name": "5.7 Hemi",
+    "trims": [
+     "R/T",
+     "Citadel (optional)"
+    ],
+    "nhra": false,
+    "sources": [
+     {
+      "name": "Stellantis Media - 2017 Dodge Durango Fact Sheet",
+      "url": "https://media.stellantisnorthamerica.com/newsrelease.do?id=17597",
+      "says": "2017: 5.7 HEMI V-8, 360 hp, 390 lb-ft"
+     },
+     {
+      "name": "EPA fueleconomy.gov vehicle data",
+      "url": "https://www.fueleconomy.gov/feg/download.shtml",
+      "says": "2017 Durango: 5.7 L 8-cyl, RWD/AWD"
+     },
+     {
+      "name": "Wikipedia - Dodge Durango",
+      "url": "https://en.wikipedia.org/wiki/Dodge_Durango",
+      "says": "5.7L Hemi V8 2011-present, 360 hp @ 5150"
+     },
+     {
+      "name": "Kelley Blue Book - 2017 Dodge Durango review/specs",
+      "url": "https://www.kbb.com/dodge/durango/2017/",
+      "says": "2017: 5.7 V8, 360 hp"
+     }
+    ],
+    "independent_sources": 4,
+    "status": "three_sources_not_nhra"
+   }
+  ],
+  "2018": [
+   {
+    "gen": "gen3",
+    "cid": 220,
+    "liters": 3.6,
+    "hp": 290,
+    "hp_basis": "SAE net",
+    "name": "3.6L / 220 V6",
+    "rpo": "Pentastar 3.6",
+    "common_name": "Pentastar V6",
+    "trims": [
+     "SXT",
+     "GT",
+     "Citadel",
+     "R/T (2018 fact sheet)"
+    ],
+    "nhra": false,
+    "sources": [
+     {
+      "name": "Stellantis Media - 2018 Dodge Durango Fact Sheet",
+      "url": "https://media.stellantisnorthamerica.com/newsrelease.do?id=18361",
+      "says": "2018: Pentastar V-6 290 hp (295 hp Rallye/Blacktop/Citadel, dual exhaust)"
+     },
+     {
+      "name": "EPA fueleconomy.gov vehicle data",
+      "url": "https://www.fueleconomy.gov/feg/download.shtml",
+      "says": "2018 Durango: 3.6 L 6-cyl"
+     },
+     {
+      "name": "Wikipedia - Dodge Durango",
+      "url": "https://en.wikipedia.org/wiki/Dodge_Durango",
+      "says": "3.6L Pentastar V6 2011-present: 290 hp; 293 (single exhaust)/295 (dual exhaust) later"
+     },
+     {
+      "name": "Kelley Blue Book - 2018 Dodge Durango review/specs",
+      "url": "https://www.kbb.com/dodge/durango/2018/",
+      "says": "2018: 3.6 V6, 293 @ 6400 hp"
+     }
+    ],
+    "independent_sources": 4,
+    "status": "three_sources_not_nhra",
+    "note": "Base 290 hp; 295 hp with dual exhaust (Rallye, Blacktop, Citadel). KBB shows 293-295 for 2016-2018; Dodge sheets say 290/295."
+   },
+   {
+    "gen": "gen3",
+    "cid": 345,
+    "liters": 5.7,
+    "hp": 360,
+    "hp_basis": "SAE net",
+    "name": "5.7L / 345 V8",
+    "rpo": "Hemi 5.7 (VVT, MDS)",
+    "common_name": "5.7 Hemi",
+    "trims": [
+     "R/T",
+     "Citadel (optional)",
+     "GT (optional)"
+    ],
+    "nhra": false,
+    "sources": [
+     {
+      "name": "Stellantis Media - 2018 Dodge Durango Fact Sheet",
+      "url": "https://media.stellantisnorthamerica.com/newsrelease.do?id=18361",
+      "says": "2018: 5.7 HEMI V-8, 360 hp, 390 lb-ft"
+     },
+     {
+      "name": "EPA fueleconomy.gov vehicle data",
+      "url": "https://www.fueleconomy.gov/feg/download.shtml",
+      "says": "2018 Durango: 5.7 L 8-cyl, RWD/AWD"
+     },
+     {
+      "name": "Wikipedia - Dodge Durango",
+      "url": "https://en.wikipedia.org/wiki/Dodge_Durango",
+      "says": "5.7L Hemi V8 2011-present, 360 hp @ 5150"
+     },
+     {
+      "name": "Kelley Blue Book - 2018 Dodge Durango review/specs",
+      "url": "https://www.kbb.com/dodge/durango/2018/",
+      "says": "2018: 5.7 V8, 360 hp"
+     }
+    ],
+    "independent_sources": 4,
+    "status": "three_sources_not_nhra"
+   },
+   {
+    "gen": "gen3",
+    "cid": 392,
+    "liters": 6.4,
+    "hp": 475,
+    "hp_basis": "SAE net",
+    "name": "6.4L / 392 V8",
+    "rpo": "392 Hemi (SRT 6.4)",
+    "common_name": "392 Hemi",
+    "trims": [
+     "SRT",
+     "AWD only"
+    ],
+    "nhra": false,
+    "sources": [
+     {
+      "name": "Stellantis Media - 2018 Dodge Durango Fact Sheet",
+      "url": "https://media.stellantisnorthamerica.com/newsrelease.do?id=18361",
+      "says": "2018: 392 HEMI V-8, 475 hp, 470 lb-ft (SRT)"
+     },
+     {
+      "name": "EPA fueleconomy.gov vehicle data",
+      "url": "https://www.fueleconomy.gov/feg/download.shtml",
+      "says": "2018 Durango: 6.4 L 8-cyl, Durango SRT AWD"
+     },
+     {
+      "name": "Wikipedia - Dodge Durango",
+      "url": "https://en.wikipedia.org/wiki/Dodge_Durango",
+      "says": "6.4L Hemi V8 2018-2024, 475 hp @ 6000"
+     },
+     {
+      "name": "Kelley Blue Book - 2018 Dodge Durango review/specs",
+      "url": "https://www.kbb.com/dodge/durango/2018/",
+      "says": "2018: 6.4 V8, 475 hp @ 6000 (SRT)"
+     }
+    ],
+    "independent_sources": 4,
+    "status": "three_sources_not_nhra",
+    "note": "New for 2018 (Durango SRT)."
+   }
+  ],
+  "2019": [
+   {
+    "gen": "gen3",
+    "cid": 220,
+    "liters": 3.6,
+    "hp": 293,
+    "hp_basis": "SAE net",
+    "name": "3.6L / 220 V6",
+    "rpo": "Pentastar 3.6",
+    "common_name": "Pentastar V6",
+    "trims": [
+     "SXT",
+     "GT",
+     "Citadel"
+    ],
+    "nhra": false,
+    "sources": [
+     {
+      "name": "Stellantis Media - 2019 Dodge Durango Fact Sheet",
+      "url": "https://media.stellantisnorthamerica.com/newsrelease.do?id=20049",
+      "says": "2019: 3.6 Pentastar V-6, 293-295 hp"
+     },
+     {
+      "name": "EPA fueleconomy.gov vehicle data",
+      "url": "https://www.fueleconomy.gov/feg/download.shtml",
+      "says": "2019 Durango: 3.6 L 6-cyl"
+     },
+     {
+      "name": "Wikipedia - Dodge Durango",
+      "url": "https://en.wikipedia.org/wiki/Dodge_Durango",
+      "says": "3.6L Pentastar V6 2011-present: 290 hp; 293 (single exhaust)/295 (dual exhaust) later"
+     },
+     {
+      "name": "Kelley Blue Book - 2019 Dodge Durango review/specs",
+      "url": "https://www.kbb.com/dodge/durango/2019/",
+      "says": "2019: 3.6 V6, 293 hp"
+     }
+    ],
+    "independent_sources": 4,
+    "status": "three_sources_not_nhra",
+    "note": "293 hp single exhaust, 295 dual exhaust."
+   },
+   {
+    "gen": "gen3",
+    "cid": 345,
+    "liters": 5.7,
+    "hp": 360,
+    "hp_basis": "SAE net",
+    "name": "5.7L / 345 V8",
+    "rpo": "Hemi 5.7 (VVT, MDS)",
+    "common_name": "5.7 Hemi",
+    "trims": [
+     "R/T",
+     "Citadel (optional)",
+     "GT (optional)"
+    ],
+    "nhra": false,
+    "sources": [
+     {
+      "name": "Stellantis Media - 2019 Dodge Durango Fact Sheet",
+      "url": "https://media.stellantisnorthamerica.com/newsrelease.do?id=20049",
+      "says": "2019: 5.7 HEMI V-8, 360 hp, 390 lb-ft"
+     },
+     {
+      "name": "EPA fueleconomy.gov vehicle data",
+      "url": "https://www.fueleconomy.gov/feg/download.shtml",
+      "says": "2019 Durango: 5.7 L 8-cyl, RWD/AWD"
+     },
+     {
+      "name": "Wikipedia - Dodge Durango",
+      "url": "https://en.wikipedia.org/wiki/Dodge_Durango",
+      "says": "5.7L Hemi V8 2011-present, 360 hp @ 5150"
+     },
+     {
+      "name": "Kelley Blue Book - 2019 Dodge Durango review/specs",
+      "url": "https://www.kbb.com/dodge/durango/2019/",
+      "says": "2019: 5.7 V8, 360 hp"
+     }
+    ],
+    "independent_sources": 4,
+    "status": "three_sources_not_nhra"
+   },
+   {
+    "gen": "gen3",
+    "cid": 392,
+    "liters": 6.4,
+    "hp": 475,
+    "hp_basis": "SAE net",
+    "name": "6.4L / 392 V8",
+    "rpo": "392 Hemi (SRT 6.4)",
+    "common_name": "392 Hemi",
+    "trims": [
+     "SRT",
+     "AWD only"
+    ],
+    "nhra": false,
+    "sources": [
+     {
+      "name": "Stellantis Media - 2019 Dodge Durango Fact Sheet",
+      "url": "https://media.stellantisnorthamerica.com/newsrelease.do?id=20049",
+      "says": "2019: 392 HEMI V-8, 475 hp, 470 lb-ft (SRT)"
+     },
+     {
+      "name": "EPA fueleconomy.gov vehicle data",
+      "url": "https://www.fueleconomy.gov/feg/download.shtml",
+      "says": "2019 Durango: 6.4 L 8-cyl, Durango SRT AWD"
+     },
+     {
+      "name": "Wikipedia - Dodge Durango",
+      "url": "https://en.wikipedia.org/wiki/Dodge_Durango",
+      "says": "6.4L Hemi V8 2018-2024, 475 hp @ 6000"
+     },
+     {
+      "name": "Kelley Blue Book - 2019 Dodge Durango review/specs",
+      "url": "https://www.kbb.com/dodge/durango/2019/",
+      "says": "2019: 6.4 V8, 475 hp @ 6000 (SRT)"
+     }
+    ],
+    "independent_sources": 4,
+    "status": "three_sources_not_nhra"
+   }
+  ],
+  "2020": [
+   {
+    "gen": "gen3",
+    "cid": 220,
+    "liters": 3.6,
+    "hp": 293,
+    "hp_basis": "SAE net",
+    "name": "3.6L / 220 V6",
+    "rpo": "Pentastar 3.6",
+    "common_name": "Pentastar V6",
+    "trims": [
+     "SXT",
+     "GT",
+     "Citadel"
+    ],
+    "nhra": false,
+    "sources": [
+     {
+      "name": "EPA fueleconomy.gov vehicle data",
+      "url": "https://www.fueleconomy.gov/feg/download.shtml",
+      "says": "2020 Durango: 3.6 L 6-cyl"
+     },
+     {
+      "name": "Wikipedia - Dodge Durango",
+      "url": "https://en.wikipedia.org/wiki/Dodge_Durango",
+      "says": "3.6L Pentastar V6 2011-present: 290 hp; 293 (single exhaust)/295 (dual exhaust) later"
+     },
+     {
+      "name": "Kelley Blue Book - 2020 Dodge Durango review/specs",
+      "url": "https://www.kbb.com/dodge/durango/2020/",
+      "says": "2020: 3.6 V6, 293 single / 295 dual exhaust hp"
+     }
+    ],
+    "independent_sources": 3,
+    "status": "three_sources_not_nhra",
+    "note": "293 hp single exhaust, 295 dual exhaust."
+   },
+   {
+    "gen": "gen3",
+    "cid": 345,
+    "liters": 5.7,
+    "hp": 360,
+    "hp_basis": "SAE net",
+    "name": "5.7L / 345 V8",
+    "rpo": "Hemi 5.7 (VVT, MDS)",
+    "common_name": "5.7 Hemi",
+    "trims": [
+     "R/T",
+     "Citadel (optional)",
+     "GT (optional)"
+    ],
+    "nhra": false,
+    "sources": [
+     {
+      "name": "EPA fueleconomy.gov vehicle data",
+      "url": "https://www.fueleconomy.gov/feg/download.shtml",
+      "says": "2020 Durango: 5.7 L 8-cyl, RWD/AWD"
+     },
+     {
+      "name": "Wikipedia - Dodge Durango",
+      "url": "https://en.wikipedia.org/wiki/Dodge_Durango",
+      "says": "5.7L Hemi V8 2011-present, 360 hp @ 5150"
+     },
+     {
+      "name": "Kelley Blue Book - 2020 Dodge Durango review/specs",
+      "url": "https://www.kbb.com/dodge/durango/2020/",
+      "says": "2020: 5.7 V8, 360 hp"
+     }
+    ],
+    "independent_sources": 3,
+    "status": "three_sources_not_nhra"
+   },
+   {
+    "gen": "gen3",
+    "cid": 392,
+    "liters": 6.4,
+    "hp": 475,
+    "hp_basis": "SAE net",
+    "name": "6.4L / 392 V8",
+    "rpo": "392 Hemi (SRT 6.4)",
+    "common_name": "392 Hemi",
+    "trims": [
+     "SRT",
+     "AWD only"
+    ],
+    "nhra": false,
+    "sources": [
+     {
+      "name": "EPA fueleconomy.gov vehicle data",
+      "url": "https://www.fueleconomy.gov/feg/download.shtml",
+      "says": "2020 Durango: 6.4 L 8-cyl, Durango SRT AWD"
+     },
+     {
+      "name": "Wikipedia - Dodge Durango",
+      "url": "https://en.wikipedia.org/wiki/Dodge_Durango",
+      "says": "6.4L Hemi V8 2018-2024, 475 hp @ 6000"
+     },
+     {
+      "name": "Kelley Blue Book - 2020 Dodge Durango review/specs",
+      "url": "https://www.kbb.com/dodge/durango/2020/",
+      "says": "2020: 6.4 V8, 475 hp @ 6000 (SRT)"
+     }
+    ],
+    "independent_sources": 3,
+    "status": "three_sources_not_nhra"
+   }
+  ],
+  "2021": [
+   {
+    "gen": "gen3",
+    "cid": 220,
+    "liters": 3.6,
+    "hp": 295,
+    "hp_basis": "SAE net",
+    "name": "3.6L / 220 V6",
+    "rpo": "Pentastar 3.6",
+    "common_name": "Pentastar V6",
+    "trims": [
+     "SXT",
+     "GT",
+     "Citadel"
+    ],
+    "nhra": false,
+    "sources": [
+     {
+      "name": "Stellantis Media - 2021 Dodge Durango / Durango SRT Fact Sheet",
+      "url": "https://media.stellantisnorthamerica.com/newsrelease.do?id=22104",
+      "says": "2021: 3.6 Pentastar V-6, up to 295 hp"
+     },
+     {
+      "name": "EPA fueleconomy.gov vehicle data",
+      "url": "https://www.fueleconomy.gov/feg/download.shtml",
+      "says": "2021 Durango: 3.6 L 6-cyl"
+     },
+     {
+      "name": "Wikipedia - Dodge Durango",
+      "url": "https://en.wikipedia.org/wiki/Dodge_Durango",
+      "says": "3.6L Pentastar V6 2011-present: 290 hp; 293 (single exhaust)/295 (dual exhaust) later"
+     },
+     {
+      "name": "Kelley Blue Book - 2021 Dodge Durango review/specs",
+      "url": "https://www.kbb.com/dodge/durango/2021/",
+      "says": "2021: 3.6 V6, 293 @ 6400 hp"
+     }
+    ],
+    "independent_sources": 4,
+    "status": "three_sources_not_nhra",
+    "note": "'Up to 295 hp' (Dodge); 293 hp with single exhaust (KBB)."
+   },
+   {
+    "gen": "gen3",
+    "cid": 345,
+    "liters": 5.7,
+    "hp": 360,
+    "hp_basis": "SAE net",
+    "name": "5.7L / 345 V8",
+    "rpo": "Hemi 5.7 (VVT, MDS)",
+    "common_name": "5.7 Hemi",
+    "trims": [
+     "R/T",
+     "Citadel (optional)"
+    ],
+    "nhra": false,
+    "sources": [
+     {
+      "name": "Stellantis Media - 2021 Dodge Durango / Durango SRT Fact Sheet",
+      "url": "https://media.stellantisnorthamerica.com/newsrelease.do?id=22104",
+      "says": "2021: 5.7 HEMI V-8, 360 hp, 390 lb-ft"
+     },
+     {
+      "name": "EPA fueleconomy.gov vehicle data",
+      "url": "https://www.fueleconomy.gov/feg/download.shtml",
+      "says": "2021 Durango: 5.7 L 8-cyl, RWD/AWD"
+     },
+     {
+      "name": "Wikipedia - Dodge Durango",
+      "url": "https://en.wikipedia.org/wiki/Dodge_Durango",
+      "says": "5.7L Hemi V8 2011-present, 360 hp @ 5150"
+     },
+     {
+      "name": "Kelley Blue Book - 2021 Dodge Durango review/specs",
+      "url": "https://www.kbb.com/dodge/durango/2021/",
+      "says": "2021: 5.7 V8, 360 hp"
+     }
+    ],
+    "independent_sources": 4,
+    "status": "three_sources_not_nhra"
+   },
+   {
+    "gen": "gen3",
+    "cid": 392,
+    "liters": 6.4,
+    "hp": 475,
+    "hp_basis": "SAE net",
+    "name": "6.4L / 392 V8",
+    "rpo": "392 Hemi (SRT 6.4)",
+    "common_name": "392 Hemi",
+    "trims": [
+     "SRT 392",
+     "AWD only"
+    ],
+    "nhra": false,
+    "sources": [
+     {
+      "name": "Stellantis Media - 2021 Dodge Durango / Durango SRT Fact Sheet",
+      "url": "https://media.stellantisnorthamerica.com/newsrelease.do?id=22104",
+      "says": "2021: 392 HEMI V-8, 475 hp, 470 lb-ft (SRT 392)"
+     },
+     {
+      "name": "EPA fueleconomy.gov vehicle data",
+      "url": "https://www.fueleconomy.gov/feg/download.shtml",
+      "says": "2021 Durango: 6.4 L 8-cyl, Durango SRT AWD"
+     },
+     {
+      "name": "Wikipedia - Dodge Durango",
+      "url": "https://en.wikipedia.org/wiki/Dodge_Durango",
+      "says": "6.4L Hemi V8 2018-2024, 475 hp @ 6000"
+     },
+     {
+      "name": "Kelley Blue Book - 2021 Dodge Durango review/specs",
+      "url": "https://www.kbb.com/dodge/durango/2021/",
+      "says": "2021: 6.4 V8, 475 hp @ 6000 (SRT 392)"
+     }
+    ],
+    "independent_sources": 4,
+    "status": "three_sources_not_nhra",
+    "note": "Model renamed SRT 392 for 2021."
+   },
+   {
+    "gen": "gen3",
+    "cid": 376,
+    "liters": 6.2,
+    "hp": 710,
+    "hp_basis": "SAE net",
+    "name": "6.2L / 376 supercharged V8",
+    "rpo": "Hellcat 6.2 (supercharged Hemi)",
+    "common_name": "Hellcat",
+    "trims": [
+     "SRT Hellcat (AWD)"
+    ],
+    "nhra": false,
+    "sources": [
+     {
+      "name": "Stellantis Media - 2021 Dodge Durango / Durango SRT Fact Sheet",
+      "url": "https://media.stellantisnorthamerica.com/newsrelease.do?id=22104",
+      "says": "2021 SRT Hellcat: supercharged 6.2 HEMI, 710 hp, 645 lb-ft; built for the 2021 model year only"
+     },
+     {
+      "name": "EPA fueleconomy.gov vehicle data",
+      "url": "https://www.fueleconomy.gov/feg/download.shtml",
+      "says": "2021 Durango: 6.2 L 8-cyl supercharged, AWD"
+     },
+     {
+      "name": "Wikipedia - Dodge Durango",
+      "url": "https://en.wikipedia.org/wiki/Dodge_Durango",
+      "says": "6.2L supercharged Hemi 2021, 2023-present, 710 hp @ 6000; 2021-only at first, returned for 2023"
+     },
+     {
+      "name": "Kelley Blue Book - 2021 Dodge Durango review/specs",
+      "url": "https://www.kbb.com/dodge/durango/2021/",
+      "says": "2021: supercharged 6.2 V8, 710 hp"
+     }
+    ],
+    "independent_sources": 4,
+    "status": "three_sources_not_nhra",
+    "note": "Announced as a 2021-only model; not offered for 2022 (Dodge 2022 fact sheet, KBB, EPA). KBB lists 640 lb-ft; Dodge 645."
+   }
+  ],
+  "2022": [
+   {
+    "gen": "gen3",
+    "cid": 220,
+    "liters": 3.6,
+    "hp": 295,
+    "hp_basis": "SAE net",
+    "name": "3.6L / 220 V6",
+    "rpo": "Pentastar 3.6",
+    "common_name": "Pentastar V6",
+    "trims": [
+     "SXT",
+     "GT",
+     "Citadel"
+    ],
+    "nhra": false,
+    "sources": [
+     {
+      "name": "Stellantis Media - 2022 Dodge Durango / Durango SRT Fact Sheet",
+      "url": "https://media.stellantisnorthamerica.com/newsrelease.do?id=22921",
+      "says": "2022: 3.6 Pentastar V-6, up to 295 hp"
+     },
+     {
+      "name": "EPA fueleconomy.gov vehicle data",
+      "url": "https://www.fueleconomy.gov/feg/download.shtml",
+      "says": "2022 Durango: 3.6 L 6-cyl"
+     },
+     {
+      "name": "Wikipedia - Dodge Durango",
+      "url": "https://en.wikipedia.org/wiki/Dodge_Durango",
+      "says": "3.6L Pentastar V6 2011-present: 290 hp; 293 (single exhaust)/295 (dual exhaust) later"
+     },
+     {
+      "name": "Kelley Blue Book - 2022 Dodge Durango review/specs",
+      "url": "https://www.kbb.com/dodge/durango/2022/",
+      "says": "2022: 3.6 V6, 293 @ 6400 hp"
+     }
+    ],
+    "independent_sources": 4,
+    "status": "three_sources_not_nhra",
+    "note": "'Up to 295 hp' (Dodge); 293 hp with single exhaust (KBB)."
+   },
+   {
+    "gen": "gen3",
+    "cid": 345,
+    "liters": 5.7,
+    "hp": 360,
+    "hp_basis": "SAE net",
+    "name": "5.7L / 345 V8",
+    "rpo": "Hemi 5.7 (VVT, MDS)",
+    "common_name": "5.7 Hemi",
+    "trims": [
+     "R/T",
+     "Citadel (optional)"
+    ],
+    "nhra": false,
+    "sources": [
+     {
+      "name": "Stellantis Media - 2022 Dodge Durango / Durango SRT Fact Sheet",
+      "url": "https://media.stellantisnorthamerica.com/newsrelease.do?id=22921",
+      "says": "2022: 5.7 HEMI V-8, 360 hp, 390 lb-ft"
+     },
+     {
+      "name": "EPA fueleconomy.gov vehicle data",
+      "url": "https://www.fueleconomy.gov/feg/download.shtml",
+      "says": "2022 Durango: 5.7 L 8-cyl, RWD/AWD"
+     },
+     {
+      "name": "Wikipedia - Dodge Durango",
+      "url": "https://en.wikipedia.org/wiki/Dodge_Durango",
+      "says": "5.7L Hemi V8 2011-present, 360 hp @ 5150"
+     },
+     {
+      "name": "Kelley Blue Book - 2022 Dodge Durango review/specs",
+      "url": "https://www.kbb.com/dodge/durango/2022/",
+      "says": "2022: 5.7 V8, 360 hp"
+     }
+    ],
+    "independent_sources": 4,
+    "status": "three_sources_not_nhra"
+   },
+   {
+    "gen": "gen3",
+    "cid": 392,
+    "liters": 6.4,
+    "hp": 475,
+    "hp_basis": "SAE net",
+    "name": "6.4L / 392 V8",
+    "rpo": "392 Hemi (SRT 6.4)",
+    "common_name": "392 Hemi",
+    "trims": [
+     "SRT 392",
+     "AWD only"
+    ],
+    "nhra": false,
+    "sources": [
+     {
+      "name": "Stellantis Media - 2022 Dodge Durango / Durango SRT Fact Sheet",
+      "url": "https://media.stellantisnorthamerica.com/newsrelease.do?id=22921",
+      "says": "2022: 392 HEMI V-8, 475 hp, 470 lb-ft (SRT 392)"
+     },
+     {
+      "name": "EPA fueleconomy.gov vehicle data",
+      "url": "https://www.fueleconomy.gov/feg/download.shtml",
+      "says": "2022 Durango: 6.4 L 8-cyl, Durango SRT AWD"
+     },
+     {
+      "name": "Wikipedia - Dodge Durango",
+      "url": "https://en.wikipedia.org/wiki/Dodge_Durango",
+      "says": "6.4L Hemi V8 2018-2024, 475 hp @ 6000"
+     },
+     {
+      "name": "Kelley Blue Book - 2022 Dodge Durango review/specs",
+      "url": "https://www.kbb.com/dodge/durango/2022/",
+      "says": "2022: 6.4 V8, 475 hp @ 6000 (SRT 392)"
+     }
+    ],
+    "independent_sources": 4,
+    "status": "three_sources_not_nhra"
+   }
+  ],
+  "2023": [
+   {
+    "gen": "gen3",
+    "cid": 220,
+    "liters": 3.6,
+    "hp": 295,
+    "hp_basis": "SAE net",
+    "name": "3.6L / 220 V6",
+    "rpo": "Pentastar 3.6",
+    "common_name": "Pentastar V6",
+    "trims": [
+     "SXT",
+     "GT",
+     "Citadel"
+    ],
+    "nhra": false,
+    "sources": [
+     {
+      "name": "Stellantis Media - What's New for 2023: Dodge Durango / Durango SRT",
+      "url": "https://media.stellantisnorthamerica.com/newsrelease.do?id=24607&mid=287",
+      "says": "2023: 3.6 Pentastar V-6, up to 295 hp"
+     },
+     {
+      "name": "EPA fueleconomy.gov vehicle data",
+      "url": "https://www.fueleconomy.gov/feg/download.shtml",
+      "says": "2023 Durango: 3.6 L 6-cyl"
+     },
+     {
+      "name": "Wikipedia - Dodge Durango",
+      "url": "https://en.wikipedia.org/wiki/Dodge_Durango",
+      "says": "3.6L Pentastar V6 2011-present: 290 hp; 293 (single exhaust)/295 (dual exhaust) later"
+     },
+     {
+      "name": "Kelley Blue Book - 2023 Dodge Durango review/specs",
+      "url": "https://www.kbb.com/dodge/durango/2023/",
+      "says": "2023: 3.6 V6, 293 (295 GT, Citadel) hp"
+     }
+    ],
+    "independent_sources": 4,
+    "status": "three_sources_not_nhra",
+    "note": "'Up to 295 hp' (Dodge); 293 hp with single exhaust (KBB)."
+   },
+   {
+    "gen": "gen3",
+    "cid": 345,
+    "liters": 5.7,
+    "hp": 360,
+    "hp_basis": "SAE net",
+    "name": "5.7L / 345 V8",
+    "rpo": "Hemi 5.7 (VVT, MDS)",
+    "common_name": "5.7 Hemi",
+    "trims": [
+     "R/T",
+     "Citadel (optional)"
+    ],
+    "nhra": false,
+    "sources": [
+     {
+      "name": "Stellantis Media - What's New for 2023: Dodge Durango / Durango SRT",
+      "url": "https://media.stellantisnorthamerica.com/newsrelease.do?id=24607&mid=287",
+      "says": "2023: 5.7 HEMI V-8, 360 hp, 390 lb-ft"
+     },
+     {
+      "name": "EPA fueleconomy.gov vehicle data",
+      "url": "https://www.fueleconomy.gov/feg/download.shtml",
+      "says": "2023 Durango: 5.7 L 8-cyl, RWD/AWD"
+     },
+     {
+      "name": "Wikipedia - Dodge Durango",
+      "url": "https://en.wikipedia.org/wiki/Dodge_Durango",
+      "says": "5.7L Hemi V8 2011-present, 360 hp @ 5150"
+     },
+     {
+      "name": "Kelley Blue Book - 2023 Dodge Durango review/specs",
+      "url": "https://www.kbb.com/dodge/durango/2023/",
+      "says": "2023: 5.7 V8, 360 hp"
+     }
+    ],
+    "independent_sources": 4,
+    "status": "three_sources_not_nhra"
+   },
+   {
+    "gen": "gen3",
+    "cid": 392,
+    "liters": 6.4,
+    "hp": 475,
+    "hp_basis": "SAE net",
+    "name": "6.4L / 392 V8",
+    "rpo": "392 Hemi (SRT 6.4)",
+    "common_name": "392 Hemi",
+    "trims": [
+     "SRT 392",
+     "AWD only"
+    ],
+    "nhra": false,
+    "sources": [
+     {
+      "name": "Stellantis Media - What's New for 2023: Dodge Durango / Durango SRT",
+      "url": "https://media.stellantisnorthamerica.com/newsrelease.do?id=24607&mid=287",
+      "says": "2023: 392 HEMI V-8, 475 hp, 470 lb-ft (SRT 392)"
+     },
+     {
+      "name": "EPA fueleconomy.gov vehicle data",
+      "url": "https://www.fueleconomy.gov/feg/download.shtml",
+      "says": "2023 Durango: 6.4 L 8-cyl, Durango SRT AWD"
+     },
+     {
+      "name": "Wikipedia - Dodge Durango",
+      "url": "https://en.wikipedia.org/wiki/Dodge_Durango",
+      "says": "6.4L Hemi V8 2018-2024, 475 hp @ 6000"
+     },
+     {
+      "name": "Kelley Blue Book - 2023 Dodge Durango review/specs",
+      "url": "https://www.kbb.com/dodge/durango/2023/",
+      "says": "2023: 6.4 V8, 475 hp @ 6000 (SRT 392)"
+     }
+    ],
+    "independent_sources": 4,
+    "status": "three_sources_not_nhra"
+   },
+   {
+    "gen": "gen3",
+    "cid": 376,
+    "liters": 6.2,
+    "hp": 710,
+    "hp_basis": "SAE net",
+    "name": "6.2L / 376 supercharged V8",
+    "rpo": "Hellcat 6.2 (supercharged Hemi)",
+    "common_name": "Hellcat",
+    "trims": [
+     "SRT Hellcat (AWD)"
+    ],
+    "nhra": false,
+    "sources": [
+     {
+      "name": "Stellantis Media - What's New for 2023: Dodge Durango / Durango SRT",
+      "url": "https://media.stellantisnorthamerica.com/newsrelease.do?id=24607&mid=287",
+      "says": "2023 SRT Hellcat: supercharged 6.2 HEMI Hellcat V-8, 710 hp, 645 lb-ft"
+     },
+     {
+      "name": "EPA fueleconomy.gov vehicle data",
+      "url": "https://www.fueleconomy.gov/feg/download.shtml",
+      "says": "2023 Durango: 6.2 L 8-cyl supercharged, AWD"
+     },
+     {
+      "name": "Wikipedia - Dodge Durango",
+      "url": "https://en.wikipedia.org/wiki/Dodge_Durango",
+      "says": "6.2L supercharged Hemi 2021, 2023-present, 710 hp @ 6000; 2021-only at first, returned for 2023"
+     },
+     {
+      "name": "Kelley Blue Book - 2023 Dodge Durango review/specs",
+      "url": "https://www.kbb.com/dodge/durango/2023/",
+      "says": "2023: supercharged 6.2 V8, 710 hp"
+     }
+    ],
+    "independent_sources": 4,
+    "status": "three_sources_not_nhra",
+    "note": "Returned for 2023."
+   }
+  ],
+  "2024": [
+   {
+    "gen": "gen3",
+    "cid": 220,
+    "liters": 3.6,
+    "hp": 295,
+    "hp_basis": "SAE net",
+    "name": "3.6L / 220 V6",
+    "rpo": "Pentastar 3.6",
+    "common_name": "Pentastar V6",
+    "trims": [
+     "SXT",
+     "GT",
+     "Citadel"
+    ],
+    "nhra": false,
+    "sources": [
+     {
+      "name": "Stellantis Media - What's New for 2024: Dodge Durango",
+      "url": "https://media.stellantisnorthamerica.com/newsrelease.do?id=25188",
+      "says": "2024: 3.6 Pentastar V-6, up to 295 hp"
+     },
+     {
+      "name": "EPA fueleconomy.gov vehicle data",
+      "url": "https://www.fueleconomy.gov/feg/download.shtml",
+      "says": "2024 Durango: 3.6 L 6-cyl"
+     },
+     {
+      "name": "Wikipedia - Dodge Durango",
+      "url": "https://en.wikipedia.org/wiki/Dodge_Durango",
+      "says": "3.6L Pentastar V6 2011-present: 290 hp; 293 (single exhaust)/295 (dual exhaust) later"
+     },
+     {
+      "name": "Kelley Blue Book - 2024 Dodge Durango review/specs",
+      "url": "https://www.kbb.com/dodge/durango/2024/",
+      "says": "2024: 3.6 V6, 293 hp"
+     }
+    ],
+    "independent_sources": 4,
+    "status": "three_sources_not_nhra",
+    "note": "'Up to 295 hp' (Dodge); 293 hp with single exhaust (KBB)."
+   },
+   {
+    "gen": "gen3",
+    "cid": 345,
+    "liters": 5.7,
+    "hp": 360,
+    "hp_basis": "SAE net",
+    "name": "5.7L / 345 V8",
+    "rpo": "Hemi 5.7 (VVT, MDS)",
+    "common_name": "5.7 Hemi",
+    "trims": [
+     "R/T",
+     "Citadel (optional)"
+    ],
+    "nhra": false,
+    "sources": [
+     {
+      "name": "Stellantis Media - What's New for 2024: Dodge Durango",
+      "url": "https://media.stellantisnorthamerica.com/newsrelease.do?id=25188",
+      "says": "2024: 5.7 HEMI V-8, 360 hp, 390 lb-ft"
+     },
+     {
+      "name": "EPA fueleconomy.gov vehicle data",
+      "url": "https://www.fueleconomy.gov/feg/download.shtml",
+      "says": "2024 Durango: 5.7 L 8-cyl, RWD/AWD"
+     },
+     {
+      "name": "Wikipedia - Dodge Durango",
+      "url": "https://en.wikipedia.org/wiki/Dodge_Durango",
+      "says": "5.7L Hemi V8 2011-present, 360 hp @ 5150"
+     },
+     {
+      "name": "Kelley Blue Book - 2024 Dodge Durango review/specs",
+      "url": "https://www.kbb.com/dodge/durango/2024/",
+      "says": "2024: 5.7 V8, 360 hp"
+     }
+    ],
+    "independent_sources": 4,
+    "status": "three_sources_not_nhra"
+   },
+   {
+    "gen": "gen3",
+    "cid": 392,
+    "liters": 6.4,
+    "hp": 475,
+    "hp_basis": "SAE net",
+    "name": "6.4L / 392 V8",
+    "rpo": "392 Hemi (SRT 6.4)",
+    "common_name": "392 Hemi",
+    "trims": [
+     "SRT 392",
+     "AWD only"
+    ],
+    "nhra": false,
+    "sources": [
+     {
+      "name": "Stellantis Media - What's New for 2024: Dodge Durango",
+      "url": "https://media.stellantisnorthamerica.com/newsrelease.do?id=25188",
+      "says": "2024: 392 HEMI V-8, 475 hp, 470 lb-ft (SRT 392)"
+     },
+     {
+      "name": "EPA fueleconomy.gov vehicle data",
+      "url": "https://www.fueleconomy.gov/feg/download.shtml",
+      "says": "2024 Durango: 6.4 L 8-cyl, Durango SRT AWD"
+     },
+     {
+      "name": "Wikipedia - Dodge Durango",
+      "url": "https://en.wikipedia.org/wiki/Dodge_Durango",
+      "says": "6.4L Hemi V8 2018-2024, 475 hp @ 6000"
+     },
+     {
+      "name": "Kelley Blue Book - 2024 Dodge Durango review/specs",
+      "url": "https://www.kbb.com/dodge/durango/2024/",
+      "says": "2024: 6.4 V8, 475 hp @ 6000 (SRT 392)"
+     }
+    ],
+    "independent_sources": 4,
+    "status": "three_sources_not_nhra"
+   },
+   {
+    "gen": "gen3",
+    "cid": 376,
+    "liters": 6.2,
+    "hp": 710,
+    "hp_basis": "SAE net",
+    "name": "6.2L / 376 supercharged V8",
+    "rpo": "Hellcat 6.2 (supercharged Hemi)",
+    "common_name": "Hellcat",
+    "trims": [
+     "SRT Hellcat (AWD)"
+    ],
+    "nhra": false,
+    "sources": [
+     {
+      "name": "Stellantis Media - What's New for 2024: Dodge Durango",
+      "url": "https://media.stellantisnorthamerica.com/newsrelease.do?id=25188",
+      "says": "2024 SRT Hellcat: supercharged 6.2 HEMI Hellcat V-8, 710 hp, 645 lb-ft"
+     },
+     {
+      "name": "EPA fueleconomy.gov vehicle data",
+      "url": "https://www.fueleconomy.gov/feg/download.shtml",
+      "says": "2024 Durango: 6.2 L 8-cyl supercharged, AWD"
+     },
+     {
+      "name": "Wikipedia - Dodge Durango",
+      "url": "https://en.wikipedia.org/wiki/Dodge_Durango",
+      "says": "6.2L supercharged Hemi 2021, 2023-present, 710 hp @ 6000; 2021-only at first, returned for 2023"
+     },
+     {
+      "name": "Kelley Blue Book - 2024 Dodge Durango review/specs",
+      "url": "https://www.kbb.com/dodge/durango/2024/",
+      "says": "2024: supercharged 6.2 V8, 710 hp"
+     }
+    ],
+    "independent_sources": 4,
+    "status": "three_sources_not_nhra"
+   }
+  ],
+  "2025": [
+   {
+    "gen": "gen3",
+    "cid": 220,
+    "liters": 3.6,
+    "hp": 295,
+    "hp_basis": "SAE net",
+    "name": "3.6L / 220 V6",
+    "rpo": "Pentastar 3.6",
+    "common_name": "Pentastar V6",
+    "trims": [
+     "GT"
+    ],
+    "nhra": false,
+    "sources": [
+     {
+      "name": "Stellantis Media - 2025 Dodge Durango Fact Sheet",
+      "url": "https://media.stellantisnorthamerica.com/newsrelease.do?id=26396",
+      "says": "2025: 3.6 Pentastar V-6, up to 295 hp"
+     },
+     {
+      "name": "EPA fueleconomy.gov vehicle data",
+      "url": "https://www.fueleconomy.gov/feg/download.shtml",
+      "says": "2025 Durango: 3.6 L 6-cyl"
+     },
+     {
+      "name": "Wikipedia - Dodge Durango",
+      "url": "https://en.wikipedia.org/wiki/Dodge_Durango",
+      "says": "3.6L Pentastar V6 2011-present: 290 hp; 293 (single exhaust)/295 (dual exhaust) later"
+     },
+     {
+      "name": "Kelley Blue Book - 2025 Dodge Durango review/specs",
+      "url": "https://www.kbb.com/dodge/durango/2025/",
+      "says": "2025: 3.6 V6, 293 hp"
+     }
+    ],
+    "independent_sources": 4,
+    "status": "three_sources_not_nhra",
+    "note": "'Up to 295 hp' (Dodge); 293 hp with single exhaust (KBB)."
+   },
+   {
+    "gen": "gen3",
+    "cid": 345,
+    "liters": 5.7,
+    "hp": 360,
+    "hp_basis": "SAE net",
+    "name": "5.7L / 345 V8",
+    "rpo": "Hemi 5.7 (VVT, MDS)",
+    "common_name": "5.7 Hemi",
+    "trims": [
+     "R/T"
+    ],
+    "nhra": false,
+    "sources": [
+     {
+      "name": "Stellantis Media - 2025 Dodge Durango Fact Sheet",
+      "url": "https://media.stellantisnorthamerica.com/newsrelease.do?id=26396",
+      "says": "2025: 5.7 HEMI V-8, 360 hp, 390 lb-ft"
+     },
+     {
+      "name": "EPA fueleconomy.gov vehicle data",
+      "url": "https://www.fueleconomy.gov/feg/download.shtml",
+      "says": "2025 Durango: 5.7 L 8-cyl, RWD/AWD"
+     },
+     {
+      "name": "Wikipedia - Dodge Durango",
+      "url": "https://en.wikipedia.org/wiki/Dodge_Durango",
+      "says": "5.7L Hemi V8 2011-present, 360 hp @ 5150"
+     },
+     {
+      "name": "Kelley Blue Book - 2025 Dodge Durango review/specs",
+      "url": "https://www.kbb.com/dodge/durango/2025/",
+      "says": "2025: 5.7 V8, 360 hp"
+     }
+    ],
+    "independent_sources": 4,
+    "status": "three_sources_not_nhra"
+   },
+   {
+    "gen": "gen3",
+    "cid": 376,
+    "liters": 6.2,
+    "hp": 710,
+    "hp_basis": "SAE net",
+    "name": "6.2L / 376 supercharged V8",
+    "rpo": "Hellcat 6.2 (supercharged Hemi)",
+    "common_name": "Hellcat",
+    "trims": [
+     "SRT Hellcat (AWD)"
+    ],
+    "nhra": false,
+    "sources": [
+     {
+      "name": "Stellantis Media - 2025 Dodge Durango Fact Sheet",
+      "url": "https://media.stellantisnorthamerica.com/newsrelease.do?id=26396",
+      "says": "2025 SRT Hellcat: supercharged 6.2 HEMI Hellcat V-8, 710 hp, 645 lb-ft"
+     },
+     {
+      "name": "EPA fueleconomy.gov vehicle data",
+      "url": "https://www.fueleconomy.gov/feg/download.shtml",
+      "says": "2025 Durango: 6.2 L 8-cyl supercharged, AWD"
+     },
+     {
+      "name": "Wikipedia - Dodge Durango",
+      "url": "https://en.wikipedia.org/wiki/Dodge_Durango",
+      "says": "6.2L supercharged Hemi 2021, 2023-present, 710 hp @ 6000; 2021-only at first, returned for 2023"
+     },
+     {
+      "name": "Kelley Blue Book - 2025 Dodge Durango review/specs",
+      "url": "https://www.kbb.com/dodge/durango/2025/",
+      "says": "2025: supercharged 6.2 V8, 710 hp"
+     }
+    ],
+    "independent_sources": 4,
+    "status": "three_sources_not_nhra"
+   }
+  ],
+  "2026": [
+   {
+    "gen": "gen3",
+    "cid": 220,
+    "liters": 3.6,
+    "hp": 295,
+    "hp_basis": "SAE net",
+    "name": "3.6L / 220 V6",
+    "rpo": "Pentastar 3.6",
+    "common_name": "Pentastar V6",
+    "trims": [
+     "GT (V-6)"
+    ],
+    "nhra": false,
+    "sources": [
+     {
+      "name": "Stellantis Media - Dodge reopens orders for Durango GT Pentastar V-6 (Nov 19, 2025)",
+      "url": "https://media.stellantisnorthamerica.com/newsrelease.do?id=27268&mid=1",
+      "says": "Nov 2025: orders reopened for 2026 Durango GT with 3.6 Pentastar V-6, 295 hp"
+     },
+     {
+      "name": "EPA fueleconomy.gov vehicle data",
+      "url": "https://www.fueleconomy.gov/feg/download.shtml",
+      "says": "2026 Durango: 3.6 L 6-cyl"
+     },
+     {
+      "name": "Wikipedia - Dodge Durango",
+      "url": "https://en.wikipedia.org/wiki/Dodge_Durango",
+      "says": "3.6L Pentastar V6 2011-present: 290 hp; 293 (single exhaust)/295 (dual exhaust) later"
+     },
+     {
+      "name": "Kelley Blue Book - 2026 Dodge Durango review/specs",
+      "url": "https://www.kbb.com/dodge/durango/2026/",
+      "says": "2026: 3.6 V6, 295 hp"
+     },
+     {
+      "name": "Stellantis Media - The 392 Roars Again: 2026 Durango R/T 392 (Mar 24, 2026)",
+      "url": "https://media.stellantisnorthamerica.com/newsrelease.do?id=27598&mid=1",
+      "says": "2026 lineup: GT (V-6) 295 hp"
+     }
+    ],
+    "independent_sources": 4,
+    "status": "three_sources_not_nhra",
+    "note": "Dodge dropped the V-6 for 2026 in Aug 2025 (HEMI standard), then reopened V-6 GT orders on Nov 19, 2025; EPA lists the 2026 3.6 RWD/AWD."
+   },
+   {
+    "gen": "gen3",
+    "cid": 345,
+    "liters": 5.7,
+    "hp": 360,
+    "hp_basis": "SAE net",
+    "name": "5.7L / 345 V8",
+    "rpo": "Hemi 5.7 (VVT, MDS)",
+    "common_name": "5.7 Hemi",
+    "trims": [
+     "GT HEMI (AWD)"
+    ],
+    "nhra": false,
+    "sources": [
+     {
+      "name": "Stellantis Media - HEMI V-8 standard across 2026 Dodge Durango lineup",
+      "url": "https://media.stellantisnorthamerica.com/newsrelease.do?id=26972",
+      "says": "2026 Durango GT: 5.7-liter HEMI V-8, 360 hp, 390 lb-ft"
+     },
+     {
+      "name": "Stellantis Media - The 392 Roars Again: 2026 Durango R/T 392 (Mar 24, 2026)",
+      "url": "https://media.stellantisnorthamerica.com/newsrelease.do?id=27598&mid=1",
+      "says": "GT HEMI AWD: 360 hp"
+     },
+     {
+      "name": "EPA fueleconomy.gov vehicle data",
+      "url": "https://www.fueleconomy.gov/feg/download.shtml",
+      "says": "2026 Durango: 5.7 L 8-cyl, AWD only"
+     },
+     {
+      "name": "Wikipedia - Dodge Durango",
+      "url": "https://en.wikipedia.org/wiki/Dodge_Durango",
+      "says": "5.7L Hemi V8 2011-present, 360 hp"
+     },
+     {
+      "name": "Kelley Blue Book - 2026 Dodge Durango review/specs",
+      "url": "https://www.kbb.com/dodge/durango/2026/",
+      "says": "2026: V8 HEMI 5.7 L, 360 hp (GT HEMI)"
+     }
+    ],
+    "independent_sources": 4,
+    "status": "three_sources_not_nhra",
+    "note": "2026: R/T moved to the 6.4; the 5.7 is now the GT HEMI, AWD only per EPA."
+   },
+   {
+    "gen": "gen3",
+    "cid": 392,
+    "liters": 6.4,
+    "hp": 475,
+    "hp_basis": "SAE net",
+    "name": "6.4L / 392 V8",
+    "rpo": "392 Hemi (SRT 6.4)",
+    "common_name": "392 Hemi",
+    "trims": [
+     "R/T 392 (AWD)"
+    ],
+    "nhra": false,
+    "sources": [
+     {
+      "name": "Stellantis Media - The 392 Roars Again: 2026 Durango R/T 392 (Mar 24, 2026)",
+      "url": "https://media.stellantisnorthamerica.com/newsrelease.do?id=27598&mid=1",
+      "says": "2026 Durango R/T 392: 6.4L HEMI V-8, 475 hp, 470 lb-ft"
+     },
+     {
+      "name": "Stellantis Media - HEMI V-8 standard across 2026 Dodge Durango lineup",
+      "url": "https://media.stellantisnorthamerica.com/newsrelease.do?id=26972",
+      "says": "Durango R/T: 392 HEMI V-8 (6.4 L), 475 hp, first time on R/T"
+     },
+     {
+      "name": "EPA fueleconomy.gov vehicle data",
+      "url": "https://www.fueleconomy.gov/feg/download.shtml",
+      "says": "2026 Durango: 6.4 L 8-cyl, AWD"
+     },
+     {
+      "name": "Wikipedia - Dodge Durango",
+      "url": "https://en.wikipedia.org/wiki/Dodge_Durango",
+      "says": "6.4L Hemi returned for 2026 in the R/T 392"
+     },
+     {
+      "name": "Kelley Blue Book - 2026 Dodge Durango review/specs",
+      "url": "https://www.kbb.com/dodge/durango/2026/",
+      "says": "2026: V8 HEMI 6.4 L, 475 hp (R/T 392)"
+     }
+    ],
+    "independent_sources": 4,
+    "status": "three_sources_not_nhra",
+    "note": "Returns after the 2025 gap, now in the R/T 392."
+   },
+   {
+    "gen": "gen3",
+    "cid": 376,
+    "liters": 6.2,
+    "hp": 710,
+    "hp_basis": "SAE net",
+    "name": "6.2L / 376 supercharged V8",
+    "rpo": "Hellcat 6.2 (supercharged Hemi)",
+    "common_name": "Hellcat",
+    "trims": [
+     "SRT Hellcat (AWD)"
+    ],
+    "nhra": false,
+    "sources": [
+     {
+      "name": "Stellantis Media - HEMI V-8 standard across 2026 Dodge Durango lineup",
+      "url": "https://media.stellantisnorthamerica.com/newsrelease.do?id=26972",
+      "says": "2026 SRT Hellcat: supercharged 6.2 HEMI V-8, 710 hp, 645 lb-ft"
+     },
+     {
+      "name": "EPA fueleconomy.gov vehicle data",
+      "url": "https://www.fueleconomy.gov/feg/download.shtml",
+      "says": "2026 Durango: 6.2 L 8-cyl supercharged, AWD"
+     },
+     {
+      "name": "Wikipedia - Dodge Durango",
+      "url": "https://en.wikipedia.org/wiki/Dodge_Durango",
+      "says": "6.2L supercharged Hemi 2021, 2023-present, 710 hp @ 6000; 2021-only at first, returned for 2023"
+     },
+     {
+      "name": "Kelley Blue Book - 2026 Dodge Durango review/specs",
+      "url": "https://www.kbb.com/dodge/durango/2026/",
+      "says": "2026: supercharged 6.2 V8, 710 hp"
+     }
+    ],
+    "independent_sources": 4,
+    "status": "three_sources_not_nhra"
+   }
+  ]
+ },
+ "source_index": [
+  {
+   "name": "MotorWeek - 1998 Dodge Durango road test",
+   "url": "https://motorweek.org/road_tests/1998_dodge_durango/",
+   "type": "publication"
+  },
+  {
+   "name": "EPA fueleconomy.gov vehicle data",
+   "url": "https://www.fueleconomy.gov/feg/download.shtml",
+   "type": "government"
+  },
+  {
+   "name": "Wikipedia - Dodge Durango",
+   "url": "https://en.wikipedia.org/wiki/Dodge_Durango",
+   "type": "wikipedia"
+  },
+  {
+   "name": "Consumer Guide - 1998-03 Dodge Durango used-car review",
+   "url": "https://consumerguide.com/used/1998-03-dodge-durango/",
+   "type": "publication"
+  },
+  {
+   "name": "Kelley Blue Book - 1998 Dodge Durango review/specs",
+   "url": "https://www.kbb.com/dodge/durango/1998/",
+   "type": "publication"
+  },
+  {
+   "name": "Kelley Blue Book - 1999 Dodge Durango review/specs",
+   "url": "https://www.kbb.com/dodge/durango/1999/",
+   "type": "publication"
+  },
+  {
+   "name": "The Truth About Cars - Rare Rides: 1999 Dodge Durango Shelby SP-360",
+   "url": "https://thetruthaboutcars.com/2020/09/rare-rides-a-1999-dodge-durango-shelby-sp-360-a-subtle-family-suv/",
+   "type": "publication"
+  },
+  {
+   "name": "Auto123 - 2-wheel-drive sport-utes disappear from Chrysler lineup (2000 Durango)",
+   "url": "https://www.auto123.com/en/news/2-wheel-drive-sport-utes-disappear-from-chrysler-lineup/46697/",
+   "type": "publication"
+  },
+  {
+   "name": "Kelley Blue Book - 2000 Dodge Durango review/specs",
+   "url": "https://www.kbb.com/dodge/durango/2000/",
+   "type": "publication"
+  },
+  {
+   "name": "Auto123 - Sportier sport-ute coming (2000 Durango Sport)",
+   "url": "https://www.auto123.com/en/news/sportier-sport-ute-coming/46739/",
+   "type": "publication"
+  },
+  {
+   "name": "Kelley Blue Book - 2001 Dodge Durango review/specs",
+   "url": "https://www.kbb.com/dodge/durango/2001/",
+   "type": "publication"
+  },
+  {
+   "name": "Autotrader.ca research - 2003 Dodge Durango trims",
+   "url": "https://www.autotrader.ca/research/dodge/durango/2003/",
+   "type": "publication"
+  },
+  {
+   "name": "MotorWeek - 2002 Dodge Durango R/T road test",
+   "url": "https://www.motorweek.org/reviews/road_tests/2002_dodge_durango_r_t_program_2110",
+   "type": "publication"
+  },
+  {
+   "name": "Kelley Blue Book - 2003 Dodge Durango review/specs",
+   "url": "https://www.kbb.com/dodge/durango/2003/",
+   "type": "publication"
+  },
+  {
+   "name": "Stellantis Media - 2004 Dodge Durango Specifications",
+   "url": "https://media.stellantisnorthamerica.com/newsrelease.do?id=412&fIId=43",
+   "type": "manufacturer"
+  },
+  {
+   "name": "Consumer Guide - 2004-09 Dodge Durango used-car review",
+   "url": "https://consumerguide.com/used/2004-09-dodge-durango/",
+   "type": "publication"
+  },
+  {
+   "name": "Stellantis Media - Dodge Durango What's New for 2005",
+   "url": "https://media.stellantisnorthamerica.com/newsrelease.do?id=457&fIId=123&mid=5",
+   "type": "manufacturer"
+  },
+  {
+   "name": "Stellantis Media - 2007 Dodge Durango: Bold New Look",
+   "url": "https://media.stellantisnorthamerica.com/newsrelease.do?id=4980",
+   "type": "manufacturer"
+  },
+  {
+   "name": "Stellantis Media - 2008 Dodge Durango's New 4.7-liter V-8",
+   "url": "https://media.stellantisnorthamerica.com/newsrelease.do?id=7228&mid=287",
+   "type": "manufacturer"
+  },
+  {
+   "name": "Kelley Blue Book - 2008 Dodge Durango review/specs",
+   "url": "https://www.kbb.com/dodge/durango/2008/",
+   "type": "publication"
+  },
+  {
+   "name": "Stellantis Media - 2009 Dodge Durango Offers Hybrid Efficiency",
+   "url": "https://media.stellantisnorthamerica.com/newsrelease.do?id=8094",
+   "type": "manufacturer"
+  },
+  {
+   "name": "Kelley Blue Book - 2009 Dodge Durango review/specs",
+   "url": "https://www.kbb.com/dodge/durango/2009/",
+   "type": "publication"
+  },
+  {
+   "name": "Stellantis Media - New 2009 Chrysler Aspen HEMI Hybrid and Dodge Durango HEMI Hybrid",
+   "url": "https://media.stellantisnorthamerica.com/newsrelease.do?id=7464&mid=195",
+   "type": "manufacturer"
+  },
+  {
+   "name": "Guide Auto Web (The Car Guide) - 2009 Dodge Durango",
+   "url": "https://www.guideautoweb.com/en/makes/dodge/durango/2009/",
+   "type": "publication"
+  },
+  {
+   "name": "Stellantis Media - 2011 Dodge Durango press kit",
+   "url": "https://media.stellantisnorthamerica.com/newsrelease.do?id=10265&fIId=10194&mid=287",
+   "type": "manufacturer"
+  },
+  {
+   "name": "Kelley Blue Book - 2011 Dodge Durango review/specs",
+   "url": "https://www.kbb.com/dodge/durango/2011/",
+   "type": "publication"
+  },
+  {
+   "name": "Stellantis Media - 2012 Dodge Durango press kit",
+   "url": "https://media.stellantisnorthamerica.com/newsrelease.do?id=11402&mid=287",
+   "type": "manufacturer"
+  },
+  {
+   "name": "Kelley Blue Book - 2012 Dodge Durango review/specs",
+   "url": "https://www.kbb.com/dodge/durango/2012/",
+   "type": "publication"
+  },
+  {
+   "name": "Stellantis Media - Dodge Durango Rallye Appearance Package (2013)",
+   "url": "https://media.stellantisnorthamerica.com/newsrelease.do?id=12858&mid=5",
+   "type": "manufacturer"
+  },
+  {
+   "name": "Kelley Blue Book - 2013 Dodge Durango review/specs",
+   "url": "https://www.kbb.com/dodge/durango/2013/",
+   "type": "publication"
+  },
+  {
+   "name": "Stellantis Media - The New 2014 Dodge Durango",
+   "url": "https://media.stellantisnorthamerica.com/newsrelease.do?id=14010",
+   "type": "manufacturer"
+  },
+  {
+   "name": "Kelley Blue Book - 2014 Dodge Durango review/specs",
+   "url": "https://www.kbb.com/dodge/durango/2014/",
+   "type": "publication"
+  },
+  {
+   "name": "Stellantis Media - 2015 Dodge Durango",
+   "url": "https://media.stellantisnorthamerica.com/newsrelease.do?id=15849&mid=287",
+   "type": "manufacturer"
+  },
+  {
+   "name": "Kelley Blue Book - 2015 Dodge Durango review/specs",
+   "url": "https://www.kbb.com/dodge/durango/2015/",
+   "type": "publication"
+  },
+  {
+   "name": "Stellantis Media - 2016 Dodge Durango",
+   "url": "https://media.stellantisnorthamerica.com/newsrelease.do?id=16749",
+   "type": "manufacturer"
+  },
+  {
+   "name": "Kelley Blue Book - 2016 Dodge Durango review/specs",
+   "url": "https://www.kbb.com/dodge/durango/2016/",
+   "type": "publication"
+  },
+  {
+   "name": "Stellantis Media - 2017 Dodge Durango Fact Sheet",
+   "url": "https://media.stellantisnorthamerica.com/newsrelease.do?id=17597",
+   "type": "manufacturer"
+  },
+  {
+   "name": "Kelley Blue Book - 2017 Dodge Durango review/specs",
+   "url": "https://www.kbb.com/dodge/durango/2017/",
+   "type": "publication"
+  },
+  {
+   "name": "Stellantis Media - 2018 Dodge Durango Fact Sheet",
+   "url": "https://media.stellantisnorthamerica.com/newsrelease.do?id=18361",
+   "type": "manufacturer"
+  },
+  {
+   "name": "Kelley Blue Book - 2018 Dodge Durango review/specs",
+   "url": "https://www.kbb.com/dodge/durango/2018/",
+   "type": "publication"
+  },
+  {
+   "name": "Stellantis Media - 2019 Dodge Durango Fact Sheet",
+   "url": "https://media.stellantisnorthamerica.com/newsrelease.do?id=20049",
+   "type": "manufacturer"
+  },
+  {
+   "name": "Kelley Blue Book - 2019 Dodge Durango review/specs",
+   "url": "https://www.kbb.com/dodge/durango/2019/",
+   "type": "publication"
+  },
+  {
+   "name": "Kelley Blue Book - 2020 Dodge Durango review/specs",
+   "url": "https://www.kbb.com/dodge/durango/2020/",
+   "type": "publication"
+  },
+  {
+   "name": "Stellantis Media - 2021 Dodge Durango / Durango SRT Fact Sheet",
+   "url": "https://media.stellantisnorthamerica.com/newsrelease.do?id=22104",
+   "type": "manufacturer"
+  },
+  {
+   "name": "Kelley Blue Book - 2021 Dodge Durango review/specs",
+   "url": "https://www.kbb.com/dodge/durango/2021/",
+   "type": "publication"
+  },
+  {
+   "name": "Stellantis Media - 2022 Dodge Durango / Durango SRT Fact Sheet",
+   "url": "https://media.stellantisnorthamerica.com/newsrelease.do?id=22921",
+   "type": "manufacturer"
+  },
+  {
+   "name": "Kelley Blue Book - 2022 Dodge Durango review/specs",
+   "url": "https://www.kbb.com/dodge/durango/2022/",
+   "type": "publication"
+  },
+  {
+   "name": "Stellantis Media - What's New for 2023: Dodge Durango / Durango SRT",
+   "url": "https://media.stellantisnorthamerica.com/newsrelease.do?id=24607&mid=287",
+   "type": "manufacturer"
+  },
+  {
+   "name": "Kelley Blue Book - 2023 Dodge Durango review/specs",
+   "url": "https://www.kbb.com/dodge/durango/2023/",
+   "type": "publication"
+  },
+  {
+   "name": "Stellantis Media - What's New for 2024: Dodge Durango",
+   "url": "https://media.stellantisnorthamerica.com/newsrelease.do?id=25188",
+   "type": "manufacturer"
+  },
+  {
+   "name": "Kelley Blue Book - 2024 Dodge Durango review/specs",
+   "url": "https://www.kbb.com/dodge/durango/2024/",
+   "type": "publication"
+  },
+  {
+   "name": "Stellantis Media - 2025 Dodge Durango Fact Sheet",
+   "url": "https://media.stellantisnorthamerica.com/newsrelease.do?id=26396",
+   "type": "manufacturer"
+  },
+  {
+   "name": "Kelley Blue Book - 2025 Dodge Durango review/specs",
+   "url": "https://www.kbb.com/dodge/durango/2025/",
+   "type": "publication"
+  },
+  {
+   "name": "Stellantis Media - Dodge reopens orders for Durango GT Pentastar V-6 (Nov 19, 2025)",
+   "url": "https://media.stellantisnorthamerica.com/newsrelease.do?id=27268&mid=1",
+   "type": "manufacturer"
+  },
+  {
+   "name": "Kelley Blue Book - 2026 Dodge Durango review/specs",
+   "url": "https://www.kbb.com/dodge/durango/2026/",
+   "type": "publication"
+  },
+  {
+   "name": "Stellantis Media - The 392 Roars Again: 2026 Durango R/T 392 (Mar 24, 2026)",
+   "url": "https://media.stellantisnorthamerica.com/newsrelease.do?id=27598&mid=1",
+   "type": "manufacturer"
+  },
+  {
+   "name": "Stellantis Media - HEMI V-8 standard across 2026 Dodge Durango lineup",
+   "url": "https://media.stellantisnorthamerica.com/newsrelease.do?id=26972",
+   "type": "manufacturer"
+  }
+ ]
+}

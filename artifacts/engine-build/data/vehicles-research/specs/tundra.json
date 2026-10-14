@@ -1,0 +1,56 @@
+{
+ "metric_from": 1900,
+ "make": "Toyota",
+ "model": "Tundra",
+ "makeSlug": "toyota",
+ "slug": "tundra",
+ "title": "Toyota Tundra Engines by Year (2000–2026)",
+ "description": "Every factory engine in the Toyota Tundra by year, 2000–2026: the 3.4 and 4.0 V6s, the 4.7, 4.6 and 5.7 V8s, and the twin-turbo i-FORCE and hybrid V6.",
+ "intro": [
+  "Toyota's full-size Tundra pickup arrived for 2000, built in Indiana and later in Texas. Hybrid ratings are for engine and motor combined; dealer-installed TRD superchargers are not listed.",
+  "Pick a year to see every engine offered that model year, with its code, rated horsepower and the trims it came in. Each engine links to its full specs."
+ ],
+ "generations": [
+  {
+   "key": "gen1",
+   "name": "First generation",
+   "years": [
+    2000,
+    2006
+   ],
+   "intro": [
+    "The 3.4 5VZ-FE V6 and the 4.7 2UZ-FE V8, then the 4.0 1GR-FE V6 from 2005; ratings from 2006 reflect a change in the SAE test."
+   ]
+  },
+  {
+   "key": "gen2",
+   "name": "Second generation",
+   "years": [
+    2007,
+    2021
+   ],
+   "intro": [
+    "The 4.0 V6, the 4.7 and then 4.6 V8, and the 5.7 3UR-FE V8, the only engine from 2020."
+   ]
+  },
+  {
+   "key": "gen3",
+   "name": "Third generation",
+   "years": [
+    2022,
+    2026
+   ],
+   "intro": [
+    "The 3.4 V35A-FTS twin-turbo V6 in three outputs, including the i-FORCE MAX hybrid."
+   ]
+  }
+ ],
+ "files": [
+  "verify_toyota-tundra-2000-2026.json"
+ ],
+ "merge_trims": true,
+ "cid_remap": {
+  "207": 206
+ },
+ "draft": true
+}

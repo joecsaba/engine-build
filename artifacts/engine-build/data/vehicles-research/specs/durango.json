@@ -1,0 +1,55 @@
+{
+ "make": "Dodge",
+ "model": "Durango",
+ "makeSlug": "dodge",
+ "slug": "durango",
+ "title": "Dodge Durango Engines by Year (1998–2026)",
+ "description": "Every factory engine in the Dodge Durango by year, 1998–2026: Magnum and PowerTech V6s and V8s, the 5.7 Hemi and hybrid, the Pentastar, the 392 and Hellcat.",
+ "intro": [
+  "Dodge launched the Durango for 1998 on the Dakota's frame. The second generation ended in December 2008, so there was no 2010 model; the third generation arrived for 2011 on a unibody shared with the Jeep Grand Cherokee.",
+  "Pick a year to see every engine offered that model year, with its code, rated horsepower and the trims it came in. Each engine links to its full specs."
+ ],
+ "generations": [
+  {
+   "key": "gen1",
+   "name": "First generation",
+   "years": [
+    1998,
+    2003
+   ],
+   "intro": [
+    "The 3.9, 5.2 and 5.9 Magnum engines, and the 4.7 PowerTech V8 from 2000."
+   ]
+  },
+  {
+   "key": "gen2",
+   "name": "Second generation",
+   "years": [
+    2004,
+    2009
+   ],
+   "intro": [
+    "The 3.7 V6, the 4.7 V8 and the 5.7 Hemi, with a two-mode hybrid for 2009."
+   ]
+  },
+  {
+   "key": "gen3",
+   "name": "Third generation",
+   "years": [
+    2011,
+    2026
+   ],
+   "intro": [
+    "The 3.6 Pentastar V6, the 5.7 Hemi, the 6.4 in the SRT and R/T 392, and the supercharged Hellcat."
+   ]
+  }
+ ],
+ "files": [
+  "verify_dodge-durango-1998-2026.json"
+ ],
+ "merge_trims": true,
+ "desc_strip": [
+  "\\s*\\((2008 redesign|VVT, MDS)\\)"
+ ],
+ "draft": true
+}

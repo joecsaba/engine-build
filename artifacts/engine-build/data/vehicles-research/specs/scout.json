@@ -1,0 +1,65 @@
+{
+ "make": "International",
+ "model": "Scout",
+ "makeSlug": "international",
+ "slug": "scout",
+ "title": "International Scout Engines (1961–1980)",
+ "description": "Every factory engine in the International Scout by year, 1961–1980: the Comanche fours, AMC sixes, IH V-266, V-304 and V-345 V8s, and the Nissan diesels.",
+ "intro": [
+  "International Harvester built the Scout from 1961 to 1980: the Scout 80, the Scout 800 series and the Scout II, with the Terra and Traveler from 1976. IH quoted gross horsepower through 1972 and net from 1973.",
+  "Pick a year to see every engine offered that model year, with its code, rated horsepower and the trims it came in. Each engine links to its full specs."
+ ],
+ "generations": [
+  {
+   "key": "scout80",
+   "name": "Scout 80",
+   "years": [
+    1961,
+    1965
+   ],
+   "intro": [
+    "The 152 Comanche four, half of IH's 304 V8."
+   ]
+  },
+  {
+   "key": "scout800",
+   "name": "Scout 800, 800A and 800B",
+   "years": [
+    1966,
+    1971
+   ],
+   "intro": [
+    "The 152 and 196 fours, a turbocharged 152, the AMC 232 six, and the IH V-266 and V-304."
+   ]
+  },
+  {
+   "key": "scout2",
+   "name": "Scout II",
+   "years": [
+    1972,
+    1980
+   ],
+   "intro": [
+    "The 196 four, the AMC 258 six for 1972, the V-304 and V-345, and the Nissan SD33 diesel from 1976 and SD33T turbodiesel for 1980."
+   ]
+  }
+ ],
+ "files": [
+  "verify_international-scout-1961-1980.json"
+ ],
+ "merge_trims": true,
+ "family_overrides": [
+  {
+   "years": [
+    1969,
+    1974
+   ],
+   "cid": [
+    232,
+    258
+   ],
+   "url": "/engines/jeep/amc-i6"
+  }
+ ],
+ "draft": true
+}

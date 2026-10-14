@@ -12,11 +12,14 @@ export function hpText(e) {
   if (e.hp == null && !e.hpRange) return "—";
   const v = e.hpRange ? `${e.hpRange[0]}–${e.hpRange[1]}` : e.hp;
   if (e.electric) return `${v} hp`;
+  // Porsche quoted many US ratings only in metric (DIN) horsepower
+  if (e.hpBasis === "din") return `${v} PS (DIN)`;
   return `${v} hp ${e.hpBasis === "net" ? "net" : "gross"}`;
 }
 
 /** One row of a "Factory cars" list: "1969, L78, 375 hp" */
 export function factoryCarLabel(r) {
-  const hp = r.hpRange ? `${r.hpRange[0]}–${r.hpRange[1]} hp` : r.hp != null ? `${r.hp} hp` : null;
+  const unit = r.hpBasis === "din" ? "PS" : "hp";
+  const hp = r.hpRange ? `${r.hpRange[0]}–${r.hpRange[1]} ${unit}` : r.hp != null ? `${r.hp} ${unit}` : null;
   return [r.year, r.code, hp].filter(Boolean).join(", ");
 }

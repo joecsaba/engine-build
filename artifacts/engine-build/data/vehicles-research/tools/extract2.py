@@ -62,6 +62,18 @@ JOBS = {
   "subaru-wrx-2002-2026": (None, None, r"^Subaru$", r"^WRX|^Impreza", "2002-2026"),
   "acura-integra-1986-2026": (None, None, r"^Acura$", r"^Integra", "1986-2026"),
   "mitsubishi-eclipse-1990-2012": (None, None, r"^Mitsubishi$", r"^Eclipse(?! Cross)", "1990-2012"),
+  # batch 6 (2026-10-13)
+  "dodge-ramcharger-1974-1993": (r"^Dodge$", r"RAMCHARGER", r"^Dodge$", r"Ramcharger", "1974-1993"),
+  "dodge-durango-1998-2026": (r"^Dodge$", r"DURANGO", r"^Dodge$", r"^Durango", "1998-2026"),
+  "toyota-tundra-2000-2026": (None, None, r"^Toyota$", r"^Tundra", "2000-2026"),
+  "international-scout-1961-1980": (None, None, r"^International", r"Scout", "1961-1980"),
+  "chevrolet-3100-1947-1959": (r"^Chevrolet$", r"PICKUP|3100|APACHE|CAMEO", r"^Chevrolet$", r"^$", "1947-1959"),
+  "ford-crown-victoria-1980-2012": (r"^Ford$", r"CROWN VIC|LTD", r"^Ford$", r"Crown Victoria|^LTD$", "1980-2012"),
+  "mercury-grand-marquis-1975-2011": (r"^Mercury$", r"MARQUIS", r"^Mercury$", r"Marquis", "1975-2011"),
+  "mercury-marauder-1963-2004": (r"^Mercury$", r"MARAUDER", r"^Mercury$", r"Marauder", "1963-1965,1969-1970,2003-2004"),
+  "chrysler-300-1955-2023": (r"^Chrysler$", r"300", r"^Chrysler$", r"^300", "1955-1971,1979-1979,1999-2004,2005-2023"),
+  "dodge-magnum-1978-2008": (r"^Dodge$", r"MAGNUM", r"^Dodge$", r"^Magnum", "1978-1979,2005-2008"),
+  "porsche-911-1965-2026": (None, None, r"^Porsche$", r"^911", "1965-2026"),
 }
 
 def spans(s):

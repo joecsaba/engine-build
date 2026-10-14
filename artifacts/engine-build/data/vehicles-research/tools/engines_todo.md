@@ -96,3 +96,10 @@ or 2 reputable sources that agree (second pass). Specs go in public/data/engines
 - Miata 2006 LF-VE (170 vs 166), Tahoe 1996 L31 (255 vs 250), Tahoe 2008 L92 (one source), Eclipse 2001 6G72 (205 vs 200),
   Suburban 1968 396 and 1975–78 454, Ram HD 2006–08 5.7 Hemi (345 vs 330), Ram HD 2021 6.7 HO (420 vs 400), Z 1972–73, 1977–78, 1980 and 1988–89.
 - Left off entirely (one or two sources): Civic 2007 GX, 2018–19 Sport/Type R years with one source, 2025 Type R; Z 1975 260Z; Suburban 2014 6.0; Ram HD 5.7 CNG 2015/2017–18, 2017 6.7 HO.
+
+## Batch 6 — no spec page yet
+| Engine | Size | Used in |
+|---|---|---|
+| Chrysler FirePower Hemi (first generation) 331 / 354 / 392 | 331 / 354 / 392 ci | Chrysler 300 letter cars 1955–1958 (392 unlinked: the same-size page is the modern 6.4) |
+| International Comanche 4-152 / 4-152T / 4-196; IH V-266 / V-304 / V-345 | 152 / 196 / 266 / 304 / 345 ci | Scout 1961–1980 (no International engine pages yet) |
+| Nissan SD33 / SD33T diesels | 198 ci | Scout 1976–1980 |

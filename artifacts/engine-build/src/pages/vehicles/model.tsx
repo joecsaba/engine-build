@@ -152,6 +152,15 @@ export default function VehicleModelPage() {
   );
 }
 
+// One label when every engine that year shares a rating basis; "rated output" when
+// they differ (a Porsche year can mix US SAE ratings and DIN-only figures).
+function basisLabel(engines: VehicleEngine[]) {
+  const b = new Set(engines.filter((e) => !e.electric && e.hp != null).map((e) => e.hpBasis));
+  if (b.size !== 1) return b.size ? "rated output" : "ratings";
+  const only = [...b][0];
+  return only === "net" ? "SAE net hp" : only === "din" ? "DIN rating" : "gross hp";
+}
+
 function YearTable({ year, label, model, engines }: { year: number; label: string; model: string; engines: VehicleEngine[] }) {
   const road = engines.filter((e) => !e.race);
   const race = engines.filter((e) => e.race);
@@ -161,7 +170,7 @@ function YearTable({ year, label, model, engines }: { year: number; label: strin
         {label} {model} engines{" "}
         <span className="text-sm font-normal text-muted-foreground">
           {road.length} engine{road.length === 1 ? "" : "s"} ·{" "}
-          {road.every((e) => e.electric) ? "electric" : road[0]?.hpBasis === "net" ? "SAE net hp" : "gross hp"}
+          {road.every((e) => e.electric) ? "electric" : basisLabel(road)}
         </span>
       </h3>
       <div className="overflow-x-auto rounded-lg border">

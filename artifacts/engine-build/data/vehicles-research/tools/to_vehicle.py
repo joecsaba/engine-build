@@ -214,7 +214,8 @@ for fn in spec["files"]:
                 "hp": None if e.get("hp_confirmed") is False else e.get("hp"),
                 # US makers quoted SAE net from 1972 on; research files sometimes
                 # labeled later ratings "gross", so the year decides, not the label.
-                "hpBasis": "net" if year >= 1972 else (e.get("hp_basis") or "gross"),
+                "hpBasis": "din" if spec.get("din_from_research") and re.search(r"DIN", str(e.get("hp_basis") or "")) else
+                           "net" if year >= 1972 else (e.get("hp_basis") or "gross"),
                 "trims": [plain_trim(t) for t in spec.get("trims", {}).get(k, e.get("trims") or [])],
                 "note": spec.get("notes", {}).get(k) or next((v for c, v in spec.get("code_notes", {}).items() if c == split_code(e.get("rpo"))[0]), None)
                         or next((v for rx, v in spec.get("trim_notes", {}).items() if re.search(rx, " ".join(e.get("trims") or []), re.I)), None),

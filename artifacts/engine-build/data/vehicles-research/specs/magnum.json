@@ -1,0 +1,41 @@
+{
+ "make": "Dodge",
+ "model": "Magnum",
+ "makeSlug": "dodge",
+ "slug": "magnum",
+ "title": "Dodge Magnum Engines by Year (1978–2008)",
+ "description": "Every factory engine in the Dodge Magnum by year: the 318, 360 and 400 V8s of the 1978–79 coupe, and the V6s, 5.7 Hemi and SRT8 6.1 of the 2005–08 wagon.",
+ "intro": [
+  "Dodge used the Magnum name twice: for a personal-luxury coupe in 1978 and 1979, and for a rear-drive wagon from 2005 to 2008. There was no Magnum in between.",
+  "Pick a year to see every engine offered that model year, with its code, rated horsepower and the trims it came in. Each engine links to its full specs."
+ ],
+ "generations": [
+  {
+   "key": "1978-1979",
+   "name": "1978–1979 coupe",
+   "years": [
+    1978,
+    1979
+   ],
+   "intro": [
+    "The 318 and 360 small blocks and, for 1978 only, the 400 big block."
+   ]
+  },
+  {
+   "key": "lx",
+   "name": "2005–2008 wagon (LX)",
+   "years": [
+    2005,
+    2008
+   ],
+   "intro": [
+    "The 2.7 and 3.5 V6s, the 5.7 Hemi in the R/T, and the 6.1 Hemi in the 2006–2008 SRT8."
+   ]
+  }
+ ],
+ "files": [
+  "verify_dodge-magnum-1978-2008.json"
+ ],
+ "merge_trims": true,
+ "draft": true
+}

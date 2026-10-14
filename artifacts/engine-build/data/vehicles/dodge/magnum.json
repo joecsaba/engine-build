@@ -1,0 +1,864 @@
+{
+ "make": "Dodge",
+ "model": "Magnum",
+ "title": "Dodge Magnum Engines by Year (1978–2008)",
+ "description": "Every factory engine in the Dodge Magnum by year: the 318, 360 and 400 V8s of the 1978–79 coupe, and the V6s, 5.7 Hemi and SRT8 6.1 of the 2005–08 wagon.",
+ "intro": [
+  "Dodge used the Magnum name twice: for a personal-luxury coupe in 1978 and 1979, and for a rear-drive wagon from 2005 to 2008. There was no Magnum in between.",
+  "Pick a year to see every engine offered that model year, with its code, rated horsepower and the trims it came in. Each engine links to its full specs."
+ ],
+ "generations": [
+  {
+   "key": "1978-1979",
+   "name": "1978–1979 coupe",
+   "years": [
+    1978,
+    1979
+   ],
+   "intro": [
+    "The 318 and 360 small blocks and, for 1978 only, the 400 big block."
+   ]
+  },
+  {
+   "key": "lx",
+   "name": "2005–2008 wagon (LX)",
+   "years": [
+    2005,
+    2008
+   ],
+   "intro": [
+    "The 2.7 and 3.5 V6s, the 5.7 Hemi in the R/T, and the 6.1 Hemi in the 2006–2008 SRT8."
+   ]
+  }
+ ],
+ "draft": true,
+ "engines": [
+  {
+   "year": 1978,
+   "gen": "1978-1979",
+   "cid": 318,
+   "cyl": 8,
+   "name": "5.2L / 318 V8",
+   "code": null,
+   "desc": "LA 318",
+   "hp": 140,
+   "hpBasis": "net",
+   "trims": [
+    "Magnum XE",
+    "Magnum XE GT package"
+   ],
+   "note": null,
+   "nhra": true,
+   "sources": [
+    {
+     "name": "1978 Dodge Magnum XE brochure (factory, Form 81-205-8006), Magnum engine specifications and power teams",
+     "url": "https://oldcarbrochures.org/United%20States/Dodge/1978_Dodge/1978-Dodge-Magnum-XE-Brochure/slides/1978_Dodge_Magnum_XE-06-07.html"
+    },
+    {
+     "name": "Changing Times (Kiplinger), Jan 1978 new-car table",
+     "url": "https://books.google.com/books?id=QFK4AAAAIAAJ"
+    },
+    {
+     "name": "World Cars 1978 (Herald Books / Automobile Club of Italy)",
+     "url": "https://books.google.com/books?id=NHVTAAAAMAAJ"
+    }
+   ],
+   "sourceCount": 4
+  },
+  {
+   "year": 1978,
+   "gen": "1978-1979",
+   "cid": 360,
+   "cyl": 8,
+   "name": "5.9L / 360 V8",
+   "code": null,
+   "desc": "LA 360",
+   "hp": 155,
+   "hpBasis": "net",
+   "trims": [
+    "Magnum XE",
+    "Magnum XE GT package"
+   ],
+   "note": null,
+   "nhra": true,
+   "sources": [
+    {
+     "name": "1978 Dodge Magnum XE brochure (factory, Form 81-205-8006), Magnum engine specifications and power teams",
+     "url": "https://oldcarbrochures.org/United%20States/Dodge/1978_Dodge/1978-Dodge-Magnum-XE-Brochure/slides/1978_Dodge_Magnum_XE-06-07.html"
+    },
+    {
+     "name": "World Cars 1978 (Herald Books / Automobile Club of Italy)",
+     "url": "https://books.google.com/books?id=NHVTAAAAMAAJ"
+    },
+    {
+     "name": "Petersen's Big Book of Auto Repair (1981), Dodge Magnum XE engine table",
+     "url": "https://books.google.com/books?id=3uOjiKRGpZ8C"
+    },
+    {
+     "name": "James M. Flory Jr., American Cars 1973-1980 (McFarland, 2012), 1978 Dodge section",
+     "url": "https://books.google.com/books?id=yPwcDJ10TtAC"
+    }
+   ],
+   "sourceCount": 5
+  },
+  {
+   "year": 1978,
+   "gen": "1978-1979",
+   "cid": 400,
+   "cyl": 8,
+   "name": "6.6L / 400 V8",
+   "code": null,
+   "desc": "B 400",
+   "hp": 190,
+   "hpBasis": "net",
+   "trims": [
+    "Magnum XE",
+    "Magnum XE GT package"
+   ],
+   "note": null,
+   "nhra": true,
+   "sources": [
+    {
+     "name": "1978 Dodge Magnum XE brochure (factory, Form 81-205-8006), Magnum engine specifications and power teams",
+     "url": "https://oldcarbrochures.org/United%20States/Dodge/1978_Dodge/1978-Dodge-Magnum-XE-Brochure/slides/1978_Dodge_Magnum_XE-06-07.html"
+    },
+    {
+     "name": "World Cars 1978 (Herald Books / Automobile Club of Italy)",
+     "url": "https://books.google.com/books?id=NHVTAAAAMAAJ"
+    },
+    {
+     "name": "Changing Times (Kiplinger), Jan 1978 new-car table",
+     "url": "https://books.google.com/books?id=QFK4AAAAIAAJ"
+    },
+    {
+     "name": "Petersen's Big Book of Auto Repair (1981), Dodge Magnum XE engine table",
+     "url": "https://books.google.com/books?id=3uOjiKRGpZ8C"
+    },
+    {
+     "name": "James M. Flory Jr., American Cars 1973-1980 (McFarland, 2012), 1978 Dodge section",
+     "url": "https://books.google.com/books?id=yPwcDJ10TtAC"
+    }
+   ],
+   "sourceCount": 6
+  },
+  {
+   "year": 1979,
+   "gen": "1978-1979",
+   "cid": 318,
+   "cyl": 8,
+   "name": "5.2L / 318 V8",
+   "code": null,
+   "desc": "LA 318",
+   "hp": 135,
+   "hpBasis": "net",
+   "trims": [
+    "Magnum XE",
+    "Magnum XE GT package"
+   ],
+   "note": null,
+   "nhra": true,
+   "sources": [
+    {
+     "name": "1979 Dodge Magnum XE brochure (factory, Form 81-307-9018), power teams",
+     "url": "https://oldcarbrochures.org/United%20States/Dodge/1979_Dodge/1979_Dodge_Magnum_XE_Brochure/slides/1979_Dodge_Magnum_XE-08.html"
+    },
+    {
+     "name": "James M. Flory Jr., American Cars 1973-1980 (McFarland, 2012), 1979 Magnum XE section",
+     "url": "https://books.google.com/books?id=PV1uzCfmJDgC"
+    },
+    {
+     "name": "Changing Times (Kiplinger), 1979 new-car table",
+     "url": "https://books.google.com/books?id=clO4AAAAIAAJ"
+    }
+   ],
+   "sourceCount": 4
+  },
+  {
+   "year": 1979,
+   "gen": "1978-1979",
+   "cid": 360,
+   "cyl": 8,
+   "name": "5.9L / 360 V8",
+   "code": null,
+   "desc": "LA 360",
+   "hp": 150,
+   "hpBasis": "net",
+   "trims": [
+    "Magnum XE",
+    "Magnum XE GT package"
+   ],
+   "note": null,
+   "nhra": true,
+   "sources": [
+    {
+     "name": "1979 Dodge Magnum XE brochure (factory, Form 81-307-9018), power teams",
+     "url": "https://oldcarbrochures.org/United%20States/Dodge/1979_Dodge/1979_Dodge_Magnum_XE_Brochure/slides/1979_Dodge_Magnum_XE-08.html"
+    },
+    {
+     "name": "James M. Flory Jr., American Cars 1973-1980 (McFarland, 2012), 1979 Magnum XE section",
+     "url": "https://books.google.com/books?id=PV1uzCfmJDgC"
+    }
+   ],
+   "sourceCount": 3
+  },
+  {
+   "year": 1979,
+   "gen": "1978-1979",
+   "cid": 360,
+   "cyl": 8,
+   "name": "5.9L / 360 V8",
+   "code": null,
+   "desc": "LA 360",
+   "hp": 195,
+   "hpBasis": "net",
+   "trims": [
+    "Magnum XE GT package",
+    "Magnum XE with Heavy-Duty Trailer-Assist package"
+   ],
+   "note": null,
+   "nhra": true,
+   "sources": [
+    {
+     "name": "1979 Dodge Magnum XE brochure (factory, Form 81-307-9018), power teams",
+     "url": "https://oldcarbrochures.org/United%20States/Dodge/1979_Dodge/1979_Dodge_Magnum_XE_Brochure/slides/1979_Dodge_Magnum_XE-08.html"
+    },
+    {
+     "name": "James M. Flory Jr., American Cars 1973-1980 (McFarland, 2012), 1979 Magnum XE section",
+     "url": "https://books.google.com/books?id=PV1uzCfmJDgC"
+    },
+    {
+     "name": "Changing Times (Kiplinger), 1979 new-car table",
+     "url": "https://books.google.com/books?id=clO4AAAAIAAJ"
+    },
+    {
+     "name": "Wikipedia - Dodge Magnum",
+     "url": "https://en.wikipedia.org/wiki/Dodge_Magnum"
+    }
+   ],
+   "sourceCount": 5
+  },
+  {
+   "year": 2005,
+   "gen": "lx",
+   "cid": 167,
+   "cyl": 6,
+   "name": "2.7L / 167 V6",
+   "code": null,
+   "desc": "2.7 EER",
+   "hp": 190,
+   "hpBasis": "net",
+   "trims": [
+    "SE"
+   ],
+   "note": null,
+   "nhra": false,
+   "sources": [
+    {
+     "name": "EPA fueleconomy.gov vehicle data",
+     "url": "https://www.fueleconomy.gov/feg/download.shtml"
+    },
+    {
+     "name": "Wikipedia - Dodge Magnum",
+     "url": "https://en.wikipedia.org/wiki/Dodge_Magnum"
+    },
+    {
+     "name": "Consumer Guide - 2005-08 Dodge Magnum used-car review",
+     "url": "https://consumerguide.com/used/2005-08-dodge-magnum"
+    }
+   ],
+   "sourceCount": 3
+  },
+  {
+   "year": 2005,
+   "gen": "lx",
+   "cid": 215,
+   "cyl": 6,
+   "name": "3.5L / 215 V6",
+   "code": null,
+   "desc": "3.5 EGG",
+   "hp": 250,
+   "hpBasis": "net",
+   "trims": [
+    "SXT",
+    "SXT AWD"
+   ],
+   "note": null,
+   "nhra": false,
+   "sources": [
+    {
+     "name": "EPA fueleconomy.gov vehicle data",
+     "url": "https://www.fueleconomy.gov/feg/download.shtml"
+    },
+    {
+     "name": "Dodge press kit: Dodge Launches All-New Boldly Styled 2005 Dodge Magnum (Aug 18, 2004, Stellantis Media)",
+     "url": "https://embargoed.stellantisnorthamerica.com/print.do?id=115"
+    },
+    {
+     "name": "Wikipedia - Dodge Magnum",
+     "url": "https://en.wikipedia.org/wiki/Dodge_Magnum"
+    },
+    {
+     "name": "Consumer Guide - 2005-08 Dodge Magnum used-car review",
+     "url": "https://consumerguide.com/used/2005-08-dodge-magnum"
+    }
+   ],
+   "sourceCount": 4
+  },
+  {
+   "year": 2005,
+   "gen": "lx",
+   "cid": 345,
+   "cyl": 8,
+   "name": "5.7L / 345 V8",
+   "code": null,
+   "desc": "Hemi 5.7",
+   "hp": 340,
+   "hpBasis": "net",
+   "trims": [
+    "R/T",
+    "R/T AWD"
+   ],
+   "note": null,
+   "nhra": false,
+   "sources": [
+    {
+     "name": "EPA fueleconomy.gov vehicle data",
+     "url": "https://www.fueleconomy.gov/feg/download.shtml"
+    },
+    {
+     "name": "Dodge press kit: Dodge Launches All-New Boldly Styled 2005 Dodge Magnum (Aug 18, 2004, Stellantis Media)",
+     "url": "https://embargoed.stellantisnorthamerica.com/print.do?id=115"
+    },
+    {
+     "name": "Wikipedia - Dodge Magnum",
+     "url": "https://en.wikipedia.org/wiki/Dodge_Magnum"
+    },
+    {
+     "name": "Consumer Guide - 2005-08 Dodge Magnum used-car review",
+     "url": "https://consumerguide.com/used/2005-08-dodge-magnum"
+    }
+   ],
+   "sourceCount": 4
+  },
+  {
+   "year": 2006,
+   "gen": "lx",
+   "cid": 167,
+   "cyl": 6,
+   "name": "2.7L / 167 V6",
+   "code": null,
+   "desc": "2.7 EER",
+   "hp": 190,
+   "hpBasis": "net",
+   "trims": [
+    "SE"
+   ],
+   "note": null,
+   "nhra": false,
+   "sources": [
+    {
+     "name": "EPA fueleconomy.gov vehicle data",
+     "url": "https://www.fueleconomy.gov/feg/download.shtml"
+    },
+    {
+     "name": "Dodge press kit: 2006 Dodge Magnum Delivers Powerful Punch (June 15, 2005, Stellantis Media)",
+     "url": "https://embargoed.stellantisnorthamerica.com/print.do?id=1229"
+    },
+    {
+     "name": "Wikipedia - Dodge Magnum",
+     "url": "https://en.wikipedia.org/wiki/Dodge_Magnum"
+    },
+    {
+     "name": "Consumer Guide - 2005-08 Dodge Magnum used-car review",
+     "url": "https://consumerguide.com/used/2005-08-dodge-magnum"
+    }
+   ],
+   "sourceCount": 4
+  },
+  {
+   "year": 2006,
+   "gen": "lx",
+   "cid": 215,
+   "cyl": 6,
+   "name": "3.5L / 215 V6",
+   "code": null,
+   "desc": "3.5 EGG",
+   "hp": 250,
+   "hpBasis": "net",
+   "trims": [
+    "SXT",
+    "SXT AWD"
+   ],
+   "note": null,
+   "nhra": false,
+   "sources": [
+    {
+     "name": "EPA fueleconomy.gov vehicle data",
+     "url": "https://www.fueleconomy.gov/feg/download.shtml"
+    },
+    {
+     "name": "Dodge press kit: 2006 Dodge Magnum Delivers Powerful Punch (June 15, 2005, Stellantis Media)",
+     "url": "https://embargoed.stellantisnorthamerica.com/print.do?id=1229"
+    },
+    {
+     "name": "Wikipedia - Dodge Magnum",
+     "url": "https://en.wikipedia.org/wiki/Dodge_Magnum"
+    },
+    {
+     "name": "Consumer Guide - 2005-08 Dodge Magnum used-car review",
+     "url": "https://consumerguide.com/used/2005-08-dodge-magnum"
+    }
+   ],
+   "sourceCount": 4
+  },
+  {
+   "year": 2006,
+   "gen": "lx",
+   "cid": 345,
+   "cyl": 8,
+   "name": "5.7L / 345 V8",
+   "code": null,
+   "desc": "Hemi 5.7",
+   "hp": 340,
+   "hpBasis": "net",
+   "trims": [
+    "R/T",
+    "R/T AWD"
+   ],
+   "note": null,
+   "nhra": false,
+   "sources": [
+    {
+     "name": "EPA fueleconomy.gov vehicle data",
+     "url": "https://www.fueleconomy.gov/feg/download.shtml"
+    },
+    {
+     "name": "Dodge press kit: 2006 Dodge Magnum Delivers Powerful Punch (June 15, 2005, Stellantis Media)",
+     "url": "https://embargoed.stellantisnorthamerica.com/print.do?id=1229"
+    },
+    {
+     "name": "Wikipedia - Dodge Magnum",
+     "url": "https://en.wikipedia.org/wiki/Dodge_Magnum"
+    },
+    {
+     "name": "Consumer Guide - 2005-08 Dodge Magnum used-car review",
+     "url": "https://consumerguide.com/used/2005-08-dodge-magnum"
+    }
+   ],
+   "sourceCount": 4
+  },
+  {
+   "year": 2006,
+   "gen": "lx",
+   "cid": 370,
+   "cyl": 8,
+   "name": "6.1L / 370 V8",
+   "code": null,
+   "desc": "SRT 6.1",
+   "hp": 425,
+   "hpBasis": "net",
+   "trims": [
+    "SRT8"
+   ],
+   "note": null,
+   "nhra": false,
+   "sources": [
+    {
+     "name": "EPA fueleconomy.gov vehicle data",
+     "url": "https://www.fueleconomy.gov/feg/download.shtml"
+    },
+    {
+     "name": "Dodge release: All-new 2006 Dodge Magnum SRT8 (Jan 4, 2005; pricing release May 22, 2005 id=1135), Stellantis Media",
+     "url": "https://embargoed.stellantisnorthamerica.com/print.do?id=169"
+    },
+    {
+     "name": "Wikipedia - Dodge Magnum",
+     "url": "https://en.wikipedia.org/wiki/Dodge_Magnum"
+    },
+    {
+     "name": "Consumer Guide - 2005-08 Dodge Magnum used-car review",
+     "url": "https://consumerguide.com/used/2005-08-dodge-magnum"
+    }
+   ],
+   "sourceCount": 4
+  },
+  {
+   "year": 2007,
+   "gen": "lx",
+   "cid": 167,
+   "cyl": 6,
+   "name": "2.7L / 167 V6",
+   "code": null,
+   "desc": "2.7 EER",
+   "hp": 190,
+   "hpBasis": "net",
+   "trims": [
+    "SE"
+   ],
+   "note": null,
+   "nhra": false,
+   "sources": [
+    {
+     "name": "EPA fueleconomy.gov vehicle data",
+     "url": "https://www.fueleconomy.gov/feg/download.shtml"
+    },
+    {
+     "name": "Dodge press kit: 2007 Dodge Magnum (Aug 31, 2006, Stellantis Media)",
+     "url": "https://embargoed.stellantisnorthamerica.com/print.do?id=5595"
+    },
+    {
+     "name": "Wikipedia - Dodge Magnum",
+     "url": "https://en.wikipedia.org/wiki/Dodge_Magnum"
+    },
+    {
+     "name": "Consumer Guide - 2005-08 Dodge Magnum used-car review",
+     "url": "https://consumerguide.com/used/2005-08-dodge-magnum"
+    }
+   ],
+   "sourceCount": 4
+  },
+  {
+   "year": 2007,
+   "gen": "lx",
+   "cid": 215,
+   "cyl": 6,
+   "name": "3.5L / 215 V6",
+   "code": null,
+   "desc": "3.5 EGG",
+   "hp": 250,
+   "hpBasis": "net",
+   "trims": [
+    "SXT",
+    "SXT AWD"
+   ],
+   "note": null,
+   "nhra": false,
+   "sources": [
+    {
+     "name": "EPA fueleconomy.gov vehicle data",
+     "url": "https://www.fueleconomy.gov/feg/download.shtml"
+    },
+    {
+     "name": "Dodge press kit: 2007 Dodge Magnum (Aug 31, 2006, Stellantis Media)",
+     "url": "https://embargoed.stellantisnorthamerica.com/print.do?id=5595"
+    },
+    {
+     "name": "Wikipedia - Dodge Magnum",
+     "url": "https://en.wikipedia.org/wiki/Dodge_Magnum"
+    },
+    {
+     "name": "Consumer Guide - 2005-08 Dodge Magnum used-car review",
+     "url": "https://consumerguide.com/used/2005-08-dodge-magnum"
+    }
+   ],
+   "sourceCount": 4
+  },
+  {
+   "year": 2007,
+   "gen": "lx",
+   "cid": 345,
+   "cyl": 8,
+   "name": "5.7L / 345 V8",
+   "code": null,
+   "desc": "Hemi 5.7",
+   "hp": 340,
+   "hpBasis": "net",
+   "trims": [
+    "R/T",
+    "R/T AWD"
+   ],
+   "note": null,
+   "nhra": false,
+   "sources": [
+    {
+     "name": "EPA fueleconomy.gov vehicle data",
+     "url": "https://www.fueleconomy.gov/feg/download.shtml"
+    },
+    {
+     "name": "Dodge press kit: 2007 Dodge Magnum (Aug 31, 2006, Stellantis Media)",
+     "url": "https://embargoed.stellantisnorthamerica.com/print.do?id=5595"
+    },
+    {
+     "name": "Wikipedia - Dodge Magnum",
+     "url": "https://en.wikipedia.org/wiki/Dodge_Magnum"
+    },
+    {
+     "name": "Consumer Guide - 2005-08 Dodge Magnum used-car review",
+     "url": "https://consumerguide.com/used/2005-08-dodge-magnum"
+    }
+   ],
+   "sourceCount": 4
+  },
+  {
+   "year": 2007,
+   "gen": "lx",
+   "cid": 370,
+   "cyl": 8,
+   "name": "6.1L / 370 V8",
+   "code": null,
+   "desc": "SRT 6.1",
+   "hp": 425,
+   "hpBasis": "net",
+   "trims": [
+    "SRT8"
+   ],
+   "note": null,
+   "nhra": false,
+   "sources": [
+    {
+     "name": "EPA fueleconomy.gov vehicle data",
+     "url": "https://www.fueleconomy.gov/feg/download.shtml"
+    },
+    {
+     "name": "Dodge release: 2007 Dodge Magnum SRT8 Hauls in More Ways Than One (Aug 31, 2006, Stellantis Media)",
+     "url": "https://embargoed.stellantisnorthamerica.com/print.do?id=5597"
+    },
+    {
+     "name": "Wikipedia - Dodge Magnum",
+     "url": "https://en.wikipedia.org/wiki/Dodge_Magnum"
+    },
+    {
+     "name": "Consumer Guide - 2005-08 Dodge Magnum used-car review",
+     "url": "https://consumerguide.com/used/2005-08-dodge-magnum"
+    }
+   ],
+   "sourceCount": 4
+  },
+  {
+   "year": 2008,
+   "gen": "lx",
+   "cid": 167,
+   "cyl": 6,
+   "name": "2.7L / 167 V6",
+   "code": null,
+   "desc": "2.7 EER",
+   "hp": 190,
+   "hpBasis": "net",
+   "trims": [
+    "SE"
+   ],
+   "note": null,
+   "nhra": false,
+   "sources": [
+    {
+     "name": "EPA fueleconomy.gov vehicle data",
+     "url": "https://www.fueleconomy.gov/feg/download.shtml"
+    },
+    {
+     "name": "Dodge press kit: 2008 Dodge Magnum Lineup Packs Powerful Punch (Stellantis Media)",
+     "url": "https://embargoed.stellantisnorthamerica.com/print.do?id=6451"
+    },
+    {
+     "name": "Wikipedia - Dodge Magnum",
+     "url": "https://en.wikipedia.org/wiki/Dodge_Magnum"
+    },
+    {
+     "name": "Consumer Guide - 2005-08 Dodge Magnum used-car review",
+     "url": "https://consumerguide.com/used/2005-08-dodge-magnum"
+    }
+   ],
+   "sourceCount": 4
+  },
+  {
+   "year": 2008,
+   "gen": "lx",
+   "cid": 215,
+   "cyl": 6,
+   "name": "3.5L / 215 V6",
+   "code": null,
+   "desc": "3.5 EGG",
+   "hp": 250,
+   "hpBasis": "net",
+   "trims": [
+    "SXT",
+    "SXT AWD"
+   ],
+   "note": null,
+   "nhra": false,
+   "sources": [
+    {
+     "name": "EPA fueleconomy.gov vehicle data",
+     "url": "https://www.fueleconomy.gov/feg/download.shtml"
+    },
+    {
+     "name": "Dodge press kit: 2008 Dodge Magnum Lineup Packs Powerful Punch (Stellantis Media)",
+     "url": "https://embargoed.stellantisnorthamerica.com/print.do?id=6451"
+    },
+    {
+     "name": "Wikipedia - Dodge Magnum",
+     "url": "https://en.wikipedia.org/wiki/Dodge_Magnum"
+    },
+    {
+     "name": "Consumer Guide - 2005-08 Dodge Magnum used-car review",
+     "url": "https://consumerguide.com/used/2005-08-dodge-magnum"
+    }
+   ],
+   "sourceCount": 4
+  },
+  {
+   "year": 2008,
+   "gen": "lx",
+   "cid": 345,
+   "cyl": 8,
+   "name": "5.7L / 345 V8",
+   "code": null,
+   "desc": "Hemi 5.7",
+   "hp": 340,
+   "hpBasis": "net",
+   "trims": [
+    "R/T",
+    "R/T AWD"
+   ],
+   "note": null,
+   "nhra": false,
+   "sources": [
+    {
+     "name": "EPA fueleconomy.gov vehicle data",
+     "url": "https://www.fueleconomy.gov/feg/download.shtml"
+    },
+    {
+     "name": "Dodge press kit: 2008 Dodge Magnum Lineup Packs Powerful Punch (Stellantis Media)",
+     "url": "https://embargoed.stellantisnorthamerica.com/print.do?id=6451"
+    },
+    {
+     "name": "Wikipedia - Dodge Magnum",
+     "url": "https://en.wikipedia.org/wiki/Dodge_Magnum"
+    },
+    {
+     "name": "Consumer Guide - 2005-08 Dodge Magnum used-car review",
+     "url": "https://consumerguide.com/used/2005-08-dodge-magnum"
+    }
+   ],
+   "sourceCount": 4
+  },
+  {
+   "year": 2008,
+   "gen": "lx",
+   "cid": 370,
+   "cyl": 8,
+   "name": "6.1L / 370 V8",
+   "code": null,
+   "desc": "SRT 6.1",
+   "hp": 425,
+   "hpBasis": "net",
+   "trims": [
+    "SRT8"
+   ],
+   "note": null,
+   "nhra": false,
+   "sources": [
+    {
+     "name": "EPA fueleconomy.gov vehicle data",
+     "url": "https://www.fueleconomy.gov/feg/download.shtml"
+    },
+    {
+     "name": "Dodge press kit: 2008 Dodge Magnum Lineup Packs Powerful Punch (Stellantis Media)",
+     "url": "https://embargoed.stellantisnorthamerica.com/print.do?id=6451"
+    },
+    {
+     "name": "Wikipedia - Dodge Magnum",
+     "url": "https://en.wikipedia.org/wiki/Dodge_Magnum"
+    },
+    {
+     "name": "Consumer Guide - 2005-08 Dodge Magnum used-car review",
+     "url": "https://consumerguide.com/used/2005-08-dodge-magnum"
+    }
+   ],
+   "sourceCount": 4
+  }
+ ],
+ "sources": [
+  {
+   "name": "1978 Dodge Magnum XE brochure (Form 81-205-8006)",
+   "url": "https://oldcarbrochures.org/United%20States/Dodge/1978_Dodge/1978-Dodge-Magnum-XE-Brochure/slides/1978_Dodge_Magnum_XE-06-07.html",
+   "type": "manufacturer"
+  },
+  {
+   "name": "1979 Dodge Magnum XE brochure (Form 81-307-9018)",
+   "url": "https://oldcarbrochures.org/United%20States/Dodge/1979_Dodge/1979_Dodge_Magnum_XE_Brochure/slides/1979_Dodge_Magnum_XE-08.html",
+   "type": "manufacturer"
+  },
+  {
+   "name": "Dodge press kit: 2006 Dodge Magnum Delivers Powerful Punch (June 15, 2005, Stellantis Media)",
+   "url": "https://embargoed.stellantisnorthamerica.com/print.do?id=1229",
+   "type": "manufacturer"
+  },
+  {
+   "name": "Dodge press kit: 2007 Dodge Magnum (Aug 31, 2006, Stellantis Media)",
+   "url": "https://embargoed.stellantisnorthamerica.com/print.do?id=5595",
+   "type": "manufacturer"
+  },
+  {
+   "name": "Dodge press kit: 2008 Dodge Magnum Lineup Packs Powerful Punch (Stellantis Media)",
+   "url": "https://embargoed.stellantisnorthamerica.com/print.do?id=6451",
+   "type": "manufacturer"
+  },
+  {
+   "name": "Dodge press kit: Dodge Launches All-New Boldly Styled 2005 Dodge Magnum (Aug 18, 2004, Stellantis Media)",
+   "url": "https://embargoed.stellantisnorthamerica.com/print.do?id=115",
+   "type": "manufacturer"
+  },
+  {
+   "name": "Dodge release: 2007 Dodge Magnum SRT8 Hauls in More Ways Than One (Aug 31, 2006, Stellantis Media)",
+   "url": "https://embargoed.stellantisnorthamerica.com/print.do?id=5597",
+   "type": "manufacturer"
+  },
+  {
+   "name": "Dodge release: All-new 2006 Dodge Magnum SRT8 (Jan 4, 2005; pricing release May 22, 2005 id=1135), Stellantis Media",
+   "url": "https://embargoed.stellantisnorthamerica.com/print.do?id=169",
+   "type": "manufacturer"
+  },
+  {
+   "name": "Changing Times (Kiplinger), 1979 new-car table",
+   "url": "https://books.google.com/books?id=clO4AAAAIAAJ",
+   "type": "publication"
+  },
+  {
+   "name": "Changing Times (Kiplinger), Jan 1978 new-car table",
+   "url": "https://books.google.com/books?id=QFK4AAAAIAAJ",
+   "type": "publication"
+  },
+  {
+   "name": "Consumer Guide - 2005-08 Dodge Magnum used-car review",
+   "url": "https://consumerguide.com/used/2005-08-dodge-magnum",
+   "type": "publication"
+  },
+  {
+   "name": "EPA fueleconomy.gov vehicle data",
+   "url": "https://www.fueleconomy.gov/feg/download.shtml",
+   "type": "publication"
+  },
+  {
+   "name": "James M. Flory Jr., American Cars 1973-1980 (McFarland, 2012), 1978 Dodge section",
+   "url": "https://books.google.com/books?id=yPwcDJ10TtAC",
+   "type": "publication"
+  },
+  {
+   "name": "James M. Flory Jr., American Cars 1973-1980 (McFarland, 2012), 1979 Magnum XE section",
+   "url": "https://books.google.com/books?id=PV1uzCfmJDgC",
+   "type": "publication"
+  },
+  {
+   "name": "NHRA Stock Car Classification Guides",
+   "url": "https://www.nhraracer.com/stockcarclassification",
+   "type": "publication"
+  },
+  {
+   "name": "Petersen's Big Book of Auto Repair (1981), Dodge Magnum XE engine table",
+   "url": "https://books.google.com/books?id=3uOjiKRGpZ8C",
+   "type": "publication"
+  },
+  {
+   "name": "World Cars 1978 (Herald Books / Automobile Club of Italy)",
+   "url": "https://books.google.com/books?id=NHVTAAAAMAAJ",
+   "type": "publication"
+  },
+  {
+   "name": "Wikipedia - Dodge Magnum",
+   "url": "https://en.wikipedia.org/wiki/Dodge_Magnum",
+   "type": "wikipedia"
+  }
+ ],
+ "excluded": [],
+ "method": "Every engine and year listed here was confirmed by at least three independent sources: the NHRA Stock Car Classification Guides, factory material such as GM Heritage Center information kits and sales brochures, EPA records and established references. Several Wikipedia articles count as one source. Where sources give different ratings, the factory figure is shown and the difference is noted. Factory race-only packages need two sources."
+}

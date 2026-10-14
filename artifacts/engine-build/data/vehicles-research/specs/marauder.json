@@ -1,0 +1,60 @@
+{
+ "desc_strip": [
+  "^Marauder\\s+",
+  "\\s*V-8$"
+ ],
+ "make": "Mercury",
+ "model": "Marauder",
+ "makeSlug": "mercury",
+ "slug": "marauder",
+ "title": "Mercury Marauder Engines by Year",
+ "description": "Every factory engine in the Mercury Marauder by year: the 390 and 427 FE V8s of 1963–65, the 390 and 429 of 1969–70, and the 4.6 DOHC V8 of the 2003–04 sedan.",
+ "intro": [
+  "Mercury used the Marauder name three times: for its fastback-roof full-size cars from mid-1963 to 1965, for a big two-door hardtop in 1969 and 1970, and for a high-performance sedan in 2003 and 2004. In between, Marauder named Mercury engines rather than a car.",
+  "Pick a year to see every engine offered that model year, with its code, rated horsepower and the trims it came in. Each engine links to its full specs."
+ ],
+ "generations": [
+  {
+   "key": "1963-1965",
+   "name": "1963–1965",
+   "years": [
+    1963,
+    1965
+   ],
+   "intro": [
+    "The 390 FE in several outputs and the 427 FE with one or two four-barrels."
+   ]
+  },
+  {
+   "key": "1969-1970",
+   "name": "1969–1970",
+   "years": [
+    1969,
+    1970
+   ],
+   "intro": [
+    "The 390 and the 429 385-series V8; the X-100 came only with the 429 four-barrel."
+   ]
+  },
+  {
+   "key": "2003-2004",
+   "name": "2003–2004",
+   "years": [
+    2003,
+    2004
+   ],
+   "intro": [
+    "The 4.6 DOHC Modular V8, the only engine."
+   ]
+  }
+ ],
+ "files": [
+  "verify_mercury-marauder-1963-2004.json"
+ ],
+ "merge_trims": true,
+ "exclude": {
+  "1963|406|385": "406 in the 1963 Marauder: factory literature lists only the 390 and 427",
+  "1963|406|405": "406 in the 1963 Marauder: factory literature lists only the 390 and 427"
+ },
+ "draft": true
+}

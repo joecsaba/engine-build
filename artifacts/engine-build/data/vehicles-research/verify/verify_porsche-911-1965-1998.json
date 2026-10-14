@@ -1,0 +1,2999 @@
+{
+ "vehicle": "porsche-911-1965-1998",
+ "market": "US",
+ "top_level_note": "The Porsche 912 (1965-1969 US; 1.6L Typ 616/36 pushrod flat-four, 90 PS DIN / 102 SAE per Consumer Guide) and the 1976 US-only 912E (2.0L VW-sourced fuel-injected flat-four, 86 hp SAE net) are four-cylinder Porsches that share the 911 body. They are not 911s, so they are not listed.",
+ "excluded": [
+  {
+   "what": "1973 Carrera RS 2.7, Carrera RS 3.0, 964 Carrera RS, 993 Carrera RS / GT2",
+   "why": "not sold in the US (Consumer Guide: 'None came to America'; Wikipedia: the MFI RS engine was banned in the US on emissions grounds; 964 RS for Europe only)"
+  },
+  {
+   "what": "1968 US 911T and 911S",
+   "why": "Consumer Guide: the T was Europe-only for 1968; Wikipedia: the 911S could not meet US emissions, so the 911L was the top US model"
+  },
+  {
+   "what": "US 911 Turbo for 1980-1985, 1990, 1993, 1995, 1998",
+   "why": "not offered per Consumer Guide, EPA and Excellence listings; the two Wikipedia articles disagree on whether the gap starts in 1980 or 1981"
+  },
+  {
+   "what": "1976-77 Carrera 2.7 / 3.0",
+   "why": "not in the US lineup (Consumer Guide: ousted by the Turbo); the Carrera 3.0 was sold outside the US"
+  }
+ ],
+ "search_notes": "The NHRA file is empty (nhra=false throughout). The session web-search cap was reached part way through, so the work rests on pages already downloaded. Sources: Consumer Guide 911 History (HowStuffWorks, Wayback copy; the live site is behind a bot wall); the Excellence magazine specs database (a US magazine covering US-spec cars, mostly DIN figures); Wikipedia (classic/930/964/993 articles and List of Porsche engines with US engine type numbers, counted as one source); EPA 1984+ (size, cylinders and turbo only; no 1985 rows). The Porsche AG 60-years press kit and the archived PCNA Porsche Classic pages quote European/German DIN figures only, so they back displacement and model existence but not US ratings. Hagerty valuation tools need a login; Total 911 datafiles now redirect to futureplc; auction listings were ignored. Rating rule: hp = the US SAE figure when 2+ sources state it, or when Consumer Guide's SAE figure matches the 2+-source DIN figure after conversion (PS x 0.9863). Otherwise hp = the US-spec DIN figure that 2+ sources agree on, hp_basis says DIN, and Consumer Guide's SAE figure goes in hp_sae_us_consumer_guide and the note.",
+ "years": {
+  "1965": [
+   {
+    "gen": "901",
+    "cid": 121,
+    "cc": 1991,
+    "liters": 2.0,
+    "hp": 130,
+    "hp_basis": "DIN PS (US 148 SAE gross per Consumer Guide)",
+    "hp_din_us_spec": 130,
+    "hp_sae_us_consumer_guide": 148,
+    "rpo": "901/01",
+    "name": "2.0L SOHC flat-six, six Solex 40PI carbs (twin Weber 40IDA from mid-1966)",
+    "common_name": "911 2.0",
+    "trims": [
+     "911 Coupe"
+    ],
+    "induction": "carbureted",
+    "nhra": false,
+    "sources": [
+     {
+      "name": "Consumer Guide (Auto Editors of Consumer Guide) - Porsche 911 History, via HowStuffWorks (archived)",
+      "url": "https://auto.howstuffworks.com/porsche-911-history.htm",
+      "archive": "http://web.archive.org/web/2020/https://auto.howstuffworks.com/porsche-911-history.htm",
+      "says": "1965 911: 130 DIN horsepower European (148 SAE gross) at 6,100 rpm"
+     },
+     {
+      "name": "Excellence magazine (US) - Specs database",
+      "url": "https://www.excellence-mag.com/resources/specs/9",
+      "also": [],
+      "says": "1965 911 Coupe: 1,991 cc, 130 @ 6100 rpm, 9.0:1"
+     },
+     {
+      "name": "Wikipedia - Porsche 911 (classic)",
+      "url": "https://en.wikipedia.org/wiki/Porsche_911_(classic)",
+      "says": "Typ 901/01 1,991 cc 130 PS SOHC flat-six; 901/05 with Weber carbs from mid-1966"
+     }
+    ],
+    "status": "three_sources_not_nhra",
+    "independent_sources": 3,
+    "note": "SAE gross 148 from Consumer Guide only; DIN 130 agreed by Excellence, Wikipedia and Consumer Guide."
+   }
+  ],
+  "1966": [
+   {
+    "gen": "901",
+    "cid": 121,
+    "cc": 1991,
+    "liters": 2.0,
+    "hp": 130,
+    "hp_basis": "DIN PS (US 148 SAE gross per Consumer Guide)",
+    "hp_din_us_spec": 130,
+    "hp_sae_us_consumer_guide": 148,
+    "rpo": "901/01; 901/05 from mid-1966",
+    "name": "2.0L SOHC flat-six, six Solex 40PI carbs (twin Weber 40IDA from mid-1966)",
+    "common_name": "911 2.0",
+    "trims": [
+     "911 Coupe"
+    ],
+    "induction": "carbureted",
+    "nhra": false,
+    "sources": [
+     {
+      "name": "Consumer Guide (Auto Editors of Consumer Guide) - Porsche 911 History, via HowStuffWorks (archived)",
+      "url": "https://auto.howstuffworks.com/porsche-911-history.htm",
+      "archive": "http://web.archive.org/web/2020/https://auto.howstuffworks.com/porsche-911-history.htm",
+      "says": "1965 911: 130 DIN horsepower European (148 SAE gross) at 6,100 rpm"
+     },
+     {
+      "name": "Excellence magazine (US) - Specs database",
+      "url": "https://www.excellence-mag.com/resources/specs/10",
+      "also": [],
+      "says": "1966 911 Coupe: 1,991 cc, 130 @ 6100 rpm, 9.0:1"
+     },
+     {
+      "name": "Wikipedia - List of Porsche engines",
+      "url": "https://en.wikipedia.org/wiki/List_of_Porsche_engines",
+      "says": "901/01 1965-66, 901/05 from 1966; 1968 911 and 911L (USA)(CDN) 901/14, 901/17 SPM, 95-96 kW (130 PS)"
+     }
+    ],
+    "status": "three_sources_not_nhra",
+    "independent_sources": 3,
+    "note": "SAE gross 148 from Consumer Guide only; DIN 130 agreed by Excellence, Wikipedia and Consumer Guide."
+   }
+  ],
+  "1967": [
+   {
+    "gen": "901",
+    "cid": 121,
+    "cc": 1991,
+    "liters": 2.0,
+    "hp": 130,
+    "hp_basis": "DIN PS (US 148 SAE gross per Consumer Guide)",
+    "hp_din_us_spec": 130,
+    "hp_sae_us_consumer_guide": 148,
+    "rpo": "901/05",
+    "name": "2.0L SOHC flat-six, six Solex 40PI carbs (twin Weber 40IDA from mid-1966)",
+    "common_name": "911 2.0",
+    "trims": [
+     "911 Coupe",
+     "911 Targa"
+    ],
+    "induction": "carbureted",
+    "nhra": false,
+    "sources": [
+     {
+      "name": "Consumer Guide (Auto Editors of Consumer Guide) - Porsche 911 History, via HowStuffWorks (archived)",
+      "url": "https://auto.howstuffworks.com/porsche-911-history.htm",
+      "archive": "http://web.archive.org/web/2020/https://auto.howstuffworks.com/porsche-911-history.htm",
+      "says": "1965 911: 130 DIN horsepower European (148 SAE gross) at 6,100 rpm"
+     },
+     {
+      "name": "Excellence magazine (US) - Specs database",
+      "url": "https://www.excellence-mag.com/resources/specs/11",
+      "also": [],
+      "says": "1967 911 Coupe: 1,991 cc, 130 @ 6100 rpm, 9.0:1"
+     },
+     {
+      "name": "Wikipedia - List of Porsche engines",
+      "url": "https://en.wikipedia.org/wiki/List_of_Porsche_engines",
+      "says": "901/01 1965-66, 901/05 from 1966; 1968 911 and 911L (USA)(CDN) 901/14, 901/17 SPM, 95-96 kW (130 PS)"
+     }
+    ],
+    "status": "three_sources_not_nhra",
+    "independent_sources": 3,
+    "note": "SAE gross 148 from Consumer Guide only; DIN 130 agreed by Excellence, Wikipedia and Consumer Guide."
+   },
+   {
+    "gen": "901",
+    "cid": 121,
+    "cc": 1991,
+    "liters": 2.0,
+    "hp": 160,
+    "hp_basis": "DIN PS (US 180 SAE gross per Consumer Guide)",
+    "hp_din_us_spec": 160,
+    "hp_sae_us_consumer_guide": 180,
+    "rpo": "901/02",
+    "name": "2.0L SOHC flat-six, Weber 40IDS carbs, 9.8:1",
+    "common_name": "911S",
+    "trims": [
+     "911S Coupe",
+     "911S Targa"
+    ],
+    "induction": "carbureted",
+    "nhra": false,
+    "sources": [
+     {
+      "name": "Consumer Guide (Auto Editors of Consumer Guide) - Porsche 911 History, via HowStuffWorks (archived)",
+      "url": "https://auto.howstuffworks.com/porsche-911-history.htm",
+      "archive": "http://web.archive.org/web/2020/https://auto.howstuffworks.com/porsche-911-history.htm",
+      "says": "911S bowed with 160 DIN horsepower European (180 SAE)"
+     },
+     {
+      "name": "Excellence magazine (US) - Specs database",
+      "url": "https://www.excellence-mag.com/resources/specs/24",
+      "also": [],
+      "says": "1967 911 S Coupe: 1,991 cc, 160 @ 6600 rpm, 9.8:1"
+     },
+     {
+      "name": "Wikipedia - List of Porsche engines",
+      "url": "https://en.wikipedia.org/wiki/List_of_Porsche_engines",
+      "says": "911 S Coupe/Targa 901/02 1967, 117 kW (160 PS) at 6,600 rpm; classic article: 911S could not meet US emissions for 1968"
+     }
+    ],
+    "status": "three_sources_not_nhra",
+    "independent_sources": 3,
+    "note": "In the US for 1967 only; dropped for 1968 (emissions) and back for 1969. hp is the US-spec DIN (PS) rating, on which 2+ sources agree; the US SAE figure comes from Consumer Guide alone, so it is kept in the note."
+   }
+  ],
+  "1968": [
+   {
+    "gen": "901",
+    "cid": 121,
+    "cc": 1991,
+    "liters": 2.0,
+    "hp": 130,
+    "hp_basis": "DIN PS (US 148 SAE gross per Consumer Guide)",
+    "hp_din_us_spec": 130,
+    "hp_sae_us_consumer_guide": 148,
+    "rpo": "901/14 (manual), 901/17 (Sportomatic) - US/Canada",
+    "name": "2.0L SOHC flat-six, six Solex 40PI carbs (twin Weber 40IDA from mid-1966)",
+    "common_name": "911 2.0",
+    "trims": [
+     "911",
+     "911L",
+     "Targa"
+    ],
+    "induction": "carbureted",
+    "nhra": false,
+    "sources": [
+     {
+      "name": "Consumer Guide (Auto Editors of Consumer Guide) - Porsche 911 History, via HowStuffWorks (archived)",
+      "url": "https://auto.howstuffworks.com/porsche-911-history.htm",
+      "archive": "http://web.archive.org/web/2020/https://auto.howstuffworks.com/porsche-911-history.htm",
+      "says": "1965 911: 130 DIN horsepower European (148 SAE gross) at 6,100 rpm; 1968 US 911L 'an S with the normal-tune engine', air-injection pump for 1968 emissions"
+     },
+     {
+      "name": "Excellence magazine (US) - Specs database",
+      "url": "https://www.excellence-mag.com/resources/specs/12",
+      "also": [],
+      "says": "1968 911 L Coupe: 1,991 cc, 130 @ 6100 rpm, 9.0:1"
+     },
+     {
+      "name": "Wikipedia - List of Porsche engines",
+      "url": "https://en.wikipedia.org/wiki/List_of_Porsche_engines",
+      "says": "901/01 1965-66, 901/05 from 1966; 1968 911 and 911L (USA)(CDN) 901/14, 901/17 SPM, 95-96 kW (130 PS)"
+     }
+    ],
+    "status": "three_sources_not_nhra",
+    "independent_sources": 3,
+    "note": "SAE gross 148 from Consumer Guide only; DIN 130 agreed by Excellence, Wikipedia and Consumer Guide. 1968: no 911T or 911S in the US (Consumer Guide: T was Europe-only; Wikipedia: 911S could not meet US emissions, 911L was the top US model). Sportomatic first offered in the US for 1968."
+   }
+  ],
+  "1969": [
+   {
+    "gen": "901",
+    "cid": 121,
+    "cc": 1991,
+    "liters": 2.0,
+    "hp": 110,
+    "hp_basis": "DIN PS (US 125 SAE gross per Consumer Guide)",
+    "hp_din_us_spec": 110,
+    "hp_sae_us_consumer_guide": 125,
+    "rpo": "901/16 (US/CDN manual), 901/19 (US Sportomatic)",
+    "name": "2.0L SOHC flat-six, twin Weber 40IDT carbs",
+    "common_name": "911T",
+    "trims": [
+     "911T Coupe",
+     "911T Targa"
+    ],
+    "induction": "carbureted",
+    "nhra": false,
+    "sources": [
+     {
+      "name": "Consumer Guide (Auto Editors of Consumer Guide) - Porsche 911 History, via HowStuffWorks (archived)",
+      "url": "https://auto.howstuffworks.com/porsche-911-history.htm",
+      "archive": "http://web.archive.org/web/2020/https://auto.howstuffworks.com/porsche-911-history.htm",
+      "says": "Initial 1969 U.S. versions: 911T 110 DIN horsepower European (125 SAE) at 5,800 rpm, carburetors"
+     },
+     {
+      "name": "Excellence magazine (US) - Specs database",
+      "url": "https://www.excellence-mag.com/resources/specs/18",
+      "also": [],
+      "says": "1969 911 T Coupe: 1,991 cc, 110 @ rpm listed"
+     },
+     {
+      "name": "Wikipedia - List of Porsche engines",
+      "url": "https://en.wikipedia.org/wiki/List_of_Porsche_engines",
+      "says": "911 T Coupe (USA)(CDN) 901/16, 901/19 SPM, 80-81 kW (110 PS)"
+     }
+    ],
+    "status": "three_sources_not_nhra",
+    "independent_sources": 3,
+    "note": "hp is the US-spec DIN (PS) rating, on which 2+ sources agree; the US SAE figure comes from Consumer Guide alone, so it is kept in the note."
+   },
+   {
+    "gen": "901",
+    "cid": 121,
+    "cc": 1991,
+    "liters": 2.0,
+    "hp": 140,
+    "hp_basis": "DIN PS (US 160 SAE gross per Consumer Guide)",
+    "hp_din_us_spec": 140,
+    "hp_sae_us_consumer_guide": 160,
+    "rpo": "901/09 (manual), 901/11 (Sportomatic)",
+    "name": "2.0L SOHC flat-six, Bosch mechanical fuel injection",
+    "common_name": "911E",
+    "trims": [
+     "911E Coupe",
+     "911E Targa"
+    ],
+    "induction": "mechanical fuel injection",
+    "nhra": false,
+    "sources": [
+     {
+      "name": "Consumer Guide (Auto Editors of Consumer Guide) - Porsche 911 History, via HowStuffWorks (archived)",
+      "url": "https://auto.howstuffworks.com/porsche-911-history.htm",
+      "archive": "http://web.archive.org/web/2020/https://auto.howstuffworks.com/porsche-911-history.htm",
+      "says": "Initial 1969 U.S. versions: 911E 140 DIN horsepower European (160 SAE) at 6,500 rpm, fuel injection"
+     },
+     {
+      "name": "Excellence magazine (US) - Specs database",
+      "url": "https://www.excellence-mag.com/resources/specs/13",
+      "also": [],
+      "says": "1969 911 E Coupe: 1,991 cc, 140 @ rpm listed"
+     },
+     {
+      "name": "Wikipedia - List of Porsche engines",
+      "url": "https://en.wikipedia.org/wiki/List_of_Porsche_engines",
+      "says": "911 E 901/09, 901/11 SPM, 103 kW (140 PS)"
+     }
+    ],
+    "status": "three_sources_not_nhra",
+    "independent_sources": 3,
+    "note": "hp is the US-spec DIN (PS) rating, on which 2+ sources agree; the US SAE figure comes from Consumer Guide alone, so it is kept in the note."
+   },
+   {
+    "gen": "901",
+    "cid": 121,
+    "cc": 1991,
+    "liters": 2.0,
+    "hp": 170,
+    "hp_basis": "DIN PS (US 190 SAE gross per Consumer Guide)",
+    "hp_din_us_spec": 170,
+    "hp_sae_us_consumer_guide": 190,
+    "rpo": "901/10",
+    "name": "2.0L SOHC flat-six, Bosch mechanical fuel injection",
+    "common_name": "911S",
+    "trims": [
+     "911S Coupe",
+     "911S Targa"
+    ],
+    "induction": "mechanical fuel injection",
+    "nhra": false,
+    "sources": [
+     {
+      "name": "Consumer Guide (Auto Editors of Consumer Guide) - Porsche 911 History, via HowStuffWorks (archived)",
+      "url": "https://auto.howstuffworks.com/porsche-911-history.htm",
+      "archive": "http://web.archive.org/web/2020/https://auto.howstuffworks.com/porsche-911-history.htm",
+      "says": "Initial 1969 U.S. versions: 911S 170 DIN horsepower European (190 SAE) at 6,800 rpm, fuel injection"
+     },
+     {
+      "name": "Excellence magazine (US) - Specs database",
+      "url": "https://www.excellence-mag.com/resources/specs/25",
+      "also": [],
+      "says": "1969 911 S Coupe: 1,991 cc, 170 @ rpm listed"
+     },
+     {
+      "name": "Wikipedia - List of Porsche engines",
+      "url": "https://en.wikipedia.org/wiki/List_of_Porsche_engines",
+      "says": "911 S 901/10, 125 kW (170 PS)"
+     }
+    ],
+    "status": "three_sources_not_nhra",
+    "independent_sources": 3,
+    "note": "hp is the US-spec DIN (PS) rating, on which 2+ sources agree; the US SAE figure comes from Consumer Guide alone, so it is kept in the note."
+   }
+  ],
+  "1970": [
+   {
+    "gen": "901",
+    "cid": 134,
+    "cc": 2195,
+    "liters": 2.2,
+    "hp": 125,
+    "hp_basis": "DIN PS (US 145 SAE gross per Consumer Guide)",
+    "hp_din_us_spec": 125,
+    "hp_sae_us_consumer_guide": 145,
+    "rpo": "911/07 (US/CDN manual), 911/08 (US Sportomatic)",
+    "name": "2.2L SOHC flat-six, Zenith 40TIN carbs",
+    "common_name": "911T 2.2",
+    "trims": [
+     "911T Coupe",
+     "911T Targa"
+    ],
+    "induction": "carbureted",
+    "nhra": false,
+    "sources": [
+     {
+      "name": "Consumer Guide (Auto Editors of Consumer Guide) - Porsche 911 History, via HowStuffWorks (archived)",
+      "url": "https://auto.howstuffworks.com/porsche-911-history.htm",
+      "archive": "http://web.archive.org/web/2020/https://auto.howstuffworks.com/porsche-911-history.htm",
+      "says": "1970 U.S. lineup: 911T 125 DIN horsepower European (145 SAE)"
+     },
+     {
+      "name": "Excellence magazine (US) - Specs database",
+      "url": "https://www.excellence-mag.com/resources/specs/19",
+      "also": [],
+      "says": "1970 911 T Coupe: 2,195 cc, 125 DIN"
+     },
+     {
+      "name": "Wikipedia - List of Porsche engines",
+      "url": "https://en.wikipedia.org/wiki/List_of_Porsche_engines",
+      "says": "911T 2.2 1970: 911/07 (US/CDN manual), 911/08 (US Sportomatic), 125 PS; US/CDN T had market-specific 911/07 and 911/08 (125 PS)"
+     }
+    ],
+    "status": "three_sources_not_nhra",
+    "independent_sources": 3,
+    "note": "hp is the US-spec DIN (PS) rating, on which 2+ sources agree; the US SAE figure comes from Consumer Guide alone, so it is kept in the note. Consumer Guide misstates the 1970 displacement as 2,165 cc; Wikipedia and Excellence give 2,195 cc. Consumer Guide's 145 SAE for the T is not corroborated."
+   },
+   {
+    "gen": "901",
+    "cid": 134,
+    "cc": 2195,
+    "liters": 2.2,
+    "hp": 155,
+    "hp_basis": "DIN PS (US 175 SAE gross per Consumer Guide)",
+    "hp_din_us_spec": 155,
+    "hp_sae_us_consumer_guide": 175,
+    "rpo": "911/01 (manual), 911/04 (Sportomatic)",
+    "name": "2.2L SOHC flat-six, Bosch mechanical fuel injection",
+    "common_name": "911E 2.2",
+    "trims": [
+     "911E Coupe",
+     "911E Targa"
+    ],
+    "induction": "mechanical fuel injection",
+    "nhra": false,
+    "sources": [
+     {
+      "name": "Consumer Guide (Auto Editors of Consumer Guide) - Porsche 911 History, via HowStuffWorks (archived)",
+      "url": "https://auto.howstuffworks.com/porsche-911-history.htm",
+      "archive": "http://web.archive.org/web/2020/https://auto.howstuffworks.com/porsche-911-history.htm",
+      "says": "1970 U.S. lineup: 911E 155 DIN horsepower European (175 SAE)"
+     },
+     {
+      "name": "Excellence magazine (US) - Specs database",
+      "url": "https://www.excellence-mag.com/resources/specs/14",
+      "also": [],
+      "says": "1970 911 E Coupe: 2,195 cc, 155 DIN"
+     },
+     {
+      "name": "Wikipedia - List of Porsche engines",
+      "url": "https://en.wikipedia.org/wiki/List_of_Porsche_engines",
+      "says": "911E 2.2 1970: 911/01 (manual), 911/04 (Sportomatic), 155 PS; US/CDN T had market-specific 911/07 and 911/08 (125 PS)"
+     }
+    ],
+    "status": "three_sources_not_nhra",
+    "independent_sources": 3,
+    "note": "hp is the US-spec DIN (PS) rating, on which 2+ sources agree; the US SAE figure comes from Consumer Guide alone, so it is kept in the note."
+   },
+   {
+    "gen": "901",
+    "cid": 134,
+    "cc": 2195,
+    "liters": 2.2,
+    "hp": 180,
+    "hp_basis": "DIN PS (US 200 SAE gross per Consumer Guide)",
+    "hp_din_us_spec": 180,
+    "hp_sae_us_consumer_guide": 200,
+    "rpo": "911/02 (manual), 911/05 (Sportomatic)",
+    "name": "2.2L SOHC flat-six, Bosch mechanical fuel injection",
+    "common_name": "911S 2.2",
+    "trims": [
+     "911S Coupe",
+     "911S Targa"
+    ],
+    "induction": "mechanical fuel injection",
+    "nhra": false,
+    "sources": [
+     {
+      "name": "Consumer Guide (Auto Editors of Consumer Guide) - Porsche 911 History, via HowStuffWorks (archived)",
+      "url": "https://auto.howstuffworks.com/porsche-911-history.htm",
+      "archive": "http://web.archive.org/web/2020/https://auto.howstuffworks.com/porsche-911-history.htm",
+      "says": "1970 U.S. lineup: 911S 180 DIN horsepower European (200 SAE)"
+     },
+     {
+      "name": "Excellence magazine (US) - Specs database",
+      "url": "https://www.excellence-mag.com/resources/specs/26",
+      "also": [],
+      "says": "1970 911 S Coupe: 2,195 cc, 180 DIN"
+     },
+     {
+      "name": "Wikipedia - List of Porsche engines",
+      "url": "https://en.wikipedia.org/wiki/List_of_Porsche_engines",
+      "says": "911S 2.2 1970: 911/02 (manual), 911/05 (Sportomatic), 180 PS; US/CDN T had market-specific 911/07 and 911/08 (125 PS)"
+     }
+    ],
+    "status": "three_sources_not_nhra",
+    "independent_sources": 3,
+    "note": "hp is the US-spec DIN (PS) rating, on which 2+ sources agree; the US SAE figure comes from Consumer Guide alone, so it is kept in the note."
+   }
+  ],
+  "1971": [
+   {
+    "gen": "901",
+    "cid": 134,
+    "cc": 2195,
+    "liters": 2.2,
+    "hp": 125,
+    "hp_basis": "DIN PS (US 145 SAE gross per Consumer Guide)",
+    "hp_din_us_spec": 125,
+    "hp_sae_us_consumer_guide": 145,
+    "rpo": "911/07 (US/CDN manual), 911/08 (US Sportomatic)",
+    "name": "2.2L SOHC flat-six, Zenith 40TIN carbs",
+    "common_name": "911T 2.2",
+    "trims": [
+     "911T Coupe",
+     "911T Targa"
+    ],
+    "induction": "carbureted",
+    "nhra": false,
+    "sources": [
+     {
+      "name": "Consumer Guide (Auto Editors of Consumer Guide) - Porsche 911 History, via HowStuffWorks (archived)",
+      "url": "https://auto.howstuffworks.com/porsche-911-history.htm",
+      "archive": "http://web.archive.org/web/2020/https://auto.howstuffworks.com/porsche-911-history.htm",
+      "says": "1970 U.S. lineup: 911T 125 DIN horsepower European (145 SAE); 1971 D-Series little changed"
+     },
+     {
+      "name": "Excellence magazine (US) - Specs database",
+      "url": "https://www.excellence-mag.com/resources/specs/20",
+      "also": [],
+      "says": "1971 911 T Coupe: 2,195 cc, 125 DIN"
+     },
+     {
+      "name": "Wikipedia - List of Porsche engines",
+      "url": "https://en.wikipedia.org/wiki/List_of_Porsche_engines",
+      "says": "911T 2.2 1971: 911/07 (US/CDN manual), 911/08 (US Sportomatic), 125 PS; US/CDN T had market-specific 911/07 and 911/08 (125 PS)"
+     }
+    ],
+    "status": "three_sources_not_nhra",
+    "independent_sources": 3,
+    "note": "hp is the US-spec DIN (PS) rating, on which 2+ sources agree; the US SAE figure comes from Consumer Guide alone, so it is kept in the note."
+   },
+   {
+    "gen": "901",
+    "cid": 134,
+    "cc": 2195,
+    "liters": 2.2,
+    "hp": 155,
+    "hp_basis": "DIN PS (US 175 SAE gross per Consumer Guide)",
+    "hp_din_us_spec": 155,
+    "hp_sae_us_consumer_guide": 175,
+    "rpo": "911/01 (manual), 911/04 (Sportomatic)",
+    "name": "2.2L SOHC flat-six, Bosch mechanical fuel injection",
+    "common_name": "911E 2.2",
+    "trims": [
+     "911E Coupe",
+     "911E Targa"
+    ],
+    "induction": "mechanical fuel injection",
+    "nhra": false,
+    "sources": [
+     {
+      "name": "Consumer Guide (Auto Editors of Consumer Guide) - Porsche 911 History, via HowStuffWorks (archived)",
+      "url": "https://auto.howstuffworks.com/porsche-911-history.htm",
+      "archive": "http://web.archive.org/web/2020/https://auto.howstuffworks.com/porsche-911-history.htm",
+      "says": "1970 U.S. lineup: 911E 155 DIN horsepower European (175 SAE); 1971 D-Series little changed"
+     },
+     {
+      "name": "Excellence magazine (US) - Specs database",
+      "url": "https://www.excellence-mag.com/resources/specs/15",
+      "also": [],
+      "says": "1971 911 E Coupe: 2,195 cc, 155 DIN"
+     },
+     {
+      "name": "Wikipedia - List of Porsche engines",
+      "url": "https://en.wikipedia.org/wiki/List_of_Porsche_engines",
+      "says": "911E 2.2 1971: 911/01 (manual), 911/04 (Sportomatic), 155 PS; US/CDN T had market-specific 911/07 and 911/08 (125 PS)"
+     }
+    ],
+    "status": "three_sources_not_nhra",
+    "independent_sources": 3,
+    "note": "hp is the US-spec DIN (PS) rating, on which 2+ sources agree; the US SAE figure comes from Consumer Guide alone, so it is kept in the note."
+   },
+   {
+    "gen": "901",
+    "cid": 134,
+    "cc": 2195,
+    "liters": 2.2,
+    "hp": 180,
+    "hp_basis": "DIN PS (US 200 SAE gross per Consumer Guide)",
+    "hp_din_us_spec": 180,
+    "hp_sae_us_consumer_guide": 200,
+    "rpo": "911/02 (manual), 911/05 (Sportomatic)",
+    "name": "2.2L SOHC flat-six, Bosch mechanical fuel injection",
+    "common_name": "911S 2.2",
+    "trims": [
+     "911S Coupe",
+     "911S Targa"
+    ],
+    "induction": "mechanical fuel injection",
+    "nhra": false,
+    "sources": [
+     {
+      "name": "Consumer Guide (Auto Editors of Consumer Guide) - Porsche 911 History, via HowStuffWorks (archived)",
+      "url": "https://auto.howstuffworks.com/porsche-911-history.htm",
+      "archive": "http://web.archive.org/web/2020/https://auto.howstuffworks.com/porsche-911-history.htm",
+      "says": "1970 U.S. lineup: 911S 180 DIN horsepower European (200 SAE); 1971 D-Series little changed"
+     },
+     {
+      "name": "Excellence magazine (US) - Specs database",
+      "url": "https://www.excellence-mag.com/resources/specs/27",
+      "also": [],
+      "says": "1971 911 S Coupe: 2,195 cc, 180 DIN"
+     },
+     {
+      "name": "Wikipedia - List of Porsche engines",
+      "url": "https://en.wikipedia.org/wiki/List_of_Porsche_engines",
+      "says": "911S 2.2 1971: 911/02 (manual), 911/05 (Sportomatic), 180 PS; US/CDN T had market-specific 911/07 and 911/08 (125 PS)"
+     }
+    ],
+    "status": "three_sources_not_nhra",
+    "independent_sources": 3,
+    "note": "hp is the US-spec DIN (PS) rating, on which 2+ sources agree; the US SAE figure comes from Consumer Guide alone, so it is kept in the note."
+   }
+  ],
+  "1972": [
+   {
+    "gen": "901",
+    "cid": 143,
+    "cc": 2341,
+    "liters": 2.4,
+    "hp": 140,
+    "hp_basis": "DIN PS (US SAE in note)",
+    "hp_din_us_spec": 140,
+    "hp_sae_us_consumer_guide": 157,
+    "rpo": "911/51 (US/CDN manual, MFI), 911/61 (Sportomatic)",
+    "name": "2.4L (2,341 cc) SOHC flat-six, Bosch mechanical fuel injection",
+    "common_name": "911T 2.4",
+    "trims": [
+     "911T Coupe",
+     "911T Targa"
+    ],
+    "induction": "mechanical fuel injection",
+    "nhra": false,
+    "sources": [
+     {
+      "name": "Consumer Guide (Auto Editors of Consumer Guide) - Porsche 911 History, via HowStuffWorks (archived)",
+      "url": "https://auto.howstuffworks.com/porsche-911-history.htm",
+      "archive": "http://web.archive.org/web/2020/https://auto.howstuffworks.com/porsche-911-history.htm",
+      "says": "1972 specifics: 911T (157 SAE); 1973 US lineup S, T, E"
+     },
+     {
+      "name": "Excellence magazine (US) - Specs database",
+      "url": "https://www.excellence-mag.com/resources/specs/21",
+      "also": [],
+      "says": "1972 911 T Coupe: 2,341 cc, 140 DIN"
+     },
+     {
+      "name": "Wikipedia - List of Porsche engines",
+      "url": "https://en.wikipedia.org/wiki/List_of_Porsche_engines",
+      "says": "911T 1972: 911/51 (US/CDN manual, MFI), 911/61 (Sportomatic); classic article: US/Japan T used MFI, 140 PS"
+     }
+    ],
+    "status": "three_sources_not_nhra",
+    "independent_sources": 3,
+    "note": "hp is the US-spec DIN (PS) rating, on which 2+ sources agree; the US SAE figure comes from Consumer Guide alone, so it is kept in the note. Consumer Guide gives 157 SAE without saying gross or net. Conflict: Consumer Guide lists the T at 130 DIN (the European carbureted figure); Wikipedia and Excellence give 140 PS for the US fuel-injected T (911/51)."
+   },
+   {
+    "gen": "901",
+    "cid": 143,
+    "cc": 2341,
+    "liters": 2.4,
+    "hp": 165,
+    "hp_basis": "DIN PS (US SAE in note)",
+    "hp_din_us_spec": 165,
+    "hp_sae_us_consumer_guide": 185,
+    "rpo": "911/52 (manual), 911/62 (Sportomatic)",
+    "name": "2.4L (2,341 cc) SOHC flat-six, Bosch mechanical fuel injection",
+    "common_name": "911E 2.4",
+    "trims": [
+     "911E Coupe",
+     "911E Targa"
+    ],
+    "induction": "mechanical fuel injection",
+    "nhra": false,
+    "sources": [
+     {
+      "name": "Consumer Guide (Auto Editors of Consumer Guide) - Porsche 911 History, via HowStuffWorks (archived)",
+      "url": "https://auto.howstuffworks.com/porsche-911-history.htm",
+      "archive": "http://web.archive.org/web/2020/https://auto.howstuffworks.com/porsche-911-history.htm",
+      "says": "1972 specifics: 911E (185 SAE); 1973 US lineup S, T, E"
+     },
+     {
+      "name": "Excellence magazine (US) - Specs database",
+      "url": "https://www.excellence-mag.com/resources/specs/16",
+      "also": [],
+      "says": "1972 911 E Coupe: 2,341 cc, 165 DIN"
+     },
+     {
+      "name": "Wikipedia - List of Porsche engines",
+      "url": "https://en.wikipedia.org/wiki/List_of_Porsche_engines",
+      "says": "911E 1972: 911/52 (manual), 911/62 (Sportomatic); classic article: US/Japan T used MFI, 140 PS"
+     }
+    ],
+    "status": "three_sources_not_nhra",
+    "independent_sources": 3,
+    "note": "hp is the US-spec DIN (PS) rating, on which 2+ sources agree; the US SAE figure comes from Consumer Guide alone, so it is kept in the note. Consumer Guide gives 185 SAE without saying gross or net."
+   },
+   {
+    "gen": "901",
+    "cid": 143,
+    "cc": 2341,
+    "liters": 2.4,
+    "hp": 190,
+    "hp_basis": "DIN PS (US SAE in note)",
+    "hp_din_us_spec": 190,
+    "hp_sae_us_consumer_guide": 210,
+    "rpo": "911/53 (manual), 911/63 (Sportomatic)",
+    "name": "2.4L (2,341 cc) SOHC flat-six, Bosch mechanical fuel injection",
+    "common_name": "911S 2.4",
+    "trims": [
+     "911S Coupe",
+     "911S Targa"
+    ],
+    "induction": "mechanical fuel injection",
+    "nhra": false,
+    "sources": [
+     {
+      "name": "Consumer Guide (Auto Editors of Consumer Guide) - Porsche 911 History, via HowStuffWorks (archived)",
+      "url": "https://auto.howstuffworks.com/porsche-911-history.htm",
+      "archive": "http://web.archive.org/web/2020/https://auto.howstuffworks.com/porsche-911-history.htm",
+      "says": "1972 specifics: 911S (210 SAE); 1973 US lineup S, T, E"
+     },
+     {
+      "name": "Excellence magazine (US) - Specs database",
+      "url": "https://www.excellence-mag.com/resources/specs/28",
+      "also": [],
+      "says": "1972 911 S Coupe: 2,341 cc, 190 DIN"
+     },
+     {
+      "name": "Wikipedia - List of Porsche engines",
+      "url": "https://en.wikipedia.org/wiki/List_of_Porsche_engines",
+      "says": "911S 1972: 911/53 (manual), 911/63 (Sportomatic); classic article: US/Japan T used MFI, 140 PS"
+     }
+    ],
+    "status": "three_sources_not_nhra",
+    "independent_sources": 3,
+    "note": "hp is the US-spec DIN (PS) rating, on which 2+ sources agree; the US SAE figure comes from Consumer Guide alone, so it is kept in the note. Consumer Guide gives 210 SAE without saying gross or net."
+   }
+  ],
+  "1973": [
+   {
+    "gen": "901",
+    "cid": 143,
+    "cc": 2341,
+    "liters": 2.4,
+    "hp": 140,
+    "hp_basis": "DIN PS (US SAE in note)",
+    "hp_din_us_spec": 140,
+    "hp_sae_us_consumer_guide": 157,
+    "rpo": "911/51 (US/CDN manual, MFI), 911/61 (Sportomatic)",
+    "name": "2.4L (2,341 cc) SOHC flat-six, Bosch mechanical fuel injection",
+    "common_name": "911T 2.4",
+    "trims": [
+     "911T Coupe",
+     "911T Targa"
+    ],
+    "induction": "mechanical fuel injection",
+    "nhra": false,
+    "sources": [
+     {
+      "name": "Consumer Guide (Auto Editors of Consumer Guide) - Porsche 911 History, via HowStuffWorks (archived)",
+      "url": "https://auto.howstuffworks.com/porsche-911-history.htm",
+      "archive": "http://web.archive.org/web/2020/https://auto.howstuffworks.com/porsche-911-history.htm",
+      "says": "1972 specifics: 911T (157 SAE); 1973 US lineup S, T, E"
+     },
+     {
+      "name": "Excellence magazine (US) - Specs database",
+      "url": "https://www.excellence-mag.com/resources/specs/22",
+      "also": [],
+      "says": "1973 911 T Coupe: 2,341 cc, 140 DIN"
+     },
+     {
+      "name": "Wikipedia - List of Porsche engines",
+      "url": "https://en.wikipedia.org/wiki/List_of_Porsche_engines",
+      "says": "911T 1973: 911/51 (US/CDN manual, MFI), 911/61 (Sportomatic); classic article: US/Japan T used MFI, 140 PS"
+     }
+    ],
+    "status": "three_sources_not_nhra",
+    "independent_sources": 3,
+    "note": "hp is the US-spec DIN (PS) rating, on which 2+ sources agree; the US SAE figure comes from Consumer Guide alone, so it is kept in the note. Consumer Guide gives 157 SAE without saying gross or net. Conflict: Consumer Guide lists the T at 130 DIN (the European carbureted figure); Wikipedia and Excellence give 140 PS for the US fuel-injected T (911/51). Early 1973 only; replaced in January 1973 by the CIS T (separate entry)."
+   },
+   {
+    "gen": "901",
+    "cid": 143,
+    "cc": 2341,
+    "liters": 2.4,
+    "hp": 165,
+    "hp_basis": "DIN PS (US SAE in note)",
+    "hp_din_us_spec": 165,
+    "hp_sae_us_consumer_guide": 185,
+    "rpo": "911/52 (manual), 911/62 (Sportomatic)",
+    "name": "2.4L (2,341 cc) SOHC flat-six, Bosch mechanical fuel injection",
+    "common_name": "911E 2.4",
+    "trims": [
+     "911E Coupe",
+     "911E Targa"
+    ],
+    "induction": "mechanical fuel injection",
+    "nhra": false,
+    "sources": [
+     {
+      "name": "Consumer Guide (Auto Editors of Consumer Guide) - Porsche 911 History, via HowStuffWorks (archived)",
+      "url": "https://auto.howstuffworks.com/porsche-911-history.htm",
+      "archive": "http://web.archive.org/web/2020/https://auto.howstuffworks.com/porsche-911-history.htm",
+      "says": "1972 specifics: 911E (185 SAE); 1973 US lineup S, T, E"
+     },
+     {
+      "name": "Excellence magazine (US) - Specs database",
+      "url": "https://www.excellence-mag.com/resources/specs/17",
+      "also": [],
+      "says": "1973 911 E Coupe: 2,341 cc, 165 DIN"
+     },
+     {
+      "name": "Wikipedia - List of Porsche engines",
+      "url": "https://en.wikipedia.org/wiki/List_of_Porsche_engines",
+      "says": "911E 1973: 911/52 (manual), 911/62 (Sportomatic); classic article: US/Japan T used MFI, 140 PS"
+     }
+    ],
+    "status": "three_sources_not_nhra",
+    "independent_sources": 3,
+    "note": "hp is the US-spec DIN (PS) rating, on which 2+ sources agree; the US SAE figure comes from Consumer Guide alone, so it is kept in the note. Consumer Guide gives 185 SAE without saying gross or net."
+   },
+   {
+    "gen": "901",
+    "cid": 143,
+    "cc": 2341,
+    "liters": 2.4,
+    "hp": 190,
+    "hp_basis": "DIN PS (US SAE in note)",
+    "hp_din_us_spec": 190,
+    "hp_sae_us_consumer_guide": 210,
+    "rpo": "911/53 (manual), 911/63 (Sportomatic)",
+    "name": "2.4L (2,341 cc) SOHC flat-six, Bosch mechanical fuel injection",
+    "common_name": "911S 2.4",
+    "trims": [
+     "911S Coupe",
+     "911S Targa"
+    ],
+    "induction": "mechanical fuel injection",
+    "nhra": false,
+    "sources": [
+     {
+      "name": "Consumer Guide (Auto Editors of Consumer Guide) - Porsche 911 History, via HowStuffWorks (archived)",
+      "url": "https://auto.howstuffworks.com/porsche-911-history.htm",
+      "archive": "http://web.archive.org/web/2020/https://auto.howstuffworks.com/porsche-911-history.htm",
+      "says": "1972 specifics: 911S (210 SAE); 1973 US lineup S, T, E"
+     },
+     {
+      "name": "Excellence magazine (US) - Specs database",
+      "url": "https://www.excellence-mag.com/resources/specs/29",
+      "also": [],
+      "says": "1973 911 S Coupe: 2,341 cc, 190 DIN"
+     },
+     {
+      "name": "Wikipedia - List of Porsche engines",
+      "url": "https://en.wikipedia.org/wiki/List_of_Porsche_engines",
+      "says": "911S 1973: 911/53 (manual), 911/63 (Sportomatic); classic article: US/Japan T used MFI, 140 PS"
+     }
+    ],
+    "status": "three_sources_not_nhra",
+    "independent_sources": 3,
+    "note": "hp is the US-spec DIN (PS) rating, on which 2+ sources agree; the US SAE figure comes from Consumer Guide alone, so it is kept in the note. Consumer Guide gives 210 SAE without saying gross or net."
+   },
+   {
+    "gen": "901",
+    "cid": 143,
+    "cc": 2341,
+    "liters": 2.4,
+    "hp": 140,
+    "hp_basis": "DIN PS",
+    "hp_din_us_spec": 140,
+    "rpo": "911/91 (manual), 911/96 (Sportomatic) - US/CDN",
+    "name": "2.4L SOHC flat-six, Bosch K-Jetronic (CIS)",
+    "common_name": "911T 2.4 CIS ('1973.5')",
+    "trims": [
+     "911T Coupe",
+     "911T Targa"
+    ],
+    "induction": "Bosch K-Jetronic CIS",
+    "nhra": false,
+    "sources": [
+     {
+      "name": "Consumer Guide (Auto Editors of Consumer Guide) - Porsche 911 History, via HowStuffWorks (archived)",
+      "url": "https://auto.howstuffworks.com/porsche-911-history.htm",
+      "archive": "http://web.archive.org/web/2020/https://auto.howstuffworks.com/porsche-911-history.htm",
+      "says": "mid-model year the T gained Bosch K-Jetronic (CIS), good for an extra 10 DIN horsepower European (seven SAE)"
+     },
+     {
+      "name": "Excellence magazine (US) - Specs database",
+      "url": "https://www.excellence-mag.com/resources/specs/23",
+      "also": [],
+      "says": "1973.5 911 T Coupe: 140 @ 5700 rpm, 8.0:1"
+     },
+     {
+      "name": "Wikipedia - List of Porsche engines",
+      "url": "https://en.wikipedia.org/wiki/List_of_Porsche_engines",
+      "says": "911 TK (USA)(CDN) 911/91, 911/96 SPM 1973, 103 kW; classic article: from January 1973 US 911Ts got K-Jetronic, rating unchanged at 140 PS"
+     }
+    ],
+    "status": "three_sources_not_nhra",
+    "independent_sources": 3,
+    "note": "Mid-year change (January 1973) for the US 911T. Rating: Wikipedia and Excellence say 140 PS, unchanged; Consumer Guide says +10 DIN. Conflict noted; 140 kept on 2 sources. The Carrera RS 2.7 was never sold in the US."
+   }
+  ],
+  "1974": [
+   {
+    "gen": "g-series",
+    "cid": 164,
+    "cc": 2687,
+    "liters": 2.7,
+    "hp": 150,
+    "hp_basis": "DIN PS (US 143 SAE net per Consumer Guide)",
+    "hp_din_us_spec": 150,
+    "hp_sae_us_consumer_guide": 143,
+    "rpo": "911/92 (manual), 911/97 (Sportomatic)",
+    "name": "2.7L SOHC flat-six, Bosch K-Jetronic, 8.0:1",
+    "common_name": "911 2.7",
+    "trims": [
+     "911 Coupe",
+     "911 Targa"
+    ],
+    "induction": "Bosch K-Jetronic CIS",
+    "nhra": false,
+    "sources": [
+     {
+      "name": "Consumer Guide (Auto Editors of Consumer Guide) - Porsche 911 History, via HowStuffWorks (archived)",
+      "url": "https://auto.howstuffworks.com/porsche-911-history.htm",
+      "archive": "http://web.archive.org/web/2020/https://auto.howstuffworks.com/porsche-911-history.htm",
+      "says": "1974: the base 911 'only' 143 horsepower (SAE net); other markets 150 DIN"
+     },
+     {
+      "name": "Excellence magazine (US) - Specs database",
+      "url": "https://www.excellence-mag.com/resources/specs/30",
+      "also": [
+       "https://www.excellence-mag.com/resources/specs/31"
+      ],
+      "says": "1974 911 Coupe/Targa: 2,687 cc, 150 @ 5700 rpm, 8.0:1"
+     },
+     {
+      "name": "Wikipedia - List of Porsche engines",
+      "url": "https://en.wikipedia.org/wiki/List_of_Porsche_engines",
+      "says": "1974 911 911/92, 911/97 SPM, 110 kW (150 PS); classic article: 911 and 911S at 150 and 175 PS"
+     }
+    ],
+    "status": "three_sources_not_nhra",
+    "independent_sources": 3,
+    "note": "hp is the US-spec DIN (PS) rating, on which 2+ sources agree; the US SAE figure comes from Consumer Guide alone, so it is kept in the note. Consumer Guide suggests the US car made less than the 150 DIN European rating; Excellence lists 150 for the US car."
+   },
+   {
+    "gen": "g-series",
+    "cid": 164,
+    "cc": 2687,
+    "liters": 2.7,
+    "hp": 175,
+    "hp_basis": "DIN PS (US 167 SAE net per Consumer Guide)",
+    "hp_din_us_spec": 175,
+    "hp_sae_us_consumer_guide": 167,
+    "rpo": "911/93 (manual), 911/98 (Sportomatic)",
+    "name": "2.7L SOHC flat-six, Bosch K-Jetronic, 8.5:1",
+    "common_name": "911S / Carrera 2.7 (US)",
+    "trims": [
+     "911S Coupe",
+     "911S Targa",
+     "Carrera Coupe",
+     "Carrera Targa"
+    ],
+    "induction": "Bosch K-Jetronic CIS",
+    "nhra": false,
+    "sources": [
+     {
+      "name": "Consumer Guide (Auto Editors of Consumer Guide) - Porsche 911 History, via HowStuffWorks (archived)",
+      "url": "https://auto.howstuffworks.com/porsche-911-history.htm",
+      "archive": "http://web.archive.org/web/2020/https://auto.howstuffworks.com/porsche-911-history.htm",
+      "says": "The American-market Carrera and S listed 167 horsepower (SAE net) at 5,800 rpm"
+     },
+     {
+      "name": "Excellence magazine (US) - Specs database",
+      "url": "https://www.excellence-mag.com/resources/specs/32",
+      "also": [
+       "https://www.excellence-mag.com/resources/specs/33",
+       "https://www.excellence-mag.com/resources/specs/40",
+       "https://www.excellence-mag.com/resources/specs/41"
+      ],
+      "says": "1974 911 S and Carrera Coupe/Targa: 175 @ 5800 rpm, 8.5:1"
+     },
+     {
+      "name": "Wikipedia - List of Porsche engines",
+      "url": "https://en.wikipedia.org/wiki/List_of_Porsche_engines",
+      "says": "911 Carrera (USA)(CDN) 911/93, 911/98 SPM 1974, 129 kW; classic article: US Carrera 2.7 limited to the K-Jetronic engine, 175 PS"
+     }
+    ],
+    "status": "three_sources_not_nhra",
+    "independent_sources": 3,
+    "note": "The US Carrera used the 911S engine, not the RS 911/83 MFI engine (which was banned on emissions grounds). hp is the US-spec DIN (PS) rating, on which 2+ sources agree; the US SAE figure comes from Consumer Guide alone, so it is kept in the note."
+   }
+  ],
+  "1975": [
+   {
+    "gen": "g-series",
+    "cid": 164,
+    "cc": 2687,
+    "liters": 2.7,
+    "hp": 165,
+    "hp_basis": "DIN PS (California 160)",
+    "hp_din_us_spec": 165,
+    "hp_sae_us_consumer_guide": 157,
+    "rpo": "911/43 (49-state), 911/48 (Sportomatic), 911/44 (California)",
+    "name": "2.7L SOHC flat-six, Bosch K-Jetronic, 8.5:1",
+    "common_name": "911S / Carrera 2.7 (US)",
+    "trims": [
+     "911S Coupe",
+     "911S Targa",
+     "Carrera Coupe",
+     "Carrera Targa"
+    ],
+    "induction": "Bosch K-Jetronic CIS",
+    "nhra": false,
+    "sources": [
+     {
+      "name": "Consumer Guide (Auto Editors of Consumer Guide) - Porsche 911 History, via HowStuffWorks (archived)",
+      "url": "https://auto.howstuffworks.com/porsche-911-history.htm",
+      "archive": "http://web.archive.org/web/2020/https://auto.howstuffworks.com/porsche-911-history.htm",
+      "says": "1975: the Carrera and 911S each lost 10 horses (15 in California) [from 167 SAE net]"
+     },
+     {
+      "name": "Excellence magazine (US) - Specs database",
+      "url": "https://www.excellence-mag.com/resources/specs/34",
+      "also": [
+       "https://www.excellence-mag.com/resources/specs/35",
+       "https://www.excellence-mag.com/resources/specs/42",
+       "https://www.excellence-mag.com/resources/specs/43"
+      ],
+      "says": "1975 911 S and Carrera: 2,687 cc, 165 @ 5800 rpm (CA:160)"
+     },
+     {
+      "name": "Wikipedia - List of Porsche engines",
+      "url": "https://en.wikipedia.org/wiki/List_of_Porsche_engines",
+      "says": "1975 911 S (USA)(CDN) 911/43, 121 kW (165 PS); California 911/44 118 kW (160 PS)"
+     }
+    ],
+    "status": "three_sources_not_nhra",
+    "independent_sources": 3,
+    "note": "hp is the US-spec DIN (PS) rating, on which 2+ sources agree; the US SAE figure comes from Consumer Guide alone, so it is kept in the note. Consumer Guide implies 157 SAE net (152 in California). Neither Consumer Guide nor Excellence lists a base US 911 for 1975. Wikipedia: US Carrera 175 PS, later cut to 165 PS for the US, 160 PS for California."
+   }
+  ],
+  "1976": [
+   {
+    "gen": "g-series",
+    "cid": 164,
+    "cc": 2687,
+    "liters": 2.7,
+    "hp": 165,
+    "hp_basis": "DIN PS (California 160)",
+    "hp_din_us_spec": 165,
+    "hp_sae_us_consumer_guide": 157,
+    "rpo": "911/82 (49-state), 911/89 (Sportomatic), 911/84 (California)",
+    "name": "2.7L SOHC flat-six, Bosch K-Jetronic, 8.5:1",
+    "common_name": "911S 2.7",
+    "trims": [
+     "911S Coupe",
+     "911S Targa"
+    ],
+    "induction": "Bosch K-Jetronic CIS",
+    "nhra": false,
+    "sources": [
+     {
+      "name": "Consumer Guide (Auto Editors of Consumer Guide) - Porsche 911 History, via HowStuffWorks (archived)",
+      "url": "https://auto.howstuffworks.com/porsche-911-history.htm",
+      "archive": "http://web.archive.org/web/2020/https://auto.howstuffworks.com/porsche-911-history.htm",
+      "says": "U.S. net horsepower rose from 157 [911S] to 234 with the Turbo Carrera; 1976 American-market S little changed"
+     },
+     {
+      "name": "Excellence magazine (US) - Specs database",
+      "url": "https://www.excellence-mag.com/resources/specs/36",
+      "also": [
+       "https://www.excellence-mag.com/resources/specs/37"
+      ],
+      "says": "1976 911 S: 2,687 cc, 165 @ 5800 rpm (CA:160)"
+     },
+     {
+      "name": "Wikipedia - List of Porsche engines",
+      "url": "https://en.wikipedia.org/wiki/List_of_Porsche_engines",
+      "says": "1976 911 S (USA)(CDN) 911/82, 121 kW (165 PS)"
+     }
+    ],
+    "status": "three_sources_not_nhra",
+    "independent_sources": 3,
+    "note": "hp is the US-spec DIN (PS) rating, on which 2+ sources agree; the US SAE figure comes from Consumer Guide alone, so it is kept in the note. Consumer Guide implies 157 SAE net (152 in California). Conflict on California rating: Excellence says 160 PS, Wikipedia engine list says 121 kW (165 PS) for 911/84. Carrera 2.7/3.0 not sold in the US (Consumer Guide: ousted by the Turbo from the US lineup)."
+   },
+   {
+    "gen": "g-series",
+    "cid": 183,
+    "cc": 2994,
+    "liters": 3.0,
+    "hp": 234,
+    "hp_basis": "SAE net",
+    "hp_din_us_spec": 245,
+    "rpo": "930/51 (US/CDN), 930/53",
+    "name": "3.0L SOHC turbocharged flat-six, KKK turbo, K-Jetronic, 6.5:1",
+    "common_name": "Turbo Carrera (930)",
+    "trims": [
+     "Turbo Carrera Coupe"
+    ],
+    "induction": "turbocharged",
+    "nhra": false,
+    "sources": [
+     {
+      "name": "Consumer Guide (Auto Editors of Consumer Guide) - Porsche 911 History, via HowStuffWorks (archived)",
+      "url": "https://auto.howstuffworks.com/porsche-911-history.htm",
+      "archive": "http://web.archive.org/web/2020/https://auto.howstuffworks.com/porsche-911-history.htm",
+      "says": "An American version, emissions-tuned to 234 SAE net horsepower (245 DIN European), arrived for model-year 1976 as the Turbo Carrera. It returned for 1977 unchanged"
+     },
+     {
+      "name": "Excellence magazine (US) - Specs database",
+      "url": "https://www.excellence-mag.com/resources/specs/371",
+      "also": [],
+      "says": "1976 911 Turbo Carrera Coupe (930): 2,994 cc, 245 @ 5500 rpm, 6.5:1"
+     },
+     {
+      "name": "Wikipedia - Porsche 911 (930)",
+      "url": "https://en.wikipedia.org/wiki/Porsche_911_(930)",
+      "says": "US 930 performance table: '1975 930 (234 hp)'; US exports began 1976; List of Porsche engines: 1976-1977 Typ 930/51 and /53, 180 kW, for USA, Canada, Japan"
+     }
+    ],
+    "status": "three_sources_not_nhra",
+    "independent_sources": 3,
+    "note": "234 hp SAE net: Consumer Guide and Wikipedia agree. Excellence and the Wikipedia engine list give 245 PS DIN (180 kW)."
+   }
+  ],
+  "1977": [
+   {
+    "gen": "g-series",
+    "cid": 164,
+    "cc": 2687,
+    "liters": 2.7,
+    "hp": 165,
+    "hp_basis": "DIN PS (California 160)",
+    "hp_din_us_spec": 165,
+    "hp_sae_us_consumer_guide": 157,
+    "rpo": "911/85 (manual), 911/90 (Sportomatic)",
+    "name": "2.7L SOHC flat-six, Bosch K-Jetronic, 8.5:1",
+    "common_name": "911S 2.7",
+    "trims": [
+     "911S Coupe",
+     "911S Targa"
+    ],
+    "induction": "Bosch K-Jetronic CIS",
+    "nhra": false,
+    "sources": [
+     {
+      "name": "Consumer Guide (Auto Editors of Consumer Guide) - Porsche 911 History, via HowStuffWorks (archived)",
+      "url": "https://auto.howstuffworks.com/porsche-911-history.htm",
+      "archive": "http://web.archive.org/web/2020/https://auto.howstuffworks.com/porsche-911-history.htm",
+      "says": "1977: the 911S and Turbo were little changed"
+     },
+     {
+      "name": "Excellence magazine (US) - Specs database",
+      "url": "https://www.excellence-mag.com/resources/specs/38",
+      "also": [
+       "https://www.excellence-mag.com/resources/specs/39"
+      ],
+      "says": "1977 911 S: 2,687 cc, 165 @ 5800 rpm"
+     },
+     {
+      "name": "Wikipedia - List of Porsche engines",
+      "url": "https://en.wikipedia.org/wiki/List_of_Porsche_engines",
+      "says": "1977 911 S (USA)(CDN) 911/85, 121 kW (165 PS)"
+     }
+    ],
+    "status": "three_sources_not_nhra",
+    "independent_sources": 3,
+    "note": "hp is the US-spec DIN (PS) rating, on which 2+ sources agree; the US SAE figure comes from Consumer Guide alone, so it is kept in the note. Consumer Guide implies 157 SAE net (152 in California). Carrera 2.7/3.0 not sold in the US (Consumer Guide: ousted by the Turbo from the US lineup)."
+   },
+   {
+    "gen": "g-series",
+    "cid": 183,
+    "cc": 2994,
+    "liters": 3.0,
+    "hp": 234,
+    "hp_basis": "SAE net",
+    "hp_din_us_spec": 245,
+    "rpo": "930/51 (US/CDN), 930/53",
+    "name": "3.0L SOHC turbocharged flat-six, KKK turbo, K-Jetronic, 6.5:1",
+    "common_name": "Turbo Carrera (930)",
+    "trims": [
+     "Turbo Carrera Coupe"
+    ],
+    "induction": "turbocharged",
+    "nhra": false,
+    "sources": [
+     {
+      "name": "Consumer Guide (Auto Editors of Consumer Guide) - Porsche 911 History, via HowStuffWorks (archived)",
+      "url": "https://auto.howstuffworks.com/porsche-911-history.htm",
+      "archive": "http://web.archive.org/web/2020/https://auto.howstuffworks.com/porsche-911-history.htm",
+      "says": "An American version, emissions-tuned to 234 SAE net horsepower (245 DIN European), arrived for model-year 1976 as the Turbo Carrera. It returned for 1977 unchanged"
+     },
+     {
+      "name": "Excellence magazine (US) - Specs database",
+      "url": "https://www.excellence-mag.com/resources/specs/372",
+      "also": [],
+      "says": "1977 911 Turbo Carrera Coupe (930): 2,994 cc, 245 @ 5500 rpm, 6.5:1"
+     },
+     {
+      "name": "Wikipedia - Porsche 911 (930)",
+      "url": "https://en.wikipedia.org/wiki/Porsche_911_(930)",
+      "says": "US 930 performance table: '1975 930 (234 hp)'; US exports began 1976; List of Porsche engines: 1976-1977 Typ 930/51 and /53, 180 kW, for USA, Canada, Japan"
+     }
+    ],
+    "status": "three_sources_not_nhra",
+    "independent_sources": 3,
+    "note": "234 hp SAE net: Consumer Guide and Wikipedia agree. Excellence and the Wikipedia engine list give 245 PS DIN (180 kW)."
+   }
+  ],
+  "1978": [
+   {
+    "gen": "g-series",
+    "cid": 183,
+    "cc": 2994,
+    "liters": 3.0,
+    "hp": 180,
+    "hp_basis": "DIN PS (US 172 SAE net per Consumer Guide)",
+    "hp_din_us_spec": 180,
+    "hp_sae_us_consumer_guide": 172,
+    "rpo": "930/04 (49-state), 930/06 (California)",
+    "name": "3.0L SOHC flat-six, Bosch K-Jetronic, catalytic converter",
+    "common_name": "911SC",
+    "trims": [
+     "911SC Coupe",
+     "911SC Targa"
+    ],
+    "induction": "Bosch K-Jetronic CIS",
+    "nhra": false,
+    "sources": [
+     {
+      "name": "Consumer Guide (Auto Editors of Consumer Guide) - Porsche 911 History, via HowStuffWorks (archived)",
+      "url": "https://auto.howstuffworks.com/porsche-911-history.htm",
+      "archive": "http://web.archive.org/web/2020/https://auto.howstuffworks.com/porsche-911-history.htm",
+      "says": "SC: DIN horsepower European down to 180 at 5,500 rpm (172 horsepower SAE net)"
+     },
+     {
+      "name": "Excellence magazine (US) - Specs database",
+      "url": "https://www.excellence-mag.com/resources/specs/44",
+      "also": [
+       "https://www.excellence-mag.com/resources/specs/45"
+      ],
+      "says": "1978 911 SC: 2,994 cc, 180 @ 5500 rpm, 8.5:1"
+     },
+     {
+      "name": "Wikipedia - List of Porsche engines",
+      "url": "https://en.wikipedia.org/wiki/List_of_Porsche_engines",
+      "says": "911 SC (USA)(CDN) 930/04 1978, 132 kW (180 PS); classic article: US cars kept the 180 PS engine throughout while other markets went to 188 and 204 PS"
+     }
+    ],
+    "status": "three_sources_not_nhra",
+    "independent_sources": 3,
+    "note": "hp is the US-spec DIN (PS) rating, on which 2+ sources agree; the US SAE figure comes from Consumer Guide alone, so it is kept in the note."
+   },
+   {
+    "gen": "g-series",
+    "cid": 201,
+    "cc": 3299,
+    "liters": 3.3,
+    "hp": 265,
+    "hp_basis": "DIN PS (US SAE disputed: 253 or 261)",
+    "hp_din_us_spec": 265,
+    "rpo": "930/61 (US/CDN), 930/63 (California)",
+    "name": "3.3L SOHC turbocharged intercooled flat-six, K-Jetronic, 7.0:1",
+    "common_name": "Turbo 3.3 (930)",
+    "trims": [
+     "Turbo Coupe"
+    ],
+    "induction": "turbocharged, intercooled",
+    "nhra": false,
+    "sources": [
+     {
+      "name": "Consumer Guide (Auto Editors of Consumer Guide) - Porsche 911 History, via HowStuffWorks (archived)",
+      "url": "https://auto.howstuffworks.com/porsche-911-history.htm",
+      "archive": "http://web.archive.org/web/2020/https://auto.howstuffworks.com/porsche-911-history.htm",
+      "says": "300 DIN horsepower European at 5,500 rpm (253 SAE net); the Porsche Turbo returned for 1979, then went into exile for five long years"
+     },
+     {
+      "name": "Excellence magazine (US) - Specs database",
+      "url": "https://www.excellence-mag.com/resources/specs/373",
+      "also": [],
+      "says": "1978 911 Turbo Carrera Coupe (930): 3,299 cc, 265 @ 5500 rpm, 7.0:1"
+     },
+     {
+      "name": "Wikipedia - List of Porsche engines",
+      "url": "https://en.wikipedia.org/wiki/List_of_Porsche_engines",
+      "says": "930 Turbo (USA)(CDN) 930/61 (1978), 930/64 (1979), 195 kW (265 PS); 930 article US test table: '1978 930 (261 hp)'"
+     }
+    ],
+    "status": "three_sources_not_nhra",
+    "independent_sources": 3,
+    "note": "Engine confirmed by 3. DIN 265 (195 kW) agreed by Excellence and Wikipedia. US SAE net disputed: Consumer Guide 253 hp, Wikipedia US test table 261 hp (apparently a straight conversion of 265 PS). SAE figure withheld."
+   }
+  ],
+  "1979": [
+   {
+    "gen": "g-series",
+    "cid": 183,
+    "cc": 2994,
+    "liters": 3.0,
+    "hp": 180,
+    "hp_basis": "DIN PS (US 172 SAE net per Consumer Guide)",
+    "hp_din_us_spec": 180,
+    "hp_sae_us_consumer_guide": 172,
+    "rpo": "930/04 (49-state), 930/06 (California)",
+    "name": "3.0L SOHC flat-six, Bosch K-Jetronic, catalytic converter",
+    "common_name": "911SC",
+    "trims": [
+     "911SC Coupe",
+     "911SC Targa"
+    ],
+    "induction": "Bosch K-Jetronic CIS",
+    "nhra": false,
+    "sources": [
+     {
+      "name": "Consumer Guide (Auto Editors of Consumer Guide) - Porsche 911 History, via HowStuffWorks (archived)",
+      "url": "https://auto.howstuffworks.com/porsche-911-history.htm",
+      "archive": "http://web.archive.org/web/2020/https://auto.howstuffworks.com/porsche-911-history.htm",
+      "says": "SC: DIN horsepower European down to 180 at 5,500 rpm (172 horsepower SAE net)"
+     },
+     {
+      "name": "Excellence magazine (US) - Specs database",
+      "url": "https://www.excellence-mag.com/resources/specs/46",
+      "also": [
+       "https://www.excellence-mag.com/resources/specs/47"
+      ],
+      "says": "1979 911 SC: 2,994 cc, 180 @ 5500 rpm, 8.5:1"
+     },
+     {
+      "name": "Wikipedia - List of Porsche engines",
+      "url": "https://en.wikipedia.org/wiki/List_of_Porsche_engines",
+      "says": "911 SC (USA)(CDN) 930/04 1979, 132 kW (180 PS); classic article: US cars kept the 180 PS engine throughout while other markets went to 188 and 204 PS"
+     }
+    ],
+    "status": "three_sources_not_nhra",
+    "independent_sources": 3,
+    "note": "hp is the US-spec DIN (PS) rating, on which 2+ sources agree; the US SAE figure comes from Consumer Guide alone, so it is kept in the note."
+   },
+   {
+    "gen": "g-series",
+    "cid": 201,
+    "cc": 3299,
+    "liters": 3.3,
+    "hp": 265,
+    "hp_basis": "DIN PS (US SAE disputed: 253 or 261)",
+    "hp_din_us_spec": 265,
+    "rpo": "930/64 (US/CDN), 930/63 (California)",
+    "name": "3.3L SOHC turbocharged intercooled flat-six, K-Jetronic, 7.0:1",
+    "common_name": "Turbo 3.3 (930)",
+    "trims": [
+     "Turbo Coupe"
+    ],
+    "induction": "turbocharged, intercooled",
+    "nhra": false,
+    "sources": [
+     {
+      "name": "Consumer Guide (Auto Editors of Consumer Guide) - Porsche 911 History, via HowStuffWorks (archived)",
+      "url": "https://auto.howstuffworks.com/porsche-911-history.htm",
+      "archive": "http://web.archive.org/web/2020/https://auto.howstuffworks.com/porsche-911-history.htm",
+      "says": "300 DIN horsepower European at 5,500 rpm (253 SAE net); the Porsche Turbo returned for 1979, then went into exile for five long years"
+     },
+     {
+      "name": "Excellence magazine (US) - Specs database",
+      "url": "https://www.excellence-mag.com/resources/specs/374",
+      "also": [],
+      "says": "1979 911 Turbo Carrera Coupe (930): 3,299 cc, 265 @ 5500 rpm, 7.0:1"
+     },
+     {
+      "name": "Wikipedia - List of Porsche engines",
+      "url": "https://en.wikipedia.org/wiki/List_of_Porsche_engines",
+      "says": "930 Turbo (USA)(CDN) 930/61 (1978), 930/64 (1979), 195 kW (265 PS); 930 article US test table: '1978 930 (261 hp)'"
+     }
+    ],
+    "status": "three_sources_not_nhra",
+    "independent_sources": 3,
+    "note": "Engine confirmed by 3. DIN 265 (195 kW) agreed by Excellence and Wikipedia. US SAE net disputed: Consumer Guide 253 hp, Wikipedia US test table 261 hp (apparently a straight conversion of 265 PS). SAE figure withheld."
+   }
+  ],
+  "1980": [
+   {
+    "gen": "g-series",
+    "cid": 183,
+    "cc": 2994,
+    "liters": 3.0,
+    "hp": 180,
+    "hp_basis": "DIN PS (US 172 SAE net per Consumer Guide)",
+    "hp_din_us_spec": 180,
+    "hp_sae_us_consumer_guide": 172,
+    "rpo": "930/07",
+    "name": "3.0L SOHC flat-six, Bosch K-Jetronic, catalytic converter",
+    "common_name": "911SC",
+    "trims": [
+     "911SC Coupe",
+     "911SC Targa",
+     "Weissach Edition"
+    ],
+    "induction": "Bosch K-Jetronic CIS",
+    "nhra": false,
+    "sources": [
+     {
+      "name": "Consumer Guide (Auto Editors of Consumer Guide) - Porsche 911 History, via HowStuffWorks (archived)",
+      "url": "https://auto.howstuffworks.com/porsche-911-history.htm",
+      "archive": "http://web.archive.org/web/2020/https://auto.howstuffworks.com/porsche-911-history.htm",
+      "says": "SC: DIN horsepower European down to 180 at 5,500 rpm (172 horsepower SAE net)"
+     },
+     {
+      "name": "Excellence magazine (US) - Specs database",
+      "url": "https://www.excellence-mag.com/resources/specs/48",
+      "also": [
+       "https://www.excellence-mag.com/resources/specs/49"
+      ],
+      "says": "1980 911 SC: 2,994 cc, 180 @ 5500 rpm, 9.3:1"
+     },
+     {
+      "name": "Wikipedia - List of Porsche engines",
+      "url": "https://en.wikipedia.org/wiki/List_of_Porsche_engines",
+      "says": "911 SC (USA)(CDN) 930/07 1980, 132 kW (180 PS); classic article: US cars kept the 180 PS engine throughout while other markets went to 188 and 204 PS"
+     }
+    ],
+    "status": "three_sources_not_nhra",
+    "independent_sources": 3,
+    "note": "hp is the US-spec DIN (PS) rating, on which 2+ sources agree; the US SAE figure comes from Consumer Guide alone, so it is kept in the note. Compression 9.3:1 from 1980 per Excellence."
+   }
+  ],
+  "1981": [
+   {
+    "gen": "g-series",
+    "cid": 183,
+    "cc": 2994,
+    "liters": 3.0,
+    "hp": 180,
+    "hp_basis": "DIN PS (US 172 SAE net per Consumer Guide)",
+    "hp_din_us_spec": 180,
+    "hp_sae_us_consumer_guide": 172,
+    "rpo": "930/16",
+    "name": "3.0L SOHC flat-six, Bosch K-Jetronic, catalytic converter",
+    "common_name": "911SC",
+    "trims": [
+     "911SC Coupe",
+     "911SC Targa"
+    ],
+    "induction": "Bosch K-Jetronic CIS",
+    "nhra": false,
+    "sources": [
+     {
+      "name": "Consumer Guide (Auto Editors of Consumer Guide) - Porsche 911 History, via HowStuffWorks (archived)",
+      "url": "https://auto.howstuffworks.com/porsche-911-history.htm",
+      "archive": "http://web.archive.org/web/2020/https://auto.howstuffworks.com/porsche-911-history.htm",
+      "says": "SC: DIN horsepower European down to 180 at 5,500 rpm (172 horsepower SAE net)"
+     },
+     {
+      "name": "Excellence magazine (US) - Specs database",
+      "url": "https://www.excellence-mag.com/resources/specs/50",
+      "also": [
+       "https://www.excellence-mag.com/resources/specs/51"
+      ],
+      "says": "1981 911 SC: 2,994 cc, 180 @ 5500 rpm, 9.3:1"
+     },
+     {
+      "name": "Wikipedia - List of Porsche engines",
+      "url": "https://en.wikipedia.org/wiki/List_of_Porsche_engines",
+      "says": "911 SC (USA)(CDN) 930/16 1981, 132 kW (180 PS); classic article: US cars kept the 180 PS engine throughout while other markets went to 188 and 204 PS"
+     }
+    ],
+    "status": "three_sources_not_nhra",
+    "independent_sources": 3,
+    "note": "hp is the US-spec DIN (PS) rating, on which 2+ sources agree; the US SAE figure comes from Consumer Guide alone, so it is kept in the note."
+   }
+  ],
+  "1982": [
+   {
+    "gen": "g-series",
+    "cid": 183,
+    "cc": 2994,
+    "liters": 3.0,
+    "hp": 180,
+    "hp_basis": "DIN PS (US 172 SAE net per Consumer Guide)",
+    "hp_din_us_spec": 180,
+    "hp_sae_us_consumer_guide": 172,
+    "rpo": "930/16",
+    "name": "3.0L SOHC flat-six, Bosch K-Jetronic, catalytic converter",
+    "common_name": "911SC",
+    "trims": [
+     "911SC Coupe",
+     "911SC Targa"
+    ],
+    "induction": "Bosch K-Jetronic CIS",
+    "nhra": false,
+    "sources": [
+     {
+      "name": "Consumer Guide (Auto Editors of Consumer Guide) - Porsche 911 History, via HowStuffWorks (archived)",
+      "url": "https://auto.howstuffworks.com/porsche-911-history.htm",
+      "archive": "http://web.archive.org/web/2020/https://auto.howstuffworks.com/porsche-911-history.htm",
+      "says": "SC: DIN horsepower European down to 180 at 5,500 rpm (172 horsepower SAE net)"
+     },
+     {
+      "name": "Excellence magazine (US) - Specs database",
+      "url": "https://www.excellence-mag.com/resources/specs/52",
+      "also": [
+       "https://www.excellence-mag.com/resources/specs/53"
+      ],
+      "says": "1982 911 SC: 2,994 cc, 180 @ 5500 rpm, 9.3:1"
+     },
+     {
+      "name": "Wikipedia - List of Porsche engines",
+      "url": "https://en.wikipedia.org/wiki/List_of_Porsche_engines",
+      "says": "911 SC (USA)(CDN) 930/16 1982, 132 kW (180 PS); classic article: US cars kept the 180 PS engine throughout while other markets went to 188 and 204 PS"
+     }
+    ],
+    "status": "three_sources_not_nhra",
+    "independent_sources": 3,
+    "note": "hp is the US-spec DIN (PS) rating, on which 2+ sources agree; the US SAE figure comes from Consumer Guide alone, so it is kept in the note."
+   }
+  ],
+  "1983": [
+   {
+    "gen": "g-series",
+    "cid": 183,
+    "cc": 2994,
+    "liters": 3.0,
+    "hp": 180,
+    "hp_basis": "DIN PS (US 172 SAE net per Consumer Guide)",
+    "hp_din_us_spec": 180,
+    "hp_sae_us_consumer_guide": 172,
+    "rpo": "930/16",
+    "name": "3.0L SOHC flat-six, Bosch K-Jetronic, catalytic converter",
+    "common_name": "911SC",
+    "trims": [
+     "911SC Coupe",
+     "911SC Targa",
+     "911SC Cabriolet"
+    ],
+    "induction": "Bosch K-Jetronic CIS",
+    "nhra": false,
+    "sources": [
+     {
+      "name": "Consumer Guide (Auto Editors of Consumer Guide) - Porsche 911 History, via HowStuffWorks (archived)",
+      "url": "https://auto.howstuffworks.com/porsche-911-history.htm",
+      "archive": "http://web.archive.org/web/2020/https://auto.howstuffworks.com/porsche-911-history.htm",
+      "says": "SC: DIN horsepower European down to 180 at 5,500 rpm (172 horsepower SAE net); 1983 Cabriolet added"
+     },
+     {
+      "name": "Excellence magazine (US) - Specs database",
+      "url": "https://www.excellence-mag.com/resources/specs/54",
+      "also": [
+       "https://www.excellence-mag.com/resources/specs/55",
+       "https://www.excellence-mag.com/resources/specs/56"
+      ],
+      "says": "1983 911 SC: 2,994 cc, 180 @ 5500 rpm, 9.3:1"
+     },
+     {
+      "name": "Wikipedia - List of Porsche engines",
+      "url": "https://en.wikipedia.org/wiki/List_of_Porsche_engines",
+      "says": "911 SC (USA)(CDN) 930/16 1983, 132 kW (180 PS); classic article: US cars kept the 180 PS engine throughout while other markets went to 188 and 204 PS"
+     }
+    ],
+    "status": "three_sources_not_nhra",
+    "independent_sources": 3,
+    "note": "hp is the US-spec DIN (PS) rating, on which 2+ sources agree; the US SAE figure comes from Consumer Guide alone, so it is kept in the note."
+   }
+  ],
+  "1984": [
+   {
+    "gen": "g-series",
+    "cid": 193,
+    "cc": 3164,
+    "liters": 3.2,
+    "hp": 207,
+    "hp_basis": "DIN PS (US 200 SAE net per Consumer Guide)",
+    "hp_din_us_spec": 207,
+    "hp_sae_us_consumer_guide": 200,
+    "rpo": "930/21",
+    "name": "3.2L SOHC flat-six, Bosch Motronic DME, 9.5:1",
+    "common_name": "3.2 Carrera",
+    "trims": [
+     "Carrera Coupe",
+     "Carrera Targa",
+     "Carrera Cabriolet",
+     "M491 Turbo Look"
+    ],
+    "induction": "fuel injection (Motronic DME)",
+    "nhra": false,
+    "sources": [
+     {
+      "name": "Consumer Guide (Auto Editors of Consumer Guide) - Porsche 911 History, via HowStuffWorks (archived)",
+      "url": "https://auto.howstuffworks.com/porsche-911-history.htm",
+      "archive": "http://web.archive.org/web/2020/https://auto.howstuffworks.com/porsche-911-history.htm",
+      "says": "1984 Carrera: SAE net horsepower returned to 200 at 5,900 rpm"
+     },
+     {
+      "name": "Excellence magazine (US) - Specs database",
+      "url": "https://www.excellence-mag.com/resources/specs/385",
+      "also": [
+       "https://www.excellence-mag.com/resources/specs/391",
+       "https://www.excellence-mag.com/resources/specs/397"
+      ],
+      "says": "1984 911 Carrera Coupe/Cabriolet/Targa: 3,164 cc, 207 @ 5900 rpm, 9.5:1"
+     },
+     {
+      "name": "Wikipedia - List of Porsche engines",
+      "url": "https://en.wikipedia.org/wiki/List_of_Porsche_engines",
+      "says": "911 Carrera (USA)(CDN)(J) 930/21, 152 kW (207 PS); classic article: 207 PS for North America, 217 PS from October 1986"
+     },
+     {
+      "name": "EPA fueleconomy.gov vehicle data",
+      "url": "https://www.fueleconomy.gov/feg/download.shtml",
+      "says": "1984 '911 SC' (sic): 3.2 L 6-cyl, naturally aspirated"
+     }
+    ],
+    "status": "three_sources_not_nhra",
+    "independent_sources": 4,
+    "note": "hp is the US-spec DIN (PS) rating, on which 2+ sources agree; the US SAE figure comes from Consumer Guide alone, so it is kept in the note. Excellence's 1984 Targa page says 217, which does not match its coupe and cabriolet pages. EPA labels the 1984 car '911 SC'."
+   }
+  ],
+  "1985": [
+   {
+    "gen": "g-series",
+    "cid": 193,
+    "cc": 3164,
+    "liters": 3.2,
+    "hp": 207,
+    "hp_basis": "DIN PS (US 200 SAE net per Consumer Guide)",
+    "hp_din_us_spec": 207,
+    "hp_sae_us_consumer_guide": 200,
+    "rpo": "930/21",
+    "name": "3.2L SOHC flat-six, Bosch Motronic DME, 9.5:1",
+    "common_name": "3.2 Carrera",
+    "trims": [
+     "Carrera Coupe",
+     "Carrera Targa",
+     "Carrera Cabriolet",
+     "M491 Turbo Look"
+    ],
+    "induction": "fuel injection (Motronic DME)",
+    "nhra": false,
+    "sources": [
+     {
+      "name": "Consumer Guide (Auto Editors of Consumer Guide) - Porsche 911 History, via HowStuffWorks (archived)",
+      "url": "https://auto.howstuffworks.com/porsche-911-history.htm",
+      "archive": "http://web.archive.org/web/2020/https://auto.howstuffworks.com/porsche-911-history.htm",
+      "says": "1984 Carrera: SAE net horsepower returned to 200 at 5,900 rpm"
+     },
+     {
+      "name": "Excellence magazine (US) - Specs database",
+      "url": "https://www.excellence-mag.com/resources/specs/386",
+      "also": [
+       "https://www.excellence-mag.com/resources/specs/392",
+       "https://www.excellence-mag.com/resources/specs/398"
+      ],
+      "says": "1985 911 Carrera Coupe/Cabriolet/Targa: 3,164 cc, 207 @ 5900 rpm, 9.5:1"
+     },
+     {
+      "name": "Wikipedia - List of Porsche engines",
+      "url": "https://en.wikipedia.org/wiki/List_of_Porsche_engines",
+      "says": "911 Carrera (USA)(CDN)(J) 930/21, 152 kW (207 PS); classic article: 207 PS for North America, 217 PS from October 1986"
+     }
+    ],
+    "status": "three_sources_not_nhra",
+    "independent_sources": 3,
+    "note": "hp is the US-spec DIN (PS) rating, on which 2+ sources agree; the US SAE figure comes from Consumer Guide alone, so it is kept in the note. The EPA file has no 1985 rows."
+   }
+  ],
+  "1986": [
+   {
+    "gen": "g-series",
+    "cid": 193,
+    "cc": 3164,
+    "liters": 3.2,
+    "hp": 207,
+    "hp_basis": "DIN PS (US 200 SAE net per Consumer Guide)",
+    "hp_din_us_spec": 207,
+    "hp_sae_us_consumer_guide": 200,
+    "rpo": "930/21",
+    "name": "3.2L SOHC flat-six, Bosch Motronic DME, 9.5:1",
+    "common_name": "3.2 Carrera",
+    "trims": [
+     "Carrera Coupe",
+     "Carrera Targa",
+     "Carrera Cabriolet",
+     "M491 Turbo Look"
+    ],
+    "induction": "fuel injection (Motronic DME)",
+    "nhra": false,
+    "sources": [
+     {
+      "name": "Consumer Guide (Auto Editors of Consumer Guide) - Porsche 911 History, via HowStuffWorks (archived)",
+      "url": "https://auto.howstuffworks.com/porsche-911-history.htm",
+      "archive": "http://web.archive.org/web/2020/https://auto.howstuffworks.com/porsche-911-history.htm",
+      "says": "1984 Carrera: SAE net horsepower returned to 200 at 5,900 rpm"
+     },
+     {
+      "name": "Excellence magazine (US) - Specs database",
+      "url": "https://www.excellence-mag.com/resources/specs/387",
+      "also": [
+       "https://www.excellence-mag.com/resources/specs/393",
+       "https://www.excellence-mag.com/resources/specs/399"
+      ],
+      "says": "1986 911 Carrera Coupe/Cabriolet/Targa: 3,164 cc, 207 @ 5900 rpm, 9.5:1"
+     },
+     {
+      "name": "Wikipedia - List of Porsche engines",
+      "url": "https://en.wikipedia.org/wiki/List_of_Porsche_engines",
+      "says": "911 Carrera (USA)(CDN)(J) 930/21, 152 kW (207 PS); classic article: 207 PS for North America, 217 PS from October 1986"
+     },
+     {
+      "name": "EPA fueleconomy.gov vehicle data",
+      "url": "https://www.fueleconomy.gov/feg/download.shtml",
+      "says": "1986 911: 3.2 L 6-cyl NA"
+     }
+    ],
+    "status": "three_sources_not_nhra",
+    "independent_sources": 4,
+    "note": "hp is the US-spec DIN (PS) rating, on which 2+ sources agree; the US SAE figure comes from Consumer Guide alone, so it is kept in the note."
+   },
+   {
+    "gen": "g-series",
+    "cid": 201,
+    "cc": 3299,
+    "liters": 3.3,
+    "hp": 282,
+    "hp_basis": "SAE net",
+    "rpo": "930/68",
+    "name": "3.3L SOHC turbocharged intercooled flat-six, K-Jetronic, 3-way catalyst",
+    "common_name": "Turbo 3.3 (930)",
+    "trims": [
+     "Turbo Coupe",
+     "Slant-nose M505 (option)"
+    ],
+    "induction": "turbocharged, intercooled",
+    "nhra": false,
+    "sources": [
+     {
+      "name": "Consumer Guide (Auto Editors of Consumer Guide) - Porsche 911 History, via HowStuffWorks (archived)",
+      "url": "https://auto.howstuffworks.com/porsche-911-history.htm",
+      "archive": "http://web.archive.org/web/2020/https://auto.howstuffworks.com/porsche-911-history.htm",
+      "says": "reintroduced the 930 for 1986, labeled 911 Turbo ... now 282 total at 5,500 rpm"
+     },
+     {
+      "name": "Excellence magazine (US) - Specs database",
+      "url": "https://www.excellence-mag.com/resources/specs/375",
+      "also": [],
+      "says": "1986 911 Turbo (930): 3,299 cc, 282 @ 5500 rpm, 7.0:1"
+     },
+     {
+      "name": "Wikipedia - Porsche 911 (930)",
+      "url": "https://en.wikipedia.org/wiki/Porsche_911_(930)",
+      "says": "reintroduced to the US in 1986 with an emission-controlled engine of 282 hp at 5,500 rpm; engine list 930/68 (USA)"
+     },
+     {
+      "name": "EPA fueleconomy.gov vehicle data",
+      "url": "https://www.fueleconomy.gov/feg/download.shtml",
+      "says": "1986 911: 3.3 L 6-cyl turbo"
+     }
+    ],
+    "status": "three_sources_not_nhra",
+    "independent_sources": 4,
+    "note": "Confirmed by 3 sources plus EPA; all agree on 282 hp. The Wikipedia engine list gives 209-210 kW for 930/68. No US Turbo 1980-1985 (Consumer Guide: exile after 1979; Excellence lists none; Wikipedia's classic article says 1981-85 while its 930 article says withdrawn in 1980)."
+   }
+  ],
+  "1987": [
+   {
+    "gen": "g-series",
+    "cid": 193,
+    "cc": 3164,
+    "liters": 3.2,
+    "hp": 214,
+    "hp_basis": "SAE net",
+    "hp_din_us_spec": 217,
+    "rpo": "930/25",
+    "name": "3.2L SOHC flat-six, Bosch Motronic DME, 9.5:1",
+    "common_name": "3.2 Carrera",
+    "trims": [
+     "Carrera Coupe",
+     "Carrera Targa",
+     "Carrera Cabriolet",
+     "M491 Turbo Look"
+    ],
+    "induction": "fuel injection (Motronic DME)",
+    "nhra": false,
+    "sources": [
+     {
+      "name": "Consumer Guide (Auto Editors of Consumer Guide) - Porsche 911 History, via HowStuffWorks (archived)",
+      "url": "https://auto.howstuffworks.com/porsche-911-history.htm",
+      "archive": "http://web.archive.org/web/2020/https://auto.howstuffworks.com/porsche-911-history.htm",
+      "says": "1987 Carreras: horsepower increased by 14, to 214 (SAE net) at 5,900 rpm"
+     },
+     {
+      "name": "Excellence magazine (US) - Specs database",
+      "url": "https://www.excellence-mag.com/resources/specs/388",
+      "also": [
+       "https://www.excellence-mag.com/resources/specs/394",
+       "https://www.excellence-mag.com/resources/specs/400"
+      ],
+      "says": "1987 911 Carrera Coupe/Cabriolet/Targa: 3,164 cc, 217 @ 5900 rpm, 9.5:1"
+     },
+     {
+      "name": "Wikipedia - List of Porsche engines",
+      "url": "https://en.wikipedia.org/wiki/List_of_Porsche_engines",
+      "says": "911 Carrera (catalytic conv.) 930/25, 160 kW (217 PS); classic article: 207 PS for North America, 217 PS from October 1986"
+     },
+     {
+      "name": "EPA fueleconomy.gov vehicle data",
+      "url": "https://www.fueleconomy.gov/feg/download.shtml",
+      "says": "1987 911: 3.2 L 6-cyl NA"
+     }
+    ],
+    "status": "three_sources_not_nhra",
+    "independent_sources": 4,
+    "note": "214 hp SAE net is from Consumer Guide; Excellence and Wikipedia give 217 PS DIN, which converts to 214 hp (arithmetic check)."
+   },
+   {
+    "gen": "g-series",
+    "cid": 201,
+    "cc": 3299,
+    "liters": 3.3,
+    "hp": 282,
+    "hp_basis": "SAE net",
+    "rpo": "930/68",
+    "name": "3.3L SOHC turbocharged intercooled flat-six, K-Jetronic, 3-way catalyst",
+    "common_name": "Turbo 3.3 (930)",
+    "trims": [
+     "Turbo Coupe",
+     "Turbo Targa",
+     "Turbo Cabriolet",
+     "Slant-nose M505 (option)"
+    ],
+    "induction": "turbocharged, intercooled",
+    "nhra": false,
+    "sources": [
+     {
+      "name": "Consumer Guide (Auto Editors of Consumer Guide) - Porsche 911 History, via HowStuffWorks (archived)",
+      "url": "https://auto.howstuffworks.com/porsche-911-history.htm",
+      "archive": "http://web.archive.org/web/2020/https://auto.howstuffworks.com/porsche-911-history.htm",
+      "says": "reintroduced the 930 for 1986, labeled 911 Turbo ... now 282 total at 5,500 rpm"
+     },
+     {
+      "name": "Excellence magazine (US) - Specs database",
+      "url": "https://www.excellence-mag.com/resources/specs/376",
+      "also": [
+       "https://www.excellence-mag.com/resources/specs/379",
+       "https://www.excellence-mag.com/resources/specs/382"
+      ],
+      "says": "1987 911 Turbo (930): 3,299 cc, 282 @ 5500 rpm, 7.0:1"
+     },
+     {
+      "name": "Wikipedia - Porsche 911 (930)",
+      "url": "https://en.wikipedia.org/wiki/Porsche_911_(930)",
+      "says": "reintroduced to the US in 1986 with an emission-controlled engine of 282 hp at 5,500 rpm; engine list 930/68 (USA)"
+     },
+     {
+      "name": "EPA fueleconomy.gov vehicle data",
+      "url": "https://www.fueleconomy.gov/feg/download.shtml",
+      "says": "1987 911: 3.3 L 6-cyl turbo"
+     }
+    ],
+    "status": "three_sources_not_nhra",
+    "independent_sources": 4,
+    "note": "Confirmed by 3 sources plus EPA; all agree on 282 hp. The Wikipedia engine list gives 209-210 kW for 930/68."
+   }
+  ],
+  "1988": [
+   {
+    "gen": "g-series",
+    "cid": 193,
+    "cc": 3164,
+    "liters": 3.2,
+    "hp": 214,
+    "hp_basis": "SAE net",
+    "hp_din_us_spec": 217,
+    "rpo": "930/25",
+    "name": "3.2L SOHC flat-six, Bosch Motronic DME, 9.5:1",
+    "common_name": "3.2 Carrera",
+    "trims": [
+     "Carrera Coupe",
+     "Carrera Targa",
+     "Carrera Cabriolet",
+     "M491 Turbo Look",
+     "Club Sport"
+    ],
+    "induction": "fuel injection (Motronic DME)",
+    "nhra": false,
+    "sources": [
+     {
+      "name": "Consumer Guide (Auto Editors of Consumer Guide) - Porsche 911 History, via HowStuffWorks (archived)",
+      "url": "https://auto.howstuffworks.com/porsche-911-history.htm",
+      "archive": "http://web.archive.org/web/2020/https://auto.howstuffworks.com/porsche-911-history.htm",
+      "says": "1987 Carreras: horsepower increased by 14, to 214 (SAE net) at 5,900 rpm"
+     },
+     {
+      "name": "Excellence magazine (US) - Specs database",
+      "url": "https://www.excellence-mag.com/resources/specs/389",
+      "also": [
+       "https://www.excellence-mag.com/resources/specs/395",
+       "https://www.excellence-mag.com/resources/specs/401"
+      ],
+      "says": "1988 911 Carrera Coupe/Cabriolet/Targa: 3,164 cc, 217 @ 5900 rpm, 9.5:1"
+     },
+     {
+      "name": "Wikipedia - List of Porsche engines",
+      "url": "https://en.wikipedia.org/wiki/List_of_Porsche_engines",
+      "says": "911 Carrera (catalytic conv.) 930/25, 160 kW (217 PS); classic article: 207 PS for North America, 217 PS from October 1986"
+     },
+     {
+      "name": "EPA fueleconomy.gov vehicle data",
+      "url": "https://www.fueleconomy.gov/feg/download.shtml",
+      "says": "1988 911 Carrera: 3.2 L 6-cyl NA"
+     }
+    ],
+    "status": "three_sources_not_nhra",
+    "independent_sources": 4,
+    "note": "214 hp SAE net is from Consumer Guide; Excellence and Wikipedia give 217 PS DIN, which converts to 214 hp (arithmetic check)."
+   },
+   {
+    "gen": "g-series",
+    "cid": 201,
+    "cc": 3299,
+    "liters": 3.3,
+    "hp": 282,
+    "hp_basis": "SAE net",
+    "rpo": "930/68",
+    "name": "3.3L SOHC turbocharged intercooled flat-six, K-Jetronic, 3-way catalyst",
+    "common_name": "Turbo 3.3 (930)",
+    "trims": [
+     "Turbo Coupe",
+     "Turbo Targa",
+     "Turbo Cabriolet",
+     "Slant-nose M505 (option)"
+    ],
+    "induction": "turbocharged, intercooled",
+    "nhra": false,
+    "sources": [
+     {
+      "name": "Consumer Guide (Auto Editors of Consumer Guide) - Porsche 911 History, via HowStuffWorks (archived)",
+      "url": "https://auto.howstuffworks.com/porsche-911-history.htm",
+      "archive": "http://web.archive.org/web/2020/https://auto.howstuffworks.com/porsche-911-history.htm",
+      "says": "reintroduced the 930 for 1986, labeled 911 Turbo ... now 282 total at 5,500 rpm"
+     },
+     {
+      "name": "Excellence magazine (US) - Specs database",
+      "url": "https://www.excellence-mag.com/resources/specs/377",
+      "also": [
+       "https://www.excellence-mag.com/resources/specs/380",
+       "https://www.excellence-mag.com/resources/specs/383"
+      ],
+      "says": "1988 911 Turbo (930): 3,299 cc, 282 @ 5500 rpm, 7.0:1"
+     },
+     {
+      "name": "Wikipedia - Porsche 911 (930)",
+      "url": "https://en.wikipedia.org/wiki/Porsche_911_(930)",
+      "says": "reintroduced to the US in 1986 with an emission-controlled engine of 282 hp at 5,500 rpm; engine list 930/68 (USA)"
+     },
+     {
+      "name": "EPA fueleconomy.gov vehicle data",
+      "url": "https://www.fueleconomy.gov/feg/download.shtml",
+      "says": "1988 911 Turbo: 3.3 L 6-cyl turbo"
+     }
+    ],
+    "status": "three_sources_not_nhra",
+    "independent_sources": 4,
+    "note": "Confirmed by 3 sources plus EPA; all agree on 282 hp. The Wikipedia engine list gives 209-210 kW for 930/68."
+   }
+  ],
+  "1989": [
+   {
+    "gen": "g-series",
+    "cid": 193,
+    "cc": 3164,
+    "liters": 3.2,
+    "hp": 214,
+    "hp_basis": "SAE net",
+    "hp_din_us_spec": 217,
+    "rpo": "930/25",
+    "name": "3.2L SOHC flat-six, Bosch Motronic DME, 9.5:1",
+    "common_name": "3.2 Carrera",
+    "trims": [
+     "Carrera Coupe",
+     "Carrera Targa",
+     "Carrera Cabriolet",
+     "M491 Turbo Look",
+     "Speedster",
+     "25th Anniversary"
+    ],
+    "induction": "fuel injection (Motronic DME)",
+    "nhra": false,
+    "sources": [
+     {
+      "name": "Consumer Guide (Auto Editors of Consumer Guide) - Porsche 911 History, via HowStuffWorks (archived)",
+      "url": "https://auto.howstuffworks.com/porsche-911-history.htm",
+      "archive": "http://web.archive.org/web/2020/https://auto.howstuffworks.com/porsche-911-history.htm",
+      "says": "1987 Carreras: horsepower increased by 14, to 214 (SAE net) at 5,900 rpm"
+     },
+     {
+      "name": "Excellence magazine (US) - Specs database",
+      "url": "https://www.excellence-mag.com/resources/specs/390",
+      "also": [
+       "https://www.excellence-mag.com/resources/specs/396",
+       "https://www.excellence-mag.com/resources/specs/402"
+      ],
+      "says": "1989 911 Carrera Coupe/Cabriolet/Targa: 3,164 cc, 217 @ 5900 rpm, 9.5:1"
+     },
+     {
+      "name": "Wikipedia - List of Porsche engines",
+      "url": "https://en.wikipedia.org/wiki/List_of_Porsche_engines",
+      "says": "911 Carrera (catalytic conv.) 930/25, 160 kW (217 PS); classic article: 207 PS for North America, 217 PS from October 1986"
+     },
+     {
+      "name": "EPA fueleconomy.gov vehicle data",
+      "url": "https://www.fueleconomy.gov/feg/download.shtml",
+      "says": "1989 911 Carrera: 3.2 L 6-cyl NA"
+     },
+     {
+      "name": "Porsche Cars North America - Porsche Classic model page (archived 2008)",
+      "url": "https://web.archive.org/web/20080207073433/http://www.porsche.com/usa/accessoriesandservices/classic/world/models/roadvehicles/1989-911/",
+      "says": "1989 911 Carrera Coupe, Cabriolet, Targa, Speedster and Carrera 4 (power quoted is the European 231 bhp)"
+     }
+    ],
+    "status": "three_sources_not_nhra",
+    "independent_sources": 5,
+    "note": "214 hp SAE net is from Consumer Guide; Excellence and Wikipedia give 217 PS DIN, which converts to 214 hp (arithmetic check)."
+   },
+   {
+    "gen": "g-series",
+    "cid": 201,
+    "cc": 3299,
+    "liters": 3.3,
+    "hp": 282,
+    "hp_basis": "SAE net",
+    "rpo": "930/68",
+    "name": "3.3L SOHC turbocharged intercooled flat-six, K-Jetronic, 3-way catalyst",
+    "common_name": "Turbo 3.3 (930)",
+    "trims": [
+     "Turbo Coupe",
+     "Turbo Targa",
+     "Turbo Cabriolet",
+     "Slant-nose M505 (option)"
+    ],
+    "induction": "turbocharged, intercooled",
+    "nhra": false,
+    "sources": [
+     {
+      "name": "Consumer Guide (Auto Editors of Consumer Guide) - Porsche 911 History, via HowStuffWorks (archived)",
+      "url": "https://auto.howstuffworks.com/porsche-911-history.htm",
+      "archive": "http://web.archive.org/web/2020/https://auto.howstuffworks.com/porsche-911-history.htm",
+      "says": "reintroduced the 930 for 1986, labeled 911 Turbo ... now 282 total at 5,500 rpm"
+     },
+     {
+      "name": "Excellence magazine (US) - Specs database",
+      "url": "https://www.excellence-mag.com/resources/specs/378",
+      "also": [
+       "https://www.excellence-mag.com/resources/specs/381",
+       "https://www.excellence-mag.com/resources/specs/384"
+      ],
+      "says": "1989 911 Turbo (930): 3,299 cc, 282 @ 5500 rpm, 7.0:1"
+     },
+     {
+      "name": "Wikipedia - Porsche 911 (930)",
+      "url": "https://en.wikipedia.org/wiki/Porsche_911_(930)",
+      "says": "reintroduced to the US in 1986 with an emission-controlled engine of 282 hp at 5,500 rpm; engine list 930/68 (USA)"
+     },
+     {
+      "name": "EPA fueleconomy.gov vehicle data",
+      "url": "https://www.fueleconomy.gov/feg/download.shtml",
+      "says": "1989 911 Turbo: 3.3 L 6-cyl turbo"
+     }
+    ],
+    "status": "three_sources_not_nhra",
+    "independent_sources": 4,
+    "note": "Confirmed by 3 sources plus EPA; all agree on 282 hp. The Wikipedia engine list gives 209-210 kW for 930/68. Five-speed gearbox for 1989. EPA 1989 also carries a 3.3 turbo row labelled '911 Carrera'."
+   },
+   {
+    "gen": "964",
+    "cid": 220,
+    "cc": 3600,
+    "liters": 3.6,
+    "hp": 247,
+    "hp_basis": "SAE net",
+    "rpo": "M64/01 (manual), M64/02 (Tiptronic, from 1990)",
+    "name": "3.6L SOHC flat-six, twin-plug, Motronic",
+    "common_name": "M64",
+    "trims": [
+     "Carrera 4 Coupe"
+    ],
+    "induction": "fuel injection (Motronic)",
+    "nhra": false,
+    "sources": [
+     {
+      "name": "Consumer Guide (Auto Editors of Consumer Guide) - Porsche 911 History, via HowStuffWorks (archived)",
+      "url": "https://auto.howstuffworks.com/porsche-911-history.htm",
+      "archive": "http://web.archive.org/web/2020/https://auto.howstuffworks.com/porsche-911-history.htm",
+      "says": "In American-market trim, the Carrera 4 produced 247 horsepower at 6,100 rpm"
+     },
+     {
+      "name": "Excellence magazine (US) - Specs database",
+      "url": "https://www.excellence-mag.com/resources/specs/301",
+      "also": [],
+      "says": "1989 911 Carrera (964): 3,600 cc, 247 @ 6100 rpm, 11.3:1"
+     },
+     {
+      "name": "Wikipedia - List of Porsche engines",
+      "url": "https://en.wikipedia.org/wiki/List_of_Porsche_engines",
+      "says": "964 Carrera 2/4 M64.01, Tiptronic M64.02, 184 kW (250 PS); flat-six article: 1989-1994 Carrera 2, Carrera 4, RS America, Speedster"
+     },
+     {
+      "name": "EPA fueleconomy.gov vehicle data",
+      "url": "https://www.fueleconomy.gov/feg/download.shtml",
+      "says": "1989 911 Carrera 4: 3.6 L 6-cyl NA"
+     },
+     {
+      "name": "Porsche Cars North America - Porsche Classic model page (archived 2008)",
+      "url": "https://web.archive.org/web/20080207073433/http://www.porsche.com/usa/accessoriesandservices/classic/world/models/roadvehicles/1989-911/",
+      "says": "1989 Porsche 911 Carrera 4: 3600 ccm (power quoted is the European 250 bhp)"
+     }
+    ],
+    "status": "three_sources_not_nhra",
+    "independent_sources": 5,
+    "note": "247 hp: Consumer Guide and Excellence agree; Wikipedia's 250 PS converts to 247 hp."
+   }
+  ],
+  "1990": [
+   {
+    "gen": "964",
+    "cid": 220,
+    "cc": 3600,
+    "liters": 3.6,
+    "hp": 247,
+    "hp_basis": "SAE net",
+    "rpo": "M64/01 (manual), M64/02 (Tiptronic, from 1990)",
+    "name": "3.6L SOHC flat-six, twin-plug, Motronic",
+    "common_name": "M64",
+    "trims": [
+     "Carrera 2 Coupe",
+     "Carrera 2 Targa",
+     "Carrera 2 Cabriolet",
+     "Carrera 4 Coupe",
+     "Carrera 4 Targa",
+     "Carrera 4 Cabriolet"
+    ],
+    "induction": "fuel injection (Motronic)",
+    "nhra": false,
+    "sources": [
+     {
+      "name": "Consumer Guide (Auto Editors of Consumer Guide) - Porsche 911 History, via HowStuffWorks (archived)",
+      "url": "https://auto.howstuffworks.com/porsche-911-history.htm",
+      "archive": "http://web.archive.org/web/2020/https://auto.howstuffworks.com/porsche-911-history.htm",
+      "says": "rear-drive Carrera 2 arrived in the U.S. as a 1990 model ... its 247-bhp 3.6-liter engine"
+     },
+     {
+      "name": "Excellence magazine (US) - Specs database",
+      "url": "https://www.excellence-mag.com/resources/specs/291",
+      "also": [
+       "https://www.excellence-mag.com/resources/specs/296",
+       "https://www.excellence-mag.com/resources/specs/302"
+      ],
+      "says": "1990 911 Carrera (964): 3,600 cc, 247 @ 6100 rpm, 11.3:1"
+     },
+     {
+      "name": "Wikipedia - List of Porsche engines",
+      "url": "https://en.wikipedia.org/wiki/List_of_Porsche_engines",
+      "says": "964 Carrera 2/4 M64.01, Tiptronic M64.02, 184 kW (250 PS); flat-six article: 1989-1994 Carrera 2, Carrera 4, RS America, Speedster"
+     },
+     {
+      "name": "EPA fueleconomy.gov vehicle data",
+      "url": "https://www.fueleconomy.gov/feg/download.shtml",
+      "says": "1990 911 Carrera 4/2: 3.6 L 6-cyl NA"
+     }
+    ],
+    "status": "three_sources_not_nhra",
+    "independent_sources": 4,
+    "note": "247 hp: Consumer Guide and Excellence agree; Wikipedia's 250 PS converts to 247 hp."
+   }
+  ],
+  "1991": [
+   {
+    "gen": "964",
+    "cid": 220,
+    "cc": 3600,
+    "liters": 3.6,
+    "hp": 247,
+    "hp_basis": "SAE net",
+    "rpo": "M64/01 (manual), M64/02 (Tiptronic, from 1990)",
+    "name": "3.6L SOHC flat-six, twin-plug, Motronic",
+    "common_name": "M64",
+    "trims": [
+     "Carrera 2 Coupe",
+     "Carrera 2 Targa",
+     "Carrera 2 Cabriolet",
+     "Carrera 4 Coupe",
+     "Carrera 4 Targa",
+     "Carrera 4 Cabriolet"
+    ],
+    "induction": "fuel injection (Motronic)",
+    "nhra": false,
+    "sources": [
+     {
+      "name": "Consumer Guide (Auto Editors of Consumer Guide) - Porsche 911 History, via HowStuffWorks (archived)",
+      "url": "https://auto.howstuffworks.com/porsche-911-history.htm",
+      "archive": "http://web.archive.org/web/2020/https://auto.howstuffworks.com/porsche-911-history.htm",
+      "says": "rear-drive Carrera 2 arrived in the U.S. as a 1990 model ... its 247-bhp 3.6-liter engine"
+     },
+     {
+      "name": "Excellence magazine (US) - Specs database",
+      "url": "https://www.excellence-mag.com/resources/specs/292",
+      "also": [
+       "https://www.excellence-mag.com/resources/specs/297",
+       "https://www.excellence-mag.com/resources/specs/303"
+      ],
+      "says": "1991 911 Carrera (964): 3,600 cc, 247 @ 6100 rpm, 11.3:1"
+     },
+     {
+      "name": "Wikipedia - List of Porsche engines",
+      "url": "https://en.wikipedia.org/wiki/List_of_Porsche_engines",
+      "says": "964 Carrera 2/4 M64.01, Tiptronic M64.02, 184 kW (250 PS); flat-six article: 1989-1994 Carrera 2, Carrera 4, RS America, Speedster"
+     },
+     {
+      "name": "EPA fueleconomy.gov vehicle data",
+      "url": "https://www.fueleconomy.gov/feg/download.shtml",
+      "says": "1991 911 Carrera 4/2: 3.6 L 6-cyl NA"
+     }
+    ],
+    "status": "three_sources_not_nhra",
+    "independent_sources": 4,
+    "note": "247 hp: Consumer Guide and Excellence agree; Wikipedia's 250 PS converts to 247 hp."
+   },
+   {
+    "gen": "964",
+    "cid": 201,
+    "cc": 3299,
+    "liters": 3.3,
+    "hp": 315,
+    "hp_basis": "SAE net",
+    "rpo": "M30/69",
+    "name": "3.3L SOHC turbocharged intercooled flat-six, K-Jetronic",
+    "common_name": "Turbo 3.3 (964)",
+    "trims": [
+     "Turbo Coupe"
+    ],
+    "induction": "turbocharged, intercooled",
+    "nhra": false,
+    "sources": [
+     {
+      "name": "Consumer Guide (Auto Editors of Consumer Guide) - Porsche 911 History, via HowStuffWorks (archived)",
+      "url": "https://auto.howstuffworks.com/porsche-911-history.htm",
+      "archive": "http://web.archive.org/web/2020/https://auto.howstuffworks.com/porsche-911-history.htm",
+      "says": "1991 Turbo: added 23 horses for a thumping 315 total in U.S. form"
+     },
+     {
+      "name": "Excellence magazine (US) - Specs database",
+      "url": "https://www.excellence-mag.com/resources/specs/307",
+      "also": [],
+      "says": "1991 911 Turbo Coupe (964): 3,299 cc, 315 @ 5750 rpm"
+     },
+     {
+      "name": "Wikipedia - List of Porsche engines",
+      "url": "https://en.wikipedia.org/wiki/List_of_Porsche_engines",
+      "says": "964 Turbo M30.69 1991-92, 235 kW (320 PS)"
+     },
+     {
+      "name": "EPA fueleconomy.gov vehicle data",
+      "url": "https://www.fueleconomy.gov/feg/download.shtml",
+      "says": "1991 911 Turbo: 3.3 L 6-cyl turbo"
+     }
+    ],
+    "status": "three_sources_not_nhra",
+    "independent_sources": 4,
+    "note": "315 hp: Consumer Guide and Excellence agree; Wikipedia's 320 PS converts to 316 hp. No US Turbo for 1990 (EPA none; Consumer Guide: back after a year-long furlough)."
+   }
+  ],
+  "1992": [
+   {
+    "gen": "964",
+    "cid": 220,
+    "cc": 3600,
+    "liters": 3.6,
+    "hp": 247,
+    "hp_basis": "SAE net",
+    "rpo": "M64/01 (manual), M64/02 (Tiptronic, from 1990)",
+    "name": "3.6L SOHC flat-six, twin-plug, Motronic",
+    "common_name": "M64",
+    "trims": [
+     "Carrera 2 Coupe",
+     "Carrera 2 Targa",
+     "Carrera 2 Cabriolet",
+     "Carrera 4 Coupe",
+     "Carrera 4 Targa",
+     "Carrera 4 Cabriolet",
+     "America Roadster"
+    ],
+    "induction": "fuel injection (Motronic)",
+    "nhra": false,
+    "sources": [
+     {
+      "name": "Consumer Guide (Auto Editors of Consumer Guide) - Porsche 911 History, via HowStuffWorks (archived)",
+      "url": "https://auto.howstuffworks.com/porsche-911-history.htm",
+      "archive": "http://web.archive.org/web/2020/https://auto.howstuffworks.com/porsche-911-history.htm",
+      "says": "rear-drive Carrera 2 arrived in the U.S. as a 1990 model ... its 247-bhp 3.6-liter engine"
+     },
+     {
+      "name": "Excellence magazine (US) - Specs database",
+      "url": "https://www.excellence-mag.com/resources/specs/293",
+      "also": [
+       "https://www.excellence-mag.com/resources/specs/298",
+       "https://www.excellence-mag.com/resources/specs/304"
+      ],
+      "says": "1992 911 Carrera (964): 3,600 cc, 247 @ 6100 rpm, 11.3:1"
+     },
+     {
+      "name": "Wikipedia - List of Porsche engines",
+      "url": "https://en.wikipedia.org/wiki/List_of_Porsche_engines",
+      "says": "964 Carrera 2/4 M64.01, Tiptronic M64.02, 184 kW (250 PS); flat-six article: 1989-1994 Carrera 2, Carrera 4, RS America, Speedster"
+     },
+     {
+      "name": "EPA fueleconomy.gov vehicle data",
+      "url": "https://www.fueleconomy.gov/feg/download.shtml",
+      "says": "1992 911 Carrera 4/2: 3.6 L 6-cyl NA"
+     }
+    ],
+    "status": "three_sources_not_nhra",
+    "independent_sources": 4,
+    "note": "247 hp: Consumer Guide and Excellence agree; Wikipedia's 250 PS converts to 247 hp."
+   },
+   {
+    "gen": "964",
+    "cid": 201,
+    "cc": 3299,
+    "liters": 3.3,
+    "hp": 315,
+    "hp_basis": "SAE net",
+    "rpo": "M30/69",
+    "name": "3.3L SOHC turbocharged intercooled flat-six, K-Jetronic",
+    "common_name": "Turbo 3.3 (964)",
+    "trims": [
+     "Turbo Coupe"
+    ],
+    "induction": "turbocharged, intercooled",
+    "nhra": false,
+    "sources": [
+     {
+      "name": "Consumer Guide (Auto Editors of Consumer Guide) - Porsche 911 History, via HowStuffWorks (archived)",
+      "url": "https://auto.howstuffworks.com/porsche-911-history.htm",
+      "archive": "http://web.archive.org/web/2020/https://auto.howstuffworks.com/porsche-911-history.htm",
+      "says": "1991 Turbo: added 23 horses for a thumping 315 total in U.S. form"
+     },
+     {
+      "name": "Excellence magazine (US) - Specs database",
+      "url": "https://www.excellence-mag.com/resources/specs/308",
+      "also": [],
+      "says": "1992 911 Turbo Coupe (964): 3,299 cc, 315 @ 5750 rpm"
+     },
+     {
+      "name": "Wikipedia - List of Porsche engines",
+      "url": "https://en.wikipedia.org/wiki/List_of_Porsche_engines",
+      "says": "964 Turbo M30.69 1991-92, 235 kW (320 PS)"
+     },
+     {
+      "name": "EPA fueleconomy.gov vehicle data",
+      "url": "https://www.fueleconomy.gov/feg/download.shtml",
+      "says": "1992 911 Turbo: 3.3 L 6-cyl turbo"
+     }
+    ],
+    "status": "three_sources_not_nhra",
+    "independent_sources": 4,
+    "note": "315 hp: Consumer Guide and Excellence agree; Wikipedia's 320 PS converts to 316 hp. No US Turbo for 1993 (EPA none; Consumer Guide: the Turbo returned for 1994)."
+   },
+   {
+    "gen": "964",
+    "cid": 201,
+    "cc": 3299,
+    "liters": 3.3,
+    "hp": 322,
+    "hp_basis": "SAE net",
+    "rpo": null,
+    "name": "3.3L turbocharged flat-six, larger intercooler, freer turbo, wilder cams",
+    "common_name": "Turbo S (US)",
+    "trims": [
+     "Turbo S Coupe"
+    ],
+    "induction": "turbocharged, intercooled",
+    "nhra": false,
+    "sources": [
+     {
+      "name": "Consumer Guide (Auto Editors of Consumer Guide) - Porsche 911 History, via HowStuffWorks (archived)",
+      "url": "https://auto.howstuffworks.com/porsche-911-history.htm",
+      "archive": "http://web.archive.org/web/2020/https://auto.howstuffworks.com/porsche-911-history.htm",
+      "says": "Turbo S: 80 were built, all in calendar 1992; horsepower increase from 315 to 322 at 6,200 rpm"
+     },
+     {
+      "name": "Excellence magazine (US) - Specs database",
+      "url": "https://www.excellence-mag.com/resources/specs/311",
+      "also": [],
+      "says": "1992 911 Turbo S Coupe (964): 3,299 cc, 322 @ 6200 rpm, 7.0:1"
+     },
+     {
+      "name": "EPA fueleconomy.gov vehicle data",
+      "url": "https://www.fueleconomy.gov/feg/download.shtml",
+      "says": "1992 911 Turbo: 3.3 L 6-cyl turbo (size only)"
+     }
+    ],
+    "status": "two_sources_agree",
+    "independent_sources": 3,
+    "note": "Rating rests on 2 sources (Consumer Guide, Excellence). Wikipedia's 964 Turbo S Leichtbau (381 PS) is the European car, not this US model. No source gives an engine type number."
+   }
+  ],
+  "1993": [
+   {
+    "gen": "964",
+    "cid": 220,
+    "cc": 3600,
+    "liters": 3.6,
+    "hp": 247,
+    "hp_basis": "SAE net",
+    "rpo": "M64/01 (manual), M64/02 (Tiptronic, from 1990)",
+    "name": "3.6L SOHC flat-six, twin-plug, Motronic",
+    "common_name": "M64",
+    "trims": [
+     "Carrera 2 Coupe",
+     "Carrera 2 Cabriolet",
+     "Carrera 4 Coupe",
+     "Carrera 4 Cabriolet",
+     "RS America",
+     "America Roadster"
+    ],
+    "induction": "fuel injection (Motronic)",
+    "nhra": false,
+    "sources": [
+     {
+      "name": "Consumer Guide (Auto Editors of Consumer Guide) - Porsche 911 History, via HowStuffWorks (archived)",
+      "url": "https://auto.howstuffworks.com/porsche-911-history.htm",
+      "archive": "http://web.archive.org/web/2020/https://auto.howstuffworks.com/porsche-911-history.htm",
+      "says": "rear-drive Carrera 2 arrived in the U.S. as a 1990 model ... its 247-bhp 3.6-liter engine"
+     },
+     {
+      "name": "Excellence magazine (US) - Specs database",
+      "url": "https://www.excellence-mag.com/resources/specs/294",
+      "also": [
+       "https://www.excellence-mag.com/resources/specs/299",
+       "https://www.excellence-mag.com/resources/specs/305"
+      ],
+      "says": "1993 911 Carrera (964): 3,600 cc, 247 @ 6100 rpm, 11.3:1"
+     },
+     {
+      "name": "Wikipedia - List of Porsche engines",
+      "url": "https://en.wikipedia.org/wiki/List_of_Porsche_engines",
+      "says": "964 Carrera 2/4 M64.01, Tiptronic M64.02, 184 kW (250 PS); flat-six article: 1989-1994 Carrera 2, Carrera 4, RS America, Speedster"
+     },
+     {
+      "name": "EPA fueleconomy.gov vehicle data",
+      "url": "https://www.fueleconomy.gov/feg/download.shtml",
+      "says": "1993 911 Carrera 4/2: 3.6 L 6-cyl NA"
+     }
+    ],
+    "status": "three_sources_not_nhra",
+    "independent_sources": 4,
+    "note": "247 hp: Consumer Guide and Excellence agree; Wikipedia's 250 PS converts to 247 hp. US Targa dropped after 1992 (Consumer Guide). The RS America (1993-94) uses the C2 engine (Wikipedia); the 45 'Carrera Cup US Edition' cars of 1992 had the M64/03 RS engine."
+   }
+  ],
+  "1994": [
+   {
+    "gen": "964",
+    "cid": 220,
+    "cc": 3600,
+    "liters": 3.6,
+    "hp": 247,
+    "hp_basis": "SAE net",
+    "rpo": "M64/01 (manual), M64/02 (Tiptronic, from 1990)",
+    "name": "3.6L SOHC flat-six, twin-plug, Motronic",
+    "common_name": "M64",
+    "trims": [
+     "Carrera 2 Coupe",
+     "Carrera 2 Cabriolet",
+     "Carrera 4 Coupe",
+     "Carrera 4 Cabriolet",
+     "RS America",
+     "Speedster"
+    ],
+    "induction": "fuel injection (Motronic)",
+    "nhra": false,
+    "sources": [
+     {
+      "name": "Consumer Guide (Auto Editors of Consumer Guide) - Porsche 911 History, via HowStuffWorks (archived)",
+      "url": "https://auto.howstuffworks.com/porsche-911-history.htm",
+      "archive": "http://web.archive.org/web/2020/https://auto.howstuffworks.com/porsche-911-history.htm",
+      "says": "rear-drive Carrera 2 arrived in the U.S. as a 1990 model ... its 247-bhp 3.6-liter engine"
+     },
+     {
+      "name": "Excellence magazine (US) - Specs database",
+      "url": "https://www.excellence-mag.com/resources/specs/295",
+      "also": [
+       "https://www.excellence-mag.com/resources/specs/300",
+       "https://www.excellence-mag.com/resources/specs/306"
+      ],
+      "says": "1994 911 Carrera (964): 3,600 cc, 247 @ 6100 rpm, 11.3:1"
+     },
+     {
+      "name": "Wikipedia - List of Porsche engines",
+      "url": "https://en.wikipedia.org/wiki/List_of_Porsche_engines",
+      "says": "964 Carrera 2/4 M64.01, Tiptronic M64.02, 184 kW (250 PS); flat-six article: 1989-1994 Carrera 2, Carrera 4, RS America, Speedster"
+     },
+     {
+      "name": "EPA fueleconomy.gov vehicle data",
+      "url": "https://www.fueleconomy.gov/feg/download.shtml",
+      "says": "1994 911 Carrera 4/2: 3.6 L 6-cyl NA"
+     }
+    ],
+    "status": "three_sources_not_nhra",
+    "independent_sources": 4,
+    "note": "247 hp: Consumer Guide and Excellence agree; Wikipedia's 250 PS converts to 247 hp. US Targa dropped after 1992 (Consumer Guide). The RS America (1993-94) uses the C2 engine (Wikipedia); the 45 'Carrera Cup US Edition' cars of 1992 had the M64/03 RS engine."
+   },
+   {
+    "gen": "964",
+    "cid": 220,
+    "cc": 3600,
+    "liters": 3.6,
+    "hp": 355,
+    "hp_basis": "SAE net",
+    "hp_din_us_spec": 360,
+    "rpo": "M64/50",
+    "name": "3.6L SOHC turbocharged intercooled flat-six, K-Jetronic, 7.5:1",
+    "common_name": "Turbo 3.6",
+    "trims": [
+     "Turbo 3.6 Coupe"
+    ],
+    "induction": "turbocharged, intercooled",
+    "nhra": false,
+    "sources": [
+     {
+      "name": "Consumer Guide (Auto Editors of Consumer Guide) - Porsche 911 History, via HowStuffWorks (archived)",
+      "url": "https://auto.howstuffworks.com/porsche-911-history.htm",
+      "archive": "http://web.archive.org/web/2020/https://auto.howstuffworks.com/porsche-911-history.htm",
+      "says": "1994: a revised standard model badged Turbo 3.6, with 355 emissions-legal horsepower in U.S. trim"
+     },
+     {
+      "name": "Excellence magazine (US) - Specs database",
+      "url": "https://www.excellence-mag.com/resources/specs/310",
+      "also": [],
+      "says": "1994 911 Turbo Coupe (964): 3,600 cc, 360 hp, 7.5:1"
+     },
+     {
+      "name": "Wikipedia - List of Porsche engines",
+      "url": "https://en.wikipedia.org/wiki/List_of_Porsche_engines",
+      "says": "964 Turbo 3.6 M64.50 1993-94, 265 kW (360 PS)"
+     },
+     {
+      "name": "EPA fueleconomy.gov vehicle data",
+      "url": "https://www.fueleconomy.gov/feg/download.shtml",
+      "says": "1994 911 Turbo: 3.6 L 6-cyl (the EPA row has no turbo flag)"
+     }
+    ],
+    "status": "three_sources_not_nhra",
+    "independent_sources": 4,
+    "note": "355 hp SAE is from Consumer Guide; the 360 PS given by Excellence and Wikipedia converts to 355 hp (arithmetic check). Excellence also lists a 1993 Turbo 3.6 (the European model year); EPA and Consumer Guide show no 1993 US Turbo."
+   },
+   {
+    "gen": "964",
+    "cid": 220,
+    "cc": 3600,
+    "liters": 3.6,
+    "hp": 380,
+    "hp_basis": "SAE net",
+    "rpo": null,
+    "name": "3.6L turbocharged flat-six, four-branch exhaust (X88 Turbo S engine)",
+    "common_name": "Turbo S 3.6 (US)",
+    "trims": [
+     "Turbo S Coupe",
+     "Turbo S Flachbau (X85 slant-nose option)"
+    ],
+    "induction": "turbocharged, intercooled",
+    "nhra": false,
+    "sources": [
+     {
+      "name": "Consumer Guide (Auto Editors of Consumer Guide) - Porsche 911 History, via HowStuffWorks (archived)",
+      "url": "https://auto.howstuffworks.com/porsche-911-history.htm",
+      "archive": "http://web.archive.org/web/2020/https://auto.howstuffworks.com/porsche-911-history.htm",
+      "says": "Turbo S: U.S.-legal, premiered early 1994; rated horsepower no less than 380; approximately 100 built"
+     },
+     {
+      "name": "Wikipedia - Porsche 911 (964)",
+      "url": "https://en.wikipedia.org/wiki/Porsche_911_(964)",
+      "says": "Flachbau option X85 (US) on the '1994 Turbo S Model', including the 'X88' Turbo S engine; Turbo 3.6 S 385 PS at 5,750 rpm"
+     },
+     {
+      "name": "EPA fueleconomy.gov vehicle data",
+      "url": "https://www.fueleconomy.gov/feg/download.shtml",
+      "says": "1994 911 Turbo: 3.6 L 6-cyl (size only)"
+     }
+    ],
+    "status": "two_sources_agree",
+    "independent_sources": 3,
+    "note": "Rating: Consumer Guide 380 hp; Wikipedia's 385 PS converts to 380 hp. No source gives an engine type number."
+   }
+  ],
+  "1995": [
+   {
+    "gen": "993",
+    "cid": 220,
+    "cc": 3600,
+    "liters": 3.6,
+    "hp": 272,
+    "hp_basis": "DIN PS (US 270 hp per Consumer Guide)",
+    "hp_din_us_spec": 272,
+    "hp_sae_us_consumer_guide": 270,
+    "rpo": "M64/07 (US/CDN manual), M64/08 (US Tiptronic)",
+    "name": "3.6L SOHC flat-six, hydraulic lifters, Motronic 2.10",
+    "common_name": "M64 (993)",
+    "trims": [
+     "Carrera Coupe",
+     "Carrera Cabriolet",
+     "Carrera 4 Coupe",
+     "Carrera 4 Cabriolet"
+    ],
+    "induction": "fuel injection (Motronic)",
+    "nhra": false,
+    "sources": [
+     {
+      "name": "Consumer Guide (Auto Editors of Consumer Guide) - Porsche 911 History, via HowStuffWorks (archived)",
+      "url": "https://auto.howstuffworks.com/porsche-911-history.htm",
+      "archive": "http://web.archive.org/web/2020/https://auto.howstuffworks.com/porsche-911-history.htm",
+      "says": "1995 Carrera: lifted horsepower to 270 at 6,100 rpm"
+     },
+     {
+      "name": "Excellence magazine (US) - Specs database",
+      "url": "https://www.excellence-mag.com/resources/specs/312",
+      "also": [
+       "https://www.excellence-mag.com/resources/specs/316",
+       "https://www.excellence-mag.com/resources/specs/328",
+       "https://www.excellence-mag.com/resources/specs/330"
+      ],
+      "says": "1995 911 Carrera / Carrera 4 (993): 3,600 cc, 272 @ 6100 rpm, 11.3:1"
+     },
+     {
+      "name": "Wikipedia - List of Porsche engines",
+      "url": "https://en.wikipedia.org/wiki/List_of_Porsche_engines",
+      "says": "993 Carrera / Carrera 4 (USA)(CDN) M64.07, Tiptronic M64.08, 200 kW (272 PS)"
+     },
+     {
+      "name": "EPA fueleconomy.gov vehicle data",
+      "url": "https://www.fueleconomy.gov/feg/download.shtml",
+      "says": "1995 911 Carrera 4/2: 3.6 L 6-cyl NA"
+     }
+    ],
+    "status": "three_sources_not_nhra",
+    "independent_sources": 4,
+    "note": "DIN 272 is agreed by Excellence, Wikipedia and the Porsche AG press kit ('272 PS in the Carrera versions'). US 270 hp is from Consumer Guide only (272 PS converts to 268 hp)."
+   }
+  ],
+  "1996": [
+   {
+    "gen": "993",
+    "cid": 220,
+    "cc": 3600,
+    "liters": 3.6,
+    "hp": 282,
+    "hp_basis": "SAE net",
+    "rpo": "M64/23 (US/CDN manual), M64/24 (US Tiptronic)",
+    "name": "3.6L SOHC flat-six with Varioram variable-length intake",
+    "common_name": "M64 Varioram",
+    "trims": [
+     "Carrera Coupe",
+     "Carrera Cabriolet",
+     "Carrera 4 Coupe",
+     "Carrera 4 Cabriolet",
+     "Targa",
+     "Carrera 4S"
+    ],
+    "induction": "fuel injection (Motronic), Varioram",
+    "nhra": false,
+    "sources": [
+     {
+      "name": "Consumer Guide (Auto Editors of Consumer Guide) - Porsche 911 History, via HowStuffWorks (archived)",
+      "url": "https://auto.howstuffworks.com/porsche-911-history.htm",
+      "archive": "http://web.archive.org/web/2020/https://auto.howstuffworks.com/porsche-911-history.htm",
+      "says": "1996: Varioram added horsepower, for a total of 282; Carrera 4S and Targa reached showrooms early 1996"
+     },
+     {
+      "name": "Excellence magazine (US) - Specs database",
+      "url": "https://www.excellence-mag.com/resources/specs/313",
+      "also": [
+       "https://www.excellence-mag.com/resources/specs/317",
+       "https://www.excellence-mag.com/resources/specs/320",
+       "https://www.excellence-mag.com/resources/specs/329",
+       "https://www.excellence-mag.com/resources/specs/331",
+       "https://www.excellence-mag.com/resources/specs/334"
+      ],
+      "says": "1996 993 Carrera 4 / 4S: 3,600 cc, 282 @ 6300 rpm"
+     },
+     {
+      "name": "Wikipedia - List of Porsche engines",
+      "url": "https://en.wikipedia.org/wiki/List_of_Porsche_engines",
+      "says": "993 Carrera / Carrera 4 (USA)(CDN) M64.23, Tiptronic M64.24, 210 kW (285 PS); 1996-1998 Carrera 2, Carrera 4, Carrera S, Carrera 4S"
+     },
+     {
+      "name": "EPA fueleconomy.gov vehicle data",
+      "url": "https://www.fueleconomy.gov/feg/download.shtml",
+      "says": "1996 911 Carrera 4/2: 3.6 L 6-cyl NA"
+     }
+    ],
+    "status": "three_sources_not_nhra",
+    "independent_sources": 4,
+    "note": "282 hp: Consumer Guide and Excellence (its C4, C4S and C2S pages) agree; 285 PS converts to 281 hp. Conflict: Excellence's 1996-98 Carrera coupe, cabriolet and Targa pages still say 272."
+   },
+   {
+    "gen": "993",
+    "cid": 220,
+    "cc": 3600,
+    "liters": 3.6,
+    "hp": 408,
+    "hp_basis": "DIN PS (US 400 hp per Consumer Guide)",
+    "hp_din_us_spec": 408,
+    "hp_sae_us_consumer_guide": 400,
+    "rpo": "M64/60",
+    "name": "3.6L SOHC twin-turbocharged intercooled flat-six, Motronic",
+    "common_name": "Turbo (993)",
+    "trims": [
+     "Turbo Coupe"
+    ],
+    "induction": "twin-turbocharged, intercooled",
+    "nhra": false,
+    "sources": [
+     {
+      "name": "Consumer Guide (Auto Editors of Consumer Guide) - Porsche 911 History, via HowStuffWorks (archived)",
+      "url": "https://auto.howstuffworks.com/porsche-911-history.htm",
+      "archive": "http://web.archive.org/web/2020/https://auto.howstuffworks.com/porsche-911-history.htm",
+      "says": "993 Turbo returned in late 1995; the revised 3.6-liter engine delivered 400 horsepower at 5,750 rpm"
+     },
+     {
+      "name": "Excellence magazine (US) - Specs database",
+      "url": "https://www.excellence-mag.com/resources/specs/325",
+      "also": [],
+      "says": "1996 911 Turbo Coupe (993): 3,600 cc, 408 @ 5750 rpm, 8.0:1"
+     },
+     {
+      "name": "Wikipedia - List of Porsche engines",
+      "url": "https://en.wikipedia.org/wiki/List_of_Porsche_engines",
+      "says": "993 Turbo M64.60, 300 kW (408 PS)"
+     },
+     {
+      "name": "EPA fueleconomy.gov vehicle data",
+      "url": "https://www.fueleconomy.gov/feg/download.shtml",
+      "says": "1996 911 Turbo: 3.6 L 6-cyl turbo"
+     }
+    ],
+    "status": "three_sources_not_nhra",
+    "independent_sources": 4,
+    "note": "DIN 408 (300 kW) is agreed by Excellence and Wikipedia; US 400 hp is from Consumer Guide only (408 PS converts to 402 hp). EPA has no US 993 Turbo for 1995 or 1998."
+   }
+  ],
+  "1997": [
+   {
+    "gen": "993",
+    "cid": 220,
+    "cc": 3600,
+    "liters": 3.6,
+    "hp": 282,
+    "hp_basis": "SAE net",
+    "rpo": "M64/23 (US/CDN manual), M64/24 (US Tiptronic)",
+    "name": "3.6L SOHC flat-six with Varioram variable-length intake",
+    "common_name": "M64 Varioram",
+    "trims": [
+     "Carrera Coupe",
+     "Carrera Cabriolet",
+     "Carrera 4 Coupe",
+     "Carrera 4 Cabriolet",
+     "Targa",
+     "Carrera 4S"
+    ],
+    "induction": "fuel injection (Motronic), Varioram",
+    "nhra": false,
+    "sources": [
+     {
+      "name": "Consumer Guide (Auto Editors of Consumer Guide) - Porsche 911 History, via HowStuffWorks (archived)",
+      "url": "https://auto.howstuffworks.com/porsche-911-history.htm",
+      "archive": "http://web.archive.org/web/2020/https://auto.howstuffworks.com/porsche-911-history.htm",
+      "says": "1996: Varioram added horsepower, for a total of 282; Carrera 4S and Targa reached showrooms early 1996"
+     },
+     {
+      "name": "Excellence magazine (US) - Specs database",
+      "url": "https://www.excellence-mag.com/resources/specs/314",
+      "also": [
+       "https://www.excellence-mag.com/resources/specs/318",
+       "https://www.excellence-mag.com/resources/specs/321",
+       "https://www.excellence-mag.com/resources/specs/323",
+       "https://www.excellence-mag.com/resources/specs/332",
+       "https://www.excellence-mag.com/resources/specs/335"
+      ],
+      "says": "1997 993 Carrera 4 / 4S / Carrera S: 3,600 cc, 282 @ 6300 rpm"
+     },
+     {
+      "name": "Wikipedia - List of Porsche engines",
+      "url": "https://en.wikipedia.org/wiki/List_of_Porsche_engines",
+      "says": "993 Carrera / Carrera 4 (USA)(CDN) M64.23, Tiptronic M64.24, 210 kW (285 PS); 1996-1998 Carrera 2, Carrera 4, Carrera S, Carrera 4S"
+     },
+     {
+      "name": "EPA fueleconomy.gov vehicle data",
+      "url": "https://www.fueleconomy.gov/feg/download.shtml",
+      "says": "1997 911 Carrera 4/2: 3.6 L 6-cyl NA"
+     }
+    ],
+    "status": "three_sources_not_nhra",
+    "independent_sources": 4,
+    "note": "282 hp: Consumer Guide and Excellence (its C4, C4S and C2S pages) agree; 285 PS converts to 281 hp. Conflict: Excellence's 1996-98 Carrera coupe, cabriolet and Targa pages still say 272."
+   },
+   {
+    "gen": "993",
+    "cid": 220,
+    "cc": 3600,
+    "liters": 3.6,
+    "hp": 408,
+    "hp_basis": "DIN PS (US 400 hp per Consumer Guide)",
+    "hp_din_us_spec": 408,
+    "hp_sae_us_consumer_guide": 400,
+    "rpo": "M64/60",
+    "name": "3.6L SOHC twin-turbocharged intercooled flat-six, Motronic",
+    "common_name": "Turbo (993)",
+    "trims": [
+     "Turbo Coupe"
+    ],
+    "induction": "twin-turbocharged, intercooled",
+    "nhra": false,
+    "sources": [
+     {
+      "name": "Consumer Guide (Auto Editors of Consumer Guide) - Porsche 911 History, via HowStuffWorks (archived)",
+      "url": "https://auto.howstuffworks.com/porsche-911-history.htm",
+      "archive": "http://web.archive.org/web/2020/https://auto.howstuffworks.com/porsche-911-history.htm",
+      "says": "993 Turbo returned in late 1995; the revised 3.6-liter engine delivered 400 horsepower at 5,750 rpm"
+     },
+     {
+      "name": "Excellence magazine (US) - Specs database",
+      "url": "https://www.excellence-mag.com/resources/specs/326",
+      "also": [],
+      "says": "1997 911 Turbo Coupe (993): 3,600 cc, 408 @ 5750 rpm, 8.0:1"
+     },
+     {
+      "name": "Wikipedia - List of Porsche engines",
+      "url": "https://en.wikipedia.org/wiki/List_of_Porsche_engines",
+      "says": "993 Turbo M64.60, 300 kW (408 PS)"
+     },
+     {
+      "name": "EPA fueleconomy.gov vehicle data",
+      "url": "https://www.fueleconomy.gov/feg/download.shtml",
+      "says": "1997 911 Turbo: 3.6 L 6-cyl turbo"
+     }
+    ],
+    "status": "three_sources_not_nhra",
+    "independent_sources": 4,
+    "note": "DIN 408 (300 kW) is agreed by Excellence and Wikipedia; US 400 hp is from Consumer Guide only (408 PS converts to 402 hp)."
+   },
+   {
+    "gen": "993",
+    "cid": 220,
+    "cc": 3600,
+    "liters": 3.6,
+    "hp": 424,
+    "hp_basis": "SAE net",
+    "rpo": null,
+    "name": "3.6L twin-turbocharged flat-six, larger turbos, extra oil cooler (Porsche Exclusiv)",
+    "common_name": "Turbo S (993)",
+    "trims": [
+     "Turbo S Coupe"
+    ],
+    "induction": "twin-turbocharged, intercooled",
+    "nhra": false,
+    "sources": [
+     {
+      "name": "Consumer Guide (Auto Editors of Consumer Guide) - Porsche 911 History, via HowStuffWorks (archived)",
+      "url": "https://auto.howstuffworks.com/porsche-911-history.htm",
+      "archive": "http://web.archive.org/web/2020/https://auto.howstuffworks.com/porsche-911-history.htm",
+      "says": "a new Turbo S coupe, announced mid-1997: an engine muscled up to 424 horsepower"
+     },
+     {
+      "name": "Excellence magazine (US) - Specs database",
+      "url": "https://www.excellence-mag.com/resources/specs/327",
+      "also": [],
+      "says": "1997 911 Turbo S Coupe (993): 3,600 cc, 424 @ 6250 rpm"
+     },
+     {
+      "name": "Wikipedia - Porsche 911 (993)",
+      "url": "https://en.wikipedia.org/wiki/Porsche_911_(993)",
+      "says": "993 Turbo S: 450 PS DIN; American-market cars produced 424 hp SAE"
+     },
+     {
+      "name": "EPA fueleconomy.gov vehicle data",
+      "url": "https://www.fueleconomy.gov/feg/download.shtml",
+      "says": "1997 911 Turbo: 3.6 L 6-cyl turbo (size only)"
+     }
+    ],
+    "status": "three_sources_not_nhra",
+    "independent_sources": 4,
+    "note": "All three agree on 424 hp SAE for US cars (450 PS elsewhere). No source gives an engine type number. Excellence's induction field for this car wrongly says naturally aspirated."
+   }
+  ],
+  "1998": [
+   {
+    "gen": "993",
+    "cid": 220,
+    "cc": 3600,
+    "liters": 3.6,
+    "hp": 282,
+    "hp_basis": "SAE net",
+    "rpo": "M64/23 (US/CDN manual), M64/24 (US Tiptronic)",
+    "name": "3.6L SOHC flat-six with Varioram variable-length intake",
+    "common_name": "M64 Varioram",
+    "trims": [
+     "Carrera Cabriolet",
+     "Carrera 4 Cabriolet",
+     "Targa",
+     "Carrera S",
+     "Carrera 4S"
+    ],
+    "induction": "fuel injection (Motronic), Varioram",
+    "nhra": false,
+    "sources": [
+     {
+      "name": "Consumer Guide (Auto Editors of Consumer Guide) - Porsche 911 History, via HowStuffWorks (archived)",
+      "url": "https://auto.howstuffworks.com/porsche-911-history.htm",
+      "archive": "http://web.archive.org/web/2020/https://auto.howstuffworks.com/porsche-911-history.htm",
+      "says": "1996: Varioram added horsepower, for a total of 282; Carrera 4S and Targa reached showrooms early 1996; the '98 Carrera coupe was ousted for the wide-body Carrera S"
+     },
+     {
+      "name": "Excellence magazine (US) - Specs database",
+      "url": "https://www.excellence-mag.com/resources/specs/315",
+      "also": [
+       "https://www.excellence-mag.com/resources/specs/319",
+       "https://www.excellence-mag.com/resources/specs/322",
+       "https://www.excellence-mag.com/resources/specs/324",
+       "https://www.excellence-mag.com/resources/specs/333",
+       "https://www.excellence-mag.com/resources/specs/336"
+      ],
+      "says": "1998 993 Carrera 4 / 4S / Carrera S: 3,600 cc, 282 @ 6300 rpm"
+     },
+     {
+      "name": "Wikipedia - List of Porsche engines",
+      "url": "https://en.wikipedia.org/wiki/List_of_Porsche_engines",
+      "says": "993 Carrera / Carrera 4 (USA)(CDN) M64.23, Tiptronic M64.24, 210 kW (285 PS); 1996-1998 Carrera 2, Carrera 4, Carrera S, Carrera 4S"
+     },
+     {
+      "name": "EPA fueleconomy.gov vehicle data",
+      "url": "https://www.fueleconomy.gov/feg/download.shtml",
+      "says": "1998 911 Carrera 4/2: 3.6 L 6-cyl NA"
+     }
+    ],
+    "status": "three_sources_not_nhra",
+    "independent_sources": 4,
+    "note": "282 hp: Consumer Guide and Excellence (its C4, C4S and C2S pages) agree; 285 PS converts to 281 hp. Conflict: Excellence's 1996-98 Carrera coupe, cabriolet and Targa pages still say 272. Carrera S timing: Consumer Guide puts it in the 1998 lineup; Excellence and Wikipedia ('Carrera S (1997)') list it from 1997, probably by calendar year. Recorded under 1998 only."
+   }
+  ]
+ },
+ "source_index": [
+  {
+   "name": "Consumer Guide - Porsche 911 History (HowStuffWorks, archived)",
+   "url": "https://auto.howstuffworks.com/porsche-911-history.htm",
+   "archive": "http://web.archive.org/web/2020/https://auto.howstuffworks.com/porsche-911-history.htm",
+   "type": "publication"
+  },
+  {
+   "name": "Excellence magazine - Specs database (ids 9-56, 291-336, 371-402)",
+   "url": "https://www.excellence-mag.com/resources/specs/9",
+   "type": "publication"
+  },
+  {
+   "name": "Wikipedia - Porsche 911 (classic)",
+   "url": "https://en.wikipedia.org/wiki/Porsche_911_(classic)",
+   "type": "wikipedia"
+  },
+  {
+   "name": "Wikipedia - Porsche 911 (930)",
+   "url": "https://en.wikipedia.org/wiki/Porsche_911_(930)",
+   "type": "wikipedia"
+  },
+  {
+   "name": "Wikipedia - Porsche 911 (964)",
+   "url": "https://en.wikipedia.org/wiki/Porsche_911_(964)",
+   "type": "wikipedia"
+  },
+  {
+   "name": "Wikipedia - Porsche 911 (993)",
+   "url": "https://en.wikipedia.org/wiki/Porsche_911_(993)",
+   "type": "wikipedia"
+  },
+  {
+   "name": "Wikipedia - List of Porsche engines",
+   "url": "https://en.wikipedia.org/wiki/List_of_Porsche_engines",
+   "type": "wikipedia"
+  },
+  {
+   "name": "EPA fueleconomy.gov vehicle data",
+   "url": "https://www.fueleconomy.gov/feg/download.shtml",
+   "type": "government"
+  },
+  {
+   "name": "Porsche AG Newsroom - 60 Years Porsche 911 press kit (generation and engine chapters; German-market DIN data)",
+   "url": "https://newsroom.porsche.com/en/press-kits/60-Years-Porsche-911.html",
+   "type": "manufacturer"
+  },
+  {
+   "name": "Porsche Cars North America - Porsche Classic 1989 911 page (archived)",
+   "url": "https://web.archive.org/web/20080207073433/http://www.porsche.com/usa/accessoriesandservices/classic/world/models/roadvehicles/1989-911/",
+   "type": "manufacturer"
+  }
+ ]
+}
