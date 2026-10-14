@@ -58,7 +58,7 @@ S["toyota-pickup"] = dict(metric_from=1900, make="Toyota", model="Pickup", makeS
     G("gen5", "1989–1995", 1989, 1995, "The 22R-E four and the 3VZ-E V6.")],
   files=["verify_toyota-pickup-1964-1995.json"], merge_trims=True)
 
-S["land-cruiser"] = dict(metric_from=1900, make="Toyota", model="Land Cruiser", makeSlug="toyota", slug="land-cruiser",
+S["land-cruiser"] = dict(no_link=[{"cid": 241, "years": [1988, 1992], "match": "3F"}], metric_from=1900, make="Toyota", model="Land Cruiser", makeSlug="toyota", slug="land-cruiser",
   title="Toyota Land Cruiser Engines by Year",
   description="Every factory engine in the US Toyota Land Cruiser by year: the F and 2F sixes of the FJ40 and FJ60, the 3F-E and 1FZ-FE, the 4.7 and 5.7 V8s, and the 2024+ hybrid.",
   intro=["Toyota has sold the Land Cruiser in the US since 1958, from the FJ40 to the 250 series that returned for 2024 after a two-year gap. Only engines sold new in the US are listed.", PICK],
@@ -279,6 +279,6 @@ S["sierra"] = dict(family_overrides=[{"years": [1988, 1995], "cid": [350], "url"
 os.makedirs(os.path.join(SP, "vspecs"), exist_ok=True)
 for k, v in S.items():
     if ONLY and k not in ONLY: continue
-    v.setdefault("draft", True)
+    pass  # batch 5 published 2026-10-13; new models must set draft=True themselves
     json.dump(v, open(os.path.join(SP, "vspecs", f"{k}.json"), "w", encoding="utf-8"), ensure_ascii=False, indent=1)
 print("specs:", ", ".join(k for k in S if not ONLY or k in ONLY))

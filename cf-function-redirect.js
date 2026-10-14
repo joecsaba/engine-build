@@ -127,7 +127,16 @@ function handler(event) {
     '/engines/pontiac/pontiac-207ci/207ci-3-62x2-31': '/engines/pontiac/pontiac-207ci',
     '/engines/subaru/fa/24-na': '/engines/subaru/fa',
     '/engines/subaru/fa/subaru-fa24t': '/engines/subaru/fa',
-    '/engines/gmc/buick-v8': '/engines/buick'
+    '/engines/gmc/buick-v8': '/engines/buick',
+    // Batch 5 (2026-10-13): pages named by their model-year span grew with the
+    // Suburban's years; the GR V6 2GR page moved when its displacement was corrected.
+    '/engines/chevrolet/chevrolet-283ci/283ci-1957-1966': '/engines/chevrolet/chevrolet-283ci/283ci-1957-1967',
+    '/engines/chevrolet/chevrolet-305ci/305ci-1977-1978': '/engines/chevrolet/chevrolet-305ci/305ci-1976-1978',
+    '/engines/chevrolet/chevrolet-307ci/307ci-1968-1970': '/engines/chevrolet/chevrolet-307ci/307ci-1968-1972',
+    '/engines/chevrolet/chevrolet-327ci/327ci-1962-1966': '/engines/chevrolet/chevrolet-327ci/327ci-1962-1968',
+    '/engines/chevrolet/chevrolet-396ci/396ci-1969': '/engines/chevrolet/chevrolet-396ci/396ci-1968-1969',
+    '/engines/gmc/chevy-i6-194-292/292ci-1963-1966': '/engines/gmc/chevy-i6-194-292/292ci-1963-1971',
+    '/engines/toyota/gr-v6/210ci-3-701x3-268': '/engines/toyota/gr-v6/2gr-fe'
   };
   var corrected = CORRECTED[uri.replace(/\/$/, '')];
   if (corrected) {

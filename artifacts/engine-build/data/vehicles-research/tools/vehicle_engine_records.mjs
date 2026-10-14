@@ -71,6 +71,12 @@ for (const x of vs) for (const ve of x.engines) {
   if ((ve.engineUrl && ve.linkTier !== 3) || !ve.familyUrl || ve.race || ve.electric || ve.noLink || ve.cid == null) continue;
   const fam = famByUrl.get(ve.familyUrl);
   if (!fam) continue;
+  // a straight six is not a V6 of the same size (Land Cruiser 3F-E vs the 1GR in "GR V6")
+  const famV = /\bV-?\d+\b/.test(fam.familyName ?? ""), rowV = /\bV-?\d+\b/.test(ve.name ?? "");
+  const rowInline = /inline|straight|flat|rotary/i.test(ve.name ?? "");
+  if ((famV && rowInline) || (/\binline|straight\b/i.test(fam.familyName ?? "") && rowV)) {
+    skipped.push(`${x.model} ${ve.year} ${ve.cid} -> ${ve.familyUrl} (layout differs from family)`); continue;
+  }
   // the family's geometry for this size; skip unless every record agrees
   const same = (byFam.get(ve.familyUrl) ?? []).filter((e) =>
     Math.round(e.displacement_ci) === ve.cid && (ve.cyl == null || e.num_cylinders === ve.cyl) &&
