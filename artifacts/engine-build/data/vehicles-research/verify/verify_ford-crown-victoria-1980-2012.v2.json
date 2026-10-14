@@ -1,0 +1,4024 @@
+{
+ "vehicle": "ford-crown-victoria-1980-2012",
+ "years": {
+  "1980": [
+   {
+    "gen": "panther1",
+    "cid": 302,
+    "hp": 130,
+    "hp_basis": "SAE net",
+    "rpo": "Windsor 5.0",
+    "common_name": "5.0 (302) V8 2-bbl variable venturi",
+    "trims": [
+     "standard"
+    ],
+    "nhra": true,
+    "sources": [
+     {
+      "name": "Ford 1980 LTD brochure (Ford Heritage Vault)",
+      "url": "https://fordheritagevault.com/ (record uuid d0f31fc12548499982590fff7f680cf5)",
+      "says": "5.0 liter (302 CID) VV V-8 standard"
+     },
+     {
+      "name": "Wikipedia - Ford LTD Crown Victoria",
+      "url": "https://en.wikipedia.org/wiki/Ford_LTD_Crown_Victoria",
+      "says": "130 hp 4.9 L (302) standard"
+     },
+     {
+      "name": "NHRA Stock Car Classification Guide",
+      "url": "nhra_ford-crown-victoria-1980-2012.json",
+      "says": "1980 LTD Crown Victoria: 302 ci / 132 hp"
+     }
+    ],
+    "independent_sources": 3,
+    "status": "disputed",
+    "note": "NHRA lists 132 hp (the 1982 figure); Wikipedia gives 130 (GMN club table, context only, 130@3600). No Ford HP figure found; 130 most likely. [v2] MSP 1980 evaluation shows Ford police packages only on LTD S/LTD (not Crown Victoria) and gives no 302 rating; no Ford or independent 302 figure found. Still disputed.",
+    "hp_sources": 2
+   },
+   {
+    "gen": "panther1",
+    "cid": 351,
+    "hp": 140,
+    "hp_basis": "SAE net",
+    "rpo": "Windsor 351 (5.8)",
+    "common_name": "5.8 (351) V8 2-bbl VV",
+    "trims": [
+     "optional"
+    ],
+    "nhra": true,
+    "sources": [
+     {
+      "name": "Ford 1980 LTD brochure (Ford Heritage Vault)",
+      "url": "https://fordheritagevault.com/ (record uuid d0f31fc12548499982590fff7f680cf5)",
+      "says": "Optional 5.8 liter (351 CID) V-8 with Electronic Engine Controls"
+     },
+     {
+      "name": "Wikipedia - Ford LTD Crown Victoria",
+      "url": "https://en.wikipedia.org/wiki/Ford_LTD_Crown_Victoria",
+      "says": "140 hp 5.8 L (351) optional"
+     },
+     {
+      "name": "NHRA Stock Car Classification Guide",
+      "url": "nhra_ford-crown-victoria-1980-2012.json",
+      "says": "1980 LTD Crown Victoria: 351 ci / 140 hp"
+     }
+    ],
+    "independent_sources": 3,
+    "status": "confirmed",
+    "note": "",
+    "hp_sources": 2
+   }
+  ],
+  "1981": [
+   {
+    "gen": "panther1",
+    "cid": 255,
+    "hp": 120,
+    "hp_basis": "SAE net",
+    "rpo": "Windsor 4.2",
+    "common_name": "4.2 (255) V8",
+    "trims": [
+     "standard"
+    ],
+    "nhra": true,
+    "sources": [
+     {
+      "name": "Ford 1981 LTD brochure (Ford Heritage Vault)",
+      "url": "https://fordheritagevault.com/ (record uuid b3166567b3bf43b5b6b1fc9f0d816352)",
+      "says": "new standard power team: 4.2 liter (255 CID) V-8 with Automatic Overdrive"
+     },
+     {
+      "name": "Wikipedia - Ford LTD Crown Victoria",
+      "url": "https://en.wikipedia.org/wiki/Ford_LTD_Crown_Victoria",
+      "says": "120 hp 4.2 L V8 added as standard"
+     },
+     {
+      "name": "NHRA Stock Car Classification Guide",
+      "url": "nhra_ford-crown-victoria-1980-2012.json",
+      "says": "1981 Crown Victoria: 255 ci / 120 hp"
+     }
+    ],
+    "independent_sources": 3,
+    "status": "confirmed",
+    "note": "",
+    "hp_sources": 2
+   },
+   {
+    "gen": "panther1",
+    "cid": 302,
+    "hp": 125,
+    "hp_basis": "SAE net",
+    "rpo": "Windsor 5.0",
+    "common_name": "5.0 (302) V8 2-bbl VV",
+    "trims": [
+     "optional",
+     "wagons"
+    ],
+    "nhra": true,
+    "sources": [
+     {
+      "name": "Ford 1981 LTD brochure (Ford Heritage Vault)",
+      "url": "https://fordheritagevault.com/ (record uuid b3166567b3bf43b5b6b1fc9f0d816352)",
+      "says": "5.0 liter (302 CID) V-8 offered"
+     },
+     {
+      "name": "NHRA Stock Car Classification Guide",
+      "url": "nhra_ford-crown-victoria-1980-2012.json",
+      "says": "1981 Crown Victoria: 302 ci / 125 hp"
+     },
+     {
+      "name": "Wikipedia - Ford LTD Crown Victoria",
+      "url": "https://en.wikipedia.org/wiki/Ford_LTD_Crown_Victoria",
+      "says": "4.9 L (302) V8 continued (no 1981 figure)"
+     }
+    ],
+    "independent_sources": 3,
+    "status": "disputed",
+    "note": "HP only from NHRA (125); GMN club table (context) gives 130 @3400. Wikipedia says the 302 got throttle-body EFI for 1981, but Ford brochures show the EFI 5.0 as new for 1983. [v2] MSP 1981 report tested only the 351 H.O.; no 302 rating found. Still disputed (NHRA 125 vs club table 130).",
+    "hp_sources": 1
+   },
+   {
+    "gen": "panther1",
+    "cid": 351,
+    "hp": 145,
+    "hp_basis": "SAE net",
+    "rpo": "Windsor 351 (5.8)",
+    "common_name": "5.8 (351) V8 2-bbl VV",
+    "trims": [
+     "optional"
+    ],
+    "nhra": true,
+    "sources": [
+     {
+      "name": "Ford 1981 LTD brochure (Ford Heritage Vault)",
+      "url": "https://fordheritagevault.com/ (record uuid b3166567b3bf43b5b6b1fc9f0d816352)",
+      "says": "Engines: 5.0 liter (302 CID) V-8, 5.8 liter (351 CID) V-8"
+     },
+     {
+      "name": "NHRA Stock Car Classification Guide",
+      "url": "nhra_ford-crown-victoria-1980-2012.json",
+      "says": "1981 Crown Victoria: 351 ci / 145 hp"
+     }
+    ],
+    "independent_sources": 2,
+    "status": "two_sources_agree",
+    "note": "HP from NHRA only (GMN context table agrees 145).",
+    "hp_sources": 1
+   },
+   {
+    "gen": "panther1",
+    "cid": 351,
+    "hp": 165,
+    "hp_basis": "SAE net",
+    "rpo": "Windsor 351 HO",
+    "common_name": "5.8 (351) HO V8 (police/fleet)",
+    "trims": [
+     "Police package"
+    ],
+    "nhra": true,
+    "sources": [
+     {
+      "name": "Ford 1981 LTD brochure (Ford Heritage Vault)",
+      "url": "https://fordheritagevault.com/ (record uuid b3166567b3bf43b5b6b1fc9f0d816352)",
+      "says": "Engines list: ... 5.8 liter (351 CID) high output V-8"
+     },
+     {
+      "name": "NHRA Stock Car Classification Guide",
+      "url": "nhra_ford-crown-victoria-1980-2012.json",
+      "says": "1981 Crown Victoria: 351 ci / 165 hp"
+     },
+     {
+      "name": "Michigan State Police - 1981 Model Year Patrol Vehicle Evaluation (NCJ 78766)",
+      "url": "https://www.ojp.gov/pdffiles1/Digitization/78766NCJRS.pdf",
+      "says": "Ford LTD 'S' police, 351W H.O. 5.8L, Ford 7200 VV, dual exhaust: 165 @ 3600 SAE net, 285 lb-ft @ 2200"
+     }
+    ],
+    "independent_sources": 3,
+    "status": "confirmed",
+    "note": "HP from NHRA only (GMN context table agrees 165). [v2] MSP 1981 test car (LTD S police, same full-size police engine) rated 165 @ 3600 - matches NHRA.",
+    "hp_sources": 2
+   }
+  ],
+  "1982": [
+   {
+    "gen": "panther1",
+    "cid": 255,
+    "hp": 122,
+    "hp_basis": "SAE net",
+    "rpo": "Windsor 4.2",
+    "common_name": "4.2 (255) V8",
+    "trims": [
+     "standard (exc. California, wagons)"
+    ],
+    "nhra": true,
+    "sources": [
+     {
+      "name": "Ford 1982 LTD brochure (Ford Heritage Vault)",
+      "url": "https://fordheritagevault.com/ (record uuid 1e47d13c4f544af3a257c61a61c25572)",
+      "says": "4.2 liter (255 CID) V-8 standard (5.0L in wagons and all LTDs in California)"
+     },
+     {
+      "name": "NHRA Stock Car Classification Guide",
+      "url": "nhra_ford-crown-victoria-1980-2012.json",
+      "says": "1982 Crown Victoria: 255 ci / 122 hp"
+     },
+     {
+      "name": "Wikipedia - Ford LTD Crown Victoria",
+      "url": "https://en.wikipedia.org/wiki/Ford_LTD_Crown_Victoria",
+      "says": "4.2 L V8 still standard in 1982 (dropped for 1983)"
+     }
+    ],
+    "independent_sources": 3,
+    "status": "confirmed",
+    "note": "HP from NHRA only (GMN context 122).",
+    "hp_sources": 1
+   },
+   {
+    "gen": "panther1",
+    "cid": 302,
+    "hp": 132,
+    "hp_basis": "SAE net",
+    "rpo": "Windsor 5.0",
+    "common_name": "5.0 (302) V8 2-bbl VV",
+    "trims": [
+     "wagons",
+     "California",
+     "optional"
+    ],
+    "nhra": true,
+    "sources": [
+     {
+      "name": "Ford 1982 LTD brochure (Ford Heritage Vault)",
+      "url": "https://fordheritagevault.com/ (record uuid 1e47d13c4f544af3a257c61a61c25572)",
+      "says": "5.0 liter (302 CID) V-8 engine"
+     },
+     {
+      "name": "NHRA Stock Car Classification Guide",
+      "url": "nhra_ford-crown-victoria-1980-2012.json",
+      "says": "1982 Crown Victoria: 302 ci / 132 hp"
+     },
+     {
+      "name": "Wikipedia - Ford LTD Crown Victoria",
+      "url": "https://en.wikipedia.org/wiki/Ford_LTD_Crown_Victoria",
+      "says": "4.9 L V8 continued"
+     }
+    ],
+    "independent_sources": 3,
+    "status": "confirmed",
+    "note": "HP from NHRA only (GMN context 132).",
+    "hp_sources": 1
+   }
+  ],
+  "1983": [
+   {
+    "gen": "panther1",
+    "cid": 302,
+    "hp": 130,
+    "hp_basis": "SAE net",
+    "rpo": "Windsor 5.0",
+    "common_name": "5.0 (302) V8 CFI (throttle-body EFI)",
+    "trims": [
+     "standard"
+    ],
+    "nhra": false,
+    "sources": [
+     {
+      "name": "Ford 1983 LTD Crown Victoria brochure (Ford Heritage Vault)",
+      "url": "https://fordheritagevault.com/ (record uuid a9a1c81107974170b8ee07363ac6230d)",
+      "says": "Electronic Fuel Injection 5.0 liter (302 CID) V-8 standard powerteam"
+     },
+     {
+      "name": "Wikipedia - Ford LTD Crown Victoria",
+      "url": "https://en.wikipedia.org/wiki/Ford_LTD_Crown_Victoria",
+      "says": "5.0 L effectively the only engine for 1983"
+     },
+     {
+      "name": "Michigan State Police - 1983 Model Year Patrol Vehicle Evaluation (NCJ 90183)",
+      "url": "https://www.ojp.gov/pdffiles1/Digitization/90183NCJRS.pdf",
+      "says": "Ford Crown Victoria CV-S P43, 302 5.0L CFI, single exhaust: 130 @ 3200 SAE net, 240 lb-ft @ 2000"
+     }
+    ],
+    "independent_sources": 3,
+    "status": "two_sources_agree",
+    "note": "Ford 1983 brochure and Wikipedia confirm the engine. [v2] HP 130 @ 3200 from the Michigan State Police 1983 report (spec table for the CV-S police test car with the CFI 302); matches the GMN club figure. One reputable HP source.",
+    "hp_sources": 1,
+    "hp_confirmed": false
+   },
+   {
+    "gen": "panther1",
+    "cid": 351,
+    "hp": 165,
+    "hp_basis": "SAE net",
+    "rpo": "Windsor 351 HO",
+    "common_name": "5.8 (351) H.O. V8 VV carb, dual exhaust (police/fleet)",
+    "trims": [
+     "Police package"
+    ],
+    "nhra": false,
+    "sources": [
+     {
+      "name": "Wikipedia - Ford LTD Crown Victoria",
+      "url": "https://en.wikipedia.org/wiki/Ford_LTD_Crown_Victoria",
+      "says": "5.8 L carbureted V8 restricted to fleet (police) from 1983"
+     },
+     {
+      "name": "Michigan State Police - 1983 Model Year Patrol Vehicle Evaluation (NCJ 90183)",
+      "url": "https://www.ojp.gov/pdffiles1/Digitization/90183NCJRS.pdf",
+      "says": "Ford Crown Victoria CV-S P43 police, 351W H.O. 5.8L, Ford 7200 VV, dual exhaust: 165 @ 3600 SAE net, 290 lb-ft @ 2200"
+     }
+    ],
+    "independent_sources": 2,
+    "status": "two_sources_agree",
+    "note": "[v2] Existence confirmed by Wikipedia (5.8 restricted to fleet/police from 1983) and the Michigan State Police 1983 evaluation, which tested an LTD Crown Victoria S police car (sales code P43) with the 351W H.O. rated 165 @ 3600. The GMN club table's 140 hp is not supported. HP from one reputable source (MSP).",
+    "hp_sources": 1
+   }
+  ],
+  "1984": [
+   {
+    "gen": "panther1",
+    "cid": 302,
+    "hp": 140,
+    "hp_basis": "SAE net",
+    "rpo": "Windsor 5.0",
+    "common_name": "5.0 (302) V8 CFI",
+    "trims": [
+     "standard"
+    ],
+    "nhra": false,
+    "sources": [
+     {
+      "name": "Ford 1984 LTD Crown Victoria brochure (Ford Heritage Vault)",
+      "url": "https://fordheritagevault.com/ (record uuid efc9dc983b25421eb12eaf6c19f83800)",
+      "says": "5.0 liter (302 CID) electronic fuel-injected V-8 (EEC-IV)"
+     },
+     {
+      "name": "Wikipedia - Ford LTD Crown Victoria",
+      "url": "https://en.wikipedia.org/wiki/Ford_LTD_Crown_Victoria",
+      "says": "1984: EEC-IV raises output to 140 hp"
+     },
+     {
+      "name": "EPA fueleconomy.gov vehicle data",
+      "url": "https://www.fueleconomy.gov/feg/download.shtml",
+      "says": "1984: 5.0 L V8 LTD Crown Victoria"
+     }
+    ],
+    "independent_sources": 3,
+    "status": "three_sources_not_nhra",
+    "note": "HP 140 from Wikipedia only (GMN context agrees).",
+    "hp_sources": 1
+   },
+   {
+    "gen": "panther1",
+    "cid": 302,
+    "hp": 155,
+    "hp_basis": "SAE net",
+    "rpo": "Windsor 5.0",
+    "common_name": "5.0 (302) V8 CFI, dual exhaust (optional)",
+    "trims": [
+     "optional"
+    ],
+    "nhra": false,
+    "sources": [
+     {
+      "name": "Wikipedia - Ford LTD Crown Victoria",
+      "url": "https://en.wikipedia.org/wiki/Ford_LTD_Crown_Victoria",
+      "says": "1984: 140 hp (155 hp optional)"
+     }
+    ],
+    "independent_sources": 1,
+    "status": "disputed",
+    "note": "Wikipedia says \"140 hp (155 hp optional)\" without naming the engine; GMN context table gives 155 for an optional 5.0 (standard on wagon). No Ford or other confirmation. [v2] No year-specific source found. MSP 1987 shows the dual-exhaust police 5.0 rated 10 hp above the single-exhaust 5.0 (160 vs 150), so a 155-hp dual-exhaust 5.0 (140 + 15) is plausible but unverified; US retail availability unknown.",
+    "hp_sources": 1
+   },
+   {
+    "gen": "panther1",
+    "cid": 351,
+    "hp": null,
+    "hp_basis": "SAE net",
+    "rpo": "Windsor 351 HO",
+    "common_name": "5.8 (351) HO V8 VV carb (police)",
+    "trims": [
+     "Police Interceptor"
+    ],
+    "nhra": false,
+    "sources": [
+     {
+      "name": "Wikipedia - Ford LTD Crown Victoria",
+      "url": "https://en.wikipedia.org/wiki/Ford_LTD_Crown_Victoria",
+      "says": "5.8 L restricted to fleet/police 1983-91; 180 hp in 1991"
+     },
+     {
+      "name": "EPA fueleconomy.gov vehicle data",
+      "url": "https://www.fueleconomy.gov/feg/download.shtml",
+      "says": "1984: 5.8 L V8 LTD Crown Victoria"
+     }
+    ],
+    "independent_sources": 2,
+    "status": "disputed",
+    "note": "Availability confirmed by EPA + Wikipedia; 180 hp confirmed by Ford only for 1988, 1989 and 1991 (GMN context gives 180 for 1984-91). Wikipedia's 1984 \"155 hp optional\" is probably the 5.0 dual exhaust. Wikipedia: also sold at retail in Canada. [v2] HP withheld: MSP rated the police 351 H.O. 165 @ 3600 for 1983 and 180 @ 3600 for 1987, so the 1984-86 rating cannot be inferred; Wikipedia only says 'up to 180 hp'. No year-specific source found.",
+    "hp_sources": 0
+   }
+  ],
+  "1985": [
+   {
+    "gen": "panther1",
+    "cid": 302,
+    "hp": 140,
+    "hp_basis": "SAE net",
+    "rpo": "Windsor 5.0",
+    "common_name": "5.0 (302) V8 CFI",
+    "trims": [
+     "standard"
+    ],
+    "nhra": false,
+    "sources": [
+     {
+      "name": "Ford 1985 LTD Crown Victoria brochure (Ford Heritage Vault)",
+      "url": "https://fordheritagevault.com/ (record uuid 33303eed8c62443d9dce95eb164cfc9f)",
+      "says": "5.0 liter (302 CID) electronic fuel-injected V-8 (EEC-IV)"
+     },
+     {
+      "name": "Wikipedia - Ford LTD Crown Victoria",
+      "url": "https://en.wikipedia.org/wiki/Ford_LTD_Crown_Victoria",
+      "says": "1984: EEC-IV raises output to 140 hp"
+     },
+     {
+      "name": "EPA fueleconomy.gov vehicle data",
+      "url": "https://www.fueleconomy.gov/feg/download.shtml",
+      "says": "1985: 5.0 L V8 LTD Crown Victoria"
+     }
+    ],
+    "independent_sources": 3,
+    "status": "three_sources_not_nhra",
+    "note": "HP 140 from Wikipedia only (GMN context agrees).",
+    "hp_sources": 1
+   },
+   {
+    "gen": "panther1",
+    "cid": 302,
+    "hp": 155,
+    "hp_basis": "SAE net",
+    "rpo": "Windsor 5.0",
+    "common_name": "5.0 (302) V8 CFI, dual exhaust (optional)",
+    "trims": [
+     "optional"
+    ],
+    "nhra": false,
+    "sources": [
+     {
+      "name": "Wikipedia - Ford LTD Crown Victoria",
+      "url": "https://en.wikipedia.org/wiki/Ford_LTD_Crown_Victoria",
+      "says": "1984: 140 hp (155 hp optional)"
+     }
+    ],
+    "independent_sources": 1,
+    "status": "disputed",
+    "note": "Wikipedia says \"140 hp (155 hp optional)\" without naming the engine; GMN context table gives 155 for an optional 5.0 (standard on wagon). No Ford or other confirmation. [v2] No year-specific source found. MSP 1987 shows the dual-exhaust police 5.0 rated 10 hp above the single-exhaust 5.0 (160 vs 150), so a 155-hp dual-exhaust 5.0 (140 + 15) is plausible but unverified; US retail availability unknown.",
+    "hp_sources": 1
+   },
+   {
+    "gen": "panther1",
+    "cid": 351,
+    "hp": null,
+    "hp_basis": "SAE net",
+    "rpo": "Windsor 351 HO",
+    "common_name": "5.8 (351) HO V8 VV carb (police)",
+    "trims": [
+     "Police Interceptor"
+    ],
+    "nhra": false,
+    "sources": [
+     {
+      "name": "Wikipedia - Ford LTD Crown Victoria",
+      "url": "https://en.wikipedia.org/wiki/Ford_LTD_Crown_Victoria",
+      "says": "5.8 L restricted to fleet/police 1983-91; 180 hp in 1991"
+     },
+     {
+      "name": "EPA fueleconomy.gov vehicle data",
+      "url": "https://www.fueleconomy.gov/feg/download.shtml",
+      "says": "1985: 5.8 L V8 LTD Crown Victoria (POLICE)"
+     }
+    ],
+    "independent_sources": 2,
+    "status": "disputed",
+    "note": "Availability confirmed by EPA + Wikipedia; 180 hp confirmed by Ford only for 1988, 1989 and 1991 (GMN context gives 180 for 1984-91). Wikipedia's 1984 \"155 hp optional\" is probably the 5.0 dual exhaust. Wikipedia: also sold at retail in Canada. [v2] HP withheld: MSP rated the police 351 H.O. 165 @ 3600 for 1983 and 180 @ 3600 for 1987, so the 1984-86 rating cannot be inferred; Wikipedia only says 'up to 180 hp'. No year-specific source found.",
+    "hp_sources": 0
+   }
+  ],
+  "1986": [
+   {
+    "gen": "panther1",
+    "cid": 302,
+    "hp": 150,
+    "hp_basis": "SAE net",
+    "rpo": "Windsor 5.0",
+    "common_name": "5.0 (302) V8 SEFI",
+    "trims": [
+     "standard"
+    ],
+    "nhra": false,
+    "sources": [
+     {
+      "name": "Ford 1986 LTD Crown Victoria brochure (Ford Heritage Vault)",
+      "url": "https://fordheritagevault.com/ (record uuid 060408762705499abe7bcc2922d8ef8b)",
+      "says": "5.0 liter V-8 engine with EFI"
+     },
+     {
+      "name": "Wikipedia - Ford LTD Crown Victoria",
+      "url": "https://en.wikipedia.org/wiki/Ford_LTD_Crown_Victoria",
+      "says": "1986: Sequential-Fire multiport EFI raises output to 150 hp; 1991: 150 hp 5.0 standard"
+     },
+     {
+      "name": "EPA fueleconomy.gov vehicle data",
+      "url": "https://www.fueleconomy.gov/feg/download.shtml",
+      "says": "1986: 5.0 L V8 LTD Crown Victoria"
+     }
+    ],
+    "independent_sources": 3,
+    "status": "three_sources_not_nhra",
+    "note": "HP 150 from Wikipedia only (GMN context 150@3200).",
+    "hp_sources": 1
+   },
+   {
+    "gen": "panther1",
+    "cid": 351,
+    "hp": null,
+    "hp_basis": "SAE net",
+    "rpo": "Windsor 351 HO",
+    "common_name": "5.8 (351) HO V8 VV carb (police)",
+    "trims": [
+     "Police Interceptor"
+    ],
+    "nhra": false,
+    "sources": [
+     {
+      "name": "Wikipedia - Ford LTD Crown Victoria",
+      "url": "https://en.wikipedia.org/wiki/Ford_LTD_Crown_Victoria",
+      "says": "5.8 L restricted to fleet/police 1983-91; 180 hp in 1991"
+     },
+     {
+      "name": "EPA fueleconomy.gov vehicle data",
+      "url": "https://www.fueleconomy.gov/feg/download.shtml",
+      "says": "1986: 5.8 L V8 LTD Crown Victoria (POLICE)"
+     }
+    ],
+    "independent_sources": 2,
+    "status": "disputed",
+    "note": "Availability confirmed by EPA + Wikipedia; 180 hp confirmed by Ford only for 1988, 1989 and 1991 (GMN context gives 180 for 1984-91). Wikipedia's 1984 \"155 hp optional\" is probably the 5.0 dual exhaust. Wikipedia: also sold at retail in Canada. [v2] HP withheld: MSP rated the police 351 H.O. 165 @ 3600 for 1983 and 180 @ 3600 for 1987, so the 1984-86 rating cannot be inferred; Wikipedia only says 'up to 180 hp'. No year-specific source found.",
+    "hp_sources": 0
+   }
+  ],
+  "1987": [
+   {
+    "gen": "panther1",
+    "cid": 302,
+    "hp": 150,
+    "hp_basis": "SAE net",
+    "rpo": "Windsor 5.0",
+    "common_name": "5.0 (302) V8 SEFI",
+    "trims": [
+     "standard"
+    ],
+    "nhra": false,
+    "sources": [
+     {
+      "name": "Ford 1987 LTD Crown Victoria brochure (Ford Heritage Vault)",
+      "url": "https://fordheritagevault.com/ (record uuid ea9628f72e4f4387b883d6012968cb67)",
+      "says": "5.0 liter V-8 engine with SEFI"
+     },
+     {
+      "name": "Wikipedia - Ford LTD Crown Victoria",
+      "url": "https://en.wikipedia.org/wiki/Ford_LTD_Crown_Victoria",
+      "says": "1986: Sequential-Fire multiport EFI raises output to 150 hp; 1991: 150 hp 5.0 standard"
+     },
+     {
+      "name": "EPA fueleconomy.gov vehicle data",
+      "url": "https://www.fueleconomy.gov/feg/download.shtml",
+      "says": "1987: 5.0 L V8 LTD Crown Victoria"
+     }
+    ],
+    "independent_sources": 3,
+    "status": "three_sources_not_nhra",
+    "note": "HP 150 from Wikipedia only (GMN context 150@3200).",
+    "hp_sources": 1
+   },
+   {
+    "gen": "panther1",
+    "cid": 351,
+    "hp": 180,
+    "hp_basis": "SAE net",
+    "rpo": "Windsor 351 HO",
+    "common_name": "5.8 (351) HO V8 VV carb (police)",
+    "trims": [
+     "Police Interceptor"
+    ],
+    "nhra": false,
+    "sources": [
+     {
+      "name": "Wikipedia - Ford LTD Crown Victoria",
+      "url": "https://en.wikipedia.org/wiki/Ford_LTD_Crown_Victoria",
+      "says": "5.8 L restricted to fleet/police 1983-91; 180 hp in 1991"
+     },
+     {
+      "name": "EPA fueleconomy.gov vehicle data",
+      "url": "https://www.fueleconomy.gov/feg/download.shtml",
+      "says": "1987: 5.8 L V8 LTD Crown Victoria (POLICE)"
+     },
+     {
+      "name": "Michigan State Police - 1987 Model Year Patrol Vehicle Testing (NCJ 104406)",
+      "url": "https://www.ojp.gov/pdffiles1/Digitization/104406NCJRS.pdf",
+      "says": "Ford Crown Vic. P73 police, 351 5.8L variable venturi, dual exhaust: 180 @ 3600 SAE net, 285 lb-ft @ 2400"
+     }
+    ],
+    "independent_sources": 3,
+    "status": "three_sources_not_nhra",
+    "note": "[v2] Michigan State Police 1987 report: 180 @ 3600 for the P73 police 351 VV H.O.; Wikipedia gives 'up to 180'. EPA confirms availability.",
+    "hp_sources": 2
+   },
+   {
+    "gen": "panther1",
+    "cid": 302,
+    "hp": 160,
+    "hp_basis": "SAE net",
+    "rpo": "Windsor 5.0 SEFI",
+    "common_name": "5.0 (302) V8 SEFI, police dual exhaust",
+    "trims": [
+     "Police package"
+    ],
+    "nhra": false,
+    "sources": [
+     {
+      "name": "Michigan State Police - 1987 Model Year Patrol Vehicle Testing (NCJ 104406)",
+      "url": "https://www.ojp.gov/pdffiles1/Digitization/104406NCJRS.pdf",
+      "says": "Ford Crown Vic. P73 police, 302 5.0L multi-port fuel injection, dual exhaust: 160 @ 3400 SAE net, 280 lb-ft @ 2200"
+     },
+     {
+      "name": "EPA fueleconomy.gov vehicle data",
+      "url": "https://www.fueleconomy.gov/feg/download.shtml",
+      "says": "1987 LTD Crown Victoria 5.0 L V8 listed (generic)"
+     }
+    ],
+    "independent_sources": 2,
+    "status": "two_sources_agree",
+    "hp_sources": 1,
+    "note": "[v2] New row. The MSP 1987 test car was a P73 police Crown Victoria with the dual-exhaust 5.0 rated 160 @ 3400 (the rating Ford's 1988-91 police sheets give). EPA confirms the 5.0 only generically. HP from one reputable source."
+   }
+  ],
+  "1988": [
+   {
+    "gen": "panther1",
+    "cid": 302,
+    "hp": 150,
+    "hp_basis": "SAE net",
+    "rpo": "Windsor 5.0",
+    "common_name": "5.0 (302) V8 SEFI",
+    "trims": [
+     "standard"
+    ],
+    "nhra": false,
+    "sources": [
+     {
+      "name": "Ford 1988 LTD Crown Victoria brochure (Ford Heritage Vault)",
+      "url": "https://fordheritagevault.com/ (record uuid b67d833b533842698a2331a0694a396c)",
+      "says": "5.0 liter V-8 engine with sequential fuel injection"
+     },
+     {
+      "name": "Wikipedia - Ford LTD Crown Victoria",
+      "url": "https://en.wikipedia.org/wiki/Ford_LTD_Crown_Victoria",
+      "says": "1986: Sequential-Fire multiport EFI raises output to 150 hp; 1991: 150 hp 5.0 standard"
+     },
+     {
+      "name": "EPA fueleconomy.gov vehicle data",
+      "url": "https://www.fueleconomy.gov/feg/download.shtml",
+      "says": "1988: 5.0 L V8 LTD Crown Victoria"
+     }
+    ],
+    "independent_sources": 3,
+    "status": "three_sources_not_nhra",
+    "note": "HP 150 from Wikipedia only (GMN context 150@3200).",
+    "hp_sources": 1
+   },
+   {
+    "gen": "panther1",
+    "cid": 302,
+    "hp": 160,
+    "hp_basis": "SAE net",
+    "rpo": "Windsor 5.0",
+    "common_name": "5.0 (302) V8 SEFI, police dual exhaust",
+    "trims": [
+     "Police Interceptor"
+    ],
+    "nhra": false,
+    "sources": [
+     {
+      "name": "Ford 1988 LTD Crown Victoria Police Package brochure (Ford Heritage Vault)",
+      "url": "https://fordheritagevault.com/ (record uuid 50db2a0f58024e27b13e5df7618693c3)",
+      "says": "Police Package: 5.0L SEFI V-8 standard, 160 hp @3400, dual exhaust"
+     },
+     {
+      "name": "Wikipedia - Ford LTD Crown Victoria",
+      "url": "https://en.wikipedia.org/wiki/Ford_LTD_Crown_Victoria",
+      "says": "police package standard engine 5.0 L V8"
+     },
+     {
+      "name": "EPA fueleconomy.gov vehicle data",
+      "url": "https://www.fueleconomy.gov/feg/download.shtml",
+      "says": "1988: 5.0 L V8 LTD Crown Victoria"
+     }
+    ],
+    "independent_sources": 3,
+    "status": "three_sources_not_nhra",
+    "note": "HP 160 from Ford only (Wikipedia: dual exhaust adds 10 hp to 150).",
+    "hp_sources": 1
+   },
+   {
+    "gen": "panther1",
+    "cid": 351,
+    "hp": 180,
+    "hp_basis": "SAE net",
+    "rpo": "Windsor 351 HO",
+    "common_name": "5.8 (351) HO V8 VV carb (police)",
+    "trims": [
+     "Police Interceptor"
+    ],
+    "nhra": false,
+    "sources": [
+     {
+      "name": "Ford 1988 LTD Crown Victoria Police Package brochure (Ford Heritage Vault)",
+      "url": "https://fordheritagevault.com/ (record uuid 50db2a0f58024e27b13e5df7618693c3)",
+      "says": "5.8L (351 CID) High Output VV V-8 optional, 180 hp @3600 (law-enforcement only, gas-guzzler exemption)"
+     },
+     {
+      "name": "Wikipedia - Ford LTD Crown Victoria",
+      "url": "https://en.wikipedia.org/wiki/Ford_LTD_Crown_Victoria",
+      "says": "5.8 L restricted to fleet/police 1983-91; 180 hp in 1991"
+     },
+     {
+      "name": "EPA fueleconomy.gov vehicle data",
+      "url": "https://www.fueleconomy.gov/feg/download.shtml",
+      "says": "1988: 5.8 L V8 LTD Crown Victoria (POLICE)"
+     }
+    ],
+    "independent_sources": 3,
+    "status": "three_sources_not_nhra",
+    "note": "Wikipedia: also sold at retail in Canada.",
+    "hp_sources": 2
+   }
+  ],
+  "1989": [
+   {
+    "gen": "panther1",
+    "cid": 302,
+    "hp": 150,
+    "hp_basis": "SAE net",
+    "rpo": "Windsor 5.0",
+    "common_name": "5.0 (302) V8 SEFI",
+    "trims": [
+     "standard"
+    ],
+    "nhra": false,
+    "sources": [
+     {
+      "name": "Ford 1989 LTD Crown Victoria brochure (Ford Heritage Vault)",
+      "url": "https://fordheritagevault.com/ (record uuid 31454d9ff2a64a02ab1b781ccb65a1da)",
+      "says": "5.0 liter V-8 engine with sequential fuel injection"
+     },
+     {
+      "name": "Wikipedia - Ford LTD Crown Victoria",
+      "url": "https://en.wikipedia.org/wiki/Ford_LTD_Crown_Victoria",
+      "says": "1986: Sequential-Fire multiport EFI raises output to 150 hp; 1991: 150 hp 5.0 standard"
+     },
+     {
+      "name": "EPA fueleconomy.gov vehicle data",
+      "url": "https://www.fueleconomy.gov/feg/download.shtml",
+      "says": "1989: 5.0 L V8 LTD Crown Victoria"
+     }
+    ],
+    "independent_sources": 3,
+    "status": "three_sources_not_nhra",
+    "note": "HP 150 from Wikipedia only (GMN context 150@3200).",
+    "hp_sources": 1
+   },
+   {
+    "gen": "panther1",
+    "cid": 302,
+    "hp": 160,
+    "hp_basis": "SAE net",
+    "rpo": "Windsor 5.0",
+    "common_name": "5.0 (302) V8 SEFI, police dual exhaust",
+    "trims": [
+     "Police Interceptor"
+    ],
+    "nhra": false,
+    "sources": [
+     {
+      "name": "Ford 1989 LTD Crown Victoria Police Packages brochure (Ford Heritage Vault)",
+      "url": "https://fordheritagevault.com/ (record uuid 6fc3c05977d04f9fae4d42166e6523ec)",
+      "says": "Police Package: 5.0L SEFI V-8 standard, 160 hp @3400, dual exhaust"
+     },
+     {
+      "name": "Wikipedia - Ford LTD Crown Victoria",
+      "url": "https://en.wikipedia.org/wiki/Ford_LTD_Crown_Victoria",
+      "says": "police package standard engine 5.0 L V8"
+     },
+     {
+      "name": "EPA fueleconomy.gov vehicle data",
+      "url": "https://www.fueleconomy.gov/feg/download.shtml",
+      "says": "1989: 5.0 L V8 LTD Crown Victoria"
+     }
+    ],
+    "independent_sources": 3,
+    "status": "three_sources_not_nhra",
+    "note": "HP 160 from Ford only (Wikipedia: dual exhaust adds 10 hp to 150).",
+    "hp_sources": 1
+   },
+   {
+    "gen": "panther1",
+    "cid": 351,
+    "hp": 180,
+    "hp_basis": "SAE net",
+    "rpo": "Windsor 351 HO",
+    "common_name": "5.8 (351) HO V8 VV carb (police)",
+    "trims": [
+     "Police Interceptor"
+    ],
+    "nhra": false,
+    "sources": [
+     {
+      "name": "Ford 1989 LTD Crown Victoria Police Packages brochure (Ford Heritage Vault)",
+      "url": "https://fordheritagevault.com/ (record uuid 6fc3c05977d04f9fae4d42166e6523ec)",
+      "says": "5.8L (351 CID) High Output VV V-8 optional, 180 hp @3600 (law-enforcement only, gas-guzzler exemption)"
+     },
+     {
+      "name": "Wikipedia - Ford LTD Crown Victoria",
+      "url": "https://en.wikipedia.org/wiki/Ford_LTD_Crown_Victoria",
+      "says": "5.8 L restricted to fleet/police 1983-91; 180 hp in 1991"
+     },
+     {
+      "name": "EPA fueleconomy.gov vehicle data",
+      "url": "https://www.fueleconomy.gov/feg/download.shtml",
+      "says": "1989: 5.8 L V8 LTD Crown Victoria (POLICE)"
+     }
+    ],
+    "independent_sources": 3,
+    "status": "three_sources_not_nhra",
+    "note": "Wikipedia: also sold at retail in Canada.",
+    "hp_sources": 2
+   }
+  ],
+  "1990": [
+   {
+    "gen": "panther1",
+    "cid": 302,
+    "hp": 150,
+    "hp_basis": "SAE net",
+    "rpo": "Windsor 5.0",
+    "common_name": "5.0 (302) V8 SEFI",
+    "trims": [
+     "standard"
+    ],
+    "nhra": false,
+    "sources": [
+     {
+      "name": "Ford 1990 LTD Crown Victoria brochure (Ford Heritage Vault)",
+      "url": "https://fordheritagevault.com/ (record uuid 95fe2a4c24da46bf98c19b18d122c67e)",
+      "says": "5.0 liter V-8 engine with sequential fuel injection"
+     },
+     {
+      "name": "Wikipedia - Ford LTD Crown Victoria",
+      "url": "https://en.wikipedia.org/wiki/Ford_LTD_Crown_Victoria",
+      "says": "1986: Sequential-Fire multiport EFI raises output to 150 hp; 1991: 150 hp 5.0 standard"
+     },
+     {
+      "name": "EPA fueleconomy.gov vehicle data",
+      "url": "https://www.fueleconomy.gov/feg/download.shtml",
+      "says": "1990: 5.0 L V8 LTD Crown Victoria"
+     }
+    ],
+    "independent_sources": 3,
+    "status": "three_sources_not_nhra",
+    "note": "HP 150 from Wikipedia only (GMN context 150@3200).",
+    "hp_sources": 1
+   },
+   {
+    "gen": "panther1",
+    "cid": 302,
+    "hp": 160,
+    "hp_basis": "SAE net",
+    "rpo": "Windsor 5.0",
+    "common_name": "5.0 (302) V8 SEFI, dual exhaust",
+    "trims": [
+     "optional dual exhaust (trailer towing pkg)"
+    ],
+    "nhra": false,
+    "sources": [
+     {
+      "name": "Ford 1990 LTD Crown Victoria brochure (Ford Heritage Vault)",
+      "url": "https://fordheritagevault.com/ (record uuid 95fe2a4c24da46bf98c19b18d122c67e)",
+      "says": "trailer towing package includes dual exhaust system"
+     },
+     {
+      "name": "Wikipedia - Ford LTD Crown Victoria",
+      "url": "https://en.wikipedia.org/wiki/Ford_LTD_Crown_Victoria",
+      "says": "dual-exhaust option introduced for 1990, adding 10 hp"
+     }
+    ],
+    "independent_sources": 2,
+    "status": "two_sources_agree",
+    "note": "Ford retail brochure confirms the dual-exhaust option (no HP); 160 = Wikipedia 150+10, and Ford police sheets rate the dual-exhaust 5.0 at 160. Ford's 1989 retail brochure already lists dual exhaust in the towing package, a year before Wikipedia's 1990. [v2] Partial support: MSP 1987 rates the police dual-exhaust 5.0 SEFI at 160 @ 3400 (150 + 10, arithmetic consistent).",
+    "hp_sources": 2
+   },
+   {
+    "gen": "panther1",
+    "cid": 302,
+    "hp": 160,
+    "hp_basis": "SAE net",
+    "rpo": "Windsor 5.0",
+    "common_name": "5.0 (302) V8 SEFI, police dual exhaust",
+    "trims": [
+     "Police Interceptor"
+    ],
+    "nhra": false,
+    "sources": [
+     {
+      "name": "Wikipedia - Ford LTD Crown Victoria",
+      "url": "https://en.wikipedia.org/wiki/Ford_LTD_Crown_Victoria",
+      "says": "police package standard engine 5.0 L; dual exhaust +10 hp"
+     },
+     {
+      "name": "EPA fueleconomy.gov vehicle data",
+      "url": "https://www.fueleconomy.gov/feg/download.shtml",
+      "says": "1990: 5.0 L V8 LTD Crown Victoria"
+     }
+    ],
+    "independent_sources": 2,
+    "status": "two_sources_agree",
+    "note": "No 1990 Ford police sheet found; 1989 and 1991 Ford sheets both give 160. [v2] Partial support: MSP 1987 rates the police dual-exhaust 5.0 SEFI at 160 @ 3400 (150 + 10, arithmetic consistent).",
+    "hp_sources": 1
+   },
+   {
+    "gen": "panther1",
+    "cid": 351,
+    "hp": 180,
+    "hp_basis": "SAE net",
+    "rpo": "Windsor 351 HO",
+    "common_name": "5.8 (351) HO V8 VV carb (police)",
+    "trims": [
+     "Police Interceptor"
+    ],
+    "nhra": false,
+    "sources": [
+     {
+      "name": "Wikipedia - Ford LTD Crown Victoria",
+      "url": "https://en.wikipedia.org/wiki/Ford_LTD_Crown_Victoria",
+      "says": "5.8 L restricted to fleet/police 1983-91; 180 hp in 1991"
+     },
+     {
+      "name": "EPA fueleconomy.gov vehicle data",
+      "url": "https://www.fueleconomy.gov/feg/download.shtml",
+      "says": "1990: 5.8 L V8 LTD Crown Victoria (POLICE)"
+     }
+    ],
+    "independent_sources": 2,
+    "status": "two_sources_agree",
+    "note": "Availability confirmed by EPA + Wikipedia; 180 hp confirmed by Ford only for 1988, 1989 and 1991 (GMN context gives 180 for 1984-91). Wikipedia's 1984 \"155 hp optional\" is probably the 5.0 dual exhaust. Wikipedia: also sold at retail in Canada. [v2] Ford police sheets give 180 for 1988, 1989 and 1991 and MSP gives 180 for 1987, so 180 for 1990 is consistent; no 1990-specific rating found.",
+    "hp_sources": 0
+   }
+  ],
+  "1991": [
+   {
+    "gen": "panther1",
+    "cid": 302,
+    "hp": 150,
+    "hp_basis": "SAE net",
+    "rpo": "Windsor 5.0",
+    "common_name": "5.0 (302) V8 SEFI",
+    "trims": [
+     "standard"
+    ],
+    "nhra": false,
+    "sources": [
+     {
+      "name": "Ford 1991 LTD Crown Victoria brochure (Ford Heritage Vault)",
+      "url": "https://fordheritagevault.com/ (record uuid 21436d4adfec4cc08dbd5aac65358fa3)",
+      "says": "5.0 liter V-8 engine with sequential fuel injection"
+     },
+     {
+      "name": "Wikipedia - Ford LTD Crown Victoria",
+      "url": "https://en.wikipedia.org/wiki/Ford_LTD_Crown_Victoria",
+      "says": "1986: Sequential-Fire multiport EFI raises output to 150 hp; 1991: 150 hp 5.0 standard"
+     },
+     {
+      "name": "EPA fueleconomy.gov vehicle data",
+      "url": "https://www.fueleconomy.gov/feg/download.shtml",
+      "says": "1991: 5.0 L V8 LTD Crown Victoria"
+     }
+    ],
+    "independent_sources": 3,
+    "status": "three_sources_not_nhra",
+    "note": "HP 150 from Wikipedia only (GMN context 150@3200).",
+    "hp_sources": 1
+   },
+   {
+    "gen": "panther1",
+    "cid": 302,
+    "hp": 160,
+    "hp_basis": "SAE net",
+    "rpo": "Windsor 5.0",
+    "common_name": "5.0 (302) V8 SEFI, dual exhaust",
+    "trims": [
+     "optional dual exhaust (trailer towing pkg)"
+    ],
+    "nhra": false,
+    "sources": [
+     {
+      "name": "Ford 1991 LTD Crown Victoria brochure (Ford Heritage Vault)",
+      "url": "https://fordheritagevault.com/ (record uuid 21436d4adfec4cc08dbd5aac65358fa3)",
+      "says": "trailer towing package includes dual exhaust system"
+     },
+     {
+      "name": "Wikipedia - Ford LTD Crown Victoria",
+      "url": "https://en.wikipedia.org/wiki/Ford_LTD_Crown_Victoria",
+      "says": "dual-exhaust option introduced for 1990, adding 10 hp"
+     }
+    ],
+    "independent_sources": 2,
+    "status": "two_sources_agree",
+    "note": "Ford retail brochure confirms the dual-exhaust option (no HP); 160 = Wikipedia 150+10, and Ford police sheets rate the dual-exhaust 5.0 at 160. Ford's 1989 retail brochure already lists dual exhaust in the towing package, a year before Wikipedia's 1990. [v2] Partial support: MSP 1987 rates the police dual-exhaust 5.0 SEFI at 160 @ 3400 (150 + 10, arithmetic consistent).",
+    "hp_sources": 2
+   },
+   {
+    "gen": "panther1",
+    "cid": 302,
+    "hp": 160,
+    "hp_basis": "SAE net",
+    "rpo": "Windsor 5.0",
+    "common_name": "5.0 (302) V8 SEFI, police dual exhaust",
+    "trims": [
+     "Police Interceptor"
+    ],
+    "nhra": false,
+    "sources": [
+     {
+      "name": "Ford 1991 LTD Crown Victoria Police Packages brochure (Ford Heritage Vault)",
+      "url": "https://fordheritagevault.com/ (record uuid 0d67e603afd34acca7feef09972fde47)",
+      "says": "Police Package: 5.0L SEFI V-8 standard, 160 hp @3400, dual exhaust"
+     },
+     {
+      "name": "Wikipedia - Ford LTD Crown Victoria",
+      "url": "https://en.wikipedia.org/wiki/Ford_LTD_Crown_Victoria",
+      "says": "police package standard engine 5.0 L V8"
+     },
+     {
+      "name": "EPA fueleconomy.gov vehicle data",
+      "url": "https://www.fueleconomy.gov/feg/download.shtml",
+      "says": "1991: 5.0 L V8 LTD Crown Victoria"
+     }
+    ],
+    "independent_sources": 3,
+    "status": "three_sources_not_nhra",
+    "note": "HP 160 from Ford only (Wikipedia: dual exhaust adds 10 hp to 150).",
+    "hp_sources": 1
+   },
+   {
+    "gen": "panther1",
+    "cid": 351,
+    "hp": 180,
+    "hp_basis": "SAE net",
+    "rpo": "Windsor 351 HO",
+    "common_name": "5.8 (351) HO V8 VV carb (police)",
+    "trims": [
+     "Police Interceptor"
+    ],
+    "nhra": false,
+    "sources": [
+     {
+      "name": "Ford 1991 LTD Crown Victoria Police Packages brochure (Ford Heritage Vault)",
+      "url": "https://fordheritagevault.com/ (record uuid 0d67e603afd34acca7feef09972fde47)",
+      "says": "5.8L (351 CID) High Output VV V-8 optional, 180 hp @3600 (law-enforcement only, gas-guzzler exemption)"
+     },
+     {
+      "name": "Wikipedia - Ford LTD Crown Victoria",
+      "url": "https://en.wikipedia.org/wiki/Ford_LTD_Crown_Victoria",
+      "says": "5.8 L restricted to fleet/police 1983-91; 180 hp in 1991"
+     },
+     {
+      "name": "EPA fueleconomy.gov vehicle data",
+      "url": "https://www.fueleconomy.gov/feg/download.shtml",
+      "says": "1991: 5.8 L V8 LTD Crown Victoria (POLICE)"
+     }
+    ],
+    "independent_sources": 3,
+    "status": "three_sources_not_nhra",
+    "note": "Wikipedia: also sold at retail in Canada.",
+    "hp_sources": 2
+   }
+  ],
+  "1992": [
+   {
+    "gen": "panther2",
+    "cid": 281,
+    "hp": 190,
+    "hp_basis": "SAE net",
+    "rpo": "Modular 4.6 SOHC",
+    "common_name": "4.6 SOHC 2V V8, single exhaust",
+    "trims": [
+     "base",
+     "LX"
+    ],
+    "nhra": false,
+    "sources": [
+     {
+      "name": "Ford 1992 Crown Victoria brochure (Ford Heritage Vault)",
+      "url": "https://fordheritagevault.com/ (record uuid 47baa518c4804650867bb0252d41e0ae)",
+      "says": "190 at 4,200 rpm; dual exhausts add 20 hp"
+     },
+     {
+      "name": "Wikipedia - Ford Crown Victoria (incl. horsepower/torque table)",
+      "url": "https://en.wikipedia.org/wiki/Ford_Crown_Victoria",
+      "says": "1992-1995: 190 hp single exhaust"
+     },
+     {
+      "name": "Consumer Guide - 1992-07 Ford Crown Victoria used-car review (incl. yearly pricing/equipment pages)",
+      "url": "https://consumerguide.com/used/1992-07-ford-crown-victoria/",
+      "says": "1992: new 4.6 OHC V8 190 hp (210 with dual exhausts); for 1998 base +10 hp, dual +5, so 190/210 through 1997"
+     },
+     {
+      "name": "EPA fueleconomy.gov vehicle data",
+      "url": "https://www.fueleconomy.gov/feg/download.shtml",
+      "says": "1992: 4.6 L V8 Crown Victoria"
+     }
+    ],
+    "independent_sources": 4,
+    "status": "three_sources_not_nhra",
+    "note": "",
+    "hp_sources": 3
+   },
+   {
+    "gen": "panther2",
+    "cid": 281,
+    "hp": 210,
+    "hp_basis": "SAE net",
+    "rpo": "Modular 4.6 SOHC",
+    "common_name": "4.6 SOHC 2V V8, dual exhaust",
+    "trims": [
+     "Handling & Performance pkg",
+     "Touring Sedan"
+    ],
+    "nhra": false,
+    "sources": [
+     {
+      "name": "Ford 1992 Crown Victoria brochure (Ford Heritage Vault)",
+      "url": "https://fordheritagevault.com/ (record uuid 47baa518c4804650867bb0252d41e0ae)",
+      "says": "190 at 4,200 rpm; dual exhausts add 20 hp"
+     },
+     {
+      "name": "Wikipedia - Ford Crown Victoria (incl. horsepower/torque table)",
+      "url": "https://en.wikipedia.org/wiki/Ford_Crown_Victoria",
+      "says": "1992-1995: 210 hp dual exhaust"
+     },
+     {
+      "name": "Consumer Guide - 1992-07 Ford Crown Victoria used-car review (incl. yearly pricing/equipment pages)",
+      "url": "https://consumerguide.com/used/1992-07-ford-crown-victoria/",
+      "says": "optional dual exhaust (handling/performance option): 210 hp"
+     }
+    ],
+    "independent_sources": 3,
+    "status": "three_sources_not_nhra",
+    "note": "",
+    "hp_sources": 3
+   },
+   {
+    "gen": "panther2",
+    "cid": 281,
+    "hp": 210,
+    "hp_basis": "SAE net",
+    "rpo": "Modular 4.6 SOHC",
+    "common_name": "4.6 SOHC 2V V8, police dual exhaust",
+    "trims": [
+     "Police Interceptor"
+    ],
+    "nhra": false,
+    "sources": [
+     {
+      "name": "Ford 1992 Crown Victoria Police Package brochure (Ford Heritage Vault)",
+      "url": "https://fordheritagevault.com/ (record uuid ee04574fc0b34627902c397a3b423826)",
+      "says": "4.6L (281 CID) 210 hp net @4600"
+     },
+     {
+      "name": "Wikipedia - Ford LTD Crown Victoria",
+      "url": "https://en.wikipedia.org/wiki/Ford_LTD_Crown_Victoria",
+      "says": "1992 P71: single 210 hp 4.6 L SOHC V8"
+     }
+    ],
+    "independent_sources": 2,
+    "status": "two_sources_agree",
+    "note": "",
+    "hp_sources": 2
+   }
+  ],
+  "1993": [
+   {
+    "gen": "panther2",
+    "cid": 281,
+    "hp": 190,
+    "hp_basis": "SAE net",
+    "rpo": "Modular 4.6 SOHC",
+    "common_name": "4.6 SOHC 2V V8, single exhaust",
+    "trims": [
+     "base",
+     "LX"
+    ],
+    "nhra": false,
+    "sources": [
+     {
+      "name": "Wikipedia - Ford Crown Victoria (incl. horsepower/torque table)",
+      "url": "https://en.wikipedia.org/wiki/Ford_Crown_Victoria",
+      "says": "1992-1995: 190 hp single exhaust"
+     },
+     {
+      "name": "Consumer Guide - 1992-07 Ford Crown Victoria used-car review (incl. yearly pricing/equipment pages)",
+      "url": "https://consumerguide.com/used/1992-07-ford-crown-victoria/",
+      "says": "1992: new 4.6 OHC V8 190 hp (210 with dual exhausts); for 1998 base +10 hp, dual +5, so 190/210 through 1997"
+     },
+     {
+      "name": "EPA fueleconomy.gov vehicle data",
+      "url": "https://www.fueleconomy.gov/feg/download.shtml",
+      "says": "1993: 4.6 L V8 Crown Victoria"
+     }
+    ],
+    "independent_sources": 3,
+    "status": "three_sources_not_nhra",
+    "note": "",
+    "hp_sources": 2
+   },
+   {
+    "gen": "panther2",
+    "cid": 281,
+    "hp": 210,
+    "hp_basis": "SAE net",
+    "rpo": "Modular 4.6 SOHC",
+    "common_name": "4.6 SOHC 2V V8, dual exhaust",
+    "trims": [
+     "Handling & Performance pkg"
+    ],
+    "nhra": false,
+    "sources": [
+     {
+      "name": "Wikipedia - Ford Crown Victoria (incl. horsepower/torque table)",
+      "url": "https://en.wikipedia.org/wiki/Ford_Crown_Victoria",
+      "says": "1992-1995: 210 hp dual exhaust"
+     },
+     {
+      "name": "Consumer Guide - 1992-07 Ford Crown Victoria used-car review (incl. yearly pricing/equipment pages)",
+      "url": "https://consumerguide.com/used/1992-07-ford-crown-victoria/",
+      "says": "optional dual exhaust (handling/performance option): 210 hp"
+     }
+    ],
+    "independent_sources": 2,
+    "status": "two_sources_agree",
+    "note": "No Ford retail brochure checked for this year.",
+    "hp_sources": 2
+   },
+   {
+    "gen": "panther2",
+    "cid": 281,
+    "hp": 210,
+    "hp_basis": "SAE net",
+    "rpo": "Modular 4.6 SOHC",
+    "common_name": "4.6 SOHC 2V V8, police dual exhaust",
+    "trims": [
+     "Police Interceptor"
+    ],
+    "nhra": false,
+    "sources": [
+     {
+      "name": "Ford 1993 Crown Victoria Interceptor Police Package brochure (Ford Heritage Vault)",
+      "url": "https://fordheritagevault.com/ (record uuid 2d0cf7bea3734254b7886dee09811deb)",
+      "says": "4.6L (281 CID) 210 hp net @4600"
+     },
+     {
+      "name": "Wikipedia - Ford Crown Victoria (incl. horsepower/torque table)",
+      "url": "https://en.wikipedia.org/wiki/Ford_Crown_Victoria",
+      "says": "dual-exhaust 4.6 rated 210 hp"
+     },
+     {
+      "name": "EPA fueleconomy.gov vehicle data",
+      "url": "https://www.fueleconomy.gov/feg/download.shtml",
+      "says": "1993: 4.6 L V8 Crown Victoria Police"
+     }
+    ],
+    "independent_sources": 3,
+    "status": "three_sources_not_nhra",
+    "note": "",
+    "hp_sources": 2
+   }
+  ],
+  "1994": [
+   {
+    "gen": "panther2",
+    "cid": 281,
+    "hp": 190,
+    "hp_basis": "SAE net",
+    "rpo": "Modular 4.6 SOHC",
+    "common_name": "4.6 SOHC 2V V8, single exhaust",
+    "trims": [
+     "base",
+     "LX"
+    ],
+    "nhra": true,
+    "sources": [
+     {
+      "name": "Ford 1994 Crown Victoria brochure (Ford Heritage Vault)",
+      "url": "https://fordheritagevault.com/ (record uuid a76a5e8b28c1456e9e32e671acc783d4)",
+      "says": "190 hp (SAE net) @4,200; 210 hp @4,600 with dual exhausts"
+     },
+     {
+      "name": "Wikipedia - Ford Crown Victoria (incl. horsepower/torque table)",
+      "url": "https://en.wikipedia.org/wiki/Ford_Crown_Victoria",
+      "says": "1992-1995: 190 hp single exhaust"
+     },
+     {
+      "name": "Consumer Guide - 1992-07 Ford Crown Victoria used-car review (incl. yearly pricing/equipment pages)",
+      "url": "https://consumerguide.com/used/1992-07-ford-crown-victoria/",
+      "says": "1992: new 4.6 OHC V8 190 hp (210 with dual exhausts); for 1998 base +10 hp, dual +5, so 190/210 through 1997"
+     },
+     {
+      "name": "EPA fueleconomy.gov vehicle data",
+      "url": "https://www.fueleconomy.gov/feg/download.shtml",
+      "says": "1994: 4.6 L V8 Crown Victoria"
+     },
+     {
+      "name": "NHRA Stock Car Classification Guide",
+      "url": "nhra_ford-crown-victoria-1980-2012.json",
+      "says": "1994 Crown Victoria: 281 ci / 190 hp"
+     }
+    ],
+    "independent_sources": 5,
+    "status": "confirmed",
+    "note": "",
+    "hp_sources": 4
+   },
+   {
+    "gen": "panther2",
+    "cid": 281,
+    "hp": 210,
+    "hp_basis": "SAE net",
+    "rpo": "Modular 4.6 SOHC",
+    "common_name": "4.6 SOHC 2V V8, dual exhaust",
+    "trims": [
+     "Handling & Performance pkg"
+    ],
+    "nhra": true,
+    "sources": [
+     {
+      "name": "Ford 1994 Crown Victoria brochure (Ford Heritage Vault)",
+      "url": "https://fordheritagevault.com/ (record uuid a76a5e8b28c1456e9e32e671acc783d4)",
+      "says": "190 hp (SAE net) @4,200; 210 hp @4,600 with dual exhausts"
+     },
+     {
+      "name": "Wikipedia - Ford Crown Victoria (incl. horsepower/torque table)",
+      "url": "https://en.wikipedia.org/wiki/Ford_Crown_Victoria",
+      "says": "1992-1995: 210 hp dual exhaust"
+     },
+     {
+      "name": "Consumer Guide - 1992-07 Ford Crown Victoria used-car review (incl. yearly pricing/equipment pages)",
+      "url": "https://consumerguide.com/used/1992-07-ford-crown-victoria/",
+      "says": "optional dual exhaust (handling/performance option): 210 hp"
+     },
+     {
+      "name": "NHRA Stock Car Classification Guide",
+      "url": "nhra_ford-crown-victoria-1980-2012.json",
+      "says": "1994 Crown Victoria: 281 ci / 210 hp"
+     }
+    ],
+    "independent_sources": 4,
+    "status": "confirmed",
+    "note": "",
+    "hp_sources": 4
+   },
+   {
+    "gen": "panther2",
+    "cid": 281,
+    "hp": 210,
+    "hp_basis": "SAE net",
+    "rpo": "Modular 4.6 SOHC",
+    "common_name": "4.6 SOHC 2V V8, police dual exhaust",
+    "trims": [
+     "Police Interceptor"
+    ],
+    "nhra": false,
+    "sources": [
+     {
+      "name": "Ford 1994 Crown Victoria Interceptor Police Package brochure (Ford Heritage Vault)",
+      "url": "https://fordheritagevault.com/ (record uuid f40bc531b3664113953daf04a0e34d23)",
+      "says": "4.6L (281 CID) 210 hp net @4600"
+     },
+     {
+      "name": "Wikipedia - Ford Crown Victoria (incl. horsepower/torque table)",
+      "url": "https://en.wikipedia.org/wiki/Ford_Crown_Victoria",
+      "says": "dual-exhaust 4.6 rated 210 hp"
+     },
+     {
+      "name": "EPA fueleconomy.gov vehicle data",
+      "url": "https://www.fueleconomy.gov/feg/download.shtml",
+      "says": "1994: 4.6 L V8 Crown Victoria Police"
+     }
+    ],
+    "independent_sources": 3,
+    "status": "three_sources_not_nhra",
+    "note": "",
+    "hp_sources": 2
+   }
+  ],
+  "1995": [
+   {
+    "gen": "panther2",
+    "cid": 281,
+    "hp": 190,
+    "hp_basis": "SAE net",
+    "rpo": "Modular 4.6 SOHC",
+    "common_name": "4.6 SOHC 2V V8, single exhaust",
+    "trims": [
+     "base",
+     "LX"
+    ],
+    "nhra": false,
+    "sources": [
+     {
+      "name": "Ford 1995 Crown Victoria brochure (Ford Heritage Vault)",
+      "url": "https://fordheritagevault.com/ (record uuid 7294b98cace8471d9b16722fa3234460)",
+      "says": "190 hp (SAE net); 210 hp @4,250 with dual exhausts"
+     },
+     {
+      "name": "Wikipedia - Ford Crown Victoria (incl. horsepower/torque table)",
+      "url": "https://en.wikipedia.org/wiki/Ford_Crown_Victoria",
+      "says": "1992-1995: 190 hp single exhaust"
+     },
+     {
+      "name": "Consumer Guide - 1992-07 Ford Crown Victoria used-car review (incl. yearly pricing/equipment pages)",
+      "url": "https://consumerguide.com/used/1992-07-ford-crown-victoria/",
+      "says": "1992: new 4.6 OHC V8 190 hp (210 with dual exhausts); for 1998 base +10 hp, dual +5, so 190/210 through 1997"
+     },
+     {
+      "name": "EPA fueleconomy.gov vehicle data",
+      "url": "https://www.fueleconomy.gov/feg/download.shtml",
+      "says": "1995: 4.6 L V8 Crown Victoria"
+     }
+    ],
+    "independent_sources": 4,
+    "status": "three_sources_not_nhra",
+    "note": "",
+    "hp_sources": 3
+   },
+   {
+    "gen": "panther2",
+    "cid": 281,
+    "hp": 210,
+    "hp_basis": "SAE net",
+    "rpo": "Modular 4.6 SOHC",
+    "common_name": "4.6 SOHC 2V V8, dual exhaust",
+    "trims": [
+     "Handling & Performance pkg"
+    ],
+    "nhra": true,
+    "sources": [
+     {
+      "name": "Ford 1995 Crown Victoria brochure (Ford Heritage Vault)",
+      "url": "https://fordheritagevault.com/ (record uuid 7294b98cace8471d9b16722fa3234460)",
+      "says": "190 hp (SAE net); 210 hp @4,250 with dual exhausts"
+     },
+     {
+      "name": "Wikipedia - Ford Crown Victoria (incl. horsepower/torque table)",
+      "url": "https://en.wikipedia.org/wiki/Ford_Crown_Victoria",
+      "says": "1992-1995: 210 hp dual exhaust"
+     },
+     {
+      "name": "Consumer Guide - 1992-07 Ford Crown Victoria used-car review (incl. yearly pricing/equipment pages)",
+      "url": "https://consumerguide.com/used/1992-07-ford-crown-victoria/",
+      "says": "optional dual exhaust (handling/performance option): 210 hp"
+     },
+     {
+      "name": "NHRA Stock Car Classification Guide",
+      "url": "nhra_ford-crown-victoria-1980-2012.json",
+      "says": "1995 Crown Victoria: 281 ci / 210 hp"
+     }
+    ],
+    "independent_sources": 4,
+    "status": "confirmed",
+    "note": "",
+    "hp_sources": 4
+   },
+   {
+    "gen": "panther2",
+    "cid": 281,
+    "hp": 210,
+    "hp_basis": "SAE net",
+    "rpo": "Modular 4.6 SOHC",
+    "common_name": "4.6 SOHC 2V V8, police dual exhaust",
+    "trims": [
+     "Police Interceptor"
+    ],
+    "nhra": false,
+    "sources": [
+     {
+      "name": "Wikipedia - Ford Crown Victoria (incl. horsepower/torque table)",
+      "url": "https://en.wikipedia.org/wiki/Ford_Crown_Victoria",
+      "says": "dual-exhaust 4.6 rated 210 hp"
+     },
+     {
+      "name": "EPA fueleconomy.gov vehicle data",
+      "url": "https://www.fueleconomy.gov/feg/download.shtml",
+      "says": "1995: 4.6 L V8 Crown Victoria Police"
+     }
+    ],
+    "independent_sources": 2,
+    "status": "two_sources_agree",
+    "note": "No Ford HP figure for this police year; 210 = the dual-exhaust rating (police cars have dual exhaust).",
+    "hp_sources": 1
+   }
+  ],
+  "1996": [
+   {
+    "gen": "panther2",
+    "cid": 281,
+    "hp": 190,
+    "hp_basis": "SAE net",
+    "rpo": "Modular 4.6 SOHC",
+    "common_name": "4.6 SOHC 2V V8, single exhaust",
+    "trims": [
+     "base",
+     "LX"
+    ],
+    "nhra": false,
+    "sources": [
+     {
+      "name": "Ford 1996 Crown Victoria brochure (Ford Heritage Vault)",
+      "url": "https://fordheritagevault.com/ (record uuid e111ad9d8b664f91a5ade15ad3066780)",
+      "says": "190 hp (SAE net); 210 hp @4,250 w/dual exhausts"
+     },
+     {
+      "name": "Wikipedia - Ford Crown Victoria (incl. horsepower/torque table)",
+      "url": "https://en.wikipedia.org/wiki/Ford_Crown_Victoria",
+      "says": "1996-1997: 190 hp single exhaust"
+     },
+     {
+      "name": "Consumer Guide - 1992-07 Ford Crown Victoria used-car review (incl. yearly pricing/equipment pages)",
+      "url": "https://consumerguide.com/used/1992-07-ford-crown-victoria/",
+      "says": "1992: new 4.6 OHC V8 190 hp (210 with dual exhausts); for 1998 base +10 hp, dual +5, so 190/210 through 1997"
+     },
+     {
+      "name": "EPA fueleconomy.gov vehicle data",
+      "url": "https://www.fueleconomy.gov/feg/download.shtml",
+      "says": "1996: 4.6 L V8 Crown Victoria"
+     }
+    ],
+    "independent_sources": 4,
+    "status": "three_sources_not_nhra",
+    "note": "",
+    "hp_sources": 3
+   },
+   {
+    "gen": "panther2",
+    "cid": 281,
+    "hp": 210,
+    "hp_basis": "SAE net",
+    "rpo": "Modular 4.6 SOHC",
+    "common_name": "4.6 SOHC 2V V8, dual exhaust",
+    "trims": [
+     "Handling & Performance pkg"
+    ],
+    "nhra": false,
+    "sources": [
+     {
+      "name": "Ford 1996 Crown Victoria brochure (Ford Heritage Vault)",
+      "url": "https://fordheritagevault.com/ (record uuid e111ad9d8b664f91a5ade15ad3066780)",
+      "says": "190 hp (SAE net); 210 hp @4,250 w/dual exhausts"
+     },
+     {
+      "name": "Wikipedia - Ford Crown Victoria (incl. horsepower/torque table)",
+      "url": "https://en.wikipedia.org/wiki/Ford_Crown_Victoria",
+      "says": "1996-1997: 210 hp dual exhaust"
+     },
+     {
+      "name": "Consumer Guide - 1992-07 Ford Crown Victoria used-car review (incl. yearly pricing/equipment pages)",
+      "url": "https://consumerguide.com/used/1992-07-ford-crown-victoria/",
+      "says": "optional dual exhaust (handling/performance option): 210 hp"
+     }
+    ],
+    "independent_sources": 3,
+    "status": "three_sources_not_nhra",
+    "note": "",
+    "hp_sources": 3
+   },
+   {
+    "gen": "panther2",
+    "cid": 281,
+    "hp": 210,
+    "hp_basis": "SAE net",
+    "rpo": "Modular 4.6 SOHC",
+    "common_name": "4.6 SOHC 2V V8, police dual exhaust",
+    "trims": [
+     "Police Interceptor"
+    ],
+    "nhra": false,
+    "sources": [
+     {
+      "name": "Ford 1996 Crown Victoria Interceptor Police Packages brochure (Ford Heritage Vault)",
+      "url": "https://fordheritagevault.com/ (record uuid 11989257bbec4a4481f755c898935dc5)",
+      "says": "police packages brochure: gasoline 4.6L V8 (HP shown as TBD)"
+     },
+     {
+      "name": "Wikipedia - Ford Crown Victoria (incl. horsepower/torque table)",
+      "url": "https://en.wikipedia.org/wiki/Ford_Crown_Victoria",
+      "says": "dual-exhaust 4.6 rated 210 hp"
+     },
+     {
+      "name": "EPA fueleconomy.gov vehicle data",
+      "url": "https://www.fueleconomy.gov/feg/download.shtml",
+      "says": "1996: 4.6 L V8 Crown Victoria Police"
+     }
+    ],
+    "independent_sources": 3,
+    "status": "three_sources_not_nhra",
+    "note": "No Ford HP figure for this police year; 210 = the dual-exhaust rating (police cars have dual exhaust).",
+    "hp_sources": 1
+   },
+   {
+    "gen": "panther2",
+    "cid": 281,
+    "hp": null,
+    "hp_basis": "SAE net",
+    "rpo": "Modular 4.6 SOHC CNG",
+    "common_name": "4.6 SOHC dedicated natural gas (CNG/NGV)",
+    "trims": [
+     "Natural Gas Vehicle (fleet/police)"
+    ],
+    "nhra": false,
+    "sources": [
+     {
+      "name": "Ford 1996 Crown Victoria Interceptor Police Packages brochure (Ford Heritage Vault)",
+      "url": "https://fordheritagevault.com/ (record uuid 11989257bbec4a4481f755c898935dc5)",
+      "says": "Engine, 4.6L dedicated Natural Gas Vehicle engine; 10.0:1 compression; HP TBD"
+     },
+     {
+      "name": "EPA fueleconomy.gov vehicle data",
+      "url": "https://www.fueleconomy.gov/feg/download.shtml",
+      "says": "1996: 4.6 L V8 Crown Victoria CNG"
+     }
+    ],
+    "independent_sources": 2,
+    "status": "two_sources_agree",
+    "note": "HP not published (Ford: TBD).",
+    "hp_sources": 0
+   }
+  ],
+  "1997": [
+   {
+    "gen": "panther2",
+    "cid": 281,
+    "hp": 190,
+    "hp_basis": "SAE net",
+    "rpo": "Modular 4.6 SOHC",
+    "common_name": "4.6 SOHC 2V V8, single exhaust",
+    "trims": [
+     "base",
+     "LX"
+    ],
+    "nhra": false,
+    "sources": [
+     {
+      "name": "Wikipedia - Ford Crown Victoria (incl. horsepower/torque table)",
+      "url": "https://en.wikipedia.org/wiki/Ford_Crown_Victoria",
+      "says": "1996-1997: 190 hp single exhaust"
+     },
+     {
+      "name": "Consumer Guide - 1992-07 Ford Crown Victoria used-car review (incl. yearly pricing/equipment pages)",
+      "url": "https://consumerguide.com/used/1992-07-ford-crown-victoria/",
+      "says": "1992: new 4.6 OHC V8 190 hp (210 with dual exhausts); for 1998 base +10 hp, dual +5, so 190/210 through 1997"
+     },
+     {
+      "name": "EPA fueleconomy.gov vehicle data",
+      "url": "https://www.fueleconomy.gov/feg/download.shtml",
+      "says": "1997: 4.6 L V8 Crown Victoria"
+     }
+    ],
+    "independent_sources": 3,
+    "status": "three_sources_not_nhra",
+    "note": "",
+    "hp_sources": 2
+   },
+   {
+    "gen": "panther2",
+    "cid": 281,
+    "hp": 210,
+    "hp_basis": "SAE net",
+    "rpo": "Modular 4.6 SOHC",
+    "common_name": "4.6 SOHC 2V V8, dual exhaust",
+    "trims": [
+     "Handling & Performance pkg"
+    ],
+    "nhra": false,
+    "sources": [
+     {
+      "name": "Ford 1997 Crown Victoria brochure (Ford Heritage Vault)",
+      "url": "https://fordheritagevault.com/ (record uuid 851af295d87a4394aeadc0f3b23f962a)",
+      "says": "dual exhausts and a 210-horsepower engine in the optional handling and performance package"
+     },
+     {
+      "name": "Wikipedia - Ford Crown Victoria (incl. horsepower/torque table)",
+      "url": "https://en.wikipedia.org/wiki/Ford_Crown_Victoria",
+      "says": "1996-1997: 210 hp dual exhaust"
+     },
+     {
+      "name": "Consumer Guide - 1992-07 Ford Crown Victoria used-car review (incl. yearly pricing/equipment pages)",
+      "url": "https://consumerguide.com/used/1992-07-ford-crown-victoria/",
+      "says": "optional dual exhaust (handling/performance option): 210 hp"
+     }
+    ],
+    "independent_sources": 3,
+    "status": "three_sources_not_nhra",
+    "note": "",
+    "hp_sources": 3
+   },
+   {
+    "gen": "panther2",
+    "cid": 281,
+    "hp": 210,
+    "hp_basis": "SAE net",
+    "rpo": "Modular 4.6 SOHC",
+    "common_name": "4.6 SOHC 2V V8, police dual exhaust",
+    "trims": [
+     "Police Interceptor"
+    ],
+    "nhra": false,
+    "sources": [
+     {
+      "name": "Wikipedia - Ford Crown Victoria (incl. horsepower/torque table)",
+      "url": "https://en.wikipedia.org/wiki/Ford_Crown_Victoria",
+      "says": "dual-exhaust 4.6 rated 210 hp"
+     },
+     {
+      "name": "EPA fueleconomy.gov vehicle data",
+      "url": "https://www.fueleconomy.gov/feg/download.shtml",
+      "says": "1997: 4.6 L V8 Crown Victoria Police"
+     }
+    ],
+    "independent_sources": 2,
+    "status": "two_sources_agree",
+    "note": "No Ford HP figure for this police year; 210 = the dual-exhaust rating (police cars have dual exhaust).",
+    "hp_sources": 1
+   },
+   {
+    "gen": "panther2",
+    "cid": 281,
+    "hp": null,
+    "hp_basis": "SAE net",
+    "rpo": "Modular 4.6 SOHC CNG",
+    "common_name": "4.6 SOHC dedicated natural gas (CNG/NGV)",
+    "trims": [
+     "Natural Gas Vehicle (fleet/police)"
+    ],
+    "nhra": false,
+    "sources": [
+     {
+      "name": "Ford 1996 Crown Victoria Interceptor Police Packages brochure (Ford Heritage Vault)",
+      "url": "https://fordheritagevault.com/ (record uuid 11989257bbec4a4481f755c898935dc5)",
+      "says": "Engine, 4.6L dedicated Natural Gas Vehicle engine; 10.0:1 compression; HP TBD"
+     },
+     {
+      "name": "EPA fueleconomy.gov vehicle data",
+      "url": "https://www.fueleconomy.gov/feg/download.shtml",
+      "says": "1997: 4.6 L V8 Crown Victoria CNG"
+     }
+    ],
+    "independent_sources": 2,
+    "status": "two_sources_agree",
+    "note": "HP not published (Ford: TBD).",
+    "hp_sources": 0
+   }
+  ],
+  "1998": [
+   {
+    "gen": "panther3",
+    "cid": 281,
+    "hp": 200,
+    "hp_basis": "SAE net",
+    "rpo": "Modular 4.6 SOHC",
+    "common_name": "4.6 SOHC 2V V8",
+    "trims": [
+     "base/Standard",
+     "LX"
+    ],
+    "nhra": false,
+    "sources": [
+     {
+      "name": "Ford 1998 Crown Victoria brochure (Ford Heritage Vault)",
+      "url": "https://fordheritagevault.com/ (record uuid 4dcadc9de2f2422b922bcf5d4958373f)",
+      "says": "Horsepower SAE net 200 @4,250; Performance/Handling Package 215 hp"
+     },
+     {
+      "name": "Wikipedia - Ford Crown Victoria (incl. horsepower/torque table)",
+      "url": "https://en.wikipedia.org/wiki/Ford_Crown_Victoria",
+      "says": "1998-2000: 200 hp single exhaust"
+     },
+     {
+      "name": "Consumer Guide - 1992-07 Ford Crown Victoria used-car review (incl. yearly pricing/equipment pages)",
+      "url": "https://consumerguide.com/used/1992-07-ford-crown-victoria/",
+      "says": "1998: base +10 hp, dual exhaust +5 (200/215)"
+     },
+     {
+      "name": "EPA fueleconomy.gov vehicle data",
+      "url": "https://www.fueleconomy.gov/feg/download.shtml",
+      "says": "1998: 4.6 L V8 Crown Victoria"
+     }
+    ],
+    "independent_sources": 4,
+    "status": "three_sources_not_nhra",
+    "note": "",
+    "hp_sources": 3
+   },
+   {
+    "gen": "panther3",
+    "cid": 281,
+    "hp": 215,
+    "hp_basis": "SAE net",
+    "rpo": "Modular 4.6 SOHC",
+    "common_name": "4.6 SOHC 2V V8, dual exhaust",
+    "trims": [
+     "Handling & Performance pkg"
+    ],
+    "nhra": false,
+    "sources": [
+     {
+      "name": "Ford 1998 Crown Victoria brochure (Ford Heritage Vault)",
+      "url": "https://fordheritagevault.com/ (record uuid 4dcadc9de2f2422b922bcf5d4958373f)",
+      "says": "Horsepower SAE net 200 @4,250; Performance/Handling Package 215 hp"
+     },
+     {
+      "name": "Wikipedia - Ford Crown Victoria (incl. horsepower/torque table)",
+      "url": "https://en.wikipedia.org/wiki/Ford_Crown_Victoria",
+      "says": "1998-2000: 215 hp dual exhaust"
+     },
+     {
+      "name": "Consumer Guide - 1992-07 Ford Crown Victoria used-car review (incl. yearly pricing/equipment pages)",
+      "url": "https://consumerguide.com/used/1992-07-ford-crown-victoria/",
+      "says": "1998: base +10 hp, dual exhaust +5 (200/215)"
+     }
+    ],
+    "independent_sources": 3,
+    "status": "three_sources_not_nhra",
+    "note": "",
+    "hp_sources": 3
+   },
+   {
+    "gen": "panther3",
+    "cid": 281,
+    "hp": 215,
+    "hp_basis": "SAE net",
+    "rpo": "Modular 4.6 SOHC",
+    "common_name": "4.6 SOHC 2V V8, police dual exhaust",
+    "trims": [
+     "Police Interceptor"
+    ],
+    "nhra": false,
+    "sources": [
+     {
+      "name": "Ford 1998 Police Interceptor and Special Service Vehicles brochure (Ford Heritage Vault)",
+      "url": "https://fordheritagevault.com/ (record uuid 926c7eae6ec0496ca66303f5e0553425)",
+      "says": "Gasoline Vehicle 215 bhp @4500 rpm"
+     },
+     {
+      "name": "Wikipedia - Ford Crown Victoria (incl. horsepower/torque table)",
+      "url": "https://en.wikipedia.org/wiki/Ford_Crown_Victoria",
+      "says": "dual-exhaust 1998-2000 rating 215 hp"
+     },
+     {
+      "name": "EPA fueleconomy.gov vehicle data",
+      "url": "https://www.fueleconomy.gov/feg/download.shtml",
+      "says": "1998: 4.6 L V8 Crown Victoria Police"
+     }
+    ],
+    "independent_sources": 3,
+    "status": "three_sources_not_nhra",
+    "note": "",
+    "hp_sources": 2
+   },
+   {
+    "gen": "panther3",
+    "cid": 281,
+    "hp": 175,
+    "hp_basis": "SAE net",
+    "rpo": "Modular 4.6 SOHC CNG",
+    "common_name": "4.6 SOHC dedicated natural gas (CNG/NGV)",
+    "trims": [
+     "Natural Gas Vehicle (fleet/police)"
+    ],
+    "nhra": false,
+    "sources": [
+     {
+      "name": "Ford 1998 Police Interceptor and Special Service Vehicles brochure (Ford Heritage Vault)",
+      "url": "https://fordheritagevault.com/ (record uuid 926c7eae6ec0496ca66303f5e0553425)",
+      "says": "Natural Gas Vehicle 175 bhp @4500 rpm"
+     }
+    ],
+    "independent_sources": 1,
+    "status": "disputed",
+    "note": "No 1998 CNG row in EPA data; Ford 1998 sheet lists the NGV at 175 bhp. [v2] No second HP source found (MSP, CARB and Ford's fleet NGV pages give no rating). Ford 1998 sheet: 175 bhp @ 4500, 235 lb-ft @ 3250.",
+    "hp_sources": 1
+   }
+  ],
+  "1999": [
+   {
+    "gen": "panther3",
+    "cid": 281,
+    "hp": 200,
+    "hp_basis": "SAE net",
+    "rpo": "Modular 4.6 SOHC",
+    "common_name": "4.6 SOHC 2V V8",
+    "trims": [
+     "base/Standard",
+     "LX"
+    ],
+    "nhra": false,
+    "sources": [
+     {
+      "name": "Ford 1999 Crown Victoria brochure (Ford Heritage Vault)",
+      "url": "https://fordheritagevault.com/ (record uuid bc4bdba709aa4eeda425be3c043ff9c0)",
+      "says": "200 @4,250; 215 @4,500 with dual exhaust"
+     },
+     {
+      "name": "Wikipedia - Ford Crown Victoria (incl. horsepower/torque table)",
+      "url": "https://en.wikipedia.org/wiki/Ford_Crown_Victoria",
+      "says": "1998-2000: 200 hp single exhaust"
+     },
+     {
+      "name": "Consumer Guide - 1992-07 Ford Crown Victoria used-car review (incl. yearly pricing/equipment pages)",
+      "url": "https://consumerguide.com/used/1992-07-ford-crown-victoria/",
+      "says": "1999 a virtual rerun of 1998"
+     },
+     {
+      "name": "EPA fueleconomy.gov vehicle data",
+      "url": "https://www.fueleconomy.gov/feg/download.shtml",
+      "says": "1999: 4.6 L V8 Crown Victoria"
+     }
+    ],
+    "independent_sources": 4,
+    "status": "three_sources_not_nhra",
+    "note": "",
+    "hp_sources": 3
+   },
+   {
+    "gen": "panther3",
+    "cid": 281,
+    "hp": 215,
+    "hp_basis": "SAE net",
+    "rpo": "Modular 4.6 SOHC",
+    "common_name": "4.6 SOHC 2V V8, dual exhaust",
+    "trims": [
+     "Handling & Performance pkg"
+    ],
+    "nhra": false,
+    "sources": [
+     {
+      "name": "Ford 1999 Crown Victoria brochure (Ford Heritage Vault)",
+      "url": "https://fordheritagevault.com/ (record uuid bc4bdba709aa4eeda425be3c043ff9c0)",
+      "says": "200 @4,250; 215 @4,500 with dual exhaust"
+     },
+     {
+      "name": "Wikipedia - Ford Crown Victoria (incl. horsepower/torque table)",
+      "url": "https://en.wikipedia.org/wiki/Ford_Crown_Victoria",
+      "says": "1998-2000: 215 hp dual exhaust"
+     },
+     {
+      "name": "Consumer Guide - 1992-07 Ford Crown Victoria used-car review (incl. yearly pricing/equipment pages)",
+      "url": "https://consumerguide.com/used/1992-07-ford-crown-victoria/",
+      "says": "1999 a virtual rerun of 1998"
+     }
+    ],
+    "independent_sources": 3,
+    "status": "three_sources_not_nhra",
+    "note": "",
+    "hp_sources": 3
+   },
+   {
+    "gen": "panther3",
+    "cid": 281,
+    "hp": 215,
+    "hp_basis": "SAE net",
+    "rpo": "Modular 4.6 SOHC",
+    "common_name": "4.6 SOHC 2V V8, police dual exhaust",
+    "trims": [
+     "Police Interceptor"
+    ],
+    "nhra": false,
+    "sources": [
+     {
+      "name": "Ford 1999 Police Interceptor and Special Service Vehicles brochure (Ford Heritage Vault)",
+      "url": "https://fordheritagevault.com/ (record uuid 09cfd2d125704d65b102271c6d1693ff)",
+      "says": "Police Interceptor 4.6L gasoline and dedicated NGV versions listed (no HP shown)"
+     },
+     {
+      "name": "Wikipedia - Ford Crown Victoria (incl. horsepower/torque table)",
+      "url": "https://en.wikipedia.org/wiki/Ford_Crown_Victoria",
+      "says": "dual-exhaust 1998-2000 rating 215 hp"
+     },
+     {
+      "name": "EPA fueleconomy.gov vehicle data",
+      "url": "https://www.fueleconomy.gov/feg/download.shtml",
+      "says": "1999: 4.6 L V8 Crown Victoria Police"
+     }
+    ],
+    "independent_sources": 3,
+    "status": "two_sources_agree",
+    "note": "HP only from the Wikipedia dual-exhaust row; the 1998 Ford sheet gives 215.",
+    "hp_sources": 1
+   },
+   {
+    "gen": "panther3",
+    "cid": 281,
+    "hp": null,
+    "hp_basis": "SAE net",
+    "rpo": "Modular 4.6 SOHC CNG",
+    "common_name": "4.6 SOHC dedicated natural gas (CNG/NGV)",
+    "trims": [
+     "Natural Gas Vehicle (fleet/police)"
+    ],
+    "nhra": false,
+    "sources": [
+     {
+      "name": "Ford 1999 Police Interceptor and Special Service Vehicles brochure (Ford Heritage Vault)",
+      "url": "https://fordheritagevault.com/ (record uuid 09cfd2d125704d65b102271c6d1693ff)",
+      "says": "Engine, 4.6L V8 dedicated Natural Gas"
+     },
+     {
+      "name": "EPA fueleconomy.gov vehicle data",
+      "url": "https://www.fueleconomy.gov/feg/download.shtml",
+      "says": "1999: 4.6 L V8 Crown Victoria CNG"
+     }
+    ],
+    "independent_sources": 2,
+    "status": "two_sources_agree",
+    "note": "HP not found for this year (Ford 1998: 175 bhp).",
+    "hp_sources": 0
+   }
+  ],
+  "2000": [
+   {
+    "gen": "panther3",
+    "cid": 281,
+    "hp": 200,
+    "hp_basis": "SAE net",
+    "rpo": "Modular 4.6 SOHC",
+    "common_name": "4.6 SOHC 2V V8",
+    "trims": [
+     "base/Standard",
+     "LX"
+    ],
+    "nhra": false,
+    "sources": [
+     {
+      "name": "Wikipedia - Ford Crown Victoria (incl. horsepower/torque table)",
+      "url": "https://en.wikipedia.org/wiki/Ford_Crown_Victoria",
+      "says": "1998-2000: 200 hp single exhaust"
+     },
+     {
+      "name": "Consumer Guide - 1992-07 Ford Crown Victoria used-car review (incl. yearly pricing/equipment pages)",
+      "url": "https://consumerguide.com/used/1992-07-ford-crown-victoria/",
+      "says": "2000 pricing: base 200 hp; H&P pkg 215 hp"
+     },
+     {
+      "name": "EPA fueleconomy.gov vehicle data",
+      "url": "https://www.fueleconomy.gov/feg/download.shtml",
+      "says": "2000: 4.6 L V8 Crown Victoria"
+     }
+    ],
+    "independent_sources": 3,
+    "status": "three_sources_not_nhra",
+    "note": "",
+    "hp_sources": 2
+   },
+   {
+    "gen": "panther3",
+    "cid": 281,
+    "hp": 215,
+    "hp_basis": "SAE net",
+    "rpo": "Modular 4.6 SOHC",
+    "common_name": "4.6 SOHC 2V V8, dual exhaust",
+    "trims": [
+     "Handling & Performance pkg"
+    ],
+    "nhra": false,
+    "sources": [
+     {
+      "name": "Wikipedia - Ford Crown Victoria (incl. horsepower/torque table)",
+      "url": "https://en.wikipedia.org/wiki/Ford_Crown_Victoria",
+      "says": "1998-2000: 215 hp dual exhaust"
+     },
+     {
+      "name": "Consumer Guide - 1992-07 Ford Crown Victoria used-car review (incl. yearly pricing/equipment pages)",
+      "url": "https://consumerguide.com/used/1992-07-ford-crown-victoria/",
+      "says": "2000 pricing: base 200 hp; H&P pkg 215 hp"
+     }
+    ],
+    "independent_sources": 2,
+    "status": "two_sources_agree",
+    "note": "",
+    "hp_sources": 2
+   },
+   {
+    "gen": "panther3",
+    "cid": 281,
+    "hp": 215,
+    "hp_basis": "SAE net",
+    "rpo": "Modular 4.6 SOHC",
+    "common_name": "4.6 SOHC 2V V8, police dual exhaust",
+    "trims": [
+     "Police Interceptor"
+    ],
+    "nhra": false,
+    "sources": [
+     {
+      "name": "Ford 2000 Police Interceptor and Special Service Vehicles fleet brochure (Ford Heritage Vault)",
+      "url": "https://fordheritagevault.com/ (record uuid 7653ccfe02f8442da94aa480e41ea143)",
+      "says": "Police Interceptor 4.6L gasoline and dedicated NGV versions listed (no HP shown)"
+     },
+     {
+      "name": "Wikipedia - Ford Crown Victoria (incl. horsepower/torque table)",
+      "url": "https://en.wikipedia.org/wiki/Ford_Crown_Victoria",
+      "says": "dual-exhaust 1998-2000 rating 215 hp"
+     },
+     {
+      "name": "EPA fueleconomy.gov vehicle data",
+      "url": "https://www.fueleconomy.gov/feg/download.shtml",
+      "says": "2000: 4.6 L V8 Crown Victoria Police"
+     }
+    ],
+    "independent_sources": 3,
+    "status": "two_sources_agree",
+    "note": "HP only from the Wikipedia dual-exhaust row; the 1998 Ford sheet gives 215.",
+    "hp_sources": 1
+   },
+   {
+    "gen": "panther3",
+    "cid": 281,
+    "hp": null,
+    "hp_basis": "SAE net",
+    "rpo": "Modular 4.6 SOHC CNG",
+    "common_name": "4.6 SOHC dedicated natural gas (CNG/NGV)",
+    "trims": [
+     "Natural Gas Vehicle (fleet/police)"
+    ],
+    "nhra": false,
+    "sources": [
+     {
+      "name": "Ford 2000 Police Interceptor and Special Service Vehicles fleet brochure (Ford Heritage Vault)",
+      "url": "https://fordheritagevault.com/ (record uuid 7653ccfe02f8442da94aa480e41ea143)",
+      "says": "Engine, 4.6L V8 dedicated Natural Gas"
+     },
+     {
+      "name": "EPA fueleconomy.gov vehicle data",
+      "url": "https://www.fueleconomy.gov/feg/download.shtml",
+      "says": "2000: 4.6 L V8 Crown Victoria CNG"
+     },
+     {
+      "name": "NIJ/NLECTC - Michigan State Police Tests 2000 Patrol Vehicles (bulletin, NCJ 206448)",
+      "url": "https://www.ojp.gov/ (NCJ 206448; scratchpad cv/msp_206448.pdf)",
+      "says": "Police Interceptor offered in gasoline and compressed natural gas (CNG) versions for 2000 (Ford did not submit the CNG car)"
+     }
+    ],
+    "independent_sources": 3,
+    "status": "three_sources_not_nhra",
+    "note": "HP not found for this year (Ford 1998: 175 bhp). [v2] NIJ/MSP 2000 bulletin confirms the CNG Police Interceptor for 2000. HP still not published for this year.",
+    "hp_sources": 0
+   }
+  ],
+  "2001": [
+   {
+    "gen": "panther3",
+    "cid": 281,
+    "hp": 220,
+    "hp_basis": "SAE net",
+    "rpo": "Modular 4.6 SOHC",
+    "common_name": "4.6 SOHC 2V V8 (PI heads)",
+    "trims": [
+     "base/Standard",
+     "LX"
+    ],
+    "nhra": true,
+    "sources": [
+     {
+      "name": "Wikipedia - Ford Crown Victoria (incl. horsepower/torque table)",
+      "url": "https://en.wikipedia.org/wiki/Ford_Crown_Victoria",
+      "says": "2001-2002: 220 hp single exhaust"
+     },
+     {
+      "name": "Consumer Guide - 1992-07 Ford Crown Victoria used-car review (incl. yearly pricing/equipment pages)",
+      "url": "https://consumerguide.com/used/1992-07-ford-crown-victoria/",
+      "says": "2001 pricing: 220 hp; H&P pkg 235 hp"
+     },
+     {
+      "name": "EPA fueleconomy.gov vehicle data",
+      "url": "https://www.fueleconomy.gov/feg/download.shtml",
+      "says": "2001: 4.6 L V8 Crown Victoria"
+     },
+     {
+      "name": "NHRA Stock Car Classification Guide",
+      "url": "nhra_ford-crown-victoria-1980-2012.json",
+      "says": "2001 Crown Victoria: 281 ci / 220 hp"
+     }
+    ],
+    "independent_sources": 4,
+    "status": "confirmed",
+    "note": "Consumer Guide narrative wrongly says 224/239 arrived in 2001; its own 2001 pricing page gives 220/235.",
+    "hp_sources": 3
+   },
+   {
+    "gen": "panther3",
+    "cid": 281,
+    "hp": 235,
+    "hp_basis": "SAE net",
+    "rpo": "Modular 4.6 SOHC",
+    "common_name": "4.6 SOHC 2V V8, dual exhaust",
+    "trims": [
+     "Handling & Performance pkg"
+    ],
+    "nhra": false,
+    "sources": [
+     {
+      "name": "Wikipedia - Ford Crown Victoria (incl. horsepower/torque table)",
+      "url": "https://en.wikipedia.org/wiki/Ford_Crown_Victoria",
+      "says": "2001-2002: 235 hp dual exhaust"
+     },
+     {
+      "name": "Consumer Guide - 1992-07 Ford Crown Victoria used-car review (incl. yearly pricing/equipment pages)",
+      "url": "https://consumerguide.com/used/1992-07-ford-crown-victoria/",
+      "says": "2001 pricing: 220 hp; H&P pkg 235 hp"
+     }
+    ],
+    "independent_sources": 2,
+    "status": "two_sources_agree",
+    "note": "",
+    "hp_sources": 2
+   },
+   {
+    "gen": "panther3",
+    "cid": 281,
+    "hp": 235,
+    "hp_basis": "SAE net",
+    "rpo": "Modular 4.6 SOHC",
+    "common_name": "4.6 SOHC 2V V8, police dual exhaust",
+    "trims": [
+     "Police Interceptor"
+    ],
+    "nhra": false,
+    "sources": [
+     {
+      "name": "Ford 2001 Police Interceptor and Special Service Vehicles fleet brochure (Ford Heritage Vault)",
+      "url": "https://fordheritagevault.com/ (record uuid b57624b822034b3e8b59c8c4d89de3f4)",
+      "says": "Increased horsepower, to 235 @4750 RPM"
+     },
+     {
+      "name": "Wikipedia - Ford Crown Victoria (incl. horsepower/torque table)",
+      "url": "https://en.wikipedia.org/wiki/Ford_Crown_Victoria",
+      "says": "dual-exhaust 2001-2002 rating 235 hp"
+     },
+     {
+      "name": "EPA fueleconomy.gov vehicle data",
+      "url": "https://www.fueleconomy.gov/feg/download.shtml",
+      "says": "2001: 4.6 L V8 Crown Victoria Police"
+     }
+    ],
+    "independent_sources": 3,
+    "status": "three_sources_not_nhra",
+    "note": "",
+    "hp_sources": 2
+   },
+   {
+    "gen": "panther3",
+    "cid": 281,
+    "hp": null,
+    "hp_basis": "SAE net",
+    "rpo": "Modular 4.6 SOHC CNG",
+    "common_name": "4.6 SOHC dedicated natural gas (CNG/NGV)",
+    "trims": [
+     "Natural Gas Vehicle (fleet/police)"
+    ],
+    "nhra": false,
+    "sources": [
+     {
+      "name": "Ford 2001 Police Interceptor and Special Service Vehicles fleet brochure (Ford Heritage Vault)",
+      "url": "https://fordheritagevault.com/ (record uuid b57624b822034b3e8b59c8c4d89de3f4)",
+      "says": "Engine, 4.6L V8 dedicated Natural Gas"
+     },
+     {
+      "name": "EPA fueleconomy.gov vehicle data",
+      "url": "https://www.fueleconomy.gov/feg/download.shtml",
+      "says": "2001: 4.6 L V8 Crown Victoria CNG"
+     }
+    ],
+    "independent_sources": 2,
+    "status": "two_sources_agree",
+    "note": "HP not found for this year (Ford 1998: 175 bhp).",
+    "hp_sources": 0
+   }
+  ],
+  "2002": [
+   {
+    "gen": "panther3",
+    "cid": 281,
+    "hp": 220,
+    "hp_basis": "SAE net",
+    "rpo": "Modular 4.6 SOHC",
+    "common_name": "4.6 SOHC 2V V8 (PI heads)",
+    "trims": [
+     "base/Standard",
+     "LX"
+    ],
+    "nhra": false,
+    "sources": [
+     {
+      "name": "Ford 2002 Taurus, Windstar, Crown Victoria and E-Series brochure (Ford Heritage Vault)",
+      "url": "https://fordheritagevault.com/ (record uuid efd6380c3faa48f69646f137b21f6b5b)",
+      "says": "220 @4750 / 235 @4750 (dual exhaust)"
+     },
+     {
+      "name": "Wikipedia - Ford Crown Victoria (incl. horsepower/torque table)",
+      "url": "https://en.wikipedia.org/wiki/Ford_Crown_Victoria",
+      "says": "2001-2002: 220 hp single exhaust"
+     },
+     {
+      "name": "Consumer Guide - 1992-07 Ford Crown Victoria used-car review (incl. yearly pricing/equipment pages)",
+      "url": "https://consumerguide.com/used/1992-07-ford-crown-victoria/",
+      "says": "2002 pricing: 220 hp; LX Sport and H&P 235 hp"
+     },
+     {
+      "name": "EPA fueleconomy.gov vehicle data",
+      "url": "https://www.fueleconomy.gov/feg/download.shtml",
+      "says": "2002: 4.6 L V8 Crown Victoria"
+     }
+    ],
+    "independent_sources": 4,
+    "status": "three_sources_not_nhra",
+    "note": "",
+    "hp_sources": 3
+   },
+   {
+    "gen": "panther3",
+    "cid": 281,
+    "hp": 235,
+    "hp_basis": "SAE net",
+    "rpo": "Modular 4.6 SOHC",
+    "common_name": "4.6 SOHC 2V V8, dual exhaust",
+    "trims": [
+     "Handling & Performance pkg",
+     "LX Sport"
+    ],
+    "nhra": false,
+    "sources": [
+     {
+      "name": "Ford 2002 Taurus, Windstar, Crown Victoria and E-Series brochure (Ford Heritage Vault)",
+      "url": "https://fordheritagevault.com/ (record uuid efd6380c3faa48f69646f137b21f6b5b)",
+      "says": "220 @4750 / 235 @4750 (dual exhaust)"
+     },
+     {
+      "name": "Wikipedia - Ford Crown Victoria (incl. horsepower/torque table)",
+      "url": "https://en.wikipedia.org/wiki/Ford_Crown_Victoria",
+      "says": "2001-2002: 235 hp dual exhaust"
+     },
+     {
+      "name": "Consumer Guide - 1992-07 Ford Crown Victoria used-car review (incl. yearly pricing/equipment pages)",
+      "url": "https://consumerguide.com/used/1992-07-ford-crown-victoria/",
+      "says": "2002 pricing: 220 hp; LX Sport and H&P 235 hp"
+     }
+    ],
+    "independent_sources": 3,
+    "status": "three_sources_not_nhra",
+    "note": "",
+    "hp_sources": 3
+   },
+   {
+    "gen": "panther3",
+    "cid": 281,
+    "hp": 235,
+    "hp_basis": "SAE net",
+    "rpo": "Modular 4.6 SOHC",
+    "common_name": "4.6 SOHC 2V V8, police dual exhaust",
+    "trims": [
+     "Police Interceptor"
+    ],
+    "nhra": false,
+    "sources": [
+     {
+      "name": "Ford Fleet - 2002 Crown Victoria Police Interceptor package sheet (fleet.ford.com via Wayback)",
+      "url": "http://web.archive.org/web/20030406003624/http://www.fleet.ford.com:80/downloads/specvehpolice/police.pdf",
+      "says": "Increased horsepower, to 235 @4750 RPM and torque to 275 lb-ft @4000"
+     },
+     {
+      "name": "Wikipedia - Ford Crown Victoria (incl. horsepower/torque table)",
+      "url": "https://en.wikipedia.org/wiki/Ford_Crown_Victoria",
+      "says": "dual-exhaust 2001-2002 rating 235 hp"
+     },
+     {
+      "name": "EPA fueleconomy.gov vehicle data",
+      "url": "https://www.fueleconomy.gov/feg/download.shtml",
+      "says": "2002: 4.6 L V8 Crown Victoria Police"
+     }
+    ],
+    "independent_sources": 3,
+    "status": "three_sources_not_nhra",
+    "note": "",
+    "hp_sources": 2
+   },
+   {
+    "gen": "panther3",
+    "cid": 281,
+    "hp": null,
+    "hp_basis": "SAE net",
+    "rpo": "Modular 4.6 SOHC CNG",
+    "common_name": "4.6 SOHC dedicated natural gas (CNG/NGV)",
+    "trims": [
+     "Natural Gas Vehicle (fleet/police)"
+    ],
+    "nhra": false,
+    "sources": [
+     {
+      "name": "Ford 2002 Taurus, Windstar, Crown Victoria and E-Series brochure (Ford Heritage Vault)",
+      "url": "https://fordheritagevault.com/ (record uuid efd6380c3faa48f69646f137b21f6b5b)",
+      "says": "4.6L Natural Gas Engine"
+     },
+     {
+      "name": "EPA fueleconomy.gov vehicle data",
+      "url": "https://www.fueleconomy.gov/feg/download.shtml",
+      "says": "2002: 4.6 L V8 Crown Victoria CNG"
+     }
+    ],
+    "independent_sources": 2,
+    "status": "two_sources_agree",
+    "note": "HP not found for this year (Ford 1998: 175 bhp).",
+    "hp_sources": 0
+   }
+  ],
+  "2003": [
+   {
+    "gen": "panther3",
+    "cid": 281,
+    "hp": 224,
+    "hp_basis": "SAE net",
+    "rpo": "Modular 4.6 SOHC",
+    "common_name": "4.6 SOHC 2V V8 (PI heads)",
+    "trims": [
+     "base/Standard",
+     "LX"
+    ],
+    "nhra": false,
+    "sources": [
+     {
+      "name": "Ford 2003 Crown Victoria brochure (Ford Heritage Vault)",
+      "url": "https://fordheritagevault.com/ (record uuid 95675a8d7c6d47bfb38ed1acd12b4ba2)",
+      "says": "224 @4800; 239 @4900 dual exhaust"
+     },
+     {
+      "name": "Wikipedia - Ford Crown Victoria (incl. horsepower/torque table)",
+      "url": "https://en.wikipedia.org/wiki/Ford_Crown_Victoria",
+      "says": "2003-2012: 224 hp single exhaust"
+     },
+     {
+      "name": "Consumer Guide - 1992-07 Ford Crown Victoria used-car review (incl. yearly pricing/equipment pages)",
+      "url": "https://consumerguide.com/used/1992-07-ford-crown-victoria/",
+      "says": "2003 pricing: 224 hp; LX Sport and H&P 239 hp"
+     },
+     {
+      "name": "EPA fueleconomy.gov vehicle data",
+      "url": "https://www.fueleconomy.gov/feg/download.shtml",
+      "says": "2003: 4.6 L V8 Crown Victoria"
+     }
+    ],
+    "independent_sources": 4,
+    "status": "three_sources_not_nhra",
+    "note": "",
+    "hp_sources": 3
+   },
+   {
+    "gen": "panther3",
+    "cid": 281,
+    "hp": 239,
+    "hp_basis": "SAE net",
+    "rpo": "Modular 4.6 SOHC",
+    "common_name": "4.6 SOHC 2V V8, dual exhaust",
+    "trims": [
+     "Handling & Performance pkg",
+     "LX Sport"
+    ],
+    "nhra": false,
+    "sources": [
+     {
+      "name": "Ford 2003 Crown Victoria brochure (Ford Heritage Vault)",
+      "url": "https://fordheritagevault.com/ (record uuid 95675a8d7c6d47bfb38ed1acd12b4ba2)",
+      "says": "224 @4800; 239 @4900 dual exhaust"
+     },
+     {
+      "name": "Wikipedia - Ford Crown Victoria (incl. horsepower/torque table)",
+      "url": "https://en.wikipedia.org/wiki/Ford_Crown_Victoria",
+      "says": "2003-2011: 239 hp dual exhaust"
+     },
+     {
+      "name": "Consumer Guide - 1992-07 Ford Crown Victoria used-car review (incl. yearly pricing/equipment pages)",
+      "url": "https://consumerguide.com/used/1992-07-ford-crown-victoria/",
+      "says": "2003 pricing: 224 hp; LX Sport and H&P 239 hp"
+     }
+    ],
+    "independent_sources": 3,
+    "status": "three_sources_not_nhra",
+    "note": "",
+    "hp_sources": 3
+   },
+   {
+    "gen": "panther3",
+    "cid": 281,
+    "hp": 239,
+    "hp_basis": "SAE net",
+    "rpo": "Modular 4.6 SOHC",
+    "common_name": "4.6 SOHC 2V V8, police dual exhaust",
+    "trims": [
+     "Police Interceptor"
+    ],
+    "nhra": false,
+    "sources": [
+     {
+      "name": "POLICE Magazine - 2003 Michigan Vehicle Tests",
+      "url": "https://www.policemag.com/articles/2003-michigan-vehicle-tests",
+      "says": "2003 Crown Victoria Police Interceptor powered by a 239-horsepower V-8"
+     },
+     {
+      "name": "Wikipedia - Ford Crown Victoria (incl. horsepower/torque table)",
+      "url": "https://en.wikipedia.org/wiki/Ford_Crown_Victoria",
+      "says": "dual-exhaust 2003-2012 rating 239 hp"
+     },
+     {
+      "name": "EPA fueleconomy.gov vehicle data",
+      "url": "https://www.fueleconomy.gov/feg/download.shtml",
+      "says": "2003: 4.6 L V8 Crown Victoria Police"
+     }
+    ],
+    "independent_sources": 3,
+    "status": "three_sources_not_nhra",
+    "note": "Wikipedia puts the 250-hp police engine in 2004; POLICE Magazine confirms 239 for 2003.",
+    "hp_sources": 2
+   },
+   {
+    "gen": "panther3",
+    "cid": 281,
+    "hp": null,
+    "hp_basis": "SAE net",
+    "rpo": "Modular 4.6 SOHC CNG",
+    "common_name": "4.6 SOHC dedicated natural gas (CNG/NGV)",
+    "trims": [
+     "Natural Gas Vehicle (fleet/police)"
+    ],
+    "nhra": false,
+    "sources": [
+     {
+      "name": "EPA fueleconomy.gov vehicle data",
+      "url": "https://www.fueleconomy.gov/feg/download.shtml",
+      "says": "2003: 4.6 L V8 Crown Victoria CNG"
+     }
+    ],
+    "independent_sources": 1,
+    "status": "disputed",
+    "note": "Only EPA lists a 2003 CNG model; no Ford 2003 sheet found (Wikipedia: NGV dropped for 2005). HP not found (Ford 1998: 175 bhp). [v2] CARB DriveClean lists a 2003 Crown Victoria CNG, but its listings appear to derive from EPA data (counted once). MSP 2004 bulletin says the CNG Police Interceptor would be available January 2004 and that 2004 was its final year, implying continuity. Still one independent source.",
+    "hp_sources": 0
+   }
+  ],
+  "2004": [
+   {
+    "gen": "panther3",
+    "cid": 281,
+    "hp": 224,
+    "hp_basis": "SAE net",
+    "rpo": "Modular 4.6 SOHC",
+    "common_name": "4.6 SOHC 2V V8 (PI heads)",
+    "trims": [
+     "base/Standard",
+     "LX"
+    ],
+    "nhra": false,
+    "sources": [
+     {
+      "name": "Ford 2004 Crown Victoria brochure (Ford Heritage Vault)",
+      "url": "https://fordheritagevault.com/ (record uuid 5aafcbfd24314115ad88f70b4e7a3332)",
+      "says": "224 @4800 single, 239 @4900 dual"
+     },
+     {
+      "name": "Wikipedia - Ford Crown Victoria (incl. horsepower/torque table)",
+      "url": "https://en.wikipedia.org/wiki/Ford_Crown_Victoria",
+      "says": "2003-2012: 224 hp single exhaust"
+     },
+     {
+      "name": "Consumer Guide - 1992-07 Ford Crown Victoria used-car review (incl. yearly pricing/equipment pages)",
+      "url": "https://consumerguide.com/used/1992-07-ford-crown-victoria/",
+      "says": "2004 pricing: 224 / 239 hp"
+     },
+     {
+      "name": "EPA fueleconomy.gov vehicle data",
+      "url": "https://www.fueleconomy.gov/feg/download.shtml",
+      "says": "2004: 4.6 L V8 Crown Victoria"
+     }
+    ],
+    "independent_sources": 4,
+    "status": "three_sources_not_nhra",
+    "note": "",
+    "hp_sources": 3
+   },
+   {
+    "gen": "panther3",
+    "cid": 281,
+    "hp": 239,
+    "hp_basis": "SAE net",
+    "rpo": "Modular 4.6 SOHC",
+    "common_name": "4.6 SOHC 2V V8, dual exhaust",
+    "trims": [
+     "Handling & Performance pkg",
+     "LX Sport"
+    ],
+    "nhra": false,
+    "sources": [
+     {
+      "name": "Ford 2004 Crown Victoria brochure (Ford Heritage Vault)",
+      "url": "https://fordheritagevault.com/ (record uuid 5aafcbfd24314115ad88f70b4e7a3332)",
+      "says": "224 @4800 single, 239 @4900 dual"
+     },
+     {
+      "name": "Wikipedia - Ford Crown Victoria (incl. horsepower/torque table)",
+      "url": "https://en.wikipedia.org/wiki/Ford_Crown_Victoria",
+      "says": "2003-2011: 239 hp dual exhaust"
+     },
+     {
+      "name": "Consumer Guide - 1992-07 Ford Crown Victoria used-car review (incl. yearly pricing/equipment pages)",
+      "url": "https://consumerguide.com/used/1992-07-ford-crown-victoria/",
+      "says": "2004 pricing: 224 / 239 hp"
+     }
+    ],
+    "independent_sources": 3,
+    "status": "three_sources_not_nhra",
+    "note": "",
+    "hp_sources": 3
+   },
+   {
+    "gen": "panther3",
+    "cid": 281,
+    "hp": 250,
+    "hp_basis": "SAE net",
+    "rpo": "Modular 4.6 SOHC",
+    "common_name": "4.6 SOHC 2V V8, police dual exhaust (Marauder-style intake)",
+    "trims": [
+     "Police Interceptor"
+    ],
+    "nhra": false,
+    "sources": [
+     {
+      "name": "Wikipedia - Ford Crown Victoria (incl. horsepower/torque table)",
+      "url": "https://en.wikipedia.org/wiki/Ford_Crown_Victoria",
+      "says": "2004-2011: 250 hp, police only (Marauder-style intake, 80 mm MAF)"
+     },
+     {
+      "name": "EPA fueleconomy.gov vehicle data",
+      "url": "https://www.fueleconomy.gov/feg/download.shtml",
+      "says": "2004: 4.6 L V8 Crown Victoria Police"
+     },
+     {
+      "name": "NIJ/NLECTC - Michigan State Police Tests 2004 Patrol Vehicles (NCJ 206094)",
+      "url": "https://www.ojp.gov/pdffiles1/nij/nlectc/206094.pdf",
+      "says": "New air induction system raises the maximum rated horsepower of the Police Interceptor to 250, an increase of 11 hp from last year"
+     }
+    ],
+    "independent_sources": 3,
+    "status": "three_sources_not_nhra",
+    "note": "[v2] Michigan State Police 2004 evaluation gives 250 hp (239 + 11; consistent with POLICE Magazine's 2003 figure of 239). Wikipedia agrees; EPA confirms availability.",
+    "hp_sources": 2
+   },
+   {
+    "gen": "panther3",
+    "cid": 281,
+    "hp": null,
+    "hp_basis": "SAE net",
+    "rpo": "Modular 4.6 SOHC CNG",
+    "common_name": "4.6 SOHC dedicated natural gas (CNG/NGV)",
+    "trims": [
+     "Natural Gas Vehicle (fleet/police)"
+    ],
+    "nhra": false,
+    "sources": [
+     {
+      "name": "EPA fueleconomy.gov vehicle data",
+      "url": "https://www.fueleconomy.gov/feg/download.shtml",
+      "says": "2004: 4.6 L V8 Crown Victoria CNG"
+     },
+     {
+      "name": "Wikipedia - Ford Crown Victoria (incl. horsepower/torque table)",
+      "url": "https://en.wikipedia.org/wiki/Ford_Crown_Victoria",
+      "says": "NGV engine option discontinued for 2005"
+     },
+     {
+      "name": "NIJ/NLECTC - Michigan State Police Tests 2004 Patrol Vehicles (NCJ 206094)",
+      "url": "https://www.ojp.gov/pdffiles1/nij/nlectc/206094.pdf",
+      "says": "A compressed natural gas (CNG) version of the Police Interceptor will be available in January 2004; final year of production for the CNG version"
+     }
+    ],
+    "independent_sources": 3,
+    "status": "three_sources_not_nhra",
+    "note": "HP not found for this year (Ford 1998: 175 bhp). [v2] MSP 2004 bulletin: CNG Police Interceptor available January 2004, final year. HP not published.",
+    "hp_sources": 0
+   }
+  ],
+  "2005": [
+   {
+    "gen": "panther3",
+    "cid": 281,
+    "hp": 224,
+    "hp_basis": "SAE net",
+    "rpo": "Modular 4.6 SOHC",
+    "common_name": "4.6 SOHC 2V V8 (PI heads)",
+    "trims": [
+     "base/Standard",
+     "LX"
+    ],
+    "nhra": false,
+    "sources": [
+     {
+      "name": "Ford 2005 Crown Victoria brochure (Ford Heritage Vault)",
+      "url": "https://fordheritagevault.com/ (record uuid f81b8d6baf4f463d9632f47309f46236)",
+      "says": "224 @4800 single, 239 @4900 dual"
+     },
+     {
+      "name": "Wikipedia - Ford Crown Victoria (incl. horsepower/torque table)",
+      "url": "https://en.wikipedia.org/wiki/Ford_Crown_Victoria",
+      "says": "2003-2012: 224 hp single exhaust"
+     },
+     {
+      "name": "Consumer Guide - 1992-07 Ford Crown Victoria used-car review (incl. yearly pricing/equipment pages)",
+      "url": "https://consumerguide.com/used/1992-07-ford-crown-victoria/",
+      "says": "2005 pricing: 224 / 239 hp"
+     },
+     {
+      "name": "EPA fueleconomy.gov vehicle data",
+      "url": "https://www.fueleconomy.gov/feg/download.shtml",
+      "says": "2005: 4.6 L V8 Crown Victoria"
+     }
+    ],
+    "independent_sources": 4,
+    "status": "three_sources_not_nhra",
+    "note": "",
+    "hp_sources": 3
+   },
+   {
+    "gen": "panther3",
+    "cid": 281,
+    "hp": 239,
+    "hp_basis": "SAE net",
+    "rpo": "Modular 4.6 SOHC",
+    "common_name": "4.6 SOHC 2V V8, dual exhaust",
+    "trims": [
+     "Handling & Performance pkg",
+     "LX Sport"
+    ],
+    "nhra": false,
+    "sources": [
+     {
+      "name": "Ford 2005 Crown Victoria brochure (Ford Heritage Vault)",
+      "url": "https://fordheritagevault.com/ (record uuid f81b8d6baf4f463d9632f47309f46236)",
+      "says": "224 @4800 single, 239 @4900 dual"
+     },
+     {
+      "name": "Wikipedia - Ford Crown Victoria (incl. horsepower/torque table)",
+      "url": "https://en.wikipedia.org/wiki/Ford_Crown_Victoria",
+      "says": "2003-2011: 239 hp dual exhaust"
+     },
+     {
+      "name": "Consumer Guide - 1992-07 Ford Crown Victoria used-car review (incl. yearly pricing/equipment pages)",
+      "url": "https://consumerguide.com/used/1992-07-ford-crown-victoria/",
+      "says": "2005 pricing: 224 / 239 hp"
+     }
+    ],
+    "independent_sources": 3,
+    "status": "three_sources_not_nhra",
+    "note": "",
+    "hp_sources": 3
+   },
+   {
+    "gen": "panther3",
+    "cid": 281,
+    "hp": 250,
+    "hp_basis": "SAE net",
+    "rpo": "Modular 4.6 SOHC",
+    "common_name": "4.6 SOHC 2V V8, police dual exhaust (Marauder-style intake)",
+    "trims": [
+     "Police Interceptor"
+    ],
+    "nhra": false,
+    "sources": [
+     {
+      "name": "Ford Fleet - 2005 Crown Victoria Police Interceptor specs page (fleet.ford.com via Wayback)",
+      "url": "http://web.archive.org/web/20060315064055/https://www.fleet.ford.com/showroom/2005fleetshowroom/2005-CrVicPoliceInt-specs.asp?EV=0",
+      "says": "Horsepower @ rpm 250 @4000"
+     },
+     {
+      "name": "Wikipedia - Ford Crown Victoria (incl. horsepower/torque table)",
+      "url": "https://en.wikipedia.org/wiki/Ford_Crown_Victoria",
+      "says": "2004-2011: 250 hp, police only (Marauder-style intake, 80 mm MAF)"
+     },
+     {
+      "name": "EPA fueleconomy.gov vehicle data",
+      "url": "https://www.fueleconomy.gov/feg/download.shtml",
+      "says": "2005: 4.6 L V8 Crown Victoria Police"
+     }
+    ],
+    "independent_sources": 3,
+    "status": "three_sources_not_nhra",
+    "note": "Ford fleet page gives 250 @4000 (other Ford sheets @5000).",
+    "hp_sources": 2
+   }
+  ],
+  "2006": [
+   {
+    "gen": "panther3",
+    "cid": 281,
+    "hp": 224,
+    "hp_basis": "SAE net",
+    "rpo": "Modular 4.6 SOHC",
+    "common_name": "4.6 SOHC 2V V8 (PI heads)",
+    "trims": [
+     "base/Standard",
+     "LX"
+    ],
+    "nhra": false,
+    "sources": [
+     {
+      "name": "Ford 2006 Crown Victoria brochure (Ford Heritage Vault)",
+      "url": "https://fordheritagevault.com/ (record uuid a4ce4fbeb1e649b5918393fd1ed25102)",
+      "says": "224 @4800 single, 239 @4900 dual"
+     },
+     {
+      "name": "Wikipedia - Ford Crown Victoria (incl. horsepower/torque table)",
+      "url": "https://en.wikipedia.org/wiki/Ford_Crown_Victoria",
+      "says": "2003-2012: 224 hp single exhaust"
+     },
+     {
+      "name": "Consumer Guide - 1992-07 Ford Crown Victoria used-car review (incl. yearly pricing/equipment pages)",
+      "url": "https://consumerguide.com/used/1992-07-ford-crown-victoria/",
+      "says": "2006 pricing: 224 / 239 hp"
+     },
+     {
+      "name": "EPA fueleconomy.gov vehicle data",
+      "url": "https://www.fueleconomy.gov/feg/download.shtml",
+      "says": "2006: 4.6 L V8 Crown Victoria (incl. FFV)"
+     }
+    ],
+    "independent_sources": 4,
+    "status": "three_sources_not_nhra",
+    "note": "Flex-fuel (E85) version from 2006 (EPA FFV rows); same rating.",
+    "hp_sources": 3
+   },
+   {
+    "gen": "panther3",
+    "cid": 281,
+    "hp": 239,
+    "hp_basis": "SAE net",
+    "rpo": "Modular 4.6 SOHC",
+    "common_name": "4.6 SOHC 2V V8, dual exhaust",
+    "trims": [
+     "Handling & Performance pkg",
+     "LX Sport"
+    ],
+    "nhra": false,
+    "sources": [
+     {
+      "name": "Ford 2006 Crown Victoria brochure (Ford Heritage Vault)",
+      "url": "https://fordheritagevault.com/ (record uuid a4ce4fbeb1e649b5918393fd1ed25102)",
+      "says": "224 @4800 single, 239 @4900 dual"
+     },
+     {
+      "name": "Wikipedia - Ford Crown Victoria (incl. horsepower/torque table)",
+      "url": "https://en.wikipedia.org/wiki/Ford_Crown_Victoria",
+      "says": "2003-2011: 239 hp dual exhaust"
+     },
+     {
+      "name": "Consumer Guide - 1992-07 Ford Crown Victoria used-car review (incl. yearly pricing/equipment pages)",
+      "url": "https://consumerguide.com/used/1992-07-ford-crown-victoria/",
+      "says": "2006 pricing: 224 / 239 hp"
+     }
+    ],
+    "independent_sources": 3,
+    "status": "three_sources_not_nhra",
+    "note": "",
+    "hp_sources": 3
+   },
+   {
+    "gen": "panther3",
+    "cid": 281,
+    "hp": 250,
+    "hp_basis": "SAE net",
+    "rpo": "Modular 4.6 SOHC",
+    "common_name": "4.6 SOHC 2V V8, police dual exhaust (Marauder-style intake)",
+    "trims": [
+     "Police Interceptor"
+    ],
+    "nhra": false,
+    "sources": [
+     {
+      "name": "Ford Fleet - 2006 Crown Victoria Police Interceptor competitive card (fleet.ford.com via Wayback)",
+      "url": "http://web.archive.org/web/20060315062712/https://www.fleet.ford.com/downloads/brochures/2006/CrVicInt_CompCard.pdf",
+      "says": "4.6L SOHC V-8 250 hp (SAE net) @5000"
+     },
+     {
+      "name": "Wikipedia - Ford Crown Victoria (incl. horsepower/torque table)",
+      "url": "https://en.wikipedia.org/wiki/Ford_Crown_Victoria",
+      "says": "2004-2011: 250 hp, police only (Marauder-style intake, 80 mm MAF)"
+     },
+     {
+      "name": "EPA fueleconomy.gov vehicle data",
+      "url": "https://www.fueleconomy.gov/feg/download.shtml",
+      "says": "2006: 4.6 L V8 Crown Victoria Police"
+     }
+    ],
+    "independent_sources": 3,
+    "status": "three_sources_not_nhra",
+    "note": "",
+    "hp_sources": 2
+   }
+  ],
+  "2007": [
+   {
+    "gen": "panther3",
+    "cid": 281,
+    "hp": 224,
+    "hp_basis": "SAE net",
+    "rpo": "Modular 4.6 SOHC",
+    "common_name": "4.6 SOHC 2V V8 (PI heads)",
+    "trims": [
+     "base/Standard",
+     "LX"
+    ],
+    "nhra": false,
+    "sources": [
+     {
+      "name": "Ford 2007 Crown Victoria brochure (Ford Heritage Vault)",
+      "url": "https://fordheritagevault.com/ (record uuid be25840aabf54369b21302b17d38d293)",
+      "says": "224-hp 4.6L SOHC; Handling and Performance Package 239 hp"
+     },
+     {
+      "name": "Wikipedia - Ford Crown Victoria (incl. horsepower/torque table)",
+      "url": "https://en.wikipedia.org/wiki/Ford_Crown_Victoria",
+      "says": "2003-2012: 224 hp single exhaust"
+     },
+     {
+      "name": "Consumer Guide - 1992-07 Ford Crown Victoria used-car review (incl. yearly pricing/equipment pages)",
+      "url": "https://consumerguide.com/used/1992-07-ford-crown-victoria/",
+      "says": "2007 pricing: 224 / 239 hp"
+     },
+     {
+      "name": "EPA fueleconomy.gov vehicle data",
+      "url": "https://www.fueleconomy.gov/feg/download.shtml",
+      "says": "2007: 4.6 L V8 Crown Victoria (incl. FFV)"
+     }
+    ],
+    "independent_sources": 4,
+    "status": "three_sources_not_nhra",
+    "note": "Flex-fuel (E85) version from 2006 (EPA FFV rows); same rating.",
+    "hp_sources": 3
+   },
+   {
+    "gen": "panther3",
+    "cid": 281,
+    "hp": 239,
+    "hp_basis": "SAE net",
+    "rpo": "Modular 4.6 SOHC",
+    "common_name": "4.6 SOHC 2V V8, dual exhaust",
+    "trims": [
+     "Handling & Performance pkg",
+     "LX Sport"
+    ],
+    "nhra": false,
+    "sources": [
+     {
+      "name": "Ford 2007 Crown Victoria brochure (Ford Heritage Vault)",
+      "url": "https://fordheritagevault.com/ (record uuid be25840aabf54369b21302b17d38d293)",
+      "says": "224-hp 4.6L SOHC; Handling and Performance Package 239 hp"
+     },
+     {
+      "name": "Wikipedia - Ford Crown Victoria (incl. horsepower/torque table)",
+      "url": "https://en.wikipedia.org/wiki/Ford_Crown_Victoria",
+      "says": "2003-2011: 239 hp dual exhaust"
+     },
+     {
+      "name": "Consumer Guide - 1992-07 Ford Crown Victoria used-car review (incl. yearly pricing/equipment pages)",
+      "url": "https://consumerguide.com/used/1992-07-ford-crown-victoria/",
+      "says": "2007 pricing: 224 / 239 hp"
+     }
+    ],
+    "independent_sources": 3,
+    "status": "three_sources_not_nhra",
+    "note": "",
+    "hp_sources": 3
+   },
+   {
+    "gen": "panther3",
+    "cid": 281,
+    "hp": 250,
+    "hp_basis": "SAE net",
+    "rpo": "Modular 4.6 SOHC",
+    "common_name": "4.6 SOHC 2V V8, police dual exhaust (Marauder-style intake)",
+    "trims": [
+     "Police Interceptor"
+    ],
+    "nhra": false,
+    "sources": [
+     {
+      "name": "Wikipedia - Ford Crown Victoria (incl. horsepower/torque table)",
+      "url": "https://en.wikipedia.org/wiki/Ford_Crown_Victoria",
+      "says": "2004-2011: 250 hp, police only (Marauder-style intake, 80 mm MAF)"
+     },
+     {
+      "name": "EPA fueleconomy.gov vehicle data",
+      "url": "https://www.fueleconomy.gov/feg/download.shtml",
+      "says": "2007: 4.6 L V8 Crown Victoria FFV (no separate police row)"
+     },
+     {
+      "name": "Michigan State Police - Police Vehicle Evaluation Model Year 2007 (NCJ 218236)",
+      "url": "https://www.ojp.gov/pdffiles1/nij/nlectc/218236.pdf",
+      "says": "Ford Police Interceptor P71, 4.6L SMFI, dual exhaust: 250 @ 5000 SAE net, 297 lb-ft"
+     }
+    ],
+    "independent_sources": 3,
+    "status": "three_sources_not_nhra",
+    "note": "[v2] Michigan State Police 2007 evaluation gives 250 hp @ 5000. Wikipedia agrees; EPA confirms availability.",
+    "hp_sources": 2
+   }
+  ],
+  "2008": [
+   {
+    "gen": "panther3",
+    "cid": 281,
+    "hp": 224,
+    "hp_basis": "SAE net",
+    "rpo": "Modular 4.6 SOHC",
+    "common_name": "4.6 SOHC 2V V8 (PI heads)",
+    "trims": [
+     "fleet (Standard/LX)"
+    ],
+    "nhra": false,
+    "sources": [
+     {
+      "name": "Wikipedia - Ford Crown Victoria (incl. horsepower/torque table)",
+      "url": "https://en.wikipedia.org/wiki/Ford_Crown_Victoria",
+      "says": "2003-2012: 224 hp single exhaust"
+     },
+     {
+      "name": "EPA fueleconomy.gov vehicle data",
+      "url": "https://www.fueleconomy.gov/feg/download.shtml",
+      "says": "2008: 4.6 L V8 Crown Victoria (incl. FFV)"
+     }
+    ],
+    "independent_sources": 2,
+    "status": "two_sources_agree",
+    "note": "Flex-fuel (E85) version from 2006; retail sales ended after 2007, 2008-11 sold to fleets. [v2] Ford fleet spec pages give 224 for 2009 (@4750) and 2011 (@4800). No Ford sheet for 2008; bracketed by the 2007 brochure and 2009 fleet spec (both 224).",
+    "hp_sources": 1
+   },
+   {
+    "gen": "panther3",
+    "cid": 281,
+    "hp": 239,
+    "hp_basis": "SAE net",
+    "rpo": "Modular 4.6 SOHC",
+    "common_name": "4.6 SOHC 2V V8, dual exhaust",
+    "trims": [
+     "Handling & Performance pkg"
+    ],
+    "nhra": false,
+    "sources": [
+     {
+      "name": "Wikipedia - Ford Crown Victoria (incl. horsepower/torque table)",
+      "url": "https://en.wikipedia.org/wiki/Ford_Crown_Victoria",
+      "says": "2003-2011: 239 hp dual exhaust"
+     }
+    ],
+    "independent_sources": 1,
+    "status": "disputed",
+    "note": "Only Wikipedia lists a civilian dual-exhaust rating for 2008-11; LX Sport ended after 2007. Unverified. [v2] Wikipedia says the LX Sport ended mid-2008, so a 2008 H&P/LX Sport is plausible; no Ford 2008 sheet found. Kept disputed.",
+    "hp_sources": 1
+   },
+   {
+    "gen": "panther3",
+    "cid": 281,
+    "hp": 250,
+    "hp_basis": "SAE net",
+    "rpo": "Modular 4.6 SOHC",
+    "common_name": "4.6 SOHC 2V V8, police dual exhaust (Marauder-style intake)",
+    "trims": [
+     "Police Interceptor"
+    ],
+    "nhra": false,
+    "sources": [
+     {
+      "name": "Ford Fleet - 2008 Police Interceptor brochure (fleet.ford.com via Wayback)",
+      "url": "http://web.archive.org/web/20120917095323/https://www.fleet.ford.com/downloads/brochures/2008/08PoliceIntercep.pdf",
+      "says": "4.6L SOHC V8 250 hp (SAE net) @5000, 297 lb-ft"
+     },
+     {
+      "name": "Wikipedia - Ford Crown Victoria (incl. horsepower/torque table)",
+      "url": "https://en.wikipedia.org/wiki/Ford_Crown_Victoria",
+      "says": "2004-2011: 250 hp, police only (Marauder-style intake, 80 mm MAF)"
+     },
+     {
+      "name": "EPA fueleconomy.gov vehicle data",
+      "url": "https://www.fueleconomy.gov/feg/download.shtml",
+      "says": "2008: 4.6 L V8 Crown Victoria FFV (no separate police row)"
+     }
+    ],
+    "independent_sources": 3,
+    "status": "three_sources_not_nhra",
+    "note": "",
+    "hp_sources": 2
+   }
+  ],
+  "2009": [
+   {
+    "gen": "panther3",
+    "cid": 281,
+    "hp": 224,
+    "hp_basis": "SAE net",
+    "rpo": "Modular 4.6 SOHC",
+    "common_name": "4.6 SOHC 2V V8 (PI heads)",
+    "trims": [
+     "fleet (Standard/LX)"
+    ],
+    "nhra": false,
+    "sources": [
+     {
+      "name": "Wikipedia - Ford Crown Victoria (incl. horsepower/torque table)",
+      "url": "https://en.wikipedia.org/wiki/Ford_Crown_Victoria",
+      "says": "2003-2012: 224 hp single exhaust"
+     },
+     {
+      "name": "EPA fueleconomy.gov vehicle data",
+      "url": "https://www.fueleconomy.gov/feg/download.shtml",
+      "says": "2009: 4.6 L V8 Crown Victoria (incl. FFV)"
+     },
+     {
+      "name": "Ford Fleet - 2009 Crown Victoria specifications (fleet.ford.com via Wayback)",
+      "url": "http://web.archive.org/web/20120421234801/https://www.fleet.ford.com/showroom/2009fleetshowroom/2009-CrownVictoria-specs.asp?EV=0",
+      "says": "4.6L SOHC V8 FFV 224 @ 4750, 265 lb-ft @ 4000"
+     }
+    ],
+    "independent_sources": 3,
+    "status": "three_sources_not_nhra",
+    "note": "Flex-fuel (E85) version from 2006; retail sales ended after 2007, 2008-11 sold to fleets. [v2] Ford fleet spec pages give 224 for 2009 (@4750) and 2011 (@4800).",
+    "hp_sources": 2
+   },
+   {
+    "gen": "panther3",
+    "cid": 281,
+    "hp": null,
+    "hp_basis": "SAE net",
+    "rpo": "Modular 4.6 SOHC",
+    "common_name": "4.6 SOHC 2V V8, dual exhaust",
+    "trims": [
+     "Handling & Performance pkg"
+    ],
+    "nhra": false,
+    "sources": [
+     {
+      "name": "Wikipedia - Ford Crown Victoria (incl. horsepower/torque table)",
+      "url": "https://en.wikipedia.org/wiki/Ford_Crown_Victoria",
+      "says": "2003-2011: 239 hp dual exhaust"
+     },
+     {
+      "name": "Ford Fleet - 2009 Crown Victoria specifications (fleet.ford.com via Wayback)",
+      "url": "http://web.archive.org/web/20120421234801/https://www.fleet.ford.com/showroom/2009fleetshowroom/2009-CrownVictoria-specs.asp?EV=0",
+      "says": "Specifications list a single engine rating (224); no Handling & Performance package or dual-exhaust rating"
+     }
+    ],
+    "independent_sources": 2,
+    "status": "withheld_unverified",
+    "note": "Only Wikipedia lists a civilian dual-exhaust rating for 2008-11; LX Sport ended after 2007. Unverified. [v2] Withheld: Ford's 2009 and 2011 fleet spec pages list only the 224-hp engine, and Wikipedia says the LX Sport/H&P line ended mid-2008. No evidence the 239-hp dual-exhaust package was sold in the US after 2008.",
+    "hp_sources": 0
+   },
+   {
+    "gen": "panther3",
+    "cid": 281,
+    "hp": 250,
+    "hp_basis": "SAE net",
+    "rpo": "Modular 4.6 SOHC",
+    "common_name": "4.6 SOHC 2V V8, police dual exhaust (Marauder-style intake)",
+    "trims": [
+     "Police Interceptor"
+    ],
+    "nhra": false,
+    "sources": [
+     {
+      "name": "Ford Fleet - 2009 Police Interceptor brochure (fleet.ford.com via Wayback)",
+      "url": "http://web.archive.org/web/20120915041914/https://www.fleet.ford.com/downloads/brochures/2009/09PoliceIntercep_2.pdf",
+      "says": "4.6L SOHC V8 250 hp (SAE net) @5000, 297 lb-ft"
+     },
+     {
+      "name": "Wikipedia - Ford Crown Victoria (incl. horsepower/torque table)",
+      "url": "https://en.wikipedia.org/wiki/Ford_Crown_Victoria",
+      "says": "2004-2011: 250 hp, police only (Marauder-style intake, 80 mm MAF)"
+     },
+     {
+      "name": "EPA fueleconomy.gov vehicle data",
+      "url": "https://www.fueleconomy.gov/feg/download.shtml",
+      "says": "2009: 4.6 L V8 Crown Victoria FFV (no separate police row)"
+     }
+    ],
+    "independent_sources": 3,
+    "status": "three_sources_not_nhra",
+    "note": "",
+    "hp_sources": 2
+   }
+  ],
+  "2010": [
+   {
+    "gen": "panther3",
+    "cid": 281,
+    "hp": 224,
+    "hp_basis": "SAE net",
+    "rpo": "Modular 4.6 SOHC",
+    "common_name": "4.6 SOHC 2V V8 (PI heads)",
+    "trims": [
+     "fleet (Standard/LX)"
+    ],
+    "nhra": false,
+    "sources": [
+     {
+      "name": "Wikipedia - Ford Crown Victoria (incl. horsepower/torque table)",
+      "url": "https://en.wikipedia.org/wiki/Ford_Crown_Victoria",
+      "says": "2003-2012: 224 hp single exhaust"
+     },
+     {
+      "name": "EPA fueleconomy.gov vehicle data",
+      "url": "https://www.fueleconomy.gov/feg/download.shtml",
+      "says": "2010: 4.6 L V8 Crown Victoria (incl. FFV)"
+     }
+    ],
+    "independent_sources": 2,
+    "status": "two_sources_agree",
+    "note": "Flex-fuel (E85) version from 2006; retail sales ended after 2007, 2008-11 sold to fleets. [v2] Ford fleet spec pages give 224 for 2009 (@4750) and 2011 (@4800). No 2010 civilian spec found; Ford's 2010 Commercial (taxi/livery) page lists 220 @ 4750, a Ford-internal inconsistency against 224 on the 2009 and 2011 fleet pages.",
+    "hp_sources": 1
+   },
+   {
+    "gen": "panther3",
+    "cid": 281,
+    "hp": null,
+    "hp_basis": "SAE net",
+    "rpo": "Modular 4.6 SOHC",
+    "common_name": "4.6 SOHC 2V V8, dual exhaust",
+    "trims": [
+     "Handling & Performance pkg"
+    ],
+    "nhra": false,
+    "sources": [
+     {
+      "name": "Wikipedia - Ford Crown Victoria (incl. horsepower/torque table)",
+      "url": "https://en.wikipedia.org/wiki/Ford_Crown_Victoria",
+      "says": "2003-2011: 239 hp dual exhaust"
+     }
+    ],
+    "independent_sources": 1,
+    "status": "withheld_unverified",
+    "note": "Only Wikipedia lists a civilian dual-exhaust rating for 2008-11; LX Sport ended after 2007. Unverified. [v2] Withheld: Ford's 2009 and 2011 fleet spec pages list only the 224-hp engine, and Wikipedia says the LX Sport/H&P line ended mid-2008. No evidence the 239-hp dual-exhaust package was sold in the US after 2008.",
+    "hp_sources": 0
+   },
+   {
+    "gen": "panther3",
+    "cid": 281,
+    "hp": 250,
+    "hp_basis": "SAE net",
+    "rpo": "Modular 4.6 SOHC",
+    "common_name": "4.6 SOHC 2V V8, police dual exhaust (Marauder-style intake)",
+    "trims": [
+     "Police Interceptor"
+    ],
+    "nhra": false,
+    "sources": [
+     {
+      "name": "Ford Fleet - 2010 Ford Fleet Police Vehicles brochure (fleet.ford.com via Wayback)",
+      "url": "http://web.archive.org/web/20120904211418/https://www.fleet.ford.com/downloads/brochures/2010/Police_brochure.pdf",
+      "says": "4.6L SOHC V8 FFV 250 hp (SAE net) @5000, 297 lb-ft"
+     },
+     {
+      "name": "Wikipedia - Ford Crown Victoria (incl. horsepower/torque table)",
+      "url": "https://en.wikipedia.org/wiki/Ford_Crown_Victoria",
+      "says": "2004-2011: 250 hp, police only (Marauder-style intake, 80 mm MAF)"
+     },
+     {
+      "name": "EPA fueleconomy.gov vehicle data",
+      "url": "https://www.fueleconomy.gov/feg/download.shtml",
+      "says": "2010: 4.6 L V8 Crown Victoria FFV (no separate police row)"
+     }
+    ],
+    "independent_sources": 3,
+    "status": "three_sources_not_nhra",
+    "note": "",
+    "hp_sources": 2
+   }
+  ],
+  "2011": [
+   {
+    "gen": "panther3",
+    "cid": 281,
+    "hp": 224,
+    "hp_basis": "SAE net",
+    "rpo": "Modular 4.6 SOHC",
+    "common_name": "4.6 SOHC 2V V8 (PI heads)",
+    "trims": [
+     "fleet (Standard/LX)"
+    ],
+    "nhra": false,
+    "sources": [
+     {
+      "name": "Wikipedia - Ford Crown Victoria (incl. horsepower/torque table)",
+      "url": "https://en.wikipedia.org/wiki/Ford_Crown_Victoria",
+      "says": "2003-2012: 224 hp single exhaust"
+     },
+     {
+      "name": "EPA fueleconomy.gov vehicle data",
+      "url": "https://www.fueleconomy.gov/feg/download.shtml",
+      "says": "2011: 4.6 L V8 Crown Victoria (incl. FFV)"
+     },
+     {
+      "name": "Ford Fleet - 2011 Crown Victoria specifications (fleet.ford.com via Wayback)",
+      "url": "http://web.archive.org/web/20121224032031/https://www.fleet.ford.com/showroom/2011fleetshowroom/2011-CrownVictoria-specs.asp?EV=0",
+      "says": "4.6L SOHC V8 FFV 224 @ 4,800, 275 lb-ft @ 4,000"
+     }
+    ],
+    "independent_sources": 3,
+    "status": "three_sources_not_nhra",
+    "note": "Flex-fuel (E85) version from 2006; retail sales ended after 2007, 2008-11 sold to fleets. [v2] Ford fleet spec pages give 224 for 2009 (@4750) and 2011 (@4800).",
+    "hp_sources": 2
+   },
+   {
+    "gen": "panther3",
+    "cid": 281,
+    "hp": null,
+    "hp_basis": "SAE net",
+    "rpo": "Modular 4.6 SOHC",
+    "common_name": "4.6 SOHC 2V V8, dual exhaust",
+    "trims": [
+     "Handling & Performance pkg"
+    ],
+    "nhra": false,
+    "sources": [
+     {
+      "name": "Wikipedia - Ford Crown Victoria (incl. horsepower/torque table)",
+      "url": "https://en.wikipedia.org/wiki/Ford_Crown_Victoria",
+      "says": "2003-2011: 239 hp dual exhaust"
+     },
+     {
+      "name": "Ford Fleet - 2011 Crown Victoria specifications (fleet.ford.com via Wayback)",
+      "url": "http://web.archive.org/web/20121224032031/https://www.fleet.ford.com/showroom/2011fleetshowroom/2011-CrownVictoria-specs.asp?EV=0",
+      "says": "Specifications list a single engine rating (224); no Handling & Performance package or dual-exhaust rating"
+     }
+    ],
+    "independent_sources": 2,
+    "status": "withheld_unverified",
+    "note": "Only Wikipedia lists a civilian dual-exhaust rating for 2008-11; LX Sport ended after 2007. Unverified. [v2] Withheld: Ford's 2009 and 2011 fleet spec pages list only the 224-hp engine, and Wikipedia says the LX Sport/H&P line ended mid-2008. No evidence the 239-hp dual-exhaust package was sold in the US after 2008.",
+    "hp_sources": 0
+   },
+   {
+    "gen": "panther3",
+    "cid": 281,
+    "hp": 250,
+    "hp_basis": "SAE net",
+    "rpo": "Modular 4.6 SOHC",
+    "common_name": "4.6 SOHC 2V V8, police dual exhaust (Marauder-style intake)",
+    "trims": [
+     "Police Interceptor"
+    ],
+    "nhra": false,
+    "sources": [
+     {
+      "name": "Wikipedia - Ford Crown Victoria (incl. horsepower/torque table)",
+      "url": "https://en.wikipedia.org/wiki/Ford_Crown_Victoria",
+      "says": "2004-2011: 250 hp, police only (Marauder-style intake, 80 mm MAF)"
+     },
+     {
+      "name": "EPA fueleconomy.gov vehicle data",
+      "url": "https://www.fueleconomy.gov/feg/download.shtml",
+      "says": "2011: 4.6 L V8 Crown Victoria FFV (no separate police row)"
+     },
+     {
+      "name": "Michigan State Police - Police Vehicle Evaluation Model Year 2011 (NCJ 233925)",
+      "url": "https://www.ojp.gov/pdffiles1/nij/nlectc/233925.pdf",
+      "says": "Ford Police Interceptor 4.6L SMFI: 250 @ 5000 SAE net (3.27 and 3.55 axle cars)"
+     }
+    ],
+    "independent_sources": 3,
+    "status": "three_sources_not_nhra",
+    "note": "[v2] Michigan State Police 2011 evaluation gives 250 hp @ 5000. Wikipedia agrees; EPA confirms availability.",
+    "hp_sources": 2
+   }
+  ],
+  "2012": [
+   {
+    "gen": "panther3",
+    "cid": 281,
+    "hp": null,
+    "hp_basis": "SAE net",
+    "rpo": "Modular 4.6 SOHC",
+    "common_name": "4.6 SOHC 2V V8 FFV",
+    "trims": [
+     "fleet"
+    ],
+    "nhra": false,
+    "sources": [
+     {
+      "name": "Wikipedia - Ford Crown Victoria (incl. horsepower/torque table)",
+      "url": "https://en.wikipedia.org/wiki/Ford_Crown_Victoria",
+      "says": "2003-2012: 224 hp single exhaust; 2012 sales 4,429"
+     },
+     {
+      "name": "POLICE Magazine - 2012 Michigan Vehicle Tests: Patrol Cars",
+      "url": "https://www.policemag.com/340642/2012-michigan-vehicle-tests-patrol-cars",
+      "says": "For the first time in two decades, the patrol cars at the Michigan State Police evaluations didn't include a Ford Crown Victoria Police Interceptor (2012 MY)"
+     }
+    ],
+    "independent_sources": 2,
+    "status": "excluded_not_us_market",
+    "note": "[v2] Not a US-market model year. Wikipedia: the 2012 batch was built Aug-Sep 2011 for Middle East (GCC) export because 2012 US/Canada rules required stability control. No 2012 Crown Victoria in EPA data, no 2012 Crown Victoria page on Ford's fleet site (Wayback index), and no CVPI at the 2012 MSP tests (POLICE Magazine).",
+    "hp_sources": 1
+   }
+  ]
+ },
+ "source_index": [
+  {
+   "name": "Ford 1980 LTD brochure (Ford Heritage Vault)",
+   "url": "https://fordheritagevault.com/ (record uuid d0f31fc12548499982590fff7f680cf5)",
+   "type": "manufacturer"
+  },
+  {
+   "name": "Wikipedia - Ford LTD Crown Victoria",
+   "url": "https://en.wikipedia.org/wiki/Ford_LTD_Crown_Victoria",
+   "type": "wikipedia"
+  },
+  {
+   "name": "NHRA Stock Car Classification Guide",
+   "url": "nhra_ford-crown-victoria-1980-2012.json",
+   "type": "registry"
+  },
+  {
+   "name": "Ford 1981 LTD brochure (Ford Heritage Vault)",
+   "url": "https://fordheritagevault.com/ (record uuid b3166567b3bf43b5b6b1fc9f0d816352)",
+   "type": "manufacturer"
+  },
+  {
+   "name": "Ford 1982 LTD brochure (Ford Heritage Vault)",
+   "url": "https://fordheritagevault.com/ (record uuid 1e47d13c4f544af3a257c61a61c25572)",
+   "type": "manufacturer"
+  },
+  {
+   "name": "Ford 1983 LTD Crown Victoria brochure (Ford Heritage Vault)",
+   "url": "https://fordheritagevault.com/ (record uuid a9a1c81107974170b8ee07363ac6230d)",
+   "type": "manufacturer"
+  },
+  {
+   "name": "Ford 1984 LTD Crown Victoria brochure (Ford Heritage Vault)",
+   "url": "https://fordheritagevault.com/ (record uuid efc9dc983b25421eb12eaf6c19f83800)",
+   "type": "manufacturer"
+  },
+  {
+   "name": "EPA fueleconomy.gov vehicle data",
+   "url": "https://www.fueleconomy.gov/feg/download.shtml",
+   "type": "government"
+  },
+  {
+   "name": "Ford 1985 LTD Crown Victoria brochure (Ford Heritage Vault)",
+   "url": "https://fordheritagevault.com/ (record uuid 33303eed8c62443d9dce95eb164cfc9f)",
+   "type": "manufacturer"
+  },
+  {
+   "name": "Ford 1986 LTD Crown Victoria brochure (Ford Heritage Vault)",
+   "url": "https://fordheritagevault.com/ (record uuid 060408762705499abe7bcc2922d8ef8b)",
+   "type": "manufacturer"
+  },
+  {
+   "name": "Ford 1987 LTD Crown Victoria brochure (Ford Heritage Vault)",
+   "url": "https://fordheritagevault.com/ (record uuid ea9628f72e4f4387b883d6012968cb67)",
+   "type": "manufacturer"
+  },
+  {
+   "name": "Ford 1988 LTD Crown Victoria brochure (Ford Heritage Vault)",
+   "url": "https://fordheritagevault.com/ (record uuid b67d833b533842698a2331a0694a396c)",
+   "type": "manufacturer"
+  },
+  {
+   "name": "Ford 1988 LTD Crown Victoria Police Package brochure (Ford Heritage Vault)",
+   "url": "https://fordheritagevault.com/ (record uuid 50db2a0f58024e27b13e5df7618693c3)",
+   "type": "manufacturer"
+  },
+  {
+   "name": "Ford 1989 LTD Crown Victoria brochure (Ford Heritage Vault)",
+   "url": "https://fordheritagevault.com/ (record uuid 31454d9ff2a64a02ab1b781ccb65a1da)",
+   "type": "manufacturer"
+  },
+  {
+   "name": "Ford 1989 LTD Crown Victoria Police Packages brochure (Ford Heritage Vault)",
+   "url": "https://fordheritagevault.com/ (record uuid 6fc3c05977d04f9fae4d42166e6523ec)",
+   "type": "manufacturer"
+  },
+  {
+   "name": "Ford 1990 LTD Crown Victoria brochure (Ford Heritage Vault)",
+   "url": "https://fordheritagevault.com/ (record uuid 95fe2a4c24da46bf98c19b18d122c67e)",
+   "type": "manufacturer"
+  },
+  {
+   "name": "Ford 1991 LTD Crown Victoria brochure (Ford Heritage Vault)",
+   "url": "https://fordheritagevault.com/ (record uuid 21436d4adfec4cc08dbd5aac65358fa3)",
+   "type": "manufacturer"
+  },
+  {
+   "name": "Ford 1991 LTD Crown Victoria Police Packages brochure (Ford Heritage Vault)",
+   "url": "https://fordheritagevault.com/ (record uuid 0d67e603afd34acca7feef09972fde47)",
+   "type": "manufacturer"
+  },
+  {
+   "name": "Ford 1992 Crown Victoria brochure (Ford Heritage Vault)",
+   "url": "https://fordheritagevault.com/ (record uuid 47baa518c4804650867bb0252d41e0ae)",
+   "type": "manufacturer"
+  },
+  {
+   "name": "Wikipedia - Ford Crown Victoria (incl. horsepower/torque table)",
+   "url": "https://en.wikipedia.org/wiki/Ford_Crown_Victoria",
+   "type": "wikipedia"
+  },
+  {
+   "name": "Consumer Guide - 1992-07 Ford Crown Victoria used-car review (incl. yearly pricing/equipment pages)",
+   "url": "https://consumerguide.com/used/1992-07-ford-crown-victoria/",
+   "type": "publication"
+  },
+  {
+   "name": "Ford 1992 Crown Victoria Police Package brochure (Ford Heritage Vault)",
+   "url": "https://fordheritagevault.com/ (record uuid ee04574fc0b34627902c397a3b423826)",
+   "type": "manufacturer"
+  },
+  {
+   "name": "Ford 1993 Crown Victoria Interceptor Police Package brochure (Ford Heritage Vault)",
+   "url": "https://fordheritagevault.com/ (record uuid 2d0cf7bea3734254b7886dee09811deb)",
+   "type": "manufacturer"
+  },
+  {
+   "name": "Ford 1994 Crown Victoria brochure (Ford Heritage Vault)",
+   "url": "https://fordheritagevault.com/ (record uuid a76a5e8b28c1456e9e32e671acc783d4)",
+   "type": "manufacturer"
+  },
+  {
+   "name": "Ford 1994 Crown Victoria Interceptor Police Package brochure (Ford Heritage Vault)",
+   "url": "https://fordheritagevault.com/ (record uuid f40bc531b3664113953daf04a0e34d23)",
+   "type": "manufacturer"
+  },
+  {
+   "name": "Ford 1995 Crown Victoria brochure (Ford Heritage Vault)",
+   "url": "https://fordheritagevault.com/ (record uuid 7294b98cace8471d9b16722fa3234460)",
+   "type": "manufacturer"
+  },
+  {
+   "name": "Ford 1996 Crown Victoria brochure (Ford Heritage Vault)",
+   "url": "https://fordheritagevault.com/ (record uuid e111ad9d8b664f91a5ade15ad3066780)",
+   "type": "manufacturer"
+  },
+  {
+   "name": "Ford 1996 Crown Victoria Interceptor Police Packages brochure (Ford Heritage Vault)",
+   "url": "https://fordheritagevault.com/ (record uuid 11989257bbec4a4481f755c898935dc5)",
+   "type": "manufacturer"
+  },
+  {
+   "name": "Ford 1997 Crown Victoria brochure (Ford Heritage Vault)",
+   "url": "https://fordheritagevault.com/ (record uuid 851af295d87a4394aeadc0f3b23f962a)",
+   "type": "manufacturer"
+  },
+  {
+   "name": "Ford 1998 Crown Victoria brochure (Ford Heritage Vault)",
+   "url": "https://fordheritagevault.com/ (record uuid 4dcadc9de2f2422b922bcf5d4958373f)",
+   "type": "manufacturer"
+  },
+  {
+   "name": "Ford 1998 Police Interceptor and Special Service Vehicles brochure (Ford Heritage Vault)",
+   "url": "https://fordheritagevault.com/ (record uuid 926c7eae6ec0496ca66303f5e0553425)",
+   "type": "manufacturer"
+  },
+  {
+   "name": "Ford 1999 Crown Victoria brochure (Ford Heritage Vault)",
+   "url": "https://fordheritagevault.com/ (record uuid bc4bdba709aa4eeda425be3c043ff9c0)",
+   "type": "manufacturer"
+  },
+  {
+   "name": "Ford 1999 Police Interceptor and Special Service Vehicles brochure (Ford Heritage Vault)",
+   "url": "https://fordheritagevault.com/ (record uuid 09cfd2d125704d65b102271c6d1693ff)",
+   "type": "manufacturer"
+  },
+  {
+   "name": "Ford 2000 Police Interceptor and Special Service Vehicles fleet brochure (Ford Heritage Vault)",
+   "url": "https://fordheritagevault.com/ (record uuid 7653ccfe02f8442da94aa480e41ea143)",
+   "type": "manufacturer"
+  },
+  {
+   "name": "Ford 2001 Police Interceptor and Special Service Vehicles fleet brochure (Ford Heritage Vault)",
+   "url": "https://fordheritagevault.com/ (record uuid b57624b822034b3e8b59c8c4d89de3f4)",
+   "type": "manufacturer"
+  },
+  {
+   "name": "Ford 2002 Taurus, Windstar, Crown Victoria and E-Series brochure (Ford Heritage Vault)",
+   "url": "https://fordheritagevault.com/ (record uuid efd6380c3faa48f69646f137b21f6b5b)",
+   "type": "manufacturer"
+  },
+  {
+   "name": "Ford Fleet - 2002 Crown Victoria Police Interceptor package sheet (fleet.ford.com via Wayback)",
+   "url": "http://web.archive.org/web/20030406003624/http://www.fleet.ford.com:80/downloads/specvehpolice/police.pdf",
+   "type": "manufacturer"
+  },
+  {
+   "name": "Ford 2003 Crown Victoria brochure (Ford Heritage Vault)",
+   "url": "https://fordheritagevault.com/ (record uuid 95675a8d7c6d47bfb38ed1acd12b4ba2)",
+   "type": "manufacturer"
+  },
+  {
+   "name": "POLICE Magazine - 2003 Michigan Vehicle Tests",
+   "url": "https://www.policemag.com/articles/2003-michigan-vehicle-tests",
+   "type": "publication"
+  },
+  {
+   "name": "Ford 2004 Crown Victoria brochure (Ford Heritage Vault)",
+   "url": "https://fordheritagevault.com/ (record uuid 5aafcbfd24314115ad88f70b4e7a3332)",
+   "type": "manufacturer"
+  },
+  {
+   "name": "Ford 2005 Crown Victoria brochure (Ford Heritage Vault)",
+   "url": "https://fordheritagevault.com/ (record uuid f81b8d6baf4f463d9632f47309f46236)",
+   "type": "manufacturer"
+  },
+  {
+   "name": "Ford Fleet - 2005 Crown Victoria Police Interceptor specs page (fleet.ford.com via Wayback)",
+   "url": "http://web.archive.org/web/20060315064055/https://www.fleet.ford.com/showroom/2005fleetshowroom/2005-CrVicPoliceInt-specs.asp?EV=0",
+   "type": "manufacturer"
+  },
+  {
+   "name": "Ford 2006 Crown Victoria brochure (Ford Heritage Vault)",
+   "url": "https://fordheritagevault.com/ (record uuid a4ce4fbeb1e649b5918393fd1ed25102)",
+   "type": "manufacturer"
+  },
+  {
+   "name": "Ford Fleet - 2006 Crown Victoria Police Interceptor competitive card (fleet.ford.com via Wayback)",
+   "url": "http://web.archive.org/web/20060315062712/https://www.fleet.ford.com/downloads/brochures/2006/CrVicInt_CompCard.pdf",
+   "type": "manufacturer"
+  },
+  {
+   "name": "Ford 2007 Crown Victoria brochure (Ford Heritage Vault)",
+   "url": "https://fordheritagevault.com/ (record uuid be25840aabf54369b21302b17d38d293)",
+   "type": "manufacturer"
+  },
+  {
+   "name": "Ford Fleet - 2008 Police Interceptor brochure (fleet.ford.com via Wayback)",
+   "url": "http://web.archive.org/web/20120917095323/https://www.fleet.ford.com/downloads/brochures/2008/08PoliceIntercep.pdf",
+   "type": "manufacturer"
+  },
+  {
+   "name": "Ford Fleet - 2009 Police Interceptor brochure (fleet.ford.com via Wayback)",
+   "url": "http://web.archive.org/web/20120915041914/https://www.fleet.ford.com/downloads/brochures/2009/09PoliceIntercep_2.pdf",
+   "type": "manufacturer"
+  },
+  {
+   "name": "Ford Fleet - 2010 Ford Fleet Police Vehicles brochure (fleet.ford.com via Wayback)",
+   "url": "http://web.archive.org/web/20120904211418/https://www.fleet.ford.com/downloads/brochures/2010/Police_brochure.pdf",
+   "type": "manufacturer"
+  },
+  {
+   "name": "Michigan State Police - 1980 Model Year Patrol Vehicle Evaluation (NCJ 78761)",
+   "url": "https://www.ojp.gov/pdffiles1/Photocopy/78761NCJRS.pdf",
+   "type": "government"
+  },
+  {
+   "name": "Michigan State Police - 1981 Model Year Patrol Vehicle Evaluation (NCJ 78766)",
+   "url": "https://www.ojp.gov/pdffiles1/Digitization/78766NCJRS.pdf",
+   "type": "government"
+  },
+  {
+   "name": "Michigan State Police - 1982 Model Year Patrol Vehicle Evaluation (NCJ 90353)",
+   "url": "https://www.ojp.gov/pdffiles1/Digitization/90353NCJRS.pdf",
+   "type": "government"
+  },
+  {
+   "name": "Michigan State Police - 1983 Model Year Patrol Vehicle Evaluation (NCJ 90183)",
+   "url": "https://www.ojp.gov/pdffiles1/Digitization/90183NCJRS.pdf",
+   "type": "government"
+  },
+  {
+   "name": "Michigan State Police - 1987 Model Year Patrol Vehicle Testing (NCJ 104406)",
+   "url": "https://www.ojp.gov/pdffiles1/Digitization/104406NCJRS.pdf",
+   "type": "government"
+  },
+  {
+   "name": "NIJ/NLECTC - Michigan State Police Tests 2000 Patrol Vehicles (bulletin, NCJ 206448)",
+   "url": "https://www.ojp.gov/ (NCJ 206448; scratchpad cv/msp_206448.pdf)",
+   "type": "government"
+  },
+  {
+   "name": "NIJ/NLECTC - Michigan State Police Tests 2004 Patrol Vehicles (NCJ 206094)",
+   "url": "https://www.ojp.gov/pdffiles1/nij/nlectc/206094.pdf",
+   "type": "government"
+  },
+  {
+   "name": "Michigan State Police - Police Vehicle Evaluation Model Year 2007 (NCJ 218236)",
+   "url": "https://www.ojp.gov/pdffiles1/nij/nlectc/218236.pdf",
+   "type": "government"
+  },
+  {
+   "name": "Michigan State Police - Police Vehicle Evaluation Model Year 2011 (NCJ 233925)",
+   "url": "https://www.ojp.gov/pdffiles1/nij/nlectc/233925.pdf",
+   "type": "government"
+  },
+  {
+   "name": "Ford Fleet - 2009 Crown Victoria specifications (fleet.ford.com via Wayback)",
+   "url": "http://web.archive.org/web/20120421234801/https://www.fleet.ford.com/showroom/2009fleetshowroom/2009-CrownVictoria-specs.asp?EV=0",
+   "type": "manufacturer"
+  },
+  {
+   "name": "Ford Fleet - 2011 Crown Victoria specifications (fleet.ford.com via Wayback)",
+   "url": "http://web.archive.org/web/20121224032031/https://www.fleet.ford.com/showroom/2011fleetshowroom/2011-CrownVictoria-specs.asp?EV=0",
+   "type": "manufacturer"
+  },
+  {
+   "name": "Ford Fleet - 2010 Crown Victoria Commercial specifications (fleet.ford.com via Wayback)",
+   "url": "http://web.archive.org/web/20120422003453/https://www.fleet.ford.com/showroom/2010fleetshowroom/2010-CrVicComm-specs.asp?EV=0",
+   "type": "manufacturer"
+  },
+  {
+   "name": "POLICE Magazine - 2012 Michigan Vehicle Tests: Patrol Cars",
+   "url": "https://www.policemag.com/340642/2012-michigan-vehicle-tests-patrol-cars",
+   "type": "publication"
+  },
+  {
+   "name": "California Air Resources Board DriveClean - Crown Victoria CNG listings",
+   "url": "https://driveclean.ca.gov/taxonomy/term/36159",
+   "type": "government"
+  }
+ ],
+ "notes": "All Ford material (Ford Heritage Vault brochures, fleet.ford.com archives) counts as ONE source; Wikipedia articles count as ONE. Excluded: 1955-56 Ford Fairlane Crown Victoria (a Fairlane trim, not this model line). 1980-82 rows are the LTD Crown Victoria trim of the full-size LTD; LTD/LTD S-only NHRA rows (e.g. 1982 351/165 on LTD S) are left out. GrandMarq.net \"Box Panther Horsepower/Torque Figures\" (club/forum site that Wikipedia cites) used as context only, not counted. KBB specs pages checked and rejected (inconsistent: 2004 220 hp, 2006 250 hp, 2007 220 hp). hp_sources = number of non-EPA sources that state the HP figure. The web-search budget ran out before a second reputable HP source could be found for the 1983-91 civilian ratings and 2008-11. Hemmings/MotorTrend/Car and Driver are blocked; Michigan State Police full reports (ncjrs.gov) returned errors. [v2 2026-10-14] Michigan State Police patrol-vehicle evaluations (ojp.gov/NCJRS scans; spec tables plus independent testing) used as an independent government source. MSP 1980 and 1982 reports cover LTD/LTD S police cars only (1980 LTD S 351W H.O. 172 @ 3400; 1982 LTD 351 H.O. 165 @ 3600) - context, not Crown Victoria rows. Archive.org Standard Catalog books are lending-restricted (no text access). No reputable source found for the 1984-86 police 351 H.O. rating, the 1984-85 '155 hp' engine, the 1980-81 302 ratings, or CNG horsepower beyond Ford's 1998 sheet.",
+ "v2_changes": [
+  {
+   "year": "1980",
+   "cid": 302,
+   "engine": "5.0 (302) V8 2-bbl variable venturi",
+   "hp": 130,
+   "status": "disputed",
+   "change": "note only: no reputable 302 rating found (130 vs NHRA 132)"
+  },
+  {
+   "year": "1981",
+   "cid": 351,
+   "engine": "5.8 (351) HO V8 (police/fleet)",
+   "hp": 165,
+   "status": "confirmed",
+   "change": "added MSP 1981 (165 @ 3600); two_sources_agree -> confirmed"
+  },
+  {
+   "year": "1981",
+   "cid": 302,
+   "engine": "5.0 (302) V8 2-bbl VV",
+   "hp": 125,
+   "status": "disputed",
+   "change": "note only; no new rating source"
+  },
+  {
+   "year": "1983",
+   "cid": 302,
+   "engine": "5.0 (302) V8 CFI (throttle-body EFI)",
+   "hp": 130,
+   "status": "two_sources_agree",
+   "change": "added MSP 1983: 302 CFI = 130 @ 3200 (one reputable HP source; engine has 3 sources)"
+  },
+  {
+   "year": "1983",
+   "cid": 351,
+   "engine": "5.8 (351) H.O. V8 VV carb, dual exhaust (police/fleet)",
+   "hp": 165,
+   "status": "two_sources_agree",
+   "change": "existence confirmed (MSP 1983); HP null -> 165 (H.O., dual exhaust); disputed -> two_sources_agree"
+  },
+  {
+   "year": "1984",
+   "cid": 351,
+   "engine": "5.8 (351) HO V8 VV carb (police)",
+   "hp": null,
+   "status": "disputed",
+   "change": "HP 180 withheld (null): MSP gives 165 for 1983 and 180 for 1987; no year-specific source"
+  },
+  {
+   "year": "1985",
+   "cid": 351,
+   "engine": "5.8 (351) HO V8 VV carb (police)",
+   "hp": null,
+   "status": "disputed",
+   "change": "HP 180 withheld (null): MSP gives 165 for 1983 and 180 for 1987; no year-specific source"
+  },
+  {
+   "year": "1986",
+   "cid": 351,
+   "engine": "5.8 (351) HO V8 VV carb (police)",
+   "hp": null,
+   "status": "disputed",
+   "change": "HP 180 withheld (null): MSP gives 165 for 1983 and 180 for 1987; no year-specific source"
+  },
+  {
+   "year": "1984",
+   "cid": 302,
+   "engine": "5.0 (302) V8 CFI, dual exhaust (optional)",
+   "hp": 155,
+   "status": "disputed",
+   "change": "note only; still unverified"
+  },
+  {
+   "year": "1985",
+   "cid": 302,
+   "engine": "5.0 (302) V8 CFI, dual exhaust (optional)",
+   "hp": 155,
+   "status": "disputed",
+   "change": "note only; still unverified"
+  },
+  {
+   "year": "1987",
+   "cid": 351,
+   "engine": "5.8 (351) HO V8 VV carb (police)",
+   "hp": 180,
+   "status": "three_sources_not_nhra",
+   "change": "added MSP 1987 (180 @ 3600); disputed -> three_sources_not_nhra"
+  },
+  {
+   "year": "1987",
+   "cid": 302,
+   "engine": "5.0 (302) V8 SEFI, police dual exhaust",
+   "hp": 160,
+   "status": "two_sources_agree",
+   "change": "NEW ROW: 302 police dual exhaust 160 @ 3400 (MSP 1987)"
+  },
+  {
+   "year": "1990",
+   "cid": 351,
+   "engine": "5.8 (351) HO V8 VV carb (police)",
+   "hp": 180,
+   "status": "two_sources_agree",
+   "change": "disputed -> two_sources_agree (engine: Wikipedia + EPA; 180 bracketed by Ford 1989/1991 and MSP 1987)"
+  },
+  {
+   "year": "1990",
+   "cid": 302,
+   "engine": "5.0 (302) V8 SEFI, dual exhaust",
+   "hp": 160,
+   "status": "two_sources_agree",
+   "change": "note: MSP 1987 is a partial third source for the 160 dual-exhaust rating; status unchanged"
+  },
+  {
+   "year": "1991",
+   "cid": 302,
+   "engine": "5.0 (302) V8 SEFI, dual exhaust",
+   "hp": 160,
+   "status": "two_sources_agree",
+   "change": "note: MSP 1987 is a partial third source for the 160 dual-exhaust rating; status unchanged"
+  },
+  {
+   "year": "1990",
+   "cid": 302,
+   "engine": "5.0 (302) V8 SEFI, police dual exhaust",
+   "hp": 160,
+   "status": "two_sources_agree",
+   "change": "note: MSP 1987 is a partial third source for the 160 dual-exhaust rating; status unchanged"
+  },
+  {
+   "year": "2000",
+   "cid": 281,
+   "engine": "4.6 SOHC dedicated natural gas (CNG/NGV)",
+   "hp": null,
+   "status": "three_sources_not_nhra",
+   "change": "added NIJ/MSP 2000 bulletin (existence); -> three_sources_not_nhra; hp stays null"
+  },
+  {
+   "year": "2003",
+   "cid": 281,
+   "engine": "4.6 SOHC dedicated natural gas (CNG/NGV)",
+   "hp": null,
+   "status": "disputed",
+   "change": "note only: CARB listing found but likely EPA-derived; still disputed"
+  },
+  {
+   "year": "2004",
+   "cid": 281,
+   "engine": "4.6 SOHC dedicated natural gas (CNG/NGV)",
+   "hp": null,
+   "status": "three_sources_not_nhra",
+   "change": "added MSP 2004 bulletin; -> three_sources_not_nhra; hp null"
+  },
+  {
+   "year": "1998",
+   "cid": 281,
+   "engine": "4.6 SOHC dedicated natural gas (CNG/NGV)",
+   "hp": 175,
+   "status": "disputed",
+   "change": "note only; 175 remains Ford-only"
+  },
+  {
+   "year": "2004",
+   "cid": 281,
+   "engine": "4.6 SOHC 2V V8, police dual exhaust (Marauder-style intake)",
+   "hp": 250,
+   "status": "three_sources_not_nhra",
+   "change": "added MSP 2004 (250); two_sources_agree -> three_sources_not_nhra"
+  },
+  {
+   "year": "2007",
+   "cid": 281,
+   "engine": "4.6 SOHC 2V V8, police dual exhaust (Marauder-style intake)",
+   "hp": 250,
+   "status": "three_sources_not_nhra",
+   "change": "added MSP 2007 (250); two_sources_agree -> three_sources_not_nhra"
+  },
+  {
+   "year": "2011",
+   "cid": 281,
+   "engine": "4.6 SOHC 2V V8, police dual exhaust (Marauder-style intake)",
+   "hp": 250,
+   "status": "three_sources_not_nhra",
+   "change": "added MSP 2011 (250); two_sources_agree -> three_sources_not_nhra"
+  },
+  {
+   "year": "2008",
+   "cid": 281,
+   "engine": "4.6 SOHC 2V V8 (PI heads)",
+   "hp": 224,
+   "status": "two_sources_agree",
+   "change": "added Ford fleet spec (224); note only (bracketed)"
+  },
+  {
+   "year": "2009",
+   "cid": 281,
+   "engine": "4.6 SOHC 2V V8 (PI heads)",
+   "hp": 224,
+   "status": "three_sources_not_nhra",
+   "change": "added Ford fleet spec (224); -> three_sources_not_nhra"
+  },
+  {
+   "year": "2010",
+   "cid": 281,
+   "engine": "4.6 SOHC 2V V8 (PI heads)",
+   "hp": 224,
+   "status": "two_sources_agree",
+   "change": "added Ford fleet spec (224); note only (bracketed)"
+  },
+  {
+   "year": "2011",
+   "cid": 281,
+   "engine": "4.6 SOHC 2V V8 (PI heads)",
+   "hp": 224,
+   "status": "three_sources_not_nhra",
+   "change": "added Ford fleet spec (224); -> three_sources_not_nhra"
+  },
+  {
+   "year": "2008",
+   "cid": 281,
+   "engine": "4.6 SOHC 2V V8, dual exhaust",
+   "hp": 239,
+   "status": "disputed",
+   "change": "note only; still disputed"
+  },
+  {
+   "year": "2009",
+   "cid": 281,
+   "engine": "4.6 SOHC 2V V8, dual exhaust",
+   "hp": null,
+   "status": "withheld_unverified",
+   "change": "239 withheld (hp null, withheld_unverified): Ford 2009/2011 specs show only 224; package ended mid-2008"
+  },
+  {
+   "year": "2010",
+   "cid": 281,
+   "engine": "4.6 SOHC 2V V8, dual exhaust",
+   "hp": null,
+   "status": "withheld_unverified",
+   "change": "239 withheld (hp null, withheld_unverified): Ford 2009/2011 specs show only 224; package ended mid-2008"
+  },
+  {
+   "year": "2011",
+   "cid": 281,
+   "engine": "4.6 SOHC 2V V8, dual exhaust",
+   "hp": null,
+   "status": "withheld_unverified",
+   "change": "239 withheld (hp null, withheld_unverified): Ford 2009/2011 specs show only 224; package ended mid-2008"
+  },
+  {
+   "year": "2012",
+   "cid": 281,
+   "engine": "4.6 SOHC 2V V8 FFV",
+   "hp": null,
+   "status": "excluded_not_us_market",
+   "change": "status -> excluded_not_us_market, hp null: 2012 MY was GCC export only"
+  }
+ ]
+}

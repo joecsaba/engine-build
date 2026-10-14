@@ -20,7 +20,7 @@
    "why": "not in the US lineup (Consumer Guide: ousted by the Turbo); the Carrera 3.0 was sold outside the US"
   }
  ],
- "search_notes": "The NHRA file is empty (nhra=false throughout). The session web-search cap was reached part way through, so the work rests on pages already downloaded. Sources: Consumer Guide 911 History (HowStuffWorks, Wayback copy; the live site is behind a bot wall); the Excellence magazine specs database (a US magazine covering US-spec cars, mostly DIN figures); Wikipedia (classic/930/964/993 articles and List of Porsche engines with US engine type numbers, counted as one source); EPA 1984+ (size, cylinders and turbo only; no 1985 rows). The Porsche AG 60-years press kit and the archived PCNA Porsche Classic pages quote European/German DIN figures only, so they back displacement and model existence but not US ratings. Hagerty valuation tools need a login; Total 911 datafiles now redirect to futureplc; auction listings were ignored. Rating rule: hp = the US SAE figure when 2+ sources state it, or when Consumer Guide's SAE figure matches the 2+-source DIN figure after conversion (PS x 0.9863). Otherwise hp = the US-spec DIN figure that 2+ sources agree on, hp_basis says DIN, and Consumer Guide's SAE figure goes in hp_sae_us_consumer_guide and the note.",
+ "search_notes": "The NHRA file is empty (nhra=false throughout). The session web-search cap was reached part way through, so the work rests on pages already downloaded. Sources: Consumer Guide 911 History (HowStuffWorks, Wayback copy; the live site is behind a bot wall); the Excellence magazine specs database (a US magazine covering US-spec cars, mostly DIN figures); Wikipedia (classic/930/964/993 articles and List of Porsche engines with US engine type numbers, counted as one source); EPA 1984+ (size, cylinders and turbo only; no 1985 rows). The Porsche AG 60-years press kit and the archived PCNA Porsche Classic pages quote European/German DIN figures only, so they back displacement and model existence but not US ratings. Hagerty valuation tools need a login; Total 911 datafiles now redirect to futureplc; auction listings were ignored. Rating rule: hp = the US SAE figure when 2+ sources state it, or when Consumer Guide's SAE figure matches the 2+-source DIN figure after conversion (PS x 0.9863). Otherwise hp = the US-spec DIN figure that 2+ sources agree on, hp_basis says DIN, and Consumer Guide's SAE figure goes in hp_sae_us_consumer_guide and the note. v2 (2026-10-14): US SAE ratings firmed up from the Standard Catalog of Imported Cars (Krause) and Leffingwell's Porsche 911 Buyer's Guide via Internet Archive full-text search snippets, plus Porsche factory/US brochures (Internet Archive scans, Stuttcars PDF scans) and the Der Whites literature catalogue. All Porsche literature counts as one source. Rows whose v1 hp was DIN keep that figure in hp_din_us_spec.",
  "years": {
   "1965": [
    {
@@ -28,8 +28,8 @@
     "cid": 121,
     "cc": 1991,
     "liters": 2.0,
-    "hp": 130,
-    "hp_basis": "DIN PS (US 148 SAE gross per Consumer Guide)",
+    "hp": 148,
+    "hp_basis": "SAE gross",
     "hp_din_us_spec": 130,
     "hp_sae_us_consumer_guide": 148,
     "rpo": "901/01",
@@ -57,11 +57,29 @@
       "name": "Wikipedia - Porsche 911 (classic)",
       "url": "https://en.wikipedia.org/wiki/Porsche_911_(classic)",
       "says": "Typ 901/01 1,991 cc 130 PS SOHC flat-six; 901/05 with Weber carbs from mid-1966"
+     },
+     {
+      "name": "Standard Catalog of Imported Cars 1946-1990 (Flammang, Krause Publications) and 1946-2002 edition (Covello), Internet Archive full-text search",
+      "url": "https://archive.org/details/standardcatalogo0000flam",
+      "also": [
+       "https://archive.org/details/standardcatalogo0000cove"
+      ],
+      "says": "Porsche 911 2.0 (80 x 66 mm, 9.0:1): Brake Horsepower 148 (SAE) at 6100 rpm"
+     },
+     {
+      "name": "Porsche factory brochure '1967 Porsche 911 / 911S / 912', USA (Internet Archive scan)",
+      "url": "https://archive.org/details/101_20260429_20260429_1732",
+      "says": "Spec table: Horsepower (SAE) 911: 148 (130 HP/DIN) at 6100 rpm"
+     },
+     {
+      "name": "Porsche of America Corp. US brochure '911/2000 2+2 Coupe' (c. 1965), as catalogued by Der Whites 356 Literature",
+      "url": "https://derwhites356literature.com/DerWhites911912SalesLiterature.html",
+      "says": "Porsche of America brochure lists the 2-liter six at 148 hp SAE"
      }
     ],
     "status": "three_sources_not_nhra",
     "independent_sources": 3,
-    "note": "SAE gross 148 from Consumer Guide only; DIN 130 agreed by Excellence, Wikipedia and Consumer Guide."
+    "note": "v2: 148 SAE gross stated by Consumer Guide, the Standard Catalog of Imported Cars (SCIC) and Porsche US literature (1967 USA brochure spec table; c.1965 Porsche of America brochure). DIN 130 kept in hp_din_us_spec. Previous v1 note: SAE gross 148 from Consumer Guide only; DIN 130 agreed by Excellence, Wikipedia and Consumer Guide."
    }
   ],
   "1966": [
@@ -70,8 +88,8 @@
     "cid": 121,
     "cc": 1991,
     "liters": 2.0,
-    "hp": 130,
-    "hp_basis": "DIN PS (US 148 SAE gross per Consumer Guide)",
+    "hp": 148,
+    "hp_basis": "SAE gross",
     "hp_din_us_spec": 130,
     "hp_sae_us_consumer_guide": 148,
     "rpo": "901/01; 901/05 from mid-1966",
@@ -99,11 +117,29 @@
       "name": "Wikipedia - List of Porsche engines",
       "url": "https://en.wikipedia.org/wiki/List_of_Porsche_engines",
       "says": "901/01 1965-66, 901/05 from 1966; 1968 911 and 911L (USA)(CDN) 901/14, 901/17 SPM, 95-96 kW (130 PS)"
+     },
+     {
+      "name": "Standard Catalog of Imported Cars 1946-1990 (Flammang, Krause Publications) and 1946-2002 edition (Covello), Internet Archive full-text search",
+      "url": "https://archive.org/details/standardcatalogo0000flam",
+      "also": [
+       "https://archive.org/details/standardcatalogo0000cove"
+      ],
+      "says": "Porsche 911 2.0 (80 x 66 mm, 9.0:1): Brake Horsepower 148 (SAE) at 6100 rpm"
+     },
+     {
+      "name": "Porsche factory brochure '1967 Porsche 911 / 911S / 912', USA (Internet Archive scan)",
+      "url": "https://archive.org/details/101_20260429_20260429_1732",
+      "says": "Spec table: Horsepower (SAE) 911: 148 (130 HP/DIN) at 6100 rpm"
+     },
+     {
+      "name": "Porsche of America Corp. US brochure '911/2000 2+2 Coupe' (c. 1965), as catalogued by Der Whites 356 Literature",
+      "url": "https://derwhites356literature.com/DerWhites911912SalesLiterature.html",
+      "says": "Porsche of America brochure lists the 2-liter six at 148 hp SAE"
      }
     ],
     "status": "three_sources_not_nhra",
     "independent_sources": 3,
-    "note": "SAE gross 148 from Consumer Guide only; DIN 130 agreed by Excellence, Wikipedia and Consumer Guide."
+    "note": "v2: 148 SAE gross stated by Consumer Guide, the Standard Catalog of Imported Cars (SCIC) and Porsche US literature (1967 USA brochure spec table; c.1965 Porsche of America brochure). DIN 130 kept in hp_din_us_spec. Previous v1 note: SAE gross 148 from Consumer Guide only; DIN 130 agreed by Excellence, Wikipedia and Consumer Guide."
    }
   ],
   "1967": [
@@ -112,8 +148,8 @@
     "cid": 121,
     "cc": 1991,
     "liters": 2.0,
-    "hp": 130,
-    "hp_basis": "DIN PS (US 148 SAE gross per Consumer Guide)",
+    "hp": 148,
+    "hp_basis": "SAE gross",
     "hp_din_us_spec": 130,
     "hp_sae_us_consumer_guide": 148,
     "rpo": "901/05",
@@ -142,19 +178,37 @@
       "name": "Wikipedia - List of Porsche engines",
       "url": "https://en.wikipedia.org/wiki/List_of_Porsche_engines",
       "says": "901/01 1965-66, 901/05 from 1966; 1968 911 and 911L (USA)(CDN) 901/14, 901/17 SPM, 95-96 kW (130 PS)"
+     },
+     {
+      "name": "Standard Catalog of Imported Cars 1946-1990 (Flammang, Krause Publications) and 1946-2002 edition (Covello), Internet Archive full-text search",
+      "url": "https://archive.org/details/standardcatalogo0000flam",
+      "also": [
+       "https://archive.org/details/standardcatalogo0000cove"
+      ],
+      "says": "Porsche 911 2.0 (80 x 66 mm, 9.0:1): Brake Horsepower 148 (SAE) at 6100 rpm"
+     },
+     {
+      "name": "Porsche factory brochure '1967 Porsche 911 / 911S / 912', USA (Internet Archive scan)",
+      "url": "https://archive.org/details/101_20260429_20260429_1732",
+      "says": "Spec table: Horsepower (SAE) 911: 148 (130 HP/DIN) at 6100 rpm"
+     },
+     {
+      "name": "Porsche of America Corp. US brochure '911/2000 2+2 Coupe' (c. 1965), as catalogued by Der Whites 356 Literature",
+      "url": "https://derwhites356literature.com/DerWhites911912SalesLiterature.html",
+      "says": "Porsche of America brochure lists the 2-liter six at 148 hp SAE"
      }
     ],
     "status": "three_sources_not_nhra",
     "independent_sources": 3,
-    "note": "SAE gross 148 from Consumer Guide only; DIN 130 agreed by Excellence, Wikipedia and Consumer Guide."
+    "note": "v2: 148 SAE gross stated by Consumer Guide, the Standard Catalog of Imported Cars (SCIC) and Porsche US literature (1967 USA brochure spec table; c.1965 Porsche of America brochure). DIN 130 kept in hp_din_us_spec. Previous v1 note: SAE gross 148 from Consumer Guide only; DIN 130 agreed by Excellence, Wikipedia and Consumer Guide."
    },
    {
     "gen": "901",
     "cid": 121,
     "cc": 1991,
     "liters": 2.0,
-    "hp": 160,
-    "hp_basis": "DIN PS (US 180 SAE gross per Consumer Guide)",
+    "hp": 180,
+    "hp_basis": "SAE gross",
     "hp_din_us_spec": 160,
     "hp_sae_us_consumer_guide": 180,
     "rpo": "901/02",
@@ -183,11 +237,24 @@
       "name": "Wikipedia - List of Porsche engines",
       "url": "https://en.wikipedia.org/wiki/List_of_Porsche_engines",
       "says": "911 S Coupe/Targa 901/02 1967, 117 kW (160 PS) at 6,600 rpm; classic article: 911S could not meet US emissions for 1968"
+     },
+     {
+      "name": "Standard Catalog of Imported Cars 1946-1990 (Flammang, Krause Publications) and 1946-2002 edition (Covello), Internet Archive full-text search",
+      "url": "https://archive.org/details/standardcatalogo0000flam",
+      "also": [
+       "https://archive.org/details/standardcatalogo0000cove"
+      ],
+      "says": "Porsche 911S 2.0 (9.8:1): Brake Horsepower 180 (SAE) at 6600 rpm"
+     },
+     {
+      "name": "Porsche factory brochure '1967 Porsche 911 / 911S / 912', USA (Internet Archive scan)",
+      "url": "https://archive.org/details/101_20260429_20260429_1732",
+      "says": "Spec table: Horsepower (SAE) 911S: 180 (160 HP/DIN) at 6600 rpm"
      }
     ],
     "status": "three_sources_not_nhra",
     "independent_sources": 3,
-    "note": "In the US for 1967 only; dropped for 1968 (emissions) and back for 1969. hp is the US-spec DIN (PS) rating, on which 2+ sources agree; the US SAE figure comes from Consumer Guide alone, so it is kept in the note."
+    "note": "v2: 180 SAE gross stated by Consumer Guide, SCIC and the 1967 USA factory brochure. Der Whites also catalogues the 9-1966 English 911S brochure W213e at 180 hp (SAE). Previous v1 note: In the US for 1967 only; dropped for 1968 (emissions) and back for 1969. hp is the US-spec DIN (PS) rating, on which 2+ sources agree; the US SAE figure comes from Consumer Guide alone, so it is kept in the note."
    }
   ],
   "1968": [
@@ -196,8 +263,8 @@
     "cid": 121,
     "cc": 1991,
     "liters": 2.0,
-    "hp": 130,
-    "hp_basis": "DIN PS (US 148 SAE gross per Consumer Guide)",
+    "hp": 148,
+    "hp_basis": "SAE gross",
     "hp_din_us_spec": 130,
     "hp_sae_us_consumer_guide": 148,
     "rpo": "901/14 (manual), 901/17 (Sportomatic) - US/Canada",
@@ -227,11 +294,29 @@
       "name": "Wikipedia - List of Porsche engines",
       "url": "https://en.wikipedia.org/wiki/List_of_Porsche_engines",
       "says": "901/01 1965-66, 901/05 from 1966; 1968 911 and 911L (USA)(CDN) 901/14, 901/17 SPM, 95-96 kW (130 PS)"
+     },
+     {
+      "name": "Standard Catalog of Imported Cars 1946-1990 (Flammang, Krause Publications) and 1946-2002 edition (Covello), Internet Archive full-text search",
+      "url": "https://archive.org/details/standardcatalogo0000flam",
+      "also": [
+       "https://archive.org/details/standardcatalogo0000cove"
+      ],
+      "says": "Porsche 911 2.0 (80 x 66 mm, 9.0:1): Brake Horsepower 148 (SAE) at 6100 rpm"
+     },
+     {
+      "name": "Porsche factory brochure '1967 Porsche 911 / 911S / 912', USA (Internet Archive scan)",
+      "url": "https://archive.org/details/101_20260429_20260429_1732",
+      "says": "Spec table: Horsepower (SAE) 911: 148 (130 HP/DIN) at 6100 rpm"
+     },
+     {
+      "name": "Porsche of America Corp. US brochure '911/2000 2+2 Coupe' (c. 1965), as catalogued by Der Whites 356 Literature",
+      "url": "https://derwhites356literature.com/DerWhites911912SalesLiterature.html",
+      "says": "Porsche of America brochure lists the 2-liter six at 148 hp SAE"
      }
     ],
     "status": "three_sources_not_nhra",
     "independent_sources": 3,
-    "note": "SAE gross 148 from Consumer Guide only; DIN 130 agreed by Excellence, Wikipedia and Consumer Guide. 1968: no 911T or 911S in the US (Consumer Guide: T was Europe-only; Wikipedia: 911S could not meet US emissions, 911L was the top US model). Sportomatic first offered in the US for 1968."
+    "note": "v2: 148 SAE gross stated by Consumer Guide, the Standard Catalog of Imported Cars (SCIC) and Porsche US literature (1967 USA brochure spec table; c.1965 Porsche of America brochure). DIN 130 kept in hp_din_us_spec. Previous v1 note: SAE gross 148 from Consumer Guide only; DIN 130 agreed by Excellence, Wikipedia and Consumer Guide. 1968: no 911T or 911S in the US (Consumer Guide: T was Europe-only; Wikipedia: 911S could not meet US emissions, 911L was the top US model). Sportomatic first offered in the US for 1968."
    }
   ],
   "1969": [
@@ -240,8 +325,8 @@
     "cid": 121,
     "cc": 1991,
     "liters": 2.0,
-    "hp": 110,
-    "hp_basis": "DIN PS (US 125 SAE gross per Consumer Guide)",
+    "hp": 125,
+    "hp_basis": "SAE gross",
     "hp_din_us_spec": 110,
     "hp_sae_us_consumer_guide": 125,
     "rpo": "901/16 (US/CDN manual), 901/19 (US Sportomatic)",
@@ -270,11 +355,24 @@
       "name": "Wikipedia - List of Porsche engines",
       "url": "https://en.wikipedia.org/wiki/List_of_Porsche_engines",
       "says": "911 T Coupe (USA)(CDN) 901/16, 901/19 SPM, 80-81 kW (110 PS)"
+     },
+     {
+      "name": "Standard Catalog of Imported Cars 1946-1990 (Flammang, Krause Publications) and 1946-2002 edition (Covello), Internet Archive full-text search",
+      "url": "https://archive.org/details/standardcatalogo0000flam",
+      "also": [
+       "https://archive.org/details/standardcatalogo0000cove"
+      ],
+      "says": "Porsche 911T 2.0 (8.6:1): Brake Horsepower 125 (SAE) at 5800 rpm (110 bhp DIN)"
+     },
+     {
+      "name": "1969 Porsche 911 and 912 Fact Book, US (Internet Archive scan)",
+      "url": "https://archive.org/details/1969-porsche-911-and-912-fact-book",
+      "says": "Spec table: Horsepower (SAE) 911T: 125 (110 HP/DIN) at 5800 rpm; text: 125 horsepower (SAE)"
      }
     ],
     "status": "three_sources_not_nhra",
     "independent_sources": 3,
-    "note": "hp is the US-spec DIN (PS) rating, on which 2+ sources agree; the US SAE figure comes from Consumer Guide alone, so it is kept in the note."
+    "note": "v2: 125 SAE gross stated by Consumer Guide, SCIC and the 1969 US Porsche 911/912 Fact Book. Previous v1 note: hp is the US-spec DIN (PS) rating, on which 2+ sources agree; the US SAE figure comes from Consumer Guide alone, so it is kept in the note."
    },
    {
     "gen": "901",
@@ -311,11 +409,16 @@
       "name": "Wikipedia - List of Porsche engines",
       "url": "https://en.wikipedia.org/wiki/List_of_Porsche_engines",
       "says": "911 E 901/09, 901/11 SPM, 103 kW (140 PS)"
+     },
+     {
+      "name": "1969 Porsche 911 and 912 Fact Book, US (Internet Archive scan)",
+      "url": "https://archive.org/details/1969-porsche-911-and-912-fact-book",
+      "says": "Text: 911E 160 horsepower (SAE); spec table: 148 (140 HP/DIN) at 6500 rpm"
      }
     ],
     "status": "three_sources_not_nhra",
     "independent_sources": 3,
-    "note": "hp is the US-spec DIN (PS) rating, on which 2+ sources agree; the US SAE figure comes from Consumer Guide alone, so it is kept in the note."
+    "note": "v2: US SAE figure disputed, so DIN kept. Consumer Guide 160 SAE; the 1969 US Fact Book text says 160 hp (SAE) but its own spec table says 148 (140 HP/DIN) at 6500 rpm (the table is internally consistent: 74 SAE hp per litre). SCIC full-text search gave no 1969 911E figure. Previous v1 note: hp is the US-spec DIN (PS) rating, on which 2+ sources agree; the US SAE figure comes from Consumer Guide alone, so it is kept in the note."
    },
    {
     "gen": "901",
@@ -352,11 +455,24 @@
       "name": "Wikipedia - List of Porsche engines",
       "url": "https://en.wikipedia.org/wiki/List_of_Porsche_engines",
       "says": "911 S 901/10, 125 kW (170 PS)"
+     },
+     {
+      "name": "Standard Catalog of Imported Cars 1946-1990 (Flammang, Krause Publications) and 1946-2002 edition (Covello), Internet Archive full-text search",
+      "url": "https://archive.org/details/standardcatalogo0000flam",
+      "also": [
+       "https://archive.org/details/standardcatalogo0000cove"
+      ],
+      "says": "Porsche 911S 2.0 (9.9:1): Brake Horsepower 190 (SAE) at 6800 rpm"
+     },
+     {
+      "name": "1969 Porsche 911 and 912 Fact Book, US (Internet Archive scan)",
+      "url": "https://archive.org/details/1969-porsche-911-and-912-fact-book",
+      "says": "Text: 911S 195 horsepower (SAE); spec table: 180 (170 HP/DIN) at 6800 rpm"
      }
     ],
     "status": "three_sources_not_nhra",
     "independent_sources": 3,
-    "note": "hp is the US-spec DIN (PS) rating, on which 2+ sources agree; the US SAE figure comes from Consumer Guide alone, so it is kept in the note."
+    "note": "v2: US SAE figure disputed, so DIN kept. Consumer Guide 190 SAE and SCIC (9.9:1, 190 (SAE) at 6800 rpm) agree, but the 1969 US Fact Book says 195 hp (SAE) in its text and 180 (170 HP/DIN) at 6800 rpm in its spec table (table consistent with its 90 SAE hp per litre). Factory literature disagrees with the two publications, so SAE withheld. Previous v1 note: hp is the US-spec DIN (PS) rating, on which 2+ sources agree; the US SAE figure comes from Consumer Guide alone, so it is kept in the note."
    }
   ],
   "1970": [
@@ -406,8 +522,8 @@
     "cid": 134,
     "cc": 2195,
     "liters": 2.2,
-    "hp": 155,
-    "hp_basis": "DIN PS (US 175 SAE gross per Consumer Guide)",
+    "hp": 175,
+    "hp_basis": "SAE gross",
     "hp_din_us_spec": 155,
     "hp_sae_us_consumer_guide": 175,
     "rpo": "911/01 (manual), 911/04 (Sportomatic)",
@@ -436,19 +552,32 @@
       "name": "Wikipedia - List of Porsche engines",
       "url": "https://en.wikipedia.org/wiki/List_of_Porsche_engines",
       "says": "911E 2.2 1970: 911/01 (manual), 911/04 (Sportomatic), 155 PS; US/CDN T had market-specific 911/07 and 911/08 (125 PS)"
+     },
+     {
+      "name": "Porsche factory brochure 'The new Porsche 911 with the 2.2 litre engine', English, 9-1969, W 4e-20-0969-0404 (Internet Archive scan)",
+      "url": "https://archive.org/details/1969-the-new-porsche-911-with-the-2.2-litre-engine-brochure-model-1970-page-001",
+      "says": "Output 175 SAE-HP (155 DIN-HP)"
+     },
+     {
+      "name": "Standard Catalog of Imported Cars 1946-1990 (Flammang, Krause Publications) and 1946-2002 edition (Covello), Internet Archive full-text search",
+      "url": "https://archive.org/details/standardcatalogo0000flam",
+      "also": [
+       "https://archive.org/details/standardcatalogo0000cove"
+      ],
+      "says": "Porsche 911E 2.2: Brake Horsepower 175 (SAE) at 6200 rpm (155 bhp DIN)"
      }
     ],
     "status": "three_sources_not_nhra",
     "independent_sources": 3,
-    "note": "hp is the US-spec DIN (PS) rating, on which 2+ sources agree; the US SAE figure comes from Consumer Guide alone, so it is kept in the note."
+    "note": "v2: 175 SAE gross stated by Consumer Guide, SCIC and the factory 2.2-litre brochure. Previous v1 note: hp is the US-spec DIN (PS) rating, on which 2+ sources agree; the US SAE figure comes from Consumer Guide alone, so it is kept in the note."
    },
    {
     "gen": "901",
     "cid": 134,
     "cc": 2195,
     "liters": 2.2,
-    "hp": 180,
-    "hp_basis": "DIN PS (US 200 SAE gross per Consumer Guide)",
+    "hp": 200,
+    "hp_basis": "SAE gross",
     "hp_din_us_spec": 180,
     "hp_sae_us_consumer_guide": 200,
     "rpo": "911/02 (manual), 911/05 (Sportomatic)",
@@ -477,11 +606,24 @@
       "name": "Wikipedia - List of Porsche engines",
       "url": "https://en.wikipedia.org/wiki/List_of_Porsche_engines",
       "says": "911S 2.2 1970: 911/02 (manual), 911/05 (Sportomatic), 180 PS; US/CDN T had market-specific 911/07 and 911/08 (125 PS)"
+     },
+     {
+      "name": "Porsche factory brochure 'The new Porsche 911 with the 2.2 litre engine', English, 9-1969, W 4e-20-0969-0404 (Internet Archive scan)",
+      "url": "https://archive.org/details/1969-the-new-porsche-911-with-the-2.2-litre-engine-brochure-model-1970-page-001",
+      "says": "Output 200 SAE-HP (180 DIN-HP)"
+     },
+     {
+      "name": "Standard Catalog of Imported Cars 1946-1990 (Flammang, Krause Publications) and 1946-2002 edition (Covello), Internet Archive full-text search",
+      "url": "https://archive.org/details/standardcatalogo0000flam",
+      "also": [
+       "https://archive.org/details/standardcatalogo0000cove"
+      ],
+      "says": "Porsche 911S 2.2 (9.8:1): Brake Horsepower 200 (SAE) at 6500 rpm (180 bhp DIN)"
      }
     ],
     "status": "three_sources_not_nhra",
     "independent_sources": 3,
-    "note": "hp is the US-spec DIN (PS) rating, on which 2+ sources agree; the US SAE figure comes from Consumer Guide alone, so it is kept in the note."
+    "note": "v2: 200 SAE gross stated by Consumer Guide, SCIC and the factory 2.2-litre brochure. Previous v1 note: hp is the US-spec DIN (PS) rating, on which 2+ sources agree; the US SAE figure comes from Consumer Guide alone, so it is kept in the note."
    }
   ],
   "1971": [
@@ -531,8 +673,8 @@
     "cid": 134,
     "cc": 2195,
     "liters": 2.2,
-    "hp": 155,
-    "hp_basis": "DIN PS (US 175 SAE gross per Consumer Guide)",
+    "hp": 175,
+    "hp_basis": "SAE gross",
     "hp_din_us_spec": 155,
     "hp_sae_us_consumer_guide": 175,
     "rpo": "911/01 (manual), 911/04 (Sportomatic)",
@@ -561,19 +703,32 @@
       "name": "Wikipedia - List of Porsche engines",
       "url": "https://en.wikipedia.org/wiki/List_of_Porsche_engines",
       "says": "911E 2.2 1971: 911/01 (manual), 911/04 (Sportomatic), 155 PS; US/CDN T had market-specific 911/07 and 911/08 (125 PS)"
+     },
+     {
+      "name": "Porsche factory brochure 'The new Porsche 911 with the 2.2 litre engine', English, 9-1969, W 4e-20-0969-0404 (Internet Archive scan)",
+      "url": "https://archive.org/details/1969-the-new-porsche-911-with-the-2.2-litre-engine-brochure-model-1970-page-001",
+      "says": "Output 175 SAE-HP (155 DIN-HP)"
+     },
+     {
+      "name": "Standard Catalog of Imported Cars 1946-1990 (Flammang, Krause Publications) and 1946-2002 edition (Covello), Internet Archive full-text search",
+      "url": "https://archive.org/details/standardcatalogo0000flam",
+      "also": [
+       "https://archive.org/details/standardcatalogo0000cove"
+      ],
+      "says": "Porsche 911E 2.2: Brake Horsepower 175 (SAE) at 6200 rpm (155 bhp DIN)"
      }
     ],
     "status": "three_sources_not_nhra",
     "independent_sources": 3,
-    "note": "hp is the US-spec DIN (PS) rating, on which 2+ sources agree; the US SAE figure comes from Consumer Guide alone, so it is kept in the note."
+    "note": "v2: 175 SAE gross stated by Consumer Guide, SCIC and the factory 2.2-litre brochure. The brochure is for model year 1970; Consumer Guide and SCIC carry the same ratings for 1971. Previous v1 note: hp is the US-spec DIN (PS) rating, on which 2+ sources agree; the US SAE figure comes from Consumer Guide alone, so it is kept in the note."
    },
    {
     "gen": "901",
     "cid": 134,
     "cc": 2195,
     "liters": 2.2,
-    "hp": 180,
-    "hp_basis": "DIN PS (US 200 SAE gross per Consumer Guide)",
+    "hp": 200,
+    "hp_basis": "SAE gross",
     "hp_din_us_spec": 180,
     "hp_sae_us_consumer_guide": 200,
     "rpo": "911/02 (manual), 911/05 (Sportomatic)",
@@ -602,11 +757,24 @@
       "name": "Wikipedia - List of Porsche engines",
       "url": "https://en.wikipedia.org/wiki/List_of_Porsche_engines",
       "says": "911S 2.2 1971: 911/02 (manual), 911/05 (Sportomatic), 180 PS; US/CDN T had market-specific 911/07 and 911/08 (125 PS)"
+     },
+     {
+      "name": "Porsche factory brochure 'The new Porsche 911 with the 2.2 litre engine', English, 9-1969, W 4e-20-0969-0404 (Internet Archive scan)",
+      "url": "https://archive.org/details/1969-the-new-porsche-911-with-the-2.2-litre-engine-brochure-model-1970-page-001",
+      "says": "Output 200 SAE-HP (180 DIN-HP)"
+     },
+     {
+      "name": "Standard Catalog of Imported Cars 1946-1990 (Flammang, Krause Publications) and 1946-2002 edition (Covello), Internet Archive full-text search",
+      "url": "https://archive.org/details/standardcatalogo0000flam",
+      "also": [
+       "https://archive.org/details/standardcatalogo0000cove"
+      ],
+      "says": "Porsche 911S 2.2 (9.8:1): Brake Horsepower 200 (SAE) at 6500 rpm (180 bhp DIN)"
      }
     ],
     "status": "three_sources_not_nhra",
     "independent_sources": 3,
-    "note": "hp is the US-spec DIN (PS) rating, on which 2+ sources agree; the US SAE figure comes from Consumer Guide alone, so it is kept in the note."
+    "note": "v2: 200 SAE gross stated by Consumer Guide, SCIC and the factory 2.2-litre brochure. The brochure is for model year 1970; Consumer Guide and SCIC carry the same ratings for 1971. Previous v1 note: hp is the US-spec DIN (PS) rating, on which 2+ sources agree; the US SAE figure comes from Consumer Guide alone, so it is kept in the note."
    }
   ],
   "1972": [
@@ -645,11 +813,19 @@
       "name": "Wikipedia - List of Porsche engines",
       "url": "https://en.wikipedia.org/wiki/List_of_Porsche_engines",
       "says": "911T 1972: 911/51 (US/CDN manual, MFI), 911/61 (Sportomatic); classic article: US/Japan T used MFI, 140 PS"
+     },
+     {
+      "name": "Standard Catalog of Imported Cars 1946-1990 (Flammang, Krause Publications) and 1946-2002 edition (Covello), Internet Archive full-text search",
+      "url": "https://archive.org/details/standardcatalogo0000flam",
+      "also": [
+       "https://archive.org/details/standardcatalogo0000cove"
+      ],
+      "says": "Porsche 911T 2.4: Brake Horsepower 157 (SAE) at 5600 rpm (130 bhp DIN)"
      }
     ],
     "status": "three_sources_not_nhra",
     "independent_sources": 3,
-    "note": "hp is the US-spec DIN (PS) rating, on which 2+ sources agree; the US SAE figure comes from Consumer Guide alone, so it is kept in the note. Consumer Guide gives 157 SAE without saying gross or net. Conflict: Consumer Guide lists the T at 130 DIN (the European carbureted figure); Wikipedia and Excellence give 140 PS for the US fuel-injected T (911/51)."
+    "note": "v2: still DIN. SCIC agrees with Consumer Guide on 157 SAE but pairs it with 130 bhp DIN at 5600 rpm, the European carbureted T, not the 140 PS US fuel-injected T. The 1973 USA factory brochure gives the US T as 135 DIN / 129 SAE net (7.5:1); Leffingwell gives 134-135 SAE net. The ratings conflict, so nothing changed. Previous v1 note: hp is the US-spec DIN (PS) rating, on which 2+ sources agree; the US SAE figure comes from Consumer Guide alone, so it is kept in the note. Consumer Guide gives 157 SAE without saying gross or net. Conflict: Consumer Guide lists the T at 130 DIN (the European carbureted figure); Wikipedia and Excellence give 140 PS for the US fuel-injected T (911/51)."
    },
    {
     "gen": "901",
@@ -770,19 +946,24 @@
       "name": "Wikipedia - List of Porsche engines",
       "url": "https://en.wikipedia.org/wiki/List_of_Porsche_engines",
       "says": "911T 1973: 911/51 (US/CDN manual, MFI), 911/61 (Sportomatic); classic article: US/Japan T used MFI, 140 PS"
+     },
+     {
+      "name": "Porsche factory brochure '1973 Porsche 911', USA (Stuttcars.com PDF scan; also archive.org/details/101_20260430_20260430)",
+      "url": "https://www.stuttcars.com/wp-content/uploads/2021/05/1973-Porsche-911-USA.pdf",
+      "says": "911 T 135 DIN HP (129 SAE net HP) at 5600 rpm, 7.5:1"
      }
     ],
     "status": "three_sources_not_nhra",
     "independent_sources": 3,
-    "note": "hp is the US-spec DIN (PS) rating, on which 2+ sources agree; the US SAE figure comes from Consumer Guide alone, so it is kept in the note. Consumer Guide gives 157 SAE without saying gross or net. Conflict: Consumer Guide lists the T at 130 DIN (the European carbureted figure); Wikipedia and Excellence give 140 PS for the US fuel-injected T (911/51). Early 1973 only; replaced in January 1973 by the CIS T (separate entry)."
+    "note": "v2: still DIN. The 1973 USA factory brochure gives the US MFI T as 135 DIN HP (129 SAE net) at 5600 rpm, 7.5:1, which conflicts with the 140 PS in Wikipedia/Excellence; Leffingwell prints 134 and 135 SAE net in two panels; Der Whites quotes 133 for a US brochure believed to be 1972. No two sources agree, so nothing changed. Previous v1 note: hp is the US-spec DIN (PS) rating, on which 2+ sources agree; the US SAE figure comes from Consumer Guide alone, so it is kept in the note. Consumer Guide gives 157 SAE without saying gross or net. Conflict: Consumer Guide lists the T at 130 DIN (the European carbureted figure); Wikipedia and Excellence give 140 PS for the US fuel-injected T (911/51). Early 1973 only; replaced in January 1973 by the CIS T (separate entry)."
    },
    {
     "gen": "901",
     "cid": 143,
     "cc": 2341,
     "liters": 2.4,
-    "hp": 165,
-    "hp_basis": "DIN PS (US SAE in note)",
+    "hp": 157,
+    "hp_basis": "SAE net",
     "hp_din_us_spec": 165,
     "hp_sae_us_consumer_guide": 185,
     "rpo": "911/52 (manual), 911/62 (Sportomatic)",
@@ -811,19 +992,37 @@
       "name": "Wikipedia - List of Porsche engines",
       "url": "https://en.wikipedia.org/wiki/List_of_Porsche_engines",
       "says": "911E 1973: 911/52 (manual), 911/62 (Sportomatic); classic article: US/Japan T used MFI, 140 PS"
+     },
+     {
+      "name": "Porsche factory brochure '1973 Porsche 911', USA (Stuttcars.com PDF scan; also archive.org/details/101_20260430_20260430)",
+      "url": "https://www.stuttcars.com/wp-content/uploads/2021/05/1973-Porsche-911-USA.pdf",
+      "says": "Technical data: 911 E 165 DIN HP (157 SAE net HP) at 6200 rpm, 8.0:1"
+     },
+     {
+      "name": "Standard Catalog of Imported Cars 1946-1990 (Flammang, Krause Publications) and 1946-2002 edition (Covello), Internet Archive full-text search",
+      "url": "https://archive.org/details/standardcatalogo0000flam",
+      "also": [
+       "https://archive.org/details/standardcatalogo0000cove"
+      ],
+      "says": "Porsche 911E 2.4 (8.0:1): Brake Horsepower 157 (SAE net) at 6200 rpm, 147 lbs-ft"
+     },
+     {
+      "name": "Randy Leffingwell - Porsche 911 Buyer's Guide (MBI, 2002), Internet Archive full-text search",
+      "url": "https://archive.org/details/porsche911buyers00rand",
+      "says": "Data panel: 911E 157 SAE net @ 6,200 rpm"
      }
     ],
     "status": "three_sources_not_nhra",
     "independent_sources": 3,
-    "note": "hp is the US-spec DIN (PS) rating, on which 2+ sources agree; the US SAE figure comes from Consumer Guide alone, so it is kept in the note. Consumer Guide gives 185 SAE without saying gross or net."
+    "note": "v2: 157 SAE net from the 1973 USA factory brochure, SCIC and Leffingwell (one Leffingwell panel prints 159). Consumer Guide 185 is the gross figure. Previous v1 note: hp is the US-spec DIN (PS) rating, on which 2+ sources agree; the US SAE figure comes from Consumer Guide alone, so it is kept in the note. Consumer Guide gives 185 SAE without saying gross or net."
    },
    {
     "gen": "901",
     "cid": 143,
     "cc": 2341,
     "liters": 2.4,
-    "hp": 190,
-    "hp_basis": "DIN PS (US SAE in note)",
+    "hp": 181,
+    "hp_basis": "SAE net",
     "hp_din_us_spec": 190,
     "hp_sae_us_consumer_guide": 210,
     "rpo": "911/53 (manual), 911/63 (Sportomatic)",
@@ -852,11 +1051,29 @@
       "name": "Wikipedia - List of Porsche engines",
       "url": "https://en.wikipedia.org/wiki/List_of_Porsche_engines",
       "says": "911S 1973: 911/53 (manual), 911/63 (Sportomatic); classic article: US/Japan T used MFI, 140 PS"
+     },
+     {
+      "name": "Porsche factory brochure '1973 Porsche 911', USA (Stuttcars.com PDF scan; also archive.org/details/101_20260430_20260430)",
+      "url": "https://www.stuttcars.com/wp-content/uploads/2021/05/1973-Porsche-911-USA.pdf",
+      "says": "Technical data: 911 S 190 DIN HP (181 SAE net HP) at 6500 rpm, 8.5:1"
+     },
+     {
+      "name": "Standard Catalog of Imported Cars 1946-1990 (Flammang, Krause Publications) and 1946-2002 edition (Covello), Internet Archive full-text search",
+      "url": "https://archive.org/details/standardcatalogo0000flam",
+      "also": [
+       "https://archive.org/details/standardcatalogo0000cove"
+      ],
+      "says": "Porsche 911S 2.4 (8.5:1): Brake Horsepower 181 (SAE net) at 6500 rpm, 154 lbs-ft"
+     },
+     {
+      "name": "Randy Leffingwell - Porsche 911 Buyer's Guide (MBI, 2002), Internet Archive full-text search",
+      "url": "https://archive.org/details/porsche911buyers00rand",
+      "says": "Data panel: 911S 181 SAE net @ 6,500 rpm"
      }
     ],
     "status": "three_sources_not_nhra",
     "independent_sources": 3,
-    "note": "hp is the US-spec DIN (PS) rating, on which 2+ sources agree; the US SAE figure comes from Consumer Guide alone, so it is kept in the note. Consumer Guide gives 210 SAE without saying gross or net."
+    "note": "v2: 181 SAE net from the 1973 USA factory brochure, SCIC and Leffingwell. Consumer Guide 210 is the gross figure. Previous v1 note: hp is the US-spec DIN (PS) rating, on which 2+ sources agree; the US SAE figure comes from Consumer Guide alone, so it is kept in the note. Consumer Guide gives 210 SAE without saying gross or net."
    },
    {
     "gen": "901",
@@ -896,7 +1113,7 @@
     ],
     "status": "three_sources_not_nhra",
     "independent_sources": 3,
-    "note": "Mid-year change (January 1973) for the US 911T. Rating: Wikipedia and Excellence say 140 PS, unchanged; Consumer Guide says +10 DIN. Conflict noted; 140 kept on 2 sources. The Carrera RS 2.7 was never sold in the US."
+    "note": "v2: no US SAE net rating for the January-1973 CIS 911T was found in SCIC, Leffingwell or the factory USA brochure (which predates the change), so nothing changed. Previous v1 note: Mid-year change (January 1973) for the US 911T. Rating: Wikipedia and Excellence say 140 PS, unchanged; Consumer Guide says +10 DIN. Conflict noted; 140 kept on 2 sources. The Carrera RS 2.7 was never sold in the US."
    }
   ],
   "1974": [
@@ -905,8 +1122,8 @@
     "cid": 164,
     "cc": 2687,
     "liters": 2.7,
-    "hp": 150,
-    "hp_basis": "DIN PS (US 143 SAE net per Consumer Guide)",
+    "hp": 143,
+    "hp_basis": "SAE net",
     "hp_din_us_spec": 150,
     "hp_sae_us_consumer_guide": 143,
     "rpo": "911/92 (manual), 911/97 (Sportomatic)",
@@ -937,19 +1154,37 @@
       "name": "Wikipedia - List of Porsche engines",
       "url": "https://en.wikipedia.org/wiki/List_of_Porsche_engines",
       "says": "1974 911 911/92, 911/97 SPM, 110 kW (150 PS); classic article: 911 and 911S at 150 and 175 PS"
+     },
+     {
+      "name": "Porsche factory brochure '1974 Porsche 911 / 911S / Carrera' (Internet Archive scan)",
+      "url": "https://archive.org/details/101_20260430_20260430_1229",
+      "says": "Output 150 DIN HP (143 SAE HP) at 5600 rpm"
+     },
+     {
+      "name": "Standard Catalog of Imported Cars 1946-1990 (Flammang, Krause Publications) and 1946-2002 edition (Covello), Internet Archive full-text search",
+      "url": "https://archive.org/details/standardcatalogo0000flam",
+      "also": [
+       "https://archive.org/details/standardcatalogo0000cove"
+      ],
+      "says": "Porsche 911 2.7 (90 x 70 mm, 8.0:1): Brake Horsepower 143 (SAE net) at 5700 rpm"
+     },
+     {
+      "name": "Randy Leffingwell - Porsche 911 Buyer's Guide (MBI, 2002), Internet Archive full-text search",
+      "url": "https://archive.org/details/porsche911buyers00rand",
+      "says": "Data panel: 911: 143 SAE net @ 5,700 rpm"
      }
     ],
     "status": "three_sources_not_nhra",
     "independent_sources": 3,
-    "note": "hp is the US-spec DIN (PS) rating, on which 2+ sources agree; the US SAE figure comes from Consumer Guide alone, so it is kept in the note. Consumer Guide suggests the US car made less than the 150 DIN European rating; Excellence lists 150 for the US car."
+    "note": "v2: 143 SAE net from Consumer Guide, SCIC, Leffingwell and the 1974 factory brochure (brochure prints 5600 rpm, SCIC/Leffingwell 5700). Previous v1 note: hp is the US-spec DIN (PS) rating, on which 2+ sources agree; the US SAE figure comes from Consumer Guide alone, so it is kept in the note. Consumer Guide suggests the US car made less than the 150 DIN European rating; Excellence lists 150 for the US car."
    },
    {
     "gen": "g-series",
     "cid": 164,
     "cc": 2687,
     "liters": 2.7,
-    "hp": 175,
-    "hp_basis": "DIN PS (US 167 SAE net per Consumer Guide)",
+    "hp": 167,
+    "hp_basis": "SAE net",
     "hp_din_us_spec": 175,
     "hp_sae_us_consumer_guide": 167,
     "rpo": "911/93 (manual), 911/98 (Sportomatic)",
@@ -984,11 +1219,29 @@
       "name": "Wikipedia - List of Porsche engines",
       "url": "https://en.wikipedia.org/wiki/List_of_Porsche_engines",
       "says": "911 Carrera (USA)(CDN) 911/93, 911/98 SPM 1974, 129 kW; classic article: US Carrera 2.7 limited to the K-Jetronic engine, 175 PS"
+     },
+     {
+      "name": "Porsche factory brochure '1974 Porsche 911 / 911S / Carrera' (Internet Archive scan)",
+      "url": "https://archive.org/details/101_20260430_20260430_1229",
+      "says": "Output 175 DIN HP (167 SAE HP) at 6200 rpm (911S and Carrera)"
+     },
+     {
+      "name": "Standard Catalog of Imported Cars 1946-1990 (Flammang, Krause Publications) and 1946-2002 edition (Covello), Internet Archive full-text search",
+      "url": "https://archive.org/details/standardcatalogo0000flam",
+      "also": [
+       "https://archive.org/details/standardcatalogo0000cove"
+      ],
+      "says": "Porsche 911S/Carrera 2.7 (8.5:1): Brake Horsepower 167 (SAE net) at 5800 rpm (157 at 5800 in 1975)"
+     },
+     {
+      "name": "Randy Leffingwell - Porsche 911 Buyer's Guide (MBI, 2002), Internet Archive full-text search",
+      "url": "https://archive.org/details/porsche911buyers00rand",
+      "says": "Data panel: 911S 167 SAE net @ 5,800 rpm; Carrera 167 SAE net @ 5,800 rpm"
      }
     ],
     "status": "three_sources_not_nhra",
     "independent_sources": 3,
-    "note": "The US Carrera used the 911S engine, not the RS 911/83 MFI engine (which was banned on emissions grounds). hp is the US-spec DIN (PS) rating, on which 2+ sources agree; the US SAE figure comes from Consumer Guide alone, so it is kept in the note."
+    "note": "v2: 167 SAE net (911S and Carrera) from Consumer Guide, SCIC, Leffingwell and the 1974 factory brochure. Previous v1 note: The US Carrera used the 911S engine, not the RS 911/83 MFI engine (which was banned on emissions grounds). hp is the US-spec DIN (PS) rating, on which 2+ sources agree; the US SAE figure comes from Consumer Guide alone, so it is kept in the note."
    }
   ],
   "1975": [
@@ -997,8 +1250,8 @@
     "cid": 164,
     "cc": 2687,
     "liters": 2.7,
-    "hp": 165,
-    "hp_basis": "DIN PS (California 160)",
+    "hp": 157,
+    "hp_basis": "SAE net",
     "hp_din_us_spec": 165,
     "hp_sae_us_consumer_guide": 157,
     "rpo": "911/43 (49-state), 911/48 (Sportomatic), 911/44 (California)",
@@ -1033,11 +1286,25 @@
       "name": "Wikipedia - List of Porsche engines",
       "url": "https://en.wikipedia.org/wiki/List_of_Porsche_engines",
       "says": "1975 911 S (USA)(CDN) 911/43, 121 kW (165 PS); California 911/44 118 kW (160 PS)"
+     },
+     {
+      "name": "Porsche factory brochure '1975 Porsche', USA, 1053.21 (Stuttcars.com PDF scan)",
+      "url": "https://www.stuttcars.com/wp-content/uploads/2021/05/1975-Porsche-911-USA.pdf",
+      "says": "Technical data 1975: Horsepower-SAE net 911 S 157 (Calif. 152); Carrera 157 (Calif. 152)"
+     },
+     {
+      "name": "Standard Catalog of Imported Cars 1946-1990 (Flammang, Krause Publications) and 1946-2002 edition (Covello), Internet Archive full-text search",
+      "url": "https://archive.org/details/standardcatalogo0000flam",
+      "also": [
+       "https://archive.org/details/standardcatalogo0000cove"
+      ],
+      "says": "Porsche 911S/Carrera: 167 (SAE net) at 5800 rpm (157 at 5800 in 1975)"
      }
     ],
     "status": "three_sources_not_nhra",
     "independent_sources": 3,
-    "note": "hp is the US-spec DIN (PS) rating, on which 2+ sources agree; the US SAE figure comes from Consumer Guide alone, so it is kept in the note. Consumer Guide implies 157 SAE net (152 in California). Neither Consumer Guide nor Excellence lists a base US 911 for 1975. Wikipedia: US Carrera 175 PS, later cut to 165 PS for the US, 160 PS for California."
+    "note": "v2: 157 SAE net (California 152), 911S and Carrera, from the 1975 USA factory brochure, SCIC and Consumer Guide. Previous v1 note: hp is the US-spec DIN (PS) rating, on which 2+ sources agree; the US SAE figure comes from Consumer Guide alone, so it is kept in the note. Consumer Guide implies 157 SAE net (152 in California). Neither Consumer Guide nor Excellence lists a base US 911 for 1975. Wikipedia: US Carrera 175 PS, later cut to 165 PS for the US, 160 PS for California.",
+    "hp_california": 152
    }
   ],
   "1976": [
@@ -1046,8 +1313,8 @@
     "cid": 164,
     "cc": 2687,
     "liters": 2.7,
-    "hp": 165,
-    "hp_basis": "DIN PS (California 160)",
+    "hp": 157,
+    "hp_basis": "SAE net",
     "hp_din_us_spec": 165,
     "hp_sae_us_consumer_guide": 157,
     "rpo": "911/82 (49-state), 911/89 (Sportomatic), 911/84 (California)",
@@ -1078,11 +1345,25 @@
       "name": "Wikipedia - List of Porsche engines",
       "url": "https://en.wikipedia.org/wiki/List_of_Porsche_engines",
       "says": "1976 911 S (USA)(CDN) 911/82, 121 kW (165 PS)"
+     },
+     {
+      "name": "Standard Catalog of Imported Cars 1946-1990 (Flammang, Krause Publications) and 1946-2002 edition (Covello), Internet Archive full-text search",
+      "url": "https://archive.org/details/standardcatalogo0000flam",
+      "also": [
+       "https://archive.org/details/standardcatalogo0000cove"
+      ],
+      "says": "Porsche 911S 2.7 (90 x 70 mm, 8.5:1): Brake Horsepower 157 (SAE net) at 5800 rpm, 166 lbs-ft (two separate model-year entries)"
+     },
+     {
+      "name": "Randy Leffingwell - Porsche 911 Buyer's Guide (MBI, 2002), Internet Archive full-text search",
+      "url": "https://archive.org/details/porsche911buyers00rand",
+      "says": "1976 panel: 911S 49-state 157 SAE net, California 152 SAE net @ 5,800; 1977 panel: 911S 50-state 157 SAE net @ 5,800"
      }
     ],
     "status": "three_sources_not_nhra",
     "independent_sources": 3,
-    "note": "hp is the US-spec DIN (PS) rating, on which 2+ sources agree; the US SAE figure comes from Consumer Guide alone, so it is kept in the note. Consumer Guide implies 157 SAE net (152 in California). Conflict on California rating: Excellence says 160 PS, Wikipedia engine list says 121 kW (165 PS) for 911/84. Carrera 2.7/3.0 not sold in the US (Consumer Guide: ousted by the Turbo from the US lineup)."
+    "note": "v2: 157 SAE net from Consumer Guide, SCIC and Leffingwell. California 152 SAE net (Leffingwell, Consumer Guide). SCIC search snippets do not show the year headings; the two 157-hp 911S entries are separate from the 1974-75 entry. Previous v1 note: hp is the US-spec DIN (PS) rating, on which 2+ sources agree; the US SAE figure comes from Consumer Guide alone, so it is kept in the note. Consumer Guide implies 157 SAE net (152 in California). Conflict on California rating: Excellence says 160 PS, Wikipedia engine list says 121 kW (165 PS) for 911/84. Carrera 2.7/3.0 not sold in the US (Consumer Guide: ousted by the Turbo from the US lineup).",
+    "hp_california": 152
    },
    {
     "gen": "g-series",
@@ -1130,8 +1411,8 @@
     "cid": 164,
     "cc": 2687,
     "liters": 2.7,
-    "hp": 165,
-    "hp_basis": "DIN PS (California 160)",
+    "hp": 157,
+    "hp_basis": "SAE net",
     "hp_din_us_spec": 165,
     "hp_sae_us_consumer_guide": 157,
     "rpo": "911/85 (manual), 911/90 (Sportomatic)",
@@ -1162,11 +1443,24 @@
       "name": "Wikipedia - List of Porsche engines",
       "url": "https://en.wikipedia.org/wiki/List_of_Porsche_engines",
       "says": "1977 911 S (USA)(CDN) 911/85, 121 kW (165 PS)"
+     },
+     {
+      "name": "Standard Catalog of Imported Cars 1946-1990 (Flammang, Krause Publications) and 1946-2002 edition (Covello), Internet Archive full-text search",
+      "url": "https://archive.org/details/standardcatalogo0000flam",
+      "also": [
+       "https://archive.org/details/standardcatalogo0000cove"
+      ],
+      "says": "Porsche 911S 2.7 (90 x 70 mm, 8.5:1): Brake Horsepower 157 (SAE net) at 5800 rpm, 166 lbs-ft (two separate model-year entries)"
+     },
+     {
+      "name": "Randy Leffingwell - Porsche 911 Buyer's Guide (MBI, 2002), Internet Archive full-text search",
+      "url": "https://archive.org/details/porsche911buyers00rand",
+      "says": "1976 panel: 911S 49-state 157 SAE net, California 152 SAE net @ 5,800; 1977 panel: 911S 50-state 157 SAE net @ 5,800"
      }
     ],
     "status": "three_sources_not_nhra",
     "independent_sources": 3,
-    "note": "hp is the US-spec DIN (PS) rating, on which 2+ sources agree; the US SAE figure comes from Consumer Guide alone, so it is kept in the note. Consumer Guide implies 157 SAE net (152 in California). Carrera 2.7/3.0 not sold in the US (Consumer Guide: ousted by the Turbo from the US lineup)."
+    "note": "v2: 157 SAE net from Consumer Guide, SCIC and Leffingwell. Leffingwell gives one 50-state rating for 1977. SCIC search snippets do not show the year headings; the two 157-hp 911S entries are separate from the 1974-75 entry. Previous v1 note: hp is the US-spec DIN (PS) rating, on which 2+ sources agree; the US SAE figure comes from Consumer Guide alone, so it is kept in the note. Consumer Guide implies 157 SAE net (152 in California). Carrera 2.7/3.0 not sold in the US (Consumer Guide: ousted by the Turbo from the US lineup)."
    },
    {
     "gen": "g-series",
@@ -1214,8 +1508,8 @@
     "cid": 183,
     "cc": 2994,
     "liters": 3.0,
-    "hp": 180,
-    "hp_basis": "DIN PS (US 172 SAE net per Consumer Guide)",
+    "hp": 172,
+    "hp_basis": "SAE net",
     "hp_din_us_spec": 180,
     "hp_sae_us_consumer_guide": 172,
     "rpo": "930/04 (49-state), 930/06 (California)",
@@ -1246,11 +1540,24 @@
       "name": "Wikipedia - List of Porsche engines",
       "url": "https://en.wikipedia.org/wiki/List_of_Porsche_engines",
       "says": "911 SC (USA)(CDN) 930/04 1978, 132 kW (180 PS); classic article: US cars kept the 180 PS engine throughout while other markets went to 188 and 204 PS"
+     },
+     {
+      "name": "Standard Catalog of Imported Cars 1946-1990 (Flammang, Krause Publications) and 1946-2002 edition (Covello), Internet Archive full-text search",
+      "url": "https://archive.org/details/standardcatalogo0000flam",
+      "also": [
+       "https://archive.org/details/standardcatalogo0000cove"
+      ],
+      "says": "Porsche 911SC 3.0 (95 x 70.4 mm): Brake Horsepower 172 (SAE net) at 5500 rpm, 189 lbs-ft"
+     },
+     {
+      "name": "Porsche factory brochure '1979 Porsche 911 SC / Turbo', USA, W 73-71-96021 (Internet Archive scan)",
+      "url": "https://archive.org/details/101_20260421_20260421_1846",
+      "says": "Maximum output of 172 SAE net horsepower (911SC)"
      }
     ],
     "status": "three_sources_not_nhra",
     "independent_sources": 3,
-    "note": "hp is the US-spec DIN (PS) rating, on which 2+ sources agree; the US SAE figure comes from Consumer Guide alone, so it is kept in the note."
+    "note": "v2: 172 SAE net from Consumer Guide and SCIC plus Porsche brochures (1979 USA brochure; 1981 brochure). Leffingwell prints 180 (49-state) / 172 (California), which treats the 180 DIN figure as SAE; the US factory brochures give a single 172. Previous v1 note: hp is the US-spec DIN (PS) rating, on which 2+ sources agree; the US SAE figure comes from Consumer Guide alone, so it is kept in the note."
    },
    {
     "gen": "g-series",
@@ -1298,8 +1605,8 @@
     "cid": 183,
     "cc": 2994,
     "liters": 3.0,
-    "hp": 180,
-    "hp_basis": "DIN PS (US 172 SAE net per Consumer Guide)",
+    "hp": 172,
+    "hp_basis": "SAE net",
     "hp_din_us_spec": 180,
     "hp_sae_us_consumer_guide": 172,
     "rpo": "930/04 (49-state), 930/06 (California)",
@@ -1330,11 +1637,24 @@
       "name": "Wikipedia - List of Porsche engines",
       "url": "https://en.wikipedia.org/wiki/List_of_Porsche_engines",
       "says": "911 SC (USA)(CDN) 930/04 1979, 132 kW (180 PS); classic article: US cars kept the 180 PS engine throughout while other markets went to 188 and 204 PS"
+     },
+     {
+      "name": "Standard Catalog of Imported Cars 1946-1990 (Flammang, Krause Publications) and 1946-2002 edition (Covello), Internet Archive full-text search",
+      "url": "https://archive.org/details/standardcatalogo0000flam",
+      "also": [
+       "https://archive.org/details/standardcatalogo0000cove"
+      ],
+      "says": "Porsche 911SC 3.0 (95 x 70.4 mm): Brake Horsepower 172 (SAE net) at 5500 rpm, 189 lbs-ft"
+     },
+     {
+      "name": "Porsche factory brochure '1979 Porsche 911 SC / Turbo', USA, W 73-71-96021 (Internet Archive scan)",
+      "url": "https://archive.org/details/101_20260421_20260421_1846",
+      "says": "Maximum output of 172 SAE net horsepower (911SC)"
      }
     ],
     "status": "three_sources_not_nhra",
     "independent_sources": 3,
-    "note": "hp is the US-spec DIN (PS) rating, on which 2+ sources agree; the US SAE figure comes from Consumer Guide alone, so it is kept in the note."
+    "note": "v2: 172 SAE net from Consumer Guide and SCIC plus Porsche brochures (1979 USA brochure; 1981 brochure). Leffingwell prints 180 (49-state) / 172 (California), which treats the 180 DIN figure as SAE; the US factory brochures give a single 172. Previous v1 note: hp is the US-spec DIN (PS) rating, on which 2+ sources agree; the US SAE figure comes from Consumer Guide alone, so it is kept in the note."
    },
    {
     "gen": "g-series",
@@ -1382,8 +1702,8 @@
     "cid": 183,
     "cc": 2994,
     "liters": 3.0,
-    "hp": 180,
-    "hp_basis": "DIN PS (US 172 SAE net per Consumer Guide)",
+    "hp": 172,
+    "hp_basis": "SAE net",
     "hp_din_us_spec": 180,
     "hp_sae_us_consumer_guide": 172,
     "rpo": "930/07",
@@ -1415,11 +1735,19 @@
       "name": "Wikipedia - List of Porsche engines",
       "url": "https://en.wikipedia.org/wiki/List_of_Porsche_engines",
       "says": "911 SC (USA)(CDN) 930/07 1980, 132 kW (180 PS); classic article: US cars kept the 180 PS engine throughout while other markets went to 188 and 204 PS"
+     },
+     {
+      "name": "Standard Catalog of Imported Cars 1946-1990 (Flammang, Krause Publications) and 1946-2002 edition (Covello), Internet Archive full-text search",
+      "url": "https://archive.org/details/standardcatalogo0000flam",
+      "also": [
+       "https://archive.org/details/standardcatalogo0000cove"
+      ],
+      "says": "Porsche 911SC 3.0 (95 x 70.4 mm): Brake Horsepower 172 (SAE net) at 5500 rpm, 189 lbs-ft"
      }
     ],
-    "status": "three_sources_not_nhra",
+    "status": "two_sources_agree",
     "independent_sources": 3,
-    "note": "hp is the US-spec DIN (PS) rating, on which 2+ sources agree; the US SAE figure comes from Consumer Guide alone, so it is kept in the note. Compression 9.3:1 from 1980 per Excellence."
+    "note": "v2: 172 SAE net from Consumer Guide and SCIC; Porsche brochures for 1979 (USA) and 1981 also give 172. Leffingwell prints 180 (49-state) / 172 (California), which treats the 180 DIN figure as SAE; the US factory brochures give a single 172. Previous v1 note: hp is the US-spec DIN (PS) rating, on which 2+ sources agree; the US SAE figure comes from Consumer Guide alone, so it is kept in the note. Compression 9.3:1 from 1980 per Excellence."
    }
   ],
   "1981": [
@@ -1428,8 +1756,8 @@
     "cid": 183,
     "cc": 2994,
     "liters": 3.0,
-    "hp": 180,
-    "hp_basis": "DIN PS (US 172 SAE net per Consumer Guide)",
+    "hp": 172,
+    "hp_basis": "SAE net",
     "hp_din_us_spec": 180,
     "hp_sae_us_consumer_guide": 172,
     "rpo": "930/16",
@@ -1460,11 +1788,24 @@
       "name": "Wikipedia - List of Porsche engines",
       "url": "https://en.wikipedia.org/wiki/List_of_Porsche_engines",
       "says": "911 SC (USA)(CDN) 930/16 1981, 132 kW (180 PS); classic article: US cars kept the 180 PS engine throughout while other markets went to 188 and 204 PS"
+     },
+     {
+      "name": "Standard Catalog of Imported Cars 1946-1990 (Flammang, Krause Publications) and 1946-2002 edition (Covello), Internet Archive full-text search",
+      "url": "https://archive.org/details/standardcatalogo0000flam",
+      "also": [
+       "https://archive.org/details/standardcatalogo0000cove"
+      ],
+      "says": "Porsche 911SC 3.0 (95 x 70.4 mm): Brake Horsepower 172 (SAE net) at 5500 rpm, 189 lbs-ft"
+     },
+     {
+      "name": "Porsche factory brochure '1981 Porsche 911 SC' + technical data (Internet Archive scan)",
+      "url": "https://archive.org/details/101_20260509_20260509_1504",
+      "says": "Engine output SAE net 172 (128 kW) at 5500 rpm"
      }
     ],
     "status": "three_sources_not_nhra",
     "independent_sources": 3,
-    "note": "hp is the US-spec DIN (PS) rating, on which 2+ sources agree; the US SAE figure comes from Consumer Guide alone, so it is kept in the note."
+    "note": "v2: 172 SAE net from Consumer Guide and SCIC plus Porsche brochures (1979 USA brochure; 1981 brochure). Leffingwell prints 180 (49-state) / 172 (California), which treats the 180 DIN figure as SAE; the US factory brochures give a single 172. Previous v1 note: hp is the US-spec DIN (PS) rating, on which 2+ sources agree; the US SAE figure comes from Consumer Guide alone, so it is kept in the note."
    }
   ],
   "1982": [
@@ -1473,8 +1814,8 @@
     "cid": 183,
     "cc": 2994,
     "liters": 3.0,
-    "hp": 180,
-    "hp_basis": "DIN PS (US 172 SAE net per Consumer Guide)",
+    "hp": 172,
+    "hp_basis": "SAE net",
     "hp_din_us_spec": 180,
     "hp_sae_us_consumer_guide": 172,
     "rpo": "930/16",
@@ -1505,11 +1846,19 @@
       "name": "Wikipedia - List of Porsche engines",
       "url": "https://en.wikipedia.org/wiki/List_of_Porsche_engines",
       "says": "911 SC (USA)(CDN) 930/16 1982, 132 kW (180 PS); classic article: US cars kept the 180 PS engine throughout while other markets went to 188 and 204 PS"
+     },
+     {
+      "name": "Standard Catalog of Imported Cars 1946-1990 (Flammang, Krause Publications) and 1946-2002 edition (Covello), Internet Archive full-text search",
+      "url": "https://archive.org/details/standardcatalogo0000flam",
+      "also": [
+       "https://archive.org/details/standardcatalogo0000cove"
+      ],
+      "says": "Porsche 911SC 3.0 (95 x 70.4 mm): Brake Horsepower 172 (SAE net) at 5500 rpm, 189 lbs-ft"
      }
     ],
-    "status": "three_sources_not_nhra",
+    "status": "two_sources_agree",
     "independent_sources": 3,
-    "note": "hp is the US-spec DIN (PS) rating, on which 2+ sources agree; the US SAE figure comes from Consumer Guide alone, so it is kept in the note."
+    "note": "v2: 172 SAE net from Consumer Guide and SCIC; Porsche brochures for 1979 (USA) and 1981 also give 172. Leffingwell prints 180 (49-state) / 172 (California), which treats the 180 DIN figure as SAE; the US factory brochures give a single 172. Previous v1 note: hp is the US-spec DIN (PS) rating, on which 2+ sources agree; the US SAE figure comes from Consumer Guide alone, so it is kept in the note."
    }
   ],
   "1983": [
@@ -1518,8 +1867,8 @@
     "cid": 183,
     "cc": 2994,
     "liters": 3.0,
-    "hp": 180,
-    "hp_basis": "DIN PS (US 172 SAE net per Consumer Guide)",
+    "hp": 172,
+    "hp_basis": "SAE net",
     "hp_din_us_spec": 180,
     "hp_sae_us_consumer_guide": 172,
     "rpo": "930/16",
@@ -1552,11 +1901,19 @@
       "name": "Wikipedia - List of Porsche engines",
       "url": "https://en.wikipedia.org/wiki/List_of_Porsche_engines",
       "says": "911 SC (USA)(CDN) 930/16 1983, 132 kW (180 PS); classic article: US cars kept the 180 PS engine throughout while other markets went to 188 and 204 PS"
+     },
+     {
+      "name": "Standard Catalog of Imported Cars 1946-1990 (Flammang, Krause Publications) and 1946-2002 edition (Covello), Internet Archive full-text search",
+      "url": "https://archive.org/details/standardcatalogo0000flam",
+      "also": [
+       "https://archive.org/details/standardcatalogo0000cove"
+      ],
+      "says": "Porsche 911SC 3.0 (95 x 70.4 mm): Brake Horsepower 172 (SAE net) at 5500 rpm, 189 lbs-ft"
      }
     ],
-    "status": "three_sources_not_nhra",
+    "status": "two_sources_agree",
     "independent_sources": 3,
-    "note": "hp is the US-spec DIN (PS) rating, on which 2+ sources agree; the US SAE figure comes from Consumer Guide alone, so it is kept in the note."
+    "note": "v2: 172 SAE net from Consumer Guide and SCIC; Porsche brochures for 1979 (USA) and 1981 also give 172. Leffingwell prints 180 (49-state) / 172 (California), which treats the 180 DIN figure as SAE; the US factory brochures give a single 172. Previous v1 note: hp is the US-spec DIN (PS) rating, on which 2+ sources agree; the US SAE figure comes from Consumer Guide alone, so it is kept in the note."
    }
   ],
   "1984": [
@@ -2397,7 +2754,7 @@
     ],
     "status": "two_sources_agree",
     "independent_sources": 3,
-    "note": "Rating rests on 2 sources (Consumer Guide, Excellence). Wikipedia's 964 Turbo S Leichtbau (381 PS) is the European car, not this US model. No source gives an engine type number."
+    "note": "v2: no independent publication confirming 322 hp for the 80-car Turbo S was found (SCIC full-text: no Porsche 322-hp entry). Stuttcars.com describes a separate 20-car Andial-built US \"Turbo S2\" for Porsche Cars North America at 322 bhp at 5,750 rpm, while Consumer Guide/Excellence give 322 at 6,200 rpm; it is unclear whether these are the same cars, so the status is unchanged. Previous v1 note: Rating rests on 2 sources (Consumer Guide, Excellence). Wikipedia's 964 Turbo S Leichtbau (381 PS) is the European car, not this US model. No source gives an engine type number."
    }
   ],
   "1993": [
@@ -2581,11 +2938,16 @@
       "name": "EPA fueleconomy.gov vehicle data",
       "url": "https://www.fueleconomy.gov/feg/download.shtml",
       "says": "1994 911 Turbo: 3.6 L 6-cyl (size only)"
+     },
+     {
+      "name": "Stuttcars.com - Porsche 911 Turbo 3.6 S (1994) model page (enthusiast reference; supporting only)",
+      "url": "https://stuttcars.com/porsche-911-turbo-3-6-s-1994/",
+      "says": "1994 911 Turbo 3.6 S, X88 option: 380 hp; non slant-nose Package cars built for the USA"
      }
     ],
     "status": "two_sources_agree",
     "independent_sources": 3,
-    "note": "Rating: Consumer Guide 380 hp; Wikipedia's 385 PS converts to 380 hp. No source gives an engine type number."
+    "note": "v2: Stuttcars.com (enthusiast reference) also gives 380 hp for the X88 Turbo S 3.6 and lists US production; it is listed as supporting only, so the status is unchanged. Some dealer pages quote 385 (the PS figure). Previous v1 note: Rating: Consumer Guide 380 hp; Wikipedia's 385 PS converts to 380 hp. No source gives an engine type number."
    }
   ],
   "1995": [
@@ -2594,8 +2956,8 @@
     "cid": 220,
     "cc": 3600,
     "liters": 3.6,
-    "hp": 272,
-    "hp_basis": "DIN PS (US 270 hp per Consumer Guide)",
+    "hp": 270,
+    "hp_basis": "SAE net",
     "hp_din_us_spec": 272,
     "hp_sae_us_consumer_guide": 270,
     "rpo": "M64/07 (US/CDN manual), M64/08 (US Tiptronic)",
@@ -2635,11 +2997,19 @@
       "name": "EPA fueleconomy.gov vehicle data",
       "url": "https://www.fueleconomy.gov/feg/download.shtml",
       "says": "1995 911 Carrera 4/2: 3.6 L 6-cyl NA"
+     },
+     {
+      "name": "Standard Catalog of Imported Cars 1946-1990 (Flammang, Krause Publications) and 1946-2002 edition (Covello), Internet Archive full-text search",
+      "url": "https://archive.org/details/standardcatalogo0000flam",
+      "also": [
+       "https://archive.org/details/standardcatalogo0000cove"
+      ],
+      "says": "Porsche 911 Carrera 3.6 (993), 11.3:1: Brake Horsepower 270 at 6100 rpm, 243 lbs-ft (1946-2002 edition)"
      }
     ],
-    "status": "three_sources_not_nhra",
+    "status": "two_sources_agree",
     "independent_sources": 4,
-    "note": "DIN 272 is agreed by Excellence, Wikipedia and the Porsche AG press kit ('272 PS in the Carrera versions'). US 270 hp is from Consumer Guide only (272 PS converts to 268 hp)."
+    "note": "v2: 270 hp (SAE net) from Consumer Guide and the SCIC 1946-2002 edition. 272 PS kept in hp_din_us_spec. Previous v1 note: DIN 272 is agreed by Excellence, Wikipedia and the Porsche AG press kit ('272 PS in the Carrera versions'). US 270 hp is from Consumer Guide only (272 PS converts to 268 hp)."
    }
   ],
   "1996": [
@@ -2702,8 +3072,8 @@
     "cid": 220,
     "cc": 3600,
     "liters": 3.6,
-    "hp": 408,
-    "hp_basis": "DIN PS (US 400 hp per Consumer Guide)",
+    "hp": 400,
+    "hp_basis": "SAE net",
     "hp_din_us_spec": 408,
     "hp_sae_us_consumer_guide": 400,
     "rpo": "M64/60",
@@ -2736,11 +3106,19 @@
       "name": "EPA fueleconomy.gov vehicle data",
       "url": "https://www.fueleconomy.gov/feg/download.shtml",
       "says": "1996 911 Turbo: 3.6 L 6-cyl turbo"
+     },
+     {
+      "name": "Standard Catalog of Imported Cars 1946-1990 (Flammang, Krause Publications) and 1946-2002 edition (Covello), Internet Archive full-text search",
+      "url": "https://archive.org/details/standardcatalogo0000flam",
+      "also": [
+       "https://archive.org/details/standardcatalogo0000cove"
+      ],
+      "says": "Porsche 911 Turbo 3.6 (993), twin turbochargers, 8.0:1: Brake Horsepower 400 at 5750 rpm, 400 lbs-ft (1946-2002 edition)"
      }
     ],
-    "status": "three_sources_not_nhra",
+    "status": "two_sources_agree",
     "independent_sources": 4,
-    "note": "DIN 408 (300 kW) is agreed by Excellence and Wikipedia; US 400 hp is from Consumer Guide only (408 PS converts to 402 hp). EPA has no US 993 Turbo for 1995 or 1998."
+    "note": "v2: 400 hp (SAE net) from Consumer Guide and the SCIC 1946-2002 edition. 408 PS kept in hp_din_us_spec. Previous v1 note: DIN 408 (300 kW) is agreed by Excellence and Wikipedia; US 400 hp is from Consumer Guide only (408 PS converts to 402 hp). EPA has no US 993 Turbo for 1995 or 1998."
    }
   ],
   "1997": [
@@ -2803,8 +3181,8 @@
     "cid": 220,
     "cc": 3600,
     "liters": 3.6,
-    "hp": 408,
-    "hp_basis": "DIN PS (US 400 hp per Consumer Guide)",
+    "hp": 400,
+    "hp_basis": "SAE net",
     "hp_din_us_spec": 408,
     "hp_sae_us_consumer_guide": 400,
     "rpo": "M64/60",
@@ -2837,11 +3215,19 @@
       "name": "EPA fueleconomy.gov vehicle data",
       "url": "https://www.fueleconomy.gov/feg/download.shtml",
       "says": "1997 911 Turbo: 3.6 L 6-cyl turbo"
+     },
+     {
+      "name": "Standard Catalog of Imported Cars 1946-1990 (Flammang, Krause Publications) and 1946-2002 edition (Covello), Internet Archive full-text search",
+      "url": "https://archive.org/details/standardcatalogo0000flam",
+      "also": [
+       "https://archive.org/details/standardcatalogo0000cove"
+      ],
+      "says": "Porsche 911 Turbo 3.6 (993), twin turbochargers, 8.0:1: Brake Horsepower 400 at 5750 rpm, 400 lbs-ft (1946-2002 edition)"
      }
     ],
-    "status": "three_sources_not_nhra",
+    "status": "two_sources_agree",
     "independent_sources": 4,
-    "note": "DIN 408 (300 kW) is agreed by Excellence and Wikipedia; US 400 hp is from Consumer Guide only (408 PS converts to 402 hp)."
+    "note": "v2: 400 hp (SAE net) from Consumer Guide and the SCIC 1946-2002 edition. 408 PS kept in hp_din_us_spec. Previous v1 note: DIN 408 (300 kW) is agreed by Excellence and Wikipedia; US 400 hp is from Consumer Guide only (408 PS converts to 402 hp)."
    },
    {
     "gen": "993",
@@ -2994,6 +3380,674 @@
    "name": "Porsche Cars North America - Porsche Classic 1989 911 page (archived)",
    "url": "https://web.archive.org/web/20080207073433/http://www.porsche.com/usa/accessoriesandservices/classic/world/models/roadvehicles/1989-911/",
    "type": "manufacturer"
+  },
+  {
+   "name": "Standard Catalog of Imported Cars 1946-1990 (Flammang, Krause Publications) and 1946-2002 edition (Covello), Internet Archive full-text search",
+   "url": "https://archive.org/details/standardcatalogo0000flam",
+   "also": [
+    "https://archive.org/details/standardcatalogo0000cove"
+   ],
+   "type": "publication"
+  },
+  {
+   "name": "Randy Leffingwell - Porsche 911 Buyer's Guide (MBI, 2002), Internet Archive full-text search",
+   "url": "https://archive.org/details/porsche911buyers00rand",
+   "type": "publication"
+  },
+  {
+   "name": "Porsche of America Corp. US brochure '911/2000 2+2 Coupe' (c. 1965), as catalogued by Der Whites 356 Literature",
+   "url": "https://derwhites356literature.com/DerWhites911912SalesLiterature.html",
+   "type": "manufacturer"
+  },
+  {
+   "name": "Porsche factory brochure '1967 Porsche 911 / 911S / 912', USA (Internet Archive scan)",
+   "url": "https://archive.org/details/101_20260429_20260429_1732",
+   "type": "manufacturer"
+  },
+  {
+   "name": "1969 Porsche 911 and 912 Fact Book, US (Internet Archive scan)",
+   "url": "https://archive.org/details/1969-porsche-911-and-912-fact-book",
+   "type": "manufacturer"
+  },
+  {
+   "name": "Porsche factory brochure 'The new Porsche 911 with the 2.2 litre engine', English, 9-1969, W 4e-20-0969-0404 (Internet Archive scan)",
+   "url": "https://archive.org/details/1969-the-new-porsche-911-with-the-2.2-litre-engine-brochure-model-1970-page-001",
+   "type": "manufacturer"
+  },
+  {
+   "name": "Porsche factory brochure '1973 Porsche 911', USA (Stuttcars.com PDF scan; also archive.org/details/101_20260430_20260430)",
+   "url": "https://www.stuttcars.com/wp-content/uploads/2021/05/1973-Porsche-911-USA.pdf",
+   "type": "manufacturer"
+  },
+  {
+   "name": "Porsche factory brochure '1974 Porsche 911 / 911S / Carrera' (Internet Archive scan)",
+   "url": "https://archive.org/details/101_20260430_20260430_1229",
+   "type": "manufacturer"
+  },
+  {
+   "name": "Porsche factory brochure '1975 Porsche', USA, 1053.21 (Stuttcars.com PDF scan)",
+   "url": "https://www.stuttcars.com/wp-content/uploads/2021/05/1975-Porsche-911-USA.pdf",
+   "type": "manufacturer"
+  },
+  {
+   "name": "Porsche factory brochure '1979 Porsche 911 SC / Turbo', USA, W 73-71-96021 (Internet Archive scan)",
+   "url": "https://archive.org/details/101_20260421_20260421_1846",
+   "type": "manufacturer"
+  },
+  {
+   "name": "Porsche factory brochure '1981 Porsche 911 SC' + technical data (Internet Archive scan)",
+   "url": "https://archive.org/details/101_20260509_20260509_1504",
+   "type": "manufacturer"
+  },
+  {
+   "name": "Stuttcars.com - Porsche 911 Turbo 3.6 S (1994) model page (enthusiast reference; supporting only)",
+   "url": "https://stuttcars.com/porsche-911-turbo-3-6-s-1994/",
+   "type": "publication (enthusiast, supporting only)"
   }
+ ],
+ "v2_changes": [
+  {
+   "year": 1965,
+   "trim": "911 Coupe",
+   "from": {
+    "hp": 130,
+    "hp_basis": "DIN PS (US 148 SAE gross per Consumer Guide)",
+    "status": "three_sources_not_nhra"
+   },
+   "to": {
+    "hp": 148,
+    "hp_basis": "SAE gross",
+    "status": "three_sources_not_nhra"
+   },
+   "why": "US SAE gross 148 confirmed by SCIC and the 1967 USA factory brochure, agreeing with Consumer Guide."
+  },
+  {
+   "year": 1966,
+   "trim": "911 Coupe",
+   "from": {
+    "hp": 130,
+    "hp_basis": "DIN PS (US 148 SAE gross per Consumer Guide)",
+    "status": "three_sources_not_nhra"
+   },
+   "to": {
+    "hp": 148,
+    "hp_basis": "SAE gross",
+    "status": "three_sources_not_nhra"
+   },
+   "why": "US SAE gross 148 confirmed by SCIC and the 1967 USA factory brochure, agreeing with Consumer Guide."
+  },
+  {
+   "year": 1967,
+   "trim": "911 Coupe",
+   "from": {
+    "hp": 130,
+    "hp_basis": "DIN PS (US 148 SAE gross per Consumer Guide)",
+    "status": "three_sources_not_nhra"
+   },
+   "to": {
+    "hp": 148,
+    "hp_basis": "SAE gross",
+    "status": "three_sources_not_nhra"
+   },
+   "why": "US SAE gross 148 confirmed by SCIC and the 1967 USA factory brochure, agreeing with Consumer Guide."
+  },
+  {
+   "year": 1968,
+   "trim": "911",
+   "from": {
+    "hp": 130,
+    "hp_basis": "DIN PS (US 148 SAE gross per Consumer Guide)",
+    "status": "three_sources_not_nhra"
+   },
+   "to": {
+    "hp": 148,
+    "hp_basis": "SAE gross",
+    "status": "three_sources_not_nhra"
+   },
+   "why": "US SAE gross 148 confirmed by SCIC and the 1967 USA factory brochure, agreeing with Consumer Guide."
+  },
+  {
+   "year": 1967,
+   "trim": "911S Coupe",
+   "from": {
+    "hp": 160,
+    "hp_basis": "DIN PS (US 180 SAE gross per Consumer Guide)",
+    "status": "three_sources_not_nhra"
+   },
+   "to": {
+    "hp": 180,
+    "hp_basis": "SAE gross",
+    "status": "three_sources_not_nhra"
+   },
+   "why": "US SAE gross 180 confirmed by SCIC and 1967 USA factory brochure."
+  },
+  {
+   "year": 1969,
+   "trim": "911T Coupe",
+   "from": {
+    "hp": 110,
+    "hp_basis": "DIN PS (US 125 SAE gross per Consumer Guide)",
+    "status": "three_sources_not_nhra"
+   },
+   "to": {
+    "hp": 125,
+    "hp_basis": "SAE gross",
+    "status": "three_sources_not_nhra"
+   },
+   "why": "US SAE gross 125 confirmed by SCIC and the 1969 US Fact Book."
+  },
+  {
+   "year": 1969,
+   "trim": "911E Coupe",
+   "from": {
+    "hp": 140,
+    "hp_basis": "DIN PS (US 160 SAE gross per Consumer Guide)",
+    "status": "three_sources_not_nhra"
+   },
+   "to": "unchanged (note/sources only)",
+   "why": "Factory 1969 Fact Book contradicts itself (160 in text, 148 in spec table); SAE withheld."
+  },
+  {
+   "year": 1969,
+   "trim": "911S Coupe",
+   "from": {
+    "hp": 170,
+    "hp_basis": "DIN PS (US 190 SAE gross per Consumer Guide)",
+    "status": "three_sources_not_nhra"
+   },
+   "to": "unchanged (note/sources only)",
+   "why": "CG and SCIC agree on 190 but the 1969 US Fact Book gives 195 (text) and 180 (table); SAE withheld."
+  },
+  {
+   "year": 1970,
+   "trim": "911T Coupe",
+   "from": {
+    "hp": 125,
+    "hp_basis": "DIN PS (US 145 SAE gross per Consumer Guide)",
+    "status": "three_sources_not_nhra"
+   },
+   "to": {
+    "hp": 142,
+    "hp_basis": "SAE gross",
+    "status": "two_sources_agree"
+   },
+   "why": "Factory 1970 brochure and SCIC agree on 142 SAE gross; Consumer Guide 145 is the outlier."
+  },
+  {
+   "year": 1970,
+   "trim": "911E Coupe",
+   "from": {
+    "hp": 155,
+    "hp_basis": "DIN PS (US 175 SAE gross per Consumer Guide)",
+    "status": "three_sources_not_nhra"
+   },
+   "to": {
+    "hp": 175,
+    "hp_basis": "SAE gross",
+    "status": "three_sources_not_nhra"
+   },
+   "why": "US SAE gross 175 confirmed by SCIC and factory 1970 brochure."
+  },
+  {
+   "year": 1970,
+   "trim": "911S Coupe",
+   "from": {
+    "hp": 180,
+    "hp_basis": "DIN PS (US 200 SAE gross per Consumer Guide)",
+    "status": "three_sources_not_nhra"
+   },
+   "to": {
+    "hp": 200,
+    "hp_basis": "SAE gross",
+    "status": "three_sources_not_nhra"
+   },
+   "why": "US SAE gross 200 confirmed by SCIC and factory 1970 brochure."
+  },
+  {
+   "year": 1971,
+   "trim": "911T Coupe",
+   "from": {
+    "hp": 125,
+    "hp_basis": "DIN PS (US 145 SAE gross per Consumer Guide)",
+    "status": "three_sources_not_nhra"
+   },
+   "to": {
+    "hp": 142,
+    "hp_basis": "SAE gross",
+    "status": "two_sources_agree"
+   },
+   "why": "Factory 1970 brochure and SCIC agree on 142 SAE gross; Consumer Guide 145 is the outlier."
+  },
+  {
+   "year": 1971,
+   "trim": "911E Coupe",
+   "from": {
+    "hp": 155,
+    "hp_basis": "DIN PS (US 175 SAE gross per Consumer Guide)",
+    "status": "three_sources_not_nhra"
+   },
+   "to": {
+    "hp": 175,
+    "hp_basis": "SAE gross",
+    "status": "three_sources_not_nhra"
+   },
+   "why": "US SAE gross 175 confirmed by SCIC and factory 1970 brochure."
+  },
+  {
+   "year": 1971,
+   "trim": "911S Coupe",
+   "from": {
+    "hp": 180,
+    "hp_basis": "DIN PS (US 200 SAE gross per Consumer Guide)",
+    "status": "three_sources_not_nhra"
+   },
+   "to": {
+    "hp": 200,
+    "hp_basis": "SAE gross",
+    "status": "three_sources_not_nhra"
+   },
+   "why": "US SAE gross 200 confirmed by SCIC and factory 1970 brochure."
+  },
+  {
+   "year": 1972,
+   "trim": "911E Coupe",
+   "from": {
+    "hp": 165,
+    "hp_basis": "DIN PS (US SAE in note)",
+    "status": "three_sources_not_nhra"
+   },
+   "to": {
+    "hp": 185,
+    "hp_basis": "SAE gross",
+    "status": "two_sources_agree"
+   },
+   "why": "1972 E: CG + SCIC agree on 185 SAE (gross); net 157 kept as a secondary field."
+  },
+  {
+   "year": 1972,
+   "trim": "911S Coupe",
+   "from": {
+    "hp": 190,
+    "hp_basis": "DIN PS (US SAE in note)",
+    "status": "three_sources_not_nhra"
+   },
+   "to": {
+    "hp": 210,
+    "hp_basis": "SAE gross",
+    "status": "two_sources_agree"
+   },
+   "why": "1972 S: CG + SCIC agree on 210 SAE (gross); net 181 kept as a secondary field."
+  },
+  {
+   "year": 1972,
+   "trim": "911T Coupe",
+   "from": {
+    "hp": 140,
+    "hp_basis": "DIN PS (US SAE in note)",
+    "status": "three_sources_not_nhra"
+   },
+   "to": "unchanged (note/sources only)",
+   "why": "US 911T 2.4 SAE figure unresolved (157 gross for 130 DIN vs 129/133/134 net)."
+  },
+  {
+   "year": 1973,
+   "trim": "911E Coupe",
+   "from": {
+    "hp": 165,
+    "hp_basis": "DIN PS (US SAE in note)",
+    "status": "three_sources_not_nhra"
+   },
+   "to": {
+    "hp": 157,
+    "hp_basis": "SAE net",
+    "status": "three_sources_not_nhra"
+   },
+   "why": "1973 E: factory USA brochure + SCIC + Leffingwell give 157 SAE net."
+  },
+  {
+   "year": 1973,
+   "trim": "911S Coupe",
+   "from": {
+    "hp": 190,
+    "hp_basis": "DIN PS (US SAE in note)",
+    "status": "three_sources_not_nhra"
+   },
+   "to": {
+    "hp": 181,
+    "hp_basis": "SAE net",
+    "status": "three_sources_not_nhra"
+   },
+   "why": "1973 S: factory USA brochure + SCIC + Leffingwell give 181 SAE net."
+  },
+  {
+   "year": 1973,
+   "trim": "911T Coupe",
+   "from": {
+    "hp": 140,
+    "hp_basis": "DIN PS (US SAE in note)",
+    "status": "three_sources_not_nhra"
+   },
+   "to": "unchanged (note/sources only)",
+   "why": "1973 MFI T: 129/133/134/135 net disagree; factory DIN 135 vs 140 in v1."
+  },
+  {
+   "year": 1973,
+   "trim": "911T Coupe",
+   "from": {
+    "hp": 140,
+    "hp_basis": "DIN PS",
+    "status": "three_sources_not_nhra"
+   },
+   "to": "unchanged (note/sources only)",
+   "why": "No SAE figure found for the CIS T."
+  },
+  {
+   "year": 1974,
+   "trim": "911 Coupe",
+   "from": {
+    "hp": 150,
+    "hp_basis": "DIN PS (US 143 SAE net per Consumer Guide)",
+    "status": "three_sources_not_nhra"
+   },
+   "to": {
+    "hp": 143,
+    "hp_basis": "SAE net",
+    "status": "three_sources_not_nhra"
+   },
+   "why": "1974 base 911: 143 SAE net confirmed by factory brochure, SCIC, Leffingwell."
+  },
+  {
+   "year": 1974,
+   "trim": "911S Coupe",
+   "from": {
+    "hp": 175,
+    "hp_basis": "DIN PS (US 167 SAE net per Consumer Guide)",
+    "status": "three_sources_not_nhra"
+   },
+   "to": {
+    "hp": 167,
+    "hp_basis": "SAE net",
+    "status": "three_sources_not_nhra"
+   },
+   "why": "1974 911S/Carrera: 167 SAE net confirmed."
+  },
+  {
+   "year": 1975,
+   "trim": "911S Coupe",
+   "from": {
+    "hp": 165,
+    "hp_basis": "DIN PS (California 160)",
+    "status": "three_sources_not_nhra"
+   },
+   "to": {
+    "hp": 157,
+    "hp_basis": "SAE net",
+    "status": "three_sources_not_nhra"
+   },
+   "why": "1975: factory USA brochure + SCIC + CG give 157 SAE net (Calif 152)."
+  },
+  {
+   "year": 1976,
+   "trim": "911S Coupe",
+   "from": {
+    "hp": 165,
+    "hp_basis": "DIN PS (California 160)",
+    "status": "three_sources_not_nhra"
+   },
+   "to": {
+    "hp": 157,
+    "hp_basis": "SAE net",
+    "status": "three_sources_not_nhra"
+   },
+   "why": "1976 911S: CG + SCIC + Leffingwell give 157 SAE net."
+  },
+  {
+   "year": 1977,
+   "trim": "911S Coupe",
+   "from": {
+    "hp": 165,
+    "hp_basis": "DIN PS (California 160)",
+    "status": "three_sources_not_nhra"
+   },
+   "to": {
+    "hp": 157,
+    "hp_basis": "SAE net",
+    "status": "three_sources_not_nhra"
+   },
+   "why": "1977 911S: CG + SCIC + Leffingwell give 157 SAE net."
+  },
+  {
+   "year": 1978,
+   "trim": "911SC Coupe",
+   "from": {
+    "hp": 180,
+    "hp_basis": "DIN PS (US 172 SAE net per Consumer Guide)",
+    "status": "three_sources_not_nhra"
+   },
+   "to": {
+    "hp": 172,
+    "hp_basis": "SAE net",
+    "status": "three_sources_not_nhra"
+   },
+   "why": "1978 911SC: 172 SAE net confirmed."
+  },
+  {
+   "year": 1979,
+   "trim": "911SC Coupe",
+   "from": {
+    "hp": 180,
+    "hp_basis": "DIN PS (US 172 SAE net per Consumer Guide)",
+    "status": "three_sources_not_nhra"
+   },
+   "to": {
+    "hp": 172,
+    "hp_basis": "SAE net",
+    "status": "three_sources_not_nhra"
+   },
+   "why": "1979 911SC: 172 SAE net confirmed."
+  },
+  {
+   "year": 1980,
+   "trim": "911SC Coupe",
+   "from": {
+    "hp": 180,
+    "hp_basis": "DIN PS (US 172 SAE net per Consumer Guide)",
+    "status": "three_sources_not_nhra"
+   },
+   "to": {
+    "hp": 172,
+    "hp_basis": "SAE net",
+    "status": "two_sources_agree"
+   },
+   "why": "1980 911SC: 172 SAE net confirmed."
+  },
+  {
+   "year": 1981,
+   "trim": "911SC Coupe",
+   "from": {
+    "hp": 180,
+    "hp_basis": "DIN PS (US 172 SAE net per Consumer Guide)",
+    "status": "three_sources_not_nhra"
+   },
+   "to": {
+    "hp": 172,
+    "hp_basis": "SAE net",
+    "status": "three_sources_not_nhra"
+   },
+   "why": "1981 911SC: 172 SAE net confirmed."
+  },
+  {
+   "year": 1982,
+   "trim": "911SC Coupe",
+   "from": {
+    "hp": 180,
+    "hp_basis": "DIN PS (US 172 SAE net per Consumer Guide)",
+    "status": "three_sources_not_nhra"
+   },
+   "to": {
+    "hp": 172,
+    "hp_basis": "SAE net",
+    "status": "two_sources_agree"
+   },
+   "why": "1982 911SC: 172 SAE net confirmed."
+  },
+  {
+   "year": 1983,
+   "trim": "911SC Coupe",
+   "from": {
+    "hp": 180,
+    "hp_basis": "DIN PS (US 172 SAE net per Consumer Guide)",
+    "status": "three_sources_not_nhra"
+   },
+   "to": {
+    "hp": 172,
+    "hp_basis": "SAE net",
+    "status": "two_sources_agree"
+   },
+   "why": "1983 911SC: 172 SAE net confirmed."
+  },
+  {
+   "year": 1978,
+   "trim": "Turbo Coupe",
+   "from": {
+    "hp": 265,
+    "hp_basis": "DIN PS (US SAE disputed: 253 or 261)",
+    "status": "three_sources_not_nhra"
+   },
+   "to": {
+    "hp": 253,
+    "hp_basis": "SAE net",
+    "status": "two_sources_agree"
+   },
+   "why": "Turbo 3.3: CG + SCIC agree on 253 SAE net; factory brochure \"over 250\" fits; Wikipedia 261 and Leffingwell 265 dissent."
+  },
+  {
+   "year": 1979,
+   "trim": "Turbo Coupe",
+   "from": {
+    "hp": 265,
+    "hp_basis": "DIN PS (US SAE disputed: 253 or 261)",
+    "status": "three_sources_not_nhra"
+   },
+   "to": {
+    "hp": 253,
+    "hp_basis": "SAE net",
+    "status": "two_sources_agree"
+   },
+   "why": "Turbo 3.3: CG + SCIC agree on 253 SAE net; factory brochure \"over 250\" fits; Wikipedia 261 and Leffingwell 265 dissent."
+  },
+  {
+   "year": 1984,
+   "trim": "Carrera Coupe",
+   "from": {
+    "hp": 207,
+    "hp_basis": "DIN PS (US 200 SAE net per Consumer Guide)",
+    "status": "three_sources_not_nhra"
+   },
+   "to": {
+    "hp": 200,
+    "hp_basis": "SAE net",
+    "status": "two_sources_agree"
+   },
+   "why": "Carrera 3.2: CG + SCIC agree on 200 SAE net; Leffingwell 202 dissents."
+  },
+  {
+   "year": 1985,
+   "trim": "Carrera Coupe",
+   "from": {
+    "hp": 207,
+    "hp_basis": "DIN PS (US 200 SAE net per Consumer Guide)",
+    "status": "three_sources_not_nhra"
+   },
+   "to": {
+    "hp": 200,
+    "hp_basis": "SAE net",
+    "status": "two_sources_agree"
+   },
+   "why": "Carrera 3.2: CG + SCIC agree on 200 SAE net; Leffingwell 202 dissents."
+  },
+  {
+   "year": 1986,
+   "trim": "Carrera Coupe",
+   "from": {
+    "hp": 207,
+    "hp_basis": "DIN PS (US 200 SAE net per Consumer Guide)",
+    "status": "three_sources_not_nhra"
+   },
+   "to": {
+    "hp": 200,
+    "hp_basis": "SAE net",
+    "status": "two_sources_agree"
+   },
+   "why": "Carrera 3.2: CG + SCIC agree on 200 SAE net; Leffingwell 202 dissents."
+  },
+  {
+   "year": 1995,
+   "trim": "Carrera Coupe",
+   "from": {
+    "hp": 272,
+    "hp_basis": "DIN PS (US 270 hp per Consumer Guide)",
+    "status": "three_sources_not_nhra"
+   },
+   "to": {
+    "hp": 270,
+    "hp_basis": "SAE net",
+    "status": "two_sources_agree"
+   },
+   "why": "1995 993 Carrera: CG + SCIC agree on 270."
+  },
+  {
+   "year": 1996,
+   "trim": "Turbo Coupe",
+   "from": {
+    "hp": 408,
+    "hp_basis": "DIN PS (US 400 hp per Consumer Guide)",
+    "status": "three_sources_not_nhra"
+   },
+   "to": {
+    "hp": 400,
+    "hp_basis": "SAE net",
+    "status": "two_sources_agree"
+   },
+   "why": "1996 993 Turbo: CG + SCIC agree on 400."
+  },
+  {
+   "year": 1997,
+   "trim": "Turbo Coupe",
+   "from": {
+    "hp": 408,
+    "hp_basis": "DIN PS (US 400 hp per Consumer Guide)",
+    "status": "three_sources_not_nhra"
+   },
+   "to": {
+    "hp": 400,
+    "hp_basis": "SAE net",
+    "status": "two_sources_agree"
+   },
+   "why": "1997 993 Turbo: CG + SCIC agree on 400."
+  },
+  {
+   "year": 1992,
+   "trim": "Turbo S Coupe",
+   "from": {
+    "hp": 322,
+    "hp_basis": "SAE net",
+    "status": "two_sources_agree"
+   },
+   "to": "unchanged (note/sources only)",
+   "why": "Only partial corroboration (Stuttcars Turbo S2 322 bhp, different rpm and build count)."
+  },
+  {
+   "year": 1994,
+   "trim": "Turbo S Coupe",
+   "from": {
+    "hp": 380,
+    "hp_basis": "SAE net",
+    "status": "two_sources_agree"
+   },
+   "to": "unchanged (note/sources only)",
+   "why": "Supporting enthusiast source only."
+  },
+  "2026-10-14 merge: kept the v1 DIN entries for 1970-71 911T, 1972 911E/S, 1978-79 Turbo and 1984-86 Carrera (sources conflict, or gross figures after 1971)."
  ]
 }

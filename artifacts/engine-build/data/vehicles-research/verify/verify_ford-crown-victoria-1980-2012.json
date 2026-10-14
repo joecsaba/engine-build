@@ -32,7 +32,7 @@
     ],
     "independent_sources": 3,
     "status": "disputed",
-    "note": "NHRA lists 132 hp (the 1982 figure); Wikipedia gives 130 (GMN club table, context only, 130@3600). No Ford HP figure found; 130 most likely.",
+    "note": "NHRA lists 132 hp (the 1982 figure); Wikipedia gives 130 (GMN club table, context only, 130@3600). No Ford HP figure found; 130 most likely. [v2] MSP 1980 evaluation shows Ford police packages only on LTD S/LTD (not Crown Victoria) and gives no 302 rating; no Ford or independent 302 figure found. Still disputed.",
     "hp_sources": 2
    },
    {
@@ -134,7 +134,7 @@
     ],
     "independent_sources": 3,
     "status": "disputed",
-    "note": "HP only from NHRA (125); GMN club table (context) gives 130 @3400. Wikipedia says the 302 got throttle-body EFI for 1981, but Ford brochures show the EFI 5.0 as new for 1983.",
+    "note": "HP only from NHRA (125); GMN club table (context) gives 130 @3400. Wikipedia says the 302 got throttle-body EFI for 1981, but Ford brochures show the EFI 5.0 as new for 1983. [v2] MSP 1981 report tested only the 351 H.O.; no 302 rating found. Still disputed (NHRA 125 vs club table 130).",
     "hp_sources": 1
    },
    {
@@ -186,12 +186,17 @@
       "name": "NHRA Stock Car Classification Guide",
       "url": "nhra_ford-crown-victoria-1980-2012.json",
       "says": "1981 Crown Victoria: 351 ci / 165 hp"
+     },
+     {
+      "name": "Michigan State Police - 1981 Model Year Patrol Vehicle Evaluation (NCJ 78766)",
+      "url": "https://www.ojp.gov/pdffiles1/Digitization/78766NCJRS.pdf",
+      "says": "Ford LTD 'S' police, 351W H.O. 5.8L, Ford 7200 VV, dual exhaust: 165 @ 3600 SAE net, 285 lb-ft @ 2200"
      }
     ],
-    "independent_sources": 2,
-    "status": "two_sources_agree",
-    "note": "HP from NHRA only (GMN context table agrees 165).",
-    "hp_sources": 1
+    "independent_sources": 3,
+    "status": "confirmed",
+    "note": "HP from NHRA only (GMN context table agrees 165). [v2] MSP 1981 test car (LTD S police, same full-size police engine) rated 165 @ 3600 - matches NHRA.",
+    "hp_sources": 2
    }
   ],
   "1982": [
@@ -286,21 +291,26 @@
       "name": "Wikipedia - Ford LTD Crown Victoria",
       "url": "https://en.wikipedia.org/wiki/Ford_LTD_Crown_Victoria",
       "says": "5.0 L effectively the only engine for 1983"
+     },
+     {
+      "name": "Michigan State Police - 1983 Model Year Patrol Vehicle Evaluation (NCJ 90183)",
+      "url": "https://www.ojp.gov/pdffiles1/Digitization/90183NCJRS.pdf",
+      "says": "Ford Crown Victoria CV-S P43, 302 5.0L CFI, single exhaust: 130 @ 3200 SAE net, 240 lb-ft @ 2000"
      }
     ],
-    "independent_sources": 2,
+    "independent_sources": 3,
     "status": "two_sources_agree",
-    "note": "No reputable HP figure for 1983 found; 130 is the GMN club table figure only (context). HP unverified. [2026-10-13: shown without a rating; Ford 1983 brochure and Wikipedia agree on the engine.]",
-    "hp_sources": 0,
+    "note": "Ford 1983 brochure and Wikipedia confirm the engine. [v2] HP 130 @ 3200 from the Michigan State Police 1983 report (spec table for the CV-S police test car with the CFI 302); matches the GMN club figure. One reputable HP source.",
+    "hp_sources": 1,
     "hp_confirmed": false
    },
    {
     "gen": "panther1",
     "cid": 351,
-    "hp": null,
+    "hp": 165,
     "hp_basis": "SAE net",
     "rpo": "Windsor 351 HO",
-    "common_name": "5.8 (351) V8 VV (police/fleet)",
+    "common_name": "5.8 (351) H.O. V8 VV carb, dual exhaust (police/fleet)",
     "trims": [
      "Police package"
     ],
@@ -310,12 +320,17 @@
       "name": "Wikipedia - Ford LTD Crown Victoria",
       "url": "https://en.wikipedia.org/wiki/Ford_LTD_Crown_Victoria",
       "says": "5.8 L carbureted V8 restricted to fleet (police) from 1983"
+     },
+     {
+      "name": "Michigan State Police - 1983 Model Year Patrol Vehicle Evaluation (NCJ 90183)",
+      "url": "https://www.ojp.gov/pdffiles1/Digitization/90183NCJRS.pdf",
+      "says": "Ford Crown Victoria CV-S P43 police, 351W H.O. 5.8L, Ford 7200 VV, dual exhaust: 165 @ 3600 SAE net, 290 lb-ft @ 2200"
      }
     ],
-    "independent_sources": 1,
-    "status": "disputed",
-    "note": "Only Wikipedia; Ford 1983 retail brochure does not list it; EPA data start 1984. GMN context table gives 140 hp. HP withheld.",
-    "hp_sources": 0
+    "independent_sources": 2,
+    "status": "two_sources_agree",
+    "note": "[v2] Existence confirmed by Wikipedia (5.8 restricted to fleet/police from 1983) and the Michigan State Police 1983 evaluation, which tested an LTD Crown Victoria S police car (sales code P43) with the 351W H.O. rated 165 @ 3600. The GMN club table's 140 hp is not supported. HP from one reputable source (MSP).",
+    "hp_sources": 1
    }
   ],
   "1984": [
@@ -372,13 +387,13 @@
     ],
     "independent_sources": 1,
     "status": "disputed",
-    "note": "Wikipedia says \"140 hp (155 hp optional)\" without naming the engine; GMN context table gives 155 for an optional 5.0 (standard on wagon). No Ford or other confirmation.",
+    "note": "Wikipedia says \"140 hp (155 hp optional)\" without naming the engine; GMN context table gives 155 for an optional 5.0 (standard on wagon). No Ford or other confirmation. [v2] No year-specific source found. MSP 1987 shows the dual-exhaust police 5.0 rated 10 hp above the single-exhaust 5.0 (160 vs 150), so a 155-hp dual-exhaust 5.0 (140 + 15) is plausible but unverified; US retail availability unknown.",
     "hp_sources": 1
    },
    {
     "gen": "panther1",
     "cid": 351,
-    "hp": 180,
+    "hp": null,
     "hp_basis": "SAE net",
     "rpo": "Windsor 351 HO",
     "common_name": "5.8 (351) HO V8 VV carb (police)",
@@ -400,7 +415,7 @@
     ],
     "independent_sources": 2,
     "status": "disputed",
-    "note": "Availability confirmed by EPA + Wikipedia; 180 hp confirmed by Ford only for 1988, 1989 and 1991 (GMN context gives 180 for 1984-91). Wikipedia's 1984 \"155 hp optional\" is probably the 5.0 dual exhaust. Wikipedia: also sold at retail in Canada.",
+    "note": "Availability confirmed by EPA + Wikipedia; 180 hp confirmed by Ford only for 1988, 1989 and 1991 (GMN context gives 180 for 1984-91). Wikipedia's 1984 \"155 hp optional\" is probably the 5.0 dual exhaust. Wikipedia: also sold at retail in Canada. [v2] HP withheld: MSP rated the police 351 H.O. 165 @ 3600 for 1983 and 180 @ 3600 for 1987, so the 1984-86 rating cannot be inferred; Wikipedia only says 'up to 180 hp'. No year-specific source found.",
     "hp_sources": 0
    }
   ],
@@ -458,13 +473,13 @@
     ],
     "independent_sources": 1,
     "status": "disputed",
-    "note": "Wikipedia says \"140 hp (155 hp optional)\" without naming the engine; GMN context table gives 155 for an optional 5.0 (standard on wagon). No Ford or other confirmation.",
+    "note": "Wikipedia says \"140 hp (155 hp optional)\" without naming the engine; GMN context table gives 155 for an optional 5.0 (standard on wagon). No Ford or other confirmation. [v2] No year-specific source found. MSP 1987 shows the dual-exhaust police 5.0 rated 10 hp above the single-exhaust 5.0 (160 vs 150), so a 155-hp dual-exhaust 5.0 (140 + 15) is plausible but unverified; US retail availability unknown.",
     "hp_sources": 1
    },
    {
     "gen": "panther1",
     "cid": 351,
-    "hp": 180,
+    "hp": null,
     "hp_basis": "SAE net",
     "rpo": "Windsor 351 HO",
     "common_name": "5.8 (351) HO V8 VV carb (police)",
@@ -486,7 +501,7 @@
     ],
     "independent_sources": 2,
     "status": "disputed",
-    "note": "Availability confirmed by EPA + Wikipedia; 180 hp confirmed by Ford only for 1988, 1989 and 1991 (GMN context gives 180 for 1984-91). Wikipedia's 1984 \"155 hp optional\" is probably the 5.0 dual exhaust. Wikipedia: also sold at retail in Canada.",
+    "note": "Availability confirmed by EPA + Wikipedia; 180 hp confirmed by Ford only for 1988, 1989 and 1991 (GMN context gives 180 for 1984-91). Wikipedia's 1984 \"155 hp optional\" is probably the 5.0 dual exhaust. Wikipedia: also sold at retail in Canada. [v2] HP withheld: MSP rated the police 351 H.O. 165 @ 3600 for 1983 and 180 @ 3600 for 1987, so the 1984-86 rating cannot be inferred; Wikipedia only says 'up to 180 hp'. No year-specific source found.",
     "hp_sources": 0
    }
   ],
@@ -527,7 +542,7 @@
    {
     "gen": "panther1",
     "cid": 351,
-    "hp": 180,
+    "hp": null,
     "hp_basis": "SAE net",
     "rpo": "Windsor 351 HO",
     "common_name": "5.8 (351) HO V8 VV carb (police)",
@@ -549,7 +564,7 @@
     ],
     "independent_sources": 2,
     "status": "disputed",
-    "note": "Availability confirmed by EPA + Wikipedia; 180 hp confirmed by Ford only for 1988, 1989 and 1991 (GMN context gives 180 for 1984-91). Wikipedia's 1984 \"155 hp optional\" is probably the 5.0 dual exhaust. Wikipedia: also sold at retail in Canada.",
+    "note": "Availability confirmed by EPA + Wikipedia; 180 hp confirmed by Ford only for 1988, 1989 and 1991 (GMN context gives 180 for 1984-91). Wikipedia's 1984 \"155 hp optional\" is probably the 5.0 dual exhaust. Wikipedia: also sold at retail in Canada. [v2] HP withheld: MSP rated the police 351 H.O. 165 @ 3600 for 1983 and 180 @ 3600 for 1987, so the 1984-86 rating cannot be inferred; Wikipedia only says 'up to 180 hp'. No year-specific source found.",
     "hp_sources": 0
    }
   ],
@@ -608,12 +623,45 @@
       "name": "EPA fueleconomy.gov vehicle data",
       "url": "https://www.fueleconomy.gov/feg/download.shtml",
       "says": "1987: 5.8 L V8 LTD Crown Victoria (POLICE)"
+     },
+     {
+      "name": "Michigan State Police - 1987 Model Year Patrol Vehicle Testing (NCJ 104406)",
+      "url": "https://www.ojp.gov/pdffiles1/Digitization/104406NCJRS.pdf",
+      "says": "Ford Crown Vic. P73 police, 351 5.8L variable venturi, dual exhaust: 180 @ 3600 SAE net, 285 lb-ft @ 2400"
+     }
+    ],
+    "independent_sources": 3,
+    "status": "three_sources_not_nhra",
+    "note": "[v2] Michigan State Police 1987 report: 180 @ 3600 for the P73 police 351 VV H.O.; Wikipedia gives 'up to 180'. EPA confirms availability.",
+    "hp_sources": 2
+   },
+   {
+    "gen": "panther1",
+    "cid": 302,
+    "hp": 160,
+    "hp_basis": "SAE net",
+    "rpo": "Windsor 5.0 SEFI",
+    "common_name": "5.0 (302) V8 SEFI, police dual exhaust",
+    "trims": [
+     "Police package"
+    ],
+    "nhra": false,
+    "sources": [
+     {
+      "name": "Michigan State Police - 1987 Model Year Patrol Vehicle Testing (NCJ 104406)",
+      "url": "https://www.ojp.gov/pdffiles1/Digitization/104406NCJRS.pdf",
+      "says": "Ford Crown Vic. P73 police, 302 5.0L multi-port fuel injection, dual exhaust: 160 @ 3400 SAE net, 280 lb-ft @ 2200"
+     },
+     {
+      "name": "EPA fueleconomy.gov vehicle data",
+      "url": "https://www.fueleconomy.gov/feg/download.shtml",
+      "says": "1987 LTD Crown Victoria 5.0 L V8 listed (generic)"
      }
     ],
     "independent_sources": 2,
-    "status": "disputed",
-    "note": "Availability confirmed by EPA + Wikipedia; 180 hp confirmed by Ford only for 1988, 1989 and 1991 (GMN context gives 180 for 1984-91). Wikipedia's 1984 \"155 hp optional\" is probably the 5.0 dual exhaust. Wikipedia: also sold at retail in Canada.",
-    "hp_sources": 0
+    "status": "two_sources_agree",
+    "hp_sources": 1,
+    "note": "[v2] New row. The MSP 1987 test car was a P73 police Crown Victoria with the dual-exhaust 5.0 rated 160 @ 3400 (the rating Ford's 1988-91 police sheets give). EPA confirms the 5.0 only generically. HP from one reputable source."
    }
   ],
   "1988": [
@@ -877,7 +925,7 @@
     ],
     "independent_sources": 2,
     "status": "two_sources_agree",
-    "note": "Ford retail brochure confirms the dual-exhaust option (no HP); 160 = Wikipedia 150+10, and Ford police sheets rate the dual-exhaust 5.0 at 160. Ford's 1989 retail brochure already lists dual exhaust in the towing package, a year before Wikipedia's 1990.",
+    "note": "Ford retail brochure confirms the dual-exhaust option (no HP); 160 = Wikipedia 150+10, and Ford police sheets rate the dual-exhaust 5.0 at 160. Ford's 1989 retail brochure already lists dual exhaust in the towing package, a year before Wikipedia's 1990. [v2] Partial support: MSP 1987 rates the police dual-exhaust 5.0 SEFI at 160 @ 3400 (150 + 10, arithmetic consistent).",
     "hp_sources": 2
    },
    {
@@ -905,7 +953,7 @@
     ],
     "independent_sources": 2,
     "status": "two_sources_agree",
-    "note": "No 1990 Ford police sheet found; 1989 and 1991 Ford sheets both give 160.",
+    "note": "No 1990 Ford police sheet found; 1989 and 1991 Ford sheets both give 160. [v2] Partial support: MSP 1987 rates the police dual-exhaust 5.0 SEFI at 160 @ 3400 (150 + 10, arithmetic consistent).",
     "hp_sources": 1
    },
    {
@@ -932,8 +980,8 @@
      }
     ],
     "independent_sources": 2,
-    "status": "disputed",
-    "note": "Availability confirmed by EPA + Wikipedia; 180 hp confirmed by Ford only for 1988, 1989 and 1991 (GMN context gives 180 for 1984-91). Wikipedia's 1984 \"155 hp optional\" is probably the 5.0 dual exhaust. Wikipedia: also sold at retail in Canada.",
+    "status": "two_sources_agree",
+    "note": "Availability confirmed by EPA + Wikipedia; 180 hp confirmed by Ford only for 1988, 1989 and 1991 (GMN context gives 180 for 1984-91). Wikipedia's 1984 \"155 hp optional\" is probably the 5.0 dual exhaust. Wikipedia: also sold at retail in Canada. [v2] Ford police sheets give 180 for 1988, 1989 and 1991 and MSP gives 180 for 1987, so 180 for 1990 is consistent; no 1990-specific rating found.",
     "hp_sources": 0
    }
   ],
@@ -996,7 +1044,7 @@
     ],
     "independent_sources": 2,
     "status": "two_sources_agree",
-    "note": "Ford retail brochure confirms the dual-exhaust option (no HP); 160 = Wikipedia 150+10, and Ford police sheets rate the dual-exhaust 5.0 at 160. Ford's 1989 retail brochure already lists dual exhaust in the towing package, a year before Wikipedia's 1990.",
+    "note": "Ford retail brochure confirms the dual-exhaust option (no HP); 160 = Wikipedia 150+10, and Ford police sheets rate the dual-exhaust 5.0 at 160. Ford's 1989 retail brochure already lists dual exhaust in the towing package, a year before Wikipedia's 1990. [v2] Partial support: MSP 1987 rates the police dual-exhaust 5.0 SEFI at 160 @ 3400 (150 + 10, arithmetic consistent).",
     "hp_sources": 2
    },
    {
@@ -1876,7 +1924,7 @@
     ],
     "independent_sources": 1,
     "status": "disputed",
-    "note": "No 1998 CNG row in EPA data; Ford 1998 sheet lists the NGV at 175 bhp.",
+    "note": "No 1998 CNG row in EPA data; Ford 1998 sheet lists the NGV at 175 bhp. [v2] No second HP source found (MSP, CARB and Ford's fleet NGV pages give no rating). Ford 1998 sheet: 175 bhp @ 4500, 235 lb-ft @ 3250.",
     "hp_sources": 1
    }
   ],
@@ -2132,11 +2180,16 @@
       "name": "EPA fueleconomy.gov vehicle data",
       "url": "https://www.fueleconomy.gov/feg/download.shtml",
       "says": "2000: 4.6 L V8 Crown Victoria CNG"
+     },
+     {
+      "name": "NIJ/NLECTC - Michigan State Police Tests 2000 Patrol Vehicles (bulletin, NCJ 206448)",
+      "url": "https://www.ojp.gov/ (NCJ 206448; scratchpad cv/msp_206448.pdf)",
+      "says": "Police Interceptor offered in gasoline and compressed natural gas (CNG) versions for 2000 (Ford did not submit the CNG car)"
      }
     ],
-    "independent_sources": 2,
-    "status": "two_sources_agree",
-    "note": "HP not found for this year (Ford 1998: 175 bhp).",
+    "independent_sources": 3,
+    "status": "three_sources_not_nhra",
+    "note": "HP not found for this year (Ford 1998: 175 bhp). [v2] NIJ/MSP 2000 bulletin confirms the CNG Police Interceptor for 2000. HP still not published for this year.",
     "hp_sources": 0
    }
   ],
@@ -2533,7 +2586,7 @@
     ],
     "independent_sources": 1,
     "status": "disputed",
-    "note": "Only EPA lists a 2003 CNG model; no Ford 2003 sheet found (Wikipedia: NGV dropped for 2005). HP not found (Ford 1998: 175 bhp).",
+    "note": "Only EPA lists a 2003 CNG model; no Ford 2003 sheet found (Wikipedia: NGV dropped for 2005). HP not found (Ford 1998: 175 bhp). [v2] CARB DriveClean lists a 2003 Crown Victoria CNG, but its listings appear to derive from EPA data (counted once). MSP 2004 bulletin says the CNG Police Interceptor would be available January 2004 and that 2004 was its final year, implying continuity. Still one independent source.",
     "hp_sources": 0
    }
   ],
@@ -2632,12 +2685,17 @@
       "name": "EPA fueleconomy.gov vehicle data",
       "url": "https://www.fueleconomy.gov/feg/download.shtml",
       "says": "2004: 4.6 L V8 Crown Victoria Police"
+     },
+     {
+      "name": "NIJ/NLECTC - Michigan State Police Tests 2004 Patrol Vehicles (NCJ 206094)",
+      "url": "https://www.ojp.gov/pdffiles1/nij/nlectc/206094.pdf",
+      "says": "New air induction system raises the maximum rated horsepower of the Police Interceptor to 250, an increase of 11 hp from last year"
      }
     ],
-    "independent_sources": 2,
-    "status": "two_sources_agree",
-    "note": "No Ford sheet with HP found for this year; neighbouring years' Ford sheets give 250.",
-    "hp_sources": 1
+    "independent_sources": 3,
+    "status": "three_sources_not_nhra",
+    "note": "[v2] Michigan State Police 2004 evaluation gives 250 hp (239 + 11; consistent with POLICE Magazine's 2003 figure of 239). Wikipedia agrees; EPA confirms availability.",
+    "hp_sources": 2
    },
    {
     "gen": "panther3",
@@ -2660,11 +2718,16 @@
       "name": "Wikipedia - Ford Crown Victoria (incl. horsepower/torque table)",
       "url": "https://en.wikipedia.org/wiki/Ford_Crown_Victoria",
       "says": "NGV engine option discontinued for 2005"
+     },
+     {
+      "name": "NIJ/NLECTC - Michigan State Police Tests 2004 Patrol Vehicles (NCJ 206094)",
+      "url": "https://www.ojp.gov/pdffiles1/nij/nlectc/206094.pdf",
+      "says": "A compressed natural gas (CNG) version of the Police Interceptor will be available in January 2004; final year of production for the CNG version"
      }
     ],
-    "independent_sources": 2,
-    "status": "two_sources_agree",
-    "note": "HP not found for this year (Ford 1998: 175 bhp).",
+    "independent_sources": 3,
+    "status": "three_sources_not_nhra",
+    "note": "HP not found for this year (Ford 1998: 175 bhp). [v2] MSP 2004 bulletin: CNG Police Interceptor available January 2004, final year. HP not published.",
     "hp_sources": 0
    }
   ],
@@ -2979,12 +3042,17 @@
       "name": "EPA fueleconomy.gov vehicle data",
       "url": "https://www.fueleconomy.gov/feg/download.shtml",
       "says": "2007: 4.6 L V8 Crown Victoria FFV (no separate police row)"
+     },
+     {
+      "name": "Michigan State Police - Police Vehicle Evaluation Model Year 2007 (NCJ 218236)",
+      "url": "https://www.ojp.gov/pdffiles1/nij/nlectc/218236.pdf",
+      "says": "Ford Police Interceptor P71, 4.6L SMFI, dual exhaust: 250 @ 5000 SAE net, 297 lb-ft"
      }
     ],
-    "independent_sources": 2,
-    "status": "two_sources_agree",
-    "note": "No Ford sheet with HP found for this year; neighbouring years' Ford sheets give 250.",
-    "hp_sources": 1
+    "independent_sources": 3,
+    "status": "three_sources_not_nhra",
+    "note": "[v2] Michigan State Police 2007 evaluation gives 250 hp @ 5000. Wikipedia agrees; EPA confirms availability.",
+    "hp_sources": 2
    }
   ],
   "2008": [
@@ -3013,7 +3081,7 @@
     ],
     "independent_sources": 2,
     "status": "two_sources_agree",
-    "note": "Flex-fuel (E85) version from 2006 (EPA FFV rows); same rating. Retail sales ended after 2007; 2008-11 sold to fleets. HP only from Wikipedia - no Ford or other publication rating found for 2008-11.",
+    "note": "Flex-fuel (E85) version from 2006; retail sales ended after 2007, 2008-11 sold to fleets. [v2] Ford fleet spec pages give 224 for 2009 (@4750) and 2011 (@4800). No Ford sheet for 2008; bracketed by the 2007 brochure and 2009 fleet spec (both 224).",
     "hp_sources": 1
    },
    {
@@ -3036,7 +3104,7 @@
     ],
     "independent_sources": 1,
     "status": "disputed",
-    "note": "Only Wikipedia lists a civilian dual-exhaust rating for 2008-11; LX Sport ended after 2007. Unverified.",
+    "note": "Only Wikipedia lists a civilian dual-exhaust rating for 2008-11; LX Sport ended after 2007. Unverified. [v2] Wikipedia says the LX Sport ended mid-2008, so a 2008 H&P/LX Sport is plausible; no Ford 2008 sheet found. Kept disputed.",
     "hp_sources": 1
    },
    {
@@ -3095,17 +3163,22 @@
       "name": "EPA fueleconomy.gov vehicle data",
       "url": "https://www.fueleconomy.gov/feg/download.shtml",
       "says": "2009: 4.6 L V8 Crown Victoria (incl. FFV)"
+     },
+     {
+      "name": "Ford Fleet - 2009 Crown Victoria specifications (fleet.ford.com via Wayback)",
+      "url": "http://web.archive.org/web/20120421234801/https://www.fleet.ford.com/showroom/2009fleetshowroom/2009-CrownVictoria-specs.asp?EV=0",
+      "says": "4.6L SOHC V8 FFV 224 @ 4750, 265 lb-ft @ 4000"
      }
     ],
-    "independent_sources": 2,
-    "status": "two_sources_agree",
-    "note": "Flex-fuel (E85) version from 2006 (EPA FFV rows); same rating. Retail sales ended after 2007; 2008-11 sold to fleets. HP only from Wikipedia - no Ford or other publication rating found for 2008-11.",
-    "hp_sources": 1
+    "independent_sources": 3,
+    "status": "three_sources_not_nhra",
+    "note": "Flex-fuel (E85) version from 2006; retail sales ended after 2007, 2008-11 sold to fleets. [v2] Ford fleet spec pages give 224 for 2009 (@4750) and 2011 (@4800).",
+    "hp_sources": 2
    },
    {
     "gen": "panther3",
     "cid": 281,
-    "hp": 239,
+    "hp": null,
     "hp_basis": "SAE net",
     "rpo": "Modular 4.6 SOHC",
     "common_name": "4.6 SOHC 2V V8, dual exhaust",
@@ -3118,12 +3191,17 @@
       "name": "Wikipedia - Ford Crown Victoria (incl. horsepower/torque table)",
       "url": "https://en.wikipedia.org/wiki/Ford_Crown_Victoria",
       "says": "2003-2011: 239 hp dual exhaust"
+     },
+     {
+      "name": "Ford Fleet - 2009 Crown Victoria specifications (fleet.ford.com via Wayback)",
+      "url": "http://web.archive.org/web/20120421234801/https://www.fleet.ford.com/showroom/2009fleetshowroom/2009-CrownVictoria-specs.asp?EV=0",
+      "says": "Specifications list a single engine rating (224); no Handling & Performance package or dual-exhaust rating"
      }
     ],
-    "independent_sources": 1,
-    "status": "disputed",
-    "note": "Only Wikipedia lists a civilian dual-exhaust rating for 2008-11; LX Sport ended after 2007. Unverified.",
-    "hp_sources": 1
+    "independent_sources": 2,
+    "status": "withheld_unverified",
+    "note": "Only Wikipedia lists a civilian dual-exhaust rating for 2008-11; LX Sport ended after 2007. Unverified. [v2] Withheld: Ford's 2009 and 2011 fleet spec pages list only the 224-hp engine, and Wikipedia says the LX Sport/H&P line ended mid-2008. No evidence the 239-hp dual-exhaust package was sold in the US after 2008.",
+    "hp_sources": 0
    },
    {
     "gen": "panther3",
@@ -3185,13 +3263,13 @@
     ],
     "independent_sources": 2,
     "status": "two_sources_agree",
-    "note": "Flex-fuel (E85) version from 2006 (EPA FFV rows); same rating. Retail sales ended after 2007; 2008-11 sold to fleets. HP only from Wikipedia - no Ford or other publication rating found for 2008-11.",
+    "note": "Flex-fuel (E85) version from 2006; retail sales ended after 2007, 2008-11 sold to fleets. [v2] Ford fleet spec pages give 224 for 2009 (@4750) and 2011 (@4800). No 2010 civilian spec found; Ford's 2010 Commercial (taxi/livery) page lists 220 @ 4750, a Ford-internal inconsistency against 224 on the 2009 and 2011 fleet pages.",
     "hp_sources": 1
    },
    {
     "gen": "panther3",
     "cid": 281,
-    "hp": 239,
+    "hp": null,
     "hp_basis": "SAE net",
     "rpo": "Modular 4.6 SOHC",
     "common_name": "4.6 SOHC 2V V8, dual exhaust",
@@ -3207,9 +3285,9 @@
      }
     ],
     "independent_sources": 1,
-    "status": "disputed",
-    "note": "Only Wikipedia lists a civilian dual-exhaust rating for 2008-11; LX Sport ended after 2007. Unverified.",
-    "hp_sources": 1
+    "status": "withheld_unverified",
+    "note": "Only Wikipedia lists a civilian dual-exhaust rating for 2008-11; LX Sport ended after 2007. Unverified. [v2] Withheld: Ford's 2009 and 2011 fleet spec pages list only the 224-hp engine, and Wikipedia says the LX Sport/H&P line ended mid-2008. No evidence the 239-hp dual-exhaust package was sold in the US after 2008.",
+    "hp_sources": 0
    },
    {
     "gen": "panther3",
@@ -3267,17 +3345,22 @@
       "name": "EPA fueleconomy.gov vehicle data",
       "url": "https://www.fueleconomy.gov/feg/download.shtml",
       "says": "2011: 4.6 L V8 Crown Victoria (incl. FFV)"
+     },
+     {
+      "name": "Ford Fleet - 2011 Crown Victoria specifications (fleet.ford.com via Wayback)",
+      "url": "http://web.archive.org/web/20121224032031/https://www.fleet.ford.com/showroom/2011fleetshowroom/2011-CrownVictoria-specs.asp?EV=0",
+      "says": "4.6L SOHC V8 FFV 224 @ 4,800, 275 lb-ft @ 4,000"
      }
     ],
-    "independent_sources": 2,
-    "status": "two_sources_agree",
-    "note": "Flex-fuel (E85) version from 2006 (EPA FFV rows); same rating. Retail sales ended after 2007; 2008-11 sold to fleets. HP only from Wikipedia - no Ford or other publication rating found for 2008-11.",
-    "hp_sources": 1
+    "independent_sources": 3,
+    "status": "three_sources_not_nhra",
+    "note": "Flex-fuel (E85) version from 2006; retail sales ended after 2007, 2008-11 sold to fleets. [v2] Ford fleet spec pages give 224 for 2009 (@4750) and 2011 (@4800).",
+    "hp_sources": 2
    },
    {
     "gen": "panther3",
     "cid": 281,
-    "hp": 239,
+    "hp": null,
     "hp_basis": "SAE net",
     "rpo": "Modular 4.6 SOHC",
     "common_name": "4.6 SOHC 2V V8, dual exhaust",
@@ -3290,12 +3373,17 @@
       "name": "Wikipedia - Ford Crown Victoria (incl. horsepower/torque table)",
       "url": "https://en.wikipedia.org/wiki/Ford_Crown_Victoria",
       "says": "2003-2011: 239 hp dual exhaust"
+     },
+     {
+      "name": "Ford Fleet - 2011 Crown Victoria specifications (fleet.ford.com via Wayback)",
+      "url": "http://web.archive.org/web/20121224032031/https://www.fleet.ford.com/showroom/2011fleetshowroom/2011-CrownVictoria-specs.asp?EV=0",
+      "says": "Specifications list a single engine rating (224); no Handling & Performance package or dual-exhaust rating"
      }
     ],
-    "independent_sources": 1,
-    "status": "disputed",
-    "note": "Only Wikipedia lists a civilian dual-exhaust rating for 2008-11; LX Sport ended after 2007. Unverified.",
-    "hp_sources": 1
+    "independent_sources": 2,
+    "status": "withheld_unverified",
+    "note": "Only Wikipedia lists a civilian dual-exhaust rating for 2008-11; LX Sport ended after 2007. Unverified. [v2] Withheld: Ford's 2009 and 2011 fleet spec pages list only the 224-hp engine, and Wikipedia says the LX Sport/H&P line ended mid-2008. No evidence the 239-hp dual-exhaust package was sold in the US after 2008.",
+    "hp_sources": 0
    },
    {
     "gen": "panther3",
@@ -3318,19 +3406,24 @@
       "name": "EPA fueleconomy.gov vehicle data",
       "url": "https://www.fueleconomy.gov/feg/download.shtml",
       "says": "2011: 4.6 L V8 Crown Victoria FFV (no separate police row)"
+     },
+     {
+      "name": "Michigan State Police - Police Vehicle Evaluation Model Year 2011 (NCJ 233925)",
+      "url": "https://www.ojp.gov/pdffiles1/nij/nlectc/233925.pdf",
+      "says": "Ford Police Interceptor 4.6L SMFI: 250 @ 5000 SAE net (3.27 and 3.55 axle cars)"
      }
     ],
-    "independent_sources": 2,
-    "status": "two_sources_agree",
-    "note": "No Ford sheet with HP found for this year; neighbouring years' Ford sheets give 250.",
-    "hp_sources": 1
+    "independent_sources": 3,
+    "status": "three_sources_not_nhra",
+    "note": "[v2] Michigan State Police 2011 evaluation gives 250 hp @ 5000. Wikipedia agrees; EPA confirms availability.",
+    "hp_sources": 2
    }
   ],
   "2012": [
    {
     "gen": "panther3",
     "cid": 281,
-    "hp": 224,
+    "hp": null,
     "hp_basis": "SAE net",
     "rpo": "Modular 4.6 SOHC",
     "common_name": "4.6 SOHC 2V V8 FFV",
@@ -3343,11 +3436,16 @@
       "name": "Wikipedia - Ford Crown Victoria (incl. horsepower/torque table)",
       "url": "https://en.wikipedia.org/wiki/Ford_Crown_Victoria",
       "says": "2003-2012: 224 hp single exhaust; 2012 sales 4,429"
+     },
+     {
+      "name": "POLICE Magazine - 2012 Michigan Vehicle Tests: Patrol Cars",
+      "url": "https://www.policemag.com/340642/2012-michigan-vehicle-tests-patrol-cars",
+      "says": "For the first time in two decades, the patrol cars at the Michigan State Police evaluations didn't include a Ford Crown Victoria Police Interceptor (2012 MY)"
      }
     ],
-    "independent_sources": 1,
-    "status": "disputed",
-    "note": "Only Wikipedia. No 2012 Crown Victoria in EPA data; 2012 models are widely described as export/fleet-only. US-market sale of a 2012 MY not verified - withhold until confirmed.",
+    "independent_sources": 2,
+    "status": "excluded_not_us_market",
+    "note": "[v2] Not a US-market model year. Wikipedia: the 2012 batch was built Aug-Sep 2011 for Middle East (GCC) export because 2012 US/Canada rules required stability control. No 2012 Crown Victoria in EPA data, no 2012 Crown Victoria page on Ford's fleet site (Wayback index), and no CVPI at the 2012 MSP tests (POLICE Magazine).",
     "hp_sources": 1
    }
   ]
@@ -3592,7 +3690,335 @@
    "name": "Ford Fleet - 2010 Ford Fleet Police Vehicles brochure (fleet.ford.com via Wayback)",
    "url": "http://web.archive.org/web/20120904211418/https://www.fleet.ford.com/downloads/brochures/2010/Police_brochure.pdf",
    "type": "manufacturer"
+  },
+  {
+   "name": "Michigan State Police - 1980 Model Year Patrol Vehicle Evaluation (NCJ 78761)",
+   "url": "https://www.ojp.gov/pdffiles1/Photocopy/78761NCJRS.pdf",
+   "type": "government"
+  },
+  {
+   "name": "Michigan State Police - 1981 Model Year Patrol Vehicle Evaluation (NCJ 78766)",
+   "url": "https://www.ojp.gov/pdffiles1/Digitization/78766NCJRS.pdf",
+   "type": "government"
+  },
+  {
+   "name": "Michigan State Police - 1982 Model Year Patrol Vehicle Evaluation (NCJ 90353)",
+   "url": "https://www.ojp.gov/pdffiles1/Digitization/90353NCJRS.pdf",
+   "type": "government"
+  },
+  {
+   "name": "Michigan State Police - 1983 Model Year Patrol Vehicle Evaluation (NCJ 90183)",
+   "url": "https://www.ojp.gov/pdffiles1/Digitization/90183NCJRS.pdf",
+   "type": "government"
+  },
+  {
+   "name": "Michigan State Police - 1987 Model Year Patrol Vehicle Testing (NCJ 104406)",
+   "url": "https://www.ojp.gov/pdffiles1/Digitization/104406NCJRS.pdf",
+   "type": "government"
+  },
+  {
+   "name": "NIJ/NLECTC - Michigan State Police Tests 2000 Patrol Vehicles (bulletin, NCJ 206448)",
+   "url": "https://www.ojp.gov/ (NCJ 206448; scratchpad cv/msp_206448.pdf)",
+   "type": "government"
+  },
+  {
+   "name": "NIJ/NLECTC - Michigan State Police Tests 2004 Patrol Vehicles (NCJ 206094)",
+   "url": "https://www.ojp.gov/pdffiles1/nij/nlectc/206094.pdf",
+   "type": "government"
+  },
+  {
+   "name": "Michigan State Police - Police Vehicle Evaluation Model Year 2007 (NCJ 218236)",
+   "url": "https://www.ojp.gov/pdffiles1/nij/nlectc/218236.pdf",
+   "type": "government"
+  },
+  {
+   "name": "Michigan State Police - Police Vehicle Evaluation Model Year 2011 (NCJ 233925)",
+   "url": "https://www.ojp.gov/pdffiles1/nij/nlectc/233925.pdf",
+   "type": "government"
+  },
+  {
+   "name": "Ford Fleet - 2009 Crown Victoria specifications (fleet.ford.com via Wayback)",
+   "url": "http://web.archive.org/web/20120421234801/https://www.fleet.ford.com/showroom/2009fleetshowroom/2009-CrownVictoria-specs.asp?EV=0",
+   "type": "manufacturer"
+  },
+  {
+   "name": "Ford Fleet - 2011 Crown Victoria specifications (fleet.ford.com via Wayback)",
+   "url": "http://web.archive.org/web/20121224032031/https://www.fleet.ford.com/showroom/2011fleetshowroom/2011-CrownVictoria-specs.asp?EV=0",
+   "type": "manufacturer"
+  },
+  {
+   "name": "Ford Fleet - 2010 Crown Victoria Commercial specifications (fleet.ford.com via Wayback)",
+   "url": "http://web.archive.org/web/20120422003453/https://www.fleet.ford.com/showroom/2010fleetshowroom/2010-CrVicComm-specs.asp?EV=0",
+   "type": "manufacturer"
+  },
+  {
+   "name": "POLICE Magazine - 2012 Michigan Vehicle Tests: Patrol Cars",
+   "url": "https://www.policemag.com/340642/2012-michigan-vehicle-tests-patrol-cars",
+   "type": "publication"
+  },
+  {
+   "name": "California Air Resources Board DriveClean - Crown Victoria CNG listings",
+   "url": "https://driveclean.ca.gov/taxonomy/term/36159",
+   "type": "government"
   }
  ],
- "notes": "All Ford material (Ford Heritage Vault brochures, fleet.ford.com archives) counts as ONE source; Wikipedia articles count as ONE. Excluded: 1955-56 Ford Fairlane Crown Victoria (a Fairlane trim, not this model line). 1980-82 rows are the LTD Crown Victoria trim of the full-size LTD; LTD/LTD S-only NHRA rows (e.g. 1982 351/165 on LTD S) are left out. GrandMarq.net \"Box Panther Horsepower/Torque Figures\" (club/forum site that Wikipedia cites) used as context only, not counted. KBB specs pages checked and rejected (inconsistent: 2004 220 hp, 2006 250 hp, 2007 220 hp). hp_sources = number of non-EPA sources that state the HP figure. The web-search budget ran out before a second reputable HP source could be found for the 1983-91 civilian ratings and 2008-11. Hemmings/MotorTrend/Car and Driver are blocked; Michigan State Police full reports (ncjrs.gov) returned errors."
+ "notes": "All Ford material (Ford Heritage Vault brochures, fleet.ford.com archives) counts as ONE source; Wikipedia articles count as ONE. Excluded: 1955-56 Ford Fairlane Crown Victoria (a Fairlane trim, not this model line). 1980-82 rows are the LTD Crown Victoria trim of the full-size LTD; LTD/LTD S-only NHRA rows (e.g. 1982 351/165 on LTD S) are left out. GrandMarq.net \"Box Panther Horsepower/Torque Figures\" (club/forum site that Wikipedia cites) used as context only, not counted. KBB specs pages checked and rejected (inconsistent: 2004 220 hp, 2006 250 hp, 2007 220 hp). hp_sources = number of non-EPA sources that state the HP figure. The web-search budget ran out before a second reputable HP source could be found for the 1983-91 civilian ratings and 2008-11. Hemmings/MotorTrend/Car and Driver are blocked; Michigan State Police full reports (ncjrs.gov) returned errors. [v2 2026-10-14] Michigan State Police patrol-vehicle evaluations (ojp.gov/NCJRS scans; spec tables plus independent testing) used as an independent government source. MSP 1980 and 1982 reports cover LTD/LTD S police cars only (1980 LTD S 351W H.O. 172 @ 3400; 1982 LTD 351 H.O. 165 @ 3600) - context, not Crown Victoria rows. Archive.org Standard Catalog books are lending-restricted (no text access). No reputable source found for the 1984-86 police 351 H.O. rating, the 1984-85 '155 hp' engine, the 1980-81 302 ratings, or CNG horsepower beyond Ford's 1998 sheet.",
+ "v2_changes": [
+  {
+   "year": "1980",
+   "cid": 302,
+   "engine": "5.0 (302) V8 2-bbl variable venturi",
+   "hp": 130,
+   "status": "disputed",
+   "change": "note only: no reputable 302 rating found (130 vs NHRA 132)"
+  },
+  {
+   "year": "1981",
+   "cid": 351,
+   "engine": "5.8 (351) HO V8 (police/fleet)",
+   "hp": 165,
+   "status": "confirmed",
+   "change": "added MSP 1981 (165 @ 3600); two_sources_agree -> confirmed"
+  },
+  {
+   "year": "1981",
+   "cid": 302,
+   "engine": "5.0 (302) V8 2-bbl VV",
+   "hp": 125,
+   "status": "disputed",
+   "change": "note only; no new rating source"
+  },
+  {
+   "year": "1983",
+   "cid": 302,
+   "engine": "5.0 (302) V8 CFI (throttle-body EFI)",
+   "hp": 130,
+   "status": "two_sources_agree",
+   "change": "added MSP 1983: 302 CFI = 130 @ 3200 (one reputable HP source; engine has 3 sources)"
+  },
+  {
+   "year": "1983",
+   "cid": 351,
+   "engine": "5.8 (351) H.O. V8 VV carb, dual exhaust (police/fleet)",
+   "hp": 165,
+   "status": "two_sources_agree",
+   "change": "existence confirmed (MSP 1983); HP null -> 165 (H.O., dual exhaust); disputed -> two_sources_agree"
+  },
+  {
+   "year": "1984",
+   "cid": 351,
+   "engine": "5.8 (351) HO V8 VV carb (police)",
+   "hp": null,
+   "status": "disputed",
+   "change": "HP 180 withheld (null): MSP gives 165 for 1983 and 180 for 1987; no year-specific source"
+  },
+  {
+   "year": "1985",
+   "cid": 351,
+   "engine": "5.8 (351) HO V8 VV carb (police)",
+   "hp": null,
+   "status": "disputed",
+   "change": "HP 180 withheld (null): MSP gives 165 for 1983 and 180 for 1987; no year-specific source"
+  },
+  {
+   "year": "1986",
+   "cid": 351,
+   "engine": "5.8 (351) HO V8 VV carb (police)",
+   "hp": null,
+   "status": "disputed",
+   "change": "HP 180 withheld (null): MSP gives 165 for 1983 and 180 for 1987; no year-specific source"
+  },
+  {
+   "year": "1984",
+   "cid": 302,
+   "engine": "5.0 (302) V8 CFI, dual exhaust (optional)",
+   "hp": 155,
+   "status": "disputed",
+   "change": "note only; still unverified"
+  },
+  {
+   "year": "1985",
+   "cid": 302,
+   "engine": "5.0 (302) V8 CFI, dual exhaust (optional)",
+   "hp": 155,
+   "status": "disputed",
+   "change": "note only; still unverified"
+  },
+  {
+   "year": "1987",
+   "cid": 351,
+   "engine": "5.8 (351) HO V8 VV carb (police)",
+   "hp": 180,
+   "status": "three_sources_not_nhra",
+   "change": "added MSP 1987 (180 @ 3600); disputed -> three_sources_not_nhra"
+  },
+  {
+   "year": "1987",
+   "cid": 302,
+   "engine": "5.0 (302) V8 SEFI, police dual exhaust",
+   "hp": 160,
+   "status": "two_sources_agree",
+   "change": "NEW ROW: 302 police dual exhaust 160 @ 3400 (MSP 1987)"
+  },
+  {
+   "year": "1990",
+   "cid": 351,
+   "engine": "5.8 (351) HO V8 VV carb (police)",
+   "hp": 180,
+   "status": "two_sources_agree",
+   "change": "disputed -> two_sources_agree (engine: Wikipedia + EPA; 180 bracketed by Ford 1989/1991 and MSP 1987)"
+  },
+  {
+   "year": "1990",
+   "cid": 302,
+   "engine": "5.0 (302) V8 SEFI, dual exhaust",
+   "hp": 160,
+   "status": "two_sources_agree",
+   "change": "note: MSP 1987 is a partial third source for the 160 dual-exhaust rating; status unchanged"
+  },
+  {
+   "year": "1991",
+   "cid": 302,
+   "engine": "5.0 (302) V8 SEFI, dual exhaust",
+   "hp": 160,
+   "status": "two_sources_agree",
+   "change": "note: MSP 1987 is a partial third source for the 160 dual-exhaust rating; status unchanged"
+  },
+  {
+   "year": "1990",
+   "cid": 302,
+   "engine": "5.0 (302) V8 SEFI, police dual exhaust",
+   "hp": 160,
+   "status": "two_sources_agree",
+   "change": "note: MSP 1987 is a partial third source for the 160 dual-exhaust rating; status unchanged"
+  },
+  {
+   "year": "2000",
+   "cid": 281,
+   "engine": "4.6 SOHC dedicated natural gas (CNG/NGV)",
+   "hp": null,
+   "status": "three_sources_not_nhra",
+   "change": "added NIJ/MSP 2000 bulletin (existence); -> three_sources_not_nhra; hp stays null"
+  },
+  {
+   "year": "2003",
+   "cid": 281,
+   "engine": "4.6 SOHC dedicated natural gas (CNG/NGV)",
+   "hp": null,
+   "status": "disputed",
+   "change": "note only: CARB listing found but likely EPA-derived; still disputed"
+  },
+  {
+   "year": "2004",
+   "cid": 281,
+   "engine": "4.6 SOHC dedicated natural gas (CNG/NGV)",
+   "hp": null,
+   "status": "three_sources_not_nhra",
+   "change": "added MSP 2004 bulletin; -> three_sources_not_nhra; hp null"
+  },
+  {
+   "year": "1998",
+   "cid": 281,
+   "engine": "4.6 SOHC dedicated natural gas (CNG/NGV)",
+   "hp": 175,
+   "status": "disputed",
+   "change": "note only; 175 remains Ford-only"
+  },
+  {
+   "year": "2004",
+   "cid": 281,
+   "engine": "4.6 SOHC 2V V8, police dual exhaust (Marauder-style intake)",
+   "hp": 250,
+   "status": "three_sources_not_nhra",
+   "change": "added MSP 2004 (250); two_sources_agree -> three_sources_not_nhra"
+  },
+  {
+   "year": "2007",
+   "cid": 281,
+   "engine": "4.6 SOHC 2V V8, police dual exhaust (Marauder-style intake)",
+   "hp": 250,
+   "status": "three_sources_not_nhra",
+   "change": "added MSP 2007 (250); two_sources_agree -> three_sources_not_nhra"
+  },
+  {
+   "year": "2011",
+   "cid": 281,
+   "engine": "4.6 SOHC 2V V8, police dual exhaust (Marauder-style intake)",
+   "hp": 250,
+   "status": "three_sources_not_nhra",
+   "change": "added MSP 2011 (250); two_sources_agree -> three_sources_not_nhra"
+  },
+  {
+   "year": "2008",
+   "cid": 281,
+   "engine": "4.6 SOHC 2V V8 (PI heads)",
+   "hp": 224,
+   "status": "two_sources_agree",
+   "change": "added Ford fleet spec (224); note only (bracketed)"
+  },
+  {
+   "year": "2009",
+   "cid": 281,
+   "engine": "4.6 SOHC 2V V8 (PI heads)",
+   "hp": 224,
+   "status": "three_sources_not_nhra",
+   "change": "added Ford fleet spec (224); -> three_sources_not_nhra"
+  },
+  {
+   "year": "2010",
+   "cid": 281,
+   "engine": "4.6 SOHC 2V V8 (PI heads)",
+   "hp": 224,
+   "status": "two_sources_agree",
+   "change": "added Ford fleet spec (224); note only (bracketed)"
+  },
+  {
+   "year": "2011",
+   "cid": 281,
+   "engine": "4.6 SOHC 2V V8 (PI heads)",
+   "hp": 224,
+   "status": "three_sources_not_nhra",
+   "change": "added Ford fleet spec (224); -> three_sources_not_nhra"
+  },
+  {
+   "year": "2008",
+   "cid": 281,
+   "engine": "4.6 SOHC 2V V8, dual exhaust",
+   "hp": 239,
+   "status": "disputed",
+   "change": "note only; still disputed"
+  },
+  {
+   "year": "2009",
+   "cid": 281,
+   "engine": "4.6 SOHC 2V V8, dual exhaust",
+   "hp": null,
+   "status": "withheld_unverified",
+   "change": "239 withheld (hp null, withheld_unverified): Ford 2009/2011 specs show only 224; package ended mid-2008"
+  },
+  {
+   "year": "2010",
+   "cid": 281,
+   "engine": "4.6 SOHC 2V V8, dual exhaust",
+   "hp": null,
+   "status": "withheld_unverified",
+   "change": "239 withheld (hp null, withheld_unverified): Ford 2009/2011 specs show only 224; package ended mid-2008"
+  },
+  {
+   "year": "2011",
+   "cid": 281,
+   "engine": "4.6 SOHC 2V V8, dual exhaust",
+   "hp": null,
+   "status": "withheld_unverified",
+   "change": "239 withheld (hp null, withheld_unverified): Ford 2009/2011 specs show only 224; package ended mid-2008"
+  },
+  {
+   "year": "2012",
+   "cid": 281,
+   "engine": "4.6 SOHC 2V V8 FFV",
+   "hp": null,
+   "status": "excluded_not_us_market",
+   "change": "status -> excluded_not_us_market, hp null: 2012 MY was GCC export only"
+  }
+ ]
 }
