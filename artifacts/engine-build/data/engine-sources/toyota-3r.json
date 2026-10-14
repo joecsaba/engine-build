@@ -1,0 +1,89 @@
+{
+ "name": "Toyota 3R 1.9 I4",
+ "fields": {
+  "displacement_l": {
+   "value": 1.9,
+   "sources": [
+    {
+     "name": "Wikipedia: Toyota R engine",
+     "url": "https://en.wikipedia.org/wiki/Toyota_R_engine",
+     "says": "3R 1,897 cc"
+    },
+    {
+     "name": "Elgin Industries engine parts catalog (technical reference) - engine details",
+     "url": "https://catalog.elginind.com/engine/toyota/default/b16a401c-b8ee-44e8-a494-4822d9f52036/",
+     "says": "3RC, 8RC, 8R: Liters 1.9, CC 1898"
+    },
+    {
+     "name": "Curbside Classic: First Generation Toyota Hilux",
+     "url": "https://www.curbsideclassic.com/curbside-classics-asian/curbside-classic-first-generation-totoya-hilux-building-block/",
+     "says": "the same 1.9 L 3R ohv four as used in the Corona"
+    }
+   ],
+   "note": "Wikipedia 1,897 cc; Elgin's combined 3R/8R row 1,898 cc"
+  },
+  "num_cylinders": {
+   "value": 4,
+   "sources": [
+    {
+     "name": "Wikipedia: Toyota R engine",
+     "url": "https://en.wikipedia.org/wiki/Toyota_R_engine",
+     "says": "inline-four"
+    },
+    {
+     "name": "Elgin Industries engine parts catalog (technical reference) - engine details",
+     "url": "https://catalog.elginind.com/engine/toyota/default/b16a401c-b8ee-44e8-a494-4822d9f52036/",
+     "says": "Cyl. 4"
+    },
+    {
+     "name": "Curbside Classic: First Generation Toyota Hilux",
+     "url": "https://www.curbsideclassic.com/curbside-classics-asian/curbside-classic-first-generation-totoya-hilux-building-block/",
+     "says": "1.9 L 3R ohv four"
+    }
+   ],
+   "note": ""
+  },
+  "valvetrain": {
+   "value": "OHV (pushrod), 2 valves per cylinder",
+   "sources": [
+    {
+     "name": "Wikipedia: Toyota R engine",
+     "url": "https://en.wikipedia.org/wiki/Toyota_R_engine",
+     "says": "3R OHV"
+    },
+    {
+     "name": "Curbside Classic: First Generation Toyota Hilux",
+     "url": "https://www.curbsideclassic.com/curbside-classics-asian/curbside-classic-first-generation-totoya-hilux-building-block/",
+     "says": "1.9 L 3R ohv four"
+    }
+   ],
+   "note": "",
+   "second_pass": true
+  },
+  "fuel_type": {
+   "value": "gasoline",
+   "sources": [
+    {
+     "name": "Wikipedia: Toyota R engine",
+     "url": "https://en.wikipedia.org/wiki/Toyota_R_engine",
+     "says": "carburetor"
+    },
+    {
+     "name": "Elgin Industries engine parts catalog (technical reference) - engine details",
+     "url": "https://catalog.elginind.com/engine/toyota/default/b16a401c-b8ee-44e8-a494-4822d9f52036/",
+     "says": "GAS / CARB"
+    }
+   ],
+   "note": "",
+   "second_pass": true
+  }
+ },
+ "unverified": {
+  "bore_in": "3.4646 in (88.0 mm): Wikipedia only.",
+  "stroke_in": "3.0709 in (78.0 mm): Wikipedia only.",
+  "displacement_ci": "116 ci (1,897 cc): exact cc only from Wikipedia; Elgin 1,898 cc.",
+  "configuration": "inline-4: Wikipedia only.",
+  "block_material": "cast iron: Wikipedia only.",
+  "head_material": "cast iron: Wikipedia only."
+ }
+}

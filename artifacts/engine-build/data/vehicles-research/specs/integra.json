@@ -1,0 +1,80 @@
+{
+ "family_overrides": [
+  {
+   "years": [
+    1986,
+    1989
+   ],
+   "cid": [
+    97
+   ],
+   "url": "/engines/acura/honda-d-series"
+  }
+ ],
+ "default_layout": [
+  4,
+  "inline-four"
+ ],
+ "make": "Acura",
+ "model": "Integra",
+ "makeSlug": "acura",
+ "slug": "integra",
+ "metric_from": 1900,
+ "title": "Acura Integra Engines by Year (1986–2026)",
+ "description": "Every factory engine in the Acura Integra by year: the D16 and B-series fours of 1986–2001, the GS-R and Type R VTEC engines, and the 2023-on turbos.",
+ "intro": [
+  "The Integra was one of Acura's two launch models in 1986. It was replaced by the RSX for 2002 and the name returned for 2023.",
+  "Pick a year to see every engine offered that model year, with its code, rated horsepower and the trims it came in. Each engine links to its full specs."
+ ],
+ "generations": [
+  {
+   "key": "da",
+   "name": "First generation",
+   "years": [
+    1986,
+    1989
+   ],
+   "intro": [
+    "The 1.6 D16A1 twin-cam four."
+   ]
+  },
+  {
+   "key": "db1",
+   "name": "Second generation",
+   "years": [
+    1990,
+    1993
+   ],
+   "intro": [
+    "The 1.8 B18A1, with the 1.7 B17A1 VTEC in the 1992–1993 GS-R."
+   ]
+  },
+  {
+   "key": "dc",
+   "name": "Third generation",
+   "years": [
+    1994,
+    2001
+   ],
+   "intro": [
+    "The 1.8 B18B1, the B18C1 VTEC in the GS-R and the B18C5 in the Type R. There was no 1999 US Type R."
+   ]
+  },
+  {
+   "key": "db8",
+   "name": "Fifth generation",
+   "years": [
+    2023,
+    2026
+   ],
+   "intro": [
+    "The 1.5 turbo, and the 2.0 turbo in the Type S from 2024."
+   ]
+  }
+ ],
+ "files": [
+  "verify_acura-integra-1986-2026.json"
+ ],
+ "merge_trims": true,
+ "draft": true
+}

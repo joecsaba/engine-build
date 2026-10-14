@@ -1,0 +1,125 @@
+{
+ "name": "Toyota 2L / 2L-T 2.4 diesel I4",
+ "fields": {
+  "bore_in": {
+   "value": 3.622,
+   "sources": [
+    {
+     "name": "Wikipedia: Toyota L engine",
+     "url": "https://en.wikipedia.org/wiki/Toyota_L_engine",
+     "says": "2L 92 mm x 92 mm (3.62 in x 3.62 in)"
+    },
+    {
+     "name": "Elgin Industries engine parts catalog (technical reference) - engine details",
+     "url": "https://catalog.elginind.com/engine/toyota/default/0c8843b9-3eb1-476a-823c-efcf3c222e22/",
+     "says": "2L, 2LT 2446cc: Bore 3.62'' (92.0mm)"
+    }
+   ],
+   "note": "92.0 mm",
+   "second_pass": true
+  },
+  "displacement_l": {
+   "value": 2.4,
+   "sources": [
+    {
+     "name": "Wikipedia: Toyota L engine",
+     "url": "https://en.wikipedia.org/wiki/Toyota_L_engine",
+     "says": "2.4 L (2,446 cc)"
+    },
+    {
+     "name": "Elgin Industries engine parts catalog (technical reference) - engine details",
+     "url": "https://catalog.elginind.com/engine/toyota/default/0c8843b9-3eb1-476a-823c-efcf3c222e22/",
+     "says": "Liters 2.4, CC 2446"
+    },
+    {
+     "name": "EPA fueleconomy.gov vehicle data",
+     "url": "https://www.fueleconomy.gov/feg/download.shtml",
+     "says": "1984 Truck 2WD/4WD 2.4 L 4-cyl Diesel"
+    }
+   ],
+   "note": "2,446 cc"
+  },
+  "displacement_ci": {
+   "value": 149,
+   "sources": [
+    {
+     "name": "Wikipedia: Toyota L engine",
+     "url": "https://en.wikipedia.org/wiki/Toyota_L_engine",
+     "says": "2,446 cc"
+    },
+    {
+     "name": "Elgin Industries engine parts catalog (technical reference) - engine details",
+     "url": "https://catalog.elginind.com/engine/toyota/default/0c8843b9-3eb1-476a-823c-efcf3c222e22/",
+     "says": "CC 2446"
+    }
+   ],
+   "note": "converted = 149.3 ci",
+   "second_pass": true
+  },
+  "num_cylinders": {
+   "value": 4,
+   "sources": [
+    {
+     "name": "Wikipedia: Toyota L engine",
+     "url": "https://en.wikipedia.org/wiki/Toyota_L_engine",
+     "says": "four-cylinder"
+    },
+    {
+     "name": "Elgin Industries engine parts catalog (technical reference) - engine details",
+     "url": "https://catalog.elginind.com/engine/toyota/default/0c8843b9-3eb1-476a-823c-efcf3c222e22/",
+     "says": "Cyl. 4"
+    },
+    {
+     "name": "EPA fueleconomy.gov vehicle data",
+     "url": "https://www.fueleconomy.gov/feg/download.shtml",
+     "says": "2.4 L 4-cyl Diesel"
+    }
+   ],
+   "note": ""
+  },
+  "valvetrain": {
+   "value": "SOHC, 2 valves per cylinder",
+   "sources": [
+    {
+     "name": "Wikipedia: Toyota L engine",
+     "url": "https://en.wikipedia.org/wiki/Toyota_L_engine",
+     "says": "SOHC 2 valves x cyl"
+    },
+    {
+     "name": "Elgin Industries engine parts catalog (technical reference) - engine details",
+     "url": "https://catalog.elginind.com/engine/toyota/default/0c8843b9-3eb1-476a-823c-efcf3c222e22/",
+     "says": "Head SOHC"
+    }
+   ],
+   "note": "",
+   "second_pass": true
+  },
+  "fuel_type": {
+   "value": "diesel",
+   "sources": [
+    {
+     "name": "Wikipedia: Toyota L engine",
+     "url": "https://en.wikipedia.org/wiki/Toyota_L_engine",
+     "says": "indirect injection diesel"
+    },
+    {
+     "name": "Elgin Industries engine parts catalog (technical reference) - engine details",
+     "url": "https://catalog.elginind.com/engine/toyota/default/0c8843b9-3eb1-476a-823c-efcf3c222e22/",
+     "says": "DIESEL / FI, Asp. N, T"
+    },
+    {
+     "name": "EPA fueleconomy.gov vehicle data",
+     "url": "https://www.fueleconomy.gov/feg/download.shtml",
+     "says": "1984 Truck 2.4 L Diesel"
+    }
+   ],
+   "note": "2L-T turbocharged"
+  }
+ },
+ "unverified": {
+  "stroke_in": "3.6220 in (92.0 mm): Wikipedia only.",
+  "configuration": "inline-4: Wikipedia only.",
+  "block_material": "no source found.",
+  "head_material": "no source found."
+ }
+}

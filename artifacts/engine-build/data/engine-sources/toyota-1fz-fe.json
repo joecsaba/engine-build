@@ -1,0 +1,160 @@
+{
+ "name": "Toyota 1FZ-FE 4.5 I6",
+ "fields": {
+  "bore_in": {
+   "value": 3.937,
+   "sources": [
+    {
+     "name": "Wikipedia: Toyota FZ engine",
+     "url": "https://en.wikipedia.org/wiki/Toyota_FZ_engine",
+     "says": "1FZ-FE 100 mm x 95 mm"
+    },
+    {
+     "name": "Elgin Industries engine parts catalog (technical reference) - engine details",
+     "url": "https://catalog.elginind.com/engine/toyota/default/499a2db2-fc8a-4393-b281-7f76a89ac33e/",
+     "says": "1FZ-FE 4477cc: Bore 3.94'' (100.0mm)"
+    }
+   ],
+   "note": "100.0 mm",
+   "second_pass": true
+  },
+  "displacement_l": {
+   "value": 4.5,
+   "sources": [
+    {
+     "name": "Wikipedia: Toyota FZ engine",
+     "url": "https://en.wikipedia.org/wiki/Toyota_FZ_engine",
+     "says": "4.5 L (4,477 cc)"
+    },
+    {
+     "name": "Elgin Industries engine parts catalog (technical reference) - engine details",
+     "url": "https://catalog.elginind.com/engine/toyota/default/499a2db2-fc8a-4393-b281-7f76a89ac33e/",
+     "says": "Liters 4.5, CC 4477"
+    },
+    {
+     "name": "Toyota Global: Land Cruiser history - station wagon evolution (Toyota material)",
+     "url": "https://global.toyota/en/mobility/toyota-brand/features/landcruiser/history/evolution/station-wagon.html",
+     "says": "4.5-liter inline 6-cylinder 24-valve unit"
+    },
+    {
+     "name": "EPA fueleconomy.gov vehicle data",
+     "url": "https://www.fueleconomy.gov/feg/download.shtml",
+     "says": "1993-97 Land Cruiser 4.5 L 6-cyl"
+    },
+    {
+     "name": "Hagerty Media: Why the 80 Series Land Cruiser Is the Most Notable 4x4 of the '90s",
+     "url": "https://www.hagerty.com/media/market-trends/why-the-80-series-land-cruiser-is-the-most-notable-4x4-of-the-90s/",
+     "says": "1FZ-FE 4.5-liter"
+    }
+   ],
+   "note": "4,477 cc"
+  },
+  "displacement_ci": {
+   "value": 273,
+   "sources": [
+    {
+     "name": "Wikipedia: Toyota FZ engine",
+     "url": "https://en.wikipedia.org/wiki/Toyota_FZ_engine",
+     "says": "4,477 cc"
+    },
+    {
+     "name": "Elgin Industries engine parts catalog (technical reference) - engine details",
+     "url": "https://catalog.elginind.com/engine/toyota/default/499a2db2-fc8a-4393-b281-7f76a89ac33e/",
+     "says": "CC 4477"
+    }
+   ],
+   "note": "converted = 273.2 ci",
+   "second_pass": true
+  },
+  "num_cylinders": {
+   "value": 6,
+   "sources": [
+    {
+     "name": "Wikipedia: Toyota FZ engine",
+     "url": "https://en.wikipedia.org/wiki/Toyota_FZ_engine",
+     "says": "straight-six"
+    },
+    {
+     "name": "Elgin Industries engine parts catalog (technical reference) - engine details",
+     "url": "https://catalog.elginind.com/engine/toyota/default/499a2db2-fc8a-4393-b281-7f76a89ac33e/",
+     "says": "Cyl. 6"
+    },
+    {
+     "name": "Toyota Global: Land Cruiser history - station wagon evolution (Toyota material)",
+     "url": "https://global.toyota/en/mobility/toyota-brand/features/landcruiser/history/evolution/station-wagon.html",
+     "says": "4.5-liter inline 6-cylinder"
+    },
+    {
+     "name": "EPA fueleconomy.gov vehicle data",
+     "url": "https://www.fueleconomy.gov/feg/download.shtml",
+     "says": "4.5 L 6-cyl"
+    }
+   ],
+   "note": ""
+  },
+  "configuration": {
+   "value": "inline-6",
+   "sources": [
+    {
+     "name": "Wikipedia: Toyota FZ engine",
+     "url": "https://en.wikipedia.org/wiki/Toyota_FZ_engine",
+     "says": "straight-six"
+    },
+    {
+     "name": "Toyota Global: Land Cruiser history - station wagon evolution (Toyota material)",
+     "url": "https://global.toyota/en/mobility/toyota-brand/features/landcruiser/history/evolution/station-wagon.html",
+     "says": "4.5-liter inline 6-cylinder 24-valve unit"
+    }
+   ],
+   "note": "",
+   "second_pass": true
+  },
+  "valvetrain": {
+   "value": "DOHC, 4 valves per cylinder (24 valves)",
+   "sources": [
+    {
+     "name": "Wikipedia: Toyota FZ engine",
+     "url": "https://en.wikipedia.org/wiki/Toyota_FZ_engine",
+     "says": "DOHC 4 valves x cyl."
+    },
+    {
+     "name": "Elgin Industries engine parts catalog (technical reference) - engine details",
+     "url": "https://catalog.elginind.com/engine/toyota/default/499a2db2-fc8a-4393-b281-7f76a89ac33e/",
+     "says": "Head DOHC, Misc. 24 Valve"
+    },
+    {
+     "name": "Toyota Global: Land Cruiser history - station wagon evolution (Toyota material)",
+     "url": "https://global.toyota/en/mobility/toyota-brand/features/landcruiser/history/evolution/station-wagon.html",
+     "says": "24-valve unit producing 215 PS"
+    }
+   ],
+   "note": ""
+  },
+  "fuel_type": {
+   "value": "gasoline",
+   "sources": [
+    {
+     "name": "Wikipedia: Toyota FZ engine",
+     "url": "https://en.wikipedia.org/wiki/Toyota_FZ_engine",
+     "says": "fuel injection (1FZ-FE)"
+    },
+    {
+     "name": "Elgin Industries engine parts catalog (technical reference) - engine details",
+     "url": "https://catalog.elginind.com/engine/toyota/default/499a2db2-fc8a-4393-b281-7f76a89ac33e/",
+     "says": "GAS / FI"
+    },
+    {
+     "name": "Toyota Global: Land Cruiser history - station wagon evolution (Toyota material)",
+     "url": "https://global.toyota/en/mobility/toyota-brand/features/landcruiser/history/evolution/station-wagon.html",
+     "says": "the gasoline engine was replaced with a 4.5-liter inline 6-cylinder 24-valve unit"
+    }
+   ],
+   "note": ""
+  }
+ },
+ "unverified": {
+  "stroke_in": "3.7402 in (95.0 mm): Wikipedia only.",
+  "block_material": "cast iron: not stated in Wikipedia FZ article; no source found.",
+  "head_material": "aluminum: no source found."
+ }
+}

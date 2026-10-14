@@ -1,0 +1,4647 @@
+{
+ "vehicle": "honda-civic-2001-2026",
+ "market": "US",
+ "hp_basis_note": "SAE net throughout; hybrids record combined system hp with the engine-only figure in note. NHRA does not list the Civic (nhra false throughout).",
+ "years": {
+  "2001": [
+   {
+    "gen": "gen7",
+    "liters": 1.7,
+    "hp": 115,
+    "hp_basis": "SAE net",
+    "rpo": "D17A1",
+    "name": "1.7 SOHC 16v (non-VTEC)",
+    "trims": [
+     "DX",
+     "VP",
+     "LX"
+    ],
+    "nhra": false,
+    "sources": [
+     {
+      "name": "Consumer Guide - 2001-05 Honda Civic (used)",
+      "url": "https://consumerguide.com/used/2001-05-honda-civic/",
+      "says": "1.7L OHC I4 115 hp, DX/LX 2001-2005"
+     },
+     {
+      "name": "Wikipedia - Honda Civic (seventh generation)",
+      "url": "https://en.wikipedia.org/wiki/Honda_Civic_(seventh_generation)",
+      "says": "D17A1 1.7L 115 hp DX/LX/VP 2001-2005"
+     },
+     {
+      "name": "EPA fueleconomy.gov vehicle data",
+      "url": "https://www.fueleconomy.gov/feg/download.shtml",
+      "says": "1.7L 4-cyl Civic listed"
+     }
+    ],
+    "independent_sources": [
+     "Consumer Guide",
+     "EPA",
+     "Wikipedia"
+    ],
+    "note": "KBB 2004 specs page lists 127 hp for every sedan trim (data error; not used).",
+    "status": "three_sources_not_nhra",
+    "cid": 102
+   },
+   {
+    "gen": "gen7",
+    "liters": 1.7,
+    "hp": 117,
+    "hp_basis": "SAE net",
+    "rpo": "D17A6",
+    "name": "1.7 VTEC-E (lean burn)",
+    "trims": [
+     "HX coupe"
+    ],
+    "nhra": false,
+    "sources": [
+     {
+      "name": "Consumer Guide - 2001-05 Honda Civic (used)",
+      "url": "https://consumerguide.com/used/2001-05-honda-civic/",
+      "says": "1.7L OHC VTEC 117 hp, HX 2001-2005"
+     },
+     {
+      "name": "EPA fueleconomy.gov vehicle data",
+      "url": "https://www.fueleconomy.gov/feg/download.shtml",
+      "says": "Civic HX 1.7L VTEC/VTEC-E"
+     }
+    ],
+    "independent_sources": [
+     "Consumer Guide",
+     "EPA"
+    ],
+    "note": "Wikipedia (7th gen) gives D17A6 as 115 hp; Honda, Consumer Guide and KBB give 117 (Wikipedia not counted). Code D17A6 from Wikipedia only. HX coupe only.",
+    "status": "two_sources_agree",
+    "cid": 102
+   },
+   {
+    "gen": "gen7",
+    "liters": 1.7,
+    "hp": 127,
+    "hp_basis": "SAE net",
+    "rpo": "D17A2",
+    "name": "1.7 SOHC VTEC",
+    "trims": [
+     "EX"
+    ],
+    "nhra": false,
+    "sources": [
+     {
+      "name": "Consumer Guide - 2001-05 Honda Civic (used)",
+      "url": "https://consumerguide.com/used/2001-05-honda-civic/",
+      "says": "1.7L OHC I4 VTEC 127 hp, EX 2001-2005"
+     },
+     {
+      "name": "Wikipedia - Honda Civic (seventh generation)",
+      "url": "https://en.wikipedia.org/wiki/Honda_Civic_(seventh_generation)",
+      "says": "D17A2 1.7L 127 hp EX"
+     },
+     {
+      "name": "EPA fueleconomy.gov vehicle data",
+      "url": "https://www.fueleconomy.gov/feg/download.shtml",
+      "says": "1.7L SOHC-VTEC / VTEC row"
+     }
+    ],
+    "independent_sources": [
+     "Consumer Guide",
+     "EPA",
+     "Wikipedia"
+    ],
+    "note": "KBB 2003 lists the EX coupe at 117 hp (data error; not used).",
+    "status": "three_sources_not_nhra",
+    "cid": 102
+   },
+   {
+    "gen": "gen7",
+    "liters": 1.7,
+    "hp": 100,
+    "hp_basis": "SAE net",
+    "rpo": null,
+    "name": "1.7 SOHC CNG (GX)",
+    "trims": [
+     "GX sedan"
+    ],
+    "nhra": false,
+    "sources": [
+     {
+      "name": "Consumer Guide - 2001-05 Honda Civic (used)",
+      "url": "https://consumerguide.com/used/2001-05-honda-civic/",
+      "says": "GX compressed natural gas sedan 2001-2005 (no hp stated)"
+     },
+     {
+      "name": "EPA fueleconomy.gov vehicle data",
+      "url": "https://www.fueleconomy.gov/feg/download.shtml",
+      "says": "Civic CNG 1.7L"
+     }
+    ],
+    "independent_sources": [
+     "Consumer Guide",
+     "EPA"
+    ],
+    "note": "Dedicated CNG engine; no fetched source states an engine code. hp 100 from Honda 2005 and KBB 2004 only; 2001-2003 and 2005 hp not independently re-checked.",
+    "status": "two_sources_agree",
+    "cid": 102
+   }
+  ],
+  "2002": [
+   {
+    "gen": "gen7",
+    "liters": 1.7,
+    "hp": 115,
+    "hp_basis": "SAE net",
+    "rpo": "D17A1",
+    "name": "1.7 SOHC 16v (non-VTEC)",
+    "trims": [
+     "DX",
+     "VP",
+     "LX"
+    ],
+    "nhra": false,
+    "sources": [
+     {
+      "name": "Consumer Guide - 2001-05 Honda Civic (used)",
+      "url": "https://consumerguide.com/used/2001-05-honda-civic/",
+      "says": "1.7L OHC I4 115 hp, DX/LX 2001-2005"
+     },
+     {
+      "name": "Wikipedia - Honda Civic (seventh generation)",
+      "url": "https://en.wikipedia.org/wiki/Honda_Civic_(seventh_generation)",
+      "says": "D17A1 1.7L 115 hp DX/LX/VP 2001-2005"
+     },
+     {
+      "name": "EPA fueleconomy.gov vehicle data",
+      "url": "https://www.fueleconomy.gov/feg/download.shtml",
+      "says": "1.7L 4-cyl Civic listed"
+     }
+    ],
+    "independent_sources": [
+     "Consumer Guide",
+     "EPA",
+     "Wikipedia"
+    ],
+    "note": "KBB 2004 specs page lists 127 hp for every sedan trim (data error; not used).",
+    "status": "three_sources_not_nhra",
+    "cid": 102
+   },
+   {
+    "gen": "gen7",
+    "liters": 1.7,
+    "hp": 117,
+    "hp_basis": "SAE net",
+    "rpo": "D17A6",
+    "name": "1.7 VTEC-E (lean burn)",
+    "trims": [
+     "HX coupe"
+    ],
+    "nhra": false,
+    "sources": [
+     {
+      "name": "Consumer Guide - 2001-05 Honda Civic (used)",
+      "url": "https://consumerguide.com/used/2001-05-honda-civic/",
+      "says": "1.7L OHC VTEC 117 hp, HX 2001-2005"
+     },
+     {
+      "name": "EPA fueleconomy.gov vehicle data",
+      "url": "https://www.fueleconomy.gov/feg/download.shtml",
+      "says": "Civic HX 1.7L VTEC/VTEC-E"
+     }
+    ],
+    "independent_sources": [
+     "Consumer Guide",
+     "EPA"
+    ],
+    "note": "Wikipedia (7th gen) gives D17A6 as 115 hp; Honda, Consumer Guide and KBB give 117 (Wikipedia not counted). Code D17A6 from Wikipedia only. HX coupe only.",
+    "status": "two_sources_agree",
+    "cid": 102
+   },
+   {
+    "gen": "gen7",
+    "liters": 1.7,
+    "hp": 127,
+    "hp_basis": "SAE net",
+    "rpo": "D17A2",
+    "name": "1.7 SOHC VTEC",
+    "trims": [
+     "EX"
+    ],
+    "nhra": false,
+    "sources": [
+     {
+      "name": "Consumer Guide - 2001-05 Honda Civic (used)",
+      "url": "https://consumerguide.com/used/2001-05-honda-civic/",
+      "says": "1.7L OHC I4 VTEC 127 hp, EX 2001-2005"
+     },
+     {
+      "name": "Wikipedia - Honda Civic (seventh generation)",
+      "url": "https://en.wikipedia.org/wiki/Honda_Civic_(seventh_generation)",
+      "says": "D17A2 1.7L 127 hp EX"
+     },
+     {
+      "name": "EPA fueleconomy.gov vehicle data",
+      "url": "https://www.fueleconomy.gov/feg/download.shtml",
+      "says": "1.7L SOHC-VTEC / VTEC row"
+     }
+    ],
+    "independent_sources": [
+     "Consumer Guide",
+     "EPA",
+     "Wikipedia"
+    ],
+    "note": "KBB 2003 lists the EX coupe at 117 hp (data error; not used).",
+    "status": "three_sources_not_nhra",
+    "cid": 102
+   },
+   {
+    "gen": "gen7",
+    "liters": 1.7,
+    "hp": 100,
+    "hp_basis": "SAE net",
+    "rpo": null,
+    "name": "1.7 SOHC CNG (GX)",
+    "trims": [
+     "GX sedan"
+    ],
+    "nhra": false,
+    "sources": [
+     {
+      "name": "Consumer Guide - 2001-05 Honda Civic (used)",
+      "url": "https://consumerguide.com/used/2001-05-honda-civic/",
+      "says": "GX compressed natural gas sedan 2001-2005 (no hp stated)"
+     },
+     {
+      "name": "EPA fueleconomy.gov vehicle data",
+      "url": "https://www.fueleconomy.gov/feg/download.shtml",
+      "says": "Civic CNG 1.7L"
+     }
+    ],
+    "independent_sources": [
+     "Consumer Guide",
+     "EPA"
+    ],
+    "note": "Dedicated CNG engine; no fetched source states an engine code. hp 100 from Honda 2005 and KBB 2004 only; 2001-2003 and 2005 hp not independently re-checked.",
+    "status": "two_sources_agree",
+    "cid": 102
+   },
+   {
+    "gen": "gen7",
+    "liters": 2.0,
+    "hp": 160,
+    "hp_basis": "SAE net",
+    "rpo": "K20A3",
+    "name": "2.0 DOHC i-VTEC",
+    "trims": [
+     "Si hatchback"
+    ],
+    "nhra": false,
+    "sources": [
+     {
+      "name": "Honda (hondanews.com) Civic Si Timeline and Milestones",
+      "url": "https://hondanews.com/en-US/honda-automobiles/releases/release-5d911be38cf30e49d54f6cb4520829b7-honda-civic-si-timeline-and-milestones",
+      "says": "2002-2005 Si: 2.0 DOHC i-VTEC (K20A3) 160 hp"
+     },
+     {
+      "name": "Consumer Guide - 2001-05 Honda Civic (used)",
+      "url": "https://consumerguide.com/used/2001-05-honda-civic/",
+      "says": "2.0L DOHC VTEC 160 hp, Si 2002-2005"
+     },
+     {
+      "name": "Wikipedia - Honda Civic (seventh generation)",
+      "url": "https://en.wikipedia.org/wiki/Honda_Civic_(seventh_generation)",
+      "says": "K20A3 2.0L 160 bhp @ 6500, Si 2002-2005"
+     },
+     {
+      "name": "EPA fueleconomy.gov vehicle data",
+      "url": "https://www.fueleconomy.gov/feg/download.shtml",
+      "says": "2.0L 4-cyl Civic listed"
+     }
+    ],
+    "independent_sources": [
+     "Consumer Guide",
+     "EPA",
+     "Honda",
+     "Wikipedia"
+    ],
+    "note": "",
+    "status": "three_sources_not_nhra",
+    "cid": 122
+   }
+  ],
+  "2003": [
+   {
+    "gen": "gen7",
+    "liters": 1.7,
+    "hp": 115,
+    "hp_basis": "SAE net",
+    "rpo": "D17A1",
+    "name": "1.7 SOHC 16v (non-VTEC)",
+    "trims": [
+     "DX",
+     "VP",
+     "LX"
+    ],
+    "nhra": false,
+    "sources": [
+     {
+      "name": "Honda (hondanews.com) 2003 Civic Coupe Specifications",
+      "url": "https://hondanews.com/en-US/releases/release-a0c0c91d714a2d01592fa3004c34c6c3-2003-honda-civic-coupe-specifications",
+      "says": "2003 coupe DX/LX 1668 cc 115 @ 6100 SAE net"
+     },
+     {
+      "name": "Consumer Guide - 2001-05 Honda Civic (used)",
+      "url": "https://consumerguide.com/used/2001-05-honda-civic/",
+      "says": "1.7L OHC I4 115 hp, DX/LX 2001-2005"
+     },
+     {
+      "name": "Wikipedia - Honda Civic (seventh generation)",
+      "url": "https://en.wikipedia.org/wiki/Honda_Civic_(seventh_generation)",
+      "says": "D17A1 1.7L 115 hp DX/LX/VP 2001-2005"
+     },
+     {
+      "name": "EPA fueleconomy.gov vehicle data",
+      "url": "https://www.fueleconomy.gov/feg/download.shtml",
+      "says": "1.7L 4-cyl Civic listed"
+     }
+    ],
+    "independent_sources": [
+     "Consumer Guide",
+     "EPA",
+     "Honda",
+     "Wikipedia"
+    ],
+    "note": "KBB 2004 specs page lists 127 hp for every sedan trim (data error; not used).",
+    "status": "three_sources_not_nhra",
+    "cid": 102
+   },
+   {
+    "gen": "gen7",
+    "liters": 1.7,
+    "hp": 117,
+    "hp_basis": "SAE net",
+    "rpo": "D17A6",
+    "name": "1.7 VTEC-E (lean burn)",
+    "trims": [
+     "HX coupe"
+    ],
+    "nhra": false,
+    "sources": [
+     {
+      "name": "Honda (hondanews.com) 2003 Civic Coupe Specifications",
+      "url": "https://hondanews.com/en-US/releases/release-a0c0c91d714a2d01592fa3004c34c6c3-2003-honda-civic-coupe-specifications",
+      "says": "HX 1668 cc 117 @ 6100, VTEC-E Lean Burn"
+     },
+     {
+      "name": "Consumer Guide - 2001-05 Honda Civic (used)",
+      "url": "https://consumerguide.com/used/2001-05-honda-civic/",
+      "says": "1.7L OHC VTEC 117 hp, HX 2001-2005"
+     },
+     {
+      "name": "Kelley Blue Book - 2003 Honda Civic specs",
+      "url": "https://www.kbb.com/honda/civic/2003/specs",
+      "says": "HX Coupe 4-Cyl VTEC 1.7 117 hp"
+     },
+     {
+      "name": "EPA fueleconomy.gov vehicle data",
+      "url": "https://www.fueleconomy.gov/feg/download.shtml",
+      "says": "1.7L VTEC-E / LEAN-BURN row"
+     }
+    ],
+    "independent_sources": [
+     "Consumer Guide",
+     "EPA",
+     "Honda",
+     "Kelley Blue Book"
+    ],
+    "note": "Wikipedia (7th gen) gives D17A6 as 115 hp; Honda, Consumer Guide and KBB give 117 (Wikipedia not counted). Code D17A6 from Wikipedia only. HX coupe only.",
+    "status": "three_sources_not_nhra",
+    "cid": 102
+   },
+   {
+    "gen": "gen7",
+    "liters": 1.7,
+    "hp": 127,
+    "hp_basis": "SAE net",
+    "rpo": "D17A2",
+    "name": "1.7 SOHC VTEC",
+    "trims": [
+     "EX"
+    ],
+    "nhra": false,
+    "sources": [
+     {
+      "name": "Honda (hondanews.com) 2003 Civic Coupe Specifications",
+      "url": "https://hondanews.com/en-US/releases/release-a0c0c91d714a2d01592fa3004c34c6c3-2003-honda-civic-coupe-specifications",
+      "says": "EX 127 @ 6300 VTEC"
+     },
+     {
+      "name": "Consumer Guide - 2001-05 Honda Civic (used)",
+      "url": "https://consumerguide.com/used/2001-05-honda-civic/",
+      "says": "1.7L OHC I4 VTEC 127 hp, EX 2001-2005"
+     },
+     {
+      "name": "Wikipedia - Honda Civic (seventh generation)",
+      "url": "https://en.wikipedia.org/wiki/Honda_Civic_(seventh_generation)",
+      "says": "D17A2 1.7L 127 hp EX"
+     },
+     {
+      "name": "EPA fueleconomy.gov vehicle data",
+      "url": "https://www.fueleconomy.gov/feg/download.shtml",
+      "says": "1.7L SOHC-VTEC / VTEC row"
+     }
+    ],
+    "independent_sources": [
+     "Consumer Guide",
+     "EPA",
+     "Honda",
+     "Wikipedia"
+    ],
+    "note": "KBB 2003 lists the EX coupe at 117 hp (data error; not used).",
+    "status": "three_sources_not_nhra",
+    "cid": 102
+   },
+   {
+    "gen": "gen7",
+    "liters": 1.7,
+    "hp": 100,
+    "hp_basis": "SAE net",
+    "rpo": null,
+    "name": "1.7 SOHC CNG (GX)",
+    "trims": [
+     "GX sedan"
+    ],
+    "nhra": false,
+    "sources": [
+     {
+      "name": "Consumer Guide - 2001-05 Honda Civic (used)",
+      "url": "https://consumerguide.com/used/2001-05-honda-civic/",
+      "says": "GX compressed natural gas sedan 2001-2005 (no hp stated)"
+     },
+     {
+      "name": "EPA fueleconomy.gov vehicle data",
+      "url": "https://www.fueleconomy.gov/feg/download.shtml",
+      "says": "Civic CNG 1.7L"
+     }
+    ],
+    "independent_sources": [
+     "Consumer Guide",
+     "EPA"
+    ],
+    "note": "Dedicated CNG engine; no fetched source states an engine code. hp 100 from Honda 2005 and KBB 2004 only; 2001-2003 and 2005 hp not independently re-checked.",
+    "status": "two_sources_agree",
+    "cid": 102
+   },
+   {
+    "gen": "gen7",
+    "liters": 2.0,
+    "hp": 160,
+    "hp_basis": "SAE net",
+    "rpo": "K20A3",
+    "name": "2.0 DOHC i-VTEC",
+    "trims": [
+     "Si hatchback"
+    ],
+    "nhra": false,
+    "sources": [
+     {
+      "name": "Honda (hondanews.com) Civic Si Timeline and Milestones",
+      "url": "https://hondanews.com/en-US/honda-automobiles/releases/release-5d911be38cf30e49d54f6cb4520829b7-honda-civic-si-timeline-and-milestones",
+      "says": "2002-2005 Si: 2.0 DOHC i-VTEC (K20A3) 160 hp"
+     },
+     {
+      "name": "Consumer Guide - 2001-05 Honda Civic (used)",
+      "url": "https://consumerguide.com/used/2001-05-honda-civic/",
+      "says": "2.0L DOHC VTEC 160 hp, Si 2002-2005"
+     },
+     {
+      "name": "Wikipedia - Honda Civic (seventh generation)",
+      "url": "https://en.wikipedia.org/wiki/Honda_Civic_(seventh_generation)",
+      "says": "K20A3 2.0L 160 bhp @ 6500, Si 2002-2005"
+     },
+     {
+      "name": "EPA fueleconomy.gov vehicle data",
+      "url": "https://www.fueleconomy.gov/feg/download.shtml",
+      "says": "2.0L 4-cyl Civic listed"
+     }
+    ],
+    "independent_sources": [
+     "Consumer Guide",
+     "EPA",
+     "Honda",
+     "Wikipedia"
+    ],
+    "note": "",
+    "status": "three_sources_not_nhra",
+    "cid": 122
+   },
+   {
+    "gen": "gen7",
+    "liters": 1.3,
+    "hp": 93,
+    "hp_basis": "SAE net",
+    "rpo": "LDA",
+    "name": "1.3 i-DSI + IMA hybrid",
+    "trims": [
+     "Hybrid sedan"
+    ],
+    "nhra": false,
+    "sources": [
+     {
+      "name": "Wikipedia - Honda Civic (seventh generation)",
+      "url": "https://en.wikipedia.org/wiki/Honda_Civic_(seventh_generation)",
+      "says": "LDA 1.3L i-DSI + motor, 93 hp combined, 2003-2005"
+     },
+     {
+      "name": "Consumer Guide - 2001-05 Honda Civic (used)",
+      "url": "https://consumerguide.com/used/2001-05-honda-civic/",
+      "says": "1.3L gasoline-electric Hybrid sedan 2003-2005 (no hp stated)"
+     },
+     {
+      "name": "EPA fueleconomy.gov vehicle data",
+      "url": "https://www.fueleconomy.gov/feg/download.shtml",
+      "says": "Civic Hybrid 1.3L"
+     }
+    ],
+    "independent_sources": [
+     "Consumer Guide",
+     "EPA",
+     "Wikipedia"
+    ],
+    "note": "hp is combined system output (engine alone 85 hp SAE net).",
+    "status": "three_sources_not_nhra",
+    "cid": 82
+   }
+  ],
+  "2004": [
+   {
+    "gen": "gen7",
+    "liters": 1.7,
+    "hp": 115,
+    "hp_basis": "SAE net",
+    "rpo": "D17A1",
+    "name": "1.7 SOHC 16v (non-VTEC)",
+    "trims": [
+     "DX",
+     "VP",
+     "LX"
+    ],
+    "nhra": false,
+    "sources": [
+     {
+      "name": "Honda (hondanews.com) 2004 Civic Coupe Specifications",
+      "url": "https://hondanews.com/en-US/releases/release-d856581840da86e0c1e592004c34c4cc-2004-honda-civic-coupe-specifications",
+      "says": "2004 coupe VP/LX 115 @ 6100 SAE net"
+     },
+     {
+      "name": "Consumer Guide - 2001-05 Honda Civic (used)",
+      "url": "https://consumerguide.com/used/2001-05-honda-civic/",
+      "says": "1.7L OHC I4 115 hp, DX/LX 2001-2005"
+     },
+     {
+      "name": "Wikipedia - Honda Civic (seventh generation)",
+      "url": "https://en.wikipedia.org/wiki/Honda_Civic_(seventh_generation)",
+      "says": "D17A1 1.7L 115 hp DX/LX/VP 2001-2005"
+     },
+     {
+      "name": "EPA fueleconomy.gov vehicle data",
+      "url": "https://www.fueleconomy.gov/feg/download.shtml",
+      "says": "1.7L 4-cyl Civic listed"
+     }
+    ],
+    "independent_sources": [
+     "Consumer Guide",
+     "EPA",
+     "Honda",
+     "Wikipedia"
+    ],
+    "note": "KBB 2004 specs page lists 127 hp for every sedan trim (data error; not used).",
+    "status": "three_sources_not_nhra",
+    "cid": 102
+   },
+   {
+    "gen": "gen7",
+    "liters": 1.7,
+    "hp": 117,
+    "hp_basis": "SAE net",
+    "rpo": "D17A6",
+    "name": "1.7 VTEC-E (lean burn)",
+    "trims": [
+     "HX coupe"
+    ],
+    "nhra": false,
+    "sources": [
+     {
+      "name": "Honda (hondanews.com) 2004 Civic Coupe Specifications",
+      "url": "https://hondanews.com/en-US/releases/release-d856581840da86e0c1e592004c34c4cc-2004-honda-civic-coupe-specifications",
+      "says": "HX 117 @ 6100, VTEC-E Lean Burn"
+     },
+     {
+      "name": "Consumer Guide - 2001-05 Honda Civic (used)",
+      "url": "https://consumerguide.com/used/2001-05-honda-civic/",
+      "says": "1.7L OHC VTEC 117 hp, HX 2001-2005"
+     },
+     {
+      "name": "EPA fueleconomy.gov vehicle data",
+      "url": "https://www.fueleconomy.gov/feg/download.shtml",
+      "says": "1.7L VTEC-E / LEAN-BURN row"
+     }
+    ],
+    "independent_sources": [
+     "Consumer Guide",
+     "EPA",
+     "Honda"
+    ],
+    "note": "Wikipedia (7th gen) gives D17A6 as 115 hp; Honda, Consumer Guide and KBB give 117 (Wikipedia not counted). Code D17A6 from Wikipedia only. HX coupe only.",
+    "status": "three_sources_not_nhra",
+    "cid": 102
+   },
+   {
+    "gen": "gen7",
+    "liters": 1.7,
+    "hp": 127,
+    "hp_basis": "SAE net",
+    "rpo": "D17A2",
+    "name": "1.7 SOHC VTEC",
+    "trims": [
+     "EX"
+    ],
+    "nhra": false,
+    "sources": [
+     {
+      "name": "Honda (hondanews.com) 2004 Civic Coupe Specifications",
+      "url": "https://hondanews.com/en-US/releases/release-d856581840da86e0c1e592004c34c4cc-2004-honda-civic-coupe-specifications",
+      "says": "EX 127 @ 6300 VTEC"
+     },
+     {
+      "name": "Consumer Guide - 2001-05 Honda Civic (used)",
+      "url": "https://consumerguide.com/used/2001-05-honda-civic/",
+      "says": "1.7L OHC I4 VTEC 127 hp, EX 2001-2005"
+     },
+     {
+      "name": "Wikipedia - Honda Civic (seventh generation)",
+      "url": "https://en.wikipedia.org/wiki/Honda_Civic_(seventh_generation)",
+      "says": "D17A2 1.7L 127 hp EX"
+     },
+     {
+      "name": "EPA fueleconomy.gov vehicle data",
+      "url": "https://www.fueleconomy.gov/feg/download.shtml",
+      "says": "1.7L SOHC-VTEC / VTEC row"
+     }
+    ],
+    "independent_sources": [
+     "Consumer Guide",
+     "EPA",
+     "Honda",
+     "Wikipedia"
+    ],
+    "note": "KBB 2003 lists the EX coupe at 117 hp (data error; not used).",
+    "status": "three_sources_not_nhra",
+    "cid": 102
+   },
+   {
+    "gen": "gen7",
+    "liters": 1.7,
+    "hp": 100,
+    "hp_basis": "SAE net",
+    "rpo": null,
+    "name": "1.7 SOHC CNG (GX)",
+    "trims": [
+     "GX sedan"
+    ],
+    "nhra": false,
+    "sources": [
+     {
+      "name": "Kelley Blue Book - 2004 Honda Civic specs",
+      "url": "https://www.kbb.com/honda/civic/2004/specs",
+      "says": "GX Sedan 4-Cyl Natural Gas 1.7L 100 hp"
+     },
+     {
+      "name": "Consumer Guide - 2001-05 Honda Civic (used)",
+      "url": "https://consumerguide.com/used/2001-05-honda-civic/",
+      "says": "GX compressed natural gas sedan 2001-2005 (no hp stated)"
+     },
+     {
+      "name": "EPA fueleconomy.gov vehicle data",
+      "url": "https://www.fueleconomy.gov/feg/download.shtml",
+      "says": "Civic CNG 1.7L"
+     }
+    ],
+    "independent_sources": [
+     "Consumer Guide",
+     "EPA",
+     "Kelley Blue Book"
+    ],
+    "note": "Dedicated CNG engine; no fetched source states an engine code. hp 100 from Honda 2005 and KBB 2004 only; 2001-2003 and 2005 hp not independently re-checked.",
+    "status": "three_sources_not_nhra",
+    "cid": 102
+   },
+   {
+    "gen": "gen7",
+    "liters": 2.0,
+    "hp": 160,
+    "hp_basis": "SAE net",
+    "rpo": "K20A3",
+    "name": "2.0 DOHC i-VTEC",
+    "trims": [
+     "Si hatchback"
+    ],
+    "nhra": false,
+    "sources": [
+     {
+      "name": "Honda (hondanews.com) Civic Si Timeline and Milestones",
+      "url": "https://hondanews.com/en-US/honda-automobiles/releases/release-5d911be38cf30e49d54f6cb4520829b7-honda-civic-si-timeline-and-milestones",
+      "says": "2002-2005 Si: 2.0 DOHC i-VTEC (K20A3) 160 hp"
+     },
+     {
+      "name": "Consumer Guide - 2001-05 Honda Civic (used)",
+      "url": "https://consumerguide.com/used/2001-05-honda-civic/",
+      "says": "2.0L DOHC VTEC 160 hp, Si 2002-2005"
+     },
+     {
+      "name": "Wikipedia - Honda Civic (seventh generation)",
+      "url": "https://en.wikipedia.org/wiki/Honda_Civic_(seventh_generation)",
+      "says": "K20A3 2.0L 160 bhp @ 6500, Si 2002-2005"
+     },
+     {
+      "name": "EPA fueleconomy.gov vehicle data",
+      "url": "https://www.fueleconomy.gov/feg/download.shtml",
+      "says": "2.0L 4-cyl Civic listed"
+     }
+    ],
+    "independent_sources": [
+     "Consumer Guide",
+     "EPA",
+     "Honda",
+     "Wikipedia"
+    ],
+    "note": "",
+    "status": "three_sources_not_nhra",
+    "cid": 122
+   },
+   {
+    "gen": "gen7",
+    "liters": 1.3,
+    "hp": 93,
+    "hp_basis": "SAE net",
+    "rpo": "LDA",
+    "name": "1.3 i-DSI + IMA hybrid",
+    "trims": [
+     "Hybrid sedan"
+    ],
+    "nhra": false,
+    "sources": [
+     {
+      "name": "Honda (hondanews.com) 2004 Civic Hybrid Specifications",
+      "url": "https://hondanews.com/en-US/releases/release-f793f7689c6a44628d079c004c34c4ca-2004-honda-civic-hybrid-specifications",
+      "says": "engine 85 @ 5700; IMA 13.4 hp; system 93 @ 5700 (MT and CVT)"
+     },
+     {
+      "name": "Wikipedia - Honda Civic (seventh generation)",
+      "url": "https://en.wikipedia.org/wiki/Honda_Civic_(seventh_generation)",
+      "says": "LDA 1.3L i-DSI + motor, 93 hp combined, 2003-2005"
+     },
+     {
+      "name": "Consumer Guide - 2001-05 Honda Civic (used)",
+      "url": "https://consumerguide.com/used/2001-05-honda-civic/",
+      "says": "1.3L gasoline-electric Hybrid sedan 2003-2005 (no hp stated)"
+     },
+     {
+      "name": "EPA fueleconomy.gov vehicle data",
+      "url": "https://www.fueleconomy.gov/feg/download.shtml",
+      "says": "Civic Hybrid 1.3L"
+     }
+    ],
+    "independent_sources": [
+     "Consumer Guide",
+     "EPA",
+     "Honda",
+     "Wikipedia"
+    ],
+    "note": "hp is combined system output (engine alone 85 hp SAE net).",
+    "status": "three_sources_not_nhra",
+    "cid": 82
+   }
+  ],
+  "2005": [
+   {
+    "gen": "gen7",
+    "liters": 1.7,
+    "hp": 115,
+    "hp_basis": "SAE net",
+    "rpo": "D17A1",
+    "name": "1.7 SOHC 16v (non-VTEC)",
+    "trims": [
+     "DX",
+     "VP",
+     "LX"
+    ],
+    "nhra": false,
+    "sources": [
+     {
+      "name": "Honda (hondanews.com) 2005 Civic Sedan Specifications",
+      "url": "https://hondanews.com/en-US/releases/release-cccb943295af0aec9e25a7004c34c373-2005-honda-civic-sedan-specifications",
+      "says": "2005 sedan DX/VP/LX 115 @ 6100"
+     },
+     {
+      "name": "Consumer Guide - 2001-05 Honda Civic (used)",
+      "url": "https://consumerguide.com/used/2001-05-honda-civic/",
+      "says": "1.7L OHC I4 115 hp, DX/LX 2001-2005"
+     },
+     {
+      "name": "Wikipedia - Honda Civic (seventh generation)",
+      "url": "https://en.wikipedia.org/wiki/Honda_Civic_(seventh_generation)",
+      "says": "D17A1 1.7L 115 hp DX/LX/VP 2001-2005"
+     },
+     {
+      "name": "EPA fueleconomy.gov vehicle data",
+      "url": "https://www.fueleconomy.gov/feg/download.shtml",
+      "says": "1.7L 4-cyl Civic listed"
+     }
+    ],
+    "independent_sources": [
+     "Consumer Guide",
+     "EPA",
+     "Honda",
+     "Wikipedia"
+    ],
+    "note": "KBB 2004 specs page lists 127 hp for every sedan trim (data error; not used).",
+    "status": "three_sources_not_nhra",
+    "cid": 102
+   },
+   {
+    "gen": "gen7",
+    "liters": 1.7,
+    "hp": 117,
+    "hp_basis": "SAE net",
+    "rpo": "D17A6",
+    "name": "1.7 VTEC-E (lean burn)",
+    "trims": [
+     "HX coupe"
+    ],
+    "nhra": false,
+    "sources": [
+     {
+      "name": "Consumer Guide - 2001-05 Honda Civic (used)",
+      "url": "https://consumerguide.com/used/2001-05-honda-civic/",
+      "says": "1.7L OHC VTEC 117 hp, HX 2001-2005"
+     },
+     {
+      "name": "EPA fueleconomy.gov vehicle data",
+      "url": "https://www.fueleconomy.gov/feg/download.shtml",
+      "says": "1.7L VTEC-E / LEAN-BURN row"
+     }
+    ],
+    "independent_sources": [
+     "Consumer Guide",
+     "EPA"
+    ],
+    "note": "Wikipedia (7th gen) gives D17A6 as 115 hp; Honda, Consumer Guide and KBB give 117 (Wikipedia not counted). Code D17A6 from Wikipedia only. HX coupe only.",
+    "status": "two_sources_agree",
+    "cid": 102
+   },
+   {
+    "gen": "gen7",
+    "liters": 1.7,
+    "hp": 127,
+    "hp_basis": "SAE net",
+    "rpo": "D17A2",
+    "name": "1.7 SOHC VTEC",
+    "trims": [
+     "EX"
+    ],
+    "nhra": false,
+    "sources": [
+     {
+      "name": "Honda (hondanews.com) 2005 Civic Sedan Specifications",
+      "url": "https://hondanews.com/en-US/releases/release-cccb943295af0aec9e25a7004c34c373-2005-honda-civic-sedan-specifications",
+      "says": "EX/SE 127 @ 6300 VTEC"
+     },
+     {
+      "name": "Consumer Guide - 2001-05 Honda Civic (used)",
+      "url": "https://consumerguide.com/used/2001-05-honda-civic/",
+      "says": "1.7L OHC I4 VTEC 127 hp, EX 2001-2005"
+     },
+     {
+      "name": "Wikipedia - Honda Civic (seventh generation)",
+      "url": "https://en.wikipedia.org/wiki/Honda_Civic_(seventh_generation)",
+      "says": "D17A2 1.7L 127 hp EX"
+     },
+     {
+      "name": "EPA fueleconomy.gov vehicle data",
+      "url": "https://www.fueleconomy.gov/feg/download.shtml",
+      "says": "1.7L SOHC-VTEC / VTEC row"
+     }
+    ],
+    "independent_sources": [
+     "Consumer Guide",
+     "EPA",
+     "Honda",
+     "Wikipedia"
+    ],
+    "note": "KBB 2003 lists the EX coupe at 117 hp (data error; not used).",
+    "status": "three_sources_not_nhra",
+    "cid": 102
+   },
+   {
+    "gen": "gen7",
+    "liters": 1.7,
+    "hp": 100,
+    "hp_basis": "SAE net",
+    "rpo": null,
+    "name": "1.7 SOHC CNG (GX)",
+    "trims": [
+     "GX sedan"
+    ],
+    "nhra": false,
+    "sources": [
+     {
+      "name": "Honda (hondanews.com) 2005 Civic Sedan Specifications",
+      "url": "https://hondanews.com/en-US/releases/release-cccb943295af0aec9e25a7004c34c373-2005-honda-civic-sedan-specifications",
+      "says": "GX 1668 cc 100 @ 6100 SAE net"
+     },
+     {
+      "name": "Consumer Guide - 2001-05 Honda Civic (used)",
+      "url": "https://consumerguide.com/used/2001-05-honda-civic/",
+      "says": "GX compressed natural gas sedan 2001-2005 (no hp stated)"
+     },
+     {
+      "name": "EPA fueleconomy.gov vehicle data",
+      "url": "https://www.fueleconomy.gov/feg/download.shtml",
+      "says": "Civic CNG 1.7L"
+     }
+    ],
+    "independent_sources": [
+     "Consumer Guide",
+     "EPA",
+     "Honda"
+    ],
+    "note": "Dedicated CNG engine; no fetched source states an engine code. hp 100 from Honda 2005 and KBB 2004 only; 2001-2003 and 2005 hp not independently re-checked.",
+    "status": "three_sources_not_nhra",
+    "cid": 102
+   },
+   {
+    "gen": "gen7",
+    "liters": 2.0,
+    "hp": 160,
+    "hp_basis": "SAE net",
+    "rpo": "K20A3",
+    "name": "2.0 DOHC i-VTEC",
+    "trims": [
+     "Si hatchback"
+    ],
+    "nhra": false,
+    "sources": [
+     {
+      "name": "Honda (hondanews.com) Civic Si Timeline and Milestones",
+      "url": "https://hondanews.com/en-US/honda-automobiles/releases/release-5d911be38cf30e49d54f6cb4520829b7-honda-civic-si-timeline-and-milestones",
+      "says": "2002-2005 Si: 2.0 DOHC i-VTEC (K20A3) 160 hp"
+     },
+     {
+      "name": "Consumer Guide - 2001-05 Honda Civic (used)",
+      "url": "https://consumerguide.com/used/2001-05-honda-civic/",
+      "says": "2.0L DOHC VTEC 160 hp, Si 2002-2005"
+     },
+     {
+      "name": "Wikipedia - Honda Civic (seventh generation)",
+      "url": "https://en.wikipedia.org/wiki/Honda_Civic_(seventh_generation)",
+      "says": "K20A3 2.0L 160 bhp @ 6500, Si 2002-2005"
+     },
+     {
+      "name": "EPA fueleconomy.gov vehicle data",
+      "url": "https://www.fueleconomy.gov/feg/download.shtml",
+      "says": "2.0L 4-cyl Civic listed"
+     }
+    ],
+    "independent_sources": [
+     "Consumer Guide",
+     "EPA",
+     "Honda",
+     "Wikipedia"
+    ],
+    "note": "",
+    "status": "three_sources_not_nhra",
+    "cid": 122
+   },
+   {
+    "gen": "gen7",
+    "liters": 1.3,
+    "hp": 93,
+    "hp_basis": "SAE net",
+    "rpo": "LDA",
+    "name": "1.3 i-DSI + IMA hybrid",
+    "trims": [
+     "Hybrid sedan"
+    ],
+    "nhra": false,
+    "sources": [
+     {
+      "name": "Wikipedia - Honda Civic (seventh generation)",
+      "url": "https://en.wikipedia.org/wiki/Honda_Civic_(seventh_generation)",
+      "says": "LDA 1.3L i-DSI + motor, 93 hp combined, 2003-2005"
+     },
+     {
+      "name": "Consumer Guide - 2001-05 Honda Civic (used)",
+      "url": "https://consumerguide.com/used/2001-05-honda-civic/",
+      "says": "1.3L gasoline-electric Hybrid sedan 2003-2005 (no hp stated)"
+     },
+     {
+      "name": "EPA fueleconomy.gov vehicle data",
+      "url": "https://www.fueleconomy.gov/feg/download.shtml",
+      "says": "Civic Hybrid 1.3L"
+     }
+    ],
+    "independent_sources": [
+     "Consumer Guide",
+     "EPA",
+     "Wikipedia"
+    ],
+    "note": "hp is combined system output (engine alone 85 hp SAE net).",
+    "status": "three_sources_not_nhra",
+    "cid": 82
+   }
+  ],
+  "2006": [
+   {
+    "gen": "gen8",
+    "liters": 1.8,
+    "hp": 140,
+    "hp_basis": "SAE net",
+    "rpo": "R18A1",
+    "name": "1.8 SOHC i-VTEC",
+    "trims": [
+     "DX",
+     "LX",
+     "EX",
+     "EX-L"
+    ],
+    "nhra": false,
+    "sources": [
+     {
+      "name": "Honda (hondanews.com) 2006 Civic Sedan and Civic Hybrid Specifications",
+      "url": "https://hondanews.com/en-US/honda-automobiles/releases/release-591334b5ff2cd7fdfabb17004c34c1b5-2006-honda-civic-sedan-and-civic-hybrid-specifications",
+      "says": "DX/LX/EX 1799 cc 140 @ 6300 SAE net"
+     },
+     {
+      "name": "Consumer Guide - 2006-11 Honda Civic (used)",
+      "url": "https://consumerguide.com/used/2006-11-honda-civic/",
+      "says": "140-hp 1.8 four, 2006-2011"
+     },
+     {
+      "name": "Wikipedia - Honda Civic (eighth generation)",
+      "url": "https://en.wikipedia.org/wiki/Honda_Civic_(eighth_generation)",
+      "says": "R18A1 1.8L DX/LX/EX 2006-2011 (code source)"
+     },
+     {
+      "name": "EPA fueleconomy.gov vehicle data",
+      "url": "https://www.fueleconomy.gov/feg/download.shtml",
+      "says": "1.8L 4-cyl Civic"
+     }
+    ],
+    "independent_sources": [
+     "Consumer Guide",
+     "EPA",
+     "Honda",
+     "Wikipedia"
+    ],
+    "note": "Wikipedia also lists an R16A1 1.6 (2006-2008), not a US-market engine; excluded.",
+    "status": "three_sources_not_nhra",
+    "cid": 110
+   },
+   {
+    "gen": "gen8",
+    "liters": 2.0,
+    "hp": 197,
+    "hp_basis": "SAE net",
+    "rpo": "K20Z3",
+    "name": "2.0 DOHC i-VTEC",
+    "trims": [
+     "Si coupe",
+     "Si sedan (2007+)"
+    ],
+    "nhra": false,
+    "sources": [
+     {
+      "name": "Honda (hondanews.com) Civic Si Timeline and Milestones",
+      "url": "https://hondanews.com/en-US/honda-automobiles/releases/release-5d911be38cf30e49d54f6cb4520829b7-honda-civic-si-timeline-and-milestones",
+      "says": "2006-2011 Si 2.0 i-VTEC (K20Z3) 197 hp; coupe 2006-2011, sedan from 2007"
+     },
+     {
+      "name": "Consumer Guide - 2006-11 Honda Civic (used)",
+      "url": "https://consumerguide.com/used/2006-11-honda-civic/",
+      "says": "197-hp Si, coupes 2006-2011, sedans 2007-2011"
+     },
+     {
+      "name": "Wikipedia - Honda Civic (eighth generation)",
+      "url": "https://en.wikipedia.org/wiki/Honda_Civic_(eighth_generation)",
+      "says": "K20Z3 2.0L 197 hp Si"
+     },
+     {
+      "name": "EPA fueleconomy.gov vehicle data",
+      "url": "https://www.fueleconomy.gov/feg/download.shtml",
+      "says": "2.0L 4-cyl Civic"
+     }
+    ],
+    "independent_sources": [
+     "Consumer Guide",
+     "EPA",
+     "Honda",
+     "Wikipedia"
+    ],
+    "note": "Si sedan added for 2007.",
+    "status": "three_sources_not_nhra",
+    "cid": 122
+   },
+   {
+    "gen": "gen8",
+    "liters": 1.3,
+    "hp": 110,
+    "hp_basis": "SAE net",
+    "rpo": "LDA (LDA-MF5)",
+    "name": "1.3 i-DSI + IMA hybrid",
+    "trims": [
+     "Hybrid sedan"
+    ],
+    "nhra": false,
+    "sources": [
+     {
+      "name": "Honda (hondanews.com) 2006 Civic Sedan and Civic Hybrid Specifications",
+      "url": "https://hondanews.com/en-US/honda-automobiles/releases/release-591334b5ff2cd7fdfabb17004c34c1b5-2006-honda-civic-sedan-and-civic-hybrid-specifications",
+      "says": "engine 93 @ 6000; IMA 20 hp; system 110 @ 6000"
+     },
+     {
+      "name": "Consumer Guide - 2006-11 Honda Civic (used)",
+      "url": "https://consumerguide.com/used/2006-11-honda-civic/",
+      "says": "1.3L gas/electric, 110 total hp, 2006-2011"
+     },
+     {
+      "name": "Wikipedia - Honda Civic (eighth generation)",
+      "url": "https://en.wikipedia.org/wiki/Honda_Civic_(eighth_generation)",
+      "says": "LDA-MF5 93 hp engine + 20 hp motor, 110 hp combined"
+     },
+     {
+      "name": "EPA fueleconomy.gov vehicle data",
+      "url": "https://www.fueleconomy.gov/feg/download.shtml",
+      "says": "Civic Hybrid 1.3L"
+     }
+    ],
+    "independent_sources": [
+     "Consumer Guide",
+     "EPA",
+     "Honda",
+     "Wikipedia"
+    ],
+    "note": "hp is combined system output (engine alone 93 hp).",
+    "status": "three_sources_not_nhra",
+    "cid": 82
+   },
+   {
+    "gen": "gen8",
+    "liters": 1.8,
+    "hp": 113,
+    "hp_basis": "SAE net",
+    "rpo": null,
+    "name": "1.8 CNG (GX)",
+    "trims": [
+     "GX sedan"
+    ],
+    "nhra": false,
+    "sources": [
+     {
+      "name": "Honda (hondanews.com) 2006 Civic Sedan and Civic Hybrid Specifications",
+      "url": "https://hondanews.com/en-US/honda-automobiles/releases/release-591334b5ff2cd7fdfabb17004c34c1b5-2006-honda-civic-sedan-and-civic-hybrid-specifications",
+      "says": "GX 1799 cc 113 @ 6300 SAE net"
+     },
+     {
+      "name": "EPA fueleconomy.gov vehicle data",
+      "url": "https://www.fueleconomy.gov/feg/download.shtml",
+      "says": "Civic CNG 1.8L"
+     }
+    ],
+    "independent_sources": [
+     "EPA",
+     "Honda"
+    ],
+    "note": "Consumer Guide covers the GX from 2008 (retail expansion); Honda 2006 specs and EPA show it from 2006. No engine code stated.",
+    "status": "two_sources_agree",
+    "cid": 110
+   }
+  ],
+  "2007": [
+   {
+    "gen": "gen8",
+    "liters": 1.8,
+    "hp": 140,
+    "hp_basis": "SAE net",
+    "rpo": "R18A1",
+    "name": "1.8 SOHC i-VTEC",
+    "trims": [
+     "DX",
+     "LX",
+     "EX",
+     "EX-L"
+    ],
+    "nhra": false,
+    "sources": [
+     {
+      "name": "Consumer Guide - 2006-11 Honda Civic (used)",
+      "url": "https://consumerguide.com/used/2006-11-honda-civic/",
+      "says": "140-hp 1.8 four, 2006-2011"
+     },
+     {
+      "name": "Wikipedia - Honda Civic (eighth generation)",
+      "url": "https://en.wikipedia.org/wiki/Honda_Civic_(eighth_generation)",
+      "says": "R18A1 1.8L DX/LX/EX 2006-2011 (code source)"
+     },
+     {
+      "name": "EPA fueleconomy.gov vehicle data",
+      "url": "https://www.fueleconomy.gov/feg/download.shtml",
+      "says": "1.8L 4-cyl Civic"
+     }
+    ],
+    "independent_sources": [
+     "Consumer Guide",
+     "EPA",
+     "Wikipedia"
+    ],
+    "note": "Wikipedia also lists an R16A1 1.6 (2006-2008), not a US-market engine; excluded.",
+    "status": "three_sources_not_nhra",
+    "cid": 110
+   },
+   {
+    "gen": "gen8",
+    "liters": 2.0,
+    "hp": 197,
+    "hp_basis": "SAE net",
+    "rpo": "K20Z3",
+    "name": "2.0 DOHC i-VTEC",
+    "trims": [
+     "Si coupe",
+     "Si sedan (2007+)"
+    ],
+    "nhra": false,
+    "sources": [
+     {
+      "name": "Honda (hondanews.com) Civic Si Timeline and Milestones",
+      "url": "https://hondanews.com/en-US/honda-automobiles/releases/release-5d911be38cf30e49d54f6cb4520829b7-honda-civic-si-timeline-and-milestones",
+      "says": "2006-2011 Si 2.0 i-VTEC (K20Z3) 197 hp; coupe 2006-2011, sedan from 2007"
+     },
+     {
+      "name": "Consumer Guide - 2006-11 Honda Civic (used)",
+      "url": "https://consumerguide.com/used/2006-11-honda-civic/",
+      "says": "197-hp Si, coupes 2006-2011, sedans 2007-2011"
+     },
+     {
+      "name": "Wikipedia - Honda Civic (eighth generation)",
+      "url": "https://en.wikipedia.org/wiki/Honda_Civic_(eighth_generation)",
+      "says": "K20Z3 2.0L 197 hp Si"
+     },
+     {
+      "name": "EPA fueleconomy.gov vehicle data",
+      "url": "https://www.fueleconomy.gov/feg/download.shtml",
+      "says": "2.0L 4-cyl Civic"
+     }
+    ],
+    "independent_sources": [
+     "Consumer Guide",
+     "EPA",
+     "Honda",
+     "Wikipedia"
+    ],
+    "note": "Si sedan added for 2007.",
+    "status": "three_sources_not_nhra",
+    "cid": 122
+   },
+   {
+    "gen": "gen8",
+    "liters": 1.3,
+    "hp": 110,
+    "hp_basis": "SAE net",
+    "rpo": "LDA (LDA-MF5)",
+    "name": "1.3 i-DSI + IMA hybrid",
+    "trims": [
+     "Hybrid sedan"
+    ],
+    "nhra": false,
+    "sources": [
+     {
+      "name": "Consumer Guide - 2006-11 Honda Civic (used)",
+      "url": "https://consumerguide.com/used/2006-11-honda-civic/",
+      "says": "1.3L gas/electric, 110 total hp, 2006-2011"
+     },
+     {
+      "name": "Wikipedia - Honda Civic (eighth generation)",
+      "url": "https://en.wikipedia.org/wiki/Honda_Civic_(eighth_generation)",
+      "says": "LDA-MF5 93 hp engine + 20 hp motor, 110 hp combined"
+     },
+     {
+      "name": "EPA fueleconomy.gov vehicle data",
+      "url": "https://www.fueleconomy.gov/feg/download.shtml",
+      "says": "Civic Hybrid 1.3L"
+     }
+    ],
+    "independent_sources": [
+     "Consumer Guide",
+     "EPA",
+     "Wikipedia"
+    ],
+    "note": "hp is combined system output (engine alone 93 hp).",
+    "status": "three_sources_not_nhra",
+    "cid": 82
+   },
+   {
+    "gen": "gen8",
+    "liters": 1.8,
+    "hp": 113,
+    "hp_basis": "SAE net",
+    "rpo": null,
+    "name": "1.8 CNG (GX)",
+    "trims": [
+     "GX sedan"
+    ],
+    "nhra": false,
+    "sources": [
+     {
+      "name": "EPA fueleconomy.gov vehicle data",
+      "url": "https://www.fueleconomy.gov/feg/download.shtml",
+      "says": "Civic CNG 1.8L"
+     }
+    ],
+    "independent_sources": [
+     "EPA"
+    ],
+    "note": "Consumer Guide covers the GX from 2008 (retail expansion); Honda 2006 specs and EPA show it from 2006. No engine code stated. Only one independent source located for this year; withhold or re-check.",
+    "status": "insufficient_sources",
+    "cid": 110
+   }
+  ],
+  "2008": [
+   {
+    "gen": "gen8",
+    "liters": 1.8,
+    "hp": 140,
+    "hp_basis": "SAE net",
+    "rpo": "R18A1",
+    "name": "1.8 SOHC i-VTEC",
+    "trims": [
+     "DX",
+     "LX",
+     "EX",
+     "EX-L"
+    ],
+    "nhra": false,
+    "sources": [
+     {
+      "name": "Consumer Guide - 2006-11 Honda Civic (used)",
+      "url": "https://consumerguide.com/used/2006-11-honda-civic/",
+      "says": "140-hp 1.8 four, 2006-2011"
+     },
+     {
+      "name": "Kelley Blue Book - 2008 Honda Civic specs",
+      "url": "https://www.kbb.com/honda/civic/2008/specs",
+      "says": "DX/LX/EX/EX-L 4-Cyl VTEC 1.8 140 hp"
+     },
+     {
+      "name": "Wikipedia - Honda Civic (eighth generation)",
+      "url": "https://en.wikipedia.org/wiki/Honda_Civic_(eighth_generation)",
+      "says": "R18A1 1.8L DX/LX/EX 2006-2011 (code source)"
+     },
+     {
+      "name": "EPA fueleconomy.gov vehicle data",
+      "url": "https://www.fueleconomy.gov/feg/download.shtml",
+      "says": "1.8L 4-cyl Civic"
+     }
+    ],
+    "independent_sources": [
+     "Consumer Guide",
+     "EPA",
+     "Kelley Blue Book",
+     "Wikipedia"
+    ],
+    "note": "Wikipedia also lists an R16A1 1.6 (2006-2008), not a US-market engine; excluded.",
+    "status": "three_sources_not_nhra",
+    "cid": 110
+   },
+   {
+    "gen": "gen8",
+    "liters": 2.0,
+    "hp": 197,
+    "hp_basis": "SAE net",
+    "rpo": "K20Z3",
+    "name": "2.0 DOHC i-VTEC",
+    "trims": [
+     "Si coupe",
+     "Si sedan (2007+)"
+    ],
+    "nhra": false,
+    "sources": [
+     {
+      "name": "Honda (hondanews.com) Civic Si Timeline and Milestones",
+      "url": "https://hondanews.com/en-US/honda-automobiles/releases/release-5d911be38cf30e49d54f6cb4520829b7-honda-civic-si-timeline-and-milestones",
+      "says": "2006-2011 Si 2.0 i-VTEC (K20Z3) 197 hp; coupe 2006-2011, sedan from 2007"
+     },
+     {
+      "name": "Consumer Guide - 2006-11 Honda Civic (used)",
+      "url": "https://consumerguide.com/used/2006-11-honda-civic/",
+      "says": "197-hp Si, coupes 2006-2011, sedans 2007-2011"
+     },
+     {
+      "name": "Kelley Blue Book - 2008 Honda Civic specs",
+      "url": "https://www.kbb.com/honda/civic/2008/specs",
+      "says": "Si Coupe 4-Cyl VTEC 2.0 197 hp"
+     },
+     {
+      "name": "Wikipedia - Honda Civic (eighth generation)",
+      "url": "https://en.wikipedia.org/wiki/Honda_Civic_(eighth_generation)",
+      "says": "K20Z3 2.0L 197 hp Si"
+     },
+     {
+      "name": "EPA fueleconomy.gov vehicle data",
+      "url": "https://www.fueleconomy.gov/feg/download.shtml",
+      "says": "2.0L 4-cyl Civic"
+     }
+    ],
+    "independent_sources": [
+     "Consumer Guide",
+     "EPA",
+     "Honda",
+     "Kelley Blue Book",
+     "Wikipedia"
+    ],
+    "note": "Si sedan added for 2007.",
+    "status": "three_sources_not_nhra",
+    "cid": 122
+   },
+   {
+    "gen": "gen8",
+    "liters": 1.3,
+    "hp": 110,
+    "hp_basis": "SAE net",
+    "rpo": "LDA (LDA-MF5)",
+    "name": "1.3 i-DSI + IMA hybrid",
+    "trims": [
+     "Hybrid sedan"
+    ],
+    "nhra": false,
+    "sources": [
+     {
+      "name": "Consumer Guide - 2006-11 Honda Civic (used)",
+      "url": "https://consumerguide.com/used/2006-11-honda-civic/",
+      "says": "1.3L gas/electric, 110 total hp, 2006-2011"
+     },
+     {
+      "name": "Wikipedia - Honda Civic (eighth generation)",
+      "url": "https://en.wikipedia.org/wiki/Honda_Civic_(eighth_generation)",
+      "says": "LDA-MF5 93 hp engine + 20 hp motor, 110 hp combined"
+     },
+     {
+      "name": "EPA fueleconomy.gov vehicle data",
+      "url": "https://www.fueleconomy.gov/feg/download.shtml",
+      "says": "Civic Hybrid 1.3L"
+     }
+    ],
+    "independent_sources": [
+     "Consumer Guide",
+     "EPA",
+     "Wikipedia"
+    ],
+    "note": "hp is combined system output (engine alone 93 hp).",
+    "status": "three_sources_not_nhra",
+    "cid": 82
+   },
+   {
+    "gen": "gen8",
+    "liters": 1.8,
+    "hp": 113,
+    "hp_basis": "SAE net",
+    "rpo": null,
+    "name": "1.8 CNG (GX)",
+    "trims": [
+     "GX sedan"
+    ],
+    "nhra": false,
+    "sources": [
+     {
+      "name": "Consumer Guide - 2006-11 Honda Civic (used)",
+      "url": "https://consumerguide.com/used/2006-11-honda-civic/",
+      "says": "1.8L 113-hp CNG GX, 2008-2011"
+     },
+     {
+      "name": "EPA fueleconomy.gov vehicle data",
+      "url": "https://www.fueleconomy.gov/feg/download.shtml",
+      "says": "Civic CNG 1.8L"
+     }
+    ],
+    "independent_sources": [
+     "Consumer Guide",
+     "EPA"
+    ],
+    "note": "Consumer Guide covers the GX from 2008 (retail expansion); Honda 2006 specs and EPA show it from 2006. No engine code stated.",
+    "status": "two_sources_agree",
+    "cid": 110
+   }
+  ],
+  "2009": [
+   {
+    "gen": "gen8",
+    "liters": 1.8,
+    "hp": 140,
+    "hp_basis": "SAE net",
+    "rpo": "R18A1",
+    "name": "1.8 SOHC i-VTEC",
+    "trims": [
+     "DX",
+     "LX",
+     "EX",
+     "EX-L"
+    ],
+    "nhra": false,
+    "sources": [
+     {
+      "name": "Consumer Guide - 2006-11 Honda Civic (used)",
+      "url": "https://consumerguide.com/used/2006-11-honda-civic/",
+      "says": "140-hp 1.8 four, 2006-2011"
+     },
+     {
+      "name": "Wikipedia - Honda Civic (eighth generation)",
+      "url": "https://en.wikipedia.org/wiki/Honda_Civic_(eighth_generation)",
+      "says": "R18A1 1.8L DX/LX/EX 2006-2011 (code source)"
+     },
+     {
+      "name": "EPA fueleconomy.gov vehicle data",
+      "url": "https://www.fueleconomy.gov/feg/download.shtml",
+      "says": "1.8L 4-cyl Civic"
+     }
+    ],
+    "independent_sources": [
+     "Consumer Guide",
+     "EPA",
+     "Wikipedia"
+    ],
+    "note": "Wikipedia also lists an R16A1 1.6 (2006-2008), not a US-market engine; excluded.",
+    "status": "three_sources_not_nhra",
+    "cid": 110
+   },
+   {
+    "gen": "gen8",
+    "liters": 2.0,
+    "hp": 197,
+    "hp_basis": "SAE net",
+    "rpo": "K20Z3",
+    "name": "2.0 DOHC i-VTEC",
+    "trims": [
+     "Si coupe",
+     "Si sedan (2007+)"
+    ],
+    "nhra": false,
+    "sources": [
+     {
+      "name": "Honda (hondanews.com) Civic Si Timeline and Milestones",
+      "url": "https://hondanews.com/en-US/honda-automobiles/releases/release-5d911be38cf30e49d54f6cb4520829b7-honda-civic-si-timeline-and-milestones",
+      "says": "2006-2011 Si 2.0 i-VTEC (K20Z3) 197 hp; coupe 2006-2011, sedan from 2007"
+     },
+     {
+      "name": "Consumer Guide - 2006-11 Honda Civic (used)",
+      "url": "https://consumerguide.com/used/2006-11-honda-civic/",
+      "says": "197-hp Si, coupes 2006-2011, sedans 2007-2011"
+     },
+     {
+      "name": "Wikipedia - Honda Civic (eighth generation)",
+      "url": "https://en.wikipedia.org/wiki/Honda_Civic_(eighth_generation)",
+      "says": "K20Z3 2.0L 197 hp Si"
+     },
+     {
+      "name": "EPA fueleconomy.gov vehicle data",
+      "url": "https://www.fueleconomy.gov/feg/download.shtml",
+      "says": "2.0L 4-cyl Civic"
+     }
+    ],
+    "independent_sources": [
+     "Consumer Guide",
+     "EPA",
+     "Honda",
+     "Wikipedia"
+    ],
+    "note": "Si sedan added for 2007.",
+    "status": "three_sources_not_nhra",
+    "cid": 122
+   },
+   {
+    "gen": "gen8",
+    "liters": 1.3,
+    "hp": 110,
+    "hp_basis": "SAE net",
+    "rpo": "LDA (LDA-MF5)",
+    "name": "1.3 i-DSI + IMA hybrid",
+    "trims": [
+     "Hybrid sedan"
+    ],
+    "nhra": false,
+    "sources": [
+     {
+      "name": "Consumer Guide - 2006-11 Honda Civic (used)",
+      "url": "https://consumerguide.com/used/2006-11-honda-civic/",
+      "says": "1.3L gas/electric, 110 total hp, 2006-2011"
+     },
+     {
+      "name": "Wikipedia - Honda Civic (eighth generation)",
+      "url": "https://en.wikipedia.org/wiki/Honda_Civic_(eighth_generation)",
+      "says": "LDA-MF5 93 hp engine + 20 hp motor, 110 hp combined"
+     },
+     {
+      "name": "EPA fueleconomy.gov vehicle data",
+      "url": "https://www.fueleconomy.gov/feg/download.shtml",
+      "says": "Civic Hybrid 1.3L"
+     }
+    ],
+    "independent_sources": [
+     "Consumer Guide",
+     "EPA",
+     "Wikipedia"
+    ],
+    "note": "hp is combined system output (engine alone 93 hp).",
+    "status": "three_sources_not_nhra",
+    "cid": 82
+   },
+   {
+    "gen": "gen8",
+    "liters": 1.8,
+    "hp": 113,
+    "hp_basis": "SAE net",
+    "rpo": null,
+    "name": "1.8 CNG (GX)",
+    "trims": [
+     "GX sedan"
+    ],
+    "nhra": false,
+    "sources": [
+     {
+      "name": "Consumer Guide - 2006-11 Honda Civic (used)",
+      "url": "https://consumerguide.com/used/2006-11-honda-civic/",
+      "says": "1.8L 113-hp CNG GX, 2008-2011"
+     },
+     {
+      "name": "EPA fueleconomy.gov vehicle data",
+      "url": "https://www.fueleconomy.gov/feg/download.shtml",
+      "says": "Civic CNG 1.8L"
+     }
+    ],
+    "independent_sources": [
+     "Consumer Guide",
+     "EPA"
+    ],
+    "note": "Consumer Guide covers the GX from 2008 (retail expansion); Honda 2006 specs and EPA show it from 2006. No engine code stated.",
+    "status": "two_sources_agree",
+    "cid": 110
+   }
+  ],
+  "2010": [
+   {
+    "gen": "gen8",
+    "liters": 1.8,
+    "hp": 140,
+    "hp_basis": "SAE net",
+    "rpo": "R18A1",
+    "name": "1.8 SOHC i-VTEC",
+    "trims": [
+     "DX",
+     "LX",
+     "EX",
+     "EX-L"
+    ],
+    "nhra": false,
+    "sources": [
+     {
+      "name": "Consumer Guide - 2006-11 Honda Civic (used)",
+      "url": "https://consumerguide.com/used/2006-11-honda-civic/",
+      "says": "140-hp 1.8 four, 2006-2011"
+     },
+     {
+      "name": "Wikipedia - Honda Civic (eighth generation)",
+      "url": "https://en.wikipedia.org/wiki/Honda_Civic_(eighth_generation)",
+      "says": "R18A1 1.8L DX/LX/EX 2006-2011 (code source)"
+     },
+     {
+      "name": "EPA fueleconomy.gov vehicle data",
+      "url": "https://www.fueleconomy.gov/feg/download.shtml",
+      "says": "1.8L 4-cyl Civic"
+     }
+    ],
+    "independent_sources": [
+     "Consumer Guide",
+     "EPA",
+     "Wikipedia"
+    ],
+    "note": "Wikipedia also lists an R16A1 1.6 (2006-2008), not a US-market engine; excluded.",
+    "status": "three_sources_not_nhra",
+    "cid": 110
+   },
+   {
+    "gen": "gen8",
+    "liters": 2.0,
+    "hp": 197,
+    "hp_basis": "SAE net",
+    "rpo": "K20Z3",
+    "name": "2.0 DOHC i-VTEC",
+    "trims": [
+     "Si coupe",
+     "Si sedan (2007+)"
+    ],
+    "nhra": false,
+    "sources": [
+     {
+      "name": "Honda (hondanews.com) Civic Si Timeline and Milestones",
+      "url": "https://hondanews.com/en-US/honda-automobiles/releases/release-5d911be38cf30e49d54f6cb4520829b7-honda-civic-si-timeline-and-milestones",
+      "says": "2006-2011 Si 2.0 i-VTEC (K20Z3) 197 hp; coupe 2006-2011, sedan from 2007"
+     },
+     {
+      "name": "Consumer Guide - 2006-11 Honda Civic (used)",
+      "url": "https://consumerguide.com/used/2006-11-honda-civic/",
+      "says": "197-hp Si, coupes 2006-2011, sedans 2007-2011"
+     },
+     {
+      "name": "Wikipedia - Honda Civic (eighth generation)",
+      "url": "https://en.wikipedia.org/wiki/Honda_Civic_(eighth_generation)",
+      "says": "K20Z3 2.0L 197 hp Si"
+     },
+     {
+      "name": "EPA fueleconomy.gov vehicle data",
+      "url": "https://www.fueleconomy.gov/feg/download.shtml",
+      "says": "2.0L 4-cyl Civic"
+     }
+    ],
+    "independent_sources": [
+     "Consumer Guide",
+     "EPA",
+     "Honda",
+     "Wikipedia"
+    ],
+    "note": "Si sedan added for 2007.",
+    "status": "three_sources_not_nhra",
+    "cid": 122
+   },
+   {
+    "gen": "gen8",
+    "liters": 1.3,
+    "hp": 110,
+    "hp_basis": "SAE net",
+    "rpo": "LDA (LDA-MF5)",
+    "name": "1.3 i-DSI + IMA hybrid",
+    "trims": [
+     "Hybrid sedan"
+    ],
+    "nhra": false,
+    "sources": [
+     {
+      "name": "Consumer Guide - 2006-11 Honda Civic (used)",
+      "url": "https://consumerguide.com/used/2006-11-honda-civic/",
+      "says": "1.3L gas/electric, 110 total hp, 2006-2011"
+     },
+     {
+      "name": "Wikipedia - Honda Civic (eighth generation)",
+      "url": "https://en.wikipedia.org/wiki/Honda_Civic_(eighth_generation)",
+      "says": "LDA-MF5 93 hp engine + 20 hp motor, 110 hp combined"
+     },
+     {
+      "name": "EPA fueleconomy.gov vehicle data",
+      "url": "https://www.fueleconomy.gov/feg/download.shtml",
+      "says": "Civic Hybrid 1.3L"
+     }
+    ],
+    "independent_sources": [
+     "Consumer Guide",
+     "EPA",
+     "Wikipedia"
+    ],
+    "note": "hp is combined system output (engine alone 93 hp).",
+    "status": "three_sources_not_nhra",
+    "cid": 82
+   },
+   {
+    "gen": "gen8",
+    "liters": 1.8,
+    "hp": 113,
+    "hp_basis": "SAE net",
+    "rpo": null,
+    "name": "1.8 CNG (GX)",
+    "trims": [
+     "GX sedan"
+    ],
+    "nhra": false,
+    "sources": [
+     {
+      "name": "Consumer Guide - 2006-11 Honda Civic (used)",
+      "url": "https://consumerguide.com/used/2006-11-honda-civic/",
+      "says": "1.8L 113-hp CNG GX, 2008-2011"
+     },
+     {
+      "name": "EPA fueleconomy.gov vehicle data",
+      "url": "https://www.fueleconomy.gov/feg/download.shtml",
+      "says": "Civic CNG 1.8L"
+     }
+    ],
+    "independent_sources": [
+     "Consumer Guide",
+     "EPA"
+    ],
+    "note": "Consumer Guide covers the GX from 2008 (retail expansion); Honda 2006 specs and EPA show it from 2006. No engine code stated.",
+    "status": "two_sources_agree",
+    "cid": 110
+   }
+  ],
+  "2011": [
+   {
+    "gen": "gen8",
+    "liters": 1.8,
+    "hp": 140,
+    "hp_basis": "SAE net",
+    "rpo": "R18A1",
+    "name": "1.8 SOHC i-VTEC",
+    "trims": [
+     "DX",
+     "LX",
+     "EX",
+     "EX-L"
+    ],
+    "nhra": false,
+    "sources": [
+     {
+      "name": "Consumer Guide - 2006-11 Honda Civic (used)",
+      "url": "https://consumerguide.com/used/2006-11-honda-civic/",
+      "says": "140-hp 1.8 four, 2006-2011"
+     },
+     {
+      "name": "Wikipedia - Honda Civic (eighth generation)",
+      "url": "https://en.wikipedia.org/wiki/Honda_Civic_(eighth_generation)",
+      "says": "R18A1 1.8L DX/LX/EX 2006-2011 (code source)"
+     },
+     {
+      "name": "EPA fueleconomy.gov vehicle data",
+      "url": "https://www.fueleconomy.gov/feg/download.shtml",
+      "says": "1.8L 4-cyl Civic"
+     }
+    ],
+    "independent_sources": [
+     "Consumer Guide",
+     "EPA",
+     "Wikipedia"
+    ],
+    "note": "Wikipedia also lists an R16A1 1.6 (2006-2008), not a US-market engine; excluded.",
+    "status": "three_sources_not_nhra",
+    "cid": 110
+   },
+   {
+    "gen": "gen8",
+    "liters": 2.0,
+    "hp": 197,
+    "hp_basis": "SAE net",
+    "rpo": "K20Z3",
+    "name": "2.0 DOHC i-VTEC",
+    "trims": [
+     "Si coupe",
+     "Si sedan (2007+)"
+    ],
+    "nhra": false,
+    "sources": [
+     {
+      "name": "Honda (hondanews.com) Civic Si Timeline and Milestones",
+      "url": "https://hondanews.com/en-US/honda-automobiles/releases/release-5d911be38cf30e49d54f6cb4520829b7-honda-civic-si-timeline-and-milestones",
+      "says": "2006-2011 Si 2.0 i-VTEC (K20Z3) 197 hp; coupe 2006-2011, sedan from 2007"
+     },
+     {
+      "name": "Consumer Guide - 2006-11 Honda Civic (used)",
+      "url": "https://consumerguide.com/used/2006-11-honda-civic/",
+      "says": "197-hp Si, coupes 2006-2011, sedans 2007-2011"
+     },
+     {
+      "name": "Wikipedia - Honda Civic (eighth generation)",
+      "url": "https://en.wikipedia.org/wiki/Honda_Civic_(eighth_generation)",
+      "says": "K20Z3 2.0L 197 hp Si"
+     },
+     {
+      "name": "EPA fueleconomy.gov vehicle data",
+      "url": "https://www.fueleconomy.gov/feg/download.shtml",
+      "says": "2.0L 4-cyl Civic"
+     }
+    ],
+    "independent_sources": [
+     "Consumer Guide",
+     "EPA",
+     "Honda",
+     "Wikipedia"
+    ],
+    "note": "Si sedan added for 2007.",
+    "status": "three_sources_not_nhra",
+    "cid": 122
+   },
+   {
+    "gen": "gen8",
+    "liters": 1.3,
+    "hp": 110,
+    "hp_basis": "SAE net",
+    "rpo": "LDA (LDA-MF5)",
+    "name": "1.3 i-DSI + IMA hybrid",
+    "trims": [
+     "Hybrid sedan"
+    ],
+    "nhra": false,
+    "sources": [
+     {
+      "name": "Consumer Guide - 2006-11 Honda Civic (used)",
+      "url": "https://consumerguide.com/used/2006-11-honda-civic/",
+      "says": "1.3L gas/electric, 110 total hp, 2006-2011"
+     },
+     {
+      "name": "Wikipedia - Honda Civic (eighth generation)",
+      "url": "https://en.wikipedia.org/wiki/Honda_Civic_(eighth_generation)",
+      "says": "LDA-MF5 93 hp engine + 20 hp motor, 110 hp combined"
+     },
+     {
+      "name": "EPA fueleconomy.gov vehicle data",
+      "url": "https://www.fueleconomy.gov/feg/download.shtml",
+      "says": "Civic Hybrid 1.3L"
+     }
+    ],
+    "independent_sources": [
+     "Consumer Guide",
+     "EPA",
+     "Wikipedia"
+    ],
+    "note": "hp is combined system output (engine alone 93 hp).",
+    "status": "three_sources_not_nhra",
+    "cid": 82
+   },
+   {
+    "gen": "gen8",
+    "liters": 1.8,
+    "hp": 113,
+    "hp_basis": "SAE net",
+    "rpo": null,
+    "name": "1.8 CNG (GX)",
+    "trims": [
+     "GX sedan"
+    ],
+    "nhra": false,
+    "sources": [
+     {
+      "name": "Consumer Guide - 2006-11 Honda Civic (used)",
+      "url": "https://consumerguide.com/used/2006-11-honda-civic/",
+      "says": "1.8L 113-hp CNG GX, 2008-2011"
+     },
+     {
+      "name": "EPA fueleconomy.gov vehicle data",
+      "url": "https://www.fueleconomy.gov/feg/download.shtml",
+      "says": "Civic CNG 1.8L"
+     }
+    ],
+    "independent_sources": [
+     "Consumer Guide",
+     "EPA"
+    ],
+    "note": "Consumer Guide covers the GX from 2008 (retail expansion); Honda 2006 specs and EPA show it from 2006. No engine code stated.",
+    "status": "two_sources_agree",
+    "cid": 110
+   }
+  ],
+  "2012": [
+   {
+    "gen": "gen9",
+    "liters": 1.8,
+    "hp": 140,
+    "hp_basis": "SAE net",
+    "rpo": "R18Z1",
+    "name": "1.8 SOHC i-VTEC",
+    "trims": [
+     "DX",
+     "LX",
+     "HF",
+     "EX",
+     "EX-L"
+    ],
+    "nhra": false,
+    "sources": [
+     {
+      "name": "Honda (hondanews.com) 2012 Civic Powertrains",
+      "url": "https://hondanews.com/en-US/releases/2012-honda-civic-powertrains",
+      "says": "140-hp 1.8 i-VTEC std in sedan, coupe, HF"
+     },
+     {
+      "name": "Consumer Guide - 2012-15 Honda Civic (used)",
+      "url": "https://consumerguide.com/used/2012-15-honda-civic/",
+      "says": "1.8L 140 hp 2012-2013"
+     },
+     {
+      "name": "Kelley Blue Book - 2012 Honda Civic specs",
+      "url": "https://www.kbb.com/honda/civic/2012/specs",
+      "says": "DX/LX/HF/EX/EX-L 1.8 140 hp"
+     },
+     {
+      "name": "Wikipedia - Honda Civic (ninth generation)",
+      "url": "https://en.wikipedia.org/wiki/Honda_Civic_(ninth_generation)",
+      "says": "R18Z1 1.8L 140 hp @ 6500"
+     },
+     {
+      "name": "EPA fueleconomy.gov vehicle data",
+      "url": "https://www.fueleconomy.gov/feg/download.shtml",
+      "says": "1.8L 4-cyl Civic / Civic HF"
+     }
+    ],
+    "independent_sources": [
+     "Consumer Guide",
+     "EPA",
+     "Honda",
+     "Kelley Blue Book",
+     "Wikipedia"
+    ],
+    "note": "",
+    "status": "three_sources_not_nhra",
+    "cid": 110
+   },
+   {
+    "gen": "gen9",
+    "liters": 1.8,
+    "hp": 110,
+    "hp_basis": "SAE net",
+    "rpo": "R18Z1 (CNG)",
+    "name": "1.8 CNG (Natural Gas)",
+    "trims": [
+     "Natural Gas sedan"
+    ],
+    "nhra": false,
+    "sources": [
+     {
+      "name": "Honda (hondanews.com) 2012 Civic Powertrains",
+      "url": "https://hondanews.com/en-US/releases/2012-honda-civic-powertrains",
+      "says": "110 hp CNG Civic Natural Gas"
+     },
+     {
+      "name": "Consumer Guide - 2012-15 Honda Civic (used)",
+      "url": "https://consumerguide.com/used/2012-15-honda-civic/",
+      "says": "1.8L Natural Gas 110 hp 2012-2015"
+     },
+     {
+      "name": "Kelley Blue Book - 2012 Honda Civic specs",
+      "url": "https://www.kbb.com/honda/civic/2012/specs",
+      "says": "Natural Gas Sedan 1.8 110 hp"
+     },
+     {
+      "name": "Wikipedia - Honda Civic (ninth generation)",
+      "url": "https://en.wikipedia.org/wiki/Honda_Civic_(ninth_generation)",
+      "says": "R18Z1 natural gas 110 hp @ 6500"
+     },
+     {
+      "name": "EPA fueleconomy.gov vehicle data",
+      "url": "https://www.fueleconomy.gov/feg/download.shtml",
+      "says": "Civic Natural Gas 1.8L CNG"
+     }
+    ],
+    "independent_sources": [
+     "Consumer Guide",
+     "EPA",
+     "Honda",
+     "Kelley Blue Book",
+     "Wikipedia"
+    ],
+    "note": "",
+    "status": "three_sources_not_nhra",
+    "cid": 110
+   },
+   {
+    "gen": "gen9",
+    "liters": 1.5,
+    "hp": 110,
+    "hp_basis": "SAE net",
+    "rpo": "LEA (LEA-MF6)",
+    "name": "1.5 i-VTEC + IMA hybrid",
+    "trims": [
+     "Hybrid sedan"
+    ],
+    "nhra": false,
+    "sources": [
+     {
+      "name": "Honda (hondanews.com) 2012 Civic Powertrains",
+      "url": "https://hondanews.com/en-US/releases/2012-honda-civic-powertrains",
+      "says": "Hybrid 110 hp @ 5500 combined"
+     },
+     {
+      "name": "Consumer Guide - 2012-15 Honda Civic (used)",
+      "url": "https://consumerguide.com/used/2012-15-honda-civic/",
+      "says": "1.5L hybrid 110 hp combined 2012-2015"
+     },
+     {
+      "name": "Kelley Blue Book - 2012 Honda Civic specs",
+      "url": "https://www.kbb.com/honda/civic/2012/specs",
+      "says": "Hybrid Sedan 1.5 110 hp"
+     },
+     {
+      "name": "Wikipedia - Honda Civic (ninth generation)",
+      "url": "https://en.wikipedia.org/wiki/Honda_Civic_(ninth_generation)",
+      "says": "LEA-MF6 1.5L (gives engine-only 90 hp)"
+     },
+     {
+      "name": "EPA fueleconomy.gov vehicle data",
+      "url": "https://www.fueleconomy.gov/feg/download.shtml",
+      "says": "Civic Hybrid 1.5L"
+     }
+    ],
+    "independent_sources": [
+     "Consumer Guide",
+     "EPA",
+     "Honda",
+     "Kelley Blue Book",
+     "Wikipedia"
+    ],
+    "note": "hp is combined system output; Wikipedia's 90 hp is engine only.",
+    "status": "three_sources_not_nhra",
+    "cid": 91
+   },
+   {
+    "gen": "gen9",
+    "liters": 2.4,
+    "hp": 201,
+    "hp_basis": "SAE net",
+    "rpo": "K24Z7",
+    "name": "2.4 DOHC i-VTEC",
+    "trims": [
+     "Si coupe",
+     "Si sedan"
+    ],
+    "nhra": false,
+    "sources": [
+     {
+      "name": "Honda (hondanews.com) Civic Si Timeline and Milestones",
+      "url": "https://hondanews.com/en-US/honda-automobiles/releases/release-5d911be38cf30e49d54f6cb4520829b7-honda-civic-si-timeline-and-milestones",
+      "says": "2012-2015 Si 2.4 (K24Z7), 201 hp 2012-2013"
+     },
+     {
+      "name": "Consumer Guide - 2012-15 Honda Civic (used)",
+      "url": "https://consumerguide.com/used/2012-15-honda-civic/",
+      "says": "2.4L Si 201 hp 2012-2013"
+     },
+     {
+      "name": "Kelley Blue Book - 2012 Honda Civic specs",
+      "url": "https://www.kbb.com/honda/civic/2012/specs",
+      "says": "Si Sedan 2.4 201 hp"
+     },
+     {
+      "name": "Wikipedia - Honda Civic (ninth generation)",
+      "url": "https://en.wikipedia.org/wiki/Honda_Civic_(ninth_generation)",
+      "says": "K24Z7 201 hp 2012-2013"
+     },
+     {
+      "name": "EPA fueleconomy.gov vehicle data",
+      "url": "https://www.fueleconomy.gov/feg/download.shtml",
+      "says": "2.4L 4-cyl Civic"
+     }
+    ],
+    "independent_sources": [
+     "Consumer Guide",
+     "EPA",
+     "Honda",
+     "Kelley Blue Book",
+     "Wikipedia"
+    ],
+    "note": "",
+    "status": "three_sources_not_nhra",
+    "cid": 144
+   }
+  ],
+  "2013": [
+   {
+    "gen": "gen9",
+    "liters": 1.8,
+    "hp": 140,
+    "hp_basis": "SAE net",
+    "rpo": "R18Z1",
+    "name": "1.8 SOHC i-VTEC",
+    "trims": [
+     "DX",
+     "LX",
+     "HF",
+     "EX",
+     "EX-L"
+    ],
+    "nhra": false,
+    "sources": [
+     {
+      "name": "Consumer Guide - 2012-15 Honda Civic (used)",
+      "url": "https://consumerguide.com/used/2012-15-honda-civic/",
+      "says": "1.8L 140 hp 2012-2013"
+     },
+     {
+      "name": "Wikipedia - Honda Civic (ninth generation)",
+      "url": "https://en.wikipedia.org/wiki/Honda_Civic_(ninth_generation)",
+      "says": "R18Z1 1.8L 140 hp @ 6500"
+     },
+     {
+      "name": "EPA fueleconomy.gov vehicle data",
+      "url": "https://www.fueleconomy.gov/feg/download.shtml",
+      "says": "1.8L 4-cyl Civic / Civic HF"
+     }
+    ],
+    "independent_sources": [
+     "Consumer Guide",
+     "EPA",
+     "Wikipedia"
+    ],
+    "note": "",
+    "status": "three_sources_not_nhra",
+    "cid": 110
+   },
+   {
+    "gen": "gen9",
+    "liters": 1.8,
+    "hp": 110,
+    "hp_basis": "SAE net",
+    "rpo": "R18Z1 (CNG)",
+    "name": "1.8 CNG (Natural Gas)",
+    "trims": [
+     "Natural Gas sedan"
+    ],
+    "nhra": false,
+    "sources": [
+     {
+      "name": "Consumer Guide - 2012-15 Honda Civic (used)",
+      "url": "https://consumerguide.com/used/2012-15-honda-civic/",
+      "says": "1.8L Natural Gas 110 hp 2012-2015"
+     },
+     {
+      "name": "Wikipedia - Honda Civic (ninth generation)",
+      "url": "https://en.wikipedia.org/wiki/Honda_Civic_(ninth_generation)",
+      "says": "R18Z1 natural gas 110 hp @ 6500"
+     },
+     {
+      "name": "EPA fueleconomy.gov vehicle data",
+      "url": "https://www.fueleconomy.gov/feg/download.shtml",
+      "says": "Civic Natural Gas 1.8L CNG"
+     }
+    ],
+    "independent_sources": [
+     "Consumer Guide",
+     "EPA",
+     "Wikipedia"
+    ],
+    "note": "",
+    "status": "three_sources_not_nhra",
+    "cid": 110
+   },
+   {
+    "gen": "gen9",
+    "liters": 1.5,
+    "hp": 110,
+    "hp_basis": "SAE net",
+    "rpo": "LEA (LEA-MF6)",
+    "name": "1.5 i-VTEC + IMA hybrid",
+    "trims": [
+     "Hybrid sedan"
+    ],
+    "nhra": false,
+    "sources": [
+     {
+      "name": "Consumer Guide - 2012-15 Honda Civic (used)",
+      "url": "https://consumerguide.com/used/2012-15-honda-civic/",
+      "says": "1.5L hybrid 110 hp combined 2012-2015"
+     },
+     {
+      "name": "Wikipedia - Honda Civic (ninth generation)",
+      "url": "https://en.wikipedia.org/wiki/Honda_Civic_(ninth_generation)",
+      "says": "LEA-MF6 1.5L (gives engine-only 90 hp)"
+     },
+     {
+      "name": "EPA fueleconomy.gov vehicle data",
+      "url": "https://www.fueleconomy.gov/feg/download.shtml",
+      "says": "Civic Hybrid 1.5L"
+     }
+    ],
+    "independent_sources": [
+     "Consumer Guide",
+     "EPA",
+     "Wikipedia"
+    ],
+    "note": "hp is combined system output; Wikipedia's 90 hp is engine only.",
+    "status": "three_sources_not_nhra",
+    "cid": 91
+   },
+   {
+    "gen": "gen9",
+    "liters": 2.4,
+    "hp": 201,
+    "hp_basis": "SAE net",
+    "rpo": "K24Z7",
+    "name": "2.4 DOHC i-VTEC",
+    "trims": [
+     "Si coupe",
+     "Si sedan"
+    ],
+    "nhra": false,
+    "sources": [
+     {
+      "name": "Honda (hondanews.com) Civic Si Timeline and Milestones",
+      "url": "https://hondanews.com/en-US/honda-automobiles/releases/release-5d911be38cf30e49d54f6cb4520829b7-honda-civic-si-timeline-and-milestones",
+      "says": "2012-2015 Si 2.4 (K24Z7), 201 hp 2012-2013"
+     },
+     {
+      "name": "Consumer Guide - 2012-15 Honda Civic (used)",
+      "url": "https://consumerguide.com/used/2012-15-honda-civic/",
+      "says": "2.4L Si 201 hp 2012-2013"
+     },
+     {
+      "name": "Wikipedia - Honda Civic (ninth generation)",
+      "url": "https://en.wikipedia.org/wiki/Honda_Civic_(ninth_generation)",
+      "says": "K24Z7 201 hp 2012-2013"
+     },
+     {
+      "name": "EPA fueleconomy.gov vehicle data",
+      "url": "https://www.fueleconomy.gov/feg/download.shtml",
+      "says": "2.4L 4-cyl Civic"
+     }
+    ],
+    "independent_sources": [
+     "Consumer Guide",
+     "EPA",
+     "Honda",
+     "Wikipedia"
+    ],
+    "note": "",
+    "status": "three_sources_not_nhra",
+    "cid": 144
+   }
+  ],
+  "2014": [
+   {
+    "gen": "gen9",
+    "liters": 1.8,
+    "hp": 143,
+    "hp_basis": "SAE net",
+    "rpo": "R18Z1",
+    "name": "1.8 SOHC i-VTEC",
+    "trims": [
+     "LX",
+     "SE (2015)",
+     "HF",
+     "EX",
+     "EX-L"
+    ],
+    "nhra": false,
+    "sources": [
+     {
+      "name": "Consumer Guide - 2012-15 Honda Civic (used)",
+      "url": "https://consumerguide.com/used/2012-15-honda-civic/",
+      "says": "1.8L 143 hp 2014-2015"
+     },
+     {
+      "name": "Kelley Blue Book - 2014 Honda Civic specs",
+      "url": "https://www.kbb.com/honda/civic/2014/specs",
+      "says": "LX/HF/EX/EX-L 1.8 143 hp"
+     },
+     {
+      "name": "EPA fueleconomy.gov vehicle data",
+      "url": "https://www.fueleconomy.gov/feg/download.shtml",
+      "says": "1.8L 4-cyl Civic / Civic HF"
+     }
+    ],
+    "independent_sources": [
+     "Consumer Guide",
+     "EPA",
+     "Kelley Blue Book"
+    ],
+    "note": "Re-rated from 140 hp for 2014. Consumer Guide lists the HF at 140 hp throughout; Honda 2015 and KBB 2014 give HF 143. Wikipedia gives 140 for 2012-2015 without the 2014 change (not counted).",
+    "status": "three_sources_not_nhra",
+    "cid": 110
+   },
+   {
+    "gen": "gen9",
+    "liters": 1.8,
+    "hp": 110,
+    "hp_basis": "SAE net",
+    "rpo": "R18Z1 (CNG)",
+    "name": "1.8 CNG (Natural Gas)",
+    "trims": [
+     "Natural Gas sedan"
+    ],
+    "nhra": false,
+    "sources": [
+     {
+      "name": "Consumer Guide - 2012-15 Honda Civic (used)",
+      "url": "https://consumerguide.com/used/2012-15-honda-civic/",
+      "says": "1.8L Natural Gas 110 hp 2012-2015"
+     },
+     {
+      "name": "Kelley Blue Book - 2014 Honda Civic specs",
+      "url": "https://www.kbb.com/honda/civic/2014/specs",
+      "says": "Natural Gas Sedan 1.8 110 hp"
+     },
+     {
+      "name": "Wikipedia - Honda Civic (ninth generation)",
+      "url": "https://en.wikipedia.org/wiki/Honda_Civic_(ninth_generation)",
+      "says": "R18Z1 natural gas 110 hp @ 6500"
+     },
+     {
+      "name": "EPA fueleconomy.gov vehicle data",
+      "url": "https://www.fueleconomy.gov/feg/download.shtml",
+      "says": "Civic Natural Gas 1.8L CNG"
+     }
+    ],
+    "independent_sources": [
+     "Consumer Guide",
+     "EPA",
+     "Kelley Blue Book",
+     "Wikipedia"
+    ],
+    "note": "",
+    "status": "three_sources_not_nhra",
+    "cid": 110
+   },
+   {
+    "gen": "gen9",
+    "liters": 1.5,
+    "hp": 110,
+    "hp_basis": "SAE net",
+    "rpo": "LEA (LEA-MF6)",
+    "name": "1.5 i-VTEC + IMA hybrid",
+    "trims": [
+     "Hybrid sedan"
+    ],
+    "nhra": false,
+    "sources": [
+     {
+      "name": "Consumer Guide - 2012-15 Honda Civic (used)",
+      "url": "https://consumerguide.com/used/2012-15-honda-civic/",
+      "says": "1.5L hybrid 110 hp combined 2012-2015"
+     },
+     {
+      "name": "Kelley Blue Book - 2014 Honda Civic specs",
+      "url": "https://www.kbb.com/honda/civic/2014/specs",
+      "says": "Hybrid Sedan 1.5 110 hp"
+     },
+     {
+      "name": "Wikipedia - Honda Civic (ninth generation)",
+      "url": "https://en.wikipedia.org/wiki/Honda_Civic_(ninth_generation)",
+      "says": "LEA-MF6 1.5L (gives engine-only 90 hp)"
+     },
+     {
+      "name": "EPA fueleconomy.gov vehicle data",
+      "url": "https://www.fueleconomy.gov/feg/download.shtml",
+      "says": "Civic Hybrid 1.5L"
+     }
+    ],
+    "independent_sources": [
+     "Consumer Guide",
+     "EPA",
+     "Kelley Blue Book",
+     "Wikipedia"
+    ],
+    "note": "hp is combined system output; Wikipedia's 90 hp is engine only.",
+    "status": "three_sources_not_nhra",
+    "cid": 91
+   },
+   {
+    "gen": "gen9",
+    "liters": 2.4,
+    "hp": 205,
+    "hp_basis": "SAE net",
+    "rpo": "K24Z7",
+    "name": "2.4 DOHC i-VTEC",
+    "trims": [
+     "Si coupe",
+     "Si sedan"
+    ],
+    "nhra": false,
+    "sources": [
+     {
+      "name": "Honda (hondanews.com) Civic Si Timeline and Milestones",
+      "url": "https://hondanews.com/en-US/honda-automobiles/releases/release-5d911be38cf30e49d54f6cb4520829b7-honda-civic-si-timeline-and-milestones",
+      "says": "K24Z7 205 hp 2014-2015"
+     },
+     {
+      "name": "Consumer Guide - 2012-15 Honda Civic (used)",
+      "url": "https://consumerguide.com/used/2012-15-honda-civic/",
+      "says": "2.4L Si 205 hp 2014-2015"
+     },
+     {
+      "name": "Kelley Blue Book - 2014 Honda Civic specs",
+      "url": "https://www.kbb.com/honda/civic/2014/specs",
+      "says": "Si Sedan 2.4 205 hp"
+     },
+     {
+      "name": "Wikipedia - Honda Civic (ninth generation)",
+      "url": "https://en.wikipedia.org/wiki/Honda_Civic_(ninth_generation)",
+      "says": "2014+ refresh 205 hp"
+     },
+     {
+      "name": "EPA fueleconomy.gov vehicle data",
+      "url": "https://www.fueleconomy.gov/feg/download.shtml",
+      "says": "2.4L 4-cyl Civic"
+     }
+    ],
+    "independent_sources": [
+     "Consumer Guide",
+     "EPA",
+     "Honda",
+     "Kelley Blue Book",
+     "Wikipedia"
+    ],
+    "note": "",
+    "status": "three_sources_not_nhra",
+    "cid": 144
+   }
+  ],
+  "2015": [
+   {
+    "gen": "gen9",
+    "liters": 1.8,
+    "hp": 143,
+    "hp_basis": "SAE net",
+    "rpo": "R18Z1",
+    "name": "1.8 SOHC i-VTEC",
+    "trims": [
+     "LX",
+     "SE (2015)",
+     "HF",
+     "EX",
+     "EX-L"
+    ],
+    "nhra": false,
+    "sources": [
+     {
+      "name": "Honda (hondanews.com) 2015 Civic Sedan Specifications & Features",
+      "url": "https://hondanews.com/en-US/honda-automobiles/releases/release-371514b891434858b7cbacd8f9f4e109-2015-civic-sedan-specifications-features",
+      "says": "LX/HF/SE/EX/EX-L 1798 cc 143 @ 6500 SAE net, MT and CVT"
+     },
+     {
+      "name": "Consumer Guide - 2012-15 Honda Civic (used)",
+      "url": "https://consumerguide.com/used/2012-15-honda-civic/",
+      "says": "1.8L 143 hp 2014-2015"
+     },
+     {
+      "name": "EPA fueleconomy.gov vehicle data",
+      "url": "https://www.fueleconomy.gov/feg/download.shtml",
+      "says": "1.8L 4-cyl Civic / Civic HF"
+     }
+    ],
+    "independent_sources": [
+     "Consumer Guide",
+     "EPA",
+     "Honda"
+    ],
+    "note": "Re-rated from 140 hp for 2014. Consumer Guide lists the HF at 140 hp throughout; Honda 2015 and KBB 2014 give HF 143. Wikipedia gives 140 for 2012-2015 without the 2014 change (not counted).",
+    "status": "three_sources_not_nhra",
+    "cid": 110
+   },
+   {
+    "gen": "gen9",
+    "liters": 1.8,
+    "hp": 110,
+    "hp_basis": "SAE net",
+    "rpo": "R18Z1 (CNG)",
+    "name": "1.8 CNG (Natural Gas)",
+    "trims": [
+     "Natural Gas sedan"
+    ],
+    "nhra": false,
+    "sources": [
+     {
+      "name": "Honda (hondanews.com) 2015 Civic Natural Gas Specifications & Features",
+      "url": "https://hondanews.com/en-US/honda-automobiles/releases/release-968847c34b6b41978e7076d1e8b0d6aa-2015-honda-civic-natural-gas-specifications-features",
+      "says": "110 @ 6500"
+     },
+     {
+      "name": "Consumer Guide - 2012-15 Honda Civic (used)",
+      "url": "https://consumerguide.com/used/2012-15-honda-civic/",
+      "says": "1.8L Natural Gas 110 hp 2012-2015"
+     },
+     {
+      "name": "Wikipedia - Honda Civic (ninth generation)",
+      "url": "https://en.wikipedia.org/wiki/Honda_Civic_(ninth_generation)",
+      "says": "R18Z1 natural gas 110 hp @ 6500"
+     },
+     {
+      "name": "EPA fueleconomy.gov vehicle data",
+      "url": "https://www.fueleconomy.gov/feg/download.shtml",
+      "says": "Civic Natural Gas 1.8L CNG"
+     }
+    ],
+    "independent_sources": [
+     "Consumer Guide",
+     "EPA",
+     "Honda",
+     "Wikipedia"
+    ],
+    "note": "",
+    "status": "three_sources_not_nhra",
+    "cid": 110
+   },
+   {
+    "gen": "gen9",
+    "liters": 1.5,
+    "hp": 110,
+    "hp_basis": "SAE net",
+    "rpo": "LEA (LEA-MF6)",
+    "name": "1.5 i-VTEC + IMA hybrid",
+    "trims": [
+     "Hybrid sedan"
+    ],
+    "nhra": false,
+    "sources": [
+     {
+      "name": "Honda (hondanews.com) 2015 Civic Hybrid Specifications & Features",
+      "url": "https://hondanews.com/en-US/honda-automobiles/releases/release-effec58ddd6f42d094e10221f4b2e60e-2015-honda-civic-hybrid-specifications-features",
+      "says": "110 hp combined @ 5500"
+     },
+     {
+      "name": "Consumer Guide - 2012-15 Honda Civic (used)",
+      "url": "https://consumerguide.com/used/2012-15-honda-civic/",
+      "says": "1.5L hybrid 110 hp combined 2012-2015"
+     },
+     {
+      "name": "Wikipedia - Honda Civic (ninth generation)",
+      "url": "https://en.wikipedia.org/wiki/Honda_Civic_(ninth_generation)",
+      "says": "LEA-MF6 1.5L (gives engine-only 90 hp)"
+     },
+     {
+      "name": "EPA fueleconomy.gov vehicle data",
+      "url": "https://www.fueleconomy.gov/feg/download.shtml",
+      "says": "Civic Hybrid 1.5L"
+     }
+    ],
+    "independent_sources": [
+     "Consumer Guide",
+     "EPA",
+     "Honda",
+     "Wikipedia"
+    ],
+    "note": "hp is combined system output; Wikipedia's 90 hp is engine only.",
+    "status": "three_sources_not_nhra",
+    "cid": 91
+   },
+   {
+    "gen": "gen9",
+    "liters": 2.4,
+    "hp": 205,
+    "hp_basis": "SAE net",
+    "rpo": "K24Z7",
+    "name": "2.4 DOHC i-VTEC",
+    "trims": [
+     "Si coupe",
+     "Si sedan"
+    ],
+    "nhra": false,
+    "sources": [
+     {
+      "name": "Honda (hondanews.com) Civic Si Timeline and Milestones",
+      "url": "https://hondanews.com/en-US/honda-automobiles/releases/release-5d911be38cf30e49d54f6cb4520829b7-honda-civic-si-timeline-and-milestones",
+      "says": "K24Z7 205 hp 2014-2015"
+     },
+     {
+      "name": "Honda (hondanews.com) 2015 Civic Si Specifications & Features",
+      "url": "https://hondanews.com/en-US/honda-automobiles/releases/release-f1bee6892c014e2582c6dfaf6461f989-2015-civic-si-specifications-features",
+      "says": "2354 cc 205 @ 7000 SAE net"
+     },
+     {
+      "name": "Consumer Guide - 2012-15 Honda Civic (used)",
+      "url": "https://consumerguide.com/used/2012-15-honda-civic/",
+      "says": "2.4L Si 205 hp 2014-2015"
+     },
+     {
+      "name": "Wikipedia - Honda Civic (ninth generation)",
+      "url": "https://en.wikipedia.org/wiki/Honda_Civic_(ninth_generation)",
+      "says": "2014+ refresh 205 hp"
+     },
+     {
+      "name": "EPA fueleconomy.gov vehicle data",
+      "url": "https://www.fueleconomy.gov/feg/download.shtml",
+      "says": "2.4L 4-cyl Civic"
+     }
+    ],
+    "independent_sources": [
+     "Consumer Guide",
+     "EPA",
+     "Honda",
+     "Wikipedia"
+    ],
+    "note": "",
+    "status": "three_sources_not_nhra",
+    "cid": 144
+   }
+  ],
+  "2016": [
+   {
+    "gen": "gen10",
+    "liters": 2.0,
+    "hp": 158,
+    "hp_basis": "SAE net",
+    "rpo": "K20C2",
+    "name": "2.0 DOHC i-VTEC",
+    "trims": [
+     "LX",
+     "EX",
+     "Sport (2019+)"
+    ],
+    "nhra": false,
+    "sources": [
+     {
+      "name": "Honda (hondanews.com) 2016 Civic Sedan Specifications & Features",
+      "url": "https://hondanews.com/en-US/honda-automobiles/releases/release-a0b13952fb564f87a2ff62a578cab50a-2016-honda-civic-sedan-specifications-features",
+      "says": "2.0 158 @ 6500"
+     },
+     {
+      "name": "Wikipedia - Honda Civic (tenth generation)",
+      "url": "https://en.wikipedia.org/wiki/Honda_Civic_(tenth_generation)",
+      "says": "K20C2 158 hp @ 6500, sedan/coupe 2016-2021"
+     },
+     {
+      "name": "EPA fueleconomy.gov vehicle data",
+      "url": "https://www.fueleconomy.gov/feg/download.shtml",
+      "says": "2.0L 4-cyl Civic 2Dr/4Dr"
+     }
+    ],
+    "independent_sources": [
+     "EPA",
+     "Honda",
+     "Wikipedia"
+    ],
+    "note": "Sedan and coupe only (coupe 2016-2020); not in hatchback.",
+    "status": "three_sources_not_nhra",
+    "cid": 122
+   },
+   {
+    "gen": "gen10",
+    "liters": 1.5,
+    "hp": 174,
+    "hp_basis": "SAE net",
+    "rpo": "L15B7",
+    "name": "1.5 DOHC turbo DI",
+    "trims": [
+     "EX-T",
+     "EX-L",
+     "Touring",
+     "hatch LX/EX/EX-L (2017+)"
+    ],
+    "nhra": false,
+    "sources": [
+     {
+      "name": "Honda (hondanews.com) 2016 Civic Sedan Specifications & Features",
+      "url": "https://hondanews.com/en-US/honda-automobiles/releases/release-a0b13952fb564f87a2ff62a578cab50a-2016-honda-civic-sedan-specifications-features",
+      "says": "1.5 turbo 174 @ 5500"
+     },
+     {
+      "name": "Wikipedia - Honda Civic (tenth generation)",
+      "url": "https://en.wikipedia.org/wiki/Honda_Civic_(tenth_generation)",
+      "says": "L15B7 1.5T 174 hp"
+     },
+     {
+      "name": "EPA fueleconomy.gov vehicle data",
+      "url": "https://www.fueleconomy.gov/feg/download.shtml",
+      "says": "1.5L turbo SIDI Civic"
+     }
+    ],
+    "independent_sources": [
+     "EPA",
+     "Honda",
+     "Wikipedia"
+    ],
+    "note": "Hatchback from 2017.",
+    "status": "three_sources_not_nhra",
+    "cid": 91
+   }
+  ],
+  "2017": [
+   {
+    "gen": "gen10",
+    "liters": 2.0,
+    "hp": 158,
+    "hp_basis": "SAE net",
+    "rpo": "K20C2",
+    "name": "2.0 DOHC i-VTEC",
+    "trims": [
+     "LX",
+     "EX",
+     "Sport (2019+)"
+    ],
+    "nhra": false,
+    "sources": [
+     {
+      "name": "Wikipedia - Honda Civic (tenth generation)",
+      "url": "https://en.wikipedia.org/wiki/Honda_Civic_(tenth_generation)",
+      "says": "K20C2 158 hp @ 6500, sedan/coupe 2016-2021"
+     },
+     {
+      "name": "EPA fueleconomy.gov vehicle data",
+      "url": "https://www.fueleconomy.gov/feg/download.shtml",
+      "says": "2.0L 4-cyl Civic 2Dr/4Dr"
+     }
+    ],
+    "independent_sources": [
+     "EPA",
+     "Wikipedia"
+    ],
+    "note": "Sedan and coupe only (coupe 2016-2020); not in hatchback.",
+    "status": "two_sources_agree",
+    "cid": 122
+   },
+   {
+    "gen": "gen10",
+    "liters": 1.5,
+    "hp": 174,
+    "hp_basis": "SAE net",
+    "rpo": "L15B7",
+    "name": "1.5 DOHC turbo DI",
+    "trims": [
+     "EX-T",
+     "EX-L",
+     "Touring",
+     "hatch LX/EX/EX-L (2017+)"
+    ],
+    "nhra": false,
+    "sources": [
+     {
+      "name": "Honda (hondanews.com) 2017 Civic Hatchback Press Kit",
+      "url": "https://hondanews.com/en-US/honda-automobiles/releases/release-088f15ac3f774ec5838c7d404f306f19-2017-honda-civic-hatchback-press-kit-overview",
+      "says": "hatch LX/EX/EX-L Navi 174 hp"
+     },
+     {
+      "name": "Wikipedia - Honda Civic (tenth generation)",
+      "url": "https://en.wikipedia.org/wiki/Honda_Civic_(tenth_generation)",
+      "says": "L15B7 1.5T 174 hp"
+     },
+     {
+      "name": "EPA fueleconomy.gov vehicle data",
+      "url": "https://www.fueleconomy.gov/feg/download.shtml",
+      "says": "1.5L turbo SIDI Civic"
+     }
+    ],
+    "independent_sources": [
+     "EPA",
+     "Honda",
+     "Wikipedia"
+    ],
+    "note": "Hatchback from 2017.",
+    "status": "three_sources_not_nhra",
+    "cid": 91
+   },
+   {
+    "gen": "gen10",
+    "liters": 1.5,
+    "hp": 180,
+    "hp_basis": "SAE net",
+    "rpo": "L15B7",
+    "name": "1.5 DOHC turbo DI (Sport tune)",
+    "trims": [
+     "hatch Sport",
+     "hatch Sport Touring"
+    ],
+    "nhra": false,
+    "sources": [
+     {
+      "name": "Honda (hondanews.com) 2017 Civic Hatchback Press Kit",
+      "url": "https://hondanews.com/en-US/honda-automobiles/releases/release-088f15ac3f774ec5838c7d404f306f19-2017-honda-civic-hatchback-press-kit-overview",
+      "says": "180 hp in Sport and Sport Touring hatch"
+     },
+     {
+      "name": "Motor1 - 2017 Honda Civic Hatchback first drive",
+      "url": "https://www.motor1.com/reviews/128464/2017-honda-civic-hatchback-first-drive-review/",
+      "says": "Sport hatch 180 hp; Sport Touring CVT also 180"
+     },
+     {
+      "name": "EPA fueleconomy.gov vehicle data",
+      "url": "https://www.fueleconomy.gov/feg/download.shtml",
+      "says": "Civic 5Dr / 5Dr Sport 1.5L turbo"
+     }
+    ],
+    "independent_sources": [
+     "EPA",
+     "Honda",
+     "Motor1"
+    ],
+    "note": "Center-exit exhaust, premium fuel. 2018-2019 rating carried over (no year-specific hp source fetched). KBB 2020 lists the Sport and Sport Touring hatch at 174 hp and the LX hatch with the 2.0 - both contradicted by Honda 2020 and EPA (no 2.0 hatch before 2022); KBB hatch data not used.",
+    "status": "three_sources_not_nhra",
+    "cid": 91
+   },
+   {
+    "gen": "gen10",
+    "liters": 1.5,
+    "hp": 205,
+    "hp_basis": "SAE net",
+    "rpo": "L15B7",
+    "name": "1.5 DOHC turbo DI (Si)",
+    "trims": [
+     "Si coupe",
+     "Si sedan"
+    ],
+    "nhra": false,
+    "sources": [
+     {
+      "name": "Honda (hondanews.com) Civic Si Timeline and Milestones",
+      "url": "https://hondanews.com/en-US/honda-automobiles/releases/release-5d911be38cf30e49d54f6cb4520829b7-honda-civic-si-timeline-and-milestones",
+      "says": "2017-2020 Si 1.5T (L15B7) 205 hp"
+     },
+     {
+      "name": "Wikipedia - Honda Civic (tenth generation)",
+      "url": "https://en.wikipedia.org/wiki/Honda_Civic_(tenth_generation)",
+      "says": "L15B7 205 hp Si"
+     },
+     {
+      "name": "EPA fueleconomy.gov vehicle data",
+      "url": "https://www.fueleconomy.gov/feg/download.shtml",
+      "says": "Civic Si 2Dr/4Dr 1.5L turbo"
+     }
+    ],
+    "independent_sources": [
+     "EPA",
+     "Honda",
+     "Wikipedia"
+    ],
+    "note": "No Si for 2016 or 2021.",
+    "status": "three_sources_not_nhra",
+    "cid": 91
+   },
+   {
+    "gen": "gen10",
+    "liters": 2.0,
+    "hp": 306,
+    "hp_basis": "SAE net",
+    "rpo": "K20C1",
+    "name": "2.0 DOHC VTEC turbo DI (Type R)",
+    "trims": [
+     "Type R hatch"
+    ],
+    "nhra": false,
+    "sources": [
+     {
+      "name": "Honda (hondanews.com) 2017 Civic Type R Press Kit",
+      "url": "https://hondanews.com/en-US/honda-automobiles/releases/release-acfe25287f7d481b93a0c0c020854e5e-honda-civic-type-r-overview",
+      "says": "306 hp @ 6500, 295 lb-ft"
+     },
+     {
+      "name": "EPA fueleconomy.gov vehicle data",
+      "url": "https://www.fueleconomy.gov/feg/download.shtml",
+      "says": "Civic 5Dr Type R 2.0L turbo"
+     }
+    ],
+    "independent_sources": [
+     "EPA",
+     "Honda"
+    ],
+    "note": "Wikipedia (10th gen) gives 315 hp for the 2017-2021 Type R, which is the 2023 FL5 figure; Honda and KBB give 306 (Wikipedia not counted).",
+    "status": "two_sources_agree",
+    "cid": 122
+   }
+  ],
+  "2018": [
+   {
+    "gen": "gen10",
+    "liters": 2.0,
+    "hp": 158,
+    "hp_basis": "SAE net",
+    "rpo": "K20C2",
+    "name": "2.0 DOHC i-VTEC",
+    "trims": [
+     "LX",
+     "EX",
+     "Sport (2019+)"
+    ],
+    "nhra": false,
+    "sources": [
+     {
+      "name": "Kelley Blue Book - 2018 Honda Civic specs",
+      "url": "https://www.kbb.com/honda/civic/2018/specs",
+      "says": "LX/EX 4-Cyl i-VTEC 2.0 158 hp"
+     },
+     {
+      "name": "Wikipedia - Honda Civic (tenth generation)",
+      "url": "https://en.wikipedia.org/wiki/Honda_Civic_(tenth_generation)",
+      "says": "K20C2 158 hp @ 6500, sedan/coupe 2016-2021"
+     },
+     {
+      "name": "EPA fueleconomy.gov vehicle data",
+      "url": "https://www.fueleconomy.gov/feg/download.shtml",
+      "says": "2.0L 4-cyl Civic 2Dr/4Dr"
+     }
+    ],
+    "independent_sources": [
+     "EPA",
+     "Kelley Blue Book",
+     "Wikipedia"
+    ],
+    "note": "Sedan and coupe only (coupe 2016-2020); not in hatchback.",
+    "status": "three_sources_not_nhra",
+    "cid": 122
+   },
+   {
+    "gen": "gen10",
+    "liters": 1.5,
+    "hp": 174,
+    "hp_basis": "SAE net",
+    "rpo": "L15B7",
+    "name": "1.5 DOHC turbo DI",
+    "trims": [
+     "EX-T",
+     "EX-L",
+     "Touring",
+     "hatch LX/EX/EX-L (2017+)"
+    ],
+    "nhra": false,
+    "sources": [
+     {
+      "name": "Kelley Blue Book - 2018 Honda Civic specs",
+      "url": "https://www.kbb.com/honda/civic/2018/specs",
+      "says": "EX-T/EX-L/Touring 1.5 turbo 174 hp"
+     },
+     {
+      "name": "Wikipedia - Honda Civic (tenth generation)",
+      "url": "https://en.wikipedia.org/wiki/Honda_Civic_(tenth_generation)",
+      "says": "L15B7 1.5T 174 hp"
+     },
+     {
+      "name": "EPA fueleconomy.gov vehicle data",
+      "url": "https://www.fueleconomy.gov/feg/download.shtml",
+      "says": "1.5L turbo SIDI Civic"
+     }
+    ],
+    "independent_sources": [
+     "EPA",
+     "Kelley Blue Book",
+     "Wikipedia"
+    ],
+    "note": "Hatchback from 2017.",
+    "status": "three_sources_not_nhra",
+    "cid": 91
+   },
+   {
+    "gen": "gen10",
+    "liters": 1.5,
+    "hp": 180,
+    "hp_basis": "SAE net",
+    "rpo": "L15B7",
+    "name": "1.5 DOHC turbo DI (Sport tune)",
+    "trims": [
+     "hatch Sport",
+     "hatch Sport Touring"
+    ],
+    "nhra": false,
+    "sources": [
+     {
+      "name": "EPA fueleconomy.gov vehicle data",
+      "url": "https://www.fueleconomy.gov/feg/download.shtml",
+      "says": "Civic 5Dr / 5Dr Sport 1.5L turbo"
+     }
+    ],
+    "independent_sources": [
+     "EPA"
+    ],
+    "note": "Center-exit exhaust, premium fuel. 2018-2019 rating carried over (no year-specific hp source fetched). KBB 2020 lists the Sport and Sport Touring hatch at 174 hp and the LX hatch with the 2.0 - both contradicted by Honda 2020 and EPA (no 2.0 hatch before 2022); KBB hatch data not used. Only one independent source located for this year; withhold or re-check.",
+    "status": "insufficient_sources",
+    "cid": 91
+   },
+   {
+    "gen": "gen10",
+    "liters": 1.5,
+    "hp": 205,
+    "hp_basis": "SAE net",
+    "rpo": "L15B7",
+    "name": "1.5 DOHC turbo DI (Si)",
+    "trims": [
+     "Si coupe",
+     "Si sedan"
+    ],
+    "nhra": false,
+    "sources": [
+     {
+      "name": "Honda (hondanews.com) Civic Si Timeline and Milestones",
+      "url": "https://hondanews.com/en-US/honda-automobiles/releases/release-5d911be38cf30e49d54f6cb4520829b7-honda-civic-si-timeline-and-milestones",
+      "says": "2017-2020 Si 1.5T (L15B7) 205 hp"
+     },
+     {
+      "name": "Kelley Blue Book - 2018 Honda Civic specs",
+      "url": "https://www.kbb.com/honda/civic/2018/specs",
+      "says": "Si Sedan 1.5 turbo 205 hp"
+     },
+     {
+      "name": "Wikipedia - Honda Civic (tenth generation)",
+      "url": "https://en.wikipedia.org/wiki/Honda_Civic_(tenth_generation)",
+      "says": "L15B7 205 hp Si"
+     },
+     {
+      "name": "EPA fueleconomy.gov vehicle data",
+      "url": "https://www.fueleconomy.gov/feg/download.shtml",
+      "says": "Civic Si 2Dr/4Dr 1.5L turbo"
+     }
+    ],
+    "independent_sources": [
+     "EPA",
+     "Honda",
+     "Kelley Blue Book",
+     "Wikipedia"
+    ],
+    "note": "No Si for 2016 or 2021.",
+    "status": "three_sources_not_nhra",
+    "cid": 91
+   },
+   {
+    "gen": "gen10",
+    "liters": 2.0,
+    "hp": 306,
+    "hp_basis": "SAE net",
+    "rpo": "K20C1",
+    "name": "2.0 DOHC VTEC turbo DI (Type R)",
+    "trims": [
+     "Type R hatch"
+    ],
+    "nhra": false,
+    "sources": [
+     {
+      "name": "EPA fueleconomy.gov vehicle data",
+      "url": "https://www.fueleconomy.gov/feg/download.shtml",
+      "says": "Civic 5Dr Type R 2.0L turbo"
+     }
+    ],
+    "independent_sources": [
+     "EPA"
+    ],
+    "note": "Wikipedia (10th gen) gives 315 hp for the 2017-2021 Type R, which is the 2023 FL5 figure; Honda and KBB give 306 (Wikipedia not counted). Only one independent source located for this year; withhold or re-check.",
+    "status": "insufficient_sources",
+    "cid": 122
+   }
+  ],
+  "2019": [
+   {
+    "gen": "gen10",
+    "liters": 2.0,
+    "hp": 158,
+    "hp_basis": "SAE net",
+    "rpo": "K20C2",
+    "name": "2.0 DOHC i-VTEC",
+    "trims": [
+     "LX",
+     "EX",
+     "Sport (2019+)"
+    ],
+    "nhra": false,
+    "sources": [
+     {
+      "name": "Wikipedia - Honda Civic (tenth generation)",
+      "url": "https://en.wikipedia.org/wiki/Honda_Civic_(tenth_generation)",
+      "says": "K20C2 158 hp @ 6500, sedan/coupe 2016-2021"
+     },
+     {
+      "name": "EPA fueleconomy.gov vehicle data",
+      "url": "https://www.fueleconomy.gov/feg/download.shtml",
+      "says": "2.0L 4-cyl Civic 2Dr/4Dr"
+     }
+    ],
+    "independent_sources": [
+     "EPA",
+     "Wikipedia"
+    ],
+    "note": "Sedan and coupe only (coupe 2016-2020); not in hatchback.",
+    "status": "two_sources_agree",
+    "cid": 122
+   },
+   {
+    "gen": "gen10",
+    "liters": 1.5,
+    "hp": 174,
+    "hp_basis": "SAE net",
+    "rpo": "L15B7",
+    "name": "1.5 DOHC turbo DI",
+    "trims": [
+     "EX-T",
+     "EX-L",
+     "Touring",
+     "hatch LX/EX/EX-L (2017+)"
+    ],
+    "nhra": false,
+    "sources": [
+     {
+      "name": "Wikipedia - Honda Civic (tenth generation)",
+      "url": "https://en.wikipedia.org/wiki/Honda_Civic_(tenth_generation)",
+      "says": "L15B7 1.5T 174 hp"
+     },
+     {
+      "name": "EPA fueleconomy.gov vehicle data",
+      "url": "https://www.fueleconomy.gov/feg/download.shtml",
+      "says": "1.5L turbo SIDI Civic"
+     }
+    ],
+    "independent_sources": [
+     "EPA",
+     "Wikipedia"
+    ],
+    "note": "Hatchback from 2017.",
+    "status": "two_sources_agree",
+    "cid": 91
+   },
+   {
+    "gen": "gen10",
+    "liters": 1.5,
+    "hp": 180,
+    "hp_basis": "SAE net",
+    "rpo": "L15B7",
+    "name": "1.5 DOHC turbo DI (Sport tune)",
+    "trims": [
+     "hatch Sport",
+     "hatch Sport Touring"
+    ],
+    "nhra": false,
+    "sources": [
+     {
+      "name": "EPA fueleconomy.gov vehicle data",
+      "url": "https://www.fueleconomy.gov/feg/download.shtml",
+      "says": "Civic 5Dr / 5Dr Sport 1.5L turbo"
+     }
+    ],
+    "independent_sources": [
+     "EPA"
+    ],
+    "note": "Center-exit exhaust, premium fuel. 2018-2019 rating carried over (no year-specific hp source fetched). KBB 2020 lists the Sport and Sport Touring hatch at 174 hp and the LX hatch with the 2.0 - both contradicted by Honda 2020 and EPA (no 2.0 hatch before 2022); KBB hatch data not used. Only one independent source located for this year; withhold or re-check.",
+    "status": "insufficient_sources",
+    "cid": 91
+   },
+   {
+    "gen": "gen10",
+    "liters": 1.5,
+    "hp": 205,
+    "hp_basis": "SAE net",
+    "rpo": "L15B7",
+    "name": "1.5 DOHC turbo DI (Si)",
+    "trims": [
+     "Si coupe",
+     "Si sedan"
+    ],
+    "nhra": false,
+    "sources": [
+     {
+      "name": "Honda (hondanews.com) Civic Si Timeline and Milestones",
+      "url": "https://hondanews.com/en-US/honda-automobiles/releases/release-5d911be38cf30e49d54f6cb4520829b7-honda-civic-si-timeline-and-milestones",
+      "says": "2017-2020 Si 1.5T (L15B7) 205 hp"
+     },
+     {
+      "name": "Wikipedia - Honda Civic (tenth generation)",
+      "url": "https://en.wikipedia.org/wiki/Honda_Civic_(tenth_generation)",
+      "says": "L15B7 205 hp Si"
+     },
+     {
+      "name": "EPA fueleconomy.gov vehicle data",
+      "url": "https://www.fueleconomy.gov/feg/download.shtml",
+      "says": "1.5L turbo Civic 2Dr/4Dr"
+     }
+    ],
+    "independent_sources": [
+     "EPA",
+     "Honda",
+     "Wikipedia"
+    ],
+    "note": "No Si for 2016 or 2021.",
+    "status": "three_sources_not_nhra",
+    "cid": 91
+   },
+   {
+    "gen": "gen10",
+    "liters": 2.0,
+    "hp": 306,
+    "hp_basis": "SAE net",
+    "rpo": "K20C1",
+    "name": "2.0 DOHC VTEC turbo DI (Type R)",
+    "trims": [
+     "Type R hatch"
+    ],
+    "nhra": false,
+    "sources": [
+     {
+      "name": "Kelley Blue Book - 2019 Honda Civic Type R specs",
+      "url": "https://www.kbb.com/honda/civic-type-r/2019/specs",
+      "says": "4-Cyl VTEC Turbo 2.0 306 @ 6500"
+     },
+     {
+      "name": "EPA fueleconomy.gov vehicle data",
+      "url": "https://www.fueleconomy.gov/feg/download.shtml",
+      "says": "Civic 5Dr Type R 2.0L turbo"
+     }
+    ],
+    "independent_sources": [
+     "EPA",
+     "Kelley Blue Book"
+    ],
+    "note": "Wikipedia (10th gen) gives 315 hp for the 2017-2021 Type R, which is the 2023 FL5 figure; Honda and KBB give 306 (Wikipedia not counted).",
+    "status": "two_sources_agree",
+    "cid": 122
+   }
+  ],
+  "2020": [
+   {
+    "gen": "gen10",
+    "liters": 2.0,
+    "hp": 158,
+    "hp_basis": "SAE net",
+    "rpo": "K20C2",
+    "name": "2.0 DOHC i-VTEC",
+    "trims": [
+     "LX",
+     "EX",
+     "Sport (2019+)"
+    ],
+    "nhra": false,
+    "sources": [
+     {
+      "name": "Kelley Blue Book - 2020 Honda Civic specs",
+      "url": "https://www.kbb.com/honda/civic/2020/specs",
+      "says": "LX/Sport sedan 2.0 158 hp"
+     },
+     {
+      "name": "Wikipedia - Honda Civic (tenth generation)",
+      "url": "https://en.wikipedia.org/wiki/Honda_Civic_(tenth_generation)",
+      "says": "K20C2 158 hp @ 6500, sedan/coupe 2016-2021"
+     },
+     {
+      "name": "EPA fueleconomy.gov vehicle data",
+      "url": "https://www.fueleconomy.gov/feg/download.shtml",
+      "says": "2.0L 4-cyl Civic 2Dr/4Dr"
+     }
+    ],
+    "independent_sources": [
+     "EPA",
+     "Kelley Blue Book",
+     "Wikipedia"
+    ],
+    "note": "Sedan and coupe only (coupe 2016-2020); not in hatchback.",
+    "status": "three_sources_not_nhra",
+    "cid": 122
+   },
+   {
+    "gen": "gen10",
+    "liters": 1.5,
+    "hp": 174,
+    "hp_basis": "SAE net",
+    "rpo": "L15B7",
+    "name": "1.5 DOHC turbo DI",
+    "trims": [
+     "EX-T",
+     "EX-L",
+     "Touring",
+     "hatch LX/EX/EX-L (2017+)"
+    ],
+    "nhra": false,
+    "sources": [
+     {
+      "name": "Kelley Blue Book - 2020 Honda Civic specs",
+      "url": "https://www.kbb.com/honda/civic/2020/specs",
+      "says": "EX/EX-L/Touring sedan 1.5 turbo 174 hp"
+     },
+     {
+      "name": "Wikipedia - Honda Civic (tenth generation)",
+      "url": "https://en.wikipedia.org/wiki/Honda_Civic_(tenth_generation)",
+      "says": "L15B7 1.5T 174 hp"
+     },
+     {
+      "name": "EPA fueleconomy.gov vehicle data",
+      "url": "https://www.fueleconomy.gov/feg/download.shtml",
+      "says": "1.5L turbo SIDI Civic"
+     }
+    ],
+    "independent_sources": [
+     "EPA",
+     "Kelley Blue Book",
+     "Wikipedia"
+    ],
+    "note": "Hatchback from 2017.",
+    "status": "three_sources_not_nhra",
+    "cid": 91
+   },
+   {
+    "gen": "gen10",
+    "liters": 1.5,
+    "hp": 180,
+    "hp_basis": "SAE net",
+    "rpo": "L15B7",
+    "name": "1.5 DOHC turbo DI (Sport tune)",
+    "trims": [
+     "hatch Sport",
+     "hatch Sport Touring"
+    ],
+    "nhra": false,
+    "sources": [
+     {
+      "name": "Honda (hondanews.com) 2020 Civic Hatchback Specifications & Features",
+      "url": "https://hondanews.com/en-US/honda-automobiles/releases/release-abdd33728c044217ba85db3c233b2483-2020-civic-hatchback-specifications-features",
+      "says": "Sport 180 @ 5500 (6MT) / 180 @ 6000 (CVT)"
+     },
+     {
+      "name": "EPA fueleconomy.gov vehicle data",
+      "url": "https://www.fueleconomy.gov/feg/download.shtml",
+      "says": "Civic 5Dr / 5Dr Sport 1.5L turbo"
+     }
+    ],
+    "independent_sources": [
+     "EPA",
+     "Honda"
+    ],
+    "note": "Center-exit exhaust, premium fuel. 2018-2019 rating carried over (no year-specific hp source fetched). KBB 2020 lists the Sport and Sport Touring hatch at 174 hp and the LX hatch with the 2.0 - both contradicted by Honda 2020 and EPA (no 2.0 hatch before 2022); KBB hatch data not used.",
+    "status": "two_sources_agree",
+    "cid": 91
+   },
+   {
+    "gen": "gen10",
+    "liters": 1.5,
+    "hp": 205,
+    "hp_basis": "SAE net",
+    "rpo": "L15B7",
+    "name": "1.5 DOHC turbo DI (Si)",
+    "trims": [
+     "Si coupe",
+     "Si sedan"
+    ],
+    "nhra": false,
+    "sources": [
+     {
+      "name": "Honda (hondanews.com) Civic Si Timeline and Milestones",
+      "url": "https://hondanews.com/en-US/honda-automobiles/releases/release-5d911be38cf30e49d54f6cb4520829b7-honda-civic-si-timeline-and-milestones",
+      "says": "2017-2020 Si 1.5T (L15B7) 205 hp"
+     },
+     {
+      "name": "Kelley Blue Book - 2020 Honda Civic specs",
+      "url": "https://www.kbb.com/honda/civic/2020/specs",
+      "says": "Si Sedan 1.5 turbo 205 hp"
+     },
+     {
+      "name": "Wikipedia - Honda Civic (tenth generation)",
+      "url": "https://en.wikipedia.org/wiki/Honda_Civic_(tenth_generation)",
+      "says": "L15B7 205 hp Si"
+     },
+     {
+      "name": "EPA fueleconomy.gov vehicle data",
+      "url": "https://www.fueleconomy.gov/feg/download.shtml",
+      "says": "1.5L turbo Civic 2Dr/4Dr"
+     }
+    ],
+    "independent_sources": [
+     "EPA",
+     "Honda",
+     "Kelley Blue Book",
+     "Wikipedia"
+    ],
+    "note": "No Si for 2016 or 2021.",
+    "status": "three_sources_not_nhra",
+    "cid": 91
+   },
+   {
+    "gen": "gen10",
+    "liters": 2.0,
+    "hp": 306,
+    "hp_basis": "SAE net",
+    "rpo": "K20C1",
+    "name": "2.0 DOHC VTEC turbo DI (Type R)",
+    "trims": [
+     "Type R hatch"
+    ],
+    "nhra": false,
+    "sources": [
+     {
+      "name": "Honda (hondanews.com) 2020 Civic Type R Specifications & Features",
+      "url": "https://hondanews.com/en-US/honda-automobiles/releases/release-9349200e0db74014eece042d0a003399-2020-civic-type-r-specifications-features",
+      "says": "2020 Type R spec sheet (306 hp)"
+     },
+     {
+      "name": "EPA fueleconomy.gov vehicle data",
+      "url": "https://www.fueleconomy.gov/feg/download.shtml",
+      "says": "Civic 5Dr Type R 2.0L turbo"
+     }
+    ],
+    "independent_sources": [
+     "EPA",
+     "Honda"
+    ],
+    "note": "Wikipedia (10th gen) gives 315 hp for the 2017-2021 Type R, which is the 2023 FL5 figure; Honda and KBB give 306 (Wikipedia not counted).",
+    "status": "two_sources_agree",
+    "cid": 122
+   }
+  ],
+  "2021": [
+   {
+    "gen": "gen10",
+    "liters": 2.0,
+    "hp": 158,
+    "hp_basis": "SAE net",
+    "rpo": "K20C2",
+    "name": "2.0 DOHC i-VTEC",
+    "trims": [
+     "LX",
+     "EX",
+     "Sport (2019+)"
+    ],
+    "nhra": false,
+    "sources": [
+     {
+      "name": "Wikipedia - Honda Civic (tenth generation)",
+      "url": "https://en.wikipedia.org/wiki/Honda_Civic_(tenth_generation)",
+      "says": "K20C2 158 hp @ 6500, sedan/coupe 2016-2021"
+     },
+     {
+      "name": "EPA fueleconomy.gov vehicle data",
+      "url": "https://www.fueleconomy.gov/feg/download.shtml",
+      "says": "2.0L 4-cyl Civic 2Dr/4Dr"
+     }
+    ],
+    "independent_sources": [
+     "EPA",
+     "Wikipedia"
+    ],
+    "note": "Sedan and coupe only (coupe 2016-2020); not in hatchback.",
+    "status": "two_sources_agree",
+    "cid": 122
+   },
+   {
+    "gen": "gen10",
+    "liters": 1.5,
+    "hp": 174,
+    "hp_basis": "SAE net",
+    "rpo": "L15B7",
+    "name": "1.5 DOHC turbo DI",
+    "trims": [
+     "EX-T",
+     "EX-L",
+     "Touring",
+     "hatch LX/EX/EX-L (2017+)"
+    ],
+    "nhra": false,
+    "sources": [
+     {
+      "name": "Wikipedia - Honda Civic (tenth generation)",
+      "url": "https://en.wikipedia.org/wiki/Honda_Civic_(tenth_generation)",
+      "says": "L15B7 1.5T 174 hp"
+     },
+     {
+      "name": "EPA fueleconomy.gov vehicle data",
+      "url": "https://www.fueleconomy.gov/feg/download.shtml",
+      "says": "1.5L turbo SIDI Civic"
+     }
+    ],
+    "independent_sources": [
+     "EPA",
+     "Wikipedia"
+    ],
+    "note": "Hatchback from 2017.",
+    "status": "two_sources_agree",
+    "cid": 91
+   },
+   {
+    "gen": "gen10",
+    "liters": 1.5,
+    "hp": 180,
+    "hp_basis": "SAE net",
+    "rpo": "L15B7",
+    "name": "1.5 DOHC turbo DI (Sport tune)",
+    "trims": [
+     "hatch Sport",
+     "hatch Sport Touring"
+    ],
+    "nhra": false,
+    "sources": [
+     {
+      "name": "Honda (hondanews.com) 2021 Civic Hatchback Specifications & Features",
+      "url": "https://hondanews.com/en-US/honda-automobiles/releases/release-0105593f978caa92e9791e015d0300cc-2021-civic-hatchback-specifications-features",
+      "says": "Sport 180 hp"
+     },
+     {
+      "name": "EPA fueleconomy.gov vehicle data",
+      "url": "https://www.fueleconomy.gov/feg/download.shtml",
+      "says": "Civic 5Dr / 5Dr Sport 1.5L turbo"
+     }
+    ],
+    "independent_sources": [
+     "EPA",
+     "Honda"
+    ],
+    "note": "Center-exit exhaust, premium fuel. 2018-2019 rating carried over (no year-specific hp source fetched). KBB 2020 lists the Sport and Sport Touring hatch at 174 hp and the LX hatch with the 2.0 - both contradicted by Honda 2020 and EPA (no 2.0 hatch before 2022); KBB hatch data not used.",
+    "status": "two_sources_agree",
+    "cid": 91
+   },
+   {
+    "gen": "gen10",
+    "liters": 2.0,
+    "hp": 306,
+    "hp_basis": "SAE net",
+    "rpo": "K20C1",
+    "name": "2.0 DOHC VTEC turbo DI (Type R)",
+    "trims": [
+     "Type R hatch"
+    ],
+    "nhra": false,
+    "sources": [
+     {
+      "name": "Kelley Blue Book - 2021 Honda Civic Type R specs",
+      "url": "https://www.kbb.com/honda/civic-type-r/2021/specs",
+      "says": "Type R 2.0 turbo 306 @ 6500"
+     },
+     {
+      "name": "EPA fueleconomy.gov vehicle data",
+      "url": "https://www.fueleconomy.gov/feg/download.shtml",
+      "says": "Civic 5Dr Type R 2.0L turbo"
+     }
+    ],
+    "independent_sources": [
+     "EPA",
+     "Kelley Blue Book"
+    ],
+    "note": "Wikipedia (10th gen) gives 315 hp for the 2017-2021 Type R, which is the 2023 FL5 figure; Honda and KBB give 306 (Wikipedia not counted).",
+    "status": "two_sources_agree",
+    "cid": 122
+   }
+  ],
+  "2022": [
+   {
+    "gen": "gen11",
+    "liters": 2.0,
+    "hp": 158,
+    "hp_basis": "SAE net",
+    "rpo": "K20C2",
+    "name": "2.0 DOHC i-VTEC",
+    "trims": [
+     "LX",
+     "Sport"
+    ],
+    "nhra": false,
+    "sources": [
+     {
+      "name": "Kelley Blue Book - 2022 Honda Civic specs",
+      "url": "https://www.kbb.com/honda/civic/2022/specs",
+      "says": "LX/Sport 2.0 158 @ 6500"
+     },
+     {
+      "name": "Wikipedia - Honda Civic (eleventh generation)",
+      "url": "https://en.wikipedia.org/wiki/Honda_Civic_(eleventh_generation)",
+      "says": "K20C2 158 hp LX/Sport 2022-2024"
+     },
+     {
+      "name": "EPA fueleconomy.gov vehicle data",
+      "url": "https://www.fueleconomy.gov/feg/download.shtml",
+      "says": "2.0L 4-cyl Civic 4Dr/5Dr"
+     }
+    ],
+    "independent_sources": [
+     "EPA",
+     "Kelley Blue Book",
+     "Wikipedia"
+    ],
+    "note": "",
+    "status": "three_sources_not_nhra",
+    "cid": 122
+   },
+   {
+    "gen": "gen11",
+    "liters": 1.5,
+    "hp": 180,
+    "hp_basis": "SAE net",
+    "rpo": "L15CA",
+    "name": "1.5 DOHC VTEC turbo DI",
+    "trims": [
+     "EX",
+     "Touring",
+     "hatch EX-L",
+     "hatch Sport Touring"
+    ],
+    "nhra": false,
+    "sources": [
+     {
+      "name": "Kelley Blue Book - 2022 Honda Civic specs",
+      "url": "https://www.kbb.com/honda/civic/2022/specs",
+      "says": "EX/Touring 1.5 turbo 180 @ 6000"
+     },
+     {
+      "name": "Wikipedia - Honda Civic (eleventh generation)",
+      "url": "https://en.wikipedia.org/wiki/Honda_Civic_(eleventh_generation)",
+      "says": "1.5 VTEC Turbo 180 hp (code given as L15C)"
+     },
+     {
+      "name": "EPA fueleconomy.gov vehicle data",
+      "url": "https://www.fueleconomy.gov/feg/download.shtml",
+      "says": "1.5L turbo SIDI Civic 4Dr/5Dr"
+     }
+    ],
+    "independent_sources": [
+     "EPA",
+     "Kelley Blue Book",
+     "Wikipedia"
+    ],
+    "note": "Wikipedia codes the non-Si turbo 'L15C' and the Si 'L15CA'. Non-Si turbo dropped for 2025 (replaced by the hybrid).",
+    "status": "three_sources_not_nhra",
+    "cid": 91
+   },
+   {
+    "gen": "gen11",
+    "liters": 1.5,
+    "hp": 200,
+    "hp_basis": "SAE net",
+    "rpo": "L15CA",
+    "name": "1.5 DOHC VTEC turbo DI (Si)",
+    "trims": [
+     "Si sedan"
+    ],
+    "nhra": false,
+    "sources": [
+     {
+      "name": "Honda (hondanews.com) Civic Si Timeline and Milestones",
+      "url": "https://hondanews.com/en-US/honda-automobiles/releases/release-5d911be38cf30e49d54f6cb4520829b7-honda-civic-si-timeline-and-milestones",
+      "says": "2022-present Si 1.5T 200 hp"
+     },
+     {
+      "name": "Honda (hondanews.com) 2022 Civic Si Specifications & Features",
+      "url": "https://hondanews.com/en-US/honda-automobiles/releases/release-bc2bc74408027960dba69cafec0b7e38-2022-civic-si-specifications-features",
+      "says": "1498 cc turbo 200 @ 6000 SAE net"
+     },
+     {
+      "name": "Kelley Blue Book - 2022 Honda Civic specs",
+      "url": "https://www.kbb.com/honda/civic/2022/specs",
+      "says": "Si 1.5 turbo 200 @ 6000"
+     },
+     {
+      "name": "Wikipedia - Honda Civic (eleventh generation)",
+      "url": "https://en.wikipedia.org/wiki/Honda_Civic_(eleventh_generation)",
+      "says": "L15CA 200 hp Si sedan"
+     },
+     {
+      "name": "EPA fueleconomy.gov vehicle data",
+      "url": "https://www.fueleconomy.gov/feg/download.shtml",
+      "says": "1.5L turbo SIDI Civic 4Dr"
+     }
+    ],
+    "independent_sources": [
+     "EPA",
+     "Honda",
+     "Kelley Blue Book",
+     "Wikipedia"
+    ],
+    "note": "",
+    "status": "three_sources_not_nhra",
+    "cid": 91
+   }
+  ],
+  "2023": [
+   {
+    "gen": "gen11",
+    "liters": 2.0,
+    "hp": 158,
+    "hp_basis": "SAE net",
+    "rpo": "K20C2",
+    "name": "2.0 DOHC i-VTEC",
+    "trims": [
+     "LX",
+     "Sport"
+    ],
+    "nhra": false,
+    "sources": [
+     {
+      "name": "Honda (hondanews.com) 2023 Civic Sedan Specifications & Features",
+      "url": "https://hondanews.com/en-US/honda-automobiles/releases/release-a3be1e0e9f10694e8e84ab729c005385-2023-honda-civic-sedan-specifications-features",
+      "says": "LX/Sport 1996 cc 158 @ 6500"
+     },
+     {
+      "name": "Kelley Blue Book - 2023 Honda Civic specs",
+      "url": "https://www.kbb.com/honda/civic/2023/specs",
+      "says": "LX/Sport 2.0 158 @ 6500"
+     },
+     {
+      "name": "Wikipedia - Honda Civic (eleventh generation)",
+      "url": "https://en.wikipedia.org/wiki/Honda_Civic_(eleventh_generation)",
+      "says": "K20C2 158 hp LX/Sport 2022-2024"
+     },
+     {
+      "name": "EPA fueleconomy.gov vehicle data",
+      "url": "https://www.fueleconomy.gov/feg/download.shtml",
+      "says": "2.0L 4-cyl Civic 4Dr/5Dr"
+     }
+    ],
+    "independent_sources": [
+     "EPA",
+     "Honda",
+     "Kelley Blue Book",
+     "Wikipedia"
+    ],
+    "note": "",
+    "status": "three_sources_not_nhra",
+    "cid": 122
+   },
+   {
+    "gen": "gen11",
+    "liters": 1.5,
+    "hp": 180,
+    "hp_basis": "SAE net",
+    "rpo": "L15CA",
+    "name": "1.5 DOHC VTEC turbo DI",
+    "trims": [
+     "EX",
+     "Touring",
+     "hatch EX-L",
+     "hatch Sport Touring"
+    ],
+    "nhra": false,
+    "sources": [
+     {
+      "name": "Honda (hondanews.com) 2023 Civic Sedan Specifications & Features",
+      "url": "https://hondanews.com/en-US/honda-automobiles/releases/release-a3be1e0e9f10694e8e84ab729c005385-2023-honda-civic-sedan-specifications-features",
+      "says": "EX/Touring 1498 cc turbo 180 @ 6000"
+     },
+     {
+      "name": "Kelley Blue Book - 2023 Honda Civic specs",
+      "url": "https://www.kbb.com/honda/civic/2023/specs",
+      "says": "EX/Touring 1.5 turbo 180 @ 6000"
+     },
+     {
+      "name": "Wikipedia - Honda Civic (eleventh generation)",
+      "url": "https://en.wikipedia.org/wiki/Honda_Civic_(eleventh_generation)",
+      "says": "1.5 VTEC Turbo 180 hp (code given as L15C)"
+     },
+     {
+      "name": "EPA fueleconomy.gov vehicle data",
+      "url": "https://www.fueleconomy.gov/feg/download.shtml",
+      "says": "1.5L turbo SIDI Civic 4Dr/5Dr"
+     }
+    ],
+    "independent_sources": [
+     "EPA",
+     "Honda",
+     "Kelley Blue Book",
+     "Wikipedia"
+    ],
+    "note": "Wikipedia codes the non-Si turbo 'L15C' and the Si 'L15CA'. Non-Si turbo dropped for 2025 (replaced by the hybrid).",
+    "status": "three_sources_not_nhra",
+    "cid": 91
+   },
+   {
+    "gen": "gen11",
+    "liters": 1.5,
+    "hp": 200,
+    "hp_basis": "SAE net",
+    "rpo": "L15CA",
+    "name": "1.5 DOHC VTEC turbo DI (Si)",
+    "trims": [
+     "Si sedan"
+    ],
+    "nhra": false,
+    "sources": [
+     {
+      "name": "Honda (hondanews.com) Civic Si Timeline and Milestones",
+      "url": "https://hondanews.com/en-US/honda-automobiles/releases/release-5d911be38cf30e49d54f6cb4520829b7-honda-civic-si-timeline-and-milestones",
+      "says": "2022-present Si 1.5T 200 hp"
+     },
+     {
+      "name": "Kelley Blue Book - 2023 Honda Civic specs",
+      "url": "https://www.kbb.com/honda/civic/2023/specs",
+      "says": "Si Sedan 1.5 turbo 200 @ 6000"
+     },
+     {
+      "name": "Wikipedia - Honda Civic (eleventh generation)",
+      "url": "https://en.wikipedia.org/wiki/Honda_Civic_(eleventh_generation)",
+      "says": "L15CA 200 hp Si sedan"
+     },
+     {
+      "name": "EPA fueleconomy.gov vehicle data",
+      "url": "https://www.fueleconomy.gov/feg/download.shtml",
+      "says": "1.5L turbo SIDI Civic 4Dr"
+     }
+    ],
+    "independent_sources": [
+     "EPA",
+     "Honda",
+     "Kelley Blue Book",
+     "Wikipedia"
+    ],
+    "note": "",
+    "status": "three_sources_not_nhra",
+    "cid": 91
+   },
+   {
+    "gen": "gen11",
+    "liters": 2.0,
+    "hp": 315,
+    "hp_basis": "SAE net",
+    "rpo": "K20C1",
+    "name": "2.0 DOHC VTEC turbo DI (Type R)",
+    "trims": [
+     "Type R hatch"
+    ],
+    "nhra": false,
+    "sources": [
+     {
+      "name": "Honda (hondanews.com) 2023 Civic Type R Specifications & Features",
+      "url": "https://hondanews.com/en-US/honda-automobiles/releases/release-1503019bd8a757ea08267d79440f3aae-2023-honda-civic-type-r-specifications-features",
+      "says": "1996 cc turbo 315 @ 6500 SAE net"
+     },
+     {
+      "name": "EPA fueleconomy.gov vehicle data",
+      "url": "https://www.fueleconomy.gov/feg/download.shtml",
+      "says": "Civic 5Dr 2.0L turbo SIDI"
+     }
+    ],
+    "independent_sources": [
+     "EPA",
+     "Honda"
+    ],
+    "note": "No Type R for 2022. Wikipedia gives 330 PS (325 hp), a JDM/EU rating; US SAE net is 315 (Wikipedia not counted). Honda also publishes 2024 and 2026 Type R spec sheets.",
+    "status": "two_sources_agree",
+    "cid": 122
+   }
+  ],
+  "2024": [
+   {
+    "gen": "gen11",
+    "liters": 2.0,
+    "hp": 158,
+    "hp_basis": "SAE net",
+    "rpo": "K20C2",
+    "name": "2.0 DOHC i-VTEC",
+    "trims": [
+     "LX",
+     "Sport"
+    ],
+    "nhra": false,
+    "sources": [
+     {
+      "name": "Wikipedia - Honda Civic (eleventh generation)",
+      "url": "https://en.wikipedia.org/wiki/Honda_Civic_(eleventh_generation)",
+      "says": "K20C2 158 hp LX/Sport 2022-2024"
+     },
+     {
+      "name": "EPA fueleconomy.gov vehicle data",
+      "url": "https://www.fueleconomy.gov/feg/download.shtml",
+      "says": "2.0L 4-cyl Civic 4Dr/5Dr"
+     }
+    ],
+    "independent_sources": [
+     "EPA",
+     "Wikipedia"
+    ],
+    "note": "",
+    "status": "two_sources_agree",
+    "cid": 122
+   },
+   {
+    "gen": "gen11",
+    "liters": 1.5,
+    "hp": 180,
+    "hp_basis": "SAE net",
+    "rpo": "L15CA",
+    "name": "1.5 DOHC VTEC turbo DI",
+    "trims": [
+     "EX",
+     "Touring",
+     "hatch EX-L",
+     "hatch Sport Touring"
+    ],
+    "nhra": false,
+    "sources": [
+     {
+      "name": "Wikipedia - Honda Civic (eleventh generation)",
+      "url": "https://en.wikipedia.org/wiki/Honda_Civic_(eleventh_generation)",
+      "says": "1.5 VTEC Turbo 180 hp (code given as L15C)"
+     },
+     {
+      "name": "EPA fueleconomy.gov vehicle data",
+      "url": "https://www.fueleconomy.gov/feg/download.shtml",
+      "says": "1.5L turbo SIDI Civic 4Dr/5Dr"
+     }
+    ],
+    "independent_sources": [
+     "EPA",
+     "Wikipedia"
+    ],
+    "note": "Wikipedia codes the non-Si turbo 'L15C' and the Si 'L15CA'. Non-Si turbo dropped for 2025 (replaced by the hybrid).",
+    "status": "two_sources_agree",
+    "cid": 91
+   },
+   {
+    "gen": "gen11",
+    "liters": 1.5,
+    "hp": 200,
+    "hp_basis": "SAE net",
+    "rpo": "L15CA",
+    "name": "1.5 DOHC VTEC turbo DI (Si)",
+    "trims": [
+     "Si sedan"
+    ],
+    "nhra": false,
+    "sources": [
+     {
+      "name": "Honda (hondanews.com) Civic Si Timeline and Milestones",
+      "url": "https://hondanews.com/en-US/honda-automobiles/releases/release-5d911be38cf30e49d54f6cb4520829b7-honda-civic-si-timeline-and-milestones",
+      "says": "2022-present Si 1.5T 200 hp"
+     },
+     {
+      "name": "Wikipedia - Honda Civic (eleventh generation)",
+      "url": "https://en.wikipedia.org/wiki/Honda_Civic_(eleventh_generation)",
+      "says": "L15CA 200 hp Si sedan"
+     },
+     {
+      "name": "EPA fueleconomy.gov vehicle data",
+      "url": "https://www.fueleconomy.gov/feg/download.shtml",
+      "says": "1.5L turbo SIDI Civic 4Dr"
+     }
+    ],
+    "independent_sources": [
+     "EPA",
+     "Honda",
+     "Wikipedia"
+    ],
+    "note": "",
+    "status": "three_sources_not_nhra",
+    "cid": 91
+   },
+   {
+    "gen": "gen11",
+    "liters": 2.0,
+    "hp": 315,
+    "hp_basis": "SAE net",
+    "rpo": "K20C1",
+    "name": "2.0 DOHC VTEC turbo DI (Type R)",
+    "trims": [
+     "Type R hatch"
+    ],
+    "nhra": false,
+    "sources": [
+     {
+      "name": "Kelley Blue Book - 2024 Honda Civic Type R specs",
+      "url": "https://www.kbb.com/honda/civic-type-r/2024/specs",
+      "says": "4-Cyl VTEC Turbo 2.0 315 @ 6500"
+     },
+     {
+      "name": "EPA fueleconomy.gov vehicle data",
+      "url": "https://www.fueleconomy.gov/feg/download.shtml",
+      "says": "Civic 5Dr 2.0L turbo SIDI"
+     }
+    ],
+    "independent_sources": [
+     "EPA",
+     "Kelley Blue Book"
+    ],
+    "note": "No Type R for 2022. Wikipedia gives 330 PS (325 hp), a JDM/EU rating; US SAE net is 315 (Wikipedia not counted). Honda also publishes 2024 and 2026 Type R spec sheets.",
+    "status": "two_sources_agree",
+    "cid": 122
+   }
+  ],
+  "2025": [
+   {
+    "gen": "gen11",
+    "liters": 1.5,
+    "hp": 200,
+    "hp_basis": "SAE net",
+    "rpo": "L15CA",
+    "name": "1.5 DOHC VTEC turbo DI (Si)",
+    "trims": [
+     "Si sedan"
+    ],
+    "nhra": false,
+    "sources": [
+     {
+      "name": "Honda (hondanews.com) Civic Si Timeline and Milestones",
+      "url": "https://hondanews.com/en-US/honda-automobiles/releases/release-5d911be38cf30e49d54f6cb4520829b7-honda-civic-si-timeline-and-milestones",
+      "says": "2022-present Si 1.5T 200 hp"
+     },
+     {
+      "name": "Kelley Blue Book - 2025 Honda Civic specs",
+      "url": "https://www.kbb.com/honda/civic/2025/specs",
+      "says": "Si 1.5 turbo 200 @ 6000"
+     },
+     {
+      "name": "Wikipedia - Honda Civic (eleventh generation)",
+      "url": "https://en.wikipedia.org/wiki/Honda_Civic_(eleventh_generation)",
+      "says": "L15CA 200 hp Si sedan"
+     },
+     {
+      "name": "EPA fueleconomy.gov vehicle data",
+      "url": "https://www.fueleconomy.gov/feg/download.shtml",
+      "says": "1.5L turbo SIDI Civic 4Dr"
+     }
+    ],
+    "independent_sources": [
+     "EPA",
+     "Honda",
+     "Kelley Blue Book",
+     "Wikipedia"
+    ],
+    "note": "",
+    "status": "three_sources_not_nhra",
+    "cid": 91
+   },
+   {
+    "gen": "gen11",
+    "liters": 2.0,
+    "hp": 315,
+    "hp_basis": "SAE net",
+    "rpo": "K20C1",
+    "name": "2.0 DOHC VTEC turbo DI (Type R)",
+    "trims": [
+     "Type R hatch"
+    ],
+    "nhra": false,
+    "sources": [
+     {
+      "name": "EPA fueleconomy.gov vehicle data",
+      "url": "https://www.fueleconomy.gov/feg/download.shtml",
+      "says": "Civic 5Dr 2.0L turbo SIDI"
+     }
+    ],
+    "independent_sources": [
+     "EPA"
+    ],
+    "note": "No Type R for 2022. Wikipedia gives 330 PS (325 hp), a JDM/EU rating; US SAE net is 315 (Wikipedia not counted). Honda also publishes 2024 and 2026 Type R spec sheets. Only one independent source located for this year; withhold or re-check.",
+    "status": "insufficient_sources",
+    "cid": 122
+   },
+   {
+    "gen": "gen11",
+    "liters": 2.0,
+    "hp": 150,
+    "hp_basis": "SAE net",
+    "rpo": "K20C9",
+    "name": "2.0 DOHC Atkinson DI",
+    "trims": [
+     "LX",
+     "Sport"
+    ],
+    "nhra": false,
+    "sources": [
+     {
+      "name": "Honda (hondanews.com) 2025 Civic Sedan Specifications & Features",
+      "url": "https://hondanews.com/en-US/honda-automobiles/releases/release-c28e8d1efb94e520fef21ff3f800cb30-2025-honda-civic-sedan-specifications-features",
+      "says": "LX/Sport 1993 cc 150 @ 6400 SAE net"
+     },
+     {
+      "name": "Kelley Blue Book - 2025 Honda Civic specs",
+      "url": "https://www.kbb.com/honda/civic/2025/specs",
+      "says": "LX/Sport 2.0 150 @ 6400"
+     },
+     {
+      "name": "Wikipedia - Honda Civic (eleventh generation)",
+      "url": "https://en.wikipedia.org/wiki/Honda_Civic_(eleventh_generation)",
+      "says": "K20C9 150 hp 2025+"
+     },
+     {
+      "name": "EPA fueleconomy.gov vehicle data",
+      "url": "https://www.fueleconomy.gov/feg/download.shtml",
+      "says": "2.0L SIDI Civic 4Dr/5Dr"
+     }
+    ],
+    "independent_sources": [
+     "EPA",
+     "Honda",
+     "Kelley Blue Book",
+     "Wikipedia"
+    ],
+    "note": "",
+    "status": "three_sources_not_nhra",
+    "cid": 122
+   },
+   {
+    "gen": "gen11",
+    "liters": 2.0,
+    "hp": 200,
+    "hp_basis": "SAE net",
+    "rpo": "LFC2",
+    "name": "2.0 Atkinson DI two-motor hybrid (e:HEV)",
+    "trims": [
+     "Sport Hybrid",
+     "Sport Touring Hybrid"
+    ],
+    "nhra": false,
+    "sources": [
+     {
+      "name": "Honda (hondanews.com) 2025 Civic Sedan Specifications & Features",
+      "url": "https://hondanews.com/en-US/honda-automobiles/releases/release-c28e8d1efb94e520fef21ff3f800cb30-2025-honda-civic-sedan-specifications-features",
+      "says": "engine 141 @ 6000 + motor 181 hp; total system 200 hp"
+     },
+     {
+      "name": "Kelley Blue Book - 2025 Honda Civic Hybrid specs",
+      "url": "https://www.kbb.com/honda/civic-hybrid/2025/specs",
+      "says": "Hybrid 2.0 141 @ 6000 (engine-only figure)"
+     },
+     {
+      "name": "Wikipedia - Honda Civic (eleventh generation)",
+      "url": "https://en.wikipedia.org/wiki/Honda_Civic_(eleventh_generation)",
+      "says": "LFC2 hybrid 200 hp combined"
+     },
+     {
+      "name": "EPA fueleconomy.gov vehicle data",
+      "url": "https://www.fueleconomy.gov/feg/download.shtml",
+      "says": "2.0L SIDI Hybrid Civic 4Dr/5Dr"
+     }
+    ],
+    "independent_sources": [
+     "EPA",
+     "Honda",
+     "Kelley Blue Book",
+     "Wikipedia"
+    ],
+    "note": "hp is combined system output (engine alone 141 hp SAE net per Honda; KBB lists the 141). Wikipedia's component figures (152 hp engine / 184 hp motor) do not match Honda's US sheet. Code LFC2 from Wikipedia only.",
+    "status": "three_sources_not_nhra",
+    "cid": 122
+   }
+  ],
+  "2026": [
+   {
+    "gen": "gen11",
+    "liters": 1.5,
+    "hp": 200,
+    "hp_basis": "SAE net",
+    "rpo": "L15CA",
+    "name": "1.5 DOHC VTEC turbo DI (Si)",
+    "trims": [
+     "Si sedan"
+    ],
+    "nhra": false,
+    "sources": [
+     {
+      "name": "Honda (hondanews.com) Civic Si Timeline and Milestones",
+      "url": "https://hondanews.com/en-US/honda-automobiles/releases/release-5d911be38cf30e49d54f6cb4520829b7-honda-civic-si-timeline-and-milestones",
+      "says": "2022-present Si 1.5T 200 hp"
+     },
+     {
+      "name": "Kelley Blue Book - 2026 Honda Civic specs",
+      "url": "https://www.kbb.com/honda/civic/2026/specs",
+      "says": "Si 1.5 turbo 200 @ 6000"
+     },
+     {
+      "name": "Wikipedia - Honda Civic (eleventh generation)",
+      "url": "https://en.wikipedia.org/wiki/Honda_Civic_(eleventh_generation)",
+      "says": "L15CA 200 hp Si sedan"
+     },
+     {
+      "name": "EPA fueleconomy.gov vehicle data",
+      "url": "https://www.fueleconomy.gov/feg/download.shtml",
+      "says": "1.5L turbo SIDI Civic 4Dr"
+     }
+    ],
+    "independent_sources": [
+     "EPA",
+     "Honda",
+     "Kelley Blue Book",
+     "Wikipedia"
+    ],
+    "note": "",
+    "status": "three_sources_not_nhra",
+    "cid": 91
+   },
+   {
+    "gen": "gen11",
+    "liters": 2.0,
+    "hp": 315,
+    "hp_basis": "SAE net",
+    "rpo": "K20C1",
+    "name": "2.0 DOHC VTEC turbo DI (Type R)",
+    "trims": [
+     "Type R hatch"
+    ],
+    "nhra": false,
+    "sources": [
+     {
+      "name": "Honda (hondanews.com) 2026 Civic Type R Specifications & Features",
+      "url": "https://hondanews.com/en-US/honda-automobiles/releases/release-80046da63cbf9f2582c8895ecb00c4b6-2026-honda-civic-type-r-specifications-features",
+      "says": "1996 cc 315 @ 6500 SAE net"
+     },
+     {
+      "name": "Kelley Blue Book - 2026 Honda Civic Type R specs",
+      "url": "https://www.kbb.com/honda/civic-type-r/2026/specs",
+      "says": "Type R 2.0 turbo 315 @ 6500"
+     },
+     {
+      "name": "EPA fueleconomy.gov vehicle data",
+      "url": "https://www.fueleconomy.gov/feg/download.shtml",
+      "says": "Civic 5Dr 2.0L turbo SIDI"
+     }
+    ],
+    "independent_sources": [
+     "EPA",
+     "Honda",
+     "Kelley Blue Book"
+    ],
+    "note": "No Type R for 2022. Wikipedia gives 330 PS (325 hp), a JDM/EU rating; US SAE net is 315 (Wikipedia not counted). Honda also publishes 2024 and 2026 Type R spec sheets.",
+    "status": "three_sources_not_nhra",
+    "cid": 122
+   },
+   {
+    "gen": "gen11",
+    "liters": 2.0,
+    "hp": 150,
+    "hp_basis": "SAE net",
+    "rpo": "K20C9",
+    "name": "2.0 DOHC Atkinson DI",
+    "trims": [
+     "LX",
+     "Sport"
+    ],
+    "nhra": false,
+    "sources": [
+     {
+      "name": "Honda (hondanews.com) 2026 Civic Sedan Specifications & Features",
+      "url": "https://hondanews.com/en-US/honda-automobiles/releases/release-395467bf3b280929feeb74845f0060f5-2026-honda-civic-sedan-specifications-features",
+      "says": "150 @ 6400"
+     },
+     {
+      "name": "Kelley Blue Book - 2026 Honda Civic specs",
+      "url": "https://www.kbb.com/honda/civic/2026/specs",
+      "says": "LX/Sport 2.0 150 @ 6400"
+     },
+     {
+      "name": "Wikipedia - Honda Civic (eleventh generation)",
+      "url": "https://en.wikipedia.org/wiki/Honda_Civic_(eleventh_generation)",
+      "says": "K20C9 150 hp 2025+"
+     },
+     {
+      "name": "EPA fueleconomy.gov vehicle data",
+      "url": "https://www.fueleconomy.gov/feg/download.shtml",
+      "says": "2.0L SIDI Civic 4Dr/5Dr"
+     }
+    ],
+    "independent_sources": [
+     "EPA",
+     "Honda",
+     "Kelley Blue Book",
+     "Wikipedia"
+    ],
+    "note": "",
+    "status": "three_sources_not_nhra",
+    "cid": 122
+   },
+   {
+    "gen": "gen11",
+    "liters": 2.0,
+    "hp": 200,
+    "hp_basis": "SAE net",
+    "rpo": "LFC2",
+    "name": "2.0 Atkinson DI two-motor hybrid (e:HEV)",
+    "trims": [
+     "Sport Hybrid",
+     "Sport Touring Hybrid"
+    ],
+    "nhra": false,
+    "sources": [
+     {
+      "name": "Honda (hondanews.com) 2026 Civic Sedan Specifications & Features",
+      "url": "https://hondanews.com/en-US/honda-automobiles/releases/release-395467bf3b280929feeb74845f0060f5-2026-honda-civic-sedan-specifications-features",
+      "says": "engine 141, motor 181, system 200"
+     },
+     {
+      "name": "Wikipedia - Honda Civic (eleventh generation)",
+      "url": "https://en.wikipedia.org/wiki/Honda_Civic_(eleventh_generation)",
+      "says": "LFC2 hybrid 200 hp combined"
+     },
+     {
+      "name": "EPA fueleconomy.gov vehicle data",
+      "url": "https://www.fueleconomy.gov/feg/download.shtml",
+      "says": "2.0L SIDI Hybrid Civic 4Dr/5Dr"
+     }
+    ],
+    "independent_sources": [
+     "EPA",
+     "Honda",
+     "Wikipedia"
+    ],
+    "note": "hp is combined system output (engine alone 141 hp SAE net per Honda; KBB lists the 141). Wikipedia's component figures (152 hp engine / 184 hp motor) do not match Honda's US sheet. Code LFC2 from Wikipedia only.",
+    "status": "three_sources_not_nhra",
+    "cid": 122
+   }
+  ]
+ },
+ "source_index": [
+  {
+   "name": "Honda (hondanews.com) 2003 Civic Coupe Specifications",
+   "url": "https://hondanews.com/en-US/releases/release-a0c0c91d714a2d01592fa3004c34c6c3-2003-honda-civic-coupe-specifications",
+   "type": "manufacturer"
+  },
+  {
+   "name": "Honda (hondanews.com) 2004 Civic Coupe Specifications",
+   "url": "https://hondanews.com/en-US/releases/release-d856581840da86e0c1e592004c34c4cc-2004-honda-civic-coupe-specifications",
+   "type": "manufacturer"
+  },
+  {
+   "name": "Honda (hondanews.com) 2005 Civic Sedan Specifications",
+   "url": "https://hondanews.com/en-US/releases/release-cccb943295af0aec9e25a7004c34c373-2005-honda-civic-sedan-specifications",
+   "type": "manufacturer"
+  },
+  {
+   "name": "Honda (hondanews.com) 2004 Civic Hybrid Specifications",
+   "url": "https://hondanews.com/en-US/releases/release-f793f7689c6a44628d079c004c34c4ca-2004-honda-civic-hybrid-specifications",
+   "type": "manufacturer"
+  },
+  {
+   "name": "Honda (hondanews.com) Civic Si Timeline and Milestones",
+   "url": "https://hondanews.com/en-US/honda-automobiles/releases/release-5d911be38cf30e49d54f6cb4520829b7-honda-civic-si-timeline-and-milestones",
+   "type": "manufacturer"
+  },
+  {
+   "name": "Honda (hondanews.com) 2006 Civic Sedan and Civic Hybrid Specifications",
+   "url": "https://hondanews.com/en-US/honda-automobiles/releases/release-591334b5ff2cd7fdfabb17004c34c1b5-2006-honda-civic-sedan-and-civic-hybrid-specifications",
+   "type": "manufacturer"
+  },
+  {
+   "name": "Honda (hondanews.com) 2012 Civic Powertrains",
+   "url": "https://hondanews.com/en-US/releases/2012-honda-civic-powertrains",
+   "type": "manufacturer"
+  },
+  {
+   "name": "Honda (hondanews.com) 2015 Civic Sedan Specifications & Features",
+   "url": "https://hondanews.com/en-US/honda-automobiles/releases/release-371514b891434858b7cbacd8f9f4e109-2015-civic-sedan-specifications-features",
+   "type": "manufacturer"
+  },
+  {
+   "name": "Honda (hondanews.com) 2015 Civic Si Specifications & Features",
+   "url": "https://hondanews.com/en-US/honda-automobiles/releases/release-f1bee6892c014e2582c6dfaf6461f989-2015-civic-si-specifications-features",
+   "type": "manufacturer"
+  },
+  {
+   "name": "Honda (hondanews.com) 2015 Civic Natural Gas Specifications & Features",
+   "url": "https://hondanews.com/en-US/honda-automobiles/releases/release-968847c34b6b41978e7076d1e8b0d6aa-2015-honda-civic-natural-gas-specifications-features",
+   "type": "manufacturer"
+  },
+  {
+   "name": "Honda (hondanews.com) 2015 Civic Hybrid Specifications & Features",
+   "url": "https://hondanews.com/en-US/honda-automobiles/releases/release-effec58ddd6f42d094e10221f4b2e60e-2015-honda-civic-hybrid-specifications-features",
+   "type": "manufacturer"
+  },
+  {
+   "name": "Honda (hondanews.com) 2016 Civic Sedan Specifications & Features",
+   "url": "https://hondanews.com/en-US/honda-automobiles/releases/release-a0b13952fb564f87a2ff62a578cab50a-2016-honda-civic-sedan-specifications-features",
+   "type": "manufacturer"
+  },
+  {
+   "name": "Honda (hondanews.com) 2017 Civic Hatchback Press Kit",
+   "url": "https://hondanews.com/en-US/honda-automobiles/releases/release-088f15ac3f774ec5838c7d404f306f19-2017-honda-civic-hatchback-press-kit-overview",
+   "type": "manufacturer"
+  },
+  {
+   "name": "Honda (hondanews.com) 2017 Civic Type R Press Kit",
+   "url": "https://hondanews.com/en-US/honda-automobiles/releases/release-acfe25287f7d481b93a0c0c020854e5e-honda-civic-type-r-overview",
+   "type": "manufacturer"
+  },
+  {
+   "name": "Honda (hondanews.com) 2022 Civic Si Specifications & Features",
+   "url": "https://hondanews.com/en-US/honda-automobiles/releases/release-bc2bc74408027960dba69cafec0b7e38-2022-civic-si-specifications-features",
+   "type": "manufacturer"
+  },
+  {
+   "name": "Honda (hondanews.com) 2023 Civic Sedan Specifications & Features",
+   "url": "https://hondanews.com/en-US/honda-automobiles/releases/release-a3be1e0e9f10694e8e84ab729c005385-2023-honda-civic-sedan-specifications-features",
+   "type": "manufacturer"
+  },
+  {
+   "name": "Honda (hondanews.com) 2023 Civic Type R Specifications & Features",
+   "url": "https://hondanews.com/en-US/honda-automobiles/releases/release-1503019bd8a757ea08267d79440f3aae-2023-honda-civic-type-r-specifications-features",
+   "type": "manufacturer"
+  },
+  {
+   "name": "Honda (hondanews.com) 2025 Civic Sedan Specifications & Features",
+   "url": "https://hondanews.com/en-US/honda-automobiles/releases/release-c28e8d1efb94e520fef21ff3f800cb30-2025-honda-civic-sedan-specifications-features",
+   "type": "manufacturer"
+  },
+  {
+   "name": "Honda (hondanews.com) 2026 Civic Sedan Specifications & Features",
+   "url": "https://hondanews.com/en-US/honda-automobiles/releases/release-395467bf3b280929feeb74845f0060f5-2026-honda-civic-sedan-specifications-features",
+   "type": "manufacturer"
+  },
+  {
+   "name": "Wikipedia - Honda Civic (seventh generation)",
+   "url": "https://en.wikipedia.org/wiki/Honda_Civic_(seventh_generation)",
+   "type": "wikipedia"
+  },
+  {
+   "name": "Wikipedia - Honda Civic (eighth generation)",
+   "url": "https://en.wikipedia.org/wiki/Honda_Civic_(eighth_generation)",
+   "type": "wikipedia"
+  },
+  {
+   "name": "Wikipedia - Honda Civic (ninth generation)",
+   "url": "https://en.wikipedia.org/wiki/Honda_Civic_(ninth_generation)",
+   "type": "wikipedia"
+  },
+  {
+   "name": "Wikipedia - Honda Civic (tenth generation)",
+   "url": "https://en.wikipedia.org/wiki/Honda_Civic_(tenth_generation)",
+   "type": "wikipedia"
+  },
+  {
+   "name": "Wikipedia - Honda Civic (eleventh generation)",
+   "url": "https://en.wikipedia.org/wiki/Honda_Civic_(eleventh_generation)",
+   "type": "wikipedia"
+  },
+  {
+   "name": "Consumer Guide - 2001-05 Honda Civic (used)",
+   "url": "https://consumerguide.com/used/2001-05-honda-civic/",
+   "type": "publication"
+  },
+  {
+   "name": "Consumer Guide - 2006-11 Honda Civic (used)",
+   "url": "https://consumerguide.com/used/2006-11-honda-civic/",
+   "type": "publication"
+  },
+  {
+   "name": "Consumer Guide - 2012-15 Honda Civic (used)",
+   "url": "https://consumerguide.com/used/2012-15-honda-civic/",
+   "type": "publication"
+  },
+  {
+   "name": "Kelley Blue Book - 2003 Honda Civic specs",
+   "url": "https://www.kbb.com/honda/civic/2003/specs",
+   "type": "publication"
+  },
+  {
+   "name": "Kelley Blue Book - 2004 Honda Civic specs",
+   "url": "https://www.kbb.com/honda/civic/2004/specs",
+   "type": "publication"
+  },
+  {
+   "name": "Kelley Blue Book - 2008 Honda Civic specs",
+   "url": "https://www.kbb.com/honda/civic/2008/specs",
+   "type": "publication"
+  },
+  {
+   "name": "Kelley Blue Book - 2012 Honda Civic specs",
+   "url": "https://www.kbb.com/honda/civic/2012/specs",
+   "type": "publication"
+  },
+  {
+   "name": "Kelley Blue Book - 2014 Honda Civic specs",
+   "url": "https://www.kbb.com/honda/civic/2014/specs",
+   "type": "publication"
+  },
+  {
+   "name": "Kelley Blue Book - 2018 Honda Civic specs",
+   "url": "https://www.kbb.com/honda/civic/2018/specs",
+   "type": "publication"
+  },
+  {
+   "name": "Kelley Blue Book - 2019 Honda Civic Type R specs",
+   "url": "https://www.kbb.com/honda/civic-type-r/2019/specs",
+   "type": "publication"
+  },
+  {
+   "name": "Kelley Blue Book - 2023 Honda Civic specs",
+   "url": "https://www.kbb.com/honda/civic/2023/specs",
+   "type": "publication"
+  },
+  {
+   "name": "Kelley Blue Book - 2024 Honda Civic Type R specs",
+   "url": "https://www.kbb.com/honda/civic-type-r/2024/specs",
+   "type": "publication"
+  },
+  {
+   "name": "Kelley Blue Book - 2025 Honda Civic specs",
+   "url": "https://www.kbb.com/honda/civic/2025/specs",
+   "type": "publication"
+  },
+  {
+   "name": "Kelley Blue Book - 2025 Honda Civic Hybrid specs",
+   "url": "https://www.kbb.com/honda/civic-hybrid/2025/specs",
+   "type": "publication"
+  },
+  {
+   "name": "Motor1 - 2017 Honda Civic Hatchback first drive",
+   "url": "https://www.motor1.com/reviews/128464/2017-honda-civic-hatchback-first-drive-review/",
+   "type": "publication"
+  },
+  {
+   "name": "Honda (hondanews.com) 2020 Civic Hatchback Specifications & Features",
+   "url": "https://hondanews.com/en-US/honda-automobiles/releases/release-abdd33728c044217ba85db3c233b2483-2020-civic-hatchback-specifications-features",
+   "type": "manufacturer"
+  },
+  {
+   "name": "Honda (hondanews.com) 2021 Civic Hatchback Specifications & Features",
+   "url": "https://hondanews.com/en-US/honda-automobiles/releases/release-0105593f978caa92e9791e015d0300cc-2021-civic-hatchback-specifications-features",
+   "type": "manufacturer"
+  },
+  {
+   "name": "Honda (hondanews.com) 2020 Civic Type R Specifications & Features",
+   "url": "https://hondanews.com/en-US/honda-automobiles/releases/release-9349200e0db74014eece042d0a003399-2020-civic-type-r-specifications-features",
+   "type": "manufacturer"
+  },
+  {
+   "name": "Honda (hondanews.com) 2026 Civic Type R Specifications & Features",
+   "url": "https://hondanews.com/en-US/honda-automobiles/releases/release-80046da63cbf9f2582c8895ecb00c4b6-2026-honda-civic-type-r-specifications-features",
+   "type": "manufacturer"
+  },
+  {
+   "name": "Kelley Blue Book - 2020 Honda Civic specs",
+   "url": "https://www.kbb.com/honda/civic/2020/specs",
+   "type": "publication"
+  },
+  {
+   "name": "Kelley Blue Book - 2021 Honda Civic Type R specs",
+   "url": "https://www.kbb.com/honda/civic-type-r/2021/specs",
+   "type": "publication"
+  },
+  {
+   "name": "Kelley Blue Book - 2022 Honda Civic specs",
+   "url": "https://www.kbb.com/honda/civic/2022/specs",
+   "type": "publication"
+  },
+  {
+   "name": "Kelley Blue Book - 2026 Honda Civic specs",
+   "url": "https://www.kbb.com/honda/civic/2026/specs",
+   "type": "publication"
+  },
+  {
+   "name": "Kelley Blue Book - 2026 Honda Civic Type R specs",
+   "url": "https://www.kbb.com/honda/civic-type-r/2026/specs",
+   "type": "publication"
+  },
+  {
+   "name": "EPA fueleconomy.gov vehicle data",
+   "url": "https://www.fueleconomy.gov/feg/download.shtml",
+   "type": "government"
+  }
+ ]
+}

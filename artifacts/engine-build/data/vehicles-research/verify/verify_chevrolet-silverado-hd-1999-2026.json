@@ -1,0 +1,3414 @@
+{
+ "vehicle": "chevrolet-silverado-hd-1999-2026",
+ "scope": "Chevrolet Silverado 2500 / 2500HD / 3500 / 3500HD pickups (GMC Sierra HD shares engines); 4500+ excluded",
+ "years": {
+  "1999": [
+   {
+    "gen": "gmt800",
+    "cid": 325,
+    "liters": 5.3,
+    "hp": 270,
+    "hp_basis": "SAE net",
+    "rpo": "LM7",
+    "name": "5.3L / 325 V8",
+    "common_name": "Vortec 5300",
+    "trims": [
+     "Silverado 2500 (light-duty 3/4-ton, under 8,600 lb GVWR)",
+     "2WD and 4WD"
+    ],
+    "nhra": false,
+    "sources": [
+     {
+      "name": "GM Canada media - 1999 Chevrolet Silverado (archived)",
+      "url": "https://web.archive.org/web/2005/http://media.gm.com:80/division/canada/english/products/chevy_truck/archives/1999Silverado.html",
+      "says": "Vortec 5300 270 hp @ 5000; engine list covers 1500 and 2500"
+     },
+     {
+      "name": "Kelley Blue Book 1999 Chevrolet silverado 2500 extended cab",
+      "url": "https://www.kbb.com/chevrolet/silverado-2500-extended-cab/1999/",
+      "says": "available engines include V8, 5.3 Liter"
+     },
+     {
+      "name": "EPA fueleconomy.gov vehicle data",
+      "url": "https://www.fueleconomy.gov/feg/download.shtml",
+      "says": "1999: 5.3 L 8-cyl, Silverado 2500 2WD"
+     },
+     {
+      "name": "Wikipedia - Chevrolet Silverado generation articles / Duramax V8 / C/K (one source)",
+      "url": "https://en.wikipedia.org/wiki/Chevrolet_Silverado",
+      "says": "LM7 5.3 270 hp (1999)"
+     }
+    ],
+    "independent_sources": 4,
+    "status": "three_sources_not_nhra",
+    "note": "Light-duty GMT800 2500 only; the 8,600 lb GVWR 2500 got the 6.0 as standard. Rated 270 hp 1999, 285 hp 2000."
+   },
+   {
+    "gen": "gmt800",
+    "cid": 364,
+    "liters": 6.0,
+    "hp": 300,
+    "hp_basis": "SAE net",
+    "rpo": "LQ4",
+    "name": "6.0L / 364 V8",
+    "common_name": "Vortec 6000",
+    "trims": [
+     "Silverado 2500 (light-duty 3/4-ton)",
+     "2WD and 4WD"
+    ],
+    "nhra": false,
+    "sources": [
+     {
+      "name": "GM Canada media - 1999 Chevrolet Silverado (archived)",
+      "url": "https://web.archive.org/web/2005/http://media.gm.com:80/division/canada/english/products/chevy_truck/archives/1999Silverado.html",
+      "says": "Vortec 6000 300 hp; only available on 3/4-ton (2500) models"
+     },
+     {
+      "name": "Kelley Blue Book 1999 Chevrolet silverado 2500 extended cab",
+      "url": "https://www.kbb.com/chevrolet/silverado-2500-extended-cab/1999/",
+      "says": "available engines include V8, 6.0 Liter; 300 @ 4800"
+     },
+     {
+      "name": "EPA fueleconomy.gov vehicle data",
+      "url": "https://www.fueleconomy.gov/feg/download.shtml",
+      "says": "1999: 6.0 L 8-cyl, Silverado 2500 2WD"
+     },
+     {
+      "name": "Wikipedia - Chevrolet Silverado generation articles / Duramax V8 / C/K (one source)",
+      "url": "https://en.wikipedia.org/wiki/Chevrolet_Silverado",
+      "says": "Vortec 6000 LQ4 300 hp, 1999-2006 HD"
+     }
+    ],
+    "independent_sources": 4,
+    "status": "three_sources_not_nhra",
+    "note": "1999-2000: only the GMT800 light-duty 2500 was new; heavy 2500/3500 stayed on GMT400 C/K (gen 'gmt400' rows). GM 2000 sheet gives 300 hp @ 4800, 2001+ sheets @ 4400."
+   },
+   {
+    "gen": "gmt400",
+    "cid": 350,
+    "liters": 5.7,
+    "hp": 255,
+    "hp_basis": "SAE net",
+    "rpo": "L31",
+    "name": "5.7L / 350 V8",
+    "common_name": "Vortec 5700",
+    "trims": [
+     "C/K 2500 HD and 3500 (Silverado trim)",
+     "2WD and 4WD"
+    ],
+    "nhra": false,
+    "sources": [
+     {
+      "name": "Kelley Blue Book 1999 Chevrolet 2500 crew cab",
+      "url": "https://www.kbb.com/chevrolet/2500-crew-cab/1999/",
+      "says": "V8, 5.7 Liter; 255 @ 4600"
+     },
+     {
+      "name": "Kelley Blue Book 1999 Chevrolet 3500 crew cab",
+      "url": "https://www.kbb.com/chevrolet/3500-crew-cab/1999/",
+      "says": "V8, 5.7 Liter"
+     },
+     {
+      "name": "Wikipedia - Chevrolet Silverado generation articles / Duramax V8 / C/K (one source)",
+      "url": "https://en.wikipedia.org/wiki/Chevrolet_Silverado",
+      "says": "L31 255 hp, through 2000 (C/K fourth generation article)"
+     }
+    ],
+    "independent_sources": 2,
+    "status": "two_sources_agree",
+    "note": "GMT400 C/K 2500/3500 heavy-duty carried over for 1999 (Silverado was a trim on them). Drop these rows if the page treats them as C/K (chevrolet-ck-1988-1998)."
+   },
+   {
+    "gen": "gmt400",
+    "cid": 454,
+    "liters": 7.4,
+    "hp": 290,
+    "hp_basis": "SAE net",
+    "rpo": "L29",
+    "name": "7.4L / 454 V8",
+    "common_name": "Vortec 7400",
+    "trims": [
+     "C/K 2500 HD and 3500 (Silverado trim)",
+     "2WD and 4WD"
+    ],
+    "nhra": false,
+    "sources": [
+     {
+      "name": "Kelley Blue Book 1999 Chevrolet 2500 crew cab",
+      "url": "https://www.kbb.com/chevrolet/2500-crew-cab/1999/",
+      "says": "V8, 454/7.4 Liter; 290 @ 4000 (3500)"
+     },
+     {
+      "name": "Kelley Blue Book 1999 Chevrolet 3500 crew cab",
+      "url": "https://www.kbb.com/chevrolet/3500-crew-cab/1999/",
+      "says": "V8, 454/7.4 Liter"
+     },
+     {
+      "name": "Wikipedia - Chevrolet Silverado generation articles / Duramax V8 / C/K (one source)",
+      "url": "https://en.wikipedia.org/wiki/Chevrolet_Silverado",
+      "says": "L29 290 hp, through 2000 (C/K fourth generation article)"
+     }
+    ],
+    "independent_sources": 2,
+    "status": "two_sources_agree",
+    "note": "GMT400 C/K 2500/3500 heavy-duty carried over for 1999 (Silverado was a trim on them). Drop these rows if the page treats them as C/K (chevrolet-ck-1988-1998)."
+   },
+   {
+    "gen": "gmt400",
+    "cid": 395,
+    "liters": 6.5,
+    "hp": 195,
+    "hp_basis": "SAE net",
+    "rpo": "L65",
+    "name": "6.5L / 395 turbo-diesel V8",
+    "common_name": "6.5 Turbo Diesel",
+    "trims": [
+     "C/K 2500 HD and 3500 (Silverado trim)",
+     "2WD and 4WD"
+    ],
+    "nhra": false,
+    "sources": [
+     {
+      "name": "Kelley Blue Book 1999 Chevrolet 2500 crew cab",
+      "url": "https://www.kbb.com/chevrolet/2500-crew-cab/1999/",
+      "says": "V8, Turbo Dsl/Diesel, 6.5L"
+     },
+     {
+      "name": "Kelley Blue Book 1999 Chevrolet 3500 crew cab",
+      "url": "https://www.kbb.com/chevrolet/3500-crew-cab/1999/",
+      "says": "V8, Turbo Dsl/Diesel, 6.5L"
+     },
+     {
+      "name": "Wikipedia - Chevrolet Silverado generation articles / Duramax V8 / C/K (one source)",
+      "url": "https://en.wikipedia.org/wiki/Chevrolet_Silverado",
+      "says": "L65 195 hp, through 2000 (C/K fourth generation article)"
+     }
+    ],
+    "independent_sources": 2,
+    "status": "two_sources_agree",
+    "note": "GMT400 C/K 2500/3500 heavy-duty carried over for 1999 (Silverado was a trim on them). Drop these rows if the page treats them as C/K (chevrolet-ck-1988-1998). 6.5 L65 torque 420 lb-ft manual / 430 auto."
+   }
+  ],
+  "2000": [
+   {
+    "gen": "gmt800",
+    "cid": 325,
+    "liters": 5.3,
+    "hp": 285,
+    "hp_basis": "SAE net",
+    "rpo": "LM7",
+    "name": "5.3L / 325 V8",
+    "common_name": "Vortec 5300",
+    "trims": [
+     "Silverado 2500 (light-duty 3/4-ton, under 8,600 lb GVWR)",
+     "2WD and 4WD"
+    ],
+    "nhra": false,
+    "sources": [
+     {
+      "name": "GM media - 2000 Silverado specifications (archived)",
+      "url": "https://web.archive.org/web/2005/http://media.gm.com:80/division/chevrolet/products/archive_prod_info/00chevy/00silverado/silver_specs.htm",
+      "says": "Vortec 5300 285 hp; 2500 standard on models under 8,600 lb GVWR"
+     },
+     {
+      "name": "Kelley Blue Book 2000 Chevrolet silverado 2500 extended cab",
+      "url": "https://www.kbb.com/chevrolet/silverado-2500-extended-cab/2000/",
+      "says": "available engines include V8, 5.3 Liter"
+     },
+     {
+      "name": "EPA fueleconomy.gov vehicle data",
+      "url": "https://www.fueleconomy.gov/feg/download.shtml",
+      "says": "2000: 5.3 L 8-cyl, Silverado 2500 2WD"
+     },
+     {
+      "name": "Wikipedia - Chevrolet Silverado generation articles / Duramax V8 / C/K (one source)",
+      "url": "https://en.wikipedia.org/wiki/Chevrolet_Silverado",
+      "says": "LM7 5.3 285 hp (2000)"
+     }
+    ],
+    "independent_sources": 4,
+    "status": "three_sources_not_nhra",
+    "note": "Light-duty GMT800 2500 only; the 8,600 lb GVWR 2500 got the 6.0 as standard. Rated 270 hp 1999, 285 hp 2000."
+   },
+   {
+    "gen": "gmt800",
+    "cid": 364,
+    "liters": 6.0,
+    "hp": 300,
+    "hp_basis": "SAE net",
+    "rpo": "LQ4",
+    "name": "6.0L / 364 V8",
+    "common_name": "Vortec 6000",
+    "trims": [
+     "Silverado 2500 (light-duty 3/4-ton)",
+     "2WD and 4WD"
+    ],
+    "nhra": false,
+    "sources": [
+     {
+      "name": "GM media - 2000 Silverado specifications (archived)",
+      "url": "https://web.archive.org/web/2005/http://media.gm.com:80/division/chevrolet/products/archive_prod_info/00chevy/00silverado/silver_specs.htm",
+      "says": "Vortec 6000 300 hp @ 4800; 2500 optional, standard at 8,600 lb GVWR"
+     },
+     {
+      "name": "Kelley Blue Book 2000 Chevrolet silverado 2500 extended cab",
+      "url": "https://www.kbb.com/chevrolet/silverado-2500-extended-cab/2000/",
+      "says": "available engines include V8, 6.0 Liter"
+     },
+     {
+      "name": "EPA fueleconomy.gov vehicle data",
+      "url": "https://www.fueleconomy.gov/feg/download.shtml",
+      "says": "2000: 6.0 L 8-cyl, Silverado 2500 2WD"
+     },
+     {
+      "name": "Wikipedia - Chevrolet Silverado generation articles / Duramax V8 / C/K (one source)",
+      "url": "https://en.wikipedia.org/wiki/Chevrolet_Silverado",
+      "says": "Vortec 6000 LQ4 300 hp, 1999-2006 HD"
+     }
+    ],
+    "independent_sources": 4,
+    "status": "three_sources_not_nhra",
+    "note": "1999-2000: only the GMT800 light-duty 2500 was new; heavy 2500/3500 stayed on GMT400 C/K (gen 'gmt400' rows). GM 2000 sheet gives 300 hp @ 4800, 2001+ sheets @ 4400."
+   },
+   {
+    "gen": "gmt400",
+    "cid": 350,
+    "liters": 5.7,
+    "hp": 255,
+    "hp_basis": "SAE net",
+    "rpo": "L31",
+    "name": "5.7L / 350 V8",
+    "common_name": "Vortec 5700",
+    "trims": [
+     "C/K 2500 HD and 3500 (Silverado trim)",
+     "2WD and 4WD"
+    ],
+    "nhra": false,
+    "sources": [
+     {
+      "name": "GM media - 2000 Chevrolet C/K 2500/3500 specifications (archived)",
+      "url": "https://web.archive.org/web/2005/http://media.gm.com:80/division/chevrolet/products/archive_prod_info/00chevy/00ck/ck_specs.htm",
+      "says": "L31 255 hp SAE net; C/K2500 and C/K3500"
+     },
+     {
+      "name": "Kelley Blue Book 2000 Chevrolet 2500 crew cab",
+      "url": "https://www.kbb.com/chevrolet/2500-crew-cab/2000/",
+      "says": "V8, 5.7 Liter; 255 @ 4600"
+     },
+     {
+      "name": "Kelley Blue Book 2000 Chevrolet 3500 crew cab",
+      "url": "https://www.kbb.com/chevrolet/3500-crew-cab/2000/",
+      "says": "V8, 5.7 Liter"
+     },
+     {
+      "name": "Wikipedia - Chevrolet Silverado generation articles / Duramax V8 / C/K (one source)",
+      "url": "https://en.wikipedia.org/wiki/Chevrolet_Silverado",
+      "says": "L31 255 hp, through 2000 (C/K fourth generation article)"
+     }
+    ],
+    "independent_sources": 3,
+    "status": "three_sources_not_nhra",
+    "note": "GMT400 C/K 2500/3500 heavy-duty carried over for 2000 (Silverado was a trim on them). Drop these rows if the page treats them as C/K (chevrolet-ck-1988-1998)."
+   },
+   {
+    "gen": "gmt400",
+    "cid": 454,
+    "liters": 7.4,
+    "hp": 290,
+    "hp_basis": "SAE net",
+    "rpo": "L29",
+    "name": "7.4L / 454 V8",
+    "common_name": "Vortec 7400",
+    "trims": [
+     "C/K 2500 HD and 3500 (Silverado trim)",
+     "2WD and 4WD"
+    ],
+    "nhra": false,
+    "sources": [
+     {
+      "name": "GM media - 2000 Chevrolet C/K 2500/3500 specifications (archived)",
+      "url": "https://web.archive.org/web/2005/http://media.gm.com:80/division/chevrolet/products/archive_prod_info/00chevy/00ck/ck_specs.htm",
+      "says": "L29 290 hp SAE net; C/K2500 and C/K3500"
+     },
+     {
+      "name": "Kelley Blue Book 2000 Chevrolet 2500 crew cab",
+      "url": "https://www.kbb.com/chevrolet/2500-crew-cab/2000/",
+      "says": "V8, 454/7.4 Liter; 290 @ 4000 (3500)"
+     },
+     {
+      "name": "Kelley Blue Book 2000 Chevrolet 3500 crew cab",
+      "url": "https://www.kbb.com/chevrolet/3500-crew-cab/2000/",
+      "says": "V8, 454/7.4 Liter"
+     },
+     {
+      "name": "Wikipedia - Chevrolet Silverado generation articles / Duramax V8 / C/K (one source)",
+      "url": "https://en.wikipedia.org/wiki/Chevrolet_Silverado",
+      "says": "L29 290 hp, through 2000 (C/K fourth generation article)"
+     }
+    ],
+    "independent_sources": 3,
+    "status": "three_sources_not_nhra",
+    "note": "GMT400 C/K 2500/3500 heavy-duty carried over for 2000 (Silverado was a trim on them). Drop these rows if the page treats them as C/K (chevrolet-ck-1988-1998)."
+   },
+   {
+    "gen": "gmt400",
+    "cid": 395,
+    "liters": 6.5,
+    "hp": 195,
+    "hp_basis": "SAE net",
+    "rpo": "L65",
+    "name": "6.5L / 395 turbo-diesel V8",
+    "common_name": "6.5 Turbo Diesel",
+    "trims": [
+     "C/K 2500 HD and 3500 (Silverado trim)",
+     "2WD and 4WD"
+    ],
+    "nhra": false,
+    "sources": [
+     {
+      "name": "GM media - 2000 Chevrolet C/K 2500/3500 specifications (archived)",
+      "url": "https://web.archive.org/web/2005/http://media.gm.com:80/division/chevrolet/products/archive_prod_info/00chevy/00ck/ck_specs.htm",
+      "says": "L65 195 hp SAE net; C/K2500 and C/K3500"
+     },
+     {
+      "name": "Kelley Blue Book 2000 Chevrolet 2500 crew cab",
+      "url": "https://www.kbb.com/chevrolet/2500-crew-cab/2000/",
+      "says": "V8, Turbo Dsl/Diesel, 6.5L"
+     },
+     {
+      "name": "Kelley Blue Book 2000 Chevrolet 3500 crew cab",
+      "url": "https://www.kbb.com/chevrolet/3500-crew-cab/2000/",
+      "says": "V8, Turbo Dsl/Diesel, 6.5L"
+     },
+     {
+      "name": "Wikipedia - Chevrolet Silverado generation articles / Duramax V8 / C/K (one source)",
+      "url": "https://en.wikipedia.org/wiki/Chevrolet_Silverado",
+      "says": "L65 195 hp, through 2000 (C/K fourth generation article)"
+     }
+    ],
+    "independent_sources": 3,
+    "status": "three_sources_not_nhra",
+    "note": "GMT400 C/K 2500/3500 heavy-duty carried over for 2000 (Silverado was a trim on them). Drop these rows if the page treats them as C/K (chevrolet-ck-1988-1998). 6.5 L65 torque 420 lb-ft manual / 430 auto."
+   }
+  ],
+  "2001": [
+   {
+    "gen": "gmt800",
+    "cid": 364,
+    "liters": 6.0,
+    "hp": 300,
+    "hp_basis": "SAE net",
+    "rpo": "LQ4",
+    "name": "6.0L / 364 V8",
+    "common_name": "Vortec 6000",
+    "trims": [
+     "2500HD",
+     "3500",
+     "2500 (light-duty, 2001-2004)",
+     "2WD and 4WD"
+    ],
+    "nhra": false,
+    "sources": [
+     {
+      "name": "GM media - 2001 Silverado HD specifications (archived)",
+      "url": "https://web.archive.org/web/2002/http://media.gm.com:80/division/chevrolet/products/trucks/01chevy/01silv_hd/specs.html",
+      "says": "Vortec 6000 6.0L (LQ4) standard, 300 hp @ 4400 (powertrain page)"
+     },
+     {
+      "name": "Kelley Blue Book 2001 Chevrolet silverado 2500 hd crew cab",
+      "url": "https://www.kbb.com/chevrolet/silverado-2500-hd-crew-cab/2001/",
+      "says": "available engines include V8, 6.0 Liter; 300 @ 4400"
+     },
+     {
+      "name": "Wikipedia - Chevrolet Silverado generation articles / Duramax V8 / C/K (one source)",
+      "url": "https://en.wikipedia.org/wiki/Chevrolet_Silverado",
+      "says": "Vortec 6000 300 hp @ 4400, HD 2001-2007"
+     }
+    ],
+    "independent_sources": 3,
+    "status": "three_sources_not_nhra",
+    "note": "Standard engine in 2500HD and 3500 (also the light-duty 2500 through 2004)."
+   },
+   {
+    "gen": "gmt800",
+    "cid": 496,
+    "liters": 8.1,
+    "hp": 340,
+    "hp_basis": "SAE net",
+    "rpo": "L18",
+    "name": "8.1L / 496 V8",
+    "common_name": "Vortec 8100",
+    "trims": [
+     "2500HD",
+     "3500"
+    ],
+    "nhra": false,
+    "sources": [
+     {
+      "name": "GM media - 2001 Silverado HD specifications (archived)",
+      "url": "https://web.archive.org/web/2002/http://media.gm.com:80/division/chevrolet/products/trucks/01chevy/01silv_hd/specs.html",
+      "says": "Vortec 8100 8.1L (L18) 340 hp @ 4200"
+     },
+     {
+      "name": "Kelley Blue Book 2001 Chevrolet silverado 2500 hd crew cab",
+      "url": "https://www.kbb.com/chevrolet/silverado-2500-hd-crew-cab/2001/",
+      "says": "available engines include V8, 8.1 Liter"
+     },
+     {
+      "name": "Kelley Blue Book 2001 Chevrolet silverado 3500 crew cab",
+      "url": "https://www.kbb.com/chevrolet/silverado-3500-crew-cab/2001/",
+      "says": "3500: 340 @ 4200 (8.1)"
+     },
+     {
+      "name": "Wikipedia - Chevrolet Silverado generation articles / Duramax V8 / C/K (one source)",
+      "url": "https://en.wikipedia.org/wiki/Chevrolet_Silverado",
+      "says": "Vortec 8100 340 hp @ 4200 (2001-2003)"
+     }
+    ],
+    "independent_sources": 3,
+    "status": "three_sources_not_nhra",
+    "note": "Optional in 2500HD and 3500 only."
+   },
+   {
+    "gen": "gmt800",
+    "cid": 403,
+    "liters": 6.6,
+    "hp": 300,
+    "hp_basis": "SAE net",
+    "rpo": "LB7",
+    "name": "6.6L / 403 turbo-diesel V8",
+    "common_name": "Duramax 6600 LB7",
+    "trims": [
+     "2500HD",
+     "3500"
+    ],
+    "nhra": false,
+    "sources": [
+     {
+      "name": "GM media - 2001 Silverado HD specifications (archived)",
+      "url": "https://web.archive.org/web/2002/http://media.gm.com:80/division/chevrolet/products/trucks/01chevy/01silv_hd/specs.html",
+      "says": "Duramax 6600 (LB7) 300 hp @ 3100"
+     },
+     {
+      "name": "Kelley Blue Book 2001 Chevrolet silverado 2500 hd crew cab",
+      "url": "https://www.kbb.com/chevrolet/silverado-2500-hd-crew-cab/2001/",
+      "says": "available engines include 6.6L turbo diesel; 300 @ 3100"
+     },
+     {
+      "name": "Wikipedia - Chevrolet Silverado generation articles / Duramax V8 / C/K (one source)",
+      "url": "https://en.wikipedia.org/wiki/Chevrolet_Silverado",
+      "says": "LB7 300 hp @ 3100, 2001-2004"
+     },
+     {
+      "name": "Diesel Army (Power Automedia) - A Brief History of Duramax Engine Specs (2025-01-13)",
+      "url": "https://www.dieselarmy.com/news/a-brief-history-of-duramax-engine-specs/",
+      "says": "LB7 2001-2004, 300 @ 3,100 RPM"
+     }
+    ],
+    "independent_sources": 4,
+    "status": "three_sources_not_nhra",
+    "note": "Optional in 2500HD and 3500 only. GM Authority's LB7 page lists 235 hp for 2001-2003 (the Ford 7.3's figure from GM's comparison chart); not used."
+   }
+  ],
+  "2002": [
+   {
+    "gen": "gmt800",
+    "cid": 364,
+    "liters": 6.0,
+    "hp": 300,
+    "hp_basis": "SAE net",
+    "rpo": "LQ4",
+    "name": "6.0L / 364 V8",
+    "common_name": "Vortec 6000",
+    "trims": [
+     "2500HD",
+     "3500",
+     "2500 (light-duty, 2001-2004)",
+     "2WD and 4WD"
+    ],
+    "nhra": false,
+    "sources": [
+     {
+      "name": "GM Canada media - 2002 Chevrolet Silverado (archived)",
+      "url": "https://web.archive.org/web/2003/http://media.gm.com:80/division/canada/english/products/chevy_truck/archives/2002Silverado.html",
+      "says": "Vortec 6000 6.0L (LQ4) standard, 300 hp"
+     },
+     {
+      "name": "Kelley Blue Book 2002 Chevrolet silverado 2500 hd crew cab",
+      "url": "https://www.kbb.com/chevrolet/silverado-2500-hd-crew-cab/2002/",
+      "says": "available engines include V8, 6.0 Liter; 300 @ 4400"
+     },
+     {
+      "name": "Wikipedia - Chevrolet Silverado generation articles / Duramax V8 / C/K (one source)",
+      "url": "https://en.wikipedia.org/wiki/Chevrolet_Silverado",
+      "says": "Vortec 6000 300 hp @ 4400, HD 2001-2007"
+     },
+     {
+      "name": "EPA fueleconomy.gov vehicle data",
+      "url": "https://www.fueleconomy.gov/feg/download.shtml",
+      "says": "2002: 6.0 L 8-cyl, Silverado 2500 2WD"
+     }
+    ],
+    "independent_sources": 4,
+    "status": "three_sources_not_nhra",
+    "note": "Standard engine in 2500HD and 3500 (also the light-duty 2500 through 2004)."
+   },
+   {
+    "gen": "gmt800",
+    "cid": 496,
+    "liters": 8.1,
+    "hp": 340,
+    "hp_basis": "SAE net",
+    "rpo": "L18",
+    "name": "8.1L / 496 V8",
+    "common_name": "Vortec 8100",
+    "trims": [
+     "2500HD",
+     "3500"
+    ],
+    "nhra": false,
+    "sources": [
+     {
+      "name": "GM Canada media - 2002 Chevrolet Silverado (archived)",
+      "url": "https://web.archive.org/web/2003/http://media.gm.com:80/division/canada/english/products/chevy_truck/archives/2002Silverado.html",
+      "says": "Vortec 8100 8.1L (L18) 340 hp @ 4200"
+     },
+     {
+      "name": "Kelley Blue Book 2002 Chevrolet silverado 2500 hd crew cab",
+      "url": "https://www.kbb.com/chevrolet/silverado-2500-hd-crew-cab/2002/",
+      "says": "available engines include V8, 8.1 Liter"
+     },
+     {
+      "name": "Kelley Blue Book 2002 Chevrolet silverado 3500 crew cab",
+      "url": "https://www.kbb.com/chevrolet/silverado-3500-crew-cab/2002/",
+      "says": "3500: 340 @ 4200 (8.1)"
+     },
+     {
+      "name": "Wikipedia - Chevrolet Silverado generation articles / Duramax V8 / C/K (one source)",
+      "url": "https://en.wikipedia.org/wiki/Chevrolet_Silverado",
+      "says": "Vortec 8100 340 hp @ 4200 (2001-2003)"
+     }
+    ],
+    "independent_sources": 3,
+    "status": "three_sources_not_nhra",
+    "note": "Optional in 2500HD and 3500 only."
+   },
+   {
+    "gen": "gmt800",
+    "cid": 403,
+    "liters": 6.6,
+    "hp": 300,
+    "hp_basis": "SAE net",
+    "rpo": "LB7",
+    "name": "6.6L / 403 turbo-diesel V8",
+    "common_name": "Duramax 6600 LB7",
+    "trims": [
+     "2500HD",
+     "3500"
+    ],
+    "nhra": false,
+    "sources": [
+     {
+      "name": "GM Canada media - 2002 Chevrolet Silverado (archived)",
+      "url": "https://web.archive.org/web/2003/http://media.gm.com:80/division/canada/english/products/chevy_truck/archives/2002Silverado.html",
+      "says": "Duramax 6600 (LB7) 300 hp @ 3100"
+     },
+     {
+      "name": "Kelley Blue Book 2002 Chevrolet silverado 2500 hd crew cab",
+      "url": "https://www.kbb.com/chevrolet/silverado-2500-hd-crew-cab/2002/",
+      "says": "available engines include 6.6L turbo diesel; 300 @ 3100"
+     },
+     {
+      "name": "Wikipedia - Chevrolet Silverado generation articles / Duramax V8 / C/K (one source)",
+      "url": "https://en.wikipedia.org/wiki/Chevrolet_Silverado",
+      "says": "LB7 300 hp @ 3100, 2001-2004"
+     },
+     {
+      "name": "Diesel Army (Power Automedia) - A Brief History of Duramax Engine Specs (2025-01-13)",
+      "url": "https://www.dieselarmy.com/news/a-brief-history-of-duramax-engine-specs/",
+      "says": "LB7 2001-2004, 300 @ 3,100 RPM"
+     }
+    ],
+    "independent_sources": 4,
+    "status": "three_sources_not_nhra",
+    "note": "Optional in 2500HD and 3500 only."
+   }
+  ],
+  "2003": [
+   {
+    "gen": "gmt800",
+    "cid": 364,
+    "liters": 6.0,
+    "hp": 300,
+    "hp_basis": "SAE net",
+    "rpo": "LQ4",
+    "name": "6.0L / 364 V8",
+    "common_name": "Vortec 6000",
+    "trims": [
+     "2500HD",
+     "3500",
+     "2500 (light-duty, 2001-2004)",
+     "2WD and 4WD"
+    ],
+    "nhra": false,
+    "sources": [
+     {
+      "name": "GM media - 2003 Silverado HD specifications / model lineup (archived)",
+      "url": "https://web.archive.org/web/2005/http://media.gm.com:80/division/2003_prodinfo/03_chevrolet/03_silverado_hd/specifications.html",
+      "says": "Vortec 6000 6.0L (LQ4) standard, 300 hp"
+     },
+     {
+      "name": "Kelley Blue Book 2003 Chevrolet silverado 2500 hd crew cab",
+      "url": "https://www.kbb.com/chevrolet/silverado-2500-hd-crew-cab/2003/",
+      "says": "available engines include V8, 6.0 Liter; 300 @ 4400"
+     },
+     {
+      "name": "Wikipedia - Chevrolet Silverado generation articles / Duramax V8 / C/K (one source)",
+      "url": "https://en.wikipedia.org/wiki/Chevrolet_Silverado",
+      "says": "Vortec 6000 300 hp @ 4400, HD 2001-2007"
+     },
+     {
+      "name": "GM Canada media - 2003 Chevrolet Silverado (archived)",
+      "url": "https://web.archive.org/web/2005/http://media.gm.com:80/division/canada/english/products/chevy_truck/archives/2003Silverado.html",
+      "says": "Vortec 6000 V8 (1500HD, 2500HD and 3500) standard, 300 hp; also optional in light-duty 2500"
+     }
+    ],
+    "independent_sources": 3,
+    "status": "three_sources_not_nhra",
+    "note": "Standard engine in 2500HD and 3500 (also the light-duty 2500 through 2004). EPA lists a CNG/bi-fuel 6.0 Silverado 2500(HD) for 2003 (KBB 2005 lists 'V8, CNG, 6.0L'); no separate rating found."
+   },
+   {
+    "gen": "gmt800",
+    "cid": 496,
+    "liters": 8.1,
+    "hp": 340,
+    "hp_basis": "SAE net",
+    "rpo": "L18",
+    "name": "8.1L / 496 V8",
+    "common_name": "Vortec 8100",
+    "trims": [
+     "2500HD",
+     "3500"
+    ],
+    "nhra": false,
+    "sources": [
+     {
+      "name": "GM media - 2003 Silverado HD specifications / model lineup (archived)",
+      "url": "https://web.archive.org/web/2005/http://media.gm.com:80/division/2003_prodinfo/03_chevrolet/03_silverado_hd/specifications.html",
+      "says": "Vortec 8100 8.1L (L18) 340 hp @ 4200"
+     },
+     {
+      "name": "Kelley Blue Book 2003 Chevrolet silverado 2500 hd crew cab",
+      "url": "https://www.kbb.com/chevrolet/silverado-2500-hd-crew-cab/2003/",
+      "says": "available engines include V8, 8.1 Liter"
+     },
+     {
+      "name": "Wikipedia - Chevrolet Silverado generation articles / Duramax V8 / C/K (one source)",
+      "url": "https://en.wikipedia.org/wiki/Chevrolet_Silverado",
+      "says": "Vortec 8100 340 hp @ 4200 (2001-2003)"
+     }
+    ],
+    "independent_sources": 3,
+    "status": "three_sources_not_nhra",
+    "note": "Optional in 2500HD and 3500 only."
+   },
+   {
+    "gen": "gmt800",
+    "cid": 403,
+    "liters": 6.6,
+    "hp": 300,
+    "hp_basis": "SAE net",
+    "rpo": "LB7",
+    "name": "6.6L / 403 turbo-diesel V8",
+    "common_name": "Duramax 6600 LB7",
+    "trims": [
+     "2500HD",
+     "3500"
+    ],
+    "nhra": false,
+    "sources": [
+     {
+      "name": "GM media - 2003 Silverado HD specifications / model lineup (archived)",
+      "url": "https://web.archive.org/web/2005/http://media.gm.com:80/division/2003_prodinfo/03_chevrolet/03_silverado_hd/specifications.html",
+      "says": "Duramax 6600 (LB7) 300 hp @ 3100"
+     },
+     {
+      "name": "Kelley Blue Book 2003 Chevrolet silverado 2500 hd crew cab",
+      "url": "https://www.kbb.com/chevrolet/silverado-2500-hd-crew-cab/2003/",
+      "says": "available engines include 6.6L turbo diesel; 300 @ 3100"
+     },
+     {
+      "name": "Wikipedia - Chevrolet Silverado generation articles / Duramax V8 / C/K (one source)",
+      "url": "https://en.wikipedia.org/wiki/Chevrolet_Silverado",
+      "says": "LB7 300 hp @ 3100, 2001-2004"
+     },
+     {
+      "name": "Diesel Army (Power Automedia) - A Brief History of Duramax Engine Specs (2025-01-13)",
+      "url": "https://www.dieselarmy.com/news/a-brief-history-of-duramax-engine-specs/",
+      "says": "LB7 2001-2004, 300 @ 3,100 RPM"
+     }
+    ],
+    "independent_sources": 4,
+    "status": "three_sources_not_nhra",
+    "note": "Optional in 2500HD and 3500 only."
+   }
+  ],
+  "2004": [
+   {
+    "gen": "gmt800",
+    "cid": 364,
+    "liters": 6.0,
+    "hp": 300,
+    "hp_basis": "SAE net",
+    "rpo": "LQ4",
+    "name": "6.0L / 364 V8",
+    "common_name": "Vortec 6000",
+    "trims": [
+     "2500HD",
+     "3500",
+     "2500 (light-duty, 2001-2004)",
+     "2WD and 4WD"
+    ],
+    "nhra": false,
+    "sources": [
+     {
+      "name": "GM media - 2004 Silverado HD specifications (archived)",
+      "url": "https://web.archive.org/web/2005/http://media.gm.com:80/division/2004_prodinfo/chevrolet/trucks/silverado_hd/specs.html",
+      "says": "Vortec 6000 6.0L (LQ4) standard, 300 hp"
+     },
+     {
+      "name": "Kelley Blue Book 2004 Chevrolet silverado 2500 hd crew cab",
+      "url": "https://www.kbb.com/chevrolet/silverado-2500-hd-crew-cab/2004/",
+      "says": "available engines include V8, 6.0 Liter; 300 @ 4400"
+     },
+     {
+      "name": "Wikipedia - Chevrolet Silverado generation articles / Duramax V8 / C/K (one source)",
+      "url": "https://en.wikipedia.org/wiki/Chevrolet_Silverado",
+      "says": "Vortec 6000 300 hp @ 4400, HD 2001-2007"
+     }
+    ],
+    "independent_sources": 3,
+    "status": "three_sources_not_nhra",
+    "note": "Standard engine in 2500HD and 3500 (also the light-duty 2500 through 2004). EPA lists a CNG/bi-fuel 6.0 Silverado 2500(HD) for 2004 (KBB 2005 lists 'V8, CNG, 6.0L'); no separate rating found."
+   },
+   {
+    "gen": "gmt800",
+    "cid": 496,
+    "liters": 8.1,
+    "hp": 340,
+    "hp_basis": "SAE net",
+    "rpo": "L18",
+    "name": "8.1L / 496 V8",
+    "common_name": "Vortec 8100",
+    "trims": [
+     "2500HD",
+     "3500"
+    ],
+    "nhra": false,
+    "sources": [
+     {
+      "name": "GM media - 2004 Silverado HD specifications (archived)",
+      "url": "https://web.archive.org/web/2005/http://media.gm.com:80/division/2004_prodinfo/chevrolet/trucks/silverado_hd/specs.html",
+      "says": "Vortec 8100 8.1L (L18) 340 hp @ 4200"
+     },
+     {
+      "name": "Kelley Blue Book 2004 Chevrolet silverado 2500 hd crew cab",
+      "url": "https://www.kbb.com/chevrolet/silverado-2500-hd-crew-cab/2004/",
+      "says": "available engines include V8, 8.1 Liter"
+     },
+     {
+      "name": "Wikipedia - Chevrolet Silverado generation articles / Duramax V8 / C/K (one source)",
+      "url": "https://en.wikipedia.org/wiki/Chevrolet_Silverado",
+      "says": "Vortec 8100 330 hp @ 4200 (2004-2006)"
+     }
+    ],
+    "independent_sources": 3,
+    "status": "disputed",
+    "note": "Optional in 2500HD and 3500 only. GM's 2004 HD spec sheet still gives 340 hp; Wikipedia gives 330 hp from 2004. Recorded GM's 340."
+   },
+   {
+    "gen": "gmt800",
+    "cid": 403,
+    "liters": 6.6,
+    "hp": 300,
+    "hp_basis": "SAE net",
+    "rpo": "LB7",
+    "name": "6.6L / 403 turbo-diesel V8",
+    "common_name": "Duramax 6600 LB7",
+    "trims": [
+     "2500HD",
+     "3500"
+    ],
+    "nhra": false,
+    "sources": [
+     {
+      "name": "GM media - 2004 Silverado HD specifications (archived)",
+      "url": "https://web.archive.org/web/2005/http://media.gm.com:80/division/2004_prodinfo/chevrolet/trucks/silverado_hd/specs.html",
+      "says": "Duramax 6600 (LB7) 300 hp @ 3100"
+     },
+     {
+      "name": "Kelley Blue Book 2004 Chevrolet silverado 2500 hd crew cab",
+      "url": "https://www.kbb.com/chevrolet/silverado-2500-hd-crew-cab/2004/",
+      "says": "6.6L Turbo Dsl; 300 and 310 hp ratings both listed"
+     },
+     {
+      "name": "Wikipedia - Chevrolet Silverado generation articles / Duramax V8 / C/K (one source)",
+      "url": "https://en.wikipedia.org/wiki/Chevrolet_Silverado",
+      "says": "LB7 300 hp @ 3100, 2001-2004"
+     },
+     {
+      "name": "Diesel Army (Power Automedia) - A Brief History of Duramax Engine Specs (2025-01-13)",
+      "url": "https://www.dieselarmy.com/news/a-brief-history-of-duramax-engine-specs/",
+      "says": "LB7 2001-2004, 300 @ 3,100 RPM"
+     }
+    ],
+    "independent_sources": 4,
+    "status": "three_sources_not_nhra",
+    "note": "Optional in 2500HD and 3500 only. Early-2004 builds; the LLY replaced it mid-year ('2004.5')."
+   },
+   {
+    "gen": "gmt800",
+    "cid": 403,
+    "liters": 6.6,
+    "hp": 310,
+    "hp_basis": "SAE net",
+    "rpo": "LLY",
+    "name": "6.6L / 403 turbo-diesel V8",
+    "common_name": "Duramax 6600 LLY",
+    "trims": [
+     "2500HD",
+     "3500"
+    ],
+    "nhra": false,
+    "sources": [
+     {
+      "name": "Kelley Blue Book 2004 Chevrolet silverado 2500 hd crew cab",
+      "url": "https://www.kbb.com/chevrolet/silverado-2500-hd-crew-cab/2004/",
+      "says": "2004: 310 @ 3000 (6.6L turbo diesel)"
+     },
+     {
+      "name": "Wikipedia - Chevrolet Silverado generation articles / Duramax V8 / C/K (one source)",
+      "url": "https://en.wikipedia.org/wiki/Chevrolet_Silverado",
+      "says": "LLY 310 hp @ 3000, 2004-2005 (2004.5)"
+     },
+     {
+      "name": "Diesel Army (Power Automedia) - A Brief History of Duramax Engine Specs (2025-01-13)",
+      "url": "https://www.dieselarmy.com/news/a-brief-history-of-duramax-engine-specs/",
+      "says": "LLY 2004.5-2005, 310 @ 3,000 RPM"
+     }
+    ],
+    "independent_sources": 3,
+    "status": "three_sources_not_nhra",
+    "note": "Mid-2004 introduction ('2004.5'); GM's 2004 HD sheet (early) still lists the LB7. Wikipedia gives 605 lb-ft, Diesel Army 520 lb-ft (torque not recorded)."
+   }
+  ],
+  "2005": [
+   {
+    "gen": "gmt800",
+    "cid": 364,
+    "liters": 6.0,
+    "hp": 300,
+    "hp_basis": "SAE net",
+    "rpo": "LQ4",
+    "name": "6.0L / 364 V8",
+    "common_name": "Vortec 6000",
+    "trims": [
+     "2500HD",
+     "3500",
+     "2500 (light-duty, 2001-2004)",
+     "2WD and 4WD"
+    ],
+    "nhra": false,
+    "sources": [
+     {
+      "name": "Kelley Blue Book 2005 Chevrolet silverado 2500 hd crew cab",
+      "url": "https://www.kbb.com/chevrolet/silverado-2500-hd-crew-cab/2005/",
+      "says": "available engines include V8, 6.0 Liter; 300 @ 4400"
+     },
+     {
+      "name": "Wikipedia - Chevrolet Silverado generation articles / Duramax V8 / C/K (one source)",
+      "url": "https://en.wikipedia.org/wiki/Chevrolet_Silverado",
+      "says": "Vortec 6000 300 hp @ 4400, HD 2001-2007"
+     }
+    ],
+    "independent_sources": 2,
+    "status": "two_sources_agree",
+    "note": "Standard engine in 2500HD and 3500 (also the light-duty 2500 through 2004). EPA lists a CNG/bi-fuel 6.0 Silverado 2500(HD) for 2005 (KBB 2005 lists 'V8, CNG, 6.0L'); no separate rating found."
+   },
+   {
+    "gen": "gmt800",
+    "cid": 496,
+    "liters": 8.1,
+    "hp": 330,
+    "hp_basis": "SAE net",
+    "rpo": "L18",
+    "name": "8.1L / 496 V8",
+    "common_name": "Vortec 8100",
+    "trims": [
+     "2500HD",
+     "3500"
+    ],
+    "nhra": false,
+    "sources": [
+     {
+      "name": "Kelley Blue Book 2005 Chevrolet silverado 2500 hd crew cab",
+      "url": "https://www.kbb.com/chevrolet/silverado-2500-hd-crew-cab/2005/",
+      "says": "available engines include V8, 8.1 Liter"
+     },
+     {
+      "name": "Wikipedia - Chevrolet Silverado generation articles / Duramax V8 / C/K (one source)",
+      "url": "https://en.wikipedia.org/wiki/Chevrolet_Silverado",
+      "says": "Vortec 8100 330 hp @ 4200 (2004-2006)"
+     }
+    ],
+    "independent_sources": 2,
+    "status": "two_sources_not_nhra",
+    "note": "Optional in 2500HD and 3500 only. No GM document found for this year; 330 hp is Wikipedia's figure and matches GM's 2007 Classic HD sheet. KBB confirms availability only."
+   },
+   {
+    "gen": "gmt800",
+    "cid": 403,
+    "liters": 6.6,
+    "hp": 310,
+    "hp_basis": "SAE net",
+    "rpo": "LLY",
+    "name": "6.6L / 403 turbo-diesel V8",
+    "common_name": "Duramax 6600 LLY",
+    "trims": [
+     "2500HD",
+     "3500"
+    ],
+    "nhra": false,
+    "sources": [
+     {
+      "name": "Kelley Blue Book 2005 Chevrolet silverado 2500 hd crew cab",
+      "url": "https://www.kbb.com/chevrolet/silverado-2500-hd-crew-cab/2005/",
+      "says": "2005: 310 @ 3000 (6.6L turbo diesel)"
+     },
+     {
+      "name": "Wikipedia - Chevrolet Silverado generation articles / Duramax V8 / C/K (one source)",
+      "url": "https://en.wikipedia.org/wiki/Chevrolet_Silverado",
+      "says": "LLY 310 hp @ 3000, 2004-2005 (2004.5)"
+     },
+     {
+      "name": "Diesel Army (Power Automedia) - A Brief History of Duramax Engine Specs (2025-01-13)",
+      "url": "https://www.dieselarmy.com/news/a-brief-history-of-duramax-engine-specs/",
+      "says": "LLY 2004.5-2005, 310 @ 3,000 RPM"
+     }
+    ],
+    "independent_sources": 3,
+    "status": "three_sources_not_nhra",
+    "note": "Wikipedia gives 605 lb-ft, Diesel Army 520 lb-ft (torque not recorded)."
+   }
+  ],
+  "2006": [
+   {
+    "gen": "gmt800",
+    "cid": 364,
+    "liters": 6.0,
+    "hp": 300,
+    "hp_basis": "SAE net",
+    "rpo": "LQ4",
+    "name": "6.0L / 364 V8",
+    "common_name": "Vortec 6000",
+    "trims": [
+     "2500HD",
+     "3500",
+     "2500 (light-duty, 2001-2004)",
+     "2WD and 4WD"
+    ],
+    "nhra": false,
+    "sources": [
+     {
+      "name": "Kelley Blue Book 2006 Chevrolet silverado 2500 hd crew cab",
+      "url": "https://www.kbb.com/chevrolet/silverado-2500-hd-crew-cab/2006/",
+      "says": "available engines include V8, 6.0 Liter; 300 @ 4400"
+     },
+     {
+      "name": "Wikipedia - Chevrolet Silverado generation articles / Duramax V8 / C/K (one source)",
+      "url": "https://en.wikipedia.org/wiki/Chevrolet_Silverado",
+      "says": "Vortec 6000 300 hp @ 4400, HD 2001-2007"
+     }
+    ],
+    "independent_sources": 2,
+    "status": "two_sources_agree",
+    "note": "Standard engine in 2500HD and 3500 (also the light-duty 2500 through 2004)."
+   },
+   {
+    "gen": "gmt800",
+    "cid": 496,
+    "liters": 8.1,
+    "hp": 330,
+    "hp_basis": "SAE net",
+    "rpo": "L18",
+    "name": "8.1L / 496 V8",
+    "common_name": "Vortec 8100",
+    "trims": [
+     "2500HD",
+     "3500"
+    ],
+    "nhra": false,
+    "sources": [
+     {
+      "name": "Kelley Blue Book 2006 Chevrolet silverado 2500 hd crew cab",
+      "url": "https://www.kbb.com/chevrolet/silverado-2500-hd-crew-cab/2006/",
+      "says": "available engines include V8, 8.1 Liter"
+     },
+     {
+      "name": "Wikipedia - Chevrolet Silverado generation articles / Duramax V8 / C/K (one source)",
+      "url": "https://en.wikipedia.org/wiki/Chevrolet_Silverado",
+      "says": "Vortec 8100 330 hp @ 4200 (2004-2006)"
+     }
+    ],
+    "independent_sources": 2,
+    "status": "two_sources_not_nhra",
+    "note": "Optional in 2500HD and 3500 only. No GM document found for this year; 330 hp is Wikipedia's figure and matches GM's 2007 Classic HD sheet. KBB confirms availability only."
+   },
+   {
+    "gen": "gmt800",
+    "cid": 403,
+    "liters": 6.6,
+    "hp": 360,
+    "hp_basis": "SAE net",
+    "rpo": "LBZ",
+    "name": "6.6L / 403 turbo-diesel V8",
+    "common_name": "Duramax 6600 LBZ",
+    "trims": [
+     "2500HD",
+     "3500"
+    ],
+    "nhra": false,
+    "sources": [
+     {
+      "name": "Kelley Blue Book 2006 Chevrolet silverado 2500 hd crew cab",
+      "url": "https://www.kbb.com/chevrolet/silverado-2500-hd-crew-cab/2006/",
+      "says": "6.6L turbo diesel 360 @ 3200"
+     },
+     {
+      "name": "Wikipedia - Chevrolet Silverado generation articles / Duramax V8 / C/K (one source)",
+      "url": "https://en.wikipedia.org/wiki/Chevrolet_Silverado",
+      "says": "LBZ 360 hp @ 3200, 2006-2007"
+     },
+     {
+      "name": "Diesel Army (Power Automedia) - A Brief History of Duramax Engine Specs (2025-01-13)",
+      "url": "https://www.dieselarmy.com/news/a-brief-history-of-duramax-engine-specs/",
+      "says": "LBZ 2006-2007.5, 360 @ 3,200 RPM"
+     },
+     {
+      "name": "Auto123 - 2006 Chevrolet Silverado 2500 HD road test (2006-03-29)",
+      "url": "https://www.auto123.com/en/car-reviews/2006-chevrolet-silverado-2500-hd-road-test/54296/",
+      "says": "new-for-2006 Duramax: 360 hp, 650 lb-ft"
+     }
+    ],
+    "independent_sources": 4,
+    "status": "three_sources_not_nhra",
+    "note": "Optional in 2500HD and 3500."
+   }
+  ],
+  "2007": [
+   {
+    "gen": "gmt800",
+    "cid": 364,
+    "liters": 6.0,
+    "hp": 300,
+    "hp_basis": "SAE net",
+    "rpo": "LQ4",
+    "name": "6.0L / 364 V8",
+    "common_name": "Vortec 6000",
+    "trims": [
+     "2500HD",
+     "3500",
+     "2500 (light-duty, 2001-2004)",
+     "2WD and 4WD"
+    ],
+    "nhra": false,
+    "sources": [
+     {
+      "name": "GM media - 2007 Silverado Classic / Classic HD press kit & HD specs (archived)",
+      "url": "https://web.archive.org/web/2007/http://media.gm.com:80/us/chevrolet/en/product_services/r_trucks/r_c_silverado_classic/index.html",
+      "says": "Vortec 6000 6.0L (LQ4) standard, 300 hp"
+     },
+     {
+      "name": "Kelley Blue Book 2007 Chevrolet silverado 2500 hd crew cab",
+      "url": "https://www.kbb.com/chevrolet/silverado-2500-hd-crew-cab/2007/",
+      "says": "available engines include V8, 6.0 Liter; 300 @ 4400"
+     },
+     {
+      "name": "Wikipedia - Chevrolet Silverado generation articles / Duramax V8 / C/K (one source)",
+      "url": "https://en.wikipedia.org/wiki/Chevrolet_Silverado",
+      "says": "Vortec 6000 300 hp @ 4400, HD 2001-2007"
+     }
+    ],
+    "independent_sources": 3,
+    "status": "three_sources_not_nhra",
+    "note": "Standard engine in 2500HD and 3500 (also the light-duty 2500 through 2004). 2007 = Silverado Classic HD, sold alongside the new GMT900 HD."
+   },
+   {
+    "gen": "gmt800",
+    "cid": 496,
+    "liters": 8.1,
+    "hp": 330,
+    "hp_basis": "SAE net",
+    "rpo": "L18",
+    "name": "8.1L / 496 V8",
+    "common_name": "Vortec 8100",
+    "trims": [
+     "2500HD",
+     "3500"
+    ],
+    "nhra": false,
+    "sources": [
+     {
+      "name": "GM media - 2007 Silverado Classic / Classic HD press kit & HD specs (archived)",
+      "url": "https://web.archive.org/web/2007/http://media.gm.com:80/us/chevrolet/en/product_services/r_trucks/r_c_silverado_classic/index.html",
+      "says": "Vortec 8100 8.1L (L18) 330 hp @ 4200"
+     },
+     {
+      "name": "Kelley Blue Book 2007 Chevrolet silverado 2500 hd crew cab",
+      "url": "https://www.kbb.com/chevrolet/silverado-2500-hd-crew-cab/2007/",
+      "says": "available engines include V8, 8.1 Liter"
+     },
+     {
+      "name": "Wikipedia - Chevrolet Silverado generation articles / Duramax V8 / C/K (one source)",
+      "url": "https://en.wikipedia.org/wiki/Chevrolet_Silverado",
+      "says": "Vortec 8100 330 hp @ 4200 (2004-2006)"
+     }
+    ],
+    "independent_sources": 3,
+    "status": "three_sources_not_nhra",
+    "note": "Optional in 2500HD and 3500 only. 2007 = Silverado Classic HD, sold alongside the new GMT900 HD. Last year of the 8.1."
+   },
+   {
+    "gen": "gmt800",
+    "cid": 403,
+    "liters": 6.6,
+    "hp": 360,
+    "hp_basis": "SAE net",
+    "rpo": "LBZ",
+    "name": "6.6L / 403 turbo-diesel V8",
+    "common_name": "Duramax 6600 LBZ",
+    "trims": [
+     "2500HD",
+     "3500"
+    ],
+    "nhra": false,
+    "sources": [
+     {
+      "name": "GM media - 2007 Silverado Classic / Classic HD press kit & HD specs (archived)",
+      "url": "https://web.archive.org/web/2007/http://media.gm.com:80/us/chevrolet/en/product_services/r_trucks/r_c_silverado_classic/index.html",
+      "says": "Duramax 6.6L (LBZ) 360 hp @ 3200 (auto trans)"
+     },
+     {
+      "name": "Kelley Blue Book 2007 Chevrolet silverado 3500 crew cab",
+      "url": "https://www.kbb.com/chevrolet/silverado-3500-crew-cab/2007/",
+      "says": "6.6L turbo diesel 360 @ 3200"
+     },
+     {
+      "name": "Wikipedia - Chevrolet Silverado generation articles / Duramax V8 / C/K (one source)",
+      "url": "https://en.wikipedia.org/wiki/Chevrolet_Silverado",
+      "says": "LBZ 360 hp @ 3200, 2006-2007"
+     },
+     {
+      "name": "Diesel Army (Power Automedia) - A Brief History of Duramax Engine Specs (2025-01-13)",
+      "url": "https://www.dieselarmy.com/news/a-brief-history-of-duramax-engine-specs/",
+      "says": "LBZ 2006-2007.5, 360 @ 3,200 RPM"
+     }
+    ],
+    "independent_sources": 4,
+    "status": "three_sources_not_nhra",
+    "note": "Optional in 2500HD and 3500. 2007 = Silverado Classic HD, sold alongside the new GMT900 HD."
+   },
+   {
+    "gen": "gmt900",
+    "cid": 364,
+    "liters": 6.0,
+    "hp": 353,
+    "hp_basis": "SAE net",
+    "rpo": "LY6",
+    "name": "6.0L / 364 V8",
+    "common_name": "Vortec 6000",
+    "trims": [
+     "2500HD",
+     "3500HD",
+     "2WD and 4WD"
+    ],
+    "nhra": false,
+    "sources": [
+     {
+      "name": "GM media - 2007 Silverado 2500HD / 3500HD (GMT900) specifications (archived)",
+      "url": "https://web.archive.org/web/2007/http://media.gm.com:80/us/chevrolet/en/product_services/r_trucks/r_c_silverado/07silveradoPK/07_Chevy_SilveradoHD_2500.html",
+      "says": "Vortec 6.0L V-8 (LY6) 353 hp @ 5400; 312 hp above 10,000 lb GVWR"
+     },
+     {
+      "name": "Kelley Blue Book 2007 Chevrolet silverado 2500 hd crew cab",
+      "url": "https://www.kbb.com/chevrolet/silverado-2500-hd-crew-cab/2007/",
+      "says": "V8, 6.0 Liter; 353 @ 5400"
+     },
+     {
+      "name": "Wikipedia - Chevrolet Silverado generation articles / Duramax V8 / C/K (one source)",
+      "url": "https://en.wikipedia.org/wiki/Chevrolet_Silverado",
+      "says": "6.0 Vortec 353 hp @ 5400 (2007-2008)"
+     }
+    ],
+    "independent_sources": 3,
+    "status": "three_sources_not_nhra",
+    "note": "New GMT900 HD, launched mid-2007 beside the Classic HD. Standard in 2500HD and 3500HD. Trucks above 10,000 lb GVWR (3500HD) rated 312 hp. GM's lineup tables call it LY6; GM's 2007 3500HD sheet gives 9.6:1 compression (an L96 figure) vs 9.4:1 for the 2500HD, so >10,000 lb trucks may have used the L96."
+   },
+   {
+    "gen": "gmt900",
+    "cid": 403,
+    "liters": 6.6,
+    "hp": 365,
+    "hp_basis": "SAE net",
+    "rpo": "LMM",
+    "name": "6.6L / 403 turbo-diesel V8",
+    "common_name": "Duramax 6600 LMM",
+    "trims": [
+     "2500HD",
+     "3500HD"
+    ],
+    "nhra": false,
+    "sources": [
+     {
+      "name": "GM media - 2007 Silverado 2500HD / 3500HD (GMT900) specifications (archived)",
+      "url": "https://web.archive.org/web/2007/http://media.gm.com:80/us/chevrolet/en/product_services/r_trucks/r_c_silverado/07silveradoPK/07_Chevy_SilveradoHD_2500.html",
+      "says": "Duramax 6.6L V-8 (LMM) 365 hp @ 3200"
+     },
+     {
+      "name": "Kelley Blue Book 2007 Chevrolet silverado 2500 hd crew cab",
+      "url": "https://www.kbb.com/chevrolet/silverado-2500-hd-crew-cab/2007/",
+      "says": "6.6L turbo diesel 365 @ 3200"
+     },
+     {
+      "name": "Wikipedia - Chevrolet Silverado generation articles / Duramax V8 / C/K (one source)",
+      "url": "https://en.wikipedia.org/wiki/Chevrolet_Silverado",
+      "says": "LMM 365 hp @ 3200, 2007-2010"
+     },
+     {
+      "name": "Diesel Army (Power Automedia) - A Brief History of Duramax Engine Specs (2025-01-13)",
+      "url": "https://www.dieselarmy.com/news/a-brief-history-of-duramax-engine-specs/",
+      "says": "LMM 2007.5-2010, 365 @ 3,100 RPM"
+     }
+    ],
+    "independent_sources": 4,
+    "status": "three_sources_not_nhra",
+    "note": "Optional. Diesel Army puts the peak at 3,100 rpm, GM at 3,200."
+   }
+  ],
+  "2008": [
+   {
+    "gen": "gmt900",
+    "cid": 364,
+    "liters": 6.0,
+    "hp": 353,
+    "hp_basis": "SAE net",
+    "rpo": "LY6",
+    "name": "6.0L / 364 V8",
+    "common_name": "Vortec 6000",
+    "trims": [
+     "2500HD",
+     "3500HD",
+     "2WD and 4WD"
+    ],
+    "nhra": false,
+    "sources": [
+     {
+      "name": "GM media - 2008 Silverado HD press kit (archived)",
+      "url": "https://web.archive.org/web/2008/http://media.gm.com:80/us/chevrolet/en/product_services/r_trucks/r_c_silverado/08index%20HD.html",
+      "says": "Vortec 6.0L V-8 (LY6) 353 hp @ 5400; 312 hp above 10,000 lb GVWR"
+     },
+     {
+      "name": "Kelley Blue Book 2008 Chevrolet silverado 2500 hd crew cab",
+      "url": "https://www.kbb.com/chevrolet/silverado-2500-hd-crew-cab/2008/",
+      "says": "V8, 6.0 Liter; 353 @ 5400"
+     },
+     {
+      "name": "Wikipedia - Chevrolet Silverado generation articles / Duramax V8 / C/K (one source)",
+      "url": "https://en.wikipedia.org/wiki/Chevrolet_Silverado",
+      "says": "6.0 Vortec 353 hp @ 5400 (2007-2008)"
+     }
+    ],
+    "independent_sources": 3,
+    "status": "three_sources_not_nhra",
+    "note": "Standard in 2500HD and 3500HD. Trucks above 10,000 lb GVWR (3500HD) rated 312 hp. GM's lineup tables call it LY6; GM's 2007 3500HD sheet gives 9.6:1 compression (an L96 figure) vs 9.4:1 for the 2500HD, so >10,000 lb trucks may have used the L96."
+   },
+   {
+    "gen": "gmt900",
+    "cid": 403,
+    "liters": 6.6,
+    "hp": 365,
+    "hp_basis": "SAE net",
+    "rpo": "LMM",
+    "name": "6.6L / 403 turbo-diesel V8",
+    "common_name": "Duramax 6600 LMM",
+    "trims": [
+     "2500HD",
+     "3500HD"
+    ],
+    "nhra": false,
+    "sources": [
+     {
+      "name": "GM media - 2008 Silverado HD press kit (archived)",
+      "url": "https://web.archive.org/web/2008/http://media.gm.com:80/us/chevrolet/en/product_services/r_trucks/r_c_silverado/08index%20HD.html",
+      "says": "Duramax 6.6L V-8 (LMM) 365 hp @ 3200"
+     },
+     {
+      "name": "Kelley Blue Book 2008 Chevrolet silverado 2500 hd crew cab",
+      "url": "https://www.kbb.com/chevrolet/silverado-2500-hd-crew-cab/2008/",
+      "says": "6.6L turbo diesel 365 @ 3200"
+     },
+     {
+      "name": "Wikipedia - Chevrolet Silverado generation articles / Duramax V8 / C/K (one source)",
+      "url": "https://en.wikipedia.org/wiki/Chevrolet_Silverado",
+      "says": "LMM 365 hp @ 3200, 2007-2010"
+     },
+     {
+      "name": "Diesel Army (Power Automedia) - A Brief History of Duramax Engine Specs (2025-01-13)",
+      "url": "https://www.dieselarmy.com/news/a-brief-history-of-duramax-engine-specs/",
+      "says": "LMM 2007.5-2010, 365 @ 3,100 RPM"
+     }
+    ],
+    "independent_sources": 4,
+    "status": "three_sources_not_nhra",
+    "note": "Optional. Diesel Army puts the peak at 3,100 rpm, GM at 3,200."
+   }
+  ],
+  "2009": [
+   {
+    "gen": "gmt900",
+    "cid": 364,
+    "liters": 6.0,
+    "hp": 360,
+    "hp_basis": "SAE net",
+    "rpo": "LY6",
+    "name": "6.0L / 364 V8",
+    "common_name": "Vortec 6000",
+    "trims": [
+     "2500HD",
+     "3500HD",
+     "2WD and 4WD"
+    ],
+    "nhra": false,
+    "sources": [
+     {
+      "name": "GM media - 2009 Silverado HD press kit (archived)",
+      "url": "https://web.archive.org/web/2009/http://media.gm.com:80/us/chevrolet/en/product_services/r_trucks/r_c_silverado/09index%20HD.html",
+      "says": "Vortec 6.0L V-8 (LY6) 360 hp @ 5400; 322 hp above 10,000 lb GVWR"
+     },
+     {
+      "name": "Kelley Blue Book 2009 Chevrolet silverado 2500 hd crew cab",
+      "url": "https://www.kbb.com/chevrolet/silverado-2500-hd-crew-cab/2009/",
+      "says": "V8, 6.0 Liter; 360 @ 5400"
+     },
+     {
+      "name": "Wikipedia - Chevrolet Silverado generation articles / Duramax V8 / C/K (one source)",
+      "url": "https://en.wikipedia.org/wiki/Chevrolet_Silverado",
+      "says": "6.0 Vortec 360 hp @ 5400 (2009-2014)"
+     }
+    ],
+    "independent_sources": 3,
+    "status": "three_sources_not_nhra",
+    "note": "Standard in 2500HD and 3500HD. Trucks above 10,000 lb GVWR (3500HD) rated 322 hp. GM's lineup tables call it LY6; GM's 2007 3500HD sheet gives 9.6:1 compression (an L96 figure) vs 9.4:1 for the 2500HD, so >10,000 lb trucks may have used the L96."
+   },
+   {
+    "gen": "gmt900",
+    "cid": 403,
+    "liters": 6.6,
+    "hp": 365,
+    "hp_basis": "SAE net",
+    "rpo": "LMM",
+    "name": "6.6L / 403 turbo-diesel V8",
+    "common_name": "Duramax 6600 LMM",
+    "trims": [
+     "2500HD",
+     "3500HD"
+    ],
+    "nhra": false,
+    "sources": [
+     {
+      "name": "GM media - 2009 Silverado HD press kit (archived)",
+      "url": "https://web.archive.org/web/2009/http://media.gm.com:80/us/chevrolet/en/product_services/r_trucks/r_c_silverado/09index%20HD.html",
+      "says": "Duramax 6.6L V-8 (LMM) 365 hp @ 3200"
+     },
+     {
+      "name": "Kelley Blue Book 2009 Chevrolet silverado 2500 hd crew cab",
+      "url": "https://www.kbb.com/chevrolet/silverado-2500-hd-crew-cab/2009/",
+      "says": "6.6L turbo diesel 365 @ 3200"
+     },
+     {
+      "name": "Wikipedia - Chevrolet Silverado generation articles / Duramax V8 / C/K (one source)",
+      "url": "https://en.wikipedia.org/wiki/Chevrolet_Silverado",
+      "says": "LMM 365 hp @ 3200, 2007-2010"
+     },
+     {
+      "name": "Diesel Army (Power Automedia) - A Brief History of Duramax Engine Specs (2025-01-13)",
+      "url": "https://www.dieselarmy.com/news/a-brief-history-of-duramax-engine-specs/",
+      "says": "LMM 2007.5-2010, 365 @ 3,100 RPM"
+     }
+    ],
+    "independent_sources": 4,
+    "status": "three_sources_not_nhra",
+    "note": "Optional. Diesel Army puts the peak at 3,100 rpm, GM at 3,200."
+   }
+  ],
+  "2010": [
+   {
+    "gen": "gmt900",
+    "cid": 364,
+    "liters": 6.0,
+    "hp": 360,
+    "hp_basis": "SAE net",
+    "rpo": "L96",
+    "name": "6.0L / 364 V8",
+    "common_name": "Vortec 6000",
+    "trims": [
+     "2500HD",
+     "3500HD",
+     "2WD and 4WD"
+    ],
+    "nhra": false,
+    "sources": [
+     {
+      "name": "GM/Chevrolet Pressroom 2010 Silverado HD specifications (archived)",
+      "url": "https://web.archive.org/web/20111019214909/https://media.gm.com/media/us/en/chevrolet/vehicles/silveradohd/2010.tab1.html",
+      "says": "Vortec 6.0L V-8 (L96) 360 hp @ 5400; 322 hp above 10,000 lb GVWR"
+     },
+     {
+      "name": "Kelley Blue Book 2010 Chevrolet silverado 2500 hd crew cab",
+      "url": "https://www.kbb.com/chevrolet/silverado-2500-hd-crew-cab/2010/",
+      "says": "V8, 6.0 Liter; 360 @ 5400"
+     },
+     {
+      "name": "Wikipedia - Chevrolet Silverado generation articles / Duramax V8 / C/K (one source)",
+      "url": "https://en.wikipedia.org/wiki/Chevrolet_Silverado",
+      "says": "6.0 Vortec 360 hp @ 5400 (2009-2014)"
+     },
+     {
+      "name": "GM Authority engine pages (L8T, L5P, LML, LC8, L96)",
+      "url": "https://gmauthority.com/blog/gm/gm-engines/",
+      "says": "L96: Silverado HD <10,000 lb 360 hp @ 5400; >10,000 lb 322 hp @ 4400"
+     }
+    ],
+    "independent_sources": 3,
+    "status": "three_sources_not_nhra",
+    "note": "Standard in 2500HD and 3500HD. Trucks above 10,000 lb GVWR (3500HD) rated 322 hp. E85 FlexFuel from 2010 per GM."
+   },
+   {
+    "gen": "gmt900",
+    "cid": 403,
+    "liters": 6.6,
+    "hp": 365,
+    "hp_basis": "SAE net",
+    "rpo": "LMM",
+    "name": "6.6L / 403 turbo-diesel V8",
+    "common_name": "Duramax 6600 LMM",
+    "trims": [
+     "2500HD",
+     "3500HD"
+    ],
+    "nhra": false,
+    "sources": [
+     {
+      "name": "GM/Chevrolet Pressroom 2010 Silverado HD specifications (archived)",
+      "url": "https://web.archive.org/web/20111019214909/https://media.gm.com/media/us/en/chevrolet/vehicles/silveradohd/2010.tab1.html",
+      "says": "Duramax 6.6L V-8 (LMM) 365 hp @ 3200"
+     },
+     {
+      "name": "Kelley Blue Book 2010 Chevrolet silverado 2500 hd crew cab",
+      "url": "https://www.kbb.com/chevrolet/silverado-2500-hd-crew-cab/2010/",
+      "says": "6.6L turbo diesel 365 @ 3200"
+     },
+     {
+      "name": "Wikipedia - Chevrolet Silverado generation articles / Duramax V8 / C/K (one source)",
+      "url": "https://en.wikipedia.org/wiki/Chevrolet_Silverado",
+      "says": "LMM 365 hp @ 3200, 2007-2010"
+     },
+     {
+      "name": "Diesel Army (Power Automedia) - A Brief History of Duramax Engine Specs (2025-01-13)",
+      "url": "https://www.dieselarmy.com/news/a-brief-history-of-duramax-engine-specs/",
+      "says": "LMM 2007.5-2010, 365 @ 3,100 RPM"
+     }
+    ],
+    "independent_sources": 4,
+    "status": "three_sources_not_nhra",
+    "note": "Optional. Diesel Army puts the peak at 3,100 rpm, GM at 3,200."
+   }
+  ],
+  "2011": [
+   {
+    "gen": "gmt900",
+    "cid": 364,
+    "liters": 6.0,
+    "hp": 360,
+    "hp_basis": "SAE net",
+    "rpo": "L96",
+    "name": "6.0L / 364 V8",
+    "common_name": "Vortec 6000",
+    "trims": [
+     "2500HD",
+     "3500HD",
+     "2WD and 4WD"
+    ],
+    "nhra": false,
+    "sources": [
+     {
+      "name": "GM/Chevrolet Pressroom 2011 Silverado HD specifications (archived)",
+      "url": "https://web.archive.org/web/20110722070946/http://media.gm.com:80/media/us/en/chevrolet/vehicles/silveradohd/2011.tab1.html",
+      "says": "Vortec 6.0L V-8 (L96) 360 hp @ 5400"
+     },
+     {
+      "name": "Kelley Blue Book 2011 Chevrolet silverado 2500 hd crew cab",
+      "url": "https://www.kbb.com/chevrolet/silverado-2500-hd-crew-cab/2011/",
+      "says": "V8, 6.0 Liter; 360 @ 5400"
+     },
+     {
+      "name": "Wikipedia - Chevrolet Silverado generation articles / Duramax V8 / C/K (one source)",
+      "url": "https://en.wikipedia.org/wiki/Chevrolet_Silverado",
+      "says": "6.0 Vortec 360 hp @ 5400 (2009-2014)"
+     },
+     {
+      "name": "GM Authority engine pages (L8T, L5P, LML, LC8, L96)",
+      "url": "https://gmauthority.com/blog/gm/gm-engines/",
+      "says": "L96: Silverado HD <10,000 lb 360 hp @ 5400; >10,000 lb 322 hp @ 4400"
+     }
+    ],
+    "independent_sources": 3,
+    "status": "three_sources_not_nhra",
+    "note": "Standard in 2500HD and 3500HD. E85 FlexFuel from 2010 per GM."
+   },
+   {
+    "gen": "gmt900",
+    "cid": 403,
+    "liters": 6.6,
+    "hp": 397,
+    "hp_basis": "SAE net",
+    "rpo": "LML",
+    "name": "6.6L / 403 turbo-diesel V8",
+    "common_name": "Duramax 6600 LML",
+    "trims": [
+     "2500HD",
+     "3500HD"
+    ],
+    "nhra": false,
+    "sources": [
+     {
+      "name": "GM/Chevrolet Pressroom 2011 Silverado HD specifications (archived)",
+      "url": "https://web.archive.org/web/20110722070946/http://media.gm.com:80/media/us/en/chevrolet/vehicles/silveradohd/2011.tab1.html",
+      "says": "Duramax 6.6L (LML) 397 hp @ 3000"
+     },
+     {
+      "name": "Kelley Blue Book 2011 Chevrolet silverado 2500 hd crew cab",
+      "url": "https://www.kbb.com/chevrolet/silverado-2500-hd-crew-cab/2011/",
+      "says": "6.6L turbo diesel 397 @ 3000"
+     },
+     {
+      "name": "Wikipedia - Chevrolet Silverado generation articles / Duramax V8 / C/K (one source)",
+      "url": "https://en.wikipedia.org/wiki/Chevrolet_Silverado",
+      "says": "LML 397 hp @ 3000, 2011-2016"
+     },
+     {
+      "name": "Diesel Army (Power Automedia) - A Brief History of Duramax Engine Specs (2025-01-13)",
+      "url": "https://www.dieselarmy.com/news/a-brief-history-of-duramax-engine-specs/",
+      "says": "LML 2011-2016, 397 @ 3,000 RPM"
+     },
+     {
+      "name": "GM Authority engine pages (L8T, L5P, LML, LC8, L96)",
+      "url": "https://gmauthority.com/blog/gm/gm-engines/",
+      "says": "LML 2011-2016 Silverado HD 397 hp @ 3000"
+     }
+    ],
+    "independent_sources": 4,
+    "status": "three_sources_not_nhra",
+    "note": "Optional."
+   }
+  ],
+  "2012": [
+   {
+    "gen": "gmt900",
+    "cid": 364,
+    "liters": 6.0,
+    "hp": 360,
+    "hp_basis": "SAE net",
+    "rpo": "L96",
+    "name": "6.0L / 364 V8",
+    "common_name": "Vortec 6000",
+    "trims": [
+     "2500HD",
+     "3500HD",
+     "2WD and 4WD"
+    ],
+    "nhra": false,
+    "sources": [
+     {
+      "name": "GM/Chevrolet Pressroom 2012 Silverado HD specifications (archived)",
+      "url": "https://web.archive.org/web/20230710170945/https://media.chevrolet.com/media/us/en/chevrolet/vehicles/silveradohd/2012.tab1.html",
+      "says": "Vortec 6.0L V-8 (L96) 360 hp @ 5400"
+     },
+     {
+      "name": "Kelley Blue Book 2012 Chevrolet silverado 2500 hd crew cab",
+      "url": "https://www.kbb.com/chevrolet/silverado-2500-hd-crew-cab/2012/",
+      "says": "V8, 6.0 Liter; 360 @ 5400"
+     },
+     {
+      "name": "Wikipedia - Chevrolet Silverado generation articles / Duramax V8 / C/K (one source)",
+      "url": "https://en.wikipedia.org/wiki/Chevrolet_Silverado",
+      "says": "6.0 Vortec 360 hp @ 5400 (2009-2014)"
+     },
+     {
+      "name": "GM Authority engine pages (L8T, L5P, LML, LC8, L96)",
+      "url": "https://gmauthority.com/blog/gm/gm-engines/",
+      "says": "L96: Silverado HD <10,000 lb 360 hp @ 5400; >10,000 lb 322 hp @ 4400"
+     }
+    ],
+    "independent_sources": 3,
+    "status": "three_sources_not_nhra",
+    "note": "Standard in 2500HD and 3500HD. E85 FlexFuel from 2010 per GM."
+   },
+   {
+    "gen": "gmt900",
+    "cid": 403,
+    "liters": 6.6,
+    "hp": 397,
+    "hp_basis": "SAE net",
+    "rpo": "LML",
+    "name": "6.6L / 403 turbo-diesel V8",
+    "common_name": "Duramax 6600 LML",
+    "trims": [
+     "2500HD",
+     "3500HD"
+    ],
+    "nhra": false,
+    "sources": [
+     {
+      "name": "GM/Chevrolet Pressroom 2012 Silverado HD specifications (archived)",
+      "url": "https://web.archive.org/web/20230710170945/https://media.chevrolet.com/media/us/en/chevrolet/vehicles/silveradohd/2012.tab1.html",
+      "says": "Duramax 6.6L (LML) 397 hp @ 3000"
+     },
+     {
+      "name": "Kelley Blue Book 2012 Chevrolet silverado 2500 hd crew cab",
+      "url": "https://www.kbb.com/chevrolet/silverado-2500-hd-crew-cab/2012/",
+      "says": "6.6L turbo diesel 397 @ 3000"
+     },
+     {
+      "name": "Wikipedia - Chevrolet Silverado generation articles / Duramax V8 / C/K (one source)",
+      "url": "https://en.wikipedia.org/wiki/Chevrolet_Silverado",
+      "says": "LML 397 hp @ 3000, 2011-2016"
+     },
+     {
+      "name": "Diesel Army (Power Automedia) - A Brief History of Duramax Engine Specs (2025-01-13)",
+      "url": "https://www.dieselarmy.com/news/a-brief-history-of-duramax-engine-specs/",
+      "says": "LML 2011-2016, 397 @ 3,000 RPM"
+     },
+     {
+      "name": "GM Authority engine pages (L8T, L5P, LML, LC8, L96)",
+      "url": "https://gmauthority.com/blog/gm/gm-engines/",
+      "says": "LML 2011-2016 Silverado HD 397 hp @ 3000"
+     }
+    ],
+    "independent_sources": 4,
+    "status": "three_sources_not_nhra",
+    "note": "Optional."
+   }
+  ],
+  "2013": [
+   {
+    "gen": "gmt900",
+    "cid": 364,
+    "liters": 6.0,
+    "hp": 360,
+    "hp_basis": "SAE net",
+    "rpo": "L96",
+    "name": "6.0L / 364 V8",
+    "common_name": "Vortec 6000",
+    "trims": [
+     "2500HD",
+     "3500HD",
+     "2WD and 4WD"
+    ],
+    "nhra": false,
+    "sources": [
+     {
+      "name": "GM/Chevrolet Pressroom 2013 Silverado HD specifications (archived)",
+      "url": "https://web.archive.org/web/20121102151021/http://media.gm.com:80/media/us/en/chevrolet/vehicles/silveradohd/2013.tab1.html",
+      "says": "Vortec 6.0L V-8 (L96) 360 hp @ 5400"
+     },
+     {
+      "name": "Kelley Blue Book 2013 Chevrolet silverado 2500 hd crew cab",
+      "url": "https://www.kbb.com/chevrolet/silverado-2500-hd-crew-cab/2013/",
+      "says": "V8, 6.0 Liter; 360 @ 5400"
+     },
+     {
+      "name": "Wikipedia - Chevrolet Silverado generation articles / Duramax V8 / C/K (one source)",
+      "url": "https://en.wikipedia.org/wiki/Chevrolet_Silverado",
+      "says": "6.0 Vortec 360 hp @ 5400 (2009-2014)"
+     },
+     {
+      "name": "GM Authority engine pages (L8T, L5P, LML, LC8, L96)",
+      "url": "https://gmauthority.com/blog/gm/gm-engines/",
+      "says": "L96: Silverado HD <10,000 lb 360 hp @ 5400; >10,000 lb 322 hp @ 4400"
+     }
+    ],
+    "independent_sources": 3,
+    "status": "three_sources_not_nhra",
+    "note": "Standard in 2500HD and 3500HD. E85 FlexFuel from 2010 per GM."
+   },
+   {
+    "gen": "gmt900",
+    "cid": 364,
+    "liters": 6.0,
+    "hp": 360,
+    "hp_basis": "SAE net",
+    "rpo": "LC8",
+    "name": "6.0L / 364 V8 bi-fuel (CNG/gasoline)",
+    "common_name": "Vortec 6.0 bi-fuel CNG",
+    "trims": [
+     "2500HD (bi-fuel CNG option)"
+    ],
+    "nhra": false,
+    "sources": [
+     {
+      "name": "GM/Chevrolet Pressroom 2013 Silverado HD specifications (archived)",
+      "url": "https://web.archive.org/web/20121102151021/http://media.gm.com:80/media/us/en/chevrolet/vehicles/silveradohd/2013.tab1.html",
+      "says": "LC8 bi-fuel: 360 hp on gasoline, 301 hp @ 5000 on CNG"
+     },
+     {
+      "name": "GM Authority engine pages (L8T, L5P, LML, LC8, L96)",
+      "url": "https://gmauthority.com/blog/gm/gm-engines/",
+      "says": "LC8: Silverado HD gasoline 360 hp; CNG 301 hp @ 5000 (Bi-Fuel, <10K / >10K GVW)"
+     }
+    ],
+    "independent_sources": 1,
+    "status": "single_source",
+    "note": "Bi-fuel CNG/gasoline 6.0; 301 hp on CNG. GM Authority largely repeats GM and gives no years. Wikipedia mentions the bi-fuel option only from mid-2015. Mid-year availability for 2013."
+   },
+   {
+    "gen": "gmt900",
+    "cid": 403,
+    "liters": 6.6,
+    "hp": 397,
+    "hp_basis": "SAE net",
+    "rpo": "LML",
+    "name": "6.6L / 403 turbo-diesel V8",
+    "common_name": "Duramax 6600 LML",
+    "trims": [
+     "2500HD",
+     "3500HD"
+    ],
+    "nhra": false,
+    "sources": [
+     {
+      "name": "GM/Chevrolet Pressroom 2013 Silverado HD specifications (archived)",
+      "url": "https://web.archive.org/web/20121102151021/http://media.gm.com:80/media/us/en/chevrolet/vehicles/silveradohd/2013.tab1.html",
+      "says": "Duramax 6.6L (LML) 397 hp @ 3000"
+     },
+     {
+      "name": "Kelley Blue Book 2013 Chevrolet silverado 2500 hd crew cab",
+      "url": "https://www.kbb.com/chevrolet/silverado-2500-hd-crew-cab/2013/",
+      "says": "6.6L turbo diesel 397 @ 3000"
+     },
+     {
+      "name": "Wikipedia - Chevrolet Silverado generation articles / Duramax V8 / C/K (one source)",
+      "url": "https://en.wikipedia.org/wiki/Chevrolet_Silverado",
+      "says": "LML 397 hp @ 3000, 2011-2016"
+     },
+     {
+      "name": "Diesel Army (Power Automedia) - A Brief History of Duramax Engine Specs (2025-01-13)",
+      "url": "https://www.dieselarmy.com/news/a-brief-history-of-duramax-engine-specs/",
+      "says": "LML 2011-2016, 397 @ 3,000 RPM"
+     },
+     {
+      "name": "GM Authority engine pages (L8T, L5P, LML, LC8, L96)",
+      "url": "https://gmauthority.com/blog/gm/gm-engines/",
+      "says": "LML 2011-2016 Silverado HD 397 hp @ 3000"
+     }
+    ],
+    "independent_sources": 4,
+    "status": "three_sources_not_nhra",
+    "note": "Optional."
+   }
+  ],
+  "2014": [
+   {
+    "gen": "gmt900",
+    "cid": 364,
+    "liters": 6.0,
+    "hp": 360,
+    "hp_basis": "SAE net",
+    "rpo": "L96",
+    "name": "6.0L / 364 V8",
+    "common_name": "Vortec 6000",
+    "trims": [
+     "2500HD",
+     "3500HD",
+     "2WD and 4WD"
+    ],
+    "nhra": false,
+    "sources": [
+     {
+      "name": "GM/Chevrolet Pressroom 2014 Silverado HD specifications (archived)",
+      "url": "https://web.archive.org/web/20140330143057/http://media.gm.com:80/media/us/en/chevrolet/vehicles/silveradohd/2014.tab1.html",
+      "says": "Vortec 6.0L V-8 (L96) 360 hp @ 5400"
+     },
+     {
+      "name": "Kelley Blue Book 2014 Chevrolet silverado 2500 hd crew cab",
+      "url": "https://www.kbb.com/chevrolet/silverado-2500-hd-crew-cab/2014/",
+      "says": "V8, 6.0 Liter; 360 @ 5400"
+     },
+     {
+      "name": "Wikipedia - Chevrolet Silverado generation articles / Duramax V8 / C/K (one source)",
+      "url": "https://en.wikipedia.org/wiki/Chevrolet_Silverado",
+      "says": "6.0 Vortec 360 hp @ 5400 (2009-2014)"
+     },
+     {
+      "name": "GM Authority engine pages (L8T, L5P, LML, LC8, L96)",
+      "url": "https://gmauthority.com/blog/gm/gm-engines/",
+      "says": "L96: Silverado HD <10,000 lb 360 hp @ 5400; >10,000 lb 322 hp @ 4400"
+     }
+    ],
+    "independent_sources": 3,
+    "status": "three_sources_not_nhra",
+    "note": "Standard in 2500HD and 3500HD. E85 FlexFuel from 2010 per GM."
+   },
+   {
+    "gen": "gmt900",
+    "cid": 364,
+    "liters": 6.0,
+    "hp": 360,
+    "hp_basis": "SAE net",
+    "rpo": "LC8",
+    "name": "6.0L / 364 V8 bi-fuel (CNG/gasoline)",
+    "common_name": "Vortec 6.0 bi-fuel CNG",
+    "trims": [
+     "2500HD (bi-fuel CNG option)"
+    ],
+    "nhra": false,
+    "sources": [
+     {
+      "name": "GM/Chevrolet Pressroom 2014 Silverado HD specifications (archived)",
+      "url": "https://web.archive.org/web/20140330143057/http://media.gm.com:80/media/us/en/chevrolet/vehicles/silveradohd/2014.tab1.html",
+      "says": "LC8 bi-fuel: 360 hp on gasoline, 301 hp @ 5000 on CNG"
+     },
+     {
+      "name": "Kelley Blue Book 2014 Chevrolet silverado 2500 hd crew cab",
+      "url": "https://www.kbb.com/chevrolet/silverado-2500-hd-crew-cab/2014/",
+      "says": "available engines include V8, Natural Gas, 6.0L; 301 hp listed"
+     },
+     {
+      "name": "GM Authority engine pages (L8T, L5P, LML, LC8, L96)",
+      "url": "https://gmauthority.com/blog/gm/gm-engines/",
+      "says": "LC8: Silverado HD gasoline 360 hp; CNG 301 hp @ 5000 (Bi-Fuel, <10K / >10K GVW)"
+     }
+    ],
+    "independent_sources": 2,
+    "status": "two_sources_agree",
+    "note": "Bi-fuel CNG/gasoline 6.0; 301 hp on CNG. GM Authority largely repeats GM and gives no years. Wikipedia mentions the bi-fuel option only from mid-2015."
+   },
+   {
+    "gen": "gmt900",
+    "cid": 403,
+    "liters": 6.6,
+    "hp": 397,
+    "hp_basis": "SAE net",
+    "rpo": "LML",
+    "name": "6.6L / 403 turbo-diesel V8",
+    "common_name": "Duramax 6600 LML",
+    "trims": [
+     "2500HD",
+     "3500HD"
+    ],
+    "nhra": false,
+    "sources": [
+     {
+      "name": "GM/Chevrolet Pressroom 2014 Silverado HD specifications (archived)",
+      "url": "https://web.archive.org/web/20140330143057/http://media.gm.com:80/media/us/en/chevrolet/vehicles/silveradohd/2014.tab1.html",
+      "says": "Duramax 6.6L (LML) 397 hp @ 3000"
+     },
+     {
+      "name": "Kelley Blue Book 2014 Chevrolet silverado 2500 hd crew cab",
+      "url": "https://www.kbb.com/chevrolet/silverado-2500-hd-crew-cab/2014/",
+      "says": "6.6L turbo diesel 397 @ 3000"
+     },
+     {
+      "name": "Wikipedia - Chevrolet Silverado generation articles / Duramax V8 / C/K (one source)",
+      "url": "https://en.wikipedia.org/wiki/Chevrolet_Silverado",
+      "says": "LML 397 hp @ 3000, 2011-2016"
+     },
+     {
+      "name": "Diesel Army (Power Automedia) - A Brief History of Duramax Engine Specs (2025-01-13)",
+      "url": "https://www.dieselarmy.com/news/a-brief-history-of-duramax-engine-specs/",
+      "says": "LML 2011-2016, 397 @ 3,000 RPM"
+     },
+     {
+      "name": "GM Authority engine pages (L8T, L5P, LML, LC8, L96)",
+      "url": "https://gmauthority.com/blog/gm/gm-engines/",
+      "says": "LML 2011-2016 Silverado HD 397 hp @ 3000"
+     }
+    ],
+    "independent_sources": 4,
+    "status": "three_sources_not_nhra",
+    "note": "Optional."
+   }
+  ],
+  "2015": [
+   {
+    "gen": "k2xx",
+    "cid": 364,
+    "liters": 6.0,
+    "hp": 360,
+    "hp_basis": "SAE net",
+    "rpo": "L96",
+    "name": "6.0L / 364 V8",
+    "common_name": "Vortec 6000",
+    "trims": [
+     "2500HD",
+     "3500HD",
+     "2WD and 4WD"
+    ],
+    "nhra": false,
+    "sources": [
+     {
+      "name": "GM/Chevrolet Pressroom 2015 Silverado HD specifications (archived)",
+      "url": "https://web.archive.org/web/20140314225745/http://media.gm.com:80/media/us/en/chevrolet/vehicles/silveradohd/2015.tab1.html",
+      "says": "Vortec 6.0L V-8 (L96) 360 hp @ 5400"
+     },
+     {
+      "name": "Kelley Blue Book 2015 Chevrolet silverado 2500 hd crew cab",
+      "url": "https://www.kbb.com/chevrolet/silverado-2500-hd-crew-cab/2015/",
+      "says": "V8, Flex Fuel, 6.0 Liter; 360 @ 5400"
+     },
+     {
+      "name": "Wikipedia - Chevrolet Silverado generation articles / Duramax V8 / C/K (one source)",
+      "url": "https://en.wikipedia.org/wiki/Chevrolet_Silverado",
+      "says": "6.0 L96 360 hp @ 5400, 2015-2019"
+     }
+    ],
+    "independent_sources": 3,
+    "status": "three_sources_not_nhra",
+    "note": "Standard. E85 FlexFuel."
+   },
+   {
+    "gen": "k2xx",
+    "cid": 364,
+    "liters": 6.0,
+    "hp": 360,
+    "hp_basis": "SAE net",
+    "rpo": "LC8",
+    "name": "6.0L / 364 V8 bi-fuel (CNG/gasoline)",
+    "common_name": "Vortec 6.0 bi-fuel CNG",
+    "trims": [
+     "2500HD (bi-fuel CNG option)"
+    ],
+    "nhra": false,
+    "sources": [
+     {
+      "name": "GM/Chevrolet Pressroom 2015 Silverado HD specifications (archived)",
+      "url": "https://web.archive.org/web/20140314225745/http://media.gm.com:80/media/us/en/chevrolet/vehicles/silveradohd/2015.tab1.html",
+      "says": "LC8 gas 360 hp / CNG 301 hp @ 5000"
+     },
+     {
+      "name": "GM Pressroom 2015 Silverado HD CNG (bi-fuel) specifications (archived)",
+      "url": "https://web.archive.org/web/20141111110843/http://media.gm.com:80/media/us/en/chevrolet/vehicles/silverado-hd-cng/2015.tab1.html",
+      "says": "2015 Silverado HD CNG: 360 hp gas, 301 hp @ 5000 CNG"
+     },
+     {
+      "name": "Kelley Blue Book 2015 Chevrolet silverado 2500 hd crew cab",
+      "url": "https://www.kbb.com/chevrolet/silverado-2500-hd-crew-cab/2015/",
+      "says": "available engines include V8, CNG / Compressed Natural Gas, 6.0 Liter"
+     },
+     {
+      "name": "Wikipedia - Chevrolet Silverado generation articles / Duramax V8 / C/K (one source)",
+      "url": "https://en.wikipedia.org/wiki/Chevrolet_Silverado",
+      "says": "bi-fuel CNG option for 6.0 Vortec models from mid-2015"
+     },
+     {
+      "name": "GM Authority engine pages (L8T, L5P, LML, LC8, L96)",
+      "url": "https://gmauthority.com/blog/gm/gm-engines/",
+      "says": "LC8 Silverado HD Bi-Fuel (CNG), 301 hp on CNG"
+     }
+    ],
+    "independent_sources": 3,
+    "status": "three_sources_not_nhra",
+    "note": "Bi-fuel CNG/gasoline 6.0 factory option; 301 hp on CNG. GM Authority largely repeats GM."
+   },
+   {
+    "gen": "k2xx",
+    "cid": 403,
+    "liters": 6.6,
+    "hp": 397,
+    "hp_basis": "SAE net",
+    "rpo": "LML",
+    "name": "6.6L / 403 turbo-diesel V8",
+    "common_name": "Duramax 6600 LML",
+    "trims": [
+     "2500HD",
+     "3500HD"
+    ],
+    "nhra": false,
+    "sources": [
+     {
+      "name": "GM/Chevrolet Pressroom 2015 Silverado HD specifications (archived)",
+      "url": "https://web.archive.org/web/20140314225745/http://media.gm.com:80/media/us/en/chevrolet/vehicles/silveradohd/2015.tab1.html",
+      "says": "Duramax 6.6L (LML) 397 hp @ 3000"
+     },
+     {
+      "name": "Kelley Blue Book 2015 Chevrolet silverado 2500 hd crew cab",
+      "url": "https://www.kbb.com/chevrolet/silverado-2500-hd-crew-cab/2015/",
+      "says": "6.6L turbo diesel 397 @ 3000"
+     },
+     {
+      "name": "Wikipedia - Chevrolet Silverado generation articles / Duramax V8 / C/K (one source)",
+      "url": "https://en.wikipedia.org/wiki/Chevrolet_Silverado",
+      "says": "LML 397 hp, 2015-2016"
+     },
+     {
+      "name": "Diesel Army (Power Automedia) - A Brief History of Duramax Engine Specs (2025-01-13)",
+      "url": "https://www.dieselarmy.com/news/a-brief-history-of-duramax-engine-specs/",
+      "says": "LML 2011-2016, 397 @ 3,000"
+     },
+     {
+      "name": "GM Authority engine pages (L8T, L5P, LML, LC8, L96)",
+      "url": "https://gmauthority.com/blog/gm/gm-engines/",
+      "says": "LML 2011-2016 397 hp"
+     }
+    ],
+    "independent_sources": 4,
+    "status": "three_sources_not_nhra",
+    "note": "Optional. KBB's 2015 review text says 380 hp; its spec data says 397 @ 3000."
+   }
+  ],
+  "2016": [
+   {
+    "gen": "k2xx",
+    "cid": 364,
+    "liters": 6.0,
+    "hp": 360,
+    "hp_basis": "SAE net",
+    "rpo": "L96",
+    "name": "6.0L / 364 V8",
+    "common_name": "Vortec 6000",
+    "trims": [
+     "2500HD",
+     "3500HD",
+     "2WD and 4WD"
+    ],
+    "nhra": false,
+    "sources": [
+     {
+      "name": "Kelley Blue Book 2016 Chevrolet silverado 2500 hd crew cab",
+      "url": "https://www.kbb.com/chevrolet/silverado-2500-hd-crew-cab/2016/",
+      "says": "V8, Flex Fuel, 6.0 Liter; 360 @ 5400"
+     },
+     {
+      "name": "Wikipedia - Chevrolet Silverado generation articles / Duramax V8 / C/K (one source)",
+      "url": "https://en.wikipedia.org/wiki/Chevrolet_Silverado",
+      "says": "6.0 L96 360 hp @ 5400, 2015-2019"
+     }
+    ],
+    "independent_sources": 2,
+    "status": "two_sources_agree",
+    "note": "Standard. E85 FlexFuel. No GM spec sheet found for this year."
+   },
+   {
+    "gen": "k2xx",
+    "cid": 364,
+    "liters": 6.0,
+    "hp": 360,
+    "hp_basis": "SAE net",
+    "rpo": "LC8",
+    "name": "6.0L / 364 V8 bi-fuel (CNG/gasoline)",
+    "common_name": "Vortec 6.0 bi-fuel CNG",
+    "trims": [
+     "2500HD (bi-fuel CNG option)"
+    ],
+    "nhra": false,
+    "sources": [
+     {
+      "name": "Kelley Blue Book 2016 Chevrolet silverado 2500 hd crew cab",
+      "url": "https://www.kbb.com/chevrolet/silverado-2500-hd-crew-cab/2016/",
+      "says": "available engines include V8, CNG / Compressed Natural Gas, 6.0 Liter"
+     },
+     {
+      "name": "Wikipedia - Chevrolet Silverado generation articles / Duramax V8 / C/K (one source)",
+      "url": "https://en.wikipedia.org/wiki/Chevrolet_Silverado",
+      "says": "bi-fuel CNG option for 6.0 Vortec models from mid-2015"
+     },
+     {
+      "name": "GM Authority engine pages (L8T, L5P, LML, LC8, L96)",
+      "url": "https://gmauthority.com/blog/gm/gm-engines/",
+      "says": "LC8 Silverado HD Bi-Fuel (CNG), 301 hp on CNG"
+     }
+    ],
+    "independent_sources": 3,
+    "status": "three_sources_not_nhra",
+    "note": "Bi-fuel CNG/gasoline 6.0 factory option; 301 hp on CNG. GM Authority largely repeats GM."
+   },
+   {
+    "gen": "k2xx",
+    "cid": 403,
+    "liters": 6.6,
+    "hp": 397,
+    "hp_basis": "SAE net",
+    "rpo": "LML",
+    "name": "6.6L / 403 turbo-diesel V8",
+    "common_name": "Duramax 6600 LML",
+    "trims": [
+     "2500HD",
+     "3500HD"
+    ],
+    "nhra": false,
+    "sources": [
+     {
+      "name": "Kelley Blue Book 2016 Chevrolet silverado 2500 hd crew cab",
+      "url": "https://www.kbb.com/chevrolet/silverado-2500-hd-crew-cab/2016/",
+      "says": "6.6L turbo diesel 397 @ 3000"
+     },
+     {
+      "name": "Wikipedia - Chevrolet Silverado generation articles / Duramax V8 / C/K (one source)",
+      "url": "https://en.wikipedia.org/wiki/Chevrolet_Silverado",
+      "says": "LML 397 hp, 2015-2016"
+     },
+     {
+      "name": "Diesel Army (Power Automedia) - A Brief History of Duramax Engine Specs (2025-01-13)",
+      "url": "https://www.dieselarmy.com/news/a-brief-history-of-duramax-engine-specs/",
+      "says": "LML 2011-2016, 397 @ 3,000"
+     },
+     {
+      "name": "GM Authority engine pages (L8T, L5P, LML, LC8, L96)",
+      "url": "https://gmauthority.com/blog/gm/gm-engines/",
+      "says": "LML 2011-2016 397 hp"
+     }
+    ],
+    "independent_sources": 4,
+    "status": "three_sources_not_nhra",
+    "note": "Optional."
+   }
+  ],
+  "2017": [
+   {
+    "gen": "k2xx",
+    "cid": 364,
+    "liters": 6.0,
+    "hp": 360,
+    "hp_basis": "SAE net",
+    "rpo": "L96",
+    "name": "6.0L / 364 V8",
+    "common_name": "Vortec 6000",
+    "trims": [
+     "2500HD",
+     "3500HD",
+     "2WD and 4WD"
+    ],
+    "nhra": false,
+    "sources": [
+     {
+      "name": "GM/Chevrolet Pressroom 2017 Silverado HD specifications (archived)",
+      "url": "https://web.archive.org/web/20220502211449/https://media.chevrolet.com/media/us/en/chevrolet/vehicles/silveradohd/2017.tab1.html",
+      "says": "Vortec 6.0L V-8 (L96) 360 hp @ 5400"
+     },
+     {
+      "name": "Kelley Blue Book 2017 Chevrolet silverado 2500 hd crew cab",
+      "url": "https://www.kbb.com/chevrolet/silverado-2500-hd-crew-cab/2017/",
+      "says": "V8, Flex Fuel, 6.0 Liter; 360 @ 5400"
+     },
+     {
+      "name": "Wikipedia - Chevrolet Silverado generation articles / Duramax V8 / C/K (one source)",
+      "url": "https://en.wikipedia.org/wiki/Chevrolet_Silverado",
+      "says": "6.0 L96 360 hp @ 5400, 2015-2019"
+     }
+    ],
+    "independent_sources": 3,
+    "status": "three_sources_not_nhra",
+    "note": "Standard. E85 FlexFuel."
+   },
+   {
+    "gen": "k2xx",
+    "cid": 364,
+    "liters": 6.0,
+    "hp": 360,
+    "hp_basis": "SAE net",
+    "rpo": "LC8",
+    "name": "6.0L / 364 V8 bi-fuel (CNG/gasoline)",
+    "common_name": "Vortec 6.0 bi-fuel CNG",
+    "trims": [
+     "2500HD (bi-fuel CNG option)"
+    ],
+    "nhra": false,
+    "sources": [
+     {
+      "name": "Kelley Blue Book 2017 Chevrolet silverado 2500 hd crew cab",
+      "url": "https://www.kbb.com/chevrolet/silverado-2500-hd-crew-cab/2017/",
+      "says": "301 hp (CNG) among listed ratings"
+     },
+     {
+      "name": "Wikipedia - Chevrolet Silverado generation articles / Duramax V8 / C/K (one source)",
+      "url": "https://en.wikipedia.org/wiki/Chevrolet_Silverado",
+      "says": "bi-fuel CNG option for 6.0 Vortec models from mid-2015"
+     },
+     {
+      "name": "GM Authority engine pages (L8T, L5P, LML, LC8, L96)",
+      "url": "https://gmauthority.com/blog/gm/gm-engines/",
+      "says": "LC8 Silverado HD Bi-Fuel (CNG), 301 hp on CNG"
+     }
+    ],
+    "independent_sources": 3,
+    "status": "three_sources_not_nhra",
+    "note": "Bi-fuel CNG/gasoline 6.0 factory option; 301 hp on CNG. GM Authority largely repeats GM."
+   },
+   {
+    "gen": "k2xx",
+    "cid": 403,
+    "liters": 6.6,
+    "hp": 445,
+    "hp_basis": "SAE net",
+    "rpo": "L5P",
+    "name": "6.6L / 403 turbo-diesel V8",
+    "common_name": "Duramax L5P",
+    "trims": [
+     "2500HD",
+     "3500HD"
+    ],
+    "nhra": false,
+    "sources": [
+     {
+      "name": "GM/Chevrolet Pressroom 2017 Silverado HD specifications (archived)",
+      "url": "https://web.archive.org/web/20220502211449/https://media.chevrolet.com/media/us/en/chevrolet/vehicles/silveradohd/2017.tab1.html",
+      "says": "Duramax 6.6L V-8 turbo-diesel 445 hp @ 2800 (SAE certified)"
+     },
+     {
+      "name": "Kelley Blue Book 2017 Chevrolet silverado 2500 hd crew cab",
+      "url": "https://www.kbb.com/chevrolet/silverado-2500-hd-crew-cab/2017/",
+      "says": "6.6L turbo diesel 445 @ 2800"
+     },
+     {
+      "name": "Wikipedia - Chevrolet Silverado generation articles / Duramax V8 / C/K (one source)",
+      "url": "https://en.wikipedia.org/wiki/Chevrolet_Silverado",
+      "says": "L5P 445 hp @ 2800, 2017-2019"
+     },
+     {
+      "name": "Diesel Army (Power Automedia) - A Brief History of Duramax Engine Specs (2025-01-13)",
+      "url": "https://www.dieselarmy.com/news/a-brief-history-of-duramax-engine-specs/",
+      "says": "L5P 2017-, 445 @ 2,800"
+     },
+     {
+      "name": "GM Authority engine pages (L8T, L5P, LML, LC8, L96)",
+      "url": "https://gmauthority.com/blog/gm/gm-engines/",
+      "says": "L5P 2017-2023 Silverado HD 445 hp @ 2800"
+     }
+    ],
+    "independent_sources": 4,
+    "status": "three_sources_not_nhra",
+    "note": "Optional."
+   }
+  ],
+  "2018": [
+   {
+    "gen": "k2xx",
+    "cid": 364,
+    "liters": 6.0,
+    "hp": 360,
+    "hp_basis": "SAE net",
+    "rpo": "L96",
+    "name": "6.0L / 364 V8",
+    "common_name": "Vortec 6000",
+    "trims": [
+     "2500HD",
+     "3500HD",
+     "2WD and 4WD"
+    ],
+    "nhra": false,
+    "sources": [
+     {
+      "name": "GM/Chevrolet Pressroom 2018 Silverado HD specifications (archived)",
+      "url": "https://web.archive.org/web/20240106020118/https://media.chevrolet.com/media/us/en/chevrolet/vehicles/silveradohd/2018.tab1.html",
+      "says": "Vortec 6.0L V-8 (L96) 360 hp @ 5400"
+     },
+     {
+      "name": "Kelley Blue Book 2018 Chevrolet silverado 2500 hd crew cab",
+      "url": "https://www.kbb.com/chevrolet/silverado-2500-hd-crew-cab/2018/",
+      "says": "V8, Flex Fuel, 6.0 Liter; 360 @ 5400"
+     },
+     {
+      "name": "Wikipedia - Chevrolet Silverado generation articles / Duramax V8 / C/K (one source)",
+      "url": "https://en.wikipedia.org/wiki/Chevrolet_Silverado",
+      "says": "6.0 L96 360 hp @ 5400, 2015-2019"
+     }
+    ],
+    "independent_sources": 3,
+    "status": "three_sources_not_nhra",
+    "note": "Standard. E85 FlexFuel."
+   },
+   {
+    "gen": "k2xx",
+    "cid": 364,
+    "liters": 6.0,
+    "hp": 360,
+    "hp_basis": "SAE net",
+    "rpo": "LC8",
+    "name": "6.0L / 364 V8 bi-fuel (CNG/gasoline)",
+    "common_name": "Vortec 6.0 bi-fuel CNG",
+    "trims": [
+     "2500HD (bi-fuel CNG option)"
+    ],
+    "nhra": false,
+    "sources": [
+     {
+      "name": "Kelley Blue Book 2018 Chevrolet silverado 2500 hd crew cab",
+      "url": "https://www.kbb.com/chevrolet/silverado-2500-hd-crew-cab/2018/",
+      "says": "available engines include V8, CNG / Compressed Natural Gas, 6.0 Liter"
+     },
+     {
+      "name": "Wikipedia - Chevrolet Silverado generation articles / Duramax V8 / C/K (one source)",
+      "url": "https://en.wikipedia.org/wiki/Chevrolet_Silverado",
+      "says": "bi-fuel CNG option for 6.0 Vortec models from mid-2015"
+     },
+     {
+      "name": "GM Authority engine pages (L8T, L5P, LML, LC8, L96)",
+      "url": "https://gmauthority.com/blog/gm/gm-engines/",
+      "says": "LC8 Silverado HD Bi-Fuel (CNG), 301 hp on CNG"
+     }
+    ],
+    "independent_sources": 3,
+    "status": "three_sources_not_nhra",
+    "note": "Bi-fuel CNG/gasoline 6.0 factory option; 301 hp on CNG. GM Authority largely repeats GM."
+   },
+   {
+    "gen": "k2xx",
+    "cid": 403,
+    "liters": 6.6,
+    "hp": 445,
+    "hp_basis": "SAE net",
+    "rpo": "L5P",
+    "name": "6.6L / 403 turbo-diesel V8",
+    "common_name": "Duramax L5P",
+    "trims": [
+     "2500HD",
+     "3500HD"
+    ],
+    "nhra": false,
+    "sources": [
+     {
+      "name": "GM/Chevrolet Pressroom 2018 Silverado HD specifications (archived)",
+      "url": "https://web.archive.org/web/20240106020118/https://media.chevrolet.com/media/us/en/chevrolet/vehicles/silveradohd/2018.tab1.html",
+      "says": "Duramax 6.6L V-8 turbo-diesel 445 hp @ 2800 (SAE certified)"
+     },
+     {
+      "name": "Kelley Blue Book 2018 Chevrolet silverado 2500 hd crew cab",
+      "url": "https://www.kbb.com/chevrolet/silverado-2500-hd-crew-cab/2018/",
+      "says": "6.6L turbo diesel 445 @ 2800"
+     },
+     {
+      "name": "Wikipedia - Chevrolet Silverado generation articles / Duramax V8 / C/K (one source)",
+      "url": "https://en.wikipedia.org/wiki/Chevrolet_Silverado",
+      "says": "L5P 445 hp @ 2800, 2017-2019"
+     },
+     {
+      "name": "Diesel Army (Power Automedia) - A Brief History of Duramax Engine Specs (2025-01-13)",
+      "url": "https://www.dieselarmy.com/news/a-brief-history-of-duramax-engine-specs/",
+      "says": "L5P 2017-, 445 @ 2,800"
+     },
+     {
+      "name": "GM Authority engine pages (L8T, L5P, LML, LC8, L96)",
+      "url": "https://gmauthority.com/blog/gm/gm-engines/",
+      "says": "L5P 2017-2023 Silverado HD 445 hp @ 2800"
+     }
+    ],
+    "independent_sources": 4,
+    "status": "three_sources_not_nhra",
+    "note": "Optional."
+   }
+  ],
+  "2019": [
+   {
+    "gen": "k2xx",
+    "cid": 364,
+    "liters": 6.0,
+    "hp": 360,
+    "hp_basis": "SAE net",
+    "rpo": "L96",
+    "name": "6.0L / 364 V8",
+    "common_name": "Vortec 6000",
+    "trims": [
+     "2500HD",
+     "3500HD",
+     "2WD and 4WD"
+    ],
+    "nhra": false,
+    "sources": [
+     {
+      "name": "Kelley Blue Book 2019 Chevrolet silverado 2500 hd crew cab",
+      "url": "https://www.kbb.com/chevrolet/silverado-2500-hd-crew-cab/2019/",
+      "says": "V8, Flex Fuel, 6.0 Liter; 360 @ 5400"
+     },
+     {
+      "name": "Wikipedia - Chevrolet Silverado generation articles / Duramax V8 / C/K (one source)",
+      "url": "https://en.wikipedia.org/wiki/Chevrolet_Silverado",
+      "says": "6.0 L96 360 hp @ 5400, 2015-2019"
+     }
+    ],
+    "independent_sources": 2,
+    "status": "two_sources_agree",
+    "note": "Standard. E85 FlexFuel. No GM spec sheet found for this year."
+   },
+   {
+    "gen": "k2xx",
+    "cid": 403,
+    "liters": 6.6,
+    "hp": 445,
+    "hp_basis": "SAE net",
+    "rpo": "L5P",
+    "name": "6.6L / 403 turbo-diesel V8",
+    "common_name": "Duramax L5P",
+    "trims": [
+     "2500HD",
+     "3500HD"
+    ],
+    "nhra": false,
+    "sources": [
+     {
+      "name": "Kelley Blue Book 2019 Chevrolet silverado 2500 hd crew cab",
+      "url": "https://www.kbb.com/chevrolet/silverado-2500-hd-crew-cab/2019/",
+      "says": "6.6L turbo diesel 445 @ 2800"
+     },
+     {
+      "name": "Wikipedia - Chevrolet Silverado generation articles / Duramax V8 / C/K (one source)",
+      "url": "https://en.wikipedia.org/wiki/Chevrolet_Silverado",
+      "says": "L5P 445 hp @ 2800, 2017-2019"
+     },
+     {
+      "name": "Diesel Army (Power Automedia) - A Brief History of Duramax Engine Specs (2025-01-13)",
+      "url": "https://www.dieselarmy.com/news/a-brief-history-of-duramax-engine-specs/",
+      "says": "L5P 2017-, 445 @ 2,800"
+     },
+     {
+      "name": "GM Authority engine pages (L8T, L5P, LML, LC8, L96)",
+      "url": "https://gmauthority.com/blog/gm/gm-engines/",
+      "says": "L5P 2017-2023 Silverado HD 445 hp @ 2800"
+     }
+    ],
+    "independent_sources": 4,
+    "status": "three_sources_not_nhra",
+    "note": "Optional."
+   }
+  ],
+  "2020": [
+   {
+    "gen": "t1",
+    "cid": 403,
+    "liters": 6.6,
+    "hp": 401,
+    "hp_basis": "SAE net",
+    "rpo": "L8T",
+    "name": "6.6L / 403 V8 (gas)",
+    "common_name": "6.6L gas V8 (L8T)",
+    "trims": [
+     "2500HD",
+     "3500HD",
+     "2WD and 4WD"
+    ],
+    "nhra": false,
+    "sources": [
+     {
+      "name": "GM/Chevrolet Pressroom 2020 Silverado HD specifications (archived)",
+      "url": "https://web.archive.org/web/20200204191410/https://media.chevrolet.com/media/us/en/chevrolet/vehicles/silveradohd/2020.tab1.html",
+      "says": "6.6L V-8 gasoline 401 hp @ 5200 (SAE certified)"
+     },
+     {
+      "name": "Kelley Blue Book 2020 Chevrolet silverado 2500 hd crew cab",
+      "url": "https://www.kbb.com/chevrolet/silverado-2500-hd-crew-cab/2020/",
+      "says": "V8, 6.6 Liter; 401 @ 5200"
+     },
+     {
+      "name": "GM Authority engine pages (L8T, L5P, LML, LC8, L96)",
+      "url": "https://gmauthority.com/blog/gm/gm-engines/",
+      "says": "L8T Silverado HD 2020-2023: 401 hp @ 5200"
+     },
+     {
+      "name": "Wikipedia - Chevrolet Silverado generation articles / Duramax V8 / C/K (one source)",
+      "url": "https://en.wikipedia.org/wiki/Chevrolet_Silverado",
+      "says": "6.6 L8T 401 hp @ 5200, 2020-2023"
+     }
+    ],
+    "independent_sources": 3,
+    "status": "three_sources_not_nhra",
+    "note": "Standard gas engine, 2500HD and 3500HD. FlexFuel (E85) by 2022 per GM."
+   },
+   {
+    "gen": "t1",
+    "cid": 403,
+    "liters": 6.6,
+    "hp": 445,
+    "hp_basis": "SAE net",
+    "rpo": "L5P",
+    "name": "6.6L / 403 turbo-diesel V8",
+    "common_name": "Duramax L5P",
+    "trims": [
+     "2500HD",
+     "3500HD"
+    ],
+    "nhra": false,
+    "sources": [
+     {
+      "name": "GM/Chevrolet Pressroom 2020 Silverado HD specifications (archived)",
+      "url": "https://web.archive.org/web/20200204191410/https://media.chevrolet.com/media/us/en/chevrolet/vehicles/silveradohd/2020.tab1.html",
+      "says": "Duramax 6.6L V-8 turbo-diesel 445 hp @ 2800"
+     },
+     {
+      "name": "Kelley Blue Book 2020 Chevrolet silverado 2500 hd crew cab",
+      "url": "https://www.kbb.com/chevrolet/silverado-2500-hd-crew-cab/2020/",
+      "says": "6.6L turbo diesel 445 @ 2800"
+     },
+     {
+      "name": "Wikipedia - Chevrolet Silverado generation articles / Duramax V8 / C/K (one source)",
+      "url": "https://en.wikipedia.org/wiki/Chevrolet_Silverado",
+      "says": "L5P 445 hp @ 2800, 2020-2023"
+     },
+     {
+      "name": "Diesel Army (Power Automedia) - A Brief History of Duramax Engine Specs (2025-01-13)",
+      "url": "https://www.dieselarmy.com/news/a-brief-history-of-duramax-engine-specs/",
+      "says": "L5P 445 @ 2,800"
+     },
+     {
+      "name": "GM Authority engine pages (L8T, L5P, LML, LC8, L96)",
+      "url": "https://gmauthority.com/blog/gm/gm-engines/",
+      "says": "L5P 2017-2023 Silverado HD 445 hp"
+     }
+    ],
+    "independent_sources": 4,
+    "status": "three_sources_not_nhra",
+    "note": "Optional; Allison 10L1000 10-speed."
+   }
+  ],
+  "2021": [
+   {
+    "gen": "t1",
+    "cid": 403,
+    "liters": 6.6,
+    "hp": 401,
+    "hp_basis": "SAE net",
+    "rpo": "L8T",
+    "name": "6.6L / 403 V8 (gas)",
+    "common_name": "6.6L gas V8 (L8T)",
+    "trims": [
+     "2500HD",
+     "3500HD",
+     "2WD and 4WD"
+    ],
+    "nhra": false,
+    "sources": [
+     {
+      "name": "Kelley Blue Book 2021 Chevrolet silverado 2500 hd crew cab",
+      "url": "https://www.kbb.com/chevrolet/silverado-2500-hd-crew-cab/2021/",
+      "says": "V8, 6.6 Liter; 401 @ 5200"
+     },
+     {
+      "name": "GM Authority engine pages (L8T, L5P, LML, LC8, L96)",
+      "url": "https://gmauthority.com/blog/gm/gm-engines/",
+      "says": "L8T Silverado HD 2020-2023: 401 hp @ 5200"
+     },
+     {
+      "name": "Wikipedia - Chevrolet Silverado generation articles / Duramax V8 / C/K (one source)",
+      "url": "https://en.wikipedia.org/wiki/Chevrolet_Silverado",
+      "says": "6.6 L8T 401 hp @ 5200, 2020-2023"
+     }
+    ],
+    "independent_sources": 3,
+    "status": "three_sources_not_nhra",
+    "note": "Standard gas engine, 2500HD and 3500HD. FlexFuel (E85) by 2022 per GM."
+   },
+   {
+    "gen": "t1",
+    "cid": 403,
+    "liters": 6.6,
+    "hp": 445,
+    "hp_basis": "SAE net",
+    "rpo": "L5P",
+    "name": "6.6L / 403 turbo-diesel V8",
+    "common_name": "Duramax L5P",
+    "trims": [
+     "2500HD",
+     "3500HD"
+    ],
+    "nhra": false,
+    "sources": [
+     {
+      "name": "Kelley Blue Book 2021 Chevrolet silverado 2500 hd crew cab",
+      "url": "https://www.kbb.com/chevrolet/silverado-2500-hd-crew-cab/2021/",
+      "says": "6.6L turbo diesel 445 @ 2800"
+     },
+     {
+      "name": "Wikipedia - Chevrolet Silverado generation articles / Duramax V8 / C/K (one source)",
+      "url": "https://en.wikipedia.org/wiki/Chevrolet_Silverado",
+      "says": "L5P 445 hp @ 2800, 2020-2023"
+     },
+     {
+      "name": "Diesel Army (Power Automedia) - A Brief History of Duramax Engine Specs (2025-01-13)",
+      "url": "https://www.dieselarmy.com/news/a-brief-history-of-duramax-engine-specs/",
+      "says": "L5P 445 @ 2,800"
+     },
+     {
+      "name": "GM Authority engine pages (L8T, L5P, LML, LC8, L96)",
+      "url": "https://gmauthority.com/blog/gm/gm-engines/",
+      "says": "L5P 2017-2023 Silverado HD 445 hp"
+     }
+    ],
+    "independent_sources": 4,
+    "status": "three_sources_not_nhra",
+    "note": "Optional; Allison 10L1000 10-speed."
+   }
+  ],
+  "2022": [
+   {
+    "gen": "t1",
+    "cid": 403,
+    "liters": 6.6,
+    "hp": 401,
+    "hp_basis": "SAE net",
+    "rpo": "L8T",
+    "name": "6.6L / 403 V8 (gas)",
+    "common_name": "6.6L gas V8 (L8T)",
+    "trims": [
+     "2500HD",
+     "3500HD",
+     "2WD and 4WD"
+    ],
+    "nhra": false,
+    "sources": [
+     {
+      "name": "GM/Chevrolet Pressroom 2022 Silverado HD specifications (archived)",
+      "url": "https://web.archive.org/web/20220415175011/https://media.chevrolet.com/media/us/en/chevrolet/vehicles/silveradohd/2022.tab1.html",
+      "says": "6.6L V-8 gasoline 401 hp @ 5200 (SAE certified)"
+     },
+     {
+      "name": "Kelley Blue Book 2022 Chevrolet silverado 2500 hd crew cab",
+      "url": "https://www.kbb.com/chevrolet/silverado-2500-hd-crew-cab/2022/",
+      "says": "V8, 6.6 Liter; 401 @ 5200"
+     },
+     {
+      "name": "GM Authority engine pages (L8T, L5P, LML, LC8, L96)",
+      "url": "https://gmauthority.com/blog/gm/gm-engines/",
+      "says": "L8T Silverado HD 2020-2023: 401 hp @ 5200"
+     },
+     {
+      "name": "Wikipedia - Chevrolet Silverado generation articles / Duramax V8 / C/K (one source)",
+      "url": "https://en.wikipedia.org/wiki/Chevrolet_Silverado",
+      "says": "6.6 L8T 401 hp @ 5200, 2020-2023"
+     }
+    ],
+    "independent_sources": 3,
+    "status": "three_sources_not_nhra",
+    "note": "Standard gas engine, 2500HD and 3500HD. FlexFuel (E85) by 2022 per GM."
+   },
+   {
+    "gen": "t1",
+    "cid": 403,
+    "liters": 6.6,
+    "hp": 445,
+    "hp_basis": "SAE net",
+    "rpo": "L5P",
+    "name": "6.6L / 403 turbo-diesel V8",
+    "common_name": "Duramax L5P",
+    "trims": [
+     "2500HD",
+     "3500HD"
+    ],
+    "nhra": false,
+    "sources": [
+     {
+      "name": "GM/Chevrolet Pressroom 2022 Silverado HD specifications (archived)",
+      "url": "https://web.archive.org/web/20220415175011/https://media.chevrolet.com/media/us/en/chevrolet/vehicles/silveradohd/2022.tab1.html",
+      "says": "Duramax 6.6L V-8 turbo-diesel 445 hp @ 2800"
+     },
+     {
+      "name": "Kelley Blue Book 2022 Chevrolet silverado 2500 hd crew cab",
+      "url": "https://www.kbb.com/chevrolet/silverado-2500-hd-crew-cab/2022/",
+      "says": "6.6L turbo diesel 445 @ 2800"
+     },
+     {
+      "name": "Wikipedia - Chevrolet Silverado generation articles / Duramax V8 / C/K (one source)",
+      "url": "https://en.wikipedia.org/wiki/Chevrolet_Silverado",
+      "says": "L5P 445 hp @ 2800, 2020-2023"
+     },
+     {
+      "name": "Diesel Army (Power Automedia) - A Brief History of Duramax Engine Specs (2025-01-13)",
+      "url": "https://www.dieselarmy.com/news/a-brief-history-of-duramax-engine-specs/",
+      "says": "L5P 445 @ 2,800"
+     },
+     {
+      "name": "GM Authority engine pages (L8T, L5P, LML, LC8, L96)",
+      "url": "https://gmauthority.com/blog/gm/gm-engines/",
+      "says": "L5P 2017-2023 Silverado HD 445 hp"
+     }
+    ],
+    "independent_sources": 4,
+    "status": "three_sources_not_nhra",
+    "note": "Optional; Allison 10L1000 10-speed."
+   }
+  ],
+  "2023": [
+   {
+    "gen": "t1",
+    "cid": 403,
+    "liters": 6.6,
+    "hp": 401,
+    "hp_basis": "SAE net",
+    "rpo": "L8T",
+    "name": "6.6L / 403 V8 (gas)",
+    "common_name": "6.6L gas V8 (L8T)",
+    "trims": [
+     "2500HD",
+     "3500HD",
+     "2WD and 4WD"
+    ],
+    "nhra": false,
+    "sources": [
+     {
+      "name": "Kelley Blue Book 2023 Chevrolet silverado 2500 hd crew cab",
+      "url": "https://www.kbb.com/chevrolet/silverado-2500-hd-crew-cab/2023/",
+      "says": "V8, 6.6 Liter; 401 @ 5200"
+     },
+     {
+      "name": "GM Authority engine pages (L8T, L5P, LML, LC8, L96)",
+      "url": "https://gmauthority.com/blog/gm/gm-engines/",
+      "says": "L8T Silverado HD 2020-2023: 401 hp @ 5200"
+     },
+     {
+      "name": "Wikipedia - Chevrolet Silverado generation articles / Duramax V8 / C/K (one source)",
+      "url": "https://en.wikipedia.org/wiki/Chevrolet_Silverado",
+      "says": "6.6 L8T 401 hp @ 5200, 2020-2023"
+     }
+    ],
+    "independent_sources": 3,
+    "status": "three_sources_not_nhra",
+    "note": "Standard gas engine, 2500HD and 3500HD. FlexFuel (E85) by 2022 per GM."
+   },
+   {
+    "gen": "t1",
+    "cid": 403,
+    "liters": 6.6,
+    "hp": 445,
+    "hp_basis": "SAE net",
+    "rpo": "L5P",
+    "name": "6.6L / 403 turbo-diesel V8",
+    "common_name": "Duramax L5P",
+    "trims": [
+     "2500HD",
+     "3500HD"
+    ],
+    "nhra": false,
+    "sources": [
+     {
+      "name": "Kelley Blue Book 2023 Chevrolet silverado 2500 hd crew cab",
+      "url": "https://www.kbb.com/chevrolet/silverado-2500-hd-crew-cab/2023/",
+      "says": "6.6L turbo diesel 445 @ 2800"
+     },
+     {
+      "name": "Wikipedia - Chevrolet Silverado generation articles / Duramax V8 / C/K (one source)",
+      "url": "https://en.wikipedia.org/wiki/Chevrolet_Silverado",
+      "says": "L5P 445 hp @ 2800, 2020-2023"
+     },
+     {
+      "name": "Diesel Army (Power Automedia) - A Brief History of Duramax Engine Specs (2025-01-13)",
+      "url": "https://www.dieselarmy.com/news/a-brief-history-of-duramax-engine-specs/",
+      "says": "L5P 445 @ 2,800"
+     },
+     {
+      "name": "GM Authority engine pages (L8T, L5P, LML, LC8, L96)",
+      "url": "https://gmauthority.com/blog/gm/gm-engines/",
+      "says": "L5P 2017-2023 Silverado HD 445 hp"
+     }
+    ],
+    "independent_sources": 4,
+    "status": "three_sources_not_nhra",
+    "note": "Optional; Allison 10L1000 10-speed."
+   }
+  ],
+  "2024": [
+   {
+    "gen": "t1",
+    "cid": 403,
+    "liters": 6.6,
+    "hp": 401,
+    "hp_basis": "SAE net",
+    "rpo": "L8T",
+    "name": "6.6L / 403 V8 (gas)",
+    "common_name": "6.6L gas V8 (L8T)",
+    "trims": [
+     "2500HD",
+     "3500HD",
+     "2WD and 4WD"
+    ],
+    "nhra": false,
+    "sources": [
+     {
+      "name": "Kelley Blue Book 2024 Chevrolet silverado 2500 hd crew cab",
+      "url": "https://www.kbb.com/chevrolet/silverado-2500-hd-crew-cab/2024/",
+      "says": "V8, 6.6 Liter; 401 @ 5200"
+     },
+     {
+      "name": "GM Authority engine pages (L8T, L5P, LML, LC8, L96)",
+      "url": "https://gmauthority.com/blog/gm/gm-engines/",
+      "says": "L8T Silverado HD 2024-present: 401 hp @ 5200"
+     },
+     {
+      "name": "Guide Auto Web - 2024 Silverado HD gets stronger Duramax (2022-09-26)",
+      "url": "https://www.guideautoweb.com/en/articles/67969/2024-chevrolet-silverado-hd-gets-stronger-duramax-lots-of-new-tech/",
+      "says": "6.6L gas V8 unchanged for 2024"
+     }
+    ],
+    "independent_sources": 3,
+    "status": "three_sources_not_nhra",
+    "note": "Standard gas engine, 2500HD and 3500HD. FlexFuel (E85) by 2022 per GM. Wikipedia lists a 6.6 'L8S' at 412 hp for 2024-2026; GM's 2025/2026 pages, KBB, GM Authority and Guide Auto Web give the unchanged 401 hp L8T. Wikipedia figure not used. Allison 10-speed standard from 2024."
+   },
+   {
+    "gen": "t1",
+    "cid": 403,
+    "liters": 6.6,
+    "hp": 470,
+    "hp_basis": "SAE net",
+    "rpo": "L5P",
+    "name": "6.6L / 403 turbo-diesel V8",
+    "common_name": "Duramax L5P (2024 update, \"L5P E\")",
+    "trims": [
+     "2500HD",
+     "3500HD"
+    ],
+    "nhra": false,
+    "sources": [
+     {
+      "name": "Kelley Blue Book 2024 Chevrolet silverado 2500 hd crew cab",
+      "url": "https://www.kbb.com/chevrolet/silverado-2500-hd-crew-cab/2024/",
+      "says": "review: diesel V8 470 hp / 975 lb-ft (KBB spec table still shows 445)"
+     },
+     {
+      "name": "Wikipedia - Chevrolet Silverado generation articles / Duramax V8 / C/K (one source)",
+      "url": "https://en.wikipedia.org/wiki/Chevrolet_Silverado",
+      "says": "updated L5P 470 hp @ 2800, 2024-2026"
+     },
+     {
+      "name": "Diesel Army (Power Automedia) - A Brief History of Duramax Engine Specs (2025-01-13)",
+      "url": "https://www.dieselarmy.com/news/a-brief-history-of-duramax-engine-specs/",
+      "says": "L5P 445-470 @ 2,800"
+     },
+     {
+      "name": "GM Authority engine pages (L8T, L5P, LML, LC8, L96)",
+      "url": "https://gmauthority.com/blog/gm/gm-engines/",
+      "says": "L5P 2024-present Silverado HD 470 hp @ 2800"
+     },
+     {
+      "name": "Guide Auto Web - 2024 Silverado HD gets stronger Duramax (2022-09-26)",
+      "url": "https://www.guideautoweb.com/en/articles/67969/2024-chevrolet-silverado-hd-gets-stronger-duramax-lots-of-new-tech/",
+      "says": "470 horsepower (+25) and 975 lb-ft (+65)"
+     }
+    ],
+    "independent_sources": 5,
+    "status": "three_sources_not_nhra",
+    "note": "Optional. 2024 update: new turbocharger, revised pistons and controls. KBB's structured spec data still lists 445 hp; its review text gives 470."
+   }
+  ],
+  "2025": [
+   {
+    "gen": "t1",
+    "cid": 403,
+    "liters": 6.6,
+    "hp": 401,
+    "hp_basis": "SAE net",
+    "rpo": "L8T",
+    "name": "6.6L / 403 V8 (gas)",
+    "common_name": "6.6L gas V8 (L8T)",
+    "trims": [
+     "2500HD",
+     "3500HD",
+     "2WD and 4WD"
+    ],
+    "nhra": false,
+    "sources": [
+     {
+      "name": "Chevrolet.com 2025 Silverado HD (previous-year page)",
+      "url": "https://www.chevrolet.com/trucks/previous-year/silverado/2500hd-3500hd",
+      "says": "6.6L V8 gas engine 401 horsepower, 464 lb-ft"
+     },
+     {
+      "name": "Kelley Blue Book 2025 Chevrolet silverado 2500 hd crew cab",
+      "url": "https://www.kbb.com/chevrolet/silverado-2500-hd-crew-cab/2025/",
+      "says": "V8, 6.6 Liter; 401 @ 5200"
+     },
+     {
+      "name": "GM Authority engine pages (L8T, L5P, LML, LC8, L96)",
+      "url": "https://gmauthority.com/blog/gm/gm-engines/",
+      "says": "L8T Silverado HD 2024-present: 401 hp @ 5200"
+     }
+    ],
+    "independent_sources": 2,
+    "status": "two_sources_agree",
+    "note": "Standard gas engine, 2500HD and 3500HD. FlexFuel (E85) by 2022 per GM. Wikipedia lists a 6.6 'L8S' at 412 hp for 2024-2026; GM's 2025/2026 pages, KBB, GM Authority and Guide Auto Web give the unchanged 401 hp L8T. Wikipedia figure not used. Allison 10-speed standard from 2024."
+   },
+   {
+    "gen": "t1",
+    "cid": 403,
+    "liters": 6.6,
+    "hp": 470,
+    "hp_basis": "SAE net",
+    "rpo": "L5P",
+    "name": "6.6L / 403 turbo-diesel V8",
+    "common_name": "Duramax L5P (2024 update, \"L5P E\")",
+    "trims": [
+     "2500HD",
+     "3500HD"
+    ],
+    "nhra": false,
+    "sources": [
+     {
+      "name": "Chevrolet.com 2025 Silverado HD (previous-year page)",
+      "url": "https://www.chevrolet.com/trucks/previous-year/silverado/2500hd-3500hd",
+      "says": "Duramax 6.6L Turbo-Diesel V8 470 horsepower, 975 lb-ft"
+     },
+     {
+      "name": "Kelley Blue Book 2025 Chevrolet silverado 2500 hd crew cab",
+      "url": "https://www.kbb.com/chevrolet/silverado-2500-hd-crew-cab/2025/",
+      "says": "review: diesel V8 470 hp / 975 lb-ft (KBB spec table still shows 445)"
+     },
+     {
+      "name": "Wikipedia - Chevrolet Silverado generation articles / Duramax V8 / C/K (one source)",
+      "url": "https://en.wikipedia.org/wiki/Chevrolet_Silverado",
+      "says": "updated L5P 470 hp @ 2800, 2024-2026"
+     },
+     {
+      "name": "Diesel Army (Power Automedia) - A Brief History of Duramax Engine Specs (2025-01-13)",
+      "url": "https://www.dieselarmy.com/news/a-brief-history-of-duramax-engine-specs/",
+      "says": "L5P 445-470 @ 2,800"
+     },
+     {
+      "name": "GM Authority engine pages (L8T, L5P, LML, LC8, L96)",
+      "url": "https://gmauthority.com/blog/gm/gm-engines/",
+      "says": "L5P 2024-present Silverado HD 470 hp @ 2800"
+     }
+    ],
+    "independent_sources": 4,
+    "status": "three_sources_not_nhra",
+    "note": "Optional. 2024 update: new turbocharger, revised pistons and controls. KBB's structured spec data still lists 445 hp; its review text gives 470."
+   }
+  ],
+  "2026": [
+   {
+    "gen": "t1",
+    "cid": 403,
+    "liters": 6.6,
+    "hp": 401,
+    "hp_basis": "SAE net",
+    "rpo": "L8T",
+    "name": "6.6L / 403 V8 (gas)",
+    "common_name": "6.6L gas V8 (L8T)",
+    "trims": [
+     "2500HD",
+     "3500HD",
+     "2WD and 4WD"
+    ],
+    "nhra": false,
+    "sources": [
+     {
+      "name": "Chevrolet.com 2026 Silverado HD",
+      "url": "https://www.chevrolet.com/trucks/silverado/2500hd-3500hd",
+      "says": "6.6L V8 gas engine 401 horsepower, 464 lb-ft"
+     },
+     {
+      "name": "Kelley Blue Book 2026 Chevrolet silverado 2500 hd crew cab",
+      "url": "https://www.kbb.com/chevrolet/silverado-2500-hd-crew-cab/2026/",
+      "says": "V8, 6.6 Liter; 401 @ 5200"
+     },
+     {
+      "name": "GM Authority engine pages (L8T, L5P, LML, LC8, L96)",
+      "url": "https://gmauthority.com/blog/gm/gm-engines/",
+      "says": "L8T Silverado HD 2024-present: 401 hp @ 5200"
+     }
+    ],
+    "independent_sources": 2,
+    "status": "two_sources_agree",
+    "note": "Standard gas engine, 2500HD and 3500HD. FlexFuel (E85) by 2022 per GM. Wikipedia lists a 6.6 'L8S' at 412 hp for 2024-2026; GM's 2025/2026 pages, KBB, GM Authority and Guide Auto Web give the unchanged 401 hp L8T. Wikipedia figure not used. Allison 10-speed standard from 2024."
+   },
+   {
+    "gen": "t1",
+    "cid": 403,
+    "liters": 6.6,
+    "hp": 470,
+    "hp_basis": "SAE net",
+    "rpo": "L5P",
+    "name": "6.6L / 403 turbo-diesel V8",
+    "common_name": "Duramax L5P (2024 update, \"L5P E\")",
+    "trims": [
+     "2500HD",
+     "3500HD"
+    ],
+    "nhra": false,
+    "sources": [
+     {
+      "name": "Chevrolet.com 2026 Silverado HD",
+      "url": "https://www.chevrolet.com/trucks/silverado/2500hd-3500hd",
+      "says": "Duramax 6.6L Turbo-Diesel V8 470 horsepower, 975 lb-ft"
+     },
+     {
+      "name": "Kelley Blue Book 2026 Chevrolet silverado 2500 hd crew cab",
+      "url": "https://www.kbb.com/chevrolet/silverado-2500-hd-crew-cab/2026/",
+      "says": "review: diesel V8 470 hp / 975 lb-ft (KBB spec table still shows 445)"
+     },
+     {
+      "name": "Wikipedia - Chevrolet Silverado generation articles / Duramax V8 / C/K (one source)",
+      "url": "https://en.wikipedia.org/wiki/Chevrolet_Silverado",
+      "says": "updated L5P 470 hp @ 2800, 2024-2026"
+     },
+     {
+      "name": "Diesel Army (Power Automedia) - A Brief History of Duramax Engine Specs (2025-01-13)",
+      "url": "https://www.dieselarmy.com/news/a-brief-history-of-duramax-engine-specs/",
+      "says": "L5P 445-470 @ 2,800"
+     },
+     {
+      "name": "GM Authority engine pages (L8T, L5P, LML, LC8, L96)",
+      "url": "https://gmauthority.com/blog/gm/gm-engines/",
+      "says": "L5P 2024-present Silverado HD 470 hp @ 2800"
+     }
+    ],
+    "independent_sources": 4,
+    "status": "three_sources_not_nhra",
+    "note": "Optional. 2024 update: new turbocharger, revised pistons and controls. KBB's structured spec data still lists 445 hp; its review text gives 470."
+   }
+  ]
+ },
+ "source_index": [
+  {
+   "name": "GM media - 2000 Chevrolet C/K 2500/3500 specifications (archived)",
+   "url": "https://web.archive.org/web/2005/http://media.gm.com:80/division/chevrolet/products/archive_prod_info/00chevy/00ck/ck_specs.htm",
+   "type": "manufacturer"
+  },
+  {
+   "name": "GM media - 2000 Silverado specifications (archived)",
+   "url": "https://web.archive.org/web/2005/http://media.gm.com:80/division/chevrolet/products/archive_prod_info/00chevy/00silverado/silver_specs.htm",
+   "type": "manufacturer"
+  },
+  {
+   "name": "GM Canada media - 1999 Chevrolet Silverado (archived)",
+   "url": "https://web.archive.org/web/2005/http://media.gm.com:80/division/canada/english/products/chevy_truck/archives/1999Silverado.html",
+   "type": "manufacturer"
+  },
+  {
+   "name": "GM media - 2001 Silverado HD specifications (archived)",
+   "url": "https://web.archive.org/web/2002/http://media.gm.com:80/division/chevrolet/products/trucks/01chevy/01silv_hd/specs.html",
+   "type": "manufacturer"
+  },
+  {
+   "name": "GM Canada media - 2002 Chevrolet Silverado (archived)",
+   "url": "https://web.archive.org/web/2003/http://media.gm.com:80/division/canada/english/products/chevy_truck/archives/2002Silverado.html",
+   "type": "manufacturer"
+  },
+  {
+   "name": "GM Canada media - 2003 Chevrolet Silverado (archived)",
+   "url": "https://web.archive.org/web/2005/http://media.gm.com:80/division/canada/english/products/chevy_truck/archives/2003Silverado.html",
+   "type": "manufacturer"
+  },
+  {
+   "name": "GM media - 2003 Silverado HD specifications / model lineup (archived)",
+   "url": "https://web.archive.org/web/2005/http://media.gm.com:80/division/2003_prodinfo/03_chevrolet/03_silverado_hd/specifications.html",
+   "type": "manufacturer"
+  },
+  {
+   "name": "GM media - 2004 Silverado HD specifications (archived)",
+   "url": "https://web.archive.org/web/2005/http://media.gm.com:80/division/2004_prodinfo/chevrolet/trucks/silverado_hd/specs.html",
+   "type": "manufacturer"
+  },
+  {
+   "name": "GM media - 2007 Silverado Classic / Classic HD press kit & HD specs (archived)",
+   "url": "https://web.archive.org/web/2007/http://media.gm.com:80/us/chevrolet/en/product_services/r_trucks/r_c_silverado_classic/index.html",
+   "type": "manufacturer"
+  },
+  {
+   "name": "GM media - 2007 Silverado 2500HD / 3500HD (GMT900) specifications (archived)",
+   "url": "https://web.archive.org/web/2007/http://media.gm.com:80/us/chevrolet/en/product_services/r_trucks/r_c_silverado/07silveradoPK/07_Chevy_SilveradoHD_2500.html",
+   "type": "manufacturer"
+  },
+  {
+   "name": "GM media - 2008 Silverado HD press kit (archived)",
+   "url": "https://web.archive.org/web/2008/http://media.gm.com:80/us/chevrolet/en/product_services/r_trucks/r_c_silverado/08index%20HD.html",
+   "type": "manufacturer"
+  },
+  {
+   "name": "GM media - 2009 Silverado HD press kit (archived)",
+   "url": "https://web.archive.org/web/2009/http://media.gm.com:80/us/chevrolet/en/product_services/r_trucks/r_c_silverado/09index%20HD.html",
+   "type": "manufacturer"
+  },
+  {
+   "name": "GM/Chevrolet Pressroom 2010 Silverado HD specifications (archived)",
+   "url": "https://web.archive.org/web/20111019214909/https://media.gm.com/media/us/en/chevrolet/vehicles/silveradohd/2010.tab1.html",
+   "type": "manufacturer"
+  },
+  {
+   "name": "GM/Chevrolet Pressroom 2011 Silverado HD specifications (archived)",
+   "url": "https://web.archive.org/web/20110722070946/http://media.gm.com:80/media/us/en/chevrolet/vehicles/silveradohd/2011.tab1.html",
+   "type": "manufacturer"
+  },
+  {
+   "name": "GM/Chevrolet Pressroom 2012 Silverado HD specifications (archived)",
+   "url": "https://web.archive.org/web/20230710170945/https://media.chevrolet.com/media/us/en/chevrolet/vehicles/silveradohd/2012.tab1.html",
+   "type": "manufacturer"
+  },
+  {
+   "name": "GM/Chevrolet Pressroom 2013 Silverado HD specifications (archived)",
+   "url": "https://web.archive.org/web/20121102151021/http://media.gm.com:80/media/us/en/chevrolet/vehicles/silveradohd/2013.tab1.html",
+   "type": "manufacturer"
+  },
+  {
+   "name": "GM/Chevrolet Pressroom 2014 Silverado HD specifications (archived)",
+   "url": "https://web.archive.org/web/20140330143057/http://media.gm.com:80/media/us/en/chevrolet/vehicles/silveradohd/2014.tab1.html",
+   "type": "manufacturer"
+  },
+  {
+   "name": "GM/Chevrolet Pressroom 2015 Silverado HD specifications (archived)",
+   "url": "https://web.archive.org/web/20140314225745/http://media.gm.com:80/media/us/en/chevrolet/vehicles/silveradohd/2015.tab1.html",
+   "type": "manufacturer"
+  },
+  {
+   "name": "GM/Chevrolet Pressroom 2017 Silverado HD specifications (archived)",
+   "url": "https://web.archive.org/web/20220502211449/https://media.chevrolet.com/media/us/en/chevrolet/vehicles/silveradohd/2017.tab1.html",
+   "type": "manufacturer"
+  },
+  {
+   "name": "GM/Chevrolet Pressroom 2018 Silverado HD specifications (archived)",
+   "url": "https://web.archive.org/web/20240106020118/https://media.chevrolet.com/media/us/en/chevrolet/vehicles/silveradohd/2018.tab1.html",
+   "type": "manufacturer"
+  },
+  {
+   "name": "GM/Chevrolet Pressroom 2020 Silverado HD specifications (archived)",
+   "url": "https://web.archive.org/web/20200204191410/https://media.chevrolet.com/media/us/en/chevrolet/vehicles/silveradohd/2020.tab1.html",
+   "type": "manufacturer"
+  },
+  {
+   "name": "GM/Chevrolet Pressroom 2022 Silverado HD specifications (archived)",
+   "url": "https://web.archive.org/web/20220415175011/https://media.chevrolet.com/media/us/en/chevrolet/vehicles/silveradohd/2022.tab1.html",
+   "type": "manufacturer"
+  },
+  {
+   "name": "GM Pressroom 2015 Silverado HD CNG (bi-fuel) specifications (archived)",
+   "url": "https://web.archive.org/web/20141111110843/http://media.gm.com:80/media/us/en/chevrolet/vehicles/silverado-hd-cng/2015.tab1.html",
+   "type": "manufacturer"
+  },
+  {
+   "name": "Chevrolet.com 2025 Silverado HD (previous-year page)",
+   "url": "https://www.chevrolet.com/trucks/previous-year/silverado/2500hd-3500hd",
+   "type": "manufacturer"
+  },
+  {
+   "name": "Chevrolet.com 2026 Silverado HD",
+   "url": "https://www.chevrolet.com/trucks/silverado/2500hd-3500hd",
+   "type": "manufacturer"
+  },
+  {
+   "name": "Wikipedia - Chevrolet Silverado generation articles / Duramax V8 / C/K (one source)",
+   "url": "https://en.wikipedia.org/wiki/Chevrolet_Silverado",
+   "type": "wikipedia"
+  },
+  {
+   "name": "EPA fueleconomy.gov vehicle data",
+   "url": "https://www.fueleconomy.gov/feg/download.shtml",
+   "type": "government"
+  },
+  {
+   "name": "Diesel Army (Power Automedia) - A Brief History of Duramax Engine Specs (2025-01-13)",
+   "url": "https://www.dieselarmy.com/news/a-brief-history-of-duramax-engine-specs/",
+   "type": "publication"
+  },
+  {
+   "name": "GM Authority engine pages (L8T, L5P, LML, LC8, L96)",
+   "url": "https://gmauthority.com/blog/gm/gm-engines/",
+   "type": "publication"
+  },
+  {
+   "name": "Auto123 - 2006 Chevrolet Silverado 2500 HD road test (2006-03-29)",
+   "url": "https://www.auto123.com/en/car-reviews/2006-chevrolet-silverado-2500-hd-road-test/54296/",
+   "type": "publication"
+  },
+  {
+   "name": "Guide Auto Web - 2024 Silverado HD gets stronger Duramax (2022-09-26)",
+   "url": "https://www.guideautoweb.com/en/articles/67969/2024-chevrolet-silverado-hd-gets-stronger-duramax-lots-of-new-tech/",
+   "type": "publication"
+  },
+  {
+   "name": "Kelley Blue Book 1999 Chevrolet silverado 2500 extended cab",
+   "url": "https://www.kbb.com/chevrolet/silverado-2500-extended-cab/1999/",
+   "type": "publication"
+  },
+  {
+   "name": "Kelley Blue Book 1999 Chevrolet 2500 crew cab",
+   "url": "https://www.kbb.com/chevrolet/2500-crew-cab/1999/",
+   "type": "publication"
+  },
+  {
+   "name": "Kelley Blue Book 1999 Chevrolet 3500 crew cab",
+   "url": "https://www.kbb.com/chevrolet/3500-crew-cab/1999/",
+   "type": "publication"
+  },
+  {
+   "name": "Kelley Blue Book 2000 Chevrolet silverado 2500 extended cab",
+   "url": "https://www.kbb.com/chevrolet/silverado-2500-extended-cab/2000/",
+   "type": "publication"
+  },
+  {
+   "name": "Kelley Blue Book 2000 Chevrolet 2500 crew cab",
+   "url": "https://www.kbb.com/chevrolet/2500-crew-cab/2000/",
+   "type": "publication"
+  },
+  {
+   "name": "Kelley Blue Book 2000 Chevrolet 3500 crew cab",
+   "url": "https://www.kbb.com/chevrolet/3500-crew-cab/2000/",
+   "type": "publication"
+  },
+  {
+   "name": "Kelley Blue Book 2001 Chevrolet silverado 2500 hd crew cab",
+   "url": "https://www.kbb.com/chevrolet/silverado-2500-hd-crew-cab/2001/",
+   "type": "publication"
+  },
+  {
+   "name": "Kelley Blue Book 2001 Chevrolet silverado 3500 crew cab",
+   "url": "https://www.kbb.com/chevrolet/silverado-3500-crew-cab/2001/",
+   "type": "publication"
+  },
+  {
+   "name": "Kelley Blue Book 2002 Chevrolet silverado 2500 hd crew cab",
+   "url": "https://www.kbb.com/chevrolet/silverado-2500-hd-crew-cab/2002/",
+   "type": "publication"
+  },
+  {
+   "name": "Kelley Blue Book 2002 Chevrolet silverado 3500 crew cab",
+   "url": "https://www.kbb.com/chevrolet/silverado-3500-crew-cab/2002/",
+   "type": "publication"
+  },
+  {
+   "name": "Kelley Blue Book 2003 Chevrolet silverado 2500 hd crew cab",
+   "url": "https://www.kbb.com/chevrolet/silverado-2500-hd-crew-cab/2003/",
+   "type": "publication"
+  },
+  {
+   "name": "Kelley Blue Book 2004 Chevrolet silverado 2500 hd crew cab",
+   "url": "https://www.kbb.com/chevrolet/silverado-2500-hd-crew-cab/2004/",
+   "type": "publication"
+  },
+  {
+   "name": "Kelley Blue Book 2005 Chevrolet silverado 2500 hd crew cab",
+   "url": "https://www.kbb.com/chevrolet/silverado-2500-hd-crew-cab/2005/",
+   "type": "publication"
+  },
+  {
+   "name": "Kelley Blue Book 2006 Chevrolet silverado 2500 hd crew cab",
+   "url": "https://www.kbb.com/chevrolet/silverado-2500-hd-crew-cab/2006/",
+   "type": "publication"
+  },
+  {
+   "name": "Kelley Blue Book 2007 Chevrolet silverado 2500 hd crew cab",
+   "url": "https://www.kbb.com/chevrolet/silverado-2500-hd-crew-cab/2007/",
+   "type": "publication"
+  },
+  {
+   "name": "Kelley Blue Book 2007 Chevrolet silverado 3500 crew cab",
+   "url": "https://www.kbb.com/chevrolet/silverado-3500-crew-cab/2007/",
+   "type": "publication"
+  },
+  {
+   "name": "Kelley Blue Book 2008 Chevrolet silverado 2500 hd crew cab",
+   "url": "https://www.kbb.com/chevrolet/silverado-2500-hd-crew-cab/2008/",
+   "type": "publication"
+  },
+  {
+   "name": "Kelley Blue Book 2009 Chevrolet silverado 2500 hd crew cab",
+   "url": "https://www.kbb.com/chevrolet/silverado-2500-hd-crew-cab/2009/",
+   "type": "publication"
+  },
+  {
+   "name": "Kelley Blue Book 2010 Chevrolet silverado 2500 hd crew cab",
+   "url": "https://www.kbb.com/chevrolet/silverado-2500-hd-crew-cab/2010/",
+   "type": "publication"
+  },
+  {
+   "name": "Kelley Blue Book 2011 Chevrolet silverado 2500 hd crew cab",
+   "url": "https://www.kbb.com/chevrolet/silverado-2500-hd-crew-cab/2011/",
+   "type": "publication"
+  },
+  {
+   "name": "Kelley Blue Book 2012 Chevrolet silverado 2500 hd crew cab",
+   "url": "https://www.kbb.com/chevrolet/silverado-2500-hd-crew-cab/2012/",
+   "type": "publication"
+  },
+  {
+   "name": "Kelley Blue Book 2013 Chevrolet silverado 2500 hd crew cab",
+   "url": "https://www.kbb.com/chevrolet/silverado-2500-hd-crew-cab/2013/",
+   "type": "publication"
+  },
+  {
+   "name": "Kelley Blue Book 2014 Chevrolet silverado 2500 hd crew cab",
+   "url": "https://www.kbb.com/chevrolet/silverado-2500-hd-crew-cab/2014/",
+   "type": "publication"
+  },
+  {
+   "name": "Kelley Blue Book 2015 Chevrolet silverado 2500 hd crew cab",
+   "url": "https://www.kbb.com/chevrolet/silverado-2500-hd-crew-cab/2015/",
+   "type": "publication"
+  },
+  {
+   "name": "Kelley Blue Book 2016 Chevrolet silverado 2500 hd crew cab",
+   "url": "https://www.kbb.com/chevrolet/silverado-2500-hd-crew-cab/2016/",
+   "type": "publication"
+  },
+  {
+   "name": "Kelley Blue Book 2017 Chevrolet silverado 2500 hd crew cab",
+   "url": "https://www.kbb.com/chevrolet/silverado-2500-hd-crew-cab/2017/",
+   "type": "publication"
+  },
+  {
+   "name": "Kelley Blue Book 2018 Chevrolet silverado 2500 hd crew cab",
+   "url": "https://www.kbb.com/chevrolet/silverado-2500-hd-crew-cab/2018/",
+   "type": "publication"
+  },
+  {
+   "name": "Kelley Blue Book 2019 Chevrolet silverado 2500 hd crew cab",
+   "url": "https://www.kbb.com/chevrolet/silverado-2500-hd-crew-cab/2019/",
+   "type": "publication"
+  },
+  {
+   "name": "Kelley Blue Book 2020 Chevrolet silverado 2500 hd crew cab",
+   "url": "https://www.kbb.com/chevrolet/silverado-2500-hd-crew-cab/2020/",
+   "type": "publication"
+  },
+  {
+   "name": "Kelley Blue Book 2021 Chevrolet silverado 2500 hd crew cab",
+   "url": "https://www.kbb.com/chevrolet/silverado-2500-hd-crew-cab/2021/",
+   "type": "publication"
+  },
+  {
+   "name": "Kelley Blue Book 2022 Chevrolet silverado 2500 hd crew cab",
+   "url": "https://www.kbb.com/chevrolet/silverado-2500-hd-crew-cab/2022/",
+   "type": "publication"
+  },
+  {
+   "name": "Kelley Blue Book 2023 Chevrolet silverado 2500 hd crew cab",
+   "url": "https://www.kbb.com/chevrolet/silverado-2500-hd-crew-cab/2023/",
+   "type": "publication"
+  },
+  {
+   "name": "Kelley Blue Book 2024 Chevrolet silverado 2500 hd crew cab",
+   "url": "https://www.kbb.com/chevrolet/silverado-2500-hd-crew-cab/2024/",
+   "type": "publication"
+  },
+  {
+   "name": "Kelley Blue Book 2025 Chevrolet silverado 2500 hd crew cab",
+   "url": "https://www.kbb.com/chevrolet/silverado-2500-hd-crew-cab/2025/",
+   "type": "publication"
+  },
+  {
+   "name": "Kelley Blue Book 2026 Chevrolet silverado 2500 hd crew cab",
+   "url": "https://www.kbb.com/chevrolet/silverado-2500-hd-crew-cab/2026/",
+   "type": "publication"
+  }
+ ],
+ "notes": [
+  "NHRA has no Silverado HD rows (its file only holds an S-10 row); every entry is nhra:false.",
+  "No engine was 3500-only. 1999-2000: the GMT800 2500 was the light-duty 3/4-ton; heavy 2500/3500 stayed GMT400 C/K (gen 'gmt400' rows). 2001-2004 light-duty 2500: 6.0 per GM 2002 and KBB; GM Canada 2003 also lists the 5.3 for 2500 (single claim, not recorded as a row).",
+  "3500-specific rating: 6.0 rated lower above 10,000 lb GVWR (312 hp 2007-2008, 322 hp 2009-2010).",
+  "independent_sources counts families: all GM material = 1, Wikipedia = 1, EPA = 1, KBB = 1, each other publication = 1. GM Authority repeats GM figures, so it is counted with GM, not as its own source.",
+  "HD trucks are mostly exempt from EPA fuel-economy data; EPA used only where a row exists (1999, 2000, 2002)."
+ ]
+}

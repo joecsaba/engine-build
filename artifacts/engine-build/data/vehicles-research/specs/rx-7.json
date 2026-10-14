@@ -1,0 +1,57 @@
+{
+ "make": "Mazda",
+ "model": "RX-7",
+ "makeSlug": "mazda",
+ "slug": "rx-7",
+ "metric_from": 1900,
+ "title": "Mazda RX-7 Engines by Year (1979–1995)",
+ "description": "Every factory engine in the US Mazda RX-7 by year, 1979–1995: the 12A and 13B two-rotor rotaries, the Turbo II and the sequential twin-turbo 13B-REW of the third generation.",
+ "intro": [
+  "Mazda sold the RX-7 in the US from 1979 to 1995, always with a two-rotor Wankel rotary engine. Rotary displacement is quoted for both rotors. There was no official 1992 US model.",
+  "Pick a year to see every engine offered that model year, with its code, rated horsepower and the trims it came in. Each engine links to its full specs."
+ ],
+ "generations": [
+  {
+   "key": "fb",
+   "name": "First generation (FB)",
+   "years": [
+    1979,
+    1985
+   ],
+   "intro": [
+    "The 1.1 12A rotary, with the fuel-injected 1.3 13B in the 1984–1985 GSL-SE."
+   ]
+  },
+  {
+   "key": "fc",
+   "name": "Second generation (FC)",
+   "years": [
+    1986,
+    1991
+   ],
+   "intro": [
+    "The 13B, naturally aspirated and as the turbocharged Turbo II from 1987."
+   ]
+  },
+  {
+   "key": "fd",
+   "name": "Third generation (FD)",
+   "years": [
+    1993,
+    1995
+   ],
+   "intro": [
+    "The 13B-REW with sequential twin turbochargers."
+   ]
+  }
+ ],
+ "files": [
+  "verify_mazda-rx7-1979-2002.json"
+ ],
+ "merge_trims": true,
+ "force_layout": [
+  2,
+  "two-rotor rotary"
+ ],
+ "draft": true
+}

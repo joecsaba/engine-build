@@ -1,0 +1,163 @@
+{
+ "name": "Toyota 3F-E 4.0 I6",
+ "fields": {
+  "bore_in": {
+   "value": 3.7008,
+   "sources": [
+    {
+     "name": "Wikipedia: Toyota F engine",
+     "url": "https://en.wikipedia.org/wiki/Toyota_F_engine",
+     "says": "3F bore 94 mm"
+    },
+    {
+     "name": "Elgin Industries engine parts catalog (technical reference) - engine details",
+     "url": "https://catalog.elginind.com/engine/toyota/default/79b55e6c-e14a-4d85-a7b3-2c67777c484e/",
+     "says": "3FE 3956cc: Bore 3.70'' (94.0mm)"
+    }
+   ],
+   "note": "94.0 mm",
+   "second_pass": true
+  },
+  "displacement_l": {
+   "value": 4.0,
+   "sources": [
+    {
+     "name": "Wikipedia: Toyota F engine",
+     "url": "https://en.wikipedia.org/wiki/Toyota_F_engine",
+     "says": "4.0 L (3955 cc)"
+    },
+    {
+     "name": "Elgin Industries engine parts catalog (technical reference) - engine details",
+     "url": "https://catalog.elginind.com/engine/toyota/default/79b55e6c-e14a-4d85-a7b3-2c67777c484e/",
+     "says": "Liters 4.0"
+    },
+    {
+     "name": "Toyota Global 75 Years vehicle lineage: Land Cruiser 70/60 spec table (Toyota material)",
+     "url": "https://www.toyota-global.com/company/history_of_toyota/75years/vehicle_lineage/car/id60012612/",
+     "says": "Engine code 3F ... Displacement 3955 cm3"
+    },
+    {
+     "name": "EPA fueleconomy.gov vehicle data",
+     "url": "https://www.fueleconomy.gov/feg/download.shtml",
+     "says": "1988-90 Land Cruiser Wagon 4.0 L 6-cyl"
+    },
+    {
+     "name": "Hagerty Media: Why the 80 Series Land Cruiser Is the Most Notable 4x4 of the '90s",
+     "url": "https://www.hagerty.com/media/market-trends/why-the-80-series-land-cruiser-is-the-most-notable-4x4-of-the-90s/",
+     "says": "3F-E 4.0-liter inline-six"
+    }
+   ],
+   "note": "3,955 cc per Toyota and Wikipedia; Elgin 3,956 cc"
+  },
+  "displacement_ci": {
+   "value": 241,
+   "sources": [
+    {
+     "name": "Wikipedia: Toyota F engine",
+     "url": "https://en.wikipedia.org/wiki/Toyota_F_engine",
+     "says": "3955 cc"
+    },
+    {
+     "name": "Toyota Global 75 Years vehicle lineage: Land Cruiser 70/60 spec table (Toyota material)",
+     "url": "https://www.toyota-global.com/company/history_of_toyota/75years/vehicle_lineage/car/id60012612/",
+     "says": "3955 cm3"
+    },
+    {
+     "name": "Elgin Industries engine parts catalog (technical reference) - engine details",
+     "url": "https://catalog.elginind.com/engine/toyota/default/79b55e6c-e14a-4d85-a7b3-2c67777c484e/",
+     "says": "CC 3956"
+    }
+   ],
+   "note": "converted = 241.3 ci"
+  },
+  "num_cylinders": {
+   "value": 6,
+   "sources": [
+    {
+     "name": "Wikipedia: Toyota F engine",
+     "url": "https://en.wikipedia.org/wiki/Toyota_F_engine",
+     "says": "inline-6"
+    },
+    {
+     "name": "Elgin Industries engine parts catalog (technical reference) - engine details",
+     "url": "https://catalog.elginind.com/engine/toyota/default/79b55e6c-e14a-4d85-a7b3-2c67777c484e/",
+     "says": "Cyl. 6"
+    },
+    {
+     "name": "Toyota Global 75 Years vehicle lineage: Land Cruiser 70/60 spec table (Toyota material)",
+     "url": "https://www.toyota-global.com/company/history_of_toyota/75years/vehicle_lineage/car/id60012612/",
+     "says": "Water-cooled, in-line 6-cylinder, OHV"
+    }
+   ],
+   "note": ""
+  },
+  "configuration": {
+   "value": "inline-6",
+   "sources": [
+    {
+     "name": "Wikipedia: Toyota F engine",
+     "url": "https://en.wikipedia.org/wiki/Toyota_F_engine",
+     "says": "inline-6"
+    },
+    {
+     "name": "Toyota Global 75 Years vehicle lineage: Land Cruiser 70/60 spec table (Toyota material)",
+     "url": "https://www.toyota-global.com/company/history_of_toyota/75years/vehicle_lineage/car/id60012612/",
+     "says": "in-line 6-cylinder, OHV"
+    },
+    {
+     "name": "Hagerty Media: Why the 80 Series Land Cruiser Is the Most Notable 4x4 of the '90s",
+     "url": "https://www.hagerty.com/media/market-trends/why-the-80-series-land-cruiser-is-the-most-notable-4x4-of-the-90s/",
+     "says": "155-horsepower 3F-E 4.0-liter inline-six"
+    }
+   ],
+   "note": ""
+  },
+  "valvetrain": {
+   "value": "OHV (pushrod), 2 valves per cylinder",
+   "sources": [
+    {
+     "name": "Wikipedia: Toyota F engine",
+     "url": "https://en.wikipedia.org/wiki/Toyota_F_engine",
+     "says": "overhead valve"
+    },
+    {
+     "name": "Elgin Industries engine parts catalog (technical reference) - engine details",
+     "url": "https://catalog.elginind.com/engine/toyota/default/79b55e6c-e14a-4d85-a7b3-2c67777c484e/",
+     "says": "Head OHV"
+    },
+    {
+     "name": "Toyota Global 75 Years vehicle lineage: Land Cruiser 70/60 spec table (Toyota material)",
+     "url": "https://www.toyota-global.com/company/history_of_toyota/75years/vehicle_lineage/car/id60012612/",
+     "says": "in-line 6-cylinder, OHV"
+    }
+   ],
+   "note": ""
+  },
+  "fuel_type": {
+   "value": "gasoline",
+   "sources": [
+    {
+     "name": "Wikipedia: Toyota F engine",
+     "url": "https://en.wikipedia.org/wiki/Toyota_F_engine",
+     "says": "fuel injected"
+    },
+    {
+     "name": "Elgin Industries engine parts catalog (technical reference) - engine details",
+     "url": "https://catalog.elginind.com/engine/toyota/default/79b55e6c-e14a-4d85-a7b3-2c67777c484e/",
+     "says": "GAS / FI"
+    },
+    {
+     "name": "EPA fueleconomy.gov vehicle data",
+     "url": "https://www.fueleconomy.gov/feg/download.shtml",
+     "says": "Land Cruiser 4.0 L, no diesel flag"
+    }
+   ],
+   "note": "EFI"
+  }
+ },
+ "unverified": {
+  "stroke_in": "3.7402 in (95.0 mm): Wikipedia only.",
+  "block_material": "cast iron: Wikipedia only.",
+  "head_material": "cast iron: Wikipedia only."
+ }
+}

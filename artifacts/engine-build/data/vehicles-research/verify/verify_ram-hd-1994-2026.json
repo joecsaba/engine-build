@@ -1,0 +1,4808 @@
+{
+ "vehicle": "ram-hd-1994-2026",
+ "scope_note": "Dodge Ram 2500/3500 (1994-2010) and Ram 2500/3500 (2011-2026) pickups only; 3500/4500/5500 chassis-cab ratings excluded. NHRA's 'RAM' heading lumps all Ram pickups (1500 engines like the 3.9 V6 and 5.2 in HD are ignored except where 2500 light-duty used them). Independent-source groups: Dodge/Ram/Chrysler/FCA/Stellantis = one; Wikipedia = one; EPA, NHRA, KBB, Cars.com, Consumer Guide, Diesel Army, Drivingline, Auto123, Cummins Inc. each one.",
+ "years": {
+  "1994": [
+   {
+    "gen": "gen2",
+    "cid": 318,
+    "liters": 5.2,
+    "hp": 220,
+    "hp_basis": "SAE net",
+    "name": "5.2L / 318 V8",
+    "rpo": "Magnum 5.2",
+    "common_name": "5.2 Magnum V8",
+    "trims": [
+     "2500 light duty (7,500 lb GVWR) only"
+    ],
+    "nhra": false,
+    "sources": [
+     {
+      "name": "EPA fueleconomy.gov vehicle data",
+      "url": "https://www.fueleconomy.gov/feg/download.shtml",
+      "says": "1994 Ram 2500 Pickup 2WD/4WD: 5.2 L 8-cyl"
+     },
+     {
+      "name": "Wikipedia - Ram pickup (2nd/3rd gen engine tables) + Cummins B Series + Chrysler Hemi + Ram Heavy Duty (fifth generation) articles (one source)",
+      "url": "https://en.wikipedia.org/wiki/Ram_pickup",
+      "says": "Light-duty 2500 (7,500 lb GVWR, 1994-1996) came with the 5.2L or 5.9L V8; 318 Magnum listed 230 hp (single figure 1994-2001)"
+     },
+     {
+      "name": "Consumer Guide - 1994-01 Dodge Ram Pickup used-car review",
+      "url": "https://consumerguide.com/used/1994-01-dodge-ram-pickup/",
+      "says": "A 220-horsepower, 5.2-liter V8 went into 4x4s and 2500-series Rams"
+     },
+     {
+      "name": "Cars.com - 1994 Dodge Ram 2500 specs",
+      "url": "https://www.cars.com/research/dodge-ram_2500-1994/specs/",
+      "says": "Light Duty and HD trims; 5.2-liter V-8 (318) among five engines"
+     }
+    ],
+    "independent_sources": 4,
+    "status": "three_sources_not_nhra",
+    "note": "Light-duty 2500 only (1994-1996); not in HD 2500 or 3500. Consumer Guide and NHRA give 220 hp; Wikipedia's table gives 230 for all years (230 is the 1998+ figure)."
+   },
+   {
+    "gen": "gen2",
+    "cid": 360,
+    "liters": 5.9,
+    "hp": 230,
+    "hp_basis": "SAE net",
+    "name": "5.9L / 360 V8",
+    "rpo": "Magnum 5.9 (HD)",
+    "common_name": "5.9 Magnum V8",
+    "trims": [
+     "2500",
+     "3500 (std gas)"
+    ],
+    "nhra": false,
+    "sources": [
+     {
+      "name": "Wikipedia - Ram pickup (2nd/3rd gen engine tables) + Cummins B Series + Chrysler Hemi + Ram Heavy Duty (fifth generation) articles (one source)",
+      "url": "https://en.wikipedia.org/wiki/Ram_pickup",
+      "says": "1994-1997 360 Magnum V8 230 hp; VIN code 5 for the heavy-duty version"
+     },
+     {
+      "name": "Consumer Guide - 1994-01 Dodge Ram Pickup used-car review",
+      "url": "https://consumerguide.com/used/1994-01-dodge-ram-pickup/",
+      "says": "230-horsepower 5.9-liter V8 standard in 3500-series, optional in others; 230 -> 235 hp from 1997"
+     },
+     {
+      "name": "EPA fueleconomy.gov vehicle data",
+      "url": "https://www.fueleconomy.gov/feg/download.shtml",
+      "says": "1994 Ram 2500 Pickup 2WD/4WD: 5.9 L 8-cyl"
+     },
+     {
+      "name": "Kelley Blue Book - 1994 Dodge Ram 2500 specs (trim data)",
+      "url": "https://www.kbb.com/dodge/ram-2500/1994/specs/",
+      "says": "5.9 V8 gas: 230 @ 4000 RPM"
+     }
+    ],
+    "independent_sources": 4,
+    "status": "three_sources_not_nhra",
+    "note": "Standard gas engine in HD 2500 and 3500 (heavy-duty-cycle version, VIN code 5); 1994-1996 light-duty 2500 used the 1500's 5.9."
+   },
+   {
+    "gen": "gen2",
+    "cid": 488,
+    "liters": 8.0,
+    "hp": 300,
+    "hp_basis": "SAE net",
+    "name": "8.0L / 488 V10",
+    "rpo": "Magnum V10",
+    "common_name": "Magnum V10",
+    "trims": [
+     "2500 HD",
+     "3500"
+    ],
+    "nhra": false,
+    "sources": [
+     {
+      "name": "Wikipedia - Ram pickup (2nd/3rd gen engine tables) + Cummins B Series + Chrysler Hemi + Ram Heavy Duty (fifth generation) articles (one source)",
+      "url": "https://en.wikipedia.org/wiki/Ram_pickup",
+      "says": "8.0L Magnum V10, 300 hp (1994-1998), 310 hp (1999-2002); V10 and diesel available in 2500/3500 models above 8,500 lb GVWR"
+     },
+     {
+      "name": "Consumer Guide - 1994-01 Dodge Ram Pickup used-car review",
+      "url": "https://consumerguide.com/used/1994-01-dodge-ram-pickup/",
+      "says": "The 8.0-liter V10 delivered 300 horsepower"
+     },
+     {
+      "name": "Cars.com - 1994 Dodge Ram 2500 specs",
+      "url": "https://www.cars.com/research/dodge-ram_2500-1994/specs/",
+      "says": "8.0-liter V-10 offering 300 horsepower (optional)"
+     }
+    ],
+    "independent_sources": 3,
+    "status": "three_sources_not_nhra",
+    "note": "HD 2500 and 3500 only (over 8,500 lb GVWR); 5-speed manual or 4-speed automatic."
+   },
+   {
+    "gen": "gen2",
+    "cid": 359,
+    "liters": 5.9,
+    "hp": 175,
+    "hp_basis": "SAE net",
+    "name": "5.9L / 359 turbodiesel I6",
+    "rpo": "Cummins 6BT 12-valve",
+    "common_name": "12-valve Cummins",
+    "trims": [
+     "2500 HD",
+     "3500"
+    ],
+    "nhra": false,
+    "sources": [
+     {
+      "name": "Wikipedia - Ram pickup (2nd/3rd gen engine tables) + Cummins B Series + Chrysler Hemi + Ram Heavy Duty (fifth generation) articles (one source)",
+      "url": "https://en.wikipedia.org/wiki/Ram_pickup",
+      "says": "1994-1995 Cummins 12-valve: 175 hp (manual), 160 hp (auto)"
+     },
+     {
+      "name": "Diesel Army (Power Automedia) - Cummins Diesel: The Evolution Of The Dodge/Ram Engine (Chad Westfall)",
+      "url": "https://www.dieselarmy.com/?p=8081",
+      "says": "1994-1995 manual 175 hp @ 2,500 / 420 lb-ft; automatic 160 hp @ 2,500 / 400 lb-ft"
+     },
+     {
+      "name": "Consumer Guide - 1994-01 Dodge Ram Pickup used-car review",
+      "url": "https://consumerguide.com/used/1994-01-dodge-ram-pickup/",
+      "says": "Turbodiesels made 175 horsepower with manual shift, or 160 with automatic"
+     },
+     {
+      "name": "Kelley Blue Book - 1994 Dodge Ram 3500 specs (trim data)",
+      "url": "https://www.kbb.com/dodge/ram-3500/1994/specs/",
+      "says": "Diesel: 160 @ 2500 RPM"
+     }
+    ],
+    "independent_sources": 4,
+    "status": "three_sources_not_nhra",
+    "note": "175 hp / 420 lb-ft with the 5-speed manual; 160 hp / 400 lb-ft with the 4-speed automatic. HD 2500 and 3500 only.",
+    "hp_by_transmission": {
+     "5-speed manual": 175,
+     "automatic": 160
+    }
+   }
+  ],
+  "1995": [
+   {
+    "gen": "gen2",
+    "cid": 318,
+    "liters": 5.2,
+    "hp": 220,
+    "hp_basis": "SAE net",
+    "name": "5.2L / 318 V8",
+    "rpo": "Magnum 5.2",
+    "common_name": "5.2 Magnum V8",
+    "trims": [
+     "2500 light duty (7,500 lb GVWR) only"
+    ],
+    "nhra": true,
+    "sources": [
+     {
+      "name": "EPA fueleconomy.gov vehicle data",
+      "url": "https://www.fueleconomy.gov/feg/download.shtml",
+      "says": "1995 Ram 2500 Pickup 2WD/4WD: 5.2 L 8-cyl"
+     },
+     {
+      "name": "Wikipedia - Ram pickup (2nd/3rd gen engine tables) + Cummins B Series + Chrysler Hemi + Ram Heavy Duty (fifth generation) articles (one source)",
+      "url": "https://en.wikipedia.org/wiki/Ram_pickup",
+      "says": "Light-duty 2500 (7,500 lb GVWR, 1994-1996) came with the 5.2L or 5.9L V8; 318 Magnum listed 230 hp (single figure 1994-2001)"
+     },
+     {
+      "name": "Consumer Guide - 1994-01 Dodge Ram Pickup used-car review",
+      "url": "https://consumerguide.com/used/1994-01-dodge-ram-pickup/",
+      "says": "A 220-horsepower, 5.2-liter V8 went into 4x4s and 2500-series Rams"
+     },
+     {
+      "name": "NHRA Stock Car Classification Guide ('RAM' heading - lumps all Ram pickups 1500/2500/3500)",
+      "url": "nhra_ram-hd-1994-2026.json",
+      "says": "1995 RAM: 318 ci / 220 hp"
+     }
+    ],
+    "independent_sources": 4,
+    "status": "confirmed",
+    "note": "Light-duty 2500 only (1994-1996); not in HD 2500 or 3500. Consumer Guide and NHRA give 220 hp; Wikipedia's table gives 230 for all years (230 is the 1998+ figure)."
+   },
+   {
+    "gen": "gen2",
+    "cid": 360,
+    "liters": 5.9,
+    "hp": 230,
+    "hp_basis": "SAE net",
+    "name": "5.9L / 360 V8",
+    "rpo": "Magnum 5.9 (HD)",
+    "common_name": "5.9 Magnum V8",
+    "trims": [
+     "2500",
+     "3500 (std gas)"
+    ],
+    "nhra": true,
+    "sources": [
+     {
+      "name": "Wikipedia - Ram pickup (2nd/3rd gen engine tables) + Cummins B Series + Chrysler Hemi + Ram Heavy Duty (fifth generation) articles (one source)",
+      "url": "https://en.wikipedia.org/wiki/Ram_pickup",
+      "says": "1994-1997 360 Magnum V8 230 hp; VIN code 5 for the heavy-duty version"
+     },
+     {
+      "name": "Consumer Guide - 1994-01 Dodge Ram Pickup used-car review",
+      "url": "https://consumerguide.com/used/1994-01-dodge-ram-pickup/",
+      "says": "230-horsepower 5.9-liter V8 standard in 3500-series, optional in others; 230 -> 235 hp from 1997"
+     },
+     {
+      "name": "EPA fueleconomy.gov vehicle data",
+      "url": "https://www.fueleconomy.gov/feg/download.shtml",
+      "says": "1995 Ram 2500 Pickup 2WD/4WD: 5.9 L 8-cyl"
+     },
+     {
+      "name": "NHRA Stock Car Classification Guide ('RAM' heading - lumps all Ram pickups 1500/2500/3500)",
+      "url": "nhra_ram-hd-1994-2026.json",
+      "says": "1995 RAM: 360 ci / 230 hp"
+     },
+     {
+      "name": "Kelley Blue Book - 1995 Dodge Ram 2500 specs (trim data)",
+      "url": "https://www.kbb.com/dodge/ram-2500/1995/specs/",
+      "says": "5.9 V8 gas: 230 @ 4000 RPM"
+     }
+    ],
+    "independent_sources": 5,
+    "status": "confirmed",
+    "note": "Standard gas engine in HD 2500 and 3500 (heavy-duty-cycle version, VIN code 5); 1994-1996 light-duty 2500 used the 1500's 5.9."
+   },
+   {
+    "gen": "gen2",
+    "cid": 488,
+    "liters": 8.0,
+    "hp": 300,
+    "hp_basis": "SAE net",
+    "name": "8.0L / 488 V10",
+    "rpo": "Magnum V10",
+    "common_name": "Magnum V10",
+    "trims": [
+     "2500 HD",
+     "3500"
+    ],
+    "nhra": true,
+    "sources": [
+     {
+      "name": "Wikipedia - Ram pickup (2nd/3rd gen engine tables) + Cummins B Series + Chrysler Hemi + Ram Heavy Duty (fifth generation) articles (one source)",
+      "url": "https://en.wikipedia.org/wiki/Ram_pickup",
+      "says": "8.0L Magnum V10, 300 hp (1994-1998), 310 hp (1999-2002); V10 and diesel available in 2500/3500 models above 8,500 lb GVWR"
+     },
+     {
+      "name": "Consumer Guide - 1994-01 Dodge Ram Pickup used-car review",
+      "url": "https://consumerguide.com/used/1994-01-dodge-ram-pickup/",
+      "says": "The 8.0-liter V10 delivered 300 horsepower"
+     },
+     {
+      "name": "NHRA Stock Car Classification Guide ('RAM' heading - lumps all Ram pickups 1500/2500/3500)",
+      "url": "nhra_ram-hd-1994-2026.json",
+      "says": "1995 RAM: 488 ci / 300 hp"
+     }
+    ],
+    "independent_sources": 3,
+    "status": "confirmed",
+    "note": "HD 2500 and 3500 only (over 8,500 lb GVWR); 5-speed manual or 4-speed automatic."
+   },
+   {
+    "gen": "gen2",
+    "cid": 359,
+    "liters": 5.9,
+    "hp": 175,
+    "hp_basis": "SAE net",
+    "name": "5.9L / 359 turbodiesel I6",
+    "rpo": "Cummins 6BT 12-valve",
+    "common_name": "12-valve Cummins",
+    "trims": [
+     "2500 HD",
+     "3500"
+    ],
+    "nhra": false,
+    "sources": [
+     {
+      "name": "Wikipedia - Ram pickup (2nd/3rd gen engine tables) + Cummins B Series + Chrysler Hemi + Ram Heavy Duty (fifth generation) articles (one source)",
+      "url": "https://en.wikipedia.org/wiki/Ram_pickup",
+      "says": "1994-1995 Cummins 12-valve: 175 hp (manual), 160 hp (auto)"
+     },
+     {
+      "name": "Diesel Army (Power Automedia) - Cummins Diesel: The Evolution Of The Dodge/Ram Engine (Chad Westfall)",
+      "url": "https://www.dieselarmy.com/?p=8081",
+      "says": "1994-1995 manual 175 hp @ 2,500 / 420 lb-ft; automatic 160 hp @ 2,500 / 400 lb-ft"
+     },
+     {
+      "name": "Consumer Guide - 1994-01 Dodge Ram Pickup used-car review",
+      "url": "https://consumerguide.com/used/1994-01-dodge-ram-pickup/",
+      "says": "Turbodiesels made 175 horsepower with manual shift, or 160 with automatic"
+     },
+     {
+      "name": "Kelley Blue Book - 1995 Dodge Ram 3500 specs (trim data)",
+      "url": "https://www.kbb.com/dodge/ram-3500/1995/specs/",
+      "says": "Diesel: 160 @ 2500 RPM"
+     }
+    ],
+    "independent_sources": 4,
+    "status": "three_sources_not_nhra",
+    "note": "175 hp / 420 lb-ft with the 5-speed manual; 160 hp / 400 lb-ft with the 4-speed automatic. HD 2500 and 3500 only.",
+    "hp_by_transmission": {
+     "5-speed manual": 175,
+     "automatic": 160
+    }
+   }
+  ],
+  "1996": [
+   {
+    "gen": "gen2",
+    "cid": 318,
+    "liters": 5.2,
+    "hp": 220,
+    "hp_basis": "SAE net",
+    "name": "5.2L / 318 V8",
+    "rpo": "Magnum 5.2",
+    "common_name": "5.2 Magnum V8",
+    "trims": [
+     "2500 light duty (7,500 lb GVWR) only"
+    ],
+    "nhra": true,
+    "sources": [
+     {
+      "name": "EPA fueleconomy.gov vehicle data",
+      "url": "https://www.fueleconomy.gov/feg/download.shtml",
+      "says": "1996 Ram 2500 Pickup 2WD/4WD: 5.2 L 8-cyl"
+     },
+     {
+      "name": "Wikipedia - Ram pickup (2nd/3rd gen engine tables) + Cummins B Series + Chrysler Hemi + Ram Heavy Duty (fifth generation) articles (one source)",
+      "url": "https://en.wikipedia.org/wiki/Ram_pickup",
+      "says": "Light-duty 2500 (7,500 lb GVWR, 1994-1996) came with the 5.2L or 5.9L V8; 318 Magnum listed 230 hp (single figure 1994-2001)"
+     },
+     {
+      "name": "Consumer Guide - 1994-01 Dodge Ram Pickup used-car review",
+      "url": "https://consumerguide.com/used/1994-01-dodge-ram-pickup/",
+      "says": "A 220-horsepower, 5.2-liter V8 went into 4x4s and 2500-series Rams"
+     },
+     {
+      "name": "NHRA Stock Car Classification Guide ('RAM' heading - lumps all Ram pickups 1500/2500/3500)",
+      "url": "nhra_ram-hd-1994-2026.json",
+      "says": "1996 RAM: 318 ci / 220 hp"
+     }
+    ],
+    "independent_sources": 4,
+    "status": "confirmed",
+    "note": "Light-duty 2500 only (1994-1996); not in HD 2500 or 3500. Consumer Guide and NHRA give 220 hp; Wikipedia's table gives 230 for all years (230 is the 1998+ figure)."
+   },
+   {
+    "gen": "gen2",
+    "cid": 360,
+    "liters": 5.9,
+    "hp": 230,
+    "hp_basis": "SAE net",
+    "name": "5.9L / 360 V8",
+    "rpo": "Magnum 5.9 (HD)",
+    "common_name": "5.9 Magnum V8",
+    "trims": [
+     "2500",
+     "3500 (std gas)"
+    ],
+    "nhra": true,
+    "sources": [
+     {
+      "name": "Wikipedia - Ram pickup (2nd/3rd gen engine tables) + Cummins B Series + Chrysler Hemi + Ram Heavy Duty (fifth generation) articles (one source)",
+      "url": "https://en.wikipedia.org/wiki/Ram_pickup",
+      "says": "1994-1997 360 Magnum V8 230 hp; VIN code 5 for the heavy-duty version"
+     },
+     {
+      "name": "Consumer Guide - 1994-01 Dodge Ram Pickup used-car review",
+      "url": "https://consumerguide.com/used/1994-01-dodge-ram-pickup/",
+      "says": "230-horsepower 5.9-liter V8 standard in 3500-series, optional in others; 230 -> 235 hp from 1997"
+     },
+     {
+      "name": "EPA fueleconomy.gov vehicle data",
+      "url": "https://www.fueleconomy.gov/feg/download.shtml",
+      "says": "1996 Ram 2500 Pickup 2WD/4WD: 5.9 L 8-cyl"
+     },
+     {
+      "name": "NHRA Stock Car Classification Guide ('RAM' heading - lumps all Ram pickups 1500/2500/3500)",
+      "url": "nhra_ram-hd-1994-2026.json",
+      "says": "1996 RAM: 360 ci / 230 hp"
+     },
+     {
+      "name": "Kelley Blue Book - 1996 Dodge Ram 2500 specs (trim data)",
+      "url": "https://www.kbb.com/dodge/ram-2500/1996/specs/",
+      "says": "5.9 V8 gas: 230 @ 4000 RPM"
+     }
+    ],
+    "independent_sources": 5,
+    "status": "confirmed",
+    "note": "Standard gas engine in HD 2500 and 3500 (heavy-duty-cycle version, VIN code 5); 1994-1996 light-duty 2500 used the 1500's 5.9."
+   },
+   {
+    "gen": "gen2",
+    "cid": 488,
+    "liters": 8.0,
+    "hp": 300,
+    "hp_basis": "SAE net",
+    "name": "8.0L / 488 V10",
+    "rpo": "Magnum V10",
+    "common_name": "Magnum V10",
+    "trims": [
+     "2500 HD",
+     "3500"
+    ],
+    "nhra": true,
+    "sources": [
+     {
+      "name": "Wikipedia - Ram pickup (2nd/3rd gen engine tables) + Cummins B Series + Chrysler Hemi + Ram Heavy Duty (fifth generation) articles (one source)",
+      "url": "https://en.wikipedia.org/wiki/Ram_pickup",
+      "says": "8.0L Magnum V10, 300 hp (1994-1998), 310 hp (1999-2002); V10 and diesel available in 2500/3500 models above 8,500 lb GVWR"
+     },
+     {
+      "name": "Consumer Guide - 1994-01 Dodge Ram Pickup used-car review",
+      "url": "https://consumerguide.com/used/1994-01-dodge-ram-pickup/",
+      "says": "The 8.0-liter V10 delivered 300 horsepower"
+     },
+     {
+      "name": "NHRA Stock Car Classification Guide ('RAM' heading - lumps all Ram pickups 1500/2500/3500)",
+      "url": "nhra_ram-hd-1994-2026.json",
+      "says": "1996 RAM: 488 ci / 300 hp"
+     }
+    ],
+    "independent_sources": 3,
+    "status": "confirmed",
+    "note": "HD 2500 and 3500 only (over 8,500 lb GVWR); 5-speed manual or 4-speed automatic."
+   },
+   {
+    "gen": "gen2",
+    "cid": 359,
+    "liters": 5.9,
+    "hp": 215,
+    "hp_basis": "SAE net",
+    "name": "5.9L / 359 turbodiesel I6",
+    "rpo": "Cummins 6BT 12-valve (P7100 pump)",
+    "common_name": "12-valve Cummins",
+    "trims": [
+     "2500 HD",
+     "3500"
+    ],
+    "nhra": false,
+    "sources": [
+     {
+      "name": "Wikipedia - Ram pickup (2nd/3rd gen engine tables) + Cummins B Series + Chrysler Hemi + Ram Heavy Duty (fifth generation) articles (one source)",
+      "url": "https://en.wikipedia.org/wiki/Ram_pickup",
+      "says": "1996-1998 Cummins 12-valve: 215 hp (manual), 180 hp (auto)"
+     },
+     {
+      "name": "Diesel Army (Power Automedia) - Cummins Diesel: The Evolution Of The Dodge/Ram Engine (Chad Westfall)",
+      "url": "https://www.dieselarmy.com/?p=8081",
+      "says": "1996-1998 manual 215 hp @ 2,600 / 440 lb-ft; automatic/CARB 180 hp @ 2,500 / 420 lb-ft"
+     },
+     {
+      "name": "Consumer Guide - 1994-01 Dodge Ram Pickup used-car review",
+      "url": "https://consumerguide.com/used/1994-01-dodge-ram-pickup/",
+      "says": "215/180 horsepower in 1996 (manual/automatic)"
+     },
+     {
+      "name": "Kelley Blue Book - 1996 Dodge Ram 3500 specs (trim data)",
+      "url": "https://www.kbb.com/dodge/ram-3500/1996/specs/",
+      "says": "Diesel: 215 @ 2600 RPM"
+     }
+    ],
+    "independent_sources": 4,
+    "status": "three_sources_not_nhra",
+    "note": "215 hp / 440 lb-ft with the 5-speed manual; 180 hp / 420 lb-ft with the automatic (and California). ",
+    "hp_by_transmission": {
+     "5-speed manual": 215,
+     "automatic": 180
+    }
+   }
+  ],
+  "1997": [
+   {
+    "gen": "gen2",
+    "cid": 360,
+    "liters": 5.9,
+    "hp": 235,
+    "hp_basis": "SAE net",
+    "name": "5.9L / 360 V8",
+    "rpo": "Magnum 5.9 (HD)",
+    "common_name": "5.9 Magnum V8",
+    "trims": [
+     "2500",
+     "3500 (std gas)"
+    ],
+    "nhra": true,
+    "sources": [
+     {
+      "name": "Wikipedia - Ram pickup (2nd/3rd gen engine tables) + Cummins B Series + Chrysler Hemi + Ram Heavy Duty (fifth generation) articles (one source)",
+      "url": "https://en.wikipedia.org/wiki/Ram_pickup",
+      "says": "1994-1997 360 Magnum V8 230 hp; VIN code 5 for the heavy-duty version"
+     },
+     {
+      "name": "Consumer Guide - 1994-01 Dodge Ram Pickup used-car review",
+      "url": "https://consumerguide.com/used/1994-01-dodge-ram-pickup/",
+      "says": "230-horsepower 5.9-liter V8 standard in 3500-series, optional in others; 230 -> 235 hp from 1997"
+     },
+     {
+      "name": "NHRA Stock Car Classification Guide ('RAM' heading - lumps all Ram pickups 1500/2500/3500)",
+      "url": "nhra_ram-hd-1994-2026.json",
+      "says": "1997 RAM: 360 ci / 250 hp"
+     },
+     {
+      "name": "Kelley Blue Book - 1997 Dodge Ram 2500 specs (trim data)",
+      "url": "https://www.kbb.com/dodge/ram-2500/1997/specs/",
+      "says": "5.9 V8 gas: 235 @ 4000 RPM"
+     },
+     {
+      "name": "Cars.com - 1997 Dodge Ram 2500 specs",
+      "url": "https://www.cars.com/research/dodge-ram_2500-1997/specs/",
+      "says": "Gas V8 5.9L/360: 235 @ 4000 SAE net (HD trims)"
+     }
+    ],
+    "independent_sources": 5,
+    "status": "three_sources_not_nhra",
+    "note": "Standard gas engine in HD 2500 and 3500 (heavy-duty-cycle version, VIN code 5); 1994-1996 light-duty 2500 used the 1500's 5.9. Rating 235 (Consumer Guide, KBB, Cars.com); NHRA lists 250, Wikipedia keeps 230 through 1997."
+   },
+   {
+    "gen": "gen2",
+    "cid": 488,
+    "liters": 8.0,
+    "hp": 300,
+    "hp_basis": "SAE net",
+    "name": "8.0L / 488 V10",
+    "rpo": "Magnum V10",
+    "common_name": "Magnum V10",
+    "trims": [
+     "2500 HD",
+     "3500"
+    ],
+    "nhra": true,
+    "sources": [
+     {
+      "name": "Wikipedia - Ram pickup (2nd/3rd gen engine tables) + Cummins B Series + Chrysler Hemi + Ram Heavy Duty (fifth generation) articles (one source)",
+      "url": "https://en.wikipedia.org/wiki/Ram_pickup",
+      "says": "8.0L Magnum V10, 300 hp (1994-1998), 310 hp (1999-2002); V10 and diesel available in 2500/3500 models above 8,500 lb GVWR"
+     },
+     {
+      "name": "Consumer Guide - 1994-01 Dodge Ram Pickup used-car review",
+      "url": "https://consumerguide.com/used/1994-01-dodge-ram-pickup/",
+      "says": "The 8.0-liter V10 delivered 300 horsepower"
+     },
+     {
+      "name": "NHRA Stock Car Classification Guide ('RAM' heading - lumps all Ram pickups 1500/2500/3500)",
+      "url": "nhra_ram-hd-1994-2026.json",
+      "says": "1997 RAM: 488 ci / 300 hp"
+     },
+     {
+      "name": "Cars.com - 1997 Dodge Ram 2500 specs",
+      "url": "https://www.cars.com/research/dodge-ram_2500-1997/specs/",
+      "says": "Gas V8 [sic] 300 hp listed among 2500 HD engines"
+     }
+    ],
+    "independent_sources": 4,
+    "status": "confirmed",
+    "note": "HD 2500 and 3500 only (over 8,500 lb GVWR); 5-speed manual or 4-speed automatic."
+   },
+   {
+    "gen": "gen2",
+    "cid": 359,
+    "liters": 5.9,
+    "hp": 215,
+    "hp_basis": "SAE net",
+    "name": "5.9L / 359 turbodiesel I6",
+    "rpo": "Cummins 6BT 12-valve (P7100 pump)",
+    "common_name": "12-valve Cummins",
+    "trims": [
+     "2500 HD",
+     "3500"
+    ],
+    "nhra": false,
+    "sources": [
+     {
+      "name": "Wikipedia - Ram pickup (2nd/3rd gen engine tables) + Cummins B Series + Chrysler Hemi + Ram Heavy Duty (fifth generation) articles (one source)",
+      "url": "https://en.wikipedia.org/wiki/Ram_pickup",
+      "says": "1996-1998 Cummins 12-valve: 215 hp (manual), 180 hp (auto)"
+     },
+     {
+      "name": "Diesel Army (Power Automedia) - Cummins Diesel: The Evolution Of The Dodge/Ram Engine (Chad Westfall)",
+      "url": "https://www.dieselarmy.com/?p=8081",
+      "says": "1996-1998 manual 215 hp @ 2,600 / 440 lb-ft; automatic/CARB 180 hp @ 2,500 / 420 lb-ft"
+     },
+     {
+      "name": "Consumer Guide - 1994-01 Dodge Ram Pickup used-car review",
+      "url": "https://consumerguide.com/used/1994-01-dodge-ram-pickup/",
+      "says": "215/180 horsepower in 1996 (manual/automatic)"
+     },
+     {
+      "name": "Kelley Blue Book - 1997 Dodge Ram 3500 specs (trim data)",
+      "url": "https://www.kbb.com/dodge/ram-3500/1997/specs/",
+      "says": "Diesel: 215 @ 2600 RPM"
+     },
+     {
+      "name": "Cars.com - 1997 Dodge Ram 2500 specs",
+      "url": "https://www.cars.com/research/dodge-ram_2500-1997/specs/",
+      "says": "Straight 6 diesel 5.9L: 180 hp"
+     }
+    ],
+    "independent_sources": 5,
+    "status": "three_sources_not_nhra",
+    "note": "215 hp / 440 lb-ft with the 5-speed manual; 180 hp / 420 lb-ft with the automatic (and California). ",
+    "hp_by_transmission": {
+     "5-speed manual": 215,
+     "automatic": 180
+    }
+   }
+  ],
+  "1998": [
+   {
+    "gen": "gen2",
+    "cid": 360,
+    "liters": 5.9,
+    "hp": 250,
+    "hp_basis": "SAE net",
+    "name": "5.9L / 360 V8",
+    "rpo": "Magnum 5.9 (HD)",
+    "common_name": "5.9 Magnum V8",
+    "trims": [
+     "2500",
+     "3500 (std gas)"
+    ],
+    "nhra": true,
+    "sources": [
+     {
+      "name": "Wikipedia - Ram pickup (2nd/3rd gen engine tables) + Cummins B Series + Chrysler Hemi + Ram Heavy Duty (fifth generation) articles (one source)",
+      "url": "https://en.wikipedia.org/wiki/Ram_pickup",
+      "says": "1998-2002 360 Magnum V8 245 hp; VIN code 5 for the heavy-duty version"
+     },
+     {
+      "name": "Consumer Guide - 1994-01 Dodge Ram Pickup used-car review",
+      "url": "https://consumerguide.com/used/1994-01-dodge-ram-pickup/",
+      "says": "230-horsepower 5.9-liter V8 standard in 3500-series, optional in others; 230 -> 235 hp from 1997"
+     },
+     {
+      "name": "NHRA Stock Car Classification Guide ('RAM' heading - lumps all Ram pickups 1500/2500/3500)",
+      "url": "nhra_ram-hd-1994-2026.json",
+      "says": "1998 RAM: 360 ci / 250 hp"
+     },
+     {
+      "name": "Kelley Blue Book - 1998 Dodge Ram 2500 specs (trim data)",
+      "url": "https://www.kbb.com/dodge/ram-2500/1998/specs/",
+      "says": "5.9 V8 gas: 250 @ 4000 RPM"
+     },
+     {
+      "name": "Cars.com - 1998 Dodge Ram 2500 specs",
+      "url": "https://www.cars.com/research/dodge-ram_2500-1998/specs/",
+      "says": "Gas V8 5.9L/360: 250 @ 4400 SAE net (HD trims)"
+     }
+    ],
+    "independent_sources": 5,
+    "status": "confirmed",
+    "note": "Standard gas engine in HD 2500 and 3500 (heavy-duty-cycle version, VIN code 5); 1994-1996 light-duty 2500 used the 1500's 5.9. Rating 250 (NHRA, KBB, Cars.com HD trims); Wikipedia gives 245 for 1998-2002 (the 1500 rating). Consumer Guide quotes only 235."
+   },
+   {
+    "gen": "gen2",
+    "cid": 488,
+    "liters": 8.0,
+    "hp": 300,
+    "hp_basis": "SAE net",
+    "name": "8.0L / 488 V10",
+    "rpo": "Magnum V10",
+    "common_name": "Magnum V10",
+    "trims": [
+     "2500 HD",
+     "3500"
+    ],
+    "nhra": true,
+    "sources": [
+     {
+      "name": "Wikipedia - Ram pickup (2nd/3rd gen engine tables) + Cummins B Series + Chrysler Hemi + Ram Heavy Duty (fifth generation) articles (one source)",
+      "url": "https://en.wikipedia.org/wiki/Ram_pickup",
+      "says": "8.0L Magnum V10, 300 hp (1994-1998), 310 hp (1999-2002); V10 and diesel available in 2500/3500 models above 8,500 lb GVWR"
+     },
+     {
+      "name": "Consumer Guide - 1994-01 Dodge Ram Pickup used-car review",
+      "url": "https://consumerguide.com/used/1994-01-dodge-ram-pickup/",
+      "says": "The 8.0-liter V10 delivered 300 horsepower"
+     },
+     {
+      "name": "NHRA Stock Car Classification Guide ('RAM' heading - lumps all Ram pickups 1500/2500/3500)",
+      "url": "nhra_ram-hd-1994-2026.json",
+      "says": "1998 RAM: 488 ci / 300 hp"
+     },
+     {
+      "name": "Cars.com - 1998 Dodge Ram 2500 specs",
+      "url": "https://www.cars.com/research/dodge-ram_2500-1998/specs/",
+      "says": "hp options listed: 300, 250, 235"
+     }
+    ],
+    "independent_sources": 4,
+    "status": "confirmed",
+    "note": "HD 2500 and 3500 only (over 8,500 lb GVWR); 5-speed manual or 4-speed automatic."
+   },
+   {
+    "gen": "gen2",
+    "cid": 359,
+    "liters": 5.9,
+    "hp": 215,
+    "hp_basis": "SAE net",
+    "name": "5.9L / 359 turbodiesel I6",
+    "rpo": "Cummins 6BT 12-valve (P7100 pump)",
+    "common_name": "12-valve Cummins",
+    "trims": [
+     "2500 HD",
+     "3500"
+    ],
+    "nhra": false,
+    "sources": [
+     {
+      "name": "Wikipedia - Ram pickup (2nd/3rd gen engine tables) + Cummins B Series + Chrysler Hemi + Ram Heavy Duty (fifth generation) articles (one source)",
+      "url": "https://en.wikipedia.org/wiki/Ram_pickup",
+      "says": "1996-1998 Cummins 12-valve: 215 hp (manual), 180 hp (auto)"
+     },
+     {
+      "name": "Diesel Army (Power Automedia) - Cummins Diesel: The Evolution Of The Dodge/Ram Engine (Chad Westfall)",
+      "url": "https://www.dieselarmy.com/?p=8081",
+      "says": "1996-1998 manual 215 hp @ 2,600 / 440 lb-ft; automatic/CARB 180 hp @ 2,500 / 420 lb-ft"
+     },
+     {
+      "name": "Consumer Guide - 1994-01 Dodge Ram Pickup used-car review",
+      "url": "https://consumerguide.com/used/1994-01-dodge-ram-pickup/",
+      "says": "215/180 horsepower in 1996 (manual/automatic)"
+     },
+     {
+      "name": "Kelley Blue Book - 1998 Dodge Ram 3500 specs (trim data)",
+      "url": "https://www.kbb.com/dodge/ram-3500/1998/specs/",
+      "says": "Diesel: 215 @ 2600 RPM"
+     }
+    ],
+    "independent_sources": 4,
+    "status": "three_sources_not_nhra",
+    "note": "215 hp / 440 lb-ft with the 5-speed manual; 180 hp / 420 lb-ft with the automatic (and California). Early 1998 only; replaced mid-1998 by the 24-valve ISB (1998.5).",
+    "hp_by_transmission": {
+     "5-speed manual": 215,
+     "automatic": 180
+    }
+   },
+   {
+    "gen": "gen2",
+    "cid": 359,
+    "liters": 5.9,
+    "hp": 235,
+    "hp_basis": "SAE net",
+    "name": "5.9L / 359 turbodiesel I6",
+    "rpo": "Cummins ISB 24-valve (VP44 pump)",
+    "common_name": "24-valve Cummins",
+    "trims": [
+     "2500 HD",
+     "3500"
+    ],
+    "nhra": false,
+    "sources": [
+     {
+      "name": "Wikipedia - Ram pickup (2nd/3rd gen engine tables) + Cummins B Series + Chrysler Hemi + Ram Heavy Duty (fifth generation) articles (one source)",
+      "url": "https://en.wikipedia.org/wiki/Ram_pickup",
+      "says": "Cummins ISB 24-valve 1998.5-2000: 215 hp / 420 lb-ft with 47RE automatic; manual 235/460 (Cummins article) - Ram pickup table says 230/450"
+     },
+     {
+      "name": "Diesel Army (Power Automedia) - Cummins Diesel: The Evolution Of The Dodge/Ram Engine (Chad Westfall)",
+      "url": "https://www.dieselarmy.com/?p=8081",
+      "says": "1998-2000 manual 235 hp @ 2,700 / 460 lb-ft; automatic 215 hp @ 2,700 / 420 lb-ft"
+     },
+     {
+      "name": "Cars.com - 1998 Dodge Ram 2500 specs",
+      "url": "https://www.cars.com/research/dodge-ram_2500-1998/specs/",
+      "says": "hp options listed: 300, 250, 235"
+     }
+    ],
+    "independent_sources": 3,
+    "status": "three_sources_not_nhra",
+    "note": "Mid-1998 (1998.5) introduction. 235 hp / 460 lb-ft manual, 215 hp / 420 lb-ft automatic. Wikipedia's Ram pickup table gives the manual as 230 hp / 450 lb-ft; its Cummins article and Diesel Army give 235/460.",
+    "hp_by_transmission": {
+     "5-speed manual": 235,
+     "automatic": 215
+    }
+   }
+  ],
+  "1999": [
+   {
+    "gen": "gen2",
+    "cid": 360,
+    "liters": 5.9,
+    "hp": 245,
+    "hp_basis": "SAE net",
+    "name": "5.9L / 360 V8",
+    "rpo": "Magnum 5.9 (HD)",
+    "common_name": "5.9 Magnum V8",
+    "trims": [
+     "2500",
+     "3500 (std gas)"
+    ],
+    "nhra": true,
+    "sources": [
+     {
+      "name": "Wikipedia - Ram pickup (2nd/3rd gen engine tables) + Cummins B Series + Chrysler Hemi + Ram Heavy Duty (fifth generation) articles (one source)",
+      "url": "https://en.wikipedia.org/wiki/Ram_pickup",
+      "says": "1998-2002 360 Magnum V8 245 hp; VIN code 5 for the heavy-duty version"
+     },
+     {
+      "name": "Consumer Guide - 1994-01 Dodge Ram Pickup used-car review",
+      "url": "https://consumerguide.com/used/1994-01-dodge-ram-pickup/",
+      "says": "230-horsepower 5.9-liter V8 standard in 3500-series, optional in others; 230 -> 235 hp from 1997"
+     },
+     {
+      "name": "NHRA Stock Car Classification Guide ('RAM' heading - lumps all Ram pickups 1500/2500/3500)",
+      "url": "nhra_ram-hd-1994-2026.json",
+      "says": "1999 RAM: 360 ci / 245 hp"
+     }
+    ],
+    "independent_sources": 3,
+    "status": "confirmed",
+    "note": "Standard gas engine in HD 2500 and 3500 (heavy-duty-cycle version, VIN code 5); 1994-1996 light-duty 2500 used the 1500's 5.9. Consumer Guide's 1994-01 review quotes only 230/235."
+   },
+   {
+    "gen": "gen2",
+    "cid": 488,
+    "liters": 8.0,
+    "hp": 310,
+    "hp_basis": "SAE net",
+    "name": "8.0L / 488 V10",
+    "rpo": "Magnum V10",
+    "common_name": "Magnum V10",
+    "trims": [
+     "2500 HD",
+     "3500"
+    ],
+    "nhra": true,
+    "sources": [
+     {
+      "name": "Wikipedia - Ram pickup (2nd/3rd gen engine tables) + Cummins B Series + Chrysler Hemi + Ram Heavy Duty (fifth generation) articles (one source)",
+      "url": "https://en.wikipedia.org/wiki/Ram_pickup",
+      "says": "8.0L Magnum V10, 300 hp (1994-1998), 310 hp (1999-2002); V10 and diesel available in 2500/3500 models above 8,500 lb GVWR"
+     },
+     {
+      "name": "Consumer Guide - 1994-01 Dodge Ram Pickup used-car review",
+      "url": "https://consumerguide.com/used/1994-01-dodge-ram-pickup/",
+      "says": "The 8.0-liter V10 delivered 300 horsepower"
+     },
+     {
+      "name": "NHRA Stock Car Classification Guide ('RAM' heading - lumps all Ram pickups 1500/2500/3500)",
+      "url": "nhra_ram-hd-1994-2026.json",
+      "says": "1999 RAM: 488 ci / 310 hp"
+     }
+    ],
+    "independent_sources": 3,
+    "status": "confirmed",
+    "note": "HD 2500 and 3500 only (over 8,500 lb GVWR); 5-speed manual or 4-speed automatic. Consumer Guide's range review quotes only the original 300 hp."
+   },
+   {
+    "gen": "gen2",
+    "cid": 359,
+    "liters": 5.9,
+    "hp": 235,
+    "hp_basis": "SAE net",
+    "name": "5.9L / 359 turbodiesel I6",
+    "rpo": "Cummins ISB 24-valve (VP44 pump)",
+    "common_name": "24-valve Cummins",
+    "trims": [
+     "2500 HD",
+     "3500"
+    ],
+    "nhra": false,
+    "sources": [
+     {
+      "name": "Wikipedia - Ram pickup (2nd/3rd gen engine tables) + Cummins B Series + Chrysler Hemi + Ram Heavy Duty (fifth generation) articles (one source)",
+      "url": "https://en.wikipedia.org/wiki/Ram_pickup",
+      "says": "Cummins ISB 24-valve 1998.5-2000: 215 hp / 420 lb-ft with 47RE automatic; manual 235/460 (Cummins article) - Ram pickup table says 230/450"
+     },
+     {
+      "name": "Diesel Army (Power Automedia) - Cummins Diesel: The Evolution Of The Dodge/Ram Engine (Chad Westfall)",
+      "url": "https://www.dieselarmy.com/?p=8081",
+      "says": "1998-2000 manual 235 hp @ 2,700 / 460 lb-ft; automatic 215 hp @ 2,700 / 420 lb-ft"
+     },
+     {
+      "name": "Kelley Blue Book - 1999 Dodge Ram 2500 specs (trim data)",
+      "url": "https://www.kbb.com/dodge/ram-2500/1999/specs/",
+      "says": "Diesel: 215 @ 2700 RPM"
+     }
+    ],
+    "independent_sources": 3,
+    "status": "three_sources_not_nhra",
+    "note": "235 hp / 460 lb-ft manual, 215 hp / 420 lb-ft automatic. Wikipedia's Ram pickup table gives the manual as 230 hp / 450 lb-ft; its Cummins article and Diesel Army give 235/460.",
+    "hp_by_transmission": {
+     "5-speed manual": 235,
+     "automatic": 215
+    }
+   }
+  ],
+  "2000": [
+   {
+    "gen": "gen2",
+    "cid": 360,
+    "liters": 5.9,
+    "hp": 245,
+    "hp_basis": "SAE net",
+    "name": "5.9L / 360 V8",
+    "rpo": "Magnum 5.9 (HD)",
+    "common_name": "5.9 Magnum V8",
+    "trims": [
+     "2500",
+     "3500 (std gas)"
+    ],
+    "nhra": true,
+    "sources": [
+     {
+      "name": "Wikipedia - Ram pickup (2nd/3rd gen engine tables) + Cummins B Series + Chrysler Hemi + Ram Heavy Duty (fifth generation) articles (one source)",
+      "url": "https://en.wikipedia.org/wiki/Ram_pickup",
+      "says": "1998-2002 360 Magnum V8 245 hp; VIN code 5 for the heavy-duty version"
+     },
+     {
+      "name": "Consumer Guide - 1994-01 Dodge Ram Pickup used-car review",
+      "url": "https://consumerguide.com/used/1994-01-dodge-ram-pickup/",
+      "says": "230-horsepower 5.9-liter V8 standard in 3500-series, optional in others; 230 -> 235 hp from 1997"
+     },
+     {
+      "name": "NHRA Stock Car Classification Guide ('RAM' heading - lumps all Ram pickups 1500/2500/3500)",
+      "url": "nhra_ram-hd-1994-2026.json",
+      "says": "2000 RAM: 360 ci / 245 hp"
+     },
+     {
+      "name": "Cars.com - 2000 Dodge Ram 2500 specs",
+      "url": "https://www.cars.com/research/dodge-ram_2500-2000/specs/",
+      "says": "Gas V8 5.9L/360: 245 @ 4400"
+     }
+    ],
+    "independent_sources": 4,
+    "status": "confirmed",
+    "note": "Standard gas engine in HD 2500 and 3500 (heavy-duty-cycle version, VIN code 5); 1994-1996 light-duty 2500 used the 1500's 5.9. Consumer Guide's 1994-01 review quotes only 230/235."
+   },
+   {
+    "gen": "gen2",
+    "cid": 488,
+    "liters": 8.0,
+    "hp": 310,
+    "hp_basis": "SAE net",
+    "name": "8.0L / 488 V10",
+    "rpo": "Magnum V10",
+    "common_name": "Magnum V10",
+    "trims": [
+     "2500 HD",
+     "3500"
+    ],
+    "nhra": true,
+    "sources": [
+     {
+      "name": "Wikipedia - Ram pickup (2nd/3rd gen engine tables) + Cummins B Series + Chrysler Hemi + Ram Heavy Duty (fifth generation) articles (one source)",
+      "url": "https://en.wikipedia.org/wiki/Ram_pickup",
+      "says": "8.0L Magnum V10, 300 hp (1994-1998), 310 hp (1999-2002); V10 and diesel available in 2500/3500 models above 8,500 lb GVWR"
+     },
+     {
+      "name": "Consumer Guide - 1994-01 Dodge Ram Pickup used-car review",
+      "url": "https://consumerguide.com/used/1994-01-dodge-ram-pickup/",
+      "says": "The 8.0-liter V10 delivered 300 horsepower"
+     },
+     {
+      "name": "NHRA Stock Car Classification Guide ('RAM' heading - lumps all Ram pickups 1500/2500/3500)",
+      "url": "nhra_ram-hd-1994-2026.json",
+      "says": "2000 RAM: 488 ci / 310 hp"
+     },
+     {
+      "name": "Cars.com - 2000 Dodge Ram 2500 specs",
+      "url": "https://www.cars.com/research/dodge-ram_2500-2000/specs/",
+      "says": "hp options listed: 245, 235, 310"
+     }
+    ],
+    "independent_sources": 4,
+    "status": "confirmed",
+    "note": "HD 2500 and 3500 only (over 8,500 lb GVWR); 5-speed manual or 4-speed automatic. Consumer Guide's range review quotes only the original 300 hp."
+   },
+   {
+    "gen": "gen2",
+    "cid": 359,
+    "liters": 5.9,
+    "hp": 235,
+    "hp_basis": "SAE net",
+    "name": "5.9L / 359 turbodiesel I6",
+    "rpo": "Cummins ISB 24-valve (VP44 pump)",
+    "common_name": "24-valve Cummins",
+    "trims": [
+     "2500 HD",
+     "3500"
+    ],
+    "nhra": false,
+    "sources": [
+     {
+      "name": "Wikipedia - Ram pickup (2nd/3rd gen engine tables) + Cummins B Series + Chrysler Hemi + Ram Heavy Duty (fifth generation) articles (one source)",
+      "url": "https://en.wikipedia.org/wiki/Ram_pickup",
+      "says": "Cummins ISB 24-valve 1998.5-2000: 215 hp / 420 lb-ft with 47RE automatic; manual 235/460 (Cummins article) - Ram pickup table says 230/450"
+     },
+     {
+      "name": "Diesel Army (Power Automedia) - Cummins Diesel: The Evolution Of The Dodge/Ram Engine (Chad Westfall)",
+      "url": "https://www.dieselarmy.com/?p=8081",
+      "says": "1998-2000 manual 235 hp @ 2,700 / 460 lb-ft; automatic 215 hp @ 2,700 / 420 lb-ft"
+     },
+     {
+      "name": "Kelley Blue Book - 2000 Dodge Ram 2500 specs (trim data)",
+      "url": "https://www.kbb.com/dodge/ram-2500/2000/specs/",
+      "says": "Diesel: 235 @ 2700 RPM"
+     },
+     {
+      "name": "Cars.com - 2000 Dodge Ram 2500 specs",
+      "url": "https://www.cars.com/research/dodge-ram_2500-2000/specs/",
+      "says": "hp options listed: 245, 235, 310"
+     }
+    ],
+    "independent_sources": 4,
+    "status": "three_sources_not_nhra",
+    "note": "235 hp / 460 lb-ft manual, 215 hp / 420 lb-ft automatic. Wikipedia's Ram pickup table gives the manual as 230 hp / 450 lb-ft; its Cummins article and Diesel Army give 235/460.",
+    "hp_by_transmission": {
+     "5-speed manual": 235,
+     "automatic": 215
+    }
+   }
+  ],
+  "2001": [
+   {
+    "gen": "gen2",
+    "cid": 360,
+    "liters": 5.9,
+    "hp": 245,
+    "hp_basis": "SAE net",
+    "name": "5.9L / 360 V8",
+    "rpo": "Magnum 5.9 (HD)",
+    "common_name": "5.9 Magnum V8",
+    "trims": [
+     "2500",
+     "3500 (std gas)"
+    ],
+    "nhra": true,
+    "sources": [
+     {
+      "name": "Wikipedia - Ram pickup (2nd/3rd gen engine tables) + Cummins B Series + Chrysler Hemi + Ram Heavy Duty (fifth generation) articles (one source)",
+      "url": "https://en.wikipedia.org/wiki/Ram_pickup",
+      "says": "1998-2002 360 Magnum V8 245 hp; VIN code 5 for the heavy-duty version"
+     },
+     {
+      "name": "Consumer Guide - 1994-01 Dodge Ram Pickup used-car review",
+      "url": "https://consumerguide.com/used/1994-01-dodge-ram-pickup/",
+      "says": "230-horsepower 5.9-liter V8 standard in 3500-series, optional in others; 230 -> 235 hp from 1997"
+     },
+     {
+      "name": "NHRA Stock Car Classification Guide ('RAM' heading - lumps all Ram pickups 1500/2500/3500)",
+      "url": "nhra_ram-hd-1994-2026.json",
+      "says": "2001 RAM: 360 ci / 245 hp"
+     },
+     {
+      "name": "Kelley Blue Book - 2001 Dodge Ram 2500 specs (trim data)",
+      "url": "https://www.kbb.com/dodge/ram-2500/2001/specs/",
+      "says": "V8, 5.9 Liter: 245 hp, 335 lb-ft"
+     },
+     {
+      "name": "Cars.com - 2001 Dodge Ram 3500 specs",
+      "url": "https://www.cars.com/research/dodge-ram_3500-2001/specs/",
+      "says": "Gas V8 5.9L/360: 245 @ 4000"
+     }
+    ],
+    "independent_sources": 5,
+    "status": "confirmed",
+    "note": "Standard gas engine in HD 2500 and 3500 (heavy-duty-cycle version, VIN code 5); 1994-1996 light-duty 2500 used the 1500's 5.9. Consumer Guide's 1994-01 review quotes only 230/235."
+   },
+   {
+    "gen": "gen2",
+    "cid": 488,
+    "liters": 8.0,
+    "hp": 310,
+    "hp_basis": "SAE net",
+    "name": "8.0L / 488 V10",
+    "rpo": "Magnum V10",
+    "common_name": "Magnum V10",
+    "trims": [
+     "2500 HD",
+     "3500"
+    ],
+    "nhra": true,
+    "sources": [
+     {
+      "name": "Wikipedia - Ram pickup (2nd/3rd gen engine tables) + Cummins B Series + Chrysler Hemi + Ram Heavy Duty (fifth generation) articles (one source)",
+      "url": "https://en.wikipedia.org/wiki/Ram_pickup",
+      "says": "8.0L Magnum V10, 300 hp (1994-1998), 310 hp (1999-2002); V10 and diesel available in 2500/3500 models above 8,500 lb GVWR"
+     },
+     {
+      "name": "Consumer Guide - 1994-01 Dodge Ram Pickup used-car review",
+      "url": "https://consumerguide.com/used/1994-01-dodge-ram-pickup/",
+      "says": "The 8.0-liter V10 delivered 300 horsepower"
+     },
+     {
+      "name": "NHRA Stock Car Classification Guide ('RAM' heading - lumps all Ram pickups 1500/2500/3500)",
+      "url": "nhra_ram-hd-1994-2026.json",
+      "says": "2001 RAM: 488 ci / 310 hp"
+     }
+    ],
+    "independent_sources": 3,
+    "status": "confirmed",
+    "note": "HD 2500 and 3500 only (over 8,500 lb GVWR); 5-speed manual or 4-speed automatic. Consumer Guide's range review quotes only the original 300 hp."
+   },
+   {
+    "gen": "gen2",
+    "cid": 359,
+    "liters": 5.9,
+    "hp": 235,
+    "hp_basis": "SAE net",
+    "name": "5.9L / 359 turbodiesel I6",
+    "rpo": "Cummins ISB 24-valve",
+    "common_name": "24-valve Cummins (standard output)",
+    "trims": [
+     "2500 HD",
+     "3500"
+    ],
+    "nhra": false,
+    "sources": [
+     {
+      "name": "Wikipedia - Ram pickup (2nd/3rd gen engine tables) + Cummins B Series + Chrysler Hemi + Ram Heavy Duty (fifth generation) articles (one source)",
+      "url": "https://en.wikipedia.org/wiki/Ram_pickup",
+      "says": "2001-2002 Cummins ISB 24-valve standard output 235 hp / 460 lb-ft (5-speed manual or automatic)"
+     },
+     {
+      "name": "Diesel Army (Power Automedia) - Cummins Diesel: The Evolution Of The Dodge/Ram Engine (Chad Westfall)",
+      "url": "https://www.dieselarmy.com/?p=8081",
+      "says": "2001-2002 all models 235 hp @ 2,700 / 460 lb-ft"
+     },
+     {
+      "name": "Kelley Blue Book - 2001 Dodge Ram 3500 specs (trim data)",
+      "url": "https://www.kbb.com/dodge/ram-3500/2001/specs/",
+      "says": "All 2001 Ram 3500 trims: 6-cyl turbo diesel 235 hp, 460 lb-ft"
+     }
+    ],
+    "independent_sources": 3,
+    "status": "three_sources_not_nhra",
+    "note": "Same 235 hp / 460 lb-ft with the NV4500 5-speed manual or 47RE automatic."
+   },
+   {
+    "gen": "gen2",
+    "cid": 359,
+    "liters": 5.9,
+    "hp": 245,
+    "hp_basis": "SAE net",
+    "name": "5.9L / 359 turbodiesel I6 HO",
+    "rpo": "Cummins ISB 24-valve High Output",
+    "common_name": "24-valve Cummins High Output",
+    "trims": [
+     "2500 HD",
+     "3500"
+    ],
+    "nhra": false,
+    "sources": [
+     {
+      "name": "Wikipedia - Ram pickup (2nd/3rd gen engine tables) + Cummins B Series + Chrysler Hemi + Ram Heavy Duty (fifth generation) articles (one source)",
+      "url": "https://en.wikipedia.org/wiki/Ram_pickup",
+      "says": "2001-2002 Cummins ISB High Output 245 hp / 505 lb-ft, NV5600 six-speed manual only"
+     },
+     {
+      "name": "Diesel Army (Power Automedia) - Cummins Diesel: The Evolution Of The Dodge/Ram Engine (Chad Westfall)",
+      "url": "https://www.dieselarmy.com/?p=8081",
+      "says": "2001-2002 High Output 245 hp @ 2,700 / 505 lb-ft"
+     },
+     {
+      "name": "Cummins Inc. - Cummins-RAM History / 2021 and 2025 Ram HD engine releases (engine supplier, not Stellantis; Cloudflare-blocked, search-index text)",
+      "url": "https://www.cummins.com/en-na/engines/pickup-truck/cummins-ram-history",
+      "says": "Cummins-RAM milestones: 2001 - first time over 500 lb-ft (no hp stated)"
+     }
+    ],
+    "independent_sources": 3,
+    "status": "two_sources_agree",
+    "note": "NV5600 six-speed manual only (6-speed made optional for diesels in late 2000 for 2001). Cummins' own milestone page supports the >500 lb-ft torque but gives no hp."
+   }
+  ],
+  "2002": [
+   {
+    "gen": "gen2",
+    "cid": 360,
+    "liters": 5.9,
+    "hp": 245,
+    "hp_basis": "SAE net",
+    "name": "5.9L / 360 V8",
+    "rpo": "Magnum 5.9 (HD)",
+    "common_name": "5.9 Magnum V8",
+    "trims": [
+     "2500",
+     "3500 (std gas)"
+    ],
+    "nhra": true,
+    "sources": [
+     {
+      "name": "Wikipedia - Ram pickup (2nd/3rd gen engine tables) + Cummins B Series + Chrysler Hemi + Ram Heavy Duty (fifth generation) articles (one source)",
+      "url": "https://en.wikipedia.org/wiki/Ram_pickup",
+      "says": "1998-2002 360 Magnum V8 245 hp; VIN code 5 for the heavy-duty version"
+     },
+     {
+      "name": "NHRA Stock Car Classification Guide ('RAM' heading - lumps all Ram pickups 1500/2500/3500)",
+      "url": "nhra_ram-hd-1994-2026.json",
+      "says": "2002 RAM: 360 ci / 245 hp"
+     },
+     {
+      "name": "Kelley Blue Book - 2002 Dodge Ram 2500 specs (trim data)",
+      "url": "https://www.kbb.com/dodge/ram-2500/2002/specs/",
+      "says": "V8, 5.9 Liter: 245 hp, 335 lb-ft"
+     },
+     {
+      "name": "Cars.com - 2002 Dodge Ram 2500 specs",
+      "url": "https://www.cars.com/research/dodge-ram_2500-2002/specs/",
+      "says": "Gas V8 5.9L/360: 245 @ 4400"
+     }
+    ],
+    "independent_sources": 4,
+    "status": "confirmed",
+    "note": "Standard gas engine in HD 2500 and 3500 (heavy-duty-cycle version, VIN code 5); 1994-1996 light-duty 2500 used the 1500's 5.9."
+   },
+   {
+    "gen": "gen2",
+    "cid": 488,
+    "liters": 8.0,
+    "hp": 310,
+    "hp_basis": "SAE net",
+    "name": "8.0L / 488 V10",
+    "rpo": "Magnum V10",
+    "common_name": "Magnum V10",
+    "trims": [
+     "2500 HD",
+     "3500"
+    ],
+    "nhra": true,
+    "sources": [
+     {
+      "name": "Wikipedia - Ram pickup (2nd/3rd gen engine tables) + Cummins B Series + Chrysler Hemi + Ram Heavy Duty (fifth generation) articles (one source)",
+      "url": "https://en.wikipedia.org/wiki/Ram_pickup",
+      "says": "8.0L Magnum V10, 300 hp (1994-1998), 310 hp (1999-2002); V10 and diesel available in 2500/3500 models above 8,500 lb GVWR"
+     },
+     {
+      "name": "NHRA Stock Car Classification Guide ('RAM' heading - lumps all Ram pickups 1500/2500/3500)",
+      "url": "nhra_ram-hd-1994-2026.json",
+      "says": "2002 RAM: 488 ci / 310 hp"
+     },
+     {
+      "name": "Cars.com - 2002 Dodge Ram 2500 specs",
+      "url": "https://www.cars.com/research/dodge-ram_2500-2002/specs/",
+      "says": "hp options listed: 245, 235, 310"
+     }
+    ],
+    "independent_sources": 3,
+    "status": "confirmed",
+    "note": "HD 2500 and 3500 only (over 8,500 lb GVWR); 5-speed manual or 4-speed automatic."
+   },
+   {
+    "gen": "gen2",
+    "cid": 359,
+    "liters": 5.9,
+    "hp": 235,
+    "hp_basis": "SAE net",
+    "name": "5.9L / 359 turbodiesel I6",
+    "rpo": "Cummins ISB 24-valve",
+    "common_name": "24-valve Cummins (standard output)",
+    "trims": [
+     "2500 HD",
+     "3500"
+    ],
+    "nhra": false,
+    "sources": [
+     {
+      "name": "Wikipedia - Ram pickup (2nd/3rd gen engine tables) + Cummins B Series + Chrysler Hemi + Ram Heavy Duty (fifth generation) articles (one source)",
+      "url": "https://en.wikipedia.org/wiki/Ram_pickup",
+      "says": "2001-2002 Cummins ISB 24-valve standard output 235 hp / 460 lb-ft (5-speed manual or automatic)"
+     },
+     {
+      "name": "Diesel Army (Power Automedia) - Cummins Diesel: The Evolution Of The Dodge/Ram Engine (Chad Westfall)",
+      "url": "https://www.dieselarmy.com/?p=8081",
+      "says": "2001-2002 all models 235 hp @ 2,700 / 460 lb-ft"
+     },
+     {
+      "name": "Kelley Blue Book - 2002 Dodge Ram 3500 specs (trim data)",
+      "url": "https://www.kbb.com/dodge/ram-3500/2002/specs/",
+      "says": "All 2002 Ram 3500 trims: 6-cyl turbo diesel 235 hp, 460 lb-ft"
+     },
+     {
+      "name": "Cars.com - 2002 Dodge Ram 2500 specs",
+      "url": "https://www.cars.com/research/dodge-ram_2500-2002/specs/",
+      "says": "hp options listed: 245, 235, 310"
+     }
+    ],
+    "independent_sources": 4,
+    "status": "three_sources_not_nhra",
+    "note": "Same 235 hp / 460 lb-ft with the NV4500 5-speed manual or 47RE automatic."
+   },
+   {
+    "gen": "gen2",
+    "cid": 359,
+    "liters": 5.9,
+    "hp": 245,
+    "hp_basis": "SAE net",
+    "name": "5.9L / 359 turbodiesel I6 HO",
+    "rpo": "Cummins ISB 24-valve High Output",
+    "common_name": "24-valve Cummins High Output",
+    "trims": [
+     "2500 HD",
+     "3500"
+    ],
+    "nhra": false,
+    "sources": [
+     {
+      "name": "Wikipedia - Ram pickup (2nd/3rd gen engine tables) + Cummins B Series + Chrysler Hemi + Ram Heavy Duty (fifth generation) articles (one source)",
+      "url": "https://en.wikipedia.org/wiki/Ram_pickup",
+      "says": "2001-2002 Cummins ISB High Output 245 hp / 505 lb-ft, NV5600 six-speed manual only"
+     },
+     {
+      "name": "Diesel Army (Power Automedia) - Cummins Diesel: The Evolution Of The Dodge/Ram Engine (Chad Westfall)",
+      "url": "https://www.dieselarmy.com/?p=8081",
+      "says": "2001-2002 High Output 245 hp @ 2,700 / 505 lb-ft"
+     },
+     {
+      "name": "Cummins Inc. - Cummins-RAM History / 2021 and 2025 Ram HD engine releases (engine supplier, not Stellantis; Cloudflare-blocked, search-index text)",
+      "url": "https://www.cummins.com/en-na/engines/pickup-truck/cummins-ram-history",
+      "says": "Cummins-RAM milestones: 2001 - first time over 500 lb-ft (no hp stated)"
+     }
+    ],
+    "independent_sources": 3,
+    "status": "two_sources_agree",
+    "note": "NV5600 six-speed manual only (6-speed made optional for diesels in late 2000 for 2001). Cummins' own milestone page supports the >500 lb-ft torque but gives no hp."
+   }
+  ],
+  "2003": [
+   {
+    "gen": "gen3",
+    "cid": 488,
+    "liters": 8.0,
+    "hp": 310,
+    "hp_basis": "SAE net",
+    "name": "8.0L / 488 V10",
+    "rpo": "Magnum V10",
+    "common_name": "Magnum V10",
+    "trims": [
+     "2500",
+     "3500"
+    ],
+    "nhra": true,
+    "sources": [
+     {
+      "name": "Wikipedia - Ram pickup (2nd/3rd gen engine tables) + Cummins B Series + Chrysler Hemi + Ram Heavy Duty (fifth generation) articles (one source)",
+      "url": "https://en.wikipedia.org/wiki/Ram_pickup",
+      "says": "2003 Magnum V10 (2500/3500): 310 hp / 450 lb-ft"
+     },
+     {
+      "name": "NHRA Stock Car Classification Guide ('RAM' heading - lumps all Ram pickups 1500/2500/3500)",
+      "url": "nhra_ram-hd-1994-2026.json",
+      "says": "2003 RAM: 488 ci / 310 hp"
+     },
+     {
+      "name": "Auto123 - 2003 Dodge Ram 2500/3500 Road Test (Khatir Soltani, Sep 20 2002), spec page",
+      "url": "https://www.auto123.com/en/news/2003-dodge-ram-25003500-road-test/43318/?page=9",
+      "says": "Optional engine: 310 hp, 450 lb-ft, 8.0-L, 20-valve, OHV, V10"
+     },
+     {
+      "name": "Drivingline - History of the 2003-2007 HD Dodge Rams (common-rail Cummins, new transmissions)",
+      "url": "https://www.drivingline.com/articles/history-of-the-2003-2007-hd-dodge-rams-common-rail-cummins-new-transmissions-and-a-stronger-frame/",
+      "says": "8.0L V-10 (2003 only), replaced by the Hemi; manual available"
+     }
+    ],
+    "independent_sources": 4,
+    "status": "confirmed",
+    "note": "Final year; 2003 only in the third-generation HD. Cars.com's 2003 hp list (250/305/345) omits it."
+   },
+   {
+    "gen": "gen3",
+    "cid": 345,
+    "liters": 5.7,
+    "hp": 345,
+    "hp_basis": "SAE net",
+    "name": "5.7L / 345 Hemi V8",
+    "rpo": "Hemi 5.7 (EZB)",
+    "common_name": "Hemi",
+    "trims": [
+     "2500",
+     "Power Wagon (2005+)",
+     "3500 (see note)"
+    ],
+    "nhra": true,
+    "sources": [
+     {
+      "name": "Wikipedia - Ram pickup (2nd/3rd gen engine tables) + Cummins B Series + Chrysler Hemi + Ram Heavy Duty (fifth generation) articles (one source)",
+      "url": "https://en.wikipedia.org/wiki/Ram_pickup",
+      "says": "2003-2008 2500/3500: 5.7 Hemi V8 345 hp / 375 lb-ft"
+     },
+     {
+      "name": "Drivingline - History of the 2003-2007 HD Dodge Rams (common-rail Cummins, new transmissions)",
+      "url": "https://www.drivingline.com/articles/history-of-the-2003-2007-hd-dodge-rams-common-rail-cummins-new-transmissions-and-a-stronger-frame/",
+      "says": "5.7L Hemi (2003-2007): 345 hp @ 5,400, 375 lb-ft @ 4,200; mostly 545RFE, a five-speed manual could be had (rare)"
+     },
+     {
+      "name": "NHRA Stock Car Classification Guide ('RAM' heading - lumps all Ram pickups 1500/2500/3500)",
+      "url": "nhra_ram-hd-1994-2026.json",
+      "says": "2003 RAM: 348 ci / 345 hp"
+     },
+     {
+      "name": "Auto123 - 2003 Dodge Ram 2500/3500 Road Test (Khatir Soltani, Sep 20 2002), spec page",
+      "url": "https://www.auto123.com/en/news/2003-dodge-ram-25003500-road-test/43318/?page=9",
+      "says": "Base engine: 345 hp, 375 lb-ft (opt 345 lb-ft) [printed as '5.9-L' V8]"
+     },
+     {
+      "name": "Cars.com - 2003 Dodge Ram 2500 specs",
+      "url": "https://www.cars.com/research/dodge-ram_2500-2003/specs/",
+      "says": "5.7L/350 gas V8 345 @ 5400, 375 @ 4200"
+     },
+     {
+      "name": "Kelley Blue Book - 2003 Dodge Ram 2500 specs (trim data)",
+      "url": "https://www.kbb.com/dodge/ram-2500/2003/specs/",
+      "says": "V8, HEMI, 5.7 Liter: 345 hp"
+     }
+    ],
+    "independent_sources": 6,
+    "status": "confirmed",
+    "note": "Replaced the 5.9 Magnum as the standard HD gas engine. KBB lists it as standard in 3500 trims too (2003-2005)."
+   },
+   {
+    "gen": "gen3",
+    "cid": 359,
+    "liters": 5.9,
+    "hp": 250,
+    "hp_basis": "SAE net",
+    "name": "5.9L / 359 turbodiesel I6",
+    "rpo": "Cummins ISB common-rail (standard output)",
+    "common_name": "Common-rail Cummins",
+    "trims": [
+     "2500",
+     "3500"
+    ],
+    "nhra": false,
+    "sources": [
+     {
+      "name": "Wikipedia - Ram pickup (2nd/3rd gen engine tables) + Cummins B Series + Chrysler Hemi + Ram Heavy Duty (fifth generation) articles (one source)",
+      "url": "https://en.wikipedia.org/wiki/Ram_pickup",
+      "says": "2003 SO Cummins 250 hp / 460 lb-ft; 2003 SO California emissions 235 hp / 460"
+     },
+     {
+      "name": "Diesel Army (Power Automedia) - Cummins Diesel: The Evolution Of The Dodge/Ram Engine (Chad Westfall)",
+      "url": "https://www.dieselarmy.com/?p=8081",
+      "says": "2003-2004 non-CARB 250 hp @ 2,900 / 460; CARB 235 hp / 460"
+     },
+     {
+      "name": "Auto123 - 2003 Dodge Ram 2500/3500 Road Test (Khatir Soltani, Sep 20 2002), spec page",
+      "url": "https://www.auto123.com/en/news/2003-dodge-ram-25003500-road-test/43318/?page=9",
+      "says": "Standard turbo-diesel: 250-hp, 460 lb-ft, 5.9-L"
+     },
+     {
+      "name": "Cars.com - 2003 Dodge Ram 2500 specs",
+      "url": "https://www.cars.com/research/dodge-ram_2500-2003/specs/",
+      "says": "hp options listed: 250, 305, 345"
+     },
+     {
+      "name": "Drivingline - History of the 2003-2007 HD Dodge Rams (common-rail Cummins, new transmissions)",
+      "url": "https://www.drivingline.com/articles/history-of-the-2003-2007-hd-dodge-rams-common-rail-cummins-new-transmissions-and-a-stronger-frame/",
+      "says": "2003 standard output 235 hp / 460 lb-ft with 47RE automatic or NV4500 manual"
+     }
+    ],
+    "independent_sources": 5,
+    "status": "three_sources_not_nhra",
+    "note": "First common-rail Cummins. 250 hp federal, 235 hp California (CARB). Drivingline quotes only the 235 figure. NV4500 5-speed manual or automatic."
+   },
+   {
+    "gen": "gen3",
+    "cid": 359,
+    "liters": 5.9,
+    "hp": 305,
+    "hp_basis": "SAE net",
+    "name": "5.9L / 359 turbodiesel I6 HO",
+    "rpo": "Cummins ISB common-rail High Output",
+    "common_name": "Common-rail Cummins High Output",
+    "trims": [
+     "2500",
+     "3500"
+    ],
+    "nhra": false,
+    "sources": [
+     {
+      "name": "Wikipedia - Ram pickup (2nd/3rd gen engine tables) + Cummins B Series + Chrysler Hemi + Ram Heavy Duty (fifth generation) articles (one source)",
+      "url": "https://en.wikipedia.org/wiki/Ram_pickup",
+      "says": "2003-2004 HO Cummins (VIN 'C'): 305 hp / 555 lb-ft"
+     },
+     {
+      "name": "Diesel Army (Power Automedia) - Cummins Diesel: The Evolution Of The Dodge/Ram Engine (Chad Westfall)",
+      "url": "https://www.dieselarmy.com/?p=8081",
+      "says": "2003-2004 High Output 305 hp @ 2,900 / 555 lb-ft @ 1,400"
+     },
+     {
+      "name": "Kelley Blue Book - 2003 Dodge Ram 2500 specs (trim data)",
+      "url": "https://www.kbb.com/dodge/ram-2500/2003/specs/",
+      "says": "6-Cyl, HO Turbo Dsl: 305 hp, 555 lb-ft"
+     },
+     {
+      "name": "Cars.com - 2003 Dodge Ram 2500 specs",
+      "url": "https://www.cars.com/research/dodge-ram_2500-2003/specs/",
+      "says": "hp options listed include 305"
+     },
+     {
+      "name": "Auto123 - 2003 Dodge Ram 2500/3500 Road Test (Khatir Soltani, Sep 20 2002), spec page",
+      "url": "https://www.auto123.com/en/news/2003-dodge-ram-25003500-road-test/43318/?page=9",
+      "says": "High-output turbo-diesel: 305 hp, 555 lb-ft"
+     },
+     {
+      "name": "Drivingline - History of the 2003-2007 HD Dodge Rams (common-rail Cummins, new transmissions)",
+      "url": "https://www.drivingline.com/articles/history-of-the-2003-2007-hd-dodge-rams-common-rail-cummins-new-transmissions-and-a-stronger-frame/",
+      "says": "2003 High Output 305 hp @ 2,900, 555 lb-ft @ 1,400; 48RE automatic or NV5600 manual"
+     }
+    ],
+    "independent_sources": 6,
+    "status": "three_sources_not_nhra",
+    "note": "NV5600 six-speed manual or 48RE automatic."
+   }
+  ],
+  "2004": [
+   {
+    "gen": "gen3",
+    "cid": 345,
+    "liters": 5.7,
+    "hp": 345,
+    "hp_basis": "SAE net",
+    "name": "5.7L / 345 Hemi V8",
+    "rpo": "Hemi 5.7 (EZB)",
+    "common_name": "Hemi",
+    "trims": [
+     "2500",
+     "Power Wagon (2005+)",
+     "3500 (see note)"
+    ],
+    "nhra": true,
+    "sources": [
+     {
+      "name": "Wikipedia - Ram pickup (2nd/3rd gen engine tables) + Cummins B Series + Chrysler Hemi + Ram Heavy Duty (fifth generation) articles (one source)",
+      "url": "https://en.wikipedia.org/wiki/Ram_pickup",
+      "says": "2003-2008 2500/3500: 5.7 Hemi V8 345 hp / 375 lb-ft"
+     },
+     {
+      "name": "Drivingline - History of the 2003-2007 HD Dodge Rams (common-rail Cummins, new transmissions)",
+      "url": "https://www.drivingline.com/articles/history-of-the-2003-2007-hd-dodge-rams-common-rail-cummins-new-transmissions-and-a-stronger-frame/",
+      "says": "5.7L Hemi (2003-2007): 345 hp @ 5,400, 375 lb-ft @ 4,200; mostly 545RFE, a five-speed manual could be had (rare)"
+     },
+     {
+      "name": "NHRA Stock Car Classification Guide ('RAM' heading - lumps all Ram pickups 1500/2500/3500)",
+      "url": "nhra_ram-hd-1994-2026.json",
+      "says": "2004 RAM: 348 ci / 345 hp"
+     },
+     {
+      "name": "Cars.com - 2004 Dodge Ram 2500 specs",
+      "url": "https://www.cars.com/research/dodge-ram_2500-2004/specs/",
+      "says": "5.7L/350 gas V8 345 @ 5400"
+     },
+     {
+      "name": "Kelley Blue Book - 2004 Dodge Ram 2500 specs (trim data)",
+      "url": "https://www.kbb.com/dodge/ram-2500/2004/specs/",
+      "says": "V8, HEMI, 5.7 Liter: 330 hp, 375 lb-ft"
+     }
+    ],
+    "independent_sources": 5,
+    "status": "confirmed",
+    "note": "Standard engine in the 2500 (and Power Wagon from 2005). KBB lists 330 hp; NHRA, Cars.com, Wikipedia give 345."
+   },
+   {
+    "gen": "gen3",
+    "cid": 359,
+    "liters": 5.9,
+    "hp": 250,
+    "hp_basis": "SAE net",
+    "name": "5.9L / 359 turbodiesel I6",
+    "rpo": "Cummins ISB common-rail (standard output)",
+    "common_name": "Common-rail Cummins",
+    "trims": [
+     "2500",
+     "3500"
+    ],
+    "nhra": false,
+    "sources": [
+     {
+      "name": "Diesel Army (Power Automedia) - Cummins Diesel: The Evolution Of The Dodge/Ram Engine (Chad Westfall)",
+      "url": "https://www.dieselarmy.com/?p=8081",
+      "says": "2003-2004 non-CARB 250 hp / 460; CARB 235 hp"
+     },
+     {
+      "name": "Cars.com - 2004 Dodge Ram 2500 specs",
+      "url": "https://www.cars.com/research/dodge-ram_2500-2004/specs/",
+      "says": "hp options listed: 305, 250, 345"
+     }
+    ],
+    "independent_sources": 2,
+    "status": "two_sources_agree",
+    "note": "Early 2004 only, until the 2004.5 'Cummins 600' replaced both diesel ratings. 235 hp California. Wikipedia's table lists the standard output for 2003 only."
+   },
+   {
+    "gen": "gen3",
+    "cid": 359,
+    "liters": 5.9,
+    "hp": 305,
+    "hp_basis": "SAE net",
+    "name": "5.9L / 359 turbodiesel I6 HO",
+    "rpo": "Cummins ISB common-rail High Output",
+    "common_name": "Common-rail Cummins High Output",
+    "trims": [
+     "2500",
+     "3500"
+    ],
+    "nhra": false,
+    "sources": [
+     {
+      "name": "Wikipedia - Ram pickup (2nd/3rd gen engine tables) + Cummins B Series + Chrysler Hemi + Ram Heavy Duty (fifth generation) articles (one source)",
+      "url": "https://en.wikipedia.org/wiki/Ram_pickup",
+      "says": "2003-2004 HO Cummins (VIN 'C'): 305 hp / 555 lb-ft"
+     },
+     {
+      "name": "Diesel Army (Power Automedia) - Cummins Diesel: The Evolution Of The Dodge/Ram Engine (Chad Westfall)",
+      "url": "https://www.dieselarmy.com/?p=8081",
+      "says": "2003-2004 High Output 305 hp @ 2,900 / 555 lb-ft @ 1,400"
+     },
+     {
+      "name": "Kelley Blue Book - 2004 Dodge Ram 2500 specs (trim data)",
+      "url": "https://www.kbb.com/dodge/ram-2500/2004/specs/",
+      "says": "6-Cyl, HO Turbo Dsl: 305 hp, 555 lb-ft"
+     },
+     {
+      "name": "Cars.com - 2004 Dodge Ram 2500 specs",
+      "url": "https://www.cars.com/research/dodge-ram_2500-2004/specs/",
+      "says": "hp options listed include 305"
+     }
+    ],
+    "independent_sources": 4,
+    "status": "three_sources_not_nhra",
+    "note": "NV5600 six-speed manual or 48RE automatic. Early 2004 only (replaced by the 325-hp 'Cummins 600' at 2004.5)."
+   },
+   {
+    "gen": "gen3",
+    "cid": 359,
+    "liters": 5.9,
+    "hp": 325,
+    "hp_basis": "SAE net",
+    "name": "5.9L / 359 turbodiesel I6 HO",
+    "rpo": "Cummins ISB common-rail High Output (Cummins 600)",
+    "common_name": "Common-rail Cummins High Output",
+    "trims": [
+     "2500",
+     "3500"
+    ],
+    "nhra": false,
+    "sources": [
+     {
+      "name": "Wikipedia - Ram pickup (2nd/3rd gen engine tables) + Cummins B Series + Chrysler Hemi + Ram Heavy Duty (fifth generation) articles (one source)",
+      "url": "https://en.wikipedia.org/wiki/Ram_pickup",
+      "says": "2004.5-2007 HO Cummins 325 hp / 610 lb-ft; Cummins article: 2004.5 'Cummins 600' 325 hp @ 2,900, 600 lb-ft"
+     },
+     {
+      "name": "Diesel Army (Power Automedia) - Cummins Diesel: The Evolution Of The Dodge/Ram Engine (Chad Westfall)",
+      "url": "https://www.dieselarmy.com/?p=8081",
+      "says": "2004.5 all 325 hp / 600 lb-ft; 2005-2007 all 325 hp / 610 lb-ft"
+     },
+     {
+      "name": "Drivingline - History of the 2003-2007 HD Dodge Rams (common-rail Cummins, new transmissions)",
+      "url": "https://www.drivingline.com/articles/history-of-the-2003-2007-hd-dodge-rams-common-rail-cummins-new-transmissions-and-a-stronger-frame/",
+      "says": "2004.5 'Cummins 600': 600 lb-ft with 325 hp; 2005-2007 High Output 610 lb-ft"
+     }
+    ],
+    "independent_sources": 3,
+    "status": "three_sources_not_nhra",
+    "note": "Mid-year 2004.5 introduction ('Cummins 600'): 325 hp / 600 lb-ft; replaced the 250 and 305 ratings."
+   }
+  ],
+  "2005": [
+   {
+    "gen": "gen3",
+    "cid": 345,
+    "liters": 5.7,
+    "hp": 345,
+    "hp_basis": "SAE net",
+    "name": "5.7L / 345 Hemi V8",
+    "rpo": "Hemi 5.7 (EZB)",
+    "common_name": "Hemi",
+    "trims": [
+     "2500",
+     "Power Wagon (2005+)",
+     "3500 (see note)"
+    ],
+    "nhra": false,
+    "sources": [
+     {
+      "name": "Wikipedia - Ram pickup (2nd/3rd gen engine tables) + Cummins B Series + Chrysler Hemi + Ram Heavy Duty (fifth generation) articles (one source)",
+      "url": "https://en.wikipedia.org/wiki/Ram_pickup",
+      "says": "2003-2008 2500/3500: 5.7 Hemi V8 345 hp / 375 lb-ft"
+     },
+     {
+      "name": "Drivingline - History of the 2003-2007 HD Dodge Rams (common-rail Cummins, new transmissions)",
+      "url": "https://www.drivingline.com/articles/history-of-the-2003-2007-hd-dodge-rams-common-rail-cummins-new-transmissions-and-a-stronger-frame/",
+      "says": "5.7L Hemi (2003-2007): 345 hp @ 5,400, 375 lb-ft @ 4,200; mostly 545RFE, a five-speed manual could be had (rare)"
+     },
+     {
+      "name": "Cars.com - 2005 Dodge Ram 2500 specs",
+      "url": "https://www.cars.com/research/dodge-ram_2500-2005/specs/",
+      "says": "5.7L V8 345 @ 5400 (325 hp also listed in highlights)"
+     },
+     {
+      "name": "Kelley Blue Book - 2005 Dodge Ram 2500 specs (trim data)",
+      "url": "https://www.kbb.com/dodge/ram-2500/2005/specs/",
+      "says": "V8, HEMI, 5.7 Liter: 345 hp, 375 lb-ft"
+     }
+    ],
+    "independent_sources": 4,
+    "status": "three_sources_not_nhra",
+    "note": "Standard engine in the 2500 (and Power Wagon from 2005)."
+   },
+   {
+    "gen": "gen3",
+    "cid": 359,
+    "liters": 5.9,
+    "hp": 325,
+    "hp_basis": "SAE net",
+    "name": "5.9L / 359 turbodiesel I6 HO",
+    "rpo": "Cummins ISB common-rail High Output (Cummins 600)",
+    "common_name": "Common-rail Cummins High Output",
+    "trims": [
+     "2500",
+     "3500"
+    ],
+    "nhra": false,
+    "sources": [
+     {
+      "name": "Wikipedia - Ram pickup (2nd/3rd gen engine tables) + Cummins B Series + Chrysler Hemi + Ram Heavy Duty (fifth generation) articles (one source)",
+      "url": "https://en.wikipedia.org/wiki/Ram_pickup",
+      "says": "2004.5-2007 HO Cummins 325 hp / 610 lb-ft; Cummins article: 2004.5 'Cummins 600' 325 hp @ 2,900, 600 lb-ft"
+     },
+     {
+      "name": "Diesel Army (Power Automedia) - Cummins Diesel: The Evolution Of The Dodge/Ram Engine (Chad Westfall)",
+      "url": "https://www.dieselarmy.com/?p=8081",
+      "says": "2004.5 all 325 hp / 600 lb-ft; 2005-2007 all 325 hp / 610 lb-ft"
+     },
+     {
+      "name": "Drivingline - History of the 2003-2007 HD Dodge Rams (common-rail Cummins, new transmissions)",
+      "url": "https://www.drivingline.com/articles/history-of-the-2003-2007-hd-dodge-rams-common-rail-cummins-new-transmissions-and-a-stronger-frame/",
+      "says": "2004.5 'Cummins 600': 600 lb-ft with 325 hp; 2005-2007 High Output 610 lb-ft"
+     },
+     {
+      "name": "Kelley Blue Book - 2005 Dodge Ram 2500 specs (trim data)",
+      "url": "https://www.kbb.com/dodge/ram-2500/2005/specs/",
+      "says": "6-Cyl, HO Turbo Dsl: 325 hp"
+     }
+    ],
+    "independent_sources": 4,
+    "status": "three_sources_not_nhra",
+    "note": "325 hp; torque 610 lb-ft (Diesel Army, Wikipedia) - some sources give 600 with the automatic. G56 six-speed manual replaced the NV5600 during 2005."
+   }
+  ],
+  "2006": [
+   {
+    "gen": "gen3",
+    "cid": 345,
+    "liters": 5.7,
+    "hp": 345,
+    "hp_basis": "SAE net",
+    "name": "5.7L / 345 Hemi V8",
+    "rpo": "Hemi 5.7 (EZB)",
+    "common_name": "Hemi",
+    "trims": [
+     "2500",
+     "Power Wagon (2005+)",
+     "3500 (see note)"
+    ],
+    "nhra": false,
+    "sources": [
+     {
+      "name": "Wikipedia - Ram pickup (2nd/3rd gen engine tables) + Cummins B Series + Chrysler Hemi + Ram Heavy Duty (fifth generation) articles (one source)",
+      "url": "https://en.wikipedia.org/wiki/Ram_pickup",
+      "says": "2003-2008 2500/3500: 5.7 Hemi V8 345 hp / 375 lb-ft"
+     },
+     {
+      "name": "Drivingline - History of the 2003-2007 HD Dodge Rams (common-rail Cummins, new transmissions)",
+      "url": "https://www.drivingline.com/articles/history-of-the-2003-2007-hd-dodge-rams-common-rail-cummins-new-transmissions-and-a-stronger-frame/",
+      "says": "5.7L Hemi (2003-2007): 345 hp @ 5,400, 375 lb-ft @ 4,200; mostly 545RFE, a five-speed manual could be had (rare)"
+     },
+     {
+      "name": "Cars.com - 2006 Dodge Ram 3500 specs",
+      "url": "https://www.cars.com/research/dodge-ram_3500-2006/specs/",
+      "says": "5.7L/350 gas V8 330 @ 4800, 375 @ 4200"
+     },
+     {
+      "name": "Kelley Blue Book - 2006 Dodge Ram 2500 specs (trim data)",
+      "url": "https://www.kbb.com/dodge/ram-2500/2006/specs/",
+      "says": "V8, HEMI, 5.7 Liter: 330 hp (Regular Cab: all trims 330 hp)"
+     }
+    ],
+    "independent_sources": 4,
+    "status": "disputed",
+    "note": "Standard engine in the 2500 (and Power Wagon from 2005). Rating disputed: Wikipedia and Drivingline give 345 hp @ 5,400; Cars.com and KBB list a separate 330 hp @ 4,800 rating (possibly the heavy-duty-emissions certification). Not resolved without a Dodge spec sheet."
+   },
+   {
+    "gen": "gen3",
+    "cid": 359,
+    "liters": 5.9,
+    "hp": 325,
+    "hp_basis": "SAE net",
+    "name": "5.9L / 359 turbodiesel I6 HO",
+    "rpo": "Cummins ISB common-rail High Output (Cummins 600)",
+    "common_name": "Common-rail Cummins High Output",
+    "trims": [
+     "2500",
+     "3500"
+    ],
+    "nhra": false,
+    "sources": [
+     {
+      "name": "Wikipedia - Ram pickup (2nd/3rd gen engine tables) + Cummins B Series + Chrysler Hemi + Ram Heavy Duty (fifth generation) articles (one source)",
+      "url": "https://en.wikipedia.org/wiki/Ram_pickup",
+      "says": "2004.5-2007 HO Cummins 325 hp / 610 lb-ft; Cummins article: 2004.5 'Cummins 600' 325 hp @ 2,900, 600 lb-ft"
+     },
+     {
+      "name": "Diesel Army (Power Automedia) - Cummins Diesel: The Evolution Of The Dodge/Ram Engine (Chad Westfall)",
+      "url": "https://www.dieselarmy.com/?p=8081",
+      "says": "2004.5 all 325 hp / 600 lb-ft; 2005-2007 all 325 hp / 610 lb-ft"
+     },
+     {
+      "name": "Drivingline - History of the 2003-2007 HD Dodge Rams (common-rail Cummins, new transmissions)",
+      "url": "https://www.drivingline.com/articles/history-of-the-2003-2007-hd-dodge-rams-common-rail-cummins-new-transmissions-and-a-stronger-frame/",
+      "says": "2004.5 'Cummins 600': 600 lb-ft with 325 hp; 2005-2007 High Output 610 lb-ft"
+     },
+     {
+      "name": "Kelley Blue Book - 2006 Dodge Ram 3500 specs (trim data)",
+      "url": "https://www.kbb.com/dodge/ram-3500/2006/specs/",
+      "says": "6-Cyl, HO Turbo Dsl: 325 hp (all 2006 Ram 3500 trims 325 hp)"
+     }
+    ],
+    "independent_sources": 4,
+    "status": "three_sources_not_nhra",
+    "note": "325 hp / 610 lb-ft; 48RE automatic or G56 manual."
+   }
+  ],
+  "2007": [
+   {
+    "gen": "gen3",
+    "cid": 345,
+    "liters": 5.7,
+    "hp": 345,
+    "hp_basis": "SAE net",
+    "name": "5.7L / 345 Hemi V8",
+    "rpo": "Hemi 5.7 (EZB)",
+    "common_name": "Hemi",
+    "trims": [
+     "2500",
+     "Power Wagon (2005+)",
+     "3500 (see note)"
+    ],
+    "nhra": false,
+    "sources": [
+     {
+      "name": "Wikipedia - Ram pickup (2nd/3rd gen engine tables) + Cummins B Series + Chrysler Hemi + Ram Heavy Duty (fifth generation) articles (one source)",
+      "url": "https://en.wikipedia.org/wiki/Ram_pickup",
+      "says": "2003-2008 2500/3500: 5.7 Hemi V8 345 hp / 375 lb-ft"
+     },
+     {
+      "name": "Drivingline - History of the 2003-2007 HD Dodge Rams (common-rail Cummins, new transmissions)",
+      "url": "https://www.drivingline.com/articles/history-of-the-2003-2007-hd-dodge-rams-common-rail-cummins-new-transmissions-and-a-stronger-frame/",
+      "says": "5.7L Hemi (2003-2007): 345 hp @ 5,400, 375 lb-ft @ 4,200; mostly 545RFE, a five-speed manual could be had (rare)"
+     },
+     {
+      "name": "Cars.com - 2007 Dodge Ram 2500 specs",
+      "url": "https://www.cars.com/research/dodge-ram_2500-2007/specs/",
+      "says": "5.7L/350 gas V8 330 @ 4800, 375 @ 4200"
+     },
+     {
+      "name": "Kelley Blue Book - 2007 Dodge Ram 2500 specs (trim data)",
+      "url": "https://www.kbb.com/dodge/ram-2500/2007/specs/",
+      "says": "V8, HEMI, 5.7 Liter: rows at 330 hp and 345 hp"
+     }
+    ],
+    "independent_sources": 4,
+    "status": "disputed",
+    "note": "Standard engine in the 2500 (and Power Wagon from 2005). Rating disputed: Wikipedia and Drivingline give 345 hp @ 5,400; Cars.com list a separate 330 hp @ 4,800 rating (possibly the heavy-duty-emissions certification). Not resolved without a Dodge spec sheet."
+   },
+   {
+    "gen": "gen3",
+    "cid": 359,
+    "liters": 5.9,
+    "hp": 325,
+    "hp_basis": "SAE net",
+    "name": "5.9L / 359 turbodiesel I6 HO",
+    "rpo": "Cummins ISB common-rail High Output (Cummins 600)",
+    "common_name": "Common-rail Cummins High Output",
+    "trims": [
+     "2500",
+     "3500"
+    ],
+    "nhra": false,
+    "sources": [
+     {
+      "name": "Wikipedia - Ram pickup (2nd/3rd gen engine tables) + Cummins B Series + Chrysler Hemi + Ram Heavy Duty (fifth generation) articles (one source)",
+      "url": "https://en.wikipedia.org/wiki/Ram_pickup",
+      "says": "2004.5-2007 HO Cummins 325 hp / 610 lb-ft; Cummins article: 2004.5 'Cummins 600' 325 hp @ 2,900, 600 lb-ft"
+     },
+     {
+      "name": "Diesel Army (Power Automedia) - Cummins Diesel: The Evolution Of The Dodge/Ram Engine (Chad Westfall)",
+      "url": "https://www.dieselarmy.com/?p=8081",
+      "says": "2004.5 all 325 hp / 600 lb-ft; 2005-2007 all 325 hp / 610 lb-ft"
+     },
+     {
+      "name": "Drivingline - History of the 2003-2007 HD Dodge Rams (common-rail Cummins, new transmissions)",
+      "url": "https://www.drivingline.com/articles/history-of-the-2003-2007-hd-dodge-rams-common-rail-cummins-new-transmissions-and-a-stronger-frame/",
+      "says": "2004.5 'Cummins 600': 600 lb-ft with 325 hp; 2005-2007 High Output 610 lb-ft"
+     },
+     {
+      "name": "Kelley Blue Book - 2007 Dodge Ram 2500 specs (trim data)",
+      "url": "https://www.kbb.com/dodge/ram-2500/2007/specs/",
+      "says": "6-Cyl, HO Trb Dsl 5.9L: 325 hp, 610 lb-ft"
+     }
+    ],
+    "independent_sources": 4,
+    "status": "three_sources_not_nhra",
+    "note": "Early 2007 only; replaced by the 6.7 for trucks built from January 2007 (2007.5)."
+   },
+   {
+    "gen": "gen3",
+    "cid": 408,
+    "liters": 6.7,
+    "hp": 350,
+    "hp_basis": "SAE net",
+    "name": "6.7L / 408 turbodiesel I6",
+    "rpo": "Cummins ISB 6.7",
+    "common_name": "6.7 Cummins",
+    "trims": [
+     "2500",
+     "3500"
+    ],
+    "nhra": false,
+    "sources": [
+     {
+      "name": "Wikipedia - Ram pickup (2nd/3rd gen engine tables) + Cummins B Series + Chrysler Hemi + Ram Heavy Duty (fifth generation) articles (one source)",
+      "url": "https://en.wikipedia.org/wiki/Ram_pickup",
+      "says": "2007-2009 6.7 Cummins 350 hp / 650 lb-ft (68RFE); G56 manual 350/610"
+     },
+     {
+      "name": "Diesel Army (Power Automedia) - Cummins Diesel: The Evolution Of The Dodge/Ram Engine (Chad Westfall)",
+      "url": "https://www.dieselarmy.com/?p=8081",
+      "says": "2007-2010 all 350 hp @ 3,000; 650 lb-ft automatic, 610 manual"
+     },
+     {
+      "name": "Kelley Blue Book - 2007 Dodge Ram 2500 specs (trim data)",
+      "url": "https://www.kbb.com/dodge/ram-2500/2007/specs/",
+      "says": "6-Cyl, Turbo Dsl 6.7L: 350 hp, 610 lb-ft rows"
+     }
+    ],
+    "independent_sources": 3,
+    "status": "three_sources_not_nhra",
+    "note": "Introduced on trucks built from January 2007 (2007.5). 350 hp both transmissions; 650 lb-ft with the 68RFE six-speed automatic, 610 lb-ft with the G56 six-speed manual. (305-hp 6.7 ratings in some listings are chassis-cab figures.)",
+    "hp_by_transmission": {
+     "68RFE automatic": 350,
+     "G56 6-speed manual": 350
+    }
+   }
+  ],
+  "2008": [
+   {
+    "gen": "gen3",
+    "cid": 345,
+    "liters": 5.7,
+    "hp": 345,
+    "hp_basis": "SAE net",
+    "name": "5.7L / 345 Hemi V8",
+    "rpo": "Hemi 5.7 (EZB)",
+    "common_name": "Hemi",
+    "trims": [
+     "2500",
+     "Power Wagon (2005+)",
+     "3500 (see note)"
+    ],
+    "nhra": false,
+    "sources": [
+     {
+      "name": "Wikipedia - Ram pickup (2nd/3rd gen engine tables) + Cummins B Series + Chrysler Hemi + Ram Heavy Duty (fifth generation) articles (one source)",
+      "url": "https://en.wikipedia.org/wiki/Ram_pickup",
+      "says": "2003-2008 2500/3500: 5.7 Hemi V8 345 hp / 375 lb-ft"
+     },
+     {
+      "name": "Cars.com - 2008 Dodge Ram 2500 specs",
+      "url": "https://www.cars.com/research/dodge-ram_2500-2008/specs/",
+      "says": "330.0-hp 5.7-liter V8, 330 @ 4800, 375 @ 4200"
+     },
+     {
+      "name": "Kelley Blue Book - 2008 Dodge Ram 2500 specs (trim data)",
+      "url": "https://www.kbb.com/dodge/ram-2500/2008/specs/",
+      "says": "V8, HEMI, 5.7 Liter: 345 hp, 375 lb-ft"
+     }
+    ],
+    "independent_sources": 3,
+    "status": "disputed",
+    "note": "Standard engine in the 2500 (and Power Wagon from 2005). Rating disputed: Wikipedia give 345 hp @ 5,400; Cars.com list a separate 330 hp @ 4,800 rating (possibly the heavy-duty-emissions certification). Not resolved without a Dodge spec sheet."
+   },
+   {
+    "gen": "gen3",
+    "cid": 408,
+    "liters": 6.7,
+    "hp": 350,
+    "hp_basis": "SAE net",
+    "name": "6.7L / 408 turbodiesel I6",
+    "rpo": "Cummins ISB 6.7",
+    "common_name": "6.7 Cummins",
+    "trims": [
+     "2500",
+     "3500"
+    ],
+    "nhra": false,
+    "sources": [
+     {
+      "name": "Wikipedia - Ram pickup (2nd/3rd gen engine tables) + Cummins B Series + Chrysler Hemi + Ram Heavy Duty (fifth generation) articles (one source)",
+      "url": "https://en.wikipedia.org/wiki/Ram_pickup",
+      "says": "2007-2009 6.7 Cummins 350 hp / 650 lb-ft (68RFE); G56 manual 350/610"
+     },
+     {
+      "name": "Diesel Army (Power Automedia) - Cummins Diesel: The Evolution Of The Dodge/Ram Engine (Chad Westfall)",
+      "url": "https://www.dieselarmy.com/?p=8081",
+      "says": "2007-2010 all 350 hp @ 3,000; 650 lb-ft automatic, 610 manual"
+     },
+     {
+      "name": "Kelley Blue Book - 2008 Dodge Ram 2500 specs (trim data)",
+      "url": "https://www.kbb.com/dodge/ram-2500/2008/specs/",
+      "says": "6-Cyl, Turbo Dsl 6.7L: 350 hp, 650 lb-ft"
+     }
+    ],
+    "independent_sources": 3,
+    "status": "three_sources_not_nhra",
+    "note": "350 hp both transmissions; 650 lb-ft with the 68RFE six-speed automatic, 610 lb-ft with the G56 six-speed manual. (305-hp 6.7 ratings in some listings are chassis-cab figures.)",
+    "hp_by_transmission": {
+     "68RFE automatic": 350,
+     "G56 6-speed manual": 350
+    }
+   }
+  ],
+  "2009": [
+   {
+    "gen": "gen3",
+    "cid": 345,
+    "liters": 5.7,
+    "hp": 355,
+    "hp_basis": "SAE net",
+    "name": "5.7L / 345 Hemi V8",
+    "rpo": "Hemi 5.7 (VCT)",
+    "common_name": "Hemi",
+    "trims": [
+     "2500 only",
+     "Power Wagon"
+    ],
+    "nhra": false,
+    "sources": [
+     {
+      "name": "Cars.com - 2009 Dodge Ram 2500 specs",
+      "url": "https://www.cars.com/research/dodge-ram_2500-2009/specs/",
+      "says": "5.7L/345 gas V8: 355 @ 5400, 395 @ 4200"
+     },
+     {
+      "name": "Kelley Blue Book - 2009 Dodge Ram 2500 specs (trim data)",
+      "url": "https://www.kbb.com/dodge/ram-2500/2009/specs/",
+      "says": "V8, HEMI, 5.7 Liter: 355 hp, 395 lb-ft"
+     },
+     {
+      "name": "Construction Equipment - 2009 Work Trucks",
+      "url": "https://constructionequipment.com/2009-work-trucks",
+      "says": "Ram 2500 standard: new 5.7-liter HEMI V-8, 355 hp @ 5,600 rpm and 395 lb-ft @ 4,400 rpm"
+     },
+     {
+      "name": "Dodge 2009 Ram 2500 release (Chrysler media pdf id 8125; captcha-blocked, search-index text)",
+      "url": "https://embargoed.stellantisnorthamerica.com/pdf.do?id=8125",
+      "says": "standard power plant on Dodge Ram 2500 trucks is the new 5.7-liter HEMI V-8, best-in-class 355 horsepower @ 5,600 rpm, 395 lb-ft @ 4,400 rpm"
+     },
+     {
+      "name": "Wikipedia - Ram pickup (2nd/3rd gen engine tables) + Cummins B Series + Chrysler Hemi + Ram Heavy Duty (fifth generation) articles (one source)",
+      "url": "https://en.wikipedia.org/wiki/Ram_pickup",
+      "says": "2009 Hemi V8 (2500 only) - table gives 390 hp / 410 lb-ft"
+     }
+    ],
+    "independent_sources": 5,
+    "status": "three_sources_not_nhra",
+    "note": "New VCT Hemi for the carry-over 2009 HD. 355 hp / 395 lb-ft per Dodge, Construction Equipment, Cars.com and KBB; Wikipedia's table gives 390/410 (the 1500's figure). Wikipedia and Dodge: 2500 only; automatic only per Dodge."
+   },
+   {
+    "gen": "gen3",
+    "cid": 408,
+    "liters": 6.7,
+    "hp": 350,
+    "hp_basis": "SAE net",
+    "name": "6.7L / 408 turbodiesel I6",
+    "rpo": "Cummins ISB 6.7",
+    "common_name": "6.7 Cummins",
+    "trims": [
+     "2500",
+     "3500"
+    ],
+    "nhra": false,
+    "sources": [
+     {
+      "name": "Wikipedia - Ram pickup (2nd/3rd gen engine tables) + Cummins B Series + Chrysler Hemi + Ram Heavy Duty (fifth generation) articles (one source)",
+      "url": "https://en.wikipedia.org/wiki/Ram_pickup",
+      "says": "2007-2009 6.7 Cummins 350 hp / 650 lb-ft (68RFE); G56 manual 350/610"
+     },
+     {
+      "name": "Diesel Army (Power Automedia) - Cummins Diesel: The Evolution Of The Dodge/Ram Engine (Chad Westfall)",
+      "url": "https://www.dieselarmy.com/?p=8081",
+      "says": "2007-2010 all 350 hp @ 3,000; 650 lb-ft automatic, 610 manual"
+     },
+     {
+      "name": "Kelley Blue Book - 2009 Dodge Ram 2500 specs (trim data)",
+      "url": "https://www.kbb.com/dodge/ram-2500/2009/specs/",
+      "says": "6-Cyl, Turbo Dsl 6.7L: 350 hp, 650 lb-ft"
+     },
+     {
+      "name": "Kelley Blue Book - 2009 Dodge Ram 3500 specs (trim data)",
+      "url": "https://www.kbb.com/dodge/ram-3500/2009/specs/",
+      "says": "All 2009 Ram 3500 trims: 350 hp"
+     }
+    ],
+    "independent_sources": 3,
+    "status": "three_sources_not_nhra",
+    "note": "350 hp both transmissions; 650 lb-ft with the 68RFE six-speed automatic, 610 lb-ft with the G56 six-speed manual. (305-hp 6.7 ratings in some listings are chassis-cab figures.)",
+    "hp_by_transmission": {
+     "68RFE automatic": 350,
+     "G56 6-speed manual": 350
+    }
+   }
+  ],
+  "2010": [
+   {
+    "gen": "gen4",
+    "cid": 345,
+    "liters": 5.7,
+    "hp": 383,
+    "hp_basis": "SAE net",
+    "name": "5.7L / 345 Hemi V8",
+    "rpo": "Hemi 5.7 (VCT)",
+    "common_name": "Hemi",
+    "trims": [
+     "2500 (std)",
+     "Power Wagon (2010-2013)"
+    ],
+    "nhra": false,
+    "sources": [
+     {
+      "name": "Wikipedia - Ram pickup (2nd/3rd gen engine tables) + Cummins B Series + Chrysler Hemi + Ram Heavy Duty (fifth generation) articles (one source)",
+      "url": "https://en.wikipedia.org/wiki/Ram_pickup",
+      "says": "Ram 2500/3500 truck: 5.7 Hemi 383 hp / 400 lb-ft; only HD gas engine 2004-2013"
+     },
+     {
+      "name": "AutoGuide - 2010 Dodge Ram Heavy Duty: First Drive",
+      "url": "https://www.autoguide.com/manufacturer/dodge/2010-dodge-ram-heavy-duty-first-drive-1246.html",
+      "says": "5.7L HEMI standard on 2500: 383 hp, 400 ft-lbs"
+     },
+     {
+      "name": "Kelley Blue Book - 2010 Dodge Ram 2500 specs (trim data)",
+      "url": "https://www.kbb.com/dodge/ram-2500/2010/specs/",
+      "says": "V8, HEMI, 5.7 Liter: 383 hp, 400 lb-ft"
+     },
+     {
+      "name": "Dodge release - 2010 Dodge Ram 2500/3500 Heavy Duty (Chrysler media id 9006; captcha-blocked, search-index text)",
+      "url": "https://www.media.stellantisnorthamerica.com/text.do?id=9006",
+      "says": "5.7L HEMI V8 rated at 383hp and 400lb-ft"
+     }
+    ],
+    "independent_sources": 4,
+    "status": "three_sources_not_nhra",
+    "note": "No MDS in HD trucks. 2500 only per Ram's 2013 release ('debuts on 3500 SRW' for 2013) and AutoGuide (diesel standard on 3500 in 2010); Cars.com's 2012 3500 page lists it. Cars.com's 2010 page repeats the 2009 355-hp figure."
+   },
+   {
+    "gen": "gen4",
+    "cid": 408,
+    "liters": 6.7,
+    "hp": 350,
+    "hp_basis": "SAE net",
+    "name": "6.7L / 408 turbodiesel I6",
+    "rpo": "Cummins ISB 6.7",
+    "common_name": "6.7 Cummins",
+    "trims": [
+     "2500 (opt)",
+     "3500 (std 2010)"
+    ],
+    "nhra": false,
+    "sources": [
+     {
+      "name": "Wikipedia - Ram pickup (2nd/3rd gen engine tables) + Cummins B Series + Chrysler Hemi + Ram Heavy Duty (fifth generation) articles (one source)",
+      "url": "https://en.wikipedia.org/wiki/Ram_pickup",
+      "says": "6.7 ISB in 2007.5+ Dodge 2500/3500: 350 hp / 650 lb-ft (68RFE), 610 lb-ft G56 manual; late-2011 trucks 350 hp / 800 lb-ft"
+     },
+     {
+      "name": "Diesel Army (Power Automedia) - Cummins Diesel: The Evolution Of The Dodge/Ram Engine (Chad Westfall)",
+      "url": "https://www.dieselarmy.com/?p=8081",
+      "says": "2007-2010 350 hp; 650 lb-ft automatic, 610 manual"
+     },
+     {
+      "name": "Kelley Blue Book - 2010 Dodge Ram 2500 specs (trim data)",
+      "url": "https://www.kbb.com/dodge/ram-2500/2010/specs/",
+      "says": "6-Cyl, Turbo Dsl 6.7L: 350 hp, 650 lb-ft"
+     },
+     {
+      "name": "Kelley Blue Book - 2010 Dodge Ram 3500 specs (trim data)",
+      "url": "https://www.kbb.com/dodge/ram-3500/2010/specs/",
+      "says": "6.7L: 350 hp, 650 lb-ft"
+     },
+     {
+      "name": "AutoGuide - 2010 Dodge Ram Heavy Duty: First Drive",
+      "url": "https://www.autoguide.com/manufacturer/dodge/2010-dodge-ram-heavy-duty-first-drive-1246.html",
+      "says": "6.7L Cummins standard on 3500, available on 2500: 350 hp @ 3000, 650 ft-lbs @ 1500; six-speed automatic or 6MT"
+     },
+     {
+      "name": "Dodge release - 2010 Dodge Ram 2500/3500 Heavy Duty (Chrysler media id 9006; captcha-blocked, search-index text)",
+      "url": "https://www.media.stellantisnorthamerica.com/text.do?id=9006",
+      "says": "6.7L Cummins rated at 350hp and 650lb-ft"
+     }
+    ],
+    "independent_sources": 5,
+    "status": "three_sources_not_nhra",
+    "note": "350 hp with either transmission; 650 lb-ft 68RFE, 610 lb-ft G56 manual.",
+    "hp_by_transmission": {
+     "68RFE automatic": 350,
+     "G56 6-speed manual": 350
+    }
+   }
+  ],
+  "2011": [
+   {
+    "gen": "gen4",
+    "cid": 345,
+    "liters": 5.7,
+    "hp": 383,
+    "hp_basis": "SAE net",
+    "name": "5.7L / 345 Hemi V8",
+    "rpo": "Hemi 5.7 (VCT)",
+    "common_name": "Hemi",
+    "trims": [
+     "2500 (std)",
+     "Power Wagon (2010-2013)"
+    ],
+    "nhra": false,
+    "sources": [
+     {
+      "name": "Wikipedia - Ram pickup (2nd/3rd gen engine tables) + Cummins B Series + Chrysler Hemi + Ram Heavy Duty (fifth generation) articles (one source)",
+      "url": "https://en.wikipedia.org/wiki/Ram_pickup",
+      "says": "Ram 2500/3500 truck: 5.7 Hemi 383 hp / 400 lb-ft; only HD gas engine 2004-2013"
+     },
+     {
+      "name": "Kelley Blue Book - 2011 Ram 2500 specs (trim data)",
+      "url": "https://www.kbb.com/ram/2500-crew-cab/2011/specs/",
+      "says": "V8, HEMI, 5.7 Liter: 383 hp, 400 lb-ft"
+     }
+    ],
+    "independent_sources": 2,
+    "status": "two_sources_agree",
+    "note": "No MDS in HD trucks. 2500 only per Ram's 2013 release ('debuts on 3500 SRW' for 2013) and AutoGuide (diesel standard on 3500 in 2010); Cars.com's 2012 3500 page lists it."
+   },
+   {
+    "gen": "gen4",
+    "cid": 408,
+    "liters": 6.7,
+    "hp": 350,
+    "hp_basis": "SAE net",
+    "name": "6.7L / 408 turbodiesel I6",
+    "rpo": "Cummins ISB 6.7",
+    "common_name": "6.7 Cummins",
+    "trims": [
+     "2500 (opt)",
+     "3500 (std 2010)"
+    ],
+    "nhra": false,
+    "sources": [
+     {
+      "name": "Wikipedia - Ram pickup (2nd/3rd gen engine tables) + Cummins B Series + Chrysler Hemi + Ram Heavy Duty (fifth generation) articles (one source)",
+      "url": "https://en.wikipedia.org/wiki/Ram_pickup",
+      "says": "6.7 ISB in 2007.5+ Dodge 2500/3500: 350 hp / 650 lb-ft (68RFE), 610 lb-ft G56 manual; late-2011 trucks 350 hp / 800 lb-ft"
+     },
+     {
+      "name": "Diesel Army (Power Automedia) - Cummins Diesel: The Evolution Of The Dodge/Ram Engine (Chad Westfall)",
+      "url": "https://www.dieselarmy.com/?p=8081",
+      "says": "2011-2012 350 hp @ 3,000; 800 lb-ft automatic, 610 lb-ft manual"
+     },
+     {
+      "name": "Kelley Blue Book - 2011 Ram 2500 specs (trim data)",
+      "url": "https://www.kbb.com/ram/2500-crew-cab/2011/specs/",
+      "says": "6-Cyl, Turbo Dsl 6.7L: 350 hp, 650 lb-ft"
+     },
+     {
+      "name": "Kelley Blue Book - 2011 Ram 3500 specs (trim data)",
+      "url": "https://www.kbb.com/ram/3500-crew-cab/2011/specs/",
+      "says": "3500 trims: 350 hp (650 and 800 lb-ft rows)"
+     }
+    ],
+    "independent_sources": 3,
+    "status": "three_sources_not_nhra",
+    "note": "350 hp with either transmission; 650 lb-ft 68RFE, 610 lb-ft G56 manual. Diesel Army and Wikipedia give an 800 lb-ft automatic rating for late-2011/2012 (KBB shows both 650 and 800 rows; the 800 figure applied to the Aisin-equipped 3500).",
+    "hp_by_transmission": {
+     "68RFE automatic": 350,
+     "G56 6-speed manual": 350
+    }
+   }
+  ],
+  "2012": [
+   {
+    "gen": "gen4",
+    "cid": 345,
+    "liters": 5.7,
+    "hp": 383,
+    "hp_basis": "SAE net",
+    "name": "5.7L / 345 Hemi V8",
+    "rpo": "Hemi 5.7 (VCT)",
+    "common_name": "Hemi",
+    "trims": [
+     "2500 (std)",
+     "Power Wagon (2010-2013)"
+    ],
+    "nhra": false,
+    "sources": [
+     {
+      "name": "Wikipedia - Ram pickup (2nd/3rd gen engine tables) + Cummins B Series + Chrysler Hemi + Ram Heavy Duty (fifth generation) articles (one source)",
+      "url": "https://en.wikipedia.org/wiki/Ram_pickup",
+      "says": "Ram 2500/3500 truck: 5.7 Hemi 383 hp / 400 lb-ft; only HD gas engine 2004-2013"
+     },
+     {
+      "name": "Kelley Blue Book - 2012 Ram 2500 specs (trim data)",
+      "url": "https://www.kbb.com/ram/2500-crew-cab/2012/specs/",
+      "says": "V8, HEMI, 5.7 Liter: 383 hp, 400 lb-ft"
+     },
+     {
+      "name": "Cars.com - 2012 Ram 3500 specs",
+      "url": "https://www.cars.com/research/ram-3500-2012/specs/",
+      "says": "5.7L V8 gas 383 @ 5600, 400 @ 4000"
+     }
+    ],
+    "independent_sources": 3,
+    "status": "three_sources_not_nhra",
+    "note": "No MDS in HD trucks. 2500 only per Ram's 2013 release ('debuts on 3500 SRW' for 2013) and AutoGuide (diesel standard on 3500 in 2010); Cars.com's 2012 3500 page lists it."
+   },
+   {
+    "gen": "gen4",
+    "cid": 408,
+    "liters": 6.7,
+    "hp": 350,
+    "hp_basis": "SAE net",
+    "name": "6.7L / 408 turbodiesel I6",
+    "rpo": "Cummins ISB 6.7",
+    "common_name": "6.7 Cummins",
+    "trims": [
+     "2500 (opt)",
+     "3500 (std 2010)"
+    ],
+    "nhra": false,
+    "sources": [
+     {
+      "name": "Wikipedia - Ram pickup (2nd/3rd gen engine tables) + Cummins B Series + Chrysler Hemi + Ram Heavy Duty (fifth generation) articles (one source)",
+      "url": "https://en.wikipedia.org/wiki/Ram_pickup",
+      "says": "6.7 ISB in 2007.5+ Dodge 2500/3500: 350 hp / 650 lb-ft (68RFE), 610 lb-ft G56 manual; late-2011 trucks 350 hp / 800 lb-ft"
+     },
+     {
+      "name": "Diesel Army (Power Automedia) - Cummins Diesel: The Evolution Of The Dodge/Ram Engine (Chad Westfall)",
+      "url": "https://www.dieselarmy.com/?p=8081",
+      "says": "2011-2012 350 hp @ 3,000; 800 lb-ft automatic, 610 lb-ft manual"
+     },
+     {
+      "name": "Kelley Blue Book - 2012 Ram 2500 specs (trim data)",
+      "url": "https://www.kbb.com/ram/2500-crew-cab/2012/specs/",
+      "says": "6-Cyl, Turbo Dsl 6.7L: 350 hp, 650 lb-ft"
+     },
+     {
+      "name": "Kelley Blue Book - 2012 Ram 3500 specs (trim data)",
+      "url": "https://www.kbb.com/ram/3500-crew-cab/2012/specs/",
+      "says": "3500 trims: 350 hp (650 and 800 lb-ft rows)"
+     }
+    ],
+    "independent_sources": 3,
+    "status": "three_sources_not_nhra",
+    "note": "350 hp with either transmission; 650 lb-ft 68RFE, 610 lb-ft G56 manual. Diesel Army and Wikipedia give an 800 lb-ft automatic rating for late-2011/2012 (KBB shows both 650 and 800 rows; the 800 figure applied to the Aisin-equipped 3500).",
+    "hp_by_transmission": {
+     "68RFE automatic": 350,
+     "G56 6-speed manual": 350
+    }
+   }
+  ],
+  "2013": [
+   {
+    "gen": "gen4",
+    "cid": 345,
+    "liters": 5.7,
+    "hp": 383,
+    "hp_basis": "SAE net",
+    "name": "5.7L / 345 Hemi V8",
+    "rpo": "Hemi 5.7 (VCT)",
+    "common_name": "Hemi",
+    "trims": [
+     "2500 (std)",
+     "3500 SRW (std)"
+    ],
+    "nhra": false,
+    "sources": [
+     {
+      "name": "Wikipedia - Ram pickup (2nd/3rd gen engine tables) + Cummins B Series + Chrysler Hemi + Ram Heavy Duty (fifth generation) articles (one source)",
+      "url": "https://en.wikipedia.org/wiki/Ram_pickup",
+      "says": "Ram 2500/3500 truck: 5.7 Hemi 383 hp / 400 lb-ft; only HD gas engine 2004-2013"
+     },
+     {
+      "name": "Ram Press Kit: 2013 Ram Heavy Duty",
+      "url": "https://media.stellantisnorthamerica.com/newsrelease.do?id=13217&mid=746",
+      "says": "5.7L HEMI standard on 2500, debuts on 3500 SRW: 383 hp @ 5,600, 400 lb-ft @ 3,950; 66RFE"
+     },
+     {
+      "name": "Kelley Blue Book - 2013 Ram 2500 specs (trim data)",
+      "url": "https://www.kbb.com/ram/2500-crew-cab/2013/specs/",
+      "says": "V8, HEMI, 5.7 Liter: 383 hp, 400 lb-ft"
+     },
+     {
+      "name": "Cars.com - 2013 Ram 3500 specs",
+      "url": "https://www.cars.com/research/ram-3500-2013/specs/",
+      "says": "5.7L HEMI V8 383@5600, 400@4000"
+     }
+    ],
+    "independent_sources": 4,
+    "status": "three_sources_not_nhra",
+    "note": "No MDS in HD trucks. 66RFE six-speed automatic."
+   },
+   {
+    "gen": "gen4",
+    "cid": 408,
+    "liters": 6.7,
+    "hp": 370,
+    "hp_basis": "SAE net",
+    "name": "6.7L / 408 turbodiesel I6",
+    "rpo": "Cummins ISB 6.7",
+    "common_name": "6.7 Cummins",
+    "trims": [
+     "2500",
+     "3500"
+    ],
+    "nhra": false,
+    "sources": [
+     {
+      "name": "Diesel Army (Power Automedia) - Cummins Diesel: The Evolution Of The Dodge/Ram Engine (Chad Westfall)",
+      "url": "https://www.dieselarmy.com/?p=8081",
+      "says": "2013-present: manual 350 hp @ 2,800 / 660 lb-ft; 68RFE 370 hp @ 2,800 / 800 lb-ft"
+     },
+     {
+      "name": "Kelley Blue Book - 2013 Ram 2500 specs (trim data)",
+      "url": "https://www.kbb.com/ram/2500-crew-cab/2013/specs/",
+      "says": "6.7L rows 350 hp/660 and 385 hp/800"
+     },
+     {
+      "name": "Ram Press Kit: 2013 Ram Heavy Duty",
+      "url": "https://media.stellantisnorthamerica.com/newsrelease.do?id=13217&mid=746",
+      "says": "Cummins: 350 hp / 660 lb-ft six-speed manual; 370 hp @ 2,800 / 800 lb-ft with the 68RFE"
+     }
+    ],
+    "independent_sources": 3,
+    "status": "three_sources_not_nhra",
+    "note": "370 hp / 800 lb-ft with the 68RFE automatic; 350 hp / 660 lb-ft with the G56 six-speed manual.",
+    "hp_by_transmission": {
+     "68RFE automatic": 370,
+     "G56 6-speed manual": 350
+    }
+   },
+   {
+    "gen": "gen4",
+    "cid": 408,
+    "liters": 6.7,
+    "hp": 385,
+    "hp_basis": "SAE net",
+    "name": "6.7L / 408 turbodiesel I6 HO",
+    "rpo": "Cummins ISB 6.7 High Output",
+    "common_name": "High Output Cummins",
+    "trims": [
+     "3500 only"
+    ],
+    "nhra": false,
+    "sources": [
+     {
+      "name": "Diesel Army (Power Automedia) - Cummins Diesel: The Evolution Of The Dodge/Ram Engine (Chad Westfall)",
+      "url": "https://www.dieselarmy.com/?p=8081",
+      "says": "2013-present: Aisin AS69RC automatic 385 hp @ 2,800 / 850 lb-ft"
+     },
+     {
+      "name": "Ram Press Kit: 2013 Ram Heavy Duty",
+      "url": "https://media.stellantisnorthamerica.com/newsrelease.do?id=13217&mid=746",
+      "says": "Aisin (3500-only): 385 hp @ 2,800, 850 lb-ft @ 1,600; AS69RC"
+     },
+     {
+      "name": "Drivingline - Back in Time, Part 9: The 6.7L Cummins Strikes Back",
+      "url": "https://drivingline.com/articles/back-in-time-part-9-the-67l-cummins-strikes-back",
+      "says": "'13 3500: 385 hp, 850 lb-ft (Aisin AS69RC)"
+     },
+     {
+      "name": "Cummins Inc. - Cummins-RAM History / 2021 and 2025 Ram HD engine releases (engine supplier, not Stellantis; Cloudflare-blocked, search-index text)",
+      "url": "https://www.cummins.com/en-na/engines/pickup-truck/cummins-ram-history",
+      "says": "2013: 385 horsepower, 850 lb-ft"
+     }
+    ],
+    "independent_sources": 4,
+    "status": "three_sources_not_nhra",
+    "note": "Ram 3500 only, Aisin AS69RC six-speed automatic only. Torque 850 lb-ft for 2013.",
+    "torque_lbft": 850
+   }
+  ],
+  "2014": [
+   {
+    "gen": "gen4",
+    "cid": 345,
+    "liters": 5.7,
+    "hp": 383,
+    "hp_basis": "SAE net",
+    "name": "5.7L / 345 Hemi V8",
+    "rpo": "Hemi 5.7 (VCT)",
+    "common_name": "Hemi",
+    "trims": [
+     "2500 (std)",
+     "3500 SRW (std)"
+    ],
+    "nhra": false,
+    "sources": [
+     {
+      "name": "Wikipedia - Ram pickup (2nd/3rd gen engine tables) + Cummins B Series + Chrysler Hemi + Ram Heavy Duty (fifth generation) articles (one source)",
+      "url": "https://en.wikipedia.org/wiki/Ram_pickup",
+      "says": "Ram 2500/3500 truck: 5.7 Hemi 383 hp / 400 lb-ft; only HD gas engine 2004-2013"
+     },
+     {
+      "name": "Ram 2014 Heavy Duty release (Chrysler media id 14489/14492; search-index text)",
+      "url": "https://media.stellantisnorthamerica.com/pdf.do?id=14489",
+      "says": "5.7-liter HEMI standard in Ram 2500 and 3500 (SRW), 383 hp / 400 lb-ft"
+     },
+     {
+      "name": "Kelley Blue Book news - 2014 Ram 2500/3500 HD pickups get new 6.4-liter Hemi V8 option",
+      "url": "https://www.kbb.com/car-news/2014-ram-25003500-hd-pickups-get-new-64_liter-hemi-v8-option",
+      "says": "5.7 Hemi 383/400"
+     },
+     {
+      "name": "Cars.com - 2014 Ram 2500 specs",
+      "url": "https://www.cars.com/research/ram-2500-2014/specs/",
+      "says": "5.7L V8 HEMI VVT 383 @ 5600, 400 @ 4000"
+     }
+    ],
+    "independent_sources": 4,
+    "status": "three_sources_not_nhra",
+    "note": "No MDS in HD trucks. 66RFE six-speed automatic. Power Wagon moved to the 6.4 for 2014."
+   },
+   {
+    "gen": "gen4",
+    "cid": 392,
+    "liters": 6.4,
+    "hp": 410,
+    "hp_basis": "SAE net",
+    "name": "6.4L / 392 Hemi V8",
+    "rpo": "Hemi 6.4 'BGE' (ESG)",
+    "common_name": "392 Hemi",
+    "trims": [
+     "2500",
+     "3500 (incl. DRW)",
+     "Power Wagon (std)"
+    ],
+    "nhra": false,
+    "sources": [
+     {
+      "name": "Wikipedia - Ram pickup (2nd/3rd gen engine tables) + Cummins B Series + Chrysler Hemi + Ram Heavy Duty (fifth generation) articles (one source)",
+      "url": "https://en.wikipedia.org/wiki/Ram_pickup",
+      "says": "6.4L 'BGE' Hemi offered in 2500/3500 from 2014: 410 hp / 429 lb-ft (pickups); 370 hp in 3500 Mega Cab / Aisin applications"
+     },
+     {
+      "name": "Kelley Blue Book - 2014 Ram 2500 specs (trim data)",
+      "url": "https://www.kbb.com/ram/2500-crew-cab/2014/specs/",
+      "says": "V8, HEMI, 6.4 Liter: 410 hp, 429 lb-ft"
+     },
+     {
+      "name": "Ram 2014 Heavy Duty release (Chrysler media id 14489/14492; search-index text)",
+      "url": "https://media.stellantisnorthamerica.com/pdf.do?id=14489",
+      "says": "all-new 6.4-liter HEMI V-8: 410 hp / 429 lb-ft; first gas engine in the 3500 DRW"
+     },
+     {
+      "name": "Kelley Blue Book news - 2014 Ram 2500/3500 HD pickups get new 6.4-liter Hemi V8 option",
+      "url": "https://www.kbb.com/car-news/2014-ram-25003500-hd-pickups-get-new-64_liter-hemi-v8-option",
+      "says": "6.4-liter Hemi: 410 hp, 429 lb-ft, 6-speed automatic"
+     },
+     {
+      "name": "Cars.com - 2014 Ram 2500 specs",
+      "url": "https://www.cars.com/research/ram-2500-2014/specs/",
+      "says": "V8 option 410 hp"
+     }
+    ],
+    "independent_sources": 4,
+    "status": "three_sources_not_nhra",
+    "note": "Optional in 2500/3500, standard in Power Wagon. Has MDS. 66RFE six-speed automatic. 3500 Mega Cab / DRW / Aisin applications rated lower (Wikipedia: 370 hp)."
+   },
+   {
+    "gen": "gen4",
+    "cid": 408,
+    "liters": 6.7,
+    "hp": 370,
+    "hp_basis": "SAE net",
+    "name": "6.7L / 408 turbodiesel I6",
+    "rpo": "Cummins ISB 6.7",
+    "common_name": "6.7 Cummins",
+    "trims": [
+     "2500",
+     "3500"
+    ],
+    "nhra": false,
+    "sources": [
+     {
+      "name": "Diesel Army (Power Automedia) - Cummins Diesel: The Evolution Of The Dodge/Ram Engine (Chad Westfall)",
+      "url": "https://www.dieselarmy.com/?p=8081",
+      "says": "2013-present: manual 350 hp @ 2,800 / 660 lb-ft; 68RFE 370 hp @ 2,800 / 800 lb-ft"
+     },
+     {
+      "name": "Kelley Blue Book - 2014 Ram 2500 specs (trim data)",
+      "url": "https://www.kbb.com/ram/2500-crew-cab/2014/specs/",
+      "says": "6.7L rows 350/660 and 370/800"
+     },
+     {
+      "name": "Kelley Blue Book news - 2014 Ram 2500/3500 HD pickups get new 6.4-liter Hemi V8 option",
+      "url": "https://www.kbb.com/car-news/2014-ram-25003500-hd-pickups-get-new-64_liter-hemi-v8-option",
+      "says": "6.7 Cummins: 350 to 383 [sic] hp and 660 to 850 lb-ft, 6-speed automatic or 6-speed manual"
+     }
+    ],
+    "independent_sources": 2,
+    "status": "two_sources_agree",
+    "note": "370 hp / 800 lb-ft with the 68RFE automatic; 350 hp / 660 lb-ft with the G56 six-speed manual.",
+    "hp_by_transmission": {
+     "68RFE automatic": 370,
+     "G56 6-speed manual": 350
+    }
+   },
+   {
+    "gen": "gen4",
+    "cid": 408,
+    "liters": 6.7,
+    "hp": 385,
+    "hp_basis": "SAE net",
+    "name": "6.7L / 408 turbodiesel I6 HO",
+    "rpo": "Cummins ISB 6.7 High Output",
+    "common_name": "High Output Cummins",
+    "trims": [
+     "3500 only"
+    ],
+    "nhra": false,
+    "sources": [
+     {
+      "name": "Diesel Army (Power Automedia) - Cummins Diesel: The Evolution Of The Dodge/Ram Engine (Chad Westfall)",
+      "url": "https://www.dieselarmy.com/?p=8081",
+      "says": "2013-present: Aisin AS69RC automatic 385 hp @ 2,800 / 850 lb-ft"
+     },
+     {
+      "name": "Kelley Blue Book - 2014 Ram 3500 specs (trim data)",
+      "url": "https://www.kbb.com/ram/3500-crew-cab/2014/specs/",
+      "says": "3500 6.7L rows: 850 lb-ft"
+     },
+     {
+      "name": "Ram 2014 Heavy Duty release (Chrysler media id 14489/14492; search-index text)",
+      "url": "https://media.stellantisnorthamerica.com/pdf.do?id=14489",
+      "says": "6.7-liter Cummins High-Output ... 850 lb-ft best-in-class torque"
+     }
+    ],
+    "independent_sources": 3,
+    "status": "three_sources_not_nhra",
+    "note": "Ram 3500 only, Aisin AS69RC six-speed automatic only. Torque 850 lb-ft for 2014. Diesel Army's table and Ram's 850 lb-ft claim support it; KBB's 2014 news item misprints 383 hp.",
+    "torque_lbft": 850
+   }
+  ],
+  "2015": [
+   {
+    "gen": "gen4",
+    "cid": 345,
+    "liters": 5.7,
+    "hp": 383,
+    "hp_basis": "SAE net",
+    "name": "5.7L / 345 Hemi V8",
+    "rpo": "Hemi 5.7 (VCT)",
+    "common_name": "Hemi",
+    "trims": [
+     "2500 (std)",
+     "3500 SRW (std)"
+    ],
+    "nhra": false,
+    "sources": [
+     {
+      "name": "Wikipedia - Ram pickup (2nd/3rd gen engine tables) + Cummins B Series + Chrysler Hemi + Ram Heavy Duty (fifth generation) articles (one source)",
+      "url": "https://en.wikipedia.org/wiki/Ram_pickup",
+      "says": "Ram 2500/3500 truck: 5.7 Hemi 383 hp / 400 lb-ft; only HD gas engine 2004-2013"
+     },
+     {
+      "name": "Ram Press Kit: 2015 Ram Heavy Duty",
+      "url": "https://media.stellantisnorthamerica.com/newsrelease.do?id=15922&mid=71",
+      "says": "5.7L HEMI standard on 2500 & 3500 SRW: 383 hp @ 5,600, 400 lb-ft; 66RFE"
+     },
+     {
+      "name": "Cars.com - 2015 Ram 2500 specs",
+      "url": "https://www.cars.com/research/ram-2500-2015/specs/",
+      "says": "5.7L V8 HEMI VVT 383 @ 5600"
+     }
+    ],
+    "independent_sources": 3,
+    "status": "three_sources_not_nhra",
+    "note": "No MDS in HD trucks. 66RFE six-speed automatic. Power Wagon moved to the 6.4 for 2014."
+   },
+   {
+    "gen": "gen4",
+    "cid": 345,
+    "liters": 5.7,
+    "hp": null,
+    "hp_basis": "SAE net",
+    "name": "5.7L / 345 Hemi V8 bi-fuel CNG",
+    "rpo": "Hemi 5.7 CNG",
+    "common_name": "Hemi CNG (bi-fuel)",
+    "trims": [
+     "2500 only (fleet/commercial)"
+    ],
+    "nhra": false,
+    "sources": [
+     {
+      "name": "Ram Press Kit: 2015 Ram Heavy Duty",
+      "url": "https://media.stellantisnorthamerica.com/newsrelease.do?id=15922&mid=71",
+      "says": "CNG HEMI available as a factory-installed compressed natural gas system (no separate rating given)"
+     }
+    ],
+    "independent_sources": 1,
+    "status": "single_source",
+    "note": "Factory bi-fuel (gasoline/CNG) 5.7 Hemi, 2500 only; Ram gives the same 383/400 rating as the gasoline 5.7 for 2016. Earlier (2013-2014) CNG availability not verified. hp left null where no source states it."
+   },
+   {
+    "gen": "gen4",
+    "cid": 392,
+    "liters": 6.4,
+    "hp": 410,
+    "hp_basis": "SAE net",
+    "name": "6.4L / 392 Hemi V8",
+    "rpo": "Hemi 6.4 'BGE' (ESG)",
+    "common_name": "392 Hemi",
+    "trims": [
+     "2500",
+     "3500 (incl. DRW)",
+     "Power Wagon (std)"
+    ],
+    "nhra": false,
+    "sources": [
+     {
+      "name": "Wikipedia - Ram pickup (2nd/3rd gen engine tables) + Cummins B Series + Chrysler Hemi + Ram Heavy Duty (fifth generation) articles (one source)",
+      "url": "https://en.wikipedia.org/wiki/Ram_pickup",
+      "says": "6.4L 'BGE' Hemi offered in 2500/3500 from 2014: 410 hp / 429 lb-ft (pickups); 370 hp in 3500 Mega Cab / Aisin applications"
+     },
+     {
+      "name": "Kelley Blue Book - 2015 Ram 2500 specs (trim data)",
+      "url": "https://www.kbb.com/ram/2500-crew-cab/2015/specs/",
+      "says": "V8, HEMI, 6.4 Liter: 410 hp, 429 lb-ft"
+     },
+     {
+      "name": "Ram Press Kit: 2015 Ram Heavy Duty",
+      "url": "https://media.stellantisnorthamerica.com/newsrelease.do?id=15922&mid=71",
+      "says": "6.4L HEMI available: 410 hp @ 5,600, 429 lb-ft"
+     }
+    ],
+    "independent_sources": 3,
+    "status": "three_sources_not_nhra",
+    "note": "Optional in 2500/3500, standard in Power Wagon. Has MDS. 66RFE six-speed automatic. 3500 Mega Cab / DRW / Aisin applications rated lower (Wikipedia: 370 hp)."
+   },
+   {
+    "gen": "gen4",
+    "cid": 408,
+    "liters": 6.7,
+    "hp": 370,
+    "hp_basis": "SAE net",
+    "name": "6.7L / 408 turbodiesel I6",
+    "rpo": "Cummins ISB 6.7",
+    "common_name": "6.7 Cummins",
+    "trims": [
+     "2500",
+     "3500"
+    ],
+    "nhra": false,
+    "sources": [
+     {
+      "name": "Diesel Army (Power Automedia) - Cummins Diesel: The Evolution Of The Dodge/Ram Engine (Chad Westfall)",
+      "url": "https://www.dieselarmy.com/?p=8081",
+      "says": "2013-present: manual 350 hp @ 2,800 / 660 lb-ft; 68RFE 370 hp @ 2,800 / 800 lb-ft"
+     },
+     {
+      "name": "Kelley Blue Book - 2015 Ram 2500 specs (trim data)",
+      "url": "https://www.kbb.com/ram/2500-crew-cab/2015/specs/",
+      "says": "6.7L rows 350/660 and 370/800"
+     },
+     {
+      "name": "Ram Press Kit: 2015 Ram Heavy Duty",
+      "url": "https://media.stellantisnorthamerica.com/newsrelease.do?id=15922&mid=71",
+      "says": "Manual 350 hp / 660 lb-ft; automatic (2500) 370 hp / 800 lb-ft with 68RFE"
+     }
+    ],
+    "independent_sources": 3,
+    "status": "three_sources_not_nhra",
+    "note": "370 hp / 800 lb-ft with the 68RFE automatic; 350 hp / 660 lb-ft with the G56 six-speed manual.",
+    "hp_by_transmission": {
+     "68RFE automatic": 370,
+     "G56 6-speed manual": 350
+    }
+   },
+   {
+    "gen": "gen4",
+    "cid": 408,
+    "liters": 6.7,
+    "hp": 385,
+    "hp_basis": "SAE net",
+    "name": "6.7L / 408 turbodiesel I6 HO",
+    "rpo": "Cummins ISB 6.7 High Output",
+    "common_name": "High Output Cummins",
+    "trims": [
+     "3500 only"
+    ],
+    "nhra": false,
+    "sources": [
+     {
+      "name": "Diesel Army (Power Automedia) - Cummins Diesel: The Evolution Of The Dodge/Ram Engine (Chad Westfall)",
+      "url": "https://www.dieselarmy.com/?p=8081",
+      "says": "2013-present: Aisin AS69RC automatic 385 hp @ 2,800 / 850 lb-ft"
+     },
+     {
+      "name": "Ram Press Kit: 2015 Ram Heavy Duty",
+      "url": "https://media.stellantisnorthamerica.com/newsrelease.do?id=15922&mid=71",
+      "says": "High-Output (3500): 385 hp @ 2,800, 865 lb-ft @ 1,700, Aisin AS69RC"
+     },
+     {
+      "name": "Drivingline - Back in Time, Part 9: The 6.7L Cummins Strikes Back",
+      "url": "https://drivingline.com/articles/back-in-time-part-9-the-67l-cummins-strikes-back",
+      "says": "'15 3500: 385 hp, 865 lb-ft"
+     }
+    ],
+    "independent_sources": 3,
+    "status": "three_sources_not_nhra",
+    "note": "Ram 3500 only, Aisin AS69RC six-speed automatic only. Torque 865 lb-ft for 2015.",
+    "torque_lbft": 865
+   }
+  ],
+  "2016": [
+   {
+    "gen": "gen4",
+    "cid": 345,
+    "liters": 5.7,
+    "hp": 383,
+    "hp_basis": "SAE net",
+    "name": "5.7L / 345 Hemi V8",
+    "rpo": "Hemi 5.7 (VCT)",
+    "common_name": "Hemi",
+    "trims": [
+     "2500 (std)",
+     "3500 SRW (std)"
+    ],
+    "nhra": false,
+    "sources": [
+     {
+      "name": "Wikipedia - Ram pickup (2nd/3rd gen engine tables) + Cummins B Series + Chrysler Hemi + Ram Heavy Duty (fifth generation) articles (one source)",
+      "url": "https://en.wikipedia.org/wiki/Ram_pickup",
+      "says": "Ram 2500/3500 truck: 5.7 Hemi 383 hp / 400 lb-ft; only HD gas engine 2004-2013"
+     },
+     {
+      "name": "Ram Press Kit: 2016 Ram Heavy Duty",
+      "url": "https://media.stellantisnorthamerica.com/newsrelease.do?id=16756&mid=",
+      "says": "5.7L HEMI standard on 2500/3500 SRW: 383 hp @ 5,600, 400 lb-ft"
+     },
+     {
+      "name": "Cars.com - 2016 Ram 2500 specs",
+      "url": "https://www.cars.com/research/ram-2500-2016/specs/",
+      "says": "5.7L V8 HEMI VVT 383 @ 5600"
+     }
+    ],
+    "independent_sources": 3,
+    "status": "three_sources_not_nhra",
+    "note": "No MDS in HD trucks. 66RFE six-speed automatic. Power Wagon moved to the 6.4 for 2014."
+   },
+   {
+    "gen": "gen4",
+    "cid": 345,
+    "liters": 5.7,
+    "hp": 383,
+    "hp_basis": "SAE net",
+    "name": "5.7L / 345 Hemi V8 bi-fuel CNG",
+    "rpo": "Hemi 5.7 CNG",
+    "common_name": "Hemi CNG (bi-fuel)",
+    "trims": [
+     "2500 only (fleet/commercial)"
+    ],
+    "nhra": false,
+    "sources": [
+     {
+      "name": "Ram Press Kit: 2016 Ram Heavy Duty",
+      "url": "https://media.stellantisnorthamerica.com/newsrelease.do?id=16756&mid=",
+      "says": "5.7L HEMI CNG on Ram 2500 (expanded to Regular Cab and 2WD): same 383 hp / 400 lb-ft"
+     },
+     {
+      "name": "Cars.com - 2016 Ram 2500 specs",
+      "url": "https://www.cars.com/research/ram-2500-2016/specs/",
+      "says": "5.7L V8 HEMI CNG: 383 hp"
+     },
+     {
+      "name": "Cars.com - Ram 2500 research overview (model-year summaries)",
+      "url": "https://www.cars.com/research/ram-2500-2011/",
+      "says": "Gas and compressed natural gas V-8 engines (2016-2018)"
+     }
+    ],
+    "independent_sources": 2,
+    "status": "two_sources_agree",
+    "note": "Factory bi-fuel (gasoline/CNG) 5.7 Hemi, 2500 only; Ram gives the same 383/400 rating as the gasoline 5.7 for 2016. Earlier (2013-2014) CNG availability not verified. hp left null where no source states it."
+   },
+   {
+    "gen": "gen4",
+    "cid": 392,
+    "liters": 6.4,
+    "hp": 410,
+    "hp_basis": "SAE net",
+    "name": "6.4L / 392 Hemi V8",
+    "rpo": "Hemi 6.4 'BGE' (ESG)",
+    "common_name": "392 Hemi",
+    "trims": [
+     "2500",
+     "3500 (incl. DRW)",
+     "Power Wagon (std)"
+    ],
+    "nhra": false,
+    "sources": [
+     {
+      "name": "Wikipedia - Ram pickup (2nd/3rd gen engine tables) + Cummins B Series + Chrysler Hemi + Ram Heavy Duty (fifth generation) articles (one source)",
+      "url": "https://en.wikipedia.org/wiki/Ram_pickup",
+      "says": "6.4L 'BGE' Hemi offered in 2500/3500 from 2014: 410 hp / 429 lb-ft (pickups); 370 hp in 3500 Mega Cab / Aisin applications"
+     },
+     {
+      "name": "Kelley Blue Book - 2016 Ram 2500 specs (trim data)",
+      "url": "https://www.kbb.com/ram/2500-crew-cab/2016/specs/",
+      "says": "V8, HEMI, 6.4 Liter: 410 hp, 429 lb-ft"
+     },
+     {
+      "name": "Ram Press Kit: 2016 Ram Heavy Duty",
+      "url": "https://media.stellantisnorthamerica.com/newsrelease.do?id=16756&mid=",
+      "says": "6.4L HEMI: 410 hp @ 5,600, 429 lb-ft @ 4,000, 2500/3500"
+     }
+    ],
+    "independent_sources": 3,
+    "status": "three_sources_not_nhra",
+    "note": "Optional in 2500/3500, standard in Power Wagon. Has MDS. 66RFE six-speed automatic. 3500 Mega Cab / DRW / Aisin applications rated lower (Wikipedia: 370 hp)."
+   },
+   {
+    "gen": "gen4",
+    "cid": 408,
+    "liters": 6.7,
+    "hp": 370,
+    "hp_basis": "SAE net",
+    "name": "6.7L / 408 turbodiesel I6",
+    "rpo": "Cummins ISB 6.7",
+    "common_name": "6.7 Cummins",
+    "trims": [
+     "2500",
+     "3500"
+    ],
+    "nhra": false,
+    "sources": [
+     {
+      "name": "Diesel Army (Power Automedia) - Cummins Diesel: The Evolution Of The Dodge/Ram Engine (Chad Westfall)",
+      "url": "https://www.dieselarmy.com/?p=8081",
+      "says": "2013-present: manual 350 hp @ 2,800 / 660 lb-ft; 68RFE 370 hp @ 2,800 / 800 lb-ft"
+     },
+     {
+      "name": "Kelley Blue Book - 2016 Ram 2500 specs (trim data)",
+      "url": "https://www.kbb.com/ram/2500-crew-cab/2016/specs/",
+      "says": "6.7L rows 350/660 and 370/800"
+     },
+     {
+      "name": "Ram Press Kit: 2016 Ram Heavy Duty",
+      "url": "https://media.stellantisnorthamerica.com/newsrelease.do?id=16756&mid=",
+      "says": "6-speed manual 350 hp / 660 lb-ft (2500/3500); 68RFE 370 hp / 800 lb-ft"
+     }
+    ],
+    "independent_sources": 3,
+    "status": "three_sources_not_nhra",
+    "note": "370 hp / 800 lb-ft with the 68RFE automatic; 350 hp / 660 lb-ft with the G56 six-speed manual.",
+    "hp_by_transmission": {
+     "68RFE automatic": 370,
+     "G56 6-speed manual": 350
+    }
+   },
+   {
+    "gen": "gen4",
+    "cid": 408,
+    "liters": 6.7,
+    "hp": 385,
+    "hp_basis": "SAE net",
+    "name": "6.7L / 408 turbodiesel I6 HO",
+    "rpo": "Cummins ISB 6.7 High Output",
+    "common_name": "High Output Cummins",
+    "trims": [
+     "3500 only"
+    ],
+    "nhra": false,
+    "sources": [
+     {
+      "name": "Diesel Army (Power Automedia) - Cummins Diesel: The Evolution Of The Dodge/Ram Engine (Chad Westfall)",
+      "url": "https://www.dieselarmy.com/?p=8081",
+      "says": "2013-present: Aisin AS69RC automatic 385 hp @ 2,800 / 850 lb-ft"
+     },
+     {
+      "name": "Ram Press Kit: 2016 Ram Heavy Duty",
+      "url": "https://media.stellantisnorthamerica.com/newsrelease.do?id=16756&mid=",
+      "says": "High-Output with Aisin: 385 hp @ 2,800, 900 lb-ft @ 1,700 (Ram 3500)"
+     },
+     {
+      "name": "Drivingline - Back in Time, Part 9: The 6.7L Cummins Strikes Back",
+      "url": "https://drivingline.com/articles/back-in-time-part-9-the-67l-cummins-strikes-back",
+      "says": "'16 3500: 385 hp, 900 lb-ft"
+     },
+     {
+      "name": "Kelley Blue Book - 2016 Ram 3500 specs (trim data)",
+      "url": "https://www.kbb.com/ram/3500-crew-cab/2016/specs/",
+      "says": "3500 6.7L row: 900 lb-ft"
+     }
+    ],
+    "independent_sources": 4,
+    "status": "three_sources_not_nhra",
+    "note": "Ram 3500 only, Aisin AS69RC six-speed automatic only. Torque 900 lb-ft for 2016.",
+    "torque_lbft": 900
+   }
+  ],
+  "2017": [
+   {
+    "gen": "gen4",
+    "cid": 345,
+    "liters": 5.7,
+    "hp": 383,
+    "hp_basis": "SAE net",
+    "name": "5.7L / 345 Hemi V8",
+    "rpo": "Hemi 5.7 (VCT)",
+    "common_name": "Hemi",
+    "trims": [
+     "2500 (std)",
+     "3500 SRW (std)"
+    ],
+    "nhra": false,
+    "sources": [
+     {
+      "name": "Wikipedia - Ram pickup (2nd/3rd gen engine tables) + Cummins B Series + Chrysler Hemi + Ram Heavy Duty (fifth generation) articles (one source)",
+      "url": "https://en.wikipedia.org/wiki/Ram_pickup",
+      "says": "Ram 2500/3500 truck: 5.7 Hemi 383 hp / 400 lb-ft; only HD gas engine 2004-2013"
+     },
+     {
+      "name": "Cars.com - 2017 Ram 2500 specs",
+      "url": "https://www.cars.com/research/ram-2500-2017/specs/",
+      "says": "5.7L V8 HEMI VVT 383 hp @ 5600"
+     }
+    ],
+    "independent_sources": 2,
+    "status": "two_sources_agree",
+    "note": "No MDS in HD trucks. 66RFE six-speed automatic. Power Wagon moved to the 6.4 for 2014."
+   },
+   {
+    "gen": "gen4",
+    "cid": 345,
+    "liters": 5.7,
+    "hp": null,
+    "hp_basis": "SAE net",
+    "name": "5.7L / 345 Hemi V8 bi-fuel CNG",
+    "rpo": "Hemi 5.7 CNG",
+    "common_name": "Hemi CNG (bi-fuel)",
+    "trims": [
+     "2500 only (fleet/commercial)"
+    ],
+    "nhra": false,
+    "sources": [
+     {
+      "name": "Cars.com - 2017 Ram 2500 specs",
+      "url": "https://www.cars.com/research/ram-2500-2017/specs/",
+      "says": "5.7L V8 HEMI CNG listed"
+     },
+     {
+      "name": "Cars.com - Ram 2500 research overview (model-year summaries)",
+      "url": "https://www.cars.com/research/ram-2500-2011/",
+      "says": "Gas and compressed natural gas V-8 engines (2016-2018)"
+     }
+    ],
+    "independent_sources": 1,
+    "status": "single_source",
+    "note": "Factory bi-fuel (gasoline/CNG) 5.7 Hemi, 2500 only; Ram gives the same 383/400 rating as the gasoline 5.7 for 2016. Earlier (2013-2014) CNG availability not verified. hp left null where no source states it."
+   },
+   {
+    "gen": "gen4",
+    "cid": 392,
+    "liters": 6.4,
+    "hp": 410,
+    "hp_basis": "SAE net",
+    "name": "6.4L / 392 Hemi V8",
+    "rpo": "Hemi 6.4 'BGE' (ESG)",
+    "common_name": "392 Hemi",
+    "trims": [
+     "2500",
+     "3500 (incl. DRW)",
+     "Power Wagon (std)"
+    ],
+    "nhra": false,
+    "sources": [
+     {
+      "name": "Wikipedia - Ram pickup (2nd/3rd gen engine tables) + Cummins B Series + Chrysler Hemi + Ram Heavy Duty (fifth generation) articles (one source)",
+      "url": "https://en.wikipedia.org/wiki/Ram_pickup",
+      "says": "6.4L 'BGE' Hemi offered in 2500/3500 from 2014: 410 hp / 429 lb-ft (pickups); 370 hp in 3500 Mega Cab / Aisin applications"
+     },
+     {
+      "name": "Kelley Blue Book - 2017 Ram 2500 specs (trim data)",
+      "url": "https://www.kbb.com/ram/2500-crew-cab/2017/specs/",
+      "says": "V8, HEMI, 6.4 Liter: 410 hp, 429 lb-ft"
+     },
+     {
+      "name": "Cars.com - 2017 Ram 2500 specs",
+      "url": "https://www.cars.com/research/ram-2500-2017/specs/",
+      "says": "6.4L HD V8 HEMI with MDS: 410 hp"
+     }
+    ],
+    "independent_sources": 3,
+    "status": "three_sources_not_nhra",
+    "note": "Optional in 2500/3500, standard in Power Wagon. Has MDS. 66RFE six-speed automatic. 3500 Mega Cab / DRW / Aisin applications rated lower (Wikipedia: 370 hp)."
+   },
+   {
+    "gen": "gen4",
+    "cid": 408,
+    "liters": 6.7,
+    "hp": 370,
+    "hp_basis": "SAE net",
+    "name": "6.7L / 408 turbodiesel I6",
+    "rpo": "Cummins ISB 6.7",
+    "common_name": "6.7 Cummins",
+    "trims": [
+     "2500",
+     "3500"
+    ],
+    "nhra": false,
+    "sources": [
+     {
+      "name": "Diesel Army (Power Automedia) - Cummins Diesel: The Evolution Of The Dodge/Ram Engine (Chad Westfall)",
+      "url": "https://www.dieselarmy.com/?p=8081",
+      "says": "2013-present: manual 350 hp @ 2,800 / 660 lb-ft; 68RFE 370 hp @ 2,800 / 800 lb-ft"
+     },
+     {
+      "name": "Kelley Blue Book - 2017 Ram 2500 specs (trim data)",
+      "url": "https://www.kbb.com/ram/2500-crew-cab/2017/specs/",
+      "says": "6.7L rows 350/660"
+     },
+     {
+      "name": "Cars.com - 2017 Ram 2500 specs",
+      "url": "https://www.cars.com/research/ram-2500-2017/specs/",
+      "says": "6.7L I6 Cummins Turbo Diesel with G56 manual or 68RFE automatic"
+     }
+    ],
+    "independent_sources": 3,
+    "status": "three_sources_not_nhra",
+    "note": "370 hp / 800 lb-ft with the 68RFE automatic; 350 hp / 660 lb-ft with the G56 six-speed manual. For 2017-2018 the 370 figure rests on Diesel Army's 2013-on table; KBB lists only the manual's 350/660.",
+    "hp_by_transmission": {
+     "68RFE automatic": 370,
+     "G56 6-speed manual": 350
+    }
+   },
+   {
+    "gen": "gen4",
+    "cid": 408,
+    "liters": 6.7,
+    "hp": 385,
+    "hp_basis": "SAE net",
+    "name": "6.7L / 408 turbodiesel I6 HO",
+    "rpo": "Cummins ISB 6.7 High Output",
+    "common_name": "High Output Cummins",
+    "trims": [
+     "3500 only"
+    ],
+    "nhra": false,
+    "sources": [
+     {
+      "name": "Diesel Army (Power Automedia) - Cummins Diesel: The Evolution Of The Dodge/Ram Engine (Chad Westfall)",
+      "url": "https://www.dieselarmy.com/?p=8081",
+      "says": "2013-present: Aisin AS69RC automatic 385 hp @ 2,800 / 850 lb-ft"
+     },
+     {
+      "name": "Kelley Blue Book - 2017 Ram 3500 specs (trim data)",
+      "url": "https://www.kbb.com/ram/3500-crew-cab/2017/specs/",
+      "says": "3500 6.7L rows (350 hp / 800 lb-ft shown)"
+     }
+    ],
+    "independent_sources": 2,
+    "status": "two_sources_not_nhra",
+    "note": "Ram 3500 only, Aisin AS69RC six-speed automatic only. Torque 900 lb-ft for 2017. Carry-over 385/900 is stated by Ram's 2016/2018 kits bracketing the year but no 2017-specific source was found.",
+    "torque_lbft": 900
+   }
+  ],
+  "2018": [
+   {
+    "gen": "gen4",
+    "cid": 345,
+    "liters": 5.7,
+    "hp": 383,
+    "hp_basis": "SAE net",
+    "name": "5.7L / 345 Hemi V8",
+    "rpo": "Hemi 5.7 (VCT)",
+    "common_name": "Hemi",
+    "trims": [
+     "2500 (std)",
+     "3500 SRW (std)"
+    ],
+    "nhra": false,
+    "sources": [
+     {
+      "name": "Wikipedia - Ram pickup (2nd/3rd gen engine tables) + Cummins B Series + Chrysler Hemi + Ram Heavy Duty (fifth generation) articles (one source)",
+      "url": "https://en.wikipedia.org/wiki/Ram_pickup",
+      "says": "Ram 2500/3500 truck: 5.7 Hemi 383 hp / 400 lb-ft; only HD gas engine 2004-2013"
+     },
+     {
+      "name": "Ram Press Kit: 2018 Ram Heavy Duty / 2018 Ram 2500/3500 fact sheet (+ Aug 11 2017 930 lb-ft release, search-index text)",
+      "url": "https://media.stellantisnorthamerica.com/newsrelease.do?id=18523",
+      "says": "5.7-liter HEMI V-8: 383 hp @ 5,600, 400 lb-ft"
+     },
+     {
+      "name": "Cars.com - 2018 Ram 3500 specs",
+      "url": "https://www.cars.com/research/ram-3500-2018/specs/",
+      "says": "5.7L V8 HEMI VVT 383 @ 5600, 400 @ 4000"
+     }
+    ],
+    "independent_sources": 3,
+    "status": "three_sources_not_nhra",
+    "note": "No MDS in HD trucks. 66RFE six-speed automatic. Power Wagon moved to the 6.4 for 2014."
+   },
+   {
+    "gen": "gen4",
+    "cid": 345,
+    "liters": 5.7,
+    "hp": null,
+    "hp_basis": "SAE net",
+    "name": "5.7L / 345 Hemi V8 bi-fuel CNG",
+    "rpo": "Hemi 5.7 CNG",
+    "common_name": "Hemi CNG (bi-fuel)",
+    "trims": [
+     "2500 only (fleet/commercial)"
+    ],
+    "nhra": false,
+    "sources": [
+     {
+      "name": "Cars.com - Ram 2500 research overview (model-year summaries)",
+      "url": "https://www.cars.com/research/ram-2500-2011/",
+      "says": "Gas and compressed natural gas V-8 engines (2016-2018)"
+     }
+    ],
+    "independent_sources": 1,
+    "status": "single_source",
+    "note": "Factory bi-fuel (gasoline/CNG) 5.7 Hemi, 2500 only; Ram gives the same 383/400 rating as the gasoline 5.7 for 2016. Earlier (2013-2014) CNG availability not verified. hp left null where no source states it."
+   },
+   {
+    "gen": "gen4",
+    "cid": 392,
+    "liters": 6.4,
+    "hp": 410,
+    "hp_basis": "SAE net",
+    "name": "6.4L / 392 Hemi V8",
+    "rpo": "Hemi 6.4 'BGE' (ESG)",
+    "common_name": "392 Hemi",
+    "trims": [
+     "2500",
+     "3500 (incl. DRW)",
+     "Power Wagon (std)"
+    ],
+    "nhra": false,
+    "sources": [
+     {
+      "name": "Wikipedia - Ram pickup (2nd/3rd gen engine tables) + Cummins B Series + Chrysler Hemi + Ram Heavy Duty (fifth generation) articles (one source)",
+      "url": "https://en.wikipedia.org/wiki/Ram_pickup",
+      "says": "6.4L 'BGE' Hemi offered in 2500/3500 from 2014: 410 hp / 429 lb-ft (pickups); 370 hp in 3500 Mega Cab / Aisin applications"
+     },
+     {
+      "name": "Kelley Blue Book - 2018 Ram 2500 specs (trim data)",
+      "url": "https://www.kbb.com/ram/2500-crew-cab/2018/specs/",
+      "says": "V8, HEMI, 6.4 Liter: 410 hp, 429 lb-ft"
+     },
+     {
+      "name": "Ram Press Kit: 2018 Ram Heavy Duty / 2018 Ram 2500/3500 fact sheet (+ Aug 11 2017 930 lb-ft release, search-index text)",
+      "url": "https://media.stellantisnorthamerica.com/newsrelease.do?id=18523",
+      "says": "6.4-liter HEMI V-8: 410 hp @ 5,600, 429 lb-ft @ 4,000"
+     },
+     {
+      "name": "Cars.com - 2018 Ram 3500 specs",
+      "url": "https://www.cars.com/research/ram-3500-2018/specs/",
+      "says": "6.4L HD V8 HEMI w/MDS: 410 hp"
+     }
+    ],
+    "independent_sources": 4,
+    "status": "three_sources_not_nhra",
+    "note": "Optional in 2500/3500, standard in Power Wagon. Has MDS. 66RFE six-speed automatic. 3500 Mega Cab / DRW / Aisin applications rated lower (Wikipedia: 370 hp)."
+   },
+   {
+    "gen": "gen4",
+    "cid": 408,
+    "liters": 6.7,
+    "hp": 370,
+    "hp_basis": "SAE net",
+    "name": "6.7L / 408 turbodiesel I6",
+    "rpo": "Cummins ISB 6.7",
+    "common_name": "6.7 Cummins",
+    "trims": [
+     "2500",
+     "3500"
+    ],
+    "nhra": false,
+    "sources": [
+     {
+      "name": "Diesel Army (Power Automedia) - Cummins Diesel: The Evolution Of The Dodge/Ram Engine (Chad Westfall)",
+      "url": "https://www.dieselarmy.com/?p=8081",
+      "says": "2013-present: manual 350 hp @ 2,800 / 660 lb-ft; 68RFE 370 hp @ 2,800 / 800 lb-ft"
+     },
+     {
+      "name": "Kelley Blue Book - 2018 Ram 2500 specs (trim data)",
+      "url": "https://www.kbb.com/ram/2500-crew-cab/2018/specs/",
+      "says": "6.7L rows 350/660"
+     },
+     {
+      "name": "Cars.com - 2018 Ram 3500 specs",
+      "url": "https://www.cars.com/research/ram-3500-2018/specs/",
+      "says": "6.7L I6 Cummins Turbo Diesel with G56 manual or 68RFE automatic (350 hp listed)"
+     },
+     {
+      "name": "Jalopnik - This Is The Last Year You Can Buy A New Full-Sized Pickup Truck With A Manual Transmission (search-index text)",
+      "url": "https://jalopnik.com/this-is-the-last-year-you-can-buy-a-new-full-sized-pick-1831744609",
+      "says": "2018 Ram 2500 was the last full-size pickup with a manual (G56 dropped for 2019)"
+     }
+    ],
+    "independent_sources": 4,
+    "status": "three_sources_not_nhra",
+    "note": "370 hp / 800 lb-ft with the 68RFE automatic; 350 hp / 660 lb-ft with the G56 six-speed manual. Last year for the manual. For 2017-2018 the 370 figure rests on Diesel Army's 2013-on table; KBB lists only the manual's 350/660.",
+    "hp_by_transmission": {
+     "68RFE automatic": 370,
+     "G56 6-speed manual": 350
+    }
+   },
+   {
+    "gen": "gen4",
+    "cid": 408,
+    "liters": 6.7,
+    "hp": 385,
+    "hp_basis": "SAE net",
+    "name": "6.7L / 408 turbodiesel I6 HO",
+    "rpo": "Cummins ISB 6.7 High Output",
+    "common_name": "High Output Cummins",
+    "trims": [
+     "3500 only"
+    ],
+    "nhra": false,
+    "sources": [
+     {
+      "name": "Diesel Army (Power Automedia) - Cummins Diesel: The Evolution Of The Dodge/Ram Engine (Chad Westfall)",
+      "url": "https://www.dieselarmy.com/?p=8081",
+      "says": "2013-present: Aisin AS69RC automatic 385 hp @ 2,800 / 850 lb-ft"
+     },
+     {
+      "name": "Ram Press Kit: 2018 Ram Heavy Duty / 2018 Ram 2500/3500 fact sheet (+ Aug 11 2017 930 lb-ft release, search-index text)",
+      "url": "https://media.stellantisnorthamerica.com/newsrelease.do?id=18523",
+      "says": "6.7 Cummins High-Output 385 hp @ 2,800 / 900 lb-ft (fact sheet); Aug 11 2017 release: 2018 Ram 3500 930 lb-ft"
+     },
+     {
+      "name": "The Drive - 2018 Ram 3500HD passes Ford Super Duty to become pickup torque king (search-index text)",
+      "url": "https://www.thedrive.com/news/13427/2018-ram-3500hd-passes-ford-super-duty-to-become-pickup-truck-torque-king.md",
+      "says": "2018 Ram 3500: 385 hp and 930 lb-ft, up 30 lb-ft over 2017"
+     },
+     {
+      "name": "Cars.com - 2018 Ram 3500 specs",
+      "url": "https://www.cars.com/research/ram-3500-2018/specs/",
+      "says": "6.7L with Aisin AS69RC HD listed"
+     }
+    ],
+    "independent_sources": 4,
+    "status": "three_sources_not_nhra",
+    "note": "Ram 3500 only, Aisin AS69RC six-speed automatic only. Torque 930 lb-ft for 2018. Ram's 2018 fact sheet still shows 900; Ram's August 2017 release and The Drive give 930.",
+    "torque_lbft": 930
+   }
+  ],
+  "2019": [
+   {
+    "gen": "gen5",
+    "cid": 392,
+    "liters": 6.4,
+    "hp": 410,
+    "hp_basis": "SAE net",
+    "name": "6.4L / 392 Hemi V8",
+    "rpo": "Hemi 6.4 'BGE'",
+    "common_name": "392 Hemi",
+    "trims": [
+     "2500",
+     "3500",
+     "Power Wagon"
+    ],
+    "nhra": false,
+    "sources": [
+     {
+      "name": "Ram Press Kit: 2019 Ram Heavy Duty",
+      "url": "https://media.stellantisnorthamerica.com/newsrelease.do?id=20527&mid=69",
+      "says": "6.4-liter HEMI V-8: 410 hp @ 5,600 rpm, 429 lb-ft @ 4,000"
+     },
+     {
+      "name": "Wikipedia - Ram pickup (2nd/3rd gen engine tables) + Cummins B Series + Chrysler Hemi + Ram Heavy Duty (fifth generation) articles (one source)",
+      "url": "https://en.wikipedia.org/wiki/Ram_pickup",
+      "says": "2019- 6.4 Hemi V8 410 hp / 429 lb-ft (2500/3500 pickup), standard gas engine; 8-speed ZF 8HP75"
+     },
+     {
+      "name": "Kelley Blue Book - 2019 Ram 2500 specs (trim data)",
+      "url": "https://www.kbb.com/ram/2500-crew-cab/2019/specs/",
+      "says": "V8, HEMI, 6.4 Liter: 410 hp, 429 lb-ft"
+     },
+     {
+      "name": "Cars.com - 2019 Ram 2500 specs",
+      "url": "https://www.cars.com/research/ram-2500-2019/specs/",
+      "says": "6.4L HD V8 HEMI 410 hp @ 5600, 429 @ 4000"
+     },
+     {
+      "name": "Mopar Connection Magazine - Dang! 1,000 Lb.-ft Of Torque From The 2019 Ram Heavy Duty",
+      "url": "https://moparconnectionmagazine.com/?p=23023",
+      "says": "410 hp 6.4 Hemi"
+     }
+    ],
+    "independent_sources": 5,
+    "status": "three_sources_not_nhra",
+    "note": "Standard gas engine in 2500 and 3500 (5.7 dropped for 2019); 8-speed automatic (ZF 8HP75). Power Wagon gas-only."
+   },
+   {
+    "gen": "gen5",
+    "cid": 408,
+    "liters": 6.7,
+    "hp": 370,
+    "hp_basis": "SAE net",
+    "name": "6.7L / 408 turbodiesel I6",
+    "rpo": "Cummins ISB 6.7 (standard output)",
+    "common_name": "6.7 Cummins",
+    "trims": [
+     "2500",
+     "3500"
+    ],
+    "nhra": false,
+    "sources": [
+     {
+      "name": "Ram Press Kit: 2019 Ram Heavy Duty",
+      "url": "https://media.stellantisnorthamerica.com/newsrelease.do?id=20527&mid=69",
+      "says": "6.7-liter Cummins Standard-Output: 370 hp / 850 lb-ft @ 1,700; upgraded 68RFE six-speed automatic; 2500 and 3500"
+     },
+     {
+      "name": "Wikipedia - Ram pickup (2nd/3rd gen engine tables) + Cummins B Series + Chrysler Hemi + Ram Heavy Duty (fifth generation) articles (one source)",
+      "url": "https://en.wikipedia.org/wiki/Ram_pickup",
+      "says": "2019-2024 6.7 Cummins ISB I6 with 68RFE: 370 hp / 850 lb-ft (2500 and 3500 pickup)"
+     },
+     {
+      "name": "Kelley Blue Book - 2019 Ram 2500 specs (trim data)",
+      "url": "https://www.kbb.com/ram/2500-crew-cab/2019/specs/",
+      "says": "6-Cyl, Turbo Diesel, 6.7 Liter: 370 hp, 850 lb-ft, Automatic 6-Spd"
+     },
+     {
+      "name": "Cars.com - 2019 Ram 3500 specs",
+      "url": "https://www.cars.com/research/ram-3500-2019/specs/",
+      "says": "6.7L Cummins with 68RFE; hp list includes 370"
+     }
+    ],
+    "independent_sources": 4,
+    "status": "three_sources_not_nhra",
+    "note": "68RFE six-speed automatic only (no manual from 2019)."
+   },
+   {
+    "gen": "gen5",
+    "cid": 408,
+    "liters": 6.7,
+    "hp": 400,
+    "hp_basis": "SAE net",
+    "name": "6.7L / 408 turbodiesel I6 HO",
+    "rpo": "Cummins ISB 6.7 High Output",
+    "common_name": "High Output Cummins",
+    "trims": [
+     "3500 only"
+    ],
+    "nhra": false,
+    "sources": [
+     {
+      "name": "Wikipedia - Ram pickup (2nd/3rd gen engine tables) + Cummins B Series + Chrysler Hemi + Ram Heavy Duty (fifth generation) articles (one source)",
+      "url": "https://en.wikipedia.org/wiki/Ram_pickup",
+      "says": "3500 pickup HO with Aisin AS69RC: 400 hp / 1,000 lb-ft (2019-2020), 420 hp / 1,075 lb-ft (2021-2024)"
+     },
+     {
+      "name": "Ram Press Kit: 2019 Ram Heavy Duty",
+      "url": "https://media.stellantisnorthamerica.com/newsrelease.do?id=20527&mid=69",
+      "says": "6.7-liter Cummins High-Output: 400 hp / 1,000 lb-ft (Ram 3500 only)"
+     },
+     {
+      "name": "Cummins Inc. - Cummins-RAM History / 2021 and 2025 Ram HD engine releases (engine supplier, not Stellantis; Cloudflare-blocked, search-index text)",
+      "url": "https://www.cummins.com/en-na/engines/pickup-truck/cummins-ram-history",
+      "says": "2019: 1,000 lb-ft"
+     },
+     {
+      "name": "Mopar Connection Magazine - Dang! 1,000 Lb.-ft Of Torque From The 2019 Ram Heavy Duty",
+      "url": "https://moparconnectionmagazine.com/?p=23023",
+      "says": "400 hp and 1000 lb-ft 6.7 Cummins"
+     },
+     {
+      "name": "Cars.com - 2019 Ram 3500 specs",
+      "url": "https://www.cars.com/research/ram-3500-2019/specs/",
+      "says": "6.7L Cummins HD with Aisin AS69RC; hp list includes 400"
+     }
+    ],
+    "independent_sources": 5,
+    "status": "three_sources_not_nhra",
+    "note": "Ram 3500 only, Aisin AS69RC six-speed automatic. Torque 1,000 lb-ft.",
+    "torque_lbft": 1000
+   }
+  ],
+  "2020": [
+   {
+    "gen": "gen5",
+    "cid": 392,
+    "liters": 6.4,
+    "hp": 410,
+    "hp_basis": "SAE net",
+    "name": "6.4L / 392 Hemi V8",
+    "rpo": "Hemi 6.4 'BGE'",
+    "common_name": "392 Hemi",
+    "trims": [
+     "2500",
+     "3500",
+     "Power Wagon"
+    ],
+    "nhra": false,
+    "sources": [
+     {
+      "name": "Ram 2020 Ram 2500/3500 Heavy Duty Fact Sheet",
+      "url": "https://media.stellantisnorthamerica.com/newsrelease.do?id=21108&fIId=20970&mid=1",
+      "says": "6.4-liter HEMI V-8: 410 hp @ 5,600 rpm, 429 lb-ft @ 4,000"
+     },
+     {
+      "name": "Wikipedia - Ram pickup (2nd/3rd gen engine tables) + Cummins B Series + Chrysler Hemi + Ram Heavy Duty (fifth generation) articles (one source)",
+      "url": "https://en.wikipedia.org/wiki/Ram_pickup",
+      "says": "2019- 6.4 Hemi V8 410 hp / 429 lb-ft (2500/3500 pickup), standard gas engine; 8-speed ZF 8HP75"
+     },
+     {
+      "name": "Kelley Blue Book - 2020 Ram 2500 specs (trim data)",
+      "url": "https://www.kbb.com/ram/2500-crew-cab/2020/specs/",
+      "says": "V8, HEMI, 6.4 Liter: 410 hp, 429 lb-ft"
+     },
+     {
+      "name": "Cars.com - 2020 Ram 3500 specs",
+      "url": "https://www.cars.com/research/ram-3500-2020/specs/",
+      "says": "6.4L HD V8 HEMI: 410 hp @ 5600"
+     }
+    ],
+    "independent_sources": 4,
+    "status": "three_sources_not_nhra",
+    "note": "Standard gas engine in 2500 and 3500 (5.7 dropped for 2019); 8-speed automatic (ZF 8HP75). Power Wagon gas-only."
+   },
+   {
+    "gen": "gen5",
+    "cid": 408,
+    "liters": 6.7,
+    "hp": 370,
+    "hp_basis": "SAE net",
+    "name": "6.7L / 408 turbodiesel I6",
+    "rpo": "Cummins ISB 6.7 (standard output)",
+    "common_name": "6.7 Cummins",
+    "trims": [
+     "2500",
+     "3500"
+    ],
+    "nhra": false,
+    "sources": [
+     {
+      "name": "Ram 2020 Ram 2500/3500 Heavy Duty Fact Sheet",
+      "url": "https://media.stellantisnorthamerica.com/newsrelease.do?id=21108&fIId=20970&mid=1",
+      "says": "6.7-liter Cummins Standard-Output: 370 hp / 850 lb-ft (Ram 2500 only)"
+     },
+     {
+      "name": "Wikipedia - Ram pickup (2nd/3rd gen engine tables) + Cummins B Series + Chrysler Hemi + Ram Heavy Duty (fifth generation) articles (one source)",
+      "url": "https://en.wikipedia.org/wiki/Ram_pickup",
+      "says": "2019-2024 6.7 Cummins ISB I6 with 68RFE: 370 hp / 850 lb-ft (2500 and 3500 pickup)"
+     },
+     {
+      "name": "Kelley Blue Book - 2020 Ram 2500 specs (trim data)",
+      "url": "https://www.kbb.com/ram/2500-crew-cab/2020/specs/",
+      "says": "6-Cyl, Turbo Diesel, 6.7 Liter: 370 hp, 850 lb-ft, Automatic 6-Spd"
+     },
+     {
+      "name": "Consumer Guide - 2020 Ram 2500 Cummins test (search-index text)",
+      "url": "https://blog.consumerguide.com/?p=82179",
+      "says": "2020 Ram 2500 Laramie: 370-hp 6.7-liter turbodiesel, 6-speed automatic"
+     },
+     {
+      "name": "Cars.com - 2020 Ram 3500 specs",
+      "url": "https://www.cars.com/research/ram-3500-2020/specs/",
+      "says": "6.7L Cummins with 68RFE; hp list includes 370"
+     }
+    ],
+    "independent_sources": 5,
+    "status": "three_sources_not_nhra",
+    "note": "68RFE six-speed automatic only (no manual from 2019). Ram's 2020 fact sheet says 'Ram 2500 only'; its 2019/2021-2024 sheets and Wikipedia list it for 2500 and 3500."
+   },
+   {
+    "gen": "gen5",
+    "cid": 408,
+    "liters": 6.7,
+    "hp": 400,
+    "hp_basis": "SAE net",
+    "name": "6.7L / 408 turbodiesel I6 HO",
+    "rpo": "Cummins ISB 6.7 High Output",
+    "common_name": "High Output Cummins",
+    "trims": [
+     "3500 only"
+    ],
+    "nhra": false,
+    "sources": [
+     {
+      "name": "Wikipedia - Ram pickup (2nd/3rd gen engine tables) + Cummins B Series + Chrysler Hemi + Ram Heavy Duty (fifth generation) articles (one source)",
+      "url": "https://en.wikipedia.org/wiki/Ram_pickup",
+      "says": "3500 pickup HO with Aisin AS69RC: 400 hp / 1,000 lb-ft (2019-2020), 420 hp / 1,075 lb-ft (2021-2024)"
+     },
+     {
+      "name": "Ram 2020 Ram 2500/3500 Heavy Duty Fact Sheet",
+      "url": "https://media.stellantisnorthamerica.com/newsrelease.do?id=21108&fIId=20970&mid=1",
+      "says": "6.7-liter Cummins High-Output: 400 hp / 1,000 lb-ft (Ram 3500 only)"
+     },
+     {
+      "name": "Cars.com - 2020 Ram 3500 specs",
+      "url": "https://www.cars.com/research/ram-3500-2020/specs/",
+      "says": "6.7L Cummins HD with Aisin AS69RC; hp list 400/370/410"
+     }
+    ],
+    "independent_sources": 3,
+    "status": "three_sources_not_nhra",
+    "note": "Ram 3500 only, Aisin AS69RC six-speed automatic. Torque 1,000 lb-ft.",
+    "torque_lbft": 1000
+   }
+  ],
+  "2021": [
+   {
+    "gen": "gen5",
+    "cid": 392,
+    "liters": 6.4,
+    "hp": 410,
+    "hp_basis": "SAE net",
+    "name": "6.4L / 392 Hemi V8",
+    "rpo": "Hemi 6.4 'BGE'",
+    "common_name": "392 Hemi",
+    "trims": [
+     "2500",
+     "3500",
+     "Power Wagon"
+    ],
+    "nhra": false,
+    "sources": [
+     {
+      "name": "Ram 2021 Ram 2500/3500 Heavy Duty Fact Sheet (Aug 31 2020)",
+      "url": "https://media.stellantisnorthamerica.com/newsrelease.do?id=21910&mid=1",
+      "says": "6.4-liter HEMI V-8: 410 hp @ 5,600 rpm, 429 lb-ft @ 4,000"
+     },
+     {
+      "name": "Wikipedia - Ram pickup (2nd/3rd gen engine tables) + Cummins B Series + Chrysler Hemi + Ram Heavy Duty (fifth generation) articles (one source)",
+      "url": "https://en.wikipedia.org/wiki/Ram_pickup",
+      "says": "2019- 6.4 Hemi V8 410 hp / 429 lb-ft (2500/3500 pickup), standard gas engine; 8-speed ZF 8HP75"
+     },
+     {
+      "name": "Kelley Blue Book - 2021 Ram 2500 specs (trim data)",
+      "url": "https://www.kbb.com/ram/2500-crew-cab/2021/specs/",
+      "says": "V8, HEMI, 6.4 Liter: 410 hp, 429 lb-ft"
+     },
+     {
+      "name": "Cars.com - 2021 Ram 3500 specs",
+      "url": "https://www.cars.com/research/ram-3500-2021/specs/",
+      "says": "6.4L HD V8 HEMI: 410 hp @ 5600"
+     }
+    ],
+    "independent_sources": 4,
+    "status": "three_sources_not_nhra",
+    "note": "Standard gas engine in 2500 and 3500 (5.7 dropped for 2019); 8-speed automatic (ZF 8HP75). Power Wagon gas-only."
+   },
+   {
+    "gen": "gen5",
+    "cid": 408,
+    "liters": 6.7,
+    "hp": 370,
+    "hp_basis": "SAE net",
+    "name": "6.7L / 408 turbodiesel I6",
+    "rpo": "Cummins ISB 6.7 (standard output)",
+    "common_name": "6.7 Cummins",
+    "trims": [
+     "2500",
+     "3500"
+    ],
+    "nhra": false,
+    "sources": [
+     {
+      "name": "Ram 2021 Ram 2500/3500 Heavy Duty Fact Sheet (Aug 31 2020)",
+      "url": "https://media.stellantisnorthamerica.com/newsrelease.do?id=21910&mid=1",
+      "says": "6.7-liter Cummins Standard-Output: 370 hp / 850 lb-ft (Ram 2500 and 3500)"
+     },
+     {
+      "name": "Wikipedia - Ram pickup (2nd/3rd gen engine tables) + Cummins B Series + Chrysler Hemi + Ram Heavy Duty (fifth generation) articles (one source)",
+      "url": "https://en.wikipedia.org/wiki/Ram_pickup",
+      "says": "2019-2024 6.7 Cummins ISB I6 with 68RFE: 370 hp / 850 lb-ft (2500 and 3500 pickup)"
+     },
+     {
+      "name": "Kelley Blue Book - 2021 Ram 2500 specs (trim data)",
+      "url": "https://www.kbb.com/ram/2500-crew-cab/2021/specs/",
+      "says": "6-Cyl, Turbo Diesel, 6.7 Liter: 370 hp, 850 lb-ft, Automatic 6-Spd"
+     },
+     {
+      "name": "Cars.com - 2021 Ram 3500 specs",
+      "url": "https://www.cars.com/research/ram-3500-2021/specs/",
+      "says": "6.7L Cummins with 68RFE; hp list includes 370"
+     }
+    ],
+    "independent_sources": 4,
+    "status": "three_sources_not_nhra",
+    "note": "68RFE six-speed automatic only (no manual from 2019)."
+   },
+   {
+    "gen": "gen5",
+    "cid": 408,
+    "liters": 6.7,
+    "hp": 420,
+    "hp_basis": "SAE net",
+    "name": "6.7L / 408 turbodiesel I6 HO",
+    "rpo": "Cummins ISB 6.7 High Output",
+    "common_name": "High Output Cummins",
+    "trims": [
+     "3500 only"
+    ],
+    "nhra": false,
+    "sources": [
+     {
+      "name": "Wikipedia - Ram pickup (2nd/3rd gen engine tables) + Cummins B Series + Chrysler Hemi + Ram Heavy Duty (fifth generation) articles (one source)",
+      "url": "https://en.wikipedia.org/wiki/Ram_pickup",
+      "says": "3500 pickup HO with Aisin AS69RC: 400 hp / 1,000 lb-ft (2019-2020), 420 hp / 1,075 lb-ft (2021-2024)"
+     },
+     {
+      "name": "Cummins Inc. - Cummins-RAM History / 2021 and 2025 Ram HD engine releases (engine supplier, not Stellantis; Cloudflare-blocked, search-index text)",
+      "url": "https://www.cummins.com/en-na/engines/pickup-truck/cummins-ram-history",
+      "says": "2021 model year: best-in-class 1,075 lb-ft and 420 hp"
+     },
+     {
+      "name": "Ram 2021 Ram 2500/3500 Heavy Duty Fact Sheet (Aug 31 2020)",
+      "url": "https://media.stellantisnorthamerica.com/newsrelease.do?id=21910&mid=1",
+      "says": "6.7-liter Cummins High-Output: 400 hp / 1,000 lb-ft (Ram 3500 only) [Aug 31 2020 fact sheet]"
+     },
+     {
+      "name": "Cars.com - 2021 Ram 3500 specs",
+      "url": "https://www.cars.com/research/ram-3500-2021/specs/",
+      "says": "Cummins hp values 370 and 400"
+     }
+    ],
+    "independent_sources": 4,
+    "status": "disputed",
+    "note": "Ram 3500 only, Aisin AS69RC six-speed automatic. Torque 1,075 lb-ft. Disputed: Ram's August 2020 fact sheet and Cars.com give 400/1,000; Cummins (Dec 2020) and Wikipedia give 420/1,075 for 2021. Likely a running change announced after launch; 420 recorded.",
+    "torque_lbft": 1075
+   }
+  ],
+  "2022": [
+   {
+    "gen": "gen5",
+    "cid": 392,
+    "liters": 6.4,
+    "hp": 410,
+    "hp_basis": "SAE net",
+    "name": "6.4L / 392 Hemi V8",
+    "rpo": "Hemi 6.4 'BGE'",
+    "common_name": "392 Hemi",
+    "trims": [
+     "2500",
+     "3500",
+     "Power Wagon"
+    ],
+    "nhra": false,
+    "sources": [
+     {
+      "name": "Ram 2022 Ram Heavy Duty Fact Sheet",
+      "url": "https://media.stellantisnorthamerica.com/newsrelease.do?id=22989&mid=1",
+      "says": "6.4-liter HEMI V-8: 410 hp @ 5,600 rpm, 429 lb-ft @ 4,000"
+     },
+     {
+      "name": "Wikipedia - Ram pickup (2nd/3rd gen engine tables) + Cummins B Series + Chrysler Hemi + Ram Heavy Duty (fifth generation) articles (one source)",
+      "url": "https://en.wikipedia.org/wiki/Ram_pickup",
+      "says": "2019- 6.4 Hemi V8 410 hp / 429 lb-ft (2500/3500 pickup), standard gas engine; 8-speed ZF 8HP75"
+     },
+     {
+      "name": "Kelley Blue Book - 2022 Ram 2500 specs (trim data)",
+      "url": "https://www.kbb.com/ram/2500-crew-cab/2022/specs/",
+      "says": "V8, HEMI, 6.4 Liter: 410 hp, 429 lb-ft"
+     }
+    ],
+    "independent_sources": 3,
+    "status": "three_sources_not_nhra",
+    "note": "Standard gas engine in 2500 and 3500 (5.7 dropped for 2019); 8-speed automatic (ZF 8HP75). Power Wagon gas-only."
+   },
+   {
+    "gen": "gen5",
+    "cid": 408,
+    "liters": 6.7,
+    "hp": 370,
+    "hp_basis": "SAE net",
+    "name": "6.7L / 408 turbodiesel I6",
+    "rpo": "Cummins ISB 6.7 (standard output)",
+    "common_name": "6.7 Cummins",
+    "trims": [
+     "2500",
+     "3500"
+    ],
+    "nhra": false,
+    "sources": [
+     {
+      "name": "Ram 2022 Ram Heavy Duty Fact Sheet",
+      "url": "https://media.stellantisnorthamerica.com/newsrelease.do?id=22989&mid=1",
+      "says": "6.7-liter Cummins Standard-Output: 370 hp / 850 lb-ft (Ram 2500 and 3500)"
+     },
+     {
+      "name": "Wikipedia - Ram pickup (2nd/3rd gen engine tables) + Cummins B Series + Chrysler Hemi + Ram Heavy Duty (fifth generation) articles (one source)",
+      "url": "https://en.wikipedia.org/wiki/Ram_pickup",
+      "says": "2019-2024 6.7 Cummins ISB I6 with 68RFE: 370 hp / 850 lb-ft (2500 and 3500 pickup)"
+     },
+     {
+      "name": "Kelley Blue Book - 2022 Ram 2500 specs (trim data)",
+      "url": "https://www.kbb.com/ram/2500-crew-cab/2022/specs/",
+      "says": "6-Cyl, Turbo Diesel, 6.7 Liter: 370 hp, 850 lb-ft, Automatic 6-Spd"
+     }
+    ],
+    "independent_sources": 3,
+    "status": "three_sources_not_nhra",
+    "note": "68RFE six-speed automatic only (no manual from 2019)."
+   },
+   {
+    "gen": "gen5",
+    "cid": 408,
+    "liters": 6.7,
+    "hp": 420,
+    "hp_basis": "SAE net",
+    "name": "6.7L / 408 turbodiesel I6 HO",
+    "rpo": "Cummins ISB 6.7 High Output",
+    "common_name": "High Output Cummins",
+    "trims": [
+     "3500 only"
+    ],
+    "nhra": false,
+    "sources": [
+     {
+      "name": "Wikipedia - Ram pickup (2nd/3rd gen engine tables) + Cummins B Series + Chrysler Hemi + Ram Heavy Duty (fifth generation) articles (one source)",
+      "url": "https://en.wikipedia.org/wiki/Ram_pickup",
+      "says": "3500 pickup HO with Aisin AS69RC: 400 hp / 1,000 lb-ft (2019-2020), 420 hp / 1,075 lb-ft (2021-2024)"
+     },
+     {
+      "name": "Ram 2022 Ram Heavy Duty Fact Sheet",
+      "url": "https://media.stellantisnorthamerica.com/newsrelease.do?id=22989&mid=1",
+      "says": "6.7-liter Cummins High-Output: 420 hp / 1,075 lb-ft (Ram 3500 only)"
+     },
+     {
+      "name": "Cars.com - 2022 Ram 3500 specs",
+      "url": "https://www.cars.com/research/ram-3500-2022/specs/",
+      "says": "6.7L I6 Cummins HO Turbo Diesel: 420 hp, Aisin AS69RC HD"
+     }
+    ],
+    "independent_sources": 3,
+    "status": "three_sources_not_nhra",
+    "note": "Ram 3500 only, Aisin AS69RC six-speed automatic. Torque 1,075 lb-ft.",
+    "torque_lbft": 1075
+   }
+  ],
+  "2023": [
+   {
+    "gen": "gen5",
+    "cid": 392,
+    "liters": 6.4,
+    "hp": 410,
+    "hp_basis": "SAE net",
+    "name": "6.4L / 392 Hemi V8",
+    "rpo": "Hemi 6.4 'BGE'",
+    "common_name": "392 Hemi",
+    "trims": [
+     "2500",
+     "3500",
+     "Power Wagon"
+    ],
+    "nhra": false,
+    "sources": [
+     {
+      "name": "Ram What's New for 2023: Ram Heavy Duty",
+      "url": "https://media.stellantisnorthamerica.com/newsrelease.do?fIId=24050&id=24136&mid=",
+      "says": "6.4-liter HEMI V-8: 410 hp @ 5,600 rpm, 429 lb-ft @ 4,000"
+     },
+     {
+      "name": "Wikipedia - Ram pickup (2nd/3rd gen engine tables) + Cummins B Series + Chrysler Hemi + Ram Heavy Duty (fifth generation) articles (one source)",
+      "url": "https://en.wikipedia.org/wiki/Ram_pickup",
+      "says": "2019- 6.4 Hemi V8 410 hp / 429 lb-ft (2500/3500 pickup), standard gas engine; 8-speed ZF 8HP75"
+     },
+     {
+      "name": "Kelley Blue Book - 2023 Ram 2500 specs (trim data)",
+      "url": "https://www.kbb.com/ram/2500-crew-cab/2023/specs/",
+      "says": "V8, HEMI, 6.4 Liter: 410 hp, 429 lb-ft"
+     },
+     {
+      "name": "Cars.com - 2023 Ram 3500 specs",
+      "url": "https://www.cars.com/research/ram-3500-2023/specs/",
+      "says": "6.4L HD V8 HEMI: 410 hp @ 5600"
+     }
+    ],
+    "independent_sources": 4,
+    "status": "three_sources_not_nhra",
+    "note": "Standard gas engine in 2500 and 3500 (5.7 dropped for 2019); 8-speed automatic (ZF 8HP75). Power Wagon gas-only."
+   },
+   {
+    "gen": "gen5",
+    "cid": 408,
+    "liters": 6.7,
+    "hp": 370,
+    "hp_basis": "SAE net",
+    "name": "6.7L / 408 turbodiesel I6",
+    "rpo": "Cummins ISB 6.7 (standard output)",
+    "common_name": "6.7 Cummins",
+    "trims": [
+     "2500",
+     "3500"
+    ],
+    "nhra": false,
+    "sources": [
+     {
+      "name": "Ram What's New for 2023: Ram Heavy Duty",
+      "url": "https://media.stellantisnorthamerica.com/newsrelease.do?fIId=24050&id=24136&mid=",
+      "says": "6.7-liter Cummins Standard-Output: 370 hp / 850 lb-ft (Ram 2500 and 3500)"
+     },
+     {
+      "name": "Wikipedia - Ram pickup (2nd/3rd gen engine tables) + Cummins B Series + Chrysler Hemi + Ram Heavy Duty (fifth generation) articles (one source)",
+      "url": "https://en.wikipedia.org/wiki/Ram_pickup",
+      "says": "2019-2024 6.7 Cummins ISB I6 with 68RFE: 370 hp / 850 lb-ft (2500 and 3500 pickup)"
+     },
+     {
+      "name": "Kelley Blue Book - 2023 Ram 2500 specs (trim data)",
+      "url": "https://www.kbb.com/ram/2500-crew-cab/2023/specs/",
+      "says": "6-Cyl, Turbo Diesel, 6.7 Liter: 370 hp, 850 lb-ft, Automatic 6-Spd"
+     }
+    ],
+    "independent_sources": 3,
+    "status": "three_sources_not_nhra",
+    "note": "68RFE six-speed automatic only (no manual from 2019)."
+   },
+   {
+    "gen": "gen5",
+    "cid": 408,
+    "liters": 6.7,
+    "hp": 420,
+    "hp_basis": "SAE net",
+    "name": "6.7L / 408 turbodiesel I6 HO",
+    "rpo": "Cummins ISB 6.7 High Output",
+    "common_name": "High Output Cummins",
+    "trims": [
+     "3500 only"
+    ],
+    "nhra": false,
+    "sources": [
+     {
+      "name": "Wikipedia - Ram pickup (2nd/3rd gen engine tables) + Cummins B Series + Chrysler Hemi + Ram Heavy Duty (fifth generation) articles (one source)",
+      "url": "https://en.wikipedia.org/wiki/Ram_pickup",
+      "says": "3500 pickup HO with Aisin AS69RC: 400 hp / 1,000 lb-ft (2019-2020), 420 hp / 1,075 lb-ft (2021-2024)"
+     },
+     {
+      "name": "Ram What's New for 2023: Ram Heavy Duty",
+      "url": "https://media.stellantisnorthamerica.com/newsrelease.do?fIId=24050&id=24136&mid=",
+      "says": "6.7-liter Cummins High-Output: 420 hp / 1,075 lb-ft (Ram 3500 only)"
+     },
+     {
+      "name": "Cars.com - 2023 Ram 3500 specs",
+      "url": "https://www.cars.com/research/ram-3500-2023/specs/",
+      "says": "6.7L I6 Cummins HO Turbo Diesel: 420 hp, Aisin AS69RC HD"
+     }
+    ],
+    "independent_sources": 3,
+    "status": "three_sources_not_nhra",
+    "note": "Ram 3500 only, Aisin AS69RC six-speed automatic. Torque 1,075 lb-ft. Ram's 2023 release frames the 420/1,075 rating as the 2023 upgrade, conflicting with Cummins/Wikipedia's 2021 start.",
+    "torque_lbft": 1075
+   }
+  ],
+  "2024": [
+   {
+    "gen": "gen5",
+    "cid": 392,
+    "liters": 6.4,
+    "hp": 410,
+    "hp_basis": "SAE net",
+    "name": "6.4L / 392 Hemi V8",
+    "rpo": "Hemi 6.4 'BGE'",
+    "common_name": "392 Hemi",
+    "trims": [
+     "2500",
+     "3500",
+     "Power Wagon"
+    ],
+    "nhra": false,
+    "sources": [
+     {
+      "name": "Ram 2024 Ram 2500 & 3500 Heavy Duty Fact Sheet",
+      "url": "https://media.stellantisnorthamerica.com/newsrelease.do?id=25191&mid=71",
+      "says": "6.4-liter HEMI V-8: 410 hp @ 5,600 rpm, 429 lb-ft @ 4,000"
+     },
+     {
+      "name": "Wikipedia - Ram pickup (2nd/3rd gen engine tables) + Cummins B Series + Chrysler Hemi + Ram Heavy Duty (fifth generation) articles (one source)",
+      "url": "https://en.wikipedia.org/wiki/Ram_pickup",
+      "says": "2019- 6.4 Hemi V8 410 hp / 429 lb-ft (2500/3500 pickup), standard gas engine; 8-speed ZF 8HP75"
+     },
+     {
+      "name": "Kelley Blue Book - 2024 Ram 2500 specs (trim data)",
+      "url": "https://www.kbb.com/ram/2500-crew-cab/2024/specs/",
+      "says": "V8, HEMI, 6.4 Liter: 410 hp, 429 lb-ft"
+     },
+     {
+      "name": "Cars.com - 2024 Ram 3500 specs",
+      "url": "https://www.cars.com/research/ram-3500-2024/specs/",
+      "says": "6.4L HD V8 HEMI: 410 hp @ 5600"
+     }
+    ],
+    "independent_sources": 4,
+    "status": "three_sources_not_nhra",
+    "note": "Standard gas engine in 2500 and 3500 (5.7 dropped for 2019); 8-speed automatic (ZF 8HP75). Power Wagon gas-only."
+   },
+   {
+    "gen": "gen5",
+    "cid": 408,
+    "liters": 6.7,
+    "hp": 370,
+    "hp_basis": "SAE net",
+    "name": "6.7L / 408 turbodiesel I6",
+    "rpo": "Cummins ISB 6.7 (standard output)",
+    "common_name": "6.7 Cummins",
+    "trims": [
+     "2500",
+     "3500"
+    ],
+    "nhra": false,
+    "sources": [
+     {
+      "name": "Ram 2024 Ram 2500 & 3500 Heavy Duty Fact Sheet",
+      "url": "https://media.stellantisnorthamerica.com/newsrelease.do?id=25191&mid=71",
+      "says": "6.7-liter Cummins Standard-Output: 370 hp / 850 lb-ft (Ram 2500 and 3500)"
+     },
+     {
+      "name": "Wikipedia - Ram pickup (2nd/3rd gen engine tables) + Cummins B Series + Chrysler Hemi + Ram Heavy Duty (fifth generation) articles (one source)",
+      "url": "https://en.wikipedia.org/wiki/Ram_pickup",
+      "says": "2019-2024 6.7 Cummins ISB I6 with 68RFE: 370 hp / 850 lb-ft (2500 and 3500 pickup)"
+     },
+     {
+      "name": "Kelley Blue Book - 2024 Ram 2500 specs (trim data)",
+      "url": "https://www.kbb.com/ram/2500-crew-cab/2024/specs/",
+      "says": "6-Cyl, Turbo Diesel, 6.7 Liter: 370 hp, 850 lb-ft, Automatic 6-Spd"
+     }
+    ],
+    "independent_sources": 3,
+    "status": "three_sources_not_nhra",
+    "note": "68RFE six-speed automatic only (no manual from 2019)."
+   },
+   {
+    "gen": "gen5",
+    "cid": 408,
+    "liters": 6.7,
+    "hp": 420,
+    "hp_basis": "SAE net",
+    "name": "6.7L / 408 turbodiesel I6 HO",
+    "rpo": "Cummins ISB 6.7 High Output",
+    "common_name": "High Output Cummins",
+    "trims": [
+     "3500 only"
+    ],
+    "nhra": false,
+    "sources": [
+     {
+      "name": "Wikipedia - Ram pickup (2nd/3rd gen engine tables) + Cummins B Series + Chrysler Hemi + Ram Heavy Duty (fifth generation) articles (one source)",
+      "url": "https://en.wikipedia.org/wiki/Ram_pickup",
+      "says": "3500 pickup HO with Aisin AS69RC: 400 hp / 1,000 lb-ft (2019-2020), 420 hp / 1,075 lb-ft (2021-2024)"
+     },
+     {
+      "name": "Ram 2024 Ram 2500 & 3500 Heavy Duty Fact Sheet",
+      "url": "https://media.stellantisnorthamerica.com/newsrelease.do?id=25191&mid=71",
+      "says": "6.7-liter Cummins High-Output: 420 hp / 1,075 lb-ft (Ram 3500 only)"
+     },
+     {
+      "name": "Cars.com - 2024 Ram 3500 specs",
+      "url": "https://www.cars.com/research/ram-3500-2024/specs/",
+      "says": "6.7L I6 Cummins HO Turbo Diesel: 420 hp, Aisin AS69RC HD"
+     }
+    ],
+    "independent_sources": 3,
+    "status": "three_sources_not_nhra",
+    "note": "Ram 3500 only, Aisin AS69RC six-speed automatic. Torque 1,075 lb-ft.",
+    "torque_lbft": 1075
+   }
+  ],
+  "2025": [
+   {
+    "gen": "gen5",
+    "cid": 392,
+    "liters": 6.4,
+    "hp": 405,
+    "hp_basis": "SAE net",
+    "name": "6.4L / 392 Hemi V8",
+    "rpo": "Hemi 6.4 'BGE'",
+    "common_name": "392 Hemi",
+    "trims": [
+     "2500",
+     "3500",
+     "Power Wagon"
+    ],
+    "nhra": false,
+    "sources": [
+     {
+      "name": "Ram Press Kit: 2025 Ram Heavy Duty (+ Jan 7 2025 unveiling release)",
+      "url": "https://media.stellantisnorthamerica.com/newsrelease.do?id=26538&mid=71",
+      "says": "6.4-liter HEMI V-8: 405 horsepower and 429 lb-ft; TorqueFlite HD 8-speed"
+     },
+     {
+      "name": "Wikipedia - Ram pickup (2nd/3rd gen engine tables) + Cummins B Series + Chrysler Hemi + Ram Heavy Duty (fifth generation) articles (one source)",
+      "url": "https://en.wikipedia.org/wiki/Ram_pickup",
+      "says": "2019- 6.4 Hemi V8 410 hp / 429 lb-ft (2500/3500 pickup), standard gas engine; 8-speed ZF 8HP75; discontinued in 2025 Mega Cab"
+     },
+     {
+      "name": "Kelley Blue Book - 2025 Ram 2500 specs (trim data)",
+      "url": "https://www.kbb.com/ram/2500-crew-cab/2025/specs/",
+      "says": "V8, HEMI, 6.4 Liter: 405 hp, 429 lb-ft"
+     },
+     {
+      "name": "Diesel Army - 2025 Ram Heavy Duty lineup gets a comprehensive refresh (search-index text)",
+      "url": "https://www.dieselarmy.com/news/2025-ram-heavy-duty-lineup-gets-a-comprehensive-refresh/",
+      "says": "6.4-liter HEMI V-8 rated at 405 hp and 429 lb-ft"
+     }
+    ],
+    "independent_sources": 4,
+    "status": "three_sources_not_nhra",
+    "note": "Standard gas engine in 2500 and 3500 (5.7 dropped for 2019); 8-speed automatic (ZF 8HP75). Power Wagon gas-only. Rated 405 hp from 2025 (Ram, KBB, Cars.com/Diesel Army); Wikipedia still shows 410. Not offered in 2025+ Mega Cabs or 3500 Limited/Limited Longhorn (Wikipedia)."
+   },
+   {
+    "gen": "gen5",
+    "cid": 408,
+    "liters": 6.7,
+    "hp": 430,
+    "hp_basis": "SAE net",
+    "name": "6.7L / 408 turbodiesel I6 HO",
+    "rpo": "Cummins 6.7 High Output (2025 update)",
+    "common_name": "High Output Cummins",
+    "trims": [
+     "2500",
+     "3500"
+    ],
+    "nhra": false,
+    "sources": [
+     {
+      "name": "Ram Press Kit: 2025 Ram Heavy Duty (+ Jan 7 2025 unveiling release)",
+      "url": "https://media.stellantisnorthamerica.com/newsrelease.do?id=26538&mid=71",
+      "says": "6.7L Cummins High-Output Turbo Diesel: 430 hp, best-in-class standard 1,075 lb-ft; TorqueFlite HD 8-speed; 2500 and 3500"
+     },
+     {
+      "name": "Wikipedia - Ram pickup (2nd/3rd gen engine tables) + Cummins B Series + Chrysler Hemi + Ram Heavy Duty (fifth generation) articles (one source)",
+      "url": "https://en.wikipedia.org/wiki/Ram_pickup",
+      "says": "2025- 6.7 Cummins ISB high output I6, ZF 8AP1075 Powerline 8-speed: 430 hp / 1,075 lb-ft (2500 and 3500)"
+     },
+     {
+      "name": "Cummins Inc. - Cummins-RAM History / 2021 and 2025 Ram HD engine releases (engine supplier, not Stellantis; Cloudflare-blocked, search-index text)",
+      "url": "https://www.cummins.com/en-na/engines/pickup-truck/cummins-ram-history",
+      "says": "2025 model year High-Output ratings of 430 hp and 1,075 lb-ft for pickups"
+     },
+     {
+      "name": "Diesel Army - 2025 Ram Heavy Duty lineup gets a comprehensive refresh (search-index text)",
+      "url": "https://www.dieselarmy.com/news/2025-ram-heavy-duty-lineup-gets-a-comprehensive-refresh/",
+      "says": "Standard-output Cummins gone, replaced by 6.7 High-Output across the board: 430 hp / 1,075 lb-ft"
+     }
+    ],
+    "independent_sources": 4,
+    "status": "three_sources_not_nhra",
+    "note": "Only diesel from 2025 (standard-output dropped); 8-speed automatic (ZF Powerline 8AP1075) replaces the 68RFE and Aisin.",
+    "torque_lbft": 1075
+   }
+  ],
+  "2026": [
+   {
+    "gen": "gen5",
+    "cid": 392,
+    "liters": 6.4,
+    "hp": 405,
+    "hp_basis": "SAE net",
+    "name": "6.4L / 392 Hemi V8",
+    "rpo": "Hemi 6.4 'BGE'",
+    "common_name": "392 Hemi",
+    "trims": [
+     "2500",
+     "3500",
+     "Power Wagon"
+    ],
+    "nhra": false,
+    "sources": [
+     {
+      "name": "Ram Press Kit: 2026 Ram Heavy Duty",
+      "url": "https://media.stellantisnorthamerica.com/newsrelease.do?id=27087&mid=71",
+      "says": "6.4-liter HEMI V-8: 405 horsepower and 429 lb-ft; TorqueFlite HD 8-speed"
+     },
+     {
+      "name": "Wikipedia - Ram pickup (2nd/3rd gen engine tables) + Cummins B Series + Chrysler Hemi + Ram Heavy Duty (fifth generation) articles (one source)",
+      "url": "https://en.wikipedia.org/wiki/Ram_pickup",
+      "says": "2019- 6.4 Hemi V8 410 hp / 429 lb-ft (2500/3500 pickup), standard gas engine; 8-speed ZF 8HP75; discontinued in 2025 Mega Cab"
+     },
+     {
+      "name": "Kelley Blue Book - 2026 Ram 2500 specs (trim data)",
+      "url": "https://www.kbb.com/ram/2500-crew-cab/2026/specs/",
+      "says": "V8, HEMI, 6.4 Liter: 405 hp, 429 lb-ft"
+     },
+     {
+      "name": "Cars.com - 2026 Ram 2500 specs",
+      "url": "https://www.cars.com/research/ram-2500-2026/specs/",
+      "says": "6.4L V8 HEMI HD 405 @ 5600, 429 @ 4000"
+     }
+    ],
+    "independent_sources": 4,
+    "status": "three_sources_not_nhra",
+    "note": "Standard gas engine in 2500 and 3500 (5.7 dropped for 2019); 8-speed automatic (ZF 8HP75). Power Wagon gas-only. Rated 405 hp from 2025 (Ram, KBB, Cars.com/Diesel Army); Wikipedia still shows 410. Not offered in 2025+ Mega Cabs or 3500 Limited/Limited Longhorn (Wikipedia)."
+   },
+   {
+    "gen": "gen5",
+    "cid": 408,
+    "liters": 6.7,
+    "hp": 430,
+    "hp_basis": "SAE net",
+    "name": "6.7L / 408 turbodiesel I6 HO",
+    "rpo": "Cummins 6.7 High Output (2025 update)",
+    "common_name": "High Output Cummins",
+    "trims": [
+     "2500",
+     "3500"
+    ],
+    "nhra": false,
+    "sources": [
+     {
+      "name": "Ram Press Kit: 2026 Ram Heavy Duty",
+      "url": "https://media.stellantisnorthamerica.com/newsrelease.do?id=27087&mid=71",
+      "says": "6.7L Cummins High-Output Turbo Diesel: 430 hp, best-in-class standard 1,075 lb-ft; TorqueFlite HD 8-speed; 2500 and 3500"
+     },
+     {
+      "name": "Wikipedia - Ram pickup (2nd/3rd gen engine tables) + Cummins B Series + Chrysler Hemi + Ram Heavy Duty (fifth generation) articles (one source)",
+      "url": "https://en.wikipedia.org/wiki/Ram_pickup",
+      "says": "2025- 6.7 Cummins ISB high output I6, ZF 8AP1075 Powerline 8-speed: 430 hp / 1,075 lb-ft (2500 and 3500)"
+     }
+    ],
+    "independent_sources": 2,
+    "status": "two_sources_agree",
+    "note": "Only diesel from 2025 (standard-output dropped); 8-speed automatic (ZF Powerline 8AP1075) replaces the 68RFE and Aisin. 2026: two sources (Ram, Wikipedia); KBB's 2026 data lists only the Hemi.",
+    "torque_lbft": 1075
+   }
+  ]
+ },
+ "source_index": [
+  {
+   "name": "NHRA Stock Car Classification Guide ('RAM' heading - lumps all Ram pickups 1500/2500/3500)",
+   "url": "nhra_ram-hd-1994-2026.json",
+   "type": "nhra"
+  },
+  {
+   "name": "EPA fueleconomy.gov vehicle data",
+   "url": "https://www.fueleconomy.gov/feg/download.shtml",
+   "type": "government"
+  },
+  {
+   "name": "Wikipedia - Ram pickup (2nd/3rd gen engine tables) + Cummins B Series + Chrysler Hemi + Ram Heavy Duty (fifth generation) articles (one source)",
+   "url": "https://en.wikipedia.org/wiki/Ram_pickup",
+   "type": "wikipedia"
+  },
+  {
+   "name": "Consumer Guide - 1994-01 Dodge Ram Pickup used-car review",
+   "url": "https://consumerguide.com/used/1994-01-dodge-ram-pickup/",
+   "type": "publication"
+  },
+  {
+   "name": "Cars.com - 1994 Dodge Ram 2500 specs",
+   "url": "https://www.cars.com/research/dodge-ram_2500-1994/specs/",
+   "type": "publication"
+  },
+  {
+   "name": "Kelley Blue Book - 1994 Dodge Ram 2500 specs (trim data)",
+   "url": "https://www.kbb.com/dodge/ram-2500/1994/specs/",
+   "type": "publication"
+  },
+  {
+   "name": "Kelley Blue Book - 1995 Dodge Ram 2500 specs (trim data)",
+   "url": "https://www.kbb.com/dodge/ram-2500/1995/specs/",
+   "type": "publication"
+  },
+  {
+   "name": "Kelley Blue Book - 1996 Dodge Ram 2500 specs (trim data)",
+   "url": "https://www.kbb.com/dodge/ram-2500/1996/specs/",
+   "type": "publication"
+  },
+  {
+   "name": "Kelley Blue Book - 1997 Dodge Ram 2500 specs (trim data)",
+   "url": "https://www.kbb.com/dodge/ram-2500/1997/specs/",
+   "type": "publication"
+  },
+  {
+   "name": "Cars.com - 1997 Dodge Ram 2500 specs",
+   "url": "https://www.cars.com/research/dodge-ram_2500-1997/specs/",
+   "type": "publication"
+  },
+  {
+   "name": "Kelley Blue Book - 1998 Dodge Ram 2500 specs (trim data)",
+   "url": "https://www.kbb.com/dodge/ram-2500/1998/specs/",
+   "type": "publication"
+  },
+  {
+   "name": "Cars.com - 1998 Dodge Ram 2500 specs",
+   "url": "https://www.cars.com/research/dodge-ram_2500-1998/specs/",
+   "type": "publication"
+  },
+  {
+   "name": "Cars.com - 2000 Dodge Ram 2500 specs",
+   "url": "https://www.cars.com/research/dodge-ram_2500-2000/specs/",
+   "type": "publication"
+  },
+  {
+   "name": "Kelley Blue Book - 2001 Dodge Ram 2500 specs (trim data)",
+   "url": "https://www.kbb.com/dodge/ram-2500/2001/specs/",
+   "type": "publication"
+  },
+  {
+   "name": "Cars.com - 2001 Dodge Ram 3500 specs",
+   "url": "https://www.cars.com/research/dodge-ram_3500-2001/specs/",
+   "type": "publication"
+  },
+  {
+   "name": "Kelley Blue Book - 2002 Dodge Ram 2500 specs (trim data)",
+   "url": "https://www.kbb.com/dodge/ram-2500/2002/specs/",
+   "type": "publication"
+  },
+  {
+   "name": "Cars.com - 2002 Dodge Ram 2500 specs",
+   "url": "https://www.cars.com/research/dodge-ram_2500-2002/specs/",
+   "type": "publication"
+  },
+  {
+   "name": "Diesel Army (Power Automedia) - Cummins Diesel: The Evolution Of The Dodge/Ram Engine (Chad Westfall)",
+   "url": "https://www.dieselarmy.com/?p=8081",
+   "type": "publication"
+  },
+  {
+   "name": "Kelley Blue Book - 1994 Dodge Ram 3500 specs (trim data)",
+   "url": "https://www.kbb.com/dodge/ram-3500/1994/specs/",
+   "type": "publication"
+  },
+  {
+   "name": "Kelley Blue Book - 1995 Dodge Ram 3500 specs (trim data)",
+   "url": "https://www.kbb.com/dodge/ram-3500/1995/specs/",
+   "type": "publication"
+  },
+  {
+   "name": "Kelley Blue Book - 1996 Dodge Ram 3500 specs (trim data)",
+   "url": "https://www.kbb.com/dodge/ram-3500/1996/specs/",
+   "type": "publication"
+  },
+  {
+   "name": "Kelley Blue Book - 1997 Dodge Ram 3500 specs (trim data)",
+   "url": "https://www.kbb.com/dodge/ram-3500/1997/specs/",
+   "type": "publication"
+  },
+  {
+   "name": "Kelley Blue Book - 1998 Dodge Ram 3500 specs (trim data)",
+   "url": "https://www.kbb.com/dodge/ram-3500/1998/specs/",
+   "type": "publication"
+  },
+  {
+   "name": "Kelley Blue Book - 1999 Dodge Ram 2500 specs (trim data)",
+   "url": "https://www.kbb.com/dodge/ram-2500/1999/specs/",
+   "type": "publication"
+  },
+  {
+   "name": "Kelley Blue Book - 2000 Dodge Ram 2500 specs (trim data)",
+   "url": "https://www.kbb.com/dodge/ram-2500/2000/specs/",
+   "type": "publication"
+  },
+  {
+   "name": "Kelley Blue Book - 2001 Dodge Ram 3500 specs (trim data)",
+   "url": "https://www.kbb.com/dodge/ram-3500/2001/specs/",
+   "type": "publication"
+  },
+  {
+   "name": "Cummins Inc. - Cummins-RAM History / 2021 and 2025 Ram HD engine releases (engine supplier, not Stellantis; Cloudflare-blocked, search-index text)",
+   "url": "https://www.cummins.com/en-na/engines/pickup-truck/cummins-ram-history",
+   "type": "manufacturer (engine supplier)"
+  },
+  {
+   "name": "Kelley Blue Book - 2002 Dodge Ram 3500 specs (trim data)",
+   "url": "https://www.kbb.com/dodge/ram-3500/2002/specs/",
+   "type": "publication"
+  },
+  {
+   "name": "Auto123 - 2003 Dodge Ram 2500/3500 Road Test (Khatir Soltani, Sep 20 2002), spec page",
+   "url": "https://www.auto123.com/en/news/2003-dodge-ram-25003500-road-test/43318/?page=9",
+   "type": "publication"
+  },
+  {
+   "name": "Drivingline - History of the 2003-2007 HD Dodge Rams (common-rail Cummins, new transmissions)",
+   "url": "https://www.drivingline.com/articles/history-of-the-2003-2007-hd-dodge-rams-common-rail-cummins-new-transmissions-and-a-stronger-frame/",
+   "type": "publication"
+  },
+  {
+   "name": "Cars.com - 2003 Dodge Ram 2500 specs",
+   "url": "https://www.cars.com/research/dodge-ram_2500-2003/specs/",
+   "type": "publication"
+  },
+  {
+   "name": "Kelley Blue Book - 2003 Dodge Ram 2500 specs (trim data)",
+   "url": "https://www.kbb.com/dodge/ram-2500/2003/specs/",
+   "type": "publication"
+  },
+  {
+   "name": "Cars.com - 2004 Dodge Ram 2500 specs",
+   "url": "https://www.cars.com/research/dodge-ram_2500-2004/specs/",
+   "type": "publication"
+  },
+  {
+   "name": "Kelley Blue Book - 2004 Dodge Ram 2500 specs (trim data)",
+   "url": "https://www.kbb.com/dodge/ram-2500/2004/specs/",
+   "type": "publication"
+  },
+  {
+   "name": "Cars.com - 2005 Dodge Ram 2500 specs",
+   "url": "https://www.cars.com/research/dodge-ram_2500-2005/specs/",
+   "type": "publication"
+  },
+  {
+   "name": "Kelley Blue Book - 2005 Dodge Ram 2500 specs (trim data)",
+   "url": "https://www.kbb.com/dodge/ram-2500/2005/specs/",
+   "type": "publication"
+  },
+  {
+   "name": "Cars.com - 2006 Dodge Ram 3500 specs",
+   "url": "https://www.cars.com/research/dodge-ram_3500-2006/specs/",
+   "type": "publication"
+  },
+  {
+   "name": "Kelley Blue Book - 2006 Dodge Ram 2500 specs (trim data)",
+   "url": "https://www.kbb.com/dodge/ram-2500/2006/specs/",
+   "type": "publication"
+  },
+  {
+   "name": "Cars.com - 2007 Dodge Ram 2500 specs",
+   "url": "https://www.cars.com/research/dodge-ram_2500-2007/specs/",
+   "type": "publication"
+  },
+  {
+   "name": "Kelley Blue Book - 2007 Dodge Ram 2500 specs (trim data)",
+   "url": "https://www.kbb.com/dodge/ram-2500/2007/specs/",
+   "type": "publication"
+  },
+  {
+   "name": "Cars.com - 2008 Dodge Ram 2500 specs",
+   "url": "https://www.cars.com/research/dodge-ram_2500-2008/specs/",
+   "type": "publication"
+  },
+  {
+   "name": "Kelley Blue Book - 2008 Dodge Ram 2500 specs (trim data)",
+   "url": "https://www.kbb.com/dodge/ram-2500/2008/specs/",
+   "type": "publication"
+  },
+  {
+   "name": "Cars.com - 2009 Dodge Ram 2500 specs",
+   "url": "https://www.cars.com/research/dodge-ram_2500-2009/specs/",
+   "type": "publication"
+  },
+  {
+   "name": "Kelley Blue Book - 2009 Dodge Ram 2500 specs (trim data)",
+   "url": "https://www.kbb.com/dodge/ram-2500/2009/specs/",
+   "type": "publication"
+  },
+  {
+   "name": "Construction Equipment - 2009 Work Trucks",
+   "url": "https://constructionequipment.com/2009-work-trucks",
+   "type": "publication"
+  },
+  {
+   "name": "Dodge 2009 Ram 2500 release (Chrysler media pdf id 8125; captcha-blocked, search-index text)",
+   "url": "https://embargoed.stellantisnorthamerica.com/pdf.do?id=8125",
+   "type": "manufacturer"
+  },
+  {
+   "name": "Kelley Blue Book - 2006 Dodge Ram 3500 specs (trim data)",
+   "url": "https://www.kbb.com/dodge/ram-3500/2006/specs/",
+   "type": "publication"
+  },
+  {
+   "name": "Kelley Blue Book - 2009 Dodge Ram 3500 specs (trim data)",
+   "url": "https://www.kbb.com/dodge/ram-3500/2009/specs/",
+   "type": "publication"
+  },
+  {
+   "name": "AutoGuide - 2010 Dodge Ram Heavy Duty: First Drive",
+   "url": "https://www.autoguide.com/manufacturer/dodge/2010-dodge-ram-heavy-duty-first-drive-1246.html",
+   "type": "publication"
+  },
+  {
+   "name": "Kelley Blue Book - 2010 Dodge Ram 2500 specs (trim data)",
+   "url": "https://www.kbb.com/dodge/ram-2500/2010/specs/",
+   "type": "publication"
+  },
+  {
+   "name": "Dodge release - 2010 Dodge Ram 2500/3500 Heavy Duty (Chrysler media id 9006; captcha-blocked, search-index text)",
+   "url": "https://www.media.stellantisnorthamerica.com/text.do?id=9006",
+   "type": "manufacturer"
+  },
+  {
+   "name": "Kelley Blue Book - 2011 Ram 2500 specs (trim data)",
+   "url": "https://www.kbb.com/ram/2500-crew-cab/2011/specs/",
+   "type": "publication"
+  },
+  {
+   "name": "Kelley Blue Book - 2012 Ram 2500 specs (trim data)",
+   "url": "https://www.kbb.com/ram/2500-crew-cab/2012/specs/",
+   "type": "publication"
+  },
+  {
+   "name": "Cars.com - 2012 Ram 3500 specs",
+   "url": "https://www.cars.com/research/ram-3500-2012/specs/",
+   "type": "publication"
+  },
+  {
+   "name": "Ram Press Kit: 2013 Ram Heavy Duty",
+   "url": "https://media.stellantisnorthamerica.com/newsrelease.do?id=13217&mid=746",
+   "type": "manufacturer"
+  },
+  {
+   "name": "Kelley Blue Book - 2013 Ram 2500 specs (trim data)",
+   "url": "https://www.kbb.com/ram/2500-crew-cab/2013/specs/",
+   "type": "publication"
+  },
+  {
+   "name": "Cars.com - 2013 Ram 3500 specs",
+   "url": "https://www.cars.com/research/ram-3500-2013/specs/",
+   "type": "publication"
+  },
+  {
+   "name": "Ram 2014 Heavy Duty release (Chrysler media id 14489/14492; search-index text)",
+   "url": "https://media.stellantisnorthamerica.com/pdf.do?id=14489",
+   "type": "manufacturer"
+  },
+  {
+   "name": "Kelley Blue Book news - 2014 Ram 2500/3500 HD pickups get new 6.4-liter Hemi V8 option",
+   "url": "https://www.kbb.com/car-news/2014-ram-25003500-hd-pickups-get-new-64_liter-hemi-v8-option",
+   "type": "publication"
+  },
+  {
+   "name": "Cars.com - 2014 Ram 2500 specs",
+   "url": "https://www.cars.com/research/ram-2500-2014/specs/",
+   "type": "publication"
+  },
+  {
+   "name": "Ram Press Kit: 2015 Ram Heavy Duty",
+   "url": "https://media.stellantisnorthamerica.com/newsrelease.do?id=15922&mid=71",
+   "type": "manufacturer"
+  },
+  {
+   "name": "Cars.com - 2015 Ram 2500 specs",
+   "url": "https://www.cars.com/research/ram-2500-2015/specs/",
+   "type": "publication"
+  },
+  {
+   "name": "Ram Press Kit: 2016 Ram Heavy Duty",
+   "url": "https://media.stellantisnorthamerica.com/newsrelease.do?id=16756&mid=",
+   "type": "manufacturer"
+  },
+  {
+   "name": "Cars.com - 2016 Ram 2500 specs",
+   "url": "https://www.cars.com/research/ram-2500-2016/specs/",
+   "type": "publication"
+  },
+  {
+   "name": "Cars.com - 2017 Ram 2500 specs",
+   "url": "https://www.cars.com/research/ram-2500-2017/specs/",
+   "type": "publication"
+  },
+  {
+   "name": "Ram Press Kit: 2018 Ram Heavy Duty / 2018 Ram 2500/3500 fact sheet (+ Aug 11 2017 930 lb-ft release, search-index text)",
+   "url": "https://media.stellantisnorthamerica.com/newsrelease.do?id=18523",
+   "type": "manufacturer"
+  },
+  {
+   "name": "Cars.com - 2018 Ram 3500 specs",
+   "url": "https://www.cars.com/research/ram-3500-2018/specs/",
+   "type": "publication"
+  },
+  {
+   "name": "Cars.com - Ram 2500 research overview (model-year summaries)",
+   "url": "https://www.cars.com/research/ram-2500-2011/",
+   "type": "publication"
+  },
+  {
+   "name": "Kelley Blue Book - 2014 Ram 2500 specs (trim data)",
+   "url": "https://www.kbb.com/ram/2500-crew-cab/2014/specs/",
+   "type": "publication"
+  },
+  {
+   "name": "Kelley Blue Book - 2015 Ram 2500 specs (trim data)",
+   "url": "https://www.kbb.com/ram/2500-crew-cab/2015/specs/",
+   "type": "publication"
+  },
+  {
+   "name": "Kelley Blue Book - 2016 Ram 2500 specs (trim data)",
+   "url": "https://www.kbb.com/ram/2500-crew-cab/2016/specs/",
+   "type": "publication"
+  },
+  {
+   "name": "Kelley Blue Book - 2017 Ram 2500 specs (trim data)",
+   "url": "https://www.kbb.com/ram/2500-crew-cab/2017/specs/",
+   "type": "publication"
+  },
+  {
+   "name": "Kelley Blue Book - 2018 Ram 2500 specs (trim data)",
+   "url": "https://www.kbb.com/ram/2500-crew-cab/2018/specs/",
+   "type": "publication"
+  },
+  {
+   "name": "Kelley Blue Book - 2010 Dodge Ram 3500 specs (trim data)",
+   "url": "https://www.kbb.com/dodge/ram-3500/2010/specs/",
+   "type": "publication"
+  },
+  {
+   "name": "Kelley Blue Book - 2011 Ram 3500 specs (trim data)",
+   "url": "https://www.kbb.com/ram/3500-crew-cab/2011/specs/",
+   "type": "publication"
+  },
+  {
+   "name": "Kelley Blue Book - 2012 Ram 3500 specs (trim data)",
+   "url": "https://www.kbb.com/ram/3500-crew-cab/2012/specs/",
+   "type": "publication"
+  },
+  {
+   "name": "Jalopnik - This Is The Last Year You Can Buy A New Full-Sized Pickup Truck With A Manual Transmission (search-index text)",
+   "url": "https://jalopnik.com/this-is-the-last-year-you-can-buy-a-new-full-sized-pick-1831744609",
+   "type": "publication"
+  },
+  {
+   "name": "Drivingline - Back in Time, Part 9: The 6.7L Cummins Strikes Back",
+   "url": "https://drivingline.com/articles/back-in-time-part-9-the-67l-cummins-strikes-back",
+   "type": "publication"
+  },
+  {
+   "name": "Kelley Blue Book - 2014 Ram 3500 specs (trim data)",
+   "url": "https://www.kbb.com/ram/3500-crew-cab/2014/specs/",
+   "type": "publication"
+  },
+  {
+   "name": "Kelley Blue Book - 2016 Ram 3500 specs (trim data)",
+   "url": "https://www.kbb.com/ram/3500-crew-cab/2016/specs/",
+   "type": "publication"
+  },
+  {
+   "name": "Kelley Blue Book - 2017 Ram 3500 specs (trim data)",
+   "url": "https://www.kbb.com/ram/3500-crew-cab/2017/specs/",
+   "type": "publication"
+  },
+  {
+   "name": "The Drive - 2018 Ram 3500HD passes Ford Super Duty to become pickup torque king (search-index text)",
+   "url": "https://www.thedrive.com/news/13427/2018-ram-3500hd-passes-ford-super-duty-to-become-pickup-truck-torque-king.md",
+   "type": "publication"
+  },
+  {
+   "name": "Ram Press Kit: 2019 Ram Heavy Duty",
+   "url": "https://media.stellantisnorthamerica.com/newsrelease.do?id=20527&mid=69",
+   "type": "manufacturer"
+  },
+  {
+   "name": "Kelley Blue Book - 2019 Ram 2500 specs (trim data)",
+   "url": "https://www.kbb.com/ram/2500-crew-cab/2019/specs/",
+   "type": "publication"
+  },
+  {
+   "name": "Cars.com - 2019 Ram 2500 specs",
+   "url": "https://www.cars.com/research/ram-2500-2019/specs/",
+   "type": "publication"
+  },
+  {
+   "name": "Mopar Connection Magazine - Dang! 1,000 Lb.-ft Of Torque From The 2019 Ram Heavy Duty",
+   "url": "https://moparconnectionmagazine.com/?p=23023",
+   "type": "publication"
+  },
+  {
+   "name": "Ram 2020 Ram 2500/3500 Heavy Duty Fact Sheet",
+   "url": "https://media.stellantisnorthamerica.com/newsrelease.do?id=21108&fIId=20970&mid=1",
+   "type": "manufacturer"
+  },
+  {
+   "name": "Kelley Blue Book - 2020 Ram 2500 specs (trim data)",
+   "url": "https://www.kbb.com/ram/2500-crew-cab/2020/specs/",
+   "type": "publication"
+  },
+  {
+   "name": "Cars.com - 2020 Ram 3500 specs",
+   "url": "https://www.cars.com/research/ram-3500-2020/specs/",
+   "type": "publication"
+  },
+  {
+   "name": "Ram 2021 Ram 2500/3500 Heavy Duty Fact Sheet (Aug 31 2020)",
+   "url": "https://media.stellantisnorthamerica.com/newsrelease.do?id=21910&mid=1",
+   "type": "manufacturer"
+  },
+  {
+   "name": "Kelley Blue Book - 2021 Ram 2500 specs (trim data)",
+   "url": "https://www.kbb.com/ram/2500-crew-cab/2021/specs/",
+   "type": "publication"
+  },
+  {
+   "name": "Cars.com - 2021 Ram 3500 specs",
+   "url": "https://www.cars.com/research/ram-3500-2021/specs/",
+   "type": "publication"
+  },
+  {
+   "name": "Ram 2022 Ram Heavy Duty Fact Sheet",
+   "url": "https://media.stellantisnorthamerica.com/newsrelease.do?id=22989&mid=1",
+   "type": "manufacturer"
+  },
+  {
+   "name": "Kelley Blue Book - 2022 Ram 2500 specs (trim data)",
+   "url": "https://www.kbb.com/ram/2500-crew-cab/2022/specs/",
+   "type": "publication"
+  },
+  {
+   "name": "Ram What's New for 2023: Ram Heavy Duty",
+   "url": "https://media.stellantisnorthamerica.com/newsrelease.do?fIId=24050&id=24136&mid=",
+   "type": "manufacturer"
+  },
+  {
+   "name": "Kelley Blue Book - 2023 Ram 2500 specs (trim data)",
+   "url": "https://www.kbb.com/ram/2500-crew-cab/2023/specs/",
+   "type": "publication"
+  },
+  {
+   "name": "Cars.com - 2023 Ram 3500 specs",
+   "url": "https://www.cars.com/research/ram-3500-2023/specs/",
+   "type": "publication"
+  },
+  {
+   "name": "Ram 2024 Ram 2500 & 3500 Heavy Duty Fact Sheet",
+   "url": "https://media.stellantisnorthamerica.com/newsrelease.do?id=25191&mid=71",
+   "type": "manufacturer"
+  },
+  {
+   "name": "Kelley Blue Book - 2024 Ram 2500 specs (trim data)",
+   "url": "https://www.kbb.com/ram/2500-crew-cab/2024/specs/",
+   "type": "publication"
+  },
+  {
+   "name": "Cars.com - 2024 Ram 3500 specs",
+   "url": "https://www.cars.com/research/ram-3500-2024/specs/",
+   "type": "publication"
+  },
+  {
+   "name": "Ram Press Kit: 2025 Ram Heavy Duty (+ Jan 7 2025 unveiling release)",
+   "url": "https://media.stellantisnorthamerica.com/newsrelease.do?id=26538&mid=71",
+   "type": "manufacturer"
+  },
+  {
+   "name": "Kelley Blue Book - 2025 Ram 2500 specs (trim data)",
+   "url": "https://www.kbb.com/ram/2500-crew-cab/2025/specs/",
+   "type": "publication"
+  },
+  {
+   "name": "Diesel Army - 2025 Ram Heavy Duty lineup gets a comprehensive refresh (search-index text)",
+   "url": "https://www.dieselarmy.com/news/2025-ram-heavy-duty-lineup-gets-a-comprehensive-refresh/",
+   "type": "publication"
+  },
+  {
+   "name": "Ram Press Kit: 2026 Ram Heavy Duty",
+   "url": "https://media.stellantisnorthamerica.com/newsrelease.do?id=27087&mid=71",
+   "type": "manufacturer"
+  },
+  {
+   "name": "Kelley Blue Book - 2026 Ram 2500 specs (trim data)",
+   "url": "https://www.kbb.com/ram/2500-crew-cab/2026/specs/",
+   "type": "publication"
+  },
+  {
+   "name": "Cars.com - 2026 Ram 2500 specs",
+   "url": "https://www.cars.com/research/ram-2500-2026/specs/",
+   "type": "publication"
+  },
+  {
+   "name": "Cars.com - 2019 Ram 3500 specs",
+   "url": "https://www.cars.com/research/ram-3500-2019/specs/",
+   "type": "publication"
+  },
+  {
+   "name": "Consumer Guide - 2020 Ram 2500 Cummins test (search-index text)",
+   "url": "https://blog.consumerguide.com/?p=82179",
+   "type": "publication"
+  },
+  {
+   "name": "Cars.com - 2022 Ram 3500 specs",
+   "url": "https://www.cars.com/research/ram-3500-2022/specs/",
+   "type": "publication"
+  }
+ ],
+ "notes": [
+  "Excluded: 1995-1997 5.2L CNG V8 (fleet; EPA lists it only in vans), 2004-2006 SRT-10 (1500 only), 3500 chassis-cab 305-hp 6.7 and 370-hp 6.4 ratings.",
+  "Gas engines NHRA lists for RAM 1995-2001 (3.9 V6, 5.2 V8 after 1996) are 1500 engines and are not on this page.",
+  "5.9 Magnum in 2003 HD: not listed by Wikipedia's 2500/3500 table, Cars.com or KBB; Auto123's 2003 '5.9-L' base engine is the 345-hp Hemi misprinted. Not recorded."
+ ]
+}

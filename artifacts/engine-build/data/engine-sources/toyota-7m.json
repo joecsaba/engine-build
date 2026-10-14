@@ -1,0 +1,145 @@
+{
+ "name": "Toyota 7M-GE / 7M-GTE 3.0 I6",
+ "fields": {
+  "bore_in": {
+   "value": 3.2677,
+   "sources": [
+    {
+     "name": "Wikipedia: Toyota M engine",
+     "url": "https://en.wikipedia.org/wiki/Toyota_M_engine",
+     "says": "7M-GE/7M-GTE bore 83 mm"
+    },
+    {
+     "name": "Elgin Industries engine parts catalog (technical reference) - engine details",
+     "url": "https://catalog.elginind.com/engine/toyota/default/9f6e26ef-cc00-43bf-8c50-54d3e8f4ae22/",
+     "says": "7M-GE, 7M-GTE 2954cc: Bore 3.26'' (83.0mm)"
+    }
+   ],
+   "note": "83.0 mm",
+   "second_pass": true
+  },
+  "stroke_in": {
+   "value": 3.5827,
+   "sources": [
+    {
+     "name": "Wikipedia: Toyota M engine",
+     "url": "https://en.wikipedia.org/wiki/Toyota_M_engine",
+     "says": "stroke 91 mm"
+    },
+    {
+     "name": "Elgin Industries engine parts catalog (technical reference) - engine details",
+     "url": "https://catalog.elginind.com/engine/toyota/default/9f6e26ef-cc00-43bf-8c50-54d3e8f4ae22/",
+     "says": "Stroke 3.58'' (91.0mm)"
+    }
+   ],
+   "note": "91.0 mm",
+   "second_pass": true
+  },
+  "displacement_l": {
+   "value": 3.0,
+   "sources": [
+    {
+     "name": "Wikipedia: Toyota M engine",
+     "url": "https://en.wikipedia.org/wiki/Toyota_M_engine",
+     "says": "2,954 cc"
+    },
+    {
+     "name": "Elgin Industries engine parts catalog (technical reference) - engine details",
+     "url": "https://catalog.elginind.com/engine/toyota/default/9f6e26ef-cc00-43bf-8c50-54d3e8f4ae22/",
+     "says": "Liters 3.0, CC 2954"
+    },
+    {
+     "name": "EPA fueleconomy.gov vehicle data",
+     "url": "https://www.fueleconomy.gov/feg/download.shtml",
+     "says": "1987 Supra 3.0 L 6-cyl and 3.0 L 6-cyl turbo"
+    }
+   ],
+   "note": "2,954 cc"
+  },
+  "displacement_ci": {
+   "value": 180,
+   "sources": [
+    {
+     "name": "Wikipedia: Toyota M engine",
+     "url": "https://en.wikipedia.org/wiki/Toyota_M_engine",
+     "says": "2,954 cc"
+    },
+    {
+     "name": "Elgin Industries engine parts catalog (technical reference) - engine details",
+     "url": "https://catalog.elginind.com/engine/toyota/default/9f6e26ef-cc00-43bf-8c50-54d3e8f4ae22/",
+     "says": "CC 2954"
+    }
+   ],
+   "note": "converted = 180.3 ci",
+   "second_pass": true
+  },
+  "num_cylinders": {
+   "value": 6,
+   "sources": [
+    {
+     "name": "Wikipedia: Toyota M engine",
+     "url": "https://en.wikipedia.org/wiki/Toyota_M_engine",
+     "says": "inline-six"
+    },
+    {
+     "name": "Elgin Industries engine parts catalog (technical reference) - engine details",
+     "url": "https://catalog.elginind.com/engine/toyota/default/9f6e26ef-cc00-43bf-8c50-54d3e8f4ae22/",
+     "says": "Cyl. 6"
+    },
+    {
+     "name": "EPA fueleconomy.gov vehicle data",
+     "url": "https://www.fueleconomy.gov/feg/download.shtml",
+     "says": "3.0 L 6-cyl"
+    }
+   ],
+   "note": ""
+  },
+  "valvetrain": {
+   "value": "DOHC, 4 valves per cylinder (24 valves)",
+   "sources": [
+    {
+     "name": "Wikipedia: Toyota M engine",
+     "url": "https://en.wikipedia.org/wiki/Toyota_M_engine",
+     "says": "24-valve (4 valves per cylinder) DOHC"
+    },
+    {
+     "name": "Elgin Industries engine parts catalog (technical reference) - engine details",
+     "url": "https://catalog.elginind.com/engine/toyota/default/9f6e26ef-cc00-43bf-8c50-54d3e8f4ae22/",
+     "says": "Head DOHC"
+    },
+    {
+     "name": "Toyota global newsroom release, Aug 2 1988 (Supra update) (Toyota material)",
+     "url": "https://global.toyota/en/detail/7863653",
+     "says": "twin-cam turbo engines 7M-GTEU (3 liters)"
+    }
+   ],
+   "note": ""
+  },
+  "fuel_type": {
+   "value": "gasoline",
+   "sources": [
+    {
+     "name": "Wikipedia: Toyota M engine",
+     "url": "https://en.wikipedia.org/wiki/Toyota_M_engine",
+     "says": "fuel-injected; 7M-GTE turbocharged"
+    },
+    {
+     "name": "Elgin Industries engine parts catalog (technical reference) - engine details",
+     "url": "https://catalog.elginind.com/engine/toyota/default/9f6e26ef-cc00-43bf-8c50-54d3e8f4ae22/",
+     "says": "GAS / FI, Asp. N, T"
+    },
+    {
+     "name": "EPA fueleconomy.gov vehicle data",
+     "url": "https://www.fueleconomy.gov/feg/download.shtml",
+     "says": "Supra 3.0 L, no diesel flag"
+    }
+   ],
+   "note": "7M-GTE turbocharged"
+  }
+ },
+ "unverified": {
+  "configuration": "inline-6: Wikipedia only.",
+  "block_material": "cast iron: Wikipedia only.",
+  "head_material": "aluminum: Wikipedia only."
+ }
+}

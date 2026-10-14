@@ -1,0 +1,137 @@
+{
+ "name": "Toyota 18R-C 2.0 I4",
+ "fields": {
+  "bore_in": {
+   "value": 3.4843,
+   "sources": [
+    {
+     "name": "Wikipedia: Toyota R engine",
+     "url": "https://en.wikipedia.org/wiki/Toyota_R_engine",
+     "says": "18R bore 88.5 mm"
+    },
+    {
+     "name": "Elgin Industries engine parts catalog (technical reference) - engine details",
+     "url": "https://catalog.elginind.com/engine/toyota/default/24dd8967-c45b-41c5-a52c-9d64a0903cfd/",
+     "says": "18RC 1968cc: Bore 3.48'' (88.5mm)"
+    }
+   ],
+   "note": "88.5 mm",
+   "second_pass": true
+  },
+  "stroke_in": {
+   "value": 3.1496,
+   "sources": [
+    {
+     "name": "Wikipedia: Toyota R engine",
+     "url": "https://en.wikipedia.org/wiki/Toyota_R_engine",
+     "says": "18R stroke 80 mm"
+    },
+    {
+     "name": "Hagerty Media: Dissecting the four-cylinder engines that helped Toyota dominate the world",
+     "url": "https://www.hagerty.com/media/magazine-features/dissecting-the-four-cylinder-engines-that-helped-toyota-dominate-the-world/",
+     "says": "the immediate predecessor 18R's 80-millimeter stroke"
+    }
+   ],
+   "note": "80.0 mm",
+   "second_pass": true
+  },
+  "displacement_l": {
+   "value": 2.0,
+   "sources": [
+    {
+     "name": "Wikipedia: Toyota R engine",
+     "url": "https://en.wikipedia.org/wiki/Toyota_R_engine",
+     "says": "18R 1,968 cc"
+    },
+    {
+     "name": "Elgin Industries engine parts catalog (technical reference) - engine details",
+     "url": "https://catalog.elginind.com/engine/toyota/default/24dd8967-c45b-41c5-a52c-9d64a0903cfd/",
+     "says": "Liters 2.0, CC 1968"
+    },
+    {
+     "name": "Curbside Classic: First Generation Toyota Hilux",
+     "url": "https://www.curbsideclassic.com/curbside-classics-asian/curbside-classic-first-generation-totoya-hilux-building-block/",
+     "says": "in 1972 received a larger bore, creating the 2.0 liter 18R"
+    }
+   ],
+   "note": "1,968 cc"
+  },
+  "displacement_ci": {
+   "value": 120,
+   "sources": [
+    {
+     "name": "Wikipedia: Toyota R engine",
+     "url": "https://en.wikipedia.org/wiki/Toyota_R_engine",
+     "says": "1,968 cc"
+    },
+    {
+     "name": "Elgin Industries engine parts catalog (technical reference) - engine details",
+     "url": "https://catalog.elginind.com/engine/toyota/default/24dd8967-c45b-41c5-a52c-9d64a0903cfd/",
+     "says": "CC 1968"
+    }
+   ],
+   "note": "converted = 120.1 ci",
+   "second_pass": true
+  },
+  "num_cylinders": {
+   "value": 4,
+   "sources": [
+    {
+     "name": "Wikipedia: Toyota R engine",
+     "url": "https://en.wikipedia.org/wiki/Toyota_R_engine",
+     "says": "inline-four"
+    },
+    {
+     "name": "Elgin Industries engine parts catalog (technical reference) - engine details",
+     "url": "https://catalog.elginind.com/engine/toyota/default/24dd8967-c45b-41c5-a52c-9d64a0903cfd/",
+     "says": "Cyl. 4"
+    },
+    {
+     "name": "Curbside Classic: First Generation Toyota Hilux",
+     "url": "https://www.curbsideclassic.com/curbside-classics-asian/curbside-classic-first-generation-totoya-hilux-building-block/",
+     "says": "2.0 liter 18R ... four"
+    }
+   ],
+   "note": ""
+  },
+  "valvetrain": {
+   "value": "SOHC, 2 valves per cylinder",
+   "sources": [
+    {
+     "name": "Wikipedia: Toyota R engine",
+     "url": "https://en.wikipedia.org/wiki/Toyota_R_engine",
+     "says": "SOHC, 2-valve"
+    },
+    {
+     "name": "Elgin Industries engine parts catalog (technical reference) - engine details",
+     "url": "https://catalog.elginind.com/engine/toyota/default/24dd8967-c45b-41c5-a52c-9d64a0903cfd/",
+     "says": "Head SOHC"
+    }
+   ],
+   "note": "",
+   "second_pass": true
+  },
+  "fuel_type": {
+   "value": "gasoline",
+   "sources": [
+    {
+     "name": "Wikipedia: Toyota R engine",
+     "url": "https://en.wikipedia.org/wiki/Toyota_R_engine",
+     "says": "carburetor"
+    },
+    {
+     "name": "Elgin Industries engine parts catalog (technical reference) - engine details",
+     "url": "https://catalog.elginind.com/engine/toyota/default/24dd8967-c45b-41c5-a52c-9d64a0903cfd/",
+     "says": "GAS / CARB"
+    }
+   ],
+   "note": "",
+   "second_pass": true
+  }
+ },
+ "unverified": {
+  "configuration": "inline-4: Wikipedia only.",
+  "block_material": "cast iron: Wikipedia only.",
+  "head_material": "Wikipedia says cast iron for 18R; not confirmed elsewhere (treat with caution)."
+ }
+}

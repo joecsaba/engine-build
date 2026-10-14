@@ -140,12 +140,25 @@ export function linkVehicles(vehicles, engineData) {
       // Codes are specific enough to search every maker's pages (a Buick Regal's
       // LH0 V6 lives on a Pontiac page). Where several pages fit, prefer the one
       // with the code, then a long-standing page over one built from vehicle data.
-      const code = String(ve.code ?? "").toUpperCase();
-      const hasCode = (e, yr) => code && (e.variants ?? []).some((x) => (yr == null || x.year === yr) &&
-        (x.codes ?? []).some((c) => String(c).toUpperCase() === code));
+      // a row can name two codes for one engine ("LY5 / LMG"): either one matches
+      // whole code first, so a page made for "Z15 / LS6" keeps its link
+      const full = String(ve.code ?? "").toUpperCase();
+      const parts = full.split(/\s*[\/,]\s*/).filter(Boolean);
+      const codes = full ? [full, ...parts] : [];
+      const isCode = (c) => codes.includes(String(c).toUpperCase());
+      const hasCodeIn = (e, yr, test) => (e.variants ?? []).some((x) => (yr == null || x.year === yr) && (x.codes ?? []).some(test));
+      const hasFull = (e, yr) => !!full && hasCodeIn(e, yr, (c) => String(c).toUpperCase() === full);
+      const hasCode = (e, yr) => codes.length > 0 && hasCodeIn(e, yr, isCode);
       const pick = (list) => !list.length ? null : list.length === 1 ? list[0]
-        : list.find((e) => hasCode(e)) ?? list.find((e) => !e.generated) ?? list[0];
-      const exact = cands.filter((e) => (e.variants ?? []).some((x) => x.year === ve.year && x.hp === ve.hp));
+        : list.find((e) => hasFull(e)) ?? list.find((e) => hasCode(e)) ?? list.find((e) => !e.generated) ?? list[0];
+      // Same year and rating but a different named engine is not this engine: the
+      // 2019 Silverado's 420 hp L87 page must not catch the 2019 Tahoe's 420 hp L86.
+      const codeConflict = (e) => {
+        if (!codes.length) return false;
+        const vs = (e.variants ?? []).filter((x) => x.year === ve.year && x.hp === ve.hp);
+        return vs.length > 0 && vs.every((x) => (x.codes ?? []).length > 0 && !x.codes.some(isCode));
+      };
+      const exact = cands.filter((e) => (e.variants ?? []).some((x) => x.year === ve.year && x.hp === ve.hp) && !codeConflict(e));
       const t1 = pick(exact), t2 = t1 ? null : pick(allMakers.filter((e) => hasCode(e, ve.year)));
       const t3 = t1 || t2 ? null : pick(allMakers.filter((e) => hasCode(e)));
       const engine = t1 ?? t2 ?? t3;
@@ -168,7 +181,9 @@ export function linkVehicles(vehicles, engineData) {
       }
       const famUrl = [...famCount.entries()]
         .sort((a, b) => famDist.get(a[0]) - famDist.get(b[0]) ||
-          Number(/-\d+ci$/.test(b[0])) - Number(/-\d+ci$/.test(a[0])) || b[1] - a[1])[0]?.[0] ?? null;
+          Number(/-\d+ci$/.test(b[0])) - Number(/-\d+ci$/.test(a[0])) || b[1] - a[1])[0]?.[0]
+        // a curated family pin still links when the family has no record of this size yet
+        ?? (ve.linkFamily && famByUrl.has(ve.linkFamily) ? ve.linkFamily : null);
 
       ve.engineUrl = engine?.url ?? null;
       ve.familyUrl = famUrl;

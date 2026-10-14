@@ -76,3 +76,23 @@ or 2 reputable sources that agree (second pass). Specs go in public/data/engines
 - Mercury "Cologne" family includes 1961-62 170 ci records (the Falcon six), which are not Cologne engines.
 - C/K Pickup 1994 5.7 L05: page shows 200 hp; the K5 Blazer research found 210 hp for the same engine (Wikipedia Blazer article + Consumer Guide).
 - K5 Blazer 1980: every engine has only 2 sources that don't fully agree — year left empty.
+
+## Batch 5 (imports, GM SUVs, Ram HD) — no spec page yet
+| Engine | Size | Used in |
+|---|---|---|
+| Honda B18A1 / B18B1 1.8 (1834 cc) and B17A1 1.7 VTEC | 112 / 102 ci | Integra 1990–2001 |
+| Honda L15 1.5 turbo (L15B7, L15CA) and LEA 1.5 hybrid | 91 ci | Civic 2012–2026, Integra 2023+ |
+| Honda EB / ED / EJ / EM / EV / EW CVCC fours | 71–91 ci | Civic 1973–1987 |
+| Honda R18 1.8 (incl. GX CNG) and LDA 1.3 IMA hybrid | 110 / 82 ci | Civic 2003–2015 |
+| Honda LFC2 2.0 two-motor hybrid | 122 ci | Civic 2025+ |
+| Honda D15 / D17 records at their real sizes (D-series family has only 91.5 / 103.7) | 91 / 102 ci | Civic 1988–2005 (linked to the family) |
+| Nissan L24 / L26 / L28E / L28ET sixes | 146 / 156 / 168 ci | Datsun/Nissan Z 1970–1983 |
+| Mitsubishi 4G37 1.8; Chrysler 420A 2.0 | 107 / 122 ci | Eclipse 1990–1999 (420A unlinked; same-size page is the 4G63) |
+| GM 6.2 / 6.5 diesels (LH6, L56, L65) | 379 / 395 ci | Suburban 1982–1999, Tahoe 1995–1999 |
+| GM 8.1 Vortec L18 | 496 ci | Suburban 2001–2006 |
+| Mazda 12A / 13B rotary dated records | 70 / 80 ci | RX-7 (linked to the rotary family page only) |
+
+## Batch 5 ratings withheld (sources disagree; engine shown without hp)
+- Miata 2006 LF-VE (170 vs 166), Tahoe 1996 L31 (255 vs 250), Tahoe 2008 L92 (one source), Eclipse 2001 6G72 (205 vs 200),
+  Suburban 1968 396 and 1975–78 454, Ram HD 2006–08 5.7 Hemi (345 vs 330), Ram HD 2021 6.7 HO (420 vs 400), Z 1972–73, 1977–78, 1980 and 1988–89.
+- Left off entirely (one or two sources): Civic 2007 GX, 2018–19 Sport/Type R years with one source, 2025 Type R; Z 1975 260Z; Suburban 2014 6.0; Ram HD 5.7 CNG 2015/2017–18, 2017 6.7 HO.

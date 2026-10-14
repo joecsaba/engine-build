@@ -1,0 +1,129 @@
+{
+ "name": "Toyota 4M / 4M-E 2.6 I6",
+ "fields": {
+  "bore_in": {
+   "value": 3.1496,
+   "sources": [
+    {
+     "name": "Wikipedia: Toyota M engine",
+     "url": "https://en.wikipedia.org/wiki/Toyota_M_engine",
+     "says": "4M-E bore 80 mm"
+    },
+    {
+     "name": "Elgin Industries engine parts catalog (technical reference) - engine details",
+     "url": "https://catalog.elginind.com/engine/toyota/default/a9223942-ae7a-4025-ab1e-954149cc1a73/",
+     "says": "4M, 4ME 2563cc: Bore 3.14'' (80.0mm)"
+    }
+   ],
+   "note": "80.0 mm",
+   "second_pass": true
+  },
+  "displacement_l": {
+   "value": 2.6,
+   "sources": [
+    {
+     "name": "Wikipedia: Toyota M engine",
+     "url": "https://en.wikipedia.org/wiki/Toyota_M_engine",
+     "says": "2,563 cc"
+    },
+    {
+     "name": "Elgin Industries engine parts catalog (technical reference) - engine details",
+     "url": "https://catalog.elginind.com/engine/toyota/default/a9223942-ae7a-4025-ab1e-954149cc1a73/",
+     "says": "Liters 2.6, CC 2563"
+    },
+    {
+     "name": "Toyota 1978 Cressida brochure spec page (Toyota material, oldcarbrochures.org scan, OCR)",
+     "url": "https://oldcarbrochures.org/Japan/Toyota/1978%20Toyota%20Cresssida/index.html",
+     "says": "2.6 liter ... 6-cylinder engine; Displacement (cc) 2563"
+    }
+   ],
+   "note": "2,563 cc"
+  },
+  "displacement_ci": {
+   "value": 156,
+   "sources": [
+    {
+     "name": "Wikipedia: Toyota M engine",
+     "url": "https://en.wikipedia.org/wiki/Toyota_M_engine",
+     "says": "2,563 cc"
+    },
+    {
+     "name": "Elgin Industries engine parts catalog (technical reference) - engine details",
+     "url": "https://catalog.elginind.com/engine/toyota/default/a9223942-ae7a-4025-ab1e-954149cc1a73/",
+     "says": "CC 2563"
+    },
+    {
+     "name": "Toyota 1978 Cressida brochure spec page (Toyota material, oldcarbrochures.org scan, OCR)",
+     "url": "https://oldcarbrochures.org/Japan/Toyota/1978%20Toyota%20Cresssida/index.html",
+     "says": "Displacement (cc) 2563"
+    }
+   ],
+   "note": "converted = 156.4 ci"
+  },
+  "num_cylinders": {
+   "value": 6,
+   "sources": [
+    {
+     "name": "Wikipedia: Toyota M engine",
+     "url": "https://en.wikipedia.org/wiki/Toyota_M_engine",
+     "says": "inline-six"
+    },
+    {
+     "name": "Elgin Industries engine parts catalog (technical reference) - engine details",
+     "url": "https://catalog.elginind.com/engine/toyota/default/a9223942-ae7a-4025-ab1e-954149cc1a73/",
+     "says": "Cyl. 6"
+    },
+    {
+     "name": "Toyota 1978 Cressida brochure spec page (Toyota material, oldcarbrochures.org scan, OCR)",
+     "url": "https://oldcarbrochures.org/Japan/Toyota/1978%20Toyota%20Cresssida/index.html",
+     "says": "6-Cylinder Single Overhead Camshaft"
+    }
+   ],
+   "note": ""
+  },
+  "valvetrain": {
+   "value": "SOHC, 2 valves per cylinder (12 valves)",
+   "sources": [
+    {
+     "name": "Wikipedia: Toyota M engine",
+     "url": "https://en.wikipedia.org/wiki/Toyota_M_engine",
+     "says": "2-valve SOHC"
+    },
+    {
+     "name": "Elgin Industries engine parts catalog (technical reference) - engine details",
+     "url": "https://catalog.elginind.com/engine/toyota/default/a9223942-ae7a-4025-ab1e-954149cc1a73/",
+     "says": "Head SOHC"
+    },
+    {
+     "name": "Toyota 1978 Cressida brochure spec page (Toyota material, oldcarbrochures.org scan, OCR)",
+     "url": "https://oldcarbrochures.org/Japan/Toyota/1978%20Toyota%20Cresssida/index.html",
+     "says": "6-Cylinder Single Overhead Camshaft"
+    }
+   ],
+   "note": ""
+  },
+  "fuel_type": {
+   "value": "gasoline",
+   "sources": [
+    {
+     "name": "Wikipedia: Toyota M engine",
+     "url": "https://en.wikipedia.org/wiki/Toyota_M_engine",
+     "says": "4M-E fuel-injected"
+    },
+    {
+     "name": "Elgin Industries engine parts catalog (technical reference) - engine details",
+     "url": "https://catalog.elginind.com/engine/toyota/default/a9223942-ae7a-4025-ab1e-954149cc1a73/",
+     "says": "Fuel / Delivery GAS / CARB"
+    }
+   ],
+   "note": "",
+   "second_pass": true
+  }
+ },
+ "unverified": {
+  "stroke_in": "3.3465 in (85.0 mm): Wikipedia only; Elgin lists no stroke.",
+  "configuration": "inline-6: Wikipedia only (Toyota brochure and Elgin give 6 cylinders without layout).",
+  "block_material": "cast iron: Wikipedia only.",
+  "head_material": "aluminum: Wikipedia only."
+ }
+}

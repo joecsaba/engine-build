@@ -1,0 +1,141 @@
+{
+ "name": "Toyota 2RZ-FE 2.4 I4",
+ "fields": {
+  "bore_in": {
+   "value": 3.7402,
+   "sources": [
+    {
+     "name": "Wikipedia: Toyota RZ engine",
+     "url": "https://en.wikipedia.org/wiki/Toyota_RZ_engine",
+     "says": "2RZ-FE 95 mm x 86 mm (3.74 in x 3.39 in)"
+    },
+    {
+     "name": "Elgin Industries engine parts catalog (technical reference) - engine details",
+     "url": "https://catalog.elginind.com/engine/toyota/default/99936b4b-f38e-4685-9b5e-1eca2f8cc03e/",
+     "says": "2RZ-FE 2438cc: Bore 3.74'' (95.0mm)"
+    }
+   ],
+   "note": "95.0 mm",
+   "second_pass": true
+  },
+  "stroke_in": {
+   "value": 3.3858,
+   "sources": [
+    {
+     "name": "Wikipedia: Toyota RZ engine",
+     "url": "https://en.wikipedia.org/wiki/Toyota_RZ_engine",
+     "says": "stroke 86 mm"
+    },
+    {
+     "name": "Elgin Industries engine parts catalog (technical reference) - engine details",
+     "url": "https://catalog.elginind.com/engine/toyota/default/99936b4b-f38e-4685-9b5e-1eca2f8cc03e/",
+     "says": "Stroke 3.39'' (86.0mm)"
+    }
+   ],
+   "note": "86.0 mm",
+   "second_pass": true
+  },
+  "displacement_l": {
+   "value": 2.4,
+   "sources": [
+    {
+     "name": "Wikipedia: Toyota RZ engine",
+     "url": "https://en.wikipedia.org/wiki/Toyota_RZ_engine",
+     "says": "2.4 L (2,438 cc)"
+    },
+    {
+     "name": "Elgin Industries engine parts catalog (technical reference) - engine details",
+     "url": "https://catalog.elginind.com/engine/toyota/default/99936b4b-f38e-4685-9b5e-1eca2f8cc03e/",
+     "says": "Liters 2.4, CC 2438"
+    },
+    {
+     "name": "EPA fueleconomy.gov vehicle data",
+     "url": "https://www.fueleconomy.gov/feg/download.shtml",
+     "says": "1995 Tacoma 2WD 2.4 L 4-cyl"
+    }
+   ],
+   "note": "2,438 cc"
+  },
+  "displacement_ci": {
+   "value": 149,
+   "sources": [
+    {
+     "name": "Wikipedia: Toyota RZ engine",
+     "url": "https://en.wikipedia.org/wiki/Toyota_RZ_engine",
+     "says": "2,438 cc"
+    },
+    {
+     "name": "Elgin Industries engine parts catalog (technical reference) - engine details",
+     "url": "https://catalog.elginind.com/engine/toyota/default/99936b4b-f38e-4685-9b5e-1eca2f8cc03e/",
+     "says": "CC 2438"
+    }
+   ],
+   "note": "converted = 148.8 ci",
+   "second_pass": true
+  },
+  "num_cylinders": {
+   "value": 4,
+   "sources": [
+    {
+     "name": "Wikipedia: Toyota RZ engine",
+     "url": "https://en.wikipedia.org/wiki/Toyota_RZ_engine",
+     "says": "inline-four"
+    },
+    {
+     "name": "Elgin Industries engine parts catalog (technical reference) - engine details",
+     "url": "https://catalog.elginind.com/engine/toyota/default/99936b4b-f38e-4685-9b5e-1eca2f8cc03e/",
+     "says": "Cyl. 4"
+    },
+    {
+     "name": "EPA fueleconomy.gov vehicle data",
+     "url": "https://www.fueleconomy.gov/feg/download.shtml",
+     "says": "2.4 L 4-cyl"
+    }
+   ],
+   "note": ""
+  },
+  "valvetrain": {
+   "value": "DOHC, 4 valves per cylinder (16 valves)",
+   "sources": [
+    {
+     "name": "Wikipedia: Toyota RZ engine",
+     "url": "https://en.wikipedia.org/wiki/Toyota_RZ_engine",
+     "says": "four valves per cylinder and DOHC"
+    },
+    {
+     "name": "Elgin Industries engine parts catalog (technical reference) - engine details",
+     "url": "https://catalog.elginind.com/engine/toyota/default/99936b4b-f38e-4685-9b5e-1eca2f8cc03e/",
+     "says": "Head DOHC"
+    }
+   ],
+   "note": "",
+   "second_pass": true
+  },
+  "fuel_type": {
+   "value": "gasoline",
+   "sources": [
+    {
+     "name": "Wikipedia: Toyota RZ engine",
+     "url": "https://en.wikipedia.org/wiki/Toyota_RZ_engine",
+     "says": "EFI gasoline"
+    },
+    {
+     "name": "Elgin Industries engine parts catalog (technical reference) - engine details",
+     "url": "https://catalog.elginind.com/engine/toyota/default/99936b4b-f38e-4685-9b5e-1eca2f8cc03e/",
+     "says": "GAS / FI"
+    },
+    {
+     "name": "EPA fueleconomy.gov vehicle data",
+     "url": "https://www.fueleconomy.gov/feg/download.shtml",
+     "says": "Tacoma 2.4 L, no diesel flag"
+    }
+   ],
+   "note": ""
+  }
+ },
+ "unverified": {
+  "configuration": "inline-4: Wikipedia only.",
+  "block_material": "cast iron: Wikipedia only.",
+  "head_material": "aluminum: Wikipedia only."
+ }
+}

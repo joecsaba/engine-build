@@ -1,0 +1,150 @@
+{
+ "name": "Toyota 5M-E / 5M-GE 2.8 I6",
+ "fields": {
+  "bore_in": {
+   "value": 3.2677,
+   "sources": [
+    {
+     "name": "Wikipedia: Toyota M engine",
+     "url": "https://en.wikipedia.org/wiki/Toyota_M_engine",
+     "says": "5M-GE bore 83 mm"
+    },
+    {
+     "name": "Elgin Industries engine parts catalog (technical reference) - engine details",
+     "url": "https://catalog.elginind.com/engine/toyota/default/06e65edd-d16a-40d9-8812-8ac6a68d626f/",
+     "says": "5ME 2759cc: Bore 3.26'' (83.0mm); 5M-GE entry also 83.0mm"
+    }
+   ],
+   "note": "83.0 mm. Wikipedia's 5M-E row says 83.1 mm; 83.0 x 85.0 x 6 = 2,759 cc matches the published displacement",
+   "second_pass": true
+  },
+  "stroke_in": {
+   "value": 3.3465,
+   "sources": [
+    {
+     "name": "Wikipedia: Toyota M engine",
+     "url": "https://en.wikipedia.org/wiki/Toyota_M_engine",
+     "says": "5M-E and 5M-GE stroke 85 mm"
+    },
+    {
+     "name": "Elgin Industries engine parts catalog (technical reference) - engine details",
+     "url": "https://catalog.elginind.com/engine/toyota/default/45137644-4a54-49d2-bbfe-b27e1c1b0409/",
+     "says": "5M-GE: Stroke 3.34'' (85.0mm)"
+    }
+   ],
+   "note": "85.0 mm",
+   "second_pass": true
+  },
+  "displacement_l": {
+   "value": 2.8,
+   "sources": [
+    {
+     "name": "Wikipedia: Toyota M engine",
+     "url": "https://en.wikipedia.org/wiki/Toyota_M_engine",
+     "says": "2,759 cc"
+    },
+    {
+     "name": "Elgin Industries engine parts catalog (technical reference) - engine details",
+     "url": "https://catalog.elginind.com/engine/toyota/default/06e65edd-d16a-40d9-8812-8ac6a68d626f/",
+     "says": "5ME: Liters 2.8, CC 2759"
+    },
+    {
+     "name": "Toyota 1983 Cressida brochure spec page (Toyota material, oldcarbrochures.org scan, OCR)",
+     "url": "https://oldcarbrochures.org/Japan/Toyota/1983%20Toyota%20Cressida/index.html",
+     "says": "ENGINE TYPE 2.8 liter Twin Cam ... EFI (2759 ..."
+    },
+    {
+     "name": "EPA fueleconomy.gov vehicle data",
+     "url": "https://www.fueleconomy.gov/feg/download.shtml",
+     "says": "1984-86 Celica Supra 2.8 L 6-cyl"
+    }
+   ],
+   "note": "2,759 cc; Elgin's separate 5M-GE entry says 2,754 cc (outlier)"
+  },
+  "displacement_ci": {
+   "value": 168,
+   "sources": [
+    {
+     "name": "Wikipedia: Toyota M engine",
+     "url": "https://en.wikipedia.org/wiki/Toyota_M_engine",
+     "says": "2,759 cc"
+    },
+    {
+     "name": "Elgin Industries engine parts catalog (technical reference) - engine details",
+     "url": "https://catalog.elginind.com/engine/toyota/default/06e65edd-d16a-40d9-8812-8ac6a68d626f/",
+     "says": "CC 2759"
+    },
+    {
+     "name": "Toyota 1983 Cressida brochure spec page (Toyota material, oldcarbrochures.org scan, OCR)",
+     "url": "https://oldcarbrochures.org/Japan/Toyota/1983%20Toyota%20Cressida/index.html",
+     "says": "(2759"
+    }
+   ],
+   "note": "converted = 168.4 ci"
+  },
+  "num_cylinders": {
+   "value": 6,
+   "sources": [
+    {
+     "name": "Wikipedia: Toyota M engine",
+     "url": "https://en.wikipedia.org/wiki/Toyota_M_engine",
+     "says": "inline-six"
+    },
+    {
+     "name": "Elgin Industries engine parts catalog (technical reference) - engine details",
+     "url": "https://catalog.elginind.com/engine/toyota/default/06e65edd-d16a-40d9-8812-8ac6a68d626f/",
+     "says": "Cyl. 6"
+    },
+    {
+     "name": "EPA fueleconomy.gov vehicle data",
+     "url": "https://www.fueleconomy.gov/feg/download.shtml",
+     "says": "2.8 L 6-cyl"
+    }
+   ],
+   "note": ""
+  },
+  "valvetrain": {
+   "value": "5M-E: SOHC 12-valve; 5M-GE: DOHC 12-valve",
+   "sources": [
+    {
+     "name": "Wikipedia: Toyota M engine",
+     "url": "https://en.wikipedia.org/wiki/Toyota_M_engine",
+     "says": "5M-E 2-valve SOHC; 5M-GE 12-valve (2 valves per cylinder) DOHC"
+    },
+    {
+     "name": "Elgin Industries engine parts catalog (technical reference) - engine details",
+     "url": "https://catalog.elginind.com/engine/toyota/default/06e65edd-d16a-40d9-8812-8ac6a68d626f/",
+     "says": "5ME Head SOHC; 5M-GE Head DOHC"
+    }
+   ],
+   "note": "Toyota 1983 Cressida brochure also says '2.8 liter Twin Cam' for the 5M-GE",
+   "second_pass": true
+  },
+  "fuel_type": {
+   "value": "gasoline",
+   "sources": [
+    {
+     "name": "Wikipedia: Toyota M engine",
+     "url": "https://en.wikipedia.org/wiki/Toyota_M_engine",
+     "says": "electronic fuel injection"
+    },
+    {
+     "name": "Elgin Industries engine parts catalog (technical reference) - engine details",
+     "url": "https://catalog.elginind.com/engine/toyota/default/06e65edd-d16a-40d9-8812-8ac6a68d626f/",
+     "says": "GAS / FI"
+    },
+    {
+     "name": "EPA fueleconomy.gov vehicle data",
+     "url": "https://www.fueleconomy.gov/feg/download.shtml",
+     "says": "Celica Supra 2.8 L, no diesel flag"
+    }
+   ],
+   "note": "EFI"
+  }
+ },
+ "unverified": {
+  "configuration": "inline-6: Wikipedia only.",
+  "block_material": "cast iron: Wikipedia only.",
+  "head_material": "aluminum: Wikipedia only."
+ }
+}

@@ -1,0 +1,82 @@
+{
+ "cid_remap": {
+  "231": 233,
+  "144": 145
+ },
+ "no_link": [
+  {
+   "cid": 122,
+   "years": [
+    1995,
+    1999
+   ],
+   "match": "420A"
+  }
+ ],
+ "default_layout": [
+  4,
+  "inline-four"
+ ],
+ "make": "Mitsubishi",
+ "model": "Eclipse",
+ "makeSlug": "mitsubishi",
+ "slug": "eclipse",
+ "metric_from": 1900,
+ "title": "Mitsubishi Eclipse Engines by Year (1990–2012)",
+ "description": "Every factory engine in the Mitsubishi Eclipse by year, 1990–2012: the 4G63 turbo and other fours, the Chrysler 420A, and the 3.0 and 3.8 V6s.",
+ "intro": [
+  "The Eclipse was built in Illinois from 1990 to 2012. The first two generations shared their engines with the Plymouth Laser and Eagle Talon.",
+  "Pick a year to see every engine offered that model year, with its code, rated horsepower and the trims it came in. Each engine links to its full specs."
+ ],
+ "generations": [
+  {
+   "key": "1g",
+   "name": "First generation",
+   "years": [
+    1990,
+    1994
+   ],
+   "intro": [
+    "The 1.8 4G37, the 2.0 4G63 and the 4G63 turbo, also in the all-wheel-drive GSX."
+   ]
+  },
+  {
+   "key": "2g",
+   "name": "Second generation",
+   "years": [
+    1995,
+    1999
+   ],
+   "intro": [
+    "The Chrysler 2.0 420A, the 4G63 turbo, and the 2.4 4G64 in the Spyder GS."
+   ]
+  },
+  {
+   "key": "3g",
+   "name": "Third generation",
+   "years": [
+    2000,
+    2005
+   ],
+   "intro": [
+    "The 2.4 4G64 and the 3.0 6G72 V6."
+   ]
+  },
+  {
+   "key": "4g",
+   "name": "Fourth generation",
+   "years": [
+    2006,
+    2012
+   ],
+   "intro": [
+    "The 2.4 4G69 and the 3.8 6G75 V6."
+   ]
+  }
+ ],
+ "files": [
+  "verify_mitsubishi-eclipse-1990-2012.json"
+ ],
+ "merge_trims": true,
+ "draft": true
+}

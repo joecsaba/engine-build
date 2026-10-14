@@ -1,0 +1,141 @@
+{
+ "name": "Toyota 3RZ-FE 2.7 I4",
+ "fields": {
+  "bore_in": {
+   "value": 3.7402,
+   "sources": [
+    {
+     "name": "Wikipedia: Toyota RZ engine",
+     "url": "https://en.wikipedia.org/wiki/Toyota_RZ_engine",
+     "says": "3RZ-FE 95 mm x 95 mm"
+    },
+    {
+     "name": "Elgin Industries engine parts catalog (technical reference) - engine details",
+     "url": "https://catalog.elginind.com/engine/toyota/default/00cab552-a335-45cc-9713-8da963081f57/",
+     "says": "3RZ-FE 2694cc: Bore 3.74'' (95.0mm)"
+    }
+   ],
+   "note": "95.0 mm",
+   "second_pass": true
+  },
+  "stroke_in": {
+   "value": 3.7402,
+   "sources": [
+    {
+     "name": "Wikipedia: Toyota RZ engine",
+     "url": "https://en.wikipedia.org/wiki/Toyota_RZ_engine",
+     "says": "3RZ-FE 95 mm x 95 mm"
+    },
+    {
+     "name": "Elgin Industries engine parts catalog (technical reference) - engine details",
+     "url": "https://catalog.elginind.com/engine/toyota/default/00cab552-a335-45cc-9713-8da963081f57/",
+     "says": "Stroke 3.74'' (95.0mm)"
+    }
+   ],
+   "note": "95.0 mm",
+   "second_pass": true
+  },
+  "displacement_l": {
+   "value": 2.7,
+   "sources": [
+    {
+     "name": "Wikipedia: Toyota RZ engine",
+     "url": "https://en.wikipedia.org/wiki/Toyota_RZ_engine",
+     "says": "2.7 L (2,693 cc)"
+    },
+    {
+     "name": "Elgin Industries engine parts catalog (technical reference) - engine details",
+     "url": "https://catalog.elginind.com/engine/toyota/default/00cab552-a335-45cc-9713-8da963081f57/",
+     "says": "Liters 2.7, CC 2694"
+    },
+    {
+     "name": "EPA fueleconomy.gov vehicle data",
+     "url": "https://www.fueleconomy.gov/feg/download.shtml",
+     "says": "1995 Tacoma 4WD 2.7 L 4-cyl"
+    }
+   ],
+   "note": "Wikipedia 2,693 cc, Elgin 2,694 cc"
+  },
+  "displacement_ci": {
+   "value": 164,
+   "sources": [
+    {
+     "name": "Wikipedia: Toyota RZ engine",
+     "url": "https://en.wikipedia.org/wiki/Toyota_RZ_engine",
+     "says": "2,693 cc"
+    },
+    {
+     "name": "Elgin Industries engine parts catalog (technical reference) - engine details",
+     "url": "https://catalog.elginind.com/engine/toyota/default/00cab552-a335-45cc-9713-8da963081f57/",
+     "says": "CC 2694"
+    }
+   ],
+   "note": "converted = 164.3-164.4 ci",
+   "second_pass": true
+  },
+  "num_cylinders": {
+   "value": 4,
+   "sources": [
+    {
+     "name": "Wikipedia: Toyota RZ engine",
+     "url": "https://en.wikipedia.org/wiki/Toyota_RZ_engine",
+     "says": "inline-four"
+    },
+    {
+     "name": "Elgin Industries engine parts catalog (technical reference) - engine details",
+     "url": "https://catalog.elginind.com/engine/toyota/default/00cab552-a335-45cc-9713-8da963081f57/",
+     "says": "Cyl. 4"
+    },
+    {
+     "name": "EPA fueleconomy.gov vehicle data",
+     "url": "https://www.fueleconomy.gov/feg/download.shtml",
+     "says": "2.7 L 4-cyl"
+    }
+   ],
+   "note": ""
+  },
+  "valvetrain": {
+   "value": "DOHC, 4 valves per cylinder (16 valves)",
+   "sources": [
+    {
+     "name": "Wikipedia: Toyota RZ engine",
+     "url": "https://en.wikipedia.org/wiki/Toyota_RZ_engine",
+     "says": "four valves per cylinder and DOHC"
+    },
+    {
+     "name": "Elgin Industries engine parts catalog (technical reference) - engine details",
+     "url": "https://catalog.elginind.com/engine/toyota/default/00cab552-a335-45cc-9713-8da963081f57/",
+     "says": "Head DOHC, Misc. 16 Valve"
+    }
+   ],
+   "note": "",
+   "second_pass": true
+  },
+  "fuel_type": {
+   "value": "gasoline",
+   "sources": [
+    {
+     "name": "Wikipedia: Toyota RZ engine",
+     "url": "https://en.wikipedia.org/wiki/Toyota_RZ_engine",
+     "says": "EFI gasoline"
+    },
+    {
+     "name": "Elgin Industries engine parts catalog (technical reference) - engine details",
+     "url": "https://catalog.elginind.com/engine/toyota/default/00cab552-a335-45cc-9713-8da963081f57/",
+     "says": "GAS / FI"
+    },
+    {
+     "name": "EPA fueleconomy.gov vehicle data",
+     "url": "https://www.fueleconomy.gov/feg/download.shtml",
+     "says": "Tacoma 2.7 L, no diesel flag"
+    }
+   ],
+   "note": ""
+  }
+ },
+ "unverified": {
+  "configuration": "inline-4: stated only by Wikipedia (Elgin/EPA give 4 cylinders without layout).",
+  "block_material": "cast iron: Wikipedia only.",
+  "head_material": "aluminum: Wikipedia only."
+ }
+}

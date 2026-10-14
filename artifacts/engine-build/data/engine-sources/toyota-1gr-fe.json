@@ -1,0 +1,150 @@
+{
+ "name": "Toyota 1GR-FE 4.0 V6",
+ "fields": {
+  "bore_in": {
+   "value": 3.7008,
+   "sources": [
+    {
+     "name": "Wikipedia: Toyota GR engine",
+     "url": "https://en.wikipedia.org/wiki/Toyota_GR_engine",
+     "says": "1GR-FE 94 mm x 95 mm (3.70 in x 3.74 in)"
+    },
+    {
+     "name": "Elgin Industries engine parts catalog (technical reference) - engine details",
+     "url": "https://catalog.elginind.com/engine/toyota/default/cc3481ee-05bf-4a0c-872a-5472c35f3682/",
+     "says": "1GR-FE 3956cc: Bore 3.70'' (94.0mm)"
+    }
+   ],
+   "note": "94.0 mm",
+   "second_pass": true
+  },
+  "displacement_l": {
+   "value": 4.0,
+   "sources": [
+    {
+     "name": "Wikipedia: Toyota GR engine",
+     "url": "https://en.wikipedia.org/wiki/Toyota_GR_engine",
+     "says": "4.0 L (3,956 cc)"
+    },
+    {
+     "name": "Elgin Industries engine parts catalog (technical reference) - engine details",
+     "url": "https://catalog.elginind.com/engine/toyota/default/cc3481ee-05bf-4a0c-872a-5472c35f3682/",
+     "says": "Liters 4.0, CC 3956"
+    },
+    {
+     "name": "Toyota USA pressroom: 2010 Toyota 4Runner Add to Rich Heritage (Toyota material)",
+     "url": "https://pressroom.toyota.com/2010-toyota-4runner-add-to-rich-heritage-with-more-power-better-mpg/",
+     "says": "powered by a new 4.0-liter V6"
+    },
+    {
+     "name": "EPA fueleconomy.gov vehicle data",
+     "url": "https://www.fueleconomy.gov/feg/download.shtml",
+     "says": "2003 4Runner / 2005 Tacoma 4.0 L 6-cyl"
+    }
+   ],
+   "note": "3,956 cc"
+  },
+  "displacement_ci": {
+   "value": 241,
+   "sources": [
+    {
+     "name": "Wikipedia: Toyota GR engine",
+     "url": "https://en.wikipedia.org/wiki/Toyota_GR_engine",
+     "says": "3,956 cc"
+    },
+    {
+     "name": "Elgin Industries engine parts catalog (technical reference) - engine details",
+     "url": "https://catalog.elginind.com/engine/toyota/default/cc3481ee-05bf-4a0c-872a-5472c35f3682/",
+     "says": "CC 3956"
+    }
+   ],
+   "note": "converted from 3,956 cc = 241.4 ci",
+   "second_pass": true
+  },
+  "num_cylinders": {
+   "value": 6,
+   "sources": [
+    {
+     "name": "Wikipedia: Toyota GR engine",
+     "url": "https://en.wikipedia.org/wiki/Toyota_GR_engine",
+     "says": "V6"
+    },
+    {
+     "name": "Elgin Industries engine parts catalog (technical reference) - engine details",
+     "url": "https://catalog.elginind.com/engine/toyota/default/cc3481ee-05bf-4a0c-872a-5472c35f3682/",
+     "says": "Cyl. 6"
+    },
+    {
+     "name": "Toyota USA pressroom: 2010 Toyota 4Runner Add to Rich Heritage (Toyota material)",
+     "url": "https://pressroom.toyota.com/2010-toyota-4runner-add-to-rich-heritage-with-more-power-better-mpg/",
+     "says": "4.0-liter V6"
+    }
+   ],
+   "note": ""
+  },
+  "configuration": {
+   "value": "V6",
+   "sources": [
+    {
+     "name": "Wikipedia: Toyota GR engine",
+     "url": "https://en.wikipedia.org/wiki/Toyota_GR_engine",
+     "says": "GR family V6"
+    },
+    {
+     "name": "Toyota USA pressroom: 2010 Toyota 4Runner Add to Rich Heritage (Toyota material)",
+     "url": "https://pressroom.toyota.com/2010-toyota-4runner-add-to-rich-heritage-with-more-power-better-mpg/",
+     "says": "4.0-liter V6"
+    }
+   ],
+   "note": "60 degree per Wikipedia only; Toyota Canada 2007 release also says V6 but Toyota material counts once",
+   "second_pass": true
+  },
+  "valvetrain": {
+   "value": "DOHC, 4 valves per cylinder (24 valves)",
+   "sources": [
+    {
+     "name": "Wikipedia: Toyota GR engine",
+     "url": "https://en.wikipedia.org/wiki/Toyota_GR_engine",
+     "says": "DOHC 4 valves/cyl"
+    },
+    {
+     "name": "Elgin Industries engine parts catalog (technical reference) - engine details",
+     "url": "https://catalog.elginind.com/engine/toyota/default/cc3481ee-05bf-4a0c-872a-5472c35f3682/",
+     "says": "Head DOHC, Misc. 24 Valve"
+    },
+    {
+     "name": "Toyota Canada media: 2007 Toyota 4Runner release (Toyota material)",
+     "url": "https://media.toyota.ca/en/releases/2007/2007-toyota-4runner--well-equipped-for-commanding-performance.html",
+     "says": "4.0-litre, DOHC 24-valve V6"
+    }
+   ],
+   "note": "VVT-i intake; dual VVT-i from 2010 (Toyota pressroom)"
+  },
+  "fuel_type": {
+   "value": "gasoline",
+   "sources": [
+    {
+     "name": "Wikipedia: Toyota GR engine",
+     "url": "https://en.wikipedia.org/wiki/Toyota_GR_engine",
+     "says": "multi-port fuel injection"
+    },
+    {
+     "name": "Elgin Industries engine parts catalog (technical reference) - engine details",
+     "url": "https://catalog.elginind.com/engine/toyota/default/cc3481ee-05bf-4a0c-872a-5472c35f3682/",
+     "says": "Fuel / Delivery GAS / FI"
+    },
+    {
+     "name": "EPA fueleconomy.gov vehicle data",
+     "url": "https://www.fueleconomy.gov/feg/download.shtml",
+     "says": "4Runner 4.0 L, no diesel flag"
+    }
+   ],
+   "note": ""
+  }
+ },
+ "unverified": {
+  "stroke_in": "3.7402 in (95.0 mm): Wikipedia only among checked sources; Elgin lists no stroke.",
+  "block_material": "die-cast aluminum: Wikipedia only.",
+  "head_material": "aluminum: Wikipedia only."
+ }
+}

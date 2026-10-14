@@ -1,0 +1,80 @@
+{
+ "cid_fix": {
+  "2020|403|401": 401,
+  "2021|403|401": 401,
+  "2022|403|401": 401,
+  "2023|403|401": 401,
+  "2024|403|401": 401,
+  "2025|403|401": 401,
+  "2026|403|401": 401
+ },
+ "make": "Chevrolet",
+ "model": "Silverado HD",
+ "makeSlug": "chevrolet",
+ "slug": "silverado-hd",
+ "title": "Chevrolet Silverado HD Engines by Year",
+ "description": "Every factory engine in the Chevrolet Silverado 2500HD and 3500HD by year, 1999–2026: Vortec 6.0 and 8.1 V8s, every Duramax diesel from LB7 to L5P, and the 6.6 gas V8.",
+ "intro": [
+  "Chevrolet's heavy-duty Silverado pickups, the 2500HD and 3500HD, arrived with the 2001 GMT800 trucks; the 1999–2000 light-duty Silverado 2500 is included. The 3500 shares the 2500's engines, sometimes at lower ratings for the heaviest models.",
+  "Pick a year to see every engine offered that model year, with its code, rated horsepower and the trims it came in. Each engine links to its full specs."
+ ],
+ "generations": [
+  {
+   "key": "gmt800",
+   "name": "GMT800",
+   "years": [
+    1999,
+    2007
+   ],
+   "intro": [
+    "The 6.0 and 8.1 Vortec V8s and the Duramax diesel: the LB7, then the LLY for 2004.5–2005 and the LBZ from 2006."
+   ]
+  },
+  {
+   "key": "gmt900",
+   "name": "GMT900",
+   "years": [
+    2008,
+    2014
+   ],
+   "intro": [
+    "The 6.0 V8 and the LMM and then LML Duramax."
+   ]
+  },
+  {
+   "key": "k2xx",
+   "name": "K2XX",
+   "years": [
+    2015,
+    2019
+   ],
+   "intro": [
+    "The 6.0 V8 and the LML, then the L5P Duramax from 2017."
+   ]
+  },
+  {
+   "key": "t1",
+   "name": "T1",
+   "years": [
+    2020,
+    2026
+   ],
+   "intro": [
+    "The 6.6 gasoline V8 and the L5P Duramax, uprated for 2024."
+   ]
+  }
+ ],
+ "files": [
+  "verify_chevrolet-silverado-hd-1999-2026.json"
+ ],
+ "merge_trims": true,
+ "exclude": {
+  "1999|350|255": "1999-2000 C/K HD carry-over, not a Silverado",
+  "1999|454|290": "1999-2000 C/K HD carry-over, not a Silverado",
+  "1999|395|195": "1999-2000 C/K HD carry-over, not a Silverado",
+  "2000|350|255": "1999-2000 C/K HD carry-over, not a Silverado",
+  "2000|454|290": "1999-2000 C/K HD carry-over, not a Silverado",
+  "2000|395|195": "1999-2000 C/K HD carry-over, not a Silverado"
+ },
+ "draft": true
+}

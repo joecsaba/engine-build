@@ -1,0 +1,118 @@
+{
+ "name": "Toyota 8R / 8R-C 1.9 I4",
+ "fields": {
+  "displacement_l": {
+   "value": 1.9,
+   "sources": [
+    {
+     "name": "Wikipedia: Toyota R engine",
+     "url": "https://en.wikipedia.org/wiki/Toyota_R_engine",
+     "says": "8R 1,858 cc"
+    },
+    {
+     "name": "Elgin Industries engine parts catalog (technical reference) - engine details",
+     "url": "https://catalog.elginind.com/engine/toyota/default/aeb57675-948e-428c-8edf-f2cd0a71cd96/",
+     "says": "8R, 8RC: Liters 1.9, CC 1858"
+    },
+    {
+     "name": "Hagerty Media: Dissecting the four-cylinder engines that helped Toyota dominate the world",
+     "url": "https://www.hagerty.com/media/magazine-features/dissecting-the-four-cylinder-engines-that-helped-toyota-dominate-the-world/",
+     "says": "Toyota's 1858-cc 8R engine"
+    }
+   ],
+   "note": "1,858 cc"
+  },
+  "displacement_ci": {
+   "value": 113,
+   "sources": [
+    {
+     "name": "Wikipedia: Toyota R engine",
+     "url": "https://en.wikipedia.org/wiki/Toyota_R_engine",
+     "says": "1,858 cc"
+    },
+    {
+     "name": "Elgin Industries engine parts catalog (technical reference) - engine details",
+     "url": "https://catalog.elginind.com/engine/toyota/default/aeb57675-948e-428c-8edf-f2cd0a71cd96/",
+     "says": "CC 1858"
+    },
+    {
+     "name": "Hagerty Media: Dissecting the four-cylinder engines that helped Toyota dominate the world",
+     "url": "https://www.hagerty.com/media/magazine-features/dissecting-the-four-cylinder-engines-that-helped-toyota-dominate-the-world/",
+     "says": "1858-cc 8R"
+    }
+   ],
+   "note": "converted = 113.4 ci"
+  },
+  "num_cylinders": {
+   "value": 4,
+   "sources": [
+    {
+     "name": "Wikipedia: Toyota R engine",
+     "url": "https://en.wikipedia.org/wiki/Toyota_R_engine",
+     "says": "inline-four"
+    },
+    {
+     "name": "Elgin Industries engine parts catalog (technical reference) - engine details",
+     "url": "https://catalog.elginind.com/engine/toyota/default/aeb57675-948e-428c-8edf-f2cd0a71cd96/",
+     "says": "Cyl. 4"
+    },
+    {
+     "name": "Hagerty Media: Dissecting the four-cylinder engines that helped Toyota dominate the world",
+     "url": "https://www.hagerty.com/media/magazine-features/dissecting-the-four-cylinder-engines-that-helped-toyota-dominate-the-world/",
+     "says": "four-banger ... 8R"
+    }
+   ],
+   "note": ""
+  },
+  "valvetrain": {
+   "value": "SOHC, 2 valves per cylinder",
+   "sources": [
+    {
+     "name": "Wikipedia: Toyota R engine",
+     "url": "https://en.wikipedia.org/wiki/Toyota_R_engine",
+     "says": "SOHC, 2-valve"
+    },
+    {
+     "name": "Elgin Industries engine parts catalog (technical reference) - engine details",
+     "url": "https://catalog.elginind.com/engine/toyota/default/aeb57675-948e-428c-8edf-f2cd0a71cd96/",
+     "says": "Head SOHC"
+    },
+    {
+     "name": "Hagerty Media: Dissecting the four-cylinder engines that helped Toyota dominate the world",
+     "url": "https://www.hagerty.com/media/magazine-features/dissecting-the-four-cylinder-engines-that-helped-toyota-dominate-the-world/",
+     "says": "1858-cc 8R ... a cam elevated from the block to the head"
+    },
+    {
+     "name": "Curbside Classic: First Generation Toyota Hilux",
+     "url": "https://www.curbsideclassic.com/curbside-classics-asian/curbside-classic-first-generation-totoya-hilux-building-block/",
+     "says": "the all-new SOHC 8R engine"
+    }
+   ],
+   "note": ""
+  },
+  "fuel_type": {
+   "value": "gasoline",
+   "sources": [
+    {
+     "name": "Wikipedia: Toyota R engine",
+     "url": "https://en.wikipedia.org/wiki/Toyota_R_engine",
+     "says": "carburetor"
+    },
+    {
+     "name": "Elgin Industries engine parts catalog (technical reference) - engine details",
+     "url": "https://catalog.elginind.com/engine/toyota/default/aeb57675-948e-428c-8edf-f2cd0a71cd96/",
+     "says": "GAS / CARB"
+    }
+   ],
+   "note": "",
+   "second_pass": true
+  }
+ },
+ "unverified": {
+  "bore_in": "DISAGREEMENT: Elgin 3.39 in (86.0 mm) vs Wikipedia 85.9 mm. 86.0 x 80 x 4 = 1,858.9 cc fits the published 1,858 cc better; withheld.",
+  "stroke_in": "3.1496 in (80.0 mm): Wikipedia only for 8R (Hagerty's 80 mm is stated for the 18R).",
+  "configuration": "inline-4: Wikipedia only.",
+  "block_material": "cast iron: Wikipedia only.",
+  "head_material": "Wikipedia says cast iron; not confirmed elsewhere."
+ }
+}

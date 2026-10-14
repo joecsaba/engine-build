@@ -1,0 +1,188 @@
+{
+ "name": "Toyota 3VZ-E 3.0 V6",
+ "fields": {
+  "bore_in": {
+   "value": 3.4449,
+   "sources": [
+    {
+     "name": "Wikipedia: Toyota VZ engine",
+     "url": "https://en.wikipedia.org/wiki/Toyota_VZ_engine",
+     "says": "3VZ-E bore 87.5 mm"
+    },
+    {
+     "name": "Elgin Industries engine parts catalog (technical reference) - engine details",
+     "url": "https://catalog.elginind.com/engine/toyota/default/de020d8a-0b5e-4fea-9da9-fa8a12d242b2/",
+     "says": "3VZ-E 2959cc: Bore 3.45'' (87.5mm)"
+    }
+   ],
+   "note": "87.5 mm",
+   "second_pass": true
+  },
+  "stroke_in": {
+   "value": 3.2283,
+   "sources": [
+    {
+     "name": "Wikipedia: Toyota VZ engine",
+     "url": "https://en.wikipedia.org/wiki/Toyota_VZ_engine",
+     "says": "3VZ-E stroke 82 mm"
+    },
+    {
+     "name": "Elgin Industries engine parts catalog (technical reference) - engine details",
+     "url": "https://catalog.elginind.com/engine/toyota/default/de020d8a-0b5e-4fea-9da9-fa8a12d242b2/",
+     "says": "3VZ-E: Stroke 3.23'' (82.0mm)"
+    }
+   ],
+   "note": "82.0 mm",
+   "second_pass": true
+  },
+  "displacement_l": {
+   "value": 3.0,
+   "sources": [
+    {
+     "name": "Wikipedia: Toyota VZ engine",
+     "url": "https://en.wikipedia.org/wiki/Toyota_VZ_engine",
+     "says": "3VZ-E 2,958 cc"
+    },
+    {
+     "name": "Elgin Industries engine parts catalog (technical reference) - engine details",
+     "url": "https://catalog.elginind.com/engine/toyota/default/de020d8a-0b5e-4fea-9da9-fa8a12d242b2/",
+     "says": "3VZ-E: Liters 3.0, CC 2959"
+    },
+    {
+     "name": "EPA fueleconomy.gov vehicle data",
+     "url": "https://www.fueleconomy.gov/feg/download.shtml",
+     "says": "1988-95 4Runner/Truck: 3.0 L 6-cyl"
+    }
+   ],
+   "note": "2,958 cc (Wikipedia) vs 2,959 cc (Elgin); 87.5 x 82 x 6 = 2,958.6 cc"
+  },
+  "displacement_ci": {
+   "value": 181,
+   "sources": [
+    {
+     "name": "Wikipedia: Toyota VZ engine",
+     "url": "https://en.wikipedia.org/wiki/Toyota_VZ_engine",
+     "says": "2,958 cc"
+    },
+    {
+     "name": "Elgin Industries engine parts catalog (technical reference) - engine details",
+     "url": "https://catalog.elginind.com/engine/toyota/default/de020d8a-0b5e-4fea-9da9-fa8a12d242b2/",
+     "says": "CC 2959"
+    }
+   ],
+   "note": "converted from cc (2,958-2,959 cc = 180.5-180.6 ci)",
+   "second_pass": true
+  },
+  "num_cylinders": {
+   "value": 6,
+   "sources": [
+    {
+     "name": "Wikipedia: Toyota VZ engine",
+     "url": "https://en.wikipedia.org/wiki/Toyota_VZ_engine",
+     "says": "60 degree V6"
+    },
+    {
+     "name": "Elgin Industries engine parts catalog (technical reference) - engine details",
+     "url": "https://catalog.elginind.com/engine/toyota/default/de020d8a-0b5e-4fea-9da9-fa8a12d242b2/",
+     "says": "Cyl. 6"
+    },
+    {
+     "name": "EPA fueleconomy.gov vehicle data",
+     "url": "https://www.fueleconomy.gov/feg/download.shtml",
+     "says": "3.0 L 6-cyl"
+    }
+   ],
+   "note": ""
+  },
+  "configuration": {
+   "value": "V6 (60 degree)",
+   "sources": [
+    {
+     "name": "Wikipedia: Toyota VZ engine",
+     "url": "https://en.wikipedia.org/wiki/Toyota_VZ_engine",
+     "says": "VZ is a family of 60 degree V6 engines"
+    },
+    {
+     "name": "Engine Builder magazine (May 1999): Rebuilding the Toyota 3.0L V6 (read via web.archive.org)",
+     "url": "https://www.enginebuildermag.com/1999/05/rebuilding-the-toyota-3-0l-v6/",
+     "says": "In 1988 Toyota introduced its first V6 ... 3VZ-E - 3.0L SOHC V6"
+    }
+   ],
+   "note": "",
+   "second_pass": true
+  },
+  "valvetrain": {
+   "value": "SOHC, 2 valves per cylinder (12 valves)",
+   "sources": [
+    {
+     "name": "Wikipedia: Toyota VZ engine",
+     "url": "https://en.wikipedia.org/wiki/Toyota_VZ_engine",
+     "says": "SOHC layout ... aluminium 12 valve head"
+    },
+    {
+     "name": "Engine Builder magazine (May 1999): Rebuilding the Toyota 3.0L V6 (read via web.archive.org)",
+     "url": "https://www.enginebuildermag.com/1999/05/rebuilding-the-toyota-3-0l-v6/",
+     "says": "two-valve heads with a single camshaft per head"
+    }
+   ],
+   "note": "",
+   "second_pass": true
+  },
+  "block_material": {
+   "value": "cast iron",
+   "sources": [
+    {
+     "name": "Wikipedia: Toyota VZ engine",
+     "url": "https://en.wikipedia.org/wiki/Toyota_VZ_engine",
+     "says": "SOHC layout with a cast iron block"
+    },
+    {
+     "name": "Engine Builder magazine (May 1999): Rebuilding the Toyota 3.0L V6 (read via web.archive.org)",
+     "url": "https://www.enginebuildermag.com/1999/05/rebuilding-the-toyota-3-0l-v6/",
+     "says": "featured a cast iron block and aluminum heads ... The block is cast iron"
+    }
+   ],
+   "note": "",
+   "second_pass": true
+  },
+  "head_material": {
+   "value": "aluminum",
+   "sources": [
+    {
+     "name": "Wikipedia: Toyota VZ engine",
+     "url": "https://en.wikipedia.org/wiki/Toyota_VZ_engine",
+     "says": "aluminium 12 valve head"
+    },
+    {
+     "name": "Engine Builder magazine (May 1999): Rebuilding the Toyota 3.0L V6 (read via web.archive.org)",
+     "url": "https://www.enginebuildermag.com/1999/05/rebuilding-the-toyota-3-0l-v6/",
+     "says": "featured a cast iron block and aluminum heads"
+    }
+   ],
+   "note": "",
+   "second_pass": true
+  },
+  "fuel_type": {
+   "value": "gasoline",
+   "sources": [
+    {
+     "name": "Wikipedia: Toyota VZ engine",
+     "url": "https://en.wikipedia.org/wiki/Toyota_VZ_engine",
+     "says": "VZ gasoline V6 family; 3VZ-E fuel injected"
+    },
+    {
+     "name": "Elgin Industries engine parts catalog (technical reference) - engine details",
+     "url": "https://catalog.elginind.com/engine/toyota/default/de020d8a-0b5e-4fea-9da9-fa8a12d242b2/",
+     "says": "Fuel / Delivery GAS / FI"
+    },
+    {
+     "name": "EPA fueleconomy.gov vehicle data",
+     "url": "https://www.fueleconomy.gov/feg/download.shtml",
+     "says": "4Runner/Truck 3.0 L, no diesel flag"
+    }
+   ],
+   "note": ""
+  }
+ },
+ "unverified": {}
+}

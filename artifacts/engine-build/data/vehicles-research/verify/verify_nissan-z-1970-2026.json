@@ -1,0 +1,3380 @@
+{
+ "vehicle": "nissan-z-1970-2026",
+ "market": "US",
+ "excluded": [
+  {
+   "what": "2021 Nissan 370Z",
+   "why": "no 2021 model year: 2020 370Zs were sold into 2021 (Wikipedia: sold 2009-2020; Motor Authority 'There is no 2021 Nissan 370Z'); EPA data carries a 2021 370Z row (conflicts)"
+  },
+  {
+   "what": "1997-2002 and 2022",
+   "why": "no US-market Z sold (300ZX ended after 1996; 350Z began 2003; new Z began 2023)"
+  }
+ ],
+ "search_notes": "NHRA file for this job is empty (nhra=false throughout). EPA data starts 1984 and only confirms displacement/cylinders/induction. All Nissan newsroom press kits and nissanusa.com count as one source; the Consumer Guide HowStuffWorks history pages and the Consumer Guide blog count as one. Hagerty valuation pages require login / 403; Car and Driver and MotorTrend not reachable. Pre-1984 cars have no KBB or EPA, so S30/S130 ratings rest on Consumer Guide + Wikipedia (+ Nissan launch figures); conflicting or single-source ratings are withheld (hp null) with the figures in the note.",
+ "years": {
+  "1970": [
+   {
+    "gen": "s30",
+    "cid": 146,
+    "liters": 2.4,
+    "hp": 150,
+    "hp_basis": "gross",
+    "rpo": "L24",
+    "name": "2.4L SOHC I6, twin SU carbs",
+    "common_name": "L24",
+    "trims": [
+     "240Z"
+    ],
+    "nhra": false,
+    "sources": [
+     {
+      "name": "Nissan USA material (newsroom press kits/releases and nissanusa.com, counted once)",
+      "url": "https://usa.nissannews.com/en-US/releases/release-49ec4ba13840405094f0c893ce9e9239-nissan-celebrates-four-decades-of-sports-car-leadership-with-new-limited-edition-370z-40th-anniversary-model",
+      "says": "1970 240Z: a 150-horsepower 2.4-liter single overhead cam inline 6-cylinder engine; nissanusa.com: 150 @ 6000 rpm"
+     },
+     {
+      "name": "Consumer Guide (Auto Editors of Consumer Guide) - Nissan Z History, via HowStuffWorks (archived)",
+      "url": "https://auto.howstuffworks.com/nissan-z-history2.htm",
+      "says": "US Z: 2.4-liter six, 150 hp @ 6000; 1973 240Zs rated 129 hp, a real drop plus the change from SAE gross to SAE net"
+     },
+     {
+      "name": "Wikipedia - Nissan Fairlady Z (S30)",
+      "url": "https://en.wikipedia.org/wiki/Nissan_S30",
+      "says": "240Z (1970-1973) L24 2,393 cc: 151 hp @ 5,600 rpm SAE gross"
+     }
+    ],
+    "status": "three_sources_not_nhra",
+    "independent_sources": 3,
+    "note": "Engine confirmed by 3. Rating: Nissan and Consumer Guide agree on 150 hp gross; Wikipedia gives 151 hp SAE gross."
+   }
+  ],
+  "1971": [
+   {
+    "gen": "s30",
+    "cid": 146,
+    "liters": 2.4,
+    "hp": 150,
+    "hp_basis": "gross",
+    "rpo": "L24",
+    "name": "2.4L SOHC I6, twin SU carbs",
+    "common_name": "L24",
+    "trims": [
+     "240Z"
+    ],
+    "nhra": false,
+    "sources": [
+     {
+      "name": "Nissan USA material (newsroom press kits/releases and nissanusa.com, counted once)",
+      "url": "https://www.nissanusa.com/experience-nissan/news-and-events/nissan-z-car.html",
+      "says": "240Z 2.4 SOHC six, 150 @ 6000 rpm (launch figure; no per-year rating)"
+     },
+     {
+      "name": "Consumer Guide (Auto Editors of Consumer Guide) - Nissan Z History, via HowStuffWorks (archived)",
+      "url": "https://auto.howstuffworks.com/nissan-z-history2.htm",
+      "says": "US Z: 2.4-liter six, 150 hp @ 6000; 1973 240Zs rated 129 hp, a real drop plus the change from SAE gross to SAE net"
+     },
+     {
+      "name": "Wikipedia - Nissan Fairlady Z (S30)",
+      "url": "https://en.wikipedia.org/wiki/Nissan_S30",
+      "says": "240Z (1970-1973) L24 2,393 cc: 151 hp @ 5,600 rpm SAE gross"
+     }
+    ],
+    "status": "three_sources_not_nhra",
+    "independent_sources": 3,
+    "note": "Engine confirmed by 3. Rating: Nissan and Consumer Guide agree on 150 hp gross; Wikipedia gives 151 hp SAE gross. 3-speed automatic added 1971."
+   }
+  ],
+  "1972": [
+   {
+    "gen": "s30",
+    "cid": 146,
+    "liters": 2.4,
+    "hp": null,
+    "hp_basis": "SAE net",
+    "rpo": "L24",
+    "name": "2.4L SOHC I6",
+    "common_name": "L24",
+    "trims": [
+     "240Z"
+    ],
+    "nhra": false,
+    "sources": [
+     {
+      "name": "Nissan USA material (newsroom press kits/releases and nissanusa.com, counted once)",
+      "url": "https://www.nissanusa.com/experience-nissan/news-and-events/nissan-z-car.html",
+      "says": "240Z 2.4 SOHC six, 150 @ 6000 rpm (launch figure; no per-year rating)"
+     },
+     {
+      "name": "Consumer Guide (Auto Editors of Consumer Guide) - Nissan Z History, via HowStuffWorks (archived)",
+      "url": "https://auto.howstuffworks.com/nissan-z-history2.htm",
+      "says": "US Z: 2.4-liter six, 150 hp @ 6000; 1973 240Zs rated 129 hp, a real drop plus the change from SAE gross to SAE net"
+     },
+     {
+      "name": "Wikipedia - Nissan Fairlady Z (S30)",
+      "url": "https://en.wikipedia.org/wiki/Nissan_S30",
+      "says": "240Z (1970-1973) L24 2,393 cc: 151 hp @ 5,600 rpm SAE gross"
+     }
+    ],
+    "status": "three_sources_not_nhra",
+    "independent_sources": 3,
+    "note": "Engine confirmed by 3; rating withheld: no source gives a 1972 US net rating; 150/151 are gross launch figures."
+   }
+  ],
+  "1973": [
+   {
+    "gen": "s30",
+    "cid": 146,
+    "liters": 2.4,
+    "hp": null,
+    "hp_basis": "SAE net",
+    "rpo": "L24",
+    "name": "2.4L SOHC I6",
+    "common_name": "L24",
+    "trims": [
+     "240Z"
+    ],
+    "nhra": false,
+    "sources": [
+     {
+      "name": "Nissan USA material (newsroom press kits/releases and nissanusa.com, counted once)",
+      "url": "https://www.nissanusa.com/experience-nissan/news-and-events/nissan-z-car.html",
+      "says": "240Z 2.4 SOHC six, 150 @ 6000 rpm (launch figure; no per-year rating)"
+     },
+     {
+      "name": "Consumer Guide (Auto Editors of Consumer Guide) - Nissan Z History, via HowStuffWorks (archived)",
+      "url": "https://auto.howstuffworks.com/nissan-z-history2.htm",
+      "says": "US Z: 2.4-liter six, 150 hp @ 6000; 1973 240Zs rated 129 hp, a real drop plus the change from SAE gross to SAE net"
+     },
+     {
+      "name": "Wikipedia - Nissan Fairlady Z (S30)",
+      "url": "https://en.wikipedia.org/wiki/Nissan_S30",
+      "says": "240Z (1970-1973) L24 2,393 cc: 151 hp @ 5,600 rpm SAE gross"
+     }
+    ],
+    "status": "three_sources_not_nhra",
+    "independent_sources": 3,
+    "note": "Engine confirmed by 3; rating withheld: only Consumer Guide gives 129 hp SAE net (emissions carbs); Wikipedia gives only 151 gross for 1970-73."
+   }
+  ],
+  "1974": [
+   {
+    "gen": "s30",
+    "cid": 156,
+    "liters": 2.6,
+    "hp": 139,
+    "hp_basis": "SAE net",
+    "rpo": "L26",
+    "name": "2.6L SOHC I6, twin SU carbs",
+    "common_name": "L26",
+    "trims": [
+     "260Z",
+     "260Z 2+2"
+    ],
+    "nhra": false,
+    "sources": [
+     {
+      "name": "Nissan USA material (newsroom press kits/releases and nissanusa.com, counted once)",
+      "url": "https://usa.nissannews.com/en-US/releases/nissanz-50years-excitement",
+      "says": "In 1974, as engine displacement climbed to 2.6 liters the name changed to 260Z (no hp)"
+     },
+     {
+      "name": "Consumer Guide (Auto Editors of Consumer Guide) - Nissan Z History, via HowStuffWorks (archived)",
+      "url": "https://auto.howstuffworks.com/nissan-z-history3.htm",
+      "says": "260Z introduced for 1974, 2565 cc; restored output to 139 horsepower, peak at 5200 rpm; 2+2 added"
+     },
+     {
+      "name": "Wikipedia - Nissan Fairlady Z (S30)",
+      "url": "https://en.wikipedia.org/wiki/Nissan_S30",
+      "says": "260Z (1974) L26 2,565 cc, US 139 hp SAE net"
+     }
+    ],
+    "status": "three_sources_not_nhra",
+    "independent_sources": 3,
+    "note": "Engine by 3; 139 hp by Consumer Guide and Wikipedia (two agree). Bigger bumpers late 1974 ('1974-1/2')."
+   }
+  ],
+  "1975": [
+   {
+    "gen": "s30",
+    "cid": 156,
+    "liters": 2.6,
+    "hp": 139,
+    "hp_basis": "SAE net",
+    "rpo": "L26",
+    "name": "2.6L SOHC I6, twin SU carbs",
+    "common_name": "L26",
+    "trims": [
+     "260Z (early 1975)"
+    ],
+    "nhra": false,
+    "sources": [
+     {
+      "name": "Consumer Guide (Auto Editors of Consumer Guide) - Nissan Z History, via HowStuffWorks (archived)",
+      "url": "https://auto.howstuffworks.com/nissan-z-history3.htm",
+      "says": "the 1975 models were unchanged, and lasted only until being replaced midyear by the new Datsun 280Z"
+     },
+     {
+      "name": "Wikipedia - Nissan Fairlady Z (S30)",
+      "url": "https://en.wikipedia.org/wiki/Nissan_S30",
+      "says": "lists the US 260Z as 1974 only; 280Z for the 1975 model year"
+     }
+    ],
+    "status": "disputed",
+    "independent_sources": 2,
+    "note": "Consumer Guide says early-1975 US cars were still 260Zs; Wikipedia gives the US 260Z as 1974 only. Needs a 1975 Datsun brochure or registry source."
+   },
+   {
+    "gen": "s30",
+    "cid": 168,
+    "liters": 2.8,
+    "hp": 149,
+    "hp_basis": "SAE net",
+    "rpo": "L28E",
+    "name": "2.8L SOHC I6, Bosch L-Jetronic EFI",
+    "common_name": "L28E",
+    "trims": [
+     "280Z",
+     "280Z 2+2"
+    ],
+    "nhra": false,
+    "sources": [
+     {
+      "name": "Nissan USA material (newsroom press kits/releases and nissanusa.com, counted once)",
+      "url": "https://usa.nissannews.com/en-US/releases/nissanz-50years-excitement",
+      "says": "In 1975, engine size increased again to 2.8 liters and the name changed to 280Z (no hp)"
+     },
+     {
+      "name": "Consumer Guide (Auto Editors of Consumer Guide) - Nissan Z History, via HowStuffWorks (archived)",
+      "url": "https://auto.howstuffworks.com/nissan-z-history3.htm",
+      "says": "280Z 2.8 L, Bosch L-Jetronic, 8.3:1, 149 hp @ 5600; 1977: although engine specifications were unchanged, horsepower increased to 170 at 5600 rpm"
+     },
+     {
+      "name": "Wikipedia - Nissan Fairlady Z (S30)",
+      "url": "https://en.wikipedia.org/wiki/Nissan_S30",
+      "says": "280Z (1975-1978) L28E 2,753 cc: 170 hp @ 5,600 SAE gross, 149 hp @ 5,600 SAE net"
+     }
+    ],
+    "status": "three_sources_not_nhra",
+    "independent_sources": 3,
+    "note": "Engine by 3; 149 hp net by Consumer Guide and Wikipedia (two agree). 280Z replaced the 260Z mid-1975."
+   }
+  ],
+  "1976": [
+   {
+    "gen": "s30",
+    "cid": 168,
+    "liters": 2.8,
+    "hp": 149,
+    "hp_basis": "SAE net",
+    "rpo": "L28E",
+    "name": "2.8L SOHC I6, Bosch L-Jetronic EFI",
+    "common_name": "L28E",
+    "trims": [
+     "280Z",
+     "280Z 2+2"
+    ],
+    "nhra": false,
+    "sources": [
+     {
+      "name": "Nissan USA material (newsroom press kits/releases and nissanusa.com, counted once)",
+      "url": "https://usa.nissannews.com/en-US/releases/nissanz-50years-excitement",
+      "says": "In 1975, engine size increased again to 2.8 liters and the name changed to 280Z (no hp)"
+     },
+     {
+      "name": "Consumer Guide (Auto Editors of Consumer Guide) - Nissan Z History, via HowStuffWorks (archived)",
+      "url": "https://auto.howstuffworks.com/nissan-z-history3.htm",
+      "says": "280Z 2.8 L, Bosch L-Jetronic, 8.3:1, 149 hp @ 5600; 1977: although engine specifications were unchanged, horsepower increased to 170 at 5600 rpm"
+     },
+     {
+      "name": "Wikipedia - Nissan Fairlady Z (S30)",
+      "url": "https://en.wikipedia.org/wiki/Nissan_S30",
+      "says": "280Z (1975-1978) L28E 2,753 cc: 170 hp @ 5,600 SAE gross, 149 hp @ 5,600 SAE net"
+     }
+    ],
+    "status": "three_sources_not_nhra",
+    "independent_sources": 3,
+    "note": "Engine by 3; 149 hp net by Consumer Guide and Wikipedia (two agree)."
+   }
+  ],
+  "1977": [
+   {
+    "gen": "s30",
+    "cid": 168,
+    "liters": 2.8,
+    "hp": null,
+    "hp_basis": "SAE net",
+    "rpo": "L28E",
+    "name": "2.8L SOHC I6, Bosch L-Jetronic EFI",
+    "common_name": "L28E",
+    "trims": [
+     "280Z",
+     "280Z 2+2"
+    ],
+    "nhra": false,
+    "sources": [
+     {
+      "name": "Nissan USA material (newsroom press kits/releases and nissanusa.com, counted once)",
+      "url": "https://usa.nissannews.com/en-US/releases/nissanz-50years-excitement",
+      "says": "In 1975, engine size increased again to 2.8 liters and the name changed to 280Z (no hp)"
+     },
+     {
+      "name": "Consumer Guide (Auto Editors of Consumer Guide) - Nissan Z History, via HowStuffWorks (archived)",
+      "url": "https://auto.howstuffworks.com/nissan-z-history3.htm",
+      "says": "280Z 2.8 L, Bosch L-Jetronic, 8.3:1, 149 hp @ 5600; 1977: although engine specifications were unchanged, horsepower increased to 170 at 5600 rpm"
+     },
+     {
+      "name": "Wikipedia - Nissan Fairlady Z (S30)",
+      "url": "https://en.wikipedia.org/wiki/Nissan_S30",
+      "says": "280Z (1975-1978) L28E 2,753 cc: 170 hp @ 5,600 SAE gross, 149 hp @ 5,600 SAE net"
+     }
+    ],
+    "status": "three_sources_not_nhra",
+    "independent_sources": 3,
+    "note": "Engine confirmed by 3; rating withheld: Consumer Guide says 170 hp from 1977 with specs unchanged; Wikipedia calls 170 the gross figure and 149 the net. 5-speed optional from 1977."
+   }
+  ],
+  "1978": [
+   {
+    "gen": "s30",
+    "cid": 168,
+    "liters": 2.8,
+    "hp": null,
+    "hp_basis": "SAE net",
+    "rpo": "L28E",
+    "name": "2.8L SOHC I6, Bosch L-Jetronic EFI",
+    "common_name": "L28E",
+    "trims": [
+     "280Z",
+     "280Z 2+2"
+    ],
+    "nhra": false,
+    "sources": [
+     {
+      "name": "Nissan USA material (newsroom press kits/releases and nissanusa.com, counted once)",
+      "url": "https://usa.nissannews.com/en-US/releases/nissanz-50years-excitement",
+      "says": "In 1975, engine size increased again to 2.8 liters and the name changed to 280Z (no hp)"
+     },
+     {
+      "name": "Consumer Guide (Auto Editors of Consumer Guide) - Nissan Z History, via HowStuffWorks (archived)",
+      "url": "https://auto.howstuffworks.com/nissan-z-history3.htm",
+      "says": "280Z 2.8 L, Bosch L-Jetronic, 8.3:1, 149 hp @ 5600; 1977: although engine specifications were unchanged, horsepower increased to 170 at 5600 rpm"
+     },
+     {
+      "name": "Wikipedia - Nissan Fairlady Z (S30)",
+      "url": "https://en.wikipedia.org/wiki/Nissan_S30",
+      "says": "280Z (1975-1978) L28E 2,753 cc: 170 hp @ 5,600 SAE gross, 149 hp @ 5,600 SAE net"
+     },
+     {
+      "name": "Hagerty valuation data (search excerpt only; page 403)",
+      "url": "https://www.hagerty.com/valuation-tools/past-sales/1978-datsun-280z/HLS30465279/b657ee1a-bc07-4eb4-b5b9-1f3c21b7e972",
+      "says": "1978 280Z: 168 ci six, 149 hp (unverified excerpt, not counted)"
+     }
+    ],
+    "status": "three_sources_not_nhra",
+    "independent_sources": 3,
+    "note": "Engine confirmed by 3; rating withheld: Consumer Guide says 170 hp from 1977 with specs unchanged; Wikipedia calls 170 the gross figure and 149 the net."
+   }
+  ],
+  "1979": [
+   {
+    "gen": "s130",
+    "cid": 168,
+    "liters": 2.8,
+    "hp": 135,
+    "hp_basis": "SAE net",
+    "rpo": "L28E",
+    "name": "2.8L SOHC I6 EFI",
+    "common_name": "L28E",
+    "trims": [
+     "280ZX",
+     "280ZX 2+2",
+     "GL"
+    ],
+    "nhra": false,
+    "sources": [
+     {
+      "name": "Nissan USA material (newsroom press kits/releases and nissanusa.com, counted once)",
+      "url": "https://www.nissanusa.com/experience-nissan/news-and-events/nissan-z-car.html",
+      "says": "Datsun 280ZX (1979 MY launch): 135-hp, 144 lb-ft, 2.8-liter inline six"
+     },
+     {
+      "name": "Consumer Guide (Auto Editors of Consumer Guide) - Nissan Z History, via HowStuffWorks (archived)",
+      "url": "https://auto.howstuffworks.com/nissan-z-history4.htm",
+      "says": "1979: emissions controls reduced peak horsepower to 135 (California cars three less); 1980: horsepower sagged to 132; 1981: new catalyst and higher compression raised the standard ZX to 145 hp"
+     },
+     {
+      "name": "Wikipedia - Nissan Fairlady Z (S130)",
+      "url": "https://en.wikipedia.org/wiki/Nissan_Fairlady_Z_(S130)",
+      "says": "L28E 135 hp 1979-1980; 145 hp 1981-1983 after P79 head / 8.8:1 compression"
+     }
+    ],
+    "status": "three_sources_not_nhra",
+    "independent_sources": 3,
+    "note": "California cars rated 3 hp less (Consumer Guide)."
+   }
+  ],
+  "1980": [
+   {
+    "gen": "s130",
+    "cid": 168,
+    "liters": 2.8,
+    "hp": null,
+    "hp_basis": "SAE net",
+    "rpo": "L28E",
+    "name": "2.8L SOHC I6 EFI",
+    "common_name": "L28E",
+    "trims": [
+     "280ZX",
+     "280ZX 2+2",
+     "10th Anniversary"
+    ],
+    "nhra": false,
+    "sources": [
+     {
+      "name": "Nissan USA material (newsroom press kits/releases and nissanusa.com, counted once)",
+      "url": "https://www.nissanusa.com/experience-nissan/news-and-events/nissan-z-car.html",
+      "says": "Datsun 280ZX (1979 MY launch): 135-hp, 144 lb-ft, 2.8-liter inline six"
+     },
+     {
+      "name": "Consumer Guide (Auto Editors of Consumer Guide) - Nissan Z History, via HowStuffWorks (archived)",
+      "url": "https://auto.howstuffworks.com/nissan-z-history4.htm",
+      "says": "1979: emissions controls reduced peak horsepower to 135 (California cars three less); 1980: horsepower sagged to 132; 1981: new catalyst and higher compression raised the standard ZX to 145 hp"
+     },
+     {
+      "name": "Wikipedia - Nissan Fairlady Z (S130)",
+      "url": "https://en.wikipedia.org/wiki/Nissan_Fairlady_Z_(S130)",
+      "says": "L28E 135 hp 1979-1980; 145 hp 1981-1983 after P79 head / 8.8:1 compression"
+     }
+    ],
+    "status": "three_sources_not_nhra",
+    "independent_sources": 3,
+    "note": "Engine confirmed by 3; rating withheld: Consumer Guide 132 hp, Wikipedia 135 hp (1979-1980); Nissan gives 135 only as the 1979 launch figure."
+   }
+  ],
+  "1981": [
+   {
+    "gen": "s130",
+    "cid": 168,
+    "liters": 2.8,
+    "hp": 145,
+    "hp_basis": "SAE net",
+    "rpo": "L28E",
+    "name": "2.8L SOHC I6 EFI (8.8:1)",
+    "common_name": "L28E",
+    "trims": [
+     "280ZX",
+     "280ZX 2+2"
+    ],
+    "nhra": false,
+    "sources": [
+     {
+      "name": "Consumer Guide (Auto Editors of Consumer Guide) - Nissan Z History, via HowStuffWorks (archived)",
+      "url": "https://auto.howstuffworks.com/nissan-z-history4.htm",
+      "says": "1979: emissions controls reduced peak horsepower to 135 (California cars three less); 1980: horsepower sagged to 132; 1981: new catalyst and higher compression raised the standard ZX to 145 hp"
+     },
+     {
+      "name": "Consumer Guide blog - 7 Most-Powerful Japanese Cars of 1981 (Consumer Guide, same source)",
+      "url": "https://blog.consumerguide.com/7-most-powerful-japanese-cars-of-1981/",
+      "says": "1981 280ZX 2.8 six 145 hp; Turbo 180 hp, late 1981 model year"
+     },
+     {
+      "name": "Wikipedia - Nissan Fairlady Z (S130)",
+      "url": "https://en.wikipedia.org/wiki/Nissan_Fairlady_Z_(S130)",
+      "says": "L28E 135 hp 1979-1980; 145 hp 1981-1983 after P79 head / 8.8:1 compression"
+     }
+    ],
+    "status": "two_sources_agree",
+    "independent_sources": 2,
+    "note": "Consumer Guide and Wikipedia agree on 145 hp; no Nissan or EPA figure (EPA data starts 1984)."
+   },
+   {
+    "gen": "s130",
+    "cid": 168,
+    "liters": 2.8,
+    "hp": 180,
+    "hp_basis": "SAE net",
+    "rpo": "L28ET",
+    "name": "2.8L SOHC turbo I6 EFI",
+    "common_name": "280ZX Turbo",
+    "trims": [
+     "280ZX Turbo"
+    ],
+    "nhra": false,
+    "sources": [
+     {
+      "name": "Consumer Guide (Auto Editors of Consumer Guide) - Nissan Z History, via HowStuffWorks (archived)",
+      "url": "https://auto.howstuffworks.com/nissan-z-history4.htm",
+      "says": "1981-1/2 280ZX Turbo: 2753 cc turbo six, 180 hp @ 5600, 203 lb-ft @ 2800; automatic only at first, 5-speed for 1982"
+     },
+     {
+      "name": "Consumer Guide blog - 7 Most-Powerful Japanese Cars of 1981 (Consumer Guide, same source)",
+      "url": "https://blog.consumerguide.com/7-most-powerful-japanese-cars-of-1981/",
+      "says": "280-ZX Turbo came online late in the 1981 model year ... rated at 180 horsepower"
+     },
+     {
+      "name": "Wikipedia - Nissan Fairlady Z (S130)",
+      "url": "https://en.wikipedia.org/wiki/Nissan_Fairlady_Z_(S130)",
+      "says": "L28ET turbo debuted 1981 (US): 180 bhp @ 5,600, 203 lb-ft @ 2,800"
+     }
+    ],
+    "status": "two_sources_agree",
+    "independent_sources": 2,
+    "note": "Introduced late in the 1981 model year, automatic only."
+   }
+  ],
+  "1982": [
+   {
+    "gen": "s130",
+    "cid": 168,
+    "liters": 2.8,
+    "hp": 145,
+    "hp_basis": "SAE net",
+    "rpo": "L28E",
+    "name": "2.8L SOHC I6 EFI (8.8:1)",
+    "common_name": "L28E",
+    "trims": [
+     "280ZX",
+     "280ZX 2+2"
+    ],
+    "nhra": false,
+    "sources": [
+     {
+      "name": "Consumer Guide (Auto Editors of Consumer Guide) - Nissan Z History, via HowStuffWorks (archived)",
+      "url": "https://auto.howstuffworks.com/nissan-z-history4.htm",
+      "says": "1979: emissions controls reduced peak horsepower to 135 (California cars three less); 1980: horsepower sagged to 132; 1981: new catalyst and higher compression raised the standard ZX to 145 hp"
+     },
+     {
+      "name": "Wikipedia - Nissan Fairlady Z (S130)",
+      "url": "https://en.wikipedia.org/wiki/Nissan_Fairlady_Z_(S130)",
+      "says": "L28E 135 hp 1979-1980; 145 hp 1981-1983 after P79 head / 8.8:1 compression"
+     }
+    ],
+    "status": "two_sources_agree",
+    "independent_sources": 2,
+    "note": "Consumer Guide and Wikipedia agree on 145 hp; no Nissan or EPA figure (EPA data starts 1984)."
+   },
+   {
+    "gen": "s130",
+    "cid": 168,
+    "liters": 2.8,
+    "hp": 180,
+    "hp_basis": "SAE net",
+    "rpo": "L28ET",
+    "name": "2.8L SOHC turbo I6 EFI",
+    "common_name": "280ZX Turbo",
+    "trims": [
+     "280ZX Turbo"
+    ],
+    "nhra": false,
+    "sources": [
+     {
+      "name": "Consumer Guide (Auto Editors of Consumer Guide) - Nissan Z History, via HowStuffWorks (archived)",
+      "url": "https://auto.howstuffworks.com/nissan-z-history4.htm",
+      "says": "1981-1/2 280ZX Turbo: 2753 cc turbo six, 180 hp @ 5600, 203 lb-ft @ 2800; automatic only at first, 5-speed for 1982"
+     },
+     {
+      "name": "Wikipedia - Nissan Fairlady Z (S130)",
+      "url": "https://en.wikipedia.org/wiki/Nissan_Fairlady_Z_(S130)",
+      "says": "L28ET turbo debuted 1981 (US): 180 bhp @ 5,600, 203 lb-ft @ 2,800"
+     }
+    ],
+    "status": "two_sources_agree",
+    "independent_sources": 2,
+    "note": "5-speed manual added for 1982."
+   }
+  ],
+  "1983": [
+   {
+    "gen": "s130",
+    "cid": 168,
+    "liters": 2.8,
+    "hp": 145,
+    "hp_basis": "SAE net",
+    "rpo": "L28E",
+    "name": "2.8L SOHC I6 EFI (8.8:1)",
+    "common_name": "L28E",
+    "trims": [
+     "280ZX",
+     "280ZX 2+2"
+    ],
+    "nhra": false,
+    "sources": [
+     {
+      "name": "Consumer Guide (Auto Editors of Consumer Guide) - Nissan Z History, via HowStuffWorks (archived)",
+      "url": "https://auto.howstuffworks.com/nissan-z-history4.htm",
+      "says": "1979: emissions controls reduced peak horsepower to 135 (California cars three less); 1980: horsepower sagged to 132; 1981: new catalyst and higher compression raised the standard ZX to 145 hp"
+     },
+     {
+      "name": "Wikipedia - Nissan Fairlady Z (S130)",
+      "url": "https://en.wikipedia.org/wiki/Nissan_Fairlady_Z_(S130)",
+      "says": "L28E 135 hp 1979-1980; 145 hp 1981-1983 after P79 head / 8.8:1 compression"
+     }
+    ],
+    "status": "two_sources_agree",
+    "independent_sources": 2,
+    "note": "Consumer Guide and Wikipedia agree on 145 hp; no Nissan or EPA figure (EPA data starts 1984)."
+   },
+   {
+    "gen": "s130",
+    "cid": 168,
+    "liters": 2.8,
+    "hp": 180,
+    "hp_basis": "SAE net",
+    "rpo": "L28ET",
+    "name": "2.8L SOHC turbo I6 EFI",
+    "common_name": "280ZX Turbo",
+    "trims": [
+     "280ZX Turbo"
+    ],
+    "nhra": false,
+    "sources": [
+     {
+      "name": "Consumer Guide (Auto Editors of Consumer Guide) - Nissan Z History, via HowStuffWorks (archived)",
+      "url": "https://auto.howstuffworks.com/nissan-z-history4.htm",
+      "says": "1981-1/2 280ZX Turbo: 2753 cc turbo six, 180 hp @ 5600, 203 lb-ft @ 2800; automatic only at first, 5-speed for 1982"
+     },
+     {
+      "name": "Wikipedia - Nissan Fairlady Z (S130)",
+      "url": "https://en.wikipedia.org/wiki/Nissan_Fairlady_Z_(S130)",
+      "says": "L28ET turbo debuted 1981 (US): 180 bhp @ 5,600, 203 lb-ft @ 2,800"
+     }
+    ],
+    "status": "two_sources_agree",
+    "independent_sources": 2,
+    "note": ""
+   }
+  ],
+  "1984": [
+   {
+    "gen": "z31",
+    "cid": 181,
+    "liters": 3.0,
+    "hp": 160,
+    "hp_basis": "SAE net",
+    "rpo": "VG30E",
+    "name": "3.0L SOHC V6 EFI",
+    "common_name": "VG30E",
+    "trims": [
+     "300ZX",
+     "300ZX 2+2",
+     "GS"
+    ],
+    "nhra": false,
+    "sources": [
+     {
+      "name": "Consumer Guide (Auto Editors of Consumer Guide) - Nissan Z History, via HowStuffWorks (archived)",
+      "url": "https://auto.howstuffworks.com/nissan-z-history5.htm",
+      "says": "1984 300ZX: 3.0 V-6, 160 hp; Turbo (Garrett T-series) 200 hp @ 5200, 227 lb-ft"
+     },
+     {
+      "name": "Wikipedia - Nissan 300ZX",
+      "url": "https://en.wikipedia.org/wiki/Nissan_300ZX",
+      "says": "VG30E 1984-1987: 160 hp SAE net @ 5200"
+     },
+     {
+      "name": "EPA fueleconomy.gov vehicle data",
+      "url": "https://www.fueleconomy.gov/feg/download.shtml",
+      "says": "1984 300ZX / 300ZX 2x2: 3.0 L 6-cyl, naturally aspirated"
+     }
+    ],
+    "status": "three_sources_not_nhra",
+    "independent_sources": 3,
+    "note": "160 hp: Consumer Guide (1984 figure) and Wikipedia (1984-87) agree."
+   },
+   {
+    "gen": "z31",
+    "cid": 181,
+    "liters": 3.0,
+    "hp": 200,
+    "hp_basis": "SAE net",
+    "rpo": "VG30ET",
+    "name": "3.0L SOHC turbo V6 EFI",
+    "common_name": "300ZX Turbo",
+    "trims": [
+     "300ZX Turbo",
+     "50th Anniversary"
+    ],
+    "nhra": false,
+    "sources": [
+     {
+      "name": "Consumer Guide (Auto Editors of Consumer Guide) - Nissan Z History, via HowStuffWorks (archived)",
+      "url": "https://auto.howstuffworks.com/nissan-z-history5.htm",
+      "says": "1984 300ZX: 3.0 V-6, 160 hp; Turbo (Garrett T-series) 200 hp @ 5200, 227 lb-ft"
+     },
+     {
+      "name": "Wikipedia - Nissan 300ZX",
+      "url": "https://en.wikipedia.org/wiki/Nissan_300ZX",
+      "says": "VG30ET 1984-1987: 200 hp SAE net @ 5200"
+     },
+     {
+      "name": "EPA fueleconomy.gov vehicle data",
+      "url": "https://www.fueleconomy.gov/feg/download.shtml",
+      "says": "1984 300ZX: 3.0 L 6-cyl turbo row"
+     },
+     {
+      "name": "Nissan USA material (newsroom press kits/releases and nissanusa.com, counted once)",
+      "url": "https://usa.nissannews.com/en-US/releases/z-special-edition-anniversary-models-a-look-back",
+      "says": "1984: 5,148 300ZX Turbo 50th Anniversary models made for the U.S. (no hp)"
+     }
+    ],
+    "status": "three_sources_not_nhra",
+    "independent_sources": 4,
+    "note": "200 hp: Consumer Guide (1984 figure) and Wikipedia (1984-87) agree."
+   }
+  ],
+  "1985": [
+   {
+    "gen": "z31",
+    "cid": 181,
+    "liters": 3.0,
+    "hp": 160,
+    "hp_basis": "SAE net",
+    "rpo": "VG30E",
+    "name": "3.0L SOHC V6 EFI",
+    "common_name": "VG30E",
+    "trims": [
+     "300ZX",
+     "300ZX 2+2",
+     "GS"
+    ],
+    "nhra": false,
+    "sources": [
+     {
+      "name": "Consumer Guide (Auto Editors of Consumer Guide) - Nissan Z History, via HowStuffWorks (archived)",
+      "url": "https://auto.howstuffworks.com/nissan-z-history5.htm",
+      "says": "1984 300ZX: 3.0 V-6, 160 hp; Turbo (Garrett T-series) 200 hp @ 5200, 227 lb-ft"
+     },
+     {
+      "name": "Wikipedia - Nissan 300ZX",
+      "url": "https://en.wikipedia.org/wiki/Nissan_300ZX",
+      "says": "VG30E 1984-1987: 160 hp SAE net @ 5200"
+     },
+     {
+      "name": "EPA fueleconomy.gov vehicle data",
+      "url": "https://www.fueleconomy.gov/feg/download.shtml",
+      "says": "1985 300ZX / 300ZX 2x2: 3.0 L 6-cyl, naturally aspirated"
+     }
+    ],
+    "status": "three_sources_not_nhra",
+    "independent_sources": 3,
+    "note": "160 hp: Consumer Guide (1984 figure) and Wikipedia (1984-87) agree."
+   },
+   {
+    "gen": "z31",
+    "cid": 181,
+    "liters": 3.0,
+    "hp": 200,
+    "hp_basis": "SAE net",
+    "rpo": "VG30ET",
+    "name": "3.0L SOHC turbo V6 EFI",
+    "common_name": "300ZX Turbo",
+    "trims": [
+     "300ZX Turbo"
+    ],
+    "nhra": false,
+    "sources": [
+     {
+      "name": "Consumer Guide (Auto Editors of Consumer Guide) - Nissan Z History, via HowStuffWorks (archived)",
+      "url": "https://auto.howstuffworks.com/nissan-z-history5.htm",
+      "says": "1984 300ZX: 3.0 V-6, 160 hp; Turbo (Garrett T-series) 200 hp @ 5200, 227 lb-ft"
+     },
+     {
+      "name": "Wikipedia - Nissan 300ZX",
+      "url": "https://en.wikipedia.org/wiki/Nissan_300ZX",
+      "says": "VG30ET 1984-1987: 200 hp SAE net @ 5200"
+     },
+     {
+      "name": "EPA fueleconomy.gov vehicle data",
+      "url": "https://www.fueleconomy.gov/feg/download.shtml",
+      "says": "1985 300ZX: 3.0 L 6-cyl turbo row"
+     }
+    ],
+    "status": "three_sources_not_nhra",
+    "independent_sources": 3,
+    "note": "200 hp: Consumer Guide (1984 figure) and Wikipedia (1984-87) agree."
+   }
+  ],
+  "1986": [
+   {
+    "gen": "z31",
+    "cid": 181,
+    "liters": 3.0,
+    "hp": 160,
+    "hp_basis": "SAE net",
+    "rpo": "VG30E",
+    "name": "3.0L SOHC V6 EFI",
+    "common_name": "VG30E",
+    "trims": [
+     "300ZX",
+     "300ZX 2+2",
+     "GS"
+    ],
+    "nhra": false,
+    "sources": [
+     {
+      "name": "Consumer Guide (Auto Editors of Consumer Guide) - Nissan Z History, via HowStuffWorks (archived)",
+      "url": "https://auto.howstuffworks.com/nissan-z-history5.htm",
+      "says": "1984 300ZX: 3.0 V-6, 160 hp; Turbo (Garrett T-series) 200 hp @ 5200, 227 lb-ft"
+     },
+     {
+      "name": "Wikipedia - Nissan 300ZX",
+      "url": "https://en.wikipedia.org/wiki/Nissan_300ZX",
+      "says": "VG30E 1984-1987: 160 hp SAE net @ 5200"
+     },
+     {
+      "name": "EPA fueleconomy.gov vehicle data",
+      "url": "https://www.fueleconomy.gov/feg/download.shtml",
+      "says": "1986 300ZX / 300ZX 2x2: 3.0 L 6-cyl, naturally aspirated"
+     }
+    ],
+    "status": "three_sources_not_nhra",
+    "independent_sources": 3,
+    "note": "160 hp: Consumer Guide (1984 figure) and Wikipedia (1984-87) agree."
+   },
+   {
+    "gen": "z31",
+    "cid": 181,
+    "liters": 3.0,
+    "hp": 200,
+    "hp_basis": "SAE net",
+    "rpo": "VG30ET",
+    "name": "3.0L SOHC turbo V6 EFI",
+    "common_name": "300ZX Turbo",
+    "trims": [
+     "300ZX Turbo"
+    ],
+    "nhra": false,
+    "sources": [
+     {
+      "name": "Consumer Guide (Auto Editors of Consumer Guide) - Nissan Z History, via HowStuffWorks (archived)",
+      "url": "https://auto.howstuffworks.com/nissan-z-history5.htm",
+      "says": "1984 300ZX: 3.0 V-6, 160 hp; Turbo (Garrett T-series) 200 hp @ 5200, 227 lb-ft"
+     },
+     {
+      "name": "Wikipedia - Nissan 300ZX",
+      "url": "https://en.wikipedia.org/wiki/Nissan_300ZX",
+      "says": "VG30ET 1984-1987: 200 hp SAE net @ 5200"
+     },
+     {
+      "name": "EPA fueleconomy.gov vehicle data",
+      "url": "https://www.fueleconomy.gov/feg/download.shtml",
+      "says": "1986 300ZX: 3.0 L 6-cyl turbo row"
+     }
+    ],
+    "status": "three_sources_not_nhra",
+    "independent_sources": 3,
+    "note": "200 hp: Consumer Guide (1984 figure) and Wikipedia (1984-87) agree."
+   }
+  ],
+  "1987": [
+   {
+    "gen": "z31",
+    "cid": 181,
+    "liters": 3.0,
+    "hp": 160,
+    "hp_basis": "SAE net",
+    "rpo": "VG30E",
+    "name": "3.0L SOHC V6 EFI",
+    "common_name": "VG30E",
+    "trims": [
+     "300ZX",
+     "300ZX 2+2",
+     "GS"
+    ],
+    "nhra": false,
+    "sources": [
+     {
+      "name": "Consumer Guide (Auto Editors of Consumer Guide) - Nissan Z History, via HowStuffWorks (archived)",
+      "url": "https://auto.howstuffworks.com/nissan-z-history5.htm",
+      "says": "1984 300ZX: 3.0 V-6, 160 hp; Turbo (Garrett T-series) 200 hp @ 5200, 227 lb-ft"
+     },
+     {
+      "name": "Wikipedia - Nissan 300ZX",
+      "url": "https://en.wikipedia.org/wiki/Nissan_300ZX",
+      "says": "VG30E 1984-1987: 160 hp SAE net @ 5200"
+     },
+     {
+      "name": "EPA fueleconomy.gov vehicle data",
+      "url": "https://www.fueleconomy.gov/feg/download.shtml",
+      "says": "1987 300ZX / 300ZX 2x2: 3.0 L 6-cyl, naturally aspirated"
+     }
+    ],
+    "status": "three_sources_not_nhra",
+    "independent_sources": 3,
+    "note": "160 hp: Consumer Guide (1984 figure) and Wikipedia (1984-87) agree."
+   },
+   {
+    "gen": "z31",
+    "cid": 181,
+    "liters": 3.0,
+    "hp": 200,
+    "hp_basis": "SAE net",
+    "rpo": "VG30ET",
+    "name": "3.0L SOHC turbo V6 EFI",
+    "common_name": "300ZX Turbo",
+    "trims": [
+     "300ZX Turbo"
+    ],
+    "nhra": false,
+    "sources": [
+     {
+      "name": "Consumer Guide (Auto Editors of Consumer Guide) - Nissan Z History, via HowStuffWorks (archived)",
+      "url": "https://auto.howstuffworks.com/nissan-z-history5.htm",
+      "says": "1984 300ZX: 3.0 V-6, 160 hp; Turbo (Garrett T-series) 200 hp @ 5200, 227 lb-ft"
+     },
+     {
+      "name": "Wikipedia - Nissan 300ZX",
+      "url": "https://en.wikipedia.org/wiki/Nissan_300ZX",
+      "says": "VG30ET 1984-1987: 200 hp SAE net @ 5200"
+     },
+     {
+      "name": "EPA fueleconomy.gov vehicle data",
+      "url": "https://www.fueleconomy.gov/feg/download.shtml",
+      "says": "1987 300ZX: 3.0 L 6-cyl turbo row"
+     }
+    ],
+    "status": "three_sources_not_nhra",
+    "independent_sources": 3,
+    "note": "200 hp: Consumer Guide (1984 figure) and Wikipedia (1984-87) agree."
+   }
+  ],
+  "1988": [
+   {
+    "gen": "z31",
+    "cid": 181,
+    "liters": 3.0,
+    "hp": null,
+    "hp_basis": "SAE net",
+    "rpo": "VG30E",
+    "name": "3.0L SOHC V6 EFI",
+    "common_name": "VG30E",
+    "trims": [
+     "300ZX",
+     "300ZX 2+2",
+     "GS"
+    ],
+    "nhra": false,
+    "sources": [
+     {
+      "name": "Consumer Guide (Auto Editors of Consumer Guide) - Nissan Z History, via HowStuffWorks (archived)",
+      "url": "https://auto.howstuffworks.com/nissan-z-history5.htm",
+      "says": "'freshening' for 1987, with more horsepower for both nonturbo and turbo models in 1988 (no figures)"
+     },
+     {
+      "name": "Wikipedia - Nissan 300ZX",
+      "url": "https://en.wikipedia.org/wiki/Nissan_300ZX",
+      "says": "VG30E 1988-1989: 165 hp SAE net @ 5200"
+     },
+     {
+      "name": "EPA fueleconomy.gov vehicle data",
+      "url": "https://www.fueleconomy.gov/feg/download.shtml",
+      "says": "1988 300ZX / 300ZX 2x2: 3.0 L 6-cyl, naturally aspirated"
+     }
+    ],
+    "status": "three_sources_not_nhra",
+    "independent_sources": 3,
+    "note": "Engine by 3; rating withheld: only Wikipedia gives 165 hp; Consumer Guide confirms a 1988 increase without a figure."
+   },
+   {
+    "gen": "z31",
+    "cid": 181,
+    "liters": 3.0,
+    "hp": null,
+    "hp_basis": "SAE net",
+    "rpo": "VG30ET",
+    "name": "3.0L SOHC turbo V6 EFI",
+    "common_name": "300ZX Turbo",
+    "trims": [
+     "300ZX Turbo"
+    ],
+    "nhra": false,
+    "sources": [
+     {
+      "name": "Consumer Guide (Auto Editors of Consumer Guide) - Nissan Z History, via HowStuffWorks (archived)",
+      "url": "https://auto.howstuffworks.com/nissan-z-history5.htm",
+      "says": "'freshening' for 1987, with more horsepower for both nonturbo and turbo models in 1988 (no figures)"
+     },
+     {
+      "name": "Wikipedia - Nissan 300ZX",
+      "url": "https://en.wikipedia.org/wiki/Nissan_300ZX",
+      "says": "VG30ET 1988-1989: 205 hp SAE net @ 5200"
+     },
+     {
+      "name": "EPA fueleconomy.gov vehicle data",
+      "url": "https://www.fueleconomy.gov/feg/download.shtml",
+      "says": "1988 300ZX: 3.0 L 6-cyl turbo row"
+     }
+    ],
+    "status": "three_sources_not_nhra",
+    "independent_sources": 3,
+    "note": "Engine by 3; rating withheld: only Wikipedia gives 205 hp; Consumer Guide confirms a 1988 increase without a figure."
+   }
+  ],
+  "1989": [
+   {
+    "gen": "z31",
+    "cid": 181,
+    "liters": 3.0,
+    "hp": null,
+    "hp_basis": "SAE net",
+    "rpo": "VG30E",
+    "name": "3.0L SOHC V6 EFI",
+    "common_name": "VG30E",
+    "trims": [
+     "300ZX",
+     "300ZX 2+2",
+     "GS"
+    ],
+    "nhra": false,
+    "sources": [
+     {
+      "name": "Consumer Guide (Auto Editors of Consumer Guide) - Nissan Z History, via HowStuffWorks (archived)",
+      "url": "https://auto.howstuffworks.com/nissan-z-history5.htm",
+      "says": "'freshening' for 1987, with more horsepower for both nonturbo and turbo models in 1988 (no figures)"
+     },
+     {
+      "name": "Wikipedia - Nissan 300ZX",
+      "url": "https://en.wikipedia.org/wiki/Nissan_300ZX",
+      "says": "VG30E 1988-1989: 165 hp SAE net @ 5200"
+     },
+     {
+      "name": "EPA fueleconomy.gov vehicle data",
+      "url": "https://www.fueleconomy.gov/feg/download.shtml",
+      "says": "1989 300ZX / 300ZX 2x2: 3.0 L 6-cyl, naturally aspirated"
+     }
+    ],
+    "status": "three_sources_not_nhra",
+    "independent_sources": 3,
+    "note": "Engine by 3; rating withheld: only Wikipedia gives 165 hp; Consumer Guide confirms a 1988 increase without a figure."
+   },
+   {
+    "gen": "z31",
+    "cid": 181,
+    "liters": 3.0,
+    "hp": null,
+    "hp_basis": "SAE net",
+    "rpo": "VG30ET",
+    "name": "3.0L SOHC turbo V6 EFI",
+    "common_name": "300ZX Turbo",
+    "trims": [
+     "300ZX Turbo"
+    ],
+    "nhra": false,
+    "sources": [
+     {
+      "name": "Consumer Guide (Auto Editors of Consumer Guide) - Nissan Z History, via HowStuffWorks (archived)",
+      "url": "https://auto.howstuffworks.com/nissan-z-history5.htm",
+      "says": "'freshening' for 1987, with more horsepower for both nonturbo and turbo models in 1988 (no figures)"
+     },
+     {
+      "name": "Wikipedia - Nissan 300ZX",
+      "url": "https://en.wikipedia.org/wiki/Nissan_300ZX",
+      "says": "VG30ET 1988-1989: 205 hp SAE net @ 5200"
+     },
+     {
+      "name": "EPA fueleconomy.gov vehicle data",
+      "url": "https://www.fueleconomy.gov/feg/download.shtml",
+      "says": "1989 300ZX: 3.0 L 6-cyl turbo row"
+     }
+    ],
+    "status": "three_sources_not_nhra",
+    "independent_sources": 3,
+    "note": "Engine by 3; rating withheld: only Wikipedia gives 205 hp; Consumer Guide confirms a 1988 increase without a figure."
+   }
+  ],
+  "1990": [
+   {
+    "gen": "z32",
+    "cid": 181,
+    "liters": 3.0,
+    "hp": 222,
+    "hp_basis": "SAE net",
+    "rpo": "VG30DE",
+    "name": "3.0L DOHC 24-valve V6",
+    "common_name": "VG30DE",
+    "trims": [
+     "300ZX",
+     "2+2"
+    ],
+    "nhra": false,
+    "sources": [
+     {
+      "name": "Nissan USA material (newsroom press kits/releases and nissanusa.com, counted once)",
+      "url": "https://usa.nissannews.com/en-US/releases/release-49ec4ba13840405094f0c893ce9e9239-nissan-celebrates-four-decades-of-sports-car-leadership-with-new-limited-edition-370z-40th-anniversary-model",
+      "says": "1990 fourth-generation 300ZX offered 222 horsepower; 300ZX Turbo followed with 300 horsepower"
+     },
+     {
+      "name": "Consumer Guide (Auto Editors of Consumer Guide) - Nissan Z History, via HowStuffWorks (archived)",
+      "url": "https://auto.howstuffworks.com/nissan-z-history6.htm",
+      "says": "2960 cc DOHC V-6 made 222 horsepower; 1990 Turbo rated 300 hp @ 6400; with automatic, power limited to 280 hp"
+     },
+     {
+      "name": "Wikipedia - Nissan 300ZX",
+      "url": "https://en.wikipedia.org/wiki/Nissan_300ZX",
+      "says": "VG30DE 222 bhp @ 6,400; VG30DETT 300 bhp @ 6,400 (manual), 280 bhp with automatic"
+     },
+     {
+      "name": "EPA fueleconomy.gov vehicle data",
+      "url": "https://www.fueleconomy.gov/feg/download.shtml",
+      "says": "1990 300ZX / 2x2: 3.0 L 6-cyl NA"
+     }
+    ],
+    "status": "three_sources_not_nhra",
+    "independent_sources": 4,
+    "note": ""
+   },
+   {
+    "gen": "z32",
+    "cid": 181,
+    "liters": 3.0,
+    "hp": 300,
+    "hp_basis": "SAE net",
+    "rpo": "VG30DETT",
+    "name": "3.0L DOHC twin-turbo V6",
+    "common_name": "300ZX Twin Turbo",
+    "trims": [
+     "300ZX Turbo"
+    ],
+    "nhra": false,
+    "sources": [
+     {
+      "name": "Nissan USA material (newsroom press kits/releases and nissanusa.com, counted once)",
+      "url": "https://usa.nissannews.com/en-US/releases/release-49ec4ba13840405094f0c893ce9e9239-nissan-celebrates-four-decades-of-sports-car-leadership-with-new-limited-edition-370z-40th-anniversary-model",
+      "says": "1990 fourth-generation 300ZX offered 222 horsepower; 300ZX Turbo followed with 300 horsepower"
+     },
+     {
+      "name": "Consumer Guide (Auto Editors of Consumer Guide) - Nissan Z History, via HowStuffWorks (archived)",
+      "url": "https://auto.howstuffworks.com/nissan-z-history6.htm",
+      "says": "2960 cc DOHC V-6 made 222 horsepower; 1990 Turbo rated 300 hp @ 6400; with automatic, power limited to 280 hp"
+     },
+     {
+      "name": "Wikipedia - Nissan 300ZX",
+      "url": "https://en.wikipedia.org/wiki/Nissan_300ZX",
+      "says": "VG30DE 222 bhp @ 6,400; VG30DETT 300 bhp @ 6,400 (manual), 280 bhp with automatic"
+     },
+     {
+      "name": "EPA fueleconomy.gov vehicle data",
+      "url": "https://www.fueleconomy.gov/feg/download.shtml",
+      "says": "1990 300ZX: 3.0 L 6-cyl turbo"
+     }
+    ],
+    "status": "three_sources_not_nhra",
+    "independent_sources": 4,
+    "note": "300 hp with the 5-speed manual; 280 hp with the 4-speed automatic (Consumer Guide and Wikipedia agree).",
+    "hp_auto": 280
+   }
+  ],
+  "1991": [
+   {
+    "gen": "z32",
+    "cid": 181,
+    "liters": 3.0,
+    "hp": 222,
+    "hp_basis": "SAE net",
+    "rpo": "VG30DE",
+    "name": "3.0L DOHC 24-valve V6",
+    "common_name": "VG30DE",
+    "trims": [
+     "300ZX",
+     "2+2"
+    ],
+    "nhra": false,
+    "sources": [
+     {
+      "name": "Nissan USA material (newsroom press kits/releases and nissanusa.com, counted once)",
+      "url": "https://usa.nissannews.com/en-US/releases/release-49ec4ba13840405094f0c893ce9e9239-nissan-celebrates-four-decades-of-sports-car-leadership-with-new-limited-edition-370z-40th-anniversary-model",
+      "says": "1990 fourth-generation 300ZX offered 222 horsepower; 300ZX Turbo followed with 300 horsepower"
+     },
+     {
+      "name": "Consumer Guide (Auto Editors of Consumer Guide) - Nissan Z History, via HowStuffWorks (archived)",
+      "url": "https://auto.howstuffworks.com/nissan-z-history6.htm",
+      "says": "2960 cc DOHC V-6 made 222 horsepower; 1990 Turbo rated 300 hp @ 6400; with automatic, power limited to 280 hp"
+     },
+     {
+      "name": "Wikipedia - Nissan 300ZX",
+      "url": "https://en.wikipedia.org/wiki/Nissan_300ZX",
+      "says": "VG30DE 222 bhp @ 6,400; VG30DETT 300 bhp @ 6,400 (manual), 280 bhp with automatic"
+     },
+     {
+      "name": "EPA fueleconomy.gov vehicle data",
+      "url": "https://www.fueleconomy.gov/feg/download.shtml",
+      "says": "1991 300ZX / 2x2: 3.0 L 6-cyl NA"
+     }
+    ],
+    "status": "three_sources_not_nhra",
+    "independent_sources": 4,
+    "note": ""
+   },
+   {
+    "gen": "z32",
+    "cid": 181,
+    "liters": 3.0,
+    "hp": 300,
+    "hp_basis": "SAE net",
+    "rpo": "VG30DETT",
+    "name": "3.0L DOHC twin-turbo V6",
+    "common_name": "300ZX Twin Turbo",
+    "trims": [
+     "300ZX Turbo"
+    ],
+    "nhra": false,
+    "sources": [
+     {
+      "name": "Nissan USA material (newsroom press kits/releases and nissanusa.com, counted once)",
+      "url": "https://usa.nissannews.com/en-US/releases/release-49ec4ba13840405094f0c893ce9e9239-nissan-celebrates-four-decades-of-sports-car-leadership-with-new-limited-edition-370z-40th-anniversary-model",
+      "says": "1990 fourth-generation 300ZX offered 222 horsepower; 300ZX Turbo followed with 300 horsepower"
+     },
+     {
+      "name": "Consumer Guide (Auto Editors of Consumer Guide) - Nissan Z History, via HowStuffWorks (archived)",
+      "url": "https://auto.howstuffworks.com/nissan-z-history6.htm",
+      "says": "2960 cc DOHC V-6 made 222 horsepower; 1990 Turbo rated 300 hp @ 6400; with automatic, power limited to 280 hp"
+     },
+     {
+      "name": "Wikipedia - Nissan 300ZX",
+      "url": "https://en.wikipedia.org/wiki/Nissan_300ZX",
+      "says": "VG30DE 222 bhp @ 6,400; VG30DETT 300 bhp @ 6,400 (manual), 280 bhp with automatic"
+     },
+     {
+      "name": "EPA fueleconomy.gov vehicle data",
+      "url": "https://www.fueleconomy.gov/feg/download.shtml",
+      "says": "1991 300ZX: 3.0 L 6-cyl turbo"
+     }
+    ],
+    "status": "three_sources_not_nhra",
+    "independent_sources": 4,
+    "note": "300 hp with the 5-speed manual; 280 hp with the 4-speed automatic (Consumer Guide and Wikipedia agree).",
+    "hp_auto": 280
+   }
+  ],
+  "1992": [
+   {
+    "gen": "z32",
+    "cid": 181,
+    "liters": 3.0,
+    "hp": 222,
+    "hp_basis": "SAE net",
+    "rpo": "VG30DE",
+    "name": "3.0L DOHC 24-valve V6",
+    "common_name": "VG30DE",
+    "trims": [
+     "300ZX",
+     "2+2"
+    ],
+    "nhra": false,
+    "sources": [
+     {
+      "name": "Nissan USA material (newsroom press kits/releases and nissanusa.com, counted once)",
+      "url": "https://usa.nissannews.com/en-US/releases/release-49ec4ba13840405094f0c893ce9e9239-nissan-celebrates-four-decades-of-sports-car-leadership-with-new-limited-edition-370z-40th-anniversary-model",
+      "says": "1990 fourth-generation 300ZX offered 222 horsepower; 300ZX Turbo followed with 300 horsepower"
+     },
+     {
+      "name": "Consumer Guide (Auto Editors of Consumer Guide) - Nissan Z History, via HowStuffWorks (archived)",
+      "url": "https://auto.howstuffworks.com/nissan-z-history6.htm",
+      "says": "2960 cc DOHC V-6 made 222 horsepower; 1990 Turbo rated 300 hp @ 6400; with automatic, power limited to 280 hp"
+     },
+     {
+      "name": "Wikipedia - Nissan 300ZX",
+      "url": "https://en.wikipedia.org/wiki/Nissan_300ZX",
+      "says": "VG30DE 222 bhp @ 6,400; VG30DETT 300 bhp @ 6,400 (manual), 280 bhp with automatic"
+     },
+     {
+      "name": "Kelley Blue Book 1992 Nissan 300ZX specs",
+      "url": "https://www.kbb.com/nissan/300zx/1992/specs/",
+      "says": "222 @ 6400 and 300 @ 6400 listed"
+     },
+     {
+      "name": "EPA fueleconomy.gov vehicle data",
+      "url": "https://www.fueleconomy.gov/feg/download.shtml",
+      "says": "1992 300ZX / 2x2: 3.0 L 6-cyl NA"
+     }
+    ],
+    "status": "three_sources_not_nhra",
+    "independent_sources": 5,
+    "note": ""
+   },
+   {
+    "gen": "z32",
+    "cid": 181,
+    "liters": 3.0,
+    "hp": 300,
+    "hp_basis": "SAE net",
+    "rpo": "VG30DETT",
+    "name": "3.0L DOHC twin-turbo V6",
+    "common_name": "300ZX Twin Turbo",
+    "trims": [
+     "300ZX Turbo"
+    ],
+    "nhra": false,
+    "sources": [
+     {
+      "name": "Nissan USA material (newsroom press kits/releases and nissanusa.com, counted once)",
+      "url": "https://usa.nissannews.com/en-US/releases/release-49ec4ba13840405094f0c893ce9e9239-nissan-celebrates-four-decades-of-sports-car-leadership-with-new-limited-edition-370z-40th-anniversary-model",
+      "says": "1990 fourth-generation 300ZX offered 222 horsepower; 300ZX Turbo followed with 300 horsepower"
+     },
+     {
+      "name": "Consumer Guide (Auto Editors of Consumer Guide) - Nissan Z History, via HowStuffWorks (archived)",
+      "url": "https://auto.howstuffworks.com/nissan-z-history6.htm",
+      "says": "2960 cc DOHC V-6 made 222 horsepower; 1990 Turbo rated 300 hp @ 6400; with automatic, power limited to 280 hp"
+     },
+     {
+      "name": "Wikipedia - Nissan 300ZX",
+      "url": "https://en.wikipedia.org/wiki/Nissan_300ZX",
+      "says": "VG30DE 222 bhp @ 6,400; VG30DETT 300 bhp @ 6,400 (manual), 280 bhp with automatic"
+     },
+     {
+      "name": "Kelley Blue Book 1992 Nissan 300ZX specs",
+      "url": "https://www.kbb.com/nissan/300zx/1992/specs/",
+      "says": "222 @ 6400 and 300 @ 6400 listed"
+     },
+     {
+      "name": "EPA fueleconomy.gov vehicle data",
+      "url": "https://www.fueleconomy.gov/feg/download.shtml",
+      "says": "1992 300ZX: 3.0 L 6-cyl turbo"
+     }
+    ],
+    "status": "three_sources_not_nhra",
+    "independent_sources": 5,
+    "note": "300 hp with the 5-speed manual; 280 hp with the 4-speed automatic (Consumer Guide and Wikipedia agree).",
+    "hp_auto": 280
+   }
+  ],
+  "1993": [
+   {
+    "gen": "z32",
+    "cid": 181,
+    "liters": 3.0,
+    "hp": 222,
+    "hp_basis": "SAE net",
+    "rpo": "VG30DE",
+    "name": "3.0L DOHC 24-valve V6",
+    "common_name": "VG30DE",
+    "trims": [
+     "300ZX",
+     "2+2",
+     "convertible"
+    ],
+    "nhra": false,
+    "sources": [
+     {
+      "name": "Nissan USA material (newsroom press kits/releases and nissanusa.com, counted once)",
+      "url": "https://usa.nissannews.com/en-US/releases/release-49ec4ba13840405094f0c893ce9e9239-nissan-celebrates-four-decades-of-sports-car-leadership-with-new-limited-edition-370z-40th-anniversary-model",
+      "says": "1990 fourth-generation 300ZX offered 222 horsepower; 300ZX Turbo followed with 300 horsepower"
+     },
+     {
+      "name": "Consumer Guide (Auto Editors of Consumer Guide) - Nissan Z History, via HowStuffWorks (archived)",
+      "url": "https://auto.howstuffworks.com/nissan-z-history6.htm",
+      "says": "2960 cc DOHC V-6 made 222 horsepower; 1990 Turbo rated 300 hp @ 6400; with automatic, power limited to 280 hp"
+     },
+     {
+      "name": "Wikipedia - Nissan 300ZX",
+      "url": "https://en.wikipedia.org/wiki/Nissan_300ZX",
+      "says": "VG30DE 222 bhp @ 6,400; VG30DETT 300 bhp @ 6,400 (manual), 280 bhp with automatic"
+     },
+     {
+      "name": "Kelley Blue Book 1993 Nissan 300ZX specs",
+      "url": "https://www.kbb.com/nissan/300zx/1993/specs/",
+      "says": "222 @ 6400 and 300 @ 6400 listed"
+     },
+     {
+      "name": "EPA fueleconomy.gov vehicle data",
+      "url": "https://www.fueleconomy.gov/feg/download.shtml",
+      "says": "1993 300ZX / 2x2: 3.0 L 6-cyl NA"
+     }
+    ],
+    "status": "three_sources_not_nhra",
+    "independent_sources": 5,
+    "note": ""
+   },
+   {
+    "gen": "z32",
+    "cid": 181,
+    "liters": 3.0,
+    "hp": 300,
+    "hp_basis": "SAE net",
+    "rpo": "VG30DETT",
+    "name": "3.0L DOHC twin-turbo V6",
+    "common_name": "300ZX Twin Turbo",
+    "trims": [
+     "300ZX Turbo"
+    ],
+    "nhra": false,
+    "sources": [
+     {
+      "name": "Nissan USA material (newsroom press kits/releases and nissanusa.com, counted once)",
+      "url": "https://usa.nissannews.com/en-US/releases/release-49ec4ba13840405094f0c893ce9e9239-nissan-celebrates-four-decades-of-sports-car-leadership-with-new-limited-edition-370z-40th-anniversary-model",
+      "says": "1990 fourth-generation 300ZX offered 222 horsepower; 300ZX Turbo followed with 300 horsepower"
+     },
+     {
+      "name": "Consumer Guide (Auto Editors of Consumer Guide) - Nissan Z History, via HowStuffWorks (archived)",
+      "url": "https://auto.howstuffworks.com/nissan-z-history6.htm",
+      "says": "2960 cc DOHC V-6 made 222 horsepower; 1990 Turbo rated 300 hp @ 6400; with automatic, power limited to 280 hp"
+     },
+     {
+      "name": "Wikipedia - Nissan 300ZX",
+      "url": "https://en.wikipedia.org/wiki/Nissan_300ZX",
+      "says": "VG30DE 222 bhp @ 6,400; VG30DETT 300 bhp @ 6,400 (manual), 280 bhp with automatic"
+     },
+     {
+      "name": "Kelley Blue Book 1993 Nissan 300ZX specs",
+      "url": "https://www.kbb.com/nissan/300zx/1993/specs/",
+      "says": "222 @ 6400 and 300 @ 6400 listed"
+     },
+     {
+      "name": "EPA fueleconomy.gov vehicle data",
+      "url": "https://www.fueleconomy.gov/feg/download.shtml",
+      "says": "1993 300ZX: 3.0 L 6-cyl turbo"
+     }
+    ],
+    "status": "three_sources_not_nhra",
+    "independent_sources": 5,
+    "note": "300 hp with the 5-speed manual; 280 hp with the 4-speed automatic (Consumer Guide and Wikipedia agree).",
+    "hp_auto": 280
+   }
+  ],
+  "1994": [
+   {
+    "gen": "z32",
+    "cid": 181,
+    "liters": 3.0,
+    "hp": 222,
+    "hp_basis": "SAE net",
+    "rpo": "VG30DE",
+    "name": "3.0L DOHC 24-valve V6",
+    "common_name": "VG30DE",
+    "trims": [
+     "300ZX",
+     "2+2",
+     "convertible"
+    ],
+    "nhra": false,
+    "sources": [
+     {
+      "name": "Nissan USA material (newsroom press kits/releases and nissanusa.com, counted once)",
+      "url": "https://usa.nissannews.com/en-US/releases/release-49ec4ba13840405094f0c893ce9e9239-nissan-celebrates-four-decades-of-sports-car-leadership-with-new-limited-edition-370z-40th-anniversary-model",
+      "says": "1990 fourth-generation 300ZX offered 222 horsepower; 300ZX Turbo followed with 300 horsepower"
+     },
+     {
+      "name": "Consumer Guide (Auto Editors of Consumer Guide) - Nissan Z History, via HowStuffWorks (archived)",
+      "url": "https://auto.howstuffworks.com/nissan-z-history6.htm",
+      "says": "2960 cc DOHC V-6 made 222 horsepower; 1990 Turbo rated 300 hp @ 6400; with automatic, power limited to 280 hp"
+     },
+     {
+      "name": "Wikipedia - Nissan 300ZX",
+      "url": "https://en.wikipedia.org/wiki/Nissan_300ZX",
+      "says": "VG30DE 222 bhp @ 6,400; VG30DETT 300 bhp @ 6,400 (manual), 280 bhp with automatic"
+     },
+     {
+      "name": "Kelley Blue Book 1994 Nissan 300ZX specs",
+      "url": "https://www.kbb.com/nissan/300zx/1994/specs/",
+      "says": "222 @ 6400 and 300 @ 6400 listed"
+     },
+     {
+      "name": "EPA fueleconomy.gov vehicle data",
+      "url": "https://www.fueleconomy.gov/feg/download.shtml",
+      "says": "1994 300ZX / 2x2: 3.0 L 6-cyl NA"
+     }
+    ],
+    "status": "three_sources_not_nhra",
+    "independent_sources": 5,
+    "note": ""
+   },
+   {
+    "gen": "z32",
+    "cid": 181,
+    "liters": 3.0,
+    "hp": 300,
+    "hp_basis": "SAE net",
+    "rpo": "VG30DETT",
+    "name": "3.0L DOHC twin-turbo V6",
+    "common_name": "300ZX Twin Turbo",
+    "trims": [
+     "300ZX Turbo"
+    ],
+    "nhra": false,
+    "sources": [
+     {
+      "name": "Nissan USA material (newsroom press kits/releases and nissanusa.com, counted once)",
+      "url": "https://usa.nissannews.com/en-US/releases/release-49ec4ba13840405094f0c893ce9e9239-nissan-celebrates-four-decades-of-sports-car-leadership-with-new-limited-edition-370z-40th-anniversary-model",
+      "says": "1990 fourth-generation 300ZX offered 222 horsepower; 300ZX Turbo followed with 300 horsepower"
+     },
+     {
+      "name": "Consumer Guide (Auto Editors of Consumer Guide) - Nissan Z History, via HowStuffWorks (archived)",
+      "url": "https://auto.howstuffworks.com/nissan-z-history6.htm",
+      "says": "2960 cc DOHC V-6 made 222 horsepower; 1990 Turbo rated 300 hp @ 6400; with automatic, power limited to 280 hp"
+     },
+     {
+      "name": "Wikipedia - Nissan 300ZX",
+      "url": "https://en.wikipedia.org/wiki/Nissan_300ZX",
+      "says": "VG30DE 222 bhp @ 6,400; VG30DETT 300 bhp @ 6,400 (manual), 280 bhp with automatic"
+     },
+     {
+      "name": "Kelley Blue Book 1994 Nissan 300ZX specs",
+      "url": "https://www.kbb.com/nissan/300zx/1994/specs/",
+      "says": "222 @ 6400 and 300 @ 6400 listed"
+     },
+     {
+      "name": "EPA fueleconomy.gov vehicle data",
+      "url": "https://www.fueleconomy.gov/feg/download.shtml",
+      "says": "1994 300ZX: 3.0 L 6-cyl turbo"
+     }
+    ],
+    "status": "three_sources_not_nhra",
+    "independent_sources": 5,
+    "note": "300 hp with the 5-speed manual; 280 hp with the 4-speed automatic (Consumer Guide and Wikipedia agree).",
+    "hp_auto": 280
+   }
+  ],
+  "1995": [
+   {
+    "gen": "z32",
+    "cid": 181,
+    "liters": 3.0,
+    "hp": 222,
+    "hp_basis": "SAE net",
+    "rpo": "VG30DE",
+    "name": "3.0L DOHC 24-valve V6",
+    "common_name": "VG30DE",
+    "trims": [
+     "300ZX",
+     "2+2",
+     "convertible"
+    ],
+    "nhra": false,
+    "sources": [
+     {
+      "name": "Nissan USA material (newsroom press kits/releases and nissanusa.com, counted once)",
+      "url": "https://usa.nissannews.com/en-US/releases/release-49ec4ba13840405094f0c893ce9e9239-nissan-celebrates-four-decades-of-sports-car-leadership-with-new-limited-edition-370z-40th-anniversary-model",
+      "says": "1990 fourth-generation 300ZX offered 222 horsepower; 300ZX Turbo followed with 300 horsepower"
+     },
+     {
+      "name": "Consumer Guide (Auto Editors of Consumer Guide) - Nissan Z History, via HowStuffWorks (archived)",
+      "url": "https://auto.howstuffworks.com/nissan-z-history6.htm",
+      "says": "2960 cc DOHC V-6 made 222 horsepower; 1990 Turbo rated 300 hp @ 6400; with automatic, power limited to 280 hp"
+     },
+     {
+      "name": "Wikipedia - Nissan 300ZX",
+      "url": "https://en.wikipedia.org/wiki/Nissan_300ZX",
+      "says": "VG30DE 222 bhp @ 6,400; VG30DETT 300 bhp @ 6,400 (manual), 280 bhp with automatic"
+     },
+     {
+      "name": "Kelley Blue Book 1995 Nissan 300ZX specs",
+      "url": "https://www.kbb.com/nissan/300zx/1995/specs/",
+      "says": "222 @ 6400 and 300 @ 6400 listed"
+     },
+     {
+      "name": "EPA fueleconomy.gov vehicle data",
+      "url": "https://www.fueleconomy.gov/feg/download.shtml",
+      "says": "1995 300ZX / 2x2: 3.0 L 6-cyl NA"
+     }
+    ],
+    "status": "three_sources_not_nhra",
+    "independent_sources": 5,
+    "note": ""
+   },
+   {
+    "gen": "z32",
+    "cid": 181,
+    "liters": 3.0,
+    "hp": 300,
+    "hp_basis": "SAE net",
+    "rpo": "VG30DETT",
+    "name": "3.0L DOHC twin-turbo V6",
+    "common_name": "300ZX Twin Turbo",
+    "trims": [
+     "300ZX Turbo"
+    ],
+    "nhra": false,
+    "sources": [
+     {
+      "name": "Nissan USA material (newsroom press kits/releases and nissanusa.com, counted once)",
+      "url": "https://usa.nissannews.com/en-US/releases/release-49ec4ba13840405094f0c893ce9e9239-nissan-celebrates-four-decades-of-sports-car-leadership-with-new-limited-edition-370z-40th-anniversary-model",
+      "says": "1990 fourth-generation 300ZX offered 222 horsepower; 300ZX Turbo followed with 300 horsepower"
+     },
+     {
+      "name": "Consumer Guide (Auto Editors of Consumer Guide) - Nissan Z History, via HowStuffWorks (archived)",
+      "url": "https://auto.howstuffworks.com/nissan-z-history6.htm",
+      "says": "2960 cc DOHC V-6 made 222 horsepower; 1990 Turbo rated 300 hp @ 6400; with automatic, power limited to 280 hp"
+     },
+     {
+      "name": "Wikipedia - Nissan 300ZX",
+      "url": "https://en.wikipedia.org/wiki/Nissan_300ZX",
+      "says": "VG30DE 222 bhp @ 6,400; VG30DETT 300 bhp @ 6,400 (manual), 280 bhp with automatic"
+     },
+     {
+      "name": "Kelley Blue Book 1995 Nissan 300ZX specs",
+      "url": "https://www.kbb.com/nissan/300zx/1995/specs/",
+      "says": "222 @ 6400 and 300 @ 6400 listed"
+     },
+     {
+      "name": "EPA fueleconomy.gov vehicle data",
+      "url": "https://www.fueleconomy.gov/feg/download.shtml",
+      "says": "1995 300ZX: 3.0 L 6-cyl turbo"
+     }
+    ],
+    "status": "three_sources_not_nhra",
+    "independent_sources": 5,
+    "note": "300 hp with the 5-speed manual; 280 hp with the 4-speed automatic (Consumer Guide and Wikipedia agree).",
+    "hp_auto": 280
+   }
+  ],
+  "1996": [
+   {
+    "gen": "z32",
+    "cid": 181,
+    "liters": 3.0,
+    "hp": 222,
+    "hp_basis": "SAE net",
+    "rpo": "VG30DE",
+    "name": "3.0L DOHC 24-valve V6",
+    "common_name": "VG30DE",
+    "trims": [
+     "300ZX",
+     "2+2",
+     "convertible"
+    ],
+    "nhra": false,
+    "sources": [
+     {
+      "name": "Nissan USA material (newsroom press kits/releases and nissanusa.com, counted once)",
+      "url": "https://usa.nissannews.com/en-US/releases/release-49ec4ba13840405094f0c893ce9e9239-nissan-celebrates-four-decades-of-sports-car-leadership-with-new-limited-edition-370z-40th-anniversary-model",
+      "says": "1990 fourth-generation 300ZX offered 222 horsepower; 300ZX Turbo followed with 300 horsepower"
+     },
+     {
+      "name": "Consumer Guide (Auto Editors of Consumer Guide) - Nissan Z History, via HowStuffWorks (archived)",
+      "url": "https://auto.howstuffworks.com/nissan-z-history6.htm",
+      "says": "2960 cc DOHC V-6 made 222 horsepower; 1990 Turbo rated 300 hp @ 6400; with automatic, power limited to 280 hp"
+     },
+     {
+      "name": "Wikipedia - Nissan 300ZX",
+      "url": "https://en.wikipedia.org/wiki/Nissan_300ZX",
+      "says": "VG30DE 222 bhp @ 6,400; VG30DETT 300 bhp @ 6,400 (manual), 280 bhp with automatic"
+     },
+     {
+      "name": "EPA fueleconomy.gov vehicle data",
+      "url": "https://www.fueleconomy.gov/feg/download.shtml",
+      "says": "1996 300ZX / 2x2: 3.0 L 6-cyl NA"
+     }
+    ],
+    "status": "three_sources_not_nhra",
+    "independent_sources": 4,
+    "note": "KBB 1996 default page shows only the Turbo figure; EPA lists the NA 1996 rows."
+   },
+   {
+    "gen": "z32",
+    "cid": 181,
+    "liters": 3.0,
+    "hp": 300,
+    "hp_basis": "SAE net",
+    "rpo": "VG30DETT",
+    "name": "3.0L DOHC twin-turbo V6",
+    "common_name": "300ZX Twin Turbo",
+    "trims": [
+     "300ZX Turbo"
+    ],
+    "nhra": false,
+    "sources": [
+     {
+      "name": "Nissan USA material (newsroom press kits/releases and nissanusa.com, counted once)",
+      "url": "https://usa.nissannews.com/en-US/releases/release-49ec4ba13840405094f0c893ce9e9239-nissan-celebrates-four-decades-of-sports-car-leadership-with-new-limited-edition-370z-40th-anniversary-model",
+      "says": "1990 fourth-generation 300ZX offered 222 horsepower; 300ZX Turbo followed with 300 horsepower"
+     },
+     {
+      "name": "Consumer Guide (Auto Editors of Consumer Guide) - Nissan Z History, via HowStuffWorks (archived)",
+      "url": "https://auto.howstuffworks.com/nissan-z-history6.htm",
+      "says": "2960 cc DOHC V-6 made 222 horsepower; 1990 Turbo rated 300 hp @ 6400; with automatic, power limited to 280 hp"
+     },
+     {
+      "name": "Wikipedia - Nissan 300ZX",
+      "url": "https://en.wikipedia.org/wiki/Nissan_300ZX",
+      "says": "VG30DE 222 bhp @ 6,400; VG30DETT 300 bhp @ 6,400 (manual), 280 bhp with automatic"
+     },
+     {
+      "name": "Kelley Blue Book 1996 Nissan 300ZX specs",
+      "url": "https://www.kbb.com/nissan/300zx/1996/specs/",
+      "says": "300 @ 6400 listed (default trim page)"
+     },
+     {
+      "name": "EPA fueleconomy.gov vehicle data",
+      "url": "https://www.fueleconomy.gov/feg/download.shtml",
+      "says": "1996 300ZX: 3.0 L 6-cyl turbo"
+     }
+    ],
+    "status": "three_sources_not_nhra",
+    "independent_sources": 5,
+    "note": "300 hp with the 5-speed manual; 280 hp with the 4-speed automatic (Consumer Guide and Wikipedia agree). 1996 was the last US year.",
+    "hp_auto": 280
+   }
+  ],
+  "2003": [
+   {
+    "gen": "z33",
+    "cid": 214,
+    "liters": 3.5,
+    "hp": 287,
+    "hp_basis": "SAE net",
+    "rpo": "VQ35DE",
+    "name": "3.5L DOHC V6",
+    "common_name": "VQ35DE",
+    "trims": [
+     "all"
+    ],
+    "nhra": false,
+    "sources": [
+     {
+      "name": "Nissan USA material (newsroom press kits/releases and nissanusa.com, counted once)",
+      "url": "https://usa.nissannews.com/en-US/releases/2003-350z-press-kit",
+      "says": "3.5-liter VQ35DE V6 produces 287 horsepower and 274 lb-ft"
+     },
+     {
+      "name": "Wikipedia - Nissan 350Z",
+      "url": "https://en.wikipedia.org/wiki/Nissan_350Z",
+      "says": "2003-2004 VQ35DE 287 hp @ 6,200; 2005 300 hp version on manual 35th Anniversary/Track; 2006 300 hp manual, 287 automatic"
+     },
+     {
+      "name": "Kelley Blue Book 2003 Nissan 350Z specs",
+      "url": "https://www.kbb.com/nissan/350z/2003/specs/",
+      "says": "287 listed"
+     },
+     {
+      "name": "EPA fueleconomy.gov vehicle data",
+      "url": "https://www.fueleconomy.gov/feg/download.shtml",
+      "says": "2003 350Z: 3.5 L 6-cyl NA"
+     }
+    ],
+    "status": "three_sources_not_nhra",
+    "independent_sources": 4,
+    "note": ""
+   }
+  ],
+  "2004": [
+   {
+    "gen": "z33",
+    "cid": 214,
+    "liters": 3.5,
+    "hp": 287,
+    "hp_basis": "SAE net",
+    "rpo": "VQ35DE",
+    "name": "3.5L DOHC V6",
+    "common_name": "VQ35DE",
+    "trims": [
+     "all"
+    ],
+    "nhra": false,
+    "sources": [
+     {
+      "name": "Nissan USA material (newsroom press kits/releases and nissanusa.com, counted once)",
+      "url": "https://usa.nissannews.com/en-US/releases/2004-nissan-350z-coupe",
+      "says": "287-hp VQ35DE in the coupe and the new Roadster"
+     },
+     {
+      "name": "Wikipedia - Nissan 350Z",
+      "url": "https://en.wikipedia.org/wiki/Nissan_350Z",
+      "says": "2003-2004 VQ35DE 287 hp @ 6,200; 2005 300 hp version on manual 35th Anniversary/Track; 2006 300 hp manual, 287 automatic"
+     },
+     {
+      "name": "Kelley Blue Book 2004 Nissan 350Z specs",
+      "url": "https://www.kbb.com/nissan/350z/2004/specs/",
+      "says": "287 listed"
+     },
+     {
+      "name": "EPA fueleconomy.gov vehicle data",
+      "url": "https://www.fueleconomy.gov/feg/download.shtml",
+      "says": "2004 350Z: 3.5 L 6-cyl NA"
+     }
+    ],
+    "status": "three_sources_not_nhra",
+    "independent_sources": 4,
+    "note": "Roadster added for 2004."
+   }
+  ],
+  "2005": [
+   {
+    "gen": "z33",
+    "cid": 214,
+    "liters": 3.5,
+    "hp": 287,
+    "hp_basis": "SAE net",
+    "rpo": "VQ35DE",
+    "name": "3.5L DOHC V6",
+    "common_name": "VQ35DE",
+    "trims": [
+     "all except 35th Anniversary/Track"
+    ],
+    "nhra": false,
+    "sources": [
+     {
+      "name": "Nissan USA material (newsroom press kits/releases and nissanusa.com, counted once)",
+      "url": "https://usa.nissannews.com/en-US/releases/2005-nissan-350z-coupe-press-kit",
+      "says": "24-valve 3.5-liter DOHC V6 rated at 287 hp; available 300 horsepower (35th Anniversary, Track models)"
+     },
+     {
+      "name": "Wikipedia - Nissan 350Z",
+      "url": "https://en.wikipedia.org/wiki/Nissan_350Z",
+      "says": "2003-2004 VQ35DE 287 hp @ 6,200; 2005 300 hp version on manual 35th Anniversary/Track; 2006 300 hp manual, 287 automatic"
+     },
+     {
+      "name": "EPA fueleconomy.gov vehicle data",
+      "url": "https://www.fueleconomy.gov/feg/download.shtml",
+      "says": "2005 350Z: 3.5 L 6-cyl NA"
+     }
+    ],
+    "status": "three_sources_not_nhra",
+    "independent_sources": 3,
+    "note": ""
+   },
+   {
+    "gen": "z33",
+    "cid": 214,
+    "liters": 3.5,
+    "hp": 300,
+    "hp_basis": "SAE net",
+    "rpo": "VQ35DE (Rev-Up)",
+    "name": "3.5L DOHC V6, 7,000-rpm 'Rev-Up' version",
+    "common_name": "VQ35DE Rev-Up",
+    "trims": [
+     "35th Anniversary",
+     "Track"
+    ],
+    "nhra": false,
+    "sources": [
+     {
+      "name": "Nissan USA material (newsroom press kits/releases and nissanusa.com, counted once)",
+      "url": "https://usa.nissannews.com/en-US/releases/2005-nissan-350z-coupe-press-kit",
+      "says": "24-valve 3.5-liter DOHC V6 rated at 287 hp; available 300 horsepower (35th Anniversary, Track models)"
+     },
+     {
+      "name": "Wikipedia - Nissan 350Z",
+      "url": "https://en.wikipedia.org/wiki/Nissan_350Z",
+      "says": "VQ35DE 300 hp @ 6,400 (2005 manual 35th Anniversary/Track; 2006 all manuals, 'Rev-up')"
+     },
+     {
+      "name": "Kelley Blue Book 2005 Nissan 350Z specs",
+      "url": "https://www.kbb.com/nissan/350z/2005/specs/",
+      "says": "300 listed (default trim page)"
+     },
+     {
+      "name": "EPA fueleconomy.gov vehicle data",
+      "url": "https://www.fueleconomy.gov/feg/download.shtml",
+      "says": "2005 350Z: 3.5 L 6-cyl NA incl. 'DVVT' row"
+     }
+    ],
+    "status": "three_sources_not_nhra",
+    "independent_sources": 4,
+    "note": "EPA cannot separate it from the 287-hp engine (same 3.5 L); 260 lb-ft vs 274."
+   }
+  ],
+  "2006": [
+   {
+    "gen": "z33",
+    "cid": 214,
+    "liters": 3.5,
+    "hp": 287,
+    "hp_basis": "SAE net",
+    "rpo": "VQ35DE",
+    "name": "3.5L DOHC V6",
+    "common_name": "VQ35DE",
+    "trims": [
+     "automatic models"
+    ],
+    "nhra": false,
+    "sources": [
+     {
+      "name": "Nissan USA material (newsroom press kits/releases and nissanusa.com, counted once)",
+      "url": "https://usa.nissannews.com/en-US/releases/2006-nissan-350z-coupe-and-roadster-press-kit",
+      "says": "6-speed manual: 300 hp / 260 lb-ft; 5-speed automatic: 287 hp / 274 lb-ft (coupe and roadster)"
+     },
+     {
+      "name": "Wikipedia - Nissan 350Z",
+      "url": "https://en.wikipedia.org/wiki/Nissan_350Z",
+      "says": "2003-2004 VQ35DE 287 hp @ 6,200; 2005 300 hp version on manual 35th Anniversary/Track; 2006 300 hp manual, 287 automatic"
+     },
+     {
+      "name": "Kelley Blue Book 2006 Nissan 350Z specs",
+      "url": "https://www.kbb.com/nissan/350z/2006/specs/",
+      "says": "287 and 300 listed"
+     },
+     {
+      "name": "EPA fueleconomy.gov vehicle data",
+      "url": "https://www.fueleconomy.gov/feg/download.shtml",
+      "says": "2006 350Z: 3.5 L 6-cyl NA"
+     }
+    ],
+    "status": "three_sources_not_nhra",
+    "independent_sources": 4,
+    "note": ""
+   },
+   {
+    "gen": "z33",
+    "cid": 214,
+    "liters": 3.5,
+    "hp": 300,
+    "hp_basis": "SAE net",
+    "rpo": "VQ35DE (Rev-Up)",
+    "name": "3.5L DOHC V6, 7,000-rpm 'Rev-Up' version",
+    "common_name": "VQ35DE Rev-Up",
+    "trims": [
+     "6-speed manual models"
+    ],
+    "nhra": false,
+    "sources": [
+     {
+      "name": "Nissan USA material (newsroom press kits/releases and nissanusa.com, counted once)",
+      "url": "https://usa.nissannews.com/en-US/releases/2006-nissan-350z-coupe-and-roadster-press-kit",
+      "says": "6-speed manual: 300 hp / 260 lb-ft; 5-speed automatic: 287 hp / 274 lb-ft (coupe and roadster)"
+     },
+     {
+      "name": "Wikipedia - Nissan 350Z",
+      "url": "https://en.wikipedia.org/wiki/Nissan_350Z",
+      "says": "VQ35DE 300 hp @ 6,400 (2005 manual 35th Anniversary/Track; 2006 all manuals, 'Rev-up')"
+     },
+     {
+      "name": "Kelley Blue Book 2006 Nissan 350Z specs",
+      "url": "https://www.kbb.com/nissan/350z/2006/specs/",
+      "says": "287 and 300 listed"
+     },
+     {
+      "name": "EPA fueleconomy.gov vehicle data",
+      "url": "https://www.fueleconomy.gov/feg/download.shtml",
+      "says": "2006 350Z: 3.5 L 6-cyl NA"
+     }
+    ],
+    "status": "three_sources_not_nhra",
+    "independent_sources": 4,
+    "note": "EPA cannot separate it from the 287-hp engine (same 3.5 L); 260 lb-ft vs 274."
+   }
+  ],
+  "2007": [
+   {
+    "gen": "z33",
+    "cid": 214,
+    "liters": 3.5,
+    "hp": 306,
+    "hp_basis": "SAE net",
+    "rpo": "VQ35HR",
+    "name": "3.5L DOHC V6 (high-rev)",
+    "common_name": "VQ35HR",
+    "trims": [
+     "coupe",
+     "roadster",
+     "NISMO 350Z"
+    ],
+    "nhra": false,
+    "sources": [
+     {
+      "name": "Nissan USA material (newsroom press kits/releases and nissanusa.com, counted once)",
+      "url": "https://usa.nissannews.com/en-US/releases/2007-nissan-350z-coupe-and-roadster-press-kit",
+      "says": "VQ35HR 3.5-liter V6, 306 horsepower @ 6,800 rpm, 268 lb-ft @ 4,800 (manual and automatic)"
+     },
+     {
+      "name": "Wikipedia - Nissan 350Z",
+      "url": "https://en.wikipedia.org/wiki/Nissan_350Z",
+      "says": "2007-2009 VQ35HR 306 hp @ 6,800; roadster the sole remaining body style in 2009"
+     },
+     {
+      "name": "Kelley Blue Book 2007 Nissan 350Z specs",
+      "url": "https://www.kbb.com/nissan/350z/2007/specs/",
+      "says": "306 listed"
+     },
+     {
+      "name": "EPA fueleconomy.gov vehicle data",
+      "url": "https://www.fueleconomy.gov/feg/download.shtml",
+      "says": "2007 350Z: 3.5 L 6-cyl NA"
+     }
+    ],
+    "status": "three_sources_not_nhra",
+    "independent_sources": 4,
+    "note": ""
+   }
+  ],
+  "2008": [
+   {
+    "gen": "z33",
+    "cid": 214,
+    "liters": 3.5,
+    "hp": 306,
+    "hp_basis": "SAE net",
+    "rpo": "VQ35HR",
+    "name": "3.5L DOHC V6 (high-rev)",
+    "common_name": "VQ35HR",
+    "trims": [
+     "coupe",
+     "roadster",
+     "NISMO 350Z"
+    ],
+    "nhra": false,
+    "sources": [
+     {
+      "name": "Nissan USA material (newsroom press kits/releases and nissanusa.com, counted once)",
+      "url": "https://usa.nissannews.com/en-US/releases/2008-350z-press-kit",
+      "says": "VQ35HR 3.5-liter V6, 306 horsepower @ 6,800 rpm, 268 lb-ft @ 4,800 (manual and automatic)"
+     },
+     {
+      "name": "Wikipedia - Nissan 350Z",
+      "url": "https://en.wikipedia.org/wiki/Nissan_350Z",
+      "says": "2007-2009 VQ35HR 306 hp @ 6,800; roadster the sole remaining body style in 2009"
+     },
+     {
+      "name": "Kelley Blue Book 2008 Nissan 350Z specs",
+      "url": "https://www.kbb.com/nissan/350z/2008/specs/",
+      "says": "306 listed"
+     },
+     {
+      "name": "EPA fueleconomy.gov vehicle data",
+      "url": "https://www.fueleconomy.gov/feg/download.shtml",
+      "says": "2008 350Z: 3.5 L 6-cyl NA"
+     }
+    ],
+    "status": "three_sources_not_nhra",
+    "independent_sources": 4,
+    "note": ""
+   }
+  ],
+  "2009": [
+   {
+    "gen": "z33",
+    "cid": 214,
+    "liters": 3.5,
+    "hp": 306,
+    "hp_basis": "SAE net",
+    "rpo": "VQ35HR",
+    "name": "3.5L DOHC V6 (high-rev)",
+    "common_name": "VQ35HR",
+    "trims": [
+     "Roadster only"
+    ],
+    "nhra": false,
+    "sources": [
+     {
+      "name": "Nissan USA material (newsroom press kits/releases and nissanusa.com, counted once)",
+      "url": "https://usa.nissannews.com/en-US/releases/2009-nissan-350z-roadster-press-kit",
+      "says": "VQ35HR 3.5-liter V6, 306 horsepower @ 6,800 rpm, 268 lb-ft @ 4,800 (manual and automatic)"
+     },
+     {
+      "name": "Wikipedia - Nissan 350Z",
+      "url": "https://en.wikipedia.org/wiki/Nissan_350Z",
+      "says": "2007-2009 VQ35HR 306 hp @ 6,800; roadster the sole remaining body style in 2009"
+     },
+     {
+      "name": "Kelley Blue Book 2009 Nissan 350Z specs",
+      "url": "https://www.kbb.com/nissan/350z/2009/specs/",
+      "says": "306 listed"
+     },
+     {
+      "name": "EPA fueleconomy.gov vehicle data",
+      "url": "https://www.fueleconomy.gov/feg/download.shtml",
+      "says": "2009 350Z Roadster: 3.5 L 6-cyl NA"
+     }
+    ],
+    "status": "three_sources_not_nhra",
+    "independent_sources": 4,
+    "note": "2009: 350Z Roadster only; the coupe was replaced by the 370Z."
+   },
+   {
+    "gen": "z34",
+    "cid": 226,
+    "liters": 3.7,
+    "hp": 332,
+    "hp_basis": "SAE net",
+    "rpo": "VQ37VHR",
+    "name": "3.7L DOHC V6 with VVEL",
+    "common_name": "VQ37VHR",
+    "trims": [
+     "coupe",
+     "Touring"
+    ],
+    "nhra": false,
+    "sources": [
+     {
+      "name": "Nissan USA material (newsroom press kits/releases and nissanusa.com, counted once)",
+      "url": "https://usa.nissannews.com/en-US/releases/us-2009-nissan-370z-coupe-press-kit",
+      "says": "VQ37VHR 3.7-liter with VVEL rated at 332 horsepower @ 7,000 rpm, 270 lb-ft @ 5,200"
+     },
+     {
+      "name": "Wikipedia - Nissan 370Z",
+      "url": "https://en.wikipedia.org/wiki/Nissan_370Z",
+      "says": "VQ37VHR 332 hp @ 7,000; sold in North America 2009-2020; Roadster discontinued after 2019"
+     },
+     {
+      "name": "Kelley Blue Book 2009 Nissan 370Z specs",
+      "url": "https://www.kbb.com/nissan/370z/2009/specs/",
+      "says": "332 @ 7000 listed"
+     },
+     {
+      "name": "EPA fueleconomy.gov vehicle data",
+      "url": "https://www.fueleconomy.gov/feg/download.shtml",
+      "says": "2009 370Z: 3.7 L 6-cyl NA"
+     }
+    ],
+    "status": "three_sources_not_nhra",
+    "independent_sources": 4,
+    "note": ""
+   },
+   {
+    "gen": "z34",
+    "cid": 226,
+    "liters": 3.7,
+    "hp": 350,
+    "hp_basis": "SAE net",
+    "rpo": "VQ37VHR (NISMO)",
+    "name": "3.7L DOHC V6 with VVEL, NISMO tune",
+    "common_name": "NISMO 370Z",
+    "trims": [
+     "NISMO 370Z"
+    ],
+    "nhra": false,
+    "sources": [
+     {
+      "name": "Nissan USA material (newsroom press kits/releases and nissanusa.com, counted once)",
+      "url": "https://usa.nissannews.com/en-US/releases/us-2009-nissan-370z-coupe-press-kit",
+      "says": "NISMO 370Z: 3.7-liter VQ-series V6 produces 350 hp @ 7,400 rpm and 276 lb-ft @ 5,200 (2009 kit introduces the new NISMO 370Z)"
+     },
+     {
+      "name": "Wikipedia - Nissan 370Z",
+      "url": "https://en.wikipedia.org/wiki/Nissan_370Z",
+      "says": "NISMO: 350 hp @ 7,400, 276 lb-ft @ 5,200"
+     },
+     {
+      "name": "Kelley Blue Book 2009 Nissan 370Z specs",
+      "url": "https://www.kbb.com/nissan/370z/2009/specs/",
+      "says": "350 @ 7400 listed"
+     },
+     {
+      "name": "EPA fueleconomy.gov vehicle data",
+      "url": "https://www.fueleconomy.gov/feg/download.shtml",
+      "says": "2009 370Z: 3.7 L 6-cyl NA (cannot separate NISMO)"
+     }
+    ],
+    "status": "three_sources_not_nhra",
+    "independent_sources": 4,
+    "note": ""
+   }
+  ],
+  "2010": [
+   {
+    "gen": "z34",
+    "cid": 226,
+    "liters": 3.7,
+    "hp": 332,
+    "hp_basis": "SAE net",
+    "rpo": "VQ37VHR",
+    "name": "3.7L DOHC V6 with VVEL",
+    "common_name": "VQ37VHR",
+    "trims": [
+     "coupe",
+     "Touring",
+     "Sport",
+     "Roadster"
+    ],
+    "nhra": false,
+    "sources": [
+     {
+      "name": "Nissan USA material (newsroom press kits/releases and nissanusa.com, counted once)",
+      "url": "https://usa.nissannews.com/en-US/releases/us-2010-nissan-370z-coupe-press-kit",
+      "says": "VQ37VHR 3.7-liter with VVEL rated at 332 horsepower @ 7,000 rpm, 270 lb-ft @ 5,200"
+     },
+     {
+      "name": "Wikipedia - Nissan 370Z",
+      "url": "https://en.wikipedia.org/wiki/Nissan_370Z",
+      "says": "VQ37VHR 332 hp @ 7,000; sold in North America 2009-2020; Roadster discontinued after 2019"
+     },
+     {
+      "name": "Kelley Blue Book 2010 Nissan 370Z specs",
+      "url": "https://www.kbb.com/nissan/370z/2010/specs/",
+      "says": "332 @ 7000 listed"
+     },
+     {
+      "name": "EPA fueleconomy.gov vehicle data",
+      "url": "https://www.fueleconomy.gov/feg/download.shtml",
+      "says": "2010 370Z: 3.7 L 6-cyl NA"
+     }
+    ],
+    "status": "three_sources_not_nhra",
+    "independent_sources": 4,
+    "note": "Roadster added for 2010."
+   },
+   {
+    "gen": "z34",
+    "cid": 226,
+    "liters": 3.7,
+    "hp": 350,
+    "hp_basis": "SAE net",
+    "rpo": "VQ37VHR (NISMO)",
+    "name": "3.7L DOHC V6 with VVEL, NISMO tune",
+    "common_name": "NISMO 370Z",
+    "trims": [
+     "NISMO 370Z"
+    ],
+    "nhra": false,
+    "sources": [
+     {
+      "name": "Nissan USA material (newsroom press kits/releases and nissanusa.com, counted once)",
+      "url": "https://usa.nissannews.com/en-US/releases/us-2010-nissan-370z-coupe-press-kit",
+      "says": "NISMO 370Z: 3.7-liter VQ-series V6 produces 350 hp @ 7,400 rpm and 276 lb-ft @ 5,200"
+     },
+     {
+      "name": "Wikipedia - Nissan 370Z",
+      "url": "https://en.wikipedia.org/wiki/Nissan_370Z",
+      "says": "NISMO: 350 hp @ 7,400, 276 lb-ft @ 5,200"
+     },
+     {
+      "name": "EPA fueleconomy.gov vehicle data",
+      "url": "https://www.fueleconomy.gov/feg/download.shtml",
+      "says": "2010 370Z: 3.7 L 6-cyl NA (cannot separate NISMO)"
+     }
+    ],
+    "status": "three_sources_not_nhra",
+    "independent_sources": 3,
+    "note": "KBB default page for this year shows only the 332-hp trim; Nissan and Wikipedia agree on 350 hp; EPA counts only for the 3.7 L displacement."
+   }
+  ],
+  "2011": [
+   {
+    "gen": "z34",
+    "cid": 226,
+    "liters": 3.7,
+    "hp": 332,
+    "hp_basis": "SAE net",
+    "rpo": "VQ37VHR",
+    "name": "3.7L DOHC V6 with VVEL",
+    "common_name": "VQ37VHR",
+    "trims": [
+     "coupe",
+     "Touring",
+     "Sport",
+     "Roadster"
+    ],
+    "nhra": false,
+    "sources": [
+     {
+      "name": "Nissan USA material (newsroom press kits/releases and nissanusa.com, counted once)",
+      "url": "https://usa.nissannews.com/en-US/releases/us-2020-nissan-370z-coupe-press-kit",
+      "says": "VQ37VHR 3.7-liter with VVEL rated at 332 horsepower @ 7,000 rpm, 270 lb-ft @ 5,200 (this year's kit not fetched; 2009-10, 2013-15, 2017-20 kits read)"
+     },
+     {
+      "name": "Wikipedia - Nissan 370Z",
+      "url": "https://en.wikipedia.org/wiki/Nissan_370Z",
+      "says": "VQ37VHR 332 hp @ 7,000; sold in North America 2009-2020; Roadster discontinued after 2019"
+     },
+     {
+      "name": "Kelley Blue Book 2011 Nissan 370Z specs",
+      "url": "https://www.kbb.com/nissan/370z/2011/specs/",
+      "says": "332 @ 7000 listed"
+     },
+     {
+      "name": "EPA fueleconomy.gov vehicle data",
+      "url": "https://www.fueleconomy.gov/feg/download.shtml",
+      "says": "2011 370Z: 3.7 L 6-cyl NA"
+     }
+    ],
+    "status": "three_sources_not_nhra",
+    "independent_sources": 4,
+    "note": ""
+   },
+   {
+    "gen": "z34",
+    "cid": 226,
+    "liters": 3.7,
+    "hp": 350,
+    "hp_basis": "SAE net",
+    "rpo": "VQ37VHR (NISMO)",
+    "name": "3.7L DOHC V6 with VVEL, NISMO tune",
+    "common_name": "NISMO 370Z",
+    "trims": [
+     "NISMO 370Z"
+    ],
+    "nhra": false,
+    "sources": [
+     {
+      "name": "Nissan USA material (newsroom press kits/releases and nissanusa.com, counted once)",
+      "url": "https://usa.nissannews.com/en-US/releases/us-2012-nissan-nismo-370z-press-kit",
+      "says": "NISMO 370Z: 3.7-liter VQ-series V6 produces 350 hp @ 7,400 rpm and 276 lb-ft @ 5,200"
+     },
+     {
+      "name": "Wikipedia - Nissan 370Z",
+      "url": "https://en.wikipedia.org/wiki/Nissan_370Z",
+      "says": "NISMO: 350 hp @ 7,400, 276 lb-ft @ 5,200"
+     },
+     {
+      "name": "Kelley Blue Book 2011 Nissan 370Z specs",
+      "url": "https://www.kbb.com/nissan/370z/2011/specs/",
+      "says": "350 @ 7400 listed"
+     },
+     {
+      "name": "EPA fueleconomy.gov vehicle data",
+      "url": "https://www.fueleconomy.gov/feg/download.shtml",
+      "says": "2011 370Z: 3.7 L 6-cyl NA (cannot separate NISMO)"
+     }
+    ],
+    "status": "three_sources_not_nhra",
+    "independent_sources": 4,
+    "note": ""
+   }
+  ],
+  "2012": [
+   {
+    "gen": "z34",
+    "cid": 226,
+    "liters": 3.7,
+    "hp": 332,
+    "hp_basis": "SAE net",
+    "rpo": "VQ37VHR",
+    "name": "3.7L DOHC V6 with VVEL",
+    "common_name": "VQ37VHR",
+    "trims": [
+     "coupe",
+     "Touring",
+     "Sport",
+     "Roadster"
+    ],
+    "nhra": false,
+    "sources": [
+     {
+      "name": "Nissan USA material (newsroom press kits/releases and nissanusa.com, counted once)",
+      "url": "https://usa.nissannews.com/en-US/releases/us-2020-nissan-370z-coupe-press-kit",
+      "says": "VQ37VHR 3.7-liter with VVEL rated at 332 horsepower @ 7,000 rpm, 270 lb-ft @ 5,200 (this year's kit not fetched; 2009-10, 2013-15, 2017-20 kits read)"
+     },
+     {
+      "name": "Wikipedia - Nissan 370Z",
+      "url": "https://en.wikipedia.org/wiki/Nissan_370Z",
+      "says": "VQ37VHR 332 hp @ 7,000; sold in North America 2009-2020; Roadster discontinued after 2019"
+     },
+     {
+      "name": "Kelley Blue Book 2012 Nissan 370Z specs",
+      "url": "https://www.kbb.com/nissan/370z/2012/specs/",
+      "says": "332 @ 7000 listed"
+     },
+     {
+      "name": "EPA fueleconomy.gov vehicle data",
+      "url": "https://www.fueleconomy.gov/feg/download.shtml",
+      "says": "2012 370Z: 3.7 L 6-cyl NA"
+     }
+    ],
+    "status": "three_sources_not_nhra",
+    "independent_sources": 4,
+    "note": ""
+   },
+   {
+    "gen": "z34",
+    "cid": 226,
+    "liters": 3.7,
+    "hp": 350,
+    "hp_basis": "SAE net",
+    "rpo": "VQ37VHR (NISMO)",
+    "name": "3.7L DOHC V6 with VVEL, NISMO tune",
+    "common_name": "NISMO 370Z",
+    "trims": [
+     "NISMO 370Z"
+    ],
+    "nhra": false,
+    "sources": [
+     {
+      "name": "Nissan USA material (newsroom press kits/releases and nissanusa.com, counted once)",
+      "url": "https://usa.nissannews.com/en-US/releases/us-2012-nissan-nismo-370z-press-kit",
+      "says": "NISMO 370Z: 3.7-liter VQ-series V6 produces 350 hp @ 7,400 rpm and 276 lb-ft @ 5,200"
+     },
+     {
+      "name": "Wikipedia - Nissan 370Z",
+      "url": "https://en.wikipedia.org/wiki/Nissan_370Z",
+      "says": "NISMO: 350 hp @ 7,400, 276 lb-ft @ 5,200"
+     },
+     {
+      "name": "EPA fueleconomy.gov vehicle data",
+      "url": "https://www.fueleconomy.gov/feg/download.shtml",
+      "says": "2012 370Z: 3.7 L 6-cyl NA (cannot separate NISMO)"
+     }
+    ],
+    "status": "three_sources_not_nhra",
+    "independent_sources": 3,
+    "note": "KBB default page for this year shows only the 332-hp trim; Nissan and Wikipedia agree on 350 hp; EPA counts only for the 3.7 L displacement."
+   }
+  ],
+  "2013": [
+   {
+    "gen": "z34",
+    "cid": 226,
+    "liters": 3.7,
+    "hp": 332,
+    "hp_basis": "SAE net",
+    "rpo": "VQ37VHR",
+    "name": "3.7L DOHC V6 with VVEL",
+    "common_name": "VQ37VHR",
+    "trims": [
+     "coupe",
+     "Touring",
+     "Sport",
+     "Roadster"
+    ],
+    "nhra": false,
+    "sources": [
+     {
+      "name": "Nissan USA material (newsroom press kits/releases and nissanusa.com, counted once)",
+      "url": "https://usa.nissannews.com/en-US/releases/us-2013-nissan-370z-coupe-press-kit",
+      "says": "VQ37VHR 3.7-liter with VVEL rated at 332 horsepower @ 7,000 rpm, 270 lb-ft @ 5,200"
+     },
+     {
+      "name": "Wikipedia - Nissan 370Z",
+      "url": "https://en.wikipedia.org/wiki/Nissan_370Z",
+      "says": "VQ37VHR 332 hp @ 7,000; sold in North America 2009-2020; Roadster discontinued after 2019"
+     },
+     {
+      "name": "Kelley Blue Book 2013 Nissan 370Z specs",
+      "url": "https://www.kbb.com/nissan/370z/2013/specs/",
+      "says": "332 @ 7000 listed"
+     },
+     {
+      "name": "EPA fueleconomy.gov vehicle data",
+      "url": "https://www.fueleconomy.gov/feg/download.shtml",
+      "says": "2013 370Z: 3.7 L 6-cyl NA"
+     }
+    ],
+    "status": "three_sources_not_nhra",
+    "independent_sources": 4,
+    "note": ""
+   },
+   {
+    "gen": "z34",
+    "cid": 226,
+    "liters": 3.7,
+    "hp": 350,
+    "hp_basis": "SAE net",
+    "rpo": "VQ37VHR (NISMO)",
+    "name": "3.7L DOHC V6 with VVEL, NISMO tune",
+    "common_name": "NISMO 370Z",
+    "trims": [
+     "NISMO 370Z"
+    ],
+    "nhra": false,
+    "sources": [
+     {
+      "name": "Nissan USA material (newsroom press kits/releases and nissanusa.com, counted once)",
+      "url": "https://usa.nissannews.com/en-US/releases/us-2013-nissan-370z-coupe-press-kit",
+      "says": "NISMO 370Z: 3.7-liter VQ-series V6 produces 350 hp @ 7,400 rpm and 276 lb-ft @ 5,200"
+     },
+     {
+      "name": "Wikipedia - Nissan 370Z",
+      "url": "https://en.wikipedia.org/wiki/Nissan_370Z",
+      "says": "NISMO: 350 hp @ 7,400, 276 lb-ft @ 5,200"
+     },
+     {
+      "name": "EPA fueleconomy.gov vehicle data",
+      "url": "https://www.fueleconomy.gov/feg/download.shtml",
+      "says": "2013 370Z: 3.7 L 6-cyl NA (cannot separate NISMO)"
+     }
+    ],
+    "status": "three_sources_not_nhra",
+    "independent_sources": 3,
+    "note": "KBB default page for this year shows only the 332-hp trim; Nissan and Wikipedia agree on 350 hp; EPA counts only for the 3.7 L displacement."
+   }
+  ],
+  "2014": [
+   {
+    "gen": "z34",
+    "cid": 226,
+    "liters": 3.7,
+    "hp": 332,
+    "hp_basis": "SAE net",
+    "rpo": "VQ37VHR",
+    "name": "3.7L DOHC V6 with VVEL",
+    "common_name": "VQ37VHR",
+    "trims": [
+     "coupe",
+     "Touring",
+     "Sport",
+     "Roadster"
+    ],
+    "nhra": false,
+    "sources": [
+     {
+      "name": "Nissan USA material (newsroom press kits/releases and nissanusa.com, counted once)",
+      "url": "https://usa.nissannews.com/en-US/releases/us-2014-nissan-370z-coupe-press-kit",
+      "says": "VQ37VHR 3.7-liter with VVEL rated at 332 horsepower @ 7,000 rpm, 270 lb-ft @ 5,200"
+     },
+     {
+      "name": "Wikipedia - Nissan 370Z",
+      "url": "https://en.wikipedia.org/wiki/Nissan_370Z",
+      "says": "VQ37VHR 332 hp @ 7,000; sold in North America 2009-2020; Roadster discontinued after 2019"
+     },
+     {
+      "name": "Kelley Blue Book 2014 Nissan 370Z specs",
+      "url": "https://www.kbb.com/nissan/370z/2014/specs/",
+      "says": "332 @ 7000 listed"
+     },
+     {
+      "name": "EPA fueleconomy.gov vehicle data",
+      "url": "https://www.fueleconomy.gov/feg/download.shtml",
+      "says": "2014 370Z: 3.7 L 6-cyl NA"
+     }
+    ],
+    "status": "three_sources_not_nhra",
+    "independent_sources": 4,
+    "note": ""
+   },
+   {
+    "gen": "z34",
+    "cid": 226,
+    "liters": 3.7,
+    "hp": 350,
+    "hp_basis": "SAE net",
+    "rpo": "VQ37VHR (NISMO)",
+    "name": "3.7L DOHC V6 with VVEL, NISMO tune",
+    "common_name": "NISMO 370Z",
+    "trims": [
+     "NISMO 370Z"
+    ],
+    "nhra": false,
+    "sources": [
+     {
+      "name": "Nissan USA material (newsroom press kits/releases and nissanusa.com, counted once)",
+      "url": "https://usa.nissannews.com/en-US/releases/us-2014-nissan-370z-coupe-press-kit",
+      "says": "NISMO 370Z: 3.7-liter VQ-series V6 produces 350 hp @ 7,400 rpm and 276 lb-ft @ 5,200"
+     },
+     {
+      "name": "Wikipedia - Nissan 370Z",
+      "url": "https://en.wikipedia.org/wiki/Nissan_370Z",
+      "says": "NISMO: 350 hp @ 7,400, 276 lb-ft @ 5,200"
+     },
+     {
+      "name": "EPA fueleconomy.gov vehicle data",
+      "url": "https://www.fueleconomy.gov/feg/download.shtml",
+      "says": "2014 370Z: 3.7 L 6-cyl NA (cannot separate NISMO)"
+     }
+    ],
+    "status": "three_sources_not_nhra",
+    "independent_sources": 3,
+    "note": "KBB default page for this year shows only the 332-hp trim; Nissan and Wikipedia agree on 350 hp; EPA counts only for the 3.7 L displacement."
+   }
+  ],
+  "2015": [
+   {
+    "gen": "z34",
+    "cid": 226,
+    "liters": 3.7,
+    "hp": 332,
+    "hp_basis": "SAE net",
+    "rpo": "VQ37VHR",
+    "name": "3.7L DOHC V6 with VVEL",
+    "common_name": "VQ37VHR",
+    "trims": [
+     "coupe",
+     "Touring",
+     "Sport",
+     "Roadster"
+    ],
+    "nhra": false,
+    "sources": [
+     {
+      "name": "Nissan USA material (newsroom press kits/releases and nissanusa.com, counted once)",
+      "url": "https://usa.nissannews.com/en-US/releases/us-2015-nissan-370z-coupe-press-kit",
+      "says": "VQ37VHR 3.7-liter with VVEL rated at 332 horsepower @ 7,000 rpm, 270 lb-ft @ 5,200"
+     },
+     {
+      "name": "Wikipedia - Nissan 370Z",
+      "url": "https://en.wikipedia.org/wiki/Nissan_370Z",
+      "says": "VQ37VHR 332 hp @ 7,000; sold in North America 2009-2020; Roadster discontinued after 2019"
+     },
+     {
+      "name": "Kelley Blue Book 2015 Nissan 370Z specs",
+      "url": "https://www.kbb.com/nissan/370z/2015/specs/",
+      "says": "332 @ 7000 listed"
+     },
+     {
+      "name": "EPA fueleconomy.gov vehicle data",
+      "url": "https://www.fueleconomy.gov/feg/download.shtml",
+      "says": "2015 370Z: 3.7 L 6-cyl NA"
+     }
+    ],
+    "status": "three_sources_not_nhra",
+    "independent_sources": 4,
+    "note": ""
+   },
+   {
+    "gen": "z34",
+    "cid": 226,
+    "liters": 3.7,
+    "hp": 350,
+    "hp_basis": "SAE net",
+    "rpo": "VQ37VHR (NISMO)",
+    "name": "3.7L DOHC V6 with VVEL, NISMO tune",
+    "common_name": "NISMO 370Z",
+    "trims": [
+     "NISMO",
+     "NISMO Tech"
+    ],
+    "nhra": false,
+    "sources": [
+     {
+      "name": "Nissan USA material (newsroom press kits/releases and nissanusa.com, counted once)",
+      "url": "https://usa.nissannews.com/en-US/releases/us-2015-nissan-370z-coupe-press-kit",
+      "says": "NISMO 370Z: 3.7-liter VQ-series V6 produces 350 hp @ 7,400 rpm and 276 lb-ft @ 5,200"
+     },
+     {
+      "name": "Wikipedia - Nissan 370Z",
+      "url": "https://en.wikipedia.org/wiki/Nissan_370Z",
+      "says": "NISMO: 350 hp @ 7,400, 276 lb-ft @ 5,200"
+     },
+     {
+      "name": "Kelley Blue Book 2015 Nissan 370Z specs",
+      "url": "https://www.kbb.com/nissan/370z/2015/specs/",
+      "says": "350 @ 7400 listed"
+     },
+     {
+      "name": "EPA fueleconomy.gov vehicle data",
+      "url": "https://www.fueleconomy.gov/feg/download.shtml",
+      "says": "2015 370Z: 3.7 L 6-cyl NA (cannot separate NISMO)"
+     }
+    ],
+    "status": "three_sources_not_nhra",
+    "independent_sources": 4,
+    "note": ""
+   }
+  ],
+  "2016": [
+   {
+    "gen": "z34",
+    "cid": 226,
+    "liters": 3.7,
+    "hp": 332,
+    "hp_basis": "SAE net",
+    "rpo": "VQ37VHR",
+    "name": "3.7L DOHC V6 with VVEL",
+    "common_name": "VQ37VHR",
+    "trims": [
+     "coupe",
+     "Touring",
+     "Sport",
+     "Roadster"
+    ],
+    "nhra": false,
+    "sources": [
+     {
+      "name": "Nissan USA material (newsroom press kits/releases and nissanusa.com, counted once)",
+      "url": "https://usa.nissannews.com/en-US/releases/us-2020-nissan-370z-coupe-press-kit",
+      "says": "VQ37VHR 3.7-liter with VVEL rated at 332 horsepower @ 7,000 rpm, 270 lb-ft @ 5,200 (this year's kit not fetched; 2009-10, 2013-15, 2017-20 kits read)"
+     },
+     {
+      "name": "Wikipedia - Nissan 370Z",
+      "url": "https://en.wikipedia.org/wiki/Nissan_370Z",
+      "says": "VQ37VHR 332 hp @ 7,000; sold in North America 2009-2020; Roadster discontinued after 2019"
+     },
+     {
+      "name": "Kelley Blue Book 2016 Nissan 370Z specs",
+      "url": "https://www.kbb.com/nissan/370z/2016/specs/",
+      "says": "332 @ 7000 listed"
+     },
+     {
+      "name": "EPA fueleconomy.gov vehicle data",
+      "url": "https://www.fueleconomy.gov/feg/download.shtml",
+      "says": "2016 370Z: 3.7 L 6-cyl NA"
+     }
+    ],
+    "status": "three_sources_not_nhra",
+    "independent_sources": 4,
+    "note": ""
+   },
+   {
+    "gen": "z34",
+    "cid": 226,
+    "liters": 3.7,
+    "hp": 350,
+    "hp_basis": "SAE net",
+    "rpo": "VQ37VHR (NISMO)",
+    "name": "3.7L DOHC V6 with VVEL, NISMO tune",
+    "common_name": "NISMO 370Z",
+    "trims": [
+     "NISMO",
+     "NISMO Tech"
+    ],
+    "nhra": false,
+    "sources": [
+     {
+      "name": "Nissan USA material (newsroom press kits/releases and nissanusa.com, counted once)",
+      "url": "https://usa.nissannews.com/en-US/releases/us-2015-nissan-370z-coupe-press-kit",
+      "says": "NISMO 370Z: 3.7-liter VQ-series V6 produces 350 hp @ 7,400 rpm and 276 lb-ft @ 5,200 (this year's kit not fetched; 2015 and 2017 kits read)"
+     },
+     {
+      "name": "Wikipedia - Nissan 370Z",
+      "url": "https://en.wikipedia.org/wiki/Nissan_370Z",
+      "says": "NISMO: 350 hp @ 7,400, 276 lb-ft @ 5,200"
+     },
+     {
+      "name": "Kelley Blue Book 2016 Nissan 370Z specs",
+      "url": "https://www.kbb.com/nissan/370z/2016/specs/",
+      "says": "350 @ 7400 listed"
+     },
+     {
+      "name": "EPA fueleconomy.gov vehicle data",
+      "url": "https://www.fueleconomy.gov/feg/download.shtml",
+      "says": "2016 370Z: 3.7 L 6-cyl NA (cannot separate NISMO)"
+     }
+    ],
+    "status": "three_sources_not_nhra",
+    "independent_sources": 4,
+    "note": ""
+   }
+  ],
+  "2017": [
+   {
+    "gen": "z34",
+    "cid": 226,
+    "liters": 3.7,
+    "hp": 332,
+    "hp_basis": "SAE net",
+    "rpo": "VQ37VHR",
+    "name": "3.7L DOHC V6 with VVEL",
+    "common_name": "VQ37VHR",
+    "trims": [
+     "coupe",
+     "Touring",
+     "Sport",
+     "Roadster"
+    ],
+    "nhra": false,
+    "sources": [
+     {
+      "name": "Nissan USA material (newsroom press kits/releases and nissanusa.com, counted once)",
+      "url": "https://usa.nissannews.com/en-US/releases/us-2017-nissan-370z-coupe-press-kit",
+      "says": "VQ37VHR 3.7-liter with VVEL rated at 332 horsepower @ 7,000 rpm, 270 lb-ft @ 5,200"
+     },
+     {
+      "name": "Wikipedia - Nissan 370Z",
+      "url": "https://en.wikipedia.org/wiki/Nissan_370Z",
+      "says": "VQ37VHR 332 hp @ 7,000; sold in North America 2009-2020; Roadster discontinued after 2019"
+     },
+     {
+      "name": "Kelley Blue Book 2017 Nissan 370Z specs",
+      "url": "https://www.kbb.com/nissan/370z/2017/specs/",
+      "says": "332 @ 7000 listed"
+     },
+     {
+      "name": "EPA fueleconomy.gov vehicle data",
+      "url": "https://www.fueleconomy.gov/feg/download.shtml",
+      "says": "2017 370Z: 3.7 L 6-cyl NA"
+     }
+    ],
+    "status": "three_sources_not_nhra",
+    "independent_sources": 4,
+    "note": ""
+   },
+   {
+    "gen": "z34",
+    "cid": 226,
+    "liters": 3.7,
+    "hp": 350,
+    "hp_basis": "SAE net",
+    "rpo": "VQ37VHR (NISMO)",
+    "name": "3.7L DOHC V6 with VVEL, NISMO tune",
+    "common_name": "NISMO 370Z",
+    "trims": [
+     "NISMO",
+     "NISMO Tech"
+    ],
+    "nhra": false,
+    "sources": [
+     {
+      "name": "Nissan USA material (newsroom press kits/releases and nissanusa.com, counted once)",
+      "url": "https://usa.nissannews.com/en-US/releases/us-2017-nissan-370z-coupe-press-kit",
+      "says": "NISMO 370Z: 3.7-liter VQ-series V6 produces 350 hp @ 7,400 rpm and 276 lb-ft @ 5,200"
+     },
+     {
+      "name": "Wikipedia - Nissan 370Z",
+      "url": "https://en.wikipedia.org/wiki/Nissan_370Z",
+      "says": "NISMO: 350 hp @ 7,400, 276 lb-ft @ 5,200"
+     },
+     {
+      "name": "EPA fueleconomy.gov vehicle data",
+      "url": "https://www.fueleconomy.gov/feg/download.shtml",
+      "says": "2017 370Z: 3.7 L 6-cyl NA (cannot separate NISMO)"
+     }
+    ],
+    "status": "three_sources_not_nhra",
+    "independent_sources": 3,
+    "note": "KBB default page for this year shows only the 332-hp trim; Nissan and Wikipedia agree on 350 hp; EPA counts only for the 3.7 L displacement."
+   }
+  ],
+  "2018": [
+   {
+    "gen": "z34",
+    "cid": 226,
+    "liters": 3.7,
+    "hp": 332,
+    "hp_basis": "SAE net",
+    "rpo": "VQ37VHR",
+    "name": "3.7L DOHC V6 with VVEL",
+    "common_name": "VQ37VHR",
+    "trims": [
+     "coupe",
+     "Touring",
+     "Sport",
+     "Roadster"
+    ],
+    "nhra": false,
+    "sources": [
+     {
+      "name": "Nissan USA material (newsroom press kits/releases and nissanusa.com, counted once)",
+      "url": "https://usa.nissannews.com/en-US/releases/us-2018-nissan-370z-coupe-press-kit",
+      "says": "VQ37VHR 3.7-liter with VVEL rated at 332 horsepower @ 7,000 rpm, 270 lb-ft @ 5,200"
+     },
+     {
+      "name": "Wikipedia - Nissan 370Z",
+      "url": "https://en.wikipedia.org/wiki/Nissan_370Z",
+      "says": "VQ37VHR 332 hp @ 7,000; sold in North America 2009-2020; Roadster discontinued after 2019"
+     },
+     {
+      "name": "Kelley Blue Book 2018 Nissan 370Z specs",
+      "url": "https://www.kbb.com/nissan/370z/2018/specs/",
+      "says": "332 @ 7000 listed"
+     },
+     {
+      "name": "EPA fueleconomy.gov vehicle data",
+      "url": "https://www.fueleconomy.gov/feg/download.shtml",
+      "says": "2018 370Z: 3.7 L 6-cyl NA"
+     }
+    ],
+    "status": "three_sources_not_nhra",
+    "independent_sources": 4,
+    "note": ""
+   },
+   {
+    "gen": "z34",
+    "cid": 226,
+    "liters": 3.7,
+    "hp": 350,
+    "hp_basis": "SAE net",
+    "rpo": "VQ37VHR (NISMO)",
+    "name": "3.7L DOHC V6 with VVEL, NISMO tune",
+    "common_name": "NISMO 370Z",
+    "trims": [
+     "NISMO",
+     "NISMO Tech"
+    ],
+    "nhra": false,
+    "sources": [
+     {
+      "name": "Nissan USA material (newsroom press kits/releases and nissanusa.com, counted once)",
+      "url": "https://usa.nissannews.com/en-US/releases/us-2018-nissan-370z-coupe-press-kit",
+      "says": "NISMO 370Z: 3.7-liter VQ-series V6 produces 350 hp @ 7,400 rpm and 276 lb-ft @ 5,200"
+     },
+     {
+      "name": "Wikipedia - Nissan 370Z",
+      "url": "https://en.wikipedia.org/wiki/Nissan_370Z",
+      "says": "NISMO: 350 hp @ 7,400, 276 lb-ft @ 5,200"
+     },
+     {
+      "name": "Kelley Blue Book 2018 Nissan 370Z specs",
+      "url": "https://www.kbb.com/nissan/370z/2018/specs/",
+      "says": "350 @ 7400 listed"
+     },
+     {
+      "name": "EPA fueleconomy.gov vehicle data",
+      "url": "https://www.fueleconomy.gov/feg/download.shtml",
+      "says": "2018 370Z: 3.7 L 6-cyl NA (cannot separate NISMO)"
+     }
+    ],
+    "status": "three_sources_not_nhra",
+    "independent_sources": 4,
+    "note": ""
+   }
+  ],
+  "2019": [
+   {
+    "gen": "z34",
+    "cid": 226,
+    "liters": 3.7,
+    "hp": 332,
+    "hp_basis": "SAE net",
+    "rpo": "VQ37VHR",
+    "name": "3.7L DOHC V6 with VVEL",
+    "common_name": "VQ37VHR",
+    "trims": [
+     "coupe",
+     "Touring",
+     "Sport",
+     "Roadster"
+    ],
+    "nhra": false,
+    "sources": [
+     {
+      "name": "Nissan USA material (newsroom press kits/releases and nissanusa.com, counted once)",
+      "url": "https://usa.nissannews.com/en-US/releases/us-2019-nissan-370z-coupe-press-kit",
+      "says": "VQ37VHR 3.7-liter with VVEL rated at 332 horsepower @ 7,000 rpm, 270 lb-ft @ 5,200"
+     },
+     {
+      "name": "Wikipedia - Nissan 370Z",
+      "url": "https://en.wikipedia.org/wiki/Nissan_370Z",
+      "says": "VQ37VHR 332 hp @ 7,000; sold in North America 2009-2020; Roadster discontinued after 2019"
+     },
+     {
+      "name": "Kelley Blue Book 2019 Nissan 370Z specs",
+      "url": "https://www.kbb.com/nissan/370z/2019/specs/",
+      "says": "332 @ 7000 listed"
+     },
+     {
+      "name": "EPA fueleconomy.gov vehicle data",
+      "url": "https://www.fueleconomy.gov/feg/download.shtml",
+      "says": "2019 370Z: 3.7 L 6-cyl NA"
+     }
+    ],
+    "status": "three_sources_not_nhra",
+    "independent_sources": 4,
+    "note": ""
+   },
+   {
+    "gen": "z34",
+    "cid": 226,
+    "liters": 3.7,
+    "hp": 350,
+    "hp_basis": "SAE net",
+    "rpo": "VQ37VHR (NISMO)",
+    "name": "3.7L DOHC V6 with VVEL, NISMO tune",
+    "common_name": "NISMO 370Z",
+    "trims": [
+     "NISMO",
+     "NISMO Tech"
+    ],
+    "nhra": false,
+    "sources": [
+     {
+      "name": "Nissan USA material (newsroom press kits/releases and nissanusa.com, counted once)",
+      "url": "https://usa.nissannews.com/en-US/releases/us-2019-nissan-370z-coupe-press-kit",
+      "says": "NISMO 370Z: 3.7-liter VQ-series V6 produces 350 hp @ 7,400 rpm and 276 lb-ft @ 5,200"
+     },
+     {
+      "name": "Wikipedia - Nissan 370Z",
+      "url": "https://en.wikipedia.org/wiki/Nissan_370Z",
+      "says": "NISMO: 350 hp @ 7,400, 276 lb-ft @ 5,200"
+     },
+     {
+      "name": "Kelley Blue Book 2019 Nissan 370Z specs",
+      "url": "https://www.kbb.com/nissan/370z/2019/specs/",
+      "says": "350 @ 7400 listed"
+     },
+     {
+      "name": "EPA fueleconomy.gov vehicle data",
+      "url": "https://www.fueleconomy.gov/feg/download.shtml",
+      "says": "2019 370Z: 3.7 L 6-cyl NA (cannot separate NISMO)"
+     }
+    ],
+    "status": "three_sources_not_nhra",
+    "independent_sources": 4,
+    "note": ""
+   }
+  ],
+  "2020": [
+   {
+    "gen": "z34",
+    "cid": 226,
+    "liters": 3.7,
+    "hp": 332,
+    "hp_basis": "SAE net",
+    "rpo": "VQ37VHR",
+    "name": "3.7L DOHC V6 with VVEL",
+    "common_name": "VQ37VHR",
+    "trims": [
+     "coupe",
+     "Sport",
+     "50th Anniversary"
+    ],
+    "nhra": false,
+    "sources": [
+     {
+      "name": "Nissan USA material (newsroom press kits/releases and nissanusa.com, counted once)",
+      "url": "https://usa.nissannews.com/en-US/releases/us-2020-nissan-370z-coupe-press-kit",
+      "says": "VQ37VHR 3.7-liter with VVEL rated at 332 horsepower @ 7,000 rpm, 270 lb-ft @ 5,200"
+     },
+     {
+      "name": "Wikipedia - Nissan 370Z",
+      "url": "https://en.wikipedia.org/wiki/Nissan_370Z",
+      "says": "VQ37VHR 332 hp @ 7,000; sold in North America 2009-2020; Roadster discontinued after 2019"
+     },
+     {
+      "name": "Kelley Blue Book 2020 Nissan 370Z specs",
+      "url": "https://www.kbb.com/nissan/370z/2020/specs/",
+      "says": "332 @ 7000 listed"
+     },
+     {
+      "name": "EPA fueleconomy.gov vehicle data",
+      "url": "https://www.fueleconomy.gov/feg/download.shtml",
+      "says": "2020 370Z: 3.7 L 6-cyl NA"
+     }
+    ],
+    "status": "three_sources_not_nhra",
+    "independent_sources": 4,
+    "note": ""
+   },
+   {
+    "gen": "z34",
+    "cid": 226,
+    "liters": 3.7,
+    "hp": 350,
+    "hp_basis": "SAE net",
+    "rpo": "VQ37VHR (NISMO)",
+    "name": "3.7L DOHC V6 with VVEL, NISMO tune",
+    "common_name": "NISMO 370Z",
+    "trims": [
+     "NISMO",
+     "NISMO Tech"
+    ],
+    "nhra": false,
+    "sources": [
+     {
+      "name": "Nissan USA material (newsroom press kits/releases and nissanusa.com, counted once)",
+      "url": "https://usa.nissannews.com/en-US/releases/us-2020-nissan-370z-coupe-press-kit",
+      "says": "NISMO 370Z: 3.7-liter VQ-series V6 produces 350 hp @ 7,400 rpm and 276 lb-ft @ 5,200"
+     },
+     {
+      "name": "Wikipedia - Nissan 370Z",
+      "url": "https://en.wikipedia.org/wiki/Nissan_370Z",
+      "says": "NISMO: 350 hp @ 7,400, 276 lb-ft @ 5,200"
+     },
+     {
+      "name": "Kelley Blue Book 2020 Nissan 370Z specs",
+      "url": "https://www.kbb.com/nissan/370z/2020/specs/",
+      "says": "350 @ 7400 listed"
+     },
+     {
+      "name": "EPA fueleconomy.gov vehicle data",
+      "url": "https://www.fueleconomy.gov/feg/download.shtml",
+      "says": "2020 370Z: 3.7 L 6-cyl NA (cannot separate NISMO)"
+     }
+    ],
+    "status": "three_sources_not_nhra",
+    "independent_sources": 4,
+    "note": ""
+   }
+  ],
+  "2023": [
+   {
+    "gen": "rz34",
+    "cid": 183,
+    "liters": 3.0,
+    "hp": 400,
+    "hp_basis": "SAE net",
+    "rpo": "VR30DDTT",
+    "name": "3.0L DOHC twin-turbo V6",
+    "common_name": "VR30DDTT",
+    "trims": [
+     "Sport",
+     "Performance",
+     "Proto Spec"
+    ],
+    "nhra": false,
+    "sources": [
+     {
+      "name": "Nissan USA material (newsroom press kits/releases and nissanusa.com, counted once)",
+      "url": "https://usa.nissannews.com/en-US/releases/2023-nissan-z-press-kit",
+      "says": "VR30DDTT 3.0L V6 Twin Turbo, 400 hp @ 6,400, 350 lb-ft @ 1,600-5,200; nissanusa.com: 400 HP"
+     },
+     {
+      "name": "Wikipedia - Nissan Z (RZ34)",
+      "url": "https://en.wikipedia.org/wiki/Nissan_Z_(RZ34)",
+      "says": "400 hp (298 kW) twin-turbo V6"
+     },
+     {
+      "name": "Kelley Blue Book 2023 Nissan Z specs",
+      "url": "https://www.kbb.com/nissan/z/2023/specs/",
+      "says": "400 @ 6400 listed"
+     },
+     {
+      "name": "EPA fueleconomy.gov vehicle data",
+      "url": "https://www.fueleconomy.gov/feg/download.shtml",
+      "says": "2023 Z: 3.0 L 6-cyl turbo SIDI"
+     }
+    ],
+    "status": "three_sources_not_nhra",
+    "independent_sources": 4,
+    "note": ""
+   }
+  ],
+  "2024": [
+   {
+    "gen": "rz34",
+    "cid": 183,
+    "liters": 3.0,
+    "hp": 400,
+    "hp_basis": "SAE net",
+    "rpo": "VR30DDTT",
+    "name": "3.0L DOHC twin-turbo V6",
+    "common_name": "VR30DDTT",
+    "trims": [
+     "Sport",
+     "Performance"
+    ],
+    "nhra": false,
+    "sources": [
+     {
+      "name": "Nissan USA material (newsroom press kits/releases and nissanusa.com, counted once)",
+      "url": "https://usa.nissannews.com/en-US/releases/2023-nissan-z-press-kit",
+      "says": "VR30DDTT 3.0L V6 Twin Turbo, 400 hp @ 6,400, 350 lb-ft @ 1,600-5,200; nissanusa.com: 400 HP"
+     },
+     {
+      "name": "Wikipedia - Nissan Z (RZ34)",
+      "url": "https://en.wikipedia.org/wiki/Nissan_Z_(RZ34)",
+      "says": "400 hp (298 kW) twin-turbo V6"
+     },
+     {
+      "name": "Kelley Blue Book 2024 Nissan Z specs",
+      "url": "https://www.kbb.com/nissan/z/2024/specs/",
+      "says": "400 @ 6400 listed"
+     },
+     {
+      "name": "EPA fueleconomy.gov vehicle data",
+      "url": "https://www.fueleconomy.gov/feg/download.shtml",
+      "says": "2024 Z: 3.0 L 6-cyl turbo SIDI"
+     }
+    ],
+    "status": "three_sources_not_nhra",
+    "independent_sources": 4,
+    "note": ""
+   },
+   {
+    "gen": "rz34",
+    "cid": 183,
+    "liters": 3.0,
+    "hp": 420,
+    "hp_basis": "SAE net",
+    "rpo": "VR30DDTT (NISMO)",
+    "name": "3.0L DOHC twin-turbo V6, NISMO tune",
+    "common_name": "Z NISMO",
+    "trims": [
+     "NISMO"
+    ],
+    "nhra": false,
+    "sources": [
+     {
+      "name": "Nissan USA material (newsroom press kits/releases and nissanusa.com, counted once)",
+      "url": "https://usa.nissannews.com/en-US/releases/release-97c62b39831fd0f89b402d6c4e12b7a7-2024-nissan-z-nismo-press-kit",
+      "says": "Z NISMO: VR30DDTT, 420 hp @ 6,400"
+     },
+     {
+      "name": "Wikipedia - Nissan Z (RZ34)",
+      "url": "https://en.wikipedia.org/wiki/Nissan_Z_(RZ34)",
+      "says": "Z Nismo 420 hp @ 6,400, 20 hp over base"
+     },
+     {
+      "name": "Kelley Blue Book 2024 Nissan Z specs",
+      "url": "https://www.kbb.com/nissan/z/2024/specs/",
+      "says": "420 listed"
+     },
+     {
+      "name": "EPA fueleconomy.gov vehicle data",
+      "url": "https://www.fueleconomy.gov/feg/download.shtml",
+      "says": "2024 Z NISMO: 3.0 L 6-cyl turbo SIDI"
+     }
+    ],
+    "status": "three_sources_not_nhra",
+    "independent_sources": 4,
+    "note": "NISMO introduced for 2024."
+   }
+  ],
+  "2025": [
+   {
+    "gen": "rz34",
+    "cid": 183,
+    "liters": 3.0,
+    "hp": 400,
+    "hp_basis": "SAE net",
+    "rpo": "VR30DDTT",
+    "name": "3.0L DOHC twin-turbo V6",
+    "common_name": "VR30DDTT",
+    "trims": [
+     "Sport",
+     "Performance"
+    ],
+    "nhra": false,
+    "sources": [
+     {
+      "name": "Nissan USA material (newsroom press kits/releases and nissanusa.com, counted once)",
+      "url": "https://usa.nissannews.com/en-US/releases/2023-nissan-z-press-kit",
+      "says": "VR30DDTT 3.0L V6 Twin Turbo, 400 hp @ 6,400, 350 lb-ft @ 1,600-5,200; nissanusa.com: 400 HP"
+     },
+     {
+      "name": "Wikipedia - Nissan Z (RZ34)",
+      "url": "https://en.wikipedia.org/wiki/Nissan_Z_(RZ34)",
+      "says": "400 hp (298 kW) twin-turbo V6"
+     },
+     {
+      "name": "Kelley Blue Book 2025 Nissan Z specs",
+      "url": "https://www.kbb.com/nissan/z/2025/specs/",
+      "says": "400 @ 6400 listed"
+     },
+     {
+      "name": "EPA fueleconomy.gov vehicle data",
+      "url": "https://www.fueleconomy.gov/feg/download.shtml",
+      "says": "2025 Z: 3.0 L 6-cyl turbo SIDI"
+     }
+    ],
+    "status": "three_sources_not_nhra",
+    "independent_sources": 4,
+    "note": ""
+   },
+   {
+    "gen": "rz34",
+    "cid": 183,
+    "liters": 3.0,
+    "hp": 420,
+    "hp_basis": "SAE net",
+    "rpo": "VR30DDTT (NISMO)",
+    "name": "3.0L DOHC twin-turbo V6, NISMO tune",
+    "common_name": "Z NISMO",
+    "trims": [
+     "NISMO"
+    ],
+    "nhra": false,
+    "sources": [
+     {
+      "name": "Nissan USA material (newsroom press kits/releases and nissanusa.com, counted once)",
+      "url": "https://usa.nissannews.com/en-US/releases/release-97c62b39831fd0f89b402d6c4e12b7a7-2024-nissan-z-nismo-press-kit",
+      "says": "Z NISMO: VR30DDTT, 420 hp @ 6,400"
+     },
+     {
+      "name": "Wikipedia - Nissan Z (RZ34)",
+      "url": "https://en.wikipedia.org/wiki/Nissan_Z_(RZ34)",
+      "says": "Z Nismo 420 hp @ 6,400, 20 hp over base"
+     },
+     {
+      "name": "Kelley Blue Book 2025 Nissan Z specs",
+      "url": "https://www.kbb.com/nissan/z/2025/specs/",
+      "says": "420 listed"
+     },
+     {
+      "name": "EPA fueleconomy.gov vehicle data",
+      "url": "https://www.fueleconomy.gov/feg/download.shtml",
+      "says": "2025 Z NISMO: 3.0 L 6-cyl turbo SIDI"
+     }
+    ],
+    "status": "three_sources_not_nhra",
+    "independent_sources": 4,
+    "note": ""
+   }
+  ],
+  "2026": [
+   {
+    "gen": "rz34",
+    "cid": 183,
+    "liters": 3.0,
+    "hp": 400,
+    "hp_basis": "SAE net",
+    "rpo": "VR30DDTT",
+    "name": "3.0L DOHC twin-turbo V6",
+    "common_name": "VR30DDTT",
+    "trims": [
+     "Sport",
+     "Performance"
+    ],
+    "nhra": false,
+    "sources": [
+     {
+      "name": "Nissan USA material (newsroom press kits/releases and nissanusa.com, counted once)",
+      "url": "https://usa.nissannews.com/en-US/releases/2023-nissan-z-press-kit",
+      "says": "VR30DDTT 3.0L V6 Twin Turbo, 400 hp @ 6,400, 350 lb-ft @ 1,600-5,200; nissanusa.com: 400 HP"
+     },
+     {
+      "name": "Wikipedia - Nissan Z (RZ34)",
+      "url": "https://en.wikipedia.org/wiki/Nissan_Z_(RZ34)",
+      "says": "400 hp (298 kW) twin-turbo V6"
+     },
+     {
+      "name": "Kelley Blue Book 2026 Nissan Z specs",
+      "url": "https://www.kbb.com/nissan/z/2026/specs/",
+      "says": "400 @ 6400 listed"
+     },
+     {
+      "name": "EPA fueleconomy.gov vehicle data",
+      "url": "https://www.fueleconomy.gov/feg/download.shtml",
+      "says": "2026 Z: 3.0 L 6-cyl turbo SIDI"
+     }
+    ],
+    "status": "three_sources_not_nhra",
+    "independent_sources": 4,
+    "note": ""
+   },
+   {
+    "gen": "rz34",
+    "cid": 183,
+    "liters": 3.0,
+    "hp": 420,
+    "hp_basis": "SAE net",
+    "rpo": "VR30DDTT (NISMO)",
+    "name": "3.0L DOHC twin-turbo V6, NISMO tune",
+    "common_name": "Z NISMO",
+    "trims": [
+     "NISMO"
+    ],
+    "nhra": false,
+    "sources": [
+     {
+      "name": "Nissan USA material (newsroom press kits/releases and nissanusa.com, counted once)",
+      "url": "https://usa.nissannews.com/en-US/releases/release-97c62b39831fd0f89b402d6c4e12b7a7-2024-nissan-z-nismo-press-kit",
+      "says": "Z NISMO: VR30DDTT, 420 hp @ 6,400"
+     },
+     {
+      "name": "Wikipedia - Nissan Z (RZ34)",
+      "url": "https://en.wikipedia.org/wiki/Nissan_Z_(RZ34)",
+      "says": "Z Nismo 420 hp @ 6,400, 20 hp over base"
+     },
+     {
+      "name": "Kelley Blue Book 2026 Nissan Z specs",
+      "url": "https://www.kbb.com/nissan/z/2026/specs/",
+      "says": "420 listed"
+     },
+     {
+      "name": "EPA fueleconomy.gov vehicle data",
+      "url": "https://www.fueleconomy.gov/feg/download.shtml",
+      "says": "2026 Z NISMO: 3.0 L 6-cyl turbo SIDI"
+     }
+    ],
+    "status": "three_sources_not_nhra",
+    "independent_sources": 4,
+    "note": ""
+   }
+  ]
+ },
+ "source_index": [
+  {
+   "name": "Nissan USA Newsroom - Nissan Celebrates Four Decades of Sports Car Leadership (2009)",
+   "url": "https://usa.nissannews.com/en-US/releases/release-49ec4ba13840405094f0c893ce9e9239-nissan-celebrates-four-decades-of-sports-car-leadership-with-new-limited-edition-370z-40th-anniversary-model",
+   "type": "manufacturer"
+  },
+  {
+   "name": "nissanusa.com - Nissan Z Cars history",
+   "url": "https://www.nissanusa.com/experience-nissan/news-and-events/nissan-z-car.html",
+   "type": "manufacturer"
+  },
+  {
+   "name": "Nissan USA Newsroom - 350Z / 370Z / Z press kits 2003-2024",
+   "url": "https://usa.nissannews.com/en-US/releases/2023-nissan-z-press-kit",
+   "type": "manufacturer"
+  },
+  {
+   "name": "Consumer Guide - Nissan Z History (HowStuffWorks)",
+   "url": "https://auto.howstuffworks.com/nissan-z-history2.htm",
+   "type": "publication"
+  },
+  {
+   "name": "Consumer Guide blog - 7 Most-Powerful Japanese Cars of 1981",
+   "url": "https://blog.consumerguide.com/7-most-powerful-japanese-cars-of-1981/",
+   "type": "publication"
+  },
+  {
+   "name": "Wikipedia - Nissan S30 / S130 / 300ZX / 350Z / 370Z / Z (RZ34)",
+   "url": "https://en.wikipedia.org/wiki/Nissan_S30",
+   "type": "wikipedia"
+  },
+  {
+   "name": "Kelley Blue Book Nissan specs pages (1992+)",
+   "url": "https://www.kbb.com/nissan/300zx/1992/specs/",
+   "type": "publication"
+  },
+  {
+   "name": "Motor Authority - There is no 2021 Nissan 370Z",
+   "url": "https://www.motorauthority.com/news/1131059_there-is-no-2021-nissan-370z",
+   "type": "publication"
+  },
+  {
+   "name": "EPA fueleconomy.gov vehicle data",
+   "url": "https://www.fueleconomy.gov/feg/download.shtml",
+   "type": "government"
+  }
+ ]
+}

@@ -1,0 +1,78 @@
+{
+ "desc_strip": [
+  "\\s*'BGE'"
+ ],
+ "make": "Ram",
+ "model": "2500 and 3500",
+ "makeSlug": "ram",
+ "slug": "2500-3500",
+ "title": "Ram 2500 and 3500 Engines by Year (1994–2026)",
+ "description": "Every factory engine in the Dodge and Ram 2500 and 3500 pickups by year, 1994–2026: Magnum V8s and the V10, the 5.7 and 6.4 Hemis, and the 5.9 and 6.7 Cummins.",
+ "intro": [
+  "Dodge's heavy-duty Ram 2500 and 3500 arrived with the 1994 redesign; they have been Rams since the 2011 model year. Chassis-cab ratings are not listed. The 5.2 V8 was offered only in the light-duty 2500.",
+  "Pick a year to see every engine offered that model year, with its code, rated horsepower and the trims it came in. Each engine links to its full specs."
+ ],
+ "generations": [
+  {
+   "key": "gen2",
+   "name": "1994–2002",
+   "years": [
+    1994,
+    2002
+   ],
+   "intro": [
+    "The 5.2 and 5.9 Magnum V8s, the 8.0 V10, and the 5.9 Cummins: 12-valve to 1998, then the 24-valve."
+   ]
+  },
+  {
+   "key": "gen3",
+   "name": "2003–2009",
+   "years": [
+    2003,
+    2009
+   ],
+   "intro": [
+    "The 5.7 Hemi, the 8.0 V10 for 2003, and the common-rail 5.9 Cummins, replaced by the 6.7 in 2007."
+   ]
+  },
+  {
+   "key": "gen4",
+   "name": "2010–2018",
+   "years": [
+    2010,
+    2018
+   ],
+   "intro": [
+    "The 5.7 Hemi, the 6.4 Hemi from 2014, and the 6.7 Cummins in standard and High Output tunes."
+   ]
+  },
+  {
+   "key": "gen5",
+   "name": "2019–2026",
+   "years": [
+    2019,
+    2026
+   ],
+   "intro": [
+    "The 6.4 Hemi and the 6.7 Cummins; from 2025 the High Output is the only diesel."
+   ]
+  }
+ ],
+ "files": [
+  "verify_ram-hd-1994-2026.json"
+ ],
+ "merge_trims": true,
+ "family_overrides": [
+  {
+   "years": [
+    1994,
+    2003
+   ],
+   "cid": [
+    360
+   ],
+   "url": "/engines/ram/magnum"
+  }
+ ],
+ "draft": true
+}

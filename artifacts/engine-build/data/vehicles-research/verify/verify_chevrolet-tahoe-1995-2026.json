@@ -1,0 +1,3099 @@
+{
+ "vehicle": "chevrolet-tahoe-1995-2026",
+ "scope": "Chevrolet Tahoe incl. 2-door (1995-1999), 2000 Limited/Z71 GMT400 carryover, Hybrid 2008-2013, Z71/RST/RST Performance Edition, 3.0 Duramax. Suburban excluded; Yukon/Denali-only engines (LQ4 6.0, Denali 6.2) excluded.",
+ "nhra_note": "The NHRA input for this job is empty, so every engine is nhra:false.",
+ "hp_note": "All ratings SAE net (GM marks 2007+ figures SAE J2723 certified).",
+ "years": {
+  "1995": [
+   {
+    "gen": "gmt400",
+    "cid": 350,
+    "hp": 200,
+    "hp_basis": "SAE net",
+    "rpo": "L05",
+    "name": "5.7L / 350 V8 (TBI)",
+    "common_name": "350 TBI",
+    "trims": [
+     "2-door and 4-door (4-door added mid-1995); 2WD and 4WD"
+    ],
+    "nhra": false,
+    "sources": [
+     {
+      "name": "Wikipedia - Chevrolet Tahoe",
+      "url": "https://en.wikipedia.org/wiki/Chevrolet_Tahoe",
+      "says": "1st gen: L05 5.7 TBI 200 hp 1992-1995; L31 Vortec 5700 255 hp 1996-2000; L56 6.5 TD 180 hp 1994-1999 (2-door 4WD)"
+     },
+     {
+      "name": "EPA fueleconomy.gov vehicle data",
+      "url": "https://www.fueleconomy.gov/feg/download.shtml",
+      "says": "1995: 5.7 L 8-cyl, Tahoe 1500 2WD/4WD"
+     },
+     {
+      "name": "Cars.com - 1995 Chevrolet Tahoe specs/review",
+      "url": "https://www.cars.com/research/chevrolet-tahoe-1995/specs/",
+      "says": "review: 200-horsepower cast-iron 5.7-liter V-8 standard; 2-door and 4-door"
+     },
+     {
+      "name": "GM media - 1996 Tahoe press guide, Engines (L31)",
+      "url": "https://web.archive.org/web/2005/http://media.gm.com:80/chevy/pguide/tahoe/taheng1.htm",
+      "says": "1996 press guide comparison: 1995 5.7 Liter 200 @ 4000 rpm, 310 lb-ft (C/K pickup under 8600 GVWR) vs 1996 Vortec 5700"
+     }
+    ],
+    "status": "three_sources_not_nhra",
+    "independent_sources": 4,
+    "note": "GM's 1995 figure comes from the C/K pickup comparison in the 1996 Tahoe press guide; no 1995 Tahoe GM sheet found."
+   },
+   {
+    "gen": "gmt400",
+    "cid": 395,
+    "hp": 180,
+    "hp_basis": "SAE net",
+    "rpo": "L56",
+    "name": "6.5L / 395 V8 turbodiesel",
+    "common_name": "6.5 Turbo Diesel",
+    "trims": [
+     "2-door 4WD only"
+    ],
+    "nhra": false,
+    "sources": [
+     {
+      "name": "Wikipedia - Chevrolet Tahoe",
+      "url": "https://en.wikipedia.org/wiki/Chevrolet_Tahoe",
+      "says": "1st gen: L05 5.7 TBI 200 hp 1992-1995; L31 Vortec 5700 255 hp 1996-2000; L56 6.5 TD 180 hp 1994-1999 (2-door 4WD)"
+     },
+     {
+      "name": "EPA fueleconomy.gov vehicle data",
+      "url": "https://www.fueleconomy.gov/feg/download.shtml",
+      "says": "1995: 6.5 L 8-cyl turbo diesel, Tahoe 1500 4WD"
+     },
+     {
+      "name": "Cars.com - 1995 Chevrolet Tahoe specs/review",
+      "url": "https://www.cars.com/research/chevrolet-tahoe-1995/specs/",
+      "says": "6.5-liter turbocharged diesel available on 2-door models only"
+     },
+     {
+      "name": "GM Canada media - 1996 Chevy Tahoe (archived)",
+      "url": "https://web.archive.org/web/2008/http://media.gm.com:80/ca/gm/en/products/chevy_truck/archives/1996Tahoe.html",
+      "says": "Tahoe history: 1994 6.5-litre Turbo Diesel introduced; 6.5L TD 2-door only, 180 hp @ 3400 (1996 sheet)"
+     }
+    ],
+    "status": "three_sources_not_nhra",
+    "independent_sources": 4,
+    "note": "180 hp is the 1994-1999 figure (Wikipedia; GM 1996 sheet). No 1995-specific GM rating found. GM gives 397 cu in (1996-98 sheets) and 395 cu in (1999)."
+   }
+  ],
+  "1996": [
+   {
+    "gen": "gmt400",
+    "cid": 350,
+    "hp": 255,
+    "hp_basis": "SAE net",
+    "rpo": "L31",
+    "name": "5.7L / 350 V8",
+    "common_name": "Vortec 5700",
+    "trims": [
+     "all; 2-door and 4-door; 2WD and 4WD"
+    ],
+    "nhra": false,
+    "sources": [
+     {
+      "name": "Wikipedia - Chevrolet Tahoe",
+      "url": "https://en.wikipedia.org/wiki/Chevrolet_Tahoe",
+      "says": "1st gen: L05 5.7 TBI 200 hp 1992-1995; L31 Vortec 5700 255 hp 1996-2000; L56 6.5 TD 180 hp 1994-1999 (2-door 4WD)"
+     },
+     {
+      "name": "EPA fueleconomy.gov vehicle data",
+      "url": "https://www.fueleconomy.gov/feg/download.shtml",
+      "says": "1996: 5.7 L 8-cyl (350 V8), Tahoe 1500 2WD/4WD"
+     },
+     {
+      "name": "GM media - 1996 Tahoe press guide, Engines (L31)",
+      "url": "https://web.archive.org/web/2005/http://media.gm.com:80/chevy/pguide/tahoe/taheng1.htm",
+      "says": "1996 Tahoe - Engines (L31): Vortec 5700 255 hp @ 4600, 330 lb-ft"
+     },
+     {
+      "name": "GM Canada media - 1996 Chevy Tahoe (archived)",
+      "url": "https://web.archive.org/web/2008/http://media.gm.com:80/ca/gm/en/products/chevy_truck/archives/1996Tahoe.html",
+      "says": "Vortec 5700 SFI V8 std: 250 hp @ 4600, 335 lb-ft"
+     }
+    ],
+    "status": "disputed",
+    "independent_sources": 3,
+    "note": "GM disagrees with itself: US press guide 255 hp/330 lb-ft, GM Canada spec sheet 250 hp/335 lb-ft. 255 recorded (GM US + Wikipedia); cannot settle which applied to the Tahoe."
+   },
+   {
+    "gen": "gmt400",
+    "cid": 395,
+    "hp": 180,
+    "hp_basis": "SAE net",
+    "rpo": "L56",
+    "name": "6.5L / 395 V8 turbodiesel",
+    "common_name": "6.5 Turbo Diesel",
+    "trims": [
+     "2-door 4WD only"
+    ],
+    "nhra": false,
+    "sources": [
+     {
+      "name": "Wikipedia - Chevrolet Tahoe",
+      "url": "https://en.wikipedia.org/wiki/Chevrolet_Tahoe",
+      "says": "1st gen: L05 5.7 TBI 200 hp 1992-1995; L31 Vortec 5700 255 hp 1996-2000; L56 6.5 TD 180 hp 1994-1999 (2-door 4WD)"
+     },
+     {
+      "name": "EPA fueleconomy.gov vehicle data",
+      "url": "https://www.fueleconomy.gov/feg/download.shtml",
+      "says": "1996: 6.5 L 8-cyl turbo diesel, Tahoe 1500 4WD"
+     },
+     {
+      "name": "GM media - 1996 Tahoe press guide, Engines (L56)",
+      "url": "https://web.archive.org/web/2005/http://media.gm.com:80/chevy/pguide/tahoe/taheng2.htm",
+      "says": "1996 Tahoe - Engines (L56): 6.5 Liter Turbo-Diesel 180 hp @ 3400, 360 lb-ft @ 1700"
+     },
+     {
+      "name": "GM Canada media - 1996 Chevy Tahoe (archived)",
+      "url": "https://web.archive.org/web/2008/http://media.gm.com:80/ca/gm/en/products/chevy_truck/archives/1996Tahoe.html",
+      "says": "6.5L Turbo Diesel V8 2-door model only, 180 hp @ 3400"
+     }
+    ],
+    "status": "three_sources_not_nhra",
+    "independent_sources": 3,
+    "note": "Not offered with Sport Tahoe (GM 1996-97 sheets)."
+   }
+  ],
+  "1997": [
+   {
+    "gen": "gmt400",
+    "cid": 350,
+    "hp": 255,
+    "hp_basis": "SAE net",
+    "rpo": "L31",
+    "name": "5.7L / 350 V8",
+    "common_name": "Vortec 5700",
+    "trims": [
+     "all; 2-door and 4-door; 2WD and 4WD"
+    ],
+    "nhra": false,
+    "sources": [
+     {
+      "name": "Wikipedia - Chevrolet Tahoe",
+      "url": "https://en.wikipedia.org/wiki/Chevrolet_Tahoe",
+      "says": "1st gen: L05 5.7 TBI 200 hp 1992-1995; L31 Vortec 5700 255 hp 1996-2000; L56 6.5 TD 180 hp 1994-1999 (2-door 4WD)"
+     },
+     {
+      "name": "EPA fueleconomy.gov vehicle data",
+      "url": "https://www.fueleconomy.gov/feg/download.shtml",
+      "says": "1997: 5.7 L 8-cyl (350 V8), Tahoe 1500 2WD/4WD"
+     },
+     {
+      "name": "GM media - 1997 Tahoe engines (eng1)",
+      "url": "https://web.archive.org/web/1997/http://media.gm.com:80/chevy/97chevy/tahoe/eng1.htm",
+      "says": "Vortec 5700 V8 (L31) standard on all Tahoe models: 255 HP @ 4600, 330 lb-ft"
+     },
+     {
+      "name": "GM Canada media - 1997 Chevy Tahoe (archived)",
+      "url": "https://web.archive.org/web/2008/http://media.gm.com:80/ca/gm/en/products/chevy_truck/archives/1997Tahoe.html",
+      "says": "Vortec 5700: 255 hp @ 4600, 330 lb-ft"
+     },
+     {
+      "name": "GM media - 1997 Tahoe Police Package",
+      "url": "https://web.archive.org/web/1997/http://media.gm.com:80/chevy/97chevy/specveh/tahoecop.htm",
+      "says": "Police Package: Vortec 5700 250 bhp @ 4600, 335 lb-ft"
+     },
+     {
+      "name": "Cars.com - 1997 Chevrolet Tahoe specs/review",
+      "url": "https://www.cars.com/research/chevrolet-tahoe-1997/specs/",
+      "says": "5.7L/350 250 @ 4600, 325 @ 2800; 2dr and 4dr, 2WD/4WD"
+     }
+    ],
+    "status": "three_sources_not_nhra",
+    "independent_sources": 4,
+    "note": "Cars.com and GM's Police Package sheet give 250 hp (325/335 lb-ft); GM US and Canada Tahoe sheets give 255/330."
+   },
+   {
+    "gen": "gmt400",
+    "cid": 395,
+    "hp": 180,
+    "hp_basis": "SAE net",
+    "rpo": "L56",
+    "name": "6.5L / 395 V8 turbodiesel",
+    "common_name": "6.5 Turbo Diesel",
+    "trims": [
+     "2-door 4WD only"
+    ],
+    "nhra": false,
+    "sources": [
+     {
+      "name": "Wikipedia - Chevrolet Tahoe",
+      "url": "https://en.wikipedia.org/wiki/Chevrolet_Tahoe",
+      "says": "1st gen: L05 5.7 TBI 200 hp 1992-1995; L31 Vortec 5700 255 hp 1996-2000; L56 6.5 TD 180 hp 1994-1999 (2-door 4WD)"
+     },
+     {
+      "name": "EPA fueleconomy.gov vehicle data",
+      "url": "https://www.fueleconomy.gov/feg/download.shtml",
+      "says": "1997: 6.5 L 8-cyl turbo diesel, Tahoe 1500 4WD"
+     },
+     {
+      "name": "GM media - 1997 Tahoe engines (eng1)",
+      "url": "https://web.archive.org/web/1997/http://media.gm.com:80/chevy/97chevy/tahoe/eng1.htm",
+      "says": "L56 6.5 Turbo-Diesel available with Tahoe 2-Door 4x4 models only, 180 hp @ 3400, 360 lb-ft @ 1800"
+     },
+     {
+      "name": "GM Canada media - 1997 Chevy Tahoe (archived)",
+      "url": "https://web.archive.org/web/2008/http://media.gm.com:80/ca/gm/en/products/chevy_truck/archives/1997Tahoe.html",
+      "says": "6.5L V8 Turbo Diesel (2-door models only) 180 hp @ 3400"
+     }
+    ],
+    "status": "three_sources_not_nhra",
+    "independent_sources": 3,
+    "note": "Not offered with Sport Tahoe (GM 1996-97 sheets)."
+   }
+  ],
+  "1998": [
+   {
+    "gen": "gmt400",
+    "cid": 350,
+    "hp": 255,
+    "hp_basis": "SAE net",
+    "rpo": "L31",
+    "name": "5.7L / 350 V8",
+    "common_name": "Vortec 5700",
+    "trims": [
+     "all; 2-door and 4-door; 2WD and 4WD"
+    ],
+    "nhra": false,
+    "sources": [
+     {
+      "name": "Wikipedia - Chevrolet Tahoe",
+      "url": "https://en.wikipedia.org/wiki/Chevrolet_Tahoe",
+      "says": "1st gen: L05 5.7 TBI 200 hp 1992-1995; L31 Vortec 5700 255 hp 1996-2000; L56 6.5 TD 180 hp 1994-1999 (2-door 4WD)"
+     },
+     {
+      "name": "EPA fueleconomy.gov vehicle data",
+      "url": "https://www.fueleconomy.gov/feg/download.shtml",
+      "says": "1998: 5.7 L 8-cyl (350 V8), Tahoe 1500 2WD/4WD"
+     },
+     {
+      "name": "GM media - 1998 Tahoe specifications",
+      "url": "https://web.archive.org/web/1998/http://media.gm.com:80/chevy/98chevy/tahoe/spec1.htm",
+      "says": "Vortec 5700 V8 SFI Standard L31: 255 @ 4600 (SAE net), 330 lb-ft"
+     },
+     {
+      "name": "GM Canada media - 1998 Chevy Tahoe (archived)",
+      "url": "https://web.archive.org/web/2004/http://media.gm.com:80/division/canada/english/products/chevy_truck/archives/1998Tahoe.html",
+      "says": "Vortec 5700: 255 hp @ 4600, 330 lb-ft"
+     }
+    ],
+    "status": "three_sources_not_nhra",
+    "independent_sources": 3,
+    "note": ""
+   },
+   {
+    "gen": "gmt400",
+    "cid": 395,
+    "hp": 180,
+    "hp_basis": "SAE net",
+    "rpo": "L56",
+    "name": "6.5L / 395 V8 turbodiesel",
+    "common_name": "6.5 Turbo Diesel",
+    "trims": [
+     "2-door 4WD only"
+    ],
+    "nhra": false,
+    "sources": [
+     {
+      "name": "Wikipedia - Chevrolet Tahoe",
+      "url": "https://en.wikipedia.org/wiki/Chevrolet_Tahoe",
+      "says": "1st gen: L05 5.7 TBI 200 hp 1992-1995; L31 Vortec 5700 255 hp 1996-2000; L56 6.5 TD 180 hp 1994-1999 (2-door 4WD)"
+     },
+     {
+      "name": "EPA fueleconomy.gov vehicle data",
+      "url": "https://www.fueleconomy.gov/feg/download.shtml",
+      "says": "1998: 6.5 L 8-cyl turbo diesel, Tahoe 1500 4WD"
+     },
+     {
+      "name": "GM Canada media - 1998 Chevy Tahoe (archived)",
+      "url": "https://web.archive.org/web/2004/http://media.gm.com:80/division/canada/english/products/chevy_truck/archives/1998Tahoe.html",
+      "says": "6.5L V8 Turbo Diesel (2-door models only) 180 hp @ 3400, 360 lb-ft @ 1800"
+     }
+    ],
+    "status": "three_sources_not_nhra",
+    "independent_sources": 3,
+    "note": "Not offered with Sport Tahoe (GM 1996-97 sheets)."
+   }
+  ],
+  "1999": [
+   {
+    "gen": "gmt400",
+    "cid": 350,
+    "hp": 255,
+    "hp_basis": "SAE net",
+    "rpo": "L31",
+    "name": "5.7L / 350 V8",
+    "common_name": "Vortec 5700",
+    "trims": [
+     "all; 2-door and 4-door; 2WD and 4WD"
+    ],
+    "nhra": false,
+    "sources": [
+     {
+      "name": "Wikipedia - Chevrolet Tahoe",
+      "url": "https://en.wikipedia.org/wiki/Chevrolet_Tahoe",
+      "says": "1st gen: L05 5.7 TBI 200 hp 1992-1995; L31 Vortec 5700 255 hp 1996-2000; L56 6.5 TD 180 hp 1994-1999 (2-door 4WD)"
+     },
+     {
+      "name": "EPA fueleconomy.gov vehicle data",
+      "url": "https://www.fueleconomy.gov/feg/download.shtml",
+      "says": "1999: 5.7 L 8-cyl (350 V8), Tahoe 1500 2WD/4WD"
+     },
+     {
+      "name": "GM media - 1999 Tahoe specifications",
+      "url": "https://web.archive.org/web/1999/http://media.gm.com:80/chevy/99chevy/tahoe/specs.htm",
+      "says": "L31 Vortec 5700 std: 255 @ 4600 / 190 kW (SAE net), 330 lb-ft"
+     },
+     {
+      "name": "GM Canada media - 1999 Chevy Tahoe (archived)",
+      "url": "https://web.archive.org/web/2004/http://media.gm.com:80/division/canada/english/products/chevy_truck/archives/1999Tahoe.html",
+      "says": "Vortec 5700: 255 hp @ 4600, 330 lb-ft"
+     },
+     {
+      "name": "Cars.com - 1999 Chevrolet Tahoe specs/review",
+      "url": "https://www.cars.com/research/chevrolet-tahoe-1999/specs/",
+      "says": "5.7L/350 255 @ 4600, 330 @ 2800"
+     },
+     {
+      "name": "Kelley Blue Book - 1999 Chevrolet Tahoe",
+      "url": "https://www.kbb.com/chevrolet/tahoe/1999/",
+      "says": "V8, 5.7 Liter 255 @ 4600, 330 lb-ft"
+     }
+    ],
+    "status": "three_sources_not_nhra",
+    "independent_sources": 5,
+    "note": "EPA also lists a 1999 2WD Police 5.7."
+   },
+   {
+    "gen": "gmt400",
+    "cid": 395,
+    "hp": 180,
+    "hp_basis": "SAE net",
+    "rpo": "L56",
+    "name": "6.5L / 395 V8 turbodiesel",
+    "common_name": "6.5 Turbo Diesel",
+    "trims": [
+     "2-door 4WD only"
+    ],
+    "nhra": false,
+    "sources": [
+     {
+      "name": "Wikipedia - Chevrolet Tahoe",
+      "url": "https://en.wikipedia.org/wiki/Chevrolet_Tahoe",
+      "says": "1st gen: L05 5.7 TBI 200 hp 1992-1995; L31 Vortec 5700 255 hp 1996-2000; L56 6.5 TD 180 hp 1994-1999 (2-door 4WD)"
+     },
+     {
+      "name": "EPA fueleconomy.gov vehicle data",
+      "url": "https://www.fueleconomy.gov/feg/download.shtml",
+      "says": "1999: 6.5 L 8-cyl turbo diesel, Tahoe 1500 4WD"
+     },
+     {
+      "name": "GM Canada media - 1999 Chevy Tahoe (archived)",
+      "url": "https://web.archive.org/web/2004/http://media.gm.com:80/division/canada/english/products/chevy_truck/archives/1999Tahoe.html",
+      "says": "6.5L V8 Turbo Diesel (2-door models only) 180 hp @ 3400, 360 lb-ft @ 1800"
+     },
+     {
+      "name": "GM media - 1999 Tahoe specifications",
+      "url": "https://web.archive.org/web/1999/http://media.gm.com:80/chevy/99chevy/tahoe/specs.htm",
+      "says": "footnote: *Available only on 2-Door 4x4"
+     }
+    ],
+    "status": "three_sources_not_nhra",
+    "independent_sources": 3,
+    "note": "Not offered with Sport Tahoe (GM 1996-97 sheets)."
+   }
+  ],
+  "2000": [
+   {
+    "gen": "gmt400",
+    "cid": 350,
+    "hp": 255,
+    "hp_basis": "SAE net",
+    "rpo": "L31",
+    "name": "5.7L / 350 V8",
+    "common_name": "Vortec 5700",
+    "trims": [
+     "Tahoe Limited (2WD) and Tahoe Z71 (4WD), GMT400 4-door carryover only"
+    ],
+    "nhra": false,
+    "sources": [
+     {
+      "name": "Wikipedia - Chevrolet Tahoe",
+      "url": "https://en.wikipedia.org/wiki/Chevrolet_Tahoe",
+      "says": "Tahoe Limited/Z71 (2000): 5.7L Vortec 5700 V8 only"
+     },
+     {
+      "name": "EPA fueleconomy.gov vehicle data",
+      "url": "https://www.fueleconomy.gov/feg/download.shtml",
+      "says": "2000: 5.7 L 8-cyl, Tahoe 1500 2WD and 4WD (alongside 4.8/5.3)"
+     },
+     {
+      "name": "GM media - 2000 Tahoe Limited / Z71 engine",
+      "url": "https://web.archive.org/web/2000/http://media.gm.com:80/chevy/00chevy/00tahoe/00tahoe_limited_z71/tah_ltd_engine.htm",
+      "says": "Vortec 5700 V8 SFI (L31) standard on both the Limited and Z71: 255 hp @ 4600, 330 lb-ft"
+     }
+    ],
+    "status": "three_sources_not_nhra",
+    "independent_sources": 3,
+    "note": ""
+   },
+   {
+    "gen": "gmt800",
+    "cid": 293,
+    "hp": 275,
+    "hp_basis": "SAE net",
+    "rpo": "LR4",
+    "name": "4.8L / 293 V8",
+    "common_name": "Vortec 4800",
+    "trims": [
+     "base / LS, 2WD and 4WD"
+    ],
+    "nhra": false,
+    "sources": [
+     {
+      "name": "Wikipedia - Chevrolet Tahoe",
+      "url": "https://en.wikipedia.org/wiki/Chevrolet_Tahoe",
+      "says": "LR4 275 hp 2000-2003, 285 hp 2004-2006; LM7 285 hp 2000-2003, 295 hp 2004-2006"
+     },
+     {
+      "name": "EPA fueleconomy.gov vehicle data",
+      "url": "https://www.fueleconomy.gov/feg/download.shtml",
+      "says": "2000: 4.8 L 8-cyl, Tahoe 1500 2WD/4WD"
+     },
+     {
+      "name": "GM media - 2000 Tahoe specifications",
+      "url": "https://web.archive.org/web/2005/http://media.gm.com:80/chevy/00chevy/00tahoe/tah_specs.htm",
+      "says": "LR4 Vortec 4800 275 @ 5200, 290 lb-ft (SAE net)"
+     },
+     {
+      "name": "Consumer Guide - Used 2000-06 Chevrolet Tahoe and Suburban",
+      "url": "https://consumerguide.com/used/2000-06-chevrolet-tahoe-and-suburban/",
+      "says": "Base 4.8 V8 275 hp; 285-hp 5.3 V8 in LS/LT Tahoes (2000-06 review)"
+     },
+     {
+      "name": "Cars.com - 2000 Chevrolet Tahoe specs/review",
+      "url": "https://www.cars.com/research/chevrolet-tahoe-2000/specs/",
+      "says": "4.8L/293 275 hp @ 5200, 290 lb-ft"
+     }
+    ],
+    "status": "three_sources_not_nhra",
+    "independent_sources": 5,
+    "note": "EPA also lists a 2000 2WD Police 4.8."
+   },
+   {
+    "gen": "gmt800",
+    "cid": 325,
+    "hp": 285,
+    "hp_basis": "SAE net",
+    "rpo": "LM7",
+    "name": "5.3L / 325 V8",
+    "common_name": "Vortec 5300",
+    "trims": [
+     "LS (opt), LT, Z71; 2WD and 4WD"
+    ],
+    "nhra": false,
+    "sources": [
+     {
+      "name": "Wikipedia - Chevrolet Tahoe",
+      "url": "https://en.wikipedia.org/wiki/Chevrolet_Tahoe",
+      "says": "LR4 275 hp 2000-2003, 285 hp 2004-2006; LM7 285 hp 2000-2003, 295 hp 2004-2006"
+     },
+     {
+      "name": "EPA fueleconomy.gov vehicle data",
+      "url": "https://www.fueleconomy.gov/feg/download.shtml",
+      "says": "2000: 5.3 L 8-cyl, Tahoe 1500 2WD/4WD"
+     },
+     {
+      "name": "GM media - 2000 Tahoe specifications",
+      "url": "https://web.archive.org/web/2005/http://media.gm.com:80/chevy/00chevy/00tahoe/tah_specs.htm",
+      "says": "LM7 Vortec 5300 285 @ 5200, 325 lb-ft (SAE net)"
+     },
+     {
+      "name": "Consumer Guide - Used 2000-06 Chevrolet Tahoe and Suburban",
+      "url": "https://consumerguide.com/used/2000-06-chevrolet-tahoe-and-suburban/",
+      "says": "Base 4.8 V8 275 hp; 285-hp 5.3 V8 in LS/LT Tahoes (2000-06 review)"
+     }
+    ],
+    "status": "three_sources_not_nhra",
+    "independent_sources": 4,
+    "note": ""
+   }
+  ],
+  "2001": [
+   {
+    "gen": "gmt800",
+    "cid": 293,
+    "hp": 275,
+    "hp_basis": "SAE net",
+    "rpo": "LR4",
+    "name": "4.8L / 293 V8",
+    "common_name": "Vortec 4800",
+    "trims": [
+     "base / LS, 2WD and 4WD"
+    ],
+    "nhra": false,
+    "sources": [
+     {
+      "name": "Wikipedia - Chevrolet Tahoe",
+      "url": "https://en.wikipedia.org/wiki/Chevrolet_Tahoe",
+      "says": "LR4 275 hp 2000-2003, 285 hp 2004-2006; LM7 285 hp 2000-2003, 295 hp 2004-2006"
+     },
+     {
+      "name": "EPA fueleconomy.gov vehicle data",
+      "url": "https://www.fueleconomy.gov/feg/download.shtml",
+      "says": "2001: 4.8 L 8-cyl, Tahoe 1500 2WD/4WD"
+     },
+     {
+      "name": "GM media - 2001 Tahoe specifications",
+      "url": "https://web.archive.org/web/2005/http://media.gm.com:80/chevy/01chevy/01tahoe/specs.htm",
+      "says": "RPO LR4 275/205 @ 5200, 290 lb-ft"
+     },
+     {
+      "name": "Consumer Guide - Used 2000-06 Chevrolet Tahoe and Suburban",
+      "url": "https://consumerguide.com/used/2000-06-chevrolet-tahoe-and-suburban/",
+      "says": "Base 4.8 V8 275 hp; 285-hp 5.3 V8 in LS/LT Tahoes (2000-06 review)"
+     }
+    ],
+    "status": "three_sources_not_nhra",
+    "independent_sources": 4,
+    "note": ""
+   },
+   {
+    "gen": "gmt800",
+    "cid": 325,
+    "hp": 285,
+    "hp_basis": "SAE net",
+    "rpo": "LM7",
+    "name": "5.3L / 325 V8",
+    "common_name": "Vortec 5300",
+    "trims": [
+     "LS (opt), LT, Z71; 2WD and 4WD"
+    ],
+    "nhra": false,
+    "sources": [
+     {
+      "name": "Wikipedia - Chevrolet Tahoe",
+      "url": "https://en.wikipedia.org/wiki/Chevrolet_Tahoe",
+      "says": "LR4 275 hp 2000-2003, 285 hp 2004-2006; LM7 285 hp 2000-2003, 295 hp 2004-2006"
+     },
+     {
+      "name": "EPA fueleconomy.gov vehicle data",
+      "url": "https://www.fueleconomy.gov/feg/download.shtml",
+      "says": "2001: 5.3 L 8-cyl, Tahoe 1500 2WD/4WD"
+     },
+     {
+      "name": "GM media - 2001 Tahoe specifications",
+      "url": "https://web.archive.org/web/2005/http://media.gm.com:80/chevy/01chevy/01tahoe/specs.htm",
+      "says": "RPO LM7 285/212 @ 5200, 325 lb-ft"
+     },
+     {
+      "name": "Consumer Guide - Used 2000-06 Chevrolet Tahoe and Suburban",
+      "url": "https://consumerguide.com/used/2000-06-chevrolet-tahoe-and-suburban/",
+      "says": "Base 4.8 V8 275 hp; 285-hp 5.3 V8 in LS/LT Tahoes (2000-06 review)"
+     }
+    ],
+    "status": "three_sources_not_nhra",
+    "independent_sources": 4,
+    "note": ""
+   }
+  ],
+  "2002": [
+   {
+    "gen": "gmt800",
+    "cid": 293,
+    "hp": 275,
+    "hp_basis": "SAE net",
+    "rpo": "LR4",
+    "name": "4.8L / 293 V8",
+    "common_name": "Vortec 4800",
+    "trims": [
+     "base / LS, 2WD and 4WD"
+    ],
+    "nhra": false,
+    "sources": [
+     {
+      "name": "Wikipedia - Chevrolet Tahoe",
+      "url": "https://en.wikipedia.org/wiki/Chevrolet_Tahoe",
+      "says": "LR4 275 hp 2000-2003, 285 hp 2004-2006; LM7 285 hp 2000-2003, 295 hp 2004-2006"
+     },
+     {
+      "name": "EPA fueleconomy.gov vehicle data",
+      "url": "https://www.fueleconomy.gov/feg/download.shtml",
+      "says": "2002: 4.8 L 8-cyl, Tahoe 1500 2WD/4WD"
+     },
+     {
+      "name": "GM Canada media - 2002 Chevy Tahoe (archived)",
+      "url": "https://web.archive.org/web/2004/http://media.gm.com:80/division/canada/english/products/chevy_truck/archives/2002Tahoe.html",
+      "says": "Vortec 4800 275 hp @ 5200, 290 lb-ft"
+     },
+     {
+      "name": "Consumer Guide - Used 2000-06 Chevrolet Tahoe and Suburban",
+      "url": "https://consumerguide.com/used/2000-06-chevrolet-tahoe-and-suburban/",
+      "says": "Base 4.8 V8 275 hp; 285-hp 5.3 V8 in LS/LT Tahoes (2000-06 review)"
+     }
+    ],
+    "status": "three_sources_not_nhra",
+    "independent_sources": 4,
+    "note": ""
+   },
+   {
+    "gen": "gmt800",
+    "cid": 325,
+    "hp": 285,
+    "hp_basis": "SAE net",
+    "rpo": "LM7 / L59 (FlexFuel)",
+    "name": "5.3L / 325 V8",
+    "common_name": "Vortec 5300",
+    "trims": [
+     "LS (opt), LT, Z71; 2WD and 4WD"
+    ],
+    "nhra": false,
+    "sources": [
+     {
+      "name": "Wikipedia - Chevrolet Tahoe",
+      "url": "https://en.wikipedia.org/wiki/Chevrolet_Tahoe",
+      "says": "LR4 275 hp 2000-2003, 285 hp 2004-2006; LM7 285 hp 2000-2003, 295 hp 2004-2006"
+     },
+     {
+      "name": "EPA fueleconomy.gov vehicle data",
+      "url": "https://www.fueleconomy.gov/feg/download.shtml",
+      "says": "2002: 5.3 L 8-cyl, Tahoe 1500 2WD/4WD incl. FLEX-FUEL"
+     },
+     {
+      "name": "GM Canada media - 2002 Chevy Tahoe (archived)",
+      "url": "https://web.archive.org/web/2004/http://media.gm.com:80/division/canada/english/products/chevy_truck/archives/2002Tahoe.html",
+      "says": "Vortec 5300 285 hp @ 5200, 325 lb-ft"
+     },
+     {
+      "name": "Consumer Guide - Used 2000-06 Chevrolet Tahoe and Suburban",
+      "url": "https://consumerguide.com/used/2000-06-chevrolet-tahoe-and-suburban/",
+      "says": "Base 4.8 V8 275 hp; 285-hp 5.3 V8 in LS/LT Tahoes (2000-06 review)"
+     }
+    ],
+    "status": "three_sources_not_nhra",
+    "independent_sources": 4,
+    "note": ""
+   }
+  ],
+  "2003": [
+   {
+    "gen": "gmt800",
+    "cid": 293,
+    "hp": 275,
+    "hp_basis": "SAE net",
+    "rpo": "LR4",
+    "name": "4.8L / 293 V8",
+    "common_name": "Vortec 4800",
+    "trims": [
+     "base / LS, 2WD and 4WD"
+    ],
+    "nhra": false,
+    "sources": [
+     {
+      "name": "Wikipedia - Chevrolet Tahoe",
+      "url": "https://en.wikipedia.org/wiki/Chevrolet_Tahoe",
+      "says": "LR4 275 hp 2000-2003, 285 hp 2004-2006; LM7 285 hp 2000-2003, 295 hp 2004-2006"
+     },
+     {
+      "name": "EPA fueleconomy.gov vehicle data",
+      "url": "https://www.fueleconomy.gov/feg/download.shtml",
+      "says": "2003: 4.8 L 8-cyl, Tahoe 1500 2WD/4WD"
+     },
+     {
+      "name": "GM Canada media - 2003 Chevy Tahoe (archived)",
+      "url": "https://web.archive.org/web/2004/http://media.gm.com:80/division/canada/english/products/chevy_truck/archives/2003Tahoe.html",
+      "says": "Vortec 4800 275 hp @ 5200, 290 lb-ft"
+     },
+     {
+      "name": "Consumer Guide - Used 2000-06 Chevrolet Tahoe and Suburban",
+      "url": "https://consumerguide.com/used/2000-06-chevrolet-tahoe-and-suburban/",
+      "says": "Base 4.8 V8 275 hp; 285-hp 5.3 V8 in LS/LT Tahoes (2000-06 review)"
+     }
+    ],
+    "status": "three_sources_not_nhra",
+    "independent_sources": 4,
+    "note": ""
+   },
+   {
+    "gen": "gmt800",
+    "cid": 325,
+    "hp": 285,
+    "hp_basis": "SAE net",
+    "rpo": "LM7 / L59 (FlexFuel)",
+    "name": "5.3L / 325 V8",
+    "common_name": "Vortec 5300",
+    "trims": [
+     "LS (opt), LT, Z71; 2WD and 4WD"
+    ],
+    "nhra": false,
+    "sources": [
+     {
+      "name": "Wikipedia - Chevrolet Tahoe",
+      "url": "https://en.wikipedia.org/wiki/Chevrolet_Tahoe",
+      "says": "LR4 275 hp 2000-2003, 285 hp 2004-2006; LM7 285 hp 2000-2003, 295 hp 2004-2006"
+     },
+     {
+      "name": "EPA fueleconomy.gov vehicle data",
+      "url": "https://www.fueleconomy.gov/feg/download.shtml",
+      "says": "2003: 5.3 L 8-cyl, Tahoe 1500 2WD/4WD incl. FLEX-FUEL"
+     },
+     {
+      "name": "GM Canada media - 2003 Chevy Tahoe (archived)",
+      "url": "https://web.archive.org/web/2004/http://media.gm.com:80/division/canada/english/products/chevy_truck/archives/2003Tahoe.html",
+      "says": "Vortec 5300 285 hp @ 5200, 325 lb-ft"
+     },
+     {
+      "name": "Consumer Guide - Used 2000-06 Chevrolet Tahoe and Suburban",
+      "url": "https://consumerguide.com/used/2000-06-chevrolet-tahoe-and-suburban/",
+      "says": "Base 4.8 V8 275 hp; 285-hp 5.3 V8 in LS/LT Tahoes (2000-06 review)"
+     },
+     {
+      "name": "Cars.com - 2003 Chevrolet Tahoe specs/review",
+      "url": "https://www.cars.com/research/chevrolet-tahoe-2003/specs/",
+      "says": "5.3L/327 285 hp @ 5200, 325 lb-ft, Flex Fuel"
+     }
+    ],
+    "status": "three_sources_not_nhra",
+    "independent_sources": 5,
+    "note": "EPA also lists 2003-2005 'Tahoe 1500 AWD' 5.3 rows."
+   }
+  ],
+  "2004": [
+   {
+    "gen": "gmt800",
+    "cid": 293,
+    "hp": 285,
+    "hp_basis": "SAE net",
+    "rpo": "LR4",
+    "name": "4.8L / 293 V8",
+    "common_name": "Vortec 4800",
+    "trims": [
+     "base / LS, 2WD and 4WD"
+    ],
+    "nhra": false,
+    "sources": [
+     {
+      "name": "Wikipedia - Chevrolet Tahoe",
+      "url": "https://en.wikipedia.org/wiki/Chevrolet_Tahoe",
+      "says": "LR4 275 hp 2000-2003, 285 hp 2004-2006; LM7 285 hp 2000-2003, 295 hp 2004-2006"
+     },
+     {
+      "name": "EPA fueleconomy.gov vehicle data",
+      "url": "https://www.fueleconomy.gov/feg/download.shtml",
+      "says": "2004: 4.8 L 8-cyl, Tahoe 1500 2WD/4WD"
+     },
+     {
+      "name": "GM media - 2004 Chevy Tahoe specifications (July 2003)",
+      "url": "https://web.archive.org/web/2005/http://media.gm.com:80/division/2004_prodinfo/chevrolet/trucks/tahoe/specs.html",
+      "says": "4.8L 285/213 @ 5600, 295 lb-ft"
+     },
+     {
+      "name": "GM Canada media - 2004 Chevy Tahoe (archived)",
+      "url": "https://web.archive.org/web/2008/http://media.gm.com:80/ca/gm/en/products/chevy_truck/archives/2004Tahoe.html",
+      "says": "Vortec 4800 285 hp, 295 lb-ft"
+     }
+    ],
+    "status": "three_sources_not_nhra",
+    "independent_sources": 3,
+    "note": "Consumer Guide's 2000-06 review gives only the earlier 275-hp figure."
+   },
+   {
+    "gen": "gmt800",
+    "cid": 325,
+    "hp": 295,
+    "hp_basis": "SAE net",
+    "rpo": "LM7 / L59 (FlexFuel)",
+    "name": "5.3L / 325 V8",
+    "common_name": "Vortec 5300",
+    "trims": [
+     "LS (opt), LT, Z71; 2WD and 4WD"
+    ],
+    "nhra": false,
+    "sources": [
+     {
+      "name": "Wikipedia - Chevrolet Tahoe",
+      "url": "https://en.wikipedia.org/wiki/Chevrolet_Tahoe",
+      "says": "LR4 275 hp 2000-2003, 285 hp 2004-2006; LM7 285 hp 2000-2003, 295 hp 2004-2006"
+     },
+     {
+      "name": "EPA fueleconomy.gov vehicle data",
+      "url": "https://www.fueleconomy.gov/feg/download.shtml",
+      "says": "2004: 5.3 L 8-cyl, Tahoe 1500 2WD/4WD incl. FLEX-FUEL"
+     },
+     {
+      "name": "GM media - 2004 Chevy Tahoe specifications (July 2003)",
+      "url": "https://web.archive.org/web/2005/http://media.gm.com:80/division/2004_prodinfo/chevrolet/trucks/tahoe/specs.html",
+      "says": "5.3L (L59) 295/220 @ 5200, 330 lb-ft"
+     },
+     {
+      "name": "GM Canada media - 2004 Chevy Tahoe (archived)",
+      "url": "https://web.archive.org/web/2008/http://media.gm.com:80/ca/gm/en/products/chevy_truck/archives/2004Tahoe.html",
+      "says": "Vortec 5300 295 hp, 330 lb-ft"
+     }
+    ],
+    "status": "three_sources_not_nhra",
+    "independent_sources": 3,
+    "note": "Consumer Guide gives only the earlier 285-hp figure."
+   }
+  ],
+  "2005": [
+   {
+    "gen": "gmt800",
+    "cid": 293,
+    "hp": 285,
+    "hp_basis": "SAE net",
+    "rpo": "LR4",
+    "name": "4.8L / 293 V8",
+    "common_name": "Vortec 4800",
+    "trims": [
+     "base / LS, 2WD and 4WD"
+    ],
+    "nhra": false,
+    "sources": [
+     {
+      "name": "Wikipedia - Chevrolet Tahoe",
+      "url": "https://en.wikipedia.org/wiki/Chevrolet_Tahoe",
+      "says": "LR4 275 hp 2000-2003, 285 hp 2004-2006; LM7 285 hp 2000-2003, 295 hp 2004-2006"
+     },
+     {
+      "name": "EPA fueleconomy.gov vehicle data",
+      "url": "https://www.fueleconomy.gov/feg/download.shtml",
+      "says": "2005: 4.8 L 8-cyl, Tahoe 1500 2WD/4WD"
+     },
+     {
+      "name": "GM Canada media - 2005 Chevy Tahoe (archived)",
+      "url": "https://web.archive.org/web/2008/http://media.gm.com:80/ca/gm/en/products/chevy_truck/archives/2005Tahoe.html",
+      "says": "Vortec 4800 285 hp, 295 lb-ft; std LS 2WD, n/a LS 4WD and LT"
+     }
+    ],
+    "status": "three_sources_not_nhra",
+    "independent_sources": 3,
+    "note": "GM Canada 2005 lineup shows the 4.8 on LS 2WD only, but EPA still lists a 2005 4.8 4WD."
+   },
+   {
+    "gen": "gmt800",
+    "cid": 325,
+    "hp": 295,
+    "hp_basis": "SAE net",
+    "rpo": "LM7 / L59 (FlexFuel)",
+    "name": "5.3L / 325 V8",
+    "common_name": "Vortec 5300",
+    "trims": [
+     "LS (opt), LT, Z71; 2WD and 4WD"
+    ],
+    "nhra": false,
+    "sources": [
+     {
+      "name": "Wikipedia - Chevrolet Tahoe",
+      "url": "https://en.wikipedia.org/wiki/Chevrolet_Tahoe",
+      "says": "LR4 275 hp 2000-2003, 285 hp 2004-2006; LM7 285 hp 2000-2003, 295 hp 2004-2006"
+     },
+     {
+      "name": "EPA fueleconomy.gov vehicle data",
+      "url": "https://www.fueleconomy.gov/feg/download.shtml",
+      "says": "2005: 5.3 L 8-cyl, Tahoe 1500 2WD/4WD incl. FLEX-FUEL"
+     },
+     {
+      "name": "GM Canada media - 2005 Chevy Tahoe (archived)",
+      "url": "https://web.archive.org/web/2008/http://media.gm.com:80/ca/gm/en/products/chevy_truck/archives/2005Tahoe.html",
+      "says": "Vortec 5300 295 hp, 330 lb-ft"
+     },
+     {
+      "name": "Kelley Blue Book - 2005 Chevrolet Tahoe",
+      "url": "https://www.kbb.com/chevrolet/tahoe/2005/",
+      "says": "V8, 5.3 Liter 295 @ 5200, 335 lb-ft"
+     }
+    ],
+    "status": "three_sources_not_nhra",
+    "independent_sources": 4,
+    "note": "KBB gives 335 lb-ft (GM's 2006 figure); GM 2005 gives 330."
+   }
+  ],
+  "2006": [
+   {
+    "gen": "gmt800",
+    "cid": 293,
+    "hp": 285,
+    "hp_basis": "SAE net",
+    "rpo": "LR4",
+    "name": "4.8L / 293 V8",
+    "common_name": "Vortec 4800",
+    "trims": [
+     "LS 2WD only"
+    ],
+    "nhra": false,
+    "sources": [
+     {
+      "name": "Wikipedia - Chevrolet Tahoe",
+      "url": "https://en.wikipedia.org/wiki/Chevrolet_Tahoe",
+      "says": "LR4 275 hp 2000-2003, 285 hp 2004-2006; LM7 285 hp 2000-2003, 295 hp 2004-2006"
+     },
+     {
+      "name": "EPA fueleconomy.gov vehicle data",
+      "url": "https://www.fueleconomy.gov/feg/download.shtml",
+      "says": "2006: 4.8 L 8-cyl, Tahoe 1500 2WD only"
+     },
+     {
+      "name": "GM Canada media - 2006 Chevy Tahoe (archived)",
+      "url": "https://web.archive.org/web/2008/http://media.gm.com:80/ca/gm/en/products/chevy_truck/archives/2006Tahoe.html",
+      "says": "Vortec 4800 285 hp, 295 lb-ft; LS 2WD only"
+     },
+     {
+      "name": "Cars.com - 2006 Chevrolet Tahoe specs/review",
+      "url": "https://www.cars.com/research/chevrolet-tahoe-2006/specs/",
+      "says": "4.8L/293 285 @ 5200, 295 lb-ft"
+     }
+    ],
+    "status": "three_sources_not_nhra",
+    "independent_sources": 4,
+    "note": "4WD 4.8 dropped for 2006 (GM lineup, EPA)."
+   },
+   {
+    "gen": "gmt800",
+    "cid": 325,
+    "hp": 295,
+    "hp_basis": "SAE net",
+    "rpo": "LM7 / L59 (FlexFuel)",
+    "name": "5.3L / 325 V8",
+    "common_name": "Vortec 5300",
+    "trims": [
+     "LS (opt), LT, Z71; 2WD and 4WD"
+    ],
+    "nhra": false,
+    "sources": [
+     {
+      "name": "Wikipedia - Chevrolet Tahoe",
+      "url": "https://en.wikipedia.org/wiki/Chevrolet_Tahoe",
+      "says": "LR4 275 hp 2000-2003, 285 hp 2004-2006; LM7 285 hp 2000-2003, 295 hp 2004-2006"
+     },
+     {
+      "name": "EPA fueleconomy.gov vehicle data",
+      "url": "https://www.fueleconomy.gov/feg/download.shtml",
+      "says": "2006: 5.3 L 8-cyl, Tahoe 1500 2WD/4WD incl. FLEX-FUEL"
+     },
+     {
+      "name": "GM Canada media - 2006 Chevy Tahoe (archived)",
+      "url": "https://web.archive.org/web/2008/http://media.gm.com:80/ca/gm/en/products/chevy_truck/archives/2006Tahoe.html",
+      "says": "Vortec 5300 295 hp, 335 lb-ft; Flex-Fuel 5300 available"
+     }
+    ],
+    "status": "three_sources_not_nhra",
+    "independent_sources": 3,
+    "note": "EPA also lists a 2006 2WD Police 5.3."
+   }
+  ],
+  "2007": [
+   {
+    "gen": "gmt900",
+    "cid": 293,
+    "hp": 295,
+    "hp_basis": "SAE net",
+    "rpo": "LY2",
+    "name": "4.8L / 293 V8",
+    "common_name": "Vortec 4800",
+    "trims": [
+     "LS 2WD only"
+    ],
+    "nhra": false,
+    "sources": [
+     {
+      "name": "Wikipedia - Chevrolet Tahoe",
+      "url": "https://en.wikipedia.org/wiki/Chevrolet_Tahoe",
+      "says": "LY2 4.8 295 hp 2007-2009 (2WD only); LY5 5.3 320 hp 2007-2014; LFA 6.0 hybrid 332 hp 2008-2013"
+     },
+     {
+      "name": "EPA fueleconomy.gov vehicle data",
+      "url": "https://www.fueleconomy.gov/feg/download.shtml",
+      "says": "2007: 4.8 L 8-cyl, Tahoe 1500 2WD"
+     },
+     {
+      "name": "GM Canada media - 2007 Chevy Tahoe (archived)",
+      "url": "https://web.archive.org/web/2008/http://media.gm.com:80/ca/gm/en/products/chevy_truck/archives/2007Tahoe.html",
+      "says": "Vortec 4.8 (LY2) available on 2WD models"
+     },
+     {
+      "name": "Consumer Guide - Used 2007-14 Chevrolet Tahoe",
+      "url": "https://consumerguide.com/used/2007-14-chevrolet-tahoe/",
+      "says": "Choice of 4.8 V8 295 hp or 5.3 V8 320 hp; Hybrid (from 2008) 332-hp 6.0 V8; 4.8 and 6.2 V8s dropped for 2010"
+     }
+    ],
+    "status": "three_sources_not_nhra",
+    "independent_sources": 4,
+    "note": ""
+   },
+   {
+    "gen": "gmt900",
+    "cid": 325,
+    "hp": 320,
+    "hp_basis": "SAE net",
+    "rpo": "LY5 / LMG (E85)",
+    "name": "5.3L / 325 V8",
+    "common_name": "Vortec 5300",
+    "trims": [
+     "LS (opt 2WD), LT, LTZ; 2WD and 4WD"
+    ],
+    "nhra": false,
+    "sources": [
+     {
+      "name": "Wikipedia - Chevrolet Tahoe",
+      "url": "https://en.wikipedia.org/wiki/Chevrolet_Tahoe",
+      "says": "LY2 4.8 295 hp 2007-2009 (2WD only); LY5 5.3 320 hp 2007-2014; LFA 6.0 hybrid 332 hp 2008-2013"
+     },
+     {
+      "name": "EPA fueleconomy.gov vehicle data",
+      "url": "https://www.fueleconomy.gov/feg/download.shtml",
+      "says": "2007: 5.3 L 8-cyl incl. FFV, Tahoe 1500 2WD/4WD"
+     },
+     {
+      "name": "GM Canada media - 2007 Chevy Tahoe (archived)",
+      "url": "https://web.archive.org/web/2008/http://media.gm.com:80/ca/gm/en/products/chevy_truck/archives/2007Tahoe.html",
+      "says": "Vortec 5.3 (LY5) 320 hp, 340 lb-ft with Active Fuel Management std; LMG E85 5.3 also offered"
+     },
+     {
+      "name": "Consumer Guide - Used 2007-14 Chevrolet Tahoe",
+      "url": "https://consumerguide.com/used/2007-14-chevrolet-tahoe/",
+      "says": "Choice of 4.8 V8 295 hp or 5.3 V8 320 hp; Hybrid (from 2008) 332-hp 6.0 V8; 4.8 and 6.2 V8s dropped for 2010"
+     }
+    ],
+    "status": "three_sources_not_nhra",
+    "independent_sources": 4,
+    "note": ""
+   }
+  ],
+  "2008": [
+   {
+    "gen": "gmt900",
+    "cid": 293,
+    "hp": 295,
+    "hp_basis": "SAE net",
+    "rpo": "LY2",
+    "name": "4.8L / 293 V8",
+    "common_name": "Vortec 4800",
+    "trims": [
+     "LS 2WD only"
+    ],
+    "nhra": false,
+    "sources": [
+     {
+      "name": "Wikipedia - Chevrolet Tahoe",
+      "url": "https://en.wikipedia.org/wiki/Chevrolet_Tahoe",
+      "says": "LY2 4.8 295 hp 2007-2009 (2WD only); LY5 5.3 320 hp 2007-2014; LFA 6.0 hybrid 332 hp 2008-2013"
+     },
+     {
+      "name": "EPA fueleconomy.gov vehicle data",
+      "url": "https://www.fueleconomy.gov/feg/download.shtml",
+      "says": "2008: 4.8 L 8-cyl, Tahoe 1500 2WD"
+     },
+     {
+      "name": "GM media - 2008 Chevrolet Tahoe",
+      "url": "https://web.archive.org/web/2008/http://media.gm.com:80/us/chevrolet/en/product_services/r_trucks/r_c_tahoe/08index.html",
+      "says": "LY2 295 / 220 @ 5600, 305 lb-ft; Tahoe 2WD only"
+     },
+     {
+      "name": "Consumer Guide - Used 2007-14 Chevrolet Tahoe",
+      "url": "https://consumerguide.com/used/2007-14-chevrolet-tahoe/",
+      "says": "Choice of 4.8 V8 295 hp or 5.3 V8 320 hp; Hybrid (from 2008) 332-hp 6.0 V8; 4.8 and 6.2 V8s dropped for 2010"
+     }
+    ],
+    "status": "three_sources_not_nhra",
+    "independent_sources": 4,
+    "note": ""
+   },
+   {
+    "gen": "gmt900",
+    "cid": 325,
+    "hp": 320,
+    "hp_basis": "SAE net",
+    "rpo": "LY5 / LMG (E85)",
+    "name": "5.3L / 325 V8",
+    "common_name": "Vortec 5300",
+    "trims": [
+     "LS (opt 2WD), LT, LTZ; 2WD and 4WD"
+    ],
+    "nhra": false,
+    "sources": [
+     {
+      "name": "Wikipedia - Chevrolet Tahoe",
+      "url": "https://en.wikipedia.org/wiki/Chevrolet_Tahoe",
+      "says": "LY2 4.8 295 hp 2007-2009 (2WD only); LY5 5.3 320 hp 2007-2014; LFA 6.0 hybrid 332 hp 2008-2013"
+     },
+     {
+      "name": "EPA fueleconomy.gov vehicle data",
+      "url": "https://www.fueleconomy.gov/feg/download.shtml",
+      "says": "2008: 5.3 L 8-cyl incl. FFV, Tahoe 1500 2WD/4WD"
+     },
+     {
+      "name": "GM media - 2008 Chevrolet Tahoe",
+      "url": "https://web.archive.org/web/2008/http://media.gm.com:80/us/chevrolet/en/product_services/r_trucks/r_c_tahoe/08index.html",
+      "says": "LY5 and LMG (E85): 320 / 239 @ 5200, 340 lb-ft"
+     },
+     {
+      "name": "Consumer Guide - Used 2007-14 Chevrolet Tahoe",
+      "url": "https://consumerguide.com/used/2007-14-chevrolet-tahoe/",
+      "says": "Choice of 4.8 V8 295 hp or 5.3 V8 320 hp; Hybrid (from 2008) 332-hp 6.0 V8; 4.8 and 6.2 V8s dropped for 2010"
+     }
+    ],
+    "status": "three_sources_not_nhra",
+    "independent_sources": 4,
+    "note": ""
+   },
+   {
+    "gen": "gmt900",
+    "cid": 376,
+    "hp": 380,
+    "hp_basis": "SAE net",
+    "rpo": "L92",
+    "name": "6.2L / 376 V8",
+    "common_name": "Vortec 6200",
+    "trims": [
+     "LTZ 2WD only (late availability), 6-speed automatic"
+    ],
+    "nhra": false,
+    "sources": [
+     {
+      "name": "EPA fueleconomy.gov vehicle data",
+      "url": "https://www.fueleconomy.gov/feg/download.shtml",
+      "says": "2008: 6.2 L 8-cyl, Tahoe 1500 2WD"
+     },
+     {
+      "name": "Consumer Guide - Used 2007-14 Chevrolet Tahoe",
+      "url": "https://consumerguide.com/used/2007-14-chevrolet-tahoe/",
+      "says": "option list: 6.2-liter V8 engine, 2WD LTZ, $1295, includes 6-speed automatic"
+     },
+     {
+      "name": "Cars.com - 2008 Chevrolet Tahoe 2WD LTZ specs",
+      "url": "https://www.cars.com/research/chevrolet-tahoe-2008/specs/289620/",
+      "says": "2WD 4dr 1500 LTZ: 380-hp 6.2-liter V8"
+     }
+    ],
+    "status": "three_sources_not_nhra",
+    "independent_sources": 3,
+    "note": "Existence: 3 sources. Rating from Cars.com alone (Autoblog 26 Dec 2007 also reports 380 hp/417 lb-ft; page blocked). Wikipedia gives 395 hp for 2007-2009 and says the 6.2 was offered 2007-2014; EPA and Consumer Guide show it only for 2008-2009.",
+    "hp_status": "single_source"
+   },
+   {
+    "gen": "gmt900",
+    "cid": 364,
+    "hp": 332,
+    "hp_basis": "SAE net",
+    "rpo": "LFA",
+    "name": "6.0L / 364 V8 hybrid",
+    "common_name": "Vortec 6000 Two-Mode Hybrid",
+    "trims": [
+     "Tahoe Hybrid, 2WD and 4WD"
+    ],
+    "nhra": false,
+    "sources": [
+     {
+      "name": "Wikipedia - Chevrolet Tahoe",
+      "url": "https://en.wikipedia.org/wiki/Chevrolet_Tahoe",
+      "says": "LFA 6.0 hybrid 332 hp/367 lb-ft (2008-2013); combined system 379 hp"
+     },
+     {
+      "name": "EPA fueleconomy.gov vehicle data",
+      "url": "https://www.fueleconomy.gov/feg/download.shtml",
+      "says": "2008: 6.0 L 8-cyl, Tahoe Hybrid 2WD/4WD"
+     },
+     {
+      "name": "Consumer Guide - Used 2007-14 Chevrolet Tahoe",
+      "url": "https://consumerguide.com/used/2007-14-chevrolet-tahoe/",
+      "says": "Hybrid introduced for 2008 uses a 332-hp 6.0-liter V8 with electric motor"
+     },
+     {
+      "name": "GM media - 2008 Chevrolet Tahoe",
+      "url": "https://web.archive.org/web/2008/http://media.gm.com:80/us/chevrolet/en/product_services/r_trucks/r_c_tahoe/08index.html",
+      "says": "LFA Vortec 6.0L listed (Tahoe Hybrid); spec column reads 320 hp / 360 lb-ft"
+     }
+    ],
+    "status": "three_sources_not_nhra",
+    "independent_sources": 4,
+    "note": "GM's 2008 US sheet shows 320 hp/360 lb-ft in the LFA column; GM's 2009 Hybrid sheet, Wikipedia, Consumer Guide and KBB give 332/367.",
+    "hybrid": true
+   }
+  ],
+  "2009": [
+   {
+    "gen": "gmt900",
+    "cid": 293,
+    "hp": 295,
+    "hp_basis": "SAE net",
+    "rpo": "LY2",
+    "name": "4.8L / 293 V8",
+    "common_name": "Vortec 4800",
+    "trims": [
+     "LS 2WD only"
+    ],
+    "nhra": false,
+    "sources": [
+     {
+      "name": "Wikipedia - Chevrolet Tahoe",
+      "url": "https://en.wikipedia.org/wiki/Chevrolet_Tahoe",
+      "says": "LY2 4.8 295 hp 2007-2009 (2WD only); LY5 5.3 320 hp 2007-2014; LFA 6.0 hybrid 332 hp 2008-2013"
+     },
+     {
+      "name": "EPA fueleconomy.gov vehicle data",
+      "url": "https://www.fueleconomy.gov/feg/download.shtml",
+      "says": "2009: 4.8 L 8-cyl, Tahoe 1500 2WD"
+     },
+     {
+      "name": "Chevrolet media - 2009 Tahoe specifications (archived)",
+      "url": "https://web.archive.org/web/2009/https://media.chevrolet.com/media/us/en/chevrolet/vehicles/tahoe/2009.tab1.html",
+      "says": "LY2 295 / 220 @ 5600, 305 lb-ft"
+     },
+     {
+      "name": "Consumer Guide - Used 2007-14 Chevrolet Tahoe",
+      "url": "https://consumerguide.com/used/2007-14-chevrolet-tahoe/",
+      "says": "Choice of 4.8 V8 295 hp or 5.3 V8 320 hp; Hybrid (from 2008) 332-hp 6.0 V8; 4.8 and 6.2 V8s dropped for 2010"
+     }
+    ],
+    "status": "three_sources_not_nhra",
+    "independent_sources": 4,
+    "note": ""
+   },
+   {
+    "gen": "gmt900",
+    "cid": 325,
+    "hp": 320,
+    "hp_basis": "SAE net",
+    "rpo": "LY5 / LMG (E85) / LC9 (aluminum, XFE)",
+    "name": "5.3L / 325 V8",
+    "common_name": "Vortec 5300",
+    "trims": [
+     "LS (opt 2WD), LT, LTZ; 2WD and 4WD"
+    ],
+    "nhra": false,
+    "sources": [
+     {
+      "name": "Wikipedia - Chevrolet Tahoe",
+      "url": "https://en.wikipedia.org/wiki/Chevrolet_Tahoe",
+      "says": "LY2 4.8 295 hp 2007-2009 (2WD only); LY5 5.3 320 hp 2007-2014; LFA 6.0 hybrid 332 hp 2008-2013"
+     },
+     {
+      "name": "EPA fueleconomy.gov vehicle data",
+      "url": "https://www.fueleconomy.gov/feg/download.shtml",
+      "says": "2009: 5.3 L 8-cyl incl. FFV, Tahoe 1500 2WD/4WD"
+     },
+     {
+      "name": "Chevrolet media - 2009 Tahoe specifications (archived)",
+      "url": "https://web.archive.org/web/2009/https://media.chevrolet.com/media/us/en/chevrolet/vehicles/tahoe/2009.tab1.html",
+      "says": "LY5/LMG and LC9 5.3: 320 / 239 @ 5200, 340 lb-ft"
+     },
+     {
+      "name": "Consumer Guide - Used 2007-14 Chevrolet Tahoe",
+      "url": "https://consumerguide.com/used/2007-14-chevrolet-tahoe/",
+      "says": "Choice of 4.8 V8 295 hp or 5.3 V8 320 hp; Hybrid (from 2008) 332-hp 6.0 V8; 4.8 and 6.2 V8s dropped for 2010"
+     }
+    ],
+    "status": "three_sources_not_nhra",
+    "independent_sources": 4,
+    "note": ""
+   },
+   {
+    "gen": "gmt900",
+    "cid": 376,
+    "hp": 395,
+    "hp_basis": "SAE net",
+    "rpo": "L9H (FlexFuel)",
+    "name": "6.2L / 376 V8",
+    "common_name": "Vortec 6200",
+    "trims": [
+     "LT / LTZ option; 2WD and 4WD; 6-speed automatic"
+    ],
+    "nhra": false,
+    "sources": [
+     {
+      "name": "Chevrolet media - 2009 Tahoe specifications (archived)",
+      "url": "https://web.archive.org/web/2009/https://media.chevrolet.com/media/us/en/chevrolet/vehicles/tahoe/2009.tab1.html",
+      "says": "Vortec 6.2L V-8 (L9H): 395 / 295 @ 5600, 417 lb-ft"
+     },
+     {
+      "name": "EPA fueleconomy.gov vehicle data",
+      "url": "https://www.fueleconomy.gov/feg/download.shtml",
+      "says": "2009: 6.2 L 8-cyl FFV, Tahoe 1500 2WD/4WD"
+     },
+     {
+      "name": "Consumer Guide - Used 2007-14 Chevrolet Tahoe",
+      "url": "https://consumerguide.com/used/2007-14-chevrolet-tahoe/",
+      "says": "2009 option list: Flex-fuel 6.2-liter V8 (LT/LTZ); 6.2 dropped for 2010"
+     },
+     {
+      "name": "Wikipedia - Chevrolet Tahoe",
+      "url": "https://en.wikipedia.org/wiki/Chevrolet_Tahoe",
+      "says": "6.2 395 hp 2007-2009 (Wikipedia calls it L92)"
+     }
+    ],
+    "status": "three_sources_not_nhra",
+    "independent_sources": 4,
+    "note": "Wikipedia names it L92; GM's 2009 sheet gives L9H (FlexFuel)."
+   },
+   {
+    "gen": "gmt900",
+    "cid": 364,
+    "hp": 332,
+    "hp_basis": "SAE net",
+    "rpo": "LFA",
+    "name": "6.0L / 364 V8 hybrid",
+    "common_name": "Vortec 6000 Two-Mode Hybrid",
+    "trims": [
+     "Tahoe Hybrid, 2WD and 4WD"
+    ],
+    "nhra": false,
+    "sources": [
+     {
+      "name": "Wikipedia - Chevrolet Tahoe",
+      "url": "https://en.wikipedia.org/wiki/Chevrolet_Tahoe",
+      "says": "LFA 6.0 hybrid 332 hp/367 lb-ft (2008-2013); combined system 379 hp"
+     },
+     {
+      "name": "EPA fueleconomy.gov vehicle data",
+      "url": "https://www.fueleconomy.gov/feg/download.shtml",
+      "says": "2009: 6.0 L 8-cyl, Tahoe Hybrid 2WD/4WD"
+     },
+     {
+      "name": "Consumer Guide - Used 2007-14 Chevrolet Tahoe",
+      "url": "https://consumerguide.com/used/2007-14-chevrolet-tahoe/",
+      "says": "Hybrid introduced for 2008 uses a 332-hp 6.0-liter V8 with electric motor"
+     },
+     {
+      "name": "GM Canada media - 2009 Chevy Tahoe Hybrid product information",
+      "url": "https://web.archive.org/web/2009/http://media.gm.com/ca/gm/en/products/VehiclesEng/e9Tahoe-hybrid_PIG.htm",
+      "says": "Vortec 6.0L V-8: 332 hp @ 5100, 367 lb-ft (two-mode hybrid)"
+     }
+    ],
+    "status": "three_sources_not_nhra",
+    "independent_sources": 4,
+    "note": "",
+    "hybrid": true
+   }
+  ],
+  "2010": [
+   {
+    "gen": "gmt900",
+    "cid": 364,
+    "hp": 332,
+    "hp_basis": "SAE net",
+    "rpo": "LFA",
+    "name": "6.0L / 364 V8 hybrid",
+    "common_name": "Vortec 6000 Two-Mode Hybrid",
+    "trims": [
+     "Tahoe Hybrid, 2WD and 4WD"
+    ],
+    "nhra": false,
+    "sources": [
+     {
+      "name": "Wikipedia - Chevrolet Tahoe",
+      "url": "https://en.wikipedia.org/wiki/Chevrolet_Tahoe",
+      "says": "LFA 6.0 hybrid 332 hp/367 lb-ft (2008-2013); combined system 379 hp"
+     },
+     {
+      "name": "EPA fueleconomy.gov vehicle data",
+      "url": "https://www.fueleconomy.gov/feg/download.shtml",
+      "says": "2010: 6.0 L 8-cyl, Tahoe Hybrid 2WD/4WD"
+     },
+     {
+      "name": "Consumer Guide - Used 2007-14 Chevrolet Tahoe",
+      "url": "https://consumerguide.com/used/2007-14-chevrolet-tahoe/",
+      "says": "Hybrid introduced for 2008 uses a 332-hp 6.0-liter V8 with electric motor"
+     },
+     {
+      "name": "Chevrolet media - 2010 Tahoe specifications (archived)",
+      "url": "https://web.archive.org/web/2010/https://media.chevrolet.com/media/us/en/chevrolet/vehicles/tahoe/2010.tab1.html",
+      "says": "Models: Tahoe LS, LT, LTZ, Hybrid"
+     }
+    ],
+    "status": "three_sources_not_nhra",
+    "independent_sources": 4,
+    "note": "",
+    "hybrid": true
+   },
+   {
+    "gen": "gmt900",
+    "cid": 325,
+    "hp": 320,
+    "hp_basis": "SAE net",
+    "rpo": "LMG (iron) / LC9 (aluminum)",
+    "name": "5.3L / 325 V8 FlexFuel",
+    "common_name": "Vortec 5300",
+    "trims": [
+     "all non-hybrid; 2WD and 4WD"
+    ],
+    "nhra": false,
+    "sources": [
+     {
+      "name": "Wikipedia - Chevrolet Tahoe",
+      "url": "https://en.wikipedia.org/wiki/Chevrolet_Tahoe",
+      "says": "LY2 4.8 295 hp 2007-2009 (2WD only); LY5 5.3 320 hp 2007-2014; LFA 6.0 hybrid 332 hp 2008-2013"
+     },
+     {
+      "name": "EPA fueleconomy.gov vehicle data",
+      "url": "https://www.fueleconomy.gov/feg/download.shtml",
+      "says": "2010: 5.3 L 8-cyl FFV, Tahoe 2WD/4WD"
+     },
+     {
+      "name": "Consumer Guide - Used 2007-14 Chevrolet Tahoe",
+      "url": "https://consumerguide.com/used/2007-14-chevrolet-tahoe/",
+      "says": "Choice of 4.8 V8 295 hp or 5.3 V8 320 hp; Hybrid (from 2008) 332-hp 6.0 V8; 4.8 and 6.2 V8s dropped for 2010"
+     },
+     {
+      "name": "Chevrolet media - 2010 Tahoe specifications (archived)",
+      "url": "https://web.archive.org/web/2010/https://media.chevrolet.com/media/us/en/chevrolet/vehicles/tahoe/2010.tab1.html",
+      "says": "LMG and LC9 5.3 FlexFuel listed; Tahoe 2WD (XFE) and 4WD"
+     }
+    ],
+    "status": "three_sources_not_nhra",
+    "independent_sources": 4,
+    "note": "326 hp / 348 lb-ft on E85."
+   }
+  ],
+  "2011": [
+   {
+    "gen": "gmt900",
+    "cid": 364,
+    "hp": 332,
+    "hp_basis": "SAE net",
+    "rpo": "LFA",
+    "name": "6.0L / 364 V8 hybrid",
+    "common_name": "Vortec 6000 Two-Mode Hybrid",
+    "trims": [
+     "Tahoe Hybrid, 2WD and 4WD"
+    ],
+    "nhra": false,
+    "sources": [
+     {
+      "name": "Wikipedia - Chevrolet Tahoe",
+      "url": "https://en.wikipedia.org/wiki/Chevrolet_Tahoe",
+      "says": "LFA 6.0 hybrid 332 hp/367 lb-ft (2008-2013); combined system 379 hp"
+     },
+     {
+      "name": "EPA fueleconomy.gov vehicle data",
+      "url": "https://www.fueleconomy.gov/feg/download.shtml",
+      "says": "2011: 6.0 L 8-cyl, Tahoe Hybrid 2WD/4WD"
+     },
+     {
+      "name": "Consumer Guide - Used 2007-14 Chevrolet Tahoe",
+      "url": "https://consumerguide.com/used/2007-14-chevrolet-tahoe/",
+      "says": "Hybrid introduced for 2008 uses a 332-hp 6.0-liter V8 with electric motor"
+     },
+     {
+      "name": "Chevrolet media - 2011 Tahoe specifications (archived)",
+      "url": "https://web.archive.org/web/2011/https://media.chevrolet.com/media/us/en/chevrolet/vehicles/tahoe/2011.tab1.html",
+      "says": "Models: Tahoe LS, LT, LTZ, Hybrid"
+     }
+    ],
+    "status": "three_sources_not_nhra",
+    "independent_sources": 4,
+    "note": "",
+    "hybrid": true
+   },
+   {
+    "gen": "gmt900",
+    "cid": 325,
+    "hp": 320,
+    "hp_basis": "SAE net",
+    "rpo": "LMG (iron) / LC9 (aluminum)",
+    "name": "5.3L / 325 V8 FlexFuel",
+    "common_name": "Vortec 5300",
+    "trims": [
+     "all non-hybrid; 2WD and 4WD"
+    ],
+    "nhra": false,
+    "sources": [
+     {
+      "name": "Wikipedia - Chevrolet Tahoe",
+      "url": "https://en.wikipedia.org/wiki/Chevrolet_Tahoe",
+      "says": "LY2 4.8 295 hp 2007-2009 (2WD only); LY5 5.3 320 hp 2007-2014; LFA 6.0 hybrid 332 hp 2008-2013"
+     },
+     {
+      "name": "EPA fueleconomy.gov vehicle data",
+      "url": "https://www.fueleconomy.gov/feg/download.shtml",
+      "says": "2011: 5.3 L 8-cyl FFV, Tahoe 2WD/4WD"
+     },
+     {
+      "name": "Consumer Guide - Used 2007-14 Chevrolet Tahoe",
+      "url": "https://consumerguide.com/used/2007-14-chevrolet-tahoe/",
+      "says": "Choice of 4.8 V8 295 hp or 5.3 V8 320 hp; Hybrid (from 2008) 332-hp 6.0 V8; 4.8 and 6.2 V8s dropped for 2010"
+     },
+     {
+      "name": "Chevrolet media - 2011 Tahoe specifications (archived)",
+      "url": "https://web.archive.org/web/2011/https://media.chevrolet.com/media/us/en/chevrolet/vehicles/tahoe/2011.tab1.html",
+      "says": "LMG/LC9: 320 / 239 @ 5400 (gas), 326 (E85), 335 lb-ft"
+     }
+    ],
+    "status": "three_sources_not_nhra",
+    "independent_sources": 4,
+    "note": "326 hp / 348 lb-ft on E85."
+   }
+  ],
+  "2012": [
+   {
+    "gen": "gmt900",
+    "cid": 364,
+    "hp": 332,
+    "hp_basis": "SAE net",
+    "rpo": "LFA",
+    "name": "6.0L / 364 V8 hybrid",
+    "common_name": "Vortec 6000 Two-Mode Hybrid",
+    "trims": [
+     "Tahoe Hybrid, 2WD and 4WD"
+    ],
+    "nhra": false,
+    "sources": [
+     {
+      "name": "Wikipedia - Chevrolet Tahoe",
+      "url": "https://en.wikipedia.org/wiki/Chevrolet_Tahoe",
+      "says": "LFA 6.0 hybrid 332 hp/367 lb-ft (2008-2013); combined system 379 hp"
+     },
+     {
+      "name": "EPA fueleconomy.gov vehicle data",
+      "url": "https://www.fueleconomy.gov/feg/download.shtml",
+      "says": "2012: 6.0 L 8-cyl, Tahoe Hybrid 2WD/4WD"
+     },
+     {
+      "name": "Consumer Guide - Used 2007-14 Chevrolet Tahoe",
+      "url": "https://consumerguide.com/used/2007-14-chevrolet-tahoe/",
+      "says": "Hybrid introduced for 2008 uses a 332-hp 6.0-liter V8 with electric motor"
+     },
+     {
+      "name": "Kelley Blue Book - 2012 Chevrolet Tahoe",
+      "url": "https://www.kbb.com/chevrolet/tahoe/2012/",
+      "says": "6.0-liter V8 Hybrid 332 hp @ 5100, 367 lb-ft"
+     }
+    ],
+    "status": "three_sources_not_nhra",
+    "independent_sources": 4,
+    "note": "",
+    "hybrid": true
+   },
+   {
+    "gen": "gmt900",
+    "cid": 325,
+    "hp": 320,
+    "hp_basis": "SAE net",
+    "rpo": "LMG (iron) / LC9 (aluminum)",
+    "name": "5.3L / 325 V8 FlexFuel",
+    "common_name": "Vortec 5300",
+    "trims": [
+     "all non-hybrid; 2WD and 4WD"
+    ],
+    "nhra": false,
+    "sources": [
+     {
+      "name": "Wikipedia - Chevrolet Tahoe",
+      "url": "https://en.wikipedia.org/wiki/Chevrolet_Tahoe",
+      "says": "LY2 4.8 295 hp 2007-2009 (2WD only); LY5 5.3 320 hp 2007-2014; LFA 6.0 hybrid 332 hp 2008-2013"
+     },
+     {
+      "name": "EPA fueleconomy.gov vehicle data",
+      "url": "https://www.fueleconomy.gov/feg/download.shtml",
+      "says": "2012: 5.3 L 8-cyl FFV, Tahoe 2WD/4WD"
+     },
+     {
+      "name": "Consumer Guide - Used 2007-14 Chevrolet Tahoe",
+      "url": "https://consumerguide.com/used/2007-14-chevrolet-tahoe/",
+      "says": "Choice of 4.8 V8 295 hp or 5.3 V8 320 hp; Hybrid (from 2008) 332-hp 6.0 V8; 4.8 and 6.2 V8s dropped for 2010"
+     },
+     {
+      "name": "Chevrolet media - 2012 Tahoe specifications (archived)",
+      "url": "https://web.archive.org/web/2012/https://media.chevrolet.com/media/us/en/chevrolet/vehicles/tahoe/2012.tab1.html",
+      "says": "LMG/LC9: 320 / 239 @ 5400 (gas), 326 (E85), 335 lb-ft"
+     },
+     {
+      "name": "Kelley Blue Book - 2012 Chevrolet Tahoe",
+      "url": "https://www.kbb.com/chevrolet/tahoe/2012/",
+      "says": "5.3 FlexFuel iron and aluminum block, 320 hp @ 5400, 335 lb-ft"
+     }
+    ],
+    "status": "three_sources_not_nhra",
+    "independent_sources": 5,
+    "note": "326 hp / 348 lb-ft on E85."
+   }
+  ],
+  "2013": [
+   {
+    "gen": "gmt900",
+    "cid": 364,
+    "hp": 332,
+    "hp_basis": "SAE net",
+    "rpo": "LFA",
+    "name": "6.0L / 364 V8 hybrid",
+    "common_name": "Vortec 6000 Two-Mode Hybrid",
+    "trims": [
+     "Tahoe Hybrid, 2WD and 4WD"
+    ],
+    "nhra": false,
+    "sources": [
+     {
+      "name": "Wikipedia - Chevrolet Tahoe",
+      "url": "https://en.wikipedia.org/wiki/Chevrolet_Tahoe",
+      "says": "LFA 6.0 hybrid 332 hp/367 lb-ft (2008-2013); combined system 379 hp"
+     },
+     {
+      "name": "EPA fueleconomy.gov vehicle data",
+      "url": "https://www.fueleconomy.gov/feg/download.shtml",
+      "says": "2013: 6.0 L 8-cyl, Tahoe Hybrid 2WD/4WD"
+     },
+     {
+      "name": "Consumer Guide - Used 2007-14 Chevrolet Tahoe",
+      "url": "https://consumerguide.com/used/2007-14-chevrolet-tahoe/",
+      "says": "Hybrid introduced for 2008 uses a 332-hp 6.0-liter V8 with electric motor"
+     }
+    ],
+    "status": "three_sources_not_nhra",
+    "independent_sources": 3,
+    "note": "",
+    "hybrid": true
+   },
+   {
+    "gen": "gmt900",
+    "cid": 325,
+    "hp": 320,
+    "hp_basis": "SAE net",
+    "rpo": "LMG (iron) / LC9 (aluminum)",
+    "name": "5.3L / 325 V8 FlexFuel",
+    "common_name": "Vortec 5300",
+    "trims": [
+     "all non-hybrid; 2WD and 4WD"
+    ],
+    "nhra": false,
+    "sources": [
+     {
+      "name": "Wikipedia - Chevrolet Tahoe",
+      "url": "https://en.wikipedia.org/wiki/Chevrolet_Tahoe",
+      "says": "LY2 4.8 295 hp 2007-2009 (2WD only); LY5 5.3 320 hp 2007-2014; LFA 6.0 hybrid 332 hp 2008-2013"
+     },
+     {
+      "name": "EPA fueleconomy.gov vehicle data",
+      "url": "https://www.fueleconomy.gov/feg/download.shtml",
+      "says": "2013: 5.3 L 8-cyl FFV, Tahoe 2WD/4WD"
+     },
+     {
+      "name": "Consumer Guide - Used 2007-14 Chevrolet Tahoe",
+      "url": "https://consumerguide.com/used/2007-14-chevrolet-tahoe/",
+      "says": "Choice of 4.8 V8 295 hp or 5.3 V8 320 hp; Hybrid (from 2008) 332-hp 6.0 V8; 4.8 and 6.2 V8s dropped for 2010"
+     },
+     {
+      "name": "Chevrolet media - 2013 Tahoe specifications (archived)",
+      "url": "https://web.archive.org/web/2013/https://media.chevrolet.com/media/us/en/chevrolet/vehicles/tahoe/2013.tab1.html",
+      "says": "LMG/LC9: 320 / 239 @ 5400 (gas), 326 (E85), 335 lb-ft"
+     }
+    ],
+    "status": "three_sources_not_nhra",
+    "independent_sources": 4,
+    "note": "326 hp / 348 lb-ft on E85."
+   }
+  ],
+  "2014": [
+   {
+    "gen": "gmt900",
+    "cid": 325,
+    "hp": 320,
+    "hp_basis": "SAE net",
+    "rpo": "LMG (iron) / LC9 (aluminum)",
+    "name": "5.3L / 325 V8 FlexFuel",
+    "common_name": "Vortec 5300",
+    "trims": [
+     "all non-hybrid; 2WD and 4WD"
+    ],
+    "nhra": false,
+    "sources": [
+     {
+      "name": "Wikipedia - Chevrolet Tahoe",
+      "url": "https://en.wikipedia.org/wiki/Chevrolet_Tahoe",
+      "says": "LY2 4.8 295 hp 2007-2009 (2WD only); LY5 5.3 320 hp 2007-2014; LFA 6.0 hybrid 332 hp 2008-2013"
+     },
+     {
+      "name": "EPA fueleconomy.gov vehicle data",
+      "url": "https://www.fueleconomy.gov/feg/download.shtml",
+      "says": "2014: 5.3 L 8-cyl FFV, Tahoe 2WD/4WD"
+     },
+     {
+      "name": "Consumer Guide - Used 2007-14 Chevrolet Tahoe",
+      "url": "https://consumerguide.com/used/2007-14-chevrolet-tahoe/",
+      "says": "Choice of 4.8 V8 295 hp or 5.3 V8 320 hp; Hybrid (from 2008) 332-hp 6.0 V8; 4.8 and 6.2 V8s dropped for 2010"
+     },
+     {
+      "name": "Kelley Blue Book - 2014 Chevrolet Tahoe",
+      "url": "https://www.kbb.com/chevrolet/tahoe/2014/",
+      "says": "5.3-liter V8 FlexFuel 320 hp @ 5400 (gas), 326 E85, 335 lb-ft"
+     }
+    ],
+    "status": "three_sources_not_nhra",
+    "independent_sources": 4,
+    "note": "326 hp / 348 lb-ft on E85."
+   }
+  ],
+  "2015": [
+   {
+    "gen": "k2xx",
+    "cid": 325,
+    "hp": 355,
+    "hp_basis": "SAE net",
+    "rpo": "L83",
+    "name": "5.3L / 325 V8",
+    "common_name": "EcoTec3 5.3",
+    "trims": [
+     "all; 2WD and 4WD"
+    ],
+    "nhra": false,
+    "sources": [
+     {
+      "name": "Wikipedia - Chevrolet Tahoe",
+      "url": "https://en.wikipedia.org/wiki/Chevrolet_Tahoe",
+      "says": "L83 5.3 EcoTec3 355 hp/383 lb-ft std; 6.2 EcoTec3 420 hp/460 lb-ft Tahoe RST Performance Pack (2018+)"
+     },
+     {
+      "name": "EPA fueleconomy.gov vehicle data",
+      "url": "https://www.fueleconomy.gov/feg/download.shtml",
+      "says": "2015: 5.3 L 8-cyl SIDI (incl. FFV), Tahoe C1500/K1500"
+     },
+     {
+      "name": "Chevrolet media - 2015 Tahoe specifications (archived)",
+      "url": "https://web.archive.org/web/2015/https://media.chevrolet.com/media/us/en/chevrolet/vehicles/tahoe/2015.tab1.html",
+      "says": "5.3 355 @ 5600, 383 lb-ft (SAE certified)"
+     },
+     {
+      "name": "Kelley Blue Book - 2015 Chevrolet Tahoe",
+      "url": "https://www.kbb.com/chevrolet/tahoe/2015/",
+      "says": "5.3-liter V8 355 hp @ 5600, 383 lb-ft"
+     }
+    ],
+    "status": "three_sources_not_nhra",
+    "independent_sources": 4,
+    "note": "380 hp on E85 (GM 2016)."
+   }
+  ],
+  "2016": [
+   {
+    "gen": "k2xx",
+    "cid": 325,
+    "hp": 355,
+    "hp_basis": "SAE net",
+    "rpo": "L83",
+    "name": "5.3L / 325 V8",
+    "common_name": "EcoTec3 5.3",
+    "trims": [
+     "all; 2WD and 4WD"
+    ],
+    "nhra": false,
+    "sources": [
+     {
+      "name": "Wikipedia - Chevrolet Tahoe",
+      "url": "https://en.wikipedia.org/wiki/Chevrolet_Tahoe",
+      "says": "L83 5.3 EcoTec3 355 hp/383 lb-ft std; 6.2 EcoTec3 420 hp/460 lb-ft Tahoe RST Performance Pack (2018+)"
+     },
+     {
+      "name": "EPA fueleconomy.gov vehicle data",
+      "url": "https://www.fueleconomy.gov/feg/download.shtml",
+      "says": "2016: 5.3 L 8-cyl SIDI (incl. FFV), Tahoe C1500/K1500"
+     },
+     {
+      "name": "Chevrolet media - 2016 Tahoe specifications (archived)",
+      "url": "https://web.archive.org/web/2016/https://media.chevrolet.com/media/us/en/chevrolet/vehicles/tahoe/2016.tab1.html",
+      "says": "5.3 355 @ 5600 (gas), 380 (E85), 383 lb-ft"
+     }
+    ],
+    "status": "three_sources_not_nhra",
+    "independent_sources": 3,
+    "note": "380 hp on E85 (GM 2016)."
+   }
+  ],
+  "2017": [
+   {
+    "gen": "k2xx",
+    "cid": 325,
+    "hp": 355,
+    "hp_basis": "SAE net",
+    "rpo": "L83",
+    "name": "5.3L / 325 V8",
+    "common_name": "EcoTec3 5.3",
+    "trims": [
+     "all; 2WD and 4WD"
+    ],
+    "nhra": false,
+    "sources": [
+     {
+      "name": "Wikipedia - Chevrolet Tahoe",
+      "url": "https://en.wikipedia.org/wiki/Chevrolet_Tahoe",
+      "says": "L83 5.3 EcoTec3 355 hp/383 lb-ft std; 6.2 EcoTec3 420 hp/460 lb-ft Tahoe RST Performance Pack (2018+)"
+     },
+     {
+      "name": "EPA fueleconomy.gov vehicle data",
+      "url": "https://www.fueleconomy.gov/feg/download.shtml",
+      "says": "2017: 5.3 L 8-cyl SIDI (incl. FFV), Tahoe C1500/K1500"
+     },
+     {
+      "name": "Kelley Blue Book - 2017 Chevrolet Tahoe",
+      "url": "https://www.kbb.com/chevrolet/tahoe/2017/",
+      "says": "5.3-liter V8 355 hp @ 5600, 383 lb-ft; sole engine"
+     }
+    ],
+    "status": "three_sources_not_nhra",
+    "independent_sources": 3,
+    "note": "380 hp on E85 (GM 2016)."
+   }
+  ],
+  "2018": [
+   {
+    "gen": "k2xx",
+    "cid": 325,
+    "hp": 355,
+    "hp_basis": "SAE net",
+    "rpo": "L83",
+    "name": "5.3L / 325 V8",
+    "common_name": "EcoTec3 5.3",
+    "trims": [
+     "all; 2WD and 4WD"
+    ],
+    "nhra": false,
+    "sources": [
+     {
+      "name": "Wikipedia - Chevrolet Tahoe",
+      "url": "https://en.wikipedia.org/wiki/Chevrolet_Tahoe",
+      "says": "L83 5.3 EcoTec3 355 hp/383 lb-ft std; 6.2 EcoTec3 420 hp/460 lb-ft Tahoe RST Performance Pack (2018+)"
+     },
+     {
+      "name": "EPA fueleconomy.gov vehicle data",
+      "url": "https://www.fueleconomy.gov/feg/download.shtml",
+      "says": "2018: 5.3 L 8-cyl SIDI (incl. FFV), Tahoe C1500/K1500"
+     },
+     {
+      "name": "Chevrolet media - 2018 Tahoe specifications (archived)",
+      "url": "https://web.archive.org/web/2018/https://media.chevrolet.com/media/us/en/chevrolet/vehicles/tahoe/2018.tab1.html",
+      "says": "5.3L V-8 DI 355 / 265 @ 5600, 383 lb-ft"
+     },
+     {
+      "name": "Kelley Blue Book - 2018 Chevrolet Tahoe",
+      "url": "https://www.kbb.com/chevrolet/tahoe/2018/",
+      "says": "5.3 355 hp (LS, LT, Premier)"
+     }
+    ],
+    "status": "three_sources_not_nhra",
+    "independent_sources": 4,
+    "note": "380 hp on E85 (GM 2016)."
+   },
+   {
+    "gen": "k2xx",
+    "cid": 376,
+    "hp": 420,
+    "hp_basis": "SAE net",
+    "rpo": "L86",
+    "name": "6.2L / 376 V8",
+    "common_name": "EcoTec3 6.2",
+    "trims": [
+     "RST 6.2L Performance Package (and Premier Plus)"
+    ],
+    "nhra": false,
+    "sources": [
+     {
+      "name": "Wikipedia - Chevrolet Tahoe",
+      "url": "https://en.wikipedia.org/wiki/Chevrolet_Tahoe",
+      "says": "L83 5.3 EcoTec3 355 hp/383 lb-ft std; 6.2 EcoTec3 420 hp/460 lb-ft Tahoe RST Performance Pack (2018+)"
+     },
+     {
+      "name": "EPA fueleconomy.gov vehicle data",
+      "url": "https://www.fueleconomy.gov/feg/download.shtml",
+      "says": "2018: 6.2 L 8-cyl SIDI, Tahoe C1500/K1500"
+     },
+     {
+      "name": "Chevrolet media - 2018 Tahoe specifications (archived)",
+      "url": "https://web.archive.org/web/2018/https://media.chevrolet.com/media/us/en/chevrolet/vehicles/tahoe/2018.tab1.html",
+      "says": "6.2L V-8 DI 420 / 313 @ 5600, 460 lb-ft; 10-speed"
+     },
+     {
+      "name": "Kelley Blue Book - 2018 Chevrolet Tahoe",
+      "url": "https://www.kbb.com/chevrolet/tahoe/2018/",
+      "says": "6.2 420 hp exclusive to RST with Performance Package"
+     }
+    ],
+    "status": "three_sources_not_nhra",
+    "independent_sources": 4,
+    "note": "Wikipedia gives the code as 'L86/L87'; L86 is the K2XX 6.2."
+   }
+  ],
+  "2019": [
+   {
+    "gen": "k2xx",
+    "cid": 325,
+    "hp": 355,
+    "hp_basis": "SAE net",
+    "rpo": "L83",
+    "name": "5.3L / 325 V8",
+    "common_name": "EcoTec3 5.3",
+    "trims": [
+     "all; 2WD and 4WD"
+    ],
+    "nhra": false,
+    "sources": [
+     {
+      "name": "Wikipedia - Chevrolet Tahoe",
+      "url": "https://en.wikipedia.org/wiki/Chevrolet_Tahoe",
+      "says": "L83 5.3 EcoTec3 355 hp/383 lb-ft std; 6.2 EcoTec3 420 hp/460 lb-ft Tahoe RST Performance Pack (2018+)"
+     },
+     {
+      "name": "EPA fueleconomy.gov vehicle data",
+      "url": "https://www.fueleconomy.gov/feg/download.shtml",
+      "says": "2019: 5.3 L 8-cyl SIDI (incl. FFV), Tahoe C1500/K1500"
+     },
+     {
+      "name": "Chevrolet media - 2019 Tahoe specifications (archived)",
+      "url": "https://web.archive.org/web/2019/https://media.chevrolet.com/media/us/en/chevrolet/vehicles/tahoe/2019.tab1.html",
+      "says": "5.3L V-8 DI 355 / 265 @ 5600, 383 lb-ft"
+     }
+    ],
+    "status": "three_sources_not_nhra",
+    "independent_sources": 3,
+    "note": "380 hp on E85 (GM 2016)."
+   },
+   {
+    "gen": "k2xx",
+    "cid": 376,
+    "hp": 420,
+    "hp_basis": "SAE net",
+    "rpo": "L86",
+    "name": "6.2L / 376 V8",
+    "common_name": "EcoTec3 6.2",
+    "trims": [
+     "RST 6.2L Performance Package (and Premier Plus)"
+    ],
+    "nhra": false,
+    "sources": [
+     {
+      "name": "Wikipedia - Chevrolet Tahoe",
+      "url": "https://en.wikipedia.org/wiki/Chevrolet_Tahoe",
+      "says": "L83 5.3 EcoTec3 355 hp/383 lb-ft std; 6.2 EcoTec3 420 hp/460 lb-ft Tahoe RST Performance Pack (2018+)"
+     },
+     {
+      "name": "EPA fueleconomy.gov vehicle data",
+      "url": "https://www.fueleconomy.gov/feg/download.shtml",
+      "says": "2019: 6.2 L 8-cyl SIDI, Tahoe C1500/K1500"
+     },
+     {
+      "name": "Chevrolet media - 2019 Tahoe specifications (archived)",
+      "url": "https://web.archive.org/web/2019/https://media.chevrolet.com/media/us/en/chevrolet/vehicles/tahoe/2019.tab1.html",
+      "says": "6.2L V-8 DI 420 / 313 @ 5600, 460 lb-ft; 10L80"
+     }
+    ],
+    "status": "three_sources_not_nhra",
+    "independent_sources": 3,
+    "note": "Wikipedia gives the code as 'L86/L87'; L86 is the K2XX 6.2."
+   }
+  ],
+  "2020": [
+   {
+    "gen": "k2xx",
+    "cid": 325,
+    "hp": 355,
+    "hp_basis": "SAE net",
+    "rpo": "L83",
+    "name": "5.3L / 325 V8",
+    "common_name": "EcoTec3 5.3",
+    "trims": [
+     "all; 2WD and 4WD"
+    ],
+    "nhra": false,
+    "sources": [
+     {
+      "name": "Wikipedia - Chevrolet Tahoe",
+      "url": "https://en.wikipedia.org/wiki/Chevrolet_Tahoe",
+      "says": "L83 5.3 EcoTec3 355 hp/383 lb-ft std; 6.2 EcoTec3 420 hp/460 lb-ft Tahoe RST Performance Pack (2018+)"
+     },
+     {
+      "name": "EPA fueleconomy.gov vehicle data",
+      "url": "https://www.fueleconomy.gov/feg/download.shtml",
+      "says": "2020: 5.3 L 8-cyl SIDI (incl. FFV), Tahoe C1500/K1500"
+     },
+     {
+      "name": "Kelley Blue Book - 2020 Chevrolet Tahoe",
+      "url": "https://www.kbb.com/chevrolet/tahoe/2020/",
+      "says": "5.3 EcoTec3 355 hp @ 5600, 383 lb-ft, all trims"
+     }
+    ],
+    "status": "three_sources_not_nhra",
+    "independent_sources": 3,
+    "note": "380 hp on E85 (GM 2016)."
+   },
+   {
+    "gen": "k2xx",
+    "cid": 376,
+    "hp": 420,
+    "hp_basis": "SAE net",
+    "rpo": "L86",
+    "name": "6.2L / 376 V8",
+    "common_name": "EcoTec3 6.2",
+    "trims": [
+     "RST 6.2L Performance Package (and Premier Plus)"
+    ],
+    "nhra": false,
+    "sources": [
+     {
+      "name": "Wikipedia - Chevrolet Tahoe",
+      "url": "https://en.wikipedia.org/wiki/Chevrolet_Tahoe",
+      "says": "L83 5.3 EcoTec3 355 hp/383 lb-ft std; 6.2 EcoTec3 420 hp/460 lb-ft Tahoe RST Performance Pack (2018+)"
+     },
+     {
+      "name": "EPA fueleconomy.gov vehicle data",
+      "url": "https://www.fueleconomy.gov/feg/download.shtml",
+      "says": "2020: 6.2 L 8-cyl SIDI, Tahoe C1500/K1500"
+     },
+     {
+      "name": "Kelley Blue Book - 2020 Chevrolet Tahoe",
+      "url": "https://www.kbb.com/chevrolet/tahoe/2020/",
+      "says": "6.2 420 hp, Premier with RST Performance Package"
+     }
+    ],
+    "status": "three_sources_not_nhra",
+    "independent_sources": 3,
+    "note": "Wikipedia gives the code as 'L86/L87'; L86 is the K2XX 6.2."
+   }
+  ],
+  "2021": [
+   {
+    "gen": "t1",
+    "cid": 325,
+    "hp": 355,
+    "hp_basis": "SAE net",
+    "rpo": "L84",
+    "name": "5.3L / 325 V8",
+    "common_name": "EcoTec3 5.3",
+    "trims": [
+     "LS, LT, RST, Z71, Premier; 2WD and 4WD"
+    ],
+    "nhra": false,
+    "sources": [
+     {
+      "name": "Wikipedia - Chevrolet Tahoe",
+      "url": "https://en.wikipedia.org/wiki/Chevrolet_Tahoe",
+      "says": "5th gen: L84 5.3 std; L87 6.2 (High Country); 3.0L Duramax I6 turbodiesel available"
+     },
+     {
+      "name": "EPA fueleconomy.gov vehicle data",
+      "url": "https://www.fueleconomy.gov/feg/download.shtml",
+      "says": "2021: 5.3 L 8-cyl SIDI, Tahoe 2WD/4WD"
+     },
+     {
+      "name": "Kelley Blue Book - 2021 Chevrolet Tahoe",
+      "url": "https://www.kbb.com/chevrolet/tahoe/2021/",
+      "says": "5.3L V8 355 hp, 383 lb-ft"
+     },
+     {
+      "name": "Chevrolet media - 2021 Tahoe specifications (archived)",
+      "url": "https://web.archive.org/web/2021/https://media.chevrolet.com/media/us/en/chevrolet/vehicles/tahoe/2021.tab1.html",
+      "says": "5.3L V-8 DFM 355 / 265 @ 5600, 383 lb-ft (SAE certified)"
+     }
+    ],
+    "status": "three_sources_not_nhra",
+    "independent_sources": 4,
+    "note": ""
+   },
+   {
+    "gen": "t1",
+    "cid": 376,
+    "hp": 420,
+    "hp_basis": "SAE net",
+    "rpo": "L87",
+    "name": "6.2L / 376 V8",
+    "common_name": "EcoTec3 6.2",
+    "trims": [
+     "std High Country; opt RST, Z71, Premier"
+    ],
+    "nhra": false,
+    "sources": [
+     {
+      "name": "Wikipedia - Chevrolet Tahoe",
+      "url": "https://en.wikipedia.org/wiki/Chevrolet_Tahoe",
+      "says": "5th gen: L84 5.3 std; L87 6.2 (High Country); 3.0L Duramax I6 turbodiesel available"
+     },
+     {
+      "name": "EPA fueleconomy.gov vehicle data",
+      "url": "https://www.fueleconomy.gov/feg/download.shtml",
+      "says": "2021: 6.2 L 8-cyl SIDI, Tahoe 2WD/4WD"
+     },
+     {
+      "name": "Kelley Blue Book - 2021 Chevrolet Tahoe",
+      "url": "https://www.kbb.com/chevrolet/tahoe/2021/",
+      "says": "6.2L V8 420 hp, 460 lb-ft"
+     },
+     {
+      "name": "Chevrolet media - 2021 Tahoe specifications (archived)",
+      "url": "https://web.archive.org/web/2021/https://media.chevrolet.com/media/us/en/chevrolet/vehicles/tahoe/2021.tab1.html",
+      "says": "6.2L V-8 DFM 420 / 313 @ 5600, 460 lb-ft (SAE certified)"
+     }
+    ],
+    "status": "three_sources_not_nhra",
+    "independent_sources": 4,
+    "note": "KBB 2021 lists the 6.2 on High Country only."
+   },
+   {
+    "gen": "t1",
+    "cid": 183,
+    "hp": 277,
+    "hp_basis": "SAE net",
+    "rpo": "LM2",
+    "name": "3.0L / 183 I6 turbodiesel",
+    "common_name": "Duramax 3.0",
+    "trims": [
+     "all trims except Z71; 2WD and 4WD"
+    ],
+    "nhra": false,
+    "sources": [
+     {
+      "name": "Wikipedia - Chevrolet Tahoe",
+      "url": "https://en.wikipedia.org/wiki/Chevrolet_Tahoe",
+      "says": "5th gen: L84 5.3 std; L87 6.2 (High Country); 3.0L Duramax I6 turbodiesel available"
+     },
+     {
+      "name": "EPA fueleconomy.gov vehicle data",
+      "url": "https://www.fueleconomy.gov/feg/download.shtml",
+      "says": "2021: 3.0 L 6-cyl turbo diesel, Tahoe 2WD/4WD"
+     },
+     {
+      "name": "Kelley Blue Book - 2021 Chevrolet Tahoe",
+      "url": "https://www.kbb.com/chevrolet/tahoe/2021/",
+      "says": "3.0L turbodiesel I6 277 hp, 460 lb-ft; not on Z71"
+     },
+     {
+      "name": "Chevrolet media - 2021 Tahoe specifications (archived)",
+      "url": "https://web.archive.org/web/2021/https://media.chevrolet.com/media/us/en/chevrolet/vehicles/tahoe/2021.tab1.html",
+      "says": "3.0L DOHC I-6 Turbo-Diesel 277 / 207 @ 3750, 460 lb-ft (GM est.)"
+     }
+    ],
+    "status": "three_sources_not_nhra",
+    "independent_sources": 4,
+    "note": "Late availability for 2021 (GM spec sheet)."
+   }
+  ],
+  "2022": [
+   {
+    "gen": "t1",
+    "cid": 325,
+    "hp": 355,
+    "hp_basis": "SAE net",
+    "rpo": "L84",
+    "name": "5.3L / 325 V8",
+    "common_name": "EcoTec3 5.3",
+    "trims": [
+     "LS, LT, RST, Z71, Premier; 2WD and 4WD"
+    ],
+    "nhra": false,
+    "sources": [
+     {
+      "name": "Wikipedia - Chevrolet Tahoe",
+      "url": "https://en.wikipedia.org/wiki/Chevrolet_Tahoe",
+      "says": "5th gen: L84 5.3 std; L87 6.2 (High Country); 3.0L Duramax I6 turbodiesel available"
+     },
+     {
+      "name": "EPA fueleconomy.gov vehicle data",
+      "url": "https://www.fueleconomy.gov/feg/download.shtml",
+      "says": "2022: 5.3 L 8-cyl SIDI, Tahoe 2WD/4WD"
+     },
+     {
+      "name": "Kelley Blue Book - 2022 Chevrolet Tahoe",
+      "url": "https://www.kbb.com/chevrolet/tahoe/2022/",
+      "says": "5.3L V8 355 hp, 383 lb-ft"
+     }
+    ],
+    "status": "three_sources_not_nhra",
+    "independent_sources": 3,
+    "note": ""
+   },
+   {
+    "gen": "t1",
+    "cid": 376,
+    "hp": 420,
+    "hp_basis": "SAE net",
+    "rpo": "L87",
+    "name": "6.2L / 376 V8",
+    "common_name": "EcoTec3 6.2",
+    "trims": [
+     "std High Country; opt RST, Z71, Premier"
+    ],
+    "nhra": false,
+    "sources": [
+     {
+      "name": "Wikipedia - Chevrolet Tahoe",
+      "url": "https://en.wikipedia.org/wiki/Chevrolet_Tahoe",
+      "says": "5th gen: L84 5.3 std; L87 6.2 (High Country); 3.0L Duramax I6 turbodiesel available"
+     },
+     {
+      "name": "EPA fueleconomy.gov vehicle data",
+      "url": "https://www.fueleconomy.gov/feg/download.shtml",
+      "says": "2022: 6.2 L 8-cyl SIDI, Tahoe 2WD/4WD"
+     },
+     {
+      "name": "Kelley Blue Book - 2022 Chevrolet Tahoe",
+      "url": "https://www.kbb.com/chevrolet/tahoe/2022/",
+      "says": "6.2L V8 420 hp, 460 lb-ft"
+     }
+    ],
+    "status": "three_sources_not_nhra",
+    "independent_sources": 3,
+    "note": ""
+   },
+   {
+    "gen": "t1",
+    "cid": 183,
+    "hp": 277,
+    "hp_basis": "SAE net",
+    "rpo": "LM2",
+    "name": "3.0L / 183 I6 turbodiesel",
+    "common_name": "Duramax 3.0",
+    "trims": [
+     "all trims except Z71; 2WD and 4WD"
+    ],
+    "nhra": false,
+    "sources": [
+     {
+      "name": "Wikipedia - Chevrolet Tahoe",
+      "url": "https://en.wikipedia.org/wiki/Chevrolet_Tahoe",
+      "says": "5th gen: L84 5.3 std; L87 6.2 (High Country); 3.0L Duramax I6 turbodiesel available"
+     },
+     {
+      "name": "EPA fueleconomy.gov vehicle data",
+      "url": "https://www.fueleconomy.gov/feg/download.shtml",
+      "says": "2022: 3.0 L 6-cyl turbo diesel, Tahoe 2WD/4WD"
+     },
+     {
+      "name": "Kelley Blue Book - 2022 Chevrolet Tahoe",
+      "url": "https://www.kbb.com/chevrolet/tahoe/2022/",
+      "says": "3.0L turbodiesel I6 277 hp, 460 lb-ft; not on Z71"
+     }
+    ],
+    "status": "three_sources_not_nhra",
+    "independent_sources": 3,
+    "note": ""
+   }
+  ],
+  "2023": [
+   {
+    "gen": "t1",
+    "cid": 325,
+    "hp": 355,
+    "hp_basis": "SAE net",
+    "rpo": "L84",
+    "name": "5.3L / 325 V8",
+    "common_name": "EcoTec3 5.3",
+    "trims": [
+     "LS, LT, RST, Z71, Premier; 2WD and 4WD"
+    ],
+    "nhra": false,
+    "sources": [
+     {
+      "name": "Wikipedia - Chevrolet Tahoe",
+      "url": "https://en.wikipedia.org/wiki/Chevrolet_Tahoe",
+      "says": "5th gen: L84 5.3 std; L87 6.2 (High Country); 3.0L Duramax I6 turbodiesel available"
+     },
+     {
+      "name": "EPA fueleconomy.gov vehicle data",
+      "url": "https://www.fueleconomy.gov/feg/download.shtml",
+      "says": "2023: 5.3 L 8-cyl SIDI, Tahoe 2WD/4WD"
+     },
+     {
+      "name": "Kelley Blue Book - 2023 Chevrolet Tahoe",
+      "url": "https://www.kbb.com/chevrolet/tahoe/2023/",
+      "says": "5.3L V8 355 hp, 383 lb-ft"
+     },
+     {
+      "name": "Chevrolet media - 2023 Tahoe specifications (archived)",
+      "url": "https://web.archive.org/web/2023/https://media.chevrolet.com/media/us/en/chevrolet/vehicles/tahoe/2023.tab1.html",
+      "says": "5.3L V-8 DFM 355 / 265 @ 5600, 383 lb-ft (SAE certified)"
+     }
+    ],
+    "status": "three_sources_not_nhra",
+    "independent_sources": 4,
+    "note": ""
+   },
+   {
+    "gen": "t1",
+    "cid": 376,
+    "hp": 420,
+    "hp_basis": "SAE net",
+    "rpo": "L87",
+    "name": "6.2L / 376 V8",
+    "common_name": "EcoTec3 6.2",
+    "trims": [
+     "std High Country; opt RST, Z71, Premier"
+    ],
+    "nhra": false,
+    "sources": [
+     {
+      "name": "Wikipedia - Chevrolet Tahoe",
+      "url": "https://en.wikipedia.org/wiki/Chevrolet_Tahoe",
+      "says": "5th gen: L84 5.3 std; L87 6.2 (High Country); 3.0L Duramax I6 turbodiesel available"
+     },
+     {
+      "name": "EPA fueleconomy.gov vehicle data",
+      "url": "https://www.fueleconomy.gov/feg/download.shtml",
+      "says": "2023: 6.2 L 8-cyl SIDI, Tahoe 2WD/4WD"
+     },
+     {
+      "name": "Kelley Blue Book - 2023 Chevrolet Tahoe",
+      "url": "https://www.kbb.com/chevrolet/tahoe/2023/",
+      "says": "6.2L V8 420 hp, 460 lb-ft"
+     },
+     {
+      "name": "Chevrolet media - 2023 Tahoe specifications (archived)",
+      "url": "https://web.archive.org/web/2023/https://media.chevrolet.com/media/us/en/chevrolet/vehicles/tahoe/2023.tab1.html",
+      "says": "6.2L V-8 DFM 420 / 313 @ 5600, 460 lb-ft (SAE certified)"
+     }
+    ],
+    "status": "three_sources_not_nhra",
+    "independent_sources": 4,
+    "note": ""
+   },
+   {
+    "gen": "t1",
+    "cid": 183,
+    "hp": 277,
+    "hp_basis": "SAE net",
+    "rpo": "LM2",
+    "name": "3.0L / 183 I6 turbodiesel",
+    "common_name": "Duramax 3.0",
+    "trims": [
+     "all trims except Z71; 2WD and 4WD"
+    ],
+    "nhra": false,
+    "sources": [
+     {
+      "name": "Wikipedia - Chevrolet Tahoe",
+      "url": "https://en.wikipedia.org/wiki/Chevrolet_Tahoe",
+      "says": "5th gen: L84 5.3 std; L87 6.2 (High Country); 3.0L Duramax I6 turbodiesel available"
+     },
+     {
+      "name": "EPA fueleconomy.gov vehicle data",
+      "url": "https://www.fueleconomy.gov/feg/download.shtml",
+      "says": "2023: 3.0 L 6-cyl turbo diesel, Tahoe 2WD/4WD"
+     },
+     {
+      "name": "Kelley Blue Book - 2023 Chevrolet Tahoe",
+      "url": "https://www.kbb.com/chevrolet/tahoe/2023/",
+      "says": "3.0L turbodiesel I6 277 hp, 460 lb-ft; not on Z71"
+     },
+     {
+      "name": "Chevrolet media - 2023 Tahoe specifications (archived)",
+      "url": "https://web.archive.org/web/2023/https://media.chevrolet.com/media/us/en/chevrolet/vehicles/tahoe/2023.tab1.html",
+      "says": "3.0L DOHC I-6 Turbo-Diesel 277 / 207 @ 3750, 460 lb-ft (GM est.)"
+     }
+    ],
+    "status": "three_sources_not_nhra",
+    "independent_sources": 4,
+    "note": ""
+   },
+   {
+    "gen": "t1",
+    "cid": 376,
+    "hp": 433,
+    "hp_basis": "SAE net",
+    "rpo": "L87",
+    "name": "6.2L / 376 V8 (RST Performance Edition)",
+    "common_name": "EcoTec3 6.2",
+    "trims": [
+     "RST Performance Edition only"
+    ],
+    "nhra": false,
+    "sources": [
+     {
+      "name": "Chevrolet release via conceptcarz ('Source - Chevrolet') - 2023 Tahoe RST Performance Edition",
+      "url": "https://www.conceptcarz.com/view/z32480/news.aspx",
+      "says": "6.2L V-8 433 hp, 467 lb-ft with Chevrolet Performance induction and exhaust; exclusive to 2023 Tahoe RST 6.2L; production Q4 2022"
+     },
+     {
+      "name": "Jalopnik - 2023 Chevy Tahoe RST Performance Edition",
+      "url": "https://jalopnik.com/2023-chevy-tahoe-rst-performance-edition-naias-debut-1849531168",
+      "says": "433 hp and 467 lb-ft, 13 hp / 7 lb-ft over regular RST"
+     }
+    ],
+    "status": "two_sources_agree",
+    "independent_sources": 2,
+    "note": "Could not confirm whether it continued into 2024. KBB 2023 does not mention it."
+   }
+  ],
+  "2024": [
+   {
+    "gen": "t1",
+    "cid": 325,
+    "hp": 355,
+    "hp_basis": "SAE net",
+    "rpo": "L84",
+    "name": "5.3L / 325 V8",
+    "common_name": "EcoTec3 5.3",
+    "trims": [
+     "LS, LT, RST, Z71, Premier; 2WD and 4WD"
+    ],
+    "nhra": false,
+    "sources": [
+     {
+      "name": "Wikipedia - Chevrolet Tahoe",
+      "url": "https://en.wikipedia.org/wiki/Chevrolet_Tahoe",
+      "says": "5th gen: L84 5.3 std; L87 6.2 (High Country); 3.0L Duramax I6 turbodiesel available"
+     },
+     {
+      "name": "EPA fueleconomy.gov vehicle data",
+      "url": "https://www.fueleconomy.gov/feg/download.shtml",
+      "says": "2024: 5.3 L 8-cyl SIDI, Tahoe 2WD/4WD"
+     },
+     {
+      "name": "Kelley Blue Book - 2024 Chevrolet Tahoe",
+      "url": "https://www.kbb.com/chevrolet/tahoe/2024/",
+      "says": "5.3L V8 355 hp, 383 lb-ft"
+     }
+    ],
+    "status": "three_sources_not_nhra",
+    "independent_sources": 3,
+    "note": ""
+   },
+   {
+    "gen": "t1",
+    "cid": 376,
+    "hp": 420,
+    "hp_basis": "SAE net",
+    "rpo": "L87",
+    "name": "6.2L / 376 V8",
+    "common_name": "EcoTec3 6.2",
+    "trims": [
+     "std High Country; opt RST, Z71, Premier"
+    ],
+    "nhra": false,
+    "sources": [
+     {
+      "name": "Wikipedia - Chevrolet Tahoe",
+      "url": "https://en.wikipedia.org/wiki/Chevrolet_Tahoe",
+      "says": "5th gen: L84 5.3 std; L87 6.2 (High Country); 3.0L Duramax I6 turbodiesel available"
+     },
+     {
+      "name": "EPA fueleconomy.gov vehicle data",
+      "url": "https://www.fueleconomy.gov/feg/download.shtml",
+      "says": "2024: 6.2 L 8-cyl SIDI, Tahoe 2WD/4WD"
+     },
+     {
+      "name": "Kelley Blue Book - 2024 Chevrolet Tahoe",
+      "url": "https://www.kbb.com/chevrolet/tahoe/2024/",
+      "says": "6.2L V8 420 hp, 460 lb-ft"
+     }
+    ],
+    "status": "three_sources_not_nhra",
+    "independent_sources": 3,
+    "note": ""
+   },
+   {
+    "gen": "t1",
+    "cid": 183,
+    "hp": 277,
+    "hp_basis": "SAE net",
+    "rpo": "LM2",
+    "name": "3.0L / 183 I6 turbodiesel",
+    "common_name": "Duramax 3.0",
+    "trims": [
+     "all trims except Z71; 2WD and 4WD"
+    ],
+    "nhra": false,
+    "sources": [
+     {
+      "name": "Wikipedia - Chevrolet Tahoe",
+      "url": "https://en.wikipedia.org/wiki/Chevrolet_Tahoe",
+      "says": "5th gen: L84 5.3 std; L87 6.2 (High Country); 3.0L Duramax I6 turbodiesel available"
+     },
+     {
+      "name": "EPA fueleconomy.gov vehicle data",
+      "url": "https://www.fueleconomy.gov/feg/download.shtml",
+      "says": "2024: 3.0 L 6-cyl turbo diesel, Tahoe 2WD/4WD"
+     },
+     {
+      "name": "Kelley Blue Book - 2024 Chevrolet Tahoe",
+      "url": "https://www.kbb.com/chevrolet/tahoe/2024/",
+      "says": "3.0L turbodiesel I6 277 hp, 460 lb-ft; not on Z71"
+     }
+    ],
+    "status": "three_sources_not_nhra",
+    "independent_sources": 3,
+    "note": ""
+   }
+  ],
+  "2025": [
+   {
+    "gen": "t1",
+    "cid": 325,
+    "hp": 355,
+    "hp_basis": "SAE net",
+    "rpo": "L84",
+    "name": "5.3L / 325 V8",
+    "common_name": "EcoTec3 5.3",
+    "trims": [
+     "LS, LT, RST, Z71, Premier; 2WD and 4WD"
+    ],
+    "nhra": false,
+    "sources": [
+     {
+      "name": "Wikipedia - Chevrolet Tahoe",
+      "url": "https://en.wikipedia.org/wiki/Chevrolet_Tahoe",
+      "says": "5th gen: L84 5.3 std; L87 6.2 (High Country); 3.0L Duramax I6 turbodiesel available"
+     },
+     {
+      "name": "EPA fueleconomy.gov vehicle data",
+      "url": "https://www.fueleconomy.gov/feg/download.shtml",
+      "says": "2025: 5.3 L 8-cyl SIDI, Tahoe 2WD/4WD"
+     },
+     {
+      "name": "Kelley Blue Book - 2025 Chevrolet Tahoe",
+      "url": "https://www.kbb.com/chevrolet/tahoe/2025/",
+      "says": "5.3L V8 355 hp, 383 lb-ft"
+     }
+    ],
+    "status": "three_sources_not_nhra",
+    "independent_sources": 3,
+    "note": ""
+   },
+   {
+    "gen": "t1",
+    "cid": 376,
+    "hp": 420,
+    "hp_basis": "SAE net",
+    "rpo": "L87",
+    "name": "6.2L / 376 V8",
+    "common_name": "EcoTec3 6.2",
+    "trims": [
+     "std High Country; opt RST, Z71, Premier"
+    ],
+    "nhra": false,
+    "sources": [
+     {
+      "name": "Wikipedia - Chevrolet Tahoe",
+      "url": "https://en.wikipedia.org/wiki/Chevrolet_Tahoe",
+      "says": "5th gen: L84 5.3 std; L87 6.2 (High Country); 3.0L Duramax I6 turbodiesel available"
+     },
+     {
+      "name": "EPA fueleconomy.gov vehicle data",
+      "url": "https://www.fueleconomy.gov/feg/download.shtml",
+      "says": "2025: 6.2 L 8-cyl SIDI, Tahoe 2WD/4WD"
+     },
+     {
+      "name": "Kelley Blue Book - 2025 Chevrolet Tahoe",
+      "url": "https://www.kbb.com/chevrolet/tahoe/2025/",
+      "says": "6.2L V8 420 hp, 460 lb-ft"
+     }
+    ],
+    "status": "three_sources_not_nhra",
+    "independent_sources": 3,
+    "note": ""
+   },
+   {
+    "gen": "t1",
+    "cid": 183,
+    "hp": 305,
+    "hp_basis": "SAE net",
+    "rpo": "LZ0",
+    "name": "3.0L / 183 I6 turbodiesel",
+    "common_name": "Duramax 3.0 (2nd gen)",
+    "trims": [
+     "2WD and 4WD; trim availability differs by source"
+    ],
+    "nhra": false,
+    "sources": [
+     {
+      "name": "Wikipedia - Chevrolet Tahoe",
+      "url": "https://en.wikipedia.org/wiki/Chevrolet_Tahoe",
+      "says": "5th gen: L84 5.3 std; L87 6.2 (High Country); 3.0L Duramax I6 turbodiesel available"
+     },
+     {
+      "name": "EPA fueleconomy.gov vehicle data",
+      "url": "https://www.fueleconomy.gov/feg/download.shtml",
+      "says": "2025: 3.0 L 6-cyl turbo diesel, Tahoe 2WD/4WD"
+     },
+     {
+      "name": "Kelley Blue Book - 2025 Chevrolet Tahoe",
+      "url": "https://www.kbb.com/chevrolet/tahoe/2025/",
+      "says": "3.0L turbodiesel I6 305 hp, 495 lb-ft; all trims except Z71"
+     },
+     {
+      "name": "The Drive - Refreshed 2025 Chevy Tahoe and Suburban",
+      "url": "https://www.thedrive.com/news/refreshed-2025-chevy-tahoe-and-suburban-get-serious-interior-glow-up",
+      "says": "3.0 Duramax 305 hp, 495 lb-ft, +28 hp/+35 lb-ft over the previous diesel"
+     }
+    ],
+    "status": "three_sources_not_nhra",
+    "independent_sources": 4,
+    "note": "LZ0 arrived later in the 2025 model year; early 2025 Tahoes were gas-only (press reports). EPA cannot tell LM2 from LZ0. Trims conflict: KBB 2025 says all but Z71, other 2025 reports say all six incl. Z71, KBB 2026 says all but LS."
+   }
+  ],
+  "2026": [
+   {
+    "gen": "t1",
+    "cid": 325,
+    "hp": 355,
+    "hp_basis": "SAE net",
+    "rpo": "L84",
+    "name": "5.3L / 325 V8",
+    "common_name": "EcoTec3 5.3",
+    "trims": [
+     "LS, LT, RST, Z71, Premier; 2WD and 4WD"
+    ],
+    "nhra": false,
+    "sources": [
+     {
+      "name": "Wikipedia - Chevrolet Tahoe",
+      "url": "https://en.wikipedia.org/wiki/Chevrolet_Tahoe",
+      "says": "5th gen: L84 5.3 std; L87 6.2 (High Country); 3.0L Duramax I6 turbodiesel available"
+     },
+     {
+      "name": "EPA fueleconomy.gov vehicle data",
+      "url": "https://www.fueleconomy.gov/feg/download.shtml",
+      "says": "2026: 5.3 L 8-cyl SIDI, Tahoe 2WD/4WD"
+     },
+     {
+      "name": "Kelley Blue Book - 2026 Chevrolet Tahoe",
+      "url": "https://www.kbb.com/chevrolet/tahoe/2026/",
+      "says": "5.3L V8 355 hp, 383 lb-ft"
+     }
+    ],
+    "status": "three_sources_not_nhra",
+    "independent_sources": 3,
+    "note": ""
+   },
+   {
+    "gen": "t1",
+    "cid": 376,
+    "hp": 420,
+    "hp_basis": "SAE net",
+    "rpo": "L87",
+    "name": "6.2L / 376 V8",
+    "common_name": "EcoTec3 6.2",
+    "trims": [
+     "std High Country; opt RST, Z71, Premier"
+    ],
+    "nhra": false,
+    "sources": [
+     {
+      "name": "Wikipedia - Chevrolet Tahoe",
+      "url": "https://en.wikipedia.org/wiki/Chevrolet_Tahoe",
+      "says": "5th gen: L84 5.3 std; L87 6.2 (High Country); 3.0L Duramax I6 turbodiesel available"
+     },
+     {
+      "name": "EPA fueleconomy.gov vehicle data",
+      "url": "https://www.fueleconomy.gov/feg/download.shtml",
+      "says": "2026: 6.2 L 8-cyl SIDI, Tahoe 2WD/4WD"
+     },
+     {
+      "name": "Kelley Blue Book - 2026 Chevrolet Tahoe",
+      "url": "https://www.kbb.com/chevrolet/tahoe/2026/",
+      "says": "6.2L V8 420 hp, 460 lb-ft"
+     }
+    ],
+    "status": "three_sources_not_nhra",
+    "independent_sources": 3,
+    "note": ""
+   },
+   {
+    "gen": "t1",
+    "cid": 183,
+    "hp": 305,
+    "hp_basis": "SAE net",
+    "rpo": "LZ0",
+    "name": "3.0L / 183 I6 turbodiesel",
+    "common_name": "Duramax 3.0 (2nd gen)",
+    "trims": [
+     "2WD and 4WD; trim availability differs by source"
+    ],
+    "nhra": false,
+    "sources": [
+     {
+      "name": "Wikipedia - Chevrolet Tahoe",
+      "url": "https://en.wikipedia.org/wiki/Chevrolet_Tahoe",
+      "says": "5th gen: L84 5.3 std; L87 6.2 (High Country); 3.0L Duramax I6 turbodiesel available"
+     },
+     {
+      "name": "EPA fueleconomy.gov vehicle data",
+      "url": "https://www.fueleconomy.gov/feg/download.shtml",
+      "says": "2026: 3.0 L 6-cyl turbo diesel, Tahoe 2WD/4WD"
+     },
+     {
+      "name": "Kelley Blue Book - 2026 Chevrolet Tahoe",
+      "url": "https://www.kbb.com/chevrolet/tahoe/2026/",
+      "says": "3.0L turbodiesel I6 305 hp, 495 lb-ft; all trims except LS"
+     }
+    ],
+    "status": "three_sources_not_nhra",
+    "independent_sources": 3,
+    "note": "EPA cannot tell LM2 from LZ0."
+   }
+  ]
+ },
+ "source_index": [
+  {
+   "name": "Wikipedia - Chevrolet Tahoe",
+   "url": "https://en.wikipedia.org/wiki/Chevrolet_Tahoe",
+   "type": "wikipedia",
+   "group": "WIKI"
+  },
+  {
+   "name": "EPA fueleconomy.gov vehicle data",
+   "url": "https://www.fueleconomy.gov/feg/download.shtml",
+   "type": "government",
+   "group": "EPA"
+  },
+  {
+   "name": "GM media - 1996 Tahoe press guide, Engines (L31)",
+   "url": "https://web.archive.org/web/2005/http://media.gm.com:80/chevy/pguide/tahoe/taheng1.htm",
+   "type": "manufacturer",
+   "group": "GM"
+  },
+  {
+   "name": "GM media - 1996 Tahoe press guide, Engines (L56)",
+   "url": "https://web.archive.org/web/2005/http://media.gm.com:80/chevy/pguide/tahoe/taheng2.htm",
+   "type": "manufacturer",
+   "group": "GM"
+  },
+  {
+   "name": "GM Canada media - 1996 Chevy Tahoe (archived)",
+   "url": "https://web.archive.org/web/2008/http://media.gm.com:80/ca/gm/en/products/chevy_truck/archives/1996Tahoe.html",
+   "type": "manufacturer",
+   "group": "GM"
+  },
+  {
+   "name": "GM Canada media - 1997 Chevy Tahoe (archived)",
+   "url": "https://web.archive.org/web/2008/http://media.gm.com:80/ca/gm/en/products/chevy_truck/archives/1997Tahoe.html",
+   "type": "manufacturer",
+   "group": "GM"
+  },
+  {
+   "name": "GM Canada media - 2001 Chevy Tahoe (archived)",
+   "url": "https://web.archive.org/web/2008/http://media.gm.com:80/ca/gm/en/products/chevy_truck/archives/2001Tahoe.html",
+   "type": "manufacturer",
+   "group": "GM"
+  },
+  {
+   "name": "GM Canada media - 2004 Chevy Tahoe (archived)",
+   "url": "https://web.archive.org/web/2008/http://media.gm.com:80/ca/gm/en/products/chevy_truck/archives/2004Tahoe.html",
+   "type": "manufacturer",
+   "group": "GM"
+  },
+  {
+   "name": "GM Canada media - 2005 Chevy Tahoe (archived)",
+   "url": "https://web.archive.org/web/2008/http://media.gm.com:80/ca/gm/en/products/chevy_truck/archives/2005Tahoe.html",
+   "type": "manufacturer",
+   "group": "GM"
+  },
+  {
+   "name": "GM Canada media - 2006 Chevy Tahoe (archived)",
+   "url": "https://web.archive.org/web/2008/http://media.gm.com:80/ca/gm/en/products/chevy_truck/archives/2006Tahoe.html",
+   "type": "manufacturer",
+   "group": "GM"
+  },
+  {
+   "name": "GM Canada media - 2007 Chevy Tahoe (archived)",
+   "url": "https://web.archive.org/web/2008/http://media.gm.com:80/ca/gm/en/products/chevy_truck/archives/2007Tahoe.html",
+   "type": "manufacturer",
+   "group": "GM"
+  },
+  {
+   "name": "GM Canada media - 1998 Chevy Tahoe (archived)",
+   "url": "https://web.archive.org/web/2004/http://media.gm.com:80/division/canada/english/products/chevy_truck/archives/1998Tahoe.html",
+   "type": "manufacturer",
+   "group": "GM"
+  },
+  {
+   "name": "GM Canada media - 1999 Chevy Tahoe (archived)",
+   "url": "https://web.archive.org/web/2004/http://media.gm.com:80/division/canada/english/products/chevy_truck/archives/1999Tahoe.html",
+   "type": "manufacturer",
+   "group": "GM"
+  },
+  {
+   "name": "GM Canada media - 2002 Chevy Tahoe (archived)",
+   "url": "https://web.archive.org/web/2004/http://media.gm.com:80/division/canada/english/products/chevy_truck/archives/2002Tahoe.html",
+   "type": "manufacturer",
+   "group": "GM"
+  },
+  {
+   "name": "GM Canada media - 2003 Chevy Tahoe (archived)",
+   "url": "https://web.archive.org/web/2004/http://media.gm.com:80/division/canada/english/products/chevy_truck/archives/2003Tahoe.html",
+   "type": "manufacturer",
+   "group": "GM"
+  },
+  {
+   "name": "GM media - 1997 Tahoe engines (eng1)",
+   "url": "https://web.archive.org/web/1997/http://media.gm.com:80/chevy/97chevy/tahoe/eng1.htm",
+   "type": "manufacturer",
+   "group": "GM"
+  },
+  {
+   "name": "GM media - 1997 Tahoe Police Package",
+   "url": "https://web.archive.org/web/1997/http://media.gm.com:80/chevy/97chevy/specveh/tahoecop.htm",
+   "type": "manufacturer",
+   "group": "GM"
+  },
+  {
+   "name": "GM media - 1998 Tahoe specifications",
+   "url": "https://web.archive.org/web/1998/http://media.gm.com:80/chevy/98chevy/tahoe/spec1.htm",
+   "type": "manufacturer",
+   "group": "GM"
+  },
+  {
+   "name": "GM media - 1999 Tahoe specifications",
+   "url": "https://web.archive.org/web/1999/http://media.gm.com:80/chevy/99chevy/tahoe/specs.htm",
+   "type": "manufacturer",
+   "group": "GM"
+  },
+  {
+   "name": "GM media - 2000 Tahoe Limited / Z71 engine",
+   "url": "https://web.archive.org/web/2000/http://media.gm.com:80/chevy/00chevy/00tahoe/00tahoe_limited_z71/tah_ltd_engine.htm",
+   "type": "manufacturer",
+   "group": "GM"
+  },
+  {
+   "name": "GM media - 2000 Tahoe specifications",
+   "url": "https://web.archive.org/web/2005/http://media.gm.com:80/chevy/00chevy/00tahoe/tah_specs.htm",
+   "type": "manufacturer",
+   "group": "GM"
+  },
+  {
+   "name": "GM media - 2001 Tahoe specifications",
+   "url": "https://web.archive.org/web/2005/http://media.gm.com:80/chevy/01chevy/01tahoe/specs.htm",
+   "type": "manufacturer",
+   "group": "GM"
+  },
+  {
+   "name": "GM media - 2004 Chevy Tahoe specifications (July 2003)",
+   "url": "https://web.archive.org/web/2005/http://media.gm.com:80/division/2004_prodinfo/chevrolet/trucks/tahoe/specs.html",
+   "type": "manufacturer",
+   "group": "GM"
+  },
+  {
+   "name": "GM media - 2008 Chevrolet Tahoe",
+   "url": "https://web.archive.org/web/2008/http://media.gm.com:80/us/chevrolet/en/product_services/r_trucks/r_c_tahoe/08index.html",
+   "type": "manufacturer",
+   "group": "GM"
+  },
+  {
+   "name": "GM Canada media - 2009 Chevy Tahoe Hybrid product information",
+   "url": "https://web.archive.org/web/2009/http://media.gm.com/ca/gm/en/products/VehiclesEng/e9Tahoe-hybrid_PIG.htm",
+   "type": "manufacturer",
+   "group": "GM"
+  },
+  {
+   "name": "Chevrolet media - 2009 Tahoe specifications (archived)",
+   "url": "https://web.archive.org/web/2009/https://media.chevrolet.com/media/us/en/chevrolet/vehicles/tahoe/2009.tab1.html",
+   "type": "manufacturer",
+   "group": "GM"
+  },
+  {
+   "name": "Chevrolet media - 2010 Tahoe specifications (archived)",
+   "url": "https://web.archive.org/web/2010/https://media.chevrolet.com/media/us/en/chevrolet/vehicles/tahoe/2010.tab1.html",
+   "type": "manufacturer",
+   "group": "GM"
+  },
+  {
+   "name": "Chevrolet media - 2011 Tahoe specifications (archived)",
+   "url": "https://web.archive.org/web/2011/https://media.chevrolet.com/media/us/en/chevrolet/vehicles/tahoe/2011.tab1.html",
+   "type": "manufacturer",
+   "group": "GM"
+  },
+  {
+   "name": "Chevrolet media - 2012 Tahoe specifications (archived)",
+   "url": "https://web.archive.org/web/2012/https://media.chevrolet.com/media/us/en/chevrolet/vehicles/tahoe/2012.tab1.html",
+   "type": "manufacturer",
+   "group": "GM"
+  },
+  {
+   "name": "Chevrolet media - 2013 Tahoe specifications (archived)",
+   "url": "https://web.archive.org/web/2013/https://media.chevrolet.com/media/us/en/chevrolet/vehicles/tahoe/2013.tab1.html",
+   "type": "manufacturer",
+   "group": "GM"
+  },
+  {
+   "name": "Chevrolet media - 2015 Tahoe specifications (archived)",
+   "url": "https://web.archive.org/web/2015/https://media.chevrolet.com/media/us/en/chevrolet/vehicles/tahoe/2015.tab1.html",
+   "type": "manufacturer",
+   "group": "GM"
+  },
+  {
+   "name": "Chevrolet media - 2016 Tahoe specifications (archived)",
+   "url": "https://web.archive.org/web/2016/https://media.chevrolet.com/media/us/en/chevrolet/vehicles/tahoe/2016.tab1.html",
+   "type": "manufacturer",
+   "group": "GM"
+  },
+  {
+   "name": "Chevrolet media - 2018 Tahoe specifications (archived)",
+   "url": "https://web.archive.org/web/2018/https://media.chevrolet.com/media/us/en/chevrolet/vehicles/tahoe/2018.tab1.html",
+   "type": "manufacturer",
+   "group": "GM"
+  },
+  {
+   "name": "Chevrolet media - 2019 Tahoe specifications (archived)",
+   "url": "https://web.archive.org/web/2019/https://media.chevrolet.com/media/us/en/chevrolet/vehicles/tahoe/2019.tab1.html",
+   "type": "manufacturer",
+   "group": "GM"
+  },
+  {
+   "name": "Chevrolet media - 2021 Tahoe specifications (archived)",
+   "url": "https://web.archive.org/web/2021/https://media.chevrolet.com/media/us/en/chevrolet/vehicles/tahoe/2021.tab1.html",
+   "type": "manufacturer",
+   "group": "GM"
+  },
+  {
+   "name": "Chevrolet media - 2023 Tahoe specifications (archived)",
+   "url": "https://web.archive.org/web/2023/https://media.chevrolet.com/media/us/en/chevrolet/vehicles/tahoe/2023.tab1.html",
+   "type": "manufacturer",
+   "group": "GM"
+  },
+  {
+   "name": "Chevrolet release via conceptcarz ('Source - Chevrolet') - 2023 Tahoe RST Performance Edition",
+   "url": "https://www.conceptcarz.com/view/z32480/news.aspx",
+   "type": "manufacturer",
+   "group": "GM"
+  },
+  {
+   "name": "Consumer Guide - Used 2000-06 Chevrolet Tahoe and Suburban",
+   "url": "https://consumerguide.com/used/2000-06-chevrolet-tahoe-and-suburban/",
+   "type": "publication",
+   "group": "CG"
+  },
+  {
+   "name": "Consumer Guide - Used 2007-14 Chevrolet Tahoe",
+   "url": "https://consumerguide.com/used/2007-14-chevrolet-tahoe/",
+   "type": "publication",
+   "group": "CG"
+  },
+  {
+   "name": "Cars.com - 1995 Chevrolet Tahoe specs/review",
+   "url": "https://www.cars.com/research/chevrolet-tahoe-1995/specs/",
+   "type": "publication",
+   "group": "CARS"
+  },
+  {
+   "name": "Cars.com - 1997 Chevrolet Tahoe specs/review",
+   "url": "https://www.cars.com/research/chevrolet-tahoe-1997/specs/",
+   "type": "publication",
+   "group": "CARS"
+  },
+  {
+   "name": "Cars.com - 1999 Chevrolet Tahoe specs/review",
+   "url": "https://www.cars.com/research/chevrolet-tahoe-1999/specs/",
+   "type": "publication",
+   "group": "CARS"
+  },
+  {
+   "name": "Cars.com - 2000 Chevrolet Tahoe specs/review",
+   "url": "https://www.cars.com/research/chevrolet-tahoe-2000/specs/",
+   "type": "publication",
+   "group": "CARS"
+  },
+  {
+   "name": "Cars.com - 2003 Chevrolet Tahoe specs/review",
+   "url": "https://www.cars.com/research/chevrolet-tahoe-2003/specs/",
+   "type": "publication",
+   "group": "CARS"
+  },
+  {
+   "name": "Cars.com - 2006 Chevrolet Tahoe specs/review",
+   "url": "https://www.cars.com/research/chevrolet-tahoe-2006/specs/",
+   "type": "publication",
+   "group": "CARS"
+  },
+  {
+   "name": "Cars.com - 2008 Chevrolet Tahoe 2WD LTZ specs",
+   "url": "https://www.cars.com/research/chevrolet-tahoe-2008/specs/289620/",
+   "type": "publication",
+   "group": "CARS"
+  },
+  {
+   "name": "Kelley Blue Book - 1999 Chevrolet Tahoe",
+   "url": "https://www.kbb.com/chevrolet/tahoe/1999/",
+   "type": "publication",
+   "group": "KBB"
+  },
+  {
+   "name": "Kelley Blue Book - 2005 Chevrolet Tahoe",
+   "url": "https://www.kbb.com/chevrolet/tahoe/2005/",
+   "type": "publication",
+   "group": "KBB"
+  },
+  {
+   "name": "Kelley Blue Book - 2012 Chevrolet Tahoe",
+   "url": "https://www.kbb.com/chevrolet/tahoe/2012/",
+   "type": "publication",
+   "group": "KBB"
+  },
+  {
+   "name": "Kelley Blue Book - 2014 Chevrolet Tahoe",
+   "url": "https://www.kbb.com/chevrolet/tahoe/2014/",
+   "type": "publication",
+   "group": "KBB"
+  },
+  {
+   "name": "Kelley Blue Book - 2015 Chevrolet Tahoe",
+   "url": "https://www.kbb.com/chevrolet/tahoe/2015/",
+   "type": "publication",
+   "group": "KBB"
+  },
+  {
+   "name": "Kelley Blue Book - 2017 Chevrolet Tahoe",
+   "url": "https://www.kbb.com/chevrolet/tahoe/2017/",
+   "type": "publication",
+   "group": "KBB"
+  },
+  {
+   "name": "Kelley Blue Book - 2018 Chevrolet Tahoe",
+   "url": "https://www.kbb.com/chevrolet/tahoe/2018/",
+   "type": "publication",
+   "group": "KBB"
+  },
+  {
+   "name": "Kelley Blue Book - 2020 Chevrolet Tahoe",
+   "url": "https://www.kbb.com/chevrolet/tahoe/2020/",
+   "type": "publication",
+   "group": "KBB"
+  },
+  {
+   "name": "Kelley Blue Book - 2021 Chevrolet Tahoe",
+   "url": "https://www.kbb.com/chevrolet/tahoe/2021/",
+   "type": "publication",
+   "group": "KBB"
+  },
+  {
+   "name": "Kelley Blue Book - 2022 Chevrolet Tahoe",
+   "url": "https://www.kbb.com/chevrolet/tahoe/2022/",
+   "type": "publication",
+   "group": "KBB"
+  },
+  {
+   "name": "Kelley Blue Book - 2023 Chevrolet Tahoe",
+   "url": "https://www.kbb.com/chevrolet/tahoe/2023/",
+   "type": "publication",
+   "group": "KBB"
+  },
+  {
+   "name": "Kelley Blue Book - 2024 Chevrolet Tahoe",
+   "url": "https://www.kbb.com/chevrolet/tahoe/2024/",
+   "type": "publication",
+   "group": "KBB"
+  },
+  {
+   "name": "Kelley Blue Book - 2025 Chevrolet Tahoe",
+   "url": "https://www.kbb.com/chevrolet/tahoe/2025/",
+   "type": "publication",
+   "group": "KBB"
+  },
+  {
+   "name": "Kelley Blue Book - 2026 Chevrolet Tahoe",
+   "url": "https://www.kbb.com/chevrolet/tahoe/2026/",
+   "type": "publication",
+   "group": "KBB"
+  },
+  {
+   "name": "The Drive - Refreshed 2025 Chevy Tahoe and Suburban",
+   "url": "https://www.thedrive.com/news/refreshed-2025-chevy-tahoe-and-suburban-get-serious-interior-glow-up",
+   "type": "publication",
+   "group": "DRIVE"
+  },
+  {
+   "name": "Jalopnik - 2023 Chevy Tahoe RST Performance Edition",
+   "url": "https://jalopnik.com/2023-chevy-tahoe-rst-performance-edition-naias-debut-1849531168",
+   "type": "publication",
+   "group": "JALOP"
+  }
+ ]
+}

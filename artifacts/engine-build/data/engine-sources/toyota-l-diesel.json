@@ -1,0 +1,105 @@
+{
+ "name": "Toyota L 2.2 diesel I4",
+ "fields": {
+  "displacement_l": {
+   "value": 2.2,
+   "sources": [
+    {
+     "name": "Wikipedia: Toyota L engine",
+     "url": "https://en.wikipedia.org/wiki/Toyota_L_engine",
+     "says": "2.2 L (2,188 cc)"
+    },
+    {
+     "name": "Elgin Industries engine parts catalog (technical reference) - engine details",
+     "url": "https://catalog.elginind.com/engine/toyota/default/96f93116-a030-4d2d-9b98-6f3090b4b4ca/",
+     "says": "L: DIESEL, Liters 2.2, CC 2188"
+    },
+    {
+     "name": "Curbside Classic: 1982 Toyota Diesel Pickup",
+     "url": "https://www.curbsideclassic.com/curbside-classics-asian/curbside-classic-diesel-pickup-1982-toyota-diesel-pickup/",
+     "says": "The diesel pickup used a non-turbo 2.2L"
+    }
+   ],
+   "note": "2,188 cc"
+  },
+  "displacement_ci": {
+   "value": 134,
+   "sources": [
+    {
+     "name": "Wikipedia: Toyota L engine",
+     "url": "https://en.wikipedia.org/wiki/Toyota_L_engine",
+     "says": "2,188 cc"
+    },
+    {
+     "name": "Elgin Industries engine parts catalog (technical reference) - engine details",
+     "url": "https://catalog.elginind.com/engine/toyota/default/96f93116-a030-4d2d-9b98-6f3090b4b4ca/",
+     "says": "CC 2188"
+    }
+   ],
+   "note": "converted = 133.5 ci",
+   "second_pass": true
+  },
+  "num_cylinders": {
+   "value": 4,
+   "sources": [
+    {
+     "name": "Wikipedia: Toyota L engine",
+     "url": "https://en.wikipedia.org/wiki/Toyota_L_engine",
+     "says": "four-cylinder"
+    },
+    {
+     "name": "Elgin Industries engine parts catalog (technical reference) - engine details",
+     "url": "https://catalog.elginind.com/engine/toyota/default/96f93116-a030-4d2d-9b98-6f3090b4b4ca/",
+     "says": "Cyl. 4"
+    }
+   ],
+   "note": "",
+   "second_pass": true
+  },
+  "valvetrain": {
+   "value": "SOHC, 2 valves per cylinder",
+   "sources": [
+    {
+     "name": "Wikipedia: Toyota L engine",
+     "url": "https://en.wikipedia.org/wiki/Toyota_L_engine",
+     "says": "SOHC 2 valves x cyl"
+    },
+    {
+     "name": "Elgin Industries engine parts catalog (technical reference) - engine details",
+     "url": "https://catalog.elginind.com/engine/toyota/default/96f93116-a030-4d2d-9b98-6f3090b4b4ca/",
+     "says": "Head SOHC"
+    }
+   ],
+   "note": "belt-driven cam",
+   "second_pass": true
+  },
+  "fuel_type": {
+   "value": "diesel",
+   "sources": [
+    {
+     "name": "Wikipedia: Toyota L engine",
+     "url": "https://en.wikipedia.org/wiki/Toyota_L_engine",
+     "says": "indirect injection diesel"
+    },
+    {
+     "name": "Elgin Industries engine parts catalog (technical reference) - engine details",
+     "url": "https://catalog.elginind.com/engine/toyota/default/96f93116-a030-4d2d-9b98-6f3090b4b4ca/",
+     "says": "Fuel / Delivery DIESEL / FI"
+    },
+    {
+     "name": "Curbside Classic: 1982 Toyota Diesel Pickup",
+     "url": "https://www.curbsideclassic.com/curbside-classics-asian/curbside-classic-diesel-pickup-1982-toyota-diesel-pickup/",
+     "says": "Toyota diesel pickup ... 2.2L"
+    }
+   ],
+   "note": "indirect injection"
+  }
+ },
+ "unverified": {
+  "bore_in": "DISAGREEMENT: Wikipedia 90 mm (3.5433 in) vs Elgin 3.48 in (88.5 mm). 90 x 86 x 4 = 2,188 cc matches the published displacement; Elgin's 88.5 looks like a copy of the 20R row. Withheld.",
+  "stroke_in": "3.3858 in (86.0 mm): Wikipedia only.",
+  "configuration": "inline-4: Wikipedia only.",
+  "block_material": "no source found.",
+  "head_material": "no source found."
+ }
+}

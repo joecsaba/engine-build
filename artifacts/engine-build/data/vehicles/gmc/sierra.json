@@ -1,0 +1,6832 @@
+{
+ "make": "GMC",
+ "model": "Sierra 1500",
+ "title": "GMC Sierra 1500 Engines by Year (1988–2026)",
+ "description": "Every factory engine in the GMC Sierra 1500 by year, 1988–2026: the 4.3 V6, small block, Vortec and EcoTec3 V8s, diesels, the 2.7 turbo and the Sierra EV.",
+ "intro": [
+  "GMC's half-ton pickup took the Sierra name with the 1988 redesign. When a new generation arrived, the previous truck stayed on sale for a time as the Sierra Classic or Sierra Limited; the trims column marks those years.",
+  "Pick a year to see every engine offered that model year, with its code, rated horsepower and the trims it came in. Each engine links to its full specs."
+ ],
+ "generations": [
+  {
+   "key": "gmt400",
+   "name": "GMT400",
+   "years": [
+    1988,
+    1998
+   ],
+   "intro": [
+    "The 4.3 V6, the 5.0 and 5.7 V8s, the 6.2 diesel and, from 1994, the 6.5 diesel; Vortec engines from 1996."
+   ]
+  },
+  {
+   "key": "gmt800",
+   "name": "GMT800",
+   "years": [
+    1999,
+    2007
+   ],
+   "intro": [
+    "The 4.3 V6, the 4.8, 5.3 and 6.0 Vortec V8s, the Denali's 6.0, and a hybrid from 2004."
+   ]
+  },
+  {
+   "key": "gmt900",
+   "name": "GMT900",
+   "years": [
+    2007,
+    2013
+   ],
+   "intro": [
+    "The 4.3 V6, the 4.8, 5.3 and 6.2 V8s, and the two-mode hybrid."
+   ]
+  },
+  {
+   "key": "k2xx",
+   "name": "K2XX",
+   "years": [
+    2014,
+    2018
+   ],
+   "intro": [
+    "The 4.3 V6 and the 5.3 and 6.2 EcoTec3 V8s, with eAssist from 2016."
+   ]
+  },
+  {
+   "key": "t1",
+   "name": "T1",
+   "years": [
+    2019,
+    2026
+   ],
+   "intro": [
+    "The 2.7 turbo four, the 5.3 and 6.2 V8s, the 3.0 Duramax diesel and, from 2024, the electric Sierra EV."
+   ]
+  }
+ ],
+ "draft": true,
+ "engines": [
+  {
+   "year": 1988,
+   "gen": "gmt400",
+   "cid": 262,
+   "cyl": 6,
+   "name": "4.3L / 262 V6",
+   "code": "LB4",
+   "desc": null,
+   "hp": 160,
+   "hpBasis": "net",
+   "trims": [
+    "All 1500 (standard)"
+   ],
+   "note": null,
+   "nhra": false,
+   "sources": [
+    {
+     "name": "1988 GMC Sierra Pickup brochure (oldcarbrochures.org)",
+     "url": "https://www.oldcarbrochures.org/United%20States/GM%20Trucks%20and%20Vans/1988-GM-Trucks-and-Vans/1988%20GMC%20Sierra%20Pickup/index.html"
+    },
+    {
+     "name": "Wikipedia - Chevrolet C/K (fourth generation) (GMC Sierra section and engine table)",
+     "url": "https://en.wikipedia.org/wiki/Chevrolet_C/K_(fourth_generation)"
+    },
+    {
+     "name": "EPA fueleconomy.gov vehicle data",
+     "url": "https://www.fueleconomy.gov/feg/download.shtml"
+    }
+   ],
+   "sourceCount": 3
+  },
+  {
+   "year": 1988,
+   "gen": "gmt400",
+   "cid": 305,
+   "cyl": 8,
+   "name": "5.0L / 305 V8",
+   "code": "L03",
+   "desc": null,
+   "hp": 175,
+   "hpBasis": "net",
+   "trims": [
+    "1500 (optional)"
+   ],
+   "note": null,
+   "nhra": false,
+   "sources": [
+    {
+     "name": "1988 GMC Sierra Pickup brochure (oldcarbrochures.org)",
+     "url": "https://www.oldcarbrochures.org/United%20States/GM%20Trucks%20and%20Vans/1988-GM-Trucks-and-Vans/1988%20GMC%20Sierra%20Pickup/index.html"
+    },
+    {
+     "name": "Wikipedia - Chevrolet C/K (fourth generation) (GMC Sierra section and engine table)",
+     "url": "https://en.wikipedia.org/wiki/Chevrolet_C/K_(fourth_generation)"
+    },
+    {
+     "name": "EPA fueleconomy.gov vehicle data",
+     "url": "https://www.fueleconomy.gov/feg/download.shtml"
+    }
+   ],
+   "sourceCount": 3
+  },
+  {
+   "year": 1988,
+   "gen": "gmt400",
+   "cid": 350,
+   "cyl": 8,
+   "name": "5.7L / 350 V8",
+   "code": "L05",
+   "desc": null,
+   "hp": 210,
+   "hpBasis": "net",
+   "trims": [
+    "1500 (optional)"
+   ],
+   "note": null,
+   "nhra": false,
+   "sources": [
+    {
+     "name": "1988 GMC Sierra Pickup brochure (oldcarbrochures.org)",
+     "url": "https://www.oldcarbrochures.org/United%20States/GM%20Trucks%20and%20Vans/1988-GM-Trucks-and-Vans/1988%20GMC%20Sierra%20Pickup/index.html"
+    },
+    {
+     "name": "Wikipedia - Chevrolet C/K (fourth generation) (GMC Sierra section and engine table)",
+     "url": "https://en.wikipedia.org/wiki/Chevrolet_C/K_(fourth_generation)"
+    },
+    {
+     "name": "EPA fueleconomy.gov vehicle data",
+     "url": "https://www.fueleconomy.gov/feg/download.shtml"
+    }
+   ],
+   "sourceCount": 3,
+   "linkFamily": "/engines/chevrolet/chevrolet-350ci"
+  },
+  {
+   "year": 1988,
+   "gen": "gmt400",
+   "cid": 379,
+   "cyl": 8,
+   "name": "6.2L / 379 V8 diesel",
+   "code": "LH6",
+   "desc": null,
+   "hp": 140,
+   "hpBasis": "net",
+   "trims": [
+    "1500 (optional)"
+   ],
+   "note": null,
+   "nhra": false,
+   "sources": [
+    {
+     "name": "1988 GMC Sierra Pickup brochure (oldcarbrochures.org)",
+     "url": "https://www.oldcarbrochures.org/United%20States/GM%20Trucks%20and%20Vans/1988-GM-Trucks-and-Vans/1988%20GMC%20Sierra%20Pickup/index.html"
+    },
+    {
+     "name": "Wikipedia - Chevrolet C/K (fourth generation) (GMC Sierra section and engine table)",
+     "url": "https://en.wikipedia.org/wiki/Chevrolet_C/K_(fourth_generation)"
+    },
+    {
+     "name": "EPA fueleconomy.gov vehicle data",
+     "url": "https://www.fueleconomy.gov/feg/download.shtml"
+    }
+   ],
+   "sourceCount": 3,
+   "diesel": true
+  },
+  {
+   "year": 1989,
+   "gen": "gmt400",
+   "cid": 262,
+   "cyl": 6,
+   "name": "4.3L / 262 V6",
+   "code": "LB4",
+   "desc": null,
+   "hp": 160,
+   "hpBasis": "net",
+   "trims": [
+    "All 1500 (standard)"
+   ],
+   "note": null,
+   "nhra": false,
+   "sources": [
+    {
+     "name": "1989 GMC Sierra Pickup brochure (oldcarbrochures.org)",
+     "url": "https://www.oldcarbrochures.org/United%20States/GM%20Trucks%20and%20Vans/1989-GM-Trucks-and-Vans/1989-GMC-Sierra-Pickup/index.html"
+    },
+    {
+     "name": "Wikipedia - Chevrolet C/K (fourth generation) (GMC Sierra section and engine table)",
+     "url": "https://en.wikipedia.org/wiki/Chevrolet_C/K_(fourth_generation)"
+    },
+    {
+     "name": "EPA fueleconomy.gov vehicle data",
+     "url": "https://www.fueleconomy.gov/feg/download.shtml"
+    }
+   ],
+   "sourceCount": 3
+  },
+  {
+   "year": 1989,
+   "gen": "gmt400",
+   "cid": 305,
+   "cyl": 8,
+   "name": "5.0L / 305 V8",
+   "code": "L03",
+   "desc": null,
+   "hp": 175,
+   "hpBasis": "net",
+   "trims": [
+    "1500 (optional)"
+   ],
+   "note": null,
+   "nhra": false,
+   "sources": [
+    {
+     "name": "1989 GMC Sierra Pickup brochure (oldcarbrochures.org)",
+     "url": "https://www.oldcarbrochures.org/United%20States/GM%20Trucks%20and%20Vans/1989-GM-Trucks-and-Vans/1989-GMC-Sierra-Pickup/index.html"
+    },
+    {
+     "name": "Wikipedia - Chevrolet C/K (fourth generation) (GMC Sierra section and engine table)",
+     "url": "https://en.wikipedia.org/wiki/Chevrolet_C/K_(fourth_generation)"
+    },
+    {
+     "name": "EPA fueleconomy.gov vehicle data",
+     "url": "https://www.fueleconomy.gov/feg/download.shtml"
+    }
+   ],
+   "sourceCount": 3
+  },
+  {
+   "year": 1989,
+   "gen": "gmt400",
+   "cid": 350,
+   "cyl": 8,
+   "name": "5.7L / 350 V8",
+   "code": "L05",
+   "desc": null,
+   "hp": 210,
+   "hpBasis": "net",
+   "trims": [
+    "1500 (optional)"
+   ],
+   "note": null,
+   "nhra": false,
+   "sources": [
+    {
+     "name": "1989 GMC Sierra Pickup brochure (oldcarbrochures.org)",
+     "url": "https://www.oldcarbrochures.org/United%20States/GM%20Trucks%20and%20Vans/1989-GM-Trucks-and-Vans/1989-GMC-Sierra-Pickup/index.html"
+    },
+    {
+     "name": "Wikipedia - Chevrolet C/K (fourth generation) (GMC Sierra section and engine table)",
+     "url": "https://en.wikipedia.org/wiki/Chevrolet_C/K_(fourth_generation)"
+    },
+    {
+     "name": "EPA fueleconomy.gov vehicle data",
+     "url": "https://www.fueleconomy.gov/feg/download.shtml"
+    }
+   ],
+   "sourceCount": 3,
+   "linkFamily": "/engines/chevrolet/chevrolet-350ci"
+  },
+  {
+   "year": 1989,
+   "gen": "gmt400",
+   "cid": 379,
+   "cyl": 8,
+   "name": "6.2L / 379 V8 diesel",
+   "code": "LH6",
+   "desc": null,
+   "hp": 140,
+   "hpBasis": "net",
+   "trims": [
+    "1500 (optional)"
+   ],
+   "note": null,
+   "nhra": false,
+   "sources": [
+    {
+     "name": "1989 GMC Sierra Pickup brochure (oldcarbrochures.org)",
+     "url": "https://www.oldcarbrochures.org/United%20States/GM%20Trucks%20and%20Vans/1989-GM-Trucks-and-Vans/1989-GMC-Sierra-Pickup/index.html"
+    },
+    {
+     "name": "Wikipedia - Chevrolet C/K (fourth generation) (GMC Sierra section and engine table)",
+     "url": "https://en.wikipedia.org/wiki/Chevrolet_C/K_(fourth_generation)"
+    },
+    {
+     "name": "EPA fueleconomy.gov vehicle data",
+     "url": "https://www.fueleconomy.gov/feg/download.shtml"
+    }
+   ],
+   "sourceCount": 3,
+   "diesel": true
+  },
+  {
+   "year": 1990,
+   "gen": "gmt400",
+   "cid": 262,
+   "cyl": 6,
+   "name": "4.3L / 262 V6",
+   "code": "LB4",
+   "desc": null,
+   "hp": 160,
+   "hpBasis": "net",
+   "trims": [
+    "All 1500 (standard)"
+   ],
+   "note": null,
+   "nhra": false,
+   "sources": [
+    {
+     "name": "1990 GMC Sierra brochure (oldcarbrochures.org)",
+     "url": "https://www.oldcarbrochures.org/United%20States/GM%20Trucks%20and%20Vans/1990-GM-Trucks-and-Vans/1990%20GMC%20Sierra/index.html"
+    },
+    {
+     "name": "Wikipedia - Chevrolet C/K (fourth generation) (GMC Sierra section and engine table)",
+     "url": "https://en.wikipedia.org/wiki/Chevrolet_C/K_(fourth_generation)"
+    },
+    {
+     "name": "EPA fueleconomy.gov vehicle data",
+     "url": "https://www.fueleconomy.gov/feg/download.shtml"
+    },
+    {
+     "name": "Consumer Guide - 1990-98 GMC Sierra used-car review",
+     "url": "https://consumerguide.com/used/1990-98-gmc-sierra/"
+    }
+   ],
+   "sourceCount": 4
+  },
+  {
+   "year": 1990,
+   "gen": "gmt400",
+   "cid": 305,
+   "cyl": 8,
+   "name": "5.0L / 305 V8",
+   "code": "L03",
+   "desc": null,
+   "hp": 175,
+   "hpBasis": "net",
+   "trims": [
+    "1500 (optional)"
+   ],
+   "note": null,
+   "nhra": false,
+   "sources": [
+    {
+     "name": "1990 GMC Sierra brochure (oldcarbrochures.org)",
+     "url": "https://www.oldcarbrochures.org/United%20States/GM%20Trucks%20and%20Vans/1990-GM-Trucks-and-Vans/1990%20GMC%20Sierra/index.html"
+    },
+    {
+     "name": "Wikipedia - Chevrolet C/K (fourth generation) (GMC Sierra section and engine table)",
+     "url": "https://en.wikipedia.org/wiki/Chevrolet_C/K_(fourth_generation)"
+    },
+    {
+     "name": "EPA fueleconomy.gov vehicle data",
+     "url": "https://www.fueleconomy.gov/feg/download.shtml"
+    },
+    {
+     "name": "Consumer Guide - 1990-98 GMC Sierra used-car review",
+     "url": "https://consumerguide.com/used/1990-98-gmc-sierra/"
+    }
+   ],
+   "sourceCount": 4
+  },
+  {
+   "year": 1990,
+   "gen": "gmt400",
+   "cid": 350,
+   "cyl": 8,
+   "name": "5.7L / 350 V8",
+   "code": "L05",
+   "desc": null,
+   "hp": 210,
+   "hpBasis": "net",
+   "trims": [
+    "1500 (optional)"
+   ],
+   "note": null,
+   "nhra": false,
+   "sources": [
+    {
+     "name": "1990 GMC Sierra brochure (oldcarbrochures.org)",
+     "url": "https://www.oldcarbrochures.org/United%20States/GM%20Trucks%20and%20Vans/1990-GM-Trucks-and-Vans/1990%20GMC%20Sierra/index.html"
+    },
+    {
+     "name": "Wikipedia - Chevrolet C/K (fourth generation) (GMC Sierra section and engine table)",
+     "url": "https://en.wikipedia.org/wiki/Chevrolet_C/K_(fourth_generation)"
+    },
+    {
+     "name": "EPA fueleconomy.gov vehicle data",
+     "url": "https://www.fueleconomy.gov/feg/download.shtml"
+    },
+    {
+     "name": "Consumer Guide - 1990-98 GMC Sierra used-car review",
+     "url": "https://consumerguide.com/used/1990-98-gmc-sierra/"
+    }
+   ],
+   "sourceCount": 4,
+   "linkFamily": "/engines/chevrolet/chevrolet-350ci"
+  },
+  {
+   "year": 1990,
+   "gen": "gmt400",
+   "cid": 379,
+   "cyl": 8,
+   "name": "6.2L / 379 V8 diesel",
+   "code": "LH6",
+   "desc": null,
+   "hp": 140,
+   "hpBasis": "net",
+   "trims": [
+    "1500 (optional)"
+   ],
+   "note": null,
+   "nhra": false,
+   "sources": [
+    {
+     "name": "1990 GMC Sierra brochure (oldcarbrochures.org)",
+     "url": "https://www.oldcarbrochures.org/United%20States/GM%20Trucks%20and%20Vans/1990-GM-Trucks-and-Vans/1990%20GMC%20Sierra/index.html"
+    },
+    {
+     "name": "Wikipedia - Chevrolet C/K (fourth generation) (GMC Sierra section and engine table)",
+     "url": "https://en.wikipedia.org/wiki/Chevrolet_C/K_(fourth_generation)"
+    },
+    {
+     "name": "EPA fueleconomy.gov vehicle data",
+     "url": "https://www.fueleconomy.gov/feg/download.shtml"
+    },
+    {
+     "name": "Consumer Guide - 1990-98 GMC Sierra used-car review",
+     "url": "https://consumerguide.com/used/1990-98-gmc-sierra/"
+    }
+   ],
+   "sourceCount": 4,
+   "diesel": true
+  },
+  {
+   "year": 1991,
+   "gen": "gmt400",
+   "cid": 262,
+   "cyl": 6,
+   "name": "4.3L / 262 V6",
+   "code": "LB4",
+   "desc": null,
+   "hp": 160,
+   "hpBasis": "net",
+   "trims": [
+    "All 1500 (standard)"
+   ],
+   "note": null,
+   "nhra": false,
+   "sources": [
+    {
+     "name": "1991 GMC Sierra brochure (oldcarbrochures.org)",
+     "url": "https://www.oldcarbrochures.org/United%20States/GM%20Trucks%20and%20Vans/1991-Trucks-and-Vans/1991-GMC-Sierra-Brochure/index.html"
+    },
+    {
+     "name": "Wikipedia - Chevrolet C/K (fourth generation) (GMC Sierra section and engine table)",
+     "url": "https://en.wikipedia.org/wiki/Chevrolet_C/K_(fourth_generation)"
+    },
+    {
+     "name": "EPA fueleconomy.gov vehicle data",
+     "url": "https://www.fueleconomy.gov/feg/download.shtml"
+    },
+    {
+     "name": "Consumer Guide - 1990-98 GMC Sierra used-car review",
+     "url": "https://consumerguide.com/used/1990-98-gmc-sierra/"
+    }
+   ],
+   "sourceCount": 4
+  },
+  {
+   "year": 1991,
+   "gen": "gmt400",
+   "cid": 305,
+   "cyl": 8,
+   "name": "5.0L / 305 V8",
+   "code": "L03",
+   "desc": null,
+   "hp": 175,
+   "hpBasis": "net",
+   "trims": [
+    "1500 (optional)"
+   ],
+   "note": null,
+   "nhra": false,
+   "sources": [
+    {
+     "name": "1991 GMC Sierra brochure (oldcarbrochures.org)",
+     "url": "https://www.oldcarbrochures.org/United%20States/GM%20Trucks%20and%20Vans/1991-Trucks-and-Vans/1991-GMC-Sierra-Brochure/index.html"
+    },
+    {
+     "name": "Wikipedia - Chevrolet C/K (fourth generation) (GMC Sierra section and engine table)",
+     "url": "https://en.wikipedia.org/wiki/Chevrolet_C/K_(fourth_generation)"
+    },
+    {
+     "name": "EPA fueleconomy.gov vehicle data",
+     "url": "https://www.fueleconomy.gov/feg/download.shtml"
+    },
+    {
+     "name": "Consumer Guide - 1990-98 GMC Sierra used-car review",
+     "url": "https://consumerguide.com/used/1990-98-gmc-sierra/"
+    }
+   ],
+   "sourceCount": 4
+  },
+  {
+   "year": 1991,
+   "gen": "gmt400",
+   "cid": 350,
+   "cyl": 8,
+   "name": "5.7L / 350 V8",
+   "code": "L05",
+   "desc": null,
+   "hp": 210,
+   "hpBasis": "net",
+   "trims": [
+    "1500 (optional)"
+   ],
+   "note": null,
+   "nhra": false,
+   "sources": [
+    {
+     "name": "1991 GMC Sierra brochure (oldcarbrochures.org)",
+     "url": "https://www.oldcarbrochures.org/United%20States/GM%20Trucks%20and%20Vans/1991-Trucks-and-Vans/1991-GMC-Sierra-Brochure/index.html"
+    },
+    {
+     "name": "Wikipedia - Chevrolet C/K (fourth generation) (GMC Sierra section and engine table)",
+     "url": "https://en.wikipedia.org/wiki/Chevrolet_C/K_(fourth_generation)"
+    },
+    {
+     "name": "EPA fueleconomy.gov vehicle data",
+     "url": "https://www.fueleconomy.gov/feg/download.shtml"
+    },
+    {
+     "name": "Consumer Guide - 1990-98 GMC Sierra used-car review",
+     "url": "https://consumerguide.com/used/1990-98-gmc-sierra/"
+    }
+   ],
+   "sourceCount": 4,
+   "linkFamily": "/engines/chevrolet/chevrolet-350ci"
+  },
+  {
+   "year": 1991,
+   "gen": "gmt400",
+   "cid": 379,
+   "cyl": 8,
+   "name": "6.2L / 379 V8 diesel",
+   "code": "LH6",
+   "desc": null,
+   "hp": 140,
+   "hpBasis": "net",
+   "trims": [
+    "1500 (optional)"
+   ],
+   "note": null,
+   "nhra": false,
+   "sources": [
+    {
+     "name": "1991 GMC Sierra brochure (oldcarbrochures.org)",
+     "url": "https://www.oldcarbrochures.org/United%20States/GM%20Trucks%20and%20Vans/1991-Trucks-and-Vans/1991-GMC-Sierra-Brochure/index.html"
+    },
+    {
+     "name": "Wikipedia - Chevrolet C/K (fourth generation) (GMC Sierra section and engine table)",
+     "url": "https://en.wikipedia.org/wiki/Chevrolet_C/K_(fourth_generation)"
+    },
+    {
+     "name": "EPA fueleconomy.gov vehicle data",
+     "url": "https://www.fueleconomy.gov/feg/download.shtml"
+    },
+    {
+     "name": "Consumer Guide - 1990-98 GMC Sierra used-car review",
+     "url": "https://consumerguide.com/used/1990-98-gmc-sierra/"
+    }
+   ],
+   "sourceCount": 4,
+   "diesel": true
+  },
+  {
+   "year": 1992,
+   "gen": "gmt400",
+   "cid": 262,
+   "cyl": 6,
+   "name": "4.3L / 262 V6",
+   "code": "LB4",
+   "desc": null,
+   "hp": 160,
+   "hpBasis": "net",
+   "trims": [
+    "All 1500 (standard)"
+   ],
+   "note": null,
+   "nhra": false,
+   "sources": [
+    {
+     "name": "Wikipedia - Chevrolet C/K (fourth generation) (GMC Sierra section and engine table)",
+     "url": "https://en.wikipedia.org/wiki/Chevrolet_C/K_(fourth_generation)"
+    },
+    {
+     "name": "EPA fueleconomy.gov vehicle data",
+     "url": "https://www.fueleconomy.gov/feg/download.shtml"
+    },
+    {
+     "name": "Consumer Guide - 1990-98 GMC Sierra used-car review",
+     "url": "https://consumerguide.com/used/1990-98-gmc-sierra/"
+    }
+   ],
+   "sourceCount": 3
+  },
+  {
+   "year": 1992,
+   "gen": "gmt400",
+   "cid": 305,
+   "cyl": 8,
+   "name": "5.0L / 305 V8",
+   "code": "L03",
+   "desc": null,
+   "hp": 175,
+   "hpBasis": "net",
+   "trims": [
+    "1500 (optional)"
+   ],
+   "note": null,
+   "nhra": false,
+   "sources": [
+    {
+     "name": "Wikipedia - Chevrolet C/K (fourth generation) (GMC Sierra section and engine table)",
+     "url": "https://en.wikipedia.org/wiki/Chevrolet_C/K_(fourth_generation)"
+    },
+    {
+     "name": "EPA fueleconomy.gov vehicle data",
+     "url": "https://www.fueleconomy.gov/feg/download.shtml"
+    },
+    {
+     "name": "Consumer Guide - 1990-98 GMC Sierra used-car review",
+     "url": "https://consumerguide.com/used/1990-98-gmc-sierra/"
+    }
+   ],
+   "sourceCount": 3
+  },
+  {
+   "year": 1992,
+   "gen": "gmt400",
+   "cid": 350,
+   "cyl": 8,
+   "name": "5.7L / 350 V8",
+   "code": "L05",
+   "desc": null,
+   "hp": 210,
+   "hpBasis": "net",
+   "trims": [
+    "1500 (optional)"
+   ],
+   "note": null,
+   "nhra": false,
+   "sources": [
+    {
+     "name": "Wikipedia - Chevrolet C/K (fourth generation) (GMC Sierra section and engine table)",
+     "url": "https://en.wikipedia.org/wiki/Chevrolet_C/K_(fourth_generation)"
+    },
+    {
+     "name": "EPA fueleconomy.gov vehicle data",
+     "url": "https://www.fueleconomy.gov/feg/download.shtml"
+    },
+    {
+     "name": "Consumer Guide - 1990-98 GMC Sierra used-car review",
+     "url": "https://consumerguide.com/used/1990-98-gmc-sierra/"
+    }
+   ],
+   "sourceCount": 3,
+   "linkFamily": "/engines/chevrolet/chevrolet-350ci"
+  },
+  {
+   "year": 1992,
+   "gen": "gmt400",
+   "cid": 379,
+   "cyl": 8,
+   "name": "6.2L / 379 V8 diesel",
+   "code": "LH6",
+   "desc": null,
+   "hp": 140,
+   "hpBasis": "net",
+   "trims": [
+    "1500 (optional)"
+   ],
+   "note": null,
+   "nhra": false,
+   "sources": [
+    {
+     "name": "Wikipedia - Chevrolet C/K (fourth generation) (GMC Sierra section and engine table)",
+     "url": "https://en.wikipedia.org/wiki/Chevrolet_C/K_(fourth_generation)"
+    },
+    {
+     "name": "EPA fueleconomy.gov vehicle data",
+     "url": "https://www.fueleconomy.gov/feg/download.shtml"
+    },
+    {
+     "name": "Consumer Guide - 1990-98 GMC Sierra used-car review",
+     "url": "https://consumerguide.com/used/1990-98-gmc-sierra/"
+    }
+   ],
+   "sourceCount": 3,
+   "diesel": true
+  },
+  {
+   "year": 1993,
+   "gen": "gmt400",
+   "cid": 262,
+   "cyl": 6,
+   "name": "4.3L / 262 V6",
+   "code": "LB4",
+   "desc": null,
+   "hp": 165,
+   "hpBasis": "net",
+   "trims": [
+    "All 1500 (standard)"
+   ],
+   "note": null,
+   "nhra": false,
+   "sources": [
+    {
+     "name": "Wikipedia - Chevrolet C/K (fourth generation) (GMC Sierra section and engine table)",
+     "url": "https://en.wikipedia.org/wiki/Chevrolet_C/K_(fourth_generation)"
+    },
+    {
+     "name": "EPA fueleconomy.gov vehicle data",
+     "url": "https://www.fueleconomy.gov/feg/download.shtml"
+    },
+    {
+     "name": "Consumer Guide - 1990-98 GMC Sierra used-car review",
+     "url": "https://consumerguide.com/used/1990-98-gmc-sierra/"
+    }
+   ],
+   "sourceCount": 3
+  },
+  {
+   "year": 1993,
+   "gen": "gmt400",
+   "cid": 305,
+   "cyl": 8,
+   "name": "5.0L / 305 V8",
+   "code": "L03",
+   "desc": null,
+   "hp": 175,
+   "hpBasis": "net",
+   "trims": [
+    "1500 (optional)"
+   ],
+   "note": null,
+   "nhra": false,
+   "sources": [
+    {
+     "name": "Wikipedia - Chevrolet C/K (fourth generation) (GMC Sierra section and engine table)",
+     "url": "https://en.wikipedia.org/wiki/Chevrolet_C/K_(fourth_generation)"
+    },
+    {
+     "name": "EPA fueleconomy.gov vehicle data",
+     "url": "https://www.fueleconomy.gov/feg/download.shtml"
+    },
+    {
+     "name": "Consumer Guide - 1990-98 GMC Sierra used-car review",
+     "url": "https://consumerguide.com/used/1990-98-gmc-sierra/"
+    }
+   ],
+   "sourceCount": 3
+  },
+  {
+   "year": 1993,
+   "gen": "gmt400",
+   "cid": 350,
+   "cyl": 8,
+   "name": "5.7L / 350 V8",
+   "code": "L05",
+   "desc": null,
+   "hp": 210,
+   "hpBasis": "net",
+   "trims": [
+    "1500 (optional)"
+   ],
+   "note": null,
+   "nhra": false,
+   "sources": [
+    {
+     "name": "Wikipedia - Chevrolet C/K (fourth generation) (GMC Sierra section and engine table)",
+     "url": "https://en.wikipedia.org/wiki/Chevrolet_C/K_(fourth_generation)"
+    },
+    {
+     "name": "EPA fueleconomy.gov vehicle data",
+     "url": "https://www.fueleconomy.gov/feg/download.shtml"
+    },
+    {
+     "name": "Consumer Guide - 1990-98 GMC Sierra used-car review",
+     "url": "https://consumerguide.com/used/1990-98-gmc-sierra/"
+    }
+   ],
+   "sourceCount": 3,
+   "linkFamily": "/engines/chevrolet/chevrolet-350ci"
+  },
+  {
+   "year": 1993,
+   "gen": "gmt400",
+   "cid": 379,
+   "cyl": 8,
+   "name": "6.2L / 379 V8 diesel",
+   "code": "LH6",
+   "desc": null,
+   "hp": 140,
+   "hpBasis": "net",
+   "trims": [
+    "1500 (optional)"
+   ],
+   "note": null,
+   "nhra": false,
+   "sources": [
+    {
+     "name": "Wikipedia - Chevrolet C/K (fourth generation) (GMC Sierra section and engine table)",
+     "url": "https://en.wikipedia.org/wiki/Chevrolet_C/K_(fourth_generation)"
+    },
+    {
+     "name": "EPA fueleconomy.gov vehicle data",
+     "url": "https://www.fueleconomy.gov/feg/download.shtml"
+    },
+    {
+     "name": "Consumer Guide - 1990-98 GMC Sierra used-car review",
+     "url": "https://consumerguide.com/used/1990-98-gmc-sierra/"
+    }
+   ],
+   "sourceCount": 3,
+   "diesel": true
+  },
+  {
+   "year": 1994,
+   "gen": "gmt400",
+   "cid": 262,
+   "cyl": 6,
+   "name": "4.3L / 262 V6",
+   "code": "LB4",
+   "desc": null,
+   "hp": 165,
+   "hpBasis": "net",
+   "trims": [
+    "All 1500 (standard)"
+   ],
+   "note": null,
+   "nhra": false,
+   "sources": [
+    {
+     "name": "1994 GMC Sierra Pickup brochure (oldcarbrochures.org)",
+     "url": "https://www.oldcarbrochures.org/United%20States/GM%20Trucks%20and%20Vans/1994-Trucks-and-Vans/1994-GMC-Sierra-Pickup-Brochure/index.html"
+    },
+    {
+     "name": "Wikipedia - Chevrolet C/K (fourth generation) (GMC Sierra section and engine table)",
+     "url": "https://en.wikipedia.org/wiki/Chevrolet_C/K_(fourth_generation)"
+    },
+    {
+     "name": "EPA fueleconomy.gov vehicle data",
+     "url": "https://www.fueleconomy.gov/feg/download.shtml"
+    },
+    {
+     "name": "Consumer Guide - 1990-98 GMC Sierra used-car review",
+     "url": "https://consumerguide.com/used/1990-98-gmc-sierra/"
+    }
+   ],
+   "sourceCount": 4
+  },
+  {
+   "year": 1994,
+   "gen": "gmt400",
+   "cid": 305,
+   "cyl": 8,
+   "name": "5.0L / 305 V8",
+   "code": "L03",
+   "desc": null,
+   "hp": 175,
+   "hpBasis": "net",
+   "trims": [
+    "1500 (optional)"
+   ],
+   "note": null,
+   "nhra": false,
+   "sources": [
+    {
+     "name": "1994 GMC Sierra Pickup brochure (oldcarbrochures.org)",
+     "url": "https://www.oldcarbrochures.org/United%20States/GM%20Trucks%20and%20Vans/1994-Trucks-and-Vans/1994-GMC-Sierra-Pickup-Brochure/index.html"
+    },
+    {
+     "name": "Wikipedia - Chevrolet C/K (fourth generation) (GMC Sierra section and engine table)",
+     "url": "https://en.wikipedia.org/wiki/Chevrolet_C/K_(fourth_generation)"
+    },
+    {
+     "name": "EPA fueleconomy.gov vehicle data",
+     "url": "https://www.fueleconomy.gov/feg/download.shtml"
+    },
+    {
+     "name": "Consumer Guide - 1990-98 GMC Sierra used-car review",
+     "url": "https://consumerguide.com/used/1990-98-gmc-sierra/"
+    }
+   ],
+   "sourceCount": 4
+  },
+  {
+   "year": 1994,
+   "gen": "gmt400",
+   "cid": 350,
+   "cyl": 8,
+   "name": "5.7L / 350 V8",
+   "code": "L05",
+   "desc": null,
+   "hp": null,
+   "hpBasis": "net",
+   "trims": [
+    "1500 (optional)"
+   ],
+   "note": null,
+   "nhra": false,
+   "sources": [
+    {
+     "name": "1994 GMC Sierra Pickup brochure (oldcarbrochures.org)",
+     "url": "https://www.oldcarbrochures.org/United%20States/GM%20Trucks%20and%20Vans/1994-Trucks-and-Vans/1994-GMC-Sierra-Pickup-Brochure/index.html"
+    },
+    {
+     "name": "Wikipedia - Chevrolet C/K (fourth generation) (GMC Sierra section and engine table)",
+     "url": "https://en.wikipedia.org/wiki/Chevrolet_C/K_(fourth_generation)"
+    },
+    {
+     "name": "EPA fueleconomy.gov vehicle data",
+     "url": "https://www.fueleconomy.gov/feg/download.shtml"
+    },
+    {
+     "name": "Consumer Guide - 1990-98 GMC Sierra used-car review",
+     "url": "https://consumerguide.com/used/1990-98-gmc-sierra/"
+    }
+   ],
+   "sourceCount": 4,
+   "linkFamily": "/engines/chevrolet/chevrolet-350ci"
+  },
+  {
+   "year": 1994,
+   "gen": "gmt400",
+   "cid": 395,
+   "cyl": 8,
+   "name": "6.5L / 395 V8 diesel",
+   "code": "L49",
+   "desc": null,
+   "hp": 155,
+   "hpBasis": "net",
+   "trims": [
+    "1500 (optional)"
+   ],
+   "note": null,
+   "nhra": false,
+   "sources": [
+    {
+     "name": "1994 GMC Sierra Pickup brochure (oldcarbrochures.org)",
+     "url": "https://www.oldcarbrochures.org/United%20States/GM%20Trucks%20and%20Vans/1994-Trucks-and-Vans/1994-GMC-Sierra-Pickup-Brochure/index.html"
+    },
+    {
+     "name": "Wikipedia - Chevrolet C/K (fourth generation) (GMC Sierra section and engine table)",
+     "url": "https://en.wikipedia.org/wiki/Chevrolet_C/K_(fourth_generation)"
+    },
+    {
+     "name": "EPA fueleconomy.gov vehicle data",
+     "url": "https://www.fueleconomy.gov/feg/download.shtml"
+    },
+    {
+     "name": "Consumer Guide - 1990-98 GMC Sierra used-car review",
+     "url": "https://consumerguide.com/used/1990-98-gmc-sierra/"
+    }
+   ],
+   "sourceCount": 4,
+   "diesel": true
+  },
+  {
+   "year": 1994,
+   "gen": "gmt400",
+   "cid": 395,
+   "cyl": 8,
+   "name": "6.5L / 395 V8 diesel",
+   "code": "L56",
+   "desc": null,
+   "hp": 180,
+   "hpBasis": "net",
+   "trims": [
+    "1500 (optional)"
+   ],
+   "note": null,
+   "nhra": false,
+   "sources": [
+    {
+     "name": "1994 GMC Sierra Pickup brochure (oldcarbrochures.org)",
+     "url": "https://www.oldcarbrochures.org/United%20States/GM%20Trucks%20and%20Vans/1994-Trucks-and-Vans/1994-GMC-Sierra-Pickup-Brochure/index.html"
+    },
+    {
+     "name": "Wikipedia - Chevrolet C/K (fourth generation) (GMC Sierra section and engine table)",
+     "url": "https://en.wikipedia.org/wiki/Chevrolet_C/K_(fourth_generation)"
+    },
+    {
+     "name": "EPA fueleconomy.gov vehicle data",
+     "url": "https://www.fueleconomy.gov/feg/download.shtml"
+    },
+    {
+     "name": "Consumer Guide - 1990-98 GMC Sierra used-car review",
+     "url": "https://consumerguide.com/used/1990-98-gmc-sierra/"
+    }
+   ],
+   "sourceCount": 4,
+   "diesel": true
+  },
+  {
+   "year": 1995,
+   "gen": "gmt400",
+   "cid": 262,
+   "cyl": 6,
+   "name": "4.3L / 262 V6",
+   "code": "LB4",
+   "desc": null,
+   "hp": 160,
+   "hpBasis": "net",
+   "trims": [
+    "All 1500 (standard)"
+   ],
+   "note": null,
+   "nhra": false,
+   "sources": [
+    {
+     "name": "Wikipedia - Chevrolet C/K (fourth generation) (GMC Sierra section and engine table)",
+     "url": "https://en.wikipedia.org/wiki/Chevrolet_C/K_(fourth_generation)"
+    },
+    {
+     "name": "EPA fueleconomy.gov vehicle data",
+     "url": "https://www.fueleconomy.gov/feg/download.shtml"
+    },
+    {
+     "name": "Consumer Guide - 1990-98 GMC Sierra used-car review",
+     "url": "https://consumerguide.com/used/1990-98-gmc-sierra/"
+    }
+   ],
+   "sourceCount": 3
+  },
+  {
+   "year": 1995,
+   "gen": "gmt400",
+   "cid": 305,
+   "cyl": 8,
+   "name": "5.0L / 305 V8",
+   "code": "L03",
+   "desc": null,
+   "hp": 175,
+   "hpBasis": "net",
+   "trims": [
+    "1500 (optional)"
+   ],
+   "note": null,
+   "nhra": false,
+   "sources": [
+    {
+     "name": "Wikipedia - Chevrolet C/K (fourth generation) (GMC Sierra section and engine table)",
+     "url": "https://en.wikipedia.org/wiki/Chevrolet_C/K_(fourth_generation)"
+    },
+    {
+     "name": "EPA fueleconomy.gov vehicle data",
+     "url": "https://www.fueleconomy.gov/feg/download.shtml"
+    },
+    {
+     "name": "Consumer Guide - 1990-98 GMC Sierra used-car review",
+     "url": "https://consumerguide.com/used/1990-98-gmc-sierra/"
+    }
+   ],
+   "sourceCount": 3
+  },
+  {
+   "year": 1995,
+   "gen": "gmt400",
+   "cid": 350,
+   "cyl": 8,
+   "name": "5.7L / 350 V8",
+   "code": "L05",
+   "desc": null,
+   "hp": 200,
+   "hpBasis": "net",
+   "trims": [
+    "1500 (optional)"
+   ],
+   "note": null,
+   "nhra": false,
+   "sources": [
+    {
+     "name": "Wikipedia - Chevrolet C/K (fourth generation) (GMC Sierra section and engine table)",
+     "url": "https://en.wikipedia.org/wiki/Chevrolet_C/K_(fourth_generation)"
+    },
+    {
+     "name": "EPA fueleconomy.gov vehicle data",
+     "url": "https://www.fueleconomy.gov/feg/download.shtml"
+    },
+    {
+     "name": "Consumer Guide - 1990-98 GMC Sierra used-car review",
+     "url": "https://consumerguide.com/used/1990-98-gmc-sierra/"
+    }
+   ],
+   "sourceCount": 3,
+   "linkFamily": "/engines/chevrolet/chevrolet-350ci"
+  },
+  {
+   "year": 1995,
+   "gen": "gmt400",
+   "cid": 395,
+   "cyl": 8,
+   "name": "6.5L / 395 V8 diesel",
+   "code": "L49",
+   "desc": null,
+   "hp": 155,
+   "hpBasis": "net",
+   "trims": [
+    "1500 (optional)"
+   ],
+   "note": null,
+   "nhra": false,
+   "sources": [
+    {
+     "name": "Wikipedia - Chevrolet C/K (fourth generation) (GMC Sierra section and engine table)",
+     "url": "https://en.wikipedia.org/wiki/Chevrolet_C/K_(fourth_generation)"
+    },
+    {
+     "name": "EPA fueleconomy.gov vehicle data",
+     "url": "https://www.fueleconomy.gov/feg/download.shtml"
+    },
+    {
+     "name": "Consumer Guide - 1990-98 GMC Sierra used-car review",
+     "url": "https://consumerguide.com/used/1990-98-gmc-sierra/"
+    }
+   ],
+   "sourceCount": 3,
+   "diesel": true
+  },
+  {
+   "year": 1995,
+   "gen": "gmt400",
+   "cid": 395,
+   "cyl": 8,
+   "name": "6.5L / 395 V8 diesel",
+   "code": "L56",
+   "desc": null,
+   "hp": 180,
+   "hpBasis": "net",
+   "trims": [
+    "1500 (optional)"
+   ],
+   "note": null,
+   "nhra": false,
+   "sources": [
+    {
+     "name": "Wikipedia - Chevrolet C/K (fourth generation) (GMC Sierra section and engine table)",
+     "url": "https://en.wikipedia.org/wiki/Chevrolet_C/K_(fourth_generation)"
+    },
+    {
+     "name": "EPA fueleconomy.gov vehicle data",
+     "url": "https://www.fueleconomy.gov/feg/download.shtml"
+    },
+    {
+     "name": "Consumer Guide - 1990-98 GMC Sierra used-car review",
+     "url": "https://consumerguide.com/used/1990-98-gmc-sierra/"
+    }
+   ],
+   "sourceCount": 3,
+   "diesel": true
+  },
+  {
+   "year": 1996,
+   "gen": "gmt400",
+   "cid": 262,
+   "cyl": 6,
+   "name": "4.3L / 262 V6",
+   "code": "L35",
+   "desc": null,
+   "hp": 200,
+   "hpBasis": "net",
+   "trims": [
+    "All 1500 (standard)"
+   ],
+   "note": null,
+   "nhra": false,
+   "sources": [
+    {
+     "name": "Wikipedia - Chevrolet C/K (fourth generation) (GMC Sierra section and engine table)",
+     "url": "https://en.wikipedia.org/wiki/Chevrolet_C/K_(fourth_generation)"
+    },
+    {
+     "name": "EPA fueleconomy.gov vehicle data",
+     "url": "https://www.fueleconomy.gov/feg/download.shtml"
+    },
+    {
+     "name": "Consumer Guide - 1990-98 GMC Sierra used-car review",
+     "url": "https://consumerguide.com/used/1990-98-gmc-sierra/"
+    }
+   ],
+   "sourceCount": 3
+  },
+  {
+   "year": 1996,
+   "gen": "gmt400",
+   "cid": 305,
+   "cyl": 8,
+   "name": "5.0L / 305 V8",
+   "code": "L30",
+   "desc": null,
+   "hp": null,
+   "hpBasis": "net",
+   "trims": [
+    "1500 (optional)"
+   ],
+   "note": null,
+   "nhra": false,
+   "sources": [
+    {
+     "name": "Wikipedia - Chevrolet C/K (fourth generation) (GMC Sierra section and engine table)",
+     "url": "https://en.wikipedia.org/wiki/Chevrolet_C/K_(fourth_generation)"
+    },
+    {
+     "name": "EPA fueleconomy.gov vehicle data",
+     "url": "https://www.fueleconomy.gov/feg/download.shtml"
+    },
+    {
+     "name": "Consumer Guide - 1990-98 GMC Sierra used-car review",
+     "url": "https://consumerguide.com/used/1990-98-gmc-sierra/"
+    }
+   ],
+   "sourceCount": 3
+  },
+  {
+   "year": 1996,
+   "gen": "gmt400",
+   "cid": 350,
+   "cyl": 8,
+   "name": "5.7L / 350 V8",
+   "code": "L31",
+   "desc": null,
+   "hp": null,
+   "hpBasis": "net",
+   "trims": [
+    "1500 (optional)"
+   ],
+   "note": null,
+   "nhra": false,
+   "sources": [
+    {
+     "name": "Wikipedia - Chevrolet C/K (fourth generation) (GMC Sierra section and engine table)",
+     "url": "https://en.wikipedia.org/wiki/Chevrolet_C/K_(fourth_generation)"
+    },
+    {
+     "name": "EPA fueleconomy.gov vehicle data",
+     "url": "https://www.fueleconomy.gov/feg/download.shtml"
+    },
+    {
+     "name": "Consumer Guide - 1990-98 GMC Sierra used-car review",
+     "url": "https://consumerguide.com/used/1990-98-gmc-sierra/"
+    }
+   ],
+   "sourceCount": 3
+  },
+  {
+   "year": 1996,
+   "gen": "gmt400",
+   "cid": 395,
+   "cyl": 8,
+   "name": "6.5L / 395 V8 diesel",
+   "code": "L56",
+   "desc": null,
+   "hp": 180,
+   "hpBasis": "net",
+   "trims": [
+    "1500 (optional)"
+   ],
+   "note": null,
+   "nhra": false,
+   "sources": [
+    {
+     "name": "Wikipedia - Chevrolet C/K (fourth generation) (GMC Sierra section and engine table)",
+     "url": "https://en.wikipedia.org/wiki/Chevrolet_C/K_(fourth_generation)"
+    },
+    {
+     "name": "EPA fueleconomy.gov vehicle data",
+     "url": "https://www.fueleconomy.gov/feg/download.shtml"
+    },
+    {
+     "name": "Consumer Guide - 1990-98 GMC Sierra used-car review",
+     "url": "https://consumerguide.com/used/1990-98-gmc-sierra/"
+    }
+   ],
+   "sourceCount": 3,
+   "diesel": true
+  },
+  {
+   "year": 1997,
+   "gen": "gmt400",
+   "cid": 262,
+   "cyl": 6,
+   "name": "4.3L / 262 V6",
+   "code": "L35",
+   "desc": null,
+   "hp": 200,
+   "hpBasis": "net",
+   "trims": [
+    "All 1500 (standard)"
+   ],
+   "note": null,
+   "nhra": false,
+   "sources": [
+    {
+     "name": "Wikipedia - Chevrolet C/K (fourth generation) (GMC Sierra section and engine table)",
+     "url": "https://en.wikipedia.org/wiki/Chevrolet_C/K_(fourth_generation)"
+    },
+    {
+     "name": "EPA fueleconomy.gov vehicle data",
+     "url": "https://www.fueleconomy.gov/feg/download.shtml"
+    },
+    {
+     "name": "Consumer Guide - 1990-98 GMC Sierra used-car review",
+     "url": "https://consumerguide.com/used/1990-98-gmc-sierra/"
+    },
+    {
+     "name": "The Auto Channel - 1997 GMC K1500 Sierra Extended Cab review",
+     "url": "https://theautochannel.com/vehicles/new/reviews/1997/solo9715.html"
+    },
+    {
+     "name": "Cars.com - 1997 GMC Sierra 1500 research page (expert review)",
+     "url": "https://www.cars.com/research/gmc-sierra_1500-1997/"
+    }
+   ],
+   "sourceCount": 5
+  },
+  {
+   "year": 1997,
+   "gen": "gmt400",
+   "cid": 305,
+   "cyl": 8,
+   "name": "5.0L / 305 V8",
+   "code": "L30",
+   "desc": null,
+   "hp": null,
+   "hpBasis": "net",
+   "trims": [
+    "1500 (optional)"
+   ],
+   "note": null,
+   "nhra": false,
+   "sources": [
+    {
+     "name": "Wikipedia - Chevrolet C/K (fourth generation) (GMC Sierra section and engine table)",
+     "url": "https://en.wikipedia.org/wiki/Chevrolet_C/K_(fourth_generation)"
+    },
+    {
+     "name": "EPA fueleconomy.gov vehicle data",
+     "url": "https://www.fueleconomy.gov/feg/download.shtml"
+    },
+    {
+     "name": "Consumer Guide - 1990-98 GMC Sierra used-car review",
+     "url": "https://consumerguide.com/used/1990-98-gmc-sierra/"
+    },
+    {
+     "name": "The Auto Channel - 1997 GMC K1500 Sierra Extended Cab review",
+     "url": "https://theautochannel.com/vehicles/new/reviews/1997/solo9715.html"
+    }
+   ],
+   "sourceCount": 4
+  },
+  {
+   "year": 1997,
+   "gen": "gmt400",
+   "cid": 350,
+   "cyl": 8,
+   "name": "5.7L / 350 V8",
+   "code": "L31",
+   "desc": null,
+   "hp": 255,
+   "hpBasis": "net",
+   "trims": [
+    "1500 (optional)"
+   ],
+   "note": null,
+   "nhra": false,
+   "sources": [
+    {
+     "name": "Wikipedia - Chevrolet C/K (fourth generation) (GMC Sierra section and engine table)",
+     "url": "https://en.wikipedia.org/wiki/Chevrolet_C/K_(fourth_generation)"
+    },
+    {
+     "name": "EPA fueleconomy.gov vehicle data",
+     "url": "https://www.fueleconomy.gov/feg/download.shtml"
+    },
+    {
+     "name": "Consumer Guide - 1990-98 GMC Sierra used-car review",
+     "url": "https://consumerguide.com/used/1990-98-gmc-sierra/"
+    },
+    {
+     "name": "The Auto Channel - 1997 GMC K1500 Sierra Extended Cab review",
+     "url": "https://theautochannel.com/vehicles/new/reviews/1997/solo9715.html"
+    },
+    {
+     "name": "Cars.com - 1997 GMC Sierra 1500 research page (expert review)",
+     "url": "https://www.cars.com/research/gmc-sierra_1500-1997/"
+    }
+   ],
+   "sourceCount": 5
+  },
+  {
+   "year": 1997,
+   "gen": "gmt400",
+   "cid": 395,
+   "cyl": 8,
+   "name": "6.5L / 395 V8 diesel",
+   "code": "L56",
+   "desc": null,
+   "hp": 180,
+   "hpBasis": "net",
+   "trims": [
+    "1500 (optional)"
+   ],
+   "note": null,
+   "nhra": false,
+   "sources": [
+    {
+     "name": "Wikipedia - Chevrolet C/K (fourth generation) (GMC Sierra section and engine table)",
+     "url": "https://en.wikipedia.org/wiki/Chevrolet_C/K_(fourth_generation)"
+    },
+    {
+     "name": "EPA fueleconomy.gov vehicle data",
+     "url": "https://www.fueleconomy.gov/feg/download.shtml"
+    },
+    {
+     "name": "Consumer Guide - 1990-98 GMC Sierra used-car review",
+     "url": "https://consumerguide.com/used/1990-98-gmc-sierra/"
+    }
+   ],
+   "sourceCount": 3,
+   "diesel": true
+  },
+  {
+   "year": 1998,
+   "gen": "gmt400",
+   "cid": 262,
+   "cyl": 6,
+   "name": "4.3L / 262 V6",
+   "code": "L35",
+   "desc": null,
+   "hp": 200,
+   "hpBasis": "net",
+   "trims": [
+    "All 1500 (standard)"
+   ],
+   "note": null,
+   "nhra": false,
+   "sources": [
+    {
+     "name": "Wikipedia - Chevrolet C/K (fourth generation) (GMC Sierra section and engine table)",
+     "url": "https://en.wikipedia.org/wiki/Chevrolet_C/K_(fourth_generation)"
+    },
+    {
+     "name": "EPA fueleconomy.gov vehicle data",
+     "url": "https://www.fueleconomy.gov/feg/download.shtml"
+    },
+    {
+     "name": "Consumer Guide - 1990-98 GMC Sierra used-car review",
+     "url": "https://consumerguide.com/used/1990-98-gmc-sierra/"
+    }
+   ],
+   "sourceCount": 3
+  },
+  {
+   "year": 1998,
+   "gen": "gmt400",
+   "cid": 305,
+   "cyl": 8,
+   "name": "5.0L / 305 V8",
+   "code": "L30",
+   "desc": null,
+   "hp": null,
+   "hpBasis": "net",
+   "trims": [
+    "1500 (optional)"
+   ],
+   "note": null,
+   "nhra": false,
+   "sources": [
+    {
+     "name": "Wikipedia - Chevrolet C/K (fourth generation) (GMC Sierra section and engine table)",
+     "url": "https://en.wikipedia.org/wiki/Chevrolet_C/K_(fourth_generation)"
+    },
+    {
+     "name": "EPA fueleconomy.gov vehicle data",
+     "url": "https://www.fueleconomy.gov/feg/download.shtml"
+    },
+    {
+     "name": "Consumer Guide - 1990-98 GMC Sierra used-car review",
+     "url": "https://consumerguide.com/used/1990-98-gmc-sierra/"
+    }
+   ],
+   "sourceCount": 3
+  },
+  {
+   "year": 1998,
+   "gen": "gmt400",
+   "cid": 350,
+   "cyl": 8,
+   "name": "5.7L / 350 V8",
+   "code": "L31",
+   "desc": null,
+   "hp": 255,
+   "hpBasis": "net",
+   "trims": [
+    "1500 (optional)"
+   ],
+   "note": null,
+   "nhra": false,
+   "sources": [
+    {
+     "name": "Wikipedia - Chevrolet C/K (fourth generation) (GMC Sierra section and engine table)",
+     "url": "https://en.wikipedia.org/wiki/Chevrolet_C/K_(fourth_generation)"
+    },
+    {
+     "name": "EPA fueleconomy.gov vehicle data",
+     "url": "https://www.fueleconomy.gov/feg/download.shtml"
+    },
+    {
+     "name": "Consumer Guide - 1990-98 GMC Sierra used-car review",
+     "url": "https://consumerguide.com/used/1990-98-gmc-sierra/"
+    }
+   ],
+   "sourceCount": 3
+  },
+  {
+   "year": 1998,
+   "gen": "gmt400",
+   "cid": 395,
+   "cyl": 8,
+   "name": "6.5L / 395 V8 diesel",
+   "code": "L56",
+   "desc": null,
+   "hp": 180,
+   "hpBasis": "net",
+   "trims": [
+    "1500 (optional)"
+   ],
+   "note": null,
+   "nhra": false,
+   "sources": [
+    {
+     "name": "Wikipedia - Chevrolet C/K (fourth generation) (GMC Sierra section and engine table)",
+     "url": "https://en.wikipedia.org/wiki/Chevrolet_C/K_(fourth_generation)"
+    },
+    {
+     "name": "EPA fueleconomy.gov vehicle data",
+     "url": "https://www.fueleconomy.gov/feg/download.shtml"
+    },
+    {
+     "name": "Consumer Guide - 1990-98 GMC Sierra used-car review",
+     "url": "https://consumerguide.com/used/1990-98-gmc-sierra/"
+    }
+   ],
+   "sourceCount": 3,
+   "diesel": true
+  },
+  {
+   "year": 1999,
+   "gen": "gmt800",
+   "cid": 262,
+   "cyl": 6,
+   "name": "4.3L / 262 V6",
+   "code": "L35",
+   "desc": null,
+   "hp": 200,
+   "hpBasis": "net",
+   "trims": [
+    "Base 1500 (regular/ext cab)"
+   ],
+   "note": null,
+   "nhra": false,
+   "sources": [
+    {
+     "name": "Wikipedia - Chevrolet Silverado (first generation) (GMT800 Silverado/Sierra, C3/Denali, engine table)",
+     "url": "https://en.wikipedia.org/wiki/Chevrolet_Silverado_(first_generation)"
+    },
+    {
+     "name": "EPA fueleconomy.gov vehicle data",
+     "url": "https://www.fueleconomy.gov/feg/download.shtml"
+    },
+    {
+     "name": "Consumer Guide - 1999-06 GMC Sierra used-car review",
+     "url": "https://consumerguide.com/used/1999-06-gmc-sierra/"
+    }
+   ],
+   "sourceCount": 3
+  },
+  {
+   "year": 1999,
+   "gen": "gmt800",
+   "cid": 293,
+   "cyl": 8,
+   "name": "4.8L / 293 V8",
+   "code": "LR4",
+   "desc": null,
+   "hp": 255,
+   "hpBasis": "net",
+   "trims": [
+    "1500 (standard on some ext cabs)"
+   ],
+   "note": null,
+   "nhra": false,
+   "sources": [
+    {
+     "name": "Wikipedia - Chevrolet Silverado (first generation) (GMT800 Silverado/Sierra, C3/Denali, engine table)",
+     "url": "https://en.wikipedia.org/wiki/Chevrolet_Silverado_(first_generation)"
+    },
+    {
+     "name": "EPA fueleconomy.gov vehicle data",
+     "url": "https://www.fueleconomy.gov/feg/download.shtml"
+    },
+    {
+     "name": "Consumer Guide - 1999-06 GMC Sierra used-car review",
+     "url": "https://consumerguide.com/used/1999-06-gmc-sierra/"
+    }
+   ],
+   "sourceCount": 3
+  },
+  {
+   "year": 1999,
+   "gen": "gmt800",
+   "cid": 325,
+   "cyl": 8,
+   "name": "5.3L / 325 V8",
+   "code": "LM7",
+   "desc": null,
+   "hp": 270,
+   "hpBasis": "net",
+   "trims": [
+    "1500 (optional; standard SLT from 2004)"
+   ],
+   "note": null,
+   "nhra": false,
+   "sources": [
+    {
+     "name": "Wikipedia - Chevrolet Silverado (first generation) (GMT800 Silverado/Sierra, C3/Denali, engine table)",
+     "url": "https://en.wikipedia.org/wiki/Chevrolet_Silverado_(first_generation)"
+    },
+    {
+     "name": "EPA fueleconomy.gov vehicle data",
+     "url": "https://www.fueleconomy.gov/feg/download.shtml"
+    },
+    {
+     "name": "Consumer Guide - 1999-06 GMC Sierra used-car review",
+     "url": "https://consumerguide.com/used/1999-06-gmc-sierra/"
+    }
+   ],
+   "sourceCount": 3
+  },
+  {
+   "year": 2000,
+   "gen": "gmt800",
+   "cid": 262,
+   "cyl": 6,
+   "name": "4.3L / 262 V6",
+   "code": "L35",
+   "desc": null,
+   "hp": 200,
+   "hpBasis": "net",
+   "trims": [
+    "Base 1500 (regular/ext cab)"
+   ],
+   "note": null,
+   "nhra": false,
+   "sources": [
+    {
+     "name": "Wikipedia - Chevrolet Silverado (first generation) (GMT800 Silverado/Sierra, C3/Denali, engine table)",
+     "url": "https://en.wikipedia.org/wiki/Chevrolet_Silverado_(first_generation)"
+    },
+    {
+     "name": "EPA fueleconomy.gov vehicle data",
+     "url": "https://www.fueleconomy.gov/feg/download.shtml"
+    },
+    {
+     "name": "Consumer Guide - 1999-06 GMC Sierra used-car review",
+     "url": "https://consumerguide.com/used/1999-06-gmc-sierra/"
+    }
+   ],
+   "sourceCount": 3
+  },
+  {
+   "year": 2000,
+   "gen": "gmt800",
+   "cid": 293,
+   "cyl": 8,
+   "name": "4.8L / 293 V8",
+   "code": "LR4",
+   "desc": null,
+   "hp": 270,
+   "hpBasis": "net",
+   "trims": [
+    "1500 (standard on some ext cabs)"
+   ],
+   "note": null,
+   "nhra": false,
+   "sources": [
+    {
+     "name": "Wikipedia - Chevrolet Silverado (first generation) (GMT800 Silverado/Sierra, C3/Denali, engine table)",
+     "url": "https://en.wikipedia.org/wiki/Chevrolet_Silverado_(first_generation)"
+    },
+    {
+     "name": "EPA fueleconomy.gov vehicle data",
+     "url": "https://www.fueleconomy.gov/feg/download.shtml"
+    },
+    {
+     "name": "Consumer Guide - 1999-06 GMC Sierra used-car review",
+     "url": "https://consumerguide.com/used/1999-06-gmc-sierra/"
+    }
+   ],
+   "sourceCount": 3
+  },
+  {
+   "year": 2000,
+   "gen": "gmt800",
+   "cid": 325,
+   "cyl": 8,
+   "name": "5.3L / 325 V8",
+   "code": "LM7",
+   "desc": null,
+   "hp": 285,
+   "hpBasis": "net",
+   "trims": [
+    "1500 (optional; standard SLT from 2004)"
+   ],
+   "note": null,
+   "nhra": false,
+   "sources": [
+    {
+     "name": "Wikipedia - Chevrolet Silverado (first generation) (GMT800 Silverado/Sierra, C3/Denali, engine table)",
+     "url": "https://en.wikipedia.org/wiki/Chevrolet_Silverado_(first_generation)"
+    },
+    {
+     "name": "EPA fueleconomy.gov vehicle data",
+     "url": "https://www.fueleconomy.gov/feg/download.shtml"
+    },
+    {
+     "name": "Consumer Guide - 1999-06 GMC Sierra used-car review",
+     "url": "https://consumerguide.com/used/1999-06-gmc-sierra/"
+    }
+   ],
+   "sourceCount": 3
+  },
+  {
+   "year": 2001,
+   "gen": "gmt800",
+   "cid": 262,
+   "cyl": 6,
+   "name": "4.3L / 262 V6",
+   "code": "L35",
+   "desc": null,
+   "hp": 200,
+   "hpBasis": "net",
+   "trims": [
+    "Base 1500 (regular/ext cab)"
+   ],
+   "note": null,
+   "nhra": false,
+   "sources": [
+    {
+     "name": "GM mediaOnline - 2001 GMC Sierra light-duty overview (archived)",
+     "url": "https://web.archive.org/web/2001/http://www.media.gm.com/division/gmc/products/sierra_lightduty_overview.html"
+    },
+    {
+     "name": "Wikipedia - Chevrolet Silverado (first generation) (GMT800 Silverado/Sierra, C3/Denali, engine table)",
+     "url": "https://en.wikipedia.org/wiki/Chevrolet_Silverado_(first_generation)"
+    },
+    {
+     "name": "EPA fueleconomy.gov vehicle data",
+     "url": "https://www.fueleconomy.gov/feg/download.shtml"
+    },
+    {
+     "name": "Consumer Guide - 1999-06 GMC Sierra used-car review",
+     "url": "https://consumerguide.com/used/1999-06-gmc-sierra/"
+    }
+   ],
+   "sourceCount": 4
+  },
+  {
+   "year": 2001,
+   "gen": "gmt800",
+   "cid": 293,
+   "cyl": 8,
+   "name": "4.8L / 293 V8",
+   "code": "LR4",
+   "desc": null,
+   "hp": 270,
+   "hpBasis": "net",
+   "trims": [
+    "1500 (standard on some ext cabs)"
+   ],
+   "note": null,
+   "nhra": false,
+   "sources": [
+    {
+     "name": "GM mediaOnline - 2001 GMC Sierra light-duty overview (archived)",
+     "url": "https://web.archive.org/web/2001/http://www.media.gm.com/division/gmc/products/sierra_lightduty_overview.html"
+    },
+    {
+     "name": "Wikipedia - Chevrolet Silverado (first generation) (GMT800 Silverado/Sierra, C3/Denali, engine table)",
+     "url": "https://en.wikipedia.org/wiki/Chevrolet_Silverado_(first_generation)"
+    },
+    {
+     "name": "EPA fueleconomy.gov vehicle data",
+     "url": "https://www.fueleconomy.gov/feg/download.shtml"
+    },
+    {
+     "name": "Consumer Guide - 1999-06 GMC Sierra used-car review",
+     "url": "https://consumerguide.com/used/1999-06-gmc-sierra/"
+    }
+   ],
+   "sourceCount": 4
+  },
+  {
+   "year": 2001,
+   "gen": "gmt800",
+   "cid": 325,
+   "cyl": 8,
+   "name": "5.3L / 325 V8",
+   "code": "LM7",
+   "desc": null,
+   "hp": 285,
+   "hpBasis": "net",
+   "trims": [
+    "1500 (optional; standard SLT from 2004)"
+   ],
+   "note": null,
+   "nhra": false,
+   "sources": [
+    {
+     "name": "GM mediaOnline - 2001 GMC Sierra light-duty overview (archived)",
+     "url": "https://web.archive.org/web/2001/http://www.media.gm.com/division/gmc/products/sierra_lightduty_overview.html"
+    },
+    {
+     "name": "Wikipedia - Chevrolet Silverado (first generation) (GMT800 Silverado/Sierra, C3/Denali, engine table)",
+     "url": "https://en.wikipedia.org/wiki/Chevrolet_Silverado_(first_generation)"
+    },
+    {
+     "name": "EPA fueleconomy.gov vehicle data",
+     "url": "https://www.fueleconomy.gov/feg/download.shtml"
+    },
+    {
+     "name": "Consumer Guide - 1999-06 GMC Sierra used-car review",
+     "url": "https://consumerguide.com/used/1999-06-gmc-sierra/"
+    }
+   ],
+   "sourceCount": 4
+  },
+  {
+   "year": 2001,
+   "gen": "gmt800",
+   "cid": 364,
+   "cyl": 8,
+   "name": "6.0L / 364 V8",
+   "code": "LQ4",
+   "desc": null,
+   "hp": 300,
+   "hpBasis": "net",
+   "trims": [
+    "Sierra 1500HD crew cab"
+   ],
+   "note": null,
+   "nhra": false,
+   "sources": [
+    {
+     "name": "GM mediaOnline - 2001 Sierra C3 overview and C3/HD 6.0 engine spec pages (archived)",
+     "url": "https://web.archive.org/web/2001/http://www.media.gm.com/division/gmc/products/sierra_C3_overview.html"
+    },
+    {
+     "name": "Wikipedia - Chevrolet Silverado (first generation) (GMT800 Silverado/Sierra, C3/Denali, engine table)",
+     "url": "https://en.wikipedia.org/wiki/Chevrolet_Silverado_(first_generation)"
+    },
+    {
+     "name": "EPA fueleconomy.gov vehicle data",
+     "url": "https://www.fueleconomy.gov/feg/download.shtml"
+    },
+    {
+     "name": "Consumer Guide - 1999-06 GMC Sierra used-car review",
+     "url": "https://consumerguide.com/used/1999-06-gmc-sierra/"
+    }
+   ],
+   "sourceCount": 4
+  },
+  {
+   "year": 2001,
+   "gen": "gmt800",
+   "cid": 364,
+   "cyl": 8,
+   "name": "6.0L / 364 V8",
+   "code": "LQ4",
+   "desc": null,
+   "hp": 325,
+   "hpBasis": "net",
+   "trims": [
+    "Sierra C3 (AWD, ext cab)"
+   ],
+   "note": null,
+   "nhra": false,
+   "sources": [
+    {
+     "name": "GM mediaOnline - 2001 Sierra C3 overview and C3/HD 6.0 engine spec pages (archived)",
+     "url": "https://web.archive.org/web/2001/http://www.media.gm.com/division/gmc/products/sierra_C3_overview.html"
+    },
+    {
+     "name": "Wikipedia - Chevrolet Silverado (first generation) (GMT800 Silverado/Sierra, C3/Denali, engine table)",
+     "url": "https://en.wikipedia.org/wiki/Chevrolet_Silverado_(first_generation)"
+    },
+    {
+     "name": "EPA fueleconomy.gov vehicle data",
+     "url": "https://www.fueleconomy.gov/feg/download.shtml"
+    },
+    {
+     "name": "Consumer Guide - 1999-06 GMC Sierra used-car review",
+     "url": "https://consumerguide.com/used/1999-06-gmc-sierra/"
+    }
+   ],
+   "sourceCount": 4
+  },
+  {
+   "year": 2002,
+   "gen": "gmt800",
+   "cid": 262,
+   "cyl": 6,
+   "name": "4.3L / 262 V6",
+   "code": "L35",
+   "desc": null,
+   "hp": 200,
+   "hpBasis": "net",
+   "trims": [
+    "Base 1500 (regular/ext cab)"
+   ],
+   "note": null,
+   "nhra": false,
+   "sources": [
+    {
+     "name": "GM mediaOnline - 2002 GMC Sierra Light Duty new-for/specifications (archived)",
+     "url": "https://web.archive.org/web/2002/http://media.gm.com/division/gmc/products/02vehicles/sierra_ld.html"
+    },
+    {
+     "name": "Wikipedia - Chevrolet Silverado (first generation) (GMT800 Silverado/Sierra, C3/Denali, engine table)",
+     "url": "https://en.wikipedia.org/wiki/Chevrolet_Silverado_(first_generation)"
+    },
+    {
+     "name": "EPA fueleconomy.gov vehicle data",
+     "url": "https://www.fueleconomy.gov/feg/download.shtml"
+    },
+    {
+     "name": "Consumer Guide - 1999-06 GMC Sierra used-car review",
+     "url": "https://consumerguide.com/used/1999-06-gmc-sierra/"
+    }
+   ],
+   "sourceCount": 4
+  },
+  {
+   "year": 2002,
+   "gen": "gmt800",
+   "cid": 293,
+   "cyl": 8,
+   "name": "4.8L / 293 V8",
+   "code": "LR4",
+   "desc": null,
+   "hp": 270,
+   "hpBasis": "net",
+   "trims": [
+    "1500 (standard on some ext cabs)"
+   ],
+   "note": null,
+   "nhra": false,
+   "sources": [
+    {
+     "name": "GM mediaOnline - 2002 GMC Sierra Light Duty new-for/specifications (archived)",
+     "url": "https://web.archive.org/web/2002/http://media.gm.com/division/gmc/products/02vehicles/sierra_ld.html"
+    },
+    {
+     "name": "Wikipedia - Chevrolet Silverado (first generation) (GMT800 Silverado/Sierra, C3/Denali, engine table)",
+     "url": "https://en.wikipedia.org/wiki/Chevrolet_Silverado_(first_generation)"
+    },
+    {
+     "name": "EPA fueleconomy.gov vehicle data",
+     "url": "https://www.fueleconomy.gov/feg/download.shtml"
+    },
+    {
+     "name": "Consumer Guide - 1999-06 GMC Sierra used-car review",
+     "url": "https://consumerguide.com/used/1999-06-gmc-sierra/"
+    }
+   ],
+   "sourceCount": 4
+  },
+  {
+   "year": 2002,
+   "gen": "gmt800",
+   "cid": 325,
+   "cyl": 8,
+   "name": "5.3L / 325 V8",
+   "code": "LM7",
+   "desc": null,
+   "hp": 285,
+   "hpBasis": "net",
+   "trims": [
+    "1500 (optional; standard SLT from 2004)"
+   ],
+   "note": null,
+   "nhra": false,
+   "sources": [
+    {
+     "name": "GM mediaOnline - 2002 GMC Sierra Light Duty new-for/specifications (archived)",
+     "url": "https://web.archive.org/web/2002/http://media.gm.com/division/gmc/products/02vehicles/sierra_ld.html"
+    },
+    {
+     "name": "Wikipedia - Chevrolet Silverado (first generation) (GMT800 Silverado/Sierra, C3/Denali, engine table)",
+     "url": "https://en.wikipedia.org/wiki/Chevrolet_Silverado_(first_generation)"
+    },
+    {
+     "name": "EPA fueleconomy.gov vehicle data",
+     "url": "https://www.fueleconomy.gov/feg/download.shtml"
+    },
+    {
+     "name": "Consumer Guide - 1999-06 GMC Sierra used-car review",
+     "url": "https://consumerguide.com/used/1999-06-gmc-sierra/"
+    }
+   ],
+   "sourceCount": 4
+  },
+  {
+   "year": 2002,
+   "gen": "gmt800",
+   "cid": 364,
+   "cyl": 8,
+   "name": "6.0L / 364 V8",
+   "code": "LQ4",
+   "desc": null,
+   "hp": 300,
+   "hpBasis": "net",
+   "trims": [
+    "Sierra 1500HD crew cab"
+   ],
+   "note": null,
+   "nhra": false,
+   "sources": [
+    {
+     "name": "GM mediaOnline - 2002 GMC Sierra Light Duty new-for/specifications (archived)",
+     "url": "https://web.archive.org/web/2002/http://media.gm.com/division/gmc/products/02vehicles/sierra_ld.html"
+    },
+    {
+     "name": "Wikipedia - Chevrolet Silverado (first generation) (GMT800 Silverado/Sierra, C3/Denali, engine table)",
+     "url": "https://en.wikipedia.org/wiki/Chevrolet_Silverado_(first_generation)"
+    },
+    {
+     "name": "EPA fueleconomy.gov vehicle data",
+     "url": "https://www.fueleconomy.gov/feg/download.shtml"
+    }
+   ],
+   "sourceCount": 3
+  },
+  {
+   "year": 2002,
+   "gen": "gmt800",
+   "cid": 364,
+   "cyl": 8,
+   "name": "6.0L / 364 V8",
+   "code": "LQ4",
+   "desc": null,
+   "hp": 325,
+   "hpBasis": "net",
+   "trims": [
+    "Sierra Denali (AWD, Quadrasteer to 2004)"
+   ],
+   "note": null,
+   "nhra": false,
+   "sources": [
+    {
+     "name": "GM mediaOnline - 2002 GMC Sierra Light Duty new-for/specifications (archived)",
+     "url": "https://web.archive.org/web/2002/http://media.gm.com/division/gmc/products/02vehicles/sierra_ld.html"
+    },
+    {
+     "name": "Wikipedia - Chevrolet Silverado (first generation) (GMT800 Silverado/Sierra, C3/Denali, engine table)",
+     "url": "https://en.wikipedia.org/wiki/Chevrolet_Silverado_(first_generation)"
+    },
+    {
+     "name": "EPA fueleconomy.gov vehicle data",
+     "url": "https://www.fueleconomy.gov/feg/download.shtml"
+    }
+   ],
+   "sourceCount": 3
+  },
+  {
+   "year": 2003,
+   "gen": "gmt800",
+   "cid": 262,
+   "cyl": 6,
+   "name": "4.3L / 262 V6",
+   "code": "LU3",
+   "desc": null,
+   "hp": null,
+   "hpBasis": "net",
+   "trims": [
+    "Base 1500 (regular/ext cab)"
+   ],
+   "note": null,
+   "nhra": false,
+   "sources": [
+    {
+     "name": "GM mediaOnline - 2003 GMC Sierra specifications (archived)",
+     "url": "https://web.archive.org/web/2003/http://media.gm.com/division/2003_prodinfo/03_gmc/03_sierra/specifications.html"
+    },
+    {
+     "name": "Wikipedia - Chevrolet Silverado (first generation) (GMT800 Silverado/Sierra, C3/Denali, engine table)",
+     "url": "https://en.wikipedia.org/wiki/Chevrolet_Silverado_(first_generation)"
+    },
+    {
+     "name": "EPA fueleconomy.gov vehicle data",
+     "url": "https://www.fueleconomy.gov/feg/download.shtml"
+    },
+    {
+     "name": "Consumer Guide - 1999-06 GMC Sierra used-car review",
+     "url": "https://consumerguide.com/used/1999-06-gmc-sierra/"
+    }
+   ],
+   "sourceCount": 4
+  },
+  {
+   "year": 2003,
+   "gen": "gmt800",
+   "cid": 293,
+   "cyl": 8,
+   "name": "4.8L / 293 V8",
+   "code": "LR4",
+   "desc": null,
+   "hp": 270,
+   "hpBasis": "net",
+   "trims": [
+    "1500 (standard on some ext cabs)"
+   ],
+   "note": null,
+   "nhra": false,
+   "sources": [
+    {
+     "name": "GM mediaOnline - 2003 GMC Sierra specifications (archived)",
+     "url": "https://web.archive.org/web/2003/http://media.gm.com/division/2003_prodinfo/03_gmc/03_sierra/specifications.html"
+    },
+    {
+     "name": "Wikipedia - Chevrolet Silverado (first generation) (GMT800 Silverado/Sierra, C3/Denali, engine table)",
+     "url": "https://en.wikipedia.org/wiki/Chevrolet_Silverado_(first_generation)"
+    },
+    {
+     "name": "EPA fueleconomy.gov vehicle data",
+     "url": "https://www.fueleconomy.gov/feg/download.shtml"
+    },
+    {
+     "name": "Consumer Guide - 1999-06 GMC Sierra used-car review",
+     "url": "https://consumerguide.com/used/1999-06-gmc-sierra/"
+    }
+   ],
+   "sourceCount": 4
+  },
+  {
+   "year": 2003,
+   "gen": "gmt800",
+   "cid": 325,
+   "cyl": 8,
+   "name": "5.3L / 325 V8",
+   "code": "LM7",
+   "desc": null,
+   "hp": 285,
+   "hpBasis": "net",
+   "trims": [
+    "1500 (optional; standard SLT from 2004)"
+   ],
+   "note": null,
+   "nhra": false,
+   "sources": [
+    {
+     "name": "GM mediaOnline - 2003 GMC Sierra specifications (archived)",
+     "url": "https://web.archive.org/web/2003/http://media.gm.com/division/2003_prodinfo/03_gmc/03_sierra/specifications.html"
+    },
+    {
+     "name": "Wikipedia - Chevrolet Silverado (first generation) (GMT800 Silverado/Sierra, C3/Denali, engine table)",
+     "url": "https://en.wikipedia.org/wiki/Chevrolet_Silverado_(first_generation)"
+    },
+    {
+     "name": "EPA fueleconomy.gov vehicle data",
+     "url": "https://www.fueleconomy.gov/feg/download.shtml"
+    },
+    {
+     "name": "Consumer Guide - 1999-06 GMC Sierra used-car review",
+     "url": "https://consumerguide.com/used/1999-06-gmc-sierra/"
+    }
+   ],
+   "sourceCount": 4
+  },
+  {
+   "year": 2003,
+   "gen": "gmt800",
+   "cid": 364,
+   "cyl": 8,
+   "name": "6.0L / 364 V8",
+   "code": "LQ4",
+   "desc": null,
+   "hp": 300,
+   "hpBasis": "net",
+   "trims": [
+    "Sierra 1500HD crew cab"
+   ],
+   "note": null,
+   "nhra": false,
+   "sources": [
+    {
+     "name": "GM mediaOnline - 2003 GMC Sierra specifications (archived)",
+     "url": "https://web.archive.org/web/2003/http://media.gm.com/division/2003_prodinfo/03_gmc/03_sierra/specifications.html"
+    },
+    {
+     "name": "Wikipedia - Chevrolet Silverado (first generation) (GMT800 Silverado/Sierra, C3/Denali, engine table)",
+     "url": "https://en.wikipedia.org/wiki/Chevrolet_Silverado_(first_generation)"
+    },
+    {
+     "name": "EPA fueleconomy.gov vehicle data",
+     "url": "https://www.fueleconomy.gov/feg/download.shtml"
+    },
+    {
+     "name": "Consumer Guide - 1999-06 GMC Sierra used-car review",
+     "url": "https://consumerguide.com/used/1999-06-gmc-sierra/"
+    }
+   ],
+   "sourceCount": 4
+  },
+  {
+   "year": 2003,
+   "gen": "gmt800",
+   "cid": 364,
+   "cyl": 8,
+   "name": "6.0L / 364 V8",
+   "code": "LQ4",
+   "desc": null,
+   "hp": 325,
+   "hpBasis": "net",
+   "trims": [
+    "Sierra Denali (AWD, Quadrasteer to 2004)"
+   ],
+   "note": null,
+   "nhra": false,
+   "sources": [
+    {
+     "name": "GM mediaOnline - 2003 GMC Sierra specifications (archived)",
+     "url": "https://web.archive.org/web/2003/http://media.gm.com/division/2003_prodinfo/03_gmc/03_sierra/specifications.html"
+    },
+    {
+     "name": "Wikipedia - Chevrolet Silverado (first generation) (GMT800 Silverado/Sierra, C3/Denali, engine table)",
+     "url": "https://en.wikipedia.org/wiki/Chevrolet_Silverado_(first_generation)"
+    },
+    {
+     "name": "EPA fueleconomy.gov vehicle data",
+     "url": "https://www.fueleconomy.gov/feg/download.shtml"
+    },
+    {
+     "name": "Consumer Guide - 1999-06 GMC Sierra used-car review",
+     "url": "https://consumerguide.com/used/1999-06-gmc-sierra/"
+    }
+   ],
+   "sourceCount": 4
+  },
+  {
+   "year": 2004,
+   "gen": "gmt800",
+   "cid": 262,
+   "cyl": 6,
+   "name": "4.3L / 262 V6",
+   "code": "LU3",
+   "desc": null,
+   "hp": null,
+   "hpBasis": "net",
+   "trims": [
+    "Base 1500 (regular/ext cab)"
+   ],
+   "note": null,
+   "nhra": false,
+   "sources": [
+    {
+     "name": "GM mediaOnline - 2004 GMC Sierra specifications (archived)",
+     "url": "https://web.archive.org/web/2003/http://media.gm.com/division/2004_prodinfo/gmc/sierra/specs.html"
+    },
+    {
+     "name": "Wikipedia - Chevrolet Silverado (first generation) (GMT800 Silverado/Sierra, C3/Denali, engine table)",
+     "url": "https://en.wikipedia.org/wiki/Chevrolet_Silverado_(first_generation)"
+    },
+    {
+     "name": "EPA fueleconomy.gov vehicle data",
+     "url": "https://www.fueleconomy.gov/feg/download.shtml"
+    },
+    {
+     "name": "Consumer Guide - 1999-06 GMC Sierra used-car review",
+     "url": "https://consumerguide.com/used/1999-06-gmc-sierra/"
+    }
+   ],
+   "sourceCount": 4
+  },
+  {
+   "year": 2004,
+   "gen": "gmt800",
+   "cid": 293,
+   "cyl": 8,
+   "name": "4.8L / 293 V8",
+   "code": "LR4",
+   "desc": null,
+   "hp": 285,
+   "hpBasis": "net",
+   "trims": [
+    "1500 (standard on some ext cabs)"
+   ],
+   "note": null,
+   "nhra": false,
+   "sources": [
+    {
+     "name": "GM mediaOnline - 2004 GMC Sierra specifications (archived)",
+     "url": "https://web.archive.org/web/2003/http://media.gm.com/division/2004_prodinfo/gmc/sierra/specs.html"
+    },
+    {
+     "name": "Wikipedia - Chevrolet Silverado (first generation) (GMT800 Silverado/Sierra, C3/Denali, engine table)",
+     "url": "https://en.wikipedia.org/wiki/Chevrolet_Silverado_(first_generation)"
+    },
+    {
+     "name": "EPA fueleconomy.gov vehicle data",
+     "url": "https://www.fueleconomy.gov/feg/download.shtml"
+    },
+    {
+     "name": "Consumer Guide - 1999-06 GMC Sierra used-car review",
+     "url": "https://consumerguide.com/used/1999-06-gmc-sierra/"
+    }
+   ],
+   "sourceCount": 4
+  },
+  {
+   "year": 2004,
+   "gen": "gmt800",
+   "cid": 325,
+   "cyl": 8,
+   "name": "5.3L / 325 V8",
+   "code": "LM7",
+   "desc": null,
+   "hp": 295,
+   "hpBasis": "net",
+   "trims": [
+    "1500 (optional; standard SLT from 2004)"
+   ],
+   "note": null,
+   "nhra": false,
+   "sources": [
+    {
+     "name": "GM mediaOnline - 2004 GMC Sierra specifications (archived)",
+     "url": "https://web.archive.org/web/2003/http://media.gm.com/division/2004_prodinfo/gmc/sierra/specs.html"
+    },
+    {
+     "name": "Wikipedia - Chevrolet Silverado (first generation) (GMT800 Silverado/Sierra, C3/Denali, engine table)",
+     "url": "https://en.wikipedia.org/wiki/Chevrolet_Silverado_(first_generation)"
+    },
+    {
+     "name": "EPA fueleconomy.gov vehicle data",
+     "url": "https://www.fueleconomy.gov/feg/download.shtml"
+    },
+    {
+     "name": "Consumer Guide - 1999-06 GMC Sierra used-car review",
+     "url": "https://consumerguide.com/used/1999-06-gmc-sierra/"
+    }
+   ],
+   "sourceCount": 4
+  },
+  {
+   "year": 2004,
+   "gen": "gmt800",
+   "cid": 364,
+   "cyl": 8,
+   "name": "6.0L / 364 V8",
+   "code": "LQ4",
+   "desc": null,
+   "hp": 325,
+   "hpBasis": "net",
+   "trims": [
+    "Sierra Denali (AWD, Quadrasteer to 2004)"
+   ],
+   "note": null,
+   "nhra": false,
+   "sources": [
+    {
+     "name": "GM mediaOnline - 2004 GMC Sierra specifications (archived)",
+     "url": "https://web.archive.org/web/2003/http://media.gm.com/division/2004_prodinfo/gmc/sierra/specs.html"
+    },
+    {
+     "name": "Wikipedia - Chevrolet Silverado (first generation) (GMT800 Silverado/Sierra, C3/Denali, engine table)",
+     "url": "https://en.wikipedia.org/wiki/Chevrolet_Silverado_(first_generation)"
+    },
+    {
+     "name": "EPA fueleconomy.gov vehicle data",
+     "url": "https://www.fueleconomy.gov/feg/download.shtml"
+    },
+    {
+     "name": "Consumer Guide - 1999-06 GMC Sierra used-car review",
+     "url": "https://consumerguide.com/used/1999-06-gmc-sierra/"
+    }
+   ],
+   "sourceCount": 4
+  },
+  {
+   "year": 2005,
+   "gen": "gmt800",
+   "cid": 262,
+   "cyl": 6,
+   "name": "4.3L / 262 V6",
+   "code": "LU3",
+   "desc": null,
+   "hp": null,
+   "hpBasis": "net",
+   "trims": [
+    "Base 1500 (regular/ext cab)"
+   ],
+   "note": null,
+   "nhra": false,
+   "sources": [
+    {
+     "name": "Wikipedia - Chevrolet Silverado (first generation) (GMT800 Silverado/Sierra, C3/Denali, engine table)",
+     "url": "https://en.wikipedia.org/wiki/Chevrolet_Silverado_(first_generation)"
+    },
+    {
+     "name": "EPA fueleconomy.gov vehicle data",
+     "url": "https://www.fueleconomy.gov/feg/download.shtml"
+    },
+    {
+     "name": "Consumer Guide - 1999-06 GMC Sierra used-car review",
+     "url": "https://consumerguide.com/used/1999-06-gmc-sierra/"
+    }
+   ],
+   "sourceCount": 3
+  },
+  {
+   "year": 2005,
+   "gen": "gmt800",
+   "cid": 293,
+   "cyl": 8,
+   "name": "4.8L / 293 V8",
+   "code": "LR4",
+   "desc": null,
+   "hp": 285,
+   "hpBasis": "net",
+   "trims": [
+    "1500 (standard on some ext cabs)"
+   ],
+   "note": null,
+   "nhra": false,
+   "sources": [
+    {
+     "name": "Wikipedia - Chevrolet Silverado (first generation) (GMT800 Silverado/Sierra, C3/Denali, engine table)",
+     "url": "https://en.wikipedia.org/wiki/Chevrolet_Silverado_(first_generation)"
+    },
+    {
+     "name": "EPA fueleconomy.gov vehicle data",
+     "url": "https://www.fueleconomy.gov/feg/download.shtml"
+    },
+    {
+     "name": "Consumer Guide - 1999-06 GMC Sierra used-car review",
+     "url": "https://consumerguide.com/used/1999-06-gmc-sierra/"
+    }
+   ],
+   "sourceCount": 3
+  },
+  {
+   "year": 2005,
+   "gen": "gmt800",
+   "cid": 325,
+   "cyl": 8,
+   "name": "5.3L / 325 V8",
+   "code": "LM7",
+   "desc": null,
+   "hp": 295,
+   "hpBasis": "net",
+   "trims": [
+    "1500 (optional; standard SLT from 2004)"
+   ],
+   "note": null,
+   "nhra": false,
+   "sources": [
+    {
+     "name": "Wikipedia - Chevrolet Silverado (first generation) (GMT800 Silverado/Sierra, C3/Denali, engine table)",
+     "url": "https://en.wikipedia.org/wiki/Chevrolet_Silverado_(first_generation)"
+    },
+    {
+     "name": "EPA fueleconomy.gov vehicle data",
+     "url": "https://www.fueleconomy.gov/feg/download.shtml"
+    },
+    {
+     "name": "Consumer Guide - 1999-06 GMC Sierra used-car review",
+     "url": "https://consumerguide.com/used/1999-06-gmc-sierra/"
+    }
+   ],
+   "sourceCount": 3
+  },
+  {
+   "year": 2005,
+   "gen": "gmt800",
+   "cid": 325,
+   "cyl": 8,
+   "name": "5.3L / 325 V8",
+   "code": "L33",
+   "desc": null,
+   "hp": 310,
+   "hpBasis": "net",
+   "trims": [
+    "1500 extended cab short box 4WD"
+   ],
+   "note": null,
+   "nhra": false,
+   "sources": [
+    {
+     "name": "Wikipedia - Chevrolet Silverado (first generation) (GMT800 Silverado/Sierra, C3/Denali, engine table)",
+     "url": "https://en.wikipedia.org/wiki/Chevrolet_Silverado_(first_generation)"
+    },
+    {
+     "name": "Consumer Guide - 1999-06 GMC Sierra used-car review",
+     "url": "https://consumerguide.com/used/1999-06-gmc-sierra/"
+    },
+    {
+     "name": "EPA fueleconomy.gov vehicle data",
+     "url": "https://www.fueleconomy.gov/feg/download.shtml"
+    }
+   ],
+   "sourceCount": 3
+  },
+  {
+   "year": 2005,
+   "gen": "gmt800",
+   "cid": 364,
+   "cyl": 8,
+   "name": "6.0L / 364 V8",
+   "code": "LQ9",
+   "desc": null,
+   "hp": 345,
+   "hpBasis": "net",
+   "trims": [
+    "Sierra Denali (AWD, Quadrasteer to 2004)"
+   ],
+   "note": null,
+   "nhra": false,
+   "sources": [
+    {
+     "name": "Wikipedia - Chevrolet Silverado (first generation) (GMT800 Silverado/Sierra, C3/Denali, engine table)",
+     "url": "https://en.wikipedia.org/wiki/Chevrolet_Silverado_(first_generation)"
+    },
+    {
+     "name": "EPA fueleconomy.gov vehicle data",
+     "url": "https://www.fueleconomy.gov/feg/download.shtml"
+    },
+    {
+     "name": "Consumer Guide - 1999-06 GMC Sierra used-car review",
+     "url": "https://consumerguide.com/used/1999-06-gmc-sierra/"
+    }
+   ],
+   "sourceCount": 3
+  },
+  {
+   "year": 2006,
+   "gen": "gmt800",
+   "cid": 262,
+   "cyl": 6,
+   "name": "4.3L / 262 V6",
+   "code": "LU3",
+   "desc": null,
+   "hp": 195,
+   "hpBasis": "net",
+   "trims": [
+    "Base 1500 (regular/ext cab)"
+   ],
+   "note": null,
+   "nhra": false,
+   "sources": [
+    {
+     "name": "GM media - 2006 GMC Sierra 1500 overview/specifications (archived)",
+     "url": "https://web.archive.org/web/2006/http://media.gm.com/us/gmc/en/product_services/r_cars/r_c_sierra_classic/index%20LD.html"
+    },
+    {
+     "name": "Wikipedia - Chevrolet Silverado (first generation) (GMT800 Silverado/Sierra, C3/Denali, engine table)",
+     "url": "https://en.wikipedia.org/wiki/Chevrolet_Silverado_(first_generation)"
+    },
+    {
+     "name": "EPA fueleconomy.gov vehicle data",
+     "url": "https://www.fueleconomy.gov/feg/download.shtml"
+    },
+    {
+     "name": "Consumer Guide - 1999-06 GMC Sierra used-car review",
+     "url": "https://consumerguide.com/used/1999-06-gmc-sierra/"
+    }
+   ],
+   "sourceCount": 4
+  },
+  {
+   "year": 2006,
+   "gen": "gmt800",
+   "cid": 293,
+   "cyl": 8,
+   "name": "4.8L / 293 V8",
+   "code": "LR4",
+   "desc": null,
+   "hp": 285,
+   "hpBasis": "net",
+   "trims": [
+    "1500 (standard on some ext cabs)"
+   ],
+   "note": null,
+   "nhra": false,
+   "sources": [
+    {
+     "name": "GM media - 2006 GMC Sierra 1500 overview/specifications (archived)",
+     "url": "https://web.archive.org/web/2006/http://media.gm.com/us/gmc/en/product_services/r_cars/r_c_sierra_classic/index%20LD.html"
+    },
+    {
+     "name": "Wikipedia - Chevrolet Silverado (first generation) (GMT800 Silverado/Sierra, C3/Denali, engine table)",
+     "url": "https://en.wikipedia.org/wiki/Chevrolet_Silverado_(first_generation)"
+    },
+    {
+     "name": "EPA fueleconomy.gov vehicle data",
+     "url": "https://www.fueleconomy.gov/feg/download.shtml"
+    },
+    {
+     "name": "Consumer Guide - 1999-06 GMC Sierra used-car review",
+     "url": "https://consumerguide.com/used/1999-06-gmc-sierra/"
+    }
+   ],
+   "sourceCount": 4
+  },
+  {
+   "year": 2006,
+   "gen": "gmt800",
+   "cid": 325,
+   "cyl": 8,
+   "name": "5.3L / 325 V8",
+   "code": "LM7",
+   "desc": null,
+   "hp": 295,
+   "hpBasis": "net",
+   "trims": [
+    "1500 (optional; standard SLT from 2004)",
+    "Sierra 1500 Hybrid (ext cab)"
+   ],
+   "note": null,
+   "nhra": false,
+   "sources": [
+    {
+     "name": "GM media - 2006 GMC Sierra 1500 overview/specifications (archived)",
+     "url": "https://web.archive.org/web/2006/http://media.gm.com/us/gmc/en/product_services/r_cars/r_c_sierra_classic/index%20LD.html"
+    },
+    {
+     "name": "Wikipedia - Chevrolet Silverado (first generation) (GMT800 Silverado/Sierra, C3/Denali, engine table)",
+     "url": "https://en.wikipedia.org/wiki/Chevrolet_Silverado_(first_generation)"
+    },
+    {
+     "name": "EPA fueleconomy.gov vehicle data",
+     "url": "https://www.fueleconomy.gov/feg/download.shtml"
+    },
+    {
+     "name": "Consumer Guide - 1999-06 GMC Sierra used-car review",
+     "url": "https://consumerguide.com/used/1999-06-gmc-sierra/"
+    }
+   ],
+   "sourceCount": 4
+  },
+  {
+   "year": 2006,
+   "gen": "gmt800",
+   "cid": 325,
+   "cyl": 8,
+   "name": "5.3L / 325 V8",
+   "code": "L33",
+   "desc": null,
+   "hp": 310,
+   "hpBasis": "net",
+   "trims": [
+    "1500 extended cab short box 4WD"
+   ],
+   "note": null,
+   "nhra": false,
+   "sources": [
+    {
+     "name": "GM media - 2006 GMC Sierra 1500 overview/specifications (archived)",
+     "url": "https://web.archive.org/web/2006/http://media.gm.com/us/gmc/en/product_services/r_cars/r_c_sierra_classic/index%20LD.html"
+    },
+    {
+     "name": "Wikipedia - Chevrolet Silverado (first generation) (GMT800 Silverado/Sierra, C3/Denali, engine table)",
+     "url": "https://en.wikipedia.org/wiki/Chevrolet_Silverado_(first_generation)"
+    },
+    {
+     "name": "Consumer Guide - 1999-06 GMC Sierra used-car review",
+     "url": "https://consumerguide.com/used/1999-06-gmc-sierra/"
+    },
+    {
+     "name": "EPA fueleconomy.gov vehicle data",
+     "url": "https://www.fueleconomy.gov/feg/download.shtml"
+    }
+   ],
+   "sourceCount": 4
+  },
+  {
+   "year": 2006,
+   "gen": "gmt800",
+   "cid": 364,
+   "cyl": 8,
+   "name": "6.0L / 364 V8",
+   "code": "LQ4",
+   "desc": null,
+   "hp": 300,
+   "hpBasis": "net",
+   "trims": [
+    "Sierra 1500HD crew cab"
+   ],
+   "note": null,
+   "nhra": false,
+   "sources": [
+    {
+     "name": "GM media - 2006 GMC Sierra 1500 overview/specifications (archived)",
+     "url": "https://web.archive.org/web/2006/http://media.gm.com/us/gmc/en/product_services/r_cars/r_c_sierra_classic/index%20LD.html"
+    },
+    {
+     "name": "Wikipedia - Chevrolet Silverado (first generation) (GMT800 Silverado/Sierra, C3/Denali, engine table)",
+     "url": "https://en.wikipedia.org/wiki/Chevrolet_Silverado_(first_generation)"
+    },
+    {
+     "name": "EPA fueleconomy.gov vehicle data",
+     "url": "https://www.fueleconomy.gov/feg/download.shtml"
+    }
+   ],
+   "sourceCount": 3
+  },
+  {
+   "year": 2006,
+   "gen": "gmt800",
+   "cid": 364,
+   "cyl": 8,
+   "name": "6.0L / 364 V8",
+   "code": "LQ9",
+   "desc": null,
+   "hp": 345,
+   "hpBasis": "net",
+   "trims": [
+    "Sierra Denali (AWD, Quadrasteer to 2004)",
+    "Sierra 1500 ext/crew cab VHO (2004-05), VortecMAX pkg & Performance Edition (2006-07)"
+   ],
+   "note": null,
+   "nhra": false,
+   "sources": [
+    {
+     "name": "GM media - 2006 GMC Sierra 1500 overview/specifications (archived)",
+     "url": "https://web.archive.org/web/2006/http://media.gm.com/us/gmc/en/product_services/r_cars/r_c_sierra_classic/index%20LD.html"
+    },
+    {
+     "name": "Wikipedia - Chevrolet Silverado (first generation) (GMT800 Silverado/Sierra, C3/Denali, engine table)",
+     "url": "https://en.wikipedia.org/wiki/Chevrolet_Silverado_(first_generation)"
+    },
+    {
+     "name": "EPA fueleconomy.gov vehicle data",
+     "url": "https://www.fueleconomy.gov/feg/download.shtml"
+    }
+   ],
+   "sourceCount": 3
+  },
+  {
+   "year": 2007,
+   "gen": "gmt800",
+   "cid": 262,
+   "cyl": 6,
+   "name": "4.3L / 262 V6",
+   "code": "LU3",
+   "desc": null,
+   "hp": 195,
+   "hpBasis": "net",
+   "trims": [
+    "Base 1500 (regular/ext cab) - 2007 Sierra Classic",
+    "Base regular/ext cab"
+   ],
+   "note": null,
+   "nhra": false,
+   "sources": [
+    {
+     "name": "GM media - 2007 GMC Sierra Classic press kit (archived)",
+     "url": "https://web.archive.org/web/2007/http://media.gm.com/us/gmc/en/product_services/r_cars/r_c_sierra_classic/index.html"
+    },
+    {
+     "name": "Wikipedia - Chevrolet Silverado (first generation) (GMT800 Silverado/Sierra, C3/Denali, engine table)",
+     "url": "https://en.wikipedia.org/wiki/Chevrolet_Silverado_(first_generation)"
+    },
+    {
+     "name": "EPA fueleconomy.gov vehicle data",
+     "url": "https://www.fueleconomy.gov/feg/download.shtml"
+    },
+    {
+     "name": "Consumer Guide - 1999-06 GMC Sierra used-car review",
+     "url": "https://consumerguide.com/used/1999-06-gmc-sierra/"
+    },
+    {
+     "name": "GM media - 2007 GMC Sierra (GMT900) overview and cab specs (archived)",
+     "url": "https://web.archive.org/web/2007/http://media.gm.com/us/gmc/en/product_services/r_cars/r_c_sierra/07sierraPK/07_GMC_Sierra_Overview.html"
+    },
+    {
+     "name": "Wikipedia - Chevrolet Silverado (second generation) (GMT900 Silverado/Sierra engine table)",
+     "url": "https://en.wikipedia.org/wiki/Chevrolet_Silverado_(second_generation)"
+    },
+    {
+     "name": "Consumer Guide - 2007-13 GMC Sierra 1500 used-car review",
+     "url": "https://consumerguide.com/used/2007-13-gmc-sierra/"
+    }
+   ],
+   "sourceCount": 4
+  },
+  {
+   "year": 2007,
+   "gen": "gmt800",
+   "cid": 293,
+   "cyl": 8,
+   "name": "4.8L / 293 V8",
+   "code": "LR4",
+   "desc": null,
+   "hp": 285,
+   "hpBasis": "net",
+   "trims": [
+    "1500 (standard on some ext cabs) - 2007 Sierra Classic"
+   ],
+   "note": null,
+   "nhra": false,
+   "sources": [
+    {
+     "name": "GM media - 2007 GMC Sierra Classic press kit (archived)",
+     "url": "https://web.archive.org/web/2007/http://media.gm.com/us/gmc/en/product_services/r_cars/r_c_sierra_classic/index.html"
+    },
+    {
+     "name": "Wikipedia - Chevrolet Silverado (first generation) (GMT800 Silverado/Sierra, C3/Denali, engine table)",
+     "url": "https://en.wikipedia.org/wiki/Chevrolet_Silverado_(first_generation)"
+    },
+    {
+     "name": "EPA fueleconomy.gov vehicle data",
+     "url": "https://www.fueleconomy.gov/feg/download.shtml"
+    },
+    {
+     "name": "Consumer Guide - 1999-06 GMC Sierra used-car review",
+     "url": "https://consumerguide.com/used/1999-06-gmc-sierra/"
+    }
+   ],
+   "sourceCount": 4
+  },
+  {
+   "year": 2007,
+   "gen": "gmt800",
+   "cid": 325,
+   "cyl": 8,
+   "name": "5.3L / 325 V8",
+   "code": "LM7",
+   "desc": null,
+   "hp": 295,
+   "hpBasis": "net",
+   "trims": [
+    "1500 (optional; standard SLT from 2004) - 2007 Sierra Classic",
+    "Sierra 1500 Hybrid (ext cab) - 2007 Sierra Classic"
+   ],
+   "note": null,
+   "nhra": false,
+   "sources": [
+    {
+     "name": "GM media - 2007 GMC Sierra Classic press kit (archived)",
+     "url": "https://web.archive.org/web/2007/http://media.gm.com/us/gmc/en/product_services/r_cars/r_c_sierra_classic/index.html"
+    },
+    {
+     "name": "Wikipedia - Chevrolet Silverado (first generation) (GMT800 Silverado/Sierra, C3/Denali, engine table)",
+     "url": "https://en.wikipedia.org/wiki/Chevrolet_Silverado_(first_generation)"
+    },
+    {
+     "name": "EPA fueleconomy.gov vehicle data",
+     "url": "https://www.fueleconomy.gov/feg/download.shtml"
+    },
+    {
+     "name": "Consumer Guide - 1999-06 GMC Sierra used-car review",
+     "url": "https://consumerguide.com/used/1999-06-gmc-sierra/"
+    }
+   ],
+   "sourceCount": 4
+  },
+  {
+   "year": 2007,
+   "gen": "gmt800",
+   "cid": 325,
+   "cyl": 8,
+   "name": "5.3L / 325 V8",
+   "code": "L33",
+   "desc": null,
+   "hp": 310,
+   "hpBasis": "net",
+   "trims": [
+    "1500 extended cab short box 4WD - 2007 Sierra Classic"
+   ],
+   "note": null,
+   "nhra": false,
+   "sources": [
+    {
+     "name": "GM media - 2007 GMC Sierra Classic press kit (archived)",
+     "url": "https://web.archive.org/web/2007/http://media.gm.com/us/gmc/en/product_services/r_cars/r_c_sierra_classic/index.html"
+    },
+    {
+     "name": "Wikipedia - Chevrolet Silverado (first generation) (GMT800 Silverado/Sierra, C3/Denali, engine table)",
+     "url": "https://en.wikipedia.org/wiki/Chevrolet_Silverado_(first_generation)"
+    },
+    {
+     "name": "Consumer Guide - 1999-06 GMC Sierra used-car review",
+     "url": "https://consumerguide.com/used/1999-06-gmc-sierra/"
+    },
+    {
+     "name": "EPA fueleconomy.gov vehicle data",
+     "url": "https://www.fueleconomy.gov/feg/download.shtml"
+    }
+   ],
+   "sourceCount": 4
+  },
+  {
+   "year": 2007,
+   "gen": "gmt800",
+   "cid": 364,
+   "cyl": 8,
+   "name": "6.0L / 364 V8",
+   "code": "LQ4",
+   "desc": null,
+   "hp": 300,
+   "hpBasis": "net",
+   "trims": [
+    "Sierra 1500HD crew cab - 2007 Sierra Classic"
+   ],
+   "note": null,
+   "nhra": false,
+   "sources": [
+    {
+     "name": "GM media - 2007 GMC Sierra Classic press kit (archived)",
+     "url": "https://web.archive.org/web/2007/http://media.gm.com/us/gmc/en/product_services/r_cars/r_c_sierra_classic/index.html"
+    },
+    {
+     "name": "Wikipedia - Chevrolet Silverado (first generation) (GMT800 Silverado/Sierra, C3/Denali, engine table)",
+     "url": "https://en.wikipedia.org/wiki/Chevrolet_Silverado_(first_generation)"
+    },
+    {
+     "name": "EPA fueleconomy.gov vehicle data",
+     "url": "https://www.fueleconomy.gov/feg/download.shtml"
+    }
+   ],
+   "sourceCount": 3
+  },
+  {
+   "year": 2007,
+   "gen": "gmt800",
+   "cid": 364,
+   "cyl": 8,
+   "name": "6.0L / 364 V8",
+   "code": "LQ9",
+   "desc": null,
+   "hp": 345,
+   "hpBasis": "net",
+   "trims": [
+    "Sierra Denali Classic (AWD crew cab)",
+    "Sierra 1500 ext/crew cab VHO (2004-05), VortecMAX pkg & Performance Edition (2006-07) - 2007 Sierra Classic"
+   ],
+   "note": null,
+   "nhra": false,
+   "sources": [
+    {
+     "name": "GM media - 2007 GMC Sierra Classic press kit (archived)",
+     "url": "https://web.archive.org/web/2007/http://media.gm.com/us/gmc/en/product_services/r_cars/r_c_sierra_classic/index.html"
+    },
+    {
+     "name": "Wikipedia - Chevrolet Silverado (first generation) (GMT800 Silverado/Sierra, C3/Denali, engine table)",
+     "url": "https://en.wikipedia.org/wiki/Chevrolet_Silverado_(first_generation)"
+    },
+    {
+     "name": "EPA fueleconomy.gov vehicle data",
+     "url": "https://www.fueleconomy.gov/feg/download.shtml"
+    }
+   ],
+   "sourceCount": 3
+  },
+  {
+   "year": 2007,
+   "gen": "gmt900",
+   "cid": 293,
+   "cyl": 8,
+   "name": "4.8L / 293 V8",
+   "code": "LY2",
+   "desc": null,
+   "hp": 295,
+   "hpBasis": "net",
+   "trims": [
+    "1500 (standard/optional)"
+   ],
+   "note": null,
+   "nhra": false,
+   "sources": [
+    {
+     "name": "GM media - 2007 GMC Sierra (GMT900) overview and cab specs (archived)",
+     "url": "https://web.archive.org/web/2007/http://media.gm.com/us/gmc/en/product_services/r_cars/r_c_sierra/07sierraPK/07_GMC_Sierra_Overview.html"
+    },
+    {
+     "name": "Wikipedia - Chevrolet Silverado (second generation) (GMT900 Silverado/Sierra engine table)",
+     "url": "https://en.wikipedia.org/wiki/Chevrolet_Silverado_(second_generation)"
+    },
+    {
+     "name": "EPA fueleconomy.gov vehicle data",
+     "url": "https://www.fueleconomy.gov/feg/download.shtml"
+    },
+    {
+     "name": "Consumer Guide - 2007-13 GMC Sierra 1500 used-car review",
+     "url": "https://consumerguide.com/used/2007-13-gmc-sierra/"
+    }
+   ],
+   "sourceCount": 4
+  },
+  {
+   "year": 2007,
+   "gen": "gmt900",
+   "cid": 325,
+   "cyl": 8,
+   "name": "5.3L / 325 V8",
+   "code": "LY5 / LH6 / LMG / LC9",
+   "desc": null,
+   "hp": 315,
+   "hpBasis": "net",
+   "trims": [
+    "1500 (standard SLE2/SLT, optional others)"
+   ],
+   "note": null,
+   "nhra": false,
+   "sources": [
+    {
+     "name": "GM media - 2007 GMC Sierra (GMT900) overview and cab specs (archived)",
+     "url": "https://web.archive.org/web/2007/http://media.gm.com/us/gmc/en/product_services/r_cars/r_c_sierra/07sierraPK/07_GMC_Sierra_Overview.html"
+    },
+    {
+     "name": "Wikipedia - Chevrolet Silverado (second generation) (GMT900 Silverado/Sierra engine table)",
+     "url": "https://en.wikipedia.org/wiki/Chevrolet_Silverado_(second_generation)"
+    },
+    {
+     "name": "EPA fueleconomy.gov vehicle data",
+     "url": "https://www.fueleconomy.gov/feg/download.shtml"
+    },
+    {
+     "name": "Consumer Guide - 2007-13 GMC Sierra 1500 used-car review",
+     "url": "https://consumerguide.com/used/2007-13-gmc-sierra/"
+    }
+   ],
+   "sourceCount": 4
+  },
+  {
+   "year": 2007,
+   "gen": "gmt900",
+   "cid": 364,
+   "cyl": 8,
+   "name": "6.0L / 364 V8",
+   "code": "L76",
+   "desc": null,
+   "hp": 367,
+   "hpBasis": "net",
+   "trims": [
+    "SLE/SLT ext & crew cab (enhanced trailering pkg)"
+   ],
+   "note": null,
+   "nhra": false,
+   "sources": [
+    {
+     "name": "GM media - 2007 GMC Sierra (GMT900) overview and cab specs (archived)",
+     "url": "https://web.archive.org/web/2007/http://media.gm.com/us/gmc/en/product_services/r_cars/r_c_sierra/07sierraPK/07_GMC_Sierra_Overview.html"
+    },
+    {
+     "name": "Wikipedia - Chevrolet Silverado (second generation) (GMT900 Silverado/Sierra engine table)",
+     "url": "https://en.wikipedia.org/wiki/Chevrolet_Silverado_(second_generation)"
+    },
+    {
+     "name": "EPA fueleconomy.gov vehicle data",
+     "url": "https://www.fueleconomy.gov/feg/download.shtml"
+    },
+    {
+     "name": "Consumer Guide - 2007-13 GMC Sierra 1500 used-car review",
+     "url": "https://consumerguide.com/used/2007-13-gmc-sierra/"
+    }
+   ],
+   "sourceCount": 4
+  },
+  {
+   "year": 2007,
+   "gen": "gmt900",
+   "cid": 376,
+   "cyl": 8,
+   "name": "6.2L / 376 V8",
+   "code": "L92",
+   "desc": null,
+   "hp": null,
+   "hpBasis": "net",
+   "trims": [
+    "Sierra Denali (2WD/AWD)"
+   ],
+   "note": null,
+   "nhra": false,
+   "sources": [
+    {
+     "name": "GM media - 2007 GMC Sierra (GMT900) overview and cab specs (archived)",
+     "url": "https://web.archive.org/web/2007/http://media.gm.com/us/gmc/en/product_services/r_cars/r_c_sierra/07sierraPK/07_GMC_Sierra_Overview.html"
+    },
+    {
+     "name": "Wikipedia - Chevrolet Silverado (second generation) (GMT900 Silverado/Sierra engine table)",
+     "url": "https://en.wikipedia.org/wiki/Chevrolet_Silverado_(second_generation)"
+    },
+    {
+     "name": "EPA fueleconomy.gov vehicle data",
+     "url": "https://www.fueleconomy.gov/feg/download.shtml"
+    },
+    {
+     "name": "Consumer Guide - 2007-13 GMC Sierra 1500 used-car review",
+     "url": "https://consumerguide.com/used/2007-13-gmc-sierra/"
+    }
+   ],
+   "sourceCount": 4
+  },
+  {
+   "year": 2008,
+   "gen": "gmt900",
+   "cid": 262,
+   "cyl": 6,
+   "name": "4.3L / 262 V6",
+   "code": "LU3",
+   "desc": null,
+   "hp": 195,
+   "hpBasis": "net",
+   "trims": [
+    "Base regular/ext cab"
+   ],
+   "note": null,
+   "nhra": false,
+   "sources": [
+    {
+     "name": "GM media - 2008 GMC Sierra 1500 & Sierra Denali press kit (archived)",
+     "url": "https://web.archive.org/web/2008/http://media.gm.com/us/gmc/en/product_services/r_cars/r_c_sierra/08index.html"
+    },
+    {
+     "name": "Wikipedia - Chevrolet Silverado (second generation) (GMT900 Silverado/Sierra engine table)",
+     "url": "https://en.wikipedia.org/wiki/Chevrolet_Silverado_(second_generation)"
+    },
+    {
+     "name": "EPA fueleconomy.gov vehicle data",
+     "url": "https://www.fueleconomy.gov/feg/download.shtml"
+    },
+    {
+     "name": "Consumer Guide - 2007-13 GMC Sierra 1500 used-car review",
+     "url": "https://consumerguide.com/used/2007-13-gmc-sierra/"
+    }
+   ],
+   "sourceCount": 4
+  },
+  {
+   "year": 2008,
+   "gen": "gmt900",
+   "cid": 293,
+   "cyl": 8,
+   "name": "4.8L / 293 V8",
+   "code": "LY2",
+   "desc": null,
+   "hp": 295,
+   "hpBasis": "net",
+   "trims": [
+    "1500 (standard/optional)"
+   ],
+   "note": null,
+   "nhra": false,
+   "sources": [
+    {
+     "name": "GM media - 2008 GMC Sierra 1500 & Sierra Denali press kit (archived)",
+     "url": "https://web.archive.org/web/2008/http://media.gm.com/us/gmc/en/product_services/r_cars/r_c_sierra/08index.html"
+    },
+    {
+     "name": "Wikipedia - Chevrolet Silverado (second generation) (GMT900 Silverado/Sierra engine table)",
+     "url": "https://en.wikipedia.org/wiki/Chevrolet_Silverado_(second_generation)"
+    },
+    {
+     "name": "EPA fueleconomy.gov vehicle data",
+     "url": "https://www.fueleconomy.gov/feg/download.shtml"
+    },
+    {
+     "name": "Consumer Guide - 2007-13 GMC Sierra 1500 used-car review",
+     "url": "https://consumerguide.com/used/2007-13-gmc-sierra/"
+    }
+   ],
+   "sourceCount": 4
+  },
+  {
+   "year": 2008,
+   "gen": "gmt900",
+   "cid": 325,
+   "cyl": 8,
+   "name": "5.3L / 325 V8",
+   "code": "LY5 / LH6 / LMG / LC9",
+   "desc": null,
+   "hp": 315,
+   "hpBasis": "net",
+   "trims": [
+    "1500 (standard SLE2/SLT, optional others)"
+   ],
+   "note": null,
+   "nhra": false,
+   "sources": [
+    {
+     "name": "GM media - 2008 GMC Sierra 1500 & Sierra Denali press kit (archived)",
+     "url": "https://web.archive.org/web/2008/http://media.gm.com/us/gmc/en/product_services/r_cars/r_c_sierra/08index.html"
+    },
+    {
+     "name": "Wikipedia - Chevrolet Silverado (second generation) (GMT900 Silverado/Sierra engine table)",
+     "url": "https://en.wikipedia.org/wiki/Chevrolet_Silverado_(second_generation)"
+    },
+    {
+     "name": "EPA fueleconomy.gov vehicle data",
+     "url": "https://www.fueleconomy.gov/feg/download.shtml"
+    },
+    {
+     "name": "Consumer Guide - 2007-13 GMC Sierra 1500 used-car review",
+     "url": "https://consumerguide.com/used/2007-13-gmc-sierra/"
+    }
+   ],
+   "sourceCount": 4
+  },
+  {
+   "year": 2008,
+   "gen": "gmt900",
+   "cid": 364,
+   "cyl": 8,
+   "name": "6.0L / 364 V8",
+   "code": "L76",
+   "desc": null,
+   "hp": 367,
+   "hpBasis": "net",
+   "trims": [
+    "SLE/SLT ext & crew cab (enhanced trailering pkg)"
+   ],
+   "note": null,
+   "nhra": false,
+   "sources": [
+    {
+     "name": "GM media - 2008 GMC Sierra 1500 & Sierra Denali press kit (archived)",
+     "url": "https://web.archive.org/web/2008/http://media.gm.com/us/gmc/en/product_services/r_cars/r_c_sierra/08index.html"
+    },
+    {
+     "name": "Wikipedia - Chevrolet Silverado (second generation) (GMT900 Silverado/Sierra engine table)",
+     "url": "https://en.wikipedia.org/wiki/Chevrolet_Silverado_(second_generation)"
+    },
+    {
+     "name": "EPA fueleconomy.gov vehicle data",
+     "url": "https://www.fueleconomy.gov/feg/download.shtml"
+    },
+    {
+     "name": "Consumer Guide - 2007-13 GMC Sierra 1500 used-car review",
+     "url": "https://consumerguide.com/used/2007-13-gmc-sierra/"
+    }
+   ],
+   "sourceCount": 4
+  },
+  {
+   "year": 2008,
+   "gen": "gmt900",
+   "cid": 376,
+   "cyl": 8,
+   "name": "6.2L / 376 V8",
+   "code": "L92",
+   "desc": null,
+   "hp": 403,
+   "hpBasis": "net",
+   "trims": [
+    "Sierra Denali (2WD/AWD)"
+   ],
+   "note": null,
+   "nhra": false,
+   "sources": [
+    {
+     "name": "GM media - 2008 GMC Sierra 1500 & Sierra Denali press kit (archived)",
+     "url": "https://web.archive.org/web/2008/http://media.gm.com/us/gmc/en/product_services/r_cars/r_c_sierra/08index.html"
+    },
+    {
+     "name": "Wikipedia - Chevrolet Silverado (second generation) (GMT900 Silverado/Sierra engine table)",
+     "url": "https://en.wikipedia.org/wiki/Chevrolet_Silverado_(second_generation)"
+    },
+    {
+     "name": "EPA fueleconomy.gov vehicle data",
+     "url": "https://www.fueleconomy.gov/feg/download.shtml"
+    },
+    {
+     "name": "Consumer Guide - 2007-13 GMC Sierra 1500 used-car review",
+     "url": "https://consumerguide.com/used/2007-13-gmc-sierra/"
+    }
+   ],
+   "sourceCount": 4
+  },
+  {
+   "year": 2009,
+   "gen": "gmt900",
+   "cid": 262,
+   "cyl": 6,
+   "name": "4.3L / 262 V6",
+   "code": "LU3",
+   "desc": null,
+   "hp": 195,
+   "hpBasis": "net",
+   "trims": [
+    "Base regular/ext cab"
+   ],
+   "note": null,
+   "nhra": false,
+   "sources": [
+    {
+     "name": "GM media - 2009 GMC Sierra 1500 & Sierra Denali press kit (archived)",
+     "url": "https://web.archive.org/web/2009/http://media.gm.com/us/gmc/en/product_services/r_cars/r_c_sierra/09index.html"
+    },
+    {
+     "name": "Wikipedia - Chevrolet Silverado (second generation) (GMT900 Silverado/Sierra engine table)",
+     "url": "https://en.wikipedia.org/wiki/Chevrolet_Silverado_(second_generation)"
+    },
+    {
+     "name": "EPA fueleconomy.gov vehicle data",
+     "url": "https://www.fueleconomy.gov/feg/download.shtml"
+    },
+    {
+     "name": "Consumer Guide - 2007-13 GMC Sierra 1500 used-car review",
+     "url": "https://consumerguide.com/used/2007-13-gmc-sierra/"
+    }
+   ],
+   "sourceCount": 4
+  },
+  {
+   "year": 2009,
+   "gen": "gmt900",
+   "cid": 293,
+   "cyl": 8,
+   "name": "4.8L / 293 V8",
+   "code": "LY2",
+   "desc": null,
+   "hp": 295,
+   "hpBasis": "net",
+   "trims": [
+    "1500 (standard/optional)"
+   ],
+   "note": null,
+   "nhra": false,
+   "sources": [
+    {
+     "name": "GM media - 2009 GMC Sierra 1500 & Sierra Denali press kit (archived)",
+     "url": "https://web.archive.org/web/2009/http://media.gm.com/us/gmc/en/product_services/r_cars/r_c_sierra/09index.html"
+    },
+    {
+     "name": "Wikipedia - Chevrolet Silverado (second generation) (GMT900 Silverado/Sierra engine table)",
+     "url": "https://en.wikipedia.org/wiki/Chevrolet_Silverado_(second_generation)"
+    },
+    {
+     "name": "EPA fueleconomy.gov vehicle data",
+     "url": "https://www.fueleconomy.gov/feg/download.shtml"
+    },
+    {
+     "name": "Consumer Guide - 2007-13 GMC Sierra 1500 used-car review",
+     "url": "https://consumerguide.com/used/2007-13-gmc-sierra/"
+    }
+   ],
+   "sourceCount": 4
+  },
+  {
+   "year": 2009,
+   "gen": "gmt900",
+   "cid": 325,
+   "cyl": 8,
+   "name": "5.3L / 325 V8",
+   "code": "LY5 / LH6 / LMG / LC9",
+   "desc": null,
+   "hp": 315,
+   "hpBasis": "net",
+   "trims": [
+    "1500 (standard SLE2/SLT, optional others); XFE 2WD crew"
+   ],
+   "note": null,
+   "nhra": false,
+   "sources": [
+    {
+     "name": "GM media - 2009 GMC Sierra 1500 & Sierra Denali press kit (archived)",
+     "url": "https://web.archive.org/web/2009/http://media.gm.com/us/gmc/en/product_services/r_cars/r_c_sierra/09index.html"
+    },
+    {
+     "name": "Wikipedia - Chevrolet Silverado (second generation) (GMT900 Silverado/Sierra engine table)",
+     "url": "https://en.wikipedia.org/wiki/Chevrolet_Silverado_(second_generation)"
+    },
+    {
+     "name": "EPA fueleconomy.gov vehicle data",
+     "url": "https://www.fueleconomy.gov/feg/download.shtml"
+    },
+    {
+     "name": "Consumer Guide - 2007-13 GMC Sierra 1500 used-car review",
+     "url": "https://consumerguide.com/used/2007-13-gmc-sierra/"
+    }
+   ],
+   "sourceCount": 4
+  },
+  {
+   "year": 2009,
+   "gen": "gmt900",
+   "cid": 364,
+   "cyl": 8,
+   "name": "6.0L / 364 V8",
+   "code": "L76",
+   "desc": null,
+   "hp": 367,
+   "hpBasis": "net",
+   "trims": [
+    "SLE/SLT ext & crew cab (enhanced trailering pkg)"
+   ],
+   "note": null,
+   "nhra": false,
+   "sources": [
+    {
+     "name": "GM media - 2009 GMC Sierra 1500 & Sierra Denali press kit (archived)",
+     "url": "https://web.archive.org/web/2009/http://media.gm.com/us/gmc/en/product_services/r_cars/r_c_sierra/09index.html"
+    },
+    {
+     "name": "Wikipedia - Chevrolet Silverado (second generation) (GMT900 Silverado/Sierra engine table)",
+     "url": "https://en.wikipedia.org/wiki/Chevrolet_Silverado_(second_generation)"
+    },
+    {
+     "name": "EPA fueleconomy.gov vehicle data",
+     "url": "https://www.fueleconomy.gov/feg/download.shtml"
+    },
+    {
+     "name": "Consumer Guide - 2007-13 GMC Sierra 1500 used-car review",
+     "url": "https://consumerguide.com/used/2007-13-gmc-sierra/"
+    }
+   ],
+   "sourceCount": 4
+  },
+  {
+   "year": 2009,
+   "gen": "gmt900",
+   "cid": 376,
+   "cyl": 8,
+   "name": "6.2L / 376 V8",
+   "code": "L9H",
+   "desc": null,
+   "hp": 403,
+   "hpBasis": "net",
+   "trims": [
+    "Denali (standard); SLT crew incl. All Terrain (2009); SLE/SLT ext & crew (2010+)"
+   ],
+   "note": null,
+   "nhra": false,
+   "sources": [
+    {
+     "name": "GM media - 2009 GMC Sierra 1500 & Sierra Denali press kit (archived)",
+     "url": "https://web.archive.org/web/2009/http://media.gm.com/us/gmc/en/product_services/r_cars/r_c_sierra/09index.html"
+    },
+    {
+     "name": "Wikipedia - Chevrolet Silverado (second generation) (GMT900 Silverado/Sierra engine table)",
+     "url": "https://en.wikipedia.org/wiki/Chevrolet_Silverado_(second_generation)"
+    },
+    {
+     "name": "EPA fueleconomy.gov vehicle data",
+     "url": "https://www.fueleconomy.gov/feg/download.shtml"
+    },
+    {
+     "name": "Consumer Guide - 2007-13 GMC Sierra 1500 used-car review",
+     "url": "https://consumerguide.com/used/2007-13-gmc-sierra/"
+    }
+   ],
+   "sourceCount": 4
+  },
+  {
+   "year": 2009,
+   "gen": "gmt900",
+   "cid": 364,
+   "cyl": 8,
+   "name": "6.0L / 364 V8",
+   "code": "LFA",
+   "desc": null,
+   "hp": 332,
+   "hpBasis": "net",
+   "trims": [
+    "Sierra 1500 Hybrid (crew cab)"
+   ],
+   "note": null,
+   "nhra": false,
+   "sources": [
+    {
+     "name": "GMC Pressroom - Sierra Hybrid 2009-2012 specifications (archived)",
+     "url": "https://web.archive.org/web/2012/https://media.gm.com/media/us/en/gmc/vehicles/sierra_hybrid/2010.tab1.html"
+    },
+    {
+     "name": "Wikipedia - Chevrolet Silverado (second generation) (GMT900 Silverado/Sierra engine table)",
+     "url": "https://en.wikipedia.org/wiki/Chevrolet_Silverado_(second_generation)"
+    },
+    {
+     "name": "EPA fueleconomy.gov vehicle data",
+     "url": "https://www.fueleconomy.gov/feg/download.shtml"
+    },
+    {
+     "name": "Consumer Guide - 2007-13 GMC Sierra 1500 used-car review",
+     "url": "https://consumerguide.com/used/2007-13-gmc-sierra/"
+    }
+   ],
+   "sourceCount": 4
+  },
+  {
+   "year": 2010,
+   "gen": "gmt900",
+   "cid": 262,
+   "cyl": 6,
+   "name": "4.3L / 262 V6",
+   "code": "LU3",
+   "desc": null,
+   "hp": 195,
+   "hpBasis": "net",
+   "trims": [
+    "Base regular/ext cab"
+   ],
+   "note": null,
+   "nhra": false,
+   "sources": [
+    {
+     "name": "GMC Pressroom - 2010 Sierra specifications (archived)",
+     "url": "https://web.archive.org/web/2020/https://media.gm.com/media/us/en/gmc/vehicles/sierra/2010.tab1.html"
+    },
+    {
+     "name": "Wikipedia - Chevrolet Silverado (second generation) (GMT900 Silverado/Sierra engine table)",
+     "url": "https://en.wikipedia.org/wiki/Chevrolet_Silverado_(second_generation)"
+    },
+    {
+     "name": "EPA fueleconomy.gov vehicle data",
+     "url": "https://www.fueleconomy.gov/feg/download.shtml"
+    },
+    {
+     "name": "Consumer Guide - 2007-13 GMC Sierra 1500 used-car review",
+     "url": "https://consumerguide.com/used/2007-13-gmc-sierra/"
+    }
+   ],
+   "sourceCount": 4
+  },
+  {
+   "year": 2010,
+   "gen": "gmt900",
+   "cid": 293,
+   "cyl": 8,
+   "name": "4.8L / 293 V8",
+   "code": "L20",
+   "desc": null,
+   "hp": 302,
+   "hpBasis": "net",
+   "trims": [
+    "1500 (standard/optional)"
+   ],
+   "note": null,
+   "nhra": false,
+   "sources": [
+    {
+     "name": "GMC Pressroom - 2010 Sierra specifications (archived)",
+     "url": "https://web.archive.org/web/2020/https://media.gm.com/media/us/en/gmc/vehicles/sierra/2010.tab1.html"
+    },
+    {
+     "name": "Wikipedia - Chevrolet Silverado (second generation) (GMT900 Silverado/Sierra engine table)",
+     "url": "https://en.wikipedia.org/wiki/Chevrolet_Silverado_(second_generation)"
+    },
+    {
+     "name": "EPA fueleconomy.gov vehicle data",
+     "url": "https://www.fueleconomy.gov/feg/download.shtml"
+    },
+    {
+     "name": "Consumer Guide - 2007-13 GMC Sierra 1500 used-car review",
+     "url": "https://consumerguide.com/used/2007-13-gmc-sierra/"
+    }
+   ],
+   "sourceCount": 4
+  },
+  {
+   "year": 2010,
+   "gen": "gmt900",
+   "cid": 325,
+   "cyl": 8,
+   "name": "5.3L / 325 V8",
+   "code": "LMG / LC9",
+   "desc": null,
+   "hp": 315,
+   "hpBasis": "net",
+   "trims": [
+    "1500 (standard SLE2/SLT, optional others); XFE 2WD crew"
+   ],
+   "note": null,
+   "nhra": false,
+   "sources": [
+    {
+     "name": "GMC Pressroom - 2010 Sierra specifications (archived)",
+     "url": "https://web.archive.org/web/2020/https://media.gm.com/media/us/en/gmc/vehicles/sierra/2010.tab1.html"
+    },
+    {
+     "name": "Wikipedia - Chevrolet Silverado (second generation) (GMT900 Silverado/Sierra engine table)",
+     "url": "https://en.wikipedia.org/wiki/Chevrolet_Silverado_(second_generation)"
+    },
+    {
+     "name": "EPA fueleconomy.gov vehicle data",
+     "url": "https://www.fueleconomy.gov/feg/download.shtml"
+    },
+    {
+     "name": "Consumer Guide - 2007-13 GMC Sierra 1500 used-car review",
+     "url": "https://consumerguide.com/used/2007-13-gmc-sierra/"
+    }
+   ],
+   "sourceCount": 4
+  },
+  {
+   "year": 2010,
+   "gen": "gmt900",
+   "cid": 376,
+   "cyl": 8,
+   "name": "6.2L / 376 V8",
+   "code": "L9H",
+   "desc": null,
+   "hp": 403,
+   "hpBasis": "net",
+   "trims": [
+    "Denali (standard); SLT crew incl. All Terrain (2009); SLE/SLT ext & crew (2010+)"
+   ],
+   "note": null,
+   "nhra": false,
+   "sources": [
+    {
+     "name": "GMC Pressroom - 2010 Sierra specifications (archived)",
+     "url": "https://web.archive.org/web/2020/https://media.gm.com/media/us/en/gmc/vehicles/sierra/2010.tab1.html"
+    },
+    {
+     "name": "Wikipedia - Chevrolet Silverado (second generation) (GMT900 Silverado/Sierra engine table)",
+     "url": "https://en.wikipedia.org/wiki/Chevrolet_Silverado_(second_generation)"
+    },
+    {
+     "name": "EPA fueleconomy.gov vehicle data",
+     "url": "https://www.fueleconomy.gov/feg/download.shtml"
+    },
+    {
+     "name": "Consumer Guide - 2007-13 GMC Sierra 1500 used-car review",
+     "url": "https://consumerguide.com/used/2007-13-gmc-sierra/"
+    }
+   ],
+   "sourceCount": 4
+  },
+  {
+   "year": 2010,
+   "gen": "gmt900",
+   "cid": 364,
+   "cyl": 8,
+   "name": "6.0L / 364 V8",
+   "code": "LZ1",
+   "desc": null,
+   "hp": 332,
+   "hpBasis": "net",
+   "trims": [
+    "Sierra 1500 Hybrid (crew cab)"
+   ],
+   "note": null,
+   "nhra": false,
+   "sources": [
+    {
+     "name": "GMC Pressroom - Sierra Hybrid 2009-2012 specifications (archived)",
+     "url": "https://web.archive.org/web/2012/https://media.gm.com/media/us/en/gmc/vehicles/sierra_hybrid/2010.tab1.html"
+    },
+    {
+     "name": "Wikipedia - Chevrolet Silverado (second generation) (GMT900 Silverado/Sierra engine table)",
+     "url": "https://en.wikipedia.org/wiki/Chevrolet_Silverado_(second_generation)"
+    },
+    {
+     "name": "EPA fueleconomy.gov vehicle data",
+     "url": "https://www.fueleconomy.gov/feg/download.shtml"
+    },
+    {
+     "name": "Consumer Guide - 2007-13 GMC Sierra 1500 used-car review",
+     "url": "https://consumerguide.com/used/2007-13-gmc-sierra/"
+    }
+   ],
+   "sourceCount": 4
+  },
+  {
+   "year": 2011,
+   "gen": "gmt900",
+   "cid": 262,
+   "cyl": 6,
+   "name": "4.3L / 262 V6",
+   "code": "LU3",
+   "desc": null,
+   "hp": 195,
+   "hpBasis": "net",
+   "trims": [
+    "Base regular/ext cab"
+   ],
+   "note": null,
+   "nhra": false,
+   "sources": [
+    {
+     "name": "GMC Pressroom - 2011 Sierra specifications (archived)",
+     "url": "https://web.archive.org/web/2020/http://media.gmc.com/media/us/en/gmc/vehicles/sierra/2011.tab1.html"
+    },
+    {
+     "name": "Wikipedia - Chevrolet Silverado (second generation) (GMT900 Silverado/Sierra engine table)",
+     "url": "https://en.wikipedia.org/wiki/Chevrolet_Silverado_(second_generation)"
+    },
+    {
+     "name": "EPA fueleconomy.gov vehicle data",
+     "url": "https://www.fueleconomy.gov/feg/download.shtml"
+    },
+    {
+     "name": "Consumer Guide - 2007-13 GMC Sierra 1500 used-car review",
+     "url": "https://consumerguide.com/used/2007-13-gmc-sierra/"
+    }
+   ],
+   "sourceCount": 4
+  },
+  {
+   "year": 2011,
+   "gen": "gmt900",
+   "cid": 293,
+   "cyl": 8,
+   "name": "4.8L / 293 V8",
+   "code": "L20",
+   "desc": null,
+   "hp": 302,
+   "hpBasis": "net",
+   "trims": [
+    "1500 (standard/optional)"
+   ],
+   "note": null,
+   "nhra": false,
+   "sources": [
+    {
+     "name": "GMC Pressroom - 2011 Sierra specifications (archived)",
+     "url": "https://web.archive.org/web/2020/http://media.gmc.com/media/us/en/gmc/vehicles/sierra/2011.tab1.html"
+    },
+    {
+     "name": "Wikipedia - Chevrolet Silverado (second generation) (GMT900 Silverado/Sierra engine table)",
+     "url": "https://en.wikipedia.org/wiki/Chevrolet_Silverado_(second_generation)"
+    },
+    {
+     "name": "EPA fueleconomy.gov vehicle data",
+     "url": "https://www.fueleconomy.gov/feg/download.shtml"
+    },
+    {
+     "name": "Consumer Guide - 2007-13 GMC Sierra 1500 used-car review",
+     "url": "https://consumerguide.com/used/2007-13-gmc-sierra/"
+    }
+   ],
+   "sourceCount": 4
+  },
+  {
+   "year": 2011,
+   "gen": "gmt900",
+   "cid": 325,
+   "cyl": 8,
+   "name": "5.3L / 325 V8",
+   "code": "LMG / LC9",
+   "desc": null,
+   "hp": 315,
+   "hpBasis": "net",
+   "trims": [
+    "1500 (standard SLE2/SLT, optional others); XFE 2WD crew"
+   ],
+   "note": null,
+   "nhra": false,
+   "sources": [
+    {
+     "name": "GMC Pressroom - 2011 Sierra specifications (archived)",
+     "url": "https://web.archive.org/web/2020/http://media.gmc.com/media/us/en/gmc/vehicles/sierra/2011.tab1.html"
+    },
+    {
+     "name": "Wikipedia - Chevrolet Silverado (second generation) (GMT900 Silverado/Sierra engine table)",
+     "url": "https://en.wikipedia.org/wiki/Chevrolet_Silverado_(second_generation)"
+    },
+    {
+     "name": "EPA fueleconomy.gov vehicle data",
+     "url": "https://www.fueleconomy.gov/feg/download.shtml"
+    },
+    {
+     "name": "Consumer Guide - 2007-13 GMC Sierra 1500 used-car review",
+     "url": "https://consumerguide.com/used/2007-13-gmc-sierra/"
+    }
+   ],
+   "sourceCount": 4
+  },
+  {
+   "year": 2011,
+   "gen": "gmt900",
+   "cid": 376,
+   "cyl": 8,
+   "name": "6.2L / 376 V8",
+   "code": "L9H",
+   "desc": null,
+   "hp": 403,
+   "hpBasis": "net",
+   "trims": [
+    "Denali (standard); SLT crew incl. All Terrain (2009); SLE/SLT ext & crew (2010+)"
+   ],
+   "note": null,
+   "nhra": false,
+   "sources": [
+    {
+     "name": "GMC Pressroom - 2011 Sierra specifications (archived)",
+     "url": "https://web.archive.org/web/2020/http://media.gmc.com/media/us/en/gmc/vehicles/sierra/2011.tab1.html"
+    },
+    {
+     "name": "Wikipedia - Chevrolet Silverado (second generation) (GMT900 Silverado/Sierra engine table)",
+     "url": "https://en.wikipedia.org/wiki/Chevrolet_Silverado_(second_generation)"
+    },
+    {
+     "name": "EPA fueleconomy.gov vehicle data",
+     "url": "https://www.fueleconomy.gov/feg/download.shtml"
+    },
+    {
+     "name": "Consumer Guide - 2007-13 GMC Sierra 1500 used-car review",
+     "url": "https://consumerguide.com/used/2007-13-gmc-sierra/"
+    }
+   ],
+   "sourceCount": 4
+  },
+  {
+   "year": 2011,
+   "gen": "gmt900",
+   "cid": 364,
+   "cyl": 8,
+   "name": "6.0L / 364 V8",
+   "code": "LZ1",
+   "desc": null,
+   "hp": 332,
+   "hpBasis": "net",
+   "trims": [
+    "Sierra 1500 Hybrid (crew cab)"
+   ],
+   "note": null,
+   "nhra": false,
+   "sources": [
+    {
+     "name": "GMC Pressroom - Sierra Hybrid 2009-2012 specifications (archived)",
+     "url": "https://web.archive.org/web/2012/https://media.gm.com/media/us/en/gmc/vehicles/sierra_hybrid/2010.tab1.html"
+    },
+    {
+     "name": "Wikipedia - Chevrolet Silverado (second generation) (GMT900 Silverado/Sierra engine table)",
+     "url": "https://en.wikipedia.org/wiki/Chevrolet_Silverado_(second_generation)"
+    },
+    {
+     "name": "EPA fueleconomy.gov vehicle data",
+     "url": "https://www.fueleconomy.gov/feg/download.shtml"
+    },
+    {
+     "name": "Consumer Guide - 2007-13 GMC Sierra 1500 used-car review",
+     "url": "https://consumerguide.com/used/2007-13-gmc-sierra/"
+    }
+   ],
+   "sourceCount": 4
+  },
+  {
+   "year": 2012,
+   "gen": "gmt900",
+   "cid": 262,
+   "cyl": 6,
+   "name": "4.3L / 262 V6",
+   "code": "LU3",
+   "desc": null,
+   "hp": 195,
+   "hpBasis": "net",
+   "trims": [
+    "Base regular/ext cab"
+   ],
+   "note": null,
+   "nhra": false,
+   "sources": [
+    {
+     "name": "GMC Pressroom - 2012 Sierra specifications (archived)",
+     "url": "https://web.archive.org/web/2020/http://media.gmc.com/media/us/en/gmc/vehicles/sierra/2012.tab1.html"
+    },
+    {
+     "name": "Wikipedia - Chevrolet Silverado (second generation) (GMT900 Silverado/Sierra engine table)",
+     "url": "https://en.wikipedia.org/wiki/Chevrolet_Silverado_(second_generation)"
+    },
+    {
+     "name": "EPA fueleconomy.gov vehicle data",
+     "url": "https://www.fueleconomy.gov/feg/download.shtml"
+    },
+    {
+     "name": "Consumer Guide - 2007-13 GMC Sierra 1500 used-car review",
+     "url": "https://consumerguide.com/used/2007-13-gmc-sierra/"
+    }
+   ],
+   "sourceCount": 4
+  },
+  {
+   "year": 2012,
+   "gen": "gmt900",
+   "cid": 293,
+   "cyl": 8,
+   "name": "4.8L / 293 V8",
+   "code": "L20",
+   "desc": null,
+   "hp": 302,
+   "hpBasis": "net",
+   "trims": [
+    "1500 (standard/optional)"
+   ],
+   "note": null,
+   "nhra": false,
+   "sources": [
+    {
+     "name": "GMC Pressroom - 2012 Sierra specifications (archived)",
+     "url": "https://web.archive.org/web/2020/http://media.gmc.com/media/us/en/gmc/vehicles/sierra/2012.tab1.html"
+    },
+    {
+     "name": "Wikipedia - Chevrolet Silverado (second generation) (GMT900 Silverado/Sierra engine table)",
+     "url": "https://en.wikipedia.org/wiki/Chevrolet_Silverado_(second_generation)"
+    },
+    {
+     "name": "EPA fueleconomy.gov vehicle data",
+     "url": "https://www.fueleconomy.gov/feg/download.shtml"
+    },
+    {
+     "name": "Consumer Guide - 2007-13 GMC Sierra 1500 used-car review",
+     "url": "https://consumerguide.com/used/2007-13-gmc-sierra/"
+    }
+   ],
+   "sourceCount": 4
+  },
+  {
+   "year": 2012,
+   "gen": "gmt900",
+   "cid": 325,
+   "cyl": 8,
+   "name": "5.3L / 325 V8",
+   "code": "LMG / LC9",
+   "desc": null,
+   "hp": 315,
+   "hpBasis": "net",
+   "trims": [
+    "1500 (standard SLE2/SLT, optional others); XFE 2WD crew"
+   ],
+   "note": null,
+   "nhra": false,
+   "sources": [
+    {
+     "name": "GMC Pressroom - 2012 Sierra specifications (archived)",
+     "url": "https://web.archive.org/web/2020/http://media.gmc.com/media/us/en/gmc/vehicles/sierra/2012.tab1.html"
+    },
+    {
+     "name": "Wikipedia - Chevrolet Silverado (second generation) (GMT900 Silverado/Sierra engine table)",
+     "url": "https://en.wikipedia.org/wiki/Chevrolet_Silverado_(second_generation)"
+    },
+    {
+     "name": "EPA fueleconomy.gov vehicle data",
+     "url": "https://www.fueleconomy.gov/feg/download.shtml"
+    },
+    {
+     "name": "Consumer Guide - 2007-13 GMC Sierra 1500 used-car review",
+     "url": "https://consumerguide.com/used/2007-13-gmc-sierra/"
+    }
+   ],
+   "sourceCount": 4
+  },
+  {
+   "year": 2012,
+   "gen": "gmt900",
+   "cid": 376,
+   "cyl": 8,
+   "name": "6.2L / 376 V8",
+   "code": "L9H",
+   "desc": null,
+   "hp": 403,
+   "hpBasis": "net",
+   "trims": [
+    "Denali (standard); SLT crew incl. All Terrain (2009); SLE/SLT ext & crew (2010+)"
+   ],
+   "note": null,
+   "nhra": false,
+   "sources": [
+    {
+     "name": "GMC Pressroom - 2012 Sierra specifications (archived)",
+     "url": "https://web.archive.org/web/2020/http://media.gmc.com/media/us/en/gmc/vehicles/sierra/2012.tab1.html"
+    },
+    {
+     "name": "Wikipedia - Chevrolet Silverado (second generation) (GMT900 Silverado/Sierra engine table)",
+     "url": "https://en.wikipedia.org/wiki/Chevrolet_Silverado_(second_generation)"
+    },
+    {
+     "name": "EPA fueleconomy.gov vehicle data",
+     "url": "https://www.fueleconomy.gov/feg/download.shtml"
+    },
+    {
+     "name": "Consumer Guide - 2007-13 GMC Sierra 1500 used-car review",
+     "url": "https://consumerguide.com/used/2007-13-gmc-sierra/"
+    }
+   ],
+   "sourceCount": 4
+  },
+  {
+   "year": 2012,
+   "gen": "gmt900",
+   "cid": 364,
+   "cyl": 8,
+   "name": "6.0L / 364 V8",
+   "code": "LZ1",
+   "desc": null,
+   "hp": 332,
+   "hpBasis": "net",
+   "trims": [
+    "Sierra 1500 Hybrid (crew cab)"
+   ],
+   "note": null,
+   "nhra": false,
+   "sources": [
+    {
+     "name": "GMC Pressroom - Sierra Hybrid 2009-2012 specifications (archived)",
+     "url": "https://web.archive.org/web/2012/https://media.gm.com/media/us/en/gmc/vehicles/sierra_hybrid/2010.tab1.html"
+    },
+    {
+     "name": "Wikipedia - Chevrolet Silverado (second generation) (GMT900 Silverado/Sierra engine table)",
+     "url": "https://en.wikipedia.org/wiki/Chevrolet_Silverado_(second_generation)"
+    },
+    {
+     "name": "EPA fueleconomy.gov vehicle data",
+     "url": "https://www.fueleconomy.gov/feg/download.shtml"
+    },
+    {
+     "name": "Consumer Guide - 2007-13 GMC Sierra 1500 used-car review",
+     "url": "https://consumerguide.com/used/2007-13-gmc-sierra/"
+    }
+   ],
+   "sourceCount": 4
+  },
+  {
+   "year": 2013,
+   "gen": "gmt900",
+   "cid": 262,
+   "cyl": 6,
+   "name": "4.3L / 262 V6",
+   "code": "LU3",
+   "desc": null,
+   "hp": 195,
+   "hpBasis": "net",
+   "trims": [
+    "Base regular/ext cab"
+   ],
+   "note": null,
+   "nhra": false,
+   "sources": [
+    {
+     "name": "GMC Pressroom - 2013 Sierra specifications (archived)",
+     "url": "https://web.archive.org/web/2020/http://media.gm.com/media/us/en/gmc/vehicles/sierra/2013.tab1.html"
+    },
+    {
+     "name": "Wikipedia - Chevrolet Silverado (second generation) (GMT900 Silverado/Sierra engine table)",
+     "url": "https://en.wikipedia.org/wiki/Chevrolet_Silverado_(second_generation)"
+    },
+    {
+     "name": "EPA fueleconomy.gov vehicle data",
+     "url": "https://www.fueleconomy.gov/feg/download.shtml"
+    },
+    {
+     "name": "Consumer Guide - 2007-13 GMC Sierra 1500 used-car review",
+     "url": "https://consumerguide.com/used/2007-13-gmc-sierra/"
+    }
+   ],
+   "sourceCount": 4
+  },
+  {
+   "year": 2013,
+   "gen": "gmt900",
+   "cid": 293,
+   "cyl": 8,
+   "name": "4.8L / 293 V8",
+   "code": "L20",
+   "desc": null,
+   "hp": 302,
+   "hpBasis": "net",
+   "trims": [
+    "1500 (standard/optional)"
+   ],
+   "note": null,
+   "nhra": false,
+   "sources": [
+    {
+     "name": "GMC Pressroom - 2013 Sierra specifications (archived)",
+     "url": "https://web.archive.org/web/2020/http://media.gm.com/media/us/en/gmc/vehicles/sierra/2013.tab1.html"
+    },
+    {
+     "name": "Wikipedia - Chevrolet Silverado (second generation) (GMT900 Silverado/Sierra engine table)",
+     "url": "https://en.wikipedia.org/wiki/Chevrolet_Silverado_(second_generation)"
+    },
+    {
+     "name": "EPA fueleconomy.gov vehicle data",
+     "url": "https://www.fueleconomy.gov/feg/download.shtml"
+    },
+    {
+     "name": "Consumer Guide - 2007-13 GMC Sierra 1500 used-car review",
+     "url": "https://consumerguide.com/used/2007-13-gmc-sierra/"
+    }
+   ],
+   "sourceCount": 4
+  },
+  {
+   "year": 2013,
+   "gen": "gmt900",
+   "cid": 325,
+   "cyl": 8,
+   "name": "5.3L / 325 V8",
+   "code": "LMG / LC9",
+   "desc": null,
+   "hp": 315,
+   "hpBasis": "net",
+   "trims": [
+    "1500 (standard SLE2/SLT, optional others); XFE 2WD crew"
+   ],
+   "note": null,
+   "nhra": false,
+   "sources": [
+    {
+     "name": "GMC Pressroom - 2013 Sierra specifications (archived)",
+     "url": "https://web.archive.org/web/2020/http://media.gm.com/media/us/en/gmc/vehicles/sierra/2013.tab1.html"
+    },
+    {
+     "name": "Wikipedia - Chevrolet Silverado (second generation) (GMT900 Silverado/Sierra engine table)",
+     "url": "https://en.wikipedia.org/wiki/Chevrolet_Silverado_(second_generation)"
+    },
+    {
+     "name": "EPA fueleconomy.gov vehicle data",
+     "url": "https://www.fueleconomy.gov/feg/download.shtml"
+    },
+    {
+     "name": "Consumer Guide - 2007-13 GMC Sierra 1500 used-car review",
+     "url": "https://consumerguide.com/used/2007-13-gmc-sierra/"
+    }
+   ],
+   "sourceCount": 4
+  },
+  {
+   "year": 2013,
+   "gen": "gmt900",
+   "cid": 376,
+   "cyl": 8,
+   "name": "6.2L / 376 V8",
+   "code": "L9H",
+   "desc": null,
+   "hp": 403,
+   "hpBasis": "net",
+   "trims": [
+    "Denali (standard); SLT crew incl. All Terrain (2009); SLE/SLT ext & crew (2010+)"
+   ],
+   "note": null,
+   "nhra": false,
+   "sources": [
+    {
+     "name": "GMC Pressroom - 2013 Sierra specifications (archived)",
+     "url": "https://web.archive.org/web/2020/http://media.gm.com/media/us/en/gmc/vehicles/sierra/2013.tab1.html"
+    },
+    {
+     "name": "Wikipedia - Chevrolet Silverado (second generation) (GMT900 Silverado/Sierra engine table)",
+     "url": "https://en.wikipedia.org/wiki/Chevrolet_Silverado_(second_generation)"
+    },
+    {
+     "name": "EPA fueleconomy.gov vehicle data",
+     "url": "https://www.fueleconomy.gov/feg/download.shtml"
+    },
+    {
+     "name": "Consumer Guide - 2007-13 GMC Sierra 1500 used-car review",
+     "url": "https://consumerguide.com/used/2007-13-gmc-sierra/"
+    }
+   ],
+   "sourceCount": 4
+  },
+  {
+   "year": 2013,
+   "gen": "gmt900",
+   "cid": 364,
+   "cyl": 8,
+   "name": "6.0L / 364 V8",
+   "code": "LZ1",
+   "desc": null,
+   "hp": 332,
+   "hpBasis": "net",
+   "trims": [
+    "Sierra 1500 Hybrid (crew cab)"
+   ],
+   "note": null,
+   "nhra": false,
+   "sources": [
+    {
+     "name": "Wikipedia - Chevrolet Silverado (second generation) (GMT900 Silverado/Sierra engine table)",
+     "url": "https://en.wikipedia.org/wiki/Chevrolet_Silverado_(second_generation)"
+    },
+    {
+     "name": "EPA fueleconomy.gov vehicle data",
+     "url": "https://www.fueleconomy.gov/feg/download.shtml"
+    },
+    {
+     "name": "Consumer Guide - 2007-13 GMC Sierra 1500 used-car review",
+     "url": "https://consumerguide.com/used/2007-13-gmc-sierra/"
+    }
+   ],
+   "sourceCount": 3
+  },
+  {
+   "year": 2014,
+   "gen": "k2xx",
+   "cid": 262,
+   "cyl": 6,
+   "name": "4.3L / 262 V6",
+   "code": "LV3",
+   "desc": null,
+   "hp": 285,
+   "hpBasis": "net",
+   "trims": [
+    "Sierra/SLE (standard)"
+   ],
+   "note": null,
+   "nhra": false,
+   "sources": [
+    {
+     "name": "GMC Pressroom - 2014 Sierra specifications (archived)",
+     "url": "https://web.archive.org/web/2020/http://media.gmc.com/media/us/en/gmc/vehicles/sierra/2014.tab1.html"
+    },
+    {
+     "name": "Wikipedia - Chevrolet Silverado (K2XX and T1XX sections, engine tables)",
+     "url": "https://en.wikipedia.org/wiki/Chevrolet_Silverado"
+    },
+    {
+     "name": "EPA fueleconomy.gov vehicle data",
+     "url": "https://www.fueleconomy.gov/feg/download.shtml"
+    },
+    {
+     "name": "Consumer Guide - 2014 GMC Sierra 1500 (used) / 2014-2018 GMC Sierra reviews",
+     "url": "https://consumerguide.com/used/2014-gmc-sierra-1500/"
+    }
+   ],
+   "sourceCount": 4
+  },
+  {
+   "year": 2014,
+   "gen": "k2xx",
+   "cid": 325,
+   "cyl": 8,
+   "name": "5.3L / 325 V8",
+   "code": "L83",
+   "desc": null,
+   "hp": 355,
+   "hpBasis": "net",
+   "trims": [
+    "SLT/Denali (standard), others (optional)"
+   ],
+   "note": null,
+   "nhra": false,
+   "sources": [
+    {
+     "name": "GMC Pressroom - 2014 Sierra specifications (archived)",
+     "url": "https://web.archive.org/web/2020/http://media.gmc.com/media/us/en/gmc/vehicles/sierra/2014.tab1.html"
+    },
+    {
+     "name": "Wikipedia - Chevrolet Silverado (K2XX and T1XX sections, engine tables)",
+     "url": "https://en.wikipedia.org/wiki/Chevrolet_Silverado"
+    },
+    {
+     "name": "EPA fueleconomy.gov vehicle data",
+     "url": "https://www.fueleconomy.gov/feg/download.shtml"
+    },
+    {
+     "name": "Consumer Guide - 2014 GMC Sierra 1500 (used) / 2014-2018 GMC Sierra reviews",
+     "url": "https://consumerguide.com/used/2014-gmc-sierra-1500/"
+    }
+   ],
+   "sourceCount": 4
+  },
+  {
+   "year": 2014,
+   "gen": "k2xx",
+   "cid": 376,
+   "cyl": 8,
+   "name": "6.2L / 376 V8",
+   "code": "L86",
+   "desc": null,
+   "hp": 420,
+   "hpBasis": "net",
+   "trims": [
+    "SLT/Denali (optional)"
+   ],
+   "note": null,
+   "nhra": false,
+   "sources": [
+    {
+     "name": "GMC Pressroom - 2014 Sierra specifications (archived)",
+     "url": "https://web.archive.org/web/2020/http://media.gmc.com/media/us/en/gmc/vehicles/sierra/2014.tab1.html"
+    },
+    {
+     "name": "Wikipedia - Chevrolet Silverado (K2XX and T1XX sections, engine tables)",
+     "url": "https://en.wikipedia.org/wiki/Chevrolet_Silverado"
+    },
+    {
+     "name": "EPA fueleconomy.gov vehicle data",
+     "url": "https://www.fueleconomy.gov/feg/download.shtml"
+    },
+    {
+     "name": "Consumer Guide - 2014 GMC Sierra 1500 (used) / 2014-2018 GMC Sierra reviews",
+     "url": "https://consumerguide.com/used/2014-gmc-sierra-1500/"
+    }
+   ],
+   "sourceCount": 4
+  },
+  {
+   "year": 2015,
+   "gen": "k2xx",
+   "cid": 262,
+   "cyl": 6,
+   "name": "4.3L / 262 V6",
+   "code": "LV3",
+   "desc": null,
+   "hp": 285,
+   "hpBasis": "net",
+   "trims": [
+    "Sierra/SLE (standard)"
+   ],
+   "note": null,
+   "nhra": false,
+   "sources": [
+    {
+     "name": "GMC Pressroom - 2015 Sierra 1500 spec tables (archived)",
+     "url": "https://web.archive.org/web/2020/http://media.gm.com/media/us/en/gmc/spec-tables/2015/1500-crew-cab.html"
+    },
+    {
+     "name": "Wikipedia - Chevrolet Silverado (K2XX and T1XX sections, engine tables)",
+     "url": "https://en.wikipedia.org/wiki/Chevrolet_Silverado"
+    },
+    {
+     "name": "EPA fueleconomy.gov vehicle data",
+     "url": "https://www.fueleconomy.gov/feg/download.shtml"
+    },
+    {
+     "name": "Consumer Guide - 2014 GMC Sierra 1500 (used) / 2014-2018 GMC Sierra reviews",
+     "url": "https://consumerguide.com/used/2014-gmc-sierra-1500/"
+    }
+   ],
+   "sourceCount": 4
+  },
+  {
+   "year": 2015,
+   "gen": "k2xx",
+   "cid": 325,
+   "cyl": 8,
+   "name": "5.3L / 325 V8",
+   "code": "L83",
+   "desc": null,
+   "hp": 355,
+   "hpBasis": "net",
+   "trims": [
+    "SLT/Denali (standard), others (optional)"
+   ],
+   "note": null,
+   "nhra": false,
+   "sources": [
+    {
+     "name": "GMC Pressroom - 2015 Sierra 1500 spec tables (archived)",
+     "url": "https://web.archive.org/web/2020/http://media.gm.com/media/us/en/gmc/spec-tables/2015/1500-crew-cab.html"
+    },
+    {
+     "name": "Wikipedia - Chevrolet Silverado (K2XX and T1XX sections, engine tables)",
+     "url": "https://en.wikipedia.org/wiki/Chevrolet_Silverado"
+    },
+    {
+     "name": "EPA fueleconomy.gov vehicle data",
+     "url": "https://www.fueleconomy.gov/feg/download.shtml"
+    },
+    {
+     "name": "Consumer Guide - 2014 GMC Sierra 1500 (used) / 2014-2018 GMC Sierra reviews",
+     "url": "https://consumerguide.com/used/2014-gmc-sierra-1500/"
+    }
+   ],
+   "sourceCount": 4
+  },
+  {
+   "year": 2015,
+   "gen": "k2xx",
+   "cid": 376,
+   "cyl": 8,
+   "name": "6.2L / 376 V8",
+   "code": "L86",
+   "desc": null,
+   "hp": 420,
+   "hpBasis": "net",
+   "trims": [
+    "SLT/Denali (optional)"
+   ],
+   "note": null,
+   "nhra": false,
+   "sources": [
+    {
+     "name": "GMC Pressroom - 2015 Sierra 1500 spec tables (archived)",
+     "url": "https://web.archive.org/web/2020/http://media.gm.com/media/us/en/gmc/spec-tables/2015/1500-crew-cab.html"
+    },
+    {
+     "name": "Wikipedia - Chevrolet Silverado (K2XX and T1XX sections, engine tables)",
+     "url": "https://en.wikipedia.org/wiki/Chevrolet_Silverado"
+    },
+    {
+     "name": "EPA fueleconomy.gov vehicle data",
+     "url": "https://www.fueleconomy.gov/feg/download.shtml"
+    },
+    {
+     "name": "Consumer Guide - 2014 GMC Sierra 1500 (used) / 2014-2018 GMC Sierra reviews",
+     "url": "https://consumerguide.com/used/2014-gmc-sierra-1500/"
+    }
+   ],
+   "sourceCount": 4
+  },
+  {
+   "year": 2016,
+   "gen": "k2xx",
+   "cid": 262,
+   "cyl": 6,
+   "name": "4.3L / 262 V6",
+   "code": "LV3",
+   "desc": null,
+   "hp": 285,
+   "hpBasis": "net",
+   "trims": [
+    "Sierra/SLE (standard)"
+   ],
+   "note": null,
+   "nhra": false,
+   "sources": [
+    {
+     "name": "GMC Pressroom - 2016 Sierra 1500 spec tables (archived)",
+     "url": "https://web.archive.org/web/2020/http://media.gm.com/media/us/en/gmc/spec-tables/2016/1500-crew-cab.html"
+    },
+    {
+     "name": "Wikipedia - Chevrolet Silverado (K2XX and T1XX sections, engine tables)",
+     "url": "https://en.wikipedia.org/wiki/Chevrolet_Silverado"
+    },
+    {
+     "name": "EPA fueleconomy.gov vehicle data",
+     "url": "https://www.fueleconomy.gov/feg/download.shtml"
+    },
+    {
+     "name": "Consumer Guide - 2014 GMC Sierra 1500 (used) / 2014-2018 GMC Sierra reviews",
+     "url": "https://consumerguide.com/used/2014-gmc-sierra-1500/"
+    }
+   ],
+   "sourceCount": 4
+  },
+  {
+   "year": 2016,
+   "gen": "k2xx",
+   "cid": 325,
+   "cyl": 8,
+   "name": "5.3L / 325 V8",
+   "code": "L83",
+   "desc": null,
+   "hp": 355,
+   "hpBasis": "net",
+   "trims": [
+    "SLT/Denali (standard), others (optional)"
+   ],
+   "note": null,
+   "nhra": false,
+   "sources": [
+    {
+     "name": "GMC Pressroom - 2016 Sierra 1500 spec tables (archived)",
+     "url": "https://web.archive.org/web/2020/http://media.gm.com/media/us/en/gmc/spec-tables/2016/1500-crew-cab.html"
+    },
+    {
+     "name": "Wikipedia - Chevrolet Silverado (K2XX and T1XX sections, engine tables)",
+     "url": "https://en.wikipedia.org/wiki/Chevrolet_Silverado"
+    },
+    {
+     "name": "EPA fueleconomy.gov vehicle data",
+     "url": "https://www.fueleconomy.gov/feg/download.shtml"
+    },
+    {
+     "name": "Consumer Guide - 2014 GMC Sierra 1500 (used) / 2014-2018 GMC Sierra reviews",
+     "url": "https://consumerguide.com/used/2014-gmc-sierra-1500/"
+    }
+   ],
+   "sourceCount": 4
+  },
+  {
+   "year": 2016,
+   "gen": "k2xx",
+   "cid": 376,
+   "cyl": 8,
+   "name": "6.2L / 376 V8",
+   "code": "L86",
+   "desc": null,
+   "hp": 420,
+   "hpBasis": "net",
+   "trims": [
+    "SLT/Denali (optional)"
+   ],
+   "note": null,
+   "nhra": false,
+   "sources": [
+    {
+     "name": "GMC Pressroom - 2016 Sierra 1500 spec tables (archived)",
+     "url": "https://web.archive.org/web/2020/http://media.gm.com/media/us/en/gmc/spec-tables/2016/1500-crew-cab.html"
+    },
+    {
+     "name": "Wikipedia - Chevrolet Silverado (K2XX and T1XX sections, engine tables)",
+     "url": "https://en.wikipedia.org/wiki/Chevrolet_Silverado"
+    },
+    {
+     "name": "EPA fueleconomy.gov vehicle data",
+     "url": "https://www.fueleconomy.gov/feg/download.shtml"
+    },
+    {
+     "name": "Consumer Guide - 2014 GMC Sierra 1500 (used) / 2014-2018 GMC Sierra reviews",
+     "url": "https://consumerguide.com/used/2014-gmc-sierra-1500/"
+    }
+   ],
+   "sourceCount": 4
+  },
+  {
+   "year": 2017,
+   "gen": "k2xx",
+   "cid": 262,
+   "cyl": 6,
+   "name": "4.3L / 262 V6",
+   "code": "LV3",
+   "desc": null,
+   "hp": 285,
+   "hpBasis": "net",
+   "trims": [
+    "Sierra/SLE (standard)"
+   ],
+   "note": null,
+   "nhra": false,
+   "sources": [
+    {
+     "name": "GMC Pressroom - 2017 Sierra 1500 print specifications (archived)",
+     "url": "https://web.archive.org/web/2017/http://media.gmc.com/media/us/en/gmc/vehicles/sierra/2017.print.html"
+    },
+    {
+     "name": "Wikipedia - Chevrolet Silverado (K2XX and T1XX sections, engine tables)",
+     "url": "https://en.wikipedia.org/wiki/Chevrolet_Silverado"
+    },
+    {
+     "name": "EPA fueleconomy.gov vehicle data",
+     "url": "https://www.fueleconomy.gov/feg/download.shtml"
+    },
+    {
+     "name": "Consumer Guide - 2014 GMC Sierra 1500 (used) / 2014-2018 GMC Sierra reviews",
+     "url": "https://consumerguide.com/used/2014-gmc-sierra-1500/"
+    }
+   ],
+   "sourceCount": 4
+  },
+  {
+   "year": 2017,
+   "gen": "k2xx",
+   "cid": 325,
+   "cyl": 8,
+   "name": "5.3L / 325 V8",
+   "code": "L83",
+   "desc": null,
+   "hp": 355,
+   "hpBasis": "net",
+   "trims": [
+    "SLT/Denali (standard), others (optional)"
+   ],
+   "note": null,
+   "nhra": false,
+   "sources": [
+    {
+     "name": "GMC Pressroom - 2017 Sierra 1500 print specifications (archived)",
+     "url": "https://web.archive.org/web/2017/http://media.gmc.com/media/us/en/gmc/vehicles/sierra/2017.print.html"
+    },
+    {
+     "name": "Wikipedia - Chevrolet Silverado (K2XX and T1XX sections, engine tables)",
+     "url": "https://en.wikipedia.org/wiki/Chevrolet_Silverado"
+    },
+    {
+     "name": "EPA fueleconomy.gov vehicle data",
+     "url": "https://www.fueleconomy.gov/feg/download.shtml"
+    },
+    {
+     "name": "Consumer Guide - 2014 GMC Sierra 1500 (used) / 2014-2018 GMC Sierra reviews",
+     "url": "https://consumerguide.com/used/2014-gmc-sierra-1500/"
+    }
+   ],
+   "sourceCount": 4
+  },
+  {
+   "year": 2017,
+   "gen": "k2xx",
+   "cid": 376,
+   "cyl": 8,
+   "name": "6.2L / 376 V8",
+   "code": "L86",
+   "desc": null,
+   "hp": 420,
+   "hpBasis": "net",
+   "trims": [
+    "SLT/Denali (optional)"
+   ],
+   "note": null,
+   "nhra": false,
+   "sources": [
+    {
+     "name": "GMC Pressroom - 2017 Sierra 1500 print specifications (archived)",
+     "url": "https://web.archive.org/web/2017/http://media.gmc.com/media/us/en/gmc/vehicles/sierra/2017.print.html"
+    },
+    {
+     "name": "Wikipedia - Chevrolet Silverado (K2XX and T1XX sections, engine tables)",
+     "url": "https://en.wikipedia.org/wiki/Chevrolet_Silverado"
+    },
+    {
+     "name": "EPA fueleconomy.gov vehicle data",
+     "url": "https://www.fueleconomy.gov/feg/download.shtml"
+    },
+    {
+     "name": "Consumer Guide - 2014 GMC Sierra 1500 (used) / 2014-2018 GMC Sierra reviews",
+     "url": "https://consumerguide.com/used/2014-gmc-sierra-1500/"
+    }
+   ],
+   "sourceCount": 4
+  },
+  {
+   "year": 2017,
+   "gen": "k2xx",
+   "cid": 325,
+   "cyl": 8,
+   "name": "5.3L / 325 V8",
+   "code": "L8B",
+   "desc": null,
+   "hp": 355,
+   "hpBasis": "net",
+   "trims": [
+    "SLT crew cab (regional availability)"
+   ],
+   "note": null,
+   "nhra": false,
+   "sources": [
+    {
+     "name": "GMC Pressroom - 2017 Sierra 1500 print specifications (archived)",
+     "url": "https://web.archive.org/web/2017/http://media.gmc.com/media/us/en/gmc/vehicles/sierra/2017.print.html"
+    },
+    {
+     "name": "Wikipedia - Chevrolet Silverado (K2XX and T1XX sections, engine tables)",
+     "url": "https://en.wikipedia.org/wiki/Chevrolet_Silverado"
+    },
+    {
+     "name": "EPA fueleconomy.gov vehicle data",
+     "url": "https://www.fueleconomy.gov/feg/download.shtml"
+    }
+   ],
+   "sourceCount": 3
+  },
+  {
+   "year": 2018,
+   "gen": "k2xx",
+   "cid": 262,
+   "cyl": 6,
+   "name": "4.3L / 262 V6",
+   "code": "LV3",
+   "desc": null,
+   "hp": 285,
+   "hpBasis": "net",
+   "trims": [
+    "Sierra/SLE (standard)"
+   ],
+   "note": null,
+   "nhra": false,
+   "sources": [
+    {
+     "name": "GMC Pressroom - 2018 Sierra / Sierra Denali specifications (archived)",
+     "url": "https://web.archive.org/web/2020/https://media.gmc.com/media/us/en/gmc/vehicles/sierra/2018.tab1.html"
+    },
+    {
+     "name": "Wikipedia - Chevrolet Silverado (K2XX and T1XX sections, engine tables)",
+     "url": "https://en.wikipedia.org/wiki/Chevrolet_Silverado"
+    },
+    {
+     "name": "EPA fueleconomy.gov vehicle data",
+     "url": "https://www.fueleconomy.gov/feg/download.shtml"
+    },
+    {
+     "name": "Consumer Guide - 2014 GMC Sierra 1500 (used) / 2014-2018 GMC Sierra reviews",
+     "url": "https://consumerguide.com/used/2014-gmc-sierra-1500/"
+    }
+   ],
+   "sourceCount": 4
+  },
+  {
+   "year": 2018,
+   "gen": "k2xx",
+   "cid": 325,
+   "cyl": 8,
+   "name": "5.3L / 325 V8",
+   "code": "L83",
+   "desc": null,
+   "hp": 355,
+   "hpBasis": "net",
+   "trims": [
+    "SLT/Denali (standard), others (optional)"
+   ],
+   "note": null,
+   "nhra": false,
+   "sources": [
+    {
+     "name": "GMC Pressroom - 2018 Sierra / Sierra Denali specifications (archived)",
+     "url": "https://web.archive.org/web/2020/https://media.gmc.com/media/us/en/gmc/vehicles/sierra/2018.tab1.html"
+    },
+    {
+     "name": "Wikipedia - Chevrolet Silverado (K2XX and T1XX sections, engine tables)",
+     "url": "https://en.wikipedia.org/wiki/Chevrolet_Silverado"
+    },
+    {
+     "name": "EPA fueleconomy.gov vehicle data",
+     "url": "https://www.fueleconomy.gov/feg/download.shtml"
+    },
+    {
+     "name": "Consumer Guide - 2014 GMC Sierra 1500 (used) / 2014-2018 GMC Sierra reviews",
+     "url": "https://consumerguide.com/used/2014-gmc-sierra-1500/"
+    }
+   ],
+   "sourceCount": 4
+  },
+  {
+   "year": 2018,
+   "gen": "k2xx",
+   "cid": 376,
+   "cyl": 8,
+   "name": "6.2L / 376 V8",
+   "code": "L86",
+   "desc": null,
+   "hp": 420,
+   "hpBasis": "net",
+   "trims": [
+    "SLT/Denali (optional)"
+   ],
+   "note": null,
+   "nhra": false,
+   "sources": [
+    {
+     "name": "GMC Pressroom - 2018 Sierra / Sierra Denali specifications (archived)",
+     "url": "https://web.archive.org/web/2020/https://media.gmc.com/media/us/en/gmc/vehicles/sierra/2018.tab1.html"
+    },
+    {
+     "name": "Wikipedia - Chevrolet Silverado (K2XX and T1XX sections, engine tables)",
+     "url": "https://en.wikipedia.org/wiki/Chevrolet_Silverado"
+    },
+    {
+     "name": "EPA fueleconomy.gov vehicle data",
+     "url": "https://www.fueleconomy.gov/feg/download.shtml"
+    },
+    {
+     "name": "Consumer Guide - 2014 GMC Sierra 1500 (used) / 2014-2018 GMC Sierra reviews",
+     "url": "https://consumerguide.com/used/2014-gmc-sierra-1500/"
+    }
+   ],
+   "sourceCount": 4
+  },
+  {
+   "year": 2018,
+   "gen": "k2xx",
+   "cid": 325,
+   "cyl": 8,
+   "name": "5.3L / 325 V8",
+   "code": "L8B",
+   "desc": null,
+   "hp": 355,
+   "hpBasis": "net",
+   "trims": [
+    "SLT crew cab (regional availability)"
+   ],
+   "note": null,
+   "nhra": false,
+   "sources": [
+    {
+     "name": "GMC Pressroom - 2018 Sierra / Sierra Denali specifications (archived)",
+     "url": "https://web.archive.org/web/2020/https://media.gmc.com/media/us/en/gmc/vehicles/sierra/2018.tab1.html"
+    },
+    {
+     "name": "Wikipedia - Chevrolet Silverado (K2XX and T1XX sections, engine tables)",
+     "url": "https://en.wikipedia.org/wiki/Chevrolet_Silverado"
+    },
+    {
+     "name": "EPA fueleconomy.gov vehicle data",
+     "url": "https://www.fueleconomy.gov/feg/download.shtml"
+    }
+   ],
+   "sourceCount": 3
+  },
+  {
+   "year": 2019,
+   "gen": "t1",
+   "cid": 262,
+   "cyl": 6,
+   "name": "4.3L / 262 V6",
+   "code": "LV3",
+   "desc": null,
+   "hp": 285,
+   "hpBasis": "net",
+   "trims": [
+    "Base Sierra regular/double cab"
+   ],
+   "note": null,
+   "nhra": false,
+   "sources": [
+    {
+     "name": "GMC Pressroom - 2019 Sierra 1500 specifications (archived)",
+     "url": "https://web.archive.org/web/2020/https://media.gmc.com/media/us/en/gmc/vehicles/sierra/2019.tab1.html"
+    },
+    {
+     "name": "Wikipedia - Chevrolet Silverado (K2XX and T1XX sections, engine tables)",
+     "url": "https://en.wikipedia.org/wiki/Chevrolet_Silverado"
+    },
+    {
+     "name": "EPA fueleconomy.gov vehicle data",
+     "url": "https://www.fueleconomy.gov/feg/download.shtml"
+    }
+   ],
+   "sourceCount": 3
+  },
+  {
+   "year": 2019,
+   "gen": "t1",
+   "cid": 166,
+   "cyl": 4,
+   "name": "2.7L / 166 inline-four turbo",
+   "code": "L3B",
+   "desc": null,
+   "hp": 310,
+   "hpBasis": "net",
+   "trims": [
+    "Sierra/Pro/SLE/Elevation"
+   ],
+   "note": null,
+   "nhra": false,
+   "sources": [
+    {
+     "name": "GMC Pressroom - 2019 Sierra 1500 specifications (archived)",
+     "url": "https://web.archive.org/web/2020/https://media.gmc.com/media/us/en/gmc/vehicles/sierra/2019.tab1.html"
+    },
+    {
+     "name": "Wikipedia - Chevrolet Silverado (K2XX and T1XX sections, engine tables)",
+     "url": "https://en.wikipedia.org/wiki/Chevrolet_Silverado"
+    },
+    {
+     "name": "EPA fueleconomy.gov vehicle data",
+     "url": "https://www.fueleconomy.gov/feg/download.shtml"
+    }
+   ],
+   "sourceCount": 3
+  },
+  {
+   "year": 2019,
+   "gen": "t1",
+   "cid": 325,
+   "cyl": 8,
+   "name": "5.3L / 325 V8",
+   "code": "L82",
+   "desc": null,
+   "hp": 355,
+   "hpBasis": "net",
+   "trims": [
+    "Base/SLE (optional)"
+   ],
+   "note": null,
+   "nhra": false,
+   "sources": [
+    {
+     "name": "GMC Pressroom - 2019 Sierra 1500 specifications (archived)",
+     "url": "https://web.archive.org/web/2020/https://media.gmc.com/media/us/en/gmc/vehicles/sierra/2019.tab1.html"
+    },
+    {
+     "name": "Wikipedia - Chevrolet Silverado (K2XX and T1XX sections, engine tables)",
+     "url": "https://en.wikipedia.org/wiki/Chevrolet_Silverado"
+    },
+    {
+     "name": "EPA fueleconomy.gov vehicle data",
+     "url": "https://www.fueleconomy.gov/feg/download.shtml"
+    }
+   ],
+   "sourceCount": 3
+  },
+  {
+   "year": 2019,
+   "gen": "t1",
+   "cid": 325,
+   "cyl": 8,
+   "name": "5.3L / 325 V8",
+   "code": "L84",
+   "desc": null,
+   "hp": 355,
+   "hpBasis": "net",
+   "trims": [
+    "SLE/Elevation/SLT/AT4/Denali (standard/optional)"
+   ],
+   "note": null,
+   "nhra": false,
+   "sources": [
+    {
+     "name": "GMC Pressroom - 2019 Sierra 1500 specifications (archived)",
+     "url": "https://web.archive.org/web/2020/https://media.gmc.com/media/us/en/gmc/vehicles/sierra/2019.tab1.html"
+    },
+    {
+     "name": "Wikipedia - Chevrolet Silverado (K2XX and T1XX sections, engine tables)",
+     "url": "https://en.wikipedia.org/wiki/Chevrolet_Silverado"
+    },
+    {
+     "name": "EPA fueleconomy.gov vehicle data",
+     "url": "https://www.fueleconomy.gov/feg/download.shtml"
+    }
+   ],
+   "sourceCount": 3
+  },
+  {
+   "year": 2019,
+   "gen": "t1",
+   "cid": 376,
+   "cyl": 8,
+   "name": "6.2L / 376 V8",
+   "code": "L87",
+   "desc": null,
+   "hp": 420,
+   "hpBasis": "net",
+   "trims": [
+    "SLT/AT4/AT4X/Denali/Denali Ultimate"
+   ],
+   "note": null,
+   "nhra": false,
+   "sources": [
+    {
+     "name": "GMC Pressroom - 2019 Sierra 1500 specifications (archived)",
+     "url": "https://web.archive.org/web/2020/https://media.gmc.com/media/us/en/gmc/vehicles/sierra/2019.tab1.html"
+    },
+    {
+     "name": "Wikipedia - Chevrolet Silverado (K2XX and T1XX sections, engine tables)",
+     "url": "https://en.wikipedia.org/wiki/Chevrolet_Silverado"
+    },
+    {
+     "name": "EPA fueleconomy.gov vehicle data",
+     "url": "https://www.fueleconomy.gov/feg/download.shtml"
+    }
+   ],
+   "sourceCount": 3
+  },
+  {
+   "year": 2020,
+   "gen": "t1",
+   "cid": 262,
+   "cyl": 6,
+   "name": "4.3L / 262 V6",
+   "code": "LV3",
+   "desc": null,
+   "hp": 285,
+   "hpBasis": "net",
+   "trims": [
+    "Base Sierra regular/double cab"
+   ],
+   "note": null,
+   "nhra": false,
+   "sources": [
+    {
+     "name": "GMC Pressroom - 2020 Sierra 1500 specifications (archived)",
+     "url": "https://web.archive.org/web/2021/https://media.gmc.com/media/us/en/gmc/vehicles/sierra/2020.tab1.html"
+    },
+    {
+     "name": "Wikipedia - Chevrolet Silverado (K2XX and T1XX sections, engine tables)",
+     "url": "https://en.wikipedia.org/wiki/Chevrolet_Silverado"
+    },
+    {
+     "name": "EPA fueleconomy.gov vehicle data",
+     "url": "https://www.fueleconomy.gov/feg/download.shtml"
+    }
+   ],
+   "sourceCount": 3
+  },
+  {
+   "year": 2020,
+   "gen": "t1",
+   "cid": 166,
+   "cyl": 4,
+   "name": "2.7L / 166 inline-four turbo",
+   "code": "L3B",
+   "desc": null,
+   "hp": 310,
+   "hpBasis": "net",
+   "trims": [
+    "Sierra/Pro/SLE/Elevation"
+   ],
+   "note": null,
+   "nhra": false,
+   "sources": [
+    {
+     "name": "GMC Pressroom - 2020 Sierra 1500 specifications (archived)",
+     "url": "https://web.archive.org/web/2021/https://media.gmc.com/media/us/en/gmc/vehicles/sierra/2020.tab1.html"
+    },
+    {
+     "name": "Wikipedia - Chevrolet Silverado (K2XX and T1XX sections, engine tables)",
+     "url": "https://en.wikipedia.org/wiki/Chevrolet_Silverado"
+    },
+    {
+     "name": "EPA fueleconomy.gov vehicle data",
+     "url": "https://www.fueleconomy.gov/feg/download.shtml"
+    }
+   ],
+   "sourceCount": 3
+  },
+  {
+   "year": 2020,
+   "gen": "t1",
+   "cid": 325,
+   "cyl": 8,
+   "name": "5.3L / 325 V8",
+   "code": "L82",
+   "desc": null,
+   "hp": 355,
+   "hpBasis": "net",
+   "trims": [
+    "Base/SLE (optional)"
+   ],
+   "note": null,
+   "nhra": false,
+   "sources": [
+    {
+     "name": "GMC Pressroom - 2020 Sierra 1500 specifications (archived)",
+     "url": "https://web.archive.org/web/2021/https://media.gmc.com/media/us/en/gmc/vehicles/sierra/2020.tab1.html"
+    },
+    {
+     "name": "Wikipedia - Chevrolet Silverado (K2XX and T1XX sections, engine tables)",
+     "url": "https://en.wikipedia.org/wiki/Chevrolet_Silverado"
+    },
+    {
+     "name": "EPA fueleconomy.gov vehicle data",
+     "url": "https://www.fueleconomy.gov/feg/download.shtml"
+    }
+   ],
+   "sourceCount": 3
+  },
+  {
+   "year": 2020,
+   "gen": "t1",
+   "cid": 325,
+   "cyl": 8,
+   "name": "5.3L / 325 V8",
+   "code": "L84",
+   "desc": null,
+   "hp": 355,
+   "hpBasis": "net",
+   "trims": [
+    "SLE/Elevation/SLT/AT4/Denali (standard/optional)"
+   ],
+   "note": null,
+   "nhra": false,
+   "sources": [
+    {
+     "name": "GMC Pressroom - 2020 Sierra 1500 specifications (archived)",
+     "url": "https://web.archive.org/web/2021/https://media.gmc.com/media/us/en/gmc/vehicles/sierra/2020.tab1.html"
+    },
+    {
+     "name": "Wikipedia - Chevrolet Silverado (K2XX and T1XX sections, engine tables)",
+     "url": "https://en.wikipedia.org/wiki/Chevrolet_Silverado"
+    },
+    {
+     "name": "EPA fueleconomy.gov vehicle data",
+     "url": "https://www.fueleconomy.gov/feg/download.shtml"
+    }
+   ],
+   "sourceCount": 3
+  },
+  {
+   "year": 2020,
+   "gen": "t1",
+   "cid": 376,
+   "cyl": 8,
+   "name": "6.2L / 376 V8",
+   "code": "L87",
+   "desc": null,
+   "hp": 420,
+   "hpBasis": "net",
+   "trims": [
+    "SLT/AT4/AT4X/Denali/Denali Ultimate"
+   ],
+   "note": null,
+   "nhra": false,
+   "sources": [
+    {
+     "name": "GMC Pressroom - 2020 Sierra 1500 specifications (archived)",
+     "url": "https://web.archive.org/web/2021/https://media.gmc.com/media/us/en/gmc/vehicles/sierra/2020.tab1.html"
+    },
+    {
+     "name": "Wikipedia - Chevrolet Silverado (K2XX and T1XX sections, engine tables)",
+     "url": "https://en.wikipedia.org/wiki/Chevrolet_Silverado"
+    },
+    {
+     "name": "EPA fueleconomy.gov vehicle data",
+     "url": "https://www.fueleconomy.gov/feg/download.shtml"
+    }
+   ],
+   "sourceCount": 3
+  },
+  {
+   "year": 2020,
+   "gen": "t1",
+   "cid": 183,
+   "cyl": 6,
+   "name": "3.0L / 183 inline-six diesel",
+   "code": "LM2",
+   "desc": null,
+   "hp": 277,
+   "hpBasis": "net",
+   "trims": [
+    "SLE/SLT/AT4/Denali (optional)"
+   ],
+   "note": null,
+   "nhra": false,
+   "sources": [
+    {
+     "name": "GMC Pressroom - 2020 Sierra 1500 specifications (archived)",
+     "url": "https://web.archive.org/web/2021/https://media.gmc.com/media/us/en/gmc/vehicles/sierra/2020.tab1.html"
+    },
+    {
+     "name": "Wikipedia - Chevrolet Silverado (K2XX and T1XX sections, engine tables)",
+     "url": "https://en.wikipedia.org/wiki/Chevrolet_Silverado"
+    },
+    {
+     "name": "EPA fueleconomy.gov vehicle data",
+     "url": "https://www.fueleconomy.gov/feg/download.shtml"
+    }
+   ],
+   "sourceCount": 3,
+   "diesel": true
+  },
+  {
+   "year": 2021,
+   "gen": "t1",
+   "cid": 262,
+   "cyl": 6,
+   "name": "4.3L / 262 V6",
+   "code": "LV3",
+   "desc": null,
+   "hp": 285,
+   "hpBasis": "net",
+   "trims": [
+    "Base Sierra regular/double cab"
+   ],
+   "note": null,
+   "nhra": false,
+   "sources": [
+    {
+     "name": "GMC Pressroom - 2021 Sierra 1500 specifications (archived)",
+     "url": "https://web.archive.org/web/2023/https://media.gmc.com/media/us/en/gmc/vehicles/sierra/2021.tab1.html"
+    },
+    {
+     "name": "Wikipedia - Chevrolet Silverado (K2XX and T1XX sections, engine tables)",
+     "url": "https://en.wikipedia.org/wiki/Chevrolet_Silverado"
+    },
+    {
+     "name": "EPA fueleconomy.gov vehicle data",
+     "url": "https://www.fueleconomy.gov/feg/download.shtml"
+    }
+   ],
+   "sourceCount": 3
+  },
+  {
+   "year": 2021,
+   "gen": "t1",
+   "cid": 166,
+   "cyl": 4,
+   "name": "2.7L / 166 inline-four turbo",
+   "code": "L3B",
+   "desc": null,
+   "hp": 310,
+   "hpBasis": "net",
+   "trims": [
+    "Sierra/Pro/SLE/Elevation"
+   ],
+   "note": null,
+   "nhra": false,
+   "sources": [
+    {
+     "name": "GMC Pressroom - 2021 Sierra 1500 specifications (archived)",
+     "url": "https://web.archive.org/web/2023/https://media.gmc.com/media/us/en/gmc/vehicles/sierra/2021.tab1.html"
+    },
+    {
+     "name": "Wikipedia - Chevrolet Silverado (K2XX and T1XX sections, engine tables)",
+     "url": "https://en.wikipedia.org/wiki/Chevrolet_Silverado"
+    },
+    {
+     "name": "EPA fueleconomy.gov vehicle data",
+     "url": "https://www.fueleconomy.gov/feg/download.shtml"
+    }
+   ],
+   "sourceCount": 3
+  },
+  {
+   "year": 2021,
+   "gen": "t1",
+   "cid": 325,
+   "cyl": 8,
+   "name": "5.3L / 325 V8",
+   "code": "L82",
+   "desc": null,
+   "hp": 355,
+   "hpBasis": "net",
+   "trims": [
+    "Base/SLE (optional)"
+   ],
+   "note": null,
+   "nhra": false,
+   "sources": [
+    {
+     "name": "GMC Pressroom - 2021 Sierra 1500 specifications (archived)",
+     "url": "https://web.archive.org/web/2023/https://media.gmc.com/media/us/en/gmc/vehicles/sierra/2021.tab1.html"
+    },
+    {
+     "name": "Wikipedia - Chevrolet Silverado (K2XX and T1XX sections, engine tables)",
+     "url": "https://en.wikipedia.org/wiki/Chevrolet_Silverado"
+    },
+    {
+     "name": "EPA fueleconomy.gov vehicle data",
+     "url": "https://www.fueleconomy.gov/feg/download.shtml"
+    }
+   ],
+   "sourceCount": 3
+  },
+  {
+   "year": 2021,
+   "gen": "t1",
+   "cid": 325,
+   "cyl": 8,
+   "name": "5.3L / 325 V8",
+   "code": "L84",
+   "desc": null,
+   "hp": 355,
+   "hpBasis": "net",
+   "trims": [
+    "SLE/Elevation/SLT/AT4/Denali (standard/optional)"
+   ],
+   "note": null,
+   "nhra": false,
+   "sources": [
+    {
+     "name": "GMC Pressroom - 2021 Sierra 1500 specifications (archived)",
+     "url": "https://web.archive.org/web/2023/https://media.gmc.com/media/us/en/gmc/vehicles/sierra/2021.tab1.html"
+    },
+    {
+     "name": "Wikipedia - Chevrolet Silverado (K2XX and T1XX sections, engine tables)",
+     "url": "https://en.wikipedia.org/wiki/Chevrolet_Silverado"
+    },
+    {
+     "name": "EPA fueleconomy.gov vehicle data",
+     "url": "https://www.fueleconomy.gov/feg/download.shtml"
+    }
+   ],
+   "sourceCount": 3
+  },
+  {
+   "year": 2021,
+   "gen": "t1",
+   "cid": 376,
+   "cyl": 8,
+   "name": "6.2L / 376 V8",
+   "code": "L87",
+   "desc": null,
+   "hp": 420,
+   "hpBasis": "net",
+   "trims": [
+    "SLT/AT4/AT4X/Denali/Denali Ultimate"
+   ],
+   "note": null,
+   "nhra": false,
+   "sources": [
+    {
+     "name": "GMC Pressroom - 2021 Sierra 1500 specifications (archived)",
+     "url": "https://web.archive.org/web/2023/https://media.gmc.com/media/us/en/gmc/vehicles/sierra/2021.tab1.html"
+    },
+    {
+     "name": "Wikipedia - Chevrolet Silverado (K2XX and T1XX sections, engine tables)",
+     "url": "https://en.wikipedia.org/wiki/Chevrolet_Silverado"
+    },
+    {
+     "name": "EPA fueleconomy.gov vehicle data",
+     "url": "https://www.fueleconomy.gov/feg/download.shtml"
+    }
+   ],
+   "sourceCount": 3
+  },
+  {
+   "year": 2021,
+   "gen": "t1",
+   "cid": 183,
+   "cyl": 6,
+   "name": "3.0L / 183 inline-six diesel",
+   "code": "LM2",
+   "desc": null,
+   "hp": 277,
+   "hpBasis": "net",
+   "trims": [
+    "SLE/SLT/AT4/Denali (optional)"
+   ],
+   "note": null,
+   "nhra": false,
+   "sources": [
+    {
+     "name": "GMC Pressroom - 2021 Sierra 1500 specifications (archived)",
+     "url": "https://web.archive.org/web/2023/https://media.gmc.com/media/us/en/gmc/vehicles/sierra/2021.tab1.html"
+    },
+    {
+     "name": "Wikipedia - Chevrolet Silverado (K2XX and T1XX sections, engine tables)",
+     "url": "https://en.wikipedia.org/wiki/Chevrolet_Silverado"
+    },
+    {
+     "name": "EPA fueleconomy.gov vehicle data",
+     "url": "https://www.fueleconomy.gov/feg/download.shtml"
+    }
+   ],
+   "sourceCount": 3,
+   "diesel": true
+  },
+  {
+   "year": 2022,
+   "gen": "t1",
+   "cid": 166,
+   "cyl": 4,
+   "name": "2.7L / 166 inline-four turbo",
+   "code": "L3B",
+   "desc": null,
+   "hp": 310,
+   "hpBasis": "net",
+   "trims": [
+    "Sierra/Pro/SLE/Elevation"
+   ],
+   "note": null,
+   "nhra": false,
+   "sources": [
+    {
+     "name": "GMC Pressroom - 2022 Sierra 1500 specifications (archived)",
+     "url": "https://web.archive.org/web/2022/https://media.gmc.com/media/us/en/gmc/vehicles/sierra/2022.tab1.html"
+    },
+    {
+     "name": "Wikipedia - Chevrolet Silverado (K2XX and T1XX sections, engine tables)",
+     "url": "https://en.wikipedia.org/wiki/Chevrolet_Silverado"
+    },
+    {
+     "name": "EPA fueleconomy.gov vehicle data",
+     "url": "https://www.fueleconomy.gov/feg/download.shtml"
+    }
+   ],
+   "sourceCount": 3
+  },
+  {
+   "year": 2022,
+   "gen": "t1",
+   "cid": 325,
+   "cyl": 8,
+   "name": "5.3L / 325 V8",
+   "code": "L84",
+   "desc": null,
+   "hp": 355,
+   "hpBasis": "net",
+   "trims": [
+    "SLE/Elevation/SLT/AT4/Denali (standard/optional)"
+   ],
+   "note": null,
+   "nhra": false,
+   "sources": [
+    {
+     "name": "GMC Pressroom - 2022 Sierra 1500 specifications (archived)",
+     "url": "https://web.archive.org/web/2022/https://media.gmc.com/media/us/en/gmc/vehicles/sierra/2022.tab1.html"
+    },
+    {
+     "name": "Wikipedia - Chevrolet Silverado (K2XX and T1XX sections, engine tables)",
+     "url": "https://en.wikipedia.org/wiki/Chevrolet_Silverado"
+    },
+    {
+     "name": "EPA fueleconomy.gov vehicle data",
+     "url": "https://www.fueleconomy.gov/feg/download.shtml"
+    }
+   ],
+   "sourceCount": 3
+  },
+  {
+   "year": 2022,
+   "gen": "t1",
+   "cid": 376,
+   "cyl": 8,
+   "name": "6.2L / 376 V8",
+   "code": "L87",
+   "desc": null,
+   "hp": 420,
+   "hpBasis": "net",
+   "trims": [
+    "SLT/AT4/AT4X/Denali/Denali Ultimate"
+   ],
+   "note": null,
+   "nhra": false,
+   "sources": [
+    {
+     "name": "GMC Pressroom - 2022 Sierra 1500 specifications (archived)",
+     "url": "https://web.archive.org/web/2022/https://media.gmc.com/media/us/en/gmc/vehicles/sierra/2022.tab1.html"
+    },
+    {
+     "name": "Wikipedia - Chevrolet Silverado (K2XX and T1XX sections, engine tables)",
+     "url": "https://en.wikipedia.org/wiki/Chevrolet_Silverado"
+    },
+    {
+     "name": "EPA fueleconomy.gov vehicle data",
+     "url": "https://www.fueleconomy.gov/feg/download.shtml"
+    },
+    {
+     "name": "Consumer Guide - Test Drive: 2022 GMC Sierra 1500 AT4X",
+     "url": "https://blog.consumerguide.com/test-drive-2022-gmc-sierra-1500-at4x/"
+    }
+   ],
+   "sourceCount": 4
+  },
+  {
+   "year": 2022,
+   "gen": "t1",
+   "cid": 183,
+   "cyl": 6,
+   "name": "3.0L / 183 inline-six diesel",
+   "code": "LM2",
+   "desc": null,
+   "hp": 277,
+   "hpBasis": "net",
+   "trims": [
+    "SLE/SLT/AT4/Denali (optional)"
+   ],
+   "note": null,
+   "nhra": false,
+   "sources": [
+    {
+     "name": "GMC Pressroom - 2022 Sierra 1500 specifications (archived)",
+     "url": "https://web.archive.org/web/2022/https://media.gmc.com/media/us/en/gmc/vehicles/sierra/2022.tab1.html"
+    },
+    {
+     "name": "Wikipedia - Chevrolet Silverado (K2XX and T1XX sections, engine tables)",
+     "url": "https://en.wikipedia.org/wiki/Chevrolet_Silverado"
+    },
+    {
+     "name": "EPA fueleconomy.gov vehicle data",
+     "url": "https://www.fueleconomy.gov/feg/download.shtml"
+    }
+   ],
+   "sourceCount": 3,
+   "diesel": true
+  },
+  {
+   "year": 2023,
+   "gen": "t1",
+   "cid": 166,
+   "cyl": 4,
+   "name": "2.7L / 166 inline-four turbo",
+   "code": "L3B",
+   "desc": null,
+   "hp": 310,
+   "hpBasis": "net",
+   "trims": [
+    "Sierra/Pro/SLE/Elevation"
+   ],
+   "note": null,
+   "nhra": false,
+   "sources": [
+    {
+     "name": "Wikipedia - Chevrolet Silverado (K2XX and T1XX sections, engine tables)",
+     "url": "https://en.wikipedia.org/wiki/Chevrolet_Silverado"
+    },
+    {
+     "name": "EPA fueleconomy.gov vehicle data",
+     "url": "https://www.fueleconomy.gov/feg/download.shtml"
+    },
+    {
+     "name": "Kelley Blue Book - 2023 GMC Sierra 1500 Crew Cab review/specs",
+     "url": "https://www.kbb.com/gmc/sierra-1500-crew-cab/2023/"
+    }
+   ],
+   "sourceCount": 3
+  },
+  {
+   "year": 2023,
+   "gen": "t1",
+   "cid": 325,
+   "cyl": 8,
+   "name": "5.3L / 325 V8",
+   "code": "L84",
+   "desc": null,
+   "hp": 355,
+   "hpBasis": "net",
+   "trims": [
+    "SLE/Elevation/SLT/AT4/Denali (standard/optional)"
+   ],
+   "note": null,
+   "nhra": false,
+   "sources": [
+    {
+     "name": "Wikipedia - Chevrolet Silverado (K2XX and T1XX sections, engine tables)",
+     "url": "https://en.wikipedia.org/wiki/Chevrolet_Silverado"
+    },
+    {
+     "name": "EPA fueleconomy.gov vehicle data",
+     "url": "https://www.fueleconomy.gov/feg/download.shtml"
+    },
+    {
+     "name": "Kelley Blue Book - 2023 GMC Sierra 1500 Crew Cab review/specs",
+     "url": "https://www.kbb.com/gmc/sierra-1500-crew-cab/2023/"
+    }
+   ],
+   "sourceCount": 3
+  },
+  {
+   "year": 2023,
+   "gen": "t1",
+   "cid": 376,
+   "cyl": 8,
+   "name": "6.2L / 376 V8",
+   "code": "L87",
+   "desc": null,
+   "hp": 420,
+   "hpBasis": "net",
+   "trims": [
+    "SLT/AT4/AT4X/Denali/Denali Ultimate"
+   ],
+   "note": null,
+   "nhra": false,
+   "sources": [
+    {
+     "name": "Wikipedia - Chevrolet Silverado (K2XX and T1XX sections, engine tables)",
+     "url": "https://en.wikipedia.org/wiki/Chevrolet_Silverado"
+    },
+    {
+     "name": "EPA fueleconomy.gov vehicle data",
+     "url": "https://www.fueleconomy.gov/feg/download.shtml"
+    },
+    {
+     "name": "Kelley Blue Book - 2023 GMC Sierra 1500 Crew Cab review/specs",
+     "url": "https://www.kbb.com/gmc/sierra-1500-crew-cab/2023/"
+    }
+   ],
+   "sourceCount": 3
+  },
+  {
+   "year": 2023,
+   "gen": "t1",
+   "cid": 183,
+   "cyl": 6,
+   "name": "3.0L / 183 inline-six diesel",
+   "code": "LZ0",
+   "desc": null,
+   "hp": null,
+   "hpBasis": "net",
+   "trims": [
+    "SLE/Elevation/SLT/AT4/AT4X/Denali (optional; standard AT4X 2024+)"
+   ],
+   "note": null,
+   "nhra": false,
+   "sources": [
+    {
+     "name": "GM Newsroom - \"GMC offers 3.0L Duramax engine on 2024 Sierra 1500 AT4X\" (Apr 2023)",
+     "url": "https://news.gm.com/home.detail.html/Pages/news/us/en/2023/apr/0405-sierra.html"
+    },
+    {
+     "name": "Wikipedia - Chevrolet Silverado (K2XX and T1XX sections, engine tables)",
+     "url": "https://en.wikipedia.org/wiki/Chevrolet_Silverado"
+    },
+    {
+     "name": "EPA fueleconomy.gov vehicle data",
+     "url": "https://www.fueleconomy.gov/feg/download.shtml"
+    },
+    {
+     "name": "Kelley Blue Book - 2023 GMC Sierra 1500 Crew Cab review/specs",
+     "url": "https://www.kbb.com/gmc/sierra-1500-crew-cab/2023/"
+    }
+   ],
+   "sourceCount": 4,
+   "diesel": true
+  },
+  {
+   "year": 2024,
+   "gen": "t1",
+   "cid": 166,
+   "cyl": 4,
+   "name": "2.7L / 166 inline-four turbo",
+   "code": "L3B",
+   "desc": null,
+   "hp": 310,
+   "hpBasis": "net",
+   "trims": [
+    "Sierra/Pro/SLE/Elevation"
+   ],
+   "note": null,
+   "nhra": false,
+   "sources": [
+    {
+     "name": "Wikipedia - Chevrolet Silverado (K2XX and T1XX sections, engine tables)",
+     "url": "https://en.wikipedia.org/wiki/Chevrolet_Silverado"
+    },
+    {
+     "name": "EPA fueleconomy.gov vehicle data",
+     "url": "https://www.fueleconomy.gov/feg/download.shtml"
+    },
+    {
+     "name": "Kelley Blue Book - 2024 GMC Sierra 1500 Crew Cab review/specs",
+     "url": "https://www.kbb.com/gmc/sierra-1500-crew-cab/2024/"
+    },
+    {
+     "name": "Consumer Guide - 2024 GMC Sierra 1500 AT4 review",
+     "url": "https://blog.consumerguide.com/2024-gmc-sierra-1500-at4/"
+    }
+   ],
+   "sourceCount": 4
+  },
+  {
+   "year": 2024,
+   "gen": "t1",
+   "cid": 325,
+   "cyl": 8,
+   "name": "5.3L / 325 V8",
+   "code": "L84",
+   "desc": null,
+   "hp": 355,
+   "hpBasis": "net",
+   "trims": [
+    "SLE/Elevation/SLT/AT4/Denali (standard/optional)"
+   ],
+   "note": null,
+   "nhra": false,
+   "sources": [
+    {
+     "name": "Wikipedia - Chevrolet Silverado (K2XX and T1XX sections, engine tables)",
+     "url": "https://en.wikipedia.org/wiki/Chevrolet_Silverado"
+    },
+    {
+     "name": "EPA fueleconomy.gov vehicle data",
+     "url": "https://www.fueleconomy.gov/feg/download.shtml"
+    },
+    {
+     "name": "Consumer Guide - 2024 GMC Sierra 1500 AT4 review",
+     "url": "https://blog.consumerguide.com/2024-gmc-sierra-1500-at4/"
+    }
+   ],
+   "sourceCount": 3
+  },
+  {
+   "year": 2024,
+   "gen": "t1",
+   "cid": 376,
+   "cyl": 8,
+   "name": "6.2L / 376 V8",
+   "code": "L87",
+   "desc": null,
+   "hp": 420,
+   "hpBasis": "net",
+   "trims": [
+    "SLT/AT4/AT4X/Denali/Denali Ultimate"
+   ],
+   "note": null,
+   "nhra": false,
+   "sources": [
+    {
+     "name": "Wikipedia - Chevrolet Silverado (K2XX and T1XX sections, engine tables)",
+     "url": "https://en.wikipedia.org/wiki/Chevrolet_Silverado"
+    },
+    {
+     "name": "EPA fueleconomy.gov vehicle data",
+     "url": "https://www.fueleconomy.gov/feg/download.shtml"
+    },
+    {
+     "name": "Consumer Guide - 2024 GMC Sierra 1500 AT4 review",
+     "url": "https://blog.consumerguide.com/2024-gmc-sierra-1500-at4/"
+    }
+   ],
+   "sourceCount": 3
+  },
+  {
+   "year": 2024,
+   "gen": "t1",
+   "cid": 183,
+   "cyl": 6,
+   "name": "3.0L / 183 inline-six diesel",
+   "code": "LZ0",
+   "desc": null,
+   "hp": 305,
+   "hpBasis": "net",
+   "trims": [
+    "SLE/Elevation/SLT/AT4/AT4X/Denali (optional; standard AT4X 2024+)"
+   ],
+   "note": null,
+   "nhra": false,
+   "sources": [
+    {
+     "name": "GM Newsroom - \"GMC offers 3.0L Duramax engine on 2024 Sierra 1500 AT4X\" (Apr 2023)",
+     "url": "https://news.gm.com/home.detail.html/Pages/news/us/en/2023/apr/0405-sierra.html"
+    },
+    {
+     "name": "Wikipedia - Chevrolet Silverado (K2XX and T1XX sections, engine tables)",
+     "url": "https://en.wikipedia.org/wiki/Chevrolet_Silverado"
+    },
+    {
+     "name": "EPA fueleconomy.gov vehicle data",
+     "url": "https://www.fueleconomy.gov/feg/download.shtml"
+    },
+    {
+     "name": "Kelley Blue Book - 2024 GMC Sierra 1500 Crew Cab review/specs",
+     "url": "https://www.kbb.com/gmc/sierra-1500-crew-cab/2024/"
+    },
+    {
+     "name": "Consumer Guide - 2024 GMC Sierra 1500 AT4 review",
+     "url": "https://blog.consumerguide.com/2024-gmc-sierra-1500-at4/"
+    }
+   ],
+   "sourceCount": 5,
+   "diesel": true
+  },
+  {
+   "year": 2024,
+   "gen": "t1",
+   "cid": null,
+   "cyl": null,
+   "name": "Electric, dual motor",
+   "code": null,
+   "desc": "Ultium dual-motor e4WD",
+   "hp": 754,
+   "hpBasis": "net",
+   "trims": [
+    "Sierra EV Denali Edition 1"
+   ],
+   "note": null,
+   "nhra": false,
+   "sources": [
+    {
+     "name": "GM Newsroom - 2024 GMC Sierra EV Denali Edition 1 hits the streets (Aug 2024)",
+     "url": "https://news.gm.com/home.detail.html/Pages/news/us/en/2024/aug/0821-gmcsierradenaliev.html"
+    },
+    {
+     "name": "Kelley Blue Book - 2024 GMC Sierra EV specs",
+     "url": "https://www.kbb.com/gmc/sierra-ev/2024/specs/"
+    },
+    {
+     "name": "Motor1 - 2024 GMC Sierra EV debuts in Denali trim with 754 hp",
+     "url": "https://www.motor1.com/news/617393/2024-gmc-sierra-ev-debut/"
+    },
+    {
+     "name": "Wikipedia - Chevrolet Silverado EV (GMC Sierra EV twin)",
+     "url": "https://en.wikipedia.org/wiki/Chevrolet_Silverado_EV"
+    }
+   ],
+   "sourceCount": 4,
+   "electric": true
+  },
+  {
+   "year": 2025,
+   "gen": "t1",
+   "cid": 166,
+   "cyl": 4,
+   "name": "2.7L / 166 inline-four turbo",
+   "code": "L3B",
+   "desc": null,
+   "hp": 310,
+   "hpBasis": "net",
+   "trims": [
+    "Sierra/Pro/SLE/Elevation"
+   ],
+   "note": null,
+   "nhra": false,
+   "sources": [
+    {
+     "name": "GMC.com - GMC engines guide (2025 Sierra 1500 trims)",
+     "url": "https://gmc.com/gmc-life/news/gmc-engines"
+    },
+    {
+     "name": "Wikipedia - Chevrolet Silverado (K2XX and T1XX sections, engine tables)",
+     "url": "https://en.wikipedia.org/wiki/Chevrolet_Silverado"
+    },
+    {
+     "name": "EPA fueleconomy.gov vehicle data",
+     "url": "https://www.fueleconomy.gov/feg/download.shtml"
+    }
+   ],
+   "sourceCount": 3
+  },
+  {
+   "year": 2025,
+   "gen": "t1",
+   "cid": 325,
+   "cyl": 8,
+   "name": "5.3L / 325 V8",
+   "code": "L84",
+   "desc": null,
+   "hp": 355,
+   "hpBasis": "net",
+   "trims": [
+    "SLE/Elevation/SLT/AT4/Denali (standard/optional)"
+   ],
+   "note": null,
+   "nhra": false,
+   "sources": [
+    {
+     "name": "GMC.com - GMC engines guide (2025 Sierra 1500 trims)",
+     "url": "https://gmc.com/gmc-life/news/gmc-engines"
+    },
+    {
+     "name": "Wikipedia - Chevrolet Silverado (K2XX and T1XX sections, engine tables)",
+     "url": "https://en.wikipedia.org/wiki/Chevrolet_Silverado"
+    },
+    {
+     "name": "EPA fueleconomy.gov vehicle data",
+     "url": "https://www.fueleconomy.gov/feg/download.shtml"
+    }
+   ],
+   "sourceCount": 3
+  },
+  {
+   "year": 2025,
+   "gen": "t1",
+   "cid": 376,
+   "cyl": 8,
+   "name": "6.2L / 376 V8",
+   "code": "L87",
+   "desc": null,
+   "hp": 420,
+   "hpBasis": "net",
+   "trims": [
+    "SLT/AT4/AT4X/Denali/Denali Ultimate"
+   ],
+   "note": null,
+   "nhra": false,
+   "sources": [
+    {
+     "name": "GMC.com - GMC engines guide (2025 Sierra 1500 trims)",
+     "url": "https://gmc.com/gmc-life/news/gmc-engines"
+    },
+    {
+     "name": "Wikipedia - Chevrolet Silverado (K2XX and T1XX sections, engine tables)",
+     "url": "https://en.wikipedia.org/wiki/Chevrolet_Silverado"
+    },
+    {
+     "name": "EPA fueleconomy.gov vehicle data",
+     "url": "https://www.fueleconomy.gov/feg/download.shtml"
+    }
+   ],
+   "sourceCount": 3
+  },
+  {
+   "year": 2025,
+   "gen": "t1",
+   "cid": 183,
+   "cyl": 6,
+   "name": "3.0L / 183 inline-six diesel",
+   "code": "LZ0",
+   "desc": null,
+   "hp": 305,
+   "hpBasis": "net",
+   "trims": [
+    "SLE/Elevation/SLT/AT4/AT4X/Denali (optional; standard AT4X 2024+)"
+   ],
+   "note": null,
+   "nhra": false,
+   "sources": [
+    {
+     "name": "GMC.com - GMC engines guide (2025 Sierra 1500 trims)",
+     "url": "https://gmc.com/gmc-life/news/gmc-engines"
+    },
+    {
+     "name": "Wikipedia - Chevrolet Silverado (K2XX and T1XX sections, engine tables)",
+     "url": "https://en.wikipedia.org/wiki/Chevrolet_Silverado"
+    },
+    {
+     "name": "EPA fueleconomy.gov vehicle data",
+     "url": "https://www.fueleconomy.gov/feg/download.shtml"
+    }
+   ],
+   "sourceCount": 3,
+   "diesel": true
+  },
+  {
+   "year": 2025,
+   "gen": "t1",
+   "cid": null,
+   "cyl": null,
+   "name": "Electric, dual motor",
+   "code": null,
+   "desc": "Ultium dual-motor e4WD",
+   "hp": 760,
+   "hpBasis": "net",
+   "trims": [
+    "Sierra EV Denali (Extended/Max Range); Elevation/AT4 added later"
+   ],
+   "note": null,
+   "nhra": false,
+   "sources": [
+    {
+     "name": "EPA fueleconomy.gov vehicle data",
+     "url": "https://www.fueleconomy.gov/feg/download.shtml"
+    },
+    {
+     "name": "Electrek / FleetOwner - 2025 GMC Sierra EV Denali first look",
+     "url": "https://electrek.co/2024/11/19/2025-gmc-sierra-ev-denali-first-look-more-miles-and-power/"
+    },
+    {
+     "name": "Wikipedia - Chevrolet Silverado EV (GMC Sierra EV twin)",
+     "url": "https://en.wikipedia.org/wiki/Chevrolet_Silverado_EV"
+    }
+   ],
+   "sourceCount": 3,
+   "electric": true
+  },
+  {
+   "year": 2026,
+   "gen": "t1",
+   "cid": 166,
+   "cyl": 4,
+   "name": "2.7L / 166 inline-four turbo",
+   "code": "L3B",
+   "desc": null,
+   "hp": 310,
+   "hpBasis": "net",
+   "trims": [
+    "Sierra/Pro/SLE/Elevation"
+   ],
+   "note": null,
+   "nhra": false,
+   "sources": [
+    {
+     "name": "GMC.com - 2026 Sierra 1500 (previous-year page)",
+     "url": "https://www.gmc.com/trucks/previous-year/sierra/1500"
+    },
+    {
+     "name": "Wikipedia - Chevrolet Silverado (K2XX and T1XX sections, engine tables)",
+     "url": "https://en.wikipedia.org/wiki/Chevrolet_Silverado"
+    },
+    {
+     "name": "EPA fueleconomy.gov vehicle data",
+     "url": "https://www.fueleconomy.gov/feg/download.shtml"
+    }
+   ],
+   "sourceCount": 3
+  },
+  {
+   "year": 2026,
+   "gen": "t1",
+   "cid": 325,
+   "cyl": 8,
+   "name": "5.3L / 325 V8",
+   "code": "L84",
+   "desc": null,
+   "hp": 355,
+   "hpBasis": "net",
+   "trims": [
+    "SLE/Elevation/SLT/AT4/Denali (standard/optional)"
+   ],
+   "note": null,
+   "nhra": false,
+   "sources": [
+    {
+     "name": "GMC.com - 2026 Sierra 1500 (previous-year page)",
+     "url": "https://www.gmc.com/trucks/previous-year/sierra/1500"
+    },
+    {
+     "name": "Wikipedia - Chevrolet Silverado (K2XX and T1XX sections, engine tables)",
+     "url": "https://en.wikipedia.org/wiki/Chevrolet_Silverado"
+    },
+    {
+     "name": "EPA fueleconomy.gov vehicle data",
+     "url": "https://www.fueleconomy.gov/feg/download.shtml"
+    }
+   ],
+   "sourceCount": 3
+  },
+  {
+   "year": 2026,
+   "gen": "t1",
+   "cid": 376,
+   "cyl": 8,
+   "name": "6.2L / 376 V8",
+   "code": "L87",
+   "desc": null,
+   "hp": 420,
+   "hpBasis": "net",
+   "trims": [
+    "SLT/AT4/AT4X/Denali/Denali Ultimate"
+   ],
+   "note": null,
+   "nhra": false,
+   "sources": [
+    {
+     "name": "GMC.com - 2026 Sierra 1500 (previous-year page)",
+     "url": "https://www.gmc.com/trucks/previous-year/sierra/1500"
+    },
+    {
+     "name": "Wikipedia - Chevrolet Silverado (K2XX and T1XX sections, engine tables)",
+     "url": "https://en.wikipedia.org/wiki/Chevrolet_Silverado"
+    },
+    {
+     "name": "EPA fueleconomy.gov vehicle data",
+     "url": "https://www.fueleconomy.gov/feg/download.shtml"
+    }
+   ],
+   "sourceCount": 3
+  },
+  {
+   "year": 2026,
+   "gen": "t1",
+   "cid": 183,
+   "cyl": 6,
+   "name": "3.0L / 183 inline-six diesel",
+   "code": "LZ0",
+   "desc": null,
+   "hp": 305,
+   "hpBasis": "net",
+   "trims": [
+    "SLE/Elevation/SLT/AT4/AT4X/Denali (optional; standard AT4X 2024+)"
+   ],
+   "note": null,
+   "nhra": false,
+   "sources": [
+    {
+     "name": "GMC.com - 2026 Sierra 1500 (previous-year page)",
+     "url": "https://www.gmc.com/trucks/previous-year/sierra/1500"
+    },
+    {
+     "name": "Wikipedia - Chevrolet Silverado (K2XX and T1XX sections, engine tables)",
+     "url": "https://en.wikipedia.org/wiki/Chevrolet_Silverado"
+    },
+    {
+     "name": "EPA fueleconomy.gov vehicle data",
+     "url": "https://www.fueleconomy.gov/feg/download.shtml"
+    }
+   ],
+   "sourceCount": 3,
+   "diesel": true
+  }
+ ],
+ "sources": [
+  {
+   "name": "EPA fueleconomy.gov vehicle data",
+   "url": "https://www.fueleconomy.gov/feg/download.shtml",
+   "type": "government"
+  },
+  {
+   "name": "1988 GMC Sierra Pickup brochure (oldcarbrochures.org)",
+   "url": "https://www.oldcarbrochures.org/United%20States/GM%20Trucks%20and%20Vans/1988-GM-Trucks-and-Vans/1988%20GMC%20Sierra%20Pickup/index.html",
+   "type": "manufacturer"
+  },
+  {
+   "name": "1989 GMC Sierra Pickup brochure (oldcarbrochures.org)",
+   "url": "https://www.oldcarbrochures.org/United%20States/GM%20Trucks%20and%20Vans/1989-GM-Trucks-and-Vans/1989-GMC-Sierra-Pickup/index.html",
+   "type": "manufacturer"
+  },
+  {
+   "name": "1990 GMC Sierra brochure (oldcarbrochures.org)",
+   "url": "https://www.oldcarbrochures.org/United%20States/GM%20Trucks%20and%20Vans/1990-GM-Trucks-and-Vans/1990%20GMC%20Sierra/index.html",
+   "type": "manufacturer"
+  },
+  {
+   "name": "1991 GMC Sierra brochure (oldcarbrochures.org)",
+   "url": "https://www.oldcarbrochures.org/United%20States/GM%20Trucks%20and%20Vans/1991-Trucks-and-Vans/1991-GMC-Sierra-Brochure/index.html",
+   "type": "manufacturer"
+  },
+  {
+   "name": "1994 GMC Sierra Pickup brochure (oldcarbrochures.org)",
+   "url": "https://www.oldcarbrochures.org/United%20States/GM%20Trucks%20and%20Vans/1994-Trucks-and-Vans/1994-GMC-Sierra-Pickup-Brochure/index.html",
+   "type": "manufacturer"
+  },
+  {
+   "name": "GM Newsroom - \"GMC offers 3.0L Duramax engine on 2024 Sierra 1500 AT4X\" (Apr 2023)",
+   "url": "https://news.gm.com/home.detail.html/Pages/news/us/en/2023/apr/0405-sierra.html",
+   "type": "manufacturer"
+  },
+  {
+   "name": "GM Newsroom - 2024 GMC Sierra EV Denali Edition 1 hits the streets (Aug 2024)",
+   "url": "https://news.gm.com/home.detail.html/Pages/news/us/en/2024/aug/0821-gmcsierradenaliev.html",
+   "type": "manufacturer"
+  },
+  {
+   "name": "GM media - 2006 GMC Sierra 1500 overview/specifications (archived)",
+   "url": "https://web.archive.org/web/2006/http://media.gm.com/us/gmc/en/product_services/r_cars/r_c_sierra_classic/index%20LD.html",
+   "type": "manufacturer"
+  },
+  {
+   "name": "GM media - 2007 GMC Sierra (GMT900) overview and cab specs (archived)",
+   "url": "https://web.archive.org/web/2007/http://media.gm.com/us/gmc/en/product_services/r_cars/r_c_sierra/07sierraPK/07_GMC_Sierra_Overview.html",
+   "type": "manufacturer"
+  },
+  {
+   "name": "GM media - 2007 GMC Sierra Classic press kit (archived)",
+   "url": "https://web.archive.org/web/2007/http://media.gm.com/us/gmc/en/product_services/r_cars/r_c_sierra_classic/index.html",
+   "type": "manufacturer"
+  },
+  {
+   "name": "GM media - 2008 GMC Sierra 1500 & Sierra Denali press kit (archived)",
+   "url": "https://web.archive.org/web/2008/http://media.gm.com/us/gmc/en/product_services/r_cars/r_c_sierra/08index.html",
+   "type": "manufacturer"
+  },
+  {
+   "name": "GM media - 2009 GMC Sierra 1500 & Sierra Denali press kit (archived)",
+   "url": "https://web.archive.org/web/2009/http://media.gm.com/us/gmc/en/product_services/r_cars/r_c_sierra/09index.html",
+   "type": "manufacturer"
+  },
+  {
+   "name": "GM mediaOnline - 2001 GMC Sierra light-duty overview (archived)",
+   "url": "https://web.archive.org/web/2001/http://www.media.gm.com/division/gmc/products/sierra_lightduty_overview.html",
+   "type": "manufacturer"
+  },
+  {
+   "name": "GM mediaOnline - 2001 Sierra C3 overview and C3/HD 6.0 engine spec pages (archived)",
+   "url": "https://web.archive.org/web/2001/http://www.media.gm.com/division/gmc/products/sierra_C3_overview.html",
+   "type": "manufacturer"
+  },
+  {
+   "name": "GM mediaOnline - 2002 GMC Sierra Light Duty new-for/specifications (archived)",
+   "url": "https://web.archive.org/web/2002/http://media.gm.com/division/gmc/products/02vehicles/sierra_ld.html",
+   "type": "manufacturer"
+  },
+  {
+   "name": "GM mediaOnline - 2003 GMC Sierra specifications (archived)",
+   "url": "https://web.archive.org/web/2003/http://media.gm.com/division/2003_prodinfo/03_gmc/03_sierra/specifications.html",
+   "type": "manufacturer"
+  },
+  {
+   "name": "GM mediaOnline - 2004 GMC Sierra specifications (archived)",
+   "url": "https://web.archive.org/web/2003/http://media.gm.com/division/2004_prodinfo/gmc/sierra/specs.html",
+   "type": "manufacturer"
+  },
+  {
+   "name": "GMC Pressroom - 2010 Sierra specifications (archived)",
+   "url": "https://web.archive.org/web/2020/https://media.gm.com/media/us/en/gmc/vehicles/sierra/2010.tab1.html",
+   "type": "manufacturer"
+  },
+  {
+   "name": "GMC Pressroom - 2011 Sierra specifications (archived)",
+   "url": "https://web.archive.org/web/2020/http://media.gmc.com/media/us/en/gmc/vehicles/sierra/2011.tab1.html",
+   "type": "manufacturer"
+  },
+  {
+   "name": "GMC Pressroom - 2012 Sierra specifications (archived)",
+   "url": "https://web.archive.org/web/2020/http://media.gmc.com/media/us/en/gmc/vehicles/sierra/2012.tab1.html",
+   "type": "manufacturer"
+  },
+  {
+   "name": "GMC Pressroom - 2013 Sierra specifications (archived)",
+   "url": "https://web.archive.org/web/2020/http://media.gm.com/media/us/en/gmc/vehicles/sierra/2013.tab1.html",
+   "type": "manufacturer"
+  },
+  {
+   "name": "GMC Pressroom - 2014 Sierra specifications (archived)",
+   "url": "https://web.archive.org/web/2020/http://media.gmc.com/media/us/en/gmc/vehicles/sierra/2014.tab1.html",
+   "type": "manufacturer"
+  },
+  {
+   "name": "GMC Pressroom - 2015 Sierra 1500 spec tables (archived)",
+   "url": "https://web.archive.org/web/2020/http://media.gm.com/media/us/en/gmc/spec-tables/2015/1500-crew-cab.html",
+   "type": "manufacturer"
+  },
+  {
+   "name": "GMC Pressroom - 2016 Sierra 1500 spec tables (archived)",
+   "url": "https://web.archive.org/web/2020/http://media.gm.com/media/us/en/gmc/spec-tables/2016/1500-crew-cab.html",
+   "type": "manufacturer"
+  },
+  {
+   "name": "GMC Pressroom - 2017 Sierra 1500 print specifications (archived)",
+   "url": "https://web.archive.org/web/2017/http://media.gmc.com/media/us/en/gmc/vehicles/sierra/2017.print.html",
+   "type": "manufacturer"
+  },
+  {
+   "name": "GMC Pressroom - 2018 Sierra / Sierra Denali specifications (archived)",
+   "url": "https://web.archive.org/web/2020/https://media.gmc.com/media/us/en/gmc/vehicles/sierra/2018.tab1.html",
+   "type": "manufacturer"
+  },
+  {
+   "name": "GMC Pressroom - 2019 Sierra 1500 specifications (archived)",
+   "url": "https://web.archive.org/web/2020/https://media.gmc.com/media/us/en/gmc/vehicles/sierra/2019.tab1.html",
+   "type": "manufacturer"
+  },
+  {
+   "name": "GMC Pressroom - 2020 Sierra 1500 specifications (archived)",
+   "url": "https://web.archive.org/web/2021/https://media.gmc.com/media/us/en/gmc/vehicles/sierra/2020.tab1.html",
+   "type": "manufacturer"
+  },
+  {
+   "name": "GMC Pressroom - 2021 Sierra 1500 specifications (archived)",
+   "url": "https://web.archive.org/web/2023/https://media.gmc.com/media/us/en/gmc/vehicles/sierra/2021.tab1.html",
+   "type": "manufacturer"
+  },
+  {
+   "name": "GMC Pressroom - 2022 Sierra 1500 specifications (archived)",
+   "url": "https://web.archive.org/web/2022/https://media.gmc.com/media/us/en/gmc/vehicles/sierra/2022.tab1.html",
+   "type": "manufacturer"
+  },
+  {
+   "name": "GMC Pressroom - Sierra Hybrid 2009-2012 specifications (archived)",
+   "url": "https://web.archive.org/web/2012/https://media.gm.com/media/us/en/gmc/vehicles/sierra_hybrid/2010.tab1.html",
+   "type": "manufacturer"
+  },
+  {
+   "name": "GMC.com - 2026 Sierra 1500 (previous-year page)",
+   "url": "https://www.gmc.com/trucks/previous-year/sierra/1500",
+   "type": "manufacturer"
+  },
+  {
+   "name": "GMC.com - 2026 Sierra EV",
+   "url": "https://www.gmc.com/electric/sierra-ev",
+   "type": "manufacturer"
+  },
+  {
+   "name": "GMC.com - GMC engines guide (2025 Sierra 1500 trims)",
+   "url": "https://gmc.com/gmc-life/news/gmc-engines",
+   "type": "manufacturer"
+  },
+  {
+   "name": "Cars.com - 1997 GMC Sierra 1500 research page (expert review)",
+   "url": "https://www.cars.com/research/gmc-sierra_1500-1997/",
+   "type": "publication"
+  },
+  {
+   "name": "Consumer Guide - 1990-98 GMC Sierra used-car review",
+   "url": "https://consumerguide.com/used/1990-98-gmc-sierra/",
+   "type": "publication"
+  },
+  {
+   "name": "Consumer Guide - 1999-06 GMC Sierra used-car review",
+   "url": "https://consumerguide.com/used/1999-06-gmc-sierra/",
+   "type": "publication"
+  },
+  {
+   "name": "Consumer Guide - 2007-13 GMC Sierra 1500 used-car review",
+   "url": "https://consumerguide.com/used/2007-13-gmc-sierra/",
+   "type": "publication"
+  },
+  {
+   "name": "Consumer Guide - 2014 GMC Sierra 1500 (used) / 2014-2018 GMC Sierra reviews",
+   "url": "https://consumerguide.com/used/2014-gmc-sierra-1500/",
+   "type": "publication"
+  },
+  {
+   "name": "Consumer Guide - 2024 GMC Sierra 1500 AT4 review",
+   "url": "https://blog.consumerguide.com/2024-gmc-sierra-1500-at4/",
+   "type": "publication"
+  },
+  {
+   "name": "Consumer Guide - Test Drive: 2022 GMC Sierra 1500 AT4X",
+   "url": "https://blog.consumerguide.com/test-drive-2022-gmc-sierra-1500-at4x/",
+   "type": "publication"
+  },
+  {
+   "name": "Electrek / FleetOwner - 2025 GMC Sierra EV Denali first look",
+   "url": "https://electrek.co/2024/11/19/2025-gmc-sierra-ev-denali-first-look-more-miles-and-power/",
+   "type": "publication"
+  },
+  {
+   "name": "Kelley Blue Book - 2023 GMC Sierra 1500 Crew Cab review/specs",
+   "url": "https://www.kbb.com/gmc/sierra-1500-crew-cab/2023/",
+   "type": "publication"
+  },
+  {
+   "name": "Kelley Blue Book - 2024 GMC Sierra 1500 Crew Cab review/specs",
+   "url": "https://www.kbb.com/gmc/sierra-1500-crew-cab/2024/",
+   "type": "publication"
+  },
+  {
+   "name": "Kelley Blue Book - 2024 GMC Sierra EV specs",
+   "url": "https://www.kbb.com/gmc/sierra-ev/2024/specs/",
+   "type": "publication"
+  },
+  {
+   "name": "Motor1 - 2024 GMC Sierra EV debuts in Denali trim with 754 hp",
+   "url": "https://www.motor1.com/news/617393/2024-gmc-sierra-ev-debut/",
+   "type": "publication"
+  },
+  {
+   "name": "The Auto Channel - 1997 GMC K1500 Sierra Extended Cab review",
+   "url": "https://theautochannel.com/vehicles/new/reviews/1997/solo9715.html",
+   "type": "publication"
+  },
+  {
+   "name": "Wikipedia - Chevrolet C/K (fourth generation) (GMC Sierra section and engine table)",
+   "url": "https://en.wikipedia.org/wiki/Chevrolet_C/K_(fourth_generation)",
+   "type": "wikipedia"
+  },
+  {
+   "name": "Wikipedia - Chevrolet Silverado (K2XX and T1XX sections, engine tables)",
+   "url": "https://en.wikipedia.org/wiki/Chevrolet_Silverado",
+   "type": "wikipedia"
+  },
+  {
+   "name": "Wikipedia - Chevrolet Silverado (first generation) (GMT800 Silverado/Sierra, C3/Denali, engine table)",
+   "url": "https://en.wikipedia.org/wiki/Chevrolet_Silverado_(first_generation)",
+   "type": "wikipedia"
+  },
+  {
+   "name": "Wikipedia - Chevrolet Silverado (second generation) (GMT900 Silverado/Sierra engine table)",
+   "url": "https://en.wikipedia.org/wiki/Chevrolet_Silverado_(second_generation)",
+   "type": "wikipedia"
+  },
+  {
+   "name": "Wikipedia - Chevrolet Silverado EV (GMC Sierra EV twin)",
+   "url": "https://en.wikipedia.org/wiki/Chevrolet_Silverado_EV",
+   "type": "wikipedia"
+  }
+ ],
+ "excluded": [
+  {
+   "year": 1999,
+   "gen": "gmt400",
+   "cid": 305,
+   "cyl": 8,
+   "name": "5.0L / 305 V8",
+   "code": "L30",
+   "desc": null,
+   "hp": 230,
+   "hpBasis": "net",
+   "trims": [
+    "Sierra Classic 1500 extended cab, 6.5 ft box, automatic only"
+   ],
+   "note": null,
+   "nhra": false,
+   "sources": [
+    {
+     "name": "Wikipedia - Chevrolet C/K (fourth generation) (GMC Sierra section and engine table)",
+     "url": "https://en.wikipedia.org/wiki/Chevrolet_C/K_(fourth_generation)"
+    },
+    {
+     "name": "EPA fueleconomy.gov vehicle data",
+     "url": "https://www.fueleconomy.gov/feg/download.shtml"
+    }
+   ],
+   "sourceCount": 2,
+   "status": "two_sources_not_nhra",
+   "reason": "2 independent sources",
+   "researchNote": "Old-body (GMT400) carryover sold alongside the new GMT800 Sierra; fleet-oriented. No third source found. Rating 230 disputed as in 1997-98."
+  },
+  {
+   "year": 1999,
+   "gen": "gmt400",
+   "cid": 350,
+   "cyl": 8,
+   "name": "5.7L / 350 V8",
+   "code": "L31",
+   "desc": null,
+   "hp": 255,
+   "hpBasis": "net",
+   "trims": [
+    "Sierra Classic 1500 extended cab, 6.5 ft box, automatic only"
+   ],
+   "note": null,
+   "nhra": false,
+   "sources": [
+    {
+     "name": "Wikipedia - Chevrolet C/K (fourth generation) (GMC Sierra section and engine table)",
+     "url": "https://en.wikipedia.org/wiki/Chevrolet_C/K_(fourth_generation)"
+    },
+    {
+     "name": "EPA fueleconomy.gov vehicle data",
+     "url": "https://www.fueleconomy.gov/feg/download.shtml"
+    }
+   ],
+   "sourceCount": 2,
+   "status": "two_sources_not_nhra",
+   "reason": "2 independent sources",
+   "researchNote": "Old-body (GMT400) carryover sold alongside the new GMT800 Sierra; fleet-oriented. No third source found."
+  },
+  {
+   "year": 2003,
+   "gen": "gmt800",
+   "cid": 325,
+   "cyl": 8,
+   "name": "5.3L / 325 V8",
+   "code": "L59",
+   "desc": null,
+   "hp": 285,
+   "hpBasis": "net",
+   "trims": [
+    "1500 (fleet/E85 markets)"
+   ],
+   "note": null,
+   "nhra": false,
+   "sources": [
+    {
+     "name": "EPA fueleconomy.gov vehicle data",
+     "url": "https://www.fueleconomy.gov/feg/download.shtml"
+    }
+   ],
+   "sourceCount": 1,
+   "status": "disputed",
+   "reason": "1 independent sources",
+   "researchNote": "E85-capable LM7 twin. 2003-2005 rests on EPA only; rating assumed equal to the LM7."
+  },
+  {
+   "year": 2004,
+   "gen": "gmt800",
+   "cid": 325,
+   "cyl": 8,
+   "name": "5.3L / 325 V8",
+   "code": "L59",
+   "desc": null,
+   "hp": 295,
+   "hpBasis": "net",
+   "trims": [
+    "1500 (fleet/E85 markets)"
+   ],
+   "note": null,
+   "nhra": false,
+   "sources": [
+    {
+     "name": "EPA fueleconomy.gov vehicle data",
+     "url": "https://www.fueleconomy.gov/feg/download.shtml"
+    }
+   ],
+   "sourceCount": 1,
+   "status": "disputed",
+   "reason": "1 independent sources",
+   "researchNote": "E85-capable LM7 twin. 2003-2005 rests on EPA only; rating assumed equal to the LM7."
+  },
+  {
+   "year": 2004,
+   "gen": "gmt800",
+   "cid": 325,
+   "cyl": 8,
+   "name": "5.3L / 325 V8",
+   "code": "LM7",
+   "desc": null,
+   "hp": 295,
+   "hpBasis": "net",
+   "trims": [
+    "Sierra 1500 Hybrid (ext cab)"
+   ],
+   "note": null,
+   "nhra": false,
+   "sources": [
+    {
+     "name": "Wikipedia - Chevrolet Silverado (first generation) (GMT800 Silverado/Sierra, C3/Denali, engine table)",
+     "url": "https://en.wikipedia.org/wiki/Chevrolet_Silverado_(first_generation)"
+    },
+    {
+     "name": "EPA fueleconomy.gov vehicle data",
+     "url": "https://www.fueleconomy.gov/feg/download.shtml"
+    }
+   ],
+   "sourceCount": 2,
+   "status": "two_sources_not_nhra",
+   "reason": "2 independent sources",
+   "researchNote": "Belt/flywheel starter-generator mild hybrid; engine rating unchanged."
+  },
+  {
+   "year": 2004,
+   "gen": "gmt800",
+   "cid": 364,
+   "cyl": 8,
+   "name": "6.0L / 364 V8",
+   "code": "LQ4",
+   "desc": null,
+   "hp": 300,
+   "hpBasis": "net",
+   "trims": [
+    "Sierra 1500HD crew cab"
+   ],
+   "note": null,
+   "nhra": false,
+   "sources": [
+    {
+     "name": "Wikipedia - Chevrolet Silverado (first generation) (GMT800 Silverado/Sierra, C3/Denali, engine table)",
+     "url": "https://en.wikipedia.org/wiki/Chevrolet_Silverado_(first_generation)"
+    },
+    {
+     "name": "EPA fueleconomy.gov vehicle data",
+     "url": "https://www.fueleconomy.gov/feg/download.shtml"
+    }
+   ],
+   "sourceCount": 2,
+   "status": "two_sources_not_nhra",
+   "reason": "2 independent sources",
+   "researchNote": "Sierra 1500HD crew cab (3/4-ton chassis, 1500 badge, >8500 lb GVWR); EPA cannot separate it from the Denali/C3 6.0. 2004 GMC sheet covers the 1500 incl. Denali only; 1500HD rests on Wikipedia + EPA."
+  },
+  {
+   "year": 2004,
+   "gen": "gmt800",
+   "cid": 364,
+   "cyl": 8,
+   "name": "6.0L / 364 V8",
+   "code": "LQ9",
+   "desc": null,
+   "hp": 345,
+   "hpBasis": "net",
+   "trims": [
+    "Sierra 1500 ext/crew cab VHO (2004-05), VortecMAX pkg & Performance Edition (2006-07)"
+   ],
+   "note": null,
+   "nhra": false,
+   "sources": [
+    {
+     "name": "Wikipedia - Chevrolet Silverado (first generation) (GMT800 Silverado/Sierra, C3/Denali, engine table)",
+     "url": "https://en.wikipedia.org/wiki/Chevrolet_Silverado_(first_generation)"
+    },
+    {
+     "name": "EPA fueleconomy.gov vehicle data",
+     "url": "https://www.fueleconomy.gov/feg/download.shtml"
+    }
+   ],
+   "sourceCount": 2,
+   "status": "two_sources_not_nhra",
+   "reason": "2 independent sources",
+   "researchNote": "Non-Denali LQ9 option. 2004 availability limited to Texas-area markets (Wikipedia)."
+  },
+  {
+   "year": 2005,
+   "gen": "gmt800",
+   "cid": 325,
+   "cyl": 8,
+   "name": "5.3L / 325 V8",
+   "code": "L59",
+   "desc": null,
+   "hp": 295,
+   "hpBasis": "net",
+   "trims": [
+    "1500 (fleet/E85 markets)"
+   ],
+   "note": null,
+   "nhra": false,
+   "sources": [
+    {
+     "name": "EPA fueleconomy.gov vehicle data",
+     "url": "https://www.fueleconomy.gov/feg/download.shtml"
+    }
+   ],
+   "sourceCount": 1,
+   "status": "disputed",
+   "reason": "1 independent sources",
+   "researchNote": "E85-capable LM7 twin. 2003-2005 rests on EPA only; rating assumed equal to the LM7."
+  },
+  {
+   "year": 2005,
+   "gen": "gmt800",
+   "cid": 325,
+   "cyl": 8,
+   "name": "5.3L / 325 V8",
+   "code": "LM7",
+   "desc": null,
+   "hp": 295,
+   "hpBasis": "net",
+   "trims": [
+    "Sierra 1500 Hybrid (ext cab)"
+   ],
+   "note": null,
+   "nhra": false,
+   "sources": [
+    {
+     "name": "Wikipedia - Chevrolet Silverado (first generation) (GMT800 Silverado/Sierra, C3/Denali, engine table)",
+     "url": "https://en.wikipedia.org/wiki/Chevrolet_Silverado_(first_generation)"
+    },
+    {
+     "name": "EPA fueleconomy.gov vehicle data",
+     "url": "https://www.fueleconomy.gov/feg/download.shtml"
+    }
+   ],
+   "sourceCount": 2,
+   "status": "two_sources_not_nhra",
+   "reason": "2 independent sources",
+   "researchNote": "Belt/flywheel starter-generator mild hybrid; engine rating unchanged."
+  },
+  {
+   "year": 2005,
+   "gen": "gmt800",
+   "cid": 364,
+   "cyl": 8,
+   "name": "6.0L / 364 V8",
+   "code": "LQ4",
+   "desc": null,
+   "hp": 300,
+   "hpBasis": "net",
+   "trims": [
+    "Sierra 1500HD crew cab"
+   ],
+   "note": null,
+   "nhra": false,
+   "sources": [
+    {
+     "name": "Wikipedia - Chevrolet Silverado (first generation) (GMT800 Silverado/Sierra, C3/Denali, engine table)",
+     "url": "https://en.wikipedia.org/wiki/Chevrolet_Silverado_(first_generation)"
+    },
+    {
+     "name": "EPA fueleconomy.gov vehicle data",
+     "url": "https://www.fueleconomy.gov/feg/download.shtml"
+    }
+   ],
+   "sourceCount": 2,
+   "status": "two_sources_not_nhra",
+   "reason": "2 independent sources",
+   "researchNote": "Sierra 1500HD crew cab (3/4-ton chassis, 1500 badge, >8500 lb GVWR); EPA cannot separate it from the Denali/C3 6.0."
+  },
+  {
+   "year": 2005,
+   "gen": "gmt800",
+   "cid": 364,
+   "cyl": 8,
+   "name": "6.0L / 364 V8",
+   "code": "LQ9",
+   "desc": null,
+   "hp": 345,
+   "hpBasis": "net",
+   "trims": [
+    "Sierra 1500 ext/crew cab VHO (2004-05), VortecMAX pkg & Performance Edition (2006-07)"
+   ],
+   "note": null,
+   "nhra": false,
+   "sources": [
+    {
+     "name": "Wikipedia - Chevrolet Silverado (first generation) (GMT800 Silverado/Sierra, C3/Denali, engine table)",
+     "url": "https://en.wikipedia.org/wiki/Chevrolet_Silverado_(first_generation)"
+    },
+    {
+     "name": "EPA fueleconomy.gov vehicle data",
+     "url": "https://www.fueleconomy.gov/feg/download.shtml"
+    }
+   ],
+   "sourceCount": 2,
+   "status": "two_sources_not_nhra",
+   "reason": "2 independent sources",
+   "researchNote": "Non-Denali LQ9 option. 2004 availability limited to Texas-area markets (Wikipedia)."
+  },
+  {
+   "year": 2006,
+   "gen": "gmt800",
+   "cid": 325,
+   "cyl": 8,
+   "name": "5.3L / 325 V8",
+   "code": "L59",
+   "desc": null,
+   "hp": 295,
+   "hpBasis": "net",
+   "trims": [
+    "1500 (fleet/E85 markets)"
+   ],
+   "note": null,
+   "nhra": false,
+   "sources": [
+    {
+     "name": "GM media - 2006 GMC Sierra 1500 overview/specifications (archived)",
+     "url": "https://web.archive.org/web/2006/http://media.gm.com/us/gmc/en/product_services/r_cars/r_c_sierra_classic/index%20LD.html"
+    },
+    {
+     "name": "EPA fueleconomy.gov vehicle data",
+     "url": "https://www.fueleconomy.gov/feg/download.shtml"
+    }
+   ],
+   "sourceCount": 2,
+   "status": "two_sources_not_nhra",
+   "reason": "2 independent sources",
+   "researchNote": "E85-capable LM7 twin."
+  },
+  {
+   "year": 2007,
+   "gen": "gmt800",
+   "cid": 325,
+   "cyl": 8,
+   "name": "5.3L / 325 V8",
+   "code": "L59",
+   "desc": null,
+   "hp": 295,
+   "hpBasis": "net",
+   "trims": [
+    "1500 (fleet/E85 markets) - 2007 Sierra Classic"
+   ],
+   "note": null,
+   "nhra": false,
+   "sources": [
+    {
+     "name": "GM media - 2007 GMC Sierra Classic press kit (archived)",
+     "url": "https://web.archive.org/web/2007/http://media.gm.com/us/gmc/en/product_services/r_cars/r_c_sierra_classic/index.html"
+    },
+    {
+     "name": "EPA fueleconomy.gov vehicle data",
+     "url": "https://www.fueleconomy.gov/feg/download.shtml"
+    }
+   ],
+   "sourceCount": 2,
+   "status": "two_sources_not_nhra",
+   "reason": "2 independent sources",
+   "researchNote": "E85-capable LM7 twin."
+  },
+  {
+   "year": 2016,
+   "gen": "k2xx",
+   "cid": 325,
+   "cyl": 8,
+   "name": "5.3L / 325 V8",
+   "code": "L8B",
+   "desc": null,
+   "hp": 355,
+   "hpBasis": "net",
+   "trims": [
+    "SLT crew cab (regional availability)"
+   ],
+   "note": null,
+   "nhra": false,
+   "sources": [
+    {
+     "name": "Wikipedia - Chevrolet Silverado (K2XX and T1XX sections, engine tables)",
+     "url": "https://en.wikipedia.org/wiki/Chevrolet_Silverado"
+    },
+    {
+     "name": "EPA fueleconomy.gov vehicle data",
+     "url": "https://www.fueleconomy.gov/feg/download.shtml"
+    }
+   ],
+   "sourceCount": 2,
+   "status": "two_sources_not_nhra",
+   "reason": "2 independent sources",
+   "researchNote": "Same rating as the L83."
+  },
+  {
+   "year": 2019,
+   "gen": "k2xx",
+   "cid": 325,
+   "cyl": 8,
+   "name": "5.3L / 325 V8",
+   "code": "L83",
+   "desc": null,
+   "hp": 355,
+   "hpBasis": "net",
+   "trims": [
+    "2019 Sierra Limited (double cab, base/SLE)"
+   ],
+   "note": null,
+   "nhra": false,
+   "sources": [
+    {
+     "name": "Wikipedia - Chevrolet Silverado (K2XX and T1XX sections, engine tables)",
+     "url": "https://en.wikipedia.org/wiki/Chevrolet_Silverado"
+    },
+    {
+     "name": "EPA fueleconomy.gov vehicle data",
+     "url": "https://www.fueleconomy.gov/feg/download.shtml"
+    }
+   ],
+   "sourceCount": 2,
+   "status": "two_sources_not_nhra",
+   "reason": "2 independent sources",
+   "researchNote": "Previous-generation Sierra Limited, 5.3 only, built in Oshawa through Dec 2019. No GM spec sheet found."
+  },
+  {
+   "year": 2019,
+   "gen": "t1",
+   "cid": 183,
+   "cyl": 6,
+   "name": "3.0L / 183 inline-six diesel",
+   "code": "LM2",
+   "desc": null,
+   "hp": 277,
+   "hpBasis": "net",
+   "trims": [
+    "(announced, not built for 2019)"
+   ],
+   "note": null,
+   "nhra": false,
+   "sources": [
+    {
+     "name": "GMC Pressroom - 2019 Sierra 1500 specifications (archived)",
+     "url": "https://web.archive.org/web/2020/https://media.gmc.com/media/us/en/gmc/vehicles/sierra/2019.tab1.html"
+    },
+    {
+     "name": "Wikipedia - Chevrolet Silverado (K2XX and T1XX sections, engine tables)",
+     "url": "https://en.wikipedia.org/wiki/Chevrolet_Silverado"
+    },
+    {
+     "name": "EPA fueleconomy.gov vehicle data",
+     "url": "https://www.fueleconomy.gov/feg/download.shtml"
+    }
+   ],
+   "sourceCount": 3,
+   "diesel": true,
+   "status": "excluded_not_produced",
+   "reason": "excluded_not_produced",
+   "researchNote": "Announced at the 2019 launch but first sold as a 2020 model."
+  },
+  {
+   "year": 2026,
+   "gen": "t1",
+   "cid": null,
+   "cyl": null,
+   "name": "Electric, dual motor",
+   "code": null,
+   "desc": "Ultium dual-motor e4WD",
+   "hp": 760,
+   "hpBasis": "net",
+   "trims": [
+    "Sierra EV Elevation/AT4/Denali"
+   ],
+   "note": null,
+   "nhra": false,
+   "sources": [
+    {
+     "name": "GMC.com - 2026 Sierra EV",
+     "url": "https://www.gmc.com/electric/sierra-ev"
+    },
+    {
+     "name": "Wikipedia - Chevrolet Silverado EV (GMC Sierra EV twin)",
+     "url": "https://en.wikipedia.org/wiki/Chevrolet_Silverado_EV"
+    }
+   ],
+   "sourceCount": 2,
+   "electric": true,
+   "status": "two_sources_not_nhra",
+   "reason": "2 independent sources",
+   "researchNote": "Range 605 hp (Elevation Standard Range) to 760 hp; recorded the top rating. EPA 2026 rows not yet in the input file."
+  }
+ ],
+ "method": "Every engine and year listed here was confirmed by at least three independent sources: the NHRA Stock Car Classification Guides, factory material such as GM Heritage Center information kits and sales brochures, EPA records and established references. Several Wikipedia articles count as one source. Where sources give different ratings, the factory figure is shown and the difference is noted. Factory race-only packages need two sources."
+}

@@ -1,0 +1,138 @@
+{
+ "name": "Toyota F 3.9 I6",
+ "fields": {
+  "displacement_l": {
+   "value": 3.9,
+   "sources": [
+    {
+     "name": "Wikipedia: Toyota F engine",
+     "url": "https://en.wikipedia.org/wiki/Toyota_F_engine",
+     "says": "3.9 L (3878 cc)"
+    },
+    {
+     "name": "Elgin Industries engine parts catalog (technical reference) - engine details",
+     "url": "https://catalog.elginind.com/engine/toyota/default/16d9d18b-b3e6-4c2d-a1a2-e58a285368c4/",
+     "says": "F, FJ: Liters 3.9, CC 3878"
+    },
+    {
+     "name": "Toyota Global 75 Years vehicle lineage: Land Cruiser 40 (Toyota material)",
+     "url": "https://www.toyota-global.com/company/history_of_toyota/75years/vehicle_lineage/car/id60012611/",
+     "says": "Engine code F ... Displacement 3878 cm3"
+    },
+    {
+     "name": "Curbside Classic: 1974 Toyota Land Cruiser (FJ55)",
+     "url": "https://www.curbsideclassic.com/curbside-classics/curbside-classic-1974-toyota-land-cruiser-fj55-soil-tracker/",
+     "says": "inline 6-cyl. 3.9L Type F engine"
+    }
+   ],
+   "note": "3,878 cc"
+  },
+  "displacement_ci": {
+   "value": 237,
+   "sources": [
+    {
+     "name": "Wikipedia: Toyota F engine",
+     "url": "https://en.wikipedia.org/wiki/Toyota_F_engine",
+     "says": "3878 cc"
+    },
+    {
+     "name": "Elgin Industries engine parts catalog (technical reference) - engine details",
+     "url": "https://catalog.elginind.com/engine/toyota/default/16d9d18b-b3e6-4c2d-a1a2-e58a285368c4/",
+     "says": "CC 3878"
+    },
+    {
+     "name": "Toyota Global 75 Years vehicle lineage: Land Cruiser 40 (Toyota material)",
+     "url": "https://www.toyota-global.com/company/history_of_toyota/75years/vehicle_lineage/car/id60012611/",
+     "says": "3878 cm3"
+    }
+   ],
+   "note": "converted = 236.6 ci"
+  },
+  "num_cylinders": {
+   "value": 6,
+   "sources": [
+    {
+     "name": "Wikipedia: Toyota F engine",
+     "url": "https://en.wikipedia.org/wiki/Toyota_F_engine",
+     "says": "inline-6"
+    },
+    {
+     "name": "Elgin Industries engine parts catalog (technical reference) - engine details",
+     "url": "https://catalog.elginind.com/engine/toyota/default/16d9d18b-b3e6-4c2d-a1a2-e58a285368c4/",
+     "says": "Cyl. 6"
+    },
+    {
+     "name": "Toyota Global 75 Years vehicle lineage: Land Cruiser 40 (Toyota material)",
+     "url": "https://www.toyota-global.com/company/history_of_toyota/75years/vehicle_lineage/car/id60012611/",
+     "says": "In-line 6-cylinder, OHV"
+    }
+   ],
+   "note": ""
+  },
+  "configuration": {
+   "value": "inline-6",
+   "sources": [
+    {
+     "name": "Wikipedia: Toyota F engine",
+     "url": "https://en.wikipedia.org/wiki/Toyota_F_engine",
+     "says": "inline-6"
+    },
+    {
+     "name": "Toyota Global 75 Years vehicle lineage: Land Cruiser 40 (Toyota material)",
+     "url": "https://www.toyota-global.com/company/history_of_toyota/75years/vehicle_lineage/car/id60012611/",
+     "says": "In-line 6-cylinder, OHV"
+    },
+    {
+     "name": "Curbside Classic: 1974 Toyota Land Cruiser (FJ55)",
+     "url": "https://www.curbsideclassic.com/curbside-classics/curbside-classic-1974-toyota-land-cruiser-fj55-soil-tracker/",
+     "says": "inline 6-cyl. 3.9L Type F engine"
+    }
+   ],
+   "note": ""
+  },
+  "valvetrain": {
+   "value": "OHV (pushrod), 2 valves per cylinder",
+   "sources": [
+    {
+     "name": "Wikipedia: Toyota F engine",
+     "url": "https://en.wikipedia.org/wiki/Toyota_F_engine",
+     "says": "overhead valves actuated by pushrods from a gear driven camshaft"
+    },
+    {
+     "name": "Toyota Global 75 Years vehicle lineage: Land Cruiser 40 (Toyota material)",
+     "url": "https://www.toyota-global.com/company/history_of_toyota/75years/vehicle_lineage/car/id60012611/",
+     "says": "In-line 6-cylinder, OHV"
+    }
+   ],
+   "note": "",
+   "second_pass": true
+  },
+  "fuel_type": {
+   "value": "gasoline",
+   "sources": [
+    {
+     "name": "Wikipedia: Toyota F engine",
+     "url": "https://en.wikipedia.org/wiki/Toyota_F_engine",
+     "says": "carbureted"
+    },
+    {
+     "name": "Elgin Industries engine parts catalog (technical reference) - engine details",
+     "url": "https://catalog.elginind.com/engine/toyota/default/16d9d18b-b3e6-4c2d-a1a2-e58a285368c4/",
+     "says": "GAS / CARB"
+    },
+    {
+     "name": "Toyota Global: Land Cruiser history - station wagon evolution (Toyota material)",
+     "url": "https://global.toyota/en/mobility/toyota-brand/features/landcruiser/history/evolution/station-wagon.html",
+     "says": "3.9-liter 6-cylinder gasoline engine (Type F)"
+    }
+   ],
+   "note": ""
+  }
+ },
+ "unverified": {
+  "bore_in": "3.5433 in (90.0 mm): Wikipedia only; Elgin lists no bore.",
+  "stroke_in": "4.0000 in (101.6 mm): Wikipedia only.",
+  "block_material": "cast iron: Wikipedia only.",
+  "head_material": "cast iron: Wikipedia only."
+ }
+}

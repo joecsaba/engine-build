@@ -160,7 +160,7 @@ for fn in spec["files"]:
             n = len(fams)
             st = e.get("status")
             race = st == "race_only"
-            electric = st == "electric" or e.get("motor") == "electric"
+            electric = st == "electric" or e.get("motor") == "electric" or e.get("electric") is True
             mk = spec["makeSlug"]
             # a file can carry sister models' engines (Tempest/LeMans in the GTO file)
             tf = spec.get("require_trim", {}).get(fn)
@@ -183,7 +183,12 @@ for fn in spec["files"]:
                     elif re.search(r"\bI-?6\b|inline[- ]?six|straight[- ]six|Hurricane", t, re.I): cyl, layout = 6, "inline-six"
                     elif re.search(r"\bV-?6\b|Pentastar|Cyclone|Duratec 3|3800|60-degree|90-degree V6", t, re.I): cyl, layout = 6, "V6"
                     elif re.search(r"\bV-?10\b", t, re.I): cyl, layout = 10, "V10"
+                    elif re.search(r"boxer|flat[- ]?four|\bH-?4\b", t, re.I): cyl, layout = 4, "flat-four"
+                    # default_layout: a page whose unlisted sizes are all one layout (import fours)
+                    elif spec.get("default_layout"): cyl, layout = spec["default_layout"]
                     else: cyl, layout = 8, "V8"
+                # force_layout: [cylinders/rotors, "layout"] for a whole page (RX-7 rotaries)
+                if spec.get("force_layout"): cyl, layout = spec["force_layout"]
                 # sizes shared by two layouts (Chevy 262: the 1975 V8 and the 4.3 V6):
                 # trust what the entry itself says
                 txt = json.dumps([e.get("name"), e.get("common_name"), e.get("rpo")])
@@ -233,6 +238,11 @@ for fn in spec["files"]:
                 m_ = re.search(spec["desc_regex"], f'{e.get("name") or ""} {e.get("common_name") or ""}', re.I)
                 if m_: rec["desc"] = m_.group(0)
             if is_diesel(e): rec["diesel"] = True
+            # a lower rating with the automatic (Miata, Eclipse, 300ZX) goes in the note
+            ha = e.get("hp_automatic") or e.get("hp_auto") or next((v for t, v in (e.get("hp_by_transmission") or {}).items() if re.search(r"auto", t, re.I)), None)
+            if isinstance(ha, (int, float)) and rec["hp"] and ha != rec["hp"] and e.get("hp_confirmed") is not False:
+                extra = f"{ha} hp with the automatic."
+                rec["note"] = f'{rec["note"]} {extra}' if rec["note"] else extra
             if e.get("hp_disputed") and not rec["note"]:
                 rec["note"] = "Published ratings for this engine vary."
             if electric:
@@ -248,9 +258,10 @@ for fn in spec["files"]:
                    (not x.get("match") or re.search(x["match"], txt_nl, re.I)) for x in spec.get("no_link", [])):
                 rec["noLink"] = True
             for fo in spec.get("family_overrides", []):
-                # optional "diesel": true/false keeps a gas and a diesel of the same size apart
+                # optional "diesel": true/false keeps a gas and a diesel of the same size apart;
+                # optional "match": a regex on the research name/code (B16 vs D16, both 97 ci)
                 if fo["years"][0] <= year <= fo["years"][1] and e["cid"] in fo["cid"] and \
-                        ("diesel" not in fo or bool(is_diesel(e)) == fo["diesel"]):
+                        ("diesel" not in fo or bool(is_diesel(e)) == fo["diesel"]) and                         (not fo.get("match") or re.search(fo["match"], txt_nl, re.I)):
                     rec["linkFamily"] = fo["url"]
             # Corporate engines: say which division built it (Firebird used
             # Chevrolet, Buick and Oldsmobile engines from 1977).
@@ -271,6 +282,13 @@ for fn in spec["files"]:
             ok_status = st in ("confirmed", "two_sources_not_nhra", "three_sources_not_nhra", "nhra_plus_one", "electric") or k in spec.get("include", []) or k in spec.get("ranges", {})
             # second pass (user rule 2026-10-13): two reputable sources that agree exactly
             two_agree = st == "two_sources_agree" and n >= 2
+            # disputed rating: sources agree the engine was offered but not on its hp, so
+            # the row stays and the hp is withheld (user rule 2026-10-13); single-source hp too
+            if (st == "disputed" or e.get("hp_status") == "single_source") and n >= 3:
+                two_agree = True
+                rec["hp"] = None
+                if rec["note"] and rec["note"].endswith("with the automatic."):
+                    rec["note"] = re.sub(r"\s*\d+ hp with the automatic\.$", "", rec["note"]) or None
             ok = k not in spec.get("exclude", {}) and ((ok_status and n >= 3) or two_agree or (race and n >= 2))
             if ok:
                 engines.append(rec)

@@ -1,0 +1,4542 @@
+{
+ "vehicle": "chevrolet-suburban-1960-1991",
+ "scope_note": "Half-ton Suburban only: C14/K14 Carryall (1960-66), C10/K10 (1967-86), R10/V10 (1987-88), R1500/V1500 (1989-91). Independent sources: GM literature (one source, Suburban brochures where archived, otherwise C10-series truck brochures), Hagerty Valuation Tools (one source; C10/K10 Carryall rows 1960-63, C10/K10 Suburban pages 1964-80, 'Suburban' pages 1981-91), Wikipedia (one; generation-level engine lists), EPA (1984+), Old Cars Weekly (1966). NHRA has no Suburban rows. Half-ton Suburbans over 6000 lb GVW (C10 from about 1975) carried heavy-duty-emissions ratings, which often differ from C10 pickup ratings.",
+ "three_quarter_ton_only_note": "Engines in the 3/4-ton (C20/K20, later R/V20 and R/V2500) Suburban but not the half-ton, not recorded: 327 V8 in 1965 (C20/C30 only); 292 six 1973-79 (not in any half-ton Suburban spec table); 454 V8 1980-91 (C20/R20/R2500 2WD only: 1981-82 LE8 210 hp, 1983-86 230-240, 1987-91 TBI 230); 400 small block in 1980 (K20 only); heavy-duty 350 LT9 (1982+) and 2500-series L05 (190-195 hp); 6.2 LL4 heavy-duty diesel (20 series, 148-155 hp); GMC 305 V6 (GMC Suburban only).",
+ "excluded_note": "261 six (1962): Chevrolet's 1962 C10-C40 brochure lists it for all light-duty models, but no Suburban source does. Oldsmobile 350 diesel LF9 (1978-81): C10 pickup only, never in Suburban literature. 350 2-bbl (145 hp, 1974-76): pickup engine, absent from Suburban spec tables. 1969 second '350' in the Suburban brochure: unrated, unconfirmed.",
+ "years": {
+  "1960": [
+   {
+    "gen": "1960-1966",
+    "cid": 235,
+    "hp": 135,
+    "hp_basis": "gross",
+    "rpo": "std",
+    "name": "3.9L / 235 I6",
+    "common_name": "Thriftmaster 235",
+    "trims": [
+     "C14 Suburban (2WD)",
+     "K14 Suburban (4WD)"
+    ],
+    "nhra": false,
+    "sources": [
+     {
+      "name": "Chevrolet 1960 Suburbans and Panels brochure (spec table)",
+      "url": "https://oldcarbrochures.org/United%20States/GM%20Trucks%20and%20Vans/1960_Trucks_and_Vans/1960-Chevrolet-Suburbans-and-Panels-Brochure/index.html",
+      "says": "spec table: Thriftmaster 6-cyl 235.5 cu in, 135 hp"
+     },
+     {
+      "name": "Hagerty Valuation Tools - 1960 Chevrolet C10 (Suburban Carryall rows)",
+      "url": "https://www.hagerty.com/valuation-tools/chevrolet/c10/1960",
+      "says": "C10 1/2 ton 2dr Suburban Carryall 6-cyl. 235.5cid/135hp 1bbl"
+     },
+     {
+      "name": "Hagerty Valuation Tools - 1960 Chevrolet K10 (Suburban Carryall rows)",
+      "url": "https://www.hagerty.com/valuation-tools/chevrolet/k10/1960",
+      "says": "K10 2dr Suburban Carryall 4x4 6-cyl. 235.5cid/135hp 1bbl"
+     },
+     {
+      "name": "Wikipedia - Chevrolet Suburban (fifth/sixth/seventh generation infoboxes)",
+      "url": "https://en.wikipedia.org/wiki/Chevrolet_Suburban",
+      "says": "235 cu in I6 (60-62)"
+     }
+    ],
+    "independent_sources": 3,
+    "hp_sources_agree": true,
+    "status": "three_sources_not_nhra",
+    "note": ""
+   },
+   {
+    "gen": "1960-1966",
+    "cid": 283,
+    "hp": 160,
+    "hp_basis": "gross",
+    "rpo": "",
+    "name": "4.6L / 283 V8",
+    "common_name": "Trademaster 283",
+    "trims": [
+     "C14 Suburban (2WD)",
+     "K14 Suburban (4WD)"
+    ],
+    "nhra": false,
+    "sources": [
+     {
+      "name": "Chevrolet 1960 Suburbans and Panels brochure (spec table)",
+      "url": "https://oldcarbrochures.org/United%20States/GM%20Trucks%20and%20Vans/1960_Trucks_and_Vans/1960-Chevrolet-Suburbans-and-Panels-Brochure/index.html",
+      "says": "spec table: 283 cu in V8 160 hp, 270 lb-ft"
+     },
+     {
+      "name": "Hagerty Valuation Tools - 1960 Chevrolet C10 (Suburban Carryall rows)",
+      "url": "https://www.hagerty.com/valuation-tools/chevrolet/c10/1960",
+      "says": "2dr Suburban Carryall 8-cyl. 283cid/160hp 2bbl"
+     },
+     {
+      "name": "Hagerty Valuation Tools - 1960 Chevrolet K10 (Suburban Carryall rows)",
+      "url": "https://www.hagerty.com/valuation-tools/chevrolet/k10/1960",
+      "says": "2dr Suburban Carryall 4x4 8-cyl. 283cid/160hp 2bbl"
+     },
+     {
+      "name": "Wikipedia - Chevrolet Suburban (fifth/sixth/seventh generation infoboxes)",
+      "url": "https://en.wikipedia.org/wiki/Chevrolet_Suburban",
+      "says": "283 cu in V8 (60-66)"
+     }
+    ],
+    "independent_sources": 3,
+    "hp_sources_agree": true,
+    "status": "three_sources_not_nhra",
+    "note": ""
+   }
+  ],
+  "1961": [
+   {
+    "gen": "1960-1966",
+    "cid": 235,
+    "hp": 135,
+    "hp_basis": "gross",
+    "rpo": "std",
+    "name": "3.9L / 235 I6",
+    "common_name": "Thriftmaster 235",
+    "trims": [
+     "C14 Suburban (2WD)",
+     "K14 Suburban (4WD)"
+    ],
+    "nhra": false,
+    "sources": [
+     {
+      "name": "Chevrolet 1961 Pickups brochure (C10-series engine data; no 1961 Suburban brochure archived)",
+      "url": "https://oldcarbrochures.org/United%20States/GM%20Trucks%20and%20Vans/1961-Trucks-and-Vans/1961-Chevrolet-Pickups-Brochure/index.html",
+      "says": "C10-series engine data: 235 six 135 hp standard; 283 V8 160 hp optional"
+     },
+     {
+      "name": "Hagerty Valuation Tools - 1961 Chevrolet C10 (Suburban Carryall rows)",
+      "url": "https://www.hagerty.com/valuation-tools/chevrolet/c10/1961",
+      "says": "C10 1/2 ton 2dr Suburban Carryall 6-cyl. 235.5cid/135hp 1bbl"
+     },
+     {
+      "name": "Hagerty Valuation Tools - 1961 Chevrolet K10 (Suburban Carryall rows)",
+      "url": "https://www.hagerty.com/valuation-tools/chevrolet/k10/1961",
+      "says": "K10 2dr Suburban Carryall 4x4 6-cyl. 235.5cid/135hp 1bbl"
+     },
+     {
+      "name": "Wikipedia - Chevrolet Suburban (fifth/sixth/seventh generation infoboxes)",
+      "url": "https://en.wikipedia.org/wiki/Chevrolet_Suburban",
+      "says": "235 cu in I6 (60-62)"
+     }
+    ],
+    "independent_sources": 3,
+    "hp_sources_agree": true,
+    "status": "three_sources_not_nhra",
+    "note": ""
+   },
+   {
+    "gen": "1960-1966",
+    "cid": 283,
+    "hp": 160,
+    "hp_basis": "gross",
+    "rpo": "",
+    "name": "4.6L / 283 V8",
+    "common_name": "Trademaster 283",
+    "trims": [
+     "C14 Suburban (2WD)",
+     "K14 Suburban (4WD)"
+    ],
+    "nhra": false,
+    "sources": [
+     {
+      "name": "Chevrolet 1961 Pickups brochure (C10-series engine data; no 1961 Suburban brochure archived)",
+      "url": "https://oldcarbrochures.org/United%20States/GM%20Trucks%20and%20Vans/1961-Trucks-and-Vans/1961-Chevrolet-Pickups-Brochure/index.html",
+      "says": "283 V8 160 hp optional"
+     },
+     {
+      "name": "Hagerty Valuation Tools - 1961 Chevrolet C10 (Suburban Carryall rows)",
+      "url": "https://www.hagerty.com/valuation-tools/chevrolet/c10/1961",
+      "says": "2dr Suburban Carryall 8-cyl. 283cid/160hp 2bbl"
+     },
+     {
+      "name": "Hagerty Valuation Tools - 1961 Chevrolet K10 (Suburban Carryall rows)",
+      "url": "https://www.hagerty.com/valuation-tools/chevrolet/k10/1961",
+      "says": "2dr Suburban Carryall 4x4 8-cyl. 283cid/160hp 2bbl"
+     },
+     {
+      "name": "Wikipedia - Chevrolet Suburban (fifth/sixth/seventh generation infoboxes)",
+      "url": "https://en.wikipedia.org/wiki/Chevrolet_Suburban",
+      "says": "283 cu in V8 (60-66)"
+     }
+    ],
+    "independent_sources": 3,
+    "hp_sources_agree": true,
+    "status": "three_sources_not_nhra",
+    "note": ""
+   }
+  ],
+  "1962": [
+   {
+    "gen": "1960-1966",
+    "cid": 235,
+    "hp": 135,
+    "hp_basis": "gross",
+    "rpo": "std",
+    "name": "3.9L / 235 I6",
+    "common_name": "Thriftmaster 235",
+    "trims": [
+     "C14 Suburban (2WD)",
+     "K14 Suburban (4WD)"
+    ],
+    "nhra": false,
+    "sources": [
+     {
+      "name": "Chevrolet 1962 Series C10-C40 Trucks brochure (power train page; no 1962 Suburban brochure archived)",
+      "url": "https://oldcarbrochures.org/United%20States/GM%20Trucks%20and%20Vans/1962_Trucks_and_Vans/1962-Chevrolet-C10-C40-Trucks-Brochure/index.html",
+      "says": "power train page: 235 six 135 hp standard; 283 V8 160 hp optional"
+     },
+     {
+      "name": "Hagerty Valuation Tools - 1962 Chevrolet C10 (Suburban Carryall rows)",
+      "url": "https://www.hagerty.com/valuation-tools/chevrolet/c10/1962",
+      "says": "C10 1/2 ton 2dr Suburban Carryall 6-cyl. 235.5cid/135hp 1bbl"
+     },
+     {
+      "name": "Hagerty Valuation Tools - 1962 Chevrolet K10 (Suburban Carryall rows)",
+      "url": "https://www.hagerty.com/valuation-tools/chevrolet/k10/1962",
+      "says": "K10 2dr Suburban Carryall 4x4 6-cyl. 235.5cid/135hp 1bbl"
+     },
+     {
+      "name": "Wikipedia - Chevrolet Suburban (fifth/sixth/seventh generation infoboxes)",
+      "url": "https://en.wikipedia.org/wiki/Chevrolet_Suburban",
+      "says": "235 cu in I6 (60-62)"
+     }
+    ],
+    "independent_sources": 3,
+    "hp_sources_agree": true,
+    "status": "three_sources_not_nhra",
+    "note": ""
+   },
+   {
+    "gen": "1960-1966",
+    "cid": 283,
+    "hp": 160,
+    "hp_basis": "gross",
+    "rpo": "",
+    "name": "4.6L / 283 V8",
+    "common_name": "Trademaster 283",
+    "trims": [
+     "C14 Suburban (2WD)",
+     "K14 Suburban (4WD)"
+    ],
+    "nhra": false,
+    "sources": [
+     {
+      "name": "Chevrolet 1962 Series C10-C40 Trucks brochure (power train page; no 1962 Suburban brochure archived)",
+      "url": "https://oldcarbrochures.org/United%20States/GM%20Trucks%20and%20Vans/1962_Trucks_and_Vans/1962-Chevrolet-C10-C40-Trucks-Brochure/index.html",
+      "says": "283 V8 160 hp optional"
+     },
+     {
+      "name": "Hagerty Valuation Tools - 1962 Chevrolet C10 (Suburban Carryall rows)",
+      "url": "https://www.hagerty.com/valuation-tools/chevrolet/c10/1962",
+      "says": "2dr Suburban Carryall 8-cyl. 283cid/160hp 2bbl"
+     },
+     {
+      "name": "Hagerty Valuation Tools - 1962 Chevrolet K10 (Suburban Carryall rows)",
+      "url": "https://www.hagerty.com/valuation-tools/chevrolet/k10/1962",
+      "says": "2dr Suburban Carryall 4x4 8-cyl. 283cid/160hp 2bbl"
+     },
+     {
+      "name": "Wikipedia - Chevrolet Suburban (fifth/sixth/seventh generation infoboxes)",
+      "url": "https://en.wikipedia.org/wiki/Chevrolet_Suburban",
+      "says": "283 cu in V8 (60-66)"
+     }
+    ],
+    "independent_sources": 3,
+    "hp_sources_agree": true,
+    "status": "three_sources_not_nhra",
+    "note": "The 1962 C10-C40 brochure says a 261 six became an extra-cost option for all light-duty models; no Suburban source lists it, so it is not recorded."
+   }
+  ],
+  "1963": [
+   {
+    "gen": "1960-1966",
+    "cid": 230,
+    "hp": 140,
+    "hp_basis": "gross",
+    "rpo": "std",
+    "name": "3.8L / 230 I6",
+    "common_name": "High Torque 230",
+    "trims": [
+     "C14 Suburban (2WD)",
+     "K14 Suburban (4WD)"
+    ],
+    "nhra": false,
+    "sources": [
+     {
+      "name": "Chevrolet 1963 Suburban Carryall folder (engines and specifications)",
+      "url": "https://oldcarbrochures.org/United%20States/GM%20Trucks%20and%20Vans/1963-Trucks-and-Vans/1963%20Suburban%20Carryall/index.html",
+      "says": "High Torque 230 Six standard in Carryall models, 140 hp"
+     },
+     {
+      "name": "Hagerty Valuation Tools - 1963 Chevrolet C10 (Suburban Carryall rows)",
+      "url": "https://www.hagerty.com/valuation-tools/chevrolet/c10/1963",
+      "says": "6-cyl. 230cid/140hp 1bbl"
+     },
+     {
+      "name": "Hagerty Valuation Tools - 1963 Chevrolet K10 (Suburban Carryall rows)",
+      "url": "https://www.hagerty.com/valuation-tools/chevrolet/k10/1963",
+      "says": "6-cyl. 230cid/140hp 1bbl"
+     },
+     {
+      "name": "Wikipedia - Chevrolet Suburban (fifth/sixth/seventh generation infoboxes)",
+      "url": "https://en.wikipedia.org/wiki/Chevrolet_Suburban",
+      "says": "230 cu in I6 (63-65)"
+     }
+    ],
+    "independent_sources": 3,
+    "hp_sources_agree": true,
+    "status": "three_sources_not_nhra",
+    "note": ""
+   },
+   {
+    "gen": "1960-1966",
+    "cid": 292,
+    "hp": 165,
+    "hp_basis": "gross",
+    "rpo": "",
+    "name": "4.8L / 292 I6",
+    "common_name": "High Torque 292",
+    "trims": [
+     "C14 Suburban (2WD)",
+     "K14 Suburban (4WD)"
+    ],
+    "nhra": false,
+    "sources": [
+     {
+      "name": "Chevrolet 1963 Suburban Carryall folder (engines and specifications)",
+      "url": "https://oldcarbrochures.org/United%20States/GM%20Trucks%20and%20Vans/1963-Trucks-and-Vans/1963%20Suburban%20Carryall/index.html",
+      "says": "High Torque 292 Six, heavy-duty big six option, extra cost in Carryall models, 165 hp"
+     },
+     {
+      "name": "Hagerty Valuation Tools - 1963 Chevrolet K10 (Suburban Carryall rows)",
+      "url": "https://www.hagerty.com/valuation-tools/chevrolet/k10/1963",
+      "says": "2dr Suburban Carryall 4x4 6-cyl. 292cid/165hp 1bbl"
+     },
+     {
+      "name": "Wikipedia - Chevrolet Suburban (fifth/sixth/seventh generation infoboxes)",
+      "url": "https://en.wikipedia.org/wiki/Chevrolet_Suburban",
+      "says": "292 cu in I6 (63-66)"
+     }
+    ],
+    "independent_sources": 3,
+    "hp_sources_agree": true,
+    "status": "three_sources_not_nhra",
+    "note": "New for 1963. Hagerty lists it only on its K10 Carryall page."
+   },
+   {
+    "gen": "1960-1966",
+    "cid": 283,
+    "hp": 175,
+    "hp_basis": "gross",
+    "rpo": "",
+    "name": "4.6L / 283 V8",
+    "common_name": "High Torque 283",
+    "trims": [
+     "C14 Suburban (2WD)",
+     "K14 Suburban (4WD)"
+    ],
+    "nhra": false,
+    "sources": [
+     {
+      "name": "Chevrolet 1963 Suburban Carryall folder (engines and specifications)",
+      "url": "https://oldcarbrochures.org/United%20States/GM%20Trucks%20and%20Vans/1963-Trucks-and-Vans/1963%20Suburban%20Carryall/index.html",
+      "says": "283 V8 optional in all Carryall models, 175 hp"
+     },
+     {
+      "name": "Hagerty Valuation Tools - 1963 Chevrolet C10 (Suburban Carryall rows)",
+      "url": "https://www.hagerty.com/valuation-tools/chevrolet/c10/1963",
+      "says": "8-cyl. 283cid/175hp 2bbl"
+     },
+     {
+      "name": "Hagerty Valuation Tools - 1963 Chevrolet K10 (Suburban Carryall rows)",
+      "url": "https://www.hagerty.com/valuation-tools/chevrolet/k10/1963",
+      "says": "8-cyl. 283cid/175hp 2bbl"
+     },
+     {
+      "name": "Wikipedia - Chevrolet Suburban (fifth/sixth/seventh generation infoboxes)",
+      "url": "https://en.wikipedia.org/wiki/Chevrolet_Suburban",
+      "says": "283 cu in V8 (60-66)"
+     }
+    ],
+    "independent_sources": 3,
+    "hp_sources_agree": true,
+    "status": "three_sources_not_nhra",
+    "note": ""
+   }
+  ],
+  "1964": [
+   {
+    "gen": "1960-1966",
+    "cid": 230,
+    "hp": 140,
+    "hp_basis": "gross",
+    "rpo": "std",
+    "name": "3.8L / 230 I6",
+    "common_name": "High Torque 230",
+    "trims": [
+     "C14 Suburban (2WD)",
+     "K14 Suburban (4WD)"
+    ],
+    "nhra": false,
+    "sources": [
+     {
+      "name": "Chevrolet 1964 Suburban Carryall brochure (engines and specifications)",
+      "url": "https://oldcarbrochures.org/United%20States/GM%20Trucks%20and%20Vans/1964_Trucks_and_Vans/1964%20Suburban%20Carryall/index.html",
+      "says": "ENGINE: High Torque 230 Six; gross horsepower 140"
+     },
+     {
+      "name": "Hagerty Valuation Tools - 1964 Chevrolet C10 Suburban",
+      "url": "https://www.hagerty.com/valuation-tools/chevrolet/c10_suburban/1964",
+      "says": "6-cyl. 230cid/140hp 1bbl"
+     },
+     {
+      "name": "Hagerty Valuation Tools - 1964 Chevrolet K10 Suburban",
+      "url": "https://www.hagerty.com/valuation-tools/chevrolet/k10_suburban/1964",
+      "says": "6-cyl. 230cid/140hp 1bbl"
+     },
+     {
+      "name": "Wikipedia - Chevrolet Suburban (fifth/sixth/seventh generation infoboxes)",
+      "url": "https://en.wikipedia.org/wiki/Chevrolet_Suburban",
+      "says": "230 cu in I6 (63-65)"
+     }
+    ],
+    "independent_sources": 3,
+    "hp_sources_agree": true,
+    "status": "three_sources_not_nhra",
+    "note": ""
+   },
+   {
+    "gen": "1960-1966",
+    "cid": 292,
+    "hp": 170,
+    "hp_basis": "gross",
+    "rpo": "",
+    "name": "4.8L / 292 I6",
+    "common_name": "High Torque 292",
+    "trims": [
+     "C14 Suburban (2WD)",
+     "K14 Suburban (4WD)"
+    ],
+    "nhra": false,
+    "sources": [
+     {
+      "name": "Chevrolet 1964 Suburban Carryall brochure (engines and specifications)",
+      "url": "https://oldcarbrochures.org/United%20States/GM%20Trucks%20and%20Vans/1964_Trucks_and_Vans/1964%20Suburban%20Carryall/index.html",
+      "says": "ENGINE (optional): 170-hp 292 Six"
+     },
+     {
+      "name": "Hagerty Valuation Tools - 1964 Chevrolet C10 Suburban",
+      "url": "https://www.hagerty.com/valuation-tools/chevrolet/c10_suburban/1964",
+      "says": "6-cyl. 292cid/165hp 1bbl"
+     },
+     {
+      "name": "Hagerty Valuation Tools - 1964 Chevrolet K10 Suburban",
+      "url": "https://www.hagerty.com/valuation-tools/chevrolet/k10_suburban/1964",
+      "says": "6-cyl. 292cid/165hp 1bbl"
+     },
+     {
+      "name": "Wikipedia - Chevrolet Suburban (fifth/sixth/seventh generation infoboxes)",
+      "url": "https://en.wikipedia.org/wiki/Chevrolet_Suburban",
+      "says": "292 cu in I6 (63-66)"
+     }
+    ],
+    "independent_sources": 3,
+    "hp_sources_agree": false,
+    "status": "three_sources_not_nhra",
+    "note": "HP: Hagerty gives 165 (the 1963 rating); Chevrolet's 1964 Suburban brochure gives 170, which is used."
+   },
+   {
+    "gen": "1960-1966",
+    "cid": 283,
+    "hp": 175,
+    "hp_basis": "gross",
+    "rpo": "",
+    "name": "4.6L / 283 V8",
+    "common_name": "High Torque 283",
+    "trims": [
+     "C14 Suburban (2WD)",
+     "K14 Suburban (4WD)"
+    ],
+    "nhra": false,
+    "sources": [
+     {
+      "name": "Chevrolet 1964 Suburban Carryall brochure (engines and specifications)",
+      "url": "https://oldcarbrochures.org/United%20States/GM%20Trucks%20and%20Vans/1964_Trucks_and_Vans/1964%20Suburban%20Carryall/index.html",
+      "says": "ENGINE (optional): 175-hp 283 V8"
+     },
+     {
+      "name": "Hagerty Valuation Tools - 1964 Chevrolet C10 Suburban",
+      "url": "https://www.hagerty.com/valuation-tools/chevrolet/c10_suburban/1964",
+      "says": "8-cyl. 283cid/175hp 2bbl"
+     },
+     {
+      "name": "Hagerty Valuation Tools - 1964 Chevrolet K10 Suburban",
+      "url": "https://www.hagerty.com/valuation-tools/chevrolet/k10_suburban/1964",
+      "says": "8-cyl. 283cid/175hp 2bbl"
+     },
+     {
+      "name": "Wikipedia - Chevrolet Suburban (fifth/sixth/seventh generation infoboxes)",
+      "url": "https://en.wikipedia.org/wiki/Chevrolet_Suburban",
+      "says": "283 cu in V8 (60-66)"
+     }
+    ],
+    "independent_sources": 3,
+    "hp_sources_agree": true,
+    "status": "three_sources_not_nhra",
+    "note": ""
+   }
+  ],
+  "1965": [
+   {
+    "gen": "1960-1966",
+    "cid": 230,
+    "hp": 140,
+    "hp_basis": "gross",
+    "rpo": "std",
+    "name": "3.8L / 230 I6",
+    "common_name": "High Torque 230",
+    "trims": [
+     "C14 Suburban (2WD)",
+     "K14 Suburban (4WD)"
+    ],
+    "nhra": false,
+    "sources": [
+     {
+      "name": "Chevrolet 1965 Suburban Carryall brochure (power and drive line, specifications)",
+      "url": "https://oldcarbrochures.org/United%20States/GM%20Trucks%20and%20Vans/1965_Trucks_And_Vans/1965-Chevrolet-Suburban-Carryall-Brochure/index.html",
+      "says": "Standard engine for the Carryall is the 140-hp 230-cu-in Six"
+     },
+     {
+      "name": "Hagerty Valuation Tools - 1965 Chevrolet C10 Suburban",
+      "url": "https://www.hagerty.com/valuation-tools/chevrolet/c10_suburban/1965",
+      "says": "6-cyl. 230cid/140hp 1bbl"
+     },
+     {
+      "name": "Hagerty Valuation Tools - 1965 Chevrolet K10 Suburban",
+      "url": "https://www.hagerty.com/valuation-tools/chevrolet/k10_suburban/1965",
+      "says": "6-cyl. 230cid/140hp 1bbl"
+     },
+     {
+      "name": "Wikipedia - Chevrolet Suburban (fifth/sixth/seventh generation infoboxes)",
+      "url": "https://en.wikipedia.org/wiki/Chevrolet_Suburban",
+      "says": "230 cu in I6 (63-65)"
+     }
+    ],
+    "independent_sources": 3,
+    "hp_sources_agree": true,
+    "status": "three_sources_not_nhra",
+    "note": ""
+   },
+   {
+    "gen": "1960-1966",
+    "cid": 292,
+    "hp": 170,
+    "hp_basis": "gross",
+    "rpo": "",
+    "name": "4.8L / 292 I6",
+    "common_name": "High Torque 292",
+    "trims": [
+     "C14 Suburban (2WD)",
+     "K14 Suburban (4WD)"
+    ],
+    "nhra": false,
+    "sources": [
+     {
+      "name": "Chevrolet 1965 Suburban Carryall brochure (power and drive line, specifications)",
+      "url": "https://oldcarbrochures.org/United%20States/GM%20Trucks%20and%20Vans/1965_Trucks_And_Vans/1965-Chevrolet-Suburban-Carryall-Brochure/index.html",
+      "says": "High Torque 292 Six optional extra-cost, 170-hp"
+     },
+     {
+      "name": "Hagerty Valuation Tools - 1965 Chevrolet C10 Suburban",
+      "url": "https://www.hagerty.com/valuation-tools/chevrolet/c10_suburban/1965",
+      "says": "6-cyl. 292cid/165hp 1bbl"
+     },
+     {
+      "name": "Hagerty Valuation Tools - 1965 Chevrolet K10 Suburban",
+      "url": "https://www.hagerty.com/valuation-tools/chevrolet/k10_suburban/1965",
+      "says": "6-cyl. 292cid/165hp 1bbl"
+     },
+     {
+      "name": "Wikipedia - Chevrolet Suburban (fifth/sixth/seventh generation infoboxes)",
+      "url": "https://en.wikipedia.org/wiki/Chevrolet_Suburban",
+      "says": "292 cu in I6 (63-66)"
+     }
+    ],
+    "independent_sources": 3,
+    "hp_sources_agree": false,
+    "status": "three_sources_not_nhra",
+    "note": "HP: Hagerty gives 165 (the 1963 rating); Chevrolet's 1965 Suburban brochure gives 170, which is used."
+   },
+   {
+    "gen": "1960-1966",
+    "cid": 283,
+    "hp": 175,
+    "hp_basis": "gross",
+    "rpo": "",
+    "name": "4.6L / 283 V8",
+    "common_name": "High Torque 283",
+    "trims": [
+     "C14 Suburban (2WD)",
+     "K14 Suburban (4WD)"
+    ],
+    "nhra": false,
+    "sources": [
+     {
+      "name": "Chevrolet 1965 Suburban Carryall brochure (power and drive line, specifications)",
+      "url": "https://oldcarbrochures.org/United%20States/GM%20Trucks%20and%20Vans/1965_Trucks_And_Vans/1965-Chevrolet-Suburban-Carryall-Brochure/index.html",
+      "says": "High Torque 283 V8 optional extra-cost, 175 hp"
+     },
+     {
+      "name": "Hagerty Valuation Tools - 1965 Chevrolet C10 Suburban",
+      "url": "https://www.hagerty.com/valuation-tools/chevrolet/c10_suburban/1965",
+      "says": "8-cyl. 283cid/175hp 2bbl"
+     },
+     {
+      "name": "Hagerty Valuation Tools - 1965 Chevrolet K10 Suburban",
+      "url": "https://www.hagerty.com/valuation-tools/chevrolet/k10_suburban/1965",
+      "says": "8-cyl. 283cid/175hp 2bbl"
+     },
+     {
+      "name": "Wikipedia - Chevrolet Suburban (fifth/sixth/seventh generation infoboxes)",
+      "url": "https://en.wikipedia.org/wiki/Chevrolet_Suburban",
+      "says": "283 cu in V8 (60-66)"
+     }
+    ],
+    "independent_sources": 3,
+    "hp_sources_agree": true,
+    "status": "three_sources_not_nhra",
+    "note": "The mid-1965 327 was a C20/C30-only engine (1965 Pickups brochure R-1), not a half-ton Suburban engine."
+   }
+  ],
+  "1966": [
+   {
+    "gen": "1960-1966",
+    "cid": 250,
+    "hp": 155,
+    "hp_basis": "gross",
+    "rpo": "std",
+    "name": "4.1L / 250 I6",
+    "common_name": "High Torque 250",
+    "trims": [
+     "C14 Suburban (2WD)",
+     "K14 Suburban (4WD)"
+    ],
+    "nhra": false,
+    "sources": [
+     {
+      "name": "Chevrolet 1966 Pickups and Stakes brochure R-1 (C10-series engine table; no 1966 Suburban brochure archived)",
+      "url": "https://oldcarbrochures.org/United%20States/GM%20Trucks%20and%20Vans/1966-Trucks-and-Vans/1966-Chevrolet-Pickups-and-Stakes-Brochure/index.html",
+      "says": "250 six 155 hp standard, C10 series"
+     },
+     {
+      "name": "Hagerty Valuation Tools - 1966 Chevrolet C10 Suburban",
+      "url": "https://www.hagerty.com/valuation-tools/chevrolet/c10_suburban/1966",
+      "says": "6-cyl. 250cid/155hp 1bbl"
+     },
+     {
+      "name": "Hagerty Valuation Tools - 1966 Chevrolet K10 Suburban",
+      "url": "https://www.hagerty.com/valuation-tools/chevrolet/k10_suburban/1966",
+      "says": "6-cyl. 250cid/155hp 1bbl"
+     },
+     {
+      "name": "Old Cars Weekly - Car of the Week: 1966 Chevrolet Suburban Carryall (Al Rogers)",
+      "url": "https://oldcarsweekly.com/features/car-of-the-week-1966-chevrolet-suburban-carryall",
+      "says": "standard 250-cid inline six ... factory rated at 155 hp"
+     },
+     {
+      "name": "Wikipedia - Chevrolet Suburban (fifth/sixth/seventh generation infoboxes)",
+      "url": "https://en.wikipedia.org/wiki/Chevrolet_Suburban",
+      "says": "250 cu in I6 (66)"
+     }
+    ],
+    "independent_sources": 4,
+    "hp_sources_agree": true,
+    "status": "three_sources_not_nhra",
+    "note": ""
+   },
+   {
+    "gen": "1960-1966",
+    "cid": 292,
+    "hp": 170,
+    "hp_basis": "gross",
+    "rpo": "",
+    "name": "4.8L / 292 I6",
+    "common_name": "High Torque 292",
+    "trims": [
+     "C14 Suburban (2WD)",
+     "K14 Suburban (4WD)"
+    ],
+    "nhra": false,
+    "sources": [
+     {
+      "name": "Chevrolet 1966 Pickups and Stakes brochure R-1 (C10-series engine table; no 1966 Suburban brochure archived)",
+      "url": "https://oldcarbrochures.org/United%20States/GM%20Trucks%20and%20Vans/1966-Trucks-and-Vans/1966-Chevrolet-Pickups-and-Stakes-Brochure/index.html",
+      "says": "292 six 170 hp optional"
+     },
+     {
+      "name": "Hagerty Valuation Tools - 1966 Chevrolet C10 Suburban",
+      "url": "https://www.hagerty.com/valuation-tools/chevrolet/c10_suburban/1966",
+      "says": "6-cyl. 292cid/170hp 1bbl"
+     },
+     {
+      "name": "Hagerty Valuation Tools - 1966 Chevrolet K10 Suburban",
+      "url": "https://www.hagerty.com/valuation-tools/chevrolet/k10_suburban/1966",
+      "says": "6-cyl. 292cid/170hp 1bbl"
+     },
+     {
+      "name": "Old Cars Weekly - Car of the Week: 1966 Chevrolet Suburban Carryall (Al Rogers)",
+      "url": "https://oldcarsweekly.com/features/car-of-the-week-1966-chevrolet-suburban-carryall",
+      "says": "A 292-cid inline six produced 170 hp"
+     },
+     {
+      "name": "Wikipedia - Chevrolet Suburban (fifth/sixth/seventh generation infoboxes)",
+      "url": "https://en.wikipedia.org/wiki/Chevrolet_Suburban",
+      "says": "292 cu in I6 (63-66)"
+     }
+    ],
+    "independent_sources": 4,
+    "hp_sources_agree": true,
+    "status": "three_sources_not_nhra",
+    "note": ""
+   },
+   {
+    "gen": "1960-1966",
+    "cid": 283,
+    "hp": 175,
+    "hp_basis": "gross",
+    "rpo": "",
+    "name": "4.6L / 283 V8",
+    "common_name": "High Torque 283",
+    "trims": [
+     "C14 Suburban (2WD)",
+     "K14 Suburban (4WD)"
+    ],
+    "nhra": false,
+    "sources": [
+     {
+      "name": "Chevrolet 1966 Pickups and Stakes brochure R-1 (C10-series engine table; no 1966 Suburban brochure archived)",
+      "url": "https://oldcarbrochures.org/United%20States/GM%20Trucks%20and%20Vans/1966-Trucks-and-Vans/1966-Chevrolet-Pickups-and-Stakes-Brochure/index.html",
+      "says": "283 V8 175 hp optional"
+     },
+     {
+      "name": "Hagerty Valuation Tools - 1966 Chevrolet C10 Suburban",
+      "url": "https://www.hagerty.com/valuation-tools/chevrolet/c10_suburban/1966",
+      "says": "8-cyl. 283cid/175hp 2bbl"
+     },
+     {
+      "name": "Hagerty Valuation Tools - 1966 Chevrolet K10 Suburban",
+      "url": "https://www.hagerty.com/valuation-tools/chevrolet/k10_suburban/1966",
+      "says": "8-cyl. 283cid/175hp 2bbl"
+     },
+     {
+      "name": "Old Cars Weekly - Car of the Week: 1966 Chevrolet Suburban Carryall (Al Rogers)",
+      "url": "https://oldcarsweekly.com/features/car-of-the-week-1966-chevrolet-suburban-carryall",
+      "says": "the familiar 283 cid returned with its 175 hp"
+     },
+     {
+      "name": "Wikipedia - Chevrolet Suburban (fifth/sixth/seventh generation infoboxes)",
+      "url": "https://en.wikipedia.org/wiki/Chevrolet_Suburban",
+      "says": "283 cu in V8 (60-66)"
+     }
+    ],
+    "independent_sources": 4,
+    "hp_sources_agree": true,
+    "status": "three_sources_not_nhra",
+    "note": ""
+   },
+   {
+    "gen": "1960-1966",
+    "cid": 327,
+    "hp": 220,
+    "hp_basis": "gross",
+    "rpo": "",
+    "name": "5.4L / 327 V8",
+    "common_name": "High Torque 327",
+    "trims": [
+     "C14 Suburban (2WD only)"
+    ],
+    "nhra": false,
+    "sources": [
+     {
+      "name": "Chevrolet 1966 Pickups and Stakes brochure R-1 (C10-series engine table; no 1966 Suburban brochure archived)",
+      "url": "https://oldcarbrochures.org/United%20States/GM%20Trucks%20and%20Vans/1966-Trucks-and-Vans/1966-Chevrolet-Pickups-and-Stakes-Brochure/index.html",
+      "says": "327 V8 220 hp optional"
+     },
+     {
+      "name": "Hagerty Valuation Tools - 1966 Chevrolet C10 Suburban",
+      "url": "https://www.hagerty.com/valuation-tools/chevrolet/c10_suburban/1966",
+      "says": "8-cyl. 327cid/220hp 4bbl (C10 Suburban page; absent from K10 page)"
+     },
+     {
+      "name": "Old Cars Weekly - Car of the Week: 1966 Chevrolet Suburban Carryall (Al Rogers)",
+      "url": "https://oldcarsweekly.com/features/car-of-the-week-1966-chevrolet-suburban-carryall",
+      "says": "a newly designed 327 cid with 220 hp"
+     },
+     {
+      "name": "Wikipedia - Chevrolet Suburban (fifth/sixth/seventh generation infoboxes)",
+      "url": "https://en.wikipedia.org/wiki/Chevrolet_Suburban",
+      "says": "327 cu in V8 (66)"
+     }
+    ],
+    "independent_sources": 4,
+    "hp_sources_agree": true,
+    "status": "three_sources_not_nhra",
+    "note": "No source places the 327 in the 1966 K10 Suburban."
+   }
+  ],
+  "1967": [
+   {
+    "gen": "1967-1972",
+    "cid": 250,
+    "hp": 155,
+    "hp_basis": "gross",
+    "rpo": "std",
+    "name": "4.1L / 250 I6",
+    "common_name": "High Torque 250",
+    "trims": [
+     "C10 Suburban",
+     "K10 Suburban"
+    ],
+    "nhra": false,
+    "sources": [
+     {
+      "name": "Chevrolet 1967 Suburbans and Panels brochure (High Torque Engines page, Engine Performance Data table)",
+      "url": "https://oldcarbrochures.org/United%20States/GM%20Trucks%20and%20Vans/1967_Trucks_and_Vans/1967_Chevrolet_Suburbans_and_Panels_Brochure/index.html",
+      "says": "Engine Performance Data: 250 Six, 155 hp gross, standard"
+     },
+     {
+      "name": "Hagerty Valuation Tools - 1967 Chevrolet C10 Suburban",
+      "url": "https://www.hagerty.com/valuation-tools/chevrolet/c10_suburban/1967",
+      "says": "250cid/155hp"
+     },
+     {
+      "name": "Hagerty Valuation Tools - 1967 Chevrolet K10 Suburban",
+      "url": "https://www.hagerty.com/valuation-tools/chevrolet/k10_suburban/1967",
+      "says": "250cid/155hp"
+     },
+     {
+      "name": "Wikipedia - Chevrolet Suburban (fifth/sixth/seventh generation infoboxes)",
+      "url": "https://en.wikipedia.org/wiki/Chevrolet_Suburban",
+      "says": "sixth-gen engine list includes this engine (no per-year breakdown)"
+     }
+    ],
+    "independent_sources": 3,
+    "hp_sources_agree": true,
+    "status": "three_sources_not_nhra",
+    "note": ""
+   },
+   {
+    "gen": "1967-1972",
+    "cid": 292,
+    "hp": 170,
+    "hp_basis": "gross",
+    "rpo": "",
+    "name": "4.8L / 292 I6",
+    "common_name": "High Torque 292",
+    "trims": [
+     "C10 Suburban",
+     "K10 Suburban"
+    ],
+    "nhra": false,
+    "sources": [
+     {
+      "name": "Chevrolet 1967 Suburbans and Panels brochure (High Torque Engines page, Engine Performance Data table)",
+      "url": "https://oldcarbrochures.org/United%20States/GM%20Trucks%20and%20Vans/1967_Trucks_and_Vans/1967_Chevrolet_Suburbans_and_Panels_Brochure/index.html",
+      "says": "Engine Performance Data: 292 Six, 170 hp gross"
+     },
+     {
+      "name": "Hagerty Valuation Tools - 1967 Chevrolet C10 Suburban",
+      "url": "https://www.hagerty.com/valuation-tools/chevrolet/c10_suburban/1967",
+      "says": "292cid/170hp"
+     },
+     {
+      "name": "Hagerty Valuation Tools - 1967 Chevrolet K10 Suburban",
+      "url": "https://www.hagerty.com/valuation-tools/chevrolet/k10_suburban/1967",
+      "says": "292cid/170hp"
+     },
+     {
+      "name": "Wikipedia - Chevrolet Suburban (fifth/sixth/seventh generation infoboxes)",
+      "url": "https://en.wikipedia.org/wiki/Chevrolet_Suburban",
+      "says": "sixth-gen engine list includes this engine (no per-year breakdown)"
+     }
+    ],
+    "independent_sources": 3,
+    "hp_sources_agree": true,
+    "status": "three_sources_not_nhra",
+    "note": ""
+   },
+   {
+    "gen": "1967-1972",
+    "cid": 283,
+    "hp": 175,
+    "hp_basis": "gross",
+    "rpo": "",
+    "name": "4.6L / 283 V8",
+    "common_name": "High Torque 283",
+    "trims": [
+     "C10 Suburban",
+     "K10 Suburban"
+    ],
+    "nhra": false,
+    "sources": [
+     {
+      "name": "Chevrolet 1967 Suburbans and Panels brochure (High Torque Engines page, Engine Performance Data table)",
+      "url": "https://oldcarbrochures.org/United%20States/GM%20Trucks%20and%20Vans/1967_Trucks_and_Vans/1967_Chevrolet_Suburbans_and_Panels_Brochure/index.html",
+      "says": "Engine Performance Data: 283 V8, 175 hp gross"
+     },
+     {
+      "name": "Hagerty Valuation Tools - 1967 Chevrolet C10 Suburban",
+      "url": "https://www.hagerty.com/valuation-tools/chevrolet/c10_suburban/1967",
+      "says": "283cid/175hp"
+     },
+     {
+      "name": "Hagerty Valuation Tools - 1967 Chevrolet K10 Suburban",
+      "url": "https://www.hagerty.com/valuation-tools/chevrolet/k10_suburban/1967",
+      "says": "283cid/175hp"
+     },
+     {
+      "name": "Wikipedia - Chevrolet Suburban (fifth/sixth/seventh generation infoboxes)",
+      "url": "https://en.wikipedia.org/wiki/Chevrolet_Suburban",
+      "says": "sixth-gen engine list includes this engine (no per-year breakdown)"
+     }
+    ],
+    "independent_sources": 3,
+    "hp_sources_agree": true,
+    "status": "three_sources_not_nhra",
+    "note": "Last year of the 283."
+   },
+   {
+    "gen": "1967-1972",
+    "cid": 327,
+    "hp": 220,
+    "hp_basis": "gross",
+    "rpo": "",
+    "name": "5.4L / 327 V8",
+    "common_name": "High Torque 327",
+    "trims": [
+     "C10 Suburban",
+     "K10 Suburban"
+    ],
+    "nhra": false,
+    "sources": [
+     {
+      "name": "Chevrolet 1967 Suburbans and Panels brochure (High Torque Engines page, Engine Performance Data table)",
+      "url": "https://oldcarbrochures.org/United%20States/GM%20Trucks%20and%20Vans/1967_Trucks_and_Vans/1967_Chevrolet_Suburbans_and_Panels_Brochure/index.html",
+      "says": "Engine Performance Data: 327 V8, 220 hp gross"
+     },
+     {
+      "name": "Hagerty Valuation Tools - 1967 Chevrolet C10 Suburban",
+      "url": "https://www.hagerty.com/valuation-tools/chevrolet/c10_suburban/1967",
+      "says": "327cid/220hp"
+     },
+     {
+      "name": "Hagerty Valuation Tools - 1967 Chevrolet K10 Suburban",
+      "url": "https://www.hagerty.com/valuation-tools/chevrolet/k10_suburban/1967",
+      "says": "327cid/220hp"
+     },
+     {
+      "name": "Wikipedia - Chevrolet Suburban (fifth/sixth/seventh generation infoboxes)",
+      "url": "https://en.wikipedia.org/wiki/Chevrolet_Suburban",
+      "says": "sixth-gen engine list includes this engine (no per-year breakdown)"
+     }
+    ],
+    "independent_sources": 3,
+    "hp_sources_agree": true,
+    "status": "three_sources_not_nhra",
+    "note": ""
+   }
+  ],
+  "1968": [
+   {
+    "gen": "1967-1972",
+    "cid": 250,
+    "hp": 155,
+    "hp_basis": "gross",
+    "rpo": "std",
+    "name": "4.1L / 250 I6",
+    "common_name": "High Torque 250",
+    "trims": [
+     "C10 Suburban",
+     "K10 Suburban"
+    ],
+    "nhra": false,
+    "sources": [
+     {
+      "name": "Chevrolet 1968 Pickups brochure (engine specs p.14; no 1968 Suburban brochure archived)",
+      "url": "https://oldcarbrochures.org/United%20States/GM%20Trucks%20and%20Vans/1968-Trucks-and-Vans/1968-Chevrolet-Pickups-Brochure/index.html",
+      "says": "250 six 155 hp standard"
+     },
+     {
+      "name": "Hagerty Valuation Tools - 1968 Chevrolet C10 Suburban",
+      "url": "https://www.hagerty.com/valuation-tools/chevrolet/c10_suburban/1968",
+      "says": "6-cyl. 250cid/155hp 1bbl"
+     },
+     {
+      "name": "Hagerty Valuation Tools - 1968 Chevrolet K10 Suburban",
+      "url": "https://www.hagerty.com/valuation-tools/chevrolet/k10_suburban/1968",
+      "says": "6-cyl. 250cid/155hp 1bbl"
+     },
+     {
+      "name": "Wikipedia - Chevrolet Suburban (fifth/sixth/seventh generation infoboxes)",
+      "url": "https://en.wikipedia.org/wiki/Chevrolet_Suburban",
+      "says": "sixth-gen engine list includes this engine (no per-year breakdown)"
+     }
+    ],
+    "independent_sources": 3,
+    "hp_sources_agree": true,
+    "status": "three_sources_not_nhra",
+    "note": ""
+   },
+   {
+    "gen": "1967-1972",
+    "cid": 292,
+    "hp": 170,
+    "hp_basis": "gross",
+    "rpo": "",
+    "name": "4.8L / 292 I6",
+    "common_name": "High Torque 292",
+    "trims": [
+     "C10 Suburban",
+     "K10 Suburban"
+    ],
+    "nhra": false,
+    "sources": [
+     {
+      "name": "Chevrolet 1968 Pickups brochure (engine specs p.14; no 1968 Suburban brochure archived)",
+      "url": "https://oldcarbrochures.org/United%20States/GM%20Trucks%20and%20Vans/1968-Trucks-and-Vans/1968-Chevrolet-Pickups-Brochure/index.html",
+      "says": "292 six 170 hp optional"
+     },
+     {
+      "name": "Hagerty Valuation Tools - 1968 Chevrolet C10 Suburban",
+      "url": "https://www.hagerty.com/valuation-tools/chevrolet/c10_suburban/1968",
+      "says": "6-cyl. 292cid/170hp 1bbl"
+     },
+     {
+      "name": "Hagerty Valuation Tools - 1968 Chevrolet K10 Suburban",
+      "url": "https://www.hagerty.com/valuation-tools/chevrolet/k10_suburban/1968",
+      "says": "6-cyl. 292cid/170hp 1bbl"
+     },
+     {
+      "name": "Wikipedia - Chevrolet Suburban (fifth/sixth/seventh generation infoboxes)",
+      "url": "https://en.wikipedia.org/wiki/Chevrolet_Suburban",
+      "says": "sixth-gen engine list includes this engine (no per-year breakdown)"
+     }
+    ],
+    "independent_sources": 3,
+    "hp_sources_agree": true,
+    "status": "three_sources_not_nhra",
+    "note": ""
+   },
+   {
+    "gen": "1967-1972",
+    "cid": 307,
+    "hp": 200,
+    "hp_basis": "gross",
+    "rpo": "",
+    "name": "5.0L / 307 V8",
+    "common_name": "High Torque 307",
+    "trims": [
+     "C10 Suburban",
+     "K10 Suburban"
+    ],
+    "nhra": false,
+    "sources": [
+     {
+      "name": "Chevrolet 1968 Pickups brochure (engine specs p.14; no 1968 Suburban brochure archived)",
+      "url": "https://oldcarbrochures.org/United%20States/GM%20Trucks%20and%20Vans/1968-Trucks-and-Vans/1968-Chevrolet-Pickups-Brochure/index.html",
+      "says": "307 V8 200 hp, standard V8"
+     },
+     {
+      "name": "Hagerty Valuation Tools - 1968 Chevrolet C10 Suburban",
+      "url": "https://www.hagerty.com/valuation-tools/chevrolet/c10_suburban/1968",
+      "says": "8-cyl. 307cid/200hp 2bbl"
+     },
+     {
+      "name": "Hagerty Valuation Tools - 1968 Chevrolet K10 Suburban",
+      "url": "https://www.hagerty.com/valuation-tools/chevrolet/k10_suburban/1968",
+      "says": "8-cyl. 307cid/200hp 2bbl"
+     },
+     {
+      "name": "Wikipedia - Chevrolet Suburban (fifth/sixth/seventh generation infoboxes)",
+      "url": "https://en.wikipedia.org/wiki/Chevrolet_Suburban",
+      "says": "sixth-gen engine list includes this engine (no per-year breakdown)"
+     }
+    ],
+    "independent_sources": 3,
+    "hp_sources_agree": true,
+    "status": "three_sources_not_nhra",
+    "note": "New for 1968, replacing the 283."
+   },
+   {
+    "gen": "1967-1972",
+    "cid": 327,
+    "hp": 240,
+    "hp_basis": "gross",
+    "rpo": "",
+    "name": "5.4L / 327 V8",
+    "common_name": "High Torque 327",
+    "trims": [
+     "C10 Suburban",
+     "K10 Suburban"
+    ],
+    "nhra": false,
+    "sources": [
+     {
+      "name": "Chevrolet 1968 Pickups brochure (engine specs p.14; no 1968 Suburban brochure archived)",
+      "url": "https://oldcarbrochures.org/United%20States/GM%20Trucks%20and%20Vans/1968-Trucks-and-Vans/1968-Chevrolet-Pickups-Brochure/index.html",
+      "says": "327 V8 240 @ 4400 gross, optional CS/CE10 and 4WD"
+     },
+     {
+      "name": "Hagerty Valuation Tools - 1968 Chevrolet C10 Suburban",
+      "url": "https://www.hagerty.com/valuation-tools/chevrolet/c10_suburban/1968",
+      "says": "8-cyl. 327cid/240hp 4bbl"
+     },
+     {
+      "name": "Hagerty Valuation Tools - 1968 Chevrolet K10 Suburban",
+      "url": "https://www.hagerty.com/valuation-tools/chevrolet/k10_suburban/1968",
+      "says": "8-cyl. 327cid/240hp 4bbl"
+     },
+     {
+      "name": "Wikipedia - Chevrolet Suburban (fifth/sixth/seventh generation infoboxes)",
+      "url": "https://en.wikipedia.org/wiki/Chevrolet_Suburban",
+      "says": "sixth-gen engine list includes this engine (no per-year breakdown)"
+     }
+    ],
+    "independent_sources": 3,
+    "hp_sources_agree": true,
+    "status": "three_sources_not_nhra",
+    "note": "Last year of the 327."
+   },
+   {
+    "gen": "1967-1972",
+    "cid": 396,
+    "hp": 325,
+    "hp_basis": "gross",
+    "rpo": "",
+    "name": "6.5L / 396 V8",
+    "common_name": "396 big block",
+    "trims": [
+     "C10 Suburban (2WD only)"
+    ],
+    "nhra": false,
+    "sources": [
+     {
+      "name": "Chevrolet 1968 Pickups brochure (engine specs p.14; no 1968 Suburban brochure archived)",
+      "url": "https://oldcarbrochures.org/United%20States/GM%20Trucks%20and%20Vans/1968-Trucks-and-Vans/1968-Chevrolet-Pickups-Brochure/index.html",
+      "says": "396 V8 optional CS/CE10 only, 10.25:1, 325 @ 4800"
+     },
+     {
+      "name": "Hagerty Valuation Tools - 1968 Chevrolet C10 Suburban",
+      "url": "https://www.hagerty.com/valuation-tools/chevrolet/c10_suburban/1968",
+      "says": "8-cyl. 396cid/310hp 4bbl and 396cid/275hp 2bbl (C10 Suburban page only)"
+     },
+     {
+      "name": "Wikipedia - Chevrolet Suburban (fifth/sixth/seventh generation infoboxes)",
+      "url": "https://en.wikipedia.org/wiki/Chevrolet_Suburban",
+      "says": "sixth-gen engine list includes this engine (no per-year breakdown)"
+     }
+    ],
+    "independent_sources": 3,
+    "hp_sources_agree": false,
+    "status": "disputed",
+    "note": "Engine confirmed by 3 sources; HP disputed. Chevrolet's 1968 pickup literature gives 325 hp; Hagerty (and Flory's C/K tables) give 310 plus a 275-hp version. No 1968 Suburban brochure is archived. Not offered in 4WD."
+   }
+  ],
+  "1969": [
+   {
+    "gen": "1967-1972",
+    "cid": 250,
+    "hp": 155,
+    "hp_basis": "gross",
+    "rpo": "std",
+    "name": "4.1L / 250 I6",
+    "common_name": "High Torque 250",
+    "trims": [
+     "C10 Suburban",
+     "K10 Suburban"
+    ],
+    "nhra": false,
+    "sources": [
+     {
+      "name": "Chevrolet 1969 Suburban brochure (Engines p.6, Specifications p.7 by series)",
+      "url": "https://oldcarbrochures.org/United%20States/GM%20Trucks%20and%20Vans/1969_Trucks_and_Vans/1969_Chevrolet_Suburban_Brochure/index.html",
+      "says": "Chevy's 250-cu-in Six is standard; spec table standard on CS/CE10 and 10 4WD"
+     },
+     {
+      "name": "Hagerty Valuation Tools - 1969 Chevrolet C10 Suburban",
+      "url": "https://www.hagerty.com/valuation-tools/chevrolet/c10_suburban/1969",
+      "says": "6-cyl. 250cid/155hp 1bbl"
+     },
+     {
+      "name": "Hagerty Valuation Tools - 1969 Chevrolet K10 Suburban",
+      "url": "https://www.hagerty.com/valuation-tools/chevrolet/k10_suburban/1969",
+      "says": "6-cyl. 250cid/155hp 1bbl"
+     },
+     {
+      "name": "Wikipedia - Chevrolet Suburban (fifth/sixth/seventh generation infoboxes)",
+      "url": "https://en.wikipedia.org/wiki/Chevrolet_Suburban",
+      "says": "sixth-gen engine list includes this engine (no per-year breakdown)"
+     }
+    ],
+    "independent_sources": 3,
+    "hp_sources_agree": true,
+    "status": "three_sources_not_nhra",
+    "note": ""
+   },
+   {
+    "gen": "1967-1972",
+    "cid": 292,
+    "hp": 170,
+    "hp_basis": "gross",
+    "rpo": "",
+    "name": "4.8L / 292 I6",
+    "common_name": "High Torque 292",
+    "trims": [
+     "C10 Suburban",
+     "K10 Suburban"
+    ],
+    "nhra": false,
+    "sources": [
+     {
+      "name": "Chevrolet 1969 Suburban brochure (Engines p.6, Specifications p.7 by series)",
+      "url": "https://oldcarbrochures.org/United%20States/GM%20Trucks%20and%20Vans/1969_Trucks_and_Vans/1969_Chevrolet_Suburban_Brochure/index.html",
+      "says": "A 292 engine is available; spec table optional on CS/CE10 and 10 4WD"
+     },
+     {
+      "name": "Hagerty Valuation Tools - 1969 Chevrolet C10 Suburban",
+      "url": "https://www.hagerty.com/valuation-tools/chevrolet/c10_suburban/1969",
+      "says": "6-cyl. 292cid/170hp 1bbl"
+     },
+     {
+      "name": "Hagerty Valuation Tools - 1969 Chevrolet K10 Suburban",
+      "url": "https://www.hagerty.com/valuation-tools/chevrolet/k10_suburban/1969",
+      "says": "6-cyl. 292cid/170hp 1bbl"
+     },
+     {
+      "name": "Wikipedia - Chevrolet Suburban (fifth/sixth/seventh generation infoboxes)",
+      "url": "https://en.wikipedia.org/wiki/Chevrolet_Suburban",
+      "says": "sixth-gen engine list includes this engine (no per-year breakdown)"
+     }
+    ],
+    "independent_sources": 3,
+    "hp_sources_agree": true,
+    "status": "three_sources_not_nhra",
+    "note": "Brochure gives no 292 rating; 170 hp from Hagerty and the 1969 Chevrolet pickup brochure."
+   },
+   {
+    "gen": "1967-1972",
+    "cid": 307,
+    "hp": 200,
+    "hp_basis": "gross",
+    "rpo": "",
+    "name": "5.0L / 307 V8",
+    "common_name": "High Torque 307",
+    "trims": [
+     "C10 Suburban",
+     "K10 Suburban"
+    ],
+    "nhra": false,
+    "sources": [
+     {
+      "name": "Chevrolet 1969 Suburban brochure (Engines p.6, Specifications p.7 by series)",
+      "url": "https://oldcarbrochures.org/United%20States/GM%20Trucks%20and%20Vans/1969_Trucks_and_Vans/1969_Chevrolet_Suburban_Brochure/index.html",
+      "says": "The 200 hp rated 307-cu-in V8 is standard [V8]"
+     },
+     {
+      "name": "Hagerty Valuation Tools - 1969 Chevrolet C10 Suburban",
+      "url": "https://www.hagerty.com/valuation-tools/chevrolet/c10_suburban/1969",
+      "says": "8-cyl. 307cid/200hp 2bbl"
+     },
+     {
+      "name": "Hagerty Valuation Tools - 1969 Chevrolet K10 Suburban",
+      "url": "https://www.hagerty.com/valuation-tools/chevrolet/k10_suburban/1969",
+      "says": "8-cyl. 307cid/200hp 2bbl"
+     },
+     {
+      "name": "Wikipedia - Chevrolet Suburban (fifth/sixth/seventh generation infoboxes)",
+      "url": "https://en.wikipedia.org/wiki/Chevrolet_Suburban",
+      "says": "sixth-gen engine list includes this engine (no per-year breakdown)"
+     }
+    ],
+    "independent_sources": 3,
+    "hp_sources_agree": true,
+    "status": "three_sources_not_nhra",
+    "note": ""
+   },
+   {
+    "gen": "1967-1972",
+    "cid": 350,
+    "hp": 255,
+    "hp_basis": "gross",
+    "rpo": "",
+    "name": "5.7L / 350 V8",
+    "common_name": "High Torque 350",
+    "trims": [
+     "C10 Suburban",
+     "K10 Suburban"
+    ],
+    "nhra": false,
+    "sources": [
+     {
+      "name": "Chevrolet 1969 Suburban brochure (Engines p.6, Specifications p.7 by series)",
+      "url": "https://oldcarbrochures.org/United%20States/GM%20Trucks%20and%20Vans/1969_Trucks_and_Vans/1969_Chevrolet_Suburban_Brochure/index.html",
+      "says": "Also available are two 350-cu-in V8s; spec table 350 V8 optional CS/CE10 and 10 4WD"
+     },
+     {
+      "name": "Hagerty Valuation Tools - 1969 Chevrolet C10 Suburban",
+      "url": "https://www.hagerty.com/valuation-tools/chevrolet/c10_suburban/1969",
+      "says": "8-cyl. 350cid/255hp 4bbl"
+     },
+     {
+      "name": "Hagerty Valuation Tools - 1969 Chevrolet K10 Suburban",
+      "url": "https://www.hagerty.com/valuation-tools/chevrolet/k10_suburban/1969",
+      "says": "8-cyl. 350cid/255hp 4bbl"
+     },
+     {
+      "name": "Wikipedia - Chevrolet Suburban (fifth/sixth/seventh generation infoboxes)",
+      "url": "https://en.wikipedia.org/wiki/Chevrolet_Suburban",
+      "says": "sixth-gen engine list includes this engine (no per-year breakdown)"
+     }
+    ],
+    "independent_sources": 3,
+    "hp_sources_agree": true,
+    "status": "three_sources_not_nhra",
+    "note": "New for 1969, replacing the 327. The brochure mentions 'two 350-cu-in V8s' without ratings; only the 255-hp version is confirmed (Hagerty, 1969 pickup brochure)."
+   },
+   {
+    "gen": "1967-1972",
+    "cid": 396,
+    "hp": 310,
+    "hp_basis": "gross",
+    "rpo": "",
+    "name": "6.5L / 396 V8",
+    "common_name": "396 big block",
+    "trims": [
+     "C10 Suburban (2WD only)"
+    ],
+    "nhra": false,
+    "sources": [
+     {
+      "name": "Chevrolet 1969 Suburban brochure (Engines p.6, Specifications p.7 by series)",
+      "url": "https://oldcarbrochures.org/United%20States/GM%20Trucks%20and%20Vans/1969_Trucks_and_Vans/1969_Chevrolet_Suburban_Brochure/index.html",
+      "says": "The 396 engine is rated at 310 hp, 9.00:1; spec table CS/CE10 only"
+     },
+     {
+      "name": "Hagerty Valuation Tools - 1969 Chevrolet C10 Suburban",
+      "url": "https://www.hagerty.com/valuation-tools/chevrolet/c10_suburban/1969",
+      "says": "8-cyl. 396cid/310hp 4bbl (C10 Suburban page only)"
+     },
+     {
+      "name": "Wikipedia - Chevrolet Suburban (fifth/sixth/seventh generation infoboxes)",
+      "url": "https://en.wikipedia.org/wiki/Chevrolet_Suburban",
+      "says": "sixth-gen engine list includes this engine (no per-year breakdown)"
+     }
+    ],
+    "independent_sources": 3,
+    "hp_sources_agree": true,
+    "status": "three_sources_not_nhra",
+    "note": "Not offered in the K10 Suburban."
+   }
+  ],
+  "1970": [
+   {
+    "gen": "1967-1972",
+    "cid": 250,
+    "hp": 155,
+    "hp_basis": "gross",
+    "rpo": "std",
+    "name": "4.1L / 250 I6",
+    "common_name": "High Torque 250",
+    "trims": [
+     "C10 Suburban",
+     "K10 Suburban"
+    ],
+    "nhra": false,
+    "sources": [
+     {
+      "name": "Chevrolet 1970 Suburban & Panel brochure (Aug 1969, D-78783; Specifications by series)",
+      "url": "https://oldcarbrochures.org/United%20States/GM%20Trucks%20and%20Vans/1970_Trucks-Vans/1970_Chevrolet_Suburban/index.html",
+      "says": "Specifications by series: 250 Six standard on CS/CE10 and 10 4-Wheel Drive"
+     },
+     {
+      "name": "Hagerty Valuation Tools - 1970 Chevrolet C10 Suburban",
+      "url": "https://www.hagerty.com/valuation-tools/chevrolet/c10_suburban/1970",
+      "says": "250cid/155hp"
+     },
+     {
+      "name": "Hagerty Valuation Tools - 1970 Chevrolet K10 Suburban",
+      "url": "https://www.hagerty.com/valuation-tools/chevrolet/k10_suburban/1970",
+      "says": "250cid/155hp"
+     },
+     {
+      "name": "Wikipedia - Chevrolet Suburban (fifth/sixth/seventh generation infoboxes)",
+      "url": "https://en.wikipedia.org/wiki/Chevrolet_Suburban",
+      "says": "sixth-gen engine list includes this engine (no per-year breakdown)"
+     }
+    ],
+    "independent_sources": 3,
+    "hp_sources_agree": true,
+    "status": "three_sources_not_nhra",
+    "note": "Suburban brochure has no rating; HP from Hagerty and the 1970 Chevrolet pickup brochure."
+   },
+   {
+    "gen": "1967-1972",
+    "cid": 292,
+    "hp": 170,
+    "hp_basis": "gross",
+    "rpo": "",
+    "name": "4.8L / 292 I6",
+    "common_name": "High Torque 292",
+    "trims": [
+     "C10 Suburban",
+     "K10 Suburban"
+    ],
+    "nhra": false,
+    "sources": [
+     {
+      "name": "Chevrolet 1970 Suburban & Panel brochure (Aug 1969, D-78783; Specifications by series)",
+      "url": "https://oldcarbrochures.org/United%20States/GM%20Trucks%20and%20Vans/1970_Trucks-Vans/1970_Chevrolet_Suburban/index.html",
+      "says": "Specifications by series: 292 Six optional on CS/CE10 and 10 4-Wheel Drive"
+     },
+     {
+      "name": "Hagerty Valuation Tools - 1970 Chevrolet C10 Suburban",
+      "url": "https://www.hagerty.com/valuation-tools/chevrolet/c10_suburban/1970",
+      "says": "292cid/170hp"
+     },
+     {
+      "name": "Hagerty Valuation Tools - 1970 Chevrolet K10 Suburban",
+      "url": "https://www.hagerty.com/valuation-tools/chevrolet/k10_suburban/1970",
+      "says": "292cid/170hp"
+     },
+     {
+      "name": "Wikipedia - Chevrolet Suburban (fifth/sixth/seventh generation infoboxes)",
+      "url": "https://en.wikipedia.org/wiki/Chevrolet_Suburban",
+      "says": "sixth-gen engine list includes this engine (no per-year breakdown)"
+     }
+    ],
+    "independent_sources": 3,
+    "hp_sources_agree": true,
+    "status": "three_sources_not_nhra",
+    "note": "Suburban brochure has no rating; HP from Hagerty and the 1970 Chevrolet pickup brochure."
+   },
+   {
+    "gen": "1967-1972",
+    "cid": 307,
+    "hp": 200,
+    "hp_basis": "gross",
+    "rpo": "",
+    "name": "5.0L / 307 V8",
+    "common_name": "High Torque 307",
+    "trims": [
+     "C10 Suburban",
+     "K10 Suburban"
+    ],
+    "nhra": false,
+    "sources": [
+     {
+      "name": "Chevrolet 1970 Suburban & Panel brochure (Aug 1969, D-78783; Specifications by series)",
+      "url": "https://oldcarbrochures.org/United%20States/GM%20Trucks%20and%20Vans/1970_Trucks-Vans/1970_Chevrolet_Suburban/index.html",
+      "says": "Specifications by series: 307 V8 standard on CS/CE10 and 10 4-Wheel Drive"
+     },
+     {
+      "name": "Hagerty Valuation Tools - 1970 Chevrolet C10 Suburban",
+      "url": "https://www.hagerty.com/valuation-tools/chevrolet/c10_suburban/1970",
+      "says": "307cid/200hp"
+     },
+     {
+      "name": "Hagerty Valuation Tools - 1970 Chevrolet K10 Suburban",
+      "url": "https://www.hagerty.com/valuation-tools/chevrolet/k10_suburban/1970",
+      "says": "307cid/200hp"
+     },
+     {
+      "name": "Wikipedia - Chevrolet Suburban (fifth/sixth/seventh generation infoboxes)",
+      "url": "https://en.wikipedia.org/wiki/Chevrolet_Suburban",
+      "says": "sixth-gen engine list includes this engine (no per-year breakdown)"
+     }
+    ],
+    "independent_sources": 3,
+    "hp_sources_agree": true,
+    "status": "three_sources_not_nhra",
+    "note": ""
+   },
+   {
+    "gen": "1967-1972",
+    "cid": 350,
+    "hp": 255,
+    "hp_basis": "gross",
+    "rpo": "",
+    "name": "5.7L / 350 V8",
+    "common_name": "High Torque 350",
+    "trims": [
+     "C10 Suburban",
+     "K10 Suburban"
+    ],
+    "nhra": false,
+    "sources": [
+     {
+      "name": "Chevrolet 1970 Suburban & Panel brochure (Aug 1969, D-78783; Specifications by series)",
+      "url": "https://oldcarbrochures.org/United%20States/GM%20Trucks%20and%20Vans/1970_Trucks-Vans/1970_Chevrolet_Suburban/index.html",
+      "says": "Specifications by series: 350 V8 optional on CS/CE10 and 10 4-Wheel Drive"
+     },
+     {
+      "name": "Hagerty Valuation Tools - 1970 Chevrolet C10 Suburban",
+      "url": "https://www.hagerty.com/valuation-tools/chevrolet/c10_suburban/1970",
+      "says": "350cid/255hp"
+     },
+     {
+      "name": "Hagerty Valuation Tools - 1970 Chevrolet K10 Suburban",
+      "url": "https://www.hagerty.com/valuation-tools/chevrolet/k10_suburban/1970",
+      "says": "350cid/255hp"
+     },
+     {
+      "name": "Wikipedia - Chevrolet Suburban (fifth/sixth/seventh generation infoboxes)",
+      "url": "https://en.wikipedia.org/wiki/Chevrolet_Suburban",
+      "says": "sixth-gen engine list includes this engine (no per-year breakdown)"
+     }
+    ],
+    "independent_sources": 3,
+    "hp_sources_agree": true,
+    "status": "three_sources_not_nhra",
+    "note": "Suburban brochure has no rating; HP from Hagerty and the 1970 Chevrolet pickup brochure."
+   },
+   {
+    "gen": "1967-1972",
+    "cid": 402,
+    "hp": 310,
+    "hp_basis": "gross",
+    "rpo": "",
+    "name": "6.6L / 402 V8",
+    "common_name": "High Torque 400 (402 big block)",
+    "trims": [
+     "C10 Suburban (2WD only)"
+    ],
+    "nhra": false,
+    "sources": [
+     {
+      "name": "Chevrolet 1970 Suburban & Panel brochure (Aug 1969, D-78783; Specifications by series)",
+      "url": "https://oldcarbrochures.org/United%20States/GM%20Trucks%20and%20Vans/1970_Trucks-Vans/1970_Chevrolet_Suburban/index.html",
+      "says": "Specifications by series: 400 V8 optional on CS/CE10 only (not 4WD)"
+     },
+     {
+      "name": "Hagerty Valuation Tools - 1970 Chevrolet C10 Suburban",
+      "url": "https://www.hagerty.com/valuation-tools/chevrolet/c10_suburban/1970",
+      "says": "400cid/310hp (C10 Suburban page only)"
+     },
+     {
+      "name": "Wikipedia - Chevrolet Suburban (fifth/sixth/seventh generation infoboxes)",
+      "url": "https://en.wikipedia.org/wiki/Chevrolet_Suburban",
+      "says": "sixth-gen engine list includes this engine (no per-year breakdown)"
+     }
+    ],
+    "independent_sources": 3,
+    "hp_sources_agree": true,
+    "status": "three_sources_not_nhra",
+    "note": "Big-block 402 marketed as the '400'; 2WD C10 only. Replaced the 396."
+   }
+  ],
+  "1971": [
+   {
+    "gen": "1967-1972",
+    "cid": 250,
+    "hp": 145,
+    "hp_basis": "gross",
+    "rpo": "std",
+    "name": "4.1L / 250 I6",
+    "common_name": "High Torque 250",
+    "trims": [
+     "C10 Suburban",
+     "K10 Suburban"
+    ],
+    "nhra": false,
+    "sources": [
+     {
+      "name": "Chevrolet 1971 Suburban brochure (Aug 1970, W.O. 1164; Specifications by series)",
+      "url": "https://oldcarbrochures.org/United%20States/GM%20Trucks%20and%20Vans/1971_Trucks-Vans/1971_Chevrolet_Suburban_Brochure/index.html",
+      "says": "Specifications by series: 250 Six standard on CS/CE10 and 10 4-Wheel Drive"
+     },
+     {
+      "name": "Hagerty Valuation Tools - 1971 Chevrolet C10 Suburban",
+      "url": "https://www.hagerty.com/valuation-tools/chevrolet/c10_suburban/1971",
+      "says": "250cid/145hp"
+     },
+     {
+      "name": "Hagerty Valuation Tools - 1971 Chevrolet K10 Suburban",
+      "url": "https://www.hagerty.com/valuation-tools/chevrolet/k10_suburban/1971",
+      "says": "250cid/145hp"
+     },
+     {
+      "name": "Wikipedia - Chevrolet Suburban (fifth/sixth/seventh generation infoboxes)",
+      "url": "https://en.wikipedia.org/wiki/Chevrolet_Suburban",
+      "says": "sixth-gen engine list includes this engine (no per-year breakdown)"
+     }
+    ],
+    "independent_sources": 3,
+    "hp_sources_agree": true,
+    "status": "three_sources_not_nhra",
+    "note": "Suburban brochure has no rating; HP from Hagerty and the 1971 Chevrolet pickup brochure."
+   },
+   {
+    "gen": "1967-1972",
+    "cid": 292,
+    "hp": 165,
+    "hp_basis": "gross",
+    "rpo": "",
+    "name": "4.8L / 292 I6",
+    "common_name": "High Torque 292",
+    "trims": [
+     "C10 Suburban",
+     "K10 Suburban"
+    ],
+    "nhra": false,
+    "sources": [
+     {
+      "name": "Chevrolet 1971 Suburban brochure (Aug 1970, W.O. 1164; Specifications by series)",
+      "url": "https://oldcarbrochures.org/United%20States/GM%20Trucks%20and%20Vans/1971_Trucks-Vans/1971_Chevrolet_Suburban_Brochure/index.html",
+      "says": "Specifications by series: 292 Six optional on CS/CE10 and 10 4-Wheel Drive"
+     },
+     {
+      "name": "Hagerty Valuation Tools - 1971 Chevrolet C10 Suburban",
+      "url": "https://www.hagerty.com/valuation-tools/chevrolet/c10_suburban/1971",
+      "says": "292cid/165hp"
+     },
+     {
+      "name": "Hagerty Valuation Tools - 1971 Chevrolet K10 Suburban",
+      "url": "https://www.hagerty.com/valuation-tools/chevrolet/k10_suburban/1971",
+      "says": "292cid/165hp"
+     },
+     {
+      "name": "Wikipedia - Chevrolet Suburban (fifth/sixth/seventh generation infoboxes)",
+      "url": "https://en.wikipedia.org/wiki/Chevrolet_Suburban",
+      "says": "sixth-gen engine list includes this engine (no per-year breakdown)"
+     }
+    ],
+    "independent_sources": 3,
+    "hp_sources_agree": true,
+    "status": "three_sources_not_nhra",
+    "note": "Suburban brochure has no rating; HP from Hagerty and the 1971 Chevrolet pickup brochure."
+   },
+   {
+    "gen": "1967-1972",
+    "cid": 307,
+    "hp": 200,
+    "hp_basis": "gross",
+    "rpo": "",
+    "name": "5.0L / 307 V8",
+    "common_name": "High Torque 307",
+    "trims": [
+     "C10 Suburban",
+     "K10 Suburban"
+    ],
+    "nhra": false,
+    "sources": [
+     {
+      "name": "Chevrolet 1971 Suburban brochure (Aug 1970, W.O. 1164; Specifications by series)",
+      "url": "https://oldcarbrochures.org/United%20States/GM%20Trucks%20and%20Vans/1971_Trucks-Vans/1971_Chevrolet_Suburban_Brochure/index.html",
+      "says": "Specifications by series: 307 V8 standard on CS/CE10 and 10 4-Wheel Drive"
+     },
+     {
+      "name": "Hagerty Valuation Tools - 1971 Chevrolet C10 Suburban",
+      "url": "https://www.hagerty.com/valuation-tools/chevrolet/c10_suburban/1971",
+      "says": "307cid/200hp"
+     },
+     {
+      "name": "Hagerty Valuation Tools - 1971 Chevrolet K10 Suburban",
+      "url": "https://www.hagerty.com/valuation-tools/chevrolet/k10_suburban/1971",
+      "says": "307cid/200hp"
+     },
+     {
+      "name": "Wikipedia - Chevrolet Suburban (fifth/sixth/seventh generation infoboxes)",
+      "url": "https://en.wikipedia.org/wiki/Chevrolet_Suburban",
+      "says": "sixth-gen engine list includes this engine (no per-year breakdown)"
+     }
+    ],
+    "independent_sources": 3,
+    "hp_sources_agree": true,
+    "status": "three_sources_not_nhra",
+    "note": ""
+   },
+   {
+    "gen": "1967-1972",
+    "cid": 350,
+    "hp": 250,
+    "hp_basis": "gross",
+    "rpo": "",
+    "name": "5.7L / 350 V8",
+    "common_name": "High Torque 350",
+    "trims": [
+     "C10 Suburban",
+     "K10 Suburban"
+    ],
+    "nhra": false,
+    "sources": [
+     {
+      "name": "Chevrolet 1971 Suburban brochure (Aug 1970, W.O. 1164; Specifications by series)",
+      "url": "https://oldcarbrochures.org/United%20States/GM%20Trucks%20and%20Vans/1971_Trucks-Vans/1971_Chevrolet_Suburban_Brochure/index.html",
+      "says": "Specifications by series: 350 V8 optional on CS/CE10 and 10 4-Wheel Drive"
+     },
+     {
+      "name": "Hagerty Valuation Tools - 1971 Chevrolet C10 Suburban",
+      "url": "https://www.hagerty.com/valuation-tools/chevrolet/c10_suburban/1971",
+      "says": "350cid/250hp"
+     },
+     {
+      "name": "Hagerty Valuation Tools - 1971 Chevrolet K10 Suburban",
+      "url": "https://www.hagerty.com/valuation-tools/chevrolet/k10_suburban/1971",
+      "says": "350cid/250hp"
+     },
+     {
+      "name": "Wikipedia - Chevrolet Suburban (fifth/sixth/seventh generation infoboxes)",
+      "url": "https://en.wikipedia.org/wiki/Chevrolet_Suburban",
+      "says": "sixth-gen engine list includes this engine (no per-year breakdown)"
+     }
+    ],
+    "independent_sources": 3,
+    "hp_sources_agree": true,
+    "status": "three_sources_not_nhra",
+    "note": "Suburban brochure has no rating; HP from Hagerty and the 1971 Chevrolet pickup brochure."
+   },
+   {
+    "gen": "1967-1972",
+    "cid": 402,
+    "hp": 300,
+    "hp_basis": "gross",
+    "rpo": "",
+    "name": "6.6L / 402 V8",
+    "common_name": "High Torque 400 (402 big block)",
+    "trims": [
+     "C10 Suburban (2WD only)"
+    ],
+    "nhra": false,
+    "sources": [
+     {
+      "name": "Chevrolet 1971 Suburban brochure (Aug 1970, W.O. 1164; Specifications by series)",
+      "url": "https://oldcarbrochures.org/United%20States/GM%20Trucks%20and%20Vans/1971_Trucks-Vans/1971_Chevrolet_Suburban_Brochure/index.html",
+      "says": "Specifications by series: 400 V8 optional on CS/CE10 only (not 4WD); 'V8 power available up to 300 hp in our 400 V8'"
+     },
+     {
+      "name": "Hagerty Valuation Tools - 1971 Chevrolet C10 Suburban",
+      "url": "https://www.hagerty.com/valuation-tools/chevrolet/c10_suburban/1971",
+      "says": "402cid/300hp (C10 Suburban page only)"
+     },
+     {
+      "name": "Wikipedia - Chevrolet Suburban (fifth/sixth/seventh generation infoboxes)",
+      "url": "https://en.wikipedia.org/wiki/Chevrolet_Suburban",
+      "says": "sixth-gen engine list includes this engine (no per-year breakdown)"
+     }
+    ],
+    "independent_sources": 3,
+    "hp_sources_agree": true,
+    "status": "three_sources_not_nhra",
+    "note": "Big-block 402 marketed as the '400'; 2WD C10 only."
+   }
+  ],
+  "1972": [
+   {
+    "gen": "1967-1972",
+    "cid": 250,
+    "hp": 110,
+    "hp_basis": "SAE net",
+    "rpo": "std",
+    "name": "4.1L / 250 I6",
+    "common_name": "High Torque 250",
+    "trims": [
+     "C10 Suburban",
+     "K10 Suburban"
+    ],
+    "nhra": false,
+    "sources": [
+     {
+      "name": "Chevrolet 1972 Suburban brochure (engine specifications table, SAE net)",
+      "url": "https://oldcarbrochures.org/United%20States/GM%20Trucks%20and%20Vans/1972_Trucks_and_Vans/1972%20Chevrolet%20Suburban%20Brochure/index.html",
+      "says": "Engine specifications table: 250, SAE net 110 hp"
+     },
+     {
+      "name": "Hagerty Valuation Tools - 1972 Chevrolet C10 Suburban",
+      "url": "https://www.hagerty.com/valuation-tools/chevrolet/c10_suburban/1972",
+      "says": "250cid/110hp"
+     },
+     {
+      "name": "Hagerty Valuation Tools - 1972 Chevrolet K10 Suburban",
+      "url": "https://www.hagerty.com/valuation-tools/chevrolet/k10_suburban/1972",
+      "says": "250cid/110hp"
+     },
+     {
+      "name": "Wikipedia - Chevrolet Suburban (fifth/sixth/seventh generation infoboxes)",
+      "url": "https://en.wikipedia.org/wiki/Chevrolet_Suburban",
+      "says": "sixth-gen engine list includes this engine (no per-year breakdown)"
+     }
+    ],
+    "independent_sources": 3,
+    "hp_sources_agree": true,
+    "status": "three_sources_not_nhra",
+    "note": "No 292 six in the 1972 Suburban (brochure: 'four rugged truck engines')."
+   },
+   {
+    "gen": "1967-1972",
+    "cid": 307,
+    "hp": 135,
+    "hp_basis": "SAE net",
+    "rpo": "",
+    "name": "5.0L / 307 V8",
+    "common_name": "High Torque 307",
+    "trims": [
+     "C10 Suburban",
+     "K10 Suburban"
+    ],
+    "nhra": false,
+    "sources": [
+     {
+      "name": "Chevrolet 1972 Suburban brochure (engine specifications table, SAE net)",
+      "url": "https://oldcarbrochures.org/United%20States/GM%20Trucks%20and%20Vans/1972_Trucks_and_Vans/1972%20Chevrolet%20Suburban%20Brochure/index.html",
+      "says": "Engine specifications table: 307, SAE net 135 hp"
+     },
+     {
+      "name": "Hagerty Valuation Tools - 1972 Chevrolet C10 Suburban",
+      "url": "https://www.hagerty.com/valuation-tools/chevrolet/c10_suburban/1972",
+      "says": "307cid/135hp"
+     },
+     {
+      "name": "Hagerty Valuation Tools - 1972 Chevrolet K10 Suburban",
+      "url": "https://www.hagerty.com/valuation-tools/chevrolet/k10_suburban/1972",
+      "says": "307cid/135hp"
+     },
+     {
+      "name": "Wikipedia - Chevrolet Suburban (fifth/sixth/seventh generation infoboxes)",
+      "url": "https://en.wikipedia.org/wiki/Chevrolet_Suburban",
+      "says": "sixth-gen engine list includes this engine (no per-year breakdown)"
+     }
+    ],
+    "independent_sources": 3,
+    "hp_sources_agree": true,
+    "status": "three_sources_not_nhra",
+    "note": ""
+   },
+   {
+    "gen": "1967-1972",
+    "cid": 350,
+    "hp": 175,
+    "hp_basis": "SAE net",
+    "rpo": "",
+    "name": "5.7L / 350 V8",
+    "common_name": "High Torque 350",
+    "trims": [
+     "C10 Suburban",
+     "K10 Suburban"
+    ],
+    "nhra": false,
+    "sources": [
+     {
+      "name": "Chevrolet 1972 Suburban brochure (engine specifications table, SAE net)",
+      "url": "https://oldcarbrochures.org/United%20States/GM%20Trucks%20and%20Vans/1972_Trucks_and_Vans/1972%20Chevrolet%20Suburban%20Brochure/index.html",
+      "says": "Engine specifications table: 350, SAE net 175 hp"
+     },
+     {
+      "name": "Hagerty Valuation Tools - 1972 Chevrolet C10 Suburban",
+      "url": "https://www.hagerty.com/valuation-tools/chevrolet/c10_suburban/1972",
+      "says": "350cid/175hp"
+     },
+     {
+      "name": "Hagerty Valuation Tools - 1972 Chevrolet K10 Suburban",
+      "url": "https://www.hagerty.com/valuation-tools/chevrolet/k10_suburban/1972",
+      "says": "350cid/175hp"
+     },
+     {
+      "name": "Wikipedia - Chevrolet Suburban (fifth/sixth/seventh generation infoboxes)",
+      "url": "https://en.wikipedia.org/wiki/Chevrolet_Suburban",
+      "says": "sixth-gen engine list includes this engine (no per-year breakdown)"
+     }
+    ],
+    "independent_sources": 3,
+    "hp_sources_agree": true,
+    "status": "three_sources_not_nhra",
+    "note": ""
+   },
+   {
+    "gen": "1967-1972",
+    "cid": 402,
+    "hp": 210,
+    "hp_basis": "SAE net",
+    "rpo": "",
+    "name": "6.6L / 402 V8",
+    "common_name": "High Torque 400 (402 big block)",
+    "trims": [
+     "C10 Suburban (2WD only)"
+    ],
+    "nhra": false,
+    "sources": [
+     {
+      "name": "Chevrolet 1972 Suburban brochure (engine specifications table, SAE net)",
+      "url": "https://oldcarbrochures.org/United%20States/GM%20Trucks%20and%20Vans/1972_Trucks_and_Vans/1972%20Chevrolet%20Suburban%20Brochure/index.html",
+      "says": "Engine specifications table: 400 V8 (402 cu in), SAE net 210 hp, not available in California"
+     },
+     {
+      "name": "Hagerty Valuation Tools - 1972 Chevrolet C10 Suburban",
+      "url": "https://www.hagerty.com/valuation-tools/chevrolet/c10_suburban/1972",
+      "says": "402cid/210hp (C10 Suburban page only)"
+     },
+     {
+      "name": "Wikipedia - Chevrolet Suburban (fifth/sixth/seventh generation infoboxes)",
+      "url": "https://en.wikipedia.org/wiki/Chevrolet_Suburban",
+      "says": "sixth-gen engine list includes this engine (no per-year breakdown)"
+     }
+    ],
+    "independent_sources": 3,
+    "hp_sources_agree": true,
+    "status": "three_sources_not_nhra",
+    "note": "Not available in California; 2WD only."
+   }
+  ],
+  "1973": [
+   {
+    "gen": "1973-1991",
+    "cid": 250,
+    "hp": 100,
+    "hp_basis": "SAE net",
+    "rpo": "std",
+    "name": "4.1L / 250 I6",
+    "common_name": "High Torque 250",
+    "trims": [
+     "C10 Suburban",
+     "K10 Suburban"
+    ],
+    "nhra": false,
+    "sources": [
+     {
+      "name": "Chevrolet 1973 Suburban brochure (Jan 1973, 2236 R-1; Specifications, Engine Specifications-Suburbans, Power Teams)",
+      "url": "https://oldcarbrochures.org/United%20States/GM%20Trucks%20and%20Vans/1973_Trucks_and_Vans/1973%20Chevrolet%20Suburban/index.html",
+      "says": "Power Teams: 250 Six standard on C10 and K10; engine table 250, SAE net 100 @ 3600"
+     },
+     {
+      "name": "Hagerty Valuation Tools - 1973 Chevrolet C10 Suburban",
+      "url": "https://www.hagerty.com/valuation-tools/chevrolet/c10_suburban/1973",
+      "says": "6-cyl. 250cid/100hp 1bbl"
+     },
+     {
+      "name": "Hagerty Valuation Tools - 1973 Chevrolet K10 Suburban",
+      "url": "https://www.hagerty.com/valuation-tools/chevrolet/k10_suburban/1973",
+      "says": "6-cyl. 250cid/100hp 1bbl"
+     },
+     {
+      "name": "Wikipedia - Chevrolet Suburban (fifth/sixth/seventh generation infoboxes)",
+      "url": "https://en.wikipedia.org/wiki/Chevrolet_Suburban",
+      "says": "seventh-gen engine list: 250 I6"
+     }
+    ],
+    "independent_sources": 3,
+    "hp_sources_agree": true,
+    "status": "three_sources_not_nhra",
+    "note": ""
+   },
+   {
+    "gen": "1973-1991",
+    "cid": 307,
+    "hp": 115,
+    "hp_basis": "SAE net",
+    "rpo": "",
+    "name": "5.0L / 307 V8",
+    "common_name": "High Torque 307",
+    "trims": [
+     "C10 Suburban (2WD only)"
+    ],
+    "nhra": false,
+    "sources": [
+     {
+      "name": "Chevrolet 1973 Suburban brochure (Jan 1973, 2236 R-1; Specifications, Engine Specifications-Suburbans, Power Teams)",
+      "url": "https://oldcarbrochures.org/United%20States/GM%20Trucks%20and%20Vans/1973_Trucks_and_Vans/1973%20Chevrolet%20Suburban/index.html",
+      "says": "Power Teams: 307 V8 standard V8 on C10 (K10 has none); SAE net 115 @ 3600"
+     },
+     {
+      "name": "Hagerty Valuation Tools - 1973 Chevrolet C10 Suburban",
+      "url": "https://www.hagerty.com/valuation-tools/chevrolet/c10_suburban/1973",
+      "says": "8-cyl. 307cid/115hp 2bbl (C10 only)"
+     },
+     {
+      "name": "Wikipedia - Chevrolet Suburban (fifth/sixth/seventh generation infoboxes)",
+      "url": "https://en.wikipedia.org/wiki/Chevrolet_Suburban",
+      "says": "seventh-gen engine list: 307 V8 (1973)"
+     }
+    ],
+    "independent_sources": 3,
+    "hp_sources_agree": true,
+    "status": "three_sources_not_nhra",
+    "note": "Last year of the 307; not in the K10 Suburban."
+   },
+   {
+    "gen": "1973-1991",
+    "cid": 350,
+    "hp": 155,
+    "hp_basis": "SAE net",
+    "rpo": "",
+    "name": "5.7L / 350 V8",
+    "common_name": "High Torque 350",
+    "trims": [
+     "C10 Suburban",
+     "K10 Suburban"
+    ],
+    "nhra": false,
+    "sources": [
+     {
+      "name": "Chevrolet 1973 Suburban brochure (Jan 1973, 2236 R-1; Specifications, Engine Specifications-Suburbans, Power Teams)",
+      "url": "https://oldcarbrochures.org/United%20States/GM%20Trucks%20and%20Vans/1973_Trucks_and_Vans/1973%20Chevrolet%20Suburban/index.html",
+      "says": "350 V8 available C10 and K10; SAE net 155 @ 4000"
+     },
+     {
+      "name": "Hagerty Valuation Tools - 1973 Chevrolet C10 Suburban",
+      "url": "https://www.hagerty.com/valuation-tools/chevrolet/c10_suburban/1973",
+      "says": "8-cyl. 350cid/155hp 4bbl (160hp listed for Cheyenne Super)"
+     },
+     {
+      "name": "Hagerty Valuation Tools - 1973 Chevrolet K10 Suburban",
+      "url": "https://www.hagerty.com/valuation-tools/chevrolet/k10_suburban/1973",
+      "says": "8-cyl. 350cid/155hp 4bbl"
+     },
+     {
+      "name": "Wikipedia - Chevrolet Suburban (fifth/sixth/seventh generation infoboxes)",
+      "url": "https://en.wikipedia.org/wiki/Chevrolet_Suburban",
+      "says": "seventh-gen engine list: 350 V8"
+     }
+    ],
+    "independent_sources": 3,
+    "hp_sources_agree": true,
+    "status": "three_sources_not_nhra",
+    "note": ""
+   },
+   {
+    "gen": "1973-1991",
+    "cid": 454,
+    "hp": 240,
+    "hp_basis": "SAE net",
+    "rpo": "",
+    "name": "7.4L / 454 V8",
+    "common_name": "454 big block",
+    "trims": [
+     "C10 Suburban (2WD only)"
+    ],
+    "nhra": false,
+    "sources": [
+     {
+      "name": "Chevrolet 1973 Suburban brochure (Jan 1973, 2236 R-1; Specifications, Engine Specifications-Suburbans, Power Teams)",
+      "url": "https://oldcarbrochures.org/United%20States/GM%20Trucks%20and%20Vans/1973_Trucks_and_Vans/1973%20Chevrolet%20Suburban/index.html",
+      "says": "454 V8 available on C10 and C20; SAE net 240 @ 4000"
+     },
+     {
+      "name": "Hagerty Valuation Tools - 1973 Chevrolet C10 Suburban",
+      "url": "https://www.hagerty.com/valuation-tools/chevrolet/c10_suburban/1973",
+      "says": "8-cyl. 454cid/240hp 4bbl (C10 only)"
+     },
+     {
+      "name": "Wikipedia - Chevrolet Suburban (fifth/sixth/seventh generation infoboxes)",
+      "url": "https://en.wikipedia.org/wiki/Chevrolet_Suburban",
+      "says": "seventh-gen engine list: 454 V8"
+     }
+    ],
+    "independent_sources": 3,
+    "hp_sources_agree": true,
+    "status": "three_sources_not_nhra",
+    "note": "New for 1973; 2WD only."
+   }
+  ],
+  "1974": [
+   {
+    "gen": "1973-1991",
+    "cid": 250,
+    "hp": 100,
+    "hp_basis": "SAE net",
+    "rpo": "std",
+    "name": "4.1L / 250 I6",
+    "common_name": "High Torque 250",
+    "trims": [
+     "C10 Suburban (2WD only)"
+    ],
+    "nhra": false,
+    "sources": [
+     {
+      "name": "Chevrolet 1974 Suburban brochure (Sept 1973, 2684; Specifications by series)",
+      "url": "https://oldcarbrochures.org/United%20States/GM%20Trucks%20and%20Vans/1974_Trucks-Vans/1974_Chevrolet_Suburban_Brochure_001/index.html",
+      "says": "Specifications: C10 6-cyl *250 standard; no six listed for K10"
+     },
+     {
+      "name": "Hagerty Valuation Tools - 1974 Chevrolet C10 Suburban",
+      "url": "https://www.hagerty.com/valuation-tools/chevrolet/c10_suburban/1974",
+      "says": "6-cyl. 250cid/100hp 1bbl (C10 only)"
+     },
+     {
+      "name": "Wikipedia - Chevrolet Suburban (fifth/sixth/seventh generation infoboxes)",
+      "url": "https://en.wikipedia.org/wiki/Chevrolet_Suburban",
+      "says": "seventh-gen engine list: 250 I6"
+     }
+    ],
+    "independent_sources": 3,
+    "hp_sources_agree": true,
+    "status": "three_sources_not_nhra",
+    "note": "Brochure has no ratings; 100 hp from Hagerty (GM's 1974 pickup brochure and VIN card also 100). No six in the 1974 K10 Suburban."
+   },
+   {
+    "gen": "1973-1991",
+    "cid": 350,
+    "hp": 160,
+    "hp_basis": "SAE net",
+    "rpo": "",
+    "name": "5.7L / 350 V8",
+    "common_name": "High Torque 350",
+    "trims": [
+     "C10 Suburban",
+     "K10 Suburban"
+    ],
+    "nhra": false,
+    "sources": [
+     {
+      "name": "Chevrolet 1974 Suburban brochure (Sept 1973, 2684; Specifications by series)",
+      "url": "https://oldcarbrochures.org/United%20States/GM%20Trucks%20and%20Vans/1974_Trucks-Vans/1974_Chevrolet_Suburban_Brochure_001/index.html",
+      "says": "Specifications: **350-4 standard V8 on C10 and K10"
+     },
+     {
+      "name": "Hagerty Valuation Tools - 1974 Chevrolet C10 Suburban",
+      "url": "https://www.hagerty.com/valuation-tools/chevrolet/c10_suburban/1974",
+      "says": "8-cyl. 350cid/160hp 4bbl"
+     },
+     {
+      "name": "Hagerty Valuation Tools - 1974 Chevrolet K10 Suburban",
+      "url": "https://www.hagerty.com/valuation-tools/chevrolet/k10_suburban/1974",
+      "says": "8-cyl. 350cid/160hp 4bbl"
+     },
+     {
+      "name": "Wikipedia - Chevrolet Suburban (fifth/sixth/seventh generation infoboxes)",
+      "url": "https://en.wikipedia.org/wiki/Chevrolet_Suburban",
+      "says": "seventh-gen engine list: 350 V8"
+     }
+    ],
+    "independent_sources": 3,
+    "hp_sources_agree": true,
+    "status": "three_sources_not_nhra",
+    "note": "Only the 4-bbl 350 is listed for the Suburban (the 145-hp 350-2 was a pickup engine). HP from Hagerty; GM pickup literature also 160."
+   },
+   {
+    "gen": "1973-1991",
+    "cid": 454,
+    "hp": 230,
+    "hp_basis": "SAE net",
+    "rpo": "",
+    "name": "7.4L / 454 V8",
+    "common_name": "454 big block",
+    "trims": [
+     "C10 Suburban (2WD only)"
+    ],
+    "nhra": false,
+    "sources": [
+     {
+      "name": "Chevrolet 1974 Suburban brochure (Sept 1973, 2684; Specifications by series)",
+      "url": "https://oldcarbrochures.org/United%20States/GM%20Trucks%20and%20Vans/1974_Trucks-Vans/1974_Chevrolet_Suburban_Brochure_001/index.html",
+      "says": "Specifications: 454-4 available on C10"
+     },
+     {
+      "name": "Hagerty Valuation Tools - 1974 Chevrolet C10 Suburban",
+      "url": "https://www.hagerty.com/valuation-tools/chevrolet/c10_suburban/1974",
+      "says": "8-cyl. 454cid/230hp 4bbl (C10 only)"
+     },
+     {
+      "name": "Wikipedia - Chevrolet Suburban (fifth/sixth/seventh generation infoboxes)",
+      "url": "https://en.wikipedia.org/wiki/Chevrolet_Suburban",
+      "says": "seventh-gen engine list: 454 V8"
+     }
+    ],
+    "independent_sources": 3,
+    "hp_sources_agree": true,
+    "status": "three_sources_not_nhra",
+    "note": "HP from Hagerty; GM's 1974 pickup brochure also 230 (VIN card also lists a 245-hp version)."
+   }
+  ],
+  "1975": [
+   {
+    "gen": "1973-1991",
+    "cid": 250,
+    "hp": 100,
+    "hp_basis": "SAE net",
+    "rpo": "std",
+    "name": "4.1L / 250 I6",
+    "common_name": "High Torque 250",
+    "trims": [
+     "C10 Suburban (2WD only)"
+    ],
+    "nhra": false,
+    "sources": [
+     {
+      "name": "Chevrolet 1975 Suburban brochure (Sept 1974, 3025; engine table p.5, Specifications p.8)",
+      "url": "https://oldcarbrochures.org/United%20States/GM%20Trucks%20and%20Vans/1975-Trucks-and-Vans/1975-Chevrolet-Suburban-Brochure/index.html",
+      "says": "Base engine in the C10 is the redesigned 250 Six; table (light-duty emissions, 6000 lb GVW and below) 250 1-bbl SAE net 100 @ 3600"
+     },
+     {
+      "name": "Hagerty Valuation Tools - 1975 Chevrolet C10 Suburban",
+      "url": "https://www.hagerty.com/valuation-tools/chevrolet/c10_suburban/1975",
+      "says": "6-cyl. 250cid/105hp 1bbl (C10 only)"
+     },
+     {
+      "name": "Wikipedia - Chevrolet Suburban (fifth/sixth/seventh generation infoboxes)",
+      "url": "https://en.wikipedia.org/wiki/Chevrolet_Suburban",
+      "says": "seventh-gen engine list: 250 I6"
+     }
+    ],
+    "independent_sources": 3,
+    "hp_sources_agree": false,
+    "status": "three_sources_not_nhra",
+    "note": "HP disagreement: GM's Suburban brochure 100 hp; Hagerty 105 (the 1975 pickup figure). 100 is the Suburban factory figure."
+   },
+   {
+    "gen": "1973-1991",
+    "cid": 350,
+    "hp": 160,
+    "hp_basis": "SAE net",
+    "rpo": "",
+    "name": "5.7L / 350 V8",
+    "common_name": "High Torque 350",
+    "trims": [
+     "C10 Suburban",
+     "K10 Suburban"
+    ],
+    "nhra": false,
+    "sources": [
+     {
+      "name": "Chevrolet 1975 Suburban brochure (Sept 1974, 3025; engine table p.5, Specifications p.8)",
+      "url": "https://oldcarbrochures.org/United%20States/GM%20Trucks%20and%20Vans/1975-Trucks-and-Vans/1975-Chevrolet-Suburban-Brochure/index.html",
+      "says": "350-4 standard V8 on C10 and K10; heavy-duty-emissions table 350 4-bbl SAE net 160 @ 3800"
+     },
+     {
+      "name": "Hagerty Valuation Tools - 1975 Chevrolet C10 Suburban",
+      "url": "https://www.hagerty.com/valuation-tools/chevrolet/c10_suburban/1975",
+      "says": "8-cyl. 350cid/160hp 4bbl"
+     },
+     {
+      "name": "Hagerty Valuation Tools - 1975 Chevrolet K10 Suburban",
+      "url": "https://www.hagerty.com/valuation-tools/chevrolet/k10_suburban/1975",
+      "says": "8-cyl. 350cid/160hp 4bbl"
+     },
+     {
+      "name": "Wikipedia - Chevrolet Suburban (fifth/sixth/seventh generation infoboxes)",
+      "url": "https://en.wikipedia.org/wiki/Chevrolet_Suburban",
+      "says": "seventh-gen engine list: 350 V8"
+     }
+    ],
+    "independent_sources": 3,
+    "hp_sources_agree": true,
+    "status": "three_sources_not_nhra",
+    "note": ""
+   },
+   {
+    "gen": "1973-1991",
+    "cid": 400,
+    "hp": 175,
+    "hp_basis": "SAE net",
+    "rpo": "",
+    "name": "6.6L / 400 V8",
+    "common_name": "400 small block",
+    "trims": [
+     "K10 Suburban (4WD only)"
+    ],
+    "nhra": false,
+    "sources": [
+     {
+      "name": "Chevrolet 1975 Suburban brochure (Sept 1974, 3025; engine table p.5, Specifications p.8)",
+      "url": "https://oldcarbrochures.org/United%20States/GM%20Trucks%20and%20Vans/1975-Trucks-and-Vans/1975-Chevrolet-Suburban-Brochure/index.html",
+      "says": "A 400-4 V8 is available for Suburbans with full-time 4-wheel drive; spec table K10 available 400-4; HD table 175 @ 3600"
+     },
+     {
+      "name": "Hagerty Valuation Tools - 1975 Chevrolet K10 Suburban",
+      "url": "https://www.hagerty.com/valuation-tools/chevrolet/k10_suburban/1975",
+      "says": "8-cyl. 400cid/175hp 4bbl"
+     }
+    ],
+    "independent_sources": 2,
+    "hp_sources_agree": true,
+    "status": "two_sources_agree",
+    "note": "New for 1975. Wikipedia's range starts in 1976, so it is not counted; GM's 1975 Suburban brochure and Hagerty agree."
+   },
+   {
+    "gen": "1973-1991",
+    "cid": 454,
+    "hp": 245,
+    "hp_basis": "SAE net",
+    "rpo": "",
+    "name": "7.4L / 454 V8",
+    "common_name": "454 big block",
+    "trims": [
+     "C10 Suburban (2WD only)"
+    ],
+    "nhra": false,
+    "sources": [
+     {
+      "name": "Chevrolet 1975 Suburban brochure (Sept 1974, 3025; engine table p.5, Specifications p.8)",
+      "url": "https://oldcarbrochures.org/United%20States/GM%20Trucks%20and%20Vans/1975-Trucks-and-Vans/1975-Chevrolet-Suburban-Brochure/index.html",
+      "says": "454 V8 available on C10; heavy-duty-emissions table 454 4-bbl SAE net 245 @ 4000"
+     },
+     {
+      "name": "Hagerty Valuation Tools - 1975 Chevrolet C10 Suburban",
+      "url": "https://www.hagerty.com/valuation-tools/chevrolet/c10_suburban/1975",
+      "says": "8-cyl. 454cid/215hp 4bbl (C10 only)"
+     },
+     {
+      "name": "Wikipedia - Chevrolet Suburban (fifth/sixth/seventh generation infoboxes)",
+      "url": "https://en.wikipedia.org/wiki/Chevrolet_Suburban",
+      "says": "seventh-gen engine list: 454 V8"
+     }
+    ],
+    "independent_sources": 3,
+    "hp_sources_agree": false,
+    "status": "disputed",
+    "note": "Engine confirmed by 3 sources; HP disputed. GM's Suburban brochure gives the heavy-duty-emissions 245 hp (Suburbans over 6000 lb GVW); Hagerty gives 215 (the pickup light-duty rating)."
+   }
+  ],
+  "1976": [
+   {
+    "gen": "1973-1991",
+    "cid": 250,
+    "hp": 100,
+    "hp_basis": "SAE net",
+    "rpo": "std",
+    "name": "4.1L / 250 I6",
+    "common_name": "High Torque 250",
+    "trims": [
+     "C10 Suburban (2WD only)"
+    ],
+    "nhra": false,
+    "sources": [
+     {
+      "name": "Chevrolet 1976 Suburban brochure (engine text and HD-emissions engine table p.5)",
+      "url": "https://oldcarbrochures.org/United%20States/GM%20Trucks%20and%20Vans/1976_Trucks_and_Vans/1976_Chevrolet_Suburban_Brochure/index.html",
+      "says": "Base engine on the C10 Suburban 250 Six; HD table 250 1-bbl SAE net 100 @ 3600, not in California"
+     },
+     {
+      "name": "Hagerty Valuation Tools - 1976 Chevrolet C10 Suburban",
+      "url": "https://www.hagerty.com/valuation-tools/chevrolet/c10_suburban/1976",
+      "says": "6-cyl. 250cid/100hp 1bbl (C10 only)"
+     },
+     {
+      "name": "Wikipedia - Chevrolet Suburban (fifth/sixth/seventh generation infoboxes)",
+      "url": "https://en.wikipedia.org/wiki/Chevrolet_Suburban",
+      "says": "seventh-gen engine list: 250 I6"
+     }
+    ],
+    "independent_sources": 3,
+    "hp_sources_agree": true,
+    "status": "three_sources_not_nhra",
+    "note": ""
+   },
+   {
+    "gen": "1973-1991",
+    "cid": 305,
+    "hp": 140,
+    "hp_basis": "SAE net",
+    "rpo": "",
+    "name": "5.0L / 305 V8",
+    "common_name": "305 small block",
+    "trims": [
+     "C10 Suburban",
+     "K10 Suburban"
+    ],
+    "nhra": false,
+    "sources": [
+     {
+      "name": "Chevrolet 1976 Suburban brochure (engine text and HD-emissions engine table p.5)",
+      "url": "https://oldcarbrochures.org/United%20States/GM%20Trucks%20and%20Vans/1976_Trucks_and_Vans/1976_Chevrolet_Suburban_Brochure/index.html",
+      "says": "A new 305 2-bbl is the standard V8, except in California; table lists the 305 2-bbl with HP 'N.A.'"
+     },
+     {
+      "name": "Hagerty Valuation Tools - 1976 Chevrolet C10 Suburban",
+      "url": "https://www.hagerty.com/valuation-tools/chevrolet/c10_suburban/1976",
+      "says": "8-cyl. 305cid/140hp 2bbl"
+     },
+     {
+      "name": "Hagerty Valuation Tools - 1976 Chevrolet K10 Suburban",
+      "url": "https://www.hagerty.com/valuation-tools/chevrolet/k10_suburban/1976",
+      "says": "8-cyl. 305cid/140hp 2bbl"
+     },
+     {
+      "name": "Wikipedia - Chevrolet Suburban (fifth/sixth/seventh generation infoboxes)",
+      "url": "https://en.wikipedia.org/wiki/Chevrolet_Suburban",
+      "says": "seventh-gen engine list: 305 V8 (1976-88)"
+     }
+    ],
+    "independent_sources": 3,
+    "hp_sources_agree": true,
+    "status": "three_sources_not_nhra",
+    "note": "New for 1976. GM's brochure prints no 305 rating; 140 hp from Hagerty and GM's 1976 VIN card. Not in California."
+   },
+   {
+    "gen": "1973-1991",
+    "cid": 350,
+    "hp": 165,
+    "hp_basis": "SAE net",
+    "rpo": "",
+    "name": "5.7L / 350 V8",
+    "common_name": "High Torque 350",
+    "trims": [
+     "C10 Suburban",
+     "K10 Suburban"
+    ],
+    "nhra": false,
+    "sources": [
+     {
+      "name": "Chevrolet 1976 Suburban brochure (engine text and HD-emissions engine table p.5)",
+      "url": "https://oldcarbrochures.org/United%20States/GM%20Trucks%20and%20Vans/1976_Trucks_and_Vans/1976_Chevrolet_Suburban_Brochure/index.html",
+      "says": "350-4 V8 available; HD table 350 4-bbl SAE net 165 @ 3800"
+     },
+     {
+      "name": "Hagerty Valuation Tools - 1976 Chevrolet C10 Suburban",
+      "url": "https://www.hagerty.com/valuation-tools/chevrolet/c10_suburban/1976",
+      "says": "8-cyl. 350cid/165hp 4bbl"
+     },
+     {
+      "name": "Hagerty Valuation Tools - 1976 Chevrolet K10 Suburban",
+      "url": "https://www.hagerty.com/valuation-tools/chevrolet/k10_suburban/1976",
+      "says": "8-cyl. 350cid/165hp 4bbl"
+     },
+     {
+      "name": "Wikipedia - Chevrolet Suburban (fifth/sixth/seventh generation infoboxes)",
+      "url": "https://en.wikipedia.org/wiki/Chevrolet_Suburban",
+      "says": "seventh-gen engine list: 350 V8"
+     }
+    ],
+    "independent_sources": 3,
+    "hp_sources_agree": true,
+    "status": "three_sources_not_nhra",
+    "note": ""
+   },
+   {
+    "gen": "1973-1991",
+    "cid": 400,
+    "hp": 175,
+    "hp_basis": "SAE net",
+    "rpo": "",
+    "name": "6.6L / 400 V8",
+    "common_name": "400 small block",
+    "trims": [
+     "K10 Suburban (4WD only)"
+    ],
+    "nhra": false,
+    "sources": [
+     {
+      "name": "Chevrolet 1976 Suburban brochure (engine text and HD-emissions engine table p.5)",
+      "url": "https://oldcarbrochures.org/United%20States/GM%20Trucks%20and%20Vans/1976_Trucks_and_Vans/1976_Chevrolet_Suburban_Brochure/index.html",
+      "says": "a 400-4 V8 (with 4-wheel drive); HD table 400 4-bbl SAE net 175 @ 3600"
+     },
+     {
+      "name": "Hagerty Valuation Tools - 1976 Chevrolet K10 Suburban",
+      "url": "https://www.hagerty.com/valuation-tools/chevrolet/k10_suburban/1976",
+      "says": "8-cyl. 400cid/175hp 4bbl"
+     },
+     {
+      "name": "Wikipedia - Chevrolet Suburban (fifth/sixth/seventh generation infoboxes)",
+      "url": "https://en.wikipedia.org/wiki/Chevrolet_Suburban",
+      "says": "seventh-gen engine list: 400 V8 (1976-80)"
+     }
+    ],
+    "independent_sources": 3,
+    "hp_sources_agree": true,
+    "status": "three_sources_not_nhra",
+    "note": ""
+   },
+   {
+    "gen": "1973-1991",
+    "cid": 454,
+    "hp": 240,
+    "hp_basis": "SAE net",
+    "rpo": "",
+    "name": "7.4L / 454 V8",
+    "common_name": "454 big block",
+    "trims": [
+     "C10 Suburban (2WD only)"
+    ],
+    "nhra": false,
+    "sources": [
+     {
+      "name": "Chevrolet 1976 Suburban brochure (engine text and HD-emissions engine table p.5)",
+      "url": "https://oldcarbrochures.org/United%20States/GM%20Trucks%20and%20Vans/1976_Trucks_and_Vans/1976_Chevrolet_Suburban_Brochure/index.html",
+      "says": "a 454-4 V8 (2-wheel-drive models); HD table 454 4-bbl SAE net 240 @ 3800 (250 in California)"
+     },
+     {
+      "name": "Hagerty Valuation Tools - 1976 Chevrolet C10 Suburban",
+      "url": "https://www.hagerty.com/valuation-tools/chevrolet/c10_suburban/1976",
+      "says": "8-cyl. 454cid/215hp 4bbl (C10 only)"
+     },
+     {
+      "name": "Wikipedia - Chevrolet Suburban (fifth/sixth/seventh generation infoboxes)",
+      "url": "https://en.wikipedia.org/wiki/Chevrolet_Suburban",
+      "says": "seventh-gen engine list: 454 V8"
+     }
+    ],
+    "independent_sources": 3,
+    "hp_sources_agree": false,
+    "status": "disputed",
+    "note": "Engine confirmed by 3 sources; HP disputed: GM Suburban heavy-duty rating 240 (California 250); Hagerty 215."
+   }
+  ],
+  "1977": [
+   {
+    "gen": "1973-1991",
+    "cid": 250,
+    "hp": 100,
+    "hp_basis": "SAE net",
+    "rpo": "std",
+    "name": "4.1L / 250 I6",
+    "common_name": "High Torque 250",
+    "trims": [
+     "C10 Suburban (2WD only)"
+    ],
+    "nhra": false,
+    "sources": [
+     {
+      "name": "Chevrolet 1977 Suburban brochure (Sept 1976, 3425; engine table p.7, Specifications p.12)",
+      "url": "https://oldcarbrochures.org/United%20States/GM%20Trucks%20and%20Vans/1977_Trucks_and_Vans/1977%20Chevy%20Suburban/index.html",
+      "says": "The 250 Six is standard for C10 Series Suburbans; HD table 250 1-bbl 100 @ 3600, not in California"
+     },
+     {
+      "name": "Hagerty Valuation Tools - 1977 Chevrolet C10 Suburban",
+      "url": "https://www.hagerty.com/valuation-tools/chevrolet/c10_suburban/1977",
+      "says": "6-cyl. 250cid/100hp 1bbl (C10 only)"
+     },
+     {
+      "name": "Wikipedia - Chevrolet Suburban (fifth/sixth/seventh generation infoboxes)",
+      "url": "https://en.wikipedia.org/wiki/Chevrolet_Suburban",
+      "says": "seventh-gen engine list: 250 I6"
+     }
+    ],
+    "independent_sources": 3,
+    "hp_sources_agree": true,
+    "status": "three_sources_not_nhra",
+    "note": ""
+   },
+   {
+    "gen": "1973-1991",
+    "cid": 305,
+    "hp": 140,
+    "hp_basis": "SAE net",
+    "rpo": "",
+    "name": "5.0L / 305 V8",
+    "common_name": "305 small block",
+    "trims": [
+     "C10 Suburban",
+     "K10 Suburban"
+    ],
+    "nhra": false,
+    "sources": [
+     {
+      "name": "Chevrolet 1977 Suburban brochure (Sept 1976, 3425; engine table p.7, Specifications p.12)",
+      "url": "https://oldcarbrochures.org/United%20States/GM%20Trucks%20and%20Vans/1977_Trucks_and_Vans/1977%20Chevy%20Suburban/index.html",
+      "says": "305 2-bbl available on the C10 Suburban, standard on K10; HD table 140 @ 3800; not in California"
+     },
+     {
+      "name": "Hagerty Valuation Tools - 1977 Chevrolet C10 Suburban",
+      "url": "https://www.hagerty.com/valuation-tools/chevrolet/c10_suburban/1977",
+      "says": "8-cyl. 305cid/140hp 2bbl"
+     },
+     {
+      "name": "Hagerty Valuation Tools - 1977 Chevrolet K10 Suburban",
+      "url": "https://www.hagerty.com/valuation-tools/chevrolet/k10_suburban/1977",
+      "says": "8-cyl. 305cid/140hp 2bbl"
+     },
+     {
+      "name": "Wikipedia - Chevrolet Suburban (fifth/sixth/seventh generation infoboxes)",
+      "url": "https://en.wikipedia.org/wiki/Chevrolet_Suburban",
+      "says": "seventh-gen engine list: 305 V8 (1976-88)"
+     }
+    ],
+    "independent_sources": 3,
+    "hp_sources_agree": true,
+    "status": "three_sources_not_nhra",
+    "note": ""
+   },
+   {
+    "gen": "1973-1991",
+    "cid": 350,
+    "hp": 165,
+    "hp_basis": "SAE net",
+    "rpo": "",
+    "name": "5.7L / 350 V8",
+    "common_name": "High Torque 350",
+    "trims": [
+     "C10 Suburban",
+     "K10 Suburban"
+    ],
+    "nhra": false,
+    "sources": [
+     {
+      "name": "Chevrolet 1977 Suburban brochure (Sept 1976, 3425; engine table p.7, Specifications p.12)",
+      "url": "https://oldcarbrochures.org/United%20States/GM%20Trucks%20and%20Vans/1977_Trucks_and_Vans/1977%20Chevy%20Suburban/index.html",
+      "says": "350-4 available on all models (required in California); HD table 165 @ 3800"
+     },
+     {
+      "name": "Hagerty Valuation Tools - 1977 Chevrolet C10 Suburban",
+      "url": "https://www.hagerty.com/valuation-tools/chevrolet/c10_suburban/1977",
+      "says": "8-cyl. 350cid/165hp 4bbl"
+     },
+     {
+      "name": "Hagerty Valuation Tools - 1977 Chevrolet K10 Suburban",
+      "url": "https://www.hagerty.com/valuation-tools/chevrolet/k10_suburban/1977",
+      "says": "8-cyl. 350cid/165hp 4bbl"
+     },
+     {
+      "name": "Wikipedia - Chevrolet Suburban (fifth/sixth/seventh generation infoboxes)",
+      "url": "https://en.wikipedia.org/wiki/Chevrolet_Suburban",
+      "says": "seventh-gen engine list: 350 V8"
+     }
+    ],
+    "independent_sources": 3,
+    "hp_sources_agree": true,
+    "status": "three_sources_not_nhra",
+    "note": ""
+   },
+   {
+    "gen": "1973-1991",
+    "cid": 400,
+    "hp": 175,
+    "hp_basis": "SAE net",
+    "rpo": "",
+    "name": "6.6L / 400 V8",
+    "common_name": "400 small block",
+    "trims": [
+     "K10 Suburban (4WD only)"
+    ],
+    "nhra": false,
+    "sources": [
+     {
+      "name": "Chevrolet 1977 Suburban brochure (Sept 1976, 3425; engine table p.7, Specifications p.12)",
+      "url": "https://oldcarbrochures.org/United%20States/GM%20Trucks%20and%20Vans/1977_Trucks_and_Vans/1977%20Chevy%20Suburban/index.html",
+      "says": "a 400-4 V8 is available for K10-20 Suburbans; HD table 175 @ 3600"
+     },
+     {
+      "name": "Hagerty Valuation Tools - 1977 Chevrolet K10 Suburban",
+      "url": "https://www.hagerty.com/valuation-tools/chevrolet/k10_suburban/1977",
+      "says": "8-cyl. 400cid/175hp 4bbl"
+     },
+     {
+      "name": "Wikipedia - Chevrolet Suburban (fifth/sixth/seventh generation infoboxes)",
+      "url": "https://en.wikipedia.org/wiki/Chevrolet_Suburban",
+      "says": "seventh-gen engine list: 400 V8 (1976-80)"
+     }
+    ],
+    "independent_sources": 3,
+    "hp_sources_agree": true,
+    "status": "three_sources_not_nhra",
+    "note": ""
+   },
+   {
+    "gen": "1973-1991",
+    "cid": 454,
+    "hp": 240,
+    "hp_basis": "SAE net",
+    "rpo": "",
+    "name": "7.4L / 454 V8",
+    "common_name": "454 big block",
+    "trims": [
+     "C10 Suburban (2WD only)"
+    ],
+    "nhra": false,
+    "sources": [
+     {
+      "name": "Chevrolet 1977 Suburban brochure (Sept 1976, 3425; engine table p.7, Specifications p.12)",
+      "url": "https://oldcarbrochures.org/United%20States/GM%20Trucks%20and%20Vans/1977_Trucks_and_Vans/1977%20Chevy%20Suburban/index.html",
+      "says": "a big-block 454-4 V8 is available for C10-20 Suburbans; HD table 240 @ 3800 (250 in California)"
+     },
+     {
+      "name": "Hagerty Valuation Tools - 1977 Chevrolet C10 Suburban",
+      "url": "https://www.hagerty.com/valuation-tools/chevrolet/c10_suburban/1977",
+      "says": "8-cyl. 454cid/245hp 4bbl (C10 only)"
+     },
+     {
+      "name": "Wikipedia - Chevrolet Suburban (fifth/sixth/seventh generation infoboxes)",
+      "url": "https://en.wikipedia.org/wiki/Chevrolet_Suburban",
+      "says": "seventh-gen engine list: 454 V8"
+     }
+    ],
+    "independent_sources": 3,
+    "hp_sources_agree": false,
+    "status": "disputed",
+    "note": "Engine confirmed by 3 sources; HP disputed: GM Suburban brochure 240 (heavy-duty emissions), Hagerty 245."
+   }
+  ],
+  "1978": [
+   {
+    "gen": "1973-1991",
+    "cid": 250,
+    "hp": 100,
+    "hp_basis": "SAE net",
+    "rpo": "std",
+    "name": "4.1L / 250 I6",
+    "common_name": "High Torque 250",
+    "trims": [
+     "C10 Suburban (2WD only)"
+    ],
+    "nhra": false,
+    "sources": [
+     {
+      "name": "Chevrolet 1978 Suburban brochure (July 1977, 3583; engine table shows 1977 ratings; Specifications by series)",
+      "url": "https://oldcarbrochures.org/United%20States/GM%20Trucks%20and%20Vans/1978_Trucks_and__Vans/1978%20Chevrolet%20Suburban/index.html",
+      "says": "The 250 Six is standard for C10 Series Suburbans except California; spec table C10 standard 250-1"
+     },
+     {
+      "name": "Hagerty Valuation Tools - 1978 Chevrolet C10 Suburban",
+      "url": "https://www.hagerty.com/valuation-tools/chevrolet/c10_suburban/1978",
+      "says": "6-cyl. 250cid/100hp 1bbl (C10 only)"
+     },
+     {
+      "name": "Wikipedia - Chevrolet Suburban (fifth/sixth/seventh generation infoboxes)",
+      "url": "https://en.wikipedia.org/wiki/Chevrolet_Suburban",
+      "says": "seventh-gen engine list: 250 I6"
+     }
+    ],
+    "independent_sources": 3,
+    "hp_sources_agree": true,
+    "status": "three_sources_not_nhra",
+    "note": "HP 100 from Hagerty (matches GM's carried-over table). GM's 1978 Suburban brochures print 1977 ratings ('1978 ratings not available at date of publication'), so GM does not confirm a 1978 figure."
+   },
+   {
+    "gen": "1973-1991",
+    "cid": 305,
+    "hp": 145,
+    "hp_basis": "SAE net",
+    "rpo": "",
+    "name": "5.0L / 305 V8",
+    "common_name": "305 small block",
+    "trims": [
+     "C10 Suburban",
+     "K10 Suburban"
+    ],
+    "nhra": false,
+    "sources": [
+     {
+      "name": "Chevrolet 1978 Suburban brochure (July 1977, 3583; engine table shows 1977 ratings; Specifications by series)",
+      "url": "https://oldcarbrochures.org/United%20States/GM%20Trucks%20and%20Vans/1978_Trucks_and__Vans/1978%20Chevrolet%20Suburban/index.html",
+      "says": "spec table: C10 available 305-2, K10 standard 305-2 (not in California)"
+     },
+     {
+      "name": "Hagerty Valuation Tools - 1978 Chevrolet C10 Suburban",
+      "url": "https://www.hagerty.com/valuation-tools/chevrolet/c10_suburban/1978",
+      "says": "8-cyl. 305cid/145hp 2bbl"
+     },
+     {
+      "name": "Hagerty Valuation Tools - 1978 Chevrolet K10 Suburban",
+      "url": "https://www.hagerty.com/valuation-tools/chevrolet/k10_suburban/1978",
+      "says": "8-cyl. 305cid/145hp 2bbl"
+     },
+     {
+      "name": "Wikipedia - Chevrolet Suburban (fifth/sixth/seventh generation infoboxes)",
+      "url": "https://en.wikipedia.org/wiki/Chevrolet_Suburban",
+      "says": "seventh-gen engine list: 305 V8 (1976-88)"
+     }
+    ],
+    "independent_sources": 3,
+    "hp_sources_agree": false,
+    "status": "three_sources_not_nhra",
+    "note": "HP: Hagerty 145; the brochure's carried-over 1977 table says 140. GM's 1978 Suburban brochures print 1977 ratings ('1978 ratings not available at date of publication'), so GM does not confirm a 1978 figure."
+   },
+   {
+    "gen": "1973-1991",
+    "cid": 350,
+    "hp": 165,
+    "hp_basis": "SAE net",
+    "rpo": "",
+    "name": "5.7L / 350 V8",
+    "common_name": "High Torque 350",
+    "trims": [
+     "C10 Suburban",
+     "K10 Suburban"
+    ],
+    "nhra": false,
+    "sources": [
+     {
+      "name": "Chevrolet 1978 Suburban brochure (July 1977, 3583; engine table shows 1977 ratings; Specifications by series)",
+      "url": "https://oldcarbrochures.org/United%20States/GM%20Trucks%20and%20Vans/1978_Trucks_and__Vans/1978%20Chevrolet%20Suburban/index.html",
+      "says": "350-4 available on all models; table (1977 ratings) 165 @ 3800"
+     },
+     {
+      "name": "Hagerty Valuation Tools - 1978 Chevrolet C10 Suburban",
+      "url": "https://www.hagerty.com/valuation-tools/chevrolet/c10_suburban/1978",
+      "says": "8-cyl. 350cid/165hp and 155hp 4bbl"
+     },
+     {
+      "name": "Hagerty Valuation Tools - 1978 Chevrolet K10 Suburban",
+      "url": "https://www.hagerty.com/valuation-tools/chevrolet/k10_suburban/1978",
+      "says": "8-cyl. 350cid/165hp and 155hp 4bbl"
+     },
+     {
+      "name": "Wikipedia - Chevrolet Suburban (fifth/sixth/seventh generation infoboxes)",
+      "url": "https://en.wikipedia.org/wiki/Chevrolet_Suburban",
+      "says": "seventh-gen engine list: 350 V8"
+     }
+    ],
+    "independent_sources": 3,
+    "hp_sources_agree": true,
+    "status": "three_sources_not_nhra",
+    "note": "Hagerty also lists a 155-hp (California) version. GM's 1978 Suburban brochures print 1977 ratings ('1978 ratings not available at date of publication'), so GM does not confirm a 1978 figure."
+   },
+   {
+    "gen": "1973-1991",
+    "cid": 400,
+    "hp": 175,
+    "hp_basis": "SAE net",
+    "rpo": "",
+    "name": "6.6L / 400 V8",
+    "common_name": "400 small block",
+    "trims": [
+     "K10 Suburban (4WD only)"
+    ],
+    "nhra": false,
+    "sources": [
+     {
+      "name": "Chevrolet 1978 Suburban brochure (July 1977, 3583; engine table shows 1977 ratings; Specifications by series)",
+      "url": "https://oldcarbrochures.org/United%20States/GM%20Trucks%20and%20Vans/1978_Trucks_and__Vans/1978%20Chevrolet%20Suburban/index.html",
+      "says": "A 400-4 V-8 is also available for K10-20 Suburbans; table (1977 ratings) 175 @ 3600"
+     },
+     {
+      "name": "Hagerty Valuation Tools - 1978 Chevrolet K10 Suburban",
+      "url": "https://www.hagerty.com/valuation-tools/chevrolet/k10_suburban/1978",
+      "says": "8-cyl. 400cid/175hp and 165hp 4bbl"
+     },
+     {
+      "name": "Wikipedia - Chevrolet Suburban (fifth/sixth/seventh generation infoboxes)",
+      "url": "https://en.wikipedia.org/wiki/Chevrolet_Suburban",
+      "says": "seventh-gen engine list: 400 V8 (1976-80)"
+     }
+    ],
+    "independent_sources": 3,
+    "hp_sources_agree": true,
+    "status": "three_sources_not_nhra",
+    "note": "Hagerty also lists 165 hp (California). GM's 1978 Suburban brochures print 1977 ratings ('1978 ratings not available at date of publication'), so GM does not confirm a 1978 figure."
+   },
+   {
+    "gen": "1973-1991",
+    "cid": 454,
+    "hp": null,
+    "hp_basis": "SAE net",
+    "rpo": "",
+    "name": "7.4L / 454 V8",
+    "common_name": "454 big block",
+    "trims": [
+     "C10 Suburban (2WD only)"
+    ],
+    "nhra": false,
+    "sources": [
+     {
+      "name": "Chevrolet 1978 Suburban brochure (July 1977, 3583; engine table shows 1977 ratings; Specifications by series)",
+      "url": "https://oldcarbrochures.org/United%20States/GM%20Trucks%20and%20Vans/1978_Trucks_and__Vans/1978%20Chevrolet%20Suburban/index.html",
+      "says": "a big-block 454-4 V-8 is available for C10-20 Suburbans; table (1977 ratings) 240 @ 3800"
+     },
+     {
+      "name": "Hagerty Valuation Tools - 1978 Chevrolet C10 Suburban",
+      "url": "https://www.hagerty.com/valuation-tools/chevrolet/c10_suburban/1978",
+      "says": "8-cyl. 454cid/205hp and 240hp 4bbl (C10 only)"
+     },
+     {
+      "name": "Wikipedia - Chevrolet Suburban (fifth/sixth/seventh generation infoboxes)",
+      "url": "https://en.wikipedia.org/wiki/Chevrolet_Suburban",
+      "says": "seventh-gen engine list: 454 V8"
+     }
+    ],
+    "independent_sources": 3,
+    "hp_sources_agree": false,
+    "status": "disputed",
+    "note": "Engine confirmed by 3 sources; HP withheld. Hagerty lists both 205 and 240; GM shows only the 1977 heavy-duty figure (240); the 1978 pickup light-duty rating was 205. GM's 1978 Suburban brochures print 1977 ratings ('1978 ratings not available at date of publication'), so GM does not confirm a 1978 figure."
+   }
+  ],
+  "1979": [
+   {
+    "gen": "1973-1991",
+    "cid": 250,
+    "hp": 130,
+    "hp_basis": "SAE net",
+    "rpo": "LE3",
+    "name": "4.1L / 250 I6",
+    "common_name": "250 six (2-bbl)",
+    "trims": [
+     "C10 Suburban (2WD only)"
+    ],
+    "nhra": false,
+    "sources": [
+     {
+      "name": "Chevrolet 1979 Suburban brochure (engine text and Engine Specifications table p.7)",
+      "url": "https://oldcarbrochures.org/United%20States/GM%20Trucks%20and%20Vans/1979_Trucks_and_Vans/1979%20Chevrolet%20Suburban%20-%20rescan/index.html",
+      "says": "The 4.1 Litre (250) Six is standard on C10 Series Suburbans (not in California); LE3 SAE net 130 @ 4000"
+     },
+     {
+      "name": "Hagerty Valuation Tools - 1979 Chevrolet C10 Suburban",
+      "url": "https://www.hagerty.com/valuation-tools/chevrolet/c10_suburban/1979",
+      "says": "6-cyl. 250cid/130hp 2bbl (C10 only)"
+     },
+     {
+      "name": "Wikipedia - Chevrolet Suburban (fifth/sixth/seventh generation infoboxes)",
+      "url": "https://en.wikipedia.org/wiki/Chevrolet_Suburban",
+      "says": "seventh-gen engine list: 250 I6"
+     }
+    ],
+    "independent_sources": 3,
+    "hp_sources_agree": true,
+    "status": "three_sources_not_nhra",
+    "note": "New staged 2-bbl carburetor. Last year of the six in the Suburban."
+   },
+   {
+    "gen": "1973-1991",
+    "cid": 305,
+    "hp": 140,
+    "hp_basis": "SAE net",
+    "rpo": "LG9",
+    "name": "5.0L / 305 V8",
+    "common_name": "305 small block",
+    "trims": [
+     "C10 Suburban",
+     "K10 Suburban"
+    ],
+    "nhra": false,
+    "sources": [
+     {
+      "name": "Chevrolet 1979 Suburban brochure (engine text and Engine Specifications table p.7)",
+      "url": "https://oldcarbrochures.org/United%20States/GM%20Trucks%20and%20Vans/1979_Trucks_and_Vans/1979%20Chevrolet%20Suburban%20-%20rescan/index.html",
+      "says": "5.0 Litre V8 with Dualjet is standard on K10 and C20 and available for C10 (except California); LG9 140 @ 4000"
+     },
+     {
+      "name": "Hagerty Valuation Tools - 1979 Chevrolet C10 Suburban",
+      "url": "https://www.hagerty.com/valuation-tools/chevrolet/c10_suburban/1979",
+      "says": "8-cyl. 305cid/140hp 2bbl"
+     },
+     {
+      "name": "Hagerty Valuation Tools - 1979 Chevrolet K10 Suburban",
+      "url": "https://www.hagerty.com/valuation-tools/chevrolet/k10_suburban/1979",
+      "says": "8-cyl. 305cid/140hp 2bbl"
+     },
+     {
+      "name": "Wikipedia - Chevrolet Suburban (fifth/sixth/seventh generation infoboxes)",
+      "url": "https://en.wikipedia.org/wiki/Chevrolet_Suburban",
+      "says": "seventh-gen engine list: 305 V8 (1976-88)"
+     }
+    ],
+    "independent_sources": 3,
+    "hp_sources_agree": true,
+    "status": "three_sources_not_nhra",
+    "note": ""
+   },
+   {
+    "gen": "1973-1991",
+    "cid": 350,
+    "hp": 165,
+    "hp_basis": "SAE net",
+    "rpo": "LS9",
+    "name": "5.7L / 350 V8",
+    "common_name": "350 small block",
+    "trims": [
+     "C10 Suburban",
+     "K10 Suburban"
+    ],
+    "nhra": false,
+    "sources": [
+     {
+      "name": "Chevrolet 1979 Suburban brochure (engine text and Engine Specifications table p.7)",
+      "url": "https://oldcarbrochures.org/United%20States/GM%20Trucks%20and%20Vans/1979_Trucks_and_Vans/1979%20Chevrolet%20Suburban%20-%20rescan/index.html",
+      "says": "5.7 Litre V8 available for all other models; LS9 165 @ 3800 (California 155)"
+     },
+     {
+      "name": "Hagerty Valuation Tools - 1979 Chevrolet C10 Suburban",
+      "url": "https://www.hagerty.com/valuation-tools/chevrolet/c10_suburban/1979",
+      "says": "8-cyl. 350cid/165hp (and 155hp) 4bbl"
+     },
+     {
+      "name": "Hagerty Valuation Tools - 1979 Chevrolet K10 Suburban",
+      "url": "https://www.hagerty.com/valuation-tools/chevrolet/k10_suburban/1979",
+      "says": "8-cyl. 350cid/165hp (and 155hp) 4bbl"
+     },
+     {
+      "name": "Wikipedia - Chevrolet Suburban (fifth/sixth/seventh generation infoboxes)",
+      "url": "https://en.wikipedia.org/wiki/Chevrolet_Suburban",
+      "says": "seventh-gen engine list: 350 V8"
+     }
+    ],
+    "independent_sources": 3,
+    "hp_sources_agree": true,
+    "status": "three_sources_not_nhra",
+    "note": "California version 155 hp."
+   },
+   {
+    "gen": "1973-1991",
+    "cid": 400,
+    "hp": 185,
+    "hp_basis": "SAE net",
+    "rpo": "LF4",
+    "name": "6.6L / 400 V8",
+    "common_name": "400 small block",
+    "trims": [
+     "K10 Suburban (4WD only)"
+    ],
+    "nhra": false,
+    "sources": [
+     {
+      "name": "Chevrolet 1979 Suburban brochure (engine text and Engine Specifications table p.7)",
+      "url": "https://oldcarbrochures.org/United%20States/GM%20Trucks%20and%20Vans/1979_Trucks_and_Vans/1979%20Chevrolet%20Suburban%20-%20rescan/index.html",
+      "says": "A 6.6 Litre (400) V8 is also available for K10-20 models; LF4 185 @ 3600 (California 170)"
+     },
+     {
+      "name": "Hagerty Valuation Tools - 1979 Chevrolet K10 Suburban",
+      "url": "https://www.hagerty.com/valuation-tools/chevrolet/k10_suburban/1979",
+      "says": "8-cyl. 400cid/185hp and 170hp 4bbl"
+     },
+     {
+      "name": "Wikipedia - Chevrolet Suburban (fifth/sixth/seventh generation infoboxes)",
+      "url": "https://en.wikipedia.org/wiki/Chevrolet_Suburban",
+      "says": "seventh-gen engine list: 400 V8 (1976-80)"
+     }
+    ],
+    "independent_sources": 3,
+    "hp_sources_agree": true,
+    "status": "three_sources_not_nhra",
+    "note": "California version 170 hp. Last year in the half-ton Suburban (1980 brochure: 400 for K20 only)."
+   },
+   {
+    "gen": "1973-1991",
+    "cid": 454,
+    "hp": 205,
+    "hp_basis": "SAE net",
+    "rpo": "LF8",
+    "name": "7.4L / 454 V8",
+    "common_name": "454 big block",
+    "trims": [
+     "C10 Suburban (2WD only)"
+    ],
+    "nhra": false,
+    "sources": [
+     {
+      "name": "Chevrolet 1979 Suburban brochure (engine text and Engine Specifications table p.7)",
+      "url": "https://oldcarbrochures.org/United%20States/GM%20Trucks%20and%20Vans/1979_Trucks_and_Vans/1979%20Chevrolet%20Suburban%20-%20rescan/index.html",
+      "says": "a big-block 7.4 Litre (454) V8 is available for C10-20; LF8 205 @ 3600"
+     },
+     {
+      "name": "Hagerty Valuation Tools - 1979 Chevrolet C10 Suburban",
+      "url": "https://www.hagerty.com/valuation-tools/chevrolet/c10_suburban/1979",
+      "says": "8-cyl. 454cid/205hp 4bbl (C10 only)"
+     },
+     {
+      "name": "Wikipedia - Chevrolet Suburban (fifth/sixth/seventh generation infoboxes)",
+      "url": "https://en.wikipedia.org/wiki/Chevrolet_Suburban",
+      "says": "seventh-gen engine list: 454 V8"
+     }
+    ],
+    "independent_sources": 3,
+    "hp_sources_agree": true,
+    "status": "three_sources_not_nhra",
+    "note": "Last year in the half-ton Suburban; from 1980 the 454 is C20 only."
+   }
+  ],
+  "1980": [
+   {
+    "gen": "1973-1991",
+    "cid": 350,
+    "hp": 170,
+    "hp_basis": "SAE net",
+    "rpo": "LS9",
+    "name": "5.7L / 350 V8",
+    "common_name": "350 small block",
+    "trims": [
+     "C10 Suburban",
+     "K10 Suburban"
+    ],
+    "nhra": false,
+    "sources": [
+     {
+      "name": "Chevrolet 1980 Suburban brochure (Responsive V8 power text and engine table p.5)",
+      "url": "https://oldcarbrochures.org/United%20States/GM%20Trucks%20and%20Vans/1980_Trucks-Vans/1980_Chevrolet_Suburban_Brochure/index.html",
+      "says": "The 5.7 Liter (350) V8 is standard on all Suburbans; LS9 (8500 lb GVWR and below) SAE net 170 @ 4000"
+     },
+     {
+      "name": "Hagerty Valuation Tools - 1980 Chevrolet C10 Suburban",
+      "url": "https://www.hagerty.com/valuation-tools/chevrolet/c10_suburban/1980",
+      "says": "8-cyl. 350cid/170hp 4bbl (only engine listed)"
+     },
+     {
+      "name": "Hagerty Valuation Tools - 1980 Chevrolet K10 Suburban",
+      "url": "https://www.hagerty.com/valuation-tools/chevrolet/k10_suburban/1980",
+      "says": "8-cyl. 350cid/170hp 4bbl (only engine listed)"
+     },
+     {
+      "name": "Wikipedia - Chevrolet Suburban (fifth/sixth/seventh generation infoboxes)",
+      "url": "https://en.wikipedia.org/wiki/Chevrolet_Suburban",
+      "says": "seventh-gen engine list: 350 V8"
+     }
+    ],
+    "independent_sources": 3,
+    "hp_sources_agree": true,
+    "status": "three_sources_not_nhra",
+    "note": "Only half-ton engine for 1980: the 454 was C20-only and the 400 K20-only (GM brochure). Wikipedia's '400 (1976-80)' and '305 (1976-88)' ranges do not apply to the 1980 half-ton."
+   }
+  ],
+  "1981": [
+   {
+    "gen": "1973-1991",
+    "cid": 305,
+    "hp": 165,
+    "hp_basis": "SAE net",
+    "rpo": "LE9",
+    "name": "5.0L / 305 V8",
+    "common_name": "305 ESC",
+    "trims": [
+     "C10 Suburban (2WD only)"
+    ],
+    "nhra": false,
+    "sources": [
+     {
+      "name": "Chevrolet 1981 Suburban brochure (New Power page p.8 and engine table)",
+      "url": "https://oldcarbrochures.org/United%20States/GM%20Trucks%20and%20Vans/1981_Trucks_and_Vans/1981%20Chevy%20Suburban/index.html",
+      "says": "New 5.0 Liter V8 with Electronic Spark Control is standard on the Series C10 model in all states except California; LE9 165 @ 4400"
+     },
+     {
+      "name": "Hagerty Valuation Tools - 1981 Chevrolet Suburban",
+      "url": "https://www.hagerty.com/valuation-tools/chevrolet/suburban/1981",
+      "says": "8-cyl. 305cid/160hp 4bbl (C10 only)"
+     },
+     {
+      "name": "Wikipedia - Chevrolet Suburban (fifth/sixth/seventh generation infoboxes)",
+      "url": "https://en.wikipedia.org/wiki/Chevrolet_Suburban",
+      "says": "seventh-gen engine list: 305 V8 (1976-88)"
+     }
+    ],
+    "independent_sources": 3,
+    "hp_sources_agree": false,
+    "status": "three_sources_not_nhra",
+    "note": "HP: GM Suburban brochure 165 (also GM's 10-series pickup figure); Hagerty 160 (the 1982-86 figure). Not in California."
+   },
+   {
+    "gen": "1973-1991",
+    "cid": 350,
+    "hp": null,
+    "hp_basis": "SAE net",
+    "rpo": "LS9",
+    "name": "5.7L / 350 V8",
+    "common_name": "350 small block",
+    "trims": [
+     "C10 Suburban (optional)",
+     "K10 Suburban (standard)"
+    ],
+    "nhra": false,
+    "sources": [
+     {
+      "name": "Chevrolet 1981 Suburban brochure (New Power page p.8 and engine table)",
+      "url": "https://oldcarbrochures.org/United%20States/GM%20Trucks%20and%20Vans/1981_Trucks_and_Vans/1981%20Chevy%20Suburban/index.html",
+      "says": "5.7 Liter V8 is optional for the C10 Suburban; on K10 and K20 Suburbans the 5.7 is standard; LS9 rating 'N.A.'"
+     },
+     {
+      "name": "Hagerty Valuation Tools - 1981 Chevrolet Suburban",
+      "url": "https://www.hagerty.com/valuation-tools/chevrolet/suburban/1981",
+      "says": "8-cyl. 350cid/165hp 4bbl (C10 and K10); 350cid/160hp (C10, C20)"
+     },
+     {
+      "name": "Wikipedia - Chevrolet Suburban (fifth/sixth/seventh generation infoboxes)",
+      "url": "https://en.wikipedia.org/wiki/Chevrolet_Suburban",
+      "says": "seventh-gen engine list: 350 V8"
+     }
+    ],
+    "independent_sources": 3,
+    "hp_sources_agree": false,
+    "status": "three_sources_not_nhra",
+    "note": "Engine confirmed by 3 sources. HP withheld: GM's brochure says 'N.A.' and Hagerty gives both 165 and 160."
+   }
+  ],
+  "1982": [
+   {
+    "gen": "1973-1991",
+    "cid": 305,
+    "hp": 160,
+    "hp_basis": "SAE net",
+    "rpo": "LE9",
+    "name": "5.0L / 305 V8",
+    "common_name": "305 ESC",
+    "trims": [
+     "C10 Suburban (2WD only)"
+    ],
+    "nhra": false,
+    "sources": [
+     {
+      "name": "Chevrolet 1982 Suburban brochure (6.2 Diesel page p.8, Chevy Suburban Engine Lineup table)",
+      "url": "https://oldcarbrochures.org/United%20States/GM%20Trucks%20and%20Vans/1982_Trucks_and_Vans/1982%20Chevy%20Suburban/index.html",
+      "says": "5.0 Liter V8 with ESC standard on Series C10 (not in California); Engine Lineup LE9 160 @ 4400"
+     },
+     {
+      "name": "Hagerty Valuation Tools - 1982 Chevrolet Suburban",
+      "url": "https://www.hagerty.com/valuation-tools/chevrolet/suburban/1982",
+      "says": "8-cyl. 305cid/160hp 4bbl (C10 only)"
+     },
+     {
+      "name": "Wikipedia - Chevrolet Suburban (fifth/sixth/seventh generation infoboxes)",
+      "url": "https://en.wikipedia.org/wiki/Chevrolet_Suburban",
+      "says": "seventh-gen engine list: 305 V8 (1976-88)"
+     }
+    ],
+    "independent_sources": 3,
+    "hp_sources_agree": true,
+    "status": "three_sources_not_nhra",
+    "note": ""
+   },
+   {
+    "gen": "1973-1991",
+    "cid": 350,
+    "hp": 165,
+    "hp_basis": "SAE net",
+    "rpo": "LS9",
+    "name": "5.7L / 350 V8",
+    "common_name": "350 small block",
+    "trims": [
+     "C10 Suburban (optional)",
+     "K10 Suburban (standard)"
+    ],
+    "nhra": false,
+    "sources": [
+     {
+      "name": "Chevrolet 1982 Suburban brochure (6.2 Diesel page p.8, Chevy Suburban Engine Lineup table)",
+      "url": "https://oldcarbrochures.org/United%20States/GM%20Trucks%20and%20Vans/1982_Trucks_and_Vans/1982%20Chevy%20Suburban/index.html",
+      "says": "5.7 Liter V8 available for C10, standard on K10/K20; LS9 (8500 lb GVWR and below) 165 @ 3800"
+     },
+     {
+      "name": "Hagerty Valuation Tools - 1982 Chevrolet Suburban",
+      "url": "https://www.hagerty.com/valuation-tools/chevrolet/suburban/1982",
+      "says": "8-cyl. 350cid/165hp 4bbl (C10 and K10)"
+     },
+     {
+      "name": "Wikipedia - Chevrolet Suburban (fifth/sixth/seventh generation infoboxes)",
+      "url": "https://en.wikipedia.org/wiki/Chevrolet_Suburban",
+      "says": "seventh-gen engine list: 350 V8"
+     }
+    ],
+    "independent_sources": 3,
+    "hp_sources_agree": true,
+    "status": "three_sources_not_nhra",
+    "note": ""
+   },
+   {
+    "gen": "1973-1991",
+    "cid": 379,
+    "hp": 130,
+    "hp_basis": "SAE net",
+    "rpo": "LH6",
+    "name": "6.2L / 379 diesel V8",
+    "common_name": "6.2 Detroit Diesel",
+    "trims": [
+     "C10 Suburban",
+     "K10 Suburban"
+    ],
+    "nhra": false,
+    "sources": [
+     {
+      "name": "Chevrolet 1982 Suburban brochure (6.2 Diesel page p.8, Chevy Suburban Engine Lineup table)",
+      "url": "https://oldcarbrochures.org/United%20States/GM%20Trucks%20and%20Vans/1982_Trucks_and_Vans/1982%20Chevy%20Suburban/index.html",
+      "says": "new 6.2 Liter Diesel ... rated at 130 SAE net HP; LH6 (8500 lb GVWR and below) 130 @ 3600; C10 Suburban Silverado Diesel pictured"
+     },
+     {
+      "name": "Hagerty Valuation Tools - 1982 Chevrolet Suburban",
+      "url": "https://www.hagerty.com/valuation-tools/chevrolet/suburban/1982",
+      "says": "8-cyl. 379cid/130hp Diesel (C10, C20)"
+     },
+     {
+      "name": "Wikipedia - Chevrolet Suburban (fifth/sixth/seventh generation infoboxes)",
+      "url": "https://en.wikipedia.org/wiki/Chevrolet_Suburban",
+      "says": "seventh-gen engine list: 379 cu in (6.2 L) Detroit Diesel V8 (1982-91)"
+     }
+    ],
+    "independent_sources": 3,
+    "hp_sources_agree": true,
+    "status": "three_sources_not_nhra",
+    "note": "New for 1982. Suburbans over 8500 lb GVWR (20 series) used the LL4 version."
+   }
+  ],
+  "1983": [
+   {
+    "gen": "1973-1991",
+    "cid": 305,
+    "hp": 160,
+    "hp_basis": "SAE net",
+    "rpo": "LE9",
+    "name": "5.0L / 305 V8",
+    "common_name": "305 ESC",
+    "trims": [
+     "C10 Suburban (2WD only)"
+    ],
+    "nhra": false,
+    "sources": [
+     {
+      "name": "Chevrolet 1983 Suburban brochure (Aug 1982, 4212; engine text p.6, Specifications p.8)",
+      "url": "https://oldcarbrochures.org/United%20States/GM%20Trucks%20and%20Vans/1983_Trucks_and_Vans/1983_Chevrolet_Suburban_Brochure/index.html",
+      "says": "The standard engine on the Series C10 model is the 5.0 Liter with ESC (not in California); spec table C10 standard 5.0"
+     },
+     {
+      "name": "Hagerty Valuation Tools - 1983 Chevrolet Suburban",
+      "url": "https://www.hagerty.com/valuation-tools/chevrolet/suburban/1983",
+      "says": "8-cyl. 305cid/160hp 4bbl (C10 only)"
+     },
+     {
+      "name": "Wikipedia - Chevrolet Suburban (fifth/sixth/seventh generation infoboxes)",
+      "url": "https://en.wikipedia.org/wiki/Chevrolet_Suburban",
+      "says": "seventh-gen engine list: 305 V8 (1976-88)"
+     }
+    ],
+    "independent_sources": 3,
+    "hp_sources_agree": true,
+    "status": "three_sources_not_nhra",
+    "note": "HP from Hagerty; the 1983 Suburban brochure gives no gasoline ratings (GMC's 1983 pickup brochure: LE9 165 in C-1500, 160 in K-1500)."
+   },
+   {
+    "gen": "1973-1991",
+    "cid": 350,
+    "hp": 165,
+    "hp_basis": "SAE net",
+    "rpo": "LS9",
+    "name": "5.7L / 350 V8",
+    "common_name": "350 small block",
+    "trims": [
+     "C10 Suburban (optional)",
+     "K10 Suburban (standard)"
+    ],
+    "nhra": false,
+    "sources": [
+     {
+      "name": "Chevrolet 1983 Suburban brochure (Aug 1982, 4212; engine text p.6, Specifications p.8)",
+      "url": "https://oldcarbrochures.org/United%20States/GM%20Trucks%20and%20Vans/1983_Trucks_and_Vans/1983_Chevrolet_Suburban_Brochure/index.html",
+      "says": "A larger 5.7 Liter V8 is available for the C10; on K10 and K20 the 5.7 is standard"
+     },
+     {
+      "name": "Hagerty Valuation Tools - 1983 Chevrolet Suburban",
+      "url": "https://www.hagerty.com/valuation-tools/chevrolet/suburban/1983",
+      "says": "8-cyl. 350cid/165hp 4bbl (C10 and K10)"
+     },
+     {
+      "name": "Wikipedia - Chevrolet Suburban (fifth/sixth/seventh generation infoboxes)",
+      "url": "https://en.wikipedia.org/wiki/Chevrolet_Suburban",
+      "says": "seventh-gen engine list: 350 V8"
+     }
+    ],
+    "independent_sources": 3,
+    "hp_sources_agree": true,
+    "status": "three_sources_not_nhra",
+    "note": "HP from Hagerty; GMC's 1983 pickup brochure also gives LS9 165."
+   },
+   {
+    "gen": "1973-1991",
+    "cid": 379,
+    "hp": 130,
+    "hp_basis": "SAE net",
+    "rpo": "LH6",
+    "name": "6.2L / 379 diesel V8",
+    "common_name": "6.2 Detroit Diesel",
+    "trims": [
+     "C10 Suburban",
+     "K10 Suburban"
+    ],
+    "nhra": false,
+    "sources": [
+     {
+      "name": "Chevrolet 1983 Suburban brochure (Aug 1982, 4212; engine text p.6, Specifications p.8)",
+      "url": "https://oldcarbrochures.org/United%20States/GM%20Trucks%20and%20Vans/1983_Trucks_and_Vans/1983_Chevrolet_Suburban_Brochure/index.html",
+      "says": "6.2 Liter Diesel available in all Suburbans, rated at 130 SAE net horsepower in the 10 Series"
+     },
+     {
+      "name": "Hagerty Valuation Tools - 1983 Chevrolet Suburban",
+      "url": "https://www.hagerty.com/valuation-tools/chevrolet/suburban/1983",
+      "says": "8-cyl. 379cid/130hp Diesel"
+     },
+     {
+      "name": "Wikipedia - Chevrolet Suburban (fifth/sixth/seventh generation infoboxes)",
+      "url": "https://en.wikipedia.org/wiki/Chevrolet_Suburban",
+      "says": "seventh-gen engine list: 6.2 Detroit Diesel V8 (1982-91)"
+     }
+    ],
+    "independent_sources": 3,
+    "hp_sources_agree": true,
+    "status": "three_sources_not_nhra",
+    "note": ""
+   }
+  ],
+  "1984": [
+   {
+    "gen": "1973-1991",
+    "cid": 305,
+    "hp": 160,
+    "hp_basis": "SAE net",
+    "rpo": "LE9",
+    "name": "5.0L / 305 V8",
+    "common_name": "305 ESC",
+    "trims": [
+     "C10 Suburban (2WD only)"
+    ],
+    "nhra": false,
+    "sources": [
+     {
+      "name": "Hagerty Valuation Tools - 1984 Chevrolet Suburban",
+      "url": "https://www.hagerty.com/valuation-tools/chevrolet/suburban/1984",
+      "says": "8-cyl. 305cid/160hp 4bbl (C10 only)"
+     },
+     {
+      "name": "Wikipedia - Chevrolet Suburban (fifth/sixth/seventh generation infoboxes)",
+      "url": "https://en.wikipedia.org/wiki/Chevrolet_Suburban",
+      "says": "seventh-gen engine list: 305 V8 (1976-88)"
+     },
+     {
+      "name": "EPA fueleconomy.gov vehicle data",
+      "url": "https://www.fueleconomy.gov/feg/download.shtml",
+      "says": "1984 Suburban C10 2WD, 5.0 L 8 cyl"
+     }
+    ],
+    "independent_sources": 3,
+    "hp_sources_agree": true,
+    "status": "three_sources_not_nhra",
+    "note": "HP from Hagerty only (GM's 1984 pickup brochure also gives LE9 160). GM's 1984/1985 Suburban brochure scans have no legible engine table."
+   },
+   {
+    "gen": "1973-1991",
+    "cid": 350,
+    "hp": 165,
+    "hp_basis": "SAE net",
+    "rpo": "LS9",
+    "name": "5.7L / 350 V8",
+    "common_name": "350 small block",
+    "trims": [
+     "C10 Suburban (optional)",
+     "K10 Suburban (standard)"
+    ],
+    "nhra": false,
+    "sources": [
+     {
+      "name": "Hagerty Valuation Tools - 1984 Chevrolet Suburban",
+      "url": "https://www.hagerty.com/valuation-tools/chevrolet/suburban/1984",
+      "says": "8-cyl. 350cid/165hp 4bbl (C10 and K10)"
+     },
+     {
+      "name": "Wikipedia - Chevrolet Suburban (fifth/sixth/seventh generation infoboxes)",
+      "url": "https://en.wikipedia.org/wiki/Chevrolet_Suburban",
+      "says": "seventh-gen engine list: 350 V8"
+     },
+     {
+      "name": "EPA fueleconomy.gov vehicle data",
+      "url": "https://www.fueleconomy.gov/feg/download.shtml",
+      "says": "1984 Suburban C10 2WD and K10 4WD, 5.7 L 8 cyl (350 V8)"
+     }
+    ],
+    "independent_sources": 3,
+    "hp_sources_agree": true,
+    "status": "three_sources_not_nhra",
+    "note": "HP from Hagerty (GM pickup literature also gives LS9 165)."
+   },
+   {
+    "gen": "1973-1991",
+    "cid": 379,
+    "hp": 130,
+    "hp_basis": "SAE net",
+    "rpo": "LH6",
+    "name": "6.2L / 379 diesel V8",
+    "common_name": "6.2 Detroit Diesel",
+    "trims": [
+     "C10 Suburban",
+     "K10 Suburban"
+    ],
+    "nhra": false,
+    "sources": [
+     {
+      "name": "Chevrolet 1984 Suburban brochure (optional 6.2 Liter V8 Diesel)",
+      "url": "https://oldcarbrochures.org/United%20States/GM%20Trucks%20and%20Vans/1984%20Trucks%20and%20Vans/1984_Chevrolet_Suburban_Brochure/index.html",
+      "says": "OPTIONAL 6.2 LITER V8 DIESEL"
+     },
+     {
+      "name": "Hagerty Valuation Tools - 1984 Chevrolet Suburban",
+      "url": "https://www.hagerty.com/valuation-tools/chevrolet/suburban/1984",
+      "says": "8-cyl. 379cid/130hp Diesel (C10 and K10)"
+     },
+     {
+      "name": "Wikipedia - Chevrolet Suburban (fifth/sixth/seventh generation infoboxes)",
+      "url": "https://en.wikipedia.org/wiki/Chevrolet_Suburban",
+      "says": "seventh-gen engine list: 6.2 Detroit Diesel V8 (1982-91)"
+     },
+     {
+      "name": "EPA fueleconomy.gov vehicle data",
+      "url": "https://www.fueleconomy.gov/feg/download.shtml",
+      "says": "1984 Suburban C10 2WD and K10 4WD, 6.2 L 8 cyl Diesel"
+     }
+    ],
+    "independent_sources": 4,
+    "hp_sources_agree": true,
+    "status": "three_sources_not_nhra",
+    "note": "Hagerty's 148-151 hp diesel rows are 20-series (LL4), not half-ton."
+   }
+  ],
+  "1985": [
+   {
+    "gen": "1973-1991",
+    "cid": 305,
+    "hp": 160,
+    "hp_basis": "SAE net",
+    "rpo": "LE9",
+    "name": "5.0L / 305 V8",
+    "common_name": "305 ESC",
+    "trims": [
+     "C10 Suburban (2WD only)"
+    ],
+    "nhra": false,
+    "sources": [
+     {
+      "name": "Hagerty Valuation Tools - 1985 Chevrolet Suburban",
+      "url": "https://www.hagerty.com/valuation-tools/chevrolet/suburban/1985",
+      "says": "8-cyl. 305cid/160hp 4bbl (C10 only)"
+     },
+     {
+      "name": "Wikipedia - Chevrolet Suburban (fifth/sixth/seventh generation infoboxes)",
+      "url": "https://en.wikipedia.org/wiki/Chevrolet_Suburban",
+      "says": "seventh-gen engine list: 305 V8 (1976-88)"
+     },
+     {
+      "name": "EPA fueleconomy.gov vehicle data",
+      "url": "https://www.fueleconomy.gov/feg/download.shtml",
+      "says": "1985 Suburban C10 2WD, 5.0 L 8 cyl"
+     }
+    ],
+    "independent_sources": 3,
+    "hp_sources_agree": true,
+    "status": "three_sources_not_nhra",
+    "note": "HP from Hagerty only (GM's 1984 pickup brochure also gives LE9 160). GM's 1984/1985 Suburban brochure scans have no legible engine table."
+   },
+   {
+    "gen": "1973-1991",
+    "cid": 350,
+    "hp": 165,
+    "hp_basis": "SAE net",
+    "rpo": "LS9",
+    "name": "5.7L / 350 V8",
+    "common_name": "350 small block",
+    "trims": [
+     "C10 Suburban (optional)",
+     "K10 Suburban (standard)"
+    ],
+    "nhra": false,
+    "sources": [
+     {
+      "name": "Hagerty Valuation Tools - 1985 Chevrolet Suburban",
+      "url": "https://www.hagerty.com/valuation-tools/chevrolet/suburban/1985",
+      "says": "8-cyl. 350cid/165hp 4bbl (C10 and K10)"
+     },
+     {
+      "name": "Wikipedia - Chevrolet Suburban (fifth/sixth/seventh generation infoboxes)",
+      "url": "https://en.wikipedia.org/wiki/Chevrolet_Suburban",
+      "says": "seventh-gen engine list: 350 V8"
+     },
+     {
+      "name": "EPA fueleconomy.gov vehicle data",
+      "url": "https://www.fueleconomy.gov/feg/download.shtml",
+      "says": "1985 Suburban C10 2WD and K10 4WD, 5.7 L 8 cyl (350 V8)"
+     }
+    ],
+    "independent_sources": 3,
+    "hp_sources_agree": true,
+    "status": "three_sources_not_nhra",
+    "note": "HP from Hagerty (GM pickup literature also gives LS9 165)."
+   },
+   {
+    "gen": "1973-1991",
+    "cid": 379,
+    "hp": 130,
+    "hp_basis": "SAE net",
+    "rpo": "LH6",
+    "name": "6.2L / 379 diesel V8",
+    "common_name": "6.2 Detroit Diesel",
+    "trims": [
+     "C10 Suburban",
+     "K10 Suburban"
+    ],
+    "nhra": false,
+    "sources": [
+     {
+      "name": "Hagerty Valuation Tools - 1985 Chevrolet Suburban",
+      "url": "https://www.hagerty.com/valuation-tools/chevrolet/suburban/1985",
+      "says": "8-cyl. 379cid/130hp Diesel (C10 and K10)"
+     },
+     {
+      "name": "Wikipedia - Chevrolet Suburban (fifth/sixth/seventh generation infoboxes)",
+      "url": "https://en.wikipedia.org/wiki/Chevrolet_Suburban",
+      "says": "seventh-gen engine list: 6.2 Detroit Diesel V8 (1982-91)"
+     },
+     {
+      "name": "EPA fueleconomy.gov vehicle data",
+      "url": "https://www.fueleconomy.gov/feg/download.shtml",
+      "says": "1985 Suburban C10 2WD and K10 4WD, 6.2 L 8 cyl Diesel"
+     }
+    ],
+    "independent_sources": 3,
+    "hp_sources_agree": true,
+    "status": "three_sources_not_nhra",
+    "note": "Hagerty's 148-151 hp diesel rows are 20-series (LL4), not half-ton."
+   }
+  ],
+  "1986": [
+   {
+    "gen": "1973-1991",
+    "cid": 305,
+    "hp": 160,
+    "hp_basis": "SAE net",
+    "rpo": "LE9",
+    "name": "5.0L / 305 V8",
+    "common_name": "305 ESC",
+    "trims": [
+     "C10 Suburban (2WD only)"
+    ],
+    "nhra": false,
+    "sources": [
+     {
+      "name": "Hagerty Valuation Tools - 1986 Chevrolet Suburban",
+      "url": "https://www.hagerty.com/valuation-tools/chevrolet/suburban/1986",
+      "says": "8-cyl. 305cid/160hp 4bbl (C10 only)"
+     },
+     {
+      "name": "Wikipedia - Chevrolet Suburban (fifth/sixth/seventh generation infoboxes)",
+      "url": "https://en.wikipedia.org/wiki/Chevrolet_Suburban",
+      "says": "seventh-gen engine list: 305 V8 (1976-88)"
+     },
+     {
+      "name": "EPA fueleconomy.gov vehicle data",
+      "url": "https://www.fueleconomy.gov/feg/download.shtml",
+      "says": "1986 Suburban C10 2WD, 5.0 L 8 cyl"
+     }
+    ],
+    "independent_sources": 3,
+    "hp_sources_agree": true,
+    "status": "three_sources_not_nhra",
+    "note": "HP from Hagerty only (GM's 1984 pickup brochure also gives LE9 160). GM's 1984/1985 Suburban brochure scans have no legible engine table."
+   },
+   {
+    "gen": "1973-1991",
+    "cid": 350,
+    "hp": 165,
+    "hp_basis": "SAE net",
+    "rpo": "LS9",
+    "name": "5.7L / 350 V8",
+    "common_name": "350 small block",
+    "trims": [
+     "C10 Suburban (optional)",
+     "K10 Suburban (standard)"
+    ],
+    "nhra": false,
+    "sources": [
+     {
+      "name": "Hagerty Valuation Tools - 1986 Chevrolet Suburban",
+      "url": "https://www.hagerty.com/valuation-tools/chevrolet/suburban/1986",
+      "says": "8-cyl. 350cid/165hp 4bbl (C10 and K10)"
+     },
+     {
+      "name": "Wikipedia - Chevrolet Suburban (fifth/sixth/seventh generation infoboxes)",
+      "url": "https://en.wikipedia.org/wiki/Chevrolet_Suburban",
+      "says": "seventh-gen engine list: 350 V8"
+     },
+     {
+      "name": "EPA fueleconomy.gov vehicle data",
+      "url": "https://www.fueleconomy.gov/feg/download.shtml",
+      "says": "1986 Suburban C10 2WD and K10 4WD, 5.7 L 8 cyl (350 V8)"
+     }
+    ],
+    "independent_sources": 3,
+    "hp_sources_agree": true,
+    "status": "three_sources_not_nhra",
+    "note": "HP from Hagerty (GM pickup literature also gives LS9 165)."
+   },
+   {
+    "gen": "1973-1991",
+    "cid": 379,
+    "hp": 130,
+    "hp_basis": "SAE net",
+    "rpo": "LH6",
+    "name": "6.2L / 379 diesel V8",
+    "common_name": "6.2 Detroit Diesel",
+    "trims": [
+     "C10 Suburban",
+     "K10 Suburban"
+    ],
+    "nhra": false,
+    "sources": [
+     {
+      "name": "Hagerty Valuation Tools - 1986 Chevrolet Suburban",
+      "url": "https://www.hagerty.com/valuation-tools/chevrolet/suburban/1986",
+      "says": "8-cyl. 379cid/130hp Diesel (C10 and K10)"
+     },
+     {
+      "name": "Wikipedia - Chevrolet Suburban (fifth/sixth/seventh generation infoboxes)",
+      "url": "https://en.wikipedia.org/wiki/Chevrolet_Suburban",
+      "says": "seventh-gen engine list: 6.2 Detroit Diesel V8 (1982-91)"
+     },
+     {
+      "name": "EPA fueleconomy.gov vehicle data",
+      "url": "https://www.fueleconomy.gov/feg/download.shtml",
+      "says": "1986 Suburban C10 2WD and K10 4WD, 6.2 L 8 cyl Diesel"
+     }
+    ],
+    "independent_sources": 3,
+    "hp_sources_agree": true,
+    "status": "three_sources_not_nhra",
+    "note": "Hagerty's 148-151 hp diesel rows are 20-series (LL4), not half-ton."
+   }
+  ],
+  "1987": [
+   {
+    "gen": "1973-1991",
+    "cid": 305,
+    "hp": 170,
+    "hp_basis": "SAE net",
+    "rpo": "L03",
+    "name": "5.0L / 305 V8 TBI",
+    "common_name": "305 TBI",
+    "trims": [
+     "R10 Suburban (2WD only)"
+    ],
+    "nhra": false,
+    "sources": [
+     {
+      "name": "Chevrolet 1987 Suburban brochure (Standard V8 power text)",
+      "url": "https://oldcarbrochures.org/United%20States/GM%20Trucks%20and%20Vans/1987_Trucks_and_Vans/1987%20Chevy%20Suburban/index.html",
+      "says": "5.0 Liter (305) V8 with electronic fuel injection, standard on 10 Series 2WD"
+     },
+     {
+      "name": "Hagerty Valuation Tools - 1987 Chevrolet Suburban",
+      "url": "https://www.hagerty.com/valuation-tools/chevrolet/suburban/1987",
+      "says": "8-cyl. 305cid/170hp TBI (R10 only)"
+     },
+     {
+      "name": "Wikipedia - Chevrolet Suburban (fifth/sixth/seventh generation infoboxes)",
+      "url": "https://en.wikipedia.org/wiki/Chevrolet_Suburban",
+      "says": "seventh-gen engine list: 305 V8 (1976-88)"
+     },
+     {
+      "name": "EPA fueleconomy.gov vehicle data",
+      "url": "https://www.fueleconomy.gov/feg/download.shtml",
+      "says": "1987 R10 Suburban 2WD, 5.0 L 8 cyl (FFS)"
+     }
+    ],
+    "independent_sources": 4,
+    "hp_sources_agree": true,
+    "status": "three_sources_not_nhra",
+    "note": "New throttle-body injection. Last year of the 305 in the half-ton Suburban (no 5.0 in EPA, Hagerty or GM's 1989 brochure for 1988). HP from Hagerty."
+   },
+   {
+    "gen": "1973-1991",
+    "cid": 350,
+    "hp": 210,
+    "hp_basis": "SAE net",
+    "rpo": "L05",
+    "name": "5.7L / 350 V8 TBI",
+    "common_name": "350 TBI",
+    "trims": [
+     "R10 Suburban (optional)",
+     "V10 Suburban (standard)"
+    ],
+    "nhra": false,
+    "sources": [
+     {
+      "name": "Chevrolet 1987 Suburban brochure (Standard V8 power text)",
+      "url": "https://oldcarbrochures.org/United%20States/GM%20Trucks%20and%20Vans/1987_Trucks_and_Vans/1987%20Chevy%20Suburban/index.html",
+      "says": "5.7 (350) standard on 20 Series 2WD and 10 and 20 Series 4WD models; optional on other models"
+     },
+     {
+      "name": "Hagerty Valuation Tools - 1987 Chevrolet Suburban",
+      "url": "https://www.hagerty.com/valuation-tools/chevrolet/suburban/1987",
+      "says": "8-cyl. 350cid/210hp TBI (R10 and V10)"
+     },
+     {
+      "name": "Wikipedia - Chevrolet Suburban (fifth/sixth/seventh generation infoboxes)",
+      "url": "https://en.wikipedia.org/wiki/Chevrolet_Suburban",
+      "says": "seventh-gen engine list: 350 V8"
+     },
+     {
+      "name": "EPA fueleconomy.gov vehicle data",
+      "url": "https://www.fueleconomy.gov/feg/download.shtml",
+      "says": "1987 R10 and V10 Suburban, 5.7 L 8 cyl (350 V8) (FFS)"
+     }
+    ],
+    "independent_sources": 4,
+    "hp_sources_agree": true,
+    "status": "three_sources_not_nhra",
+    "note": ""
+   },
+   {
+    "gen": "1973-1991",
+    "cid": 379,
+    "hp": 130,
+    "hp_basis": "SAE net",
+    "rpo": "LH6",
+    "name": "6.2L / 379 diesel V8",
+    "common_name": "6.2 Detroit Diesel",
+    "trims": [
+     "R10 Suburban",
+     "V10 Suburban"
+    ],
+    "nhra": false,
+    "sources": [
+     {
+      "name": "Chevrolet 1987 Suburban brochure (Standard V8 power text)",
+      "url": "https://oldcarbrochures.org/United%20States/GM%20Trucks%20and%20Vans/1987_Trucks_and_Vans/1987%20Chevy%20Suburban/index.html",
+      "says": "Optional 6.2 Liter (379) Diesel V8"
+     },
+     {
+      "name": "Hagerty Valuation Tools - 1987 Chevrolet Suburban",
+      "url": "https://www.hagerty.com/valuation-tools/chevrolet/suburban/1987",
+      "says": "8-cyl. 379cid/130hp Diesel (R10 and V10)"
+     },
+     {
+      "name": "Wikipedia - Chevrolet Suburban (fifth/sixth/seventh generation infoboxes)",
+      "url": "https://en.wikipedia.org/wiki/Chevrolet_Suburban",
+      "says": "seventh-gen engine list: 6.2 Detroit Diesel V8 (1982-91)"
+     },
+     {
+      "name": "EPA fueleconomy.gov vehicle data",
+      "url": "https://www.fueleconomy.gov/feg/download.shtml",
+      "says": "1987 R10 and V10 Suburban, 6.2 L 8 cyl Diesel"
+     }
+    ],
+    "independent_sources": 4,
+    "hp_sources_agree": true,
+    "status": "three_sources_not_nhra",
+    "note": ""
+   }
+  ],
+  "1988": [
+   {
+    "gen": "1973-1991",
+    "cid": 350,
+    "hp": 210,
+    "hp_basis": "SAE net",
+    "rpo": "L05",
+    "name": "5.7L / 350 V8 TBI",
+    "common_name": "350 TBI",
+    "trims": [
+     "R10 Suburban",
+     "V10 Suburban"
+    ],
+    "nhra": false,
+    "sources": [
+     {
+      "name": "Chevrolet 1989 Suburban brochure (engine table L05/LH6 SAE net, marked '1988 ratings'; specifications)",
+      "url": "https://oldcarbrochures.org/United%20States/GM%20Trucks%20and%20Vans/1989-GM-Trucks-and-Vans/1989-Chevy-Suburban-Brochure/index.html",
+      "says": "engine table marked '1988 ratings': 5.7L (350) V8 EFI L05 210 @ 4000 (1500 Series)"
+     },
+     {
+      "name": "Hagerty Valuation Tools - 1988 Chevrolet Suburban",
+      "url": "https://www.hagerty.com/valuation-tools/chevrolet/suburban/1988",
+      "says": "8-cyl. 350cid/210hp TBI (10/1500 series)"
+     },
+     {
+      "name": "Wikipedia - Chevrolet Suburban (fifth/sixth/seventh generation infoboxes)",
+      "url": "https://en.wikipedia.org/wiki/Chevrolet_Suburban",
+      "says": "seventh-gen engine list: 350 V8"
+     },
+     {
+      "name": "EPA fueleconomy.gov vehicle data",
+      "url": "https://www.fueleconomy.gov/feg/download.shtml",
+      "says": "1988 R10/V10 Suburban, 5.7 L 8 cyl (350 V8)"
+     }
+    ],
+    "independent_sources": 4,
+    "hp_sources_agree": true,
+    "status": "three_sources_not_nhra",
+    "note": "Standard half-ton engine; 2500-series L05 rated 190-195. GM's 1989 brochure footnote: ratings shown are 1988 ratings."
+   },
+   {
+    "gen": "1973-1991",
+    "cid": 379,
+    "hp": 130,
+    "hp_basis": "SAE net",
+    "rpo": "LH6",
+    "name": "6.2L / 379 diesel V8",
+    "common_name": "6.2 Detroit Diesel",
+    "trims": [
+     "R10 Suburban",
+     "V10 Suburban"
+    ],
+    "nhra": false,
+    "sources": [
+     {
+      "name": "Chevrolet 1989 Suburban brochure (engine table L05/LH6 SAE net, marked '1988 ratings'; specifications)",
+      "url": "https://oldcarbrochures.org/United%20States/GM%20Trucks%20and%20Vans/1989-GM-Trucks-and-Vans/1989-Chevy-Suburban-Brochure/index.html",
+      "says": "engine table marked '1988 ratings': 6.2L V8 Diesel LH6 130 (1500 Series)"
+     },
+     {
+      "name": "Hagerty Valuation Tools - 1988 Chevrolet Suburban",
+      "url": "https://www.hagerty.com/valuation-tools/chevrolet/suburban/1988",
+      "says": "8-cyl. 379cid/130hp Diesel (10/1500 series)"
+     },
+     {
+      "name": "Wikipedia - Chevrolet Suburban (fifth/sixth/seventh generation infoboxes)",
+      "url": "https://en.wikipedia.org/wiki/Chevrolet_Suburban",
+      "says": "seventh-gen engine list: 6.2 Detroit Diesel V8 (1982-91)"
+     },
+     {
+      "name": "EPA fueleconomy.gov vehicle data",
+      "url": "https://www.fueleconomy.gov/feg/download.shtml",
+      "says": "1988 R10/V10 Suburban, 6.2 L 8 cyl Diesel"
+     }
+    ],
+    "independent_sources": 4,
+    "hp_sources_agree": true,
+    "status": "three_sources_not_nhra",
+    "note": ""
+   }
+  ],
+  "1989": [
+   {
+    "gen": "1973-1991",
+    "cid": 350,
+    "hp": 210,
+    "hp_basis": "SAE net",
+    "rpo": "L05",
+    "name": "5.7L / 350 V8 TBI",
+    "common_name": "350 TBI",
+    "trims": [
+     "R1500 Suburban",
+     "V1500 Suburban"
+    ],
+    "nhra": false,
+    "sources": [
+     {
+      "name": "Chevrolet 1989 Suburban brochure (engine table L05/LH6 SAE net, marked '1988 ratings'; specifications)",
+      "url": "https://oldcarbrochures.org/United%20States/GM%20Trucks%20and%20Vans/1989-GM-Trucks-and-Vans/1989-Chevy-Suburban-Brochure/index.html",
+      "says": "Series 1500: 5.7L (350) EFI L05 SAE net 210 @ 4000"
+     },
+     {
+      "name": "Hagerty Valuation Tools - 1989 Chevrolet Suburban",
+      "url": "https://www.hagerty.com/valuation-tools/chevrolet/suburban/1989",
+      "says": "8-cyl. 350cid/210hp TBI (10/1500 series)"
+     },
+     {
+      "name": "Wikipedia - Chevrolet Suburban (fifth/sixth/seventh generation infoboxes)",
+      "url": "https://en.wikipedia.org/wiki/Chevrolet_Suburban",
+      "says": "seventh-gen engine list: 350 V8"
+     },
+     {
+      "name": "EPA fueleconomy.gov vehicle data",
+      "url": "https://www.fueleconomy.gov/feg/download.shtml",
+      "says": "1989 R1500/V1500 Suburban, 5.7 L 8 cyl (350 V8)"
+     }
+    ],
+    "independent_sources": 4,
+    "hp_sources_agree": true,
+    "status": "three_sources_not_nhra",
+    "note": "Standard half-ton engine; 2500-series L05 rated 190-195. GM's 1989 brochure footnote: ratings shown are 1988 ratings."
+   },
+   {
+    "gen": "1973-1991",
+    "cid": 379,
+    "hp": 130,
+    "hp_basis": "SAE net",
+    "rpo": "LH6",
+    "name": "6.2L / 379 diesel V8",
+    "common_name": "6.2 Detroit Diesel",
+    "trims": [
+     "R1500 Suburban",
+     "V1500 Suburban"
+    ],
+    "nhra": false,
+    "sources": [
+     {
+      "name": "Chevrolet 1989 Suburban brochure (engine table L05/LH6 SAE net, marked '1988 ratings'; specifications)",
+      "url": "https://oldcarbrochures.org/United%20States/GM%20Trucks%20and%20Vans/1989-GM-Trucks-and-Vans/1989-Chevy-Suburban-Brochure/index.html",
+      "says": "6.2L V8 Diesel LH6 130 (1500 Series); 8 diesel models offered"
+     },
+     {
+      "name": "Hagerty Valuation Tools - 1989 Chevrolet Suburban",
+      "url": "https://www.hagerty.com/valuation-tools/chevrolet/suburban/1989",
+      "says": "8-cyl. 379cid/130hp Diesel (10/1500 series)"
+     },
+     {
+      "name": "Wikipedia - Chevrolet Suburban (fifth/sixth/seventh generation infoboxes)",
+      "url": "https://en.wikipedia.org/wiki/Chevrolet_Suburban",
+      "says": "seventh-gen engine list: 6.2 Detroit Diesel V8 (1982-91)"
+     },
+     {
+      "name": "EPA fueleconomy.gov vehicle data",
+      "url": "https://www.fueleconomy.gov/feg/download.shtml",
+      "says": "1989 R1500/V1500 Suburban, 6.2 L 8 cyl Diesel"
+     }
+    ],
+    "independent_sources": 4,
+    "hp_sources_agree": true,
+    "status": "three_sources_not_nhra",
+    "note": " GM's 1989 brochure footnote: ratings shown are 1988 ratings."
+   }
+  ],
+  "1990": [
+   {
+    "gen": "1973-1991",
+    "cid": 350,
+    "hp": 210,
+    "hp_basis": "SAE net",
+    "rpo": "L05",
+    "name": "5.7L / 350 V8 TBI",
+    "common_name": "350 TBI",
+    "trims": [
+     "R1500 Suburban",
+     "V1500 Suburban"
+    ],
+    "nhra": false,
+    "sources": [
+     {
+      "name": "Chevrolet 1990 Chevy Trucks Volume 1 brochure (Suburban section, Engine Specifications Series 1500)",
+      "url": "https://oldcarbrochures.org/United%20States/GM%20Trucks%20and%20Vans/1990-GM-Trucks-and-Vans/1990-Chevy-Trucks-Volume-1/index.html",
+      "says": "Series 1500 Models: 5.7 (350) 210 @ 4000; standard 5.7 (350) gas V8"
+     },
+     {
+      "name": "Hagerty Valuation Tools - 1990 Chevrolet Suburban",
+      "url": "https://www.hagerty.com/valuation-tools/chevrolet/suburban/1990",
+      "says": "8-cyl. 350cid/210hp TBI (10/1500 series)"
+     },
+     {
+      "name": "Wikipedia - Chevrolet Suburban (fifth/sixth/seventh generation infoboxes)",
+      "url": "https://en.wikipedia.org/wiki/Chevrolet_Suburban",
+      "says": "seventh-gen engine list: 350 V8"
+     },
+     {
+      "name": "EPA fueleconomy.gov vehicle data",
+      "url": "https://www.fueleconomy.gov/feg/download.shtml",
+      "says": "1990 R1500/V1500 Suburban, 5.7 L 8 cyl (350 V8)"
+     }
+    ],
+    "independent_sources": 4,
+    "hp_sources_agree": true,
+    "status": "three_sources_not_nhra",
+    "note": "Standard half-ton engine; 2500-series L05 rated 190-195."
+   },
+   {
+    "gen": "1973-1991",
+    "cid": 379,
+    "hp": 140,
+    "hp_basis": "SAE net",
+    "rpo": "LH6",
+    "name": "6.2L / 379 diesel V8",
+    "common_name": "6.2 Detroit Diesel",
+    "trims": [
+     "R1500 Suburban",
+     "V1500 Suburban"
+    ],
+    "nhra": false,
+    "sources": [
+     {
+      "name": "Chevrolet 1990 Chevy Trucks Volume 1 brochure (Suburban section, Engine Specifications Series 1500)",
+      "url": "https://oldcarbrochures.org/United%20States/GM%20Trucks%20and%20Vans/1990-GM-Trucks-and-Vans/1990-Chevy-Trucks-Volume-1/index.html",
+      "says": "Series 1500 Models: 6.2L V8 diesel 140 @ 3600"
+     },
+     {
+      "name": "Hagerty Valuation Tools - 1990 Chevrolet Suburban",
+      "url": "https://www.hagerty.com/valuation-tools/chevrolet/suburban/1990",
+      "says": "8-cyl. 379cid/140hp Diesel (10/1500 series)"
+     },
+     {
+      "name": "Wikipedia - Chevrolet Suburban (fifth/sixth/seventh generation infoboxes)",
+      "url": "https://en.wikipedia.org/wiki/Chevrolet_Suburban",
+      "says": "seventh-gen engine list: 6.2 Detroit Diesel V8 (1982-91)"
+     },
+     {
+      "name": "EPA fueleconomy.gov vehicle data",
+      "url": "https://www.fueleconomy.gov/feg/download.shtml",
+      "says": "1990 R1500/V1500 Suburban, 6.2 L 8 cyl Diesel"
+     }
+    ],
+    "independent_sources": 4,
+    "hp_sources_agree": true,
+    "status": "three_sources_not_nhra",
+    "note": "Rating rose to 140 hp for 1990."
+   }
+  ],
+  "1991": [
+   {
+    "gen": "1973-1991",
+    "cid": 350,
+    "hp": 210,
+    "hp_basis": "SAE net",
+    "rpo": "L05",
+    "name": "5.7L / 350 V8 TBI",
+    "common_name": "350 TBI",
+    "trims": [
+     "R1500 Suburban",
+     "V1500 Suburban"
+    ],
+    "nhra": false,
+    "sources": [
+     {
+      "name": "Hagerty Valuation Tools - 1991 Chevrolet Suburban",
+      "url": "https://www.hagerty.com/valuation-tools/chevrolet/suburban/1991",
+      "says": "8-cyl. 350cid/210hp TBI (10/1500 series)"
+     },
+     {
+      "name": "Wikipedia - Chevrolet Suburban (fifth/sixth/seventh generation infoboxes)",
+      "url": "https://en.wikipedia.org/wiki/Chevrolet_Suburban",
+      "says": "seventh-gen engine list: 350 V8"
+     },
+     {
+      "name": "EPA fueleconomy.gov vehicle data",
+      "url": "https://www.fueleconomy.gov/feg/download.shtml",
+      "says": "1991 R1500/V1500 Suburban, 5.7 L 8 cyl (350 V8)"
+     }
+    ],
+    "independent_sources": 3,
+    "hp_sources_agree": true,
+    "status": "three_sources_not_nhra",
+    "note": "Standard half-ton engine; 2500-series L05 rated 190-195."
+   },
+   {
+    "gen": "1973-1991",
+    "cid": 379,
+    "hp": 140,
+    "hp_basis": "SAE net",
+    "rpo": "LH6",
+    "name": "6.2L / 379 diesel V8",
+    "common_name": "6.2 Detroit Diesel",
+    "trims": [
+     "R1500 Suburban",
+     "V1500 Suburban"
+    ],
+    "nhra": false,
+    "sources": [
+     {
+      "name": "Hagerty Valuation Tools - 1991 Chevrolet Suburban",
+      "url": "https://www.hagerty.com/valuation-tools/chevrolet/suburban/1991",
+      "says": "8-cyl. 379cid/140hp Diesel (10/1500 series)"
+     },
+     {
+      "name": "Wikipedia - Chevrolet Suburban (fifth/sixth/seventh generation infoboxes)",
+      "url": "https://en.wikipedia.org/wiki/Chevrolet_Suburban",
+      "says": "seventh-gen engine list: 6.2 Detroit Diesel V8 (1982-91)"
+     },
+     {
+      "name": "EPA fueleconomy.gov vehicle data",
+      "url": "https://www.fueleconomy.gov/feg/download.shtml",
+      "says": "1991 R1500/V1500 Suburban, 6.2 L 8 cyl Diesel"
+     }
+    ],
+    "independent_sources": 3,
+    "hp_sources_agree": true,
+    "status": "three_sources_not_nhra",
+    "note": " 1991 HP from Hagerty only (no 1991 Suburban literature archived)."
+   }
+  ]
+ },
+ "source_index": [
+  {
+   "name": "Chevrolet 1960 Suburbans and Panels brochure (spec table)",
+   "url": "https://oldcarbrochures.org/United%20States/GM%20Trucks%20and%20Vans/1960_Trucks_and_Vans/1960-Chevrolet-Suburbans-and-Panels-Brochure/index.html",
+   "type": "manufacturer"
+  },
+  {
+   "name": "Hagerty Valuation Tools - 1960 Chevrolet C10 (Suburban Carryall rows)",
+   "url": "https://www.hagerty.com/valuation-tools/chevrolet/c10/1960",
+   "type": "publication"
+  },
+  {
+   "name": "Hagerty Valuation Tools - 1960 Chevrolet K10 (Suburban Carryall rows)",
+   "url": "https://www.hagerty.com/valuation-tools/chevrolet/k10/1960",
+   "type": "publication"
+  },
+  {
+   "name": "Wikipedia - Chevrolet Suburban (fifth/sixth/seventh generation infoboxes)",
+   "url": "https://en.wikipedia.org/wiki/Chevrolet_Suburban",
+   "type": "wikipedia"
+  },
+  {
+   "name": "Chevrolet 1961 Pickups brochure (C10-series engine data; no 1961 Suburban brochure archived)",
+   "url": "https://oldcarbrochures.org/United%20States/GM%20Trucks%20and%20Vans/1961-Trucks-and-Vans/1961-Chevrolet-Pickups-Brochure/index.html",
+   "type": "manufacturer"
+  },
+  {
+   "name": "Hagerty Valuation Tools - 1961 Chevrolet C10 (Suburban Carryall rows)",
+   "url": "https://www.hagerty.com/valuation-tools/chevrolet/c10/1961",
+   "type": "publication"
+  },
+  {
+   "name": "Hagerty Valuation Tools - 1961 Chevrolet K10 (Suburban Carryall rows)",
+   "url": "https://www.hagerty.com/valuation-tools/chevrolet/k10/1961",
+   "type": "publication"
+  },
+  {
+   "name": "Chevrolet 1962 Series C10-C40 Trucks brochure (power train page; no 1962 Suburban brochure archived)",
+   "url": "https://oldcarbrochures.org/United%20States/GM%20Trucks%20and%20Vans/1962_Trucks_and_Vans/1962-Chevrolet-C10-C40-Trucks-Brochure/index.html",
+   "type": "manufacturer"
+  },
+  {
+   "name": "Hagerty Valuation Tools - 1962 Chevrolet C10 (Suburban Carryall rows)",
+   "url": "https://www.hagerty.com/valuation-tools/chevrolet/c10/1962",
+   "type": "publication"
+  },
+  {
+   "name": "Hagerty Valuation Tools - 1962 Chevrolet K10 (Suburban Carryall rows)",
+   "url": "https://www.hagerty.com/valuation-tools/chevrolet/k10/1962",
+   "type": "publication"
+  },
+  {
+   "name": "Chevrolet 1963 Suburban Carryall folder (engines and specifications)",
+   "url": "https://oldcarbrochures.org/United%20States/GM%20Trucks%20and%20Vans/1963-Trucks-and-Vans/1963%20Suburban%20Carryall/index.html",
+   "type": "manufacturer"
+  },
+  {
+   "name": "Hagerty Valuation Tools - 1963 Chevrolet C10 (Suburban Carryall rows)",
+   "url": "https://www.hagerty.com/valuation-tools/chevrolet/c10/1963",
+   "type": "publication"
+  },
+  {
+   "name": "Hagerty Valuation Tools - 1963 Chevrolet K10 (Suburban Carryall rows)",
+   "url": "https://www.hagerty.com/valuation-tools/chevrolet/k10/1963",
+   "type": "publication"
+  },
+  {
+   "name": "Chevrolet 1964 Suburban Carryall brochure (engines and specifications)",
+   "url": "https://oldcarbrochures.org/United%20States/GM%20Trucks%20and%20Vans/1964_Trucks_and_Vans/1964%20Suburban%20Carryall/index.html",
+   "type": "manufacturer"
+  },
+  {
+   "name": "Hagerty Valuation Tools - 1964 Chevrolet C10 Suburban",
+   "url": "https://www.hagerty.com/valuation-tools/chevrolet/c10_suburban/1964",
+   "type": "publication"
+  },
+  {
+   "name": "Hagerty Valuation Tools - 1964 Chevrolet K10 Suburban",
+   "url": "https://www.hagerty.com/valuation-tools/chevrolet/k10_suburban/1964",
+   "type": "publication"
+  },
+  {
+   "name": "Chevrolet 1965 Suburban Carryall brochure (power and drive line, specifications)",
+   "url": "https://oldcarbrochures.org/United%20States/GM%20Trucks%20and%20Vans/1965_Trucks_And_Vans/1965-Chevrolet-Suburban-Carryall-Brochure/index.html",
+   "type": "manufacturer"
+  },
+  {
+   "name": "Hagerty Valuation Tools - 1965 Chevrolet C10 Suburban",
+   "url": "https://www.hagerty.com/valuation-tools/chevrolet/c10_suburban/1965",
+   "type": "publication"
+  },
+  {
+   "name": "Hagerty Valuation Tools - 1965 Chevrolet K10 Suburban",
+   "url": "https://www.hagerty.com/valuation-tools/chevrolet/k10_suburban/1965",
+   "type": "publication"
+  },
+  {
+   "name": "Chevrolet 1966 Pickups and Stakes brochure R-1 (C10-series engine table; no 1966 Suburban brochure archived)",
+   "url": "https://oldcarbrochures.org/United%20States/GM%20Trucks%20and%20Vans/1966-Trucks-and-Vans/1966-Chevrolet-Pickups-and-Stakes-Brochure/index.html",
+   "type": "manufacturer"
+  },
+  {
+   "name": "Hagerty Valuation Tools - 1966 Chevrolet C10 Suburban",
+   "url": "https://www.hagerty.com/valuation-tools/chevrolet/c10_suburban/1966",
+   "type": "publication"
+  },
+  {
+   "name": "Hagerty Valuation Tools - 1966 Chevrolet K10 Suburban",
+   "url": "https://www.hagerty.com/valuation-tools/chevrolet/k10_suburban/1966",
+   "type": "publication"
+  },
+  {
+   "name": "Old Cars Weekly - Car of the Week: 1966 Chevrolet Suburban Carryall (Al Rogers)",
+   "url": "https://oldcarsweekly.com/features/car-of-the-week-1966-chevrolet-suburban-carryall",
+   "type": "publication"
+  },
+  {
+   "name": "Chevrolet 1967 Suburbans and Panels brochure (High Torque Engines page, Engine Performance Data table)",
+   "url": "https://oldcarbrochures.org/United%20States/GM%20Trucks%20and%20Vans/1967_Trucks_and_Vans/1967_Chevrolet_Suburbans_and_Panels_Brochure/index.html",
+   "type": "manufacturer"
+  },
+  {
+   "name": "Hagerty Valuation Tools - 1967 Chevrolet C10 Suburban",
+   "url": "https://www.hagerty.com/valuation-tools/chevrolet/c10_suburban/1967",
+   "type": "publication"
+  },
+  {
+   "name": "Hagerty Valuation Tools - 1967 Chevrolet K10 Suburban",
+   "url": "https://www.hagerty.com/valuation-tools/chevrolet/k10_suburban/1967",
+   "type": "publication"
+  },
+  {
+   "name": "Chevrolet 1968 Pickups brochure (engine specs p.14; no 1968 Suburban brochure archived)",
+   "url": "https://oldcarbrochures.org/United%20States/GM%20Trucks%20and%20Vans/1968-Trucks-and-Vans/1968-Chevrolet-Pickups-Brochure/index.html",
+   "type": "manufacturer"
+  },
+  {
+   "name": "Hagerty Valuation Tools - 1968 Chevrolet C10 Suburban",
+   "url": "https://www.hagerty.com/valuation-tools/chevrolet/c10_suburban/1968",
+   "type": "publication"
+  },
+  {
+   "name": "Hagerty Valuation Tools - 1968 Chevrolet K10 Suburban",
+   "url": "https://www.hagerty.com/valuation-tools/chevrolet/k10_suburban/1968",
+   "type": "publication"
+  },
+  {
+   "name": "Chevrolet 1969 Suburban brochure (Engines p.6, Specifications p.7 by series)",
+   "url": "https://oldcarbrochures.org/United%20States/GM%20Trucks%20and%20Vans/1969_Trucks_and_Vans/1969_Chevrolet_Suburban_Brochure/index.html",
+   "type": "manufacturer"
+  },
+  {
+   "name": "Hagerty Valuation Tools - 1969 Chevrolet C10 Suburban",
+   "url": "https://www.hagerty.com/valuation-tools/chevrolet/c10_suburban/1969",
+   "type": "publication"
+  },
+  {
+   "name": "Hagerty Valuation Tools - 1969 Chevrolet K10 Suburban",
+   "url": "https://www.hagerty.com/valuation-tools/chevrolet/k10_suburban/1969",
+   "type": "publication"
+  },
+  {
+   "name": "Chevrolet 1970 Suburban & Panel brochure (Aug 1969, D-78783; Specifications by series)",
+   "url": "https://oldcarbrochures.org/United%20States/GM%20Trucks%20and%20Vans/1970_Trucks-Vans/1970_Chevrolet_Suburban/index.html",
+   "type": "manufacturer"
+  },
+  {
+   "name": "Hagerty Valuation Tools - 1970 Chevrolet C10 Suburban",
+   "url": "https://www.hagerty.com/valuation-tools/chevrolet/c10_suburban/1970",
+   "type": "publication"
+  },
+  {
+   "name": "Hagerty Valuation Tools - 1970 Chevrolet K10 Suburban",
+   "url": "https://www.hagerty.com/valuation-tools/chevrolet/k10_suburban/1970",
+   "type": "publication"
+  },
+  {
+   "name": "Chevrolet 1971 Suburban brochure (Aug 1970, W.O. 1164; Specifications by series)",
+   "url": "https://oldcarbrochures.org/United%20States/GM%20Trucks%20and%20Vans/1971_Trucks-Vans/1971_Chevrolet_Suburban_Brochure/index.html",
+   "type": "manufacturer"
+  },
+  {
+   "name": "Hagerty Valuation Tools - 1971 Chevrolet C10 Suburban",
+   "url": "https://www.hagerty.com/valuation-tools/chevrolet/c10_suburban/1971",
+   "type": "publication"
+  },
+  {
+   "name": "Hagerty Valuation Tools - 1971 Chevrolet K10 Suburban",
+   "url": "https://www.hagerty.com/valuation-tools/chevrolet/k10_suburban/1971",
+   "type": "publication"
+  },
+  {
+   "name": "Chevrolet 1972 Suburban brochure (engine specifications table, SAE net)",
+   "url": "https://oldcarbrochures.org/United%20States/GM%20Trucks%20and%20Vans/1972_Trucks_and_Vans/1972%20Chevrolet%20Suburban%20Brochure/index.html",
+   "type": "manufacturer"
+  },
+  {
+   "name": "Hagerty Valuation Tools - 1972 Chevrolet C10 Suburban",
+   "url": "https://www.hagerty.com/valuation-tools/chevrolet/c10_suburban/1972",
+   "type": "publication"
+  },
+  {
+   "name": "Hagerty Valuation Tools - 1972 Chevrolet K10 Suburban",
+   "url": "https://www.hagerty.com/valuation-tools/chevrolet/k10_suburban/1972",
+   "type": "publication"
+  },
+  {
+   "name": "Chevrolet 1973 Suburban brochure (Jan 1973, 2236 R-1; Specifications, Engine Specifications-Suburbans, Power Teams)",
+   "url": "https://oldcarbrochures.org/United%20States/GM%20Trucks%20and%20Vans/1973_Trucks_and_Vans/1973%20Chevrolet%20Suburban/index.html",
+   "type": "manufacturer"
+  },
+  {
+   "name": "Hagerty Valuation Tools - 1973 Chevrolet C10 Suburban",
+   "url": "https://www.hagerty.com/valuation-tools/chevrolet/c10_suburban/1973",
+   "type": "publication"
+  },
+  {
+   "name": "Hagerty Valuation Tools - 1973 Chevrolet K10 Suburban",
+   "url": "https://www.hagerty.com/valuation-tools/chevrolet/k10_suburban/1973",
+   "type": "publication"
+  },
+  {
+   "name": "Chevrolet 1974 Suburban brochure (Sept 1973, 2684; Specifications by series)",
+   "url": "https://oldcarbrochures.org/United%20States/GM%20Trucks%20and%20Vans/1974_Trucks-Vans/1974_Chevrolet_Suburban_Brochure_001/index.html",
+   "type": "manufacturer"
+  },
+  {
+   "name": "Hagerty Valuation Tools - 1974 Chevrolet C10 Suburban",
+   "url": "https://www.hagerty.com/valuation-tools/chevrolet/c10_suburban/1974",
+   "type": "publication"
+  },
+  {
+   "name": "Hagerty Valuation Tools - 1974 Chevrolet K10 Suburban",
+   "url": "https://www.hagerty.com/valuation-tools/chevrolet/k10_suburban/1974",
+   "type": "publication"
+  },
+  {
+   "name": "Chevrolet 1975 Suburban brochure (Sept 1974, 3025; engine table p.5, Specifications p.8)",
+   "url": "https://oldcarbrochures.org/United%20States/GM%20Trucks%20and%20Vans/1975-Trucks-and-Vans/1975-Chevrolet-Suburban-Brochure/index.html",
+   "type": "manufacturer"
+  },
+  {
+   "name": "Hagerty Valuation Tools - 1975 Chevrolet C10 Suburban",
+   "url": "https://www.hagerty.com/valuation-tools/chevrolet/c10_suburban/1975",
+   "type": "publication"
+  },
+  {
+   "name": "Hagerty Valuation Tools - 1975 Chevrolet K10 Suburban",
+   "url": "https://www.hagerty.com/valuation-tools/chevrolet/k10_suburban/1975",
+   "type": "publication"
+  },
+  {
+   "name": "Chevrolet 1976 Suburban brochure (engine text and HD-emissions engine table p.5)",
+   "url": "https://oldcarbrochures.org/United%20States/GM%20Trucks%20and%20Vans/1976_Trucks_and_Vans/1976_Chevrolet_Suburban_Brochure/index.html",
+   "type": "manufacturer"
+  },
+  {
+   "name": "Hagerty Valuation Tools - 1976 Chevrolet C10 Suburban",
+   "url": "https://www.hagerty.com/valuation-tools/chevrolet/c10_suburban/1976",
+   "type": "publication"
+  },
+  {
+   "name": "Hagerty Valuation Tools - 1976 Chevrolet K10 Suburban",
+   "url": "https://www.hagerty.com/valuation-tools/chevrolet/k10_suburban/1976",
+   "type": "publication"
+  },
+  {
+   "name": "Chevrolet 1977 Suburban brochure (Sept 1976, 3425; engine table p.7, Specifications p.12)",
+   "url": "https://oldcarbrochures.org/United%20States/GM%20Trucks%20and%20Vans/1977_Trucks_and_Vans/1977%20Chevy%20Suburban/index.html",
+   "type": "manufacturer"
+  },
+  {
+   "name": "Hagerty Valuation Tools - 1977 Chevrolet C10 Suburban",
+   "url": "https://www.hagerty.com/valuation-tools/chevrolet/c10_suburban/1977",
+   "type": "publication"
+  },
+  {
+   "name": "Hagerty Valuation Tools - 1977 Chevrolet K10 Suburban",
+   "url": "https://www.hagerty.com/valuation-tools/chevrolet/k10_suburban/1977",
+   "type": "publication"
+  },
+  {
+   "name": "Chevrolet 1978 Suburban brochure (July 1977, 3583; engine table shows 1977 ratings; Specifications by series)",
+   "url": "https://oldcarbrochures.org/United%20States/GM%20Trucks%20and%20Vans/1978_Trucks_and__Vans/1978%20Chevrolet%20Suburban/index.html",
+   "type": "manufacturer"
+  },
+  {
+   "name": "Hagerty Valuation Tools - 1978 Chevrolet C10 Suburban",
+   "url": "https://www.hagerty.com/valuation-tools/chevrolet/c10_suburban/1978",
+   "type": "publication"
+  },
+  {
+   "name": "Hagerty Valuation Tools - 1978 Chevrolet K10 Suburban",
+   "url": "https://www.hagerty.com/valuation-tools/chevrolet/k10_suburban/1978",
+   "type": "publication"
+  },
+  {
+   "name": "Chevrolet 1979 Suburban brochure (engine text and Engine Specifications table p.7)",
+   "url": "https://oldcarbrochures.org/United%20States/GM%20Trucks%20and%20Vans/1979_Trucks_and_Vans/1979%20Chevrolet%20Suburban%20-%20rescan/index.html",
+   "type": "manufacturer"
+  },
+  {
+   "name": "Hagerty Valuation Tools - 1979 Chevrolet C10 Suburban",
+   "url": "https://www.hagerty.com/valuation-tools/chevrolet/c10_suburban/1979",
+   "type": "publication"
+  },
+  {
+   "name": "Hagerty Valuation Tools - 1979 Chevrolet K10 Suburban",
+   "url": "https://www.hagerty.com/valuation-tools/chevrolet/k10_suburban/1979",
+   "type": "publication"
+  },
+  {
+   "name": "Chevrolet 1980 Suburban brochure (Responsive V8 power text and engine table p.5)",
+   "url": "https://oldcarbrochures.org/United%20States/GM%20Trucks%20and%20Vans/1980_Trucks-Vans/1980_Chevrolet_Suburban_Brochure/index.html",
+   "type": "manufacturer"
+  },
+  {
+   "name": "Hagerty Valuation Tools - 1980 Chevrolet C10 Suburban",
+   "url": "https://www.hagerty.com/valuation-tools/chevrolet/c10_suburban/1980",
+   "type": "publication"
+  },
+  {
+   "name": "Hagerty Valuation Tools - 1980 Chevrolet K10 Suburban",
+   "url": "https://www.hagerty.com/valuation-tools/chevrolet/k10_suburban/1980",
+   "type": "publication"
+  },
+  {
+   "name": "Chevrolet 1981 Suburban brochure (New Power page p.8 and engine table)",
+   "url": "https://oldcarbrochures.org/United%20States/GM%20Trucks%20and%20Vans/1981_Trucks_and_Vans/1981%20Chevy%20Suburban/index.html",
+   "type": "manufacturer"
+  },
+  {
+   "name": "Hagerty Valuation Tools - 1981 Chevrolet Suburban",
+   "url": "https://www.hagerty.com/valuation-tools/chevrolet/suburban/1981",
+   "type": "publication"
+  },
+  {
+   "name": "Chevrolet 1982 Suburban brochure (6.2 Diesel page p.8, Chevy Suburban Engine Lineup table)",
+   "url": "https://oldcarbrochures.org/United%20States/GM%20Trucks%20and%20Vans/1982_Trucks_and_Vans/1982%20Chevy%20Suburban/index.html",
+   "type": "manufacturer"
+  },
+  {
+   "name": "Hagerty Valuation Tools - 1982 Chevrolet Suburban",
+   "url": "https://www.hagerty.com/valuation-tools/chevrolet/suburban/1982",
+   "type": "publication"
+  },
+  {
+   "name": "Chevrolet 1983 Suburban brochure (Aug 1982, 4212; engine text p.6, Specifications p.8)",
+   "url": "https://oldcarbrochures.org/United%20States/GM%20Trucks%20and%20Vans/1983_Trucks_and_Vans/1983_Chevrolet_Suburban_Brochure/index.html",
+   "type": "manufacturer"
+  },
+  {
+   "name": "Hagerty Valuation Tools - 1983 Chevrolet Suburban",
+   "url": "https://www.hagerty.com/valuation-tools/chevrolet/suburban/1983",
+   "type": "publication"
+  },
+  {
+   "name": "Hagerty Valuation Tools - 1984 Chevrolet Suburban",
+   "url": "https://www.hagerty.com/valuation-tools/chevrolet/suburban/1984",
+   "type": "publication"
+  },
+  {
+   "name": "EPA fueleconomy.gov vehicle data",
+   "url": "https://www.fueleconomy.gov/feg/download.shtml",
+   "type": "government"
+  },
+  {
+   "name": "Chevrolet 1984 Suburban brochure (optional 6.2 Liter V8 Diesel)",
+   "url": "https://oldcarbrochures.org/United%20States/GM%20Trucks%20and%20Vans/1984%20Trucks%20and%20Vans/1984_Chevrolet_Suburban_Brochure/index.html",
+   "type": "manufacturer"
+  },
+  {
+   "name": "Hagerty Valuation Tools - 1985 Chevrolet Suburban",
+   "url": "https://www.hagerty.com/valuation-tools/chevrolet/suburban/1985",
+   "type": "publication"
+  },
+  {
+   "name": "Hagerty Valuation Tools - 1986 Chevrolet Suburban",
+   "url": "https://www.hagerty.com/valuation-tools/chevrolet/suburban/1986",
+   "type": "publication"
+  },
+  {
+   "name": "Chevrolet 1987 Suburban brochure (Standard V8 power text)",
+   "url": "https://oldcarbrochures.org/United%20States/GM%20Trucks%20and%20Vans/1987_Trucks_and_Vans/1987%20Chevy%20Suburban/index.html",
+   "type": "manufacturer"
+  },
+  {
+   "name": "Hagerty Valuation Tools - 1987 Chevrolet Suburban",
+   "url": "https://www.hagerty.com/valuation-tools/chevrolet/suburban/1987",
+   "type": "publication"
+  },
+  {
+   "name": "Chevrolet 1989 Suburban brochure (engine table L05/LH6 SAE net, marked '1988 ratings'; specifications)",
+   "url": "https://oldcarbrochures.org/United%20States/GM%20Trucks%20and%20Vans/1989-GM-Trucks-and-Vans/1989-Chevy-Suburban-Brochure/index.html",
+   "type": "manufacturer"
+  },
+  {
+   "name": "Hagerty Valuation Tools - 1988 Chevrolet Suburban",
+   "url": "https://www.hagerty.com/valuation-tools/chevrolet/suburban/1988",
+   "type": "publication"
+  },
+  {
+   "name": "Hagerty Valuation Tools - 1989 Chevrolet Suburban",
+   "url": "https://www.hagerty.com/valuation-tools/chevrolet/suburban/1989",
+   "type": "publication"
+  },
+  {
+   "name": "Chevrolet 1990 Chevy Trucks Volume 1 brochure (Suburban section, Engine Specifications Series 1500)",
+   "url": "https://oldcarbrochures.org/United%20States/GM%20Trucks%20and%20Vans/1990-GM-Trucks-and-Vans/1990-Chevy-Trucks-Volume-1/index.html",
+   "type": "manufacturer"
+  },
+  {
+   "name": "Hagerty Valuation Tools - 1990 Chevrolet Suburban",
+   "url": "https://www.hagerty.com/valuation-tools/chevrolet/suburban/1990",
+   "type": "publication"
+  },
+  {
+   "name": "Hagerty Valuation Tools - 1991 Chevrolet Suburban",
+   "url": "https://www.hagerty.com/valuation-tools/chevrolet/suburban/1991",
+   "type": "publication"
+  },
+  {
+   "name": "NHRA Stock Car Classification Guide (nhra_chevrolet-suburban-1960-1991.json: empty, no Suburban rows)",
+   "url": "nhra_chevrolet-suburban-1960-1991.json",
+   "type": "nhra"
+  }
+ ]
+}

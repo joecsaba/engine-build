@@ -1,0 +1,3069 @@
+{
+ "engines": [
+  {
+   "id": "toyota-3vz-e",
+   "name": "Toyota 3VZ-E 3.0 V6",
+   "fields": {
+    "bore_in": {
+     "value": 3.4449,
+     "sources": [
+      {
+       "name": "Wikipedia: Toyota VZ engine",
+       "url": "https://en.wikipedia.org/wiki/Toyota_VZ_engine",
+       "says": "3VZ-E bore 87.5 mm"
+      },
+      {
+       "name": "Elgin Industries engine parts catalog (technical reference) - engine details",
+       "url": "https://catalog.elginind.com/engine/toyota/default/de020d8a-0b5e-4fea-9da9-fa8a12d242b2/",
+       "says": "3VZ-E 2959cc: Bore 3.45'' (87.5mm)"
+      }
+     ],
+     "note": "87.5 mm",
+     "second_pass": true
+    },
+    "stroke_in": {
+     "value": 3.2283,
+     "sources": [
+      {
+       "name": "Wikipedia: Toyota VZ engine",
+       "url": "https://en.wikipedia.org/wiki/Toyota_VZ_engine",
+       "says": "3VZ-E stroke 82 mm"
+      },
+      {
+       "name": "Elgin Industries engine parts catalog (technical reference) - engine details",
+       "url": "https://catalog.elginind.com/engine/toyota/default/de020d8a-0b5e-4fea-9da9-fa8a12d242b2/",
+       "says": "3VZ-E: Stroke 3.23'' (82.0mm)"
+      }
+     ],
+     "note": "82.0 mm",
+     "second_pass": true
+    },
+    "displacement_l": {
+     "value": 3.0,
+     "sources": [
+      {
+       "name": "Wikipedia: Toyota VZ engine",
+       "url": "https://en.wikipedia.org/wiki/Toyota_VZ_engine",
+       "says": "3VZ-E 2,958 cc"
+      },
+      {
+       "name": "Elgin Industries engine parts catalog (technical reference) - engine details",
+       "url": "https://catalog.elginind.com/engine/toyota/default/de020d8a-0b5e-4fea-9da9-fa8a12d242b2/",
+       "says": "3VZ-E: Liters 3.0, CC 2959"
+      },
+      {
+       "name": "EPA fueleconomy.gov vehicle data",
+       "url": "https://www.fueleconomy.gov/feg/download.shtml",
+       "says": "1988-95 4Runner/Truck: 3.0 L 6-cyl"
+      }
+     ],
+     "note": "2,958 cc (Wikipedia) vs 2,959 cc (Elgin); 87.5 x 82 x 6 = 2,958.6 cc"
+    },
+    "displacement_ci": {
+     "value": 181,
+     "sources": [
+      {
+       "name": "Wikipedia: Toyota VZ engine",
+       "url": "https://en.wikipedia.org/wiki/Toyota_VZ_engine",
+       "says": "2,958 cc"
+      },
+      {
+       "name": "Elgin Industries engine parts catalog (technical reference) - engine details",
+       "url": "https://catalog.elginind.com/engine/toyota/default/de020d8a-0b5e-4fea-9da9-fa8a12d242b2/",
+       "says": "CC 2959"
+      }
+     ],
+     "note": "converted from cc (2,958-2,959 cc = 180.5-180.6 ci)",
+     "second_pass": true
+    },
+    "num_cylinders": {
+     "value": 6,
+     "sources": [
+      {
+       "name": "Wikipedia: Toyota VZ engine",
+       "url": "https://en.wikipedia.org/wiki/Toyota_VZ_engine",
+       "says": "60 degree V6"
+      },
+      {
+       "name": "Elgin Industries engine parts catalog (technical reference) - engine details",
+       "url": "https://catalog.elginind.com/engine/toyota/default/de020d8a-0b5e-4fea-9da9-fa8a12d242b2/",
+       "says": "Cyl. 6"
+      },
+      {
+       "name": "EPA fueleconomy.gov vehicle data",
+       "url": "https://www.fueleconomy.gov/feg/download.shtml",
+       "says": "3.0 L 6-cyl"
+      }
+     ],
+     "note": ""
+    },
+    "configuration": {
+     "value": "V6 (60 degree)",
+     "sources": [
+      {
+       "name": "Wikipedia: Toyota VZ engine",
+       "url": "https://en.wikipedia.org/wiki/Toyota_VZ_engine",
+       "says": "VZ is a family of 60 degree V6 engines"
+      },
+      {
+       "name": "Engine Builder magazine (May 1999): Rebuilding the Toyota 3.0L V6 (read via web.archive.org)",
+       "url": "https://www.enginebuildermag.com/1999/05/rebuilding-the-toyota-3-0l-v6/",
+       "says": "In 1988 Toyota introduced its first V6 ... 3VZ-E - 3.0L SOHC V6"
+      }
+     ],
+     "note": "",
+     "second_pass": true
+    },
+    "valvetrain": {
+     "value": "SOHC, 2 valves per cylinder (12 valves)",
+     "sources": [
+      {
+       "name": "Wikipedia: Toyota VZ engine",
+       "url": "https://en.wikipedia.org/wiki/Toyota_VZ_engine",
+       "says": "SOHC layout ... aluminium 12 valve head"
+      },
+      {
+       "name": "Engine Builder magazine (May 1999): Rebuilding the Toyota 3.0L V6 (read via web.archive.org)",
+       "url": "https://www.enginebuildermag.com/1999/05/rebuilding-the-toyota-3-0l-v6/",
+       "says": "two-valve heads with a single camshaft per head"
+      }
+     ],
+     "note": "",
+     "second_pass": true
+    },
+    "block_material": {
+     "value": "cast iron",
+     "sources": [
+      {
+       "name": "Wikipedia: Toyota VZ engine",
+       "url": "https://en.wikipedia.org/wiki/Toyota_VZ_engine",
+       "says": "SOHC layout with a cast iron block"
+      },
+      {
+       "name": "Engine Builder magazine (May 1999): Rebuilding the Toyota 3.0L V6 (read via web.archive.org)",
+       "url": "https://www.enginebuildermag.com/1999/05/rebuilding-the-toyota-3-0l-v6/",
+       "says": "featured a cast iron block and aluminum heads ... The block is cast iron"
+      }
+     ],
+     "note": "",
+     "second_pass": true
+    },
+    "head_material": {
+     "value": "aluminum",
+     "sources": [
+      {
+       "name": "Wikipedia: Toyota VZ engine",
+       "url": "https://en.wikipedia.org/wiki/Toyota_VZ_engine",
+       "says": "aluminium 12 valve head"
+      },
+      {
+       "name": "Engine Builder magazine (May 1999): Rebuilding the Toyota 3.0L V6 (read via web.archive.org)",
+       "url": "https://www.enginebuildermag.com/1999/05/rebuilding-the-toyota-3-0l-v6/",
+       "says": "featured a cast iron block and aluminum heads"
+      }
+     ],
+     "note": "",
+     "second_pass": true
+    },
+    "fuel_type": {
+     "value": "gasoline",
+     "sources": [
+      {
+       "name": "Wikipedia: Toyota VZ engine",
+       "url": "https://en.wikipedia.org/wiki/Toyota_VZ_engine",
+       "says": "VZ gasoline V6 family; 3VZ-E fuel injected"
+      },
+      {
+       "name": "Elgin Industries engine parts catalog (technical reference) - engine details",
+       "url": "https://catalog.elginind.com/engine/toyota/default/de020d8a-0b5e-4fea-9da9-fa8a12d242b2/",
+       "says": "Fuel / Delivery GAS / FI"
+      },
+      {
+       "name": "EPA fueleconomy.gov vehicle data",
+       "url": "https://www.fueleconomy.gov/feg/download.shtml",
+       "says": "4Runner/Truck 3.0 L, no diesel flag"
+      }
+     ],
+     "note": ""
+    }
+   },
+   "variants": [],
+   "unverified": {},
+   "unverified_variants": []
+  },
+  {
+   "id": "toyota-5vz-fe",
+   "name": "Toyota 5VZ-FE 3.4 V6",
+   "fields": {
+    "bore_in": {
+     "value": 3.6811,
+     "sources": [
+      {
+       "name": "Wikipedia: Toyota VZ engine",
+       "url": "https://en.wikipedia.org/wiki/Toyota_VZ_engine",
+       "says": "5VZ-FE bore 93.5 mm"
+      },
+      {
+       "name": "Elgin Industries engine parts catalog (technical reference) - engine details",
+       "url": "https://catalog.elginind.com/engine/toyota/default/80ae1d1d-190a-4e1b-8004-309d3f91f505/",
+       "says": "5VZ-FE 3378cc: Bore 3.68'' (93.5mm)"
+      },
+      {
+       "name": "Engine Builder magazine (May 1999): Rebuilding the Toyota 3.0L V6 (read via web.archive.org)",
+       "url": "https://www.enginebuildermag.com/1999/05/rebuilding-the-toyota-3-0l-v6/",
+       "says": "increase in the bore size of the VZ V6. It was increased to 93.5mm"
+      }
+     ],
+     "note": "93.5 mm"
+    },
+    "stroke_in": {
+     "value": 3.2283,
+     "sources": [
+      {
+       "name": "Wikipedia: Toyota VZ engine",
+       "url": "https://en.wikipedia.org/wiki/Toyota_VZ_engine",
+       "says": "5VZ-FE stroke 82 mm"
+      },
+      {
+       "name": "Elgin Industries engine parts catalog (technical reference) - engine details",
+       "url": "https://catalog.elginind.com/engine/toyota/default/80ae1d1d-190a-4e1b-8004-309d3f91f505/",
+       "says": "5VZ-FE: Stroke 3.23'' (82.0mm)"
+      }
+     ],
+     "note": "82.0 mm",
+     "second_pass": true
+    },
+    "displacement_l": {
+     "value": 3.4,
+     "sources": [
+      {
+       "name": "Wikipedia: Toyota VZ engine",
+       "url": "https://en.wikipedia.org/wiki/Toyota_VZ_engine",
+       "says": "3,378 cc"
+      },
+      {
+       "name": "Elgin Industries engine parts catalog (technical reference) - engine details",
+       "url": "https://catalog.elginind.com/engine/toyota/default/80ae1d1d-190a-4e1b-8004-309d3f91f505/",
+       "says": "Liters 3.4, CC 3378"
+      },
+      {
+       "name": "EPA fueleconomy.gov vehicle data",
+       "url": "https://www.fueleconomy.gov/feg/download.shtml",
+       "says": "1995 Tacoma 3.4 L 6-cyl"
+      },
+      {
+       "name": "Engine Builder magazine (May 1999): Rebuilding the Toyota 3.0L V6 (read via web.archive.org)",
+       "url": "https://www.enginebuildermag.com/1999/05/rebuilding-the-toyota-3-0l-v6/",
+       "says": "Now displacing 3.4 liters"
+      }
+     ],
+     "note": "3,378 cc"
+    },
+    "displacement_ci": {
+     "value": 206,
+     "sources": [
+      {
+       "name": "Wikipedia: Toyota VZ engine",
+       "url": "https://en.wikipedia.org/wiki/Toyota_VZ_engine",
+       "says": "3,378 cc"
+      },
+      {
+       "name": "Elgin Industries engine parts catalog (technical reference) - engine details",
+       "url": "https://catalog.elginind.com/engine/toyota/default/80ae1d1d-190a-4e1b-8004-309d3f91f505/",
+       "says": "CC 3378"
+      }
+     ],
+     "note": "converted from 3,378 cc = 206.1 ci",
+     "second_pass": true
+    },
+    "num_cylinders": {
+     "value": 6,
+     "sources": [
+      {
+       "name": "Wikipedia: Toyota VZ engine",
+       "url": "https://en.wikipedia.org/wiki/Toyota_VZ_engine",
+       "says": "V6"
+      },
+      {
+       "name": "Elgin Industries engine parts catalog (technical reference) - engine details",
+       "url": "https://catalog.elginind.com/engine/toyota/default/80ae1d1d-190a-4e1b-8004-309d3f91f505/",
+       "says": "Cyl. 6"
+      },
+      {
+       "name": "EPA fueleconomy.gov vehicle data",
+       "url": "https://www.fueleconomy.gov/feg/download.shtml",
+       "says": "3.4 L 6-cyl"
+      }
+     ],
+     "note": ""
+    },
+    "configuration": {
+     "value": "V6 (60 degree)",
+     "sources": [
+      {
+       "name": "Wikipedia: Toyota VZ engine",
+       "url": "https://en.wikipedia.org/wiki/Toyota_VZ_engine",
+       "says": "60 degree V6"
+      },
+      {
+       "name": "Engine Builder magazine (May 1999): Rebuilding the Toyota 3.0L V6 (read via web.archive.org)",
+       "url": "https://www.enginebuildermag.com/1999/05/rebuilding-the-toyota-3-0l-v6/",
+       "says": "5VZ-FE - 3.4L DOHC V6"
+      }
+     ],
+     "note": "",
+     "second_pass": true
+    },
+    "valvetrain": {
+     "value": "DOHC, 4 valves per cylinder (24 valves)",
+     "sources": [
+      {
+       "name": "Wikipedia: Toyota VZ engine",
+       "url": "https://en.wikipedia.org/wiki/Toyota_VZ_engine",
+       "says": "DOHC layout ... 24 valve head"
+      },
+      {
+       "name": "Elgin Industries engine parts catalog (technical reference) - engine details",
+       "url": "https://catalog.elginind.com/engine/toyota/default/80ae1d1d-190a-4e1b-8004-309d3f91f505/",
+       "says": "Head DOHC"
+      },
+      {
+       "name": "Engine Builder magazine (May 1999): Rebuilding the Toyota 3.0L V6 (read via web.archive.org)",
+       "url": "https://www.enginebuildermag.com/1999/05/rebuilding-the-toyota-3-0l-v6/",
+       "says": "four valves per cylinder and twin cams per cylinder head"
+      }
+     ],
+     "note": ""
+    },
+    "fuel_type": {
+     "value": "gasoline",
+     "sources": [
+      {
+       "name": "Wikipedia: Toyota VZ engine",
+       "url": "https://en.wikipedia.org/wiki/Toyota_VZ_engine",
+       "says": "sequential multi-port fuel injection"
+      },
+      {
+       "name": "Elgin Industries engine parts catalog (technical reference) - engine details",
+       "url": "https://catalog.elginind.com/engine/toyota/default/80ae1d1d-190a-4e1b-8004-309d3f91f505/",
+       "says": "Fuel / Delivery GAS / FI"
+      },
+      {
+       "name": "EPA fueleconomy.gov vehicle data",
+       "url": "https://www.fueleconomy.gov/feg/download.shtml",
+       "says": "Tacoma 3.4 L, no diesel flag"
+      }
+     ],
+     "note": ""
+    }
+   },
+   "variants": [],
+   "unverified": {
+    "block_material": "cast iron: Wikipedia only ('cast iron block'); Engine Builder 1999 does not restate it for the 3.4.",
+    "head_material": "aluminum: Wikipedia only."
+   },
+   "unverified_variants": []
+  },
+  {
+   "id": "toyota-1gr-fe",
+   "name": "Toyota 1GR-FE 4.0 V6",
+   "fields": {
+    "bore_in": {
+     "value": 3.7008,
+     "sources": [
+      {
+       "name": "Wikipedia: Toyota GR engine",
+       "url": "https://en.wikipedia.org/wiki/Toyota_GR_engine",
+       "says": "1GR-FE 94 mm x 95 mm (3.70 in x 3.74 in)"
+      },
+      {
+       "name": "Elgin Industries engine parts catalog (technical reference) - engine details",
+       "url": "https://catalog.elginind.com/engine/toyota/default/cc3481ee-05bf-4a0c-872a-5472c35f3682/",
+       "says": "1GR-FE 3956cc: Bore 3.70'' (94.0mm)"
+      }
+     ],
+     "note": "94.0 mm",
+     "second_pass": true
+    },
+    "displacement_l": {
+     "value": 4.0,
+     "sources": [
+      {
+       "name": "Wikipedia: Toyota GR engine",
+       "url": "https://en.wikipedia.org/wiki/Toyota_GR_engine",
+       "says": "4.0 L (3,956 cc)"
+      },
+      {
+       "name": "Elgin Industries engine parts catalog (technical reference) - engine details",
+       "url": "https://catalog.elginind.com/engine/toyota/default/cc3481ee-05bf-4a0c-872a-5472c35f3682/",
+       "says": "Liters 4.0, CC 3956"
+      },
+      {
+       "name": "Toyota USA pressroom: 2010 Toyota 4Runner Add to Rich Heritage (Toyota material)",
+       "url": "https://pressroom.toyota.com/2010-toyota-4runner-add-to-rich-heritage-with-more-power-better-mpg/",
+       "says": "powered by a new 4.0-liter V6"
+      },
+      {
+       "name": "EPA fueleconomy.gov vehicle data",
+       "url": "https://www.fueleconomy.gov/feg/download.shtml",
+       "says": "2003 4Runner / 2005 Tacoma 4.0 L 6-cyl"
+      }
+     ],
+     "note": "3,956 cc"
+    },
+    "displacement_ci": {
+     "value": 241,
+     "sources": [
+      {
+       "name": "Wikipedia: Toyota GR engine",
+       "url": "https://en.wikipedia.org/wiki/Toyota_GR_engine",
+       "says": "3,956 cc"
+      },
+      {
+       "name": "Elgin Industries engine parts catalog (technical reference) - engine details",
+       "url": "https://catalog.elginind.com/engine/toyota/default/cc3481ee-05bf-4a0c-872a-5472c35f3682/",
+       "says": "CC 3956"
+      }
+     ],
+     "note": "converted from 3,956 cc = 241.4 ci",
+     "second_pass": true
+    },
+    "num_cylinders": {
+     "value": 6,
+     "sources": [
+      {
+       "name": "Wikipedia: Toyota GR engine",
+       "url": "https://en.wikipedia.org/wiki/Toyota_GR_engine",
+       "says": "V6"
+      },
+      {
+       "name": "Elgin Industries engine parts catalog (technical reference) - engine details",
+       "url": "https://catalog.elginind.com/engine/toyota/default/cc3481ee-05bf-4a0c-872a-5472c35f3682/",
+       "says": "Cyl. 6"
+      },
+      {
+       "name": "Toyota USA pressroom: 2010 Toyota 4Runner Add to Rich Heritage (Toyota material)",
+       "url": "https://pressroom.toyota.com/2010-toyota-4runner-add-to-rich-heritage-with-more-power-better-mpg/",
+       "says": "4.0-liter V6"
+      }
+     ],
+     "note": ""
+    },
+    "configuration": {
+     "value": "V6",
+     "sources": [
+      {
+       "name": "Wikipedia: Toyota GR engine",
+       "url": "https://en.wikipedia.org/wiki/Toyota_GR_engine",
+       "says": "GR family V6"
+      },
+      {
+       "name": "Toyota USA pressroom: 2010 Toyota 4Runner Add to Rich Heritage (Toyota material)",
+       "url": "https://pressroom.toyota.com/2010-toyota-4runner-add-to-rich-heritage-with-more-power-better-mpg/",
+       "says": "4.0-liter V6"
+      }
+     ],
+     "note": "60 degree per Wikipedia only; Toyota Canada 2007 release also says V6 but Toyota material counts once",
+     "second_pass": true
+    },
+    "valvetrain": {
+     "value": "DOHC, 4 valves per cylinder (24 valves)",
+     "sources": [
+      {
+       "name": "Wikipedia: Toyota GR engine",
+       "url": "https://en.wikipedia.org/wiki/Toyota_GR_engine",
+       "says": "DOHC 4 valves/cyl"
+      },
+      {
+       "name": "Elgin Industries engine parts catalog (technical reference) - engine details",
+       "url": "https://catalog.elginind.com/engine/toyota/default/cc3481ee-05bf-4a0c-872a-5472c35f3682/",
+       "says": "Head DOHC, Misc. 24 Valve"
+      },
+      {
+       "name": "Toyota Canada media: 2007 Toyota 4Runner release (Toyota material)",
+       "url": "https://media.toyota.ca/en/releases/2007/2007-toyota-4runner--well-equipped-for-commanding-performance.html",
+       "says": "4.0-litre, DOHC 24-valve V6"
+      }
+     ],
+     "note": "VVT-i intake; dual VVT-i from 2010 (Toyota pressroom)"
+    },
+    "fuel_type": {
+     "value": "gasoline",
+     "sources": [
+      {
+       "name": "Wikipedia: Toyota GR engine",
+       "url": "https://en.wikipedia.org/wiki/Toyota_GR_engine",
+       "says": "multi-port fuel injection"
+      },
+      {
+       "name": "Elgin Industries engine parts catalog (technical reference) - engine details",
+       "url": "https://catalog.elginind.com/engine/toyota/default/cc3481ee-05bf-4a0c-872a-5472c35f3682/",
+       "says": "Fuel / Delivery GAS / FI"
+      },
+      {
+       "name": "EPA fueleconomy.gov vehicle data",
+       "url": "https://www.fueleconomy.gov/feg/download.shtml",
+       "says": "4Runner 4.0 L, no diesel flag"
+      }
+     ],
+     "note": ""
+    }
+   },
+   "variants": [],
+   "unverified": {
+    "stroke_in": "3.7402 in (95.0 mm): Wikipedia only among checked sources; Elgin lists no stroke.",
+    "block_material": "die-cast aluminum: Wikipedia only.",
+    "head_material": "aluminum: Wikipedia only."
+   },
+   "unverified_variants": []
+  },
+  {
+   "id": "toyota-2gr-fks",
+   "name": "Toyota 2GR-FKS 3.5 V6",
+   "fields": {
+    "bore_in": {
+     "value": 3.7008,
+     "sources": [
+      {
+       "name": "Wikipedia: Toyota GR engine",
+       "url": "https://en.wikipedia.org/wiki/Toyota_GR_engine",
+       "says": "2GR-FKS 94 mm x 83 mm (3.70 in x 3.27 in)"
+      },
+      {
+       "name": "Elgin Industries engine parts catalog (technical reference) - engine details",
+       "url": "https://catalog.elginind.com/engine/toyota/default/67f348c7-4bdd-434e-b98b-14b5e448e80b/",
+       "says": "2GR-FKS 3456cc: Bore 3.70'' (94.0mm)"
+      },
+      {
+       "name": "Toyota 2016 Tacoma Product Information (Toyota press material)",
+       "url": "https://www.tfltruck.com/wp-content/uploads/2015/08/2016-toyota-Tacoma-Product-Info.pdf",
+       "says": "3.5L-V6 Bore x Stroke 3.70 x 3.27 in."
+      }
+     ],
+     "note": "94.0 mm"
+    },
+    "stroke_in": {
+     "value": 3.2677,
+     "sources": [
+      {
+       "name": "Wikipedia: Toyota GR engine",
+       "url": "https://en.wikipedia.org/wiki/Toyota_GR_engine",
+       "says": "stroke 83 mm (3.27 in)"
+      },
+      {
+       "name": "Elgin Industries engine parts catalog (technical reference) - engine details",
+       "url": "https://catalog.elginind.com/engine/toyota/default/67f348c7-4bdd-434e-b98b-14b5e448e80b/",
+       "says": "Stroke 3.27'' (83.0mm)"
+      },
+      {
+       "name": "Toyota 2016 Tacoma Product Information (Toyota press material)",
+       "url": "https://www.tfltruck.com/wp-content/uploads/2015/08/2016-toyota-Tacoma-Product-Info.pdf",
+       "says": "Bore x Stroke 3.70 x 3.27 in."
+      }
+     ],
+     "note": "83.0 mm"
+    },
+    "displacement_l": {
+     "value": 3.5,
+     "sources": [
+      {
+       "name": "Wikipedia: Toyota GR engine",
+       "url": "https://en.wikipedia.org/wiki/Toyota_GR_engine",
+       "says": "3.5-litre (3,456 cc)"
+      },
+      {
+       "name": "Elgin Industries engine parts catalog (technical reference) - engine details",
+       "url": "https://catalog.elginind.com/engine/toyota/default/67f348c7-4bdd-434e-b98b-14b5e448e80b/",
+       "says": "Liters 3.5, CC 3456"
+      },
+      {
+       "name": "Toyota 2016 Tacoma Product Information (Toyota press material)",
+       "url": "https://www.tfltruck.com/wp-content/uploads/2015/08/2016-toyota-Tacoma-Product-Info.pdf",
+       "says": "Displacement 3,456 cc"
+      },
+      {
+       "name": "EPA fueleconomy.gov vehicle data",
+       "url": "https://www.fueleconomy.gov/feg/download.shtml",
+       "says": "2016 Tacoma 3.5 L 6-cyl"
+      }
+     ],
+     "note": "3,456 cc"
+    },
+    "displacement_ci": {
+     "value": 211,
+     "sources": [
+      {
+       "name": "Wikipedia: Toyota GR engine",
+       "url": "https://en.wikipedia.org/wiki/Toyota_GR_engine",
+       "says": "3,456 cc"
+      },
+      {
+       "name": "Elgin Industries engine parts catalog (technical reference) - engine details",
+       "url": "https://catalog.elginind.com/engine/toyota/default/67f348c7-4bdd-434e-b98b-14b5e448e80b/",
+       "says": "CC 3456"
+      },
+      {
+       "name": "Toyota 2016 Tacoma Product Information (Toyota press material)",
+       "url": "https://www.tfltruck.com/wp-content/uploads/2015/08/2016-toyota-Tacoma-Product-Info.pdf",
+       "says": "3,456 cc"
+      }
+     ],
+     "note": "converted from 3,456 cc = 210.9 ci"
+    },
+    "num_cylinders": {
+     "value": 6,
+     "sources": [
+      {
+       "name": "Wikipedia: Toyota GR engine",
+       "url": "https://en.wikipedia.org/wiki/Toyota_GR_engine",
+       "says": "V6"
+      },
+      {
+       "name": "Elgin Industries engine parts catalog (technical reference) - engine details",
+       "url": "https://catalog.elginind.com/engine/toyota/default/67f348c7-4bdd-434e-b98b-14b5e448e80b/",
+       "says": "Cyl. 6"
+      },
+      {
+       "name": "Toyota 2016 Tacoma Product Information (Toyota press material)",
+       "url": "https://www.tfltruck.com/wp-content/uploads/2015/08/2016-toyota-Tacoma-Product-Info.pdf",
+       "says": "3.5-liter V6"
+      }
+     ],
+     "note": ""
+    },
+    "configuration": {
+     "value": "V6",
+     "sources": [
+      {
+       "name": "Wikipedia: Toyota GR engine",
+       "url": "https://en.wikipedia.org/wiki/Toyota_GR_engine",
+       "says": "V6"
+      },
+      {
+       "name": "Toyota 2016 Tacoma Product Information (Toyota press material)",
+       "url": "https://www.tfltruck.com/wp-content/uploads/2015/08/2016-toyota-Tacoma-Product-Info.pdf",
+       "says": "3.5-liter V6 D4S Injection"
+      }
+     ],
+     "note": "",
+     "second_pass": true
+    },
+    "valvetrain": {
+     "value": "DOHC, 4 valves per cylinder (24 valves)",
+     "sources": [
+      {
+       "name": "Wikipedia: Toyota GR engine",
+       "url": "https://en.wikipedia.org/wiki/Toyota_GR_engine",
+       "says": "24-valve DOHC (VVT-iW intake, VVT-i exhaust)"
+      },
+      {
+       "name": "Elgin Industries engine parts catalog (technical reference) - engine details",
+       "url": "https://catalog.elginind.com/engine/toyota/default/67f348c7-4bdd-434e-b98b-14b5e448e80b/",
+       "says": "Head DOHC, Misc. 24 Valve"
+      }
+     ],
+     "note": "Toyota: VVT-iW intake & VVT-i exhaust, Atkinson cycle",
+     "second_pass": true
+    },
+    "fuel_type": {
+     "value": "gasoline",
+     "sources": [
+      {
+       "name": "Wikipedia: Toyota GR engine",
+       "url": "https://en.wikipedia.org/wiki/Toyota_GR_engine",
+       "says": "D-4S direct + port injection"
+      },
+      {
+       "name": "Elgin Industries engine parts catalog (technical reference) - engine details",
+       "url": "https://catalog.elginind.com/engine/toyota/default/67f348c7-4bdd-434e-b98b-14b5e448e80b/",
+       "says": "GAS / FI"
+      },
+      {
+       "name": "Toyota 2016 Tacoma Product Information (Toyota press material)",
+       "url": "https://www.tfltruck.com/wp-content/uploads/2015/08/2016-toyota-Tacoma-Product-Info.pdf",
+       "says": "Recommended Fuel 87 or higher"
+      }
+     ],
+     "note": "D-4S (direct + port injection) per Toyota and Wikipedia"
+    }
+   },
+   "variants": [],
+   "unverified": {
+    "block_material": "aluminum: Wikipedia family statement only.",
+    "head_material": "aluminum: Wikipedia only."
+   },
+   "unverified_variants": []
+  },
+  {
+   "id": "toyota-2tr-fe",
+   "name": "Toyota 2TR-FE 2.7 I4",
+   "fields": {
+    "bore_in": {
+     "value": 3.7402,
+     "sources": [
+      {
+       "name": "Wikipedia: Toyota TR engine",
+       "url": "https://en.wikipedia.org/wiki/Toyota_TR_engine",
+       "says": "95 mm x 95 mm (3.74 in x 3.74 in)"
+      },
+      {
+       "name": "Elgin Industries engine parts catalog (technical reference) - engine details",
+       "url": "https://catalog.elginind.com/engine/toyota/default/84f9535e-6de1-4ba4-847c-42e8bef1fc96/",
+       "says": "2TR-FE 2694cc: Bore 3.74'' (95.0mm)"
+      },
+      {
+       "name": "Toyota 2016 Tacoma Product Information (Toyota press material)",
+       "url": "https://www.tfltruck.com/wp-content/uploads/2015/08/2016-toyota-Tacoma-Product-Info.pdf",
+       "says": "2.7L-4CYL Bore x Stroke 3.74 x 3.74 in."
+      }
+     ],
+     "note": "95.0 mm"
+    },
+    "stroke_in": {
+     "value": 3.7402,
+     "sources": [
+      {
+       "name": "Wikipedia: Toyota TR engine",
+       "url": "https://en.wikipedia.org/wiki/Toyota_TR_engine",
+       "says": "95 mm x 95 mm"
+      },
+      {
+       "name": "Elgin Industries engine parts catalog (technical reference) - engine details",
+       "url": "https://catalog.elginind.com/engine/toyota/default/84f9535e-6de1-4ba4-847c-42e8bef1fc96/",
+       "says": "Stroke 3.74'' (95.0mm)"
+      },
+      {
+       "name": "Toyota 2016 Tacoma Product Information (Toyota press material)",
+       "url": "https://www.tfltruck.com/wp-content/uploads/2015/08/2016-toyota-Tacoma-Product-Info.pdf",
+       "says": "Bore x Stroke 3.74 x 3.74 in."
+      }
+     ],
+     "note": "95.0 mm"
+    },
+    "displacement_l": {
+     "value": 2.7,
+     "sources": [
+      {
+       "name": "Wikipedia: Toyota TR engine",
+       "url": "https://en.wikipedia.org/wiki/Toyota_TR_engine",
+       "says": "2,693 cc (2.7 L)"
+      },
+      {
+       "name": "Elgin Industries engine parts catalog (technical reference) - engine details",
+       "url": "https://catalog.elginind.com/engine/toyota/default/84f9535e-6de1-4ba4-847c-42e8bef1fc96/",
+       "says": "Liters 2.7, CC 2694"
+      },
+      {
+       "name": "Toyota 2016 Tacoma Product Information (Toyota press material)",
+       "url": "https://www.tfltruck.com/wp-content/uploads/2015/08/2016-toyota-Tacoma-Product-Info.pdf",
+       "says": "Displacement 2,694 cc"
+      }
+     ],
+     "note": "Toyota and Elgin 2,694 cc; Wikipedia 2,693 cc"
+    },
+    "displacement_ci": {
+     "value": 164,
+     "sources": [
+      {
+       "name": "Wikipedia: Toyota TR engine",
+       "url": "https://en.wikipedia.org/wiki/Toyota_TR_engine",
+       "says": "2,693 cc"
+      },
+      {
+       "name": "Elgin Industries engine parts catalog (technical reference) - engine details",
+       "url": "https://catalog.elginind.com/engine/toyota/default/84f9535e-6de1-4ba4-847c-42e8bef1fc96/",
+       "says": "CC 2694"
+      },
+      {
+       "name": "Toyota 2016 Tacoma Product Information (Toyota press material)",
+       "url": "https://www.tfltruck.com/wp-content/uploads/2015/08/2016-toyota-Tacoma-Product-Info.pdf",
+       "says": "2,694 cc"
+      }
+     ],
+     "note": "converted from cc = 164.4 ci"
+    },
+    "num_cylinders": {
+     "value": 4,
+     "sources": [
+      {
+       "name": "Wikipedia: Toyota TR engine",
+       "url": "https://en.wikipedia.org/wiki/Toyota_TR_engine",
+       "says": "inline-four"
+      },
+      {
+       "name": "Elgin Industries engine parts catalog (technical reference) - engine details",
+       "url": "https://catalog.elginind.com/engine/toyota/default/84f9535e-6de1-4ba4-847c-42e8bef1fc96/",
+       "says": "Cyl. 4"
+      },
+      {
+       "name": "Toyota 2016 Tacoma Product Information (Toyota press material)",
+       "url": "https://www.tfltruck.com/wp-content/uploads/2015/08/2016-toyota-Tacoma-Product-Info.pdf",
+       "says": "2.7-liter inline 4-cylinder"
+      }
+     ],
+     "note": ""
+    },
+    "configuration": {
+     "value": "inline-4",
+     "sources": [
+      {
+       "name": "Wikipedia: Toyota TR engine",
+       "url": "https://en.wikipedia.org/wiki/Toyota_TR_engine",
+       "says": "inline-four"
+      },
+      {
+       "name": "Toyota 2016 Tacoma Product Information (Toyota press material)",
+       "url": "https://www.tfltruck.com/wp-content/uploads/2015/08/2016-toyota-Tacoma-Product-Info.pdf",
+       "says": "2.7-liter inline 4-cylinder, DOHC 16-valve"
+      }
+     ],
+     "note": "",
+     "second_pass": true
+    },
+    "valvetrain": {
+     "value": "DOHC, 4 valves per cylinder (16 valves)",
+     "sources": [
+      {
+       "name": "Wikipedia: Toyota TR engine",
+       "url": "https://en.wikipedia.org/wiki/Toyota_TR_engine",
+       "says": "DOHC 4 valves per cylinder with VVT-i"
+      },
+      {
+       "name": "Elgin Industries engine parts catalog (technical reference) - engine details",
+       "url": "https://catalog.elginind.com/engine/toyota/default/84f9535e-6de1-4ba4-847c-42e8bef1fc96/",
+       "says": "Head DOHC, Misc. 16 Valve"
+      },
+      {
+       "name": "Toyota 2016 Tacoma Product Information (Toyota press material)",
+       "url": "https://www.tfltruck.com/wp-content/uploads/2015/08/2016-toyota-Tacoma-Product-Info.pdf",
+       "says": "DOHC 16-valve ... with VVT-i"
+      }
+     ],
+     "note": ""
+    },
+    "block_material": {
+     "value": "cast iron",
+     "sources": [
+      {
+       "name": "Wikipedia: Toyota TR engine",
+       "url": "https://en.wikipedia.org/wiki/Toyota_TR_engine",
+       "says": "Cast iron block"
+      },
+      {
+       "name": "Toyota 2016 Tacoma Product Information (Toyota press material)",
+       "url": "https://www.tfltruck.com/wp-content/uploads/2015/08/2016-toyota-Tacoma-Product-Info.pdf",
+       "says": "16-valve cast iron block"
+      }
+     ],
+     "note": "",
+     "second_pass": true
+    },
+    "head_material": {
+     "value": "aluminum",
+     "sources": [
+      {
+       "name": "Wikipedia: Toyota TR engine",
+       "url": "https://en.wikipedia.org/wiki/Toyota_TR_engine",
+       "says": "aluminium head"
+      },
+      {
+       "name": "Toyota 2016 Tacoma Product Information (Toyota press material)",
+       "url": "https://www.tfltruck.com/wp-content/uploads/2015/08/2016-toyota-Tacoma-Product-Info.pdf",
+       "says": "aluminum alloy head with VVT-i"
+      }
+     ],
+     "note": "",
+     "second_pass": true
+    },
+    "fuel_type": {
+     "value": "gasoline",
+     "sources": [
+      {
+       "name": "Wikipedia: Toyota TR engine",
+       "url": "https://en.wikipedia.org/wiki/Toyota_TR_engine",
+       "says": "multi-point fuel injection"
+      },
+      {
+       "name": "Elgin Industries engine parts catalog (technical reference) - engine details",
+       "url": "https://catalog.elginind.com/engine/toyota/default/84f9535e-6de1-4ba4-847c-42e8bef1fc96/",
+       "says": "GAS / FI"
+      },
+      {
+       "name": "Toyota 2016 Tacoma Product Information (Toyota press material)",
+       "url": "https://www.tfltruck.com/wp-content/uploads/2015/08/2016-toyota-Tacoma-Product-Info.pdf",
+       "says": "Recommended Fuel 87 or higher"
+      }
+     ],
+     "note": ""
+    }
+   },
+   "variants": [],
+   "unverified": {},
+   "unverified_variants": []
+  },
+  {
+   "id": "toyota-3rz-fe",
+   "name": "Toyota 3RZ-FE 2.7 I4",
+   "fields": {
+    "bore_in": {
+     "value": 3.7402,
+     "sources": [
+      {
+       "name": "Wikipedia: Toyota RZ engine",
+       "url": "https://en.wikipedia.org/wiki/Toyota_RZ_engine",
+       "says": "3RZ-FE 95 mm x 95 mm"
+      },
+      {
+       "name": "Elgin Industries engine parts catalog (technical reference) - engine details",
+       "url": "https://catalog.elginind.com/engine/toyota/default/00cab552-a335-45cc-9713-8da963081f57/",
+       "says": "3RZ-FE 2694cc: Bore 3.74'' (95.0mm)"
+      }
+     ],
+     "note": "95.0 mm",
+     "second_pass": true
+    },
+    "stroke_in": {
+     "value": 3.7402,
+     "sources": [
+      {
+       "name": "Wikipedia: Toyota RZ engine",
+       "url": "https://en.wikipedia.org/wiki/Toyota_RZ_engine",
+       "says": "3RZ-FE 95 mm x 95 mm"
+      },
+      {
+       "name": "Elgin Industries engine parts catalog (technical reference) - engine details",
+       "url": "https://catalog.elginind.com/engine/toyota/default/00cab552-a335-45cc-9713-8da963081f57/",
+       "says": "Stroke 3.74'' (95.0mm)"
+      }
+     ],
+     "note": "95.0 mm",
+     "second_pass": true
+    },
+    "displacement_l": {
+     "value": 2.7,
+     "sources": [
+      {
+       "name": "Wikipedia: Toyota RZ engine",
+       "url": "https://en.wikipedia.org/wiki/Toyota_RZ_engine",
+       "says": "2.7 L (2,693 cc)"
+      },
+      {
+       "name": "Elgin Industries engine parts catalog (technical reference) - engine details",
+       "url": "https://catalog.elginind.com/engine/toyota/default/00cab552-a335-45cc-9713-8da963081f57/",
+       "says": "Liters 2.7, CC 2694"
+      },
+      {
+       "name": "EPA fueleconomy.gov vehicle data",
+       "url": "https://www.fueleconomy.gov/feg/download.shtml",
+       "says": "1995 Tacoma 4WD 2.7 L 4-cyl"
+      }
+     ],
+     "note": "Wikipedia 2,693 cc, Elgin 2,694 cc"
+    },
+    "displacement_ci": {
+     "value": 164,
+     "sources": [
+      {
+       "name": "Wikipedia: Toyota RZ engine",
+       "url": "https://en.wikipedia.org/wiki/Toyota_RZ_engine",
+       "says": "2,693 cc"
+      },
+      {
+       "name": "Elgin Industries engine parts catalog (technical reference) - engine details",
+       "url": "https://catalog.elginind.com/engine/toyota/default/00cab552-a335-45cc-9713-8da963081f57/",
+       "says": "CC 2694"
+      }
+     ],
+     "note": "converted = 164.3-164.4 ci",
+     "second_pass": true
+    },
+    "num_cylinders": {
+     "value": 4,
+     "sources": [
+      {
+       "name": "Wikipedia: Toyota RZ engine",
+       "url": "https://en.wikipedia.org/wiki/Toyota_RZ_engine",
+       "says": "inline-four"
+      },
+      {
+       "name": "Elgin Industries engine parts catalog (technical reference) - engine details",
+       "url": "https://catalog.elginind.com/engine/toyota/default/00cab552-a335-45cc-9713-8da963081f57/",
+       "says": "Cyl. 4"
+      },
+      {
+       "name": "EPA fueleconomy.gov vehicle data",
+       "url": "https://www.fueleconomy.gov/feg/download.shtml",
+       "says": "2.7 L 4-cyl"
+      }
+     ],
+     "note": ""
+    },
+    "valvetrain": {
+     "value": "DOHC, 4 valves per cylinder (16 valves)",
+     "sources": [
+      {
+       "name": "Wikipedia: Toyota RZ engine",
+       "url": "https://en.wikipedia.org/wiki/Toyota_RZ_engine",
+       "says": "four valves per cylinder and DOHC"
+      },
+      {
+       "name": "Elgin Industries engine parts catalog (technical reference) - engine details",
+       "url": "https://catalog.elginind.com/engine/toyota/default/00cab552-a335-45cc-9713-8da963081f57/",
+       "says": "Head DOHC, Misc. 16 Valve"
+      }
+     ],
+     "note": "",
+     "second_pass": true
+    },
+    "fuel_type": {
+     "value": "gasoline",
+     "sources": [
+      {
+       "name": "Wikipedia: Toyota RZ engine",
+       "url": "https://en.wikipedia.org/wiki/Toyota_RZ_engine",
+       "says": "EFI gasoline"
+      },
+      {
+       "name": "Elgin Industries engine parts catalog (technical reference) - engine details",
+       "url": "https://catalog.elginind.com/engine/toyota/default/00cab552-a335-45cc-9713-8da963081f57/",
+       "says": "GAS / FI"
+      },
+      {
+       "name": "EPA fueleconomy.gov vehicle data",
+       "url": "https://www.fueleconomy.gov/feg/download.shtml",
+       "says": "Tacoma 2.7 L, no diesel flag"
+      }
+     ],
+     "note": ""
+    }
+   },
+   "variants": [],
+   "unverified": {
+    "configuration": "inline-4: stated only by Wikipedia (Elgin/EPA give 4 cylinders without layout).",
+    "block_material": "cast iron: Wikipedia only.",
+    "head_material": "aluminum: Wikipedia only."
+   },
+   "unverified_variants": []
+  },
+  {
+   "id": "toyota-2rz-fe",
+   "name": "Toyota 2RZ-FE 2.4 I4",
+   "fields": {
+    "bore_in": {
+     "value": 3.7402,
+     "sources": [
+      {
+       "name": "Wikipedia: Toyota RZ engine",
+       "url": "https://en.wikipedia.org/wiki/Toyota_RZ_engine",
+       "says": "2RZ-FE 95 mm x 86 mm (3.74 in x 3.39 in)"
+      },
+      {
+       "name": "Elgin Industries engine parts catalog (technical reference) - engine details",
+       "url": "https://catalog.elginind.com/engine/toyota/default/99936b4b-f38e-4685-9b5e-1eca2f8cc03e/",
+       "says": "2RZ-FE 2438cc: Bore 3.74'' (95.0mm)"
+      }
+     ],
+     "note": "95.0 mm",
+     "second_pass": true
+    },
+    "stroke_in": {
+     "value": 3.3858,
+     "sources": [
+      {
+       "name": "Wikipedia: Toyota RZ engine",
+       "url": "https://en.wikipedia.org/wiki/Toyota_RZ_engine",
+       "says": "stroke 86 mm"
+      },
+      {
+       "name": "Elgin Industries engine parts catalog (technical reference) - engine details",
+       "url": "https://catalog.elginind.com/engine/toyota/default/99936b4b-f38e-4685-9b5e-1eca2f8cc03e/",
+       "says": "Stroke 3.39'' (86.0mm)"
+      }
+     ],
+     "note": "86.0 mm",
+     "second_pass": true
+    },
+    "displacement_l": {
+     "value": 2.4,
+     "sources": [
+      {
+       "name": "Wikipedia: Toyota RZ engine",
+       "url": "https://en.wikipedia.org/wiki/Toyota_RZ_engine",
+       "says": "2.4 L (2,438 cc)"
+      },
+      {
+       "name": "Elgin Industries engine parts catalog (technical reference) - engine details",
+       "url": "https://catalog.elginind.com/engine/toyota/default/99936b4b-f38e-4685-9b5e-1eca2f8cc03e/",
+       "says": "Liters 2.4, CC 2438"
+      },
+      {
+       "name": "EPA fueleconomy.gov vehicle data",
+       "url": "https://www.fueleconomy.gov/feg/download.shtml",
+       "says": "1995 Tacoma 2WD 2.4 L 4-cyl"
+      }
+     ],
+     "note": "2,438 cc"
+    },
+    "displacement_ci": {
+     "value": 149,
+     "sources": [
+      {
+       "name": "Wikipedia: Toyota RZ engine",
+       "url": "https://en.wikipedia.org/wiki/Toyota_RZ_engine",
+       "says": "2,438 cc"
+      },
+      {
+       "name": "Elgin Industries engine parts catalog (technical reference) - engine details",
+       "url": "https://catalog.elginind.com/engine/toyota/default/99936b4b-f38e-4685-9b5e-1eca2f8cc03e/",
+       "says": "CC 2438"
+      }
+     ],
+     "note": "converted = 148.8 ci",
+     "second_pass": true
+    },
+    "num_cylinders": {
+     "value": 4,
+     "sources": [
+      {
+       "name": "Wikipedia: Toyota RZ engine",
+       "url": "https://en.wikipedia.org/wiki/Toyota_RZ_engine",
+       "says": "inline-four"
+      },
+      {
+       "name": "Elgin Industries engine parts catalog (technical reference) - engine details",
+       "url": "https://catalog.elginind.com/engine/toyota/default/99936b4b-f38e-4685-9b5e-1eca2f8cc03e/",
+       "says": "Cyl. 4"
+      },
+      {
+       "name": "EPA fueleconomy.gov vehicle data",
+       "url": "https://www.fueleconomy.gov/feg/download.shtml",
+       "says": "2.4 L 4-cyl"
+      }
+     ],
+     "note": ""
+    },
+    "valvetrain": {
+     "value": "DOHC, 4 valves per cylinder (16 valves)",
+     "sources": [
+      {
+       "name": "Wikipedia: Toyota RZ engine",
+       "url": "https://en.wikipedia.org/wiki/Toyota_RZ_engine",
+       "says": "four valves per cylinder and DOHC"
+      },
+      {
+       "name": "Elgin Industries engine parts catalog (technical reference) - engine details",
+       "url": "https://catalog.elginind.com/engine/toyota/default/99936b4b-f38e-4685-9b5e-1eca2f8cc03e/",
+       "says": "Head DOHC"
+      }
+     ],
+     "note": "",
+     "second_pass": true
+    },
+    "fuel_type": {
+     "value": "gasoline",
+     "sources": [
+      {
+       "name": "Wikipedia: Toyota RZ engine",
+       "url": "https://en.wikipedia.org/wiki/Toyota_RZ_engine",
+       "says": "EFI gasoline"
+      },
+      {
+       "name": "Elgin Industries engine parts catalog (technical reference) - engine details",
+       "url": "https://catalog.elginind.com/engine/toyota/default/99936b4b-f38e-4685-9b5e-1eca2f8cc03e/",
+       "says": "GAS / FI"
+      },
+      {
+       "name": "EPA fueleconomy.gov vehicle data",
+       "url": "https://www.fueleconomy.gov/feg/download.shtml",
+       "says": "Tacoma 2.4 L, no diesel flag"
+      }
+     ],
+     "note": ""
+    }
+   },
+   "variants": [],
+   "unverified": {
+    "configuration": "inline-4: Wikipedia only.",
+    "block_material": "cast iron: Wikipedia only.",
+    "head_material": "aluminum: Wikipedia only."
+   },
+   "unverified_variants": []
+  },
+  {
+   "id": "toyota-f",
+   "name": "Toyota F 3.9 I6",
+   "fields": {
+    "displacement_l": {
+     "value": 3.9,
+     "sources": [
+      {
+       "name": "Wikipedia: Toyota F engine",
+       "url": "https://en.wikipedia.org/wiki/Toyota_F_engine",
+       "says": "3.9 L (3878 cc)"
+      },
+      {
+       "name": "Elgin Industries engine parts catalog (technical reference) - engine details",
+       "url": "https://catalog.elginind.com/engine/toyota/default/16d9d18b-b3e6-4c2d-a1a2-e58a285368c4/",
+       "says": "F, FJ: Liters 3.9, CC 3878"
+      },
+      {
+       "name": "Toyota Global 75 Years vehicle lineage: Land Cruiser 40 (Toyota material)",
+       "url": "https://www.toyota-global.com/company/history_of_toyota/75years/vehicle_lineage/car/id60012611/",
+       "says": "Engine code F ... Displacement 3878 cm3"
+      },
+      {
+       "name": "Curbside Classic: 1974 Toyota Land Cruiser (FJ55)",
+       "url": "https://www.curbsideclassic.com/curbside-classics/curbside-classic-1974-toyota-land-cruiser-fj55-soil-tracker/",
+       "says": "inline 6-cyl. 3.9L Type F engine"
+      }
+     ],
+     "note": "3,878 cc"
+    },
+    "displacement_ci": {
+     "value": 237,
+     "sources": [
+      {
+       "name": "Wikipedia: Toyota F engine",
+       "url": "https://en.wikipedia.org/wiki/Toyota_F_engine",
+       "says": "3878 cc"
+      },
+      {
+       "name": "Elgin Industries engine parts catalog (technical reference) - engine details",
+       "url": "https://catalog.elginind.com/engine/toyota/default/16d9d18b-b3e6-4c2d-a1a2-e58a285368c4/",
+       "says": "CC 3878"
+      },
+      {
+       "name": "Toyota Global 75 Years vehicle lineage: Land Cruiser 40 (Toyota material)",
+       "url": "https://www.toyota-global.com/company/history_of_toyota/75years/vehicle_lineage/car/id60012611/",
+       "says": "3878 cm3"
+      }
+     ],
+     "note": "converted = 236.6 ci"
+    },
+    "num_cylinders": {
+     "value": 6,
+     "sources": [
+      {
+       "name": "Wikipedia: Toyota F engine",
+       "url": "https://en.wikipedia.org/wiki/Toyota_F_engine",
+       "says": "inline-6"
+      },
+      {
+       "name": "Elgin Industries engine parts catalog (technical reference) - engine details",
+       "url": "https://catalog.elginind.com/engine/toyota/default/16d9d18b-b3e6-4c2d-a1a2-e58a285368c4/",
+       "says": "Cyl. 6"
+      },
+      {
+       "name": "Toyota Global 75 Years vehicle lineage: Land Cruiser 40 (Toyota material)",
+       "url": "https://www.toyota-global.com/company/history_of_toyota/75years/vehicle_lineage/car/id60012611/",
+       "says": "In-line 6-cylinder, OHV"
+      }
+     ],
+     "note": ""
+    },
+    "configuration": {
+     "value": "inline-6",
+     "sources": [
+      {
+       "name": "Wikipedia: Toyota F engine",
+       "url": "https://en.wikipedia.org/wiki/Toyota_F_engine",
+       "says": "inline-6"
+      },
+      {
+       "name": "Toyota Global 75 Years vehicle lineage: Land Cruiser 40 (Toyota material)",
+       "url": "https://www.toyota-global.com/company/history_of_toyota/75years/vehicle_lineage/car/id60012611/",
+       "says": "In-line 6-cylinder, OHV"
+      },
+      {
+       "name": "Curbside Classic: 1974 Toyota Land Cruiser (FJ55)",
+       "url": "https://www.curbsideclassic.com/curbside-classics/curbside-classic-1974-toyota-land-cruiser-fj55-soil-tracker/",
+       "says": "inline 6-cyl. 3.9L Type F engine"
+      }
+     ],
+     "note": ""
+    },
+    "valvetrain": {
+     "value": "OHV (pushrod), 2 valves per cylinder",
+     "sources": [
+      {
+       "name": "Wikipedia: Toyota F engine",
+       "url": "https://en.wikipedia.org/wiki/Toyota_F_engine",
+       "says": "overhead valves actuated by pushrods from a gear driven camshaft"
+      },
+      {
+       "name": "Toyota Global 75 Years vehicle lineage: Land Cruiser 40 (Toyota material)",
+       "url": "https://www.toyota-global.com/company/history_of_toyota/75years/vehicle_lineage/car/id60012611/",
+       "says": "In-line 6-cylinder, OHV"
+      }
+     ],
+     "note": "",
+     "second_pass": true
+    },
+    "fuel_type": {
+     "value": "gasoline",
+     "sources": [
+      {
+       "name": "Wikipedia: Toyota F engine",
+       "url": "https://en.wikipedia.org/wiki/Toyota_F_engine",
+       "says": "carbureted"
+      },
+      {
+       "name": "Elgin Industries engine parts catalog (technical reference) - engine details",
+       "url": "https://catalog.elginind.com/engine/toyota/default/16d9d18b-b3e6-4c2d-a1a2-e58a285368c4/",
+       "says": "GAS / CARB"
+      },
+      {
+       "name": "Toyota Global: Land Cruiser history - station wagon evolution (Toyota material)",
+       "url": "https://global.toyota/en/mobility/toyota-brand/features/landcruiser/history/evolution/station-wagon.html",
+       "says": "3.9-liter 6-cylinder gasoline engine (Type F)"
+      }
+     ],
+     "note": ""
+    }
+   },
+   "variants": [],
+   "unverified": {
+    "bore_in": "3.5433 in (90.0 mm): Wikipedia only; Elgin lists no bore.",
+    "stroke_in": "4.0000 in (101.6 mm): Wikipedia only.",
+    "block_material": "cast iron: Wikipedia only.",
+    "head_material": "cast iron: Wikipedia only."
+   },
+   "unverified_variants": []
+  },
+  {
+   "id": "toyota-2f",
+   "name": "Toyota 2F 4.2 I6",
+   "fields": {
+    "bore_in": {
+     "value": 3.7008,
+     "sources": [
+      {
+       "name": "Wikipedia: Toyota F engine",
+       "url": "https://en.wikipedia.org/wiki/Toyota_F_engine",
+       "says": "2F bore 94 mm (3.7 in)"
+      },
+      {
+       "name": "Elgin Industries engine parts catalog (technical reference) - engine details",
+       "url": "https://catalog.elginind.com/engine/toyota/default/9e78be11-f317-4035-84ee-1b44a3066033/",
+       "says": "2F 4227cc: Bore 3.70'' (94.0mm)"
+      }
+     ],
+     "note": "94.0 mm",
+     "second_pass": true
+    },
+    "displacement_l": {
+     "value": 4.2,
+     "sources": [
+      {
+       "name": "Wikipedia: Toyota F engine",
+       "url": "https://en.wikipedia.org/wiki/Toyota_F_engine",
+       "says": "4.2 L (4230 cc)"
+      },
+      {
+       "name": "Elgin Industries engine parts catalog (technical reference) - engine details",
+       "url": "https://catalog.elginind.com/engine/toyota/default/9e78be11-f317-4035-84ee-1b44a3066033/",
+       "says": "Liters 4.2"
+      },
+      {
+       "name": "Toyota Global: Land Cruiser history - station wagon evolution (Toyota material)",
+       "url": "https://global.toyota/en/mobility/toyota-brand/features/landcruiser/history/evolution/station-wagon.html",
+       "says": "inline 6-cylinder 4,230 cc 135 hp engine (2F)"
+      },
+      {
+       "name": "EPA fueleconomy.gov vehicle data",
+       "url": "https://www.fueleconomy.gov/feg/download.shtml",
+       "says": "1984-87 Land Cruiser Wagon 4.2 L 6-cyl"
+      }
+     ],
+     "note": "4,230 cc per Toyota, Wikipedia and Curbside; Elgin 4,227 cc"
+    },
+    "displacement_ci": {
+     "value": 258,
+     "sources": [
+      {
+       "name": "Wikipedia: Toyota F engine",
+       "url": "https://en.wikipedia.org/wiki/Toyota_F_engine",
+       "says": "4230 cc"
+      },
+      {
+       "name": "Toyota Global: Land Cruiser history - station wagon evolution (Toyota material)",
+       "url": "https://global.toyota/en/mobility/toyota-brand/features/landcruiser/history/evolution/station-wagon.html",
+       "says": "4,230 cc"
+      },
+      {
+       "name": "Curbside Classic: 1978 Toyota Land Cruiser (FJ56)",
+       "url": "https://www.curbsideclassic.com/curbside-classics-asian/curbside-classic-1978-toyota-land-cruiser-fj56-mama-mia/",
+       "says": "the 2F produced 140hp from its 4230cc"
+      }
+     ],
+     "note": "converted = 258.1 ci"
+    },
+    "num_cylinders": {
+     "value": 6,
+     "sources": [
+      {
+       "name": "Wikipedia: Toyota F engine",
+       "url": "https://en.wikipedia.org/wiki/Toyota_F_engine",
+       "says": "inline-6"
+      },
+      {
+       "name": "Elgin Industries engine parts catalog (technical reference) - engine details",
+       "url": "https://catalog.elginind.com/engine/toyota/default/9e78be11-f317-4035-84ee-1b44a3066033/",
+       "says": "Cyl. 6"
+      },
+      {
+       "name": "Toyota Global: Land Cruiser history - station wagon evolution (Toyota material)",
+       "url": "https://global.toyota/en/mobility/toyota-brand/features/landcruiser/history/evolution/station-wagon.html",
+       "says": "inline 6-cylinder 4,230 cc"
+      },
+      {
+       "name": "EPA fueleconomy.gov vehicle data",
+       "url": "https://www.fueleconomy.gov/feg/download.shtml",
+       "says": "4.2 L 6-cyl"
+      }
+     ],
+     "note": ""
+    },
+    "configuration": {
+     "value": "inline-6",
+     "sources": [
+      {
+       "name": "Wikipedia: Toyota F engine",
+       "url": "https://en.wikipedia.org/wiki/Toyota_F_engine",
+       "says": "inline-6"
+      },
+      {
+       "name": "Toyota Global: Land Cruiser history - station wagon evolution (Toyota material)",
+       "url": "https://global.toyota/en/mobility/toyota-brand/features/landcruiser/history/evolution/station-wagon.html",
+       "says": "inline 6-cylinder 4,230 cc 135 hp engine (2F)"
+      }
+     ],
+     "note": "",
+     "second_pass": true
+    },
+    "valvetrain": {
+     "value": "OHV (pushrod), 2 valves per cylinder",
+     "sources": [
+      {
+       "name": "Wikipedia: Toyota F engine",
+       "url": "https://en.wikipedia.org/wiki/Toyota_F_engine",
+       "says": "same overhead valve design"
+      },
+      {
+       "name": "Elgin Industries engine parts catalog (technical reference) - engine details",
+       "url": "https://catalog.elginind.com/engine/toyota/default/9e78be11-f317-4035-84ee-1b44a3066033/",
+       "says": "Head OHV"
+      }
+     ],
+     "note": "",
+     "second_pass": true
+    },
+    "fuel_type": {
+     "value": "gasoline",
+     "sources": [
+      {
+       "name": "Wikipedia: Toyota F engine",
+       "url": "https://en.wikipedia.org/wiki/Toyota_F_engine",
+       "says": "carbureted"
+      },
+      {
+       "name": "Elgin Industries engine parts catalog (technical reference) - engine details",
+       "url": "https://catalog.elginind.com/engine/toyota/default/9e78be11-f317-4035-84ee-1b44a3066033/",
+       "says": "GAS / CARB"
+      },
+      {
+       "name": "Toyota Global: Land Cruiser history - station wagon evolution (Toyota material)",
+       "url": "https://global.toyota/en/mobility/toyota-brand/features/landcruiser/history/evolution/station-wagon.html",
+       "says": "The gasoline engine was upgraded to a 4.2-liter unit (2F)"
+      }
+     ],
+     "note": ""
+    }
+   },
+   "variants": [],
+   "unverified": {
+    "stroke_in": "4.0000 in (101.6 mm): Wikipedia only.",
+    "block_material": "cast iron: Wikipedia only.",
+    "head_material": "cast iron: Wikipedia only."
+   },
+   "unverified_variants": []
+  },
+  {
+   "id": "toyota-3f-e",
+   "name": "Toyota 3F-E 4.0 I6",
+   "fields": {
+    "bore_in": {
+     "value": 3.7008,
+     "sources": [
+      {
+       "name": "Wikipedia: Toyota F engine",
+       "url": "https://en.wikipedia.org/wiki/Toyota_F_engine",
+       "says": "3F bore 94 mm"
+      },
+      {
+       "name": "Elgin Industries engine parts catalog (technical reference) - engine details",
+       "url": "https://catalog.elginind.com/engine/toyota/default/79b55e6c-e14a-4d85-a7b3-2c67777c484e/",
+       "says": "3FE 3956cc: Bore 3.70'' (94.0mm)"
+      }
+     ],
+     "note": "94.0 mm",
+     "second_pass": true
+    },
+    "displacement_l": {
+     "value": 4.0,
+     "sources": [
+      {
+       "name": "Wikipedia: Toyota F engine",
+       "url": "https://en.wikipedia.org/wiki/Toyota_F_engine",
+       "says": "4.0 L (3955 cc)"
+      },
+      {
+       "name": "Elgin Industries engine parts catalog (technical reference) - engine details",
+       "url": "https://catalog.elginind.com/engine/toyota/default/79b55e6c-e14a-4d85-a7b3-2c67777c484e/",
+       "says": "Liters 4.0"
+      },
+      {
+       "name": "Toyota Global 75 Years vehicle lineage: Land Cruiser 70/60 spec table (Toyota material)",
+       "url": "https://www.toyota-global.com/company/history_of_toyota/75years/vehicle_lineage/car/id60012612/",
+       "says": "Engine code 3F ... Displacement 3955 cm3"
+      },
+      {
+       "name": "EPA fueleconomy.gov vehicle data",
+       "url": "https://www.fueleconomy.gov/feg/download.shtml",
+       "says": "1988-90 Land Cruiser Wagon 4.0 L 6-cyl"
+      },
+      {
+       "name": "Hagerty Media: Why the 80 Series Land Cruiser Is the Most Notable 4x4 of the '90s",
+       "url": "https://www.hagerty.com/media/market-trends/why-the-80-series-land-cruiser-is-the-most-notable-4x4-of-the-90s/",
+       "says": "3F-E 4.0-liter inline-six"
+      }
+     ],
+     "note": "3,955 cc per Toyota and Wikipedia; Elgin 3,956 cc"
+    },
+    "displacement_ci": {
+     "value": 241,
+     "sources": [
+      {
+       "name": "Wikipedia: Toyota F engine",
+       "url": "https://en.wikipedia.org/wiki/Toyota_F_engine",
+       "says": "3955 cc"
+      },
+      {
+       "name": "Toyota Global 75 Years vehicle lineage: Land Cruiser 70/60 spec table (Toyota material)",
+       "url": "https://www.toyota-global.com/company/history_of_toyota/75years/vehicle_lineage/car/id60012612/",
+       "says": "3955 cm3"
+      },
+      {
+       "name": "Elgin Industries engine parts catalog (technical reference) - engine details",
+       "url": "https://catalog.elginind.com/engine/toyota/default/79b55e6c-e14a-4d85-a7b3-2c67777c484e/",
+       "says": "CC 3956"
+      }
+     ],
+     "note": "converted = 241.3 ci"
+    },
+    "num_cylinders": {
+     "value": 6,
+     "sources": [
+      {
+       "name": "Wikipedia: Toyota F engine",
+       "url": "https://en.wikipedia.org/wiki/Toyota_F_engine",
+       "says": "inline-6"
+      },
+      {
+       "name": "Elgin Industries engine parts catalog (technical reference) - engine details",
+       "url": "https://catalog.elginind.com/engine/toyota/default/79b55e6c-e14a-4d85-a7b3-2c67777c484e/",
+       "says": "Cyl. 6"
+      },
+      {
+       "name": "Toyota Global 75 Years vehicle lineage: Land Cruiser 70/60 spec table (Toyota material)",
+       "url": "https://www.toyota-global.com/company/history_of_toyota/75years/vehicle_lineage/car/id60012612/",
+       "says": "Water-cooled, in-line 6-cylinder, OHV"
+      }
+     ],
+     "note": ""
+    },
+    "configuration": {
+     "value": "inline-6",
+     "sources": [
+      {
+       "name": "Wikipedia: Toyota F engine",
+       "url": "https://en.wikipedia.org/wiki/Toyota_F_engine",
+       "says": "inline-6"
+      },
+      {
+       "name": "Toyota Global 75 Years vehicle lineage: Land Cruiser 70/60 spec table (Toyota material)",
+       "url": "https://www.toyota-global.com/company/history_of_toyota/75years/vehicle_lineage/car/id60012612/",
+       "says": "in-line 6-cylinder, OHV"
+      },
+      {
+       "name": "Hagerty Media: Why the 80 Series Land Cruiser Is the Most Notable 4x4 of the '90s",
+       "url": "https://www.hagerty.com/media/market-trends/why-the-80-series-land-cruiser-is-the-most-notable-4x4-of-the-90s/",
+       "says": "155-horsepower 3F-E 4.0-liter inline-six"
+      }
+     ],
+     "note": ""
+    },
+    "valvetrain": {
+     "value": "OHV (pushrod), 2 valves per cylinder",
+     "sources": [
+      {
+       "name": "Wikipedia: Toyota F engine",
+       "url": "https://en.wikipedia.org/wiki/Toyota_F_engine",
+       "says": "overhead valve"
+      },
+      {
+       "name": "Elgin Industries engine parts catalog (technical reference) - engine details",
+       "url": "https://catalog.elginind.com/engine/toyota/default/79b55e6c-e14a-4d85-a7b3-2c67777c484e/",
+       "says": "Head OHV"
+      },
+      {
+       "name": "Toyota Global 75 Years vehicle lineage: Land Cruiser 70/60 spec table (Toyota material)",
+       "url": "https://www.toyota-global.com/company/history_of_toyota/75years/vehicle_lineage/car/id60012612/",
+       "says": "in-line 6-cylinder, OHV"
+      }
+     ],
+     "note": ""
+    },
+    "fuel_type": {
+     "value": "gasoline",
+     "sources": [
+      {
+       "name": "Wikipedia: Toyota F engine",
+       "url": "https://en.wikipedia.org/wiki/Toyota_F_engine",
+       "says": "fuel injected"
+      },
+      {
+       "name": "Elgin Industries engine parts catalog (technical reference) - engine details",
+       "url": "https://catalog.elginind.com/engine/toyota/default/79b55e6c-e14a-4d85-a7b3-2c67777c484e/",
+       "says": "GAS / FI"
+      },
+      {
+       "name": "EPA fueleconomy.gov vehicle data",
+       "url": "https://www.fueleconomy.gov/feg/download.shtml",
+       "says": "Land Cruiser 4.0 L, no diesel flag"
+      }
+     ],
+     "note": "EFI"
+    }
+   },
+   "variants": [],
+   "unverified": {
+    "stroke_in": "3.7402 in (95.0 mm): Wikipedia only.",
+    "block_material": "cast iron: Wikipedia only.",
+    "head_material": "cast iron: Wikipedia only."
+   },
+   "unverified_variants": []
+  },
+  {
+   "id": "toyota-1fz-fe",
+   "name": "Toyota 1FZ-FE 4.5 I6",
+   "fields": {
+    "bore_in": {
+     "value": 3.937,
+     "sources": [
+      {
+       "name": "Wikipedia: Toyota FZ engine",
+       "url": "https://en.wikipedia.org/wiki/Toyota_FZ_engine",
+       "says": "1FZ-FE 100 mm x 95 mm"
+      },
+      {
+       "name": "Elgin Industries engine parts catalog (technical reference) - engine details",
+       "url": "https://catalog.elginind.com/engine/toyota/default/499a2db2-fc8a-4393-b281-7f76a89ac33e/",
+       "says": "1FZ-FE 4477cc: Bore 3.94'' (100.0mm)"
+      }
+     ],
+     "note": "100.0 mm",
+     "second_pass": true
+    },
+    "displacement_l": {
+     "value": 4.5,
+     "sources": [
+      {
+       "name": "Wikipedia: Toyota FZ engine",
+       "url": "https://en.wikipedia.org/wiki/Toyota_FZ_engine",
+       "says": "4.5 L (4,477 cc)"
+      },
+      {
+       "name": "Elgin Industries engine parts catalog (technical reference) - engine details",
+       "url": "https://catalog.elginind.com/engine/toyota/default/499a2db2-fc8a-4393-b281-7f76a89ac33e/",
+       "says": "Liters 4.5, CC 4477"
+      },
+      {
+       "name": "Toyota Global: Land Cruiser history - station wagon evolution (Toyota material)",
+       "url": "https://global.toyota/en/mobility/toyota-brand/features/landcruiser/history/evolution/station-wagon.html",
+       "says": "4.5-liter inline 6-cylinder 24-valve unit"
+      },
+      {
+       "name": "EPA fueleconomy.gov vehicle data",
+       "url": "https://www.fueleconomy.gov/feg/download.shtml",
+       "says": "1993-97 Land Cruiser 4.5 L 6-cyl"
+      },
+      {
+       "name": "Hagerty Media: Why the 80 Series Land Cruiser Is the Most Notable 4x4 of the '90s",
+       "url": "https://www.hagerty.com/media/market-trends/why-the-80-series-land-cruiser-is-the-most-notable-4x4-of-the-90s/",
+       "says": "1FZ-FE 4.5-liter"
+      }
+     ],
+     "note": "4,477 cc"
+    },
+    "displacement_ci": {
+     "value": 273,
+     "sources": [
+      {
+       "name": "Wikipedia: Toyota FZ engine",
+       "url": "https://en.wikipedia.org/wiki/Toyota_FZ_engine",
+       "says": "4,477 cc"
+      },
+      {
+       "name": "Elgin Industries engine parts catalog (technical reference) - engine details",
+       "url": "https://catalog.elginind.com/engine/toyota/default/499a2db2-fc8a-4393-b281-7f76a89ac33e/",
+       "says": "CC 4477"
+      }
+     ],
+     "note": "converted = 273.2 ci",
+     "second_pass": true
+    },
+    "num_cylinders": {
+     "value": 6,
+     "sources": [
+      {
+       "name": "Wikipedia: Toyota FZ engine",
+       "url": "https://en.wikipedia.org/wiki/Toyota_FZ_engine",
+       "says": "straight-six"
+      },
+      {
+       "name": "Elgin Industries engine parts catalog (technical reference) - engine details",
+       "url": "https://catalog.elginind.com/engine/toyota/default/499a2db2-fc8a-4393-b281-7f76a89ac33e/",
+       "says": "Cyl. 6"
+      },
+      {
+       "name": "Toyota Global: Land Cruiser history - station wagon evolution (Toyota material)",
+       "url": "https://global.toyota/en/mobility/toyota-brand/features/landcruiser/history/evolution/station-wagon.html",
+       "says": "4.5-liter inline 6-cylinder"
+      },
+      {
+       "name": "EPA fueleconomy.gov vehicle data",
+       "url": "https://www.fueleconomy.gov/feg/download.shtml",
+       "says": "4.5 L 6-cyl"
+      }
+     ],
+     "note": ""
+    },
+    "configuration": {
+     "value": "inline-6",
+     "sources": [
+      {
+       "name": "Wikipedia: Toyota FZ engine",
+       "url": "https://en.wikipedia.org/wiki/Toyota_FZ_engine",
+       "says": "straight-six"
+      },
+      {
+       "name": "Toyota Global: Land Cruiser history - station wagon evolution (Toyota material)",
+       "url": "https://global.toyota/en/mobility/toyota-brand/features/landcruiser/history/evolution/station-wagon.html",
+       "says": "4.5-liter inline 6-cylinder 24-valve unit"
+      }
+     ],
+     "note": "",
+     "second_pass": true
+    },
+    "valvetrain": {
+     "value": "DOHC, 4 valves per cylinder (24 valves)",
+     "sources": [
+      {
+       "name": "Wikipedia: Toyota FZ engine",
+       "url": "https://en.wikipedia.org/wiki/Toyota_FZ_engine",
+       "says": "DOHC 4 valves x cyl."
+      },
+      {
+       "name": "Elgin Industries engine parts catalog (technical reference) - engine details",
+       "url": "https://catalog.elginind.com/engine/toyota/default/499a2db2-fc8a-4393-b281-7f76a89ac33e/",
+       "says": "Head DOHC, Misc. 24 Valve"
+      },
+      {
+       "name": "Toyota Global: Land Cruiser history - station wagon evolution (Toyota material)",
+       "url": "https://global.toyota/en/mobility/toyota-brand/features/landcruiser/history/evolution/station-wagon.html",
+       "says": "24-valve unit producing 215 PS"
+      }
+     ],
+     "note": ""
+    },
+    "fuel_type": {
+     "value": "gasoline",
+     "sources": [
+      {
+       "name": "Wikipedia: Toyota FZ engine",
+       "url": "https://en.wikipedia.org/wiki/Toyota_FZ_engine",
+       "says": "fuel injection (1FZ-FE)"
+      },
+      {
+       "name": "Elgin Industries engine parts catalog (technical reference) - engine details",
+       "url": "https://catalog.elginind.com/engine/toyota/default/499a2db2-fc8a-4393-b281-7f76a89ac33e/",
+       "says": "GAS / FI"
+      },
+      {
+       "name": "Toyota Global: Land Cruiser history - station wagon evolution (Toyota material)",
+       "url": "https://global.toyota/en/mobility/toyota-brand/features/landcruiser/history/evolution/station-wagon.html",
+       "says": "the gasoline engine was replaced with a 4.5-liter inline 6-cylinder 24-valve unit"
+      }
+     ],
+     "note": ""
+    }
+   },
+   "variants": [],
+   "unverified": {
+    "stroke_in": "3.7402 in (95.0 mm): Wikipedia only.",
+    "block_material": "cast iron: not stated in Wikipedia FZ article; no source found.",
+    "head_material": "aluminum: no source found."
+   },
+   "unverified_variants": []
+  },
+  {
+   "id": "toyota-4m-e",
+   "name": "Toyota 4M / 4M-E 2.6 I6",
+   "fields": {
+    "bore_in": {
+     "value": 3.1496,
+     "sources": [
+      {
+       "name": "Wikipedia: Toyota M engine",
+       "url": "https://en.wikipedia.org/wiki/Toyota_M_engine",
+       "says": "4M-E bore 80 mm"
+      },
+      {
+       "name": "Elgin Industries engine parts catalog (technical reference) - engine details",
+       "url": "https://catalog.elginind.com/engine/toyota/default/a9223942-ae7a-4025-ab1e-954149cc1a73/",
+       "says": "4M, 4ME 2563cc: Bore 3.14'' (80.0mm)"
+      }
+     ],
+     "note": "80.0 mm",
+     "second_pass": true
+    },
+    "displacement_l": {
+     "value": 2.6,
+     "sources": [
+      {
+       "name": "Wikipedia: Toyota M engine",
+       "url": "https://en.wikipedia.org/wiki/Toyota_M_engine",
+       "says": "2,563 cc"
+      },
+      {
+       "name": "Elgin Industries engine parts catalog (technical reference) - engine details",
+       "url": "https://catalog.elginind.com/engine/toyota/default/a9223942-ae7a-4025-ab1e-954149cc1a73/",
+       "says": "Liters 2.6, CC 2563"
+      },
+      {
+       "name": "Toyota 1978 Cressida brochure spec page (Toyota material, oldcarbrochures.org scan, OCR)",
+       "url": "https://oldcarbrochures.org/Japan/Toyota/1978%20Toyota%20Cresssida/index.html",
+       "says": "2.6 liter ... 6-cylinder engine; Displacement (cc) 2563"
+      }
+     ],
+     "note": "2,563 cc"
+    },
+    "displacement_ci": {
+     "value": 156,
+     "sources": [
+      {
+       "name": "Wikipedia: Toyota M engine",
+       "url": "https://en.wikipedia.org/wiki/Toyota_M_engine",
+       "says": "2,563 cc"
+      },
+      {
+       "name": "Elgin Industries engine parts catalog (technical reference) - engine details",
+       "url": "https://catalog.elginind.com/engine/toyota/default/a9223942-ae7a-4025-ab1e-954149cc1a73/",
+       "says": "CC 2563"
+      },
+      {
+       "name": "Toyota 1978 Cressida brochure spec page (Toyota material, oldcarbrochures.org scan, OCR)",
+       "url": "https://oldcarbrochures.org/Japan/Toyota/1978%20Toyota%20Cresssida/index.html",
+       "says": "Displacement (cc) 2563"
+      }
+     ],
+     "note": "converted = 156.4 ci"
+    },
+    "num_cylinders": {
+     "value": 6,
+     "sources": [
+      {
+       "name": "Wikipedia: Toyota M engine",
+       "url": "https://en.wikipedia.org/wiki/Toyota_M_engine",
+       "says": "inline-six"
+      },
+      {
+       "name": "Elgin Industries engine parts catalog (technical reference) - engine details",
+       "url": "https://catalog.elginind.com/engine/toyota/default/a9223942-ae7a-4025-ab1e-954149cc1a73/",
+       "says": "Cyl. 6"
+      },
+      {
+       "name": "Toyota 1978 Cressida brochure spec page (Toyota material, oldcarbrochures.org scan, OCR)",
+       "url": "https://oldcarbrochures.org/Japan/Toyota/1978%20Toyota%20Cresssida/index.html",
+       "says": "6-Cylinder Single Overhead Camshaft"
+      }
+     ],
+     "note": ""
+    },
+    "valvetrain": {
+     "value": "SOHC, 2 valves per cylinder (12 valves)",
+     "sources": [
+      {
+       "name": "Wikipedia: Toyota M engine",
+       "url": "https://en.wikipedia.org/wiki/Toyota_M_engine",
+       "says": "2-valve SOHC"
+      },
+      {
+       "name": "Elgin Industries engine parts catalog (technical reference) - engine details",
+       "url": "https://catalog.elginind.com/engine/toyota/default/a9223942-ae7a-4025-ab1e-954149cc1a73/",
+       "says": "Head SOHC"
+      },
+      {
+       "name": "Toyota 1978 Cressida brochure spec page (Toyota material, oldcarbrochures.org scan, OCR)",
+       "url": "https://oldcarbrochures.org/Japan/Toyota/1978%20Toyota%20Cresssida/index.html",
+       "says": "6-Cylinder Single Overhead Camshaft"
+      }
+     ],
+     "note": ""
+    },
+    "fuel_type": {
+     "value": "gasoline",
+     "sources": [
+      {
+       "name": "Wikipedia: Toyota M engine",
+       "url": "https://en.wikipedia.org/wiki/Toyota_M_engine",
+       "says": "4M-E fuel-injected"
+      },
+      {
+       "name": "Elgin Industries engine parts catalog (technical reference) - engine details",
+       "url": "https://catalog.elginind.com/engine/toyota/default/a9223942-ae7a-4025-ab1e-954149cc1a73/",
+       "says": "Fuel / Delivery GAS / CARB"
+      }
+     ],
+     "note": "",
+     "second_pass": true
+    }
+   },
+   "variants": [],
+   "unverified": {
+    "stroke_in": "3.3465 in (85.0 mm): Wikipedia only; Elgin lists no stroke.",
+    "configuration": "inline-6: Wikipedia only (Toyota brochure and Elgin give 6 cylinders without layout).",
+    "block_material": "cast iron: Wikipedia only.",
+    "head_material": "aluminum: Wikipedia only."
+   },
+   "unverified_variants": []
+  },
+  {
+   "id": "toyota-5m",
+   "name": "Toyota 5M-E / 5M-GE 2.8 I6",
+   "fields": {
+    "bore_in": {
+     "value": 3.2677,
+     "sources": [
+      {
+       "name": "Wikipedia: Toyota M engine",
+       "url": "https://en.wikipedia.org/wiki/Toyota_M_engine",
+       "says": "5M-GE bore 83 mm"
+      },
+      {
+       "name": "Elgin Industries engine parts catalog (technical reference) - engine details",
+       "url": "https://catalog.elginind.com/engine/toyota/default/06e65edd-d16a-40d9-8812-8ac6a68d626f/",
+       "says": "5ME 2759cc: Bore 3.26'' (83.0mm); 5M-GE entry also 83.0mm"
+      }
+     ],
+     "note": "83.0 mm. Wikipedia's 5M-E row says 83.1 mm; 83.0 x 85.0 x 6 = 2,759 cc matches the published displacement",
+     "second_pass": true
+    },
+    "stroke_in": {
+     "value": 3.3465,
+     "sources": [
+      {
+       "name": "Wikipedia: Toyota M engine",
+       "url": "https://en.wikipedia.org/wiki/Toyota_M_engine",
+       "says": "5M-E and 5M-GE stroke 85 mm"
+      },
+      {
+       "name": "Elgin Industries engine parts catalog (technical reference) - engine details",
+       "url": "https://catalog.elginind.com/engine/toyota/default/45137644-4a54-49d2-bbfe-b27e1c1b0409/",
+       "says": "5M-GE: Stroke 3.34'' (85.0mm)"
+      }
+     ],
+     "note": "85.0 mm",
+     "second_pass": true
+    },
+    "displacement_l": {
+     "value": 2.8,
+     "sources": [
+      {
+       "name": "Wikipedia: Toyota M engine",
+       "url": "https://en.wikipedia.org/wiki/Toyota_M_engine",
+       "says": "2,759 cc"
+      },
+      {
+       "name": "Elgin Industries engine parts catalog (technical reference) - engine details",
+       "url": "https://catalog.elginind.com/engine/toyota/default/06e65edd-d16a-40d9-8812-8ac6a68d626f/",
+       "says": "5ME: Liters 2.8, CC 2759"
+      },
+      {
+       "name": "Toyota 1983 Cressida brochure spec page (Toyota material, oldcarbrochures.org scan, OCR)",
+       "url": "https://oldcarbrochures.org/Japan/Toyota/1983%20Toyota%20Cressida/index.html",
+       "says": "ENGINE TYPE 2.8 liter Twin Cam ... EFI (2759 ..."
+      },
+      {
+       "name": "EPA fueleconomy.gov vehicle data",
+       "url": "https://www.fueleconomy.gov/feg/download.shtml",
+       "says": "1984-86 Celica Supra 2.8 L 6-cyl"
+      }
+     ],
+     "note": "2,759 cc; Elgin's separate 5M-GE entry says 2,754 cc (outlier)"
+    },
+    "displacement_ci": {
+     "value": 168,
+     "sources": [
+      {
+       "name": "Wikipedia: Toyota M engine",
+       "url": "https://en.wikipedia.org/wiki/Toyota_M_engine",
+       "says": "2,759 cc"
+      },
+      {
+       "name": "Elgin Industries engine parts catalog (technical reference) - engine details",
+       "url": "https://catalog.elginind.com/engine/toyota/default/06e65edd-d16a-40d9-8812-8ac6a68d626f/",
+       "says": "CC 2759"
+      },
+      {
+       "name": "Toyota 1983 Cressida brochure spec page (Toyota material, oldcarbrochures.org scan, OCR)",
+       "url": "https://oldcarbrochures.org/Japan/Toyota/1983%20Toyota%20Cressida/index.html",
+       "says": "(2759"
+      }
+     ],
+     "note": "converted = 168.4 ci"
+    },
+    "num_cylinders": {
+     "value": 6,
+     "sources": [
+      {
+       "name": "Wikipedia: Toyota M engine",
+       "url": "https://en.wikipedia.org/wiki/Toyota_M_engine",
+       "says": "inline-six"
+      },
+      {
+       "name": "Elgin Industries engine parts catalog (technical reference) - engine details",
+       "url": "https://catalog.elginind.com/engine/toyota/default/06e65edd-d16a-40d9-8812-8ac6a68d626f/",
+       "says": "Cyl. 6"
+      },
+      {
+       "name": "EPA fueleconomy.gov vehicle data",
+       "url": "https://www.fueleconomy.gov/feg/download.shtml",
+       "says": "2.8 L 6-cyl"
+      }
+     ],
+     "note": ""
+    },
+    "valvetrain": {
+     "value": "5M-E: SOHC 12-valve; 5M-GE: DOHC 12-valve",
+     "sources": [
+      {
+       "name": "Wikipedia: Toyota M engine",
+       "url": "https://en.wikipedia.org/wiki/Toyota_M_engine",
+       "says": "5M-E 2-valve SOHC; 5M-GE 12-valve (2 valves per cylinder) DOHC"
+      },
+      {
+       "name": "Elgin Industries engine parts catalog (technical reference) - engine details",
+       "url": "https://catalog.elginind.com/engine/toyota/default/06e65edd-d16a-40d9-8812-8ac6a68d626f/",
+       "says": "5ME Head SOHC; 5M-GE Head DOHC"
+      }
+     ],
+     "note": "Toyota 1983 Cressida brochure also says '2.8 liter Twin Cam' for the 5M-GE",
+     "second_pass": true
+    },
+    "fuel_type": {
+     "value": "gasoline",
+     "sources": [
+      {
+       "name": "Wikipedia: Toyota M engine",
+       "url": "https://en.wikipedia.org/wiki/Toyota_M_engine",
+       "says": "electronic fuel injection"
+      },
+      {
+       "name": "Elgin Industries engine parts catalog (technical reference) - engine details",
+       "url": "https://catalog.elginind.com/engine/toyota/default/06e65edd-d16a-40d9-8812-8ac6a68d626f/",
+       "says": "GAS / FI"
+      },
+      {
+       "name": "EPA fueleconomy.gov vehicle data",
+       "url": "https://www.fueleconomy.gov/feg/download.shtml",
+       "says": "Celica Supra 2.8 L, no diesel flag"
+      }
+     ],
+     "note": "EFI"
+    }
+   },
+   "variants": [],
+   "unverified": {
+    "configuration": "inline-6: Wikipedia only.",
+    "block_material": "cast iron: Wikipedia only.",
+    "head_material": "aluminum: Wikipedia only."
+   },
+   "unverified_variants": []
+  },
+  {
+   "id": "toyota-7m",
+   "name": "Toyota 7M-GE / 7M-GTE 3.0 I6",
+   "fields": {
+    "bore_in": {
+     "value": 3.2677,
+     "sources": [
+      {
+       "name": "Wikipedia: Toyota M engine",
+       "url": "https://en.wikipedia.org/wiki/Toyota_M_engine",
+       "says": "7M-GE/7M-GTE bore 83 mm"
+      },
+      {
+       "name": "Elgin Industries engine parts catalog (technical reference) - engine details",
+       "url": "https://catalog.elginind.com/engine/toyota/default/9f6e26ef-cc00-43bf-8c50-54d3e8f4ae22/",
+       "says": "7M-GE, 7M-GTE 2954cc: Bore 3.26'' (83.0mm)"
+      }
+     ],
+     "note": "83.0 mm",
+     "second_pass": true
+    },
+    "stroke_in": {
+     "value": 3.5827,
+     "sources": [
+      {
+       "name": "Wikipedia: Toyota M engine",
+       "url": "https://en.wikipedia.org/wiki/Toyota_M_engine",
+       "says": "stroke 91 mm"
+      },
+      {
+       "name": "Elgin Industries engine parts catalog (technical reference) - engine details",
+       "url": "https://catalog.elginind.com/engine/toyota/default/9f6e26ef-cc00-43bf-8c50-54d3e8f4ae22/",
+       "says": "Stroke 3.58'' (91.0mm)"
+      }
+     ],
+     "note": "91.0 mm",
+     "second_pass": true
+    },
+    "displacement_l": {
+     "value": 3.0,
+     "sources": [
+      {
+       "name": "Wikipedia: Toyota M engine",
+       "url": "https://en.wikipedia.org/wiki/Toyota_M_engine",
+       "says": "2,954 cc"
+      },
+      {
+       "name": "Elgin Industries engine parts catalog (technical reference) - engine details",
+       "url": "https://catalog.elginind.com/engine/toyota/default/9f6e26ef-cc00-43bf-8c50-54d3e8f4ae22/",
+       "says": "Liters 3.0, CC 2954"
+      },
+      {
+       "name": "EPA fueleconomy.gov vehicle data",
+       "url": "https://www.fueleconomy.gov/feg/download.shtml",
+       "says": "1987 Supra 3.0 L 6-cyl and 3.0 L 6-cyl turbo"
+      }
+     ],
+     "note": "2,954 cc"
+    },
+    "displacement_ci": {
+     "value": 180,
+     "sources": [
+      {
+       "name": "Wikipedia: Toyota M engine",
+       "url": "https://en.wikipedia.org/wiki/Toyota_M_engine",
+       "says": "2,954 cc"
+      },
+      {
+       "name": "Elgin Industries engine parts catalog (technical reference) - engine details",
+       "url": "https://catalog.elginind.com/engine/toyota/default/9f6e26ef-cc00-43bf-8c50-54d3e8f4ae22/",
+       "says": "CC 2954"
+      }
+     ],
+     "note": "converted = 180.3 ci",
+     "second_pass": true
+    },
+    "num_cylinders": {
+     "value": 6,
+     "sources": [
+      {
+       "name": "Wikipedia: Toyota M engine",
+       "url": "https://en.wikipedia.org/wiki/Toyota_M_engine",
+       "says": "inline-six"
+      },
+      {
+       "name": "Elgin Industries engine parts catalog (technical reference) - engine details",
+       "url": "https://catalog.elginind.com/engine/toyota/default/9f6e26ef-cc00-43bf-8c50-54d3e8f4ae22/",
+       "says": "Cyl. 6"
+      },
+      {
+       "name": "EPA fueleconomy.gov vehicle data",
+       "url": "https://www.fueleconomy.gov/feg/download.shtml",
+       "says": "3.0 L 6-cyl"
+      }
+     ],
+     "note": ""
+    },
+    "valvetrain": {
+     "value": "DOHC, 4 valves per cylinder (24 valves)",
+     "sources": [
+      {
+       "name": "Wikipedia: Toyota M engine",
+       "url": "https://en.wikipedia.org/wiki/Toyota_M_engine",
+       "says": "24-valve (4 valves per cylinder) DOHC"
+      },
+      {
+       "name": "Elgin Industries engine parts catalog (technical reference) - engine details",
+       "url": "https://catalog.elginind.com/engine/toyota/default/9f6e26ef-cc00-43bf-8c50-54d3e8f4ae22/",
+       "says": "Head DOHC"
+      },
+      {
+       "name": "Toyota global newsroom release, Aug 2 1988 (Supra update) (Toyota material)",
+       "url": "https://global.toyota/en/detail/7863653",
+       "says": "twin-cam turbo engines 7M-GTEU (3 liters)"
+      }
+     ],
+     "note": ""
+    },
+    "fuel_type": {
+     "value": "gasoline",
+     "sources": [
+      {
+       "name": "Wikipedia: Toyota M engine",
+       "url": "https://en.wikipedia.org/wiki/Toyota_M_engine",
+       "says": "fuel-injected; 7M-GTE turbocharged"
+      },
+      {
+       "name": "Elgin Industries engine parts catalog (technical reference) - engine details",
+       "url": "https://catalog.elginind.com/engine/toyota/default/9f6e26ef-cc00-43bf-8c50-54d3e8f4ae22/",
+       "says": "GAS / FI, Asp. N, T"
+      },
+      {
+       "name": "EPA fueleconomy.gov vehicle data",
+       "url": "https://www.fueleconomy.gov/feg/download.shtml",
+       "says": "Supra 3.0 L, no diesel flag"
+      }
+     ],
+     "note": "7M-GTE turbocharged"
+    }
+   },
+   "variants": [],
+   "unverified": {
+    "configuration": "inline-6: Wikipedia only.",
+    "block_material": "cast iron: Wikipedia only.",
+    "head_material": "aluminum: Wikipedia only."
+   },
+   "unverified_variants": []
+  },
+  {
+   "id": "toyota-3r",
+   "name": "Toyota 3R 1.9 I4",
+   "fields": {
+    "displacement_l": {
+     "value": 1.9,
+     "sources": [
+      {
+       "name": "Wikipedia: Toyota R engine",
+       "url": "https://en.wikipedia.org/wiki/Toyota_R_engine",
+       "says": "3R 1,897 cc"
+      },
+      {
+       "name": "Elgin Industries engine parts catalog (technical reference) - engine details",
+       "url": "https://catalog.elginind.com/engine/toyota/default/b16a401c-b8ee-44e8-a494-4822d9f52036/",
+       "says": "3RC, 8RC, 8R: Liters 1.9, CC 1898"
+      },
+      {
+       "name": "Curbside Classic: First Generation Toyota Hilux",
+       "url": "https://www.curbsideclassic.com/curbside-classics-asian/curbside-classic-first-generation-totoya-hilux-building-block/",
+       "says": "the same 1.9 L 3R ohv four as used in the Corona"
+      }
+     ],
+     "note": "Wikipedia 1,897 cc; Elgin's combined 3R/8R row 1,898 cc"
+    },
+    "num_cylinders": {
+     "value": 4,
+     "sources": [
+      {
+       "name": "Wikipedia: Toyota R engine",
+       "url": "https://en.wikipedia.org/wiki/Toyota_R_engine",
+       "says": "inline-four"
+      },
+      {
+       "name": "Elgin Industries engine parts catalog (technical reference) - engine details",
+       "url": "https://catalog.elginind.com/engine/toyota/default/b16a401c-b8ee-44e8-a494-4822d9f52036/",
+       "says": "Cyl. 4"
+      },
+      {
+       "name": "Curbside Classic: First Generation Toyota Hilux",
+       "url": "https://www.curbsideclassic.com/curbside-classics-asian/curbside-classic-first-generation-totoya-hilux-building-block/",
+       "says": "1.9 L 3R ohv four"
+      }
+     ],
+     "note": ""
+    },
+    "valvetrain": {
+     "value": "OHV (pushrod), 2 valves per cylinder",
+     "sources": [
+      {
+       "name": "Wikipedia: Toyota R engine",
+       "url": "https://en.wikipedia.org/wiki/Toyota_R_engine",
+       "says": "3R OHV"
+      },
+      {
+       "name": "Curbside Classic: First Generation Toyota Hilux",
+       "url": "https://www.curbsideclassic.com/curbside-classics-asian/curbside-classic-first-generation-totoya-hilux-building-block/",
+       "says": "1.9 L 3R ohv four"
+      }
+     ],
+     "note": "",
+     "second_pass": true
+    },
+    "fuel_type": {
+     "value": "gasoline",
+     "sources": [
+      {
+       "name": "Wikipedia: Toyota R engine",
+       "url": "https://en.wikipedia.org/wiki/Toyota_R_engine",
+       "says": "carburetor"
+      },
+      {
+       "name": "Elgin Industries engine parts catalog (technical reference) - engine details",
+       "url": "https://catalog.elginind.com/engine/toyota/default/b16a401c-b8ee-44e8-a494-4822d9f52036/",
+       "says": "GAS / CARB"
+      }
+     ],
+     "note": "",
+     "second_pass": true
+    }
+   },
+   "variants": [],
+   "unverified": {
+    "bore_in": "3.4646 in (88.0 mm): Wikipedia only.",
+    "stroke_in": "3.0709 in (78.0 mm): Wikipedia only.",
+    "displacement_ci": "116 ci (1,897 cc): exact cc only from Wikipedia; Elgin 1,898 cc.",
+    "configuration": "inline-4: Wikipedia only.",
+    "block_material": "cast iron: Wikipedia only.",
+    "head_material": "cast iron: Wikipedia only."
+   },
+   "unverified_variants": []
+  },
+  {
+   "id": "toyota-8r-c",
+   "name": "Toyota 8R / 8R-C 1.9 I4",
+   "fields": {
+    "displacement_l": {
+     "value": 1.9,
+     "sources": [
+      {
+       "name": "Wikipedia: Toyota R engine",
+       "url": "https://en.wikipedia.org/wiki/Toyota_R_engine",
+       "says": "8R 1,858 cc"
+      },
+      {
+       "name": "Elgin Industries engine parts catalog (technical reference) - engine details",
+       "url": "https://catalog.elginind.com/engine/toyota/default/aeb57675-948e-428c-8edf-f2cd0a71cd96/",
+       "says": "8R, 8RC: Liters 1.9, CC 1858"
+      },
+      {
+       "name": "Hagerty Media: Dissecting the four-cylinder engines that helped Toyota dominate the world",
+       "url": "https://www.hagerty.com/media/magazine-features/dissecting-the-four-cylinder-engines-that-helped-toyota-dominate-the-world/",
+       "says": "Toyota's 1858-cc 8R engine"
+      }
+     ],
+     "note": "1,858 cc"
+    },
+    "displacement_ci": {
+     "value": 113,
+     "sources": [
+      {
+       "name": "Wikipedia: Toyota R engine",
+       "url": "https://en.wikipedia.org/wiki/Toyota_R_engine",
+       "says": "1,858 cc"
+      },
+      {
+       "name": "Elgin Industries engine parts catalog (technical reference) - engine details",
+       "url": "https://catalog.elginind.com/engine/toyota/default/aeb57675-948e-428c-8edf-f2cd0a71cd96/",
+       "says": "CC 1858"
+      },
+      {
+       "name": "Hagerty Media: Dissecting the four-cylinder engines that helped Toyota dominate the world",
+       "url": "https://www.hagerty.com/media/magazine-features/dissecting-the-four-cylinder-engines-that-helped-toyota-dominate-the-world/",
+       "says": "1858-cc 8R"
+      }
+     ],
+     "note": "converted = 113.4 ci"
+    },
+    "num_cylinders": {
+     "value": 4,
+     "sources": [
+      {
+       "name": "Wikipedia: Toyota R engine",
+       "url": "https://en.wikipedia.org/wiki/Toyota_R_engine",
+       "says": "inline-four"
+      },
+      {
+       "name": "Elgin Industries engine parts catalog (technical reference) - engine details",
+       "url": "https://catalog.elginind.com/engine/toyota/default/aeb57675-948e-428c-8edf-f2cd0a71cd96/",
+       "says": "Cyl. 4"
+      },
+      {
+       "name": "Hagerty Media: Dissecting the four-cylinder engines that helped Toyota dominate the world",
+       "url": "https://www.hagerty.com/media/magazine-features/dissecting-the-four-cylinder-engines-that-helped-toyota-dominate-the-world/",
+       "says": "four-banger ... 8R"
+      }
+     ],
+     "note": ""
+    },
+    "valvetrain": {
+     "value": "SOHC, 2 valves per cylinder",
+     "sources": [
+      {
+       "name": "Wikipedia: Toyota R engine",
+       "url": "https://en.wikipedia.org/wiki/Toyota_R_engine",
+       "says": "SOHC, 2-valve"
+      },
+      {
+       "name": "Elgin Industries engine parts catalog (technical reference) - engine details",
+       "url": "https://catalog.elginind.com/engine/toyota/default/aeb57675-948e-428c-8edf-f2cd0a71cd96/",
+       "says": "Head SOHC"
+      },
+      {
+       "name": "Hagerty Media: Dissecting the four-cylinder engines that helped Toyota dominate the world",
+       "url": "https://www.hagerty.com/media/magazine-features/dissecting-the-four-cylinder-engines-that-helped-toyota-dominate-the-world/",
+       "says": "1858-cc 8R ... a cam elevated from the block to the head"
+      },
+      {
+       "name": "Curbside Classic: First Generation Toyota Hilux",
+       "url": "https://www.curbsideclassic.com/curbside-classics-asian/curbside-classic-first-generation-totoya-hilux-building-block/",
+       "says": "the all-new SOHC 8R engine"
+      }
+     ],
+     "note": ""
+    },
+    "fuel_type": {
+     "value": "gasoline",
+     "sources": [
+      {
+       "name": "Wikipedia: Toyota R engine",
+       "url": "https://en.wikipedia.org/wiki/Toyota_R_engine",
+       "says": "carburetor"
+      },
+      {
+       "name": "Elgin Industries engine parts catalog (technical reference) - engine details",
+       "url": "https://catalog.elginind.com/engine/toyota/default/aeb57675-948e-428c-8edf-f2cd0a71cd96/",
+       "says": "GAS / CARB"
+      }
+     ],
+     "note": "",
+     "second_pass": true
+    }
+   },
+   "variants": [],
+   "unverified": {
+    "bore_in": "DISAGREEMENT: Elgin 3.39 in (86.0 mm) vs Wikipedia 85.9 mm. 86.0 x 80 x 4 = 1,858.9 cc fits the published 1,858 cc better; withheld.",
+    "stroke_in": "3.1496 in (80.0 mm): Wikipedia only for 8R (Hagerty's 80 mm is stated for the 18R).",
+    "configuration": "inline-4: Wikipedia only.",
+    "block_material": "cast iron: Wikipedia only.",
+    "head_material": "Wikipedia says cast iron; not confirmed elsewhere."
+   },
+   "unverified_variants": []
+  },
+  {
+   "id": "toyota-18r-c",
+   "name": "Toyota 18R-C 2.0 I4",
+   "fields": {
+    "bore_in": {
+     "value": 3.4843,
+     "sources": [
+      {
+       "name": "Wikipedia: Toyota R engine",
+       "url": "https://en.wikipedia.org/wiki/Toyota_R_engine",
+       "says": "18R bore 88.5 mm"
+      },
+      {
+       "name": "Elgin Industries engine parts catalog (technical reference) - engine details",
+       "url": "https://catalog.elginind.com/engine/toyota/default/24dd8967-c45b-41c5-a52c-9d64a0903cfd/",
+       "says": "18RC 1968cc: Bore 3.48'' (88.5mm)"
+      }
+     ],
+     "note": "88.5 mm",
+     "second_pass": true
+    },
+    "stroke_in": {
+     "value": 3.1496,
+     "sources": [
+      {
+       "name": "Wikipedia: Toyota R engine",
+       "url": "https://en.wikipedia.org/wiki/Toyota_R_engine",
+       "says": "18R stroke 80 mm"
+      },
+      {
+       "name": "Hagerty Media: Dissecting the four-cylinder engines that helped Toyota dominate the world",
+       "url": "https://www.hagerty.com/media/magazine-features/dissecting-the-four-cylinder-engines-that-helped-toyota-dominate-the-world/",
+       "says": "the immediate predecessor 18R's 80-millimeter stroke"
+      }
+     ],
+     "note": "80.0 mm",
+     "second_pass": true
+    },
+    "displacement_l": {
+     "value": 2.0,
+     "sources": [
+      {
+       "name": "Wikipedia: Toyota R engine",
+       "url": "https://en.wikipedia.org/wiki/Toyota_R_engine",
+       "says": "18R 1,968 cc"
+      },
+      {
+       "name": "Elgin Industries engine parts catalog (technical reference) - engine details",
+       "url": "https://catalog.elginind.com/engine/toyota/default/24dd8967-c45b-41c5-a52c-9d64a0903cfd/",
+       "says": "Liters 2.0, CC 1968"
+      },
+      {
+       "name": "Curbside Classic: First Generation Toyota Hilux",
+       "url": "https://www.curbsideclassic.com/curbside-classics-asian/curbside-classic-first-generation-totoya-hilux-building-block/",
+       "says": "in 1972 received a larger bore, creating the 2.0 liter 18R"
+      }
+     ],
+     "note": "1,968 cc"
+    },
+    "displacement_ci": {
+     "value": 120,
+     "sources": [
+      {
+       "name": "Wikipedia: Toyota R engine",
+       "url": "https://en.wikipedia.org/wiki/Toyota_R_engine",
+       "says": "1,968 cc"
+      },
+      {
+       "name": "Elgin Industries engine parts catalog (technical reference) - engine details",
+       "url": "https://catalog.elginind.com/engine/toyota/default/24dd8967-c45b-41c5-a52c-9d64a0903cfd/",
+       "says": "CC 1968"
+      }
+     ],
+     "note": "converted = 120.1 ci",
+     "second_pass": true
+    },
+    "num_cylinders": {
+     "value": 4,
+     "sources": [
+      {
+       "name": "Wikipedia: Toyota R engine",
+       "url": "https://en.wikipedia.org/wiki/Toyota_R_engine",
+       "says": "inline-four"
+      },
+      {
+       "name": "Elgin Industries engine parts catalog (technical reference) - engine details",
+       "url": "https://catalog.elginind.com/engine/toyota/default/24dd8967-c45b-41c5-a52c-9d64a0903cfd/",
+       "says": "Cyl. 4"
+      },
+      {
+       "name": "Curbside Classic: First Generation Toyota Hilux",
+       "url": "https://www.curbsideclassic.com/curbside-classics-asian/curbside-classic-first-generation-totoya-hilux-building-block/",
+       "says": "2.0 liter 18R ... four"
+      }
+     ],
+     "note": ""
+    },
+    "valvetrain": {
+     "value": "SOHC, 2 valves per cylinder",
+     "sources": [
+      {
+       "name": "Wikipedia: Toyota R engine",
+       "url": "https://en.wikipedia.org/wiki/Toyota_R_engine",
+       "says": "SOHC, 2-valve"
+      },
+      {
+       "name": "Elgin Industries engine parts catalog (technical reference) - engine details",
+       "url": "https://catalog.elginind.com/engine/toyota/default/24dd8967-c45b-41c5-a52c-9d64a0903cfd/",
+       "says": "Head SOHC"
+      }
+     ],
+     "note": "",
+     "second_pass": true
+    },
+    "fuel_type": {
+     "value": "gasoline",
+     "sources": [
+      {
+       "name": "Wikipedia: Toyota R engine",
+       "url": "https://en.wikipedia.org/wiki/Toyota_R_engine",
+       "says": "carburetor"
+      },
+      {
+       "name": "Elgin Industries engine parts catalog (technical reference) - engine details",
+       "url": "https://catalog.elginind.com/engine/toyota/default/24dd8967-c45b-41c5-a52c-9d64a0903cfd/",
+       "says": "GAS / CARB"
+      }
+     ],
+     "note": "",
+     "second_pass": true
+    }
+   },
+   "variants": [],
+   "unverified": {
+    "configuration": "inline-4: Wikipedia only.",
+    "block_material": "cast iron: Wikipedia only.",
+    "head_material": "Wikipedia says cast iron for 18R; not confirmed elsewhere (treat with caution)."
+   },
+   "unverified_variants": []
+  },
+  {
+   "id": "toyota-20r",
+   "name": "Toyota 20R 2.2 I4",
+   "fields": {
+    "bore_in": {
+     "value": 3.4843,
+     "sources": [
+      {
+       "name": "Wikipedia: Toyota R engine",
+       "url": "https://en.wikipedia.org/wiki/Toyota_R_engine",
+       "says": "20R bore 88.5 mm"
+      },
+      {
+       "name": "Elgin Industries engine parts catalog (technical reference) - engine details",
+       "url": "https://catalog.elginind.com/engine/toyota/default/71e90b1d-edab-4417-a824-976848098d1e/",
+       "says": "20R 2189cc: Bore 3.48'' (88.5mm)"
+      },
+      {
+       "name": "Hagerty Media: Dissecting the four-cylinder engines that helped Toyota dominate the world",
+       "url": "https://www.hagerty.com/media/magazine-features/dissecting-the-four-cylinder-engines-that-helped-toyota-dominate-the-world/",
+       "says": "Toyota's 20R combined a 3.48-inch (88.5-millimeter) bore"
+      },
+      {
+       "name": "Engine Builder magazine (Nov 1998): Just Imports - Toyota R-Series",
+       "url": "https://www.enginebuildermag.com/1998/11/just-imports-toyota-r-series/",
+       "says": "20R: 2189cc (88.5mm X 89mm)"
+      }
+     ],
+     "note": "88.5 mm"
+    },
+    "stroke_in": {
+     "value": 3.5039,
+     "sources": [
+      {
+       "name": "Wikipedia: Toyota R engine",
+       "url": "https://en.wikipedia.org/wiki/Toyota_R_engine",
+       "says": "20R stroke 89 mm"
+      },
+      {
+       "name": "Hagerty Media: Dissecting the four-cylinder engines that helped Toyota dominate the world",
+       "url": "https://www.hagerty.com/media/magazine-features/dissecting-the-four-cylinder-engines-that-helped-toyota-dominate-the-world/",
+       "says": "with a 3.50-inch (89.0-millimeter) stroke"
+      },
+      {
+       "name": "Engine Builder magazine (Nov 1998): Just Imports - Toyota R-Series",
+       "url": "https://www.enginebuildermag.com/1998/11/just-imports-toyota-r-series/",
+       "says": "20R: 2189cc (88.5mm X 89mm)"
+      }
+     ],
+     "note": "89.0 mm"
+    },
+    "displacement_l": {
+     "value": 2.2,
+     "sources": [
+      {
+       "name": "Wikipedia: Toyota R engine",
+       "url": "https://en.wikipedia.org/wiki/Toyota_R_engine",
+       "says": "20R 2,190 cc"
+      },
+      {
+       "name": "Elgin Industries engine parts catalog (technical reference) - engine details",
+       "url": "https://catalog.elginind.com/engine/toyota/default/71e90b1d-edab-4417-a824-976848098d1e/",
+       "says": "Liters 2.2"
+      },
+      {
+       "name": "Engine Builder magazine (Nov 1998): Just Imports - Toyota R-Series",
+       "url": "https://www.enginebuildermag.com/1998/11/just-imports-toyota-r-series/",
+       "says": "The 20R is a 2.2L (2189cc)"
+      },
+      {
+       "name": "Hagerty Media: Dissecting the four-cylinder engines that helped Toyota dominate the world",
+       "url": "https://www.hagerty.com/media/magazine-features/dissecting-the-four-cylinder-engines-that-helped-toyota-dominate-the-world/",
+       "says": "2190 cc"
+      }
+     ],
+     "note": "2,190 cc (Wikipedia, Hagerty) vs 2,189 cc (Engine Builder, Elgin); 88.5 x 89 x 4 = 2,189.9 cc"
+    },
+    "displacement_ci": {
+     "value": 134,
+     "sources": [
+      {
+       "name": "Hagerty Media: Dissecting the four-cylinder engines that helped Toyota dominate the world",
+       "url": "https://www.hagerty.com/media/magazine-features/dissecting-the-four-cylinder-engines-that-helped-toyota-dominate-the-world/",
+       "says": "yielding 133.6 cubic inches, or 2190 cc"
+      },
+      {
+       "name": "Wikipedia: Toyota R engine",
+       "url": "https://en.wikipedia.org/wiki/Toyota_R_engine",
+       "says": "2,190 cc"
+      },
+      {
+       "name": "Engine Builder magazine (Nov 1998): Just Imports - Toyota R-Series",
+       "url": "https://www.enginebuildermag.com/1998/11/just-imports-toyota-r-series/",
+       "says": "2189cc"
+      }
+     ],
+     "note": "133.6 ci"
+    },
+    "num_cylinders": {
+     "value": 4,
+     "sources": [
+      {
+       "name": "Wikipedia: Toyota R engine",
+       "url": "https://en.wikipedia.org/wiki/Toyota_R_engine",
+       "says": "inline-four"
+      },
+      {
+       "name": "Elgin Industries engine parts catalog (technical reference) - engine details",
+       "url": "https://catalog.elginind.com/engine/toyota/default/71e90b1d-edab-4417-a824-976848098d1e/",
+       "says": "Cyl. 4"
+      },
+      {
+       "name": "Hagerty Media: Dissecting the four-cylinder engines that helped Toyota dominate the world",
+       "url": "https://www.hagerty.com/media/magazine-features/dissecting-the-four-cylinder-engines-that-helped-toyota-dominate-the-world/",
+       "says": "the 20R inline-four"
+      }
+     ],
+     "note": ""
+    },
+    "configuration": {
+     "value": "inline-4",
+     "sources": [
+      {
+       "name": "Wikipedia: Toyota R engine",
+       "url": "https://en.wikipedia.org/wiki/Toyota_R_engine",
+       "says": "inline-four"
+      },
+      {
+       "name": "Hagerty Media: Dissecting the four-cylinder engines that helped Toyota dominate the world",
+       "url": "https://www.hagerty.com/media/magazine-features/dissecting-the-four-cylinder-engines-that-helped-toyota-dominate-the-world/",
+       "says": "Enter the 20R inline-four"
+      }
+     ],
+     "note": "",
+     "second_pass": true
+    },
+    "valvetrain": {
+     "value": "SOHC (chain-driven), 2 valves per cylinder",
+     "sources": [
+      {
+       "name": "Wikipedia: Toyota R engine",
+       "url": "https://en.wikipedia.org/wiki/Toyota_R_engine",
+       "says": "SOHC, 2-valve"
+      },
+      {
+       "name": "Elgin Industries engine parts catalog (technical reference) - engine details",
+       "url": "https://catalog.elginind.com/engine/toyota/default/71e90b1d-edab-4417-a824-976848098d1e/",
+       "says": "Head SOHC"
+      },
+      {
+       "name": "Engine Builder magazine (Nov 1998): Just Imports - Toyota R-Series",
+       "url": "https://www.enginebuildermag.com/1998/11/just-imports-toyota-r-series/",
+       "says": "overhead camshaft (OHC) design with the cam being driven by a timing chain"
+      },
+      {
+       "name": "Hagerty Media: Dissecting the four-cylinder engines that helped Toyota dominate the world",
+       "url": "https://www.hagerty.com/media/magazine-features/dissecting-the-four-cylinder-engines-that-helped-toyota-dominate-the-world/",
+       "says": "the overhead cam was driven by a stout double-row timing chain"
+      }
+     ],
+     "note": ""
+    },
+    "block_material": {
+     "value": "cast iron",
+     "sources": [
+      {
+       "name": "Wikipedia: Toyota R engine",
+       "url": "https://en.wikipedia.org/wiki/Toyota_R_engine",
+       "says": "cast iron block"
+      },
+      {
+       "name": "Hagerty Media: Dissecting the four-cylinder engines that helped Toyota dominate the world",
+       "url": "https://www.hagerty.com/media/magazine-features/dissecting-the-four-cylinder-engines-that-helped-toyota-dominate-the-world/",
+       "says": "The 20R's cast-iron cylinder block"
+      },
+      {
+       "name": "Engine Builder magazine (Nov 1998): Just Imports - Toyota R-Series",
+       "url": "https://www.enginebuildermag.com/1998/11/just-imports-toyota-r-series/",
+       "says": "The R-series has a cast iron block, aluminum head"
+      }
+     ],
+     "note": ""
+    },
+    "head_material": {
+     "value": "aluminum",
+     "sources": [
+      {
+       "name": "Wikipedia: Toyota R engine",
+       "url": "https://en.wikipedia.org/wiki/Toyota_R_engine",
+       "says": "Aluminum alloy heads were used"
+      },
+      {
+       "name": "Hagerty Media: Dissecting the four-cylinder engines that helped Toyota dominate the world",
+       "url": "https://www.hagerty.com/media/magazine-features/dissecting-the-four-cylinder-engines-that-helped-toyota-dominate-the-world/",
+       "says": "The new cast-aluminum cylinder head was a crossflow design"
+      },
+      {
+       "name": "Engine Builder magazine (Nov 1998): Just Imports - Toyota R-Series",
+       "url": "https://www.enginebuildermag.com/1998/11/just-imports-toyota-r-series/",
+       "says": "cast iron block, aluminum head"
+      }
+     ],
+     "note": ""
+    },
+    "fuel_type": {
+     "value": "gasoline",
+     "sources": [
+      {
+       "name": "Wikipedia: Toyota R engine",
+       "url": "https://en.wikipedia.org/wiki/Toyota_R_engine",
+       "says": "carburetor"
+      },
+      {
+       "name": "Elgin Industries engine parts catalog (technical reference) - engine details",
+       "url": "https://catalog.elginind.com/engine/toyota/default/71e90b1d-edab-4417-a824-976848098d1e/",
+       "says": "GAS / CARB"
+      }
+     ],
+     "note": "",
+     "second_pass": true
+    }
+   },
+   "variants": [],
+   "unverified": {},
+   "unverified_variants": []
+  },
+  {
+   "id": "toyota-l-diesel",
+   "name": "Toyota L 2.2 diesel I4",
+   "fields": {
+    "displacement_l": {
+     "value": 2.2,
+     "sources": [
+      {
+       "name": "Wikipedia: Toyota L engine",
+       "url": "https://en.wikipedia.org/wiki/Toyota_L_engine",
+       "says": "2.2 L (2,188 cc)"
+      },
+      {
+       "name": "Elgin Industries engine parts catalog (technical reference) - engine details",
+       "url": "https://catalog.elginind.com/engine/toyota/default/96f93116-a030-4d2d-9b98-6f3090b4b4ca/",
+       "says": "L: DIESEL, Liters 2.2, CC 2188"
+      },
+      {
+       "name": "Curbside Classic: 1982 Toyota Diesel Pickup",
+       "url": "https://www.curbsideclassic.com/curbside-classics-asian/curbside-classic-diesel-pickup-1982-toyota-diesel-pickup/",
+       "says": "The diesel pickup used a non-turbo 2.2L"
+      }
+     ],
+     "note": "2,188 cc"
+    },
+    "displacement_ci": {
+     "value": 134,
+     "sources": [
+      {
+       "name": "Wikipedia: Toyota L engine",
+       "url": "https://en.wikipedia.org/wiki/Toyota_L_engine",
+       "says": "2,188 cc"
+      },
+      {
+       "name": "Elgin Industries engine parts catalog (technical reference) - engine details",
+       "url": "https://catalog.elginind.com/engine/toyota/default/96f93116-a030-4d2d-9b98-6f3090b4b4ca/",
+       "says": "CC 2188"
+      }
+     ],
+     "note": "converted = 133.5 ci",
+     "second_pass": true
+    },
+    "num_cylinders": {
+     "value": 4,
+     "sources": [
+      {
+       "name": "Wikipedia: Toyota L engine",
+       "url": "https://en.wikipedia.org/wiki/Toyota_L_engine",
+       "says": "four-cylinder"
+      },
+      {
+       "name": "Elgin Industries engine parts catalog (technical reference) - engine details",
+       "url": "https://catalog.elginind.com/engine/toyota/default/96f93116-a030-4d2d-9b98-6f3090b4b4ca/",
+       "says": "Cyl. 4"
+      }
+     ],
+     "note": "",
+     "second_pass": true
+    },
+    "valvetrain": {
+     "value": "SOHC, 2 valves per cylinder",
+     "sources": [
+      {
+       "name": "Wikipedia: Toyota L engine",
+       "url": "https://en.wikipedia.org/wiki/Toyota_L_engine",
+       "says": "SOHC 2 valves x cyl"
+      },
+      {
+       "name": "Elgin Industries engine parts catalog (technical reference) - engine details",
+       "url": "https://catalog.elginind.com/engine/toyota/default/96f93116-a030-4d2d-9b98-6f3090b4b4ca/",
+       "says": "Head SOHC"
+      }
+     ],
+     "note": "belt-driven cam",
+     "second_pass": true
+    },
+    "fuel_type": {
+     "value": "diesel",
+     "sources": [
+      {
+       "name": "Wikipedia: Toyota L engine",
+       "url": "https://en.wikipedia.org/wiki/Toyota_L_engine",
+       "says": "indirect injection diesel"
+      },
+      {
+       "name": "Elgin Industries engine parts catalog (technical reference) - engine details",
+       "url": "https://catalog.elginind.com/engine/toyota/default/96f93116-a030-4d2d-9b98-6f3090b4b4ca/",
+       "says": "Fuel / Delivery DIESEL / FI"
+      },
+      {
+       "name": "Curbside Classic: 1982 Toyota Diesel Pickup",
+       "url": "https://www.curbsideclassic.com/curbside-classics-asian/curbside-classic-diesel-pickup-1982-toyota-diesel-pickup/",
+       "says": "Toyota diesel pickup ... 2.2L"
+      }
+     ],
+     "note": "indirect injection"
+    }
+   },
+   "variants": [],
+   "unverified": {
+    "bore_in": "DISAGREEMENT: Wikipedia 90 mm (3.5433 in) vs Elgin 3.48 in (88.5 mm). 90 x 86 x 4 = 2,188 cc matches the published displacement; Elgin's 88.5 looks like a copy of the 20R row. Withheld.",
+    "stroke_in": "3.3858 in (86.0 mm): Wikipedia only.",
+    "configuration": "inline-4: Wikipedia only.",
+    "block_material": "no source found.",
+    "head_material": "no source found."
+   },
+   "unverified_variants": []
+  },
+  {
+   "id": "toyota-2l",
+   "name": "Toyota 2L / 2L-T 2.4 diesel I4",
+   "fields": {
+    "bore_in": {
+     "value": 3.622,
+     "sources": [
+      {
+       "name": "Wikipedia: Toyota L engine",
+       "url": "https://en.wikipedia.org/wiki/Toyota_L_engine",
+       "says": "2L 92 mm x 92 mm (3.62 in x 3.62 in)"
+      },
+      {
+       "name": "Elgin Industries engine parts catalog (technical reference) - engine details",
+       "url": "https://catalog.elginind.com/engine/toyota/default/0c8843b9-3eb1-476a-823c-efcf3c222e22/",
+       "says": "2L, 2LT 2446cc: Bore 3.62'' (92.0mm)"
+      }
+     ],
+     "note": "92.0 mm",
+     "second_pass": true
+    },
+    "displacement_l": {
+     "value": 2.4,
+     "sources": [
+      {
+       "name": "Wikipedia: Toyota L engine",
+       "url": "https://en.wikipedia.org/wiki/Toyota_L_engine",
+       "says": "2.4 L (2,446 cc)"
+      },
+      {
+       "name": "Elgin Industries engine parts catalog (technical reference) - engine details",
+       "url": "https://catalog.elginind.com/engine/toyota/default/0c8843b9-3eb1-476a-823c-efcf3c222e22/",
+       "says": "Liters 2.4, CC 2446"
+      },
+      {
+       "name": "EPA fueleconomy.gov vehicle data",
+       "url": "https://www.fueleconomy.gov/feg/download.shtml",
+       "says": "1984 Truck 2WD/4WD 2.4 L 4-cyl Diesel"
+      }
+     ],
+     "note": "2,446 cc"
+    },
+    "displacement_ci": {
+     "value": 149,
+     "sources": [
+      {
+       "name": "Wikipedia: Toyota L engine",
+       "url": "https://en.wikipedia.org/wiki/Toyota_L_engine",
+       "says": "2,446 cc"
+      },
+      {
+       "name": "Elgin Industries engine parts catalog (technical reference) - engine details",
+       "url": "https://catalog.elginind.com/engine/toyota/default/0c8843b9-3eb1-476a-823c-efcf3c222e22/",
+       "says": "CC 2446"
+      }
+     ],
+     "note": "converted = 149.3 ci",
+     "second_pass": true
+    },
+    "num_cylinders": {
+     "value": 4,
+     "sources": [
+      {
+       "name": "Wikipedia: Toyota L engine",
+       "url": "https://en.wikipedia.org/wiki/Toyota_L_engine",
+       "says": "four-cylinder"
+      },
+      {
+       "name": "Elgin Industries engine parts catalog (technical reference) - engine details",
+       "url": "https://catalog.elginind.com/engine/toyota/default/0c8843b9-3eb1-476a-823c-efcf3c222e22/",
+       "says": "Cyl. 4"
+      },
+      {
+       "name": "EPA fueleconomy.gov vehicle data",
+       "url": "https://www.fueleconomy.gov/feg/download.shtml",
+       "says": "2.4 L 4-cyl Diesel"
+      }
+     ],
+     "note": ""
+    },
+    "valvetrain": {
+     "value": "SOHC, 2 valves per cylinder",
+     "sources": [
+      {
+       "name": "Wikipedia: Toyota L engine",
+       "url": "https://en.wikipedia.org/wiki/Toyota_L_engine",
+       "says": "SOHC 2 valves x cyl"
+      },
+      {
+       "name": "Elgin Industries engine parts catalog (technical reference) - engine details",
+       "url": "https://catalog.elginind.com/engine/toyota/default/0c8843b9-3eb1-476a-823c-efcf3c222e22/",
+       "says": "Head SOHC"
+      }
+     ],
+     "note": "",
+     "second_pass": true
+    },
+    "fuel_type": {
+     "value": "diesel",
+     "sources": [
+      {
+       "name": "Wikipedia: Toyota L engine",
+       "url": "https://en.wikipedia.org/wiki/Toyota_L_engine",
+       "says": "indirect injection diesel"
+      },
+      {
+       "name": "Elgin Industries engine parts catalog (technical reference) - engine details",
+       "url": "https://catalog.elginind.com/engine/toyota/default/0c8843b9-3eb1-476a-823c-efcf3c222e22/",
+       "says": "DIESEL / FI, Asp. N, T"
+      },
+      {
+       "name": "EPA fueleconomy.gov vehicle data",
+       "url": "https://www.fueleconomy.gov/feg/download.shtml",
+       "says": "1984 Truck 2.4 L Diesel"
+      }
+     ],
+     "note": "2L-T turbocharged"
+    }
+   },
+   "variants": [],
+   "unverified": {
+    "stroke_in": "3.6220 in (92.0 mm): Wikipedia only.",
+    "configuration": "inline-4: Wikipedia only.",
+    "block_material": "no source found.",
+    "head_material": "no source found."
+   },
+   "unverified_variants": []
+  }
+ ]
+}

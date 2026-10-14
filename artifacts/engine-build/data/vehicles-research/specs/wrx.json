@@ -1,0 +1,80 @@
+{
+ "family_overrides": [
+  {
+   "years": [
+    2015,
+    2021
+   ],
+   "cid": [
+    122
+   ],
+   "url": "/engines/subaru/fa"
+  }
+ ],
+ "default_layout": [
+  4,
+  "flat-four"
+ ],
+ "make": "Subaru",
+ "model": "WRX",
+ "makeSlug": "subaru",
+ "slug": "wrx",
+ "metric_from": 1900,
+ "title": "Subaru WRX Engines by Year (2002–2026)",
+ "description": "Every factory engine in the US Subaru WRX and WRX STI by year, 2002–2026: the EJ205, EJ255 and EJ257 turbo boxers, the FA20DIT and the 2.4 FA24DIT.",
+ "intro": [
+  "Subaru brought the turbocharged Impreza WRX to the US for 2002 and the STI for 2004. Every engine is a turbocharged flat four. The STI ended after 2021.",
+  "Pick a year to see every engine offered that model year, with its code, rated horsepower and the trims it came in. Each engine links to its full specs."
+ ],
+ "generations": [
+  {
+   "key": "gd",
+   "name": "Impreza WRX (GD/GG)",
+   "years": [
+    2002,
+    2007
+   ],
+   "intro": [
+    "The 2.0 EJ205, the 2.5 EJ255 from 2006, and the EJ257 in the STI."
+   ]
+  },
+  {
+   "key": "gr",
+   "name": "Impreza WRX (GR/GV)",
+   "years": [
+    2008,
+    2014
+   ],
+   "intro": [
+    "The EJ255 and, in the STI, the EJ257."
+   ]
+  },
+  {
+   "key": "va",
+   "name": "WRX (VA)",
+   "years": [
+    2015,
+    2021
+   ],
+   "intro": [
+    "The 2.0 FA20DIT and the EJ257 in the STI, including the limited Type RA and S209."
+   ]
+  },
+  {
+   "key": "vb",
+   "name": "WRX (VB)",
+   "years": [
+    2022,
+    2026
+   ],
+   "intro": [
+    "The 2.4 FA24DIT; there is no STI."
+   ]
+  }
+ ],
+ "files": [
+  "verify_subaru-wrx-2002-2026.json"
+ ],
+ "merge_trims": true,
+ "draft": true
+}

@@ -1,0 +1,155 @@
+{
+ "name": "Toyota 2F 4.2 I6",
+ "fields": {
+  "bore_in": {
+   "value": 3.7008,
+   "sources": [
+    {
+     "name": "Wikipedia: Toyota F engine",
+     "url": "https://en.wikipedia.org/wiki/Toyota_F_engine",
+     "says": "2F bore 94 mm (3.7 in)"
+    },
+    {
+     "name": "Elgin Industries engine parts catalog (technical reference) - engine details",
+     "url": "https://catalog.elginind.com/engine/toyota/default/9e78be11-f317-4035-84ee-1b44a3066033/",
+     "says": "2F 4227cc: Bore 3.70'' (94.0mm)"
+    }
+   ],
+   "note": "94.0 mm",
+   "second_pass": true
+  },
+  "displacement_l": {
+   "value": 4.2,
+   "sources": [
+    {
+     "name": "Wikipedia: Toyota F engine",
+     "url": "https://en.wikipedia.org/wiki/Toyota_F_engine",
+     "says": "4.2 L (4230 cc)"
+    },
+    {
+     "name": "Elgin Industries engine parts catalog (technical reference) - engine details",
+     "url": "https://catalog.elginind.com/engine/toyota/default/9e78be11-f317-4035-84ee-1b44a3066033/",
+     "says": "Liters 4.2"
+    },
+    {
+     "name": "Toyota Global: Land Cruiser history - station wagon evolution (Toyota material)",
+     "url": "https://global.toyota/en/mobility/toyota-brand/features/landcruiser/history/evolution/station-wagon.html",
+     "says": "inline 6-cylinder 4,230 cc 135 hp engine (2F)"
+    },
+    {
+     "name": "EPA fueleconomy.gov vehicle data",
+     "url": "https://www.fueleconomy.gov/feg/download.shtml",
+     "says": "1984-87 Land Cruiser Wagon 4.2 L 6-cyl"
+    }
+   ],
+   "note": "4,230 cc per Toyota, Wikipedia and Curbside; Elgin 4,227 cc"
+  },
+  "displacement_ci": {
+   "value": 258,
+   "sources": [
+    {
+     "name": "Wikipedia: Toyota F engine",
+     "url": "https://en.wikipedia.org/wiki/Toyota_F_engine",
+     "says": "4230 cc"
+    },
+    {
+     "name": "Toyota Global: Land Cruiser history - station wagon evolution (Toyota material)",
+     "url": "https://global.toyota/en/mobility/toyota-brand/features/landcruiser/history/evolution/station-wagon.html",
+     "says": "4,230 cc"
+    },
+    {
+     "name": "Curbside Classic: 1978 Toyota Land Cruiser (FJ56)",
+     "url": "https://www.curbsideclassic.com/curbside-classics-asian/curbside-classic-1978-toyota-land-cruiser-fj56-mama-mia/",
+     "says": "the 2F produced 140hp from its 4230cc"
+    }
+   ],
+   "note": "converted = 258.1 ci"
+  },
+  "num_cylinders": {
+   "value": 6,
+   "sources": [
+    {
+     "name": "Wikipedia: Toyota F engine",
+     "url": "https://en.wikipedia.org/wiki/Toyota_F_engine",
+     "says": "inline-6"
+    },
+    {
+     "name": "Elgin Industries engine parts catalog (technical reference) - engine details",
+     "url": "https://catalog.elginind.com/engine/toyota/default/9e78be11-f317-4035-84ee-1b44a3066033/",
+     "says": "Cyl. 6"
+    },
+    {
+     "name": "Toyota Global: Land Cruiser history - station wagon evolution (Toyota material)",
+     "url": "https://global.toyota/en/mobility/toyota-brand/features/landcruiser/history/evolution/station-wagon.html",
+     "says": "inline 6-cylinder 4,230 cc"
+    },
+    {
+     "name": "EPA fueleconomy.gov vehicle data",
+     "url": "https://www.fueleconomy.gov/feg/download.shtml",
+     "says": "4.2 L 6-cyl"
+    }
+   ],
+   "note": ""
+  },
+  "configuration": {
+   "value": "inline-6",
+   "sources": [
+    {
+     "name": "Wikipedia: Toyota F engine",
+     "url": "https://en.wikipedia.org/wiki/Toyota_F_engine",
+     "says": "inline-6"
+    },
+    {
+     "name": "Toyota Global: Land Cruiser history - station wagon evolution (Toyota material)",
+     "url": "https://global.toyota/en/mobility/toyota-brand/features/landcruiser/history/evolution/station-wagon.html",
+     "says": "inline 6-cylinder 4,230 cc 135 hp engine (2F)"
+    }
+   ],
+   "note": "",
+   "second_pass": true
+  },
+  "valvetrain": {
+   "value": "OHV (pushrod), 2 valves per cylinder",
+   "sources": [
+    {
+     "name": "Wikipedia: Toyota F engine",
+     "url": "https://en.wikipedia.org/wiki/Toyota_F_engine",
+     "says": "same overhead valve design"
+    },
+    {
+     "name": "Elgin Industries engine parts catalog (technical reference) - engine details",
+     "url": "https://catalog.elginind.com/engine/toyota/default/9e78be11-f317-4035-84ee-1b44a3066033/",
+     "says": "Head OHV"
+    }
+   ],
+   "note": "",
+   "second_pass": true
+  },
+  "fuel_type": {
+   "value": "gasoline",
+   "sources": [
+    {
+     "name": "Wikipedia: Toyota F engine",
+     "url": "https://en.wikipedia.org/wiki/Toyota_F_engine",
+     "says": "carbureted"
+    },
+    {
+     "name": "Elgin Industries engine parts catalog (technical reference) - engine details",
+     "url": "https://catalog.elginind.com/engine/toyota/default/9e78be11-f317-4035-84ee-1b44a3066033/",
+     "says": "GAS / CARB"
+    },
+    {
+     "name": "Toyota Global: Land Cruiser history - station wagon evolution (Toyota material)",
+     "url": "https://global.toyota/en/mobility/toyota-brand/features/landcruiser/history/evolution/station-wagon.html",
+     "says": "The gasoline engine was upgraded to a 4.2-liter unit (2F)"
+    }
+   ],
+   "note": ""
+  }
+ },
+ "unverified": {
+  "stroke_in": "4.0000 in (101.6 mm): Wikipedia only.",
+  "block_material": "cast iron: Wikipedia only.",
+  "head_material": "cast iron: Wikipedia only."
+ }
+}

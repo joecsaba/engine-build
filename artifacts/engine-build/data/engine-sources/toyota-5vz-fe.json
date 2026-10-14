@@ -1,0 +1,170 @@
+{
+ "name": "Toyota 5VZ-FE 3.4 V6",
+ "fields": {
+  "bore_in": {
+   "value": 3.6811,
+   "sources": [
+    {
+     "name": "Wikipedia: Toyota VZ engine",
+     "url": "https://en.wikipedia.org/wiki/Toyota_VZ_engine",
+     "says": "5VZ-FE bore 93.5 mm"
+    },
+    {
+     "name": "Elgin Industries engine parts catalog (technical reference) - engine details",
+     "url": "https://catalog.elginind.com/engine/toyota/default/80ae1d1d-190a-4e1b-8004-309d3f91f505/",
+     "says": "5VZ-FE 3378cc: Bore 3.68'' (93.5mm)"
+    },
+    {
+     "name": "Engine Builder magazine (May 1999): Rebuilding the Toyota 3.0L V6 (read via web.archive.org)",
+     "url": "https://www.enginebuildermag.com/1999/05/rebuilding-the-toyota-3-0l-v6/",
+     "says": "increase in the bore size of the VZ V6. It was increased to 93.5mm"
+    }
+   ],
+   "note": "93.5 mm"
+  },
+  "stroke_in": {
+   "value": 3.2283,
+   "sources": [
+    {
+     "name": "Wikipedia: Toyota VZ engine",
+     "url": "https://en.wikipedia.org/wiki/Toyota_VZ_engine",
+     "says": "5VZ-FE stroke 82 mm"
+    },
+    {
+     "name": "Elgin Industries engine parts catalog (technical reference) - engine details",
+     "url": "https://catalog.elginind.com/engine/toyota/default/80ae1d1d-190a-4e1b-8004-309d3f91f505/",
+     "says": "5VZ-FE: Stroke 3.23'' (82.0mm)"
+    }
+   ],
+   "note": "82.0 mm",
+   "second_pass": true
+  },
+  "displacement_l": {
+   "value": 3.4,
+   "sources": [
+    {
+     "name": "Wikipedia: Toyota VZ engine",
+     "url": "https://en.wikipedia.org/wiki/Toyota_VZ_engine",
+     "says": "3,378 cc"
+    },
+    {
+     "name": "Elgin Industries engine parts catalog (technical reference) - engine details",
+     "url": "https://catalog.elginind.com/engine/toyota/default/80ae1d1d-190a-4e1b-8004-309d3f91f505/",
+     "says": "Liters 3.4, CC 3378"
+    },
+    {
+     "name": "EPA fueleconomy.gov vehicle data",
+     "url": "https://www.fueleconomy.gov/feg/download.shtml",
+     "says": "1995 Tacoma 3.4 L 6-cyl"
+    },
+    {
+     "name": "Engine Builder magazine (May 1999): Rebuilding the Toyota 3.0L V6 (read via web.archive.org)",
+     "url": "https://www.enginebuildermag.com/1999/05/rebuilding-the-toyota-3-0l-v6/",
+     "says": "Now displacing 3.4 liters"
+    }
+   ],
+   "note": "3,378 cc"
+  },
+  "displacement_ci": {
+   "value": 206,
+   "sources": [
+    {
+     "name": "Wikipedia: Toyota VZ engine",
+     "url": "https://en.wikipedia.org/wiki/Toyota_VZ_engine",
+     "says": "3,378 cc"
+    },
+    {
+     "name": "Elgin Industries engine parts catalog (technical reference) - engine details",
+     "url": "https://catalog.elginind.com/engine/toyota/default/80ae1d1d-190a-4e1b-8004-309d3f91f505/",
+     "says": "CC 3378"
+    }
+   ],
+   "note": "converted from 3,378 cc = 206.1 ci",
+   "second_pass": true
+  },
+  "num_cylinders": {
+   "value": 6,
+   "sources": [
+    {
+     "name": "Wikipedia: Toyota VZ engine",
+     "url": "https://en.wikipedia.org/wiki/Toyota_VZ_engine",
+     "says": "V6"
+    },
+    {
+     "name": "Elgin Industries engine parts catalog (technical reference) - engine details",
+     "url": "https://catalog.elginind.com/engine/toyota/default/80ae1d1d-190a-4e1b-8004-309d3f91f505/",
+     "says": "Cyl. 6"
+    },
+    {
+     "name": "EPA fueleconomy.gov vehicle data",
+     "url": "https://www.fueleconomy.gov/feg/download.shtml",
+     "says": "3.4 L 6-cyl"
+    }
+   ],
+   "note": ""
+  },
+  "configuration": {
+   "value": "V6 (60 degree)",
+   "sources": [
+    {
+     "name": "Wikipedia: Toyota VZ engine",
+     "url": "https://en.wikipedia.org/wiki/Toyota_VZ_engine",
+     "says": "60 degree V6"
+    },
+    {
+     "name": "Engine Builder magazine (May 1999): Rebuilding the Toyota 3.0L V6 (read via web.archive.org)",
+     "url": "https://www.enginebuildermag.com/1999/05/rebuilding-the-toyota-3-0l-v6/",
+     "says": "5VZ-FE - 3.4L DOHC V6"
+    }
+   ],
+   "note": "",
+   "second_pass": true
+  },
+  "valvetrain": {
+   "value": "DOHC, 4 valves per cylinder (24 valves)",
+   "sources": [
+    {
+     "name": "Wikipedia: Toyota VZ engine",
+     "url": "https://en.wikipedia.org/wiki/Toyota_VZ_engine",
+     "says": "DOHC layout ... 24 valve head"
+    },
+    {
+     "name": "Elgin Industries engine parts catalog (technical reference) - engine details",
+     "url": "https://catalog.elginind.com/engine/toyota/default/80ae1d1d-190a-4e1b-8004-309d3f91f505/",
+     "says": "Head DOHC"
+    },
+    {
+     "name": "Engine Builder magazine (May 1999): Rebuilding the Toyota 3.0L V6 (read via web.archive.org)",
+     "url": "https://www.enginebuildermag.com/1999/05/rebuilding-the-toyota-3-0l-v6/",
+     "says": "four valves per cylinder and twin cams per cylinder head"
+    }
+   ],
+   "note": ""
+  },
+  "fuel_type": {
+   "value": "gasoline",
+   "sources": [
+    {
+     "name": "Wikipedia: Toyota VZ engine",
+     "url": "https://en.wikipedia.org/wiki/Toyota_VZ_engine",
+     "says": "sequential multi-port fuel injection"
+    },
+    {
+     "name": "Elgin Industries engine parts catalog (technical reference) - engine details",
+     "url": "https://catalog.elginind.com/engine/toyota/default/80ae1d1d-190a-4e1b-8004-309d3f91f505/",
+     "says": "Fuel / Delivery GAS / FI"
+    },
+    {
+     "name": "EPA fueleconomy.gov vehicle data",
+     "url": "https://www.fueleconomy.gov/feg/download.shtml",
+     "says": "Tacoma 3.4 L, no diesel flag"
+    }
+   ],
+   "note": ""
+  }
+ },
+ "unverified": {
+  "block_material": "cast iron: Wikipedia only ('cast iron block'); Engine Builder 1999 does not restate it for the 3.4.",
+  "head_material": "aluminum: Wikipedia only."
+ }
+}
