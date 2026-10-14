@@ -192,6 +192,12 @@ for fn in spec["files"]:
                 # (Buick aluminum 215 V8 vs the 1964-65 Pontiac 215 six)
                 if layout != "V8" and re.search(r"\bV-?8\b|aluminum V8", txt, re.I) and not re.search(r"\bsix\b|\bI-?6\b|inline", txt, re.I): cyl, layout = 8, "V8"
                 liters = LITERS.get(e["cid"], round(e["cid"] * 0.016387, 1))
+                # the published liter figure beats one rounded from cubic inches
+                # (Toyota's 4.0 is 241 ci, which rounds to 3.9; the 7M "3.0" is 180 ci)
+                if spec.get("published_liters", True):
+                    m_l = re.match(r"\s*(\d{1,2}\.\d)\s*L\b", str(e.get("name") or ""))
+                    pub = e.get("liters") or (float(m_l.group(1)) if m_l else None)
+                    if pub and abs(pub - e["cid"] * 0.016387) < 0.15: liters = pub
                 name = (f"{liters}L / {e['cid']} {layout}" if year >= metric_from else f"{e['cid']} {layout}") + induction_word(e)
             rec = {
                 "year": year,
@@ -199,7 +205,8 @@ for fn in spec["files"]:
                 "cid": e["cid"], "cyl": cyl, "name": name,
                 "code": spec.get("codes", {}).get(k, split_code(e.get("rpo"))[0]),
                 "desc": None if k in spec.get("codes", {}) else split_code(e.get("rpo"))[1],
-                "hp": e.get("hp"),
+                # research marks a rating it couldn't confirm: show the engine without it
+                "hp": None if e.get("hp_confirmed") is False else e.get("hp"),
                 # US makers quoted SAE net from 1972 on; research files sometimes
                 # labeled later ratings "gross", so the year decides, not the label.
                 "hpBasis": "net" if year >= 1972 else (e.get("hp_basis") or "gross"),
@@ -234,7 +241,11 @@ for fn in spec["files"]:
             # Same displacement, different engine (2011+ Coyote 302 vs the
             # Windsor 302): the spec names the family page to link.
             # no spec page for this engine yet, and the same-size page is a different engine
-            if any(fo_y[0] <= year <= fo_y[1] and e["cid"] == c for c, fo_y in [(x["cid"], x["years"]) for x in spec.get("no_link", [])]):
+            # optional "match": a regex on the research name/code, so one engine of a size
+            # can be unlinked while another of the same size keeps its link (7.3 IDI vs Power Stroke)
+            txt_nl = f'{e.get("name") or ""} {e.get("rpo") or ""} {e.get("common_name") or ""}'
+            if any(x["years"][0] <= year <= x["years"][1] and e["cid"] == x["cid"] and
+                   (not x.get("match") or re.search(x["match"], txt_nl, re.I)) for x in spec.get("no_link", [])):
                 rec["noLink"] = True
             for fo in spec.get("family_overrides", []):
                 # optional "diesel": true/false keeps a gas and a diesel of the same size apart

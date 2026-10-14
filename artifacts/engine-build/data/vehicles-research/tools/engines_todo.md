@@ -39,6 +39,21 @@ or 2 reputable sources that agree (second pass). Specs go in public/data/engines
 | Ford 262 truck six | 262 ci | F-100 1964 |
 | Mitsubishi 6DR5 4.0 diesel | 243 ci | Dodge D150 1978 |
 
+## Batch 5 gaps (most-searched models) — popular engines, high priority
+| Engine | Size | Used in |
+|---|---|---|
+| Toyota 3VZ-E 3.0 V6 | 181 ci | 4Runner, Pickup 1988–1995 |
+| Toyota 5VZ-FE 3.4 V6 | 206 ci | 4Runner 1996–2002, Tacoma 1995–2004 |
+| Toyota 1GR-FE 4.0 V6 | 241 ci | 4Runner 2003–2024, Tacoma 2005–2015 |
+| Toyota 2TR-FE / 3RZ-FE / 2RZ-FE fours | 164 / 164 / 149 ci | 4Runner, Tacoma |
+| Toyota 2GR-FKS 3.5 V6 | 211 ci | Tacoma 2016–2023 |
+| Toyota F / 2F / 3F-E / 1FZ-FE sixes | 236 / 258 / 241 / 273 ci | Land Cruiser 1958–1997 |
+| Toyota 4M-E / 5M-E / 5M-GE / 7M-GE / 7M-GTE sixes | 156 / 168 / 180 ci | Supra 1979–1992 |
+| Toyota 3R / 8R / 18R / 20R fours, L / 2L / 2L-T diesels | | Toyota Pickup 1964–1988 |
+| International 6.9 / 7.3 IDI diesels | 420 / 444 ci | F-250 1983–1994 (unlinked; not the Power Stroke) |
+| Ford 6.4 Power Stroke, 6.2 Boss, 6.8 V8 (2023+) | 390 / 379 / 415 ci | Super Duty |
+| Ford 215 six, 239 flathead/Y-block, 262 truck six, 300 six, FE 360 | | F-250 (also on the F-100 list) |
+
 ## Records to fix
 - Pontiac 135ci 2000–2001 140 hp: the 2000–01 Sunfire 2.2 was the 115 hp LN2; the 140 hp L61 is 2002+.
 - Ratings removed pending verification: Audi 3.2 CALA, Acura NSX JNC1.

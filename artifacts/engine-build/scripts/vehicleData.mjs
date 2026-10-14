@@ -118,7 +118,7 @@ export function linkVehicles(vehicles, engineData) {
       let cands = ve.linkFamily
         ? engineData.engines.filter((e) => e.familyUrl === ve.linkFamily)
         : ve.diesel
-          ? engineData.engines.filter((e) => isDieselRec(e) && sameCi(e.displacement_ci, ve.cid))
+          ? pool.filter((e) => isDieselRec(e) && sameCi(e.displacement_ci, ve.cid))  // this vehicle's makers only: a Toyota diesel must not land on a Mazda or Mitsubishi page
           : pool.filter((e) => !isDieselRec(e) && sameCi(e.displacement_ci, ve.cid) &&
               (ve.cyl == null || e.num_cylinders == null || e.num_cylinders === ve.cyl));
       // Same size, different era: a 1999 Cougar's 2.0 Zetec must not land on

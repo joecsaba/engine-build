@@ -1,0 +1,86 @@
+{
+ "metric_from": 1900,
+ "make": "Toyota",
+ "model": "Land Cruiser",
+ "makeSlug": "toyota",
+ "slug": "land-cruiser",
+ "title": "Toyota Land Cruiser Engines by Year",
+ "description": "Every factory engine in the US Toyota Land Cruiser by year: the F and 2F sixes of the FJ40 and FJ60, the 3F-E and 1FZ-FE, the 4.7 and 5.7 V8s, and the 2024+ hybrid.",
+ "intro": [
+  "Toyota has sold the Land Cruiser in the US since 1958, from the FJ40 to the 250 series that returned for 2024 after a two-year gap. Only engines sold new in the US are listed.",
+  "Pick a year to see every engine offered that model year, with its code, rated horsepower and the trims it came in. Each engine links to its full specs."
+ ],
+ "generations": [
+  {
+   "key": "j20-j40",
+   "name": "FJ25 / FJ40",
+   "years": [
+    1958,
+    1983
+   ],
+   "intro": [
+    "The early Land Cruisers used Toyota's F inline six, replaced by the 2F in 1975."
+   ]
+  },
+  {
+   "key": "j60",
+   "name": "FJ60 / FJ62",
+   "years": [
+    1981,
+    1990
+   ],
+   "intro": [
+    "The 2F and, from 1988, the fuel-injected 3F-E."
+   ]
+  },
+  {
+   "key": "j80",
+   "name": "80 series",
+   "years": [
+    1991,
+    1997
+   ],
+   "intro": [
+    "The 3F-E and, from 1993, the 4.5 1FZ-FE twin-cam six."
+   ]
+  },
+  {
+   "key": "j100",
+   "name": "100 series",
+   "years": [
+    1998,
+    2007
+   ],
+   "intro": [
+    "The 4.7 2UZ-FE V8."
+   ]
+  },
+  {
+   "key": "j200",
+   "name": "200 series",
+   "years": [
+    2008,
+    2021
+   ],
+   "intro": [
+    "The 5.7 3UR-FE V8."
+   ]
+  },
+  {
+   "key": "j250",
+   "name": "250 series",
+   "years": [
+    2024,
+    2026
+   ],
+   "intro": [
+    "The i-FORCE MAX hybrid, rated for the combined output of the 2.4 turbo four and motor."
+   ]
+  }
+ ],
+ "files": [
+  "verify_toyota-land-cruiser-1958-2026.json"
+ ],
+ "merge_trims": true,
+ "draft": true
+}
