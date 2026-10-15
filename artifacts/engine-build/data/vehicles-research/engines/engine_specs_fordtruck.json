@@ -1,0 +1,1787 @@
+{
+ "engines": [
+  {
+   "id": "ford-240-six",
+   "name": "Ford 240 inline-six",
+   "fields": {
+    "displacement_ci": {
+     "value": 240,
+     "sources": [
+      {
+       "name": "Wikipedia",
+       "url": "https://en.wikipedia.org/wiki/Ford_straight-six_engine",
+       "says": "239.8 cu in (3.9 L)"
+      },
+      {
+       "name": "Over-Drive Magazine 1965 Ford fact sheet",
+       "url": "https://over-drive-magazine.com/2024/08/22/1965-ford-full-size-cars-fact-sheet/",
+       "says": "Displacement: 240 cubic inches"
+      },
+      {
+       "name": "Jalopnik",
+       "url": "https://jalopnik.com/heres-why-the-ford-300-inline-six-is-one-of-the-greates-1795351528",
+       "says": "240 CID, de-stroked 300"
+      }
+     ],
+     "note": "4.00 x 4.00 x 3.18 x 0.7854 x 6 = 239.8 ci"
+    },
+    "num_cylinders": {
+     "value": 6,
+     "sources": [
+      {
+       "name": "Wikipedia",
+       "url": "https://en.wikipedia.org/wiki/Ford_straight-six_engine",
+       "says": ""
+      },
+      {
+       "name": "Over-Drive",
+       "url": "https://over-drive-magazine.com/2024/08/22/1965-ford-full-size-cars-fact-sheet/",
+       "says": "240 CID I-6"
+      },
+      {
+       "name": "Jalopnik",
+       "url": "https://jalopnik.com/heres-why-the-ford-300-inline-six-is-one-of-the-greates-1795351528",
+       "says": ""
+      }
+     ],
+     "note": ""
+    },
+    "configuration": {
+     "value": "inline-six",
+     "sources": [
+      {
+       "name": "Wikipedia",
+       "url": "https://en.wikipedia.org/wiki/Ford_straight-six_engine",
+       "says": ""
+      },
+      {
+       "name": "Over-Drive",
+       "url": "https://over-drive-magazine.com/2024/08/22/1965-ford-full-size-cars-fact-sheet/",
+       "says": "I-6"
+      },
+      {
+       "name": "Jalopnik",
+       "url": "https://jalopnik.com/heres-why-the-ford-300-inline-six-is-one-of-the-greates-1795351528",
+       "says": ""
+      }
+     ],
+     "note": ""
+    },
+    "bore_in": {
+     "value": 4.0,
+     "sources": [
+      {
+       "name": "Wikipedia",
+       "url": "https://en.wikipedia.org/wiki/Ford_straight-six_engine",
+       "says": "4 in (101.6 mm)"
+      },
+      {
+       "name": "Over-Drive",
+       "url": "https://over-drive-magazine.com/2024/08/22/1965-ford-full-size-cars-fact-sheet/",
+       "says": "Bore and stroke: 4.00 x 3.18 inches"
+      }
+     ],
+     "note": "Second pass. Jalopnik says same block as the 300 but gives no figure.",
+     "second_pass": true
+    },
+    "stroke_in": {
+     "value": 3.18,
+     "sources": [
+      {
+       "name": "Wikipedia",
+       "url": "https://en.wikipedia.org/wiki/Ford_straight-six_engine",
+       "says": "3.18 in (80.8 mm)"
+      },
+      {
+       "name": "Over-Drive",
+       "url": "https://over-drive-magazine.com/2024/08/22/1965-ford-full-size-cars-fact-sheet/",
+       "says": "4.00 x 3.18 inches"
+      }
+     ],
+     "note": "Second pass; arithmetic 4.00^2 x 3.18 x 0.7854 x 6 = 239.8 ci matches.",
+     "second_pass": true
+    },
+    "valvetrain": {
+     "value": "OHV, 2 valves/cyl, hydraulic lifters",
+     "sources": [
+      {
+       "name": "Over-Drive",
+       "url": "https://over-drive-magazine.com/2024/08/22/1965-ford-full-size-cars-fact-sheet/",
+       "says": "Overhead valves ... Valve Lifters: Hydraulic"
+      },
+      {
+       "name": "EngineLabs",
+       "url": "https://enginelabs.com/news/straightforward-fords-indestructible-inline-six-cylinder-explained",
+       "says": "overhead-valve, hydraulic lifters (240 and 300)"
+      }
+     ],
+     "note": "",
+     "second_pass": true
+    },
+    "block_material": {
+     "value": "cast iron",
+     "sources": [
+      {
+       "name": "Over-Drive",
+       "url": "https://over-drive-magazine.com/2024/08/22/1965-ford-full-size-cars-fact-sheet/",
+       "says": "Cast iron block"
+      },
+      {
+       "name": "EngineLabs",
+       "url": "https://enginelabs.com/news/straightforward-fords-indestructible-inline-six-cylinder-explained",
+       "says": "cast-iron block (240 and 300)"
+      },
+      {
+       "name": "Jalopnik",
+       "url": "https://jalopnik.com/heres-why-the-ford-300-inline-six-is-one-of-the-greates-1795351528",
+       "says": "same iron block"
+      }
+     ],
+     "note": ""
+    },
+    "years": {
+     "value": "1965-1974 (cars 1965-72, fleet to 1974; trucks/vans 1965-74)",
+     "sources": [
+      {
+       "name": "Wikipedia",
+       "url": "https://en.wikipedia.org/wiki/Ford_straight-six_engine",
+       "says": "1965-1972 full-sized cars (fleet to 1974), 1965-1974 trucks and vans"
+      },
+      {
+       "name": "Over-Drive",
+       "url": "https://over-drive-magazine.com/2024/08/22/1965-ford-full-size-cars-fact-sheet/",
+       "says": "all-new 240 CID for 1965"
+      }
+     ],
+     "note": "End year from Wikipedia only; Jalopnik says 'mid-70s'.",
+     "second_pass": true
+    }
+   },
+   "variants": [
+    {
+     "year": 1965,
+     "hp": 150,
+     "hp_basis": "gross",
+     "code": "V (1965 Ford car engine code)",
+     "induction": "1-bbl",
+     "compression_ratio": 9.2,
+     "second_pass": true,
+     "note": "Wikipedia + Over-Drive agree (car rating). CR 9.2 from Over-Drive only. Truck rating not separately confirmed.",
+     "sources": [
+      {
+       "name": "Wikipedia",
+       "url": "https://en.wikipedia.org/wiki/Ford_straight-six_engine",
+       "says": "150 hp (112 kW) (gross)"
+      },
+      {
+       "name": "Over-Drive",
+       "url": "https://over-drive-magazine.com/2024/08/22/1965-ford-full-size-cars-fact-sheet/",
+       "says": "Horsepower: 150 @ 4000 RPM; CR 9.2:1"
+      }
+     ]
+    }
+   ],
+   "unverified": {
+    "displacement_l": "3.9 L per Wikipedia only (arithmetically 3.93 L)",
+    "compression_ratio": "9.2:1 per Over-Drive only (conceptcarz/VIN decoder not acceptable)",
+    "rod_length_in": "not found",
+    "firing_order": "not found",
+    "head_material": "cast iron per EngineLabs (family-level) only"
+   },
+   "unverified_variants": [
+    {
+     "year": "1972-1974 net",
+     "note": "Wikipedia infobox range 114-150 hp; no year-specific net rating found."
+    }
+   ]
+  },
+  {
+   "id": "ford-300-six",
+   "name": "Ford 300 (4.9L) inline-six",
+   "fields": {
+    "displacement_ci": {
+     "value": 300,
+     "sources": [
+      {
+       "name": "Wikipedia",
+       "url": "https://en.wikipedia.org/wiki/Ford_straight-six_engine",
+       "says": "300.1 cu in (4.9 L)"
+      },
+      {
+       "name": "f150hub",
+       "url": "https://www.f150hub.com/specs/ford-300.html",
+       "says": "300 cid (4.9L)"
+      },
+      {
+       "name": "Jalopnik",
+       "url": "https://jalopnik.com/heres-why-the-ford-300-inline-six-is-one-of-the-greates-1795351528",
+       "says": "Ford 300 CID"
+      },
+      {
+       "name": "CarBuzz (republished by Military.com)",
+       "url": "https://www.military.com/off-duty/autos/unsung-hero-fords-300-cid-straight-six-engine.html",
+       "says": "300 CID (4.9L)"
+      }
+     ],
+     "note": "4.00 x 4.00 x 3.98 x 0.7854 x 6 = 300.1 ci"
+    },
+    "displacement_l": {
+     "value": 4.9,
+     "sources": [
+      {
+       "name": "Wikipedia",
+       "url": "https://en.wikipedia.org/wiki/Ford_straight-six_engine",
+       "says": "4.9 L"
+      },
+      {
+       "name": "f150hub",
+       "url": "https://www.f150hub.com/specs/ford-300.html",
+       "says": "4.9L"
+      },
+      {
+       "name": "CarBuzz",
+       "url": "https://www.military.com/off-duty/autos/unsung-hero-fords-300-cid-straight-six-engine.html",
+       "says": "4.9L"
+      }
+     ],
+     "note": ""
+    },
+    "num_cylinders": {
+     "value": 6,
+     "sources": [
+      {
+       "name": "Wikipedia",
+       "url": "https://en.wikipedia.org/wiki/Ford_straight-six_engine",
+       "says": "straight-six"
+      },
+      {
+       "name": "f150hub",
+       "url": "https://www.f150hub.com/specs/ford-300.html",
+       "says": "I-6"
+      },
+      {
+       "name": "Jalopnik",
+       "url": "https://jalopnik.com/heres-why-the-ford-300-inline-six-is-one-of-the-greates-1795351528",
+       "says": "inline-six"
+      }
+     ],
+     "note": ""
+    },
+    "configuration": {
+     "value": "inline-six",
+     "sources": [
+      {
+       "name": "Wikipedia",
+       "url": "https://en.wikipedia.org/wiki/Ford_straight-six_engine",
+       "says": "straight-six"
+      },
+      {
+       "name": "f150hub",
+       "url": "https://www.f150hub.com/specs/ford-300.html",
+       "says": "I-6"
+      },
+      {
+       "name": "Jalopnik",
+       "url": "https://jalopnik.com/heres-why-the-ford-300-inline-six-is-one-of-the-greates-1795351528",
+       "says": "inline-six"
+      }
+     ],
+     "note": ""
+    },
+    "bore_in": {
+     "value": 4.0,
+     "sources": [
+      {
+       "name": "Wikipedia",
+       "url": "https://en.wikipedia.org/wiki/Ford_straight-six_engine",
+       "says": "4 in (101.6 mm)"
+      },
+      {
+       "name": "f150hub",
+       "url": "https://www.f150hub.com/specs/ford-300.html",
+       "says": "Bore 4.00 in"
+      },
+      {
+       "name": "Jalopnik",
+       "url": "https://jalopnik.com/heres-why-the-ford-300-inline-six-is-one-of-the-greates-1795351528",
+       "says": "four-inch bores"
+      },
+      {
+       "name": "CarBuzz",
+       "url": "https://www.military.com/off-duty/autos/unsung-hero-fords-300-cid-straight-six-engine.html",
+       "says": "Bore 4.00 in"
+      },
+      {
+       "name": "Hagerty",
+       "url": "https://www.hagerty.com/media/lists/10-great-sixes-from-the-sixties/",
+       "says": "a 4-inch bore and just shy of a 4-inch stroke"
+      }
+     ],
+     "note": ""
+    },
+    "stroke_in": {
+     "value": 3.98,
+     "sources": [
+      {
+       "name": "Wikipedia",
+       "url": "https://en.wikipedia.org/wiki/Ford_straight-six_engine",
+       "says": "3.98 in (101.1 mm)"
+      },
+      {
+       "name": "f150hub",
+       "url": "https://www.f150hub.com/specs/ford-300.html",
+       "says": "Stroke 3.98 in"
+      },
+      {
+       "name": "Jalopnik",
+       "url": "https://jalopnik.com/heres-why-the-ford-300-inline-six-is-one-of-the-greates-1795351528",
+       "says": "3.98-inch strokes"
+      },
+      {
+       "name": "CarBuzz",
+       "url": "https://www.military.com/off-duty/autos/unsung-hero-fords-300-cid-straight-six-engine.html",
+       "says": "Stroke 3.98 in"
+      }
+     ],
+     "note": ""
+    },
+    "valvetrain": {
+     "value": "OHV, 2 valves/cyl, hydraulic lifters, gear-driven cam",
+     "sources": [
+      {
+       "name": "f150hub",
+       "url": "https://www.f150hub.com/specs/ford-300.html",
+       "says": "Overhead valve, cam in block"
+      },
+      {
+       "name": "EngineLabs",
+       "url": "https://enginelabs.com/news/straightforward-fords-indestructible-inline-six-cylinder-explained",
+       "says": "cast-iron overhead-valve cylinder head and block; hydraulic lifters"
+      },
+      {
+       "name": "Ford-Trucks.com article",
+       "url": "https://www.ford-trucks.com/articles/inline-six-300-ford-engine/",
+       "says": "timing gears instead of a chain or belt"
+      }
+     ],
+     "note": "OHV per f150hub + EngineLabs; gear drive per Ford-Trucks.com + EngineLabs (steel vs fiber cam gear). 2 valves/cyl inherent to non-crossflow OHV head."
+    },
+    "block_material": {
+     "value": "cast iron",
+     "sources": [
+      {
+       "name": "f150hub",
+       "url": "https://www.f150hub.com/specs/ford-300.html",
+       "says": "Cast iron block"
+      },
+      {
+       "name": "EngineLabs",
+       "url": "https://enginelabs.com/news/straightforward-fords-indestructible-inline-six-cylinder-explained",
+       "says": "cast-iron overhead-valve cylinder head and block"
+      },
+      {
+       "name": "Ford-Trucks.com article",
+       "url": "https://www.ford-trucks.com/articles/ford-300-i6-mighty-engine/",
+       "says": "It's made of iron and it's heavy"
+      }
+     ],
+     "note": ""
+    },
+    "head_material": {
+     "value": "cast iron",
+     "sources": [
+      {
+       "name": "f150hub",
+       "url": "https://www.f150hub.com/specs/ford-300.html",
+       "says": "cast iron cylinder head"
+      },
+      {
+       "name": "EngineLabs",
+       "url": "https://enginelabs.com/news/straightforward-fords-indestructible-inline-six-cylinder-explained",
+       "says": "cast-iron overhead-valve cylinder head"
+      },
+      {
+       "name": "Jalopnik",
+       "url": "https://jalopnik.com/heres-why-the-ford-300-inline-six-is-one-of-the-greates-1795351528",
+       "says": "iron block (240/300 share)"
+      }
+     ],
+     "note": "Jalopnik says iron engine generally; EngineLabs and f150hub are explicit on the head."
+    },
+    "induction": {
+     "value": "single carburetor 1965-1986; multi-port EFI 1987-1996",
+     "sources": [
+      {
+       "name": "Wikipedia",
+       "url": "https://en.wikipedia.org/wiki/Ford_straight-six_engine",
+       "says": "1987 (EFI)"
+      },
+      {
+       "name": "f150hub",
+       "url": "https://www.f150hub.com/specs/ford-300.html",
+       "says": "electronic fuel injection arrived in 1987"
+      },
+      {
+       "name": "Jalopnik",
+       "url": "https://jalopnik.com/heres-why-the-ford-300-inline-six-is-one-of-the-greates-1795351528",
+       "says": "moved from carburetors to fuel injection for the 1987 model year"
+      },
+      {
+       "name": "EngineLabs",
+       "url": "https://enginelabs.com/news/straightforward-fords-indestructible-inline-six-cylinder-explained",
+       "says": "single carburetor; fuel injection widespread in 1987"
+      }
+     ],
+     "note": ""
+    },
+    "fuel_type": {
+     "value": "gasoline",
+     "sources": [
+      {
+       "name": "Wikipedia",
+       "url": "https://en.wikipedia.org/wiki/Ford_straight-six_engine",
+       "says": ""
+      },
+      {
+       "name": "f150hub",
+       "url": "https://www.f150hub.com/specs/ford-300.html",
+       "says": ""
+      },
+      {
+       "name": "EngineLabs",
+       "url": "https://enginelabs.com/news/straightforward-fords-indestructible-inline-six-cylinder-explained",
+       "says": ""
+      }
+     ],
+     "note": ""
+    },
+    "years": {
+     "value": "1965-1996 (trucks/vans)",
+     "sources": [
+      {
+       "name": "Wikipedia",
+       "url": "https://en.wikipedia.org/wiki/Ford_straight-six_engine",
+       "says": "F-Series for 1965 ... ended 1996"
+      },
+      {
+       "name": "Jalopnik",
+       "url": "https://jalopnik.com/heres-why-the-ford-300-inline-six-is-one-of-the-greates-1795351528",
+       "says": "1965 ... all the way until 1996"
+      },
+      {
+       "name": "f150hub",
+       "url": "https://www.f150hub.com/specs/ford-300.html",
+       "says": "1965-1996 ratings table"
+      },
+      {
+       "name": "CarBuzz",
+       "url": "https://www.military.com/off-duty/autos/unsung-hero-fords-300-cid-straight-six-engine.html",
+       "says": "1965 debut"
+      }
+     ],
+     "note": ""
+    },
+    "compression_ratio": {
+     "value": "8.8:1 (1987-1996 EFI)",
+     "sources": [
+      {
+       "name": "Wikipedia",
+       "url": "https://en.wikipedia.org/wiki/Ford_straight-six_engine",
+       "says": "150 hp with an 8.8:1 compression ratio (1987)"
+      },
+      {
+       "name": "f150hub",
+       "url": "https://www.f150hub.com/specs/ford-300.html",
+       "says": "1987-1996: 8.8:1"
+      },
+      {
+       "name": "CarBuzz",
+       "url": "https://www.military.com/off-duty/autos/unsung-hero-fords-300-cid-straight-six-engine.html",
+       "says": "8.8:1 from 1987"
+      },
+      {
+       "name": "EngineLabs",
+       "url": "https://enginelabs.com/news/straightforward-fords-indestructible-inline-six-cylinder-explained",
+       "says": "8.8:1"
+      }
+     ],
+     "note": "Earlier ratios: see unverified."
+    }
+   },
+   "variants": [
+    {
+     "year": 1965,
+     "hp": 170,
+     "hp_basis": "gross",
+     "code": "300 Six",
+     "induction": "1-bbl",
+     "note": "f150hub gives 170 hp for 1965-1972; Wikipedia and CarBuzz give 170 hp for the 1965 debut. 1966-1971 carry-over rests on f150hub only.",
+     "sources": [
+      {
+       "name": "Wikipedia",
+       "url": "https://en.wikipedia.org/wiki/Ford_straight-six_engine",
+       "says": "1965: 170 hp (gross)"
+      },
+      {
+       "name": "f150hub",
+       "url": "https://www.f150hub.com/specs/ford-300.html",
+       "says": "1965-1972 170 hp @ 3,800"
+      },
+      {
+       "name": "CarBuzz",
+       "url": "https://www.military.com/off-duty/autos/unsung-hero-fords-300-cid-straight-six-engine.html",
+       "says": "170 hp, 1965 debut year"
+      }
+     ]
+    },
+    {
+     "year": "1994-1996",
+     "hp": 150,
+     "hp_basis": "net",
+     "compression_ratio": 8.8,
+     "code": "4.9L EFI",
+     "induction": "multi-port EFI",
+     "note": "All three agree on 150 hp for the final years; 1987-93 disputed (see unverified_variants).",
+     "sources": [
+      {
+       "name": "f150hub",
+       "url": "https://www.f150hub.com/specs/ford-300.html",
+       "says": "1994-1996 150 hp @ 3,400"
+      },
+      {
+       "name": "CarBuzz",
+       "url": "https://www.military.com/off-duty/autos/unsung-hero-fords-300-cid-straight-six-engine.html",
+       "says": "150 hp from 1987 through final production"
+      },
+      {
+       "name": "Wikipedia",
+       "url": "https://en.wikipedia.org/wiki/Ford_straight-six_engine",
+       "says": "150 hp with 8.8:1 (EFI)"
+      }
+     ]
+    }
+   ],
+   "unverified": {
+    "rod_length_in": "Not found in any reputable source checked (6.21 in commonly quoted, unconfirmed).",
+    "firing_order": "1-5-3-6-2-4 per f150hub only.",
+    "compression_ratio_1965_1972": "8.9:1 per f150hub and CarBuzz (two agree; second-pass eligible). 8.0:1 for 1973-86 per f150hub only."
+   },
+   "unverified_variants": [
+    {
+     "year": "1987-1993",
+     "hp": "145 vs 150",
+     "note": "CONFLICT: f150hub 145 hp @3,400 (1987-93); Wikipedia and CarBuzz 150 hp from 1987; Ford-Trucks.com article 'by the late 80s ... 150hp'. Needs a Ford brochure."
+    },
+    {
+     "year": "1972-1986",
+     "hp": "101-122 net",
+     "note": "f150hub: 101 (1973-74), 101/120 (1975-77), 101/115/117/120 (1978-86); Wikipedia: 119 hp 1975, ~122 hp early 1980s; Ford-Trucks.com: 114 hp 1978; CarBuzz 120-130 after 1972. No per-year agreement."
+    }
+   ]
+  },
+  {
+   "id": "ford-360-fe-truck",
+   "name": "Ford 360 FE V8 (truck)",
+   "fields": {
+    "displacement_ci": {
+     "value": 360,
+     "sources": [
+      {
+       "name": "Wikipedia",
+       "url": "https://en.wikipedia.org/wiki/Ford_FE_engine",
+       "says": "360.8 cu in (5.9 L)"
+      },
+      {
+       "name": "Curbside Classic",
+       "url": "https://www.curbsideclassic.com/automotive-histories/automotive-history-the-ford-fe-series-v8/2/",
+       "says": "360 (5.9 L)"
+      },
+      {
+       "name": "Over-Drive Magazine",
+       "url": "https://over-drive-magazine.com/2023/02/14/the-ford-fe-series-v-8/",
+       "says": "1968-1976 360 CID FE Truck V-8"
+      }
+     ],
+     "note": "4.05^2 x 3.50 x 0.7854 x 8 = 360.7 ci"
+    },
+    "displacement_l": {
+     "value": 5.9,
+     "sources": [
+      {
+       "name": "Wikipedia",
+       "url": "https://en.wikipedia.org/wiki/Ford_FE_engine",
+       "says": "5.9 L"
+      },
+      {
+       "name": "Curbside Classic",
+       "url": "https://www.curbsideclassic.com/automotive-histories/automotive-history-the-ford-fe-series-v8/2/",
+       "says": "5.9 L"
+      }
+     ],
+     "note": "",
+     "second_pass": true
+    },
+    "num_cylinders": {
+     "value": 8,
+     "sources": [
+      {
+       "name": "Wikipedia",
+       "url": "https://en.wikipedia.org/wiki/Ford_FE_engine",
+       "says": ""
+      },
+      {
+       "name": "Curbside Classic",
+       "url": "https://www.curbsideclassic.com/automotive-histories/automotive-history-the-ford-fe-series-v8/2/",
+       "says": ""
+      },
+      {
+       "name": "Over-Drive",
+       "url": "https://over-drive-magazine.com/2023/02/14/the-ford-fe-series-v-8/",
+       "says": ""
+      }
+     ],
+     "note": ""
+    },
+    "configuration": {
+     "value": "V8",
+     "sources": [
+      {
+       "name": "Wikipedia",
+       "url": "https://en.wikipedia.org/wiki/Ford_FE_engine",
+       "says": "V8"
+      },
+      {
+       "name": "Curbside Classic",
+       "url": "https://www.curbsideclassic.com/automotive-histories/automotive-history-the-ford-fe-series-v8/2/",
+       "says": "V8"
+      },
+      {
+       "name": "Over-Drive",
+       "url": "https://over-drive-magazine.com/2023/02/14/the-ford-fe-series-v-8/",
+       "says": "V-8"
+      }
+     ],
+     "note": ""
+    },
+    "bore_in": {
+     "value": 4.05,
+     "sources": [
+      {
+       "name": "Wikipedia",
+       "url": "https://en.wikipedia.org/wiki/Ford_FE_engine",
+       "says": "bore of a 390 (4.05 in / 102.87 mm)"
+      },
+      {
+       "name": "Curbside Classic",
+       "url": "https://www.curbsideclassic.com/automotive-histories/automotive-history-the-ford-fe-series-v8/2/",
+       "says": "Bore: 4.052"
+      },
+      {
+       "name": "Over-Drive",
+       "url": "https://over-drive-magazine.com/2023/02/14/the-ford-fe-series-v-8/",
+       "says": "215 HP Truck V-8 ... Bore and stroke: 4.05 x 3.50"
+      }
+     ],
+     "note": "Curbside gives 4.052; all agree at two decimals."
+    },
+    "stroke_in": {
+     "value": 3.5,
+     "sources": [
+      {
+       "name": "Wikipedia",
+       "url": "https://en.wikipedia.org/wiki/Ford_FE_engine",
+       "says": "3.5 in (88.90 mm)"
+      },
+      {
+       "name": "Curbside Classic",
+       "url": "https://www.curbsideclassic.com/automotive-histories/automotive-history-the-ford-fe-series-v8/2/",
+       "says": "Stroke: 3.500"
+      },
+      {
+       "name": "Over-Drive",
+       "url": "https://over-drive-magazine.com/2023/02/14/the-ford-fe-series-v-8/",
+       "says": "4.05 x 3.50"
+      }
+     ],
+     "note": ""
+    },
+    "valvetrain": {
+     "value": "OHV, 2 valves/cyl, hydraulic lifters",
+     "sources": [
+      {
+       "name": "Over-Drive",
+       "url": "https://over-drive-magazine.com/2023/02/14/the-ford-fe-series-v-8/",
+       "says": "Overhead valves ... Valve lifters: Hydraulic (215 HP Truck V-8)"
+      },
+      {
+       "name": "Curbside Classic",
+       "url": "https://www.curbsideclassic.com/automotive-histories/automotive-history-the-ford-fe-series-v8/2/",
+       "says": "the FE had hydraulic valve lifters"
+      },
+      {
+       "name": "Wikipedia",
+       "url": "https://en.wikipedia.org/wiki/Ford_FE_engine",
+       "says": "OHV FE family"
+      }
+     ],
+     "note": ""
+    },
+    "block_material": {
+     "value": "cast iron",
+     "sources": [
+      {
+       "name": "Over-Drive",
+       "url": "https://over-drive-magazine.com/2023/02/14/the-ford-fe-series-v-8/",
+       "says": "Cast iron block. Five main bearings."
+      },
+      {
+       "name": "Wikipedia",
+       "url": "https://en.wikipedia.org/wiki/Ford_FE_engine",
+       "says": "FE family cast iron"
+      },
+      {
+       "name": "Curbside Classic",
+       "url": "https://www.curbsideclassic.com/automotive-histories/automotive-history-the-ford-fe-series-v8/2/",
+       "says": "360 block identical to the 390"
+      }
+     ],
+     "note": "Curbside is implicit via the 390 block."
+    },
+    "induction": {
+     "value": "2-bbl carburetor",
+     "sources": [
+      {
+       "name": "Wikipedia",
+       "url": "https://en.wikipedia.org/wiki/Ford_FE_engine",
+       "says": "8.4:1 (2V)"
+      },
+      {
+       "name": "Over-Drive",
+       "url": "https://over-drive-magazine.com/2023/02/14/the-ford-fe-series-v-8/",
+       "says": "Carburetor: Ford 2-barrel"
+      }
+     ],
+     "note": "",
+     "second_pass": true
+    },
+    "years": {
+     "value": "1968-1976",
+     "sources": [
+      {
+       "name": "Wikipedia",
+       "url": "https://en.wikipedia.org/wiki/Ford_FE_engine",
+       "says": "introduced in 1968 ... end of the 1976-year run"
+      },
+      {
+       "name": "Curbside Classic",
+       "url": "https://www.curbsideclassic.com/automotive-histories/automotive-history-the-ford-fe-series-v8/2/",
+       "says": "built from 1968 through 1976"
+      },
+      {
+       "name": "Over-Drive",
+       "url": "https://over-drive-magazine.com/2023/02/14/the-ford-fe-series-v-8/",
+       "says": "1968-1976 360 CID FE Truck V-8"
+      }
+     ],
+     "note": ""
+    },
+    "fuel_type": {
+     "value": "gasoline",
+     "sources": [
+      {
+       "name": "Wikipedia",
+       "url": "https://en.wikipedia.org/wiki/Ford_FE_engine",
+       "says": ""
+      },
+      {
+       "name": "Curbside Classic",
+       "url": "https://www.curbsideclassic.com/automotive-histories/automotive-history-the-ford-fe-series-v8/2/",
+       "says": ""
+      },
+      {
+       "name": "Over-Drive",
+       "url": "https://over-drive-magazine.com/2023/02/14/the-ford-fe-series-v-8/",
+       "says": ""
+      }
+     ],
+     "note": ""
+    }
+   },
+   "variants": [
+    {
+     "year": "1968-1971",
+     "hp": 215,
+     "hp_basis": "gross",
+     "code": "360 2V",
+     "induction": "2-bbl",
+     "note": "Curbside extends 215 gross through 1972.",
+     "sources": [
+      {
+       "name": "Wikipedia",
+       "url": "https://en.wikipedia.org/wiki/Ford_FE_engine",
+       "says": "215 bhp at 4100 rpm (1968-1971)"
+      },
+      {
+       "name": "Curbside Classic",
+       "url": "https://www.curbsideclassic.com/automotive-histories/automotive-history-the-ford-fe-series-v8/2/",
+       "says": "1968-1972 trucks rated 215 (gross) hp"
+      },
+      {
+       "name": "Over-Drive",
+       "url": "https://over-drive-magazine.com/2023/02/14/the-ford-fe-series-v-8/",
+       "says": "Horsepower: 215 @ 4100 RPM"
+      }
+     ]
+    }
+   ],
+   "unverified": {
+    "compression_ratio": "CONFLICT: Wikipedia 8.4:1 (2V); Over-Drive 8.5:1.",
+    "firing_order": "1-5-4-2-6-3-7-8 is the FE order, but Wikipedia states it only for the 361; no 360-specific source.",
+    "rod_length_in": "not found",
+    "head_material": "cast iron (FE family); no 360-specific source"
+   },
+   "unverified_variants": [
+    {
+     "year": "1972-1976 net",
+     "note": "CONFLICT: Wikipedia 196 hp net @4000 (1972-76); Curbside 143 net hp (1973-76); auto-data 145 hp (not acceptable). Probably several net ratings by GVW/emissions; needs Ford brochures."
+    }
+   ]
+  },
+  {
+   "id": "ford-4-2-essex-v6",
+   "name": "Ford 4.2L Essex V6",
+   "fields": {
+    "displacement_l": {
+     "value": 4.2,
+     "sources": [
+      {
+       "name": "Wikipedia",
+       "url": "https://en.wikipedia.org/wiki/Ford_Essex_V6_engine_(Canadian)",
+       "says": "4,195 cc"
+      },
+      {
+       "name": "f150hub",
+       "url": "https://www.f150hub.com/specs/ford-4.2.html",
+       "says": "4.2 L"
+      },
+      {
+       "name": "J.D. Power",
+       "url": "https://www.jdpower.com/cars/2007/ford/f150-pickup-v8/regular-cab-xl-2wd/specs",
+       "says": "4.2L V6"
+      }
+     ],
+     "note": ""
+    },
+    "displacement_ci": {
+     "value": 256,
+     "sources": [
+      {
+       "name": "Wikipedia",
+       "url": "https://en.wikipedia.org/wiki/Ford_Essex_V6_engine_(Canadian)",
+       "says": "256.0 cu in"
+      },
+      {
+       "name": "f150hub",
+       "url": "https://www.f150hub.com/specs/ford-4.2.html",
+       "says": "256 cid"
+      }
+     ],
+     "note": "Arithmetic: 96.8^2 x 95.0 x 0.7854 x 6 = 4,195 cc = 256 ci.",
+     "second_pass": true
+    },
+    "num_cylinders": {
+     "value": 6,
+     "sources": [
+      {
+       "name": "Wikipedia",
+       "url": "https://en.wikipedia.org/wiki/Ford_Essex_V6_engine_(Canadian)",
+       "says": ""
+      },
+      {
+       "name": "f150hub",
+       "url": "https://www.f150hub.com/specs/ford-4.2.html",
+       "says": ""
+      },
+      {
+       "name": "J.D. Power",
+       "url": "https://www.jdpower.com/cars/2007/ford/f150-pickup-v8/regular-cab-xl-2wd/specs",
+       "says": "V6"
+      }
+     ],
+     "note": ""
+    },
+    "configuration": {
+     "value": "90-degree V6",
+     "sources": [
+      {
+       "name": "Wikipedia",
+       "url": "https://en.wikipedia.org/wiki/Ford_Essex_V6_engine_(Canadian)",
+       "says": "90-degree Essex V6"
+      },
+      {
+       "name": "f150hub",
+       "url": "https://www.f150hub.com/specs/ford-4.2.html",
+       "says": "90 deg V-6"
+      }
+     ],
+     "note": "",
+     "second_pass": true
+    },
+    "bore_in": {
+     "value": 3.811,
+     "sources": [
+      {
+       "name": "Wikipedia",
+       "url": "https://en.wikipedia.org/wiki/Ford_Essex_V6_engine_(Canadian)",
+       "says": "kept the 3.8 L's bore, 96.8 mm (3.81 in)"
+      },
+      {
+       "name": "f150hub",
+       "url": "https://www.f150hub.com/specs/ford-4.2.html",
+       "says": "3.81 in (96.8 mm)"
+      }
+     ],
+     "note": "96.8 mm = 3.8110 in. Second pass; arithmetic matches 4,195 cc.",
+     "second_pass": true
+    },
+    "stroke_in": {
+     "value": 3.74,
+     "sources": [
+      {
+       "name": "Wikipedia",
+       "url": "https://en.wikipedia.org/wiki/Ford_Essex_V6_engine_(Canadian)",
+       "says": "95 mm (3.74 in)"
+      },
+      {
+       "name": "f150hub",
+       "url": "https://www.f150hub.com/specs/ford-4.2.html",
+       "says": "3.74 in (95.0 mm)"
+      }
+     ],
+     "note": "95.0 mm = 3.7402 in. Second pass.",
+     "second_pass": true
+    },
+    "valvetrain": {
+     "value": "OHV, 2 valves/cyl",
+     "sources": [
+      {
+       "name": "f150hub",
+       "url": "https://www.f150hub.com/specs/ford-4.2.html",
+       "says": "12 valves, OHV cam in block"
+      },
+      {
+       "name": "Wikipedia",
+       "url": "https://en.wikipedia.org/wiki/Ford_Essex_V6_engine_(Canadian)",
+       "says": "Essex OHV pushrod"
+      }
+     ],
+     "note": "",
+     "second_pass": true
+    },
+    "block_material": {
+     "value": "cast iron",
+     "sources": [
+      {
+       "name": "Wikipedia",
+       "url": "https://en.wikipedia.org/wiki/Ford_Essex_V6_engine_(Canadian)",
+       "says": "cast iron block"
+      },
+      {
+       "name": "f150hub",
+       "url": "https://www.f150hub.com/specs/ford-4.2.html",
+       "says": "Cast iron"
+      }
+     ],
+     "note": "",
+     "second_pass": true
+    },
+    "head_material": {
+     "value": "aluminum",
+     "sources": [
+      {
+       "name": "Wikipedia",
+       "url": "https://en.wikipedia.org/wiki/Ford_Essex_V6_engine_(Canadian)",
+       "says": "aluminum heads"
+      },
+      {
+       "name": "f150hub",
+       "url": "https://www.f150hub.com/specs/ford-4.2.html",
+       "says": "Aluminum"
+      }
+     ],
+     "note": "",
+     "second_pass": true
+    },
+    "years": {
+     "value": "1997-2008 (F-150); also 1997-2003 E-150/E-250, 2004-2007 Freestar/Monterey",
+     "sources": [
+      {
+       "name": "Wikipedia",
+       "url": "https://en.wikipedia.org/wiki/Ford_Essex_V6_engine_(Canadian)",
+       "says": "1997 MY ... final use 2008 F-150"
+      },
+      {
+       "name": "f150hub",
+       "url": "https://www.f150hub.com/specs/ford-4.2.html",
+       "says": "1997-2008 Ford F-150"
+      }
+     ],
+     "note": "The Windstar never used the 4.2 (3.0/3.8 only); the Freestar/Monterey did.",
+     "second_pass": true
+    }
+   },
+   "variants": [
+    {
+     "year": "2005-2008",
+     "hp": 202,
+     "hp_basis": "net",
+     "code": "4.2L V6 (F-150)",
+     "induction": "sequential multi-port EFI",
+     "note": "Peak rpm differs (f150hub 4,800 vs J.D. Power 4,350); hp agrees. Ford-Trucks.com page was blocked; figure taken from search snippet.",
+     "sources": [
+      {
+       "name": "f150hub",
+       "url": "https://www.f150hub.com/specs/ford-4.2.html",
+       "says": "2005-2008 202 hp @ 4,800"
+      },
+      {
+       "name": "J.D. Power",
+       "url": "https://www.jdpower.com/cars/2007/ford/f150-pickup-v8/regular-cab-xl-2wd/specs",
+       "says": "202 hp @ 4,350, 260 lb-ft"
+      },
+      {
+       "name": "Ford-Trucks.com 2006 F-150 specifications",
+       "url": "https://www.ford-trucks.com/?p=2469",
+       "says": "202 hp / 260 lb-ft"
+      }
+     ]
+    }
+   ],
+   "unverified": {
+    "compression_ratio": "9.3:1 per f150hub only (auto-data 9.2 not acceptable)",
+    "firing_order": "1-4-2-5-3-6 per f150hub only",
+    "induction": "sequential multi-port per f150hub only"
+   },
+   "unverified_variants": [
+    {
+     "year": 1997,
+     "note": "CONFLICT: 205 hp per Wikipedia (205 @4750) and Ford Authority (205 hp/255 lb-ft); f150hub says 217 hp @4,800. VIN decoders give 205 @4400 (not acceptable).",
+     "sources": [
+      "https://en.wikipedia.org/wiki/Ford_Essex_V6_engine_(Canadian)",
+      "https://fordauthority.com/2025/10/1997-ford-f-150-with-aftermarket-body-kit-up-for-auction",
+      "https://www.f150hub.com/specs/ford-4.2.html"
+     ]
+    },
+    {
+     "year": "1998-2004",
+     "note": "202 hp for 2002-04 per f150hub only; nothing for 1998-2001."
+    }
+   ]
+  },
+  {
+   "id": "ford-6-2-boss",
+   "name": "Ford 6.2L SOHC 2-valve 'Boss' V8",
+   "fields": {
+    "displacement_l": {
+     "value": 6.2,
+     "sources": [
+      {
+       "name": "Ford Motor Co. (all Ford material = one source)",
+       "url": "https://ophelia.sdsu.edu:8443/ford/03-03-2012/news-center/press-releases-detail/pr-robust-ford-tough2658-allnew-31019.html",
+       "says": "all-new 6.2-liter V-8"
+      },
+      {
+       "name": "Wikipedia",
+       "url": "https://en.wikipedia.org/wiki/Ford_Boss_engine",
+       "says": "6.2 L (379 cu in)"
+      },
+      {
+       "name": "f150hub",
+       "url": "https://www.f150hub.com/specs/ford-6.2.html",
+       "says": "6.2 liters"
+      }
+     ],
+     "note": ""
+    },
+    "displacement_ci": {
+     "value": 379,
+     "sources": [
+      {
+       "name": "Wikipedia",
+       "url": "https://en.wikipedia.org/wiki/Ford_Boss_engine",
+       "says": "379 cu in"
+      },
+      {
+       "name": "f150hub",
+       "url": "https://www.f150hub.com/specs/ford-6.2.html",
+       "says": "379 cid"
+      }
+     ],
+     "note": "Arithmetic: 102^2 x 95 x 0.7854 x 8 = 6,210 cc = 379.0 ci.",
+     "second_pass": true
+    },
+    "num_cylinders": {
+     "value": 8,
+     "sources": [
+      {
+       "name": "Ford Motor Co. (all Ford material = one source)",
+       "url": "https://ophelia.sdsu.edu:8443/ford/03-03-2012/news-center/press-releases-detail/pr-robust-ford-tough2658-allnew-31019.html",
+       "says": ""
+      },
+      {
+       "name": "Wikipedia",
+       "url": "https://en.wikipedia.org/wiki/Ford_Boss_engine",
+       "says": ""
+      },
+      {
+       "name": "f150hub",
+       "url": "https://www.f150hub.com/specs/ford-6.2.html",
+       "says": ""
+      }
+     ],
+     "note": ""
+    },
+    "configuration": {
+     "value": "90-degree V8",
+     "sources": [
+      {
+       "name": "Ford Motor Co. (all Ford material = one source)",
+       "url": "https://ophelia.sdsu.edu:8443/ford/03-03-2012/news-center/press-releases-detail/pr-robust-ford-tough2658-allnew-31019.html",
+       "says": "V-8"
+      },
+      {
+       "name": "Wikipedia",
+       "url": "https://en.wikipedia.org/wiki/Ford_Boss_engine",
+       "says": "90 deg V8"
+      },
+      {
+       "name": "f150hub",
+       "url": "https://www.f150hub.com/specs/ford-6.2.html",
+       "says": "V-8"
+      }
+     ],
+     "note": "90-degree angle from Wikipedia."
+    },
+    "bore_in": {
+     "value": 4.0157,
+     "sources": [
+      {
+       "name": "Ford Motor Co. (all Ford material = one source)",
+       "url": "https://ophelia.sdsu.edu:8443/ford/03-03-2012/news-center/press-releases-detail/pr-robust-ford-tough2658-allnew-31019.html",
+       "says": "102 mm bore"
+      },
+      {
+       "name": "Wikipedia",
+       "url": "https://en.wikipedia.org/wiki/Ford_Boss_engine",
+       "says": "4.015 in (102.0 mm)"
+      },
+      {
+       "name": "f150hub",
+       "url": "https://www.f150hub.com/specs/ford-6.2.html",
+       "says": "4.015 in (102 mm)"
+      }
+     ],
+     "note": "Ford publishes 102 mm = 4.0157 in."
+    },
+    "stroke_in": {
+     "value": 3.7402,
+     "sources": [
+      {
+       "name": "Ford Motor Co. (all Ford material = one source)",
+       "url": "https://ophelia.sdsu.edu:8443/ford/03-03-2012/news-center/press-releases-detail/pr-robust-ford-tough2658-allnew-31019.html",
+       "says": "95 mm stroke"
+      },
+      {
+       "name": "Wikipedia",
+       "url": "https://en.wikipedia.org/wiki/Ford_Boss_engine",
+       "says": "3.74 in (95 mm)"
+      },
+      {
+       "name": "f150hub",
+       "url": "https://www.f150hub.com/specs/ford-6.2.html",
+       "says": "3.74 in (95 mm)"
+      }
+     ],
+     "note": "95 mm = 3.7402 in."
+    },
+    "compression_ratio": {
+     "value": "9.8:1",
+     "sources": [
+      {
+       "name": "Ford Motor Co. (all Ford material = one source)",
+       "url": "https://ophelia.sdsu.edu:8443/ford/03-03-2012/news-center/press-releases-detail/pr-robust-ford-tough2658-allnew-31019.html",
+       "says": "9.8:1"
+      },
+      {
+       "name": "Jalopnik",
+       "url": "https://jalopnik.com/exclusive-first-look-at-fords-6-2-liter-v8-engine-in-5402866",
+       "says": "9.8:1 compression ratio"
+      },
+      {
+       "name": "f150hub",
+       "url": "https://www.f150hub.com/specs/ford-6.2.html",
+       "says": "9.8:1"
+      }
+     ],
+     "note": ""
+    },
+    "valvetrain": {
+     "value": "SOHC per bank, 2 valves/cyl, roller-rocker shafts, dual-equal VCT, 2 spark plugs/cyl",
+     "sources": [
+      {
+       "name": "Ford Motor Co. (all Ford material = one source)",
+       "url": "https://ophelia.sdsu.edu:8443/ford/03-03-2012/news-center/press-releases-detail/pr-robust-ford-tough2658-allnew-31019.html",
+       "says": "SOHC, roller-rocker shafts, two valves per cylinder, dual-equal variable cam timing, two plugs per cylinder"
+      },
+      {
+       "name": "Wikipedia",
+       "url": "https://en.wikipedia.org/wiki/Ford_Boss_engine",
+       "says": "SOHC 2 valves per cyl"
+      },
+      {
+       "name": "f150hub",
+       "url": "https://www.f150hub.com/specs/ford-6.2.html",
+       "says": "SOHC, VCT, roller rocker shaft, 2 valves per cylinder"
+      }
+     ],
+     "note": ""
+    },
+    "block_material": {
+     "value": "cast iron",
+     "sources": [
+      {
+       "name": "Ford Motor Co. (all Ford material = one source)",
+       "url": "https://ophelia.sdsu.edu:8443/ford/03-03-2012/news-center/press-releases-detail/pr-robust-ford-tough2658-allnew-31019.html",
+       "says": "cast iron, four-bolt mains"
+      },
+      {
+       "name": "Wikipedia",
+       "url": "https://en.wikipedia.org/wiki/Ford_Boss_engine",
+       "says": "cast-iron cylinder block"
+      },
+      {
+       "name": "Jalopnik",
+       "url": "https://jalopnik.com/exclusive-first-look-at-fords-6-2-liter-v8-engine-in-5402866",
+       "says": "cast iron block"
+      },
+      {
+       "name": "f150hub",
+       "url": "https://www.f150hub.com/specs/ford-6.2.html",
+       "says": "Cast iron"
+      }
+     ],
+     "note": ""
+    },
+    "head_material": {
+     "value": "aluminum",
+     "sources": [
+      {
+       "name": "Ford Motor Co. (all Ford material = one source)",
+       "url": "https://ophelia.sdsu.edu:8443/ford/03-03-2012/news-center/press-releases-detail/pr-robust-ford-tough2658-allnew-31019.html",
+       "says": "aluminum"
+      },
+      {
+       "name": "Wikipedia",
+       "url": "https://en.wikipedia.org/wiki/Ford_Boss_engine",
+       "says": "aluminum cylinder heads"
+      },
+      {
+       "name": "Jalopnik",
+       "url": "https://jalopnik.com/exclusive-first-look-at-fords-6-2-liter-v8-engine-in-5402866",
+       "says": "aluminum heads"
+      }
+     ],
+     "note": ""
+    },
+    "fuel_type": {
+     "value": "gasoline / E85 flex-fuel",
+     "sources": [
+      {
+       "name": "Ford Motor Co. (all Ford material = one source)",
+       "url": "https://ophelia.sdsu.edu:8443/ford/03-03-2012/news-center/press-releases-detail/pr-robust-ford-tough2658-allnew-31019.html",
+       "says": "regular gasoline, E85 or any blend; E85/flex fuel capable"
+      },
+      {
+       "name": "Wikipedia",
+       "url": "https://en.wikipedia.org/wiki/Ford_Boss_engine",
+       "says": "gasoline, E85"
+      },
+      {
+       "name": "AutoGuide 2011 Super Duty first drive",
+       "url": "https://www.autoguide.com/manufacturer/ford/2011-ford-fseries-super-duty-first-drive-1360.html",
+       "says": "E85 compatible"
+      }
+     ],
+     "note": ""
+    },
+    "years": {
+     "value": "2010-2022",
+     "sources": [
+      {
+       "name": "Wikipedia",
+       "url": "https://en.wikipedia.org/wiki/Ford_Boss_engine",
+       "says": "2010 to December 2022"
+      },
+      {
+       "name": "Ford Motor Co. (all Ford material = one source)",
+       "url": "https://ophelia.sdsu.edu:8443/ford/03-03-2012/news-center/press-releases-detail/pr-more-power-comes-standard-on-33181.html",
+       "says": "standard on 2011 SVT Raptor; 2011 Super Duty introduction"
+      }
+     ],
+     "note": "End date from Wikipedia; search snippets also say retired after the 2022 MY.",
+     "second_pass": true
+    }
+   },
+   "variants": [
+    {
+     "year": "2010-2014",
+     "application": "F-150 SVT Raptor",
+     "hp": 411,
+     "hp_basis": "SAE net",
+     "note": "f150hub says Raptor 2010-2016 (the Raptor paused after 2014).",
+     "sources": [
+      {
+       "name": "Wikipedia",
+       "url": "https://en.wikipedia.org/wiki/Ford_Boss_engine",
+       "says": "2010-2014 F-150 Raptor 411 hp @5500"
+      },
+      {
+       "name": "Ford Motor Co. (all Ford material = one source)",
+       "url": "https://ophelia.sdsu.edu:8443/ford/03-03-2012/news-center/press-releases-detail/pr-more-power-comes-standard-on-33181.html",
+       "says": "6.2-liter V-8 standard on 2011 SVT Raptor, 411 hp"
+      },
+      {
+       "name": "f150hub",
+       "url": "https://www.f150hub.com/specs/ford-6.2.html",
+       "says": "411 hp @5,500 (SVT Raptor)"
+      }
+     ]
+    },
+    {
+     "year": "2011-2014",
+     "application": "F-150 (non-Raptor)",
+     "hp": 411,
+     "hp_basis": "SAE net",
+     "sources": [
+      {
+       "name": "Ford Motor Co. (all Ford material = one source)",
+       "url": "https://ophelia.sdsu.edu:8443/ford/03-03-2012/news-center/press-releases-detail/pr-all-new-ford-f150-powertrain-33096.html",
+       "says": "411 horsepower at 5,500 rpm and 434 lb.-ft. at 4,500 rpm"
+      },
+      {
+       "name": "Wikipedia",
+       "url": "https://en.wikipedia.org/wiki/Ford_Boss_engine",
+       "says": "2011-2014 F-150 411 hp"
+      },
+      {
+       "name": "f150hub",
+       "url": "https://www.f150hub.com/specs/ford-6.2.html",
+       "says": "2011-2014 F-150 411 hp"
+      },
+      {
+       "name": "Jalopnik",
+       "url": "https://jalopnik.com/exclusive-first-look-at-fords-6-2-liter-v8-engine-in-5402866",
+       "says": "411 HP/434 lb-ft"
+      }
+     ]
+    },
+    {
+     "year": "2011-2016",
+     "application": "F-250/F-350 Super Duty",
+     "hp": 385,
+     "hp_basis": "SAE net",
+     "note": "f150hub lists 5,750 rpm for all years; Wikipedia/KBB 5,500 for 2011-16.",
+     "sources": [
+      {
+       "name": "Wikipedia",
+       "url": "https://en.wikipedia.org/wiki/Ford_Boss_engine",
+       "says": "385 hp @5500 / 405 lb-ft @4500"
+      },
+      {
+       "name": "Kelley Blue Book",
+       "url": "https://www.kbb.com/ford/f250-/2011",
+       "says": "385 hp @ 5500, 405 lb-ft @ 4500"
+      },
+      {
+       "name": "f150hub",
+       "url": "https://www.f150hub.com/specs/ford-6.2.html",
+       "says": "385 hp (2011-current Super Duty)"
+      }
+     ]
+    },
+    {
+     "year": "2017-2022",
+     "application": "F-250/F-350 Super Duty; F-350-550 chassis cab",
+     "hp": 385,
+     "hp_basis": "SAE net",
+     "second_pass": true,
+     "note": "AutoPadre spec aggregator also shows 385 @5750 for 2022 (not counted).",
+     "sources": [
+      {
+       "name": "Wikipedia",
+       "url": "https://en.wikipedia.org/wiki/Ford_Boss_engine",
+       "says": "385 hp @5750 / 430 lb-ft @3800"
+      },
+      {
+       "name": "f150hub",
+       "url": "https://www.f150hub.com/specs/ford-6.2.html",
+       "says": "385 hp @5,750"
+      }
+     ]
+    }
+   ],
+   "unverified": {
+    "firing_order": "CONFLICT: 1-5-4-8-6-3-7-2 (f150hub; rerev.com) vs 1-3-7-2-6-5-4-8 (ricksfreeautorepairadvice.com). Needs Ford workshop manual.",
+    "induction": "Naturally aspirated per Wikipedia; port injection (no DI) not stated verbatim in any fetched source."
+   },
+   "unverified_variants": [
+    {
+     "year": "2017-2019+",
+     "application": "E-Series E-350/E-450",
+     "note": "Wikipedia lists the application with no rating."
+    },
+    {
+     "application": "Raptor XT / 500 hp",
+     "note": "Show/prototype only; Jalopnik says 'apparently coming'; never produced."
+    }
+   ]
+  },
+  {
+   "id": "ford-3-3-ti-vct",
+   "name": "Ford 3.3L Ti-VCT V6 (Cyclone family, PFDI)",
+   "fields": {
+    "displacement_l": {
+     "value": 3.3,
+     "sources": [
+      {
+       "name": "Ford Motor Co. (all Ford material = one source)",
+       "url": "https://www.fromtheroad.ford.com/content/dam/fordmediasite/us/en/library/2020/specs/2020-F-150-Technical-Specs.pdf",
+       "says": "3.3 liters (204 cubic inches)"
+      },
+      {
+       "name": "Wikipedia",
+       "url": "https://en.wikipedia.org/wiki/Ford_Cyclone_engine",
+       "says": "3.3 L; 3,339 cc"
+      },
+      {
+       "name": "f150hub",
+       "url": "https://www.f150hub.com/specs/ford-3.3-v6.html",
+       "says": "3.3 liters"
+      }
+     ],
+     "note": ""
+    },
+    "displacement_ci": {
+     "value": 204,
+     "sources": [
+      {
+       "name": "Ford Motor Co. (all Ford material = one source)",
+       "url": "https://www.fromtheroad.ford.com/content/dam/fordmediasite/us/en/library/2021/specs/2021-F-150-Technical-Specs.pdf",
+       "says": "3,340 cc, 203.8 cubic inches"
+      },
+      {
+       "name": "Wikipedia",
+       "url": "https://en.wikipedia.org/wiki/Ford_Cyclone_engine",
+       "says": "203.8 cu in"
+      },
+      {
+       "name": "f150hub",
+       "url": "https://www.f150hub.com/specs/ford-3.3-v6.html",
+       "says": "204 CID (203.55)"
+      }
+     ],
+     "note": "Ford's 2020 F-150 sheet rounds to 204; 2021 sheet gives 203.8."
+    },
+    "num_cylinders": {
+     "value": 6,
+     "sources": [
+      {
+       "name": "Ford Motor Co. (all Ford material = one source)",
+       "url": "https://www.fromtheroad.ford.com/content/dam/fordmediasite/us/en/library/2020/specs/2020-F-150-Technical-Specs.pdf",
+       "says": "V6"
+      },
+      {
+       "name": "Wikipedia",
+       "url": "https://en.wikipedia.org/wiki/Ford_Cyclone_engine",
+       "says": "V6"
+      },
+      {
+       "name": "f150hub",
+       "url": "https://www.f150hub.com/specs/ford-3.3-v6.html",
+       "says": "V6"
+      }
+     ],
+     "note": ""
+    },
+    "configuration": {
+     "value": "60-degree V6",
+     "sources": [
+      {
+       "name": "Ford Motor Co. (all Ford material = one source)",
+       "url": "https://www.fromtheroad.ford.com/content/dam/fordmediasite/us/en/library/2021/specs/2021-F-150-Technical-Specs.pdf",
+       "says": "Naturally-aspirated 60-degree V6"
+      },
+      {
+       "name": "Wikipedia",
+       "url": "https://en.wikipedia.org/wiki/Ford_Cyclone_engine",
+       "says": "60 deg V6 (Cyclone)"
+      }
+     ],
+     "note": "",
+     "second_pass": true
+    },
+    "bore_in": {
+     "value": 3.5594,
+     "sources": [
+      {
+       "name": "Ford Motor Co. (all Ford material = one source)",
+       "url": "https://www.fromtheroad.ford.com/content/dam/fordmediasite/us/en/library/2020/specs/2020-Explorer-Tech-Specs.pdf",
+       "says": "90.41 mm x 86.7 mm (Explorer Hybrid); F-150 sheets: 3.56 inches"
+      },
+      {
+       "name": "f150hub",
+       "url": "https://www.f150hub.com/specs/ford-3.3-v6.html",
+       "says": "3.56 in (90.42 mm)"
+      }
+     ],
+     "note": "90.41 mm = 3.5594 in. Wikipedia gives 90.4 mm only as the family's smallest bore; arithmetic 90.41^2 x 86.7 x 0.7854 x 6 = 3,339 cc matches Wikipedia's 3,339 cc.",
+     "second_pass": true
+    },
+    "stroke_in": {
+     "value": 3.4134,
+     "sources": [
+      {
+       "name": "Ford Motor Co. (all Ford material = one source)",
+       "url": "https://www.fromtheroad.ford.com/content/dam/fordmediasite/us/en/library/2020/specs/2020-Explorer-Tech-Specs.pdf",
+       "says": "86.7 mm; F-150 sheets 3.41 in"
+      },
+      {
+       "name": "Wikipedia",
+       "url": "https://en.wikipedia.org/wiki/Ford_Cyclone_engine",
+       "says": "86.7 mm (3.41 in)"
+      },
+      {
+       "name": "f150hub",
+       "url": "https://www.f150hub.com/specs/ford-3.3-v6.html",
+       "says": "3.41 in (86.61 mm)"
+      }
+     ],
+     "note": "86.7 mm = 3.4134 in."
+    },
+    "compression_ratio": {
+     "value": "12.0:1",
+     "sources": [
+      {
+       "name": "Ford Motor Co. (all Ford material = one source)",
+       "url": "https://www.fromtheroad.ford.com/content/dam/fordmediasite/us/en/library/2020/specs/2020-F-150-Technical-Specs.pdf",
+       "says": "12:1"
+      },
+      {
+       "name": "Jalopnik",
+       "url": "https://jalopnik.com/the-2018-ford-f-150-gets-a-new-engine-and-more-horsepow-1796143724",
+       "says": "12:1 versus 10.8:1"
+      },
+      {
+       "name": "f150hub",
+       "url": "https://www.f150hub.com/specs/ford-3.3-v6.html",
+       "says": "12.0:1"
+      }
+     ],
+     "note": ""
+    },
+    "valvetrain": {
+     "value": "DOHC, 4 valves/cyl, direct-acting mechanical buckets, twin independent VCT (Ti-VCT)",
+     "sources": [
+      {
+       "name": "Ford Motor Co. (all Ford material = one source)",
+       "url": "https://www.fromtheroad.ford.com/content/dam/fordmediasite/us/en/library/2020/specs/2020-Explorer-Tech-Specs.pdf",
+       "says": "DOHC, direct acting mechanical buckets, four valves per cylinder, twin independent variable camshaft timing"
+      },
+      {
+       "name": "f150hub",
+       "url": "https://www.f150hub.com/specs/ford-3.3-v6.html",
+       "says": "DOHC, VCT"
+      },
+      {
+       "name": "Wikipedia",
+       "url": "https://en.wikipedia.org/wiki/Ford_Cyclone_engine",
+       "says": "DOHC; Ti-VCT on later models"
+      }
+     ],
+     "note": ""
+    },
+    "block_material": {
+     "value": "aluminum",
+     "sources": [
+      {
+       "name": "Ford Motor Co. (all Ford material = one source)",
+       "url": "https://www.fromtheroad.ford.com/content/dam/fordmediasite/us/en/library/2020/specs/2020-F-150-Technical-Specs.pdf",
+       "says": "Aluminum block, aluminum heads"
+      },
+      {
+       "name": "f150hub",
+       "url": "https://www.f150hub.com/specs/ford-3.3-v6.html",
+       "says": "Aluminum"
+      },
+      {
+       "name": "Wikipedia",
+       "url": "https://en.wikipedia.org/wiki/Ford_Cyclone_engine",
+       "says": "aluminium block (Cyclone family)"
+      }
+     ],
+     "note": ""
+    },
+    "head_material": {
+     "value": "aluminum",
+     "sources": [
+      {
+       "name": "Ford Motor Co. (all Ford material = one source)",
+       "url": "https://www.fromtheroad.ford.com/content/dam/fordmediasite/us/en/library/2020/specs/2020-F-150-Technical-Specs.pdf",
+       "says": "aluminum heads"
+      },
+      {
+       "name": "f150hub",
+       "url": "https://www.f150hub.com/specs/ford-3.3-v6.html",
+       "says": "Aluminum"
+      },
+      {
+       "name": "Wikipedia",
+       "url": "https://en.wikipedia.org/wiki/Ford_Cyclone_engine",
+       "says": "aluminium heads (Cyclone family)"
+      }
+     ],
+     "note": ""
+    },
+    "induction": {
+     "value": "naturally aspirated; port fuel injection + direct injection (PFDI, two injectors/cyl)",
+     "sources": [
+      {
+       "name": "Ford Motor Co. (all Ford material = one source)",
+       "url": "https://www.fromtheroad.ford.com/content/dam/fordmediasite/us/en/library/2020/specs/2020-F-150-Technical-Specs.pdf",
+       "says": "Port fuel injection and direct injection"
+      },
+      {
+       "name": "Jalopnik",
+       "url": "https://jalopnik.com/the-2018-ford-f-150-gets-a-new-engine-and-more-horsepow-1796143724",
+       "says": "both port and direct injection"
+      },
+      {
+       "name": "Wikipedia",
+       "url": "https://en.wikipedia.org/wiki/Ford_Cyclone_engine",
+       "says": "port and direct injection from 2018"
+      }
+     ],
+     "note": "f150hub says 'Direct fuel injection' only (incomplete)."
+    },
+    "years": {
+     "value": "2018-2023 (F-150); 2020+ Explorer Hybrid / Police Interceptor Utility",
+     "sources": [
+      {
+       "name": "Wikipedia",
+       "url": "https://en.wikipedia.org/wiki/Ford_Cyclone_engine",
+       "says": "2018-2023 F-150; 2020-present Explorer Hybrid, PIU"
+      },
+      {
+       "name": "Ford Motor Co. (all Ford material = one source)",
+       "url": "https://media.ford.com/content/fordmedia/fna/ca/en/news/2017/08/09/new-ford-f150-most-advanced-powertrain-lineup-ever.html",
+       "says": "new 3.3-liter V6 for 2018 F-150; 2020 Explorer Hybrid spec sheet"
+      },
+      {
+       "name": "f150hub",
+       "url": "https://www.f150hub.com/specs/ford-3.3-v6.html",
+       "says": "2018-current F-150"
+      }
+     ],
+     "note": ""
+    }
+   },
+   "variants": [
+    {
+     "year": "2018-2020",
+     "application": "F-150",
+     "hp": 290,
+     "hp_basis": "SAE net",
+     "compression_ratio": 12.0,
+     "sources": [
+      {
+       "name": "Ford Motor Co. (all Ford material = one source)",
+       "url": "https://www.fromtheroad.ford.com/content/dam/fordmediasite/us/en/library/2020/specs/2020-F-150-Technical-Specs.pdf",
+       "says": "290 hp @6,500 rpm, 265 lb-ft @4,000"
+      },
+      {
+       "name": "Jalopnik",
+       "url": "https://jalopnik.com/the-2018-ford-f-150-gets-a-new-engine-and-more-horsepow-1796143724",
+       "says": "290 horsepower at 6,500 rpm"
+      },
+      {
+       "name": "Wikipedia",
+       "url": "https://en.wikipedia.org/wiki/Ford_Cyclone_engine",
+       "says": "290 hp at 6,500 rpm"
+      }
+     ]
+    },
+    {
+     "year": "2021-2023",
+     "application": "F-150 (14th gen)",
+     "hp": 290,
+     "hp_basis": "SAE net",
+     "sources": [
+      {
+       "name": "Ford Motor Co. (all Ford material = one source)",
+       "url": "https://www.fromtheroad.ford.com/content/dam/fordmediasite/us/en/library/2021/specs/2021-F-150-Technical-Specs.pdf",
+       "says": "290 @ 6,500 rpm, 265 lb-ft"
+      },
+      {
+       "name": "Wikipedia",
+       "url": "https://en.wikipedia.org/wiki/Ford_Cyclone_engine",
+       "says": "2018-2023 F-150: 290 hp"
+      },
+      {
+       "name": "f150hub",
+       "url": "https://www.f150hub.com/specs/ford-3.3-v6.html",
+       "says": "290 hp, 2018-current"
+      }
+     ]
+    },
+    {
+     "year": "2020+",
+     "application": "Explorer Hybrid (3.3 hybrid)",
+     "hp": 318,
+     "hp_basis": "SAE net, combined system (engine + 35 kW motor)",
+     "compression_ratio": 12.0,
+     "note": "Combined system rating, not engine-only.",
+     "sources": [
+      {
+       "name": "Ford Motor Co. (all Ford material = one source)",
+       "url": "https://www.fromtheroad.ford.com/content/dam/fordmediasite/us/en/library/2020/specs/2020-Explorer-Tech-Specs.pdf",
+       "says": "318 combined, 322 lb.-ft."
+      },
+      {
+       "name": "Wikipedia",
+       "url": "https://en.wikipedia.org/wiki/Ford_Cyclone_engine",
+       "says": "318 hp combined, 322 lb-ft"
+      },
+      {
+       "name": "Yahoo Autos first drive",
+       "url": "https://autos.yahoo.com/2020-ford-explorer-hybrid-first-100200276.html",
+       "says": "total system output 318 horsepower and 322 pound-feet"
+      }
+     ]
+    }
+   ],
+   "unverified": {
+    "fuel_type": "Gasoline everywhere; E85 flex-fuel (F-150 'FFV') per Ford only.",
+    "firing_order": "not found",
+    "explorer_hybrid_engine_only": "285 hp @6,500 / 260 lb-ft per Wikipedia only (also the Police Interceptor Utility)"
+   },
+   "unverified_variants": [
+    {
+     "year": "2020+",
+     "application": "Police Interceptor Utility hybrid",
+     "hp": 285,
+     "note": "Wikipedia only (engine rating)."
+    }
+   ]
+  }
+ ]
+}

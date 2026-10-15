@@ -1,0 +1,356 @@
+{
+ "name": "Ford 6.2L SOHC 2-valve 'Boss' V8",
+ "fields": {
+  "displacement_l": {
+   "value": 6.2,
+   "sources": [
+    {
+     "name": "Ford Motor Co. (all Ford material = one source)",
+     "url": "https://ophelia.sdsu.edu:8443/ford/03-03-2012/news-center/press-releases-detail/pr-robust-ford-tough2658-allnew-31019.html",
+     "says": "all-new 6.2-liter V-8"
+    },
+    {
+     "name": "Wikipedia",
+     "url": "https://en.wikipedia.org/wiki/Ford_Boss_engine",
+     "says": "6.2 L (379 cu in)"
+    },
+    {
+     "name": "f150hub",
+     "url": "https://www.f150hub.com/specs/ford-6.2.html",
+     "says": "6.2 liters"
+    }
+   ],
+   "note": ""
+  },
+  "displacement_ci": {
+   "value": 379,
+   "sources": [
+    {
+     "name": "Wikipedia",
+     "url": "https://en.wikipedia.org/wiki/Ford_Boss_engine",
+     "says": "379 cu in"
+    },
+    {
+     "name": "f150hub",
+     "url": "https://www.f150hub.com/specs/ford-6.2.html",
+     "says": "379 cid"
+    }
+   ],
+   "note": "Arithmetic: 102^2 x 95 x 0.7854 x 8 = 6,210 cc = 379.0 ci.",
+   "second_pass": true
+  },
+  "num_cylinders": {
+   "value": 8,
+   "sources": [
+    {
+     "name": "Ford Motor Co. (all Ford material = one source)",
+     "url": "https://ophelia.sdsu.edu:8443/ford/03-03-2012/news-center/press-releases-detail/pr-robust-ford-tough2658-allnew-31019.html",
+     "says": ""
+    },
+    {
+     "name": "Wikipedia",
+     "url": "https://en.wikipedia.org/wiki/Ford_Boss_engine",
+     "says": ""
+    },
+    {
+     "name": "f150hub",
+     "url": "https://www.f150hub.com/specs/ford-6.2.html",
+     "says": ""
+    }
+   ],
+   "note": ""
+  },
+  "configuration": {
+   "value": "90-degree V8",
+   "sources": [
+    {
+     "name": "Ford Motor Co. (all Ford material = one source)",
+     "url": "https://ophelia.sdsu.edu:8443/ford/03-03-2012/news-center/press-releases-detail/pr-robust-ford-tough2658-allnew-31019.html",
+     "says": "V-8"
+    },
+    {
+     "name": "Wikipedia",
+     "url": "https://en.wikipedia.org/wiki/Ford_Boss_engine",
+     "says": "90 deg V8"
+    },
+    {
+     "name": "f150hub",
+     "url": "https://www.f150hub.com/specs/ford-6.2.html",
+     "says": "V-8"
+    }
+   ],
+   "note": "90-degree angle from Wikipedia."
+  },
+  "bore_in": {
+   "value": 4.0157,
+   "sources": [
+    {
+     "name": "Ford Motor Co. (all Ford material = one source)",
+     "url": "https://ophelia.sdsu.edu:8443/ford/03-03-2012/news-center/press-releases-detail/pr-robust-ford-tough2658-allnew-31019.html",
+     "says": "102 mm bore"
+    },
+    {
+     "name": "Wikipedia",
+     "url": "https://en.wikipedia.org/wiki/Ford_Boss_engine",
+     "says": "4.015 in (102.0 mm)"
+    },
+    {
+     "name": "f150hub",
+     "url": "https://www.f150hub.com/specs/ford-6.2.html",
+     "says": "4.015 in (102 mm)"
+    }
+   ],
+   "note": "Ford publishes 102 mm = 4.0157 in."
+  },
+  "stroke_in": {
+   "value": 3.7402,
+   "sources": [
+    {
+     "name": "Ford Motor Co. (all Ford material = one source)",
+     "url": "https://ophelia.sdsu.edu:8443/ford/03-03-2012/news-center/press-releases-detail/pr-robust-ford-tough2658-allnew-31019.html",
+     "says": "95 mm stroke"
+    },
+    {
+     "name": "Wikipedia",
+     "url": "https://en.wikipedia.org/wiki/Ford_Boss_engine",
+     "says": "3.74 in (95 mm)"
+    },
+    {
+     "name": "f150hub",
+     "url": "https://www.f150hub.com/specs/ford-6.2.html",
+     "says": "3.74 in (95 mm)"
+    }
+   ],
+   "note": "95 mm = 3.7402 in."
+  },
+  "compression_ratio": {
+   "value": "9.8:1",
+   "sources": [
+    {
+     "name": "Ford Motor Co. (all Ford material = one source)",
+     "url": "https://ophelia.sdsu.edu:8443/ford/03-03-2012/news-center/press-releases-detail/pr-robust-ford-tough2658-allnew-31019.html",
+     "says": "9.8:1"
+    },
+    {
+     "name": "Jalopnik",
+     "url": "https://jalopnik.com/exclusive-first-look-at-fords-6-2-liter-v8-engine-in-5402866",
+     "says": "9.8:1 compression ratio"
+    },
+    {
+     "name": "f150hub",
+     "url": "https://www.f150hub.com/specs/ford-6.2.html",
+     "says": "9.8:1"
+    }
+   ],
+   "note": ""
+  },
+  "valvetrain": {
+   "value": "SOHC per bank, 2 valves/cyl, roller-rocker shafts, dual-equal VCT, 2 spark plugs/cyl",
+   "sources": [
+    {
+     "name": "Ford Motor Co. (all Ford material = one source)",
+     "url": "https://ophelia.sdsu.edu:8443/ford/03-03-2012/news-center/press-releases-detail/pr-robust-ford-tough2658-allnew-31019.html",
+     "says": "SOHC, roller-rocker shafts, two valves per cylinder, dual-equal variable cam timing, two plugs per cylinder"
+    },
+    {
+     "name": "Wikipedia",
+     "url": "https://en.wikipedia.org/wiki/Ford_Boss_engine",
+     "says": "SOHC 2 valves per cyl"
+    },
+    {
+     "name": "f150hub",
+     "url": "https://www.f150hub.com/specs/ford-6.2.html",
+     "says": "SOHC, VCT, roller rocker shaft, 2 valves per cylinder"
+    }
+   ],
+   "note": ""
+  },
+  "block_material": {
+   "value": "cast iron",
+   "sources": [
+    {
+     "name": "Ford Motor Co. (all Ford material = one source)",
+     "url": "https://ophelia.sdsu.edu:8443/ford/03-03-2012/news-center/press-releases-detail/pr-robust-ford-tough2658-allnew-31019.html",
+     "says": "cast iron, four-bolt mains"
+    },
+    {
+     "name": "Wikipedia",
+     "url": "https://en.wikipedia.org/wiki/Ford_Boss_engine",
+     "says": "cast-iron cylinder block"
+    },
+    {
+     "name": "Jalopnik",
+     "url": "https://jalopnik.com/exclusive-first-look-at-fords-6-2-liter-v8-engine-in-5402866",
+     "says": "cast iron block"
+    },
+    {
+     "name": "f150hub",
+     "url": "https://www.f150hub.com/specs/ford-6.2.html",
+     "says": "Cast iron"
+    }
+   ],
+   "note": ""
+  },
+  "head_material": {
+   "value": "aluminum",
+   "sources": [
+    {
+     "name": "Ford Motor Co. (all Ford material = one source)",
+     "url": "https://ophelia.sdsu.edu:8443/ford/03-03-2012/news-center/press-releases-detail/pr-robust-ford-tough2658-allnew-31019.html",
+     "says": "aluminum"
+    },
+    {
+     "name": "Wikipedia",
+     "url": "https://en.wikipedia.org/wiki/Ford_Boss_engine",
+     "says": "aluminum cylinder heads"
+    },
+    {
+     "name": "Jalopnik",
+     "url": "https://jalopnik.com/exclusive-first-look-at-fords-6-2-liter-v8-engine-in-5402866",
+     "says": "aluminum heads"
+    }
+   ],
+   "note": ""
+  },
+  "fuel_type": {
+   "value": "gasoline / E85 flex-fuel",
+   "sources": [
+    {
+     "name": "Ford Motor Co. (all Ford material = one source)",
+     "url": "https://ophelia.sdsu.edu:8443/ford/03-03-2012/news-center/press-releases-detail/pr-robust-ford-tough2658-allnew-31019.html",
+     "says": "regular gasoline, E85 or any blend; E85/flex fuel capable"
+    },
+    {
+     "name": "Wikipedia",
+     "url": "https://en.wikipedia.org/wiki/Ford_Boss_engine",
+     "says": "gasoline, E85"
+    },
+    {
+     "name": "AutoGuide 2011 Super Duty first drive",
+     "url": "https://www.autoguide.com/manufacturer/ford/2011-ford-fseries-super-duty-first-drive-1360.html",
+     "says": "E85 compatible"
+    }
+   ],
+   "note": ""
+  },
+  "years": {
+   "value": "2010-2022",
+   "sources": [
+    {
+     "name": "Wikipedia",
+     "url": "https://en.wikipedia.org/wiki/Ford_Boss_engine",
+     "says": "2010 to December 2022"
+    },
+    {
+     "name": "Ford Motor Co. (all Ford material = one source)",
+     "url": "https://ophelia.sdsu.edu:8443/ford/03-03-2012/news-center/press-releases-detail/pr-more-power-comes-standard-on-33181.html",
+     "says": "standard on 2011 SVT Raptor; 2011 Super Duty introduction"
+    }
+   ],
+   "note": "End date from Wikipedia; search snippets also say retired after the 2022 MY.",
+   "second_pass": true
+  }
+ },
+ "variants": [
+  {
+   "year": "2010-2014",
+   "application": "F-150 SVT Raptor",
+   "hp": 411,
+   "hp_basis": "SAE net",
+   "note": "f150hub says Raptor 2010-2016 (the Raptor paused after 2014).",
+   "sources": [
+    {
+     "name": "Wikipedia",
+     "url": "https://en.wikipedia.org/wiki/Ford_Boss_engine",
+     "says": "2010-2014 F-150 Raptor 411 hp @5500"
+    },
+    {
+     "name": "Ford Motor Co. (all Ford material = one source)",
+     "url": "https://ophelia.sdsu.edu:8443/ford/03-03-2012/news-center/press-releases-detail/pr-more-power-comes-standard-on-33181.html",
+     "says": "6.2-liter V-8 standard on 2011 SVT Raptor, 411 hp"
+    },
+    {
+     "name": "f150hub",
+     "url": "https://www.f150hub.com/specs/ford-6.2.html",
+     "says": "411 hp @5,500 (SVT Raptor)"
+    }
+   ]
+  },
+  {
+   "year": "2011-2014",
+   "application": "F-150 (non-Raptor)",
+   "hp": 411,
+   "hp_basis": "SAE net",
+   "sources": [
+    {
+     "name": "Ford Motor Co. (all Ford material = one source)",
+     "url": "https://ophelia.sdsu.edu:8443/ford/03-03-2012/news-center/press-releases-detail/pr-all-new-ford-f150-powertrain-33096.html",
+     "says": "411 horsepower at 5,500 rpm and 434 lb.-ft. at 4,500 rpm"
+    },
+    {
+     "name": "Wikipedia",
+     "url": "https://en.wikipedia.org/wiki/Ford_Boss_engine",
+     "says": "2011-2014 F-150 411 hp"
+    },
+    {
+     "name": "f150hub",
+     "url": "https://www.f150hub.com/specs/ford-6.2.html",
+     "says": "2011-2014 F-150 411 hp"
+    },
+    {
+     "name": "Jalopnik",
+     "url": "https://jalopnik.com/exclusive-first-look-at-fords-6-2-liter-v8-engine-in-5402866",
+     "says": "411 HP/434 lb-ft"
+    }
+   ]
+  },
+  {
+   "year": "2011-2016",
+   "application": "F-250/F-350 Super Duty",
+   "hp": 385,
+   "hp_basis": "SAE net",
+   "note": "f150hub lists 5,750 rpm for all years; Wikipedia/KBB 5,500 for 2011-16.",
+   "sources": [
+    {
+     "name": "Wikipedia",
+     "url": "https://en.wikipedia.org/wiki/Ford_Boss_engine",
+     "says": "385 hp @5500 / 405 lb-ft @4500"
+    },
+    {
+     "name": "Kelley Blue Book",
+     "url": "https://www.kbb.com/ford/f250-/2011",
+     "says": "385 hp @ 5500, 405 lb-ft @ 4500"
+    },
+    {
+     "name": "f150hub",
+     "url": "https://www.f150hub.com/specs/ford-6.2.html",
+     "says": "385 hp (2011-current Super Duty)"
+    }
+   ]
+  },
+  {
+   "year": "2017-2022",
+   "application": "F-250/F-350 Super Duty; F-350-550 chassis cab",
+   "hp": 385,
+   "hp_basis": "SAE net",
+   "second_pass": true,
+   "note": "AutoPadre spec aggregator also shows 385 @5750 for 2022 (not counted).",
+   "sources": [
+    {
+     "name": "Wikipedia",
+     "url": "https://en.wikipedia.org/wiki/Ford_Boss_engine",
+     "says": "385 hp @5750 / 430 lb-ft @3800"
+    },
+    {
+     "name": "f150hub",
+     "url": "https://www.f150hub.com/specs/ford-6.2.html",
+     "says": "385 hp @5,750"
+    }
+   ]
+  }
+ ],
+ "unverified": {
+  "firing_order": "CONFLICT: 1-5-4-8-6-3-7-2 (f150hub; rerev.com) vs 1-3-7-2-6-5-4-8 (ricksfreeautorepairadvice.com). Needs Ford workshop manual.",
+  "induction": "Naturally aspirated per Wikipedia; port injection (no DI) not stated verbatim in any fetched source."
+ }
+}

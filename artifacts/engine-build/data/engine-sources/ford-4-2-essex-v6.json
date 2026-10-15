@@ -1,0 +1,215 @@
+{
+ "name": "Ford 4.2L Essex V6",
+ "fields": {
+  "displacement_l": {
+   "value": 4.2,
+   "sources": [
+    {
+     "name": "Wikipedia",
+     "url": "https://en.wikipedia.org/wiki/Ford_Essex_V6_engine_(Canadian)",
+     "says": "4,195 cc"
+    },
+    {
+     "name": "f150hub",
+     "url": "https://www.f150hub.com/specs/ford-4.2.html",
+     "says": "4.2 L"
+    },
+    {
+     "name": "J.D. Power",
+     "url": "https://www.jdpower.com/cars/2007/ford/f150-pickup-v8/regular-cab-xl-2wd/specs",
+     "says": "4.2L V6"
+    }
+   ],
+   "note": ""
+  },
+  "displacement_ci": {
+   "value": 256,
+   "sources": [
+    {
+     "name": "Wikipedia",
+     "url": "https://en.wikipedia.org/wiki/Ford_Essex_V6_engine_(Canadian)",
+     "says": "256.0 cu in"
+    },
+    {
+     "name": "f150hub",
+     "url": "https://www.f150hub.com/specs/ford-4.2.html",
+     "says": "256 cid"
+    }
+   ],
+   "note": "Arithmetic: 96.8^2 x 95.0 x 0.7854 x 6 = 4,195 cc = 256 ci.",
+   "second_pass": true
+  },
+  "num_cylinders": {
+   "value": 6,
+   "sources": [
+    {
+     "name": "Wikipedia",
+     "url": "https://en.wikipedia.org/wiki/Ford_Essex_V6_engine_(Canadian)",
+     "says": ""
+    },
+    {
+     "name": "f150hub",
+     "url": "https://www.f150hub.com/specs/ford-4.2.html",
+     "says": ""
+    },
+    {
+     "name": "J.D. Power",
+     "url": "https://www.jdpower.com/cars/2007/ford/f150-pickup-v8/regular-cab-xl-2wd/specs",
+     "says": "V6"
+    }
+   ],
+   "note": ""
+  },
+  "configuration": {
+   "value": "90-degree V6",
+   "sources": [
+    {
+     "name": "Wikipedia",
+     "url": "https://en.wikipedia.org/wiki/Ford_Essex_V6_engine_(Canadian)",
+     "says": "90-degree Essex V6"
+    },
+    {
+     "name": "f150hub",
+     "url": "https://www.f150hub.com/specs/ford-4.2.html",
+     "says": "90 deg V-6"
+    }
+   ],
+   "note": "",
+   "second_pass": true
+  },
+  "bore_in": {
+   "value": 3.811,
+   "sources": [
+    {
+     "name": "Wikipedia",
+     "url": "https://en.wikipedia.org/wiki/Ford_Essex_V6_engine_(Canadian)",
+     "says": "kept the 3.8 L's bore, 96.8 mm (3.81 in)"
+    },
+    {
+     "name": "f150hub",
+     "url": "https://www.f150hub.com/specs/ford-4.2.html",
+     "says": "3.81 in (96.8 mm)"
+    }
+   ],
+   "note": "96.8 mm = 3.8110 in. Second pass; arithmetic matches 4,195 cc.",
+   "second_pass": true
+  },
+  "stroke_in": {
+   "value": 3.74,
+   "sources": [
+    {
+     "name": "Wikipedia",
+     "url": "https://en.wikipedia.org/wiki/Ford_Essex_V6_engine_(Canadian)",
+     "says": "95 mm (3.74 in)"
+    },
+    {
+     "name": "f150hub",
+     "url": "https://www.f150hub.com/specs/ford-4.2.html",
+     "says": "3.74 in (95.0 mm)"
+    }
+   ],
+   "note": "95.0 mm = 3.7402 in. Second pass.",
+   "second_pass": true
+  },
+  "valvetrain": {
+   "value": "OHV, 2 valves/cyl",
+   "sources": [
+    {
+     "name": "f150hub",
+     "url": "https://www.f150hub.com/specs/ford-4.2.html",
+     "says": "12 valves, OHV cam in block"
+    },
+    {
+     "name": "Wikipedia",
+     "url": "https://en.wikipedia.org/wiki/Ford_Essex_V6_engine_(Canadian)",
+     "says": "Essex OHV pushrod"
+    }
+   ],
+   "note": "",
+   "second_pass": true
+  },
+  "block_material": {
+   "value": "cast iron",
+   "sources": [
+    {
+     "name": "Wikipedia",
+     "url": "https://en.wikipedia.org/wiki/Ford_Essex_V6_engine_(Canadian)",
+     "says": "cast iron block"
+    },
+    {
+     "name": "f150hub",
+     "url": "https://www.f150hub.com/specs/ford-4.2.html",
+     "says": "Cast iron"
+    }
+   ],
+   "note": "",
+   "second_pass": true
+  },
+  "head_material": {
+   "value": "aluminum",
+   "sources": [
+    {
+     "name": "Wikipedia",
+     "url": "https://en.wikipedia.org/wiki/Ford_Essex_V6_engine_(Canadian)",
+     "says": "aluminum heads"
+    },
+    {
+     "name": "f150hub",
+     "url": "https://www.f150hub.com/specs/ford-4.2.html",
+     "says": "Aluminum"
+    }
+   ],
+   "note": "",
+   "second_pass": true
+  },
+  "years": {
+   "value": "1997-2008 (F-150); also 1997-2003 E-150/E-250, 2004-2007 Freestar/Monterey",
+   "sources": [
+    {
+     "name": "Wikipedia",
+     "url": "https://en.wikipedia.org/wiki/Ford_Essex_V6_engine_(Canadian)",
+     "says": "1997 MY ... final use 2008 F-150"
+    },
+    {
+     "name": "f150hub",
+     "url": "https://www.f150hub.com/specs/ford-4.2.html",
+     "says": "1997-2008 Ford F-150"
+    }
+   ],
+   "note": "The Windstar never used the 4.2 (3.0/3.8 only); the Freestar/Monterey did.",
+   "second_pass": true
+  }
+ },
+ "variants": [
+  {
+   "year": "2005-2008",
+   "hp": 202,
+   "hp_basis": "net",
+   "code": "4.2L V6 (F-150)",
+   "induction": "sequential multi-port EFI",
+   "note": "Peak rpm differs (f150hub 4,800 vs J.D. Power 4,350); hp agrees. Ford-Trucks.com page was blocked; figure taken from search snippet.",
+   "sources": [
+    {
+     "name": "f150hub",
+     "url": "https://www.f150hub.com/specs/ford-4.2.html",
+     "says": "2005-2008 202 hp @ 4,800"
+    },
+    {
+     "name": "J.D. Power",
+     "url": "https://www.jdpower.com/cars/2007/ford/f150-pickup-v8/regular-cab-xl-2wd/specs",
+     "says": "202 hp @ 4,350, 260 lb-ft"
+    },
+    {
+     "name": "Ford-Trucks.com 2006 F-150 specifications",
+     "url": "https://www.ford-trucks.com/?p=2469",
+     "says": "202 hp / 260 lb-ft"
+    }
+   ]
+  }
+ ],
+ "unverified": {
+  "compression_ratio": "9.3:1 per f150hub only (auto-data 9.2 not acceptable)",
+  "firing_order": "1-4-2-5-3-6 per f150hub only",
+  "induction": "sequential multi-port per f150hub only"
+ }
+}

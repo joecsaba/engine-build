@@ -1,0 +1,1185 @@
+{
+ "engines": [
+  {
+   "id": "gm-6-2-diesel",
+   "name": "GM/Detroit Diesel 6.2 V8 diesel (LH6 / LL4)",
+   "fields": {
+    "displacement_ci": {
+     "value": 379,
+     "sources": [
+      {
+       "name": "GM Heritage Center 1986 Chevrolet Truck information kit p.52 (all GM = one source)",
+       "url": "https://www.gm.com/content/dam/company/no_search/heritage-archive-docs/vehicle-information-kits/chevrolet-trucks/1986-Chevrolet-Truck.pdf",
+       "says": "6.2 LITER (379 Cu. In.) V8 DIESEL (Ordering Code LL4); Piston displacement 6.2/379"
+      },
+      {
+       "name": "Wikipedia - Detroit Diesel V8 engine",
+       "url": "https://en.wikipedia.org/wiki/Detroit_Diesel_V8_engine",
+       "says": "6.2 L (379 cu in)"
+      },
+      {
+       "name": "DieselHub - 6.2L GM/Detroit Diesel",
+       "url": "https://www.dieselhub.com/idi/6.2-gm.html",
+       "says": "379 cu in (6.2 L)"
+      },
+      {
+       "name": "DieselArmy - Family Lineage: The Evolution of GM Diesel Truck Engines",
+       "url": "https://www.dieselarmy.com/?p=8684",
+       "says": "379 cu in (6.2L)"
+      }
+     ],
+     "note": ""
+    },
+    "displacement_l": {
+     "value": 6.2,
+     "sources": [
+      {
+       "name": "GM Heritage Center 1988 Chevrolet Truck information kit p.49 (all GM = one source)",
+       "url": "https://www.gm.com/content/dam/company/no_search/heritage-archive-docs/vehicle-information-kits/chevrolet-trucks/1988-Chevrolet-Truck.pdf",
+       "says": "6.2/379"
+      },
+      {
+       "name": "EPA fueleconomy.gov vehicles.csv",
+       "url": "https://www.fueleconomy.gov/feg/epadata/vehicles.csv.zip",
+       "says": "6.2 L, 8 cyl, diesel, 1984-1993 Chevrolet/GMC"
+      },
+      {
+       "name": "Wikipedia - Detroit Diesel V8 engine",
+       "url": "https://en.wikipedia.org/wiki/Detroit_Diesel_V8_engine",
+       "says": "6.2 L"
+      }
+     ],
+     "note": ""
+    },
+    "num_cylinders": {
+     "value": 8,
+     "sources": [
+      {
+       "name": "GM Heritage Center 1984 Chevrolet Truck information kit p.22 (all GM = one source)",
+       "url": "https://www.gm.com/content/dam/company/no_search/heritage-archive-docs/vehicle-information-kits/chevrolet-trucks/1984-Chevrolet-Truck.pdf",
+       "says": "6.2 Liter 379 V8 Diesel"
+      },
+      {
+       "name": "EPA fueleconomy.gov vehicles.csv",
+       "url": "https://www.fueleconomy.gov/feg/epadata/vehicles.csv.zip",
+       "says": "8 cylinders"
+      },
+      {
+       "name": "Wikipedia - Detroit Diesel V8 engine",
+       "url": "https://en.wikipedia.org/wiki/Detroit_Diesel_V8_engine",
+       "says": "V8"
+      },
+      {
+       "name": "DieselHub - 6.2L GM/Detroit Diesel",
+       "url": "https://www.dieselhub.com/idi/6.2-gm.html",
+       "says": "V8"
+      }
+     ],
+     "note": ""
+    },
+    "configuration": {
+     "value": "90-degree V8",
+     "sources": [
+      {
+       "name": "Wikipedia - Detroit Diesel V8 engine",
+       "url": "https://en.wikipedia.org/wiki/Detroit_Diesel_V8_engine",
+       "says": "90 deg V8"
+      },
+      {
+       "name": "DieselHub - 6.2L GM/Detroit Diesel",
+       "url": "https://www.dieselhub.com/idi/6.2-gm.html",
+       "says": "90 deg V-8"
+      },
+      {
+       "name": "SAE paper 820115, D.J. Reilly, Chevrolet Engineering (GM)",
+       "url": "https://saemobilus.sae.org/papers/new-gm-62l-v8-diesel-engine-designed-chevrolet-820115",
+       "says": "The 6.2 liter 90 deg V8"
+      }
+     ],
+     "note": "The SAE paper is GM-authored, so it counts as GM, not as a separate source from the kits."
+    },
+    "bore_in": {
+     "value": 3.98,
+     "sources": [
+      {
+       "name": "GM Heritage Center 1988 Chevrolet Truck information kit p.49-50 (all GM = one source)",
+       "url": "https://www.gm.com/content/dam/company/no_search/heritage-archive-docs/vehicle-information-kits/chevrolet-trucks/1988-Chevrolet-Truck.pdf",
+       "says": "Bore & stroke (nominal) 3.98\" x 3.82\""
+      },
+      {
+       "name": "Wikipedia - Detroit Diesel V8 engine",
+       "url": "https://en.wikipedia.org/wiki/Detroit_Diesel_V8_engine",
+       "says": "3.98 in (101.1 mm)"
+      },
+      {
+       "name": "DieselHub - 6.2L GM/Detroit Diesel",
+       "url": "https://www.dieselhub.com/idi/6.2-gm.html",
+       "says": "3.98 in (3.976 in, 101 mm)"
+      },
+      {
+       "name": "DieselArmy - Family Lineage: The Evolution of GM Diesel Truck Engines",
+       "url": "https://www.dieselarmy.com/?p=8684",
+       "says": "3.98 in"
+      },
+      {
+       "name": "DrivingLine - Most hated: GM's 6.2L and 6.5L diesels",
+       "url": "https://drivingline.com/articles/most-hated-gm-s-62l-and-65l-diesels",
+       "says": "3.98-inches"
+      }
+     ],
+     "note": "101 mm"
+    },
+    "stroke_in": {
+     "value": 3.82,
+     "sources": [
+      {
+       "name": "GM Heritage Center 1986 Chevrolet Truck information kit p.52 (all GM = one source)",
+       "url": "https://www.gm.com/content/dam/company/no_search/heritage-archive-docs/vehicle-information-kits/chevrolet-trucks/1986-Chevrolet-Truck.pdf",
+       "says": "Bore & stroke (nominal) 3.98\" x 3.82\" (also 1985 LH6, 1988 LH6/LL4 pages)"
+      },
+      {
+       "name": "DieselHub - 6.2L GM/Detroit Diesel",
+       "url": "https://www.dieselhub.com/idi/6.2-gm.html",
+       "says": "3.82 in (3.8189 in, 97 mm)"
+      },
+      {
+       "name": "DrivingLine - Most hated: GM's 6.2L and 6.5L diesels",
+       "url": "https://drivingline.com/articles/most-hated-gm-s-62l-and-65l-diesels",
+       "says": "3.82 in"
+      }
+     ],
+     "note": "CONFLICT settled by arithmetic. The 1983 GM kit (p.98), Wikipedia and DieselArmy print 3.80 in (Wikipedia 96.5 mm). Metric 101 x 97 mm gives 6.217 L = 379.4 ci, matching the published 379; 101 x 96.5 mm gives 377.5 ci. 97 mm = 3.819 in -> 3.82. GM's own 1985-1988 kits print 3.82."
+    },
+    "valvetrain": {
+     "value": "OHV pushrod, 2 valves/cyl",
+     "sources": [
+      {
+       "name": "GM Heritage Center 1986 Chevrolet Truck information kit p.52 (all GM = one source)",
+       "url": "https://www.gm.com/content/dam/company/no_search/heritage-archive-docs/vehicle-information-kits/chevrolet-trucks/1986-Chevrolet-Truck.pdf",
+       "says": "Engine type: Valve-in-head"
+      },
+      {
+       "name": "Wikipedia - Detroit Diesel V8 engine",
+       "url": "https://en.wikipedia.org/wiki/Detroit_Diesel_V8_engine",
+       "says": "OHV 2 valves x cyl."
+      },
+      {
+       "name": "DieselHub - 6.2L GM/Detroit Diesel",
+       "url": "https://www.dieselhub.com/idi/6.2-gm.html",
+       "says": "OHV pushrod (cam-in-block), hydraulic roller lifters"
+      },
+      {
+       "name": "DrivingLine - Most hated: GM's 6.2L and 6.5L diesels",
+       "url": "https://drivingline.com/articles/most-hated-gm-s-62l-and-65l-diesels",
+       "says": "2-valve cast-iron head"
+      }
+     ],
+     "note": "Hydraulic roller lifters stated only by DieselHub."
+    },
+    "block_material": {
+     "value": "cast iron",
+     "sources": [
+      {
+       "name": "Wikipedia - Detroit Diesel V8 engine",
+       "url": "https://en.wikipedia.org/wiki/Detroit_Diesel_V8_engine",
+       "says": "Cast iron"
+      },
+      {
+       "name": "DieselHub - 6.2L GM/Detroit Diesel",
+       "url": "https://www.dieselhub.com/idi/6.2-gm.html",
+       "says": "Cast iron block"
+      },
+      {
+       "name": "DrivingLine - Most hated: GM's 6.2L and 6.5L diesels",
+       "url": "https://drivingline.com/articles/most-hated-gm-s-62l-and-65l-diesels",
+       "says": "cast-iron block"
+      }
+     ],
+     "note": ""
+    },
+    "head_material": {
+     "value": "cast iron",
+     "sources": [
+      {
+       "name": "Wikipedia - Detroit Diesel V8 engine",
+       "url": "https://en.wikipedia.org/wiki/Detroit_Diesel_V8_engine",
+       "says": "Cast iron"
+      },
+      {
+       "name": "DieselHub - 6.2L GM/Detroit Diesel",
+       "url": "https://www.dieselhub.com/idi/6.2-gm.html",
+       "says": "cast iron cylinder heads"
+      },
+      {
+       "name": "DrivingLine - Most hated: GM's 6.2L and 6.5L diesels",
+       "url": "https://drivingline.com/articles/most-hated-gm-s-62l-and-65l-diesels",
+       "says": "2-valve cast-iron head"
+      }
+     ],
+     "note": ""
+    },
+    "induction": {
+     "value": "naturally aspirated, indirect injection (precombustion chamber), mechanical Stanadyne DB2 rotary pump",
+     "sources": [
+      {
+       "name": "GM Heritage Center 1982 Chevrolet Truck information kit p.66 (all GM = one source)",
+       "url": "https://www.gm.com/content/dam/company/no_search/heritage-archive-docs/vehicle-information-kits/chevrolet-trucks/1982-Chevrolet-Truck.pdf",
+       "says": "Precombustion chamber cylinder head ... Rotary fuel pump ... glow plug start system (kit dated Aug 1980); 1991 kit p.16: Gear Driven Mechanical Fuel Injection"
+      },
+      {
+       "name": "DieselHub - 6.2L GM/Detroit Diesel",
+       "url": "https://www.dieselhub.com/idi/6.2-gm.html",
+       "says": "IDI, Stanadyne DB-2 rotary pump"
+      },
+      {
+       "name": "DieselArmy - Family Lineage: The Evolution of GM Diesel Truck Engines",
+       "url": "https://www.dieselarmy.com/?p=8684",
+       "says": "Stanadyne DB2, injectors fire into pre-combustion chamber; naturally aspirated"
+      },
+      {
+       "name": "DrivingLine - Most hated: GM's 6.2L and 6.5L diesels",
+       "url": "https://drivingline.com/articles/most-hated-gm-s-62l-and-65l-diesels",
+       "says": "Stanadyne DB2 (1982-1993); naturally aspirated"
+      }
+     ],
+     "note": ""
+    },
+    "fuel_type": {
+     "value": "diesel",
+     "sources": [
+      {
+       "name": "GM Heritage Center 1984 Chevrolet Truck information kit p.22 (all GM = one source)",
+       "url": "https://www.gm.com/content/dam/company/no_search/heritage-archive-docs/vehicle-information-kits/chevrolet-trucks/1984-Chevrolet-Truck.pdf",
+       "says": "379 V8 Diesel"
+      },
+      {
+       "name": "EPA fueleconomy.gov vehicles.csv",
+       "url": "https://www.fueleconomy.gov/feg/epadata/vehicles.csv.zip",
+       "says": "fuelType Diesel"
+      },
+      {
+       "name": "Wikipedia - Detroit Diesel V8 engine",
+       "url": "https://en.wikipedia.org/wiki/Detroit_Diesel_V8_engine",
+       "says": "diesel"
+      }
+     ],
+     "note": ""
+    },
+    "years": {
+     "value": "1982-1993 (Chevrolet/GMC trucks, vans, SUVs)",
+     "sources": [
+      {
+       "name": "Wikipedia - Detroit Diesel V8 engine",
+       "url": "https://en.wikipedia.org/wiki/Detroit_Diesel_V8_engine",
+       "says": "introduced in 1982 ... produced until 1993"
+      },
+      {
+       "name": "DieselHub - 6.2L GM/Detroit Diesel",
+       "url": "https://www.dieselhub.com/idi/6.2-gm.html",
+       "says": "1982-1993"
+      },
+      {
+       "name": "DieselArmy - Family Lineage: The Evolution of GM Diesel Truck Engines",
+       "url": "https://www.dieselarmy.com/?p=8684",
+       "says": "1982-1993"
+      },
+      {
+       "name": "GM Heritage Center 1985 Chevrolet Truck information kit p.68 (all GM = one source)",
+       "url": "https://www.gm.com/content/dam/company/no_search/heritage-archive-docs/vehicle-information-kits/chevrolet-trucks/1985-Chevrolet-Truck.pdf",
+       "says": "This engine, introduced in 1982... ; GM kits list the 6.2 through 1993"
+      },
+      {
+       "name": "EPA fueleconomy.gov vehicles.csv",
+       "url": "https://www.fueleconomy.gov/feg/epadata/vehicles.csv.zip",
+       "says": "6.2 diesel listed 1984-1993 (the EPA file starts in 1984)"
+      }
+     ],
+     "note": ""
+    }
+   },
+   "variants": [
+    {
+     "year": "1982-1987",
+     "hp": 130,
+     "hp_basis": "SAE net",
+     "rpm": 3600,
+     "code": "LH6",
+     "application": "light-duty emissions, GVWR 8,500 lb and under (C/K pickups; R/V/G in 1988)",
+     "induction": "NA IDI",
+     "sources": [
+      {
+       "name": "GM Heritage Center 1983 Chevrolet Truck information kit p.98 (all GM = one source)",
+       "url": "https://www.gm.com/content/dam/company/no_search/heritage-archive-docs/vehicle-information-kits/chevrolet-trucks/1983-Chevrolet-Truck.pdf",
+       "says": "LH6 SAE net hp 130 @ 3600, 240 lb-ft @ 2000 (also 1984 p.22, 1985 p.104, 1986 p.53, 1987 p.14 kits)"
+      },
+      {
+       "name": "Wikipedia - Detroit Diesel V8 engine",
+       "url": "https://en.wikipedia.org/wiki/Detroit_Diesel_V8_engine",
+       "says": "At launch 130 hp @ 3600, 240 lb-ft @ 2000"
+      },
+      {
+       "name": "DieselHub - 6.2L GM/Detroit Diesel",
+       "url": "https://www.dieselhub.com/idi/6.2-gm.html",
+       "says": "LH6 1982-1989 130 @ 3,600"
+      },
+      {
+       "name": "DieselArmy - Family Lineage: The Evolution of GM Diesel Truck Engines",
+       "url": "https://www.dieselarmy.com/?p=8684",
+       "says": "130 horsepower"
+      },
+      {
+       "name": "The Autopian (cites Four Wheeler, April 1982 road test)",
+       "url": "https://www.theautopian.com/four-decades-ago-general-motors-tried-to-make-the-holy-grail-of-diesel-truck-engines-only-to-make-something-people-still-hate-today/",
+       "says": "1982 Four Wheeler test: 130 hp @ 3600, 240 lb-ft"
+      }
+     ],
+     "note": "Wikipedia, DieselArmy and Four Wheeler cover the 1982 launch; GM kits confirm 1983-1987. No 1982 model-year GM kit was available (the '1982' file is 1981 content)."
+    }
+   ],
+   "unverified": {
+    "compression_ratio": "CONFLICT. GM kits print 21.3:1 for BOTH LH6 (1983 p.98, 1985 p.104, 1988 p.49) and LL4 (1986 p.52, 1988 p.50). Wikipedia and DieselArmy: 21.5:1. DieselHub: LH6 21.5:1 all years; LL4 20.3:1 early 1982, 21.3:1 late 1982 on. The Autopian: 20.3:1 at launch. GM's 21.3:1 is the strongest single figure.",
+    "firing_order": "1-8-7-2-6-5-4-3 per DieselHub only. The GM 1998 kit gives the same order for the related 6.5. One source.",
+    "rod_length_in": "not found in acceptable sources"
+   },
+   "unverified_variants": [
+    {
+     "year": "1983-1984",
+     "code": "LL4",
+     "hp": 135,
+     "hp_basis": "SAE net",
+     "second_pass": true,
+     "note": "Heavy-duty emissions, GVWR over 8,500 lb. GM 1983 p.136 and 1984 p.22: 135 @ 3600 / 240 @ 2000. DieselHub: LL4 1982-1984 135 @ 3600. The two sources agree for 1983-1984 (second-pass); DieselHub alone covers 1982.",
+     "sources": [
+      {
+       "name": "GM Heritage Center 1984 Chevrolet Truck information kit p.22 (all GM = one source)",
+       "url": "https://www.gm.com/content/dam/company/no_search/heritage-archive-docs/vehicle-information-kits/chevrolet-trucks/1984-Chevrolet-Truck.pdf",
+       "says": "**6.2 Liter 379 V8 Diesel (heavy duty emissions, GVWR over 8500 lb): 135 @ 3600 rpm, 240 @ 2000"
+      },
+      {
+       "name": "DieselHub - 6.2L GM/Detroit Diesel",
+       "url": "https://www.dieselhub.com/idi/6.2-gm.html",
+       "says": "LL4 1982-1984 135 @ 3,600"
+      }
+     ]
+    },
+    {
+     "year": "1985-1987",
+     "code": "LL4",
+     "hp": 148,
+     "hp_basis": "SAE net",
+     "note": "GM 1985 (p.105), 1986 (p.52), 1987 (p.14): 148 @ 3600 / 246 @ 2000 for C/K/P; G vans 145 @ 3600 / 248. CONFLICT: DieselHub gives LL4 1985 on as 160 @ 3600 / 275, and The Autopian cites about 160/275 for HD in 1990. GM is the only source for 148."
+    },
+    {
+     "year": 1988,
+     "code": "LH6",
+     "hp": "126 (C/K manual) / 140 (C/K automatic) / 130 (R/V/G)",
+     "hp_basis": "SAE net",
+     "note": "GM 1988 p.49 only."
+    },
+    {
+     "year": 1988,
+     "code": "LL4",
+     "hp": "143 (C/K) / 148 (R/V/G/P)",
+     "hp_basis": "SAE net",
+     "note": "GM 1988 p.50: C/K 143 @ 3600 / 257; R/V/G/P 148 / 259. DieselHub assigns 143/257 to LH6 1990-1993, which GM does not support."
+    },
+    {
+     "year": 1990,
+     "code": "LH6",
+     "hp": "135 (manual) / 140 (automatic)",
+     "hp_basis": "SAE net",
+     "note": "GM 1990 C/K/Sierra p.17: 135 @ 3600 / 240 (manual), 140 @ 3600 / 250 (automatic). CONFLICT: DieselHub and The Autopian give 143/257 for 1990 light duty."
+    },
+    {
+     "year": "1990-1993",
+     "code": "LL4",
+     "hp": 150,
+     "hp_basis": "SAE net",
+     "note": "GM 1990: 150 @ 3600 / 265. GM 1991 (p.16) and 1993 (p.8): 150 @ 3500 / 280 @ 2000. BUT the 1992 C/K kit (p.16) prints LL4 148 @ 3600 / 246 @ 2000. Not corroborated outside GM; DieselHub says 160."
+    },
+    {
+     "year": "1991-1993",
+     "code": "LH6",
+     "hp": 140,
+     "hp_basis": "SAE net",
+     "note": "GM 1991 p.16, 1992 p.16, 1993 p.8: 140 @ 3600 / 255 @ 1900 (GVWR 8,500 lb and under). DieselArmy gives a 130-140 hp / 240-255 lb-ft range without years. DieselHub says 143. Only GM ties 140 to these years."
+    },
+    {
+     "year": "various",
+     "code": "(165 hp final spec, HMMWV 185 hp)",
+     "note": "Wikipedia: final spec 165 hp / 285 lb-ft; HMMWV 185 hp / 330 lb-ft. Neither appears in any GM truck kit read. No 155 hp rating was found for the 6.2 (155 hp is the 1994-95 6.5 L49)."
+    }
+   ]
+  },
+  {
+   "id": "gm-6-5-diesel",
+   "name": "GM/Detroit Diesel 6.5 V8 diesel and turbodiesel (L49 / L56 / L57 / L65)",
+   "fields": {
+    "displacement_ci": {
+     "value": 395,
+     "sources": [
+      {
+       "name": "GM Heritage Center 1998 Chevrolet Truck information kit p.50 (all GM = one source)",
+       "url": "https://www.gm.com/content/dam/company/no_search/heritage-archive-docs/vehicle-information-kits/chevrolet-trucks/1998-Chevrolet-Truck.pdf",
+       "says": "Displacement: 6468 cc (395 CID) [1998 Product Information - Truck Engines 42]"
+      },
+      {
+       "name": "Wikipedia - Detroit Diesel V8 engine",
+       "url": "https://en.wikipedia.org/wiki/Detroit_Diesel_V8_engine",
+       "says": "6.5 L (395 cu in)"
+      },
+      {
+       "name": "DieselHub - 6.5L GM/Detroit Diesel",
+       "url": "https://www.dieselhub.com/idi/6.5-gm.html",
+       "says": "395 cu in (6.5 L)"
+      },
+      {
+       "name": "DrivingLine - Most hated: GM's 6.2L and 6.5L diesels",
+       "url": "https://drivingline.com/articles/most-hated-gm-s-62l-and-65l-diesels",
+       "says": "395ci"
+      }
+     ],
+     "note": "DieselArmy prints 397 ci, and GM order-guide pages (1996 p.50, 1997 p.18) say '400 cu in'. Arithmetic settles it: 103.00 x 97.03 mm x 8 = 6468 cc = 394.7 ci; 4.06 x 4.06 x 3.82 x 0.7854 x 8 = 395.6 ci."
+    },
+    "displacement_l": {
+     "value": 6.5,
+     "sources": [
+      {
+       "name": "GM Heritage Center 1998 Chevrolet Truck information kit p.50 (all GM = one source)",
+       "url": "https://www.gm.com/content/dam/company/no_search/heritage-archive-docs/vehicle-information-kits/chevrolet-trucks/1998-Chevrolet-Truck.pdf",
+       "says": "6.5L V8 Turbo Diesel"
+      },
+      {
+       "name": "EPA fueleconomy.gov vehicles.csv",
+       "url": "https://www.fueleconomy.gov/feg/epadata/vehicles.csv.zip",
+       "says": "6.5 L diesel, 1994-1999"
+      },
+      {
+       "name": "Wikipedia - Detroit Diesel V8 engine",
+       "url": "https://en.wikipedia.org/wiki/Detroit_Diesel_V8_engine",
+       "says": "6.5 L"
+      }
+     ],
+     "note": ""
+    },
+    "num_cylinders": {
+     "value": 8,
+     "sources": [
+      {
+       "name": "GM Heritage Center 1998 Chevrolet Truck information kit p.50 (all GM = one source)",
+       "url": "https://www.gm.com/content/dam/company/no_search/heritage-archive-docs/vehicle-information-kits/chevrolet-trucks/1998-Chevrolet-Truck.pdf",
+       "says": "6.5L V8"
+      },
+      {
+       "name": "EPA fueleconomy.gov vehicles.csv",
+       "url": "https://www.fueleconomy.gov/feg/epadata/vehicles.csv.zip",
+       "says": "8 cylinders"
+      },
+      {
+       "name": "Wikipedia - Detroit Diesel V8 engine",
+       "url": "https://en.wikipedia.org/wiki/Detroit_Diesel_V8_engine",
+       "says": "V8"
+      },
+      {
+       "name": "DieselHub - 6.5L GM/Detroit Diesel",
+       "url": "https://www.dieselhub.com/idi/6.5-gm.html",
+       "says": "90 deg V-8"
+      }
+     ],
+     "note": ""
+    },
+    "configuration": {
+     "value": "90-degree V8",
+     "sources": [
+      {
+       "name": "DieselHub - 6.5L GM/Detroit Diesel",
+       "url": "https://www.dieselhub.com/idi/6.5-gm.html",
+       "says": "90 deg V-8"
+      },
+      {
+       "name": "Wikipedia - Detroit Diesel V8 engine",
+       "url": "https://en.wikipedia.org/wiki/Detroit_Diesel_V8_engine",
+       "says": "V8 (same family as the 90 deg 6.2)"
+      },
+      {
+       "name": "GM Heritage Center 1998 Chevrolet Truck information kit p.50 (all GM = one source)",
+       "url": "https://www.gm.com/content/dam/company/no_search/heritage-archive-docs/vehicle-information-kits/chevrolet-trucks/1998-Chevrolet-Truck.pdf",
+       "says": "6.5L V8"
+      }
+     ],
+     "note": "Only DieselHub states 90 degrees outright; V8 is verified."
+    },
+    "bore_in": {
+     "value": 4.06,
+     "sources": [
+      {
+       "name": "GM Heritage Center 1998 Chevrolet Truck information kit p.50 (all GM = one source)",
+       "url": "https://www.gm.com/content/dam/company/no_search/heritage-archive-docs/vehicle-information-kits/chevrolet-trucks/1998-Chevrolet-Truck.pdf",
+       "says": "Bore x Stroke: 103.00 x 97.03 mm (4.06 x 3.82 in)"
+      },
+      {
+       "name": "Wikipedia - Detroit Diesel V8 engine",
+       "url": "https://en.wikipedia.org/wiki/Detroit_Diesel_V8_engine",
+       "says": "4.06 in (103.1 mm)"
+      },
+      {
+       "name": "DieselHub - 6.5L GM/Detroit Diesel",
+       "url": "https://www.dieselhub.com/idi/6.5-gm.html",
+       "says": "4.055 in"
+      },
+      {
+       "name": "DieselArmy - Family Lineage: The Evolution of GM Diesel Truck Engines",
+       "url": "https://www.dieselarmy.com/?p=8684",
+       "says": "4.06 in"
+      },
+      {
+       "name": "DrivingLine - Most hated: GM's 6.2L and 6.5L diesels",
+       "url": "https://drivingline.com/articles/most-hated-gm-s-62l-and-65l-diesels",
+       "says": "4.06 in"
+      }
+     ],
+     "note": "103.00 mm (GM)"
+    },
+    "stroke_in": {
+     "value": 3.82,
+     "sources": [
+      {
+       "name": "GM Heritage Center 1998 Chevrolet Truck information kit p.50 (all GM = one source)",
+       "url": "https://www.gm.com/content/dam/company/no_search/heritage-archive-docs/vehicle-information-kits/chevrolet-trucks/1998-Chevrolet-Truck.pdf",
+       "says": "103.00 x 97.03 mm (4.06 x 3.82 in)"
+      },
+      {
+       "name": "Wikipedia - Detroit Diesel V8 engine",
+       "url": "https://en.wikipedia.org/wiki/Detroit_Diesel_V8_engine",
+       "says": "3.82 in (97.0 mm)"
+      },
+      {
+       "name": "DieselHub - 6.5L GM/Detroit Diesel",
+       "url": "https://www.dieselhub.com/idi/6.5-gm.html",
+       "says": "3.818 in"
+      },
+      {
+       "name": "DieselArmy - Family Lineage: The Evolution of GM Diesel Truck Engines",
+       "url": "https://www.dieselarmy.com/?p=8684",
+       "says": "3.82 in"
+      },
+      {
+       "name": "DrivingLine - Most hated: GM's 6.2L and 6.5L diesels",
+       "url": "https://drivingline.com/articles/most-hated-gm-s-62l-and-65l-diesels",
+       "says": "3.82 in"
+      }
+     ],
+     "note": "97.03 mm (GM)"
+    },
+    "valvetrain": {
+     "value": "OHV pushrod, 2 valves/cyl, hydraulic roller lifters",
+     "sources": [
+      {
+       "name": "GM Heritage Center 1998 Chevrolet Truck information kit p.50 (all GM = one source)",
+       "url": "https://www.gm.com/content/dam/company/no_search/heritage-archive-docs/vehicle-information-kits/chevrolet-trucks/1998-Chevrolet-Truck.pdf",
+       "says": "Valve configuration: Overhead valves; Valve lifters: Hydraulic roller"
+      },
+      {
+       "name": "Wikipedia - Detroit Diesel V8 engine",
+       "url": "https://en.wikipedia.org/wiki/Detroit_Diesel_V8_engine",
+       "says": "OHV 2 valves x cyl."
+      },
+      {
+       "name": "DieselHub - 6.5L GM/Detroit Diesel",
+       "url": "https://www.dieselhub.com/idi/6.5-gm.html",
+       "says": "OHV (same family as the 6.2)"
+      }
+     ],
+     "note": ""
+    },
+    "block_material": {
+     "value": "cast iron",
+     "sources": [
+      {
+       "name": "GM Heritage Center 1998 Chevrolet Truck information kit p.50 (all GM = one source)",
+       "url": "https://www.gm.com/content/dam/company/no_search/heritage-archive-docs/vehicle-information-kits/chevrolet-trucks/1998-Chevrolet-Truck.pdf",
+       "says": "Block: CAST IRON"
+      },
+      {
+       "name": "Wikipedia - Detroit Diesel V8 engine",
+       "url": "https://en.wikipedia.org/wiki/Detroit_Diesel_V8_engine",
+       "says": "Cast iron"
+      },
+      {
+       "name": "DieselHub - 6.5L GM/Detroit Diesel",
+       "url": "https://www.dieselhub.com/idi/6.5-gm.html",
+       "says": "Cast iron block"
+      }
+     ],
+     "note": ""
+    },
+    "head_material": {
+     "value": "cast iron",
+     "sources": [
+      {
+       "name": "GM Heritage Center 1998 Chevrolet Truck information kit p.50 (all GM = one source)",
+       "url": "https://www.gm.com/content/dam/company/no_search/heritage-archive-docs/vehicle-information-kits/chevrolet-trucks/1998-Chevrolet-Truck.pdf",
+       "says": "Cylinder Head: CAST IRON"
+      },
+      {
+       "name": "Wikipedia - Detroit Diesel V8 engine",
+       "url": "https://en.wikipedia.org/wiki/Detroit_Diesel_V8_engine",
+       "says": "Cast iron"
+      },
+      {
+       "name": "DieselHub - 6.5L GM/Detroit Diesel",
+       "url": "https://www.dieselhub.com/idi/6.5-gm.html",
+       "says": "cast iron heads"
+      }
+     ],
+     "note": ""
+    },
+    "induction": {
+     "value": "indirect injection; naturally aspirated (L49/L57) or turbocharged (L56/L65). Mechanical DB2 pump 1992-93, electronic Stanadyne DS4 1994 on",
+     "sources": [
+      {
+       "name": "GM Heritage Center 1994 Chevrolet Truck information kit p.65 (all GM = one source)",
+       "url": "https://www.gm.com/content/dam/company/no_search/heritage-archive-docs/vehicle-information-kits/chevrolet-trucks/1994-Chevrolet-Truck.pdf",
+       "says": "L49 Fuel System IFI; L56/L65 TIDI (also 1995 p.9; 1998 p.50 'indirect electronic fuel injection with turbo')"
+      },
+      {
+       "name": "DieselHub - 6.5L GM/Detroit Diesel",
+       "url": "https://www.dieselhub.com/idi/6.5-gm.html",
+       "says": "IDI; DB-2 (NA), DS-4 with PMD (turbo); L49/L57 NA, L56/L65 turbo"
+      },
+      {
+       "name": "DieselArmy - Family Lineage: The Evolution of GM Diesel Truck Engines",
+       "url": "https://www.dieselarmy.com/?p=8684",
+       "says": "1992-93 DB2, 1994-2000 DS4; NA 1994-95 and turbo versions"
+      },
+      {
+       "name": "Wikipedia - Detroit Diesel V8 engine",
+       "url": "https://en.wikipedia.org/wiki/Detroit_Diesel_V8_engine",
+       "says": "L49/L57 naturally aspirated; L56/L65 turbocharged"
+      },
+      {
+       "name": "EPA fueleconomy.gov vehicles.csv",
+       "url": "https://www.fueleconomy.gov/feg/epadata/vehicles.csv.zip",
+       "says": "6.5 diesel NA 1994-95, turbo 1994-99"
+      }
+     ],
+     "note": ""
+    },
+    "fuel_type": {
+     "value": "diesel",
+     "sources": [
+      {
+       "name": "GM Heritage Center 1998 Chevrolet Truck information kit p.50 (all GM = one source)",
+       "url": "https://www.gm.com/content/dam/company/no_search/heritage-archive-docs/vehicle-information-kits/chevrolet-trucks/1998-Chevrolet-Truck.pdf",
+       "says": "6.5L V8 Turbo Diesel"
+      },
+      {
+       "name": "EPA fueleconomy.gov vehicles.csv",
+       "url": "https://www.fueleconomy.gov/feg/epadata/vehicles.csv.zip",
+       "says": "Diesel"
+      },
+      {
+       "name": "Wikipedia - Detroit Diesel V8 engine",
+       "url": "https://en.wikipedia.org/wiki/Detroit_Diesel_V8_engine",
+       "says": "diesel"
+      }
+     ],
+     "note": ""
+    },
+    "years": {
+     "value": "1992-1999 model years in GM light-duty pickups/SUVs (heavy-duty, van and medium-duty use ran later)",
+     "sources": [
+      {
+       "name": "Wikipedia - Detroit Diesel V8 engine",
+       "url": "https://en.wikipedia.org/wiki/Detroit_Diesel_V8_engine",
+       "says": "introduced 1992; light-duty use through 1999, heavy-duty through 2002"
+      },
+      {
+       "name": "GM Heritage Center 1992 Chevrolet Truck information kit p.16 (all GM = one source)",
+       "url": "https://www.gm.com/content/dam/company/no_search/heritage-archive-docs/vehicle-information-kits/chevrolet-trucks/1992-Chevrolet-Truck.pdf",
+       "says": "6.5L V8 L65 'Interim 1992 availability' (p.16); the 1999 kit still lists L56/L65"
+      },
+      {
+       "name": "EPA fueleconomy.gov vehicles.csv",
+       "url": "https://www.fueleconomy.gov/feg/epadata/vehicles.csv.zip",
+       "says": "6.5 diesel light-duty listings 1994-1999"
+      },
+      {
+       "name": "DieselArmy - Family Lineage: The Evolution of GM Diesel Truck Engines",
+       "url": "https://www.dieselarmy.com/?p=8684",
+       "says": "6.5 introduced 1992"
+      }
+     ],
+     "note": "End year differs by source: DieselArmy and DrivingLine say 2000; DieselHub says 2002 for GM, then AM General. Only the 1992 start and the light-duty run through 1999 are verified."
+    }
+   },
+   "variants": [
+    {
+     "year": 1992,
+     "hp": 180,
+     "hp_basis": "SAE net",
+     "code": "L65",
+     "induction": "turbo IDI",
+     "application": "C/K 2500/3500, GVWR 8,600-12,000 lb",
+     "rpm": "3500 (GM 1992)",
+     "sources": [
+      {
+       "name": "GM Heritage Center 1992 Chevrolet Truck information kit p.16 (all GM = one source)",
+       "url": "https://www.gm.com/content/dam/company/no_search/heritage-archive-docs/vehicle-information-kits/chevrolet-trucks/1992-Chevrolet-Truck.pdf",
+       "says": "L65 180 @ 3500, 380 @ 1700, Turbo Direct Fuel Injection, interim 1992 availability"
+      },
+      {
+       "name": "DieselArmy - Family Lineage: The Evolution of GM Diesel Truck Engines",
+       "url": "https://www.dieselarmy.com/?p=8684",
+       "says": "1992: 180 hp at 3,500 rpm, 380 lb-ft"
+      },
+      {
+       "name": "DieselHub - 6.5L GM/Detroit Diesel",
+       "url": "https://www.dieselhub.com/idi/6.5-gm.html",
+       "says": "180 hp @ 3,400 rpm (introductory)"
+      }
+     ],
+     "note": "The peak rpm differs (GM and DieselArmy 3500; DieselHub 3400), but the hp figure agrees."
+    },
+    {
+     "year": 1993,
+     "hp": 190,
+     "hp_basis": "SAE net",
+     "code": "L65",
+     "induction": "turbo IDI",
+     "second_pass": true,
+     "sources": [
+      {
+       "name": "GM Heritage Center 1993 Chevrolet Truck information kit p.8 (all GM = one source)",
+       "url": "https://www.gm.com/content/dam/company/no_search/heritage-archive-docs/vehicle-information-kits/chevrolet-trucks/1993-Chevrolet-Truck.pdf",
+       "says": "L65 above 8500 GVW: 190 @ 3400, 380 @ 1700"
+      },
+      {
+       "name": "DieselArmy - Family Lineage: The Evolution of GM Diesel Truck Engines",
+       "url": "https://www.dieselarmy.com/?p=8684",
+       "says": "1993: 190 hp at 3,400 rpm, 380 lb-ft"
+      }
+     ]
+    },
+    {
+     "year": "1994-1995",
+     "hp": 155,
+     "hp_basis": "SAE net",
+     "code": "L49",
+     "induction": "naturally aspirated IDI",
+     "application": "8,500 lb GVW or under",
+     "second_pass": true,
+     "sources": [
+      {
+       "name": "GM Heritage Center 1994 Chevrolet Truck information kit p.65 (all GM = one source)",
+       "url": "https://www.gm.com/content/dam/company/no_search/heritage-archive-docs/vehicle-information-kits/chevrolet-trucks/1994-Chevrolet-Truck.pdf",
+       "says": "L49 6.5L V8 Diesel, 8500 GVW or under: 155 @ 3600, 275 @ 1700, IFI (also 1995 p.9)"
+      },
+      {
+       "name": "DieselArmy - Family Lineage: The Evolution of GM Diesel Truck Engines",
+       "url": "https://www.dieselarmy.com/?p=8684",
+       "says": "6.5L naturally aspirated 1994-1995: 155 hp at 3,600 rpm, 275 lb-ft at 1,700"
+      }
+     ]
+    }
+   ],
+   "unverified": {
+    "compression_ratio": "CONFLICT. GM 1998 (p.50): 20.2:1 (turbo L65/L56). Wikipedia: GM early 21.3:1, GM late 20.3:1, marine 18.0:1. DieselHub: 18:1 to 21.5:1 by year and application.",
+    "firing_order": "1-8-7-2-6-5-4-3. GM 1998 kit p.50 and DieselHub agree. Wikipedia does not give it. Two sources; second-pass candidate.",
+    "rod_length_in": "not found",
+    "RPO_note": "The brief calls L49 a turbo. GM 1994 and 1995 kits, Wikipedia and DieselHub all say L49 = naturally aspirated (VIN P), light duty. L57 = naturally aspirated heavy-duty/HO (VIN Y, also military) per Wikipedia and DieselHub; no GM truck kit read lists L57."
+   },
+   "unverified_variants": [
+    {
+     "year": "1994-1995 (also 1998 kit)",
+     "code": "L56",
+     "hp": 180,
+     "hp_basis": "SAE net",
+     "note": "GM 1994 p.65, 1995 p.9: 180 @ 3400 / 360 @ 1700, 8,500 GVW or under, TIDI. GM 1998 p.50: 180 @ 3400 / 360 @ 1800 (C/K). GM only."
+    },
+    {
+     "year": "1994-1995",
+     "code": "L65",
+     "hp": 190,
+     "hp_basis": "SAE net",
+     "note": "GM 1994 p.65, 1995 p.9 and the 1995 chassis-cab page p.19: 190 @ 3400 / 385 @ 1700, above 8,500 GVW. GM only (DieselArmy gives 190 for 1993 only)."
+    },
+    {
+     "year": "1998 (page repeated in 1999 kit)",
+     "code": "L65",
+     "hp": "195 (C/K, G, P) / 190 @ 3200 (MD)",
+     "hp_basis": "SAE net",
+     "note": "GM 1998 p.50: 195 @ 3400, 430 lb-ft @ 1800. GM only."
+    },
+    {
+     "year": "1996-1997",
+     "note": "The GM 1996 and 1997 kits read are order guides with no hp tables. Ratings for these years are not pinned."
+    },
+    {
+     "year": "unknown",
+     "hp": 215,
+     "note": "Wikipedia and DieselHub give 215 hp @ 3200 / 440 lb-ft as the highest 6.5 rating, with no year or RPO. It is not in any GM kit read."
+    },
+    {
+     "year": "unknown",
+     "hp": 160,
+     "code": "NA (L57?)",
+     "note": "Wikipedia: the lowest 6.5 rating is 160 hp @ 3600 / 290 lb-ft (naturally aspirated). The Autopian: 1992 NA 160/290. Not in the GM C/K kits."
+    },
+    {
+     "year": "unknown",
+     "code": "LQM / LQN",
+     "note": "Wikipedia: LQM 175 hp, LQN 190 hp. No other source."
+    }
+   ]
+  },
+  {
+   "id": "gm-8-1-vortec",
+   "name": "GM Vortec 8100 8.1L V8 (RPO L18)",
+   "fields": {
+    "displacement_ci": {
+     "value": 496,
+     "sources": [
+      {
+       "name": "GM Powertrain press release, Vortec HP3 8100 crate engine (SEMA 2002), reprinted by Rockcrawler (GM = one source)",
+       "url": "https://rockcrawler.com/trailreports/SEMA2002/press_releases/gm_vortec_hp_8100.asp",
+       "says": "Displacement 8,127 cc (496 cu in) - HP3 built on the Vortec 8100 truck block"
+      },
+      {
+       "name": "Machine Design - 2001 Yukon XL: Think big",
+       "url": "https://www.machinedesign.com/archive/article/21816741/2001-yukon-xl-think-big",
+       "says": "8.1-liter or 8,128 cc is 496 cu in"
+      },
+      {
+       "name": "DieselHub - GM 8.1 Vortec V8",
+       "url": "https://www.dieselhub.com/gas/gm-8.1-vortec-v8.html",
+       "says": "8.1 liters, 496 CID"
+      },
+      {
+       "name": "Wikipedia - Chevrolet big-block engine (Vortec 8100 section)",
+       "url": "https://en.wikipedia.org/wiki/Chevrolet_big-block_engine",
+       "says": "495.95 cu in (8.1 L)"
+      }
+     ],
+     "note": "Check: 4.25 x 4.25 x 4.37 x 0.7854 x 8 = 495.9 ci."
+    },
+    "displacement_l": {
+     "value": 8.1,
+     "sources": [
+      {
+       "name": "Chevrolet press release 'Silverado HD models begin first full year of production' (Aug 2001), reprinted by Rockcrawler (GM)",
+       "url": "https://rockcrawler.com/features/newsshorts/01august/chevy_HD.asp",
+       "says": "Vortec 8100"
+      },
+      {
+       "name": "Machine Design - 2001 Yukon XL: Think big",
+       "url": "https://www.machinedesign.com/archive/article/21816741/2001-yukon-xl-think-big",
+       "says": "8.1-liter"
+      },
+      {
+       "name": "Wikipedia - Chevrolet big-block engine (Vortec 8100 section)",
+       "url": "https://en.wikipedia.org/wiki/Chevrolet_big-block_engine",
+       "says": "8.1 L"
+      },
+      {
+       "name": "DieselHub - GM 8.1 Vortec V8",
+       "url": "https://www.dieselhub.com/gas/gm-8.1-vortec-v8.html",
+       "says": "8.1 liters"
+      }
+     ],
+     "note": ""
+    },
+    "num_cylinders": {
+     "value": 8,
+     "sources": [
+      {
+       "name": "GM Powertrain press release, Vortec HP3 8100 crate engine (SEMA 2002), reprinted by Rockcrawler (GM = one source)",
+       "url": "https://rockcrawler.com/trailreports/SEMA2002/press_releases/gm_vortec_hp_8100.asp",
+       "says": "8.1L V8"
+      },
+      {
+       "name": "Wikipedia - Chevrolet big-block engine (Vortec 8100 section)",
+       "url": "https://en.wikipedia.org/wiki/Chevrolet_big-block_engine",
+       "says": "V8"
+      },
+      {
+       "name": "DieselHub - GM 8.1 Vortec V8",
+       "url": "https://www.dieselhub.com/gas/gm-8.1-vortec-v8.html",
+       "says": "V-8"
+      },
+      {
+       "name": "Machine Design - 2001 Yukon XL: Think big",
+       "url": "https://www.machinedesign.com/archive/article/21816741/2001-yukon-xl-think-big",
+       "says": "8.1-liter big-block V8"
+      }
+     ],
+     "note": ""
+    },
+    "configuration": {
+     "value": "90-degree V8 (big-block)",
+     "sources": [
+      {
+       "name": "DieselHub - GM 8.1 Vortec V8",
+       "url": "https://www.dieselhub.com/gas/gm-8.1-vortec-v8.html",
+       "says": "90 deg V-8"
+      },
+      {
+       "name": "Wikipedia - Chevrolet big-block engine (Vortec 8100 section)",
+       "url": "https://en.wikipedia.org/wiki/Chevrolet_big-block_engine",
+       "says": "big-block V8"
+      },
+      {
+       "name": "GM Powertrain press release, Vortec HP3 8100 crate engine (SEMA 2002), reprinted by Rockcrawler (GM = one source)",
+       "url": "https://rockcrawler.com/trailreports/SEMA2002/press_releases/gm_vortec_hp_8100.asp",
+       "says": "8.1L V8"
+      }
+     ],
+     "note": "Only DieselHub states 90 degrees outright; V8 is verified."
+    },
+    "bore_in": {
+     "value": 4.25,
+     "sources": [
+      {
+       "name": "GM Powertrain press release, Vortec HP3 8100 crate engine (SEMA 2002), reprinted by Rockcrawler (GM = one source)",
+       "url": "https://rockcrawler.com/trailreports/SEMA2002/press_releases/gm_vortec_hp_8100.asp",
+       "says": "107.95 x 111.00 mm (4.25 x 4.37 in)"
+      },
+      {
+       "name": "Wikipedia - Chevrolet big-block engine (Vortec 8100 section)",
+       "url": "https://en.wikipedia.org/wiki/Chevrolet_big-block_engine",
+       "says": "retained the 4.25 in (107.95 mm) bore"
+      },
+      {
+       "name": "DieselHub - GM 8.1 Vortec V8",
+       "url": "https://www.dieselhub.com/gas/gm-8.1-vortec-v8.html",
+       "says": "4.25 in"
+      }
+     ],
+     "note": "107.95 mm. The GM figure comes from the HP3 crate engine built on the truck block."
+    },
+    "stroke_in": {
+     "value": 4.37,
+     "sources": [
+      {
+       "name": "GM Powertrain press release, Vortec HP3 8100 crate engine (SEMA 2002), reprinted by Rockcrawler (GM = one source)",
+       "url": "https://rockcrawler.com/trailreports/SEMA2002/press_releases/gm_vortec_hp_8100.asp",
+       "says": "107.95 x 111.00 mm (4.25 x 4.37 in)"
+      },
+      {
+       "name": "Wikipedia - Chevrolet big-block engine (Vortec 8100 section)",
+       "url": "https://en.wikipedia.org/wiki/Chevrolet_big-block_engine",
+       "says": "stroke was increased to 4.37 in (111.00 mm)"
+      },
+      {
+       "name": "DieselHub - GM 8.1 Vortec V8",
+       "url": "https://www.dieselhub.com/gas/gm-8.1-vortec-v8.html",
+       "says": "4.37 in"
+      },
+      {
+       "name": "Machine Design - 2001 Yukon XL: Think big",
+       "url": "https://www.machinedesign.com/archive/article/21816741/2001-yukon-xl-think-big",
+       "says": "stroke increased by 0.37 in (vs 4.00 in 454)"
+      }
+     ],
+     "note": "111.00 mm"
+    },
+    "firing_order": {
+     "value": "1-8-7-2-6-5-4-3",
+     "sources": [
+      {
+       "name": "Wikipedia - Chevrolet big-block engine (Vortec 8100 section)",
+       "url": "https://en.wikipedia.org/wiki/Chevrolet_big-block_engine",
+       "says": "1-8-7-2-6-5-4-3, vs 1-8-4-3-6-5-7-2 for older big-blocks"
+      },
+      {
+       "name": "DieselHub - GM 8.1 Vortec V8",
+       "url": "https://www.dieselhub.com/gas/gm-8.1-vortec-v8.html",
+       "says": "1-8-7-2-6-5-4-3"
+      },
+      {
+       "name": "GM Powertrain press release, Vortec HP3 8100 crate engine (SEMA 2002), reprinted by Rockcrawler (GM = one source)",
+       "url": "https://rockcrawler.com/trailreports/SEMA2002/press_releases/gm_vortec_hp_8100.asp",
+       "says": "Firing order 1-8-7-2-6-5-4-3"
+      }
+     ],
+     "note": ""
+    },
+    "valvetrain": {
+     "value": "OHV pushrod, 2 valves/cyl, hydraulic roller lifters",
+     "sources": [
+      {
+       "name": "Wikipedia - Chevrolet big-block engine (Vortec 8100 section)",
+       "url": "https://en.wikipedia.org/wiki/Chevrolet_big-block_engine",
+       "says": "two valves per cylinder"
+      },
+      {
+       "name": "DieselHub - GM 8.1 Vortec V8",
+       "url": "https://www.dieselhub.com/gas/gm-8.1-vortec-v8.html",
+       "says": "OHV, 2 valves per cylinder"
+      },
+      {
+       "name": "GM Powertrain press release, Vortec HP3 8100 crate engine (SEMA 2002), reprinted by Rockcrawler (GM = one source)",
+       "url": "https://rockcrawler.com/trailreports/SEMA2002/press_releases/gm_vortec_hp_8100.asp",
+       "says": "pushrod-actuated overhead valves, 2 per cylinder; hydraulic roller lifters"
+      }
+     ],
+     "note": "Roller lifters come only from the GM HP3 sheet."
+    },
+    "block_material": {
+     "value": "cast iron",
+     "sources": [
+      {
+       "name": "Wikipedia - Chevrolet big-block engine (Vortec 8100 section)",
+       "url": "https://en.wikipedia.org/wiki/Chevrolet_big-block_engine",
+       "says": "all-iron engine (block and heads)"
+      },
+      {
+       "name": "DieselHub - GM 8.1 Vortec V8",
+       "url": "https://www.dieselhub.com/gas/gm-8.1-vortec-v8.html",
+       "says": "Cast iron"
+      },
+      {
+       "name": "GM Powertrain press release, Vortec HP3 8100 crate engine (SEMA 2002), reprinted by Rockcrawler (GM = one source)",
+       "url": "https://rockcrawler.com/trailreports/SEMA2002/press_releases/gm_vortec_hp_8100.asp",
+       "says": "Block: cast iron"
+      }
+     ],
+     "note": ""
+    },
+    "head_material": {
+     "value": "cast iron",
+     "sources": [
+      {
+       "name": "Wikipedia - Chevrolet big-block engine (Vortec 8100 section)",
+       "url": "https://en.wikipedia.org/wiki/Chevrolet_big-block_engine",
+       "says": "all-iron engine (block and heads)"
+      },
+      {
+       "name": "DieselHub - GM 8.1 Vortec V8",
+       "url": "https://www.dieselhub.com/gas/gm-8.1-vortec-v8.html",
+       "says": "Cast iron"
+      },
+      {
+       "name": "GM Powertrain press release, Vortec HP3 8100 crate engine (SEMA 2002), reprinted by Rockcrawler (GM = one source)",
+       "url": "https://rockcrawler.com/trailreports/SEMA2002/press_releases/gm_vortec_hp_8100.asp",
+       "says": "Cylinder head: cast iron"
+      }
+     ],
+     "note": ""
+    },
+    "induction": {
+     "value": "port fuel injection",
+     "sources": [
+      {
+       "name": "GM Powertrain press release, Vortec HP3 8100 crate engine (SEMA 2002), reprinted by Rockcrawler (GM = one source)",
+       "url": "https://rockcrawler.com/trailreports/SEMA2002/press_releases/gm_vortec_hp_8100.asp",
+       "says": "factory port fuel injection manifold"
+      },
+      {
+       "name": "Wikipedia - Chevrolet big-block engine (Vortec 8100 section)",
+       "url": "https://en.wikipedia.org/wiki/Chevrolet_big-block_engine",
+       "says": "fuel injection nearly identical to the Gen III small-block system"
+      }
+     ],
+     "note": "Two sources. The DieselHub page fetched did not state it.",
+     "second_pass": true
+    },
+    "fuel_type": {
+     "value": "gasoline (unleaded, 87 octane)",
+     "sources": [
+      {
+       "name": "GM Powertrain press release, Vortec HP3 8100 crate engine (SEMA 2002), reprinted by Rockcrawler (GM = one source)",
+       "url": "https://rockcrawler.com/trailreports/SEMA2002/press_releases/gm_vortec_hp_8100.asp",
+       "says": "Unleaded gasoline, 87 octane"
+      },
+      {
+       "name": "DieselHub - GM 8.1 Vortec V8",
+       "url": "https://www.dieselhub.com/gas/gm-8.1-vortec-v8.html",
+       "says": "listed in the gasoline engine section"
+      },
+      {
+       "name": "Wikipedia - Chevrolet big-block engine (Vortec 8100 section)",
+       "url": "https://en.wikipedia.org/wiki/Chevrolet_big-block_engine",
+       "says": "gasoline big-block"
+      }
+     ],
+     "note": ""
+    },
+    "years": {
+     "value": "introduced for the 2001 model year in GM full-size trucks",
+     "sources": [
+      {
+       "name": "Wikipedia - Chevrolet big-block engine (Vortec 8100 section)",
+       "url": "https://en.wikipedia.org/wiki/Chevrolet_big-block_engine",
+       "says": "introduced with the 2001 full-size pickups; last L18 built December 2009"
+      },
+      {
+       "name": "DieselHub - GM 8.1 Vortec V8",
+       "url": "https://www.dieselhub.com/gas/gm-8.1-vortec-v8.html",
+       "says": "2001-2006 truck/SUV, 2001-2009 marine/motorhome"
+      },
+      {
+       "name": "Machine Design - 2001 Yukon XL: Think big",
+       "url": "https://www.machinedesign.com/archive/article/21816741/2001-yukon-xl-think-big",
+       "says": "2001 Yukon XL with Vortec 8100"
+      },
+      {
+       "name": "Chevrolet press release 'Silverado HD models begin first full year of production' (Aug 2001), reprinted by Rockcrawler (GM)",
+       "url": "https://rockcrawler.com/features/newsshorts/01august/chevy_HD.asp",
+       "says": "Aug 2001 release, Silverado HD with Vortec 8100"
+      }
+     ],
+     "note": "End of truck use is not verified; see unverified."
+    }
+   },
+   "variants": [
+    {
+     "year": "2001",
+     "hp": 340,
+     "hp_basis": "SAE net",
+     "rpm": 4200,
+     "code": "L18",
+     "induction": "port FI",
+     "application": "Silverado/Sierra 2500HD/3500, Suburban/Yukon XL 2500 (Avalanche 2500 from 2002)",
+     "sources": [
+      {
+       "name": "Chevrolet press release 'Silverado HD models begin first full year of production' (Aug 2001), reprinted by Rockcrawler (GM)",
+       "url": "https://rockcrawler.com/features/newsshorts/01august/chevy_HD.asp",
+       "says": "340 horsepower at 4200 rpm and 455 lb-ft at 3200 rpm"
+      },
+      {
+       "name": "Machine Design - 2001 Yukon XL: Think big",
+       "url": "https://www.machinedesign.com/archive/article/21816741/2001-yukon-xl-think-big",
+       "says": "340 hp at 4,200 rpm; 455 lb-ft at 3,200 rpm (2001 Yukon XL)"
+      },
+      {
+       "name": "DieselHub - GM 8.1 Vortec V8",
+       "url": "https://www.dieselhub.com/gas/gm-8.1-vortec-v8.html",
+       "says": "2001-2003: 340 hp @ 4,200, 455 lb-ft @ 3,200"
+      }
+     ],
+     "note": "Three sources pin 2001. For 2002-2003 there is only DieselHub plus a 2003 GM brochure quoted in a forum, which is not counted."
+    }
+   ],
+   "unverified": {
+    "compression_ratio": "9.1:1 per DieselHub. GM's 9.1:1 is for the HP3 crate engine, a different product. ItStillRuns and chevytrucks.org are not acceptable sources. Not counted.",
+    "rod_length_in": "6.385 in was not found in any acceptable source. Wikipedia says only 'longer connecting rods'.",
+    "years_end": "DieselHub says truck use ended after the 2006 MY. The claim that the 2007 Silverado/Sierra Classic HD still offered it is not verified. Motorhome (Workhorse) and medium-duty (Kodiak/TopKick) use continued to 2009 (context only).",
+    "max_rpm": "5,000 rpm per DieselHub only"
+   },
+   "unverified_variants": [
+    {
+     "year": "2002-2003",
+     "code": "L18",
+     "hp": 340,
+     "note": "DieselHub: 2001-2003 340/455. A 2003 GM brochure is quoted only in a forum. One acceptable source beyond 2001."
+    },
+    {
+     "year": "2004-2006",
+     "code": "L18",
+     "note": "CONFLICT. DieselHub: 320 hp @ 4,200 / 440 lb-ft @ 3,200. A GM Canada email quoted on the GM-Trucks forum and dealer-reproduced GM spec copy give 330 hp @ 4,200 / 450 lb-ft @ 3,200 for 2004-2005 Silverado HD. A Hagerty auction listing says 320/440 for a 2004 Suburban 2500. The split may be 330 (pickups) vs 320 (Suburban/Yukon XL with 4L85-E), but no acceptable GM document was found to pin it."
+    }
+   ]
+  }
+ ]
+}

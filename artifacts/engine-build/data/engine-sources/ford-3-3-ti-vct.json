@@ -1,0 +1,328 @@
+{
+ "name": "Ford 3.3L Ti-VCT V6 (Cyclone family, PFDI)",
+ "fields": {
+  "displacement_l": {
+   "value": 3.3,
+   "sources": [
+    {
+     "name": "Ford Motor Co. (all Ford material = one source)",
+     "url": "https://www.fromtheroad.ford.com/content/dam/fordmediasite/us/en/library/2020/specs/2020-F-150-Technical-Specs.pdf",
+     "says": "3.3 liters (204 cubic inches)"
+    },
+    {
+     "name": "Wikipedia",
+     "url": "https://en.wikipedia.org/wiki/Ford_Cyclone_engine",
+     "says": "3.3 L; 3,339 cc"
+    },
+    {
+     "name": "f150hub",
+     "url": "https://www.f150hub.com/specs/ford-3.3-v6.html",
+     "says": "3.3 liters"
+    }
+   ],
+   "note": ""
+  },
+  "displacement_ci": {
+   "value": 204,
+   "sources": [
+    {
+     "name": "Ford Motor Co. (all Ford material = one source)",
+     "url": "https://www.fromtheroad.ford.com/content/dam/fordmediasite/us/en/library/2021/specs/2021-F-150-Technical-Specs.pdf",
+     "says": "3,340 cc, 203.8 cubic inches"
+    },
+    {
+     "name": "Wikipedia",
+     "url": "https://en.wikipedia.org/wiki/Ford_Cyclone_engine",
+     "says": "203.8 cu in"
+    },
+    {
+     "name": "f150hub",
+     "url": "https://www.f150hub.com/specs/ford-3.3-v6.html",
+     "says": "204 CID (203.55)"
+    }
+   ],
+   "note": "Ford's 2020 F-150 sheet rounds to 204; 2021 sheet gives 203.8."
+  },
+  "num_cylinders": {
+   "value": 6,
+   "sources": [
+    {
+     "name": "Ford Motor Co. (all Ford material = one source)",
+     "url": "https://www.fromtheroad.ford.com/content/dam/fordmediasite/us/en/library/2020/specs/2020-F-150-Technical-Specs.pdf",
+     "says": "V6"
+    },
+    {
+     "name": "Wikipedia",
+     "url": "https://en.wikipedia.org/wiki/Ford_Cyclone_engine",
+     "says": "V6"
+    },
+    {
+     "name": "f150hub",
+     "url": "https://www.f150hub.com/specs/ford-3.3-v6.html",
+     "says": "V6"
+    }
+   ],
+   "note": ""
+  },
+  "configuration": {
+   "value": "60-degree V6",
+   "sources": [
+    {
+     "name": "Ford Motor Co. (all Ford material = one source)",
+     "url": "https://www.fromtheroad.ford.com/content/dam/fordmediasite/us/en/library/2021/specs/2021-F-150-Technical-Specs.pdf",
+     "says": "Naturally-aspirated 60-degree V6"
+    },
+    {
+     "name": "Wikipedia",
+     "url": "https://en.wikipedia.org/wiki/Ford_Cyclone_engine",
+     "says": "60 deg V6 (Cyclone)"
+    }
+   ],
+   "note": "",
+   "second_pass": true
+  },
+  "bore_in": {
+   "value": 3.5594,
+   "sources": [
+    {
+     "name": "Ford Motor Co. (all Ford material = one source)",
+     "url": "https://www.fromtheroad.ford.com/content/dam/fordmediasite/us/en/library/2020/specs/2020-Explorer-Tech-Specs.pdf",
+     "says": "90.41 mm x 86.7 mm (Explorer Hybrid); F-150 sheets: 3.56 inches"
+    },
+    {
+     "name": "f150hub",
+     "url": "https://www.f150hub.com/specs/ford-3.3-v6.html",
+     "says": "3.56 in (90.42 mm)"
+    }
+   ],
+   "note": "90.41 mm = 3.5594 in. Wikipedia gives 90.4 mm only as the family's smallest bore; arithmetic 90.41^2 x 86.7 x 0.7854 x 6 = 3,339 cc matches Wikipedia's 3,339 cc.",
+   "second_pass": true
+  },
+  "stroke_in": {
+   "value": 3.4134,
+   "sources": [
+    {
+     "name": "Ford Motor Co. (all Ford material = one source)",
+     "url": "https://www.fromtheroad.ford.com/content/dam/fordmediasite/us/en/library/2020/specs/2020-Explorer-Tech-Specs.pdf",
+     "says": "86.7 mm; F-150 sheets 3.41 in"
+    },
+    {
+     "name": "Wikipedia",
+     "url": "https://en.wikipedia.org/wiki/Ford_Cyclone_engine",
+     "says": "86.7 mm (3.41 in)"
+    },
+    {
+     "name": "f150hub",
+     "url": "https://www.f150hub.com/specs/ford-3.3-v6.html",
+     "says": "3.41 in (86.61 mm)"
+    }
+   ],
+   "note": "86.7 mm = 3.4134 in."
+  },
+  "compression_ratio": {
+   "value": "12.0:1",
+   "sources": [
+    {
+     "name": "Ford Motor Co. (all Ford material = one source)",
+     "url": "https://www.fromtheroad.ford.com/content/dam/fordmediasite/us/en/library/2020/specs/2020-F-150-Technical-Specs.pdf",
+     "says": "12:1"
+    },
+    {
+     "name": "Jalopnik",
+     "url": "https://jalopnik.com/the-2018-ford-f-150-gets-a-new-engine-and-more-horsepow-1796143724",
+     "says": "12:1 versus 10.8:1"
+    },
+    {
+     "name": "f150hub",
+     "url": "https://www.f150hub.com/specs/ford-3.3-v6.html",
+     "says": "12.0:1"
+    }
+   ],
+   "note": ""
+  },
+  "valvetrain": {
+   "value": "DOHC, 4 valves/cyl, direct-acting mechanical buckets, twin independent VCT (Ti-VCT)",
+   "sources": [
+    {
+     "name": "Ford Motor Co. (all Ford material = one source)",
+     "url": "https://www.fromtheroad.ford.com/content/dam/fordmediasite/us/en/library/2020/specs/2020-Explorer-Tech-Specs.pdf",
+     "says": "DOHC, direct acting mechanical buckets, four valves per cylinder, twin independent variable camshaft timing"
+    },
+    {
+     "name": "f150hub",
+     "url": "https://www.f150hub.com/specs/ford-3.3-v6.html",
+     "says": "DOHC, VCT"
+    },
+    {
+     "name": "Wikipedia",
+     "url": "https://en.wikipedia.org/wiki/Ford_Cyclone_engine",
+     "says": "DOHC; Ti-VCT on later models"
+    }
+   ],
+   "note": ""
+  },
+  "block_material": {
+   "value": "aluminum",
+   "sources": [
+    {
+     "name": "Ford Motor Co. (all Ford material = one source)",
+     "url": "https://www.fromtheroad.ford.com/content/dam/fordmediasite/us/en/library/2020/specs/2020-F-150-Technical-Specs.pdf",
+     "says": "Aluminum block, aluminum heads"
+    },
+    {
+     "name": "f150hub",
+     "url": "https://www.f150hub.com/specs/ford-3.3-v6.html",
+     "says": "Aluminum"
+    },
+    {
+     "name": "Wikipedia",
+     "url": "https://en.wikipedia.org/wiki/Ford_Cyclone_engine",
+     "says": "aluminium block (Cyclone family)"
+    }
+   ],
+   "note": ""
+  },
+  "head_material": {
+   "value": "aluminum",
+   "sources": [
+    {
+     "name": "Ford Motor Co. (all Ford material = one source)",
+     "url": "https://www.fromtheroad.ford.com/content/dam/fordmediasite/us/en/library/2020/specs/2020-F-150-Technical-Specs.pdf",
+     "says": "aluminum heads"
+    },
+    {
+     "name": "f150hub",
+     "url": "https://www.f150hub.com/specs/ford-3.3-v6.html",
+     "says": "Aluminum"
+    },
+    {
+     "name": "Wikipedia",
+     "url": "https://en.wikipedia.org/wiki/Ford_Cyclone_engine",
+     "says": "aluminium heads (Cyclone family)"
+    }
+   ],
+   "note": ""
+  },
+  "induction": {
+   "value": "naturally aspirated; port fuel injection + direct injection (PFDI, two injectors/cyl)",
+   "sources": [
+    {
+     "name": "Ford Motor Co. (all Ford material = one source)",
+     "url": "https://www.fromtheroad.ford.com/content/dam/fordmediasite/us/en/library/2020/specs/2020-F-150-Technical-Specs.pdf",
+     "says": "Port fuel injection and direct injection"
+    },
+    {
+     "name": "Jalopnik",
+     "url": "https://jalopnik.com/the-2018-ford-f-150-gets-a-new-engine-and-more-horsepow-1796143724",
+     "says": "both port and direct injection"
+    },
+    {
+     "name": "Wikipedia",
+     "url": "https://en.wikipedia.org/wiki/Ford_Cyclone_engine",
+     "says": "port and direct injection from 2018"
+    }
+   ],
+   "note": "f150hub says 'Direct fuel injection' only (incomplete)."
+  },
+  "years": {
+   "value": "2018-2023 (F-150); 2020+ Explorer Hybrid / Police Interceptor Utility",
+   "sources": [
+    {
+     "name": "Wikipedia",
+     "url": "https://en.wikipedia.org/wiki/Ford_Cyclone_engine",
+     "says": "2018-2023 F-150; 2020-present Explorer Hybrid, PIU"
+    },
+    {
+     "name": "Ford Motor Co. (all Ford material = one source)",
+     "url": "https://media.ford.com/content/fordmedia/fna/ca/en/news/2017/08/09/new-ford-f150-most-advanced-powertrain-lineup-ever.html",
+     "says": "new 3.3-liter V6 for 2018 F-150; 2020 Explorer Hybrid spec sheet"
+    },
+    {
+     "name": "f150hub",
+     "url": "https://www.f150hub.com/specs/ford-3.3-v6.html",
+     "says": "2018-current F-150"
+    }
+   ],
+   "note": ""
+  }
+ },
+ "variants": [
+  {
+   "year": "2018-2020",
+   "application": "F-150",
+   "hp": 290,
+   "hp_basis": "SAE net",
+   "compression_ratio": 12.0,
+   "sources": [
+    {
+     "name": "Ford Motor Co. (all Ford material = one source)",
+     "url": "https://www.fromtheroad.ford.com/content/dam/fordmediasite/us/en/library/2020/specs/2020-F-150-Technical-Specs.pdf",
+     "says": "290 hp @6,500 rpm, 265 lb-ft @4,000"
+    },
+    {
+     "name": "Jalopnik",
+     "url": "https://jalopnik.com/the-2018-ford-f-150-gets-a-new-engine-and-more-horsepow-1796143724",
+     "says": "290 horsepower at 6,500 rpm"
+    },
+    {
+     "name": "Wikipedia",
+     "url": "https://en.wikipedia.org/wiki/Ford_Cyclone_engine",
+     "says": "290 hp at 6,500 rpm"
+    }
+   ]
+  },
+  {
+   "year": "2021-2023",
+   "application": "F-150 (14th gen)",
+   "hp": 290,
+   "hp_basis": "SAE net",
+   "sources": [
+    {
+     "name": "Ford Motor Co. (all Ford material = one source)",
+     "url": "https://www.fromtheroad.ford.com/content/dam/fordmediasite/us/en/library/2021/specs/2021-F-150-Technical-Specs.pdf",
+     "says": "290 @ 6,500 rpm, 265 lb-ft"
+    },
+    {
+     "name": "Wikipedia",
+     "url": "https://en.wikipedia.org/wiki/Ford_Cyclone_engine",
+     "says": "2018-2023 F-150: 290 hp"
+    },
+    {
+     "name": "f150hub",
+     "url": "https://www.f150hub.com/specs/ford-3.3-v6.html",
+     "says": "290 hp, 2018-current"
+    }
+   ]
+  },
+  {
+   "year": "2020+",
+   "application": "Explorer Hybrid (3.3 hybrid)",
+   "hp": 318,
+   "hp_basis": "SAE net, combined system (engine + 35 kW motor)",
+   "compression_ratio": 12.0,
+   "note": "Combined system rating, not engine-only.",
+   "sources": [
+    {
+     "name": "Ford Motor Co. (all Ford material = one source)",
+     "url": "https://www.fromtheroad.ford.com/content/dam/fordmediasite/us/en/library/2020/specs/2020-Explorer-Tech-Specs.pdf",
+     "says": "318 combined, 322 lb.-ft."
+    },
+    {
+     "name": "Wikipedia",
+     "url": "https://en.wikipedia.org/wiki/Ford_Cyclone_engine",
+     "says": "318 hp combined, 322 lb-ft"
+    },
+    {
+     "name": "Yahoo Autos first drive",
+     "url": "https://autos.yahoo.com/2020-ford-explorer-hybrid-first-100200276.html",
+     "says": "total system output 318 horsepower and 322 pound-feet"
+    }
+   ]
+  }
+ ],
+ "unverified": {
+  "fuel_type": "Gasoline everywhere; E85 flex-fuel (F-150 'FFV') per Ford only.",
+  "firing_order": "not found",
+  "explorer_hybrid_engine_only": "285 hp @6,500 / 260 lb-ft per Wikipedia only (also the Police Interceptor Utility)"
+ }
+}

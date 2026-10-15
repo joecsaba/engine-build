@@ -1,0 +1,188 @@
+{
+ "name": "Ford 240 inline-six",
+ "fields": {
+  "displacement_ci": {
+   "value": 240,
+   "sources": [
+    {
+     "name": "Wikipedia",
+     "url": "https://en.wikipedia.org/wiki/Ford_straight-six_engine",
+     "says": "239.8 cu in (3.9 L)"
+    },
+    {
+     "name": "Over-Drive Magazine 1965 Ford fact sheet",
+     "url": "https://over-drive-magazine.com/2024/08/22/1965-ford-full-size-cars-fact-sheet/",
+     "says": "Displacement: 240 cubic inches"
+    },
+    {
+     "name": "Jalopnik",
+     "url": "https://jalopnik.com/heres-why-the-ford-300-inline-six-is-one-of-the-greates-1795351528",
+     "says": "240 CID, de-stroked 300"
+    }
+   ],
+   "note": "4.00 x 4.00 x 3.18 x 0.7854 x 6 = 239.8 ci"
+  },
+  "num_cylinders": {
+   "value": 6,
+   "sources": [
+    {
+     "name": "Wikipedia",
+     "url": "https://en.wikipedia.org/wiki/Ford_straight-six_engine",
+     "says": ""
+    },
+    {
+     "name": "Over-Drive",
+     "url": "https://over-drive-magazine.com/2024/08/22/1965-ford-full-size-cars-fact-sheet/",
+     "says": "240 CID I-6"
+    },
+    {
+     "name": "Jalopnik",
+     "url": "https://jalopnik.com/heres-why-the-ford-300-inline-six-is-one-of-the-greates-1795351528",
+     "says": ""
+    }
+   ],
+   "note": ""
+  },
+  "configuration": {
+   "value": "inline-six",
+   "sources": [
+    {
+     "name": "Wikipedia",
+     "url": "https://en.wikipedia.org/wiki/Ford_straight-six_engine",
+     "says": ""
+    },
+    {
+     "name": "Over-Drive",
+     "url": "https://over-drive-magazine.com/2024/08/22/1965-ford-full-size-cars-fact-sheet/",
+     "says": "I-6"
+    },
+    {
+     "name": "Jalopnik",
+     "url": "https://jalopnik.com/heres-why-the-ford-300-inline-six-is-one-of-the-greates-1795351528",
+     "says": ""
+    }
+   ],
+   "note": ""
+  },
+  "bore_in": {
+   "value": 4.0,
+   "sources": [
+    {
+     "name": "Wikipedia",
+     "url": "https://en.wikipedia.org/wiki/Ford_straight-six_engine",
+     "says": "4 in (101.6 mm)"
+    },
+    {
+     "name": "Over-Drive",
+     "url": "https://over-drive-magazine.com/2024/08/22/1965-ford-full-size-cars-fact-sheet/",
+     "says": "Bore and stroke: 4.00 x 3.18 inches"
+    }
+   ],
+   "note": "Second pass. Jalopnik says same block as the 300 but gives no figure.",
+   "second_pass": true
+  },
+  "stroke_in": {
+   "value": 3.18,
+   "sources": [
+    {
+     "name": "Wikipedia",
+     "url": "https://en.wikipedia.org/wiki/Ford_straight-six_engine",
+     "says": "3.18 in (80.8 mm)"
+    },
+    {
+     "name": "Over-Drive",
+     "url": "https://over-drive-magazine.com/2024/08/22/1965-ford-full-size-cars-fact-sheet/",
+     "says": "4.00 x 3.18 inches"
+    }
+   ],
+   "note": "Second pass; arithmetic 4.00^2 x 3.18 x 0.7854 x 6 = 239.8 ci matches.",
+   "second_pass": true
+  },
+  "valvetrain": {
+   "value": "OHV, 2 valves/cyl, hydraulic lifters",
+   "sources": [
+    {
+     "name": "Over-Drive",
+     "url": "https://over-drive-magazine.com/2024/08/22/1965-ford-full-size-cars-fact-sheet/",
+     "says": "Overhead valves ... Valve Lifters: Hydraulic"
+    },
+    {
+     "name": "EngineLabs",
+     "url": "https://enginelabs.com/news/straightforward-fords-indestructible-inline-six-cylinder-explained",
+     "says": "overhead-valve, hydraulic lifters (240 and 300)"
+    }
+   ],
+   "note": "",
+   "second_pass": true
+  },
+  "block_material": {
+   "value": "cast iron",
+   "sources": [
+    {
+     "name": "Over-Drive",
+     "url": "https://over-drive-magazine.com/2024/08/22/1965-ford-full-size-cars-fact-sheet/",
+     "says": "Cast iron block"
+    },
+    {
+     "name": "EngineLabs",
+     "url": "https://enginelabs.com/news/straightforward-fords-indestructible-inline-six-cylinder-explained",
+     "says": "cast-iron block (240 and 300)"
+    },
+    {
+     "name": "Jalopnik",
+     "url": "https://jalopnik.com/heres-why-the-ford-300-inline-six-is-one-of-the-greates-1795351528",
+     "says": "same iron block"
+    }
+   ],
+   "note": ""
+  },
+  "years": {
+   "value": "1965-1974 (cars 1965-72, fleet to 1974; trucks/vans 1965-74)",
+   "sources": [
+    {
+     "name": "Wikipedia",
+     "url": "https://en.wikipedia.org/wiki/Ford_straight-six_engine",
+     "says": "1965-1972 full-sized cars (fleet to 1974), 1965-1974 trucks and vans"
+    },
+    {
+     "name": "Over-Drive",
+     "url": "https://over-drive-magazine.com/2024/08/22/1965-ford-full-size-cars-fact-sheet/",
+     "says": "all-new 240 CID for 1965"
+    }
+   ],
+   "note": "End year from Wikipedia only; Jalopnik says 'mid-70s'.",
+   "second_pass": true
+  }
+ },
+ "variants": [
+  {
+   "year": 1965,
+   "hp": 150,
+   "hp_basis": "gross",
+   "code": "V (1965 Ford car engine code)",
+   "induction": "1-bbl",
+   "compression_ratio": 9.2,
+   "second_pass": true,
+   "note": "Wikipedia + Over-Drive agree (car rating). CR 9.2 from Over-Drive only. Truck rating not separately confirmed.",
+   "sources": [
+    {
+     "name": "Wikipedia",
+     "url": "https://en.wikipedia.org/wiki/Ford_straight-six_engine",
+     "says": "150 hp (112 kW) (gross)"
+    },
+    {
+     "name": "Over-Drive",
+     "url": "https://over-drive-magazine.com/2024/08/22/1965-ford-full-size-cars-fact-sheet/",
+     "says": "Horsepower: 150 @ 4000 RPM; CR 9.2:1"
+    }
+   ]
+  }
+ ],
+ "unverified": {
+  "displacement_l": "3.9 L per Wikipedia only (arithmetically 3.93 L)",
+  "compression_ratio": "9.2:1 per Over-Drive only (conceptcarz/VIN decoder not acceptable)",
+  "rod_length_in": "not found",
+  "firing_order": "not found",
+  "head_material": "cast iron per EngineLabs (family-level) only"
+ }
+}

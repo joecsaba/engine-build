@@ -1,0 +1,334 @@
+{
+ "name": "GM Vortec 8100 8.1L V8 (RPO L18)",
+ "fields": {
+  "displacement_ci": {
+   "value": 496,
+   "sources": [
+    {
+     "name": "GM Powertrain press release, Vortec HP3 8100 crate engine (SEMA 2002), reprinted by Rockcrawler (GM = one source)",
+     "url": "https://rockcrawler.com/trailreports/SEMA2002/press_releases/gm_vortec_hp_8100.asp",
+     "says": "Displacement 8,127 cc (496 cu in) - HP3 built on the Vortec 8100 truck block"
+    },
+    {
+     "name": "Machine Design - 2001 Yukon XL: Think big",
+     "url": "https://www.machinedesign.com/archive/article/21816741/2001-yukon-xl-think-big",
+     "says": "8.1-liter or 8,128 cc is 496 cu in"
+    },
+    {
+     "name": "DieselHub - GM 8.1 Vortec V8",
+     "url": "https://www.dieselhub.com/gas/gm-8.1-vortec-v8.html",
+     "says": "8.1 liters, 496 CID"
+    },
+    {
+     "name": "Wikipedia - Chevrolet big-block engine (Vortec 8100 section)",
+     "url": "https://en.wikipedia.org/wiki/Chevrolet_big-block_engine",
+     "says": "495.95 cu in (8.1 L)"
+    }
+   ],
+   "note": "Check: 4.25 x 4.25 x 4.37 x 0.7854 x 8 = 495.9 ci."
+  },
+  "displacement_l": {
+   "value": 8.1,
+   "sources": [
+    {
+     "name": "Chevrolet press release 'Silverado HD models begin first full year of production' (Aug 2001), reprinted by Rockcrawler (GM)",
+     "url": "https://rockcrawler.com/features/newsshorts/01august/chevy_HD.asp",
+     "says": "Vortec 8100"
+    },
+    {
+     "name": "Machine Design - 2001 Yukon XL: Think big",
+     "url": "https://www.machinedesign.com/archive/article/21816741/2001-yukon-xl-think-big",
+     "says": "8.1-liter"
+    },
+    {
+     "name": "Wikipedia - Chevrolet big-block engine (Vortec 8100 section)",
+     "url": "https://en.wikipedia.org/wiki/Chevrolet_big-block_engine",
+     "says": "8.1 L"
+    },
+    {
+     "name": "DieselHub - GM 8.1 Vortec V8",
+     "url": "https://www.dieselhub.com/gas/gm-8.1-vortec-v8.html",
+     "says": "8.1 liters"
+    }
+   ],
+   "note": ""
+  },
+  "num_cylinders": {
+   "value": 8,
+   "sources": [
+    {
+     "name": "GM Powertrain press release, Vortec HP3 8100 crate engine (SEMA 2002), reprinted by Rockcrawler (GM = one source)",
+     "url": "https://rockcrawler.com/trailreports/SEMA2002/press_releases/gm_vortec_hp_8100.asp",
+     "says": "8.1L V8"
+    },
+    {
+     "name": "Wikipedia - Chevrolet big-block engine (Vortec 8100 section)",
+     "url": "https://en.wikipedia.org/wiki/Chevrolet_big-block_engine",
+     "says": "V8"
+    },
+    {
+     "name": "DieselHub - GM 8.1 Vortec V8",
+     "url": "https://www.dieselhub.com/gas/gm-8.1-vortec-v8.html",
+     "says": "V-8"
+    },
+    {
+     "name": "Machine Design - 2001 Yukon XL: Think big",
+     "url": "https://www.machinedesign.com/archive/article/21816741/2001-yukon-xl-think-big",
+     "says": "8.1-liter big-block V8"
+    }
+   ],
+   "note": ""
+  },
+  "configuration": {
+   "value": "90-degree V8 (big-block)",
+   "sources": [
+    {
+     "name": "DieselHub - GM 8.1 Vortec V8",
+     "url": "https://www.dieselhub.com/gas/gm-8.1-vortec-v8.html",
+     "says": "90 deg V-8"
+    },
+    {
+     "name": "Wikipedia - Chevrolet big-block engine (Vortec 8100 section)",
+     "url": "https://en.wikipedia.org/wiki/Chevrolet_big-block_engine",
+     "says": "big-block V8"
+    },
+    {
+     "name": "GM Powertrain press release, Vortec HP3 8100 crate engine (SEMA 2002), reprinted by Rockcrawler (GM = one source)",
+     "url": "https://rockcrawler.com/trailreports/SEMA2002/press_releases/gm_vortec_hp_8100.asp",
+     "says": "8.1L V8"
+    }
+   ],
+   "note": "Only DieselHub states 90 degrees outright; V8 is verified."
+  },
+  "bore_in": {
+   "value": 4.25,
+   "sources": [
+    {
+     "name": "GM Powertrain press release, Vortec HP3 8100 crate engine (SEMA 2002), reprinted by Rockcrawler (GM = one source)",
+     "url": "https://rockcrawler.com/trailreports/SEMA2002/press_releases/gm_vortec_hp_8100.asp",
+     "says": "107.95 x 111.00 mm (4.25 x 4.37 in)"
+    },
+    {
+     "name": "Wikipedia - Chevrolet big-block engine (Vortec 8100 section)",
+     "url": "https://en.wikipedia.org/wiki/Chevrolet_big-block_engine",
+     "says": "retained the 4.25 in (107.95 mm) bore"
+    },
+    {
+     "name": "DieselHub - GM 8.1 Vortec V8",
+     "url": "https://www.dieselhub.com/gas/gm-8.1-vortec-v8.html",
+     "says": "4.25 in"
+    }
+   ],
+   "note": "107.95 mm. The GM figure comes from the HP3 crate engine built on the truck block."
+  },
+  "stroke_in": {
+   "value": 4.37,
+   "sources": [
+    {
+     "name": "GM Powertrain press release, Vortec HP3 8100 crate engine (SEMA 2002), reprinted by Rockcrawler (GM = one source)",
+     "url": "https://rockcrawler.com/trailreports/SEMA2002/press_releases/gm_vortec_hp_8100.asp",
+     "says": "107.95 x 111.00 mm (4.25 x 4.37 in)"
+    },
+    {
+     "name": "Wikipedia - Chevrolet big-block engine (Vortec 8100 section)",
+     "url": "https://en.wikipedia.org/wiki/Chevrolet_big-block_engine",
+     "says": "stroke was increased to 4.37 in (111.00 mm)"
+    },
+    {
+     "name": "DieselHub - GM 8.1 Vortec V8",
+     "url": "https://www.dieselhub.com/gas/gm-8.1-vortec-v8.html",
+     "says": "4.37 in"
+    },
+    {
+     "name": "Machine Design - 2001 Yukon XL: Think big",
+     "url": "https://www.machinedesign.com/archive/article/21816741/2001-yukon-xl-think-big",
+     "says": "stroke increased by 0.37 in (vs 4.00 in 454)"
+    }
+   ],
+   "note": "111.00 mm"
+  },
+  "firing_order": {
+   "value": "1-8-7-2-6-5-4-3",
+   "sources": [
+    {
+     "name": "Wikipedia - Chevrolet big-block engine (Vortec 8100 section)",
+     "url": "https://en.wikipedia.org/wiki/Chevrolet_big-block_engine",
+     "says": "1-8-7-2-6-5-4-3, vs 1-8-4-3-6-5-7-2 for older big-blocks"
+    },
+    {
+     "name": "DieselHub - GM 8.1 Vortec V8",
+     "url": "https://www.dieselhub.com/gas/gm-8.1-vortec-v8.html",
+     "says": "1-8-7-2-6-5-4-3"
+    },
+    {
+     "name": "GM Powertrain press release, Vortec HP3 8100 crate engine (SEMA 2002), reprinted by Rockcrawler (GM = one source)",
+     "url": "https://rockcrawler.com/trailreports/SEMA2002/press_releases/gm_vortec_hp_8100.asp",
+     "says": "Firing order 1-8-7-2-6-5-4-3"
+    }
+   ],
+   "note": ""
+  },
+  "valvetrain": {
+   "value": "OHV pushrod, 2 valves/cyl, hydraulic roller lifters",
+   "sources": [
+    {
+     "name": "Wikipedia - Chevrolet big-block engine (Vortec 8100 section)",
+     "url": "https://en.wikipedia.org/wiki/Chevrolet_big-block_engine",
+     "says": "two valves per cylinder"
+    },
+    {
+     "name": "DieselHub - GM 8.1 Vortec V8",
+     "url": "https://www.dieselhub.com/gas/gm-8.1-vortec-v8.html",
+     "says": "OHV, 2 valves per cylinder"
+    },
+    {
+     "name": "GM Powertrain press release, Vortec HP3 8100 crate engine (SEMA 2002), reprinted by Rockcrawler (GM = one source)",
+     "url": "https://rockcrawler.com/trailreports/SEMA2002/press_releases/gm_vortec_hp_8100.asp",
+     "says": "pushrod-actuated overhead valves, 2 per cylinder; hydraulic roller lifters"
+    }
+   ],
+   "note": "Roller lifters come only from the GM HP3 sheet."
+  },
+  "block_material": {
+   "value": "cast iron",
+   "sources": [
+    {
+     "name": "Wikipedia - Chevrolet big-block engine (Vortec 8100 section)",
+     "url": "https://en.wikipedia.org/wiki/Chevrolet_big-block_engine",
+     "says": "all-iron engine (block and heads)"
+    },
+    {
+     "name": "DieselHub - GM 8.1 Vortec V8",
+     "url": "https://www.dieselhub.com/gas/gm-8.1-vortec-v8.html",
+     "says": "Cast iron"
+    },
+    {
+     "name": "GM Powertrain press release, Vortec HP3 8100 crate engine (SEMA 2002), reprinted by Rockcrawler (GM = one source)",
+     "url": "https://rockcrawler.com/trailreports/SEMA2002/press_releases/gm_vortec_hp_8100.asp",
+     "says": "Block: cast iron"
+    }
+   ],
+   "note": ""
+  },
+  "head_material": {
+   "value": "cast iron",
+   "sources": [
+    {
+     "name": "Wikipedia - Chevrolet big-block engine (Vortec 8100 section)",
+     "url": "https://en.wikipedia.org/wiki/Chevrolet_big-block_engine",
+     "says": "all-iron engine (block and heads)"
+    },
+    {
+     "name": "DieselHub - GM 8.1 Vortec V8",
+     "url": "https://www.dieselhub.com/gas/gm-8.1-vortec-v8.html",
+     "says": "Cast iron"
+    },
+    {
+     "name": "GM Powertrain press release, Vortec HP3 8100 crate engine (SEMA 2002), reprinted by Rockcrawler (GM = one source)",
+     "url": "https://rockcrawler.com/trailreports/SEMA2002/press_releases/gm_vortec_hp_8100.asp",
+     "says": "Cylinder head: cast iron"
+    }
+   ],
+   "note": ""
+  },
+  "induction": {
+   "value": "port fuel injection",
+   "sources": [
+    {
+     "name": "GM Powertrain press release, Vortec HP3 8100 crate engine (SEMA 2002), reprinted by Rockcrawler (GM = one source)",
+     "url": "https://rockcrawler.com/trailreports/SEMA2002/press_releases/gm_vortec_hp_8100.asp",
+     "says": "factory port fuel injection manifold"
+    },
+    {
+     "name": "Wikipedia - Chevrolet big-block engine (Vortec 8100 section)",
+     "url": "https://en.wikipedia.org/wiki/Chevrolet_big-block_engine",
+     "says": "fuel injection nearly identical to the Gen III small-block system"
+    }
+   ],
+   "note": "Two sources. The DieselHub page fetched did not state it.",
+   "second_pass": true
+  },
+  "fuel_type": {
+   "value": "gasoline (unleaded, 87 octane)",
+   "sources": [
+    {
+     "name": "GM Powertrain press release, Vortec HP3 8100 crate engine (SEMA 2002), reprinted by Rockcrawler (GM = one source)",
+     "url": "https://rockcrawler.com/trailreports/SEMA2002/press_releases/gm_vortec_hp_8100.asp",
+     "says": "Unleaded gasoline, 87 octane"
+    },
+    {
+     "name": "DieselHub - GM 8.1 Vortec V8",
+     "url": "https://www.dieselhub.com/gas/gm-8.1-vortec-v8.html",
+     "says": "listed in the gasoline engine section"
+    },
+    {
+     "name": "Wikipedia - Chevrolet big-block engine (Vortec 8100 section)",
+     "url": "https://en.wikipedia.org/wiki/Chevrolet_big-block_engine",
+     "says": "gasoline big-block"
+    }
+   ],
+   "note": ""
+  },
+  "years": {
+   "value": "introduced for the 2001 model year in GM full-size trucks",
+   "sources": [
+    {
+     "name": "Wikipedia - Chevrolet big-block engine (Vortec 8100 section)",
+     "url": "https://en.wikipedia.org/wiki/Chevrolet_big-block_engine",
+     "says": "introduced with the 2001 full-size pickups; last L18 built December 2009"
+    },
+    {
+     "name": "DieselHub - GM 8.1 Vortec V8",
+     "url": "https://www.dieselhub.com/gas/gm-8.1-vortec-v8.html",
+     "says": "2001-2006 truck/SUV, 2001-2009 marine/motorhome"
+    },
+    {
+     "name": "Machine Design - 2001 Yukon XL: Think big",
+     "url": "https://www.machinedesign.com/archive/article/21816741/2001-yukon-xl-think-big",
+     "says": "2001 Yukon XL with Vortec 8100"
+    },
+    {
+     "name": "Chevrolet press release 'Silverado HD models begin first full year of production' (Aug 2001), reprinted by Rockcrawler (GM)",
+     "url": "https://rockcrawler.com/features/newsshorts/01august/chevy_HD.asp",
+     "says": "Aug 2001 release, Silverado HD with Vortec 8100"
+    }
+   ],
+   "note": "End of truck use is not verified; see unverified."
+  }
+ },
+ "variants": [
+  {
+   "year": "2001",
+   "hp": 340,
+   "hp_basis": "SAE net",
+   "rpm": 4200,
+   "code": "L18",
+   "induction": "port FI",
+   "application": "Silverado/Sierra 2500HD/3500, Suburban/Yukon XL 2500 (Avalanche 2500 from 2002)",
+   "sources": [
+    {
+     "name": "Chevrolet press release 'Silverado HD models begin first full year of production' (Aug 2001), reprinted by Rockcrawler (GM)",
+     "url": "https://rockcrawler.com/features/newsshorts/01august/chevy_HD.asp",
+     "says": "340 horsepower at 4200 rpm and 455 lb-ft at 3200 rpm"
+    },
+    {
+     "name": "Machine Design - 2001 Yukon XL: Think big",
+     "url": "https://www.machinedesign.com/archive/article/21816741/2001-yukon-xl-think-big",
+     "says": "340 hp at 4,200 rpm; 455 lb-ft at 3,200 rpm (2001 Yukon XL)"
+    },
+    {
+     "name": "DieselHub - GM 8.1 Vortec V8",
+     "url": "https://www.dieselhub.com/gas/gm-8.1-vortec-v8.html",
+     "says": "2001-2003: 340 hp @ 4,200, 455 lb-ft @ 3,200"
+    }
+   ],
+   "note": "Three sources pin 2001. For 2002-2003 there is only DieselHub plus a 2003 GM brochure quoted in a forum, which is not counted."
+  }
+ ],
+ "unverified": {
+  "compression_ratio": "9.1:1 per DieselHub. GM's 9.1:1 is for the HP3 crate engine, a different product. ItStillRuns and chevytrucks.org are not acceptable sources. Not counted.",
+  "rod_length_in": "6.385 in was not found in any acceptable source. Wikipedia says only 'longer connecting rods'.",
+  "years_end": "DieselHub says truck use ended after the 2006 MY. The claim that the 2007 Silverado/Sierra Classic HD still offered it is not verified. Motorhome (Workhorse) and medium-duty (Kodiak/TopKick) use continued to 2009 (context only).",
+  "max_rpm": "5,000 rpm per DieselHub only"
+ }
+}

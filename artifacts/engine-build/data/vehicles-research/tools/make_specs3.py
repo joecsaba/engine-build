@@ -171,7 +171,7 @@ S["f-150"] = dict(make="Ford", model="F-150", makeSlug="ford", slug="f-150",
   exclude={"1993|351|210": "1993 rating is 200; 210 is the 1992 and 1994 figure"},
   cid_remap={"226": 227},  # the 3.7 Cyclone V6 is 3,726 cc
   # the 4.2 Essex V6 and the 3.0 Power Stroke have no page; their same-size pages are other engines
-  no_link=[{"cid": 256, "years": [1997, 2008]}, {"cid": 183, "years": [2018, 2021]}],
+  no_link=[{"cid": 183, "years": [2018, 2021]}],
   names={f"{y}|204|290": "3.3L / 204 V6" for y in range(2018, 2024)},
   notes={**{f"{y}|213|430": "Hybrid: 430 hp is the combined output of the 3.5 EcoBoost V6 and the electric motor." for y in range(2021, 2027)},
          **{f"{y}|None|452": "452 hp with the standard-range battery; 580 hp with the extended-range battery." for y in range(2022, 2026)}})

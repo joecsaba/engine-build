@@ -1,0 +1,378 @@
+{
+ "name": "GM/Detroit Diesel 6.5 V8 diesel and turbodiesel (L49 / L56 / L57 / L65)",
+ "fields": {
+  "displacement_ci": {
+   "value": 395,
+   "sources": [
+    {
+     "name": "GM Heritage Center 1998 Chevrolet Truck information kit p.50 (all GM = one source)",
+     "url": "https://www.gm.com/content/dam/company/no_search/heritage-archive-docs/vehicle-information-kits/chevrolet-trucks/1998-Chevrolet-Truck.pdf",
+     "says": "Displacement: 6468 cc (395 CID) [1998 Product Information - Truck Engines 42]"
+    },
+    {
+     "name": "Wikipedia - Detroit Diesel V8 engine",
+     "url": "https://en.wikipedia.org/wiki/Detroit_Diesel_V8_engine",
+     "says": "6.5 L (395 cu in)"
+    },
+    {
+     "name": "DieselHub - 6.5L GM/Detroit Diesel",
+     "url": "https://www.dieselhub.com/idi/6.5-gm.html",
+     "says": "395 cu in (6.5 L)"
+    },
+    {
+     "name": "DrivingLine - Most hated: GM's 6.2L and 6.5L diesels",
+     "url": "https://drivingline.com/articles/most-hated-gm-s-62l-and-65l-diesels",
+     "says": "395ci"
+    }
+   ],
+   "note": "DieselArmy prints 397 ci, and GM order-guide pages (1996 p.50, 1997 p.18) say '400 cu in'. Arithmetic settles it: 103.00 x 97.03 mm x 8 = 6468 cc = 394.7 ci; 4.06 x 4.06 x 3.82 x 0.7854 x 8 = 395.6 ci."
+  },
+  "displacement_l": {
+   "value": 6.5,
+   "sources": [
+    {
+     "name": "GM Heritage Center 1998 Chevrolet Truck information kit p.50 (all GM = one source)",
+     "url": "https://www.gm.com/content/dam/company/no_search/heritage-archive-docs/vehicle-information-kits/chevrolet-trucks/1998-Chevrolet-Truck.pdf",
+     "says": "6.5L V8 Turbo Diesel"
+    },
+    {
+     "name": "EPA fueleconomy.gov vehicles.csv",
+     "url": "https://www.fueleconomy.gov/feg/epadata/vehicles.csv.zip",
+     "says": "6.5 L diesel, 1994-1999"
+    },
+    {
+     "name": "Wikipedia - Detroit Diesel V8 engine",
+     "url": "https://en.wikipedia.org/wiki/Detroit_Diesel_V8_engine",
+     "says": "6.5 L"
+    }
+   ],
+   "note": ""
+  },
+  "num_cylinders": {
+   "value": 8,
+   "sources": [
+    {
+     "name": "GM Heritage Center 1998 Chevrolet Truck information kit p.50 (all GM = one source)",
+     "url": "https://www.gm.com/content/dam/company/no_search/heritage-archive-docs/vehicle-information-kits/chevrolet-trucks/1998-Chevrolet-Truck.pdf",
+     "says": "6.5L V8"
+    },
+    {
+     "name": "EPA fueleconomy.gov vehicles.csv",
+     "url": "https://www.fueleconomy.gov/feg/epadata/vehicles.csv.zip",
+     "says": "8 cylinders"
+    },
+    {
+     "name": "Wikipedia - Detroit Diesel V8 engine",
+     "url": "https://en.wikipedia.org/wiki/Detroit_Diesel_V8_engine",
+     "says": "V8"
+    },
+    {
+     "name": "DieselHub - 6.5L GM/Detroit Diesel",
+     "url": "https://www.dieselhub.com/idi/6.5-gm.html",
+     "says": "90 deg V-8"
+    }
+   ],
+   "note": ""
+  },
+  "configuration": {
+   "value": "90-degree V8",
+   "sources": [
+    {
+     "name": "DieselHub - 6.5L GM/Detroit Diesel",
+     "url": "https://www.dieselhub.com/idi/6.5-gm.html",
+     "says": "90 deg V-8"
+    },
+    {
+     "name": "Wikipedia - Detroit Diesel V8 engine",
+     "url": "https://en.wikipedia.org/wiki/Detroit_Diesel_V8_engine",
+     "says": "V8 (same family as the 90 deg 6.2)"
+    },
+    {
+     "name": "GM Heritage Center 1998 Chevrolet Truck information kit p.50 (all GM = one source)",
+     "url": "https://www.gm.com/content/dam/company/no_search/heritage-archive-docs/vehicle-information-kits/chevrolet-trucks/1998-Chevrolet-Truck.pdf",
+     "says": "6.5L V8"
+    }
+   ],
+   "note": "Only DieselHub states 90 degrees outright; V8 is verified."
+  },
+  "bore_in": {
+   "value": 4.06,
+   "sources": [
+    {
+     "name": "GM Heritage Center 1998 Chevrolet Truck information kit p.50 (all GM = one source)",
+     "url": "https://www.gm.com/content/dam/company/no_search/heritage-archive-docs/vehicle-information-kits/chevrolet-trucks/1998-Chevrolet-Truck.pdf",
+     "says": "Bore x Stroke: 103.00 x 97.03 mm (4.06 x 3.82 in)"
+    },
+    {
+     "name": "Wikipedia - Detroit Diesel V8 engine",
+     "url": "https://en.wikipedia.org/wiki/Detroit_Diesel_V8_engine",
+     "says": "4.06 in (103.1 mm)"
+    },
+    {
+     "name": "DieselHub - 6.5L GM/Detroit Diesel",
+     "url": "https://www.dieselhub.com/idi/6.5-gm.html",
+     "says": "4.055 in"
+    },
+    {
+     "name": "DieselArmy - Family Lineage: The Evolution of GM Diesel Truck Engines",
+     "url": "https://www.dieselarmy.com/?p=8684",
+     "says": "4.06 in"
+    },
+    {
+     "name": "DrivingLine - Most hated: GM's 6.2L and 6.5L diesels",
+     "url": "https://drivingline.com/articles/most-hated-gm-s-62l-and-65l-diesels",
+     "says": "4.06 in"
+    }
+   ],
+   "note": "103.00 mm (GM)"
+  },
+  "stroke_in": {
+   "value": 3.82,
+   "sources": [
+    {
+     "name": "GM Heritage Center 1998 Chevrolet Truck information kit p.50 (all GM = one source)",
+     "url": "https://www.gm.com/content/dam/company/no_search/heritage-archive-docs/vehicle-information-kits/chevrolet-trucks/1998-Chevrolet-Truck.pdf",
+     "says": "103.00 x 97.03 mm (4.06 x 3.82 in)"
+    },
+    {
+     "name": "Wikipedia - Detroit Diesel V8 engine",
+     "url": "https://en.wikipedia.org/wiki/Detroit_Diesel_V8_engine",
+     "says": "3.82 in (97.0 mm)"
+    },
+    {
+     "name": "DieselHub - 6.5L GM/Detroit Diesel",
+     "url": "https://www.dieselhub.com/idi/6.5-gm.html",
+     "says": "3.818 in"
+    },
+    {
+     "name": "DieselArmy - Family Lineage: The Evolution of GM Diesel Truck Engines",
+     "url": "https://www.dieselarmy.com/?p=8684",
+     "says": "3.82 in"
+    },
+    {
+     "name": "DrivingLine - Most hated: GM's 6.2L and 6.5L diesels",
+     "url": "https://drivingline.com/articles/most-hated-gm-s-62l-and-65l-diesels",
+     "says": "3.82 in"
+    }
+   ],
+   "note": "97.03 mm (GM)"
+  },
+  "valvetrain": {
+   "value": "OHV pushrod, 2 valves/cyl, hydraulic roller lifters",
+   "sources": [
+    {
+     "name": "GM Heritage Center 1998 Chevrolet Truck information kit p.50 (all GM = one source)",
+     "url": "https://www.gm.com/content/dam/company/no_search/heritage-archive-docs/vehicle-information-kits/chevrolet-trucks/1998-Chevrolet-Truck.pdf",
+     "says": "Valve configuration: Overhead valves; Valve lifters: Hydraulic roller"
+    },
+    {
+     "name": "Wikipedia - Detroit Diesel V8 engine",
+     "url": "https://en.wikipedia.org/wiki/Detroit_Diesel_V8_engine",
+     "says": "OHV 2 valves x cyl."
+    },
+    {
+     "name": "DieselHub - 6.5L GM/Detroit Diesel",
+     "url": "https://www.dieselhub.com/idi/6.5-gm.html",
+     "says": "OHV (same family as the 6.2)"
+    }
+   ],
+   "note": ""
+  },
+  "block_material": {
+   "value": "cast iron",
+   "sources": [
+    {
+     "name": "GM Heritage Center 1998 Chevrolet Truck information kit p.50 (all GM = one source)",
+     "url": "https://www.gm.com/content/dam/company/no_search/heritage-archive-docs/vehicle-information-kits/chevrolet-trucks/1998-Chevrolet-Truck.pdf",
+     "says": "Block: CAST IRON"
+    },
+    {
+     "name": "Wikipedia - Detroit Diesel V8 engine",
+     "url": "https://en.wikipedia.org/wiki/Detroit_Diesel_V8_engine",
+     "says": "Cast iron"
+    },
+    {
+     "name": "DieselHub - 6.5L GM/Detroit Diesel",
+     "url": "https://www.dieselhub.com/idi/6.5-gm.html",
+     "says": "Cast iron block"
+    }
+   ],
+   "note": ""
+  },
+  "head_material": {
+   "value": "cast iron",
+   "sources": [
+    {
+     "name": "GM Heritage Center 1998 Chevrolet Truck information kit p.50 (all GM = one source)",
+     "url": "https://www.gm.com/content/dam/company/no_search/heritage-archive-docs/vehicle-information-kits/chevrolet-trucks/1998-Chevrolet-Truck.pdf",
+     "says": "Cylinder Head: CAST IRON"
+    },
+    {
+     "name": "Wikipedia - Detroit Diesel V8 engine",
+     "url": "https://en.wikipedia.org/wiki/Detroit_Diesel_V8_engine",
+     "says": "Cast iron"
+    },
+    {
+     "name": "DieselHub - 6.5L GM/Detroit Diesel",
+     "url": "https://www.dieselhub.com/idi/6.5-gm.html",
+     "says": "cast iron heads"
+    }
+   ],
+   "note": ""
+  },
+  "induction": {
+   "value": "indirect injection; naturally aspirated (L49/L57) or turbocharged (L56/L65). Mechanical DB2 pump 1992-93, electronic Stanadyne DS4 1994 on",
+   "sources": [
+    {
+     "name": "GM Heritage Center 1994 Chevrolet Truck information kit p.65 (all GM = one source)",
+     "url": "https://www.gm.com/content/dam/company/no_search/heritage-archive-docs/vehicle-information-kits/chevrolet-trucks/1994-Chevrolet-Truck.pdf",
+     "says": "L49 Fuel System IFI; L56/L65 TIDI (also 1995 p.9; 1998 p.50 'indirect electronic fuel injection with turbo')"
+    },
+    {
+     "name": "DieselHub - 6.5L GM/Detroit Diesel",
+     "url": "https://www.dieselhub.com/idi/6.5-gm.html",
+     "says": "IDI; DB-2 (NA), DS-4 with PMD (turbo); L49/L57 NA, L56/L65 turbo"
+    },
+    {
+     "name": "DieselArmy - Family Lineage: The Evolution of GM Diesel Truck Engines",
+     "url": "https://www.dieselarmy.com/?p=8684",
+     "says": "1992-93 DB2, 1994-2000 DS4; NA 1994-95 and turbo versions"
+    },
+    {
+     "name": "Wikipedia - Detroit Diesel V8 engine",
+     "url": "https://en.wikipedia.org/wiki/Detroit_Diesel_V8_engine",
+     "says": "L49/L57 naturally aspirated; L56/L65 turbocharged"
+    },
+    {
+     "name": "EPA fueleconomy.gov vehicles.csv",
+     "url": "https://www.fueleconomy.gov/feg/epadata/vehicles.csv.zip",
+     "says": "6.5 diesel NA 1994-95, turbo 1994-99"
+    }
+   ],
+   "note": ""
+  },
+  "fuel_type": {
+   "value": "diesel",
+   "sources": [
+    {
+     "name": "GM Heritage Center 1998 Chevrolet Truck information kit p.50 (all GM = one source)",
+     "url": "https://www.gm.com/content/dam/company/no_search/heritage-archive-docs/vehicle-information-kits/chevrolet-trucks/1998-Chevrolet-Truck.pdf",
+     "says": "6.5L V8 Turbo Diesel"
+    },
+    {
+     "name": "EPA fueleconomy.gov vehicles.csv",
+     "url": "https://www.fueleconomy.gov/feg/epadata/vehicles.csv.zip",
+     "says": "Diesel"
+    },
+    {
+     "name": "Wikipedia - Detroit Diesel V8 engine",
+     "url": "https://en.wikipedia.org/wiki/Detroit_Diesel_V8_engine",
+     "says": "diesel"
+    }
+   ],
+   "note": ""
+  },
+  "years": {
+   "value": "1992-1999 model years in GM light-duty pickups/SUVs (heavy-duty, van and medium-duty use ran later)",
+   "sources": [
+    {
+     "name": "Wikipedia - Detroit Diesel V8 engine",
+     "url": "https://en.wikipedia.org/wiki/Detroit_Diesel_V8_engine",
+     "says": "introduced 1992; light-duty use through 1999, heavy-duty through 2002"
+    },
+    {
+     "name": "GM Heritage Center 1992 Chevrolet Truck information kit p.16 (all GM = one source)",
+     "url": "https://www.gm.com/content/dam/company/no_search/heritage-archive-docs/vehicle-information-kits/chevrolet-trucks/1992-Chevrolet-Truck.pdf",
+     "says": "6.5L V8 L65 'Interim 1992 availability' (p.16); the 1999 kit still lists L56/L65"
+    },
+    {
+     "name": "EPA fueleconomy.gov vehicles.csv",
+     "url": "https://www.fueleconomy.gov/feg/epadata/vehicles.csv.zip",
+     "says": "6.5 diesel light-duty listings 1994-1999"
+    },
+    {
+     "name": "DieselArmy - Family Lineage: The Evolution of GM Diesel Truck Engines",
+     "url": "https://www.dieselarmy.com/?p=8684",
+     "says": "6.5 introduced 1992"
+    }
+   ],
+   "note": "End year differs by source: DieselArmy and DrivingLine say 2000; DieselHub says 2002 for GM, then AM General. Only the 1992 start and the light-duty run through 1999 are verified."
+  }
+ },
+ "variants": [
+  {
+   "year": 1992,
+   "hp": 180,
+   "hp_basis": "SAE net",
+   "code": "L65",
+   "induction": "turbo IDI",
+   "application": "C/K 2500/3500, GVWR 8,600-12,000 lb",
+   "rpm": "3500 (GM 1992)",
+   "sources": [
+    {
+     "name": "GM Heritage Center 1992 Chevrolet Truck information kit p.16 (all GM = one source)",
+     "url": "https://www.gm.com/content/dam/company/no_search/heritage-archive-docs/vehicle-information-kits/chevrolet-trucks/1992-Chevrolet-Truck.pdf",
+     "says": "L65 180 @ 3500, 380 @ 1700, Turbo Direct Fuel Injection, interim 1992 availability"
+    },
+    {
+     "name": "DieselArmy - Family Lineage: The Evolution of GM Diesel Truck Engines",
+     "url": "https://www.dieselarmy.com/?p=8684",
+     "says": "1992: 180 hp at 3,500 rpm, 380 lb-ft"
+    },
+    {
+     "name": "DieselHub - 6.5L GM/Detroit Diesel",
+     "url": "https://www.dieselhub.com/idi/6.5-gm.html",
+     "says": "180 hp @ 3,400 rpm (introductory)"
+    }
+   ],
+   "note": "The peak rpm differs (GM and DieselArmy 3500; DieselHub 3400), but the hp figure agrees."
+  },
+  {
+   "year": 1993,
+   "hp": 190,
+   "hp_basis": "SAE net",
+   "code": "L65",
+   "induction": "turbo IDI",
+   "second_pass": true,
+   "sources": [
+    {
+     "name": "GM Heritage Center 1993 Chevrolet Truck information kit p.8 (all GM = one source)",
+     "url": "https://www.gm.com/content/dam/company/no_search/heritage-archive-docs/vehicle-information-kits/chevrolet-trucks/1993-Chevrolet-Truck.pdf",
+     "says": "L65 above 8500 GVW: 190 @ 3400, 380 @ 1700"
+    },
+    {
+     "name": "DieselArmy - Family Lineage: The Evolution of GM Diesel Truck Engines",
+     "url": "https://www.dieselarmy.com/?p=8684",
+     "says": "1993: 190 hp at 3,400 rpm, 380 lb-ft"
+    }
+   ]
+  },
+  {
+   "year": "1994-1995",
+   "hp": 155,
+   "hp_basis": "SAE net",
+   "code": "L49",
+   "induction": "naturally aspirated IDI",
+   "application": "8,500 lb GVW or under",
+   "second_pass": true,
+   "sources": [
+    {
+     "name": "GM Heritage Center 1994 Chevrolet Truck information kit p.65 (all GM = one source)",
+     "url": "https://www.gm.com/content/dam/company/no_search/heritage-archive-docs/vehicle-information-kits/chevrolet-trucks/1994-Chevrolet-Truck.pdf",
+     "says": "L49 6.5L V8 Diesel, 8500 GVW or under: 155 @ 3600, 275 @ 1700, IFI (also 1995 p.9)"
+    },
+    {
+     "name": "DieselArmy - Family Lineage: The Evolution of GM Diesel Truck Engines",
+     "url": "https://www.dieselarmy.com/?p=8684",
+     "says": "6.5L naturally aspirated 1994-1995: 155 hp at 3,600 rpm, 275 lb-ft at 1,700"
+    }
+   ]
+  }
+ ],
+ "unverified": {
+  "compression_ratio": "CONFLICT. GM 1998 (p.50): 20.2:1 (turbo L65/L56). Wikipedia: GM early 21.3:1, GM late 20.3:1, marine 18.0:1. DieselHub: 18:1 to 21.5:1 by year and application.",
+  "firing_order": "1-8-7-2-6-5-4-3. GM 1998 kit p.50 and DieselHub agree. Wikipedia does not give it. Two sources; second-pass candidate.",
+  "rod_length_in": "not found",
+  "RPO_note": "The brief calls L49 a turbo. GM 1994 and 1995 kits, Wikipedia and DieselHub all say L49 = naturally aspirated (VIN P), light duty. L57 = naturally aspirated heavy-duty/HO (VIN Y, also military) per Wikipedia and DieselHub; no GM truck kit read lists L57."
+ }
+}

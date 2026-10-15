@@ -1,0 +1,261 @@
+{
+ "name": "Ford 360 FE V8 (truck)",
+ "fields": {
+  "displacement_ci": {
+   "value": 360,
+   "sources": [
+    {
+     "name": "Wikipedia",
+     "url": "https://en.wikipedia.org/wiki/Ford_FE_engine",
+     "says": "360.8 cu in (5.9 L)"
+    },
+    {
+     "name": "Curbside Classic",
+     "url": "https://www.curbsideclassic.com/automotive-histories/automotive-history-the-ford-fe-series-v8/2/",
+     "says": "360 (5.9 L)"
+    },
+    {
+     "name": "Over-Drive Magazine",
+     "url": "https://over-drive-magazine.com/2023/02/14/the-ford-fe-series-v-8/",
+     "says": "1968-1976 360 CID FE Truck V-8"
+    }
+   ],
+   "note": "4.05^2 x 3.50 x 0.7854 x 8 = 360.7 ci"
+  },
+  "displacement_l": {
+   "value": 5.9,
+   "sources": [
+    {
+     "name": "Wikipedia",
+     "url": "https://en.wikipedia.org/wiki/Ford_FE_engine",
+     "says": "5.9 L"
+    },
+    {
+     "name": "Curbside Classic",
+     "url": "https://www.curbsideclassic.com/automotive-histories/automotive-history-the-ford-fe-series-v8/2/",
+     "says": "5.9 L"
+    }
+   ],
+   "note": "",
+   "second_pass": true
+  },
+  "num_cylinders": {
+   "value": 8,
+   "sources": [
+    {
+     "name": "Wikipedia",
+     "url": "https://en.wikipedia.org/wiki/Ford_FE_engine",
+     "says": ""
+    },
+    {
+     "name": "Curbside Classic",
+     "url": "https://www.curbsideclassic.com/automotive-histories/automotive-history-the-ford-fe-series-v8/2/",
+     "says": ""
+    },
+    {
+     "name": "Over-Drive",
+     "url": "https://over-drive-magazine.com/2023/02/14/the-ford-fe-series-v-8/",
+     "says": ""
+    }
+   ],
+   "note": ""
+  },
+  "configuration": {
+   "value": "V8",
+   "sources": [
+    {
+     "name": "Wikipedia",
+     "url": "https://en.wikipedia.org/wiki/Ford_FE_engine",
+     "says": "V8"
+    },
+    {
+     "name": "Curbside Classic",
+     "url": "https://www.curbsideclassic.com/automotive-histories/automotive-history-the-ford-fe-series-v8/2/",
+     "says": "V8"
+    },
+    {
+     "name": "Over-Drive",
+     "url": "https://over-drive-magazine.com/2023/02/14/the-ford-fe-series-v-8/",
+     "says": "V-8"
+    }
+   ],
+   "note": ""
+  },
+  "bore_in": {
+   "value": 4.05,
+   "sources": [
+    {
+     "name": "Wikipedia",
+     "url": "https://en.wikipedia.org/wiki/Ford_FE_engine",
+     "says": "bore of a 390 (4.05 in / 102.87 mm)"
+    },
+    {
+     "name": "Curbside Classic",
+     "url": "https://www.curbsideclassic.com/automotive-histories/automotive-history-the-ford-fe-series-v8/2/",
+     "says": "Bore: 4.052"
+    },
+    {
+     "name": "Over-Drive",
+     "url": "https://over-drive-magazine.com/2023/02/14/the-ford-fe-series-v-8/",
+     "says": "215 HP Truck V-8 ... Bore and stroke: 4.05 x 3.50"
+    }
+   ],
+   "note": "Curbside gives 4.052; all agree at two decimals."
+  },
+  "stroke_in": {
+   "value": 3.5,
+   "sources": [
+    {
+     "name": "Wikipedia",
+     "url": "https://en.wikipedia.org/wiki/Ford_FE_engine",
+     "says": "3.5 in (88.90 mm)"
+    },
+    {
+     "name": "Curbside Classic",
+     "url": "https://www.curbsideclassic.com/automotive-histories/automotive-history-the-ford-fe-series-v8/2/",
+     "says": "Stroke: 3.500"
+    },
+    {
+     "name": "Over-Drive",
+     "url": "https://over-drive-magazine.com/2023/02/14/the-ford-fe-series-v-8/",
+     "says": "4.05 x 3.50"
+    }
+   ],
+   "note": ""
+  },
+  "valvetrain": {
+   "value": "OHV, 2 valves/cyl, hydraulic lifters",
+   "sources": [
+    {
+     "name": "Over-Drive",
+     "url": "https://over-drive-magazine.com/2023/02/14/the-ford-fe-series-v-8/",
+     "says": "Overhead valves ... Valve lifters: Hydraulic (215 HP Truck V-8)"
+    },
+    {
+     "name": "Curbside Classic",
+     "url": "https://www.curbsideclassic.com/automotive-histories/automotive-history-the-ford-fe-series-v8/2/",
+     "says": "the FE had hydraulic valve lifters"
+    },
+    {
+     "name": "Wikipedia",
+     "url": "https://en.wikipedia.org/wiki/Ford_FE_engine",
+     "says": "OHV FE family"
+    }
+   ],
+   "note": ""
+  },
+  "block_material": {
+   "value": "cast iron",
+   "sources": [
+    {
+     "name": "Over-Drive",
+     "url": "https://over-drive-magazine.com/2023/02/14/the-ford-fe-series-v-8/",
+     "says": "Cast iron block. Five main bearings."
+    },
+    {
+     "name": "Wikipedia",
+     "url": "https://en.wikipedia.org/wiki/Ford_FE_engine",
+     "says": "FE family cast iron"
+    },
+    {
+     "name": "Curbside Classic",
+     "url": "https://www.curbsideclassic.com/automotive-histories/automotive-history-the-ford-fe-series-v8/2/",
+     "says": "360 block identical to the 390"
+    }
+   ],
+   "note": "Curbside is implicit via the 390 block."
+  },
+  "induction": {
+   "value": "2-bbl carburetor",
+   "sources": [
+    {
+     "name": "Wikipedia",
+     "url": "https://en.wikipedia.org/wiki/Ford_FE_engine",
+     "says": "8.4:1 (2V)"
+    },
+    {
+     "name": "Over-Drive",
+     "url": "https://over-drive-magazine.com/2023/02/14/the-ford-fe-series-v-8/",
+     "says": "Carburetor: Ford 2-barrel"
+    }
+   ],
+   "note": "",
+   "second_pass": true
+  },
+  "years": {
+   "value": "1968-1976",
+   "sources": [
+    {
+     "name": "Wikipedia",
+     "url": "https://en.wikipedia.org/wiki/Ford_FE_engine",
+     "says": "introduced in 1968 ... end of the 1976-year run"
+    },
+    {
+     "name": "Curbside Classic",
+     "url": "https://www.curbsideclassic.com/automotive-histories/automotive-history-the-ford-fe-series-v8/2/",
+     "says": "built from 1968 through 1976"
+    },
+    {
+     "name": "Over-Drive",
+     "url": "https://over-drive-magazine.com/2023/02/14/the-ford-fe-series-v-8/",
+     "says": "1968-1976 360 CID FE Truck V-8"
+    }
+   ],
+   "note": ""
+  },
+  "fuel_type": {
+   "value": "gasoline",
+   "sources": [
+    {
+     "name": "Wikipedia",
+     "url": "https://en.wikipedia.org/wiki/Ford_FE_engine",
+     "says": ""
+    },
+    {
+     "name": "Curbside Classic",
+     "url": "https://www.curbsideclassic.com/automotive-histories/automotive-history-the-ford-fe-series-v8/2/",
+     "says": ""
+    },
+    {
+     "name": "Over-Drive",
+     "url": "https://over-drive-magazine.com/2023/02/14/the-ford-fe-series-v-8/",
+     "says": ""
+    }
+   ],
+   "note": ""
+  }
+ },
+ "variants": [
+  {
+   "year": "1968-1971",
+   "hp": 215,
+   "hp_basis": "gross",
+   "code": "360 2V",
+   "induction": "2-bbl",
+   "note": "Curbside extends 215 gross through 1972.",
+   "sources": [
+    {
+     "name": "Wikipedia",
+     "url": "https://en.wikipedia.org/wiki/Ford_FE_engine",
+     "says": "215 bhp at 4100 rpm (1968-1971)"
+    },
+    {
+     "name": "Curbside Classic",
+     "url": "https://www.curbsideclassic.com/automotive-histories/automotive-history-the-ford-fe-series-v8/2/",
+     "says": "1968-1972 trucks rated 215 (gross) hp"
+    },
+    {
+     "name": "Over-Drive",
+     "url": "https://over-drive-magazine.com/2023/02/14/the-ford-fe-series-v-8/",
+     "says": "Horsepower: 215 @ 4100 RPM"
+    }
+   ]
+  }
+ ],
+ "unverified": {
+  "compression_ratio": "CONFLICT: Wikipedia 8.4:1 (2V); Over-Drive 8.5:1.",
+  "firing_order": "1-5-4-2-6-3-7-8 is the FE order, but Wikipedia states it only for the 361; no 360-specific source.",
+  "rod_length_in": "not found",
+  "head_material": "cast iron (FE family); no 360-specific source"
+ }
+}

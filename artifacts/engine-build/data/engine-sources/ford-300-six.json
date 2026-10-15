@@ -1,0 +1,371 @@
+{
+ "name": "Ford 300 (4.9L) inline-six",
+ "fields": {
+  "displacement_ci": {
+   "value": 300,
+   "sources": [
+    {
+     "name": "Wikipedia",
+     "url": "https://en.wikipedia.org/wiki/Ford_straight-six_engine",
+     "says": "300.1 cu in (4.9 L)"
+    },
+    {
+     "name": "f150hub",
+     "url": "https://www.f150hub.com/specs/ford-300.html",
+     "says": "300 cid (4.9L)"
+    },
+    {
+     "name": "Jalopnik",
+     "url": "https://jalopnik.com/heres-why-the-ford-300-inline-six-is-one-of-the-greates-1795351528",
+     "says": "Ford 300 CID"
+    },
+    {
+     "name": "CarBuzz (republished by Military.com)",
+     "url": "https://www.military.com/off-duty/autos/unsung-hero-fords-300-cid-straight-six-engine.html",
+     "says": "300 CID (4.9L)"
+    }
+   ],
+   "note": "4.00 x 4.00 x 3.98 x 0.7854 x 6 = 300.1 ci"
+  },
+  "displacement_l": {
+   "value": 4.9,
+   "sources": [
+    {
+     "name": "Wikipedia",
+     "url": "https://en.wikipedia.org/wiki/Ford_straight-six_engine",
+     "says": "4.9 L"
+    },
+    {
+     "name": "f150hub",
+     "url": "https://www.f150hub.com/specs/ford-300.html",
+     "says": "4.9L"
+    },
+    {
+     "name": "CarBuzz",
+     "url": "https://www.military.com/off-duty/autos/unsung-hero-fords-300-cid-straight-six-engine.html",
+     "says": "4.9L"
+    }
+   ],
+   "note": ""
+  },
+  "num_cylinders": {
+   "value": 6,
+   "sources": [
+    {
+     "name": "Wikipedia",
+     "url": "https://en.wikipedia.org/wiki/Ford_straight-six_engine",
+     "says": "straight-six"
+    },
+    {
+     "name": "f150hub",
+     "url": "https://www.f150hub.com/specs/ford-300.html",
+     "says": "I-6"
+    },
+    {
+     "name": "Jalopnik",
+     "url": "https://jalopnik.com/heres-why-the-ford-300-inline-six-is-one-of-the-greates-1795351528",
+     "says": "inline-six"
+    }
+   ],
+   "note": ""
+  },
+  "configuration": {
+   "value": "inline-six",
+   "sources": [
+    {
+     "name": "Wikipedia",
+     "url": "https://en.wikipedia.org/wiki/Ford_straight-six_engine",
+     "says": "straight-six"
+    },
+    {
+     "name": "f150hub",
+     "url": "https://www.f150hub.com/specs/ford-300.html",
+     "says": "I-6"
+    },
+    {
+     "name": "Jalopnik",
+     "url": "https://jalopnik.com/heres-why-the-ford-300-inline-six-is-one-of-the-greates-1795351528",
+     "says": "inline-six"
+    }
+   ],
+   "note": ""
+  },
+  "bore_in": {
+   "value": 4.0,
+   "sources": [
+    {
+     "name": "Wikipedia",
+     "url": "https://en.wikipedia.org/wiki/Ford_straight-six_engine",
+     "says": "4 in (101.6 mm)"
+    },
+    {
+     "name": "f150hub",
+     "url": "https://www.f150hub.com/specs/ford-300.html",
+     "says": "Bore 4.00 in"
+    },
+    {
+     "name": "Jalopnik",
+     "url": "https://jalopnik.com/heres-why-the-ford-300-inline-six-is-one-of-the-greates-1795351528",
+     "says": "four-inch bores"
+    },
+    {
+     "name": "CarBuzz",
+     "url": "https://www.military.com/off-duty/autos/unsung-hero-fords-300-cid-straight-six-engine.html",
+     "says": "Bore 4.00 in"
+    },
+    {
+     "name": "Hagerty",
+     "url": "https://www.hagerty.com/media/lists/10-great-sixes-from-the-sixties/",
+     "says": "a 4-inch bore and just shy of a 4-inch stroke"
+    }
+   ],
+   "note": ""
+  },
+  "stroke_in": {
+   "value": 3.98,
+   "sources": [
+    {
+     "name": "Wikipedia",
+     "url": "https://en.wikipedia.org/wiki/Ford_straight-six_engine",
+     "says": "3.98 in (101.1 mm)"
+    },
+    {
+     "name": "f150hub",
+     "url": "https://www.f150hub.com/specs/ford-300.html",
+     "says": "Stroke 3.98 in"
+    },
+    {
+     "name": "Jalopnik",
+     "url": "https://jalopnik.com/heres-why-the-ford-300-inline-six-is-one-of-the-greates-1795351528",
+     "says": "3.98-inch strokes"
+    },
+    {
+     "name": "CarBuzz",
+     "url": "https://www.military.com/off-duty/autos/unsung-hero-fords-300-cid-straight-six-engine.html",
+     "says": "Stroke 3.98 in"
+    }
+   ],
+   "note": ""
+  },
+  "valvetrain": {
+   "value": "OHV, 2 valves/cyl, hydraulic lifters, gear-driven cam",
+   "sources": [
+    {
+     "name": "f150hub",
+     "url": "https://www.f150hub.com/specs/ford-300.html",
+     "says": "Overhead valve, cam in block"
+    },
+    {
+     "name": "EngineLabs",
+     "url": "https://enginelabs.com/news/straightforward-fords-indestructible-inline-six-cylinder-explained",
+     "says": "cast-iron overhead-valve cylinder head and block; hydraulic lifters"
+    },
+    {
+     "name": "Ford-Trucks.com article",
+     "url": "https://www.ford-trucks.com/articles/inline-six-300-ford-engine/",
+     "says": "timing gears instead of a chain or belt"
+    }
+   ],
+   "note": "OHV per f150hub + EngineLabs; gear drive per Ford-Trucks.com + EngineLabs (steel vs fiber cam gear). 2 valves/cyl inherent to non-crossflow OHV head."
+  },
+  "block_material": {
+   "value": "cast iron",
+   "sources": [
+    {
+     "name": "f150hub",
+     "url": "https://www.f150hub.com/specs/ford-300.html",
+     "says": "Cast iron block"
+    },
+    {
+     "name": "EngineLabs",
+     "url": "https://enginelabs.com/news/straightforward-fords-indestructible-inline-six-cylinder-explained",
+     "says": "cast-iron overhead-valve cylinder head and block"
+    },
+    {
+     "name": "Ford-Trucks.com article",
+     "url": "https://www.ford-trucks.com/articles/ford-300-i6-mighty-engine/",
+     "says": "It's made of iron and it's heavy"
+    }
+   ],
+   "note": ""
+  },
+  "head_material": {
+   "value": "cast iron",
+   "sources": [
+    {
+     "name": "f150hub",
+     "url": "https://www.f150hub.com/specs/ford-300.html",
+     "says": "cast iron cylinder head"
+    },
+    {
+     "name": "EngineLabs",
+     "url": "https://enginelabs.com/news/straightforward-fords-indestructible-inline-six-cylinder-explained",
+     "says": "cast-iron overhead-valve cylinder head"
+    },
+    {
+     "name": "Jalopnik",
+     "url": "https://jalopnik.com/heres-why-the-ford-300-inline-six-is-one-of-the-greates-1795351528",
+     "says": "iron block (240/300 share)"
+    }
+   ],
+   "note": "Jalopnik says iron engine generally; EngineLabs and f150hub are explicit on the head."
+  },
+  "induction": {
+   "value": "single carburetor 1965-1986; multi-port EFI 1987-1996",
+   "sources": [
+    {
+     "name": "Wikipedia",
+     "url": "https://en.wikipedia.org/wiki/Ford_straight-six_engine",
+     "says": "1987 (EFI)"
+    },
+    {
+     "name": "f150hub",
+     "url": "https://www.f150hub.com/specs/ford-300.html",
+     "says": "electronic fuel injection arrived in 1987"
+    },
+    {
+     "name": "Jalopnik",
+     "url": "https://jalopnik.com/heres-why-the-ford-300-inline-six-is-one-of-the-greates-1795351528",
+     "says": "moved from carburetors to fuel injection for the 1987 model year"
+    },
+    {
+     "name": "EngineLabs",
+     "url": "https://enginelabs.com/news/straightforward-fords-indestructible-inline-six-cylinder-explained",
+     "says": "single carburetor; fuel injection widespread in 1987"
+    }
+   ],
+   "note": ""
+  },
+  "fuel_type": {
+   "value": "gasoline",
+   "sources": [
+    {
+     "name": "Wikipedia",
+     "url": "https://en.wikipedia.org/wiki/Ford_straight-six_engine",
+     "says": ""
+    },
+    {
+     "name": "f150hub",
+     "url": "https://www.f150hub.com/specs/ford-300.html",
+     "says": ""
+    },
+    {
+     "name": "EngineLabs",
+     "url": "https://enginelabs.com/news/straightforward-fords-indestructible-inline-six-cylinder-explained",
+     "says": ""
+    }
+   ],
+   "note": ""
+  },
+  "years": {
+   "value": "1965-1996 (trucks/vans)",
+   "sources": [
+    {
+     "name": "Wikipedia",
+     "url": "https://en.wikipedia.org/wiki/Ford_straight-six_engine",
+     "says": "F-Series for 1965 ... ended 1996"
+    },
+    {
+     "name": "Jalopnik",
+     "url": "https://jalopnik.com/heres-why-the-ford-300-inline-six-is-one-of-the-greates-1795351528",
+     "says": "1965 ... all the way until 1996"
+    },
+    {
+     "name": "f150hub",
+     "url": "https://www.f150hub.com/specs/ford-300.html",
+     "says": "1965-1996 ratings table"
+    },
+    {
+     "name": "CarBuzz",
+     "url": "https://www.military.com/off-duty/autos/unsung-hero-fords-300-cid-straight-six-engine.html",
+     "says": "1965 debut"
+    }
+   ],
+   "note": ""
+  },
+  "compression_ratio": {
+   "value": "8.8:1 (1987-1996 EFI)",
+   "sources": [
+    {
+     "name": "Wikipedia",
+     "url": "https://en.wikipedia.org/wiki/Ford_straight-six_engine",
+     "says": "150 hp with an 8.8:1 compression ratio (1987)"
+    },
+    {
+     "name": "f150hub",
+     "url": "https://www.f150hub.com/specs/ford-300.html",
+     "says": "1987-1996: 8.8:1"
+    },
+    {
+     "name": "CarBuzz",
+     "url": "https://www.military.com/off-duty/autos/unsung-hero-fords-300-cid-straight-six-engine.html",
+     "says": "8.8:1 from 1987"
+    },
+    {
+     "name": "EngineLabs",
+     "url": "https://enginelabs.com/news/straightforward-fords-indestructible-inline-six-cylinder-explained",
+     "says": "8.8:1"
+    }
+   ],
+   "note": "Earlier ratios: see unverified."
+  }
+ },
+ "variants": [
+  {
+   "year": 1965,
+   "hp": 170,
+   "hp_basis": "gross",
+   "code": "300 Six",
+   "induction": "1-bbl",
+   "note": "f150hub gives 170 hp for 1965-1972; Wikipedia and CarBuzz give 170 hp for the 1965 debut. 1966-1971 carry-over rests on f150hub only.",
+   "sources": [
+    {
+     "name": "Wikipedia",
+     "url": "https://en.wikipedia.org/wiki/Ford_straight-six_engine",
+     "says": "1965: 170 hp (gross)"
+    },
+    {
+     "name": "f150hub",
+     "url": "https://www.f150hub.com/specs/ford-300.html",
+     "says": "1965-1972 170 hp @ 3,800"
+    },
+    {
+     "name": "CarBuzz",
+     "url": "https://www.military.com/off-duty/autos/unsung-hero-fords-300-cid-straight-six-engine.html",
+     "says": "170 hp, 1965 debut year"
+    }
+   ]
+  },
+  {
+   "year": "1994-1996",
+   "hp": 150,
+   "hp_basis": "net",
+   "compression_ratio": 8.8,
+   "code": "4.9L EFI",
+   "induction": "multi-port EFI",
+   "note": "All three agree on 150 hp for the final years; 1987-93 disputed (see unverified_variants).",
+   "sources": [
+    {
+     "name": "f150hub",
+     "url": "https://www.f150hub.com/specs/ford-300.html",
+     "says": "1994-1996 150 hp @ 3,400"
+    },
+    {
+     "name": "CarBuzz",
+     "url": "https://www.military.com/off-duty/autos/unsung-hero-fords-300-cid-straight-six-engine.html",
+     "says": "150 hp from 1987 through final production"
+    },
+    {
+     "name": "Wikipedia",
+     "url": "https://en.wikipedia.org/wiki/Ford_straight-six_engine",
+     "says": "150 hp with 8.8:1 (EFI)"
+    }
+   ]
+  }
+ ],
+ "unverified": {
+  "rod_length_in": "Not found in any reputable source checked (6.21 in commonly quoted, unconfirmed).",
+  "firing_order": "1-5-3-6-2-4 per f150hub only.",
+  "compression_ratio_1965_1972": "8.9:1 per f150hub and CarBuzz (two agree; second-pass eligible). 8.0:1 for 1973-86 per f150hub only."
+ }
+}

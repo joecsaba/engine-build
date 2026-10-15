@@ -42,6 +42,19 @@ PLANS = {
     "nissan-l28e":   ("nissan", "nissan_l_series", "L-series", "Nissan", [("nissan_l28e", "L28E")], None, "gas"),
     "nissan-l28et":  ("nissan", "nissan_l_series", "L-series", "Nissan", [("nissan_l28et", "L28ET")], None, "gas"),
   },
+  "fordtruck": {
+    "ford-240-six":      ("ford", "ford_big_six", "240/300 Big Six", "Ford", [("ford_240_six", "240 Six")], None, "gas"),
+    "ford-300-six":      ("ford", "ford_big_six", "240/300 Big Six", "Ford", [("ford_300_six", "300 Six")], None, "gas"),
+    "ford-360-fe-truck": ("ford", "ford_fe", "FE", "Ford", [("ford_360_fe_truck", "360 FE")], None, "gas"),
+    "ford-4-2-essex-v6": ("ford", "ford_essex", "Essex V6", "Ford", [("ford_4_2_essex", "Essex 4.2")], None, "gas"),
+    "ford-6-2-boss":     ("ford", "ford_boss_v8", "6.2 Boss V8", "Ford", [("ford_6_2_boss", "6.2 Boss")], None, "gas"),
+    "ford-3-3-ti-vct":   ("ford", "ford_cyclone", "Cyclone V6", "Ford", [("ford_3_3_ti_vct", "3.3 Ti-VCT")], None, "gas"),
+  },
+  "gmheavy": {
+    "gm-6-2-diesel": ("chevrolet", "chevrolet_gm_diesel_v8", "6.2/6.5 Diesel V8", "Chevrolet", [("gm_6_2_diesel", "6.2 diesel")], None, "diesel"),
+    "gm-6-5-diesel": ("chevrolet", "chevrolet_gm_diesel_v8", "6.2/6.5 Diesel V8", "Chevrolet", [("gm_6_5_diesel", "6.5 diesel")], None, "diesel"),
+    "gm-8-1-vortec": ("chevrolet", "chevrolet_vortec_8100", "Vortec 8100", "Chevrolet", [("gm_8_1_vortec", "L18")], None, "gas"),
+  },
 }
 TURBO_CODES = {"L28ET"}
 
@@ -59,6 +72,10 @@ for rid, (folder, slug, fam_name, mfr, engines, derive_cc, fuel) in PLANS[JOB].i
     if not (bore and stroke and cyl):
         print("skip (no verified geometry):", rid); continue
     ci = round(bore * bore * stroke * math.pi / 4 * cyl, 1)
+    # a rounded published bore (the 6.2 diesel's 3.98 in) puts the product a cube off the
+    # maker's figure; the verified published displacement wins when it is that close
+    pub_ci = val(f, "displacement_ci")
+    if isinstance(pub_ci, (int, float)) and abs(pub_ci - ci) <= 1.5: ci = float(pub_ci)
     p = os.path.join(ENG, folder, slug + ".json")
     if slug not in files:
         files[slug] = (folder, json.load(open(p, encoding="utf-8")) if os.path.exists(p) else
@@ -66,7 +83,7 @@ for rid, (folder, slug, fam_name, mfr, engines, derive_cc, fuel) in PLANS[JOB].i
     doc = files[slug][1]
     # a ratio that changed over the run ("8.3:1 (1975-1980); 8.8:1 (1981-1983)") stays off the base record
     crt = str(val(f, "compression_ratio") or "")
-    cr = first_number(crt) if crt and ";" not in crt else None
+    cr = first_number(crt) if crt and ";" not in crt and "(" not in crt else None  # "(1987-1996 EFI)": not the whole run
     for eid, code in engines:
         doc["engines"] = [x for x in doc["engines"] if x.get("engine_id") != eid]
         r = {"engine_id": eid, "year": None, "displacement_ci": ci, "displacement_l": val(f, "displacement_l"),
