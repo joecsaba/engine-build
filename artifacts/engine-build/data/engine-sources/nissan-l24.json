@@ -1,0 +1,247 @@
+{
+ "name": "Nissan L24 2.4 I6 (240Z)",
+ "fields": {
+  "bore_in": {
+   "value": 3.2677,
+   "sources": [
+    {
+     "name": "Wikipedia: Nissan L engine",
+     "url": "https://en.wikipedia.org/wiki/Nissan_L_engine",
+     "says": "L24 bore x stroke 83 mm x 73.7 mm"
+    },
+    {
+     "name": "Elgin Industries engine parts catalog - engine details",
+     "url": "https://catalog.elginind.com/engine/nissan/default/1aab983c-4b2e-459d-abc3-e0a5061a9e24/",
+     "says": "L24 2393cc: Bore 3.27'' (83.0mm)"
+    },
+    {
+     "name": "Consumer Guide (Auto Editors of Consumer Guide) - Nissan Z History, via HowStuffWorks",
+     "url": "https://auto.howstuffworks.com/nissan-z-history3.htm",
+     "says": "maintaining the 83.0-mm bore"
+    }
+   ],
+   "note": "83.0 mm"
+  },
+  "stroke_in": {
+   "value": 2.9016,
+   "sources": [
+    {
+     "name": "Wikipedia: Nissan L engine",
+     "url": "https://en.wikipedia.org/wiki/Nissan_L_engine",
+     "says": "L24 83 mm x 73.7 mm, 2,393 cc"
+    }
+   ],
+   "note": "73.7 mm. CONFLICT settled by arithmetic: Consumer Guide says the L24 stroke was 73.0 mm. 83 x 83 x 73.7 x 0.7854 x 6 = 2,392.6 cc matches the 2,393 cc published by Nissan, Elgin, Consumer Guide and Wikipedia; 73.0 mm would give 2,369.8 cc. Only one explicit source for 73.7.",
+   "second_pass": true,
+   "settled_by_arithmetic": true
+  },
+  "displacement_l": {
+   "value": 2.4,
+   "sources": [
+    {
+     "name": "Wikipedia: Nissan L engine",
+     "url": "https://en.wikipedia.org/wiki/Nissan_L_engine",
+     "says": "2.4 L (2,393 cc)"
+    },
+    {
+     "name": "Elgin Industries engine parts catalog - engine details",
+     "url": "https://catalog.elginind.com/engine/nissan/default/1aab983c-4b2e-459d-abc3-e0a5061a9e24/",
+     "says": "Liters 2.4, CC 2393"
+    },
+    {
+     "name": "Consumer Guide (Auto Editors of Consumer Guide) - Nissan Z History, via HowStuffWorks",
+     "url": "https://auto.howstuffworks.com/nissan-z-history2.htm",
+     "says": "Displacement: 2393 cubic centimeters"
+    },
+    {
+     "name": "Nissan Heritage Collection: Datsun 240Z (1971 HS30) (Nissan material)",
+     "url": "https://www.nissan-global.com/EN/HERITAGE_COLLECTION/060_datsun_240z.html",
+     "says": "Engine L24 (6-cyl. in line OHC) 2,393cc"
+    }
+   ],
+   "note": "2,393 cc"
+  },
+  "displacement_ci": {
+   "value": 146,
+   "sources": [
+    {
+     "name": "Wikipedia: Nissan L engine",
+     "url": "https://en.wikipedia.org/wiki/Nissan_L_engine",
+     "says": "2,393 cc; 146.0 cu in"
+    },
+    {
+     "name": "Elgin Industries engine parts catalog - engine details",
+     "url": "https://catalog.elginind.com/engine/nissan/default/1aab983c-4b2e-459d-abc3-e0a5061a9e24/",
+     "says": "CC 2393"
+    },
+    {
+     "name": "Consumer Guide (Auto Editors of Consumer Guide) - Nissan Z History, via HowStuffWorks",
+     "url": "https://auto.howstuffworks.com/nissan-z-history2.htm",
+     "says": "2393 cubic centimeters"
+    }
+   ],
+   "note": "2,393 cc = 146.0 ci"
+  },
+  "num_cylinders": {
+   "value": 6,
+   "sources": [
+    {
+     "name": "Wikipedia: Nissan L engine",
+     "url": "https://en.wikipedia.org/wiki/Nissan_L_engine",
+     "says": "straight-six"
+    },
+    {
+     "name": "Elgin Industries engine parts catalog - engine details",
+     "url": "https://catalog.elginind.com/engine/nissan/default/1aab983c-4b2e-459d-abc3-e0a5061a9e24/",
+     "says": "Cyl. 6"
+    },
+    {
+     "name": "Nissan Heritage Collection: Datsun 240Z (1971 HS30) (Nissan material)",
+     "url": "https://www.nissan-global.com/EN/HERITAGE_COLLECTION/060_datsun_240z.html",
+     "says": "Engine L24 (6-cyl. in line OHC) 2,393cc"
+    }
+   ],
+   "note": ""
+  },
+  "configuration": {
+   "value": "inline-6",
+   "sources": [
+    {
+     "name": "Wikipedia: Nissan L engine",
+     "url": "https://en.wikipedia.org/wiki/Nissan_L_engine",
+     "says": "L-series straight-six"
+    },
+    {
+     "name": "Consumer Guide (Auto Editors of Consumer Guide) - Nissan Z History, via HowStuffWorks",
+     "url": "https://auto.howstuffworks.com/nissan-z-history2.htm",
+     "says": "Engine: single-overhead-cam inline-6"
+    },
+    {
+     "name": "Nissan Heritage Collection: Datsun 240Z (1971 HS30) (Nissan material)",
+     "url": "https://www.nissan-global.com/EN/HERITAGE_COLLECTION/060_datsun_240z.html",
+     "says": "Engine L24 (6-cyl. in line OHC) 2,393cc"
+    }
+   ],
+   "note": ""
+  },
+  "valvetrain": {
+   "value": "SOHC, 2 valves per cylinder",
+   "sources": [
+    {
+     "name": "Wikipedia: Nissan L engine",
+     "url": "https://en.wikipedia.org/wiki/Nissan_L_engine",
+     "says": "SOHC non-crossflow, two valves per cylinder"
+    },
+    {
+     "name": "Elgin Industries engine parts catalog - engine details",
+     "url": "https://catalog.elginind.com/engine/nissan/default/1aab983c-4b2e-459d-abc3-e0a5061a9e24/",
+     "says": "Head SOHC"
+    },
+    {
+     "name": "Consumer Guide (Auto Editors of Consumer Guide) - Nissan Z History, via HowStuffWorks",
+     "url": "https://auto.howstuffworks.com/nissan-z-history2.htm",
+     "says": "single-overhead-cam inline-6"
+    },
+    {
+     "name": "Nissan Heritage Collection: Datsun 240Z (1971 HS30) (Nissan material)",
+     "url": "https://www.nissan-global.com/EN/HERITAGE_COLLECTION/060_datsun_240z.html",
+     "says": "Engine L24 (6-cyl. in line OHC) 2,393cc"
+    }
+   ],
+   "note": "2 valves/cyl stated only by Wikipedia; SOHC by all four."
+  },
+  "induction": {
+   "value": "twin SU-type sidedraft carburetors (US)",
+   "sources": [
+    {
+     "name": "Wikipedia: Nissan L engine",
+     "url": "https://en.wikipedia.org/wiki/Nissan_L_engine",
+     "says": "twin SU carburettors (150 PS version)"
+    },
+    {
+     "name": "Consumer Guide (Auto Editors of Consumer Guide) - Nissan Z History, via HowStuffWorks",
+     "url": "https://auto.howstuffworks.com/nissan-z-history2.htm",
+     "says": "Fuel supply: Two Hitachi-SU 1v sidedraft carburetors"
+    },
+    {
+     "name": "Elgin Industries engine parts catalog - engine details",
+     "url": "https://catalog.elginind.com/engine/nissan/default/1aab983c-4b2e-459d-abc3-e0a5061a9e24/",
+     "says": "Fuel / Delivery GAS / CARB"
+    }
+   ],
+   "note": ""
+  },
+  "fuel_type": {
+   "value": "gasoline",
+   "sources": [
+    {
+     "name": "Wikipedia: Nissan L engine",
+     "url": "https://en.wikipedia.org/wiki/Nissan_L_engine",
+     "says": "carbureted petrol"
+    },
+    {
+     "name": "Elgin Industries engine parts catalog - engine details",
+     "url": "https://catalog.elginind.com/engine/nissan/default/1aab983c-4b2e-459d-abc3-e0a5061a9e24/",
+     "says": "GAS / CARB"
+    },
+    {
+     "name": "Consumer Guide (Auto Editors of Consumer Guide) - Nissan Z History, via HowStuffWorks",
+     "url": "https://auto.howstuffworks.com/nissan-z-history2.htm",
+     "says": "carburetors"
+    }
+   ],
+   "note": ""
+  },
+  "years": {
+   "value": "1970-1973 (US 240Z)",
+   "sources": [
+    {
+     "name": "Nissan USA newsroom: 370Z 40th Anniversary release (Nissan material)",
+     "url": "https://usa.nissannews.com/en-US/releases/release-49ec4ba13840405094f0c893ce9e9239-nissan-celebrates-four-decades-of-sports-car-leadership-with-new-limited-edition-370z-40th-anniversary-model",
+     "says": "1970 240Z: a 150-horsepower 2.4-liter single overhead cam inline 6-cylinder engine"
+    },
+    {
+     "name": "Consumer Guide (Auto Editors of Consumer Guide) - Nissan Z History, via HowStuffWorks",
+     "url": "https://auto.howstuffworks.com/nissan-z-history2.htm",
+     "says": "240Z ... 1973 240Zs rated 129 hp"
+    },
+    {
+     "name": "Wikipedia: Nissan S30",
+     "url": "https://en.wikipedia.org/wiki/Nissan_S30",
+     "says": "240Z (1970-1973) L24"
+    }
+   ],
+   "note": "L24 built 1969-1984 overall (Wikipedia)"
+  }
+ },
+ "variants": [
+  {
+   "year": "1970-1971",
+   "hp": 150,
+   "hp_basis": "gross",
+   "compression_ratio": 9.0,
+   "code": "L24",
+   "induction": "twin SU carbs",
+   "sources": [
+    {
+     "name": "Nissan USA newsroom: 370Z 40th Anniversary release (Nissan material)",
+     "url": "https://usa.nissannews.com/en-US/releases/release-49ec4ba13840405094f0c893ce9e9239-nissan-celebrates-four-decades-of-sports-car-leadership-with-new-limited-edition-370z-40th-anniversary-model",
+     "says": "1970 240Z: a 150-horsepower 2.4-liter single overhead cam inline 6-cylinder engine"
+    },
+    {
+     "name": "Consumer Guide (Auto Editors of Consumer Guide) - Nissan Z History, via HowStuffWorks",
+     "url": "https://auto.howstuffworks.com/nissan-z-history2.htm",
+     "says": "Compression ratio: 9.0:1 Horsepower: 150 @ 6000 rpm"
+    }
+   ],
+   "second_pass": true,
+   "note": "Nissan and Consumer Guide agree on 150 hp; Wikipedia S30 gives 151 hp SAE gross @ 5,600. Compression 9.0:1 from Consumer Guide only."
+  }
+ ],
+ "unverified": {
+  "block_material": "cast iron: Wikipedia only (XenonZcar text for L28 copies the same wording).",
+  "head_material": "aluminum: Wikipedia only.",
+  "compression_ratio": "9.0:1 (1970-71): Consumer Guide only; lower in 1972-73 (CG, no figure).",
+  "firing_order": "1-5-3-6-2-4 is given for the L28E by XenonZcar only; nothing found for L24."
+ }
+}

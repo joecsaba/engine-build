@@ -1,0 +1,356 @@
+{
+ "name": "Nissan L28E 2.8 I6 EFI (280Z/280ZX)",
+ "fields": {
+  "bore_in": {
+   "value": 3.3858,
+   "sources": [
+    {
+     "name": "Wikipedia: Nissan L engine",
+     "url": "https://en.wikipedia.org/wiki/Nissan_L_engine",
+     "says": "L28 86 mm x 79 mm, 2,753 cc"
+    },
+    {
+     "name": "Elgin Industries engine parts catalog - engine details",
+     "url": "https://catalog.elginind.com/engine/nissan/default/3d41065c-9e3c-4a2a-ba97-cea85d091149/",
+     "says": "L28E, L28ET 2753cc: Bore 3.39'' (86.0mm)"
+    },
+    {
+     "name": "XenonZcar.com 280ZX engine specifications (Z-car enthusiast technical page citing 1979-1983 Nissan/Datsun factory service manuals)",
+     "url": "https://www.xenonzcar.com/s130/engine.html",
+     "says": "L28E/L28ET: 2,753 cc; 86.0mm X 79.0mm; 8.3:1 (1979-1980), 8.8:1 (1981-1983); turbo 7.4:1; firing order 1-5-3-6-2-4; 135 hp 1979-80, 145 hp 1981-83; L28ET 180 bhp @ 5600"
+    }
+   ],
+   "note": "86.0 mm"
+  },
+  "stroke_in": {
+   "value": 3.1102,
+   "sources": [
+    {
+     "name": "Wikipedia: Nissan L engine",
+     "url": "https://en.wikipedia.org/wiki/Nissan_L_engine",
+     "says": "L28 86 mm x 79 mm"
+    },
+    {
+     "name": "XenonZcar.com 280ZX engine specifications (Z-car enthusiast technical page citing 1979-1983 Nissan/Datsun factory service manuals)",
+     "url": "https://www.xenonzcar.com/s130/engine.html",
+     "says": "L28E/L28ET: 2,753 cc; 86.0mm X 79.0mm; 8.3:1 (1979-1980), 8.8:1 (1981-1983); turbo 7.4:1; firing order 1-5-3-6-2-4; 135 hp 1979-80, 145 hp 1981-83; L28ET 180 bhp @ 5600"
+    }
+   ],
+   "note": "79.0 mm. Arithmetic: 86 x 86 x 79 x 0.7854 x 6 = 2,753.4 cc vs 2,753 cc published (Nissan, Elgin, Wikipedia). Consumer Guide's text says the 280Z was made by 'stroking the 260Z's motor by 3 mm' (would be 83 x 82 mm = 2,858 cc) - wrong by arithmetic.",
+   "second_pass": true
+  },
+  "displacement_l": {
+   "value": 2.8,
+   "sources": [
+    {
+     "name": "Wikipedia: Nissan L engine",
+     "url": "https://en.wikipedia.org/wiki/Nissan_L_engine",
+     "says": "2.8 L (2,753 cc)"
+    },
+    {
+     "name": "Elgin Industries engine parts catalog - engine details",
+     "url": "https://catalog.elginind.com/engine/nissan/default/3d41065c-9e3c-4a2a-ba97-cea85d091149/",
+     "says": "Liters 2.8, CC 2753"
+    },
+    {
+     "name": "1981 Datsun 280-ZX brochure (Nissan Motor Corp. in U.S.A., WE 11-80-144M-2), pp. 10-11, via oldcarbrochures.org",
+     "url": "https://oldcarbrochures.org/Japan/Datsun/1981%20Datsun%20280-ZX/index.html",
+     "says": "Engine: 2.8-liter (2,753cc) 6-cyl. OHC; L-Jetronic fuel injection; Horsepower (5200 rpm) 145"
+    },
+    {
+     "name": "XenonZcar.com 280ZX engine specifications (Z-car enthusiast technical page citing 1979-1983 Nissan/Datsun factory service manuals)",
+     "url": "https://www.xenonzcar.com/s130/engine.html",
+     "says": "L28E/L28ET: 2,753 cc; 86.0mm X 79.0mm; 8.3:1 (1979-1980), 8.8:1 (1981-1983); turbo 7.4:1; firing order 1-5-3-6-2-4; 135 hp 1979-80, 145 hp 1981-83; L28ET 180 bhp @ 5600"
+    }
+   ],
+   "note": "2,753 cc (Consumer Guide 2,754/2,753)"
+  },
+  "displacement_ci": {
+   "value": 168,
+   "sources": [
+    {
+     "name": "Wikipedia: Nissan L engine",
+     "url": "https://en.wikipedia.org/wiki/Nissan_L_engine",
+     "says": "2,753 cc; 168.0 cu in"
+    },
+    {
+     "name": "Elgin Industries engine parts catalog - engine details",
+     "url": "https://catalog.elginind.com/engine/nissan/default/3d41065c-9e3c-4a2a-ba97-cea85d091149/",
+     "says": "CC 2753"
+    },
+    {
+     "name": "1981 Datsun 280-ZX brochure (Nissan Motor Corp. in U.S.A., WE 11-80-144M-2), pp. 10-11, via oldcarbrochures.org",
+     "url": "https://oldcarbrochures.org/Japan/Datsun/1981%20Datsun%20280-ZX/index.html",
+     "says": "Engine: 2.8-liter (2,753cc) 6-cyl. OHC; L-Jetronic fuel injection; Horsepower (5200 rpm) 145"
+    }
+   ],
+   "note": "2,753 cc = 168.0 ci"
+  },
+  "num_cylinders": {
+   "value": 6,
+   "sources": [
+    {
+     "name": "Wikipedia: Nissan L engine",
+     "url": "https://en.wikipedia.org/wiki/Nissan_L_engine",
+     "says": "straight-six"
+    },
+    {
+     "name": "Elgin Industries engine parts catalog - engine details",
+     "url": "https://catalog.elginind.com/engine/nissan/default/3d41065c-9e3c-4a2a-ba97-cea85d091149/",
+     "says": "Cyl. 6"
+    },
+    {
+     "name": "1981 Datsun 280-ZX brochure (Nissan Motor Corp. in U.S.A., WE 11-80-144M-2), pp. 10-11, via oldcarbrochures.org",
+     "url": "https://oldcarbrochures.org/Japan/Datsun/1981%20Datsun%20280-ZX/index.html",
+     "says": "Engine: 2.8-liter (2,753cc) 6-cyl. OHC; L-Jetronic fuel injection; Horsepower (5200 rpm) 145"
+    }
+   ],
+   "note": ""
+  },
+  "configuration": {
+   "value": "inline-6",
+   "sources": [
+    {
+     "name": "Wikipedia: Nissan L engine",
+     "url": "https://en.wikipedia.org/wiki/Nissan_L_engine",
+     "says": "straight-six"
+    },
+    {
+     "name": "Consumer Guide (Auto Editors of Consumer Guide) - Nissan Z History, via HowStuffWorks",
+     "url": "https://auto.howstuffworks.com/nissan-z-history3.htm",
+     "says": "single-overhead-cam inline-6"
+    },
+    {
+     "name": "1981 Datsun 280-ZX brochure (Nissan Motor Corp. in U.S.A., WE 11-80-144M-2), pp. 10-11, via oldcarbrochures.org",
+     "url": "https://oldcarbrochures.org/Japan/Datsun/1981%20Datsun%20280-ZX/index.html",
+     "says": "Engine: 2.8-liter (2,753cc) 6-cyl. OHC; L-Jetronic fuel injection; Horsepower (5200 rpm) 145"
+    }
+   ],
+   "note": "Nissan: '6-cyl. OHC'"
+  },
+  "valvetrain": {
+   "value": "SOHC, 2 valves per cylinder (12 valves)",
+   "sources": [
+    {
+     "name": "Wikipedia: Nissan L engine",
+     "url": "https://en.wikipedia.org/wiki/Nissan_L_engine",
+     "says": "L28 12-valve SOHC"
+    },
+    {
+     "name": "Elgin Industries engine parts catalog - engine details",
+     "url": "https://catalog.elginind.com/engine/nissan/default/3d41065c-9e3c-4a2a-ba97-cea85d091149/",
+     "says": "Head SOHC"
+    },
+    {
+     "name": "1981 Datsun 280-ZX brochure (Nissan Motor Corp. in U.S.A., WE 11-80-144M-2), pp. 10-11, via oldcarbrochures.org",
+     "url": "https://oldcarbrochures.org/Japan/Datsun/1981%20Datsun%20280-ZX/index.html",
+     "says": "Engine: 2.8-liter (2,753cc) 6-cyl. OHC; L-Jetronic fuel injection; Horsepower (5200 rpm) 145"
+    },
+    {
+     "name": "Consumer Guide (Auto Editors of Consumer Guide) - Nissan Z History, via HowStuffWorks",
+     "url": "https://auto.howstuffworks.com/nissan-z-history3.htm",
+     "says": "single-overhead-cam inline-6"
+    }
+   ],
+   "note": "Nissan/Elgin/CG give OHC only; 12 valves per Wikipedia and XenonZcar."
+  },
+  "induction": {
+   "value": "Bosch-type L-Jetronic electronic port fuel injection",
+   "sources": [
+    {
+     "name": "Wikipedia: Nissan L engine",
+     "url": "https://en.wikipedia.org/wiki/Nissan_L_engine",
+     "says": "Bosch L-Jetronic electronic multiport fuel injection"
+    },
+    {
+     "name": "1981 Datsun 280-ZX brochure (Nissan Motor Corp. in U.S.A., WE 11-80-144M-2), pp. 10-11, via oldcarbrochures.org",
+     "url": "https://oldcarbrochures.org/Japan/Datsun/1981%20Datsun%20280-ZX/index.html",
+     "says": "Engine: 2.8-liter (2,753cc) 6-cyl. OHC; L-Jetronic fuel injection; Horsepower (5200 rpm) 145"
+    },
+    {
+     "name": "Consumer Guide (Auto Editors of Consumer Guide) - Nissan Z History, via HowStuffWorks",
+     "url": "https://auto.howstuffworks.com/nissan-z-history3.htm",
+     "says": "Fuel supply: Nissan Bosch-type L-Jetronic fuel injection"
+    },
+    {
+     "name": "Elgin Industries engine parts catalog - engine details",
+     "url": "https://catalog.elginind.com/engine/nissan/default/3d41065c-9e3c-4a2a-ba97-cea85d091149/",
+     "says": "GAS / FI"
+    }
+   ],
+   "note": ""
+  },
+  "fuel_type": {
+   "value": "gasoline",
+   "sources": [
+    {
+     "name": "Wikipedia: Nissan L engine",
+     "url": "https://en.wikipedia.org/wiki/Nissan_L_engine",
+     "says": "petrol, L-Jetronic"
+    },
+    {
+     "name": "Elgin Industries engine parts catalog - engine details",
+     "url": "https://catalog.elginind.com/engine/nissan/default/3d41065c-9e3c-4a2a-ba97-cea85d091149/",
+     "says": "GAS / FI"
+    },
+    {
+     "name": "1981 Datsun 280-ZX brochure (Nissan Motor Corp. in U.S.A., WE 11-80-144M-2), pp. 10-11, via oldcarbrochures.org",
+     "url": "https://oldcarbrochures.org/Japan/Datsun/1981%20Datsun%20280-ZX/index.html",
+     "says": "Engine: 2.8-liter (2,753cc) 6-cyl. OHC; L-Jetronic fuel injection; Horsepower (5200 rpm) 145"
+    }
+   ],
+   "note": ""
+  },
+  "compression_ratio": {
+   "value": "8.3:1 (1975-1980); 8.8:1 (1981-1983)",
+   "sources": [
+    {
+     "name": "Consumer Guide (Auto Editors of Consumer Guide) - Nissan Z History, via HowStuffWorks",
+     "url": "https://auto.howstuffworks.com/nissan-z-history3.htm",
+     "says": "280Z: 8.3:1"
+    },
+    {
+     "name": "Wikipedia: Nissan L engine",
+     "url": "https://en.wikipedia.org/wiki/Nissan_L_engine",
+     "says": "8.3:1 ... 8.8:1 (1981-1983)"
+    },
+    {
+     "name": "XenonZcar.com 280ZX engine specifications (Z-car enthusiast technical page citing 1979-1983 Nissan/Datsun factory service manuals)",
+     "url": "https://www.xenonzcar.com/s130/engine.html",
+     "says": "L28E/L28ET: 2,753 cc; 86.0mm X 79.0mm; 8.3:1 (1979-1980), 8.8:1 (1981-1983); turbo 7.4:1; firing order 1-5-3-6-2-4; 135 hp 1979-80, 145 hp 1981-83; L28ET 180 bhp @ 5600"
+    }
+   ],
+   "note": "8.3:1 by all three; 8.8:1 for 1981-83 only by Wikipedia and XenonZcar (Consumer Guide: 'higher compression' in 1981, no figure) - 8.8 is effectively second-pass."
+  },
+  "years": {
+   "value": "1975-1983 (US 280Z 1975-1978, 280ZX 1979-1983)",
+   "sources": [
+    {
+     "name": "Nissan USA newsroom: Nissan Z 50 years (Nissan material)",
+     "url": "https://usa.nissannews.com/en-US/releases/nissanz-50years-excitement",
+     "says": "1974 ... 2.6 liters ... 260Z; 1975 ... 2.8 liters ... 280Z"
+    },
+    {
+     "name": "Consumer Guide (Auto Editors of Consumer Guide) - Nissan Z History, via HowStuffWorks",
+     "url": "https://auto.howstuffworks.com/nissan-z-history3.htm",
+     "says": "280Z replaced the 260Z mid-1975"
+    },
+    {
+     "name": "Wikipedia: Nissan S30",
+     "url": "https://en.wikipedia.org/wiki/Nissan_S30",
+     "says": "280Z (1975-1978) L28E"
+    },
+    {
+     "name": "Wikipedia: Nissan Fairlady Z (S130)",
+     "url": "https://en.wikipedia.org/wiki/Nissan_Fairlady_Z_(S130)",
+     "says": "L28E 1979-1983"
+    }
+   ],
+   "note": ""
+  }
+ },
+ "variants": [
+  {
+   "year": "1975-1976",
+   "hp": 149,
+   "hp_basis": "SAE net",
+   "compression_ratio": 8.3,
+   "code": "L28E (280Z)",
+   "induction": "L-Jetronic EFI",
+   "sources": [
+    {
+     "name": "Consumer Guide (Auto Editors of Consumer Guide) - Nissan Z History, via HowStuffWorks",
+     "url": "https://auto.howstuffworks.com/nissan-z-history3.htm",
+     "says": "280Z ... 8.3:1 ... 149 hp @ 5600"
+    },
+    {
+     "name": "Wikipedia: Nissan S30",
+     "url": "https://en.wikipedia.org/wiki/Nissan_S30",
+     "says": "280Z L28E: 149 hp @ 5,600 SAE net"
+    }
+   ],
+   "second_pass": true,
+   "note": ""
+  },
+  {
+   "year": 1979,
+   "hp": 135,
+   "hp_basis": "SAE net",
+   "compression_ratio": 8.3,
+   "code": "L28E (280ZX)",
+   "induction": "L-Jetronic EFI",
+   "sources": [
+    {
+     "name": "Nissan USA: nissanusa.com Z history (Nissan material)",
+     "url": "https://www.nissanusa.com/experience-nissan/news-and-events/nissan-z-car.html",
+     "says": "Datsun 280ZX (1979): 135-hp 2.8-liter inline six"
+    },
+    {
+     "name": "Consumer Guide (Auto Editors of Consumer Guide) - Nissan Z History, via HowStuffWorks",
+     "url": "https://auto.howstuffworks.com/nissan-z-history4.htm",
+     "says": "1979: emissions controls reduced peak horsepower to 135 (California cars three less)"
+    },
+    {
+     "name": "Wikipedia: Nissan Fairlady Z (S130)",
+     "url": "https://en.wikipedia.org/wiki/Nissan_Fairlady_Z_(S130)",
+     "says": "L28E 135 hp 1979-1980"
+    }
+   ],
+   "note": "California 132 hp (Consumer Guide)."
+  },
+  {
+   "year": 1981,
+   "hp": 145,
+   "hp_basis": "SAE net",
+   "compression_ratio": 8.8,
+   "code": "L28E (280ZX)",
+   "induction": "L-Jetronic EFI",
+   "sources": [
+    {
+     "name": "1981 Datsun 280-ZX brochure (Nissan Motor Corp. in U.S.A., WE 11-80-144M-2), pp. 10-11, via oldcarbrochures.org",
+     "url": "https://oldcarbrochures.org/Japan/Datsun/1981%20Datsun%20280-ZX/index.html",
+     "says": "Engine: 2.8-liter (2,753cc) 6-cyl. OHC; L-Jetronic fuel injection; Horsepower (5200 rpm) 145"
+    },
+    {
+     "name": "Consumer Guide (Auto Editors of Consumer Guide) - Nissan Z History, via HowStuffWorks",
+     "url": "https://auto.howstuffworks.com/nissan-z-history4.htm",
+     "says": "1981: new catalyst and higher compression raised the standard ZX to 145 hp"
+    },
+    {
+     "name": "Wikipedia: Nissan Fairlady Z (S130)",
+     "url": "https://en.wikipedia.org/wiki/Nissan_Fairlady_Z_(S130)",
+     "says": "145 hp 1981-1983 after P79 head / 8.8:1"
+    }
+   ],
+   "note": "Nissan brochure: 145 hp @ 5200 rpm."
+  },
+  {
+   "year": "1982-1983",
+   "hp": 145,
+   "hp_basis": "SAE net",
+   "compression_ratio": 8.8,
+   "code": "L28E (280ZX)",
+   "induction": "L-Jetronic EFI",
+   "sources": [
+    {
+     "name": "Consumer Guide (Auto Editors of Consumer Guide) - Nissan Z History, via HowStuffWorks",
+     "url": "https://auto.howstuffworks.com/nissan-z-history4.htm",
+     "says": "145 hp standard ZX from 1981"
+    },
+    {
+     "name": "Wikipedia: Nissan Fairlady Z (S130)",
+     "url": "https://en.wikipedia.org/wiki/Nissan_Fairlady_Z_(S130)",
+     "says": "145 hp 1981-1983"
+    }
+   ],
+   "second_pass": true,
+   "note": "XenonZcar also 145 hp 1981-83 (possible shared text with Wikipedia, not counted)."
+  }
+ ],
+ "unverified": {
+  "block_material": "cast iron: Wikipedia and XenonZcar use identical wording (counted once).",
+  "head_material": "aluminum: Wikipedia and XenonZcar identical wording (counted once).",
+  "firing_order": "1-5-3-6-2-4: XenonZcar (citing FSM) only.",
+  "rod_length_in": "not found."
+ }
+}

@@ -1,0 +1,2041 @@
+{
+ "engines": [
+  {
+   "id": "toyota-f",
+   "name": "Toyota F 3.9 I6",
+   "fields": {
+    "displacement_l": {
+     "value": 3.9,
+     "sources": [
+      {
+       "name": "Wikipedia: Toyota F engine",
+       "url": "https://en.wikipedia.org/wiki/Toyota_F_engine",
+       "says": "3.9 L (3878 cc)"
+      },
+      {
+       "name": "Elgin Industries engine parts catalog (technical reference) - engine details",
+       "url": "https://catalog.elginind.com/engine/toyota/default/16d9d18b-b3e6-4c2d-a1a2-e58a285368c4/",
+       "says": "F, FJ: Liters 3.9, CC 3878"
+      },
+      {
+       "name": "Toyota Global 75 Years vehicle lineage: Land Cruiser 40 (Toyota material)",
+       "url": "https://www.toyota-global.com/company/history_of_toyota/75years/vehicle_lineage/car/id60012611/",
+       "says": "Engine code F ... Displacement 3878 cm3"
+      },
+      {
+       "name": "Curbside Classic: 1974 Toyota Land Cruiser (FJ55)",
+       "url": "https://www.curbsideclassic.com/curbside-classics/curbside-classic-1974-toyota-land-cruiser-fj55-soil-tracker/",
+       "says": "inline 6-cyl. 3.9L Type F engine"
+      }
+     ],
+     "note": "3,878 cc"
+    },
+    "displacement_ci": {
+     "value": 237,
+     "sources": [
+      {
+       "name": "Wikipedia: Toyota F engine",
+       "url": "https://en.wikipedia.org/wiki/Toyota_F_engine",
+       "says": "3878 cc"
+      },
+      {
+       "name": "Elgin Industries engine parts catalog (technical reference) - engine details",
+       "url": "https://catalog.elginind.com/engine/toyota/default/16d9d18b-b3e6-4c2d-a1a2-e58a285368c4/",
+       "says": "CC 3878"
+      },
+      {
+       "name": "Toyota Global 75 Years vehicle lineage: Land Cruiser 40 (Toyota material)",
+       "url": "https://www.toyota-global.com/company/history_of_toyota/75years/vehicle_lineage/car/id60012611/",
+       "says": "3878 cm3"
+      }
+     ],
+     "note": "converted = 236.6 ci"
+    },
+    "num_cylinders": {
+     "value": 6,
+     "sources": [
+      {
+       "name": "Wikipedia: Toyota F engine",
+       "url": "https://en.wikipedia.org/wiki/Toyota_F_engine",
+       "says": "inline-6"
+      },
+      {
+       "name": "Elgin Industries engine parts catalog (technical reference) - engine details",
+       "url": "https://catalog.elginind.com/engine/toyota/default/16d9d18b-b3e6-4c2d-a1a2-e58a285368c4/",
+       "says": "Cyl. 6"
+      },
+      {
+       "name": "Toyota Global 75 Years vehicle lineage: Land Cruiser 40 (Toyota material)",
+       "url": "https://www.toyota-global.com/company/history_of_toyota/75years/vehicle_lineage/car/id60012611/",
+       "says": "In-line 6-cylinder, OHV"
+      }
+     ],
+     "note": ""
+    },
+    "configuration": {
+     "value": "inline-6",
+     "sources": [
+      {
+       "name": "Wikipedia: Toyota F engine",
+       "url": "https://en.wikipedia.org/wiki/Toyota_F_engine",
+       "says": "inline-6"
+      },
+      {
+       "name": "Toyota Global 75 Years vehicle lineage: Land Cruiser 40 (Toyota material)",
+       "url": "https://www.toyota-global.com/company/history_of_toyota/75years/vehicle_lineage/car/id60012611/",
+       "says": "In-line 6-cylinder, OHV"
+      },
+      {
+       "name": "Curbside Classic: 1974 Toyota Land Cruiser (FJ55)",
+       "url": "https://www.curbsideclassic.com/curbside-classics/curbside-classic-1974-toyota-land-cruiser-fj55-soil-tracker/",
+       "says": "inline 6-cyl. 3.9L Type F engine"
+      }
+     ],
+     "note": ""
+    },
+    "valvetrain": {
+     "value": "OHV (pushrod), 2 valves per cylinder",
+     "sources": [
+      {
+       "name": "Wikipedia: Toyota F engine",
+       "url": "https://en.wikipedia.org/wiki/Toyota_F_engine",
+       "says": "overhead valves actuated by pushrods from a gear driven camshaft"
+      },
+      {
+       "name": "Toyota Global 75 Years vehicle lineage: Land Cruiser 40 (Toyota material)",
+       "url": "https://www.toyota-global.com/company/history_of_toyota/75years/vehicle_lineage/car/id60012611/",
+       "says": "In-line 6-cylinder, OHV"
+      }
+     ],
+     "note": "",
+     "second_pass": true
+    },
+    "fuel_type": {
+     "value": "gasoline",
+     "sources": [
+      {
+       "name": "Wikipedia: Toyota F engine",
+       "url": "https://en.wikipedia.org/wiki/Toyota_F_engine",
+       "says": "carbureted"
+      },
+      {
+       "name": "Elgin Industries engine parts catalog (technical reference) - engine details",
+       "url": "https://catalog.elginind.com/engine/toyota/default/16d9d18b-b3e6-4c2d-a1a2-e58a285368c4/",
+       "says": "GAS / CARB"
+      },
+      {
+       "name": "Toyota Global: Land Cruiser history - station wagon evolution (Toyota material)",
+       "url": "https://global.toyota/en/mobility/toyota-brand/features/landcruiser/history/evolution/station-wagon.html",
+       "says": "3.9-liter 6-cylinder gasoline engine (Type F)"
+      }
+     ],
+     "note": ""
+    },
+    "bore_in": {
+     "value": 3.5433,
+     "sources": [
+      {
+       "name": "Wikipedia: Toyota F engine",
+       "url": "https://en.wikipedia.org/wiki/Toyota_F_engine",
+       "says": "F: bore 90 mm, stroke 101.6 mm, 3878 cc"
+      },
+      {
+       "name": "Toyota Global 75 Years history, Table 1-33 'Specifications of the F and B Engines (1950)' (Toyota material; excerpted from Model BM Toyota Truck catalogue 'Engine Specifications', 1950)",
+       "url": "https://www.toyota-global.com/company/history_of_toyota/75years/text/taking_on_the_automotive_business/chapter2/section8/item2.html",
+       "says": "F Engine: Bore x Stroke 90.0x101.6 mm; total displacement 3,870 cc; compression 6.4:1"
+      }
+     ],
+     "note": "90.0 mm. Arithmetic: 90 x 90 x 101.6 x 0.7854 x 6 = 3,878.1 cc, matching the 3,878 cc published by Toyota (lineage page), Elgin and Wikipedia. Toyota's 1950 table states 3,870 cc.",
+     "second_pass": true
+    },
+    "stroke_in": {
+     "value": 4.0,
+     "sources": [
+      {
+       "name": "Wikipedia: Toyota F engine",
+       "url": "https://en.wikipedia.org/wiki/Toyota_F_engine",
+       "says": "stroke 101.6 mm"
+      },
+      {
+       "name": "Toyota Global 75 Years history, Table 1-33 'Specifications of the F and B Engines (1950)' (Toyota material; excerpted from Model BM Toyota Truck catalogue 'Engine Specifications', 1950)",
+       "url": "https://www.toyota-global.com/company/history_of_toyota/75years/text/taking_on_the_automotive_business/chapter2/section8/item2.html",
+       "says": "F Engine: Bore x Stroke 90.0x101.6 mm; total displacement 3,870 cc; compression 6.4:1"
+      }
+     ],
+     "note": "101.6 mm (4.0000 in). Arithmetic check as for bore.",
+     "second_pass": true
+    }
+   },
+   "variants": [
+    {
+     "year": "1961-1968",
+     "hp": 125,
+     "hp_basis": "gross",
+     "code": "F (FJ40/FJ43/FJ45, FJ55 from 1968/69)",
+     "induction": "1-bbl carb",
+     "sources": [
+      {
+       "name": "Toyota (USA newsroom + Toyota Global lineage; one source)",
+       "url": "https://pressroom.toyota.com/after-seven-decades-toyotas-legendary-land-cruiser-keeps-rolling-along/",
+       "says": "FJ40: inline-six produced 125 horsepower; lineage: 40 series Aug 1960 F 3,878 cc 125 PS/3600"
+      },
+      {
+       "name": "Wikipedia: Toyota Land Cruiser (J40)",
+       "url": "https://en.wikipedia.org/wiki/Toyota_Land_Cruiser_(J40)",
+       "says": "40 series 1960: 3.9 L F, 93 kW (126 PS; 125 hp)"
+      }
+     ],
+     "second_pass": true,
+     "note": "Toyota and Wikipedia agree on 125 hp. Toyota's lineage page calls its figure a net rating although US-era practice was gross."
+    }
+   ],
+   "unverified": {
+    "block_material": "cast iron: Wikipedia only.",
+    "head_material": "cast iron: Wikipedia only.",
+    "compression_ratio": "6.4:1 is Toyota's 1950 (Model BM truck) figure only; no source for US Land Cruiser F compression."
+   },
+   "unverified_variants": [
+    {
+     "year": "1958-1960",
+     "hp": 105,
+     "code": "F (FJ25)",
+     "found": "Toyota Global FJ25 lineage 105 PS/3200; Wikipedia J40 '105 hp' - PS vs hp, not exact; US sales tiny (one vehicle in 1958)."
+    },
+    {
+     "year": "1969-1975",
+     "hp": "130 vs 125",
+     "code": "F",
+     "found": "Toyota Global station-wagon history: boosted to 130 hp in 1969; Toyota USA heritage release gives only 125; Wikipedia top F rating 130 PS (128 hp). Conflict, withheld."
+    }
+   ]
+  },
+  {
+   "id": "toyota-2f",
+   "name": "Toyota 2F 4.2 I6",
+   "fields": {
+    "bore_in": {
+     "value": 3.7008,
+     "sources": [
+      {
+       "name": "Wikipedia: Toyota F engine",
+       "url": "https://en.wikipedia.org/wiki/Toyota_F_engine",
+       "says": "2F bore 94 mm (3.7 in)"
+      },
+      {
+       "name": "Elgin Industries engine parts catalog (technical reference) - engine details",
+       "url": "https://catalog.elginind.com/engine/toyota/default/9e78be11-f317-4035-84ee-1b44a3066033/",
+       "says": "2F 4227cc: Bore 3.70'' (94.0mm)"
+      },
+      {
+       "name": "Toyota 2F Engine Repair Manual, Aug 1980, Pub. No. 36104E (Toyota Motor Corporation; scan on archive.org)",
+       "url": "https://archive.org/details/2-f-engine",
+       "says": "Cylinder bore STD 94.00 - 94.05 mm (3.7008 - 3.7027 in.)"
+      }
+     ],
+     "note": "94.0 mm"
+    },
+    "displacement_l": {
+     "value": 4.2,
+     "sources": [
+      {
+       "name": "Wikipedia: Toyota F engine",
+       "url": "https://en.wikipedia.org/wiki/Toyota_F_engine",
+       "says": "4.2 L (4230 cc)"
+      },
+      {
+       "name": "Elgin Industries engine parts catalog (technical reference) - engine details",
+       "url": "https://catalog.elginind.com/engine/toyota/default/9e78be11-f317-4035-84ee-1b44a3066033/",
+       "says": "Liters 4.2"
+      },
+      {
+       "name": "Toyota Global: Land Cruiser history - station wagon evolution (Toyota material)",
+       "url": "https://global.toyota/en/mobility/toyota-brand/features/landcruiser/history/evolution/station-wagon.html",
+       "says": "inline 6-cylinder 4,230 cc 135 hp engine (2F)"
+      },
+      {
+       "name": "EPA fueleconomy.gov vehicle data",
+       "url": "https://www.fueleconomy.gov/feg/download.shtml",
+       "says": "1984-87 Land Cruiser Wagon 4.2 L 6-cyl"
+      }
+     ],
+     "note": "4,230 cc per Toyota, Wikipedia and Curbside; Elgin 4,227 cc"
+    },
+    "displacement_ci": {
+     "value": 258,
+     "sources": [
+      {
+       "name": "Wikipedia: Toyota F engine",
+       "url": "https://en.wikipedia.org/wiki/Toyota_F_engine",
+       "says": "4230 cc"
+      },
+      {
+       "name": "Toyota Global: Land Cruiser history - station wagon evolution (Toyota material)",
+       "url": "https://global.toyota/en/mobility/toyota-brand/features/landcruiser/history/evolution/station-wagon.html",
+       "says": "4,230 cc"
+      },
+      {
+       "name": "Curbside Classic: 1978 Toyota Land Cruiser (FJ56)",
+       "url": "https://www.curbsideclassic.com/curbside-classics-asian/curbside-classic-1978-toyota-land-cruiser-fj56-mama-mia/",
+       "says": "the 2F produced 140hp from its 4230cc"
+      }
+     ],
+     "note": "converted = 258.1 ci"
+    },
+    "num_cylinders": {
+     "value": 6,
+     "sources": [
+      {
+       "name": "Wikipedia: Toyota F engine",
+       "url": "https://en.wikipedia.org/wiki/Toyota_F_engine",
+       "says": "inline-6"
+      },
+      {
+       "name": "Elgin Industries engine parts catalog (technical reference) - engine details",
+       "url": "https://catalog.elginind.com/engine/toyota/default/9e78be11-f317-4035-84ee-1b44a3066033/",
+       "says": "Cyl. 6"
+      },
+      {
+       "name": "Toyota Global: Land Cruiser history - station wagon evolution (Toyota material)",
+       "url": "https://global.toyota/en/mobility/toyota-brand/features/landcruiser/history/evolution/station-wagon.html",
+       "says": "inline 6-cylinder 4,230 cc"
+      },
+      {
+       "name": "EPA fueleconomy.gov vehicle data",
+       "url": "https://www.fueleconomy.gov/feg/download.shtml",
+       "says": "4.2 L 6-cyl"
+      }
+     ],
+     "note": ""
+    },
+    "configuration": {
+     "value": "inline-6",
+     "sources": [
+      {
+       "name": "Wikipedia: Toyota F engine",
+       "url": "https://en.wikipedia.org/wiki/Toyota_F_engine",
+       "says": "inline-6"
+      },
+      {
+       "name": "Toyota Global: Land Cruiser history - station wagon evolution (Toyota material)",
+       "url": "https://global.toyota/en/mobility/toyota-brand/features/landcruiser/history/evolution/station-wagon.html",
+       "says": "inline 6-cylinder 4,230 cc 135 hp engine (2F)"
+      }
+     ],
+     "note": "",
+     "second_pass": true
+    },
+    "valvetrain": {
+     "value": "OHV (pushrod), 2 valves per cylinder",
+     "sources": [
+      {
+       "name": "Wikipedia: Toyota F engine",
+       "url": "https://en.wikipedia.org/wiki/Toyota_F_engine",
+       "says": "same overhead valve design"
+      },
+      {
+       "name": "Elgin Industries engine parts catalog (technical reference) - engine details",
+       "url": "https://catalog.elginind.com/engine/toyota/default/9e78be11-f317-4035-84ee-1b44a3066033/",
+       "says": "Head OHV"
+      }
+     ],
+     "note": "",
+     "second_pass": true
+    },
+    "fuel_type": {
+     "value": "gasoline",
+     "sources": [
+      {
+       "name": "Wikipedia: Toyota F engine",
+       "url": "https://en.wikipedia.org/wiki/Toyota_F_engine",
+       "says": "carbureted"
+      },
+      {
+       "name": "Elgin Industries engine parts catalog (technical reference) - engine details",
+       "url": "https://catalog.elginind.com/engine/toyota/default/9e78be11-f317-4035-84ee-1b44a3066033/",
+       "says": "GAS / CARB"
+      },
+      {
+       "name": "Toyota Global: Land Cruiser history - station wagon evolution (Toyota material)",
+       "url": "https://global.toyota/en/mobility/toyota-brand/features/landcruiser/history/evolution/station-wagon.html",
+       "says": "The gasoline engine was upgraded to a 4.2-liter unit (2F)"
+      }
+     ],
+     "note": ""
+    }
+   },
+   "variants": [
+    {
+     "year": "1975-1980",
+     "hp": 135,
+     "hp_basis": "gross (as published)",
+     "code": "2F",
+     "induction": "carb",
+     "sources": [
+      {
+       "name": "Toyota Global: Land Cruiser history - station wagon evolution (Toyota material)",
+       "url": "https://global.toyota/en/mobility/toyota-brand/features/landcruiser/history/evolution/station-wagon.html",
+       "says": "replaced in 1975 with inline 6 4,230 cc 135 hp engine (2F)"
+      },
+      {
+       "name": "Wikipedia: Toyota Land Cruiser (J40)",
+       "url": "https://en.wikipedia.org/wiki/Toyota_Land_Cruiser_(J40)",
+       "says": "2F 4.2 L 99 kW (135 PS; 133 hp), 1975-1984"
+      }
+     ],
+     "second_pass": true,
+     "note": "Toyota 135 hp; Wikipedia 135 PS (133 hp) - same nominal figure, unit differs. Hagerty valuation snippets (not usable) show 125 hp for 1975/1978 FJ40. 2F from Aug 1975 production."
+    }
+   ],
+   "unverified": {
+    "stroke_in": "4.0000 in (101.6 mm): stated only by Wikipedia among checked sources (Toyota 2F repair manual and Elgin give no stroke). Arithmetic supports it: 94 x 94 x 101.6 x 0.7854 x 6 = 4,230.5 cc vs 4,230 cc published (Toyota Global, Wikipedia); Elgin 4,227 cc. Same 101.6 mm stroke as the F (Toyota 1950 table).",
+    "block_material": "cast iron: Wikipedia only.",
+    "head_material": "cast iron: Wikipedia only.",
+    "firing_order": "1-5-3-6-2-4: Toyota 2F Engine Repair Manual (1980) service specifications only."
+   },
+   "unverified_variants": [
+    {
+     "year": "1981-1987",
+     "hp": "135 vs 125",
+     "code": "2F (FJ40 to 1983, FJ60 1981-87)",
+     "found": "Toyota/Wikipedia 135 (basis unstated); US net 125 hp appears only in Hagerty snippets/dealer pages. EPA confirms 4.2 L six 1984-87."
+    }
+   ]
+  },
+  {
+   "id": "toyota-3f-e",
+   "name": "Toyota 3F-E 4.0 I6",
+   "fields": {
+    "bore_in": {
+     "value": 3.7008,
+     "sources": [
+      {
+       "name": "Wikipedia: Toyota F engine",
+       "url": "https://en.wikipedia.org/wiki/Toyota_F_engine",
+       "says": "3F bore 94 mm"
+      },
+      {
+       "name": "Elgin Industries engine parts catalog (technical reference) - engine details",
+       "url": "https://catalog.elginind.com/engine/toyota/default/79b55e6c-e14a-4d85-a7b3-2c67777c484e/",
+       "says": "3FE 3956cc: Bore 3.70'' (94.0mm)"
+      },
+      {
+       "name": "Toyota 3F-E Engine Repair Manual supplement (FJ62 series), Toyota Motor Corporation (scan on archive.org)",
+       "url": "https://archive.org/details/3FEREPAIRMANUAL",
+       "says": "Cylinder bore diameter STD Mark 1/2/3: 94.000-94.010 / 94.010-94.020 / 94.020-94.030 mm (3.7008-3.7020 in.)"
+      }
+     ],
+     "note": "94.0 mm"
+    },
+    "displacement_l": {
+     "value": 4.0,
+     "sources": [
+      {
+       "name": "Wikipedia: Toyota F engine",
+       "url": "https://en.wikipedia.org/wiki/Toyota_F_engine",
+       "says": "4.0 L (3955 cc)"
+      },
+      {
+       "name": "Elgin Industries engine parts catalog (technical reference) - engine details",
+       "url": "https://catalog.elginind.com/engine/toyota/default/79b55e6c-e14a-4d85-a7b3-2c67777c484e/",
+       "says": "Liters 4.0"
+      },
+      {
+       "name": "Toyota Global 75 Years vehicle lineage: Land Cruiser 70/60 spec table (Toyota material)",
+       "url": "https://www.toyota-global.com/company/history_of_toyota/75years/vehicle_lineage/car/id60012612/",
+       "says": "Engine code 3F ... Displacement 3955 cm3"
+      },
+      {
+       "name": "EPA fueleconomy.gov vehicle data",
+       "url": "https://www.fueleconomy.gov/feg/download.shtml",
+       "says": "1988-90 Land Cruiser Wagon 4.0 L 6-cyl"
+      },
+      {
+       "name": "Hagerty Media: Why the 80 Series Land Cruiser Is the Most Notable 4x4 of the '90s",
+       "url": "https://www.hagerty.com/media/market-trends/why-the-80-series-land-cruiser-is-the-most-notable-4x4-of-the-90s/",
+       "says": "3F-E 4.0-liter inline-six"
+      }
+     ],
+     "note": "3,955 cc per Toyota and Wikipedia; Elgin 3,956 cc"
+    },
+    "displacement_ci": {
+     "value": 241,
+     "sources": [
+      {
+       "name": "Wikipedia: Toyota F engine",
+       "url": "https://en.wikipedia.org/wiki/Toyota_F_engine",
+       "says": "3955 cc"
+      },
+      {
+       "name": "Toyota Global 75 Years vehicle lineage: Land Cruiser 70/60 spec table (Toyota material)",
+       "url": "https://www.toyota-global.com/company/history_of_toyota/75years/vehicle_lineage/car/id60012612/",
+       "says": "3955 cm3"
+      },
+      {
+       "name": "Elgin Industries engine parts catalog (technical reference) - engine details",
+       "url": "https://catalog.elginind.com/engine/toyota/default/79b55e6c-e14a-4d85-a7b3-2c67777c484e/",
+       "says": "CC 3956"
+      }
+     ],
+     "note": "converted = 241.3 ci"
+    },
+    "num_cylinders": {
+     "value": 6,
+     "sources": [
+      {
+       "name": "Wikipedia: Toyota F engine",
+       "url": "https://en.wikipedia.org/wiki/Toyota_F_engine",
+       "says": "inline-6"
+      },
+      {
+       "name": "Elgin Industries engine parts catalog (technical reference) - engine details",
+       "url": "https://catalog.elginind.com/engine/toyota/default/79b55e6c-e14a-4d85-a7b3-2c67777c484e/",
+       "says": "Cyl. 6"
+      },
+      {
+       "name": "Toyota Global 75 Years vehicle lineage: Land Cruiser 70/60 spec table (Toyota material)",
+       "url": "https://www.toyota-global.com/company/history_of_toyota/75years/vehicle_lineage/car/id60012612/",
+       "says": "Water-cooled, in-line 6-cylinder, OHV"
+      }
+     ],
+     "note": ""
+    },
+    "configuration": {
+     "value": "inline-6",
+     "sources": [
+      {
+       "name": "Wikipedia: Toyota F engine",
+       "url": "https://en.wikipedia.org/wiki/Toyota_F_engine",
+       "says": "inline-6"
+      },
+      {
+       "name": "Toyota Global 75 Years vehicle lineage: Land Cruiser 70/60 spec table (Toyota material)",
+       "url": "https://www.toyota-global.com/company/history_of_toyota/75years/vehicle_lineage/car/id60012612/",
+       "says": "in-line 6-cylinder, OHV"
+      },
+      {
+       "name": "Hagerty Media: Why the 80 Series Land Cruiser Is the Most Notable 4x4 of the '90s",
+       "url": "https://www.hagerty.com/media/market-trends/why-the-80-series-land-cruiser-is-the-most-notable-4x4-of-the-90s/",
+       "says": "155-horsepower 3F-E 4.0-liter inline-six"
+      }
+     ],
+     "note": ""
+    },
+    "valvetrain": {
+     "value": "OHV (pushrod), 2 valves per cylinder",
+     "sources": [
+      {
+       "name": "Wikipedia: Toyota F engine",
+       "url": "https://en.wikipedia.org/wiki/Toyota_F_engine",
+       "says": "overhead valve"
+      },
+      {
+       "name": "Elgin Industries engine parts catalog (technical reference) - engine details",
+       "url": "https://catalog.elginind.com/engine/toyota/default/79b55e6c-e14a-4d85-a7b3-2c67777c484e/",
+       "says": "Head OHV"
+      },
+      {
+       "name": "Toyota Global 75 Years vehicle lineage: Land Cruiser 70/60 spec table (Toyota material)",
+       "url": "https://www.toyota-global.com/company/history_of_toyota/75years/vehicle_lineage/car/id60012612/",
+       "says": "in-line 6-cylinder, OHV"
+      }
+     ],
+     "note": "Toyota 3F-E manual: 'OHV 12-valve', valves driven via push rod and rocker arm (Toyota already counted once via Toyota Global)."
+    },
+    "fuel_type": {
+     "value": "gasoline",
+     "sources": [
+      {
+       "name": "Wikipedia: Toyota F engine",
+       "url": "https://en.wikipedia.org/wiki/Toyota_F_engine",
+       "says": "fuel injected"
+      },
+      {
+       "name": "Elgin Industries engine parts catalog (technical reference) - engine details",
+       "url": "https://catalog.elginind.com/engine/toyota/default/79b55e6c-e14a-4d85-a7b3-2c67777c484e/",
+       "says": "GAS / FI"
+      },
+      {
+       "name": "EPA fueleconomy.gov vehicle data",
+       "url": "https://www.fueleconomy.gov/feg/download.shtml",
+       "says": "Land Cruiser 4.0 L, no diesel flag"
+      }
+     ],
+     "note": "EFI"
+    },
+    "block_material": {
+     "value": "cast iron",
+     "sources": [
+      {
+       "name": "Toyota 3F-E Engine Repair Manual supplement (FJ62 series), Toyota Motor Corporation (scan on archive.org)",
+       "url": "https://archive.org/details/3FEREPAIRMANUAL",
+       "says": "The cylinder block is made of cast iron."
+      },
+      {
+       "name": "Wikipedia: Toyota F engine",
+       "url": "https://en.wikipedia.org/wiki/Toyota_F_engine",
+       "says": "cast iron block"
+      }
+     ],
+     "note": "",
+     "second_pass": true
+    },
+    "head_material": {
+     "value": "cast iron",
+     "sources": [
+      {
+       "name": "Toyota 3F-E Engine Repair Manual supplement (FJ62 series), Toyota Motor Corporation (scan on archive.org)",
+       "url": "https://archive.org/details/3FEREPAIRMANUAL",
+       "says": "The cylinder head is made of cas[t] iron, with a counter-flow type intake and exhaust layout"
+      },
+      {
+       "name": "Wikipedia: Toyota F engine",
+       "url": "https://en.wikipedia.org/wiki/Toyota_F_engine",
+       "says": "cast iron head"
+      }
+     ],
+     "note": "",
+     "second_pass": true
+    },
+    "induction": {
+     "value": "electronic port fuel injection (EFI)",
+     "sources": [
+      {
+       "name": "Toyota 3F-E Engine Repair Manual supplement (FJ62 series), Toyota Motor Corporation (scan on archive.org)",
+       "url": "https://archive.org/details/3FEREPAIRMANUAL",
+       "says": "3F-E engine ... in-line 6-cylinder 4.0 liter OHV 12-valve engine (E = EFI; 3F-E Engine Emission Control manual)"
+      },
+      {
+       "name": "Elgin Industries engine parts catalog - engine details",
+       "url": "https://catalog.elginind.com/engine/toyota/default/79b55e6c-e14a-4d85-a7b3-2c67777c484e/",
+       "says": "3FE 3956cc: Fuel / Delivery GAS / FI"
+      },
+      {
+       "name": "Wikipedia: Toyota F engine",
+       "url": "https://en.wikipedia.org/wiki/Toyota_F_engine",
+       "says": "3F-E fuel injected"
+      }
+     ],
+     "note": ""
+    }
+   },
+   "variants": [
+    {
+     "year": "1988-1990",
+     "hp": 155,
+     "hp_basis": "SAE net",
+     "code": "3F-E (FJ62)",
+     "induction": "EFI",
+     "sources": [
+      {
+       "name": "Toyota USA Newsroom - After Seven Decades... Land Cruiser",
+       "url": "https://pressroom.toyota.com/after-seven-decades-toyotas-legendary-land-cruiser-keeps-rolling-along/",
+       "says": "1988: a new 155-horsepower 3F 4.0-liter engine replaced the old 4.2 liter"
+      },
+      {
+       "name": "Wikipedia: Toyota Land Cruiser",
+       "url": "https://en.wikipedia.org/wiki/Toyota_Land_Cruiser",
+       "says": "FJ62 (1988-1992) 4.0 L 3F-E I6, 155 hp US spec"
+      },
+      {
+       "name": "Consumer Guide - 1990-97 Toyota Land Cruiser",
+       "url": "https://consumerguide.com/used/1990-97-toyota-land-cruiser/",
+       "says": "4.0-liter I6 in 1990-92 models, 155 hp"
+      }
+     ],
+     "note": "1988-89 rest on Toyota + Wikipedia; Consumer Guide covers 1990 on."
+    },
+    {
+     "year": "1991-1992",
+     "hp": 155,
+     "hp_basis": "SAE net",
+     "code": "3F-E (FJ80)",
+     "induction": "EFI",
+     "sources": [
+      {
+       "name": "Consumer Guide - 1990-97 Toyota Land Cruiser",
+       "url": "https://consumerguide.com/used/1990-97-toyota-land-cruiser/",
+       "says": "4.0-liter I6 in 1990-92 models, 155 hp / 220 lb-ft"
+      },
+      {
+       "name": "Kelley Blue Book - 1992 Toyota Land Cruiser specs",
+       "url": "https://www.kbb.com/toyota/land-cruiser/1992/specs",
+       "says": "6-cyl 4.0 L, 155 @ 4000 rpm"
+      }
+     ],
+     "second_pass": true,
+     "note": "Wikipedia gives the J80 3F-E as 150 hp (152 PS), a non-US figure; Consumer Guide and KBB agree on 155."
+    }
+   ],
+   "unverified": {
+    "stroke_in": "3.7402 in (95.0 mm): Wikipedia only (Toyota manual, Elgin and Toyota Global give no stroke). Arithmetic supports it: 94 x 94 x 95 x 0.7854 x 6 = 3,955.7 cc vs Toyota 3,955 cc / Elgin 3,956 cc.",
+    "firing_order": "1-5-3-6-2-4: Toyota 3F-E repair manual only."
+   },
+   "unverified_variants": []
+  },
+  {
+   "id": "toyota-1fz-fe",
+   "name": "Toyota 1FZ-FE 4.5 I6",
+   "fields": {
+    "bore_in": {
+     "value": 3.937,
+     "sources": [
+      {
+       "name": "Wikipedia: Toyota FZ engine",
+       "url": "https://en.wikipedia.org/wiki/Toyota_FZ_engine",
+       "says": "1FZ-FE 100 mm x 95 mm"
+      },
+      {
+       "name": "Elgin Industries engine parts catalog (technical reference) - engine details",
+       "url": "https://catalog.elginind.com/engine/toyota/default/499a2db2-fc8a-4393-b281-7f76a89ac33e/",
+       "says": "1FZ-FE 4477cc: Bore 3.94'' (100.0mm)"
+      },
+      {
+       "name": "Australian Car Reviews: Toyota 1FZ-FE engine",
+       "url": "https://australiancar.reviews/1fz-fe-toyota-engine/",
+       "says": "cast iron block with 100.0 mm bores and a 95.0 mm stroke for a capacity of 4477 cc; compression ratio of 9.0:1; firing order 1-5-3-6-2-4; double overhead camshafts, four valves per cylinder; cast iron cylinder head"
+      }
+     ],
+     "note": "100.0 mm"
+    },
+    "displacement_l": {
+     "value": 4.5,
+     "sources": [
+      {
+       "name": "Wikipedia: Toyota FZ engine",
+       "url": "https://en.wikipedia.org/wiki/Toyota_FZ_engine",
+       "says": "4.5 L (4,477 cc)"
+      },
+      {
+       "name": "Elgin Industries engine parts catalog (technical reference) - engine details",
+       "url": "https://catalog.elginind.com/engine/toyota/default/499a2db2-fc8a-4393-b281-7f76a89ac33e/",
+       "says": "Liters 4.5, CC 4477"
+      },
+      {
+       "name": "Toyota Global: Land Cruiser history - station wagon evolution (Toyota material)",
+       "url": "https://global.toyota/en/mobility/toyota-brand/features/landcruiser/history/evolution/station-wagon.html",
+       "says": "4.5-liter inline 6-cylinder 24-valve unit"
+      },
+      {
+       "name": "EPA fueleconomy.gov vehicle data",
+       "url": "https://www.fueleconomy.gov/feg/download.shtml",
+       "says": "1993-97 Land Cruiser 4.5 L 6-cyl"
+      },
+      {
+       "name": "Hagerty Media: Why the 80 Series Land Cruiser Is the Most Notable 4x4 of the '90s",
+       "url": "https://www.hagerty.com/media/market-trends/why-the-80-series-land-cruiser-is-the-most-notable-4x4-of-the-90s/",
+       "says": "1FZ-FE 4.5-liter"
+      }
+     ],
+     "note": "4,477 cc"
+    },
+    "displacement_ci": {
+     "value": 273,
+     "sources": [
+      {
+       "name": "Wikipedia: Toyota FZ engine",
+       "url": "https://en.wikipedia.org/wiki/Toyota_FZ_engine",
+       "says": "4,477 cc"
+      },
+      {
+       "name": "Elgin Industries engine parts catalog (technical reference) - engine details",
+       "url": "https://catalog.elginind.com/engine/toyota/default/499a2db2-fc8a-4393-b281-7f76a89ac33e/",
+       "says": "CC 4477"
+      }
+     ],
+     "note": "converted = 273.2 ci",
+     "second_pass": true
+    },
+    "num_cylinders": {
+     "value": 6,
+     "sources": [
+      {
+       "name": "Wikipedia: Toyota FZ engine",
+       "url": "https://en.wikipedia.org/wiki/Toyota_FZ_engine",
+       "says": "straight-six"
+      },
+      {
+       "name": "Elgin Industries engine parts catalog (technical reference) - engine details",
+       "url": "https://catalog.elginind.com/engine/toyota/default/499a2db2-fc8a-4393-b281-7f76a89ac33e/",
+       "says": "Cyl. 6"
+      },
+      {
+       "name": "Toyota Global: Land Cruiser history - station wagon evolution (Toyota material)",
+       "url": "https://global.toyota/en/mobility/toyota-brand/features/landcruiser/history/evolution/station-wagon.html",
+       "says": "4.5-liter inline 6-cylinder"
+      },
+      {
+       "name": "EPA fueleconomy.gov vehicle data",
+       "url": "https://www.fueleconomy.gov/feg/download.shtml",
+       "says": "4.5 L 6-cyl"
+      }
+     ],
+     "note": ""
+    },
+    "configuration": {
+     "value": "inline-6",
+     "sources": [
+      {
+       "name": "Wikipedia: Toyota FZ engine",
+       "url": "https://en.wikipedia.org/wiki/Toyota_FZ_engine",
+       "says": "straight-six"
+      },
+      {
+       "name": "Toyota Global: Land Cruiser history - station wagon evolution (Toyota material)",
+       "url": "https://global.toyota/en/mobility/toyota-brand/features/landcruiser/history/evolution/station-wagon.html",
+       "says": "4.5-liter inline 6-cylinder 24-valve unit"
+      }
+     ],
+     "note": "",
+     "second_pass": true
+    },
+    "valvetrain": {
+     "value": "DOHC, 4 valves per cylinder (24 valves)",
+     "sources": [
+      {
+       "name": "Wikipedia: Toyota FZ engine",
+       "url": "https://en.wikipedia.org/wiki/Toyota_FZ_engine",
+       "says": "DOHC 4 valves x cyl."
+      },
+      {
+       "name": "Elgin Industries engine parts catalog (technical reference) - engine details",
+       "url": "https://catalog.elginind.com/engine/toyota/default/499a2db2-fc8a-4393-b281-7f76a89ac33e/",
+       "says": "Head DOHC, Misc. 24 Valve"
+      },
+      {
+       "name": "Toyota Global: Land Cruiser history - station wagon evolution (Toyota material)",
+       "url": "https://global.toyota/en/mobility/toyota-brand/features/landcruiser/history/evolution/station-wagon.html",
+       "says": "24-valve unit producing 215 PS"
+      }
+     ],
+     "note": ""
+    },
+    "fuel_type": {
+     "value": "gasoline",
+     "sources": [
+      {
+       "name": "Wikipedia: Toyota FZ engine",
+       "url": "https://en.wikipedia.org/wiki/Toyota_FZ_engine",
+       "says": "fuel injection (1FZ-FE)"
+      },
+      {
+       "name": "Elgin Industries engine parts catalog (technical reference) - engine details",
+       "url": "https://catalog.elginind.com/engine/toyota/default/499a2db2-fc8a-4393-b281-7f76a89ac33e/",
+       "says": "GAS / FI"
+      },
+      {
+       "name": "Toyota Global: Land Cruiser history - station wagon evolution (Toyota material)",
+       "url": "https://global.toyota/en/mobility/toyota-brand/features/landcruiser/history/evolution/station-wagon.html",
+       "says": "the gasoline engine was replaced with a 4.5-liter inline 6-cylinder 24-valve unit"
+      }
+     ],
+     "note": ""
+    },
+    "stroke_in": {
+     "value": 3.7402,
+     "sources": [
+      {
+       "name": "Wikipedia: Toyota FZ engine",
+       "url": "https://en.wikipedia.org/wiki/Toyota_FZ_engine",
+       "says": "1FZ-FE bore x stroke 100 mm x 95 mm"
+      },
+      {
+       "name": "Australian Car Reviews: Toyota 1FZ-FE engine",
+       "url": "https://australiancar.reviews/1fz-fe-toyota-engine/",
+       "says": "cast iron block with 100.0 mm bores and a 95.0 mm stroke for a capacity of 4477 cc; compression ratio of 9.0:1; firing order 1-5-3-6-2-4; double overhead camshafts, four valves per cylinder; cast iron cylinder head"
+      }
+     ],
+     "note": "95.0 mm. Arithmetic: 100 x 100 x 95 x 0.7854 x 6 = 4,476.8 cc vs 4,477 cc (Elgin, Australian Car Reviews).",
+     "second_pass": true
+    }
+   },
+   "variants": [
+    {
+     "year": "1993-1997",
+     "hp": 212,
+     "hp_basis": "SAE net",
+     "code": "1FZ-FE (FZJ80)",
+     "induction": "sequential EFI",
+     "sources": [
+      {
+       "name": "Toyota USA Newsroom - After Seven Decades... Land Cruiser",
+       "url": "https://pressroom.toyota.com/after-seven-decades-toyotas-legendary-land-cruiser-keeps-rolling-along/",
+       "says": "For 1993 ... 24-valve DOHC 4.5-liter inline-six, 212 hp and 275 lb-ft"
+      },
+      {
+       "name": "Consumer Guide - 1990-97 Toyota Land Cruiser",
+       "url": "https://consumerguide.com/used/1990-97-toyota-land-cruiser/",
+       "says": "1993: dohc 4.5 L/275 cu in six, 212 hp"
+      },
+      {
+       "name": "Wikipedia: Toyota Land Cruiser",
+       "url": "https://en.wikipedia.org/wiki/Toyota_Land_Cruiser",
+       "says": "1FZ-FE 158 kW (215 PS; 212 hp) at 4,600 rpm"
+      },
+      {
+       "name": "Kelley Blue Book - 1993 Toyota Land Cruiser specs",
+       "url": "https://www.kbb.com/toyota/land-cruiser/1993/specs",
+       "says": "4.5 L 212 @ 4600"
+      }
+     ],
+     "note": ""
+    }
+   ],
+   "unverified": {
+    "block_material": "cast iron: Australian Car Reviews only.",
+    "head_material": "Australian Car Reviews says cast iron head; no second source (commonly reported as aluminum) - conflict/unconfirmed, withheld.",
+    "firing_order": "1-5-3-6-2-4: Australian Car Reviews only.",
+    "compression_ratio": "9.0:1: Australian Car Reviews only."
+   },
+   "unverified_variants": []
+  },
+  {
+   "id": "nissan-l24",
+   "name": "Nissan L24 2.4 I6 (240Z)",
+   "fields": {
+    "bore_in": {
+     "value": 3.2677,
+     "sources": [
+      {
+       "name": "Wikipedia: Nissan L engine",
+       "url": "https://en.wikipedia.org/wiki/Nissan_L_engine",
+       "says": "L24 bore x stroke 83 mm x 73.7 mm"
+      },
+      {
+       "name": "Elgin Industries engine parts catalog - engine details",
+       "url": "https://catalog.elginind.com/engine/nissan/default/1aab983c-4b2e-459d-abc3-e0a5061a9e24/",
+       "says": "L24 2393cc: Bore 3.27'' (83.0mm)"
+      },
+      {
+       "name": "Consumer Guide (Auto Editors of Consumer Guide) - Nissan Z History, via HowStuffWorks",
+       "url": "https://auto.howstuffworks.com/nissan-z-history3.htm",
+       "says": "maintaining the 83.0-mm bore"
+      }
+     ],
+     "note": "83.0 mm"
+    },
+    "stroke_in": {
+     "value": 2.9016,
+     "sources": [
+      {
+       "name": "Wikipedia: Nissan L engine",
+       "url": "https://en.wikipedia.org/wiki/Nissan_L_engine",
+       "says": "L24 83 mm x 73.7 mm, 2,393 cc"
+      }
+     ],
+     "note": "73.7 mm. CONFLICT settled by arithmetic: Consumer Guide says the L24 stroke was 73.0 mm. 83 x 83 x 73.7 x 0.7854 x 6 = 2,392.6 cc matches the 2,393 cc published by Nissan, Elgin, Consumer Guide and Wikipedia; 73.0 mm would give 2,369.8 cc. Only one explicit source for 73.7.",
+     "second_pass": true,
+     "settled_by_arithmetic": true
+    },
+    "displacement_l": {
+     "value": 2.4,
+     "sources": [
+      {
+       "name": "Wikipedia: Nissan L engine",
+       "url": "https://en.wikipedia.org/wiki/Nissan_L_engine",
+       "says": "2.4 L (2,393 cc)"
+      },
+      {
+       "name": "Elgin Industries engine parts catalog - engine details",
+       "url": "https://catalog.elginind.com/engine/nissan/default/1aab983c-4b2e-459d-abc3-e0a5061a9e24/",
+       "says": "Liters 2.4, CC 2393"
+      },
+      {
+       "name": "Consumer Guide (Auto Editors of Consumer Guide) - Nissan Z History, via HowStuffWorks",
+       "url": "https://auto.howstuffworks.com/nissan-z-history2.htm",
+       "says": "Displacement: 2393 cubic centimeters"
+      },
+      {
+       "name": "Nissan Heritage Collection: Datsun 240Z (1971 HS30) (Nissan material)",
+       "url": "https://www.nissan-global.com/EN/HERITAGE_COLLECTION/060_datsun_240z.html",
+       "says": "Engine L24 (6-cyl. in line OHC) 2,393cc"
+      }
+     ],
+     "note": "2,393 cc"
+    },
+    "displacement_ci": {
+     "value": 146,
+     "sources": [
+      {
+       "name": "Wikipedia: Nissan L engine",
+       "url": "https://en.wikipedia.org/wiki/Nissan_L_engine",
+       "says": "2,393 cc; 146.0 cu in"
+      },
+      {
+       "name": "Elgin Industries engine parts catalog - engine details",
+       "url": "https://catalog.elginind.com/engine/nissan/default/1aab983c-4b2e-459d-abc3-e0a5061a9e24/",
+       "says": "CC 2393"
+      },
+      {
+       "name": "Consumer Guide (Auto Editors of Consumer Guide) - Nissan Z History, via HowStuffWorks",
+       "url": "https://auto.howstuffworks.com/nissan-z-history2.htm",
+       "says": "2393 cubic centimeters"
+      }
+     ],
+     "note": "2,393 cc = 146.0 ci"
+    },
+    "num_cylinders": {
+     "value": 6,
+     "sources": [
+      {
+       "name": "Wikipedia: Nissan L engine",
+       "url": "https://en.wikipedia.org/wiki/Nissan_L_engine",
+       "says": "straight-six"
+      },
+      {
+       "name": "Elgin Industries engine parts catalog - engine details",
+       "url": "https://catalog.elginind.com/engine/nissan/default/1aab983c-4b2e-459d-abc3-e0a5061a9e24/",
+       "says": "Cyl. 6"
+      },
+      {
+       "name": "Nissan Heritage Collection: Datsun 240Z (1971 HS30) (Nissan material)",
+       "url": "https://www.nissan-global.com/EN/HERITAGE_COLLECTION/060_datsun_240z.html",
+       "says": "Engine L24 (6-cyl. in line OHC) 2,393cc"
+      }
+     ],
+     "note": ""
+    },
+    "configuration": {
+     "value": "inline-6",
+     "sources": [
+      {
+       "name": "Wikipedia: Nissan L engine",
+       "url": "https://en.wikipedia.org/wiki/Nissan_L_engine",
+       "says": "L-series straight-six"
+      },
+      {
+       "name": "Consumer Guide (Auto Editors of Consumer Guide) - Nissan Z History, via HowStuffWorks",
+       "url": "https://auto.howstuffworks.com/nissan-z-history2.htm",
+       "says": "Engine: single-overhead-cam inline-6"
+      },
+      {
+       "name": "Nissan Heritage Collection: Datsun 240Z (1971 HS30) (Nissan material)",
+       "url": "https://www.nissan-global.com/EN/HERITAGE_COLLECTION/060_datsun_240z.html",
+       "says": "Engine L24 (6-cyl. in line OHC) 2,393cc"
+      }
+     ],
+     "note": ""
+    },
+    "valvetrain": {
+     "value": "SOHC, 2 valves per cylinder",
+     "sources": [
+      {
+       "name": "Wikipedia: Nissan L engine",
+       "url": "https://en.wikipedia.org/wiki/Nissan_L_engine",
+       "says": "SOHC non-crossflow, two valves per cylinder"
+      },
+      {
+       "name": "Elgin Industries engine parts catalog - engine details",
+       "url": "https://catalog.elginind.com/engine/nissan/default/1aab983c-4b2e-459d-abc3-e0a5061a9e24/",
+       "says": "Head SOHC"
+      },
+      {
+       "name": "Consumer Guide (Auto Editors of Consumer Guide) - Nissan Z History, via HowStuffWorks",
+       "url": "https://auto.howstuffworks.com/nissan-z-history2.htm",
+       "says": "single-overhead-cam inline-6"
+      },
+      {
+       "name": "Nissan Heritage Collection: Datsun 240Z (1971 HS30) (Nissan material)",
+       "url": "https://www.nissan-global.com/EN/HERITAGE_COLLECTION/060_datsun_240z.html",
+       "says": "Engine L24 (6-cyl. in line OHC) 2,393cc"
+      }
+     ],
+     "note": "2 valves/cyl stated only by Wikipedia; SOHC by all four."
+    },
+    "induction": {
+     "value": "twin SU-type sidedraft carburetors (US)",
+     "sources": [
+      {
+       "name": "Wikipedia: Nissan L engine",
+       "url": "https://en.wikipedia.org/wiki/Nissan_L_engine",
+       "says": "twin SU carburettors (150 PS version)"
+      },
+      {
+       "name": "Consumer Guide (Auto Editors of Consumer Guide) - Nissan Z History, via HowStuffWorks",
+       "url": "https://auto.howstuffworks.com/nissan-z-history2.htm",
+       "says": "Fuel supply: Two Hitachi-SU 1v sidedraft carburetors"
+      },
+      {
+       "name": "Elgin Industries engine parts catalog - engine details",
+       "url": "https://catalog.elginind.com/engine/nissan/default/1aab983c-4b2e-459d-abc3-e0a5061a9e24/",
+       "says": "Fuel / Delivery GAS / CARB"
+      }
+     ],
+     "note": ""
+    },
+    "fuel_type": {
+     "value": "gasoline",
+     "sources": [
+      {
+       "name": "Wikipedia: Nissan L engine",
+       "url": "https://en.wikipedia.org/wiki/Nissan_L_engine",
+       "says": "carbureted petrol"
+      },
+      {
+       "name": "Elgin Industries engine parts catalog - engine details",
+       "url": "https://catalog.elginind.com/engine/nissan/default/1aab983c-4b2e-459d-abc3-e0a5061a9e24/",
+       "says": "GAS / CARB"
+      },
+      {
+       "name": "Consumer Guide (Auto Editors of Consumer Guide) - Nissan Z History, via HowStuffWorks",
+       "url": "https://auto.howstuffworks.com/nissan-z-history2.htm",
+       "says": "carburetors"
+      }
+     ],
+     "note": ""
+    },
+    "years": {
+     "value": "1970-1973 (US 240Z)",
+     "sources": [
+      {
+       "name": "Nissan USA newsroom: 370Z 40th Anniversary release (Nissan material)",
+       "url": "https://usa.nissannews.com/en-US/releases/release-49ec4ba13840405094f0c893ce9e9239-nissan-celebrates-four-decades-of-sports-car-leadership-with-new-limited-edition-370z-40th-anniversary-model",
+       "says": "1970 240Z: a 150-horsepower 2.4-liter single overhead cam inline 6-cylinder engine"
+      },
+      {
+       "name": "Consumer Guide (Auto Editors of Consumer Guide) - Nissan Z History, via HowStuffWorks",
+       "url": "https://auto.howstuffworks.com/nissan-z-history2.htm",
+       "says": "240Z ... 1973 240Zs rated 129 hp"
+      },
+      {
+       "name": "Wikipedia: Nissan S30",
+       "url": "https://en.wikipedia.org/wiki/Nissan_S30",
+       "says": "240Z (1970-1973) L24"
+      }
+     ],
+     "note": "L24 built 1969-1984 overall (Wikipedia)"
+    }
+   },
+   "variants": [
+    {
+     "year": "1970-1971",
+     "hp": 150,
+     "hp_basis": "gross",
+     "compression_ratio": 9.0,
+     "code": "L24",
+     "induction": "twin SU carbs",
+     "sources": [
+      {
+       "name": "Nissan USA newsroom: 370Z 40th Anniversary release (Nissan material)",
+       "url": "https://usa.nissannews.com/en-US/releases/release-49ec4ba13840405094f0c893ce9e9239-nissan-celebrates-four-decades-of-sports-car-leadership-with-new-limited-edition-370z-40th-anniversary-model",
+       "says": "1970 240Z: a 150-horsepower 2.4-liter single overhead cam inline 6-cylinder engine"
+      },
+      {
+       "name": "Consumer Guide (Auto Editors of Consumer Guide) - Nissan Z History, via HowStuffWorks",
+       "url": "https://auto.howstuffworks.com/nissan-z-history2.htm",
+       "says": "Compression ratio: 9.0:1 Horsepower: 150 @ 6000 rpm"
+      }
+     ],
+     "second_pass": true,
+     "note": "Nissan and Consumer Guide agree on 150 hp; Wikipedia S30 gives 151 hp SAE gross @ 5,600. Compression 9.0:1 from Consumer Guide only."
+    }
+   ],
+   "unverified": {
+    "block_material": "cast iron: Wikipedia only (XenonZcar text for L28 copies the same wording).",
+    "head_material": "aluminum: Wikipedia only.",
+    "compression_ratio": "9.0:1 (1970-71): Consumer Guide only; lower in 1972-73 (CG, no figure).",
+    "firing_order": "1-5-3-6-2-4 is given for the L28E by XenonZcar only; nothing found for L24."
+   },
+   "unverified_variants": [
+    {
+     "year": "1972",
+     "hp": null,
+     "code": "L24",
+     "found": "No 1972 US net rating found."
+    },
+    {
+     "year": "1973",
+     "hp": 129,
+     "hp_basis": "SAE net",
+     "code": "L24",
+     "found": "Consumer Guide only (129 hp); Wikipedia gives only 151 gross for 1970-73."
+    }
+   ]
+  },
+  {
+   "id": "nissan-l26",
+   "name": "Nissan L26 2.6 I6 (260Z)",
+   "fields": {
+    "bore_in": {
+     "value": 3.2677,
+     "sources": [
+      {
+       "name": "Wikipedia: Nissan L engine",
+       "url": "https://en.wikipedia.org/wiki/Nissan_L_engine",
+       "says": "L26 83 mm x 79 mm"
+      },
+      {
+       "name": "Elgin Industries engine parts catalog - engine details",
+       "url": "https://catalog.elginind.com/engine/nissan/default/d180457b-1122-458b-9bca-58c7b07661c9/",
+       "says": "L26 2565cc: Bore 3.26'' (83.0mm)"
+      },
+      {
+       "name": "Consumer Guide (Auto Editors of Consumer Guide) - Nissan Z History, via HowStuffWorks",
+       "url": "https://auto.howstuffworks.com/nissan-z-history3.htm",
+       "says": "maintaining the 83.0-mm bore"
+      }
+     ],
+     "note": "83.0 mm (Elgin's inch figure 3.26 is a rounding slip; 83.0 mm = 3.2677 in)"
+    },
+    "stroke_in": {
+     "value": 3.1102,
+     "sources": [
+      {
+       "name": "Wikipedia: Nissan L engine",
+       "url": "https://en.wikipedia.org/wiki/Nissan_L_engine",
+       "says": "L26 83 mm x 79 mm"
+      },
+      {
+       "name": "Consumer Guide (Auto Editors of Consumer Guide) - Nissan Z History, via HowStuffWorks",
+       "url": "https://auto.howstuffworks.com/nissan-z-history3.htm",
+       "says": "increasing the stroke from 73.0 mm to 79.0 mm"
+      }
+     ],
+     "note": "79.0 mm. Arithmetic: 83 x 83 x 79 x 0.7854 x 6 = 2,564.6 cc vs 2,565 cc published.",
+     "second_pass": true
+    },
+    "displacement_l": {
+     "value": 2.6,
+     "sources": [
+      {
+       "name": "Wikipedia: Nissan L engine",
+       "url": "https://en.wikipedia.org/wiki/Nissan_L_engine",
+       "says": "2.6 L (2,565 cc)"
+      },
+      {
+       "name": "Elgin Industries engine parts catalog - engine details",
+       "url": "https://catalog.elginind.com/engine/nissan/default/d180457b-1122-458b-9bca-58c7b07661c9/",
+       "says": "Liters 2.6, CC 2565"
+      },
+      {
+       "name": "Consumer Guide (Auto Editors of Consumer Guide) - Nissan Z History, via HowStuffWorks",
+       "url": "https://auto.howstuffworks.com/nissan-z-history3.htm",
+       "says": "increased to 2565 cubic centimeters -- or 2.6 liters"
+      },
+      {
+       "name": "Nissan USA newsroom: Nissan Z 50 years (Nissan material)",
+       "url": "https://usa.nissannews.com/en-US/releases/nissanz-50years-excitement",
+       "says": "1974 ... 2.6 liters ... 260Z; 1975 ... 2.8 liters ... 280Z"
+      }
+     ],
+     "note": "2,565 cc"
+    },
+    "displacement_ci": {
+     "value": 157,
+     "sources": [
+      {
+       "name": "Wikipedia: Nissan L engine",
+       "url": "https://en.wikipedia.org/wiki/Nissan_L_engine",
+       "says": "2,565 cc; 156.5 cu in"
+      },
+      {
+       "name": "Elgin Industries engine parts catalog - engine details",
+       "url": "https://catalog.elginind.com/engine/nissan/default/d180457b-1122-458b-9bca-58c7b07661c9/",
+       "says": "CC 2565"
+      },
+      {
+       "name": "Consumer Guide (Auto Editors of Consumer Guide) - Nissan Z History, via HowStuffWorks",
+       "url": "https://auto.howstuffworks.com/nissan-z-history3.htm",
+       "says": "2565 cubic centimeters"
+      }
+     ],
+     "note": "2,565 cc = 156.5 ci"
+    },
+    "num_cylinders": {
+     "value": 6,
+     "sources": [
+      {
+       "name": "Wikipedia: Nissan L engine",
+       "url": "https://en.wikipedia.org/wiki/Nissan_L_engine",
+       "says": "straight-six"
+      },
+      {
+       "name": "Elgin Industries engine parts catalog - engine details",
+       "url": "https://catalog.elginind.com/engine/nissan/default/d180457b-1122-458b-9bca-58c7b07661c9/",
+       "says": "Cyl. 6"
+      },
+      {
+       "name": "Consumer Guide (Auto Editors of Consumer Guide) - Nissan Z History, via HowStuffWorks",
+       "url": "https://auto.howstuffworks.com/nissan-z-history3.htm",
+       "says": "the inline-6 was increased to 2565 cubic centimeters"
+      }
+     ],
+     "note": ""
+    },
+    "configuration": {
+     "value": "inline-6",
+     "sources": [
+      {
+       "name": "Wikipedia: Nissan L engine",
+       "url": "https://en.wikipedia.org/wiki/Nissan_L_engine",
+       "says": "straight-six"
+      },
+      {
+       "name": "Consumer Guide (Auto Editors of Consumer Guide) - Nissan Z History, via HowStuffWorks",
+       "url": "https://auto.howstuffworks.com/nissan-z-history3.htm",
+       "says": "the inline-6 was increased to 2565 cubic centimeters"
+      }
+     ],
+     "note": "",
+     "second_pass": true
+    },
+    "valvetrain": {
+     "value": "SOHC",
+     "sources": [
+      {
+       "name": "Wikipedia: Nissan L engine",
+       "url": "https://en.wikipedia.org/wiki/Nissan_L_engine",
+       "says": "L-series SOHC"
+      },
+      {
+       "name": "Elgin Industries engine parts catalog - engine details",
+       "url": "https://catalog.elginind.com/engine/nissan/default/d180457b-1122-458b-9bca-58c7b07661c9/",
+       "says": "Head SOHC"
+      }
+     ],
+     "note": "",
+     "second_pass": true
+    },
+    "induction": {
+     "value": "carburetors (twin SU-type)",
+     "sources": [
+      {
+       "name": "Elgin Industries engine parts catalog - engine details",
+       "url": "https://catalog.elginind.com/engine/nissan/default/d180457b-1122-458b-9bca-58c7b07661c9/",
+       "says": "Fuel / Delivery GAS / CARB"
+      },
+      {
+       "name": "Consumer Guide (Auto Editors of Consumer Guide) - Nissan Z History, via HowStuffWorks",
+       "url": "https://auto.howstuffworks.com/nissan-z-history3.htm",
+       "says": "The carburetors ... (260Z)"
+      }
+     ],
+     "note": "SU type implied (carried over from 240Z), not stated for the 260Z.",
+     "second_pass": true
+    },
+    "fuel_type": {
+     "value": "gasoline",
+     "sources": [
+      {
+       "name": "Wikipedia: Nissan L engine",
+       "url": "https://en.wikipedia.org/wiki/Nissan_L_engine",
+       "says": "petrol"
+      },
+      {
+       "name": "Elgin Industries engine parts catalog - engine details",
+       "url": "https://catalog.elginind.com/engine/nissan/default/d180457b-1122-458b-9bca-58c7b07661c9/",
+       "says": "GAS / CARB"
+      },
+      {
+       "name": "Consumer Guide (Auto Editors of Consumer Guide) - Nissan Z History, via HowStuffWorks",
+       "url": "https://auto.howstuffworks.com/nissan-z-history3.htm",
+       "says": "carburetors"
+      }
+     ],
+     "note": ""
+    },
+    "years": {
+     "value": "1974 (US 260Z; possibly early 1975)",
+     "sources": [
+      {
+       "name": "Nissan USA newsroom: Nissan Z 50 years (Nissan material)",
+       "url": "https://usa.nissannews.com/en-US/releases/nissanz-50years-excitement",
+       "says": "1974 ... 2.6 liters ... 260Z; 1975 ... 2.8 liters ... 280Z"
+      },
+      {
+       "name": "Consumer Guide (Auto Editors of Consumer Guide) - Nissan Z History, via HowStuffWorks",
+       "url": "https://auto.howstuffworks.com/nissan-z-history3.htm",
+       "says": "Datsun 260Z, introduced for 1974 ... 1975 models ... replaced midyear by the new Datsun 280Z"
+      },
+      {
+       "name": "Wikipedia: Nissan S30",
+       "url": "https://en.wikipedia.org/wiki/Nissan_S30",
+       "says": "260Z (1974) L26"
+      }
+     ],
+     "note": "Consumer Guide says early-1975 US cars were still 260Zs; Wikipedia lists the US 260Z as 1974 only."
+    }
+   },
+   "variants": [
+    {
+     "year": 1974,
+     "hp": 139,
+     "hp_basis": "SAE net",
+     "code": "L26",
+     "induction": "carbs",
+     "sources": [
+      {
+       "name": "Consumer Guide (Auto Editors of Consumer Guide) - Nissan Z History, via HowStuffWorks",
+       "url": "https://auto.howstuffworks.com/nissan-z-history3.htm",
+       "says": "restored output to 139 horsepower, peak at 5200 rpm"
+      },
+      {
+       "name": "Wikipedia: Nissan S30",
+       "url": "https://en.wikipedia.org/wiki/Nissan_S30",
+       "says": "260Z (1974) L26 2,565 cc, US 139 hp SAE net"
+      }
+     ],
+     "second_pass": true,
+     "note": ""
+    }
+   ],
+   "unverified": {
+    "block_material": "cast iron: Wikipedia family statement only.",
+    "head_material": "aluminum: Wikipedia only.",
+    "compression_ratio": "not found in a usable source (forums/spec aggregators give 8.3-9.0)."
+   },
+   "unverified_variants": [
+    {
+     "year": 1975,
+     "hp": 139,
+     "code": "L26",
+     "found": "Early-1975 US 260Z per Consumer Guide; Wikipedia says US 260Z was 1974 only."
+    }
+   ]
+  },
+  {
+   "id": "nissan-l28e",
+   "name": "Nissan L28E 2.8 I6 EFI (280Z/280ZX)",
+   "fields": {
+    "bore_in": {
+     "value": 3.3858,
+     "sources": [
+      {
+       "name": "Wikipedia: Nissan L engine",
+       "url": "https://en.wikipedia.org/wiki/Nissan_L_engine",
+       "says": "L28 86 mm x 79 mm, 2,753 cc"
+      },
+      {
+       "name": "Elgin Industries engine parts catalog - engine details",
+       "url": "https://catalog.elginind.com/engine/nissan/default/3d41065c-9e3c-4a2a-ba97-cea85d091149/",
+       "says": "L28E, L28ET 2753cc: Bore 3.39'' (86.0mm)"
+      },
+      {
+       "name": "XenonZcar.com 280ZX engine specifications (Z-car enthusiast technical page citing 1979-1983 Nissan/Datsun factory service manuals)",
+       "url": "https://www.xenonzcar.com/s130/engine.html",
+       "says": "L28E/L28ET: 2,753 cc; 86.0mm X 79.0mm; 8.3:1 (1979-1980), 8.8:1 (1981-1983); turbo 7.4:1; firing order 1-5-3-6-2-4; 135 hp 1979-80, 145 hp 1981-83; L28ET 180 bhp @ 5600"
+      }
+     ],
+     "note": "86.0 mm"
+    },
+    "stroke_in": {
+     "value": 3.1102,
+     "sources": [
+      {
+       "name": "Wikipedia: Nissan L engine",
+       "url": "https://en.wikipedia.org/wiki/Nissan_L_engine",
+       "says": "L28 86 mm x 79 mm"
+      },
+      {
+       "name": "XenonZcar.com 280ZX engine specifications (Z-car enthusiast technical page citing 1979-1983 Nissan/Datsun factory service manuals)",
+       "url": "https://www.xenonzcar.com/s130/engine.html",
+       "says": "L28E/L28ET: 2,753 cc; 86.0mm X 79.0mm; 8.3:1 (1979-1980), 8.8:1 (1981-1983); turbo 7.4:1; firing order 1-5-3-6-2-4; 135 hp 1979-80, 145 hp 1981-83; L28ET 180 bhp @ 5600"
+      }
+     ],
+     "note": "79.0 mm. Arithmetic: 86 x 86 x 79 x 0.7854 x 6 = 2,753.4 cc vs 2,753 cc published (Nissan, Elgin, Wikipedia). Consumer Guide's text says the 280Z was made by 'stroking the 260Z's motor by 3 mm' (would be 83 x 82 mm = 2,858 cc) - wrong by arithmetic.",
+     "second_pass": true
+    },
+    "displacement_l": {
+     "value": 2.8,
+     "sources": [
+      {
+       "name": "Wikipedia: Nissan L engine",
+       "url": "https://en.wikipedia.org/wiki/Nissan_L_engine",
+       "says": "2.8 L (2,753 cc)"
+      },
+      {
+       "name": "Elgin Industries engine parts catalog - engine details",
+       "url": "https://catalog.elginind.com/engine/nissan/default/3d41065c-9e3c-4a2a-ba97-cea85d091149/",
+       "says": "Liters 2.8, CC 2753"
+      },
+      {
+       "name": "1981 Datsun 280-ZX brochure (Nissan Motor Corp. in U.S.A., WE 11-80-144M-2), pp. 10-11, via oldcarbrochures.org",
+       "url": "https://oldcarbrochures.org/Japan/Datsun/1981%20Datsun%20280-ZX/index.html",
+       "says": "Engine: 2.8-liter (2,753cc) 6-cyl. OHC; L-Jetronic fuel injection; Horsepower (5200 rpm) 145"
+      },
+      {
+       "name": "XenonZcar.com 280ZX engine specifications (Z-car enthusiast technical page citing 1979-1983 Nissan/Datsun factory service manuals)",
+       "url": "https://www.xenonzcar.com/s130/engine.html",
+       "says": "L28E/L28ET: 2,753 cc; 86.0mm X 79.0mm; 8.3:1 (1979-1980), 8.8:1 (1981-1983); turbo 7.4:1; firing order 1-5-3-6-2-4; 135 hp 1979-80, 145 hp 1981-83; L28ET 180 bhp @ 5600"
+      }
+     ],
+     "note": "2,753 cc (Consumer Guide 2,754/2,753)"
+    },
+    "displacement_ci": {
+     "value": 168,
+     "sources": [
+      {
+       "name": "Wikipedia: Nissan L engine",
+       "url": "https://en.wikipedia.org/wiki/Nissan_L_engine",
+       "says": "2,753 cc; 168.0 cu in"
+      },
+      {
+       "name": "Elgin Industries engine parts catalog - engine details",
+       "url": "https://catalog.elginind.com/engine/nissan/default/3d41065c-9e3c-4a2a-ba97-cea85d091149/",
+       "says": "CC 2753"
+      },
+      {
+       "name": "1981 Datsun 280-ZX brochure (Nissan Motor Corp. in U.S.A., WE 11-80-144M-2), pp. 10-11, via oldcarbrochures.org",
+       "url": "https://oldcarbrochures.org/Japan/Datsun/1981%20Datsun%20280-ZX/index.html",
+       "says": "Engine: 2.8-liter (2,753cc) 6-cyl. OHC; L-Jetronic fuel injection; Horsepower (5200 rpm) 145"
+      }
+     ],
+     "note": "2,753 cc = 168.0 ci"
+    },
+    "num_cylinders": {
+     "value": 6,
+     "sources": [
+      {
+       "name": "Wikipedia: Nissan L engine",
+       "url": "https://en.wikipedia.org/wiki/Nissan_L_engine",
+       "says": "straight-six"
+      },
+      {
+       "name": "Elgin Industries engine parts catalog - engine details",
+       "url": "https://catalog.elginind.com/engine/nissan/default/3d41065c-9e3c-4a2a-ba97-cea85d091149/",
+       "says": "Cyl. 6"
+      },
+      {
+       "name": "1981 Datsun 280-ZX brochure (Nissan Motor Corp. in U.S.A., WE 11-80-144M-2), pp. 10-11, via oldcarbrochures.org",
+       "url": "https://oldcarbrochures.org/Japan/Datsun/1981%20Datsun%20280-ZX/index.html",
+       "says": "Engine: 2.8-liter (2,753cc) 6-cyl. OHC; L-Jetronic fuel injection; Horsepower (5200 rpm) 145"
+      }
+     ],
+     "note": ""
+    },
+    "configuration": {
+     "value": "inline-6",
+     "sources": [
+      {
+       "name": "Wikipedia: Nissan L engine",
+       "url": "https://en.wikipedia.org/wiki/Nissan_L_engine",
+       "says": "straight-six"
+      },
+      {
+       "name": "Consumer Guide (Auto Editors of Consumer Guide) - Nissan Z History, via HowStuffWorks",
+       "url": "https://auto.howstuffworks.com/nissan-z-history3.htm",
+       "says": "single-overhead-cam inline-6"
+      },
+      {
+       "name": "1981 Datsun 280-ZX brochure (Nissan Motor Corp. in U.S.A., WE 11-80-144M-2), pp. 10-11, via oldcarbrochures.org",
+       "url": "https://oldcarbrochures.org/Japan/Datsun/1981%20Datsun%20280-ZX/index.html",
+       "says": "Engine: 2.8-liter (2,753cc) 6-cyl. OHC; L-Jetronic fuel injection; Horsepower (5200 rpm) 145"
+      }
+     ],
+     "note": "Nissan: '6-cyl. OHC'"
+    },
+    "valvetrain": {
+     "value": "SOHC, 2 valves per cylinder (12 valves)",
+     "sources": [
+      {
+       "name": "Wikipedia: Nissan L engine",
+       "url": "https://en.wikipedia.org/wiki/Nissan_L_engine",
+       "says": "L28 12-valve SOHC"
+      },
+      {
+       "name": "Elgin Industries engine parts catalog - engine details",
+       "url": "https://catalog.elginind.com/engine/nissan/default/3d41065c-9e3c-4a2a-ba97-cea85d091149/",
+       "says": "Head SOHC"
+      },
+      {
+       "name": "1981 Datsun 280-ZX brochure (Nissan Motor Corp. in U.S.A., WE 11-80-144M-2), pp. 10-11, via oldcarbrochures.org",
+       "url": "https://oldcarbrochures.org/Japan/Datsun/1981%20Datsun%20280-ZX/index.html",
+       "says": "Engine: 2.8-liter (2,753cc) 6-cyl. OHC; L-Jetronic fuel injection; Horsepower (5200 rpm) 145"
+      },
+      {
+       "name": "Consumer Guide (Auto Editors of Consumer Guide) - Nissan Z History, via HowStuffWorks",
+       "url": "https://auto.howstuffworks.com/nissan-z-history3.htm",
+       "says": "single-overhead-cam inline-6"
+      }
+     ],
+     "note": "Nissan/Elgin/CG give OHC only; 12 valves per Wikipedia and XenonZcar."
+    },
+    "induction": {
+     "value": "Bosch-type L-Jetronic electronic port fuel injection",
+     "sources": [
+      {
+       "name": "Wikipedia: Nissan L engine",
+       "url": "https://en.wikipedia.org/wiki/Nissan_L_engine",
+       "says": "Bosch L-Jetronic electronic multiport fuel injection"
+      },
+      {
+       "name": "1981 Datsun 280-ZX brochure (Nissan Motor Corp. in U.S.A., WE 11-80-144M-2), pp. 10-11, via oldcarbrochures.org",
+       "url": "https://oldcarbrochures.org/Japan/Datsun/1981%20Datsun%20280-ZX/index.html",
+       "says": "Engine: 2.8-liter (2,753cc) 6-cyl. OHC; L-Jetronic fuel injection; Horsepower (5200 rpm) 145"
+      },
+      {
+       "name": "Consumer Guide (Auto Editors of Consumer Guide) - Nissan Z History, via HowStuffWorks",
+       "url": "https://auto.howstuffworks.com/nissan-z-history3.htm",
+       "says": "Fuel supply: Nissan Bosch-type L-Jetronic fuel injection"
+      },
+      {
+       "name": "Elgin Industries engine parts catalog - engine details",
+       "url": "https://catalog.elginind.com/engine/nissan/default/3d41065c-9e3c-4a2a-ba97-cea85d091149/",
+       "says": "GAS / FI"
+      }
+     ],
+     "note": ""
+    },
+    "fuel_type": {
+     "value": "gasoline",
+     "sources": [
+      {
+       "name": "Wikipedia: Nissan L engine",
+       "url": "https://en.wikipedia.org/wiki/Nissan_L_engine",
+       "says": "petrol, L-Jetronic"
+      },
+      {
+       "name": "Elgin Industries engine parts catalog - engine details",
+       "url": "https://catalog.elginind.com/engine/nissan/default/3d41065c-9e3c-4a2a-ba97-cea85d091149/",
+       "says": "GAS / FI"
+      },
+      {
+       "name": "1981 Datsun 280-ZX brochure (Nissan Motor Corp. in U.S.A., WE 11-80-144M-2), pp. 10-11, via oldcarbrochures.org",
+       "url": "https://oldcarbrochures.org/Japan/Datsun/1981%20Datsun%20280-ZX/index.html",
+       "says": "Engine: 2.8-liter (2,753cc) 6-cyl. OHC; L-Jetronic fuel injection; Horsepower (5200 rpm) 145"
+      }
+     ],
+     "note": ""
+    },
+    "compression_ratio": {
+     "value": "8.3:1 (1975-1980); 8.8:1 (1981-1983)",
+     "sources": [
+      {
+       "name": "Consumer Guide (Auto Editors of Consumer Guide) - Nissan Z History, via HowStuffWorks",
+       "url": "https://auto.howstuffworks.com/nissan-z-history3.htm",
+       "says": "280Z: 8.3:1"
+      },
+      {
+       "name": "Wikipedia: Nissan L engine",
+       "url": "https://en.wikipedia.org/wiki/Nissan_L_engine",
+       "says": "8.3:1 ... 8.8:1 (1981-1983)"
+      },
+      {
+       "name": "XenonZcar.com 280ZX engine specifications (Z-car enthusiast technical page citing 1979-1983 Nissan/Datsun factory service manuals)",
+       "url": "https://www.xenonzcar.com/s130/engine.html",
+       "says": "L28E/L28ET: 2,753 cc; 86.0mm X 79.0mm; 8.3:1 (1979-1980), 8.8:1 (1981-1983); turbo 7.4:1; firing order 1-5-3-6-2-4; 135 hp 1979-80, 145 hp 1981-83; L28ET 180 bhp @ 5600"
+      }
+     ],
+     "note": "8.3:1 by all three; 8.8:1 for 1981-83 only by Wikipedia and XenonZcar (Consumer Guide: 'higher compression' in 1981, no figure) - 8.8 is effectively second-pass."
+    },
+    "years": {
+     "value": "1975-1983 (US 280Z 1975-1978, 280ZX 1979-1983)",
+     "sources": [
+      {
+       "name": "Nissan USA newsroom: Nissan Z 50 years (Nissan material)",
+       "url": "https://usa.nissannews.com/en-US/releases/nissanz-50years-excitement",
+       "says": "1974 ... 2.6 liters ... 260Z; 1975 ... 2.8 liters ... 280Z"
+      },
+      {
+       "name": "Consumer Guide (Auto Editors of Consumer Guide) - Nissan Z History, via HowStuffWorks",
+       "url": "https://auto.howstuffworks.com/nissan-z-history3.htm",
+       "says": "280Z replaced the 260Z mid-1975"
+      },
+      {
+       "name": "Wikipedia: Nissan S30",
+       "url": "https://en.wikipedia.org/wiki/Nissan_S30",
+       "says": "280Z (1975-1978) L28E"
+      },
+      {
+       "name": "Wikipedia: Nissan Fairlady Z (S130)",
+       "url": "https://en.wikipedia.org/wiki/Nissan_Fairlady_Z_(S130)",
+       "says": "L28E 1979-1983"
+      }
+     ],
+     "note": ""
+    }
+   },
+   "variants": [
+    {
+     "year": "1975-1976",
+     "hp": 149,
+     "hp_basis": "SAE net",
+     "compression_ratio": 8.3,
+     "code": "L28E (280Z)",
+     "induction": "L-Jetronic EFI",
+     "sources": [
+      {
+       "name": "Consumer Guide (Auto Editors of Consumer Guide) - Nissan Z History, via HowStuffWorks",
+       "url": "https://auto.howstuffworks.com/nissan-z-history3.htm",
+       "says": "280Z ... 8.3:1 ... 149 hp @ 5600"
+      },
+      {
+       "name": "Wikipedia: Nissan S30",
+       "url": "https://en.wikipedia.org/wiki/Nissan_S30",
+       "says": "280Z L28E: 149 hp @ 5,600 SAE net"
+      }
+     ],
+     "second_pass": true,
+     "note": ""
+    },
+    {
+     "year": 1979,
+     "hp": 135,
+     "hp_basis": "SAE net",
+     "compression_ratio": 8.3,
+     "code": "L28E (280ZX)",
+     "induction": "L-Jetronic EFI",
+     "sources": [
+      {
+       "name": "Nissan USA: nissanusa.com Z history (Nissan material)",
+       "url": "https://www.nissanusa.com/experience-nissan/news-and-events/nissan-z-car.html",
+       "says": "Datsun 280ZX (1979): 135-hp 2.8-liter inline six"
+      },
+      {
+       "name": "Consumer Guide (Auto Editors of Consumer Guide) - Nissan Z History, via HowStuffWorks",
+       "url": "https://auto.howstuffworks.com/nissan-z-history4.htm",
+       "says": "1979: emissions controls reduced peak horsepower to 135 (California cars three less)"
+      },
+      {
+       "name": "Wikipedia: Nissan Fairlady Z (S130)",
+       "url": "https://en.wikipedia.org/wiki/Nissan_Fairlady_Z_(S130)",
+       "says": "L28E 135 hp 1979-1980"
+      }
+     ],
+     "note": "California 132 hp (Consumer Guide)."
+    },
+    {
+     "year": 1981,
+     "hp": 145,
+     "hp_basis": "SAE net",
+     "compression_ratio": 8.8,
+     "code": "L28E (280ZX)",
+     "induction": "L-Jetronic EFI",
+     "sources": [
+      {
+       "name": "1981 Datsun 280-ZX brochure (Nissan Motor Corp. in U.S.A., WE 11-80-144M-2), pp. 10-11, via oldcarbrochures.org",
+       "url": "https://oldcarbrochures.org/Japan/Datsun/1981%20Datsun%20280-ZX/index.html",
+       "says": "Engine: 2.8-liter (2,753cc) 6-cyl. OHC; L-Jetronic fuel injection; Horsepower (5200 rpm) 145"
+      },
+      {
+       "name": "Consumer Guide (Auto Editors of Consumer Guide) - Nissan Z History, via HowStuffWorks",
+       "url": "https://auto.howstuffworks.com/nissan-z-history4.htm",
+       "says": "1981: new catalyst and higher compression raised the standard ZX to 145 hp"
+      },
+      {
+       "name": "Wikipedia: Nissan Fairlady Z (S130)",
+       "url": "https://en.wikipedia.org/wiki/Nissan_Fairlady_Z_(S130)",
+       "says": "145 hp 1981-1983 after P79 head / 8.8:1"
+      }
+     ],
+     "note": "Nissan brochure: 145 hp @ 5200 rpm."
+    },
+    {
+     "year": "1982-1983",
+     "hp": 145,
+     "hp_basis": "SAE net",
+     "compression_ratio": 8.8,
+     "code": "L28E (280ZX)",
+     "induction": "L-Jetronic EFI",
+     "sources": [
+      {
+       "name": "Consumer Guide (Auto Editors of Consumer Guide) - Nissan Z History, via HowStuffWorks",
+       "url": "https://auto.howstuffworks.com/nissan-z-history4.htm",
+       "says": "145 hp standard ZX from 1981"
+      },
+      {
+       "name": "Wikipedia: Nissan Fairlady Z (S130)",
+       "url": "https://en.wikipedia.org/wiki/Nissan_Fairlady_Z_(S130)",
+       "says": "145 hp 1981-1983"
+      }
+     ],
+     "second_pass": true,
+     "note": "XenonZcar also 145 hp 1981-83 (possible shared text with Wikipedia, not counted)."
+    }
+   ],
+   "unverified": {
+    "block_material": "cast iron: Wikipedia and XenonZcar use identical wording (counted once).",
+    "head_material": "aluminum: Wikipedia and XenonZcar identical wording (counted once).",
+    "firing_order": "1-5-3-6-2-4: XenonZcar (citing FSM) only.",
+    "rod_length_in": "not found."
+   },
+   "unverified_variants": [
+    {
+     "year": "1977-1978",
+     "hp": "170 vs 149",
+     "code": "L28E (280Z)",
+     "found": "Consumer Guide: 170 hp from 1977 with specs unchanged; Wikipedia calls 170 the gross and 149 the net figure. Conflict."
+    },
+    {
+     "year": 1980,
+     "hp": "132 vs 135",
+     "code": "L28E (280ZX)",
+     "found": "Consumer Guide 132; Wikipedia and XenonZcar 135 (1979-80)."
+    }
+   ]
+  },
+  {
+   "id": "nissan-l28et",
+   "name": "Nissan L28ET 2.8 I6 Turbo (280ZX Turbo)",
+   "fields": {
+    "bore_in": {
+     "value": 3.3858,
+     "sources": [
+      {
+       "name": "Wikipedia: Nissan L engine",
+       "url": "https://en.wikipedia.org/wiki/Nissan_L_engine",
+       "says": "L28 86 mm x 79 mm, 2,753 cc"
+      },
+      {
+       "name": "Elgin Industries engine parts catalog - engine details",
+       "url": "https://catalog.elginind.com/engine/nissan/default/3d41065c-9e3c-4a2a-ba97-cea85d091149/",
+       "says": "L28E, L28ET 2753cc: Bore 3.39'' (86.0mm)"
+      },
+      {
+       "name": "XenonZcar.com 280ZX engine specifications (Z-car enthusiast technical page citing 1979-1983 Nissan/Datsun factory service manuals)",
+       "url": "https://www.xenonzcar.com/s130/engine.html",
+       "says": "L28E/L28ET: 2,753 cc; 86.0mm X 79.0mm; 8.3:1 (1979-1980), 8.8:1 (1981-1983); turbo 7.4:1; firing order 1-5-3-6-2-4; 135 hp 1979-80, 145 hp 1981-83; L28ET 180 bhp @ 5600"
+      }
+     ],
+     "note": "86.0 mm"
+    },
+    "stroke_in": {
+     "value": 3.1102,
+     "sources": [
+      {
+       "name": "Wikipedia: Nissan L engine",
+       "url": "https://en.wikipedia.org/wiki/Nissan_L_engine",
+       "says": "L28 86 mm x 79 mm"
+      },
+      {
+       "name": "XenonZcar.com 280ZX engine specifications (Z-car enthusiast technical page citing 1979-1983 Nissan/Datsun factory service manuals)",
+       "url": "https://www.xenonzcar.com/s130/engine.html",
+       "says": "L28E/L28ET: 2,753 cc; 86.0mm X 79.0mm; 8.3:1 (1979-1980), 8.8:1 (1981-1983); turbo 7.4:1; firing order 1-5-3-6-2-4; 135 hp 1979-80, 145 hp 1981-83; L28ET 180 bhp @ 5600"
+      }
+     ],
+     "note": "79.0 mm. Arithmetic: 86 x 86 x 79 x 0.7854 x 6 = 2,753.4 cc vs 2,753 cc published (Nissan, Elgin, Wikipedia). Consumer Guide's text says the 280Z was made by 'stroking the 260Z's motor by 3 mm' (would be 83 x 82 mm = 2,858 cc) - wrong by arithmetic.",
+     "second_pass": true
+    },
+    "displacement_l": {
+     "value": 2.8,
+     "sources": [
+      {
+       "name": "Wikipedia: Nissan L engine",
+       "url": "https://en.wikipedia.org/wiki/Nissan_L_engine",
+       "says": "2.8 L (2,753 cc)"
+      },
+      {
+       "name": "Elgin Industries engine parts catalog - engine details",
+       "url": "https://catalog.elginind.com/engine/nissan/default/3d41065c-9e3c-4a2a-ba97-cea85d091149/",
+       "says": "Liters 2.8, CC 2753"
+      },
+      {
+       "name": "1981 Datsun 280-ZX brochure (Nissan Motor Corp. in U.S.A., WE 11-80-144M-2), pp. 10-11, via oldcarbrochures.org",
+       "url": "https://oldcarbrochures.org/Japan/Datsun/1981%20Datsun%20280-ZX/index.html",
+       "says": "Engine: 2.8-liter (2,753cc) 6-cyl. OHC; L-Jetronic fuel injection; Horsepower (5200 rpm) 145"
+      },
+      {
+       "name": "XenonZcar.com 280ZX engine specifications (Z-car enthusiast technical page citing 1979-1983 Nissan/Datsun factory service manuals)",
+       "url": "https://www.xenonzcar.com/s130/engine.html",
+       "says": "L28E/L28ET: 2,753 cc; 86.0mm X 79.0mm; 8.3:1 (1979-1980), 8.8:1 (1981-1983); turbo 7.4:1; firing order 1-5-3-6-2-4; 135 hp 1979-80, 145 hp 1981-83; L28ET 180 bhp @ 5600"
+      }
+     ],
+     "note": "2,753 cc (Consumer Guide 2,754/2,753)"
+    },
+    "displacement_ci": {
+     "value": 168,
+     "sources": [
+      {
+       "name": "Wikipedia: Nissan L engine",
+       "url": "https://en.wikipedia.org/wiki/Nissan_L_engine",
+       "says": "2,753 cc; 168.0 cu in"
+      },
+      {
+       "name": "Elgin Industries engine parts catalog - engine details",
+       "url": "https://catalog.elginind.com/engine/nissan/default/3d41065c-9e3c-4a2a-ba97-cea85d091149/",
+       "says": "CC 2753"
+      },
+      {
+       "name": "1981 Datsun 280-ZX brochure (Nissan Motor Corp. in U.S.A., WE 11-80-144M-2), pp. 10-11, via oldcarbrochures.org",
+       "url": "https://oldcarbrochures.org/Japan/Datsun/1981%20Datsun%20280-ZX/index.html",
+       "says": "Engine: 2.8-liter (2,753cc) 6-cyl. OHC; L-Jetronic fuel injection; Horsepower (5200 rpm) 145"
+      }
+     ],
+     "note": "2,753 cc = 168.0 ci"
+    },
+    "num_cylinders": {
+     "value": 6,
+     "sources": [
+      {
+       "name": "Wikipedia: Nissan L engine",
+       "url": "https://en.wikipedia.org/wiki/Nissan_L_engine",
+       "says": "straight-six"
+      },
+      {
+       "name": "Elgin Industries engine parts catalog - engine details",
+       "url": "https://catalog.elginind.com/engine/nissan/default/3d41065c-9e3c-4a2a-ba97-cea85d091149/",
+       "says": "Cyl. 6"
+      },
+      {
+       "name": "1981 Datsun 280-ZX brochure (Nissan Motor Corp. in U.S.A., WE 11-80-144M-2), pp. 10-11, via oldcarbrochures.org",
+       "url": "https://oldcarbrochures.org/Japan/Datsun/1981%20Datsun%20280-ZX/index.html",
+       "says": "Engine: 2.8-liter (2,753cc) 6-cyl. OHC; L-Jetronic fuel injection; Horsepower (5200 rpm) 145"
+      }
+     ],
+     "note": ""
+    },
+    "configuration": {
+     "value": "inline-6",
+     "sources": [
+      {
+       "name": "Wikipedia: Nissan L engine",
+       "url": "https://en.wikipedia.org/wiki/Nissan_L_engine",
+       "says": "straight-six"
+      },
+      {
+       "name": "Consumer Guide (Auto Editors of Consumer Guide) - Nissan Z History, via HowStuffWorks",
+       "url": "https://auto.howstuffworks.com/nissan-z-history3.htm",
+       "says": "single-overhead-cam inline-6"
+      },
+      {
+       "name": "1981 Datsun 280-ZX brochure (Nissan Motor Corp. in U.S.A., WE 11-80-144M-2), pp. 10-11, via oldcarbrochures.org",
+       "url": "https://oldcarbrochures.org/Japan/Datsun/1981%20Datsun%20280-ZX/index.html",
+       "says": "Engine: 2.8-liter (2,753cc) 6-cyl. OHC; L-Jetronic fuel injection; Horsepower (5200 rpm) 145"
+      }
+     ],
+     "note": "Nissan: '6-cyl. OHC'"
+    },
+    "valvetrain": {
+     "value": "SOHC, 2 valves per cylinder (12 valves)",
+     "sources": [
+      {
+       "name": "Wikipedia: Nissan L engine",
+       "url": "https://en.wikipedia.org/wiki/Nissan_L_engine",
+       "says": "L28 12-valve SOHC"
+      },
+      {
+       "name": "Elgin Industries engine parts catalog - engine details",
+       "url": "https://catalog.elginind.com/engine/nissan/default/3d41065c-9e3c-4a2a-ba97-cea85d091149/",
+       "says": "Head SOHC"
+      },
+      {
+       "name": "1981 Datsun 280-ZX brochure (Nissan Motor Corp. in U.S.A., WE 11-80-144M-2), pp. 10-11, via oldcarbrochures.org",
+       "url": "https://oldcarbrochures.org/Japan/Datsun/1981%20Datsun%20280-ZX/index.html",
+       "says": "Engine: 2.8-liter (2,753cc) 6-cyl. OHC; L-Jetronic fuel injection; Horsepower (5200 rpm) 145"
+      },
+      {
+       "name": "Consumer Guide (Auto Editors of Consumer Guide) - Nissan Z History, via HowStuffWorks",
+       "url": "https://auto.howstuffworks.com/nissan-z-history3.htm",
+       "says": "single-overhead-cam inline-6"
+      }
+     ],
+     "note": "Nissan/Elgin/CG give OHC only; 12 valves per Wikipedia and XenonZcar."
+    },
+    "induction": {
+     "value": "turbocharged (single Garrett AiResearch TB03, no intercooler) with Bosch L-Jetronic port EFI",
+     "sources": [
+      {
+       "name": "Wikipedia: Nissan L engine",
+       "url": "https://en.wikipedia.org/wiki/Nissan_L_engine",
+       "says": "single Garrett AiResearch TB03 turbo, internally wastegated, no intercooler, 6.8 psi"
+      },
+      {
+       "name": "Consumer Guide (Auto Editors of Consumer Guide) - Nissan Z History, via HowStuffWorks",
+       "url": "https://auto.howstuffworks.com/nissan-z-history4.htm",
+       "says": "single-overhead-cam turbocharged inline-6 ... Fuel supply: Bosch L-Jetronic fuel injection"
+      },
+      {
+       "name": "Elgin Industries engine parts catalog - engine details",
+       "url": "https://catalog.elginind.com/engine/nissan/default/3d41065c-9e3c-4a2a-ba97-cea85d091149/",
+       "says": "L28ET: Asp. T, GAS / FI"
+      }
+     ],
+     "note": "Turbo model/boost details from Wikipedia and XenonZcar (shared wording)."
+    },
+    "fuel_type": {
+     "value": "gasoline",
+     "sources": [
+      {
+       "name": "Wikipedia: Nissan L engine",
+       "url": "https://en.wikipedia.org/wiki/Nissan_L_engine",
+       "says": "petrol, L-Jetronic"
+      },
+      {
+       "name": "Elgin Industries engine parts catalog - engine details",
+       "url": "https://catalog.elginind.com/engine/nissan/default/3d41065c-9e3c-4a2a-ba97-cea85d091149/",
+       "says": "GAS / FI"
+      },
+      {
+       "name": "1981 Datsun 280-ZX brochure (Nissan Motor Corp. in U.S.A., WE 11-80-144M-2), pp. 10-11, via oldcarbrochures.org",
+       "url": "https://oldcarbrochures.org/Japan/Datsun/1981%20Datsun%20280-ZX/index.html",
+       "says": "Engine: 2.8-liter (2,753cc) 6-cyl. OHC; L-Jetronic fuel injection; Horsepower (5200 rpm) 145"
+      }
+     ],
+     "note": ""
+    },
+    "compression_ratio": {
+     "value": "7.4:1",
+     "sources": [
+      {
+       "name": "Consumer Guide (Auto Editors of Consumer Guide) - Nissan Z History, via HowStuffWorks",
+       "url": "https://auto.howstuffworks.com/nissan-z-history4.htm",
+       "says": "Compression ratio: 7.4:1"
+      },
+      {
+       "name": "Wikipedia: Nissan L engine",
+       "url": "https://en.wikipedia.org/wiki/Nissan_L_engine",
+       "says": "L28ET compression 7.4:1"
+      },
+      {
+       "name": "XenonZcar.com 280ZX engine specifications (Z-car enthusiast technical page citing 1979-1983 Nissan/Datsun factory service manuals)",
+       "url": "https://www.xenonzcar.com/s130/engine.html",
+       "says": "L28E/L28ET: 2,753 cc; 86.0mm X 79.0mm; 8.3:1 (1979-1980), 8.8:1 (1981-1983); turbo 7.4:1; firing order 1-5-3-6-2-4; 135 hp 1979-80, 145 hp 1981-83; L28ET 180 bhp @ 5600"
+      }
+     ],
+     "note": ""
+    },
+    "years": {
+     "value": "1981-1983 (US 280ZX Turbo; introduced late in the 1981 model year)",
+     "sources": [
+      {
+       "name": "Consumer Guide (Auto Editors of Consumer Guide) - Nissan Z History, via HowStuffWorks",
+       "url": "https://auto.howstuffworks.com/nissan-z-history4.htm",
+       "says": "1981-1/2 280ZX Turbo ... automatic only at first, 5-speed for 1982"
+      },
+      {
+       "name": "Wikipedia: Nissan L engine",
+       "url": "https://en.wikipedia.org/wiki/Nissan_L_engine",
+       "says": "L28ET December 1980 - June 1983"
+      },
+      {
+       "name": "XenonZcar.com 280ZX engine specifications (Z-car enthusiast technical page citing 1979-1983 Nissan/Datsun factory service manuals)",
+       "url": "https://www.xenonzcar.com/s130/engine.html",
+       "says": "L28E/L28ET: 2,753 cc; 86.0mm X 79.0mm; 8.3:1 (1979-1980), 8.8:1 (1981-1983); turbo 7.4:1; firing order 1-5-3-6-2-4; 135 hp 1979-80, 145 hp 1981-83; L28ET 180 bhp @ 5600"
+      }
+     ],
+     "note": ""
+    }
+   },
+   "variants": [
+    {
+     "year": "1981-1983",
+     "hp": 180,
+     "hp_basis": "SAE net",
+     "compression_ratio": 7.4,
+     "code": "L28ET (280ZX Turbo)",
+     "induction": "turbo + EFI",
+     "sources": [
+      {
+       "name": "Consumer Guide (Auto Editors of Consumer Guide) - Nissan Z History, via HowStuffWorks",
+       "url": "https://auto.howstuffworks.com/nissan-z-history4.htm",
+       "says": "280ZX Turbo: 2753 cc turbo six, 180 hp @ 5600, 203 lb-ft @ 2800"
+      },
+      {
+       "name": "Wikipedia: Nissan Fairlady Z (S130)",
+       "url": "https://en.wikipedia.org/wiki/Nissan_Fairlady_Z_(S130)",
+       "says": "L28ET turbo debuted 1981 (US): 180 bhp @ 5,600"
+      }
+     ],
+     "second_pass": true,
+     "note": "Consumer Guide blog (same publisher, not counted separately) and XenonZcar also 180."
+    }
+   ],
+   "unverified": {
+    "block_material": "cast iron: Wikipedia/XenonZcar shared wording only.",
+    "head_material": "aluminum: same.",
+    "firing_order": "1-5-3-6-2-4: XenonZcar only.",
+    "valvetrain_detail": "mechanical rockers (P90 head) until Sept 1982, hydraulic (P90A) after: Wikipedia/XenonZcar only."
+   },
+   "unverified_variants": []
+  }
+ ]
+}

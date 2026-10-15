@@ -1,0 +1,232 @@
+{
+ "name": "Nissan L26 2.6 I6 (260Z)",
+ "fields": {
+  "bore_in": {
+   "value": 3.2677,
+   "sources": [
+    {
+     "name": "Wikipedia: Nissan L engine",
+     "url": "https://en.wikipedia.org/wiki/Nissan_L_engine",
+     "says": "L26 83 mm x 79 mm"
+    },
+    {
+     "name": "Elgin Industries engine parts catalog - engine details",
+     "url": "https://catalog.elginind.com/engine/nissan/default/d180457b-1122-458b-9bca-58c7b07661c9/",
+     "says": "L26 2565cc: Bore 3.26'' (83.0mm)"
+    },
+    {
+     "name": "Consumer Guide (Auto Editors of Consumer Guide) - Nissan Z History, via HowStuffWorks",
+     "url": "https://auto.howstuffworks.com/nissan-z-history3.htm",
+     "says": "maintaining the 83.0-mm bore"
+    }
+   ],
+   "note": "83.0 mm (Elgin's inch figure 3.26 is a rounding slip; 83.0 mm = 3.2677 in)"
+  },
+  "stroke_in": {
+   "value": 3.1102,
+   "sources": [
+    {
+     "name": "Wikipedia: Nissan L engine",
+     "url": "https://en.wikipedia.org/wiki/Nissan_L_engine",
+     "says": "L26 83 mm x 79 mm"
+    },
+    {
+     "name": "Consumer Guide (Auto Editors of Consumer Guide) - Nissan Z History, via HowStuffWorks",
+     "url": "https://auto.howstuffworks.com/nissan-z-history3.htm",
+     "says": "increasing the stroke from 73.0 mm to 79.0 mm"
+    }
+   ],
+   "note": "79.0 mm. Arithmetic: 83 x 83 x 79 x 0.7854 x 6 = 2,564.6 cc vs 2,565 cc published.",
+   "second_pass": true
+  },
+  "displacement_l": {
+   "value": 2.6,
+   "sources": [
+    {
+     "name": "Wikipedia: Nissan L engine",
+     "url": "https://en.wikipedia.org/wiki/Nissan_L_engine",
+     "says": "2.6 L (2,565 cc)"
+    },
+    {
+     "name": "Elgin Industries engine parts catalog - engine details",
+     "url": "https://catalog.elginind.com/engine/nissan/default/d180457b-1122-458b-9bca-58c7b07661c9/",
+     "says": "Liters 2.6, CC 2565"
+    },
+    {
+     "name": "Consumer Guide (Auto Editors of Consumer Guide) - Nissan Z History, via HowStuffWorks",
+     "url": "https://auto.howstuffworks.com/nissan-z-history3.htm",
+     "says": "increased to 2565 cubic centimeters -- or 2.6 liters"
+    },
+    {
+     "name": "Nissan USA newsroom: Nissan Z 50 years (Nissan material)",
+     "url": "https://usa.nissannews.com/en-US/releases/nissanz-50years-excitement",
+     "says": "1974 ... 2.6 liters ... 260Z; 1975 ... 2.8 liters ... 280Z"
+    }
+   ],
+   "note": "2,565 cc"
+  },
+  "displacement_ci": {
+   "value": 157,
+   "sources": [
+    {
+     "name": "Wikipedia: Nissan L engine",
+     "url": "https://en.wikipedia.org/wiki/Nissan_L_engine",
+     "says": "2,565 cc; 156.5 cu in"
+    },
+    {
+     "name": "Elgin Industries engine parts catalog - engine details",
+     "url": "https://catalog.elginind.com/engine/nissan/default/d180457b-1122-458b-9bca-58c7b07661c9/",
+     "says": "CC 2565"
+    },
+    {
+     "name": "Consumer Guide (Auto Editors of Consumer Guide) - Nissan Z History, via HowStuffWorks",
+     "url": "https://auto.howstuffworks.com/nissan-z-history3.htm",
+     "says": "2565 cubic centimeters"
+    }
+   ],
+   "note": "2,565 cc = 156.5 ci"
+  },
+  "num_cylinders": {
+   "value": 6,
+   "sources": [
+    {
+     "name": "Wikipedia: Nissan L engine",
+     "url": "https://en.wikipedia.org/wiki/Nissan_L_engine",
+     "says": "straight-six"
+    },
+    {
+     "name": "Elgin Industries engine parts catalog - engine details",
+     "url": "https://catalog.elginind.com/engine/nissan/default/d180457b-1122-458b-9bca-58c7b07661c9/",
+     "says": "Cyl. 6"
+    },
+    {
+     "name": "Consumer Guide (Auto Editors of Consumer Guide) - Nissan Z History, via HowStuffWorks",
+     "url": "https://auto.howstuffworks.com/nissan-z-history3.htm",
+     "says": "the inline-6 was increased to 2565 cubic centimeters"
+    }
+   ],
+   "note": ""
+  },
+  "configuration": {
+   "value": "inline-6",
+   "sources": [
+    {
+     "name": "Wikipedia: Nissan L engine",
+     "url": "https://en.wikipedia.org/wiki/Nissan_L_engine",
+     "says": "straight-six"
+    },
+    {
+     "name": "Consumer Guide (Auto Editors of Consumer Guide) - Nissan Z History, via HowStuffWorks",
+     "url": "https://auto.howstuffworks.com/nissan-z-history3.htm",
+     "says": "the inline-6 was increased to 2565 cubic centimeters"
+    }
+   ],
+   "note": "",
+   "second_pass": true
+  },
+  "valvetrain": {
+   "value": "SOHC",
+   "sources": [
+    {
+     "name": "Wikipedia: Nissan L engine",
+     "url": "https://en.wikipedia.org/wiki/Nissan_L_engine",
+     "says": "L-series SOHC"
+    },
+    {
+     "name": "Elgin Industries engine parts catalog - engine details",
+     "url": "https://catalog.elginind.com/engine/nissan/default/d180457b-1122-458b-9bca-58c7b07661c9/",
+     "says": "Head SOHC"
+    }
+   ],
+   "note": "",
+   "second_pass": true
+  },
+  "induction": {
+   "value": "carburetors (twin SU-type)",
+   "sources": [
+    {
+     "name": "Elgin Industries engine parts catalog - engine details",
+     "url": "https://catalog.elginind.com/engine/nissan/default/d180457b-1122-458b-9bca-58c7b07661c9/",
+     "says": "Fuel / Delivery GAS / CARB"
+    },
+    {
+     "name": "Consumer Guide (Auto Editors of Consumer Guide) - Nissan Z History, via HowStuffWorks",
+     "url": "https://auto.howstuffworks.com/nissan-z-history3.htm",
+     "says": "The carburetors ... (260Z)"
+    }
+   ],
+   "note": "SU type implied (carried over from 240Z), not stated for the 260Z.",
+   "second_pass": true
+  },
+  "fuel_type": {
+   "value": "gasoline",
+   "sources": [
+    {
+     "name": "Wikipedia: Nissan L engine",
+     "url": "https://en.wikipedia.org/wiki/Nissan_L_engine",
+     "says": "petrol"
+    },
+    {
+     "name": "Elgin Industries engine parts catalog - engine details",
+     "url": "https://catalog.elginind.com/engine/nissan/default/d180457b-1122-458b-9bca-58c7b07661c9/",
+     "says": "GAS / CARB"
+    },
+    {
+     "name": "Consumer Guide (Auto Editors of Consumer Guide) - Nissan Z History, via HowStuffWorks",
+     "url": "https://auto.howstuffworks.com/nissan-z-history3.htm",
+     "says": "carburetors"
+    }
+   ],
+   "note": ""
+  },
+  "years": {
+   "value": "1974 (US 260Z; possibly early 1975)",
+   "sources": [
+    {
+     "name": "Nissan USA newsroom: Nissan Z 50 years (Nissan material)",
+     "url": "https://usa.nissannews.com/en-US/releases/nissanz-50years-excitement",
+     "says": "1974 ... 2.6 liters ... 260Z; 1975 ... 2.8 liters ... 280Z"
+    },
+    {
+     "name": "Consumer Guide (Auto Editors of Consumer Guide) - Nissan Z History, via HowStuffWorks",
+     "url": "https://auto.howstuffworks.com/nissan-z-history3.htm",
+     "says": "Datsun 260Z, introduced for 1974 ... 1975 models ... replaced midyear by the new Datsun 280Z"
+    },
+    {
+     "name": "Wikipedia: Nissan S30",
+     "url": "https://en.wikipedia.org/wiki/Nissan_S30",
+     "says": "260Z (1974) L26"
+    }
+   ],
+   "note": "Consumer Guide says early-1975 US cars were still 260Zs; Wikipedia lists the US 260Z as 1974 only."
+  }
+ },
+ "variants": [
+  {
+   "year": 1974,
+   "hp": 139,
+   "hp_basis": "SAE net",
+   "code": "L26",
+   "induction": "carbs",
+   "sources": [
+    {
+     "name": "Consumer Guide (Auto Editors of Consumer Guide) - Nissan Z History, via HowStuffWorks",
+     "url": "https://auto.howstuffworks.com/nissan-z-history3.htm",
+     "says": "restored output to 139 horsepower, peak at 5200 rpm"
+    },
+    {
+     "name": "Wikipedia: Nissan S30",
+     "url": "https://en.wikipedia.org/wiki/Nissan_S30",
+     "says": "260Z (1974) L26 2,565 cc, US 139 hp SAE net"
+    }
+   ],
+   "second_pass": true,
+   "note": ""
+  }
+ ],
+ "unverified": {
+  "block_material": "cast iron: Wikipedia family statement only.",
+  "head_material": "aluminum: Wikipedia only.",
+  "compression_ratio": "not found in a usable source (forums/spec aggregators give 8.3-9.0)."
+ }
+}

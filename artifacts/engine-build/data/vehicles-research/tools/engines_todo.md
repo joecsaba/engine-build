@@ -55,7 +55,7 @@ or 2 reputable sources that agree (second pass). Specs go in public/data/engines
 | Ford 215 six, 239 flathead/Y-block, 262 truck six, 300 six, FE 360 | | F-250 (also on the F-100 list) |
 
 ## Records to fix
-- Pontiac 135ci 2000–2001 140 hp: the 2000–01 Sunfire 2.2 was the 115 hp LN2; the 140 hp L61 is 2002+.
+- ~~Pontiac 135ci 2000–2001 140 hp~~ — fixed 2026-10-15 (records removed, redirected to the LN2 page).
 - Ratings removed pending verification: Audi 3.2 CALA, Acura NSX JNC1.
 - Buick 350 ratings not yet verified: 1971 4-bbl 260, 1972, 1974, 1979–1980.
 - Mazda rotary records carry meaningless bore/stroke.
@@ -72,8 +72,8 @@ or 2 reputable sources that agree (second pass). Specs go in public/data/engines
 | Mitsubishi 4D55T 2.3 turbodiesel | 143 ci | Ranger 1985–1987 |
 
 ## Data to re-check
-- Chevrolet 262ci 1985 130 hp gas record carries the Olds diesel 4.3 bore/stroke (4.057 x 3.385); the gas 4.3 is 4.00 x 3.48.
-- Mercury "Cologne" family includes 1961-62 170 ci records (the Falcon six), which are not Cologne engines.
+- ~~Chevrolet 262ci 1985 130 hp diesel geometry~~ — fixed 2026-10-15 (4.00 x 3.48).
+- ~~Mercury Cologne 170 ci records~~ — fixed 2026-10-15 (Fairlane 170 pinned to the Ford 170 family).
 - C/K Pickup 1994 5.7 L05: page shows 200 hp; the K5 Blazer research found 210 hp for the same engine (Wikipedia Blazer article + Consumer Guide).
 - K5 Blazer 1980: every engine has only 2 sources that don't fully agree — year left empty.
 

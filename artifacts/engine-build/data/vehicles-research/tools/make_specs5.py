@@ -58,7 +58,7 @@ S["toyota-pickup"] = dict(metric_from=1900, make="Toyota", model="Pickup", makeS
     G("gen5", "1989–1995", 1989, 1995, "The 22R-E four and the 3VZ-E V6.")],
   files=["verify_toyota-pickup-1964-1995.json"], merge_trims=True)
 
-S["land-cruiser"] = dict(no_link=[{"cid": 241, "years": [1988, 1992], "match": "3F"}], metric_from=1900, make="Toyota", model="Land Cruiser", makeSlug="toyota", slug="land-cruiser",
+S["land-cruiser"] = dict(cid_remap={"236": 237}, family_overrides=[{"years": [1958, 1997], "cid": [237, 258, 241, 273], "url": "/engines/toyota/f-series"}], metric_from=1900, make="Toyota", model="Land Cruiser", makeSlug="toyota", slug="land-cruiser",
   title="Toyota Land Cruiser Engines by Year",
   description="Every factory engine in the US Toyota Land Cruiser by year: the F and 2F sixes of the FJ40 and FJ60, the 3F-E and 1FZ-FE, the 4.7 and 5.7 V8s, and the 2024+ hybrid.",
   intro=["Toyota has sold the Land Cruiser in the US since 1958, from the FJ40 to the 250 series that returned for 2024 after a two-year gap. Only engines sold new in the US are listed.", PICK],
@@ -187,7 +187,7 @@ S["240sx"] = dict(default_layout=[4, "inline-four"], make="Nissan", model="240SX
     G("s14", "S14", 1995, 1998, "The KA24DE.")],
   files=["verify_nissan-240sx-1989-1998.json"], merge_trims=True)
 
-S["z"] = dict(family_overrides=[{"years": [1984, 1996], "cid": [181], "url": "/engines/infiniti/vg"}, {"years": [2023, 2026], "cid": [183], "url": "/engines/infiniti/vr"}], make="Nissan", model="Z", makeSlug="nissan", slug="z", metric_from=1900,
+S["z"] = dict(cid_remap={"156": 157}, family_overrides=[{"years": [1970, 1983], "cid": [146, 157, 168], "url": "/engines/nissan/l-series"}, {"years": [1984, 1996], "cid": [181], "url": "/engines/infiniti/vg"}, {"years": [2023, 2026], "cid": [183], "url": "/engines/infiniti/vr"}], make="Nissan", model="Z", makeSlug="nissan", slug="z", metric_from=1900,
   title="Nissan Z Engines by Year (1970–2026)",
   description="Every factory engine in the Datsun and Nissan Z cars by year, from the 240Z's L24 six through the 300ZX, 350Z and 370Z V6s to today's twin-turbo Z.",
   intro=["Datsun's 240Z arrived in 1970, and the line continued as the 260Z, 280Z, 280ZX, 300ZX, 350Z, 370Z and, from 2023, the Z. There were no US models for 1997–2002, 2021 or 2022.", PICK],
