@@ -62,6 +62,9 @@ export interface EngineRecord {
   yearMax: number | null;
 
   calcLinks: { href: string; label: string }[];
+  /** Set on a duplicate page: the main page for the same engine. */
+  canonicalUrl?: string;
+  canonicalName?: string;
 
   /** Whitelisted head specs. Empty source fields are not carried through. */
   head: {

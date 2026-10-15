@@ -1,3 +1,4 @@
+import { engineSeoTitle, engineSeoDescription } from "@/data/seoDescriptions.mjs";
 import { useEffect, useState } from "react";
 import { Link, useParams } from "wouter";
 import { ArrowLeft, Printer } from "lucide-react";
@@ -70,16 +71,16 @@ export default function EnginePage() {
     );
   }
 
-  const title = `${rec.seoTitle ?? `${rec.manufacturerName} ${rec.displayName}`} Specs`;
-  const description = specDescription(rec);
+  const title = engineSeoTitle(rec);
+  const description = engineSeoDescription(rec);
   const calcLinks = rec.calcLinks ?? [];
 
   return (
     <div className="container mx-auto max-w-4xl py-10 px-4">
       <SEOHead
-        title={`${title} — Bore, Stroke, Compression`}
+        title={title}
         description={description}
-        canonical={rec.url}
+        canonical={rec.canonicalUrl ?? rec.url}
       />
 
       <nav aria-label="Breadcrumb" className="text-sm text-muted-foreground mb-6 flex flex-wrap gap-1.5">
@@ -94,6 +95,12 @@ export default function EnginePage() {
         <div>
           <h1 className="text-4xl font-bold mb-1">{title}</h1>
           <p className="text-muted-foreground">{description}</p>
+          {rec.canonicalUrl && (
+            <p className="text-sm mt-2">
+              The same engine also has a main page:{" "}
+              <Link href={rec.canonicalUrl} className="text-[#E85D04] hover:underline">{rec.canonicalName ?? "main page"}</Link>.
+            </p>
+          )}
         </div>
         <div className="flex gap-2 flex-wrap print:hidden">
           <Button variant="outline" asChild>
@@ -266,19 +273,6 @@ export default function EnginePage() {
       </p>
     </div>
   );
-}
-
-function specDescription(rec: EngineRecord) {
-  const bits: string[] = [];
-  if (rec.displacement_ci != null) {
-    bits.push(`${rec.displacement_ci} ci${rec.displacement_l != null ? ` (${rec.displacement_l}L)` : ""}`);
-  }
-  if (rec.num_cylinders != null) bits.push(`${rec.num_cylinders}-cylinder`);
-  if (rec.bore_in != null && rec.stroke_in != null) {
-    bits.push(`${rec.bore_in}" bore × ${rec.stroke_in}" stroke`);
-  }
-  if (rec.compression_ratio != null) bits.push(`${rec.compression_ratio}:1 compression`);
-  return bits.join(", ") + ".";
 }
 
 function Row({ label, value }: { label: string; value: React.ReactNode }) {

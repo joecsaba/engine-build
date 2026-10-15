@@ -3,7 +3,7 @@ import { Link, useParams } from "wouter";
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 import { Skeleton } from "@/components/ui/skeleton";
 import { SEOHead } from "@/components/SEOHead";
-import { familyDescription } from "@/data/seoDescriptions.mjs";
+import { familyDescription, familySeoTitle } from "@/data/seoDescriptions.mjs";
 import type { EngineFamilyDoc } from "@/lib/engineTypes";
 import { FactoryCars } from "@/components/vehicles/FactoryCars";
 
@@ -55,12 +55,7 @@ export default function EngineFamilyPage() {
     );
   }
 
-  // Same rule as the prerender: NHRA-created families are already named
-  // "<Manufacturer> <displacement>ci", so don't prepend the manufacturer twice.
-  const famBase = doc.familyName.toLowerCase().startsWith(doc.manufacturerName.toLowerCase())
-    ? doc.familyName
-    : `${doc.manufacturerName} ${doc.familyName}`;
-  const title = `${famBase} Engine Specs`;
+  const title = familySeoTitle(doc);
   const description = familyDescription(doc);
 
   return (

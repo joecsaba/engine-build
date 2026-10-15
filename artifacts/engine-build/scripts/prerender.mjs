@@ -18,12 +18,12 @@ import { dirname, resolve } from "node:path";
 import { fileURLToPath, pathToFileURL } from "node:url";
 
 import GUIDES from "../src/data/guides/manifest.mjs";
-import { clampDesc, encodedLength, familyDescription, manufacturerDescription } from "../src/data/seoDescriptions.mjs";
+import { clampDesc, encodedLength, familyDescription, manufacturerDescription, engineSeoTitle, engineSeoDescription, familySeoTitle } from "../src/data/seoDescriptions.mjs";
 import { engineNarrative } from "../src/data/engineNarrative.mjs";
 import FAQ from "../src/data/faq.mjs";
 import { loadEngineData, writeRuntimeData } from "./engineData.mjs";
 import { loadVehicles, linkVehicles, writeVehicleRuntime, yearSpan } from "./vehicleData.mjs";
-import { factoryCarLabel, vehicleEngineLabel, hpText } from "../src/data/vehicleText.mjs";
+import { factoryCarLabel, vehicleEngineLabel, hpText, VEHICLE_CALC_LINKS } from "../src/data/vehicleText.mjs";
 import { writeBuilderEngines } from "./builderEngines.mjs";
 import { loadCams, writeCamRuntime } from "./camData.mjs";
 import { buildCamCatalog } from "./camCatalog.mjs";
@@ -468,51 +468,10 @@ function engineEntry(e) {
     { label: e.displayName },
   ];
 
-  // The client title carried "— Bore, Stroke, Compression", which are the words
-  // engine queries use; keep them when the 65-character budget (46 + the site
-  // suffix) allows, fall back to a shorter form, then to the bare name.
-  const title = (() => {
-    const base = `${e.seoTitle ?? `${e.manufacturerName} ${e.displayName}`} Specs`;
-    for (const tail of [" — Bore, Stroke, Compression", ": Bore, Stroke, CR", ""]) {
-      if (encodedLength(base + tail) <= 46) return base + tail;
-    }
-    return base;
-  })();
-  const descBits = [];
-  if (e.displacement_ci != null) descBits.push(`${e.displacement_ci} ci${e.displacement_l != null ? ` (${e.displacement_l}L)` : ""}`);
-  if (e.num_cylinders != null) descBits.push(`${e.num_cylinders}-cylinder`);
-  if (e.bore_in != null && e.stroke_in != null) descBits.push(`${e.bore_in}" bore x ${e.stroke_in}" stroke`);
-  if (e.compression_ratio != null) descBits.push(`${e.compression_ratio}:1 compression`);
-  // Bing flagged 209 descriptions as too short. The spec list alone runs 90-100
-  // characters on engines with few populated fields, so append what else the
-  // page actually carries rather than padding it with adjectives.
-  const extraBits = [];
-  if (e.rod_ratio != null) extraBits.push(`${e.rod_ratio} rod ratio`);
-  if (e.head?.head_cc != null) extraBits.push(`${e.head.head_cc}cc chambers`);
-  if (e.head?.intake_valve_dia != null) extraBits.push(`${e.head.intake_valve_dia}" intake valves`);
-  if (e.hpMin != null) extraBits.push(e.hpMin === e.hpMax ? `${e.hpMin} hp` : `${e.hpMin}-${e.hpMax} hp`);
-  // The <title> already solved this: seoTitle strips the geometry suffix that
-  // displayName carries ("Acura Honda B-series . 3.189" x 3.433" . 10:1") and
-  // does not repeat the manufacturer. The description was still built from
-  // displayName, so 444 of 1,472 engine pages stated bore, stroke and
-  // compression twice and 298 named the manufacturer twice - in the one line a
-  // searcher reads before deciding whether to click. The trailing compression
-  // ratio goes too, because descBits states it again a few words later.
-  const descName = (e.seoTitle ?? `${e.manufacturerName} ${e.displayName}`)
-    .replace(/\s+\d+(?:\.\d+)?:1$/, "")
-    .trim();
-  const description = clampDesc([
-    `${descName} engine specs: ${descBits.join(", ")}.`,
-    // Shorter phrasings for each tail slot. Two inch marks cost ten characters
-    // once escaped, so on a spec-heavy engine the long form will not fit and
-    // without an alternative the slot is dropped whole.
-    extraBits.length
-      ? [`Plus ${extraBits.slice(0, 2).join(" and ")}.`, `Plus ${extraBits[0]}.`]
-      : "",
-    ["With piston speed and rod ratio worked out.",
-     "With piston speed and rod ratio.",
-     "With rod ratio worked out."],
-  ]);
+  // Title and description lead with the engine's numbers; one definition shared
+  // with the React page (src/data/seoDescriptions.mjs).
+  const title = engineSeoTitle(e);
+  const description = engineSeoDescription(e);
 
   const variantsHtml = e.variantCount > 1
     ? `<h2>Variants sharing these dimensions (${e.variantCount})</h2>
@@ -534,6 +493,7 @@ function engineEntry(e) {
       </nav>
       <h1>${escapeHtml(title)}</h1>
       <p><a href="${e.familyUrl}">See other engines in this family</a></p>
+      ${e.canonicalUrl ? `<p>The same engine also has a main page: <a href="${e.canonicalUrl}">${escapeHtml(e.canonicalName ?? "main page")}</a>.</p>` : ""}
       <p>${escapeHtml(description)}</p>
       ${engineNarrative(e).map((para) => `<p>${escapeHtml(para)}</p>`).join("")}
       <h2>Dimensions</h2>
@@ -591,6 +551,7 @@ function engineEntry(e) {
     description,
     seoBlock,
     jsonLd: [breadcrumbJsonLd(crumbs)],
+    canonicalPath: e.canonicalUrl,
     priority: 0.6,
     changefreq: "yearly",
   };
@@ -603,22 +564,10 @@ function engineFamilyEntry(fam) {
     { label: fam.manufacturerName, href: fam.manufacturerUrl },
     { label: fam.familyName },
   ];
-  // NHRA-created families are named "<Manufacturer> <displacement>ci", so
-  // prepending the manufacturer again produced "American Motors American
-  // Motors 195ci Engine Specs".
-  const famTitleBase = fam.familyName.toLowerCase().startsWith(fam.manufacturerName.toLowerCase())
-    ? fam.familyName
-    : `${fam.manufacturerName} ${fam.familyName}`;
   // 65-char budget, 19 of it the site suffix. Drop a trailing parenthetical
   // before anything else — "(194/230/250/292)" is the least load-bearing part
   // of "GMC Chevy Straight-6 (194/230/250/292)".
-  const title = (() => {
-    const full = `${famTitleBase} Engine Specs`;
-    if (encodedLength(full) <= 46) return full;
-    const trimmed = `${famTitleBase.replace(/\s*\([^)]*\)\s*$/, "").trim()} Engine Specs`;
-    if (encodedLength(trimmed) <= 46) return trimmed;
-    return `${famTitleBase.replace(/\s*\([^)]*\)\s*$/, "").trim()} Specs`;
-  })();
+  const title = familySeoTitle(fam);
   // 193 families hold a single engine, so "all 1 engines, compared side by side"
   // needs a different sentence rather than a plural hack.
   const one = fam.engines.length === 1;
@@ -779,6 +728,8 @@ function vehicleEntry(v) {
       <h2>Jump to a year</h2>
       ${nav}
       ${gens}
+      <h2>Working on one of these engines?</h2>
+      <ul>${VEHICLE_CALC_LINKS.map((c) => `<li><a href="${c.href}">${escapeHtml(c.label)}</a></li>`).join("")}</ul>
       <p><a href="${v.makeUrl}">← All ${escapeHtml(v.make)} vehicles</a></p>`;
   return {
     path: v.url,
@@ -1090,9 +1041,10 @@ function faqEntry() {
 // ---------------------------------------------------------------------------
 
 function generateHtml(template, entry) {
-  const { path, title, description, seoBlock, jsonLd = [], noindex = false } = entry;
+  const { path, title, description, seoBlock, jsonLd = [], noindex = false, canonicalPath } = entry;
   const fullTitle = path === "/" ? `${title} | ${SITE_NAME}` : `${title} | ${SITE_NAME}`;
-  const canonical = `${SITE}${path}`;
+  // a duplicate engine page names its main page as canonical (assignCanonicals)
+  const canonical = `${SITE}${canonicalPath ?? path}`;
 
   let html = template;
 
@@ -1177,7 +1129,8 @@ function generateHtml(template, entry) {
 
 function generateSitemap(entries) {
   const today = new Date().toISOString().slice(0, 10);
-  const indexable = entries.filter((e) => !e.noindex);
+  // duplicates point their canonical elsewhere, so only the main page is listed
+  const indexable = entries.filter((e) => !e.noindex && !e.canonicalPath);
   // Homepage is excluded from STATIC_PAGES so add it explicitly with priority 1.0
   const all = [
     { path: "/", priority: 1.0, changefreq: "weekly" },
@@ -1265,14 +1218,14 @@ async function main() {
   // Generate sitemap.xml from the same manifest so it never drifts.
   const sitemap = generateSitemap(allEntries);
   await writeFile(resolve(DIST, "sitemap.xml"), sitemap, "utf8");
-  const indexableCount = allEntries.filter((e) => !e.noindex).length + 1; // +1 for homepage
+  const indexableCount = allEntries.filter((e) => !e.noindex && !e.canonicalPath).length + 1; // +1 for homepage
 
   const withLongContent = allEntries.filter((e) => e.hasLongContent).length;
   console.log(`prerender: cam DB — ${camData.cams.length} cams, ${camData.manufacturers.length} manufacturers`);
   console.log(`prerender: engine DB — ${engineData.engines.length} engines, ${engineData.families.length} families, ${engineData.manufacturers.length} manufacturers`);
   console.log(`prerender: wrote ${written} HTML files (${CALCS.length} calculators, ${CATEGORY_PAGES.length} categories, ${STATIC_PAGES.length} static, ${GUIDES.length} guides, 1 FAQ)`);
   console.log(`prerender: ${withLongContent} / ${CALCS.length} calculators have long-form content`);
-  console.log(`prerender: wrote sitemap.xml with ${indexableCount} URLs (noindex excluded)`);
+  console.log(`prerender: wrote sitemap.xml with ${indexableCount} URLs (noindex and duplicate pages excluded)`);
 }
 
 main().catch((err) => {

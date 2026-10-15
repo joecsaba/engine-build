@@ -6,7 +6,7 @@ import { useEffect, useRef } from "react";
  * This is what makes a calculator result shareable: the URL carries its own
  * inputs, so a link pasted into a forum thread lands on the answer rather than
  * an empty form. It is also how engine spec pages hand an engine's dimensions
- * to a calculator (see src/lib/engineCalcLinks.ts, which owns the param names).
+ * to a calculator (see calcLinksFor in scripts/engineData.mjs, which owns the param names).
  *
  * Deliberately fires only once. Re-applying on every render would fight the
  * user the moment they typed over a prefilled value.

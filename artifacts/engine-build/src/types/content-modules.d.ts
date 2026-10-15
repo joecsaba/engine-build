@@ -62,6 +62,11 @@ declare module "@/data/seoDescriptions.mjs" {
   export const DESC_MIN: number;
   export function clampDesc(parts: (string | string[] | null | undefined)[]): string;
   export function familyPhrase(manufacturerName: string, familyName: string): string;
+  export const TITLE_MAX: number;
+  export function engineSeoName(e: object): string;
+  export function engineSeoTitle(e: object): string;
+  export function engineSeoDescription(e: object): string;
+  export function familySeoTitle(fam: object): string;
   export function familyDescription(fam: {
     manufacturerName: string;
     familyName: string;
@@ -103,4 +108,5 @@ declare module "@/data/vehicleText.mjs" {
   export function vehicleEngineLabel(e: { name: string; code: string | null }): string;
   export function hpText(e: { hp: number | null; hpBasis: string; hpRange?: [number, number] | null; electric?: boolean }): string;
   export function factoryCarLabel(r: { year: number; code: string | null; hp: number | null; hpRange?: [number, number] | null; hpBasis?: string }): string;
+  export const VEHICLE_CALC_LINKS: { href: string; label: string }[];
 }

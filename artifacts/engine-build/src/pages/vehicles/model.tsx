@@ -3,7 +3,7 @@ import { Link, useParams } from "wouter";
 import { Skeleton } from "@/components/ui/skeleton";
 import { SEOHead } from "@/components/SEOHead";
 import type { VehicleDoc, VehicleEngine } from "@/lib/vehicleTypes";
-import { hpText, vehicleEngineLabel } from "@/data/vehicleText.mjs";
+import { hpText, vehicleEngineLabel, VEHICLE_CALC_LINKS } from "@/data/vehicleText.mjs";
 
 /**
  * Vehicle page: /vehicles/<make>/<model>
@@ -148,6 +148,16 @@ export default function VehicleModelPage() {
         );
       })}
 
+      <section className="mb-12 print:hidden">
+        <h2 className="text-xl font-bold mb-3">Working on one of these engines?</h2>
+        <ul className="grid gap-2 sm:grid-cols-2 text-sm">
+          {VEHICLE_CALC_LINKS.map((c) => (
+            <li key={c.href}>
+              <Link href={c.href} className="text-[#E85D04] hover:underline">{c.label}</Link>
+            </li>
+          ))}
+        </ul>
+      </section>
     </div>
   );
 }

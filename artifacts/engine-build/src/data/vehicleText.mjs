@@ -23,3 +23,19 @@ export function factoryCarLabel(r) {
   const hp = r.hpRange ? `${r.hpRange[0]}–${r.hpRange[1]} ${unit}` : r.hp != null ? `${r.hp} ${unit}` : null;
   return [r.year, r.code, hp].filter(Boolean).join(", ");
 }
+
+/**
+ * Calculators a reader of a vehicle page most often needs next, shown under
+ * the year tables. These are also the internal links that help the calculators
+ * rank (Search Console, Oct 2026: displacement averaged position 11.6 on 19k
+ * impressions). Engine pages carry prefilled links; a vehicle page spans many
+ * engines, so these are plain.
+ */
+export const VEHICLE_CALC_LINKS = [
+  { href: "/calculators/displacement", label: "Engine displacement from bore and stroke" },
+  { href: "/calculators/compression-ratio", label: "Static and dynamic compression ratio" },
+  { href: "/calculators/cam-selector", label: "Which camshaft for your build" },
+  { href: "/calculators/carb-cfm-sizing", label: "What size carburetor" },
+  { href: "/calculators/hp-torque", label: "Horsepower to torque at any RPM" },
+  { href: "/calculators/torque-converter-stall", label: "Torque converter stall speed" },
+];

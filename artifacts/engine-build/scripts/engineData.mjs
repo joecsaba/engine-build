@@ -77,20 +77,24 @@ function calcLinksFor(e) {
   };
   const links = [];
   if (e.bore_in != null && e.stroke_in != null && e.num_cylinders != null) {
-    links.push({ label: "Displacement calculator", href: `/calculators/displacement${qs({ bore: e.bore_in, stroke: e.stroke_in, cylinders: e.num_cylinders })}` });
+    links.push({ label: "Displacement from bore and stroke (calculator)", href: `/calculators/displacement${qs({ bore: e.bore_in, stroke: e.stroke_in, cylinders: e.num_cylinders })}` });
   }
   if (e.bore_in != null && e.stroke_in != null) {
-    links.push({ label: "Compression ratio calculator", href: `/calculators/compression-ratio${qs({ bore: e.bore_in, stroke: e.stroke_in, cylinders: e.num_cylinders, targetCr: e.compression_ratio })}` });
-    links.push({ label: "Piston ring gap calculator", href: `/calculators/ring-gap${qs({ bore: e.bore_in })}` });
+    links.push({ label: "Static and dynamic compression ratio calculator", href: `/calculators/compression-ratio${qs({ bore: e.bore_in, stroke: e.stroke_in, cylinders: e.num_cylinders, targetCr: e.compression_ratio })}` });
+    links.push({ label: "Piston ring gap for this bore", href: `/calculators/ring-gap${qs({ bore: e.bore_in })}` });
   }
   if (e.stroke_in != null) {
-    links.push({ label: "Piston speed calculator", href: `/calculators/piston-speed${qs({ stroke: e.stroke_in })}` });
+    links.push({ label: "Piston speed at any RPM", href: `/calculators/piston-speed${qs({ stroke: e.stroke_in })}` });
   }
   if (e.rod_length_in != null && e.stroke_in != null) {
     links.push({ label: "Rod ratio calculator", href: `/calculators/rod-ratio${qs({ rod: e.rod_length_in, stroke: e.stroke_in })}` });
   }
+  // hp-torque takes no query parameters, so this one is a plain link
+  if (e.hpMin != null) {
+    links.push({ label: "Horsepower to torque at any RPM", href: "/calculators/hp-torque" });
+  }
   if (e.displacement_ci != null) {
-    links.push({ label: "Carburetor CFM calculator", href: `/calculators/carb-cfm-sizing${qs({ displacement: e.displacement_ci })}` });
+    links.push({ label: "What size carburetor (CFM calculator)", href: `/calculators/carb-cfm-sizing${qs({ displacement: e.displacement_ci })}` });
   }
   return links;
 }
@@ -787,7 +791,70 @@ export function loadEngineData() {
     e.relatedEngines = picked;
   }
 
+  assignCanonicals(outEngines);
   return { manufacturers: outManufacturers, families: outFamilies, engines: outEngines, familyIndex, nhraStats };
+}
+
+// One engine, several pages: the Acura and Honda copies of a K20, the LG3 305
+// filed under each GM division that used it, the Cummins ISB under Cummins and
+// Ram. Search Console (Oct 2026) showed such pairs splitting impressions and
+// both missing clicks. Every copy stays (each carries its own division's year
+// rows and factory-car links), but one is named the canonical page: the others
+// point their <link rel="canonical"> at it and drop out of the sitemap.
+//
+// Same engine = identical bore, stroke, cylinders, compression and fuel, in a
+// different family, sharing an engine code or the same name after the maker.
+// The canonical page is the builder's over a rebadge's, then the page with the
+// most year/rating rows, then the shortest URL.
+const REBADGE_OF = { acura: "honda", lexus: "toyota", infiniti: "nissan", genesis: "hyundai",
+  mercury: "ford", lincoln: "ford", gmc: "chevrolet" };
+const BADGE_MAKERS = new Set([...Object.keys(REBADGE_OF), "ram"]);
+function assignCanonicals(engines) {
+  const r3 = (x) => Number(x).toFixed(3);
+  const key = (e) => [r3(e.bore_in), r3(e.stroke_in), e.num_cylinders, e.compression_ratio ?? "?",
+    /diesel/i.test(e.fuel_type ?? "") ? "D" : "G"].join("|");
+  const codesOf = (e) => new Set((e.variants ?? []).flatMap((v) => v.codes ?? [])
+    .map((c) => String(c).toUpperCase().replace(/[\s-]/g, "")).filter((c) => c.length >= 2));
+  // word tokens after the maker, ignoring punctuation and bare numbers, so
+  // "ISB (Common Rail)" and "ISB 5.9 Common Rail" read as the same name
+  // A bare size ("400ci", "5.7L") is not a name: the Chevrolet and Pontiac 400s
+  // share it and are different engines.
+  const nameAfterMaker = (e) => {
+    const t = String(e.seoTitle ?? "").replace(/^\S+\s/, "").toUpperCase()
+      .split(/[^A-Z0-9]+/).filter((t) => t && !/^\d+$/.test(t) && !/^\d+(CI|L)$/.test(t));
+    return t.length ? t.sort().join(" ") : "";
+  };
+  // Pages of different makers merge only when one is a known rebadge of the
+  // builder. GM divisions and the Chrysler brands are left alone: which
+  // division built a shared engine is not something these records say.
+  const builderOf = (e) => (e.manufacturerSlug === "ram" && /diesel/i.test(e.fuel_type ?? "") ? "cummins" : REBADGE_OF[e.manufacturerSlug]);
+  const related = (a, b) => a.manufacturerSlug === b.manufacturerSlug ||
+    builderOf(a) === b.manufacturerSlug || builderOf(b) === a.manufacturerSlug;
+  const parent = new Map(engines.map((e) => [e, e]));
+  const find = (e) => { while (parent.get(e) !== e) e = parent.get(e); return e; };
+  const groups = new Map();
+  for (const e of engines) {
+    if (e.bore_in == null || e.stroke_in == null || e.num_cylinders == null) continue;
+    const k = key(e); if (!groups.has(k)) groups.set(k, []); groups.get(k).push(e);
+  }
+  for (const es of groups.values()) {
+    for (let i = 0; i < es.length; i++) for (let j = i + 1; j < es.length; j++) {
+      const a = es[i], b = es[j];
+      if (a.familyUrl === b.familyUrl || !related(a, b)) continue;
+      const cb = codesOf(b);
+      const same = [...codesOf(a)].some((c) => cb.has(c)) || (nameAfterMaker(a) && nameAfterMaker(a) === nameAfterMaker(b));
+      if (same) parent.set(find(a), find(b));
+    }
+  }
+  const clusters = new Map();
+  for (const e of engines) { const r = find(e); if (r === e && !clusters.has(r)) continue; if (!clusters.has(r)) clusters.set(r, [r]); if (e !== r) clusters.get(r).push(e); }
+  for (const members of clusters.values()) {
+    if (members.length < 2) continue;
+    const best = [...members].sort((a, b) =>
+      Number(BADGE_MAKERS.has(a.manufacturerSlug)) - Number(BADGE_MAKERS.has(b.manufacturerSlug)) ||
+      (b.variantCount ?? 0) - (a.variantCount ?? 0) || a.url.length - b.url.length || a.url.localeCompare(b.url))[0];
+    for (const e of members) if (e !== best) { e.canonicalUrl = best.url; e.canonicalName = best.seoTitle ?? best.displayName; }
+  }
 }
 
 /**
