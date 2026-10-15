@@ -12,13 +12,14 @@
 //
 // ASINs are the ISBN-10s, which is what Amazon uses for print books.
 //
-// AMAZON_TAG is the site's existing Associates tag, already in use on the
-// cam-duration page and already disclosed under "Affiliate Links Disclosure" in
-// the terms. Centralising it means the tag is set once rather than baked into
+// AMAZON_TAG is the site's Associates tag (empty while there is no account; a
+// tag set here needs its disclosure restored in SourceNote, the cam pages and
+// the terms). Centralising it means the tag is set once rather than baked into
 // individual hrefs, and clean /dp/<asin> links replace the amzn.to shortlinks,
 // which carried a page of search-session tracking parameters.
 
-export const AMAZON_TAG = "enginebuild-20";
+// The Associates account closed 2026-10-15: book links are now plain Amazon links.
+export const AMAZON_TAG = "";
 
 export const VIZARD_BOOKS = {
   horsepower: {

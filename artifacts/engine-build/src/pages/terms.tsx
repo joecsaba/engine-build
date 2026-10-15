@@ -91,13 +91,11 @@ export default function Terms() {
             </li>
           </ul>
 
-          <h2>Affiliate Links Disclosure</h2>
+          <h2>Outside Links</h2>
           <p>
-            Engine-build.com participates in the Amazon Services LLC Associates Program, an
-            affiliate advertising program designed to provide a means for sites to earn
-            advertising fees by advertising and linking to Amazon.com. Some links on this site
-            are affiliate links, meaning we may earn a small commission if you make a purchase
-            through them, at no additional cost to you.
+            Engine-build.com does not use affiliate links. Links to books, manufacturers and
+            other sites are provided as references only; we earn nothing if you buy through them.
+            The site is supported by display advertising.
           </p>
 
           <h2>Right to Modify Content</h2>

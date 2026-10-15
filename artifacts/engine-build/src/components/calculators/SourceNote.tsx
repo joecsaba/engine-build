@@ -15,10 +15,9 @@ interface Props {
  * readers no way to reach the source. A calculator implements one slice of a
  * method; the book is where the reasoning and its limits actually live.
  *
- * The link carries the site's Amazon Associates tag, so it is an affiliate
- * link and says so inline. A disclosure buried in the terms page is not enough
- * — the FTC expects it at or near the link, which is also how the existing
- * cam-duration citation handles it.
+ * The link is a plain Amazon book link. It carried the site's Associates tag
+ * (with an inline disclosure) until the account closed on 2026-10-15; if a tag
+ * is set again in attribution.mjs, restore the disclosure here at the link.
  */
 export function SourceNote({ book, context }: Props) {
   const b = VIZARD_BOOKS[book];
@@ -36,10 +35,7 @@ export function SourceNote({ book, context }: Props) {
       </a>{" "}
       (CarTech, ISBN {b.isbn13}). The book sets out the full method, its assumptions and the dyno
       work behind it. This calculator implements one part of that and is no substitute for the
-      explanation.{" "}
-      <span className="italic">
-        Affiliate link — we may earn a small commission at no extra cost to you.
-      </span>
+      explanation.
     </p>
   );
 }

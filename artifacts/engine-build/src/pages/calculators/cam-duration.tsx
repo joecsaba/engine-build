@@ -695,7 +695,6 @@ export default function CamDurationCalculator() {
               >
                 Get the Book on Amazon →
               </a>
-              <p className="text-xs text-gray-500 mt-1">Affiliate link — we may earn a small commission at no extra cost to you</p>
             </div>
           </div>
         </div>

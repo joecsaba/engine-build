@@ -182,9 +182,8 @@ export default {
     {
       heading: "Where this method comes from",
       body: `
-        <p>The LSA rule, the compression adjustment and the flow-to-horsepower figure used above are David Vizard's, published in <a href="https://www.amazon.com/dp/1934709174?tag=enginebuild-20" target="_blank" rel="noopener nofollow"><em>David Vizard's How to Build Horsepower</em></a> (CarTech, ISBN 9781934709177). His <a href="https://www.amazon.com/dp/1934709646?tag=enginebuild-20" target="_blank" rel="noopener nofollow"><em>How to Port &amp; Flow Test Cylinder Heads</em></a> covers the flow bench work these figures rest on, and <a href="https://www.amazon.com/dp/1932494847?tag=enginebuild-20" target="_blank" rel="noopener nofollow"><em>How to Build Max-Performance Chevy Small-Blocks on a Budget</em></a> applies the same approach to one platform in detail.</p>
+        <p>The LSA rule, the compression adjustment and the flow-to-horsepower figure used above are David Vizard's, published in <a href="https://www.amazon.com/dp/1934709174" target="_blank" rel="noopener nofollow"><em>David Vizard's How to Build Horsepower</em></a> (CarTech, ISBN 9781934709177). His <a href="https://www.amazon.com/dp/1934709646" target="_blank" rel="noopener nofollow"><em>How to Port &amp; Flow Test Cylinder Heads</em></a> covers the flow bench work these figures rest on, and <a href="https://www.amazon.com/dp/1932494847" target="_blank" rel="noopener nofollow"><em>How to Build Max-Performance Chevy Small-Blocks on a Budget</em></a> applies the same approach to one platform in detail.</p>
         <p>This calculator implements part of that method. The books set out the reasoning, the dyno work behind the numbers and — more usefully — where the method stops applying. If you are about to spend four figures on parts, they are worth reading rather than trusting a web form.</p>
-        <p><em>Affiliate links — we may earn a small commission at no extra cost to you.</em></p>
       `,
     },
   ],
