@@ -8,7 +8,7 @@ PICK = "Pick a year to see every engine offered that model year, with its code, 
 def G(key, name, a, b, *intro): return {"key": key, "name": name, "years": [a, b], "intro": list(intro)}
 S = {}
 
-S["model-a"] = dict(no_link=[{"cid": 221, "years": [1932, 1934]}], make="Ford", model="Model A to Model 40", makeSlug="ford", slug="model-a",
+S["model-a"] = dict(family_overrides=[{"years": [1928, 1934], "cid": [201], "url": "/engines/ford/model-a-four"}, {"years": [1932, 1934], "cid": [221], "url": "/engines/ford/flathead-v8"}], make="Ford", model="Model A to Model 40", makeSlug="ford", slug="model-a",
   title="Ford Model A, B and 18 Engines (1928–1934)",
   description="Every factory engine in the Ford Model A, the 1932 Ford (Model B four and Model 18 flathead V8) and the 1933–34 Model 40, by year, with bore, stroke and rated hp.",
   intro=["Ford's Model A replaced the Model T for 1928. For 1932 the new car came two ways from the same body: the four-cylinder Model B and the Model 18 with Ford's first V8, the flathead that made the '32 Ford the hot rod. The 1933–1934 Model 40 kept both engines.", PICK],
@@ -55,7 +55,7 @@ S["caprice"] = dict(make="Chevrolet", model="Caprice", makeSlug="chevrolet", slu
     G("ppv", "Caprice PPV (2011–2017, police only)", 2011, 2017, "The 6.0 L77 V8 and, from 2012, the 3.6 V6.")],
   files=["verify_chevrolet-caprice-1965-2017.json"], merge_trims=True)
 
-S["beetle"] = dict(metric_from=1900, force_layout=[4, "flat-four"], basis_from_research=True,
+S["beetle"] = dict(family_overrides=[{"years": [1949, 1979], "cid": [69, 73, 78, 91, 97], "url": "/engines/volkswagen/air-cooled"}], metric_from=1900, force_layout=[4, "flat-four"], basis_from_research=True,
   make="Volkswagen", model="Beetle", makeSlug="volkswagen", slug="beetle",
   title="VW Beetle Engines by Year (1949–1979)",
   description="Every factory engine in the US air-cooled Volkswagen Beetle by year, 1949–1979: the 1100, 1200, 1300, 1500 and 1600 flat fours, carbureted and fuel-injected.",

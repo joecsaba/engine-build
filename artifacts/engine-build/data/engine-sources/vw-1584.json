@@ -1,0 +1,441 @@
+{
+ "name": "Volkswagen 1584 cc air-cooled flat-four (US Beetle 1970-1979)",
+ "fields": {
+  "num_cylinders": {
+   "value": 4,
+   "sources": [
+    {
+     "name": "Volkswagen factory literature (VW of America owner's manuals 1962-1979, US/Canadian brochures, 1952-57 and 1961-65 VW workshop manuals, VW NHTSA report; archive.org) - counted as one source",
+     "url": "https://archive.org/details/1968-volkswagen-beetle-owners-manual-english",
+     "says": "Four cylinder, four stroke, horizontally opposed, in rear"
+    },
+    {
+     "name": "Autobook: Volkswagen Beetle 1954-67 (Autopress) - technical data",
+     "url": "https://archive.org/details/volkswagen-beetle-1954-67-autobook",
+     "says": "VW 1200/1300/1500 flat-four"
+    },
+    {
+     "name": "Wikipedia - Volkswagen air-cooled engine / Volkswagen Beetle",
+     "url": "https://en.wikipedia.org/wiki/Volkswagen_air-cooled_engine",
+     "says": "four horizontally opposed cylinders"
+    }
+   ],
+   "note": ""
+  },
+  "configuration": {
+   "value": "air-cooled horizontally opposed flat-four (boxer)",
+   "sources": [
+    {
+     "name": "Volkswagen factory literature (VW of America owner's manuals 1962-1979, US/Canadian brochures, 1952-57 and 1961-65 VW workshop manuals, VW NHTSA report; archive.org) - counted as one source",
+     "url": "https://archive.org/details/1968-volkswagen-beetle-owners-manual-english",
+     "says": "Four cylinder, four stroke, horizontally opposed, in rear. Air cooling by fan"
+    },
+    {
+     "name": "Wikipedia - Volkswagen air-cooled engine / Volkswagen Beetle",
+     "url": "https://en.wikipedia.org/wiki/Volkswagen_air-cooled_engine",
+     "says": "air-cooled boxer engine"
+    },
+    {
+     "name": "Autobook: Volkswagen Beetle 1954-67 (Autopress) - technical data",
+     "url": "https://archive.org/details/volkswagen-beetle-1954-67-autobook",
+     "says": "air-cooled horizontally opposed engine"
+    }
+   ],
+   "note": ""
+  },
+  "valvetrain": {
+   "value": "OHV pushrod, 2 valves per cylinder, single central camshaft",
+   "sources": [
+    {
+     "name": "Volkswagen factory literature (VW of America owner's manuals 1962-1979, US/Canadian brochures, 1952-57 and 1961-65 VW workshop manuals, VW NHTSA report; archive.org) - counted as one source",
+     "url": "https://archive.org/details/1968-volkswagen-beetle-owners-manual-english",
+     "says": "1952-57 and 1961-65 workshop manuals: valves of the overhead type, operated by the cams via push rods and rocker arms; 1968 US brochure 'Valves: Overhead type'"
+    },
+    {
+     "name": "Autobook: Volkswagen Beetle 1954-67 (Autopress) - technical data",
+     "url": "https://archive.org/details/volkswagen-beetle-1954-67-autobook",
+     "says": "overhead valves and pushrods; camshaft in crankcase"
+    },
+    {
+     "name": "Wikipedia - Volkswagen air-cooled engine / Volkswagen Beetle",
+     "url": "https://en.wikipedia.org/wiki/Volkswagen_air-cooled_engine",
+     "says": "Pushrod OHV"
+    }
+   ],
+   "note": ""
+  },
+  "block_material": {
+   "value": "magnesium alloy crankcase (split); separate finned cast-iron cylinders",
+   "sources": [
+    {
+     "name": "Volkswagen factory literature (VW of America owner's manuals 1962-1979, US/Canadian brochures, 1952-57 and 1961-65 VW workshop manuals, VW NHTSA report; archive.org) - counted as one source",
+     "url": "https://archive.org/details/1968-volkswagen-beetle-owners-manual-english",
+     "says": "1969 US brochure: aluminum-magnesium engine; workshop manual: crankcase cast of light-metal alloy"
+    },
+    {
+     "name": "Wikipedia - Volkswagen air-cooled engine / Volkswagen Beetle",
+     "url": "https://en.wikipedia.org/wiki/Volkswagen_air-cooled_engine",
+     "says": "magnesium-alloy crankcase; cast-iron cylinders"
+    }
+   ],
+   "note": "Cast-iron cylinders are stated by Wikipedia only (VW: 'special cylinder casting').",
+   "second_pass": true
+  },
+  "head_material": {
+   "value": "aluminum alloy",
+   "sources": [
+    {
+     "name": "Volkswagen factory literature (VW of America owner's manuals 1962-1979, US/Canadian brochures, 1952-57 and 1961-65 VW workshop manuals, VW NHTSA report; archive.org) - counted as one source",
+     "url": "https://archive.org/details/1968-volkswagen-beetle-owners-manual-english",
+     "says": "workshop manual: detachable cylinder head of light alloy casting"
+    },
+    {
+     "name": "Wikipedia - Volkswagen air-cooled engine / Volkswagen Beetle",
+     "url": "https://en.wikipedia.org/wiki/Volkswagen_air-cooled_engine",
+     "says": "cast aluminum alloy cylinder heads"
+    }
+   ],
+   "note": "",
+   "second_pass": true
+  },
+  "fuel_type": {
+   "value": "gasoline",
+   "sources": [
+    {
+     "name": "Volkswagen factory literature (VW of America owner's manuals 1962-1979, US/Canadian brochures, 1952-57 and 1961-65 VW workshop manuals, VW NHTSA report; archive.org) - counted as one source",
+     "url": "https://archive.org/details/1968-volkswagen-beetle-owners-manual-english",
+     "says": "owner's manuals: fuel requirements"
+    },
+    {
+     "name": "Wikipedia - Volkswagen air-cooled engine / Volkswagen Beetle",
+     "url": "https://en.wikipedia.org/wiki/Volkswagen_air-cooled_engine",
+     "says": "gasoline-fuelled"
+    },
+    {
+     "name": "Walter Henry Nelson, Small Wonder, appendix 'How to Tell the Age of a Volkswagen'",
+     "url": "https://archive.org/details/walter-henry-small-wonder-the-amazing-story-of-the-volkswagen-beetle-appendix-ho",
+     "says": "lead-free gasoline for catalyst cars"
+    }
+   ],
+   "note": ""
+  },
+  "bore_in": {
+   "value": 3.3661,
+   "sources": [
+    {
+     "name": "Volkswagen factory literature (VW of America owner's manuals 1962-1979, US/Canadian brochures, 1952-57 and 1961-65 VW workshop manuals, VW NHTSA report; archive.org) - counted as one source",
+     "url": "https://archive.org/details/1968-volkswagen-beetle-owners-manual-english",
+     "says": "1970 owner's manual: Bore 3.36 in. (85.5 mm), Stroke 2.72 in. (69 mm), 96.6 cu in (1584 cc); same in 1977-79 manuals"
+    },
+    {
+     "name": "Wikipedia - Volkswagen air-cooled engine / Volkswagen Beetle",
+     "url": "https://en.wikipedia.org/wiki/Volkswagen_air-cooled_engine",
+     "says": "85.5 mm bore"
+    }
+   ],
+   "note": "85.5 mm. Krause prints 85 x 69 mm; arithmetic settles it: 85.5^2 x 0.7854 x 69 x 4 = 1584.6 cc, while 85 mm gives 1566 cc.",
+   "second_pass": true
+  },
+  "stroke_in": {
+   "value": 2.7165,
+   "sources": [
+    {
+     "name": "Volkswagen factory literature (VW of America owner's manuals 1962-1979, US/Canadian brochures, 1952-57 and 1961-65 VW workshop manuals, VW NHTSA report; archive.org) - counted as one source",
+     "url": "https://archive.org/details/1968-volkswagen-beetle-owners-manual-english",
+     "says": "Stroke 2.72 in. (69 mm)"
+    },
+    {
+     "name": "Standard Catalog of Volkswagen 1946-2004 (Gunnell, Krause)",
+     "url": "https://archive.org/details/standardcatalogo0000gunn_h1o8",
+     "says": "85 x 69 mm"
+    },
+    {
+     "name": "Wikipedia - Volkswagen air-cooled engine / Volkswagen Beetle",
+     "url": "https://en.wikipedia.org/wiki/Volkswagen_air-cooled_engine",
+     "says": "69 mm stroke"
+    }
+   ],
+   "note": "69 mm."
+  },
+  "displacement_ci": {
+   "value": 96.6,
+   "sources": [
+    {
+     "name": "Volkswagen factory literature (VW of America owner's manuals 1962-1979, US/Canadian brochures, 1952-57 and 1961-65 VW workshop manuals, VW NHTSA report; archive.org) - counted as one source",
+     "url": "https://archive.org/details/1968-volkswagen-beetle-owners-manual-english",
+     "says": "96.6 cu in (1584 cc)"
+    },
+    {
+     "name": "Standard Catalog of Volkswagen 1946-2004 (Gunnell, Krause)",
+     "url": "https://archive.org/details/standardcatalogo0000gunn_h1o8",
+     "says": "96.7-cid"
+    },
+    {
+     "name": "Hagerty Valuation Tools - VW Beetle (Wayback copy)",
+     "url": "https://www.hagerty.com/valuation-tools/volkswagen/beetle",
+     "says": "1585cc"
+    },
+    {
+     "name": "Wikipedia - Volkswagen air-cooled engine / Volkswagen Beetle",
+     "url": "https://en.wikipedia.org/wiki/Volkswagen_air-cooled_engine",
+     "says": "1584 cc"
+    }
+   ],
+   "note": "Krause 96.7, Hagerty 1585 cc - rounding."
+  },
+  "displacement_l": {
+   "value": 1.6,
+   "sources": [
+    {
+     "name": "Volkswagen factory literature (VW of America owner's manuals 1962-1979, US/Canadian brochures, 1952-57 and 1961-65 VW workshop manuals, VW NHTSA report; archive.org) - counted as one source",
+     "url": "https://archive.org/details/1968-volkswagen-beetle-owners-manual-english",
+     "says": "1584 cc"
+    },
+    {
+     "name": "Wikipedia - Volkswagen air-cooled engine / Volkswagen Beetle",
+     "url": "https://en.wikipedia.org/wiki/Volkswagen_air-cooled_engine",
+     "says": "1584 cc"
+    },
+    {
+     "name": "Standard Catalog of Volkswagen 1946-2004 (Gunnell, Krause)",
+     "url": "https://archive.org/details/standardcatalogo0000gunn_h1o8",
+     "says": "1600"
+    }
+   ],
+   "note": ""
+  },
+  "compression_ratio": {
+   "value": "7.5:1 (1970-71); 7.3:1 (1972-79)",
+   "sources": [
+    {
+     "name": "Volkswagen factory literature (VW of America owner's manuals 1962-1979, US/Canadian brochures, 1952-57 and 1961-65 VW workshop manuals, VW NHTSA report; archive.org) - counted as one source",
+     "url": "https://archive.org/details/1968-volkswagen-beetle-owners-manual-english",
+     "says": "1970/1971 owner's manuals 7.5:1; 1977-78 owner's manuals 7.3:1; VW NHTSA report (AJ) 7.3:1"
+    },
+    {
+     "name": "Standard Catalog of Volkswagen 1946-2004 (Gunnell, Krause)",
+     "url": "https://archive.org/details/standardcatalogo0000gunn_h1o8",
+     "says": "7.5:1 (1970-71); 7.3:1 (1972-79)"
+    }
+   ],
+   "note": "Two sources.",
+   "second_pass": true
+  },
+  "induction": {
+   "value": "1-bbl Solex downdraft carburetor 1970-74; Bosch electronic port fuel injection 1975-79 (AJ)",
+   "sources": [
+    {
+     "name": "Volkswagen factory literature (VW of America owner's manuals 1962-1979, US/Canadian brochures, 1952-57 and 1961-65 VW workshop manuals, VW NHTSA report; archive.org) - counted as one source",
+     "url": "https://archive.org/details/1968-volkswagen-beetle-owners-manual-english",
+     "says": "1977 owner's manual: Electronically controlled fuel injection; 1970 manual: downdraft carburetor"
+    },
+    {
+     "name": "Standard Catalog of Volkswagen 1946-2004 (Gunnell, Krause)",
+     "url": "https://archive.org/details/standardcatalogo0000gunn_h1o8",
+     "says": "Electronic fuel injection standard in Beetles for 1975"
+    },
+    {
+     "name": "Walter Henry Nelson, Small Wonder, appendix 'How to Tell the Age of a Volkswagen'",
+     "url": "https://archive.org/details/walter-henry-small-wonder-the-amazing-story-of-the-volkswagen-beetle-appendix-ho",
+     "says": "1975: Electronic fuel injection"
+    },
+    {
+     "name": "Consumer Guide Beetle history (HowStuffWorks, archived)",
+     "url": "https://auto.howstuffworks.com/1945-1959-volkswagen-beetle.htm",
+     "says": "1975 VW added fuel injection"
+    },
+    {
+     "name": "Hagerty Valuation Tools - VW Beetle (Wayback copy)",
+     "url": "https://www.hagerty.com/valuation-tools/volkswagen/beetle",
+     "says": "1975: 1585cc/48hp EFI"
+    }
+   ],
+   "note": ""
+  },
+  "years": {
+   "value": "1970-1979 (US Beetle; sedan to 1977, convertible to 1979)",
+   "sources": [
+    {
+     "name": "Walter Henry Nelson, Small Wonder, appendix 'How to Tell the Age of a Volkswagen'",
+     "url": "https://archive.org/details/walter-henry-small-wonder-the-amazing-story-of-the-volkswagen-beetle-appendix-ho",
+     "says": "1970: 1500 to 1600 cc"
+    },
+    {
+     "name": "Consumer Guide Beetle history (HowStuffWorks, archived)",
+     "url": "https://auto.howstuffworks.com/1945-1959-volkswagen-beetle.htm",
+     "says": "1970 1600 cc"
+    },
+    {
+     "name": "Standard Catalog of Volkswagen 1946-2004 (Gunnell, Krause)",
+     "url": "https://archive.org/details/standardcatalogo0000gunn_h1o8",
+     "says": "1970-79 1584 cc"
+    },
+    {
+     "name": "Volkswagen factory literature (VW of America owner's manuals 1962-1979, US/Canadian brochures, 1952-57 and 1961-65 VW workshop manuals, VW NHTSA report; archive.org) - counted as one source",
+     "url": "https://archive.org/details/1968-volkswagen-beetle-owners-manual-english",
+     "says": "1979 convertible owner's manual 1584 cc"
+    }
+   ],
+   "note": "Dual-port heads from 1971: Wikipedia (1302S twin-port) and the earlier vehicle-page pass; not separately verified here."
+  }
+ },
+ "variants": [
+  {
+   "year": 1970,
+   "hp": 57,
+   "hp_basis": "SAE gross",
+   "rpm": 4400,
+   "compression_ratio": 7.5,
+   "code": "1600 single-port",
+   "sources": [
+    {
+     "name": "Volkswagen factory literature (VW of America owner's manuals 1962-1979, US/Canadian brochures, 1952-57 and 1961-65 VW workshop manuals, VW NHTSA report; archive.org) - counted as one source",
+     "url": "https://archive.org/details/1968-volkswagen-beetle-owners-manual-english",
+     "says": "1970 owner's manual: SAE 57 bhp at 4400 rpm, 7.5:1"
+    },
+    {
+     "name": "Standard Catalog of Volkswagen 1946-2004 (Gunnell, Krause)",
+     "url": "https://archive.org/details/standardcatalogo0000gunn_h1o8",
+     "says": "57 at 4400"
+    },
+    {
+     "name": "Walter Henry Nelson, Small Wonder, appendix 'How to Tell the Age of a Volkswagen'",
+     "url": "https://archive.org/details/walter-henry-small-wonder-the-amazing-story-of-the-volkswagen-beetle-appendix-ho",
+     "says": "from 53 to 57"
+    },
+    {
+     "name": "Consumer Guide Beetle history (HowStuffWorks, archived)",
+     "url": "https://auto.howstuffworks.com/1945-1959-volkswagen-beetle.htm",
+     "says": "horsepower increased to 57"
+    },
+    {
+     "name": "Hagerty Valuation Tools - VW Beetle (Wayback copy)",
+     "url": "https://www.hagerty.com/valuation-tools/volkswagen/beetle",
+     "says": "1585cc/57hp"
+    }
+   ]
+  },
+  {
+   "year": 1971,
+   "hp": 60,
+   "hp_basis": "SAE gross",
+   "rpm": 4400,
+   "compression_ratio": 7.5,
+   "code": "1600 dual-port (50 PS DIN)",
+   "sources": [
+    {
+     "name": "Volkswagen factory literature (VW of America owner's manuals 1962-1979, US/Canadian brochures, 1952-57 and 1961-65 VW workshop manuals, VW NHTSA report; archive.org) - counted as one source",
+     "url": "https://archive.org/details/1968-volkswagen-beetle-owners-manual-english",
+     "says": "1971 owner's manual: 60 bhp at 4400 rpm, 7.5:1"
+    },
+    {
+     "name": "Standard Catalog of Volkswagen 1946-2004 (Gunnell, Krause)",
+     "url": "https://archive.org/details/standardcatalogo0000gunn_h1o8",
+     "says": "boost to 60 hp"
+    },
+    {
+     "name": "Walter Henry Nelson, Small Wonder, appendix 'How to Tell the Age of a Volkswagen'",
+     "url": "https://archive.org/details/walter-henry-small-wonder-the-amazing-story-of-the-volkswagen-beetle-appendix-ho",
+     "says": "from 57 to 60"
+    },
+    {
+     "name": "Consumer Guide Beetle history (HowStuffWorks, archived)",
+     "url": "https://auto.howstuffworks.com/1945-1959-volkswagen-beetle.htm",
+     "says": "bumped to 60"
+    },
+    {
+     "name": "Hagerty Valuation Tools - VW Beetle (Wayback copy)",
+     "url": "https://www.hagerty.com/valuation-tools/volkswagen/beetle",
+     "says": "1585cc/60hp"
+    }
+   ]
+  },
+  {
+   "year": 1972,
+   "hp": 60,
+   "hp_basis": "SAE gross",
+   "compression_ratio": 7.3,
+   "code": "1600 dual-port",
+   "second_pass": true,
+   "sources": [
+    {
+     "name": "Standard Catalog of Volkswagen 1946-2004 (Gunnell, Krause)",
+     "url": "https://archive.org/details/standardcatalogo0000gunn_h1o8",
+     "says": "60 at 4400 rpm, 7.3:1 (1972)"
+    },
+    {
+     "name": "Hagerty Valuation Tools - VW Beetle (Wayback copy)",
+     "url": "https://www.hagerty.com/valuation-tools/volkswagen/beetle",
+     "says": "1585cc/60hp"
+    }
+   ],
+   "note": "No 1972 US factory rating found; Consumer Guide blog's 50 hp is the DIN figure."
+  },
+  {
+   "year": "1973-1974",
+   "hp": 46,
+   "hp_basis": "SAE net",
+   "rpm": 4000,
+   "compression_ratio": 7.3,
+   "code": "1600 dual-port",
+   "sources": [
+    {
+     "name": "Consumer Guide Beetle history (HowStuffWorks, archived)",
+     "url": "https://auto.howstuffworks.com/1945-1959-volkswagen-beetle.htm",
+     "says": "46 horsepower (SAE net)"
+    },
+    {
+     "name": "Standard Catalog of Volkswagen 1946-2004 (Gunnell, Krause)",
+     "url": "https://archive.org/details/standardcatalogo0000gunn_h1o8",
+     "says": "46 (SAE net) at 4000 rpm"
+    },
+    {
+     "name": "Hagerty Valuation Tools - VW Beetle (Wayback copy)",
+     "url": "https://www.hagerty.com/valuation-tools/volkswagen/beetle",
+     "says": "1585cc/46hp"
+    },
+    {
+     "name": "Walter Henry Nelson, Small Wonder, appendix 'How to Tell the Age of a Volkswagen'",
+     "url": "https://archive.org/details/walter-henry-small-wonder-the-amazing-story-of-the-volkswagen-beetle-appendix-ho",
+     "says": "1975: 48 hp, up from 46 (SAE net)"
+    }
+   ]
+  },
+  {
+   "year": "1975-1979",
+   "hp": 48,
+   "hp_basis": "SAE net",
+   "rpm": 4200,
+   "compression_ratio": 7.3,
+   "code": "AJ (fuel injected)",
+   "induction": "Bosch electronic fuel injection",
+   "sources": [
+    {
+     "name": "Volkswagen factory literature (VW of America owner's manuals 1962-1979, US/Canadian brochures, 1952-57 and 1961-65 VW workshop manuals, VW NHTSA report; archive.org) - counted as one source",
+     "url": "https://archive.org/details/1968-volkswagen-beetle-owners-manual-english",
+     "says": "1976 brochure, 1977-79 owner's manuals: SAE net 48 hp at 4200 rpm; NHTSA report engine code AJ"
+    },
+    {
+     "name": "Standard Catalog of Volkswagen 1946-2004 (Gunnell, Krause)",
+     "url": "https://archive.org/details/standardcatalogo0000gunn_h1o8",
+     "says": "48 at 4200 rpm"
+    },
+    {
+     "name": "Walter Henry Nelson, Small Wonder, appendix 'How to Tell the Age of a Volkswagen'",
+     "url": "https://archive.org/details/walter-henry-small-wonder-the-amazing-story-of-the-volkswagen-beetle-appendix-ho",
+     "says": "48 hp, up from 46 (SAE net)"
+    },
+    {
+     "name": "Hagerty Valuation Tools - VW Beetle (Wayback copy)",
+     "url": "https://www.hagerty.com/valuation-tools/volkswagen/beetle",
+     "says": "1585cc/48hp EFI"
+    }
+   ],
+   "note": "Engine code AJ stated by VW only. California cars had a catalytic converter, same rating."
+  }
+ ],
+ "unverified": {
+  "firing_order": "1-4-3-2 per VW literature only (1961-65 workshop manual, 1968/1977/1978 owner's manuals); no independent second source found.",
+  "engine_codes": "AJ (1975-79) from VW's NHTSA report only; earlier US codes not researched."
+ }
+}

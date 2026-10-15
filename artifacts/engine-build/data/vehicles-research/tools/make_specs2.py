@@ -211,7 +211,7 @@ S["duster"] = dict(make="Plymouth", model="Duster", makeSlug="plymouth", slug="d
   notes={"1975|360|190": "California version.", "1976|360|220": "Not sold in California.",
          "1971|198|125": "105 hp net.", "1971|225|145": "110 hp net.", "1971|318|230": "155 hp net.", "1971|340|275": "235 hp net."})
 
-S["fairlane"] = dict(family_overrides=[{"years": [1962, 1963], "cid": [170], "url": "/engines/ford/ford-170ci"}], make="Ford", model="Fairlane", makeSlug="ford", slug="fairlane",
+S["fairlane"] = dict(family_overrides=[{"years": [1962, 1963], "cid": [170], "url": "/engines/ford/ford-170ci"}, {"years": [1962, 1963], "cid": [221], "url": "/engines/mercury/windsor"}], make="Ford", model="Fairlane", makeSlug="ford", slug="fairlane",
   title="Ford Fairlane Engines by Year (1955–1970)",
   description="Every factory engine in the Ford Fairlane by year, 1955–1970: Y-block V8s incl. the supercharged 312, the FE 352 and 390, the 427 and the 428 Cobra Jet.",
   intro=["Ford used the Fairlane name on its top full-size series from 1955 to 1961 and on its mid-size car from 1962 to 1970, after which the Torino took over.", PICK],

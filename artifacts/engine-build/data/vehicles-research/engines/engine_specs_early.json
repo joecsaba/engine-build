@@ -1,0 +1,2943 @@
+{
+ "engines": [
+  {
+   "id": "ford-model-a-four",
+   "name": "Ford Model A / Model B four (200.5 ci L-head inline-four)",
+   "fields": {
+    "bore_in": {
+     "value": 3.875,
+     "sources": [
+      {
+       "name": "Ford 1932 Four-Cylinder Ford foldout, p.4 'Chassis of the 4-Cylinder Ford'",
+       "url": "https://oldcarbrochures.org/United%20States/Ford/1932-Ford/1932-Ford-Four-Foldout/index.html",
+       "says": "ENGINE-4-cylinder. Bore, 3 7/8 inches; stroke, 4 1/4 inches. Piston displacement, 200.5 cubic inches"
+      },
+      {
+       "name": "Model A Ford Club of America - A Short History of the Model-A Ford (PDF)",
+       "url": "https://archive.mafca.com/downloads/Youth/HistoryA.pdf",
+       "says": "3-7/8\" X 4-1/4\" bore and stroke ... 200.5 cubic inches"
+      },
+      {
+       "name": "Model A Ford Club of Great Britain - Specifications",
+       "url": "https://www.mafcgb.org.uk/engine-chassis-numbers-technical/specifications",
+       "says": "Bore: 3.876\"; Stroke: 4.250\"; 200.5 cu in (3283cc)"
+      }
+     ],
+     "note": "3-7/8 in per Ford and MAFCA; MAFCGB, Wikipedia and Mac's print 3.876 (same nominal bore, 98.4 mm)."
+    },
+    "stroke_in": {
+     "value": 4.25,
+     "sources": [
+      {
+       "name": "Ford 1932 Four-Cylinder Ford foldout, p.4 'Chassis of the 4-Cylinder Ford'",
+       "url": "https://oldcarbrochures.org/United%20States/Ford/1932-Ford/1932-Ford-Four-Foldout/index.html",
+       "says": "stroke, 4 1/4 inches"
+      },
+      {
+       "name": "Model A Ford Club of America - A Short History of the Model-A Ford (PDF)",
+       "url": "https://archive.mafca.com/downloads/Youth/HistoryA.pdf",
+       "says": "4-1/4\" stroke"
+      },
+      {
+       "name": "Model A Ford Club of Great Britain - Specifications",
+       "url": "https://www.mafcgb.org.uk/engine-chassis-numbers-technical/specifications",
+       "says": "Stroke: 4.250\""
+      }
+     ],
+     "note": "Wikipedia (citing Hemmings) and Mac's Motor City Garage give 4.125 in; arithmetic settles it: 3.875 x 3.875 x 4.25 x 0.7854 x 4 = 200.5 ci (matches every published displacement); 4.125 would give 194.6 ci. 4.25 in = 108.0 mm."
+    },
+    "displacement_ci": {
+     "value": 200.5,
+     "sources": [
+      {
+       "name": "Ford 1932 Four-Cylinder Ford foldout, p.4 'Chassis of the 4-Cylinder Ford'",
+       "url": "https://oldcarbrochures.org/United%20States/Ford/1932-Ford/1932-Ford-Four-Foldout/index.html",
+       "says": "Piston displacement, 200.5 cubic inches"
+      },
+      {
+       "name": "Model A Ford Club of America - A Short History of the Model-A Ford (PDF)",
+       "url": "https://archive.mafca.com/downloads/Youth/HistoryA.pdf",
+       "says": "200.5 cubic inches"
+      },
+      {
+       "name": "Mac's Motor City Garage - Power to the People: The Ford Model A Engine, 1928-31",
+       "url": "https://www.macsmotorcitygarage.com/power-to-the-people-the-ford-model-a-engine-1928-31",
+       "says": "200.5 cubic inches"
+      },
+      {
+       "name": "Hagerty Valuation Tools (Wayback copy)",
+       "url": "https://www.hagerty.com/valuation-tools/ford/model_a/1928",
+       "says": "4-cyl. 200.5cid/40hp 1bbl"
+      }
+     ],
+     "note": "Often rounded to 201."
+    },
+    "displacement_l": {
+     "value": 3.3,
+     "sources": [
+      {
+       "name": "Model A Ford Club of Great Britain - Specifications",
+       "url": "https://www.mafcgb.org.uk/engine-chassis-numbers-technical/specifications",
+       "says": "200.5 Cu. In. (3283cc)"
+      },
+      {
+       "name": "Wikipedia - Ford Model A engine / 1932 Ford",
+       "url": "https://en.wikipedia.org/wiki/Ford_Model_A_engine",
+       "says": "200.5 cu in (3.3 L)"
+      },
+      {
+       "name": "Mac's Motor City Garage - Power to the People: The Ford Model A Engine, 1928-31",
+       "url": "https://www.macsmotorcitygarage.com/power-to-the-people-the-ford-model-a-engine-1928-31",
+       "says": "200.5 cu in"
+      }
+     ],
+     "note": "200.5 ci = 3.285 L by conversion; MAFCGB prints 3283 cc."
+    },
+    "num_cylinders": {
+     "value": 4,
+     "sources": [
+      {
+       "name": "Ford 1932 Four-Cylinder Ford foldout, p.4 'Chassis of the 4-Cylinder Ford'",
+       "url": "https://oldcarbrochures.org/United%20States/Ford/1932-Ford/1932-Ford-Four-Foldout/index.html",
+       "says": "4-cylinder"
+      },
+      {
+       "name": "Model A Ford Club of America - A Short History of the Model-A Ford (PDF)",
+       "url": "https://archive.mafca.com/downloads/Youth/HistoryA.pdf",
+       "says": "4-cylinder"
+      },
+      {
+       "name": "Wikipedia - Ford Model A engine / 1932 Ford",
+       "url": "https://en.wikipedia.org/wiki/Ford_Model_A_engine",
+       "says": "Inline-4"
+      }
+     ],
+     "note": ""
+    },
+    "configuration": {
+     "value": "inline-four (L-head)",
+     "sources": [
+      {
+       "name": "Ford 1932 Four-Cylinder Ford foldout, p.4 'Chassis of the 4-Cylinder Ford'",
+       "url": "https://oldcarbrochures.org/United%20States/Ford/1932-Ford/1932-Ford-Four-Foldout/index.html",
+       "says": "4-cylinder"
+      },
+      {
+       "name": "Wikipedia - Ford Model A engine / 1932 Ford",
+       "url": "https://en.wikipedia.org/wiki/Ford_Model_A_engine",
+       "says": "Inline-4, L-head"
+      },
+      {
+       "name": "Mac's Motor City Garage - Power to the People: The Ford Model A Engine, 1928-31",
+       "url": "https://www.macsmotorcitygarage.com/power-to-the-people-the-ford-model-a-engine-1928-31",
+       "says": "L-head valvetrain, cast-iron block"
+      }
+     ],
+     "note": ""
+    },
+    "compression_ratio": {
+     "value": "4.22:1 (1929-31 standard head)",
+     "sources": [
+      {
+       "name": "Model A Ford Club of Great Britain - Specifications",
+       "url": "https://www.mafcgb.org.uk/engine-chassis-numbers-technical/specifications",
+       "says": "1928: 4.3:1; 1929/31: 4.22:1; Compression Ratio 4.22:1"
+      },
+      {
+       "name": "Wikipedia - Ford Model A engine / 1932 Ford",
+       "url": "https://en.wikipedia.org/wiki/Ford_Model_A_engine",
+       "says": "compression 4.22:1"
+      },
+      {
+       "name": "Mac's Motor City Garage - Power to the People: The Ford Model A Engine, 1928-31",
+       "url": "https://www.macsmotorcitygarage.com/power-to-the-people-the-ford-model-a-engine-1928-31",
+       "says": "a conservative 4.22:1"
+      }
+     ],
+     "note": "fordgarage.com gives 4.2:1 for the A-6050-A head and 5.2:1 for the 1931 'Police' high-compression head. MAFCGB alone gives 4.3:1 for 1928 (unverified). Model B 4.6:1 is in 'unverified'."
+    },
+    "firing_order": {
+     "value": "1-2-4-3",
+     "sources": [
+      {
+       "name": "Model A Ford Club of Great Britain - Specifications",
+       "url": "https://www.mafcgb.org.uk/engine-chassis-numbers-technical/specifications",
+       "says": "Firing order 1-2-4-3"
+      },
+      {
+       "name": "Wikipedia - Ford Model A engine / 1932 Ford",
+       "url": "https://en.wikipedia.org/wiki/Ford_Model_A_engine",
+       "says": "Cylinder firing order is 1-2-4-3 (cites Model A Garage)"
+      }
+     ],
+     "note": "Only two independent sources found; they agree.",
+     "second_pass": true
+    },
+    "valvetrain": {
+     "value": "L-head (side valve, flathead), 2 valves per cylinder, block-mounted camshaft",
+     "sources": [
+      {
+       "name": "Wikipedia - Ford Model A engine / 1932 Ford",
+       "url": "https://en.wikipedia.org/wiki/Ford_Model_A_engine",
+       "says": "Side valve (flathead)"
+      },
+      {
+       "name": "Mac's Motor City Garage - Power to the People: The Ford Model A Engine, 1928-31",
+       "url": "https://www.macsmotorcitygarage.com/power-to-the-people-the-ford-model-a-engine-1928-31",
+       "says": "L-head valvetrain"
+      },
+      {
+       "name": "Model A Ford Club of America - A Short History of the Model-A Ford (PDF)",
+       "url": "https://archive.mafca.com/downloads/Youth/HistoryA.pdf",
+       "says": "Flat Head 4-cylinder"
+      }
+     ],
+     "note": ""
+    },
+    "block_material": {
+     "value": "cast iron",
+     "sources": [
+      {
+       "name": "Wikipedia - Ford Model A engine / 1932 Ford",
+       "url": "https://en.wikipedia.org/wiki/Ford_Model_A_engine",
+       "says": "Cast iron, monobloc"
+      },
+      {
+       "name": "Mac's Motor City Garage - Power to the People: The Ford Model A Engine, 1928-31",
+       "url": "https://www.macsmotorcitygarage.com/power-to-the-people-the-ford-model-a-engine-1928-31",
+       "says": "cast-iron block"
+      },
+      {
+       "name": "Model A Ford Club of America - A Short History of the Model-A Ford (PDF)",
+       "url": "https://archive.mafca.com/downloads/Youth/HistoryA.pdf",
+       "says": "Flat Head 4-cylinder cast iron type"
+      }
+     ],
+     "note": ""
+    },
+    "head_material": {
+     "value": "cast iron (detachable)",
+     "sources": [
+      {
+       "name": "Wikipedia - Ford Model A engine / 1932 Ford",
+       "url": "https://en.wikipedia.org/wiki/Ford_Model_A_engine",
+       "says": "Cast iron, detachable"
+      },
+      {
+       "name": "fordgarage.com - Head compression ratio table",
+       "url": "https://www.fordgarage.com/pages/headcompressionratio.htm",
+       "says": "A cast iron head is recommended; listed heads are cast iron"
+      }
+     ],
+     "note": "Two sources; aluminum heads were aftermarket.",
+     "second_pass": true
+    },
+    "induction": {
+     "value": "1-bbl updraft carburetor (Zenith on most; Holley and Tillotson also used), gravity feed",
+     "sources": [
+      {
+       "name": "Wikipedia - Ford Model A engine / 1932 Ford",
+       "url": "https://en.wikipedia.org/wiki/Ford_Model_A_engine",
+       "says": "Zenith one-barrel, up-draft, gravity-fed"
+      },
+      {
+       "name": "Mac's Motor City Garage - Power to the People: The Ford Model A Engine, 1928-31",
+       "url": "https://www.macsmotorcitygarage.com/power-to-the-people-the-ford-model-a-engine-1928-31",
+       "says": "single-throat updraft unit ... Zenith primary, Holley and Tillotson also"
+      },
+      {
+       "name": "Model A Ford Club of America - A Short History of the Model-A Ford (PDF)",
+       "url": "https://archive.mafca.com/downloads/Youth/HistoryA.pdf",
+       "says": "Zenith one barrel carburetor"
+      },
+      {
+       "name": "Hagerty Valuation Tools (Wayback copy)",
+       "url": "https://www.hagerty.com/valuation-tools/ford/model_a/1928",
+       "says": "1bbl"
+      }
+     ],
+     "note": ""
+    },
+    "fuel_type": {
+     "value": "gasoline",
+     "sources": [
+      {
+       "name": "Wikipedia - Ford Model A engine / 1932 Ford",
+       "url": "https://en.wikipedia.org/wiki/Ford_Model_A_engine",
+       "says": "gasoline"
+      },
+      {
+       "name": "Model A Ford Club of America - A Short History of the Model-A Ford (PDF)",
+       "url": "https://archive.mafca.com/downloads/Youth/HistoryA.pdf",
+       "says": "gas mileage 20-30 mpg"
+      },
+      {
+       "name": "Mac's Motor City Garage - Power to the People: The Ford Model A Engine, 1928-31",
+       "url": "https://www.macsmotorcitygarage.com/power-to-the-people-the-ford-model-a-engine-1928-31",
+       "says": "gasoline"
+      }
+     ],
+     "note": ""
+    },
+    "years": {
+     "value": "1928-1934 cars: Model A 1928-31 (production Oct 1927-Mar 1932), Model B 1932, Model 40 four 1933-34; Model AA truck 1928-32 used the same engine (context)",
+     "sources": [
+      {
+       "name": "Mac's Motor City Garage - Power to the People: The Ford Model A Engine, 1928-31",
+       "url": "https://www.macsmotorcitygarage.com/power-to-the-people-the-ford-model-a-engine-1928-31",
+       "says": "1928-31 model years"
+      },
+      {
+       "name": "Wikipedia - Ford Model A engine / 1932 Ford",
+       "url": "https://en.wikipedia.org/wiki/Ford_Model_A_engine",
+       "says": "Model A production ended March 1932; Model AA trucks typically used the same engine"
+      },
+      {
+       "name": "Mac's Motor City Garage - Henry's Other '32 Ford: The Four-Cylinder Model B",
+       "url": "https://macsmotorcitygarage.com/henrys-other-32-ford-the-four-cylinder-model-b/",
+       "says": "four continued in '33 and '34; dropped for 1935"
+      },
+      {
+       "name": "Hagerty Valuation Tools (Wayback copy)",
+       "url": "https://www.hagerty.com/valuation-tools/ford/model_b/1932",
+       "says": "1932 Model B 4-cyl. 200.5cid/50hp; model_40/1933-34 4-cyl. 200.5cid/50hp"
+      }
+     ],
+     "note": ""
+    }
+   },
+   "variants": [
+    {
+     "year": "1928-1931",
+     "hp": 40,
+     "hp_basis": "gross (brake)",
+     "rpm": 2200,
+     "compression_ratio": 4.22,
+     "code": "Model A",
+     "induction": "1-bbl updraft",
+     "sources": [
+      {
+       "name": "The Henry Ford (museum) - Exposed Engine: 1930 Ford Model A",
+       "url": "https://www.thehenryford.org/explore/blog/exposed-engine-1930-ford-model-a",
+       "says": "1930 Model A: inline 4, L-head, 201 ci, 40 hp"
+      },
+      {
+       "name": "Model A Ford Club of America - A Short History of the Model-A Ford (PDF)",
+       "url": "https://archive.mafca.com/downloads/Youth/HistoryA.pdf",
+       "says": "rated 40 hp at 2200 rpm"
+      },
+      {
+       "name": "Mac's Motor City Garage - Power to the People: The Ford Model A Engine, 1928-31",
+       "url": "https://www.macsmotorcitygarage.com/power-to-the-people-the-ford-model-a-engine-1928-31",
+       "says": "40 hp at 2,200 rpm"
+      },
+      {
+       "name": "Hagerty Valuation Tools (Wayback copy)",
+       "url": "https://www.hagerty.com/valuation-tools/ford/model_a/1928-1931",
+       "says": "4-cyl. 200.5cid/40hp 1bbl"
+      },
+      {
+       "name": "Wikipedia - Ford Model A engine / 1932 Ford",
+       "url": "https://en.wikipedia.org/wiki/Ford_Model_A_engine",
+       "says": "40 hp brake"
+      }
+     ]
+    },
+    {
+     "year": 1932,
+     "hp": 50,
+     "hp_basis": "gross (brake)",
+     "rpm": 2800,
+     "code": "Model B",
+     "induction": "1-bbl updraft",
+     "sources": [
+      {
+       "name": "Ford 1932 Four-Cylinder Ford foldout, p.4 'Chassis of the 4-Cylinder Ford'",
+       "url": "https://oldcarbrochures.org/United%20States/Ford/1932-Ford/1932-Ford-Four-Foldout/index.html",
+       "says": "Actual brake horsepower, 50 at 2800 r.p.m.; S.A.E. rating 24.03"
+      },
+      {
+       "name": "The Henry Ford (museum) - 1932 Ford Model B",
+       "url": "https://www.thehenryford.org/collections/explore/artifact/199605",
+       "says": "201-cubic-inch four rated at 50 horsepower"
+      },
+      {
+       "name": "Hagerty Valuation Tools (Wayback copy)",
+       "url": "https://www.hagerty.com/valuation-tools/ford/model_b/1932",
+       "says": "4-cyl. 200.5cid/50hp 1bbl"
+      },
+      {
+       "name": "Mac's Motor City Garage - Henry's Other '32 Ford: The Four-Cylinder Model B",
+       "url": "https://macsmotorcitygarage.com/henrys-other-32-ford-the-four-cylinder-model-b/",
+       "says": "Model B four rated 50 hp at 2,800 rpm"
+      }
+     ],
+     "note": "Counterweighted crankshaft from Nov 1932 (fordgarage)."
+    },
+    {
+     "year": "1933-1934",
+     "hp": 50,
+     "hp_basis": "gross (brake)",
+     "code": "Model 40 four (collectors' 'Model C')",
+     "second_pass": true,
+     "sources": [
+      {
+       "name": "Hagerty Valuation Tools (Wayback copy)",
+       "url": "https://www.hagerty.com/valuation-tools/ford/model_40/1933",
+       "says": "1933 and 1934 Model 40: 4-cyl. 200.5cid/50hp 1bbl"
+      },
+      {
+       "name": "conceptcarz - Ford Model 40 (Dan Vaughan)",
+       "url": "https://www.conceptcarz.com/w10892/ford-model-40.aspx",
+       "says": "1934 four-cylinder delivered 50 horsepower"
+      }
+     ],
+     "note": "Wikipedia says the four 'continued unchanged'; no 1933-34 Ford document rating the four was found (US brochures cover the V8 only). 'Model C' is not a Ford name."
+    }
+   ],
+   "unverified": {
+    "compression_ratio_model_b": "4.6:1 for the 1932-34 B-6050 ('C') head per fordgarage.com only.",
+    "compression_ratio_1928": "4.3:1 per MAFCGB only (fordgarage 4.2:1 for the A-6050-A head).",
+    "rod_length_in": "Not found in an acceptable source."
+   },
+   "unverified_variants": []
+  },
+  {
+   "id": "ford-flathead-v8-221",
+   "name": "Ford flathead V8 221 ci",
+   "fields": {
+    "bore_in": {
+     "value": 3.0625,
+     "sources": [
+      {
+       "name": "Ford Motor Company factory literature (1932-1953 brochures, 1933 V-8 salesman booklet, 1953 owner's manual, 1939 Mercury foldout; oldcarbrochures.org scans) - counted as one source",
+       "url": "https://oldcarbrochures.org/United%20States/Ford/1933_Ford/1933-Ford-V8-Salesman-Booklet/index.html",
+       "says": "1933 V-8 salesman booklet specs: Bore and stroke 3-1/16 in. x 3-3/4 in.; 1935 full-line and 1936 brochures: Bore and stroke 3 1/16 x 3 3/4, 221 cubic inches"
+      },
+      {
+       "name": "Wikipedia - Ford flathead V8 engine (cites Street Rodder 1/85) / 1932 Ford",
+       "url": "https://en.wikipedia.org/wiki/Ford_flathead_V8_engine",
+       "says": "3.0625 by 3.75 in bore and stroke"
+      },
+      {
+       "name": "EngineLabs - Historic Engines: The Fabulous Ford Flathead",
+       "url": "https://www.enginelabs.com/engine-tech/engine/historic-engines-the-fabulous-ford-flathead/",
+       "says": "The piston bore was 3.0625 inches, and the crank gave a stroke of 3.750 inches"
+      }
+     ],
+     "note": "3-1/16 in = 77.8 mm."
+    },
+    "stroke_in": {
+     "value": 3.75,
+     "sources": [
+      {
+       "name": "Ford Motor Company factory literature (1932-1953 brochures, 1933 V-8 salesman booklet, 1953 owner's manual, 1939 Mercury foldout; oldcarbrochures.org scans) - counted as one source",
+       "url": "https://oldcarbrochures.org/United%20States/Ford/1933_Ford/1933-Ford-V8-Salesman-Booklet/index.html",
+       "says": "3-1/16 in. x 3-3/4 in."
+      },
+      {
+       "name": "Wikipedia - Ford flathead V8 engine (cites Street Rodder 1/85) / 1932 Ford",
+       "url": "https://en.wikipedia.org/wiki/Ford_flathead_V8_engine",
+       "says": "3.75 in stroke"
+      },
+      {
+       "name": "EngineLabs - Historic Engines: The Fabulous Ford Flathead",
+       "url": "https://www.enginelabs.com/engine-tech/engine/historic-engines-the-fabulous-ford-flathead/",
+       "says": "stroke of 3.750 inches"
+      }
+     ],
+     "note": "95.25 mm."
+    },
+    "displacement_ci": {
+     "value": 221,
+     "sources": [
+      {
+       "name": "Ford Motor Company factory literature (1932-1953 brochures, 1933 V-8 salesman booklet, 1953 owner's manual, 1939 Mercury foldout; oldcarbrochures.org scans) - counted as one source",
+       "url": "https://oldcarbrochures.org/United%20States/Ford/1933_Ford/1933-Ford-V8-Salesman-Booklet/index.html",
+       "says": "Piston displacement 221 cu. in. (1932 full-line, 1933 booklet, 1935, 1936)"
+      },
+      {
+       "name": "Wikipedia - Ford flathead V8 engine (cites Street Rodder 1/85) / 1932 Ford",
+       "url": "https://en.wikipedia.org/wiki/Ford_flathead_V8_engine",
+       "says": "221 cu in"
+      },
+      {
+       "name": "EngineLabs - Historic Engines: The Fabulous Ford Flathead",
+       "url": "https://www.enginelabs.com/engine-tech/engine/historic-engines-the-fabulous-ford-flathead/",
+       "says": "221 cubic inches"
+      },
+      {
+       "name": "Hagerty Valuation Tools (Wayback copy)",
+       "url": "https://www.hagerty.com/valuation-tools/ford/model_18/1932",
+       "says": "8-cyl. 221cid"
+      }
+     ],
+     "note": "Arithmetic: 3.0625^2 x 3.75 x 0.7854 x 8 = 221.0 ci."
+    },
+    "displacement_l": {
+     "value": 3.6,
+     "sources": [
+      {
+       "name": "Wikipedia - Ford flathead V8 engine (cites Street Rodder 1/85) / 1932 Ford",
+       "url": "https://en.wikipedia.org/wiki/Ford_flathead_V8_engine",
+       "says": "221 cu in (3.6 L)"
+      },
+      {
+       "name": "Hagerty Valuation Tools (Wayback copy)",
+       "url": "https://www.hagerty.com/valuation-tools/ford/model_18/1932",
+       "says": "221cid"
+      },
+      {
+       "name": "Ford Motor Company factory literature (1932-1953 brochures, 1933 V-8 salesman booklet, 1953 owner's manual, 1939 Mercury foldout; oldcarbrochures.org scans) - counted as one source",
+       "url": "https://oldcarbrochures.org/United%20States/Ford/1933_Ford/1933-Ford-V8-Salesman-Booklet/index.html",
+       "says": "221 cu in"
+      }
+     ],
+     "note": "221 ci = 3.62 L by conversion."
+    },
+    "num_cylinders": {
+     "value": 8,
+     "sources": [
+      {
+       "name": "Ford Motor Company factory literature (1932-1953 brochures, 1933 V-8 salesman booklet, 1953 owner's manual, 1939 Mercury foldout; oldcarbrochures.org scans) - counted as one source",
+       "url": "https://oldcarbrochures.org/United%20States/Ford/1933_Ford/1933-Ford-V8-Salesman-Booklet/index.html",
+       "says": "8-cylinder, V-type, 90 degree"
+      },
+      {
+       "name": "Wikipedia - Ford flathead V8 engine (cites Street Rodder 1/85) / 1932 Ford",
+       "url": "https://en.wikipedia.org/wiki/Ford_flathead_V8_engine",
+       "says": "V8"
+      },
+      {
+       "name": "EngineLabs - Historic Engines: The Fabulous Ford Flathead",
+       "url": "https://www.enginelabs.com/engine-tech/engine/historic-engines-the-fabulous-ford-flathead/",
+       "says": "V8"
+      }
+     ],
+     "note": ""
+    },
+    "configuration": {
+     "value": "90-degree V8, L-head",
+     "sources": [
+      {
+       "name": "Ford Motor Company factory literature (1932-1953 brochures, 1933 V-8 salesman booklet, 1953 owner's manual, 1939 Mercury foldout; oldcarbrochures.org scans) - counted as one source",
+       "url": "https://oldcarbrochures.org/United%20States/Ford/1933_Ford/1933-Ford-V8-Salesman-Booklet/index.html",
+       "says": "ENGINE-8-cylinder, V-type, 90 degree (1932 V-8 Features foldout)"
+      },
+      {
+       "name": "Wikipedia - Ford flathead V8 engine (cites Street Rodder 1/85) / 1932 Ford",
+       "url": "https://en.wikipedia.org/wiki/Ford_flathead_V8_engine",
+       "says": "flathead V8"
+      },
+      {
+       "name": "EngineLabs - Historic Engines: The Fabulous Ford Flathead",
+       "url": "https://www.enginelabs.com/engine-tech/engine/historic-engines-the-fabulous-ford-flathead/",
+       "says": "L-head (flathead) V8"
+      }
+     ],
+     "note": ""
+    },
+    "valvetrain": {
+     "value": "L-head (side valve, flathead), 2 valves per cylinder, single block-mounted gear-driven camshaft",
+     "sources": [
+      {
+       "name": "Wikipedia - Ford flathead V8 engine (cites Street Rodder 1/85) / 1932 Ford",
+       "url": "https://en.wikipedia.org/wiki/Ford_flathead_V8_engine",
+       "says": "single camshaft in the block above the crankshaft, spur-gear driven"
+      },
+      {
+       "name": "EngineLabs - Historic Engines: The Fabulous Ford Flathead",
+       "url": "https://www.enginelabs.com/engine-tech/engine/historic-engines-the-fabulous-ford-flathead/",
+       "says": "L-head design, valves beside the pistons; gear-driven cam in the block works solid lifters"
+      }
+     ],
+     "note": "Two independent sources (the Ford pages read describe the valves but do not use the term L-head).",
+     "second_pass": true
+    },
+    "head_material": {
+     "value": "aluminum (standard from 1933)",
+     "sources": [
+      {
+       "name": "Ford Motor Company factory literature (1932-1953 brochures, 1933 V-8 salesman booklet, 1953 owner's manual, 1939 Mercury foldout; oldcarbrochures.org scans) - counted as one source",
+       "url": "https://oldcarbrochures.org/United%20States/Ford/1933_Ford/1933-Ford-V8-Salesman-Booklet/index.html",
+       "says": "1933 booklet: aluminum cylinder heads, higher compression; 1934 foldout 'ALUMINUM CYLINDER HEADS'; 1935/1936 brochures: Aluminum cylinder heads"
+      },
+      {
+       "name": "EngineLabs - Historic Engines: The Fabulous Ford Flathead",
+       "url": "https://www.enginelabs.com/engine-tech/engine/historic-engines-the-fabulous-ford-flathead/",
+       "says": "1933 change to aluminum heads ... 1937 offered a choice of aluminum or cast iron"
+      },
+      {
+       "name": "Wikipedia - Ford flathead V8 engine (cites Street Rodder 1/85) / 1932 Ford",
+       "url": "https://en.wikipedia.org/wiki/Ford_flathead_V8_engine",
+       "says": "1937-38 V8-78 offered with standard 6.2:1 aluminum or 7.5:1 iron heads"
+      }
+     ],
+     "note": "1932 head material left unverified (see 'unverified')."
+    },
+    "induction": {
+     "value": "1932-33: single downdraft carburetor; 1934-38: dual downdraft (2-bbl Stromberg)",
+     "sources": [
+      {
+       "name": "Ford Motor Company factory literature (1932-1953 brochures, 1933 V-8 salesman booklet, 1953 owner's manual, 1939 Mercury foldout; oldcarbrochures.org scans) - counted as one source",
+       "url": "https://oldcarbrochures.org/United%20States/Ford/1933_Ford/1933-Ford-V8-Salesman-Booklet/index.html",
+       "says": "1933 booklet: Carburetor type: Down draft; 1934 foldouts: new dual down-draft carburetor and dual intake manifold"
+      },
+      {
+       "name": "Wikipedia - Ford flathead V8 engine (cites Street Rodder 1/85) / 1932 Ford",
+       "url": "https://en.wikipedia.org/wiki/Ford_flathead_V8_engine",
+       "says": "single-barrel carburetor 1932; two-barrel downdraft introduced 1934"
+      },
+      {
+       "name": "EngineLabs - Historic Engines: The Fabulous Ford Flathead",
+       "url": "https://www.enginelabs.com/engine-tech/engine/historic-engines-the-fabulous-ford-flathead/",
+       "says": "1934 saw the two-barrel Stromberg"
+      },
+      {
+       "name": "Hagerty Valuation Tools (Wayback copy)",
+       "url": "https://www.hagerty.com/valuation-tools/ford/model_48/1935",
+       "says": "1932 1bbl; 1934-38 2bbl"
+      }
+     ],
+     "note": ""
+    },
+    "fuel_type": {
+     "value": "gasoline",
+     "sources": [
+      {
+       "name": "Ford Motor Company factory literature (1932-1953 brochures, 1933 V-8 salesman booklet, 1953 owner's manual, 1939 Mercury foldout; oldcarbrochures.org scans) - counted as one source",
+       "url": "https://oldcarbrochures.org/United%20States/Ford/1933_Ford/1933-Ford-V8-Salesman-Booklet/index.html",
+       "says": "gasoline economy"
+      },
+      {
+       "name": "Wikipedia - Ford flathead V8 engine (cites Street Rodder 1/85) / 1932 Ford",
+       "url": "https://en.wikipedia.org/wiki/Ford_flathead_V8_engine",
+       "says": "gasoline"
+      },
+      {
+       "name": "EngineLabs - Historic Engines: The Fabulous Ford Flathead",
+       "url": "https://www.enginelabs.com/engine-tech/engine/historic-engines-the-fabulous-ford-flathead/",
+       "says": "gasoline"
+      }
+     ],
+     "note": ""
+    },
+    "years": {
+     "value": "1932-1938 (21-stud engines, Ford cars); a 24-stud 221 continued in Ford cars 1939-1942 (context)",
+     "sources": [
+      {
+       "name": "Wikipedia - Ford flathead V8 engine (cites Street Rodder 1/85) / 1932 Ford",
+       "url": "https://en.wikipedia.org/wiki/Ford_flathead_V8_engine",
+       "says": "original 221 1932-36; revised 221 (V8-78) 1937-38; 24-stud V8-81A late 1938, used through 1942"
+      },
+      {
+       "name": "EngineLabs - Historic Engines: The Fabulous Ford Flathead",
+       "url": "https://www.enginelabs.com/engine-tech/engine/historic-engines-the-fabulous-ford-flathead/",
+       "says": "1940-41 Ford buyers got the V8-85"
+      },
+      {
+       "name": "Hagerty Valuation Tools (Wayback copy)",
+       "url": "https://www.hagerty.com/valuation-tools/ford/model_91c/1939",
+       "says": "1939-1942 Fords: 8-cyl. 221cid"
+      },
+      {
+       "name": "Ford Motor Company factory literature (1932-1953 brochures, 1933 V-8 salesman booklet, 1953 owner's manual, 1939 Mercury foldout; oldcarbrochures.org scans) - counted as one source",
+       "url": "https://oldcarbrochures.org/United%20States/Ford/1933_Ford/1933-Ford-V8-Salesman-Booklet/index.html",
+       "says": "221 cu in in 1932-1938 literature"
+      }
+     ],
+     "note": ""
+    }
+   },
+   "variants": [
+    {
+     "year": 1932,
+     "hp": 65,
+     "hp_basis": "gross (brake)",
+     "rpm": 3400,
+     "code": "V8-18 (Model 18)",
+     "induction": "1-bbl downdraft",
+     "sources": [
+      {
+       "name": "Ford Motor Company factory literature (1932-1953 brochures, 1933 V-8 salesman booklet, 1953 owner's manual, 1939 Mercury foldout; oldcarbrochures.org scans) - counted as one source",
+       "url": "https://oldcarbrochures.org/United%20States/Ford/1933_Ford/1933-Ford-V8-Salesman-Booklet/index.html",
+       "says": "1932 V-8 Features foldout: actual brake horsepower, 65; S.A.E. rating 30"
+      },
+      {
+       "name": "Hagerty Valuation Tools (Wayback copy)",
+       "url": "https://www.hagerty.com/valuation-tools/ford/model_18/1932",
+       "says": "8-cyl. 221cid/65hp 1bbl"
+      },
+      {
+       "name": "Wikipedia - Ford flathead V8 engine (cites Street Rodder 1/85) / 1932 Ford",
+       "url": "https://en.wikipedia.org/wiki/Ford_flathead_V8_engine",
+       "says": "V8-18 with 5.5:1 compression produced 65 hp"
+      },
+      {
+       "name": "EngineLabs - Historic Engines: The Fabulous Ford Flathead",
+       "url": "https://www.enginelabs.com/engine-tech/engine/historic-engines-the-fabulous-ford-flathead/",
+       "says": "5.5:1 ... 65 horsepower at 3,400 RPM"
+      }
+     ]
+    },
+    {
+     "year": 1933,
+     "hp": 75,
+     "hp_basis": "gross (brake)",
+     "rpm": 3800,
+     "code": "V8-40 (Model 40)",
+     "induction": "1-bbl downdraft",
+     "sources": [
+      {
+       "name": "Ford Motor Company factory literature (1932-1953 brochures, 1933 V-8 salesman booklet, 1953 owner's manual, 1939 Mercury foldout; oldcarbrochures.org scans) - counted as one source",
+       "url": "https://oldcarbrochures.org/United%20States/Ford/1933_Ford/1933-Ford-V8-Salesman-Booklet/index.html",
+       "says": "1933 booklet: 75 horsepower at 3800 r.p.m., +10 over former V-8; Brake Hp 75 @ 3800"
+      },
+      {
+       "name": "Wikipedia - Ford flathead V8 engine (cites Street Rodder 1/85) / 1932 Ford",
+       "url": "https://en.wikipedia.org/wiki/Ford_flathead_V8_engine",
+       "says": "1933-34 V8-40 ... 75 hp"
+      },
+      {
+       "name": "EngineLabs - Historic Engines: The Fabulous Ford Flathead",
+       "url": "https://www.enginelabs.com/engine-tech/engine/historic-engines-the-fabulous-ford-flathead/",
+       "says": "aluminum heads raised the rating to 75 for the Model 40"
+      }
+     ],
+     "note": "Dissent: Hagerty lists 65 hp for 1933 (the 1932 figure, apparently carried over)."
+    },
+    {
+     "year": 1937,
+     "hp": 85,
+     "hp_basis": "gross (brake)",
+     "compression_ratio": 6.2,
+     "code": "V8-78 (aluminum heads)",
+     "induction": "2-bbl downdraft",
+     "sources": [
+      {
+       "name": "Ford Motor Company factory literature (1932-1953 brochures, 1933 V-8 salesman booklet, 1953 owner's manual, 1939 Mercury foldout; oldcarbrochures.org scans) - counted as one source",
+       "url": "https://oldcarbrochures.org/United%20States/Ford/1933_Ford/1933-Ford-V8-Salesman-Booklet/index.html",
+       "says": "1937 What's New booklet: improved 85-horsepower V-8"
+      },
+      {
+       "name": "Hagerty Valuation Tools (Wayback copy)",
+       "url": "https://www.hagerty.com/valuation-tools/ford/model_77/1937",
+       "says": "8-cyl. 221cid/85hp 2bbl"
+      },
+      {
+       "name": "Wikipedia - Ford flathead V8 engine (cites Street Rodder 1/85) / 1932 Ford",
+       "url": "https://en.wikipedia.org/wiki/Ford_flathead_V8_engine",
+       "says": "V8-78 ... 6.2:1 aluminum heads, 85 hp"
+      },
+      {
+       "name": "EngineLabs - Historic Engines: The Fabulous Ford Flathead",
+       "url": "https://www.enginelabs.com/engine-tech/engine/historic-engines-the-fabulous-ford-flathead/",
+       "says": "Aluminum heads gave 6.2:1 and 85 hp"
+      }
+     ],
+     "note": "Compression 6.2:1 from Wikipedia and EngineLabs only (second pass)."
+    },
+    {
+     "year": 1938,
+     "hp": 85,
+     "hp_basis": "gross (brake)",
+     "code": "V8-81A / 81C",
+     "induction": "2-bbl downdraft",
+     "sources": [
+      {
+       "name": "Ford Motor Company factory literature (1932-1953 brochures, 1933 V-8 salesman booklet, 1953 owner's manual, 1939 Mercury foldout; oldcarbrochures.org scans) - counted as one source",
+       "url": "https://oldcarbrochures.org/United%20States/Ford/1933_Ford/1933-Ford-V8-Salesman-Booklet/index.html",
+       "says": "1938 Ford brochure: 85-horsepower V-type 8-cylinder engine (De Luxe and Standard)"
+      },
+      {
+       "name": "Hagerty Valuation Tools (Wayback copy)",
+       "url": "https://www.hagerty.com/valuation-tools/ford/model_81c/1938",
+       "says": "8-cyl. 221cid/85hp 2bbl"
+      },
+      {
+       "name": "Wikipedia - Ford flathead V8 engine (cites Street Rodder 1/85) / 1932 Ford",
+       "url": "https://en.wikipedia.org/wiki/Ford_flathead_V8_engine",
+       "says": "V8-78/V8-81A rated 85 hp"
+      }
+     ]
+    },
+    {
+     "year": "1937-1938",
+     "hp": 94,
+     "hp_basis": "gross (brake)",
+     "compression_ratio": 7.5,
+     "code": "V8-78 with cast-iron heads",
+     "second_pass": true,
+     "sources": [
+      {
+       "name": "Wikipedia - Ford flathead V8 engine (cites Street Rodder 1/85) / 1932 Ford",
+       "url": "https://en.wikipedia.org/wiki/Ford_flathead_V8_engine",
+       "says": "7.5:1 compression iron cylinder heads ... 94 hp (iron)"
+      },
+      {
+       "name": "EngineLabs - Historic Engines: The Fabulous Ford Flathead",
+       "url": "https://www.enginelabs.com/engine-tech/engine/historic-engines-the-fabulous-ford-flathead/",
+       "says": "cast iron heads offered a higher compression ratio of 7.5:1 and resulted in 94 horsepower"
+      }
+     ],
+     "note": "Not found in Ford's 1937/1938 US brochures, which mention only the 85 and 60 hp engines."
+    }
+   ],
+   "unverified": {
+    "firing_order": "1-5-4-8-6-3-7-2 per Ford only (1933 V-8 booklet '15486372'; same in the 1953 Ford owner's manual for the 239).",
+    "rod_length_in": "7 in per Ford 1933 V-8 booklet spec table only.",
+    "block_material": "Cast iron (Wikipedia: 'Like most other engine blocks of the 20th century, it was cast iron'); Ford literature says only 'one-piece casting of crankcase and cylinder banks'.",
+    "head_material_1932": "Cast iron implied by Ford's 1933 booklet presenting aluminum heads as new; EngineLabs says early 1932 engines had aluminum heads. Unresolved.",
+    "compression_ratio": "1932 5.5:1 (Wikipedia, EngineLabs - two agree); 1933-34 6.33:1 (Wikipedia only); 1935-36 6.3:1 (Wikipedia only); 1937-38 6.2:1 aluminum / 7.5:1 iron (Wikipedia, EngineLabs - two agree); late-1938 V8-81A 6.12:1 (Wikipedia only)."
+   },
+   "unverified_variants": [
+    {
+     "year": 1934,
+     "hp_found": [
+      85,
+      75,
+      90
+     ],
+     "code": "V8-40A",
+     "note": "85 hp: Wikipedia 1932 Ford article, EngineLabs, conceptcarz; Wikipedia flathead article 75 (for 1933-34); Hagerty 90. Ford 1934 brochures say only 'greater horsepower' with the new dual downdraft carburetor."
+    },
+    {
+     "year": 1935,
+     "hp_found": [
+      85,
+      90
+     ],
+     "code": "V8-48",
+     "note": "Wikipedia 85 (6.3:1); Hagerty 90. Ford's 1935 full-line brochure and V-8 booklet print bore/stroke and 221 ci but no hp figure in the pages read."
+    },
+    {
+     "year": 1936,
+     "hp_found": [
+      85,
+      90
+     ],
+     "code": "V8-68",
+     "note": "Ford 1936 brochure: '221 cubic inches. 85 horsepower'; Wikipedia 85; Hagerty 90 dissents. Two agree (incl. factory) but a third conflicts."
+    }
+   ]
+  },
+  {
+   "id": "ford-flathead-v8-239",
+   "name": "Ford / Mercury flathead V8 239 ci",
+   "fields": {
+    "bore_in": {
+     "value": 3.1875,
+     "sources": [
+      {
+       "name": "Ford Motor Company factory literature (1932-1953 brochures, 1933 V-8 salesman booklet, 1953 owner's manual, 1939 Mercury foldout; oldcarbrochures.org scans) - counted as one source",
+       "url": "https://oldcarbrochures.org/United%20States/Ford/1933_Ford/1933-Ford-V8-Salesman-Booklet/index.html",
+       "says": "1939 Mercury foldout: Bore 3.187 in. Stroke 3.75 in. Piston displacement 239 cu in; 1950 Ford V-8 brochure: 3 3/16\" bore, 3 3/4\" stroke; 1953 F-100 brochure 3.19 x 3.75"
+      },
+      {
+       "name": "Wikipedia - Ford flathead V8 engine (cites Street Rodder 1/85) / 1932 Ford",
+       "url": "https://en.wikipedia.org/wiki/Ford_flathead_V8_engine",
+       "says": "3.1875 by 3.75 in bore and stroke"
+      }
+     ],
+     "note": "3-3/16 in = 80.96 mm. EngineLabs garbles it (gives 3.1875 as the stroke); arithmetic confirms 3.1875 x 3.75: 3.1875^2 x 3.75 x 0.7854 x 8 = 239.4 ci.",
+     "second_pass": true
+    },
+    "stroke_in": {
+     "value": 3.75,
+     "sources": [
+      {
+       "name": "Ford Motor Company factory literature (1932-1953 brochures, 1933 V-8 salesman booklet, 1953 owner's manual, 1939 Mercury foldout; oldcarbrochures.org scans) - counted as one source",
+       "url": "https://oldcarbrochures.org/United%20States/Ford/1933_Ford/1933-Ford-V8-Salesman-Booklet/index.html",
+       "says": "Stroke 3-3/4 in (1939 Mercury, 1950 Ford, 1953 F-100)"
+      },
+      {
+       "name": "Wikipedia - Ford flathead V8 engine (cites Street Rodder 1/85) / 1932 Ford",
+       "url": "https://en.wikipedia.org/wiki/Ford_flathead_V8_engine",
+       "says": "3.75 in stroke"
+      }
+     ],
+     "note": "95.25 mm; arithmetic as for bore. EngineLabs' '3.1875-inch stroke' is wrong.",
+     "second_pass": true
+    },
+    "displacement_ci": {
+     "value": 239.4,
+     "sources": [
+      {
+       "name": "Ford Motor Company factory literature (1932-1953 brochures, 1933 V-8 salesman booklet, 1953 owner's manual, 1939 Mercury foldout; oldcarbrochures.org scans) - counted as one source",
+       "url": "https://oldcarbrochures.org/United%20States/Ford/1933_Ford/1933-Ford-V8-Salesman-Booklet/index.html",
+       "says": "1953 Ford owner's manual: Pis. Displ. 239.4 cu. in.; 1939 Mercury foldout 239 cu in"
+      },
+      {
+       "name": "Wikipedia - Ford flathead V8 engine (cites Street Rodder 1/85) / 1932 Ford",
+       "url": "https://en.wikipedia.org/wiki/Ford_flathead_V8_engine",
+       "says": "239 cu in"
+      },
+      {
+       "name": "EngineLabs - Historic Engines: The Fabulous Ford Flathead",
+       "url": "https://www.enginelabs.com/engine-tech/engine/historic-engines-the-fabulous-ford-flathead/",
+       "says": "displacing 239.4 cubic inches"
+      },
+      {
+       "name": "Hagerty Valuation Tools (Wayback copy)",
+       "url": "https://www.hagerty.com/valuation-tools/ford/super_deluxe/1946",
+       "says": "8-cyl. 239cid"
+      }
+     ],
+     "note": ""
+    },
+    "displacement_l": {
+     "value": 3.9,
+     "sources": [
+      {
+       "name": "Wikipedia - Ford flathead V8 engine (cites Street Rodder 1/85) / 1932 Ford",
+       "url": "https://en.wikipedia.org/wiki/Ford_flathead_V8_engine",
+       "says": "239 cu in (3.9 L)"
+      },
+      {
+       "name": "Ford Motor Company factory literature (1932-1953 brochures, 1933 V-8 salesman booklet, 1953 owner's manual, 1939 Mercury foldout; oldcarbrochures.org scans) - counted as one source",
+       "url": "https://oldcarbrochures.org/United%20States/Ford/1933_Ford/1933-Ford-V8-Salesman-Booklet/index.html",
+       "says": "239.4 cu in"
+      },
+      {
+       "name": "EngineLabs - Historic Engines: The Fabulous Ford Flathead",
+       "url": "https://www.enginelabs.com/engine-tech/engine/historic-engines-the-fabulous-ford-flathead/",
+       "says": "239.4 cu in"
+      }
+     ],
+     "note": "239.4 ci = 3.92 L by conversion."
+    },
+    "num_cylinders": {
+     "value": 8,
+     "sources": [
+      {
+       "name": "Ford Motor Company factory literature (1932-1953 brochures, 1933 V-8 salesman booklet, 1953 owner's manual, 1939 Mercury foldout; oldcarbrochures.org scans) - counted as one source",
+       "url": "https://oldcarbrochures.org/United%20States/Ford/1933_Ford/1933-Ford-V8-Salesman-Booklet/index.html",
+       "says": "V-type, 8-cylinder"
+      },
+      {
+       "name": "Wikipedia - Ford flathead V8 engine (cites Street Rodder 1/85) / 1932 Ford",
+       "url": "https://en.wikipedia.org/wiki/Ford_flathead_V8_engine",
+       "says": "V8"
+      },
+      {
+       "name": "EngineLabs - Historic Engines: The Fabulous Ford Flathead",
+       "url": "https://www.enginelabs.com/engine-tech/engine/historic-engines-the-fabulous-ford-flathead/",
+       "says": "V8"
+      }
+     ],
+     "note": ""
+    },
+    "configuration": {
+     "value": "90-degree V8, L-head",
+     "sources": [
+      {
+       "name": "Ford Motor Company factory literature (1932-1953 brochures, 1933 V-8 salesman booklet, 1953 owner's manual, 1939 Mercury foldout; oldcarbrochures.org scans) - counted as one source",
+       "url": "https://oldcarbrochures.org/United%20States/Ford/1933_Ford/1933-Ford-V8-Salesman-Booklet/index.html",
+       "says": "V-type 8-cylinder; all the advantages of the Ford V-8 engine (1939 Mercury)"
+      },
+      {
+       "name": "Wikipedia - Ford flathead V8 engine (cites Street Rodder 1/85) / 1932 Ford",
+       "url": "https://en.wikipedia.org/wiki/Ford_flathead_V8_engine",
+       "says": "flathead V8"
+      },
+      {
+       "name": "EngineLabs - Historic Engines: The Fabulous Ford Flathead",
+       "url": "https://www.enginelabs.com/engine-tech/engine/historic-engines-the-fabulous-ford-flathead/",
+       "says": "L-head V8"
+      }
+     ],
+     "note": ""
+    },
+    "valvetrain": {
+     "value": "L-head (side valve, flathead), 2 valves per cylinder",
+     "sources": [
+      {
+       "name": "Wikipedia - Ford flathead V8 engine (cites Street Rodder 1/85) / 1932 Ford",
+       "url": "https://en.wikipedia.org/wiki/Ford_flathead_V8_engine",
+       "says": "flathead"
+      },
+      {
+       "name": "EngineLabs - Historic Engines: The Fabulous Ford Flathead",
+       "url": "https://www.enginelabs.com/engine-tech/engine/historic-engines-the-fabulous-ford-flathead/",
+       "says": "L-head design"
+      }
+     ],
+     "note": "",
+     "second_pass": true
+    },
+    "induction": {
+     "value": "2-bbl ('dual') downdraft carburetor",
+     "sources": [
+      {
+       "name": "Ford Motor Company factory literature (1932-1953 brochures, 1933 V-8 salesman booklet, 1953 owner's manual, 1939 Mercury foldout; oldcarbrochures.org scans) - counted as one source",
+       "url": "https://oldcarbrochures.org/United%20States/Ford/1933_Ford/1933-Ford-V8-Salesman-Booklet/index.html",
+       "says": "1950 Ford V-8 brochure: Dual Downdraft Carburetor"
+      },
+      {
+       "name": "Hagerty Valuation Tools (Wayback copy)",
+       "url": "https://www.hagerty.com/valuation-tools/ford/custom/1949 ... crestline/1953",
+       "says": "8-cyl. 239cid/100hp-110hp 2bbl"
+      }
+     ],
+     "note": "",
+     "second_pass": true
+    },
+    "fuel_type": {
+     "value": "gasoline",
+     "sources": [
+      {
+       "name": "Ford Motor Company factory literature (1932-1953 brochures, 1933 V-8 salesman booklet, 1953 owner's manual, 1939 Mercury foldout; oldcarbrochures.org scans) - counted as one source",
+       "url": "https://oldcarbrochures.org/United%20States/Ford/1933_Ford/1933-Ford-V8-Salesman-Booklet/index.html",
+       "says": "gasoline"
+      },
+      {
+       "name": "Wikipedia - Ford flathead V8 engine (cites Street Rodder 1/85) / 1932 Ford",
+       "url": "https://en.wikipedia.org/wiki/Ford_flathead_V8_engine",
+       "says": "gasoline"
+      },
+      {
+       "name": "EngineLabs - Historic Engines: The Fabulous Ford Flathead",
+       "url": "https://www.enginelabs.com/engine-tech/engine/historic-engines-the-fabulous-ford-flathead/",
+       "says": "gasoline"
+      }
+     ],
+     "note": ""
+    },
+    "years": {
+     "value": "1939-1953 (Mercury 1939-48; Ford cars 1946-53; Ford trucks to 1953, Canada to 1954)",
+     "sources": [
+      {
+       "name": "Wikipedia - Ford flathead V8 engine (cites Street Rodder 1/85) / 1932 Ford",
+       "url": "https://en.wikipedia.org/wiki/Ford_flathead_V8_engine",
+       "says": "introduced 1939 for Mercury; Fords from 1946; 8BA/8RT 1948-53 US, 1954 Canada"
+      },
+      {
+       "name": "EngineLabs - Historic Engines: The Fabulous Ford Flathead",
+       "url": "https://www.enginelabs.com/engine-tech/engine/historic-engines-the-fabulous-ford-flathead/",
+       "says": "1939 Mercury introduced the 239.4; post-war Ford and Mercury got the 239"
+      },
+      {
+       "name": "Hagerty Valuation Tools (Wayback copy)",
+       "url": "https://www.hagerty.com/valuation-tools/ford/super_deluxe/1946-crestline/1953",
+       "says": "Ford 1946-1953: 8-cyl. 239cid"
+      }
+     ],
+     "note": ""
+    }
+   },
+   "variants": [
+    {
+     "year": 1939,
+     "hp": 95,
+     "hp_basis": "gross (brake)",
+     "rpm": 3600,
+     "code": "99A (Mercury only - context)",
+     "sources": [
+      {
+       "name": "Ford Motor Company factory literature (1932-1953 brochures, 1933 V-8 salesman booklet, 1953 owner's manual, 1939 Mercury foldout; oldcarbrochures.org scans) - counted as one source",
+       "url": "https://oldcarbrochures.org/United%20States/Ford/1933_Ford/1933-Ford-V8-Salesman-Booklet/index.html",
+       "says": "1939 Mercury foldout: BIG 95 HP ... Brake horsepower 95 at 3600 rpm; taxable hp 32.5"
+      },
+      {
+       "name": "Wikipedia - Ford flathead V8 engine (cites Street Rodder 1/85) / 1932 Ford",
+       "url": "https://en.wikipedia.org/wiki/Ford_flathead_V8_engine",
+       "says": "V8-99A ... 95 hp"
+      },
+      {
+       "name": "EngineLabs - Historic Engines: The Fabulous Ford Flathead",
+       "url": "https://www.enginelabs.com/engine-tech/engine/historic-engines-the-fabulous-ford-flathead/",
+       "says": "Model 99A offered 95 horsepower"
+      }
+     ],
+     "note": "Compression disputed: Wikipedia 6.15:1, EngineLabs 6.3:1. One panel of the same foldout OCRs as '93 horsepower' (likely a scan/OCR artefact)."
+    },
+    {
+     "year": 1946,
+     "hp": 100,
+     "hp_basis": "gross (brake)",
+     "code": "69A",
+     "sources": [
+      {
+       "name": "Ford Motor Company factory literature (1932-1953 brochures, 1933 V-8 salesman booklet, 1953 owner's manual, 1939 Mercury foldout; oldcarbrochures.org scans) - counted as one source",
+       "url": "https://oldcarbrochures.org/United%20States/Ford/1933_Ford/1933-Ford-V8-Salesman-Booklet/index.html",
+       "says": "1946 Ford brochure: the spirited V-8, now for the first time 100 horsepower - an increase of 10"
+      },
+      {
+       "name": "Wikipedia - Ford flathead V8 engine (cites Street Rodder 1/85) / 1932 Ford",
+       "url": "https://en.wikipedia.org/wiki/Ford_flathead_V8_engine",
+       "says": "Postwar V8-69 ... 100 hp"
+      },
+      {
+       "name": "Hagerty Valuation Tools (Wayback copy)",
+       "url": "https://www.hagerty.com/valuation-tools/ford/super_deluxe/1946",
+       "says": "8-cyl. 239cid/100hp 2bbl"
+      }
+     ]
+    },
+    {
+     "year": 1947,
+     "hp": 100,
+     "hp_basis": "gross (brake)",
+     "code": "79A",
+     "sources": [
+      {
+       "name": "Hagerty Valuation Tools (Wayback copy)",
+       "url": "https://www.hagerty.com/valuation-tools/ford/super_deluxe/1947",
+       "says": "8-cyl. 239cid/100hp 2bbl"
+      },
+      {
+       "name": "Wikipedia - Ford flathead V8 engine (cites Street Rodder 1/85) / 1932 Ford",
+       "url": "https://en.wikipedia.org/wiki/Ford_flathead_V8_engine",
+       "says": "1947-48 only the designation changed (V8-79, -89)"
+      },
+      {
+       "name": "EngineLabs - Historic Engines: The Fabulous Ford Flathead",
+       "url": "https://www.enginelabs.com/engine-tech/engine/historic-engines-the-fabulous-ford-flathead/",
+       "says": "post-war 239: 100 hp"
+      }
+     ],
+     "note": "EngineLabs gives the post-war rating without a specific year."
+    },
+    {
+     "year": 1948,
+     "hp": 100,
+     "hp_basis": "gross (brake)",
+     "code": "89A",
+     "sources": [
+      {
+       "name": "Hagerty Valuation Tools (Wayback copy)",
+       "url": "https://www.hagerty.com/valuation-tools/ford/super_deluxe/1948",
+       "says": "8-cyl. 239cid/100hp 2bbl"
+      },
+      {
+       "name": "Wikipedia - Ford flathead V8 engine (cites Street Rodder 1/85) / 1932 Ford",
+       "url": "https://en.wikipedia.org/wiki/Ford_flathead_V8_engine",
+       "says": "V8-89, ratings unchanged"
+      },
+      {
+       "name": "EngineLabs - Historic Engines: The Fabulous Ford Flathead",
+       "url": "https://www.enginelabs.com/engine-tech/engine/historic-engines-the-fabulous-ford-flathead/",
+       "says": "post-war 239: 100 hp"
+      }
+     ],
+     "note": "As 1947."
+    },
+    {
+     "year": "1949-1951",
+     "hp": 100,
+     "hp_basis": "gross (brake)",
+     "code": "8BA / 0BA / 1BA",
+     "induction": "2-bbl downdraft",
+     "sources": [
+      {
+       "name": "Ford Motor Company factory literature (1932-1953 brochures, 1933 V-8 salesman booklet, 1953 owner's manual, 1939 Mercury foldout; oldcarbrochures.org scans) - counted as one source",
+       "url": "https://oldcarbrochures.org/United%20States/Ford/1933_Ford/1933-Ford-V8-Salesman-Booklet/index.html",
+       "says": "1950 Ford V-8 brochure: V-8 ENGINE: 100 brake h.p.; 3 3/16\" bore, 3 3/4\" stroke; 32.5 taxable h.p."
+      },
+      {
+       "name": "Hagerty Valuation Tools (Wayback copy)",
+       "url": "https://www.hagerty.com/valuation-tools/ford/custom/1949, custom_deluxe/1950, custom_deluxe/1951",
+       "says": "8-cyl. 239cid/100hp 2bbl"
+      },
+      {
+       "name": "Wikipedia - Ford flathead V8 engine (cites Street Rodder 1/85) / 1932 Ford",
+       "url": "https://en.wikipedia.org/wiki/Ford_flathead_V8_engine",
+       "says": "8BA ... performance unchanged"
+      },
+      {
+       "name": "EngineLabs - Historic Engines: The Fabulous Ford Flathead",
+       "url": "https://www.enginelabs.com/engine-tech/engine/historic-engines-the-fabulous-ford-flathead/",
+       "says": "post-war 239: 6.8:1, 100 hp"
+      }
+     ]
+    },
+    {
+     "year": "1952-1953",
+     "hp": 110,
+     "hp_basis": "gross (brake)",
+     "rpm": 3800,
+     "code": "B2 / B3",
+     "induction": "2-bbl downdraft",
+     "sources": [
+      {
+       "name": "Ford Motor Company factory literature (1932-1953 brochures, 1933 V-8 salesman booklet, 1953 owner's manual, 1939 Mercury foldout; oldcarbrochures.org scans) - counted as one source",
+       "url": "https://oldcarbrochures.org/United%20States/Ford/1933_Ford/1933-Ford-V8-Salesman-Booklet/index.html",
+       "says": "1953 Ford owner's manual specifications: Horsepower 110 @ 3800 R.P.M.; A.M.A. H.P. 32.5"
+      },
+      {
+       "name": "Hagerty Valuation Tools (Wayback copy)",
+       "url": "https://www.hagerty.com/valuation-tools/ford/mainline/1952, crestline/1952-1953",
+       "says": "8-cyl. 239cid/110hp 2bbl"
+      },
+      {
+       "name": "Wikipedia - Ford flathead V8 engine (cites Street Rodder 1/85) / 1932 Ford",
+       "url": "https://en.wikipedia.org/wiki/Ford_flathead_V8_engine",
+       "says": "1952 V8-B2 ... 110 hp; -B3 1953"
+      },
+      {
+       "name": "EngineLabs - Historic Engines: The Fabulous Ford Flathead",
+       "url": "https://www.enginelabs.com/engine-tech/engine/historic-engines-the-fabulous-ford-flathead/",
+       "says": "1952: the 239 was rated at 110 hp"
+      }
+     ],
+     "note": "Ford trucks rated 106 hp (1953 F-100 brochure)."
+    }
+   ],
+   "unverified": {
+    "firing_order": "1-5-4-8-6-3-7-2 per Ford only (1953 Ford owner's manual).",
+    "compression_ratio": "Wikipedia only: 1939 6.15:1 (EngineLabs 6.3:1), 1942 6.4:1, 1946-48 6.75:1, 1949-51 6.8:1 (EngineLabs gives 6.8:1 for 'post-war' without a year), 1952-53 7.2:1. No Ford figure found.",
+    "block_material": "Cast iron (Wikipedia, general statement only).",
+    "head_material": "Not established from acceptable sources.",
+    "rod_length_in": "Not found."
+   },
+   "unverified_variants": []
+  },
+  {
+   "id": "vw-1131",
+   "name": "Volkswagen 1131 cc air-cooled flat-four (US Beetle 1949-1953)",
+   "fields": {
+    "num_cylinders": {
+     "value": 4,
+     "sources": [
+      {
+       "name": "Volkswagen factory literature (VW of America owner's manuals 1962-1979, US/Canadian brochures, 1952-57 and 1961-65 VW workshop manuals, VW NHTSA report; archive.org) - counted as one source",
+       "url": "https://archive.org/details/1968-volkswagen-beetle-owners-manual-english",
+       "says": "Four cylinder, four stroke, horizontally opposed, in rear"
+      },
+      {
+       "name": "Autobook: Volkswagen Beetle 1954-67 (Autopress) - technical data",
+       "url": "https://archive.org/details/volkswagen-beetle-1954-67-autobook",
+       "says": "VW 1200/1300/1500 flat-four"
+      },
+      {
+       "name": "Wikipedia - Volkswagen air-cooled engine / Volkswagen Beetle",
+       "url": "https://en.wikipedia.org/wiki/Volkswagen_air-cooled_engine",
+       "says": "four horizontally opposed cylinders"
+      }
+     ],
+     "note": ""
+    },
+    "configuration": {
+     "value": "air-cooled horizontally opposed flat-four (boxer)",
+     "sources": [
+      {
+       "name": "Volkswagen factory literature (VW of America owner's manuals 1962-1979, US/Canadian brochures, 1952-57 and 1961-65 VW workshop manuals, VW NHTSA report; archive.org) - counted as one source",
+       "url": "https://archive.org/details/1968-volkswagen-beetle-owners-manual-english",
+       "says": "Four cylinder, four stroke, horizontally opposed, in rear. Air cooling by fan"
+      },
+      {
+       "name": "Wikipedia - Volkswagen air-cooled engine / Volkswagen Beetle",
+       "url": "https://en.wikipedia.org/wiki/Volkswagen_air-cooled_engine",
+       "says": "air-cooled boxer engine"
+      },
+      {
+       "name": "Autobook: Volkswagen Beetle 1954-67 (Autopress) - technical data",
+       "url": "https://archive.org/details/volkswagen-beetle-1954-67-autobook",
+       "says": "air-cooled horizontally opposed engine"
+      }
+     ],
+     "note": ""
+    },
+    "valvetrain": {
+     "value": "OHV pushrod, 2 valves per cylinder, single central camshaft",
+     "sources": [
+      {
+       "name": "Volkswagen factory literature (VW of America owner's manuals 1962-1979, US/Canadian brochures, 1952-57 and 1961-65 VW workshop manuals, VW NHTSA report; archive.org) - counted as one source",
+       "url": "https://archive.org/details/1968-volkswagen-beetle-owners-manual-english",
+       "says": "1952-57 and 1961-65 workshop manuals: valves of the overhead type, operated by the cams via push rods and rocker arms; 1968 US brochure 'Valves: Overhead type'"
+      },
+      {
+       "name": "Autobook: Volkswagen Beetle 1954-67 (Autopress) - technical data",
+       "url": "https://archive.org/details/volkswagen-beetle-1954-67-autobook",
+       "says": "overhead valves and pushrods; camshaft in crankcase"
+      },
+      {
+       "name": "Wikipedia - Volkswagen air-cooled engine / Volkswagen Beetle",
+       "url": "https://en.wikipedia.org/wiki/Volkswagen_air-cooled_engine",
+       "says": "Pushrod OHV"
+      }
+     ],
+     "note": ""
+    },
+    "block_material": {
+     "value": "magnesium alloy crankcase (split); separate finned cast-iron cylinders",
+     "sources": [
+      {
+       "name": "Volkswagen factory literature (VW of America owner's manuals 1962-1979, US/Canadian brochures, 1952-57 and 1961-65 VW workshop manuals, VW NHTSA report; archive.org) - counted as one source",
+       "url": "https://archive.org/details/1968-volkswagen-beetle-owners-manual-english",
+       "says": "1969 US brochure: aluminum-magnesium engine; workshop manual: crankcase cast of light-metal alloy"
+      },
+      {
+       "name": "Wikipedia - Volkswagen air-cooled engine / Volkswagen Beetle",
+       "url": "https://en.wikipedia.org/wiki/Volkswagen_air-cooled_engine",
+       "says": "magnesium-alloy crankcase; cast-iron cylinders"
+      }
+     ],
+     "note": "Cast-iron cylinders are stated by Wikipedia only (VW: 'special cylinder casting').",
+     "second_pass": true
+    },
+    "head_material": {
+     "value": "aluminum alloy",
+     "sources": [
+      {
+       "name": "Volkswagen factory literature (VW of America owner's manuals 1962-1979, US/Canadian brochures, 1952-57 and 1961-65 VW workshop manuals, VW NHTSA report; archive.org) - counted as one source",
+       "url": "https://archive.org/details/1968-volkswagen-beetle-owners-manual-english",
+       "says": "workshop manual: detachable cylinder head of light alloy casting"
+      },
+      {
+       "name": "Wikipedia - Volkswagen air-cooled engine / Volkswagen Beetle",
+       "url": "https://en.wikipedia.org/wiki/Volkswagen_air-cooled_engine",
+       "says": "cast aluminum alloy cylinder heads"
+      }
+     ],
+     "note": "",
+     "second_pass": true
+    },
+    "fuel_type": {
+     "value": "gasoline",
+     "sources": [
+      {
+       "name": "Volkswagen factory literature (VW of America owner's manuals 1962-1979, US/Canadian brochures, 1952-57 and 1961-65 VW workshop manuals, VW NHTSA report; archive.org) - counted as one source",
+       "url": "https://archive.org/details/1968-volkswagen-beetle-owners-manual-english",
+       "says": "owner's manuals: fuel requirements"
+      },
+      {
+       "name": "Wikipedia - Volkswagen air-cooled engine / Volkswagen Beetle",
+       "url": "https://en.wikipedia.org/wiki/Volkswagen_air-cooled_engine",
+       "says": "gasoline-fuelled"
+      },
+      {
+       "name": "Walter Henry Nelson, Small Wonder, appendix 'How to Tell the Age of a Volkswagen'",
+       "url": "https://archive.org/details/walter-henry-small-wonder-the-amazing-story-of-the-volkswagen-beetle-appendix-ho",
+       "says": "lead-free gasoline for catalyst cars"
+      }
+     ],
+     "note": ""
+    },
+    "bore_in": {
+     "value": 2.9528,
+     "sources": [
+      {
+       "name": "Volkswagen factory literature (VW of America owner's manuals 1962-1979, US/Canadian brochures, 1952-57 and 1961-65 VW workshop manuals, VW NHTSA report; archive.org) - counted as one source",
+       "url": "https://archive.org/details/1968-volkswagen-beetle-owners-manual-english",
+       "says": "1952-57 workshop manual: piston nominal dimension 75 mm dia. (1131 cc engine)"
+      },
+      {
+       "name": "Wikipedia - Volkswagen air-cooled engine / Volkswagen Beetle",
+       "url": "https://en.wikipedia.org/wiki/Volkswagen_air-cooled_engine",
+       "says": "1131 cc: bore 75 mm"
+      },
+      {
+       "name": "Consumer Guide Beetle history (HowStuffWorks, archived)",
+       "url": "https://auto.howstuffworks.com/1945-1959-volkswagen-beetle.htm",
+       "says": "in 1954, bore went from 75 to 77 mm"
+      }
+     ],
+     "note": "75 mm."
+    },
+    "stroke_in": {
+     "value": 2.5197,
+     "sources": [
+      {
+       "name": "Wikipedia - Volkswagen air-cooled engine / Volkswagen Beetle",
+       "url": "https://en.wikipedia.org/wiki/Volkswagen_air-cooled_engine",
+       "says": "1131 cc: stroke 64 mm"
+      }
+     ],
+     "note": "64 mm. Only Wikipedia states it, but arithmetic from the verified 75 mm bore and 1131 cc gives 75^2 x 0.7854 x 64 x 4 = 1,130,973 mm3 = 1131 cc; recorded on that basis (flag for review).",
+     "second_pass": true
+    },
+    "displacement_ci": {
+     "value": 69.0,
+     "sources": [
+      {
+       "name": "Volkswagen factory literature (VW of America owner's manuals 1962-1979, US/Canadian brochures, 1952-57 and 1961-65 VW workshop manuals, VW NHTSA report; archive.org) - counted as one source",
+       "url": "https://archive.org/details/1968-volkswagen-beetle-owners-manual-english",
+       "says": "1131 cc - 25 B.H.P."
+      },
+      {
+       "name": "Consumer Guide Beetle history (HowStuffWorks, archived)",
+       "url": "https://auto.howstuffworks.com/1945-1959-volkswagen-beetle.htm",
+       "says": "1131 to 1192 cc"
+      },
+      {
+       "name": "Hagerty Valuation Tools - VW Beetle (Wayback copy)",
+       "url": "https://www.hagerty.com/valuation-tools/volkswagen/beetle",
+       "says": "1131cc/25hp"
+      },
+      {
+       "name": "Wikipedia - Volkswagen air-cooled engine / Volkswagen Beetle",
+       "url": "https://en.wikipedia.org/wiki/Volkswagen_air-cooled_engine",
+       "says": "1131 cc"
+      }
+     ],
+     "note": "1131 cc = 69.0 ci by conversion."
+    },
+    "displacement_l": {
+     "value": 1.1,
+     "sources": [
+      {
+       "name": "Volkswagen factory literature (VW of America owner's manuals 1962-1979, US/Canadian brochures, 1952-57 and 1961-65 VW workshop manuals, VW NHTSA report; archive.org) - counted as one source",
+       "url": "https://archive.org/details/1968-volkswagen-beetle-owners-manual-english",
+       "says": "1131 cc"
+      },
+      {
+       "name": "Consumer Guide Beetle history (HowStuffWorks, archived)",
+       "url": "https://auto.howstuffworks.com/1945-1959-volkswagen-beetle.htm",
+       "says": "1131 cc"
+      },
+      {
+       "name": "Wikipedia - Volkswagen air-cooled engine / Volkswagen Beetle",
+       "url": "https://en.wikipedia.org/wiki/Volkswagen_air-cooled_engine",
+       "says": "1131 cc"
+      }
+     ],
+     "note": ""
+    },
+    "compression_ratio": {
+     "value": "5.8:1",
+     "sources": [
+      {
+       "name": "Walter Henry Nelson, Small Wonder, appendix 'How to Tell the Age of a Volkswagen'",
+       "url": "https://archive.org/details/walter-henry-small-wonder-the-amazing-story-of-the-volkswagen-beetle-appendix-ho",
+       "says": "5.8:1 to 6.6:1 compression ratio (1954 change)"
+      },
+      {
+       "name": "Consumer Guide Beetle history (HowStuffWorks, archived)",
+       "url": "https://auto.howstuffworks.com/1945-1959-volkswagen-beetle.htm",
+       "says": "compression from 5.8 to 6.6:1"
+      },
+      {
+       "name": "Wikipedia - Volkswagen air-cooled engine / Volkswagen Beetle",
+       "url": "https://en.wikipedia.org/wiki/Volkswagen_air-cooled_engine",
+       "says": "compression 5.8:1"
+      }
+     ],
+     "note": ""
+    },
+    "induction": {
+     "value": "1-bbl Solex downdraft carburetor",
+     "sources": [
+      {
+       "name": "Volkswagen factory literature (VW of America owner's manuals 1962-1979, US/Canadian brochures, 1952-57 and 1961-65 VW workshop manuals, VW NHTSA report; archive.org) - counted as one source",
+       "url": "https://archive.org/details/1968-volkswagen-beetle-owners-manual-english",
+       "says": "downdraft carburetor with automatic choke (owner's manuals)"
+      },
+      {
+       "name": "Autobook: Volkswagen Beetle 1954-67 (Autopress) - technical data",
+       "url": "https://archive.org/details/volkswagen-beetle-1954-67-autobook",
+       "says": "Solex 28 PCI / 28 PICT / 30 PICT downdraught carburetters"
+      },
+      {
+       "name": "Hagerty Valuation Tools - VW Beetle (Wayback copy)",
+       "url": "https://www.hagerty.com/valuation-tools/volkswagen/beetle",
+       "says": "1949-1953: 1bbl"
+      }
+     ],
+     "note": ""
+    },
+    "years": {
+     "value": "1949-1953 (US); 1131 cc built 1945-Dec 1953",
+     "sources": [
+      {
+       "name": "Walter Henry Nelson, Small Wonder, appendix 'How to Tell the Age of a Volkswagen'",
+       "url": "https://archive.org/details/walter-henry-small-wonder-the-amazing-story-of-the-volkswagen-beetle-appendix-ho",
+       "says": "1954: 1131 cc to 1192 cc"
+      },
+      {
+       "name": "Hagerty Valuation Tools - VW Beetle (Wayback copy)",
+       "url": "https://www.hagerty.com/valuation-tools/volkswagen/beetle",
+       "says": "1949-1953 1131cc"
+      },
+      {
+       "name": "Consumer Guide Beetle history (HowStuffWorks, archived)",
+       "url": "https://auto.howstuffworks.com/1945-1959-volkswagen-beetle.htm",
+       "says": "1954 change to 1192 cc"
+      }
+     ],
+     "note": ""
+    }
+   },
+   "variants": [
+    {
+     "year": "1949-1953",
+     "hp": 30,
+     "hp_basis": "SAE gross",
+     "rpm": 3300,
+     "code": "1100 (1131 cc)",
+     "compression_ratio": 5.8,
+     "sources": [
+      {
+       "name": "Volkswagen factory literature (VW of America owner's manuals 1962-1979, US/Canadian brochures, 1952-57 and 1961-65 VW workshop manuals, VW NHTSA report; archive.org) - counted as one source",
+       "url": "https://archive.org/details/1968-volkswagen-beetle-owners-manual-english",
+       "says": "1952-57 workshop manual: 25 BHP at 3300 rpm (DIN); VWoA 1961-65 manual: 25 and 30 bhp engines = 30 and 36 SAE"
+      },
+      {
+       "name": "Walter Henry Nelson, Small Wonder, appendix 'How to Tell the Age of a Volkswagen'",
+       "url": "https://archive.org/details/walter-henry-small-wonder-the-amazing-story-of-the-volkswagen-beetle-appendix-ho",
+       "says": "30 hp (1131 cc)"
+      },
+      {
+       "name": "Consumer Guide Beetle history (HowStuffWorks, archived)",
+       "url": "https://auto.howstuffworks.com/1945-1959-volkswagen-beetle.htm",
+       "says": "upping horsepower from 30 to 36"
+      }
+     ],
+     "note": "DIN 25 PS (Hagerty and Krause list 25). Pre-1955 VW cars had no model year."
+    }
+   ],
+   "unverified": {
+    "firing_order": "1-4-3-2 per VW literature only (1961-65 workshop manual, 1968/1977/1978 owner's manuals); no independent second source found."
+   },
+   "unverified_variants": []
+  },
+  {
+   "id": "vw-1192",
+   "name": "Volkswagen 1192 cc air-cooled flat-four (US Beetle 1954-1965)",
+   "fields": {
+    "num_cylinders": {
+     "value": 4,
+     "sources": [
+      {
+       "name": "Volkswagen factory literature (VW of America owner's manuals 1962-1979, US/Canadian brochures, 1952-57 and 1961-65 VW workshop manuals, VW NHTSA report; archive.org) - counted as one source",
+       "url": "https://archive.org/details/1968-volkswagen-beetle-owners-manual-english",
+       "says": "Four cylinder, four stroke, horizontally opposed, in rear"
+      },
+      {
+       "name": "Autobook: Volkswagen Beetle 1954-67 (Autopress) - technical data",
+       "url": "https://archive.org/details/volkswagen-beetle-1954-67-autobook",
+       "says": "VW 1200/1300/1500 flat-four"
+      },
+      {
+       "name": "Wikipedia - Volkswagen air-cooled engine / Volkswagen Beetle",
+       "url": "https://en.wikipedia.org/wiki/Volkswagen_air-cooled_engine",
+       "says": "four horizontally opposed cylinders"
+      }
+     ],
+     "note": ""
+    },
+    "configuration": {
+     "value": "air-cooled horizontally opposed flat-four (boxer)",
+     "sources": [
+      {
+       "name": "Volkswagen factory literature (VW of America owner's manuals 1962-1979, US/Canadian brochures, 1952-57 and 1961-65 VW workshop manuals, VW NHTSA report; archive.org) - counted as one source",
+       "url": "https://archive.org/details/1968-volkswagen-beetle-owners-manual-english",
+       "says": "Four cylinder, four stroke, horizontally opposed, in rear. Air cooling by fan"
+      },
+      {
+       "name": "Wikipedia - Volkswagen air-cooled engine / Volkswagen Beetle",
+       "url": "https://en.wikipedia.org/wiki/Volkswagen_air-cooled_engine",
+       "says": "air-cooled boxer engine"
+      },
+      {
+       "name": "Autobook: Volkswagen Beetle 1954-67 (Autopress) - technical data",
+       "url": "https://archive.org/details/volkswagen-beetle-1954-67-autobook",
+       "says": "air-cooled horizontally opposed engine"
+      }
+     ],
+     "note": ""
+    },
+    "valvetrain": {
+     "value": "OHV pushrod, 2 valves per cylinder, single central camshaft",
+     "sources": [
+      {
+       "name": "Volkswagen factory literature (VW of America owner's manuals 1962-1979, US/Canadian brochures, 1952-57 and 1961-65 VW workshop manuals, VW NHTSA report; archive.org) - counted as one source",
+       "url": "https://archive.org/details/1968-volkswagen-beetle-owners-manual-english",
+       "says": "1952-57 and 1961-65 workshop manuals: valves of the overhead type, operated by the cams via push rods and rocker arms; 1968 US brochure 'Valves: Overhead type'"
+      },
+      {
+       "name": "Autobook: Volkswagen Beetle 1954-67 (Autopress) - technical data",
+       "url": "https://archive.org/details/volkswagen-beetle-1954-67-autobook",
+       "says": "overhead valves and pushrods; camshaft in crankcase"
+      },
+      {
+       "name": "Wikipedia - Volkswagen air-cooled engine / Volkswagen Beetle",
+       "url": "https://en.wikipedia.org/wiki/Volkswagen_air-cooled_engine",
+       "says": "Pushrod OHV"
+      }
+     ],
+     "note": ""
+    },
+    "block_material": {
+     "value": "magnesium alloy crankcase (split); separate finned cast-iron cylinders",
+     "sources": [
+      {
+       "name": "Volkswagen factory literature (VW of America owner's manuals 1962-1979, US/Canadian brochures, 1952-57 and 1961-65 VW workshop manuals, VW NHTSA report; archive.org) - counted as one source",
+       "url": "https://archive.org/details/1968-volkswagen-beetle-owners-manual-english",
+       "says": "1969 US brochure: aluminum-magnesium engine; workshop manual: crankcase cast of light-metal alloy"
+      },
+      {
+       "name": "Wikipedia - Volkswagen air-cooled engine / Volkswagen Beetle",
+       "url": "https://en.wikipedia.org/wiki/Volkswagen_air-cooled_engine",
+       "says": "magnesium-alloy crankcase; cast-iron cylinders"
+      }
+     ],
+     "note": "Cast-iron cylinders are stated by Wikipedia only (VW: 'special cylinder casting').",
+     "second_pass": true
+    },
+    "head_material": {
+     "value": "aluminum alloy",
+     "sources": [
+      {
+       "name": "Volkswagen factory literature (VW of America owner's manuals 1962-1979, US/Canadian brochures, 1952-57 and 1961-65 VW workshop manuals, VW NHTSA report; archive.org) - counted as one source",
+       "url": "https://archive.org/details/1968-volkswagen-beetle-owners-manual-english",
+       "says": "workshop manual: detachable cylinder head of light alloy casting"
+      },
+      {
+       "name": "Wikipedia - Volkswagen air-cooled engine / Volkswagen Beetle",
+       "url": "https://en.wikipedia.org/wiki/Volkswagen_air-cooled_engine",
+       "says": "cast aluminum alloy cylinder heads"
+      }
+     ],
+     "note": "",
+     "second_pass": true
+    },
+    "fuel_type": {
+     "value": "gasoline",
+     "sources": [
+      {
+       "name": "Volkswagen factory literature (VW of America owner's manuals 1962-1979, US/Canadian brochures, 1952-57 and 1961-65 VW workshop manuals, VW NHTSA report; archive.org) - counted as one source",
+       "url": "https://archive.org/details/1968-volkswagen-beetle-owners-manual-english",
+       "says": "owner's manuals: fuel requirements"
+      },
+      {
+       "name": "Wikipedia - Volkswagen air-cooled engine / Volkswagen Beetle",
+       "url": "https://en.wikipedia.org/wiki/Volkswagen_air-cooled_engine",
+       "says": "gasoline-fuelled"
+      },
+      {
+       "name": "Walter Henry Nelson, Small Wonder, appendix 'How to Tell the Age of a Volkswagen'",
+       "url": "https://archive.org/details/walter-henry-small-wonder-the-amazing-story-of-the-volkswagen-beetle-appendix-ho",
+       "says": "lead-free gasoline for catalyst cars"
+      }
+     ],
+     "note": ""
+    },
+    "bore_in": {
+     "value": 3.0315,
+     "sources": [
+      {
+       "name": "Volkswagen factory literature (VW of America owner's manuals 1962-1979, US/Canadian brochures, 1952-57 and 1961-65 VW workshop manuals, VW NHTSA report; archive.org) - counted as one source",
+       "url": "https://archive.org/details/1968-volkswagen-beetle-owners-manual-english",
+       "says": "1967 owner's manual table: 1192 cc bore 77 mm (3.03 in), stroke 64 mm (2.52 in)"
+      },
+      {
+       "name": "Autobook: Volkswagen Beetle 1954-67 (Autopress) - technical data",
+       "url": "https://archive.org/details/volkswagen-beetle-1954-67-autobook",
+       "says": "VW 1200: cylinder bore 77 mm, stroke 64 mm"
+      },
+      {
+       "name": "Standard Catalog of Volkswagen 1946-2004 (Gunnell, Krause)",
+       "url": "https://archive.org/details/standardcatalogo0000gunn_h1o8",
+       "says": "77 x 64 mm"
+      },
+      {
+       "name": "Wikipedia - Volkswagen air-cooled engine / Volkswagen Beetle",
+       "url": "https://en.wikipedia.org/wiki/Volkswagen_air-cooled_engine",
+       "says": "77 mm bore"
+      }
+     ],
+     "note": "77 mm."
+    },
+    "stroke_in": {
+     "value": 2.5197,
+     "sources": [
+      {
+       "name": "Volkswagen factory literature (VW of America owner's manuals 1962-1979, US/Canadian brochures, 1952-57 and 1961-65 VW workshop manuals, VW NHTSA report; archive.org) - counted as one source",
+       "url": "https://archive.org/details/1968-volkswagen-beetle-owners-manual-english",
+       "says": "stroke 64 mm (2.52 in)"
+      },
+      {
+       "name": "Autobook: Volkswagen Beetle 1954-67 (Autopress) - technical data",
+       "url": "https://archive.org/details/volkswagen-beetle-1954-67-autobook",
+       "says": "stroke 64 mm"
+      },
+      {
+       "name": "Standard Catalog of Volkswagen 1946-2004 (Gunnell, Krause)",
+       "url": "https://archive.org/details/standardcatalogo0000gunn_h1o8",
+       "says": "77 x 64 mm"
+      },
+      {
+       "name": "Wikipedia - Volkswagen air-cooled engine / Volkswagen Beetle",
+       "url": "https://en.wikipedia.org/wiki/Volkswagen_air-cooled_engine",
+       "says": "64 mm stroke"
+      }
+     ],
+     "note": "64 mm."
+    },
+    "displacement_ci": {
+     "value": 72.7,
+     "sources": [
+      {
+       "name": "Volkswagen factory literature (VW of America owner's manuals 1962-1979, US/Canadian brochures, 1952-57 and 1961-65 VW workshop manuals, VW NHTSA report; archive.org) - counted as one source",
+       "url": "https://archive.org/details/1968-volkswagen-beetle-owners-manual-english",
+       "says": "1192 cc (72.74 cu in)"
+      },
+      {
+       "name": "Autobook: Volkswagen Beetle 1954-67 (Autopress) - technical data",
+       "url": "https://archive.org/details/volkswagen-beetle-1954-67-autobook",
+       "says": "capacity 1192 cc"
+      },
+      {
+       "name": "Standard Catalog of Volkswagen 1946-2004 (Gunnell, Krause)",
+       "url": "https://archive.org/details/standardcatalogo0000gunn_h1o8",
+       "says": "1192 cc"
+      }
+     ],
+     "note": ""
+    },
+    "displacement_l": {
+     "value": 1.2,
+     "sources": [
+      {
+       "name": "Volkswagen factory literature (VW of America owner's manuals 1962-1979, US/Canadian brochures, 1952-57 and 1961-65 VW workshop manuals, VW NHTSA report; archive.org) - counted as one source",
+       "url": "https://archive.org/details/1968-volkswagen-beetle-owners-manual-english",
+       "says": "1192 cc"
+      },
+      {
+       "name": "Autobook: Volkswagen Beetle 1954-67 (Autopress) - technical data",
+       "url": "https://archive.org/details/volkswagen-beetle-1954-67-autobook",
+       "says": "1192 cc"
+      },
+      {
+       "name": "Wikipedia - Volkswagen air-cooled engine / Volkswagen Beetle",
+       "url": "https://en.wikipedia.org/wiki/Volkswagen_air-cooled_engine",
+       "says": "1192 cc"
+      }
+     ],
+     "note": ""
+    },
+    "compression_ratio": {
+     "value": "6.6:1 (1954-Aug 1960); 7.0:1 (Aug 1960 on, 34 PS engine)",
+     "sources": [
+      {
+       "name": "Volkswagen factory literature (VW of America owner's manuals 1962-1979, US/Canadian brochures, 1952-57 and 1961-65 VW workshop manuals, VW NHTSA report; archive.org) - counted as one source",
+       "url": "https://archive.org/details/1968-volkswagen-beetle-owners-manual-english",
+       "says": "1962-64 owner's manuals: 7.0:1"
+      },
+      {
+       "name": "Autobook: Volkswagen Beetle 1954-67 (Autopress) - technical data",
+       "url": "https://archive.org/details/volkswagen-beetle-1954-67-autobook",
+       "says": "From Aug 1954 6.6 to 1; from Aug 1960 7.0 to 1"
+      },
+      {
+       "name": "Standard Catalog of Volkswagen 1946-2004 (Gunnell, Krause)",
+       "url": "https://archive.org/details/standardcatalogo0000gunn_h1o8",
+       "says": "6.6:1 (1954-56 specs); 7.0:1 (1961-65)"
+      },
+      {
+       "name": "Walter Henry Nelson, Small Wonder, appendix 'How to Tell the Age of a Volkswagen'",
+       "url": "https://archive.org/details/walter-henry-small-wonder-the-amazing-story-of-the-volkswagen-beetle-appendix-ho",
+       "says": "5.8:1 to 6.6:1 (1954)"
+      },
+      {
+       "name": "Consumer Guide Beetle history (HowStuffWorks, archived)",
+       "url": "https://auto.howstuffworks.com/1945-1959-volkswagen-beetle.htm",
+       "says": "compression 5.8 to 6.6:1"
+      }
+     ],
+     "note": ""
+    },
+    "induction": {
+     "value": "1-bbl Solex downdraft carburetor",
+     "sources": [
+      {
+       "name": "Volkswagen factory literature (VW of America owner's manuals 1962-1979, US/Canadian brochures, 1952-57 and 1961-65 VW workshop manuals, VW NHTSA report; archive.org) - counted as one source",
+       "url": "https://archive.org/details/1968-volkswagen-beetle-owners-manual-english",
+       "says": "downdraft carburetor with automatic choke (owner's manuals)"
+      },
+      {
+       "name": "Autobook: Volkswagen Beetle 1954-67 (Autopress) - technical data",
+       "url": "https://archive.org/details/volkswagen-beetle-1954-67-autobook",
+       "says": "Solex 28 PCI / 28 PICT / 30 PICT downdraught carburetters"
+      },
+      {
+       "name": "Hagerty Valuation Tools - VW Beetle (Wayback copy)",
+       "url": "https://www.hagerty.com/valuation-tools/volkswagen/beetle",
+       "says": "1954-1965: 1bbl"
+      }
+     ],
+     "note": ""
+    },
+    "years": {
+     "value": "1954-1965 (US Beetle); engine redesigned Aug 1960 (1961 model year)",
+     "sources": [
+      {
+       "name": "Walter Henry Nelson, Small Wonder, appendix 'How to Tell the Age of a Volkswagen'",
+       "url": "https://archive.org/details/walter-henry-small-wonder-the-amazing-story-of-the-volkswagen-beetle-appendix-ho",
+       "says": "1954 1192 cc; 1966 1300"
+      },
+      {
+       "name": "Autobook: Volkswagen Beetle 1954-67 (Autopress) - technical data",
+       "url": "https://archive.org/details/volkswagen-beetle-1954-67-autobook",
+       "says": "redesigned engine introduced August 1960"
+      },
+      {
+       "name": "Standard Catalog of Volkswagen 1946-2004 (Gunnell, Krause)",
+       "url": "https://archive.org/details/standardcatalogo0000gunn_h1o8",
+       "says": "1954-1965 1192 cc"
+      }
+     ],
+     "note": ""
+    }
+   },
+   "variants": [
+    {
+     "year": "1954-1960",
+     "hp": 36,
+     "hp_basis": "SAE gross",
+     "rpm": 3700,
+     "compression_ratio": 6.6,
+     "code": "1200 (30 PS DIN)",
+     "sources": [
+      {
+       "name": "Volkswagen factory literature (VW of America owner's manuals 1962-1979, US/Canadian brochures, 1952-57 and 1961-65 VW workshop manuals, VW NHTSA report; archive.org) - counted as one source",
+       "url": "https://archive.org/details/1968-volkswagen-beetle-owners-manual-english",
+       "says": "1952-57 workshop manual: 36 BHP at 3700 rpm SAE (= 30 BHP DIN at 3400)"
+      },
+      {
+       "name": "Standard Catalog of Volkswagen 1946-2004 (Gunnell, Krause)",
+       "url": "https://archive.org/details/standardcatalogo0000gunn_h1o8",
+       "says": "36 at 3700 rpm, 6.6:1"
+      },
+      {
+       "name": "Walter Henry Nelson, Small Wonder, appendix 'How to Tell the Age of a Volkswagen'",
+       "url": "https://archive.org/details/walter-henry-small-wonder-the-amazing-story-of-the-volkswagen-beetle-appendix-ho",
+       "says": "30 hp to 36 hp"
+      },
+      {
+       "name": "Consumer Guide Beetle history (HowStuffWorks, archived)",
+       "url": "https://auto.howstuffworks.com/1945-1959-volkswagen-beetle.htm",
+       "says": "upping horsepower from 30 to 36"
+      }
+     ]
+    },
+    {
+     "year": "1961-1964",
+     "hp": 40,
+     "hp_basis": "SAE gross",
+     "rpm": 3900,
+     "compression_ratio": 7.0,
+     "code": "1200 (34 PS DIN, Aug 1960 redesign)",
+     "sources": [
+      {
+       "name": "Volkswagen factory literature (VW of America owner's manuals 1962-1979, US/Canadian brochures, 1952-57 and 1961-65 VW workshop manuals, VW NHTSA report; archive.org) - counted as one source",
+       "url": "https://archive.org/details/1968-volkswagen-beetle-owners-manual-english",
+       "says": "1962-64 owner's manuals: Brake Horsepower (SAE) 40 at 3900 rpm, 7.0:1"
+      },
+      {
+       "name": "Standard Catalog of Volkswagen 1946-2004 (Gunnell, Krause)",
+       "url": "https://archive.org/details/standardcatalogo0000gunn_h1o8",
+       "says": "40 at 3900 rpm, 7.0:1"
+      },
+      {
+       "name": "Walter Henry Nelson, Small Wonder, appendix 'How to Tell the Age of a Volkswagen'",
+       "url": "https://archive.org/details/walter-henry-small-wonder-the-amazing-story-of-the-volkswagen-beetle-appendix-ho",
+       "says": "1961: from 36 to 40 hp"
+      },
+      {
+       "name": "Autobook: Volkswagen Beetle 1954-67 (Autopress) - technical data",
+       "url": "https://archive.org/details/volkswagen-beetle-1954-67-autobook",
+       "says": "7:1 ... 34 bhp (DIN)"
+      }
+     ]
+    }
+   ],
+   "unverified": {
+    "firing_order": "1-4-3-2 per VW literature only (1961-65 workshop manual, 1968/1977/1978 owner's manuals); no independent second source found."
+   },
+   "unverified_variants": [
+    {
+     "year": 1965,
+     "hp_found": [
+      40,
+      41.5
+     ],
+     "note": "1965 VW owner's manual and 1966 Canadian brochure: 41.5 SAE hp at 3900 rpm; Krause and Nelson keep 40. Same 34 PS DIN engine."
+    }
+   ]
+  },
+  {
+   "id": "vw-1285",
+   "name": "Volkswagen 1285 cc air-cooled flat-four (US Beetle 1966)",
+   "fields": {
+    "num_cylinders": {
+     "value": 4,
+     "sources": [
+      {
+       "name": "Volkswagen factory literature (VW of America owner's manuals 1962-1979, US/Canadian brochures, 1952-57 and 1961-65 VW workshop manuals, VW NHTSA report; archive.org) - counted as one source",
+       "url": "https://archive.org/details/1968-volkswagen-beetle-owners-manual-english",
+       "says": "Four cylinder, four stroke, horizontally opposed, in rear"
+      },
+      {
+       "name": "Autobook: Volkswagen Beetle 1954-67 (Autopress) - technical data",
+       "url": "https://archive.org/details/volkswagen-beetle-1954-67-autobook",
+       "says": "VW 1200/1300/1500 flat-four"
+      },
+      {
+       "name": "Wikipedia - Volkswagen air-cooled engine / Volkswagen Beetle",
+       "url": "https://en.wikipedia.org/wiki/Volkswagen_air-cooled_engine",
+       "says": "four horizontally opposed cylinders"
+      }
+     ],
+     "note": ""
+    },
+    "configuration": {
+     "value": "air-cooled horizontally opposed flat-four (boxer)",
+     "sources": [
+      {
+       "name": "Volkswagen factory literature (VW of America owner's manuals 1962-1979, US/Canadian brochures, 1952-57 and 1961-65 VW workshop manuals, VW NHTSA report; archive.org) - counted as one source",
+       "url": "https://archive.org/details/1968-volkswagen-beetle-owners-manual-english",
+       "says": "Four cylinder, four stroke, horizontally opposed, in rear. Air cooling by fan"
+      },
+      {
+       "name": "Wikipedia - Volkswagen air-cooled engine / Volkswagen Beetle",
+       "url": "https://en.wikipedia.org/wiki/Volkswagen_air-cooled_engine",
+       "says": "air-cooled boxer engine"
+      },
+      {
+       "name": "Autobook: Volkswagen Beetle 1954-67 (Autopress) - technical data",
+       "url": "https://archive.org/details/volkswagen-beetle-1954-67-autobook",
+       "says": "air-cooled horizontally opposed engine"
+      }
+     ],
+     "note": ""
+    },
+    "valvetrain": {
+     "value": "OHV pushrod, 2 valves per cylinder, single central camshaft",
+     "sources": [
+      {
+       "name": "Volkswagen factory literature (VW of America owner's manuals 1962-1979, US/Canadian brochures, 1952-57 and 1961-65 VW workshop manuals, VW NHTSA report; archive.org) - counted as one source",
+       "url": "https://archive.org/details/1968-volkswagen-beetle-owners-manual-english",
+       "says": "1952-57 and 1961-65 workshop manuals: valves of the overhead type, operated by the cams via push rods and rocker arms; 1968 US brochure 'Valves: Overhead type'"
+      },
+      {
+       "name": "Autobook: Volkswagen Beetle 1954-67 (Autopress) - technical data",
+       "url": "https://archive.org/details/volkswagen-beetle-1954-67-autobook",
+       "says": "overhead valves and pushrods; camshaft in crankcase"
+      },
+      {
+       "name": "Wikipedia - Volkswagen air-cooled engine / Volkswagen Beetle",
+       "url": "https://en.wikipedia.org/wiki/Volkswagen_air-cooled_engine",
+       "says": "Pushrod OHV"
+      }
+     ],
+     "note": ""
+    },
+    "block_material": {
+     "value": "magnesium alloy crankcase (split); separate finned cast-iron cylinders",
+     "sources": [
+      {
+       "name": "Volkswagen factory literature (VW of America owner's manuals 1962-1979, US/Canadian brochures, 1952-57 and 1961-65 VW workshop manuals, VW NHTSA report; archive.org) - counted as one source",
+       "url": "https://archive.org/details/1968-volkswagen-beetle-owners-manual-english",
+       "says": "1969 US brochure: aluminum-magnesium engine; workshop manual: crankcase cast of light-metal alloy"
+      },
+      {
+       "name": "Wikipedia - Volkswagen air-cooled engine / Volkswagen Beetle",
+       "url": "https://en.wikipedia.org/wiki/Volkswagen_air-cooled_engine",
+       "says": "magnesium-alloy crankcase; cast-iron cylinders"
+      }
+     ],
+     "note": "Cast-iron cylinders are stated by Wikipedia only (VW: 'special cylinder casting').",
+     "second_pass": true
+    },
+    "head_material": {
+     "value": "aluminum alloy",
+     "sources": [
+      {
+       "name": "Volkswagen factory literature (VW of America owner's manuals 1962-1979, US/Canadian brochures, 1952-57 and 1961-65 VW workshop manuals, VW NHTSA report; archive.org) - counted as one source",
+       "url": "https://archive.org/details/1968-volkswagen-beetle-owners-manual-english",
+       "says": "workshop manual: detachable cylinder head of light alloy casting"
+      },
+      {
+       "name": "Wikipedia - Volkswagen air-cooled engine / Volkswagen Beetle",
+       "url": "https://en.wikipedia.org/wiki/Volkswagen_air-cooled_engine",
+       "says": "cast aluminum alloy cylinder heads"
+      }
+     ],
+     "note": "",
+     "second_pass": true
+    },
+    "fuel_type": {
+     "value": "gasoline",
+     "sources": [
+      {
+       "name": "Volkswagen factory literature (VW of America owner's manuals 1962-1979, US/Canadian brochures, 1952-57 and 1961-65 VW workshop manuals, VW NHTSA report; archive.org) - counted as one source",
+       "url": "https://archive.org/details/1968-volkswagen-beetle-owners-manual-english",
+       "says": "owner's manuals: fuel requirements"
+      },
+      {
+       "name": "Wikipedia - Volkswagen air-cooled engine / Volkswagen Beetle",
+       "url": "https://en.wikipedia.org/wiki/Volkswagen_air-cooled_engine",
+       "says": "gasoline-fuelled"
+      },
+      {
+       "name": "Walter Henry Nelson, Small Wonder, appendix 'How to Tell the Age of a Volkswagen'",
+       "url": "https://archive.org/details/walter-henry-small-wonder-the-amazing-story-of-the-volkswagen-beetle-appendix-ho",
+       "says": "lead-free gasoline for catalyst cars"
+      }
+     ],
+     "note": ""
+    },
+    "bore_in": {
+     "value": 3.0315,
+     "sources": [
+      {
+       "name": "Volkswagen factory literature (VW of America owner's manuals 1962-1979, US/Canadian brochures, 1952-57 and 1961-65 VW workshop manuals, VW NHTSA report; archive.org) - counted as one source",
+       "url": "https://archive.org/details/1968-volkswagen-beetle-owners-manual-english",
+       "says": "1966 Canadian brochure: Bore x stroke 77 mm x 69 mm (3.03 x 2.72 in.)"
+      },
+      {
+       "name": "Autobook: Volkswagen Beetle 1954-67 (Autopress) - technical data",
+       "url": "https://archive.org/details/volkswagen-beetle-1954-67-autobook",
+       "says": "VW 1300: bore 77 mm, stroke 69 mm"
+      },
+      {
+       "name": "Standard Catalog of Volkswagen 1946-2004 (Gunnell, Krause)",
+       "url": "https://archive.org/details/standardcatalogo0000gunn_h1o8",
+       "says": "77 x 69 mm"
+      },
+      {
+       "name": "Wikipedia - Volkswagen air-cooled engine / Volkswagen Beetle",
+       "url": "https://en.wikipedia.org/wiki/Volkswagen_air-cooled_engine",
+       "says": "1300: bore 77 mm"
+      }
+     ],
+     "note": "77 mm."
+    },
+    "stroke_in": {
+     "value": 2.7165,
+     "sources": [
+      {
+       "name": "Volkswagen factory literature (VW of America owner's manuals 1962-1979, US/Canadian brochures, 1952-57 and 1961-65 VW workshop manuals, VW NHTSA report; archive.org) - counted as one source",
+       "url": "https://archive.org/details/1968-volkswagen-beetle-owners-manual-english",
+       "says": "69 mm (2.72 in.)"
+      },
+      {
+       "name": "Autobook: Volkswagen Beetle 1954-67 (Autopress) - technical data",
+       "url": "https://archive.org/details/volkswagen-beetle-1954-67-autobook",
+       "says": "stroke 69 mm"
+      },
+      {
+       "name": "Standard Catalog of Volkswagen 1946-2004 (Gunnell, Krause)",
+       "url": "https://archive.org/details/standardcatalogo0000gunn_h1o8",
+       "says": "77 x 69 mm"
+      },
+      {
+       "name": "Wikipedia - Volkswagen air-cooled engine / Volkswagen Beetle",
+       "url": "https://en.wikipedia.org/wiki/Volkswagen_air-cooled_engine",
+       "says": "stroke 69 mm"
+      }
+     ],
+     "note": "69 mm (Type 3 crankshaft)."
+    },
+    "displacement_ci": {
+     "value": 78.4,
+     "sources": [
+      {
+       "name": "Volkswagen factory literature (VW of America owner's manuals 1962-1979, US/Canadian brochures, 1952-57 and 1961-65 VW workshop manuals, VW NHTSA report; archive.org) - counted as one source",
+       "url": "https://archive.org/details/1968-volkswagen-beetle-owners-manual-english",
+       "says": "1285 cc (78.41 cu in)"
+      },
+      {
+       "name": "Autobook: Volkswagen Beetle 1954-67 (Autopress) - technical data",
+       "url": "https://archive.org/details/volkswagen-beetle-1954-67-autobook",
+       "says": "1285 cc"
+      },
+      {
+       "name": "Standard Catalog of Volkswagen 1946-2004 (Gunnell, Krause)",
+       "url": "https://archive.org/details/standardcatalogo0000gunn_h1o8",
+       "says": "1285 cc"
+      }
+     ],
+     "note": ""
+    },
+    "displacement_l": {
+     "value": 1.3,
+     "sources": [
+      {
+       "name": "Volkswagen factory literature (VW of America owner's manuals 1962-1979, US/Canadian brochures, 1952-57 and 1961-65 VW workshop manuals, VW NHTSA report; archive.org) - counted as one source",
+       "url": "https://archive.org/details/1968-volkswagen-beetle-owners-manual-english",
+       "says": "1285 cc"
+      },
+      {
+       "name": "Autobook: Volkswagen Beetle 1954-67 (Autopress) - technical data",
+       "url": "https://archive.org/details/volkswagen-beetle-1954-67-autobook",
+       "says": "1285 cc"
+      },
+      {
+       "name": "Wikipedia - Volkswagen air-cooled engine / Volkswagen Beetle",
+       "url": "https://en.wikipedia.org/wiki/Volkswagen_air-cooled_engine",
+       "says": "1285 cc"
+      }
+     ],
+     "note": ""
+    },
+    "compression_ratio": {
+     "value": "7.3:1",
+     "sources": [
+      {
+       "name": "Volkswagen factory literature (VW of America owner's manuals 1962-1979, US/Canadian brochures, 1952-57 and 1961-65 VW workshop manuals, VW NHTSA report; archive.org) - counted as one source",
+       "url": "https://archive.org/details/1968-volkswagen-beetle-owners-manual-english",
+       "says": "1966 owner's manual: 7.3:1"
+      },
+      {
+       "name": "Autobook: Volkswagen Beetle 1954-67 (Autopress) - technical data",
+       "url": "https://archive.org/details/volkswagen-beetle-1954-67-autobook",
+       "says": "7.3 to 1"
+      },
+      {
+       "name": "Standard Catalog of Volkswagen 1946-2004 (Gunnell, Krause)",
+       "url": "https://archive.org/details/standardcatalogo0000gunn_h1o8",
+       "says": "7.3:1"
+      }
+     ],
+     "note": ""
+    },
+    "induction": {
+     "value": "1-bbl Solex downdraft carburetor",
+     "sources": [
+      {
+       "name": "Volkswagen factory literature (VW of America owner's manuals 1962-1979, US/Canadian brochures, 1952-57 and 1961-65 VW workshop manuals, VW NHTSA report; archive.org) - counted as one source",
+       "url": "https://archive.org/details/1968-volkswagen-beetle-owners-manual-english",
+       "says": "downdraft carburetor with automatic choke (owner's manuals)"
+      },
+      {
+       "name": "Autobook: Volkswagen Beetle 1954-67 (Autopress) - technical data",
+       "url": "https://archive.org/details/volkswagen-beetle-1954-67-autobook",
+       "says": "Solex 28 PCI / 28 PICT / 30 PICT downdraught carburetters"
+      },
+      {
+       "name": "Hagerty Valuation Tools - VW Beetle (Wayback copy)",
+       "url": "https://www.hagerty.com/valuation-tools/volkswagen/beetle",
+       "says": "1966: 1bbl"
+      }
+     ],
+     "note": ""
+    },
+    "years": {
+     "value": "1966 (only US Beetle year)",
+     "sources": [
+      {
+       "name": "Walter Henry Nelson, Small Wonder, appendix 'How to Tell the Age of a Volkswagen'",
+       "url": "https://archive.org/details/walter-henry-small-wonder-the-amazing-story-of-the-volkswagen-beetle-appendix-ho",
+       "says": "1966: 1200 to 1300 cc; 1967: to 1500"
+      },
+      {
+       "name": "Consumer Guide Beetle history (HowStuffWorks, archived)",
+       "url": "https://auto.howstuffworks.com/1945-1959-volkswagen-beetle.htm",
+       "says": "1966 1285 cc"
+      },
+      {
+       "name": "Standard Catalog of Volkswagen 1946-2004 (Gunnell, Krause)",
+       "url": "https://archive.org/details/standardcatalogo0000gunn_h1o8",
+       "says": "1966 Beetle 1285 cc"
+      }
+     ],
+     "note": ""
+    }
+   },
+   "variants": [
+    {
+     "year": 1966,
+     "hp": 50,
+     "hp_basis": "SAE gross",
+     "rpm": 4600,
+     "compression_ratio": 7.3,
+     "code": "1300 (40 PS DIN)",
+     "sources": [
+      {
+       "name": "Volkswagen factory literature (VW of America owner's manuals 1962-1979, US/Canadian brochures, 1952-57 and 1961-65 VW workshop manuals, VW NHTSA report; archive.org) - counted as one source",
+       "url": "https://archive.org/details/1968-volkswagen-beetle-owners-manual-english",
+       "says": "1966 owner's manual: 50 at 4600 rpm; Canadian brochure SAE output 50 b.h.p."
+      },
+      {
+       "name": "Standard Catalog of Volkswagen 1946-2004 (Gunnell, Krause)",
+       "url": "https://archive.org/details/standardcatalogo0000gunn_h1o8",
+       "says": "50 at 4600 rpm"
+      },
+      {
+       "name": "Walter Henry Nelson, Small Wonder, appendix 'How to Tell the Age of a Volkswagen'",
+       "url": "https://archive.org/details/walter-henry-small-wonder-the-amazing-story-of-the-volkswagen-beetle-appendix-ho",
+       "says": "from 40 to 50"
+      },
+      {
+       "name": "Consumer Guide Beetle history (HowStuffWorks, archived)",
+       "url": "https://auto.howstuffworks.com/1945-1959-volkswagen-beetle.htm",
+       "says": "1285 cc and 50"
+      },
+      {
+       "name": "Autobook: Volkswagen Beetle 1954-67 (Autopress) - technical data",
+       "url": "https://archive.org/details/volkswagen-beetle-1954-67-autobook",
+       "says": "50 bhp at 4600"
+      }
+     ]
+    }
+   ],
+   "unverified": {
+    "firing_order": "1-4-3-2 per VW literature only (1961-65 workshop manual, 1968/1977/1978 owner's manuals); no independent second source found."
+   },
+   "unverified_variants": []
+  },
+  {
+   "id": "vw-1493",
+   "name": "Volkswagen 1493 cc air-cooled flat-four (US Beetle 1967-1969)",
+   "fields": {
+    "num_cylinders": {
+     "value": 4,
+     "sources": [
+      {
+       "name": "Volkswagen factory literature (VW of America owner's manuals 1962-1979, US/Canadian brochures, 1952-57 and 1961-65 VW workshop manuals, VW NHTSA report; archive.org) - counted as one source",
+       "url": "https://archive.org/details/1968-volkswagen-beetle-owners-manual-english",
+       "says": "Four cylinder, four stroke, horizontally opposed, in rear"
+      },
+      {
+       "name": "Autobook: Volkswagen Beetle 1954-67 (Autopress) - technical data",
+       "url": "https://archive.org/details/volkswagen-beetle-1954-67-autobook",
+       "says": "VW 1200/1300/1500 flat-four"
+      },
+      {
+       "name": "Wikipedia - Volkswagen air-cooled engine / Volkswagen Beetle",
+       "url": "https://en.wikipedia.org/wiki/Volkswagen_air-cooled_engine",
+       "says": "four horizontally opposed cylinders"
+      }
+     ],
+     "note": ""
+    },
+    "configuration": {
+     "value": "air-cooled horizontally opposed flat-four (boxer)",
+     "sources": [
+      {
+       "name": "Volkswagen factory literature (VW of America owner's manuals 1962-1979, US/Canadian brochures, 1952-57 and 1961-65 VW workshop manuals, VW NHTSA report; archive.org) - counted as one source",
+       "url": "https://archive.org/details/1968-volkswagen-beetle-owners-manual-english",
+       "says": "Four cylinder, four stroke, horizontally opposed, in rear. Air cooling by fan"
+      },
+      {
+       "name": "Wikipedia - Volkswagen air-cooled engine / Volkswagen Beetle",
+       "url": "https://en.wikipedia.org/wiki/Volkswagen_air-cooled_engine",
+       "says": "air-cooled boxer engine"
+      },
+      {
+       "name": "Autobook: Volkswagen Beetle 1954-67 (Autopress) - technical data",
+       "url": "https://archive.org/details/volkswagen-beetle-1954-67-autobook",
+       "says": "air-cooled horizontally opposed engine"
+      }
+     ],
+     "note": ""
+    },
+    "valvetrain": {
+     "value": "OHV pushrod, 2 valves per cylinder, single central camshaft",
+     "sources": [
+      {
+       "name": "Volkswagen factory literature (VW of America owner's manuals 1962-1979, US/Canadian brochures, 1952-57 and 1961-65 VW workshop manuals, VW NHTSA report; archive.org) - counted as one source",
+       "url": "https://archive.org/details/1968-volkswagen-beetle-owners-manual-english",
+       "says": "1952-57 and 1961-65 workshop manuals: valves of the overhead type, operated by the cams via push rods and rocker arms; 1968 US brochure 'Valves: Overhead type'"
+      },
+      {
+       "name": "Autobook: Volkswagen Beetle 1954-67 (Autopress) - technical data",
+       "url": "https://archive.org/details/volkswagen-beetle-1954-67-autobook",
+       "says": "overhead valves and pushrods; camshaft in crankcase"
+      },
+      {
+       "name": "Wikipedia - Volkswagen air-cooled engine / Volkswagen Beetle",
+       "url": "https://en.wikipedia.org/wiki/Volkswagen_air-cooled_engine",
+       "says": "Pushrod OHV"
+      }
+     ],
+     "note": ""
+    },
+    "block_material": {
+     "value": "magnesium alloy crankcase (split); separate finned cast-iron cylinders",
+     "sources": [
+      {
+       "name": "Volkswagen factory literature (VW of America owner's manuals 1962-1979, US/Canadian brochures, 1952-57 and 1961-65 VW workshop manuals, VW NHTSA report; archive.org) - counted as one source",
+       "url": "https://archive.org/details/1968-volkswagen-beetle-owners-manual-english",
+       "says": "1969 US brochure: aluminum-magnesium engine; workshop manual: crankcase cast of light-metal alloy"
+      },
+      {
+       "name": "Wikipedia - Volkswagen air-cooled engine / Volkswagen Beetle",
+       "url": "https://en.wikipedia.org/wiki/Volkswagen_air-cooled_engine",
+       "says": "magnesium-alloy crankcase; cast-iron cylinders"
+      }
+     ],
+     "note": "Cast-iron cylinders are stated by Wikipedia only (VW: 'special cylinder casting').",
+     "second_pass": true
+    },
+    "head_material": {
+     "value": "aluminum alloy",
+     "sources": [
+      {
+       "name": "Volkswagen factory literature (VW of America owner's manuals 1962-1979, US/Canadian brochures, 1952-57 and 1961-65 VW workshop manuals, VW NHTSA report; archive.org) - counted as one source",
+       "url": "https://archive.org/details/1968-volkswagen-beetle-owners-manual-english",
+       "says": "workshop manual: detachable cylinder head of light alloy casting"
+      },
+      {
+       "name": "Wikipedia - Volkswagen air-cooled engine / Volkswagen Beetle",
+       "url": "https://en.wikipedia.org/wiki/Volkswagen_air-cooled_engine",
+       "says": "cast aluminum alloy cylinder heads"
+      }
+     ],
+     "note": "",
+     "second_pass": true
+    },
+    "fuel_type": {
+     "value": "gasoline",
+     "sources": [
+      {
+       "name": "Volkswagen factory literature (VW of America owner's manuals 1962-1979, US/Canadian brochures, 1952-57 and 1961-65 VW workshop manuals, VW NHTSA report; archive.org) - counted as one source",
+       "url": "https://archive.org/details/1968-volkswagen-beetle-owners-manual-english",
+       "says": "owner's manuals: fuel requirements"
+      },
+      {
+       "name": "Wikipedia - Volkswagen air-cooled engine / Volkswagen Beetle",
+       "url": "https://en.wikipedia.org/wiki/Volkswagen_air-cooled_engine",
+       "says": "gasoline-fuelled"
+      },
+      {
+       "name": "Walter Henry Nelson, Small Wonder, appendix 'How to Tell the Age of a Volkswagen'",
+       "url": "https://archive.org/details/walter-henry-small-wonder-the-amazing-story-of-the-volkswagen-beetle-appendix-ho",
+       "says": "lead-free gasoline for catalyst cars"
+      }
+     ],
+     "note": ""
+    },
+    "bore_in": {
+     "value": 3.2677,
+     "sources": [
+      {
+       "name": "Volkswagen factory literature (VW of America owner's manuals 1962-1979, US/Canadian brochures, 1952-57 and 1961-65 VW workshop manuals, VW NHTSA report; archive.org) - counted as one source",
+       "url": "https://archive.org/details/1968-volkswagen-beetle-owners-manual-english",
+       "says": "1968 US brochure: Bore 3.27 inches, Stroke 2.72 inches; 1968 owner's manual 83 mm (3.27 in)"
+      },
+      {
+       "name": "Autobook: Volkswagen Beetle 1954-67 (Autopress) - technical data",
+       "url": "https://archive.org/details/volkswagen-beetle-1954-67-autobook",
+       "says": "VW 1500: bore 83 mm, stroke 69 mm"
+      },
+      {
+       "name": "Standard Catalog of Volkswagen 1946-2004 (Gunnell, Krause)",
+       "url": "https://archive.org/details/standardcatalogo0000gunn_h1o8",
+       "says": "83 x 69 mm"
+      },
+      {
+       "name": "Wikipedia - Volkswagen air-cooled engine / Volkswagen Beetle",
+       "url": "https://en.wikipedia.org/wiki/Volkswagen_air-cooled_engine",
+       "says": "83 mm bore"
+      }
+     ],
+     "note": "83 mm."
+    },
+    "stroke_in": {
+     "value": 2.7165,
+     "sources": [
+      {
+       "name": "Volkswagen factory literature (VW of America owner's manuals 1962-1979, US/Canadian brochures, 1952-57 and 1961-65 VW workshop manuals, VW NHTSA report; archive.org) - counted as one source",
+       "url": "https://archive.org/details/1968-volkswagen-beetle-owners-manual-english",
+       "says": "Stroke 2.72 inches / 69 mm"
+      },
+      {
+       "name": "Autobook: Volkswagen Beetle 1954-67 (Autopress) - technical data",
+       "url": "https://archive.org/details/volkswagen-beetle-1954-67-autobook",
+       "says": "69 mm"
+      },
+      {
+       "name": "Standard Catalog of Volkswagen 1946-2004 (Gunnell, Krause)",
+       "url": "https://archive.org/details/standardcatalogo0000gunn_h1o8",
+       "says": "83 x 69 mm"
+      }
+     ],
+     "note": "69 mm."
+    },
+    "displacement_ci": {
+     "value": 91.1,
+     "sources": [
+      {
+       "name": "Volkswagen factory literature (VW of America owner's manuals 1962-1979, US/Canadian brochures, 1952-57 and 1961-65 VW workshop manuals, VW NHTSA report; archive.org) - counted as one source",
+       "url": "https://archive.org/details/1968-volkswagen-beetle-owners-manual-english",
+       "says": "1968 US brochure: 91.10 cu in (1493 cc)"
+      },
+      {
+       "name": "Autobook: Volkswagen Beetle 1954-67 (Autopress) - technical data",
+       "url": "https://archive.org/details/volkswagen-beetle-1954-67-autobook",
+       "says": "1493 cc"
+      },
+      {
+       "name": "Standard Catalog of Volkswagen 1946-2004 (Gunnell, Krause)",
+       "url": "https://archive.org/details/standardcatalogo0000gunn_h1o8",
+       "says": "1493 cc"
+      }
+     ],
+     "note": ""
+    },
+    "displacement_l": {
+     "value": 1.5,
+     "sources": [
+      {
+       "name": "Volkswagen factory literature (VW of America owner's manuals 1962-1979, US/Canadian brochures, 1952-57 and 1961-65 VW workshop manuals, VW NHTSA report; archive.org) - counted as one source",
+       "url": "https://archive.org/details/1968-volkswagen-beetle-owners-manual-english",
+       "says": "1493 cc"
+      },
+      {
+       "name": "Autobook: Volkswagen Beetle 1954-67 (Autopress) - technical data",
+       "url": "https://archive.org/details/volkswagen-beetle-1954-67-autobook",
+       "says": "1493 cc"
+      },
+      {
+       "name": "Wikipedia - Volkswagen air-cooled engine / Volkswagen Beetle",
+       "url": "https://en.wikipedia.org/wiki/Volkswagen_air-cooled_engine",
+       "says": "1493 cc"
+      }
+     ],
+     "note": ""
+    },
+    "compression_ratio": {
+     "value": "7.5:1",
+     "sources": [
+      {
+       "name": "Volkswagen factory literature (VW of America owner's manuals 1962-1979, US/Canadian brochures, 1952-57 and 1961-65 VW workshop manuals, VW NHTSA report; archive.org) - counted as one source",
+       "url": "https://archive.org/details/1968-volkswagen-beetle-owners-manual-english",
+       "says": "1968 US brochure: 7.5:1"
+      },
+      {
+       "name": "Autobook: Volkswagen Beetle 1954-67 (Autopress) - technical data",
+       "url": "https://archive.org/details/volkswagen-beetle-1954-67-autobook",
+       "says": "7.5 to 1"
+      },
+      {
+       "name": "Standard Catalog of Volkswagen 1946-2004 (Gunnell, Krause)",
+       "url": "https://archive.org/details/standardcatalogo0000gunn_h1o8",
+       "says": "7.5:1"
+      }
+     ],
+     "note": ""
+    },
+    "induction": {
+     "value": "1-bbl Solex downdraft carburetor",
+     "sources": [
+      {
+       "name": "Volkswagen factory literature (VW of America owner's manuals 1962-1979, US/Canadian brochures, 1952-57 and 1961-65 VW workshop manuals, VW NHTSA report; archive.org) - counted as one source",
+       "url": "https://archive.org/details/1968-volkswagen-beetle-owners-manual-english",
+       "says": "downdraft carburetor with automatic choke (owner's manuals)"
+      },
+      {
+       "name": "Autobook: Volkswagen Beetle 1954-67 (Autopress) - technical data",
+       "url": "https://archive.org/details/volkswagen-beetle-1954-67-autobook",
+       "says": "Solex 28 PCI / 28 PICT / 30 PICT downdraught carburetters"
+      },
+      {
+       "name": "Hagerty Valuation Tools - VW Beetle (Wayback copy)",
+       "url": "https://www.hagerty.com/valuation-tools/volkswagen/beetle",
+       "says": "1967-1969: 1bbl"
+      }
+     ],
+     "note": ""
+    },
+    "years": {
+     "value": "1967-1969 (US Beetle)",
+     "sources": [
+      {
+       "name": "Walter Henry Nelson, Small Wonder, appendix 'How to Tell the Age of a Volkswagen'",
+       "url": "https://archive.org/details/walter-henry-small-wonder-the-amazing-story-of-the-volkswagen-beetle-appendix-ho",
+       "says": "1967 1500; 1970 1600"
+      },
+      {
+       "name": "Consumer Guide Beetle history (HowStuffWorks, archived)",
+       "url": "https://auto.howstuffworks.com/1945-1959-volkswagen-beetle.htm",
+       "says": "1967 1493-cc"
+      },
+      {
+       "name": "Standard Catalog of Volkswagen 1946-2004 (Gunnell, Krause)",
+       "url": "https://archive.org/details/standardcatalogo0000gunn_h1o8",
+       "says": "1967-69 1493 cc"
+      }
+     ],
+     "note": ""
+    }
+   },
+   "variants": [
+    {
+     "year": "1967-1969",
+     "hp": 53,
+     "hp_basis": "SAE gross",
+     "rpm": 4200,
+     "compression_ratio": 7.5,
+     "code": "1500 (44 PS DIN)",
+     "sources": [
+      {
+       "name": "Volkswagen factory literature (VW of America owner's manuals 1962-1979, US/Canadian brochures, 1952-57 and 1961-65 VW workshop manuals, VW NHTSA report; archive.org) - counted as one source",
+       "url": "https://archive.org/details/1968-volkswagen-beetle-owners-manual-english",
+       "says": "1967-69 owner's manuals: DIN 44 / SAE 53 bhp at 4200; 1968 US brochure 53 at 4200"
+      },
+      {
+       "name": "Standard Catalog of Volkswagen 1946-2004 (Gunnell, Krause)",
+       "url": "https://archive.org/details/standardcatalogo0000gunn_h1o8",
+       "says": "53 at 4200 rpm"
+      },
+      {
+       "name": "Walter Henry Nelson, Small Wonder, appendix 'How to Tell the Age of a Volkswagen'",
+       "url": "https://archive.org/details/walter-henry-small-wonder-the-amazing-story-of-the-volkswagen-beetle-appendix-ho",
+       "says": "from 50 to 53"
+      },
+      {
+       "name": "Consumer Guide Beetle history (HowStuffWorks, archived)",
+       "url": "https://auto.howstuffworks.com/1945-1959-volkswagen-beetle.htm",
+       "says": "53 horsepower"
+      },
+      {
+       "name": "Hagerty Valuation Tools - VW Beetle (Wayback copy)",
+       "url": "https://www.hagerty.com/valuation-tools/volkswagen/beetle",
+       "says": "1493cc/53hp"
+      }
+     ]
+    }
+   ],
+   "unverified": {
+    "firing_order": "1-4-3-2 per VW literature only (1961-65 workshop manual, 1968/1977/1978 owner's manuals); no independent second source found."
+   },
+   "unverified_variants": []
+  },
+  {
+   "id": "vw-1584",
+   "name": "Volkswagen 1584 cc air-cooled flat-four (US Beetle 1970-1979)",
+   "fields": {
+    "num_cylinders": {
+     "value": 4,
+     "sources": [
+      {
+       "name": "Volkswagen factory literature (VW of America owner's manuals 1962-1979, US/Canadian brochures, 1952-57 and 1961-65 VW workshop manuals, VW NHTSA report; archive.org) - counted as one source",
+       "url": "https://archive.org/details/1968-volkswagen-beetle-owners-manual-english",
+       "says": "Four cylinder, four stroke, horizontally opposed, in rear"
+      },
+      {
+       "name": "Autobook: Volkswagen Beetle 1954-67 (Autopress) - technical data",
+       "url": "https://archive.org/details/volkswagen-beetle-1954-67-autobook",
+       "says": "VW 1200/1300/1500 flat-four"
+      },
+      {
+       "name": "Wikipedia - Volkswagen air-cooled engine / Volkswagen Beetle",
+       "url": "https://en.wikipedia.org/wiki/Volkswagen_air-cooled_engine",
+       "says": "four horizontally opposed cylinders"
+      }
+     ],
+     "note": ""
+    },
+    "configuration": {
+     "value": "air-cooled horizontally opposed flat-four (boxer)",
+     "sources": [
+      {
+       "name": "Volkswagen factory literature (VW of America owner's manuals 1962-1979, US/Canadian brochures, 1952-57 and 1961-65 VW workshop manuals, VW NHTSA report; archive.org) - counted as one source",
+       "url": "https://archive.org/details/1968-volkswagen-beetle-owners-manual-english",
+       "says": "Four cylinder, four stroke, horizontally opposed, in rear. Air cooling by fan"
+      },
+      {
+       "name": "Wikipedia - Volkswagen air-cooled engine / Volkswagen Beetle",
+       "url": "https://en.wikipedia.org/wiki/Volkswagen_air-cooled_engine",
+       "says": "air-cooled boxer engine"
+      },
+      {
+       "name": "Autobook: Volkswagen Beetle 1954-67 (Autopress) - technical data",
+       "url": "https://archive.org/details/volkswagen-beetle-1954-67-autobook",
+       "says": "air-cooled horizontally opposed engine"
+      }
+     ],
+     "note": ""
+    },
+    "valvetrain": {
+     "value": "OHV pushrod, 2 valves per cylinder, single central camshaft",
+     "sources": [
+      {
+       "name": "Volkswagen factory literature (VW of America owner's manuals 1962-1979, US/Canadian brochures, 1952-57 and 1961-65 VW workshop manuals, VW NHTSA report; archive.org) - counted as one source",
+       "url": "https://archive.org/details/1968-volkswagen-beetle-owners-manual-english",
+       "says": "1952-57 and 1961-65 workshop manuals: valves of the overhead type, operated by the cams via push rods and rocker arms; 1968 US brochure 'Valves: Overhead type'"
+      },
+      {
+       "name": "Autobook: Volkswagen Beetle 1954-67 (Autopress) - technical data",
+       "url": "https://archive.org/details/volkswagen-beetle-1954-67-autobook",
+       "says": "overhead valves and pushrods; camshaft in crankcase"
+      },
+      {
+       "name": "Wikipedia - Volkswagen air-cooled engine / Volkswagen Beetle",
+       "url": "https://en.wikipedia.org/wiki/Volkswagen_air-cooled_engine",
+       "says": "Pushrod OHV"
+      }
+     ],
+     "note": ""
+    },
+    "block_material": {
+     "value": "magnesium alloy crankcase (split); separate finned cast-iron cylinders",
+     "sources": [
+      {
+       "name": "Volkswagen factory literature (VW of America owner's manuals 1962-1979, US/Canadian brochures, 1952-57 and 1961-65 VW workshop manuals, VW NHTSA report; archive.org) - counted as one source",
+       "url": "https://archive.org/details/1968-volkswagen-beetle-owners-manual-english",
+       "says": "1969 US brochure: aluminum-magnesium engine; workshop manual: crankcase cast of light-metal alloy"
+      },
+      {
+       "name": "Wikipedia - Volkswagen air-cooled engine / Volkswagen Beetle",
+       "url": "https://en.wikipedia.org/wiki/Volkswagen_air-cooled_engine",
+       "says": "magnesium-alloy crankcase; cast-iron cylinders"
+      }
+     ],
+     "note": "Cast-iron cylinders are stated by Wikipedia only (VW: 'special cylinder casting').",
+     "second_pass": true
+    },
+    "head_material": {
+     "value": "aluminum alloy",
+     "sources": [
+      {
+       "name": "Volkswagen factory literature (VW of America owner's manuals 1962-1979, US/Canadian brochures, 1952-57 and 1961-65 VW workshop manuals, VW NHTSA report; archive.org) - counted as one source",
+       "url": "https://archive.org/details/1968-volkswagen-beetle-owners-manual-english",
+       "says": "workshop manual: detachable cylinder head of light alloy casting"
+      },
+      {
+       "name": "Wikipedia - Volkswagen air-cooled engine / Volkswagen Beetle",
+       "url": "https://en.wikipedia.org/wiki/Volkswagen_air-cooled_engine",
+       "says": "cast aluminum alloy cylinder heads"
+      }
+     ],
+     "note": "",
+     "second_pass": true
+    },
+    "fuel_type": {
+     "value": "gasoline",
+     "sources": [
+      {
+       "name": "Volkswagen factory literature (VW of America owner's manuals 1962-1979, US/Canadian brochures, 1952-57 and 1961-65 VW workshop manuals, VW NHTSA report; archive.org) - counted as one source",
+       "url": "https://archive.org/details/1968-volkswagen-beetle-owners-manual-english",
+       "says": "owner's manuals: fuel requirements"
+      },
+      {
+       "name": "Wikipedia - Volkswagen air-cooled engine / Volkswagen Beetle",
+       "url": "https://en.wikipedia.org/wiki/Volkswagen_air-cooled_engine",
+       "says": "gasoline-fuelled"
+      },
+      {
+       "name": "Walter Henry Nelson, Small Wonder, appendix 'How to Tell the Age of a Volkswagen'",
+       "url": "https://archive.org/details/walter-henry-small-wonder-the-amazing-story-of-the-volkswagen-beetle-appendix-ho",
+       "says": "lead-free gasoline for catalyst cars"
+      }
+     ],
+     "note": ""
+    },
+    "bore_in": {
+     "value": 3.3661,
+     "sources": [
+      {
+       "name": "Volkswagen factory literature (VW of America owner's manuals 1962-1979, US/Canadian brochures, 1952-57 and 1961-65 VW workshop manuals, VW NHTSA report; archive.org) - counted as one source",
+       "url": "https://archive.org/details/1968-volkswagen-beetle-owners-manual-english",
+       "says": "1970 owner's manual: Bore 3.36 in. (85.5 mm), Stroke 2.72 in. (69 mm), 96.6 cu in (1584 cc); same in 1977-79 manuals"
+      },
+      {
+       "name": "Wikipedia - Volkswagen air-cooled engine / Volkswagen Beetle",
+       "url": "https://en.wikipedia.org/wiki/Volkswagen_air-cooled_engine",
+       "says": "85.5 mm bore"
+      }
+     ],
+     "note": "85.5 mm. Krause prints 85 x 69 mm; arithmetic settles it: 85.5^2 x 0.7854 x 69 x 4 = 1584.6 cc, while 85 mm gives 1566 cc.",
+     "second_pass": true
+    },
+    "stroke_in": {
+     "value": 2.7165,
+     "sources": [
+      {
+       "name": "Volkswagen factory literature (VW of America owner's manuals 1962-1979, US/Canadian brochures, 1952-57 and 1961-65 VW workshop manuals, VW NHTSA report; archive.org) - counted as one source",
+       "url": "https://archive.org/details/1968-volkswagen-beetle-owners-manual-english",
+       "says": "Stroke 2.72 in. (69 mm)"
+      },
+      {
+       "name": "Standard Catalog of Volkswagen 1946-2004 (Gunnell, Krause)",
+       "url": "https://archive.org/details/standardcatalogo0000gunn_h1o8",
+       "says": "85 x 69 mm"
+      },
+      {
+       "name": "Wikipedia - Volkswagen air-cooled engine / Volkswagen Beetle",
+       "url": "https://en.wikipedia.org/wiki/Volkswagen_air-cooled_engine",
+       "says": "69 mm stroke"
+      }
+     ],
+     "note": "69 mm."
+    },
+    "displacement_ci": {
+     "value": 96.6,
+     "sources": [
+      {
+       "name": "Volkswagen factory literature (VW of America owner's manuals 1962-1979, US/Canadian brochures, 1952-57 and 1961-65 VW workshop manuals, VW NHTSA report; archive.org) - counted as one source",
+       "url": "https://archive.org/details/1968-volkswagen-beetle-owners-manual-english",
+       "says": "96.6 cu in (1584 cc)"
+      },
+      {
+       "name": "Standard Catalog of Volkswagen 1946-2004 (Gunnell, Krause)",
+       "url": "https://archive.org/details/standardcatalogo0000gunn_h1o8",
+       "says": "96.7-cid"
+      },
+      {
+       "name": "Hagerty Valuation Tools - VW Beetle (Wayback copy)",
+       "url": "https://www.hagerty.com/valuation-tools/volkswagen/beetle",
+       "says": "1585cc"
+      },
+      {
+       "name": "Wikipedia - Volkswagen air-cooled engine / Volkswagen Beetle",
+       "url": "https://en.wikipedia.org/wiki/Volkswagen_air-cooled_engine",
+       "says": "1584 cc"
+      }
+     ],
+     "note": "Krause 96.7, Hagerty 1585 cc - rounding."
+    },
+    "displacement_l": {
+     "value": 1.6,
+     "sources": [
+      {
+       "name": "Volkswagen factory literature (VW of America owner's manuals 1962-1979, US/Canadian brochures, 1952-57 and 1961-65 VW workshop manuals, VW NHTSA report; archive.org) - counted as one source",
+       "url": "https://archive.org/details/1968-volkswagen-beetle-owners-manual-english",
+       "says": "1584 cc"
+      },
+      {
+       "name": "Wikipedia - Volkswagen air-cooled engine / Volkswagen Beetle",
+       "url": "https://en.wikipedia.org/wiki/Volkswagen_air-cooled_engine",
+       "says": "1584 cc"
+      },
+      {
+       "name": "Standard Catalog of Volkswagen 1946-2004 (Gunnell, Krause)",
+       "url": "https://archive.org/details/standardcatalogo0000gunn_h1o8",
+       "says": "1600"
+      }
+     ],
+     "note": ""
+    },
+    "compression_ratio": {
+     "value": "7.5:1 (1970-71); 7.3:1 (1972-79)",
+     "sources": [
+      {
+       "name": "Volkswagen factory literature (VW of America owner's manuals 1962-1979, US/Canadian brochures, 1952-57 and 1961-65 VW workshop manuals, VW NHTSA report; archive.org) - counted as one source",
+       "url": "https://archive.org/details/1968-volkswagen-beetle-owners-manual-english",
+       "says": "1970/1971 owner's manuals 7.5:1; 1977-78 owner's manuals 7.3:1; VW NHTSA report (AJ) 7.3:1"
+      },
+      {
+       "name": "Standard Catalog of Volkswagen 1946-2004 (Gunnell, Krause)",
+       "url": "https://archive.org/details/standardcatalogo0000gunn_h1o8",
+       "says": "7.5:1 (1970-71); 7.3:1 (1972-79)"
+      }
+     ],
+     "note": "Two sources.",
+     "second_pass": true
+    },
+    "induction": {
+     "value": "1-bbl Solex downdraft carburetor 1970-74; Bosch electronic port fuel injection 1975-79 (AJ)",
+     "sources": [
+      {
+       "name": "Volkswagen factory literature (VW of America owner's manuals 1962-1979, US/Canadian brochures, 1952-57 and 1961-65 VW workshop manuals, VW NHTSA report; archive.org) - counted as one source",
+       "url": "https://archive.org/details/1968-volkswagen-beetle-owners-manual-english",
+       "says": "1977 owner's manual: Electronically controlled fuel injection; 1970 manual: downdraft carburetor"
+      },
+      {
+       "name": "Standard Catalog of Volkswagen 1946-2004 (Gunnell, Krause)",
+       "url": "https://archive.org/details/standardcatalogo0000gunn_h1o8",
+       "says": "Electronic fuel injection standard in Beetles for 1975"
+      },
+      {
+       "name": "Walter Henry Nelson, Small Wonder, appendix 'How to Tell the Age of a Volkswagen'",
+       "url": "https://archive.org/details/walter-henry-small-wonder-the-amazing-story-of-the-volkswagen-beetle-appendix-ho",
+       "says": "1975: Electronic fuel injection"
+      },
+      {
+       "name": "Consumer Guide Beetle history (HowStuffWorks, archived)",
+       "url": "https://auto.howstuffworks.com/1945-1959-volkswagen-beetle.htm",
+       "says": "1975 VW added fuel injection"
+      },
+      {
+       "name": "Hagerty Valuation Tools - VW Beetle (Wayback copy)",
+       "url": "https://www.hagerty.com/valuation-tools/volkswagen/beetle",
+       "says": "1975: 1585cc/48hp EFI"
+      }
+     ],
+     "note": ""
+    },
+    "years": {
+     "value": "1970-1979 (US Beetle; sedan to 1977, convertible to 1979)",
+     "sources": [
+      {
+       "name": "Walter Henry Nelson, Small Wonder, appendix 'How to Tell the Age of a Volkswagen'",
+       "url": "https://archive.org/details/walter-henry-small-wonder-the-amazing-story-of-the-volkswagen-beetle-appendix-ho",
+       "says": "1970: 1500 to 1600 cc"
+      },
+      {
+       "name": "Consumer Guide Beetle history (HowStuffWorks, archived)",
+       "url": "https://auto.howstuffworks.com/1945-1959-volkswagen-beetle.htm",
+       "says": "1970 1600 cc"
+      },
+      {
+       "name": "Standard Catalog of Volkswagen 1946-2004 (Gunnell, Krause)",
+       "url": "https://archive.org/details/standardcatalogo0000gunn_h1o8",
+       "says": "1970-79 1584 cc"
+      },
+      {
+       "name": "Volkswagen factory literature (VW of America owner's manuals 1962-1979, US/Canadian brochures, 1952-57 and 1961-65 VW workshop manuals, VW NHTSA report; archive.org) - counted as one source",
+       "url": "https://archive.org/details/1968-volkswagen-beetle-owners-manual-english",
+       "says": "1979 convertible owner's manual 1584 cc"
+      }
+     ],
+     "note": "Dual-port heads from 1971: Wikipedia (1302S twin-port) and the earlier vehicle-page pass; not separately verified here."
+    }
+   },
+   "variants": [
+    {
+     "year": 1970,
+     "hp": 57,
+     "hp_basis": "SAE gross",
+     "rpm": 4400,
+     "compression_ratio": 7.5,
+     "code": "1600 single-port",
+     "sources": [
+      {
+       "name": "Volkswagen factory literature (VW of America owner's manuals 1962-1979, US/Canadian brochures, 1952-57 and 1961-65 VW workshop manuals, VW NHTSA report; archive.org) - counted as one source",
+       "url": "https://archive.org/details/1968-volkswagen-beetle-owners-manual-english",
+       "says": "1970 owner's manual: SAE 57 bhp at 4400 rpm, 7.5:1"
+      },
+      {
+       "name": "Standard Catalog of Volkswagen 1946-2004 (Gunnell, Krause)",
+       "url": "https://archive.org/details/standardcatalogo0000gunn_h1o8",
+       "says": "57 at 4400"
+      },
+      {
+       "name": "Walter Henry Nelson, Small Wonder, appendix 'How to Tell the Age of a Volkswagen'",
+       "url": "https://archive.org/details/walter-henry-small-wonder-the-amazing-story-of-the-volkswagen-beetle-appendix-ho",
+       "says": "from 53 to 57"
+      },
+      {
+       "name": "Consumer Guide Beetle history (HowStuffWorks, archived)",
+       "url": "https://auto.howstuffworks.com/1945-1959-volkswagen-beetle.htm",
+       "says": "horsepower increased to 57"
+      },
+      {
+       "name": "Hagerty Valuation Tools - VW Beetle (Wayback copy)",
+       "url": "https://www.hagerty.com/valuation-tools/volkswagen/beetle",
+       "says": "1585cc/57hp"
+      }
+     ]
+    },
+    {
+     "year": 1971,
+     "hp": 60,
+     "hp_basis": "SAE gross",
+     "rpm": 4400,
+     "compression_ratio": 7.5,
+     "code": "1600 dual-port (50 PS DIN)",
+     "sources": [
+      {
+       "name": "Volkswagen factory literature (VW of America owner's manuals 1962-1979, US/Canadian brochures, 1952-57 and 1961-65 VW workshop manuals, VW NHTSA report; archive.org) - counted as one source",
+       "url": "https://archive.org/details/1968-volkswagen-beetle-owners-manual-english",
+       "says": "1971 owner's manual: 60 bhp at 4400 rpm, 7.5:1"
+      },
+      {
+       "name": "Standard Catalog of Volkswagen 1946-2004 (Gunnell, Krause)",
+       "url": "https://archive.org/details/standardcatalogo0000gunn_h1o8",
+       "says": "boost to 60 hp"
+      },
+      {
+       "name": "Walter Henry Nelson, Small Wonder, appendix 'How to Tell the Age of a Volkswagen'",
+       "url": "https://archive.org/details/walter-henry-small-wonder-the-amazing-story-of-the-volkswagen-beetle-appendix-ho",
+       "says": "from 57 to 60"
+      },
+      {
+       "name": "Consumer Guide Beetle history (HowStuffWorks, archived)",
+       "url": "https://auto.howstuffworks.com/1945-1959-volkswagen-beetle.htm",
+       "says": "bumped to 60"
+      },
+      {
+       "name": "Hagerty Valuation Tools - VW Beetle (Wayback copy)",
+       "url": "https://www.hagerty.com/valuation-tools/volkswagen/beetle",
+       "says": "1585cc/60hp"
+      }
+     ]
+    },
+    {
+     "year": 1972,
+     "hp": 60,
+     "hp_basis": "SAE gross",
+     "compression_ratio": 7.3,
+     "code": "1600 dual-port",
+     "second_pass": true,
+     "sources": [
+      {
+       "name": "Standard Catalog of Volkswagen 1946-2004 (Gunnell, Krause)",
+       "url": "https://archive.org/details/standardcatalogo0000gunn_h1o8",
+       "says": "60 at 4400 rpm, 7.3:1 (1972)"
+      },
+      {
+       "name": "Hagerty Valuation Tools - VW Beetle (Wayback copy)",
+       "url": "https://www.hagerty.com/valuation-tools/volkswagen/beetle",
+       "says": "1585cc/60hp"
+      }
+     ],
+     "note": "No 1972 US factory rating found; Consumer Guide blog's 50 hp is the DIN figure."
+    },
+    {
+     "year": "1973-1974",
+     "hp": 46,
+     "hp_basis": "SAE net",
+     "rpm": 4000,
+     "compression_ratio": 7.3,
+     "code": "1600 dual-port",
+     "sources": [
+      {
+       "name": "Consumer Guide Beetle history (HowStuffWorks, archived)",
+       "url": "https://auto.howstuffworks.com/1945-1959-volkswagen-beetle.htm",
+       "says": "46 horsepower (SAE net)"
+      },
+      {
+       "name": "Standard Catalog of Volkswagen 1946-2004 (Gunnell, Krause)",
+       "url": "https://archive.org/details/standardcatalogo0000gunn_h1o8",
+       "says": "46 (SAE net) at 4000 rpm"
+      },
+      {
+       "name": "Hagerty Valuation Tools - VW Beetle (Wayback copy)",
+       "url": "https://www.hagerty.com/valuation-tools/volkswagen/beetle",
+       "says": "1585cc/46hp"
+      },
+      {
+       "name": "Walter Henry Nelson, Small Wonder, appendix 'How to Tell the Age of a Volkswagen'",
+       "url": "https://archive.org/details/walter-henry-small-wonder-the-amazing-story-of-the-volkswagen-beetle-appendix-ho",
+       "says": "1975: 48 hp, up from 46 (SAE net)"
+      }
+     ]
+    },
+    {
+     "year": "1975-1979",
+     "hp": 48,
+     "hp_basis": "SAE net",
+     "rpm": 4200,
+     "compression_ratio": 7.3,
+     "code": "AJ (fuel injected)",
+     "induction": "Bosch electronic fuel injection",
+     "sources": [
+      {
+       "name": "Volkswagen factory literature (VW of America owner's manuals 1962-1979, US/Canadian brochures, 1952-57 and 1961-65 VW workshop manuals, VW NHTSA report; archive.org) - counted as one source",
+       "url": "https://archive.org/details/1968-volkswagen-beetle-owners-manual-english",
+       "says": "1976 brochure, 1977-79 owner's manuals: SAE net 48 hp at 4200 rpm; NHTSA report engine code AJ"
+      },
+      {
+       "name": "Standard Catalog of Volkswagen 1946-2004 (Gunnell, Krause)",
+       "url": "https://archive.org/details/standardcatalogo0000gunn_h1o8",
+       "says": "48 at 4200 rpm"
+      },
+      {
+       "name": "Walter Henry Nelson, Small Wonder, appendix 'How to Tell the Age of a Volkswagen'",
+       "url": "https://archive.org/details/walter-henry-small-wonder-the-amazing-story-of-the-volkswagen-beetle-appendix-ho",
+       "says": "48 hp, up from 46 (SAE net)"
+      },
+      {
+       "name": "Hagerty Valuation Tools - VW Beetle (Wayback copy)",
+       "url": "https://www.hagerty.com/valuation-tools/volkswagen/beetle",
+       "says": "1585cc/48hp EFI"
+      }
+     ],
+     "note": "Engine code AJ stated by VW only. California cars had a catalytic converter, same rating."
+    }
+   ],
+   "unverified": {
+    "firing_order": "1-4-3-2 per VW literature only (1961-65 workshop manual, 1968/1977/1978 owner's manuals); no independent second source found.",
+    "engine_codes": "AJ (1975-79) from VW's NHTSA report only; earlier US codes not researched."
+   },
+   "unverified_variants": []
+  }
+ ]
+}

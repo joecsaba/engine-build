@@ -111,3 +111,8 @@ or 2 reputable sources that agree (second pass). Specs go in public/data/engines
 | Ford Model A / Model B four | 201 ci | Ford Model A 1928–1931, Model B 1932–1934 |
 | VW air-cooled flat fours (1100, 1200, 1300, 1500, 1600) | 69–97 ci | VW Beetle 1949–1979 (no VW air-cooled engine pages) |
 | Ford 3.3 V6 and 3.3 hybrid (2020+) | 204 ci | Explorer 2020–2026 (same engine as the F-150 3.3 already listed) |
+
+## Done 2026-10-15 (engine pages built from engine_specs_*.json; vehicle rows linked)
+Ford 240/300 Big Six, 360 FE (truck), 4.2 Essex, 6.2 Boss, 3.3 Ti-VCT; GM 6.2 and 6.5 diesels, 8.1 Vortec;
+Toyota F, 2F, 3F-E, 1FZ-FE; Nissan L24, L26, L28E, L28ET; Ford Model A/B four, flathead V8 221 and 239;
+VW air-cooled 1100/1200/1300/1500/1600. Unlinked vehicle rows: 702 -> about 400.

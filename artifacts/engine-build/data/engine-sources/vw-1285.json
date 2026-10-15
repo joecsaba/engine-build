@@ -1,0 +1,320 @@
+{
+ "name": "Volkswagen 1285 cc air-cooled flat-four (US Beetle 1966)",
+ "fields": {
+  "num_cylinders": {
+   "value": 4,
+   "sources": [
+    {
+     "name": "Volkswagen factory literature (VW of America owner's manuals 1962-1979, US/Canadian brochures, 1952-57 and 1961-65 VW workshop manuals, VW NHTSA report; archive.org) - counted as one source",
+     "url": "https://archive.org/details/1968-volkswagen-beetle-owners-manual-english",
+     "says": "Four cylinder, four stroke, horizontally opposed, in rear"
+    },
+    {
+     "name": "Autobook: Volkswagen Beetle 1954-67 (Autopress) - technical data",
+     "url": "https://archive.org/details/volkswagen-beetle-1954-67-autobook",
+     "says": "VW 1200/1300/1500 flat-four"
+    },
+    {
+     "name": "Wikipedia - Volkswagen air-cooled engine / Volkswagen Beetle",
+     "url": "https://en.wikipedia.org/wiki/Volkswagen_air-cooled_engine",
+     "says": "four horizontally opposed cylinders"
+    }
+   ],
+   "note": ""
+  },
+  "configuration": {
+   "value": "air-cooled horizontally opposed flat-four (boxer)",
+   "sources": [
+    {
+     "name": "Volkswagen factory literature (VW of America owner's manuals 1962-1979, US/Canadian brochures, 1952-57 and 1961-65 VW workshop manuals, VW NHTSA report; archive.org) - counted as one source",
+     "url": "https://archive.org/details/1968-volkswagen-beetle-owners-manual-english",
+     "says": "Four cylinder, four stroke, horizontally opposed, in rear. Air cooling by fan"
+    },
+    {
+     "name": "Wikipedia - Volkswagen air-cooled engine / Volkswagen Beetle",
+     "url": "https://en.wikipedia.org/wiki/Volkswagen_air-cooled_engine",
+     "says": "air-cooled boxer engine"
+    },
+    {
+     "name": "Autobook: Volkswagen Beetle 1954-67 (Autopress) - technical data",
+     "url": "https://archive.org/details/volkswagen-beetle-1954-67-autobook",
+     "says": "air-cooled horizontally opposed engine"
+    }
+   ],
+   "note": ""
+  },
+  "valvetrain": {
+   "value": "OHV pushrod, 2 valves per cylinder, single central camshaft",
+   "sources": [
+    {
+     "name": "Volkswagen factory literature (VW of America owner's manuals 1962-1979, US/Canadian brochures, 1952-57 and 1961-65 VW workshop manuals, VW NHTSA report; archive.org) - counted as one source",
+     "url": "https://archive.org/details/1968-volkswagen-beetle-owners-manual-english",
+     "says": "1952-57 and 1961-65 workshop manuals: valves of the overhead type, operated by the cams via push rods and rocker arms; 1968 US brochure 'Valves: Overhead type'"
+    },
+    {
+     "name": "Autobook: Volkswagen Beetle 1954-67 (Autopress) - technical data",
+     "url": "https://archive.org/details/volkswagen-beetle-1954-67-autobook",
+     "says": "overhead valves and pushrods; camshaft in crankcase"
+    },
+    {
+     "name": "Wikipedia - Volkswagen air-cooled engine / Volkswagen Beetle",
+     "url": "https://en.wikipedia.org/wiki/Volkswagen_air-cooled_engine",
+     "says": "Pushrod OHV"
+    }
+   ],
+   "note": ""
+  },
+  "block_material": {
+   "value": "magnesium alloy crankcase (split); separate finned cast-iron cylinders",
+   "sources": [
+    {
+     "name": "Volkswagen factory literature (VW of America owner's manuals 1962-1979, US/Canadian brochures, 1952-57 and 1961-65 VW workshop manuals, VW NHTSA report; archive.org) - counted as one source",
+     "url": "https://archive.org/details/1968-volkswagen-beetle-owners-manual-english",
+     "says": "1969 US brochure: aluminum-magnesium engine; workshop manual: crankcase cast of light-metal alloy"
+    },
+    {
+     "name": "Wikipedia - Volkswagen air-cooled engine / Volkswagen Beetle",
+     "url": "https://en.wikipedia.org/wiki/Volkswagen_air-cooled_engine",
+     "says": "magnesium-alloy crankcase; cast-iron cylinders"
+    }
+   ],
+   "note": "Cast-iron cylinders are stated by Wikipedia only (VW: 'special cylinder casting').",
+   "second_pass": true
+  },
+  "head_material": {
+   "value": "aluminum alloy",
+   "sources": [
+    {
+     "name": "Volkswagen factory literature (VW of America owner's manuals 1962-1979, US/Canadian brochures, 1952-57 and 1961-65 VW workshop manuals, VW NHTSA report; archive.org) - counted as one source",
+     "url": "https://archive.org/details/1968-volkswagen-beetle-owners-manual-english",
+     "says": "workshop manual: detachable cylinder head of light alloy casting"
+    },
+    {
+     "name": "Wikipedia - Volkswagen air-cooled engine / Volkswagen Beetle",
+     "url": "https://en.wikipedia.org/wiki/Volkswagen_air-cooled_engine",
+     "says": "cast aluminum alloy cylinder heads"
+    }
+   ],
+   "note": "",
+   "second_pass": true
+  },
+  "fuel_type": {
+   "value": "gasoline",
+   "sources": [
+    {
+     "name": "Volkswagen factory literature (VW of America owner's manuals 1962-1979, US/Canadian brochures, 1952-57 and 1961-65 VW workshop manuals, VW NHTSA report; archive.org) - counted as one source",
+     "url": "https://archive.org/details/1968-volkswagen-beetle-owners-manual-english",
+     "says": "owner's manuals: fuel requirements"
+    },
+    {
+     "name": "Wikipedia - Volkswagen air-cooled engine / Volkswagen Beetle",
+     "url": "https://en.wikipedia.org/wiki/Volkswagen_air-cooled_engine",
+     "says": "gasoline-fuelled"
+    },
+    {
+     "name": "Walter Henry Nelson, Small Wonder, appendix 'How to Tell the Age of a Volkswagen'",
+     "url": "https://archive.org/details/walter-henry-small-wonder-the-amazing-story-of-the-volkswagen-beetle-appendix-ho",
+     "says": "lead-free gasoline for catalyst cars"
+    }
+   ],
+   "note": ""
+  },
+  "bore_in": {
+   "value": 3.0315,
+   "sources": [
+    {
+     "name": "Volkswagen factory literature (VW of America owner's manuals 1962-1979, US/Canadian brochures, 1952-57 and 1961-65 VW workshop manuals, VW NHTSA report; archive.org) - counted as one source",
+     "url": "https://archive.org/details/1968-volkswagen-beetle-owners-manual-english",
+     "says": "1966 Canadian brochure: Bore x stroke 77 mm x 69 mm (3.03 x 2.72 in.)"
+    },
+    {
+     "name": "Autobook: Volkswagen Beetle 1954-67 (Autopress) - technical data",
+     "url": "https://archive.org/details/volkswagen-beetle-1954-67-autobook",
+     "says": "VW 1300: bore 77 mm, stroke 69 mm"
+    },
+    {
+     "name": "Standard Catalog of Volkswagen 1946-2004 (Gunnell, Krause)",
+     "url": "https://archive.org/details/standardcatalogo0000gunn_h1o8",
+     "says": "77 x 69 mm"
+    },
+    {
+     "name": "Wikipedia - Volkswagen air-cooled engine / Volkswagen Beetle",
+     "url": "https://en.wikipedia.org/wiki/Volkswagen_air-cooled_engine",
+     "says": "1300: bore 77 mm"
+    }
+   ],
+   "note": "77 mm."
+  },
+  "stroke_in": {
+   "value": 2.7165,
+   "sources": [
+    {
+     "name": "Volkswagen factory literature (VW of America owner's manuals 1962-1979, US/Canadian brochures, 1952-57 and 1961-65 VW workshop manuals, VW NHTSA report; archive.org) - counted as one source",
+     "url": "https://archive.org/details/1968-volkswagen-beetle-owners-manual-english",
+     "says": "69 mm (2.72 in.)"
+    },
+    {
+     "name": "Autobook: Volkswagen Beetle 1954-67 (Autopress) - technical data",
+     "url": "https://archive.org/details/volkswagen-beetle-1954-67-autobook",
+     "says": "stroke 69 mm"
+    },
+    {
+     "name": "Standard Catalog of Volkswagen 1946-2004 (Gunnell, Krause)",
+     "url": "https://archive.org/details/standardcatalogo0000gunn_h1o8",
+     "says": "77 x 69 mm"
+    },
+    {
+     "name": "Wikipedia - Volkswagen air-cooled engine / Volkswagen Beetle",
+     "url": "https://en.wikipedia.org/wiki/Volkswagen_air-cooled_engine",
+     "says": "stroke 69 mm"
+    }
+   ],
+   "note": "69 mm (Type 3 crankshaft)."
+  },
+  "displacement_ci": {
+   "value": 78.4,
+   "sources": [
+    {
+     "name": "Volkswagen factory literature (VW of America owner's manuals 1962-1979, US/Canadian brochures, 1952-57 and 1961-65 VW workshop manuals, VW NHTSA report; archive.org) - counted as one source",
+     "url": "https://archive.org/details/1968-volkswagen-beetle-owners-manual-english",
+     "says": "1285 cc (78.41 cu in)"
+    },
+    {
+     "name": "Autobook: Volkswagen Beetle 1954-67 (Autopress) - technical data",
+     "url": "https://archive.org/details/volkswagen-beetle-1954-67-autobook",
+     "says": "1285 cc"
+    },
+    {
+     "name": "Standard Catalog of Volkswagen 1946-2004 (Gunnell, Krause)",
+     "url": "https://archive.org/details/standardcatalogo0000gunn_h1o8",
+     "says": "1285 cc"
+    }
+   ],
+   "note": ""
+  },
+  "displacement_l": {
+   "value": 1.3,
+   "sources": [
+    {
+     "name": "Volkswagen factory literature (VW of America owner's manuals 1962-1979, US/Canadian brochures, 1952-57 and 1961-65 VW workshop manuals, VW NHTSA report; archive.org) - counted as one source",
+     "url": "https://archive.org/details/1968-volkswagen-beetle-owners-manual-english",
+     "says": "1285 cc"
+    },
+    {
+     "name": "Autobook: Volkswagen Beetle 1954-67 (Autopress) - technical data",
+     "url": "https://archive.org/details/volkswagen-beetle-1954-67-autobook",
+     "says": "1285 cc"
+    },
+    {
+     "name": "Wikipedia - Volkswagen air-cooled engine / Volkswagen Beetle",
+     "url": "https://en.wikipedia.org/wiki/Volkswagen_air-cooled_engine",
+     "says": "1285 cc"
+    }
+   ],
+   "note": ""
+  },
+  "compression_ratio": {
+   "value": "7.3:1",
+   "sources": [
+    {
+     "name": "Volkswagen factory literature (VW of America owner's manuals 1962-1979, US/Canadian brochures, 1952-57 and 1961-65 VW workshop manuals, VW NHTSA report; archive.org) - counted as one source",
+     "url": "https://archive.org/details/1968-volkswagen-beetle-owners-manual-english",
+     "says": "1966 owner's manual: 7.3:1"
+    },
+    {
+     "name": "Autobook: Volkswagen Beetle 1954-67 (Autopress) - technical data",
+     "url": "https://archive.org/details/volkswagen-beetle-1954-67-autobook",
+     "says": "7.3 to 1"
+    },
+    {
+     "name": "Standard Catalog of Volkswagen 1946-2004 (Gunnell, Krause)",
+     "url": "https://archive.org/details/standardcatalogo0000gunn_h1o8",
+     "says": "7.3:1"
+    }
+   ],
+   "note": ""
+  },
+  "induction": {
+   "value": "1-bbl Solex downdraft carburetor",
+   "sources": [
+    {
+     "name": "Volkswagen factory literature (VW of America owner's manuals 1962-1979, US/Canadian brochures, 1952-57 and 1961-65 VW workshop manuals, VW NHTSA report; archive.org) - counted as one source",
+     "url": "https://archive.org/details/1968-volkswagen-beetle-owners-manual-english",
+     "says": "downdraft carburetor with automatic choke (owner's manuals)"
+    },
+    {
+     "name": "Autobook: Volkswagen Beetle 1954-67 (Autopress) - technical data",
+     "url": "https://archive.org/details/volkswagen-beetle-1954-67-autobook",
+     "says": "Solex 28 PCI / 28 PICT / 30 PICT downdraught carburetters"
+    },
+    {
+     "name": "Hagerty Valuation Tools - VW Beetle (Wayback copy)",
+     "url": "https://www.hagerty.com/valuation-tools/volkswagen/beetle",
+     "says": "1966: 1bbl"
+    }
+   ],
+   "note": ""
+  },
+  "years": {
+   "value": "1966 (only US Beetle year)",
+   "sources": [
+    {
+     "name": "Walter Henry Nelson, Small Wonder, appendix 'How to Tell the Age of a Volkswagen'",
+     "url": "https://archive.org/details/walter-henry-small-wonder-the-amazing-story-of-the-volkswagen-beetle-appendix-ho",
+     "says": "1966: 1200 to 1300 cc; 1967: to 1500"
+    },
+    {
+     "name": "Consumer Guide Beetle history (HowStuffWorks, archived)",
+     "url": "https://auto.howstuffworks.com/1945-1959-volkswagen-beetle.htm",
+     "says": "1966 1285 cc"
+    },
+    {
+     "name": "Standard Catalog of Volkswagen 1946-2004 (Gunnell, Krause)",
+     "url": "https://archive.org/details/standardcatalogo0000gunn_h1o8",
+     "says": "1966 Beetle 1285 cc"
+    }
+   ],
+   "note": ""
+  }
+ },
+ "variants": [
+  {
+   "year": 1966,
+   "hp": 50,
+   "hp_basis": "SAE gross",
+   "rpm": 4600,
+   "compression_ratio": 7.3,
+   "code": "1300 (40 PS DIN)",
+   "sources": [
+    {
+     "name": "Volkswagen factory literature (VW of America owner's manuals 1962-1979, US/Canadian brochures, 1952-57 and 1961-65 VW workshop manuals, VW NHTSA report; archive.org) - counted as one source",
+     "url": "https://archive.org/details/1968-volkswagen-beetle-owners-manual-english",
+     "says": "1966 owner's manual: 50 at 4600 rpm; Canadian brochure SAE output 50 b.h.p."
+    },
+    {
+     "name": "Standard Catalog of Volkswagen 1946-2004 (Gunnell, Krause)",
+     "url": "https://archive.org/details/standardcatalogo0000gunn_h1o8",
+     "says": "50 at 4600 rpm"
+    },
+    {
+     "name": "Walter Henry Nelson, Small Wonder, appendix 'How to Tell the Age of a Volkswagen'",
+     "url": "https://archive.org/details/walter-henry-small-wonder-the-amazing-story-of-the-volkswagen-beetle-appendix-ho",
+     "says": "from 40 to 50"
+    },
+    {
+     "name": "Consumer Guide Beetle history (HowStuffWorks, archived)",
+     "url": "https://auto.howstuffworks.com/1945-1959-volkswagen-beetle.htm",
+     "says": "1285 cc and 50"
+    },
+    {
+     "name": "Autobook: Volkswagen Beetle 1954-67 (Autopress) - technical data",
+     "url": "https://archive.org/details/volkswagen-beetle-1954-67-autobook",
+     "says": "50 bhp at 4600"
+    }
+   ]
+  }
+ ],
+ "unverified": {
+  "firing_order": "1-4-3-2 per VW literature only (1961-65 workshop manual, 1968/1977/1978 owner's manuals); no independent second source found."
+ }
+}

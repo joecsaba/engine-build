@@ -20,7 +20,8 @@ def val(f, k):
     v = f.get(k); return v.get("value") if isinstance(v, dict) else v
 def material(t):
     t = str(t or "").lower()
-    return "aluminum" if "alumin" in t else "cast iron" if "iron" in t else None
+    # VW: "magnesium alloy crankcase (split); separate finned cast-iron cylinders"
+    return "magnesium alloy" if t.startswith("magnesium") else "aluminum" if "alumin" in t else "cast iron" if "iron" in t else None
 def valvetrain(t):
     for v in ("DOHC", "SOHC", "OHV", "flathead", "L-head"):
         if v.lower() in str(t or "").lower(): return "flathead" if v in ("flathead", "L-head") else v
@@ -49,6 +50,16 @@ PLANS = {
     "ford-4-2-essex-v6": ("ford", "ford_essex", "Essex V6", "Ford", [("ford_4_2_essex", "Essex 4.2")], None, "gas"),
     "ford-6-2-boss":     ("ford", "ford_boss_v8", "6.2 Boss V8", "Ford", [("ford_6_2_boss", "6.2 Boss")], None, "gas"),
     "ford-3-3-ti-vct":   ("ford", "ford_cyclone", "Cyclone V6", "Ford", [("ford_3_3_ti_vct", "3.3 Ti-VCT")], None, "gas"),
+  },
+  "early": {
+    "ford-model-a-four":    ("ford", "ford_model_a_four", "Model A/B Four", "Ford", [("ford_model_a_four", "Model A four")], None, "gas"),
+    "ford-flathead-v8-221": ("ford", "ford_flathead_v8", "Flathead V8", "Ford", [("ford_flathead_221", "Flathead 221")], None, "gas"),
+    "ford-flathead-v8-239": ("ford", "ford_flathead_v8", "Flathead V8", "Ford", [("ford_flathead_239", "Flathead 239")], None, "gas"),
+    "vw-1131": ("volkswagen", "volkswagen_air_cooled", "Air-cooled Flat Four", "Volkswagen", [("vw_1131", "1100")], 1131, "gas"),
+    "vw-1192": ("volkswagen", "volkswagen_air_cooled", "Air-cooled Flat Four", "Volkswagen", [("vw_1192", "1200")], None, "gas"),
+    "vw-1285": ("volkswagen", "volkswagen_air_cooled", "Air-cooled Flat Four", "Volkswagen", [("vw_1285", "1300")], None, "gas"),
+    "vw-1493": ("volkswagen", "volkswagen_air_cooled", "Air-cooled Flat Four", "Volkswagen", [("vw_1493", "1500")], None, "gas"),
+    "vw-1584": ("volkswagen", "volkswagen_air_cooled", "Air-cooled Flat Four", "Volkswagen", [("vw_1584", "1600")], None, "gas"),
   },
   "gmheavy": {
     "gm-6-2-diesel": ("chevrolet", "chevrolet_gm_diesel_v8", "6.2/6.5 Diesel V8", "Chevrolet", [("gm_6_2_diesel", "6.2 diesel")], None, "diesel"),

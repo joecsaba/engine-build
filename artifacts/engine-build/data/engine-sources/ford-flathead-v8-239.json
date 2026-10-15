@@ -1,0 +1,369 @@
+{
+ "name": "Ford / Mercury flathead V8 239 ci",
+ "fields": {
+  "bore_in": {
+   "value": 3.1875,
+   "sources": [
+    {
+     "name": "Ford Motor Company factory literature (1932-1953 brochures, 1933 V-8 salesman booklet, 1953 owner's manual, 1939 Mercury foldout; oldcarbrochures.org scans) - counted as one source",
+     "url": "https://oldcarbrochures.org/United%20States/Ford/1933_Ford/1933-Ford-V8-Salesman-Booklet/index.html",
+     "says": "1939 Mercury foldout: Bore 3.187 in. Stroke 3.75 in. Piston displacement 239 cu in; 1950 Ford V-8 brochure: 3 3/16\" bore, 3 3/4\" stroke; 1953 F-100 brochure 3.19 x 3.75"
+    },
+    {
+     "name": "Wikipedia - Ford flathead V8 engine (cites Street Rodder 1/85) / 1932 Ford",
+     "url": "https://en.wikipedia.org/wiki/Ford_flathead_V8_engine",
+     "says": "3.1875 by 3.75 in bore and stroke"
+    }
+   ],
+   "note": "3-3/16 in = 80.96 mm. EngineLabs garbles it (gives 3.1875 as the stroke); arithmetic confirms 3.1875 x 3.75: 3.1875^2 x 3.75 x 0.7854 x 8 = 239.4 ci.",
+   "second_pass": true
+  },
+  "stroke_in": {
+   "value": 3.75,
+   "sources": [
+    {
+     "name": "Ford Motor Company factory literature (1932-1953 brochures, 1933 V-8 salesman booklet, 1953 owner's manual, 1939 Mercury foldout; oldcarbrochures.org scans) - counted as one source",
+     "url": "https://oldcarbrochures.org/United%20States/Ford/1933_Ford/1933-Ford-V8-Salesman-Booklet/index.html",
+     "says": "Stroke 3-3/4 in (1939 Mercury, 1950 Ford, 1953 F-100)"
+    },
+    {
+     "name": "Wikipedia - Ford flathead V8 engine (cites Street Rodder 1/85) / 1932 Ford",
+     "url": "https://en.wikipedia.org/wiki/Ford_flathead_V8_engine",
+     "says": "3.75 in stroke"
+    }
+   ],
+   "note": "95.25 mm; arithmetic as for bore. EngineLabs' '3.1875-inch stroke' is wrong.",
+   "second_pass": true
+  },
+  "displacement_ci": {
+   "value": 239.4,
+   "sources": [
+    {
+     "name": "Ford Motor Company factory literature (1932-1953 brochures, 1933 V-8 salesman booklet, 1953 owner's manual, 1939 Mercury foldout; oldcarbrochures.org scans) - counted as one source",
+     "url": "https://oldcarbrochures.org/United%20States/Ford/1933_Ford/1933-Ford-V8-Salesman-Booklet/index.html",
+     "says": "1953 Ford owner's manual: Pis. Displ. 239.4 cu. in.; 1939 Mercury foldout 239 cu in"
+    },
+    {
+     "name": "Wikipedia - Ford flathead V8 engine (cites Street Rodder 1/85) / 1932 Ford",
+     "url": "https://en.wikipedia.org/wiki/Ford_flathead_V8_engine",
+     "says": "239 cu in"
+    },
+    {
+     "name": "EngineLabs - Historic Engines: The Fabulous Ford Flathead",
+     "url": "https://www.enginelabs.com/engine-tech/engine/historic-engines-the-fabulous-ford-flathead/",
+     "says": "displacing 239.4 cubic inches"
+    },
+    {
+     "name": "Hagerty Valuation Tools (Wayback copy)",
+     "url": "https://www.hagerty.com/valuation-tools/ford/super_deluxe/1946",
+     "says": "8-cyl. 239cid"
+    }
+   ],
+   "note": ""
+  },
+  "displacement_l": {
+   "value": 3.9,
+   "sources": [
+    {
+     "name": "Wikipedia - Ford flathead V8 engine (cites Street Rodder 1/85) / 1932 Ford",
+     "url": "https://en.wikipedia.org/wiki/Ford_flathead_V8_engine",
+     "says": "239 cu in (3.9 L)"
+    },
+    {
+     "name": "Ford Motor Company factory literature (1932-1953 brochures, 1933 V-8 salesman booklet, 1953 owner's manual, 1939 Mercury foldout; oldcarbrochures.org scans) - counted as one source",
+     "url": "https://oldcarbrochures.org/United%20States/Ford/1933_Ford/1933-Ford-V8-Salesman-Booklet/index.html",
+     "says": "239.4 cu in"
+    },
+    {
+     "name": "EngineLabs - Historic Engines: The Fabulous Ford Flathead",
+     "url": "https://www.enginelabs.com/engine-tech/engine/historic-engines-the-fabulous-ford-flathead/",
+     "says": "239.4 cu in"
+    }
+   ],
+   "note": "239.4 ci = 3.92 L by conversion."
+  },
+  "num_cylinders": {
+   "value": 8,
+   "sources": [
+    {
+     "name": "Ford Motor Company factory literature (1932-1953 brochures, 1933 V-8 salesman booklet, 1953 owner's manual, 1939 Mercury foldout; oldcarbrochures.org scans) - counted as one source",
+     "url": "https://oldcarbrochures.org/United%20States/Ford/1933_Ford/1933-Ford-V8-Salesman-Booklet/index.html",
+     "says": "V-type, 8-cylinder"
+    },
+    {
+     "name": "Wikipedia - Ford flathead V8 engine (cites Street Rodder 1/85) / 1932 Ford",
+     "url": "https://en.wikipedia.org/wiki/Ford_flathead_V8_engine",
+     "says": "V8"
+    },
+    {
+     "name": "EngineLabs - Historic Engines: The Fabulous Ford Flathead",
+     "url": "https://www.enginelabs.com/engine-tech/engine/historic-engines-the-fabulous-ford-flathead/",
+     "says": "V8"
+    }
+   ],
+   "note": ""
+  },
+  "configuration": {
+   "value": "90-degree V8, L-head",
+   "sources": [
+    {
+     "name": "Ford Motor Company factory literature (1932-1953 brochures, 1933 V-8 salesman booklet, 1953 owner's manual, 1939 Mercury foldout; oldcarbrochures.org scans) - counted as one source",
+     "url": "https://oldcarbrochures.org/United%20States/Ford/1933_Ford/1933-Ford-V8-Salesman-Booklet/index.html",
+     "says": "V-type 8-cylinder; all the advantages of the Ford V-8 engine (1939 Mercury)"
+    },
+    {
+     "name": "Wikipedia - Ford flathead V8 engine (cites Street Rodder 1/85) / 1932 Ford",
+     "url": "https://en.wikipedia.org/wiki/Ford_flathead_V8_engine",
+     "says": "flathead V8"
+    },
+    {
+     "name": "EngineLabs - Historic Engines: The Fabulous Ford Flathead",
+     "url": "https://www.enginelabs.com/engine-tech/engine/historic-engines-the-fabulous-ford-flathead/",
+     "says": "L-head V8"
+    }
+   ],
+   "note": ""
+  },
+  "valvetrain": {
+   "value": "L-head (side valve, flathead), 2 valves per cylinder",
+   "sources": [
+    {
+     "name": "Wikipedia - Ford flathead V8 engine (cites Street Rodder 1/85) / 1932 Ford",
+     "url": "https://en.wikipedia.org/wiki/Ford_flathead_V8_engine",
+     "says": "flathead"
+    },
+    {
+     "name": "EngineLabs - Historic Engines: The Fabulous Ford Flathead",
+     "url": "https://www.enginelabs.com/engine-tech/engine/historic-engines-the-fabulous-ford-flathead/",
+     "says": "L-head design"
+    }
+   ],
+   "note": "",
+   "second_pass": true
+  },
+  "induction": {
+   "value": "2-bbl ('dual') downdraft carburetor",
+   "sources": [
+    {
+     "name": "Ford Motor Company factory literature (1932-1953 brochures, 1933 V-8 salesman booklet, 1953 owner's manual, 1939 Mercury foldout; oldcarbrochures.org scans) - counted as one source",
+     "url": "https://oldcarbrochures.org/United%20States/Ford/1933_Ford/1933-Ford-V8-Salesman-Booklet/index.html",
+     "says": "1950 Ford V-8 brochure: Dual Downdraft Carburetor"
+    },
+    {
+     "name": "Hagerty Valuation Tools (Wayback copy)",
+     "url": "https://www.hagerty.com/valuation-tools/ford/custom/1949 ... crestline/1953",
+     "says": "8-cyl. 239cid/100hp-110hp 2bbl"
+    }
+   ],
+   "note": "",
+   "second_pass": true
+  },
+  "fuel_type": {
+   "value": "gasoline",
+   "sources": [
+    {
+     "name": "Ford Motor Company factory literature (1932-1953 brochures, 1933 V-8 salesman booklet, 1953 owner's manual, 1939 Mercury foldout; oldcarbrochures.org scans) - counted as one source",
+     "url": "https://oldcarbrochures.org/United%20States/Ford/1933_Ford/1933-Ford-V8-Salesman-Booklet/index.html",
+     "says": "gasoline"
+    },
+    {
+     "name": "Wikipedia - Ford flathead V8 engine (cites Street Rodder 1/85) / 1932 Ford",
+     "url": "https://en.wikipedia.org/wiki/Ford_flathead_V8_engine",
+     "says": "gasoline"
+    },
+    {
+     "name": "EngineLabs - Historic Engines: The Fabulous Ford Flathead",
+     "url": "https://www.enginelabs.com/engine-tech/engine/historic-engines-the-fabulous-ford-flathead/",
+     "says": "gasoline"
+    }
+   ],
+   "note": ""
+  },
+  "years": {
+   "value": "1939-1953 (Mercury 1939-48; Ford cars 1946-53; Ford trucks to 1953, Canada to 1954)",
+   "sources": [
+    {
+     "name": "Wikipedia - Ford flathead V8 engine (cites Street Rodder 1/85) / 1932 Ford",
+     "url": "https://en.wikipedia.org/wiki/Ford_flathead_V8_engine",
+     "says": "introduced 1939 for Mercury; Fords from 1946; 8BA/8RT 1948-53 US, 1954 Canada"
+    },
+    {
+     "name": "EngineLabs - Historic Engines: The Fabulous Ford Flathead",
+     "url": "https://www.enginelabs.com/engine-tech/engine/historic-engines-the-fabulous-ford-flathead/",
+     "says": "1939 Mercury introduced the 239.4; post-war Ford and Mercury got the 239"
+    },
+    {
+     "name": "Hagerty Valuation Tools (Wayback copy)",
+     "url": "https://www.hagerty.com/valuation-tools/ford/super_deluxe/1946-crestline/1953",
+     "says": "Ford 1946-1953: 8-cyl. 239cid"
+    }
+   ],
+   "note": ""
+  }
+ },
+ "variants": [
+  {
+   "year": 1939,
+   "hp": 95,
+   "hp_basis": "gross (brake)",
+   "rpm": 3600,
+   "code": "99A (Mercury only - context)",
+   "sources": [
+    {
+     "name": "Ford Motor Company factory literature (1932-1953 brochures, 1933 V-8 salesman booklet, 1953 owner's manual, 1939 Mercury foldout; oldcarbrochures.org scans) - counted as one source",
+     "url": "https://oldcarbrochures.org/United%20States/Ford/1933_Ford/1933-Ford-V8-Salesman-Booklet/index.html",
+     "says": "1939 Mercury foldout: BIG 95 HP ... Brake horsepower 95 at 3600 rpm; taxable hp 32.5"
+    },
+    {
+     "name": "Wikipedia - Ford flathead V8 engine (cites Street Rodder 1/85) / 1932 Ford",
+     "url": "https://en.wikipedia.org/wiki/Ford_flathead_V8_engine",
+     "says": "V8-99A ... 95 hp"
+    },
+    {
+     "name": "EngineLabs - Historic Engines: The Fabulous Ford Flathead",
+     "url": "https://www.enginelabs.com/engine-tech/engine/historic-engines-the-fabulous-ford-flathead/",
+     "says": "Model 99A offered 95 horsepower"
+    }
+   ],
+   "note": "Compression disputed: Wikipedia 6.15:1, EngineLabs 6.3:1. One panel of the same foldout OCRs as '93 horsepower' (likely a scan/OCR artefact)."
+  },
+  {
+   "year": 1946,
+   "hp": 100,
+   "hp_basis": "gross (brake)",
+   "code": "69A",
+   "sources": [
+    {
+     "name": "Ford Motor Company factory literature (1932-1953 brochures, 1933 V-8 salesman booklet, 1953 owner's manual, 1939 Mercury foldout; oldcarbrochures.org scans) - counted as one source",
+     "url": "https://oldcarbrochures.org/United%20States/Ford/1933_Ford/1933-Ford-V8-Salesman-Booklet/index.html",
+     "says": "1946 Ford brochure: the spirited V-8, now for the first time 100 horsepower - an increase of 10"
+    },
+    {
+     "name": "Wikipedia - Ford flathead V8 engine (cites Street Rodder 1/85) / 1932 Ford",
+     "url": "https://en.wikipedia.org/wiki/Ford_flathead_V8_engine",
+     "says": "Postwar V8-69 ... 100 hp"
+    },
+    {
+     "name": "Hagerty Valuation Tools (Wayback copy)",
+     "url": "https://www.hagerty.com/valuation-tools/ford/super_deluxe/1946",
+     "says": "8-cyl. 239cid/100hp 2bbl"
+    }
+   ]
+  },
+  {
+   "year": 1947,
+   "hp": 100,
+   "hp_basis": "gross (brake)",
+   "code": "79A",
+   "sources": [
+    {
+     "name": "Hagerty Valuation Tools (Wayback copy)",
+     "url": "https://www.hagerty.com/valuation-tools/ford/super_deluxe/1947",
+     "says": "8-cyl. 239cid/100hp 2bbl"
+    },
+    {
+     "name": "Wikipedia - Ford flathead V8 engine (cites Street Rodder 1/85) / 1932 Ford",
+     "url": "https://en.wikipedia.org/wiki/Ford_flathead_V8_engine",
+     "says": "1947-48 only the designation changed (V8-79, -89)"
+    },
+    {
+     "name": "EngineLabs - Historic Engines: The Fabulous Ford Flathead",
+     "url": "https://www.enginelabs.com/engine-tech/engine/historic-engines-the-fabulous-ford-flathead/",
+     "says": "post-war 239: 100 hp"
+    }
+   ],
+   "note": "EngineLabs gives the post-war rating without a specific year."
+  },
+  {
+   "year": 1948,
+   "hp": 100,
+   "hp_basis": "gross (brake)",
+   "code": "89A",
+   "sources": [
+    {
+     "name": "Hagerty Valuation Tools (Wayback copy)",
+     "url": "https://www.hagerty.com/valuation-tools/ford/super_deluxe/1948",
+     "says": "8-cyl. 239cid/100hp 2bbl"
+    },
+    {
+     "name": "Wikipedia - Ford flathead V8 engine (cites Street Rodder 1/85) / 1932 Ford",
+     "url": "https://en.wikipedia.org/wiki/Ford_flathead_V8_engine",
+     "says": "V8-89, ratings unchanged"
+    },
+    {
+     "name": "EngineLabs - Historic Engines: The Fabulous Ford Flathead",
+     "url": "https://www.enginelabs.com/engine-tech/engine/historic-engines-the-fabulous-ford-flathead/",
+     "says": "post-war 239: 100 hp"
+    }
+   ],
+   "note": "As 1947."
+  },
+  {
+   "year": "1949-1951",
+   "hp": 100,
+   "hp_basis": "gross (brake)",
+   "code": "8BA / 0BA / 1BA",
+   "induction": "2-bbl downdraft",
+   "sources": [
+    {
+     "name": "Ford Motor Company factory literature (1932-1953 brochures, 1933 V-8 salesman booklet, 1953 owner's manual, 1939 Mercury foldout; oldcarbrochures.org scans) - counted as one source",
+     "url": "https://oldcarbrochures.org/United%20States/Ford/1933_Ford/1933-Ford-V8-Salesman-Booklet/index.html",
+     "says": "1950 Ford V-8 brochure: V-8 ENGINE: 100 brake h.p.; 3 3/16\" bore, 3 3/4\" stroke; 32.5 taxable h.p."
+    },
+    {
+     "name": "Hagerty Valuation Tools (Wayback copy)",
+     "url": "https://www.hagerty.com/valuation-tools/ford/custom/1949, custom_deluxe/1950, custom_deluxe/1951",
+     "says": "8-cyl. 239cid/100hp 2bbl"
+    },
+    {
+     "name": "Wikipedia - Ford flathead V8 engine (cites Street Rodder 1/85) / 1932 Ford",
+     "url": "https://en.wikipedia.org/wiki/Ford_flathead_V8_engine",
+     "says": "8BA ... performance unchanged"
+    },
+    {
+     "name": "EngineLabs - Historic Engines: The Fabulous Ford Flathead",
+     "url": "https://www.enginelabs.com/engine-tech/engine/historic-engines-the-fabulous-ford-flathead/",
+     "says": "post-war 239: 6.8:1, 100 hp"
+    }
+   ]
+  },
+  {
+   "year": "1952-1953",
+   "hp": 110,
+   "hp_basis": "gross (brake)",
+   "rpm": 3800,
+   "code": "B2 / B3",
+   "induction": "2-bbl downdraft",
+   "sources": [
+    {
+     "name": "Ford Motor Company factory literature (1932-1953 brochures, 1933 V-8 salesman booklet, 1953 owner's manual, 1939 Mercury foldout; oldcarbrochures.org scans) - counted as one source",
+     "url": "https://oldcarbrochures.org/United%20States/Ford/1933_Ford/1933-Ford-V8-Salesman-Booklet/index.html",
+     "says": "1953 Ford owner's manual specifications: Horsepower 110 @ 3800 R.P.M.; A.M.A. H.P. 32.5"
+    },
+    {
+     "name": "Hagerty Valuation Tools (Wayback copy)",
+     "url": "https://www.hagerty.com/valuation-tools/ford/mainline/1952, crestline/1952-1953",
+     "says": "8-cyl. 239cid/110hp 2bbl"
+    },
+    {
+     "name": "Wikipedia - Ford flathead V8 engine (cites Street Rodder 1/85) / 1932 Ford",
+     "url": "https://en.wikipedia.org/wiki/Ford_flathead_V8_engine",
+     "says": "1952 V8-B2 ... 110 hp; -B3 1953"
+    },
+    {
+     "name": "EngineLabs - Historic Engines: The Fabulous Ford Flathead",
+     "url": "https://www.enginelabs.com/engine-tech/engine/historic-engines-the-fabulous-ford-flathead/",
+     "says": "1952: the 239 was rated at 110 hp"
+    }
+   ],
+   "note": "Ford trucks rated 106 hp (1953 F-100 brochure)."
+  }
+ ],
+ "unverified": {
+  "firing_order": "1-5-4-8-6-3-7-2 per Ford only (1953 Ford owner's manual).",
+  "compression_ratio": "Wikipedia only: 1939 6.15:1 (EngineLabs 6.3:1), 1942 6.4:1, 1946-48 6.75:1, 1949-51 6.8:1 (EngineLabs gives 6.8:1 for 'post-war' without a year), 1952-53 7.2:1. No Ford figure found.",
+  "block_material": "Cast iron (Wikipedia, general statement only).",
+  "head_material": "Not established from acceptable sources.",
+  "rod_length_in": "Not found."
+ }
+}
