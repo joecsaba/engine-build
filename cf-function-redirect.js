@@ -123,7 +123,15 @@ function handler(event) {
     '/engines/oldsmobile/oldsmobile-207ci/207ci-3-62x2-31': '/engines/oldsmobile/oldsmobile-207ci',
     '/engines/plymouth/rb/426-maxwedge': '/engines/plymouth/rb/426ci-4-25x3-75',
     '/engines/plymouth/rb/426-wedge': '/engines/plymouth/rb/426ci-4-25x3-75',
-    '/engines/pontiac/pontiac-135ci/135ci-3-386x3-386': '/engines/pontiac/pontiac-135ci/135ci-3-386x3-724',
+    '/engines/pontiac/pontiac-135ci/135ci-3-386x3-386': '/engines/chevrolet/chevrolet-134ci/ln2',
+    // Pontiac 135ci removed 2026-10-15: NHRA's 1999-2001 rows carried the 2002+ L61; the
+    // 2000-01 Sunfire 2.2 was the LN2.
+    '/engines/pontiac/pontiac-135ci/135ci-3-386x3-724': '/engines/chevrolet/chevrolet-134ci/ln2',
+    '/engines/pontiac/pontiac-135ci': '/engines/chevrolet/chevrolet-134ci/ln2',
+    // 2026-10-15: the 1962-63 Fairlane 170 six had been given the 2.8 Cologne V6's
+    // geometry; the corrected 1985 Chevrolet 262 folded the GMC LB4 page into Chevrolet's.
+    '/engines/mercury/cologne/u-code': '/engines/ford/ford-170ci/u-code',
+    '/engines/gmc/vortec-4300/lb4': '/engines/chevrolet/chevrolet-262ci/lb4',
     '/engines/pontiac/pontiac-207ci/207ci-3-62x2-31': '/engines/pontiac/pontiac-207ci',
     '/engines/subaru/fa/24-na': '/engines/subaru/fa',
     '/engines/subaru/fa/subaru-fa24t': '/engines/subaru/fa',
