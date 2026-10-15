@@ -70,6 +70,6 @@ S["beetle"] = dict(metric_from=1900, force_layout=[4, "flat-four"], basis_from_r
 os.makedirs(os.path.join(SP, "vspecs"), exist_ok=True)
 for k, v in S.items():
     if ONLY and k not in ONLY: continue
-    v.setdefault("draft", True)
+    pass  # batch 7 published 2026-10-15; new models must set draft=True themselves
     json.dump(v, open(os.path.join(SP, "vspecs", f"{k}.json"), "w", encoding="utf-8"), ensure_ascii=False, indent=1)
 print("specs:", ", ".join(k for k in S if not ONLY or k in ONLY))
