@@ -2,6 +2,7 @@ import { useState, useEffect, useMemo } from "react";
 import { SourceNote } from "@/components/calculators/SourceNote";
 import { usePrefill } from "@/hooks/usePrefill";
 import { SEOHead } from "@/components/SEOHead";
+import { EnginePicker } from "@/components/calculators/EnginePicker";
 import { Input } from "@/components/ui/input";
 import { Label } from "@/components/ui/label";
 import { Card, CardContent, CardHeader, CardTitle, CardDescription } from "@/components/ui/card";
@@ -606,6 +607,15 @@ export default function CarbCfmSizingCalculator() {
               <CardDescription>Basic engine data for the CFM formula.</CardDescription>
             </CardHeader>
             <CardContent className="space-y-4">
+              <EnginePicker
+                fills={["displacement", "cylinders"]}
+                onSelect={(e) => {
+                  const got: string[] = [];
+                  if (e.displacement_ci != null) { setDisplacementUnit("ci"); setDisplacement(String(Math.round(e.displacement_ci))); got.push("displacement"); }
+                  if (e.num_cylinders != null) { setCylinders(String(e.num_cylinders)); got.push("cylinders"); }
+                  return got;
+                }}
+              />
               {/* Displacement */}
               <div className="space-y-2">
                 <div className="flex items-center justify-between">

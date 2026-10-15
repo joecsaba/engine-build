@@ -1,5 +1,6 @@
 import { useState, useMemo } from "react";
 import { SEOHead } from "@/components/SEOHead";
+import { EnginePicker } from "@/components/calculators/EnginePicker";
 import { Input } from "@/components/ui/input";
 import { Label } from "@/components/ui/label";
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
@@ -422,6 +423,16 @@ export default function HeadMillingCalculator() {
           <Card>
             <CardHeader><CardTitle className="text-base">Dimensions</CardTitle></CardHeader>
             <CardContent className="space-y-3">
+              <EnginePicker
+                fills={["bore", "chamber volume", "compression ratio"]}
+                onSelect={(e) => {
+                  const got: string[] = [];
+                  if (e.bore_in != null) { setBore(isMetric ? (e.bore_in * 25.4).toFixed(1) : e.bore_in.toFixed(3)); got.push("bore"); }
+                  if (e.head?.head_cc != null) { setChamberCC(String(e.head.head_cc)); got.push("chamber volume"); }
+                  if (e.compression_ratio != null) { setCurrentCR(String(e.compression_ratio)); got.push("compression ratio"); }
+                  return got;
+                }}
+              />
               <Field label={`Cylinder Bore (${dimLabel})`} value={bore} onChange={setBore} step={isMetric ? "0.1" : "0.001"} />
               <Field label="Combustion Chamber Volume (cc)" value={chamberCC} onChange={setChamberCC} step="0.5" />
               <Field label="Current Compression Ratio" value={currentCR} onChange={setCurrentCR} step="0.1" />

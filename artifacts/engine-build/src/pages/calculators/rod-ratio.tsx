@@ -1,5 +1,6 @@
 import { useState, useEffect, useMemo } from "react";
 import { usePrefill } from "@/hooks/usePrefill";
+import { EnginePicker } from "@/components/calculators/EnginePicker";
 import { SEOHead } from "@/components/SEOHead";
 import { Input } from "@/components/ui/input";
 import { Label } from "@/components/ui/label";
@@ -845,6 +846,15 @@ export default function RodRatioCalculator() {
         <Card>
           <CardHeader><CardTitle>Inputs</CardTitle></CardHeader>
           <CardContent className="space-y-4">
+            <EnginePicker
+              fills={["stroke", "rod length"]}
+              onSelect={(e) => {
+                const got: string[] = [];
+                if (e.stroke_in != null) { setStroke(e.stroke_in.toFixed(3)); got.push("stroke"); }
+                if (e.rod_length_in != null) { setRodLength(e.rod_length_in.toFixed(3)); got.push("rod length"); }
+                return got;
+              }}
+            />
             <div className="space-y-1">
               <Label>Stroke (inches)</Label>
               <Input type="number" step="0.001" value={stroke} onChange={e => setStroke(e.target.value)} />

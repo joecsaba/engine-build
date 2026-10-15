@@ -1,5 +1,6 @@
 import { useState, useEffect } from "react";
 import { SEOHead } from "@/components/SEOHead";
+import { EnginePicker } from "@/components/calculators/EnginePicker";
 import { Input } from "@/components/ui/input";
 import { Label } from "@/components/ui/label";
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
@@ -365,6 +366,15 @@ export default function QuenchDeckHeightCalculator() {
               )}
 
               <div className="border-t pt-3 space-y-3">
+                <EnginePicker
+                  fills={["bore", "stroke"]}
+                  onSelect={(e) => {
+                    const got: string[] = [];
+                    if (e.bore_in != null) { setBore(e.bore_in.toFixed(3)); got.push("bore"); }
+                    if (e.stroke_in != null) { setStroke(e.stroke_in.toFixed(3)); got.push("stroke"); }
+                    return got;
+                  }}
+                />
                 <Field label="Bore (inches)" hint="For volume calculations">
                   <Input type="number" step="0.001" value={bore} onChange={e => setBore(e.target.value)} />
                 </Field>
@@ -381,6 +391,18 @@ export default function QuenchDeckHeightCalculator() {
               <p className="text-xs text-muted-foreground mt-1">Calculated PTD can differ 0.005"-0.015" from measured. Always verify with a dial indicator.</p>
             </CardHeader>
             <CardContent className="space-y-3">
+              <EnginePicker
+                fills={["bore", "stroke", "rod length", "deck height", "chamber volume"]}
+                onSelect={(e) => {
+                  const got: string[] = [];
+                  if (e.bore_in != null) { setBore(e.bore_in.toFixed(3)); got.push("bore"); }
+                  if (e.stroke_in != null) { setStroke(e.stroke_in.toFixed(3)); got.push("stroke"); }
+                  if (e.rod_length_in != null) { setRod(e.rod_length_in.toFixed(3)); got.push("rod length"); }
+                  if (e.deck_height_in != null) { setDeckHt(e.deck_height_in.toFixed(3)); got.push("deck height"); }
+                  if (e.head?.head_cc != null) { setChamberVol(String(e.head.head_cc)); got.push("chamber volume"); }
+                  return got;
+                }}
+              />
               <Field label="Bore (inches)">
                 <Input type="number" step="0.001" value={bore} onChange={e => setBore(e.target.value)} />
               </Field>

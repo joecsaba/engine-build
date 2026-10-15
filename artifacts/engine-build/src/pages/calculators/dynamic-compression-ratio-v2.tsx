@@ -1,15 +1,14 @@
 import { useState, useMemo, useEffect } from "react";
 import { SEOHead } from "@/components/SEOHead";
+import { EnginePicker } from "@/components/calculators/EnginePicker";
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 import { Input } from "@/components/ui/input";
 import { Label } from "@/components/ui/label";
-import { Select, SelectContent, SelectItem, SelectTrigger, SelectValue } from "@/components/ui/select";
 import { Slider } from "@/components/ui/slider";
 import { AlertTriangle, Info, Fuel, Activity, Gauge, Calculator, ArrowRightLeft, HelpCircle } from "lucide-react";
 import { useBuildField } from "@/hooks/useBuildField";
 import { useBuildContext } from "@/context/BuildContext";
 import { BuildBanner } from "@/components/BuildBanner";
-import { useManufacturers, useFamilies, useFamilyEngines } from "@/hooks/useEngineData";
 import { useDefaultPlatform } from "@/hooks/useDefaultPlatform";
 import { PresetBar } from "@/components/presets/PresetBar";
 import { CalculatorContent } from "@/components/calculators/CalculatorContent";
@@ -70,15 +69,6 @@ function pistonPositionBelowTDC(thetaDeg: number, r: number, l: number): number 
 export default function DynamicCompressionRatioV2() {
   const { activeBuild, setField: setBuildField } = useBuildContext();
 
-  // Engine picker state
-  const [showPicker, setShowPicker] = useState(false);
-  const [pickerMfr, setPickerMfr] = useState("");
-  const [pickerFamily, setPickerFamily] = useState("");
-  const [pickerEngine, setPickerEngine] = useState("");
-  const { manufacturers } = useManufacturers();
-  const { families: allFamilies } = useFamilies();
-  const { familyData } = useFamilyEngines(pickerMfr, pickerFamily);
-  const filteredFamilies = allFamilies.filter(f => f.manufacturer_slug === pickerMfr);
 
   /* ─── Mode ─── */
   const [calcMode, setCalcMode] = useState<CalcMode>("forward");
@@ -119,20 +109,6 @@ export default function DynamicCompressionRatioV2() {
 
   /* ─── Cam advance slider ─── */
   const [camAdvanceSlider, setCamAdvanceSlider] = useState(0);
-
-  /* ─── Engine picker handler ─── */
-  const handlePickerEngine = (engineId: string) => {
-    setPickerEngine(engineId);
-    if (!familyData) return;
-    const eng = familyData.engines.find(e => e.engine_id === engineId);
-    if (!eng) return;
-    if (eng.bore_in) setBore(eng.bore_in.toFixed(3));
-    if (eng.stroke_in) setStroke(eng.stroke_in.toFixed(3));
-    if (eng.rod_length_in) setRodLength(eng.rod_length_in.toFixed(3));
-    if (eng.head?.head_cc) setChamberVolume(String(eng.head.head_cc));
-    if (eng.head?.head_gasket_thickness) setGasketThick(eng.head.head_gasket_thickness.toFixed(3));
-    if (eng.compression_ratio) setKnownStaticCR(eng.compression_ratio.toFixed(1));
-  };
 
   /* ─── Reverse-solve target ─── */
   const [targetDCR, setTargetDCR] = useState("8.0");
@@ -410,53 +386,19 @@ export default function DynamicCompressionRatioV2() {
           <Card>
             <CardHeader><CardTitle>Engine Dimensions</CardTitle></CardHeader>
             <CardContent className="space-y-3">
-              <div className="mb-4 p-3 bg-gray-50 rounded-lg border">
-                <button
-                  onClick={() => setShowPicker(!showPicker)}
-                  className="text-sm font-medium text-[#E85D04] hover:underline"
-                >
-                  {showPicker ? "Hide engine picker \u2191" : "Auto-fill from engine database \u2193"}
-                </button>
-                {showPicker && (
-                  <div className="mt-3 grid grid-cols-1 sm:grid-cols-3 gap-3">
-                    <div className="space-y-1">
-                      <Label className="text-xs">Manufacturer</Label>
-                      <Select value={pickerMfr} onValueChange={v => { setPickerMfr(v); setPickerFamily(""); setPickerEngine(""); }}>
-                        <SelectTrigger><SelectValue placeholder="Select..." /></SelectTrigger>
-                        <SelectContent className="max-h-60 overflow-y-auto">
-                          {manufacturers.map(m => (
-                            <SelectItem key={m.slug} value={m.slug}>{m.name}</SelectItem>
-                          ))}
-                        </SelectContent>
-                      </Select>
-                    </div>
-                    <div className="space-y-1">
-                      <Label className="text-xs">Family</Label>
-                      <Select value={pickerFamily} onValueChange={v => { setPickerFamily(v); setPickerEngine(""); }} disabled={!pickerMfr}>
-                        <SelectTrigger><SelectValue placeholder="Select..." /></SelectTrigger>
-                        <SelectContent className="max-h-60 overflow-y-auto">
-                          {filteredFamilies.map(f => (
-                            <SelectItem key={f.family_slug} value={f.family_slug}>{f.family_name}</SelectItem>
-                          ))}
-                        </SelectContent>
-                      </Select>
-                    </div>
-                    <div className="space-y-1">
-                      <Label className="text-xs">Engine</Label>
-                      <Select value={pickerEngine} onValueChange={handlePickerEngine} disabled={!familyData}>
-                        <SelectTrigger><SelectValue placeholder="Select..." /></SelectTrigger>
-                        <SelectContent className="max-h-60 overflow-y-auto">
-                          {familyData?.engines.map(e => (
-                            <SelectItem key={e.engine_id} value={e.engine_id}>
-                              {e.displacement_ci ? `${e.displacement_ci}ci` : ""} {e.year || ""} {e.variants?.[0]?.code || e.engine_id}
-                            </SelectItem>
-                          ))}
-                        </SelectContent>
-                      </Select>
-                    </div>
-                  </div>
-                )}
-              </div>
+              <EnginePicker
+                fills={["bore", "stroke", "rod length", "chamber volume", "deck clearance", "static CR"]}
+                onSelect={(e) => {
+                  const got: string[] = [];
+                  if (e.bore_in != null) { setBore(e.bore_in.toFixed(3)); got.push("bore"); }
+                  if (e.stroke_in != null) { setStroke(e.stroke_in.toFixed(3)); got.push("stroke"); }
+                  if (e.rod_length_in != null) { setRodLength(e.rod_length_in.toFixed(3)); got.push("rod length"); }
+                  if (e.head?.head_cc != null) { setChamberVolume(String(e.head.head_cc)); got.push("chamber volume"); }
+                  if (e.piston_deck_clearance != null) { setDeckClearance(e.piston_deck_clearance.toFixed(3)); got.push("deck clearance"); }
+                  if (e.compression_ratio != null) { setKnownStaticCR(e.compression_ratio.toFixed(1)); got.push("static CR"); }
+                  return got;
+                }}
+              />
               <Field label="Bore (inches)" value={bore} onChange={setBore} step="0.001" hint="Measured or from piston box. Overbores: add to stock (e.g. 4.000 + 0.030 = 4.030)." />
               <Field label="Stroke (inches)" value={stroke} onChange={setStroke} step="0.001" hint="Stock or from crank specs. Common SBC: 3.480 (350), 3.750 (383)." />
               <Field label="Connecting Rod Length (inches)" value={rodLength} onChange={setRodLength} step="0.001" hint="Stock SBC: 5.700, LS: 6.098, SBF 302: 5.090, BBC: 6.135. On aftermarket rod box." />

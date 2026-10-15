@@ -1,5 +1,6 @@
 import { useState, useMemo, useEffect } from "react";
 import { usePrefill } from "@/hooks/usePrefill";
+import { EnginePicker } from "@/components/calculators/EnginePicker";
 import { Link } from "wouter";
 import { SEOHead } from "@/components/SEOHead";
 import { Input } from "@/components/ui/input";
@@ -568,6 +569,16 @@ export default function RingGapAdvancedCalculator() {
                 </button>
               </div>
             </div>
+
+            <EnginePicker
+              fills={["bore"]}
+              onSelect={(e) => {
+                if (e.bore_in == null) return [];
+                setBoreUnits("in");
+                handleBoreChange(e.bore_in.toFixed(3));
+                return ["bore"];
+              }}
+            />
 
             {/* Bore with unit toggle */}
             <div className="space-y-1">

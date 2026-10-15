@@ -1,5 +1,6 @@
 import { useState } from "react";
 import { SEOHead } from "@/components/SEOHead";
+import { EnginePicker } from "@/components/calculators/EnginePicker";
 import { Input } from "@/components/ui/input";
 import { Label } from "@/components/ui/label";
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
@@ -121,6 +122,17 @@ export default function BoostCompressionCalculator() {
           <Card>
             <CardHeader><CardTitle>Engine &amp; Boost</CardTitle></CardHeader>
             <CardContent className="space-y-3">
+              <EnginePicker
+                fills={["compression ratio", "bore", "stroke", "rod length"]}
+                onSelect={(e) => {
+                  const got: string[] = [];
+                  if (e.compression_ratio != null) { setStaticCR(String(e.compression_ratio)); got.push("compression ratio"); }
+                  if (e.bore_in != null) { setBore(e.bore_in.toFixed(3)); got.push("bore"); }
+                  if (e.stroke_in != null) { setStroke(e.stroke_in.toFixed(3)); got.push("stroke"); }
+                  if (e.rod_length_in != null) { setRodLength(e.rod_length_in.toFixed(3)); got.push("rod length"); }
+                  return got;
+                }}
+              />
               <Field label="Static Compression Ratio" value={staticCR} onChange={setStaticCR} step="0.1" />
 
               <div className="grid grid-cols-2 gap-3">

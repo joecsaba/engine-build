@@ -867,6 +867,10 @@ function assignCanonicals(engines) {
  *
  * Generated at build time; the directory is gitignored.
  */
+// What people type for a maker, added to the picker's search text.
+const SEARCH_ALIASES = { chevrolet: "chevy", oldsmobile: "olds", volkswagen: "vw", mercedes_benz: "mercedes benz",
+  dodge: "mopar", plymouth: "mopar", chrysler: "mopar", american_motors: "amc", gmc: "chevy" };
+
 export function writeRuntimeData({ manufacturers, families }) {
   const outDir = resolve(DATA, "engine-pages");
   // Start clean: a family that was merged or renamed must not linger.
@@ -913,5 +917,32 @@ export function writeRuntimeData({ manufacturers, families }) {
     "utf8"
   );
 
-  return families.length + 1;
+  // Search index for the calculators' engine picker ("type D16Z6, LS1 or Buick
+  // 455"): one compact row per engine page, duplicates of another page left
+  // out. n = name, f = family URL, s = engine slug, k = lowercase match text,
+  // y = years. The picker loads the family doc for the chosen row as before.
+  const search = [];
+  for (const fam of families) {
+    for (const e of fam.engines) {
+      if (e.canonicalUrl) continue;
+      const codes = (e.variants ?? []).flatMap((v) => v.codes ?? []);
+      const name = e.seoTitle ?? `${fam.manufacturerName} ${e.displayName}`;
+      const years = e.yearMin != null ? (e.yearMax != null && e.yearMax !== e.yearMin ? `${e.yearMin}–${e.yearMax}` : `${e.yearMin}`) : "";
+      const k = [name, fam.manufacturerName, fam.familyName, e.displayName, ...codes,
+        SEARCH_ALIASES[e.manufacturerSlug] ?? "",
+        e.displacement_ci != null ? `${Math.round(e.displacement_ci)}` : "", e.displacement_l != null ? `${e.displacement_l}l` : ""]
+        .join(" ").toLowerCase().replace(/\s+/g, " ");
+      // p ranks ties: pages covering more years and cars come first, so a
+      // search for "350" leads with the Chevrolet 350, not a one-year copy
+      const p = (e.variantCount ?? 1) + (e.factoryCars ?? []).reduce((n, c) => n + (c.rows?.length ?? 1), 0);
+      // c = how many calculator inputs the page can fill; a calculator wants the
+      // fullest record first (the LS1 with compression and rod length on file)
+      const c = [e.bore_in, e.stroke_in, e.rod_length_in, e.compression_ratio, e.head?.head_cc, e.deck_height_in, e.piston_deck_clearance]
+        .filter((v) => v != null).length;
+      search.push({ n: name, f: fam.url, s: e.slug, k, y: years, d: e.displacement_ci ?? null, p, c });
+    }
+  }
+  writeFileSync(resolve(outDir, "search.json"), JSON.stringify(search), "utf8");
+
+  return families.length + 2;
 }
