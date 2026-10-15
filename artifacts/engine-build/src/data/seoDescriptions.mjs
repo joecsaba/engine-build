@@ -80,7 +80,7 @@ export function familyDescription(fam) {
   // A family whose engines all share one bore and stroke leads with it: that is
   // what "buick 455 bore and stroke" is asking.
   const metricFirst = !INCH_MAKERS.has(fam.manufacturerSlug);
-  const bsIn = familyBoreStroke(fam, "in"), bsMm = familyBoreStroke(fam, "mm");
+  const bsIn = familyBoreStroke(fam, metricFirst ? "in4" : "in"), bsMm = familyBoreStroke(fam, "mm");
   if (bsIn) {
     const n = fam.engines.length;
     return clampDesc([
@@ -142,8 +142,12 @@ const inch = (v) => {
 };
 const mm = (v) => String(Math.round(Number(v) * 25.4 * 10) / 10).replace(/\.0$/, "");
 
+// "in4" is the inch conversion of a metric engine, to the ten-thousandth (a
+// machinist's "tenths"): a 75 mm bore reads 2.9528 in. American engines keep
+// the precision they were published in ("4.00 x 3.48 in").
 function boreStroke(e, unit) {
   if (e.bore_in == null || e.stroke_in == null) return null;
+  if (unit === "in4") return `${Number(e.bore_in).toFixed(4)} x ${Number(e.stroke_in).toFixed(4)} in`;
   return unit === "in" ? `${inch(e.bore_in)} x ${inch(e.stroke_in)} in` : `${mm(e.bore_in)} x ${mm(e.stroke_in)} mm`;
 }
 
@@ -180,7 +184,7 @@ export function engineSeoDescription(e) {
   const size = e.displacement_ci != null
     ? (metricFirst && e.displacement_l != null ? `${liters(e.displacement_l)}L (${e.displacement_ci} ci)` : `${e.displacement_ci} ci${e.displacement_l != null ? ` (${liters(e.displacement_l)}L)` : ""}`)
     : null;
-  const bsIn = boreStroke(e, "in"), bsMm = boreStroke(e, "mm");
+  const bsIn = boreStroke(e, metricFirst ? "in4" : "in"), bsMm = boreStroke(e, "mm");
   const bs = bsIn ? `${metricFirst ? bsMm : bsIn} (${metricFirst ? bsIn : bsMm}) bore and stroke` : null;
   const cyl = e.num_cylinders != null ? `${e.num_cylinders}-cylinder` : null;
   const lead = [size && cyl ? `${size} ${cyl}` : size ?? cyl, bs, e.compression_ratio != null ? `${e.compression_ratio}:1 compression` : null].filter(Boolean);
@@ -231,4 +235,18 @@ function buildFacts(e) {
   const out = [];
   for (let n = full.length; n >= 1; n--) out.push(`${cap(full.slice(0, n).join(", "))}.`);
   return out;
+}
+
+/**
+ * The page heading. Not bound by the title's length budget, so a metric engine
+ * shows its inch conversion too: "Honda D16Z6 Specs: 75 x 90 mm (2.9528 x 3.5433 in), 125 hp".
+ */
+export function engineSeoHeading(e) {
+  const metric = !INCH_MAKERS.has(e.manufacturerSlug);
+  const bs = metric
+    ? (boreStroke(e, "mm") && `${boreStroke(e, "mm")} (${boreStroke(e, "in4")})`)
+    : boreStroke(e, "in");
+  const hp = hpText(e);
+  const tail = [bs, hp].filter(Boolean).join(", ");
+  return `${engineSeoName(e)} Specs${tail ? `: ${tail}` : ""}`;
 }

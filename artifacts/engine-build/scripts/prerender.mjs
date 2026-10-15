@@ -18,7 +18,7 @@ import { dirname, resolve } from "node:path";
 import { fileURLToPath, pathToFileURL } from "node:url";
 
 import GUIDES from "../src/data/guides/manifest.mjs";
-import { clampDesc, encodedLength, familyDescription, manufacturerDescription, engineSeoTitle, engineSeoDescription, familySeoTitle } from "../src/data/seoDescriptions.mjs";
+import { clampDesc, encodedLength, familyDescription, manufacturerDescription, engineSeoTitle, engineSeoDescription, engineSeoHeading, familySeoTitle } from "../src/data/seoDescriptions.mjs";
 import { engineNarrative } from "../src/data/engineNarrative.mjs";
 import FAQ from "../src/data/faq.mjs";
 import { loadEngineData, writeRuntimeData } from "./engineData.mjs";
@@ -491,7 +491,7 @@ function engineEntry(e) {
       <nav aria-label="Breadcrumb" style="font-size:14px;color:#666;margin:24px 0;">
         ${breadcrumbHtml(crumbs)}
       </nav>
-      <h1>${escapeHtml(title)}</h1>
+      <h1>${escapeHtml(engineSeoHeading(e))}</h1>
       <p><a href="${e.familyUrl}">See other engines in this family</a></p>
       ${e.canonicalUrl ? `<p>The same engine also has a main page: <a href="${e.canonicalUrl}">${escapeHtml(e.canonicalName ?? "main page")}</a>.</p>` : ""}
       <p>${escapeHtml(description)}</p>

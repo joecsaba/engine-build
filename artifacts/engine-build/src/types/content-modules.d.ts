@@ -66,6 +66,7 @@ declare module "@/data/seoDescriptions.mjs" {
   export function engineSeoName(e: object): string;
   export function engineSeoTitle(e: object): string;
   export function engineSeoDescription(e: object): string;
+  export function engineSeoHeading(e: object): string;
   export function familySeoTitle(fam: object): string;
   export function familyDescription(fam: {
     manufacturerName: string;

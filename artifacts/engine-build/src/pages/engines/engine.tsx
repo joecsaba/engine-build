@@ -1,4 +1,4 @@
-import { engineSeoTitle, engineSeoDescription } from "@/data/seoDescriptions.mjs";
+import { engineSeoTitle, engineSeoDescription, engineSeoHeading } from "@/data/seoDescriptions.mjs";
 import { useEffect, useState } from "react";
 import { Link, useParams } from "wouter";
 import { ArrowLeft, Printer } from "lucide-react";
@@ -93,7 +93,7 @@ export default function EnginePage() {
 
       <div className="flex justify-between items-start mb-6 flex-wrap gap-4">
         <div>
-          <h1 className="text-4xl font-bold mb-1">{title}</h1>
+          <h1 className="text-4xl font-bold mb-1">{engineSeoHeading(rec)}</h1>
           <p className="text-muted-foreground">{description}</p>
           {rec.canonicalUrl && (
             <p className="text-sm mt-2">
