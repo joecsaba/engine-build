@@ -1,0 +1,2985 @@
+{
+ "vehicle": "ford-expedition-1997-2026",
+ "scope": "US Ford Expedition incl. Expedition EL (2007-2017) and MAX (2018+), Timberline (2022-2024), Tremor (2025+), Stealth Edition. Lincoln Navigator-only engines (5.4 DOHC, 450-hp EcoBoost) excluded. The SVT Expedition \"Thunder\" (360-hp 5.4) was a proposal only and never produced.",
+ "nhra_note": "The NHRA input for this job is empty, so every engine is nhra:false.",
+ "hp_note": "All ratings SAE net. 2018+ EcoBoost ratings on premium fuel (SAE J1349).",
+ "source_rule": "Independent groups: FORD, WIKI, EPA, CG (Consumer Guide), KBB. All Ford material = one group; EPA = size/cylinders/induction only.",
+ "years": {
+  "1997": [
+   {
+    "gen": "gen1",
+    "liters": "4.6",
+    "cid": 281,
+    "hp": 215,
+    "hp_basis": "SAE net",
+    "rpo": "Triton 4.6 SOHC",
+    "name": "4.6L / 281 V8 (SOHC 2-valve)",
+    "common_name": "Modular 4.6 / Triton",
+    "trims": [
+     "standard engine; 2WD and 4WD (XLT, Eddie Bauer)"
+    ],
+    "status": "three_sources_not_nhra",
+    "note": "Ford brochure lists the engine without a rating; 215 hp from Wikipedia and Consumer Guide.",
+    "nhra": false,
+    "sources": [
+     {
+      "name": "Ford 1997 Cars and Trucks brochure (Ford Heritage Vault), Expedition specs",
+      "url": "https://fordheritagevaultmedia.com/api/links/c29a9048c4864d89915b29f4f39330e4/uuid/4facba5b52ab4765941a28cc4e462fd0/access",
+      "says": "Expedition engine: Triton 4.6L SOHC V8; Triton 5.4L SOHC V8 (optional); RWD or Control-Trac 4WD (no ratings)"
+     },
+     {
+      "name": "EPA fueleconomy.gov vehicle data",
+      "url": "https://www.fueleconomy.gov/feg/download.shtml",
+      "says": "1997: 4.6 L 8-cyl; Expedition 2WD, Expedition 4WD"
+     },
+     {
+      "name": "Wikipedia - Ford Expedition",
+      "url": "https://en.wikipedia.org/wiki/Ford_Expedition",
+      "says": "4.6 Triton 2-valve 1997-1998: 215 hp"
+     },
+     {
+      "name": "Consumer Guide - 1997-02 Ford Expedition (used-car review)",
+      "url": "https://consumerguide.com/used/1997-02-ford-expedition/",
+      "says": "A 215-horsepower 4.6-liter V8 engine was standard; 240 hp for 1999"
+     }
+    ],
+    "independent_sources": 4,
+    "source_groups": [
+     "CG",
+     "EPA",
+     "FORD",
+     "WIKI"
+    ]
+   },
+   {
+    "gen": "gen1",
+    "liters": "5.4",
+    "cid": 330,
+    "hp": 230,
+    "hp_basis": "SAE net",
+    "rpo": "Triton 5.4 SOHC 2V",
+    "name": "5.4L / 330 V8 (SOHC 2-valve)",
+    "common_name": "Modular 5.4 / Triton",
+    "trims": [
+     "optional; 2WD and 4WD"
+    ],
+    "status": "three_sources_not_nhra",
+    "note": "Ford brochure lists the engine without a rating; 230 hp from Wikipedia, Consumer Guide and KBB.",
+    "nhra": false,
+    "sources": [
+     {
+      "name": "Ford 1997 Cars and Trucks brochure (Ford Heritage Vault), Expedition specs",
+      "url": "https://fordheritagevaultmedia.com/api/links/c29a9048c4864d89915b29f4f39330e4/uuid/4facba5b52ab4765941a28cc4e462fd0/access",
+      "says": "Triton 5.4L SOHC V8 (optional)"
+     },
+     {
+      "name": "EPA fueleconomy.gov vehicle data",
+      "url": "https://www.fueleconomy.gov/feg/download.shtml",
+      "says": "1997: 5.4 L 8-cyl; Expedition 2WD, Expedition 4WD"
+     },
+     {
+      "name": "Wikipedia - Ford Expedition",
+      "url": "https://en.wikipedia.org/wiki/Ford_Expedition",
+      "says": "5.4 Triton 2-valve 1997-1998: 230 hp"
+     },
+     {
+      "name": "Consumer Guide - 1997-02 Ford Expedition (used-car review)",
+      "url": "https://consumerguide.com/used/1997-02-ford-expedition/",
+      "says": "Optional: a 230-horsepower, 5.4-liter V8; 260 hp for 1999"
+     },
+     {
+      "name": "Kelley Blue Book - 1997 Ford Expedition",
+      "url": "https://www.kbb.com/ford/expedition/1997/",
+      "says": "V8, 5.4 Liter: 230 @ 4250 rpm; engines V8 4.6 / V8 5.4"
+     }
+    ],
+    "independent_sources": 5,
+    "source_groups": [
+     "CG",
+     "EPA",
+     "FORD",
+     "KBB",
+     "WIKI"
+    ]
+   }
+  ],
+  "1998": [
+   {
+    "gen": "gen1",
+    "liters": "4.6",
+    "cid": 281,
+    "hp": 215,
+    "hp_basis": "SAE net",
+    "rpo": "Triton 4.6 SOHC",
+    "name": "4.6L / 281 V8 (SOHC 2-valve)",
+    "common_name": "Modular 4.6 / Triton",
+    "trims": [
+     "standard engine; 2WD and 4WD (XLT, Eddie Bauer)"
+    ],
+    "status": "three_sources_not_nhra",
+    "note": "Ford brochure lists the engine without a rating; 215 hp from Wikipedia and Consumer Guide.",
+    "nhra": false,
+    "sources": [
+     {
+      "name": "Ford 1998 Cars and Trucks brochure (Ford Heritage Vault), Expedition specs",
+      "url": "https://fordheritagevaultmedia.com/api/links/c29a9048c4864d89915b29f4f39330e4/uuid/de2bbf0f2324459c9724f9cf5ce97f10/access",
+      "says": "Expedition engine: Triton 4.6L SOHC V8; Triton 5.4L SOHC V8 (optional); RWD or Control-Trac 4WD (no ratings)"
+     },
+     {
+      "name": "EPA fueleconomy.gov vehicle data",
+      "url": "https://www.fueleconomy.gov/feg/download.shtml",
+      "says": "1998: 4.6 L 8-cyl; Expedition 2WD, Expedition 4WD"
+     },
+     {
+      "name": "Wikipedia - Ford Expedition",
+      "url": "https://en.wikipedia.org/wiki/Ford_Expedition",
+      "says": "4.6 Triton 2-valve 1997-1998: 215 hp"
+     },
+     {
+      "name": "Consumer Guide - 1997-02 Ford Expedition (used-car review)",
+      "url": "https://consumerguide.com/used/1997-02-ford-expedition/",
+      "says": "A 215-horsepower 4.6-liter V8 engine was standard; 240 hp for 1999"
+     }
+    ],
+    "independent_sources": 4,
+    "source_groups": [
+     "CG",
+     "EPA",
+     "FORD",
+     "WIKI"
+    ]
+   },
+   {
+    "gen": "gen1",
+    "liters": "5.4",
+    "cid": 330,
+    "hp": 230,
+    "hp_basis": "SAE net",
+    "rpo": "Triton 5.4 SOHC 2V",
+    "name": "5.4L / 330 V8 (SOHC 2-valve)",
+    "common_name": "Modular 5.4 / Triton",
+    "trims": [
+     "optional; 2WD and 4WD"
+    ],
+    "status": "three_sources_not_nhra",
+    "note": "Ford brochure lists the engine without a rating; 230 hp from Wikipedia, Consumer Guide and KBB.",
+    "nhra": false,
+    "sources": [
+     {
+      "name": "Ford 1998 Cars and Trucks brochure (Ford Heritage Vault), Expedition specs",
+      "url": "https://fordheritagevaultmedia.com/api/links/c29a9048c4864d89915b29f4f39330e4/uuid/de2bbf0f2324459c9724f9cf5ce97f10/access",
+      "says": "Triton 5.4L SOHC V8 (optional)"
+     },
+     {
+      "name": "EPA fueleconomy.gov vehicle data",
+      "url": "https://www.fueleconomy.gov/feg/download.shtml",
+      "says": "1998: 5.4 L 8-cyl; Expedition 2WD, Expedition 4WD"
+     },
+     {
+      "name": "Wikipedia - Ford Expedition",
+      "url": "https://en.wikipedia.org/wiki/Ford_Expedition",
+      "says": "5.4 Triton 2-valve 1997-1998: 230 hp"
+     },
+     {
+      "name": "Consumer Guide - 1997-02 Ford Expedition (used-car review)",
+      "url": "https://consumerguide.com/used/1997-02-ford-expedition/",
+      "says": "Optional: a 230-horsepower, 5.4-liter V8; 260 hp for 1999"
+     },
+     {
+      "name": "Kelley Blue Book - 1998 Ford Expedition",
+      "url": "https://www.kbb.com/ford/expedition/1998/",
+      "says": "V8, 5.4 Liter: 230 @ 4250 rpm; engines V8 4.6 / V8 5.4"
+     }
+    ],
+    "independent_sources": 5,
+    "source_groups": [
+     "CG",
+     "EPA",
+     "FORD",
+     "KBB",
+     "WIKI"
+    ]
+   }
+  ],
+  "1999": [
+   {
+    "gen": "gen1",
+    "liters": "4.6",
+    "cid": 281,
+    "hp": 240,
+    "hp_basis": "SAE net",
+    "rpo": "Triton 4.6 SOHC",
+    "name": "4.6L / 281 V8 (SOHC 2-valve)",
+    "common_name": "Modular 4.6 / Triton",
+    "trims": [
+     "standard on XLT and Eddie Bauer 4x2; 2WD and 4WD"
+    ],
+    "status": "three_sources_not_nhra",
+    "note": "Re-rated 215 -> 240 for 1999. Wikipedia engine table gives no 1999-2000 4.6 figure (215 for 1997-98, 240 for 2001-02).",
+    "nhra": false,
+    "sources": [
+     {
+      "name": "Ford 1999 Expedition brochure (Ford Heritage Vault)",
+      "url": "https://fordheritagevaultmedia.com/api/links/c29a9048c4864d89915b29f4f39330e4/uuid/6e39a204f1fb4b8fb467d61a3a6b5460/access",
+      "says": "Horsepower (SAE net) 4.6L: 240 @ 4,750 rpm; 5.4L: 260 @ 4,500"
+     },
+     {
+      "name": "EPA fueleconomy.gov vehicle data",
+      "url": "https://www.fueleconomy.gov/feg/download.shtml",
+      "says": "1999: 4.6 L 8-cyl; Expedition 2WD, Expedition 4WD"
+     },
+     {
+      "name": "Consumer Guide - 1997-02 Ford Expedition (used-car review)",
+      "url": "https://consumerguide.com/used/1997-02-ford-expedition/",
+      "says": "engines got a boost to 240 and 260 horsepower, respectively, for 1999"
+     },
+     {
+      "name": "Wikipedia - Ford Expedition",
+      "url": "https://en.wikipedia.org/wiki/Ford_Expedition",
+      "says": "4.6 Triton listed as Expedition engine 1997-2002 (no 1999 rating in table)"
+     },
+     {
+      "name": "Kelley Blue Book - 1999 Ford Expedition",
+      "url": "https://www.kbb.com/ford/expedition/1999/",
+      "says": "engines available: V8 4.6 Liter, V8 5.4 Liter"
+     }
+    ],
+    "independent_sources": 5,
+    "source_groups": [
+     "CG",
+     "EPA",
+     "FORD",
+     "KBB",
+     "WIKI"
+    ]
+   },
+   {
+    "gen": "gen1",
+    "liters": "5.4",
+    "cid": 330,
+    "hp": 260,
+    "hp_basis": "SAE net",
+    "rpo": "Triton 5.4 SOHC 2V",
+    "name": "5.4L / 330 V8 (SOHC 2-valve)",
+    "common_name": "Modular 5.4 / Triton",
+    "trims": [
+     "optional; standard on Eddie Bauer 4x4 (2001); 2WD and 4WD"
+    ],
+    "status": "three_sources_not_nhra",
+    "note": "",
+    "nhra": false,
+    "sources": [
+     {
+      "name": "Ford 1999 Expedition brochure (Ford Heritage Vault)",
+      "url": "https://fordheritagevaultmedia.com/api/links/c29a9048c4864d89915b29f4f39330e4/uuid/6e39a204f1fb4b8fb467d61a3a6b5460/access",
+      "says": "Horsepower, SAE net (5.4L V8): 260 @ 4,500 rpm"
+     },
+     {
+      "name": "EPA fueleconomy.gov vehicle data",
+      "url": "https://www.fueleconomy.gov/feg/download.shtml",
+      "says": "1999: 5.4 L 8-cyl; Expedition 2WD, Expedition 4WD"
+     },
+     {
+      "name": "Wikipedia - Ford Expedition",
+      "url": "https://en.wikipedia.org/wiki/Ford_Expedition",
+      "says": "5.4 Triton 2-valve 1999-2002: 260 hp"
+     },
+     {
+      "name": "Consumer Guide - 1997-02 Ford Expedition (used-car review)",
+      "url": "https://consumerguide.com/used/1997-02-ford-expedition/",
+      "says": "260 horsepower from 1999"
+     },
+     {
+      "name": "Kelley Blue Book - 1999 Ford Expedition",
+      "url": "https://www.kbb.com/ford/expedition/1999/",
+      "says": "V8, 5.4 Liter: 260 @ 4500 rpm"
+     }
+    ],
+    "independent_sources": 5,
+    "source_groups": [
+     "CG",
+     "EPA",
+     "FORD",
+     "KBB",
+     "WIKI"
+    ]
+   }
+  ],
+  "2000": [
+   {
+    "gen": "gen1",
+    "liters": "4.6",
+    "cid": 281,
+    "hp": 240,
+    "hp_basis": "SAE net",
+    "rpo": "Triton 4.6 SOHC",
+    "name": "4.6L / 281 V8 (SOHC 2-valve)",
+    "common_name": "Modular 4.6 / Triton",
+    "trims": [
+     "standard on XLT; 2WD and 4WD"
+    ],
+    "status": "three_sources_not_nhra",
+    "note": "Ford 2000 press overview (ford-trucks.com reprint) says \"a 215hp 4.6\", the pre-1999 figure; the 2000 Ford brochure spec table gives 240.",
+    "nhra": false,
+    "sources": [
+     {
+      "name": "Ford 2000 Expedition brochure (Ford Heritage Vault)",
+      "url": "https://fordheritagevaultmedia.com/api/links/c29a9048c4864d89915b29f4f39330e4/uuid/8972494f92444c9f8a88b2f5d22d67e4/access",
+      "says": "4.6-liter SEFI V8 240 @ 4,750; 5.4-liter 260 @ 4,500 (SAE net)"
+     },
+     {
+      "name": "EPA fueleconomy.gov vehicle data",
+      "url": "https://www.fueleconomy.gov/feg/download.shtml",
+      "says": "2000: 4.6 L 8-cyl; Expedition 2WD, Expedition 4WD"
+     },
+     {
+      "name": "Consumer Guide - 1997-02 Ford Expedition (used-car review)",
+      "url": "https://consumerguide.com/used/1997-02-ford-expedition/",
+      "says": "240 hp from 1999 (Engine HP 215-240 for the generation)"
+     },
+     {
+      "name": "Wikipedia - Ford Expedition",
+      "url": "https://en.wikipedia.org/wiki/Ford_Expedition",
+      "says": "4.6 Triton listed 1997-2002 (no 2000 rating in table)"
+     },
+     {
+      "name": "Kelley Blue Book - 2000 Ford Expedition",
+      "url": "https://www.kbb.com/ford/expedition/2000/",
+      "says": "engines available: V8 4.6 Liter, V8 5.4 Liter"
+     }
+    ],
+    "independent_sources": 5,
+    "source_groups": [
+     "CG",
+     "EPA",
+     "FORD",
+     "KBB",
+     "WIKI"
+    ]
+   },
+   {
+    "gen": "gen1",
+    "liters": "5.4",
+    "cid": 330,
+    "hp": 260,
+    "hp_basis": "SAE net",
+    "rpo": "Triton 5.4 SOHC 2V",
+    "name": "5.4L / 330 V8 (SOHC 2-valve)",
+    "common_name": "Modular 5.4 / Triton",
+    "trims": [
+     "optional; standard on Eddie Bauer 4x4 (2001); 2WD and 4WD"
+    ],
+    "status": "three_sources_not_nhra",
+    "note": "",
+    "nhra": false,
+    "sources": [
+     {
+      "name": "Ford 2000 Expedition brochure (Ford Heritage Vault)",
+      "url": "https://fordheritagevaultmedia.com/api/links/c29a9048c4864d89915b29f4f39330e4/uuid/8972494f92444c9f8a88b2f5d22d67e4/access",
+      "says": "5.4-liter SEFI V8 260 @ 4,500"
+     },
+     {
+      "name": "EPA fueleconomy.gov vehicle data",
+      "url": "https://www.fueleconomy.gov/feg/download.shtml",
+      "says": "2000: 5.4 L 8-cyl; Expedition 2WD, Expedition 4WD"
+     },
+     {
+      "name": "Wikipedia - Ford Expedition",
+      "url": "https://en.wikipedia.org/wiki/Ford_Expedition",
+      "says": "5.4 Triton 2-valve 1999-2002: 260 hp"
+     },
+     {
+      "name": "Consumer Guide - 1997-02 Ford Expedition (used-car review)",
+      "url": "https://consumerguide.com/used/1997-02-ford-expedition/",
+      "says": "260 horsepower from 1999"
+     },
+     {
+      "name": "Kelley Blue Book - 2000 Ford Expedition",
+      "url": "https://www.kbb.com/ford/expedition/2000/",
+      "says": "V8, 5.4 Liter: 260 @ 4500 rpm"
+     }
+    ],
+    "independent_sources": 5,
+    "source_groups": [
+     "CG",
+     "EPA",
+     "FORD",
+     "KBB",
+     "WIKI"
+    ]
+   }
+  ],
+  "2001": [
+   {
+    "gen": "gen1",
+    "liters": "4.6",
+    "cid": 281,
+    "hp": null,
+    "hp_basis": "SAE net",
+    "rpo": "Triton 4.6 SOHC",
+    "name": "4.6L / 281 V8 (SOHC 2-valve)",
+    "common_name": "Modular 4.6 / Triton",
+    "trims": [
+     "standard on XLT and Eddie Bauer 4x2; 2WD and 4WD"
+    ],
+    "status": "disputed",
+    "note": "Engine confirmed; rating withheld. 240 hp: 2001 Ford brochure text, Wikipedia, Consumer Guide. 215 hp @ 4400/4450: the same Ford brochure powertrain table and the Ford 2001 press spec sheet.",
+    "hp_candidates": [
+     240,
+     215
+    ],
+    "nhra": false,
+    "sources": [
+     {
+      "name": "Ford 2001 Escape/Explorer/Expedition/Excursion brochure (Ford Heritage Vault)",
+      "url": "https://fordheritagevaultmedia.com/api/links/c29a9048c4864d89915b29f4f39330e4/uuid/84a8efe9c36e41588165f5d12268bb1a/access",
+      "says": "text: 4.6L SEFI V8 standard on XLT and Eddie Bauer 4x2, 240 HP@4750; powertrain table: 4.6L V8 215 @ 4450"
+     },
+     {
+      "name": "Ford 2001 Expedition press specifications (reprinted on ford-trucks.com specs)",
+      "url": "https://www.ford-trucks.com/specs/2001_expedition_1.html",
+      "says": "4.6L SOHC Triton V-8 standard on XLT and Eddie Bauer 4x2, 215 horsepower at 4400 rpm"
+     },
+     {
+      "name": "EPA fueleconomy.gov vehicle data",
+      "url": "https://www.fueleconomy.gov/feg/download.shtml",
+      "says": "2001: 4.6 L 8-cyl; Expedition 2WD, Expedition 4WD"
+     },
+     {
+      "name": "Wikipedia - Ford Expedition",
+      "url": "https://en.wikipedia.org/wiki/Ford_Expedition",
+      "says": "4.6 Triton 2-valve 2001-2002: 240 hp"
+     },
+     {
+      "name": "Consumer Guide - 1997-02 Ford Expedition (used-car review)",
+      "url": "https://consumerguide.com/used/1997-02-ford-expedition/",
+      "says": "240 hp from 1999"
+     },
+     {
+      "name": "Kelley Blue Book - 2001 Ford Expedition",
+      "url": "https://www.kbb.com/ford/expedition/2001/",
+      "says": "engines available: V8 4.6 Liter, V8 5.4 Liter"
+     }
+    ],
+    "independent_sources": 5,
+    "source_groups": [
+     "CG",
+     "EPA",
+     "FORD",
+     "KBB",
+     "WIKI"
+    ]
+   },
+   {
+    "gen": "gen1",
+    "liters": "5.4",
+    "cid": 330,
+    "hp": 260,
+    "hp_basis": "SAE net",
+    "rpo": "Triton 5.4 SOHC 2V",
+    "name": "5.4L / 330 V8 (SOHC 2-valve)",
+    "common_name": "Modular 5.4 / Triton",
+    "trims": [
+     "optional; standard on Eddie Bauer 4x4 (2001); 2WD and 4WD"
+    ],
+    "status": "three_sources_not_nhra",
+    "note": "",
+    "nhra": false,
+    "sources": [
+     {
+      "name": "Ford 2001 Escape/Explorer/Expedition/Excursion brochure (Ford Heritage Vault)",
+      "url": "https://fordheritagevaultmedia.com/api/links/c29a9048c4864d89915b29f4f39330e4/uuid/84a8efe9c36e41588165f5d12268bb1a/access",
+      "says": "Triton 5.4L SEFI V8, standard on Eddie Bauer 4x4, 260 HP@4500"
+     },
+     {
+      "name": "EPA fueleconomy.gov vehicle data",
+      "url": "https://www.fueleconomy.gov/feg/download.shtml",
+      "says": "2001: 5.4 L 8-cyl; Expedition 2WD, Expedition 4WD"
+     },
+     {
+      "name": "Wikipedia - Ford Expedition",
+      "url": "https://en.wikipedia.org/wiki/Ford_Expedition",
+      "says": "5.4 Triton 2-valve 1999-2002: 260 hp"
+     },
+     {
+      "name": "Consumer Guide - 1997-02 Ford Expedition (used-car review)",
+      "url": "https://consumerguide.com/used/1997-02-ford-expedition/",
+      "says": "260 horsepower from 1999"
+     },
+     {
+      "name": "Kelley Blue Book - 2001 Ford Expedition",
+      "url": "https://www.kbb.com/ford/expedition/2001/",
+      "says": "V8, 5.4 Liter: 260 @ 4500 rpm"
+     }
+    ],
+    "independent_sources": 5,
+    "source_groups": [
+     "CG",
+     "EPA",
+     "FORD",
+     "KBB",
+     "WIKI"
+    ]
+   }
+  ],
+  "2002": [
+   {
+    "gen": "gen1",
+    "liters": "4.6",
+    "cid": 281,
+    "hp": null,
+    "hp_basis": "SAE net",
+    "rpo": "Triton 4.6 SOHC",
+    "name": "4.6L / 281 V8 (SOHC 2-valve)",
+    "common_name": "Modular 4.6 / Triton",
+    "trims": [
+     "2WD and 4WD"
+    ],
+    "status": "disputed",
+    "note": "Engine confirmed; rating withheld. Ford 2002 brochure (two printings) gives 232 @ 4750 (the 2003-04 figure); Wikipedia gives 240 for 2001-02; Consumer Guide gives 240 from 1999.",
+    "hp_candidates": [
+     232,
+     240
+    ],
+    "nhra": false,
+    "sources": [
+     {
+      "name": "Ford 2002 Escape/Explorer/Expedition/Excursion brochure (Ford Heritage Vault)",
+      "url": "https://fordheritagevaultmedia.com/api/links/c29a9048c4864d89915b29f4f39330e4/uuid/535cccaa45d94408b6f6b18f0cea5e42/access",
+      "says": "powertrain table: EXPEDITION 4.6L V8 232 @ 4750, 291 @ 3450; 5.4L V8 260 @ 4500"
+     },
+     {
+      "name": "EPA fueleconomy.gov vehicle data",
+      "url": "https://www.fueleconomy.gov/feg/download.shtml",
+      "says": "2002: 4.6 L 8-cyl; Expedition 2WD, Expedition 4WD"
+     },
+     {
+      "name": "Wikipedia - Ford Expedition",
+      "url": "https://en.wikipedia.org/wiki/Ford_Expedition",
+      "says": "4.6 Triton 2-valve 2001-2002: 240 hp"
+     },
+     {
+      "name": "Consumer Guide - 1997-02 Ford Expedition (used-car review)",
+      "url": "https://consumerguide.com/used/1997-02-ford-expedition/",
+      "says": "240 hp from 1999"
+     },
+     {
+      "name": "Kelley Blue Book - 2002 Ford Expedition",
+      "url": "https://www.kbb.com/ford/expedition/2002/",
+      "says": "engines available: V8 4.6 Liter, V8 5.4 Liter"
+     }
+    ],
+    "independent_sources": 5,
+    "source_groups": [
+     "CG",
+     "EPA",
+     "FORD",
+     "KBB",
+     "WIKI"
+    ]
+   },
+   {
+    "gen": "gen1",
+    "liters": "5.4",
+    "cid": 330,
+    "hp": 260,
+    "hp_basis": "SAE net",
+    "rpo": "Triton 5.4 SOHC 2V",
+    "name": "5.4L / 330 V8 (SOHC 2-valve)",
+    "common_name": "Modular 5.4 / Triton",
+    "trims": [
+     "optional; standard on Eddie Bauer 4x4 (2001); 2WD and 4WD"
+    ],
+    "status": "three_sources_not_nhra",
+    "note": "",
+    "nhra": false,
+    "sources": [
+     {
+      "name": "Ford 2002 Escape/Explorer/Expedition/Excursion brochure (Ford Heritage Vault)",
+      "url": "https://fordheritagevaultmedia.com/api/links/c29a9048c4864d89915b29f4f39330e4/uuid/535cccaa45d94408b6f6b18f0cea5e42/access",
+      "says": "EXPEDITION 5.4L V8 260 @ 4500"
+     },
+     {
+      "name": "EPA fueleconomy.gov vehicle data",
+      "url": "https://www.fueleconomy.gov/feg/download.shtml",
+      "says": "2002: 5.4 L 8-cyl; Expedition 2WD, Expedition 4WD"
+     },
+     {
+      "name": "Wikipedia - Ford Expedition",
+      "url": "https://en.wikipedia.org/wiki/Ford_Expedition",
+      "says": "5.4 Triton 2-valve 1999-2002: 260 hp"
+     },
+     {
+      "name": "Consumer Guide - 1997-02 Ford Expedition (used-car review)",
+      "url": "https://consumerguide.com/used/1997-02-ford-expedition/",
+      "says": "260 horsepower from 1999"
+     },
+     {
+      "name": "Kelley Blue Book - 2002 Ford Expedition",
+      "url": "https://www.kbb.com/ford/expedition/2002/",
+      "says": "V8, 5.4 Liter: 260 @ 4500 rpm"
+     }
+    ],
+    "independent_sources": 5,
+    "source_groups": [
+     "CG",
+     "EPA",
+     "FORD",
+     "KBB",
+     "WIKI"
+    ]
+   }
+  ],
+  "2003": [
+   {
+    "gen": "gen2",
+    "liters": "4.6",
+    "cid": 281,
+    "hp": 232,
+    "hp_basis": "SAE net",
+    "rpo": "Triton 4.6 SOHC",
+    "name": "4.6L / 281 V8 (SOHC 2-valve)",
+    "common_name": "Modular 4.6 / Triton",
+    "trims": [
+     "XLS and some XLT; 2WD and 4WD"
+    ],
+    "status": "three_sources_not_nhra",
+    "note": "",
+    "nhra": false,
+    "sources": [
+     {
+      "name": "Ford 2003 Expedition brochure (Ford Heritage Vault)",
+      "url": "https://fordheritagevaultmedia.com/api/links/c29a9048c4864d89915b29f4f39330e4/uuid/d999bcb18a2e441b8dcbe2b5cb6a3114/access",
+      "says": "new 4.6L Triton V8 232 hp @ 4750; 5.4L 260 @ 4500"
+     },
+     {
+      "name": "EPA fueleconomy.gov vehicle data",
+      "url": "https://www.fueleconomy.gov/feg/download.shtml",
+      "says": "2003: 4.6 L 8-cyl; Expedition 2WD, Expedition 4WD"
+     },
+     {
+      "name": "Wikipedia - Ford Expedition",
+      "url": "https://en.wikipedia.org/wiki/Ford_Expedition",
+      "says": "2003-2004 4.6 16-valve SOHC Triton: 232 hp"
+     },
+     {
+      "name": "Consumer Guide - 2003-14 Ford Expedition (used-car review)",
+      "url": "https://consumerguide.com/used/2003-14-ford-expedition/",
+      "says": "ohc V8 4.6/281 Engine HP 232; XLS offered only with a 4.6-liter"
+     },
+     {
+      "name": "Kelley Blue Book - 2003 Ford Expedition",
+      "url": "https://www.kbb.com/ford/expedition/2003/",
+      "says": "engines available: V8 4.6 Liter, V8 5.4 Liter"
+     }
+    ],
+    "independent_sources": 5,
+    "source_groups": [
+     "CG",
+     "EPA",
+     "FORD",
+     "KBB",
+     "WIKI"
+    ]
+   },
+   {
+    "gen": "gen2",
+    "liters": "5.4",
+    "cid": 330,
+    "hp": 260,
+    "hp_basis": "SAE net",
+    "rpo": "Triton 5.4 SOHC 2V",
+    "name": "5.4L / 330 V8 (SOHC 2-valve)",
+    "common_name": "Modular 5.4 / Triton",
+    "trims": [
+     "optional XLT/Eddie Bauer, standard on NBX; 2WD and 4WD"
+    ],
+    "status": "three_sources_not_nhra",
+    "note": "",
+    "nhra": false,
+    "sources": [
+     {
+      "name": "Ford 2003 Expedition brochure (Ford Heritage Vault)",
+      "url": "https://fordheritagevaultmedia.com/api/links/c29a9048c4864d89915b29f4f39330e4/uuid/d999bcb18a2e441b8dcbe2b5cb6a3114/access",
+      "says": "5.4L V8 260 hp; 4.6L 232"
+     },
+     {
+      "name": "EPA fueleconomy.gov vehicle data",
+      "url": "https://www.fueleconomy.gov/feg/download.shtml",
+      "says": "2003: 5.4 L 8-cyl; Expedition 2WD, Expedition 4WD"
+     },
+     {
+      "name": "Wikipedia - Ford Expedition",
+      "url": "https://en.wikipedia.org/wiki/Ford_Expedition",
+      "says": "2003-2004 5.4 16-valve SOHC Triton: 260 hp"
+     },
+     {
+      "name": "Consumer Guide - 2003-14 Ford Expedition (used-car review)",
+      "url": "https://consumerguide.com/used/2003-14-ford-expedition/",
+      "says": "XLT and NBX held a 260-horsepower, 5.4-liter V8"
+     },
+     {
+      "name": "Kelley Blue Book - 2003 Ford Expedition",
+      "url": "https://www.kbb.com/ford/expedition/2003/",
+      "says": "V8, 5.4 Liter: 260 @ 4500 rpm"
+     }
+    ],
+    "independent_sources": 5,
+    "source_groups": [
+     "CG",
+     "EPA",
+     "FORD",
+     "KBB",
+     "WIKI"
+    ]
+   }
+  ],
+  "2004": [
+   {
+    "gen": "gen2",
+    "liters": "4.6",
+    "cid": 281,
+    "hp": 232,
+    "hp_basis": "SAE net",
+    "rpo": "Triton 4.6 SOHC",
+    "name": "4.6L / 281 V8 (SOHC 2-valve)",
+    "common_name": "Modular 4.6 / Triton",
+    "trims": [
+     "XLS and some XLT; 2WD and 4WD"
+    ],
+    "status": "three_sources_not_nhra",
+    "note": "",
+    "nhra": false,
+    "sources": [
+     {
+      "name": "Ford 2004 Expedition press overview (reprinted on ford-trucks.com specs)",
+      "url": "https://www.ford-trucks.com/specs/2004/2004_expedition.html",
+      "says": "4.6-liter provides 232 horsepower; 5.4-liter 260 horsepower"
+     },
+     {
+      "name": "EPA fueleconomy.gov vehicle data",
+      "url": "https://www.fueleconomy.gov/feg/download.shtml",
+      "says": "2004: 4.6 L 8-cyl; Expedition 2WD, Expedition 4WD"
+     },
+     {
+      "name": "Wikipedia - Ford Expedition",
+      "url": "https://en.wikipedia.org/wiki/Ford_Expedition",
+      "says": "2003-2004 4.6 16-valve SOHC Triton: 232 hp"
+     },
+     {
+      "name": "Consumer Guide - 2003-14 Ford Expedition (used-car review)",
+      "url": "https://consumerguide.com/used/2003-14-ford-expedition/",
+      "says": "ohc V8 4.6/281 Engine HP 232; XLS offered only with a 4.6-liter"
+     },
+     {
+      "name": "Kelley Blue Book - 2004 Ford Expedition",
+      "url": "https://www.kbb.com/ford/expedition/2004/",
+      "says": "engines available: V8 4.6 Liter, V8 5.4 Liter"
+     }
+    ],
+    "independent_sources": 5,
+    "source_groups": [
+     "CG",
+     "EPA",
+     "FORD",
+     "KBB",
+     "WIKI"
+    ]
+   },
+   {
+    "gen": "gen2",
+    "liters": "5.4",
+    "cid": 330,
+    "hp": 260,
+    "hp_basis": "SAE net",
+    "rpo": "Triton 5.4 SOHC 2V",
+    "name": "5.4L / 330 V8 (SOHC 2-valve)",
+    "common_name": "Modular 5.4 / Triton",
+    "trims": [
+     "optional XLT/Eddie Bauer, standard on NBX; 2WD and 4WD"
+    ],
+    "status": "three_sources_not_nhra",
+    "note": "",
+    "nhra": false,
+    "sources": [
+     {
+      "name": "Ford 2004 Expedition brochure (Ford Heritage Vault)",
+      "url": "https://fordheritagevaultmedia.com/api/links/c29a9048c4864d89915b29f4f39330e4/uuid/2d3116e92c6e40a6a16a9fcfc6494e58/access",
+      "says": "Expedition NBX standard 5.4L SOHC Triton V8, 260 hp"
+     },
+     {
+      "name": "EPA fueleconomy.gov vehicle data",
+      "url": "https://www.fueleconomy.gov/feg/download.shtml",
+      "says": "2004: 5.4 L 8-cyl; Expedition 2WD, Expedition 4WD"
+     },
+     {
+      "name": "Wikipedia - Ford Expedition",
+      "url": "https://en.wikipedia.org/wiki/Ford_Expedition",
+      "says": "2003-2004 5.4 16-valve SOHC Triton: 260 hp"
+     },
+     {
+      "name": "Consumer Guide - 2003-14 Ford Expedition (used-car review)",
+      "url": "https://consumerguide.com/used/2003-14-ford-expedition/",
+      "says": "XLT and NBX held a 260-horsepower, 5.4-liter V8"
+     },
+     {
+      "name": "Kelley Blue Book - 2004 Ford Expedition",
+      "url": "https://www.kbb.com/ford/expedition/2004/",
+      "says": "V8, 5.4 Liter: 260 @ 4500 rpm"
+     }
+    ],
+    "independent_sources": 5,
+    "source_groups": [
+     "CG",
+     "EPA",
+     "FORD",
+     "KBB",
+     "WIKI"
+    ]
+   }
+  ],
+  "2005": [
+   {
+    "gen": "gen2",
+    "liters": "5.4",
+    "cid": 330,
+    "hp": 300,
+    "hp_basis": "SAE net",
+    "rpo": "Triton 5.4 3V",
+    "name": "5.4L / 330 V8 (SOHC 3-valve, VCT)",
+    "common_name": "Modular 5.4 3V / Triton",
+    "trims": [
+     "sole engine; 2WD and 4WD"
+    ],
+    "status": "three_sources_not_nhra",
+    "note": "3-valve 5.4 replaced both 2-valve engines for 2005 (it debuted in the 2004 F-150); the 4.6 was dropped. Consumer Guide 2003-14 text once misdates this to 2004 but elsewhere says 2005.",
+    "nhra": false,
+    "sources": [
+     {
+      "name": "Ford 2005 SUV brochure (Ford Heritage Vault)",
+      "url": "https://fordheritagevaultmedia.com/api/links/c29a9048c4864d89915b29f4f39330e4/uuid/b922d4987e4d4e0ba38ea32cb90598df/access",
+      "says": "new for 2005, the standard 300-hp 5.4L 3-valve Triton V8"
+     },
+     {
+      "name": "EPA fueleconomy.gov vehicle data",
+      "url": "https://www.fueleconomy.gov/feg/download.shtml",
+      "says": "2005: 5.4 L 8-cyl; Expedition 2WD, Expedition 4WD"
+     },
+     {
+      "name": "Wikipedia - Ford Expedition",
+      "url": "https://en.wikipedia.org/wiki/Ford_Expedition",
+      "says": "2005-2006 5.4 24-valve SOHC VCT Triton: 300 hp; 4.6 dropped for 2005"
+     },
+     {
+      "name": "Consumer Guide - 2003-14 Ford Expedition (used-car review)",
+      "url": "https://consumerguide.com/used/2003-14-ford-expedition/",
+      "says": "A stronger 5.4-liter V8 engine, with 40 more horsepower, went into 2005 Expeditions. The 4.6-liter V8 was dropped."
+     },
+     {
+      "name": "Kelley Blue Book - 2005 Ford Expedition",
+      "url": "https://www.kbb.com/ford/expedition/2005/",
+      "says": "V8, 5.4 Liter: 300 hp, 365 lb-ft"
+     }
+    ],
+    "independent_sources": 5,
+    "source_groups": [
+     "CG",
+     "EPA",
+     "FORD",
+     "KBB",
+     "WIKI"
+    ]
+   }
+  ],
+  "2006": [
+   {
+    "gen": "gen2",
+    "liters": "5.4",
+    "cid": 330,
+    "hp": 300,
+    "hp_basis": "SAE net",
+    "rpo": "Triton 5.4 3V",
+    "name": "5.4L / 330 V8 (SOHC 3-valve, VCT)",
+    "common_name": "Modular 5.4 3V / Triton",
+    "trims": [
+     "sole engine; 2WD and 4WD"
+    ],
+    "status": "three_sources_not_nhra",
+    "note": "3-valve 5.4 replaced both 2-valve engines for 2005 (it debuted in the 2004 F-150); the 4.6 was dropped. Consumer Guide 2003-14 text once misdates this to 2004 but elsewhere says 2005.",
+    "nhra": false,
+    "sources": [
+     {
+      "name": "Ford 2006 Lineup brochure (Ford Heritage Vault)",
+      "url": "https://fordheritagevaultmedia.com/api/links/c29a9048c4864d89915b29f4f39330e4/uuid/7e2eac3ec45a4d76b0d217ecac22baf4/access",
+      "says": "Every Expedition comes with the mighty 300-hp 5.4L Triton V8"
+     },
+     {
+      "name": "Ford 2006 Expedition press overview (reprinted on ford-trucks.com specs)",
+      "url": "https://www.ford-trucks.com/specs/2006/2006_ford_expedition.html",
+      "says": "5.4-liter, 3-valve Triton V-8 ... New to Expedition last year ... 300 horsepower"
+     },
+     {
+      "name": "EPA fueleconomy.gov vehicle data",
+      "url": "https://www.fueleconomy.gov/feg/download.shtml",
+      "says": "2006: 5.4 L 8-cyl; Expedition 2WD, Expedition 4WD"
+     },
+     {
+      "name": "Wikipedia - Ford Expedition",
+      "url": "https://en.wikipedia.org/wiki/Ford_Expedition",
+      "says": "2005-2006 5.4 24-valve SOHC VCT Triton: 300 hp; 4.6 dropped for 2005"
+     },
+     {
+      "name": "Consumer Guide - 2003-14 Ford Expedition (used-car review)",
+      "url": "https://consumerguide.com/used/2003-14-ford-expedition/",
+      "says": "A stronger 5.4-liter V8 engine, with 40 more horsepower, went into 2005 Expeditions. The 4.6-liter V8 was dropped."
+     },
+     {
+      "name": "Kelley Blue Book - 2006 Ford Expedition",
+      "url": "https://www.kbb.com/ford/expedition/2006/",
+      "says": "V8, 5.4 Liter: 300 hp, 365 lb-ft"
+     }
+    ],
+    "independent_sources": 5,
+    "source_groups": [
+     "CG",
+     "EPA",
+     "FORD",
+     "KBB",
+     "WIKI"
+    ]
+   }
+  ],
+  "2007": [
+   {
+    "gen": "gen3",
+    "liters": "5.4",
+    "cid": 330,
+    "hp": 300,
+    "hp_basis": "SAE net",
+    "rpo": "Triton 5.4 3V",
+    "name": "5.4L / 330 V8 (SOHC 3-valve, VCT)",
+    "common_name": "Modular 5.4 3V / Triton",
+    "trims": [
+     "sole engine; Expedition and Expedition EL; 2WD and 4WD"
+    ],
+    "status": "three_sources_not_nhra",
+    "note": "EPA file lists only 2WD rows for 2007-2009; Ford material confirms 4x4.",
+    "nhra": false,
+    "sources": [
+     {
+      "name": "Ford 2007 Expedition and Expedition Max brochure (Ford Heritage Vault)",
+      "url": "https://fordheritagevaultmedia.com/api/links/c29a9048c4864d89915b29f4f39330e4/uuid/a0101e95070b4ef6bf3d0d86300372d2/access",
+      "says": "3-valve 5.4L Triton V8, 300 hp and 365 lb-ft"
+     },
+     {
+      "name": "Ford 2007 Car Line brochure (Ford Heritage Vault)",
+      "url": "https://fordheritagevaultmedia.com/api/links/c29a9048c4864d89915b29f4f39330e4/uuid/6b37dad8a4664f07921d7c2f28d91e2b/access",
+      "says": "Expedition & all-new Expedition EL: 5.4L SOHC 3v V8"
+     },
+     {
+      "name": "EPA fueleconomy.gov vehicle data",
+      "url": "https://www.fueleconomy.gov/feg/download.shtml",
+      "says": "2007: 5.4 L 8-cyl; Expedition 2WD"
+     },
+     {
+      "name": "Wikipedia - Ford Expedition",
+      "url": "https://en.wikipedia.org/wiki/Ford_Expedition",
+      "says": "2007-2008 5.4 3V Triton: 300 hp"
+     },
+     {
+      "name": "Consumer Guide - 2003-14 Ford Expedition (used-car review)",
+      "url": "https://consumerguide.com/used/2003-14-ford-expedition/",
+      "says": "For 2007 the sole engine remains a 300-hp V8"
+     },
+     {
+      "name": "Kelley Blue Book - 2007 Ford Expedition",
+      "url": "https://www.kbb.com/ford/expedition/2007/",
+      "says": "V8, 5.4 Liter: 300 hp"
+     }
+    ],
+    "independent_sources": 5,
+    "source_groups": [
+     "CG",
+     "EPA",
+     "FORD",
+     "KBB",
+     "WIKI"
+    ]
+   }
+  ],
+  "2008": [
+   {
+    "gen": "gen3",
+    "liters": "5.4",
+    "cid": 330,
+    "hp": 300,
+    "hp_basis": "SAE net",
+    "rpo": "Triton 5.4 3V",
+    "name": "5.4L / 330 V8 (SOHC 3-valve, VCT)",
+    "common_name": "Modular 5.4 3V / Triton",
+    "trims": [
+     "sole engine; Expedition and Expedition EL; 2WD and 4WD"
+    ],
+    "status": "three_sources_not_nhra",
+    "note": "EPA file lists only 2WD rows for 2007-2009; Ford material confirms 4x4.",
+    "nhra": false,
+    "sources": [
+     {
+      "name": "Ford 2008 Expedition press overview (reprinted on ford-trucks.com specs)",
+      "url": "https://www.ford-trucks.com/specs/2008/2008-ford-expedition.html",
+      "says": "5.4-liter Triton V-8 ... Rated at 300 horsepower"
+     },
+     {
+      "name": "EPA fueleconomy.gov vehicle data",
+      "url": "https://www.fueleconomy.gov/feg/download.shtml",
+      "says": "2008: 5.4 L 8-cyl; Expedition 2WD"
+     },
+     {
+      "name": "Wikipedia - Ford Expedition",
+      "url": "https://en.wikipedia.org/wiki/Ford_Expedition",
+      "says": "2007-2008 5.4 3V Triton: 300 hp"
+     },
+     {
+      "name": "Consumer Guide - 2003-14 Ford Expedition (used-car review)",
+      "url": "https://consumerguide.com/used/2003-14-ford-expedition/",
+      "says": "For 2007 the sole engine remains a 300-hp V8"
+     },
+     {
+      "name": "Kelley Blue Book - 2008 Ford Expedition",
+      "url": "https://www.kbb.com/ford/expedition/2008/",
+      "says": "V8, 5.4 Liter: 300 hp"
+     }
+    ],
+    "independent_sources": 5,
+    "source_groups": [
+     "CG",
+     "EPA",
+     "FORD",
+     "KBB",
+     "WIKI"
+    ]
+   }
+  ],
+  "2009": [
+   {
+    "gen": "gen3",
+    "liters": "5.4",
+    "cid": 330,
+    "hp": 310,
+    "hp_basis": "SAE net",
+    "rpo": "Triton 5.4 3V",
+    "name": "5.4L / 330 V8 (SOHC 3-valve, VCT, flex-fuel)",
+    "common_name": "Modular 5.4 3V / Triton FFV",
+    "trims": [
+     "sole engine; Expedition and Expedition EL; 2WD and 4WD"
+    ],
+    "status": "three_sources_not_nhra",
+    "note": "Wikipedia gives 320 hp for 2009-2014 \"on gasoline\"; Ford, Consumer Guide and KBB give 310. 310 recorded. No Ford rating found for this year.",
+    "nhra": false,
+    "sources": [
+     {
+      "name": "Ford 2009 Lineup brochure (Ford Heritage Vault)",
+      "url": "https://fordheritagevaultmedia.com/api/links/c29a9048c4864d89915b29f4f39330e4/uuid/57e2d3198ca14b30853c6ba464fe9fc6/access",
+      "says": "New this year: an E85 fuel-capable 5.4L V8 Flex Fuel engine (standard on both Expedition and EL); no rating"
+     },
+     {
+      "name": "EPA fueleconomy.gov vehicle data",
+      "url": "https://www.fueleconomy.gov/feg/download.shtml",
+      "says": "2009: 5.4 L 8-cyl; Expedition 2WD FFV"
+     },
+     {
+      "name": "Wikipedia - Ford Expedition",
+      "url": "https://en.wikipedia.org/wiki/Ford_Expedition",
+      "says": "2009-2014 5.4 3V FFV: 320 hp (conflicts)"
+     },
+     {
+      "name": "Consumer Guide - 2003-14 Ford Expedition (used-car review)",
+      "url": "https://consumerguide.com/used/2003-14-ford-expedition/",
+      "says": "For 2009, horsepower rose to 310"
+     },
+     {
+      "name": "Kelley Blue Book - 2009 Ford Expedition",
+      "url": "https://www.kbb.com/ford/expedition/2009/",
+      "says": "V8, Flex Fuel, 5.4 Liter: 310 @ 5100 rpm"
+     }
+    ],
+    "independent_sources": 5,
+    "source_groups": [
+     "CG",
+     "EPA",
+     "FORD",
+     "KBB",
+     "WIKI"
+    ]
+   }
+  ],
+  "2010": [
+   {
+    "gen": "gen3",
+    "liters": "5.4",
+    "cid": 330,
+    "hp": 310,
+    "hp_basis": "SAE net",
+    "rpo": "Triton 5.4 3V",
+    "name": "5.4L / 330 V8 (SOHC 3-valve, VCT, flex-fuel)",
+    "common_name": "Modular 5.4 3V / Triton FFV",
+    "trims": [
+     "sole engine; Expedition and Expedition EL; 2WD and 4WD"
+    ],
+    "status": "three_sources_not_nhra",
+    "note": "Wikipedia gives 320 hp for 2009-2014 \"on gasoline\"; Ford, Consumer Guide and KBB give 310. 310 recorded.",
+    "nhra": false,
+    "sources": [
+     {
+      "name": "Ford 2010 Expedition and Expedition EL brochure (Ford Heritage Vault)",
+      "url": "https://fordheritagevaultmedia.com/api/links/c29a9048c4864d89915b29f4f39330e4/uuid/a9c32f4074704af59309799e10e70be9/access",
+      "says": "5.4L 3-valve V8 FFV engine produces 310 hp @ 5100 rpm"
+     },
+     {
+      "name": "EPA fueleconomy.gov vehicle data",
+      "url": "https://www.fueleconomy.gov/feg/download.shtml",
+      "says": "2010: 5.4 L 8-cyl; Expedition 2WD FFV, Expedition 4WD FFV"
+     },
+     {
+      "name": "Wikipedia - Ford Expedition",
+      "url": "https://en.wikipedia.org/wiki/Ford_Expedition",
+      "says": "2009-2014 5.4 3V FFV: 320 hp (conflicts)"
+     },
+     {
+      "name": "Consumer Guide - 2003-14 Ford Expedition (used-car review)",
+      "url": "https://consumerguide.com/used/2003-14-ford-expedition/",
+      "says": "For 2009, horsepower rose to 310"
+     },
+     {
+      "name": "Kelley Blue Book - 2010 Ford Expedition",
+      "url": "https://www.kbb.com/ford/expedition/2010/",
+      "says": "V8, Flex Fuel, 5.4 Liter: 310 @ 5100 rpm"
+     }
+    ],
+    "independent_sources": 5,
+    "source_groups": [
+     "CG",
+     "EPA",
+     "FORD",
+     "KBB",
+     "WIKI"
+    ]
+   }
+  ],
+  "2011": [
+   {
+    "gen": "gen3",
+    "liters": "5.4",
+    "cid": 330,
+    "hp": 310,
+    "hp_basis": "SAE net",
+    "rpo": "Triton 5.4 3V",
+    "name": "5.4L / 330 V8 (SOHC 3-valve, VCT, flex-fuel)",
+    "common_name": "Modular 5.4 3V / Triton FFV",
+    "trims": [
+     "sole engine; Expedition and Expedition EL; 2WD and 4WD"
+    ],
+    "status": "three_sources_not_nhra",
+    "note": "Wikipedia gives 320 hp for 2009-2014 \"on gasoline\"; Ford, Consumer Guide and KBB give 310. 310 recorded.",
+    "nhra": false,
+    "sources": [
+     {
+      "name": "Ford 2011 Expedition and Expedition EL brochure (Ford Heritage Vault)",
+      "url": "https://fordheritagevaultmedia.com/api/links/c29a9048c4864d89915b29f4f39330e4/uuid/c93fa9726ab245a8a7c1f2a84ca719e3/access",
+      "says": "5.4L 3V V8 FFV Engine Horsepower 310 @ 5,100 rpm"
+     },
+     {
+      "name": "EPA fueleconomy.gov vehicle data",
+      "url": "https://www.fueleconomy.gov/feg/download.shtml",
+      "says": "2011: 5.4 L 8-cyl; Expedition 2WD FFV, Expedition 4WD FFV, Expedition Limo. 2WD FFV"
+     },
+     {
+      "name": "Wikipedia - Ford Expedition",
+      "url": "https://en.wikipedia.org/wiki/Ford_Expedition",
+      "says": "2009-2014 5.4 3V FFV: 320 hp (conflicts)"
+     },
+     {
+      "name": "Consumer Guide - 2003-14 Ford Expedition (used-car review)",
+      "url": "https://consumerguide.com/used/2003-14-ford-expedition/",
+      "says": "For 2009, horsepower rose to 310"
+     },
+     {
+      "name": "Kelley Blue Book - 2011 Ford Expedition",
+      "url": "https://www.kbb.com/ford/expedition/2011/",
+      "says": "V8, Flex Fuel, 5.4 Liter: 310 @ 5100 rpm"
+     }
+    ],
+    "independent_sources": 5,
+    "source_groups": [
+     "CG",
+     "EPA",
+     "FORD",
+     "KBB",
+     "WIKI"
+    ]
+   }
+  ],
+  "2012": [
+   {
+    "gen": "gen3",
+    "liters": "5.4",
+    "cid": 330,
+    "hp": 310,
+    "hp_basis": "SAE net",
+    "rpo": "Triton 5.4 3V",
+    "name": "5.4L / 330 V8 (SOHC 3-valve, VCT, flex-fuel)",
+    "common_name": "Modular 5.4 3V / Triton FFV",
+    "trims": [
+     "sole engine; Expedition and Expedition EL; 2WD and 4WD"
+    ],
+    "status": "three_sources_not_nhra",
+    "note": "Wikipedia gives 320 hp for 2009-2014 \"on gasoline\"; Ford, Consumer Guide and KBB give 310. 310 recorded. No Ford rating found for this year.",
+    "nhra": false,
+    "sources": [
+     {
+      "name": "EPA fueleconomy.gov vehicle data",
+      "url": "https://www.fueleconomy.gov/feg/download.shtml",
+      "says": "2012: 5.4 L 8-cyl; Expedition 2WD FFV, Expedition 4WD FFV"
+     },
+     {
+      "name": "Wikipedia - Ford Expedition",
+      "url": "https://en.wikipedia.org/wiki/Ford_Expedition",
+      "says": "2009-2014 5.4 3V FFV: 320 hp (conflicts)"
+     },
+     {
+      "name": "Consumer Guide - 2003-14 Ford Expedition (used-car review)",
+      "url": "https://consumerguide.com/used/2003-14-ford-expedition/",
+      "says": "For 2009, horsepower rose to 310"
+     },
+     {
+      "name": "Kelley Blue Book - 2012 Ford Expedition",
+      "url": "https://www.kbb.com/ford/expedition/2012/",
+      "says": "V8, Flex Fuel, 5.4 Liter: 310 @ 5100 rpm"
+     }
+    ],
+    "independent_sources": 4,
+    "source_groups": [
+     "CG",
+     "EPA",
+     "KBB",
+     "WIKI"
+    ]
+   }
+  ],
+  "2013": [
+   {
+    "gen": "gen3",
+    "liters": "5.4",
+    "cid": 330,
+    "hp": 310,
+    "hp_basis": "SAE net",
+    "rpo": "Triton 5.4 3V",
+    "name": "5.4L / 330 V8 (SOHC 3-valve, VCT, flex-fuel)",
+    "common_name": "Modular 5.4 3V / Triton FFV",
+    "trims": [
+     "sole engine; Expedition and Expedition EL; 2WD and 4WD"
+    ],
+    "status": "three_sources_not_nhra",
+    "note": "Wikipedia gives 320 hp for 2009-2014 \"on gasoline\"; Ford, Consumer Guide and KBB give 310. 310 recorded.",
+    "nhra": false,
+    "sources": [
+     {
+      "name": "Ford of Canada 2013 Expedition+Max brochure (Ford Heritage Vault)",
+      "url": "https://fordheritagevaultmedia.com/api/links/c29a9048c4864d89915b29f4f39330e4/uuid/17758ed1de3445218ec5598b61194480/access",
+      "says": "5.4L 3V V8 FFV Horsepower: 310 @ 5,100 rpm"
+     },
+     {
+      "name": "EPA fueleconomy.gov vehicle data",
+      "url": "https://www.fueleconomy.gov/feg/download.shtml",
+      "says": "2013: 5.4 L 8-cyl; Expedition 2WD FFV, Expedition 4WD FFV"
+     },
+     {
+      "name": "Wikipedia - Ford Expedition",
+      "url": "https://en.wikipedia.org/wiki/Ford_Expedition",
+      "says": "2009-2014 5.4 3V FFV: 320 hp (conflicts)"
+     },
+     {
+      "name": "Consumer Guide - 2003-14 Ford Expedition (used-car review)",
+      "url": "https://consumerguide.com/used/2003-14-ford-expedition/",
+      "says": "For 2009, horsepower rose to 310"
+     },
+     {
+      "name": "Kelley Blue Book - 2013 Ford Expedition",
+      "url": "https://www.kbb.com/ford/expedition/2013/",
+      "says": "V8, Flex Fuel, 5.4 Liter: 310 @ 5100 rpm"
+     }
+    ],
+    "independent_sources": 5,
+    "source_groups": [
+     "CG",
+     "EPA",
+     "FORD",
+     "KBB",
+     "WIKI"
+    ]
+   }
+  ],
+  "2014": [
+   {
+    "gen": "gen3",
+    "liters": "5.4",
+    "cid": 330,
+    "hp": 310,
+    "hp_basis": "SAE net",
+    "rpo": "Triton 5.4 3V",
+    "name": "5.4L / 330 V8 (SOHC 3-valve, VCT, flex-fuel)",
+    "common_name": "Modular 5.4 3V / Triton FFV",
+    "trims": [
+     "sole engine; Expedition and Expedition EL; 2WD and 4WD"
+    ],
+    "status": "three_sources_not_nhra",
+    "note": "Wikipedia gives 320 hp for 2009-2014 \"on gasoline\"; Ford, Consumer Guide and KBB give 310. 310 recorded.",
+    "nhra": false,
+    "sources": [
+     {
+      "name": "Ford 2014 Expedition+EL brochure (Ford Heritage Vault)",
+      "url": "https://fordheritagevaultmedia.com/api/links/c29a9048c4864d89915b29f4f39330e4/uuid/3a3432ed36424751be605befdf8b4952/access",
+      "says": "5.4L 3-Valve V8 FFV 310 hp @ 5,100 rpm"
+     },
+     {
+      "name": "EPA fueleconomy.gov vehicle data",
+      "url": "https://www.fueleconomy.gov/feg/download.shtml",
+      "says": "2014: 5.4 L 8-cyl; Expedition 2WD FFV, Expedition 4WD FFV"
+     },
+     {
+      "name": "Wikipedia - Ford Expedition",
+      "url": "https://en.wikipedia.org/wiki/Ford_Expedition",
+      "says": "2009-2014 5.4 3V FFV: 320 hp (conflicts)"
+     },
+     {
+      "name": "Consumer Guide - 2003-14 Ford Expedition (used-car review)",
+      "url": "https://consumerguide.com/used/2003-14-ford-expedition/",
+      "says": "For 2009, horsepower rose to 310"
+     },
+     {
+      "name": "Kelley Blue Book - 2014 Ford Expedition",
+      "url": "https://www.kbb.com/ford/expedition/2014/",
+      "says": "V8, Flex Fuel, 5.4 Liter: 310 @ 5100 rpm"
+     }
+    ],
+    "independent_sources": 5,
+    "source_groups": [
+     "CG",
+     "EPA",
+     "FORD",
+     "KBB",
+     "WIKI"
+    ]
+   }
+  ],
+  "2015": [
+   {
+    "gen": "gen3",
+    "liters": "3.5",
+    "cid": 213,
+    "hp": 365,
+    "hp_basis": "SAE net",
+    "rpo": "EcoBoost 3.5",
+    "name": "3.5L / 213 twin-turbo V6 (1st-gen EcoBoost)",
+    "common_name": "3.5 EcoBoost",
+    "trims": [
+     "sole engine; Expedition and Expedition EL; 2WD and 4WD"
+    ],
+    "status": "three_sources_not_nhra",
+    "note": "Ford of Canada brochures give 365 hp @ 5,100 rpm; Wikipedia gives 5,000 rpm.",
+    "nhra": false,
+    "sources": [
+     {
+      "name": "Ford of Canada 2015 Expedition+Max brochure (Ford Heritage Vault)",
+      "url": "https://fordheritagevaultmedia.com/api/links/c29a9048c4864d89915b29f4f39330e4/uuid/27130a5d3a31417d90420175c1b4b3dd/access",
+      "says": "3.5L EcoBoost V6 365 hp @ 5,100 rpm, 420 lb-ft"
+     },
+     {
+      "name": "EPA fueleconomy.gov vehicle data",
+      "url": "https://www.fueleconomy.gov/feg/download.shtml",
+      "says": "2015: 3.5 L 6-cyl turbo; Expedition 2WD, Expedition 4WD, Expedition EL 2WD, Expedition EL 4WD"
+     },
+     {
+      "name": "Wikipedia - Ford Expedition",
+      "url": "https://en.wikipedia.org/wiki/Ford_Expedition",
+      "says": "2015-2017 3.5 EcoBoost V6: 365 hp"
+     },
+     {
+      "name": "Consumer Guide - 2015 Ford Expedition",
+      "url": "https://consumerguide.com/ford/2015-expedition/",
+      "says": "Base Engine turbocharged 3.5-liter V6, Horsepower 365"
+     },
+     {
+      "name": "Kelley Blue Book - 2015 Ford Expedition",
+      "url": "https://www.kbb.com/ford/expedition/2015/",
+      "says": "3.5 EcoBoost: 365 hp, 420 lb-ft"
+     }
+    ],
+    "independent_sources": 5,
+    "source_groups": [
+     "CG",
+     "EPA",
+     "FORD",
+     "KBB",
+     "WIKI"
+    ]
+   }
+  ],
+  "2016": [
+   {
+    "gen": "gen3",
+    "liters": "3.5",
+    "cid": 213,
+    "hp": 365,
+    "hp_basis": "SAE net",
+    "rpo": "EcoBoost 3.5",
+    "name": "3.5L / 213 twin-turbo V6 (1st-gen EcoBoost)",
+    "common_name": "3.5 EcoBoost",
+    "trims": [
+     "sole engine; Expedition and Expedition EL; 2WD and 4WD"
+    ],
+    "status": "three_sources_not_nhra",
+    "note": "Ford of Canada brochures give 365 hp @ 5,100 rpm; Wikipedia gives 5,000 rpm.",
+    "nhra": false,
+    "sources": [
+     {
+      "name": "Ford of Canada 2016 Expedition+Max brochure (Ford Heritage Vault)",
+      "url": "https://fordheritagevaultmedia.com/api/links/c29a9048c4864d89915b29f4f39330e4/uuid/7081fa56befd44c6a410b5ba3d20f9f2/access",
+      "says": "365 hp, 420 lb-ft"
+     },
+     {
+      "name": "EPA fueleconomy.gov vehicle data",
+      "url": "https://www.fueleconomy.gov/feg/download.shtml",
+      "says": "2016: 3.5 L 6-cyl turbo; Expedition 2WD, Expedition 4WD, Expedition EL 2WD, Expedition EL 4WD"
+     },
+     {
+      "name": "Wikipedia - Ford Expedition",
+      "url": "https://en.wikipedia.org/wiki/Ford_Expedition",
+      "says": "2015-2017 3.5 EcoBoost V6: 365 hp"
+     },
+     {
+      "name": "Consumer Guide - 2016 Ford Expedition",
+      "url": "https://consumerguide.com/ford/2016-expedition/",
+      "says": "Base Engine turbocharged 3.5-liter V6, Horsepower 365"
+     },
+     {
+      "name": "Kelley Blue Book - 2016 Ford Expedition",
+      "url": "https://www.kbb.com/ford/expedition/2016/",
+      "says": "3.5 EcoBoost: 365 hp, 420 lb-ft"
+     }
+    ],
+    "independent_sources": 5,
+    "source_groups": [
+     "CG",
+     "EPA",
+     "FORD",
+     "KBB",
+     "WIKI"
+    ]
+   }
+  ],
+  "2017": [
+   {
+    "gen": "gen3",
+    "liters": "3.5",
+    "cid": 213,
+    "hp": 365,
+    "hp_basis": "SAE net",
+    "rpo": "EcoBoost 3.5",
+    "name": "3.5L / 213 twin-turbo V6 (1st-gen EcoBoost)",
+    "common_name": "3.5 EcoBoost",
+    "trims": [
+     "sole engine; Expedition and Expedition EL; 2WD and 4WD"
+    ],
+    "status": "three_sources_not_nhra",
+    "note": "Ford of Canada brochures give 365 hp @ 5,100 rpm; Wikipedia gives 5,000 rpm. No Ford rating found for 2017.",
+    "nhra": false,
+    "sources": [
+     {
+      "name": "EPA fueleconomy.gov vehicle data",
+      "url": "https://www.fueleconomy.gov/feg/download.shtml",
+      "says": "2017: 3.5 L 6-cyl turbo; Expedition 2WD, Expedition 4WD, Expedition EL 2WD, Expedition EL 4WD"
+     },
+     {
+      "name": "Wikipedia - Ford Expedition",
+      "url": "https://en.wikipedia.org/wiki/Ford_Expedition",
+      "says": "2015-2017 3.5 EcoBoost V6: 365 hp"
+     },
+     {
+      "name": "Consumer Guide - 2017 Ford Expedition",
+      "url": "https://consumerguide.com/ford/2017-expedition/",
+      "says": "Base Engine turbocharged 3.5-liter V6, Horsepower 365"
+     },
+     {
+      "name": "Kelley Blue Book - 2017 Ford Expedition",
+      "url": "https://www.kbb.com/ford/expedition/2017/",
+      "says": "3.5 EcoBoost: 365 hp, 420 lb-ft"
+     }
+    ],
+    "independent_sources": 4,
+    "source_groups": [
+     "CG",
+     "EPA",
+     "KBB",
+     "WIKI"
+    ]
+   }
+  ],
+  "2018": [
+   {
+    "gen": "gen4",
+    "liters": "3.5",
+    "cid": 213,
+    "hp": 375,
+    "hp_basis": "SAE net",
+    "rpo": "EcoBoost 3.5",
+    "name": "3.5L / 213 twin-turbo V6 (2nd-gen EcoBoost, port + direct injection)",
+    "common_name": "3.5 EcoBoost",
+    "trims": [
+     "all trims except Platinum (XLT, Limited, King Ranch 2020-21, STX 2021); Expedition and MAX; 2WD and 4WD"
+    ],
+    "status": "three_sources_not_nhra",
+    "note": "",
+    "nhra": false,
+    "sources": [
+     {
+      "name": "Ford 2018 Expedition+Max brochure (Ford Heritage Vault)",
+      "url": "https://fordheritagevaultmedia.com/api/links/c29a9048c4864d89915b29f4f39330e4/uuid/a2d5d1e6140d4b4895b91c632d726ba6/access",
+      "says": "3.5L EcoBoost V6 375 hp @ 5,000 rpm Standard: XLT/Limited; Platinum 400 hp @ 5,000"
+     },
+     {
+      "name": "EPA fueleconomy.gov vehicle data",
+      "url": "https://www.fueleconomy.gov/feg/download.shtml",
+      "says": "2018: 3.5 L 6-cyl turbo; Expedition 2WD, Expedition 4WD, Expedition MAX 2WD, Expedition MAX 4WD"
+     },
+     {
+      "name": "Wikipedia - Ford Expedition",
+      "url": "https://en.wikipedia.org/wiki/Ford_Expedition",
+      "says": "2018-2024 3.5 EcoBoost: 375 hp @ 5000 rpm"
+     },
+     {
+      "name": "Consumer Guide - 2018 Ford Expedition",
+      "url": "https://consumerguide.com/ford/2018-expedition/",
+      "says": "375 hp (400 Platinum)"
+     },
+     {
+      "name": "Kelley Blue Book - 2018 Ford Expedition",
+      "url": "https://www.kbb.com/ford/expedition/2018/",
+      "says": "3.5 EcoBoost: 375 hp, 470 lb-ft"
+     }
+    ],
+    "independent_sources": 5,
+    "source_groups": [
+     "CG",
+     "EPA",
+     "FORD",
+     "KBB",
+     "WIKI"
+    ]
+   },
+   {
+    "gen": "gen4",
+    "liters": "3.5",
+    "cid": 213,
+    "hp": 400,
+    "hp_basis": "SAE net",
+    "rpo": "EcoBoost 3.5 High Output",
+    "name": "3.5L / 213 twin-turbo V6, Platinum tune",
+    "common_name": "3.5 EcoBoost (Platinum Series)",
+    "trims": [
+     "Platinum only; Expedition and MAX; 2WD and 4WD"
+    ],
+    "status": "three_sources_not_nhra",
+    "note": "Ford calls it the \"3.5L EcoBoost V6 Platinum Series\"; ratings on premium fuel.",
+    "nhra": false,
+    "sources": [
+     {
+      "name": "Ford 2018 Expedition+Max brochure (Ford Heritage Vault)",
+      "url": "https://fordheritagevaultmedia.com/api/links/c29a9048c4864d89915b29f4f39330e4/uuid/a2d5d1e6140d4b4895b91c632d726ba6/access",
+      "says": "3.5L EcoBoost V6 375 hp @ 5,000 rpm Standard: XLT/Limited; Platinum 400 hp @ 5,000"
+     },
+     {
+      "name": "EPA fueleconomy.gov vehicle data",
+      "url": "https://www.fueleconomy.gov/feg/download.shtml",
+      "says": "2018: 3.5 L 6-cyl turbo; Expedition 2WD, Expedition 4WD, Expedition MAX 2WD, Expedition MAX 4WD"
+     },
+     {
+      "name": "Wikipedia - Ford Expedition",
+      "url": "https://en.wikipedia.org/wiki/Ford_Expedition",
+      "says": "2018-2024 EcoBoost Platinum Series: 400 hp @ 5000 rpm"
+     },
+     {
+      "name": "Consumer Guide - 2018 Ford Expedition",
+      "url": "https://consumerguide.com/ford/2018-expedition/",
+      "says": "375 hp (400 Platinum)"
+     },
+     {
+      "name": "Kelley Blue Book - 2018 Ford Expedition",
+      "url": "https://www.kbb.com/ford/expedition/2018/",
+      "says": "400 hp Platinum"
+     }
+    ],
+    "independent_sources": 5,
+    "source_groups": [
+     "CG",
+     "EPA",
+     "FORD",
+     "KBB",
+     "WIKI"
+    ]
+   }
+  ],
+  "2019": [
+   {
+    "gen": "gen4",
+    "liters": "3.5",
+    "cid": 213,
+    "hp": 375,
+    "hp_basis": "SAE net",
+    "rpo": "EcoBoost 3.5",
+    "name": "3.5L / 213 twin-turbo V6 (2nd-gen EcoBoost, port + direct injection)",
+    "common_name": "3.5 EcoBoost",
+    "trims": [
+     "all trims except Platinum (XLT, Limited, King Ranch 2020-21, STX 2021); Expedition and MAX; 2WD and 4WD"
+    ],
+    "status": "three_sources_not_nhra",
+    "note": "Consumer Guide 2018 page cited for 2019-2020 as well.",
+    "nhra": false,
+    "sources": [
+     {
+      "name": "Ford 2019 Expedition+Max brochure (Ford Heritage Vault)",
+      "url": "https://fordheritagevaultmedia.com/api/links/c29a9048c4864d89915b29f4f39330e4/uuid/3696aec852534844acf44db5ca860eed/access",
+      "says": "375 hp @ 5,000 rpm; Platinum Series 400 hp"
+     },
+     {
+      "name": "EPA fueleconomy.gov vehicle data",
+      "url": "https://www.fueleconomy.gov/feg/download.shtml",
+      "says": "2019: 3.5 L 6-cyl turbo; Expedition 2WD, Expedition 4WD, Expedition MAX 2WD, Expedition MAX 4WD"
+     },
+     {
+      "name": "Wikipedia - Ford Expedition",
+      "url": "https://en.wikipedia.org/wiki/Ford_Expedition",
+      "says": "2018-2024 3.5 EcoBoost: 375 hp @ 5000 rpm"
+     },
+     {
+      "name": "Consumer Guide - 2018 Ford Expedition",
+      "url": "https://consumerguide.com/ford/2018-expedition/",
+      "says": "375 hp (400 Platinum)"
+     },
+     {
+      "name": "Kelley Blue Book - 2019 Ford Expedition",
+      "url": "https://www.kbb.com/ford/expedition/2019/",
+      "says": "3.5 EcoBoost: 375 hp, 470 lb-ft"
+     }
+    ],
+    "independent_sources": 5,
+    "source_groups": [
+     "CG",
+     "EPA",
+     "FORD",
+     "KBB",
+     "WIKI"
+    ]
+   },
+   {
+    "gen": "gen4",
+    "liters": "3.5",
+    "cid": 213,
+    "hp": 400,
+    "hp_basis": "SAE net",
+    "rpo": "EcoBoost 3.5 High Output",
+    "name": "3.5L / 213 twin-turbo V6, Platinum tune",
+    "common_name": "3.5 EcoBoost (Platinum Series)",
+    "trims": [
+     "Platinum only; Expedition and MAX; 2WD and 4WD"
+    ],
+    "status": "three_sources_not_nhra",
+    "note": "Ford calls it the \"3.5L EcoBoost V6 Platinum Series\"; ratings on premium fuel.",
+    "nhra": false,
+    "sources": [
+     {
+      "name": "Ford 2019 Expedition+Max brochure (Ford Heritage Vault)",
+      "url": "https://fordheritagevaultmedia.com/api/links/c29a9048c4864d89915b29f4f39330e4/uuid/3696aec852534844acf44db5ca860eed/access",
+      "says": "375 hp @ 5,000 rpm; Platinum Series 400 hp"
+     },
+     {
+      "name": "EPA fueleconomy.gov vehicle data",
+      "url": "https://www.fueleconomy.gov/feg/download.shtml",
+      "says": "2019: 3.5 L 6-cyl turbo; Expedition 2WD, Expedition 4WD, Expedition MAX 2WD, Expedition MAX 4WD"
+     },
+     {
+      "name": "Wikipedia - Ford Expedition",
+      "url": "https://en.wikipedia.org/wiki/Ford_Expedition",
+      "says": "2018-2024 EcoBoost Platinum Series: 400 hp @ 5000 rpm"
+     },
+     {
+      "name": "Consumer Guide - 2018 Ford Expedition",
+      "url": "https://consumerguide.com/ford/2018-expedition/",
+      "says": "375 hp (400 Platinum)"
+     },
+     {
+      "name": "Kelley Blue Book - 2019 Ford Expedition",
+      "url": "https://www.kbb.com/ford/expedition/2019/",
+      "says": "400 hp Platinum"
+     }
+    ],
+    "independent_sources": 5,
+    "source_groups": [
+     "CG",
+     "EPA",
+     "FORD",
+     "KBB",
+     "WIKI"
+    ]
+   }
+  ],
+  "2020": [
+   {
+    "gen": "gen4",
+    "liters": "3.5",
+    "cid": 213,
+    "hp": 375,
+    "hp_basis": "SAE net",
+    "rpo": "EcoBoost 3.5",
+    "name": "3.5L / 213 twin-turbo V6 (2nd-gen EcoBoost, port + direct injection)",
+    "common_name": "3.5 EcoBoost",
+    "trims": [
+     "all trims except Platinum (XLT, Limited, King Ranch 2020-21, STX 2021); Expedition and MAX; 2WD and 4WD"
+    ],
+    "status": "three_sources_not_nhra",
+    "note": "Consumer Guide 2018 page cited for 2019-2020 as well.",
+    "nhra": false,
+    "sources": [
+     {
+      "name": "Ford 2020 Expedition+Max brochure (Ford Heritage Vault)",
+      "url": "https://fordheritagevaultmedia.com/api/links/c29a9048c4864d89915b29f4f39330e4/uuid/c7bbff72492e4eba8fd90af3a4e39693/access",
+      "says": "XLT 375-horsepower; enhanced version on Platinum delivers 400 horsepower"
+     },
+     {
+      "name": "EPA fueleconomy.gov vehicle data",
+      "url": "https://www.fueleconomy.gov/feg/download.shtml",
+      "says": "2020: 3.5 L 6-cyl turbo; Expedition 2WD, Expedition 4WD, Expedition MAX 2WD, Expedition MAX 4WD"
+     },
+     {
+      "name": "Wikipedia - Ford Expedition",
+      "url": "https://en.wikipedia.org/wiki/Ford_Expedition",
+      "says": "2018-2024 3.5 EcoBoost: 375 hp @ 5000 rpm"
+     },
+     {
+      "name": "Consumer Guide - 2018 Ford Expedition",
+      "url": "https://consumerguide.com/ford/2018-expedition/",
+      "says": "375 hp (400 Platinum)"
+     },
+     {
+      "name": "Kelley Blue Book - 2020 Ford Expedition",
+      "url": "https://www.kbb.com/ford/expedition/2020/",
+      "says": "3.5 EcoBoost: 375 hp, 470 lb-ft"
+     }
+    ],
+    "independent_sources": 5,
+    "source_groups": [
+     "CG",
+     "EPA",
+     "FORD",
+     "KBB",
+     "WIKI"
+    ]
+   },
+   {
+    "gen": "gen4",
+    "liters": "3.5",
+    "cid": 213,
+    "hp": 400,
+    "hp_basis": "SAE net",
+    "rpo": "EcoBoost 3.5 High Output",
+    "name": "3.5L / 213 twin-turbo V6, Platinum tune",
+    "common_name": "3.5 EcoBoost (Platinum Series)",
+    "trims": [
+     "Platinum only; Expedition and MAX; 2WD and 4WD"
+    ],
+    "status": "three_sources_not_nhra",
+    "note": "Ford calls it the \"3.5L EcoBoost V6 Platinum Series\"; ratings on premium fuel.",
+    "nhra": false,
+    "sources": [
+     {
+      "name": "Ford 2020 Expedition+Max brochure (Ford Heritage Vault)",
+      "url": "https://fordheritagevaultmedia.com/api/links/c29a9048c4864d89915b29f4f39330e4/uuid/c7bbff72492e4eba8fd90af3a4e39693/access",
+      "says": "XLT 375-horsepower; enhanced version on Platinum delivers 400 horsepower"
+     },
+     {
+      "name": "EPA fueleconomy.gov vehicle data",
+      "url": "https://www.fueleconomy.gov/feg/download.shtml",
+      "says": "2020: 3.5 L 6-cyl turbo; Expedition 2WD, Expedition 4WD, Expedition MAX 2WD, Expedition MAX 4WD"
+     },
+     {
+      "name": "Wikipedia - Ford Expedition",
+      "url": "https://en.wikipedia.org/wiki/Ford_Expedition",
+      "says": "2018-2024 EcoBoost Platinum Series: 400 hp @ 5000 rpm"
+     },
+     {
+      "name": "Consumer Guide - 2018 Ford Expedition",
+      "url": "https://consumerguide.com/ford/2018-expedition/",
+      "says": "375 hp (400 Platinum)"
+     },
+     {
+      "name": "Kelley Blue Book - 2020 Ford Expedition",
+      "url": "https://www.kbb.com/ford/expedition/2020/",
+      "says": "400 hp Platinum"
+     }
+    ],
+    "independent_sources": 5,
+    "source_groups": [
+     "CG",
+     "EPA",
+     "FORD",
+     "KBB",
+     "WIKI"
+    ]
+   }
+  ],
+  "2021": [
+   {
+    "gen": "gen4",
+    "liters": "3.5",
+    "cid": 213,
+    "hp": 375,
+    "hp_basis": "SAE net",
+    "rpo": "EcoBoost 3.5",
+    "name": "3.5L / 213 twin-turbo V6 (2nd-gen EcoBoost, port + direct injection)",
+    "common_name": "3.5 EcoBoost",
+    "trims": [
+     "all trims except Platinum (XLT, Limited, King Ranch 2020-21, STX 2021); Expedition and MAX; 2WD and 4WD"
+    ],
+    "status": "three_sources_not_nhra",
+    "note": "",
+    "nhra": false,
+    "sources": [
+     {
+      "name": "Ford 2021 Expedition brochure (Ford Heritage Vault)",
+      "url": "https://fordheritagevaultmedia.com/api/links/c29a9048c4864d89915b29f4f39330e4/uuid/41a441a416854b5191babd255dd5520e/access",
+      "says": "3.5L EcoBoost 375 max hp @ 5,000; Platinum Series 400 max hp @ 5,000"
+     },
+     {
+      "name": "EPA fueleconomy.gov vehicle data",
+      "url": "https://www.fueleconomy.gov/feg/download.shtml",
+      "says": "2021: 3.5 L 6-cyl turbo; Expedition 2WD, Expedition 4WD, Expedition MAX 2WD, Expedition MAX 4WD"
+     },
+     {
+      "name": "Wikipedia - Ford Expedition",
+      "url": "https://en.wikipedia.org/wiki/Ford_Expedition",
+      "says": "2018-2024 3.5 EcoBoost: 375 hp @ 5000 rpm"
+     },
+     {
+      "name": "Consumer Guide - 2021 Ford Expedition",
+      "url": "https://consumerguide.com/ford/2021-expedition/",
+      "says": "375 horsepower, or 400 hp on the line-topping Platinum"
+     },
+     {
+      "name": "Kelley Blue Book - 2021 Ford Expedition",
+      "url": "https://www.kbb.com/ford/expedition/2021/",
+      "says": "3.5 EcoBoost: 375 hp, 470 lb-ft"
+     }
+    ],
+    "independent_sources": 5,
+    "source_groups": [
+     "CG",
+     "EPA",
+     "FORD",
+     "KBB",
+     "WIKI"
+    ]
+   },
+   {
+    "gen": "gen4",
+    "liters": "3.5",
+    "cid": 213,
+    "hp": 400,
+    "hp_basis": "SAE net",
+    "rpo": "EcoBoost 3.5 High Output",
+    "name": "3.5L / 213 twin-turbo V6, Platinum tune",
+    "common_name": "3.5 EcoBoost (Platinum Series)",
+    "trims": [
+     "Platinum only; Expedition and MAX; 2WD and 4WD"
+    ],
+    "status": "three_sources_not_nhra",
+    "note": "Ford calls it the \"3.5L EcoBoost V6 Platinum Series\"; ratings on premium fuel.",
+    "nhra": false,
+    "sources": [
+     {
+      "name": "Ford 2021 Expedition brochure (Ford Heritage Vault)",
+      "url": "https://fordheritagevaultmedia.com/api/links/c29a9048c4864d89915b29f4f39330e4/uuid/41a441a416854b5191babd255dd5520e/access",
+      "says": "3.5L EcoBoost 375 max hp @ 5,000; Platinum Series 400 max hp @ 5,000"
+     },
+     {
+      "name": "EPA fueleconomy.gov vehicle data",
+      "url": "https://www.fueleconomy.gov/feg/download.shtml",
+      "says": "2021: 3.5 L 6-cyl turbo; Expedition 2WD, Expedition 4WD, Expedition MAX 2WD, Expedition MAX 4WD"
+     },
+     {
+      "name": "Wikipedia - Ford Expedition",
+      "url": "https://en.wikipedia.org/wiki/Ford_Expedition",
+      "says": "2018-2024 EcoBoost Platinum Series: 400 hp @ 5000 rpm"
+     },
+     {
+      "name": "Consumer Guide - 2021 Ford Expedition",
+      "url": "https://consumerguide.com/ford/2021-expedition/",
+      "says": "375 horsepower, or 400 hp on the line-topping Platinum"
+     },
+     {
+      "name": "Kelley Blue Book - 2021 Ford Expedition",
+      "url": "https://www.kbb.com/ford/expedition/2021/",
+      "says": "400 hp Platinum"
+     }
+    ],
+    "independent_sources": 5,
+    "source_groups": [
+     "CG",
+     "EPA",
+     "FORD",
+     "KBB",
+     "WIKI"
+    ]
+   }
+  ],
+  "2022": [
+   {
+    "gen": "gen4",
+    "liters": "3.5",
+    "cid": 213,
+    "hp": 380,
+    "hp_basis": "SAE net",
+    "rpo": "EcoBoost 3.5",
+    "name": "3.5L / 213 twin-turbo V6 (2nd-gen EcoBoost)",
+    "common_name": "3.5 EcoBoost",
+    "trims": [
+     "XL, STX, XLT; Expedition and MAX; 2WD and 4WD"
+    ],
+    "status": "three_sources_not_nhra",
+    "note": "Wikipedia Expedition article still gives 375 for 2018-2024; the Wikipedia EcoBoost article gives 380 for 2022-2024. KBB 2022 review text says 375, its spec table 380.",
+    "nhra": false,
+    "sources": [
+     {
+      "name": "Ford.com 2022 Expedition page (Wayback 2022-03-01)",
+      "url": "https://web.archive.org/web/20220301000000/https://www.ford.com/suvs/expedition/",
+      "says": "The standard 3.5L EcoBoost engine delivers 380 horsepower; Timberline and Stealth Performance Edition 440 hp"
+     },
+     {
+      "name": "EPA fueleconomy.gov vehicle data",
+      "url": "https://www.fueleconomy.gov/feg/download.shtml",
+      "says": "2022: 3.5 L 6-cyl turbo; Expedition 2WD, Expedition 4WD, Expedition Timberline AWD"
+     },
+     {
+      "name": "Wikipedia - Ford EcoBoost engine (3.5 L applications)",
+      "url": "https://en.wikipedia.org/wiki/Ford_EcoBoost_engine",
+      "says": "380 hp @ 5000 rpm: 2022-2024 Ford Expedition"
+     },
+     {
+      "name": "Consumer Guide - 2022 Ford Expedition Best Buy review",
+      "url": "https://consumerguide.com/best-buys/2022-ford-expedition/",
+      "says": "380 horsepower (a bump of five hp from 2021) in the XL, STX, and XLT"
+     },
+     {
+      "name": "Kelley Blue Book - 2022 Ford Expedition",
+      "url": "https://www.kbb.com/ford/expedition/2022/",
+      "says": "3.5 EcoBoost: 380 @ 5000 rpm"
+     }
+    ],
+    "independent_sources": 5,
+    "source_groups": [
+     "CG",
+     "EPA",
+     "FORD",
+     "KBB",
+     "WIKI"
+    ]
+   },
+   {
+    "gen": "gen4",
+    "liters": "3.5",
+    "cid": 213,
+    "hp": 400,
+    "hp_basis": "SAE net",
+    "rpo": "EcoBoost 3.5",
+    "name": "3.5L / 213 twin-turbo V6, Limited/King Ranch/Platinum tune",
+    "common_name": "3.5 EcoBoost (Platinum tune)",
+    "trims": [
+     "Limited, King Ranch, Platinum; Expedition and MAX; 2WD and 4WD"
+    ],
+    "status": "three_sources_not_nhra",
+    "note": "No Ford rating for this tune found. Sources differ on trims: Consumer Guide and KBB 2024 say Limited/King Ranch/Platinum; Wikipedia and the KBB 2022 review say Platinum.",
+    "nhra": false,
+    "sources": [
+     {
+      "name": "EPA fueleconomy.gov vehicle data",
+      "url": "https://www.fueleconomy.gov/feg/download.shtml",
+      "says": "2022: 3.5 L 6-cyl turbo; Expedition 2WD, Expedition 4WD, Expedition Timberline AWD"
+     },
+     {
+      "name": "Wikipedia - Ford EcoBoost engine (3.5 L applications)",
+      "url": "https://en.wikipedia.org/wiki/Ford_EcoBoost_engine",
+      "says": "400 hp @ 5000 rpm: 2022-present Ford Expedition Platinum"
+     },
+     {
+      "name": "Consumer Guide - 2022 Ford Expedition Best Buy review",
+      "url": "https://consumerguide.com/best-buys/2022-ford-expedition/",
+      "says": "Limited, King Ranch, and Platinum: 400 hp"
+     },
+     {
+      "name": "Kelley Blue Book - 2022 Ford Expedition",
+      "url": "https://www.kbb.com/ford/expedition/2022/",
+      "says": "Platinum 400 horsepower"
+     }
+    ],
+    "independent_sources": 4,
+    "source_groups": [
+     "CG",
+     "EPA",
+     "KBB",
+     "WIKI"
+    ]
+   },
+   {
+    "gen": "gen4",
+    "liters": "3.5",
+    "cid": 213,
+    "hp": 440,
+    "hp_basis": "SAE net",
+    "rpo": "EcoBoost 3.5 High Output",
+    "name": "3.5L / 213 twin-turbo V6 High Output",
+    "common_name": "3.5 EcoBoost HO",
+    "trims": [
+     "Timberline (4WD only) and Limited Stealth Edition / Stealth Performance Package (Expedition and MAX)"
+    ],
+    "status": "three_sources_not_nhra",
+    "note": "Ratings on premium fuel.",
+    "nhra": false,
+    "sources": [
+     {
+      "name": "Ford 2022 Expedition Timberline/Stealth release (conceptcarz reprint, Source - Ford)",
+      "url": "https://www.conceptcarz.com/z31794/ford-expedition.aspx",
+      "says": "Timberline is powered by Ford's high-output 3.5-liter EcoBoost V6 producing 440 horsepower; Stealth Edition package on Limited/Limited MAX same engine"
+     },
+     {
+      "name": "Ford.com 2022 Expedition page (Wayback 2022-03-01)",
+      "url": "https://web.archive.org/web/20220301000000/https://www.ford.com/suvs/expedition/",
+      "says": "The standard 3.5L EcoBoost engine delivers 380 horsepower; Timberline and Stealth Performance Edition 440 hp"
+     },
+     {
+      "name": "EPA fueleconomy.gov vehicle data",
+      "url": "https://www.fueleconomy.gov/feg/download.shtml",
+      "says": "2022: 3.5 L 6-cyl turbo; Expedition 2WD, Expedition 4WD, Expedition Timberline AWD"
+     },
+     {
+      "name": "Wikipedia - Ford EcoBoost engine (3.5 L applications)",
+      "url": "https://en.wikipedia.org/wiki/Ford_EcoBoost_engine",
+      "says": "440 hp @ 5000 rpm: 2022-present Expedition Timberline & Limited Stealth Performance"
+     },
+     {
+      "name": "Consumer Guide - 2022 Ford Expedition Best Buy review",
+      "url": "https://consumerguide.com/best-buys/2022-ford-expedition/",
+      "says": "Timberline and Stealth Edition Performance Package get a 440-hp version"
+     },
+     {
+      "name": "Kelley Blue Book - 2022 Ford Expedition",
+      "url": "https://www.kbb.com/ford/expedition/2022/",
+      "says": "Timberline and Limited Stealth Performance: 440 horsepower"
+     }
+    ],
+    "independent_sources": 5,
+    "source_groups": [
+     "CG",
+     "EPA",
+     "FORD",
+     "KBB",
+     "WIKI"
+    ]
+   }
+  ],
+  "2023": [
+   {
+    "gen": "gen4",
+    "liters": "3.5",
+    "cid": 213,
+    "hp": 380,
+    "hp_basis": "SAE net",
+    "rpo": "EcoBoost 3.5",
+    "name": "3.5L / 213 twin-turbo V6 (2nd-gen EcoBoost)",
+    "common_name": "3.5 EcoBoost",
+    "trims": [
+     "XL, STX, XLT; Expedition and MAX; 2WD and 4WD"
+    ],
+    "status": "three_sources_not_nhra",
+    "note": "Wikipedia Expedition article still gives 375 for 2018-2024; the Wikipedia EcoBoost article gives 380 for 2022-2024. KBB 2022 review text says 375, its spec table 380. No Ford rating found for this year.",
+    "nhra": false,
+    "sources": [
+     {
+      "name": "EPA fueleconomy.gov vehicle data",
+      "url": "https://www.fueleconomy.gov/feg/download.shtml",
+      "says": "2023: 3.5 L 6-cyl turbo; Expedition 2WD, Expedition 4WD, Expedition Timberline AWD"
+     },
+     {
+      "name": "Wikipedia - Ford EcoBoost engine (3.5 L applications)",
+      "url": "https://en.wikipedia.org/wiki/Ford_EcoBoost_engine",
+      "says": "380 hp @ 5000 rpm: 2022-2024 Ford Expedition"
+     },
+     {
+      "name": "Consumer Guide - 2022 Ford Expedition Best Buy review",
+      "url": "https://consumerguide.com/best-buys/2022-ford-expedition/",
+      "says": "380 horsepower (a bump of five hp from 2021) in the XL, STX, and XLT"
+     },
+     {
+      "name": "Kelley Blue Book - 2023 Ford Expedition",
+      "url": "https://www.kbb.com/ford/expedition/2023/",
+      "says": "3.5 EcoBoost: 380 @ 5000 rpm"
+     }
+    ],
+    "independent_sources": 4,
+    "source_groups": [
+     "CG",
+     "EPA",
+     "KBB",
+     "WIKI"
+    ]
+   },
+   {
+    "gen": "gen4",
+    "liters": "3.5",
+    "cid": 213,
+    "hp": 400,
+    "hp_basis": "SAE net",
+    "rpo": "EcoBoost 3.5",
+    "name": "3.5L / 213 twin-turbo V6, Limited/King Ranch/Platinum tune",
+    "common_name": "3.5 EcoBoost (Platinum tune)",
+    "trims": [
+     "Limited, King Ranch, Platinum; Expedition and MAX; 2WD and 4WD"
+    ],
+    "status": "three_sources_not_nhra",
+    "note": "No Ford rating for this tune found. Sources differ on trims: Consumer Guide and KBB 2024 say Limited/King Ranch/Platinum; Wikipedia and the KBB 2022 review say Platinum.",
+    "nhra": false,
+    "sources": [
+     {
+      "name": "EPA fueleconomy.gov vehicle data",
+      "url": "https://www.fueleconomy.gov/feg/download.shtml",
+      "says": "2023: 3.5 L 6-cyl turbo; Expedition 2WD, Expedition 4WD, Expedition Timberline AWD"
+     },
+     {
+      "name": "Wikipedia - Ford EcoBoost engine (3.5 L applications)",
+      "url": "https://en.wikipedia.org/wiki/Ford_EcoBoost_engine",
+      "says": "400 hp @ 5000 rpm: 2022-present Ford Expedition Platinum"
+     },
+     {
+      "name": "Consumer Guide - 2022 Ford Expedition Best Buy review",
+      "url": "https://consumerguide.com/best-buys/2022-ford-expedition/",
+      "says": "Limited, King Ranch, and Platinum: 400 hp"
+     },
+     {
+      "name": "Kelley Blue Book - 2023 Ford Expedition",
+      "url": "https://www.kbb.com/ford/expedition/2023/",
+      "says": "Platinum 400 horsepower"
+     }
+    ],
+    "independent_sources": 4,
+    "source_groups": [
+     "CG",
+     "EPA",
+     "KBB",
+     "WIKI"
+    ]
+   },
+   {
+    "gen": "gen4",
+    "liters": "3.5",
+    "cid": 213,
+    "hp": 440,
+    "hp_basis": "SAE net",
+    "rpo": "EcoBoost 3.5 High Output",
+    "name": "3.5L / 213 twin-turbo V6 High Output",
+    "common_name": "3.5 EcoBoost HO",
+    "trims": [
+     "Timberline (4WD only) and Limited Stealth Edition / Stealth Performance Package (Expedition and MAX)"
+    ],
+    "status": "three_sources_not_nhra",
+    "note": "Ratings on premium fuel.",
+    "nhra": false,
+    "sources": [
+     {
+      "name": "EPA fueleconomy.gov vehicle data",
+      "url": "https://www.fueleconomy.gov/feg/download.shtml",
+      "says": "2023: 3.5 L 6-cyl turbo; Expedition 2WD, Expedition 4WD, Expedition Timberline AWD"
+     },
+     {
+      "name": "Wikipedia - Ford EcoBoost engine (3.5 L applications)",
+      "url": "https://en.wikipedia.org/wiki/Ford_EcoBoost_engine",
+      "says": "440 hp @ 5000 rpm: 2022-present Expedition Timberline & Limited Stealth Performance"
+     },
+     {
+      "name": "Consumer Guide - 2022 Ford Expedition Best Buy review",
+      "url": "https://consumerguide.com/best-buys/2022-ford-expedition/",
+      "says": "Timberline and Stealth Edition Performance Package get a 440-hp version"
+     },
+     {
+      "name": "Kelley Blue Book - 2023 Ford Expedition",
+      "url": "https://www.kbb.com/ford/expedition/2023/",
+      "says": "Timberline and Limited Stealth Performance: 440 horsepower"
+     }
+    ],
+    "independent_sources": 4,
+    "source_groups": [
+     "CG",
+     "EPA",
+     "KBB",
+     "WIKI"
+    ]
+   }
+  ],
+  "2024": [
+   {
+    "gen": "gen4",
+    "liters": "3.5",
+    "cid": 213,
+    "hp": 380,
+    "hp_basis": "SAE net",
+    "rpo": "EcoBoost 3.5",
+    "name": "3.5L / 213 twin-turbo V6 (2nd-gen EcoBoost)",
+    "common_name": "3.5 EcoBoost",
+    "trims": [
+     "XL, STX, XLT; Expedition and MAX; 2WD and 4WD"
+    ],
+    "status": "three_sources_not_nhra",
+    "note": "Wikipedia Expedition article still gives 375 for 2018-2024; the Wikipedia EcoBoost article gives 380 for 2022-2024. KBB 2022 review text says 375, its spec table 380. No Ford rating found for this year.",
+    "nhra": false,
+    "sources": [
+     {
+      "name": "Ford.com 2024 Expedition page (Wayback 2024-03-01)",
+      "url": "https://web.archive.org/web/20240301000000/https://www.ford.com/suvs/expedition/",
+      "says": "Timberline, Limited Stealth Performance Package: standard 3.5L EcoBoost High Output V6; others standard 3.5L EcoBoost V6 (no ratings)"
+     },
+     {
+      "name": "EPA fueleconomy.gov vehicle data",
+      "url": "https://www.fueleconomy.gov/feg/download.shtml",
+      "says": "2024: 3.5 L 6-cyl turbo; Expedition 2WD, Expedition 4WD, Expedition Timberline AWD"
+     },
+     {
+      "name": "Wikipedia - Ford EcoBoost engine (3.5 L applications)",
+      "url": "https://en.wikipedia.org/wiki/Ford_EcoBoost_engine",
+      "says": "380 hp @ 5000 rpm: 2022-2024 Ford Expedition"
+     },
+     {
+      "name": "Consumer Guide - 2022 Ford Expedition Best Buy review",
+      "url": "https://consumerguide.com/best-buys/2022-ford-expedition/",
+      "says": "380 horsepower (a bump of five hp from 2021) in the XL, STX, and XLT"
+     },
+     {
+      "name": "Kelley Blue Book - 2024 Ford Expedition",
+      "url": "https://www.kbb.com/ford/expedition/2024/",
+      "says": "3.5 EcoBoost: 380 @ 5000 rpm"
+     }
+    ],
+    "independent_sources": 5,
+    "source_groups": [
+     "CG",
+     "EPA",
+     "FORD",
+     "KBB",
+     "WIKI"
+    ]
+   },
+   {
+    "gen": "gen4",
+    "liters": "3.5",
+    "cid": 213,
+    "hp": 400,
+    "hp_basis": "SAE net",
+    "rpo": "EcoBoost 3.5",
+    "name": "3.5L / 213 twin-turbo V6, Limited/King Ranch/Platinum tune",
+    "common_name": "3.5 EcoBoost (Platinum tune)",
+    "trims": [
+     "Limited, King Ranch, Platinum; Expedition and MAX; 2WD and 4WD"
+    ],
+    "status": "three_sources_not_nhra",
+    "note": "No Ford rating for this tune found. Sources differ on trims: Consumer Guide and KBB 2024 say Limited/King Ranch/Platinum; Wikipedia and the KBB 2022 review say Platinum.",
+    "nhra": false,
+    "sources": [
+     {
+      "name": "EPA fueleconomy.gov vehicle data",
+      "url": "https://www.fueleconomy.gov/feg/download.shtml",
+      "says": "2024: 3.5 L 6-cyl turbo; Expedition 2WD, Expedition 4WD, Expedition Timberline AWD"
+     },
+     {
+      "name": "Wikipedia - Ford EcoBoost engine (3.5 L applications)",
+      "url": "https://en.wikipedia.org/wiki/Ford_EcoBoost_engine",
+      "says": "400 hp @ 5000 rpm: 2022-present Ford Expedition Platinum"
+     },
+     {
+      "name": "Consumer Guide - 2022 Ford Expedition Best Buy review",
+      "url": "https://consumerguide.com/best-buys/2022-ford-expedition/",
+      "says": "Limited, King Ranch, and Platinum: 400 hp"
+     },
+     {
+      "name": "Kelley Blue Book - 2024 Ford Expedition",
+      "url": "https://www.kbb.com/ford/expedition/2024/",
+      "says": "Limited, King Ranch and Platinum: 400 horsepower and 480 lb-ft"
+     }
+    ],
+    "independent_sources": 4,
+    "source_groups": [
+     "CG",
+     "EPA",
+     "KBB",
+     "WIKI"
+    ]
+   },
+   {
+    "gen": "gen4",
+    "liters": "3.5",
+    "cid": 213,
+    "hp": 440,
+    "hp_basis": "SAE net",
+    "rpo": "EcoBoost 3.5 High Output",
+    "name": "3.5L / 213 twin-turbo V6 High Output",
+    "common_name": "3.5 EcoBoost HO",
+    "trims": [
+     "Timberline (4WD only) and Limited Stealth Edition / Stealth Performance Package (Expedition and MAX)"
+    ],
+    "status": "three_sources_not_nhra",
+    "note": "Ratings on premium fuel.",
+    "nhra": false,
+    "sources": [
+     {
+      "name": "Ford.com 2024 Expedition page (Wayback 2024-03-01)",
+      "url": "https://web.archive.org/web/20240301000000/https://www.ford.com/suvs/expedition/",
+      "says": "Timberline, Limited Stealth Performance Package: standard 3.5L EcoBoost High Output V6; others standard 3.5L EcoBoost V6 (no ratings)"
+     },
+     {
+      "name": "EPA fueleconomy.gov vehicle data",
+      "url": "https://www.fueleconomy.gov/feg/download.shtml",
+      "says": "2024: 3.5 L 6-cyl turbo; Expedition 2WD, Expedition 4WD, Expedition Timberline AWD"
+     },
+     {
+      "name": "Wikipedia - Ford EcoBoost engine (3.5 L applications)",
+      "url": "https://en.wikipedia.org/wiki/Ford_EcoBoost_engine",
+      "says": "440 hp @ 5000 rpm: 2022-present Expedition Timberline & Limited Stealth Performance"
+     },
+     {
+      "name": "Consumer Guide - 2022 Ford Expedition Best Buy review",
+      "url": "https://consumerguide.com/best-buys/2022-ford-expedition/",
+      "says": "Timberline and Stealth Edition Performance Package get a 440-hp version"
+     },
+     {
+      "name": "Kelley Blue Book - 2024 Ford Expedition",
+      "url": "https://www.kbb.com/ford/expedition/2024/",
+      "says": "Timberline and Limited Stealth Performance: 440 horsepower"
+     }
+    ],
+    "independent_sources": 5,
+    "source_groups": [
+     "CG",
+     "EPA",
+     "FORD",
+     "KBB",
+     "WIKI"
+    ]
+   }
+  ],
+  "2025": [
+   {
+    "gen": "gen5",
+    "liters": "3.5",
+    "cid": 213,
+    "hp": 400,
+    "hp_basis": "SAE net",
+    "rpo": "EcoBoost 3.5",
+    "name": "3.5L / 213 twin-turbo V6 (2nd-gen EcoBoost)",
+    "common_name": "3.5 EcoBoost",
+    "trims": [
+     "Active, King Ranch, Platinum; Expedition and MAX; 2WD and 4WD"
+    ],
+    "status": "three_sources_not_nhra",
+    "note": "Rating from Ford and KBB (two agree); EPA confirms size/turbo. Wikipedia gives no gen5 rating.",
+    "nhra": false,
+    "sources": [
+     {
+      "name": "Ford From The Road - All-New Ford Expedition (2025 model year)",
+      "url": "https://www.fromtheroad.ford.com/us/en/articles/2024/all-new-ford-expedition-fully-redesigned-for-families-with-big-l",
+      "says": "Active, King Ranch, Platinum: standard 3.5-liter EcoBoost V6 rated at 400 horsepower; High Output 440 hp standard on Tremor, available on Platinum"
+     },
+     {
+      "name": "EPA fueleconomy.gov vehicle data",
+      "url": "https://www.fueleconomy.gov/feg/download.shtml",
+      "says": "2025: 3.5 L 6-cyl turbo; Expedition 2WD, Expedition 4WD"
+     },
+     {
+      "name": "Kelley Blue Book - 2025 Ford Expedition",
+      "url": "https://www.kbb.com/ford/expedition/2025/",
+      "says": "standard tuning produces 400 horsepower and 480 lb-ft"
+     }
+    ],
+    "independent_sources": 3,
+    "source_groups": [
+     "EPA",
+     "FORD",
+     "KBB"
+    ]
+   },
+   {
+    "gen": "gen5",
+    "liters": "3.5",
+    "cid": 213,
+    "hp": 440,
+    "hp_basis": "SAE net",
+    "rpo": "EcoBoost 3.5 High Output",
+    "name": "3.5L / 213 twin-turbo V6 High Output",
+    "common_name": "3.5 EcoBoost HO",
+    "trims": [
+     "standard on Tremor (4WD only); available on Platinum"
+    ],
+    "status": "three_sources_not_nhra",
+    "note": "Rating from Ford and KBB (two agree); EPA confirms size/turbo but cannot separate tunes.",
+    "nhra": false,
+    "sources": [
+     {
+      "name": "Ford From The Road - All-New Ford Expedition (2025 model year)",
+      "url": "https://www.fromtheroad.ford.com/us/en/articles/2024/all-new-ford-expedition-fully-redesigned-for-families-with-big-l",
+      "says": "Active, King Ranch, Platinum: standard 3.5-liter EcoBoost V6 rated at 400 horsepower; High Output 440 hp standard on Tremor, available on Platinum"
+     },
+     {
+      "name": "EPA fueleconomy.gov vehicle data",
+      "url": "https://www.fueleconomy.gov/feg/download.shtml",
+      "says": "2025: 3.5 L 6-cyl turbo; Expedition 2WD, Expedition 4WD"
+     },
+     {
+      "name": "Kelley Blue Book - 2025 Ford Expedition",
+      "url": "https://www.kbb.com/ford/expedition/2025/",
+      "says": "available High-Output version makes 440 horsepower and 510 lb-ft"
+     }
+    ],
+    "independent_sources": 3,
+    "source_groups": [
+     "EPA",
+     "FORD",
+     "KBB"
+    ]
+   }
+  ],
+  "2026": [
+   {
+    "gen": "gen5",
+    "liters": "3.5",
+    "cid": 213,
+    "hp": 400,
+    "hp_basis": "SAE net",
+    "rpo": "EcoBoost 3.5",
+    "name": "3.5L / 213 twin-turbo V6 (2nd-gen EcoBoost)",
+    "common_name": "3.5 EcoBoost",
+    "trims": [
+     "Active, King Ranch, Platinum; Expedition and MAX; 2WD and 4WD"
+    ],
+    "status": "three_sources_not_nhra",
+    "note": "Rating from Ford and KBB (two agree); EPA confirms size/turbo. Wikipedia gives no gen5 rating.",
+    "nhra": false,
+    "sources": [
+     {
+      "name": "Ford.com 2026 Expedition page (Wayback 2026-06-01)",
+      "url": "https://web.archive.org/web/20260601000000/https://www.ford.com/suvs/expedition/",
+      "says": "400-horsepower 3.5L EcoBoost V6; available 440-horsepower 3.5L EcoBoost V6 High-Output"
+     },
+     {
+      "name": "EPA fueleconomy.gov vehicle data",
+      "url": "https://www.fueleconomy.gov/feg/download.shtml",
+      "says": "2026: 3.5 L 6-cyl turbo; Expedition 2WD, Expedition 4WD"
+     },
+     {
+      "name": "Kelley Blue Book - 2026 Ford Expedition",
+      "url": "https://www.kbb.com/ford/expedition/2026/",
+      "says": "standard tuning produces 400 horsepower and 480 lb-ft"
+     }
+    ],
+    "independent_sources": 3,
+    "source_groups": [
+     "EPA",
+     "FORD",
+     "KBB"
+    ]
+   },
+   {
+    "gen": "gen5",
+    "liters": "3.5",
+    "cid": 213,
+    "hp": 440,
+    "hp_basis": "SAE net",
+    "rpo": "EcoBoost 3.5 High Output",
+    "name": "3.5L / 213 twin-turbo V6 High Output",
+    "common_name": "3.5 EcoBoost HO",
+    "trims": [
+     "standard on Tremor (4WD only); available on Platinum"
+    ],
+    "status": "three_sources_not_nhra",
+    "note": "Rating from Ford and KBB (two agree); EPA confirms size/turbo but cannot separate tunes.",
+    "nhra": false,
+    "sources": [
+     {
+      "name": "Ford.com 2026 Expedition page (Wayback 2026-06-01)",
+      "url": "https://web.archive.org/web/20260601000000/https://www.ford.com/suvs/expedition/",
+      "says": "400-horsepower 3.5L EcoBoost V6; available 440-horsepower 3.5L EcoBoost V6 High-Output"
+     },
+     {
+      "name": "EPA fueleconomy.gov vehicle data",
+      "url": "https://www.fueleconomy.gov/feg/download.shtml",
+      "says": "2026: 3.5 L 6-cyl turbo; Expedition 2WD, Expedition 4WD"
+     },
+     {
+      "name": "Kelley Blue Book - 2026 Ford Expedition",
+      "url": "https://www.kbb.com/ford/expedition/2026/",
+      "says": "available High-Output version makes 440 horsepower and 510 lb-ft"
+     }
+    ],
+    "independent_sources": 3,
+    "source_groups": [
+     "EPA",
+     "FORD",
+     "KBB"
+    ]
+   }
+  ]
+ },
+ "source_index": [
+  {
+   "name": "Ford 1997 Cars and Trucks brochure (Ford Heritage Vault), Expedition specs",
+   "url": "https://fordheritagevaultmedia.com/api/links/c29a9048c4864d89915b29f4f39330e4/uuid/4facba5b52ab4765941a28cc4e462fd0/access",
+   "type": "manufacturer",
+   "group": "FORD"
+  },
+  {
+   "name": "Ford 1998 Cars and Trucks brochure (Ford Heritage Vault), Expedition specs",
+   "url": "https://fordheritagevaultmedia.com/api/links/c29a9048c4864d89915b29f4f39330e4/uuid/de2bbf0f2324459c9724f9cf5ce97f10/access",
+   "type": "manufacturer",
+   "group": "FORD"
+  },
+  {
+   "name": "Ford 1999 Expedition brochure (Ford Heritage Vault)",
+   "url": "https://fordheritagevaultmedia.com/api/links/c29a9048c4864d89915b29f4f39330e4/uuid/6e39a204f1fb4b8fb467d61a3a6b5460/access",
+   "type": "manufacturer",
+   "group": "FORD"
+  },
+  {
+   "name": "Ford 2000 Expedition brochure (Ford Heritage Vault)",
+   "url": "https://fordheritagevaultmedia.com/api/links/c29a9048c4864d89915b29f4f39330e4/uuid/8972494f92444c9f8a88b2f5d22d67e4/access",
+   "type": "manufacturer",
+   "group": "FORD"
+  },
+  {
+   "name": "Ford 2001 Escape/Explorer/Expedition/Excursion brochure (Ford Heritage Vault)",
+   "url": "https://fordheritagevaultmedia.com/api/links/c29a9048c4864d89915b29f4f39330e4/uuid/84a8efe9c36e41588165f5d12268bb1a/access",
+   "type": "manufacturer",
+   "group": "FORD"
+  },
+  {
+   "name": "Ford 2002 Escape/Explorer/Expedition/Excursion brochure (Ford Heritage Vault)",
+   "url": "https://fordheritagevaultmedia.com/api/links/c29a9048c4864d89915b29f4f39330e4/uuid/535cccaa45d94408b6f6b18f0cea5e42/access",
+   "type": "manufacturer",
+   "group": "FORD"
+  },
+  {
+   "name": "Ford 2003 Expedition brochure (Ford Heritage Vault)",
+   "url": "https://fordheritagevaultmedia.com/api/links/c29a9048c4864d89915b29f4f39330e4/uuid/d999bcb18a2e441b8dcbe2b5cb6a3114/access",
+   "type": "manufacturer",
+   "group": "FORD"
+  },
+  {
+   "name": "Ford 2004 Expedition brochure (Ford Heritage Vault)",
+   "url": "https://fordheritagevaultmedia.com/api/links/c29a9048c4864d89915b29f4f39330e4/uuid/2d3116e92c6e40a6a16a9fcfc6494e58/access",
+   "type": "manufacturer",
+   "group": "FORD"
+  },
+  {
+   "name": "Ford 2005 SUV brochure (Ford Heritage Vault)",
+   "url": "https://fordheritagevaultmedia.com/api/links/c29a9048c4864d89915b29f4f39330e4/uuid/b922d4987e4d4e0ba38ea32cb90598df/access",
+   "type": "manufacturer",
+   "group": "FORD"
+  },
+  {
+   "name": "Ford 2006 Lineup brochure (Ford Heritage Vault)",
+   "url": "https://fordheritagevaultmedia.com/api/links/c29a9048c4864d89915b29f4f39330e4/uuid/7e2eac3ec45a4d76b0d217ecac22baf4/access",
+   "type": "manufacturer",
+   "group": "FORD"
+  },
+  {
+   "name": "Ford 2007 Expedition and Expedition Max brochure (Ford Heritage Vault)",
+   "url": "https://fordheritagevaultmedia.com/api/links/c29a9048c4864d89915b29f4f39330e4/uuid/a0101e95070b4ef6bf3d0d86300372d2/access",
+   "type": "manufacturer",
+   "group": "FORD"
+  },
+  {
+   "name": "Ford 2007 Car Line brochure (Ford Heritage Vault)",
+   "url": "https://fordheritagevaultmedia.com/api/links/c29a9048c4864d89915b29f4f39330e4/uuid/6b37dad8a4664f07921d7c2f28d91e2b/access",
+   "type": "manufacturer",
+   "group": "FORD"
+  },
+  {
+   "name": "Ford 2009 Lineup brochure (Ford Heritage Vault)",
+   "url": "https://fordheritagevaultmedia.com/api/links/c29a9048c4864d89915b29f4f39330e4/uuid/57e2d3198ca14b30853c6ba464fe9fc6/access",
+   "type": "manufacturer",
+   "group": "FORD"
+  },
+  {
+   "name": "Ford 2010 Expedition and Expedition EL brochure (Ford Heritage Vault)",
+   "url": "https://fordheritagevaultmedia.com/api/links/c29a9048c4864d89915b29f4f39330e4/uuid/a9c32f4074704af59309799e10e70be9/access",
+   "type": "manufacturer",
+   "group": "FORD"
+  },
+  {
+   "name": "Ford 2011 Expedition and Expedition EL brochure (Ford Heritage Vault)",
+   "url": "https://fordheritagevaultmedia.com/api/links/c29a9048c4864d89915b29f4f39330e4/uuid/c93fa9726ab245a8a7c1f2a84ca719e3/access",
+   "type": "manufacturer",
+   "group": "FORD"
+  },
+  {
+   "name": "Ford of Canada 2013 Expedition+Max brochure (Ford Heritage Vault)",
+   "url": "https://fordheritagevaultmedia.com/api/links/c29a9048c4864d89915b29f4f39330e4/uuid/17758ed1de3445218ec5598b61194480/access",
+   "type": "manufacturer",
+   "group": "FORD"
+  },
+  {
+   "name": "Ford 2014 Expedition+EL brochure (Ford Heritage Vault)",
+   "url": "https://fordheritagevaultmedia.com/api/links/c29a9048c4864d89915b29f4f39330e4/uuid/3a3432ed36424751be605befdf8b4952/access",
+   "type": "manufacturer",
+   "group": "FORD"
+  },
+  {
+   "name": "Ford of Canada 2015 Expedition+Max brochure (Ford Heritage Vault)",
+   "url": "https://fordheritagevaultmedia.com/api/links/c29a9048c4864d89915b29f4f39330e4/uuid/27130a5d3a31417d90420175c1b4b3dd/access",
+   "type": "manufacturer",
+   "group": "FORD"
+  },
+  {
+   "name": "Ford of Canada 2016 Expedition+Max brochure (Ford Heritage Vault)",
+   "url": "https://fordheritagevaultmedia.com/api/links/c29a9048c4864d89915b29f4f39330e4/uuid/7081fa56befd44c6a410b5ba3d20f9f2/access",
+   "type": "manufacturer",
+   "group": "FORD"
+  },
+  {
+   "name": "Ford 2018 Expedition+Max brochure (Ford Heritage Vault)",
+   "url": "https://fordheritagevaultmedia.com/api/links/c29a9048c4864d89915b29f4f39330e4/uuid/a2d5d1e6140d4b4895b91c632d726ba6/access",
+   "type": "manufacturer",
+   "group": "FORD"
+  },
+  {
+   "name": "Ford 2019 Expedition+Max brochure (Ford Heritage Vault)",
+   "url": "https://fordheritagevaultmedia.com/api/links/c29a9048c4864d89915b29f4f39330e4/uuid/3696aec852534844acf44db5ca860eed/access",
+   "type": "manufacturer",
+   "group": "FORD"
+  },
+  {
+   "name": "Ford 2020 Expedition+Max brochure (Ford Heritage Vault)",
+   "url": "https://fordheritagevaultmedia.com/api/links/c29a9048c4864d89915b29f4f39330e4/uuid/c7bbff72492e4eba8fd90af3a4e39693/access",
+   "type": "manufacturer",
+   "group": "FORD"
+  },
+  {
+   "name": "Ford 2021 Expedition brochure (Ford Heritage Vault)",
+   "url": "https://fordheritagevaultmedia.com/api/links/c29a9048c4864d89915b29f4f39330e4/uuid/41a441a416854b5191babd255dd5520e/access",
+   "type": "manufacturer",
+   "group": "FORD"
+  },
+  {
+   "name": "Ford 2001 Expedition press specifications (reprinted on ford-trucks.com specs)",
+   "url": "https://www.ford-trucks.com/specs/2001_expedition_1.html",
+   "type": "manufacturer",
+   "group": "FORD"
+  },
+  {
+   "name": "Ford 2004 Expedition press overview (reprinted on ford-trucks.com specs)",
+   "url": "https://www.ford-trucks.com/specs/2004/2004_expedition.html",
+   "type": "manufacturer",
+   "group": "FORD"
+  },
+  {
+   "name": "Ford 2006 Expedition press overview (reprinted on ford-trucks.com specs)",
+   "url": "https://www.ford-trucks.com/specs/2006/2006_ford_expedition.html",
+   "type": "manufacturer",
+   "group": "FORD"
+  },
+  {
+   "name": "Ford 2008 Expedition press overview (reprinted on ford-trucks.com specs)",
+   "url": "https://www.ford-trucks.com/specs/2008/2008-ford-expedition.html",
+   "type": "manufacturer",
+   "group": "FORD"
+  },
+  {
+   "name": "Ford.com 2022 Expedition page (Wayback 2022-03-01)",
+   "url": "https://web.archive.org/web/20220301000000/https://www.ford.com/suvs/expedition/",
+   "type": "manufacturer",
+   "group": "FORD"
+  },
+  {
+   "name": "Ford 2022 Expedition Timberline/Stealth release (conceptcarz reprint, Source - Ford)",
+   "url": "https://www.conceptcarz.com/z31794/ford-expedition.aspx",
+   "type": "manufacturer",
+   "group": "FORD"
+  },
+  {
+   "name": "Ford.com 2024 Expedition page (Wayback 2024-03-01)",
+   "url": "https://web.archive.org/web/20240301000000/https://www.ford.com/suvs/expedition/",
+   "type": "manufacturer",
+   "group": "FORD"
+  },
+  {
+   "name": "Ford From The Road - All-New Ford Expedition (2025 model year)",
+   "url": "https://www.fromtheroad.ford.com/us/en/articles/2024/all-new-ford-expedition-fully-redesigned-for-families-with-big-l",
+   "type": "manufacturer",
+   "group": "FORD"
+  },
+  {
+   "name": "Ford.com 2026 Expedition page (Wayback 2026-06-01)",
+   "url": "https://web.archive.org/web/20260601000000/https://www.ford.com/suvs/expedition/",
+   "type": "manufacturer",
+   "group": "FORD"
+  },
+  {
+   "name": "Wikipedia - Ford Expedition",
+   "url": "https://en.wikipedia.org/wiki/Ford_Expedition",
+   "type": "wikipedia",
+   "group": "WIKI"
+  },
+  {
+   "name": "Wikipedia - Ford EcoBoost engine (3.5 L applications)",
+   "url": "https://en.wikipedia.org/wiki/Ford_EcoBoost_engine",
+   "type": "wikipedia",
+   "group": "WIKI"
+  },
+  {
+   "name": "EPA fueleconomy.gov vehicle data",
+   "url": "https://www.fueleconomy.gov/feg/download.shtml",
+   "type": "government",
+   "group": "EPA"
+  },
+  {
+   "name": "Consumer Guide - 1997-02 Ford Expedition (used-car review)",
+   "url": "https://consumerguide.com/used/1997-02-ford-expedition/",
+   "type": "publication",
+   "group": "CG"
+  },
+  {
+   "name": "Consumer Guide - 2003-14 Ford Expedition (used-car review)",
+   "url": "https://consumerguide.com/used/2003-14-ford-expedition/",
+   "type": "publication",
+   "group": "CG"
+  },
+  {
+   "name": "Consumer Guide - 2015 Ford Expedition",
+   "url": "https://consumerguide.com/ford/2015-expedition/",
+   "type": "publication",
+   "group": "CG"
+  },
+  {
+   "name": "Consumer Guide - 2016 Ford Expedition",
+   "url": "https://consumerguide.com/ford/2016-expedition/",
+   "type": "publication",
+   "group": "CG"
+  },
+  {
+   "name": "Consumer Guide - 2017 Ford Expedition",
+   "url": "https://consumerguide.com/ford/2017-expedition/",
+   "type": "publication",
+   "group": "CG"
+  },
+  {
+   "name": "Consumer Guide - 2018 Ford Expedition",
+   "url": "https://consumerguide.com/ford/2018-expedition/",
+   "type": "publication",
+   "group": "CG"
+  },
+  {
+   "name": "Consumer Guide - 2021 Ford Expedition",
+   "url": "https://consumerguide.com/ford/2021-expedition/",
+   "type": "publication",
+   "group": "CG"
+  },
+  {
+   "name": "Consumer Guide - 2022 Ford Expedition Best Buy review",
+   "url": "https://consumerguide.com/best-buys/2022-ford-expedition/",
+   "type": "publication",
+   "group": "CG"
+  },
+  {
+   "name": "Kelley Blue Book - 1997 Ford Expedition",
+   "url": "https://www.kbb.com/ford/expedition/1997/",
+   "type": "publication",
+   "group": "KBB"
+  },
+  {
+   "name": "Kelley Blue Book - 1998 Ford Expedition",
+   "url": "https://www.kbb.com/ford/expedition/1998/",
+   "type": "publication",
+   "group": "KBB"
+  },
+  {
+   "name": "Kelley Blue Book - 1999 Ford Expedition",
+   "url": "https://www.kbb.com/ford/expedition/1999/",
+   "type": "publication",
+   "group": "KBB"
+  },
+  {
+   "name": "Kelley Blue Book - 2000 Ford Expedition",
+   "url": "https://www.kbb.com/ford/expedition/2000/",
+   "type": "publication",
+   "group": "KBB"
+  },
+  {
+   "name": "Kelley Blue Book - 2001 Ford Expedition",
+   "url": "https://www.kbb.com/ford/expedition/2001/",
+   "type": "publication",
+   "group": "KBB"
+  },
+  {
+   "name": "Kelley Blue Book - 2002 Ford Expedition",
+   "url": "https://www.kbb.com/ford/expedition/2002/",
+   "type": "publication",
+   "group": "KBB"
+  },
+  {
+   "name": "Kelley Blue Book - 2003 Ford Expedition",
+   "url": "https://www.kbb.com/ford/expedition/2003/",
+   "type": "publication",
+   "group": "KBB"
+  },
+  {
+   "name": "Kelley Blue Book - 2004 Ford Expedition",
+   "url": "https://www.kbb.com/ford/expedition/2004/",
+   "type": "publication",
+   "group": "KBB"
+  },
+  {
+   "name": "Kelley Blue Book - 2005 Ford Expedition",
+   "url": "https://www.kbb.com/ford/expedition/2005/",
+   "type": "publication",
+   "group": "KBB"
+  },
+  {
+   "name": "Kelley Blue Book - 2006 Ford Expedition",
+   "url": "https://www.kbb.com/ford/expedition/2006/",
+   "type": "publication",
+   "group": "KBB"
+  },
+  {
+   "name": "Kelley Blue Book - 2007 Ford Expedition",
+   "url": "https://www.kbb.com/ford/expedition/2007/",
+   "type": "publication",
+   "group": "KBB"
+  },
+  {
+   "name": "Kelley Blue Book - 2008 Ford Expedition",
+   "url": "https://www.kbb.com/ford/expedition/2008/",
+   "type": "publication",
+   "group": "KBB"
+  },
+  {
+   "name": "Kelley Blue Book - 2009 Ford Expedition",
+   "url": "https://www.kbb.com/ford/expedition/2009/",
+   "type": "publication",
+   "group": "KBB"
+  },
+  {
+   "name": "Kelley Blue Book - 2010 Ford Expedition",
+   "url": "https://www.kbb.com/ford/expedition/2010/",
+   "type": "publication",
+   "group": "KBB"
+  },
+  {
+   "name": "Kelley Blue Book - 2011 Ford Expedition",
+   "url": "https://www.kbb.com/ford/expedition/2011/",
+   "type": "publication",
+   "group": "KBB"
+  },
+  {
+   "name": "Kelley Blue Book - 2012 Ford Expedition",
+   "url": "https://www.kbb.com/ford/expedition/2012/",
+   "type": "publication",
+   "group": "KBB"
+  },
+  {
+   "name": "Kelley Blue Book - 2013 Ford Expedition",
+   "url": "https://www.kbb.com/ford/expedition/2013/",
+   "type": "publication",
+   "group": "KBB"
+  },
+  {
+   "name": "Kelley Blue Book - 2014 Ford Expedition",
+   "url": "https://www.kbb.com/ford/expedition/2014/",
+   "type": "publication",
+   "group": "KBB"
+  },
+  {
+   "name": "Kelley Blue Book - 2015 Ford Expedition",
+   "url": "https://www.kbb.com/ford/expedition/2015/",
+   "type": "publication",
+   "group": "KBB"
+  },
+  {
+   "name": "Kelley Blue Book - 2016 Ford Expedition",
+   "url": "https://www.kbb.com/ford/expedition/2016/",
+   "type": "publication",
+   "group": "KBB"
+  },
+  {
+   "name": "Kelley Blue Book - 2017 Ford Expedition",
+   "url": "https://www.kbb.com/ford/expedition/2017/",
+   "type": "publication",
+   "group": "KBB"
+  },
+  {
+   "name": "Kelley Blue Book - 2018 Ford Expedition",
+   "url": "https://www.kbb.com/ford/expedition/2018/",
+   "type": "publication",
+   "group": "KBB"
+  },
+  {
+   "name": "Kelley Blue Book - 2019 Ford Expedition",
+   "url": "https://www.kbb.com/ford/expedition/2019/",
+   "type": "publication",
+   "group": "KBB"
+  },
+  {
+   "name": "Kelley Blue Book - 2020 Ford Expedition",
+   "url": "https://www.kbb.com/ford/expedition/2020/",
+   "type": "publication",
+   "group": "KBB"
+  },
+  {
+   "name": "Kelley Blue Book - 2021 Ford Expedition",
+   "url": "https://www.kbb.com/ford/expedition/2021/",
+   "type": "publication",
+   "group": "KBB"
+  },
+  {
+   "name": "Kelley Blue Book - 2022 Ford Expedition",
+   "url": "https://www.kbb.com/ford/expedition/2022/",
+   "type": "publication",
+   "group": "KBB"
+  },
+  {
+   "name": "Kelley Blue Book - 2023 Ford Expedition",
+   "url": "https://www.kbb.com/ford/expedition/2023/",
+   "type": "publication",
+   "group": "KBB"
+  },
+  {
+   "name": "Kelley Blue Book - 2024 Ford Expedition",
+   "url": "https://www.kbb.com/ford/expedition/2024/",
+   "type": "publication",
+   "group": "KBB"
+  },
+  {
+   "name": "Kelley Blue Book - 2025 Ford Expedition",
+   "url": "https://www.kbb.com/ford/expedition/2025/",
+   "type": "publication",
+   "group": "KBB"
+  },
+  {
+   "name": "Kelley Blue Book - 2026 Ford Expedition",
+   "url": "https://www.kbb.com/ford/expedition/2026/",
+   "type": "publication",
+   "group": "KBB"
+  }
+ ]
+}

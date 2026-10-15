@@ -1,0 +1,1591 @@
+{
+ "vehicle": "volkswagen-beetle-1949-1979",
+ "market": "US",
+ "top_level_note": "US-market air-cooled Type 1 Beetle: sedan 1949-1977, Super Beetle sedan 1971-1975, convertible 1949-1979 (Super Beetle-based from 1971). The water-cooled, front-engine New Beetle (1998+) is a different car and is left out. Engines sold only outside the US (1200 after 1965, 1300 after 1966, Mexican/Brazilian Beetles) are not listed, even where Hagerty lists them.",
+ "excluded": [
+  {
+   "what": "1200 (34 PS) and 1300 Beetles, 1967-1979",
+   "why": "not US models; CG: \"1200 and 1300 engines continue outside U.S.\" from 1967"
+  },
+  {
+   "what": "Engine code letters other than AJ (e.g. D, F, H, B, AE, AH, AK)",
+   "why": "no reachable reputable source stated them (the Bentley, Chilton and Clymer manuals on the Internet Archive are lending-restricted); rpo gives the size instead"
+  }
+ ],
+ "search_notes": "No NHRA data (nhra=false throughout). Sources: VW factory literature on the Internet Archive (US owner's manuals 1962-1979, 1968/1969/1976 US brochures, 1952-57 and 1961-65 workshop manuals, the 1966 Canadian brochure and a 1979 Volkswagenwerk report to NHTSA), all counted as ONE source; the Krause Standard Catalog of Volkswagen (full-text search snippets only; the book is lending-restricted and snippets carry no year label, so years come from narrative and price-guide lines plus the bore/compression match); Consumer Guide via archived HowStuffWorks pages; the appendix of Nelson's Small Wonder (Bentley edition; the chart may derive from a VW of America booklet, but it is published as Nelson's book); Hagerty valuation pages (Wayback; non-US engines they list were ignored); Autobook 1954-67 (UK). Wikipedia gives only DIN figures and backs displacements. The Standard Catalog of Imported Cars snippets were unusable; no VW pages were found on oldcarbrochures; Hemmings is blocked. hp = what US literature states for that year: SAE gross through 1972, SAE net from 1973. DIN figures are in hp_din where a source states them.",
+ "years": {
+  "1949": [
+   {
+    "gen": "1949-1953",
+    "cid": 69,
+    "cc": 1131,
+    "liters": 1.1,
+    "hp": 30,
+    "hp_basis": "SAE gross",
+    "hp_din": 25,
+    "compression": "5.8:1",
+    "rpo": "1100 (1131 cc)",
+    "name": "1131 cc OHV air-cooled flat-four, single Solex carburetor",
+    "common_name": "VW 1100 (25 PS DIN / 30 hp SAE)",
+    "trims": [
+     "Sedan (Standard / Export-DeLuxe)",
+     "Convertible (Karmann)"
+    ],
+    "induction": "carbureted",
+    "nhra": false,
+    "sources": [
+     {
+      "name": "Volkswagen factory literature (VW of America owner's manuals, US brochures, VW workshop manuals, Volkswagenwerk report to NHTSA)",
+      "url": "https://archive.org/details/1952-57-volkswagen-passenger-cars-workshop-manual",
+      "says": "1952-57 VW workshop manual: Performance 25 BHP at 3300 rpm (1131 cc); VWoA 1961-65 workshop manual: \"25 and 30 bhp (30 and 36 SAE bhp)\" engines"
+     },
+     {
+      "name": "Walter Henry Nelson, Small Wonder (Bentley Publishers ed.), Appendix \"How to Tell the Age of a Volkswagen\"",
+      "url": "https://archive.org/details/walter-henry-small-wonder-the-amazing-story-of-the-volkswagen-beetle-appendix-ho",
+      "says": "1954: \"hp increased from 30 hp (1131 cc) to 36 hp (1192 cc); 5.8:1 to 6.6:1 compression ratio\""
+     },
+     {
+      "name": "Consumer Guide (Auto Editors of Consumer Guide) Beetle history, via HowStuffWorks (archived)",
+      "url": "https://auto.howstuffworks.com/1945-1959-volkswagen-beetle3.htm",
+      "archive": "http://web.archive.org/web/2015/http://auto.howstuffworks.com/1945-1959-volkswagen-beetle3.htm",
+      "says": "1954: \"displacement from 1131 to 1192 cc, and compression from 5.8 to 6.6:1, upping horsepower from 30 to 36\" (CG also calls the 1947 1131-cc engine 25 hp)"
+     },
+     {
+      "name": "Hagerty Valuation Tools (archived Wayback copy)",
+      "url": "https://www.hagerty.com/valuation-tools/volkswagen/beetle/1949",
+      "archive": "http://web.archive.org/web/2024/https://www.hagerty.com/valuation-tools/volkswagen/beetle/1949",
+      "says": "1131cc/25hp 1bbl"
+     }
+    ],
+    "independent_sources": 4,
+    "status": "three_sources_not_nhra",
+    "note": "US SAE rating 30 hp; DIN 25 PS (Hagerty and Krause list 25, the DIN figure). Before 1955 VW had no model year: a 1953 car is one built in calendar 1953 (Nelson). The 1192 cc engine began in December 1953 production and is counted from 1954. Hydraulic brakes (export) 1950; synchromesh 2nd-4th 1952. US imports began 1949."
+   }
+  ],
+  "1950": [
+   {
+    "gen": "1949-1953",
+    "cid": 69,
+    "cc": 1131,
+    "liters": 1.1,
+    "hp": 30,
+    "hp_basis": "SAE gross",
+    "hp_din": 25,
+    "compression": "5.8:1",
+    "rpo": "1100 (1131 cc)",
+    "name": "1131 cc OHV air-cooled flat-four, single Solex carburetor",
+    "common_name": "VW 1100 (25 PS DIN / 30 hp SAE)",
+    "trims": [
+     "Sedan (Standard / Export-DeLuxe)",
+     "Convertible (Karmann)"
+    ],
+    "induction": "carbureted",
+    "nhra": false,
+    "sources": [
+     {
+      "name": "Volkswagen factory literature (VW of America owner's manuals, US brochures, VW workshop manuals, Volkswagenwerk report to NHTSA)",
+      "url": "https://archive.org/details/1952-57-volkswagen-passenger-cars-workshop-manual",
+      "says": "1952-57 VW workshop manual: Performance 25 BHP at 3300 rpm (1131 cc); VWoA 1961-65 workshop manual: \"25 and 30 bhp (30 and 36 SAE bhp)\" engines"
+     },
+     {
+      "name": "Walter Henry Nelson, Small Wonder (Bentley Publishers ed.), Appendix \"How to Tell the Age of a Volkswagen\"",
+      "url": "https://archive.org/details/walter-henry-small-wonder-the-amazing-story-of-the-volkswagen-beetle-appendix-ho",
+      "says": "1954: \"hp increased from 30 hp (1131 cc) to 36 hp (1192 cc); 5.8:1 to 6.6:1 compression ratio\""
+     },
+     {
+      "name": "Consumer Guide (Auto Editors of Consumer Guide) Beetle history, via HowStuffWorks (archived)",
+      "url": "https://auto.howstuffworks.com/1945-1959-volkswagen-beetle3.htm",
+      "archive": "http://web.archive.org/web/2015/http://auto.howstuffworks.com/1945-1959-volkswagen-beetle3.htm",
+      "says": "1954: \"displacement from 1131 to 1192 cc, and compression from 5.8 to 6.6:1, upping horsepower from 30 to 36\" (CG also calls the 1947 1131-cc engine 25 hp)"
+     },
+     {
+      "name": "Hagerty Valuation Tools (archived Wayback copy)",
+      "url": "https://www.hagerty.com/apps/valuationtools/1950-Volkswagen-Beetle",
+      "archive": "http://web.archive.org/web/2024/https://www.hagerty.com/apps/valuationtools/1950-Volkswagen-Beetle",
+      "says": "Engine Types: 4-cyl. 1131cc/25hp 1bbl"
+     },
+     {
+      "name": "Standard Catalog of Volkswagen 1946-2004 (John Gunnell, Krause Publications), Internet Archive full-text search snippets",
+      "url": "https://archive.org/details/standardcatalogo0000gunn_h1o8",
+      "says": "price guide: \"1950 DeLuxe, 4-cyl., 25 hp, 94.5 in. wb\""
+     }
+    ],
+    "independent_sources": 5,
+    "status": "three_sources_not_nhra",
+    "note": "US SAE rating 30 hp; DIN 25 PS (Hagerty and Krause list 25, the DIN figure). Before 1955 VW had no model year: a 1953 car is one built in calendar 1953 (Nelson). The 1192 cc engine began in December 1953 production and is counted from 1954. Hydraulic brakes (export) 1950; synchromesh 2nd-4th 1952. US imports began 1949."
+   }
+  ],
+  "1951": [
+   {
+    "gen": "1949-1953",
+    "cid": 69,
+    "cc": 1131,
+    "liters": 1.1,
+    "hp": 30,
+    "hp_basis": "SAE gross",
+    "hp_din": 25,
+    "compression": "5.8:1",
+    "rpo": "1100 (1131 cc)",
+    "name": "1131 cc OHV air-cooled flat-four, single Solex carburetor",
+    "common_name": "VW 1100 (25 PS DIN / 30 hp SAE)",
+    "trims": [
+     "Sedan (Standard / Export-DeLuxe)",
+     "Convertible (Karmann)"
+    ],
+    "induction": "carbureted",
+    "nhra": false,
+    "sources": [
+     {
+      "name": "Volkswagen factory literature (VW of America owner's manuals, US brochures, VW workshop manuals, Volkswagenwerk report to NHTSA)",
+      "url": "https://archive.org/details/1952-57-volkswagen-passenger-cars-workshop-manual",
+      "says": "1952-57 VW workshop manual: Performance 25 BHP at 3300 rpm (1131 cc); VWoA 1961-65 workshop manual: \"25 and 30 bhp (30 and 36 SAE bhp)\" engines"
+     },
+     {
+      "name": "Walter Henry Nelson, Small Wonder (Bentley Publishers ed.), Appendix \"How to Tell the Age of a Volkswagen\"",
+      "url": "https://archive.org/details/walter-henry-small-wonder-the-amazing-story-of-the-volkswagen-beetle-appendix-ho",
+      "says": "1954: \"hp increased from 30 hp (1131 cc) to 36 hp (1192 cc); 5.8:1 to 6.6:1 compression ratio\""
+     },
+     {
+      "name": "Consumer Guide (Auto Editors of Consumer Guide) Beetle history, via HowStuffWorks (archived)",
+      "url": "https://auto.howstuffworks.com/1945-1959-volkswagen-beetle3.htm",
+      "archive": "http://web.archive.org/web/2015/http://auto.howstuffworks.com/1945-1959-volkswagen-beetle3.htm",
+      "says": "1954: \"displacement from 1131 to 1192 cc, and compression from 5.8 to 6.6:1, upping horsepower from 30 to 36\" (CG also calls the 1947 1131-cc engine 25 hp)"
+     }
+    ],
+    "independent_sources": 3,
+    "status": "three_sources_not_nhra",
+    "note": "US SAE rating 30 hp; DIN 25 PS (Hagerty and Krause list 25, the DIN figure). Before 1955 VW had no model year: a 1953 car is one built in calendar 1953 (Nelson). The 1192 cc engine began in December 1953 production and is counted from 1954. Hydraulic brakes (export) 1950; synchromesh 2nd-4th 1952. US imports began 1949."
+   }
+  ],
+  "1952": [
+   {
+    "gen": "1949-1953",
+    "cid": 69,
+    "cc": 1131,
+    "liters": 1.1,
+    "hp": 30,
+    "hp_basis": "SAE gross",
+    "hp_din": 25,
+    "compression": "5.8:1",
+    "rpo": "1100 (1131 cc)",
+    "name": "1131 cc OHV air-cooled flat-four, single Solex carburetor",
+    "common_name": "VW 1100 (25 PS DIN / 30 hp SAE)",
+    "trims": [
+     "Sedan (Standard / Export-DeLuxe)",
+     "Convertible (Karmann)"
+    ],
+    "induction": "carbureted",
+    "nhra": false,
+    "sources": [
+     {
+      "name": "Volkswagen factory literature (VW of America owner's manuals, US brochures, VW workshop manuals, Volkswagenwerk report to NHTSA)",
+      "url": "https://archive.org/details/1952-57-volkswagen-passenger-cars-workshop-manual",
+      "says": "1952-57 VW workshop manual: Performance 25 BHP at 3300 rpm (1131 cc); VWoA 1961-65 workshop manual: \"25 and 30 bhp (30 and 36 SAE bhp)\" engines"
+     },
+     {
+      "name": "Walter Henry Nelson, Small Wonder (Bentley Publishers ed.), Appendix \"How to Tell the Age of a Volkswagen\"",
+      "url": "https://archive.org/details/walter-henry-small-wonder-the-amazing-story-of-the-volkswagen-beetle-appendix-ho",
+      "says": "1954: \"hp increased from 30 hp (1131 cc) to 36 hp (1192 cc); 5.8:1 to 6.6:1 compression ratio\""
+     },
+     {
+      "name": "Consumer Guide (Auto Editors of Consumer Guide) Beetle history, via HowStuffWorks (archived)",
+      "url": "https://auto.howstuffworks.com/1945-1959-volkswagen-beetle3.htm",
+      "archive": "http://web.archive.org/web/2015/http://auto.howstuffworks.com/1945-1959-volkswagen-beetle3.htm",
+      "says": "1954: \"displacement from 1131 to 1192 cc, and compression from 5.8 to 6.6:1, upping horsepower from 30 to 36\" (CG also calls the 1947 1131-cc engine 25 hp)"
+     }
+    ],
+    "independent_sources": 3,
+    "status": "three_sources_not_nhra",
+    "note": "US SAE rating 30 hp; DIN 25 PS (Hagerty and Krause list 25, the DIN figure). Before 1955 VW had no model year: a 1953 car is one built in calendar 1953 (Nelson). The 1192 cc engine began in December 1953 production and is counted from 1954. Hydraulic brakes (export) 1950; synchromesh 2nd-4th 1952. US imports began 1949."
+   }
+  ],
+  "1953": [
+   {
+    "gen": "1949-1953",
+    "cid": 69,
+    "cc": 1131,
+    "liters": 1.1,
+    "hp": 30,
+    "hp_basis": "SAE gross",
+    "hp_din": 25,
+    "compression": "5.8:1",
+    "rpo": "1100 (1131 cc)",
+    "name": "1131 cc OHV air-cooled flat-four, single Solex carburetor",
+    "common_name": "VW 1100 (25 PS DIN / 30 hp SAE)",
+    "trims": [
+     "Sedan (Standard / Export-DeLuxe)",
+     "Convertible (Karmann)"
+    ],
+    "induction": "carbureted",
+    "nhra": false,
+    "sources": [
+     {
+      "name": "Volkswagen factory literature (VW of America owner's manuals, US brochures, VW workshop manuals, Volkswagenwerk report to NHTSA)",
+      "url": "https://archive.org/details/1952-57-volkswagen-passenger-cars-workshop-manual",
+      "says": "1952-57 VW workshop manual: Performance 25 BHP at 3300 rpm (1131 cc); VWoA 1961-65 workshop manual: \"25 and 30 bhp (30 and 36 SAE bhp)\" engines"
+     },
+     {
+      "name": "Walter Henry Nelson, Small Wonder (Bentley Publishers ed.), Appendix \"How to Tell the Age of a Volkswagen\"",
+      "url": "https://archive.org/details/walter-henry-small-wonder-the-amazing-story-of-the-volkswagen-beetle-appendix-ho",
+      "says": "1954: \"hp increased from 30 hp (1131 cc) to 36 hp (1192 cc); 5.8:1 to 6.6:1 compression ratio\""
+     },
+     {
+      "name": "Consumer Guide (Auto Editors of Consumer Guide) Beetle history, via HowStuffWorks (archived)",
+      "url": "https://auto.howstuffworks.com/1945-1959-volkswagen-beetle3.htm",
+      "archive": "http://web.archive.org/web/2015/http://auto.howstuffworks.com/1945-1959-volkswagen-beetle3.htm",
+      "says": "1954: \"displacement from 1131 to 1192 cc, and compression from 5.8 to 6.6:1, upping horsepower from 30 to 36\" (CG also calls the 1947 1131-cc engine 25 hp)"
+     },
+     {
+      "name": "Hagerty Valuation Tools (archived Wayback copy)",
+      "url": "https://www.hagerty.com/apps/valuationtools/1953-Volkswagen-Beetle",
+      "archive": "http://web.archive.org/web/2024/https://www.hagerty.com/apps/valuationtools/1953-Volkswagen-Beetle",
+      "says": "Engine Types: 4-cyl. 1131cc/25hp 1bbl (also 1192cc/30hp, the Dec-1953 1200)"
+     }
+    ],
+    "independent_sources": 4,
+    "status": "three_sources_not_nhra",
+    "note": "US SAE rating 30 hp; DIN 25 PS (Hagerty and Krause list 25, the DIN figure). Before 1955 VW had no model year: a 1953 car is one built in calendar 1953 (Nelson). The 1192 cc engine began in December 1953 production and is counted from 1954. Hydraulic brakes (export) 1950; synchromesh 2nd-4th 1952. US imports began 1949."
+   }
+  ],
+  "1954": [
+   {
+    "gen": "1954-1960",
+    "cid": 73,
+    "cc": 1192,
+    "liters": 1.2,
+    "hp": 36,
+    "hp_basis": "SAE gross",
+    "hp_din": 30,
+    "compression": "6.6:1",
+    "rpo": "1200 (1192 cc)",
+    "name": "1192 cc OHV air-cooled flat-four, single Solex 28 PCI carburetor, 6.6:1",
+    "common_name": "36 hp 1200",
+    "trims": [
+     "Sedan (Standard / Export-DeLuxe)",
+     "Convertible (Karmann)"
+    ],
+    "induction": "carbureted",
+    "nhra": false,
+    "sources": [
+     {
+      "name": "Volkswagen factory literature (VW of America owner's manuals, US brochures, VW workshop manuals, Volkswagenwerk report to NHTSA)",
+      "url": "https://archive.org/details/1952-57-volkswagen-passenger-cars-workshop-manual",
+      "says": "1952-57 VW workshop manual: Performance (SAE rating) 36 BHP at 3700 rpm (= 30 BHP at 3400 rpm DIN)"
+     },
+     {
+      "name": "Standard Catalog of Volkswagen 1946-2004 (John Gunnell, Krause Publications), Internet Archive full-text search snippets",
+      "url": "https://archive.org/details/standardcatalogo0000gunn_h1o8",
+      "says": "spec: 77 x 64 mm, 6.6:1, Brake Horsepower: 36 at 3700 rpm; price guide \"1954 DeLuxe, 4-cyl., 36 hp\""
+     },
+     {
+      "name": "Walter Henry Nelson, Small Wonder (Bentley Publishers ed.), Appendix \"How to Tell the Age of a Volkswagen\"",
+      "url": "https://archive.org/details/walter-henry-small-wonder-the-amazing-story-of-the-volkswagen-beetle-appendix-ho",
+      "says": "1954: 30 hp (1131 cc) to 36 hp (1192 cc); 1961: \"Increased horsepower; from 36 to 40 hp\""
+     },
+     {
+      "name": "Consumer Guide (Auto Editors of Consumer Guide) Beetle history, via HowStuffWorks (archived)",
+      "url": "https://auto.howstuffworks.com/1945-1959-volkswagen-beetle3.htm",
+      "archive": "http://web.archive.org/web/2015/http://auto.howstuffworks.com/1945-1959-volkswagen-beetle3.htm",
+      "says": "1954: 1131 to 1192 cc, horsepower from 30 to 36"
+     },
+     {
+      "name": "Wikipedia - Volkswagen Beetle",
+      "url": "https://en.wikipedia.org/wiki/Volkswagen_Beetle",
+      "says": "1954: Type 122 engine, 77 mm bore, 1192 cc, 30 PS (5 PS more than predecessor)"
+     }
+    ],
+    "independent_sources": 5,
+    "status": "three_sources_not_nhra",
+    "note": "US SAE 36 hp; DIN 30 PS (Hagerty lists both, and 30 hp alone for 1954)."
+   }
+  ],
+  "1955": [
+   {
+    "gen": "1954-1960",
+    "cid": 73,
+    "cc": 1192,
+    "liters": 1.2,
+    "hp": 36,
+    "hp_basis": "SAE gross",
+    "hp_din": 30,
+    "compression": "6.6:1",
+    "rpo": "1200 (1192 cc)",
+    "name": "1192 cc OHV air-cooled flat-four, single Solex 28 PCI carburetor, 6.6:1",
+    "common_name": "36 hp 1200",
+    "trims": [
+     "Sedan (Standard / Export-DeLuxe)",
+     "Convertible (Karmann)"
+    ],
+    "induction": "carbureted",
+    "nhra": false,
+    "sources": [
+     {
+      "name": "Volkswagen factory literature (VW of America owner's manuals, US brochures, VW workshop manuals, Volkswagenwerk report to NHTSA)",
+      "url": "https://archive.org/details/1952-57-volkswagen-passenger-cars-workshop-manual",
+      "says": "1952-57 VW workshop manual: Performance (SAE rating) 36 BHP at 3700 rpm (= 30 BHP at 3400 rpm DIN)"
+     },
+     {
+      "name": "Standard Catalog of Volkswagen 1946-2004 (John Gunnell, Krause Publications), Internet Archive full-text search snippets",
+      "url": "https://archive.org/details/standardcatalogo0000gunn_h1o8",
+      "says": "spec: 77 x 64 mm, 6.6:1, Brake Horsepower: 36 at 3700 rpm; price guide \"1955 DeLuxe, 4-cyl., 36 hp\""
+     },
+     {
+      "name": "Walter Henry Nelson, Small Wonder (Bentley Publishers ed.), Appendix \"How to Tell the Age of a Volkswagen\"",
+      "url": "https://archive.org/details/walter-henry-small-wonder-the-amazing-story-of-the-volkswagen-beetle-appendix-ho",
+      "says": "1954: 30 hp (1131 cc) to 36 hp (1192 cc); 1961: \"Increased horsepower; from 36 to 40 hp\""
+     },
+     {
+      "name": "Consumer Guide (Auto Editors of Consumer Guide) Beetle history, via HowStuffWorks (archived)",
+      "url": "https://auto.howstuffworks.com/1945-1959-volkswagen-beetle3.htm",
+      "archive": "http://web.archive.org/web/2015/http://auto.howstuffworks.com/1945-1959-volkswagen-beetle3.htm",
+      "says": "1954: 1131 to 1192 cc, horsepower from 30 to 36"
+     }
+    ],
+    "independent_sources": 4,
+    "status": "three_sources_not_nhra",
+    "note": "US SAE 36 hp; DIN 30 PS (Hagerty lists both, and 30 hp alone for 1954)."
+   }
+  ],
+  "1956": [
+   {
+    "gen": "1954-1960",
+    "cid": 73,
+    "cc": 1192,
+    "liters": 1.2,
+    "hp": 36,
+    "hp_basis": "SAE gross",
+    "hp_din": 30,
+    "compression": "6.6:1",
+    "rpo": "1200 (1192 cc)",
+    "name": "1192 cc OHV air-cooled flat-four, single Solex 28 PCI carburetor, 6.6:1",
+    "common_name": "36 hp 1200",
+    "trims": [
+     "Sedan (Standard / Export-DeLuxe)",
+     "Convertible (Karmann)"
+    ],
+    "induction": "carbureted",
+    "nhra": false,
+    "sources": [
+     {
+      "name": "Volkswagen factory literature (VW of America owner's manuals, US brochures, VW workshop manuals, Volkswagenwerk report to NHTSA)",
+      "url": "https://archive.org/details/1952-57-volkswagen-passenger-cars-workshop-manual",
+      "says": "1952-57 VW workshop manual: Performance (SAE rating) 36 BHP at 3700 rpm (= 30 BHP at 3400 rpm DIN)"
+     },
+     {
+      "name": "Standard Catalog of Volkswagen 1946-2004 (John Gunnell, Krause Publications), Internet Archive full-text search snippets",
+      "url": "https://archive.org/details/standardcatalogo0000gunn_h1o8",
+      "says": "spec: 77 x 64 mm, 6.6:1, Brake Horsepower: 36 at 3700 rpm"
+     },
+     {
+      "name": "Walter Henry Nelson, Small Wonder (Bentley Publishers ed.), Appendix \"How to Tell the Age of a Volkswagen\"",
+      "url": "https://archive.org/details/walter-henry-small-wonder-the-amazing-story-of-the-volkswagen-beetle-appendix-ho",
+      "says": "1954: 30 hp (1131 cc) to 36 hp (1192 cc); 1961: \"Increased horsepower; from 36 to 40 hp\""
+     },
+     {
+      "name": "Consumer Guide (Auto Editors of Consumer Guide) Beetle history, via HowStuffWorks (archived)",
+      "url": "https://auto.howstuffworks.com/1945-1959-volkswagen-beetle3.htm",
+      "archive": "http://web.archive.org/web/2015/http://auto.howstuffworks.com/1945-1959-volkswagen-beetle3.htm",
+      "says": "1954: 1131 to 1192 cc, horsepower from 30 to 36"
+     }
+    ],
+    "independent_sources": 4,
+    "status": "three_sources_not_nhra",
+    "note": "US SAE 36 hp; DIN 30 PS (Hagerty lists both, and 30 hp alone for 1954)."
+   }
+  ],
+  "1957": [
+   {
+    "gen": "1954-1960",
+    "cid": 73,
+    "cc": 1192,
+    "liters": 1.2,
+    "hp": 36,
+    "hp_basis": "SAE gross",
+    "hp_din": 30,
+    "compression": "6.6:1",
+    "rpo": "1200 (1192 cc)",
+    "name": "1192 cc OHV air-cooled flat-four, single Solex 28 PCI carburetor, 6.6:1",
+    "common_name": "36 hp 1200",
+    "trims": [
+     "Sedan (Standard / Export-DeLuxe)",
+     "Convertible (Karmann)"
+    ],
+    "induction": "carbureted",
+    "nhra": false,
+    "sources": [
+     {
+      "name": "Volkswagen factory literature (VW of America owner's manuals, US brochures, VW workshop manuals, Volkswagenwerk report to NHTSA)",
+      "url": "https://archive.org/details/1952-57-volkswagen-passenger-cars-workshop-manual",
+      "says": "1952-57 VW workshop manual: Performance (SAE rating) 36 BHP at 3700 rpm (= 30 BHP at 3400 rpm DIN)"
+     },
+     {
+      "name": "Standard Catalog of Volkswagen 1946-2004 (John Gunnell, Krause Publications), Internet Archive full-text search snippets",
+      "url": "https://archive.org/details/standardcatalogo0000gunn_h1o8",
+      "says": "spec: 77 x 64 mm, 6.6:1, Brake Horsepower: 36 at 3700 rpm"
+     },
+     {
+      "name": "Walter Henry Nelson, Small Wonder (Bentley Publishers ed.), Appendix \"How to Tell the Age of a Volkswagen\"",
+      "url": "https://archive.org/details/walter-henry-small-wonder-the-amazing-story-of-the-volkswagen-beetle-appendix-ho",
+      "says": "1954: 30 hp (1131 cc) to 36 hp (1192 cc); 1961: \"Increased horsepower; from 36 to 40 hp\""
+     },
+     {
+      "name": "Consumer Guide (Auto Editors of Consumer Guide) Beetle history, via HowStuffWorks (archived)",
+      "url": "https://auto.howstuffworks.com/1945-1959-volkswagen-beetle3.htm",
+      "archive": "http://web.archive.org/web/2015/http://auto.howstuffworks.com/1945-1959-volkswagen-beetle3.htm",
+      "says": "1954: 1131 to 1192 cc, horsepower from 30 to 36"
+     },
+     {
+      "name": "Hagerty Valuation Tools (archived Wayback copy)",
+      "url": "https://www.hagerty.com/apps/valuationtools/1957-Volkswagen-Beetle",
+      "archive": "http://web.archive.org/web/2024/https://www.hagerty.com/apps/valuationtools/1957-Volkswagen-Beetle",
+      "says": "Engine Types: 1192cc/36hp 1bbl, 1192cc/30hp 1bbl"
+     }
+    ],
+    "independent_sources": 5,
+    "status": "three_sources_not_nhra",
+    "note": "US SAE 36 hp; DIN 30 PS (Hagerty lists both, and 30 hp alone for 1954)."
+   }
+  ],
+  "1958": [
+   {
+    "gen": "1954-1960",
+    "cid": 73,
+    "cc": 1192,
+    "liters": 1.2,
+    "hp": 36,
+    "hp_basis": "SAE gross",
+    "hp_din": 30,
+    "compression": "6.6:1",
+    "rpo": "1200 (1192 cc)",
+    "name": "1192 cc OHV air-cooled flat-four, single Solex 28 PCI carburetor, 6.6:1",
+    "common_name": "36 hp 1200",
+    "trims": [
+     "Sedan (Standard / Export-DeLuxe)",
+     "Convertible (Karmann)"
+    ],
+    "induction": "carbureted",
+    "nhra": false,
+    "sources": [
+     {
+      "name": "Volkswagen factory literature (VW of America owner's manuals, US brochures, VW workshop manuals, Volkswagenwerk report to NHTSA)",
+      "url": "https://archive.org/details/1952-57-volkswagen-passenger-cars-workshop-manual",
+      "says": "1952-57 VW workshop manual: Performance (SAE rating) 36 BHP at 3700 rpm (= 30 BHP at 3400 rpm DIN)"
+     },
+     {
+      "name": "Standard Catalog of Volkswagen 1946-2004 (John Gunnell, Krause Publications), Internet Archive full-text search snippets",
+      "url": "https://archive.org/details/standardcatalogo0000gunn_h1o8",
+      "says": "spec: 77 x 64 mm, 6.6:1, Brake Horsepower: 36 at 3700 rpm"
+     },
+     {
+      "name": "Walter Henry Nelson, Small Wonder (Bentley Publishers ed.), Appendix \"How to Tell the Age of a Volkswagen\"",
+      "url": "https://archive.org/details/walter-henry-small-wonder-the-amazing-story-of-the-volkswagen-beetle-appendix-ho",
+      "says": "1954: 30 hp (1131 cc) to 36 hp (1192 cc); 1961: \"Increased horsepower; from 36 to 40 hp\""
+     },
+     {
+      "name": "Consumer Guide (Auto Editors of Consumer Guide) Beetle history, via HowStuffWorks (archived)",
+      "url": "https://auto.howstuffworks.com/1945-1959-volkswagen-beetle3.htm",
+      "archive": "http://web.archive.org/web/2015/http://auto.howstuffworks.com/1945-1959-volkswagen-beetle3.htm",
+      "says": "1954: 1131 to 1192 cc, horsepower from 30 to 36"
+     }
+    ],
+    "independent_sources": 4,
+    "status": "three_sources_not_nhra",
+    "note": "US SAE 36 hp; DIN 30 PS (Hagerty lists both, and 30 hp alone for 1954)."
+   }
+  ],
+  "1959": [
+   {
+    "gen": "1954-1960",
+    "cid": 73,
+    "cc": 1192,
+    "liters": 1.2,
+    "hp": 36,
+    "hp_basis": "SAE gross",
+    "hp_din": 30,
+    "compression": "6.6:1",
+    "rpo": "1200 (1192 cc)",
+    "name": "1192 cc OHV air-cooled flat-four, single Solex 28 PCI carburetor, 6.6:1",
+    "common_name": "36 hp 1200",
+    "trims": [
+     "Sedan (Standard / Export-DeLuxe)",
+     "Convertible (Karmann)"
+    ],
+    "induction": "carbureted",
+    "nhra": false,
+    "sources": [
+     {
+      "name": "Volkswagen factory literature (VW of America owner's manuals, US brochures, VW workshop manuals, Volkswagenwerk report to NHTSA)",
+      "url": "https://archive.org/details/1952-57-volkswagen-passenger-cars-workshop-manual",
+      "says": "1952-57 VW workshop manual: Performance (SAE rating) 36 BHP at 3700 rpm (= 30 BHP at 3400 rpm DIN)"
+     },
+     {
+      "name": "Standard Catalog of Volkswagen 1946-2004 (John Gunnell, Krause Publications), Internet Archive full-text search snippets",
+      "url": "https://archive.org/details/standardcatalogo0000gunn_h1o8",
+      "says": "spec: 77 x 64 mm, 6.6:1, Brake Horsepower: 36 at 3700 rpm"
+     },
+     {
+      "name": "Walter Henry Nelson, Small Wonder (Bentley Publishers ed.), Appendix \"How to Tell the Age of a Volkswagen\"",
+      "url": "https://archive.org/details/walter-henry-small-wonder-the-amazing-story-of-the-volkswagen-beetle-appendix-ho",
+      "says": "1954: 30 hp (1131 cc) to 36 hp (1192 cc); 1961: \"Increased horsepower; from 36 to 40 hp\""
+     },
+     {
+      "name": "Consumer Guide (Auto Editors of Consumer Guide) Beetle history, via HowStuffWorks (archived)",
+      "url": "https://auto.howstuffworks.com/1945-1959-volkswagen-beetle3.htm",
+      "archive": "http://web.archive.org/web/2015/http://auto.howstuffworks.com/1945-1959-volkswagen-beetle3.htm",
+      "says": "1954: 1131 to 1192 cc, horsepower from 30 to 36"
+     }
+    ],
+    "independent_sources": 4,
+    "status": "three_sources_not_nhra",
+    "note": "US SAE 36 hp; DIN 30 PS (Hagerty lists both, and 30 hp alone for 1954)."
+   }
+  ],
+  "1960": [
+   {
+    "gen": "1954-1960",
+    "cid": 73,
+    "cc": 1192,
+    "liters": 1.2,
+    "hp": 36,
+    "hp_basis": "SAE gross",
+    "hp_din": 30,
+    "compression": "6.6:1",
+    "rpo": "1200 (1192 cc)",
+    "name": "1192 cc OHV air-cooled flat-four, single Solex 28 PCI carburetor, 6.6:1",
+    "common_name": "36 hp 1200",
+    "trims": [
+     "Sedan (Standard / Export-DeLuxe)",
+     "Convertible (Karmann)"
+    ],
+    "induction": "carbureted",
+    "nhra": false,
+    "sources": [
+     {
+      "name": "Volkswagen factory literature (VW of America owner's manuals, US brochures, VW workshop manuals, Volkswagenwerk report to NHTSA)",
+      "url": "https://archive.org/details/1952-57-volkswagen-passenger-cars-workshop-manual",
+      "says": "1952-57 VW workshop manual: Performance (SAE rating) 36 BHP at 3700 rpm (= 30 BHP at 3400 rpm DIN)"
+     },
+     {
+      "name": "Standard Catalog of Volkswagen 1946-2004 (John Gunnell, Krause Publications), Internet Archive full-text search snippets",
+      "url": "https://archive.org/details/standardcatalogo0000gunn_h1o8",
+      "says": "spec: 77 x 64 mm, 6.6:1, Brake Horsepower: 36 at 3700 rpm"
+     },
+     {
+      "name": "Walter Henry Nelson, Small Wonder (Bentley Publishers ed.), Appendix \"How to Tell the Age of a Volkswagen\"",
+      "url": "https://archive.org/details/walter-henry-small-wonder-the-amazing-story-of-the-volkswagen-beetle-appendix-ho",
+      "says": "1954: 30 hp (1131 cc) to 36 hp (1192 cc); 1961: \"Increased horsepower; from 36 to 40 hp\""
+     },
+     {
+      "name": "Consumer Guide (Auto Editors of Consumer Guide) Beetle history, via HowStuffWorks (archived)",
+      "url": "https://auto.howstuffworks.com/1945-1959-volkswagen-beetle3.htm",
+      "archive": "http://web.archive.org/web/2015/http://auto.howstuffworks.com/1945-1959-volkswagen-beetle3.htm",
+      "says": "1954: 1131 to 1192 cc, horsepower from 30 to 36"
+     },
+     {
+      "name": "Hagerty Valuation Tools (archived Wayback copy)",
+      "url": "https://www.hagerty.com/valuation-tools/volkswagen/beetle/1960",
+      "archive": "http://web.archive.org/web/2024/https://www.hagerty.com/valuation-tools/volkswagen/beetle/1960",
+      "says": "1192cc/36hp 1bbl, 1192cc/34hp 1bbl"
+     }
+    ],
+    "independent_sources": 5,
+    "status": "three_sources_not_nhra",
+    "note": "US SAE 36 hp; DIN 30 PS (Hagerty lists both, and 30 hp alone for 1954)."
+   }
+  ],
+  "1961": [
+   {
+    "gen": "1961-1965",
+    "cid": 73,
+    "cc": 1192,
+    "liters": 1.2,
+    "hp": 40,
+    "hp_basis": "SAE gross",
+    "hp_din": 34,
+    "compression": "7.0:1",
+    "rpo": "1200 (1192 cc)",
+    "name": "1192 cc OHV air-cooled flat-four, Solex 28 PICT with automatic choke, 7.0:1",
+    "common_name": "40 hp 1200",
+    "trims": [
+     "Sedan",
+     "Sunroof Sedan",
+     "Convertible"
+    ],
+    "induction": "carbureted",
+    "nhra": false,
+    "sources": [
+     {
+      "name": "Standard Catalog of Volkswagen 1946-2004 (John Gunnell, Krause Publications), Internet Archive full-text search snippets",
+      "url": "https://archive.org/details/standardcatalogo0000gunn_h1o8",
+      "says": "spec: 77 x 64 mm, 7.0:1, Brake Horsepower: 40 at 3900 rpm; price guide \"1961 Beetle, 4-cyl., 40 hp\""
+     },
+     {
+      "name": "Walter Henry Nelson, Small Wonder (Bentley Publishers ed.), Appendix \"How to Tell the Age of a Volkswagen\"",
+      "url": "https://archive.org/details/walter-henry-small-wonder-the-amazing-story-of-the-volkswagen-beetle-appendix-ho",
+      "says": "1961: \"Increased horsepower; from 36 to 40 hp\"; 1966: \"Horsepower increased from 40 to 50\""
+     },
+     {
+      "name": "Hagerty Valuation Tools (archived Wayback copy)",
+      "url": "https://www.hagerty.com/apps/valuationtools/1961-Volkswagen-Beetle",
+      "archive": "http://web.archive.org/web/2024/https://www.hagerty.com/apps/valuationtools/1961-Volkswagen-Beetle",
+      "says": "Engine Types: 1192cc/40hp 1bbl (34hp DIN and 30hp also listed)"
+     },
+     {
+      "name": "Autobook: Volkswagen Beetle 1954-67 (Autopress, UK), Internet Archive",
+      "url": "https://archive.org/details/volkswagen-beetle-1954-67-autobook",
+      "says": "1961: \"compression ratio is increased to 7:1, which pushes the power output up to 34 bhp\" (DIN)"
+     }
+    ],
+    "independent_sources": 4,
+    "status": "three_sources_not_nhra",
+    "note": "US SAE 40 hp; DIN 34 PS. 1961: all-synchromesh 4-speed, automatic choke. No 1961 factory document reached; Krause, Nelson and Hagerty agree."
+   }
+  ],
+  "1962": [
+   {
+    "gen": "1961-1965",
+    "cid": 73,
+    "cc": 1192,
+    "liters": 1.2,
+    "hp": 40,
+    "hp_basis": "SAE gross",
+    "hp_din": 34,
+    "compression": "7.0:1",
+    "rpo": "1200 (1192 cc)",
+    "name": "1192 cc OHV air-cooled flat-four, Solex 28 PICT with automatic choke, 7.0:1",
+    "common_name": "40 hp 1200",
+    "trims": [
+     "Sedan",
+     "Sunroof Sedan",
+     "Convertible"
+    ],
+    "induction": "carbureted",
+    "nhra": false,
+    "sources": [
+     {
+      "name": "Volkswagen factory literature (VW of America owner's manuals, US brochures, VW workshop manuals, Volkswagenwerk report to NHTSA)",
+      "url": "https://archive.org/details/1962-volkswagen-beetle-owners-manual-english",
+      "says": "1962 VW owner's manual (English, US): 1192 cc, 7.0:1, Brake Horsepower (SAE) 40 at 3900 rpm"
+     },
+     {
+      "name": "Standard Catalog of Volkswagen 1946-2004 (John Gunnell, Krause Publications), Internet Archive full-text search snippets",
+      "url": "https://archive.org/details/standardcatalogo0000gunn_h1o8",
+      "says": "spec: 77 x 64 mm, 7.0:1, Brake Horsepower: 40 at 3900 rpm; price guide \"1962 Beetle, 4-cyl., 40 hp\""
+     },
+     {
+      "name": "Walter Henry Nelson, Small Wonder (Bentley Publishers ed.), Appendix \"How to Tell the Age of a Volkswagen\"",
+      "url": "https://archive.org/details/walter-henry-small-wonder-the-amazing-story-of-the-volkswagen-beetle-appendix-ho",
+      "says": "1961: \"Increased horsepower; from 36 to 40 hp\"; 1966: \"Horsepower increased from 40 to 50\""
+     }
+    ],
+    "independent_sources": 3,
+    "status": "three_sources_not_nhra",
+    "note": "US SAE 40 hp; DIN 34 PS. 1961: all-synchromesh 4-speed, automatic choke."
+   }
+  ],
+  "1963": [
+   {
+    "gen": "1961-1965",
+    "cid": 73,
+    "cc": 1192,
+    "liters": 1.2,
+    "hp": 40,
+    "hp_basis": "SAE gross",
+    "hp_din": 34,
+    "compression": "7.0:1",
+    "rpo": "1200 (1192 cc)",
+    "name": "1192 cc OHV air-cooled flat-four, Solex 28 PICT with automatic choke, 7.0:1",
+    "common_name": "40 hp 1200",
+    "trims": [
+     "Sedan",
+     "Sunroof Sedan",
+     "Convertible"
+    ],
+    "induction": "carbureted",
+    "nhra": false,
+    "sources": [
+     {
+      "name": "Volkswagen factory literature (VW of America owner's manuals, US brochures, VW workshop manuals, Volkswagenwerk report to NHTSA)",
+      "url": "https://archive.org/details/1963-volkswagen-beetle-owners-manual-english_202507",
+      "says": "1963 VW owner's manual (English, US): 1192 cc, 7.0:1, Brake Horsepower (SAE) 40 at 3900 rpm"
+     },
+     {
+      "name": "Standard Catalog of Volkswagen 1946-2004 (John Gunnell, Krause Publications), Internet Archive full-text search snippets",
+      "url": "https://archive.org/details/standardcatalogo0000gunn_h1o8",
+      "says": "spec: 77 x 64 mm, 7.0:1, Brake Horsepower: 40 at 3900 rpm"
+     },
+     {
+      "name": "Walter Henry Nelson, Small Wonder (Bentley Publishers ed.), Appendix \"How to Tell the Age of a Volkswagen\"",
+      "url": "https://archive.org/details/walter-henry-small-wonder-the-amazing-story-of-the-volkswagen-beetle-appendix-ho",
+      "says": "1961: \"Increased horsepower; from 36 to 40 hp\"; 1966: \"Horsepower increased from 40 to 50\""
+     }
+    ],
+    "independent_sources": 3,
+    "status": "three_sources_not_nhra",
+    "note": "US SAE 40 hp; DIN 34 PS. 1961: all-synchromesh 4-speed, automatic choke."
+   }
+  ],
+  "1964": [
+   {
+    "gen": "1961-1965",
+    "cid": 73,
+    "cc": 1192,
+    "liters": 1.2,
+    "hp": 40,
+    "hp_basis": "SAE gross",
+    "hp_din": 34,
+    "compression": "7.0:1",
+    "rpo": "1200 (1192 cc)",
+    "name": "1192 cc OHV air-cooled flat-four, Solex 28 PICT with automatic choke, 7.0:1",
+    "common_name": "40 hp 1200",
+    "trims": [
+     "Sedan",
+     "Sunroof Sedan",
+     "Convertible"
+    ],
+    "induction": "carbureted",
+    "nhra": false,
+    "sources": [
+     {
+      "name": "Volkswagen factory literature (VW of America owner's manuals, US brochures, VW workshop manuals, Volkswagenwerk report to NHTSA)",
+      "url": "https://archive.org/details/1964-volkswagen-beetle-owners-manual-english",
+      "says": "1964 VW owner's manual (English, US): 1192 cc, 7.0:1, Brake Horsepower (SAE) 40 at 3900 rpm"
+     },
+     {
+      "name": "Standard Catalog of Volkswagen 1946-2004 (John Gunnell, Krause Publications), Internet Archive full-text search snippets",
+      "url": "https://archive.org/details/standardcatalogo0000gunn_h1o8",
+      "says": "spec: 77 x 64 mm, 7.0:1, Brake Horsepower: 40 at 3900 rpm"
+     },
+     {
+      "name": "Walter Henry Nelson, Small Wonder (Bentley Publishers ed.), Appendix \"How to Tell the Age of a Volkswagen\"",
+      "url": "https://archive.org/details/walter-henry-small-wonder-the-amazing-story-of-the-volkswagen-beetle-appendix-ho",
+      "says": "1961: \"Increased horsepower; from 36 to 40 hp\"; 1966: \"Horsepower increased from 40 to 50\""
+     },
+     {
+      "name": "Hagerty Valuation Tools (archived Wayback copy)",
+      "url": "https://www.hagerty.com/apps/valuationtools/1964-Volkswagen-Beetle",
+      "archive": "http://web.archive.org/web/2024/https://www.hagerty.com/apps/valuationtools/1964-Volkswagen-Beetle",
+      "says": "Engine Types: 1192cc/40hp 1bbl (34hp DIN and 30hp also listed)"
+     }
+    ],
+    "independent_sources": 4,
+    "status": "three_sources_not_nhra",
+    "note": "US SAE 40 hp; DIN 34 PS. 1961: all-synchromesh 4-speed, automatic choke."
+   }
+  ],
+  "1965": [
+   {
+    "gen": "1961-1965",
+    "cid": 73,
+    "cc": 1192,
+    "liters": 1.2,
+    "hp": 40,
+    "hp_basis": "SAE gross",
+    "hp_din": 34,
+    "compression": "7.0:1",
+    "rpo": "1200 (1192 cc)",
+    "name": "1192 cc OHV air-cooled flat-four, Solex 28 PICT with automatic choke, 7.0:1",
+    "common_name": "40 hp 1200",
+    "trims": [
+     "Sedan",
+     "Sunroof Sedan",
+     "Convertible"
+    ],
+    "induction": "carbureted",
+    "nhra": false,
+    "sources": [
+     {
+      "name": "Volkswagen factory literature (VW of America owner's manuals, US brochures, VW workshop manuals, Volkswagenwerk report to NHTSA)",
+      "url": "https://archive.org/details/1965-volkswagen-beetle-owners-manual-english",
+      "says": "1965 VW owner's manual (English, US pints): Maximum output (SAE) 41.5 at 3900 rpm; 1966 Canadian brochure: 1200 Custom \"SAE output 41.5 bhp at 3900 rpm\""
+     },
+     {
+      "name": "Standard Catalog of Volkswagen 1946-2004 (John Gunnell, Krause Publications), Internet Archive full-text search snippets",
+      "url": "https://archive.org/details/standardcatalogo0000gunn_h1o8",
+      "says": "spec: 77 x 64 mm, 7.0:1, Brake Horsepower: 40 at 3900 rpm; price guide \"1965 Beetle, 4-cyl., 40 hp\""
+     },
+     {
+      "name": "Walter Henry Nelson, Small Wonder (Bentley Publishers ed.), Appendix \"How to Tell the Age of a Volkswagen\"",
+      "url": "https://archive.org/details/walter-henry-small-wonder-the-amazing-story-of-the-volkswagen-beetle-appendix-ho",
+      "says": "1961: \"Increased horsepower; from 36 to 40 hp\"; 1966: \"Horsepower increased from 40 to 50\""
+     }
+    ],
+    "independent_sources": 3,
+    "status": "disputed",
+    "note": "The 1965 VW owner's manual gives 41.5 SAE hp at 3900 rpm (the 1962-64 manuals say 40) for the unchanged 34 PS engine; Krause and Nelson keep 40 hp through 1965. Recorded 40 until a 1965 US brochure settles it."
+   }
+  ],
+  "1966": [
+   {
+    "gen": "1966-1979",
+    "cid": 78,
+    "cc": 1285,
+    "liters": 1.3,
+    "hp": 50,
+    "hp_basis": "SAE gross",
+    "hp_din": 40,
+    "compression": "7.3:1",
+    "rpo": "1300 (1285 cc)",
+    "name": "1285 cc OHV air-cooled flat-four (77 x 69 mm), 7.3:1",
+    "common_name": "VW 1300",
+    "trims": [
+     "1300 Sedan",
+     "Sunroof Sedan",
+     "Convertible"
+    ],
+    "induction": "carbureted",
+    "nhra": false,
+    "sources": [
+     {
+      "name": "Volkswagen factory literature (VW of America owner's manuals, US brochures, VW workshop manuals, Volkswagenwerk report to NHTSA)",
+      "url": "https://archive.org/details/1966-volkswagen-beetle-owners-manual-english",
+      "says": "1966 VW owner's manual: 1285 cc, 7.3:1, 50 at 4600 rpm; 1966 Canadian brochure: \"SAE output 50 b.h.p. at 4600 r.p.m.\""
+     },
+     {
+      "name": "Standard Catalog of Volkswagen 1946-2004 (John Gunnell, Krause Publications), Internet Archive full-text search snippets",
+      "url": "https://archive.org/details/standardcatalogo0000gunn_h1o8",
+      "says": "\"A boost from 40 to 50 hp was Volkswagen's major change for 1966\"; spec 77 x 69 mm, 7.3:1, 50 at 4600 rpm; price guide \"1966 Beetle, 50 hp\""
+     },
+     {
+      "name": "Consumer Guide (Auto Editors of Consumer Guide) Beetle history, via HowStuffWorks (archived)",
+      "url": "https://auto.howstuffworks.com/1960-1969-volkswagen-beetle2.htm",
+      "archive": "http://web.archive.org/web/2015/http://auto.howstuffworks.com/1960-1969-volkswagen-beetle2.htm",
+      "says": "1966: \"from 1200 cc and 40 horsepower to 1285 cc and 50\""
+     },
+     {
+      "name": "Walter Henry Nelson, Small Wonder (Bentley Publishers ed.), Appendix \"How to Tell the Age of a Volkswagen\"",
+      "url": "https://archive.org/details/walter-henry-small-wonder-the-amazing-story-of-the-volkswagen-beetle-appendix-ho",
+      "says": "1966: \"Horsepower increased from 40 to 50 and displacement from 1200 cc to 1300 cc\""
+     },
+     {
+      "name": "Autobook: Volkswagen Beetle 1954-67 (Autopress, UK), Internet Archive",
+      "url": "https://archive.org/details/volkswagen-beetle-1954-67-autobook",
+      "says": "1300: 1285 cc, 7.3:1, 50 bhp at 4600 rev/min"
+     },
+     {
+      "name": "Wikipedia - Volkswagen Beetle",
+      "url": "https://en.wikipedia.org/wiki/Volkswagen_Beetle",
+      "says": "August 1965: the 1300, 1285 cc, 40 PS (DIN), Type 3 crankshaft, 69 mm stroke"
+     }
+    ],
+    "independent_sources": 6,
+    "status": "three_sources_not_nhra",
+    "note": "US 1966 Beetles had the 1300 only. DIN 40 PS."
+   }
+  ],
+  "1967": [
+   {
+    "gen": "1966-1979",
+    "cid": 91,
+    "cc": 1493,
+    "liters": 1.5,
+    "hp": 53,
+    "hp_basis": "SAE gross",
+    "hp_din": 44,
+    "compression": "7.5:1",
+    "rpo": "1500 (1493 cc)",
+    "name": "1493 cc OHV air-cooled flat-four (83 x 69 mm)",
+    "common_name": "VW 1500",
+    "trims": [
+     "Sedan",
+     "Sunroof Sedan",
+     "Convertible"
+    ],
+    "induction": "carbureted",
+    "nhra": false,
+    "sources": [
+     {
+      "name": "Volkswagen factory literature (VW of America owner's manuals, US brochures, VW workshop manuals, Volkswagenwerk report to NHTSA)",
+      "url": "https://archive.org/details/1967-volkswagen-beetle-owners-manual-english",
+      "says": "1967 VW owner's manual: 1493 cc, Maximum output DIN 44 bhp at 4000 rpm, SAE 53 bhp; 1968 US brochure: \"New in 1967: a stronger, 53-horsepower, 1493-cc. engine\""
+     },
+     {
+      "name": "Standard Catalog of Volkswagen 1946-2004 (John Gunnell, Krause Publications), Internet Archive full-text search snippets",
+      "url": "https://archive.org/details/standardcatalogo0000gunn_h1o8",
+      "says": "spec 83 x 69 mm, 7.5:1, Brake Horsepower: 53 at 4200 rpm; price guide \"1967 Beetle, 53 hp\""
+     },
+     {
+      "name": "Walter Henry Nelson, Small Wonder (Bentley Publishers ed.), Appendix \"How to Tell the Age of a Volkswagen\"",
+      "url": "https://archive.org/details/walter-henry-small-wonder-the-amazing-story-of-the-volkswagen-beetle-appendix-ho",
+      "says": "1967: \"Horsepower increased from 50 to 53 and displacement from 1300 cc to 1500 cc\"; 1970: \"from 53 to 57\""
+     },
+     {
+      "name": "Consumer Guide (Auto Editors of Consumer Guide) Beetle history, via HowStuffWorks (archived)",
+      "url": "https://auto.howstuffworks.com/1960-1969-volkswagen-beetle3.htm",
+      "archive": "http://web.archive.org/web/2015/http://auto.howstuffworks.com/1960-1969-volkswagen-beetle3.htm",
+      "says": "1967: \"engine was upsized to 1493-cc (as on Type 3) and 53 horsepower (1200 and 1300 engines continue outside U.S.)\""
+     },
+     {
+      "name": "Hagerty Valuation Tools (archived Wayback copy)",
+      "url": "https://www.hagerty.com/apps/valuationtools/1967-Volkswagen-Beetle",
+      "archive": "http://web.archive.org/web/2024/https://www.hagerty.com/apps/valuationtools/1967-Volkswagen-Beetle",
+      "says": "Engine Types: 1493cc/53hp 1bbl (1285cc/50hp and 1192cc/34hp also listed, non-US)"
+     },
+     {
+      "name": "Autobook: Volkswagen Beetle 1954-67 (Autopress, UK), Internet Archive",
+      "url": "https://archive.org/details/volkswagen-beetle-1954-67-autobook",
+      "says": "1500: 1493 cc, 7.5:1, 53 bhp at 4200 rev/min"
+     }
+    ],
+    "independent_sources": 6,
+    "status": "three_sources_not_nhra",
+    "note": "DIN 44 PS. Wikipedia dates the 1500 Beetle to September 1967 (the European 1968 model year); US 1967 cars already had it (VW 1968 US brochure, CG, Nelson)."
+   }
+  ],
+  "1968": [
+   {
+    "gen": "1966-1979",
+    "cid": 91,
+    "cc": 1493,
+    "liters": 1.5,
+    "hp": 53,
+    "hp_basis": "SAE gross",
+    "hp_din": 44,
+    "compression": "7.5:1",
+    "rpo": "1500 (1493 cc)",
+    "name": "1493 cc OHV air-cooled flat-four (83 x 69 mm)",
+    "common_name": "VW 1500",
+    "trims": [
+     "Sedan",
+     "Sunroof Sedan",
+     "Convertible"
+    ],
+    "induction": "carbureted",
+    "nhra": false,
+    "sources": [
+     {
+      "name": "Volkswagen factory literature (VW of America owner's manuals, US brochures, VW workshop manuals, Volkswagenwerk report to NHTSA)",
+      "url": "https://archive.org/details/vw-beetle-1968-usa",
+      "says": "1968 US brochure: 91.10 cu in (1493 cc), 7.5:1, \"Maximum S.A.E. brake horsepower: 53 at 4200 rpm\"; 1968 owner's manual DIN 44 / SAE 53"
+     },
+     {
+      "name": "Standard Catalog of Volkswagen 1946-2004 (John Gunnell, Krause Publications), Internet Archive full-text search snippets",
+      "url": "https://archive.org/details/standardcatalogo0000gunn_h1o8",
+      "says": "spec 83 x 69 mm, 7.5:1, Brake Horsepower: 53 at 4200 rpm; price guide \"1968 Beetle, 53 hp\""
+     },
+     {
+      "name": "Walter Henry Nelson, Small Wonder (Bentley Publishers ed.), Appendix \"How to Tell the Age of a Volkswagen\"",
+      "url": "https://archive.org/details/walter-henry-small-wonder-the-amazing-story-of-the-volkswagen-beetle-appendix-ho",
+      "says": "1967: \"Horsepower increased from 50 to 53 and displacement from 1300 cc to 1500 cc\"; 1970: \"from 53 to 57\""
+     },
+     {
+      "name": "Hagerty Valuation Tools (archived Wayback copy)",
+      "url": "https://www.hagerty.com/valuation-tools/volkswagen/beetle/1968",
+      "archive": "http://web.archive.org/web/2024/https://www.hagerty.com/valuation-tools/volkswagen/beetle/1968",
+      "says": "Engine Types: 1493cc/53hp 1bbl"
+     }
+    ],
+    "independent_sources": 4,
+    "status": "three_sources_not_nhra",
+    "note": "DIN 44 PS. Automatic Stick Shift (semi-automatic) optional from 1968; first US exhaust-emission controls 1968 (CG, Nelson)."
+   }
+  ],
+  "1969": [
+   {
+    "gen": "1966-1979",
+    "cid": 91,
+    "cc": 1493,
+    "liters": 1.5,
+    "hp": 53,
+    "hp_basis": "SAE gross",
+    "hp_din": 44,
+    "compression": "7.5:1",
+    "rpo": "1500 (1493 cc)",
+    "name": "1493 cc OHV air-cooled flat-four (83 x 69 mm)",
+    "common_name": "VW 1500",
+    "trims": [
+     "Sedan",
+     "Sunroof Sedan",
+     "Convertible"
+    ],
+    "induction": "carbureted",
+    "nhra": false,
+    "sources": [
+     {
+      "name": "Volkswagen factory literature (VW of America owner's manuals, US brochures, VW workshop manuals, Volkswagenwerk report to NHTSA)",
+      "url": "https://archive.org/details/1969-volkswagen-beetle-owners-manual-usa-english",
+      "says": "1969 VW owner's manual (USA): Maximum output SAE 53 bhp at 4200 rpm"
+     },
+     {
+      "name": "Standard Catalog of Volkswagen 1946-2004 (John Gunnell, Krause Publications), Internet Archive full-text search snippets",
+      "url": "https://archive.org/details/standardcatalogo0000gunn_h1o8",
+      "says": "spec 83 x 69 mm, 7.5:1, Brake Horsepower: 53 at 4200 rpm; price guide \"1969 Beetle, 53 hp\""
+     },
+     {
+      "name": "Walter Henry Nelson, Small Wonder (Bentley Publishers ed.), Appendix \"How to Tell the Age of a Volkswagen\"",
+      "url": "https://archive.org/details/walter-henry-small-wonder-the-amazing-story-of-the-volkswagen-beetle-appendix-ho",
+      "says": "1967: \"Horsepower increased from 50 to 53 and displacement from 1300 cc to 1500 cc\"; 1970: \"from 53 to 57\""
+     },
+     {
+      "name": "Hagerty Valuation Tools (archived Wayback copy)",
+      "url": "https://www.hagerty.com/valuation-tools/volkswagen/beetle/1969",
+      "archive": "http://web.archive.org/web/2024/https://www.hagerty.com/valuation-tools/volkswagen/beetle/1969",
+      "says": "Engine Types: 1493cc/53hp 1bbl"
+     }
+    ],
+    "independent_sources": 4,
+    "status": "three_sources_not_nhra",
+    "note": "DIN 44 PS."
+   }
+  ],
+  "1970": [
+   {
+    "gen": "1966-1979",
+    "cid": 97,
+    "cc": 1584,
+    "liters": 1.6,
+    "hp": 57,
+    "hp_basis": "SAE gross",
+    "compression": "7.5:1",
+    "rpo": "1600 (1584 cc)",
+    "name": "1584 cc OHV air-cooled flat-four (85.5 x 69 mm), single-port heads",
+    "common_name": "VW 1600 single-port",
+    "trims": [
+     "Sedan",
+     "Sunroof Sedan",
+     "Convertible"
+    ],
+    "induction": "carbureted",
+    "nhra": false,
+    "sources": [
+     {
+      "name": "Volkswagen factory literature (VW of America owner's manuals, US brochures, VW workshop manuals, Volkswagenwerk report to NHTSA)",
+      "url": "https://archive.org/details/1970-volkswagen-beetle-owners-manual-english",
+      "says": "1970 VW owner's manual: 96.6 cu in (1584 cc), 7.5:1, Maximum output SAE 57 bhp at 4400 rpm"
+     },
+     {
+      "name": "Standard Catalog of Volkswagen 1946-2004 (John Gunnell, Krause Publications), Internet Archive full-text search snippets",
+      "url": "https://archive.org/details/standardcatalogo0000gunn_h1o8",
+      "says": "spec 85 x 69 mm, 7.5:1, Brake Horsepower: 57 at 4400 rpm"
+     },
+     {
+      "name": "Consumer Guide (Auto Editors of Consumer Guide) Beetle history, via HowStuffWorks (archived)",
+      "url": "https://auto.howstuffworks.com/1970-1997-volkswagen-beetle1.htm",
+      "archive": "http://web.archive.org/web/2015/http://auto.howstuffworks.com/1970-1997-volkswagen-beetle1.htm",
+      "says": "1970: \"engine increased to 1600 cc (as on Type 3), and horsepower increased to 57\""
+     },
+     {
+      "name": "Walter Henry Nelson, Small Wonder (Bentley Publishers ed.), Appendix \"How to Tell the Age of a Volkswagen\"",
+      "url": "https://archive.org/details/walter-henry-small-wonder-the-amazing-story-of-the-volkswagen-beetle-appendix-ho",
+      "says": "1970: \"Increased horsepower (from 53 to 57) and displacement (from 1500 cc to 1600 cc)\""
+     },
+     {
+      "name": "Hagerty Valuation Tools (archived Wayback copy)",
+      "url": "https://www.hagerty.com/apps/valuationtools/1970-Volkswagen-Beetle",
+      "archive": "http://web.archive.org/web/2024/https://www.hagerty.com/apps/valuationtools/1970-Volkswagen-Beetle",
+      "says": "Engine Types: 1585cc/57hp 1bbl (smaller engines listed are non-US)"
+     }
+    ],
+    "independent_sources": 5,
+    "status": "three_sources_not_nhra",
+    "note": "Conflict: the Krause price-guide line says \"1970 Beetle, 60 hp\"; its spec block and all other sources give 57. Hagerty writes 1585 cc; VW gives 1584 cc."
+   }
+  ],
+  "1971": [
+   {
+    "gen": "1966-1979",
+    "cid": 97,
+    "cc": 1584,
+    "liters": 1.6,
+    "hp": 60,
+    "hp_basis": "SAE gross",
+    "hp_din": 50,
+    "compression": "7.5:1",
+    "rpo": "1600 (1584 cc)",
+    "name": "1584 cc OHV air-cooled flat-four (85.5 x 69 mm), dual-port heads, single carburetor",
+    "common_name": "VW 1600 dual-port",
+    "trims": [
+     "Beetle Sedan",
+     "Super Beetle Sedan",
+     "Convertible (Super Beetle-based)"
+    ],
+    "induction": "carbureted",
+    "nhra": false,
+    "sources": [
+     {
+      "name": "Volkswagen factory literature (VW of America owner's manuals, US brochures, VW workshop manuals, Volkswagenwerk report to NHTSA)",
+      "url": "https://archive.org/details/1971-volkswagen-beetle-owners-manual-english",
+      "says": "1971 VW owner's manual: 96.6 cu in (1584 cc), 7.5:1, 60 bhp at 4400 rpm"
+     },
+     {
+      "name": "Standard Catalog of Volkswagen 1946-2004 (John Gunnell, Krause Publications), Internet Archive full-text search snippets",
+      "url": "https://archive.org/details/standardcatalogo0000gunn_h1o8",
+      "says": "\"the car had 89 improvements, including a boost to 60 hp\"; spec 85 x 69 mm, 7.5:1, 60 at 4400; price guide \"1971 Beetle, 60 hp\""
+     },
+     {
+      "name": "Consumer Guide (Auto Editors of Consumer Guide) Beetle history, via HowStuffWorks (archived)",
+      "url": "https://auto.howstuffworks.com/1970-1997-volkswagen-beetle1.htm",
+      "archive": "http://web.archive.org/web/2015/http://auto.howstuffworks.com/1970-1997-volkswagen-beetle1.htm",
+      "says": "\"The 1971 Volkswagen Beetle's horsepower was bumped to 60\"; Super Beetle (1302S in Europe) introduced"
+     },
+     {
+      "name": "Walter Henry Nelson, Small Wonder (Bentley Publishers ed.), Appendix \"How to Tell the Age of a Volkswagen\"",
+      "url": "https://archive.org/details/walter-henry-small-wonder-the-amazing-story-of-the-volkswagen-beetle-appendix-ho",
+      "says": "1971: \"Increased horsepower, from 57 to 60\""
+     },
+     {
+      "name": "Hagerty Valuation Tools (archived Wayback copy)",
+      "url": "https://www.hagerty.com/apps/valuationtools/1971-Volkswagen-Beetle",
+      "archive": "http://web.archive.org/web/2024/https://www.hagerty.com/apps/valuationtools/1971-Volkswagen-Beetle",
+      "says": "Engine Types: 1585cc/60hp 1bbl"
+     },
+     {
+      "name": "Wikipedia - Volkswagen Beetle",
+      "url": "https://en.wikipedia.org/wiki/Volkswagen_Beetle",
+      "says": "1302S: 1584 cc, 50 PS (DIN) via twin-port cylinder head"
+     }
+    ],
+    "independent_sources": 6,
+    "status": "three_sources_not_nhra",
+    "note": "Dual-port heads from 1971. DIN 50 PS. Super Beetle (MacPherson-strut front) new for 1971."
+   }
+  ],
+  "1972": [
+   {
+    "gen": "1966-1979",
+    "cid": 97,
+    "cc": 1584,
+    "liters": 1.6,
+    "hp": 60,
+    "hp_basis": "SAE gross",
+    "hp_din": 50,
+    "compression": "7.3:1",
+    "rpo": "1600 (1584 cc)",
+    "name": "1584 cc OHV air-cooled flat-four (85.5 x 69 mm), dual-port heads, single carburetor",
+    "common_name": "VW 1600 dual-port",
+    "trims": [
+     "Beetle Sedan",
+     "Super Beetle Sedan",
+     "Convertible (Super Beetle-based)"
+    ],
+    "induction": "carbureted",
+    "nhra": false,
+    "sources": [
+     {
+      "name": "Standard Catalog of Volkswagen 1946-2004 (John Gunnell, Krause Publications), Internet Archive full-text search snippets",
+      "url": "https://archive.org/details/standardcatalogo0000gunn_h1o8",
+      "says": "spec 85 x 69 mm, 7.3:1, Brake Horsepower: 60 at 4400 rpm (1972 block); price guide \"1972 Beetle, 60 hp ... 2d Sup Sed\""
+     },
+     {
+      "name": "Hagerty Valuation Tools (archived Wayback copy)",
+      "url": "https://www.hagerty.com/valuation-tools/volkswagen/beetle/1972",
+      "archive": "http://web.archive.org/web/2024/https://www.hagerty.com/valuation-tools/volkswagen/beetle/1972",
+      "says": "1585cc/60hp 1bbl"
+     },
+     {
+      "name": "Consumer Guide - 5 Slowest Cars of 1972 (blog.consumerguide.com)",
+      "url": "https://blog.consumerguide.com/5-slowest-cars-of-1972/",
+      "says": "1972 Super Beetle: \"50-horsepower 97-cubic-inch four\" (basis not stated; 50 is the DIN figure)",
+      "conflict_only": true
+     }
+    ],
+    "independent_sources": 2,
+    "status": "two_sources_agree",
+    "note": "No 1972 US factory rating found: the two archived 1972 US owner's manuals have no technical-data page and the 1972 US full-line brochure gives no horsepower. Krause and Hagerty agree on 60 hp (gross); compression drops to 7.3:1 (Krause). The Consumer Guide blog gives 50 hp, the DIN rating. Nelson lists no power change for 1972."
+   }
+  ],
+  "1973": [
+   {
+    "gen": "1966-1979",
+    "cid": 97,
+    "cc": 1584,
+    "liters": 1.6,
+    "hp": 46,
+    "hp_basis": "SAE net",
+    "compression": "7.3:1",
+    "rpo": "1600 (1584 cc)",
+    "name": "1584 cc OHV air-cooled flat-four (85.5 x 69 mm), dual-port heads, single carburetor",
+    "common_name": "VW 1600 dual-port",
+    "trims": [
+     "Beetle Sedan",
+     "Super Beetle Sedan (curved windshield from 1973)",
+     "Convertible (Super Beetle-based)",
+     "US special editions (Sports Bug, Sun Bug, La Grande Bug)"
+    ],
+    "induction": "carbureted",
+    "nhra": false,
+    "sources": [
+     {
+      "name": "Consumer Guide (Auto Editors of Consumer Guide) Beetle history, via HowStuffWorks (archived)",
+      "url": "https://auto.howstuffworks.com/1970-1997-volkswagen-beetle2.htm",
+      "archive": "http://web.archive.org/web/2015/http://auto.howstuffworks.com/1970-1997-volkswagen-beetle2.htm",
+      "says": "1973: \"Emission controls weakened U.S. models to 46 horsepower (SAE net) and 72 pound-feet of torque\""
+     },
+     {
+      "name": "Standard Catalog of Volkswagen 1946-2004 (John Gunnell, Krause Publications), Internet Archive full-text search snippets",
+      "url": "https://archive.org/details/standardcatalogo0000gunn_h1o8",
+      "says": "\"In 1973, the Volkswagen Beetle produced 46 hp from its base 96.7-cid engine\"; spec 85 x 69 mm, 7.3:1, Brake Horsepower: 46 (SAE net) at 4000 rpm (two year entries); price guide \"1973 Beetle, 46 hp\""
+     },
+     {
+      "name": "Hagerty Valuation Tools (archived Wayback copy)",
+      "url": "https://www.hagerty.com/apps/valuationtools/1973-Volkswagen-Beetle",
+      "archive": "http://web.archive.org/web/2024/https://www.hagerty.com/apps/valuationtools/1973-Volkswagen-Beetle",
+      "says": "1585cc/46hp 1bbl"
+     },
+     {
+      "name": "Walter Henry Nelson, Small Wonder (Bentley Publishers ed.), Appendix \"How to Tell the Age of a Volkswagen\"",
+      "url": "https://archive.org/details/walter-henry-small-wonder-the-amazing-story-of-the-volkswagen-beetle-appendix-ho",
+      "says": "1975: \"Increased horsepower; 48 hp, up from 46 (SAE net)\""
+     }
+    ],
+    "independent_sources": 4,
+    "status": "three_sources_not_nhra",
+    "note": "First SAE net year. The Autopian (2023) lists 60 hp through 1974, but VW's 1975 wording (via Nelson and The Autopian) is \"up from 46\", so 46 net stands. No source confirmed a separate 1972-74 California rating."
+   }
+  ],
+  "1974": [
+   {
+    "gen": "1966-1979",
+    "cid": 97,
+    "cc": 1584,
+    "liters": 1.6,
+    "hp": 46,
+    "hp_basis": "SAE net",
+    "compression": "7.3:1",
+    "rpo": "1600 (1584 cc)",
+    "name": "1584 cc OHV air-cooled flat-four (85.5 x 69 mm), dual-port heads, single carburetor",
+    "common_name": "VW 1600 dual-port",
+    "trims": [
+     "Beetle Sedan",
+     "Super Beetle Sedan (curved windshield from 1973)",
+     "Convertible (Super Beetle-based)",
+     "US special editions (Sports Bug, Sun Bug, La Grande Bug)"
+    ],
+    "induction": "carbureted",
+    "nhra": false,
+    "sources": [
+     {
+      "name": "Consumer Guide (Auto Editors of Consumer Guide) Beetle history, via HowStuffWorks (archived)",
+      "url": "https://auto.howstuffworks.com/1970-1997-volkswagen-beetle2.htm",
+      "archive": "http://web.archive.org/web/2015/http://auto.howstuffworks.com/1970-1997-volkswagen-beetle2.htm",
+      "says": "1973: \"Emission controls weakened U.S. models to 46 horsepower (SAE net) and 72 pound-feet of torque\""
+     },
+     {
+      "name": "Standard Catalog of Volkswagen 1946-2004 (John Gunnell, Krause Publications), Internet Archive full-text search snippets",
+      "url": "https://archive.org/details/standardcatalogo0000gunn_h1o8",
+      "says": "\"In 1973, the Volkswagen Beetle produced 46 hp from its base 96.7-cid engine\"; spec 85 x 69 mm, 7.3:1, Brake Horsepower: 46 (SAE net) at 4000 rpm (two year entries)"
+     },
+     {
+      "name": "Hagerty Valuation Tools (archived Wayback copy)",
+      "url": "https://www.hagerty.com/valuation-tools/volkswagen/beetle/1974",
+      "archive": "http://web.archive.org/web/2024/https://www.hagerty.com/valuation-tools/volkswagen/beetle/1974",
+      "says": "1585cc/46hp 1bbl"
+     },
+     {
+      "name": "Walter Henry Nelson, Small Wonder (Bentley Publishers ed.), Appendix \"How to Tell the Age of a Volkswagen\"",
+      "url": "https://archive.org/details/walter-henry-small-wonder-the-amazing-story-of-the-volkswagen-beetle-appendix-ho",
+      "says": "1975: \"Increased horsepower; 48 hp, up from 46 (SAE net)\""
+     }
+    ],
+    "independent_sources": 4,
+    "status": "three_sources_not_nhra",
+    "note": "First SAE net year. The Autopian (2023) lists 60 hp through 1974, but VW's 1975 wording (via Nelson and The Autopian) is \"up from 46\", so 46 net stands. No source confirmed a separate 1972-74 California rating. 1974: energy-absorbing bumpers."
+   }
+  ],
+  "1975": [
+   {
+    "gen": "1966-1979",
+    "cid": 97,
+    "cc": 1584,
+    "liters": 1.6,
+    "hp": 48,
+    "hp_basis": "SAE net",
+    "compression": "7.3:1",
+    "rpo": "AJ",
+    "name": "1584 cc OHV air-cooled flat-four, dual-port, Bosch electronic fuel injection",
+    "common_name": "VW 1600 fuel injection",
+    "trims": [
+     "Beetle Sedan",
+     "Super Beetle Sedan (La Grande Bug)",
+     "Convertible"
+    ],
+    "induction": "fuel injection",
+    "nhra": false,
+    "sources": [
+     {
+      "name": "Volkswagen factory literature (VW of America owner's manuals, US brochures, VW workshop manuals, Volkswagenwerk report to NHTSA)",
+      "url": "https://archive.org/details/passengercarspar00oett_0",
+      "says": "Volkswagenwerk report to NHTSA (DOT-HS-805 456, 1979): Beetle Convertible (Type 15), Engine Code AJ, 97 cu in, 7.3:1, Advertised HP 48 SAE net, Bosch EFI, EGR, oxidation catalyst (California test car)"
+     },
+     {
+      "name": "Standard Catalog of Volkswagen 1946-2004 (John Gunnell, Krause Publications), Internet Archive full-text search snippets",
+      "url": "https://archive.org/details/standardcatalogo0000gunn_h1o8",
+      "says": "\"Electronic fuel injection became standard in Beetles for 1975\"; spec 85 x 69 mm, 7.3:1, Brake Horsepower: 48 at 4200 rpm (five year entries)"
+     },
+     {
+      "name": "Walter Henry Nelson, Small Wonder (Bentley Publishers ed.), Appendix \"How to Tell the Age of a Volkswagen\"",
+      "url": "https://archive.org/details/walter-henry-small-wonder-the-amazing-story-of-the-volkswagen-beetle-appendix-ho",
+      "says": "1975: \"Electronic fuel injection ... Increased horsepower; 48 hp, up from 46 (SAE net)\"; \"California models with catalytic converter require lead-free gasoline\""
+     },
+     {
+      "name": "Hagerty Valuation Tools (archived Wayback copy)",
+      "url": "https://www.hagerty.com/valuation-tools/volkswagen/beetle/1975",
+      "archive": "http://web.archive.org/web/2024/https://www.hagerty.com/valuation-tools/volkswagen/beetle/1975",
+      "says": "1585cc/48hp EFI"
+     },
+     {
+      "name": "Consumer Guide (Auto Editors of Consumer Guide) Beetle history, via HowStuffWorks (archived)",
+      "url": "https://auto.howstuffworks.com/1970-1997-volkswagen-beetle2.htm",
+      "archive": "http://web.archive.org/web/2015/http://auto.howstuffworks.com/1970-1997-volkswagen-beetle2.htm",
+      "says": "1975: \"Volkswagen added fuel injection to the venerable flat four ... California models needed a catalytic converter\""
+     }
+    ],
+    "independent_sources": 5,
+    "status": "three_sources_not_nhra",
+    "note": "Fuel injection standard in all US Beetles from 1975; California cars add an oxidation catalytic converter and need unleaded fuel (CG, Nelson, VW). Engine code AJ is stated only by VW (the Volkswagenwerk/NHTSA report). Super Beetle sedan dropped after 1975."
+   }
+  ],
+  "1976": [
+   {
+    "gen": "1966-1979",
+    "cid": 97,
+    "cc": 1584,
+    "liters": 1.6,
+    "hp": 48,
+    "hp_basis": "SAE net",
+    "compression": "7.3:1",
+    "rpo": "AJ",
+    "name": "1584 cc OHV air-cooled flat-four, dual-port, Bosch electronic fuel injection",
+    "common_name": "VW 1600 fuel injection",
+    "trims": [
+     "Beetle Sedan",
+     "Convertible"
+    ],
+    "induction": "fuel injection",
+    "nhra": false,
+    "sources": [
+     {
+      "name": "Volkswagen factory literature (VW of America owner's manuals, US brochures, VW workshop manuals, Volkswagenwerk report to NHTSA)",
+      "url": "https://archive.org/details/1976-beetle-us",
+      "says": "1976 US Beetle brochure: 1584 cc (96.7 cu in), \"Horsepower - SAE Net 48 @ 4200 rpm\""
+     },
+     {
+      "name": "Standard Catalog of Volkswagen 1946-2004 (John Gunnell, Krause Publications), Internet Archive full-text search snippets",
+      "url": "https://archive.org/details/standardcatalogo0000gunn_h1o8",
+      "says": "\"Electronic fuel injection became standard in Beetles for 1975\"; spec 85 x 69 mm, 7.3:1, Brake Horsepower: 48 at 4200 rpm (five year entries)"
+     },
+     {
+      "name": "Walter Henry Nelson, Small Wonder (Bentley Publishers ed.), Appendix \"How to Tell the Age of a Volkswagen\"",
+      "url": "https://archive.org/details/walter-henry-small-wonder-the-amazing-story-of-the-volkswagen-beetle-appendix-ho",
+      "says": "1975: \"Electronic fuel injection ... Increased horsepower; 48 hp, up from 46 (SAE net)\"; \"California models with catalytic converter require lead-free gasoline\""
+     },
+     {
+      "name": "Hagerty Valuation Tools (archived Wayback copy)",
+      "url": "https://www.hagerty.com/valuation-tools/volkswagen/beetle/1976",
+      "archive": "http://web.archive.org/web/2024/https://www.hagerty.com/valuation-tools/volkswagen/beetle/1976",
+      "says": "1585cc/48hp EFI"
+     }
+    ],
+    "independent_sources": 4,
+    "status": "three_sources_not_nhra",
+    "note": "California cars: catalytic converter, same 48 hp rating. Engine code AJ per the Volkswagenwerk/NHTSA report."
+   }
+  ],
+  "1977": [
+   {
+    "gen": "1966-1979",
+    "cid": 97,
+    "cc": 1584,
+    "liters": 1.6,
+    "hp": 48,
+    "hp_basis": "SAE net",
+    "compression": "7.3:1",
+    "rpo": "AJ",
+    "name": "1584 cc OHV air-cooled flat-four, dual-port, Bosch electronic fuel injection",
+    "common_name": "VW 1600 fuel injection",
+    "trims": [
+     "Beetle Sedan",
+     "Convertible"
+    ],
+    "induction": "fuel injection",
+    "nhra": false,
+    "sources": [
+     {
+      "name": "Volkswagen factory literature (VW of America owner's manuals, US brochures, VW workshop manuals, Volkswagenwerk report to NHTSA)",
+      "url": "https://archive.org/details/1977-beetle-owners-manual_20250717",
+      "says": "1977 VW owner's manual: 96.6 cu in (1584 cc), 7.3:1, Maximum output SAE net 48 hp at 4200 rpm"
+     },
+     {
+      "name": "Standard Catalog of Volkswagen 1946-2004 (John Gunnell, Krause Publications), Internet Archive full-text search snippets",
+      "url": "https://archive.org/details/standardcatalogo0000gunn_h1o8",
+      "says": "\"Electronic fuel injection became standard in Beetles for 1975\"; spec 85 x 69 mm, 7.3:1, Brake Horsepower: 48 at 4200 rpm (five year entries)"
+     },
+     {
+      "name": "Walter Henry Nelson, Small Wonder (Bentley Publishers ed.), Appendix \"How to Tell the Age of a Volkswagen\"",
+      "url": "https://archive.org/details/walter-henry-small-wonder-the-amazing-story-of-the-volkswagen-beetle-appendix-ho",
+      "says": "1975: \"Electronic fuel injection ... Increased horsepower; 48 hp, up from 46 (SAE net)\"; \"California models with catalytic converter require lead-free gasoline\""
+     },
+     {
+      "name": "Hagerty Valuation Tools (archived Wayback copy)",
+      "url": "https://www.hagerty.com/apps/valuationtools/1977-Volkswagen-Beetle",
+      "archive": "http://web.archive.org/web/2024/https://www.hagerty.com/apps/valuationtools/1977-Volkswagen-Beetle",
+      "says": "1585cc/48hp EFI"
+     }
+    ],
+    "independent_sources": 4,
+    "status": "three_sources_not_nhra",
+    "note": "California cars: catalytic converter, same 48 hp rating. Engine code AJ per the Volkswagenwerk/NHTSA report. US sedan sales ended after 1977; convertible only for 1978-79."
+   }
+  ],
+  "1978": [
+   {
+    "gen": "1966-1979",
+    "cid": 97,
+    "cc": 1584,
+    "liters": 1.6,
+    "hp": 48,
+    "hp_basis": "SAE net",
+    "compression": "7.3:1",
+    "rpo": "AJ",
+    "name": "1584 cc OHV air-cooled flat-four, dual-port, Bosch electronic fuel injection",
+    "common_name": "VW 1600 fuel injection",
+    "trims": [
+     "Convertible (the only Beetle sold in the US)"
+    ],
+    "induction": "fuel injection",
+    "nhra": false,
+    "sources": [
+     {
+      "name": "Volkswagen factory literature (VW of America owner's manuals, US brochures, VW workshop manuals, Volkswagenwerk report to NHTSA)",
+      "url": "https://archive.org/details/1978-vw-bug-owners-manual",
+      "says": "1978 VW owner's manual: 96.6 cu in, Maximum output SAE net 48 hp at 4200 rpm; catalytic converter cars need unleaded fuel"
+     },
+     {
+      "name": "Standard Catalog of Volkswagen 1946-2004 (John Gunnell, Krause Publications), Internet Archive full-text search snippets",
+      "url": "https://archive.org/details/standardcatalogo0000gunn_h1o8",
+      "says": "\"Electronic fuel injection became standard in Beetles for 1975\"; spec 85 x 69 mm, 7.3:1, Brake Horsepower: 48 at 4200 rpm (five year entries)"
+     },
+     {
+      "name": "Walter Henry Nelson, Small Wonder (Bentley Publishers ed.), Appendix \"How to Tell the Age of a Volkswagen\"",
+      "url": "https://archive.org/details/walter-henry-small-wonder-the-amazing-story-of-the-volkswagen-beetle-appendix-ho",
+      "says": "1975: \"Electronic fuel injection ... Increased horsepower; 48 hp, up from 46 (SAE net)\"; \"California models with catalytic converter require lead-free gasoline\"; 1978 Convertible: \"48 hp (SAE Net), at 4,200 rpm\""
+     },
+     {
+      "name": "Hagerty Valuation Tools (archived Wayback copy)",
+      "url": "https://www.hagerty.com/valuation-tools/volkswagen/beetle/1978",
+      "archive": "http://web.archive.org/web/2024/https://www.hagerty.com/valuation-tools/volkswagen/beetle/1978",
+      "says": "1585cc/48hp EFI"
+     }
+    ],
+    "independent_sources": 4,
+    "status": "three_sources_not_nhra",
+    "note": "California cars: catalytic converter, same 48 hp rating. Engine code AJ per the Volkswagenwerk/NHTSA report."
+   }
+  ],
+  "1979": [
+   {
+    "gen": "1966-1979",
+    "cid": 97,
+    "cc": 1584,
+    "liters": 1.6,
+    "hp": 48,
+    "hp_basis": "SAE net",
+    "compression": "7.3:1",
+    "rpo": "AJ",
+    "name": "1584 cc OHV air-cooled flat-four, dual-port, Bosch electronic fuel injection",
+    "common_name": "VW 1600 fuel injection",
+    "trims": [
+     "Convertible (the only Beetle sold in the US)"
+    ],
+    "induction": "fuel injection",
+    "nhra": false,
+    "sources": [
+     {
+      "name": "Volkswagen factory literature (VW of America owner's manuals, US brochures, VW workshop manuals, Volkswagenwerk report to NHTSA)",
+      "url": "https://archive.org/details/1979-bug-conv-owners-manual",
+      "says": "1979 VW Beetle Convertible owner's manual: 96.6 cu in/1584 cm3, Maximum output SAE net 48 hp at 4200 rpm"
+     },
+     {
+      "name": "Standard Catalog of Volkswagen 1946-2004 (John Gunnell, Krause Publications), Internet Archive full-text search snippets",
+      "url": "https://archive.org/details/standardcatalogo0000gunn_h1o8",
+      "says": "\"Electronic fuel injection became standard in Beetles for 1975\"; spec 85 x 69 mm, 7.3:1, Brake Horsepower: 48 at 4200 rpm (five year entries)"
+     },
+     {
+      "name": "Walter Henry Nelson, Small Wonder (Bentley Publishers ed.), Appendix \"How to Tell the Age of a Volkswagen\"",
+      "url": "https://archive.org/details/walter-henry-small-wonder-the-amazing-story-of-the-volkswagen-beetle-appendix-ho",
+      "says": "1975: \"Electronic fuel injection ... Increased horsepower; 48 hp, up from 46 (SAE net)\"; \"California models with catalytic converter require lead-free gasoline\"; 1978 Convertible: \"48 hp (SAE Net), at 4,200 rpm\""
+     },
+     {
+      "name": "Hagerty Valuation Tools (archived Wayback copy)",
+      "url": "https://www.hagerty.com/valuation-tools/volkswagen/beetle/1979",
+      "archive": "http://web.archive.org/web/2024/https://www.hagerty.com/valuation-tools/volkswagen/beetle/1979",
+      "says": "1585cc/48hp EFI"
+     }
+    ],
+    "independent_sources": 4,
+    "status": "three_sources_not_nhra",
+    "note": "California cars: catalytic converter, same 48 hp rating. Engine code AJ per the Volkswagenwerk/NHTSA report."
+   }
+  ]
+ },
+ "source_index": [
+  {
+   "name": "Volkswagen factory literature (VW of America owner's manuals, US brochures, VW workshop manuals, Volkswagenwerk report to NHTSA)",
+   "url": "https://archive.org/details/1952-57-volkswagen-passenger-cars-workshop-manual",
+   "also": [
+    "https://archive.org/details/volkswagen-1200-workshop-manual-1961-1965-types-11-14-15-by-inc.-volkswagen-of-america-z-lib.org",
+    "https://archive.org/details/1962-volkswagen-beetle-owners-manual-english",
+    "https://archive.org/details/1963-volkswagen-beetle-owners-manual-english_202507",
+    "https://archive.org/details/1964-volkswagen-beetle-owners-manual-english",
+    "https://archive.org/details/1965-volkswagen-beetle-owners-manual-english",
+    "https://archive.org/details/1966-volkswagen-beetle-owners-manual-english",
+    "https://archive.org/details/1966-volkswagen-beetle-brochure.-canada-9-1965.-vw-type-1",
+    "https://archive.org/details/1967-volkswagen-beetle-owners-manual-english",
+    "https://archive.org/details/1968-volkswagen-beetle-owners-manual-english",
+    "https://archive.org/details/vw-beetle-1968-usa",
+    "https://archive.org/details/1969-volkswagen-beetle-owners-manual-usa-english",
+    "https://archive.org/details/1970-volkswagen-beetle-owners-manual-english",
+    "https://archive.org/details/1971-volkswagen-beetle-owners-manual-english",
+    "https://archive.org/details/1972-beetle-owners-manual",
+    "https://archive.org/details/1972-vw-family-fullline-us",
+    "https://archive.org/details/1976-beetle-us",
+    "https://archive.org/details/1977-beetle-owners-manual_20250717",
+    "https://archive.org/details/1978-vw-bug-owners-manual",
+    "https://archive.org/details/1979-bug-conv-owners-manual",
+    "https://archive.org/details/passengercarspar00oett_0"
+   ],
+   "type": "manufacturer"
+  },
+  {
+   "name": "Standard Catalog of Volkswagen 1946-2004 (Gunnell, Krause)",
+   "url": "https://archive.org/details/standardcatalogo0000gunn_h1o8",
+   "type": "publication"
+  },
+  {
+   "name": "Consumer Guide Beetle history (HowStuffWorks, archived)",
+   "url": "https://auto.howstuffworks.com/1945-1959-volkswagen-beetle.htm",
+   "archive": "http://web.archive.org/web/2015/http://auto.howstuffworks.com/1945-1959-volkswagen-beetle.htm",
+   "type": "publication"
+  },
+  {
+   "name": "Walter Henry Nelson, Small Wonder, appendix \"How to Tell the Age of a Volkswagen\" (Bentley Publishers)",
+   "url": "https://archive.org/details/walter-henry-small-wonder-the-amazing-story-of-the-volkswagen-beetle-appendix-ho",
+   "type": "publication"
+  },
+  {
+   "name": "Hagerty Valuation Tools (archived)",
+   "url": "https://www.hagerty.com/valuation-tools/volkswagen/beetle",
+   "type": "publication"
+  },
+  {
+   "name": "Autobook: Volkswagen Beetle 1954-67 (Autopress)",
+   "url": "https://archive.org/details/volkswagen-beetle-1954-67-autobook",
+   "type": "publication"
+  },
+  {
+   "name": "Wikipedia - Volkswagen Beetle / Volkswagen air-cooled engine",
+   "url": "https://en.wikipedia.org/wiki/Volkswagen_Beetle",
+   "type": "wikipedia"
+  },
+  {
+   "name": "The Autopian - VW Beetle horsepower mystery (conflict reference only)",
+   "url": "https://www.theautopian.com/its-time-to-address-a-vw-beetle-horsepower-mystery-thats-been-bothering-me-for-decades",
+   "type": "publication"
+  },
+  {
+   "name": "Consumer Guide blog - 5 Slowest Cars of 1972 (conflict reference only)",
+   "url": "https://blog.consumerguide.com/5-slowest-cars-of-1972/",
+   "type": "publication"
+  }
+ ]
+}

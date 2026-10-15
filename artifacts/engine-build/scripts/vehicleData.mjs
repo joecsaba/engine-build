@@ -115,8 +115,11 @@ export function linkVehicles(vehicles, engineData) {
       // Diesels match diesel records only, from any maker: the 5.7 diesel in a
       // Chevrolet was Oldsmobile-built, and must not land on the gasoline 350.
       const isDieselRec = (e) => /diesel/i.test(String(e.fuel_type ?? ""));
+      // A pinned family still has to match the size: a Civic's 91 ci D15 must not
+      // land on the family's 97 ci D16 page. With no size match the row falls
+      // back to the pinned family page itself.
       let cands = ve.linkFamily
-        ? engineData.engines.filter((e) => e.familyUrl === ve.linkFamily)
+        ? engineData.engines.filter((e) => e.familyUrl === ve.linkFamily && (e.displacement_ci == null || ve.cid == null || Math.abs(e.displacement_ci - ve.cid) <= 1))
         : ve.diesel
           ? pool.filter((e) => isDieselRec(e) && sameCi(e.displacement_ci, ve.cid))  // this vehicle's makers only: a Toyota diesel must not land on a Mazda or Mitsubishi page
           : pool.filter((e) => !isDieselRec(e) && sameCi(e.displacement_ci, ve.cid) &&
@@ -142,7 +145,8 @@ export function linkVehicles(vehicles, engineData) {
       // with the code, then a long-standing page over one built from vehicle data.
       // a row can name two codes for one engine ("LY5 / LMG"): either one matches
       // whole code first, so a page made for "Z15 / LS6" keeps its link
-      const full = String(ve.code ?? "").toUpperCase();
+      // an unrated row with no code is identified by its description ("302 V-8 EFI")
+      const full = String(ve.code ?? (ve.hp == null ? ve.desc : null) ?? "").toUpperCase();
       const parts = full.split(/\s*[\/,]\s*/).filter(Boolean);
       const codes = full ? [full, ...parts] : [];
       const isCode = (c) => codes.includes(String(c).toUpperCase());
@@ -156,7 +160,12 @@ export function linkVehicles(vehicles, engineData) {
       const codeConflict = (e) => {
         if (!codes.length) return false;
         const vs = (e.variants ?? []).filter((x) => x.year === ve.year && x.hp === ve.hp);
-        return vs.length > 0 && vs.every((x) => (x.codes ?? []).length > 0 && !x.codes.some(isCode));
+        if (!vs.length) return false;
+        // An unrated row matches an unrated entry on year alone, which says nothing
+        // about which engine it is (a 1985 302 EFI against the 302 two-barrel page):
+        // there, any differently coded entry in that year rules the page out.
+        if (ve.hp == null) return vs.some((x) => (x.codes ?? []).length > 0) && !vs.some((x) => (x.codes ?? []).some(isCode));
+        return vs.every((x) => (x.codes ?? []).length > 0 && !x.codes.some(isCode));
       };
       const exact = cands.filter((e) => (e.variants ?? []).some((x) => x.year === ve.year && x.hp === ve.hp) && !codeConflict(e));
       const t1 = pick(exact), t2 = t1 ? null : pick(allMakers.filter((e) => hasCode(e, ve.year)));

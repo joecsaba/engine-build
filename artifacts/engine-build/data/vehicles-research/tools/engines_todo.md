@@ -103,3 +103,11 @@ or 2 reputable sources that agree (second pass). Specs go in public/data/engines
 | Chrysler FirePower Hemi (first generation) 331 / 354 / 392 | 331 / 354 / 392 ci | Chrysler 300 letter cars 1955–1958 (392 unlinked: the same-size page is the modern 6.4) |
 | International Comanche 4-152 / 4-152T / 4-196; IH V-266 / V-304 / V-345 | 152 / 196 / 266 / 304 / 345 ci | Scout 1961–1980 (no International engine pages yet) |
 | Nissan SD33 / SD33T diesels | 198 ci | Scout 1976–1980 |
+
+## Batch 7 — no spec page yet
+| Engine | Size | Used in |
+|---|---|---|
+| Ford flathead V8 (221, later 239/255) | 221 ci | 1932–1934 Ford (Model 18, Model 40); unlinked — the only 221 ci page is a Windsor |
+| Ford Model A / Model B four | 201 ci | Ford Model A 1928–1931, Model B 1932–1934 |
+| VW air-cooled flat fours (1100, 1200, 1300, 1500, 1600) | 69–97 ci | VW Beetle 1949–1979 (no VW air-cooled engine pages) |
+| Ford 3.3 V6 and 3.3 hybrid (2020+) | 204 ci | Explorer 2020–2026 (same engine as the F-150 3.3 already listed) |

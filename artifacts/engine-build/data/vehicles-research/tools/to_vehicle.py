@@ -201,7 +201,8 @@ for fn in spec["files"]:
                 # (Toyota's 4.0 is 241 ci, which rounds to 3.9; the 7M "3.0" is 180 ci)
                 if spec.get("published_liters", True):
                     m_l = re.match(r"\s*(\d{1,2}\.\d)\s*L\b", str(e.get("name") or ""))
-                    pub = e.get("liters") or (float(m_l.group(1)) if m_l else None)
+                    try: pub = float(e.get("liters")) if e.get("liters") else (float(m_l.group(1)) if m_l else None)
+                    except (TypeError, ValueError): pub = float(m_l.group(1)) if m_l else None
                     if pub and abs(pub - e["cid"] * 0.016387) < 0.15: liters = pub
                 name = (f"{liters}L / {e['cid']} {layout}" if year >= metric_from else f"{e['cid']} {layout}") + induction_word(e)
             rec = {
@@ -215,6 +216,8 @@ for fn in spec["files"]:
                 # US makers quoted SAE net from 1972 on; research files sometimes
                 # labeled later ratings "gross", so the year decides, not the label.
                 "hpBasis": "din" if spec.get("din_from_research") and re.search(r"DIN", str(e.get("hp_basis") or "")) else
+                           # basis_from_research: an import whose US literature still quoted gross after 1971 (1972 VW Beetle)
+                           "gross" if spec.get("basis_from_research") and "gross" in str(e.get("hp_basis") or "").lower() else
                            "net" if year >= 1972 or "net" in str(e.get("hp_basis") or "").lower() else "gross",
                 "trims": [plain_trim(t) for t in spec.get("trims", {}).get(k, e.get("trims") or [])],
                 "note": spec.get("notes", {}).get(k) or next((v for c, v in spec.get("code_notes", {}).items() if c == split_code(e.get("rpo"))[0]), None)

@@ -1,0 +1,78 @@
+{
+ "codes": {
+  "2001|281|None": "Triton",
+  "2002|281|None": "Triton"
+ },
+ "make": "Ford",
+ "model": "Expedition",
+ "makeSlug": "ford",
+ "slug": "expedition",
+ "title": "Ford Expedition Engines by Year (1997–2026)",
+ "description": "Every factory engine in the Ford Expedition by year, 1997–2026: the 4.6 and 5.4 Triton V8s, the three-valve 5.4, and the 3.5 EcoBoost V6 and its High Output tune.",
+ "intro": [
+  "Ford's full-size Expedition replaced the Bronco for 1997, with the longer EL (now MAX) from 2007. Engines offered only in the Lincoln Navigator are not listed.",
+  "Pick a year to see every engine offered that model year, with its code, rated horsepower and the trims it came in. Each engine links to its full specs."
+ ],
+ "generations": [
+  {
+   "key": "gen1",
+   "name": "First generation",
+   "years": [
+    1997,
+    2002
+   ],
+   "intro": [
+    "The 4.6 and 5.4 Triton V8s."
+   ]
+  },
+  {
+   "key": "gen2",
+   "name": "Second generation",
+   "years": [
+    2003,
+    2006
+   ],
+   "intro": [
+    "The 4.6 and 5.4, then the three-valve 5.4 alone from 2005."
+   ]
+  },
+  {
+   "key": "gen3",
+   "name": "Third generation",
+   "years": [
+    2007,
+    2017
+   ],
+   "intro": [
+    "The 5.4 three-valve V8, flex-fuel from 2009, then the 3.5 EcoBoost from 2015."
+   ]
+  },
+  {
+   "key": "gen4",
+   "name": "Fourth generation",
+   "years": [
+    2018,
+    2024
+   ],
+   "intro": [
+    "The 3.5 EcoBoost V6 in standard and High Output tunes, including the Timberline."
+   ]
+  },
+  {
+   "key": "gen5",
+   "name": "Fifth generation",
+   "years": [
+    2025,
+    2026
+   ],
+   "intro": [
+    "The 3.5 EcoBoost V6, with the High Output standard on the Tremor."
+   ]
+  }
+ ],
+ "files": [
+  "verify_ford-expedition-1997-2026.json"
+ ],
+ "merge_trims": true,
+ "draft": true
+}

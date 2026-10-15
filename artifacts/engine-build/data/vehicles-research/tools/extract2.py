@@ -74,6 +74,12 @@ JOBS = {
   "chrysler-300-1955-2023": (r"^Chrysler$", r"300", r"^Chrysler$", r"^300", "1955-1971,1979-1979,1999-2004,2005-2023"),
   "dodge-magnum-1978-2008": (r"^Dodge$", r"MAGNUM", r"^Dodge$", r"^Magnum", "1978-1979,2005-2008"),
   "porsche-911-1965-2026": (None, None, r"^Porsche$", r"^911", "1965-2026"),
+  # batch 7 (2026-10-15)
+  "chevrolet-caprice-1965-2017": (r"^Chevrolet$", r"CAPRICE", r"^Chevrolet$", r"Caprice", "1965-1996,2011-2017"),
+  "ford-model-a-1928-1934": (None, None, r"^Ford$", r"^$", "1928-1934"),
+  "volkswagen-beetle-1949-1979": (None, None, r"^Volkswagen$", r"^Beetle", "1949-1979"),
+  "ford-explorer-1991-2026": (None, None, r"^Ford$", r"^Explorer", "1991-2026"),
+  "ford-expedition-1997-2026": (None, None, r"^Ford$", r"^Expedition", "1997-2026"),
 }
 
 def spans(s):
