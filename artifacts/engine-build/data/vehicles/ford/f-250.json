@@ -133,7 +133,7 @@
    "name": "239 V8",
    "code": null,
    "desc": "Truck V-8",
-   "hp": null,
+   "hp": 106,
    "hpBasis": "gross",
    "trims": [
     "F-250 (2WD)"
@@ -152,9 +152,13 @@
     {
      "name": "BlueOvalTech, 1953 Ford F-Series trucks history page",
      "url": "https://www.blueovaltech.com/history/1953-ford-trucks.php"
+    },
+    {
+     "name": "RM Sotheby's, Hershey 2014 lot, 1953 Ford F-100 Pickup",
+     "url": "https://rmsothebys.com/auctions/hf14/lots/r200-1953-ford-f100-pickup/"
     }
    ],
-   "sourceCount": 3
+   "sourceCount": 4
   },
   {
    "year": 1954,
@@ -257,7 +261,7 @@
    "name": "223 inline-six",
    "code": null,
    "desc": "Ford 223 Six",
-   "hp": null,
+   "hp": 139,
    "hpBasis": "gross",
    "trims": [
     "F-250 (2WD)"
@@ -276,9 +280,13 @@
     {
      "name": "BlueOvalTech, 1957 Ford F-Series trucks history page",
      "url": "https://www.blueovaltech.com/history/1957-ford-trucks.php"
+    },
+    {
+     "name": "Conceptcarz - 1957 Ford F-100 (specifications)",
+     "url": "https://www.conceptcarz.com/s24156/concepts.aspx"
     }
    ],
-   "sourceCount": 3
+   "sourceCount": 4
   },
   {
    "year": 1957,
@@ -4378,7 +4386,7 @@
    "name": "4.9L / 300 inline-six",
    "code": null,
    "desc": "300 Six EFI",
-   "hp": null,
+   "hp": 150,
    "hpBasis": "net",
    "trims": [
     "F-250 2WD and 4WD"
@@ -4996,6 +5004,39 @@
   {
    "year": 1993,
    "gen": "gen9",
+   "cid": 444,
+   "cyl": 8,
+   "name": "7.3L / 444 V8 diesel",
+   "code": null,
+   "desc": "7.3L IDI Turbo",
+   "hp": 190,
+   "hpBasis": "net",
+   "trims": [
+    "F-250 HD 2WD and 4WD"
+   ],
+   "note": null,
+   "nhra": false,
+   "sources": [
+    {
+     "name": "Wikipedia - Ford F-Series (ninth generation)",
+     "url": "https://en.wikipedia.org/wiki/Ford_F-Series_(ninth_generation)"
+    },
+    {
+     "name": "BlueOvalTech, 1993 Ford F-Series trucks history page",
+     "url": "https://www.blueovaltech.com/history/1993-ford-trucks.php"
+    },
+    {
+     "name": "DieselHub - 7.3 International IDI Diesel",
+     "url": "https://www.dieselhub.com/idi/7.3-idi.html"
+    }
+   ],
+   "sourceCount": 3,
+   "diesel": true,
+   "noLink": true
+  },
+  {
+   "year": 1993,
+   "gen": "gen9",
    "cid": 460,
    "cyl": 8,
    "name": "7.5L / 460 V8",
@@ -5166,6 +5207,38 @@
   {
    "year": 1994,
    "gen": "gen9",
+   "cid": 444,
+   "cyl": 8,
+   "name": "7.3L / 444 V8 diesel",
+   "code": null,
+   "desc": "7.3L Power Stroke",
+   "hp": 210,
+   "hpBasis": "net",
+   "trims": [
+    "F-250 HD 2WD and 4WD"
+   ],
+   "note": null,
+   "nhra": false,
+   "sources": [
+    {
+     "name": "Wikipedia - Ford F-Series (ninth generation)",
+     "url": "https://en.wikipedia.org/wiki/Ford_F-Series_(ninth_generation)"
+    },
+    {
+     "name": "Haynes - The Complicated History of the Ford F-250 and F-350 Trucks 1996-1999 (2019)",
+     "url": "https://haynes.com/en-us/tips-tutorials/complicated-history-ford-f-250-and-f-350-trucks-1996-1999"
+    },
+    {
+     "name": "DieselHub - 7.3 Power Stroke V-8 Engine (Ford advertised ratings table)",
+     "url": "https://dieselhub.com/powerstroke/7.3-power-stroke.html"
+    }
+   ],
+   "sourceCount": 3,
+   "diesel": true
+  },
+  {
+   "year": 1994,
+   "gen": "gen9",
    "cid": 460,
    "cyl": 8,
    "name": "7.5L / 460 V8",
@@ -5202,7 +5275,7 @@
    "name": "7.3L / 444 V8 diesel",
    "code": null,
    "desc": "7.3L IDI diesel",
-   "hp": null,
+   "hp": 185,
    "hpBasis": "net",
    "trims": [
     "F-250 HD 2WD and 4WD"
@@ -5221,9 +5294,13 @@
     {
      "name": "Ford 1994 F-Series brochure (powerteams / engine specifications)",
      "url": "https://oldcarbrochures.org/United%20States/Ford%20Motor%20Company%20Trucks-Vans/1994-Trucks-Vans/1994%20Ford%20F%20Series/index.html"
+    },
+    {
+     "name": "DieselHub - 7.3 International IDI Diesel",
+     "url": "https://www.dieselhub.com/idi/7.3-idi.html"
     }
    ],
-   "sourceCount": 3,
+   "sourceCount": 4,
    "diesel": true,
    "noLink": true
   },
@@ -6564,69 +6641,6 @@
    "status": "single_source",
    "reason": "1 independent sources",
    "researchNote": "Only BlueOvalTech lists the 2V 5.8 for 1986; Hagerty lists only the HO and Wikipedia ends the 2V in 1985."
-  },
-  {
-   "year": 1993,
-   "gen": "gen9",
-   "cid": 444,
-   "cyl": 8,
-   "name": "7.3L / 444 V8 diesel",
-   "code": null,
-   "desc": "7.3L IDI Turbo",
-   "hp": 190,
-   "hpBasis": "net",
-   "trims": [
-    "F-250 HD 2WD and 4WD"
-   ],
-   "note": null,
-   "nhra": false,
-   "sources": [
-    {
-     "name": "Wikipedia - Ford F-Series (ninth generation)",
-     "url": "https://en.wikipedia.org/wiki/Ford_F-Series_(ninth_generation)"
-    },
-    {
-     "name": "BlueOvalTech, 1993 Ford F-Series trucks history page",
-     "url": "https://www.blueovaltech.com/history/1993-ford-trucks.php"
-    }
-   ],
-   "sourceCount": 2,
-   "diesel": true,
-   "noLink": true,
-   "status": "two_sources_not_nhra",
-   "reason": "2 independent sources",
-   "researchNote": "Factory turbo IDI from mid-1993 (Wikipedia); BlueOvalTech's 1992 page says a turbo version came late in the 1992 model year (1992.5), and its 1993 page lists it. Wikipedia and Hagerty (1994) agree on 190 hp. F-250 HD only."
-  },
-  {
-   "year": 1994,
-   "gen": "gen9",
-   "cid": 444,
-   "cyl": 8,
-   "name": "7.3L / 444 V8 diesel",
-   "code": null,
-   "desc": "7.3L Power Stroke",
-   "hp": 210,
-   "hpBasis": "net",
-   "trims": [
-    "F-250 HD 2WD and 4WD"
-   ],
-   "note": null,
-   "nhra": false,
-   "sources": [
-    {
-     "name": "Wikipedia - Ford F-Series (ninth generation)",
-     "url": "https://en.wikipedia.org/wiki/Ford_F-Series_(ninth_generation)"
-    },
-    {
-     "name": "Haynes - The Complicated History of the Ford F-250 and F-350 Trucks 1996-1999 (2019)",
-     "url": "https://haynes.com/en-us/tips-tutorials/complicated-history-ford-f-250-and-f-350-trucks-1996-1999"
-    }
-   ],
-   "sourceCount": 2,
-   "diesel": true,
-   "status": "two_sources_not_nhra",
-   "reason": "2 independent sources",
-   "researchNote": "Introduced mid-1994 (1994.5) replacing the IDI. hp 210 from Wikipedia only (BlueOvalTech's 235/525 is wrong; Hagerty's 1994 list omits it). Hagerty and BlueOvalTech place its debut in 1995. F-250 HD only."
   }
  ],
  "method": "Every engine and year listed here was confirmed by at least three independent sources: the NHRA Stock Car Classification Guides, factory material such as GM Heritage Center information kits and sales brochures, EPA records and established references. Several Wikipedia articles count as one source. Where sources give different ratings, the factory figure is shown and the difference is noted. Factory race-only packages need two sources."

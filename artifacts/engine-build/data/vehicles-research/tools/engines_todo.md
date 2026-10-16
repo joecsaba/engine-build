@@ -116,3 +116,12 @@ or 2 reputable sources that agree (second pass). Specs go in public/data/engines
 Ford 240/300 Big Six, 360 FE (truck), 4.2 Essex, 6.2 Boss, 3.3 Ti-VCT; GM 6.2 and 6.5 diesels, 8.1 Vortec;
 Toyota F, 2F, 3F-E, 1FZ-FE; Nissan L24, L26, L28E, L28ET; Ford Model A/B four, flathead V8 221 and 239;
 VW air-cooled 1100/1200/1300/1500/1600. Unlinked vehicle rows: 702 -> about 400.
+
+## Unrated-row second pass (2026-10-16; research in scratchpad hp2/results_*.json)
+Published: Bronco 1968 170, 1973 200, 1984 351W, 1992 351W; F-250 1953 239, 1957 223, 1990 300 EFI, 1994 7.3 IDI,
+plus rows 1993 Turbo IDI and 1994.5 Power Stroke; Civic 1986 CRX HF, 1988-89 D15B6, plus 2007 GX, 2018-19 Sport hatch,
+2018 and 2025 Type R; Cherokee 1975 360 2-bbl, plus 1974-75 258 rows. Cherokee 1974 401 rating removed (no 1974 source).
+Still withheld (one source, or sources split): most 1970s-80s Ford truck gas engines (Ford brochures give no hp), all AMC
+Jeep ratings after 1975 (AMC literature gives none; Hagerty vs automobile-catalog disagree), Civic 1973-85 CVCC years.
+Leads: period Road & Track / Car and Driver data sheets; Standard Catalog of 4x4s; Autoblog 1991 Civic Junkyard Gem (70/92 hp).
+Open questions: F-250 1992-93 300 EFI shows 145 (Ford 1990/1994 footnotes put most F-250s at 150); 1989 D16A6 105 vs 108.

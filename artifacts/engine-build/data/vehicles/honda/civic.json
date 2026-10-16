@@ -1025,7 +1025,7 @@
    "name": "1.5L / 91 inline-four",
    "code": "EW",
    "desc": null,
-   "hp": null,
+   "hp": 58,
    "hpBasis": "net",
    "trims": [
     "CRX HF"
@@ -1044,9 +1044,17 @@
     {
      "name": "EPA fueleconomy.gov vehicle data",
      "url": "https://www.fueleconomy.gov/feg/download.shtml"
+    },
+    {
+     "name": "Ate Up With Motor - 1984-1991 Honda CRX (p.3)",
+     "url": "https://ateupwithmotor.com/model-histories/1984-1991-honda-crx/3/"
+    },
+    {
+     "name": "Jalopnik - 1986 Honda CRX HF (Down On The Street, May 29 2008)",
+     "url": "https://jalopnik.com/1986-honda-crx-hf-393147"
     }
    ],
-   "sourceCount": 3
+   "sourceCount": 5
   },
   {
    "year": 1986,
@@ -1271,7 +1279,7 @@
    "name": "1.5L / 91 inline-four",
    "code": null,
    "desc": "D15B6",
-   "hp": null,
+   "hp": 62,
    "hpBasis": "net",
    "trims": [
     "CRX HF"
@@ -1286,9 +1294,13 @@
     {
      "name": "EPA fueleconomy.gov vehicle data",
      "url": "https://www.fueleconomy.gov/feg/download.shtml"
+    },
+    {
+     "name": "Ate Up With Motor - 1984-1991 Honda CRX (p.3)",
+     "url": "https://ateupwithmotor.com/model-histories/1984-1991-honda-crx/3/"
     }
    ],
-   "sourceCount": 2,
+   "sourceCount": 3,
    "linkFamily": "/engines/honda/d-series"
   },
   {
@@ -1395,7 +1407,7 @@
    "name": "1.5L / 91 inline-four",
    "code": null,
    "desc": "D15B6",
-   "hp": null,
+   "hp": 62,
    "hpBasis": "net",
    "trims": [
     "CRX HF"
@@ -1410,9 +1422,13 @@
     {
      "name": "EPA fueleconomy.gov vehicle data",
      "url": "https://www.fueleconomy.gov/feg/download.shtml"
+    },
+    {
+     "name": "Ate Up With Motor - 1984-1991 Honda CRX (p.3)",
+     "url": "https://ateupwithmotor.com/model-histories/1984-1991-honda-crx/3/"
     }
    ],
-   "sourceCount": 2,
+   "sourceCount": 3,
    "linkFamily": "/engines/honda/d-series"
   },
   {
@@ -4226,6 +4242,38 @@
   {
    "year": 2007,
    "gen": "gen8",
+   "cid": 110,
+   "cyl": 4,
+   "name": "1.8L / 110 inline-four",
+   "code": null,
+   "desc": null,
+   "hp": 113,
+   "hpBasis": "net",
+   "trims": [
+    "GX sedan"
+   ],
+   "note": null,
+   "nhra": false,
+   "sources": [
+    {
+     "name": "EPA fueleconomy.gov vehicle data",
+     "url": "https://www.fueleconomy.gov/feg/download.shtml"
+    },
+    {
+     "name": "Honda 2007 Civic GX brochure / spec sheet (auto-brochures.com)",
+     "url": "http://www.auto-brochures.com/makes/Honda/Civic/Honda_US%20Civic_2007-GX-fs.pdf"
+    },
+    {
+     "name": "Kelley Blue Book - 2007 Honda Civic GX Sedan 4D",
+     "url": "https://www.kbb.com/honda/civic/2007/gx-sedan-4d"
+    }
+   ],
+   "sourceCount": 3,
+   "noLink": true
+  },
+  {
+   "year": 2007,
+   "gen": "gen8",
    "cid": 122,
    "cyl": 4,
    "name": "2.0L / 122 inline-four",
@@ -5651,6 +5699,38 @@
   {
    "year": 2018,
    "gen": "gen10",
+   "cid": 91,
+   "cyl": 4,
+   "name": "1.5L / 91 inline-four turbo",
+   "code": null,
+   "desc": "L15B7",
+   "hp": 180,
+   "hpBasis": "net",
+   "trims": [
+    "Hatch Sport",
+    "Hatch Sport Touring"
+   ],
+   "note": null,
+   "nhra": false,
+   "sources": [
+    {
+     "name": "EPA fueleconomy.gov vehicle data",
+     "url": "https://www.fueleconomy.gov/feg/download.shtml"
+    },
+    {
+     "name": "Honda (hondanews.com) - 2018 Honda Civic Hatchback Accelerates into Dealerships",
+     "url": "https://hondanews.com/en-US/releases/2018-honda-civic-hatchback-accelerates-into-dealerships"
+    },
+    {
+     "name": "Kelley Blue Book - 2018 Civic Sport Hatchback 4D",
+     "url": "https://www.kbb.com/honda/civic/2018/sport-hatchback-4d/"
+    }
+   ],
+   "sourceCount": 3
+  },
+  {
+   "year": 2018,
+   "gen": "gen10",
    "cid": 122,
    "cyl": 4,
    "name": "2.0L / 122 inline-four",
@@ -5751,6 +5831,70 @@
     }
    ],
    "sourceCount": 4
+  },
+  {
+   "year": 2018,
+   "gen": "gen10",
+   "cid": 122,
+   "cyl": 4,
+   "name": "2.0L / 122 inline-four turbo",
+   "code": null,
+   "desc": "K20C1",
+   "hp": 306,
+   "hpBasis": "net",
+   "trims": [
+    "Type R hatch"
+   ],
+   "note": null,
+   "nhra": false,
+   "sources": [
+    {
+     "name": "EPA fueleconomy.gov vehicle data",
+     "url": "https://www.fueleconomy.gov/feg/download.shtml"
+    },
+    {
+     "name": "Honda (hondanews.com) - Radical and Rapid 2018 Honda Civic Type R Goes on Sale",
+     "url": "https://hondanews.com/en-US/releases/radical-and-rapid-2018-honda-civic-type-r-goes-on-sale"
+    },
+    {
+     "name": "Kelley Blue Book - 2018 Honda Civic Type R",
+     "url": "https://www.kbb.com/honda/civic-type-r/2018/"
+    }
+   ],
+   "sourceCount": 3,
+   "linkFamily": "/engines/honda/k-series"
+  },
+  {
+   "year": 2019,
+   "gen": "gen10",
+   "cid": 91,
+   "cyl": 4,
+   "name": "1.5L / 91 inline-four turbo",
+   "code": null,
+   "desc": "L15B7",
+   "hp": 180,
+   "hpBasis": "net",
+   "trims": [
+    "Hatch Sport",
+    "Hatch Sport Touring"
+   ],
+   "note": null,
+   "nhra": false,
+   "sources": [
+    {
+     "name": "EPA fueleconomy.gov vehicle data",
+     "url": "https://www.fueleconomy.gov/feg/download.shtml"
+    },
+    {
+     "name": "Honda (hondanews.com) - 2019 Honda Civic Hatchback Specifications & Features",
+     "url": "https://hondanews.com/en-US/honda-automobiles/releases/2019-honda-civic-hatchback-specifications-features"
+    },
+    {
+     "name": "Kelley Blue Book - 2019 Civic Sport Hatchback 4D",
+     "url": "https://www.kbb.com/honda/civic/2019/sport-hatchback-4d/"
+    }
+   ],
+   "sourceCount": 3
   },
   {
    "year": 2019,
@@ -6620,6 +6764,38 @@
    "noLink": true
   },
   {
+   "year": 2025,
+   "gen": "gen11",
+   "cid": 122,
+   "cyl": 4,
+   "name": "2.0L / 122 inline-four turbo",
+   "code": null,
+   "desc": "K20C1",
+   "hp": 315,
+   "hpBasis": "net",
+   "trims": [
+    "Type R hatch"
+   ],
+   "note": null,
+   "nhra": false,
+   "sources": [
+    {
+     "name": "EPA fueleconomy.gov vehicle data",
+     "url": "https://www.fueleconomy.gov/feg/download.shtml"
+    },
+    {
+     "name": "Kelley Blue Book - 2025 Honda Civic Type R",
+     "url": "https://www.kbb.com/honda/civic-type-r/2025/"
+    },
+    {
+     "name": "Cars.com - 2025 Honda Civic Type R specs",
+     "url": "https://www.cars.com/research/honda-civic_type_r-2025/specs/462088/"
+    }
+   ],
+   "sourceCount": 3,
+   "linkFamily": "/engines/honda/k-series"
+  },
+  {
    "year": 2026,
    "gen": "gen11",
    "cid": 91,
@@ -7169,142 +7345,6 @@
    "type": "wikipedia"
   }
  ],
- "excluded": [
-  {
-   "year": 2007,
-   "gen": "gen8",
-   "cid": 110,
-   "cyl": 4,
-   "name": "1.8L / 110 inline-four",
-   "code": null,
-   "desc": null,
-   "hp": 113,
-   "hpBasis": "net",
-   "trims": [
-    "GX sedan"
-   ],
-   "note": null,
-   "nhra": false,
-   "sources": [
-    {
-     "name": "EPA fueleconomy.gov vehicle data",
-     "url": "https://www.fueleconomy.gov/feg/download.shtml"
-    }
-   ],
-   "sourceCount": 1,
-   "noLink": true,
-   "status": "insufficient_sources",
-   "reason": "1 independent sources",
-   "researchNote": "Consumer Guide covers the GX from 2008 (retail expansion); Honda 2006 specs and EPA show it from 2006. No engine code stated. Only one independent source located for this year; withhold or re-check."
-  },
-  {
-   "year": 2018,
-   "gen": "gen10",
-   "cid": 91,
-   "cyl": 4,
-   "name": "1.5L / 91 inline-four turbo",
-   "code": null,
-   "desc": "L15B7",
-   "hp": 180,
-   "hpBasis": "net",
-   "trims": [
-    "Hatch Sport",
-    "Hatch Sport Touring"
-   ],
-   "note": null,
-   "nhra": false,
-   "sources": [
-    {
-     "name": "EPA fueleconomy.gov vehicle data",
-     "url": "https://www.fueleconomy.gov/feg/download.shtml"
-    }
-   ],
-   "sourceCount": 1,
-   "status": "insufficient_sources",
-   "reason": "1 independent sources",
-   "researchNote": "Center-exit exhaust, premium fuel. 2018-2019 rating carried over (no year-specific hp source fetched). KBB 2020 lists the Sport and Sport Touring hatch at 174 hp and the LX hatch with the 2.0 - both contradicted by Honda 2020 and EPA (no 2.0 hatch before 2022); KBB hatch data not used. Only one independent source located for this year; withhold or re-check."
-  },
-  {
-   "year": 2018,
-   "gen": "gen10",
-   "cid": 122,
-   "cyl": 4,
-   "name": "2.0L / 122 inline-four turbo",
-   "code": null,
-   "desc": "K20C1",
-   "hp": 306,
-   "hpBasis": "net",
-   "trims": [
-    "Type R hatch"
-   ],
-   "note": null,
-   "nhra": false,
-   "sources": [
-    {
-     "name": "EPA fueleconomy.gov vehicle data",
-     "url": "https://www.fueleconomy.gov/feg/download.shtml"
-    }
-   ],
-   "sourceCount": 1,
-   "linkFamily": "/engines/honda/k-series",
-   "status": "insufficient_sources",
-   "reason": "1 independent sources",
-   "researchNote": "Wikipedia (10th gen) gives 315 hp for the 2017-2021 Type R, which is the 2023 FL5 figure; Honda and KBB give 306 (Wikipedia not counted). Only one independent source located for this year; withhold or re-check."
-  },
-  {
-   "year": 2019,
-   "gen": "gen10",
-   "cid": 91,
-   "cyl": 4,
-   "name": "1.5L / 91 inline-four turbo",
-   "code": null,
-   "desc": "L15B7",
-   "hp": 180,
-   "hpBasis": "net",
-   "trims": [
-    "Hatch Sport",
-    "Hatch Sport Touring"
-   ],
-   "note": null,
-   "nhra": false,
-   "sources": [
-    {
-     "name": "EPA fueleconomy.gov vehicle data",
-     "url": "https://www.fueleconomy.gov/feg/download.shtml"
-    }
-   ],
-   "sourceCount": 1,
-   "status": "insufficient_sources",
-   "reason": "1 independent sources",
-   "researchNote": "Center-exit exhaust, premium fuel. 2018-2019 rating carried over (no year-specific hp source fetched). KBB 2020 lists the Sport and Sport Touring hatch at 174 hp and the LX hatch with the 2.0 - both contradicted by Honda 2020 and EPA (no 2.0 hatch before 2022); KBB hatch data not used. Only one independent source located for this year; withhold or re-check."
-  },
-  {
-   "year": 2025,
-   "gen": "gen11",
-   "cid": 122,
-   "cyl": 4,
-   "name": "2.0L / 122 inline-four turbo",
-   "code": null,
-   "desc": "K20C1",
-   "hp": 315,
-   "hpBasis": "net",
-   "trims": [
-    "Type R hatch"
-   ],
-   "note": null,
-   "nhra": false,
-   "sources": [
-    {
-     "name": "EPA fueleconomy.gov vehicle data",
-     "url": "https://www.fueleconomy.gov/feg/download.shtml"
-    }
-   ],
-   "sourceCount": 1,
-   "linkFamily": "/engines/honda/k-series",
-   "status": "insufficient_sources",
-   "reason": "1 independent sources",
-   "researchNote": "No Type R for 2022. Wikipedia gives 330 PS (325 hp), a JDM/EU rating; US SAE net is 315 (Wikipedia not counted). Honda also publishes 2024 and 2026 Type R spec sheets. Only one independent source located for this year; withhold or re-check."
-  }
- ],
+ "excluded": [],
  "method": "Every engine and year listed here was confirmed by at least three independent sources: the NHRA Stock Car Classification Guides, factory material such as GM Heritage Center information kits and sales brochures, EPA records and established references. Several Wikipedia articles count as one source. Where sources give different ratings, the factory figure is shown and the difference is noted. Factory race-only packages need two sources."
 }
