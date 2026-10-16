@@ -1,0 +1,74 @@
+[get] 200 text/html; charset=UTF-8 https://www.uempistons.com/part_search?ptno=IC802
+[get] 200 application/pdf https://www.uempistons.com/themes/UEM/images/Listing%20Section%2012.20.20.pdf
+
+######## robots.txt www.uempistons.com status=200 bytes=1392
+    User-agent: *
+    Disallow: /core/
+    Disallow: /profiles/
+    Disallow: /README.txt
+    Disallow: /web.config
+    Disallow: /admin/
+    Disallow: /comment/reply/
+    Disallow: /filter/tips
+    Disallow: /node/add/
+    Disallow: /search/
+    Disallow: /user/register
+    Disallow: /user/password
+    Disallow: /user/login
+    Disallow: /user/logout
+    Disallow: /index.php/admin/
+    Disallow: /index.php/search/
+    Disallow: /index.php/user/password
+    Disallow: /index.php/user/register
+    Disallow: /index.php/user/login
+    Disallow: /index.php/user/logout
+    Disallow: /cartpage
+    Disallow: /user/
+    Disallow: /contact_us
+    Disallow: /dealer_inquiry
+    Disallow: /*?*sort=
+    Disallow: /*?*page=
+    Disallow: /*?*combine=
+    Allow: /sites/default/files/
+    Allow: /themes/
+    Allow: /*.css$
+    Allow: /*.js$
+    User-agent: GPTBot
+    Allow: /
+    User-agent: ClaudeBot
+    Allow: /
+    User-agent: PerplexityBot
+    Allow: /
+    User-agent: Google-Extended
+    Allow: /
+    User-agent: Cohere-ai
+    Allow: /
+    User-agent: Bytespider
+    Allow: /
+    User-agent: CCBot
+    Allow: /
+
+==== GET https://www.uempistons.com/part_search?ptno=IC802
+   status=200 final=https://www.uempistons.com/part_search?ptno=IC802 ctype=text/html; charset=UTF-8 server=Apache cf-ray=False class=200-html
+   title='UEM Pistons'
+   tables=0
+   script srcs (22): ['https://code.jquery.com/jquery-3.4.0.js', 'https://ajax.googleapis.com/ajax/libs/angularjs/1.6.9/angular.min.js', 'https://uem-ymm.uempistons.com/assets/jquery/js/apa_autocomplete.min.js', '/core/assets/vendor/jquery/jquery.min.js?v=3.4.1', '/core/assets/vendor/jquery-once/jquery.once.min.js?v=2.2.0', '/core/misc/drupalSettingsLoader.js?v=8.8.0', '/themes/UEM/js/jquery-3.3.1.min.js?tmu1pn', '/themes/UEM/js/bootstrap.min.js?tmu1pn', '/themes/UEM/js/owl.carousel_v2.2.1.min.js?tmu1pn', '/themes/UEM/js/Carousel.js?tmu1pn']
+   inline api-ish strings (11): ['.livesearch', '.product_search_switcher', '.product_search_switcher-open', 'application/json', 'json', 'livesearch', 'p_search_switch', 'part_search', 'part_search?ptno=', 'path-part-search', 'path-part-searchelastic']
+   generator: None   | magento   
+   links total=62 same-host=54
+   interesting links (7):
+      https://www.uempistons.com/part_search?ptno=IC802#main-content
+      https://www.uempistons.com/part_search?ptno=IC802
+      https://www.uempistons.com/rt-5-catalogs
+      https://www.uempistons.com/interchange_search
+      https://www.uempistons.com/product_desc/{{value[0]}}
+      https://www.uempistons.com/sites/default/files/UEM-warranty-policy.pdf
+      https://www.uempistons.com/sites/default/files/C-SAMA003 (MAP Policy).pdf
+   pdf links (2):
+      https://www.uempistons.com/sites/default/files/C-SAMA003 (MAP Policy).pdf
+      https://www.uempistons.com/sites/default/files/UEM-warranty-policy.pdf
+   visible words=329 | sample: 'UEM Pistons Skip to main content Buy Now Distributor Login × Checkout Toggle navigation Main navigation Home About Us Company History Quality Commitment Locations Careers Industry Involvement Catalogs Tech Coatings Instructions Calculators Stay Connected Social Media News & Events Blog Interchange C'
+
+==== GET https://www.uempistons.com/themes/UEM/images/Listing%20Section%2012.20.20.pdf
+   status=200 final=https://www.uempistons.com/themes/UEM/images/Listing%20Section%2012.20.20.pdf ctype=application/pdf server=Apache cf-ray=False class=200-html
+   first 600 chars: %PDF-1.7%���� 975 0 obj<</Linearized 1/L 133095/O 977/E 48015/N 6/T 113474/H [ 1098 413]>>endobj              xref 975 39 0000000016 00000 n 0000001713 00000 n 0000001890 00000 n 0000003012 00000 n 0000003460 00000 n 0000003936 00000 n 0000004402 00000 n 0000004580 00000 n 0000004692 00000 n 0000004806 00000 n 0000005263 00000 n 0000005811 00000 n 0000006164 00000 n 0000006603 00000 n 0000007041 00000 n 0000007546 00000 n 0000009862 00000 n 0000011569 00000 n 0000012564 00000 n 0000013887 00000 n 0000014888 00000 n 0000015940 00000 n 0000016266 00000 n 0000016587

@@ -1,0 +1,129 @@
+[get] 200 text/html; charset=UTF-8 https://www.king-catalog.com/all-products
+[get] 200 text/html; charset=UTF-8 https://www.king-catalog.com/catalog-fitment
+
+######## robots.txt www.king-catalog.com status=200 bytes=290
+    User-agent: *
+    Disallow: /index.php/
+    Disallow: /*?
+    Disallow: /checkout/
+    Disallow: /app/
+    Disallow: /lib/
+    Disallow: /*.php$
+    Disallow: /pkginfo/
+    Disallow: /report/
+    Disallow: /var/
+    Disallow: /catalog/
+    Disallow: /customer/
+    Disallow: /sendfriend/
+    Disallow: /review/
+    Disallow: /*SID=
+
+==== GET https://www.king-catalog.com/all-products
+   status=200 final=https://www.king-catalog.com/all-products ctype=text/html; charset=UTF-8 server=cloudflare cf-ray=True class=200-html
+   title='Catalog'
+   JSON-LD: {"@context":"https:\/\/schema.org","@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"item":{"@id":"https:\/\/www.king-catalog.com\/","name":"Home"}},{"@type":"ListItem","position":2,"item":{"@id":"https:\/\/www.king-catalog.com\/all-products","name":"Catalog"}}]}
+   JSON-LD: {"@context":"https:\/\/schema.org","@type":"WebSite","url":"https:\/\/www.king-catalog.com\/","name":"King Engine Bearings Catalog","potentialAction":{"@type":"SearchAction","target":"https:\/\/www.king-catalog.com\/catalogsearch\/result\/?q={search_term_string}","query-input":"required name=search_term_string"}}
+   JSON-LD: {"@context":"https:\/\/schema.org","@type":"Organization","url":"https:\/\/www.king-catalog.com\/","name":"King Engine Bearings","logo":"https:\/\/catalog.kingenginebuilders.com\/media\/logo\/stores\/3\/king-catalog-logo-07.png","contactPoint":[{"@type":"ContactPoint","telephone":"+1-800-772-3670","contactType":"customer service"}],"address":{"addressCountry":"US","postalCode":"07039","addressRegi
+   JSON-LD: {"@context":"https:\/\/schema.org","@type":"AutomotiveBusiness","address":{"@type":"PostalAddress","streetAddress":"26 Okner Pkwy","addressLocality":"Livingston","addressRegion":"NJ ","postalCode":"07039","addressCountry":"US"},"logo":"https:\/\/www.king-catalog.com\/media\/default\/king-engine-builders-logo-black_1_.png","name":"King Engine Builders","email":"webmaster@kingenginebuilders.com","te
+   tables=0
+   FORM action=https://www.king-catalog.com/amfinder/index/search/ method=post inputs=[('finder_id', 'hidden'), ('back_url', 'hidden'), ('reset_url', 'hidden'), ('category_id', 'hidden'), ('current_apply_url', 'hidden'), ('finder[30]', 'select'), ('finder[31]', 'select'), ('finder[32]', 'select')]
+   FORM action=https://www.king-catalog.com/amfinder/index/search/ method=post inputs=[('finder_id', 'hidden'), ('back_url', 'hidden'), ('reset_url', 'hidden'), ('category_id', 'hidden'), ('current_apply_url', 'hidden'), ('finder[34]', 'select'), ('finder[35]', 'select'), ('finder[36]', 'select')]
+   FORM action=None method=None inputs=[('amshopby[application][]', 'radio'), ('amshopby[application][]', 'radio')]
+   FORM action=None method=None inputs=[('amshopby[manufacturer][]', 'radio')]
+   FORM action=None method=None inputs=[('amshopby[prodtype][]', 'radio'), ('amshopby[prodtype][]', 'radio'), ('amshopby[prodtype][]', 'radio'), ('amshopby[prodtype][]', 'radio'), ('amshopby[prodtype][]', 'radio'), ('amshopby[prodtype][]', 'radio'), ('amshopby[prodtype][]', 'radio')]
+   script srcs (5): ['https://www.king-catalog.com/static/version1791992280/frontend/TorqueDigital/kin', 'https://www.king-catalog.com/static/version1791992280/frontend/TorqueDigital/kin', 'https://www.king-catalog.com/static/version1791992280/frontend/TorqueDigital/kin', 'https://www.king-catalog.com/static/version1791992280/frontend/TorqueDigital/kin', 'https://static.klaviyo.com/onsite/js/XUa2cV/klaviyo.js']
+   inline api-ish strings (20): ['.detach-search-wrapper', 'Amasty_Xsearch/js/wrapper', 'Catalog', 'Magento_Catalog/js/sorter', 'Magento_Catalog/js/storage-manager', 'SearchAction', 'ajaxUrl', 'amsearchAnalyticsCollector', 'amsearch_wrapper', 'catalog', 'catalog_category_view', 'catalog_category_view_id_68', 'catalog_category_view_type_layered', 'displaySearchButton', 'isPartialSearch', 'isSaveSearchInputValueEnabled', 'jsonConfig', 'jsonSwatchConfig', 'jsonSwatchImageSizeConfig', 'search']
+   generator: None   | magento   
+   links total=284 same-host=277
+   interesting links (191):
+      https://www.king-catalog.com/all-products#contentarea
+      https://www.king-catalog.com/
+      https://www.king-catalog.com/customer/account/login/
+      https://www.king-catalog.com/wishlist/
+      https://www.king-catalog.com/sizesearch
+      https://www.king-catalog.com/all-products?am_is_new=1
+      https://www.king-catalog.com/i_king/activation/index/
+      https://www.king-catalog.com/customer/account/
+      https://www.king-catalog.com/king-warranty
+      https://www.king-catalog.com/all-products#CYH9Y5O
+      https://www.king-catalog.com/all-products#E0XD1HB
+      https://www.king-catalog.com/sizesearch/
+      https://www.king-catalog.com/all-products
+      https://www.king-catalog.com/cr6900sv
+      https://www.king-catalog.com/main-bearings-vm-motori-ecodiesel-oversize-mb4575sx
+      https://www.king-catalog.com/mb4556sx
+      https://www.king-catalog.com/cr1658sv
+      https://www.king-catalog.com/cr4466am
+      https://www.king-catalog.com/cr4507si
+      https://www.king-catalog.com/cr4575sm
+      https://www.king-catalog.com/cr4637sv
+      https://www.king-catalog.com/mb4276sv
+      https://www.king-catalog.com/mb5422am
+      https://www.king-catalog.com/mb5158am
+      https://www.king-catalog.com/cr8050gpc
+      https://www.king-catalog.com/cr1657sv
+      https://www.king-catalog.com/cr8044sv
+      https://www.king-catalog.com/cr8049gpc
+      https://www.king-catalog.com/cr1657sp
+      https://www.king-catalog.com/cr-807si
+      https://www.king-catalog.com/cr4426am
+      https://www.king-catalog.com/cr4507xp
+      https://www.king-catalog.com/cr4596xp
+      https://www.king-catalog.com/cr4624sm
+      https://www.king-catalog.com/cr6838sv
+   pdf links (0):
+   visible words=1693 | sample: 'Catalog The store will not work correctly when cookies are disabled. JavaScript seems to be disabled in your browser. For the best experience on our site, be sure to turn on Javascript in your browser. Skip to Content Toggle Nav My Garage Sign in My Wish List Search by Size New Items i-KING My Accou'
+
+==== GET https://www.king-catalog.com/catalog-fitment
+   status=200 final=https://www.king-catalog.com/catalog-fitment ctype=text/html; charset=UTF-8 server=cloudflare cf-ray=True class=200-html
+   title='Engine Bearing Fitment Guide'
+   JSON-LD: {"@context":"https:\/\/schema.org","@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"item":{"@id":"https:\/\/www.king-catalog.com\/","name":"Home"}},{"@type":"ListItem","position":2,"item":{"@id":"https:\/\/www.king-catalog.com\/catalog-fitment","name":"Fitment"}}]}
+   JSON-LD: {"@context":"https:\/\/schema.org","@type":"WebSite","url":"https:\/\/www.king-catalog.com\/","name":"King Engine Bearings Catalog","potentialAction":{"@type":"SearchAction","target":"https:\/\/www.king-catalog.com\/catalogsearch\/result\/?q={search_term_string}","query-input":"required name=search_term_string"}}
+   JSON-LD: {"@context":"https:\/\/schema.org","@type":"Organization","url":"https:\/\/www.king-catalog.com\/","name":"King Engine Bearings","logo":"https:\/\/catalog.kingenginebuilders.com\/media\/logo\/stores\/3\/king-catalog-logo-07.png","contactPoint":[{"@type":"ContactPoint","telephone":"+1-800-772-3670","contactType":"customer service"}],"address":{"addressCountry":"US","postalCode":"07039","addressRegi
+   JSON-LD: [{"@context":"https:\/\/schema.org","@type":"ProductGroup","name":"OE Rplacement For TOYOTA 2AZ-FE - BS4001SI","description":"","image":"https:\/\/www.king-catalog.com\/media\/catalog\/product\/cache\/3f382283fe1a41beafeb3fc3ab6d038b\/g\/e\/general_28.jpg","offers":[{"@type":"Offer","priceCurrency":"USD","price":0,"availability":"https:\/\/schema.org\/OutOfStock","itemCondition":"https:\/\/schema.
+   tables=0
+   FORM action=https://www.king-catalog.com/amfinder/index/search/ method=post inputs=[('finder_id', 'hidden'), ('back_url', 'hidden'), ('reset_url', 'hidden'), ('category_id', 'hidden'), ('current_apply_url', 'hidden'), ('finder[30]', 'select'), ('finder[31]', 'select'), ('finder[32]', 'select')]
+   FORM action=https://www.king-catalog.com/amfinder/index/search/ method=post inputs=[('finder_id', 'hidden'), ('back_url', 'hidden'), ('reset_url', 'hidden'), ('category_id', 'hidden'), ('current_apply_url', 'hidden'), ('finder[34]', 'select'), ('finder[35]', 'select'), ('finder[36]', 'select')]
+   FORM action=https://www.king-catalog.com/newsletter/subscriber/new/ method=post inputs=[('email', 'email')]
+   script srcs (5): ['https://www.king-catalog.com/static/version1791992280/frontend/TorqueDigital/kin', 'https://www.king-catalog.com/static/version1791992280/frontend/TorqueDigital/kin', 'https://www.king-catalog.com/static/version1791992280/frontend/TorqueDigital/kin', 'https://www.king-catalog.com/static/version1791992280/frontend/TorqueDigital/kin', 'https://static.klaviyo.com/onsite/js/XUa2cV/klaviyo.js']
+   inline api-ish strings (20): ['.detach-search-wrapper', 'Amasty_Xsearch/js/wrapper', 'Magento_Catalog/js/sorter', 'Magento_Catalog/js/storage-manager', 'SearchAction', 'ajaxUrl', 'amsearchAnalyticsCollector', 'amsearch_wrapper', 'catalog', 'catalog_category_view', 'catalog_category_view_displaymode_products', 'catalog_category_view_id_82', 'catalog_category_view_type_default', 'displaySearchButton', 'isPartialSearch', 'isSaveSearchInputValueEnabled', 'jsonConfig', 'jsonSwatchConfig', 'jsonSwatchImageSizeConfig', 'search']
+   generator: None   | magento   
+   links total=136 same-host=129
+   interesting links (44):
+      https://www.king-catalog.com/catalog-fitment#contentarea
+      https://www.king-catalog.com/
+      https://www.king-catalog.com/customer/account/login/
+      https://www.king-catalog.com/wishlist/
+      https://www.king-catalog.com/sizesearch
+      https://www.king-catalog.com/all-products?am_is_new=1
+      https://www.king-catalog.com/i_king/activation/index/
+      https://www.king-catalog.com/customer/account/
+      https://www.king-catalog.com/king-warranty
+      https://www.king-catalog.com/catalog-fitment#CYH9Y5O
+      https://www.king-catalog.com/catalog-fitment#E0XD1HB
+      https://www.king-catalog.com/sizesearch/
+      https://www.king-catalog.com/catalog-fitment
+      https://www.king-catalog.com/bs4001si
+      https://www.king-catalog.com/cr-115am
+      https://www.king-catalog.com/cr-131cp
+      https://www.king-catalog.com/cr-133cp
+      https://www.king-catalog.com/cr-135cp
+      https://www.king-catalog.com/cr-155cp
+      https://www.king-catalog.com/cr-156si
+      https://www.king-catalog.com/cr-179am
+      https://www.king-catalog.com/cr-180am
+      https://www.king-catalog.com/cr-183cp
+      https://www.king-catalog.com/cr-189am
+      https://www.king-catalog.com/cr-196am
+      https://www.king-catalog.com/cr-197am
+      https://www.king-catalog.com/cr-202am
+      https://www.king-catalog.com/cr-222gpc
+      https://www.king-catalog.com/cr-222sv
+      https://www.king-catalog.com/cr-223sv
+      https://www.king-catalog.com/cr-224gpc
+      https://www.king-catalog.com/cr-224sv
+      https://www.king-catalog.com/cr-227xp
+      https://www.king-catalog.com/cr-227xpc
+      https://www.king-catalog.com/cr-301am
+   pdf links (0):
+   visible words=1476 | sample: 'Engine Bearing Fitment Guide The store will not work correctly when cookies are disabled. JavaScript seems to be disabled in your browser. For the best experience on our site, be sure to turn on Javascript in your browser. Skip to Content Toggle Nav My Garage Sign in My Wish List Search by Size New '

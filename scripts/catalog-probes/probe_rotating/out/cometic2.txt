@@ -1,0 +1,87 @@
+[get] 200 text/html; charset=UTF-8 https://www.cometic.com/applications/automotive
+[get] 200 text/html; charset=UTF-8 https://www.cometic.com/catalogs
+
+######## robots.txt www.cometic.com status=200 bytes=31
+    User-agent: *
+    Crawl-delay: 30
+
+==== GET https://www.cometic.com/applications/automotive
+   status=200 final=https://www.cometic.com/applications/automotive ctype=text/html; charset=UTF-8 server=nginx/1.31.6 cf-ray=False class=200-html
+   title='Cometic Automotive High Performance Gaskets'
+   tables=0
+   FORM action=products method=post inputs=[('vehicle_manufacturer', 'select'), ('vehicle_model', 'select'), ('vehicle_year', 'select')]
+   FORM action=products method=post inputs=[('engine_manufacturer', 'select'), ('engine_family', 'select'), ('engine_size', 'select')]
+   FORM action=products method=post inputs=[('engine_manufacturer', 'select'), ('engine_family', 'select'), ('engine_size', 'select')]
+   FORM action=products method=post inputs=[('vehicle_manufacturer', 'select'), ('vehicle_model', 'select'), ('vehicle_year', 'select')]
+   FORM action=products method=post inputs=[('search_text', 'text')]
+   script srcs (3): ['js/jquery-3.7.1.min.js', 'https://hello.zonos.com/hello.js?siteKey=1OVDH76Q1KHS0', 'js/site.js?1790741533']
+   inline api-ish strings (1): ['/inc/search.php?action=query&search_text=']
+   generator: None      
+   links total=215 same-host=209
+   interesting links (159):
+      https://www.cometic.com/applications/automotive
+      https://www.cometic.com/applications/cart
+      https://www.cometic.com/applications/category/air-cleaner-mounting-stud-kit
+      https://www.cometic.com/applications/category/auto-trans-flexplate-mounting-bolt
+      https://www.cometic.com/applications/category/auto-trans-torque-converter-bolt
+      https://www.cometic.com/applications/category/bottom-end-gasket-kit
+      https://www.cometic.com/applications/category/camshaft-change-gasket-set
+      https://www.cometic.com/applications/category/camshaft-housing-gasket
+      https://www.cometic.com/applications/category/camshaft-retainer-gasket
+      https://www.cometic.com/applications/category/camshaft-seal
+      https://www.cometic.com/applications/category/camshaft-seal-kit
+      https://www.cometic.com/applications/category/carburetor-float-bowl-cover-gasket
+      https://www.cometic.com/applications/category/carburetor-gasket-kit
+      https://www.cometic.com/applications/category/carburetor-metering-block-gasket
+      https://www.cometic.com/applications/category/carburetor-mounting-gasket
+      https://www.cometic.com/applications/category/carburetor-stud-kit
+      https://www.cometic.com/applications/category/complete-gasket-set
+      https://www.cometic.com/applications/category/coolant-hose-connector-gasket
+      https://www.cometic.com/applications/category/coolant-outlet-gasket
+      https://www.cometic.com/applications/category/coolant-thermostat-gasket
+      https://www.cometic.com/applications/category/coolant-thermostat-gasket-set
+      https://www.cometic.com/applications/category/coolant-thermostat-housing-gasket
+      https://www.cometic.com/applications/category/crankcase-cover-gasket-set
+      https://www.cometic.com/applications/category/crankshaft-seal
+      https://www.cometic.com/applications/category/crankshaft-seal-kit
+      https://www.cometic.com/applications/category/crankshaft-seal-retainer-gasket
+      https://www.cometic.com/applications/categories
+      https://www.cometic.com/applications/applications/automotive
+      https://www.cometic.com/applications/applications/powersports
+      https://www.cometic.com/applications/applications/v-twin
+      https://www.cometic.com/applications/applications/marine
+      https://www.cometic.com/applications/login
+      https://www.cometic.com/applications/news
+      https://www.cometic.com/applications/contact
+      https://www.cometic.com/applications/employment
+   pdf links (0):
+   visible words=1345 | sample: 'Cometic Automotive High Performance Gaskets Gaskets By Category Air Cleaner Mounting Stud Kit Auto Trans Flexplate Mounting Bolt Auto Trans Torque Converter Bolt Bottom End Gasket Kit Camshaft Change Gasket Set Camshaft Housing Gasket Camshaft Retainer Gasket Camshaft Seal Camshaft Seal Kit Carburet'
+
+==== GET https://www.cometic.com/catalogs
+   status=200 final=https://www.cometic.com/catalogs ctype=text/html; charset=UTF-8 server=nginx/1.31.6 cf-ray=False class=200-html
+   title='Cometic Gasket - Sealed Under Extreme Pressure'
+   tables=0
+   FORM action=products method=post inputs=[('vehicle_manufacturer', 'select'), ('vehicle_model', 'select'), ('vehicle_year', 'select')]
+   FORM action=products method=post inputs=[('engine_manufacturer', 'select'), ('engine_family', 'select'), ('engine_size', 'select')]
+   FORM action=products method=post inputs=[('engine_manufacturer', 'select'), ('engine_family', 'select'), ('engine_size', 'select')]
+   FORM action=products method=post inputs=[('vehicle_manufacturer', 'select'), ('vehicle_model', 'select'), ('vehicle_year', 'select')]
+   FORM action=products method=post inputs=[('search_text', 'text')]
+   script srcs (3): ['js/jquery-3.7.1.min.js', 'https://hello.zonos.com/hello.js?siteKey=1OVDH76Q1KHS0', 'js/site.js?1790741533']
+   inline api-ish strings (1): ['/inc/search.php?action=query&search_text=']
+   generator: None      
+   links total=110 same-host=104
+   interesting links (9):
+      https://www.cometic.com/catalogs
+      https://www.cometic.com/applications/automotive
+      https://www.cometic.com/applications/powersports
+      https://www.cometic.com/applications/v-twin
+      https://www.cometic.com/applications/marine
+      https://www.cometic.com/files/catalogs/CometicAB2026.pdf
+      https://www.cometic.com/files/catalogs/PS19lr.pdf
+      https://www.cometic.com/files/catalogs/MC2024.pdf
+      https://www.cometic.com/partners
+   pdf links (3):
+      https://www.cometic.com/files/catalogs/CometicAB2026.pdf
+      https://www.cometic.com/files/catalogs/MC2024.pdf
+      https://www.cometic.com/files/catalogs/PS19lr.pdf
+   visible words=1246 | sample: 'Cometic Gasket - Sealed Under Extreme Pressure Gaskets By Category Air Cleaner Mounting Stud Kit Auto Trans Flexplate Mounting Bolt Auto Trans Torque Converter Bolt Bottom End Gasket Kit Camshaft Change Gasket Set Camshaft Housing Gasket Camshaft Retainer Gasket Camshaft Seal Camshaft Seal Kit Carbu'

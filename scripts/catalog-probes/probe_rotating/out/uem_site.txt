@@ -1,0 +1,99 @@
+[get] 200 text/html; charset=UTF-8 https://www.uempistons.com/rt-5-catalogs
+[get] 200 application/xml https://www.uempistons.com/sitemap.xml
+
+######## robots.txt www.uempistons.com status=200 bytes=1392
+    User-agent: *
+    Disallow: /core/
+    Disallow: /profiles/
+    Disallow: /README.txt
+    Disallow: /web.config
+    Disallow: /admin/
+    Disallow: /comment/reply/
+    Disallow: /filter/tips
+    Disallow: /node/add/
+    Disallow: /search/
+    Disallow: /user/register
+    Disallow: /user/password
+    Disallow: /user/login
+    Disallow: /user/logout
+    Disallow: /index.php/admin/
+    Disallow: /index.php/search/
+    Disallow: /index.php/user/password
+    Disallow: /index.php/user/register
+    Disallow: /index.php/user/login
+    Disallow: /index.php/user/logout
+    Disallow: /cartpage
+    Disallow: /user/
+    Disallow: /contact_us
+    Disallow: /dealer_inquiry
+    Disallow: /*?*sort=
+    Disallow: /*?*page=
+    Disallow: /*?*combine=
+    Allow: /sites/default/files/
+    Allow: /themes/
+    Allow: /*.css$
+    Allow: /*.js$
+    User-agent: GPTBot
+    Allow: /
+    User-agent: ClaudeBot
+    Allow: /
+    User-agent: PerplexityBot
+    Allow: /
+    User-agent: Google-Extended
+    Allow: /
+    User-agent: Cohere-ai
+    Allow: /
+    User-agent: Bytespider
+    Allow: /
+    User-agent: CCBot
+    Allow: /
+
+==== GET https://www.uempistons.com/rt-5-catalogs
+   status=200 final=https://www.uempistons.com/rt-5-catalogs ctype=text/html; charset=UTF-8 server=Apache cf-ray=False class=200-html
+   title='Performance Pistons for Every Engine | United Engine & Machine Co'
+   tables=0
+   FORM action=# method=GET inputs=[('email', 'text')]
+   script srcs (23): ['https://code.jquery.com/jquery-3.4.0.js', 'https://ajax.googleapis.com/ajax/libs/angularjs/1.6.9/angular.min.js', 'https://uem-ymm.uempistons.com/assets/jquery/js/apa_autocomplete.min.js', '//static.ctctcdn.com/js/signup-form-widget/current/signup-form-widget.min.js', '/core/assets/vendor/jquery/jquery.min.js?v=3.4.1', '/core/assets/vendor/jquery-once/jquery.once.min.js?v=2.2.0', '/core/misc/drupalSettingsLoader.js?v=8.8.0', '/themes/UEM/js/jquery-3.3.1.min.js?tmu1pn', '/themes/UEM/js/bootstrap.min.js?tmu1pn', '/themes/UEM/js/owl.carousel_v2.2.1.min.js?tmu1pn']
+   inline api-ish strings (10): ['.livesearch', '.product_search_switcher', '.product_search_switcher-open', 'application/json', 'json', 'livesearch', 'p_search_switch', 'part_search?ptno=', 'path-part-search', 'path-part-searchelastic']
+   generator: None   | magento   
+   links total=76 same-host=68
+   interesting links (18):
+      https://www.uempistons.com/rt-5-catalogs#main-content
+      https://www.uempistons.com/rt-5-catalogs
+      https://www.uempistons.com/interchange_search
+      https://www.uempistons.com/sites/default/files/2026-uem-supplement-final-v2-small.pdf
+      https://www.uempistons.com/sites/default/files/2025-uem-supplement-rev-G-small.pdf
+      https://www.uempistons.com/themes/UEM/images/Front and Back Cover 12.20.2020.pdf
+      https://www.uempistons.com/themes/UEM/images/Icon_catalog.pdf
+      https://www.uempistons.com/themes/UEM/images/ICON FHR 12.20.20.pdf
+      https://www.uempistons.com/themes/UEM/images/ICON Sport Compact 12.20.20 (1).pdf
+      https://www.uempistons.com/themes/UEM/images/Listing Section 12.20.20.pdf
+      https://www.uempistons.com/themes/UEM/images/KB 12.20.20 (1).pdf
+      https://www.uempistons.com/themes/UEM/images/Claimer 12.20.20.pdf
+      https://www.uempistons.com/themes/UEM/images/Silv-O-Lite 12.20.20.pdf
+      https://www.uempistons.com/themes/UEM/images/motorcycle_catalog.pdf
+      https://www.uempistons.com/themes/UEM/images/KB Motorcycle Pistons 2025 Supplement.pdf
+      https://www.uempistons.com/themes/UEM/images/Dualoy-brochure-printer-version-M-lores.pdf
+      https://www.uempistons.com/sites/default/files/UEM-warranty-policy.pdf
+      https://www.uempistons.com/sites/default/files/C-SAMA003 (MAP Policy).pdf
+   pdf links (15):
+      https://www.uempistons.com/sites/default/files/2025-uem-supplement-rev-G-small.pdf
+      https://www.uempistons.com/sites/default/files/2026-uem-supplement-final-v2-small.pdf
+      https://www.uempistons.com/sites/default/files/C-SAMA003 (MAP Policy).pdf
+      https://www.uempistons.com/sites/default/files/UEM-warranty-policy.pdf
+      https://www.uempistons.com/themes/UEM/images/Claimer 12.20.20.pdf
+      https://www.uempistons.com/themes/UEM/images/Dualoy-brochure-printer-version-M-lores.pdf
+      https://www.uempistons.com/themes/UEM/images/Front and Back Cover 12.20.2020.pdf
+      https://www.uempistons.com/themes/UEM/images/ICON FHR 12.20.20.pdf
+      https://www.uempistons.com/themes/UEM/images/ICON Sport Compact 12.20.20 (1).pdf
+      https://www.uempistons.com/themes/UEM/images/Icon_catalog.pdf
+      https://www.uempistons.com/themes/UEM/images/KB 12.20.20 (1).pdf
+      https://www.uempistons.com/themes/UEM/images/KB Motorcycle Pistons 2025 Supplement.pdf
+      https://www.uempistons.com/themes/UEM/images/Listing Section 12.20.20.pdf
+      https://www.uempistons.com/themes/UEM/images/Silv-O-Lite 12.20.20.pdf
+      https://www.uempistons.com/themes/UEM/images/motorcycle_catalog.pdf
+   visible words=366 | sample: 'Performance Pistons for Every Engine | United Engine & Machine Co Skip to main content Buy Now Distributor Login × Checkout Toggle navigation Main navigation Home About Us Company History Quality Commitment Locations Careers Industry Involvement Catalogs Tech Coatings Instructions Calculators Stay C'
+
+==== GET https://www.uempistons.com/sitemap.xml
+   status=200 final=https://www.uempistons.com/sitemap.xml ctype=application/xml server=Apache cf-ray=False class=200-html
+   first 600 chars: <?xml version="1.0" encoding="UTF-8"?> <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">   <url>     <loc>https://www.uempistons.com/</loc>     <lastmod>2026-09-04</lastmod>     <changefreq>daily</changefreq>     <priority>1.0</priority>   </url>   <url>     <loc>https://www.uempistons.com/Company</loc>     <lastmod>2026-09-04</lastmod>     <changefreq>daily</changefreq>     <priority>0.8</priority>   </url>   <url>     <loc>https://www.uempistons.com/p-10-about-us</loc>     <lastmod>2026-09-04</lastmod>     <changefreq>daily</changefreq>     <priority>0.8</priority>   </url>   <url

@@ -1,0 +1,28 @@
+[get] 200 text/xml; charset=UTF-8 https://www.scatcrankshafts.com/sitemap_index.xml
+[get] 200 text/xml;charset=UTF-8 https://www.scatcrankshafts.com/product-sitemap.xml
+[get] 200 application/json; charset=UTF-8 https://www.scatcrankshafts.com/wp-json/wc/store/v1/products?per_page=3
+
+######## robots.txt www.scatcrankshafts.com status=200 bytes=476
+    User-agent: *
+    Disallow: /2022/wp-content/uploads/wc-logs/
+    Disallow: /2022/wp-content/uploads/woocommerce_transient_files/
+    Disallow: /2022/wp-content/uploads/woocommerce_uploads/
+    Disallow: /*?add-to-cart=
+    Disallow: /*?*add-to-cart=
+    Disallow: /2022/wp-admin/
+    Allow: /2022/wp-admin/admin-ajax.php
+    User-agent: *
+    Disallow:
+    Sitemap: https://www.scatcrankshafts.com/sitemap_index.xml
+
+==== GET https://www.scatcrankshafts.com/sitemap_index.xml
+   status=200 final=https://www.scatcrankshafts.com/sitemap_index.xml ctype=text/xml; charset=UTF-8 server=Sucuri/Cloudproxy cf-ray=False class=200-html
+   first 600 chars: <?xml version="1.0" encoding="UTF-8"?><?xml-stylesheet type="text/xsl" href="//www.scatcrankshafts.com/main-sitemap.xsl"?> <sitemapindex xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"> 	<sitemap> 		<loc>https://www.scatcrankshafts.com/post-sitemap.xml</loc> 		<lastmod>2023-03-10T16:57:54+00:00</lastmod> 	</sitemap> 	<sitemap> 		<loc>https://www.scatcrankshafts.com/page-sitemap.xml</loc> 		<lastmod>2026-04-07T22:10:23+00:00</lastmod> 	</sitemap> 	<sitemap> 		<loc>https://www.scatcrankshafts.com/product-sitemap.xml</loc> 		<lastmod>2026-10-15T14:57:49+00:00</lastmod> 	</sitemap> 	<sitemap> 
+
+==== GET https://www.scatcrankshafts.com/product-sitemap.xml
+   status=200 final=https://www.scatcrankshafts.com/product-sitemap.xml ctype=text/xml;charset=UTF-8 server=Sucuri/Cloudproxy cf-ray=False class=200-html
+   first 600 chars: <?xml version="1.0" encoding="UTF-8"?><?xml-stylesheet type="text/xsl" href="//www.scatcrankshafts.com/main-sitemap.xsl"?> <urlset xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:image="http://www.google.com/schemas/sitemap-image/1.1" xsi:schemaLocation="http://www.sitemaps.org/schemas/sitemap/0.9 http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd http://www.google.com/schemas/sitemap-image/1.1 http://www.google.com/schemas/sitemap-image/1.1/sitemap-image.xsd" xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"> 	<url> 		<loc>https://www.scatcrankshafts.com/shop/</loc> 		<last
+
+==== GET https://www.scatcrankshafts.com/wp-json/wc/store/v1/products?per_page=3
+   status=200 final=https://www.scatcrankshafts.com/wp-json/wc/store/v1/products?per_page=3 ctype=application/json; charset=UTF-8 server=Sucuri/Cloudproxy cf-ray=False class=200-html
+   first 600 chars: [{"id":35371,"name":"Procar Hat","slug":"procar-hat","parent":0,"type":"variable","variation":"","permalink":"https:\/\/www.scatcrankshafts.com\/product\/procar-hat\/","sku":"95076","short_description":"","description":"<h3>BLACK <a href=\"http:\/\/www.procarbyscat.com\">PROCAR BY SCAT<\/a> HAT WITH LOGO<\/h3>\n<p>Shop all of our\u00a0<a href=\"\/product-category\/scat-apparel\/\">SCAT apparel<\/a> to show off your <a href=\"http:\/\/www.scatenterprises.com\">SCAT Enterprises<\/a> pride<\/p>","on_sale":false,"prices":{"price":"3239","regular_price":"3239","sale_price":"3239","price_range":null

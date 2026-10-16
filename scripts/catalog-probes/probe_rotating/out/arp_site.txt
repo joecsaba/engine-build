@@ -1,0 +1,45 @@
+[get] 200 text/html; charset=utf-8 https://arp-bolts.com/
+[get] 200 application/xml https://arp-bolts.com/sitemap.xml
+[get] 200 text/html; charset=utf-8 https://arp-bolts.com/kits/
+
+######## robots.txt arp-bolts.com status=200 bytes=101
+    User-Agent: *
+    Allow: /
+    Disallow: /api/
+    Disallow: /admin/
+    Sitemap: https://arp-bolts.com/sitemap.xml
+
+==== GET https://arp-bolts.com/
+   status=200 final=https://arp-bolts.com/ ctype=text/html; charset=utf-8 server=cloudflare cf-ray=True class=challenge
+   title='arp - Automotive Racing Products'
+   tables=0
+   FORM action=None method=None inputs=[]
+   script srcs (11): ['/_next/static/chunks/4bd1b696-f785427dddbba9fb.js', '/_next/static/chunks/1255-5538aed969991823.js', '/_next/static/chunks/main-app-cfedede20cbb524b.js', '/_next/static/chunks/2619-3c9e02e22d10480a.js', '/_next/static/chunks/5239-abc5950ba63234d7.js', '/_next/static/chunks/417-8bc26004a85071bf.js', '/_next/static/chunks/app/layout-43765474f1ee239a.js', '/_next/static/chunks/app/page-09cf95db194872bc.js', '/_next/static/chunks/polyfills-42372ed130431b0a.js', '/cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js']
+   inline api-ish strings (0): []
+   generator: None   | magento   
+   links total=33 same-host=30
+   interesting links (5):
+      https://arp-bolts.com/search
+      https://arp-bolts.com/catalog
+      https://arp-bolts.com/search?tab=vehicle
+      https://arp-bolts.com/search?tab=bulk-fastener
+      https://arp-bolts.com/search?tab=kit-number
+   pdf links (0):
+   visible words=169 | sample: 'arp - Automotive Racing Products 1-800-826-3045 Tech Support Find a Dealer Call Support Dealer The World Leader in High Performance Automotive Fasteners New Kits Tech Manufacturing News Catalog Contact Find Kits Find Your ARP Kits or Lookup An Instruction by Kit Number by Make Loading... Bolts, Nuts'
+
+==== GET https://arp-bolts.com/sitemap.xml
+   status=200 final=https://arp-bolts.com/sitemap.xml ctype=application/xml server=cloudflare cf-ray=True class=200-html
+   first 600 chars: <?xml version="1.0" encoding="UTF-8"?> <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"> <url> <loc>https://arp-bolts.com</loc> <lastmod>2026-10-15T15:09:04.341Z</lastmod> <changefreq>weekly</changefreq> <priority>1</priority> </url> <url> <loc>https://arp-bolts.com/search</loc> <lastmod>2026-10-15T15:09:04.341Z</lastmod> <changefreq>weekly</changefreq> <priority>0.9</priority> </url> <url> <loc>https://arp-bolts.com/contact</loc> <lastmod>2026-10-15T15:09:04.341Z</lastmod> <changefreq>monthly</changefreq> <priority>0.6</priority> </url> <url> <loc>https://arp-bolts.com/dealers</loc
+
+==== GET https://arp-bolts.com/kits/
+   status=200 final=https://arp-bolts.com/kits ctype=text/html; charset=utf-8 server=cloudflare cf-ray=True class=challenge
+   title='Page Not Found - ARP Bolts | arp - Automotive Racing Products'
+   tables=0
+   script srcs (10): ['/_next/static/chunks/4bd1b696-f785427dddbba9fb.js', '/_next/static/chunks/1255-5538aed969991823.js', '/_next/static/chunks/main-app-cfedede20cbb524b.js', '/_next/static/chunks/2619-3c9e02e22d10480a.js', '/_next/static/chunks/5239-abc5950ba63234d7.js', '/_next/static/chunks/417-8bc26004a85071bf.js', '/_next/static/chunks/app/layout-43765474f1ee239a.js', '/_next/static/chunks/app/%5B...slug%5D/page-cbf4ac30e585662c.js', '/_next/static/chunks/polyfills-42372ed130431b0a.js', '/_next/static/chunks/webpack-a7ff4a44ec4e96e6.js']
+   inline api-ish strings (0): []
+   generator: None   | magento   
+   links total=13 same-host=11
+   interesting links (1):
+      https://arp-bolts.com/search
+   pdf links (0):
+   visible words=40 | sample: 'Page Not Found - ARP Bolts | arp - Automotive Racing Products 1-800-826-3045 Tech Support Find a Dealer Call Support Dealer The World Leader in High Performance Automotive Fasteners New Kits Tech Manufacturing News Catalog Contact Find Kits Site Feedback'

@@ -1,0 +1,61 @@
+[get] 200 text/html;charset=utf-8 https://www.felpro.com/
+[get] 200 application/xml https://www.felpro.com/sitemap.xml
+
+######## robots.txt www.felpro.com status=200 bytes=146
+    User-agent: *
+    Allow: /
+    Disallow: /data.html
+    Disallow: /data/
+    Sitemap: https://www.felpro.com/sitemap.xml
+
+==== GET https://www.felpro.com/
+   status=200 final=https://www.felpro.com/ ctype=text/html;charset=utf-8 server=Apache cf-ray=False class=200-html
+   title='Fel-Pro Gaskets | Professional Grade Gaskets'
+   tables=0
+   FORM action=None method=None inputs=[('postal', 'text')]
+   script srcs (14): ['/etc.clientlibs/clientlibs/granite/clientlibrarymanager.min.4066faea2c14fde8235e', '/etc/cloudsettings/default/contexthub.kernel.js', 'https://cdn.cookielaw.org/scripttemplates/otSDKStub.js', '/etc.clientlibs/foundation/clientlibs/main.min.4579a1cf02be3aabcee9d39402bae08b.', '/etc.clientlibs/clientlibs/fmmp-base/libs/main.min.6a7d147240fdd74c1143441374b19', '/etc.clientlibs/clientlibs/fmmp-base/libs/fmmp-part-finder-suite.min.2c3aa0b476b', '/etc.clientlibs/clientlibs/fmmp-base/libs/main-vue.min.0e69613f9a115f47c0ce08747', '/etc.clientlibs/clientlibs/fmmp-base/libs/vue-components.min.8d16b0c763d5af64347', '/etc.clientlibs/clientlibs/external/mlpushmenu.min.7da2106b4ce064e685197469c3331', '/etc.clientlibs/clientlibs/external/classie.min.cf6ab5e56ea10a851a71150eeff7d0e0']
+   inline api-ish strings (0): []
+   generator: None   | magento   
+   links total=140 same-host=134
+   interesting links (38):
+      http://www.felpro.com/parts.html
+      http://www.felpro.com/parts/engine-repair.html
+      http://www.felpro.com/parts/engine-repair/gasket-sets.html
+      http://www.felpro.com/parts/engine-repair/head-gaskets.html
+      http://www.felpro.com/parts/engine-repair/valve-stem-seals.html
+      http://www.felpro.com/parts/engine-repair/head-bolt-sets.html
+      http://www.felpro.com/parts/leak-repair.html
+      http://www.felpro.com/parts/leak-repair/oil-filter-housing-assemblies.html
+      http://www.felpro.com/parts/leak-repair/oil-filter-and-cap-sets.html
+      http://www.felpro.com/parts/leak-repair/permadryplus.html
+      http://www.felpro.com/parts/leak-repair/manifold-gasket-sets.html
+      http://www.felpro.com/parts/leak-repair/oil-pan-gasket-sets.html
+      http://www.felpro.com/parts/leak-repair/valve-cover-gasket-sets.html
+      http://www.felpro.com/parts/leak-repair/rear-main-seals.html
+      http://www.felpro.com/parts/leak-repair/timing-cover-gasket-sets.html
+      http://www.felpro.com/parts/leak-repair/timing-chain-tensioner-gasket-set.html
+      http://www.felpro.com/parts/system-specific-sealing.html
+      http://www.felpro.com/parts/system-specific-sealing/cooling-system.html
+      http://www.felpro.com/parts/system-specific-sealing/drivetrain.html
+      http://www.felpro.com/parts/system-specific-sealing/exhaust-system.html
+      http://www.felpro.com/parts/system-specific-sealing/fuel-system.html
+      http://www.felpro.com/parts/performance.html
+      http://www.felpro.com/parts/performance/head-gaskets.html
+      http://www.felpro.com/parts/performance/intake-manifold-gaskets.html
+      http://www.felpro.com/parts/performance/exhaust-manifold-gaskets.html
+      http://www.felpro.com/parts/performance/valve-cover-gaskets.html
+      http://www.felpro.com/parts/performance/remainder-sets.html
+      http://www.felpro.com/parts/performance/oil-pan-gaskets.html
+      http://www.felpro.com/parts/marine.html
+      http://www.felpro.com/parts/marine/engine-specific.html
+      http://www.felpro.com/parts/marine/head-gaskets.html
+      http://www.felpro.com/parts/marine/manifold-gaskets.html
+      http://www.felpro.com/parts/marine/oil-pan-gaskets.html
+      http://www.felpro.com/parts/marine/valve-cover-gaskets.html
+      http://www.felpro.com/product-support-materials.html
+   pdf links (0):
+   visible words=575 | sample: 'Fel-Pro Gaskets | Professional Grade Gaskets Skip Navigation Home Parts Engine Repair Gasket Sets Head Gaskets Valve Stem Seals Head Bolt Sets Leak Repair Oil Filter Housing Assembly Oil Filter & Cap Set SpeedFit Gaskets Intake Manifold Gasket Sets Oil Pan Gaskets Valve Cover Gaskets Rear Main Seals'
+
+==== GET https://www.felpro.com/sitemap.xml
+   status=200 final=https://www.felpro.com/sitemap.xml ctype=application/xml server=Apache cf-ray=False class=200-html
+   first 600 chars: <?xml version="1.0"?><sitemapindex xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"><sitemap><loc>https://www.felpro.com/en_US.sitemap.xml</loc><lastmod>2026-09-24T01:26:10Z</lastmod></sitemap></sitemapindex>

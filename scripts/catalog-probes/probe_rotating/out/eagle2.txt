@@ -1,0 +1,44 @@
+[get] 200 text/html; charset=UTF-8 https://www.eaglerod.com/current_catalog
+[get] 200 text/xml; charset=UTF-8 https://www.eaglerod.com/sitemaps/d109_a_1.xml
+[get] 200 text/html; charset=UTF-8 https://www.eaglerod.com/service_parts
+
+######## robots.txt www.eaglerod.com status=200 bytes=71
+    User-agent: *
+    Disallow:
+    Sitemap: https://www.eaglerod.com/sitemap.xml
+
+==== GET https://www.eaglerod.com/current_catalog
+   status=200 final=https://www.eaglerod.com/current_catalog ctype=text/html; charset=UTF-8 server=nginx/1.11.5 cf-ray=False class=200-html
+   title='Current Catalog | Eagle Specialty Products'
+   tables=0
+   FORM action=https://www.eaglerod.com/browse method=GET inputs=[('keyword', 'text')]
+   script srcs (8): ['https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js', '//netdna.bootstrapcdn.com/bootstrap/3.3.1/js/bootstrap.min.js', '/assets/js/zoombox/zoombox.js', '/assets/js/spin.min.js', '/assets/js/ladda.min.js', '/assets/js/holder.js', '/assets/js/main.js?16', '/assets/js/brands.js']
+   inline api-ish strings (0): []
+   generator: None      
+   links total=81 same-host=75
+   interesting links (3):
+      https://www.eaglerod.com/current_catalog#customer-service
+      https://www.eaglerod.com/service_parts
+      https://www.eaglerod.com/current_catalog
+   pdf links (0):
+   visible words=257 | sample: 'Current Catalog | Eagle Specialty Products Customer Service Toggle navigation Wish List Order Tracker Customer Service Sign In Your Account Connecting Rods Crankshafts Rotating Kits Service Parts Tech Support Catalog Calculators Closeouts Eagle Specialty Products 8530 Aaron Lane Southaven, Mississip'
+
+==== GET https://www.eaglerod.com/sitemaps/d109_a_1.xml
+   status=200 final=https://www.eaglerod.com/sitemaps/d109_a_1.xml ctype=text/xml; charset=UTF-8 server=nginx/1.11.5 cf-ray=False class=200-html
+   first 600 chars: <?xml version="1.0" encoding="UTF-8"?> <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">         <url>         <loc>https://eaglerod.com/about</loc>                     <lastmod>2026-10-08T01:35:21+00:00</lastmod>                 <changefreq>daily</changefreq>         <priority>0.95</priority>     </url>         <url>         <loc>https://eaglerod.com/contact</loc>                     <lastmod>2026-10-08T01:35:21+00:00</lastmod>                 <changefreq>daily</changefreq>         <priority>0.95</priority>     </url>         <url>         <loc>https://eaglerod.com/faq</loc>       
+
+==== GET https://www.eaglerod.com/service_parts
+   status=200 final=https://www.eaglerod.com/service_parts ctype=text/html; charset=UTF-8 server=nginx/1.11.5 cf-ray=False class=200-html
+   title='Service Parts | Eagle Specialty Products'
+   tables=0
+   FORM action=https://www.eaglerod.com/browse method=GET inputs=[('keyword', 'text')]
+   script srcs (8): ['https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js', '//netdna.bootstrapcdn.com/bootstrap/3.3.1/js/bootstrap.min.js', '/assets/js/zoombox/zoombox.js', '/assets/js/spin.min.js', '/assets/js/ladda.min.js', '/assets/js/holder.js', '/assets/js/main.js?16', '/assets/js/brands.js']
+   inline api-ish strings (0): []
+   generator: None      
+   links total=81 same-host=75
+   interesting links (3):
+      https://www.eaglerod.com/service_parts#customer-service
+      https://www.eaglerod.com/service_parts
+      https://www.eaglerod.com/current_catalog
+   pdf links (0):
+   visible words=816 | sample: 'Service Parts | Eagle Specialty Products Customer Service Toggle navigation Wish List Order Tracker Customer Service Sign In Your Account Connecting Rods Crankshafts Rotating Kits Service Parts Tech Support Catalog Calculators Closeouts Eagle Specialty Products 8530 Aaron Lane Southaven, Mississippi'

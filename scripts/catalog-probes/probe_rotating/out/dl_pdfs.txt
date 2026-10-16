@@ -1,0 +1,91 @@
+[get] 200 application/pdf https://www.us.mahle.com/media/usa/motorsports/2026-mms-ap-guide-digital.pdf
+[get] 200 application/pdf https://cdn.arp-bolts.com/ARPCatalog.pdf
+[get] 403 text/html; charset=UTF-8 https://www.manleyperformance.com/wp-content/uploads/2026/05/Updated-2022-AutoCatalog-all-pages-for-website.pdf-4-20-2026.pdf
+[get] 200 application/pdf https://nason.com.au/wp-content/uploads/2024/03/Eagle-2024-Catalog.pdf
+[get] 200 application/pdf https://uempistons.com/themes/UEM/images/Icon_catalog.pdf
+[get] 200 application/pdf https://www.cometic.com/files/catalogs/AB23.pdf
+[get] 200 application/pdf https://www.felpro.com/content/dam/marketing/North-America/felpro/pdfs/LS-Line-Card.pdf
+
+### robots www.us.mahle.com status=200 len=197
+    User-agent: searchpreview
+    Disallow: /
+    User-agent: *
+    Disallow: /search
+    User-agent: *
+    Disallow: /survey/
+    User-agent: rogerbot
+    Disallow:
+    Sitemap: https://www.us.mahle.com/sitemap.xml
+   -> 200 application/pdf saved=mahle_powerpak_2026.pdf
+
+### robots cdn.arp-bolts.com status=403 len=246
+    <?xml version="1.0" encoding="UTF-8"?><Error><Code>AccessDenied</Code><Message></Message><BucketName>arp-web-cdn</Bucket
+   -> 200 application/pdf saved=arp_catalog.pdf
+
+### robots www.manleyperformance.com status=403 len=5605
+    <!DOCTYPE html><html lang="en-US"><head><title>Just a moment...</title><meta http-equiv="Content-Type" content="text/htm
+   -> 403 text/html; charset=UTF-8 saved=manley_catalog.pdf
+
+### robots nason.com.au status=200 len=170
+    User-agent: *
+    Disallow:
+    Sitemap: https://nason.com.au/sitemap_index.xml
+   -> 200 application/pdf saved=eagle_2024_catalog.pdf
+
+### robots uempistons.com status=200 len=1392
+    User-agent: *
+    Disallow: /core/
+    Disallow: /profiles/
+    Disallow: /README.txt
+    Disallow: /web.config
+    Disallow: /admin/
+    Disallow: /comment/reply/
+    Disallow: /filter/tips
+    Disallow: /node/add/
+    Disallow: /search/
+    Disallow: /user/register
+    Disallow: /user/password
+    Disallow: /user/login
+    Disallow: /user/logout
+    Disallow: /index.php/admin/
+    Disallow: /index.php/search/
+    Disallow: /index.php/user/password
+    Disallow: /index.php/user/register
+    Disallow: /index.php/user/login
+    Disallow: /index.php/user/logout
+    Disallow: /cartpage
+    Disallow: /user/
+    Disallow: /contact_us
+    Disallow: /dealer_inquiry
+    Disallow: /*?*sort=
+    Disallow: /*?*page=
+    Disallow: /*?*combine=
+    Allow: /sites/default/files/
+    Allow: /themes/
+    Allow: /*.css$
+    Allow: /*.js$
+    User-agent: GPTBot
+    Allow: /
+    User-agent: ClaudeBot
+    Allow: /
+    User-agent: PerplexityBot
+    Allow: /
+    User-agent: Google-Extended
+    Allow: /
+    User-agent: Cohere-ai
+    Allow: /
+    User-agent: Bytespider
+   -> 200 application/pdf saved=uem_icon_catalog.pdf
+
+### robots www.cometic.com status=200 len=31
+    User-agent: *
+    Crawl-delay: 30
+   -> 200 application/pdf saved=cometic_ab23.pdf
+
+### robots www.felpro.com status=200 len=146
+    User-agent: *
+    Allow: /
+    Disallow: /data.html
+    Disallow: /data/
+    Sitemap: https://www.felpro.com/sitemap.xml
+   -> 200 application/pdf saved=felpro_ls_linecard.pdf

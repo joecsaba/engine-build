@@ -1,0 +1,43 @@
+[get] 200 text/html; charset=UTF-8 https://www.kingbearings.com/catalog/
+
+######## robots.txt www.kingbearings.com status=200 bytes=197
+    User-agent: *
+    Disallow: /wp-admin/
+    Disallow: /wp-includes/
+    Disallow: /ads-page/
+    Disallow: /ads/
+    Sitemap: http://kingbearings.com/sitemap_index.xml
+    User-agent: Yandex
+    Host: kingbearings.com
+
+==== GET https://www.kingbearings.com/catalog/
+   status=200 final=https://www.kingbearings.com/catalog/ ctype=text/html; charset=UTF-8 server=cloudflare cf-ray=True class=200-html
+   title='Catalog - King Bearings - Engine Bearing Specialists'
+   JSON-LD: {"@context":"https:\/\/schema.org","@graph":[{"@type":"WebPage","@id":"https:\/\/www.kingbearings.com\/catalog\/","url":"https:\/\/www.kingbearings.com\/catalog\/","name":"Catalog - King Bearings - Engine Bearing Specialists","isPartOf":{"@id":"https:\/\/www.kingbearings.com\/#website"},"primaryImageOfPage":{"@id":"https:\/\/www.kingbearings.com\/catalog\/#primaryimage"},"image":{"@id":"https:\/\/
+   tables=0
+   script srcs (26): ['https://www.kingbearings.com/wp-includes/js/jquery/jquery.min.js?ver=3.7.1', 'https://www.kingbearings.com/wp-includes/js/jquery/jquery-migrate.min.js?ver=3.4', 'data:text/javascript;base64,Ci8qIDwhW0NEQVRBWyAqLwp2YXIgYWpheF9vYmplY3QgPSB7ImFq', 'https://www.kingbearings.com/wp-content/cache/autoptimize/js/autoptimize_single_', 'https://www.kingbearings.com/wp-content/plugins/cleantalk-spam-protect/js/apbct-', 'https://fd.cleantalk.org/ct-bot-detector-wrapper.js?ver=6.76', 'https://www.googletagmanager.com/gtag/js?id=GT-NM8LW73', 'data:text/javascript;base64,Ci8qIDwhW0NEQVRBWyAqLwp3aW5kb3cuZGF0YUxheWVyID0gd2lu', 'https://www.googletagmanager.com/gtag/js?id=AW-736552705', 'data:text/javascript;base64,DQogIHdpbmRvdy5kYXRhTGF5ZXIgPSB3aW5kb3cuZGF0YUxheWVy']
+   inline api-ish strings (8): ['Catalog', 'SearchAction', '_ajax_nonce', '_ajax_url', 'data__ajax_type', 'search_term_string', 'settings__forms__search_test', 'wc_ajax_add_to_cart']
+   generator: WPML ver:4.6.13 stt:1,47,55; | wp-content     
+   links total=56 same-host=48
+   interesting links (12):
+      https://www.kingbearings.com/catalog/
+      https://www.kingbearings.com/catalog/?lang=tr
+      https://www.kingbearings.com/catalog/?lang=ru
+      https://www.kingbearings.com/products/aviation/
+      https://www.kingbearings.com/products/aftermarket/
+      https://www.kingbearings.com/products/pin-bushings/
+      https://www.kingbearings.com/products/oe/
+      https://www.kingbearings.com/products/racing/
+      https://www.kingbearings.com/production-technology/complementary-systems/
+      https://www.kingbearings.com/production-technology/production-line/
+      https://www.kingbearings.com/explore/identifying-king-product/
+      https://www.kingbearings.com/wp-content/uploads/2017/03/King-catalog-201-2018-Europe-2.pdf
+   pdf links (1):
+      https://www.kingbearings.com/wp-content/uploads/2017/03/King-catalog-201-2018-Europe-2.pdf
+Traceback (most recent call last):
+  File "C:\Users\Administrator\AppData\Local\Temp\claude\c--Engine-Website\089774ec-1936-43fc-bd30-20f39b1f12dd\scratchpad\probe_rotating\scripts\siteprobe.py", line 71, in <module>
+    print(f"   visible words={len(body.split())} | sample: {body[:300]!r}")
+  File "C:\Users\Administrator\AppData\Local\Programs\Python\Python312\Lib\encodings\cp1252.py", line 19, in encode
+    return codecs.charmap_encode(input,self.errors,encoding_table)[0]
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+UnicodeEncodeError: 'charmap' codec can't encode characters in position 100-106: character maps to <undefined>

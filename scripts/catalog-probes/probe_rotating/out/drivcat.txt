@@ -1,0 +1,6 @@
+[err] https://drivcat.com/PerfApplication.aspx?brand=FEL-PRO&ga=Y: HTTPSConnectionPool(host='drivcat.com', port=443): Max retries exceeded with url: /PerfApplication.aspx?brand=FEL-PRO&ga=Y (Caused by SSLError(SSLCertVerificationError(1, "[SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: Hostname mismatch, certificate is not valid for 'drivcat.com'. (_ssl.c:1010)")))
+
+######## robots.txt drivcat.com status=ERR HTTPSConnectionPool(host='drivcat.com', port=443): Max retries exceeded with url: /robots.txt (Caused by SSLError(SSLCertVerificationError(1, "[SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: Hostname mismatch, certificate is not valid for 'drivcat.com'. (_ssl.c:1010)"))) bytes=0
+
+==== GET https://drivcat.com/PerfApplication.aspx?brand=FEL-PRO&ga=Y
+   (no response / disallowed)

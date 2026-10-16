@@ -1,0 +1,133 @@
+[get] 200 text/xml; charset=UTF-8 https://www.callies.com/upcp_product-sitemap.xml
+[get] 200 text/html; charset=UTF-8 https://www.callies.com/catalog/product/compstar-small-block-chevy/
+[get] 200 text/html; charset=UTF-8 https://www.callies.com/catalog/product/ls-ultra-ud-forged/
+
+######## robots.txt www.callies.com status=200 bytes=191
+    Crawl-delay: 10
+    User-agent: *
+    Disallow:
+    Sitemap: https://www.callies.com/sitemap_index.xml
+
+==== GET https://www.callies.com/upcp_product-sitemap.xml
+   status=200 final=https://www.callies.com/upcp_product-sitemap.xml ctype=text/xml; charset=UTF-8 server=cloudflare cf-ray=True class=200-html
+   first 600 chars:   <?xml version="1.0" encoding="UTF-8"?><?xml-stylesheet type="text/xsl" href="//www.callies.com/wp-content/plugins/wordpress-seo/css/main-sitemap.xsl"?> <urlset xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:image="http://www.google.com/schemas/sitemap-image/1.1" xsi:schemaLocation="http://www.sitemaps.org/schemas/sitemap/0.9 http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd http://www.google.com/schemas/sitemap-image/1.1 http://www.google.com/schemas/sitemap-image/1.1/sitemap-image.xsd" xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"> 	<url> 		<loc>https://www.callies.
+
+==== GET https://www.callies.com/catalog/product/compstar-small-block-chevy/
+   status=200 final=https://www.callies.com/catalog/product/compstar-small-block-chevy/ ctype=text/html; charset=UTF-8 server=cloudflare cf-ray=True class=challenge
+   title='Catalog - Callies Precision Engine Components'
+   JSON-LD: {"@context":"https://schema.org","@graph":[{"@type":"WebPage","@id":"https://www.callies.com/catalog/","url":"https://www.callies.com/catalog/","name":"Catalog - Callies Precision Engine Components","isPartOf":{"@id":"https://www.callies.com/#website"},"datePublished":"2018-01-11T19:14:43+00:00","dateModified":"2022-12-22T22:54:49+00:00","breadcrumb":{"@id":"https://www.callies.com/catalog/#breadc
+   JSON-LD: {"@context":"https:\/\/schema.org","@type":"Product","name":"Compstar \u2013 Small Block Chevy","image":"https:\/\/www.callies.com\/wp-content\/uploads\/2020\/06\/Compstar-SBC.jpg","url":"https:\/\/www.callies.com\/catalog\/product\/compstar-small-block-chevy\/","offers":{"type":"Offer","price":"","url":"https:\/\/www.callies.com\/catalog\/product\/compstar-small-block-chevy\/"}}
+   tables=2
+     TR: ['Stroke', 'Main', 'Pins', 'Cammed for Rod Length', 'Part #']
+     TR: ['', '', '', '', '']
+     TR: ['3.480', '350', '2.000', '5.700', 'SAF-143-CM']
+     TR: ['3.480', '350', '2.100', '5.700', 'SAF-113-CM']
+     TR: ['Stroke', 'Main', 'Pins', 'Cammed for Rod Length', 'Part #']
+     TR: ['', '', '', '', '']
+     TR: ['3.480', '350', '2.000', '5.700', 'SAF-143-CM']
+     TR: ['3.480', '350', '2.100', '5.700', 'SAF-113-CM']
+   FORM action= method=get inputs=[('prod_name', 'text')]
+   FORM action=/catalog/product/compstar-small-block-chevy/ method=post inputs=[('input_baf6c8a8d9651f63d56494042fa96ab9', 'hidden'), ('input_3', 'text'), ('input_2', 'email'), ('gform_submission_method', 'hidden'), ('gform_theme', 'hidden'), ('gform_style_settings', 'hidden'), ('is_submit_5', 'hidden'), ('gform_submit', 'hidden')]
+   script srcs (33): ['https://app.termly.io/resource-blocker/79dadbff-b3ba-4454-a1a2-454469b61b5d?auto', 'https://www.callies.com/wp-includes/js/jquery/jquery.min.js?ver=3.7.1', 'https://www.callies.com/wp-includes/js/jquery/jquery-migrate.min.js?ver=3.4.1', 'https://www.callies.com/wp-content/plugins/responsive-lightbox/assets/dompurify/', 'https://www.callies.com/wp-content/plugins/responsive-lightbox/js/sanitizer.js?v', 'https://www.callies.com/wp-content/plugins/responsive-lightbox/assets/swipebox/j', 'https://www.callies.com/wp-includes/js/underscore.min.js?ver=1.13.8', 'https://www.callies.com/wp-content/plugins/responsive-lightbox/assets/infinitesc', 'https://www.callies.com/wp-content/plugins/responsive-lightbox/js/front.js?ver=2', 'https://www.callies.com/wp-content/plugins/wp-google-maps/wpgmza_data.js?ver=7.1']
+   inline api-ish strings (9): ['.GF_AJAX_POSTBACK', 'Catalog', 'GF_AJAX_POSTBACK', 'SearchAction', 'ajax', 'ajax_submission_nonce', 'ajaxurl', 'api', 'search_term_string']
+   generator: None | wp-content  | magento   
+   links total=200 same-host=194
+   interesting links (72):
+      https://www.callies.com/catalog/
+      https://www.callies.com/catalog/product/ultra-billet---duramax/
+      https://www.callies.com/upcp_product/cummins-ultra-billet/
+      https://www.callies.com/catalog/product/big-block-mopar-ultra-billet/
+      https://www.callies.com/catalog/product/nissan-gt-r-ultra-billet/
+      https://www.callies.com/catalog/product/small-block-chevy-ultra-billet-ub/
+      https://www.callies.com/catalog/product/big-block-chevy-ultra-billet-ub/
+      https://www.callies.com/catalog/product/ls-ultra-billet-ub/
+      https://www.callies.com/catalog/product/ford-460-ultra-billet-ub/
+      https://www.callies.com/catalog/product/gen-iii-hemi-ultra-billet-ub/
+      https://www.callies.com/catalog/product/small-block-chevy-ultra-ud-billet/
+      https://www.callies.com/catalog/product/small-block-chevy-ultra-ud-forged/
+      https://www.callies.com/catalog/product/ls-ultra-ud-billet/
+      https://www.callies.com/catalog/product/ls-ultra-ud-forged/
+      https://www.callies.com/catalog/product/small-block-ford-ultra-ud-billet/
+      https://www.callies.com/catalog/product/small-block-ford-ultra-ud-forged/
+      https://www.callies.com/catalog/product/small-block-chevy-magnum/
+      https://www.callies.com/catalog/product/big-block-chevy-magnum/
+      https://www.callies.com/catalog/product/ls-lt-magnum/
+      https://www.callies.com/catalog/product/small-block-ford-magnum/
+      https://www.callies.com/catalog/product/big-block-ford-magnum/
+      https://www.callies.com/catalog/product/mopar-magnum/
+      https://www.callies.com/catalog/product/stock-eliminator/
+      https://www.callies.com/catalog/product/tractor-ultra-billet-ub/
+      https://www.callies.com/catalog/product/apex-ls-lt/
+      https://www.callies.com/catalog/product/compstar-small-block-chevy/
+      https://www.callies.com/catalog/product/compstar-small-block-chevy-comet/
+      https://www.callies.com/catalog/product/compstar-big-block-chevy/
+      https://www.callies.com/catalog/product/compstar-ls/lt/
+      https://www.callies.com/catalog/product/compstar-small-block-ford/
+      https://www.callies.com/catalog/product/compstar-ford-coyote/
+      https://www.callies.com/catalog/product/compstar-ford-modular/
+      https://www.callies.com/catalog/product/compstar-gen-iii-hemi/
+      https://www.callies.com/catalog/product/compstar-big-block-mopar/
+      https://www.callies.com/catalog/product/compstar-viper-billet/
+   pdf links (1):
+      https://www.callies.com/wp-content/uploads/2021/12/2022Catalog-With-Covers.pdf
+   visible words=1002 | sample: 'Catalog - Callies Precision Engine Components Product Listing Crankshafts Ultra Billet Ultra Billet Duramax Ultra Billet Cummins Ultra Billet – Big Block Mopar Ultra Billet – Nissan GT-R Ultra Boost Ultra Boost – SB Chevy Ultra Boost – BB Chevy Ultra Boost – LS Ultra Boost – SB Ford Ultra Boost – BB'
+
+==== GET https://www.callies.com/catalog/product/ls-ultra-ud-forged/
+   status=200 final=https://www.callies.com/catalog/product/ls-ultra-ud-forged/ ctype=text/html; charset=UTF-8 server=cloudflare cf-ray=True class=challenge
+   title='Catalog - Callies Precision Engine Components'
+   JSON-LD: {"@context":"https://schema.org","@graph":[{"@type":"WebPage","@id":"https://www.callies.com/catalog/","url":"https://www.callies.com/catalog/","name":"Catalog - Callies Precision Engine Components","isPartOf":{"@id":"https://www.callies.com/#website"},"datePublished":"2018-01-11T19:14:43+00:00","dateModified":"2022-12-22T22:54:49+00:00","breadcrumb":{"@id":"https://www.callies.com/catalog/#breadc
+   JSON-LD: {"@context":"https:\/\/schema.org","@type":"Product","name":"LS - Ultra UD - Forged","image":"https:\/\/www.callies.com\/wp-content\/uploads\/2023\/03\/LS-Ultra-Dirt-Forged-1-scaled.jpg","url":"https:\/\/www.callies.com\/catalog\/product\/ls-ultra-ud-forged\/","offers":{"type":"Offer","price":"","url":"https:\/\/www.callies.com\/catalog\/product\/ls-ultra-ud-forged\/"}}
+   tables=2
+     TR: ['Stroke', 'Main', 'Pin', 'Cammed for rod length', 'Part #']
+     TR: ['', '', '', '', '']
+     TR: ['3.625', '2.559', '2.000', '6.125', 'APH-34V-UD']
+     TR: ['4.000', '2.559', '1.888', '6.125', 'APO-39V-UD']
+     TR: ['Stroke', 'Main', 'Pin', 'Cammed for rod length', 'Part #']
+     TR: ['', '', '', '', '']
+     TR: ['3.625', '2.559', '2.000', '6.125', 'APH-34V-UD']
+     TR: ['4.000', '2.559', '1.888', '6.125', 'APO-39V-UD']
+   FORM action= method=get inputs=[('prod_name', 'text')]
+   FORM action=/catalog/product/ls-ultra-ud-forged/ method=post inputs=[('input_baf6c8a8d9651f63d56494042fa96ab9', 'hidden'), ('input_3', 'text'), ('input_2', 'email'), ('gform_submission_method', 'hidden'), ('gform_theme', 'hidden'), ('gform_style_settings', 'hidden'), ('is_submit_5', 'hidden'), ('gform_submit', 'hidden')]
+   script srcs (33): ['https://app.termly.io/resource-blocker/79dadbff-b3ba-4454-a1a2-454469b61b5d?auto', 'https://www.callies.com/wp-includes/js/jquery/jquery.min.js?ver=3.7.1', 'https://www.callies.com/wp-includes/js/jquery/jquery-migrate.min.js?ver=3.4.1', 'https://www.callies.com/wp-content/plugins/responsive-lightbox/assets/dompurify/', 'https://www.callies.com/wp-content/plugins/responsive-lightbox/js/sanitizer.js?v', 'https://www.callies.com/wp-content/plugins/responsive-lightbox/assets/swipebox/j', 'https://www.callies.com/wp-includes/js/underscore.min.js?ver=1.13.8', 'https://www.callies.com/wp-content/plugins/responsive-lightbox/assets/infinitesc', 'https://www.callies.com/wp-content/plugins/responsive-lightbox/js/front.js?ver=2', 'https://www.callies.com/wp-content/plugins/wp-google-maps/wpgmza_data.js?ver=7.1']
+   inline api-ish strings (9): ['.GF_AJAX_POSTBACK', 'Catalog', 'GF_AJAX_POSTBACK', 'SearchAction', 'ajax', 'ajax_submission_nonce', 'ajaxurl', 'api', 'search_term_string']
+   generator: None | wp-content  | magento   
+   links total=200 same-host=194
+   interesting links (72):
+      https://www.callies.com/catalog/
+      https://www.callies.com/catalog/product/ultra-billet---duramax/
+      https://www.callies.com/upcp_product/cummins-ultra-billet/
+      https://www.callies.com/catalog/product/big-block-mopar-ultra-billet/
+      https://www.callies.com/catalog/product/nissan-gt-r-ultra-billet/
+      https://www.callies.com/catalog/product/small-block-chevy-ultra-billet-ub/
+      https://www.callies.com/catalog/product/big-block-chevy-ultra-billet-ub/
+      https://www.callies.com/catalog/product/ls-ultra-billet-ub/
+      https://www.callies.com/catalog/product/ford-460-ultra-billet-ub/
+      https://www.callies.com/catalog/product/gen-iii-hemi-ultra-billet-ub/
+      https://www.callies.com/catalog/product/small-block-chevy-ultra-ud-billet/
+      https://www.callies.com/catalog/product/small-block-chevy-ultra-ud-forged/
+      https://www.callies.com/catalog/product/ls-ultra-ud-billet/
+      https://www.callies.com/catalog/product/ls-ultra-ud-forged/
+      https://www.callies.com/catalog/product/small-block-ford-ultra-ud-billet/
+      https://www.callies.com/catalog/product/small-block-ford-ultra-ud-forged/
+      https://www.callies.com/catalog/product/small-block-chevy-magnum/
+      https://www.callies.com/catalog/product/big-block-chevy-magnum/
+      https://www.callies.com/catalog/product/ls-lt-magnum/
+      https://www.callies.com/catalog/product/small-block-ford-magnum/
+      https://www.callies.com/catalog/product/big-block-ford-magnum/
+      https://www.callies.com/catalog/product/mopar-magnum/
+      https://www.callies.com/catalog/product/stock-eliminator/
+      https://www.callies.com/catalog/product/tractor-ultra-billet-ub/
+      https://www.callies.com/catalog/product/apex-ls-lt/
+      https://www.callies.com/catalog/product/compstar-small-block-chevy/
+      https://www.callies.com/catalog/product/compstar-small-block-chevy-comet/
+      https://www.callies.com/catalog/product/compstar-big-block-chevy/
+      https://www.callies.com/catalog/product/compstar-ls/lt/
+      https://www.callies.com/catalog/product/compstar-small-block-ford/
+      https://www.callies.com/catalog/product/compstar-ford-coyote/
+      https://www.callies.com/catalog/product/compstar-ford-modular/
+      https://www.callies.com/catalog/product/compstar-gen-iii-hemi/
+      https://www.callies.com/catalog/product/compstar-big-block-mopar/
+      https://www.callies.com/catalog/product/compstar-viper-billet/
+   pdf links (1):
+      https://www.callies.com/wp-content/uploads/2021/12/2022Catalog-With-Covers.pdf
+   visible words=1036 | sample: 'Catalog - Callies Precision Engine Components Product Listing Crankshafts Ultra Billet Ultra Billet Duramax Ultra Billet Cummins Ultra Billet – Big Block Mopar Ultra Billet – Nissan GT-R Ultra Boost Ultra Boost – SB Chevy Ultra Boost – BB Chevy Ultra Boost – LS Ultra Boost – SB Ford Ultra Boost – BB'

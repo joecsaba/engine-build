@@ -1,0 +1,20 @@
+[err] https://www.us.mahle.com/en/motorsports/powerpak-pistons/: ('Connection aborted.', RemoteDisconnected('Remote end closed connection without response'))
+[get] 200 text/xml;charset=UTF-8 https://www.us.mahle.com/sitemap.xml
+
+######## robots.txt www.us.mahle.com status=200 bytes=197
+    User-agent: searchpreview
+    Disallow: /
+    User-agent: *
+    Disallow: /search
+    User-agent: *
+    Disallow: /survey/
+    User-agent: rogerbot
+    Disallow:
+    Sitemap: https://www.us.mahle.com/sitemap.xml
+
+==== GET https://www.us.mahle.com/en/motorsports/powerpak-pistons/
+   (no response / disallowed)
+
+==== GET https://www.us.mahle.com/sitemap.xml
+   status=200 final=https://www.us.mahle.com/sitemap.xml ctype=text/xml;charset=UTF-8 server=Apache cf-ray=False class=200-html
+   first 600 chars: <?xml version="1.0" encoding="UTF-8"?> <sitemapindex xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"> <sitemap><loc>http://www.us.mahle.com/en/system/sitemap_press.jsp</loc><lastmod>2026-10-15T14:06:24+02:00</lastmod></sitemap>       <sitemap><loc>http://www.us.mahle.com/en/system/sitemap_pages_us.xml</loc><lastmod>2026-10-15T14:06:24+02:00</lastmod></sitemap>  </sitemapindex>

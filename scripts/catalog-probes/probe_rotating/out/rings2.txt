@@ -1,0 +1,235 @@
+[get] 200 text/html; charset=utf-8 https://www.totalseal.com/support-and-downloads
+[get] 200 text/html; charset=utf-8 https://store.totalseal.com/
+[get] 200 text/html; charset=utf-8 https://store.totalseal.com/collections/all
+
+######## robots.txt www.totalseal.com status=200 bytes=0
+
+==== GET https://www.totalseal.com/support-and-downloads
+   status=200 final=https://www.totalseal.com/support-and-downloads ctype=text/html; charset=utf-8 server=cloudflare cf-ray=True class=200-html
+   title='Support and Downloads'
+   tables=0
+   FORM action=/search method=None inputs=[('query', 'search')]
+   FORM action=/search method=None inputs=[('query', 'search')]
+   script srcs (7): ['https://ajax.googleapis.com/ajax/libs/webfont/1.6.26/webfont.js', 'https://d3e54v103j8qbb.cloudfront.net/js/jquery-3.5.1.min.dc5e7f18c8.js?site=65d', 'https://cdn.prod.website-files.com/65d64154830620fc6bbc3cc0/js/ts-v2-e2fd0f.schu', 'https://cdn.prod.website-files.com/65d64154830620fc6bbc3cc0/js/ts-v2-e2fd0f.schu', 'https://cdn.prod.website-files.com/65d64154830620fc6bbc3cc0/js/ts-v2-e2fd0f.schu', 'https://cdn.prod.website-files.com/65d64154830620fc6bbc3cc0/js/ts-v2-e2fd0f.fa5b', 'https://www.googletagmanager.com/gtag/js?id=G-N6N482B2G6']
+   inline api-ish strings (0): []
+   generator: None   | magento   
+   links total=51 same-host=33
+   interesting links (7):
+      https://www.totalseal.com/applications/competition-applications
+      https://www.totalseal.com/applications/diesel
+      https://www.totalseal.com/applications/vintage-applications
+      https://www.totalseal.com/applications/specialty-applications
+      https://www.totalseal.com/applications/marine-applications
+      https://www.totalseal.com/applications/aviation-applications
+      https://www.totalseal.com/support-and-downloads
+   pdf links (5):
+      https://cdn.prod.website-files.com/63c09fc6be97f00613090411/63c09fc6be97f033a70905c1_TS_AP-Plus%20flyer.pdf
+      https://cdn.prod.website-files.com/63c09fc6be97f00613090411/63c09fc6be97f0447b0904c3_GAPCHART.pdf
+      https://cdn.prod.website-files.com/63c09fc6be97f00613090411/63c09fc6be97f04df30904c2_InstallationSheet2010_2.pdf
+      https://cdn.prod.website-files.com/63c09fc6be97f00613090411/6465321ce89758622572443b_New_8page_ProductHighlightFlyer.pdf
+      https://cdn.prod.website-files.com/65d64154830620fc6bbc3cc0/6668bcd76f9a35ede1e30f2e_TS_2022_CAT_WEB.pdf
+   visible words=894 | sample: 'Support and Downloads JOB FAIR RINGS ALL RINGS PAGE FIND A RING FORM AP Plus Rings AP Steel Rings Claimer Rings Diamond Finish Rings Diesel Rings Gapless Rings Gas Ported Rings Gold Finish Premium Rings HSS Diesel Rings M2 Tool Steel Rings NDurance Oil Rings Severe Duty Diesel Rings Severe Duty Gas '
+
+######## robots.txt store.totalseal.com status=200 bytes=3673
+    User-agent: *
+    Allow: /
+    Allow: /products/account
+    Allow: /products/orders
+    Allow: /products/checkout
+    Allow: /*/products/account
+    Allow: /*/products/orders
+    Allow: /*/products/checkout
+    Allow: /collections/account
+    Allow: /collections/orders
+    Allow: /collections/checkout
+    Allow: /*/collections/account
+    Allow: /*/collections/orders
+    Allow: /*/collections/checkout
+    Allow: /pages/checkout
+    Allow: /*/pages/checkout
+    Allow: /blogs/*account
+    Allow: /blogs/*orders
+    Allow: /blogs/*checkout
+    Allow: /*/blogs/*account
+    Allow: /*/blogs/*orders
+    Allow: /*/blogs/*checkout
+    Disallow: /admin
+    Disallow: /cart/
+    Disallow: /*/cart/
+    Disallow: /checkout
+    Disallow: /*/checkout
+    Disallow: /checkouts/
+    Disallow: /*/checkouts/
+    Disallow: /orders
+    Disallow: /*/orders
+    Allow: /account/login
+    Allow: /*/account/login
+    Disallow: /account
+    Disallow: /*/account
+    Disallow: /54865658049
+    Disallow: /cdn/wpm/*.js
+    Disallow: /services
+    Disallow: /sf_*
+    Disallow: /cart.js
+    Disallow: /*/cart.js
+    Disallow: /recommendations/products
+    Disallow: /*/recommendations/products
+    Disallow: /collections/*sort_by*
+    Disallow: /*/collections/*sort_by*
+    Disallow: /collections/*+*
+    Disallow: /collections/*%2B*
+    Disallow: /collections/*%2b*
+    Disallow: /*/collections/*+*
+    Disallow: /*/collections/*%2B*
+    ... (38 more lines)
+
+==== GET https://store.totalseal.com/
+   status=200 final=https://store.totalseal.com/ ctype=text/html; charset=utf-8 server=cloudflare cf-ray=True class=200-html
+   title='Total Seal, Inc.'
+   JSON-LD:    {     "@context": "https://schema.org",     "@type": "BreadcrumbList",   "itemListElement": [{       "@type": "ListItem",       "position": 1,       "name": "Home",       "item": "https://store.totalseal.com"     }]   }   
+   JSON-LD:      {       "@context": "https://schema.org",       "@type": "WebSite",       "name": "Total Seal, Inc.",       "url": "https:\/\/store.totalseal.com",       "potentialAction": {         "@type": "SearchAction",         "target": "https:\/\/store.totalseal.com\/search?q={search_term_string}",         "query-input": "required name=search_term_string"       }     }   
+   tables=0
+   FORM action=/search method=get inputs=[('type', 'hidden'), ('q', 'text')]
+   FORM action=/cart method=post inputs=[('attributes[collection_products_per_page]', 'hidden'), ('attributes[collection_layout]', 'hidden')]
+   FORM action=None method=None inputs=[]
+   FORM action=/localization method=post inputs=[('form_type', 'hidden'), ('utf8', 'hidden'), ('_method', 'hidden'), ('return_to', 'hidden'), ('country_code', 'hidden')]
+   script srcs (14): ['/checkouts/internal/preloads.js?locale=en-US&default_configuration_id=326303937', 'https://shop.app/checkouts/internal/preloads.js?locale=en-US&default_configurati', 'https://cdn.shopify.com/shopifycloud/shop-js/modules/v2/loader.init-shop-cart-sy', '//store.totalseal.com/cdn/shopifycloud/storefront/assets/storefront/load_feature', '//store.totalseal.com/cdn/shopifycloud/storefront/assets/shopify_pay/storefront-', '//cdn.shopify.com/shopifycloud/storefront/assets/storefront/origin_trials-318ab4', '//store.totalseal.com/cdn/shop/t/8/assets/theme.js?v=100826050309035837771716392', '//store.totalseal.com/cdn/shop/t/8/assets/custom.js?v=10247649535592194614171639', 'https://store.totalseal.com/cdn/shopifycloud/perf-kit/shopify-perf-kit-3.11.0.mi', 'https://cdn.shopify.com/extensions/0199a438-2b43-7d72-ba8c-f8472dfb5cdc/promotio']
+   inline api-ish strings (17): ['Search', 'SearchAction', 'apiClientId', 'data-searchbox-style', 'facebookCapiEnabled', 'init-shop-email-lookup-coordinator', 'manager_api_unavailable', 'modules/v2/loader.init-shop-email-lookup-coordinator.en.esm.js', 'predictiveSearch', 'search_btn_bg_color', 'search_btn_font_color', 'search_btn_img', 'search_button', 'search_shop_policies_and_faqs', 'searchbox_title', 'ymm_search', 'ymm_searchbox']
+   generator: None  | shopify   | webflow 
+   links total=36 same-host=26
+   interesting links (1):
+      https://store.totalseal.com/search
+   pdf links (0):
+   visible words=314 | sample: 'Total Seal, Inc. Skip to content Store Homepage CLEARANCE RINGS! Search Replacement Rings Ring Sets Tools Lubricants Apparel Main Total Seal Site -> Need help? Call us 800-874-2753 info@totalseal.com Follow Us Facebook Instagram YouTube Total Seal, Inc. Clear Close Login / Signup My account 0 Cart Y'
+
+==== GET https://store.totalseal.com/collections/all
+   status=200 final=https://store.totalseal.com/collections/all ctype=text/html; charset=utf-8 server=cloudflare cf-ray=True class=200-html
+   title='Products'
+   JSON-LD:    {     "@context": "https://schema.org",     "@type": "BreadcrumbList",   "itemListElement": [{       "@type": "ListItem",       "position": 1,       "name": "Home",       "item": "https://store.totalseal.com"     },{           "@type": "ListItem",           "position": 2,           "name": "Products",           "item": "https://store.totalseal.com/collections/all"         }]   }   
+   tables=0
+   FORM action=/search method=get inputs=[('type', 'hidden'), ('q', 'text')]
+   FORM action=/cart method=post inputs=[('attributes[collection_products_per_page]', 'hidden'), ('attributes[collection_layout]', 'hidden')]
+   FORM action=/cart/add method=post inputs=[('form_type', 'hidden'), ('utf8', 'hidden'), ('quantity', 'hidden'), ('id', 'hidden'), ('product-id', 'hidden'), ('section-id', 'hidden')]
+   FORM action=/cart/add method=post inputs=[('form_type', 'hidden'), ('utf8', 'hidden'), ('quantity', 'hidden'), ('id', 'hidden'), ('product-id', 'hidden'), ('section-id', 'hidden')][get] 403 text/html http://www.hastingsmfg.com/
+[err] https://hastingsmfg.com/: HTTPSConnectionPool(host='hastingsmfg.com', port=443): Max retries exceeded with url: / (Caused by SSLError(SSLCertVerificationError(1, '[SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: unable to get local issuer certificate (_ssl.c:1010)')))
+[get] 200 text/html;charset=UTF-8 https://www.mahle-aftermarket.com/na/en/
+
+   FORM action=/cart/add method=post inputs=[('form_type', 'hidden'), ('utf8', 'hidden'), ('quantity', 'hidden'), ('id', 'hidden'), ('product-id', 'hidden'), ('section-id', 'hidden')]
+   script srcs (14): ['/checkouts/internal/preloads.js?locale=en-US&default_configuration_id=326303937', 'https://shop.app/checkouts/internal/preloads.js?locale=en-US&default_configurati', 'https://cdn.shopify.com/shopifycloud/shop-js/modules/v2/loader.init-shop-cart-sy', '//store.totalseal.com/cdn/shopifycloud/storefront/assets/storefront/load_feature', '//store.totalseal.com/cdn/shopifycloud/storefront/assets/shopify_pay/storefront-', '//cdn.shopify.com/shopifycloud/storefront/assets/storefront/origin_trials-318ab4', '//store.totalseal.com/cdn/shop/t/8/assets/theme.js?v=100826050309035837771716392', '//store.totalseal.com/cdn/shop/t/8/assets/custom.js?v=10247649535592194614171639', 'https://store.totalseal.com/cdn/shopifycloud/perf-kit/shopify-perf-kit-3.11.0.mi', 'https://cdn.shopify.com/extensions/01a1016a-3ad3-7350-a37b-c146ea3f5478/year-mak']
+   inline api-ish strings (16): ['Search', 'apiClientId', 'data-searchbox-style', 'facebookCapiEnabled', 'init-shop-email-lookup-coordinator', 'manager_api_unavailable', 'modules/v2/loader.init-shop-email-lookup-coordinator.en.esm.js', 'predictiveSearch', 'search_btn_bg_color', 'search_btn_font_color', 'search_btn_img', 'search_button', 'search_shop_policies_and_faqs', 'searchbox_title', 'ymm_search', 'ymm_searchbox']
+   generator: None  | shopify   | webflow 
+   links total=83 same-host=75
+   interesting links (25):
+      https://store.totalseal.com/search
+      https://store.totalseal.com/products/001-018750-0930-082-cast-comp
+      https://store.totalseal.com/products/001-018750-1235-070-cast-comp
+      https://store.totalseal.com/products/001-019375-0930-085-cast-comp
+      https://store.totalseal.com/products/001-020000-1235-085-cast-comp
+      https://store.totalseal.com/products/001-020500-0775-094-cast-comp
+      https://store.totalseal.com/products/001-020725-0930-085-cast-comp
+      https://store.totalseal.com/products/001-020925-0620-092-cast-comp
+      https://store.totalseal.com/products/001-020925-0930-085-cast-comp
+      https://store.totalseal.com/products/001-020925-0930-090-cast-comp
+      https://store.totalseal.com/products/001-021125-0930-085-cast-comp
+      https://store.totalseal.com/products/001-021250-0620-090-cast-comp
+      https://store.totalseal.com/products/001-021450-0775-102-cast-comp
+      https://store.totalseal.com/products/001-021750-0775-104-cast-comp
+      https://store.totalseal.com/products/001-021850-0620-090-cast-comp
+      https://store.totalseal.com/products/001-022050-0965-097-cast-comp
+      https://store.totalseal.com/products/001-022250-0965-097-cast-comp
+      https://store.totalseal.com/products/001-022300-0775-097-cast-comp
+      https://store.totalseal.com/products/001-022800-0690-085-cast-comp
+      https://store.totalseal.com/products/001-023000-0690-086-cast-comp
+      https://store.totalseal.com/products/001-023025-0675-111-cast-comp
+      https://store.totalseal.com/products/001-023125-0930-105-cast-comp
+      https://store.totalseal.com/products/001-023425-0965-086-cast-comp
+      https://store.totalseal.com/products/001-023750-0930-113-cast-comp
+      https://store.totalseal.com/products/001-023800-0620-104-cast-comp
+   pdf links (0):
+   visible words=548 | sample: 'Products Skip to content Store Homepage CLEARANCE RINGS! Search Replacement Rings Ring Sets Tools Lubricants Apparel Main Total Seal Site -> Need help? Call us 800-874-2753 info@totalseal.com Follow Us Facebook Instagram YouTube Total Seal, Inc. Clear Close Login / Signup My account 0 Cart Your cart'
+
+######## robots.txt www.hastingsmfg.com status=403 bytes=52
+    403 - Forbidden | Access to this page is forbidden.
+
+==== GET http://www.hastingsmfg.com/
+   status=403 final=https://hastingspistonrings.com/ ctype=text/html server=nginx cf-ray=False class=403
+   title=''
+   tables=0
+   script srcs (0): []
+   inline api-ish strings (0): []
+   generator: None      
+   links total=0 same-host=0
+   interesting links (0):
+   pdf links (0):
+   visible words=10 | sample: '403 - Forbidden | Access to this page is forbidden.'
+
+######## robots.txt hastingsmfg.com status=ERR HTTPSConnectionPool(host='hastingsmfg.com', port=443): Max retries exceeded with url: /robots.txt (Caused by SSLError(SSLCertVerificationError(1, '[SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: unable to get local issuer certificate (_ssl.c:1010)'))) bytes=0
+
+==== GET https://hastingsmfg.com/
+   (no response / disallowed)
+
+######## robots.txt www.mahle-aftermarket.com status=200 bytes=206
+    User-agent: searchpreview
+    Disallow: /
+    User-agent: *
+    Disallow: /search
+    User-agent: *
+    Disallow: /survey/
+    User-agent: rogerbot
+    Disallow:
+    Sitemap: https://www.mahle-aftermarket.com/sitemap.xml
+
+==== GET https://www.mahle-aftermarket.com/na/en/
+   status=200 final=https://www.mahle-aftermarket.com/na/en/ ctype=text/html;charset=UTF-8 server=Apache cf-ray=False class=200-html
+   title='MAHLE Aftermarket North America | A broad product portfolio in original equipment quality'
+   tables=0
+   FORM action=/na/en/search/ method=None inputs=[('q', 'text')]
+   script srcs (4): ['/media/system_files/js/vendor/modernizr-full-3-3-1.js', '/media/system_files/js/plugins.js', '/media/system_files/js/minified.js?ts=1765287259647', '/media/system_files/js/shariffjs.js']
+   inline api-ish strings (0): []
+   generator: None   | magento   
+   links total=143 same-host=129
+   interesting links (43):
+      https://www.mahle-aftermarket.com/na/en/search/
+      https://www.mahle-aftermarket.com/na/en/products-and-services/
+      https://www.mahle-aftermarket.com/na/en/products-and-services/thermal-management/index-2.jsp
+      https://www.mahle-aftermarket.com/na/en/products-and-services/filters/
+      https://www.mahle-aftermarket.com/na/en/products-and-services/filters/air-filters/
+      https://www.mahle-aftermarket.com/na/en/products-and-services/filters/air-drying-cartridges/
+      https://www.mahle-aftermarket.com/na/en/products-and-services/filters/oil-filters/
+      https://www.mahle-aftermarket.com/na/en/products-and-services/filters/fuel-filters/
+      https://www.mahle-aftermarket.com/na/en/products-and-services/filters/cabin-air-filters/
+      https://www.mahle-aftermarket.com/na/en/products-and-services/filters/filter-media/
+      https://www.mahle-aftermarket.com/na/en/products-and-services/gaskets/
+      https://www.mahle-aftermarket.com/na/en/products-and-services/engine-components/
+      https://www.mahle-aftermarket.com/na/en/products-and-services/engine-components/light-vehicle/
+      https://www.mahle-aftermarket.com/na/en/products-and-services/engine-components/heavy-duty/
+      https://www.mahle-aftermarket.com/na/en/products-and-services/engine-components/performance/
+      https://www.mahle-aftermarket.com/eu/en/products-and-services/heavy-duty-engine-kits/
+      https://www.mahle-aftermarket.com/na/en/products-and-services/rotating-electric/
+      https://www.mahle-aftermarket.com/na/en/products-and-services/rotating-electric/alternators/
+      https://www.mahle-aftermarket.com/na/en/products-and-services/rotating-electric/electric-drive-systems/
+      https://www.mahle-aftermarket.com/na/en/products-and-services/rotating-electric/starters/
+      https://www.mahle-aftermarket.com/na/en/products-and-services/shop-equipment/
+      https://www.mahle-aftermarket.com/na/en/products-and-services/patents/
+      https://www.mahle-aftermarket.com/na/en/catalogs-and-literature/
+      https://www.mahle-aftermarket.com/na/en/catalogs-and-literature/catalog-pdfs/
+      https://www.mahle-aftermarket.com/na/en/catalogs-and-literature/literature/
+      https://www.mahle-aftermarket.com/na/en/catalogs-and-literature/literature/engine-periphery/
+      https://www.mahle-aftermarket.com/na/en/catalogs-and-literature/literature/engine-bearings/
+      https://www.mahle-aftermarket.com/na/en/catalogs-and-literature/literature/filters/[err] https://catalog.mahle-aftermarket.com/: HTTPSConnectionPool(host='catalog.mahle-aftermarket.com', port=443): Max retries exceeded with url: / (Caused by SSLError(SSLCertVerificationError(1, '[SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: unable to get local issuer certificate (_ssl.c:1010)')))
+
+      https://www.mahle-aftermarket.com/na/en/catalogs-and-literature/literature/gaskets/
+      https://www.mahle-aftermarket.com/na/en/catalogs-and-literature/literature/engine-parts/
+      https://www.mahle-aftermarket.com/na/en/catalogs-and-literature/literature/thermostats/
+      https://www.mahle-aftermarket.com/na/en/catalogs-and-literature/literature/rotating-electric/
+      https://www.mahle-aftermarket.com/na/en/catalogs-and-literature/new-number-announcements/
+      https://www.mahle-aftermarket.com/na/en/catalogs-and-literature/new-number-announcements/2019-archives/
+      https://www.mahle-aftermarket.com/na/en/catalogs-and-literature/new-number-announcements/2020-archives/
+   pdf links (1):
+      https://www.mahle-aftermarket.com/media/local-media-north-america/pdfs-&-thumbnails/catalogs-and-literature/gaskets/ga-20-26_web.pdf
+   visible words=597 | sample: 'MAHLE Aftermarket North America | A broad product portfolio in original equipment quality Jump to main content Press Press Overview MAHLE Aftermarket News MAHLE Group News Tradeshow & Events Multimedia Tradeshow & Events Tradeshow & Events Career MAHLE.COM Customer login Aftermarket worldwide Afterm'
+
+######## robots.txt catalog.mahle-aftermarket.com status=ERR HTTPSConnectionPool(host='catalog.mahle-aftermarket.com', port=443): Max retries exceeded with url: /robots.txt (Caused by SSLError(SSLCertVerificationError(1, '[SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: unable to get local issuer certificate (_ssl.c:1010)'))) bytes=0
+
+==== GET https://catalog.mahle-aftermarket.com/
+   (no response / disallowed)

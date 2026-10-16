@@ -1,0 +1,33 @@
+[get] 200 text/html; charset=UTF-8 https://www.cometic.com/
+[get] 200 application/xml https://www.cometic.com/sitemap.xml
+
+######## robots.txt www.cometic.com status=200 bytes=31
+    User-agent: *
+    Crawl-delay: 30
+
+==== GET https://www.cometic.com/
+   status=200 final=https://www.cometic.com/ ctype=text/html; charset=UTF-8 server=nginx/1.31.6 cf-ray=False class=200-html
+   title='Cometic Gasket - Sealed Under Extreme Pressure'
+   tables=0
+   FORM action=products method=post inputs=[('vehicle_manufacturer', 'select'), ('vehicle_model', 'select'), ('vehicle_year', 'select')]
+   FORM action=products method=post inputs=[('engine_manufacturer', 'select'), ('engine_family', 'select'), ('engine_size', 'select')]
+   FORM action=products method=post inputs=[('engine_manufacturer', 'select'), ('engine_family', 'select'), ('engine_size', 'select')]
+   FORM action=products method=post inputs=[('vehicle_manufacturer', 'select'), ('vehicle_model', 'select'), ('vehicle_year', 'select')]
+   FORM action=products method=post inputs=[('search_text', 'text')]
+   script srcs (4): ['js/jquery-3.7.1.min.js', 'https://hello.zonos.com/hello.js?siteKey=1OVDH76Q1KHS0', 'js/site.js?1790741533', 'https://snapwidget.com/js/snapwidget.js']
+   inline api-ish strings (1): ['/inc/search.php?action=query&search_text=']
+   generator: None      
+   links total=111 same-host=105
+   interesting links (6):
+      https://www.cometic.com/applications/automotive
+      https://www.cometic.com/applications/powersports
+      https://www.cometic.com/applications/v-twin
+      https://www.cometic.com/applications/marine
+      https://www.cometic.com/catalogs
+      https://www.cometic.com/partners
+   pdf links (0):
+   visible words=1321 | sample: 'Cometic Gasket - Sealed Under Extreme Pressure Gaskets By Category Air Cleaner Mounting Stud Kit Auto Trans Flexplate Mounting Bolt Auto Trans Torque Converter Bolt Bottom End Gasket Kit Camshaft Change Gasket Set Camshaft Housing Gasket Camshaft Retainer Gasket Camshaft Seal Camshaft Seal Kit Carbu'
+
+==== GET https://www.cometic.com/sitemap.xml
+   status=200 final=https://www.cometic.com/sitemap.xml ctype=application/xml server=nginx/1.31.6 cf-ray=False class=200-html
+   first 600 chars: <?xml version="1.0" encoding="UTF-8"?> <urlset xmlns="https://www.sitemaps.org/schemas/sitemap/0.9"> <!--XML Sitemap created by Sitemap Automator 3.7 https://www.ragesw.com--> 	<url> 		<loc>https://www.cometic.com</loc> 		<priority>0.5</priority> 	</url> 	<url> 		<loc>https://www.cometic.com/cart</loc> 		<priority>0.5</priority> 	</url> 	<url> 		<loc>https://www.cometic.com/category/air-cleaner-mounting-stud-kit</loc> 		<priority>0.5</priority> 	</url> 	<url> 		<loc>https://www.cometic.com/category/auto-trans-flexplate-mounting-bolt</loc> 		<priority>0.5</priority> 	</url> 	<url> 		<loc>https:
