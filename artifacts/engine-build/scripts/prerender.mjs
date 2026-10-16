@@ -28,6 +28,7 @@ import { writeBuilderEngines } from "./builderEngines.mjs";
 import { loadCams, writeCamRuntime } from "./camData.mjs";
 import { buildCamCatalog } from "./camCatalog.mjs";
 import { buildCamFitment } from "./camFitment.mjs";
+import { buildPartsCatalog } from "./partsCatalog.mjs";
 import CAM_GUIDE from "../src/data/pageContent/cam-guide.mjs";
 
 const __dirname = dirname(fileURLToPath(import.meta.url));
@@ -1174,6 +1175,11 @@ async function main() {
   // Part-number lookup for the engine builder (CAM_DATABASE + Howards catalog).
   const camCatalog = buildCamCatalog([resolve(DIST, "data")]);
   console.log(`prerender: cam catalog — ${camCatalog.total} cams (${camCatalog.howards} Howards)`);
+  // Manufacturer parts catalog, split per engine family (scripts/parts-catalog/out → data/parts/).
+  const partsCatalog = buildPartsCatalog([resolve(DIST, "data")]);
+  console.log(partsCatalog.skipped
+    ? `prerender: parts catalog skipped (${partsCatalog.skipped})`
+    : `prerender: parts catalog — ${partsCatalog.records} parts, ${partsCatalog.families} families (${partsCatalog.known} known)`);
   // The runtime JSON above is written to public/data/, but Vite copied public/
   // into dist/ before this script ran, so without this copy every deploy
   // shipped the previous build's data (and a clean checkout shipped none).
