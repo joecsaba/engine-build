@@ -1,0 +1,4865 @@
+{
+ "source": {
+  "task": "FLEECE",
+  "brand": "Fleece Performance",
+  "doc": "fleeceperformance.com product pages (JSON-LD + fitment/interchange/certification tabs)",
+  "edition": "2026-10",
+  "host": "www.fleeceperformance.com",
+  "sitemap": "https://www.fleeceperformance.com/sitemap.xml",
+  "fitmentPdfs": [
+   "https://www.fleeceperformance.com/media/wysiwyg/Fleece_and_Titan_Powerflo_Fitment.pdf",
+   "https://www.fleeceperformance.com/media/wysiwyg/Fleece_SB_PF_SF_Fitment.pdf"
+  ],
+  "robots": "no Crawl-delay; /catalog/product/view/, /catalog/category/view/ and /index.php/ disallowed (not requested)",
+  "userAgent": "engine-build.com catalog research (contact: joecsaba@gmail.com)",
+  "productPages": 616,
+  "pagesMissing": 0
+ },
+ "extracted": "2026-10-16",
+ "count": 114,
+ "parts": [
+  {
+   "m": "Fleece Performance",
+   "p": "FPE-34754",
+   "cat": "liftPump",
+   "name": "fuel system kit with PowerFlo lift pump, to 800 HP, 1998-2002, Cummins 5.9 24V/CR",
+   "fit": {
+    "fam": "Cummins 5.9 24V/CR",
+    "ci": [
+     359
+    ],
+    "cyl": 6,
+    "y0": 1998,
+    "y1": 2002,
+    "notes": "from 1998.5, Ram 2500/3500"
+   },
+   "spec": {
+    "type": "in-tank",
+    "kit": true,
+    "psiLow": 15,
+    "psiHigh": 17,
+    "filtration": "3 micron",
+    "hpCapable": 800,
+    "hpBasis": "HP",
+    "pumpType": "dual gerotor",
+    "biodieselMaxPct": 20,
+    "replacesOem": [
+     "4897668AF",
+     "4897668AG",
+     "4897668AH",
+     "4897668AI"
+    ],
+    "upc": "670875716742",
+    "semaCert": "SC-FLC01-0095"
+   },
+   "src": {
+    "doc": "fleeceperformance.com product pages (JSON-LD + fitment/interchange/certification tabs)",
+    "edition": "2026-10",
+    "url": "https://www.fleeceperformance.com/1998-5-2002-dodge-powerflo-in-tank-lift-pump-assembly.html"
+   },
+   "emissions": null
+  },
+  {
+   "m": "Fleece Performance",
+   "p": "FPE-PF-GM-0104",
+   "cat": "liftPump",
+   "name": "PowerFlo lift pump, 2001-2004, Duramax 6.6",
+   "fit": {
+    "fam": "Duramax 6.6",
+    "ci": [
+     403
+    ],
+    "cyl": 8,
+    "y0": 2001,
+    "y1": 2004,
+    "notes": "LB7, GM Silverado/Sierra 2500/3500"
+   },
+   "spec": {
+    "type": "in-tank",
+    "psiLow": 6,
+    "psiHigh": 8,
+    "biodieselMaxPct": 20,
+    "outletThread": "3/4 in-16 (-8 ORB)",
+    "upc": "670875717527"
+   },
+   "src": {
+    "doc": "fleeceperformance.com product pages (JSON-LD + fitment/interchange/certification tabs)",
+    "edition": "2026-10",
+    "url": "https://www.fleeceperformance.com/2001-2004-lb7-duramax-powerflo-in-tank-lift-pump.html"
+   },
+   "emissions": "carb_eo:D-834-28"
+  },
+  {
+   "m": "Fleece Performance",
+   "p": "FPE-34789",
+   "cat": "liftPump",
+   "name": "PowerFlo lift pump, to 800 HP, 2004-2007, Duramax 6.6",
+   "fit": {
+    "fam": "Duramax 6.6",
+    "ci": [
+     403
+    ],
+    "cyl": 8,
+    "y0": 2004,
+    "y1": 2007,
+    "notes": "from 2004.5, LBZ/LLY, GM Silverado/Sierra 2500/3500"
+   },
+   "spec": {
+    "type": "in-tank",
+    "psiLow": 10,
+    "psiHigh": 13,
+    "hpCapable": 800,
+    "hpBasis": "HP",
+    "pumpType": "dual gerotor",
+    "biodieselMaxPct": 20,
+    "outletThread": "3/4 in-16 (-8 ORB)",
+    "replacesOem": [
+     "19152169",
+     "19206540",
+     "19303427",
+     "19303428",
+     "19331306",
+     "19331307",
+     "MU1228"
+    ],
+    "aftermarketTankFitment": [
+     {
+      "tank": "Titan 7010201",
+      "make": "GM",
+      "model": "2500 & 3500",
+      "years": "2004.5-2010",
+      "cab": "Crew",
+      "bed": "Short Bed",
+      "pumpModelYears": "MY2004.5-2007",
+      "lockingRing": true
+     },
+     {
+      "tank": "Titan 7010301",
+      "make": "GM",
+      "model": "2500 & 3500",
+      "years": "2004.5-2010",
+      "cab": "Crew",
+      "bed": "Long Bed",
+      "pumpModelYears": "MY2004.5-2007",
+      "lockingRing": false
+     }
+    ],
+    "upc": "670875716780",
+    "semaCert": "SC-FLC01-0051"
+   },
+   "src": {
+    "doc": "fleeceperformance.com product pages (JSON-LD + fitment/interchange/certification tabs)",
+    "edition": "2026-10",
+    "url": "https://www.fleeceperformance.com/2004-5-2010-duramax-powerflo-in-tank-lift-pump.html",
+    "alsoFrom": "fleeceperformance.com Fleece_and_Titan_Powerflo_Fitment.pdf / Fleece_SB_PF_SF_Fitment.pdf"
+   },
+   "emissions": "carb_eo:D-834-11"
+  },
+  {
+   "m": "Fleece Performance",
+   "p": "FPE-VNT63-STREET",
+   "cat": "turbo",
+   "name": "Cheetah turbo, 63 mm compressor, 66 mm turbine, VGT, to 625 RWHP, 2004-2010, Duramax 6.6",
+   "fit": {
+    "fam": "Duramax 6.6",
+    "ci": [
+     403
+    ],
+    "cyl": 8,
+    "y0": 2004,
+    "y1": 2010,
+    "notes": "from 2004.5, LBZ/LLY/LMM, GM Silverado/Sierra 2500/3500"
+   },
+   "spec": {
+    "compressorInducer": 63,
+    "turbineWheel": 66,
+    "vgt": true,
+    "series": "Cheetah",
+    "compressorWheel": "FMW (forged milled)",
+    "hpCapable": 625,
+    "hpBasis": "RWHP",
+    "boostPsiMax": 45,
+    "condition": "new",
+    "replacesOem": [
+     "12639460",
+     "97387896",
+     "98002388",
+     "98002389",
+     "98011735",
+     "98021617",
+     "98065854",
+     "848212-5001S"
+    ],
+    "upc": "670875715004",
+    "semaCert": "SC-FLC01-0041"
+   },
+   "src": {
+    "doc": "fleeceperformance.com product pages (JSON-LD + fitment/interchange/certification tabs)",
+    "edition": "2026-10",
+    "url": "https://www.fleeceperformance.com/2004-5-2010-lly-lbz-lmm-duramax-63mm-fmw-cheetah-turbocharger-street.html"
+   },
+   "emissions": "carb_eo:D-834-25"
+  },
+  {
+   "m": "Fleece Performance",
+   "p": "FPE-34560",
+   "cat": "liftPump",
+   "name": "PowerFlo lift pump, to 800 HP, 2005-2007, Cummins 5.9 24V/CR",
+   "fit": {
+    "fam": "Cummins 5.9 24V/CR",
+    "ci": [
+     359
+    ],
+    "cyl": 6,
+    "y0": 2005,
+    "y1": 2007,
+    "notes": "Ram 2500/3500"
+   },
+   "spec": {
+    "type": "in-tank",
+    "psiLow": 18,
+    "psiHigh": 20,
+    "hpCapable": 800,
+    "hpBasis": "HP",
+    "pumpType": "dual gerotor",
+    "biodieselMaxPct": 20,
+    "cabChassis": false,
+    "retainsWif": true,
+    "outletThread": "3/4 in-16 (-8 ORB)",
+    "replacesOem": [
+     "5143160AA",
+     "5143160AB",
+     "68002062AB",
+     "68003465AA",
+     "RL143160AB"
+    ],
+    "aftermarketTankFitment": [
+     {
+      "tank": "Titan 7030303",
+      "make": "DODGE/RAM",
+      "model": "2500 & 3500",
+      "years": "2005-2012",
+      "cab": "Crew",
+      "bed": "Long Bed",
+      "pumpModelYears": "MY2005-09",
+      "lockingRing": false
+     },
+     {
+      "tank": "S&B 10-1021-1",
+      "make": "DODGE/RAM",
+      "model": "2500 & 3500",
+      "years": "2005-2023",
+      "cab": "Crew Cab / Quad Cab",
+      "bed": "Short Bed",
+      "pumpModelYears": "MY2005-09",
+      "tankGal": 52
+     },
+     {
+      "tank": "S&B 10-1018",
+      "make": "DODGE/RAM",
+      "model": "2500 & 3500",
+      "years": "2005-2012",
+      "cab": "Crew Cab",
+      "bed": "Long Bed",
+      "pumpModelYears": "MY2005-09",
+      "tankGal": 60
+     },
+     {
+      "tank": "S&B 10-1009",
+      "make": "DODGE/RAM",
+      "model": "2500 & 3500",
+      "years": "2006-2024",
+      "cab": "Mega Cab",
+      "bed": "Short Bed",
+      "pumpModelYears": "MY2005-09",
+      "tankGal": 55
+     }
+    ],
+    "upc": "635909314981",
+    "semaCert": "SC-FLC01-0052"
+   },
+   "src": {
+    "doc": "fleeceperformance.com product pages (JSON-LD + fitment/interchange/certification tabs)",
+    "edition": "2026-10",
+    "url": "https://www.fleeceperformance.com/2005-2009-dodge-powerflo-in-tank-lift-pump-assembly.html",
+    "alsoFrom": "fleeceperformance.com Fleece_and_Titan_Powerflo_Fitment.pdf / Fleece_SB_PF_SF_Fitment.pdf"
+   },
+   "emissions": "carb_eo:D-834-10"
+  },
+  {
+   "m": "Fleece Performance",
+   "p": "FPE-34560",
+   "cat": "liftPump",
+   "name": "PowerFlo lift pump, to 800 HP, 2007-2009, Cummins 6.7",
+   "fit": {
+    "fam": "Cummins 6.7",
+    "ci": [
+     408
+    ],
+    "cyl": 6,
+    "y0": 2007,
+    "y1": 2009,
+    "notes": "from 2007.5, Ram 2500/3500"
+   },
+   "spec": {
+    "type": "in-tank",
+    "psiLow": 18,
+    "psiHigh": 20,
+    "hpCapable": 800,
+    "hpBasis": "HP",
+    "pumpType": "dual gerotor",
+    "biodieselMaxPct": 20,
+    "cabChassis": false,
+    "retainsWif": true,
+    "outletThread": "3/4 in-16 (-8 ORB)",
+    "replacesOem": [
+     "5143160AA",
+     "5143160AB",
+     "68002062AB",
+     "68003465AA",
+     "RL143160AB"
+    ],
+    "aftermarketTankFitment": [
+     {
+      "tank": "Titan 7030303",
+      "make": "DODGE/RAM",
+      "model": "2500 & 3500",
+      "years": "2005-2012",
+      "cab": "Crew",
+      "bed": "Long Bed",
+      "pumpModelYears": "MY2005-09",
+      "lockingRing": false
+     },
+     {
+      "tank": "S&B 10-1021-1",
+      "make": "DODGE/RAM",
+      "model": "2500 & 3500",
+      "years": "2005-2023",
+      "cab": "Crew Cab / Quad Cab",
+      "bed": "Short Bed",
+      "pumpModelYears": "MY2005-09",
+      "tankGal": 52
+     },
+     {
+      "tank": "S&B 10-1018",
+      "make": "DODGE/RAM",
+      "model": "2500 & 3500",
+      "years": "2005-2012",
+      "cab": "Crew Cab",
+      "bed": "Long Bed",
+      "pumpModelYears": "MY2005-09",
+      "tankGal": 60
+     },
+     {
+      "tank": "S&B 10-1009",
+      "make": "DODGE/RAM",
+      "model": "2500 & 3500",
+      "years": "2006-2024",
+      "cab": "Mega Cab",
+      "bed": "Short Bed",
+      "pumpModelYears": "MY2005-09",
+      "tankGal": 55
+     }
+    ],
+    "upc": "635909314981",
+    "semaCert": "SC-FLC01-0052"
+   },
+   "src": {
+    "doc": "fleeceperformance.com product pages (JSON-LD + fitment/interchange/certification tabs)",
+    "edition": "2026-10",
+    "url": "https://www.fleeceperformance.com/2005-2009-dodge-powerflo-in-tank-lift-pump-assembly.html",
+    "alsoFrom": "fleeceperformance.com Fleece_and_Titan_Powerflo_Fitment.pdf / Fleece_SB_PF_SF_Fitment.pdf"
+   },
+   "emissions": "carb_eo:D-834-10"
+  },
+  {
+   "m": "Fleece Performance",
+   "p": "FPE-34790",
+   "cat": "liftPump",
+   "name": "PowerFlo lift pump, to 800 HP, 2007-2010, Duramax 6.6",
+   "fit": {
+    "fam": "Duramax 6.6",
+    "ci": [
+     403
+    ],
+    "cyl": 8,
+    "y0": 2007,
+    "y1": 2010,
+    "notes": "from 2007.5, LMM, GM Silverado/Sierra 2500/3500"
+   },
+   "spec": {
+    "type": "in-tank",
+    "psiLow": 10,
+    "psiHigh": 13,
+    "hpCapable": 800,
+    "hpBasis": "HP",
+    "pumpType": "dual gerotor",
+    "biodieselMaxPct": 20,
+    "outletThread": "3/4 in-16 (-8 ORB)",
+    "replacesOem": [
+     "19152169",
+     "19206540",
+     "19303427",
+     "19303428",
+     "19331306",
+     "19331307",
+     "25350791",
+     "MU1228"
+    ],
+    "aftermarketTankFitment": [
+     {
+      "tank": "Titan 7010201",
+      "make": "GM",
+      "model": "2500 & 3500",
+      "years": "2004.5-2010",
+      "cab": "Crew",
+      "bed": "Short Bed",
+      "pumpModelYears": "MY2007.5-2010",
+      "lockingRing": true
+     },
+     {
+      "tank": "Titan 7010301",
+      "make": "GM",
+      "model": "2500 & 3500",
+      "years": "2004.5-2010",
+      "cab": "Crew",
+      "bed": "Long Bed",
+      "pumpModelYears": "MY2007.5-2010",
+      "lockingRing": false
+     }
+    ],
+    "upc": "670875716797"
+   },
+   "src": {
+    "doc": "fleeceperformance.com product pages (JSON-LD + fitment/interchange/certification tabs)",
+    "edition": "2026-10",
+    "url": "https://www.fleeceperformance.com/2007-5-2010-duramax-powerflo-in-tank-lift-pump.html",
+    "alsoFrom": "fleeceperformance.com Fleece_and_Titan_Powerflo_Fitment.pdf / Fleece_SB_PF_SF_Fitment.pdf"
+   },
+   "emissions": "carb_eo:D-834-28"
+  },
+  {
+   "m": "Fleece Performance",
+   "p": "FPE-351-0712",
+   "cat": "turbo",
+   "name": "Cheetah turbo, 63 mm compressor, to 700 RWHP, 2007-2012, Cummins 6.7",
+   "fit": {
+    "fam": "Cummins 6.7",
+    "ci": [
+     408
+    ],
+    "cyl": 6,
+    "y0": 2007,
+    "y1": 2012,
+    "notes": "from 2007.5, Ram 2500/3500"
+   },
+   "spec": {
+    "compressorInducer": 63,
+    "series": "Cheetah",
+    "compressorWheel": "FMW (forged milled)",
+    "turbineMaterial": "Inconel",
+    "hpCapable": 700,
+    "hpBasis": "RWHP",
+    "condition": "remanufactured, core exchange",
+    "newActuator": true,
+    "exhaustBrake": true,
+    "replacesOem": [
+     "2835911",
+     "2837647",
+     "2839682",
+     "3768088",
+     "3770974",
+     "3790483",
+     "3799840",
+     "4043137",
+     "5325950",
+     "5325950H",
+     "5325950HX",
+     "R8048234AE",
+     "R8048234AF",
+     "R8048234AG",
+     "R8048234AH"
+    ],
+    "upc": "635909310204",
+    "semaCert": "SC-FLC01-0012"
+   },
+   "src": {
+    "doc": "fleeceperformance.com product pages (JSON-LD + fitment/interchange/certification tabs)",
+    "edition": "2026-10",
+    "url": "https://www.fleeceperformance.com/2007-5-2017-63mm-fmw-holset-vgt-cheetah-turbocharger.html"
+   },
+   "emissions": "carb_eo:D-834-6"
+  },
+  {
+   "m": "Fleece Performance",
+   "p": "FPE-34561",
+   "cat": "liftPump",
+   "name": "PowerFlo lift pump, to 800 HP, 2010, Cummins 6.7",
+   "fit": {
+    "fam": "Cummins 6.7",
+    "ci": [
+     408
+    ],
+    "cyl": 6,
+    "y0": 2010,
+    "y1": 2010
+   },
+   "spec": {
+    "type": "in-tank",
+    "psiLow": 18,
+    "psiHigh": 20,
+    "hpCapable": 800,
+    "hpBasis": "HP",
+    "pumpType": "dual gerotor",
+    "biodieselMaxPct": 20,
+    "cabChassis": false,
+    "retainsWif": true,
+    "outletThread": "3/4 in-16 (-8 ORB)",
+    "aftermarketTankFitment": [
+     {
+      "tank": "Titan 7030303",
+      "make": "DODGE/RAM",
+      "model": "2500 & 3500",
+      "years": "2005-2012",
+      "cab": "Crew",
+      "bed": "Long Bed",
+      "pumpModelYears": "MY2010",
+      "lockingRing": false
+     },
+     {
+      "tank": "Titan 7030210",
+      "make": "DODGE/RAM",
+      "model": "2500 & 3500",
+      "years": "2010-2012",
+      "cab": "Crew",
+      "bed": "Short Bed",
+      "pumpModelYears": "MY2010",
+      "lockingRing": false
+     },
+     {
+      "tank": "S&B 10-1021-1",
+      "make": "DODGE/RAM",
+      "model": "2500 & 3500",
+      "years": "2005-2023",
+      "cab": "Crew Cab / Quad Cab",
+      "bed": "Short Bed",
+      "pumpModelYears": "MY2010",
+      "tankGal": 52
+     },
+     {
+      "tank": "S&B 10-1018",
+      "make": "DODGE/RAM",
+      "model": "2500 & 3500",
+      "years": "2005-2012",
+      "cab": "Crew Cab",
+      "bed": "Long Bed",
+      "pumpModelYears": "MY2010",
+      "tankGal": 60
+     },
+     {
+      "tank": "S&B 10-1009",
+      "make": "DODGE/RAM",
+      "model": "2500 & 3500",
+      "years": "2006-2024",
+      "cab": "Mega Cab",
+      "bed": "Short Bed",
+      "pumpModelYears": "MY2010",
+      "tankGal": 55
+     }
+    ],
+    "upc": "635909000000"
+   },
+   "src": {
+    "doc": "fleeceperformance.com product pages (JSON-LD + fitment/interchange/certification tabs)",
+    "edition": "2026-10",
+    "url": "https://www.fleeceperformance.com/2010-dodge-powerflo-in-tank-lift-pump-assembly.html",
+    "alsoFrom": "fleeceperformance.com Fleece_and_Titan_Powerflo_Fitment.pdf / Fleece_SB_PF_SF_Fitment.pdf"
+   },
+   "emissions": null
+  },
+  {
+   "m": "Fleece Performance",
+   "p": "FPE-LML-CP3-WP",
+   "cat": "injectionPump",
+   "name": "CP3 pump kit, 10 mm stroker, 2011-2016, Duramax 6.6",
+   "fit": {
+    "fam": "Duramax 6.6",
+    "ci": [
+     403
+    ],
+    "cyl": 8,
+    "y0": 2011,
+    "y1": 2016,
+    "notes": "LML, GM Silverado/Sierra 2500/3500"
+   },
+   "spec": {
+    "type": "CP3",
+    "strokerMm": 10,
+    "kit": true,
+    "kitIncludesPump": true,
+    "condition": "new",
+    "upc": "670875717428",
+    "semaCert": "SC-FLC01-0013"
+   },
+   "src": {
+    "doc": "fleeceperformance.com product pages (JSON-LD + fitment/interchange/certification tabs)",
+    "edition": "2026-10",
+    "url": "https://www.fleeceperformance.com/2011-2016-lml-cp3-conversion-kit-with-cp3.html"
+   },
+   "emissions": "carb_eo:D-834-1"
+  },
+  {
+   "m": "Fleece Performance",
+   "p": "FPE-34563",
+   "cat": "liftPump",
+   "name": "PowerFlo lift pump, short bed, to 800 HP, 2011-2016, Duramax 6.6",
+   "fit": {
+    "fam": "Duramax 6.6",
+    "ci": [
+     403
+    ],
+    "cyl": 8,
+    "y0": 2011,
+    "y1": 2016,
+    "notes": "LML, GM Silverado/Sierra 2500/3500"
+   },
+   "spec": {
+    "type": "in-tank",
+    "psiLow": 10,
+    "psiHigh": 13,
+    "hpCapable": 800,
+    "hpBasis": "HP",
+    "pumpType": "dual gerotor",
+    "biodieselMaxPct": 20,
+    "bed": "short",
+    "outletThread": "3/4 in-16 (-8 ORB)",
+    "replacesOem": [
+     "AC Delco M100022",
+     "AC Delco MU1977",
+     "GM 13578389",
+     "GM 19257327"
+    ],
+    "aftermarketTankFitment": [
+     {
+      "tank": "Titan 7010211",
+      "make": "GM",
+      "model": "2500 & 3500",
+      "years": "2011-2016",
+      "cab": "Crew",
+      "bed": "Short Bed",
+      "lockingRing": false
+     }
+    ],
+    "upc": "670875716155"
+   },
+   "src": {
+    "doc": "fleeceperformance.com product pages (JSON-LD + fitment/interchange/certification tabs)",
+    "edition": "2026-10",
+    "url": "https://www.fleeceperformance.com/2011-2016-lml-duramax-powerflo-in-tank-lift-pump-assembly.html",
+    "alsoFrom": "fleeceperformance.com Fleece_and_Titan_Powerflo_Fitment.pdf / Fleece_SB_PF_SF_Fitment.pdf"
+   },
+   "emissions": "carb_eo:D-834-22"
+  },
+  {
+   "m": "Fleece Performance",
+   "p": "FPE-34564",
+   "cat": "liftPump",
+   "name": "PowerFlo lift pump, long bed, to 800 HP, 2011-2016, Duramax 6.6",
+   "fit": {
+    "fam": "Duramax 6.6",
+    "ci": [
+     403
+    ],
+    "cyl": 8,
+    "y0": 2011,
+    "y1": 2016,
+    "notes": "LML, GM Silverado/Sierra 2500/3500"
+   },
+   "spec": {
+    "type": "in-tank",
+    "psiLow": 10,
+    "psiHigh": 13,
+    "hpCapable": 800,
+    "hpBasis": "HP",
+    "pumpType": "dual gerotor",
+    "biodieselMaxPct": 20,
+    "bed": "long",
+    "outletThread": "3/4 in-16 (-8 ORB)",
+    "replacesOem": [
+     "AC Delco M100021",
+     "AC Delco MU1976",
+     "GM 13578388",
+     "GM 19257326"
+    ],
+    "aftermarketTankFitment": [
+     {
+      "tank": "Titan 7010511",
+      "make": "GM",
+      "model": "2500 & 3500",
+      "years": "2011-2016",
+      "cab": "Extended",
+      "bed": "Long Bed",
+      "lockingRing": false
+     },
+     {
+      "tank": "Titan 7010511",
+      "make": "GM",
+      "model": "2500 & 3500",
+      "years": "2011-2012, 2014-2016",
+      "cab": "Crew",
+      "bed": "Long Bed",
+      "lockingRing": false,
+      "note": "2014-2016: two piece driveshaft trucks only"
+     },
+     {
+      "tank": "Titan 7010511",
+      "make": "GM",
+      "model": "2500 & 3500",
+      "years": "2013-2016",
+      "cab": "Crew",
+      "bed": "Long Bed",
+      "lockingRing": false,
+      "note": "two piece driveshaft trucks only"
+     }
+    ],
+    "upc": "670875716162"
+   },
+   "src": {
+    "doc": "fleeceperformance.com product pages (JSON-LD + fitment/interchange/certification tabs)",
+    "edition": "2026-10",
+    "url": "https://www.fleeceperformance.com/2011-2016-lml-duramax-powerflo-in-tank-lift-pump-long-bed.html",
+    "alsoFrom": "fleeceperformance.com Fleece_and_Titan_Powerflo_Fitment.pdf / Fleece_SB_PF_SF_Fitment.pdf"
+   },
+   "emissions": "carb_eo:D-834-22"
+  },
+  {
+   "m": "Fleece Performance",
+   "p": "FPE-34562",
+   "cat": "liftPump",
+   "name": "PowerFlo lift pump, to 800 HP, 2011-2024, Cummins 6.7",
+   "fit": {
+    "fam": "Cummins 6.7",
+    "ci": [
+     408
+    ],
+    "cyl": 6,
+    "y0": 2011,
+    "y1": 2024,
+    "notes": "Ram 2500/3500"
+   },
+   "spec": {
+    "type": "in-tank",
+    "psiLow": 18,
+    "psiHigh": 20,
+    "hpCapable": 800,
+    "hpBasis": "HP",
+    "pumpType": "dual gerotor",
+    "biodieselMaxPct": 20,
+    "cabChassis": false,
+    "retainsWif": true,
+    "outletThread": "3/4 in-16 (-8 ORB)",
+    "replacesOem": [
+     "5145571AA",
+     "5145571AB",
+     "5145625AA"
+    ],
+    "aftermarketTankFitment": [
+     {
+      "tank": "Titan 7030303",
+      "make": "DODGE/RAM",
+      "model": "2500 & 3500",
+      "years": "2005-2012",
+      "cab": "Crew",
+      "bed": "Long Bed",
+      "pumpModelYears": "MY2011+",
+      "lockingRing": false
+     },
+     {
+      "tank": "Titan 7030313",
+      "make": "DODGE/RAM",
+      "model": "2500 & 3500",
+      "years": "2013-2024",
+      "cab": "Crew or Quad",
+      "bed": "Long Bed",
+      "lockingRing": true
+     },
+     {
+      "tank": "Titan 7030213",
+      "make": "DODGE/RAM",
+      "model": "2500 & 3500",
+      "years": "2013-2024",
+      "cab": "Mega",
+      "bed": "Short Bed",
+      "lockingRing": true
+     },
+     {
+      "tank": "Titan 7030313",
+      "make": "DODGE/RAM",
+      "model": "2500 & 3500",
+      "years": "2013-2024",
+      "cab": "Crew 4x4 only",
+      "bed": "Short Bed",
+      "lockingRing": true
+     },
+     {
+      "tank": "Titan 7030210",
+      "make": "DODGE/RAM",
+      "model": "2500 & 3500",
+      "years": "2010-2012",
+      "cab": "Crew",
+      "bed": "Short Bed",
+      "pumpModelYears": "MY2011+",
+      "lockingRing": false
+     },
+     {
+      "tank": "S&B 10-1021-1",
+      "make": "DODGE/RAM",
+      "model": "2500 & 3500",
+      "years": "2005-2023",
+      "cab": "Crew Cab / Quad Cab",
+      "bed": "Short Bed",
+      "pumpModelYears": "MY2011+",
+      "tankGal": 52
+     },
+     {
+      "tank": "S&B 10-1018",
+      "make": "DODGE/RAM",
+      "model": "2500 & 3500",
+      "years": "2005-2012",
+      "cab": "Crew Cab",
+      "bed": "Long Bed",
+      "pumpModelYears": "MY2011+",
+      "tankGal": 60
+     },
+     {
+      "tank": "S&B 10-1009",
+      "make": "DODGE/RAM",
+      "model": "2500 & 3500",
+      "years": "2006-2024",
+      "cab": "Mega Cab",
+      "bed": "Short Bed",
+      "pumpModelYears": "MY2011+",
+      "tankGal": 55
+     },
+     {
+      "tank": "S&B 10-1007",
+      "make": "DODGE/RAM",
+      "model": "2500 & 3500",
+      "years": "2013-2024",
+      "cab": "Crew Cab",
+      "bed": "Long Bed",
+      "tankGal": 60
+     }
+    ],
+    "upc": "635909312260",
+    "semaCert": "SC-FLC01-0082"
+   },
+   "src": {
+    "doc": "fleeceperformance.com product pages (JSON-LD + fitment/interchange/certification tabs)",
+    "edition": "2026-10",
+    "url": "https://www.fleeceperformance.com/2011-2018-dodge-powerflo-in-tank-lift-pump-assembly.html",
+    "alsoFrom": "fleeceperformance.com Fleece_and_Titan_Powerflo_Fitment.pdf / Fleece_SB_PF_SF_Fitment.pdf"
+   },
+   "emissions": "carb_eo:D-834-12"
+  },
+  {
+   "m": "Fleece Performance",
+   "p": "FPE-PS-FMW-63-1518",
+   "cat": "turbo",
+   "name": "Cheetah turbo, 63 mm compressor, to 650 RWHP, 2015-2018, Powerstroke 6.7",
+   "fit": {
+    "fam": "Powerstroke 6.7",
+    "ci": [
+     406
+    ],
+    "cyl": 8,
+    "y0": 2015,
+    "y1": 2018,
+    "notes": "Ford Super Duty 250/350/450"
+   },
+   "spec": {
+    "compressorInducer": 63,
+    "series": "Cheetah",
+    "compressorWheel": "FMW (forged milled)",
+    "hpCapable": 650,
+    "hpBasis": "RWHP",
+    "replacesOem": [
+     "Ford HC3Z-6K682-A",
+     "Ford HC4Z-6K682-C",
+     "Garrett 888142-5001S"
+    ],
+    "upc": "635909314974"
+   },
+   "src": {
+    "doc": "fleeceperformance.com product pages (JSON-LD + fitment/interchange/certification tabs)",
+    "edition": "2026-10",
+    "url": "https://www.fleeceperformance.com/2015-2016-63mm-fmw-6-7l-powerstroke-cheetah-turbocharger.html"
+   },
+   "emissions": "no_eo_race_only"
+  },
+  {
+   "m": "Fleece Performance",
+   "p": "FPE-CUMM-S2-PROD",
+   "cat": "pushrod",
+   "name": "Stage 2 pushrods, 0.375 in dia, 0.135 wall, 4130 chromoly, 1998-2007, Cummins 5.9 24V/CR",
+   "fit": {
+    "fam": "Cummins 5.9 24V/CR",
+    "ci": [
+     359
+    ],
+    "cyl": 6,
+    "y0": 1998,
+    "y1": 2007,
+    "notes": "from 1998.5, Ram 2500/3500"
+   },
+   "spec": {
+    "diameter": 0.375,
+    "wall": 0.135,
+    "lengthNote": "stock length",
+    "material": "4130 chromoly",
+    "ends": "cup",
+    "onePiece": true,
+    "hardnessRc": 60,
+    "grade": "Stage 2",
+    "upc": "670875716582"
+   },
+   "src": {
+    "doc": "fleeceperformance.com product pages (JSON-LD + fitment/interchange/certification tabs)",
+    "edition": "2026-10",
+    "url": "https://www.fleeceperformance.com/24v-cummins-stage-2-pushrods.html"
+   },
+   "emissions": null
+  },
+  {
+   "m": "Fleece Performance",
+   "p": "FPE-CUMM-S2-PROD",
+   "cat": "pushrod",
+   "name": "Stage 2 pushrods, 0.375 in dia, 0.135 wall, 4130 chromoly, 2007-2018, Cummins 6.7",
+   "fit": {
+    "fam": "Cummins 6.7",
+    "ci": [
+     408
+    ],
+    "cyl": 6,
+    "y0": 2007,
+    "y1": 2018,
+    "notes": "from 2007.5, Ram 2500/3500"
+   },
+   "spec": {
+    "diameter": 0.375,
+    "wall": 0.135,
+    "lengthNote": "stock length",
+    "material": "4130 chromoly",
+    "ends": "cup",
+    "onePiece": true,
+    "hardnessRc": 60,
+    "grade": "Stage 2",
+    "upc": "670875716582"
+   },
+   "src": {
+    "doc": "fleeceperformance.com product pages (JSON-LD + fitment/interchange/certification tabs)",
+    "edition": "2026-10",
+    "url": "https://www.fleeceperformance.com/24v-cummins-stage-2-pushrods.html"
+   },
+   "emissions": null
+  },
+  {
+   "m": "Fleece Performance",
+   "p": "FPE-CUMM-CP3K-5.9",
+   "cat": "injectionPump",
+   "name": "CP3K injection pump, 2003-2007, Cummins 5.9 24V/CR",
+   "fit": {
+    "fam": "Cummins 5.9 24V/CR",
+    "ci": [
+     359
+    ],
+    "cyl": 6,
+    "y0": 2003,
+    "y1": 2007,
+    "notes": "Ram 2500/3500"
+   },
+   "spec": {
+    "model": "CP3K",
+    "condition": "new",
+    "replacesOem": [
+     "0445020039",
+     "0445020147",
+     "0986437304",
+     "5104877AA",
+     "5143425AA",
+     "R5104877AA",
+     "R5143425AA",
+     "R5191780AA"
+    ],
+    "upc": "635909310914"
+   },
+   "src": {
+    "doc": "fleeceperformance.com product pages (JSON-LD + fitment/interchange/certification tabs)",
+    "edition": "2026-10",
+    "url": "https://www.fleeceperformance.com/5-9l-cummins-cp3k.html"
+   },
+   "emissions": "unknown"
+  },
+  {
+   "m": "Fleece Performance",
+   "p": "FPE-CUMM-CP3-10MM-5.9",
+   "cat": "injectionPump",
+   "name": "PowerFlo 750 CP3 pump, 10 mm stroker, to 750 RWHP, 2003-2007, Cummins 5.9 24V/CR",
+   "fit": {
+    "fam": "Cummins 5.9 24V/CR",
+    "ci": [
+     359
+    ],
+    "cyl": 6,
+    "y0": 2003,
+    "y1": 2007,
+    "notes": "Ram 2500/3500"
+   },
+   "spec": {
+    "type": "CP3",
+    "strokerMm": 10,
+    "model": "PowerFlo 750",
+    "hpCapable": 750,
+    "hpBasis": "RWHP",
+    "replacesOem": [
+     "0445020039",
+     "0445020147",
+     "0986437304",
+     "5104877AA",
+     "5143425AA",
+     "R5104877AA",
+     "R5143425AA",
+     "R5191780AA"
+    ],
+    "upc": "635909310938"
+   },
+   "src": {
+    "doc": "fleeceperformance.com product pages (JSON-LD + fitment/interchange/certification tabs)",
+    "edition": "2026-10",
+    "url": "https://www.fleeceperformance.com/5-9l-cummins-powerflo-750-cp3.html"
+   },
+   "emissions": "unknown"
+  },
+  {
+   "m": "Fleece Performance",
+   "p": "FPE-61-10006",
+   "cat": "head",
+   "name": "Freedom Series cylinder head, Performance, to 1100 HP, 2003-2007, Cummins 5.9 24V/CR",
+   "fit": {
+    "fam": "Cummins 5.9 24V/CR",
+    "ci": [
+     359
+    ],
+    "cyl": 6,
+    "y0": 2003,
+    "y1": 2007,
+    "notes": "Ram 2500/3500"
+   },
+   "spec": {
+    "series": "Freedom Series",
+    "grade": "Performance",
+    "intakeValve": 1.3,
+    "exhaustValve": 1.3,
+    "exhaustValveMaterial": "Inconel",
+    "intakeValveMaterial": "stainless",
+    "fireRingDia": 4.55,
+    "fireRingGasketIncluded": true,
+    "fireRinged": true,
+    "valveSpringLb": 105,
+    "screwInFreezePlugs": true,
+    "condition": "remanufactured, core exchange",
+    "hpCapable": 1100,
+    "hpBasis": "HP",
+    "replacesOem": [
+     "3965999",
+     "5361595",
+     "5361595RX"
+    ],
+    "upc": "670875716384"
+   },
+   "src": {
+    "doc": "fleeceperformance.com product pages (JSON-LD + fitment/interchange/certification tabs)",
+    "edition": "2026-10",
+    "url": "https://www.fleeceperformance.com/5-9l-freedom-series-cummins-cylinder-head-performance-street.html"
+   },
+   "emissions": null
+  },
+  {
+   "m": "Fleece Performance",
+   "p": "FPE-61-10005",
+   "cat": "head",
+   "name": "Freedom Series cylinder head, Street, to 700 HP, 2003-2007, Cummins 5.9 24V/CR",
+   "fit": {
+    "fam": "Cummins 5.9 24V/CR",
+    "ci": [
+     359
+    ],
+    "cyl": 6,
+    "y0": 2003,
+    "y1": 2007,
+    "notes": "Ram 2500/3500"
+   },
+   "spec": {
+    "bare": false,
+    "series": "Freedom Series",
+    "grade": "Street",
+    "screwInFreezePlugs": true,
+    "valveSeats": "hardened oversized press-in",
+    "headGasketRec": [
+     "3958645",
+     "FPE-CUMM-HG-5.9"
+    ],
+    "condition": "remanufactured, core exchange",
+    "hpCapable": 700,
+    "hpBasis": "HP",
+    "replacesOem": [
+     "3965999",
+     "5361595",
+     "5361595RX"
+    ],
+    "upc": "670875716360"
+   },
+   "src": {
+    "doc": "fleeceperformance.com product pages (JSON-LD + fitment/interchange/certification tabs)",
+    "edition": "2026-10",
+    "url": "https://www.fleeceperformance.com/5-9l-freedom-series-cummins-cylinder-head-street.html"
+   },
+   "emissions": null
+  },
+  {
+   "m": "Fleece Performance",
+   "p": "FPE-61-10005-HD",
+   "cat": "head",
+   "name": "Freedom Series cylinder head, Street HD, to 700 HP, 2003-2007, Cummins 5.9 24V/CR",
+   "fit": {
+    "fam": "Cummins 5.9 24V/CR",
+    "ci": [
+     359
+    ],
+    "cyl": 6,
+    "y0": 2003,
+    "y1": 2007,
+    "notes": "Ram 2500/3500"
+   },
+   "spec": {
+    "bare": false,
+    "series": "Freedom Series",
+    "grade": "Street HD",
+    "valveSpringLb": 105,
+    "screwInFreezePlugs": true,
+    "valveSeats": "hardened oversized press-in",
+    "headGasketRec": [
+     "3958645",
+     "FPE-CUMM-HG-5.9"
+    ],
+    "condition": "remanufactured, core exchange",
+    "hpCapable": 700,
+    "hpBasis": "HP",
+    "replacesOem": [
+     "3965999",
+     "5361595",
+     "5361595RX"
+    ],
+    "upc": "670875717039"
+   },
+   "src": {
+    "doc": "fleeceperformance.com product pages (JSON-LD + fitment/interchange/certification tabs)",
+    "edition": "2026-10",
+    "url": "https://www.fleeceperformance.com/5-9l-freedom-series-cummins-cylinder-head-street-hd.html"
+   },
+   "emissions": null
+  },
+  {
+   "m": "Fleece Performance",
+   "p": "FPE-61-10009",
+   "cat": "head",
+   "name": "Freedom Series cylinder head, Street, to 700 HP, 1998-2002, Cummins 5.9 24V/CR",
+   "fit": {
+    "fam": "Cummins 5.9 24V/CR",
+    "ci": [
+     359
+    ],
+    "cyl": 6,
+    "y0": 1998,
+    "y1": 2002,
+    "notes": "from 1998.5, Ram 2500/3500"
+   },
+   "spec": {
+    "bare": false,
+    "series": "Freedom Series",
+    "grade": "Street",
+    "valveSprings": "stock",
+    "screwInFreezePlugs": true,
+    "valveSeats": "hardened oversized press-in",
+    "headGasketRec": [
+     "3977063"
+    ],
+    "condition": "new",
+    "hpCapable": 700,
+    "hpBasis": "HP",
+    "replacesOem": [
+     "3937729",
+     "3942628",
+     "3943627",
+     "3943628",
+     "3943892",
+     "3943894",
+     "3944991",
+     "3944992",
+     "3944993",
+     "3944994",
+     "3944995",
+     "3945524",
+     "3946202",
+     "3957403",
+     "3990135",
+     "3991771",
+     "3991772",
+     "3991773",
+     "5361587",
+     "3937729RX",
+     "3991773NX",
+     "3991773RX"
+    ],
+    "upc": "670875716469"
+   },
+   "src": {
+    "doc": "fleeceperformance.com product pages (JSON-LD + fitment/interchange/certification tabs)",
+    "edition": "2026-10",
+    "url": "https://www.fleeceperformance.com/5-9l-vp-98-5-02-freedom-series-cummins-cylinder-head-street.html"
+   },
+   "emissions": null
+  },
+  {
+   "m": "Fleece Performance",
+   "p": "FPE-61-10009-HD",
+   "cat": "head",
+   "name": "Freedom Series cylinder head, to 700 HP, 1998-2002, Cummins 5.9 24V/CR",
+   "fit": {
+    "fam": "Cummins 5.9 24V/CR",
+    "ci": [
+     359
+    ],
+    "cyl": 6,
+    "y0": 1998,
+    "y1": 2002,
+    "notes": "from 1998.5, Ram 2500/3500"
+   },
+   "spec": {
+    "bare": false,
+    "series": "Freedom Series",
+    "valveSpringLb": 105,
+    "screwInFreezePlugs": true,
+    "valveSeats": "hardened oversized press-in",
+    "headGasketRec": [
+     "3977063"
+    ],
+    "condition": "new",
+    "hpCapable": 700,
+    "hpBasis": "HP",
+    "replacesOem": [
+     "3937729",
+     "3942628",
+     "3943627",
+     "3943628",
+     "3943892",
+     "3943894",
+     "3944991",
+     "3944992",
+     "3944993",
+     "3944994",
+     "3944995",
+     "3945524",
+     "3946202",
+     "3957403",
+     "3990135",
+     "3991771",
+     "3991772",
+     "3991773",
+     "5361587",
+     "3937729RX",
+     "3991773NX",
+     "3991773RX"
+    ],
+    "upc": "670875717367"
+   },
+   "src": {
+    "doc": "fleeceperformance.com product pages (JSON-LD + fitment/interchange/certification tabs)",
+    "edition": "2026-10",
+    "url": "https://www.fleeceperformance.com/5-9l-vp-98-5-02-freedom-series-cummins-cylinder-head-street-hd.html"
+   },
+   "emissions": null
+  },
+  {
+   "m": "Fleece Performance",
+   "p": "FPE-CUMM-CP3K-6.7",
+   "cat": "injectionPump",
+   "name": "CP3K injection pump, 2007-2024, Cummins 6.7",
+   "fit": {
+    "fam": "Cummins 6.7",
+    "ci": [
+     408
+    ],
+    "cyl": 6,
+    "y0": 2007,
+    "y1": 2024,
+    "notes": "from 2007.5, Ram 2500/3500"
+   },
+   "spec": {
+    "model": "CP3K",
+    "condition": "new",
+    "replacesOem": [
+     "0445020047",
+     "0445020076",
+     "0445020106",
+     "0445020146",
+     "0986437334",
+     "68027022AA",
+     "68027022AB",
+     "8027067AC",
+     "R8002013AC",
+     "R8027022AB",
+     "R80277022AA"
+    ],
+    "upc": "635909310921",
+    "semaCert": "SC-FLC01-0033"
+   },
+   "src": {
+    "doc": "fleeceperformance.com product pages (JSON-LD + fitment/interchange/certification tabs)",
+    "edition": "2026-10",
+    "url": "https://www.fleeceperformance.com/6-7l-cummins-cp3k.html"
+   },
+   "emissions": "carb_eo:D-834-8"
+  },
+  {
+   "m": "Fleece Performance",
+   "p": "FPE-CUMM-CP3-10MM-6.7",
+   "cat": "injectionPump",
+   "name": "PowerFlo 750 CP3 pump, 10 mm stroker, to 750 RWHP, 2007-2024, Cummins 6.7",
+   "fit": {
+    "fam": "Cummins 6.7",
+    "ci": [
+     408
+    ],
+    "cyl": 6,
+    "y0": 2007,
+    "y1": 2024,
+    "notes": "from 2007.5, Ram 2500/3500"
+   },
+   "spec": {
+    "type": "CP3",
+    "strokerMm": 10,
+    "model": "PowerFlo 750",
+    "hpCapable": 750,
+    "hpBasis": "RWHP",
+    "condition": "new",
+    "replacesOem": [
+     "0445020047",
+     "0445020076",
+     "0445020106",
+     "0445020146",
+     "0986437334",
+     "68027022AA",
+     "68027022AB",
+     "8027067AC",
+     "R8002013AC",
+     "R8027022AB",
+     "R80277022AA"
+    ],
+    "upc": "635909310945",
+    "semaCert": "SC-FLC01-0033"
+   },
+   "src": {
+    "doc": "fleeceperformance.com product pages (JSON-LD + fitment/interchange/certification tabs)",
+    "edition": "2026-10",
+    "url": "https://www.fleeceperformance.com/6-7l-cummins-powerflo-750-cp3.html"
+   },
+   "emissions": "carb_eo:D-834-8"
+  },
+  {
+   "m": "Fleece Performance",
+   "p": "FPE-61-10008",
+   "cat": "head",
+   "name": "Freedom Series cylinder head, Performance, to 1100 HP, 2007-2018, Cummins 6.7",
+   "fit": {
+    "fam": "Cummins 6.7",
+    "ci": [
+     408
+    ],
+    "cyl": 6,
+    "y0": 2007,
+    "y1": 2018,
+    "notes": "from 2007.5, Ram 2500/3500"
+   },
+   "spec": {
+    "series": "Freedom Series",
+    "grade": "Performance",
+    "intakeValve": 1.38,
+    "exhaustValve": 1.38,
+    "exhaustValveMaterial": "Inconel",
+    "intakeValveMaterial": "stainless",
+    "fireRingDia": 4.55,
+    "fireRingGasketIncluded": true,
+    "fireRinged": true,
+    "valveSpringLb": 105,
+    "screwInFreezePlugs": true,
+    "condition": "remanufactured, core exchange",
+    "hpCapable": 1100,
+    "hpBasis": "HP",
+    "replacesOem": [
+     "5361605RX",
+     "68210096AB5",
+     "R8210096AB"
+    ],
+    "upc": "670875716391"
+   },
+   "src": {
+    "doc": "fleeceperformance.com product pages (JSON-LD + fitment/interchange/certification tabs)",
+    "edition": "2026-10",
+    "url": "https://www.fleeceperformance.com/6-7l-freedom-series-cummins-cylinder-head-performance-street.html"
+   },
+   "emissions": null
+  },
+  {
+   "m": "Fleece Performance",
+   "p": "FPE-61-10007",
+   "cat": "head",
+   "name": "Freedom Series cylinder head, Street, to 700 HP, 2007-2018, Cummins 6.7",
+   "fit": {
+    "fam": "Cummins 6.7",
+    "ci": [
+     408
+    ],
+    "cyl": 6,
+    "y0": 2007,
+    "y1": 2018,
+    "notes": "from 2007.5, Ram 2500/3500"
+   },
+   "spec": {
+    "bare": false,
+    "series": "Freedom Series",
+    "grade": "Street",
+    "screwInFreezePlugs": true,
+    "valveSeats": "hardened oversized press-in",
+    "headGasketRec": [
+     "4932210",
+     "FPE-CUMM-HG-6.7"
+    ],
+    "condition": "remanufactured, core exchange",
+    "hpCapable": 700,
+    "hpBasis": "HP",
+    "replacesOem": [
+     "5361605RX",
+     "68210096AB5",
+     "R8210096AB"
+    ],
+    "upc": "670875716377"
+   },
+   "src": {
+    "doc": "fleeceperformance.com product pages (JSON-LD + fitment/interchange/certification tabs)",
+    "edition": "2026-10",
+    "url": "https://www.fleeceperformance.com/6-7l-freedom-series-cummins-cylinder-head-street.html"
+   },
+   "emissions": null
+  },
+  {
+   "m": "Fleece Performance",
+   "p": "FPE-61-10007-HD",
+   "cat": "head",
+   "name": "Freedom Series cylinder head, Street HD, to 700 HP, 2007-2018, Cummins 6.7",
+   "fit": {
+    "fam": "Cummins 6.7",
+    "ci": [
+     408
+    ],
+    "cyl": 6,
+    "y0": 2007,
+    "y1": 2018,
+    "notes": "from 2007.5, Ram 2500/3500"
+   },
+   "spec": {
+    "bare": false,
+    "series": "Freedom Series",
+    "grade": "Street HD",
+    "valveSpringLb": 105,
+    "screwInFreezePlugs": true,
+    "valveSeats": "hardened oversized press-in",
+    "headGasketRec": [
+     "4932210",
+     "FPE-CUMM-HG-6.7"
+    ],
+    "condition": "remanufactured, core exchange",
+    "hpCapable": 700,
+    "hpBasis": "HP",
+    "replacesOem": [
+     "5361605RX",
+     "68210096AB5",
+     "R8210096AB"
+    ],
+    "upc": "670875717046"
+   },
+   "src": {
+    "doc": "fleeceperformance.com product pages (JSON-LD + fitment/interchange/certification tabs)",
+    "edition": "2026-10",
+    "url": "https://www.fleeceperformance.com/6-7l-freedom-series-cummins-cylinder-head-street-hd.html"
+   },
+   "emissions": null
+  },
+  {
+   "m": "Fleece Performance",
+   "p": "FPE-6.0STREET-0407",
+   "cat": "turbo",
+   "name": "Cheetah turbo, 63 mm compressor, 66 mm turbine, VGT, to 600 RWHP, 2004-2007, Powerstroke 6.0",
+   "fit": {
+    "fam": "Powerstroke 6.0",
+    "ci": [
+     365
+    ],
+    "cyl": 8,
+    "y0": 2004,
+    "y1": 2007,
+    "notes": "Ford Super Duty"
+   },
+   "spec": {
+    "compressorInducer": 63,
+    "turbineWheel": 66,
+    "vgt": true,
+    "series": "Cheetah",
+    "compressorWheel": "FMW (forged milled)",
+    "hpCapable": 600,
+    "hpBasis": "RWHP",
+    "boostPsiMax": 40,
+    "replacesOem": [
+     "5C3Z-6K682-A",
+     "5C3Z-6K682-AA",
+     "5C3Z-6K682-BA",
+     "5C3Z-6K682-CA",
+     "5C3Z-6K682-CARM",
+     "5C3Z-6K682-CCRM",
+     "5C3Z-6K682-DA",
+     "Garrett 743250-5024S",
+     "Garrett 743250-5025S"
+    ],
+    "upc": "670875714953"
+   },
+   "src": {
+    "doc": "fleeceperformance.com product pages (JSON-LD + fitment/interchange/certification tabs)",
+    "edition": "2026-10",
+    "url": "https://www.fleeceperformance.com/63-67-street-fmw-ford-6-0l-cheetah-turbocharger.html"
+   },
+   "emissions": "no_eo_race_only"
+  },
+  {
+   "m": "Fleece Performance",
+   "p": "FPE-LB7-63",
+   "cat": "turbo",
+   "name": "Cheetah turbo, 63 mm compressor, to 625 RWHP, 2001-2004, Duramax 6.6",
+   "fit": {
+    "fam": "Duramax 6.6",
+    "ci": [
+     403
+    ],
+    "cyl": 8,
+    "y0": 2001,
+    "y1": 2004,
+    "notes": "LB7, GM Silverado/Sierra 2500/3500"
+   },
+   "spec": {
+    "compressorInducer": 63,
+    "series": "Cheetah",
+    "turbineMaterial": "Inconel",
+    "hpCapable": 625,
+    "hpBasis": "RWHP",
+    "condition": "new",
+    "replacesOem": [
+     "97188454",
+     "97307711",
+     "97720447",
+     "97720749",
+     "848212-5001S"
+    ],
+    "upc": "635909310006"
+   },
+   "src": {
+    "doc": "fleeceperformance.com product pages (JSON-LD + fitment/interchange/certification tabs)",
+    "edition": "2026-10",
+    "url": "https://www.fleeceperformance.com/63mm-lb7-cheetah-turbocharger.html"
+   },
+   "emissions": "no_eo_race_only"
+  },
+  {
+   "m": "Fleece Performance",
+   "p": "FPE-LML-VNT-63-FMW-N",
+   "cat": "turbo",
+   "name": "Cheetah turbo, 63 mm compressor, VGT, to 650 RWHP, 2011-2016, Duramax 6.6",
+   "fit": {
+    "fam": "Duramax 6.6",
+    "ci": [
+     403
+    ],
+    "cyl": 8,
+    "y0": 2011,
+    "y1": 2016,
+    "notes": "LML, GM Silverado/Sierra 2500/3500"
+   },
+   "spec": {
+    "compressorInducer": 63,
+    "vgt": true,
+    "series": "Cheetah",
+    "compressorWheel": "FMW (forged milled)",
+    "hpCapable": 650,
+    "hpBasis": "RWHP",
+    "condition": "new",
+    "replacesOem": [
+     "12635167",
+     "12637721",
+     "12642129",
+     "12642314",
+     "12677684",
+     "19434580",
+     "800799-0001",
+     "800799-0002",
+     "800799-0003",
+     "848212-5002S",
+     "848212-9002S",
+     "GT3788VA"
+    ],
+    "upc": "670875714861",
+    "semaCert": "SC-FLC01-0003"
+   },
+   "src": {
+    "doc": "fleeceperformance.com product pages (JSON-LD + fitment/interchange/certification tabs)",
+    "edition": "2026-10",
+    "url": "https://www.fleeceperformance.com/brand-new-2011-2016-63mm-fmw-duramax-vnt-cheetah-turbocharger-lml.html"
+   },
+   "emissions": "carb_eo:D-834-3"
+  },
+  {
+   "m": "Fleece Performance",
+   "p": "FPE-HX35-63-FMW",
+   "cat": "turbo",
+   "name": "Cheetah HX35 turbo, 63 mm compressor, to 650 RWHP, 1994-1998, Cummins 5.9 12V",
+   "fit": {
+    "fam": "Cummins 5.9 12V",
+    "ci": [
+     359
+    ],
+    "cyl": 6,
+    "y0": 1994,
+    "y1": 1998,
+    "notes": "Ram 2500/3500"
+   },
+   "spec": {
+    "compressorInducer": 63,
+    "wastegatePsi": 40,
+    "vgt": false,
+    "model": "HX35",
+    "series": "Cheetah",
+    "compressorWheel": "FMW (forged milled)",
+    "turbineMaterial": "Inconel",
+    "hpCapable": 650,
+    "hpBasis": "RWHP",
+    "condition": "new",
+    "upc": "670875714878"
+   },
+   "src": {
+    "doc": "fleeceperformance.com product pages (JSON-LD + fitment/interchange/certification tabs)",
+    "edition": "2026-10",
+    "url": "https://www.fleeceperformance.com/cheetahr-hx35-turbocharger-for-1994-2002-5-9l-dodge-cummins.html"
+   },
+   "emissions": "no_eo_race_only"
+  },
+  {
+   "m": "Fleece Performance",
+   "p": "FPE-HX35-63-FMW",
+   "cat": "turbo",
+   "name": "Cheetah HX35 turbo, 63 mm compressor, to 650 RWHP, 1998-2002, Cummins 5.9 24V/CR",
+   "fit": {
+    "fam": "Cummins 5.9 24V/CR",
+    "ci": [
+     359
+    ],
+    "cyl": 6,
+    "y0": 1998,
+    "y1": 2002,
+    "notes": "from 1998.5, Ram 2500/3500"
+   },
+   "spec": {
+    "compressorInducer": 63,
+    "wastegatePsi": 40,
+    "vgt": false,
+    "model": "HX35",
+    "series": "Cheetah",
+    "compressorWheel": "FMW (forged milled)",
+    "turbineMaterial": "Inconel",
+    "hpCapable": 650,
+    "hpBasis": "RWHP",
+    "condition": "new",
+    "upc": "670875714878"
+   },
+   "src": {
+    "doc": "fleeceperformance.com product pages (JSON-LD + fitment/interchange/certification tabs)",
+    "edition": "2026-10",
+    "url": "https://www.fleeceperformance.com/cheetahr-hx35-turbocharger-for-1994-2002-5-9l-dodge-cummins.html"
+   },
+   "emissions": "no_eo_race_only"
+  },
+  {
+   "m": "Fleece Performance",
+   "p": "FPE-6.0STREET-0304",
+   "cat": "turbo",
+   "name": "Cheetah turbo, 63 mm compressor, 66 mm turbine, VGT, to 600 RWHP, 2003-2004, Powerstroke 6.0",
+   "fit": {
+    "fam": "Powerstroke 6.0",
+    "ci": [
+     365
+    ],
+    "cyl": 8,
+    "y0": 2003,
+    "y1": 2004,
+    "notes": "Ford Super Duty"
+   },
+   "spec": {
+    "compressorInducer": 63,
+    "turbineWheel": 66,
+    "vgt": true,
+    "series": "Cheetah",
+    "compressorWheel": "FMW (forged milled)",
+    "hpCapable": 600,
+    "hpBasis": "RWHP",
+    "boostPsiMax": 40,
+    "replacesOem": [
+     "3C3Z6K682AARM",
+     "3C3Z6K682BARM",
+     "3C3Z6K682CBRM",
+     "3C3Z6K682CCRM",
+     "Garrett 725390-5003",
+     "Garrett 725390-5003S",
+     "Garrett 725390-5006S",
+     "Garrett 725390-9001",
+     "Garrett 725390-9002"
+    ],
+    "upc": "670875714946"
+   },
+   "src": {
+    "doc": "fleeceperformance.com product pages (JSON-LD + fitment/interchange/certification tabs)",
+    "edition": "2026-10",
+    "url": "https://www.fleeceperformance.com/cheetahr-turbocharger-for-2003-2004-6-0l-ford-powerstroke.html"
+   },
+   "emissions": "no_eo_race_only"
+  },
+  {
+   "m": "Fleece Performance",
+   "p": "FPE-351-0407",
+   "cat": "turbo",
+   "name": "Cheetah turbo, 63 mm compressor, to 650 RWHP, 2005-2007, Cummins 5.9 24V/CR",
+   "fit": {
+    "fam": "Cummins 5.9 24V/CR",
+    "ci": [
+     359
+    ],
+    "cyl": 6,
+    "y0": 2005,
+    "y1": 2007,
+    "notes": "Ram 2500/3500"
+   },
+   "spec": {
+    "compressorInducer": 63,
+    "wastegatePsi": 40,
+    "vgt": false,
+    "series": "Cheetah",
+    "compressorWheel": "FMW (forged milled)",
+    "turbineMaterial": "Inconel",
+    "hpCapable": 650,
+    "hpBasis": "RWHP",
+    "condition": "new",
+    "replacesOem": [
+     "3599811",
+     "05086863AA",
+     "4033667H"
+    ],
+    "upc": "635909310198"
+   },
+   "src": {
+    "doc": "fleeceperformance.com product pages (JSON-LD + fitment/interchange/certification tabs)",
+    "edition": "2026-10",
+    "url": "https://www.fleeceperformance.com/cheetahr-turbocharger-for-2004-5-2007-5-9l-cummins.html"
+   },
+   "emissions": "no_eo_race_only"
+  },
+  {
+   "m": "Fleece Performance",
+   "p": "FPE-351-1317",
+   "cat": "turbo",
+   "name": "Cheetah turbo, 63 mm compressor, VGT, to 700 RWHP, 2013-2018, Cummins 6.7",
+   "fit": {
+    "fam": "Cummins 6.7",
+    "ci": [
+     408
+    ],
+    "cyl": 6,
+    "y0": 2013,
+    "y1": 2018,
+    "notes": "Ram 2500/3500"
+   },
+   "spec": {
+    "compressorInducer": 63,
+    "vgt": true,
+    "series": "Cheetah",
+    "compressorWheel": "FMW (forged milled)",
+    "turbineMaterial": "Inconel",
+    "hpCapable": 700,
+    "hpBasis": "RWHP",
+    "condition": "remanufactured, core exchange",
+    "newActuator": true,
+    "exhaustBrake": true,
+    "replacesOem": [
+     "5326055",
+     "5326058",
+     "532605800H",
+     "532605800HX",
+     "5326058H",
+     "5326058HX",
+     "68212739AA",
+     "68253984AA",
+     "68319155AA",
+     "68321378AA"
+    ],
+    "upc": "635909314929",
+    "semaCert": "SC-FLC01-0012"
+   },
+   "src": {
+    "doc": "fleeceperformance.com product pages (JSON-LD + fitment/interchange/certification tabs)",
+    "edition": "2026-10",
+    "url": "https://www.fleeceperformance.com/cheetahr-turbocharger-for-2013-2018-6-7l-cummins.html"
+   },
+   "emissions": "carb_eo:D-834-2"
+  },
+  {
+   "m": "Fleece Performance",
+   "p": "FPE-L5P-VNT63-1723",
+   "cat": "turbo",
+   "name": "Cheetah turbo, 63 mm compressor, 63 mm turbine, to 650 RWHP, 2017-2023, Duramax 6.6",
+   "fit": {
+    "fam": "Duramax 6.6",
+    "ci": [
+     403
+    ],
+    "cyl": 8,
+    "y0": 2017,
+    "y1": 2023,
+    "notes": "L5P, GM Silverado/Sierra 2500/3500"
+   },
+   "spec": {
+    "compressorInducer": 63,
+    "turbineWheel": 63,
+    "series": "Cheetah",
+    "turbineMaterial": "Inconel",
+    "hpCapable": 650,
+    "hpBasis": "RWHP",
+    "condition": "new",
+    "exhaustBrake": true,
+    "replacesOem": [
+     "12723306",
+     "12683993",
+     "12683982",
+     "12723081",
+     "12707578"
+    ],
+    "upc": "732777409297"
+   },
+   "src": {
+    "doc": "fleeceperformance.com product pages (JSON-LD + fitment/interchange/certification tabs)",
+    "edition": "2026-10",
+    "url": "https://www.fleeceperformance.com/cheetahr-turbocharger-for-2017-2023-l5p-duramax.html"
+   },
+   "emissions": "carb_eo:D-834-19"
+  },
+  {
+   "m": "Fleece Performance",
+   "p": "FPE-351-1920",
+   "cat": "turbo",
+   "name": "Cheetah turbo, 63 mm compressor, VGT, 2019-2024, Cummins 6.7",
+   "fit": {
+    "fam": "Cummins 6.7",
+    "ci": [
+     408
+    ],
+    "cyl": 6,
+    "y0": 2019,
+    "y1": 2024,
+    "notes": "Ram 2500/3500"
+   },
+   "spec": {
+    "compressorInducer": 63,
+    "vgt": true,
+    "series": "Cheetah",
+    "compressorWheel": "FMW (forged milled)",
+    "turbineMaterial": "Inconel",
+    "condition": "remanufactured, core exchange",
+    "newActuator": true,
+    "exhaustBrake": true,
+    "replacesOem": [
+     "68444771AA",
+     "68444771AB"
+    ],
+    "upc": "670875717534",
+    "semaCert": "SC-FLC01-0012"
+   },
+   "src": {
+    "doc": "fleeceperformance.com product pages (JSON-LD + fitment/interchange/certification tabs)",
+    "edition": "2026-10",
+    "url": "https://www.fleeceperformance.com/cheetahr-turbocharger-for-2019-2022-6-7l-cummins.html"
+   },
+   "emissions": "carb_eo:D-834-27"
+  },
+  {
+   "m": "Fleece Performance",
+   "p": "FPE-CUMM-TAPPET-S",
+   "cat": "lifter",
+   "name": "flat tappets, 1.5 in foot, Tool Steel, 1998-2007, Cummins 5.9 24V/CR",
+   "fit": {
+    "fam": "Cummins 5.9 24V/CR",
+    "ci": [
+     359
+    ],
+    "cyl": 6,
+    "y0": 1998,
+    "y1": 2007,
+    "notes": "from 1998.5, Ram 2500/3500"
+   },
+   "spec": {
+    "style": "solid_flat",
+    "footDia": 1.5,
+    "material": "Tool Steel",
+    "rpmHigh": 5000
+   },
+   "src": {
+    "doc": "fleeceperformance.com product pages (JSON-LD + fitment/interchange/certification tabs)",
+    "edition": "2026-10",
+    "url": "https://www.fleeceperformance.com/cummins-24v-1-500-tool-steel-tappets.html"
+   },
+   "emissions": null
+  },
+  {
+   "m": "Fleece Performance",
+   "p": "FPE-CUMM-TAPPET-S",
+   "cat": "lifter",
+   "name": "flat tappets, 1.5 in foot, Tool Steel, 2007-2018, Cummins 6.7",
+   "fit": {
+    "fam": "Cummins 6.7",
+    "ci": [
+     408
+    ],
+    "cyl": 6,
+    "y0": 2007,
+    "y1": 2018,
+    "notes": "from 2007.5, Ram 2500/3500"
+   },
+   "spec": {
+    "style": "solid_flat",
+    "footDia": 1.5,
+    "material": "Tool Steel",
+    "rpmHigh": 5000
+   },
+   "src": {
+    "doc": "fleeceperformance.com product pages (JSON-LD + fitment/interchange/certification tabs)",
+    "edition": "2026-10",
+    "url": "https://www.fleeceperformance.com/cummins-24v-1-500-tool-steel-tappets.html"
+   },
+   "emissions": null
+  },
+  {
+   "m": "Fleece Performance",
+   "p": "FPE-34797",
+   "cat": "spring",
+   "name": "valve spring and retainer set, 105 lb seat, 195 lb open, 1998-2007, Cummins 5.9 24V/CR",
+   "fit": {
+    "fam": "Cummins 5.9 24V/CR",
+    "ci": [
+     359
+    ],
+    "cyl": 6,
+    "y0": 1998,
+    "y1": 2007,
+    "notes": "from 1998.5, Ram 2500/3500"
+   },
+   "spec": {
+    "seatLb": 105,
+    "openLb": 195,
+    "material": "chrome silicon",
+    "retainersIncluded": true,
+    "retainerMaterial": "4140",
+    "locksIncluded": false,
+    "upc": "670875716803"
+   },
+   "src": {
+    "doc": "fleeceperformance.com product pages (JSON-LD + fitment/interchange/certification tabs)",
+    "edition": "2026-10",
+    "url": "https://www.fleeceperformance.com/cummins-24v-spring-and-retainer-set.html"
+   },
+   "emissions": null
+  },
+  {
+   "m": "Fleece Performance",
+   "p": "FPE-34797",
+   "cat": "spring",
+   "name": "valve spring and retainer set, 105 lb seat, 195 lb open, 2007-2018, Cummins 6.7",
+   "fit": {
+    "fam": "Cummins 6.7",
+    "ci": [
+     408
+    ],
+    "cyl": 6,
+    "y0": 2007,
+    "y1": 2018,
+    "notes": "from 2007.5, Ram 2500/3500"
+   },
+   "spec": {
+    "seatLb": 105,
+    "openLb": 195,
+    "material": "chrome silicon",
+    "retainersIncluded": true,
+    "retainerMaterial": "4140",
+    "locksIncluded": false,
+    "upc": "670875716803"
+   },
+   "src": {
+    "doc": "fleeceperformance.com product pages (JSON-LD + fitment/interchange/certification tabs)",
+    "edition": "2026-10",
+    "url": "https://www.fleeceperformance.com/cummins-24v-spring-and-retainer-set.html"
+   },
+   "emissions": null
+  },
+  {
+   "m": "Fleece Performance",
+   "p": "FPE-DMAX-CP3",
+   "cat": "injectionPump",
+   "name": "CP3 pump, 2001-2016, Duramax 6.6",
+   "fit": {
+    "fam": "Duramax 6.6",
+    "ci": [
+     403
+    ],
+    "cyl": 8,
+    "y0": 2001,
+    "y1": 2016,
+    "notes": "LB7/LBZ/LLY/LML/LMM, GM Silverado/Sierra 2500/3500"
+   },
+   "spec": {
+    "type": "CP3",
+    "condition": "new",
+    "replacesOem": [
+     "97361351",
+     "97720662",
+     "97780091",
+     "97780161",
+     "986437332",
+     "0 445 020 037",
+     "0 445 020 105",
+     "0 986 437 332",
+     "0445020037",
+     "0445020105",
+     "0986437332",
+     "2H-113",
+     "IP24"
+    ],
+    "upc": "670875717633"
+   },
+   "src": {
+    "doc": "fleeceperformance.com product pages (JSON-LD + fitment/interchange/certification tabs)",
+    "edition": "2026-10",
+    "url": "https://www.fleeceperformance.com/duramax-cp3.html"
+   },
+   "emissions": "unknown"
+  },
+  {
+   "m": "Fleece Performance",
+   "p": "FPE-DMAX-CP3K",
+   "cat": "injectionPump",
+   "name": "CP3K CP3 pump, 2001-2016, Duramax 6.6",
+   "fit": {
+    "fam": "Duramax 6.6",
+    "ci": [
+     403
+    ],
+    "cyl": 8,
+    "y0": 2001,
+    "y1": 2016,
+    "notes": "LB7/LBZ/LLY/LML/LMM, GM Silverado/Sierra 2500/3500"
+   },
+   "spec": {
+    "type": "CP3",
+    "model": "CP3K",
+    "condition": "new",
+    "replacesOem": [
+     "97361351",
+     "97720662",
+     "97780091",
+     "97780161",
+     "986437332",
+     "0 445 020 037",
+     "0 445 020 105",
+     "0 986 437 332",
+     "0445020037",
+     "0445020105",
+     "0986437332",
+     "2H-113",
+     "IP24"
+    ],
+    "upc": "635909310488"
+   },
+   "src": {
+    "doc": "fleeceperformance.com product pages (JSON-LD + fitment/interchange/certification tabs)",
+    "edition": "2026-10",
+    "url": "https://www.fleeceperformance.com/duramax-cp3k.html"
+   },
+   "emissions": "unknown"
+  },
+  {
+   "m": "Fleece Performance",
+   "p": "FPE-DMAX-CP3-10MM",
+   "cat": "injectionPump",
+   "name": "PowerFlo 750 CP3 pump, to 750 RWHP, 2001-2016, Duramax 6.6",
+   "fit": {
+    "fam": "Duramax 6.6",
+    "ci": [
+     403
+    ],
+    "cyl": 8,
+    "y0": 2001,
+    "y1": 2016,
+    "notes": "LB7/LBZ/LLY/LML/LMM, GM Silverado/Sierra 2500/3500"
+   },
+   "spec": {
+    "type": "CP3",
+    "model": "PowerFlo 750",
+    "hpCapable": 750,
+    "hpBasis": "RWHP",
+    "condition": "new",
+    "replacesOem": [
+     "97361351",
+     "97720662",
+     "97780091",
+     "97780161",
+     "986437332",
+     "0 445 020 037",
+     "0 445 020 105",
+     "0 986 437 332",
+     "0445020037",
+     "0445020105",
+     "0986437332",
+     "2H-113",
+     "IP24"
+    ],
+    "upc": "635909310495"
+   },
+   "src": {
+    "doc": "fleeceperformance.com product pages (JSON-LD + fitment/interchange/certification tabs)",
+    "edition": "2026-10",
+    "url": "https://www.fleeceperformance.com/duramax-powerflo-750-cp3.html"
+   },
+   "emissions": "unknown"
+  },
+  {
+   "m": "Fleece Performance",
+   "p": "FPE-PF-FMC-1724-LB-CFS",
+   "cat": "liftPump",
+   "name": "fuel system kit with PowerFlo lift pump, long bed, 2017-2024, Powerstroke 6.7",
+   "fit": {
+    "fam": "Powerstroke 6.7",
+    "ci": [
+     406
+    ],
+    "cyl": 8,
+    "y0": 2017,
+    "y1": 2024,
+    "notes": "Ford Super Duty 250/350/450"
+   },
+   "spec": {
+    "kit": true,
+    "biodieselMaxPct": 20,
+    "bed": "long",
+    "replacesOem": [
+     "FD-4625",
+     "FD-4625AA",
+     "HC3Z-9N184-C",
+     "HC3Z-9N184-J",
+     "HC3Z9N184C",
+     "HC3Z-9H307AR"
+    ],
+    "upc": "732777410316"
+   },
+   "src": {
+    "doc": "fleeceperformance.com product pages (JSON-LD + fitment/interchange/certification tabs)",
+    "edition": "2026-10",
+    "url": "https://www.fleeceperformance.com/fleece-performance-complete-fuel-system-upgrade-with-powerflor-lift-pump-for-2017-2024-ford-6-7l-power-stroke-long-bed.html"
+   },
+   "emissions": "carb_eo:D-834-21"
+  },
+  {
+   "m": "Fleece Performance",
+   "p": "FPE-PF-FMC-1724-SB-CFS",
+   "cat": "liftPump",
+   "name": "fuel system kit with PowerFlo lift pump, short bed, 2017-2024, Powerstroke 6.7",
+   "fit": {
+    "fam": "Powerstroke 6.7",
+    "ci": [
+     406
+    ],
+    "cyl": 8,
+    "y0": 2017,
+    "y1": 2024,
+    "notes": "Ford Super Duty 250/350/450"
+   },
+   "spec": {
+    "kit": true,
+    "biodieselMaxPct": 20,
+    "bed": "short",
+    "replacesOem": [
+     "FD-4625",
+     "FD-4625AA",
+     "FD4625AA",
+     "HC3Z-9N184-C",
+     "HC3Z-9N184-J",
+     "HC3Z9N184C",
+     "HC3Z-9H307AQ"
+    ],
+    "upc": "732777410309"
+   },
+   "src": {
+    "doc": "fleeceperformance.com product pages (JSON-LD + fitment/interchange/certification tabs)",
+    "edition": "2026-10",
+    "url": "https://www.fleeceperformance.com/fleece-performance-complete-fuel-system-upgrade-with-powerflor-lift-pump-for-2017-2024-ford-6-7l-power-stroke-short-bed.html"
+   },
+   "emissions": "carb_eo:D-834-21"
+  },
+  {
+   "m": "Fleece Performance",
+   "p": "FPE-34771",
+   "cat": "fastener",
+   "name": "exhaust manifold stud kit, stainless steel, 1994-1998, Cummins 5.9 12V",
+   "fit": {
+    "fam": "Cummins 5.9 12V",
+    "ci": [
+     359
+    ],
+    "cyl": 6,
+    "y0": 1994,
+    "y1": 1998,
+    "notes": "Aftermarket exhaust manifold only"
+   },
+   "spec": {
+    "application": "exhaust manifold stud",
+    "head": "7 mm external hex",
+    "material": "stainless steel",
+    "torque": 55,
+    "nutsIncluded": true,
+    "upc": "670875716711"
+   },
+   "src": {
+    "doc": "fleeceperformance.com product pages (JSON-LD + fitment/interchange/certification tabs)",
+    "edition": "2026-10",
+    "url": "https://www.fleeceperformance.com/fleece-performance-exhaust-manifold-stud-kit.html"
+   },
+   "emissions": null
+  },
+  {
+   "m": "Fleece Performance",
+   "p": "FPE-34771",
+   "cat": "fastener",
+   "name": "exhaust manifold stud kit, stainless steel, 1998-2007, Cummins 5.9 24V/CR",
+   "fit": {
+    "fam": "Cummins 5.9 24V/CR",
+    "ci": [
+     359
+    ],
+    "cyl": 6,
+    "y0": 1998,
+    "y1": 2007,
+    "notes": "from 1998.5, Requires removal of factory heat shield"
+   },
+   "spec": {
+    "application": "exhaust manifold stud",
+    "head": "7 mm external hex",
+    "material": "stainless steel",
+    "torque": 55,
+    "nutsIncluded": true,
+    "upc": "670875716711"
+   },
+   "src": {
+    "doc": "fleeceperformance.com product pages (JSON-LD + fitment/interchange/certification tabs)",
+    "edition": "2026-10",
+    "url": "https://www.fleeceperformance.com/fleece-performance-exhaust-manifold-stud-kit.html"
+   },
+   "emissions": null
+  },
+  {
+   "m": "Fleece Performance",
+   "p": "FPE-34771",
+   "cat": "fastener",
+   "name": "exhaust manifold stud kit, stainless steel, 2007-2018, Cummins 6.7",
+   "fit": {
+    "fam": "Cummins 6.7",
+    "ci": [
+     408
+    ],
+    "cyl": 6,
+    "y0": 2007,
+    "y1": 2018,
+    "notes": "from 2007.5"
+   },
+   "spec": {
+    "application": "exhaust manifold stud",
+    "head": "7 mm external hex",
+    "material": "stainless steel",
+    "torque": 55,
+    "nutsIncluded": true,
+    "upc": "670875716711"
+   },
+   "src": {
+    "doc": "fleeceperformance.com product pages (JSON-LD + fitment/interchange/certification tabs)",
+    "edition": "2026-10",
+    "url": "https://www.fleeceperformance.com/fleece-performance-exhaust-manifold-stud-kit.html"
+   },
+   "emissions": null
+  },
+  {
+   "m": "Fleece Performance",
+   "p": "FPE-34772",
+   "cat": "fastener",
+   "name": "exhaust manifold stud kit, stainless steel, 1994-1998, Cummins 5.9 12V",
+   "fit": {
+    "fam": "Cummins 5.9 12V",
+    "ci": [
+     359
+    ],
+    "cyl": 6,
+    "y0": 1994,
+    "y1": 1998,
+    "notes": "Aftermarket exhaust manifold only"
+   },
+   "spec": {
+    "application": "exhaust manifold stud",
+    "head": "4 mm allen socket",
+    "material": "stainless steel",
+    "torque": 55,
+    "nutsIncluded": true,
+    "upc": "670875716728"
+   },
+   "src": {
+    "doc": "fleeceperformance.com product pages (JSON-LD + fitment/interchange/certification tabs)",
+    "edition": "2026-10",
+    "url": "https://www.fleeceperformance.com/fleece-performance-exhaust-manifold-stud-kit-4mm-allen-socket-head.html"
+   },
+   "emissions": null
+  },
+  {
+   "m": "Fleece Performance",
+   "p": "FPE-34772",
+   "cat": "fastener",
+   "name": "exhaust manifold stud kit, stainless steel, 1998-2007, Cummins 5.9 24V/CR",
+   "fit": {
+    "fam": "Cummins 5.9 24V/CR",
+    "ci": [
+     359
+    ],
+    "cyl": 6,
+    "y0": 1998,
+    "y1": 2007,
+    "notes": "from 1998.5, Requires removal of factory heat shield"
+   },
+   "spec": {
+    "application": "exhaust manifold stud",
+    "head": "4 mm allen socket",
+    "material": "stainless steel",
+    "torque": 55,
+    "nutsIncluded": true,
+    "upc": "670875716728"
+   },
+   "src": {
+    "doc": "fleeceperformance.com product pages (JSON-LD + fitment/interchange/certification tabs)",
+    "edition": "2026-10",
+    "url": "https://www.fleeceperformance.com/fleece-performance-exhaust-manifold-stud-kit-4mm-allen-socket-head.html"
+   },
+   "emissions": null
+  },
+  {
+   "m": "Fleece Performance",
+   "p": "FPE-34772",
+   "cat": "fastener",
+   "name": "exhaust manifold stud kit, stainless steel, 2007-2018, Cummins 6.7",
+   "fit": {
+    "fam": "Cummins 6.7",
+    "ci": [
+     408
+    ],
+    "cyl": 6,
+    "y0": 2007,
+    "y1": 2018,
+    "notes": "from 2007.5"
+   },
+   "spec": {
+    "application": "exhaust manifold stud",
+    "head": "4 mm allen socket",
+    "material": "stainless steel",
+    "torque": 55,
+    "nutsIncluded": true,
+    "upc": "670875716728"
+   },
+   "src": {
+    "doc": "fleeceperformance.com product pages (JSON-LD + fitment/interchange/certification tabs)",
+    "edition": "2026-10",
+    "url": "https://www.fleeceperformance.com/fleece-performance-exhaust-manifold-stud-kit-4mm-allen-socket-head.html"
+   },
+   "emissions": null
+  },
+  {
+   "m": "Fleece Performance",
+   "p": "FPE-CUMM-HG-5.9-FR",
+   "cat": "headGasket",
+   "name": "head gasket, MLS, 2003-2007, Cummins 5.9 24V/CR",
+   "fit": {
+    "fam": "Cummins 5.9 24V/CR",
+    "ci": [
+     359
+    ],
+    "cyl": 6,
+    "y0": 2003,
+    "y1": 2007,
+    "notes": "Ram 2500/3500"
+   },
+   "spec": {
+    "material": "MLS",
+    "fireRing": true,
+    "fireRingWire": 0.105,
+    "matchesHead": "FPE-61-10006",
+    "upc": "670875719767"
+   },
+   "src": {
+    "doc": "fleeceperformance.com product pages (JSON-LD + fitment/interchange/certification tabs)",
+    "edition": "2026-10",
+    "url": "https://www.fleeceperformance.com/fleece-performance-fire-ring-head-gasket-for-5-9-l-cummins.html"
+   },
+   "emissions": null
+  },
+  {
+   "m": "Fleece Performance",
+   "p": "FPE-CUMM-HG-6.7-FR",
+   "cat": "headGasket",
+   "name": "head gasket, MLS, 2007-2018, Cummins 6.7",
+   "fit": {
+    "fam": "Cummins 6.7",
+    "ci": [
+     408
+    ],
+    "cyl": 6,
+    "y0": 2007,
+    "y1": 2018,
+    "notes": "from 2007.5, Ram 2500/3500"
+   },
+   "spec": {
+    "material": "MLS",
+    "fireRing": true,
+    "fireRingWire": 0.105,
+    "matchesHead": "FPE-61-10008",
+    "upc": "670875719774"
+   },
+   "src": {
+    "doc": "fleeceperformance.com product pages (JSON-LD + fitment/interchange/certification tabs)",
+    "edition": "2026-10",
+    "url": "https://www.fleeceperformance.com/fleece-performance-fire-ring-head-gasket-for-6-7l-cummins.html"
+   },
+   "emissions": null
+  },
+  {
+   "m": "Fleece Performance",
+   "p": "FPE-HE4-64",
+   "cat": "turbo",
+   "name": "HE400VG turbo, 64 mm compressor, 72 mm turbine, VGT, Cummins ISX/QSX",
+   "fit": {
+    "fam": "Cummins ISX/QSX",
+    "cyl": 6
+   },
+   "spec": {
+    "compressorInducer": 64,
+    "turbineWheel": 72,
+    "vgt": true,
+    "model": "HE400VG",
+    "condition": "new",
+    "compressorExducer": 92,
+    "compressorBlades": "7x7",
+    "turbineExducer": 67,
+    "turbineBlades": 11,
+    "applicationNote": "Cummins ISX15 CM2250 and CM2350",
+    "replacesOem": [
+     "2843821",
+     "2882015",
+     "2882111",
+     "2882112",
+     "3769054",
+     "3769055",
+     "3769056",
+     "3769058",
+     "3769059",
+     "3769061",
+     "3773488",
+     "3773489",
+     "3773491",
+     "3773492",
+     "3773493",
+     "3773495",
+     "3792571",
+     "3792576",
+     "3792577",
+     "3792583",
+     "3795122",
+     "3795143",
+     "3795159",
+     "3796351",
+     "5350404",
+     "5350411",
+     "5350501",
+     "5359595",
+     "5359609",
+     "5456845"
+    ],
+    "upc": "670875717664"
+   },
+   "src": {
+    "doc": "fleeceperformance.com product pages (JSON-LD + fitment/interchange/certification tabs)",
+    "edition": "2026-10",
+    "url": "https://www.fleeceperformance.com/fleece-performance-he400vg-he451ve-turbocharger-for-cummins-isx-qsx-64mm.html"
+   },
+   "emissions": "oem_replacement"
+  },
+  {
+   "m": "Fleece Performance",
+   "p": "FPE-HE4-67",
+   "cat": "turbo",
+   "name": "HE400VG turbo, 67 mm compressor, 72 mm turbine, VGT, Cummins ISX/QSX",
+   "fit": {
+    "fam": "Cummins ISX/QSX",
+    "cyl": 6
+   },
+   "spec": {
+    "compressorInducer": 67,
+    "turbineWheel": 72,
+    "vgt": true,
+    "model": "HE400VG",
+    "condition": "new",
+    "compressorExducer": 92,
+    "compressorBlades": "7x7",
+    "turbineExducer": 67,
+    "turbineBlades": 11,
+    "applicationNote": "Cummins ISX15 CM2250 and CM2350",
+    "replacesOem": [
+     "2843821",
+     "2882015",
+     "2882112",
+     "3769054",
+     "3769055",
+     "3769056",
+     "3769058",
+     "3769059",
+     "3769061",
+     "3773488",
+     "3773489",
+     "3773491",
+     "3773492",
+     "3773493",
+     "3773495",
+     "3792571",
+     "3792576",
+     "3792577",
+     "3792583",
+     "3795122",
+     "3795143",
+     "3795159",
+     "3796351",
+     "5350404",
+     "5350411",
+     "5350501",
+     "5359595",
+     "5359609",
+     "5456845",
+     "5458260"
+    ],
+    "upc": "670875718098"
+   },
+   "src": {
+    "doc": "fleeceperformance.com product pages (JSON-LD + fitment/interchange/certification tabs)",
+    "edition": "2026-10",
+    "url": "https://www.fleeceperformance.com/fleece-performance-he400vg-he451ve-turbocharger-for-cummins-isx-qsx-67mm.html"
+   },
+   "emissions": "oem_replacement"
+  },
+  {
+   "m": "Fleece Performance",
+   "p": "FPE-CUMM-IP-0724",
+   "cat": "intake",
+   "name": "diesel intake plate, replaces grid heater plate, 2007-2024, Cummins 6.7",
+   "fit": {
+    "fam": "Cummins 6.7",
+    "ci": [
+     408
+    ],
+    "cyl": 6,
+    "y0": 2007,
+    "y1": 2024,
+    "notes": "from 2007.5, Ram 2500/3500; Ram 4500/5500"
+   },
+   "spec": {
+    "type": "diesel intake plate",
+    "material": "cast aluminum",
+    "replacesGridHeater": true,
+    "cabChassis": true,
+    "upc": "732777410033",
+    "semaCert": "SC-FLC01-0186"
+   },
+   "src": {
+    "doc": "fleeceperformance.com product pages (JSON-LD + fitment/interchange/certification tabs)",
+    "edition": "2026-10",
+    "url": "https://www.fleeceperformance.com/fleece-performance-high-flow-intake-plenum-for-2007-5-2024-ram-with-6-7l-cummins.html"
+   },
+   "emissions": "unknown"
+  },
+  {
+   "m": "Fleece Performance",
+   "p": "FPE-CUMM-HG-5.9",
+   "cat": "headGasket",
+   "name": "head gasket, MLS, 2003-2007, Cummins 5.9 24V/CR",
+   "fit": {
+    "fam": "Cummins 5.9 24V/CR",
+    "ci": [
+     359
+    ],
+    "cyl": 6,
+    "y0": 2003,
+    "y1": 2007,
+    "notes": "Ram 2500/3500"
+   },
+   "spec": {
+    "material": "MLS",
+    "upc": "670875718227"
+   },
+   "src": {
+    "doc": "fleeceperformance.com product pages (JSON-LD + fitment/interchange/certification tabs)",
+    "edition": "2026-10",
+    "url": "https://www.fleeceperformance.com/fleece-performance-oe-replacement-head-gasket-for-5-9l-cummins-thick.html"
+   },
+   "emissions": null
+  },
+  {
+   "m": "Fleece Performance",
+   "p": "FPE-CUMM-HG-6.7",
+   "cat": "headGasket",
+   "name": "head gasket, MLS, 2007-2018, Cummins 6.7",
+   "fit": {
+    "fam": "Cummins 6.7",
+    "ci": [
+     408
+    ],
+    "cyl": 6,
+    "y0": 2007,
+    "y1": 2018,
+    "notes": "from 2007.5, Ram 2500/3500"
+   },
+   "spec": {
+    "material": "MLS",
+    "upc": "670875718210"
+   },
+   "src": {
+    "doc": "fleeceperformance.com product pages (JSON-LD + fitment/interchange/certification tabs)",
+    "edition": "2026-10",
+    "url": "https://www.fleeceperformance.com/fleece-performance-oe-replacement-head-gasket-for-6-7l-cummins-standard-thickness.html"
+   },
+   "emissions": null
+  },
+  {
+   "m": "Fleece Performance",
+   "p": "FPE-CUMM-RAA-CR",
+   "cat": "rocker",
+   "name": "OE replacement rocker arm assembly, 1998-2007, Cummins 5.9 24V/CR",
+   "fit": {
+    "fam": "Cummins 5.9 24V/CR",
+    "ci": [
+     359
+    ],
+    "cyl": 6,
+    "y0": 1998,
+    "y1": 2007,
+    "notes": "from 1998.5, Ram 2500/3500"
+   },
+   "spec": {
+    "type": "OE replacement",
+    "assembly": true,
+    "replacesOem": [
+     "4995602",
+     "3941928",
+     "4928698",
+     "4995603"
+    ],
+    "upc": "670875718425"
+   },
+   "src": {
+    "doc": "fleeceperformance.com product pages (JSON-LD + fitment/interchange/certification tabs)",
+    "edition": "2026-10",
+    "url": "https://www.fleeceperformance.com/fleece-performance-oe-replacement-rocker-arm-assembly-for-5-9l-6-7l-cummins-engines.html"
+   },
+   "emissions": null
+  },
+  {
+   "m": "Fleece Performance",
+   "p": "FPE-CUMM-RAA-CR",
+   "cat": "rocker",
+   "name": "OE replacement rocker arm assembly, 2007-2018, Cummins 6.7",
+   "fit": {
+    "fam": "Cummins 6.7",
+    "ci": [
+     408
+    ],
+    "cyl": 6,
+    "y0": 2007,
+    "y1": 2018,
+    "notes": "from 2007.5, Ram 2500/3500"
+   },
+   "spec": {
+    "type": "OE replacement",
+    "assembly": true,
+    "replacesOem": [
+     "4995602",
+     "3941928",
+     "4928698",
+     "4995603"
+    ],
+    "upc": "670875718425"
+   },
+   "src": {
+    "doc": "fleeceperformance.com product pages (JSON-LD + fitment/interchange/certification tabs)",
+    "edition": "2026-10",
+    "url": "https://www.fleeceperformance.com/fleece-performance-oe-replacement-rocker-arm-assembly-for-5-9l-6-7l-cummins-engines.html"
+   },
+   "emissions": null
+  },
+  {
+   "m": "Fleece Performance",
+   "p": "FPE-CUMM-0718-UPR-GS-KIT",
+   "cat": "gasket",
+   "name": "upper gasket set, with head gasket, 2007-2018, Cummins 6.7",
+   "fit": {
+    "fam": "Cummins 6.7",
+    "ci": [
+     408
+    ],
+    "cyl": 6,
+    "y0": 2007,
+    "y1": 2018,
+    "notes": "from 2007.5, Ram 2500/3500; Ram 4500/5500"
+   },
+   "spec": {
+    "set": "upper",
+    "headGasketIncluded": true,
+    "replacesOem": [
+     "4932210",
+     "3977393",
+     "3976371",
+     "3089240",
+     "4062328",
+     "3963379",
+     "4933628",
+     "3678603",
+     "3678786",
+     "3954829",
+     "3949910",
+     "3958716",
+     "4940849",
+     "4943533",
+     "4933235",
+     "3977338",
+     "3963990",
+     "3955339",
+     "3947530",
+     "4933225",
+     "3979769"
+    ],
+    "upc": "732777408788"
+   },
+   "src": {
+    "doc": "fleeceperformance.com product pages (JSON-LD + fitment/interchange/certification tabs)",
+    "edition": "2026-10",
+    "url": "https://www.fleeceperformance.com/fleece-performance-upper-gasket-kit-for-my-2007-5-2018-6-7l-cummins-with-head-gasket.html"
+   },
+   "emissions": null
+  },
+  {
+   "m": "Fleece Performance",
+   "p": "FPE-CUMM-0718-UPR-GS-NHG",
+   "cat": "gasket",
+   "name": "upper gasket set, without head gasket, 2007-2018, Cummins 6.7",
+   "fit": {
+    "fam": "Cummins 6.7",
+    "ci": [
+     408
+    ],
+    "cyl": 6,
+    "y0": 2007,
+    "y1": 2018,
+    "notes": "from 2007.5, Ram 2500/3500"
+   },
+   "spec": {
+    "set": "upper",
+    "headGasketIncluded": false,
+    "replacesOem": [
+     "5264568",
+     "3977393",
+     "3976371",
+     "3089240",
+     "4062328",
+     "3963379",
+     "4933628",
+     "3678603",
+     "3678786",
+     "3954829",
+     "3949910",
+     "3958716",
+     "4940849",
+     "4943533",
+     "4933235",
+     "3977338",
+     "3963990",
+     "3955339",
+     "3947530",
+     "4933225",
+     "3979769"
+    ],
+    "upc": "732777410279"
+   },
+   "src": {
+    "doc": "fleeceperformance.com product pages (JSON-LD + fitment/interchange/certification tabs)",
+    "edition": "2026-10",
+    "url": "https://www.fleeceperformance.com/fleece-performance-upper-gasket-set-for-my-2007-5-2018-6-7l-cummins-no-head-gasket.html"
+   },
+   "emissions": null
+  },
+  {
+   "m": "Fleece Performance",
+   "p": "FPE-61-10013-HD",
+   "cat": "head",
+   "name": "Freedom Series cylinder head, 1994-1998, Cummins 5.9 12V",
+   "fit": {
+    "fam": "Cummins 5.9 12V",
+    "ci": [
+     359
+    ],
+    "cyl": 6,
+    "y0": 1994,
+    "y1": 1998,
+    "notes": "Ram 2500/3500"
+   },
+   "spec": {
+    "bare": false,
+    "series": "Freedom Series",
+    "valveSpringLb": 160,
+    "valveSeats": "hardened oversized press-in",
+    "condition": "new",
+    "replacesOem": [
+     "3802805",
+     "3920395",
+     "3922691",
+     "3925400",
+     "3930652",
+     "3934742",
+     "3934746",
+     "3934747",
+     "3966452",
+     "3966454",
+     "3967458",
+     "703900AT"
+    ],
+    "upc": "670875718760"
+   },
+   "src": {
+    "doc": "fleeceperformance.com product pages (JSON-LD + fitment/interchange/certification tabs)",
+    "edition": "2026-10",
+    "url": "https://www.fleeceperformance.com/freedom-series-12-valve-cummins-cylinder-head-street-hd.html"
+   },
+   "emissions": null
+  },
+  {
+   "m": "Fleece Performance",
+   "p": "FPE-61-10002-D",
+   "cat": "head",
+   "name": "Freedom Series cylinder head, driver side, 2004-2005, Duramax 6.6",
+   "fit": {
+    "fam": "Duramax 6.6",
+    "ci": [
+     403
+    ],
+    "cyl": 8,
+    "y0": 2004,
+    "y1": 2005,
+    "notes": "from 2004.5, LLY, GM Silverado/Sierra 2500/3500"
+   },
+   "spec": {
+    "side": "L",
+    "series": "Freedom Series",
+    "condition": "new",
+    "replacesOem": [
+     "97311546",
+     "97779579"
+    ],
+    "upc": "670875716629"
+   },
+   "src": {
+    "doc": "fleeceperformance.com product pages (JSON-LD + fitment/interchange/certification tabs)",
+    "edition": "2026-10",
+    "url": "https://www.fleeceperformance.com/freedom-series-duramax-cylinder-head-for-2004-5-2005-lly-driver-side.html"
+   },
+   "emissions": null
+  },
+  {
+   "m": "Fleece Performance",
+   "p": "FPE-61-10002-P",
+   "cat": "head",
+   "name": "Freedom Series cylinder head, passenger side, 2004-2005, Duramax 6.6",
+   "fit": {
+    "fam": "Duramax 6.6",
+    "ci": [
+     403
+    ],
+    "cyl": 8,
+    "y0": 2004,
+    "y1": 2005,
+    "notes": "from 2004.5, LLY, GM Silverado/Sierra 2500/3500"
+   },
+   "spec": {
+    "side": "R",
+    "series": "Freedom Series",
+    "condition": "new",
+    "replacesOem": [
+     "97311546",
+     "97779579"
+    ],
+    "upc": "670875716612"
+   },
+   "src": {
+    "doc": "fleeceperformance.com product pages (JSON-LD + fitment/interchange/certification tabs)",
+    "edition": "2026-10",
+    "url": "https://www.fleeceperformance.com/freedom-series-duramax-cylinder-head-for-2004-5-2005-lly-passenger-side.html"
+   },
+   "emissions": null
+  },
+  {
+   "m": "Fleece Performance",
+   "p": "FPE-61-10003-D",
+   "cat": "head",
+   "name": "Freedom Series cylinder head, driver side, 2006-2010, Duramax 6.6",
+   "fit": {
+    "fam": "Duramax 6.6",
+    "ci": [
+     403
+    ],
+    "cyl": 8,
+    "y0": 2006,
+    "y1": 2010,
+    "notes": "LBZ/LLY/LMM, GM Silverado/Sierra 2500/3500"
+   },
+   "spec": {
+    "side": "L",
+    "series": "Freedom Series",
+    "condition": "new",
+    "replacesOem": [
+     "12690608",
+     "98025702"
+    ],
+    "upc": "670875716643"
+   },
+   "src": {
+    "doc": "fleeceperformance.com product pages (JSON-LD + fitment/interchange/certification tabs)",
+    "edition": "2026-10",
+    "url": "https://www.fleeceperformance.com/freedom-series-duramax-cylinder-head-for-2006-2010-lbz-lmm-driver-side.html"
+   },
+   "emissions": null
+  },
+  {
+   "m": "Fleece Performance",
+   "p": "FPE-61-10003-P",
+   "cat": "head",
+   "name": "Freedom Series cylinder head, passenger side, 2006-2010, Duramax 6.6",
+   "fit": {
+    "fam": "Duramax 6.6",
+    "ci": [
+     403
+    ],
+    "cyl": 8,
+    "y0": 2006,
+    "y1": 2010,
+    "notes": "LBZ/LLY/LMM, GM Silverado/Sierra 2500/3500"
+   },
+   "spec": {
+    "side": "R",
+    "series": "Freedom Series",
+    "condition": "new",
+    "replacesOem": [
+     "12690608",
+     "98025702"
+    ],
+    "upc": "670875716636"
+   },
+   "src": {
+    "doc": "fleeceperformance.com product pages (JSON-LD + fitment/interchange/certification tabs)",
+    "edition": "2026-10",
+    "url": "https://www.fleeceperformance.com/freedom-series-duramax-cylinder-head-for-2006-2010-lbz-lmm-passenger-side.html"
+   },
+   "emissions": null
+  },
+  {
+   "m": "Fleece Performance",
+   "p": "FPE-61-10004-D",
+   "cat": "head",
+   "name": "Freedom Series cylinder head, driver side, 2011-2016, Duramax 6.6",
+   "fit": {
+    "fam": "Duramax 6.6",
+    "ci": [
+     403
+    ],
+    "cyl": 8,
+    "y0": 2011,
+    "y1": 2016,
+    "notes": "LML, GM Silverado/Sierra 2500/3500"
+   },
+   "spec": {
+    "side": "L",
+    "series": "Freedom Series",
+    "condition": "new",
+    "replacesOem": [
+     "12623949",
+     "12646217",
+     "12670434",
+     "12690607"
+    ],
+    "upc": "670875716667",
+    "semaCert": "SC-FLC01-0190"
+   },
+   "src": {
+    "doc": "fleeceperformance.com product pages (JSON-LD + fitment/interchange/certification tabs)",
+    "edition": "2026-10",
+    "url": "https://www.fleeceperformance.com/freedom-series-duramax-cylinder-head-for-2011-2016-lml-driver-side.html"
+   },
+   "emissions": null
+  },
+  {
+   "m": "Fleece Performance",
+   "p": "FPE-61-10004-P",
+   "cat": "head",
+   "name": "Freedom Series cylinder head, passenger side, 2011-2016, Duramax 6.6",
+   "fit": {
+    "fam": "Duramax 6.6",
+    "ci": [
+     403
+    ],
+    "cyl": 8,
+    "y0": 2011,
+    "y1": 2016,
+    "notes": "LML, GM Silverado/Sierra 2500/3500"
+   },
+   "spec": {
+    "side": "R",
+    "series": "Freedom Series",
+    "condition": "new",
+    "replacesOem": [
+     "12623949",
+     "12646217",
+     "12670434",
+     "12690607"
+    ],
+    "upc": "670875716650",
+    "semaCert": "SC-FLC01-0190"
+   },
+   "src": {
+    "doc": "fleeceperformance.com product pages (JSON-LD + fitment/interchange/certification tabs)",
+    "edition": "2026-10",
+    "url": "https://www.fleeceperformance.com/freedom-series-duramax-cylinder-head-for-2011-2016-lml-passenger-side.html"
+   },
+   "emissions": null
+  },
+  {
+   "m": "Fleece Performance",
+   "p": "FPE-61-10014-D",
+   "cat": "head",
+   "name": "Freedom Series cylinder head, driver side, 2017-2023, Duramax 6.6",
+   "fit": {
+    "fam": "Duramax 6.6",
+    "ci": [
+     403
+    ],
+    "cyl": 8,
+    "y0": 2017,
+    "y1": 2023,
+    "notes": "L5P, GM Silverado/Sierra 2500/3500"
+   },
+   "spec": {
+    "side": "L",
+    "series": "Freedom Series",
+    "condition": "new",
+    "replacesOem": [
+     "12677203",
+     "12679954",
+     "12680672",
+     "12685841",
+     "12690885",
+     "12691265",
+     "12693946",
+     "12700211",
+     "12702633",
+     "12716845",
+     "12716846"
+    ],
+    "upc": "732777408917"
+   },
+   "src": {
+    "doc": "fleeceperformance.com product pages (JSON-LD + fitment/interchange/certification tabs)",
+    "edition": "2026-10",
+    "url": "https://www.fleeceperformance.com/freedom-series-duramax-cylinder-head-for-2017-2023-l5p-driver-side.html"
+   },
+   "emissions": null
+  },
+  {
+   "m": "Fleece Performance",
+   "p": "FPE-61-10014-P",
+   "cat": "head",
+   "name": "Freedom Series cylinder head, passenger side, 2017-2023, Duramax 6.6",
+   "fit": {
+    "fam": "Duramax 6.6",
+    "ci": [
+     403
+    ],
+    "cyl": 8,
+    "y0": 2017,
+    "y1": 2023,
+    "notes": "L5P, GM Silverado/Sierra 2500/3500"
+   },
+   "spec": {
+    "side": "R",
+    "series": "Freedom Series",
+    "condition": "new",
+    "replacesOem": [
+     "12677203",
+     "12679954",
+     "12680672",
+     "12685841",
+     "12690885",
+     "12691265",
+     "12693946",
+     "12700211",
+     "12702633",
+     "12716845",
+     "12716846"
+    ],
+    "upc": "732777408924"
+   },
+   "src": {
+    "doc": "fleeceperformance.com product pages (JSON-LD + fitment/interchange/certification tabs)",
+    "edition": "2026-10",
+    "url": "https://www.fleeceperformance.com/freedom-series-duramax-cylinder-head-for-2017-2023-l5p-passenger-side.html"
+   },
+   "emissions": null
+  },
+  {
+   "m": "Fleece Performance",
+   "p": "FPE-61-10001-D-CL",
+   "cat": "head",
+   "name": "Freedom Series cylinder head, driver side, cupless injector bore, 2001-2004, Duramax 6.6",
+   "fit": {
+    "fam": "Duramax 6.6",
+    "ci": [
+     403
+    ],
+    "cyl": 8,
+    "y0": 2001,
+    "y1": 2004,
+    "notes": "LB7, GM Silverado/Sierra 2500/3500"
+   },
+   "spec": {
+    "material": "aluminum",
+    "side": "L",
+    "injectorBore": "cupless",
+    "bare": false,
+    "series": "Freedom Series",
+    "replacesOem": [
+     "97289442",
+     "97779578",
+     "97779580"
+    ],
+    "upc": "670875718142"
+   },
+   "src": {
+    "doc": "fleeceperformance.com product pages (JSON-LD + fitment/interchange/certification tabs)",
+    "edition": "2026-10",
+    "url": "https://www.fleeceperformance.com/freedom-series-duramax-cylinder-head-with-cupless-injector-bore-for-2001-2004-lb7-driver-side.html"
+   },
+   "emissions": null
+  },
+  {
+   "m": "Fleece Performance",
+   "p": "FPE-61-10001-P-CL",
+   "cat": "head",
+   "name": "Freedom Series cylinder head, passenger side, cupless injector bore, 2001-2004, Duramax 6.6",
+   "fit": {
+    "fam": "Duramax 6.6",
+    "ci": [
+     403
+    ],
+    "cyl": 8,
+    "y0": 2001,
+    "y1": 2004,
+    "notes": "LB7, GM Silverado/Sierra 2500/3500"
+   },
+   "spec": {
+    "material": "aluminum",
+    "side": "R",
+    "injectorBore": "cupless",
+    "bare": false,
+    "series": "Freedom Series",
+    "replacesOem": [
+     "97311546",
+     "97779579"
+    ],
+    "upc": "670875718159"
+   },
+   "src": {
+    "doc": "fleeceperformance.com product pages (JSON-LD + fitment/interchange/certification tabs)",
+    "edition": "2026-10",
+    "url": "https://www.fleeceperformance.com/freedom-series-duramax-cylinder-head-with-cupless-injector-bore-for-2001-2004-lb7-passenger-side.html"
+   },
+   "emissions": null
+  },
+  {
+   "m": "Fleece Performance",
+   "p": "FPE-34755",
+   "cat": "liftPump",
+   "name": "fuel system kit with PowerFlo lift pump, to 800 HP, 2003-2004, Cummins 5.9 24V/CR",
+   "fit": {
+    "fam": "Cummins 5.9 24V/CR",
+    "ci": [
+     359
+    ],
+    "cyl": 6,
+    "y0": 2003,
+    "y1": 2004,
+    "notes": "Ram 2500/3500"
+   },
+   "spec": {
+    "type": "in-tank",
+    "kit": true,
+    "psiLow": 15,
+    "psiHigh": 17,
+    "filtration": "3 micron",
+    "hpCapable": 800,
+    "hpBasis": "HP",
+    "pumpType": "dual gerotor",
+    "biodieselMaxPct": 20,
+    "upc": "670875716766",
+    "semaCert": "SC-FLC01-0095"
+   },
+   "src": {
+    "doc": "fleeceperformance.com product pages (JSON-LD + fitment/interchange/certification tabs)",
+    "edition": "2026-10",
+    "url": "https://www.fleeceperformance.com/fuel-system-upgrade-kit-with-powerflo-lift-pump-for-2003-2004-dodge-cummins.html"
+   },
+   "emissions": null
+  },
+  {
+   "m": "Fleece Performance",
+   "p": "FPE-351-0304",
+   "cat": "turbo",
+   "name": "Cheetah turbo, 63 mm compressor, to 650 RWHP, 2003-2004, Cummins 5.9 24V/CR",
+   "fit": {
+    "fam": "Cummins 5.9 24V/CR",
+    "ci": [
+     359
+    ],
+    "cyl": 6,
+    "y0": 2003,
+    "y1": 2004,
+    "notes": "Ram 2500/3500"
+   },
+   "spec": {
+    "compressorInducer": 63,
+    "wastegatePsi": 40,
+    "vgt": false,
+    "series": "Cheetah",
+    "compressorWheel": "FMW (forged milled)",
+    "turbineMaterial": "Inconel",
+    "hpCapable": 650,
+    "hpBasis": "RWHP",
+    "condition": "new",
+    "replacesOem": [
+     "3599811",
+     "05086863AA",
+     "4033667H"
+    ],
+    "upc": "635909310181"
+   },
+   "src": {
+    "doc": "fleeceperformance.com product pages (JSON-LD + fitment/interchange/certification tabs)",
+    "edition": "2026-10",
+    "url": "https://www.fleeceperformance.com/holset-cheetah-turbocharger.html"
+   },
+   "emissions": "no_eo_race_only"
+  },
+  {
+   "m": "Fleece Performance",
+   "p": "FPE-LML-CP3-10",
+   "cat": "injectionPump",
+   "name": "CP3 pump kit, 10 mm stroker, 2011-2016, Duramax 6.6",
+   "fit": {
+    "fam": "Duramax 6.6",
+    "ci": [
+     403
+    ],
+    "cyl": 8,
+    "y0": 2011,
+    "y1": 2016,
+    "notes": "LML, GM Silverado/Sierra 2500/3500"
+   },
+   "spec": {
+    "type": "CP3",
+    "strokerMm": 10,
+    "kit": true,
+    "condition": "new",
+    "upc": "670875717756",
+    "semaCert": "SC-FLC01-0013"
+   },
+   "src": {
+    "doc": "fleeceperformance.com product pages (JSON-LD + fitment/interchange/certification tabs)",
+    "edition": "2026-10",
+    "url": "https://www.fleeceperformance.com/lml-cp3-conversion-kit-with-hd-cp3-for-2011-2016-duramax.html"
+   },
+   "emissions": "unknown"
+  },
+  {
+   "m": "Fleece Performance",
+   "p": "FPE-CUMM-CP3-12MM-5.9",
+   "cat": "injectionPump",
+   "name": "PowerFlo 1000 CP3 pump, 12 mm stroker, to 1000 RWHP, 2003-2007, Cummins 5.9 24V/CR",
+   "fit": {
+    "fam": "Cummins 5.9 24V/CR",
+    "ci": [
+     359
+    ],
+    "cyl": 6,
+    "y0": 2003,
+    "y1": 2007,
+    "notes": "Ram 2500/3500"
+   },
+   "spec": {
+    "type": "CP3",
+    "strokerMm": 12,
+    "model": "PowerFlo 1000",
+    "hpCapable": 1000,
+    "hpBasis": "RWHP",
+    "rpmHigh": 6000,
+    "condition": "new",
+    "fca": "new OEM, unmodified",
+    "replacesOem": [
+     "0445020039",
+     "0445020147",
+     "0986437304",
+     "5104877AA",
+     "5143425AA",
+     "R5104877AA",
+     "R5143425AA",
+     "R5191780AA"
+    ],
+    "upc": "670875718715"
+   },
+   "src": {
+    "doc": "fleeceperformance.com product pages (JSON-LD + fitment/interchange/certification tabs)",
+    "edition": "2026-10",
+    "url": "https://www.fleeceperformance.com/powerflo-1000-cp3-pump-for-2003-2007-5-9l-cummins.html"
+   },
+   "emissions": "unknown"
+  },
+  {
+   "m": "Fleece Performance",
+   "p": "FPE-CUMM-CP3-12MM-6.7",
+   "cat": "injectionPump",
+   "name": "PowerFlo 1000 CP3 pump, 12 mm stroker, to 1000 RWHP, 2007-2024, Cummins 6.7",
+   "fit": {
+    "fam": "Cummins 6.7",
+    "ci": [
+     408
+    ],
+    "cyl": 6,
+    "y0": 2007,
+    "y1": 2024,
+    "notes": "from 2007.5, Ram 2500/3500"
+   },
+   "spec": {
+    "type": "CP3",
+    "strokerMm": 12,
+    "model": "PowerFlo 1000",
+    "hpCapable": 1000,
+    "hpBasis": "RWHP",
+    "rpmHigh": 6000,
+    "condition": "new",
+    "fca": "new OEM, unmodified",
+    "replacesOem": [
+     "0445020047",
+     "0445020076",
+     "0445020106",
+     "0445020146",
+     "0986437334",
+     "68027022AA",
+     "68027022AB",
+     "8027067AC",
+     "R8002013AC",
+     "R8027022AB",
+     "R80277022AA"
+    ],
+    "upc": "670875718708",
+    "semaCert": "SC-FLC01-0033"
+   },
+   "src": {
+    "doc": "fleeceperformance.com product pages (JSON-LD + fitment/interchange/certification tabs)",
+    "edition": "2026-10",
+    "url": "https://www.fleeceperformance.com/powerflo-1000-cp3-pump-for-2007-5-2018-6-7l-cummins.html"
+   },
+   "emissions": "carb_eo:D-834-8"
+  },
+  {
+   "m": "Fleece Performance",
+   "p": "FPE-PF-FMC-1116-SB",
+   "cat": "liftPump",
+   "name": "fuel system kit with PowerFlo lift pump, short bed, to 800 HP, 2011-2016, Powerstroke 6.7",
+   "fit": {
+    "fam": "Powerstroke 6.7",
+    "ci": [
+     406
+    ],
+    "cyl": 8,
+    "y0": 2011,
+    "y1": 2016,
+    "notes": "Ford Super Duty 250/350/450"
+   },
+   "spec": {
+    "type": "in-tank",
+    "kit": true,
+    "psiLow": 65,
+    "psiHigh": 70,
+    "filtration": "4 micron",
+    "hpCapable": 800,
+    "hpBasis": "HP",
+    "pumpType": "dual gerotor",
+    "biodieselMaxPct": 20,
+    "bed": "short",
+    "outletThread": "3/4 in-16 (-8 ORB)",
+    "replacesOem": [
+     "BC3Z 9275-A",
+     "BC3Z-9A299-A"
+    ],
+    "aftermarketTankFitment": [
+     {
+      "tank": "Titan 7021211",
+      "make": "FORD",
+      "model": "F250 & F350",
+      "years": "2011-2016",
+      "cab": "Crew",
+      "bed": "Short Bed",
+      "lockingRing": true
+     }
+    ],
+    "upc": "670875719231"
+   },
+   "src": {
+    "doc": "fleeceperformance.com product pages (JSON-LD + fitment/interchange/certification tabs)",
+    "edition": "2026-10",
+    "url": "https://www.fleeceperformance.com/powerflo-lift-pump-for-2011-2016-ford-powerstroke-short-bed.html",
+    "alsoFrom": "fleeceperformance.com Fleece_and_Titan_Powerflo_Fitment.pdf / Fleece_SB_PF_SF_Fitment.pdf"
+   },
+   "emissions": "carb_eo:D-834-18"
+  },
+  {
+   "m": "Fleece Performance",
+   "p": "FPE-PF-FMC-1116-LB",
+   "cat": "liftPump",
+   "name": "fuel system kit with PowerFlo lift pump, long bed, to 800 HP, 2011-2016, Powerstroke 6.7",
+   "fit": {
+    "fam": "Powerstroke 6.7",
+    "ci": [
+     406
+    ],
+    "cyl": 8,
+    "y0": 2011,
+    "y1": 2016,
+    "notes": "Ford Super Duty 250/350/450"
+   },
+   "spec": {
+    "type": "in-tank",
+    "kit": true,
+    "psiLow": 65,
+    "psiHigh": 70,
+    "filtration": "4 micron",
+    "hpCapable": 800,
+    "hpBasis": "HP",
+    "pumpType": "dual gerotor",
+    "biodieselMaxPct": 20,
+    "bed": "long",
+    "outletThread": "3/4 in-16 (-8 ORB)",
+    "replacesOem": [
+     "BC3Z 9275-B",
+     "BC3Z-9A299-G"
+    ],
+    "aftermarketTankFitment": [
+     {
+      "tank": "Titan 7020311",
+      "make": "FORD",
+      "model": "F250 & F350",
+      "years": "2011-2016",
+      "cab": "Crew",
+      "bed": "Long Bed",
+      "lockingRing": true
+     }
+    ],
+    "upc": "670875719286"
+   },
+   "src": {
+    "doc": "fleeceperformance.com product pages (JSON-LD + fitment/interchange/certification tabs)",
+    "edition": "2026-10",
+    "url": "https://www.fleeceperformance.com/powerflo-lift-pump-for-2011-2016-ford-powerstroke-short-bed-1.html",
+    "alsoFrom": "fleeceperformance.com Fleece_and_Titan_Powerflo_Fitment.pdf / Fleece_SB_PF_SF_Fitment.pdf"
+   },
+   "emissions": "carb_eo:D-834-18"
+  },
+  {
+   "m": "Fleece Performance",
+   "p": "FPE-PF-CUMM-1124-CCMS",
+   "cat": "liftPump",
+   "name": "PowerFlo lift pump, 22 gal tank, cab & chassis, to 800 HP, 2011-2024, Cummins 6.7",
+   "fit": {
+    "fam": "Cummins 6.7",
+    "ci": [
+     408
+    ],
+    "cyl": 6,
+    "y0": 2011,
+    "y1": 2024,
+    "notes": "Ram 4500/5500"
+   },
+   "spec": {
+    "type": "in-tank",
+    "psiLow": 18,
+    "psiHigh": 20,
+    "hpCapable": 800,
+    "hpBasis": "HP",
+    "pumpType": "dual gerotor",
+    "biodieselMaxPct": 20,
+    "tankGal": 22,
+    "cabChassis": true,
+    "tankLocation": "midship",
+    "retainsWif": true,
+    "outletThread": "3/4 in-16 (-8 ORB)",
+    "replacesOem": [
+     "68064422AB",
+     "04560227AC"
+    ],
+    "upc": "732777408801"
+   },
+   "src": {
+    "doc": "fleeceperformance.com product pages (JSON-LD + fitment/interchange/certification tabs)",
+    "edition": "2026-10",
+    "url": "https://www.fleeceperformance.com/powerflo-lift-pump-for-2011-2024-ram-c-c-midship-tank-22-gal.html"
+   },
+   "emissions": null
+  },
+  {
+   "m": "Fleece Performance",
+   "p": "FPE-PF-CUMM-1124-CCOA",
+   "cat": "liftPump",
+   "name": "PowerFlo lift pump, 52 gal tank, cab & chassis, to 800 HP, 2011-2024, Cummins 6.7",
+   "fit": {
+    "fam": "Cummins 6.7",
+    "ci": [
+     408
+    ],
+    "cyl": 6,
+    "y0": 2011,
+    "y1": 2024,
+    "notes": "Ram 4500/5500"
+   },
+   "spec": {
+    "type": "in-tank",
+    "psiLow": 18,
+    "psiHigh": 20,
+    "hpCapable": 800,
+    "hpBasis": "HP",
+    "pumpType": "dual gerotor",
+    "biodieselMaxPct": 20,
+    "tankGal": 52,
+    "cabChassis": true,
+    "tankLocation": "rear",
+    "retainsWif": true,
+    "outletThread": "3/4 in-16 (-8 ORB)",
+    "upc": "732777408900"
+   },
+   "src": {
+    "doc": "fleeceperformance.com product pages (JSON-LD + fitment/interchange/certification tabs)",
+    "edition": "2026-10",
+    "url": "https://www.fleeceperformance.com/powerflo-lift-pump-for-2011-2024-ram-c-c-over-rear-axle-tank-52-gal.html"
+   },
+   "emissions": null
+  },
+  {
+   "m": "Fleece Performance",
+   "p": "FPE-PF-FMC-1724-SB",
+   "cat": "liftPump",
+   "name": "PowerFlo lift pump, short bed, to 800 HP, 2017-2024, Powerstroke 6.7",
+   "fit": {
+    "fam": "Powerstroke 6.7",
+    "ci": [
+     406
+    ],
+    "cyl": 8,
+    "y0": 2017,
+    "y1": 2024,
+    "notes": "Ford Super Duty 250/350/450"
+   },
+   "spec": {
+    "type": "in-tank",
+    "hpCapable": 800,
+    "hpBasis": "HP",
+    "pumpType": "dual gerotor",
+    "biodieselMaxPct": 20,
+    "bed": "short",
+    "outletThread": "3/4 in-16 (-8 ORB)",
+    "upc": "732777409426"
+   },
+   "src": {
+    "doc": "fleeceperformance.com product pages (JSON-LD + fitment/interchange/certification tabs)",
+    "edition": "2026-10",
+    "url": "https://www.fleeceperformance.com/powerflo-lift-pump-for-2017-2024-ford-6-7l-power-stroke-short-bed.html"
+   },
+   "emissions": null
+  },
+  {
+   "m": "Fleece Performance",
+   "p": "FPE-PF-CUMM-2024-50",
+   "cat": "liftPump",
+   "name": "PowerFlo lift pump, 50 gal tank, to 800 HP, 2020-2024, Cummins 6.7",
+   "fit": {
+    "fam": "Cummins 6.7",
+    "ci": [
+     408
+    ],
+    "cyl": 6,
+    "y0": 2020,
+    "y1": 2024,
+    "notes": "Ram 2500/3500"
+   },
+   "spec": {
+    "type": "in-tank",
+    "psiLow": 18,
+    "psiHigh": 20,
+    "hpCapable": 800,
+    "hpBasis": "HP",
+    "pumpType": "dual gerotor",
+    "biodieselMaxPct": 20,
+    "tankGal": 50,
+    "cabChassis": false,
+    "retainsWif": true,
+    "outletThread": "3/4 in-16 (-8 ORB)",
+    "upc": "670875719200"
+   },
+   "src": {
+    "doc": "fleeceperformance.com product pages (JSON-LD + fitment/interchange/certification tabs)",
+    "edition": "2026-10",
+    "url": "https://www.fleeceperformance.com/powerflor-in-tank-lift-pump-for-2020-2024-dodge-ram-cummins-with-50-gallon-factory-fuel-tank.html"
+   },
+   "emissions": null
+  },
+  {
+   "m": "Fleece Performance",
+   "p": "FPE-PF-CUMM-9197",
+   "cat": "liftPump",
+   "name": "PowerFlo lift pump, to 800 HP, 1991-1997, Cummins 5.9 12V",
+   "fit": {
+    "fam": "Cummins 5.9 12V",
+    "ci": [
+     359
+    ],
+    "cyl": 6,
+    "y0": 1991,
+    "y1": 1997,
+    "notes": "Ram D250/D350; Ram 2500/3500"
+   },
+   "spec": {
+    "type": "in-tank",
+    "hpCapable": 800,
+    "hpBasis": "HP",
+    "pumpType": "dual gerotor",
+    "biodieselMaxPct": 20,
+    "replacesOem": [
+     "4798671",
+     "4864209",
+     "4864735",
+     "52018309"
+    ],
+    "upc": "670875718579"
+   },
+   "src": {
+    "doc": "fleeceperformance.com product pages (JSON-LD + fitment/interchange/certification tabs)",
+    "edition": "2026-10",
+    "url": "https://www.fleeceperformance.com/powerflor-lift-pump-for-1991-1997-dodge-cummins.html"
+   },
+   "emissions": null
+  },
+  {
+   "m": "Fleece Performance",
+   "p": "FPE-PF-CUMM-98-12V",
+   "cat": "liftPump",
+   "name": "PowerFlo lift pump, to 800 HP, 1998, Cummins 5.9 12V",
+   "fit": {
+    "fam": "Cummins 5.9 12V",
+    "ci": [
+     359
+    ],
+    "cyl": 6,
+    "y0": 1998,
+    "y1": 1998
+   },
+   "spec": {
+    "type": "in-tank",
+    "psiLow": 34,
+    "psiHigh": 36,
+    "hpCapable": 800,
+    "hpBasis": "HP",
+    "pumpType": "dual gerotor",
+    "biodieselMaxPct": 20,
+    "upc": "670875719118"
+   },
+   "src": {
+    "doc": "fleeceperformance.com product pages (JSON-LD + fitment/interchange/certification tabs)",
+    "edition": "2026-10",
+    "url": "https://www.fleeceperformance.com/powerflor-lift-pump-for-1998-dodge-with-12-valve-cummins.html"
+   },
+   "emissions": null
+  },
+  {
+   "m": "Fleece Performance",
+   "p": "FPE-PF-RAM-ECO-1419",
+   "cat": "liftPump",
+   "name": "PowerFlo lift pump, 2014-2019, RAM 3.0 EcoDiesel",
+   "fit": {
+    "fam": "RAM 3.0 EcoDiesel",
+    "cyl": 6,
+    "y0": 2014,
+    "y1": 2019,
+    "notes": "Ram 1500"
+   },
+   "spec": {
+    "type": "in-tank",
+    "psiLow": 68,
+    "psiHigh": 70,
+    "pumpType": "dual gerotor",
+    "biodieselMaxPct": 20,
+    "outletThread": "3/4 in-16 (-8 ORB)",
+    "replacesOem": [
+     "68161407AB",
+     "68161407AE",
+     "68217575AE"
+    ],
+    "upc": "732777409464"
+   },
+   "src": {
+    "doc": "fleeceperformance.com product pages (JSON-LD + fitment/interchange/certification tabs)",
+    "edition": "2026-10",
+    "url": "https://www.fleeceperformance.com/powerflor-lift-pump-for-2014-2019-ram-eco-diesel.html"
+   },
+   "emissions": null
+  },
+  {
+   "m": "Fleece Performance",
+   "p": "FPE-PF-FMC-1724-LB",
+   "cat": "liftPump",
+   "name": "PowerFlo lift pump, long bed, to 800 HP, 2017-2024, Powerstroke 6.7",
+   "fit": {
+    "fam": "Powerstroke 6.7",
+    "ci": [
+     406
+    ],
+    "cyl": 8,
+    "y0": 2017,
+    "y1": 2024,
+    "notes": "Ford Super Duty 250/350/450"
+   },
+   "spec": {
+    "type": "in-tank",
+    "hpCapable": 800,
+    "hpBasis": "HP",
+    "pumpType": "dual gerotor",
+    "biodieselMaxPct": 20,
+    "bed": "long",
+    "outletThread": "3/4 in-16 (-8 ORB)",
+    "upc": "732777409433"
+   },
+   "src": {
+    "doc": "fleeceperformance.com product pages (JSON-LD + fitment/interchange/certification tabs)",
+    "edition": "2026-10",
+    "url": "https://www.fleeceperformance.com/powerflor-lift-pump-for-2017-2024-ford-6-7l-power-stroke-long-bed.html"
+   },
+   "emissions": null
+  },
+  {
+   "m": "Fleece Performance",
+   "p": "FPE-SF-CUMM-0304",
+   "cat": "liftPump",
+   "name": "SureFlo sending unit, 2003-2004, Cummins 5.9 24V/CR",
+   "fit": {
+    "fam": "Cummins 5.9 24V/CR",
+    "ci": [
+     359
+    ],
+    "cyl": 6,
+    "y0": 2003,
+    "y1": 2004,
+    "notes": "Ram 2500/3500"
+   },
+   "spec": {
+    "type": "in-tank sending unit with pump",
+    "gph": 220,
+    "upc": "670875717442"
+   },
+   "src": {
+    "doc": "fleeceperformance.com product pages (JSON-LD + fitment/interchange/certification tabs)",
+    "edition": "2026-10",
+    "url": "https://www.fleeceperformance.com/sureflo-for-2003-2004-dodge-ram.html"
+   },
+   "emissions": null
+  },
+  {
+   "m": "Fleece Performance",
+   "p": "FPE-SF-GM-0410",
+   "cat": "liftPump",
+   "name": "SureFlo sending unit, 2004-2010, Duramax 6.6",
+   "fit": {
+    "fam": "Duramax 6.6",
+    "ci": [
+     403
+    ],
+    "cyl": 8,
+    "y0": 2004,
+    "y1": 2010,
+    "notes": "from 2004.5, LBZ/LLY/LMM, GM Silverado/Sierra 2500/3500"
+   },
+   "spec": {
+    "type": "in-tank sending unit with pump",
+    "gph": 220,
+    "replacesOem": [
+     "AC Delco MU1228",
+     "GM 19206540",
+     "GM 68490266AA"
+    ],
+    "aftermarketTankFitment": [
+     {
+      "tank": "Titan 7010201",
+      "make": "GM",
+      "model": "2500 & 3500",
+      "years": "2004.5-2010",
+      "cab": "Crew",
+      "bed": "Short Bed",
+      "lockingRing": true
+     },
+     {
+      "tank": "Titan 7010301",
+      "make": "GM",
+      "model": "2500 & 3500",
+      "years": "2004.5-2010",
+      "cab": "Crew",
+      "bed": "Long Bed",
+      "lockingRing": false
+     }
+    ],
+    "upc": "670875717480"
+   },
+   "src": {
+    "doc": "fleeceperformance.com product pages (JSON-LD + fitment/interchange/certification tabs)",
+    "edition": "2026-10",
+    "url": "https://www.fleeceperformance.com/sureflo-for-2004-5-2010-duramax.html",
+    "alsoFrom": "fleeceperformance.com Fleece_and_Titan_Powerflo_Fitment.pdf / Fleece_SB_PF_SF_Fitment.pdf"
+   },
+   "emissions": null
+  },
+  {
+   "m": "Fleece Performance",
+   "p": "FPE-SF-CUMM-0509",
+   "cat": "liftPump",
+   "name": "SureFlo sending unit, 2005-2007, Cummins 5.9 24V/CR",
+   "fit": {
+    "fam": "Cummins 5.9 24V/CR",
+    "ci": [
+     359
+    ],
+    "cyl": 6,
+    "y0": 2005,
+    "y1": 2007,
+    "notes": "Ram 2500/3500"
+   },
+   "spec": {
+    "type": "in-tank sending unit with pump",
+    "gph": 220,
+    "aftermarketTankFitment": [
+     {
+      "tank": "Titan 7030303",
+      "make": "DODGE/RAM",
+      "model": "2500 & 3500",
+      "years": "2005-2012",
+      "cab": "Crew",
+      "bed": "Long Bed",
+      "pumpModelYears": "MY2005-09",
+      "lockingRing": false
+     },
+     {
+      "tank": "S&B 10-1021-1",
+      "make": "DODGE/RAM",
+      "model": "2500 & 3500",
+      "years": "2005-2023",
+      "cab": "Crew Cab / Quad Cab",
+      "bed": "Short Bed",
+      "pumpModelYears": "MY2005-09",
+      "tankGal": 52
+     },
+     {
+      "tank": "S&B 10-1018",
+      "make": "DODGE/RAM",
+      "model": "2500 & 3500",
+      "years": "2005-2012",
+      "cab": "Crew Cab",
+      "bed": "Long Bed",
+      "pumpModelYears": "MY2005-09",
+      "tankGal": 60
+     },
+     {
+      "tank": "S&B 10-1009",
+      "make": "DODGE/RAM",
+      "model": "2500 & 3500",
+      "years": "2006-2024",
+      "cab": "Mega Cab",
+      "bed": "Short Bed",
+      "pumpModelYears": "MY2005-09",
+      "tankGal": 55
+     }
+    ],
+    "upc": "670875717459"
+   },
+   "src": {
+    "doc": "fleeceperformance.com product pages (JSON-LD + fitment/interchange/certification tabs)",
+    "edition": "2026-10",
+    "url": "https://www.fleeceperformance.com/sureflo-for-2005-2009-dodge-ram.html",
+    "alsoFrom": "fleeceperformance.com Fleece_and_Titan_Powerflo_Fitment.pdf / Fleece_SB_PF_SF_Fitment.pdf"
+   },
+   "emissions": null
+  },
+  {
+   "m": "Fleece Performance",
+   "p": "FPE-SF-CUMM-0509",
+   "cat": "liftPump",
+   "name": "SureFlo sending unit, 2007-2009, Cummins 6.7",
+   "fit": {
+    "fam": "Cummins 6.7",
+    "ci": [
+     408
+    ],
+    "cyl": 6,
+    "y0": 2007,
+    "y1": 2009,
+    "notes": "from 2007.5, Ram 2500/3500"
+   },
+   "spec": {
+    "type": "in-tank sending unit with pump",
+    "gph": 220,
+    "aftermarketTankFitment": [
+     {
+      "tank": "Titan 7030303",
+      "make": "DODGE/RAM",
+      "model": "2500 & 3500",
+      "years": "2005-2012",
+      "cab": "Crew",
+      "bed": "Long Bed",
+      "pumpModelYears": "MY2005-09",
+      "lockingRing": false
+     },
+     {
+      "tank": "S&B 10-1021-1",
+      "make": "DODGE/RAM",
+      "model": "2500 & 3500",
+      "years": "2005-2023",
+      "cab": "Crew Cab / Quad Cab",
+      "bed": "Short Bed",
+      "pumpModelYears": "MY2005-09",
+      "tankGal": 52
+     },
+     {
+      "tank": "S&B 10-1018",
+      "make": "DODGE/RAM",
+      "model": "2500 & 3500",
+      "years": "2005-2012",
+      "cab": "Crew Cab",
+      "bed": "Long Bed",
+      "pumpModelYears": "MY2005-09",
+      "tankGal": 60
+     },
+     {
+      "tank": "S&B 10-1009",
+      "make": "DODGE/RAM",
+      "model": "2500 & 3500",
+      "years": "2006-2024",
+      "cab": "Mega Cab",
+      "bed": "Short Bed",
+      "pumpModelYears": "MY2005-09",
+      "tankGal": 55
+     }
+    ],
+    "upc": "670875717459"
+   },
+   "src": {
+    "doc": "fleeceperformance.com product pages (JSON-LD + fitment/interchange/certification tabs)",
+    "edition": "2026-10",
+    "url": "https://www.fleeceperformance.com/sureflo-for-2005-2009-dodge-ram.html",
+    "alsoFrom": "fleeceperformance.com Fleece_and_Titan_Powerflo_Fitment.pdf / Fleece_SB_PF_SF_Fitment.pdf"
+   },
+   "emissions": null
+  },
+  {
+   "m": "Fleece Performance",
+   "p": "FPE-SF-CUMM-2010",
+   "cat": "liftPump",
+   "name": "SureFlo sending unit, 2010, Cummins 6.7",
+   "fit": {
+    "fam": "Cummins 6.7",
+    "ci": [
+     408
+    ],
+    "cyl": 6,
+    "y0": 2010,
+    "y1": 2010
+   },
+   "spec": {
+    "type": "in-tank sending unit with pump",
+    "gph": 220,
+    "aftermarketTankFitment": [
+     {
+      "tank": "Titan 7030303",
+      "make": "DODGE/RAM",
+      "model": "2500 & 3500",
+      "years": "2005-2012",
+      "cab": "Crew",
+      "bed": "Long Bed",
+      "pumpModelYears": "MY2010",
+      "lockingRing": false
+     },
+     {
+      "tank": "Titan 7030210",
+      "make": "DODGE/RAM",
+      "model": "2500 & 3500",
+      "years": "2010-2012",
+      "cab": "Crew",
+      "bed": "Short Bed",
+      "pumpModelYears": "MY2010",
+      "lockingRing": false
+     }
+    ],
+    "upc": "670875717466"
+   },
+   "src": {
+    "doc": "fleeceperformance.com product pages (JSON-LD + fitment/interchange/certification tabs)",
+    "edition": "2026-10",
+    "url": "https://www.fleeceperformance.com/sureflo-for-2010-dodge-ram.html",
+    "alsoFrom": "fleeceperformance.com Fleece_and_Titan_Powerflo_Fitment.pdf / Fleece_SB_PF_SF_Fitment.pdf"
+   },
+   "emissions": null
+  },
+  {
+   "m": "Fleece Performance",
+   "p": "FPE-SF-GM-1116-SB",
+   "cat": "liftPump",
+   "name": "SureFlo sending unit, short bed, 2011-2016, Duramax 6.6",
+   "fit": {
+    "fam": "Duramax 6.6",
+    "ci": [
+     403
+    ],
+    "cyl": 8,
+    "y0": 2011,
+    "y1": 2016,
+    "notes": "LML, GM Silverado/Sierra 2500/3500"
+   },
+   "spec": {
+    "type": "in-tank sending unit with pump",
+    "gph": 220,
+    "bed": "short",
+    "replacesOem": [
+     "AC Delco M100022",
+     "AC Delco MU1977",
+     "GM 13578389",
+     "GM 19257327"
+    ],
+    "aftermarketTankFitment": [
+     {
+      "tank": "Titan 7010211",
+      "make": "GM",
+      "model": "2500 & 3500",
+      "years": "2011-2016",
+      "cab": "Crew",
+      "bed": "Short Bed",
+      "lockingRing": false
+     }
+    ],
+    "upc": "670875717497"
+   },
+   "src": {
+    "doc": "fleeceperformance.com product pages (JSON-LD + fitment/interchange/certification tabs)",
+    "edition": "2026-10",
+    "url": "https://www.fleeceperformance.com/sureflo-for-2011-2016-duramax-short-bed.html",
+    "alsoFrom": "fleeceperformance.com Fleece_and_Titan_Powerflo_Fitment.pdf / Fleece_SB_PF_SF_Fitment.pdf"
+   },
+   "emissions": null
+  },
+  {
+   "m": "Fleece Performance",
+   "p": "FPE-SF-CUMM-1121",
+   "cat": "liftPump",
+   "name": "SureFlo sending unit, 2011-2024, Cummins 6.7",
+   "fit": {
+    "fam": "Cummins 6.7",
+    "ci": [
+     408
+    ],
+    "cyl": 6,
+    "y0": 2011,
+    "y1": 2024,
+    "notes": "Ram 2500/3500"
+   },
+   "spec": {
+    "type": "in-tank sending unit with pump",
+    "gph": 220,
+    "aftermarketTankFitment": [
+     {
+      "tank": "Titan 7030303",
+      "make": "DODGE/RAM",
+      "model": "2500 & 3500",
+      "years": "2005-2012",
+      "cab": "Crew",
+      "bed": "Long Bed",
+      "pumpModelYears": "MY2011+",
+      "lockingRing": false
+     },
+     {
+      "tank": "Titan 7030313",
+      "make": "DODGE/RAM",
+      "model": "2500 & 3500",
+      "years": "2013-2024",
+      "cab": "Crew or Quad",
+      "bed": "Long Bed",
+      "lockingRing": true
+     },
+     {
+      "tank": "Titan 7030213",
+      "make": "DODGE/RAM",
+      "model": "2500 & 3500",
+      "years": "2013-2024",
+      "cab": "Mega",
+      "bed": "Short Bed",
+      "lockingRing": true
+     },
+     {
+      "tank": "Titan 7030313",
+      "make": "DODGE/RAM",
+      "model": "2500 & 3500",
+      "years": "2013-2024",
+      "cab": "Crew 4x4 only",
+      "bed": "Short Bed",
+      "lockingRing": true
+     },
+     {
+      "tank": "Titan 7030210",
+      "make": "DODGE/RAM",
+      "model": "2500 & 3500",
+      "years": "2010-2012",
+      "cab": "Crew",
+      "bed": "Short Bed",
+      "pumpModelYears": "MY2011+",
+      "lockingRing": false
+     },
+     {
+      "tank": "S&B 10-1021-1",
+      "make": "DODGE/RAM",
+      "model": "2500 & 3500",
+      "years": "2005-2023",
+      "cab": "Crew Cab / Quad Cab",
+      "bed": "Short Bed",
+      "pumpModelYears": "MY2011+",
+      "tankGal": 52
+     },
+     {
+      "tank": "S&B 10-1018",
+      "make": "DODGE/RAM",
+      "model": "2500 & 3500",
+      "years": "2005-2012",
+      "cab": "Crew Cab",
+      "bed": "Long Bed",
+      "pumpModelYears": "MY2011+",
+      "tankGal": 60
+     },
+     {
+      "tank": "S&B 10-1009",
+      "make": "DODGE/RAM",
+      "model": "2500 & 3500",
+      "years": "2006-2024",
+      "cab": "Mega Cab",
+      "bed": "Short Bed",
+      "pumpModelYears": "MY2011+",
+      "tankGal": 55
+     },
+     {
+      "tank": "S&B 10-1007",
+      "make": "DODGE/RAM",
+      "model": "2500 & 3500",
+      "years": "2013-2024",
+      "cab": "Crew Cab",
+      "bed": "Long Bed",
+      "tankGal": 60
+     }
+    ],
+    "upc": "670875717473"
+   },
+   "src": {
+    "doc": "fleeceperformance.com product pages (JSON-LD + fitment/interchange/certification tabs)",
+    "edition": "2026-10",
+    "url": "https://www.fleeceperformance.com/sureflo-for-2011-2021-dodge-ram.html",
+    "alsoFrom": "fleeceperformance.com Fleece_and_Titan_Powerflo_Fitment.pdf / Fleece_SB_PF_SF_Fitment.pdf"
+   },
+   "emissions": null
+  },
+  {
+   "m": "Fleece Performance",
+   "p": "FPE-SF-GM-1116-LB",
+   "cat": "liftPump",
+   "name": "SureFlo sending unit, long bed, 2011-2016, Duramax 6.6",
+   "fit": {
+    "fam": "Duramax 6.6",
+    "ci": [
+     403
+    ],
+    "cyl": 8,
+    "y0": 2011,
+    "y1": 2016,
+    "notes": "LML, GM Silverado/Sierra 2500/3500"
+   },
+   "spec": {
+    "type": "in-tank sending unit with pump",
+    "gph": 220,
+    "bed": "long",
+    "replacesOem": [
+     "AC Delco M100021",
+     "AC Delco MU1976",
+     "GM 13578388",
+     "GM 19257326"
+    ],
+    "aftermarketTankFitment": [
+     {
+      "tank": "Titan 7010511",
+      "make": "GM",
+      "model": "2500 & 3500",
+      "years": "2011-2016",
+      "cab": "Extended",
+      "bed": "Long Bed",
+      "lockingRing": false
+     },
+     {
+      "tank": "Titan 7010511",
+      "make": "GM",
+      "model": "2500 & 3500",
+      "years": "2011-2012, 2014-2016",
+      "cab": "Crew",
+      "bed": "Long Bed",
+      "lockingRing": false,
+      "note": "2014-2016: two piece driveshaft trucks only"
+     },
+     {
+      "tank": "Titan 7010511",
+      "make": "GM",
+      "model": "2500 & 3500",
+      "years": "2013-2016",
+      "cab": "Crew",
+      "bed": "Long Bed",
+      "lockingRing": false,
+      "note": "two piece driveshaft trucks only"
+     }
+    ],
+    "upc": "670875717503"
+   },
+   "src": {
+    "doc": "fleeceperformance.com product pages (JSON-LD + fitment/interchange/certification tabs)",
+    "edition": "2026-10",
+    "url": "https://www.fleeceperformance.com/sureflo-for-duramax-lml-long-bed.html",
+    "alsoFrom": "fleeceperformance.com Fleece_and_Titan_Powerflo_Fitment.pdf / Fleece_SB_PF_SF_Fitment.pdf"
+   },
+   "emissions": null
+  },
+  {
+   "m": "Fleece Performance",
+   "p": "FPE-SF-CUMM-1124-CCMS",
+   "cat": "liftPump",
+   "name": "SureFlo sending unit, 22 gal tank, cab & chassis, 2011-2024, Cummins 6.7",
+   "fit": {
+    "fam": "Cummins 6.7",
+    "ci": [
+     408
+    ],
+    "cyl": 6,
+    "y0": 2011,
+    "y1": 2024,
+    "notes": "Ram 4500/5500"
+   },
+   "spec": {
+    "type": "in-tank sending unit with pump",
+    "gph": 220,
+    "tankGal": 22,
+    "cabChassis": true,
+    "tankLocation": "midship",
+    "upc": "732777409259"
+   },
+   "src": {
+    "doc": "fleeceperformance.com product pages (JSON-LD + fitment/interchange/certification tabs)",
+    "edition": "2026-10",
+    "url": "https://www.fleeceperformance.com/sureflo-sending-unit-for-2011-2024-ram-c-c-midship-tank-22-gal.html"
+   },
+   "emissions": null
+  },
+  {
+   "m": "Fleece Performance",
+   "p": "FPE-SF-CUMM-9197",
+   "cat": "liftPump",
+   "name": "SureFlo sending unit, 1991-1997, Cummins 5.9 12V",
+   "fit": {
+    "fam": "Cummins 5.9 12V",
+    "ci": [
+     359
+    ],
+    "cyl": 6,
+    "y0": 1991,
+    "y1": 1997,
+    "notes": "Ram D250/D350; Ram 2500/3500"
+   },
+   "spec": {
+    "type": "in-tank sending unit with pump",
+    "gph": 220,
+    "replacesOem": [
+     "4798671",
+     "4864209",
+     "4864735",
+     "52018309"
+    ],
+    "upc": "670875718586"
+   },
+   "src": {
+    "doc": "fleeceperformance.com product pages (JSON-LD + fitment/interchange/certification tabs)",
+    "edition": "2026-10",
+    "url": "https://www.fleeceperformance.com/sureflor-performance-sending-unit-for-1991-1997-dodge-cummins.html"
+   },
+   "emissions": null
+  },
+  {
+   "m": "Fleece Performance",
+   "p": "FPE-SF-CUMM-9802",
+   "cat": "liftPump",
+   "name": "SureFlo sending unit, 1998, Cummins 5.9 12V",
+   "fit": {
+    "fam": "Cummins 5.9 12V",
+    "ci": [
+     359
+    ],
+    "cyl": 6,
+    "y0": 1998,
+    "y1": 1998,
+    "notes": "Ram 2500/3500"
+   },
+   "spec": {
+    "type": "in-tank sending unit with pump",
+    "gph": 220,
+    "replacesOem": [
+     "5202815",
+     "04897668AF",
+     "04897668AG",
+     "04897668AH",
+     "4897668AF",
+     "4897668AG",
+     "4897668AH",
+     "4897668AI",
+     "P77364M",
+     "SP7062M"
+    ],
+    "upc": "670875717435"
+   },
+   "src": {
+    "doc": "fleeceperformance.com product pages (JSON-LD + fitment/interchange/certification tabs)",
+    "edition": "2026-10",
+    "url": "https://www.fleeceperformance.com/sureflor-performance-sending-unit-for-1998-2002-dodge-ram.html"
+   },
+   "emissions": null
+  },
+  {
+   "m": "Fleece Performance",
+   "p": "FPE-SF-CUMM-9802",
+   "cat": "liftPump",
+   "name": "SureFlo sending unit, 1998-2002, Cummins 5.9 24V/CR",
+   "fit": {
+    "fam": "Cummins 5.9 24V/CR",
+    "ci": [
+     359
+    ],
+    "cyl": 6,
+    "y0": 1998,
+    "y1": 2002,
+    "notes": "from 1998.5, Ram 2500/3500"
+   },
+   "spec": {
+    "type": "in-tank sending unit with pump",
+    "gph": 220,
+    "replacesOem": [
+     "5202815",
+     "04897668AF",
+     "04897668AG",
+     "04897668AH",
+     "4897668AF",
+     "4897668AG",
+     "4897668AH",
+     "4897668AI",
+     "P77364M",
+     "SP7062M"
+    ],
+    "upc": "670875717435"
+   },
+   "src": {
+    "doc": "fleeceperformance.com product pages (JSON-LD + fitment/interchange/certification tabs)",
+    "edition": "2026-10",
+    "url": "https://www.fleeceperformance.com/sureflor-performance-sending-unit-for-1998-2002-dodge-ram.html"
+   },
+   "emissions": null
+  },
+  {
+   "m": "Fleece Performance",
+   "p": "FPE-SF-FMC-9907-LB",
+   "cat": "liftPump",
+   "name": "SureFlo sending unit, long bed, 1999-2002, Powerstroke 7.3",
+   "fit": {
+    "fam": "Powerstroke 7.3",
+    "ci": [
+     444
+    ],
+    "cyl": 8,
+    "y0": 1999,
+    "y1": 2002,
+    "notes": "Ford Super Duty"
+   },
+   "spec": {
+    "type": "in-tank sending unit with pump",
+    "bed": "long",
+    "replacesOem": [
+     "5C3Z-9275-BA",
+     "6C3Z-9275-BA",
+     "6C3Z-9275-EA",
+     "6C3Z-9275-VA",
+     "F81Z-9275-AJ",
+     "F81Z-9275-CA"
+    ],
+    "upc": "670875719323"
+   },
+   "src": {
+    "doc": "fleeceperformance.com product pages (JSON-LD + fitment/interchange/certification tabs)",
+    "edition": "2026-10",
+    "url": "https://www.fleeceperformance.com/sureflor-performance-sending-unit-for-1999-2007-ford-powerstroke-long-bed.html"
+   },
+   "emissions": null
+  },
+  {
+   "m": "Fleece Performance",
+   "p": "FPE-SF-FMC-9907-LB",
+   "cat": "liftPump",
+   "name": "SureFlo sending unit, long bed, 2003-2007, Powerstroke 6.0",
+   "fit": {
+    "fam": "Powerstroke 6.0",
+    "ci": [
+     365
+    ],
+    "cyl": 8,
+    "y0": 2003,
+    "y1": 2007,
+    "notes": "Ford Super Duty"
+   },
+   "spec": {
+    "type": "in-tank sending unit with pump",
+    "bed": "long",
+    "replacesOem": [
+     "5C3Z-9275-BA",
+     "6C3Z-9275-BA",
+     "6C3Z-9275-EA",
+     "6C3Z-9275-VA",
+     "F81Z-9275-AJ",
+     "F81Z-9275-CA"
+    ],
+    "upc": "670875719323"
+   },
+   "src": {
+    "doc": "fleeceperformance.com product pages (JSON-LD + fitment/interchange/certification tabs)",
+    "edition": "2026-10",
+    "url": "https://www.fleeceperformance.com/sureflor-performance-sending-unit-for-1999-2007-ford-powerstroke-long-bed.html"
+   },
+   "emissions": null
+  },
+  {
+   "m": "Fleece Performance",
+   "p": "FPE-SF-FMC-9907-SB",
+   "cat": "liftPump",
+   "name": "SureFlo sending unit, short bed, 1999-2002, Powerstroke 7.3",
+   "fit": {
+    "fam": "Powerstroke 7.3",
+    "ci": [
+     444
+    ],
+    "cyl": 8,
+    "y0": 1999,
+    "y1": 2002,
+    "notes": "Ford Super Duty"
+   },
+   "spec": {
+    "type": "in-tank sending unit with pump",
+    "bed": "short",
+    "replacesOem": [
+     "5C3Z-9275-BA",
+     "6C3Z-9275-BA",
+     "6C3Z-9275-EA",
+     "6C3Z-9275-VA",
+     "F81Z-9275-AJ",
+     "F81Z-9275-CA"
+    ],
+    "upc": "670875719316"
+   },
+   "src": {
+    "doc": "fleeceperformance.com product pages (JSON-LD + fitment/interchange/certification tabs)",
+    "edition": "2026-10",
+    "url": "https://www.fleeceperformance.com/sureflor-performance-sending-unit-for-1999-2007-ford-powerstroke-short-bed.html"
+   },
+   "emissions": null
+  },
+  {
+   "m": "Fleece Performance",
+   "p": "FPE-SF-FMC-9907-SB",
+   "cat": "liftPump",
+   "name": "SureFlo sending unit, short bed, 2003-2007, Powerstroke 6.0",
+   "fit": {
+    "fam": "Powerstroke 6.0",
+    "ci": [
+     365
+    ],
+    "cyl": 8,
+    "y0": 2003,
+    "y1": 2007,
+    "notes": "Ford Super Duty"
+   },
+   "spec": {
+    "type": "in-tank sending unit with pump",
+    "bed": "short",
+    "replacesOem": [
+     "5C3Z-9275-BA",
+     "6C3Z-9275-BA",
+     "6C3Z-9275-EA",
+     "6C3Z-9275-VA",
+     "F81Z-9275-AJ",
+     "F81Z-9275-CA"
+    ],
+    "upc": "670875719316"
+   },
+   "src": {
+    "doc": "fleeceperformance.com product pages (JSON-LD + fitment/interchange/certification tabs)",
+    "edition": "2026-10",
+    "url": "https://www.fleeceperformance.com/sureflor-performance-sending-unit-for-1999-2007-ford-powerstroke-short-bed.html"
+   },
+   "emissions": null
+  },
+  {
+   "m": "Fleece Performance",
+   "p": "FPE-SF-GM-0104",
+   "cat": "liftPump",
+   "name": "SureFlo sending unit, 2001-2004, Duramax 6.6",
+   "fit": {
+    "fam": "Duramax 6.6",
+    "ci": [
+     403
+    ],
+    "cyl": 8,
+    "y0": 2001,
+    "y1": 2004,
+    "notes": "LB7, GM Silverado/Sierra 2500/3500"
+   },
+   "spec": {
+    "type": "in-tank sending unit with pump",
+    "gph": 220,
+    "upc": "670875718944"
+   },
+   "src": {
+    "doc": "fleeceperformance.com product pages (JSON-LD + fitment/interchange/certification tabs)",
+    "edition": "2026-10",
+    "url": "https://www.fleeceperformance.com/sureflor-performance-sending-unit-for-2001-2004-lb7-duramax.html"
+   },
+   "emissions": null
+  },
+  {
+   "m": "Fleece Performance",
+   "p": "FPE-SF-FMC-1116-SB",
+   "cat": "liftPump",
+   "name": "SureFlo sending unit, short bed, 2011-2016, Powerstroke 6.7",
+   "fit": {
+    "fam": "Powerstroke 6.7",
+    "ci": [
+     406
+    ],
+    "cyl": 8,
+    "y0": 2011,
+    "y1": 2016,
+    "notes": "Ford Super Duty 250/350/450"
+   },
+   "spec": {
+    "type": "in-tank sending unit with pump",
+    "gph": 140,
+    "bed": "short",
+    "replacesOem": [
+     "BC3Z 9275-A",
+     "BC3Z-9A299-A"
+    ],
+    "aftermarketTankFitment": [
+     {
+      "tank": "Titan 7021211",
+      "make": "FORD",
+      "model": "F250 & F350",
+      "years": "2011-2016",
+      "cab": "Crew",
+      "bed": "Short Bed",
+      "lockingRing": true
+     },
+     {
+      "tank": "S&B 10-1000",
+      "make": "FORD",
+      "model": "250 & 350",
+      "years": "2011-2016",
+      "cab": "Crew Cab",
+      "bed": "Short Bed",
+      "tankGal": 56,
+      "note": "PDF prints the SureFlo PN in the PowerFlo column"
+     }
+    ],
+    "upc": "670875719224"
+   },
+   "src": {
+    "doc": "fleeceperformance.com product pages (JSON-LD + fitment/interchange/certification tabs)",
+    "edition": "2026-10",
+    "url": "https://www.fleeceperformance.com/sureflor-performance-sending-unit-for-2011-2016-ford-powerstroke-short-bed.html",
+    "alsoFrom": "fleeceperformance.com Fleece_and_Titan_Powerflo_Fitment.pdf / Fleece_SB_PF_SF_Fitment.pdf"
+   },
+   "emissions": null
+  },
+  {
+   "m": "Fleece Performance",
+   "p": "FPE-SF-FMC-1116-LB",
+   "cat": "liftPump",
+   "name": "SureFlo sending unit, long bed, 2011-2016, Powerstroke 6.7",
+   "fit": {
+    "fam": "Powerstroke 6.7",
+    "ci": [
+     406
+    ],
+    "cyl": 8,
+    "y0": 2011,
+    "y1": 2016,
+    "notes": "Ford Super Duty 250/350/450"
+   },
+   "spec": {
+    "type": "in-tank sending unit with pump",
+    "gph": 140,
+    "bed": "long",
+    "replacesOem": [
+     "BC3Z 9275-B",
+     "BC3Z-9A299-G"
+    ],
+    "aftermarketTankFitment": [
+     {
+      "tank": "Titan 7020311",
+      "make": "FORD",
+      "model": "F250 & F350",
+      "years": "2011-2016",
+      "cab": "Crew",
+      "bed": "Long Bed",
+      "lockingRing": true
+     },
+     {
+      "tank": "S&B 10-1003",
+      "make": "FORD",
+      "model": "250 & 350",
+      "years": "2011-2016",
+      "cab": "Crew Cab",
+      "bed": "Long Bed",
+      "tankGal": 70,
+      "note": "PDF prints the SureFlo PN in the PowerFlo column"
+     }
+    ],
+    "upc": "670875719279"
+   },
+   "src": {
+    "doc": "fleeceperformance.com product pages (JSON-LD + fitment/interchange/certification tabs)",
+    "edition": "2026-10",
+    "url": "https://www.fleeceperformance.com/sureflor-performance-sending-unit-for-2011-2016-ford-powerstroke-short-bed-1.html",
+    "alsoFrom": "fleeceperformance.com Fleece_and_Titan_Powerflo_Fitment.pdf / Fleece_SB_PF_SF_Fitment.pdf"
+   },
+   "emissions": null
+  },
+  {
+   "m": "Fleece Performance",
+   "p": "FPE-SF-CUMM-1124-CCOA",
+   "cat": "liftPump",
+   "name": "SureFlo sending unit, 52 gal tank, cab & chassis, 2011-2024, Cummins 6.7",
+   "fit": {
+    "fam": "Cummins 6.7",
+    "ci": [
+     408
+    ],
+    "cyl": 6,
+    "y0": 2011,
+    "y1": 2024,
+    "notes": "Ram 4500/5500"
+   },
+   "spec": {
+    "type": "in-tank sending unit with pump",
+    "gph": 220,
+    "tankGal": 52,
+    "cabChassis": true,
+    "tankLocation": "rear",
+    "upc": "732777409266"
+   },
+   "src": {
+    "doc": "fleeceperformance.com product pages (JSON-LD + fitment/interchange/certification tabs)",
+    "edition": "2026-10",
+    "url": "https://www.fleeceperformance.com/sureflor-performance-sending-unit-for-2011-2024-ram-cab-chassis-rear-tank-52-gal.html"
+   },
+   "emissions": null
+  },
+  {
+   "m": "Fleece Performance",
+   "p": "FPE-SF-RAM-ECO-1419",
+   "cat": "liftPump",
+   "name": "SureFlo sending unit, 2014-2019, RAM 3.0 EcoDiesel",
+   "fit": {
+    "fam": "RAM 3.0 EcoDiesel",
+    "cyl": 6,
+    "y0": 2014,
+    "y1": 2019,
+    "notes": "Ram 1500"
+   },
+   "spec": {
+    "type": "in-tank sending unit with pump",
+    "upc": "732777409471"
+   },
+   "src": {
+    "doc": "fleeceperformance.com product pages (JSON-LD + fitment/interchange/certification tabs)",
+    "edition": "2026-10",
+    "url": "https://www.fleeceperformance.com/sureflor-performance-sending-unit-for-2014-2019-ram-eco-diesel.html"
+   },
+   "emissions": null
+  },
+  {
+   "m": "Fleece Performance",
+   "p": "FPE-SF-FMC-1724-LB",
+   "cat": "liftPump",
+   "name": "SureFlo sending unit, long bed, 2017-2024, Powerstroke 6.7",
+   "fit": {
+    "fam": "Powerstroke 6.7",
+    "ci": [
+     406
+    ],
+    "cyl": 8,
+    "y0": 2017,
+    "y1": 2024,
+    "notes": "Ford Super Duty 250/350/450"
+   },
+   "spec": {
+    "type": "in-tank sending unit with pump",
+    "gph": 220,
+    "bed": "long",
+    "upc": "732777409457"
+   },
+   "src": {
+    "doc": "fleeceperformance.com product pages (JSON-LD + fitment/interchange/certification tabs)",
+    "edition": "2026-10",
+    "url": "https://www.fleeceperformance.com/sureflor-performance-sending-unit-for-2017-2024-ford-6-7l-power-stroke-long-bed.html"
+   },
+   "emissions": null
+  },
+  {
+   "m": "Fleece Performance",
+   "p": "FPE-SF-FMC-1724-SB",
+   "cat": "liftPump",
+   "name": "SureFlo sending unit, short bed, 2017-2024, Powerstroke 6.7",
+   "fit": {
+    "fam": "Powerstroke 6.7",
+    "ci": [
+     406
+    ],
+    "cyl": 8,
+    "y0": 2017,
+    "y1": 2024,
+    "notes": "Ford Super Duty 250/350/450"
+   },
+   "spec": {
+    "type": "in-tank sending unit with pump",
+    "gph": 220,
+    "bed": "short",
+    "upc": "732777409440"
+   },
+   "src": {
+    "doc": "fleeceperformance.com product pages (JSON-LD + fitment/interchange/certification tabs)",
+    "edition": "2026-10",
+    "url": "https://www.fleeceperformance.com/sureflor-performance-sending-unit-for-2017-2024-ford-6-7l-power-stroke-short-bed.html"
+   },
+   "emissions": null
+  },
+  {
+   "m": "Fleece Performance",
+   "p": "FPE-SF-CUMM-2024-50",
+   "cat": "liftPump",
+   "name": "SureFlo sending unit, 50 gal tank, 2020-2024, Cummins 6.7",
+   "fit": {
+    "fam": "Cummins 6.7",
+    "ci": [
+     408
+    ],
+    "cyl": 6,
+    "y0": 2020,
+    "y1": 2024,
+    "notes": "Ram 2500/3500"
+   },
+   "spec": {
+    "type": "in-tank sending unit with pump",
+    "gph": 220,
+    "tankGal": 50,
+    "upc": "670875719217"
+   },
+   "src": {
+    "doc": "fleeceperformance.com product pages (JSON-LD + fitment/interchange/certification tabs)",
+    "edition": "2026-10",
+    "url": "https://www.fleeceperformance.com/sureflor-performance-sending-unit-for-2020-2024-dodge-ram-with-50-gallon-factory-fuel-tank.html"
+   },
+   "emissions": null
+  }
+ ]
+}
