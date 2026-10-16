@@ -142,8 +142,11 @@ export function buildPartsCatalog(extraDirs = []) {
       };
       if (r.emissions) rec.em = r.emissions;
 
-      if (!byFamily.has(fam)) byFamily.set(fam, []);
-      byFamily.get(fam).push(rec);
+      // Lobe profiles are reference data for cam design, not parts a build
+      // picks; they go to lobes.json so universal.json stays small.
+      const bucket = r.cat === "lobe" ? "__lobes" : fam;
+      if (!byFamily.has(bucket)) byFamily.set(bucket, []);
+      byFamily.get(bucket).push(rec);
       brands.set(r.m, (brands.get(r.m) ?? 0) + 1);
       stats.records++;
       stats.byBrand[r.m] = (stats.byBrand[r.m] ?? 0) + 1;
@@ -154,10 +157,13 @@ export function buildPartsCatalog(extraDirs = []) {
   }
 
   const generated = new Date().toISOString().slice(0, 10);
+  const lobes = byFamily.get("__lobes") ?? [];
+  byFamily.delete("__lobes");
   const famEntries = [...byFamily.entries()].sort((a, b) => b[1].length - a[1].length);
   const index = {
     generated,
     records: stats.records,
+    lobes: { n: lobes.length, file: "lobes.json" },
     brands: [...brands.entries()].sort((a, b) => b[1] - a[1]).map(([m, n]) => ({ m, n })),
     categories: Object.fromEntries(Object.entries(stats.byCat).sort((a, b) => b[1] - a[1])),
     families: famEntries.map(([fam, recs]) => {
@@ -174,6 +180,7 @@ export function buildPartsCatalog(extraDirs = []) {
     rmSync(dir, { recursive: true, force: true });
     mkdirSync(dir, { recursive: true });
     writeFileSync(resolve(dir, "index.json"), JSON.stringify(index), "utf8");
+    writeFileSync(resolve(dir, "lobes.json"), JSON.stringify({ generated, parts: lobes }), "utf8");
     for (const [fam, recs] of famEntries) {
       writeFileSync(resolve(dir, `${slug(fam)}.json`), JSON.stringify({ fam, generated, parts: recs }), "utf8");
     }

@@ -51,6 +51,8 @@ export type FamilyEntry = {
 export type CatalogIndex = {
   generated: string;
   records: number;
+  /** Cam lobe profiles live in their own file; they are reference data, not pickable parts. */
+  lobes: { n: number; file: string };
   brands: { m: string; n: number }[];
   categories: Record<string, number>;
   families: FamilyEntry[];
