@@ -79,22 +79,19 @@ const slug = (s) => s.toLowerCase().replace(/°/g, "deg").replace(/[^a-z0-9]+/g,
 // maker slightly differently than the maker's own store).
 const BRAND_ALIASES = { "S&S Diesel": "S&S Diesel Motorsport" };
 
-// Spec values that should be numbers. Extractors already emit numbers; this
-// catches stragglers like "3.750" or "2.100\"" and reports them. Codes that
-// merely look numeric stay strings: alloy 4032/2618, material 4340, part
-// numbers, grades, model names.
+// Spec values are passed through as the extractors typed them. The extractors
+// already emit dimensions as numbers; every numeric-looking STRING seen so far
+// has been a code (alloy 4032, material 4340, carb flange 4150, SFI 18.1, ring
+// set and variant part numbers), so nothing is converted here. Null and empty
+// values are dropped, and numeric-looking strings are counted for the report
+// so a new extractor that forgets to type its numbers shows up there.
 const NUMERIC_RE = /^-?\d+(\.\d+)?"?$/;
-const KEEP_STRING = /^(alloy|material|grade|series|model|style|casting|code)$|p(ar)?t?n(um(ber)?)?$|Pn$|PN$|sku/i;
-function coerce(spec, stats) {
+function prune(spec, stats) {
   const out = {};
   for (const [k, v] of Object.entries(spec ?? {})) {
     if (v === null || v === undefined || v === "" || (Array.isArray(v) && v.length === 0)) continue;
-    if (typeof v === "string" && NUMERIC_RE.test(v.trim()) && !KEEP_STRING.test(k)) {
-      out[k] = parseFloat(v);
-      stats.coerced++;
-    } else {
-      out[k] = v;
-    }
+    if (typeof v === "string" && NUMERIC_RE.test(v.trim())) stats.numericStrings[k] = (stats.numericStrings[k] ?? 0) + 1;
+    out[k] = v;
   }
   return out;
 }
@@ -104,7 +101,7 @@ function brandSlug(m) {
 }
 
 export function buildPartsCatalog(extraDirs = []) {
-  const stats = { files: 0, records: 0, dupes: [], coerced: 0, unknownFamilies: new Map(), byBrand: {}, byCat: {}, byFam: {}, em: {} };
+  const stats = { files: 0, records: 0, dupes: [], numericStrings: {}, unknownFamilies: new Map(), byBrand: {}, byCat: {}, byFam: {}, em: {} };
   if (!existsSync(SRC_DIR)) {
     return { ...stats, families: 0, skipped: `no source dir ${SRC_DIR}` };
   }
@@ -140,7 +137,7 @@ export function buildPartsCatalog(extraDirs = []) {
         cat: r.cat,
         name: r.name ?? "",
         fit,
-        spec: coerce(r.spec, stats),
+        spec: prune(r.spec, stats),
         src: { doc: r.src?.doc ?? "", ed: r.src?.edition ?? "", url: r.src?.url ?? "" },
       };
       if (r.emissions) rec.em = r.emissions;
@@ -190,7 +187,7 @@ export function buildPartsCatalog(extraDirs = []) {
     "",
     `- Records: **${stats.records}** across ${brands.size} brands and ${byFamily.size} families (${index.families.filter((f) => f.known).length} known to the planner)`,
     `- Duplicate (brand, part, family) rows skipped: ${stats.dupes.length}`,
-    `- Numeric strings coerced: ${stats.coerced}`,
+    `- Numeric-looking strings left as strings (codes, not dimensions): ${Object.entries(stats.numericStrings).map(([k, v]) => `${k} ${v}`).join(", ") || "none"}`,
     `- Emissions flags: ${Object.entries(stats.em).map(([k, v]) => `${k} ${v}`).join(", ") || "none"}`,
     "",
     "## Records per brand",
@@ -225,6 +222,6 @@ if (process.argv[1] && fileURLToPath(import.meta.url) === resolve(process.argv[1
     console.log(`parts-catalog: skipped (${r.skipped})`);
   } else {
     console.log(`parts-catalog: ${r.records} records, ${Object.keys(r.byBrand).length} brands, ${r.families} families (${r.known} known) -> ${r.outDir}`);
-    console.log(`  ${r.dupes.length} duplicates skipped, ${r.coerced} numeric strings coerced; report at ${r.report}`);
+    console.log(`  ${r.dupes.length} duplicates skipped; report at ${r.report}`);
   }
 }
