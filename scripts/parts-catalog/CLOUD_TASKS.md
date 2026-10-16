@@ -292,4 +292,18 @@ fluidampr.com
 www.cp-carrillo.com
 www.totalseal.com
 store.totalseal.com
+www.waglercompetition.com
+www.coltcams.com
+www.mantonpushrods.com
+www.dynomitediesel.com
+www.bankspower.com
+www.atsdiesel.com
+www.bulletproofdiesel.com
+www.stainlessdiesel.com
+www.smedingdiesel.com
 ```
+
+The last nine (DIESEL-SHOPIFY) were missing from this list when the task was first run in a
+cloud session: every host was refused by the environment's network policy (403 on CONNECT at
+the egress proxy), so `extract_diesel_shopify.py` could not fetch and wrote no output. Add them
+(or run the task locally) before rerunning that task.
