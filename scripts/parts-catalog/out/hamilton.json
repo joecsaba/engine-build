@@ -1,0 +1,3279 @@
+{
+ "source": {
+  "brand": "Hamilton Cams",
+  "doc": "hamiltoncams.com WooCommerce Store API + product page fitment table",
+  "edition": "2026-10",
+  "api": "https://hamiltoncams.com/wp-json/wc/store/v1/products?per_page=100&page=1",
+  "host": "hamiltoncams.com",
+  "storeProducts": 52,
+  "productPages": [
+   "https://hamiltoncams.com/product/1-45-lifters/",
+   "https://hamiltoncams.com/product/1-45-steel-tappets/",
+   "https://hamiltoncams.com/product/103-springs/",
+   "https://hamiltoncams.com/product/110-valve-springs/",
+   "https://hamiltoncams.com/product/12-valce-extreme-duty-pushrods/",
+   "https://hamiltoncams.com/product/12-valve-dual-springs/",
+   "https://hamiltoncams.com/product/12-valve-fire-ring-gasket-020-over/",
+   "https://hamiltoncams.com/product/12-valve-fire-ring-gasket-standard/",
+   "https://hamiltoncams.com/product/12-valve-single-springs/",
+   "https://hamiltoncams.com/product/178-208-12-valve-camshaft-combo/",
+   "https://hamiltoncams.com/product/178-208-camshaft-combo/",
+   "https://hamiltoncams.com/product/188-220-12-valve-camshaft-combo/",
+   "https://hamiltoncams.com/product/188-220-24-valve-camshaft-combo/",
+   "https://hamiltoncams.com/product/188-220-cast-cam/",
+   "https://hamiltoncams.com/product/188220-steel-cam/",
+   "https://hamiltoncams.com/product/19-flat-tappet-conversion-kit/",
+   "https://hamiltoncams.com/product/2007-5-2018-6-7-cummins-top-end-kit/",
+   "https://hamiltoncams.com/product/2019-2024-6-7-cummins-top-end-gasket-kit-without-head-gasket/",
+   "https://hamiltoncams.com/product/2019-2024-6-7-cummins-top-end-gasket-kit/",
+   "https://hamiltoncams.com/product/2019-2024-std-thickness-head-gasket/",
+   "https://hamiltoncams.com/product/2019-fire-ring-gasket-std/",
+   "https://hamiltoncams.com/product/2019-roller-cam-174-204-105-5/",
+   "https://hamiltoncams.com/product/2025-2026-flat-tappet-conversion-kit/",
+   "https://hamiltoncams.com/product/2025-6-7-cummins-top-end-gasket-kit/",
+   "https://hamiltoncams.com/product/220-240-110lsa-steel-camshaft/",
+   "https://hamiltoncams.com/product/24-v-high-performance-oe-style-rocker-arms-with-bushings/",
+   "https://hamiltoncams.com/product/24-vale-extreme-duty-pushrods/",
+   "https://hamiltoncams.com/product/24-valve-oem-replacement-cam-combo/",
+   "https://hamiltoncams.com/product/24-valve-retainers/",
+   "https://hamiltoncams.com/product/24valve-vp44-oem-replacement-cam-combo/",
+   "https://hamiltoncams.com/product/49-state-epa-approved-perfect-for-your-daily-driver/",
+   "https://hamiltoncams.com/product/5-9-fire-ring-gasket-standard/",
+   "https://hamiltoncams.com/product/5-9l-oem-replacement-camshaft/",
+   "https://hamiltoncams.com/product/54-mm-cam-bearings/",
+   "https://hamiltoncams.com/product/6-7-fire-ring-gasket-standard/",
+   "https://hamiltoncams.com/product/6-7-l-cummins-020-over-fire-ring-gasket/",
+   "https://hamiltoncams.com/product/oem-replacement-camshaft/"
+  ]
+ },
+ "extracted": "2026-10-16",
+ "count": 59,
+ "parts": [
+  {
+   "m": "Hamilton Cams",
+   "p": "07-g-6.7+19TE-H",
+   "cat": "gasket",
+   "name": "top end gasket kit, without head gasket",
+   "fit": {
+    "fam": "Cummins 6.7",
+    "ci": [
+     408
+    ],
+    "cyl": 6,
+    "y0": 2019,
+    "y1": 2024,
+    "notes": "2019–2024"
+   },
+   "spec": {
+    "includes": [
+     "Intake plenum gasket and intake horn gasket",
+     "Exhaust manifold gaskets",
+     "Valve stem seals",
+     "EGR gaskets",
+     "CCV filter gasket",
+     "Valve cover gasket and bushings",
+     "Fuel injector copper sealing washers and injector O-rings"
+    ],
+    "headGasketIncluded": false,
+    "kit": "top end"
+   },
+   "src": {
+    "doc": "hamiltoncams.com WooCommerce Store API + product page fitment table",
+    "edition": "2026-10",
+    "url": "https://hamiltoncams.com/product/2019-2024-6-7-cummins-top-end-gasket-kit-without-head-gasket/",
+    "id": 103469
+   },
+   "emissions": null
+  },
+  {
+   "m": "Hamilton Cams",
+   "p": "07-g-6.7+25TE",
+   "cat": "gasket",
+   "name": "top end gasket kit, with head gasket",
+   "fit": {
+    "fam": "Cummins 6.7",
+    "ci": [
+     408
+    ],
+    "cyl": 6,
+    "y0": 2025,
+    "notes": "2025+",
+    "vehicles": [
+     {
+      "make": "Dodge/Ram",
+      "model": "2500",
+      "y0": 2025,
+      "y1": 2026
+     },
+     {
+      "make": "Dodge/Ram",
+      "model": "3500",
+      "y0": 2025,
+      "y1": 2026
+     },
+     {
+      "make": "Dodge/Ram",
+      "model": "4500",
+      "y0": 2025,
+      "y1": 2026
+     },
+     {
+      "make": "Dodge/Ram",
+      "model": "5500",
+      "y0": 2025,
+      "y1": 2026
+     }
+    ]
+   },
+   "spec": {
+    "includes": [
+     "Cylinder Head Gasket",
+     "Turbo Gasket",
+     "(2) Manifold Gaskets",
+     "EGR Gaskets",
+     "Exhaust Manifold Gaskets"
+    ],
+    "headGasketIncluded": true,
+    "kit": "top end"
+   },
+   "src": {
+    "doc": "hamiltoncams.com WooCommerce Store API + product page fitment table",
+    "edition": "2026-10",
+    "url": "https://hamiltoncams.com/product/2025-6-7-cummins-top-end-gasket-kit/",
+    "id": 103470
+   },
+   "emissions": null
+  },
+  {
+   "m": "Hamilton Cams",
+   "p": "07-c-188/220S-1",
+   "cat": "cam",
+   "name": "cast cam, 188/220 @ .050, 1700-4500 rpm",
+   "fit": {
+    "fam": "Cummins 5.9 12V",
+    "ci": [
+     359
+    ],
+    "cyl": 6,
+    "y0": 1989,
+    "y1": 1998,
+    "notes": "1989–1998 12V"
+   },
+   "spec": {
+    "dur050Int": 188,
+    "dur050Exh": 220,
+    "rpmLow": 1700,
+    "rpmHigh": 4500,
+    "type": "solid_flat",
+    "material": "cast"
+   },
+   "src": {
+    "doc": "hamiltoncams.com WooCommerce Store API + product page fitment table",
+    "edition": "2026-10",
+    "url": "https://hamiltoncams.com/product/188-220-cast-cam/",
+    "id": 102880
+   },
+   "emissions": null
+  },
+  {
+   "m": "Hamilton Cams",
+   "p": "07-c-188/220S-1",
+   "cat": "cam",
+   "name": "cast cam, 188/220 @ .050, 1700-4500 rpm",
+   "fit": {
+    "fam": "Cummins 5.9 24V/CR",
+    "ci": [
+     359
+    ],
+    "cyl": 6,
+    "y0": 1998,
+    "y1": 2007,
+    "notes": "1998.5–2002 24V VP44; 2003–2007 common rail"
+   },
+   "spec": {
+    "dur050Int": 188,
+    "dur050Exh": 220,
+    "rpmLow": 1700,
+    "rpmHigh": 4500,
+    "type": "solid_flat",
+    "material": "cast"
+   },
+   "src": {
+    "doc": "hamiltoncams.com WooCommerce Store API + product page fitment table",
+    "edition": "2026-10",
+    "url": "https://hamiltoncams.com/product/188-220-cast-cam/",
+    "id": 102880
+   },
+   "emissions": null
+  },
+  {
+   "m": "Hamilton Cams",
+   "p": "07-c-188/220S-1",
+   "cat": "cam",
+   "name": "cast cam, 188/220 @ .050, 1700-4500 rpm",
+   "fit": {
+    "fam": "Cummins 6.7",
+    "ci": [
+     408
+    ],
+    "cyl": 6,
+    "y0": 2007,
+    "notes": "2007.5–2018; 2019–2024; 2025+"
+   },
+   "spec": {
+    "dur050Int": 188,
+    "dur050Exh": 220,
+    "rpmLow": 1700,
+    "rpmHigh": 4500,
+    "type": "solid_flat",
+    "material": "cast"
+   },
+   "src": {
+    "doc": "hamiltoncams.com WooCommerce Store API + product page fitment table",
+    "edition": "2026-10",
+    "url": "https://hamiltoncams.com/product/188-220-cast-cam/",
+    "id": 102880
+   },
+   "emissions": null
+  },
+  {
+   "m": "Hamilton Cams",
+   "p": "wc-99812",
+   "cat": "headGasket",
+   "name": "OEM replacement head gasket",
+   "fit": {
+    "fam": "Cummins 6.7",
+    "ci": [
+     408
+    ],
+    "cyl": 6,
+    "y0": 2019,
+    "y1": 2024,
+    "notes": "2019–2024",
+    "vehicles": [
+     {
+      "make": "Dodge/Ram",
+      "model": "2500",
+      "y0": 2019,
+      "y1": 2024
+     },
+     {
+      "make": "Dodge/Ram",
+      "model": "3500",
+      "y0": 2019,
+      "y1": 2024
+     },
+     {
+      "make": "Dodge/Ram",
+      "model": "4500",
+      "y0": 2019,
+      "y1": 2024
+     },
+     {
+      "make": "Dodge/Ram",
+      "model": "5500",
+      "y0": 2019,
+      "y1": 2024
+     }
+    ]
+   },
+   "spec": {
+    "style": "OEM replacement"
+   },
+   "src": {
+    "doc": "hamiltoncams.com WooCommerce Store API + product page fitment table",
+    "edition": "2026-10",
+    "url": "https://hamiltoncams.com/product/2019-2024-std-thickness-head-gasket/",
+    "id": 99812,
+    "skuMissing": true
+   },
+   "emissions": null
+  },
+  {
+   "m": "Hamilton Cams",
+   "p": "07-cc-OEMVP",
+   "cat": "cam",
+   "name": "cam combo",
+   "fit": {
+    "fam": "Cummins 5.9 24V/CR",
+    "ci": [
+     359
+    ],
+    "cyl": 6,
+    "y0": 1998,
+    "y1": 2002,
+    "notes": "1998.5–2002 24V VP44; stock-profile replacement; not for sale in CA",
+    "vehicles": [
+     {
+      "make": "Dodge/Ram",
+      "model": "2500",
+      "y0": 1998,
+      "y1": 2002
+     },
+     {
+      "make": "Dodge/Ram",
+      "model": "3500",
+      "y0": 1998,
+      "y1": 2002
+     }
+    ]
+   },
+   "spec": {
+    "lashInt": 0.01,
+    "lashExh": 0.02,
+    "type": "solid_flat",
+    "grind": "OEM replacement",
+    "components": [
+     "OEM Replacement camshaft (fits 98-2002Cummins)",
+     "Heavy duty pushrods (OEM power to over 3000 hp)",
+     "103 Valve Springs",
+     "Tappets"
+    ],
+    "kit": {
+     "pushrods": "07-p-004",
+     "springs": "07-s-003",
+     "lifters": "1.45 in tappets (PN not stated)"
+    }
+   },
+   "src": {
+    "doc": "hamiltoncams.com WooCommerce Store API + product page fitment table",
+    "edition": "2026-10",
+    "url": "https://hamiltoncams.com/product/24valve-vp44-oem-replacement-cam-combo/",
+    "id": 99672
+   },
+   "emissions": null
+  },
+  {
+   "m": "Hamilton Cams",
+   "p": "07-cc-OEMCR",
+   "cat": "cam",
+   "name": "cam combo, 161/191 @ .050",
+   "fit": {
+    "fam": "Cummins 6.7",
+    "ci": [
+     408
+    ],
+    "cyl": 6,
+    "y0": 2007,
+    "y1": 2018,
+    "notes": "2007.5–2018; stock-profile replacement; not for sale in CA",
+    "vehicles": [
+     {
+      "make": "Dodge/Ram",
+      "model": "2500",
+      "y0": 2007,
+      "y1": 2018
+     },
+     {
+      "make": "Dodge/Ram",
+      "model": "3500",
+      "y0": 2007,
+      "y1": 2018
+     },
+     {
+      "make": "Dodge/Ram",
+      "model": "4500",
+      "y0": 2007,
+      "y1": 2018
+     },
+     {
+      "make": "Dodge/Ram",
+      "model": "5500",
+      "y0": 2007,
+      "y1": 2018
+     }
+    ]
+   },
+   "spec": {
+    "dur050Int": 161,
+    "dur050Exh": 191,
+    "lashInt": 0.01,
+    "lashExh": 0.02,
+    "type": "solid_flat",
+    "grind": "OEM replacement",
+    "components": [
+     "161/191 Camshaft (fits 07.5-2018 Cummins)",
+     "Heavy duty pushrods (OEM power to over 3000 hp)",
+     "103 Valve Springs",
+     "Tappets"
+    ],
+    "kit": {
+     "pushrods": "07-p-004",
+     "springs": "07-s-003",
+     "lifters": "1.45 in tappets (PN not stated)"
+    }
+   },
+   "src": {
+    "doc": "hamiltoncams.com WooCommerce Store API + product page fitment table",
+    "edition": "2026-10",
+    "url": "https://hamiltoncams.com/product/24-valve-oem-replacement-cam-combo/",
+    "id": 99662
+   },
+   "emissions": null
+  },
+  {
+   "m": "Hamilton Cams",
+   "p": "07-cc-24v25-26",
+   "cat": "cam",
+   "name": "flat tappet conversion kit, 178 int @ .050, 4000 rpm",
+   "fit": {
+    "fam": "Cummins 6.7",
+    "ci": [
+     408
+    ],
+    "cyl": 6,
+    "y0": 2025,
+    "notes": "2025+; 49-state emissions certified (not CA); listed on backorder",
+    "vehicles": [
+     {
+      "make": "Dodge/Ram",
+      "model": "2500",
+      "y0": 2025,
+      "y1": 2026
+     },
+     {
+      "make": "Dodge/Ram",
+      "model": "3500",
+      "y0": 2025,
+      "y1": 2026
+     },
+     {
+      "make": "Dodge/Ram",
+      "model": "4500",
+      "y0": 2025,
+      "y1": 2026
+     },
+     {
+      "make": "Dodge/Ram",
+      "model": "5500",
+      "y0": 2025,
+      "y1": 2026
+     }
+    ]
+   },
+   "spec": {
+    "dur050Int": 178,
+    "rpmHigh": 4000,
+    "lashInt": 0.01,
+    "lashExh": 0.02,
+    "type": "solid_flat",
+    "material": "forged steel",
+    "components": [
+     "Forged Steel Camshafts",
+     "DLC-Coated Tappets",
+     "Heavy-Duty Pushrods",
+     "Upgraded Rocker Arms"
+    ],
+    "kit": {
+     "lifters": "DLC coated steel tappets (PN not stated)",
+     "pushrods": "heavy-duty pushrods (PN not stated)",
+     "rockers": "adjustable rockers, DLC trunnions (PN not stated)"
+    }
+   },
+   "src": {
+    "doc": "hamiltoncams.com WooCommerce Store API + product page fitment table",
+    "edition": "2026-10",
+    "url": "https://hamiltoncams.com/product/2025-2026-flat-tappet-conversion-kit/",
+    "id": 99457
+   },
+   "emissions": null
+  },
+  {
+   "m": "Hamilton Cams",
+   "p": "07-g-6.719+TE",
+   "cat": "gasket",
+   "name": "top end gasket kit, with head gasket",
+   "fit": {
+    "fam": "Cummins 6.7",
+    "ci": [
+     408
+    ],
+    "cyl": 6,
+    "y0": 2019,
+    "notes": "2019–2024; 2025+",
+    "vehicles": [
+     {
+      "make": "Dodge/Ram",
+      "model": "2500",
+      "y0": 2019,
+      "y1": 2024
+     },
+     {
+      "make": "Dodge/Ram",
+      "model": "3500",
+      "y0": 2019,
+      "y1": 2024
+     },
+     {
+      "make": "Dodge/Ram",
+      "model": "4500",
+      "y0": 2019,
+      "y1": 2024
+     },
+     {
+      "make": "Dodge/Ram",
+      "model": "5500",
+      "y0": 2019,
+      "y1": 2024
+     }
+    ]
+   },
+   "spec": {
+    "includes": [
+     "Head gasket",
+     "Intake plenum gasket and intake horn gasket",
+     "Exhaust manifold gaskets",
+     "Valve stem seals",
+     "EGR gaskets",
+     "CCV filter gasket",
+     "Valve cover gasket and bushings",
+     "Fuel injector coppers and injector O-rings"
+    ],
+    "headGasketIncluded": true,
+    "kit": "top end"
+   },
+   "src": {
+    "doc": "hamiltoncams.com WooCommerce Store API + product page fitment table",
+    "edition": "2026-10",
+    "url": "https://hamiltoncams.com/product/2019-2024-6-7-cummins-top-end-gasket-kit/",
+    "id": 97995
+   },
+   "emissions": null
+  },
+  {
+   "m": "Hamilton Cams",
+   "p": "07-g-6.7TE",
+   "cat": "gasket",
+   "name": "top end gasket kit, with head gasket",
+   "fit": {
+    "fam": "Cummins 6.7",
+    "ci": [
+     408
+    ],
+    "cyl": 6,
+    "y0": 2007,
+    "y1": 2018,
+    "notes": "2007.5–2018",
+    "vehicles": [
+     {
+      "make": "Dodge/Ram",
+      "model": "2500",
+      "y0": 2007,
+      "y1": 2018
+     },
+     {
+      "make": "Dodge/Ram",
+      "model": "3500",
+      "y0": 2007,
+      "y1": 2018
+     },
+     {
+      "make": "Dodge/Ram",
+      "model": "4500",
+      "y0": 2007,
+      "y1": 2018
+     },
+     {
+      "make": "Dodge/Ram",
+      "model": "5500",
+      "y0": 2007,
+      "y1": 2018
+     }
+    ]
+   },
+   "spec": {
+    "includes": [
+     "Head gasket",
+     "Intake plenum gasket and intake horn gasket",
+     "Exhaust manifold gaskets",
+     "Valve stem seals",
+     "EGR gaskets",
+     "CCV filter gasket",
+     "Valve cover gasket and bushings",
+     "Fuel injector coppers and injector O-rings"
+    ],
+    "headGasketIncluded": true,
+    "kit": "top end"
+   },
+   "src": {
+    "doc": "hamiltoncams.com WooCommerce Store API + product page fitment table",
+    "edition": "2026-10",
+    "url": "https://hamiltoncams.com/product/2007-5-2018-6-7-cummins-top-end-kit/",
+    "id": 11322
+   },
+   "emissions": null
+  },
+  {
+   "m": "Hamilton Cams",
+   "p": "wc-9201",
+   "cat": "cam",
+   "name": "OEM replacement cam",
+   "fit": {
+    "fam": "Cummins 5.9 24V/CR",
+    "ci": [
+     359
+    ],
+    "cyl": 6,
+    "y0": 1998,
+    "y1": 2002,
+    "notes": "1998.5–2002 24V VP44; stock-profile replacement",
+    "vehicles": [
+     {
+      "make": "Dodge/Ram",
+      "model": "2500",
+      "y0": 1998,
+      "y1": 2002
+     },
+     {
+      "make": "Dodge/Ram",
+      "model": "3500",
+      "y0": 1998,
+      "y1": 2002
+     }
+    ]
+   },
+   "spec": {
+    "type": "solid_flat",
+    "grind": "OEM replacement"
+   },
+   "src": {
+    "doc": "hamiltoncams.com WooCommerce Store API + product page fitment table",
+    "edition": "2026-10",
+    "url": "https://hamiltoncams.com/product/5-9l-oem-replacement-camshaft/",
+    "id": 9201,
+    "skuMissing": true
+   },
+   "emissions": null
+  },
+  {
+   "m": "Hamilton Cams",
+   "p": "07-C-OEMCR",
+   "cat": "cam",
+   "name": "OEM replacement cam, 161/191 @ .050",
+   "fit": {
+    "fam": "Cummins 5.9 24V/CR",
+    "ci": [
+     359
+    ],
+    "cyl": 6,
+    "y0": 2003,
+    "y1": 2007,
+    "notes": "2003–2007 common rail; stock-profile replacement; 161/191 @ .050 taken from the 07-cc-OEMCR combo listing; requires 1.45 in tappets",
+    "vehicles": [
+     {
+      "make": "Dodge/Ram",
+      "model": "2500",
+      "y0": 2003,
+      "y1": 2018
+     },
+     {
+      "make": "Dodge/Ram",
+      "model": "3500",
+      "y0": 2003,
+      "y1": 2018
+     },
+     {
+      "make": "Dodge/Ram",
+      "model": "4500",
+      "y0": 2007,
+      "y1": 2018
+     },
+     {
+      "make": "Dodge/Ram",
+      "model": "5500",
+      "y0": 2007,
+      "y1": 2018
+     }
+    ]
+   },
+   "spec": {
+    "type": "solid_flat",
+    "grind": "OEM replacement",
+    "dur050Int": 161,
+    "dur050Exh": 191
+   },
+   "src": {
+    "doc": "hamiltoncams.com WooCommerce Store API + product page fitment table",
+    "edition": "2026-10",
+    "url": "https://hamiltoncams.com/product/oem-replacement-camshaft/",
+    "id": 9199
+   },
+   "emissions": null
+  },
+  {
+   "m": "Hamilton Cams",
+   "p": "07-C-OEMCR",
+   "cat": "cam",
+   "name": "OEM replacement cam, 161/191 @ .050",
+   "fit": {
+    "fam": "Cummins 6.7",
+    "ci": [
+     408
+    ],
+    "cyl": 6,
+    "y0": 2007,
+    "y1": 2018,
+    "notes": "2007.5–2018; stock-profile replacement; 161/191 @ .050 taken from the 07-cc-OEMCR combo listing; requires 1.45 in tappets",
+    "vehicles": [
+     {
+      "make": "Dodge/Ram",
+      "model": "2500",
+      "y0": 2003,
+      "y1": 2018
+     },
+     {
+      "make": "Dodge/Ram",
+      "model": "3500",
+      "y0": 2003,
+      "y1": 2018
+     },
+     {
+      "make": "Dodge/Ram",
+      "model": "4500",
+      "y0": 2007,
+      "y1": 2018
+     },
+     {
+      "make": "Dodge/Ram",
+      "model": "5500",
+      "y0": 2007,
+      "y1": 2018
+     }
+    ]
+   },
+   "spec": {
+    "type": "solid_flat",
+    "grind": "OEM replacement",
+    "dur050Int": 161,
+    "dur050Exh": 191
+   },
+   "src": {
+    "doc": "hamiltoncams.com WooCommerce Store API + product page fitment table",
+    "edition": "2026-10",
+    "url": "https://hamiltoncams.com/product/oem-replacement-camshaft/",
+    "id": 9199
+   },
+   "emissions": null
+  },
+  {
+   "m": "Hamilton Cams",
+   "p": "07-cc-24v19+",
+   "cat": "cam",
+   "name": "flat tappet conversion kit, 178/208 @ .050, 4000 rpm",
+   "fit": {
+    "fam": "Cummins 6.7",
+    "ci": [
+     408
+    ],
+    "cyl": 6,
+    "y0": 2019,
+    "y1": 2024,
+    "notes": "2019–2024; 49-state emissions certified (not CA)",
+    "vehicles": [
+     {
+      "make": "Dodge/Ram",
+      "model": "2500",
+      "y0": 2019,
+      "y1": 2024
+     },
+     {
+      "make": "Dodge/Ram",
+      "model": "3500",
+      "y0": 2019,
+      "y1": 2024
+     },
+     {
+      "make": "Dodge/Ram",
+      "model": "4500",
+      "y0": 2019,
+      "y1": 2024
+     },
+     {
+      "make": "Dodge/Ram",
+      "model": "5500",
+      "y0": 2019,
+      "y1": 2024
+     }
+    ]
+   },
+   "spec": {
+    "dur050Int": 178,
+    "dur050Exh": 208,
+    "rpmHigh": 4000,
+    "lashInt": 0.01,
+    "lashExh": 0.02,
+    "type": "solid_flat",
+    "material": "forged steel",
+    "components": [
+     "178/208 Forged camshaft",
+     "DLC coated steel tappets",
+     "upgraded pushrods",
+     "Adjustable rocker arms with DLC coated trunnions"
+    ],
+    "kit": {
+     "lifters": "DLC coated steel tappets (PN not stated)",
+     "pushrods": "heavy-duty pushrods (PN not stated)",
+     "rockers": "adjustable rockers, DLC trunnions (PN not stated)"
+    }
+   },
+   "src": {
+    "doc": "hamiltoncams.com WooCommerce Store API + product page fitment table",
+    "edition": "2026-10",
+    "url": "https://hamiltoncams.com/product/19-flat-tappet-conversion-kit/",
+    "id": 9064
+   },
+   "emissions": null
+  },
+  {
+   "m": "Hamilton Cams",
+   "p": "07-g-6.719+FR",
+   "cat": "headGasket",
+   "name": "fire ring head gasket",
+   "fit": {
+    "fam": "Cummins 6.7",
+    "ci": [
+     408
+    ],
+    "cyl": 6,
+    "y0": 2019,
+    "notes": "2019–2024; 2025+; head studs required; groove cut for the fire ring; listing says 'coming soon'",
+    "vehicles": [
+     {
+      "make": "Dodge/Ram",
+      "model": "2500",
+      "y0": 2019,
+      "y1": 2026
+     },
+     {
+      "make": "Dodge/Ram",
+      "model": "3500",
+      "y0": 2019,
+      "y1": 2026
+     },
+     {
+      "make": "Dodge/Ram",
+      "model": "4500",
+      "y0": 2019,
+      "y1": 2026
+     },
+     {
+      "make": "Dodge/Ram",
+      "model": "5500",
+      "y0": 2019,
+      "y1": 2026
+     }
+    ]
+   },
+   "spec": {
+    "style": "fire ring",
+    "material": "composite"
+   },
+   "src": {
+    "doc": "hamiltoncams.com WooCommerce Store API + product page fitment table",
+    "edition": "2026-10",
+    "url": "https://hamiltoncams.com/product/2019-fire-ring-gasket-std/",
+    "id": 8813
+   },
+   "emissions": null
+  },
+  {
+   "m": "Hamilton Cams",
+   "p": "wc-8809",
+   "cat": "cam",
+   "name": "forged steel cam, 220/240 @ .050, 110 LSA",
+   "fit": {
+    "fam": "Cummins 5.9 12V",
+    "ci": [
+     359
+    ],
+    "cyl": 6,
+    "y0": 1989,
+    "y1": 1998,
+    "notes": "1989–1998 12V; competition only",
+    "vehicles": [
+     {
+      "make": "Dodge/Ram",
+      "model": "2500",
+      "y0": 1989,
+      "y1": 2026
+     },
+     {
+      "make": "Dodge/Ram",
+      "model": "3500",
+      "y0": 1989,
+      "y1": 2026
+     },
+     {
+      "make": "Dodge/Ram",
+      "model": "4500",
+      "y0": 2007,
+      "y1": 2026
+     },
+     {
+      "make": "Dodge/Ram",
+      "model": "5500",
+      "y0": 2007,
+      "y1": 2026
+     }
+    ]
+   },
+   "spec": {
+    "dur050Int": 220,
+    "dur050Exh": 240,
+    "lsa": 110,
+    "type": "solid_flat",
+    "material": "forged steel"
+   },
+   "src": {
+    "doc": "hamiltoncams.com WooCommerce Store API + product page fitment table",
+    "edition": "2026-10",
+    "url": "https://hamiltoncams.com/product/220-240-110lsa-steel-camshaft/",
+    "id": 8809,
+    "skuMissing": true
+   },
+   "emissions": null
+  },
+  {
+   "m": "Hamilton Cams",
+   "p": "wc-8809",
+   "cat": "cam",
+   "name": "forged steel cam, 220/240 @ .050, 110 LSA",
+   "fit": {
+    "fam": "Cummins 5.9 24V/CR",
+    "ci": [
+     359
+    ],
+    "cyl": 6,
+    "y0": 1998,
+    "y1": 2007,
+    "notes": "1998.5–2002 24V VP44; 2003–2007 common rail; competition only",
+    "vehicles": [
+     {
+      "make": "Dodge/Ram",
+      "model": "2500",
+      "y0": 1989,
+      "y1": 2026
+     },
+     {
+      "make": "Dodge/Ram",
+      "model": "3500",
+      "y0": 1989,
+      "y1": 2026
+     },
+     {
+      "make": "Dodge/Ram",
+      "model": "4500",
+      "y0": 2007,
+      "y1": 2026
+     },
+     {
+      "make": "Dodge/Ram",
+      "model": "5500",
+      "y0": 2007,
+      "y1": 2026
+     }
+    ]
+   },
+   "spec": {
+    "dur050Int": 220,
+    "dur050Exh": 240,
+    "lsa": 110,
+    "type": "solid_flat",
+    "material": "forged steel"
+   },
+   "src": {
+    "doc": "hamiltoncams.com WooCommerce Store API + product page fitment table",
+    "edition": "2026-10",
+    "url": "https://hamiltoncams.com/product/220-240-110lsa-steel-camshaft/",
+    "id": 8809,
+    "skuMissing": true
+   },
+   "emissions": null
+  },
+  {
+   "m": "Hamilton Cams",
+   "p": "wc-8809",
+   "cat": "cam",
+   "name": "forged steel cam, 220/240 @ .050, 110 LSA",
+   "fit": {
+    "fam": "Cummins 6.7",
+    "ci": [
+     408
+    ],
+    "cyl": 6,
+    "y0": 2007,
+    "notes": "2007.5–2018; 2019–2024; 2025+; competition only",
+    "vehicles": [
+     {
+      "make": "Dodge/Ram",
+      "model": "2500",
+      "y0": 1989,
+      "y1": 2026
+     },
+     {
+      "make": "Dodge/Ram",
+      "model": "3500",
+      "y0": 1989,
+      "y1": 2026
+     },
+     {
+      "make": "Dodge/Ram",
+      "model": "4500",
+      "y0": 2007,
+      "y1": 2026
+     },
+     {
+      "make": "Dodge/Ram",
+      "model": "5500",
+      "y0": 2007,
+      "y1": 2026
+     }
+    ]
+   },
+   "spec": {
+    "dur050Int": 220,
+    "dur050Exh": 240,
+    "lsa": 110,
+    "type": "solid_flat",
+    "material": "forged steel"
+   },
+   "src": {
+    "doc": "hamiltoncams.com WooCommerce Store API + product page fitment table",
+    "edition": "2026-10",
+    "url": "https://hamiltoncams.com/product/220-240-110lsa-steel-camshaft/",
+    "id": 8809,
+    "skuMissing": true
+   },
+   "emissions": null
+  },
+  {
+   "m": "Hamilton Cams",
+   "p": "07-c-174-204-105.5",
+   "cat": "cam",
+   "name": "cam, 178/204 @ .050, 105.5 LSA, roller",
+   "fit": {
+    "fam": "Cummins 6.7",
+    "ci": [
+     408
+    ],
+    "cyl": 6,
+    "y0": 2019,
+    "notes": "2019–2024; 2025+; for the factory hydraulic roller lifters, retains OEM pushrods; title/SKU say 174/204 @ .050, description says 178/204; verify with Hamilton",
+    "vehicles": [
+     {
+      "make": "Dodge/Ram",
+      "model": "2500",
+      "y0": 1989,
+      "y1": 2026
+     },
+     {
+      "make": "Dodge/Ram",
+      "model": "3500",
+      "y0": 1989,
+      "y1": 2026
+     },
+     {
+      "make": "Dodge/Ram",
+      "model": "4500",
+      "y0": 2007,
+      "y1": 2026
+     },
+     {
+      "make": "Dodge/Ram",
+      "model": "5500",
+      "y0": 2007,
+      "y1": 2026
+     }
+    ]
+   },
+   "spec": {
+    "dur050Int": 178,
+    "dur050Exh": 204,
+    "liftInt": 0.27,
+    "liftExh": 0.31,
+    "lsa": 105.5,
+    "type": "hydraulic_roller"
+   },
+   "src": {
+    "doc": "hamiltoncams.com WooCommerce Store API + product page fitment table",
+    "edition": "2026-10",
+    "url": "https://hamiltoncams.com/product/2019-roller-cam-174-204-105-5/",
+    "id": 7894
+   },
+   "emissions": null
+  },
+  {
+   "m": "Hamilton Cams",
+   "p": "07-r-003",
+   "cat": "rocker",
+   "name": "OE-style rocker arms, DLC trunnions, 24V",
+   "fit": {
+    "fam": "Cummins 5.9 24V/CR",
+    "ci": [
+     359
+    ],
+    "cyl": 6,
+    "y0": 1998,
+    "y1": 2007,
+    "notes": "1998.5–2002 24V VP44; 2003–2007 common rail",
+    "vehicles": [
+     {
+      "make": "Dodge/Ram",
+      "model": "2500",
+      "y0": 1998,
+      "y1": 2018
+     },
+     {
+      "make": "Dodge/Ram",
+      "model": "3500",
+      "y0": 1998,
+      "y1": 2018
+     },
+     {
+      "make": "Dodge/Ram",
+      "model": "4500",
+      "y0": 2007,
+      "y1": 2018
+     },
+     {
+      "make": "Dodge/Ram",
+      "model": "5500",
+      "y0": 2007,
+      "y1": 2018
+     }
+    ]
+   },
+   "spec": {
+    "type": "pedestal",
+    "material": "cast steel",
+    "trunnion": "DLC coated",
+    "tips": "swaged steel"
+   },
+   "src": {
+    "doc": "hamiltoncams.com WooCommerce Store API + product page fitment table",
+    "edition": "2026-10",
+    "url": "https://hamiltoncams.com/product/24-v-high-performance-oe-style-rocker-arms-with-bushings/",
+    "id": 4033
+   },
+   "emissions": null
+  },
+  {
+   "m": "Hamilton Cams",
+   "p": "07-r-003",
+   "cat": "rocker",
+   "name": "OE-style rocker arms, DLC trunnions, 24V",
+   "fit": {
+    "fam": "Cummins 6.7",
+    "ci": [
+     408
+    ],
+    "cyl": 6,
+    "y0": 2007,
+    "y1": 2018,
+    "notes": "2007.5–2018",
+    "vehicles": [
+     {
+      "make": "Dodge/Ram",
+      "model": "2500",
+      "y0": 1998,
+      "y1": 2018
+     },
+     {
+      "make": "Dodge/Ram",
+      "model": "3500",
+      "y0": 1998,
+      "y1": 2018
+     },
+     {
+      "make": "Dodge/Ram",
+      "model": "4500",
+      "y0": 2007,
+      "y1": 2018
+     },
+     {
+      "make": "Dodge/Ram",
+      "model": "5500",
+      "y0": 2007,
+      "y1": 2018
+     }
+    ]
+   },
+   "spec": {
+    "type": "pedestal",
+    "material": "cast steel",
+    "trunnion": "DLC coated",
+    "tips": "swaged steel"
+   },
+   "src": {
+    "doc": "hamiltoncams.com WooCommerce Store API + product page fitment table",
+    "edition": "2026-10",
+    "url": "https://hamiltoncams.com/product/24-v-high-performance-oe-style-rocker-arms-with-bushings/",
+    "id": 4033
+   },
+   "emissions": null
+  },
+  {
+   "m": "Hamilton Cams",
+   "p": "07-g-5.9f",
+   "cat": "headGasket",
+   "name": "fire ring head gasket, 0.056 thick, 4.560 wire OD",
+   "fit": {
+    "fam": "Cummins 5.9 24V/CR",
+    "ci": [
+     359
+    ],
+    "cyl": 6,
+    "y0": 2003,
+    "y1": 2007,
+    "notes": "2003–2007 common rail; head studs required; groove cut for the fire ring",
+    "vehicles": [
+     {
+      "make": "Dodge/Ram",
+      "model": "2500",
+      "y0": 2003,
+      "y1": 2007
+     },
+     {
+      "make": "Dodge/Ram",
+      "model": "3500",
+      "y0": 2003,
+      "y1": 2007
+     }
+    ]
+   },
+   "spec": {
+    "thickness": 0.056,
+    "style": "fire ring",
+    "material": "composite",
+    "bore": 4.56,
+    "wireDia": 0.105,
+    "grooveDepth": [
+     0.032,
+     0.033
+    ],
+    "initialTorqueFtLb": 130
+   },
+   "src": {
+    "doc": "hamiltoncams.com WooCommerce Store API + product page fitment table",
+    "edition": "2026-10",
+    "url": "https://hamiltoncams.com/product/5-9-fire-ring-gasket-standard/",
+    "id": 4019
+   },
+   "emissions": null
+  },
+  {
+   "m": "Hamilton Cams",
+   "p": "07-g-6.7f20",
+   "cat": "headGasket",
+   "name": "fire ring head gasket, 0.066 thick, 4.560 wire OD",
+   "fit": {
+    "fam": "Cummins 6.7",
+    "ci": [
+     408
+    ],
+    "cyl": 6,
+    "y0": 2007,
+    "y1": 2018,
+    "notes": "2007.5–2018; head studs required; groove cut for the fire ring",
+    "vehicles": [
+     {
+      "make": "Dodge/Ram",
+      "model": "2500",
+      "y0": 2007,
+      "y1": 2018
+     },
+     {
+      "make": "Dodge/Ram",
+      "model": "3500",
+      "y0": 2007,
+      "y1": 2018
+     },
+     {
+      "make": "Dodge/Ram",
+      "model": "4500",
+      "y0": 2007,
+      "y1": 2018
+     },
+     {
+      "make": "Dodge/Ram",
+      "model": "5500",
+      "y0": 2007,
+      "y1": 2018
+     }
+    ]
+   },
+   "spec": {
+    "thickness": 0.066,
+    "style": "fire ring",
+    "material": "composite",
+    "bore": 4.56,
+    "wireDia": 0.105,
+    "grooveDepth": [
+     0.017,
+     0.018
+    ],
+    "initialTorqueFtLb": 130
+   },
+   "src": {
+    "doc": "hamiltoncams.com WooCommerce Store API + product page fitment table",
+    "edition": "2026-10",
+    "url": "https://hamiltoncams.com/product/6-7-l-cummins-020-over-fire-ring-gasket/",
+    "id": 4018
+   },
+   "emissions": null
+  },
+  {
+   "m": "Hamilton Cams",
+   "p": "07-g-6.7",
+   "cat": "headGasket",
+   "name": "fire ring head gasket, 0.046 thick, 4.560 wire OD",
+   "fit": {
+    "fam": "Cummins 6.7",
+    "ci": [
+     408
+    ],
+    "cyl": 6,
+    "y0": 2007,
+    "y1": 2018,
+    "notes": "2007.5–2018; head studs required; groove cut for the fire ring",
+    "vehicles": [
+     {
+      "make": "Dodge/Ram",
+      "model": "2500",
+      "y0": 2007,
+      "y1": 2018
+     },
+     {
+      "make": "Dodge/Ram",
+      "model": "3500",
+      "y0": 2007,
+      "y1": 2018
+     },
+     {
+      "make": "Dodge/Ram",
+      "model": "4500",
+      "y0": 2007,
+      "y1": 2018
+     },
+     {
+      "make": "Dodge/Ram",
+      "model": "5500",
+      "y0": 2007,
+      "y1": 2018
+     }
+    ]
+   },
+   "spec": {
+    "thickness": 0.046,
+    "style": "fire ring",
+    "material": "composite",
+    "bore": 4.56,
+    "wireDia": 0.105,
+    "grooveDepth": [
+     0.039,
+     0.04
+    ],
+    "initialTorqueFtLb": 130
+   },
+   "src": {
+    "doc": "hamiltoncams.com WooCommerce Store API + product page fitment table",
+    "edition": "2026-10",
+    "url": "https://hamiltoncams.com/product/6-7-fire-ring-gasket-standard/",
+    "id": 4017
+   },
+   "emissions": null
+  },
+  {
+   "m": "Hamilton Cams",
+   "p": "07-g-12v-f20",
+   "cat": "headGasket",
+   "name": "fire ring head gasket, 0.080 thick, 4.560 wire OD",
+   "fit": {
+    "fam": "Cummins 5.9 12V",
+    "ci": [
+     359
+    ],
+    "cyl": 6,
+    "y0": 1989,
+    "y1": 1998,
+    "notes": "1989–1998 12V; head studs required; groove cut for the fire ring",
+    "vehicles": [
+     {
+      "make": "Dodge/Ram",
+      "model": "2500",
+      "y0": 1989,
+      "y1": 1998
+     },
+     {
+      "make": "Dodge/Ram",
+      "model": "3500",
+      "y0": 1989,
+      "y1": 1998
+     }
+    ]
+   },
+   "spec": {
+    "thickness": 0.08,
+    "style": "fire ring",
+    "material": "composite",
+    "bore": 4.56,
+    "wireDia": 0.105,
+    "grooveDepth": [
+     0.016,
+     0.017
+    ],
+    "initialTorqueFtLb": 130
+   },
+   "src": {
+    "doc": "hamiltoncams.com WooCommerce Store API + product page fitment table",
+    "edition": "2026-10",
+    "url": "https://hamiltoncams.com/product/12-valve-fire-ring-gasket-020-over/",
+    "id": 4016
+   },
+   "emissions": null
+  },
+  {
+   "m": "Hamilton Cams",
+   "p": "07-g-12vf",
+   "cat": "headGasket",
+   "name": "fire ring head gasket, 0.070 thick, 4.560 wire OD",
+   "fit": {
+    "fam": "Cummins 5.9 12V",
+    "ci": [
+     359
+    ],
+    "cyl": 6,
+    "y0": 1989,
+    "y1": 1998,
+    "notes": "1989–1998 12V; head studs required; groove cut for the fire ring",
+    "vehicles": [
+     {
+      "make": "Dodge/Ram",
+      "model": "2500",
+      "y0": 1989,
+      "y1": 1998
+     },
+     {
+      "make": "Dodge/Ram",
+      "model": "3500",
+      "y0": 1989,
+      "y1": 1998
+     }
+    ]
+   },
+   "spec": {
+    "thickness": 0.07,
+    "style": "fire ring",
+    "material": "composite",
+    "bore": 4.56,
+    "wireDia": 0.105,
+    "grooveDepth": [
+     0.025,
+     0.026
+    ],
+    "initialTorqueFtLb": 130
+   },
+   "src": {
+    "doc": "hamiltoncams.com WooCommerce Store API + product page fitment table",
+    "edition": "2026-10",
+    "url": "https://hamiltoncams.com/product/12-valve-fire-ring-gasket-standard/",
+    "id": 4015
+   },
+   "emissions": null
+  },
+  {
+   "m": "Hamilton Cams",
+   "p": "07-s-110",
+   "cat": "spring",
+   "name": "valve springs, 110 lb seat, to 6500 rpm, 24V",
+   "fit": {
+    "fam": "Cummins 5.9 24V/CR",
+    "ci": [
+     359
+    ],
+    "cyl": 6,
+    "y0": 1998,
+    "y1": 2007,
+    "notes": "1998.5–2002 24V VP44; 2003–2007 common rail; competition, above 4,500 rpm; steel cam and steel tappets recommended",
+    "vehicles": [
+     {
+      "make": "Dodge/Ram",
+      "model": "2500",
+      "y0": 1998,
+      "y1": 2018
+     },
+     {
+      "make": "Dodge/Ram",
+      "model": "3500",
+      "y0": 1998,
+      "y1": 2018
+     },
+     {
+      "make": "Dodge/Ram",
+      "model": "4500",
+      "y0": 2007,
+      "y1": 2018
+     },
+     {
+      "make": "Dodge/Ram",
+      "model": "5500",
+      "y0": 2007,
+      "y1": 2018
+     }
+    ]
+   },
+   "spec": {
+    "seatLb": 110,
+    "rpmHigh": 6500,
+    "dual": false
+   },
+   "src": {
+    "doc": "hamiltoncams.com WooCommerce Store API + product page fitment table",
+    "edition": "2026-10",
+    "url": "https://hamiltoncams.com/product/110-valve-springs/",
+    "id": 4012
+   },
+   "emissions": null
+  },
+  {
+   "m": "Hamilton Cams",
+   "p": "07-s-110",
+   "cat": "spring",
+   "name": "valve springs, 110 lb seat, to 6500 rpm, 24V",
+   "fit": {
+    "fam": "Cummins 6.7",
+    "ci": [
+     408
+    ],
+    "cyl": 6,
+    "y0": 2007,
+    "notes": "2007.5–2018; 2019–2024; 2025+; competition, above 4,500 rpm; steel cam and steel tappets recommended",
+    "vehicles": [
+     {
+      "make": "Dodge/Ram",
+      "model": "2500",
+      "y0": 1998,
+      "y1": 2018
+     },
+     {
+      "make": "Dodge/Ram",
+      "model": "3500",
+      "y0": 1998,
+      "y1": 2018
+     },
+     {
+      "make": "Dodge/Ram",
+      "model": "4500",
+      "y0": 2007,
+      "y1": 2018
+     },
+     {
+      "make": "Dodge/Ram",
+      "model": "5500",
+      "y0": 2007,
+      "y1": 2018
+     }
+    ]
+   },
+   "spec": {
+    "seatLb": 110,
+    "rpmHigh": 6500,
+    "dual": false
+   },
+   "src": {
+    "doc": "hamiltoncams.com WooCommerce Store API + product page fitment table",
+    "edition": "2026-10",
+    "url": "https://hamiltoncams.com/product/110-valve-springs/",
+    "id": 4012
+   },
+   "emissions": null
+  },
+  {
+   "m": "Hamilton Cams",
+   "p": "07-cc-12V188",
+   "cat": "cam",
+   "name": "cam combo, 188/220 @ .050",
+   "fit": {
+    "fam": "Cummins 5.9 12V",
+    "ci": [
+     359
+    ],
+    "cyl": 6,
+    "y0": 1989,
+    "y1": 1998,
+    "notes": "1989–1998 12V",
+    "vehicles": [
+     {
+      "make": "Dodge/Ram",
+      "model": "2500",
+      "y0": 1989,
+      "y1": 1998
+     },
+     {
+      "make": "Dodge/Ram",
+      "model": "3500",
+      "y0": 1989,
+      "y1": 1998
+     }
+    ]
+   },
+   "spec": {
+    "dur050Int": 188,
+    "dur050Exh": 220,
+    "type": "solid_flat",
+    "components": [
+     "188/220 Camshaft (fits 89-2018 Cummins)",
+     "155# Cummins 12valve springs",
+     "Retainers and locks",
+     "Lifters/tappets",
+     "Extreme duty pushrods"
+    ],
+    "kit": {
+     "springs": "07-s-001",
+     "retainers": "included with 07-s-001",
+     "lifters": "1.45 in tappets (PN not stated)",
+     "pushrods": "07-p-002"
+    }
+   },
+   "src": {
+    "doc": "hamiltoncams.com WooCommerce Store API + product page fitment table",
+    "edition": "2026-10",
+    "url": "https://hamiltoncams.com/product/188-220-12-valve-camshaft-combo/",
+    "id": 1927
+   },
+   "emissions": null
+  },
+  {
+   "m": "Hamilton Cams",
+   "p": "07-cc-24V188",
+   "cat": "cam",
+   "name": "cam combo, 188/220 @ .050, 1700-4500 rpm",
+   "fit": {
+    "fam": "Cummins 5.9 24V/CR",
+    "ci": [
+     359
+    ],
+    "cyl": 6,
+    "y0": 1998,
+    "y1": 2007,
+    "notes": "1998.5–2002 24V VP44; 2003–2007 common rail",
+    "vehicles": [
+     {
+      "make": "Dodge/Ram",
+      "model": "2500",
+      "y0": 1998,
+      "y1": 2018
+     },
+     {
+      "make": "Dodge/Ram",
+      "model": "3500",
+      "y0": 1998,
+      "y1": 2018
+     },
+     {
+      "make": "Dodge/Ram",
+      "model": "4500",
+      "y0": 2007,
+      "y1": 2018
+     },
+     {
+      "make": "Dodge/Ram",
+      "model": "5500",
+      "y0": 2007,
+      "y1": 2018
+     }
+    ]
+   },
+   "spec": {
+    "dur050Int": 188,
+    "dur050Exh": 220,
+    "rpmLow": 1700,
+    "rpmHigh": 4500,
+    "type": "solid_flat",
+    "components": [
+     "188/220 Camshaft (fits 89-2018 Cummins)",
+     "Heavy duty pushrods (oem-3000 hp)",
+     "103 Valve Springs",
+     "Lifters/tappets"
+    ],
+    "kit": {
+     "pushrods": "07-p-004",
+     "springs": "07-s-003",
+     "lifters": "1.45 in tappets (PN not stated)"
+    }
+   },
+   "src": {
+    "doc": "hamiltoncams.com WooCommerce Store API + product page fitment table",
+    "edition": "2026-10",
+    "url": "https://hamiltoncams.com/product/188-220-24-valve-camshaft-combo/",
+    "id": 1926
+   },
+   "emissions": null
+  },
+  {
+   "m": "Hamilton Cams",
+   "p": "07-cc-24V188",
+   "cat": "cam",
+   "name": "cam combo, 188/220 @ .050, 1700-4500 rpm",
+   "fit": {
+    "fam": "Cummins 6.7",
+    "ci": [
+     408
+    ],
+    "cyl": 6,
+    "y0": 2007,
+    "y1": 2018,
+    "notes": "2007.5–2018",
+    "vehicles": [
+     {
+      "make": "Dodge/Ram",
+      "model": "2500",
+      "y0": 1998,
+      "y1": 2018
+     },
+     {
+      "make": "Dodge/Ram",
+      "model": "3500",
+      "y0": 1998,
+      "y1": 2018
+     },
+     {
+      "make": "Dodge/Ram",
+      "model": "4500",
+      "y0": 2007,
+      "y1": 2018
+     },
+     {
+      "make": "Dodge/Ram",
+      "model": "5500",
+      "y0": 2007,
+      "y1": 2018
+     }
+    ]
+   },
+   "spec": {
+    "dur050Int": 188,
+    "dur050Exh": 220,
+    "rpmLow": 1700,
+    "rpmHigh": 4500,
+    "type": "solid_flat",
+    "components": [
+     "188/220 Camshaft (fits 89-2018 Cummins)",
+     "Heavy duty pushrods (oem-3000 hp)",
+     "103 Valve Springs",
+     "Lifters/tappets"
+    ],
+    "kit": {
+     "pushrods": "07-p-004",
+     "springs": "07-s-003",
+     "lifters": "1.45 in tappets (PN not stated)"
+    }
+   },
+   "src": {
+    "doc": "hamiltoncams.com WooCommerce Store API + product page fitment table",
+    "edition": "2026-10",
+    "url": "https://hamiltoncams.com/product/188-220-24-valve-camshaft-combo/",
+    "id": 1926
+   },
+   "emissions": null
+  },
+  {
+   "m": "Hamilton Cams",
+   "p": "07-cc-12V178",
+   "cat": "cam",
+   "name": "cam combo, 178/208 @ .050",
+   "fit": {
+    "fam": "Cummins 5.9 12V",
+    "ci": [
+     359
+    ],
+    "cyl": 6,
+    "y0": 1989,
+    "y1": 1998,
+    "notes": "1989–1998 12V; 49-state emissions certified (not CA); not for sale in CA",
+    "vehicles": [
+     {
+      "make": "Dodge/Ram",
+      "model": "2500",
+      "y0": 1989,
+      "y1": 1998
+     },
+     {
+      "make": "Dodge/Ram",
+      "model": "3500",
+      "y0": 1989,
+      "y1": 1998
+     }
+    ]
+   },
+   "spec": {
+    "dur050Int": 178,
+    "dur050Exh": 208,
+    "lashInt": 0.01,
+    "lashExh": 0.02,
+    "type": "solid_flat",
+    "components": [
+     "178/208 Camshaft (fits 89-2018 Cummins)",
+     "Extreme duty pushrods (oem-2000 hp)",
+     "155 Valve Springs",
+     "Retainers and Locks",
+     "Lifters/tappets"
+    ],
+    "kit": {
+     "pushrods": "07-p-002",
+     "springs": "07-s-001",
+     "retainers": "included with 07-s-001",
+     "lifters": "1.45 in tappets (PN not stated)"
+    }
+   },
+   "src": {
+    "doc": "hamiltoncams.com WooCommerce Store API + product page fitment table",
+    "edition": "2026-10",
+    "url": "https://hamiltoncams.com/product/178-208-12-valve-camshaft-combo/",
+    "id": 1921
+   },
+   "emissions": null
+  },
+  {
+   "m": "Hamilton Cams",
+   "p": "07-cc-24V178",
+   "cat": "cam",
+   "name": "cam combo, 178/208 @ .050",
+   "fit": {
+    "fam": "Cummins 5.9 24V/CR",
+    "ci": [
+     359
+    ],
+    "cyl": 6,
+    "y0": 1998,
+    "y1": 2007,
+    "notes": "1998.5–2002 24V VP44; 2003–2007 common rail; 49-state emissions certified (not CA); not for sale in CA",
+    "vehicles": [
+     {
+      "make": "Dodge/Ram",
+      "model": "2500",
+      "y0": 1998,
+      "y1": 2018
+     },
+     {
+      "make": "Dodge/Ram",
+      "model": "3500",
+      "y0": 1998,
+      "y1": 2018
+     },
+     {
+      "make": "Dodge/Ram",
+      "model": "4500",
+      "y0": 2007,
+      "y1": 2018
+     },
+     {
+      "make": "Dodge/Ram",
+      "model": "5500",
+      "y0": 2007,
+      "y1": 2018
+     }
+    ]
+   },
+   "spec": {
+    "dur050Int": 178,
+    "dur050Exh": 208,
+    "lashInt": 0.01,
+    "lashExh": 0.02,
+    "type": "solid_flat",
+    "components": [
+     "178/208 Camshaft (fits 89-2018 Cummins)",
+     "Heavy duty pushrods (OEM power to over 3000 hp)",
+     "103 Valve Springs",
+     "Tappets"
+    ],
+    "kit": {
+     "pushrods": "07-p-004",
+     "springs": "07-s-003",
+     "lifters": "1.45 in tappets (PN not stated)"
+    }
+   },
+   "src": {
+    "doc": "hamiltoncams.com WooCommerce Store API + product page fitment table",
+    "edition": "2026-10",
+    "url": "https://hamiltoncams.com/product/178-208-camshaft-combo/",
+    "id": 1861
+   },
+   "emissions": null
+  },
+  {
+   "m": "Hamilton Cams",
+   "p": "07-cc-24V178",
+   "cat": "cam",
+   "name": "cam combo, 178/208 @ .050",
+   "fit": {
+    "fam": "Cummins 6.7",
+    "ci": [
+     408
+    ],
+    "cyl": 6,
+    "y0": 2007,
+    "y1": 2018,
+    "notes": "2007.5–2018; 49-state emissions certified (not CA); not for sale in CA",
+    "vehicles": [
+     {
+      "make": "Dodge/Ram",
+      "model": "2500",
+      "y0": 1998,
+      "y1": 2018
+     },
+     {
+      "make": "Dodge/Ram",
+      "model": "3500",
+      "y0": 1998,
+      "y1": 2018
+     },
+     {
+      "make": "Dodge/Ram",
+      "model": "4500",
+      "y0": 2007,
+      "y1": 2018
+     },
+     {
+      "make": "Dodge/Ram",
+      "model": "5500",
+      "y0": 2007,
+      "y1": 2018
+     }
+    ]
+   },
+   "spec": {
+    "dur050Int": 178,
+    "dur050Exh": 208,
+    "lashInt": 0.01,
+    "lashExh": 0.02,
+    "type": "solid_flat",
+    "components": [
+     "178/208 Camshaft (fits 89-2018 Cummins)",
+     "Heavy duty pushrods (OEM power to over 3000 hp)",
+     "103 Valve Springs",
+     "Tappets"
+    ],
+    "kit": {
+     "pushrods": "07-p-004",
+     "springs": "07-s-003",
+     "lifters": "1.45 in tappets (PN not stated)"
+    }
+   },
+   "src": {
+    "doc": "hamiltoncams.com WooCommerce Store API + product page fitment table",
+    "edition": "2026-10",
+    "url": "https://hamiltoncams.com/product/178-208-camshaft-combo/",
+    "id": 1861
+   },
+   "emissions": null
+  },
+  {
+   "m": "Hamilton Cams",
+   "p": "07-c-188/220S",
+   "cat": "cam",
+   "name": "steel cam, 188/220 @ .050, 1700-4500 rpm",
+   "fit": {
+    "fam": "Cummins 5.9 12V",
+    "ci": [
+     359
+    ],
+    "cyl": 6,
+    "y0": 1989,
+    "y1": 1998,
+    "notes": "1989–1998 12V; steel cam: needs at least two cam-tunnel bushings",
+    "vehicles": [
+     {
+      "make": "Dodge/Ram",
+      "model": "2500",
+      "y0": 1989,
+      "y1": 2026
+     },
+     {
+      "make": "Dodge/Ram",
+      "model": "3500",
+      "y0": 1989,
+      "y1": 2026
+     },
+     {
+      "make": "Dodge/Ram",
+      "model": "4500",
+      "y0": 2007,
+      "y1": 2026
+     },
+     {
+      "make": "Dodge/Ram",
+      "model": "5500",
+      "y0": 2007,
+      "y1": 2026
+     }
+    ]
+   },
+   "spec": {
+    "dur050Int": 188,
+    "dur050Exh": 220,
+    "rpmLow": 1700,
+    "rpmHigh": 4500,
+    "type": "solid_flat",
+    "material": "steel"
+   },
+   "src": {
+    "doc": "hamiltoncams.com WooCommerce Store API + product page fitment table",
+    "edition": "2026-10",
+    "url": "https://hamiltoncams.com/product/188220-steel-cam/",
+    "id": 1157
+   },
+   "emissions": null
+  },
+  {
+   "m": "Hamilton Cams",
+   "p": "07-c-188/220S",
+   "cat": "cam",
+   "name": "steel cam, 188/220 @ .050, 1700-4500 rpm",
+   "fit": {
+    "fam": "Cummins 5.9 24V/CR",
+    "ci": [
+     359
+    ],
+    "cyl": 6,
+    "y0": 1998,
+    "y1": 2007,
+    "notes": "1998.5–2002 24V VP44; 2003–2007 common rail; steel cam: needs at least two cam-tunnel bushings",
+    "vehicles": [
+     {
+      "make": "Dodge/Ram",
+      "model": "2500",
+      "y0": 1989,
+      "y1": 2026
+     },
+     {
+      "make": "Dodge/Ram",
+      "model": "3500",
+      "y0": 1989,
+      "y1": 2026
+     },
+     {
+      "make": "Dodge/Ram",
+      "model": "4500",
+      "y0": 2007,
+      "y1": 2026
+     },
+     {
+      "make": "Dodge/Ram",
+      "model": "5500",
+      "y0": 2007,
+      "y1": 2026
+     }
+    ]
+   },
+   "spec": {
+    "dur050Int": 188,
+    "dur050Exh": 220,
+    "rpmLow": 1700,
+    "rpmHigh": 4500,
+    "type": "solid_flat",
+    "material": "steel"
+   },
+   "src": {
+    "doc": "hamiltoncams.com WooCommerce Store API + product page fitment table",
+    "edition": "2026-10",
+    "url": "https://hamiltoncams.com/product/188220-steel-cam/",
+    "id": 1157
+   },
+   "emissions": null
+  },
+  {
+   "m": "Hamilton Cams",
+   "p": "07-c-188/220S",
+   "cat": "cam",
+   "name": "steel cam, 188/220 @ .050, 1700-4500 rpm",
+   "fit": {
+    "fam": "Cummins 6.7",
+    "ci": [
+     408
+    ],
+    "cyl": 6,
+    "y0": 2007,
+    "notes": "2007.5–2018; 2019–2024; 2025+; steel cam: needs at least two cam-tunnel bushings",
+    "vehicles": [
+     {
+      "make": "Dodge/Ram",
+      "model": "2500",
+      "y0": 1989,
+      "y1": 2026
+     },
+     {
+      "make": "Dodge/Ram",
+      "model": "3500",
+      "y0": 1989,
+      "y1": 2026
+     },
+     {
+      "make": "Dodge/Ram",
+      "model": "4500",
+      "y0": 2007,
+      "y1": 2026
+     },
+     {
+      "make": "Dodge/Ram",
+      "model": "5500",
+      "y0": 2007,
+      "y1": 2026
+     }
+    ]
+   },
+   "spec": {
+    "dur050Int": 188,
+    "dur050Exh": 220,
+    "rpmLow": 1700,
+    "rpmHigh": 4500,
+    "type": "solid_flat",
+    "material": "steel"
+   },
+   "src": {
+    "doc": "hamiltoncams.com WooCommerce Store API + product page fitment table",
+    "edition": "2026-10",
+    "url": "https://hamiltoncams.com/product/188220-steel-cam/",
+    "id": 1157
+   },
+   "emissions": null
+  },
+  {
+   "m": "Hamilton Cams",
+   "p": "07-p-004",
+   "cat": "pushrod",
+   "name": "pushrods, 12 mm x 0.120 wall, 24V",
+   "fit": {
+    "fam": "Cummins 5.9 24V/CR",
+    "ci": [
+     359
+    ],
+    "cyl": 6,
+    "y0": 1998,
+    "y1": 2007,
+    "notes": "1998.5–2002 24V VP44; 2003–2007 common rail",
+    "vehicles": [
+     {
+      "make": "Dodge/Ram",
+      "model": "2500",
+      "y0": 1998,
+      "y1": 2018
+     },
+     {
+      "make": "Dodge/Ram",
+      "model": "3500",
+      "y0": 1998,
+      "y1": 2018
+     },
+     {
+      "make": "Dodge/Ram",
+      "model": "4500",
+      "y0": 2007,
+      "y1": 2018
+     },
+     {
+      "make": "Dodge/Ram",
+      "model": "5500",
+      "y0": 2007,
+      "y1": 2018
+     }
+    ]
+   },
+   "spec": {
+    "diameterMm": 12,
+    "diameter": 0.472,
+    "wall": 0.12,
+    "bucklingLb": 6600,
+    "construction": "3-piece",
+    "material": "steel"
+   },
+   "src": {
+    "doc": "hamiltoncams.com WooCommerce Store API + product page fitment table",
+    "edition": "2026-10",
+    "url": "https://hamiltoncams.com/product/24-vale-extreme-duty-pushrods/",
+    "id": 943
+   },
+   "emissions": null
+  },
+  {
+   "m": "Hamilton Cams",
+   "p": "07-p-004",
+   "cat": "pushrod",
+   "name": "pushrods, 12 mm x 0.120 wall, 24V",
+   "fit": {
+    "fam": "Cummins 6.7",
+    "ci": [
+     408
+    ],
+    "cyl": 6,
+    "y0": 2007,
+    "y1": 2018,
+    "notes": "2007.5–2018",
+    "vehicles": [
+     {
+      "make": "Dodge/Ram",
+      "model": "2500",
+      "y0": 1998,
+      "y1": 2018
+     },
+     {
+      "make": "Dodge/Ram",
+      "model": "3500",
+      "y0": 1998,
+      "y1": 2018
+     },
+     {
+      "make": "Dodge/Ram",
+      "model": "4500",
+      "y0": 2007,
+      "y1": 2018
+     },
+     {
+      "make": "Dodge/Ram",
+      "model": "5500",
+      "y0": 2007,
+      "y1": 2018
+     }
+    ]
+   },
+   "spec": {
+    "diameterMm": 12,
+    "diameter": 0.472,
+    "wall": 0.12,
+    "bucklingLb": 6600,
+    "construction": "3-piece",
+    "material": "steel"
+   },
+   "src": {
+    "doc": "hamiltoncams.com WooCommerce Store API + product page fitment table",
+    "edition": "2026-10",
+    "url": "https://hamiltoncams.com/product/24-vale-extreme-duty-pushrods/",
+    "id": 943
+   },
+   "emissions": null
+  },
+  {
+   "m": "Hamilton Cams",
+   "p": "07-s-004",
+   "cat": "retainer",
+   "name": "tool steel spring retainers, 24V",
+   "fit": {
+    "fam": "Cummins 5.9 24V/CR",
+    "ci": [
+     359
+    ],
+    "cyl": 6,
+    "y0": 1998,
+    "y1": 2007,
+    "notes": "1998.5–2002 24V VP44; 2003–2007 common rail; for 110 lb springs / above 4,500 rpm",
+    "vehicles": [
+     {
+      "make": "Dodge/Ram",
+      "model": "2500",
+      "y0": 1998,
+      "y1": 2018
+     },
+     {
+      "make": "Dodge/Ram",
+      "model": "3500",
+      "y0": 1998,
+      "y1": 2018
+     },
+     {
+      "make": "Dodge/Ram",
+      "model": "4500",
+      "y0": 2007,
+      "y1": 2018
+     },
+     {
+      "make": "Dodge/Ram",
+      "model": "5500",
+      "y0": 2007,
+      "y1": 2018
+     }
+    ]
+   },
+   "spec": {
+    "material": "tool steel"
+   },
+   "src": {
+    "doc": "hamiltoncams.com WooCommerce Store API + product page fitment table",
+    "edition": "2026-10",
+    "url": "https://hamiltoncams.com/product/24-valve-retainers/",
+    "id": 938
+   },
+   "emissions": null
+  },
+  {
+   "m": "Hamilton Cams",
+   "p": "07-s-004",
+   "cat": "retainer",
+   "name": "tool steel spring retainers, 24V",
+   "fit": {
+    "fam": "Cummins 6.7",
+    "ci": [
+     408
+    ],
+    "cyl": 6,
+    "y0": 2007,
+    "notes": "2007.5–2018; 2019–2024; 2025+; for 110 lb springs / above 4,500 rpm",
+    "vehicles": [
+     {
+      "make": "Dodge/Ram",
+      "model": "2500",
+      "y0": 1998,
+      "y1": 2018
+     },
+     {
+      "make": "Dodge/Ram",
+      "model": "3500",
+      "y0": 1998,
+      "y1": 2018
+     },
+     {
+      "make": "Dodge/Ram",
+      "model": "4500",
+      "y0": 2007,
+      "y1": 2018
+     },
+     {
+      "make": "Dodge/Ram",
+      "model": "5500",
+      "y0": 2007,
+      "y1": 2018
+     }
+    ]
+   },
+   "spec": {
+    "material": "tool steel"
+   },
+   "src": {
+    "doc": "hamiltoncams.com WooCommerce Store API + product page fitment table",
+    "edition": "2026-10",
+    "url": "https://hamiltoncams.com/product/24-valve-retainers/",
+    "id": 938
+   },
+   "emissions": null
+  },
+  {
+   "m": "Hamilton Cams",
+   "p": "07-s-003",
+   "cat": "spring",
+   "name": "valve springs, 103 lb seat, to 4500 rpm, 24V",
+   "fit": {
+    "fam": "Cummins 5.9 24V/CR",
+    "ci": [
+     359
+    ],
+    "cyl": 6,
+    "y0": 1998,
+    "y1": 2007,
+    "notes": "1998.5–2002 24V VP44; 2003–2007 common rail",
+    "vehicles": [
+     {
+      "make": "Dodge/Ram",
+      "model": "2500",
+      "y0": 1998,
+      "y1": 2026
+     },
+     {
+      "make": "Dodge/Ram",
+      "model": "3500",
+      "y0": 1998,
+      "y1": 2026
+     },
+     {
+      "make": "Dodge/Ram",
+      "model": "4500",
+      "y0": 2007,
+      "y1": 2026
+     },
+     {
+      "make": "Dodge/Ram",
+      "model": "5500",
+      "y0": 2007,
+      "y1": 2026
+     }
+    ]
+   },
+   "spec": {
+    "seatLb": 103,
+    "rpmHigh": 4500,
+    "dual": false,
+    "retainersIncluded": false,
+    "maxBoostPsi": 80
+   },
+   "src": {
+    "doc": "hamiltoncams.com WooCommerce Store API + product page fitment table",
+    "edition": "2026-10",
+    "url": "https://hamiltoncams.com/product/103-springs/",
+    "id": 932
+   },
+   "emissions": null
+  },
+  {
+   "m": "Hamilton Cams",
+   "p": "07-s-003",
+   "cat": "spring",
+   "name": "valve springs, 103 lb seat, to 4500 rpm, 24V",
+   "fit": {
+    "fam": "Cummins 6.7",
+    "ci": [
+     408
+    ],
+    "cyl": 6,
+    "y0": 2007,
+    "notes": "2007.5–2018; 2019–2024; 2025+",
+    "vehicles": [
+     {
+      "make": "Dodge/Ram",
+      "model": "2500",
+      "y0": 1998,
+      "y1": 2026
+     },
+     {
+      "make": "Dodge/Ram",
+      "model": "3500",
+      "y0": 1998,
+      "y1": 2026
+     },
+     {
+      "make": "Dodge/Ram",
+      "model": "4500",
+      "y0": 2007,
+      "y1": 2026
+     },
+     {
+      "make": "Dodge/Ram",
+      "model": "5500",
+      "y0": 2007,
+      "y1": 2026
+     }
+    ]
+   },
+   "spec": {
+    "seatLb": 103,
+    "rpmHigh": 4500,
+    "dual": false,
+    "retainersIncluded": false,
+    "maxBoostPsi": 80
+   },
+   "src": {
+    "doc": "hamiltoncams.com WooCommerce Store API + product page fitment table",
+    "edition": "2026-10",
+    "url": "https://hamiltoncams.com/product/103-springs/",
+    "id": 932
+   },
+   "emissions": null
+  },
+  {
+   "m": "Hamilton Cams",
+   "p": "07-C-HC1",
+   "cat": "bearing",
+   "name": "cam bearings, 2.124 journal, set of 7",
+   "fit": {
+    "fam": "Cummins 5.9 12V",
+    "ci": [
+     359
+    ],
+    "cyl": 6,
+    "y0": 1989,
+    "y1": 1998,
+    "notes": "1989–1998 12V; block must be line-bored to the stated cam bore; 12V stock uses one bearing (journal 1)",
+    "vehicles": [
+     {
+      "make": "Dodge/Ram",
+      "model": "2500",
+      "y0": 1989,
+      "y1": 2018
+     },
+     {
+      "make": "Dodge/Ram",
+      "model": "3500",
+      "y0": 1989,
+      "y1": 2018
+     },
+     {
+      "make": "Dodge/Ram",
+      "model": "4500",
+      "y0": 2007,
+      "y1": 2018
+     },
+     {
+      "make": "Dodge/Ram",
+      "model": "5500",
+      "y0": 2007,
+      "y1": 2018
+     }
+    ]
+   },
+   "spec": {
+    "position": "cam",
+    "journal": 2.124,
+    "housing": 2.333,
+    "qty": 7,
+    "series": "HC-1"
+   },
+   "src": {
+    "doc": "hamiltoncams.com WooCommerce Store API + product page fitment table",
+    "edition": "2026-10",
+    "url": "https://hamiltoncams.com/product/54-mm-cam-bearings/",
+    "id": 906
+   },
+   "emissions": null
+  },
+  {
+   "m": "Hamilton Cams",
+   "p": "07-C-HC1",
+   "cat": "bearing",
+   "name": "cam bearings, 2.124 journal, set of 7",
+   "fit": {
+    "fam": "Cummins 5.9 24V/CR",
+    "ci": [
+     359
+    ],
+    "cyl": 6,
+    "y0": 1998,
+    "y1": 2007,
+    "notes": "1998.5–2002 24V VP44; 2003–2007 common rail; block must be line-bored to the stated cam bore; 12V stock uses one bearing (journal 1)",
+    "vehicles": [
+     {
+      "make": "Dodge/Ram",
+      "model": "2500",
+      "y0": 1989,
+      "y1": 2018
+     },
+     {
+      "make": "Dodge/Ram",
+      "model": "3500",
+      "y0": 1989,
+      "y1": 2018
+     },
+     {
+      "make": "Dodge/Ram",
+      "model": "4500",
+      "y0": 2007,
+      "y1": 2018
+     },
+     {
+      "make": "Dodge/Ram",
+      "model": "5500",
+      "y0": 2007,
+      "y1": 2018
+     }
+    ]
+   },
+   "spec": {
+    "position": "cam",
+    "journal": 2.124,
+    "housing": 2.333,
+    "qty": 7,
+    "series": "HC-1"
+   },
+   "src": {
+    "doc": "hamiltoncams.com WooCommerce Store API + product page fitment table",
+    "edition": "2026-10",
+    "url": "https://hamiltoncams.com/product/54-mm-cam-bearings/",
+    "id": 906
+   },
+   "emissions": null
+  },
+  {
+   "m": "Hamilton Cams",
+   "p": "07-C-HC1",
+   "cat": "bearing",
+   "name": "cam bearings, 2.124 journal, set of 7",
+   "fit": {
+    "fam": "Cummins 6.7",
+    "ci": [
+     408
+    ],
+    "cyl": 6,
+    "y0": 2007,
+    "y1": 2024,
+    "notes": "2007.5–2018; 2019–2024; block must be line-bored to the stated cam bore; 12V stock uses one bearing (journal 1)",
+    "vehicles": [
+     {
+      "make": "Dodge/Ram",
+      "model": "2500",
+      "y0": 1989,
+      "y1": 2018
+     },
+     {
+      "make": "Dodge/Ram",
+      "model": "3500",
+      "y0": 1989,
+      "y1": 2018
+     },
+     {
+      "make": "Dodge/Ram",
+      "model": "4500",
+      "y0": 2007,
+      "y1": 2018
+     },
+     {
+      "make": "Dodge/Ram",
+      "model": "5500",
+      "y0": 2007,
+      "y1": 2018
+     }
+    ]
+   },
+   "spec": {
+    "position": "cam",
+    "journal": 2.124,
+    "housing": 2.333,
+    "qty": 7,
+    "series": "HC-1"
+   },
+   "src": {
+    "doc": "hamiltoncams.com WooCommerce Store API + product page fitment table",
+    "edition": "2026-10",
+    "url": "https://hamiltoncams.com/product/54-mm-cam-bearings/",
+    "id": 906
+   },
+   "emissions": null
+  },
+  {
+   "m": "Hamilton Cams",
+   "p": "07-t-002",
+   "cat": "lifter",
+   "name": "flat tappets, 1.45 face, DLC steel",
+   "fit": {
+    "fam": "Cummins 5.9 12V",
+    "ci": [
+     359
+    ],
+    "cyl": 6,
+    "y0": 1989,
+    "y1": 1998,
+    "notes": "1989–1998 12V; for 110 lb or heavier springs, high rpm",
+    "vehicles": [
+     {
+      "make": "Dodge/Ram",
+      "model": "2500",
+      "y0": 1989,
+      "y1": 2018
+     },
+     {
+      "make": "Dodge/Ram",
+      "model": "3500",
+      "y0": 1989,
+      "y1": 2018
+     },
+     {
+      "make": "Dodge/Ram",
+      "model": "4500",
+      "y0": 2007,
+      "y1": 2018
+     },
+     {
+      "make": "Dodge/Ram",
+      "model": "5500",
+      "y0": 2007,
+      "y1": 2018
+     }
+    ]
+   },
+   "spec": {
+    "style": "solid_flat",
+    "linkBar": false,
+    "faceDia": 1.45,
+    "dlc": true,
+    "material": "steel"
+   },
+   "src": {
+    "doc": "hamiltoncams.com WooCommerce Store API + product page fitment table",
+    "edition": "2026-10",
+    "url": "https://hamiltoncams.com/product/1-45-steel-tappets/",
+    "id": 884
+   },
+   "emissions": null
+  },
+  {
+   "m": "Hamilton Cams",
+   "p": "07-t-002",
+   "cat": "lifter",
+   "name": "flat tappets, 1.45 face, DLC steel",
+   "fit": {
+    "fam": "Cummins 5.9 24V/CR",
+    "ci": [
+     359
+    ],
+    "cyl": 6,
+    "y0": 1998,
+    "y1": 2007,
+    "notes": "1998.5–2002 24V VP44; 2003–2007 common rail; for 110 lb or heavier springs, high rpm",
+    "vehicles": [
+     {
+      "make": "Dodge/Ram",
+      "model": "2500",
+      "y0": 1989,
+      "y1": 2018
+     },
+     {
+      "make": "Dodge/Ram",
+      "model": "3500",
+      "y0": 1989,
+      "y1": 2018
+     },
+     {
+      "make": "Dodge/Ram",
+      "model": "4500",
+      "y0": 2007,
+      "y1": 2018
+     },
+     {
+      "make": "Dodge/Ram",
+      "model": "5500",
+      "y0": 2007,
+      "y1": 2018
+     }
+    ]
+   },
+   "spec": {
+    "style": "solid_flat",
+    "linkBar": false,
+    "faceDia": 1.45,
+    "dlc": true,
+    "material": "steel"
+   },
+   "src": {
+    "doc": "hamiltoncams.com WooCommerce Store API + product page fitment table",
+    "edition": "2026-10",
+    "url": "https://hamiltoncams.com/product/1-45-steel-tappets/",
+    "id": 884
+   },
+   "emissions": null
+  },
+  {
+   "m": "Hamilton Cams",
+   "p": "07-t-002",
+   "cat": "lifter",
+   "name": "flat tappets, 1.45 face, DLC steel",
+   "fit": {
+    "fam": "Cummins 6.7",
+    "ci": [
+     408
+    ],
+    "cyl": 6,
+    "y0": 2007,
+    "y1": 2018,
+    "notes": "2007.5–2018; for 110 lb or heavier springs, high rpm",
+    "vehicles": [
+     {
+      "make": "Dodge/Ram",
+      "model": "2500",
+      "y0": 1989,
+      "y1": 2018
+     },
+     {
+      "make": "Dodge/Ram",
+      "model": "3500",
+      "y0": 1989,
+      "y1": 2018
+     },
+     {
+      "make": "Dodge/Ram",
+      "model": "4500",
+      "y0": 2007,
+      "y1": 2018
+     },
+     {
+      "make": "Dodge/Ram",
+      "model": "5500",
+      "y0": 2007,
+      "y1": 2018
+     }
+    ]
+   },
+   "spec": {
+    "style": "solid_flat",
+    "linkBar": false,
+    "faceDia": 1.45,
+    "dlc": true,
+    "material": "steel"
+   },
+   "src": {
+    "doc": "hamiltoncams.com WooCommerce Store API + product page fitment table",
+    "edition": "2026-10",
+    "url": "https://hamiltoncams.com/product/1-45-steel-tappets/",
+    "id": 884
+   },
+   "emissions": null
+  },
+  {
+   "m": "Hamilton Cams",
+   "p": "07-t-001",
+   "cat": "lifter",
+   "name": "flat tappets, 1.45 face",
+   "fit": {
+    "fam": "Cummins 5.9 12V",
+    "ci": [
+     359
+    ],
+    "cyl": 6,
+    "y0": 1989,
+    "y1": 1998,
+    "notes": "1989–1998 12V; text says fits 1989–2016; clears 12V P-pump eccentric",
+    "vehicles": [
+     {
+      "make": "Dodge/Ram",
+      "model": "2500",
+      "y0": 1989,
+      "y1": 2016
+     },
+     {
+      "make": "Dodge/Ram",
+      "model": "3500",
+      "y0": 1989,
+      "y1": 2016
+     },
+     {
+      "make": "Dodge/Ram",
+      "model": "4500",
+      "y0": 2007,
+      "y1": 2016
+     },
+     {
+      "make": "Dodge/Ram",
+      "model": "5500",
+      "y0": 2007,
+      "y1": 2016
+     }
+    ]
+   },
+   "spec": {
+    "style": "solid_flat",
+    "linkBar": false,
+    "faceDia": 1.45,
+    "dlc": false
+   },
+   "src": {
+    "doc": "hamiltoncams.com WooCommerce Store API + product page fitment table",
+    "edition": "2026-10",
+    "url": "https://hamiltoncams.com/product/1-45-lifters/",
+    "id": 877
+   },
+   "emissions": null
+  },
+  {
+   "m": "Hamilton Cams",
+   "p": "07-t-001",
+   "cat": "lifter",
+   "name": "flat tappets, 1.45 face",
+   "fit": {
+    "fam": "Cummins 5.9 24V/CR",
+    "ci": [
+     359
+    ],
+    "cyl": 6,
+    "y0": 1998,
+    "y1": 2007,
+    "notes": "1998.5–2002 24V VP44; 2003–2007 common rail; text says fits 1989–2016; clears 12V P-pump eccentric",
+    "vehicles": [
+     {
+      "make": "Dodge/Ram",
+      "model": "2500",
+      "y0": 1989,
+      "y1": 2016
+     },
+     {
+      "make": "Dodge/Ram",
+      "model": "3500",
+      "y0": 1989,
+      "y1": 2016
+     },
+     {
+      "make": "Dodge/Ram",
+      "model": "4500",
+      "y0": 2007,
+      "y1": 2016
+     },
+     {
+      "make": "Dodge/Ram",
+      "model": "5500",
+      "y0": 2007,
+      "y1": 2016
+     }
+    ]
+   },
+   "spec": {
+    "style": "solid_flat",
+    "linkBar": false,
+    "faceDia": 1.45,
+    "dlc": false
+   },
+   "src": {
+    "doc": "hamiltoncams.com WooCommerce Store API + product page fitment table",
+    "edition": "2026-10",
+    "url": "https://hamiltoncams.com/product/1-45-lifters/",
+    "id": 877
+   },
+   "emissions": null
+  },
+  {
+   "m": "Hamilton Cams",
+   "p": "07-t-001",
+   "cat": "lifter",
+   "name": "flat tappets, 1.45 face",
+   "fit": {
+    "fam": "Cummins 6.7",
+    "ci": [
+     408
+    ],
+    "cyl": 6,
+    "y0": 2007,
+    "y1": 2018,
+    "notes": "2007.5–2018; text says fits 1989–2016; clears 12V P-pump eccentric",
+    "vehicles": [
+     {
+      "make": "Dodge/Ram",
+      "model": "2500",
+      "y0": 1989,
+      "y1": 2016
+     },
+     {
+      "make": "Dodge/Ram",
+      "model": "3500",
+      "y0": 1989,
+      "y1": 2016
+     },
+     {
+      "make": "Dodge/Ram",
+      "model": "4500",
+      "y0": 2007,
+      "y1": 2016
+     },
+     {
+      "make": "Dodge/Ram",
+      "model": "5500",
+      "y0": 2007,
+      "y1": 2016
+     }
+    ]
+   },
+   "spec": {
+    "style": "solid_flat",
+    "linkBar": false,
+    "faceDia": 1.45,
+    "dlc": false
+   },
+   "src": {
+    "doc": "hamiltoncams.com WooCommerce Store API + product page fitment table",
+    "edition": "2026-10",
+    "url": "https://hamiltoncams.com/product/1-45-lifters/",
+    "id": 877
+   },
+   "emissions": null
+  },
+  {
+   "m": "Hamilton Cams",
+   "p": "07-p-002",
+   "cat": "pushrod",
+   "name": "pushrods, 10.5 mm x 0.120 wall, 12V",
+   "fit": {
+    "fam": "Cummins 5.9 12V",
+    "ci": [
+     359
+    ],
+    "cyl": 6,
+    "y0": 1989,
+    "y1": 1998,
+    "notes": "1989–1998 12V",
+    "vehicles": [
+     {
+      "make": "Dodge/Ram",
+      "model": "2500",
+      "y0": 1989,
+      "y1": 1998
+     },
+     {
+      "make": "Dodge/Ram",
+      "model": "3500",
+      "y0": 1989,
+      "y1": 1998
+     }
+    ]
+   },
+   "spec": {
+    "diameterMm": 10.5,
+    "diameter": 0.413,
+    "wall": 0.12,
+    "bucklingLb": 5000,
+    "material": "steel"
+   },
+   "src": {
+    "doc": "hamiltoncams.com WooCommerce Store API + product page fitment table",
+    "edition": "2026-10",
+    "url": "https://hamiltoncams.com/product/12-valce-extreme-duty-pushrods/",
+    "id": 869
+   },
+   "emissions": null
+  },
+  {
+   "m": "Hamilton Cams",
+   "p": "07-s-002",
+   "cat": "spring",
+   "name": "dual valve springs, 12V",
+   "fit": {
+    "fam": "Cummins 5.9 12V",
+    "ci": [
+     359
+    ],
+    "cyl": 6,
+    "y0": 1989,
+    "y1": 1998,
+    "notes": "1989–1998 12V",
+    "vehicles": [
+     {
+      "make": "Dodge/Ram",
+      "model": "2500",
+      "y0": 1989,
+      "y1": 1998
+     },
+     {
+      "make": "Dodge/Ram",
+      "model": "3500",
+      "y0": 1989,
+      "y1": 1998
+     }
+    ]
+   },
+   "spec": {
+    "maxLift": 0.7,
+    "dual": true,
+    "retainersIncluded": true
+   },
+   "src": {
+    "doc": "hamiltoncams.com WooCommerce Store API + product page fitment table",
+    "edition": "2026-10",
+    "url": "https://hamiltoncams.com/product/12-valve-dual-springs/",
+    "id": 847
+   },
+   "emissions": null
+  },
+  {
+   "m": "Hamilton Cams",
+   "p": "07-s-001",
+   "cat": "spring",
+   "name": "valve springs, 155 lb seat, @ 1.880, to 4500 rpm, 12V",
+   "fit": {
+    "fam": "Cummins 5.9 12V",
+    "ci": [
+     359
+    ],
+    "cyl": 6,
+    "y0": 1989,
+    "y1": 1998,
+    "notes": "1989–1998 12V",
+    "vehicles": [
+     {
+      "make": "Dodge/Ram",
+      "model": "2500",
+      "y0": 1989,
+      "y1": 1998
+     },
+     {
+      "make": "Dodge/Ram",
+      "model": "3500",
+      "y0": 1989,
+      "y1": 1998
+     }
+    ]
+   },
+   "spec": {
+    "seatLb": 155,
+    "installedHt": 1.88,
+    "rpmHigh": 4500,
+    "dual": false,
+    "style": "conical beehive",
+    "retainersIncluded": true,
+    "maxBoostPsi": 65
+   },
+   "src": {
+    "doc": "hamiltoncams.com WooCommerce Store API + product page fitment table",
+    "edition": "2026-10",
+    "url": "https://hamiltoncams.com/product/12-valve-single-springs/",
+    "id": 839
+   },
+   "emissions": null
+  },
+  {
+   "m": "Hamilton Cams",
+   "p": "07-c-178/208",
+   "cat": "cam",
+   "name": "cast cam, 178/208 @ .050, idle-4000 rpm",
+   "fit": {
+    "fam": "Cummins 5.9 12V",
+    "ci": [
+     359
+    ],
+    "cyl": 6,
+    "y0": 1989,
+    "y1": 1998,
+    "notes": "1989–1998 12V; 49-state emissions certified (not CA)",
+    "vehicles": [
+     {
+      "make": "Dodge/Ram",
+      "model": "2500",
+      "y0": 1989,
+      "y1": 2026
+     },
+     {
+      "make": "Dodge/Ram",
+      "model": "3500",
+      "y0": 1989,
+      "y1": 2026
+     },
+     {
+      "make": "Dodge/Ram",
+      "model": "4500",
+      "y0": 2007,
+      "y1": 2026
+     },
+     {
+      "make": "Dodge/Ram",
+      "model": "5500",
+      "y0": 2007,
+      "y1": 2026
+     }
+    ]
+   },
+   "spec": {
+    "dur050Int": 178,
+    "dur050Exh": 208,
+    "liftInt": 0.29,
+    "liftExh": 0.31,
+    "rpmLowText": "idle",
+    "rpmHigh": 4000,
+    "type": "solid_flat",
+    "material": "cast"
+   },
+   "src": {
+    "doc": "hamiltoncams.com WooCommerce Store API + product page fitment table",
+    "edition": "2026-10",
+    "url": "https://hamiltoncams.com/product/49-state-epa-approved-perfect-for-your-daily-driver/",
+    "id": 734
+   },
+   "emissions": null
+  },
+  {
+   "m": "Hamilton Cams",
+   "p": "07-c-178/208",
+   "cat": "cam",
+   "name": "cast cam, 178/208 @ .050, idle-4000 rpm",
+   "fit": {
+    "fam": "Cummins 5.9 24V/CR",
+    "ci": [
+     359
+    ],
+    "cyl": 6,
+    "y0": 1998,
+    "y1": 2007,
+    "notes": "1998.5–2002 24V VP44; 2003–2007 common rail; 49-state emissions certified (not CA)",
+    "vehicles": [
+     {
+      "make": "Dodge/Ram",
+      "model": "2500",
+      "y0": 1989,
+      "y1": 2026
+     },
+     {
+      "make": "Dodge/Ram",
+      "model": "3500",
+      "y0": 1989,
+      "y1": 2026
+     },
+     {
+      "make": "Dodge/Ram",
+      "model": "4500",
+      "y0": 2007,
+      "y1": 2026
+     },
+     {
+      "make": "Dodge/Ram",
+      "model": "5500",
+      "y0": 2007,
+      "y1": 2026
+     }
+    ]
+   },
+   "spec": {
+    "dur050Int": 178,
+    "dur050Exh": 208,
+    "liftInt": 0.29,
+    "liftExh": 0.31,
+    "rpmLowText": "idle",
+    "rpmHigh": 4000,
+    "type": "solid_flat",
+    "material": "cast"
+   },
+   "src": {
+    "doc": "hamiltoncams.com WooCommerce Store API + product page fitment table",
+    "edition": "2026-10",
+    "url": "https://hamiltoncams.com/product/49-state-epa-approved-perfect-for-your-daily-driver/",
+    "id": 734
+   },
+   "emissions": null
+  },
+  {
+   "m": "Hamilton Cams",
+   "p": "07-c-178/208",
+   "cat": "cam",
+   "name": "cast cam, 178/208 @ .050, idle-4000 rpm",
+   "fit": {
+    "fam": "Cummins 6.7",
+    "ci": [
+     408
+    ],
+    "cyl": 6,
+    "y0": 2007,
+    "notes": "2007.5–2018; 2019–2024; 2025+; 49-state emissions certified (not CA)",
+    "vehicles": [
+     {
+      "make": "Dodge/Ram",
+      "model": "2500",
+      "y0": 1989,
+      "y1": 2026
+     },
+     {
+      "make": "Dodge/Ram",
+      "model": "3500",
+      "y0": 1989,
+      "y1": 2026
+     },
+     {
+      "make": "Dodge/Ram",
+      "model": "4500",
+      "y0": 2007,
+      "y1": 2026
+     },
+     {
+      "make": "Dodge/Ram",
+      "model": "5500",
+      "y0": 2007,
+      "y1": 2026
+     }
+    ]
+   },
+   "spec": {
+    "dur050Int": 178,
+    "dur050Exh": 208,
+    "liftInt": 0.29,
+    "liftExh": 0.31,
+    "rpmLowText": "idle",
+    "rpmHigh": 4000,
+    "type": "solid_flat",
+    "material": "cast"
+   },
+   "src": {
+    "doc": "hamiltoncams.com WooCommerce Store API + product page fitment table",
+    "edition": "2026-10",
+    "url": "https://hamiltoncams.com/product/49-state-epa-approved-perfect-for-your-daily-driver/",
+    "id": 734
+   },
+   "emissions": null
+  }
+ ]
+}
