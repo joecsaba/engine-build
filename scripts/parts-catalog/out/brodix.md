@@ -166,3 +166,5 @@ Flagged families: 4.500 bore spacing 4, PB 5000 (5.0 bore spacing) 6.
   stored whole and may list alternatives (e.g. 350 vs 400 head gaskets).
 - `9992016-3` (`BB-3 XTRA COMBO`, port "345/366") and `9992009-3` (`BP BB-3 XTRA O COMBO`,
   "351 / 365") list two port volumes; stored in `spec.intakeRunnerCcOptions`.
+
+- **Brodix BR 7 (1170000 and siblings)**: intake flow at .300 lift reads 144 CFM, below the .200 value of 150. Only non-monotonic curve among 114 flow models; probably a typo on the Brodix page. Confirm against the 2026 catalog PDF before publishing.
