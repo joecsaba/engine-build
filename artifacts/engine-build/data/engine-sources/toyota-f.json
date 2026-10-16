@@ -127,12 +127,68 @@
     }
    ],
    "note": ""
+  },
+  "bore_in": {
+   "value": 3.5433,
+   "sources": [
+    {
+     "name": "Wikipedia: Toyota F engine",
+     "url": "https://en.wikipedia.org/wiki/Toyota_F_engine",
+     "says": "F: bore 90 mm, stroke 101.6 mm, 3878 cc"
+    },
+    {
+     "name": "Toyota Global 75 Years history, Table 1-33 'Specifications of the F and B Engines (1950)' (Toyota material; excerpted from Model BM Toyota Truck catalogue 'Engine Specifications', 1950)",
+     "url": "https://www.toyota-global.com/company/history_of_toyota/75years/text/taking_on_the_automotive_business/chapter2/section8/item2.html",
+     "says": "F Engine: Bore x Stroke 90.0x101.6 mm; total displacement 3,870 cc; compression 6.4:1"
+    }
+   ],
+   "note": "90.0 mm. Arithmetic: 90 x 90 x 101.6 x 0.7854 x 6 = 3,878.1 cc, matching the 3,878 cc published by Toyota (lineage page), Elgin and Wikipedia. Toyota's 1950 table states 3,870 cc.",
+   "second_pass": true
+  },
+  "stroke_in": {
+   "value": 4.0,
+   "sources": [
+    {
+     "name": "Wikipedia: Toyota F engine",
+     "url": "https://en.wikipedia.org/wiki/Toyota_F_engine",
+     "says": "stroke 101.6 mm"
+    },
+    {
+     "name": "Toyota Global 75 Years history, Table 1-33 'Specifications of the F and B Engines (1950)' (Toyota material; excerpted from Model BM Toyota Truck catalogue 'Engine Specifications', 1950)",
+     "url": "https://www.toyota-global.com/company/history_of_toyota/75years/text/taking_on_the_automotive_business/chapter2/section8/item2.html",
+     "says": "F Engine: Bore x Stroke 90.0x101.6 mm; total displacement 3,870 cc; compression 6.4:1"
+    }
+   ],
+   "note": "101.6 mm (4.0000 in). Arithmetic check as for bore.",
+   "second_pass": true
   }
  },
+ "variants": [
+  {
+   "year": "1961-1968",
+   "hp": 125,
+   "hp_basis": "gross",
+   "code": "F (FJ40/FJ43/FJ45, FJ55 from 1968/69)",
+   "induction": "1-bbl carb",
+   "sources": [
+    {
+     "name": "Toyota (USA newsroom + Toyota Global lineage; one source)",
+     "url": "https://pressroom.toyota.com/after-seven-decades-toyotas-legendary-land-cruiser-keeps-rolling-along/",
+     "says": "FJ40: inline-six produced 125 horsepower; lineage: 40 series Aug 1960 F 3,878 cc 125 PS/3600"
+    },
+    {
+     "name": "Wikipedia: Toyota Land Cruiser (J40)",
+     "url": "https://en.wikipedia.org/wiki/Toyota_Land_Cruiser_(J40)",
+     "says": "40 series 1960: 3.9 L F, 93 kW (126 PS; 125 hp)"
+    }
+   ],
+   "second_pass": true,
+   "note": "Toyota and Wikipedia agree on 125 hp. Toyota's lineage page calls its figure a net rating although US-era practice was gross."
+  }
+ ],
  "unverified": {
-  "bore_in": "3.5433 in (90.0 mm): Wikipedia only; Elgin lists no bore.",
-  "stroke_in": "4.0000 in (101.6 mm): Wikipedia only.",
   "block_material": "cast iron: Wikipedia only.",
-  "head_material": "cast iron: Wikipedia only."
+  "head_material": "cast iron: Wikipedia only.",
+  "compression_ratio": "6.4:1 is Toyota's 1950 (Model BM truck) figure only; no source for US Land Cruiser F compression."
  }
 }

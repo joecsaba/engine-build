@@ -295,7 +295,13 @@ export function loadEngineData() {
     const usedSlugs = new Set();
     const famEngines = [];
 
-    for (const group of groups.values()) {
+    // Generated pages without a ratio claim the plain slug first, so a year with a
+    // verified ratio (the 1932 flathead's 5.5) is the one that takes the "-5-5cr" suffix.
+    const ordered = [...groups.values()].sort((a, b) => {
+      const k = (g) => (g.every((e) => e.origin === "vehicle-pages") && g[0].compression_ratio != null ? 1 : 0);
+      return k(a) - k(b);
+    });
+    for (const group of ordered) {
       // Representative record = the one with the most populated fields, so the
       // page leads with the best-documented member of the cluster.
       const rep = group

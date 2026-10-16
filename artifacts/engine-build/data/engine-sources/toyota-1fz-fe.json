@@ -13,10 +13,14 @@
      "name": "Elgin Industries engine parts catalog (technical reference) - engine details",
      "url": "https://catalog.elginind.com/engine/toyota/default/499a2db2-fc8a-4393-b281-7f76a89ac33e/",
      "says": "1FZ-FE 4477cc: Bore 3.94'' (100.0mm)"
+    },
+    {
+     "name": "Australian Car Reviews: Toyota 1FZ-FE engine",
+     "url": "https://australiancar.reviews/1fz-fe-toyota-engine/",
+     "says": "cast iron block with 100.0 mm bores and a 95.0 mm stroke for a capacity of 4477 cc; compression ratio of 9.0:1; firing order 1-5-3-6-2-4; double overhead camshafts, four valves per cylinder; cast iron cylinder head"
     }
    ],
-   "note": "100.0 mm",
-   "second_pass": true
+   "note": "100.0 mm"
   },
   "displacement_l": {
    "value": 4.5,
@@ -150,11 +154,61 @@
     }
    ],
    "note": ""
+  },
+  "stroke_in": {
+   "value": 3.7402,
+   "sources": [
+    {
+     "name": "Wikipedia: Toyota FZ engine",
+     "url": "https://en.wikipedia.org/wiki/Toyota_FZ_engine",
+     "says": "1FZ-FE bore x stroke 100 mm x 95 mm"
+    },
+    {
+     "name": "Australian Car Reviews: Toyota 1FZ-FE engine",
+     "url": "https://australiancar.reviews/1fz-fe-toyota-engine/",
+     "says": "cast iron block with 100.0 mm bores and a 95.0 mm stroke for a capacity of 4477 cc; compression ratio of 9.0:1; firing order 1-5-3-6-2-4; double overhead camshafts, four valves per cylinder; cast iron cylinder head"
+    }
+   ],
+   "note": "95.0 mm. Arithmetic: 100 x 100 x 95 x 0.7854 x 6 = 4,476.8 cc vs 4,477 cc (Elgin, Australian Car Reviews).",
+   "second_pass": true
   }
  },
+ "variants": [
+  {
+   "year": "1993-1997",
+   "hp": 212,
+   "hp_basis": "SAE net",
+   "code": "1FZ-FE (FZJ80)",
+   "induction": "sequential EFI",
+   "sources": [
+    {
+     "name": "Toyota USA Newsroom - After Seven Decades... Land Cruiser",
+     "url": "https://pressroom.toyota.com/after-seven-decades-toyotas-legendary-land-cruiser-keeps-rolling-along/",
+     "says": "For 1993 ... 24-valve DOHC 4.5-liter inline-six, 212 hp and 275 lb-ft"
+    },
+    {
+     "name": "Consumer Guide - 1990-97 Toyota Land Cruiser",
+     "url": "https://consumerguide.com/used/1990-97-toyota-land-cruiser/",
+     "says": "1993: dohc 4.5 L/275 cu in six, 212 hp"
+    },
+    {
+     "name": "Wikipedia: Toyota Land Cruiser",
+     "url": "https://en.wikipedia.org/wiki/Toyota_Land_Cruiser",
+     "says": "1FZ-FE 158 kW (215 PS; 212 hp) at 4,600 rpm"
+    },
+    {
+     "name": "Kelley Blue Book - 1993 Toyota Land Cruiser specs",
+     "url": "https://www.kbb.com/toyota/land-cruiser/1993/specs",
+     "says": "4.5 L 212 @ 4600"
+    }
+   ],
+   "note": ""
+  }
+ ],
  "unverified": {
-  "stroke_in": "3.7402 in (95.0 mm): Wikipedia only.",
-  "block_material": "cast iron: not stated in Wikipedia FZ article; no source found.",
-  "head_material": "aluminum: no source found."
+  "block_material": "cast iron: Australian Car Reviews only.",
+  "head_material": "Australian Car Reviews says cast iron head; no second source (commonly reported as aluminum) - conflict/unconfirmed, withheld.",
+  "firing_order": "1-5-3-6-2-4: Australian Car Reviews only.",
+  "compression_ratio": "9.0:1: Australian Car Reviews only."
  }
 }

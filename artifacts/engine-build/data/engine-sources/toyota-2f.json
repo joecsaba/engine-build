@@ -13,10 +13,14 @@
      "name": "Elgin Industries engine parts catalog (technical reference) - engine details",
      "url": "https://catalog.elginind.com/engine/toyota/default/9e78be11-f317-4035-84ee-1b44a3066033/",
      "says": "2F 4227cc: Bore 3.70'' (94.0mm)"
+    },
+    {
+     "name": "Toyota 2F Engine Repair Manual, Aug 1980, Pub. No. 36104E (Toyota Motor Corporation; scan on archive.org)",
+     "url": "https://archive.org/details/2-f-engine",
+     "says": "Cylinder bore STD 94.00 - 94.05 mm (3.7008 - 3.7027 in.)"
     }
    ],
-   "note": "94.0 mm",
-   "second_pass": true
+   "note": "94.0 mm"
   },
   "displacement_l": {
    "value": 4.2,
@@ -147,9 +151,33 @@
    "note": ""
   }
  },
+ "variants": [
+  {
+   "year": "1975-1980",
+   "hp": 135,
+   "hp_basis": "gross (as published)",
+   "code": "2F",
+   "induction": "carb",
+   "sources": [
+    {
+     "name": "Toyota Global: Land Cruiser history - station wagon evolution (Toyota material)",
+     "url": "https://global.toyota/en/mobility/toyota-brand/features/landcruiser/history/evolution/station-wagon.html",
+     "says": "replaced in 1975 with inline 6 4,230 cc 135 hp engine (2F)"
+    },
+    {
+     "name": "Wikipedia: Toyota Land Cruiser (J40)",
+     "url": "https://en.wikipedia.org/wiki/Toyota_Land_Cruiser_(J40)",
+     "says": "2F 4.2 L 99 kW (135 PS; 133 hp), 1975-1984"
+    }
+   ],
+   "second_pass": true,
+   "note": "Toyota 135 hp; Wikipedia 135 PS (133 hp) - same nominal figure, unit differs. Hagerty valuation snippets (not usable) show 125 hp for 1975/1978 FJ40. 2F from Aug 1975 production."
+  }
+ ],
  "unverified": {
-  "stroke_in": "4.0000 in (101.6 mm): Wikipedia only.",
+  "stroke_in": "4.0000 in (101.6 mm): stated only by Wikipedia among checked sources (Toyota 2F repair manual and Elgin give no stroke). Arithmetic supports it: 94 x 94 x 101.6 x 0.7854 x 6 = 4,230.5 cc vs 4,230 cc published (Toyota Global, Wikipedia); Elgin 4,227 cc. Same 101.6 mm stroke as the F (Toyota 1950 table).",
   "block_material": "cast iron: Wikipedia only.",
-  "head_material": "cast iron: Wikipedia only."
+  "head_material": "cast iron: Wikipedia only.",
+  "firing_order": "1-5-3-6-2-4: Toyota 2F Engine Repair Manual (1980) service specifications only."
  }
 }

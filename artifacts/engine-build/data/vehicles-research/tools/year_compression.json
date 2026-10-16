@@ -1,0 +1,18 @@
+{
+  "_about": "Verified compression ratios that changed during an engine's run, applied by vehicle_engine_records.mjs to the dated pages. Each entry: family URL, cubic inches, years, ratio. Sources are in data/engine-sources/<engine>.json (two-pass rule; user 2026-10-15).",
+  "ratios": [
+    {"family": "/engines/ford/big-six", "cid": 300, "years": [1965, 1972], "cr": 8.9, "basis": "f150hub + CarBuzz agree"},
+    {"family": "/engines/ford/big-six", "cid": 300, "years": [1987, 1996], "cr": 8.8, "basis": "engine_specs_fordtruck: verified for the EFI years"},
+    {"family": "/engines/ford/flathead-v8", "cid": 221, "years": [1932, 1932], "cr": 5.5, "basis": "Wikipedia + EngineLabs agree"},
+    {"family": "/engines/nissan/l-series", "cid": 168, "years": [1975, 1980], "cr": 8.3, "match": "L28E$", "basis": "engine_specs_toyotanissan: verified"},
+    {"family": "/engines/nissan/l-series", "cid": 168, "years": [1981, 1983], "cr": 8.8, "match": "L28E$", "basis": "engine_specs_toyotanissan: verified"},
+    {"family": "/engines/nissan/l-series", "cid": 168, "years": [1981, 1983], "cr": 7.4, "match": "L28ET", "basis": "engine_specs_toyotanissan: verified"},
+    {"family": "/engines/volkswagen/air-cooled", "cid": 73, "years": [1954, 1960], "cr": 6.6, "basis": "engine_specs_early: verified"},
+    {"family": "/engines/volkswagen/air-cooled", "cid": 73, "years": [1961, 1965], "cr": 7.0, "basis": "engine_specs_early: verified"},
+    {"family": "/engines/volkswagen/air-cooled", "cid": 97, "years": [1970, 1971], "cr": 7.5, "basis": "engine_specs_early: verified"},
+    {"family": "/engines/volkswagen/air-cooled", "cid": 97, "years": [1972, 1979], "cr": 7.3, "basis": "engine_specs_early: verified"},
+    {"family": "/engines/volkswagen/air-cooled", "cid": 69, "years": [1949, 1953], "cr": 5.8, "basis": "engine_specs_early: verified"},
+    {"family": "/engines/volkswagen/air-cooled", "cid": 78, "years": [1966, 1966], "cr": 7.3, "basis": "engine_specs_early: verified"},
+    {"family": "/engines/volkswagen/air-cooled", "cid": 91, "years": [1967, 1969], "cr": 7.5, "basis": "engine_specs_early: verified"}
+  ]
+}

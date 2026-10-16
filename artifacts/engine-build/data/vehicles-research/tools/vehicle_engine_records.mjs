@@ -65,6 +65,11 @@ for (const e of d.engines) {
   byFam.get(e.familyUrl).push(e);
 }
 
+// Verified ratios that changed during a run (year_compression.json): a dated page gets the
+// ratio of its year; the undated base record carries none.
+const YEAR_CR = JSON.parse(readFileSync(new URL("./year_compression.json", import.meta.url), "utf8")).ratios;
+const yearCompression = (ve, code) => YEAR_CR.find((r) => r.family === ve.familyUrl && r.cid === ve.cid &&
+  ve.year >= r.years[0] && ve.year <= r.years[1] && (!r.match || new RegExp(r.match, "i").test(code ?? "")))?.cr ?? null;
 const made = new Map();                 // rel -> Map(engine_id -> record)
 const skipped = [];
 for (const x of vs) for (const ve of x.engines) {
@@ -108,7 +113,7 @@ for (const x of vs) for (const ve of x.engines) {
   made.get(rel).set(id, {
     engine_id: id, year: ve.year, displacement_ci: g.displacement_ci, displacement_l: g.displacement_l ?? null,
     num_cylinders: g.num_cylinders, bore_in: g.bore_in, stroke_in: g.stroke_in, rod_length_in: g.rod_length_in ?? null,
-    compression_ratio: null, advertised_hp: ve.hp ?? null, fuel_type: ve.diesel ? "diesel" : (g.fuel_type ?? "gas"),
+    compression_ratio: yearCompression(ve, code), advertised_hp: ve.hp ?? null, fuel_type: ve.diesel ? "diesel" : (g.fuel_type ?? "gas"),
     firing_order: g.firing_order ?? null, block_material: g.block_material ?? null, head_material: g.head_material ?? null,
     valvetrain: g.valvetrain ?? null, nhra_verified: false, vehicles: null,
     variants: [{ code, description: null }], head: null, clearances: null, torque_specs: null,

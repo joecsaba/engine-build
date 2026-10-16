@@ -68,6 +68,41 @@
   {
    "year": 1999,
    "gen": "gen1",
+   "cid": 330,
+   "cyl": 8,
+   "name": "5.4L / 330 V8",
+   "code": null,
+   "desc": "5.4L SOHC 2-valve Triton",
+   "trims": [
+    "Base gas engine F-250/F-350"
+   ],
+   "hpBasis": "net",
+   "nhra": false,
+   "sources": [
+    {
+     "name": "Kelley Blue Book F-250 Super Duty specs (per year)",
+     "url": "https://www.kbb.com/ford/f250-super-duty-regular-cab/1999/specs/"
+    },
+    {
+     "name": "Wikipedia - Ford Super Duty",
+     "url": "https://en.wikipedia.org/wiki/Ford_Super_Duty"
+    },
+    {
+     "name": "Ford-Trucks.com F-250 history part 5 (1999-2004)",
+     "url": "https://ford-trucks.com/article/idx/0/415/article/The_Ford_F250_History:_Part_Five.html"
+    },
+    {
+     "name": "EPA fueleconomy.gov vehicle data",
+     "url": "https://www.fueleconomy.gov/feg/download.shtml"
+    }
+   ],
+   "sourceCount": 4,
+   "hp": null,
+   "note": null
+  },
+  {
+   "year": 1999,
+   "gen": "gen1",
    "cid": 415,
    "cyl": 10,
    "name": "6.8L / 415 V10",
@@ -2646,44 +2681,6 @@
   }
  ],
  "excluded": [
-  {
-   "year": 1999,
-   "gen": "gen1",
-   "cid": 330,
-   "cyl": 8,
-   "name": "5.4L / 330 V8",
-   "code": null,
-   "desc": "5.4L SOHC 2-valve Triton",
-   "hp": null,
-   "hpBasis": "net",
-   "trims": [
-    "Base gas engine F-250/F-350"
-   ],
-   "note": null,
-   "nhra": false,
-   "sources": [
-    {
-     "name": "Kelley Blue Book F-250 Super Duty specs (per year)",
-     "url": "https://www.kbb.com/ford/f250-super-duty-regular-cab/1999/specs/"
-    },
-    {
-     "name": "Wikipedia - Ford Super Duty",
-     "url": "https://en.wikipedia.org/wiki/Ford_Super_Duty"
-    },
-    {
-     "name": "Ford-Trucks.com F-250 history part 5 (1999-2004)",
-     "url": "https://ford-trucks.com/article/idx/0/415/article/The_Ford_F250_History:_Part_Five.html"
-    },
-    {
-     "name": "EPA fueleconomy.gov vehicle data",
-     "url": "https://www.fueleconomy.gov/feg/download.shtml"
-    }
-   ],
-   "sourceCount": 4,
-   "status": "disputed",
-   "reason": "disputed",
-   "researchNote": "Engine confirmed by 4 sources; 1999 rating disputed: KBB 235/330, Wikipedia 255/350, Ford-Trucks.com 260/350 (the 2000+ figure). No 1999 Ford literature found; hp withheld. EPA 1999 rows also list a 4.6 V8, which belongs to the light-duty (non-Super Duty) 1999 F-250, not this model."
-  },
   {
    "year": 2024,
    "gen": "gen5",

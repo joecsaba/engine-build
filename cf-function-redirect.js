@@ -132,6 +132,14 @@ function handler(event) {
     // geometry; the corrected 1985 Chevrolet 262 folded the GMC LB4 page into Chevrolet's.
     '/engines/mercury/cologne/u-code': '/engines/ford/ford-170ci/u-code',
     '/engines/gmc/vortec-4300/lb4': '/engines/chevrolet/chevrolet-262ci/lb4',
+    // Dated L-series and VW pages now carry the verified ratio of their years (2026-10-15).
+    '/engines/nissan/l-series/nissan-l-series-veh-1975-168-149-l28e': '/engines/nissan/l-series/l28e-8-3cr',
+    '/engines/nissan/l-series/nissan-l-series-veh-1981-168-180-l28et': '/engines/nissan/l-series/l28et-7-4cr',
+    '/engines/volkswagen/air-cooled/volkswagen-air-cooled-veh-1949-69-30-1100': '/engines/volkswagen/air-cooled/1100-5-8cr',
+    '/engines/volkswagen/air-cooled/volkswagen-air-cooled-veh-1954-73-36-1200': '/engines/volkswagen/air-cooled/1200-6-6cr',
+    '/engines/volkswagen/air-cooled/volkswagen-air-cooled-veh-1966-78-50-1300': '/engines/volkswagen/air-cooled/1300-7-3cr',
+    '/engines/volkswagen/air-cooled/volkswagen-air-cooled-veh-1967-91-53-1500': '/engines/volkswagen/air-cooled/1500-7-5cr',
+    '/engines/volkswagen/air-cooled/volkswagen-air-cooled-veh-1970-97-57-1600': '/engines/volkswagen/air-cooled/1600-7-5cr',
     '/engines/pontiac/pontiac-207ci/207ci-3-62x2-31': '/engines/pontiac/pontiac-207ci',
     '/engines/subaru/fa/24-na': '/engines/subaru/fa',
     '/engines/subaru/fa/subaru-fa24t': '/engines/subaru/fa',
