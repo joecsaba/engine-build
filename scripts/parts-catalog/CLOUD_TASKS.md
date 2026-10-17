@@ -307,3 +307,43 @@ The last nine (DIESEL-SHOPIFY) were missing from this list when the task was fir
 cloud session: every host was refused by the environment's network policy (403 on CONNECT at
 the egress proxy), so `extract_diesel_shopify.py` could not fetch and wrote no output. Add them
 (or run the task locally) before rerunning that task.
+
+## Manual PDFs (downloaded by the owner into `Catalogs/` at the repo root; LOCAL tasks, no network)
+
+These sites block fetchers, so the catalogs were saved by hand. Extractors take `--pdf <path>`
+and default to the file named below. Add `block` to the `cat` list for Dart/Trick Flow blocks
+(spec: bore, maxBore, deckHeight, mainJournal, mainCaps, camBore, material).
+
+### DART  (grade C, 1-2 days)
+`Catalogs/DART VOLUME 23 - ISSUU - small.pdf` (2023, 126 pp). Heads are grouped under series
+headings (`IRON EAGLE S/S 23 165cc`), then chamber/valve sub-headings (`72cc CHAMBERS -
+1.940"/1.500" VALVES`), then text rows `<8-digit PN> <spring size> <description> <max lift>`.
+Runner cc lives in the series heading, chamber cc in the sub-heading. Also blocks (SHP, Iron
+Eagle, Little M, Big M) with bore/deck/main specs, and intakes. Emit `head`, `block`, `intake`.
+Layout reference: `scripts/catalog-probes/probe_topend/samples/dart2019_thirdparty_p25_p27_textrows.csv`.
+
+### JE  (grade B/C, 1 day)
+`Catalogs/JE22_catalog_FINAL_all pages - V2 - 09.09.25.pdf` (2025 edition, 204 pp). Shelf
+pistons by engine family: PN, bore, stroke, rod length, compression height, dome/dish cc, pin,
+CR, ring pack. Same record shape as MAHLE (`extract_mahle.py` is the template). Skip the
+powersports catalog.
+
+### WISECO  (grade B/C, 1 day)
+`Catalogs/Wiseco22_Auto_catalog_Final web.pdf` (2022, 220 pp). Same approach as JE.
+Skip the powersports catalog.
+
+### PAC  (grade A/B, half day)
+`Catalogs/PAC_CATALOG_VOL_24_05.06.24 REVISED ISSUU.pdf` (2024, 56 pp). Valve springs: PN,
+OD, ID, installed height, seat and open loads, rate, coil bind, max lift, dual/beehive/conical;
+plus retainers, locks, seats. Emit `spring`, `retainer`. Fitment is usually "Universal" unless a
+page names an engine or head.
+
+### TRICKFLOW  (grade B, 1 day)
+`Catalogs/TrickFlow-PRI-Catalog_26.pdf` (2026, 80 pp) plus `Catalogs/tfs_dealer_sheets_rev12.pdf`
+(2017 dealer spec sheets, 12 pp; flow tables). Heads (chamber, runner, valves, max lift, flow),
+intakes, top-end kits, cams, rockers, pushrods, blocks. Trick Flow is Summit-owned; the PDF is
+the only sanctioned source.
+
+### LUNATI-RA  (grade B, half day)
+`Catalogs/Lunati-Rotating-Assemblies.pdf` (2013, 36 pp). Cranks, rods and rotating assemblies
+by family, like Scat. Emit `crank`, `rod`, `rotatingAssembly`. Note the edition is 2013.
