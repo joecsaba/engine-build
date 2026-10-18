@@ -361,13 +361,39 @@ Gaskets 2022 (63 pp): head gaskets by engine with bore/thickness, intake and val
 gaskets; emit `headGasket`, `gasket`.
 
 ### HELD / OUT OF SCOPE (also in `Catalogs/`)
-- `eb-20-26_web.pdf` MAHLE/Clevite Engine Bearings light vehicle 2026 (1,007 pp): **held**.
-  Project rule: Clevite crank/bearing specs are shop-tool only, never on the public site.
-  Needs an explicit owner decision before any extraction for the public catalog.
-- `pr-20-19.pdf` (OE piston rings 2019, 247 pp), `ga-21-17.pdf` (OE gaskets 2017, 1,080 pp),
-  `ga-20-26_web.pdf` (gaskets 2000+, 52 pp): OE-replacement catalogs; low value for the
-  planner, skipped for now.
+- (Clevite bearings, KB pistons and MAHLE OE rings/gaskets were released by the owner on
+  2026-10-17: see the tasks below. The catalog is an interactive shopping list for stock
+  rebuilds as well as performance builds.)
+
 - `ap-37-16-hd-commercial-vehicle-catalog.pdf`, `overhaul-and-in-frame-engine-kits-listing-hd-1-224.pdf`,
   `ap-90-12-web-final.pdf`, `th-20-16.pdf`: heavy-duty truck and thermostat catalogs, out of scope.
-- `product-catalog.pdf` = KB Performance Pistons 2015: scanned images, no text layer (grade D).
+
 - `ISKY-Master-Lobe-List.pdf`: scanned, no text layer (grade D).
+
+### CLEVITE  (grade B/C, 1-2 days)
+`Catalogs/eb-20-26_web.pdf` = MAHLE Aftermarket / Clevite Engine Bearings light vehicle 2026
+(1,007 pp). Application section by make/engine (year, cc/CID, bore x stroke) listing main, rod,
+cam and thrust sets with undersizes and the H/P/V/MS series; a numerical/dimensional section.
+Template: `extract_king.py` (same catalog genre). The shop tool once parsed this catalog with
+`lambda-shop/tools/clevite_extract.py` (moved to C:\Enoch Shop); reuse its page logic if present.
+Emit `bearing` (position, series, journal, housing, width, thickness, undersize, material).
+
+### MAHLE-OE-RINGS  (grade B, 1 day)
+`Catalogs/pr-20-19.pdf` = MAHLE Piston Rings light vehicle 2019 (247 pp). Application section
+by make/engine → ring set PN with oversizes; ring set spec (bore, widths, material, face).
+Template: `extract_mahle_rings.py`. Emit `ring` with family from the engine description.
+
+### MAHLE-OE-GASKETS  (grade B, 1-2 days)
+`Catalogs/ga-20-26_web.pdf` (Gaskets 2000 & newer, 52 pp) and `Catalogs/ga-21-17.pdf`
+(Passenger car gaskets 2017, 1,080 pp, all years). Application tables by make/engine → head
+gasket, head set, full set, intake/exhaust/valve cover/oil pan gasket PNs. Templates:
+`extract_mahle_gaskets.py`, `extract_cometic.py`. Emit `headGasket` (bore, thickness, material
+where printed) and `gasket` (type), family from the engine description; keep OE engine codes in
+fit.notes.
+
+### KB  (grade D → OCR, 1 day)
+`Catalogs/product-catalog.pdf` = KB Performance Pistons 2015 (48 pp, scanned images, no text
+layer). OCR with `rapidocr_onnxruntime` (pip-installed; render pages with PyMuPDF at 200-300 dpi).
+Hypereutectic and Silv-O-Lite cast pistons by engine family: PN, bore, CH, dome/dish cc, pin,
+CR, ring pack. Emit `piston`; mark `src.ocr: true` and keep OCR confidence; cross-check PNs
+against the KB rows already in `out/uem.json`.
