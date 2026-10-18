@@ -53,6 +53,8 @@ export type CatalogIndex = {
   records: number;
   /** Cam lobe profiles live in their own file; they are reference data, not pickable parts. */
   lobes: { n: number; file: string };
+  /** Records whose family the planner cannot match (imports, vintage, make-only headings); each record carries `fam`. */
+  other: { n: number; file: string; families: Record<string, number> };
   brands: { m: string; n: number }[];
   categories: Record<string, number>;
   families: FamilyEntry[];
