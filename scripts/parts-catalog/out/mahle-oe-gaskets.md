@@ -1,0 +1,690 @@
+# MAHLE OE gaskets (GA-21-17 + GA-20-26) extraction notes
+
+- Extracted 2026-10-18 with `extract_mahle_oe_gaskets.py`. Sources are manual downloads under `Catalogs/`; no network used.
+- `ga-21-17.pdf`: 1080 pages. **The application pages (31-1038) are scanned images with no text layer** (965x1432 px greyscale JPX per page, ~115 dpi); only the front matter and the reference tables at the back are text. Pages were rendered at 200 dpi and OCR'd with rapidocr_onnxruntime; word boxes are cached in `dl/mahle-oe-gaskets/ocr/` (0 pages OCR'd in this run).
+- `ga-20-26_web.pdf`: 52-page web PDF = front matter only. Its manufacturer index points at application pages 49-1684 that are not in the file, so the 2000-and-newer application data is **not available** from this source. The one part table it has (Manifold Installation Sets, printed p5) gave 36 MIS part numbers -> 37 records.
+
+## Coverage of GA-21-17
+
+Engine-related section only (pp 31-756); the model-related section (pp 757-1038) is differential-cover and transmission gaskets and was skipped. Makes extracted, with the page ranges from the manufacturer index (PDF page = printed page):
+
+- American Motors: pp 33-43 (11 pages; 10 parsed, 1 of them engine/model index pages)
+- Chrysler: pp 78-121 (44 pages; 44 parsed, 5 of them engine/model index pages)
+- Dodge Truck: pp 123-156 (34 pages; 33 parsed, 4 of them engine/model index pages)
+- Ford: pp 166-237 (72 pages; 72 parsed, 6 of them engine/model index pages)
+- Ford Truck: pp 238-291 (54 pages; 54 parsed, 5 of them engine/model index pages)
+- General Motors Corp: pp 292-419 (128 pages; 128 parsed, 10 of them engine/model index pages)
+- General Motors Truck: pp 420-484 (65 pages; 65 parsed, 13 of them engine/model index pages)
+- Jeep: pp 524-537 (14 pages; 14 parsed, 3 of them engine/model index pages)
+- Navistar/International: pp 582-615 (34 pages; 33 parsed, 8 of them engine/model index pages)
+
+Model years covered by the extracted rows (the catalog's engine-related section for these makes stops at model year 1990; there are no LS, Modular, Coyote, Gen III Hemi, Magnum, Duramax, Powerstroke or 24-valve Cummins blocks in it):
+
+- American Motors: 1957-1988
+- Chrysler: 1934-1990
+- Dodge Truck: 1937-1990
+- Ford: 1928-1990
+- Ford Truck: 1932-1990
+- General Motors Corp: 1937-1990
+- General Motors Truck: 1937-1990
+- Jeep: 1939-1990
+- Navistar/International: 1936-1990
+
+Makes not extracted (51; imports plus small domestic marques such as Checker, Hudson, Nash, Kaiser-Frazer, Studebaker, Eagle): Acura, Audi, Austin, BMW, Checker Motors, Daihatsu, Eagle Chrysler, Fiat, Honda, Hudson, Hyundai, Hyundai Truck, Infiniti, Isuzu, Isuzu Truck, Jaguar, Kaiser-Frazer, Lexus, MG, Mack, Mazda, Mazda Truck, Mercedes Benz, Mercedes Benz Truck, Mitsubishi, Mitsubishi Truck, Nash, Nissan, Nissan Truck, Opel, Passport, Peugeot, Porsche, Renault, Saab, Sterling, Studebaker, Studebaker Truck, Subaru, Subaru Truck, Suzuki, Suzuki Truck, Toyota, Toyota Truck, Triumph, Volkswagen, Volkswagen Truck, Volvo, Volvo Truck, Winnebago, Yugo.
+
+- 496 engine blocks, 16501 part rows -> 5195 GA-21-17 records (3437 unique PNs) + 37 GA-20-26 records.
+- By cat (GA-21-17): fastener 61, gasket 4843, headGasket 291; 1872 records are marked discontinued in the catalog.
+
+## Records by family (GA-21-17)
+
+- General Motors Corp: 845 (headGasket 46, gasket 784, fastener 15)  (catalog make heading: engines not in the brief's family list)
+- Ford: 551 (headGasket 30, gasket 513, fastener 8)  (catalog make heading: engines not in the brief's family list)
+- General Motors Truck: 466 (headGasket 28, gasket 432, fastener 6)  (catalog make heading: engines not in the brief's family list)
+- Chrysler: 437 (headGasket 25, gasket 405, fastener 7)  (catalog make heading: engines not in the brief's family list)
+- Ford Truck: 371 (headGasket 25, gasket 341, fastener 5)  (catalog make heading: engines not in the brief's family list)
+- Dodge Truck: 307 (headGasket 18, gasket 282, fastener 7)  (catalog make heading: engines not in the brief's family list)
+- Small-block Chevy: 218 (headGasket 12, gasket 205, fastener 1)
+- Navistar/International: 190 (headGasket 15, gasket 173, fastener 2)  (catalog make heading: engines not in the brief's family list)
+- Small-block Ford (Windsor): 190 (headGasket 8, gasket 180, fastener 2)
+- Buick V6 181-252: 162 (headGasket 7, gasket 151, fastener 4)
+- Jeep: 143 (headGasket 13, gasket 130)  (catalog make heading: engines not in the brief's family list)
+- Pontiac V8: 121 (headGasket 7, gasket 114)
+- Chevy Mark IV big block: 117 (headGasket 5, gasket 111, fastener 1)
+- Ford 429/460: 113 (headGasket 4, gasket 109)
+- Mopar LA small block: 109 (headGasket 3, gasket 105, fastener 1)
+- Ford FE: 97 (headGasket 3, gasket 94)
+- American Motors: 94 (headGasket 8, gasket 86)  (catalog make heading: engines not in the brief's family list)
+- Oldsmobile V8: 79 (headGasket 6, gasket 73)
+- Mopar B/RB big block: 69 (headGasket 4, gasket 65)
+- Chevy inline-6: 68 (headGasket 2, gasket 66)
+- Ford 240/300 inline-6: 60 (headGasket 2, gasket 58)
+- Ford 351C/351M/400: 55 (headGasket 2, gasket 52, fastener 1)
+- AMC/Jeep inline-6: 50 (headGasket 4, gasket 46)
+- Buick 350: 46 (headGasket 2, gasket 44)
+- Mopar Slant Six: 43 (headGasket 1, gasket 42)
+- AMC V8: 42 (headGasket 2, gasket 40)
+- Chevy W-series 348/409: 42 (headGasket 1, gasket 41)
+- Cadillac 368-500: 39 (headGasket 3, gasket 36)
+- Buick big block: 29 (headGasket 1, gasket 28)
+- Chrysler 426 Hemi: 21 (headGasket 1, gasket 20)
+- Cummins 5.9 12V: 21 (headGasket 3, gasket 17, fastener 1)
+
+## Gasket types (spec.type, GA-21-17)
+
+- head set: 389
+- full set: 364
+- valve cover: 339
+- carb base: 329
+- timing cover set: 251
+- oil pan: 248
+- exhaust pipe: 243
+- intake manifold set: 233
+- engine kit gasket set: 214
+- rear main seal: 200
+- water pump: 196
+- water outlet: 189
+- valve stem seal: 175
+- exhaust manifold set: 175
+- repair sleeve: 117
+- EGR: 116
+- air cleaner mount: 113
+- fuel pump: 110
+- timing cover seal: 99
+- throttle body: 85
+- timing cover: 54
+- lower set: 52
+- push rod cover: 50
+- distributor: 50
+- intake & exhaust manifold set: 45
+- plenum: 41
+- thermostat housing: 40
+- oil pump: 37
+- head spacer shim: 29
+- oil pan drain plug: 26
+- cam seal: 25
+- turbocharger: 19
+- injector seal: 18
+- water pump backing plate: 18
+- oil filter: 17
+- water crossover: 12
+- choke: 12
+- cam plug: 12
+- fuel pump bowl: 12
+- heat riser: 11
+- valve cover grommet: 8
+- water pipe o-ring: 5
+- spark plug washer: 5
+- oil cooler: 5
+- manifold: 4
+- air crossover: 4
+- jet valve seal: 3
+- spark plug tube seal: 3
+- air pump: 3
+- oil filler: 3
+- push rod cover grommet: 3
+- air injection tube: 3
+- cam cover: 3
+- intake: 3
+- injection pump mount: 3
+- intermediate shaft seal: 2
+- air bypass valve: 2
+- crankcase cover: 2
+- balance shaft seal: 1
+- fuel inj. mixer gasket: 1
+- tining cover seal: 1
+- tining cover set: 1
+- cyl. head boll set: 1
+- head end plug: 1
+- cylinder sleeve seal: 1
+- push rod seal: 1
+- rocker arm stud seal: 1
+- exhaust manifold: 1
+- throttie body gasket: 1
+- cylinder head end piug: 1
+- waler pump mount gasket: 1
+- rocker cover: 1
+
+## Field notes
+
+- `headGasket`: the OE catalog prints no bore or thickness, so `spec.bore`/`spec.thickness` are absent; the engine's nominal bore is in the engine description (`fit.engines`). `spec.material` = composite (printed Composite / Graphite), MLS, steel shim or copper where the notes column prints a material; `spec.construction` keeps the printed word. `spec.side` L/R from Left / Right in the notes.
+- `gasket.spec.type` from the printed part type (head set, full set, lower set = conversion set, engine kit gasket set, valve cover, valve stem seal, intake / exhaust / intake & exhaust manifold set, oil pan, rear main seal, timing cover set / gasket / seal, repair sleeve, water outlet, water pump, fuel pump, carb base, exhaust pipe, ...). `spec.set` = true when the printed type says Set; `spec.material` / `spec.construction` from the printed material (cork rubber, molded rubber, cork with metal carrier, rope packing, ...). `spec.perEngine` = Qty column. `spec.discontinued` = `*` in the catalog; `spec.packedInSets` = `†` (now packed in sets).
+- Head bolt sets (`Cyl. Head Bolt Set`) are `fastener` with `spec.application` = head bolt; sealant, bellhousing / U-joint housing rows are skipped.
+- One record per PN per family: all engine blocks of a family that list the PN are merged. `fit.engines` lists every engine (CID, liters, division, cylinders, qualifiers, block years); `fit.ci` the displacements; `fit.y0/y1` the span of the row year ranges; `fit.notes` = first engines + VIN code lines + the printed application notes (first 4). `src.blocks` lists the catalog block numbers, `src.page` the first page, `src.alsoPages` the rest.
+- Family resolution from the engine description: GM by division + displacement (+ VIN engine codes for LS vs LT, years for Mark IV vs Gen VI); Ford by displacement + Windsor/Cleveland/Modified/DOHC qualifiers; Chrysler LA vs Magnum by years (318/360 blocks spanning 1991/1992 are emitted in both families); Cummins 12V/24V by years; Powerstroke by displacement and the Power-Stroke qualifier (7.3 IDI stays unresolved). Unresolved engines keep the catalog make heading as `fit.fam` and are listed below.
+- OCR caveats: `*` and `†` after part numbers are read as `*`, `"`, `'`, `` ` `` (-> discontinued) and `+`, `f` (-> packed in sets); `src.ocrConf` is the lowest OCR confidence of the PN boxes merged into the record (records below 0.85 deserve a look). Notes text has OCR spacing repaired heuristically.
+
+## Unresolved engines kept under the make heading (7984 rows in 294 blocks)
+
+- American Motors: 7 blocks
+- Chrysler: 34 blocks
+- Dodge Truck: 23 blocks
+- Ford: 42 blocks
+- Ford Truck: 27 blocks
+- General Motors Corp: 54 blocks
+- General Motors Truck: 37 blocks
+- Jeep: 9 blocks
+- Navistar/International: 61 blocks
+
+  - American Motors: 151 CID (2.5L) Pontiac 4 1980-1983 (35 rows)
+  - American Motors: 121 CID (2L) 4 Ohv 1977-1979 (19 rows)
+  - American Motors: 150 CID (2.5L) 4 Ohv 1983-1986 (19 rows)
+  - American Motors: 327 CID (5.4L) V8 1958-1966 (18 rows)
+  - American Motors: 287 CID (4.7L) V8 1963-1966 (17 rows)
+  - American Motors: 196 CID (3.2L) 6 Ohv 1957-1965 (13 rows)
+  - American Motors: 196 CID (3.2L) 6 L-Head 1957-1965 (11 rows)
+  - Chrysler: 98 CID (1.6L) 4 Sohc Ohc 1971-1990 (88 rows)
+  - Chrysler: 135 CID (2.2L) 4 Sohc Ohc 1981-1990 (79 rows)
+  - Chrysler: 218 CID (3.6L) 6 L-Head 1934-1954 (79 rows)
+  - Chrysler: 156 CID (2.6L) 4 Sohc Ohc 1978-1989 (67 rows)
+  - Chrysler: 92 CID (1.5L) 4 Sohc Ohc (63 rows)
+  - Chrysler: 122 CID (2L) 4 Sohc Ohc 1984-1990 (58 rows)
+  - Chrysler: 153 CID (2.5L) 4 Sohc Ohc 1986-1990 (52 rows)
+  - Chrysler: 181 CID (3L) Mitsubishi V6 Sohc Ohc 1988-1990 (44 rows)
+  - Chrysler: 361 CID (5.9L) V3 Ohv 1957-1966 (44 rows)
+  - Chrysler: 122 CID (2L) 4 Sohc Ohc 1974-1979 (37 rows)
+  - Chrysler: 230 CID (3.8L) 6 L-Head 1949-1959 (35 rows)
+  - Chrysler: 201 CID (3.3L) V6 1990 (34 rows)
+  - Chrysler: 251 CID (4.1L) 6 L-Head 1942-1952 (32 rows)
+  - Chrysler: 107 CID (1.8L) 4 1989-1990 (30 rows)
+  - Chrysler: 98 CID (1.6L) 4 Sohc Ohc 1984 (27 rows)
+  - Chrysler: 105 CID (1.7L) 4 Sohc Ohc 1978-1983 (27 rows)
+  - Chrysler: 86 CID (1.4L) 4 Sohc Ohc 1979-1984 (26 rows)
+  - Chrysler: 122 CID (2L) 4 Dohc Ohc Turbo 1990 (26 rows)
+  - Chrysler: 122 CID (2L) 4 Dohc Ohc 1989-1990 (24 rows)
+  - Chrysler: 97 CID (1.6L) 4 Ohv 1983-1986 (21 rows)
+  - Chrysler: 98 CID (1.6L) 4 Dohc Ohc 1989-1990 (21 rows)
+  - Chrysler: 326 CID (5.3L) 8 Ohv 1959 (20 rows)
+  - Chrysler: 265 CID (4.3L) 6 L-Head 1953-1954 (19 rows)
+  - Chrysler: 303 CID (5L) 8 Ohv 1956 (18 rows)
+  - Chrysler: 277 CID (4.5L) V8 Ohv 1956-1957 (17 rows)
+  - Chrysler: 301 CID (4.9L) V8 1956-1957 (17 rows)
+  - Chrysler: 270 CID (4.4L) V8 Ohv 1956 (12 rows)
+  - Chrysler: 201 CID (3.3L) Dodge 6 L-Head 1935-1941 (11 rows)
+  - Chrysler: 325 CID (5.3L) V8 Hemi 1957 (11 rows)
+  - Chrysler: 315 CID (5.2L) V8 Hemi 1956 (10 rows)
+  - Chrysler: 107 CID (1.8L) Mitsubishi 1989-1990 (6 rows)
+  - Chrysler: 98 CID (1.6L) Mitsubishi 4 Dohc Ohc 1989-1990 (2 rows)
+  - Chrysler: 135 CID (2.2L) 4 Turbo 1986-1987 (1 rows)
+  - Dodge Truck: 156 CID (2.6L) 4 Sohc Ohc 1984-1987 (108 rows)
+  - Dodge Truck: 122 CID (2L) Mitsubishi 4 Sohc Ohc 1983-1989 (75 rows)
+  - Dodge Truck: 153 CID (2.5L) 4 Sohc Ohc 1987-1990 (53 rows)
+  - Dodge Truck: 181 CID (3L) Mitsubishi V6 Sohc Ohc 1987-1990 (51 rows)
+  - Dodge Truck: 135 CID (2.2L) 4 Sohc Ohc 1982-1988 (46 rows)
+  - Dodge Truck: 239 CID (3.9L) Dodge V6 1987-1990 (42 rows)
+  - Dodge Truck: 122 CID (2L) 4 Sohc Ohc 1979-1982 (35 rows)
+  - Dodge Truck: 201 CID (3.3L) Chrysler V6 1990 (34 rows)
+  - Dodge Truck: 144 CID (2.4L) 4 Sohc Ohc 1990 (27 rows)
+  - Dodge Truck: 105 CID (1.7L) 4 Sohc Ohc 1982-1983 (26 rows)
+  - Dodge Truck: 218 CID (3.6L) Dodge 6 L-Head 1942-1954 (20 rows)
+  - Dodge Truck: 230 CID (3.8L) 6 L-Head 1942-1960 (20 rows)
+  - Dodge Truck: 143 CID (2.3L) Mitsubishi 4 Diesel Sohc Ohc 1983-1986 (17 rows)
+  - Dodge Truck: 265 CID (4.3L) 6 L-Head 1953-1960 (14 rows)
+  - Dodge Truck: 236 CID (3.9L) Dodge 6 L-Head 1942-1952 (13 rows)
+  - Dodge Truck: 237 CID (3.9L) Dodge 6 L-Head 1948-1952 (13 rows)
+  - Dodge Truck: 251 CID (4.1L) Dodge 6 L-Head 1961-1968 (12 rows)
+  - Dodge Truck: 315 CID (5.2L) Dodge V8 1957-1958 (12 rows)
+  - Dodge Truck: 315 CID (5.2L) Dodge V8 Hemi 1957-1958 (12 rows)
+  - Dodge Truck: 270 CID (4.4L) Dodge V8 Ohv 1955-1956 (11 rows)
+  - Dodge Truck: 354 CID (5.8L) Perkins 6 Diesel 1966-1970 (7 rows)
+  - Dodge Truck: 228 CID (3.7L) Dodge 6 L-Head 1937-1941 (5 rows)
+  - Ford: 232 CID (3.8L) V6 1982-1990 (106 rows)
+  - Ford: 140 CID (2.3L) 4 Sohc Ohc 1974-1990 (83 rows)
+  - Ford: 200 CID (3.3L) 6 Ohv 1963-1983 (64 rows)
+  - Ford: 171 CID (2.8L) V6 1974-1979 (51 rows)
+  - Ford: 250 CID (4.1L) 6 1969-1980 (51 rows)
+  - Ford: (2.3L) 4 1984-1990 (50 rows)
+  - Ford: 116 CID (1.9L) 4 Sohc Ohc 1985-1990 (45 rows)
+  - Ford: 98 CID (1.6L) 4 Sohc Ohc 1982-1985 (43 rows)
+  - Ford: 140 CID (2.3L) 4 Sohc Ohc 1984-1985 (40 rows)
+  - Ford: 183 CID (3L) 6 Ohv 1986-1990 (39 rows)
+  - Ford: 98 CID (1.6L) 4 1981-1985 (37 rows)
+  - Ford: 170 CID (2.8L) 6 1961-1972 (33 rows)
+  - Ford: 292 CID (4.8L) V8 1955-1962 (31 rows)
+  - Ford: 134 CID (2.2L) Mazda 4 Sohc Ohc 1989-1990 (30 rows)
+  - Ford: 223 CID (3.7L) 6 1954-1964 (29 rows)
+  - Ford: 153 CID (2.5L) 4 1986-1990 (27 rows)
+  - Ford: 81 CID (1.3L) Mazda 4 Sohc Ohc 1988-1990 (25 rows)
+  - Ford: 144 CID (2.4L) 6 1960-1964 (25 rows)
+  - Ford: 430 CID (7L) V8 1958-1965 (25 rows)
+  - Ford: 239 CID (3.9L) V8 L-Head 1939-1953 (24 rows)
+  - Ford: 312 CID (5.1L) V8 1956-1960 (24 rows)
+  - Ford: 98 CID (1.6L) 4 Sohc Ohc 1987-1989 (23 rows)
+  - Ford: 272 CID (4.5L) V8 1955-1957 (23 rows)
+  - Ford: (2.9L) V6 1988-1990 (22 rows)
+  - Ford: 122 CID (2L) 4 Sohc Ohc 1971-1974 (21 rows)
+  - Ford: 122 CID (2L) Mazda 4 Diesel Sohc Ohc 1984-1987 (21 rows)
+  - Ford: 215 CID (3.5L) 6 1952-1953 (21 rows)
+  - Ford: 98 CID (1.6L) 4 Ohv 1971-1973 (20 rows)
+  - Ford: 462 CID (7.6L) V8 1966-1968 (18 rows)
+  - Ford: (1.6L) 4 Ohv 1978-1980 (16 rows)
+  - Ford: 149 CID (2.4L) 6 Diesel 1984-1985 (16 rows)
+  - Ford: 383 CID (6.3L) V8 1958-1960 (15 rows)
+  - Ford: 239 CID (3.9L) 8 Ohv 1954 (14 rows)
+  - Ford: 256 CID (4.2L) V8 1954 (14 rows)
+  - Ford: 98 CID (1.6L) 4 Sohc Ohc 1981-1985 (12 rows)
+  - Ford: 183 CID (3L) V6 Dohc Ohc 1989-1990 (12 rows)
+  - Ford: 368 CID (6L) V8 1956-1957 (11 rows)
+  - Ford: 159 CID (2.6L) V6 1972-1973 (9 rows)
+  - Ford: 212 CID (3.5L) 4 L-Head 1928-1932 (5 rows)
+  - Ford: 140 CID (2.3L) 4 1986 (1 rows)
+  - Ford: 200 CID (3.3L) 4 L-Head 1933-1934 (1 rows)
+  - Ford Truck: 140 CID (2.3L) 4 Sohc Ohc 1977-1990 (80 rows)
+  - Ford Truck: 144 CID (2.4L) 6 1960-1964 (69 rows)
+  - Ford Truck: 200 CID (3.3L) Ford 6 Ohv 1965-1974 (56 rows)
+  - Ford Truck: 183 CID (3L) V6 Ohv 1986-1990 (39 rows)
+  - Ford Truck: 121 CID (2L) 4 1983-1988 (38 rows)
+  - Ford Truck: 171 CID (2.8L) Ford V6 1983-1986 (35 rows)
+  - Ford Truck: 110 CID (1.8L) Mazda 4 Sohc Ohc 1972-1978 (34 rows)
+  - Ford Truck: 122 CID (2L) 4 Sohc Ohc 1979-1982 (34 rows)
+  - Ford Truck: 232 CID (3.8L) Ford V6 1982-1983 (34 rows)
+  - Ford Truck: 292 CID (4.8L) Ford V8 1958-1964 (32 rows)
+  - Ford Truck: 272 CID (4.5L) Ford V8 1956-1958 (31 rows)
+  - Ford Truck: 177 CID (2.9L) Ford V6 Ohv 1986-1990 (28 rows)
+  - Ford Truck: 244 CID (4L) Ford V6 Ohv 1990 (28 rows)
+  - Ford Truck: 223 CID (3.7L) Ford 6 1954-1964 (26 rows)
+  - Ford Truck: 239 CID (3.9L) Ford V8 Ohv 1954-1955 (25 rows)
+  - Ford Truck: 420 CID (6.9L) Navistar V8 Diesel 1983-1987 (25 rows)
+  - Ford Truck: 444 CID (7.3L) Navistar V8 Diesel 1988-1990 (23 rows)
+  - Ford Truck: 215 CID (3.5L) 6 1952-1953 (22 rows)
+  - Ford Truck: 250 CID (4.1L) Ford 6 1969-1974 (22 rows)
+  - Ford Truck: 239 CID (3.9L) Ford V8 L-Head 1939-1953 (21 rows)
+  - Ford Truck: 256 CID (4.2L) Ford V8 1954-1955 (21 rows)
+  - Ford Truck: 134 CID (2.2L) Mazda 4 Diesel Sohc Ohc 1983-1984 (19 rows)
+  - Ford Truck: 262 CID (4.3L) 6 Ohv 1961-1964 (17 rows)
+  - Ford Truck: 140 CID (2.3L) Mitsubishi 4 Diesel Sohc Ohc 1985-1987 (15 rows)
+  - Ford Truck: 120 CID (2L) Ford 4 L-Head 1941-1942 (7 rows)
+  - Ford Truck: 254 CID (4.2L) Ford 6 L-Head 1950-1953 (4 rows)
+  - Ford Truck: 200 CID (3.3L) Ford 4 L-Head 1933-1934 (1 rows)
+  - General Motors Corp: 173 CID (2.8L) V6 1980-1989 (284 rows)
+  - General Motors Corp: 151 CID (2.5L) Pontiac 4 1982-1990 (105 rows)
+  - General Motors Corp: 189 CID (3.1L) Chevrolet V6 1988-1990 (92 rows)
+  - General Motors Corp: 151 CID (2.5L) 4 1977-1983 (87 rows)
+  - General Motors Corp: 252 CID (4.1L) Cadillac V8 1982-1988 (78 rows)
+  - General Motors Corp: 216 CID (3.5L) Chevrolet 6 1937-1952 (69 rows)
+  - General Motors Corp: 273 CID (4.5L) Cadillac V8 1988-1990 (58 rows)
+  - General Motors Corp: 262 CID (4.3L) Chevrolet V6 1985-1990 (52 rows)
+  - General Motors Corp: 350 CID (5.7L) Oldsmobile V8 Diesel 1978-1985 (51 rows)
+  - General Motors Corp: 235 CID (3.9L) 6 1950-1962 (47 rows)
+  - General Motors Corp: 153 CID (2.5L) 4 1962-1970 (45 rows)
+  - General Motors Corp: 229 CID (3.8L) Chevrolet V6 1980-1984 (44 rows)
+  - General Motors Corp: 92 CID (1.5L) Isuzu 4 1985-1989 (41 rows)
+  - General Motors Corp: 98 CID (1.6L) Toyota 4 Dohc Ohc 1988-1990 (40 rows)
+  - General Motors Corp: 235 CID (3.9L) Chevrolet 6 1953-1955 (40 rows)
+  - General Motors Corp: 121 CID (2L) 4 1983-1986 (37 rows)
+  - General Motors Corp: 110 CID (1.8L) 4 Ohc 1982-1986 (36 rows)
+  - General Motors Corp: 121 CID (2L) 4 1987-1989 (35 rows)
+  - General Motors Corp: 429 CID (7L) Cadillac V8 1964-1967 (34 rows)
+  - General Motors Corp: 110 CID (1.8L) 4 Ohc Turbo 1984-1986 (33 rows)
+  - General Motors Corp: 122 CID (2L) Pontiac 4 Ohc Turbo 1987-1990 (32 rows)
+  - General Motors Corp: 134 CID (2.2L) 4 1990 (32 rows)
+  - General Motors Corp: 121 CID (2L) Chevrolet 4 1983-1984 (30 rows)
+  - General Motors Corp: 122 CID (2L) 4 Ohc 1987-1990 (30 rows)
+  - General Motors Corp: 260 CID (4.3L) Oldsmobile V6 Diesel 1982-1985 (30 rows)
+  - General Motors Corp: 112 CID (1.8L) Chevrolet 4 1982 (29 rows)
+  - General Motors Corp: 215 CID (3.5L) 6 1964-1965 (29 rows)
+  - General Motors Corp: 98 CID (1.6L) 4 Dohc Ohc 1989-1990 (27 rows)
+  - General Motors Corp: 164 CID (2.7L) Chevrolet 6 1965-1969 (27 rows)
+  - General Motors Corp: 401 CID (6.6L) Buick V8 1959-1966 (27 rows)
+  - General Motors Corp: 138 CID (2.3L) 4 Dohc Ohc 1987-1990 (26 rows)
+  - General Motors Corp: 140 CID (2.3L) Chevrolet 4 1971-1977 (26 rows)
+  - General Motors Corp: 98 CID (1.6L) Chevrolet 4 1976-1987 (25 rows)
+  - General Motors Corp: 145 CID (2.4L) Chevrolet 6 1961-1963 (24 rows)
+  - General Motors Corp: 365 CID (6L) Cadillac V8 1957-1958 (23 rows)
+  - General Motors Corp: 61 CID (1L) Suzuki 3 1989-1990 (22 rows)
+  - General Motors Corp: 98 CID (1.6L) Toyota 4 Sohc Ohc 1985-1988 (22 rows)
+  - General Motors Corp: 215 CID (3.5L) Buick V8 1961-1963 (22 rows)
+  - General Motors Corp: 98 CID (1.6L) 4 Sohc Ohc 1990 (21 rows)
+  - General Motors Corp: 364 CID (6L) Buick V8 1957-1961 (21 rows)
+  - General Motors Corp: 98 CID (1.6L) 4 Dohc Ohc 1990 (20 rows)
+  - General Motors Corp: 425 CID (7L) Buick V8 1963-1966 (20 rows)
+  - General Motors Corp: 61 CID (1L) 3 1985-1988 (19 rows)
+  - General Motors Corp: 140 CID (2.3L) Chevrolet 6 1960-1961 (19 rows)
+  - General Motors Corp: 61 CID (1L) 3 Turbo 1987-1990 (18 rows)
+  - General Motors Corp: 111 CID (1.8L) Isuzu 4 Diesel Sohc Ohc 1981-1986 (18 rows)
+  - General Motors Corp: 85 CID (1.4L) 4 1976-1977 (16 rows)
+  - General Motors Corp: 98 CID (1.6L) 4 1988-1990 (16 rows)
+  - General Motors Corp: 195 CID (3.2L) Pontiac 4 1961-1963 (15 rows)
+  - General Motors Corp: 331 CID (5.4L) Cadillac V8 Ohv 1949-1955 (14 rows)
+  - General Motors Corp: 200 CID (3.3L) V6 1978-1979 (9 rows)
+  - General Motors Corp: 85 CID (1.4L) Chevrolet 4 1976-1977 (5 rows)
+  - General Motors Corp: 322 CID (5.3L) Buick V8 1953-1956 (3 rows)
+  - General Motors Truck: 262 CID (4.3L) Chevrolet V6 1985-1990 (57 rows)
+  - General Motors Truck: 235 CID (3.9L) Chevrolet 6 1953-1962 (56 rows)
+  - General Motors Truck: 173 CID (2.8L) Chevrolet V6 1982-1990 (54 rows)
+  - General Motors Truck: 151 CID (2.5L) Pontiac 4 1985-1990 (47 rows)
+  - General Motors Truck: 200 CID (3.3L) V6 1978-1979 (45 rows)
+  - General Motors Truck: 379 CID (6.2L) Chevrolet V8 Diesel 1982-1990 (45 rows)
+  - General Motors Truck: 229 CID (3.8L) Chevrolet V6 1980-1984 (44 rows)
+  - General Motors Truck: 350 CID (5.7L) Oldsmobile V8 Diesel 1978-1984 (44 rows)
+  - General Motors Truck: 261 CID (4.3L) Chevrolet 6 1954-1962 (37 rows)
+  - General Motors Truck: (1.8L) 4 Sohc Ohc 1972-1982 (35 rows)
+  - General Motors Truck: 189 CID (3.1L) Chevrolet V6 1990 (33 rows)
+  - General Motors Truck: 351 CID (5.8L) General Motors V6 1960-1972 (31 rows)
+  - General Motors Truck: 121 CID (2L) 4 1983-1984 (29 rows)
+  - General Motors Truck: 153 CID (2.5L) 4 1963-1965 (29 rows)
+  - General Motors Truck: 305 CID (5L) General Motors V6 1960-1974 (28 rows)
+  - General Motors Truck: 270 CID (4.4L) 6 Ohv 1939-1962 (27 rows)
+  - General Motors Truck: 216 CID (3.5L) 6 1937-1953 (26 rows)
+  - General Motors Truck: 248 CID (4.1L) 6 1939-1955 (25 rows)
+  - General Motors Truck: 140 CID (2.3L) 4 1971-1975 (24 rows)
+  - General Motors Truck: 97 CID (1.6L) 4 1989-1990 (23 rows)
+  - General Motors Truck: 228 CID (3.7L) General Motors 6 1939-1953 (23 rows)
+  - General Motors Truck: 236 CID (3.9L) General Motors 6 Ohv 1942-1946 (23 rows)
+  - General Motors Truck: 401 CID (6.6L) General Motors V6 1960-1972 (23 rows)
+  - General Motors Truck: 119 CID (1.9L) Isuzu 4 Sohc Ohc 1982-1985 (20 rows)
+  - General Motors Truck: 137 CID (2.2L) Isuzu 4 Diesel Ohv 1984-1985 (19 rows)
+  - General Motors Truck: 302 CID (5L) 6 Ohv 1952-1959 (19 rows)
+  - General Motors Truck: 379 CID (6.2L) General Motors V6 1973-1974 (19 rows)
+  - General Motors Truck: 432 CID (7.1L) General Motors V6 1973-1974 (18 rows)
+  - General Motors Truck: (2.2L) Isuzu 4 Diesel Ohv 1981-1982 (17 rows)
+  - General Motors Truck: 164 CID (2.7L) Chevrolet 6 1964 (15 rows)
+  - General Motors Truck: 145 CID (2.4L) Chevrolet 6 1961-1963 (12 rows)
+  - General Motors Truck: 478 CID (7.8L) General Motors V6 1965 (7 rows)
+  - General Motors Truck: 336 CID (5.5L) General Motors V8 1958-1959 (3 rows)
+  - General Motors Truck: 159 CID (2.6L) Detroit Diesel 3 Diesel 1967-1968 (2 rows)
+  - Jeep: 134 CID (2.2L) 4 L-Head 1939-1966 (49 rows)
+  - Jeep: 173 CID (2.8L) Chevrolet V6 1984-1986 (42 rows)
+  - Jeep: 151 CID (2.5L) 4 1980-1983 (28 rows)
+  - Jeep: 226 CID (3.7L) Continental 6 1947-1965 (27 rows)
+  - Jeep: 126 CID (2.1L) Renault 4 Diesel Turbo 1985-1989 (21 rows)
+  - Jeep: 150 CID (2.5L) 4 1983-1990 (21 rows)
+  - Jeep: 327 CID (5.4L) V8 1965-1968 (17 rows)
+  - Jeep: 134 CID (2.2L) 4 1950-1973 (15 rows)
+  - Jeep: 230 CID (3.8L) 6 1962-1968 (11 rows)
+  - Navistar/International: block 7 (description not read) (48 rows)
+  - Navistar/International: 345 CID (5.6L) 8 1962-1982 (43 rows)
+  - Navistar/International: 392 CID (6.4L) International V8 1969-1982 (38 rows)
+  - Navistar/International: 220 CID (3.6L) 6 1957-1962 (31 rows)
+  - Navistar/International: 345 CID (5.6L) International V8 1959-1982 (24 rows)
+  - Navistar/International: 304 CID (5L) International V8 1959-1980 (23 rows)
+  - Navistar/International: 266 CID (4.4L) International V8 1959-1972 (22 rows)
+  - Navistar/International: 304 CID (5L) International 8 1964-1975 (22 rows)
+  - Navistar/International: 450 CID (7.4L) 6 1944-1957 (22 rows)
+  - Navistar/International: 232 CID (3.8L) International 6 1969-1972 (21 rows)
+  - Navistar/International: 258 CID (4.2L) 6 1971-1974 (21 rows)
+  - Navistar/International: 420 CID (6.9L) Navistar V8 Diesel 1983-1987 (21 rows)
+  - Navistar/International: 549 CID (9L) International V8 1956-1972 (21 rows)
+  - Navistar/International: 152 CID (2.5L) International 4 1967-1968 (19 rows)
+  - Navistar/International: 152 CID (2.5L) 4 Turbo 1965-1967 (19 rows)
+  - Navistar/International: 406 CID (6.7L) 6 1952-1974 (19 rows)
+  - Navistar/International: 478 CID (7.8L) International V8 1965-1972 (19 rows)
+  - Navistar/International: 478 CID (7.8L) International V8 1968-1977 (19 rows)
+  - Navistar/International: 501 CID (8.2L) International 6 1955-1974 (19 rows)
+  - Navistar/International: 549 CID (9L) International V8 1970-1972 (19 rows)
+  - Navistar/International: 549 CID (9L) International V8 1970-1975 (19 rows)
+  - Navistar/International: 152 CID (2.5L) 4 1961-1968 (18 rows)
+  - Navistar/International: 240 CID (3.9L) 6 1955-1962 (18 rows)
+  - Navistar/International: 240 CID (3.9L) 6 1950-1969 (18 rows)
+  - Navistar/International: 400 CID (6.6L) International V8 1974-1975 (18 rows)
+  - Navistar/International: 444 CID (7.3L) International V8 Diesel (18 rows)
+  - Navistar/International: 220 CID (3.6L) 6 1950-1957 (17 rows)
+  - Navistar/International: 220 CID (3.6L) International 6 1953-1954 (17 rows)
+  - Navistar/International: 240 CID (3.9L) International 6 1953-1955 (17 rows)
+  - Navistar/International: 264 CID (4.3L) International 6 1955-1968 (17 rows)
+  - Navistar/International: 401 CID (6.6L) International V8 1956-1972 (17 rows)
+  - Navistar/International: 401 CID (6.6L) International V8 1968-1974 (16 rows)
+  - Navistar/International: 446 CID (7.3L) International V8 1975-1981 (16 rows)
+  - Navistar/International: 451 CID (7.4L) 6 1955-1974 (16 rows)
+  - Navistar/International: 461 CID (7.6L) International V8 1956-1964 (16 rows)
+  - Navistar/International: 372 CID (6.1L) 6 1950-1968 (15 rows)
+  - Navistar/International: 404 CID (6.6L) International V8 1975-1982 (15 rows)
+  - Navistar/International: 501 CID (8.2L) 6 1955-1972 (15 rows)
+  - Navistar/International: 241 CID (3.9L) 6 1965-1966 (14 rows)
+  - Navistar/International: 241 CID (3.9L) International 6 1963-1969 (14 rows)
+  - Navistar/International: block 26 (description not read) (14 rows)
+  - Navistar/International: 537 CID (8.8L) International V8 1978-1981 (12 rows)
+  - Navistar/International: 269 CID (4.4L) International 6 1955-1956 (11 rows)
+  - Navistar/International: 282 CID (4.6L) 6 1957-1962 (11 rows)
+  - Navistar/International: 308 CID (5L) 6 1957-1971 (11 rows)
+  - Navistar/International: 537 CID (8.8L) International V8 1975-1981 (11 rows)
+  - Navistar/International: 250 CID (4.1L) 6 1941-1949 (9 rows)
+  - Navistar/International: 301 CID (4.9L) International 6 Diesel 1960-1969 (8 rows)
+  - Navistar/International: 241 CID (3.9L) International 6 1937-1941 (7 rows)
+  - Navistar/International: 241 CID (3.9L) International 6 1941-1947 (7 rows)
+  - Navistar/International: 259 CID (4.2L) 6 1939-1940 (7 rows)
+  - Navistar/International: 361 CID (5.9L) International 6 1937-1941 (6 rows)
+  - Navistar/International: block 47 (description not read) (6 rows)
+  - Navistar/International: 175 CID (2.9L) 6 1938-1942 (4 rows)
+  - Navistar/International: 233 CID (3.8L) 6 1941-1949 (4 rows)
+  - Navistar/International: 233 CID (3.8L) 6 1937-1941 (4 rows)
+  - Navistar/International: 220 CID (3.6L) International 6 1963-1968 (3 rows)
+  - Navistar/International: 549 CID (9L) International V8 1968-1978 (3 rows)
+  - Navistar/International: 133 CID (2.2L) 4 1937-1940 (2 rows)
+  - Navistar/International: 133 CID (2.2L) 4 1936-1937 (2 rows)
+
+## Part types not in the mapping table (25 rows; stored with the printed name as spec.type)
+
+- BalanceShaftSeal: 1
+- Fuel Inj.Mixer Gasket: 1
+- Balance ShaftSeal: 1
+- Fuel Inj. Mixer Gasket: 1
+- Tining CoverSeal: 1
+- Carn.Circular Plug: 1
+- Full Se!: 1
+- ValveSterm Seal Set: 1
+- Tining CoverSet: 1
+- Aux.Shaft Seal: 1
+- Aux. Shaft Seal: 1
+- Timing Cover Gaskel: 1
+- Tining Cover Gasket: 1
+- Cyl.Head Boll Set: 1
+- Engine Rear Hsg.Seal: 1
+- Rocker Arm Stud Seal: 1
+- Engine RearHsg.Seal: 1
+- RockerArm Stud Seal: 1
+- ThrottieBody Gasket: 1
+- Oil Filfer Mount Gasket: 1
+- Cylinder Head End Piug: 1
+- WalerPump Mount Gasket: 1
+- Rocker Shaff,Front Support Bracket: 1
+- ValveSlemSealSel: 1
+- Oii Cooler MountKit: 1
+
+## Rows skipped by part type (99)
+
+- Sealant: 68
+- Seal Extender: 8
+- Air Flow Sensor: 5
+- U Joint Housing Gasket: 5
+- Clutch Throwout Brg Seal: 4
+- AirFlow Sensor: 3
+- Flywheel Housing Gasket: 3
+- Flywheel Housing Oil Seal: 2
+- Flywheel Housing Oitl Seal: 1
+
+## Part-type lines that never got a part number (77; OCR missed the PN or the type had none)
+
+- p37: Oil Pan Set
+- p37: Rear Main Seal Set
+- p83: (1987-1990)
+- p83: (1985-1990)
+- p84: (1985-1990)
+- p85: Part
+- p87: Oil Pan Set
+- p89: Oil Pan Set
+- p101: Part
+- p118: Par
+- p121: Rear Main Seal Set
+- p131: Harmonic Balancer Repair Sleeve
+- p133: Head Set
+- p135: 6 156 CID(2.6L)SOHCWMitsubishi4 Cyl,3.590in./91.2mm(1979-1989)
+- p136: 9 156 CID(2.6L)SOHCWMitsubishi4Cyl,3.590in./91.2mm (1979-1989)
+- p137: Valve CoverSet
+- p143: Part
+- p148: Intake and Exhaust
+- p196: ValveCoverGrommet
+- p200: Timing Cover Set
+- p201: Timing CoverSet
+- p203: Valve Cover Set,)
+- p221: Part
+- p247: Intake and Exhaust
+- p248: 9 170 CID （2.8L)Ford 6 Cyl,3.500in./88.9mm (1961-1972)
+- p249: 6 170 CID(2.8L)Ford 6 Cyl,3.500in./88.9mm（1961-1972)
+- p256: Oil Pan Set
+- p258: Valve CoverSet
+- p261: Manifold Set,Intake
+- p268: Valve Cover Set,)
+- p268: Valve Stem Seal.Int
+- p273: Harmonic Balancer Repair Sleeve
+- p306: Oil Pan Set
+- p307: Oil PanSet
+- p311: Cyl.Head Spacer Shim
+- p327: Cyl.Head Spacer Shim
+- p339: Valve Cover Set
+- p361: Part
+- p363: Harmonic Balancer Repair Sleeve
+- p367: Valve Cover Set
+- p370: Valve StemSeal,Int
+- p376: Valve Stem Seal.Int
+- p391: Part
+- p394: Harmonic Balancer Repair Sleeve
+- p398: 68 390CID(6.4L) CadillacV8 Cyl,4.000in./101.6mm(1959-1963) Part
+- p399: 89 390 CID (6.4L) CadillacV8Cyl,4.000in./101.6mm （1959-1963)
+- p400: 06 396CID （6.6L) Chevrolet V8 Cyl,4.094in.104mm(1965-1970)
+- p407: 98 403 CID (6.6L) L80 Oldsmobile V8 Cyl,4.351in./110.5mm (1977-1979)
+- p411: Harmonic Balancer Repair Sleeve
+- p441: Part
+- p445: Air Cleaner Mount Gasket
+- p467: Fuel Pump Gasket
+- p474: Intake and Exhaust
+- p477: Part
+- p477: Intake and Exhaust
+- p480: Intake andExhaust
+- p481: Intake and Exhaust
+- p483: Intakeand Exhaust
+- p532: 6 230 CID (3.8L)Tornado 6 Cyl,3.344in.84.9mm(1962-1968)
+- p533: Valve CoverSet
+- p591: ValveCoverSet
+- p593: 9 220 CID（3.6L) BG220 International6 Cyl,3.563in./90.5mm （1963-1968)
+- p594: Oil Pan Set
+- p594: Oil Pan Set
+- p597: Oil Pan Set
+- p597: Valve CoverSet
+- p597: Valve CoverSet
+- p599: Valve Cover Set
+- p605: Crank Repair Sleeve
+- p606: Oil Pan Set
+- p607: Part
+- p609: Oil Pan Set
+- p609: (1988-1990)
+- p610: (1988-1990)
+- p610: Rear Main Seal Set
+- p612: ExhaustPipe Gasket
+- p612: Part
+
+## Other skipped lines
+
+- qty-col noise '一': 40
+- qty-col noise 'Qty.': 33
+- qty-col noise 'T': 25
+- qty-col noise '1.': 22
+- qty-col noise 't': 15
+- pn without part type: 3
+- qty-col noise '(cont.)': 2
+- qty-col noise '+': 2
+- qty-col noise '，': 1
+- qty-col noise 'q': 1
+- qty-col noise '】': 1
+- qty-col noise 'I': 1
+- qty-col noise 'Qry.': 1
+
+## GA-20-26 MIS sets left under the make name (20)
+
+- General Motors: 96-93 GMC 3.1L
+- General Motors: 07-04 GMC 3.5L
+- General Motors: 06-96 GMC 4.3L
+- General Motors: 11-06 GMC 3.5L-3.9L
+- General Motors: 11-07 CHE/GMC 4.3L
+- Ford: 03-00 FOR 3.8L
+- Chrysler: 18-11 CHR 3.6L
+- General Motors: 05-96 GMC 3.1L-3.4L
+- General Motors: 99-93 GMC 3.1L
+- General Motors: 02-96 CHE/GMC/CAD
+- General Motors: 05-96 CHE 3.1L-3.4L
+- General Motors: 05-96 GMC 3.1-3.4L
+- Ford: 00-90 FOR/MAZ 4.0L
+- General Motors: 11-07 GMC/CHE 4.3L
+- General Motors: 09-05 GMC 3.4L
+- General Motors: 08-05 GMC 3.4L
+- Chrysler: 22-16 CHR 3.6L
+- General Motors: 03-02 GMC 3.0L
+
+## QA (73 notes; 2 records with PN OCR confidence < 0.85)
+
+- p256: HS3824E has no part-type heading; skipped
+- p256: HS3824E has no part-type heading; skipped
+- p419: HS3852 has no part-type heading; skipped
+- p592 block 7 (Navistar/International): engine description not read by OCR; 48 rows kept under the make heading
+- p600 block 26 (Navistar/International): engine description not read by OCR; 14 rows kept under the make heading
+- p610 block 47 (Navistar/International): engine description not read by OCR; 6 rows kept under the make heading
+- 66960 (Chrysler): listed under several part types {'timing cover seal': 1, 'cam seal': 1, 'intermediate shaft seal': 1}; 'timing cover seal' used
+- 47929 (Chrysler): listed under several part types {'timing cover seal': 1, 'cam seal': 2, 'intermediate shaft seal': 2}; 'cam seal' used
+- K27564 (Mopar Slant Six): listed under several part types {'water pump backing plate': 6, 'water pump': 7}; 'water pump' used
+- F5438AK (Chrysler): listed under several part types {'exhaust pipe': 18, 'exhaust manifold': 3}; 'exhaust pipe' used
+- F5438AK (Mopar LA small block): listed under several part types {'exhaust manifold': 1, 'exhaust pipe': 2}; 'exhaust pipe' used
+- FS3464VC (Mopar B/RB big block): listed under several part types {'full set': 9, 'full se!': 1}; 'full set' used
+- 66960 (Dodge Truck): listed under several part types {'cam seal': 1, 'intermediate shaft seal': 1}; 'cam seal' used
+- 47929 (Dodge Truck): listed under several part types {'timing cover seal': 1, 'cam seal': 2, 'intermediate shaft seal': 2}; 'cam seal' used
+- B45573 (Dodge Truck): listed under several part types {'cam plug': 1, 'carn. circular plug': 1}; 'cam plug' used
+- G25936 (Dodge Truck): listed under several part types {'air cleaner sleeve': 2, 'air cleaner mount': 4}; 'air cleaner mount' used
+- VS38219 (Dodge Truck): listed under several part types {'valve cover': 1, 'push rod cover': 4}; 'push rod cover' used
+- K27561 (Mopar B/RB big block): listed under several part types {'water pump': 2, 'water pump backing plate': 1}; 'water pump' used
+- 47699 (Ford): listed under several part types {'cam seal': 3, 'timing cover seal': 1}; 'cam seal' used
+- SS45613 (Ford): listed under several part types {'valve stem seal': 5, 'valve sterm seal set': 1}; 'valve stem seal' used
+- C26870 (Ford): listed under several part types {'water crossover': 2, 'water pump': 3}; 'water pump' used
+- 47518 (Ford): listed under several part types {'timing cover seal': 3, 'cam seal': 1}; 'timing cover seal' used
+- 66864 (Ford): listed under several part types {'timing cover seal': 1, 'cam seal': 1}; 'timing cover seal' used
+- JV997 (Ford): listed under several part types {'tining cover set': 1, 'timing cover set': 1}; 'tining cover set' used
+- 47524 (Ford): listed under several part types {'timing cover seal': 2, 'aux. shaft seal': 2, 'cam seal': 2}; 'timing cover seal' used
+- GS33732 (Ford): listed under several part types {'push rod cover grommet': 9, 'valve cover grommet': 6}; 'push rod cover grommet' used
+- T27802 (Small-block Ford (Windsor)): listed under several part types {'timing cover': 10, 'timing cover gaskel': 1, 'tining cover gasket': 1}; 'timing cover' used
+- F5451K (Small-block Ford (Windsor)): listed under several part types {'exhaust pipe': 3, 'heat riser': 1}; 'exhaust pipe' used
+- D35288 (Small-block Ford (Windsor)): listed under several part types {'fuel pump bowl': 3, 'fuel pump': 1}; 'fuel pump bowl' used
+- C24109 (Ford): listed under several part types {'water outlet': 1, 'crankcase vent': 1}; 'water outlet' used
+- C24109VF (Ford): listed under several part types {'water outlet': 1, 'crankcase vent': 1}; 'water outlet' used
+- F5451K (Ford FE): listed under several part types {'exhaust pipe': 8, 'heat riser': 4}; 'exhaust pipe' used
+- K27151 (Ford 351C/351M/400): listed under several part types {'water pump backing plate': 4, 'water pump': 5}; 'water pump' used
+- F5436AK (Ford): listed under several part types {'exhaust pipe': 1, 'heat riser': 1}; 'exhaust pipe' used
+- D36016 (Ford Truck): listed under several part types {'fuel pump bowl': 10, 'fuel pump': 1}; 'fuel pump bowl' used
+- GS33732 (Ford Truck): listed under several part types {'push rod cover grommet': 7, 'valve cover grommet': 6}; 'push rod cover grommet' used
+- 49328 (General Motors Corp): listed under several part types {'timing cover seal': 12, 'cam seal': 1}; 'timing cover seal' used
+- 48277SF (General Motors Corp): listed under several part types {'cam seal': 2, 'timing cover seal': 7}; 'timing cover seal' used
+- C20115 (General Motors Corp): listed under several part types {'thermostat housing': 2, 'water outlet': 2}; 'thermostat housing' used
+- C31379 (General Motors Corp): listed under several part types {'water outlet': 1, 'thermostat housing': 1}; 'water outlet' used
+- 46248 (General Motors Corp): listed under several part types {'timing cover seal': 3, 'engine rear hsg. seal': 2}; 'timing cover seal' used
+- G5349AD (General Motors Corp): listed under several part types {'turbocharger': 2, 'carb base': 2}; 'turbocharger' used
+- 72216 (General Motors Corp): listed under several part types {'distributor': 5, 'injection pump mount': 1}; 'distributor' used
+- F17355 (General Motors Corp): listed under several part types {'turbocharger': 1, 'exhaust pipe': 3}; 'exhaust pipe' used
+- C26515 (Buick V6 181-252): listed under several part types {'water outlet': 13, 'thermostat housing': 1}; 'water outlet' used
+- F5436AK (General Motors Corp): listed under several part types {'exhaust pipe': 4, 'heat riser': 5}; 'heat riser' used
+- SS45229 (Small-block Chevy): listed under several part types {'valve stem seal': 36, 'valve slem seal sel': 1}; 'valve stem seal' used
+- F5436AK (Small-block Chevy): listed under several part types {'exhaust pipe': 3, 'heat riser': 1}; 'exhaust pipe' used
+- B25941 (Pontiac V8): listed under several part types {'distributor': 9, 'oil pump': 1}; 'distributor' used
+- F7135 (Small-block Chevy): listed under several part types {'heat riser': 9, 'exhaust pipe': 5}; 'heat riser' used
+- C26515 (Buick 350): listed under several part types {'thermostat housing': 1, 'water outlet': 4}; 'water outlet' used
+- B7147 (Pontiac V8): listed under several part types {'oil filter': 6, 'oil filfer mount gasket': 1}; 'oil filter' used
+- K27078 (Chevy W-series 348/409): listed under several part types {'water pump backing plate': 2, 'water pump': 1}; 'water pump backing plate' used
+- C26565 (General Motors Corp): listed under several part types {'water outlet': 3, 'thermostat housing': 2}; 'water outlet' used
+- C26181 (Cadillac 368-500): listed under several part types {'thermostat housing': 1, 'water outlet': 1}; 'thermostat housing' used
+- F5436AK (Pontiac V8): listed under several part types {'exhaust pipe': 1, 'heat riser': 1}; 'exhaust pipe' used
+- F7192 (Chevy Mark IV big block): listed under several part types {'heat riser': 10, 'exhaust pipe': 1}; 'heat riser' used
+- K27078 (Chevy Mark IV big block): listed under several part types {'water pump backing plate': 8, 'water pump': 1}; 'water pump backing plate' used
+- C24109 (Cadillac 368-500): listed under several part types {'thermostat housing': 1, 'water outlet': 3}; 'water outlet' used
+- C24109VF (Cadillac 368-500): listed under several part types {'thermostat housing': 1, 'water outlet': 3}; 'water outlet' used
+- F7135 (Chevy Mark IV big block): listed under several part types {'heat riser': 1, 'exhaust pipe': 3}; 'exhaust pipe' used
+- B24130 (General Motors Truck): listed under several part types {'cylinder head end piug': 1, 'head end plug': 1}; 'cylinder head end piug' used
+- 72216 (General Motors Truck): listed under several part types {'distributor': 1, 'injection pump mount': 1}; 'distributor' used
+- G17645 (General Motors Truck): listed under several part types {'carb base': 6, 'governor': 2}; 'carb base' used
+- 2014A (General Motors Truck): listed under several part types {'rocker cover': 4, 'rocker shaff, front support bracket': 1}; 'rocker cover' used
+- B17897 (General Motors Truck): listed under several part types {'manifold': 2, 'intake': 1}; 'manifold' used
+- GS33272 (Chevy Mark IV big block): listed under several part types {'oii cooler mount kit': 1, 'oil cooler': 2}; 'oil cooler' used
+- C30677 (General Motors Truck): listed under several part types {'thermostat housing': 1, 'water crossover': 1}; 'thermostat housing' used
+- F5360C (Jeep): listed under several part types {'exhaust pipe': 6, 'heat riser': 1}; 'exhaust pipe' used
+- D34545 (Jeep): listed under several part types {'fuel pump bowl': 2, 'fuel pump': 3}; 'fuel pump' used
+- C26472 (Navistar/International): listed under several part types {'thermostat housing': 7, 'water outlet': 7}; 'thermostat housing' used
+- MS15939BF (Navistar/International): listed under several part types {'intake manifold set': 2, 'exhaust manifold set': 1}; 'intake manifold set' used
+- GA-20-26 p7: unparsed application '03 GMC 3.0L' for MIS19490A
+
+## Validation (0 errors)
+
+- no duplicate (p, cat, fam); every record has m p cat fit.fam src; numeric fields numeric; no empty strings
