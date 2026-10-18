@@ -104,11 +104,14 @@ function brandSlug(m) {
 // its source document or URL ("ssdiesel.com" for S&S Diesel Motorsport,
 // "Industrial Injection ... products.json" for Industrial Injection).
 function isNativeSource(r) {
+  const brand = String(r.m).toLowerCase().replace(/[^a-z0-9]/g, "");   // "ssdieselmotorsport"
+  if (brand.length < 2) return false;
   const hay = `${r.src?.doc ?? ""} ${r.src?.url ?? ""}`.toLowerCase().replace(/[^a-z0-9]/g, "");
-  const words = String(r.m).toLowerCase().replace(/&/g, "and").split(/[^a-z0-9]+/).filter((w) => w.length > 1 && !["the", "and", "inc", "llc", "co", "racing", "performance", "diesel", "motorsport", "motorsports", "engine", "engines", "products", "cams"].includes(w));
-  if (words.length === 0) return false;
-  const joined = String(r.m).toLowerCase().replace(/[^a-z0-9]/g, "");
-  return hay.includes(joined) || words.every((w) => hay.includes(w));
+  if (hay.includes(brand)) return true;                                   // "MAHLE ... catalog" for MAHLE
+  const host = (String(r.src?.url ?? "").match(/^https?:\/\/(?:www\.)?([^/]+)/) ?? [])[1] ?? "";
+  const stem = host.split(".").slice(0, -1).join("").replace(/[^a-z0-9]/g, ""); // "ssdiesel", "kcturbos"
+  if (stem.length < 3) return false;
+  return brand.includes(stem) || stem.includes(brand);                    // ssdieselmotorsport ⊃ ssdiesel
 }
 
 export function buildPartsCatalog(extraDirs = []) {
