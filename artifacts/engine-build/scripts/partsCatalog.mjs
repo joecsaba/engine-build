@@ -100,13 +100,24 @@ function brandSlug(m) {
   return slug(m).replace(/-+/g, "-");
 }
 
+// A record comes from the maker's own catalog when the brand's name appears in
+// its source document or URL ("ssdiesel.com" for S&S Diesel Motorsport,
+// "Industrial Injection ... products.json" for Industrial Injection).
+function isNativeSource(r) {
+  const hay = `${r.src?.doc ?? ""} ${r.src?.url ?? ""}`.toLowerCase().replace(/[^a-z0-9]/g, "");
+  const words = String(r.m).toLowerCase().replace(/&/g, "and").split(/[^a-z0-9]+/).filter((w) => w.length > 1 && !["the", "and", "inc", "llc", "co", "racing", "performance", "diesel", "motorsport", "motorsports", "engine", "engines", "products", "cams"].includes(w));
+  if (words.length === 0) return false;
+  const joined = String(r.m).toLowerCase().replace(/[^a-z0-9]/g, "");
+  return hay.includes(joined) || words.every((w) => hay.includes(w));
+}
+
 export function buildPartsCatalog(extraDirs = []) {
   const stats = { files: 0, records: 0, dupes: [], numericStrings: {}, unknownFamilies: new Map(), byBrand: {}, byCat: {}, byFam: {}, em: {} };
   if (!existsSync(SRC_DIR)) {
     return { ...stats, families: 0, skipped: `no source dir ${SRC_DIR}` };
   }
   const files = readdirSync(SRC_DIR).filter((f) => f.endsWith(".json") && !f.startsWith("_")).sort();
-  const seen = new Set();
+  const seen = new Map();
   const byFamily = new Map(); // fam -> records
   const brands = new Map();   // brand -> count
   const sources = [];
@@ -121,11 +132,20 @@ export function buildPartsCatalog(extraDirs = []) {
       const fam = FAMILY_ALIASES[rawFam] ?? rawFam;
       r = { ...r, m: BRAND_ALIASES[r.m] ?? r.m };
       const key = `${r.m}|${r.p}|${fam}`;
+      // The same part can arrive from the maker's own catalog and from a
+      // reseller's listing (S&S injectors in the KC Turbos file). The maker's
+      // record wins regardless of file order; otherwise first in wins.
+      const native = isNativeSource(r);
       if (seen.has(key)) {
-        stats.dupes.push(`${key} (${file})`);
+        const prev = seen.get(key);
+        if (native && !prev.native) {
+          stats.dupes.push(`${key} (${prev.file} replaced by maker's own ${file})`);
+          prev.replace(r);
+        } else {
+          stats.dupes.push(`${key} (${file})`);
+        }
         continue;
       }
-      seen.add(key);
       if (!KNOWN_FAMILIES.includes(fam)) stats.unknownFamilies.set(fam, (stats.unknownFamilies.get(fam) ?? 0) + 1);
 
       const fit = {};
@@ -146,7 +166,15 @@ export function buildPartsCatalog(extraDirs = []) {
       // picks; they go to lobes.json so universal.json stays small.
       const bucket = r.cat === "lobe" ? "__lobes" : fam;
       if (!byFamily.has(bucket)) byFamily.set(bucket, []);
-      byFamily.get(bucket).push(rec);
+      const list = byFamily.get(bucket);
+      list.push(rec);
+      const slot = list.length - 1;
+      seen.set(key, {
+        native, file,
+        replace: (nr) => {
+          list[slot] = { ...rec, name: nr.name ?? rec.name, fit: { ...rec.fit, ...Object.fromEntries(Object.entries(nr.fit).filter(([k, v]) => ["ci", "cyl", "y0", "y1", "notes"].includes(k) && v != null && v !== "")) }, spec: prune(nr.spec, { numericStrings: {} }), src: { doc: nr.src?.doc ?? "", ed: nr.src?.edition ?? "", url: nr.src?.url ?? "" }, ...(nr.emissions ? { em: nr.emissions } : {}) };
+        },
+      });
       brands.set(r.m, (brands.get(r.m) ?? 0) + 1);
       stats.records++;
       stats.byBrand[r.m] = (stats.byBrand[r.m] ?? 0) + 1;
