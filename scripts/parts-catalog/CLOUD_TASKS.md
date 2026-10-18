@@ -347,3 +347,27 @@ the only sanctioned source.
 ### LUNATI-RA  (grade B, half day)
 `Catalogs/Lunati-Rotating-Assemblies.pdf` (2013, 36 pp). Cranks, rods and rotating assemblies
 by family, like Scat. Emit `crank`, `rod`, `rotatingAssembly`. Note the edition is 2013.
+
+### EAGLE-PDF  (grade C, 1-2 days; replaces the 13 h web crawl)
+`Catalogs/ACFrOgCQO6X8rCjLnqlbaAuBcHoKeYOowo2zFNkrAXH048tiispxaf26zLoo9EEh8CJtb8Zjdhq1CwnznBj5pc8h6RUHhwHhWw7xv_MQ6Qvmp08PROhnTSweLqu8BPPnIL8v9_lFA4pBJ1Rek34C.pdf`
+= Eagle Specialty Products 2024 rev. 4 catalog (92 pp, text). Cranks, rods, rotating assemblies
+by family (SBC, BBC, LS, SBF, FE, BBF, Modular/Coyote, Mopar, Pontiac, Olds, Buick, AMC).
+Sample: `scripts/catalog-probes/probe_rotating/samples/eagle_ls_assemblies_p28_sample.csv`.
+
+### MAHLE-PERF  (grade B, half day each)
+`Catalogs/pr-40-22.pdf` = MAHLE Aftermarket Performance Piston Rings 2022 (84 pp): ring sets by
+bore, widths, material/face; emit `ring`. `Catalogs/ga-40-22_web.pdf` = MAHLE Performance
+Gaskets 2022 (63 pp): head gaskets by engine with bore/thickness, intake and valve-cover
+gaskets; emit `headGasket`, `gasket`.
+
+### HELD / OUT OF SCOPE (also in `Catalogs/`)
+- `eb-20-26_web.pdf` MAHLE/Clevite Engine Bearings light vehicle 2026 (1,007 pp): **held**.
+  Project rule: Clevite crank/bearing specs are shop-tool only, never on the public site.
+  Needs an explicit owner decision before any extraction for the public catalog.
+- `pr-20-19.pdf` (OE piston rings 2019, 247 pp), `ga-21-17.pdf` (OE gaskets 2017, 1,080 pp),
+  `ga-20-26_web.pdf` (gaskets 2000+, 52 pp): OE-replacement catalogs; low value for the
+  planner, skipped for now.
+- `ap-37-16-hd-commercial-vehicle-catalog.pdf`, `overhaul-and-in-frame-engine-kits-listing-hd-1-224.pdf`,
+  `ap-90-12-web-final.pdf`, `th-20-16.pdf`: heavy-duty truck and thermostat catalogs, out of scope.
+- `product-catalog.pdf` = KB Performance Pistons 2015: scanned images, no text layer (grade D).
+- `ISKY-Master-Lobe-List.pdf`: scanned, no text layer (grade D).
